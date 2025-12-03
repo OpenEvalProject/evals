@@ -1,0 +1,2189 @@
+{
+  "submission": {
+    "id": "7dde57b1-cf3c-4e2c-af39-7a7cb8d9d85e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:10:46.099912Z",
+    "updated_at": "2025-12-03T20:10:46.099912Z"
+  },
+  "content": [
+    {
+      "id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "submission_id": "7dde57b1-cf3c-4e2c-af39-7a7cb8d9d85e",
+      "content_type": "manuscript",
+      "content_text": "# Bias in nutrition-health associations is not eliminated by excluding extreme reporters in empirical or simulation studies\n\n## Authors\n\n- Nao Yamamoto<sup>1</sup> ([ORCID: 0000-0003-3131-2368](https://orcid.org/0000-0003-3131-2368))\n- Keisuke Ejima<sup>2</sup> ([ORCID: 0000-0002-1185-3987](https://orcid.org/0000-0002-1185-3987)) \u2020\n- Roger S Zoh<sup>2</sup> ([ORCID: 0000-0002-8066-1153](https://orcid.org/0000-0002-8066-1153))\n- Andrew W Brown<sup>4</sup>\n\n### Affiliations\n\n1. School of Human Evolution and Social Change, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))\n2. Department of Epidemiology and Biostatistics, Indiana University School of Public Health-Bloomington Bloomington United States\n3. Lee Kong Chian School of Medicine, Nanyang Technological University Singapore Singapore ([ROR:02e7b5302](https://ror.org/02e7b5302))\n4. Department of Biostatistics, University of Arkansas for Medical Sciences Little Rock United States ([ROR:00xcryt71](https://ror.org/00xcryt71))\n5. Arkansas Children\u2019s Research Institute Little Rock United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSelf-reported nutrition intake (NI) data are prone to reporting bias that may induce bias in estimands in nutrition studies; however, they are used anyway due to high feasibility. We examined whether applying Goldberg cutoffs to remove \u2018implausible\u2019 self-reported NI could reliably reduce bias compared to biomarkers for energy, sodium, potassium, and protein. Using the Interactive Diet and Activity Tracking in the American Association of Retired Persons (IDATA) data, significant bias in mean NI was removed with Goldberg cutoffs (120 among 303 participants excluded). Associations between NI and health outcomes (weight, waist circumference, heart rate, systolic/diastolic blood pressure, and VO2 max) were estimated, but sample size was insufficient to evaluate bias reductions. We therefore simulated data based on IDATA. Significant bias in simulated associations using self-reported NI was reduced but not completely eliminated by Goldberg cutoffs in 14 of 24 nutrition-outcome pairs; bias was not reduced for the remaining 10 cases. Also, 95% coverage probabilities were improved by applying Goldberg cutoffs in most cases but underperformed compared with biomarker data. Although Goldberg cutoffs may achieve bias elimination in estimating mean NI, bias in estimates of associations between NI and outcomes will not necessarily be reduced or eliminated after application of Goldberg cutoffs. Whether one uses Goldberg cutoffs should therefore be decided based on research purposes and not general rules.\n\n## Introduction\n\nMeasuring nutrition intake plays a pivotal role in obesity and nutrition studies. However, objectively measuring nutrition intake is not easy. Under natural settings with less restriction, two approaches are often used: self-report and biomarkers. Biomarker approaches are considered more accurate compared with self-report; however, they are typically expensive and require special equipment for each nutrient. Self-report approaches are less expensive and do not require special laboratory equipment or techniques, and can be applied to the measurement of any nutrition components from macronutrients (i.e. carbohydrates, fat, and protein) to micronutrients (i.e. minerals and vitamins); however, self-reported data are known to be fraught with bias (Schoeller et al., 1990; Dhurandhar et al., 2015).\n\nConsider the example of biomarker versus self-report energy intake. Energy intake (EI) is defined as a sum of the total metabolizable energy content of consumed foods and beverages (Astrup, 2005). EI can be measured using biomarkers, especially by energy balance approaches in which respiratory gas analysis or doubly labeled water (DLW) are used for the calculation of energy expenditure (EE) (Ferrannini, 1988). EI can be calculated using EE accounting for change in energy stores (i.e. body composition) during the period of measurement. The respiratory gas analysis typically requires the participants to wear a gas mask or stay in a metabolic chamber (Leonard, 2012), which restricts participants\u2019 behavior; thus, the measured EI using the respiratory gas analysis may not reflect EI from habitual eating behavior. DLW requires the participants to visit the laboratory to drink labeled water enriched with stable hydrogen and oxygen isotopes and collect urine for measurement of isotope levels. It is considered to reflect habitual eating behavior and widely accepted as a standard and reliable approach in measuring EI in free-living individuals (Schoeller et al., 1986; Speakman, 1997; Schoeller and van Santen, 1982). However, given the high cost of isotopes and laboratories to analyze collected urine, DLW is not practical in large-scale epidemiological surveillance (Banna et al., 2017).\n\nEI measured using self-report approaches (EISR) is computed by summing up the energy intake from foods and beverages reportedly consumed during the period of measurement, which can commonly range from a day to a year depending on approaches (e.g. 24 hr recall, food diary, and food frequency questionnaire; Leung et al., 2017; Sugiyama et al., 2014; Oftedal et al., 2017). Given that self-report approaches are low cost and scale-up relatively easily, EISR is still widely used in epidemiological studies. However, EISR is biased compared with the EI measured by biomarker such as DLW (EIBIO) (Schoeller et al., 1990) and is discouraged from use to estimate actual EI (Dhurandhar et al., 2015). The mechanism behind the reporting bias in EISR has been argued elsewhere. For example, EISR is computed from the information of reported foods and beverages using tables of food and beverage nutrients, composed of weights, calories, and the amount of macro- and micronutrients. Compositions of foods and beverages are different among brands, stores, and seasons (Martelli et al., 2018), and thus nutrient databases cannot be exhaustive. Consequently, EISR using such databases may not be accurate (McHenry et al., 1945). Further factors, including social desirability (i.e. people do not want to be seen as a \u2018big eater\u2019 in general) (Heymsfield et al., 1995) and weight/social status (Heymsfield et al., 1995; Johansson et al., 1998; Macdiarmid and Blundell, 1998; Johansson et al., 2001; Klesges et al., 1995), are known to be associated with reporting bias. Thus, the difference between EIBIO and EISR is due to systemic biases rather than a random error.\n\nDespite concerns about the accuracy of self-report approaches, they have been predominantly used in large-scale nutrition epidemiology due to their high feasibility. Approaches to mitigate the bias in EISR have been argued, including commonly used approaches to exclude the data of EISR that are considered unreliable. For example, one approach is to exclude those reporting EISR out of the range considered by the researchers to be plausible, such as from 500 to 3500 kcal/day (Banna et al., 2017). However, this rule does not consider individual variability and is not appropriate for those whose intake is truly above 3500 kcal/day, such as elite athletes or those whose body size is large and requires more than 3500 kcal/day to maintain their weight (Santos et al., 2014; DeLany et al., 2013).\n\nOther approaches are to use EE prediction equations to account for individual variability in EI (McCrory et al., 2002; Huang et al., 2005; Vinken et al., 1999; Livingstone and Robson, 2000; Xie et al., 2003; Briefel et al., 1995; Huang et al., 2004). If the EE predicted considering various factors (e.g. age, weight, sex) is far from EISR, those individuals are considered under/overreporting their actual EI. Indeed, such an approach has evidently reduced misclassification (Tooze et al., 2012). Among proposed approaches, the Goldberg cutoffs Goldberg et al., 1991 have been used in nutrition epidemiology to assess nutritional status in specific populations and investigate the association between nutritional status and health and socioeconomic outcomes (Livingstone and Robson, 2000; Xie et al., 2003; Briefel et al., 1995; Huang et al., 2004; Martin et al., 2018). Note that nutritional status in this context means dietary intakes in general; not only EI but also nutritional constituents (vitamin, fish oil, etc.) and dietary styles (Mediterranean, vegan, etc.; Grimes et al., 2013; Molina-Montes et al., 2017; New et al., 2000; Shaheen et al., 2001; O\u2019Sullivan et al., 2011). Therefore, the rationale of using the Goldberg cutoffs (and other similar approaches) to exclude data from individuals considered to have unreliable EISR is based on an assumption, \u2018if total EI is underestimated, it is probable that the intakes of other nutrients are also underestimated\u2019 (Livingstone and Black, 2003). The corollary for overestimation may also be true.\n\nBias-correcting approaches like the Goldberg cutoffs are frequently used in nutrition studies. By bias, we are referring to the difference between the estimates and their true values. Here, we focus on two typical estimands in nutrition epidemiology: the mean of nutrition intake, and the associations between nutrition intake and health outcomes in a population. While reducing bias in the mean nutrition intake is useful for determining the true value of population nutrition intake from self-reported data, it is also important to reduce bias in the associations between nutrition intake and health outcomes. However, whether the Goldberg cutoffs reduce bias has not been proved theoretically or empirically. In our previous study, we demonstrated that the Goldberg cutoffs do not necessarily eliminate the bias in estimating the associations between EI and various health outcomes (Ejima et al., 2019). Extending our previous study, we consider nutritional intake beyond EI to include biomarkers of sodium, potassium, and protein with the primary goal to examine if the Goldberg cutoffs eliminate or reduce the bias using a single dataset from the Interactive Diet and Activity Tracking in the American Association of Retired Persons (IDATA) study.\n\nEvaluating the performance of the Goldberg cutoffs solely depending on a single empirical dataset is limited because the dataset is a single realization from an unobserved data-generation process. Further, if the dataset is too small, conclusions may be limited because of issues related to power to detect bias in associations or the power to detect reductions in bias. Therefore, in addition to the empirical data analyses above, we also generated data through simulation and analyzed those generated data that preserve the characteristics of the empirical data. The simulation further enables us to assess the impact of sample size on the performance of the Goldberg cutoffs.\n\n## Results\n\n### Statistical data analysis on IDATA\n\nThe list of variables, equations, and metrics is available in Table 1. Abbreviations are summarized in Supplementary file 1.\n\n**Table 1.**\n Variables, data generation models, and metrics of performance of the Goldberg cutoffs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variables and parameters</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NISR</td>\n      <td>Self-reported nutrition intake, where NI can be energy intake (EI), sodium intake (SI), potassium intake (PoI), or protein intake (PrI)</td>\n    </tr>\n    <tr>\n      <td>NIBIO</td>\n      <td>Biomarker nutrition intake</td>\n    </tr>\n    <tr>\n      <td>NIG</td>\n      <td>Self-reported nutrition intake accepted by the Goldberg cutoffs</td>\n    </tr>\n    <tr>\n      <td>HO</td>\n      <td>Health outcomes, where HO can be body weight (BW), waist circumference (WC), heart rate after fitness test (HR), resting systolic blood pressure (SBP), resting diastolic blood pressure (DBP), and VO2 max (VO2)</td>\n    </tr>\n    <tr>\n      <td>\u03b2NI,HO</td>\n      <td>Estimated coefficients in the regression model using NI and HO as a dependent and an independent variables.</td>\n    </tr>\n    <tr>\n      <td>\u03b21</td>\n      <td>True coefficients, the point estimate from the IDATA (used in simulation)</td>\n    </tr>\n    <tr>\n      <td>Data generation models</td>\n      <td>Description</td>\n    </tr>\n    <tr>\n      <td>HO=a0+a1NIBIO+\u03f5</td>\n      <td>\u03f5 is the error of health outcomes \u223cN(0,\u03b72)</td>\n    </tr>\n    <tr>\n      <td>NISR=NIBIO+e</td>\n      <td>e is the reporting error \u223cN(\u03bc,\u03c32)</td>\n    </tr>\n    <tr>\n      <td>\u03bc(p(NIBIO))=\u2211k=0Kmkp(NIBIO)k</td>\n      <td>\u03bc is the mean error function, determined by a polynomial function of percentiles of NIBIO</td>\n    </tr>\n    <tr>\n      <td>Metrics of performance of the Goldberg cutoffs (data analysis)</td>\n      <td>Description</td>\n    </tr>\n    <tr>\n      <td>b=\u03b2NISR,HO\u2212\u03b2NIBIO,HO\u03b2NIBIO,HO\u2217100</td>\n      <td>Percent bias (%) in the estimation of NI-HO association when using \u03b2NISR,HO .</td>\n    </tr>\n    <tr>\n      <td>r=\u03b2NIG,HO\u2212\u03b2NIBIO,HO\u03b2NIBIO,HO</td>\n      <td>Percent remaining bias (%) in the estimation of NI-HO association when using \u03b2NIG,HO instead of \u03b2NISR,HO .</td>\n    </tr>\n    <tr>\n      <td>Metrics of performance of the Goldberg cutoffs (simulation)</td>\n      <td>Description</td>\n    </tr>\n    <tr>\n      <td>BiasNI,HO=(1n\u2211i=1n\u03b2^NI,HO,i)\u2212\u03b21</td>\n      <td>Bias in the estimation of NI-HO association. \u03b2^NI,HO,i is the point estimate from the ith simulation</td>\n    </tr>\n    <tr>\n      <td>MSENI,HO=1n\u2211i=1n(\u03b2^NI,HO,i\u22121n\u2211i=1n\u03b2^NI,HO,i)2+((1n\u2211i=1n\u03b2^NI,HO,i)\u2212\u03b21)2</td>\n      <td>Mean Squared Error in the estimation of NI-HO association.</td>\n    </tr>\n    <tr>\n      <td>PNI,HO=\u2211i=1nI[(\u03b2^NI,HO,i,low&lt;\u03b21)\u2229(\u03b21&lt;\u03b2^NI,HO,i,high)]n</td>\n      <td>Coverage probability in the estimation of NI-HO association. \u03b2^NI,HO,i,low and \u03b2^NI,HO,i,high are lower and upper 95% confidence intervals.</td>\n    </tr>\n  </tbody>\n</table>\n\n### The impact of the Goldberg cutoffs on the reporting bias in nutrition intake\n\nTable 2 summarizes the data included in the analyses (n=303). More than 90% of the participants are non-Hispanic whites, and their mean age was 63. The mean BMI was 27.7\u00a0kg/m2, and 30% had obesity (BMI \u226530). There was significant mean underreporting in which the biomarker nutrition intakes (NIBIO) was greater than the self-reported nutrition intakes (NISR) in all four types of nutrition intake (Table 2).\n\n**Table 2.**\n Baseline characteristics of the analyzed data*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable</th>\n      <th>IDATA</th>\n      <th>P-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total Number</td>\n      <td>303</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Age (years)</td>\n      <td>63.0\u00b15.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Male</td>\n      <td>124 (40.9%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Race</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Non-Hispanic White</td>\n      <td>283 (93.4%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>African American</td>\n      <td>19 (6.3%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Asian</td>\n      <td>1 (0.3%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Weight (kg)</td>\n      <td>79.4\u00b117.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Height (cm)</td>\n      <td>168.8\u00b19.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Waist circumference (cm)</td>\n      <td>92.0\u00b114.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>BMI (kg/m2)</td>\n      <td>27.7\u00b14.7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fat-free mass (kg)</td>\n      <td>48.9\u00b110.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Daily EI estimated from ASA24 (EISR; kcal/day)</td>\n      <td>2048.0\u00b1783.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Daily EI estimated from DLW (EIBIO; kcal/day)</td>\n      <td>2400.3\u00b1492.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Reporting bias in EI (EISR - EIBIO)</td>\n      <td>\u2013352.3\u00b1811.0</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Daily SI estimated from ASA24 (SISR; mg/day)</td>\n      <td>3457.9\u00b11440.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Daily SI estimated from urine (SIBIO; mg/day)</td>\n      <td>4015.0\u00b11995.7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Reporting bias in SI (SISR - SIBIO)</td>\n      <td>\u2013557.0\u00b12075.2</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Daily PoI estimated from ASA24 (PoISR; mg/day)</td>\n      <td>2931.4\u00b11136.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Daily PoI estimated from urine (PoIBIO; mg/day)</td>\n      <td>3210.9\u00b11253.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Reporting bias in PoI (PoISR - PoIBIO)</td>\n      <td>\u2013279.5\u00b11404.8</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Daily PrI estimated from ASA24 (PrISR; mg/day)</td>\n      <td>83.0\u00b138.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Daily PrI estimated from urine (PrIBIO; mg/day)</td>\n      <td>94.5\u00b138.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Reporting bias in PrI (PrISR - PrIBIO)</td>\n      <td>\u201311.5\u00b141.6</td>\n      <td>&lt;0.001</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Values are mean \u00b1 SD or n (%)._\n\nBy the Goldberg cutoffs, 120 among 303 participants were excluded (40%) (Table 3). There was significant underreporting in the rejected cases, whereas reporting bias (NISR \u2013 NIBIO) was not significant in the accepted cases in all four NI. Further, the difference in the biases between the accepted and the rejected cases was significant. The mean NISR in the accepted cases was significantly larger than that in the rejected cases in all four NI. NIBIO was significantly larger in the rejected cases in sodium intake (SI), whereas it was comparable between those groups in energy intake (EI), potassium intake (PoI), and protein intake (PrI). To further understand the dependency of the bias on NIBIO and the impact of the Goldberg cutoffs on the bias, the individual data were plotted (Figure 1). The bias was significantly and negatively correlated with NIBIO (Figure 1 top panels). The means of accepted cases of NISR correspond to the mean of NIBIO better than the mean of NISR in the rejected cases (Figure 1 bottom panels).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83616/elife-83616-fig1-v1.jpg)\n\n**Figure 1.:** (Upper panels) The error in mean of self-reported nutrition intake (A: energy intake, B: sodium intake, C: potassium intake, D: protein intake) and relevant nutrition intake measured by biomarkers are plotted. The regression lines are plotted with dashed lines and the corresponding p-values are stated. The dotted horizontal lines at zero indicate there is no error in nutrition intake. The red circles and black circles are the rejected cases and the accepted cases, respectively. (Bottom panels) Self-reported nutrition intake and biomarker-based nutrition intake measured are plotted. Closed red and black squares are the mean of nutrition intake in the rejected cases and the accepted cases (NIG), respectively.\n\n**Table 3.**\n Summary of nutrition intakes of the accepted and the rejected cases by the Goldberg cutoffs*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Accepted</th>\n      <th>Rejected</th>\n      <th>P-value\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Number</td>\n      <td>183</td>\n      <td>120</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Bias</td>\n      <td>Energy intake (kcal/d)</td>\n      <td>\u201326\u00b133</td>\n      <td>\u2013850\u00b189</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Sodium intake (mg/d)</td>\n      <td>\u2013201\u00b1142</td>\n      <td>\u20131100\u00b1200</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Potassium intake (mg/d)</td>\n      <td>3\u00b198</td>\n      <td>\u2013710\u00b1129</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Protein intake (g/d)</td>\n      <td>\u20132\u00b13</td>\n      <td>\u201326\u00b14</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Self-reported</td>\n      <td>Energy intake (kcal/d)</td>\n      <td>2320\u00b137</td>\n      <td>1633\u00b186</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Sodium intake (mg/d)</td>\n      <td>3757\u00b193</td>\n      <td>3002\u00b1145</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Potassium intake (mg/d)</td>\n      <td>3240\u00b171</td>\n      <td>2461\u00b1112</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Protein intake (g/d)</td>\n      <td>91\u00b13</td>\n      <td>71\u00b14</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Biomarker</td>\n      <td>Energy intake (kcal/d)</td>\n      <td>2346\u00b134</td>\n      <td>2482\u00b149</td>\n      <td>0.023</td>\n    </tr>\n    <tr>\n      <td>Sodium intake (mg/d)</td>\n      <td>3958\u00b1141</td>\n      <td>4102\u00b1195</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Potassium intake (mg/d)</td>\n      <td>3237\u00b188</td>\n      <td>3171\u00b1124</td>\n      <td>0.666</td>\n    </tr>\n    <tr>\n      <td>Protein intake (g/d)</td>\n      <td>93\u00b13</td>\n      <td>100\u00b14</td>\n      <td>0.367</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Values are mean \u00b1 SD or n.\u2020Mean difference between the accepted cases and the rejected cases was tested._\n\nThese findings suggest that the Goldberg cutoffs reduce (and may eliminate) the bias in mean NISR by identifying predominantly underreporting individuals. The difference in self-reported nutrition intake between accepted and rejected cases is predominantly from differences in reporting and less so from differences in actual biomarker-measured intake. However, statistically significant differences in biomarker-measured intake remained between accepted and rejected cases in SI.\n\n### Associations between nutrition intake and health outcomes\n\nThe associations between EIBIO, SIBIO, and PrIBIO and WC were statistically significant (Figure 2\u2014figure supplements 1 and 2 and Supplementary file 2). PoIBIO was significantly associated with VO2. Assuming that the biomarker-based health outcome associations ($\\beta_{NI_{BIO},HO}$) and self-report-based health outcome associations ($\\beta_{NI_{SR},HO}$) are different, the associations of health outcomes with self-report after applying the Goldberg rule ($\\beta_{NI_{G},HO}$) are expected to be between raw self-report and biomarker-based exposures. In other words, the Goldberg cutoffs are supposed to reduce the bias: ($\\beta_{NI_{BIO},HO}<\\beta_{NI_{G},HO}<\\beta_{NI_{SR},HO}$ or $\\beta_{NI_{BIO},HO}>\\beta_{NI_{G},HO}>\\beta_{NI_{SR},HO}$). We first tested whether bias exists for each nutrition-health outcome pair, and, if so, whether the bias is overestimation or underestimation, using percent bias ($b$). The percent bias ($b$) was significantly below 0% (underestimation) in only limited cases (EI and BW, and EI and WC) and we could not conclude whether the bias exists or not for the rest of the cases. Significant overestimation ($b>0$) was not observed in any cases (the left panel in Figure 2 and Supplementary file 2). In the two cases of underestimation from self-report (EI and BW, and EI and WC), there were also significant associations between NIBIO and the outcomes. In all cases, the nutrition-health outcome pairs with significant associations between NIBIO and health outcomes (HO) had smaller confidence intervals for the percent bias than those pairs without significant associations between NIBIO and HO (EI and BW, EI and WC, SI and BW, SI and WC, PoI and VO2, PrI and BW, and PrI and WC, shown in italic bold in Figure 2). Second, we tested whether the bias remains after applying the Goldberg cutoffs, and, if so, whether it is overestimation or underestimation, using the percent remaining bias ($r$). The bias was reduced ($|r|<100$) but remained ($r\\neq0$) for the association between EI and BW, and between EI and WC. We could not again conclude whether the bias exists or not after applying the Goldberg cutoffs for the rest of the cases.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83616/elife-83616-fig2-v1.jpg)\n\n**Figure 2.:** Italic bold font denotes significant associations between nutrition intake measured by biomarkers and the outcome (see $\\beta_{BIO}$ column in Supplementary file 2). Open squares correspond to the maximum likelihood estimators and the bars are 95% CIs. Closed squares are plotted at the left end or right end of the panel when the point estimate is beyond the x-axis limits. Using three types of regression coefficients ($\\beta_{SR}$ : self-reported data, $\\beta_{BIO}$ : biomarker data, $\\beta_{G}$ : Goldberg accepted data), two metrics of bias were defined: Percent bias of the linear regression coefficient, $b_{\\beta}=\\beta_{SR}-\\beta_{BIO}/\\beta_{BIO}*100%$ (Left panel; *: Significant bias was observed); percent remaining bias of the linear regression coefficient, $d_{\\beta}=\\beta_{G}-\\beta_{BIO}/\u2008\\beta_{BIO}*100\u2008%$ (Right panel; #: Significant bias reduction was observed [i.e., bias reduction 95% CI is within \u2013100\u2013100]; *: Significant remaining bias was observed).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83616/elife-83616-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The estimated linear regression: associations between (A) EI, (B) SI, (C) PoI, (D) PrI and (Schoeller et al., 1990) body weight (kg), (Dhurandhar et al., 2015) waist circumference (cm), and (Astrup, 2005) heart rate after the fitness test (beat/min). Open blue squares, filled green squares, and open red circles correspond to self-reported nutrition intake of the whole cases, self-reported nutrition intake of the accepted cases, and nutrition intake measured by biomarkers, respectively. Dashed blue, dotted green, and solid red lines are estimated regression lines using the data with the corresponding color, respectively.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83616/elife-83616-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The estimated linear regression: associations between (A) EI, (B) SI, (C) PoI, (D) PrI and (Ferrannini, 1988) resting systolic blood pressure (mmHg), (Leonard, 2012) resting diastolic blood pressure (mmHg), and (Schoeller et al., 1986) maximal oxygen uptake (L/min). Open blue squares, filled green squares, and open red circles correspond to self-reported nutrition intake of the whole cases, self-reported nutrition intake of the accepted cases, and nutrition intake measured by biomarkers, respectively. Dashed blue, dotted green, and solid red lines are estimated regression lines using the data with the corresponding color, respectively.\n\nFrom the above data analyses, we could not conclude that the Goldberg cutoffs do or do not remove the bias in most cases, because of the wide confidence intervals, which could be partially due to the sample size of the data and weak associations between some combinations of NI and HO.\n\n### Simulation\n\nTo strengthen the arguments on the performance of the Goldberg cutoffs, we also generated and analyzed data which preserve the characteristics of the IDATA. The simulation was designed to overcome the sample size limitations of IDATA, but keep the structure and nature of the IDATA.\n\nPerformance metrics (bias, MSE, and coverage probability) for all the combinations between NI and HO are shown in Figure 3. For each performance metric, the mean across the 1000 simulation replicates is shown. We confirmed the generated self-reported data were consistent with the IDATA (Figure 4\u2014figure supplement 1). The bias for all biomarker simulations was close to 0 (red squares in the bias column of Figure 3). For all four NI, the associations with HO were negative and those with the other outcomes were positive (Figure 2\u2014figure supplements 1 and 2). For the cases with positive correlation, the positive bias in $\\beta_{NI_{SR},HO}$ was observed, and for the cases with negative correlation, the negative bias in $\\beta_{NI_{SR},HO}$ was observed, suggesting that the self-reported data cause attenuation bias (i.e. $|\\beta_{NI_{SR},HO}|<|\\beta_{NI_{BIO},HO}|$) as observed in many studies (Kipnis et al., 2003). After application of the Goldberg cutoffs, the bias was reduced in 14 among 24 combinations of NI and HO, which can be seen in Figure 3 where the green circles are closer to 0 than the blue triangles. Specifically, $|\\beta_{NI_{G},HO}|<|\\beta_{NI_{SR},HO}|$. Notably, the bias was reduced in all six outcomes and reduction was large when EI is used as a predictor. When SI, PoI, and PrI are used as predictors, the bias was not much changed by applying the Goldberg cutoffs (green circles and blue triangles are close to each other in the bias column of Figure 3). In most cases, the MSE was also smaller for NIBIO compared with NISR, and the MSE for NISR became smaller after applying the Goldberg cutoffs (green circles are often closer to 0 than the blue triangles in the MSE column of Figure 3). The coverage probabilities (CP) were close to 95% when NIBIO was used as a predictor, as was expected, whereas it was mostly lower than 95% when NISR was used. The coverage probability increased by applying Goldberg cutoffs (green circles are often closer to 95 than the blue triangles in the CP column of Figure 3); however, it is still lower than 95% in most cases. We repeated the simulation for other values ($n$=50, 100, 200, and 300) of sample size and all cases showed similar results (Figure 3\u2014figure supplement 1). We ran sensitivity analyses varying $\u03b7$, an error term for the regression between NI and HO, and $\\sigma$, the standard deviation of the reporting bias (Figure 3\u2014figure supplement 2). Biases were not affected by varying $\u03b7$ for the range of values we considered, suggesting that error in health outcomes (or variance in health outcomes which cannot be explained by variance in biomarker-based nutrition intake) does not influence NI-HO association estimations where NI is used as an independent variable. Bias was negative when self-reported data ($NI_{SR}$ or $NI_{G}$) were used under the default value of \u03c3, and the magnitude of bias increased as \u03c3 increased (i.e., the association was attenuated). However, when the error is extremely small (e.g. \u03c3=0.25 in Figure 3\u2014figure supplement 2), the bias becomes positive, which is because the mean error function (\u00b5) was negative at low NI and positive at high NI, thus the association was intensified. Whether or not the bias becomes positive or negative is determined by the balance between the mean error function and random error.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83616/elife-83616-fig3-v1.jpg)\n\n**Figure 3.:** The bias, mean squared error (MSE), and the coverage probability (CP) in regression coefficients between four nutrition intakes (A: energy intake, B: sodium intake, C: potassium intake, D: protein intake) and six health outcomes (body weight, waist circumference, HR [heart rate] post fitness test, resting SBP [systolic blood pressure], resting DBP [diastolic blood pressure], and VO2 max) for 1000 replicates. Bold font denotes negative associations between nutrition intake measured by biomarkers and the outcome. Red square, blue triangle, and green circle represent biomarker-based nutrition intake, self-reported nutrition intake, and Goldberg accepted nutrition intake, respectively. (Left panel) The bias between estimated and true regression coefficients are plotted. The grey vertical line at zero indicates there is no bias between the true regression coefficient and the mean of the 1000 replicates. For each combination, if the green dot is closer to 0 than the blue triangle, then that indicates Goldberg cutoff rule reduced the bias. (Middle panel) The MSE between estimated and true regression coefficients are plotted. The grey vertical line at zero indicates there is no bias between the true regression coefficient and the mean of the 1000 replicates. For each combination, if the green dot is closer to 0 than the blue triangle, then that indicates Goldberg cutoff rule reduced the MSE. (Right panel) The coverage probability for simulation studies. The grey vertical line indicates coverage probability consistent with 95% confidence intervals. For each combination, if the green dot is closer to 95 than the blue triangle then that indicates the Goldberg cutoff rule improved the coverage probability.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83616/elife-83616-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Sensitivity analysis of the sample size. The sample size was varied between 0.5 and 3 times of the baseline values ($n$=50, 100, 200, and 300). Red square, blue triangle, and green circle represent bias (A) and coverage probability (B) for biomarker-based nutrition intake, self-reported nutrition intake, and Goldberg accepted nutrition intake, respectively.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83616/elife-83616-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Sensitivity analysis of the selected parameters. The parameters were varied between 0.25 and 2 times of the baseline values. Red square, blue triangle, and green circle represent bias for biomarker-based nutrition intake, self-reported nutrition intake, and Goldberg accepted nutrition intake, respectively.\n\n## Discussion\n\nDietary self-reporting is a basic component of nutrition epidemiology, particularly for studies of nutrition-health relationships. However, reporting bias in nutrition intake is perhaps one of the greatest impediments to understanding the true effect of nutrition on disease. Failure to account for this bias in self-reports can affect the analysis and interpretation of studies designed to assess the influences of nutrition on health. Correlation or regression coefficients estimating associations between self-reported nutrition intakes and health outcomes can be subject to substantial error (Freedman et al., 2011; Gibson et al., 2017). To address such reporting bias issues, there has been increased interest in the use of statistical models in conjunction with biomarker data (Freedman et al., 2010; Brown et al., 2021).\n\nIn this study, reporting bias in self-reported nutrition intake was demonstrated using both empirical data analysis and a simulation study. We first examined whether the bias in mean nutrition intake and the bias in the associations between nutrition intake and health outcomes are reduced by applying the Goldberg cutoffs to an empirical dataset, IDATA. We confirmed the bias in mean self-reported nutrition intake was eliminated by applying Goldberg cutoffs to exclude extreme reporters (mostly under-reporters). This bias can be mostly explained by differences in reporting between the accepted and rejected cases rather than a difference in actual nutrition intake between the accepted and rejected cases. We further tested whether the associations between health outcomes and nutrition intake are biased when self-reported data are used, and whether the bias is reduced by applying the Goldberg cutoffs. The significant bias for the associations between EI and BW and the association between EI and WC were reduced but remained after applying Goldberg cutoffs. We did not observe significant bias in associations for other nutrition-outcome pairs, and therefore cannot make conclusions regarding the utility of applying the Goldberg cutoffs to reduce bias for these associations in the empirical data.\n\nTo overcome the limitations of the data (i.e. sample size and weak associations among many nutrition-outcome pairs), we generated and analyzed data preserving the characteristics of the IDATA for the assessment of the Goldberg cutoffs. We confirmed the existence of bias in estimated associations when the self-reported data were used, and these biases were reduced, but not eliminated, by applying the Goldberg cutoffs in general. We also confirmed large MSE and low coverage probability when self-reported data were used; MSE and low coverage probability were improved by using Goldberg cutoffs, but were not recovered to the levels of biomarker data. Overall, the empirical data analyses and the simulation study suggest that the Goldberg cutoffs improve the estimates in nutrition-health outcome associations; however, the biases were not completely removed.\n\nThis study has several strengths. First, although energy intake has traditionally been studied more with respect to Goldberg cutoffs, herein we also investigated three other nutrition intakes: sodium, potassium, and protein. In our previous study, we used only energy intake as a predictor (Ejima et al., 2019). However, given that the Goldberg cutoffs are believed to reduce the bias in nutrition intake broadly, we expanded the approach to these other nutrition intakes, which can be measured by biomarkers (Livingstone and Black, 2003). Second, we conducted the simulation in addition to empirical data analyses. There are two advantages of the simulation design. (1) The data generation process was based on the IDATA dataset. Thus, we were able to simulate datasets reflective of those that would be seen in the real world. Both the sample size of the generated dataset and the variables that we considered are reflective of what is often observed in nutrition studies. (2) Simulation can consider different models for the data-generating process. Although our objective was not to disentangle the underlying data generation mechanisms, we were able to generate data that preserve the characteristics of the IDATA.\n\nThe limitations of this study are worth noting. In the analysis of IDATA, we used only bivariate associations for nutrition-health outcomes. It is possible that including various covariates or different models may influence the existence or lack of bias in nutrition-health associations. In the data-generation process for the simulations, assumptions were made on parameter settings. The reporting bias was set to be normally distributed. Modeling the bias using other distributions (such as a heavier tailed distribution that may be more consistent with a zero-bounded intake) may improve model fit, and thus generated more realistic data. We simulated the bias with constant variance, consistent with the apparent stability of variance across the intake quantiles in Figure 4\u2014figure supplement 2 and Supplementary file 3; however, modeling the variance as a function of intake quantile may alter the data-generating process. We used the self-reported nutrition intake reported by ASA24, as it reflects recent dietary intake. The bias we observed in this study may be different for other self-report methods. Finally, the simulation approach, although based on the IDATA, was nonetheless generated from a limited sample size. We are not aware of thresholds for sufficient sample size for empirical-data-based simulation, and we have had success with smaller plasmode based sampling in the past (Ejima et al., 2020; Alfaras et al., 2021); however, it is possible a larger, more representative, or more robust empirical data set may influence both the empirical and simulated results. Further as the data was from a single population in which white and relatively older people are predominant, generalizability of the study finding should be carefully considered.\n\nIn conclusion, our study demonstrated that the use of Goldberg cutoffs can effectively reduce or eliminate bias in mean nutrition intake measurements in the IDATA dataset. However, our analysis also revealed that these cutoffs have limited efficacy in addressing bias in the associations between nutrition intake and health outcomes, as both empirical and simulated results showed. Investigators considering excluding extreme reporters in epidemiological studies should consider whether such approaches are likely to be helpful in answering their specific research questions, as our study has shown that such cutoffs are more useful in estimating mean nutrition intakes than in studies of associations between nutrition intake and health outcomes.\n\n## Materials and methods\n\nWe conducted a set of empirical analyses to assess the reporting bias due to self-report and examine whether the Goldberg cutoffs reduce reporting bias using the data from The Interactive Diet and Activity Tracking in the American Association of Retired Persons (IDATA) study (National Cancer Institute, 2018a). The reporting bias in the mean of nutrition intakes and the associations (regression coefficients) between nutrition intakes and health outcomes were assessed. We also conducted a simulation study to investigate the performance of Goldberg cutoffs using the results from the empirical analyses as ground truth. Note that in data analyses, we assumed the estimates from biomarkers are the true values, since the true values (i.e. population parameters) are unobservable.\n\nAmong various nutrition intakes (NI), we considered sodium intake (SI), potassium intake (PoI), and protein intake (PrI) in addition to energy intake (EI). These NI were selected because they can be measured by urine samples as well as self-reports. We denote self-reported NI by NISR: EISR, SISR, PoISR, and PrISR. We denote biomarker-based NI by NIBIO: EIBIO, SIBIO, PoIBIO, and PrIBIO. The NISR data remaining after applying the Goldberg cutoffs (hereafter, we call those \u2018accepted cases\u2019) are denoted by NIG: EIG, SIG, PoIG, and PrIG. Health outcomes (HO) that may be associated with NI were selected from the data dictionaries; body weight (BW), waist circumference (WC), heart rate after fitness test (HR), resting systolic blood pressure (SBP), resting diastolic blood pressure (DBP), and VO2 max (VO2). The estimated regression coefficients are denoted by the subscript of the explanatory variables and the health outcomes (e.g., $\\beta_{EI_{SR,},BW}$ represents the association between self-reported EI and body weight).\n\n### Goldberg cutoffs\n\nThe Goldberg cutoffs are an approach to identify those who report low or high energy intake that, if sustained across long periods of time, would be implausible to sustain life (for underreporting) or present weight (for overreporting), by comparing the reported EI and the energy expenditure (EE) predicted from body composition and physical activity level (Goldberg et al., 1991). First, EE is predicted as a product of physical activity level (PAL) and basal metabolic rate (BMR): EE =PAL*BMR. PAL is assumed to be 1.75 (Dugas et al., 2011). BMR is predicted using fat-free mass (Cunningham, 1991): BMR = 370 + 21.6 * FFM. Second, the ratio of EISR and predicted EE is computed and examined whether it is in a reasonable range: $e^{-2*\\frac{S}{100}}$ < $EI_{SR}:EE<e^{2\u2217\\frac{S}{100}}$ , where $S$ is defined as: $\\sqrt{\\frac{CV_{wEI}^{2}}{d}+CV_{wB}^{2}+CV_{tP}^{2}}$ . $CV_{wEI}$ , $CV_{wB}$ , and $CV_{tP}$ are the within-subject variation in EISR, the within-subject variation in BMR, and the total variation in PAL, and $d$ is the number of days of diet assessment. We set $CV_{wEI}=23 %, CV_{wB}=8.5 %,CV_{tP}=15 %, and d=7$ following the previous study (Black, 2000). Finally, if individuals are not in the range, they were considered under- or overreporters and were excluded from further analyses.\n\n### Data\n\n#### Overview of IDATA\n\nThe IDATA study was designed \u2018to evaluate and compare the measurement error structure of diet and physical activity assessment tools against reference biomarkers\u2019. The study participants \u2018were recruited from a list of AARP [American Association of Retired Persons] members aged 50\u201374 years residing in and around Pittsburgh, Pennsylvania\u2019 and were screened for eligibility by phone interview or clinic visit. The eligibility criteria were speaking English, having internet access, having no major medical issues (such as diabetes, renal/heart failure, and any conditions affecting fluid balance), having no mobility issues, and having BMI between 18.5 and 40.0 (kg/m2). The participants \u2018visited the study center three times and also completed assigned activities at home over a 12-month period\u2019 (National Cancer Institute, 2018a) from early 2012 through late 2013 (National Cancer Institute, 2018a; Matthews et al., 2018). Self-reported dietary/physical activity information, biomarker data to estimate dietary intake, and the data from physical objective monitors to estimate physical activity were collected. In addition, demographic information (age, sex, race/ethnicity) and anthropometric measurements (weight, height, and waist circumference) were obtained at a clinical visit or phone screening.\n\n#### Self-reported nutrition intake: NISR\n\nFor self-report dietary assessment (EISR, SISR, PoISR, and PrISR), four different approaches were used in IDATA: Automated Self-Administered 24 Hour Dietary Assessment Tool (ASA24) (National Cancer Institute, 2018b), Diet History Questionnaire (DHQ-II) (Diet History Questionnaire, 2022), 7-day food checklist, and 4-day food record. These SR approaches were conducted at different times during the IDATA study. We used the data of ASA24 in our analyses because they were collected closest in time to the DLW measurements. ASA24 is an online self-administered recall system asking about a 24-hr dietary recall for the previous day, from midnight to midnight, using a dynamic user interface.\n\n#### Biomarker-based nutrition intake: NIBIO\n\nThree approaches were used for biomarker assessment of NI: DLW, urine, and saliva (not used herein). EIBIO was computed from DLW data, and SIBIO, PoIBIO, and PrIBIO were calculated from 24-hr urine samples. EIBIO was estimated as a sum of daily total energy expenditure estimated from DLW and daily change in energy stores during the DLW period. Total energy expenditure was calculated using the approach proposed by Schoeller et al., 1986, where the respiratory quotient was assumed as 0.86. Daily change in energy stores during the DLW period (about 2 weeks) was computed from the average daily weight change during the period assuming the energy density of body weight was 2380 kcal/kg (Bhutani et al., 2017). The urinary values obtained from 24-hr urine samples were converted into nutrition intakes assuming that 81%, 80%, and 86% of consumed nitrogen, potassium, and sodium are excreted in the urine, respectively. Dietary protein was calculated assuming that 16% of protein is nitrogen. A more comprehensive explanation of measuring EIBIO, SIBIO, PoIBIO, and PrIBIO is reported elsewhere (Park et al., 2018).\n\n### Health outcomes\n\nFrom health outcomes (HO) available in IDATA, we selected objective variables that were potentially associated with nutrition intake. BW (kg) and WC (cm) were obtained at clinical visits; HR (beat/min after fitness test), SBP (mmHg), DBP (mmHg), and VO2 max (L/min) were obtained by the modified Canadian Aerobic Fitness Test (mCAFT).\n\n### Summary of the data\n\nIn IDATA, NISR, NIBIO, and HO were repeatedly measured at different time points. For fair comparison among them, we selected the data measured in the same month; thus, the data of Month 0 and Month 11 were used from Groups 1&3 and Groups 2&4, respectively (National Cancer Institute, 2018a). From 1,082 participants, we excluded 779 participants because we did not have information necessary to apply the Goldberg cutoffs (no fat-free mass information [n=725] or NISR [n=240]) or there was no urine-based nutrition intake data [n=231]. The remaining 303 participants\u2019 data were analyzed.\n\nIDATA data were accessible through the Cancer Data Access System (https://biometry.nci.nih.gov/cdas/idata/; downloaded 11/22/2017) after our project proposal was reviewed and approved by the National Cancer Institute (https://biometry.nci.nih.gov/cdas/approved-projects/1702/).\n\n### Statistical analysis of IDATA\n\nWhether the bias in the mean NISR compared to NIBIO (e.g. calculated as EISR - EIBIO) would be reduced by the Goldberg cutoffs was tested. We first tested whether the mean bias in each NISR is significantly different from zero. Then, we repeated the same test for the data of the accepted cases for each NIG (e.g., EIG - EIBIO). We further tested whether the mean NISR are different between those who were removed (rejected cases; NISR excluding NIG) and the accepted cases (NIG).\n\nFurther, we tested whether the bias in the estimates of associations between NI and HO would be reduced by the Goldberg cutoffs. We computed regression coefficients ($\\beta_{NI,HO}$) between HO and each of the three different NI measuring approaches: NIBIO, NISR, and NIG. Note that we did not adjust the analyses for any other covariates, because the purpose of this study is to understand if the Goldberg cutoffs could reliably reduce bias rather than to refine associations accounting for covariates. To comprehensively assess the reporting bias and bias reduction in different outcomes with different units, we used standardized metrics for reporting bias and bias reduction, which was originally proposed in our previous study (Ejima et al., 2019). In brief, we used the percent bias ($b$) for the assessment of the magnitude of the bias and the percent remaining bias ($r$) for the assessment of the magnitude of the bias remaining after applying the Goldberg cutoffs, which are defined as follows:\n\n$$\nb=\\frac{\\beta_{NI_{SR},HO}-\\beta_{NI_{BIO},HO}}{\\beta_{NI_{BIO},HO}}*100\u2008%\n$$\n\n\n\n$$\nr=\\frac{\\beta_{NI_{G},HO}-\\beta_{NI_{BIO},HO}}{\\beta_{NI_{BIO},HO}}*100\u2008%\n$$\n\nA more in-depth interpretation of the metric is available in our previous study (Ejima et al., 2019). Jackknife estimation (leave-one-out) (Efron and Stein, 1981) was used to compute 95% CIs of those metrics. All analyses were performed separately for each combination of nutrition intakes and outcomes. Two-tailed Student\u2019s t test was used to test whether mean of a single variable is different from zero. Two-tailed independent Welch\u2019s t test was used to test the mean difference of a single variable from two independent groups. The jackknife method was used to test the mean difference of a single variable from two non-independent groups (i.e. whole data vs the data of accepted cases). The type I error rate was fixed at 0.05 (2-tailed).\n\n### Simulation\n\nTo strengthen the arguments on the performance of the Goldberg cutoffs, we also generated and analyzed data that preserve the characteristics of the IDATA.\n\n### Data generation\n\nWe generated data composed of four variables: NIBIO (biomarker), NISR (self-reported), HO (health outcomes: BW, WC, HR, SBP, DBP, and VO2), and FFM (fat-free mass). NIBIO and FFM were resampled from the IDATA. HO is computed using a linear model using NIBIO as a predictive variable:\n\n$$\nHO=a_{0}+a_{1}NI_{BIO}+\u03f5, \u03f5~N0,\u03b7^{2},\n$$\n\nwhere $a_{0}, a_{1},$ and $\u03b7^{2}$ are the model parameters estimated from the IDATA. NISR is generated by adding an error term (i.e., reporting error), $e$, to NIBIO, adapting the approach proposed by Ward et al., 2019:\n\n$$\nNI_{SR}=NI_{BIO}+e,\n$$\n\nwhere $e$ is determined by the percentile of NIBIO in the empirical distribution, $p(NI_{BIO})$. The reporting error $e$ is assumed to follow a normal distribution parametrized by percentile-specific mean, $\\mu(p(NI_{BIO}))$, and a constant standard deviation, $\\sigma$: $e~N(\\mu,\\sigma^{2})$. \u00b5 and $\\sigma$ were estimated by fitting polynomial models to the IDATA: $\\mupNI_{BIO}=\\sumk=0Km_{k}pNI_{BIO}^{k}$ , where $K$ is the order of the polynomial. The order of the polynomial function was varied from 1 to 5 and we selected the value of $K$ that yields the smallest MSE. We used k-fold cross-validation with 10 folds to calculate the test MSE for each model. This resulted in $K=1,\u20083,\u20083,\u20085$ for EI, SI, PoI, and PrI, respectively (Figure 4\u2014figure supplement 2 and Supplementary file 4). For example, assuming EIBIO  is 3000 kcal, which corresponds to 90.4 percentile, the mean of the reporting error, \u03bc, was \u2013749.6 and the standard deviation of the reporting error, $\\sigma$, was 759.1. Therefore his/her $e$ is randomly sampled from the normal distribution: $N-749.6,759.1$ . We further confirmed our assumption of homoskedastic $\\sigma$ is reasonable by the Goldfeld Quandt test (Goldfeld and Quandt, 1965; Supplementary file 3). The Goldfeld Quandt test compares variance in high and low values of a variable; we discarded the middle 20% of the total observations (eliminated the center 61 observations among 303 in total) to define the high and low groups. The simulated data were truncated so that NISR >0. The variable NIG was generated by applying the Goldberg cutoffs to EISR using FFM (thus, NIG is a subset of NISR). The above process was repeated for each NI. We generated $n=100$ individuals, and the data generation was repeated 1000 times, leading to 1000 replicates. The data generating process is summarized in Figure 4.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83616/elife-83616-fig4-v1.jpg)\n\n**Figure 4.:** The associations between nutrition intake (EI: Energy Intake, SI: Sodium Intake, PtI: Potassium Intake, PrI: Protein Intake) and health outcomes (HO: body weight, waist circumference, heart rate after fitness test, resting systolic blood pressure, resting diastolic blood pressure, and VO2 max). The subscripts \u2018SR\u2019, \u2018BIO\u2019, and \u2018G\u2019 denote self-reported NI, biomarker-based NI, and self-reported NI after applying the Goldberg cutoffs, respectively. Fat free mass is denoted by FFM and used to calculate the Goldberg cutoff threshold. An arrow from one node, A, to another, B, means \u2018B is generated by A\u2019. Rectangles represent the variables that are resampled from the empirical distribution, and ellipses are for the variables generated from the models.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83616/elife-83616-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The distributions of nutrition intake (A: energy intake, B: sodium intake, C: potassium intake, and D: protein intake) are shown. Red, blue, and green lines correspond to biomarker-based nutrition intake, self-reported nutrition intake, and generated (self-reported) nutrition intake, respectively. Each simulation generating nutrition intake was with n=100 and the simulation was repeated 1000 times in this figure.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83616/elife-83616-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The distributions of reporting error on quantiles of different nutrition intakes (A: energy intake, B: sodium intake, C: potassium intake, and D: protein intake) are shown. The horizontal dotted lines correspond with no reporting error. The blue lines and the shaded areas are the fitted polynomials (degrees of polynomials are 1, 3, 3, and 5 for energy intake, sodium intake, potassium intake, and protein intake, respectively) and the 95% CI of the polynomials.\n\n### Measurement of the performance of the Goldberg cutoffs\n\nThe point estimates of the regression coefficients for an NI and an HO from the ith simulation are denoted as $\\beta^_{NI,HO,i}$ (e.g., $\\beta^_{EI_{SR},BW,i}$ is the ith regression coefficient for self-reported energy intake and body weight). The performance of the Goldberg cutoffs was assessed by three metrics: bias, mean squared error (MSE), and coverage probability:\n\n$$\nBias_{NI,HO}=(\\frac{1}{n}\\sumi=1n\\beta^_{NI,HO,i})\u2212\\beta_{1},\n$$\n\n\n\n$$\nMSE_{NI,HO}=\\frac{1}{n}\\sumi=1n(\\beta^_{NI,HO,i}\u2212\\frac{1}{n}\\sumi=1n\\beta^_{NI,HO,i})^{2}+((\\frac{1}{n}\\sumi=1n\\beta^_{NI,HO,i})\u2212\\beta_{1})^{2},\n$$\n\n\n\n$$\nP_{NI,HO}=\\frac{\\sumi=1nI[(\\beta^_{NI,HO,i,low}<\\beta_{1})\u2229(\\beta_{1}<\\beta^_{NI,HO,i,high})]}{n},\n$$\n\nwhere $NI={EI_{SR},EI_{BIO},EI_{G},SI_{SR},SI_{BIO},SI_{G},PoI_{SR},PoI_{BIO},PoI_{G},PrI_{SR},PrI_{BIO},PrI_{G}}$, $HO={BW,WC,HR,SBP,DBP,VO2},$$I(\u22c5)$ is an indicator function, $low$ and $high$ represent the lower and upper 95% confidence intervals, and $\\beta_{1}$ is the true parameter value, which we define as the point estimate from the IDATA. Note that bias is used differently here than in the empirical analysis because the parameters remain unknown in the empirical analysis whereas we define the parameters in the simulation.\n\nSensitivity analyses were performed varying the sample size and two other parameters: error term for the regression between health outcome and biomarker-based nutrition intakes (\u03b7), and the standard deviation of the reporting error (\u03c3). All simulations and analyses were performed using the statistical computing software R (version 4.0.1); code book and analytic code are publicly and freely available without restriction at http://doi.org/10.5281/zenodo.7783842. The variables, data generation models, and metrics of performance of the Goldberg cutoffs are summarized in Table 1. STROBE guideline was followed, and the statement is available as supplementary material.\n",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "fd0c19fa-8f1b-411b-a73b-7d2c81d30765",
+      "submission_id": "7dde57b1-cf3c-4e2c-af39-7a7cb8d9d85e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eduardo L Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83616.sa0](https://doi.org/10.7554/eLife.83616.sa0)\n\nThis important study estimated the bias in nutrition-health associations and the reduction of bias using Goldberg cut-offs. The evidence supporting the study claims is solid, and the findings will be of interest to epidemiologists and nutrition scientists who are concerned with the effects of measurement error in health-diet research.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Eduardo L Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83616.sa1](https://doi.org/10.7554/eLife.83616.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Bias in nutrition-health associations is not eliminated by excluding extreme reporters in empirical or simulation studies\" for consideration by eLife. One peer reviewer has reviewed your article, and I have overseen the evaluation in the dual role of Reviewing Editor and Senior Editor. The reviewer has opted to remain anonymous.\n\nEssential revisions:\n\nAs is customary in eLife, we discussed the critique with the reviewer. What follows below are the essential and ancillary points and the interaction post-review. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you attempt to amend or expand the text to clarify the narrative accordingly.\n\nReviewer #1 (Recommendations for the authors):\n\nYamamoto et al. analyzed the IDATA data to assess the bias of nutrition intake and the reduction of the bias using the Goldberg cutoffs. They successfully illustrated that the bias reduction is not large in some situations. The data used contain biomarker-based nutrition intake information like the DLW method used as a gold standard in the present study. Although the analyses were precise, the message of the study is quite complicated. A more understandable message would raise the value of the present study.\n\n1. In the abstract, IDATA should be spelled out. Also, please show the name of \"IDATA\" and it\u2019s spelling out in the introduction section.\n\n2. There are many figures, although the result section of the manuscript does not contain sufficient numerical information; readers are hard to follow the discussion alongside the table and figure. For example, please specify in the text in what situation the bias is especially large or is reduced by the modification method and how large it is.\n\n3. The study concludes that \"there is a situation that the Goldberg cutoffs did not solve the problem.\" However, readers would like to know in what situation the Goldberg cutoffs are not useful and which alternatives are available.\n",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "03b66683-e70b-427e-814e-a06bcb23fb74",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C1",
+      "claim": "Self-reported nutrition intake (NI) data are prone to reporting bias that may induce bias in estimands in nutrition studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-reported nutrition intake (NI) data are prone to reporting bias that may induce bias in estimands in nutrition studies; however, they are used anyway due to high feasibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about self-reported nutrition data that is supported by established scientific knowledge and is referenced throughout the manuscript with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "df06cc61-5a53-4108-8256-836f72d025e5",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C2",
+      "claim": "Self-reported nutrition intake data are used in nutrition studies due to high feasibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-reported nutrition intake (NI) data are prone to reporting bias that may induce bias in estimands in nutrition studies; however, they are used anyway due to high feasibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field and is a commonly accepted reason for using self-report methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "66d2bf44-f306-4beb-a5e1-6996c71ddb50",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C3",
+      "claim": "In the IDATA study, significant bias in mean NI was removed with Goldberg cutoffs when 120 among 303 participants were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Interactive Diet and Activity Tracking in the American Association of Retired Persons (IDATA) data, significant bias in mean NI was removed with Goldberg cutoffs (120 among 303 participants excluded).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by empirical data analysis from the IDATA study as reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "66ee24ec-1a05-48b2-9957-2b25d3b37654",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C4",
+      "claim": "Sample size in IDATA was insufficient to evaluate bias reductions in associations between NI and health outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Associations between NI and health outcomes (weight, waist circumference, heart rate, systolic/diastolic blood pressure, and VO2 max) were estimated, but sample size was insufficient to evaluate bias reductions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on their analysis of the IDATA data and the wide confidence intervals observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "783309df-49be-40db-9424-cc5a5995178a",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C5",
+      "claim": "Significant bias in simulated associations using self-reported NI was reduced but not completely eliminated by Goldberg cutoffs in 14 of 24 nutrition-outcome pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant bias in simulated associations using self-reported NI was reduced but not completely eliminated by Goldberg cutoffs in 14 of 24 nutrition-outcome pairs; bias was not reduced for the remaining 10 cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data generated and analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "5bd9b55a-3b7f-4de9-b35f-4ae2833239f2",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C6",
+      "claim": "Bias was not reduced by Goldberg cutoffs for 10 of 24 nutrition-outcome pairs in simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant bias in simulated associations using self-reported NI was reduced but not completely eliminated by Goldberg cutoffs in 14 of 24 nutrition-outcome pairs; bias was not reduced for the remaining 10 cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data generated and analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "81e4652e-2394-4ae7-b950-26e306f775cb",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C7",
+      "claim": "95% coverage probabilities were improved by applying Goldberg cutoffs in most cases but underperformed compared with biomarker data.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, 95% coverage probabilities were improved by applying Goldberg cutoffs in most cases but underperformed compared with biomarker data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results showing coverage probability metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "eeddcd19-5014-4c2a-9541-95f0d324709b",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C8",
+      "claim": "Goldberg cutoffs may achieve bias elimination in estimating mean NI.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Goldberg cutoffs may achieve bias elimination in estimating mean NI, bias in estimates of associations between NI and outcomes will not necessarily be reduced or eliminated after application of Goldberg cutoffs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both empirical data analysis and simulation results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "b6e5e21f-5e9e-4c69-b37e-dd3a8606bd25",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C9",
+      "claim": "Bias in estimates of associations between NI and outcomes will not necessarily be reduced or eliminated after application of Goldberg cutoffs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Goldberg cutoffs may achieve bias elimination in estimating mean NI, bias in estimates of associations between NI and outcomes will not necessarily be reduced or eliminated after application of Goldberg cutoffs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both empirical data analysis and simulation results showing incomplete bias reduction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "cb27ffa4-fea5-4350-8e86-9d00b041eb45",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C10",
+      "claim": "Whether one uses Goldberg cutoffs should be decided based on research purposes and not general rules.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether one uses Goldberg cutoffs should therefore be decided based on research purposes and not general rules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study, representing an inference from the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "8b726e5d-cbeb-4d9a-b784-141c16f1b23d",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C11",
+      "claim": "Biomarker approaches are considered more accurate compared with self-report for measuring nutrition intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomarker approaches are considered more accurate compared with self-report; however, they are typically expensive and require special equipment for each nutrient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of nutrition research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "2725ca83-df06-492c-b838-a6fa81a12964",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C12",
+      "claim": "Biomarker approaches are typically expensive and require special equipment for each nutrient.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomarker approaches are considered more accurate compared with self-report; however, they are typically expensive and require special equipment for each nutrient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the practical limitations of biomarker methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "49ace905-1ab4-48ca-a37c-a0f98ee7e1b8",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C13",
+      "claim": "Self-report approaches are less expensive and do not require special laboratory equipment or techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-report approaches are less expensive and do not require special laboratory equipment or techniques, and can be applied to the measurement of any nutrition components from macronutrients (i.e. carbohydrates, fat, and protein) to micronutrients (i.e. minerals and vitamins); however, self-reported data are known to be fraught with bias (Schoeller et al., 1990; Dhurandhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the practical advantages of self-report methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "a921f925-b989-4678-88ac-57b146abf846",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C14",
+      "claim": "Self-report approaches can be applied to the measurement of any nutrition components from macronutrients to micronutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-report approaches are less expensive and do not require special laboratory equipment or techniques, and can be applied to the measurement of any nutrition components from macronutrients (i.e. carbohydrates, fat, and protein) to micronutrients (i.e. minerals and vitamins); however, self-reported data are known to be fraught with bias (Schoeller et al., 1990; Dhurandhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the versatility of self-report methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "3b38a6e3-a21e-47f8-a491-a1c52ed99a65",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C15",
+      "claim": "Self-reported data are known to be fraught with bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-report approaches are less expensive and do not require special laboratory equipment or techniques, and can be applied to the measurement of any nutrition components from macronutrients (i.e. carbohydrates, fat, and protein) to micronutrients (i.e. minerals and vitamins); however, self-reported data are known to be fraught with bias (Schoeller et al., 1990; Dhurandhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "680e03dd-a4f2-47a1-b4f5-7bc70311e4cb",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C16",
+      "claim": "Energy intake (EI) is defined as a sum of the total metabolizable energy content of consumed foods and beverages.",
+      "claim_type": "EXPLICIT",
+      "source": "Energy intake (EI) is defined as a sum of the total metabolizable energy content of consumed foods and beverages (Astrup, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "e07650fb-b127-49e7-b473-74694ab29cb8",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C17",
+      "claim": "EI can be measured using biomarkers, especially by energy balance approaches in which respiratory gas analysis or doubly labeled water (DLW) are used for the calculation of energy expenditure (EE).",
+      "claim_type": "EXPLICIT",
+      "source": "EI can be measured using biomarkers, especially by energy balance approaches in which respiratory gas analysis or doubly labeled water (DLW) are used for the calculation of energy expenditure (EE) (Ferrannini, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "e7609c87-0341-44a6-beee-ba2e22edc81d",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C18",
+      "claim": "EI can be calculated using EE accounting for change in energy stores during the period of measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "EI can be calculated using EE accounting for change in energy stores (i.e. body composition) during the period of measurement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established methodology in energy balance research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "6d7dbad8-4f2e-4c2e-a331-7f51cce5176c",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C19",
+      "claim": "Respiratory gas analysis typically requires the participants to wear a gas mask or stay in a metabolic chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "The respiratory gas analysis typically requires the participants to wear a gas mask or stay in a metabolic chamber (Leonard, 2012), which restricts participants' behavior; thus, the measured EI using the respiratory gas analysis may not reflect EI from habitual eating behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation describing the methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "d2f1b4bf-2aa3-4a00-818e-4c243db5a5ac",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C20",
+      "claim": "Respiratory gas analysis restricts participants' behavior, thus the measured EI using respiratory gas analysis may not reflect EI from habitual eating behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The respiratory gas analysis typically requires the participants to wear a gas mask or stay in a metabolic chamber (Leonard, 2012), which restricts participants' behavior; thus, the measured EI using the respiratory gas analysis may not reflect EI from habitual eating behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the methodological constraints of respiratory gas analysis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "5942559b-fdf6-4016-8eb9-686fdf4fbf09",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C21",
+      "claim": "DLW requires the participants to visit the laboratory to drink labeled water enriched with stable hydrogen and oxygen isotopes and collect urine for measurement of isotope levels.",
+      "claim_type": "EXPLICIT",
+      "source": "DLW requires the participants to visit the laboratory to drink labeled water enriched with stable hydrogen and oxygen isotopes and collect urine for measurement of isotope levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established methodology for DLW measurement.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "46790e32-f7a9-4c75-ba1f-d4f1d3e1e7c4",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C22",
+      "claim": "DLW is considered to reflect habitual eating behavior and widely accepted as a standard and reliable approach in measuring EI in free-living individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "It is considered to reflect habitual eating behavior and widely accepted as a standard and reliable approach in measuring EI in free-living individuals (Schoeller et al., 1986; Speakman, 1997; Schoeller and van Santen, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "8241646b-9e25-4bce-970f-517590a1695a",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C23",
+      "claim": "Given the high cost of isotopes and laboratories to analyze collected urine, DLW is not practical in large-scale epidemiological surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the high cost of isotopes and laboratories to analyze collected urine, DLW is not practical in large-scale epidemiological surveillance (Banna et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and represents established knowledge about the practical limitations of DLW.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "6004afa6-860d-4dfe-a68a-23cc0c7f13e5",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C24",
+      "claim": "EISR is biased compared with the EI measured by biomarker such as DLW (EIBIO).",
+      "claim_type": "EXPLICIT",
+      "source": "However, EISR is biased compared with the EI measured by biomarker such as DLW (EIBIO) (Schoeller et al., 1990) and is discouraged from use to estimate actual EI (Dhurandhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "a8c48437-d2be-43c3-aa89-56741283f5b9",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C25",
+      "claim": "EISR is discouraged from use to estimate actual EI.",
+      "claim_type": "EXPLICIT",
+      "source": "However, EISR is biased compared with the EI measured by biomarker such as DLW (EIBIO) (Schoeller et al., 1990) and is discouraged from use to estimate actual EI (Dhurandhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "5ed57a7e-107c-444e-9833-894e456f1b94",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C26",
+      "claim": "EISR is computed from the information of reported foods and beverages using tables of food and beverage nutrients, composed of weights, calories, and the amount of macro- and micronutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, EISR is computed from the information of reported foods and beverages using tables of food and beverage nutrients, composed of weights, calories, and the amount of macro- and micronutrients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established methodology for computing EISR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "227c4045-83e8-47f2-be9f-527aae529840",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C27",
+      "claim": "Compositions of foods and beverages are different among brands, stores, and seasons.",
+      "claim_type": "EXPLICIT",
+      "source": "Compositions of foods and beverages are different among brands, stores, and seasons (Martelli et al., 2018), and thus nutrient databases cannot be exhaustive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "36572cfe-002a-4532-854c-e4263b1e7694",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C28",
+      "claim": "Nutrient databases cannot be exhaustive.",
+      "claim_type": "EXPLICIT",
+      "source": "Compositions of foods and beverages are different among brands, stores, and seasons (Martelli et al., 2018), and thus nutrient databases cannot be exhaustive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the variability in food composition.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "bed62904-7ba4-4a2b-99fb-e2bff67cbdcc",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C29",
+      "claim": "EISR using nutrient databases may not be accurate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, EISR using such databases may not be accurate (McHenry et al., 1945).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and is an inference from the limitations of nutrient databases.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "a1060940-d1ee-4d6e-93f8-63c301b01cac",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C30",
+      "claim": "Social desirability is associated with reporting bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Further factors, including social desirability (i.e. people do not want to be seen as a 'big eater' in general) (Heymsfield et al., 1995) and weight/social status (Heymsfield et al., 1995; Johansson et al., 1998; Macdiarmid and Blundell, 1998; Johansson et al., 2001; Klesges et al., 1995), are known to be associated with reporting bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "6087f59e-2ba4-4b6f-8231-2c9e5326939a",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C31",
+      "claim": "Weight/social status is associated with reporting bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Further factors, including social desirability (i.e. people do not want to be seen as a 'big eater' in general) (Heymsfield et al., 1995) and weight/social status (Heymsfield et al., 1995; Johansson et al., 1998; Macdiarmid and Blundell, 1998; Johansson et al., 2001; Klesges et al., 1995), are known to be associated with reporting bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "ecf8b764-9f61-4028-86c3-4e5bf166d934",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C32",
+      "claim": "The difference between EIBIO and EISR is due to systemic biases rather than a random error.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the difference between EIBIO and EISR is due to systemic biases rather than a random error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the factors contributing to reporting bias discussed in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "fd107f04-dc4c-4598-951c-80c22c5b2b61",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C33",
+      "claim": "Self-report approaches have been predominantly used in large-scale nutrition epidemiology due to their high feasibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite concerns about the accuracy of self-report approaches, they have been predominantly used in large-scale nutrition epidemiology due to their high feasibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the use of self-report methods in epidemiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "b921df4b-e47d-4b7b-ac19-05c92daefa62",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C34",
+      "claim": "One approach to mitigate bias is to exclude those reporting EISR out of the range considered by the researchers to be plausible, such as from 500 to 3500 kcal/day.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, one approach is to exclude those reporting EISR out of the range considered by the researchers to be plausible, such as from 500 to 3500 kcal/day (Banna et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation describing this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "8dd92507-5c2a-4945-b062-8c616076c6a8",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C35",
+      "claim": "The rule to exclude EISR from 500 to 3500 kcal/day does not consider individual variability and is not appropriate for those whose intake is truly above 3500 kcal/day, such as elite athletes or those whose body size is large.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this rule does not consider individual variability and is not appropriate for those whose intake is truly above 3500 kcal/day, such as elite athletes or those whose body size is large and requires more than 3500 kcal/day to maintain their weight (Santos et al., 2014; DeLany et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of fixed cutoff rules, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "62bf5271-9ee2-4c7c-ac0f-b6ffac3cdb92",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C36",
+      "claim": "Other approaches use EE prediction equations to account for individual variability in EI.",
+      "claim_type": "EXPLICIT",
+      "source": "Other approaches are to use EE prediction equations to account for individual variability in EI (McCrory et al., 2002; Huang et al., 2005; Vinken et al., 1999; Livingstone and Robson, 2000; Xie et al., 2003; Briefel et al., 1995; Huang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "49855c3d-ea2c-4cf4-8279-967698077e6f",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C37",
+      "claim": "If the EE predicted considering various factors is far from EISR, those individuals are considered under/overreporting their actual EI.",
+      "claim_type": "EXPLICIT",
+      "source": "If the EE predicted considering various factors (e.g. age, weight, sex) is far from EISR, those individuals are considered under/overreporting their actual EI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the logic behind EE prediction approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "76afc355-548b-4bf4-97f7-6413241a9ad1",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C38",
+      "claim": "EE prediction approaches have evidently reduced misclassification.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, such an approach has evidently reduced misclassification (Tooze et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "d9bbc0e1-edeb-4f5a-9dd1-dee863992fc3",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C39",
+      "claim": "The Goldberg cutoffs have been used in nutrition epidemiology to assess nutritional status in specific populations and investigate the association between nutritional status and health and socioeconomic outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among proposed approaches, the Goldberg cutoffs Goldberg et al., 1991 have been used in nutrition epidemiology to assess nutritional status in specific populations and investigate the association between nutritional status and health and socioeconomic outcomes (Livingstone and Robson, 2000; Xie et al., 2003; Briefel et al., 1995; Huang et al., 2004; Martin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "34603239-b1b1-44b4-8df7-f5213218ccaa",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C40",
+      "claim": "The rationale of using the Goldberg cutoffs to exclude data from individuals considered to have unreliable EISR is based on an assumption that if total EI is underestimated, it is probable that the intakes of other nutrients are also underestimated.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the rationale of using the Goldberg cutoffs (and other similar approaches) to exclude data from individuals considered to have unreliable EISR is based on an assumption, 'if total EI is underestimated, it is probable that the intakes of other nutrients are also underestimated' (Livingstone and Black, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation describing the rationale.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "4eef8bd6-1601-4464-ba0c-c83238296496",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C41",
+      "claim": "In a previous study, the authors demonstrated that the Goldberg cutoffs do not necessarily eliminate the bias in estimating the associations between EI and various health outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous study, we demonstrated that the Goldberg cutoffs do not necessarily eliminate the bias in estimating the associations between EI and various health outcomes (Ejima et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "a8404456-0c53-4156-a684-e6ebed733fd8",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C42",
+      "claim": "More than 90% of the IDATA participants are non-Hispanic whites.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 90% of the participants are non-Hispanic whites, and their mean age was 63.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "2ef28bf2-d9d0-49e6-b48b-77b8d0e97e2e",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C43",
+      "claim": "The mean age of IDATA participants was 63.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 90% of the participants are non-Hispanic whites, and their mean age was 63.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "02f05357-5ba1-41ca-b7a6-88cab7ecf062",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C44",
+      "claim": "The mean BMI of IDATA participants was 27.7 kg/m2.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean BMI was 27.7 kg/m2, and 30% had obesity (BMI \u226530).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "0f3ea97e-62b5-4938-beed-f4cd01eab3f8",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C45",
+      "claim": "30% of IDATA participants had obesity (BMI \u226530).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean BMI was 27.7 kg/m2, and 30% had obesity (BMI \u226530).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "05ecfee0-5948-4060-b7c0-d7a8b34c0c95",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C46",
+      "claim": "There was significant mean underreporting in which the biomarker nutrition intakes (NIBIO) was greater than the self-reported nutrition intakes (NISR) in all four types of nutrition intake.",
+      "claim_type": "EXPLICIT",
+      "source": "There was significant mean underreporting in which the biomarker nutrition intakes (NIBIO) was greater than the self-reported nutrition intakes (NISR) in all four types of nutrition intake (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "a1e957d7-70e5-49d9-ac92-71752d908e68",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C47",
+      "claim": "By the Goldberg cutoffs, 120 among 303 participants were excluded (40%).",
+      "claim_type": "EXPLICIT",
+      "source": "By the Goldberg cutoffs, 120 among 303 participants were excluded (40%) (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from applying the Goldberg cutoffs to the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "d40fe2d1-c38b-42b6-aa7a-cc8dc9b2bcb7",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C48",
+      "claim": "There was significant underreporting in the rejected cases.",
+      "claim_type": "EXPLICIT",
+      "source": "There was significant underreporting in the rejected cases, whereas reporting bias (NISR \u2013 NIBIO) was not significant in the accepted cases in all four NI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "fedd4db7-9eb7-4891-950f-45674b07e2d9",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C49",
+      "claim": "Reporting bias (NISR \u2013 NIBIO) was not significant in the accepted cases in all four NI.",
+      "claim_type": "EXPLICIT",
+      "source": "There was significant underreporting in the rejected cases, whereas reporting bias (NISR \u2013 NIBIO) was not significant in the accepted cases in all four NI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "527cdd05-e4a1-45da-8d97-e85a962ce980",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C50",
+      "claim": "The difference in the biases between the accepted and the rejected cases was significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the difference in the biases between the accepted and the rejected cases was significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical testing of the IDATA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "256e8ba5-3606-4a7d-a1b0-0d485291e73a",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C51",
+      "claim": "The mean NISR in the accepted cases was significantly larger than that in the rejected cases in all four NI.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean NISR in the accepted cases was significantly larger than that in the rejected cases in all four NI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "dbdec0b1-7872-490a-9c92-07fce1cad7cb",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C52",
+      "claim": "NIBIO was significantly larger in the rejected cases in sodium intake (SI).",
+      "claim_type": "EXPLICIT",
+      "source": "NIBIO was significantly larger in the rejected cases in sodium intake (SI), whereas it was comparable between those groups in energy intake (EI), potassium intake (PoI), and protein intake (PrI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "b73ddb2e-a62b-40f8-a3a1-0bc9121b2d15",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C53",
+      "claim": "NIBIO was comparable between accepted and rejected cases in energy intake (EI), potassium intake (PoI), and protein intake (PrI).",
+      "claim_type": "EXPLICIT",
+      "source": "NIBIO was significantly larger in the rejected cases in sodium intake (SI), whereas it was comparable between those groups in energy intake (EI), potassium intake (PoI), and protein intake (PrI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "fcaeeb8c-e49e-4ee3-8f53-2784249ec20d",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C54",
+      "claim": "The bias was significantly and negatively correlated with NIBIO.",
+      "claim_type": "EXPLICIT",
+      "source": "The bias was significantly and negatively correlated with NIBIO (Figure 1 top panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "690c4031-7d99-4a85-9db4-59cb4ac1de62",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C55",
+      "claim": "The means of accepted cases of NISR correspond to the mean of NIBIO better than the mean of NISR in the rejected cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The means of accepted cases of NISR correspond to the mean of NIBIO better than the mean of NISR in the rejected cases (Figure 1 bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "d3ff747c-7e78-4998-a33c-6c4fd3898abc",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C56",
+      "claim": "The Goldberg cutoffs reduce (and may eliminate) the bias in mean NISR by identifying predominantly underreporting individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the Goldberg cutoffs reduce (and may eliminate) the bias in mean NISR by identifying predominantly underreporting individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the empirical data analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "2a655fcd-9ee9-403b-b49a-e480f90d900b",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C57",
+      "claim": "The difference in self-reported nutrition intake between accepted and rejected cases is predominantly from differences in reporting and less so from differences in actual biomarker-measured intake.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in self-reported nutrition intake between accepted and rejected cases is predominantly from differences in reporting and less so from differences in actual biomarker-measured intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the empirical data analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "8cac154e-b3ef-477e-9895-60286757dab2",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C58",
+      "claim": "The associations between EIBIO, SIBIO, and PrIBIO and WC were statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations between EIBIO, SIBIO, and PrIBIO and WC were statistically significant (Figure 2\u2014figure supplements 1 and 2 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in the figures and supplementary file.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "a1f07bff-f874-491f-a735-34170e5778ae",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C59",
+      "claim": "PoIBIO was significantly associated with VO2.",
+      "claim_type": "EXPLICIT",
+      "source": "PoIBIO was significantly associated with VO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "881cc2e6-304f-4d3d-9e32-e9dd83ec5032",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C60",
+      "claim": "The percent bias (b) was significantly below 0% (underestimation) in only limited cases (EI and BW, and EI and WC).",
+      "claim_type": "EXPLICIT",
+      "source": "The percent bias (b) was significantly below 0% (underestimation) in only limited cases (EI and BW, and EI and WC) and we could not conclude whether the bias exists or not for the rest of the cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "3a51936f-c34c-4c4c-ab26-0dbff830e270",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C61",
+      "claim": "Significant overestimation (b>0) was not observed in any cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant overestimation (b>0) was not observed in any cases (the left panel in Figure 2 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2 and supplementary file.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "7347eaab-a747-482e-8241-a1186bf74a01",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C62",
+      "claim": "The bias was reduced (|r|<100) but remained (r\u22600) for the association between EI and BW, and between EI and WC.",
+      "claim_type": "EXPLICIT",
+      "source": "The bias was reduced (|r|<100) but remained (r\u22600) for the association between EI and BW, and between EI and WC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "a211fc6b-1285-40ed-af1f-f9ac49861b35",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C63",
+      "claim": "The bias for all biomarker simulations was close to 0.",
+      "claim_type": "EXPLICIT",
+      "source": "The bias for all biomarker simulations was close to 0 (red squares in the bias column of Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "42791ba9-a2e0-4848-9ce2-23f5f7a92141",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C64",
+      "claim": "For the cases with positive correlation, the positive bias in \u03b2NISR,HO was observed, and for the cases with negative correlation, the negative bias in \u03b2NISR,HO was observed, suggesting that the self-reported data cause attenuation bias.",
+      "claim_type": "EXPLICIT",
+      "source": "For the cases with positive correlation, the positive bias in \u03b2NISR,HO was observed, and for the cases with negative correlation, the negative bias in \u03b2NISR,HO was observed, suggesting that the self-reported data cause attenuation bias (i.e. |\u03b2NISR,HO|<|\u03b2NIBIO,HO|) as observed in many studies (Kipnis et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results and is consistent with previous research cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "43760fa4-75e2-47d3-91ef-64248bde29bd",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C65",
+      "claim": "After application of the Goldberg cutoffs, the bias was reduced in 14 among 24 combinations of NI and HO.",
+      "claim_type": "EXPLICIT",
+      "source": "After application of the Goldberg cutoffs, the bias was reduced in 14 among 24 combinations of NI and HO, which can be seen in Figure 3 where the green circles are closer to 0 than the blue triangles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "6e8b1254-4ed1-4019-976d-897c2a958715",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C66",
+      "claim": "The bias was reduced in all six outcomes and reduction was large when EI is used as a predictor.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, |\u03b2NIG,HO|<|\u03b2NISR,HO|. Notably, the bias was reduced in all six outcomes and reduction was large when EI is used as a predictor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "cc805536-1be1-498f-8d05-08d366b69d64",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C67",
+      "claim": "When SI, PoI, and PrI are used as predictors, the bias was not much changed by applying the Goldberg cutoffs.",
+      "claim_type": "EXPLICIT",
+      "source": "When SI, PoI, and PrI are used as predictors, the bias was not much changed by applying the Goldberg cutoffs (green circles and blue triangles are close to each other in the bias column of Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "2b9681cb-5ba3-4a1b-92e1-f5d260650ea4",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C68",
+      "claim": "In most cases, the MSE was smaller for NIBIO compared with NISR, and the MSE for NISR became smaller after applying the Goldberg cutoffs.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, the MSE was also smaller for NIBIO compared with NISR, and the MSE for NISR became smaller after applying the Goldberg cutoffs (green circles are often closer to 0 than the blue triangles in the MSE column of Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "ae8d6c16-7d2c-4161-9e16-f16e54156ae7",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C69",
+      "claim": "The coverage probabilities (CP) were close to 95% when NIBIO was used as a predictor.",
+      "claim_type": "EXPLICIT",
+      "source": "The coverage probabilities (CP) were close to 95% when NIBIO was used as a predictor, as was expected, whereas it was mostly lower than 95% when NISR was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "8a8d06b2-28c5-4ffb-b605-789c603bee85",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C70",
+      "claim": "Coverage probability was mostly lower than 95% when NISR was used.",
+      "claim_type": "EXPLICIT",
+      "source": "The coverage probabilities (CP) were close to 95% when NIBIO was used as a predictor, as was expected, whereas it was mostly lower than 95% when NISR was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "5695128f-13c5-4953-a4d8-0d680f02159f",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C71",
+      "claim": "The coverage probability increased by applying Goldberg cutoffs; however, it is still lower than 95% in most cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The coverage probability increased by applying Goldberg cutoffs (green circles are often closer to 95 than the blue triangles in the CP column of Figure 3); however, it is still lower than 95% in most cases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "ab64e5bb-8c27-43ec-8bde-e4d44aa9689b",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C72",
+      "claim": "Biases were not affected by varying \u03b7 for the range of values considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Biases were not affected by varying \u03b7 for the range of values we considered, suggesting that error in health outcomes (or variance in health outcomes which cannot be explained by variance in biomarker-based nutrition intake) does not influence NI-HO association estimations where NI is used as an independent variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sensitivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "bcb0c2f2-ee67-4ebb-8638-21a8f920ec4b",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C73",
+      "claim": "Error in health outcomes does not influence NI-HO association estimations where NI is used as an independent variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Biases were not affected by varying \u03b7 for the range of values we considered, suggesting that error in health outcomes (or variance in health outcomes which cannot be explained by variance in biomarker-based nutrition intake) does not influence NI-HO association estimations where NI is used as an independent variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the sensitivity analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "3de39576-8127-4658-878a-f717d59dc076",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C74",
+      "claim": "Bias was negative when self-reported data (NISR or NIG) were used under the default value of \u03c3, and the magnitude of bias increased as \u03c3 increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Bias was negative when self-reported data (NISR or NIG) were used under the default value of \u03c3, and the magnitude of bias increased as \u03c3 increased (i.e., the association was attenuated).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sensitivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "f7d597e0-49d0-4b19-89a5-4c3a92732085",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C75",
+      "claim": "When the error is extremely small (e.g. \u03c3=0.25), the bias becomes positive, which is because the mean error function (\u00b5) was negative at low NI and positive at high NI, thus the association was intensified.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the error is extremely small (e.g. \u03c3=0.25 in Figure 3\u2014figure supplement 2), the bias becomes positive, which is because the mean error function (\u00b5) was negative at low NI and positive at high NI, thus the association was intensified.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sensitivity analysis results and represents an inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "8858f5cc-a510-4f4d-ab0f-9815133b8031",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C76",
+      "claim": "Whether or not the bias becomes positive or negative is determined by the balance between the mean error function and random error.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether or not the bias becomes positive or negative is determined by the balance between the mean error function and random error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the sensitivity analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "ecf42a7f-2129-44d9-ac72-c181621d79bb",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C77",
+      "claim": "Reporting bias in self-reported nutrition intake was demonstrated using both empirical data analysis and a simulation study.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, reporting bias in self-reported nutrition intake was demonstrated using both empirical data analysis and a simulation study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "37a3cc29-245f-40f8-82af-f186662fb285",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C78",
+      "claim": "The bias in mean self-reported nutrition intake was eliminated by applying Goldberg cutoffs to exclude extreme reporters (mostly under-reporters).",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the bias in mean self-reported nutrition intake was eliminated by applying Goldberg cutoffs to exclude extreme reporters (mostly under-reporters).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by empirical data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "b415b8dc-49e9-4c73-a6df-289201e6ba4d",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C79",
+      "claim": "This bias can be mostly explained by differences in reporting between the accepted and rejected cases rather than a difference in actual nutrition intake between the accepted and rejected cases.",
+      "claim_type": "EXPLICIT",
+      "source": "This bias can be mostly explained by differences in reporting between the accepted and rejected cases rather than a difference in actual nutrition intake between the accepted and rejected cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the empirical data analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "7250cb03-cc22-4657-bd7a-4838c0a51ad5",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C80",
+      "claim": "The significant bias for the associations between EI and BW and the association between EI and WC were reduced but remained after applying Goldberg cutoffs.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant bias for the associations between EI and BW and the association between EI and WC were reduced but remained after applying Goldberg cutoffs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by empirical data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "243b50b1-5585-4a8a-8e3a-6d70c8afdd94",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C81",
+      "claim": "Significant bias in associations for other nutrition-outcome pairs was not observed, and therefore conclusions cannot be made regarding the utility of applying the Goldberg cutoffs to reduce bias for these associations in the empirical data.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe significant bias in associations for other nutrition-outcome pairs, and therefore cannot make conclusions regarding the utility of applying the Goldberg cutoffs to reduce bias for these associations in the empirical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the empirical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "2a02a3f3-d5b4-4c39-b676-550449327154",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C82",
+      "claim": "The existence of bias in estimated associations when the self-reported data were used was confirmed in the simulation study.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the existence of bias in estimated associations when the self-reported data were used, and these biases were reduced, but not eliminated, by applying the Goldberg cutoffs in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "377f22ab-c335-4a05-a0f1-b53fec024290",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C83",
+      "claim": "Biases in estimated associations were reduced, but not eliminated, by applying the Goldberg cutoffs in general.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the existence of bias in estimated associations when the self-reported data were used, and these biases were reduced, but not eliminated, by applying the Goldberg cutoffs in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "75e0d5fb-5f8a-40ff-800c-96cbcf0f5cf3",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C84",
+      "claim": "Large MSE and low coverage probability were confirmed when self-reported data were used.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed large MSE and low coverage probability when self-reported data were used; MSE and low coverage probability were improved by using Goldberg cutoffs, but were not recovered to the levels of biomarker data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "64a477cd-686e-499b-b035-253ba1b1a1f4",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C85",
+      "claim": "MSE and low coverage probability were improved by using Goldberg cutoffs, but were not recovered to the levels of biomarker data.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed large MSE and low coverage probability when self-reported data were used; MSE and low coverage probability were improved by using Goldberg cutoffs, but were not recovered to the levels of biomarker data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "14ed0188-6228-4aba-bf28-deeb80a89d03",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C86",
+      "claim": "The empirical data analyses and the simulation study suggest that the Goldberg cutoffs improve the estimates in nutrition-health outcome associations; however, the biases were not completely removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the empirical data analyses and the simulation study suggest that the Goldberg cutoffs improve the estimates in nutrition-health outcome associations; however, the biases were not completely removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on both empirical and simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "c944162a-fc07-42cc-912f-5de1ade4df6d",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C87",
+      "claim": "The study investigated three other nutrition intakes (sodium, potassium, and protein) in addition to energy intake.",
+      "claim_type": "EXPLICIT",
+      "source": "First, although energy intake has traditionally been studied more with respect to Goldberg cutoffs, herein we also investigated three other nutrition intakes: sodium, potassium, and protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "715ebc6c-ae99-4fc2-8b0a-5432faa97ab2",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C88",
+      "claim": "The Goldberg cutoffs are believed to reduce the bias in nutrition intake broadly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that the Goldberg cutoffs are believed to reduce the bias in nutrition intake broadly, we expanded the approach to these other nutrition intakes, which can be measured by biomarkers (Livingstone and Black, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the general belief regarding Goldberg cutoffs, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "3ffbd45f-0d1e-4953-9f97-f28c13f4d5ca",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C89",
+      "claim": "The data generation process was based on the IDATA dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The data generation process was based on the IDATA dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the simulation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "642a0e4a-f466-4125-a551-449b303af7a9",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C90",
+      "claim": "The simulation was able to generate datasets reflective of those that would be seen in the real world.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we were able to simulate datasets reflective of those that would be seen in the real world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the validity of the simulation approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "8837798f-f46d-45cd-bccc-fea66a2d403b",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C91",
+      "claim": "In the analysis of IDATA, only bivariate associations for nutrition-health outcomes were used.",
+      "claim_type": "EXPLICIT",
+      "source": "In the analysis of IDATA, we used only bivariate associations for nutrition-health outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the empirical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "ef6dfd04-213c-49d7-b9cd-51c87886574b",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C92",
+      "claim": "Including various covariates or different models may influence the existence or lack of bias in nutrition-health associations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that including various covariates or different models may influence the existence or lack of bias in nutrition-health associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "2ca02a07-7970-41de-9bd4-5e6ddfcaa41c",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C93",
+      "claim": "The reporting bias was set to be normally distributed in the data-generation process for the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The reporting bias was set to be normally distributed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption in the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "3865ce4d-5f0e-41a7-8a19-4e2b570f34d0",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C94",
+      "claim": "Modeling the bias using other distributions may improve model fit and generate more realistic data.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling the bias using other distributions (such as a heavier tailed distribution that may be more consistent with a zero-bounded intake) may improve model fit, and thus generated more realistic data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential improvements to the simulation methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "d8af2c1f-6ab4-468e-8bd5-1984c4f3238e",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C95",
+      "claim": "The bias was simulated with constant variance, consistent with the apparent stability of variance across the intake quantiles.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated the bias with constant variance, consistent with the apparent stability of variance across the intake quantiles in Figure 4\u2014figure supplement 2 and Supplementary file 3; however, modeling the variance as a function of intake quantile may alter the data-generating process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an assumption in the simulation methodology supported by data shown in the figure and supplementary file.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "0eb94d9c-aa2e-41c9-bbe8-a03a4997cbbc",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C96",
+      "claim": "Modeling the variance as a function of intake quantile may alter the data-generating process.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated the bias with constant variance, consistent with the apparent stability of variance across the intake quantiles in Figure 4\u2014figure supplement 2 and Supplementary file 3; however, modeling the variance as a function of intake quantile may alter the data-generating process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential variations in the simulation methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "1865b182-2fcf-4b08-aa03-e6b29e64ad25",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C97",
+      "claim": "ASA24 was used because it reflects recent dietary intake.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the self-reported nutrition intake reported by ASA24, as it reflects recent dietary intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for selecting ASA24 data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "fb971d18-6199-44b2-ad4a-5200b0af2fb3",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C98",
+      "claim": "The bias observed in this study may be different for other self-report methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The bias we observed in this study may be different for other self-report methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the generalizability of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "f03cbfb3-5709-4f6b-bcb9-da77495b4279",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C99",
+      "claim": "The simulation approach was based on a limited sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the simulation approach, although based on the IDATA, was nonetheless generated from a limited sample size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the simulation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "89adc207-d44c-4e2b-a48c-a1e544b206e9",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C100",
+      "claim": "A larger, more representative, or more robust empirical data set may influence both the empirical and simulated results.",
+      "claim_type": "EXPLICIT",
+      "source": "however, it is possible a larger, more representative, or more robust empirical data set may influence both the empirical and simulated results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "9e56d57b-07bc-406a-9cdf-612646cc57bf",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C101",
+      "claim": "The data was from a single population in which white and relatively older people are predominant.",
+      "claim_type": "EXPLICIT",
+      "source": "Further as the data was from a single population in which white and relatively older people are predominant, generalizability of the study finding should be carefully considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study based on the characteristics of the IDATA dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "fd533691-e3a5-4e8f-b939-e244f7ae505e",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C102",
+      "claim": "Generalizability of the study finding should be carefully considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Further as the data was from a single population in which white and relatively older people are predominant, generalizability of the study finding should be carefully considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the study's generalizability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "a0f56268-624c-4f98-8d7c-c2cc4fd4149e",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C103",
+      "claim": "The use of Goldberg cutoffs can effectively reduce or eliminate bias in mean nutrition intake measurements in the IDATA dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our study demonstrated that the use of Goldberg cutoffs can effectively reduce or eliminate bias in mean nutrition intake measurements in the IDATA dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the empirical data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "1ae83991-1891-4710-b4cc-96afa9ecb187",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C104",
+      "claim": "Goldberg cutoffs have limited efficacy in addressing bias in the associations between nutrition intake and health outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our analysis also revealed that these cutoffs have limited efficacy in addressing bias in the associations between nutrition intake and health outcomes, as both empirical and simulated results showed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on both empirical and simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "8074d8c7-88ea-4ffb-9784-9b7b6c3618d2",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C105",
+      "claim": "Investigators considering excluding extreme reporters in epidemiological studies should consider whether such approaches are likely to be helpful in answering their specific research questions.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigators considering excluding extreme reporters in epidemiological studies should consider whether such approaches are likely to be helpful in answering their specific research questions, as our study has shown that such cutoffs are more useful in estimating mean nutrition intakes than in studies of associations between nutrition intake and health outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "258f946a-1f7e-465b-8726-0938cce184b6",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C106",
+      "claim": "Goldberg cutoffs are more useful in estimating mean nutrition intakes than in studies of associations between nutrition intake and health outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigators considering excluding extreme reporters in epidemiological studies should consider whether such approaches are likely to be helpful in answering their specific research questions, as our study has shown that such cutoffs are more useful in estimating mean nutrition intakes than in studies of associations between nutrition intake and health outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "ee4a1c1f-48f9-486d-b3e0-55d91f9bc60b",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C107",
+      "claim": "The Goldberg cutoffs are an approach to identify those who report low or high energy intake that would be implausible to sustain life or present weight.",
+      "claim_type": "EXPLICIT",
+      "source": "The Goldberg cutoffs are an approach to identify those who report low or high energy intake that, if sustained across long periods of time, would be implausible to sustain life (for underreporting) or present weight (for overreporting), by comparing the reported EI and the energy expenditure (EE) predicted from body composition and physical activity level (Goldberg et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Goldberg cutoffs methodology supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "136996cb-9780-44fa-b9a8-ebb207dea1b0",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C108",
+      "claim": "EE is predicted as a product of physical activity level (PAL) and basal metabolic rate (BMR): EE =PAL*BMR.",
+      "claim_type": "EXPLICIT",
+      "source": "First, EE is predicted as a product of physical activity level (PAL) and basal metabolic rate (BMR): EE =PAL*BMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for calculating EE in the Goldberg cutoffs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "d09f5d2e-eb3c-4569-bb2c-7eccbf3ae4a0",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C109",
+      "claim": "PAL is assumed to be 1.75.",
+      "claim_type": "EXPLICIT",
+      "source": "PAL is assumed to be 1.75 (Dugas et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption in the Goldberg cutoffs methodology supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "793fe71b-7f96-4397-be47-c1faa577ac79",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C110",
+      "claim": "BMR is predicted using fat-free mass: BMR = 370 + 21.6 * FFM.",
+      "claim_type": "EXPLICIT",
+      "source": "BMR is predicted using fat-free mass (Cunningham, 1991): BMR = 370 + 21.6 * FFM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for calculating BMR supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "990521a5-510e-48fa-ae32-7fec19f99490",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C111",
+      "claim": "The IDATA study was designed to evaluate and compare the measurement error structure of diet and physical activity assessment tools against reference biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "The IDATA study was designed 'to evaluate and compare the measurement error structure of diet and physical activity assessment tools against reference biomarkers'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose of the IDATA study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "ca8da529-5a1e-4868-9e9c-07c2ab68b2ae",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C112",
+      "claim": "The study participants were recruited from a list of AARP members aged 50\u201374 years residing in and around Pittsburgh, Pennsylvania.",
+      "claim_type": "EXPLICIT",
+      "source": "The study participants 'were recruited from a list of AARP [American Association of Retired Persons] members aged 50\u201374 years residing in and around Pittsburgh, Pennsylvania' and were screened for eligibility by phone interview or clinic visit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recruitment process for the IDATA study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "5b13dc2c-4e4f-41fd-8758-957d8a18d9cd",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C113",
+      "claim": "EIBIO was estimated as a sum of daily total energy expenditure estimated from DLW and daily change in energy stores during the DLW period.",
+      "claim_type": "EXPLICIT",
+      "source": "EIBIO was estimated as a sum of daily total energy expenditure estimated from DLW and daily change in energy stores during the DLW period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for calculating EIBIO.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "d499b8a1-c86b-4522-affd-1b2a596ae19b",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C114",
+      "claim": "Total energy expenditure was calculated using the approach proposed by Schoeller et al., 1986, where the respiratory quotient was assumed as 0.86.",
+      "claim_type": "EXPLICIT",
+      "source": "Total energy expenditure was calculated using the approach proposed by Schoeller et al., 1986, where the respiratory quotient was assumed as 0.86.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for calculating total energy expenditure supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "f2c4940f-5c7f-4010-a85c-0c4d276eb26b",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C115",
+      "claim": "Daily change in energy stores during the DLW period was computed from the average daily weight change during the period assuming the energy density of body weight was 2380 kcal/kg.",
+      "claim_type": "EXPLICIT",
+      "source": "Daily change in energy stores during the DLW period (about 2 weeks) was computed from the average daily weight change during the period assuming the energy density of body weight was 2380 kcal/kg (Bhutani et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for calculating daily change in energy stores supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "c0c1076d-ed19-4359-a123-9f86c0f256a3",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C116",
+      "claim": "81%, 80%, and 86% of consumed nitrogen, potassium, and sodium are excreted in the urine, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The urinary values obtained from 24-hr urine samples were converted into nutrition intakes assuming that 81%, 80%, and 86% of consumed nitrogen, potassium, and sodium are excreted in the urine, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes assumptions used in calculating nutrition intakes from urine samples.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "afcb00f9-3dd0-4e21-951e-8fee3cc90ae7",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "claim_id": "C117",
+      "claim": "16% of protein is nitrogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Dietary protein was calculated assuming that 16% of protein is nitrogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption used in calculating dietary protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3bca3c8b-7a30-401d-b356-d0ec037074aa",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Self-reported nutrition intake data are prone to reporting bias but are widely used in nutrition epidemiology due to their high feasibility and low cost compared to biomarker approaches, despite known accuracy concerns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C11-C15, C24-C25, and C33 collectively establish the context and rationale for the study. These claims are supported by established knowledge in the field and multiple citations to prior research, providing a well-documented foundation for the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the IDATA study, applying Goldberg cutoffs eliminated significant bias in mean nutrition intake by excluding 40% of participants (120 of 303), with the bias reduction primarily attributable to differences in reporting rather than actual intake differences between accepted and rejected cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C46-C57, C78-C79, and C103 are well-supported by empirical data analysis from the IDATA dataset. The statistical analyses demonstrate significant underreporting in rejected cases and non-significant bias in accepted cases across all four nutrition types (energy, sodium, potassium, protein), with supporting evidence from Figure 1 and Tables 2-3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "e84f6aa3-692f-4787-8bce-891a37039455",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the IDATA empirical analysis, significant bias in associations between nutrition intake and health outcomes was detected only for energy intake with body weight and waist circumference, with Goldberg cutoffs reducing but not eliminating this bias. For other nutrition-outcome pairs, the sample size was insufficient to draw conclusions about bias or bias reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C58-C62, C80-C81 are supported by the empirical data analysis, though the authors appropriately acknowledge the limitations due to insufficient sample size and wide confidence intervals. The finding of incomplete bias reduction for the two significant cases (EI-BW and EI-WC) is well-documented in Figure 2 and Supplementary file 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simulation studies demonstrated that self-reported nutrition intake data exhibit attenuation bias in associations with health outcomes. Goldberg cutoffs reduced but did not eliminate this bias in 14 of 24 nutrition-outcome pairs, with the largest reductions observed for energy intake. MSE and coverage probabilities improved with Goldberg cutoffs but remained inferior to biomarker-based estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C63-C71, and C82-C85 are well-supported by simulation results shown in Figure 3. The simulation approach was appropriately designed based on the IDATA dataset characteristics, and the findings are consistent across multiple performance metrics (bias, MSE, coverage probability). The differential effectiveness of Goldberg cutoffs for energy intake versus other nutrients is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "871ab985-672b-4579-a43f-ae2f7184e450",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sensitivity analyses revealed that bias in nutrition-health outcome associations was not affected by varying the error term for health outcomes (\u03b7), but was influenced by the standard deviation of reporting error (\u03c3), with the direction of bias determined by the balance between mean error function and random error.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 are supported by sensitivity analysis results shown in Figure 3\u2014figure supplement 2. The analyses appropriately explore the robustness of findings to key parameters in the simulation model, providing insight into the mechanisms underlying bias patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "ba959ea1-cdfc-4e15-93bc-8c975d75f251",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Goldberg cutoffs are more effective for eliminating bias in mean nutrition intake estimates than for reducing bias in nutrition-health outcome associations. The decision to use Goldberg cutoffs should be based on specific research purposes rather than general rules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C86, and C104-C106 represent the main conclusions of the study, synthesizing findings from both empirical and simulation analyses. These conclusions are well-supported by the data presented (C3, C46-C57 for mean intake; C5-C7, C60-C62, C65-C71 for associations) and represent appropriate inferences from the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "a997ddc4-a72d-4635-97b9-7f261087094f",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study extended previous work by investigating sodium, potassium, and protein intakes in addition to energy intake, and used a simulation approach based on the IDATA dataset to generate realistic data that overcomes sample size limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 describe methodological strengths of the study. The expansion to multiple nutrients beyond energy intake is well-documented, and the simulation approach is appropriately justified and implemented based on the IDATA characteristics (as shown in Figures 4 and 4\u2014figure supplement 1).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "a486e4bf-41bc-4ff4-84d0-cabde8017425",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study has several limitations including use of only bivariate associations, assumptions about normal distribution and constant variance of reporting bias in simulations, use of a single self-report method (ASA24), limited sample size, and a predominantly white, older population that may limit generalizability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C102 appropriately acknowledge study limitations. These are reasonable concerns about the scope and generalizability of the findings. The authors appropriately note that some limitations involve speculation about potential impacts (C92, C94, C96, C98, C100) while others are factual constraints of the study design (C91, C93, C95, C99, C101).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Energy intake can be measured using biomarkers (respiratory gas analysis or doubly labeled water) or self-report methods. DLW is considered the gold standard for free-living individuals but is expensive and impractical for large-scale studies. Self-reported energy intake is subject to systematic bias due to database limitations, social desirability, and weight/social status factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23, C26-C32 provide established background knowledge about energy intake measurement methods, supported by appropriate citations to the literature. These claims accurately represent the current understanding in the field regarding the advantages, limitations, and sources of bias in different measurement approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "ce664eff-1d56-4c16-bc87-bd58c4819873",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Various approaches have been proposed to mitigate bias in self-reported nutrition intake, including fixed cutoff ranges and energy expenditure prediction equations like the Goldberg cutoffs. However, fixed cutoffs do not account for individual variability, and previous work by the authors demonstrated that Goldberg cutoffs do not necessarily eliminate bias in nutrition-health outcome associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 provide appropriate background on existing bias mitigation approaches, supported by citations to relevant literature. The reference to the authors' previous work (C41) appropriately sets up the motivation for the current study's extension to multiple nutrients.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    },
+    {
+      "id": "79962141-5262-4aa9-b671-c49a9e2e9de1",
+      "content_id": "17893def-0c9b-4596-a417-860117ee52e3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The IDATA study included 303 participants (>90% non-Hispanic white, mean age 63, mean BMI 27.7 kg/m\u00b2) recruited from AARP members in Pittsburgh. The study measured nutrition intake using both self-report (ASA24) and biomarkers (DLW for energy, 24-hour urine for sodium, potassium, and protein), with specific methodological details for calculating biomarker-based intakes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45, C107-C117 provide methodological details about the IDATA dataset and measurement approaches. These are factual descriptions of the study population and methods, appropriately documented with citations to established methodologies and the IDATA study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:46.099912Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "03b66683-e70b-427e-814e-a06bcb23fb74",
+      "result_id": "3bca3c8b-7a30-401d-b356-d0ec037074aa"
+    },
+    {
+      "claim_id": "df06cc61-5a53-4108-8256-836f72d025e5",
+      "result_id": "3bca3c8b-7a30-401d-b356-d0ec037074aa"
+    },
+    {
+      "claim_id": "8b726e5d-cbeb-4d9a-b784-141c16f1b23d",
+      "result_id": "3bca3c8b-7a30-401d-b356-d0ec037074aa"
+    },
+    {
+      "claim_id": "2725ca83-df06-492c-b838-a6fa81a12964",
+      "result_id": "3bca3c8b-7a30-401d-b356-d0ec037074aa"
+    },
+    {
+      "claim_id": "49ace905-1ab4-48ca-a37c-a0f98ee7e1b8",
+      "result_id": "3bca3c8b-7a30-401d-b356-d0ec037074aa"
+    },
+    {
+      "claim_id": "a921f925-b989-4678-88ac-57b146abf846",
+      "result_id": "3bca3c8b-7a30-401d-b356-d0ec037074aa"
+    },
+    {
+      "claim_id": "3b38a6e3-a21e-47f8-a491-a1c52ed99a65",
+      "result_id": "3bca3c8b-7a30-401d-b356-d0ec037074aa"
+    },
+    {
+      "claim_id": "6004afa6-860d-4dfe-a68a-23cc0c7f13e5",
+      "result_id": "3bca3c8b-7a30-401d-b356-d0ec037074aa"
+    },
+    {
+      "claim_id": "a8c48437-d2be-43c3-aa89-56741283f5b9",
+      "result_id": "3bca3c8b-7a30-401d-b356-d0ec037074aa"
+    },
+    {
+      "claim_id": "fd107f04-dc4c-4598-951c-80c22c5b2b61",
+      "result_id": "3bca3c8b-7a30-401d-b356-d0ec037074aa"
+    },
+    {
+      "claim_id": "66d2bf44-f306-4beb-a5e1-6996c71ddb50",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "05ecfee0-5948-4060-b7c0-d7a8b34c0c95",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "a1e957d7-70e5-49d9-ac92-71752d908e68",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "d40fe2d1-c38b-42b6-aa7a-cc8dc9b2bcb7",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "fedd4db7-9eb7-4891-950f-45674b07e2d9",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "527cdd05-e4a1-45da-8d97-e85a962ce980",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "256e8ba5-3606-4a7d-a1b0-0d485291e73a",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "dbdec0b1-7872-490a-9c92-07fce1cad7cb",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "b73ddb2e-a62b-40f8-a3a1-0bc9121b2d15",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "fcaeeb8c-e49e-4ee3-8f53-2784249ec20d",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "690c4031-7d99-4a85-9db4-59cb4ac1de62",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "d3ff747c-7e78-4998-a33c-6c4fd3898abc",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "2a655fcd-9ee9-403b-b49a-e480f90d900b",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "37a3cc29-245f-40f8-82af-f186662fb285",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "b415b8dc-49e9-4c73-a6df-289201e6ba4d",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "a0f56268-624c-4f98-8d7c-c2cc4fd4149e",
+      "result_id": "efd85947-3b14-4fe1-aff1-fad3d7034b5d"
+    },
+    {
+      "claim_id": "66ee24ec-1a05-48b2-9957-2b25d3b37654",
+      "result_id": "e84f6aa3-692f-4787-8bce-891a37039455"
+    },
+    {
+      "claim_id": "8cac154e-b3ef-477e-9895-60286757dab2",
+      "result_id": "e84f6aa3-692f-4787-8bce-891a37039455"
+    },
+    {
+      "claim_id": "a1f07bff-f874-491f-a735-34170e5778ae",
+      "result_id": "e84f6aa3-692f-4787-8bce-891a37039455"
+    },
+    {
+      "claim_id": "881cc2e6-304f-4d3d-9e32-e9dd83ec5032",
+      "result_id": "e84f6aa3-692f-4787-8bce-891a37039455"
+    },
+    {
+      "claim_id": "3a51936f-c34c-4c4c-ab26-0dbff830e270",
+      "result_id": "e84f6aa3-692f-4787-8bce-891a37039455"
+    },
+    {
+      "claim_id": "7347eaab-a747-482e-8241-a1186bf74a01",
+      "result_id": "e84f6aa3-692f-4787-8bce-891a37039455"
+    },
+    {
+      "claim_id": "7250cb03-cc22-4657-bd7a-4838c0a51ad5",
+      "result_id": "e84f6aa3-692f-4787-8bce-891a37039455"
+    },
+    {
+      "claim_id": "243b50b1-5585-4a8a-8e3a-6d70c8afdd94",
+      "result_id": "e84f6aa3-692f-4787-8bce-891a37039455"
+    },
+    {
+      "claim_id": "783309df-49be-40db-9424-cc5a5995178a",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "5bd9b55a-3b7f-4de9-b35f-4ae2833239f2",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "81e4652e-2394-4ae7-b950-26e306f775cb",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "a211fc6b-1285-40ed-af1f-f9ac49861b35",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "42791ba9-a2e0-4848-9ce2-23f5f7a92141",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "43760fa4-75e2-47d3-91ef-64248bde29bd",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "6e8b1254-4ed1-4019-976d-897c2a958715",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "cc805536-1be1-498f-8d05-08d366b69d64",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "2b9681cb-5ba3-4a1b-92e1-f5d260650ea4",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "ae8d6c16-7d2c-4161-9e16-f16e54156ae7",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "8a8d06b2-28c5-4ffb-b605-789c603bee85",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "5695128f-13c5-4953-a4d8-0d680f02159f",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "2a02a3f3-d5b4-4c39-b676-550449327154",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "377f22ab-c335-4a05-a0f1-b53fec024290",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "75e0d5fb-5f8a-40ff-800c-96cbcf0f5cf3",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "64a477cd-686e-499b-b035-253ba1b1a1f4",
+      "result_id": "db3f5fa2-645a-4c55-9929-fe0b8776c59e"
+    },
+    {
+      "claim_id": "ab64e5bb-8c27-43ec-8bde-e4d44aa9689b",
+      "result_id": "871ab985-672b-4579-a43f-ae2f7184e450"
+    },
+    {
+      "claim_id": "bcb0c2f2-ee67-4ebb-8638-21a8f920ec4b",
+      "result_id": "871ab985-672b-4579-a43f-ae2f7184e450"
+    },
+    {
+      "claim_id": "3de39576-8127-4658-878a-f717d59dc076",
+      "result_id": "871ab985-672b-4579-a43f-ae2f7184e450"
+    },
+    {
+      "claim_id": "f7d597e0-49d0-4b19-89a5-4c3a92732085",
+      "result_id": "871ab985-672b-4579-a43f-ae2f7184e450"
+    },
+    {
+      "claim_id": "8858f5cc-a510-4f4d-ab0f-9815133b8031",
+      "result_id": "871ab985-672b-4579-a43f-ae2f7184e450"
+    },
+    {
+      "claim_id": "eeddcd19-5014-4c2a-9541-95f0d324709b",
+      "result_id": "ba959ea1-cdfc-4e15-93bc-8c975d75f251"
+    },
+    {
+      "claim_id": "b6e5e21f-5e9e-4c69-b37e-dd3a8606bd25",
+      "result_id": "ba959ea1-cdfc-4e15-93bc-8c975d75f251"
+    },
+    {
+      "claim_id": "cb27ffa4-fea5-4350-8e86-9d00b041eb45",
+      "result_id": "ba959ea1-cdfc-4e15-93bc-8c975d75f251"
+    },
+    {
+      "claim_id": "14ed0188-6228-4aba-bf28-deeb80a89d03",
+      "result_id": "ba959ea1-cdfc-4e15-93bc-8c975d75f251"
+    },
+    {
+      "claim_id": "1ae83991-1891-4710-b4cc-96afa9ecb187",
+      "result_id": "ba959ea1-cdfc-4e15-93bc-8c975d75f251"
+    },
+    {
+      "claim_id": "8074d8c7-88ea-4ffb-9784-9b7b6c3618d2",
+      "result_id": "ba959ea1-cdfc-4e15-93bc-8c975d75f251"
+    },
+    {
+      "claim_id": "258f946a-1f7e-465b-8726-0938cce184b6",
+      "result_id": "ba959ea1-cdfc-4e15-93bc-8c975d75f251"
+    },
+    {
+      "claim_id": "c944162a-fc07-42cc-912f-5de1ade4df6d",
+      "result_id": "a997ddc4-a72d-4635-97b9-7f261087094f"
+    },
+    {
+      "claim_id": "715ebc6c-ae99-4fc2-8b0a-5432faa97ab2",
+      "result_id": "a997ddc4-a72d-4635-97b9-7f261087094f"
+    },
+    {
+      "claim_id": "3ffbd45f-0d1e-4953-9f97-f28c13f4d5ca",
+      "result_id": "a997ddc4-a72d-4635-97b9-7f261087094f"
+    },
+    {
+      "claim_id": "642a0e4a-f466-4125-a551-449b303af7a9",
+      "result_id": "a997ddc4-a72d-4635-97b9-7f261087094f"
+    },
+    {
+      "claim_id": "8837798f-f46d-45cd-bccc-fea66a2d403b",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "ef6dfd04-213c-49d7-b9cd-51c87886574b",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "2ca02a07-7970-41de-9bd4-5e6ddfcaa41c",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "3865ce4d-5f0e-41a7-8a19-4e2b570f34d0",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "d8af2c1f-6ab4-468e-8bd5-1984c4f3238e",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "0eb94d9c-aa2e-41c9-bbe8-a03a4997cbbc",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "1865b182-2fcf-4b08-aa03-e6b29e64ad25",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "fb971d18-6199-44b2-ad4a-5200b0af2fb3",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "f03cbfb3-5709-4f6b-bcb9-da77495b4279",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "89adc207-d44c-4e2b-a48c-a1e544b206e9",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "9e56d57b-07bc-406a-9cdf-612646cc57bf",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "fd533691-e3a5-4e8f-b939-e244f7ae505e",
+      "result_id": "a486e4bf-41bc-4ff4-84d0-cabde8017425"
+    },
+    {
+      "claim_id": "680e03dd-a4f2-47a1-b4f5-7bc70311e4cb",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "e07650fb-b127-49e7-b473-74694ab29cb8",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "e7609c87-0341-44a6-beee-ba2e22edc81d",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "6d7dbad8-4f2e-4c2e-a331-7f51cce5176c",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "d2f1b4bf-2aa3-4a00-818e-4c243db5a5ac",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "5942559b-fdf6-4016-8eb9-686fdf4fbf09",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "46790e32-f7a9-4c75-ba1f-d4f1d3e1e7c4",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "8241646b-9e25-4bce-970f-517590a1695a",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "5ed57a7e-107c-444e-9833-894e456f1b94",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "227c4045-83e8-47f2-be9f-527aae529840",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "36572cfe-002a-4532-854c-e4263b1e7694",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "bed62904-7ba4-4a2b-99fb-e2bff67cbdcc",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "a1060940-d1ee-4d6e-93f8-63c301b01cac",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "6087f59e-2ba4-4b6f-8231-2c9e5326939a",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "ecf8b764-9f61-4028-86c3-4e5bf166d934",
+      "result_id": "e40d928d-a33a-4d11-93e0-5bd1bfc5e7de"
+    },
+    {
+      "claim_id": "b921df4b-e47d-4b7b-ac19-05c92daefa62",
+      "result_id": "ce664eff-1d56-4c16-bc87-bd58c4819873"
+    },
+    {
+      "claim_id": "8dd92507-5c2a-4945-b062-8c616076c6a8",
+      "result_id": "ce664eff-1d56-4c16-bc87-bd58c4819873"
+    },
+    {
+      "claim_id": "62bf5271-9ee2-4c7c-ac0f-b6ffac3cdb92",
+      "result_id": "ce664eff-1d56-4c16-bc87-bd58c4819873"
+    },
+    {
+      "claim_id": "49855c3d-ea2c-4cf4-8279-967698077e6f",
+      "result_id": "ce664eff-1d56-4c16-bc87-bd58c4819873"
+    },
+    {
+      "claim_id": "76afc355-548b-4bf4-97f7-6413241a9ad1",
+      "result_id": "ce664eff-1d56-4c16-bc87-bd58c4819873"
+    },
+    {
+      "claim_id": "d9bbc0e1-edeb-4f5a-9dd1-dee863992fc3",
+      "result_id": "ce664eff-1d56-4c16-bc87-bd58c4819873"
+    },
+    {
+      "claim_id": "34603239-b1b1-44b4-8df7-f5213218ccaa",
+      "result_id": "ce664eff-1d56-4c16-bc87-bd58c4819873"
+    },
+    {
+      "claim_id": "4eef8bd6-1601-4464-ba0c-c83238296496",
+      "result_id": "ce664eff-1d56-4c16-bc87-bd58c4819873"
+    },
+    {
+      "claim_id": "a8404456-0c53-4156-a684-e6ebed733fd8",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "2ef28bf2-d9d0-49e6-b48b-77b8d0e97e2e",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "02f05357-5ba1-41ca-b7a6-88cab7ecf062",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "0f3ea97e-62b5-4938-beed-f4cd01eab3f8",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "ee4a1c1f-48f9-486d-b3e0-55d91f9bc60b",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "136996cb-9780-44fa-b9a8-ebb207dea1b0",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "d09f5d2e-eb3c-4569-bb2c-7eccbf3ae4a0",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "793fe71b-7f96-4397-be47-c1faa577ac79",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "990521a5-510e-48fa-ae32-7fec19f99490",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "ca8da529-5a1e-4868-9e9c-07c2ab68b2ae",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "5b13dc2c-4e4f-41fd-8758-957d8a18d9cd",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "d499b8a1-c86b-4522-affd-1b2a596ae19b",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "f2c4940f-5c7f-4010-a85c-0c4d276eb26b",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "c0c1076d-ed19-4359-a123-9f86c0f256a3",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    },
+    {
+      "claim_id": "afcb00f9-3dd0-4e21-951e-8fee3cc90ae7",
+      "result_id": "79962141-5262-4aa9-b671-c49a9e2e9de1"
+    }
+  ],
+  "comparisons": []
+}

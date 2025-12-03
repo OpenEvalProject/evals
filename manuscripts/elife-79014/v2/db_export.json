@@ -1,0 +1,1620 @@
+{
+  "submission": {
+    "id": "eda22c29-6121-4917-a6c8-b5558f9e4573",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:16:34.807014Z",
+    "updated_at": "2025-12-03T16:16:34.807014Z"
+  },
+  "content": [
+    {
+      "id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "submission_id": "eda22c29-6121-4917-a6c8-b5558f9e4573",
+      "content_type": "manuscript",
+      "content_text": "# Novel fast pathogen diagnosis method for severe pneumonia patients in the intensive care unit: randomized clinical trial\n\n## Authors\n\n- Yan Wang<sup>1</sup>\n- Xiaohui Liang<sup>2</sup> ([ORCID: 0000-0001-8065-8168](https://orcid.org/0000-0001-8065-8168))\n- Yuqian Jiang<sup>2</sup>\n- Danjiang Dong<sup>1</sup>\n- Cong Zhang<sup>2</sup>\n- Tianqiang Song<sup>2</sup>\n- Ming Chen<sup>1</sup>\n- Yong You<sup>1</sup>\n- Han Liu<sup>3</sup>\n- Min Ge<sup>4</sup>\n- Haibin Dai<sup>5</sup>\n- Fengchan Xi<sup>6</sup>\n- Wanqing Zhou<sup>7</sup>\n- Jian-Qun Chen<sup>2</sup>\n- Qiang Wang<sup>2</sup> ([ORCID: 0000-0003-2907-9851](https://orcid.org/0000-0003-2907-9851)) \u2020\n- Qihan Chen<sup>2</sup> ([ORCID: 0000-0002-0062-8434](https://orcid.org/0000-0002-0062-8434)) \u2020\n- Wenkui Yu<sup>1</sup> ([ORCID: 0000-0003-4218-0321](https://orcid.org/0000-0003-4218-0321)) \u2020\n\n### Affiliations\n\n1. Department of Critical Care Medicine, Nanjing Drum Tower Hospital, The Affiliated Hospital of Nanjing University Medical School Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))\n2. The State Key Laboratory of Pharmaceutical Biotechnology, School of Life Sciences, Nanjing University Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))\n3. Department of Critical Care Medicine, Nanjing First Hospital, Nanjing Medical University Nanjing China ([ROR:059gcgy73](https://ror.org/059gcgy73))\n4. Department of Cardiothoracic Surgery Intensive Care Unit, Nanjing Drum Tower Hospital, The Affiliated Hospital of Nanjing University Medical School Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))\n5. Department of Neurosurgery Intensive Care Unit, Nanjing Drum Tower Hospital, The Affiliated Hospital of Nanjing University Medical School Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))\n6. Research Institute of General Surgery, Affiliated Jinling Hospital, Medical School of Nanjing University Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))\n7. Department of Laboratory Medicine, Nanjing Drum Tower Hospital, The Affiliated Hospital of Nanjing University Medical School Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))\n8. Medical School of Nanjing University Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Severe pneumonia is one of the common acute diseases caused by pathogenic microorganism infection, especially by pathogenic bacteria, leading to sepsis with a high morbidity and mortality rate. However, the existing bacteria cultivation method cannot satisfy current clinical needs requiring rapid identification of bacteria strain for antibiotic selection. Therefore, developing a sensitive liquid biopsy system demonstrates the enormous value of detecting pathogenic bacterium species in pneumonia patients.Methods:In this study, we developed a tool named Species-Specific Bacterial Detector (SSBD, pronounce as \u2018speed\u2019) for detecting selected bacterium. Newly designed diagnostic tools combining specific DNA-tag screened by our algorithm and CRISPR/Cas12a, which were first tested in the lab to confirm the accuracy, followed by validating its specificity and sensitivity via applying on bronchoalveolar lavage fluid (BALF) from pneumonia patients. In the validation I stage, we compared the SSBD results with traditional cultivation results. In the validation II stage, a randomized and controlled clinical trial was completed at the ICU of Nanjing Drum Tower Hospital to evaluate the benefit SSBD brought to the treatment.Results:In the validation stage I, 77 BALF samples were tested, and SSBD could identify designated organisms in 4 hr with almost 100% sensitivity and over 87% specific rate. In validation stage II, the SSBD results were obtained in 4 hr, leading to better APACHE II scores (p=0.0035, ANOVA test). Based on the results acquired by SSBD, cultivation results could deviate from the real pathogenic situation with polymicrobial infections. In addition, nosocomial infections were found widely in ICU, which should deserve more attention.Conclusions:SSBD was confirmed to be a powerful tool for severe pneumonia diagnosis in ICU with high accuracy.Funding:National Natural Science Foundation of China. The National Key Scientific Instrument and Equipment Development Project. Project number: 81927808.Clinical trial number:This study was registered at https://clinicaltrials.gov/ (NCT04178382).\n\n## Introduction\n\nSepsis is associated with high morbidity and mortality (Singer et al., 2016). Adequate antibiotic therapy in time could decrease mortality and reduce the length of stay in ICU for patients with sepsis or septic shock (Ferrer et al., 2018; Kumar et al., 2006; Pulia and Redwood, 2020; Seymour et al., 2017). As reported in the previous study, the mortality rate of patients increased approximately 7.6% for every hour delayed (Kumar et al., 2006). Therefore, rapid diagnosis of pathogenic microorganisms is crucial for shortening the time of empirical antibiotic therapy and improving the prognosis of patients with sepsis.\n\nConventional culture test (CCT) is the most commonly used and golden standard identification method of pathogenic microorganisms in most countries. However, it showed two critical limitations: long time-consuming (2\u20135 days) and low sensitivity (30\u201350%), which limited the application of this method in the ICU (Abd El-Aziz et al., 2021; Zhou et al., 2014). To overcome this bottleneck, several new tools were developed and showed significant improvement in time consumption and accuracy. Recently, next-generation sequencing (NGS) technology was applied to acquire the entire information of microorganisms and demonstrated great ability in diagnosing rare pathogens. However, the whole process still needs at least 2 days for the full diagnostic report with high cost (Chen et al., 2020; Wang et al., 2020). On the other hand, NGS provided too much information about microorganisms but only semi-quantification of pathogens, which was hard for most clinical doctors to extract the most important information to determine antibiotic usage. Other new emerging detection techniques designed by BioFire and Curetis are much superior in detection time than these above. However, its original principle was based on nucleotide diversity of conserved genes among species, which could not satisfy the application in the ICU due to potential false-positive results (Edin et al., 2020; Jamal et al., 2014; Trotter et al., 2019). Therefore, a unique diagnosis tool aimed at faster and more accurate pathogen identification in the ICU was still a great challenge.\n\nIn this study, we aimed to design a simple and convenient diagnosis tool for sepsis patients in the ICU, which covered the most common pathogenic bacteria and completed the detection process in the shortest possible time with low cost and minimum instrument requirements. A clinical trial with two stages was applied to evaluate the accuracy of the tool and the clinical benefits.\n\n## Materials and methods\n\n### Study design\n\nThe full study design was shown in Figure 1. In the discovery stage, we screened species-specific DNA tags of 10 epidemic pathogenic bacteria in the ICU. In the training stage, we optimized reaction conditions and sample preparation process, including detection concentration limitation, DNA purification, and incubation time of the CRISPR/Cas12a reaction. The finalized experiment operating procedure of SSBD was used in the subsequent stages (detailed protocol was shown in Appendix 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79014/elife-79014-fig1-v2.jpg)\n\n**Figure 1.:** This study contained four stages: discovery stage, training stage, validation stage I and validation stage II. All patients were from the Department of Critical Care Medicine, Nanjing Drum Tower Hospital. Patients were randomly divided into two groups for the clinical trial.\n\nIn validation stage I, 77 specimens of bronchoalveolar lavage fluid (BALF) directly acquired from patients in ICU were finally detected by SSBD to confirm the specificity and sensitivity of SSBD compared to CCT results. Based on clinical needs, some of the samples were diagnosed by NGS technology in third party commercial company, which provided additional information for reference.\n\nAfter the stability and accuracy of SSBD were thoroughly evaluated, the validation stage II, a preliminary clinical intervention experiment, was launched to verify the clinical application of SSBD.\n\n### Screening species-specific DNA tags\n\nWe designed a process to find the species-specific DNA tags according to the basic principle, intraspecies-conserved and interspecies-specific sequences (illustrated in Figure 2A). A total of 1791 high-quality genomes of 232 microorganism species from the public databases were included in the screening process. To accelerate the screening process, we developed a linear comparison algorithm instead of comparing every two genomes, which could save more than 90% of calculation time cost (Appendix 1\u2014figure 1). According to the epidemiological data by previous retrospective study (Zhou et al., 2014) and 2017 data in ICU of Nanjing Drum Tower Hospital (Appendix 1\u2014figure 2), 10 species of bacteria covered 76% sepsis pathogenic bacteria and therefore were selected as targets for subsequent detecting process, including Acinetobacter baumannii (A. baumannii), Escherichia coli (E. coli), Klebsiella pneumoniae (K. pneumoniae), Pseudomonas aeruginosa (P. aeruginosa), Stenotrophomonas maltophilia (S. maltophilia), Staphylococcus aureus (S. aureus), Staphylococcus epidermidis (S. epidermidis), Staphylococcus capitis (S. capitis), Enterococcus faecalis (E. faecalis) and Enterococcus faecium (E. faecium). Then we designed different DNA primers targeting selected species-specific DNA tags from each species (Appendix 1\u2014tables 1 and 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79014/elife-79014-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic diagram of screening species-specific DNA tags. (B) Genomic distribution of species-specific DNA tags in 10 bacteria. (C) Genomic proportion of species-specific DNA tags in 10 bacteria.\n\nTo evaluate our primers' specificity in identifying species, we chose S. aureus and S. epidermidis from the same genus as our cross-validated target species. We extracted DNA sequences of the S. aureus and the S. epidermidis amplified by primers used in FilmArray Pneumonia Panel developed by BioFire and in our protocol, which were acquired from NCBI Reference Prokaryotic Representative genomes. We then aligned S. aureus-specific DNA sequences with the representative genome of S. epidermidis using blast to search the most similar DNA sequences. In the FilmArray Pneumonia Panel, DNA amplified sequences from the S. aureus and the S. epidermidis were aligned to each other (two different gene regions, rpoB and gyrB, were used to separate two species).\n\n### Patients\n\nPatients admitted to ICUs and diagnosed with severe pneumonia were recruited from Aug 27, 2019. The recruit criteria for patients were: (1) age \u226518 years; (2) had artificial airway and expected to retain for more than 48 hr; (3) clinically diagnosed as pneumonia, and the microbiology of etiology was unclear; (4) signed informed consent; (5) the expected length of staying in ICU was more than 3 days. According to previous mortality acquired from the adequate anti-infective group, the sample size calculation (two-group rate) for patients was done, and a sample size of 73 patients in each group was needed. The enrolled participants formed a consecutive and convenient series, who were randomly assigned to experimental or control groups as described in the appendix 1.\n\n### Clinical outcomes\n\nBALFs were obtained from all the patients from 2 groups on day 1, day 3\u20135, and day 7\u201310 after recruitment and were sent directly to the hospital diagnostic microbiology laboratory for CCT and susceptibility testing. CCT results were obtained in strict accordance with international ERS/ESICM/ESCMID/ALAT guidelines for the management of hospital-acquired pneumonia and ventilator-associated pneumonia, which is currently the guideline for clinical gold standard. BALFs from patients of the experiment group were also sent for SSBD tests immediately after sampling. The time from sample acquisition to feedback of results was defined as the turnaround time, as well as being estimated and compared between SSBD and CCT. Other clinical records included blood routine tests, CRP and PCT examinations.\n\nAll enrolled patients received primary empirical antibiotic therapy. Once the SSBD results of the patients in the experiment group were obtained, the decisions about whether antibiotics were adjusted or not were made by two senior doctors according to the SSBD results and other clinical information. While in the control group, adjustment depended on conventional culture results and clinical data. Patient demographics and other vital clinical parameters were recorded. Acute Physiology and Chronic Health Evaluation II (APACHE II) scores and Sequential Organ Failure Assessment (SOFA) scores were calculated and recorded for patients on days 1, 3, 7, 10, and 14 to assess their disease severity and organ function.\n\n### Statistical analysis\n\nThe number of improved patients on different clinical indicators of different days was calculated and tested by Fisher\u2019s exact test. APACHE II scores and SOFA scores were tested as a series by two-way ANOVA. Different clinical outcomes were tested by the Mann-Whitney test.\n\n### Funding support\n\nThis study was funded by National Natural Science Foundation of China. The National Key Scientific Instrument and Equipment Development Project. Project number: 81927808. The funders were not involved in the initiation or design of this study, collection of samples, analysis and interpretation of data, writing of the paper, or the submission for publication. The study and researchers are independent of the funders.\n\n## Results\n\n### The identification of species-specific DNA fragments\n\nThe first step to identify pathogenic bacteria was to figure out the specific genome information of each species. Bacteria were quite similar between close-related species but sometimes quite different among different strains of one species due to fast evolution and horizontal gene transfer (Dombrowski et al., 2020; Brito, 2021; Groussin et al., 2021), which makes it hard to figure out great species-specific DNA fragments. For example, two typical strains PAO1 and PAO7 of P. aeruginosa (NCBI representative genome database) demonstrate less than 94% nucleotide identity, while E. coli and Shigella sonnei both belong to Enterobateriaceae and their representative genomes share more than 98% nucleotide identity. Therefore, the widely used method to identify bacteria with conserved genes may not be a good choice (Maslunka et al., 2015; Liu et al., 2021). We developed an innovative algorithm and designed a workflow to figure out the best DNA tag for each species for diagnostic application based on 1791 microbe genomes from 232 species (Figure 2A). The details could be found in Appendix 1.\n\nWe started from 10 common bacteria contributing to sepsis infection as the initial panel according to local epidemic data from ICU of Drum Tower hospital and previous studies about pathogens in ICU (Appendix 1\u2014figure 2; De Pascale et al., 2012; Sakr et al., 2018). To our surprise, bacteria-specific DNA sequences showed a random distribution and turned out to be only 0.3\u20134.1% in the whole genomes of 10 bacteria (Figure 2B and C). Considering the application scenario of ICU with only basic instruments, PCR +CRISPR/Cas12a system was chosen for the following detection. Based on the identified species-specific DNA fragments, related primers and crRNAs (CRISPR RNA) were designed according to each species (Appendix 1\u2014tables 1 and 2).\n\n### The establishment of species-specific bacteria detection tool\n\nBriefly, CRISPR/Cas12a with designed crRNA could be activated by its target, which could be told by whether the reporter probe was cleaved and demonstrated signal as previously reported (Chen et al., 2018).\n\nTo optimize the working conditions of the detection tool in ICU, multiple experiments were applied to optimize the sample preparation and detection process. With the gradient concentration of DNA templates, we confirmed that the lowest detection limit was 10\u201315 M with PCR amplification and 10\u20138M without amplification step (Figure 3B), which was consistent with previous studies (Gootenberg et al., 2018). In addition, 30 min\u2019 incubation of CRISPR/Cas12a with PCR products was enough to demonstrate signals (Figure 3B). An additional purification step right after PCR amplification appeared unnecessary to acquire the positive result but helpful for weaker signal (Appendix 1\u2014figure 3A). In addition, the comparison of CRISPR/Cas incubation duration confirmed that fluorescence value showed a significant difference from 5 min and reached its maximum after 30 min compared to the negative control (Appendix 1\u2014figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79014/elife-79014-fig3-v2.jpg)\n\n**Figure 3.:** (A) SSBD workflow for clinical validation stages. (B) Cas12a and Cas12a-after-PCR detection of different concentrations and reaction times including 30 min (left) and 60 min (right). Blue bars indicated the Cas12a-after-PCR test. Brown bars indicated Cas12a test only. The concentration gradient of pGL3 plasmid from 10\u201317 M-10\u20137M was established as the test group. NC stood for the fluorescence values of PCR products of using DEPC-H2O as input. Each group had three repeats. Error bars indicated mean \u00b1 SEM of fluorescence value. ** indicated p-value <0.01 and *** indicated p-value <0.001 of unpaired t-test. (C) SSBD results of 10 pathogenic bacteria. Every test panel for each of 10 bacteria was used to detect genome DNA samples of 10 bacteria by SSBD. NC stood for the fluorescence values of PCR products of using DEPC-H2O as input. Each group had three repeats. Error bars indicated mean \u00b1 SEM of fluorescence value. *** indicated p-value <0.001 of unpaired t-test.\n\nTo confirm the primary behavior of SSBD, two clinical strains separated from different patients for each of 10 selected bacteria species were collected and tested by SSBD as the positive control, which showed clear positive results (Appendix 1\u2014figure 3C). To further confirm the specificity of SSBD, each bacteria strain was tested by 10 SSBD test panels targeting different bacteria. Compared to negative control, only SSBD targeting the tested bacteria showed a positive result, which confirmed its high specificity (Figure 3C).\n\nPutting these results together, a standard operating procedure was finally established for the following validation stages (Figure 3A), which was capable of providing the information about the ten most common pathogenic bacteria in ICU. Since this method was a quite fast and species-specific bacteria detection tool, we named it SSBD.\n\n### The accuracy and clinical benefits of SSBD\n\nWe started our study with validation stage I, which was a non-intervention study with 77 samples of BALF extracted from patients. Samples were detected both by SSBD and CCT, and the results were compared (raw detection results were shown in Appendix 1\u2014table 3).\n\nGenerally, 5 of 10 selected bacteria were detected by both tests, including A. baumannii, K. pneumoniae, P. aeruginosa, S. aureus, and S. maltophilia. SSBD could detect those five bacteria separately with 100% sensitivity and over 87% specificity, which were calculated by the results of CCT as golden standard (Figure 4A). The other five bacteria were detected by SSBD but not CCT, including E. coli, S. epidermidis, S. capitis, E. faecalis, and E. faecium. Among all samples, 11 of them were determined by patients to acquire results with NGS, which provided extra information to evaluate the results (Appendix 1\u2014table 4). Based on the results, SSBD was highly consistent with NGS, which implied that SSBD might provide more accurate and complete pathogenic information than CCT in the selected panel.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79014/elife-79014-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cross-tables for 5 of 10 bacteria by both SSBD and CCT in the validation stage I. (B) Cross-tables for 5 of 10 bacteria by both SSBD and CCT in the validation stage II. (C) Antibiotics coverage rate of each test in the two groups. Exp meant the experimental group, and Con meant the control group. Test 1: Day 1. Test 2: Day 3\u20135. Test 3: Day 7+. Raw antibiotics coverage results of each patient were available in Appendix 1\u2014figure 4B. Detailed judging guidelines were shown in Appendix 1. (D and E) Line charts for APACHE II and SOFA scores, respectively. Error bars indicated mean \u00b1 SEM of scores of all the recorded patients. * indicated a significant difference between the two groups using two-way ANOVA.\n\nBased on these accurate results, we started the validation stage II, which was an intervention study aiming to evaluate the clinical benefits of SSBD compared to the current diagnosis and treatment strategy in ICU. Although the study was paused due to the outbreak of SARS-CoV2, 22 patients were recruited into the experiment group and 24 patients into the control group. The baseline characteristics had no significant difference except ages (Table 1).\n\n**Table 1.**\n Demographic and baseline characteristics of the patients in the validation stage II.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Experimental group (n=22)</th>\n      <th>Control group(n=24)</th>\n      <th>p value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Women</td>\n      <td>9 (40.9%)</td>\n      <td>11 (45.8%)</td>\n      <td>0.774</td>\n    </tr>\n    <tr>\n      <td>Men</td>\n      <td>13 (59.1%)</td>\n      <td>13 (54.2%)</td>\n      <td>0.774</td>\n    </tr>\n    <tr>\n      <td>Age, years (SD)</td>\n      <td>58 (17.4)</td>\n      <td>68 (9.5)</td>\n      <td>0.015*</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Patients' numbers of chronic comorbidities</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hypertension</td>\n      <td>9 (40.9%)</td>\n      <td>17 (70.8%)</td>\n      <td>0.073</td>\n    </tr>\n    <tr>\n      <td>Coronary artery disease</td>\n      <td>1 (4.5%)</td>\n      <td>3 (12.5%)</td>\n      <td>0.609</td>\n    </tr>\n    <tr>\n      <td>Chronic pulmonary disease</td>\n      <td>2 (9.1%)</td>\n      <td>4 (16.7%)</td>\n      <td>0.667</td>\n    </tr>\n    <tr>\n      <td>Chronic kidney disease</td>\n      <td>2 (9.1%)</td>\n      <td>6 (25.0%)</td>\n      <td>0.247</td>\n    </tr>\n    <tr>\n      <td>Diabetes</td>\n      <td>5 (22.7%)</td>\n      <td>12 (50.0%)</td>\n      <td>0.072</td>\n    </tr>\n    <tr>\n      <td>Malignancy</td>\n      <td>0 (0.0%)</td>\n      <td>2 (8.3%)</td>\n      <td>0.490</td>\n    </tr>\n    <tr>\n      <td>Stroke</td>\n      <td>3 (13.6%)</td>\n      <td>8 (33.3%)</td>\n      <td>0.171</td>\n    </tr>\n    <tr>\n      <td>Immunodeficiency/immune suppressive therapy</td>\n      <td>5 (22.7%)</td>\n      <td>3 (12.5%)</td>\n      <td>0.451</td>\n    </tr>\n    <tr>\n      <td>Recent surgery</td>\n      <td>4 (18.2%)</td>\n      <td>3 (12.5%)</td>\n      <td>0.694</td>\n    </tr>\n    <tr>\n      <td>Hemodynamic support (using vasoactive drugs)</td>\n      <td>7 (31.8%)</td>\n      <td>7 (29.2%)</td>\n      <td>1.000</td>\n    </tr>\n    <tr>\n      <td>Norepinephrine \u22640.1 \u03bcg/(kg\u2022min)</td>\n      <td>2</td>\n      <td>3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Norepinephrine &gt;0.1 \u03bcg/(kg\u2022min)</td>\n      <td>1</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Dopamine \u22645 \u03bcg/(kg\u2022min)</td>\n      <td>3</td>\n      <td>2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Dopamine &gt;5 \u03bcg/(kg\u2022min)</td>\n      <td>0</td>\n      <td>1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Dobutamine \u22645 \u03bcg/(kg\u2022min)</td>\n      <td>1</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Dobutamine &gt;5 \u03bcg/(kg\u2022min)</td>\n      <td>0</td>\n      <td>0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Status at randomization (D1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Temperature, \u00b0C</td>\n      <td>38.4 (0.6)</td>\n      <td>38.3 (0.7)</td>\n      <td>0.345</td>\n    </tr>\n    <tr>\n      <td>Coma</td>\n      <td>6 (27.3%)</td>\n      <td>6 (25.0%)</td>\n      <td>1.000</td>\n    </tr>\n    <tr>\n      <td>Systolic blood pressure, mmHg</td>\n      <td>112.2 (19.3)</td>\n      <td>121.6 (17.8)</td>\n      <td>0.057</td>\n    </tr>\n    <tr>\n      <td>Invasive mechanical ventilation</td>\n      <td>20 (90.9%)</td>\n      <td>24 (100.0%)</td>\n      <td>0.223</td>\n    </tr>\n    <tr>\n      <td>Renal replacement therapy</td>\n      <td>0 (0.0%)</td>\n      <td>2 (8.3%)</td>\n      <td>0.493</td>\n    </tr>\n    <tr>\n      <td>SOFA score</td>\n      <td>6.3 (0.7)</td>\n      <td>6.0 (0.5)</td>\n      <td>0.935</td>\n    </tr>\n    <tr>\n      <td>APACHE II score</td>\n      <td>17.3 (1.6)</td>\n      <td>18.9 (1.5)</td>\n      <td>0.422</td>\n    </tr>\n    <tr>\n      <td>Albumin, g/L</td>\n      <td>32.1 (5.1)</td>\n      <td>31.0 (3.7)</td>\n      <td>0.442</td>\n    </tr>\n    <tr>\n      <td>Globulin, g/L</td>\n      <td>21.8 (3.9)</td>\n      <td>23.1 (5.9)</td>\n      <td>0.489</td>\n    </tr>\n    <tr>\n      <td>Absolute lymphocyte count, 109 /L</td>\n      <td>0.9 (0.7)</td>\n      <td>0.7 (0.3)</td>\n      <td>0.909</td>\n    </tr>\n    <tr>\n      <td>White blood cells, 109 /L</td>\n      <td>11.0 (5.7)</td>\n      <td>12.7 (6.3)</td>\n      <td>0.210</td>\n    </tr>\n    <tr>\n      <td>CRP, mg/L</td>\n      <td>94.7 (101.2)</td>\n      <td>108.3 (84.0)</td>\n      <td>0.424</td>\n    </tr>\n  </tbody>\n</table>\n\n_SOFA score and APACHE II score are mean (SEM), other data are mean (SD), n (%). Mean (SEM/SD) is compared using Mann-Whitney test, and n (%) is compared using Fisher\u2019s exact test. * indicated p-value <0.05._\n\nWe finally got 57 BALF results tested by SSBD, which included 43 results that also had CCT results among them in the experiment group. While in the control group, we got 63 samples tested only by CCT. In the experiment group, 47 samples were positive among 57 samples tested by SSBD, while 28 samples were positive among 43 samples tested by CCT (raw detection results were shown in Appendix 1\u2014table 5). In the control group, 41 samples showed positive among 63 samples. It was shown that SSBD could detect each bacterium with similar high sensitivity and specificity in validation stage II (Figure 4B). Consistent with the local epidemic data, the most frequent occurrence was A. baumannii (Figure 4B). Similar to stage I, 12 samples were determined by patients to test with NGS help us to draw the same conclusion that SSBD seemed to be better that CCT (Appendix 1\u2014table 6).\n\nTo explore clinical benefits with the help of SSBD, effective antibiotic coverage rate, APACHE II scores and SOFA scores were calculated and compared to evaluate the rationalization of antibiotic therapy and patients' disease severity and organ function status in the two groups (Figure 4C-E). Effective antibiotic coverage rates for each test were significantly higher in the experimental group than those in the control group in three tests (Figure 4C). The definition of antibiotic coverage and the original calculation results were shown in Appendix 1\u2014figure 4A and B. APACHE II scores were significantly lower in the experimental group than those in the control group after day 1 (p=0.0035, two-way ANOVA); the separation between two groups of patients increased progressively until day 14 (Figure 4D). SOFA scores showed no difference between the groups (p=0.8918, two-way ANOVA) (Figure 4E).\n\n### Polymicrobial infection and nosocomial events observed by SSBD\n\nBased on the previous studies, CCT had defects in the evaluation of polymicrobial infection events due to the limitations of its technology (Azevedo et al., 2017). Therefore, we tried to evaluate whether SSBD demonstrated better performance with polymicrobial infection. Here, we defined situations of infection with more than one pathogenic microorganism as polymicrobial infection events to assess the performance based on the results of both methods. From the results, the detection rate of polymicrobial infection events by SSBD was 41.8% (55/134) in two validation stages, which was significantly higher than 11.7% (14/120) of CCT (Figure 5A). Polymicrobial infection events were compared among SSBD, CCT and NGS, which demonstrated high consistency of SSBD and NGS (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79014/elife-79014-fig5-v2.jpg)\n\n**Figure 5.:** (A) Statistics of pathogenic infection status of BALF samples in the two validation stages. (B) Verification from NGS results for 6 samples identified as polymicrobial infection by SSBD but not CCT or missed pathogens by CCT. (C) Case study of polymicrobial infection detected by SSBD and CCT. (D) Statistics of pathogens involved in polymicrobial infections in the two stages. (E) Case study of nosocomial infection identified by SSBD. (F) Case study of nosocomial infection identified by CCT. (G) Percentage of nosocomial infection identified by SSBD and CCT.\n\nSince both SSBD and NGS were based on target DNA, we wanted to confirm if some polymicrobial infection events were \u2018false positive\u2019 and caused by dead bacteria. Here, we showed patient B19 as an example, who received three times tests at days 1, 3, and 7 by both CCT and SSBD. Based on the results, S. maltophilia was detected as level II in test1 with SSBD but not CCT. Later on, S. maltophilia was detected by CCT in test2 as well with few days\u2019 development from level II to level III based on result of SSBD, which means SSBD discovered the true polymicrobial infection event earlier than CCT (Figure 5C). From the aspect of pathogen species participated in polymicrobial infection events, both methods demonstrated similar results with A. baumannii, S. maltophilia, P. aeruginosa, K. pneumoniae and S. aureus in top 5 (Figure 5D), which were consistent with the frequency of pathogens in ICU (De Pascale et al., 2012).\n\nHospital infections, also known as nosocomial infections, are an important factor in the incidence rate and mortality of ICU patients with severe pneumonia (Zaragoza et al., 2020). Since CCT has a long delay in clinical feedback of pathogenic results, there is no effective monitoring method in clinical practice. Here, we tried to evaluate nosocomial infections based on the test results. We defined a case as a nosocomial infection event if a pathogenic bacterium was newly detected in the current time point but not before. For example, B17 (K. pneumoniae at test 2, E. faecalis at test 3) and B19 (S. maltophilia at test 2, K. pneumoniae at test 3) patients were discovered as nosocomial infection cases for SSBD and CCT (Figure 5E and F). Based on the results of SSBD, 47.6% (10/21) of patients had nosocomial infections at the test 2, and 28.6% (4/14) of patients had nosocomial infections at the test 3. Similarly, 40% (4/10) of patients were identified as nosocomial infections by CCT at test 2, and 27.3% (3/11) of patients were identified as nosocomial infections at test 3 (Figure 5G).\n\n## Discussion\n\nIn this study, we developed a rapid bacteria detection technique based on CRISPR/Cas12a using species-specific DNA tags and detected common bacteria taken from pneumonia in 4 hr with 100% sensitivity and over 87% specificity in the validation stage I. Currently, there are already some market-oriented detection technologies for pneumonia patients, such as FilmArray Pneumonia Panel by BioFire and Curetis Unyvero system, which also could detect microorganisms in several hours (Trotter et al., 2019). However, based on the information in their product instruction, false positive results were widely seen in close relative species. Such problem may due to the marker selection strategy. For example, sequences used by FilmArray Pneumonia Panel from two gene regions had highly similar DNA sequences in the S. epidermidis representative genome (E-value=5e-40, rpoB; E-value=8e-39, gyrB), which could interfere with pathogen identification between species from the same genus. It was ideal for early and rapid screening of infectious diseases but was not applicable in the ICU, considering the complexity and urgency of infection events within the ICU. We have adopted a completely different strategy from the existing methods, getting specific gene regions from species for further test using our developed bioinformatics workflow and algorithm. It was shown that our sequences used for S. aureus diagnosis had no similar fragments in S. epidermidis, which avoided distinguishing different species by gene diversity. It was likely to get the species-specific DNA tags from such amount genomes when aligned bacterial genomes with each other but consuming computational cost. We optimized calculation processes by rescheduling steps and then made it possible for us to acquire species-specific DNA regions after shortening time to a range bearable.\n\nNGS technology is useful in species identification and also shows its advantages in clinical diagnosis. It is valuable to detect uncommon pathogens because of its unique capability in detecting multiple agents across the full microbial spectrum contributing to disease and has already been developed as a new detection platform (Wang et al., 2020). However, in the majority of cases of common pathogens, redundant microorganism results were probably unhelpful to the anti-infection regimen. In addition, the high cost and relatively long turnaround time prevent its widespread application, especially in the ICU circumstance. Therefore, our SSBD method seemed more advantageous in time-consuming and information effectiveness than other mentioned methods, especially when we could quantify bacterial load based on fluorescence intensity for better antibiotic therapy strategy. CRISPR/Cas12a and qPCR are both quantitative methods, but CRISPR/Cas12a shows its robustness and lower equipment requirement, which satisfied our needs for most of the ICU. There are still several challenges in implementing POCT in developing countries, especially the qPCR/POCT system, which will be an alternative. Here, we listed a table to demonstrated the comparison among SSBD, CCT and NGS from main aspects (Appendix 1\u2014table 10).\n\nThe results of SSBD demonstrated high sensitivity and specificity. However, we discovered several \u2018false positive\u2019 results compared to CCT, which might be caused by two reasons: (1) The low bacterial load of the patient sample was probably not enough or needed much longer time than expected to be cultivated. SSBD provided a lower threshold of detection (10\u201315 M) than CCT, which could detect pathogens that even existed in trace amounts which unable to be cultivated. In our study, the fluorescence intensity obtained from SSBD was divided into three intervals (level I: 10\u201315-10\u201314 M, level II: 10\u201314 M-10\u201313 M, level III: over 10\u201313 M), representing the different strengths of bacteria (roughly equivalent to bacteria amounts according to our lowest detection thresholds, dividing details in SSBD diagnostic report of Appendix 1). All false-positive results were calculated on the count of species and strengths, mostly belonging to the level I or II (Appendix 1\u2014figure 5). Considering most of those false positive samples were also validated by NGS technology, it suggested that some pathogens might be missed in the CCT results. (2) Cultivation could fail in detecting pathogens that failed in competitive growth environments. It was interesting to see that many patients were infected by more than one pathogen, which might cause potential competition between different pathogens in CCT process (Appendix 1\u2014table 9). For example, A. baumannii was found to be the most competitive bacteria in cultivation, which may be due to its fastest growth rate. On the other hand, P. aeruginosa seemed to be relatively the weakest one among them, which was usually concealed in the cultivation with other species existing (sample A16, B19-3, B21-1, B21-2 after we excluded all samples with A. baumannii existing).\n\nWhen evaluating the clinical benefit from SSBD, the quicker directed therapy adjustment for patients in the experiment group (Exp: 10.2\u00b18.8 hours vs. Con: 96.0\u00b135.1 hr, p<0.0001, Mann-Whitney test) could shorten the empirical anti-infection time and seemed to alleviate illness severity (APACHE II score) during the validation stage II with the help of the SSBD. As showed in Appendix 1\u2014table 8, patients in experiment groups for example demonstrated significant better measures of temperature improvement at day 3, WBC improvement at day 7. It implied that appropriate antibiotic treatment guided by in-time pathogenic information would alleviate acute physiological illness. Nevertheless, at the endpoint, clinical outcomes showed no differences between the two groups, which may due to the insufficient patient numbers.\n\nDespite the size in our intervention stage, there were still some aspects that have not been considered. (1) Resistance genes were not included in the study. Multi-drug resistant organisms (MDROs) prevailed in ICU (Liu et al., 2020; Yang et al., 2020), which might not improve the situation of patients even with accurate pathogenic information. There were a few cases (e.g. B07, B25, and B35 patients) showing no signs of clearing the bacterial infection. (2) The 10 designed pathogens were originated from sepsis, which might not completely overlap with pathogens of severe pneumonia, though pneumonia is one of the most common causes of sepsis. The panel pathogens could be optimized flexibly for meeting diverse clinical needs in the ICU. (3) Other potential pathogenic microbes, such as viruses and fungus, might affect the clinical outcomes considering the complexity of ICU patients.\n\nPrevious studies showed that polymicrobial pneumonia is related to an increased risk of inappropriate antimicrobial treatment (Karner et al., 2020). In both phases, a total of 55 samples were identified as polymicrobial infections by SSBD, while only 14 samples were identified as polymicrobial infections by CCT, which suggested that SSBD could provide more precise pathogenic bacteria information than CCT, especially for those patients with polymicrobial infections. On the other hand, nosocomial infections contribute to a considerable proportion of deaths in ICU patients with severe pneumonia (Zaragoza et al., 2020). Although SSBD identified similar ratio of nosocomial infection events with CCT (Figure 5G), SSBD provided more timely information for clinical control and response, which might improve the clinical medication decision in ICU.\n\nAs anticipated, SSBD performed well with high sensitivity and specificity in rapid pathogens identification, and it possessed shorter turnover time, which was associated with more rapid administration of appropriate antimicrobial therapy in the experiment cases. SSBD also has enormous potential in expanding pathogens from different diseases with much more pathogen genomes included. We believe that SSBD is an accurate tool with great potential but need to be applied in more clinical research.\n",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "8eb12e7b-9e19-4c43-a29b-22ad403a7d7c",
+      "submission_id": "eda22c29-6121-4917-a6c8-b5558f9e4573",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, https://ror.org/03rp50x72 University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79014.sa0](https://doi.org/10.7554/eLife.79014.sa0)\n\nCurrent culture-based, gold standard methods used for diagnosing the cause of sepsis provide results in 48-96 hours slowing antibiotic treatment initiation and leading to poor patient recovery. This work provides a new tool for identifying sepsis- and pneumonia-causing pathogens in less than 4 hours with species-specificity with the hope that the fast turnaround time leads to early treatment and improved clinical outcomes. Using an optimized PCR+CRISPR-Cas12a DNA detection method, the assay demonstrates good analytical sensitivity and specificity for 10 common bacterial pathogens that cause pneumonia. The method is validated in a clinical cohort and the clinical benefit is analyzed using a second cohort which is an intervention study used to guide clinicians on treatment choice.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, https://ror.org/03rp50x72 University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79014.sa1](https://doi.org/10.7554/eLife.79014.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Novel fast pathogen diagnosis method for severe pneumonia patients in the intensive care unit: randomized clinical trial\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Bavesh Kana as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) It is not clear which epidemiological data these pathogens were selected from. Moreover, the selected pathogens are only bacteria. Can the authors expand?\n\n2) The authors imply that the implementation of their method has a clear clinical benefit but the data supporting this claim is sparse. Although the method seemed to improve disease severity, no improvement was indicated for important clinical measures including organ function, time of ventilation, and mortality. Testing more samples may provide a better understanding of the clinical benefit of the method but the data presented provide limited evidence. Are further data available? Hospital stay duration, survival? If not, these statements should be reconsidered.\n\n3) BALF is the primary sample used for diagnosis in this work but can be difficult to obtain in patients with severe symptoms and young children. As a result, it may not be as useful in these patient populations thus reducing the application of this method. Were other sample types tested? Can the authors comment on this limitation?\n\n4) The advantage of SSBD over NGS is clear but the benefit of SSBD compared to tests such as BioFire and Curetis could be made clearer. It seems that these two methods show low clinical specificity and thus cannot be used in the ICU but data or further explanation of this claim would validate the advantage of SSBD to current sepsis detection methods.\n\n5) Consider creating a table for direct comparison of SSBD to CCT and NGS, rather than simply using 12 random samples for NGS.\n\n6) Consider adding time taken to receive results for cultures, SSBD, and NGS to highlight the rapidity of the novel diagnostic test.\n\n7) Consider investigating potential ways to distinguish polymicrobial results found on SSBD testing from colonization/non-pathogenic infections.\n\nOther concerns that must be addressed:\n\n1) Page 9. Please explain how primer specificity was evaluated.\n\n2) Page 9. Were patients on antibiotics before getting into the trial? Add this detail.\n\n3) Page 10 At which timepoint the patients received different treatment based on the results of the culture or SSBD? Was this consistent?\n\n4) Page 11. The second sentence of 3.1 section in results is not clear.\n\n5) How were patients allocated to groups? Randomised?\n\n6) The table describing the patient cohort is in supplementary information. It should be in the main manuscript. It seems that the control and experimental groups were not balanced. Please explain.\n\n7) What was the threshold level of fluorescence (in Figure 3) which was considered important?\n\nReviewer #1 (Recommendations for the authors):\n\nDid the experimental groups have any differences in hospital stay, or survival? It would be nice to show if there is a correlation with important clinical outcomes.\n\nReviewer #2 (Recommendations for the authors):\n\nThe advantage of SSBD over NGS is clear but the benefit of SSBD compared to BioFire and Curetis could be improved. It seems that these two methods show low clinical specificity and thus cannot be used in the ICU but data or further explanation of this claim would further validate the advantage of SSBD to current sepsis detection methods.\n\nReviewer #3 (Recommendations for the authors):\n\nConsider creating a table for direct comparison of SSBD to CCT and NGS rather than simply 12 random samples for NGS.\n\n\u2013 Consider adding time until results received for cultures, SSBD, and NGS to highlight the rapidity of the novel diagnostic test.\n\n\u2013 Consider investigating potential ways to distinguish polymicrobial results found on SSBD testing from colonization/non-pathogenic infections?\n",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ab86b75f-e0cc-48e2-89be-49314a07bbbf",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C1",
+      "claim": "Sepsis is associated with high morbidity and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Sepsis is associated with high morbidity and mortality (Singer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Singer et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "a13be052-4cc1-4d78-9f5a-fb24ac5f6d1f",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C2",
+      "claim": "Adequate antibiotic therapy in time could decrease mortality and reduce the length of stay in ICU for patients with sepsis or septic shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Adequate antibiotic therapy in time could decrease mortality and reduce the length of stay in ICU for patients with sepsis or septic shock (Ferrer et al., 2018; Kumar et al., 2006; Pulia and Redwood, 2020; Seymour et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "100bca24-c6de-4efe-a7cd-eaa8e68414c2",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C3",
+      "claim": "The mortality rate of patients increased approximately 7.6% for every hour delayed in antibiotic therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in the previous study, the mortality rate of patients increased approximately 7.6% for every hour delayed (Kumar et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kumar et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "cb4e3bdf-4040-4cdd-bd1f-88f30d1021cf",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C4",
+      "claim": "Conventional culture test (CCT) is the most commonly used and golden standard identification method of pathogenic microorganisms in most countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional culture test (CCT) is the most commonly used and golden standard identification method of pathogenic microorganisms in most countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established clinical practice knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "7ab2e376-2fbd-4d1b-9bdb-26e898224cfc",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C5",
+      "claim": "CCT has long time-consuming (2\u20135 days) and low sensitivity (30\u201350%) limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it showed two critical limitations: long time-consuming (2\u20135 days) and low sensitivity (30\u201350%), which limited the application of this method in the ICU (Abd El-Aziz et al., 2021; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abd El-Aziz et al., 2021 and Zhou et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "ed2ba487-c8e8-4eb4-82e5-812fcdf5ebc5",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C6",
+      "claim": "NGS technology needs at least 2 days for the full diagnostic report with high cost.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the whole process still needs at least 2 days for the full diagnostic report with high cost (Chen et al., 2020; Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chen et al., 2020 and Wang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "0a248e4d-8bf8-445d-b8b7-c349a6b0d10f",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C7",
+      "claim": "NGS provides too much information about microorganisms but only semi-quantification of pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, NGS provided too much information about microorganisms but only semi-quantification of pathogens, which was hard for most clinical doctors to extract the most important information to determine antibiotic usage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about NGS limitations in clinical practice",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "bc4b2055-b1c0-414e-8670-558958c43b3a",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C8",
+      "claim": "Detection techniques designed by BioFire and Curetis are superior in detection time but have potential false-positive results due to their principle based on nucleotide diversity of conserved genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Other new emerging detection techniques designed by BioFire and Curetis are much superior in detection time than these above. However, its original principle was based on nucleotide diversity of conserved genes among species, which could not satisfy the application in the ICU due to potential false-positive results (Edin et al., 2020; Jamal et al., 2014; Trotter et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Edin et al., 2020; Jamal et al., 2014; Trotter et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "d0ffa78f-620f-44d4-944d-17f8af81549e",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C9",
+      "claim": "A total of 1791 high-quality genomes of 232 microorganism species from public databases were included in the screening process.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1791 high-quality genomes of 232 microorganism species from the public databases were included in the screening process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the data used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "b1acdb11-b5bd-4ae2-aaf9-961a8d57febe",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C10",
+      "claim": "The developed linear comparison algorithm could save more than 90% of calculation time cost.",
+      "claim_type": "EXPLICIT",
+      "source": "To accelerate the screening process, we developed a linear comparison algorithm instead of comparing every two genomes, which could save more than 90% of calculation time cost (Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data and reference to Appendix 1\u2014figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "1940c9b9-2cae-47c4-9520-1871dbd66e4d",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C11",
+      "claim": "10 species of bacteria covered 76% sepsis pathogenic bacteria according to epidemiological data.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the epidemiological data by previous retrospective study (Zhou et al., 2014) and 2017 data in ICU of Nanjing Drum Tower Hospital (Appendix 1\u2014figure 2), 10 species of bacteria covered 76% sepsis pathogenic bacteria and therefore were selected as targets for subsequent detecting process",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Zhou et al., 2014 and reference to Appendix 1\u2014figure 2",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "ff383a87-3483-4c27-8bcb-b91f4315d973",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C12",
+      "claim": "The 10 selected bacteria species include Acinetobacter baumannii, Escherichia coli, Klebsiella pneumoniae, Pseudomonas aeruginosa, Stenotrophomonas maltophilia, Staphylococcus aureus, Staphylococcus epidermidis, Staphylococcus capitis, Enterococcus faecalis and Enterococcus faecium.",
+      "claim_type": "EXPLICIT",
+      "source": "including Acinetobacter baumannii (A. baumannii), Escherichia coli (E. coli), Klebsiella pneumoniae (K. pneumoniae), Pseudomonas aeruginosa (P. aeruginosa), Stenotrophomonas maltophilia (S. maltophilia), Staphylococcus aureus (S. aureus), Staphylococcus epidermidis (S. epidermidis), Staphylococcus capitis (S. capitis), Enterococcus faecalis (E. faecalis) and Enterococcus faecium (E. faecium).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the selected bacteria panel",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "fc339191-e0bd-419b-ae03-85cc87ad862c",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C13",
+      "claim": "Bacteria-specific DNA sequences showed a random distribution and turned out to be only 0.3\u20134.1% in the whole genomes of 10 bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, bacteria-specific DNA sequences showed a random distribution and turned out to be only 0.3\u20134.1% in the whole genomes of 10 bacteria (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "4d26916b-3a43-418a-bc2d-7ce34ceb6a84",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C14",
+      "claim": "The lowest detection limit of SSBD was 10\u201315 M with PCR amplification and 10\u20138M without amplification step.",
+      "claim_type": "EXPLICIT",
+      "source": "With the gradient concentration of DNA templates, we confirmed that the lowest detection limit was 10\u201315 M with PCR amplification and 10\u20138M without amplification step (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "4290b541-5e14-4fd4-a04b-20538e8d4331",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C15",
+      "claim": "30 min incubation of CRISPR/Cas12a with PCR products was enough to demonstrate signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 30 min' incubation of CRISPR/Cas12a with PCR products was enough to demonstrate signals (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "5ac87da9-22a7-48cc-9ddb-2167a2aacf9c",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C16",
+      "claim": "An additional purification step right after PCR amplification appeared unnecessary to acquire the positive result but helpful for weaker signal.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional purification step right after PCR amplification appeared unnecessary to acquire the positive result but helpful for weaker signal (Appendix 1\u2014figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Appendix 1\u2014figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "a2c72456-2195-4762-b75c-a39bfb887837",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C17",
+      "claim": "Fluorescence value showed a significant difference from 5 min and reached its maximum after 30 min compared to the negative control.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the comparison of CRISPR/Cas incubation duration confirmed that fluorescence value showed a significant difference from 5 min and reached its maximum after 30 min compared to the negative control (Appendix 1\u2014figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Appendix 1\u2014figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "75bb6fed-1df4-4b83-8702-46fb8c5123b2",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C18",
+      "claim": "Each bacteria strain tested by 10 SSBD test panels showed positive results only for the SSBD targeting the tested bacteria, confirming high specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "To further confirm the specificity of SSBD, each bacteria strain was tested by 10 SSBD test panels targeting different bacteria. Compared to negative control, only SSBD targeting the tested bacteria showed a positive result, which confirmed its high specificity (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "f05f5fed-46cd-4990-9d9b-6757571a63a6",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C19",
+      "claim": "In validation stage I, 77 samples of BALF were tested by both SSBD and CCT.",
+      "claim_type": "EXPLICIT",
+      "source": "We started our study with validation stage I, which was a non-intervention study with 77 samples of BALF extracted from patients. Samples were detected both by SSBD and CCT, and the results were compared (raw detection results were shown in Appendix 1\u2014table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the study design and sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "e2f13473-cfd5-4e71-ae12-6e90e2c322b8",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C20",
+      "claim": "SSBD could detect five bacteria (A. baumannii, K. pneumoniae, P. aeruginosa, S. aureus, and S. maltophilia) separately with 100% sensitivity and over 87% specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, 5 of 10 selected bacteria were detected by both tests, including A. baumannii, K. pneumoniae, P. aeruginosa, S. aureus, and S. maltophilia. SSBD could detect those five bacteria separately with 100% sensitivity and over 87% specificity, which were calculated by the results of CCT as golden standard (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4A comparing SSBD to CCT as gold standard",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "d002b39f-056d-4c73-9341-b4dbdf922d3d",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C21",
+      "claim": "SSBD was highly consistent with NGS results.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all samples, 11 of them were determined by patients to acquire results with NGS, which provided extra information to evaluate the results (Appendix 1\u2014table 4). Based on the results, SSBD was highly consistent with NGS, which implied that SSBD might provide more accurate and complete pathogenic information than CCT in the selected panel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of SSBD and NGS results for 11 samples",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "11996737-26ae-4e2c-b2c2-8c56b7230750",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C22",
+      "claim": "22 patients were recruited into the experiment group and 24 patients into the control group in validation stage II.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the study was paused due to the outbreak of SARS-CoV2, 22 patients were recruited into the experiment group and 24 patients into the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about patient recruitment numbers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "98a34c3a-7a7f-4079-a5c7-39db8d9a1e10",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C23",
+      "claim": "The baseline characteristics had no significant difference except ages between the two groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The baseline characteristics had no significant difference except ages (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "c6b28f02-e36a-475b-9969-7fb5051ff40a",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C24",
+      "claim": "In the experiment group, 47 samples were positive among 57 samples tested by SSBD, while 28 samples were positive among 43 samples tested by CCT.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiment group, 47 samples were positive among 57 samples tested by SSBD, while 28 samples were positive among 43 samples tested by CCT (raw detection results were shown in Appendix 1\u2014table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of detection results with reference to raw data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "0947bc8b-150a-4f76-bbed-71289a000380",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C25",
+      "claim": "In the control group, 41 samples showed positive among 63 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In the control group, 41 samples showed positive among 63 samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of detection results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "e2454619-659e-4cb7-b4cc-c80da25b006d",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C26",
+      "claim": "SSBD could detect each bacterium with similar high sensitivity and specificity in validation stage II.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that SSBD could detect each bacterium with similar high sensitivity and specificity in validation stage II (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "b93bf252-ab6a-4210-a16f-4c97ef57f97e",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C27",
+      "claim": "A. baumannii was the most frequent occurrence according to local epidemic data.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the local epidemic data, the most frequent occurrence was A. baumannii (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4B and consistency with local epidemic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "17396610-118a-479c-9690-a5474f0978ee",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C28",
+      "claim": "Effective antibiotic coverage rates for each test were significantly higher in the experimental group than those in the control group in three tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Effective antibiotic coverage rates for each test were significantly higher in the experimental group than those in the control group in three tests (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "1cd28f12-94d8-4797-921b-e28275374cf0",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C29",
+      "claim": "APACHE II scores were significantly lower in the experimental group than those in the control group after day 1 (p=0.0035, two-way ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "APACHE II scores were significantly lower in the experimental group than those in the control group after day 1 (p=0.0035, two-way ANOVA); the separation between two groups of patients increased progressively until day 14 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis (two-way ANOVA) of data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "5737cdc5-d081-494e-9470-a00e3d5f0910",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C30",
+      "claim": "SOFA scores showed no difference between the groups (p=0.8918, two-way ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "SOFA scores showed no difference between the groups (p=0.8918, two-way ANOVA) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis (two-way ANOVA) of data shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "3fa28c66-a2cf-49d2-8a9d-9a82b751b110",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C31",
+      "claim": "The detection rate of polymicrobial infection events by SSBD was 41.8% (55/134) in two validation stages.",
+      "claim_type": "EXPLICIT",
+      "source": "From the results, the detection rate of polymicrobial infection events by SSBD was 41.8% (55/134) in two validation stages, which was significantly higher than 11.7% (14/120) of CCT (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "6409f6ee-c63d-4851-8b3d-dde7e8539037",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C32",
+      "claim": "The detection rate of polymicrobial infection events by CCT was 11.7% (14/120).",
+      "claim_type": "EXPLICIT",
+      "source": "From the results, the detection rate of polymicrobial infection events by SSBD was 41.8% (55/134) in two validation stages, which was significantly higher than 11.7% (14/120) of CCT (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "8a243aba-cb1a-4ef3-b43f-f273dd26b32d",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C33",
+      "claim": "Polymicrobial infection events demonstrated high consistency between SSBD and NGS.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymicrobial infection events were compared among SSBD, CCT and NGS, which demonstrated high consistency of SSBD and NGS (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "8815e121-1f3f-4ac6-be10-998a3a901346",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C34",
+      "claim": "Both SSBD and CCT demonstrated similar results with A. baumannii, S. maltophilia, P. aeruginosa, K. pneumoniae and S. aureus in top 5 pathogens participating in polymicrobial infection events.",
+      "claim_type": "EXPLICIT",
+      "source": "From the aspect of pathogen species participated in polymicrobial infection events, both methods demonstrated similar results with A. baumannii, S. maltophilia, P. aeruginosa, K. pneumoniae and S. aureus in top 5 (Figure 5D), which were consistent with the frequency of pathogens in ICU (De Pascale et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5D and citation to De Pascale et al., 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "b3449292-8d6d-413f-a847-50683df65529",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C35",
+      "claim": "47.6% (10/21) of patients had nosocomial infections at test 2 according to SSBD results.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the results of SSBD, 47.6% (10/21) of patients had nosocomial infections at the test 2, and 28.6% (4/14) of patients had nosocomial infections at the test 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from SSBD results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "c523ab0d-179d-4741-b1c4-ab1ee4e6fc6f",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C36",
+      "claim": "28.6% (4/14) of patients had nosocomial infections at test 3 according to SSBD results.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the results of SSBD, 47.6% (10/21) of patients had nosocomial infections at the test 2, and 28.6% (4/14) of patients had nosocomial infections at the test 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from SSBD results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "5c0c7527-0e93-4885-81d9-a2231f1ddcc5",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C37",
+      "claim": "40% (4/10) of patients were identified as nosocomial infections by CCT at test 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 40% (4/10) of patients were identified as nosocomial infections by CCT at test 2, and 27.3% (3/11) of patients were identified as nosocomial infections at test 3 (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "3db8dd67-462f-4fc1-bb69-c998240f0093",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C38",
+      "claim": "27.3% (3/11) of patients were identified as nosocomial infections by CCT at test 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 40% (4/10) of patients were identified as nosocomial infections by CCT at test 2, and 27.3% (3/11) of patients were identified as nosocomial infections at test 3 (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "ffa2a027-e484-4867-a3c1-96a6c09dd570",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C39",
+      "claim": "Two typical strains PAO1 and PAO7 of P. aeruginosa demonstrate less than 94% nucleotide identity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, two typical strains PAO1 and PAO7 of P. aeruginosa (NCBI representative genome database) demonstrate less than 94% nucleotide identity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from NCBI representative genome database",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "6f68b936-459f-4fa7-9927-6fbde5a047e8",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C40",
+      "claim": "E. coli and Shigella sonnei representative genomes share more than 98% nucleotide identity.",
+      "claim_type": "EXPLICIT",
+      "source": "while E. coli and Shigella sonnei both belong to Enterobateriaceae and their representative genomes share more than 98% nucleotide identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on genome comparison data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "0e04d64f-3fd1-4471-a2f0-d96d123099fa",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C41",
+      "claim": "Patients in the experiment group had quicker directed therapy adjustment (10.2\u00b18.8 hours) compared to control group (96.0\u00b135.1 hr, p<0.0001, Mann-Whitney test).",
+      "claim_type": "EXPLICIT",
+      "source": "When evaluating the clinical benefit from SSBD, the quicker directed therapy adjustment for patients in the experiment group (Exp: 10.2\u00b18.8 hours vs. Con: 96.0\u00b135.1 hr, p<0.0001, Mann-Whitney test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis (Mann-Whitney test) of clinical data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "b029f1a8-7cb3-4e39-be6c-ed087c6a289d",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C42",
+      "claim": "CCT has defects in the evaluation of polymicrobial infection events due to the limitations of its technology.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the previous studies, CCT had defects in the evaluation of polymicrobial infection events due to the limitations of its technology (Azevedo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Azevedo et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "6570a391-9607-4b21-9974-9cebe81c84f9",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C43",
+      "claim": "Hospital infections are an important factor in the incidence rate and mortality of ICU patients with severe pneumonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Hospital infections, also known as nosocomial infections, are an important factor in the incidence rate and mortality of ICU patients with severe pneumonia (Zaragoza et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zaragoza et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "62bac34d-6b44-4f53-bd40-145186e7773b",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C44",
+      "claim": "Polymicrobial pneumonia is related to an increased risk of inappropriate antimicrobial treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that polymicrobial pneumonia is related to an increased risk of inappropriate antimicrobial treatment (Karner et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Karner et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "cf3c036c-7fe4-4205-a96a-e1ab44a1be1f",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C45",
+      "claim": "Bacteria are quite similar between close-related species but sometimes quite different among different strains of one species due to fast evolution and horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria were quite similar between close-related species but sometimes quite different among different strains of one species due to fast evolution and horizontal gene transfer (Dombrowski et al., 2020; Brito, 2021; Groussin et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dombrowski et al., 2020; Brito, 2021; Groussin et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "d9cc81a7-f50e-4d96-a74b-fd374813efed",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C46",
+      "claim": "The lowest detection limit of 10\u201315 M with PCR amplification was consistent with previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "With the gradient concentration of DNA templates, we confirmed that the lowest detection limit was 10\u201315 M with PCR amplification and 10\u20138M without amplification step (Figure 3B), which was consistent with previous studies (Gootenberg et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data and citation to Gootenberg et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "06a63030-f02d-4fdb-96e0-3970f4d79db6",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C47",
+      "claim": "SSBD can complete the detection process in 4 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "In the validation stage I, 77 BALF samples were tested, and SSBD could identify designated organisms in 4 hr with almost 100% sensitivity and over 87% specific rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about detection time in validation stage I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "ffdcfb88-4fa7-4a29-8d59-96c70e372a97",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C48",
+      "claim": "SSBD results were obtained in 4 hr in validation stage II, leading to better APACHE II scores (p=0.0035, ANOVA test).",
+      "claim_type": "EXPLICIT",
+      "source": "In validation stage II, the SSBD results were obtained in 4 hr, leading to better APACHE II scores (p=0.0035, ANOVA test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis (ANOVA test) of clinical outcome data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "aac36914-deb6-4a61-94d2-bb555a8002ed",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C49",
+      "claim": "Cultivation results could deviate from the real pathogenic situation with polymicrobial infections based on SSBD results.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the results acquired by SSBD, cultivation results could deviate from the real pathogenic situation with polymicrobial infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from comparing SSBD and cultivation results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "7cbf9e04-7c89-492d-a17d-20742d7ca6cf",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C50",
+      "claim": "Nosocomial infections were found widely in ICU.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, nosocomial infections were found widely in ICU, which should deserve more attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from the study showing nosocomial infection rates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "cd86e299-425f-4e4b-acbc-d9dfa70df1ac",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C51",
+      "claim": "SSBD was confirmed to be a powerful tool for severe pneumonia diagnosis in ICU with high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "SSBD was confirmed to be a powerful tool for severe pneumonia diagnosis in ICU with high accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on overall results from validation stages I and II",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "32475d7e-9ec2-4b8f-a460-8b68f3c05077",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C52",
+      "claim": "The study was funded by National Natural Science Foundation of China with project number 81927808.",
+      "claim_type": "EXPLICIT",
+      "source": "Funding:National Natural Science Foundation of China. The National Key Scientific Instrument and Equipment Development Project. Project number: 81927808.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about funding source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "f7049b69-b8f5-4b9f-9d68-b143422a2ea5",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C53",
+      "claim": "The study was registered at https://clinicaltrials.gov/ (NCT04178382).",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical trial number:This study was registered at https://clinicaltrials.gov/ (NCT04178382).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about clinical trial registration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "82ec4bf9-8f82-4996-b412-49430c763794",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C54",
+      "claim": "Patients admitted to ICUs and diagnosed with severe pneumonia were recruited from Aug 27, 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients admitted to ICUs and diagnosed with severe pneumonia were recruited from Aug 27, 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about patient recruitment start date",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "f01f122f-aef0-4afb-ab28-179509adb87c",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C55",
+      "claim": "A sample size of 73 patients in each group was needed according to sample size calculation.",
+      "claim_type": "EXPLICIT",
+      "source": "According to previous mortality acquired from the adequate anti-infective group, the sample size calculation (two-group rate) for patients was done, and a sample size of 73 patients in each group was needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical sample size calculation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "fd682604-3d9a-4f04-ac4f-01220cdac1d4",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C56",
+      "claim": "BALFs were obtained from all patients on day 1, day 3\u20135, and day 7\u201310 after recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "BALFs were obtained from all the patients from 2 groups on day 1, day 3\u20135, and day 7\u201310 after recruitment and were sent directly to the hospital diagnostic microbiology laboratory for CCT and susceptibility testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about sample collection schedule",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "6efac615-7561-4d69-97ae-416ab1684cbd",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C57",
+      "claim": "CCT results were obtained in strict accordance with international ERS/ESICM/ESCMID/ALAT guidelines for the management of hospital-acquired pneumonia and ventilator-associated pneumonia.",
+      "claim_type": "EXPLICIT",
+      "source": "CCT results were obtained in strict accordance with international ERS/ESICM/ESCMID/ALAT guidelines for the management of hospital-acquired pneumonia and ventilator-associated pneumonia, which is currently the guideline for clinical gold standard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about adherence to clinical guidelines",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "301841f9-bd98-4059-8e5b-75d2fb407d94",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C58",
+      "claim": "SSBD provided a lower threshold of detection (10\u201315 M) than CCT.",
+      "claim_type": "EXPLICIT",
+      "source": "SSBD provided a lower threshold of detection (10\u201315 M) than CCT, which could detect pathogens that even existed in trace amounts which unable to be cultivated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of detection limits between SSBD and CCT",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "1dc70140-20a8-4842-95ca-7315b4bbcb38",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C59",
+      "claim": "The fluorescence intensity obtained from SSBD was divided into three intervals representing different strengths of bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, the fluorescence intensity obtained from SSBD was divided into three intervals (level I: 10\u201315-10\u201314 M, level II: 10\u201314 M-10\u201313 M, level III: over 10\u201313 M), representing the different strengths of bacteria (roughly equivalent to bacteria amounts according to our lowest detection thresholds, dividing details in SSBD diagnostic report of Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the classification system used in SSBD",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "2131c799-07bb-4790-a12d-2b53f8c1217c",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C60",
+      "claim": "A. baumannii was found to be the most competitive bacteria in cultivation, which may be due to its fastest growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, A. baumannii was found to be the most competitive bacteria in cultivation, which may be due to its fastest growth rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from cultivation results and bacterial growth characteristics",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "79faba77-0e1d-49ce-931a-6a9495f7cf11",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C61",
+      "claim": "P. aeruginosa seemed to be relatively the weakest one in cultivation, usually concealed with other species existing.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, P. aeruginosa seemed to be relatively the weakest one among them, which was usually concealed in the cultivation with other species existing (sample A16, B19-3, B21-1, B21-2 after we excluded all samples with A. baumannii existing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from cultivation results of specific samples",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "46dc4c30-980c-489d-bbb5-e26597a88a05",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C62",
+      "claim": "Patients in experiment groups demonstrated significant better measures of temperature improvement at day 3 and WBC improvement at day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "As showed in Appendix 1\u2014table 8, patients in experiment groups for example demonstrated significant better measures of temperature improvement at day 3, WBC improvement at day 7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Appendix 1\u2014table 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "16276c81-7fb9-4a34-9c7b-7dc32bdbe70b",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C63",
+      "claim": "At the endpoint, clinical outcomes showed no differences between the two groups, which may be due to insufficient patient numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, at the endpoint, clinical outcomes showed no differences between the two groups, which may due to the insufficient patient numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on clinical outcome data and speculation about sample size",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "0650a56d-1aa0-42c1-b44e-e2d0e718eb74",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C64",
+      "claim": "Multi-drug resistant organisms (MDROs) prevailed in ICU.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-drug resistant organisms (MDROs) prevailed in ICU (Liu et al., 2020; Yang et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liu et al., 2020 and Yang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "928d1f78-049c-4892-bd9c-237365d2a086",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C65",
+      "claim": "SSBD provided more timely information for clinical control and response compared to CCT for nosocomial infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Although SSBD identified similar ratio of nosocomial infection events with CCT (Figure 5G), SSBD provided more timely information for clinical control and response, which might improve the clinical medication decision in ICU.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from comparison of detection times between SSBD and CCT",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "848f69ea-268b-48ac-a27a-83e6c0ceef4a",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C66",
+      "claim": "SSBD is associated with more rapid administration of appropriate antimicrobial therapy in the experiment cases.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, SSBD performed well with high sensitivity and specificity in rapid pathogens identification, and it possessed shorter turnover time, which was associated with more rapid administration of appropriate antimicrobial therapy in the experiment cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on clinical data showing faster therapy adjustment times",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "36bfd688-73ce-4566-85c6-a1999f7f6e2f",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C67",
+      "claim": "SSBD has enormous potential in expanding pathogens from different diseases with much more pathogen genomes included.",
+      "claim_type": "EXPLICIT",
+      "source": "SSBD also has enormous potential in expanding pathogens from different diseases with much more pathogen genomes included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "dac94b0c-2589-4205-8788-13c187ec5cb7",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C68",
+      "claim": "The study was paused due to the outbreak of SARS-CoV2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the study was paused due to the outbreak of SARS-CoV2, 22 patients were recruited into the experiment group and 24 patients into the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about study interruption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "918578d6-6d87-4c62-ae62-a5e279aa6ac6",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C69",
+      "claim": "DNA amplified sequences from S. aureus and S. epidermidis used by FilmArray Pneumonia Panel had highly similar DNA sequences in the S. epidermidis representative genome.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, sequences used by FilmArray Pneumonia Panel from two gene regions had highly similar DNA sequences in the S. epidermidis representative genome (E-value=5e-40, rpoB; E-value=8e-39, gyrB), which could interfere with pathogen identification between species from the same genus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence alignment data showing E-values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "bd2000d7-87a2-4cd5-931a-9904ff06f310",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C70",
+      "claim": "Sequences used for S. aureus diagnosis by SSBD had no similar fragments in S. epidermidis.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that our sequences used for S. aureus diagnosis had no similar fragments in S. epidermidis, which avoided distinguishing different species by gene diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence alignment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "5cb1cb44-de6d-421a-87fe-0d8197b558cc",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C71",
+      "claim": "SSBD can quantify bacterial load based on fluorescence intensity for better antibiotic therapy strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our SSBD method seemed more advantageous in time-consuming and information effectiveness than other mentioned methods, especially when we could quantify bacterial load based on fluorescence intensity for better antibiotic therapy strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the fluorescence intensity measurement capability of SSBD",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "cc3e4289-943e-4bb3-b1df-dfa1d37c7e90",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C72",
+      "claim": "CRISPR/Cas12a shows robustness and lower equipment requirement compared to qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR/Cas12a and qPCR are both quantitative methods, but CRISPR/Cas12a shows its robustness and lower equipment requirement, which satisfied our needs for most of the ICU.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of technical requirements between methods",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "ed4990e0-d43f-41c6-99d0-e0ac03136a5e",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C73",
+      "claim": "S. maltophilia was detected as level II in test1 with SSBD but not CCT in patient B19.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we showed patient B19 as an example, who received three times tests at days 1, 3, and 7 by both CCT and SSBD. Based on the results, S. maltophilia was detected as level II in test1 with SSBD but not CCT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on specific patient case data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "fb969a56-2936-4919-94e6-b2bdbf332a94",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C74",
+      "claim": "S. maltophilia was detected by CCT in test2 in patient B19 after development from level II to level III based on SSBD results.",
+      "claim_type": "EXPLICIT",
+      "source": "Later on, S. maltophilia was detected by CCT in test2 as well with few days' development from level II to level III based on result of SSBD, which means SSBD discovered the true polymicrobial infection event earlier than CCT (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on specific patient case data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "b4fbf17e-57ad-4e80-8e11-7beb4fe495d6",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C75",
+      "claim": "SSBD discovered the true polymicrobial infection event earlier than CCT in patient B19.",
+      "claim_type": "EXPLICIT",
+      "source": "Later on, S. maltophilia was detected by CCT in test2 as well with few days' development from level II to level III based on result of SSBD, which means SSBD discovered the true polymicrobial infection event earlier than CCT (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from temporal comparison of detection results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "2465811c-0d77-4030-a1cb-925acbbf27c4",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C76",
+      "claim": "Appropriate antibiotic treatment guided by in-time pathogenic information would alleviate acute physiological illness.",
+      "claim_type": "EXPLICIT",
+      "source": "It implied that appropriate antibiotic treatment guided by in-time pathogenic information would alleviate acute physiological illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from clinical outcome data showing improved APACHE II scores",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "64a7c47e-1f9c-4af3-b38c-52e9527dbdd2",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C77",
+      "claim": "The 10 designed pathogens were originated from sepsis, which might not completely overlap with pathogens of severe pneumonia.",
+      "claim_type": "EXPLICIT",
+      "source": "The 10 designed pathogens were originated from sepsis, which might not completely overlap with pathogens of severe pneumonia, though pneumonia is one of the most common causes of sepsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential limitation of pathogen panel selection",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "ecc6a786-3912-4ce9-9da8-3a63e3f91529",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C78",
+      "claim": "Other potential pathogenic microbes, such as viruses and fungus, might affect the clinical outcomes considering the complexity of ICU patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Other potential pathogenic microbes, such as viruses and fungus, might affect the clinical outcomes considering the complexity of ICU patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential confounding factors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "7de8706e-3fcb-44ba-90cb-b5561dfc505f",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C79",
+      "claim": "Resistance genes were not included in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the size in our intervention stage, there were still some aspects that have not been considered. (1) Resistance genes were not included in the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about study limitation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "62a21c6c-3fce-4a72-b3cc-b88f18ba4ee9",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "claim_id": "C80",
+      "claim": "The panel pathogens could be optimized flexibly for meeting diverse clinical needs in the ICU.",
+      "claim_type": "EXPLICIT",
+      "source": "The panel pathogens could be optimized flexibly for meeting diverse clinical needs in the ICU.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about future adaptability",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "529ea630-6db4-411a-ab83-3a64a0c62b31",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a bioinformatics workflow to identify species-specific DNA tags from 1791 genomes of 232 microorganism species, selecting 10 bacterial species that cover 76% of sepsis pathogens. Species-specific sequences comprised only 0.3-4.1% of bacterial genomes and showed random distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 describe the computational discovery stage with clear data sources (NCBI genomes), sample sizes (1791 genomes, 232 species), and results (10 bacteria covering 76%, species-specific sequences 0.3-4.1%). The algorithm development (C10) and epidemiological justification (C11) are supported by cited data and figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "36f89cc3-9aff-4fe2-bd0e-ff9c033d652b",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The SSBD assay was optimized to achieve a detection limit of 10^-15 M with PCR amplification, requiring 30 minutes of CRISPR/Cas12a incubation. Specificity testing showed each bacterial strain produced positive results only with its cognate SSBD panel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 describe systematic optimization experiments with clear quantitative results shown in Figure 3B and Appendix figures. The detection limit (C14, C46) is consistent with prior CRISPR/Cas12a studies (Gootenberg et al., 2018), and specificity testing (C18) demonstrates appropriate controls with statistical significance indicated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "e55c0ad3-2f46-4427-8394-976ef39eb491",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In validation stage I with 77 BALF samples, SSBD detected five bacteria with 100% sensitivity and >87% specificity compared to CCT as gold standard. SSBD showed high consistency with NGS results in 11 samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 present validation data with appropriate sample size (n=77), clear performance metrics shown in Figure 4A, and orthogonal validation with NGS. However, using CCT as 'gold standard' is problematic given its known limitations (C5), and the NGS comparison is limited to only 11 samples, which weakens the validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "33852292-3abf-4110-898b-56cae13ca862",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Validation stage II enrolled 22 experimental and 24 control patients (target: 73 per group) before being paused due to COVID-19. Baseline characteristics were similar except age, and SSBD maintained high sensitivity and specificity in detecting bacteria from clinical samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C22-C27 describe the clinical trial with clear enrollment numbers and baseline data (Table 1). However, the study was severely underpowered (46 vs. 146 planned patients, C55, C68), and the significant age difference between groups (C23) is a potential confounder. The performance metrics (C26) lack the statistical rigor of stage I validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "cb38a170-49c4-471b-ad7b-ea382af47030",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SSBD-guided therapy resulted in significantly higher antibiotic coverage rates, faster therapy adjustment (10.2\u00b18.8 vs. 96.0\u00b135.1 hours, p<0.0001), and improved APACHE II scores (p=0.0035) compared to CCT-guided therapy. Early clinical improvements were observed in temperature and WBC counts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28-C29, C41, C48 report statistically significant clinical benefits with appropriate tests (two-way ANOVA, Mann-Whitney). However, the study was severely underpowered (46 vs. 146 patients), baseline age differences exist (C23), and the authors acknowledge no difference in endpoint outcomes (C63). The improved APACHE II but not SOFA scores (C30) is inconsistent and unexplained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "ef0237b2-f70f-4eda-8c5f-974d4afc520b",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SOFA scores showed no difference between experimental and control groups (p=0.8918), and endpoint clinical outcomes showed no differences, which authors attribute to insufficient patient numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C63 honestly report negative findings with appropriate statistical testing. The authors' interpretation that insufficient sample size explains the lack of difference (C63) is reasonable given the study enrolled only 46 of 146 planned patients (C22, C55), though this fundamentally undermines the clinical significance claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "f1a75090-dcf0-4e11-a619-c2389cf4597b",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SSBD detected polymicrobial infections in 41.8% of samples compared to 11.7% by CCT, showing high consistency with NGS. Case studies demonstrated SSBD detected polymicrobial infections earlier than CCT, with similar pathogen species distributions between methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 present clear quantitative differences in polymicrobial detection rates with supporting data (Figure 5A-D). The case study (C73-C75) provides temporal evidence for earlier detection. However, the interpretation that CCT 'missed' infections (C49) assumes SSBD is correct, which is circular reasoning when CCT is the stated gold standard (C20, C57).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "0b1b0ae2-5809-4281-b5c8-d495ab8603a8",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Nosocomial infections were detected in 47.6% of patients at test 2 and 28.6% at test 3 by SSBD, with similar rates by CCT (40% and 27.3%). SSBD provided more timely information for clinical response despite similar detection rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 report nosocomial infection rates with clear denominators and similar findings between methods. The claim that SSBD provides 'more timely information' (C65) is supported by the 4-hour turnaround time (C47) vs. 2-5 days for CCT (C5), though the clinical impact of this timing advantage is not demonstrated given similar detection rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "636dab34-33bc-4e44-a39e-885ea50927f4",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors demonstrate that bacterial species can show high intraspecies variation (P. aeruginosa strains <94% identity) and high interspecies similarity (E. coli and S. sonnei >98% identity). SSBD's species-specific sequences avoid cross-reactivity issues present in FilmArray Pneumonia Panel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40, C45 present genome comparison data supporting the rationale for species-specific tag selection. Claims C69-C70 provide specific E-values demonstrating FilmArray's potential cross-reactivity and SSBD's specificity. However, the FilmArray comparison is somewhat unfair as it uses different gene regions (rpoB, gyrB) specifically to distinguish species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "850e4447-2a89-4553-8998-86c2c8f39593",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SSBD's lower detection threshold (10^-15 M) enables detection of bacteria in trace amounts and semi-quantification via fluorescence intensity levels (I-III). Cultivation bias was observed with A. baumannii being most competitive and P. aeruginosa being frequently concealed in polymicrobial samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 describe SSBD's quantification system with clear thresholds. Claims C60-C61 present observations about cultivation bias with specific sample references, though these are post-hoc interpretations rather than prospectively tested hypotheses. The semi-quantitative nature is a strength but the clinical utility of the three-level system is not validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "df0c6ffc-346f-4fd5-946f-7e1d7a5e1224",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SSBD completes detection in 4 hours and can quantify bacterial load via fluorescence intensity. CRISPR/Cas12a offers robustness and lower equipment requirements compared to qPCR. The authors conclude SSBD is a powerful tool for severe pneumonia diagnosis with high accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47 and C71 describe SSBD's capabilities with supporting data. However, C51 is a broad conclusion that overstates the evidence given the underpowered clinical trial, lack of endpoint outcome differences (C63), and circular reasoning about CCT limitations. Claim C72 about CRISPR/Cas12a advantages is asserted without comparative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "b5093795-399f-47ba-8df2-465767c6aa88",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors establish clinical context citing that sepsis has high mortality (C1), timely antibiotics reduce mortality (C2-C3), and existing methods have limitations: CCT is slow (2-5 days) with low sensitivity (30-50%), NGS requires 2+ days, and BioFire/Curetis methods have false-positive issues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide literature-based background with appropriate citations. The characterization of existing methods' limitations is well-supported, though the criticism of BioFire/Curetis (C8) is somewhat overstated as these are FDA-cleared devices with established performance characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "4c5024ba-3aa0-42fa-87f3-51c26e65f7bf",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors acknowledge study limitations including: resistance genes not included, pathogen panel derived from sepsis not pneumonia specifically, other microbes (viruses, fungi) not covered, and MDROs prevalent in ICU. They suggest the panel could be optimized for different clinical needs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C64, C77-C80 honestly acknowledge important limitations. The lack of resistance gene detection (C79) is a critical gap for ICU applications where MDROs are prevalent (C64). Claims C77-C78 about panel limitations and confounding factors are appropriate caveats. Claim C80 about future optimization is speculative but reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "7cd88c12-b987-4706-827f-51b182b92fac",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study was funded by National Natural Science Foundation of China (81927808), registered at ClinicalTrials.gov (NCT04178382), recruited patients from August 2019, and followed standardized protocols for sample collection and CCT testing per international guidelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54, C56-C57 provide administrative and methodological details that are verifiable and appropriate. The clinical trial registration (C53) and adherence to international guidelines (C57) support methodological rigor, though the study's early termination limits the value of these preparations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    },
+    {
+      "id": "ad022c9d-d9e5-4ba3-afcc-2a9567189f92",
+      "content_id": "b7070229-172b-457f-825e-34e8b4dc1a95",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors claim SSBD has enormous potential for expanding to detect pathogens from different diseases with more pathogen genomes included.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is purely speculative about future applications. While the computational approach could theoretically be extended to other pathogens, no data support this claim. The current study's limitations (underpowered trial, no endpoint benefit) do not provide a strong foundation for such expansive claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:16:34.807014Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d0ffa78f-620f-44d4-944d-17f8af81549e",
+      "result_id": "529ea630-6db4-411a-ab83-3a64a0c62b31"
+    },
+    {
+      "claim_id": "b1acdb11-b5bd-4ae2-aaf9-961a8d57febe",
+      "result_id": "529ea630-6db4-411a-ab83-3a64a0c62b31"
+    },
+    {
+      "claim_id": "1940c9b9-2cae-47c4-9520-1871dbd66e4d",
+      "result_id": "529ea630-6db4-411a-ab83-3a64a0c62b31"
+    },
+    {
+      "claim_id": "ff383a87-3483-4c27-8bcb-b91f4315d973",
+      "result_id": "529ea630-6db4-411a-ab83-3a64a0c62b31"
+    },
+    {
+      "claim_id": "fc339191-e0bd-419b-ae03-85cc87ad862c",
+      "result_id": "529ea630-6db4-411a-ab83-3a64a0c62b31"
+    },
+    {
+      "claim_id": "4d26916b-3a43-418a-bc2d-7ce34ceb6a84",
+      "result_id": "36f89cc3-9aff-4fe2-bd0e-ff9c033d652b"
+    },
+    {
+      "claim_id": "4290b541-5e14-4fd4-a04b-20538e8d4331",
+      "result_id": "36f89cc3-9aff-4fe2-bd0e-ff9c033d652b"
+    },
+    {
+      "claim_id": "5ac87da9-22a7-48cc-9ddb-2167a2aacf9c",
+      "result_id": "36f89cc3-9aff-4fe2-bd0e-ff9c033d652b"
+    },
+    {
+      "claim_id": "a2c72456-2195-4762-b75c-a39bfb887837",
+      "result_id": "36f89cc3-9aff-4fe2-bd0e-ff9c033d652b"
+    },
+    {
+      "claim_id": "75bb6fed-1df4-4b83-8702-46fb8c5123b2",
+      "result_id": "36f89cc3-9aff-4fe2-bd0e-ff9c033d652b"
+    },
+    {
+      "claim_id": "d9cc81a7-f50e-4d96-a74b-fd374813efed",
+      "result_id": "36f89cc3-9aff-4fe2-bd0e-ff9c033d652b"
+    },
+    {
+      "claim_id": "f05f5fed-46cd-4990-9d9b-6757571a63a6",
+      "result_id": "e55c0ad3-2f46-4427-8394-976ef39eb491"
+    },
+    {
+      "claim_id": "e2f13473-cfd5-4e71-ae12-6e90e2c322b8",
+      "result_id": "e55c0ad3-2f46-4427-8394-976ef39eb491"
+    },
+    {
+      "claim_id": "d002b39f-056d-4c73-9341-b4dbdf922d3d",
+      "result_id": "e55c0ad3-2f46-4427-8394-976ef39eb491"
+    },
+    {
+      "claim_id": "11996737-26ae-4e2c-b2c2-8c56b7230750",
+      "result_id": "33852292-3abf-4110-898b-56cae13ca862"
+    },
+    {
+      "claim_id": "98a34c3a-7a7f-4079-a5c7-39db8d9a1e10",
+      "result_id": "33852292-3abf-4110-898b-56cae13ca862"
+    },
+    {
+      "claim_id": "c6b28f02-e36a-475b-9969-7fb5051ff40a",
+      "result_id": "33852292-3abf-4110-898b-56cae13ca862"
+    },
+    {
+      "claim_id": "0947bc8b-150a-4f76-bbed-71289a000380",
+      "result_id": "33852292-3abf-4110-898b-56cae13ca862"
+    },
+    {
+      "claim_id": "e2454619-659e-4cb7-b4cc-c80da25b006d",
+      "result_id": "33852292-3abf-4110-898b-56cae13ca862"
+    },
+    {
+      "claim_id": "b93bf252-ab6a-4210-a16f-4c97ef57f97e",
+      "result_id": "33852292-3abf-4110-898b-56cae13ca862"
+    },
+    {
+      "claim_id": "f01f122f-aef0-4afb-ab28-179509adb87c",
+      "result_id": "33852292-3abf-4110-898b-56cae13ca862"
+    },
+    {
+      "claim_id": "dac94b0c-2589-4205-8788-13c187ec5cb7",
+      "result_id": "33852292-3abf-4110-898b-56cae13ca862"
+    },
+    {
+      "claim_id": "17396610-118a-479c-9690-a5474f0978ee",
+      "result_id": "cb38a170-49c4-471b-ad7b-ea382af47030"
+    },
+    {
+      "claim_id": "1cd28f12-94d8-4797-921b-e28275374cf0",
+      "result_id": "cb38a170-49c4-471b-ad7b-ea382af47030"
+    },
+    {
+      "claim_id": "0e04d64f-3fd1-4471-a2f0-d96d123099fa",
+      "result_id": "cb38a170-49c4-471b-ad7b-ea382af47030"
+    },
+    {
+      "claim_id": "ffdcfb88-4fa7-4a29-8d59-96c70e372a97",
+      "result_id": "cb38a170-49c4-471b-ad7b-ea382af47030"
+    },
+    {
+      "claim_id": "46dc4c30-980c-489d-bbb5-e26597a88a05",
+      "result_id": "cb38a170-49c4-471b-ad7b-ea382af47030"
+    },
+    {
+      "claim_id": "848f69ea-268b-48ac-a27a-83e6c0ceef4a",
+      "result_id": "cb38a170-49c4-471b-ad7b-ea382af47030"
+    },
+    {
+      "claim_id": "2465811c-0d77-4030-a1cb-925acbbf27c4",
+      "result_id": "cb38a170-49c4-471b-ad7b-ea382af47030"
+    },
+    {
+      "claim_id": "5737cdc5-d081-494e-9470-a00e3d5f0910",
+      "result_id": "ef0237b2-f70f-4eda-8c5f-974d4afc520b"
+    },
+    {
+      "claim_id": "16276c81-7fb9-4a34-9c7b-7dc32bdbe70b",
+      "result_id": "ef0237b2-f70f-4eda-8c5f-974d4afc520b"
+    },
+    {
+      "claim_id": "3fa28c66-a2cf-49d2-8a9d-9a82b751b110",
+      "result_id": "f1a75090-dcf0-4e11-a619-c2389cf4597b"
+    },
+    {
+      "claim_id": "6409f6ee-c63d-4851-8b3d-dde7e8539037",
+      "result_id": "f1a75090-dcf0-4e11-a619-c2389cf4597b"
+    },
+    {
+      "claim_id": "8a243aba-cb1a-4ef3-b43f-f273dd26b32d",
+      "result_id": "f1a75090-dcf0-4e11-a619-c2389cf4597b"
+    },
+    {
+      "claim_id": "8815e121-1f3f-4ac6-be10-998a3a901346",
+      "result_id": "f1a75090-dcf0-4e11-a619-c2389cf4597b"
+    },
+    {
+      "claim_id": "b029f1a8-7cb3-4e39-be6c-ed087c6a289d",
+      "result_id": "f1a75090-dcf0-4e11-a619-c2389cf4597b"
+    },
+    {
+      "claim_id": "aac36914-deb6-4a61-94d2-bb555a8002ed",
+      "result_id": "f1a75090-dcf0-4e11-a619-c2389cf4597b"
+    },
+    {
+      "claim_id": "ed4990e0-d43f-41c6-99d0-e0ac03136a5e",
+      "result_id": "f1a75090-dcf0-4e11-a619-c2389cf4597b"
+    },
+    {
+      "claim_id": "fb969a56-2936-4919-94e6-b2bdbf332a94",
+      "result_id": "f1a75090-dcf0-4e11-a619-c2389cf4597b"
+    },
+    {
+      "claim_id": "b4fbf17e-57ad-4e80-8e11-7beb4fe495d6",
+      "result_id": "f1a75090-dcf0-4e11-a619-c2389cf4597b"
+    },
+    {
+      "claim_id": "b3449292-8d6d-413f-a847-50683df65529",
+      "result_id": "0b1b0ae2-5809-4281-b5c8-d495ab8603a8"
+    },
+    {
+      "claim_id": "c523ab0d-179d-4741-b1c4-ab1ee4e6fc6f",
+      "result_id": "0b1b0ae2-5809-4281-b5c8-d495ab8603a8"
+    },
+    {
+      "claim_id": "5c0c7527-0e93-4885-81d9-a2231f1ddcc5",
+      "result_id": "0b1b0ae2-5809-4281-b5c8-d495ab8603a8"
+    },
+    {
+      "claim_id": "3db8dd67-462f-4fc1-bb69-c998240f0093",
+      "result_id": "0b1b0ae2-5809-4281-b5c8-d495ab8603a8"
+    },
+    {
+      "claim_id": "6570a391-9607-4b21-9974-9cebe81c84f9",
+      "result_id": "0b1b0ae2-5809-4281-b5c8-d495ab8603a8"
+    },
+    {
+      "claim_id": "7cbf9e04-7c89-492d-a17d-20742d7ca6cf",
+      "result_id": "0b1b0ae2-5809-4281-b5c8-d495ab8603a8"
+    },
+    {
+      "claim_id": "928d1f78-049c-4892-bd9c-237365d2a086",
+      "result_id": "0b1b0ae2-5809-4281-b5c8-d495ab8603a8"
+    },
+    {
+      "claim_id": "ffa2a027-e484-4867-a3c1-96a6c09dd570",
+      "result_id": "636dab34-33bc-4e44-a39e-885ea50927f4"
+    },
+    {
+      "claim_id": "6f68b936-459f-4fa7-9927-6fbde5a047e8",
+      "result_id": "636dab34-33bc-4e44-a39e-885ea50927f4"
+    },
+    {
+      "claim_id": "cf3c036c-7fe4-4205-a96a-e1ab44a1be1f",
+      "result_id": "636dab34-33bc-4e44-a39e-885ea50927f4"
+    },
+    {
+      "claim_id": "918578d6-6d87-4c62-ae62-a5e279aa6ac6",
+      "result_id": "636dab34-33bc-4e44-a39e-885ea50927f4"
+    },
+    {
+      "claim_id": "bd2000d7-87a2-4cd5-931a-9904ff06f310",
+      "result_id": "636dab34-33bc-4e44-a39e-885ea50927f4"
+    },
+    {
+      "claim_id": "301841f9-bd98-4059-8e5b-75d2fb407d94",
+      "result_id": "850e4447-2a89-4553-8998-86c2c8f39593"
+    },
+    {
+      "claim_id": "1dc70140-20a8-4842-95ca-7315b4bbcb38",
+      "result_id": "850e4447-2a89-4553-8998-86c2c8f39593"
+    },
+    {
+      "claim_id": "2131c799-07bb-4790-a12d-2b53f8c1217c",
+      "result_id": "850e4447-2a89-4553-8998-86c2c8f39593"
+    },
+    {
+      "claim_id": "79faba77-0e1d-49ce-931a-6a9495f7cf11",
+      "result_id": "850e4447-2a89-4553-8998-86c2c8f39593"
+    },
+    {
+      "claim_id": "06a63030-f02d-4fdb-96e0-3970f4d79db6",
+      "result_id": "df0c6ffc-346f-4fd5-946f-7e1d7a5e1224"
+    },
+    {
+      "claim_id": "cd86e299-425f-4e4b-acbc-d9dfa70df1ac",
+      "result_id": "df0c6ffc-346f-4fd5-946f-7e1d7a5e1224"
+    },
+    {
+      "claim_id": "5cb1cb44-de6d-421a-87fe-0d8197b558cc",
+      "result_id": "df0c6ffc-346f-4fd5-946f-7e1d7a5e1224"
+    },
+    {
+      "claim_id": "cc3e4289-943e-4bb3-b1df-dfa1d37c7e90",
+      "result_id": "df0c6ffc-346f-4fd5-946f-7e1d7a5e1224"
+    },
+    {
+      "claim_id": "ab86b75f-e0cc-48e2-89be-49314a07bbbf",
+      "result_id": "b5093795-399f-47ba-8df2-465767c6aa88"
+    },
+    {
+      "claim_id": "a13be052-4cc1-4d78-9f5a-fb24ac5f6d1f",
+      "result_id": "b5093795-399f-47ba-8df2-465767c6aa88"
+    },
+    {
+      "claim_id": "100bca24-c6de-4efe-a7cd-eaa8e68414c2",
+      "result_id": "b5093795-399f-47ba-8df2-465767c6aa88"
+    },
+    {
+      "claim_id": "cb4e3bdf-4040-4cdd-bd1f-88f30d1021cf",
+      "result_id": "b5093795-399f-47ba-8df2-465767c6aa88"
+    },
+    {
+      "claim_id": "7ab2e376-2fbd-4d1b-9bdb-26e898224cfc",
+      "result_id": "b5093795-399f-47ba-8df2-465767c6aa88"
+    },
+    {
+      "claim_id": "ed2ba487-c8e8-4eb4-82e5-812fcdf5ebc5",
+      "result_id": "b5093795-399f-47ba-8df2-465767c6aa88"
+    },
+    {
+      "claim_id": "0a248e4d-8bf8-445d-b8b7-c349a6b0d10f",
+      "result_id": "b5093795-399f-47ba-8df2-465767c6aa88"
+    },
+    {
+      "claim_id": "bc4b2055-b1c0-414e-8670-558958c43b3a",
+      "result_id": "b5093795-399f-47ba-8df2-465767c6aa88"
+    },
+    {
+      "claim_id": "62bac34d-6b44-4f53-bd40-145186e7773b",
+      "result_id": "4c5024ba-3aa0-42fa-87f3-51c26e65f7bf"
+    },
+    {
+      "claim_id": "0650a56d-1aa0-42c1-b44e-e2d0e718eb74",
+      "result_id": "4c5024ba-3aa0-42fa-87f3-51c26e65f7bf"
+    },
+    {
+      "claim_id": "64a7c47e-1f9c-4af3-b38c-52e9527dbdd2",
+      "result_id": "4c5024ba-3aa0-42fa-87f3-51c26e65f7bf"
+    },
+    {
+      "claim_id": "ecc6a786-3912-4ce9-9da8-3a63e3f91529",
+      "result_id": "4c5024ba-3aa0-42fa-87f3-51c26e65f7bf"
+    },
+    {
+      "claim_id": "7de8706e-3fcb-44ba-90cb-b5561dfc505f",
+      "result_id": "4c5024ba-3aa0-42fa-87f3-51c26e65f7bf"
+    },
+    {
+      "claim_id": "62a21c6c-3fce-4a72-b3cc-b88f18ba4ee9",
+      "result_id": "4c5024ba-3aa0-42fa-87f3-51c26e65f7bf"
+    },
+    {
+      "claim_id": "32475d7e-9ec2-4b8f-a460-8b68f3c05077",
+      "result_id": "7cd88c12-b987-4706-827f-51b182b92fac"
+    },
+    {
+      "claim_id": "f7049b69-b8f5-4b9f-9d68-b143422a2ea5",
+      "result_id": "7cd88c12-b987-4706-827f-51b182b92fac"
+    },
+    {
+      "claim_id": "82ec4bf9-8f82-4996-b412-49430c763794",
+      "result_id": "7cd88c12-b987-4706-827f-51b182b92fac"
+    },
+    {
+      "claim_id": "fd682604-3d9a-4f04-ac4f-01220cdac1d4",
+      "result_id": "7cd88c12-b987-4706-827f-51b182b92fac"
+    },
+    {
+      "claim_id": "6efac615-7561-4d69-97ae-416ab1684cbd",
+      "result_id": "7cd88c12-b987-4706-827f-51b182b92fac"
+    },
+    {
+      "claim_id": "36bfd688-73ce-4566-85c6-a1999f7f6e2f",
+      "result_id": "ad022c9d-d9e5-4ba3-afcc-2a9567189f92"
+    }
+  ],
+  "comparisons": []
+}

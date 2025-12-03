@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C55"
+    ],
+    "result": "Environmental enrichment leads to increasing interindividual behavioral variance over time, with mice clustering into two distinct behavioral trajectory patterns: 'flat' roamers with consistently high roaming entropy and 'down' roamers showing habituation with decreased roaming entropy over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by Figure 1B-C showing increasing variance estimates and distinct trajectory patterns. C55 confirms optimal cluster number of two via silhouette analysis. The behavioral stratification is methodologically sound and visually evident in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Adult hippocampal neurogenesis (measured by DCX+ cells) increases with environmental enrichment but does not differ between behavioral subgroups, though correlations with behavior show subgroup-specific patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C13-C14 are statistically supported (ANOVA p<0.001, post-hoc p=0.46). However, C16 reports significance in 'down' (p=0.012) but not 'flat' (p=0.095) subgroups, yet acknowledges these correlations are not statistically different from each other (Fisher's z, p=0.27), suggesting insufficient power. The biological interpretation of subgroup-specific correlations remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Environmental enrichment increases regional brain volumes, particularly in hippocampal regions (68% of significant ROIs), without affecting total brain volume, as confirmed by both atlas-based segmentation and tensor-based morphometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are well-supported by complementary analytical approaches (ABS and TBM) with appropriate multiple comparison corrections (5% FDR, FWE p<0.05). Effect sizes are substantial (SMD +1.15 to +2.7). The finding replicates prior literature (C1, C10) and is consistent across absolute and relative volume measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C25",
+      "C42"
+    ],
+    "result": "Roaming entropy slope correlates positively with local volume changes in widely distributed brain regions including thalamic nuclei, periaqueductal grey, superior colliculus, and inferior colliculus, suggesting distributed circuit support for exploratory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C22 is supported by voxel-wise correlation analysis with stringent FWE correction (p<0.05) shown in Figure 2B. The inference that RE is supported by distributed circuitry (C25, C42) is reasonable given the widespread anatomical distribution of correlations. However, correlation does not establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Total brain volumes and localized regional volumes do not differ significantly between 'flat' and 'down' behavioral subgroups within the enriched environment after correction for multiple comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C23-C24 are supported by appropriate statistical tests (t-test p>0.05 for total volume; TBM with FWE correction showing no significant differences). This negative finding is important as it suggests behavioral trajectory differences are not explained by simple volumetric changes but may involve network-level reorganization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Regional brain volume variance (measured by coefficient of variation) is significantly higher in 'flat' roamers compared to 'down' roamers, indicating increased variability as a function of behavioral response to enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C26 is supported by Mann-Whitney U test (p<0.0001) comparing sum of ranks of CV across 182 ROIs (Figure 3\u2014supplement 1). The inference in C27 that variance increases with behavioral response is reasonable, though the directionality (flat>down) and biological interpretation require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Structural covariance patterns differ significantly between housing conditions and between behavioral subgroups, with 'flat' roamers showing higher inter-regional correlations than 'down' roamers or standard-housed mice, while 'down' roamers resemble standard-housed mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by chi-square tests for equality of correlation matrices (all p<0.0001 except Down vs STD with prob<1). Visual inspection (C34, C40) and statistical tests converge. However, the chi-square test for correlation matrix equality has limitations: it assumes multivariate normality and may be overly sensitive with large matrices (182\u00d7182=33,124 correlations). The biological interpretation is compelling but the statistical approach could be strengthened.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Network-based statistics identified distinct subnetworks of structural covariance, with behavioral trajectory differences (flat vs down: 49 connections) showing larger effects than housing condition differences (ENR vs STD: 23 connections).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by NBS analysis (both p<0.05, t=2.4) shown in Figure 4. The inference that behavioral trajectories surpass housing effects (C37) is reasonable based on network size. However, the manuscript notes visualization is at t=2.4 while analysis used t=3.1 (C63), creating some ambiguity. The NBS approach is appropriate but threshold selection appears post-hoc.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C49"
+    ],
+    "result": "Differentiated behavioral trajectories in enriched environments are associated with individualization of brain structural networks at the macroscale, demonstrating that individual behavior shapes whole-brain connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C4, C41, C49) integrates findings from behavioral tracking, structural covariance, and NBS analyses. The association between behavioral trajectories and structural networks is well-demonstrated. However, causality cannot be established from this cross-sectional ex vivo design\u2014pre-existing differences vs. experience-dependent changes remain unresolved, as acknowledged in C45-C46.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C5"
+    ],
+    "result": "In genetically identical mice housed in identical nominal environments, phenotypic variation in brain and behavior must arise from the non-shared component of environmental factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C44 is a logical inference based on the experimental design using inbred C57BL/6JRj mice (C50) in controlled environments. C5 provides theoretical framework from prior literature. The reasoning is sound: with genetics and nominal environment controlled, remaining variance must be non-shared environmental factors. However, the study does not directly measure or manipulate non-shared environment components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A continuum exists between roaming entropy and experience-dependent brain plasticity, potentially building on initial variance and amplifying through individual behavioral development, with greater activity leading to richer connectomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C45 is an inference from correlation data (Figure 2B). C46 is explicitly labeled as speculation with supporting citations. C47 is stated as a hypothesis consistent with data. While the correlational evidence supports an association, the causal mechanisms and temporal dynamics remain speculative. Longitudinal in vivo imaging would be required to test these hypotheses definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study used female C57BL/6JRj mice in custom-built enriched housing with RFID tracking or standard housing, with ex vivo MRI at 9.4T yielding 100 \u03bcm\u00b3 isotropic resolution after perfusion at 17 weeks of age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims (C50-C53, C56-C58) are clearly stated and internally consistent. The experimental design is appropriate. However, the authors acknowledge (in Methods discussion) that 100 \u03bcm\u00b3 resolution is at the lower end for ex vivo anatomy compared to studies using contrast enhancement reaching 30-40 \u03bcm\u00b3, which may limit detection of subtle structural differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Regional brain volumes were quantified using the DSURQE atlas (182 structures) with both absolute and relative volume measures, compared using multiple t-tests with 5% FDR correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe standard neuroimaging analysis methods appropriately. The use of both absolute and relative volumes addresses brain scaling concerns. FDR correction at 5% is appropriate for multiple comparisons. The methods are clearly described and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C62",
+      "C63"
+    ],
+    "result": "Structural covariance, defined as correlated variation in regional volumes, is conserved in mice and was analyzed using network-based statistics with primary threshold t=3.1 (p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C28-C29 provide appropriate definitions and citations. C62 correctly describes NBS methodology. However, C63 reveals a discrepancy: analysis used t=3.1 but Figure 4 visualization uses t=2.4, which is not fully explained. This raises questions about threshold selection and sensitivity of results to parameter choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C43",
+      "C48"
+    ],
+    "result": "Prior literature establishes that brain structure relates to behavior in humans, structural covariance represents individual fingerprints, environmental enrichment increases behavioral variability and neurogenesis in mice, and roaming entropy correlates with positive affect in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6-C10, C43, C48) appropriately cite prior literature to establish context. The citations appear relevant and accurate. C48 is particularly important as it validates the RE measure in humans, strengthening translational relevance. These background claims appropriately frame the current work.",
+    "result_type": "MINOR"
+  }
+]

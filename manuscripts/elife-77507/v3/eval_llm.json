@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C53"
+    ],
+    "result": "LUSC is the second most common lung cancer type (20-30% of cases) with worse prognosis than LUAD, including lower 5-year survival rates for both metastatic (6.2% vs 9.5%) and localized disease (50%), and 40% of early-diagnosed patients die within 5 years despite curative-intent resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C11 provide consistent epidemiological data supported by multiple citations. The survival statistics are specific and sourced from authoritative databases (National Cancer Institute). Claim C53 about disappointing progress is supported by citation, though it represents an interpretive statement about trends.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "LUSC has a more complex genetic landscape than LUAD, lacking actionable mutations like EGFR/KRAS that dominate LUAD, resulting in limited therapeutic options restricted to immune checkpoint inhibitors with or without chemotherapy, with major personalized medicine trials showing no clear benefit from targeted agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 are well-supported by multiple citations to peer-reviewed literature and major clinical trials. The contrast between LUAD's druggable RTK/RAS pathway mutations and LUSC's complex, multi-pathway alterations is clearly established with appropriate references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "LUSC progresses through a series of premalignant stages (low-grade: metaplasia, mild/moderate dysplasia; high-grade: severe dysplasia, CIS), though not all PMLs progress. High-grade PMLs and high chromosomal instability (CIN) predict progression, while immune infiltration is associated with regression and immune evasion with transition to invasiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 describe established PML biology supported by multiple citations. The classification system, progression patterns, and role of CIN and immune response are consistently referenced across multiple studies. These represent prior knowledge being summarized rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "PMLs cannot be detected by routine CT or PET imaging due to lack of radiological contrast, but autofluorescence bronchoscopy can detect high-grade PMLs for ablation as a prevention strategy, though this technique is expensive and complex with limited scalability for large screening programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 accurately describe the technical limitations of current imaging modalities and the practical constraints of autofluorescence bronchoscopy. C22 is supported by citation (Guibert et al., 2016), while C21 and C23 represent established knowledge about imaging physics and healthcare economics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Four transcriptomic datasets are integrated in XTABLE: GSE33479 (122 biopsies, unknown progression, microarray), GSE109743 (448 samples with progression status, RNAseq, discovery/validation cohorts), GSE114489 (63 dysplasias with follow-up, microarray), and GSE108124 (33 CIS with progression to invasive carcinoma, microdissected FFPE, microarray).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 accurately describe the four datasets integrated into XTABLE, with appropriate citations and clear descriptions of sample numbers, methodologies, and progression status definitions. These are factual descriptions of existing published datasets that can be verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C63",
+      "C64"
+    ],
+    "result": "XTABLE is the first bioinformatic tool focusing on premalignant lesions, integrating the most extensive transcriptomic databases of PMLs published to date, allowing multiple sample stratifications by stage, progression status, and CIN, with capabilities for two- and multiple-group comparisons, gene interrogation, and transcriptional signature analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C63-C64 describe the novel features and capabilities of XTABLE. The claim of being 'first' (C51) is qualified with 'to our knowledge' showing appropriate caution. The functional capabilities described are demonstrated throughout the manuscript with examples and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "CIN signatures show variable performance across cohorts: CIN5 perfectly segregates progressive/regressive CIS in GSE108124 (AUC=1.0), but performs moderately in dysplasias in GSE114489 (AUC=0.72) and poorly in GSE109743 (no accurate segregation). However, CIN-scores consistently increase with PML grade across cohorts with multiple stages (GSE109743, GSE33479).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 present specific AUC values with supporting figures and appropriate statistical analysis. The variable performance across cohorts is clearly demonstrated with quantitative metrics. The stage-dependent increase in CIN-scores is shown in Figures 6D-E with appropriate sample sizes reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors speculate that CIN may play different roles in PML-to-PML transitions versus malignant transformation, and that CIN-scores as progression predictors may be limited to microdissected samples and CIS lesions, potentially due to tumor stroma causing underestimated CIN-scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C56 are explicitly speculative interpretations (using 'conceivably,' 'might,' 'could') attempting to explain the variable CIN-score performance. While reasonable hypotheses based on the data, these lack direct experimental validation and represent discussion points rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "TP53 and CDKN2A inactivation are the most frequent somatic events in LUSC, with squamous differentiation (primarily SOX2 amplification, mutually exclusive with NOTCH inactivation), PI3K/Akt, and oxidative stress response being the most frequently targeted pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 summarize established LUSC genetics supported by citations to TCGA and TRACERx studies. These represent prior knowledge being used as context for the pathway analysis, with Figure 7A providing visual summary. The mutual exclusivity pattern is established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Squamous differentiation, PI3K/Akt, and oxidative stress response pathway signatures increase significantly in moderate/severe dysplasias (high-grade PMLs) but not in earlier lesions, indicating activation during the low-to-high grade transition. In contrast, CDK4/cyclin-D1 and E2F signatures show earlier activation in metaplasias and mild dysplasias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 present pathway signature analysis across PML stages using established MSigDB signatures. The data are shown in Figure 7B-F with statistical comparisons (Welch's t-test, p-values reported). The differential timing of pathway activation is consistently observed across two independent cohorts (GSE33479 and GSE109743).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Despite variable performance as progression predictors, CIN gene expression signatures robustly correlate with genomic instability in cancer. The authors speculate that early CDK4/cyclin-D1 activation may be necessary to avoid toxicity from SOX2 overexpression and PI3K/Akt-induced senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 is supported by citation (Carter et al., 2006) and C58 and C60 are supported by multiple citations. However, C59 is speculative ('could be key') connecting these observations without direct experimental validation. The speculation is reasonable but represents hypothesis generation rather than demonstrated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "High-grade PMLs frequently undergo malignant progression, making their detection and removal an optimal strategy to prevent LUSC deaths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by citation (Ishizumi et al., 2010). Claim C62 represents a logical inference from C61 - if high-grade PMLs frequently progress to cancer, then removing them should prevent cancer deaths. This is a reasonable clinical conclusion supported by the cited evidence.",
+    "result_type": "MINOR"
+  }
+]

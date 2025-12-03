@@ -1,0 +1,426 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study cohort consisted of 32 adult malaria patients hospitalized in Hamburg, Germany, categorized into malaria-naive (n=15) and pre-exposed (n=17) groups, and into severe (n=8) and non-severe (n=24) cases. All patients had fever and MSP1 genotyping showed low parasite genotype diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C51 provide clear cohort characterization with specific patient numbers and clinical features. The categorization is well-documented with supporting data in Table 1 and clinical records. Sample sizes are appropriate for exploratory analysis, though relatively small for definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Serological classification of patients into naive and pre-exposed groups was achieved using multiple assays (Luminex, mADRB, ELISA, protein microarray). PCA of Luminex data separated patients into two discrete clusters, with pre-exposed patients showing higher antibody levels against P. falciparum antigens. Random forest analysis confirmed the classification approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 describe a comprehensive serological characterization using multiple orthogonal methods. The PCA clustering (Figure 1A) and random forest validation provide strong support for patient classification. One outlier (patient #21) is appropriately acknowledged and investigated with additional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Pre-exposed individuals showed significantly elevated IgG antibody responses against a broad range of parasite antigens, including blood stage markers (MSP1, MSP2, MSP4, MSP10, EBA175, REX1, AMA1), recent infection markers (MSP1, MSP4, GLURP, ETRAMP5), and pre-erythrocytic antigens (CSP, STARP, LSA3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by protein microarray data (Figure 1D) showing differential antibody responses. The findings are consistent with expected immune profiles for malaria-exposed individuals and include appropriate statistical testing (Mann-Whitney U test).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Within the malaria-naive group, eight patients had severe malaria and 24 had non-severe malaria. Severe cases showed elevated antibody levels, particularly against intracellular proteins, and detectable IgM antibodies against ETRAMP5, suggesting prolonged infection duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 describe severity classification and associated antibody profiles. The detection of IgM against ETRAMP5 in severe cases is appropriately interpreted as indicating longer infection duration based on cited literature (C69). However, the causal relationship between antibody levels and severity requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RNA-seq was performed on all 32 patient samples with high P. falciparum read proportions (median 87.7%). Parasite stage analysis showed no significant differences between naive and pre-exposed groups, but a non-significant trend toward younger parasites in severe cases (median 8.2 hpi vs 9.8 hpi, p=0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 describe RNA-seq data quality and parasite staging. The high proportion of P. falciparum reads supports data quality. The non-significant trend in parasite age (C74) is appropriately reported with p-value, and the analysis controlled for stage differences in downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Differential gene expression analysis identified 420 genes higher and 236 genes lower expressed in first-time infected patients (11.3% of P. falciparum genes). Gene set enrichment analysis showed significant upregulation of the KEGG pathway 'base excision repair' (6/15 genes) and downregulation of genes involved in antigenic variation and host cell remodeling in naive patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe genome-wide expression analysis with appropriate statistical methods (Limma/Voom, GSEA). The upregulation of DNA repair pathways in naive patients is interesting but requires mechanistic follow-up. The analysis appropriately controlled for parasite stage and unwanted variation using RUV.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "De novo assembly of var genes generated 6,441 contigs >500 bp (N50: 2,302 bp, max: 10,412 bp), with a median of 200 contigs per sample. Domain annotation was possible for 5,488 contigs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 describe var gene assembly results. The assembly metrics are reasonable for highly variable var genes. However, the separate assembly approach may generate redundant contigs, which is acknowledged and addressed using Salmon's equivalence class approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The var1-IT variant was expressed at higher levels in parasites from first-time infected patients, whereas the var1-3D7 variant was expressed at higher levels in parasites from pre-exposed and non-severe patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 describe differential expression of var1 variants supported by both RNA-seq quantification (Figures 4A,B, 5A,B) and read mapping visualization (Figure 3\u2014supplement 1). This is reported as a novel finding (C140) and represents an interesting observation requiring functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "EPCR-binding CIDR\u03b11 domains and associated domains from DC8, DC13, and DC15 were expressed at significantly higher levels in first-time infected patients. Additionally, CIDR\u03b41 (DC16) and DBL\u03b26 domains showed elevated expression in naive patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe differential domain expression supported by RNA-seq data (Figure 4C-E). The association of EPCR-binding domains with naive status is consistent across multiple domain types and analysis levels. Statistical significance is appropriately reported (p<0.05, DESeq2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Domains expressed at lower levels in malaria-naive individuals included group B and C N-terminal head structure domains (NTSB, DBL\u03b10.13/22/23), CD36-binding CIDR domains (CIDR\u03b12.8/9,6), CIDR\u03b311, and var1-3D7 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 describes domains associated with pre-exposed status, supported by RNA-seq data (Figure 4C-E). This finding complements the EPCR-binding domain results and is consistent with the hypothesis that CD36-binding variants are associated with less severe disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Domains from DC8, DC15, DC16, and DBL\u03b26 were associated with severe disease, while domains from group B/C PfEMP1 (DBL\u03b10.23, CIDR\u03b12.4/9) and var1-3D7 (CIDR\u03b11.3) were associated with non-severe cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe domain associations with disease severity supported by differential expression analysis (Figure 5C-E). The findings are consistent with the naive/pre-exposed comparison, as severe cases were predominantly in the naive group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Analysis of N-terminal head structure domains grouped by binding phenotype showed that EPCR-binding and CIDR\u03b33 domains were expressed at higher levels in naive and severe cases, while CD36-binding domains were higher in pre-exposed and non-severe patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 summarize domain expression by functional phenotype, supported by aggregated TPM data (Figures 4F, 5F). This functional grouping strengthens the interpretation that receptor-binding specificity correlates with disease outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Homology block analysis showed that blocks 255, 584, 614 (in DBL\u03b2 domains of DC8/CIDR\u03b11 PfEMP1), 557 (interdomain region), and 155 (NTSA) were associated with naive status, while blocks 88 (DBL\u03b10) and 269 (ATSB) were lower in naive patients, indicating B/C-type gene expression in pre-exposed individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 describe homology block associations supported by differential expression analysis (Figure 4G,H). This fine-scale analysis corroborates the domain-level findings and provides additional resolution for var gene characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "No homology blocks were associated with severe cases, but blocks 591 and 559 (group B PfEMP1) were lower expressed in severe malaria cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 describe homology block associations with severity (Figure 5G,H). The lack of blocks associated with severe cases (only negative associations) may reflect the overlap between naive and severe groups or limited statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "DBL\u03b1-tag sequencing generated 851-3,368 reads per sample (median 1,666). Comparison with RNA-seq showed good concordance (mean log2 ratio 0.4, 95% CI: -2.5 to 3.3), with 82.6% of DBL\u03b1-tag sequences found in RNA-seq and 81.8% of RNA-seq contigs found by DBL\u03b1-tag. Domain annotation was achieved for ~85% of DBL\u03b1-tag sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 describe DBL\u03b1-tag sequencing and validation against RNA-seq. The Bland-Altman analysis (Figure 6\u2014supplement 1) demonstrates good agreement between methods, supporting the use of both approaches as orthogonal validation. The ~85% annotation rate is reasonable given var gene diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "DBL\u03b1-tag analysis confirmed that DBL\u03b11 and DBL\u03b12 sequences were enriched in first-time infected and severe patients, while DBL\u03b10 sequences were higher in pre-exposed and mild cases. NTSA and EPCR-binding CIDR\u03b11 domains were higher in severe/naive cases, while NTSB and CIDR\u03b12-6 were associated with pre-exposed/non-severe cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 describe DBL\u03b1-tag results that corroborate RNA-seq findings (Figure 6A,B). The concordance between independent methods strengthens confidence in the main conclusions about EPCR-binding vs CD36-binding PfEMP1 associations with disease severity and immune status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Further DBL\u03b1-tag domain analysis showed that var transcripts with DBL\u03b2, \u03b3, \u03b6, or CIDR\u03b3 domains were more frequent in first-time infected and severe patients, while those with DBL\u03b4 and CIDR\u03b2 were less frequent. Specific domain subtypes (CIDR\u03b11.1/5, DBL\u03b212, DBL\u03b32/12, DBL\u03b12, DBL\u03b11.2/2, DBL\u03b45) were associated with severe malaria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 describe detailed domain subtype associations from DBL\u03b1-tag data (Figure 6\u2014supplement 2). These findings provide additional granularity consistent with the RNA-seq results, though the multiple comparisons increase the risk of false positives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Antibody recognition analysis showed that malaria-naive and severe cases had lower MFI values for all PfEMP1 CIDR antigens tested, with significant differences for CIDR\u03b12-6, CIDR\u03b41, and CIDR\u03b33 but not CIDR\u03b11. Pre-exposed patients recognized ~47% of antigens while naive patients recognized only ~25% and severe patients only ~5.6%. The most frequently recognized antigens (>60%) included four EPCR-binding CIDR\u03b11 domains, two CD36-binding domains, and two domains with unknown phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 describe antibody recognition patterns supported by Luminex data (Figure 7A-C). The finding that CIDR\u03b11 domains show no significant difference in antibody levels between groups despite being associated with severe disease is interesting and suggests these domains may be immunogenic even in first infections. The breadth analysis provides important context for interpreting var expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Higher levels of antibodies against severe malaria-associated EPCR-binding variants in pre-exposed and non-severe cases might have selected against parasites expressing CIDR\u03b11 domains during the current infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C120 proposes an immune selection mechanism based on antibody data. While the correlation between antibody levels and var expression is suggestive, the claim is speculative and lacks direct evidence of selection. The cross-sectional design cannot establish temporal relationships or causality. Longitudinal studies would be needed to test this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The study found that severe malaria was associated with PfEMP1 containing EPCR-binding CIDR\u03b11 domains, while CD36-binding PfEMP1 was linked to non-severe outcomes. First-time infected adults were more likely to develop severe symptoms and tended to be infected longer. The authors conclude that parasites with pathogenic PfEMP1 variants are more common in naive patients and/or that adverse inflammatory responses favor EPCR-binding parasite growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 summarize the main findings supported by convergent evidence from RNA-seq, DBL\u03b1-tag sequencing, and antibody analyses. The association between EPCR-binding PfEMP1 and severe disease in naive patients is well-supported. However, C46 is speculative about mechanisms (inflammatory responses favoring parasite growth) and represents a hypothesis rather than a demonstrated result. The longer infection duration in severe cases (C44) is inferred from IgM data rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The study confirmed previously reported associations between type A and B EPCR-binding PfEMP1 and infections in naive hosts and disease severity, suggesting that parasite interaction with EPCR is linked to severe disease in both children and adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 place the findings in context of prior literature. The confirmation of EPCR-binding associations in adults extends pediatric findings to a different population. However, the extension to adults as a general conclusion (C122) should be tempered by the small sample size and specific population (travelers).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The authors suggest that co-interaction of CIDR\u03b11-containing PfEMP1 with multiple receptors may increase severe malaria risk, and that pediatric cerebral malaria is dominated by EPCR-binding parasites accompanied by other group A PfEMP1 possibly acting as rosetting variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C124 are speculative interpretations extending beyond the data. While the detection of DC16 (putative rosetting variants) alongside EPCR-binders is interesting, the functional role of these variants and their contribution to pathogenesis is not demonstrated. These represent hypotheses for future testing rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "The authors conclude that IgG against EPCR-binding CIDR domains were acquired before IgG to other CIDR domains, consistent with observations in malaria endemic populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C125 infers temporal acquisition order from cross-sectional antibody data. While the pattern is consistent with cited literature, the cross-sectional design cannot establish the sequence of antibody acquisition. Longitudinal studies would be needed to confirm this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study findings are consistent with previous adult malaria studies from France, India, and Indonesia showing associations between EPCR-binding variants (DC4, -8, -13) and disease severity. The current study additionally found elevated expression of DC15 and DC16 in malaria-naive patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 appropriately contextualize findings within existing literature. The identification of DC15 and DC16 associations represents a novel contribution. The comparison across studies is appropriate, though differences in methodology and populations should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors note that while CIDR\u03b11-containing transcripts dominate pediatric severe malaria, CD36-binding var transcripts appear to dominate in most adult patients in this study, consistent with other adult studies. One study even showed association of B/C-type variants with complicated adult malaria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 highlight an important difference between pediatric and adult malaria. The observation that CD36-binding variants are abundant even in severe adult cases is well-supported by the data and represents a key finding. This suggests age-related differences in malaria pathogenesis that warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors speculate that CD36 binding may be specifically enhanced in adult severe malaria compared to children, or that less sick adult patients have less dominant EPCR-binding expression. They suggest that expressing CD36-binding variants may benefit parasite survival by avoiding severe pathology, as CD36 is nearly absent in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C139 are speculative hypotheses about mechanisms. While the observations about CD36-binding variant prevalence are supported, the mechanistic explanations are not tested. These represent interesting hypotheses but should not be considered established results. The claim about CD36 absence in brain (C139) is supported by citation but the functional implications are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study reports the first description of differential expression between var1-3D7 and var1-IT variants. The var1 subfamily is ubiquitously transcribed late in the cell cycle, is under evolutionary pressure, and both variants trace back before P. reichenowi divergence. The authors suggest the two variants may have different roles in disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C148 describe var1 variant findings. The differential expression observation (C140) is novel and well-supported by data. The evolutionary and expression characteristics (C142-C147) are appropriately cited. However, the suggestion of different disease roles (C148) is speculative and requires functional validation. This represents an interesting observation requiring follow-up.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors conclude that EPCR-binding and A-type variants are increased in severe and first-time infected patients, while CD36-binding variants are more frequent in non-severe and pre-exposed patients. They postulate that naive individuals may have broad binding potential after liver release, with selection toward EPCR-binding variants during blood-stage infection in severe cases, as indicated by longer infection duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 summarize well-supported findings. However, C152-C153 are speculative mechanistic interpretations. The hypothesis about broad initial binding potential and subsequent selection is plausible but not directly demonstrated. The inference of selection from longer infection duration is indirect. These represent reasonable interpretations but require prospective validation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C61"
+    ],
+    "result": "Comprehensive profiling identified 10,624-11,977 lncRNAs in germ cells versus 3,186-4,295 in somatic cells, with over 67% unannotated. LncRNA expression peaks at 23 weeks gestation in female and 19 weeks in male germ cells, while remaining stable in somatic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 and C61 provide consistent quantitative data from single-cell RNA-seq analysis of 1,825 cells. The temporal dynamics are well-documented with appropriate statistical comparisons (Student's t-test). The high proportion of unannotated lncRNAs is verified by database comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Cell-type and stage-specific lncRNA profiling identified 5,024 fGC-specific, 6,097 mGC-specific, 558 fSOMA-specific, and 455 mSOMA-specific lncRNAs, with 1,218 and 2,942 stage-specific lncRNAs in female and male germ cells respectively. LncRNA numbers increase during germ cell development with strong heterogeneity at meiotic entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 and C91-C96 present systematic bioinformatic classification with clear criteria (TPM\u22651 in \u22652 cells of one type, absent in others). The developmental dynamics are well-documented across multiple stages. However, the biological significance of heterogeneity at meiotic entry (C93) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C88",
+      "C101",
+      "C104",
+      "C105"
+    ],
+    "result": "Integrating lncRNA expression with coding gene expression in t-SNE analysis identified an additional mitotic-4 cell population in female germ cells, characterized by genes related to protein modification, transcription regulation, and RNA metabolism. This population appears developmentally later than other mitotic populations based on pseudotime trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C88 demonstrate that lncRNA integration enhances cell-type classification. The mitotic-4 population is supported by specific lncRNA markers (C105) and pseudotime positioning (C101, C104). GO analysis validates functional characterization. This represents a methodological advance in single-cell analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C87",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Genomic distribution analysis revealed that 52-53% of lncRNAs in germ cells are intragenic versus 62% in somatic cells. Divergent (XH) lncRNAs constitute the highest percentage in germ cells, with meiotic XH pairs showing higher Pearson correlation than random pairs and enrichment in reproductive development genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 and C87 provide clear quantitative genomic distribution data. The correlation analysis (C98) appropriately compares meiotic XH pairs to random controls. GO enrichment (C99) supports functional relevance. However, correlation does not prove regulatory relationships, requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C90"
+    ],
+    "result": "LNC1845 is characterized as a 1,410 nucleotide, unspliced, polyadenylated lncRNA located 4,507 bases upstream of LHX8. Computational prediction and in vitro translation confirm its non-coding nature. Expression is detected in 17-week fetal ovary but not in ovarian carcinoma or undifferentiated hESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 and C90 provide comprehensive characterization using multiple approaches: database annotation, RNA-seq, computational prediction (CPC/CPAT), in vitro translation, RT-PCR, and RACE. The convergent evidence strongly supports LNC1845 as a bona fide lncRNA with tissue-specific expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "In vitro PGCLC differentiation system expresses 397 germ cell-specific coding genes and 117 germ cell-specific lncRNAs, including 36 co-enriched lncRNA-coding gene pairs. LNC1845 and LHX8 colocalize in PGCLC nuclei but not control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 validate the in vitro system for studying LNC1845 function. RNA-seq, qPCR, immunostaining, and RNA FISH provide convergent evidence. The colocalization (C33) is important for establishing spatial relationship, though it doesn't prove functional interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C79"
+    ],
+    "result": "Multiple orthogonal loss-of-function approaches (CRISPR knockout, shRNA knockdown, 3\u00d7polyA insertion) demonstrate that LNC1845 transcriptional expression is required for proper LHX8 expression in PGCLCs, with 80-90% reduction in LNC1845 leading to significant LHX8 reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C38-C40, and C79 employ three independent genetic perturbation methods with consistent results. The use of multiple approaches (complete deletion, RNAi, transcriptional termination) strengthens causal inference. Western blot and qPCR provide protein and RNA-level validation with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "RNA-seq analysis reveals 1,126 differentially expressed genes overlap between LNC1845 KO and LHX8 overexpression, including many meiotic genes. Both LHX8 isoforms are expressed in PGCLCs and regulated by LNC1845.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 provide transcriptome-level evidence for LNC1845's regulatory scope. The overlap analysis (C36) suggests LNC1845 functions partly through LHX8, though 1,126 overlapping genes out of total DEGs indicates additional mechanisms. Isoform-specific analysis (C37) adds molecular detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Cis-activation experiments using EF1\u03b1 promoter knock-in (3.8-13.3-fold LNC1845 increase) and CRISPR-ON (1.6-4.2-fold increase) both upregulate LHX8 expression (3.5-7.6-fold), demonstrating cis-regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 employ two independent cis-activation strategies with consistent outcomes. The dose-response relationship between LNC1845 and LHX8 levels supports regulatory connection. CRISPR-ON controls in LNC1845 KO cells (Figure 6\u2014supplement 1C) confirm specificity. This is strong evidence for cis-regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C80"
+    ],
+    "result": "Trans-activation experiments using RNA transfection (21,794-42,693-fold LNC1845 increase) and lentiviral overexpression (~500-40,000-fold increase) show minimal or no LHX8 upregulation, indicating LNC1845 lacks significant trans-activating effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C80 present negative results from two independent trans-activation approaches. The massive LNC1845 overexpression without corresponding LHX8 increase argues against trans-regulation. This is important for establishing cis-specific mechanism, though the extreme overexpression levels may not reflect physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C81"
+    ],
+    "result": "ChIP-seq analysis reveals that LNC1845 expression level modulates H3K4me3 and H3K27Ac histone modifications at the LHX8 promoter, with reduced H3K4me3 in KO cells and increased levels in overexpression cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C81 use ULI-NChIP to demonstrate bidirectional changes in histone modifications correlating with LNC1845 levels. The E-box region targeting is consistent with known LHX8 regulation. However, ChIP-seq shows correlation, not causation\u2014histone changes could be consequence rather than cause of altered transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C75",
+      "C84",
+      "C85"
+    ],
+    "result": "LNC1845 directly interacts with WDR5 (component of H3K4 methyltransferase complexes) as demonstrated by RIP-qPCR and ChIRP-western blot. WDR5 knockdown reduces both LNC1845 and LHX8, and WDR5 colocalizes with DAZL-high hPGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C75, C84-C85 provide molecular mechanism linking LNC1845 to histone modifications. RIP and ChIRP are complementary approaches confirming physical interaction. WDR5 knockdown (C50) supports functional requirement. However, the model (C75) that LNC1845 'directly' guides WDR5 to LHX8 locus requires additional evidence like ChIP showing WDR5 enrichment at LHX8 promoter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C86"
+    ],
+    "result": "Computational promoter analysis identified FOXP3 binding motifs in 21-89% of meiotic lncRNA promoters. FOXP3 overexpression upregulates 141 meiotic-specific lncRNAs (36.6%) including LNC1845 and LHX8, while TFAP2A shows no effect. FOXP3 is specifically expressed in PGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 and C86 combine computational prediction with experimental validation. The specificity of FOXP3 effect versus TFAP2A (C55) strengthens the finding. RNA-seq provides genome-wide validation. However, 36.6% upregulation rate suggests FOXP3 is one of multiple regulators, not the sole activator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C89"
+    ],
+    "result": "FOXP3 regulates multiple divergent lncRNA-mRNA pairs: knockdown of FOXP3 reduces both LNC1845 and LHX8, knockdown of two other divergent lncRNAs reduces their neighboring genes, and luciferase assay confirms FOXP3 directly activates LNC1845 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C89 demonstrate FOXP3's broader regulatory role beyond LNC1845. The luciferase assay (C60) provides direct evidence of promoter activation. Testing additional lncRNA-mRNA pairs (C58) shows generalizability. This establishes FOXP3 as a master regulator of divergent lncRNAs in germ cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C102"
+    ],
+    "result": "The ratios of lncRNA versus protein-coding genes in germ cells are higher than in somatic cells, suggesting lncRNAs may play more critical roles in germ cells during gonadal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62 and C102 present an interpretive conclusion from quantitative data. While the higher ratio is well-documented, the inference that this indicates 'more critical roles' is speculative. Higher expression could reflect many factors (transcriptional noise, regulatory complexity, etc.) and doesn't directly demonstrate functional importance without loss-of-function studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "LNC1845 regulates LHX8 expression in cis by modulating H3K4me3 and H3K27Ac histone modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 synthesizes multiple experimental results (loss-of-function, gain-of-function, ChIP-seq, protein interaction studies) into a coherent regulatory model. The convergent evidence from orthogonal approaches strongly supports this cis-regulatory mechanism, though the precise molecular details of how LNC1845-WDR5 interaction leads to locus-specific histone modification remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Loss-of-function mutations in LNC1845 might lower LHX8 expression during human folliculogenesis and lead to premature ovarian insufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is speculative extrapolation from in vitro findings to clinical phenotypes. While the regulatory relationship is established in PGCLCs, no patient data or in vivo validation is provided. The connection to premature ovarian insufficiency is based on known LHX8 mutations causing this phenotype, but LNC1845 mutations have not been identified in patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "FOXP3 specifically expresses in germ cells rather than gonadal somatic cells, and LNC1845 is predominantly nuclear localized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 provide important context for the regulatory model. FOXP3 expression pattern (C77) is documented by single-cell analysis and validated in PGCLCs. Nuclear localization of LNC1845 (C78) is demonstrated by fractionation assay and is consistent with its proposed role in chromatin regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Positive correlation between lncRNAs and neighboring genes suggests lncRNAs might positively regulate expression of neighboring genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C103 presents correlation as evidence for regulation. While correlation is suggestive, it doesn't establish causation. Co-expression could result from shared regulatory elements, chromatin domains, or other mechanisms. The claim is appropriately hedged with 'might' and 'suggests,' but experimental validation is needed for individual pairs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C82",
+      "C83"
+    ],
+    "result": "Background knowledge claims about germ cell development, lncRNA prevalence, LHX8 function, FOXP3 roles, and WDR5 function in methyltransferase complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 and C82-C83 cite established literature to provide context. These are appropriately referenced and represent accepted knowledge in the field. The citations appear accurate and relevant to the manuscript's findings.",
+    "result_type": "MINOR"
+  }
+]

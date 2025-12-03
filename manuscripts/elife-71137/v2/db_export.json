@@ -1,0 +1,1412 @@
+{
+  "submission": {
+    "id": "f4cc3c2c-37f2-4246-8d48-8e2566c0651d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:02:09.602568Z",
+    "updated_at": "2025-12-03T10:02:09.602568Z"
+  },
+  "content": [
+    {
+      "id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "submission_id": "f4cc3c2c-37f2-4246-8d48-8e2566c0651d",
+      "content_type": "manuscript",
+      "content_text": "# Functional CDKN2A assay identifies frequent deleterious alleles misclassified as variants of uncertain significance\n\n## Authors\n\n- Hirokazu Kimura<sup>2</sup>\n- Raymond M Paranal<sup>2</sup>\n- Neha Nanda<sup>2</sup>\n- Laura D Wood<sup>2</sup>\n- James R Eshleman<sup>2</sup>\n- Ralph H Hruban<sup>2</sup>\n- Michael G Goggins<sup>2</sup>\n- Alison P Klein<sup>2</sup>\n- Randall Brand\n- Nicholas J Roberts<sup>2</sup> ([ORCID: 0000-0002-8709-0664](https://orcid.org/0000-0002-8709-0664)) \u2020\n\n### Affiliations\n\n1. The Research Institute of the McGill University Health Centre Quebec Canada\n2. The Sol Goldman Pancreatic Cancer Research Center, Department of Pathology, Johns Hopkins University Baltimore United States\n3. Human Genetics Predoctoral Training Program, the McKusick-Nathans Institute of Genetic Medicine, The Johns Hopkins University School of Medicine Baltimore United States\n4. Department of Oncology, The Johns Hopkins University School of Medicine Baltimore United States\n5. Department of Epidemiology, The Johns Hopkins University Bloomberg School of Public Health Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPathogenic germline CDKN2A variants are associated with an increased risk of pancreatic ductal adenocarcinoma (PDAC). CDKN2A variants of uncertain significance (VUSs) are reported in up to 4.3% of patients with PDAC and result in significant uncertainty for patients and their family members as an unknown fraction are functionally deleterious, and therefore, likely pathogenic. Functional characterization of CDKN2A VUSs is needed to reclassify variants and inform clinical management. Twenty-nine germline CDKN2A VUSs previously reported in patients with PDAC or in ClinVar were evaluated using a validated in vitro cell proliferation assay. Twelve of the 29 CDKN2A VUSs were functionally deleterious (11 VUSs) or potentially functionally deleterious (1 VUS) and were reclassified as likely pathogenic variants. Thus, over 40% of CDKN2A VUSs identified in patients with PDAC are functionally deleterious and likely pathogenic. When incorporating VUSs found to be functionally deleterious, and reclassified as likely pathogenic, the prevalence of pathogenic/likely pathogenic CDKN2A in patients with PDAC reported in the published literature is increased to up to 4.1% of patients, depending on family history. Therefore, CDKN2A VUSs may play a significant, unappreciated role in risk of pancreatic cancer. These findings have significant implications for the counselling and care of patients and their relatives.\n\n## Introduction\n\nPancreatic ductal adenocarcinoma (PDAC) is a lethal cancer with a median survival of less than 6 months and a 5-year survival rate of only 10% (Siegel et al., 2020). Surveillance of high-risk individuals (HRIs), such as people with a pathogenic germline variant in a pancreatic cancer susceptibility gene, for example, ATM, BRCA1, BRCA2, CDKN2A, CPA1, CPB1, MLH1, MSH2, MSH6, PALB2, PMS2, PRSS1, and STK11, has the potential to reduce mortality through detection of early, potentially curable, PDAC and its precursor lesions (Canto et al., 2018; Vasen et al., 2016). The International Cancer of the Pancreas Screening (CAPS) Consortium trials found that surveillance identified either PDAC or a high-grade precursor lesion in 6.8% of HRIs, including relatives of patients with familial pancreatic cancer and individuals with a pathogenic germline variant in a pancreatic cancer susceptibility gene, during a median follow-up 5.6 years (24 of 354 individuals) (Canto et al., 2013; Goggins et al., 2020; Canto et al., 2018). Similarly, in a recent screening study of 178 HRIs with a germline pathogenic CDKN2A variant, 13 individuals with PDAC were identified (7.3%) during a median follow-up 53 months (Vasen et al., 2016). Importantly, the overall resection rate and 5-year survival rate was 75% and 24%, respectively (Vasen et al., 2016). Furthermore, patients with PDAC and a pathogenic germline variant in a pancreatic cancer susceptibility gene may have cancers that are uniquely sensitive to specific anti-cancer therapies, as is the case for poly(ADP)-ribose polymerase inhibitors and immunotherapy (Kaufman et al., 2015; Le et al., 2015). Consequently, recent American Society of Clinical Oncology (ASCO) and National Comprehensive Cancer Network (NCCN) guidelines recommend germline testing of all pancreatic cancer patients and their at-risk first-degree relatives (Goggins et al., 2020; Stoffel et al., 2019).\n\nThe CDKN2A gene encodes two proteins, p16INK4a and p14ARF. p16INK4a inhibits CDK4 activity, is a regulator of cell cycle progression, and a tumor suppressor gene (Serrano et al., 1993). Germline variants in CDKN2A that affect p16INK4a (hereafter referred to CDKN2A variants) can be classified as either pathogenic, benign, or variants of uncertain significance (VUSs) based on American College of Medical Genetics (ACMG) guidelines (Richards et al., 2015). Pathogenic germline CDKN2A variants have been identified in up to 3.3% patients with familial pancreatic cancer and up to 2.6% of patients with PDAC unselected for family history or without a family history of PDAC (Brand et al., 2018; Chaffee et al., 2018; Hu et al., 2018; Kimura et al., 2021; Lowery et al., 2018; McWilliams et al., 2018; McWilliams et al., 2011; Roberts et al., 2016; Shindo et al., 2017; Singhi et al., 2019; Zhen et al., 2015). Strikingly, individuals with a known pathogenic germline CDKN2A variant have up to a 12.3-fold increased risk of developing PDAC (Hu et al., 2018).\n\nGermline CDKN2A VUSs are a common finding in patients undergoing germline genetic testing. CDKN2A VUSs, predominantly rare missense variants, are found in 2.9\u20134.3% of patients with PDAC, depending on family history (Chaffee et al., 2018; McWilliams et al., 2018; Roberts et al., 2016; Shindo et al., 2017; Zhen et al., 2015). Finding a germline CDKN2A VUS can be a cause of significant clinical uncertainty. For example, while individuals with a pathogenic germline CDKN2A variant are recommended for clinical surveillance, those with a germline CDKN2A VUS are often not included in surveillance studies unless they fulfill family history criteria (Goggins et al., 2020; Stoffel et al., 2019). Therefore, the functional characterization and reclassification of CDKN2A VUSs will inform disease surveillance and early detection efforts.\n\nThe effect of CDKN2A variants can be determined in vitro by assay of a specific molecular function of p16INK4A, such as binding to CDK4/6, or by assay a broad cellular function, such as cell proliferation, cell viability, and cell cycle progression (Kannengiesser et al., 2009; Miller et al., 2011; Ng et al., 2018). The positive and negative predictive values for assays of broad cellular function are higher than those considering only CDK4/6 binding (Miller et al., 2011). For example, some CDKN2A variants, such as p.Gly35Ala, p.Gly67Arg, p.Glu69Gly, and p.Arg87Trp, bind to CDK4 comparably to wild type (WT) p16INK4a, but do not inhibit cell proliferation, indicating that additional functions not assessed in vitro CDK4 binding are important for cellular function (Kannengiesser et al., 2009).\n\nIn this study, we used a validated in vitro cell proliferation assay and cell cycle analysis to determine the functional consequence of CDKN2A variants and reclassify 29 germline CDKN2A VUSs previously reported in patients with PDAC.\n\n## Results\n\n### CDKN2A variants assayed\n\nThe germline CDKN2A variants functionally characterized in this study are presented in Table 1 and Supplementary file 1. Variants were classified using ACMG variant classification guidelines and given as amino acid change with reference to NP_000068.1 (Richards et al., 2015). We defined benchmark pathogenic variants as variants previously reported in patients with familial pancreatic cancer, PDAC, or reported in ClinVar as pathogenic or likely pathogenic. Benchmark pathogenic variants included: p.Leu16Arg, p.Arg24Pro, p.Ile49Thr, p.Met53Ile, p.Leu78Hisfs*41, p.His83Tyr, p.Asp84Asn, p.Gly101Trp, and p.Val126Asp (Chaffee et al., 2018; Chang et al., 2016; Horn et al., 2021; Hu et al., 2018; McWilliams et al., 2018; Roberts et al., 2016; Zhen et al., 2015). We defined benchmark benign variants as variants reported in ClinVar as benign or likely benign. Benchmark benign variants included: p.Ala57Val, p.Ala100Ser, p.His123Gln, p.Ala127Ser, p.Arg144Cys, and p.Ala148Thr (McWilliams et al., 2018; Roberts et al., 2016). Germline CDKN2A VUSs were selected as detailed in Figure 1. Briefly, 29 missense CDKN2A variants affecting p16INK4A that were previously reported in patients with familial pancreatic cancer, PDAC, or reported in ClinVar as VUSs were selected (Chaffee et al., 2018; Hu et al., 2018; McWilliams et al., 2018; Roberts et al., 2016; Shindo et al., 2017; Zhen et al., 2015). These 29 VUSs included: p.Met9Thr, p.Pro11Leu, p.Thr18Pro, p.Ala20Gly, p.Arg24Gln, p.Pro41Gln, p.Gln50Arg, p.Leu65Pro, p.His66Pro, p.His66Arg, p.Gly67Arg, p.Ala68Val, p.Glu69Gly, p.Asp74Ala, p.Asp74His, p. Asp84Ala, p.Gly89Asp, p.Arg99Gly, p.Gly101Arg, p.Ala109Pro, p.Gly111Ser, p.Gly122Val, p.Arg124Cys, p.Asp125His, p.Ala127Pro, p.Arg128Pro, p.Ala134Thr, p.Gly139Arg, and p.Ala143Thr.\n\n**Table 1.**\n CDKN2A variants assayed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Classificationa</th>\n      <th>Variantb</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pathogenic</td>\n      <td>p.Leu16Arg, p.Arg24Pro, p.Met53Ile, p.Gly101Trp, p.Val126Asp</td>\n    </tr>\n    <tr>\n      <td>Likely pathogenic</td>\n      <td>p.Ile49Thr, p.Leu78Hisfs*41, p.His83Tyr, p.Asp84Asn</td>\n    </tr>\n    <tr>\n      <td>Likely benign</td>\n      <td>p.Ala57Val, p.Ala100Ser, p.His123Gln, p.Ala127Ser, p.Arg144Cys</td>\n    </tr>\n    <tr>\n      <td>Benign</td>\n      <td>p.Ala148Thr</td>\n    </tr>\n    <tr>\n      <td>VUS</td>\n      <td>p.Met9Thr, p.Pro11Leu, p.Thr18Pro, p.Ala20Gly, p.Arg24Gln, p.Pro41Gln, p.Gln50Arg, p.Leu65Pro, p.His66Pro, p.His66Arg, p.Gly67Arg, p.Ala68Val, p.GluE69Gly, p.Asp74Ala, p.Asp74His, p. Asp84Ala, p.Gly89Asp, p.Arg99Gly, p.Gly101Arg, p.Ala109Pro, p.Gly111Ser, p.Gly122Val, p.Arg124Cys, p.Asp125His, p.Ala127Pro, p.Arg128Pro, p.Ala134Thr, p.Gly139Arg, and p.Ala143Thr</td>\n    </tr>\n  </tbody>\n</table>\n\n_a. Classification using American College of Medical Genetics (ACMG) variant classification guidelines.b. Variant given as protein change with reference to NP_000068.1. Known pathogenic and benign variants used for benchmarking indicated in bold._\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig1-v2.jpg)\n\n**Figure 1.:** Workflow to identify the 29 germline CDKN2A VUS selected for characterization in our functional assay. CDKN2A VUSs were classified using American College of Medical Genetics (ACMG) guidelines and either identified in patients with pancreatic ductal adenocarcinoma (PDAC) from published literature or in ClinVar.\n\n### Validation of in vitro functional assay\n\nPANC-1 (CRL-1469) is a human PDAC cell line with a homozygous deletion of CDKN2A (Caldas et al., 1994). Consistent with previous reports, CDKN2A (p16INK4A) was not detectable in PANC-1 cells by western blot (Figure 2A). Stable expression of WT CDKN2A in PANC-1 cells through lentiviral transduction resulted in a significant reduction in cell proliferation compared to empty vector control (p-value < 0.0001) (Figure 2A and B). Conversely, stable expression of three known pathogenic, and therefore functionally deleterious, CDKN2A variants, p. Leu78Hisfs*41, p.Gly101Trp, or p.Val126Asp, in PANC-1 cells resulted in no reduction in cell proliferation compared to the empty vector control (Figure 2A and B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig2-v2.jpg)\n\n**Figure 2.:** (A) Western blot of whole cell lysates from PANC-1 cells and PANC-1 cells stably expressing wild type CDKN2A (p16INK4A) or selected pathogenic variants using anti-CDKN2A and anti-vinculin antibodies as a loading control. No expression of CDKN2A (p16INK4A) detected in PANC-1 cells or PANC-1 cell stably expressing empty vector. CDKN2A (p16INK4A) expression detected in PANC-1 cells stably expressing pathogenic variants. (B) Growth of PANC-1 cell and PANC-1 cells stably expressing wild type CDKN2A cDNA (p16INK4A) or selected pathogenic variants over 14 days in culture. Cell proliferation values are shown as mean (n = 3) \u00b1 s.d. normalized to PANC-1 cell stably expressed with empty vector. Significant growth inhibition in PANC-1 cell stably expressing wild type CDKN2A (p16INK4A). *p < 0.01. Original files of the full raw unedited blots and the uncropped blots with the relevant CDKN2A and vinculin bands presented in Figure 2\u2014source data 1, Figure 2\u2014source data 2 and 3. For raw data in Figure 2, please refer to Figure 2\u2014source data 4.\n\nTo establish benchmarks for the functional interpretation of CDKN2A VUSs, we next determined cell proliferation values for an additional six known pathogenic and six known benign variants in our assay. Known pathogenic and benign variants are likely functionally deleterious and functionally neutral, respectively, in our assay and were used as benchmarks for interpretation of CDKN2A VUSs. The mean cell proliferation value for all pathogenic variants assayed was 0.90 (range: 0.84\u20131.03), while the mean cell proliferation value for all benign variants assayed was 0.26 (range: 0.14\u20130.48) (Figure 3). Importantly, there was clear demarcation between the mean cell proliferations values of assayed benchmark pathogenic and benign variants. Therefore, we set the following thresholds to characterize assayed VUSs. VUSs were characterized as either functionally deleterious or functionally neutral if they had mean cell proliferation values of >0.81 or \u02c20.44, respectively, based on the Z-score 95% confidence interval (CI). To classify assayed VUSs with mean cell proliferations values \u22650.44 but \u22640.81, we used a cutoff of 0.66, the midpoint between the lowest mean cell proliferation value for a pathogenic variant and the highest mean cell proliferation value for a benign variant, as area under the receiver operating characteristic (ROC) curve was 1, indicating that our assay could distinguish between pathogenic and benign variants with >99% sensitivity and >99% specificity. Therefore, assayed VUSs with a mean cell proliferation value >0.66 and \u22640.81 were classified as potentially functionally deleterious, while VUSs with a mean cell proliferation value >0.44 than \u22640.66 classified as potentially functionally neutral (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig3-v2.jpg)\n\n**Figure 3.:** Functional characterization of 45 CDKN2A variants (9 pathogenic variants, 7 benign variants, 29 variants of uncertain significance [VUSs]) in PANC-1 cells. Cell proliferation values are shown as mean (n = 3) \u00b1 s.d. normalized to PANC-1 cell stably expressed with empty vector. Assayed variants with mean cell proliferation values: (1) above the gray shaded area (>0.81) were classified as functionally deleterious, (2) below the gray shaded area (<0.44) were classified as functionally benign, (3) in the gray area above the threshold dotted line (\u22650.66 but \u22640.81) were potentially functionally deleterious, and (4) in the gray area below the threshold dotted line (<0.66 but \u22650.44) were potentially functionally neutral. For raw data in this figure, please refer to Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Western blot of whole cell lysates from 293T cells, a human embryonic kidney cell line and PANC-1, MIA PaCa-2, and AsPC-1 cells, human PDAC cell lines using anti-CDKN2A and anti-vinculin antibodies as a loading control. No expression of CDKN2A (p16INK4A) detected in human PDAC cells. CDKN2A (p16INK4A) expression detected in 293T cells. For the original files of the full raw unedited blots and figures with the uncropped blots with the relevant bands clearly labelled, please refer to Figure 3\u2014figure supplement 1\u2014source data 1, Figure 3\u2014figure supplement 1\u2014source data 2, Figure 3\u2014figure supplement 1\u2014source data 3.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Functional characterization of 45 CDKN2A variants (9 pathogenic variants, 7 benign variants, 29 variants of uncertain significance [VUSs]). Cell proliferation values are shown as mean (n = 3) \u00b1 s.d. normalized to MIA PaCa-2 (A) or AsPc-1 (B) cell stably expressed with empty vector. Assayed variants with mean cell proliferation values: (1) above the gray shaded area (>0.80 for MIA PaCa-2 cells and 0.91 for AsPC-1 cells) were classified as functionally deleterious, (2) below the gray shaded area (<0.45 for MIA PaCa-2 cells and 0.51 for AsPC-1 cells) were classified as functionally benign, (3) in the gray area above the threshold dotted line (\u22650.57 but \u22640.80 for MIA PaCa-2 cells and \u22650.74 but \u22640.91 for AsPC-1 cells) were potentially functionally deleterious, and (4) in the gray area below the threshold dotted line (<0.57 but \u22650.45 for MIA PaCa-2 cells and <0.74 but \u22650.51 for AsPC-1 cells) were potentially functionally neutral. For raw data in this figure, please refer to Figure 3\u2014figure supplement 2\u2014source data 1.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Functional characterization of 45 CDKN2A variants (9 pathogenic variants, 7 benign variants, 29 variants of uncertain significance [VUSs]). Cell proliferation values are shown as mean of PANC-1, MIA PaCa-2, and AsPc-1 cell values. Assayed variants with mean cell proliferation values: (1) above the gray shaded area (>0.83) were classified as functionally deleterious, (2) below the gray shaded area (<0.47) were classified as functionally benign, (3) in the gray area above the threshold dotted line (\u22650.62 but \u22640.83) were potentially functionally deleterious, and (4) in the gray area below the threshold dotted line (<0.62 but \u22650.47) were potentially functionally neutral. For raw data in this figure, please refer to Figure 3\u2014figure supplement 3\u2014source data 1.\n\n### Functional characterization and reclassification of CDKN2A VUS\n\nWe used our cell proliferation assay to functionally characterize and reclassify 29 germline CDKN2A VUSs. These VUSs were selected because they were either reported in previously published studies in patients with PDAC and/or were reported in ClinVar (Figure 3). Eleven of the 29 VUSs (37.9%) had cell proliferation scores above 0.81 and were classified as functionally deleterious, including p.Thr18Pro, p.Ala20Gly, p.Gln50Arg, p.His66Pro, p.Ala68Val, p.Asp74Ala,, p.Asp84Ala, p.Gly89Asp, p.Ala109Pro, p.Ala127Pro, and p.Arg128Pro. One VUS (3.4%), p.Leu65Pro, had a cell proliferation score between 0.66 and 0.81 and was classified as potentially functionally deleterious. Three VUSs (10.3%), p.Asp74His, p.Gly111Ser, and, p.Gly122Val, had a cell proliferation score between 0.66 and 0.44 and were classified as potentially functionally neutral. The remaining 14 VUSs (48.3%) had cell proliferation scores below 0.44 and were classified as functionally neutral, including p.Met9Thr, p.Pro11Leu, p.Arg24Gln, p.Pro41Gln, p.His66Arg, p.Gly67Arg, p.Glu69Gly, p.Arg99Gly, p.Gly101Arg, p.Arg124Cys, p.Asp125His, p.Ala134Thr, p.Gly139Arg, p.Ala143Thr. Taken together, 12 of the 29 germline CDKN2A variants previously classified as VUSs, representing over 40% of assayed VUSs, demonstrated aberrant function in our assay and would be reclassified as likely pathogenic based on ACMG guidelines that consider validated in vitro functional assays showing a deleterious effect for a variant as strong evidence to support pathogenicity (Richards et al., 2015).\n\n### Assay of CDKN2A VUSs in additional PDAC cell lines\n\nTo determine if the PDAC cell line used in our assay affected variant functional characterizations, we assayed all CDKN2A variants (benchmark pathogenic, benchmark benign, and VUS) using two additional PDAC cell lines with homozygous deletions of CDKN2A: MIA PaCa-2 (ATCC, catalog no. CRL-1420) and AsPC-1 (ATCC, catalog no. CRL-1682) (Yamato and Furukawa, 2001). Western blot for CDKN2A did not detect expression of p16INK4A in either cell line (Figure 3\u2014figure supplement 1). Importantly, there was clear demarcation between the mean cell proliferation values of assayed benchmark pathogenic and benign variants in both MIA PaCa-2 and AsPC-1 (Figure 3\u2014figure supplement 2A-B and Supplementary file 2). In MIA PaCa-2 cells, 7 (24.1%) VUSs were characterized as functionally deleterious, 5 (17.2%) as potentially functionally deleterious, 3 (10.3%) as potentially functionally neutral, and 14 (48.3%) as functionally neutral based on their mean cell proliferation values (Figure 3\u2014figure supplement 2A and Supplementary file 2). In AsPC-1 cells, 6 (20.7%) VUSs were characterized as functionally deleterious, 6 (20.7%) as potentially functionally deleterious, 8 (27.6%) as potentially functionally neutral, and 9 (31%) as functionally neutral based on their mean cell proliferation values (Figure 3\u2014figure supplement 2B and Supplementary file 2). Importantly, there was classification agreement between VUS functional classifications across cell lines (Supplementary file 2). When considering mean cell proliferation values for variants across all cell lines, 11 VUSs (20.7%; p.Thr18Pro, p.Gln50Arg, p.Leu65Pro, p.His66Pro, p.Ala68Val, p.Asp74Ala, p.Asp84Ala, p.Gly89Asp, p.Ala109Pro, p.Ala127Pro, and p.Arg128Pro) were classified as functionally deleterious, 1 VUS (3.4%; p.Ala20Gly) was potentially functionally deleterious, 2 VUSs (6.9%; p.Asp74His and p.Gly122Val) were potentially functionally neutral, and 15 VUSs (51.7%; p.Met9Thr, p.Pro11Leu, p.Arg24Gln, p.Pro41Gln, p.His66Arg, p.Gly67Arg, p.Glu69Gly, p.Arg99Gly, p.Gly101Arg, p.Gly111Ser, p.Arg124Cys, p.Asp125His, p.Ala134Thr, p.Gly139Arg, and p.Ala143Thr) were functionally neutral (Figure 3\u2014figure supplement 3 and Supplementary file 2).\n\n### Analysis of cell cycle progression\n\nAs reintroduction of CDKN2A into cancer cells lacking CDKN2A delays cell cycle progression, we determined the percent of variant-expressing PANC-1 cells in G1, G2/M, and S phases of the cell cycle (Miller et al., 2011). The percent of cells in G1 phase for benchmark pathogenic variants (47.2%, range: 43\u201350.9%) and VUSs with functionally deleterious or potentially functionally deleterious classifications (48.5%, range: 42.2\u201352.3%) were significantly lower than benchmark benign variants (63.1%, range: 58.4\u201367.1%) (p-value < 0.01, Student\u2019s t test) and VUSs with functionally neutral or potentially functionally neutral classifications (62.8%, range: 57.6\u201368.8%) (p-value < 0.01, Student\u2019s t test) (Figure 4 and Figure 4\u2014figure supplements 1\u20134). Similarly, the percent of cells in G2/M phase for benchmark pathogenic variants (42.4%, range: 37.7\u201349.2%) and VUSs with functionally deleterious or potentially functionally deleterious classifications (40.4%, range: 37.3\u201345.5%) were significantly lower than benchmark benign variants (25.7%, range: 19.3\u201335.1%) and VUSs with functionally neutral or potentially functionally neutral classifications (26.6%, range: 18.9\u201336.6%) (p-value < 0.01, Student\u2019s t test) (Figure 4\u2014figure supplement 5). These data are consistent with the functional classifications from our cell proliferation assay.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig4-v2.jpg)\n\n**Figure 4.:** G1 percent for 45 CDKN2A variants (9 pathogenic variants, 7 benign variants, 29 variants of uncertain significance [VUSs]) in PANC-1 cells. Significant inhibition of G1 arrest function of CDKN2A by benchmark pathogenic variants and functionally deleterious or potentially functionally deleterious VUSs. *p < 0.01. For raw data in this figure, please refer to Figure 4 and Table 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Cell cycle analysis was performed with percentages of cells in each phase (G1, G2_M, and S) indicated. Flow cytometry analysis images for PANC-1 cell stably expressed with empty vector or benchmark pathogenic variants.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Cell cycle analysis was performed with percentages of cells in each phase (G1, G2_M, and S) indicated. Flow cytometry analysis images for PANC-1 cell stably expressed with empty vector or benchmark benign variants.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Cell cycle analysis was performed with percentages of cells in each phase (G1, G2_M, and S) indicated. Flow cytometry analysis images for PANC-1 cell stably expressed with empty vector or functionally deleterious and potentially functionally deleterious VUSs.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Cell cycle analysis was performed with percentages of cells in each phase (G1, G2_M, and S) indicated. Flow cytometry analysis images for PANC-1 cell stably expressed with empty vector or functionally neutral and potentially functionally neutral VUSs.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/71137/elife-71137-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** G2_M percent for 45 CDKN2A variants (9 pathogenic variants, 7 benign variants, 29 variants of uncertain significance [VUS]) in PANC-1 cells. G2_M percent in benchmark pathogenic variants and functionally deleterious or potentially functionally deleterious VUSs expression cells were significantly higher than that in benchmark benign variants expression cells. *p < 0.01. For raw data in this figure, please refer to Figure 4 and 1.\n\n### Comparison with previously reported functional data\n\nFive of the 29 CDKN2A VUSs assayed had previously reported functional data available (Supplementary file 3). In agreement with our functional classification, p.Arg24Gln and p.Gly101Arg did not demonstrate deleterious effects in previously reported CDK4 binding and cell proliferation assays (Jenkins et al., 2013; Kannengiesser et al., 2009; Miller et al., 2011). p.Gly122Val previously demonstrated CDK6 binding similar to WT CDKN2A, binding to CDK4 was significantly reduced, and partially inhibit cell proliferation (Yakobson et al., 2000). In our study, p.Gly122Val partially inhibited cell proliferation and clustered with potentially functionally neutral variants. Furthermore, p.Gly67Arg and p.Glu69Gly were previously shown to result in a 40% reduction in CDK4 binding compared to WT CDKN2A (Kannengiesser et al., 2009). In our study, p.Gly67Arg and p.Glu69Gly clearly inhibited cell proliferation and clustered with functionally neutral variants.\n\n### Prevalence of functionally deleterious CDKN2A VUS in patients with PDAC\n\nAs the assayed CDKN2A VUSs included variants identified in previously published studies of patients with PDAC, we next determined the prevalence of functionally deleterious VUSs, VUSs that could be reclassified as likely pathogenic variants, in separate cohorts of patients with PDAC. Ten (58.8%) of the 17 CDKN2A VUSs identified in a study of 638 patients with familial pancreatic cancer (Roberts et al., 2016) were found to be functionally deleterious in our assay and could be reclassified as likely pathogenic variants. In another study of 727 patients with a family history of PDAC, including patients that did not meet the criteria for classification as familial pancreatic cancer, 6 (46.2%) of 13 CDKN2A VUSs identified were functionally deleterious in our assay (Zhen et al., 2015). Similarly, in a study of 302 patients with a family history of PDAC, 4 of the 9 (44.4%) CDKN2A VUSs reported were functionally deleterious in our assay (Chaffee et al., 2018). Combining these latter two study results, there were 10 functionally deleterious CDKN2A variants that could be reclassified as likely pathogenic variants in 1029 patients with a family history of PDAC.\n\nWhen considering patients with PDAC unselected for family history, in one study of 350 patients with PDAC (McWilliams et al., 2018), 3 of 8 (37.5%) VUSs identified were classified as functionally deleterious in our assay. On the other hand, in another study of 854 patients with PDAC unselected for family history, the one VUS identified was found to be functionally neutral (Shindo et al., 2017). Similarly, when combining these data, three functionally deleterious CDKN2A variants that could be reclassified as likely pathogenic variants were identified in 1204 patients with PDAC unselected for family history.\n\nAs we assayed all CDKN2A VUSs reported in these studies, our data indicate that the prevalence of likely pathogenic germline CDKN2A variants initially characterized as VUSs is 1.6% (95% CI: 0.8\u20132.9%) in patients with familial pancreatic cancer, 0.9% (95% CI: 0.5\u20131.8%) in patients with PDAC positive family history of PDAC (including patients that did not meet the criteria for classification as familial pancreatic cancer), and 0.1% (95% CI: 0.02\u20130.3%) in PDAC patients unselected for family history. When incorporating functionally deleterious VUSs we have reclassified as likely pathogenic variants with known pathogenic variants in CDKN2A, the cumulative prevalence of pathogenic and likely pathogenic CDKN2A variants in these studies increased from 2.5% to 4.1% (95% CI: 2.8\u20135.9%) in patients with familial pancreatic cancer, from 1.7% to 2.7% (95% CI: 1.9\u20133.9%) in patients with PDAC who had a positive for a family history of the disease (including patients that did not meet the criteria for classification as familial pancreatic cancer), and from 0.7% to 1.0% (95% CI: 0.6\u20131.7%) in PDAC patients unselected for family history.\n\n## Discussion\n\nGermline CDKN2A VUSs are identified in up to 4.3% patients with PDAC and are the cause of significant clinical uncertainty. Individuals with a CDKN2A VUS are not currently eligible for surveillance unless they meet other family history criteria. We used a cell proliferation assay to functionally characterize germline CDKN2A VUSs identified in patients with PDAC and/or reported in ClinVar and provide evidence to reclassify variants into clinically actionable strata.\n\nWe found that over 40% of CDKN2A variants previously classified as VUS were functionally deleterious in our assay and could be reclassified as likely pathogenic variants (12 of 29 CDKN2A VUSs; 41.4%). When considering CDKN2A VUS identified in patients with PDAC, our results suggest that the prevalence of CDKN2A VUSs that are functionally deleterious is up to 1.6% in patients with PDAC, depending on family history. It should be noted, however, that we characterized only missense CDKN2A VUS in our assay. Functional characterization of other types of CDKN2A VUS, such as synonymous variants, in-frame indels, and non-coding variants, would refine these estimates.\n\nFurthermore, we determined the prevalence of germline CDKN2A VUSs that are functionally deleterious in patients with PDAC reported in previously published literature. Overlap of patient cohorts between these studies may affect estimates of prevalence. Regardless, we can conclude that functionally deleterious CDKN2A VUSs are likely to play a significant and previously unappreciated role in risk of PDAC, particularly for patients with a family history of the disease. Studies to define age-specific penetrance estimates for individuals with a pathogenic germline CDKN2A variant, including functionally deleterious variants previously classified as VUSs, are necessary and will inform genetic counselling, surveillance, and early detection efforts.\n\nVUS functional characterizations were generally consistent when using PANC-1, MIA PaCA-2, and AsPC-1 cells in our cell proliferation assay. Specifically, no variant found to be functionally deleterious or potentially functionally deleterious when assayed with one cell line, had a functionally neutral or potentially functionally neutral classification when assayed with another cell line. Furthermore, PDAC cell lines had different genetic alterations and degrees of ploidy (Sirivatanauksorn et al., 2001; Yamato and Furukawa, 2001) indicating that our functional classifications are robust to cell line-specific effects.\n\nConsistent with our functional classifications, we found that benchmark pathogenic variants and VUSs classified as functionally deleterious or potentially functionally deleterious had a significantly lower percent of cells in G1 phase and a significantly higher percent of cells in G2/M phase of the cell cycle compared to either benchmark benign variants or VUSs classified as functionally benign or potentially functionally benign. These data suggest that expression of CDKN2A variants classified as pathogenic, functionally deleterious, or potentially functionally deleterious do not control progression through the cell cycle.\n\nWe were also able to compare our assay results for five CDKN2A VUSs with previously published data. In general, our assay results were consistent with previous reports. However, assay results for two VUSs, p.Gly67Arg and p.Glu69Gly, were inconsistent with previously reported partial reduction in CDK4 binding. There are several explanations for these observations. First, our assay is of broad cellular function, specifically cell proliferation, and therefore, may encompass functions other than CDK4 binding. Second, it is possible that overexpression of CDKN2A variants with partial loss-of-function may be obscured in our assay by non-physiological levels of expression. Future studies to correlate CDK4 binding with pathogenicity and to develop of functional assays that utilize endogenous promoters and enhancers would provide further clarity.\n\nIn conclusion, we functionally characterized and reclassified 29 CDKN2A VUSs identified in patients with PDAC or reported in ClinVar using a validated functional assay. We found that over 40% of CDKN2A VUS assayed were, in fact, functionally deleterious and as a result can be reclassified as likely pathogenic using ACMG guidelines. This finding may have significant implications for the management of patients with PDAC, and their relatives found to have a CDKN2A VUS.\n\n## Materials and methods\n\n### Cell lines\n\nPANC-1 (catalog no. CRL-1469), MIA PaCa-2 (catalog no. CRL-1420), and AsPC-1 (catalog no. CRL-1682), and the human embryonic kidney cell line 293T (catalog no. CRL-3216) were purchased from American Type Culture Collection (Manassas, VA). PANC-1, MIA PaCa-2, and 293T cells were maintained in Dulbecco\u2019s modified Eagle\u2019s medium supplemented with 10% fetal bovine serum. AsPC-1 cells were maintained in RPMI-1640 supplemented with 10% fetal bovine serum. Cell line authentication and mycoplasma testing of PDAC cell lines was performed using GenePrint 10 System (Promega Corporation, Madison, WI; catalog no. B9510) and a PCR-based MycoDtect kit (Greiner Bio-One, Monroe, NC; catalog no. 463 060), respectively, by the Genetics Resource Core Facility of The Johns Hopkins University School of Medicine, Baltimore, MD.\n\n### Western blot\n\nWestern blots were performed as previously described with the following modifications (Tamura, 2018): (1) anti-vinculin primary antibody was used at a 1:5000 dilution (Cell Signaling Technology, Beverly, MA; catalog no. 13901), (2) anti-CDKN2A primary antibody was used to detect p16INK4A at a 1:1000 dilution (Cell Signaling Technology, Beverly, MA; catalog no. 92803). Western blotting data and images presented are representative of at least three independent experiments.\n\n### Plasmid construction\n\npHAGE-CDKN2A (Addgene, plasmid no. 116726) and pHAGE-CDKN2A-L78Hfs*41 (Addgene, plasmid no. 116222) created by Gordon Mills & Kenneth Scott (Ng et al., 2018), and pLJM1-Empty (Addgene, plasmid no. 91980) created by Joshua Mendell (Golden et al., 2017) were obtained from Addgene (Watertown, MA). CDKN2A and CDKN2A-L78Hfs*41 cDNAs were subcloned into the pLJM1-Empty from pHAGE-CDKN2A and pHAGE-CDKN2A-L78Hfs*41, respectively, using the Q5 High-Fidelity PCR kit (New England Biolabs, Ipswich, MA; catalog no. E0555S) as previously described (Zhen et al., 2017). Primers used to subclone CDKN2A and CDKN2A-L78Hfs*41 cDNAs are given in Supplementary file 4. Integration of CDKN2A cDNA was confirmed by restriction enzyme digest using EcoRI-HF (New England Biolabs, Ipswich, MA; catalog no. R3101S) and Sanger sequencing (Genewiz, Plainsfield, NJ). Restriction enzyme, EcoRI-HF digest was performed with CutSmart Buffer (New England Biolabs, Ipswich, MA; catalog no. B7204S) at 37\u00b0C for 15 min. Expression constructs for each assayed CDKN2A variant were produced from the pLJM1-CDKN2A using the Q5 Site-Directed Mutagenesis kit (New England Biolabs, Ipswich, MA; catalog no. E0552). Primers used to generate each CDKN2A variant expression plasmids are given in Supplementary file 4. Integration of each CDKN2A VUS was confirmed using Sanger sequencing (Genewiz, Plainsfield, NJ). The manufacturer\u2019s protocol was followed unless otherwise specified.\n\n### Lentivirus production and generation of CDKN2A expressing PANC-1 cells\n\npLJM1 lentiviral expression vectors harboring a CDKN2A cDNA (WT or variant) and the lentiviral packaging vectors, psPAX2 (Addgene, plasmid no. 12260) and pCMV-VSV-G (Addgene, plasmid no. 8454), created by Didier Trono and Bob Weinberg, respectively (Stewart et al., 2003), were transfected into 293T cells using Lipofectamine 3000 transfection reagent (Thermo Fisher Scientific, Waltham, MA; catalog no. L3000008). Media was collected at 24 and 48 hr and lentiviral particles were concentrated with Lenti-X Concentrator (Clontech, Mountain View, CA; catalog no. 631231). Manufacturer\u2019s protocols were used unless otherwise specified.\n\nPANC-1, MIA PaCa-2, and AsPC-1 cells stably expressing WT CDKN2A (p16INK4A) or selected variants were generated by lentiviral transduction. Briefly, 1 \u00d7 105 cells were cultured in media supplemented with 10 \u00b5g/ml polybrene and transduced with 10 TUs/ml lentivirus particles. Cells were then centrifuged at 1200\u00d7 g for 1 hr. After 48 hr of culture at 37\u00b0C and 5% CO2, transduced cells were selected by culture in media containing 3 \u00b5g/ml puromycin for PANC-1 cells and 1 \u00b5g/ml puromycin for MIA PaCa-2 and AsPC-1 cells for 7 days.\n\n### Cell proliferation assay and functional characterization\n\n1 \u00d7 105 PANC-1, MIA PaCa-2, and AsPC-1 cells were seeded into culture (day 0) and cell numbers were counted using a TC20 Automated Cell Counter (Bio-Rad Laboratories, Hercules, CA, catalog no. 1450102) on day 7 for MIAPaCa-2 cells, and day 14 for PANC-1 and AsPC-1 cells. Cell numbers were normalized to empty vector transduced cells to give a relative cell proliferation value. Assays to determine the functional effect of CDKN2A variants were repeated in triplicate. Mean cell proliferation value and standard deviation (s.d.) were calculated.\n\nCDKN2A VUSs were functionally characterized into four categories: (1) deleterious, (2) potentially deleterious, (3) potentially neutral, and (4) neutral, based on the results of the cell proliferation assay using previously described methodology (Bouvet et al., 2019). Briefly, functionally deleterious was defined as cell proliferation values greater than the Z-score 95% CI upper limit calculated from benchmark pathogenic variants and benign variants. Functionally neutral was defined as proliferation values less than the Z-score 95% CI lower limit. Assayed variants with cell proliferation values between the thresholds for functionally deleterious and functionally neutral were characterized as potentially functionally deleterious or potentially functionally neutral if they had proliferation values above or below a cutoff determined by the ROC curve and Youden index.\n\n### Cell cycle analysis\n\nPANC-1 cells were incubated with 10 nM EdU for 2 hr, then harvested by trypsinization, washed, fixed, and stained using the Click-iT EdU Alexa Fluor 488 Flow Cytometry Assay Kit (Invitrogen, Carlsbad, CA, catalog no. C10425) and the FxCycle Violet Ready Flow Reagent (Invitrogen, catalog no. R37166) according to the manufacturer\u2019s protocols. Flow cytometry was performed on Cytek Aurora Flow Cytometry System (Cytek Biosciences, Fremont, CA) and the data analyzed to determine the percentage of cells in each phase of the cell cycle using the FlowJo software (BD Biosciences, San Jose, CA).\n\n### Statistical analyses\n\nStatistical analyses were performed using JMP v.11 (SAS, Cary, NC) and Prism v.6 (GraphPad, San Diego, CA). Comparison of means used the Student\u2019s t test. CIs for the prevalence of functionally deleterious CDKN2A variants were calculated using the modified Wald Method. A p-value less than 0.05 considered statistically significant.\n",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "92646726-c328-4619-8848-5bc8de60e32f",
+      "submission_id": "f4cc3c2c-37f2-4246-8d48-8e2566c0651d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emil Lou, University of Minnesota United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71137.sa1](https://doi.org/10.7554/eLife.71137.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for resubmitting your work entitled \"Functional CDKN2A assay identifies frequent deleterious alleles misclassified as variants of unknown significance\" for further consideration by eLife. Your article has been reviewed by 2 reviewers, one of whom is member of our Board of Reviewing Editors and the evaluation has been overseen by Wafik El-Deiry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nReviewer #1:\n\nThe investigators postulated that some variants of uncertain significance (VUS) of CDKN2A have been misclassified, and that some proportion may be in fact be deleterious and possibly pathogenic in carcinogenesis of pancreatic ductal adenocarcinoma (PDAC). in vitro analysis of cell proliferation of 29 known VUSs was performed, and the authors report that >40% of these variants are functionally deleterious.\n\nCDKN2A encodes a tumor suppressor as well as an important regulator of progression through the cell cycle. It has been extensively studied in epithelial carcinomas, including pancreatic ductal adenocarcinomas (PDAC). The concept that a significant number of previously reported variants of this gene may not be as benign has important implications for understanding etiology and downstream molecular effects and tumoral progression of this cancer, especially in the albeit relatively small number of patients who harbor germline variants that may be important in driving pancreatic cancer development. The study is well-written and leverages an established and validated in vitro cell proliferation assay from this lab.\n\n1. The information redesignating 40% of the VUS as functionally deleterious and possibly pathogenic is applied to external datasets. Did the investigators gain access to the raw data from the authors of the cited published works, or were the reassignments based on available information that was published? It would be important to access and confirm the raw data.\n\n2. Application to an internal dataset of tumor samples would affirm the conclusions made from the in vitro validation steps.\n\n3. The use of only a single PDAC cell line is a limitation that tempers the conclusions of the study [PANC-1 is a hypertriploid cell line; what is the effect in relation to CDKN2A?].The in vitro analysis should be performed on at least three cell lines to control for other differences between cell lines. This work would strengthen the argument, as the premise of the study is to extend the finding to in vivo/human PDAC, with implications that the reassigned germline VUSs are more pathogenic in humans than previously thought.\n\nReviewer #2:\n\nThe study provides evidence of functionality of mutations present in pancreatic cancer, a dismal condition predicted be the second cause of cancer death by 2030. Specifically, the authors showed that mutations in CDKN2A associated with increased risk of developing pancreatic cancer have lost the ability to control cell growth.\n\nThe authors have functionally characterized CDKN2A mutations present in familial pancreatic cancer cases. The methodology used is for the most adequate to address the main goal of the study. Some of the deficiencies/weaknesses are associated with limitations of the pancreatic cancer model/methodologies and lack of side by side comparison with other known factors associated with increased risk of the disease as well as clinical correlations of these mutations.\n\nTo fully support the authors conclusions, the authors should\n\n1) The Panc1 results should be repeated in two additional lines to avoid any cell line bias effect.\n\n2) The cell growth analysis should be confirmed using a cell cycle analysis to define if the mutants lack the ability to control G1 progression.\n\n3) The study should include side-by-side comparison with other know p16 mutations from familial cases.\n",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "114cc991-ac6e-450a-992f-03f45e7f4669",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C1",
+      "claim": "Pathogenic germline CDKN2A variants are associated with an increased risk of pancreatic ductal adenocarcinoma (PDAC).",
+      "claim_type": "EXPLICIT",
+      "source": "Pathogenic germline CDKN2A variants are associated with an increased risk of pancreatic ductal adenocarcinoma (PDAC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact and is supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "2214e866-af4a-4522-8908-861b04af2b6f",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C2",
+      "claim": "CDKN2A variants of uncertain significance (VUSs) are reported in up to 4.3% of patients with PDAC.",
+      "claim_type": "EXPLICIT",
+      "source": "CDKN2A variants of uncertain significance (VUSs) are reported in up to 4.3% of patients with PDAC and result in significant uncertainty for patients and their family members as an unknown fraction are functionally deleterious, and therefore, likely pathogenic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prevalence is cited from published literature referenced in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "68ff9666-9163-44d6-ac3b-ada2e25bcddf",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C3",
+      "claim": "Twelve of the 29 CDKN2A VUSs were functionally deleterious (11 VUSs) or potentially functionally deleterious (1 VUS).",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve of the 29 CDKN2A VUSs were functionally deleterious (11 VUSs) or potentially functionally deleterious (1 VUS) and were reclassified as likely pathogenic variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the functional assay performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "643a563a-7f93-46f2-bc26-bf70a7b727e4",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C4",
+      "claim": "Over 40% of CDKN2A VUSs identified in patients with PDAC are functionally deleterious and likely pathogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, over 40% of CDKN2A VUSs identified in patients with PDAC are functionally deleterious and likely pathogenic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental results showing 12 of 29 VUSs (41.4%) were functionally deleterious.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "e541204b-5c09-41f1-920b-904e6c2b59c5",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C5",
+      "claim": "The prevalence of pathogenic/likely pathogenic CDKN2A in patients with PDAC is increased to up to 4.1% when incorporating functionally deleterious VUSs.",
+      "claim_type": "EXPLICIT",
+      "source": "When incorporating VUSs found to be functionally deleterious, and reclassified as likely pathogenic, the prevalence of pathogenic/likely pathogenic CDKN2A in patients with PDAC reported in the published literature is increased to up to 4.1% of patients, depending on family history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by combining known pathogenic variants with newly reclassified VUSs from published cohorts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "e9a2924d-abcf-4b38-9998-9aed28776d7b",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C6",
+      "claim": "Pancreatic ductal adenocarcinoma (PDAC) has a median survival of less than 6 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic ductal adenocarcinoma (PDAC) is a lethal cancer with a median survival of less than 6 months and a 5-year survival rate of only 10% (Siegel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Siegel et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "f3896de4-e4a6-4bd8-b183-a5d13fec2d38",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C7",
+      "claim": "PDAC has a 5-year survival rate of only 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic ductal adenocarcinoma (PDAC) is a lethal cancer with a median survival of less than 6 months and a 5-year survival rate of only 10% (Siegel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Siegel et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "f34779dc-70f6-400f-a5cf-a870418c72bb",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C8",
+      "claim": "Surveillance of high-risk individuals has the potential to reduce mortality through detection of early, potentially curable, PDAC and its precursor lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Surveillance of high-risk individuals (HRIs), such as people with a pathogenic germline variant in a pancreatic cancer susceptibility gene, for example, ATM, BRCA1, BRCA2, CDKN2A, CPA1, CPB1, MLH1, MSH2, MSH6, PALB2, PMS2, PRSS1, and STK11, has the potential to reduce mortality through detection of early, potentially curable, PDAC and its precursor lesions (Canto et al., 2018; Vasen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Canto et al., 2018 and Vasen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "c4a84f22-f7f6-4495-958a-179e0b63dbdc",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C9",
+      "claim": "The International Cancer of the Pancreas Screening (CAPS) Consortium trials found that surveillance identified either PDAC or a high-grade precursor lesion in 6.8% of HRIs during a median follow-up 5.6 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The International Cancer of the Pancreas Screening (CAPS) Consortium trials found that surveillance identified either PDAC or a high-grade precursor lesion in 6.8% of HRIs, including relatives of patients with familial pancreatic cancer and individuals with a pathogenic germline variant in a pancreatic cancer susceptibility gene, during a median follow-up 5.6 years (24 of 354 individuals) (Canto et al., 2013; Goggins et al., 2020; Canto et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from CAPS Consortium studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "f912ff77-c4d1-4fce-b10f-34449b426a4e",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C10",
+      "claim": "In a screening study of 178 HRIs with a germline pathogenic CDKN2A variant, 13 individuals with PDAC were identified (7.3%) during a median follow-up 53 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in a recent screening study of 178 HRIs with a germline pathogenic CDKN2A variant, 13 individuals with PDAC were identified (7.3%) during a median follow-up 53 months (Vasen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Vasen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "322372a1-f6a9-40b1-bb24-a9eb887e4fe1",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C11",
+      "claim": "The overall resection rate and 5-year survival rate in the CDKN2A screening study was 75% and 24%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the overall resection rate and 5-year survival rate was 75% and 24%, respectively (Vasen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Vasen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "d0f268a3-360c-4243-a8c5-3a126c1d75a3",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C12",
+      "claim": "The CDKN2A gene encodes two proteins, p16INK4a and p14ARF.",
+      "claim_type": "EXPLICIT",
+      "source": "The CDKN2A gene encodes two proteins, p16INK4a and p14ARF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the CDKN2A gene.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "420f1050-aa7a-4fc6-8da3-f53f6f6092d9",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C13",
+      "claim": "p16INK4a inhibits CDK4 activity and is a regulator of cell cycle progression and a tumor suppressor gene.",
+      "claim_type": "EXPLICIT",
+      "source": "p16INK4a inhibits CDK4 activity, is a regulator of cell cycle progression, and a tumor suppressor gene (Serrano et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Serrano et al., 1993.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "52587b26-4d73-42a9-808a-989f0073cd2a",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C14",
+      "claim": "Pathogenic germline CDKN2A variants have been identified in up to 3.3% patients with familial pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathogenic germline CDKN2A variants have been identified in up to 3.3% patients with familial pancreatic cancer and up to 2.6% of patients with PDAC unselected for family history or without a family history of PDAC (Brand et al., 2018; Chaffee et al., 2018; Hu et al., 2018; Kimura et al., 2021; Lowery et al., 2018; McWilliams et al., 2018; McWilliams et al., 2011; Roberts et al., 2016; Shindo et al., 2017; Singhi et al., 2019; Zhen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "b12872be-0791-4767-bcc8-2967c795c3c4",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C15",
+      "claim": "Pathogenic germline CDKN2A variants have been identified in up to 2.6% of patients with PDAC unselected for family history or without a family history of PDAC.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathogenic germline CDKN2A variants have been identified in up to 3.3% patients with familial pancreatic cancer and up to 2.6% of patients with PDAC unselected for family history or without a family history of PDAC (Brand et al., 2018; Chaffee et al., 2018; Hu et al., 2018; Kimura et al., 2021; Lowery et al., 2018; McWilliams et al., 2018; McWilliams et al., 2011; Roberts et al., 2016; Shindo et al., 2017; Singhi et al., 2019; Zhen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "a491f83c-a880-4ffe-9588-7ebfb40c9dbb",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C16",
+      "claim": "Individuals with a known pathogenic germline CDKN2A variant have up to a 12.3-fold increased risk of developing PDAC.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, individuals with a known pathogenic germline CDKN2A variant have up to a 12.3-fold increased risk of developing PDAC (Hu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Hu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "d189ff4b-b98b-4865-b7bd-2ff5f1f60670",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C17",
+      "claim": "Germline CDKN2A VUSs are found in 2.9\u20134.3% of patients with PDAC, depending on family history.",
+      "claim_type": "EXPLICIT",
+      "source": "CDKN2A VUSs, predominantly rare missense variants, are found in 2.9\u20134.3% of patients with PDAC, depending on family history (Chaffee et al., 2018; McWilliams et al., 2018; Roberts et al., 2016; Shindo et al., 2017; Zhen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "8971470d-3725-479a-b3f7-1241c4c993fb",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C18",
+      "claim": "Individuals with a pathogenic germline CDKN2A variant are recommended for clinical surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while individuals with a pathogenic germline CDKN2A variant are recommended for clinical surveillance, those with a germline CDKN2A VUS are often not included in surveillance studies unless they fulfill family history criteria (Goggins et al., 2020; Stoffel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from clinical guidelines (Goggins et al., 2020; Stoffel et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "091743cf-4eba-481a-b291-e03450c00d58",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C19",
+      "claim": "Individuals with a germline CDKN2A VUS are often not included in surveillance studies unless they fulfill family history criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while individuals with a pathogenic germline CDKN2A variant are recommended for clinical surveillance, those with a germline CDKN2A VUS are often not included in surveillance studies unless they fulfill family history criteria (Goggins et al., 2020; Stoffel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from clinical guidelines (Goggins et al., 2020; Stoffel et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "c91d6766-9527-4698-babf-ceb378fdc7b3",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C20",
+      "claim": "The positive and negative predictive values for assays of broad cellular function are higher than those considering only CDK4/6 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive and negative predictive values for assays of broad cellular function are higher than those considering only CDK4/6 binding (Miller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Miller et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "836f5dc4-887f-45e3-a199-0ef02a573cfb",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C21",
+      "claim": "Some CDKN2A variants (p.Gly35Ala, p.Gly67Arg, p.Glu69Gly, and p.Arg87Trp) bind to CDK4 comparably to wild type p16INK4a, but do not inhibit cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, some CDKN2A variants, such as p.Gly35Ala, p.Gly67Arg, p.Glu69Gly, and p.Arg87Trp, bind to CDK4 comparably to wild type (WT) p16INK4a, but do not inhibit cell proliferation, indicating that additional functions not assessed in vitro CDK4 binding are important for cellular function (Kannengiesser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kannengiesser et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "8133e2fe-6b35-416b-911e-4bd9944584a1",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C22",
+      "claim": "PANC-1 is a human PDAC cell line with a homozygous deletion of CDKN2A.",
+      "claim_type": "EXPLICIT",
+      "source": "PANC-1 (CRL-1469) is a human PDAC cell line with a homozygous deletion of CDKN2A (Caldas et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Caldas et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "ecc24da6-8c4f-451a-be48-f6264d4b5945",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C23",
+      "claim": "CDKN2A (p16INK4A) was not detectable in PANC-1 cells by western blot.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports, CDKN2A (p16INK4A) was not detectable in PANC-1 cells by western blot (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "2586de4f-6d25-463d-909b-5c9820f32cda",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C24",
+      "claim": "Stable expression of WT CDKN2A in PANC-1 cells resulted in a significant reduction in cell proliferation compared to empty vector control (p-value < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Stable expression of WT CDKN2A in PANC-1 cells through lentiviral transduction resulted in a significant reduction in cell proliferation compared to empty vector control (p-value < 0.0001) (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cell proliferation assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "1914e139-410a-494c-a58a-199a69aadde9",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C25",
+      "claim": "Stable expression of pathogenic CDKN2A variants (p.Leu78Hisfs*41, p.Gly101Trp, or p.Val126Asp) in PANC-1 cells resulted in no reduction in cell proliferation compared to the empty vector control.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, stable expression of three known pathogenic, and therefore functionally deleterious, CDKN2A variants, p. Leu78Hisfs*41, p.Gly101Trp, or p.Val126Asp, in PANC-1 cells resulted in no reduction in cell proliferation compared to the empty vector control (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cell proliferation assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "33a2e261-d0f2-4f2e-972c-0677b0f4748c",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C26",
+      "claim": "The mean cell proliferation value for all pathogenic variants assayed was 0.90 (range: 0.84\u20131.03).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean cell proliferation value for all pathogenic variants assayed was 0.90 (range: 0.84\u20131.03), while the mean cell proliferation value for all benign variants assayed was 0.26 (range: 0.14\u20130.48) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the cell proliferation assay data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "6afc4ea1-1fef-4bd5-9dcd-34568703f105",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C27",
+      "claim": "The mean cell proliferation value for all benign variants assayed was 0.26 (range: 0.14\u20130.48).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean cell proliferation value for all pathogenic variants assayed was 0.90 (range: 0.84\u20131.03), while the mean cell proliferation value for all benign variants assayed was 0.26 (range: 0.14\u20130.48) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the cell proliferation assay data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "a5fc75d8-a092-4fa4-bdd9-3c5d3bf98b2e",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C28",
+      "claim": "There was clear demarcation between the mean cell proliferations values of assayed benchmark pathogenic and benign variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was clear demarcation between the mean cell proliferations values of assayed benchmark pathogenic and benign variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the cell proliferation data and is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "ceaa0f3d-0b0e-4cf1-9a7e-ac45edae129c",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C29",
+      "claim": "Eleven of the 29 VUSs (37.9%) had cell proliferation scores above 0.81 and were classified as functionally deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "Eleven of the 29 VUSs (37.9%) had cell proliferation scores above 0.81 and were classified as functionally deleterious, including p.Thr18Pro, p.Ala20Gly, p.Gln50Arg, p.His66Pro, p.Ala68Val, p.Asp74Ala,, p.Asp84Ala, p.Gly89Asp, p.Ala109Pro, p.Ala127Pro, and p.Arg128Pro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the functional assay performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "a22ba6fb-9a1f-46e2-8e5d-d7cf594cbe71",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C30",
+      "claim": "One VUS (3.4%), p.Leu65Pro, had a cell proliferation score between 0.66 and 0.81 and was classified as potentially functionally deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "One VUS (3.4%), p.Leu65Pro, had a cell proliferation score between 0.66 and 0.81 and was classified as potentially functionally deleterious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the functional assay performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "c50850b9-7bd4-4c8f-b692-ce2ab1a134d4",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C31",
+      "claim": "Three VUSs (10.3%), p.Asp74His, p.Gly111Ser, and p.Gly122Val, had a cell proliferation score between 0.66 and 0.44 and were classified as potentially functionally neutral.",
+      "claim_type": "EXPLICIT",
+      "source": "Three VUSs (10.3%), p.Asp74His, p.Gly111Ser, and, p.Gly122Val, had a cell proliferation score between 0.66 and 0.44 and were classified as potentially functionally neutral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the functional assay performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "0d5066bf-9dd6-40bf-9356-e8c82d137689",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C32",
+      "claim": "Fourteen VUSs (48.3%) had cell proliferation scores below 0.44 and were classified as functionally neutral.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 14 VUSs (48.3%) had cell proliferation scores below 0.44 and were classified as functionally neutral, including p.Met9Thr, p.Pro11Leu, p.Arg24Gln, p.Pro41Gln, p.His66Arg, p.Gly67Arg, p.Glu69Gly, p.Arg99Gly, p.Gly101Arg, p.Arg124Cys, p.Asp125His, p.Ala134Thr, p.Gly139Arg, p.Ala143Thr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the functional assay performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "461fcc05-0f77-4fc7-b2c3-a02ef20b56d7",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C33",
+      "claim": "MIA PaCa-2 and AsPC-1 are PDAC cell lines with homozygous deletions of CDKN2A.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if the PDAC cell line used in our assay affected variant functional characterizations, we assayed all CDKN2A variants (benchmark pathogenic, benchmark benign, and VUS) using two additional PDAC cell lines with homozygous deletions of CDKN2A: MIA PaCa-2 (ATCC, catalog no. CRL-1420) and AsPC-1 (ATCC, catalog no. CRL-1682) (Yamato and Furukawa, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Yamato and Furukawa, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "f0538462-e28b-4d14-8605-69ec0e0cf73b",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C34",
+      "claim": "Western blot did not detect expression of p16INK4A in MIA PaCa-2 and AsPC-1 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot for CDKN2A did not detect expression of p16INK4A in either cell line (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "f87d6ad4-d0b6-46ca-a99b-c5ae9b0d27eb",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C35",
+      "claim": "There was clear demarcation between the mean cell proliferation values of assayed benchmark pathogenic and benign variants in both MIA PaCa-2 and AsPC-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was clear demarcation between the mean cell proliferation values of assayed benchmark pathogenic and benign variants in both MIA PaCa-2 and AsPC-1 (Figure 3\u2014figure supplement 2A-B and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "d92dc90e-cbe7-4830-9627-38d57038c2f0",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C36",
+      "claim": "In MIA PaCa-2 cells, 7 (24.1%) VUSs were characterized as functionally deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "In MIA PaCa-2 cells, 7 (24.1%) VUSs were characterized as functionally deleterious, 5 (17.2%) as potentially functionally deleterious, 3 (10.3%) as potentially functionally neutral, and 14 (48.3%) as functionally neutral based on their mean cell proliferation values (Figure 3\u2014figure supplement 2A and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from the cell proliferation assay data in MIA PaCa-2 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "c8ac7fac-f44b-4fb6-ad37-6fe2f07bbcb5",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C37",
+      "claim": "In AsPC-1 cells, 6 (20.7%) VUSs were characterized as functionally deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "In AsPC-1 cells, 6 (20.7%) VUSs were characterized as functionally deleterious, 6 (20.7%) as potentially functionally deleterious, 8 (27.6%) as potentially functionally neutral, and 9 (31%) as functionally neutral based on their mean cell proliferation values (Figure 3\u2014figure supplement 2B and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from the cell proliferation assay data in AsPC-1 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "e8873aaa-127c-4cbb-bad6-0c4460badbeb",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C38",
+      "claim": "There was classification agreement between VUS functional classifications across cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was classification agreement between VUS functional classifications across cell lines (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from comparing results across the three cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "dfdd5a7c-26d4-4025-ad7d-6aea55c39b46",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C39",
+      "claim": "The percent of cells in G1 phase for benchmark pathogenic variants (47.2%, range: 43\u201350.9%) was significantly lower than benchmark benign variants (63.1%, range: 58.4\u201367.1%) (p-value < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "The percent of cells in G1 phase for benchmark pathogenic variants (47.2%, range: 43\u201350.9%) and VUSs with functionally deleterious or potentially functionally deleterious classifications (48.5%, range: 42.2\u201352.3%) were significantly lower than benchmark benign variants (63.1%, range: 58.4\u201367.1%) (p-value < 0.01, Student's t test) and VUSs with functionally neutral or potentially functionally neutral classifications (62.8%, range: 57.6\u201368.8%) (p-value < 0.01, Student's t test) (Figure 4 and Figure 4\u2014figure supplements 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from cell cycle analysis data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "840d2cc2-2e00-4b77-94f1-b2acbbebd45c",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C40",
+      "claim": "The percent of cells in G1 phase for VUSs with functionally deleterious or potentially functionally deleterious classifications (48.5%, range: 42.2\u201352.3%) was significantly lower than VUSs with functionally neutral or potentially functionally neutral classifications (62.8%, range: 57.6\u201368.8%) (p-value < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "The percent of cells in G1 phase for benchmark pathogenic variants (47.2%, range: 43\u201350.9%) and VUSs with functionally deleterious or potentially functionally deleterious classifications (48.5%, range: 42.2\u201352.3%) were significantly lower than benchmark benign variants (63.1%, range: 58.4\u201367.1%) (p-value < 0.01, Student's t test) and VUSs with functionally neutral or potentially functionally neutral classifications (62.8%, range: 57.6\u201368.8%) (p-value < 0.01, Student's t test) (Figure 4 and Figure 4\u2014figure supplements 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from cell cycle analysis data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "96a30fa5-724f-4e25-8bdf-d995d52a702e",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C41",
+      "claim": "The percent of cells in G2/M phase for benchmark pathogenic variants (42.4%, range: 37.7\u201349.2%) was significantly higher than benchmark benign variants (25.7%, range: 19.3\u201335.1%) (p-value < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the percent of cells in G2/M phase for benchmark pathogenic variants (42.4%, range: 37.7\u201349.2%) and VUSs with functionally deleterious or potentially functionally deleterious classifications (40.4%, range: 37.3\u201345.5%) were significantly lower than benchmark benign variants (25.7%, range: 19.3\u201335.1%) and VUSs with functionally neutral or potentially functionally neutral classifications (26.6%, range: 18.9\u201336.6%) (p-value < 0.01, Student's t test) (Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from cell cycle analysis data shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "a4b583ae-c527-4918-b9d4-d197b24eae35",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C42",
+      "claim": "p.Arg24Gln and p.Gly101Arg did not demonstrate deleterious effects in previously reported CDK4 binding and cell proliferation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our functional classification, p.Arg24Gln and p.Gly101Arg did not demonstrate deleterious effects in previously reported CDK4 binding and cell proliferation assays (Jenkins et al., 2013; Kannengiesser et al., 2009; Miller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous studies (Jenkins et al., 2013; Kannengiesser et al., 2009; Miller et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "ea0abf4f-450b-401f-a594-7776582e2f4c",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C43",
+      "claim": "p.Gly122Val previously demonstrated CDK6 binding similar to WT CDKN2A, binding to CDK4 was significantly reduced, and partially inhibit cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "p.Gly122Val previously demonstrated CDK6 binding similar to WT CDKN2A, binding to CDK4 was significantly reduced, and partially inhibit cell proliferation (Yakobson et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Yakobson et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "7467fbb2-427d-44b0-9ebc-d977b1cfaa64",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C44",
+      "claim": "p.Gly67Arg and p.Glu69Gly were previously shown to result in a 40% reduction in CDK4 binding compared to WT CDKN2A.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, p.Gly67Arg and p.Glu69Gly were previously shown to result in a 40% reduction in CDK4 binding compared to WT CDKN2A (Kannengiesser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kannengiesser et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "a1949564-ab07-4910-86c4-f82939a2f6bf",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C45",
+      "claim": "Ten (58.8%) of the 17 CDKN2A VUSs identified in a study of 638 patients with familial pancreatic cancer were found to be functionally deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten (58.8%) of the 17 CDKN2A VUSs identified in a study of 638 patients with familial pancreatic cancer (Roberts et al., 2016) were found to be functionally deleterious in our assay and could be reclassified as likely pathogenic variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by applying the functional assay results to variants identified in Roberts et al., 2016.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "b4d45215-fa4c-4f6d-a623-42aa0f084f92",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C46",
+      "claim": "In a study of 727 patients with a family history of PDAC, 6 (46.2%) of 13 CDKN2A VUSs identified were functionally deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "In another study of 727 patients with a family history of PDAC, including patients that did not meet the criteria for classification as familial pancreatic cancer, 6 (46.2%) of 13 CDKN2A VUSs identified were functionally deleterious in our assay (Zhen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by applying the functional assay results to variants identified in Zhen et al., 2015.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "8e3621c0-5610-49d6-b00f-a2ca87e05ffd",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C47",
+      "claim": "In a study of 302 patients with a family history of PDAC, 4 of the 9 (44.4%) CDKN2A VUSs reported were functionally deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in a study of 302 patients with a family history of PDAC, 4 of the 9 (44.4%) CDKN2A VUSs reported were functionally deleterious in our assay (Chaffee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by applying the functional assay results to variants identified in Chaffee et al., 2018.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "c7d8439b-1596-498b-948a-afdff7cdf5da",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C48",
+      "claim": "In a study of 350 patients with PDAC, 3 of 8 (37.5%) VUSs identified were classified as functionally deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering patients with PDAC unselected for family history, in one study of 350 patients with PDAC (McWilliams et al., 2018), 3 of 8 (37.5%) VUSs identified were classified as functionally deleterious in our assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by applying the functional assay results to variants identified in McWilliams et al., 2018.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "11ad65fd-b8af-4092-aa06-ef0375a5083e",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C49",
+      "claim": "In a study of 854 patients with PDAC unselected for family history, the one VUS identified was found to be functionally neutral.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in another study of 854 patients with PDAC unselected for family history, the one VUS identified was found to be functionally neutral (Shindo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by applying the functional assay results to variants identified in Shindo et al., 2017.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "695a2dca-95ed-4a9d-a55f-93c86a91a5dc",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C50",
+      "claim": "The prevalence of likely pathogenic germline CDKN2A variants initially characterized as VUSs is 1.6% (95% CI: 0.8\u20132.9%) in patients with familial pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "As we assayed all CDKN2A VUSs reported in these studies, our data indicate that the prevalence of likely pathogenic germline CDKN2A variants initially characterized as VUSs is 1.6% (95% CI: 0.8\u20132.9%) in patients with familial pancreatic cancer, 0.9% (95% CI: 0.5\u20131.8%) in patients with PDAC positive family history of PDAC (including patients that did not meet the criteria for classification as familial pancreatic cancer), and 0.1% (95% CI: 0.02\u20130.3%) in PDAC patients unselected for family history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the functional assay results applied to published cohorts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "ee49af98-c435-4076-9cd7-0bb419087376",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C51",
+      "claim": "The prevalence of likely pathogenic germline CDKN2A variants initially characterized as VUSs is 0.9% (95% CI: 0.5\u20131.8%) in patients with PDAC positive family history of PDAC.",
+      "claim_type": "EXPLICIT",
+      "source": "As we assayed all CDKN2A VUSs reported in these studies, our data indicate that the prevalence of likely pathogenic germline CDKN2A variants initially characterized as VUSs is 1.6% (95% CI: 0.8\u20132.9%) in patients with familial pancreatic cancer, 0.9% (95% CI: 0.5\u20131.8%) in patients with PDAC positive family history of PDAC (including patients that did not meet the criteria for classification as familial pancreatic cancer), and 0.1% (95% CI: 0.02\u20130.3%) in PDAC patients unselected for family history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the functional assay results applied to published cohorts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "ce250a44-a49e-4cf1-be6d-9fab4bbf5cfc",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C52",
+      "claim": "The prevalence of likely pathogenic germline CDKN2A variants initially characterized as VUSs is 0.1% (95% CI: 0.02\u20130.3%) in PDAC patients unselected for family history.",
+      "claim_type": "EXPLICIT",
+      "source": "As we assayed all CDKN2A VUSs reported in these studies, our data indicate that the prevalence of likely pathogenic germline CDKN2A variants initially characterized as VUSs is 1.6% (95% CI: 0.8\u20132.9%) in patients with familial pancreatic cancer, 0.9% (95% CI: 0.5\u20131.8%) in patients with PDAC positive family history of PDAC (including patients that did not meet the criteria for classification as familial pancreatic cancer), and 0.1% (95% CI: 0.02\u20130.3%) in PDAC patients unselected for family history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the functional assay results applied to published cohorts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "5bc58f8c-17c3-4fae-b5a7-5038c705f347",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C53",
+      "claim": "The cumulative prevalence of pathogenic and likely pathogenic CDKN2A variants increased from 2.5% to 4.1% (95% CI: 2.8\u20135.9%) in patients with familial pancreatic cancer when incorporating functionally deleterious VUSs.",
+      "claim_type": "EXPLICIT",
+      "source": "When incorporating functionally deleterious VUSs we have reclassified as likely pathogenic variants with known pathogenic variants in CDKN2A, the cumulative prevalence of pathogenic and likely pathogenic CDKN2A variants in these studies increased from 2.5% to 4.1% (95% CI: 2.8\u20135.9%) in patients with familial pancreatic cancer, from 1.7% to 2.7% (95% CI: 1.9\u20133.9%) in patients with PDAC who had a positive for a family history of the disease (including patients that did not meet the criteria for classification as familial pancreatic cancer), and from 0.7% to 1.0% (95% CI: 0.6\u20131.7%) in PDAC patients unselected for family history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by combining known pathogenic variants with reclassified VUSs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "6e7fa056-00eb-4ba9-91e9-603c5dd7f70a",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C54",
+      "claim": "The cumulative prevalence of pathogenic and likely pathogenic CDKN2A variants increased from 1.7% to 2.7% (95% CI: 1.9\u20133.9%) in patients with PDAC who had a positive family history when incorporating functionally deleterious VUSs.",
+      "claim_type": "EXPLICIT",
+      "source": "When incorporating functionally deleterious VUSs we have reclassified as likely pathogenic variants with known pathogenic variants in CDKN2A, the cumulative prevalence of pathogenic and likely pathogenic CDKN2A variants in these studies increased from 2.5% to 4.1% (95% CI: 2.8\u20135.9%) in patients with familial pancreatic cancer, from 1.7% to 2.7% (95% CI: 1.9\u20133.9%) in patients with PDAC who had a positive for a family history of the disease (including patients that did not meet the criteria for classification as familial pancreatic cancer), and from 0.7% to 1.0% (95% CI: 0.6\u20131.7%) in PDAC patients unselected for family history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by combining known pathogenic variants with reclassified VUSs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "4461e9a7-2584-46af-bc16-7a412c84ae62",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C55",
+      "claim": "The cumulative prevalence of pathogenic and likely pathogenic CDKN2A variants increased from 0.7% to 1.0% (95% CI: 0.6\u20131.7%) in PDAC patients unselected for family history when incorporating functionally deleterious VUSs.",
+      "claim_type": "EXPLICIT",
+      "source": "When incorporating functionally deleterious VUSs we have reclassified as likely pathogenic variants with known pathogenic variants in CDKN2A, the cumulative prevalence of pathogenic and likely pathogenic CDKN2A variants in these studies increased from 2.5% to 4.1% (95% CI: 2.8\u20135.9%) in patients with familial pancreatic cancer, from 1.7% to 2.7% (95% CI: 1.9\u20133.9%) in patients with PDAC who had a positive for a family history of the disease (including patients that did not meet the criteria for classification as familial pancreatic cancer), and from 0.7% to 1.0% (95% CI: 0.6\u20131.7%) in PDAC patients unselected for family history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by combining known pathogenic variants with reclassified VUSs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "3d3d86d0-2cb7-46aa-8b61-e68fa91e1c77",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C56",
+      "claim": "Functionally deleterious CDKN2A VUSs are likely to play a significant and previously unappreciated role in risk of PDAC, particularly for patients with a family history of the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, we can conclude that functionally deleterious CDKN2A VUSs are likely to play a significant and previously unappreciated role in risk of PDAC, particularly for patients with a family history of the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the prevalence data and functional characterization results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "1dd88f30-8ed7-4c2e-99c7-202604cd9a72",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C57",
+      "claim": "VUS functional characterizations were generally consistent when using PANC-1, MIA PaCA-2, and AsPC-1 cells in the cell proliferation assay.",
+      "claim_type": "EXPLICIT",
+      "source": "VUS functional characterizations were generally consistent when using PANC-1, MIA PaCA-2, and AsPC-1 cells in our cell proliferation assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from comparing results across the three cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "c7f10d3f-6927-4b98-bcbc-880d2e113911",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C58",
+      "claim": "No variant found to be functionally deleterious or potentially functionally deleterious when assayed with one cell line had a functionally neutral or potentially functionally neutral classification when assayed with another cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, no variant found to be functionally deleterious or potentially functionally deleterious when assayed with one cell line, had a functionally neutral or potentially functionally neutral classification when assayed with another cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from comparing results across the three cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "c612e4f5-22df-4085-a568-1eab4c933627",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C59",
+      "claim": "PDAC cell lines had different genetic alterations and degrees of ploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, PDAC cell lines had different genetic alterations and degrees of ploidy (Sirivatanauksorn et al., 2001; Yamato and Furukawa, 2001) indicating that our functional classifications are robust to cell line-specific effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Sirivatanauksorn et al., 2001 and Yamato and Furukawa, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "8c55b58a-f142-415f-954c-aecc6c62b6dd",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C60",
+      "claim": "Benchmark pathogenic variants and VUSs classified as functionally deleterious or potentially functionally deleterious had a significantly lower percent of cells in G1 phase compared to benchmark benign variants or VUSs classified as functionally benign or potentially functionally benign.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our functional classifications, we found that benchmark pathogenic variants and VUSs classified as functionally deleterious or potentially functionally deleterious had a significantly lower percent of cells in G1 phase and a significantly higher percent of cells in G2/M phase of the cell cycle compared to either benchmark benign variants or VUSs classified as functionally benign or potentially functionally benign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from cell cycle analysis data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "3d31911e-ed67-400b-abf3-598442289e90",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C61",
+      "claim": "Benchmark pathogenic variants and VUSs classified as functionally deleterious or potentially functionally deleterious had a significantly higher percent of cells in G2/M phase compared to benchmark benign variants or VUSs classified as functionally benign or potentially functionally benign.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our functional classifications, we found that benchmark pathogenic variants and VUSs classified as functionally deleterious or potentially functionally deleterious had a significantly lower percent of cells in G1 phase and a significantly higher percent of cells in G2/M phase of the cell cycle compared to either benchmark benign variants or VUSs classified as functionally benign or potentially functionally benign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from cell cycle analysis data shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "17146e2f-5765-4026-8dcd-8a3c01999f36",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C62",
+      "claim": "Expression of CDKN2A variants classified as pathogenic, functionally deleterious, or potentially functionally deleterious do not control progression through the cell cycle.",
+      "claim_type": "IMPLICIT",
+      "source": "These data suggest that expression of CDKN2A variants classified as pathogenic, functionally deleterious, or potentially functionally deleterious do not control progression through the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cell cycle analysis data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "432cc5be-4cae-45f4-bda7-34836499fee8",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C63",
+      "claim": "Reintroduction of CDKN2A into cancer cells lacking CDKN2A delays cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "As reintroduction of CDKN2A into cancer cells lacking CDKN2A delays cell cycle progression, we determined the percent of variant-expressing PANC-1 cells in G1, G2/M, and S phases of the cell cycle (Miller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Miller et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "302dbb49-a59a-48af-a5b1-29fbaef80ba4",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C64",
+      "claim": "The assay of broad cellular function may encompass functions other than CDK4 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "First, our assay is of broad cellular function, specifically cell proliferation, and therefore, may encompass functions other than CDK4 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the nature of the assay.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "3b2b26df-4d86-4592-b6a9-70be2a0e57e2",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C65",
+      "claim": "Overexpression of CDKN2A variants with partial loss-of-function may be obscured in the assay by non-physiological levels of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it is possible that overexpression of CDKN2A variants with partial loss-of-function may be obscured in our assay by non-physiological levels of expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential limitation of the assay.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "9504f86c-b4b9-4894-80dc-ac3076d781ac",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C66",
+      "claim": "PANC-1, MIA PaCa-2, and 293T cells were maintained in Dulbecco's modified Eagle's medium supplemented with 10% fetal bovine serum.",
+      "claim_type": "EXPLICIT",
+      "source": "PANC-1, MIA PaCa-2, and 293T cells were maintained in Dulbecco's modified Eagle's medium supplemented with 10% fetal bovine serum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "9bb714fa-100f-427d-b67d-47f3bedb7b23",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C67",
+      "claim": "AsPC-1 cells were maintained in RPMI-1640 supplemented with 10% fetal bovine serum.",
+      "claim_type": "EXPLICIT",
+      "source": "AsPC-1 cells were maintained in RPMI-1640 supplemented with 10% fetal bovine serum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "42d1bfd4-f47d-4ccd-b28e-dd68ce49cccf",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C68",
+      "claim": "The area under the receiver operating characteristic (ROC) curve was 1, indicating that the assay could distinguish between pathogenic and benign variants with >99% sensitivity and >99% specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "To classify assayed VUSs with mean cell proliferations values \u22650.44 but \u22640.81, we used a cutoff of 0.66, the midpoint between the lowest mean cell proliferation value for a pathogenic variant and the highest mean cell proliferation value for a benign variant, as area under the receiver operating characteristic (ROC) curve was 1, indicating that our assay could distinguish between pathogenic and benign variants with >99% sensitivity and >99% specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the assay performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "fe45c442-36f7-44e9-aa2f-8af2f8a2465e",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C69",
+      "claim": "Patients with PDAC and a pathogenic germline variant in a pancreatic cancer susceptibility gene may have cancers that are uniquely sensitive to specific anti-cancer therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, patients with PDAC and a pathogenic germline variant in a pancreatic cancer susceptibility gene may have cancers that are uniquely sensitive to specific anti-cancer therapies, as is the case for poly(ADP)-ribose polymerase inhibitors and immunotherapy (Kaufman et al., 2015; Le et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kaufman et al., 2015 and Le et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "d414a7e6-e3c1-4e39-959e-07a09f8b6680",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "claim_id": "C70",
+      "claim": "Recent ASCO and NCCN guidelines recommend germline testing of all pancreatic cancer patients and their at-risk first-degree relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, recent American Society of Clinical Oncology (ASCO) and National Comprehensive Cancer Network (NCCN) guidelines recommend germline testing of all pancreatic cancer patients and their at-risk first-degree relatives (Goggins et al., 2020; Stoffel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from clinical guidelines (Goggins et al., 2020; Stoffel et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "422aac71-5ce6-4c6f-a84b-28dac5c7a820",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A cell proliferation assay using PANC-1 cells (CDKN2A-null PDAC cell line) was validated to distinguish between pathogenic and benign CDKN2A variants. Wild-type CDKN2A significantly reduced cell proliferation (p<0.0001), while known pathogenic variants did not. The assay achieved >99% sensitivity and specificity (ROC AUC=1) with clear demarcation between pathogenic (mean=0.90) and benign (mean=0.26) variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 and C68 provide strong experimental validation of the assay. Western blot confirms CDKN2A deletion (C23), functional data show expected behavior for WT and pathogenic controls (C24-C25), and statistical analysis demonstrates excellent discriminatory power (C26-C28, C68). The methodology is sound and results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "f7e5ee5b-6353-4507-b1d1-0769e0e4e475",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Functional characterization of 29 CDKN2A VUSs revealed that 12 variants (41.4%) were functionally deleterious or potentially deleterious: 11 VUSs were classified as functionally deleterious (proliferation >0.81), 1 as potentially deleterious (0.66-0.81), 3 as potentially neutral (0.44-0.66), and 14 as functionally neutral (<0.44).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C29-C32 present the primary experimental findings with specific quantitative thresholds. The classification scheme is based on validated benchmarks (from Result 1) and uses statistically justified cutoffs. The data are clearly presented in Figure 3 with appropriate controls, supporting the conclusion that >40% of VUSs are functionally deleterious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "70368677-2c65-4896-b568-e02de0bbe37b",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Validation of VUS classifications across three PDAC cell lines (PANC-1, MIA PaCa-2, AsPC-1) showed general consistency. In MIA PaCa-2, 7 VUSs (24.1%) were functionally deleterious; in AsPC-1, 6 VUSs (20.7%) were deleterious. No variant classified as deleterious in one cell line was classified as neutral in another, despite different genetic backgrounds and ploidy levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 and C57-C59 demonstrate robustness of the assay across multiple cell lines. The consistency in classification (C38, C58) despite different cell line characteristics (C59) strengthens confidence in the findings. However, the lower percentages of deleterious variants in MIA PaCa-2 (24.1%) and AsPC-1 (20.7%) compared to PANC-1 (37.9%) suggest some cell line-specific effects that are acknowledged but not fully explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "896df057-d305-4921-82de-191a561cb2b1",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cell cycle analysis validated functional classifications: pathogenic variants and functionally deleterious VUSs showed significantly lower G1 phase (47.2% and 48.5% vs. 63.1% and 62.8% for benign/neutral, p<0.01) and higher G2/M phase (42.4% and 40.4% vs. 25.7% and 26.6%, p<0.01), indicating loss of cell cycle control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C60-C62 provide orthogonal validation of the proliferation assay results using cell cycle analysis. The statistically significant differences (p<0.01) between deleterious and neutral variants support the functional classifications. The inference that deleterious variants fail to control cell cycle progression (C62) is well-supported by the data, consistent with known CDKN2A function (C63).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "baf781e6-5979-4707-b675-92dd5b6e726c",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Application of functional classifications to published PDAC cohorts revealed that the prevalence of likely pathogenic CDKN2A variants (initially classified as VUSs) is 1.6% (95% CI: 0.8-2.9%) in familial pancreatic cancer, 0.9% (95% CI: 0.5-1.8%) in patients with family history, and 0.1% (95% CI: 0.02-0.3%) in unselected PDAC patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C52 apply the experimental findings to published cohorts. The calculations are straightforward and the confidence intervals are appropriately reported. However, the authors acknowledge potential cohort overlap (C56 context) which could affect prevalence estimates. The claim that \"all CDKN2A VUSs reported in these studies\" were assayed strengthens the analysis, though this assumes complete ascertainment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "01af4045-33c2-4362-96c9-a1bb1ff58163",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Incorporating functionally deleterious VUSs reclassified as likely pathogenic increased the cumulative prevalence of pathogenic/likely pathogenic CDKN2A variants from 2.5% to 4.1% (95% CI: 2.8-5.9%) in familial pancreatic cancer, from 1.7% to 2.7% (95% CI: 1.9-3.9%) in family history-positive patients, and from 0.7% to 1.0% (95% CI: 0.6-1.7%) in unselected PDAC patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C53-C56 combine known pathogenic variants with newly reclassified VUSs to estimate updated prevalence. The calculations are based on the functional assay results applied to published cohorts. The conclusion that functionally deleterious VUSs play a \"significant and previously unappreciated role\" (C56) is supported by the substantial increases in prevalence, particularly in familial cases (64% relative increase).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "f08eca26-db63-4c16-912d-aeba2379c5db",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Comparison with previously published functional data for 5 VUSs showed general agreement: p.Arg24Gln and p.Gly101Arg were neutral in both studies; p.Gly122Val showed partial effects consistent with prior CDK4/6 binding data; p.Gly67Arg and p.Glu69Gly were neutral despite 40% reduction in CDK4 binding reported previously.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C44 compare current results with prior literature. Agreement for 3/5 variants (C42, C43) supports assay validity, but discordance for p.Gly67Arg and p.Glu69Gly (C44) raises questions. The authors suggest their broader functional assay may capture different aspects than CDK4 binding alone (C64), but this discrepancy is not fully resolved and could indicate either assay limitations or genuine biological complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "8ae89af0-e963-4568-9044-28e0943d6bdf",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background context establishes that pathogenic CDKN2A variants are found in up to 3.3% of familial pancreatic cancer patients and 2.6% of unselected PDAC patients, confer up to 12.3-fold increased PDAC risk, while VUSs are found in 2.9-4.3% of PDAC patients depending on family history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C14-C17 provide epidemiological context from published literature. These are well-cited prevalence and risk estimates that establish the clinical significance of the study. The claims are appropriately attributed to prior work and provide necessary background for interpreting the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Clinical context establishes that PDAC has poor prognosis (median survival <6 months, 5-year survival 10%), surveillance of high-risk individuals can detect early disease (6.8-7.3% detection rate), and current guidelines recommend germline testing but exclude VUS carriers from surveillance unless they meet family history criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 and C18-C19, C69-C70 provide clinical and guideline context from published literature and professional society recommendations. These establish the clinical rationale for the study and the gap in knowledge regarding VUS management. All claims are appropriately cited and provide essential context for the study's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "bf7d2eb1-0d82-44dc-ba13-e77542ca6628",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Biological background establishes that CDKN2A encodes p16INK4a (a CDK4 inhibitor and tumor suppressor), that assays of broad cellular function have higher predictive value than CDK4 binding alone, and that some variants bind CDK4 normally but fail to inhibit proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C20-C21, and C63 provide molecular and functional context for CDKN2A. These are well-established facts from the literature that justify the choice of a cell proliferation assay over CDK4 binding assays. The rationale is sound and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "41f91adc-c1d8-4746-95a3-4292c7908fb8",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge potential limitations: the assay may encompass functions beyond CDK4 binding, and overexpression of variants with partial loss-of-function may be obscured by non-physiological expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 represent appropriate acknowledgment of assay limitations. C64 is presented as a potential strength (capturing broader function) while C65 identifies a genuine limitation (overexpression artifacts). These are reasonable considerations that demonstrate critical self-assessment, though C65 is speculative and not experimentally tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    },
+    {
+      "id": "6cde9118-ff9b-41fa-aed8-7c74e9a56140",
+      "content_id": "3951636f-973f-4ee0-9644-e6e1041e44a7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cell culture conditions are described: PANC-1, MIA PaCa-2, and 293T cells were maintained in DMEM with 10% FBS; AsPC-1 cells were maintained in RPMI-1640 with 10% FBS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are straightforward methodological details that are standard for these cell lines. These are necessary for reproducibility and are appropriately reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:09.602568Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8133e2fe-6b35-416b-911e-4bd9944584a1",
+      "result_id": "422aac71-5ce6-4c6f-a84b-28dac5c7a820"
+    },
+    {
+      "claim_id": "ecc24da6-8c4f-451a-be48-f6264d4b5945",
+      "result_id": "422aac71-5ce6-4c6f-a84b-28dac5c7a820"
+    },
+    {
+      "claim_id": "2586de4f-6d25-463d-909b-5c9820f32cda",
+      "result_id": "422aac71-5ce6-4c6f-a84b-28dac5c7a820"
+    },
+    {
+      "claim_id": "1914e139-410a-494c-a58a-199a69aadde9",
+      "result_id": "422aac71-5ce6-4c6f-a84b-28dac5c7a820"
+    },
+    {
+      "claim_id": "33a2e261-d0f2-4f2e-972c-0677b0f4748c",
+      "result_id": "422aac71-5ce6-4c6f-a84b-28dac5c7a820"
+    },
+    {
+      "claim_id": "6afc4ea1-1fef-4bd5-9dcd-34568703f105",
+      "result_id": "422aac71-5ce6-4c6f-a84b-28dac5c7a820"
+    },
+    {
+      "claim_id": "a5fc75d8-a092-4fa4-bdd9-3c5d3bf98b2e",
+      "result_id": "422aac71-5ce6-4c6f-a84b-28dac5c7a820"
+    },
+    {
+      "claim_id": "42d1bfd4-f47d-4ccd-b28e-dd68ce49cccf",
+      "result_id": "422aac71-5ce6-4c6f-a84b-28dac5c7a820"
+    },
+    {
+      "claim_id": "68ff9666-9163-44d6-ac3b-ada2e25bcddf",
+      "result_id": "f7e5ee5b-6353-4507-b1d1-0769e0e4e475"
+    },
+    {
+      "claim_id": "643a563a-7f93-46f2-bc26-bf70a7b727e4",
+      "result_id": "f7e5ee5b-6353-4507-b1d1-0769e0e4e475"
+    },
+    {
+      "claim_id": "ceaa0f3d-0b0e-4cf1-9a7e-ac45edae129c",
+      "result_id": "f7e5ee5b-6353-4507-b1d1-0769e0e4e475"
+    },
+    {
+      "claim_id": "a22ba6fb-9a1f-46e2-8e5d-d7cf594cbe71",
+      "result_id": "f7e5ee5b-6353-4507-b1d1-0769e0e4e475"
+    },
+    {
+      "claim_id": "c50850b9-7bd4-4c8f-b692-ce2ab1a134d4",
+      "result_id": "f7e5ee5b-6353-4507-b1d1-0769e0e4e475"
+    },
+    {
+      "claim_id": "0d5066bf-9dd6-40bf-9356-e8c82d137689",
+      "result_id": "f7e5ee5b-6353-4507-b1d1-0769e0e4e475"
+    },
+    {
+      "claim_id": "461fcc05-0f77-4fc7-b2c3-a02ef20b56d7",
+      "result_id": "70368677-2c65-4896-b568-e02de0bbe37b"
+    },
+    {
+      "claim_id": "f0538462-e28b-4d14-8605-69ec0e0cf73b",
+      "result_id": "70368677-2c65-4896-b568-e02de0bbe37b"
+    },
+    {
+      "claim_id": "f87d6ad4-d0b6-46ca-a99b-c5ae9b0d27eb",
+      "result_id": "70368677-2c65-4896-b568-e02de0bbe37b"
+    },
+    {
+      "claim_id": "d92dc90e-cbe7-4830-9627-38d57038c2f0",
+      "result_id": "70368677-2c65-4896-b568-e02de0bbe37b"
+    },
+    {
+      "claim_id": "c8ac7fac-f44b-4fb6-ad37-6fe2f07bbcb5",
+      "result_id": "70368677-2c65-4896-b568-e02de0bbe37b"
+    },
+    {
+      "claim_id": "e8873aaa-127c-4cbb-bad6-0c4460badbeb",
+      "result_id": "70368677-2c65-4896-b568-e02de0bbe37b"
+    },
+    {
+      "claim_id": "1dd88f30-8ed7-4c2e-99c7-202604cd9a72",
+      "result_id": "70368677-2c65-4896-b568-e02de0bbe37b"
+    },
+    {
+      "claim_id": "c7f10d3f-6927-4b98-bcbc-880d2e113911",
+      "result_id": "70368677-2c65-4896-b568-e02de0bbe37b"
+    },
+    {
+      "claim_id": "c612e4f5-22df-4085-a568-1eab4c933627",
+      "result_id": "70368677-2c65-4896-b568-e02de0bbe37b"
+    },
+    {
+      "claim_id": "dfdd5a7c-26d4-4025-ad7d-6aea55c39b46",
+      "result_id": "896df057-d305-4921-82de-191a561cb2b1"
+    },
+    {
+      "claim_id": "840d2cc2-2e00-4b77-94f1-b2acbbebd45c",
+      "result_id": "896df057-d305-4921-82de-191a561cb2b1"
+    },
+    {
+      "claim_id": "96a30fa5-724f-4e25-8bdf-d995d52a702e",
+      "result_id": "896df057-d305-4921-82de-191a561cb2b1"
+    },
+    {
+      "claim_id": "8c55b58a-f142-415f-954c-aecc6c62b6dd",
+      "result_id": "896df057-d305-4921-82de-191a561cb2b1"
+    },
+    {
+      "claim_id": "3d31911e-ed67-400b-abf3-598442289e90",
+      "result_id": "896df057-d305-4921-82de-191a561cb2b1"
+    },
+    {
+      "claim_id": "17146e2f-5765-4026-8dcd-8a3c01999f36",
+      "result_id": "896df057-d305-4921-82de-191a561cb2b1"
+    },
+    {
+      "claim_id": "432cc5be-4cae-45f4-bda7-34836499fee8",
+      "result_id": "896df057-d305-4921-82de-191a561cb2b1"
+    },
+    {
+      "claim_id": "a1949564-ab07-4910-86c4-f82939a2f6bf",
+      "result_id": "baf781e6-5979-4707-b675-92dd5b6e726c"
+    },
+    {
+      "claim_id": "b4d45215-fa4c-4f6d-a623-42aa0f084f92",
+      "result_id": "baf781e6-5979-4707-b675-92dd5b6e726c"
+    },
+    {
+      "claim_id": "8e3621c0-5610-49d6-b00f-a2ca87e05ffd",
+      "result_id": "baf781e6-5979-4707-b675-92dd5b6e726c"
+    },
+    {
+      "claim_id": "c7d8439b-1596-498b-948a-afdff7cdf5da",
+      "result_id": "baf781e6-5979-4707-b675-92dd5b6e726c"
+    },
+    {
+      "claim_id": "11ad65fd-b8af-4092-aa06-ef0375a5083e",
+      "result_id": "baf781e6-5979-4707-b675-92dd5b6e726c"
+    },
+    {
+      "claim_id": "695a2dca-95ed-4a9d-a55f-93c86a91a5dc",
+      "result_id": "baf781e6-5979-4707-b675-92dd5b6e726c"
+    },
+    {
+      "claim_id": "ee49af98-c435-4076-9cd7-0bb419087376",
+      "result_id": "baf781e6-5979-4707-b675-92dd5b6e726c"
+    },
+    {
+      "claim_id": "ce250a44-a49e-4cf1-be6d-9fab4bbf5cfc",
+      "result_id": "baf781e6-5979-4707-b675-92dd5b6e726c"
+    },
+    {
+      "claim_id": "e541204b-5c09-41f1-920b-904e6c2b59c5",
+      "result_id": "01af4045-33c2-4362-96c9-a1bb1ff58163"
+    },
+    {
+      "claim_id": "5bc58f8c-17c3-4fae-b5a7-5038c705f347",
+      "result_id": "01af4045-33c2-4362-96c9-a1bb1ff58163"
+    },
+    {
+      "claim_id": "6e7fa056-00eb-4ba9-91e9-603c5dd7f70a",
+      "result_id": "01af4045-33c2-4362-96c9-a1bb1ff58163"
+    },
+    {
+      "claim_id": "4461e9a7-2584-46af-bc16-7a412c84ae62",
+      "result_id": "01af4045-33c2-4362-96c9-a1bb1ff58163"
+    },
+    {
+      "claim_id": "3d3d86d0-2cb7-46aa-8b61-e68fa91e1c77",
+      "result_id": "01af4045-33c2-4362-96c9-a1bb1ff58163"
+    },
+    {
+      "claim_id": "a4b583ae-c527-4918-b9d4-d197b24eae35",
+      "result_id": "f08eca26-db63-4c16-912d-aeba2379c5db"
+    },
+    {
+      "claim_id": "ea0abf4f-450b-401f-a594-7776582e2f4c",
+      "result_id": "f08eca26-db63-4c16-912d-aeba2379c5db"
+    },
+    {
+      "claim_id": "7467fbb2-427d-44b0-9ebc-d977b1cfaa64",
+      "result_id": "f08eca26-db63-4c16-912d-aeba2379c5db"
+    },
+    {
+      "claim_id": "114cc991-ac6e-450a-992f-03f45e7f4669",
+      "result_id": "8ae89af0-e963-4568-9044-28e0943d6bdf"
+    },
+    {
+      "claim_id": "2214e866-af4a-4522-8908-861b04af2b6f",
+      "result_id": "8ae89af0-e963-4568-9044-28e0943d6bdf"
+    },
+    {
+      "claim_id": "52587b26-4d73-42a9-808a-989f0073cd2a",
+      "result_id": "8ae89af0-e963-4568-9044-28e0943d6bdf"
+    },
+    {
+      "claim_id": "b12872be-0791-4767-bcc8-2967c795c3c4",
+      "result_id": "8ae89af0-e963-4568-9044-28e0943d6bdf"
+    },
+    {
+      "claim_id": "a491f83c-a880-4ffe-9588-7ebfb40c9dbb",
+      "result_id": "8ae89af0-e963-4568-9044-28e0943d6bdf"
+    },
+    {
+      "claim_id": "d189ff4b-b98b-4865-b7bd-2ff5f1f60670",
+      "result_id": "8ae89af0-e963-4568-9044-28e0943d6bdf"
+    },
+    {
+      "claim_id": "e9a2924d-abcf-4b38-9998-9aed28776d7b",
+      "result_id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424"
+    },
+    {
+      "claim_id": "f3896de4-e4a6-4bd8-b183-a5d13fec2d38",
+      "result_id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424"
+    },
+    {
+      "claim_id": "f34779dc-70f6-400f-a5cf-a870418c72bb",
+      "result_id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424"
+    },
+    {
+      "claim_id": "c4a84f22-f7f6-4495-958a-179e0b63dbdc",
+      "result_id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424"
+    },
+    {
+      "claim_id": "f912ff77-c4d1-4fce-b10f-34449b426a4e",
+      "result_id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424"
+    },
+    {
+      "claim_id": "322372a1-f6a9-40b1-bb24-a9eb887e4fe1",
+      "result_id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424"
+    },
+    {
+      "claim_id": "8971470d-3725-479a-b3f7-1241c4c993fb",
+      "result_id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424"
+    },
+    {
+      "claim_id": "091743cf-4eba-481a-b291-e03450c00d58",
+      "result_id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424"
+    },
+    {
+      "claim_id": "fe45c442-36f7-44e9-aa2f-8af2f8a2465e",
+      "result_id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424"
+    },
+    {
+      "claim_id": "d414a7e6-e3c1-4e39-959e-07a09f8b6680",
+      "result_id": "5d5504ab-133a-40aa-90bb-ca8b4c2bc424"
+    },
+    {
+      "claim_id": "d0f268a3-360c-4243-a8c5-3a126c1d75a3",
+      "result_id": "bf7d2eb1-0d82-44dc-ba13-e77542ca6628"
+    },
+    {
+      "claim_id": "420f1050-aa7a-4fc6-8da3-f53f6f6092d9",
+      "result_id": "bf7d2eb1-0d82-44dc-ba13-e77542ca6628"
+    },
+    {
+      "claim_id": "c91d6766-9527-4698-babf-ceb378fdc7b3",
+      "result_id": "bf7d2eb1-0d82-44dc-ba13-e77542ca6628"
+    },
+    {
+      "claim_id": "836f5dc4-887f-45e3-a199-0ef02a573cfb",
+      "result_id": "bf7d2eb1-0d82-44dc-ba13-e77542ca6628"
+    },
+    {
+      "claim_id": "432cc5be-4cae-45f4-bda7-34836499fee8",
+      "result_id": "bf7d2eb1-0d82-44dc-ba13-e77542ca6628"
+    },
+    {
+      "claim_id": "302dbb49-a59a-48af-a5b1-29fbaef80ba4",
+      "result_id": "41f91adc-c1d8-4746-95a3-4292c7908fb8"
+    },
+    {
+      "claim_id": "3b2b26df-4d86-4592-b6a9-70be2a0e57e2",
+      "result_id": "41f91adc-c1d8-4746-95a3-4292c7908fb8"
+    },
+    {
+      "claim_id": "9504f86c-b4b9-4894-80dc-ac3076d781ac",
+      "result_id": "6cde9118-ff9b-41fa-aed8-7c74e9a56140"
+    },
+    {
+      "claim_id": "9bb714fa-100f-427d-b67d-47f3bedb7b23",
+      "result_id": "6cde9118-ff9b-41fa-aed8-7c74e9a56140"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The DNA-CAR\u03b3 system drives specific, Fc\u03b3R signaling-dependent engulfment of DNA-functionalized beads in macrophages. The DNA-CAR\u03b3 receptor mediates engulfment at levels comparable to IgG-coated beads, while the control DNA-CARadhesion lacking the FcR\u03b3 signaling domain fails to induce engulfment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 establish the DNA-CAR\u03b3 as a functional synthetic system for studying phagocytosis. The data show ligand-dependent, receptor-dependent, and signaling-dependent engulfment with appropriate controls (DNA-CARadhesion) and comparison to endogenous IgG system. The experimental design is sound with proper negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "DNA-CAR\u03b3 receptor recruitment and Syk recruitment to DNA origami pegboards correlate linearly with the number of ligands presented (0-72 ligands), demonstrating quantitative control over receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 demonstrate that the DNA origami system provides quantitative control over receptor recruitment and downstream signaling. The linear correlation with ligand number validates the platform for systematic studies. The use of internal standards (72L origami) to normalize fluorescence intensity is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Increasing the number of ligands per cluster enhances engulfment up to 8 ligands, after which engulfment plateaus. This effect is ligand-, receptor-, and Fc\u03b3R signaling-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 identify an optimal cluster size for Fc\u03b3R activation. The plateau at 8 ligands suggests a threshold for maximal signaling. Controls confirm specificity (ligand, receptor, and signaling dependence). However, the mechanism underlying the plateau is not explored, and statistical details for the plateau determination are not fully described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Reducing ligand spacing from 17.5 nm (4M) or 38.5 nm (4S) to 7 nm (4T) while maintaining constant ligand number approximately doubles engulfment efficiency. This spacing-dependent effect is observed across multiple cell types (RAW264.7 and THP-1) and DNA-CAR constructs with different transmembrane domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C33 demonstrate a robust effect of nanoscale ligand spacing on engulfment. The effect is replicated across cell types and receptor variants, strengthening the conclusion. Controls confirm origami surface density is comparable and that the effect requires Fc\u03b3R signaling. This is a central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The enhanced engulfment of tightly clustered ligands is not due to avidity effects. High-affinity 16mer ligands (predicted dwell time >7 hr) still show spacing-dependent engulfment, and receptor recruitment to phagocytic cups does not differ between 4T and 4S beads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C67-C69 rule out avidity as the primary mechanism. The use of high-affinity ligands that should saturate binding is a strong control. The lack of difference in total receptor recruitment between 4T and 4S further supports that spacing affects signaling quality rather than receptor quantity. This is critical for mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Tight ligand spacing (4T vs 4S) enhances the probability of engulfment initiation (95% vs 61%), the success rate of completing engulfment once initiated (69% vs 39%), and reduces the time to initiation (~300 s faster), but does not affect the rate of phagosome closure once initiated. Overall, 66% of 4T contacts result in successful engulfment vs 24% for 4S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 provide detailed kinetic analysis showing that ligand spacing primarily affects early stages of phagocytosis (initiation) rather than later stages (closure). The live-cell imaging with dual-labeled beads is methodologically strong. The DNA-CARadhesion control (C43-C44) confirms signaling requirement. Statistical significance is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Tightly spaced ligands (4T) increase receptor phosphorylation (measured by tSH2-Syk recruitment) and generation of downstream signals PIP3 and actin filaments at phagocytic cups compared to widely spaced ligands (4S). These differences are most apparent in early and mid-stage phagocytic cups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C48-C53 establish the molecular mechanism by which ligand spacing affects engulfment. The use of established reporters (tSH2-Syk for phosphorylation, Akt-PH for PIP3, phalloidin for actin) is appropriate. The stage-specific analysis (early/mid/late cups) provides temporal resolution. However, the manuscript does not address whether these signaling differences are sufficient to explain the engulfment differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C70"
+    ],
+    "result": "Clustering of multiple receptors is required for enhanced engulfment. Increasing the number of intracellular signaling domains (ITAMs) on a single receptor (DNA-CAR-4x\u03b3 with 1-ligand origami) does not recapitulate the effect of clustering multiple receptors (DNA-CAR-1x\u03b3-3x\u0394ITAM with 4T origami).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C54-C57, C70 test whether local ITAM concentration is sufficient or whether receptor clustering is required. The tandem ITAM constructs are well-designed controls. The failure of DNA-CAR-4x\u03b3 with 1-ligand origami to induce engulfment despite having 4 ITAMs per ligand strongly supports the requirement for receptor clustering. Controls with functional ITAMs at different positions strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C62",
+      "C63",
+      "C8"
+    ],
+    "result": "Tight ligand clustering increases phagocytosis probability by enhancing Fc\u03b3R phosphorylation, suggesting macrophages use nanoscale density-dependent triggers for receptor activation. Both tight nanoscale clustering and uniform IgG distribution across targets are needed for efficient phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C62-C63, C8 synthesize the findings into a mechanistic model. The conclusion that macrophages use local ligand density information is well-supported by the data. However, C62 is somewhat speculative ('may also be') and the integration with prior knowledge about uniform IgG distribution (C63) extends beyond what was directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C64",
+      "C65"
+    ],
+    "result": "The nanoscale density-dependent trigger may allow macrophages to discriminate between background stimuli and highly opsonized targets, as macrophages constantly encounter background 'eat me' signals and require both nanoscale clustering and uniform IgG distribution for efficient phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C61, C64-C65 integrate current findings with prior literature to propose a functional model. While the logic is sound, C65 is explicitly speculative ('may buffer'). The manuscript does not directly test discrimination between background and target signals, nor does it measure background antibody levels in the experimental system. This remains a plausible but untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Lipid ordering could provide a mechanism for spacing-dependent receptor activation if denser receptor-ligand clusters more efficiently nucleate or associate with ordered lipid domains, which recruit Src kinases while excluding CD45 phosphatase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C75 propose a lipid-based mechanism supported by prior literature (C71-C74), but C75 is explicitly speculative. The manuscript does not directly measure lipid ordering or domain formation in the DNA-CAR system. This is a plausible mechanistic hypothesis that requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CD45 exclusion may contribute to spacing-dependent signaling, as CD45's large extracellular domain (25-40 nm) is excluded from close contacts like IgG-Fc\u03b3R (11.5 nm), and higher receptor-ligand density constrains membrane fluctuations which may increase CD45 exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 cite prior literature on CD45 size and exclusion. C79 proposes a mechanism linking receptor density to CD45 exclusion but is partially speculative ('may increase'). The manuscript does not directly measure CD45 exclusion in the DNA-CAR system or test whether CD45 exclusion is necessary for the observed spacing effects. This is a plausible but untested mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The DNA-CAR system mimics single-chain Fc\u03b3RIIA receptors (one signaling domain per ligand), which are clinically relevant. Ligand spacing effects are observed with different transmembrane domains (CD86, Fc\u03b1, Fc\u03b3), though Fc\u03b3 transmembrane domains increase overall engulfment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 address the relevance of the synthetic system to endogenous receptors. The comparison to Fc\u03b3RIIA (C80-C82) is appropriate and clinically relevant. Testing different transmembrane domains (C84-C85) strengthens generalizability, though the increased potency with Fc\u03b3 TM suggests some system-specific effects. The discussion of multimeric receptor complexes (C83) acknowledges limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Ligand spacing requirements vary across immune receptor systems. Some systems (integrins) have discrete spacing thresholds while others (TCR) show continuous improvement with tighter spacing. For TCR, spacing requirements become more stringent with increased intermembrane distance, suggesting IgG bound to tall antigens may be more dependent on tight spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 accurately cite prior literature comparing spacing requirements across immune systems. C90 is a speculative extrapolation ('may be more dependent') that is logical but not directly tested. The comparison provides useful context for interpreting the Fc\u03b3R results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Antibody engineering strategies that optimize spacing of multiple antibodies through various methods (leucine zippers, cysteine bonds, DNA hybridization, multimeric scaffolds) could lead to stronger Fc\u03b3R activation and more effective therapies. Rituximab's two binding sites on CD20 may contribute to its efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 cite prior literature on therapeutic antibodies and clustering strategies. C95 proposes therapeutic applications but is speculative ('could lead to'). While the findings support this direction, the manuscript does not test engineered antibodies or demonstrate improved therapeutic efficacy. The connection to rituximab (C93) is suggestive but correlative. This represents promising future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on Fc\u03b3R-mediated phagocytosis: Macrophages use Fc\u03b3Rs to engulf antibody-opsonized targets, requiring activation of multiple receptors and IgG across the entire target surface. Fc\u03b3Rs form clusters that recruit signaling molecules, and receptor clustering may regulate the thresholded engulfment response, though the mechanism is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C19 provide established background knowledge supported by appropriate citations. These claims set up the scientific context and rationale for the study. C16 appropriately notes uncertainty about Fc\u03b3R clustering's role in phagocytosis, which the manuscript addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The findings are consistent with previous results showing Fc\u03b3R crosslinking correlates with increased ITAM phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 appropriately places the current findings in context of prior literature. The consistency with previous work strengthens confidence in the results.",
+    "result_type": "MINOR"
+  }
+]

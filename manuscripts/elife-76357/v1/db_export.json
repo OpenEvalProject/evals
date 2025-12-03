@@ -1,0 +1,1359 @@
+{
+  "submission": {
+    "id": "395d8241-0840-4a7e-a96a-24a159d58a6b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:53:43.829107Z",
+    "updated_at": "2025-12-03T13:53:43.829107Z"
+  },
+  "content": [
+    {
+      "id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "submission_id": "395d8241-0840-4a7e-a96a-24a159d58a6b",
+      "content_type": "manuscript",
+      "content_text": "# Oscillatory movement of a dynein-microtubule complex crosslinked with DNA origami\n\n## Authors\n\n- Shimaa A Abdellatef<sup>1</sup>\n- Hisashi Tadakuma<sup>3</sup>\n- Kangmin Yan<sup>1</sup>\n- Takashi Fujiwara<sup>5</sup>\n- Kodai Fukumoto<sup>3</sup>\n- Yuichi Kondo<sup>5</sup>\n- Hiroko Takazaki<sup>3</sup>\n- Rofia Boudria<sup>1</sup>\n- Takuo Yasunaga<sup>6</sup>\n- Hideo Higuchi<sup>5</sup> ([ORCID: 0000-0002-6519-7348](https://orcid.org/0000-0002-6519-7348))\n- Keiko Hirose<sup>1</sup> ([ORCID: 0000-0003-4587-8346](https://orcid.org/0000-0003-4587-8346)) \u2020\n\n### Affiliations\n\n1. Biomedical Research Institute, National Institute of Advanced Industrial Science and Technology (AIST) Tsukuba Japan ([ROR:01703db54](https://ror.org/01703db54))\n2. Research Center for Functional Materials, National Institute for Materials Science Tsukuba Japan ([ROR:026v1ze26](https://ror.org/026v1ze26))\n3. Institute for Protein Research, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))\n4. SLST and Gene Editing Center, ShanghaiTech University Shanghai China ([ROR:030bhh786](https://ror.org/030bhh786))\n5. Graduate School of Science, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n6. Kyushu Institute of Technology Fukuoka Japan ([ROR:02278tr80](https://ror.org/02278tr80))\n7. Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBending of cilia and flagella occurs when axonemal dynein molecules on one side of the axoneme produce force and move toward the microtubule (MT) minus end. These dyneins are then pulled back when the axoneme bends in the other direction, meaning oscillatory back and forth movement of dynein during repetitive bending of cilia/flagella. There are various factors that may regulate the dynein activity, e.g. the nexin-dynein regulatory complex, radial spokes, and central apparatus. In order to understand the basic mechanism of dynein\u2019s oscillatory movement, we constructed a simple model system composed of MTs, outer-arm dyneins, and crosslinks between the MTs made of DNA origami. Electron microscopy (EM) showed pairs of parallel MTs crossbridged by patches of regularly arranged dynein molecules bound in two different orientations, depending on which of the MTs their tails bind to. The oppositely oriented dyneins are expected to produce opposing forces when the pair of MTs have the same polarity. Optical trapping experiments showed that the dynein-MT-DNA-origami complex actually oscillates back and forth after photolysis of caged ATP. Intriguingly, the complex, when held at one end, showed repetitive bending motions. The results show that a simple system composed of ensembles of oppositely oriented dyneins, MTs, and inter-MT crosslinkers, without any additional regulatory structures, has an intrinsic ability to cause oscillation and repetitive bending motions.\n\n## Introduction\n\nBeating of cilia and flagella is powered by axonemal dynein molecules that are minus-end-directed microtubule (MT) motors (Gibbons and Rowe, 1965). Each dynein is tethered to a doublet MT with its tail, and interacts with the neighboring MT using its stalks in an ATP-dependent way, to produce relative sliding of the two MTs. The MTs in an axoneme are all parallel and arranged in a 9 + 2 structure with their minus ends at the base and interconnected with various components, such as the nexin-dynein regulatory complex (Heuser et al., 2009). Because the neighboring doublet MTs are interlinked and also anchored to the basal body at the base, minus-end-directed movement of the dynein molecules on one side of the axoneme causes bending of the axoneme in one direction (Figure 1A). These dynein molecules are then pulled back (i.e. toward the plus end of the MT) when the dyneins on the opposite side of the axoneme produce force to bend the axoneme in the other direction. Thus, during cyclical bending of the axoneme, dynein molecules oscillate back and forth along a MT. How a minus-end-directed motor dynein can move back and forth along a MT is unknown.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic models showing directions of dynein sliding and bending of the axoneme. Dynein molecules between two pairs of doublet MTs, one pair on the far-side (top) and another pair on the near-side (bottom) are illustrated. When viewed from the front of the axoneme, the stalk and head of a far-side dynein are seen to the left of the tail, whereas those of a near-side dynein are on the right. As a result, the axoneme bends in opposite directions when only the far-side or only the near-side dyneins are activated and move toward the minus ends (colored in orange). Bending of the axoneme causes sliding of dynein on the unactivated side (yellow) toward the plus end. (B) Geometry of the dynein-MT complex. Longitudinal and axial views are illustrated. Chlamydomonas outer-arm dynein molecules crossbridge two MTs, binding with their tails and stalks. The stalks point toward the MT minus end. Because the tails and stalks bind to different MTs, there are two possible orientations for dynein depending on which MT the stalks bind to. (C) Schematic illustration of a cross-sectional view of an axoneme. Note that the geometry of dyneins in the dynein-MT complex shown in (B) mimics that of a combination of the dyneins on two opposite sides of the axoneme (cyan boxes), although the dynein arrays in (B) are not continuous. (D) Design of rod-shaped DNA origami. For binding to MTs, mutant kinesin motor domains (E237A) were attached to 5'-SNAP-ligand-modified handles placed on the DNA rod. The two handles were separated by ~50 nm, corresponding to the center-to-center distance of the two MTs in the dynein-MT complex. Each handle has 30 nucleotides of poly-thymidine linker between the SNAP ligand and the rod. (E) Geometry of the dynein-MT complex crosslinked with DNA-origami rods. In the presence of ATP, dynein molecules bound in the opposite orientations are thought to produce force in opposite directions (indicated by arrows). DNA rods are expected to crosslink the two MTs of the complex and restrict their relative movement.\n\nThere are many factors that may influence force production by dynein. For example, outer-arm dyneins and several species of inner-arm dyneins are thought to affect each other\u2019s activities. The arrangement of the dyneins in an axoneme must be also important for their communication; the outer-arm dyneins are aligned in a row with a periodicity of 24 nm, and the inner-arm dyneins are also regularly placed in specific positions (Bui et al., 2008). The inter-doublet linkers connect the circumferentially arranged nine doublet MTs, and thus transmit the force produced locally by some dyneins to the other parts of the axoneme (Lindemann, 2003). Other regulatory components, such as the radial spokes and central apparatus also seem to play important roles in the regulation (Witman et al., 1978). In order to minimize complexity and elucidate only the basic mechanism of cilia and flagella motility, we designed a simple model system and tested its structure and motility. Our system consists of in vitro polymerized MTs, axonemal outer-arm dynein molecules, and passive linkers that interconnect pairs of parallel MTs (Figure 1E). This simple model system does not have the circular arrangement of nine MTs in the axoneme, nor does it have inner-arm dyneins, radial spokes or the central apparatus.\n\nTo reconstitute the regular arrangement of outer-arm dyneins, which allow neighboring dynein molecules to interact with each other, we used dynein preparations extracted from Chlamydomonas flagella axonemes with high salt (typically 0.6 M KCl). The high-salt-extracted dynein preparations are known to crossbridge MTs with ~24 nm periodicity (Haimo et al., 1979), and although they contain other components in addition to outer-arm dyneins, previous work showed that the proteins bound to MTs are mostly outer-arm dynein (Aoyama and Kamiya, 2010; Oda et al., 2007). As inter-MT linkers, we utilized rod-shaped DNA origami structures and attached the DNA rods to the MTs via flexible linkers (Figure 1D and E). Use of DNA origami enabled us to design a molecular layout of the crosslinking structure that allows relative sliding of the MTs over a certain distance, resulting in oscillation and repetitive bending motions as seen in intact axonemes.\n\n## Results\n\n### Geometry of dynein-MT complexes\n\nDynein preparations extracted with high salt from Chlamydomonas flagella axonemes were mixed with taxol-stabilized MTs polymerized from brain tubulin (Figure 1B). As previously reported (Aoyama and Kamiya, 2010; Haimo et al., 1979; Oda et al., 2007), the MTs became bundled with the crossbridging molecules bound with a period of ~24 nm (Figure 2A and B). In the dynein-MT complexes prepared with high concentrations of dynein, a pair of MTs in bundles are crossbridged by two continuous arrays of dynein, so that superposition of two rows of dynein molecules is observed in electron microscopy (EM) images (Haimo et al., 1979; Oda et al., 2007). On the other hand, when a low concentration of the dynein preparation (6.25\u201312.5 \u00b5g/ml [corresponding to ~3\u20136 nM outer-arm dynein]) was mixed with 20\u201325 \u00b5g/ml MTs (200\u2013250 nM tubulin dimers), the MTs were only partially decorated with dynein, so that we were able to observe single layers of crossbridges without superposition in many regions. Negative-stain EM observation of the individual crossbridges showed characteristic shapes of outer-arm dynein, with stacked heads and a tail (Heuser et al., 2009; Movassagh et al., 2010; Figure 2C), confirming that the crossbridging proteins are mostly outer-arm dyneins. The average number of dyneins per 1 \u00b5m of a MT pair was about 12 when 6.25 \u00b5g/ml dynein was used.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013B) Negative stain images of the dynein-MT-DNA-origami complex in the absence (A) and presence (B) of 0.1 mM ATP. DNA rods crosslinking the MTs are indicated by purple arrowheads. Dynein molecules tend to bind in patches and the neighboring dyneins usually have the same orientation. Patches of dynein cross-bridging the MTs in two different orientations are indicated by pink and cyan boxes. Enlarged views show examples of dyneins in two orientations, with their tails (indicated by orange arrowheads) on different MTs. Magenta lines show a periodicity of 24 nm. The typical shape of an outer-arm dynein is illustrated. Bars: 50 nm in low magnification images and 20 nm in enlarged views. (C) Images of individual dynein molecules crossbridging two MTs. As illustrated on the left, the characteristic shapes of a Chlamydomonas outer-arm dynein molecule (Heuser et al., 2009; Movassagh et al., 2010) with a tail and three heads are observed. Bar: 20 nm. (D) A negative stain image of a DNA origami rod. Bar: 50 nm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A \u2013 B) A diagram showing two different geometries of the dynein-MT complex. An outer-arm dynein molecule cross-bridges two MTs by binding to one of the MTs with the MT-binding domain at the end of the stalk and to another MT with the tail. The stalk of each dynein is oriented closer to the minus end of the MT to which the stalk binds. Therefore, there are two possible orientations for dynein bound between a pair of MTs, depending on which MT its stalk binds to. If the two MTs have the same polarity as in vivo, two groups of dynein molecules produce opposing force (A). On the other hand, if the MTs are anti-parallel, all the dynein molecules produce force in the same direction (B). (C \u2013 D) Electron microscopy (EM) images of dynein-MT complexes showing two different geometries as illustrated in (A) and (B). When high-salt extracted Chlamydomonas dynein was used, ~80% of the complexes (36 out of 44 complexes) had MTs with the same polarity, as judged by the negative stain images. The positions of the dynein tails are indicated by orange arrowheads.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Linkers are observed for some DNA origami rods (an example indicated by red arrows). Bar: 50 nm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Schematic of the classification method. Images of individual dynein molecules in each dynein-microtubule-DNA-origami (dynein-MT-DNA-origami) complex were classified into two groups depending on the orientation. The averaged image for each group was calculated. (B \u2013 C) Examples of individual and averaged images. Images from three complexes in the absence of ATP (B) and three in the presence of ATP (C) are shown. The top and bottom rows show oppositely oriented dyneins, rotated so that the MT minus end is toward the left. For each group, two individual images (left) and the averaged image (right) are shown (n=30 and 5, 11 and 11, 15 and 12, 22 and 2, 20 and 9, 14 and 19 for the complexes #1\u20136, respectively). (D) 2D-projected images of cryo-electron tomograms of Chlamydomonas outer-arm dynein without nucleotide and with ADP\u2022Vi (EMDB maps emd_1696 and emd_1697) (Movassagh et al., 2010). Dynein heads are indicated by red squares in (B \u2013 D). Bars: 20 nm.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The histogram shows distribution of the average lengths (L) of MT-bound dynein molecules along the MT axis, calculated for each dynein-MT complex. The average and standard deviation (n=24 and 16 for the absence and presence of ATP, respectively) are indicated. Also see Figure 2\u2014source data 1.\n\nWhen a dynein molecule crossbridges a pair of MTs, its tail is fixed onto one of the MTs and the stalks interact with the other MT in a nucleotide-dependent manner. Therefore, depending on which MT the tail binds to, there are two possible orientations (Figure 1B). EM images confirmed that dyneins crossbridge MTs in two different orientations (Figure 2A and B). As observed previously with sea urchin dynein (Hirose, 2012; Ueno et al., 2008), the crossbridging dyneins made patches, and the adjacent dynein molecules within one patch tended to have the same orientation. In vivo, outer-arm dynein binds to MTs with its head + stalk oriented toward the minus end of the MTs, and its tail oriented toward the plus end (Goodenough and Heuser, 1982; Heuser et al., 2009; Movassagh et al., 2010), so that the two MTs crosslinked with dyneins have the same polarity.\n\nWe have previously shown by cryo-EM analysis that in vitro also, dynein\u2019s head and stalk are always oriented toward the minus end of the MT to which its stalk binds (Ueno et al., 2008). Thus, we determined the polarity of the MTs in the dynein-MT complex based on the orientation of dyneins in the EM images. Whereas the orientation of the head + stalk is always toward the minus end, binding of the tail to the MT was less specific in vitro, so that the resulting complexes had either parallel or antiparallel MTs (Ueno et al., 2008) as illustrated in Figure 2\u2014figure supplement 1A, B. In the case of sea urchin dynein, the two MTs of a complex were often antiparallel (Ueno et al., 2008; Yokota and Mabuchi, 1994). In contrast, the majority of the Chlamydomonas-dynein-MT complexes (36 out of 44 complexes) showed parallel arrangements of the MTs as in axonemes (Figure 2\u2014figure supplement 1C, D).\n\nIn the complex with parallel MTs, the dynein molecules in two opposite orientations are expected to produce force in opposite directions (Figure 1B and Figure 2\u2014figure supplement 1A), as in the models previously proposed (Camalet and J\u00fclicher, 2000; Mitchison and Mitchison, 2010; Riedel-Kruse et al., 2007). Compared to the continuous dynein arrays in axonemes, the arrays of dynein in our complex were much shorter and discontinuous because we used low concentrations of dynein. Nevertheless, the arrangement of dyneins in our complex is analogous to a combination of two dynein arrays on the opposite sides of an axoneme, in the sense that both systems contain two subsets of regularly arranged dynein molecules, and the subsets produce antagonistic forces (compare the axial views in Figure 1B and C). The resemblance in their geometries led us to the idea that these dynein-MT complexes might work as a simple model system to investigate the minimum components required for oscillatory movements that occur in cilia and flagella.\n\n### Motile properties of the dynein-MT complex\n\nThe outer-arm dynein preparations used here supported movement of MTs in gliding assays at a speed comparable to those in previous work (Alper et al., 2013; Furuta et al., 2009; Figure 3A, Figure 3\u2014source data 1). We then tested the motility of dynein-MT complexes that contain a pair of MTs crossbridged by dyneins in two different orientations (Figure 3B). When the dynein-MT complexes are adsorbed to a glass surface, the MTs that are directly attached to the glass cannot move, but other MTs in the same complex are allowed to slide relative to the glass-attached MTs. Relative sliding of the MTs leads to disassembly of the complex as soon as the complexes are exposed to an ATP-containing solution. Therefore we used caged ATP and observed the movement of MTs immediately after the ATP was uncaged locally by photolysis. Even though the majority of the complexes are thought to contain groups of dynein molecules that produce force in opposite directions, many of the complexes showed unidirectional sliding of MTs (Video 1), probably because the numbers of molecules in the two groups are not equal and the dominant group would \u2018win\u2019. The velocity was variable (Figure 3B, Figure 3\u2014source data 1), with some MTs sliding much faster than those observed in gliding assays. Fast sliding was previously observed with similar dynein-MT complexes but with much higher concentration of dynein, and was interpreted as the effect of cooperation of dyneins aligned with 24 nm periodicity (Aoyama and Kamiya, 2010).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig3-v1.jpg)\n\n**Figure 3.:** (A) Distributions of the MT gliding velocities in usual MT gliding assays in which MTs move over dynein-coated glass surfaces. (B) Relative sliding velocities of the MTs in a dynein-MT complex that contains dyneins in two opposite orientations. Average (mean \u00b1 SEM) and median values of the velocities are indicated (n=104 and 94 for A and B, respectively). Also see Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Schematic representation of the experiment (not to scale) and two examples of the traces are shown. Larger beads (500 nm in diameter) were used to measure the maximum force. Red arrows indicate the timing of UV photolysis of caged ATP. In both cases, the maximum force was 30\u201335 pN.\n\n![Video 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-video1.mp4.jpg)\n\n**Video 1.:** Dynein-MT complexes were adsorbed to the glass surface. Upon photolysis of caged ATP, some MTs (indicated by arrowheads) moved unidirectionally and slid out of the bundles. Recorded at 400 ms/frame.\n\nWe have also measured the force produced by the dynein-MT complexes using optical trapping methods (Figure 3\u2014figure supplement 1). The average number of dyneins that crossbridge the pair of MTs was estimated to be ~35 from inspection of the EM images (12 molecules/\u00b5m) and the average length of the MT (2.9 \u00b1 0.9 \u03bcm [mean \u00b1 SD]). Typical traces showed a maximum force of ~30 pN. The value is several times larger than the force produced by single molecules of outer-arm dynein from sea urchin (5\u20136 pN) (Shingyoji et al., 2015) or Tetrahymena (4.7 pN) (Hirakawa et al., 2000), indicating cooperative force production. On the other hand, it is smaller than the simple sum of the forces produced by each dynein. Dependence of the maximum force on the number of motors differs in different motors (Furuta et al., 2013; Soppina et al., 2009). The fact that the dependence observed here is not proportional to the dynein number may be related to the weak processivity of the molecule. Alternatively, the dynein molecules oriented in the opposite direction may act as a load.\n\n### Crosslinking of the dynein-MT complex with DNA origami structures\n\nThe above results showed that a dynein-MT complex alone is not sufficient to generate oscillatory movement, even though it contains two groups of dyneins that produce force in opposite directions: the movement was mostly in one direction and the complex disassembled. To prevent disassembly and mimic axonemal doublet MTs that are interconnected with linkers, we crosslinked the MTs of the dynein-MT complex. A rod-shaped DNA origami of ~84 nm in length was attached to the dynein-MT complex via immotile mutant kinesin motor domains (E237A) (Rice et al., 1999; Figure 1D and E, and Figure 2\u2014figure supplement 2). In vitro motility assays confirmed that addition of enough DNA origami rods (e.g. 2.5 nM DNA rods for the dynein-MT complex with 6.25 \u00b5g/ml dynein) can actually prevent disassembly of the complex in the presence of ATP, so that movement of MTs was not detected by fluorescence microscopy (Figure 4\u2014video 1).\n\nIn order to allow relative sliding of the MTs and possible oscillation in the presence of ATP, flexible poly-T linkers were inserted between the DNA rod and kinesin (Figure 4, Figure 4\u2014figure supplement 1A). The maximum relative sliding distance was estimated to be ~96 nm in both directions in the ideal situation where all the DNA rods are bound perpendicular to the MTs. The actual sliding distance is expected to be shorter because the initial binding of the DNA rods is not necessarily perpendicular (Figure 4\u2014figure supplement 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig4-v1.jpg)\n\n**Figure 4.:** The two groups of dyneins produce opposing forces. DNA rods are expected to crosslink the two MTs of the complex and restrict their relative movement. When the total force produced by one of the groups is stronger, the upper MT moves in one direction and the DNA rods tilt. Movement of the MT would stop when the linkers between the MTs and DNA rods are fully extended. The MT would then move in the opposite direction until the movement is again stopped by the DNA rods.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The ideal situation in which the initial binding angles of all the DNA rods are perpendicular to the microtubules (MTs). Upon addition of ATP, the MTs slide relative to each other, the linkers become stretched (illustrated in red boxes), and the DNA rods would tilt. Assuming the center-to-center distance between the MTs to be 50 nm, and the length of the linker between DNA rods and the MT-binding site 29 nm (see Materials and methods), the maximum sliding distance and tilt angle (\u03b8) are calculated to be ~96 nm and ~62\u00b0 in both directions. (B) In cases where the initial binding angles are variable, the maximum sliding distance and tilt angle are expected to be smaller than the maximum values.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** In the absence of ATP, the bin with tilt angle less than 5\u00b0 has the highest population. In the presence of ATP, the tilt angles have a wider distribution, with no apparent preference for smaller angles. The n=324 and 316 for in the absence and presence of ATP, respectively. Also see Figure 4\u2014source data 1 and Figure 4\u2014source data 2.\n\nDNA origami rods crosslinking the dynein-MT complex were clearly visible by EM (Figure 2A and B, indicated by purple arrowheads; Figure 2D). The average number of DNA rods crosslinking a pair of MTs was ~2.4 per \u00b5m when 2.5 nM DNA rods were used. As expected, the binding angle in the absence of ATP was variable but centered around the perpendicular (Figure 4\u2014source data 1, Figure 4\u2014figure supplement 2). When ATP was added to the complex, the deviation of the rod angle from the perpendicular increased (p<0.002, Mann-Whitney U-test; Figure 4\u2014source data 2), indicating that the DNA rods tilted because of relative sliding of the MTs.\n\n### Dynein-MT-DNA-origami complexes show oscillatory movements\n\nWe then investigated the motility of the dynein-MT-DNA-origami complexes in detail. Since the expected relative sliding of the MTs was too small to be detected by fluorescence microscopy, we attached a bead to the complex and measured the displacement after photolysis of caged ATP (Figure 5). In some cases, the bead bound to a MT moved unidirectionally and then abruptly went back to the trap center, probably because of detachment of dynein from the MT (e.g. the first ~100 ms after the UV flash in Figure 5A), as observed in previous work using single dynein molecules (e.g. Hirakawa et al., 2000; Sakakibara et al., 1999; Toba et al., 2006).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig5-v1.jpg)\n\n**Figure 5.:** (A) Trace showing displacement of a bead attached to the dynein-MT-DNA-origami complex after UV photolysis of caged ATP (red arrow). Schematic of the experimental set-up is shown in inset (not to scale). A streptavidin-coated bead was captured by the optical trap (trap stiffness 0.052 pN/nm) and attached to a dynein-MT-DNA-origami complex adsorbed to a glass surface. A part of the trace shows oscillatory movement (pink arrowheads). (B) The frequency of the oscillatory movement was measured by the power spectral density (PSD). (C) Steps (blue) detected for the same region by the step-finding algorithm (Kerssemakers et al., 2006). Steps are found in both forward (away from the trap center) and backward (toward the trap center) movements.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Four examples of traces, recorded under the similar conditions as in Figure 5 (trap stiffness 0.021 pN/nm for A and B, 0.052 pN/nm for C and D) are shown. The power spectral density of a part of the trace is shown to the right of each trace, with the peak value indicated. In the trace in (A), the bead showed oscillatory movement (pink arrowheads) after photolysis of caged ATP and then moved for ~200 nm unidirectionally. Steps detected for the boxed region is shown in blue. The trace in (B) was recorded ~100 ms after the UV flash. The bead moved in both directions from the trap center (0 nm of the vertical axis).\n\nThe most notable feature observed in the optical trapping measurement of the dynein-MT-DNA-origami complex was oscillatory movements. Typical traces are shown in Figure 5A and Figure 5\u2014figure supplement 1. Although the oscillation was irregular, it was clearly different from the noisy vibration before the UV flash (compare the trace before the UV flash and the region boxed in orange in Figure 5A), and the power spectrum density showed clear peaks (Figure 5B and Figure 5\u2014figure supplement 1, right panels), which were not observed before the UV flash. Since caged ATP was locally photolyzed using a UV spot with a full width at half maximum of ~20 \u00b5m and the released ATP diffuses in the solution, we analyzed the traces typically within ~0.5 s after photolysis of ATP. About 48 out of 94 such traces showed sliding movement, and 65% of them exhibited oscillatory movement (at least two forward and two backward displacements, each displacement larger than 10 nm, and the velocity of each movement between 0.1 and 50 \u00b5m/s) in some parts of the trace. The amplitude of the oscillatory movements was variable, but typically within the expected maximum displacement (~96 \u00d7 2 nm, see above), with the averages of 26.6 and 26.4 nm for the forward (away from the trap center) and backward (back toward the trap center) movement, respectively (Figure 6A and B and Figure 6\u2014source data 1). The velocities of the forward and backward movements during oscillation were also variable (Figure 6A and D and Figure 6\u2014source data 1), but they were both in the same range as the velocity observed in the gliding assay of the dynein-MT complex without DNA rods (Figure 3B; 4.4 \u00b5m/s in average). The difference between the averaged velocities of the forward and backward movements (3.8 and 6.4 \u00b5m/s, respectively) may be because the force of the optical trap works as a load for the forward movement, whereas it assists the backward movement. Some detachment may also contribute to the faster velocity of the backward movement. However, the average time required for the forward and backward movements (10.1 and 8.3 ms, respectively; Figure 6A and C and Figure 6\u2014source data 1) was substantially longer than the time required for simple detachment from a MT, which was usually less than 1 ms. The frequencies of the oscillation were measured using the power spectrum of the traces (Figure 5B and Figure 5\u2014figure supplement 1, right panels). The frequencies were variable, with an average of 32.9 Hz (Figure 6E, Figure 6\u2014source data 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig6-v1.jpg)\n\n**Figure 6.:** (A) Definition of the distance (df, db), time (tf, tb), and velocity (vf, vb) used for the histograms in (B \u2013 D). (B \u2013 D) Histograms of the distance (B), time (C), and velocity (D) during the forward (df, tf, vf) and backward (db, tb, vb) movements of the bead attached to the dynein-MT-DNA-origami complex. Average (mean \u00b1 SEM) and median values are indicated in each histogram (n=35 for df, tf, vf, and 21 for db, tb, db). (E) A histogram of the frequency of the oscillatory movements (n=29). (F) Histograms of the step size during unidirectional movement (top; n=211) and oscillatory movement (bottom; n=72 for forward and n=44 for backward), fit with multiple Gaussian curves. Main peak positions of the Gaussian functions are indicated. Also see Figure 6\u2014source data 1.\n\nAlthough many of the traces were noisy, a step-finding algorithm (Kerssemakers et al., 2006) detected stepwise movements in both the unidirectional and oscillatory movements of some traces (Figure 5C, Figure 5\u2014figure supplement 1A). Previous work using single Tetrahymena dynein molecules reported steps of ~8 nm at an extreme condition: very low concentration of ATP (3 \u00b5M) (Hirakawa et al., 2000). Cytoplasmic dynein also showed predominantly 8 nm steps (Reck-Peterson et al., 2006; Toba et al., 2006), but the step size depended on load (Belyy et al., 2014; Gennerich et al., 2007). Although many of the traces of our dynein-MT-DNA-origami complex were noisy and we could not accurately measure the step sizes, the peaks of the step sizes were close to 8 nm (6.2, 8.4, and 9.5 nm for unidirectional movement, forward, and backward displacements of the oscillatory movement, respectively; Figure 6F, Figure 6\u2014source data 1). If the oscillatory movements we observed are simply the cycles of unidirectional movement and dissociation of dyneins, we would not detect multiple steps during the backward movements. Thus, the results indicate that both forward and backward displacements during the oscillatory movement are steps of dynein.\n\n### An ensemble of uniformly oriented dynein molecules moves a MT unidirectionally\n\nThe above results show that a dynein-MT complex containing two groups of oppositely oriented dyneins can move in an oscillatory manner when the MTs are connected with DNA origami linkers, whereas a dynein-MT complex without the linkers does not oscillate. However, previous work using single or a few molecules of outer-arm dynein also reported bi-directional movements over a range of several tens of nanometers (Shingyoji et al., 1998; Shingyoji et al., 2015). We thus examined whether the oscillatory movement was also observed with a MT interacting with multiple dyneins but in the absence of oppositely oriented dyneins. Two experimental designs were used: optical trapping measurements of MTs gliding over dynein-coated surfaces (Figure 7\u2014figure supplement 1), and dynein-MT complexes in which all the dyneins are in the same orientation (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig7-v1.jpg)\n\n**Figure 7.:** (A) Relative sliding of the MTs observed by fluorescence microscopy. As illustrated in the diagram, dynein-MT complexes that contain dyneins in two opposite orientations were prepared using less brightly fluorescent MTs and adsorbed to the glass. Addition of ATP disassembles the complex, leaving MTs with dyneins oriented in the same way. New MTs (more brightly fluorescent) were added in the absence of ATP to make the complexes. Average (mean \u00b1 SEM) and median values of the velocities are indicated (n=65). (B) Relative sliding of the MTs measured in optical trapping assays. Trap stiffness: 0.055 pN/nm. Also see Figure 7\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Trap stiffness: 0.015 pN/nm.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Four examples recorded under the same condition as in Figure 7B.\n\nFor the experiments in Figure 7\u2014figure supplement 1, a bead (200 nm in diameter) was attached to a MT that was bound to the dynein-coated surface, and displacement after UV photolysis of caged ATP was measured in optical trapping assays. The number of dynein molecules interacting with a MT (4.7 \u00b1 1.9 \u00b5m [mean \u00b1 SD]) was roughly estimated to be 24 at a dynein concentration of 12.5 \u00b5g/ml (see Materials and methods). In contrast to the previous results using single or a few dyneins (Shingyoji et al., 1998; Shingyoji et al., 2015), the MTs moved smoothly in one direction (Figure 7\u2014figure supplement 1).\n\nWe have also examined the motility powered by a unidirectional array of dyneins. Dynein-MT-complexes that normally contain oppositely oriented dyneins were disassembled by ATP, and new MTs were added in the absence of ATP to make dynein-MT complexes in which all the dyneins are oriented in the same way (illustrated in Figure 7A). The newly added MTs were biotinylated to enable binding of avidin-coated beads in optical trapping experiments and were also more brightly labeled so that they could be identified in the dynein-MT complex. In gliding assays, the MTs in these complexes moved in one direction with an average speed of 6.8 \u00b5m/s (Figure 7A, Figure 7\u2014source data 1), which is faster than those in the usual surface-gliding assay, as reported previously (Aoyama and Kamiya, 2010). Optical trapping experiments also showed at a higher resolution that the movement was unidirectional (Figure 7B and Figure 7\u2014figure supplement 2), clearly different from the traces observed with the complex containing oppositely oriented dyneins (Figure 5A and Figure 5\u2014figure supplement 1). Thus, we conclude that an ensemble of multiple uniformly oriented dynein molecules moves a MT unidirectionally, and that two groups of oppositely oriented dyneins are required for oscillation.\n\n### Structures of dynein in the dynein-MT-DNA-origami complex\n\nDuring oscillatory movement, the two groups of oppositely oriented dynein molecules are likely to have different conformations. Although preliminary, we have extracted dynein images from the negative-stain EM images and tested if we could detect structural differences (Figure 2\u2014figure supplement 3). Previous structural analysis of axonemes revealed that the heads of dynein are shifted toward the MT minus end in the presence of ATP or ADP\u00b7vanadate, or in beating flagella (Burgess, 1995; Lin and Nicastro, 2018; Movassagh et al., 2010; Sale et al., 1985; Ueno et al., 2014), so that the length of the dynein molecule measured along a MT increases. Thus, we have also measured the length of dynein in our negative stain images. Although the apparent length measured in 2D images is thought to be affected by the viewing angle so that the measured values are not precise, increase of the length was detected for both orientations of dyneins in the presence of ATP (p<0.00001, T-test), suggesting that their structures are different from the rigor structure (Figure 2\u2014figure supplement 4, Figure 2\u2014source data 1). No difference was detected between the average lengths of the two oppositely oriented dyneins.\n\nPrevious EM studies reported differences in the arrangement of the heads between Chlamydomonas outer-arm dynein in the rigor state and in the presence of ATP or ADP\u00b7vanadate (Goodenough and Heuser, 1982; Lin and Nicastro, 2018; Movassagh et al., 2010). Our no-nucleotide images (Figure 2\u2014figure supplement 3B) seemed to agree with the 2D projection of the previously reported cryo-electron tomography structure in the apo state (Figure 2\u2014figure supplement 3D; Movassagh et al., 2010), in which the three heads were arranged like stacked plates. However, the head arrangement was more variable in our images with ATP (Figure 2\u2014figure supplement 3C). Although the current analysis using negative-stain 2D images did not allow us to prove structural changes, comparison of the two oppositely oriented dyneins suggested differences in the arrangement of the heads in the two groups. The results show that our dynein-MT-DNA-origami complex is a useful system for future structural analysis of dynein during oscillation.\n\n### Bending motions of the dynein-MT-DNA-origami complex\n\nIn cilia and flagella, which are free to move in water, relative movements of the neighboring doublet MTs lead to bending motions. On the other hand, the dynein-MT-DNA-origami complexes in our optical trapping experiments were fixed to the glass surface along the whole length. In order to investigate whether the dynein-MT-DNA-origami complex has an ability to produce bending motions, we searched for a complex which is held at one point. Whereas a majority of the complexes seemed to be fixed to the glass along their entire length, there were some complexes attached only partially either to a bead or to the glass. Some examples are shown in Figure 8, Figure 8\u2014figure supplement 1, Videos 2 and 3. Although our fluorescence microscopy setup did not allow us to detect high-frequency oscillations, repetitive bending motions were indeed observed. The plot in Figure 8B shows that the complex can bend in both directions compared to the position before ATP release. Thus, it is likely that the bending motions in the opposite directions are powered by oppositely oriented dyneins, not just the cycles of force production and detachment. Sometimes a part of the MT bundle separated during bending motions as in Figure 8\u2014figure supplement 1A, probably because this region did not have DNA origami attachment or because the DNA origami was pulled away during bending. Using these regions, relative sliding distances of the MTs were estimated to be approximately 130 and 370 nm for the frames #38 of Figure 8A and #13 of Figure 8\u2014figure supplement 1A, respectively. Sliding distances longer than the expected maximum value (~190 nm; see Figure 4\u2014figure supplement 1) are thought to be caused by rearrangement of the DNA origami during MT sliding. Future studies at a higher resolution may reveal bending motions at higher frequencies without separation of MTs. Nevertheless, the bending motions observed here indicate that a system composed of MTs, oppositely oriented dyneins, and inter-MT crosslinkers has the ability to bend repetitively.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig8-v1.jpg)\n\n**Figure 8.:** (A) Snapshots during movement of the dynein-MT-DNA-origami complex shown in Video 2. The number indicated in each frame corresponds to the frame number in the movie (recorded at 10 frames/s). The UV was flashed at frames #16, 18, and 21, each for 50 ms. The complex is attached to a bead while one end (red arrowheads) is free, which moves with respect to the position before the UV flash (cyan arrowhead) as the complex bends repeatedly. Bar: 5 \u00b5m. (B) Displacement of the complex during bending motion. The plot shows the lateral (x) positions of the complex observed in the boxed region in A. The average position before the UV flash (frames #5\u201315) was taken as 0 on the vertical axis. Note that the displacement is to both the plus and minus directions. (C) Diagram illustrating a model explaining the movement.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Movement of the complex was observed under the same experimental conditions as in Figure 8, but in this example, one end of the complex (bottom of the images) seemed to be attached to the glass. The movie of this complex is shown in Video 3. The numbers indicated in A and B correspond to the frame numbers in Video 3 (recorded at 10 frames/s). (A) Snapshots during movement. UV was flashed at frames #5, 15, 25, 35, 45, and 55, each for 50 ms. After the UV flash, the middle part of the complex repetitively bows outward and becomes separated (orange arrowheads), presumably because there are not enough DNA origami and dynein molecules to hold the two MTs together when they are bent. Bar: 5 \u00b5m. (B) Displacement of the complex during bending motion. The plot shows the lateral (x) positions of the two MTs (or MT bundles) observed in the boxed region in A, where the complex separated and one of the MTs bowed outward repeatedly. The average position before UV flash was taken as 0 on the vertical axis. (C) Diagram illustrating a model explaining the movement.\n\n![Video 2.](https://cdn.elifesciences.org/articles/76357/elife-76357-video2.mp4.jpg)\n\n**Video 2.:** Movie of the dynein-MT-DNA-origami shown in Figure 8. The complex is fixed to beads while one of the ends is free in solution. After UV photolysis of caged ATP (frames #16, 19, 21), the complex bends repeatedly. Recorded at 100 ms/frame.\n\n![Video 3.](https://cdn.elifesciences.org/articles/76357/elife-76357-video3.mp4.jpg)\n\n**Video 3.:** Movie of the dynein-MT-DNA-origami shown in Figure 8\u2014figure supplement 1. Movement of the dynein-MT-DNA-origami complex was recorded under the same conditions as in Video 2 but without beads. One end of the complex is attached to the glass surface, while the MTs in the upper part of the image slide relative to each other, which causes bending and separation of the MTs in the middle part. UV flash at frames #5, 15, and 25. Recorded at 100 ms/frame.\n\n## Discussion\n\nRepetitive bending of cilia and flagella is produced by collective actions of many dynein molecules that are aligned in a specific manner and communicate with each other. Another important feature of cilia and flagella is that the dyneins on the opposite sides of the axoneme produce force to bend the axoneme in opposite directions (Figure 1A). The dynein-MT system used here mimics cilia and flagella in that it contains two groups of oppositely oriented dynein molecules, that the neighboring dyneins are arranged with 24 nm periodicities between a pair of MTs, and that the MTs are interconnected with passive linkers. Previous work using frayed Chlamydomonas flagella axonemes showed that a pair of doublet MTs can display cyclic association, buckling, and dissociation (Aoyama and Kamiya, 2005; Brokaw, 2009). In their system, the doublet MTs were bundled at the proximal end and the inter-doublet linkers were proteolyzed. Our dynein-MT complex differs from theirs in that it contains inter-MT linkers and two groups of dyneins that produce opposing forces between a pair of MTs.\n\nOscillatory movements of MTs were also observed by Shingyoji et al., 1998; Shingyoji et al., 2015, using single or a few molecules of sea urchin axonemal dynein. In contrast, our work shows that multiple molecules of Chlamydomonas outer-arm dynein move a MT unidirectionally. We think the discrepancy is caused by the number and the arrangement of molecules: our system has multiple dynein molecules (~35 on average in the case of the complex with oppositely oriented dyneins) aligned regularly on a MT, which would work cooperatively as in cilia and flagella. An effect of the number of molecules on a motor\u2019s directionality was also reported for kinesin-5 Cin8: a single Cin8 moved to the MT minus end, while a team of Cin8 showed plus-end-directed motility (Roostalu et al., 2011). Our results show that an ensemble of dynein molecules aligned on a MT produce force in one direction, but participation of oppositely oriented dyneins is required for oscillatory movements.\n\nThe axoneme is a complex structure containing various components that may modulate the dynein activity, which makes it difficult to understand the basic mechanism of oscillation. For example, radial spokes and central apparatus are thought to be important for beating of flagella, but mutant flagella lacking radial spokes or the central pair can beat under certain conditions (Frey et al., 1997; Yagi and Kamiya, 2000), indicating that they are not absolutely needed for oscillatory beating. The circumferential layout of nine doublet MTs and/or the cooperative activities of outer-arm and several species of inner-arm dyneins may also be important for oscillation, but it has not been known whether they are essential for oscillation. Some modeling studies predicted that a system composed of dynein, MTs, and passive components can produce oscillation due to mechanical instability (Bayly and Dutcher, 2016), but direct evidence has not been obtained because of the lack of a reconstituted system with minimal components. Here, use of DNA origami enabled us to construct a simple system composed of two MTs with clusters of oppositely oriented dyneins and passive linkers. Oscillation of this system shows that the regulatory components including the 9 + 2 structure with radial spokes and the central apparatus, nexin-dynein regulatory complexes, and inner-arm dyneins are not essential for generation of oscillation per se.\n\nSince our dynein-MT-DNA-origami complex contained dyneins that produce forces in opposite directions, the most likely explanation for the oscillatory movements would be that each of the two dynein orientation-groups is responsible for just one of the two directions of movement, one orientation powering forward movements and the other orientation driving backward movements (Figure 4). We cannot completely rule out the possibility that at least some of the backward motions are caused by the trap force after detachment of dyneins; although steps were observed in the backward motions, force-induced backward stepping was reported with cytoplasmic dynein (Gennerich et al., 2007). Nevertheless, we think that it is more likely that the oscillatory movements are produced by alternating actions of two groups of dyneins that produce force in opposite directions, because (1) the dynein-MT complexes with unidirectionally aligned dyneins did not show oscillation and (2) there exist two groups of dyneins that produce opposing force in more than 80% of the complexes, and if all the steps observed during backward motion were force-induced backward stepping, that would mean the dyneins in only one of the two groups are responsible for both forward and backward movement while the dyneins in the other group do nothing, which we think is unlikely.\n\nThe DNA linkers limit the range of relative sliding, and thus may function as the trigger to change the direction of movement. The average frequency of the observed oscillation (~33 Hz) was close to the beat frequencies of the two flagella of a detergent-extracted Chlamydomonas cell (30 and 45 Hz) (Kamiya and Hasegawa, 1987). In addition, the dynein-MT-DNA-origami complex showed repetitive bending motions when one end is free in solution. Although regulatory components including the radial spokes and central apparatus are probably needed for more coordinated and long-lasting oscillation, our results show that a minimal system composed of two groups of oppositely oriented dyneins, MTs, and inter-MT crosslinkers has an intrinsic ability to oscillate and bend cyclically.\n\nThe dynein-MT-DNA-origami complex developed here contains multiple dynein molecules aligned between the MTs with a 24 nm periodicity as in axonemes, allowing the neighboring dyneins to cooperate, and the oppositely oriented dyneins to work against each other. This simple system is thus useful for future research on the mechanism of cilia/flagella motility. It can also be used to study the high-resolution structures of dynein during oscillatory movement. Future cryo-EM studies analyzing the 3D structures of activated and regulated dynein molecules would be of great interest.\n\n## Materials and methods\n\n### Dynein, kinesin, and microtubules\n\nA wild-type strain (137c-) of Chlamydomonas reinhardtii was used. Flagella were isolated using dibucaine and demembranated as described previously (Yagi et al., 2009). For extraction of dynein, axonemes were incubated in 0.6 M KCl in HMDE solution (30 mM HEPES, 5 mM MgSO4, 1 mM dithiothreitol, 1 mM EGTA, pH = 7.4) for 30 min at 4\u00b0C. For some preparations, axonemes were first incubated in HMDEK (HMDE with 50 mM CH3COOK) containing 0.1 mM ADP for 1 min, centrifuged, and then incubated in 0.6 M KCl in HMDE for 20 min two times. After centrifugation, the excess salt was removed from the supernatant fraction either by overnight dialysis or by Amicon Ultra-4 100 K centrifugal filter using HMDEK. The resulting dynein suspension was mixed with 23% sucrose, aliquoted, and stored in liquid nitrogen.\n\nThe E237A mutant of human ubiquitous kinesin, which is ATPase-defective with the neck-linker in a docked conformation (Rice et al., 1999), was used. SNAPf protein was fused to the C-terminus of cysteine-light, 336-residue monomer kinesin E237A. All constructs were verified by DNA sequencing. Monomeric kinesins were expressed and purified as previously described (Miyazono et al., 2010), except that kinesins were further purified with HiTrap-SP (GE) after His-tag purification (Ni-NTA Agarose, Qiagen).\n\nTubulin was purified from porcine brain tissue (Castoldi and Popov, 2003). Rhodamine-labeled and biotinylated tubulin was prepared using tetramethylrhodamine (C-1171, Molecular Probes) and Sulfo-NHS-LC-LC-Biotin (Thermo Scientific), respectively. For fluorescently labeled MTs, rhodamine-labeled tubulin and unlabeled tubulin were mixed in the ratio 1:9. For MTs used to bind beads in the optical trapping experiments, rhodamine-labeled tubulin, biotinylated tubulin, and unlabeled tubulin were mixed in the ratio 1:2:7. MTs were polymerized in a polymerizing solution (80 mM PIPES (pH 6.8), 1 mM EGTA, 5 mM MgSO4, 1 mM DTT, 0.5 mM GTP, and 5 or 10% DMSO) for 30 min, stabilized with taxol and stored in liquid nitrogen.\n\n### DNA origami\n\nSingle-stranded P8064 DNA purchased from tilibit nanosystems GmbH (Garching, Germany) was used as the scaffold for DNA origami. Unmodified staple strands were purchased from Sigma-Genosys as Oligonucleotide Purification Cartridge (OPC) grade. Amino-modified staples, which have three amino-modified C6dT oligonucleotides near the 5\u2019 end, were purchased from IDT as Dual-HPLC-purified, or from Japan Bio Service (Tsukuba, Japan) as HPLC-purified. The SNAP-ligand was covalently attached to the amino-modified staples by mixing the staples and BG-GLA-NHS (NEB, dissolved in DMSO) as previously described (Derr et al., 2012; Masubuchi et al., 2018). The label efficiency of the SNAP-ligand was estimated to be 95\u201398% by a gel-shift assay using purified SNAP-tag protein. The modified staples are described in Supplementary file 1.\n\nThe rod type DNA origami nanostructure composed of 30 helices was designed using the honeycomb-lattice version (10.5 bp/turn) of the caDNAno2 software, and folded in 1 \u00d7 Rod buffer (5 mM Tris boric acid, pH 7.6, 20 mM Mg(OAc)2, 5 mM Na(OAc), and 1 mM EDTA). Typically, 40 nM single-stranded P8064 DNA (tilibit) and 240 nM of each staple strand (sixfold excess) were mixed in 1 \u00d7 Rod buffer, denatured at 85\u00b0C for 5 min and annealed at 47.5\u00b0C for 4 hr in a PCR machine (Takara-Bio). The folded DNA origami was then agarose-gel-purified (Douglas et al., 2009) and concentrated by PEG-precipitation (Stahl et al., 2014). The Rod concentration was estimated by absorbance at 280 nm using NanoDrop (Thermo).\n\nThe maximum length of the linker was estimated assuming the following: the unit length of ssDNA: 0.63 nm, the unit length of amino acids: 0.34 nm, the unit length of a carbon chain: 0.13 nm, and the size of the SNAPf part: 2 nm. Using these values, the maximum length of the linker including 30 nucleotides of poly-thymidine, C6dT oligonucleotide, SNAPf, and an amino acid linker between kinesin and SNAPf, was calculated to be approximately 29 nm.\n\n### Dynein-MT-DNA-origami complex\n\nAbout 15\u201320 nM DNA rods were incubated with kinesin E237A at a molar ratio of 1:8 in HEM buffer (20 mM HEPES, 1 mM EGTA, 10 mM MgSO4, pH = 7.8) for 30 min at room temperature. Meanwhile, the dynein-MT complex was prepared by incubating 10\u201320 \u00b5g/ml dynein preparation with ~40 \u00b5g/ml MTs in HEM for 8\u201310 min at room temperature. Dynein-MT and DNA-kinesin were then mixed so that the final concentrations of dynein, MTs, DNA, and kinesin were 6.25 or 12.5 \u00b5g/ml, 25 \u00b5g/ml, 2.5 nM, and 20 nM, respectively, and incubated for 10 min at room temperature. For the dynein-MT complex without DNA-kinesin, HEM was added instead of DNA-kinesin.\n\n### Preparation of the dynein-MT-DNA complex with a unidirectional array of dynein\n\nFor preparation of the dynein-MT complex that has dyneins oriented in the same way (Figure 7), dynein-MT complexes were prepared using less-brightly fluorescent MTs (rhodamine tubulin: unlabeled tubulin = 3:97) at a final concentration of dynein and MTs of 30 and 15 \u00b5g/ml, respectively, and adsorbed to the glass surface of a chamber. The complexes, which are thought to contain oppositely oriented dyneins, were then separated by addition of 0.5 mM ATP in HEM. After perfusion of HEM containing 1 mM ADP, brighter MTs (rhodamine tubulin:biotinylated tubulin:unlabeled tubulin = 1:2:7) were added to make dynein-MT complexes that contain dyneins in a single orientation. Biotinylated tubulin was used for binding to avidin-coated beads in optical trapping experiments.\n\n### EM and image analysis\n\nThe sample was applied onto a carbon-coated grid and stained with 1\u20132% uranyl acetate. For observing the complex in the presence of ATP, ADP (final: 1 mM) was first added to the sample on a grid (Yagi, 2000). After 1 min, ATP (final: 0.1 mM) was added and the sample was immediately stained with uranyl acetate. The samples were observed using an FEI Tecnai F-20 electron microscope equipped with a Gatan Orius 831 CCD camera. The images were adjusted for contrast and Gaussian-filtered in Adobe Photoshop to reduce noise.\n\nFor the analysis of dynein shapes shown in Figure 2\u2014figure supplement 3, a set of high magnification images and a low magnification image were taken from the same dynein-MT-DNA-origami complex. The high magnification images show the dynein structures at a higher resolution and comparison with the low magnification image tells where each dynein is located in the complex.\n\nThe electron microscopic images were analyzed using the Eos software (Yasunaga and Wakabayashi, 1996). Images of dynein-MT-DNA-origami complexes that have dynein molecules bound in two opposite orientations were selected. After correction for the contrast transfer function, image segments each containing a dynein molecule and parts of two MTs were extracted (Figure 2\u2014figure supplement 3A). Images of dynein molecules whose tails are bound to the same MT were grouped, so that there are two groups of dynein images observed between a pair of MTs.\n\nImage segments that belong to the same group were aligned and averaged in the following process. To lower the effect of the MTs and neighboring dyneins during alignment, the contrast of the peripheral region in each segment was reduced by 10%. Each segment was pasted into a slightly larger box filled with the mean density of the peripheral region. For each group, we selected one of the segments as the original reference and aligned the other images by calculating their similarity using a correlation function, allowing translation and rotation with 9\u20130.072\u00b0 steps. The images in the same group were averaged using the rotation angles and translation values that showed the maximum correlation. We then used these average images as the references for the next cycle of alignment. The alignment cycle was repeated until the average images did not change. For comparison with these average images, 2D projections of the EMDB maps (EMD_1696 and EMD_1697) (Movassagh et al., 2010) were calculated using mrcImageRotation3D/mrcImageProjection on Eos (Yasunaga and Wakabayashi, 1996).\n\nThe length of the dynein molecule along the MT axis was measured in each average image. The length of the dynein image projected onto the MT axis was defined as the dynein length (Figure 2\u2014figure supplement 4, inset). Distributions of the lengths in the presence and absence of ATP were compared statistically (Welch\u2019s T-test; Figure 2\u2014source data 1).\n\n### In vitro motility assays\n\nGlass chambers were made using two pieces of cover glass (24 mm \u00d7 32 mm [No. 24321, Muto pure chemicals, Japan] and 18 mm \u00d7 18 mm [No. 0101030, Marienfeld]). The glass was cleaned with KOH, and then rinsed with H2O and ethanol for MT-gliding assays (Inoue and Shingyoji, 2007). For optical trapping experiments of the dynein-MT complex, uncleaned glass was used because more beads adhered non-specifically to the cleaned glass. The size of the chamber was ~18 mm \u00d7 5 mm.\n\nMT-gliding assays over dynein-coated glass surfaces (Figure 3A) were performed by introducing 100\u2013125 \u00b5g/ml dynein in a chamber for 2 min, followed by 1 mM ADP in HEM for 1 min, and then 5 \u00b5g/ml MT in the assay buffer (1 mM caged ATP [Dojin], 0.1 mM taxol, 20 mM glucose, 0.5% [v/v]; \u03b2-mercaptoethanol, 20 mg/ml catalase, 100 \u03bcg/ml glucose oxidase, and 1 unit/ml hexokinase in HEM). Movement of MTs after UV photolysis of caged ATP was observed using a fluorescence microscope (81 X, Olympus, Japan) equipped with a 100\u00d7 lens, a mercury lamp (USH1030L), and filters (535 BP/30 and 330 WB/80). Caged ATP was photolyzed by switching the filters. Images were recorded using a CMOS camera (ORCA-Flash 2.8, Hamamatsu Photonics, Japan).\n\nFor motility assays of the dynein-MT complex with and without DNA (Figure 3B, Video 1, and Figure 4\u2014video 1), the complex preformed in solution was perfused into the chamber. After applying the ADP solution and assay buffer (without MTs), the MT movement after caged ATP photolysis was observed as above. The velocities were calculated from the videos recorded at the frame rates of 100\u2013400ms.\n\n### Optical trapping\n\nOptical trapping experiments were performed as previously described using a custom-made microscope system (Kinoshita et al., 2018). After perfusion of the dynein MT-complex with and without DNA-kinesin, 1 mM ADP in the HEM buffer, and then the assay buffer (1 mM caged ATP [Dojin], 0.1 mM taxol, 20 mM glucose, 0.5% [v/v] \u03b2-mercaptoethanol, 20 mg/ml catalase, 100 \u03bcg/ml glucose oxidase, and 1 unit/ml hexokinase in HEM) with streptavidin-coated beads and 0.2 mg/ml casein were introduced into the glass chamber.\n\nAn avidin-coated bead was trapped and then brought in contact with a biotinylated MT in the complex. Caged ATP was photolyzed by a UV laser pulse. Displacement of the bead was measured at a sampling rate of 20 kHz with a quadrant photodiode connected to a MacLab system (AD Instruments). For the experiments with dynein-MT-DNA-origami complexes, 200 nm beads were used (trap stiffness: 0.015\u20130.055 pN/nm). For measuring the maximum force produced by the dynein array in the dynein-MT complex (Figure 3\u2014figure supplement 1), 500 nm beads were used (trap stiffness: 0.175\u20130.35 pN/nm), because the bead-attached MT often slid out of the optical trap and the dynein-MT complex disassembled when 200 nm beads were used.\n\nFor the optical trapping experiments of MTs gliding over dynein-coated surfaces (Figure 7\u2014figure supplement 1), 10 \u00b5l of 125 \u00b5g/ml dynein was applied to the glass chamber as in usual MT-gliding assays. Assuming that 10% of the perfused dynein molecules are adsorbed to the glass (Sakakibara et al., 1999), the density of the dynein molecules was roughly estimated to be 209 molecules/\u00b5m2. Thus, if dynein molecules directly below a MT that has a diameter of 25 nm can interact with the MT, the number of dynein molecules that interact with the MT is calculated to be 5.2 molecules/\u00b5m.\n\nStepping events were analyzed by a step-finding algorithm by Kerssemakers et al., 2006. To statistically optimize the step finding procedure, they defined a parameter S, which is the ratio of the \u03c72 of the counter fit to \u03c72 of the best fit. The S changes with number of steps, and the highest peak S gives the best fit. For the analysis shown in Figure 6F, only those data that had a clear peak in S were used. The detected step sizes were calibrated with attenuation factors to account for the compliance of the bead-MT linkage and that of dynein (Kinoshita et al., 2018). Fitting with Gaussian functions was performed by graphic software (Datagraph, Visual Data Tools, Inc).\n\n### Observation of bending motions\n\nAvidin-coated beads (200 nm in diameter) were perfused into a glass chamber. After washing with HEM buffer, dynein-MT-DNA-origami complexes prepared as above using 6.25 \u00b5g/ml (final) dynein and rhodamine-labeled MTs were introduced into a chamber and incubated for 5 min. The assay buffer containing 1 mM caged ATP, 0.5 mM ADP, and 0.3 mg/ml casein was then perfused and the sample was observed under a fluorescence microscope. Although the majority of complexes firmly attached to the glass and did not show movement, some complexes appeared to be attached only by a part of their length while the other ends were free and showed movement. For some experiments, avidin-coated beads were first introduced to the chamber, and dynein-MT-DNA-origami complexes made with rhodamine and biotin-labeled MTs were bound to the beads.\n\nPositions of the MTs were detected by fitting Gaussian functions to the fluorescence intensity profile using ImageJ. The maximum values of relative sliding of the MTs in the complex were estimated using the parts where two MTs of the complex separated (e.g. shown by orange arrowheads in Figure 8\u2014figure supplement 1A). The length along each MT was measured and the difference between the lengths of the two MTs was taken as the sliding distance.\n",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "1a82aaa6-cc13-427d-a598-286b7f0add06",
+      "submission_id": "395d8241-0840-4a7e-a96a-24a159d58a6b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew P Carter, https://ror.org/00tw3jy02 MRC Laboratory of Molecular Biology United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76357.sa0](https://doi.org/10.7554/eLife.76357.sa0)\n\nThe authors describe the reconstitution of axonemal bending using polymerized microtubules, purified outer-arm dyneins, and synthesized DNA origami to cross-link two microtubules. The work is of interest to the field as it shows that bidirectional sliding and bending of microtubules can be generated by a minimal set of elements.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Andrew P Carter, https://ror.org/00tw3jy02 MRC Laboratory of Molecular Biology United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76357.sa1](https://doi.org/10.7554/eLife.76357.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Oscillatory movement of a dynein-microtubule complex crosslinked with DNA origami\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Robert Cross (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Address Reviewer #2's concerns about the EM characterization of your system.\n\n2) Address Reviewer #3's concerns. An implication of this point is that the DNA-based cross-bridges may not have cross-linked the two microtubules.\n\n3) Please clarify if each measured motion is sawtooth-like or oscillatory and if it can be explained by your model.\n\nI include all the reviewer's comments below to help with your revisions.\n\nReviewer #1 (Recommendations for the authors):\n\nThe described findings should be of interest for the cytoskeletal cell and biophysics communities. I therefore recommend publication, subject to the following changes:\n\n1. Abstract: The description that \"\u2026axonemal dynein molecules move in an oscillatory manner along a microtubule\u2026\" is not correct. All dynein molecules perform unidirectional power strokes along axonemal MTs (they don't oscillate along MTs). The oscillatory beating of axonemes results from the coordinated, out-of-phase activation/deactivation of dynein molecules at opposing sides of the axoneme. I recommend correcting the first sentence and the last sentence on page 2.\n\n2. Introduction: References are missing at the end of \"Beating of cilia and flagella is powered\u2026\", \"\u2026the inner-arm dyneins are also regularly placed in specific positions\", and \"\u2026produced by some dyneins to the other parts of the axoneme\".\n\n3. Results, page 6: The authors state that the demonstrated activity shows oscillatory motion. The depicted displacements in Figure 5 and Suppl. Figure 5 look mostly like unidirectional force generation followed by detachment (more than 90% of the depicted events show this behavior). This sawtooth-like pattern is even expected as the force generation of the dynein motors must eventually cease as the MTs are cross-linked. Sections where backward motion is observed could be force-induced backward stepping. The authors should discuss the difference between the observed sawtooth-like displacements and the true oscillatory beating of cilia and flagella.\n\n4. Video 2: I am not sure what one is supposed to see in Video 2.\n\n5. Figure 3: Please plot the absolute sliding velocities in Figure 3B and not the relative velocities.\n\n6. Figures 5B and Suppl. Figure 5A: Why can 180-200 nm unidirectional displacements be generated if both MTs are cross-linked by DNA origami? What explains these large displacements considering that the following sawtooth-like displacements are only 50 nm in amplitude?\n\n7. Figure 7: It looks like the trace in Figure 7B shows also sawtooth-like displacements initially after the photolysis of caged ATP, which can also be seen in Supplemental Figure 7C. As the amplitude of these displacements is on a similar length scale (~50 nm) as reported by Shingyoji et al., (Nature 1998), I would say that these experiments largely agree with the results of Shingyoji and co-workers.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors could discuss how the force generating dyneins are localized in cilia. In Figure 8c, dynein generates force at the straight parts, not at the bending point. This is close to the model based on the sliding disintegration (Hayashi and Shingyoji, 2008) and different from the one proposed based on cyo-ET (Lin and Nicastro), where asymmetrical dynein activation occurs at the bending points.\n\nReviewer #3 (Recommendations for the authors):\n\n1. Please explain in the Abstract that the paired microtubules are arranged in parallel, otherwise it is hard to understand that 'opposite orientation' (of the dynein sets) refers to their originating on different microtubules.\n\n2. I don't understand why restraining force due to the DNA crosslinker triggers oscillatory switching between the two sets of dyneins, whereas restraining force due to the optical trap does not. I may be missing something, please comment?\n\n3. I don't understand why in Figure 5B, the initial response to the UV flash is 170 nm of unidirectional sliding, after which much smaller amplitude oscillations ensue. Were the DNA linkers not initially engaged? Can the dynein drag the origami? According to Figure 4 supp1, 96 nm is the max possible sliding distance. Again I may be missing something. There are similar large amplitude sliding events in some of the traces in Figure 5 supp 1.\n\n4. l.186 How are oscillation events defined?\n\n5. Does the steppiness of the traces imply that relatively few dyneins (perhaps sometimes only one?) are engaged at any one time? Or are multiple dyneins synchronising? In Fig7 Supp2 (no origami, larger forces) are the traces steppy?\n\n6. Concerning the possible difference in the velocity distribution for backwards sliding versus forwards sliding (relative to the trap centre) (Figure 6C), the authors consider the possibility that the trapping potential may be hindering the one and helping the other, and raise the possibility that some backwards motions are slips. Can these events not be recognised according to their special rapidity? If so, are there any 'forwards' detachment events?\n",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c5ccd9fc-caf7-454d-b164-3e5c68c5886a",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C1",
+      "claim": "Bending of cilia and flagella occurs when axonemal dynein molecules on one side of the axoneme produce force and move toward the microtubule (MT) minus end.",
+      "claim_type": "EXPLICIT",
+      "source": "Bending of cilia and flagella occurs when axonemal dynein molecules on one side of the axoneme produce force and move toward the microtubule (MT) minus end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mechanism of cilia/flagella bending based on established knowledge of axonemal dynein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "6e1e653f-905c-4a23-8e46-39d63c1af7a0",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C2",
+      "claim": "Dyneins are pulled back when the axoneme bends in the other direction, meaning oscillatory back and forth movement of dynein during repetitive bending of cilia/flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "These dyneins are then pulled back when the axoneme bends in the other direction, meaning oscillatory back and forth movement of dynein during repetitive bending of cilia/flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the oscillatory behavior of dyneins during ciliary/flagellar beating based on mechanical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "e4e9e6bc-3e9c-47f5-ab98-6d41e9c4dc60",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C3",
+      "claim": "Electron microscopy (EM) showed pairs of parallel MTs crossbridged by patches of regularly arranged dynein molecules bound in two different orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron microscopy (EM) showed pairs of parallel MTs crossbridged by patches of regularly arranged dynein molecules bound in two different orientations, depending on which of the MTs their tails bind to.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EM images shown in Figure 2A and B showing dynein molecules in two orientations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "a1dbe86a-45d3-40f3-ba4d-b1ae569f5fc3",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C4",
+      "claim": "The oppositely oriented dyneins are expected to produce opposing forces when the pair of MTs have the same polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The oppositely oriented dyneins are expected to produce opposing forces when the pair of MTs have the same polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the geometry of the system and the known directionality of dynein motors.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "bdf6296e-95dc-4cbe-8161-2326706d847d",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C5",
+      "claim": "Optical trapping experiments showed that the dynein-MT-DNA-origami complex actually oscillates back and forth after photolysis of caged ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical trapping experiments showed that the dynein-MT-DNA-origami complex actually oscillates back and forth after photolysis of caged ATP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5 and related figures showing oscillatory traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "d97612fb-88c5-4d2d-92a8-f195c31d350d",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C6",
+      "claim": "The complex, when held at one end, showed repetitive bending motions.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the complex, when held at one end, showed repetitive bending motions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 8 and Videos 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "46edcb99-f7b9-41ce-bd4f-ea2810a48ba6",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C7",
+      "claim": "A simple system composed of ensembles of oppositely oriented dyneins, MTs, and inter-MT crosslinkers, without any additional regulatory structures, has an intrinsic ability to cause oscillation and repetitive bending motions.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that a simple system composed of ensembles of oppositely oriented dyneins, MTs, and inter-MT crosslinkers, without any additional regulatory structures, has an intrinsic ability to cause oscillation and repetitive bending motions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "8c814e9d-3e6d-4588-876b-56ad16bb766e",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C8",
+      "claim": "Beating of cilia and flagella is powered by axonemal dynein molecules that are minus-end-directed microtubule (MT) motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Beating of cilia and flagella is powered by axonemal dynein molecules that are minus-end-directed microtubule (MT) motors (Gibbons and Rowe, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gibbons and Rowe, 1965.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "02883072-5e38-4720-8c84-e2f73a02a32c",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C9",
+      "claim": "Each dynein is tethered to a doublet MT with its tail, and interacts with the neighboring MT using its stalks in an ATP-dependent way, to produce relative sliding of the two MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Each dynein is tethered to a doublet MT with its tail, and interacts with the neighboring MT using its stalks in an ATP-dependent way, to produce relative sliding of the two MTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of dynein function in axonemes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "81941d32-d9f6-40b2-bb45-24f2ea36602d",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C10",
+      "claim": "The MTs in an axoneme are all parallel and arranged in a 9 + 2 structure with their minus ends at the base and interconnected with various components, such as the nexin-dynein regulatory complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The MTs in an axoneme are all parallel and arranged in a 9 + 2 structure with their minus ends at the base and interconnected with various components, such as the nexin-dynein regulatory complex (Heuser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Heuser et al., 2009 and represents established knowledge of axoneme structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "6c5d7fea-c67d-4423-aa3b-fd77afd33f60",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C11",
+      "claim": "Minus-end-directed movement of the dynein molecules on one side of the axoneme causes bending of the axoneme in one direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the neighboring doublet MTs are interlinked and also anchored to the basal body at the base, minus-end-directed movement of the dynein molecules on one side of the axoneme causes bending of the axoneme in one direction (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on established knowledge and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "f6d30791-d4da-4287-ba54-fd9c1bc049c1",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C12",
+      "claim": "During cyclical bending of the axoneme, dynein molecules oscillate back and forth along a MT.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, during cyclical bending of the axoneme, dynein molecules oscillate back and forth along a MT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanical constraints of the axoneme structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "b915af82-374a-45d6-869c-ca0439352abf",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C13",
+      "claim": "How a minus-end-directed motor dynein can move back and forth along a MT is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "How a minus-end-directed motor dynein can move back and forth along a MT is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in current knowledge that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "87a10c6e-6b28-4702-a051-9a4286f972e6",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C14",
+      "claim": "The outer-arm dyneins are aligned in a row with a periodicity of 24 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "the outer-arm dyneins are aligned in a row with a periodicity of 24 nm, and the inner-arm dyneins are also regularly placed in specific positions (Bui et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bui et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "bb1e886d-e240-4b7e-8f1f-acdf42097ab0",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C15",
+      "claim": "The inter-doublet linkers connect the circumferentially arranged nine doublet MTs, and thus transmit the force produced locally by some dyneins to the other parts of the axoneme.",
+      "claim_type": "EXPLICIT",
+      "source": "The inter-doublet linkers connect the circumferentially arranged nine doublet MTs, and thus transmit the force produced locally by some dyneins to the other parts of the axoneme (Lindemann, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lindemann, 2003.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "f700756e-9dfd-4d28-b6d5-49cb7ef549ec",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C16",
+      "claim": "Radial spokes and central apparatus seem to play important roles in the regulation of dynein activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Other regulatory components, such as the radial spokes and central apparatus also seem to play important roles in the regulation (Witman et al., 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Witman et al., 1978.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "fb284b94-3331-4240-954e-227e683120ff",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C17",
+      "claim": "The high-salt-extracted dynein preparations are known to crossbridge MTs with ~24 nm periodicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-salt-extracted dynein preparations are known to crossbridge MTs with ~24 nm periodicity (Haimo et al., 1979)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Haimo et al., 1979.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "8019cd55-5624-4547-93db-482bc2aa06e1",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C18",
+      "claim": "Previous work showed that the proteins bound to MTs are mostly outer-arm dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "although they contain other components in addition to outer-arm dyneins, previous work showed that the proteins bound to MTs are mostly outer-arm dynein (Aoyama and Kamiya, 2010; Oda et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Aoyama and Kamiya, 2010 and Oda et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "7fd3051a-3cb3-4077-b151-0ec0f6a5ccb2",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C19",
+      "claim": "The MTs became bundled with the crossbridging molecules bound with a period of ~24 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Aoyama and Kamiya, 2010; Haimo et al., 1979; Oda et al., 2007), the MTs became bundled with the crossbridging molecules bound with a period of ~24 nm (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and B and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "d60e4846-214d-4830-8817-952f90e9bbcf",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C20",
+      "claim": "Negative-stain EM observation of the individual crossbridges showed characteristic shapes of outer-arm dynein, with stacked heads and a tail, confirming that the crossbridging proteins are mostly outer-arm dyneins.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative-stain EM observation of the individual crossbridges showed characteristic shapes of outer-arm dynein, with stacked heads and a tail (Heuser et al., 2009; Movassagh et al., 2010; Figure 2C), confirming that the crossbridging proteins are mostly outer-arm dyneins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data shown in Figure 2C and comparison with structures reported in cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "3ee4e724-9b76-43f5-88a3-4ea910b8b1a2",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C21",
+      "claim": "The average number of dyneins per 1 \u00b5m of a MT pair was about 12 when 6.25 \u00b5g/ml dynein was used.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of dyneins per 1 \u00b5m of a MT pair was about 12 when 6.25 \u00b5g/ml dynein was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "bea258d8-7dc7-4f28-bc42-49fb124e8b16",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C22",
+      "claim": "The majority of the Chlamydomonas-dynein-MT complexes (36 out of 44 complexes) showed parallel arrangements of the MTs as in axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the majority of the Chlamydomonas-dynein-MT complexes (36 out of 44 complexes) showed parallel arrangements of the MTs as in axonemes (Figure 2\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from EM data shown in Figure 2\u2014figure supplement 1C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "11dfc13d-2787-46a2-a1b5-c252cab7c08a",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C23",
+      "claim": "In the complex with parallel MTs, the dynein molecules in two opposite orientations are expected to produce force in opposite directions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the complex with parallel MTs, the dynein molecules in two opposite orientations are expected to produce force in opposite directions (Figure 1B and Figure 2\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the geometry of the system and the known directionality of dynein motors.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "2576cbbd-4048-49f2-a6e5-51e31d298b3c",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C24",
+      "claim": "The outer-arm dynein preparations used here supported movement of MTs in gliding assays at a speed comparable to those in previous work.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer-arm dynein preparations used here supported movement of MTs in gliding assays at a speed comparable to those in previous work (Alper et al., 2013; Furuta et al., 2009; Figure 3A, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A and comparison with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "9de7557c-42b5-452d-bcdb-bb869d6b6062",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C25",
+      "claim": "Many of the dynein-MT complexes showed unidirectional sliding of MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the majority of the complexes are thought to contain groups of dynein molecules that produce force in opposite directions, many of the complexes showed unidirectional sliding of MTs (Video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "6abbd575-acc5-41ef-b11f-9ce113a6136c",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C26",
+      "claim": "Some MTs slid much faster than those observed in gliding assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The velocity was variable (Figure 3B, Figure 3\u2014source data 1), with some MTs sliding much faster than those observed in gliding assays.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "d4941657-81fe-4358-8c17-1a9f6791c112",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C27",
+      "claim": "Fast sliding was previously observed with similar dynein-MT complexes but with much higher concentration of dynein, and was interpreted as the effect of cooperation of dyneins aligned with 24 nm periodicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast sliding was previously observed with similar dynein-MT complexes but with much higher concentration of dynein, and was interpreted as the effect of cooperation of dyneins aligned with 24 nm periodicity (Aoyama and Kamiya, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aoyama and Kamiya, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "b02cf695-dbd9-4104-a2f6-57feb4d06eb9",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C28",
+      "claim": "Typical traces showed a maximum force of ~30 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical traces showed a maximum force of ~30 pN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from optical trapping experiments shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "16edbcdd-0e1d-4541-8f9c-bf4c79836a52",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C29",
+      "claim": "The maximum force value is several times larger than the force produced by single molecules of outer-arm dynein from sea urchin (5\u20136 pN) or Tetrahymena (4.7 pN), indicating cooperative force production.",
+      "claim_type": "EXPLICIT",
+      "source": "The value is several times larger than the force produced by single molecules of outer-arm dynein from sea urchin (5\u20136 pN) (Shingyoji et al., 2015) or Tetrahymena (4.7 pN) (Hirakawa et al., 2000), indicating cooperative force production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited literature values, leading to an inference about cooperative behavior.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "abcc8b0e-e7bf-4a10-ba4b-a8081497b938",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C30",
+      "claim": "Addition of enough DNA origami rods can prevent disassembly of the complex in the presence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro motility assays confirmed that addition of enough DNA origami rods (e.g. 2.5 nM DNA rods for the dynein-MT complex with 6.25 \u00b5g/ml dynein) can actually prevent disassembly of the complex in the presence of ATP, so that movement of MTs was not detected by fluorescence microscopy (Figure 4\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 4\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "b741182f-d151-4d63-939f-fe16b893986f",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C31",
+      "claim": "The maximum relative sliding distance was estimated to be ~96 nm in both directions in the ideal situation where all the DNA rods are bound perpendicular to the MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum relative sliding distance was estimated to be ~96 nm in both directions in the ideal situation where all the DNA rods are bound perpendicular to the MTs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the design of the DNA origami linkers, illustrated in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "81b98114-dbd5-4b5f-be11-9aab1cd1b55f",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C32",
+      "claim": "DNA origami rods crosslinking the dynein-MT complex were clearly visible by EM.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA origami rods crosslinking the dynein-MT complex were clearly visible by EM (Figure 2A and B, indicated by purple arrowheads; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM images shown in Figure 2A, B, and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "f1085928-3dc3-46d2-849a-663b7665585f",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C33",
+      "claim": "The average number of DNA rods crosslinking a pair of MTs was ~2.4 per \u00b5m when 2.5 nM DNA rods were used.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of DNA rods crosslinking a pair of MTs was ~2.4 per \u00b5m when 2.5 nM DNA rods were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "de23d99b-db63-444f-923d-c39dd90d2c78",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C34",
+      "claim": "When ATP was added to the complex, the deviation of the rod angle from the perpendicular increased (p<0.002, Mann-Whitney U-test), indicating that the DNA rods tilted because of relative sliding of the MTs.",
+      "claim_type": "EXPLICIT",
+      "source": "When ATP was added to the complex, the deviation of the rod angle from the perpendicular increased (p<0.002, Mann-Whitney U-test; Figure 4\u2014source data 2), indicating that the DNA rods tilted because of relative sliding of the MTs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of experimental data shown in Figure 4\u2014source data 2 and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "b63a5ae2-cdbe-49fa-86ba-f7ac09ea0612",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C35",
+      "claim": "About 48 out of 94 traces showed sliding movement, and 65% of them exhibited oscillatory movement.",
+      "claim_type": "EXPLICIT",
+      "source": "About 48 out of 94 such traces showed sliding movement, and 65% of them exhibited oscillatory movement (at least two forward and two backward displacements, each displacement larger than 10 nm, and the velocity of each movement between 0.1 and 50 \u00b5m/s) in some parts of the trace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the optical trapping experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "5fd9e205-080c-456e-80c1-7d52287626e2",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C36",
+      "claim": "The amplitude of the oscillatory movements was variable, but typically within the expected maximum displacement (~96 \u00d7 2 nm), with the averages of 26.6 and 26.4 nm for the forward and backward movement, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of the oscillatory movements was variable, but typically within the expected maximum displacement (~96 \u00d7 2 nm, see above), with the averages of 26.6 and 26.4 nm for the forward (away from the trap center) and backward (back toward the trap center) movement, respectively (Figure 6A and B and Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experimental data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "436b446e-eebd-4294-bcad-68b65129badf",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C37",
+      "claim": "The velocities of the forward and backward movements during oscillation were both in the same range as the velocity observed in the gliding assay of the dynein-MT complex without DNA rods (4.4 \u00b5m/s in average).",
+      "claim_type": "EXPLICIT",
+      "source": "The velocities of the forward and backward movements during oscillation were also variable (Figure 6A and D and Figure 6\u2014source data 1), but they were both in the same range as the velocity observed in the gliding assay of the dynein-MT complex without DNA rods (Figure 3B; 4.4 \u00b5m/s in average).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of velocities measured in different experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "f0808e12-49d8-4482-a161-dd828fe76281",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C38",
+      "claim": "The average time required for the forward and backward movements (10.1 and 8.3 ms, respectively) was substantially longer than the time required for simple detachment from a MT, which was usually less than 1 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the average time required for the forward and backward movements (10.1 and 8.3 ms, respectively; Figure 6A and C and Figure 6\u2014source data 1) was substantially longer than the time required for simple detachment from a MT, which was usually less than 1 ms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of timescales from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "ba8dbbde-f62a-4f9f-8be3-7284714cdc54",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C39",
+      "claim": "The frequencies of the oscillation were variable, with an average of 32.9 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequencies were variable, with an average of 32.9 Hz (Figure 6E, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "175e3815-6d2f-4405-af6b-30d0ea646794",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C40",
+      "claim": "The peaks of the step sizes were close to 8 nm (6.2, 8.4, and 9.5 nm for unidirectional movement, forward, and backward displacements of the oscillatory movement, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Although many of the traces of our dynein-MT-DNA-origami complex were noisy and we could not accurately measure the step sizes, the peaks of the step sizes were close to 8 nm (6.2, 8.4, and 9.5 nm for unidirectional movement, forward, and backward displacements of the oscillatory movement, respectively; Figure 6F, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from step-finding analysis of the experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "a8148061-5139-45e4-8b3f-e03ef172f40f",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C41",
+      "claim": "Both forward and backward displacements during the oscillatory movement are steps of dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "If the oscillatory movements we observed are simply the cycles of unidirectional movement and dissociation of dyneins, we would not detect multiple steps during the backward movements. Thus, the results indicate that both forward and backward displacements during the oscillatory movement are steps of dynein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the step-finding analysis of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "9f9ea490-1e46-47db-9285-499256570a2f",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C42",
+      "claim": "An ensemble of multiple uniformly oriented dynein molecules moves a MT unidirectionally.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical trapping experiments also showed at a higher resolution that the movement was unidirectional (Figure 7B and Figure 7\u2014figure supplement 2), clearly different from the traces observed with the complex containing oppositely oriented dyneins (Figure 5A and Figure 5\u2014figure supplement 1). Thus, we conclude that an ensemble of multiple uniformly oriented dynein molecules moves a MT unidirectionally, and that two groups of oppositely oriented dyneins are required for oscillation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on experimental data shown in Figure 7B and comparison with other experimental conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "d81098bf-7bca-4493-983d-e0d9b5d070c4",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C43",
+      "claim": "Two groups of oppositely oriented dyneins are required for oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that an ensemble of multiple uniformly oriented dynein molecules moves a MT unidirectionally, and that two groups of oppositely oriented dyneins are required for oscillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparison of experimental results with different dynein orientations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "8758414d-4a1e-43d6-961e-536589ae7dd2",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C44",
+      "claim": "Increase of the length was detected for both orientations of dyneins in the presence of ATP (p<0.00001, T-test), suggesting that their structures are different from the rigor structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the apparent length measured in 2D images is thought to be affected by the viewing angle so that the measured values are not precise, increase of the length was detected for both orientations of dyneins in the presence of ATP (p<0.00001, T-test), suggesting that their structures are different from the rigor structure (Figure 2\u2014figure supplement 4, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of EM measurements shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "6fb5073b-37b8-4bcd-b7e9-7313b646b491",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C45",
+      "claim": "Repetitive bending motions were observed when the dynein-MT-DNA-origami complex was held at one point.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our fluorescence microscopy setup did not allow us to detect high-frequency oscillations, repetitive bending motions were indeed observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 8 and Videos 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "d685cce2-5387-4a9f-8615-0f2f8a8be425",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C46",
+      "claim": "The complex can bend in both directions compared to the position before ATP release.",
+      "claim_type": "EXPLICIT",
+      "source": "The plot in Figure 8B shows that the complex can bend in both directions compared to the position before ATP release.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "624d3872-6223-41c9-a7e2-41c496534295",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C47",
+      "claim": "It is likely that the bending motions in the opposite directions are powered by oppositely oriented dyneins, not just the cycles of force production and detachment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is likely that the bending motions in the opposite directions are powered by oppositely oriented dyneins, not just the cycles of force production and detachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of bidirectional bending motions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "be04b17b-6ab3-4db1-adba-de0bd7454c63",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C48",
+      "claim": "Relative sliding distances of the MTs were estimated to be approximately 130 and 370 nm for specific frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these regions, relative sliding distances of the MTs were estimated to be approximately 130 and 370 nm for the frames #38 of Figure 8A and #13 of Figure 8\u2014figure supplement 1A, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the experimental data shown in Figure 8A and Figure 8\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "ce17f21a-5894-49f3-93a4-050f5431d9f6",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C49",
+      "claim": "Sliding distances longer than the expected maximum value (~190 nm) are thought to be caused by rearrangement of the DNA origami during MT sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Sliding distances longer than the expected maximum value (~190 nm; see Figure 4\u2014figure supplement 1) are thought to be caused by rearrangement of the DNA origami during MT sliding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain observations that exceed the theoretical maximum.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "767f541f-45fc-4da6-a829-67959069c14a",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C50",
+      "claim": "A system composed of MTs, oppositely oriented dyneins, and inter-MT crosslinkers has the ability to bend repetitively.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the bending motions observed here indicate that a system composed of MTs, oppositely oriented dyneins, and inter-MT crosslinkers has the ability to bend repetitively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental observations of bending motions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "7d77a209-3c08-4830-8718-997030b6e40b",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C51",
+      "claim": "Previous work using frayed Chlamydomonas flagella axonemes showed that a pair of doublet MTs can display cyclic association, buckling, and dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work using frayed Chlamydomonas flagella axonemes showed that a pair of doublet MTs can display cyclic association, buckling, and dissociation (Aoyama and Kamiya, 2005; Brokaw, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Aoyama and Kamiya, 2005 and Brokaw, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "cda9905f-24b2-438e-bc55-bc0808a11d41",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C52",
+      "claim": "Oscillatory movements of MTs were observed by Shingyoji et al., 1998; Shingyoji et al., 2015, using single or a few molecules of sea urchin axonemal dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillatory movements of MTs were also observed by Shingyoji et al., 1998; Shingyoji et al., 2015, using single or a few molecules of sea urchin axonemal dynein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shingyoji et al., 1998 and Shingyoji et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "79f9ad2f-f6f1-47d9-98ff-8d94dce97416",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C53",
+      "claim": "Multiple molecules of Chlamydomonas outer-arm dynein move a MT unidirectionally.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our work shows that multiple molecules of Chlamydomonas outer-arm dynein move a MT unidirectionally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "5fab32f2-84d8-41de-bb39-29cea361dddb",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C54",
+      "claim": "The discrepancy between single molecule and ensemble behavior is caused by the number and the arrangement of molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "We think the discrepancy is caused by the number and the arrangement of molecules: our system has multiple dynein molecules (~35 on average in the case of the complex with oppositely oriented dyneins) aligned regularly on a MT, which would work cooperatively as in cilia and flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the difference between the current results and previous work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "eb086c4f-8971-4bff-a190-8201781785e3",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C55",
+      "claim": "Radial spokes and central apparatus are thought to be important for beating of flagella, but mutant flagella lacking radial spokes or the central pair can beat under certain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, radial spokes and central apparatus are thought to be important for beating of flagella, but mutant flagella lacking radial spokes or the central pair can beat under certain conditions (Frey et al., 1997; Yagi and Kamiya, 2000), indicating that they are not absolutely needed for oscillatory beating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Frey et al., 1997 and Yagi and Kamiya, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "47602e6d-eff6-452b-9528-bcc751878dca",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C56",
+      "claim": "Some modeling studies predicted that a system composed of dynein, MTs, and passive components can produce oscillation due to mechanical instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Some modeling studies predicted that a system composed of dynein, MTs, and passive components can produce oscillation due to mechanical instability (Bayly and Dutcher, 2016), but direct evidence has not been obtained because of the lack of a reconstituted system with minimal components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bayly and Dutcher, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "da460d67-c7ed-4a49-9544-e2768bdbae02",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C57",
+      "claim": "Oscillation of this system shows that the regulatory components including the 9 + 2 structure with radial spokes and the central apparatus, nexin-dynein regulatory complexes, and inner-arm dyneins are not essential for generation of oscillation per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillation of this system shows that the regulatory components including the 9 + 2 structure with radial spokes and the central apparatus, nexin-dynein regulatory complexes, and inner-arm dyneins are not essential for generation of oscillation per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental demonstration of oscillation in a minimal system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "7b2db41a-1ed2-4303-8702-98e83358cb1a",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C58",
+      "claim": "The most likely explanation for the oscillatory movements would be that each of the two dynein orientation-groups is responsible for just one of the two directions of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our dynein-MT-DNA-origami complex contained dyneins that produce forces in opposite directions, the most likely explanation for the oscillatory movements would be that each of the two dynein orientation-groups is responsible for just one of the two directions of movement, one orientation powering forward movements and the other orientation driving backward movements (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental observations and the geometry of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "7392e8df-2748-4683-960e-fd2f4778c249",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C59",
+      "claim": "The average frequency of the observed oscillation (~33 Hz) was close to the beat frequencies of the two flagella of a detergent-extracted Chlamydomonas cell (30 and 45 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The average frequency of the observed oscillation (~33 Hz) was close to the beat frequencies of the two flagella of a detergent-extracted Chlamydomonas cell (30 and 45 Hz) (Kamiya and Hasegawa, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with values from cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "b25d1e33-db89-4be9-a27a-db66d8cced6b",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C60",
+      "claim": "Regulatory components including the radial spokes and central apparatus are probably needed for more coordinated and long-lasting oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although regulatory components including the radial spokes and central apparatus are probably needed for more coordinated and long-lasting oscillation, our results show that a minimal system composed of two groups of oppositely oriented dyneins, MTs, and inter-MT crosslinkers has an intrinsic ability to oscillate and bend cyclically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the role of regulatory components based on the current findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "aab3a37f-b801-41e7-8ee1-2a52e201338e",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C61",
+      "claim": "The dynein-MT-DNA-origami complex contains multiple dynein molecules aligned between the MTs with a 24 nm periodicity as in axonemes, allowing the neighboring dyneins to cooperate.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynein-MT-DNA-origami complex developed here contains multiple dynein molecules aligned between the MTs with a 24 nm periodicity as in axonemes, allowing the neighboring dyneins to cooperate, and the oppositely oriented dyneins to work against each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the system based on EM observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "5993cb85-5aae-40c6-b309-bf3103f14170",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C62",
+      "claim": "This simple system is useful for future research on the mechanism of cilia/flagella motility.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple system is thus useful for future research on the mechanism of cilia/flagella motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential utility of the system for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "59b5a9b2-2e2f-4e90-bf10-f6fa649e676f",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "claim_id": "C63",
+      "claim": "The system can be used to study the high-resolution structures of dynein during oscillatory movement.",
+      "claim_type": "EXPLICIT",
+      "source": "It can also be used to study the high-resolution structures of dynein during oscillatory movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential application of the system for structural studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6bfa633-977a-455b-b75e-05e3df7818d0",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Electron microscopy characterization of the dynein-MT complex shows that Chlamydomonas outer-arm dyneins crossbridge pairs of microtubules with ~24 nm periodicity in two opposite orientations, with the majority (36/44) of complexes having parallel MT arrangements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19, C20, C21, and C22 provide converging EM evidence showing dynein molecules arranged with 24 nm periodicity in two orientations, with characteristic outer-arm dynein morphology confirmed by comparison to known structures. The quantitative measurements of dynein density and MT polarity are directly supported by the EM data in Figures 2 and supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "a035273d-2566-4fbf-9b3f-1664af1404a3",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DNA origami rods successfully crosslink the dynein-MT complex and prevent disassembly in the presence of ATP, with ~2.4 DNA rods per \u03bcm and statistically significant tilting upon ATP addition (p<0.002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C32, C33, and C34 are well-supported by experimental data showing DNA origami rods visible by EM, quantitative measurements of rod density, and statistical analysis demonstrating ATP-dependent tilting. The Mann-Whitney U-test provides appropriate statistical support for the tilting observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "3f4a0c18-bb8b-48c4-8a7e-811b84023fb2",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The dynein-MT-DNA-origami complex exhibits oscillatory movements in optical trapping experiments with characteristic amplitudes (~26 nm), velocities (comparable to gliding assays), frequencies (~33 Hz), and step sizes (~8 nm), with both forward and backward movements showing dynein stepping behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C35-C41 are supported by extensive optical trapping data in Figures 5 and 6, including quantitative measurements of oscillation parameters, step-finding analysis, and comparison with control experiments. The detection of steps in both directions (C41) provides strong evidence that oscillations are not simply detachment/reattachment cycles. However, the authors acknowledge noise in many traces and some uncertainty in step size measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "5b2ff8a7-d6b4-4279-a99f-78874f6963f4",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "An ensemble of uniformly oriented dynein molecules moves microtubules unidirectionally, and two groups of oppositely oriented dyneins are required for oscillation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C43, and C53 are supported by control experiments in Figure 7 showing that complexes with unidirectionally aligned dyneins produce only unidirectional movement, contrasting with the oscillatory behavior observed when oppositely oriented dyneins are present. This provides strong evidence for the necessity of opposing dynein groups for oscillation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "24693020-176e-44fa-a8da-277f87ce2eac",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The dynein-MT-DNA-origami complex shows repetitive bending motions when held at one point, with bidirectional bending powered by oppositely oriented dyneins rather than simple force production and detachment cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C45-C50 are supported by fluorescence microscopy observations in Figure 8 and Videos 2-3 showing repetitive bending in both directions. The bidirectional nature of bending (C46) and the inference that oppositely oriented dyneins power the movement (C47) are reasonably supported, though the temporal resolution is limited and some sliding distances exceed theoretical predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "d495272f-4b91-412d-9581-ecefc3db5c76",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A minimal system composed of oppositely oriented dyneins, microtubules, and DNA origami crosslinkers has intrinsic ability to produce oscillation and bending without regulatory components like radial spokes, central apparatus, or the 9+2 structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C57, C60, and C61 represent the main conclusion of the study, supported by the collective experimental evidence showing oscillation and bending in a reconstituted minimal system. The demonstration that regulatory components are not essential for oscillation per se (C57) is well-supported, though C60 appropriately notes these components are likely needed for coordinated, sustained oscillation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "78eaffc3-7f42-43ec-aeb4-c8de7c5d3b8b",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Dynein-MT complexes without DNA crosslinkers show predominantly unidirectional sliding with variable velocities (some faster than gliding assays) and produce cooperative forces of ~30 pN, several times larger than single dynein molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 are supported by motility assay data (Figure 3) and optical trapping measurements (Figure 3\u2014figure supplement 1). The comparison with literature values for single molecule forces and the inference of cooperative behavior (C29) are appropriate, though the authors note the force is less than the simple sum of individual dyneins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "cccb6fa7-260f-4906-9d88-f19946479401",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dynein molecules in the complex show increased length along the MT axis in the presence of ATP (p<0.00001), suggesting structural differences from the rigor state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C44 is supported by statistical analysis (T-test, p<0.00001) of EM measurements, but the authors explicitly acknowledge that 2D projection measurements are imprecise due to viewing angle effects. The structural analysis in Figure 2\u2014figure supplement 3 is preliminary and does not definitively establish conformational differences between the two oppositely oriented dynein groups during oscillation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "9f364831-1395-43d8-9a18-ce521267202b",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background on ciliary/flagellar mechanics: axonemal dyneins are minus-end-directed motors that produce bending through coordinated sliding of doublet microtubules in the 9+2 axoneme structure, with dyneins oscillating back and forth during cyclical bending.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C8-C13 represent established knowledge about cilia/flagella mechanics, supported by appropriate citations (Gibbons and Rowe 1965, Heuser et al. 2009). These claims provide necessary context for the study and identify the knowledge gap (C13) that the research addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "1034cfc0-162d-410e-9129-f9915d6be315",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on axoneme structure and dynein preparations: outer-arm dyneins are arranged with 24 nm periodicity, inter-doublet linkers transmit forces, regulatory components play important roles, and high-salt extracted preparations contain predominantly outer-arm dynein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 represent established knowledge supported by appropriate citations (Bui et al. 2008, Lindemann 2003, Witman et al. 1978, Haimo et al. 1979, Aoyama and Kamiya 2010, Oda et al. 2007). These provide necessary background for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "28fcc9a9-6dbe-46eb-9de7-15f957ff3139",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In complexes with parallel MTs, oppositely oriented dyneins are expected to produce opposing forces based on the known directionality of dynein motors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C23 represent logical inferences based on established dynein directionality and the observed geometry of the system. This inference is central to the experimental design and is validated by the subsequent experimental results showing oscillation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "107b4878-3476-4be4-b628-c604a838bda8",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The maximum relative sliding distance in the DNA-crosslinked complex is estimated to be ~96 nm in both directions assuming perpendicular DNA rod binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is a calculation based on the design parameters of the DNA origami linkers (Figure 4\u2014figure supplement 1A). The calculation is straightforward and appropriate, though the authors acknowledge actual sliding may be less due to non-perpendicular binding angles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "cea9ccb5-15a1-4587-be51-cce9263d7d56",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sliding distances exceeding the theoretical maximum (~190 nm) are attributed to rearrangement of DNA origami during MT sliding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C49 is an inference to explain observations (C48) that exceed theoretical predictions. While this is a reasonable explanation, no direct evidence for DNA origami rearrangement is provided. Alternative explanations such as measurement errors or complex geometry are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "2133acd9-61c9-4359-9b2c-b067f7a3dc92",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work context: Previous studies showed cyclic MT movements in frayed axonemes, oscillations with single dyneins, beating in mutants lacking some regulatory components, and modeling predictions of oscillation from mechanical instability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C52, C55, and C56 accurately represent prior work with appropriate citations (Aoyama and Kamiya 2005, Brokaw 2009, Shingyoji et al. 1998/2015, Frey et al. 1997, Yagi and Kamiya 2000, Bayly and Dutcher 2016). These provide important context for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "080f409e-fb0b-465e-8ec1-23f9b1c41937",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The discrepancy between single molecule oscillatory behavior and ensemble unidirectional behavior is attributed to the number and regular arrangement of dynein molecules enabling cooperative action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is a reasonable inference to explain the difference between the current results and previous single-molecule studies. The explanation is consistent with the experimental observations and the known importance of dynein arrangement in axonemes, though direct mechanistic evidence for this specific explanation is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "388858e5-d876-462f-80ea-fb03ba013341",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The oscillatory movements are most likely explained by each dynein orientation group powering one direction of movement, with the observed frequency (~33 Hz) close to Chlamydomonas flagellar beat frequencies (30-45 Hz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58 and C59 represent reasonable interpretations of the data. C58 is the most parsimonious explanation given the system geometry and control experiments, though the authors acknowledge they cannot completely rule out force-induced backward stepping. C59 provides a meaningful comparison with physiological frequencies from cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    },
+    {
+      "id": "cf95ea12-89e7-4222-a793-4de05aabd94f",
+      "content_id": "71e963bc-68fe-44f9-94a2-ea2c3d5cfae2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Future applications: The system is useful for future research on cilia/flagella motility mechanisms and for studying high-resolution dynein structures during oscillatory movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62 and C63 are reasonable statements about potential future applications based on the demonstrated capabilities of the system. These are appropriately framed as prospective rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:43.829107Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e4e9e6bc-3e9c-47f5-ab98-6d41e9c4dc60",
+      "result_id": "b6bfa633-977a-455b-b75e-05e3df7818d0"
+    },
+    {
+      "claim_id": "7fd3051a-3cb3-4077-b151-0ec0f6a5ccb2",
+      "result_id": "b6bfa633-977a-455b-b75e-05e3df7818d0"
+    },
+    {
+      "claim_id": "d60e4846-214d-4830-8817-952f90e9bbcf",
+      "result_id": "b6bfa633-977a-455b-b75e-05e3df7818d0"
+    },
+    {
+      "claim_id": "3ee4e724-9b76-43f5-88a3-4ea910b8b1a2",
+      "result_id": "b6bfa633-977a-455b-b75e-05e3df7818d0"
+    },
+    {
+      "claim_id": "bea258d8-7dc7-4f28-bc42-49fb124e8b16",
+      "result_id": "b6bfa633-977a-455b-b75e-05e3df7818d0"
+    },
+    {
+      "claim_id": "abcc8b0e-e7bf-4a10-ba4b-a8081497b938",
+      "result_id": "a035273d-2566-4fbf-9b3f-1664af1404a3"
+    },
+    {
+      "claim_id": "81b98114-dbd5-4b5f-be11-9aab1cd1b55f",
+      "result_id": "a035273d-2566-4fbf-9b3f-1664af1404a3"
+    },
+    {
+      "claim_id": "f1085928-3dc3-46d2-849a-663b7665585f",
+      "result_id": "a035273d-2566-4fbf-9b3f-1664af1404a3"
+    },
+    {
+      "claim_id": "de23d99b-db63-444f-923d-c39dd90d2c78",
+      "result_id": "a035273d-2566-4fbf-9b3f-1664af1404a3"
+    },
+    {
+      "claim_id": "bdf6296e-95dc-4cbe-8161-2326706d847d",
+      "result_id": "3f4a0c18-bb8b-48c4-8a7e-811b84023fb2"
+    },
+    {
+      "claim_id": "b63a5ae2-cdbe-49fa-86ba-f7ac09ea0612",
+      "result_id": "3f4a0c18-bb8b-48c4-8a7e-811b84023fb2"
+    },
+    {
+      "claim_id": "5fd9e205-080c-456e-80c1-7d52287626e2",
+      "result_id": "3f4a0c18-bb8b-48c4-8a7e-811b84023fb2"
+    },
+    {
+      "claim_id": "436b446e-eebd-4294-bcad-68b65129badf",
+      "result_id": "3f4a0c18-bb8b-48c4-8a7e-811b84023fb2"
+    },
+    {
+      "claim_id": "f0808e12-49d8-4482-a161-dd828fe76281",
+      "result_id": "3f4a0c18-bb8b-48c4-8a7e-811b84023fb2"
+    },
+    {
+      "claim_id": "ba8dbbde-f62a-4f9f-8be3-7284714cdc54",
+      "result_id": "3f4a0c18-bb8b-48c4-8a7e-811b84023fb2"
+    },
+    {
+      "claim_id": "175e3815-6d2f-4405-af6b-30d0ea646794",
+      "result_id": "3f4a0c18-bb8b-48c4-8a7e-811b84023fb2"
+    },
+    {
+      "claim_id": "a8148061-5139-45e4-8b3f-e03ef172f40f",
+      "result_id": "3f4a0c18-bb8b-48c4-8a7e-811b84023fb2"
+    },
+    {
+      "claim_id": "9f9ea490-1e46-47db-9285-499256570a2f",
+      "result_id": "5b2ff8a7-d6b4-4279-a99f-78874f6963f4"
+    },
+    {
+      "claim_id": "d81098bf-7bca-4493-983d-e0d9b5d070c4",
+      "result_id": "5b2ff8a7-d6b4-4279-a99f-78874f6963f4"
+    },
+    {
+      "claim_id": "79f9ad2f-f6f1-47d9-98ff-8d94dce97416",
+      "result_id": "5b2ff8a7-d6b4-4279-a99f-78874f6963f4"
+    },
+    {
+      "claim_id": "d97612fb-88c5-4d2d-92a8-f195c31d350d",
+      "result_id": "24693020-176e-44fa-a8da-277f87ce2eac"
+    },
+    {
+      "claim_id": "6fb5073b-37b8-4bcd-b7e9-7313b646b491",
+      "result_id": "24693020-176e-44fa-a8da-277f87ce2eac"
+    },
+    {
+      "claim_id": "d685cce2-5387-4a9f-8615-0f2f8a8be425",
+      "result_id": "24693020-176e-44fa-a8da-277f87ce2eac"
+    },
+    {
+      "claim_id": "624d3872-6223-41c9-a7e2-41c496534295",
+      "result_id": "24693020-176e-44fa-a8da-277f87ce2eac"
+    },
+    {
+      "claim_id": "be04b17b-6ab3-4db1-adba-de0bd7454c63",
+      "result_id": "24693020-176e-44fa-a8da-277f87ce2eac"
+    },
+    {
+      "claim_id": "767f541f-45fc-4da6-a829-67959069c14a",
+      "result_id": "24693020-176e-44fa-a8da-277f87ce2eac"
+    },
+    {
+      "claim_id": "46edcb99-f7b9-41ce-bd4f-ea2810a48ba6",
+      "result_id": "d495272f-4b91-412d-9581-ecefc3db5c76"
+    },
+    {
+      "claim_id": "da460d67-c7ed-4a49-9544-e2768bdbae02",
+      "result_id": "d495272f-4b91-412d-9581-ecefc3db5c76"
+    },
+    {
+      "claim_id": "b25d1e33-db89-4be9-a27a-db66d8cced6b",
+      "result_id": "d495272f-4b91-412d-9581-ecefc3db5c76"
+    },
+    {
+      "claim_id": "aab3a37f-b801-41e7-8ee1-2a52e201338e",
+      "result_id": "d495272f-4b91-412d-9581-ecefc3db5c76"
+    },
+    {
+      "claim_id": "2576cbbd-4048-49f2-a6e5-51e31d298b3c",
+      "result_id": "78eaffc3-7f42-43ec-aeb4-c8de7c5d3b8b"
+    },
+    {
+      "claim_id": "9de7557c-42b5-452d-bcdb-bb869d6b6062",
+      "result_id": "78eaffc3-7f42-43ec-aeb4-c8de7c5d3b8b"
+    },
+    {
+      "claim_id": "6abbd575-acc5-41ef-b11f-9ce113a6136c",
+      "result_id": "78eaffc3-7f42-43ec-aeb4-c8de7c5d3b8b"
+    },
+    {
+      "claim_id": "d4941657-81fe-4358-8c17-1a9f6791c112",
+      "result_id": "78eaffc3-7f42-43ec-aeb4-c8de7c5d3b8b"
+    },
+    {
+      "claim_id": "b02cf695-dbd9-4104-a2f6-57feb4d06eb9",
+      "result_id": "78eaffc3-7f42-43ec-aeb4-c8de7c5d3b8b"
+    },
+    {
+      "claim_id": "16edbcdd-0e1d-4541-8f9c-bf4c79836a52",
+      "result_id": "78eaffc3-7f42-43ec-aeb4-c8de7c5d3b8b"
+    },
+    {
+      "claim_id": "8758414d-4a1e-43d6-961e-536589ae7dd2",
+      "result_id": "cccb6fa7-260f-4906-9d88-f19946479401"
+    },
+    {
+      "claim_id": "c5ccd9fc-caf7-454d-b164-3e5c68c5886a",
+      "result_id": "9f364831-1395-43d8-9a18-ce521267202b"
+    },
+    {
+      "claim_id": "6e1e653f-905c-4a23-8e46-39d63c1af7a0",
+      "result_id": "9f364831-1395-43d8-9a18-ce521267202b"
+    },
+    {
+      "claim_id": "8c814e9d-3e6d-4588-876b-56ad16bb766e",
+      "result_id": "9f364831-1395-43d8-9a18-ce521267202b"
+    },
+    {
+      "claim_id": "02883072-5e38-4720-8c84-e2f73a02a32c",
+      "result_id": "9f364831-1395-43d8-9a18-ce521267202b"
+    },
+    {
+      "claim_id": "81941d32-d9f6-40b2-bb45-24f2ea36602d",
+      "result_id": "9f364831-1395-43d8-9a18-ce521267202b"
+    },
+    {
+      "claim_id": "6c5d7fea-c67d-4423-aa3b-fd77afd33f60",
+      "result_id": "9f364831-1395-43d8-9a18-ce521267202b"
+    },
+    {
+      "claim_id": "f6d30791-d4da-4287-ba54-fd9c1bc049c1",
+      "result_id": "9f364831-1395-43d8-9a18-ce521267202b"
+    },
+    {
+      "claim_id": "b915af82-374a-45d6-869c-ca0439352abf",
+      "result_id": "9f364831-1395-43d8-9a18-ce521267202b"
+    },
+    {
+      "claim_id": "87a10c6e-6b28-4702-a051-9a4286f972e6",
+      "result_id": "1034cfc0-162d-410e-9129-f9915d6be315"
+    },
+    {
+      "claim_id": "bb1e886d-e240-4b7e-8f1f-acdf42097ab0",
+      "result_id": "1034cfc0-162d-410e-9129-f9915d6be315"
+    },
+    {
+      "claim_id": "f700756e-9dfd-4d28-b6d5-49cb7ef549ec",
+      "result_id": "1034cfc0-162d-410e-9129-f9915d6be315"
+    },
+    {
+      "claim_id": "fb284b94-3331-4240-954e-227e683120ff",
+      "result_id": "1034cfc0-162d-410e-9129-f9915d6be315"
+    },
+    {
+      "claim_id": "8019cd55-5624-4547-93db-482bc2aa06e1",
+      "result_id": "1034cfc0-162d-410e-9129-f9915d6be315"
+    },
+    {
+      "claim_id": "a1dbe86a-45d3-40f3-ba4d-b1ae569f5fc3",
+      "result_id": "28fcc9a9-6dbe-46eb-9de7-15f957ff3139"
+    },
+    {
+      "claim_id": "11dfc13d-2787-46a2-a1b5-c252cab7c08a",
+      "result_id": "28fcc9a9-6dbe-46eb-9de7-15f957ff3139"
+    },
+    {
+      "claim_id": "b741182f-d151-4d63-939f-fe16b893986f",
+      "result_id": "107b4878-3476-4be4-b628-c604a838bda8"
+    },
+    {
+      "claim_id": "ce17f21a-5894-49f3-93a4-050f5431d9f6",
+      "result_id": "cea9ccb5-15a1-4587-be51-cce9263d7d56"
+    },
+    {
+      "claim_id": "7d77a209-3c08-4830-8718-997030b6e40b",
+      "result_id": "2133acd9-61c9-4359-9b2c-b067f7a3dc92"
+    },
+    {
+      "claim_id": "cda9905f-24b2-438e-bc55-bc0808a11d41",
+      "result_id": "2133acd9-61c9-4359-9b2c-b067f7a3dc92"
+    },
+    {
+      "claim_id": "eb086c4f-8971-4bff-a190-8201781785e3",
+      "result_id": "2133acd9-61c9-4359-9b2c-b067f7a3dc92"
+    },
+    {
+      "claim_id": "47602e6d-eff6-452b-9528-bcc751878dca",
+      "result_id": "2133acd9-61c9-4359-9b2c-b067f7a3dc92"
+    },
+    {
+      "claim_id": "5fab32f2-84d8-41de-bb39-29cea361dddb",
+      "result_id": "080f409e-fb0b-465e-8ec1-23f9b1c41937"
+    },
+    {
+      "claim_id": "7b2db41a-1ed2-4303-8702-98e83358cb1a",
+      "result_id": "388858e5-d876-462f-80ea-fb03ba013341"
+    },
+    {
+      "claim_id": "7392e8df-2748-4683-960e-fd2f4778c249",
+      "result_id": "388858e5-d876-462f-80ea-fb03ba013341"
+    },
+    {
+      "claim_id": "5993cb85-5aae-40c6-b309-bf3103f14170",
+      "result_id": "cf95ea12-89e7-4222-a793-4de05aabd94f"
+    },
+    {
+      "claim_id": "59b5a9b2-2e2f-4e90-bf10-f6fa649e676f",
+      "result_id": "cf95ea12-89e7-4222-a793-4de05aabd94f"
+    }
+  ],
+  "comparisons": []
+}

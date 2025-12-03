@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ITC experiments reveal that NHE1 peptides H1, H2, and H1H2 bind CaM with distinct stoichiometries and affinities. H1 binds CaM in a 1:2 (CaM:H1) stoichiometry with high affinity (Kd,1 = 27 \u00b1 8 nM; Kd,2 = 42 \u00b1 6 nM), H2 binds in a 1:1 stoichiometry with much weaker affinity (Kd = 9.0 \u00b1 0.6 \u00b5M), and H1H2 displays two binding transitions with Kd,1 = 0.27 \u00b1 0.07 nM and Kd,2 = 560 \u00b1 15 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 present ITC data with quantitative binding parameters, stoichiometries, and error estimates. The data are internally consistent, showing H1 has higher affinity than H2, and H1H2 exhibits biphasic binding. The measurements appear technically sound with appropriate replicates (n=3 stated in methods).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "NMR titration experiments demonstrate that H1 binds to both CaM lobes with differential kinetics. At 1:1 CaM:H1 ratio, H1 preferentially binds the C-lobe, while at 1:2 ratio both lobes are occupied. Lineshape analysis yields koff,1 = 40 \u00b1 5 s\u207b\u00b9 for C-lobe dissociation and koff,2 = 16 \u00b1 3 s\u207b\u00b9 for N-lobe dissociation, indicating >10-fold faster association with the C-lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 describe NMR titration data showing progressive binding of H1 to CaM lobes with quantitative kinetic parameters. The observations are consistent with the ITC stoichiometry data (C32-C33) and provide mechanistic detail. The lineshape analysis methodology is appropriate and yields reasonable rate constants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "NMR titration of H2 into CaM shows fast exchange kinetics with Kd = 16 \u00b1 1 \u00b5M and koff = 2600 \u00b1 100 s\u207b\u00b9. Chemical shift perturbations span both CaM lobes but are less pronounced for the C-lobe compared to H1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present NMR data for H2:CaM interaction showing fast exchange and weaker binding than H1, consistent with ITC results (C34-C35). The Kd from NMR (16 \u00b5M) is somewhat higher than from ITC (9 \u00b5M), which the authors attribute to weak self-association of H2 (Figure 2\u2014figure supplement 3), providing a reasonable explanation for the discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The authors conclude that each CaM lobe can independently bind one H1 peptide with high affinity in a 1:2 complex (C-lobe slightly favored), while H2 binds CaM with lower affinity in a 1:1 complex involving both lobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are summary conclusions directly supported by the ITC (C32-C37) and NMR (C38-C48) data. The conclusions are consistent with all quantitative measurements and provide a coherent model of the binding interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "NMR analysis of CaM:H1H2 complexes reveals stoichiometry-dependent binding modes. At 1:2 (CaM:H1H2) ratio, each CaM lobe binds one H1 in a ternary complex with H2 uninvolved. At 1:1 ratio, the major state has N-lobe bound to H1 and C-lobe bound to H2, with a minor state showing opposite architecture. Signal broadening indicates dynamic equilibria between multiple states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 describe complex NMR spectra of H1H2:CaM showing multiple binding modes. The interpretations are supported by spectral overlays with simpler H1 and H2 systems (Figures 3a-f). The detection of minor states and dynamic equilibria is consistent with the observed signal broadening. However, the complexity and exchange broadening limit structural precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "SEC-MALS, DLS, and PFG-NMR confirm the stoichiometry and size of CaM:H1H2 complexes. SEC-MALS shows the 1:1 complex has a molecular weight of 25.0 \u00b1 1.6 kDa (expected 25.5 kDa), and DLS/PFG-NMR show stepwise size increases from free CaM to 1:1 to 1:2 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 present orthogonal biophysical data supporting the NMR-derived stoichiometries. The SEC-MALS molecular weight matches the expected 1:1 complex within error. The stepwise size increases by DLS and PFG-NMR are consistent with progressive complex formation. These data address concerns about higher-order oligomers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The NMR solution structure of the 1:2 (CaM:H1) ternary complex shows both CaM lobes binding one H1 in their hydrophobic clefts. Individual lobes are well-defined (backbone RMSD: N-lobe = 0.77 \u00b1 0.16 \u00c5; C-lobe = 0.83 \u00b1 0.18 \u00c5), with flexible linker. Binding involves hydrophobic contacts (H1 residues L623, I631, I634, L635, N638, L639, T642, L646 with CaM methionines) and electrostatic complementarity (H1 positive residues with CaM negative surface).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe the NMR structure with appropriate precision metrics (RMSD values, Table 4). The structure is consistent with the NMR data (C38-C45) showing 1:2 stoichiometry. The identification of specific interacting residues is supported by NOE data. The flexible linker is consistent with absence of inter-lobe NOEs. Structural statistics (Table 4) show good quality (95.7% residues in favored Ramachandran regions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The NMR-derived C-lobe:H1 binding mode was present in the prior crystal structure (K\u00f6ster et al., 2011) but manifested as crystal contacts between symmetry-related molecules rather than the intramolecular interaction observed in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 reconciles the new NMR structure with the prior crystal structure by showing the C-lobe:H1 interaction exists in both but with different molecular contexts. This is supported by structural comparison (Figure 4\u2014figure supplement 1) and provides a reasonable explanation for the discrepancy between crystal and solution structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "NMR experiments show that NHE1 H1H2 can bind apo-CaM (Ca\u00b2\u207a-free) and that H1 binding stabilizes Ca\u00b2\u207a binding to the CaM C-lobe under Ca\u00b2\u207a-limiting conditions (high EDTA), resulting in a state with Ca\u00b2\u207a-loaded C-lobe and apo N-lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 demonstrate Ca\u00b2\u207a-dependent modulation of binding using NMR (Figure 3\u2014figure supplement 2). The observation that H1 increases C-lobe Ca\u00b2\u207a affinity is supported by spectral data showing C-lobe signals resembling Ca\u00b2\u207a-bound state while N-lobe signals resemble apo state under Ca\u00b2\u207a-limiting conditions. This reveals an avidity effect and expands the functional repertoire of the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "PS120 cells stably expressing WT or variant NHE1 (H1-CR, S648A, S648D) show proper plasma membrane localization, comparable expression levels (variants slightly higher than WT), similar endogenous CaM levels, and similar steady-state pHi (~7.4-7.5). Basal acid recovery rates after NH\u2084Cl prepulse are not significantly different between cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 establish baseline cellular characterization. Immunofluorescence (Figure 5a) confirms membrane localization, western blots (Figure 5b-d) show expression levels, and pHi measurements (Figure 5e-g) demonstrate functional NHE1. The lack of basal differences is important for interpreting Ca\u00b2\u207a-stimulated effects. Statistical analyses are appropriate (one-way ANOVA/Kruskal-Wallis with exact p-values provided).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Ionomycin treatment significantly increases pHi recovery rate in WT NHE1-expressing cells compared to vehicle controls. However, H1-CR and S648D variants show significantly reduced Ca\u00b2\u207a-induced NHE1 activation compared to WT, while S648A shows no significant difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 demonstrate functional consequences of mutations on Ca\u00b2\u207a-dependent NHE1 activation using pHi recovery assays (Figure 5h-i). The data show clear statistical differences (p<0.05) between WT and H1-CR/S648D variants under ionomycin stimulation. The S648A result is interesting as it differs from S648D, suggesting phosphorylation-mimicking (not just absence) affects function. Appropriate controls and statistics are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Proximity ligation assay (PLA) detects NHE1:CaM proximity (\u226440 nm) in PS120 cells expressing WT NHE1. PLA signal does not increase with ionomycin treatment, and none of the three variants (H1-CR, S648A, S648D) abolish NHE1:CaM proximity despite their effects on Ca\u00b2\u207a-induced activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 show that mutations affecting Ca\u00b2\u207a-dependent function (C80) do not prevent NHE1:CaM proximity. PLA data (Figure 6a-b) are quantified appropriately (~400 cells per condition). The lack of ionomycin effect and persistence of proximity in variants suggests basal interaction is maintained. However, PLA detects proximity, not necessarily functional binding, which the authors acknowledge in Discussion (C108-C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "In the NMR structure of the 1:2 (CaM:H1) complex, residues K641, R643, R645, and S648 are solvent-exposed when H1 is bound to either CaM lobe, and S648 does not form direct contacts with CaM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 describe structural features relevant to understanding why mutations don't abolish proximity (C83). The NMR structure (Figure 6c-d) clearly shows these residues are solvent-exposed. This provides a structural rationale for why S648 phosphorylation might affect binding affinity (through electrostatic effects) without completely preventing interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In vitro phosphorylation assays show Akt phosphorylates S648, while PKC\u03b4 phosphorylates T642, S648, and T653. ITC measurements demonstrate that S648 phosphorylation weakens H1H2:CaM binding ~10-fold (Kd,1 = 5 \u00b1 4 nM, Kd,2 = 2700 \u00b1 600 nM for pS648 vs. Kd,1 = 0.27 \u00b1 0.07 nM, Kd,2 = 560 \u00b1 15 nM for unphosphorylated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 demonstrate phosphorylation effects on binding. Mass spectrometry and NMR (Figure 6h, Figure 6\u2014figure supplement 2) confirm phosphorylation sites. ITC data (Figure 6i, Table 1) show quantitative weakening of binding upon S648 phosphorylation. The ~10-fold effect on the second binding event is substantial and consistent with the functional effects (C80). The identification of additional PKC sites (T642, T653) is important for understanding regulation complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Ionomycin treatment does not activate Akt in PS120 cells, and Akt inhibitor Akti-1/2 (which abolishes Akt activity) has no significant effect on ionomycin-stimulated NHE1 activity. Similarly, PKC inhibitors BIM I and G\u00f66983 do not significantly affect Ca\u00b2\u207a-dependent NHE1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 show that despite S648 being phosphorylated by Akt and PKC in vitro (C86-C87), these kinases are not required for Ca\u00b2\u207a-induced NHE1 activation under the conditions tested. Western blots (Figure 6g) confirm Akt inhibition, and pHi assays (Figure 6e-f) show no effect of kinase inhibitors. This suggests other kinases regulate S648 in this context, as the authors conclude (C111, C117).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors propose a model where NHE1:CaM complexes adopt multiple states depending on Ca\u00b2\u207a and protein concentrations: apo-CaM binding (Ca\u00b2\u207a-free), partial Ca\u00b2\u207a loading (C-lobe Ca\u00b2\u207a-bound, N-lobe apo), 1:1 complexes (N-lobe:H1, C-lobe:H2), and 2:1 complexes (both lobes binding H1 from different NHE1 molecules, potentially stabilizing NHE1 dimers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 synthesize the in vitro data (C32-C70) into a comprehensive model (Figure 7). The model is well-supported by the ITC stoichiometries, NMR binding modes, and Ca\u00b2\u207a-dependence data. The 2:1 complex potentially stabilizing NHE1 dimers (C97) is speculative but reasonable given the NMR structure showing each lobe can bind H1. The model accounts for the observed complexity and provides testable predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors conclude that NHE1:CaM interactions are highly dynamic, forming multiple complexes with different stoichiometries and structures in vitro, tunable by NHE1, CaM, Ca\u00b2\u207a concentrations and S648 phosphorylation. In cells, Ca\u00b2\u207a-induced NHE1 activity is reduced by H1-CR and S648D mutations but not by Akt inhibition, while NHE1:CaM proximity persists. The NMR structure suggests CaM may stabilize NHE1 dimers, and multiple kinases likely regulate S648.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 are summary conclusions integrating all major findings. The in vitro structural diversity is well-established (C32-C70), the cellular functional effects are demonstrated (C79-C80), the disconnect between proximity and function is shown (C81-C83), and the kinase-independence is documented (C89-C92). The conclusions are appropriately cautious about the dimerization role (\"may contribute\") and acknowledge complexity. The work provides significant new insights into NHE1:CaM regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establish that CaM is a ubiquitous Ca\u00b2\u207a-binding protein with two lobes connected by a flexible linker, binding up to four Ca\u00b2\u207a ions and interacting with diverse targets including membrane proteins. CaM binding modes are diverse, though common features include \u03b1-helix propensity, positive charge, and hydrophobic residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide established background on CaM structure and function, supported by appropriate citations to the literature. These are standard knowledge claims that contextualize the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establish that NHE1 is a plasma membrane Na\u207a/H\u207a exchanger functioning as a dimer, consisting of a 12-TM transport domain and a ~300-residue disordered C-terminal regulatory domain. NHE1 regulates pHi and multiple cellular functions, with hyperactivity implicated in cancers and cardiovascular disease. Activity is regulated by phosphorylation and binding partners including CaM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 provide established background on NHE1 structure, function, and regulation, supported by appropriate citations. These contextualize the study's focus on NHE1:CaM interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims establish that CaM binds NHE1's cytoplasmic domain in a Ca\u00b2\u207a-dependent manner, causing alkaline shift in pHi sensitivity and activation. Two CaM-binding sites (CB1 and CB2) bind with different affinities (Kd ~20 nM and ~350 nM). CB1 is essential for Ca\u00b2\u207a responsiveness. S648 phosphorylation has been reported to have both inhibitory and stimulatory effects on NHE1 in different cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C27 summarize prior work on NHE1:CaM interaction, appropriately citing original studies. The conflicting reports on S648 (C23) motivate the current study's investigation of this residue. The prior affinity measurements (C25-C26) provide context for the new ITC data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background claims describe the prior crystal structure of CaM:NHE1 showing an unusual extended configuration with H1 binding the C-lobe \"back side\" and H2 binding the N-lobe hydrophobic groove. SAXS analysis showed poor fit to the crystal structure, motivating re-evaluation of the complex in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 describe prior structural work (K\u00f6ster et al., 2011) that revealed an unusual binding mode and discrepancy between crystal and solution data. This directly motivates the current NMR study to characterize the solution structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background claims establish that S648 is located at the C-terminal end of H1 and can be phosphorylated by Akt. Prior studies showed S648A mutation increased CaM binding in cardiomyocytes (with phosphorylation proposed to inhibit), while S648 phosphorylation was required for NHE1 activation in fibroblasts, indicating context-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 summarize prior conflicting findings on S648 that motivate the current study's detailed investigation. The cell-type differences are appropriately noted and provide rationale for the experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Discussion claims provide context that total cellular CaM is 5-6 \u00b5M but free Ca\u00b2\u207a-CaM is ~50 nM (~1% of total). CaM-mediated oligomerization occurs for various proteins including ER\u03b1 (2:1 binding with ~100-fold lower affinity than NHE1 H1), SK channels (apo-CaM binding C-lobe, Ca\u00b2\u207a triggering N-lobe binding and dimerization), and eag1/Kv10.1 (CaM as molecular clamp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 provide literature context for interpreting the results, with appropriate citations. The comparison of ER\u03b1 affinity to NHE1 H1 (C102) uses the current study's data to highlight the uniqueness of the NHE1 interaction. These contextual claims support the Discussion's arguments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Discussion speculates that CaM may contribute to NHE1 C-tail dimerization in a 2:1 stoichiometry (similar to ER\u03b1), which would explain prior reports of C-tail dimerization sites and kinetic evidence for dimerization in NHE1 regulation. Alternatively, Ca\u00b2\u207a-CaM could regulate NHE1 through electrostatic tuning of NHE1:PI(4,5)P\u2082 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 are speculative proposals about functional mechanisms. While the 2:1 complex structure (C62-C66) supports the possibility of CaM-mediated dimerization, direct evidence for this in cells is lacking. The PI(4,5)P\u2082 mechanism is also speculative, though supported by analogy to other systems (citations provided). These are reasonable hypotheses requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Discussion proposes explanations for why mutations affecting function don't abolish NHE1:CaM proximity: phosphorylation effects may not be strong enough to fully prevent interaction in vivo, cellular interactions may occur through other proteins (e.g., calcineurin) or lipids, and apo-CaM binding plus lack of ionomycin effect suggest NHE1:CaM complexes are present at all times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C110 are speculative explanations for the PLA results (C81-C83). While the proposals are reasonable (supported by apo-CaM binding data C68 and prior work on NHE1 interactions), they remain untested hypotheses. The PLA method's limitations (detecting proximity, not functional binding) are appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion concludes that S648 phosphorylation by both Akt and PKC in vitro, combined with lack of Akt/PKC inhibitor effects on Ca\u00b2\u207a-stimulated activity, indicates multiple kinases can regulate S648. T653 has been implicated in regulation by Rho kinase and \u03b2-Raf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 draw reasonable conclusions from the kinase data (C86-C92). The in vitro phosphorylation by multiple kinases combined with lack of specific inhibitor effects supports the conclusion that multiple kinases can act on S648. The T653 information (C112) from literature adds to the complexity. However, the specific kinase(s) responsible in the ionomycin context remain unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "The authors speculate that similar regulatory mechanisms and structural diversity may be relevant for CaM interactions with many other membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C120 is a broad speculation about the generalizability of findings. While the diversity of CaM:NHE1 complexes is well-established, whether this level of complexity applies to other membrane proteins requires case-by-case investigation. The speculation is reasonable but untested.",
+    "result_type": "MINOR"
+  }
+]

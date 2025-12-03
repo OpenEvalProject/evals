@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The larval Drosophila brain connectome was reconstructed from electron microscopy, consisting of 3016 neurons and over 548,000 synapses, with complete bilateral reconstruction yielding 1506 neurons per hemisphere for network analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide consistent, well-cited data about the connectome reconstruction. The numerical data (C3, C5, C6) is specific and the methodology (C2) is appropriately referenced. The bilateral completeness (C4) is essential for the subsequent symmetry analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C12",
+      "C13"
+    ],
+    "result": "The left hemisphere has significantly lower network density (~0.93 times) than the right hemisphere, with p < 10^-23, driven by the large sample size of 2,266,530 potential edges per hemisphere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C12, and C13 present a coherent statistical finding with appropriate interpretation. The density ratio (C9) is supported by Figure 2B, the statistical reasoning about sample size (C12) is sound, and the calculation of potential edges (C13) is verifiable from the network structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "For all significantly different group-to-group connection probabilities, the right hemisphere consistently shows higher probabilities than the left.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is directly supported by Figure 3D showing that all significant differences favor the right hemisphere. This observation is consistent with the overall higher density of the right hemisphere and provides important context for subsequent density-adjusted analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "After density adjustment, only two group-to-group connections remain significantly different (KC\u2192CN and KC\u2192MBON), both involving Kenyon cells, indicating all significant hemispheric differences under the density-adjusted SBM are associated with Kenyon cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C20 are well-supported by Figure 4B showing statistical test results after multiple comparison correction. The inference that all significant differences involve Kenyon cells (C20) logically follows from the specific findings in C19.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "When Kenyon cells are excluded, the density-adjusted group connection test yields p \u2248 0.60, suggesting hemispheric differences can be explained by a global density effect plus a Kenyon cell-specific effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 present a logical experimental validation supported by Figure 5D. The high p-value after KC removal (C23) directly supports the interpretation that asymmetry has two components (C24). This ablation experiment strengthens the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The observed asymmetry in Kenyon cells may result from their known involvement in associative learning and non-stereotyped connectivity patterns, as suggested by prior studies showing random connections from antennal lobe projection neurons to Kenyon cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C25 and C26 are well-cited, C27 is explicitly speculative. The connection between known KC properties and observed asymmetry is plausible but not directly tested. This interpretation requires additional experimental validation to move from speculation to supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "As edge weight thresholds increase, p-values for all symmetry tests generally increase (networks become less significantly different). Input proportion thresholding achieves non-significant p-values faster than synapse count thresholding, with only ~20% edge removal needed versus ~60% for synapse counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 present a coherent thresholding analysis supported by Figure 6E-F. The general trend (C28-C29) is clearly shown, prior work (C30) provides context, and the specific quantitative findings (C31-C33) are directly observable in the figures. The comparison between thresholding methods is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The finding that input proportion-based thresholding achieves symmetry more efficiently aligns with prior studies suggesting the nervous system evolved to maintain constant input proportions during development, providing evidence that strong edges (by input proportion) show bilateral symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 appropriately cite prior work establishing the biological importance of input proportion. C37 synthesizes the current findings with this prior knowledge. The interpretation is well-grounded in both the current data and established literature from multiple studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Connectomes are increasingly important in neuroscience for studying relationships between connectivity and various biological factors, with many pursuits depending on network comparison capabilities across phylogeny, disease, experience, development, and sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 establish the broader context and motivation for the work. All claims are appropriately cited (C38-C39, C41-C45) or logically inferred (C40). This provides solid justification for developing network comparison methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Recent connectomics studies have compared networks across development, sex, and genetic perturbations in various organisms, demonstrating the growing field of comparative connectomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are all well-cited examples from the literature. These establish precedent for comparative connectomics approaches and contextualize the current work within the field. Each citation is appropriately attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Bilateria, a ~550 million year old clade including most neuroscience model organisms, exhibits left/right structural symmetry generally thought to extend to the brain despite known functional asymmetries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 provide well-established biological context. C50 and C53 state accepted knowledge, C51-C52 are appropriately cited, and C54 is cited with appropriate acknowledgment of functional asymmetries. This establishes the biological expectation of symmetry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Prior studies show mixed evidence for bilateral symmetry in connectomes: some find no greater left-right similarity than between individuals or random models, while others find striking morphological similarity; specific asymmetries like the Drosophila asymmetric body have been identified and linked to function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 comprehensively review prior findings on bilateral symmetry with appropriate citations. The contrasting results (C56 vs C57) are accurately presented, and specific examples of asymmetry (C59, C61-C62) are well-documented. This establishes the complexity of the symmetry question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "This work makes three major contributions: (1) formally stating bilateral symmetry notions as statistical hypotheses, (2) presenting test procedures for these hypotheses, and (3) demonstrating their utility on the Drosophila larva brain, while providing a framework and Python implementations for network comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 accurately describe the contributions of the current work. C63 establishes novelty, C64-C66 state the three main contributions, and C67-C68 describe additional outputs. These are all demonstrably present in the manuscript and represent genuine contributions to the field.",
+    "result_type": "MAJOR"
+  }
+]

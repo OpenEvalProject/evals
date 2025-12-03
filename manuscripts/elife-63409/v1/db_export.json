@@ -1,0 +1,1142 @@
+{
+  "submission": {
+    "id": "92bddd17-2aca-42aa-a249-e7fdca3b1877",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:32:33.650183Z",
+    "updated_at": "2025-12-03T02:32:33.650183Z"
+  },
+  "content": [
+    {
+      "id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "submission_id": "92bddd17-2aca-42aa-a249-e7fdca3b1877",
+      "content_type": "manuscript",
+      "content_text": "# COVID-19 CG enables SARS-CoV-2 mutation and lineage tracking by locations and dates of interest\n\n## Authors\n\n- Albert Tian Chen<sup>1</sup>\n- Kevin Altschuler<sup>2</sup>\n- Shing Hei Zhan<sup>3</sup>\n- Yujia Alina Chan<sup>1</sup> ([ORCID: 0000-0002-0731-637X](https://orcid.org/0000-0002-0731-637X))\n- Benjamin E Deverman<sup>1</sup> ([ORCID: 0000-0002-6223-9303](https://orcid.org/0000-0002-6223-9303)) \u2020\n\n### Affiliations\n\n1. Stanley Center for Psychiatric Research, Broad Institute of MIT and Harvard Cambridge United States\n2. Independent web designer Cambridge United States\n3. Department of Zoology & Biodiversity Research Centre, the University of British Columbia Vancouver Canada\n4. Fusion Genomics Corporation Burnaby Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nCOVID-19 CG (covidcg.org) is an open resource for tracking SARS-CoV-2 single-nucleotide variations (SNVs), lineages, and clades using the virus genomes on the GISAID database while filtering by location, date, gene, and mutation of interest. COVID-19 CG provides significant time, labor, and cost-saving utility to projects on SARS-CoV-2 transmission, evolution, diagnostics, therapeutics, vaccines, and intervention tracking. Here, we describe case studies in which users can interrogate (1) SNVs in the SARS-CoV-2 spike receptor binding domain (RBD) across different geographical regions to inform the design and testing of therapeutics, (2) SNVs that may impact the sensitivity of commonly used diagnostic primers, and (3) the emergence of a dominant lineage harboring an S477N RBD mutation in Australia in 2020. To accelerate COVID-19 efforts, COVID-19 CG will be upgraded with new features for users to rapidly pinpoint mutations as the virus evolves throughout the pandemic and in response to therapeutic and public health interventions.\n\n## Introduction\n\nSince the beginning of the pandemic, SARS-CoV-2 genomic data has been accumulating at an unprecedented rate (400,000+ virus genomes as of February 2020 on the GISAID database) (Elbe and Buckland-Merrett, 2017; Shu and McCauley, 2017). Numerous countries have mobilized to sequence thousands of SARS-CoV-2 genomes upon the occurrence of local outbreaks, collectively and consistently contributing more than 20,000 genomes per month (Figure 1\u2014figure supplement 1A,B). It is important to note that, despite the slow accumulation of potentially functional (nonsynonymous) mutations, there has been a steady increase in the number of variants with more than six nonsynonymous mutations compared to the WIV04 reference, an early genome of SARS-CoV-2 that was sampled in Wuhan in December 2019 (Figure 1\u2014figure supplement 1C). To evaluate the outcomes of anti-COVID-19 measures and detect keystone events of virus evolution, it is important to track changes in SARS-CoV-2 mutation and population dynamics in a location and date-specific manner. Indeed, several countries and the National Institutes of Health (NIH) have recognized how critical it is to collect SARS-CoV-2 genomic data to support contact tracing efforts and to inform public health decisions \u2013 these are paramount to the re-opening of countries and inter-regional travel (Collins, 2020; Gudbjartsson et al., 2020; Oude Munnink et al., 2020; Virological, 2020; Rockett et al., 2020). Yet, the quantity and complexity of SARS-CoV-2 genomic data (and metadata) make it challenging and costly for the majority of scientists to stay abreast of SARS-CoV-2 mutations in a way that is meaningful to their specific research goals. Currently, each group or organization has to independently expend labor, computing costs, and, most importantly, time to curate and analyze the genomic data from GISAID before they can generate specific hypotheses about SARS-CoV-2 lineages and mutations in their population(s) of interest.\n\n## Results\n\nTo address this challenge, we built COVID-19 CoV Genetics (COVID-19 CG, covidcg.org), a performant, interactive, and fully\u00a0scalable web application that tracks SARS-CoV-2 single-nucleotide variants (SNVs), lineages, and clades without sub-sampling. COVID-19 CG is a free, open access interface that allows users to adapt analyses according to their dates and locations of interest (Figure 1A,B; data processing workflow in Figure 1\u2014figure supplement 2). Users can also select and compare trends in SARS-CoV-2 lineage, clade, or SNV frequency across multiple locations (Figure 1C) as we will demonstrate using case studies. COVID-19 CG provides functionalities that are complementary to other existing public browsers (see Discussion) and were designed to empower these specific user groups:\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig1-v1.jpg)\n\n**Figure 1.:** (A) Users can select SARS-CoV-2 genomes according to lineage, clade, or single-nucleotide variation\u00a0(SNV), virus gene or protein, and location(s). Genomes can also be filtered by metadata and specifically analyzed at genomic coordinates of interest, such as the target sites of 665 commonly used diagnostic primers and probes. (B) In the \u2018Compare lineages/clades/SNVs\u2019 tab, users can visualize SARS-CoV-2 lineages, clades, or SNVs by location, define their date range of interest, and see the corresponding SNVs at the nucleotide or amino acid level. Lineage/clades/SNVs can be sorted by frequency and name/position. (C) In the \u2018Compare locations\u2019 tab, users can compare the frequencies of specific lineages, clades, or SNVs in multiple locations over time.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Data shown as of January 2, 2021. (A) Sequence deposition in GISAID continues at a steady pace, albeit there is a lag between collection (red line) and submission date (blue line). The rate of sequence submission has grown to\u00a0~50,000,000 genomes per month. (B) One hundred and thirty-five countries have deposited SARS-CoV-2 genomes in GISAID. (C) The number of SARS-CoV-2 variants with more than four nonsynonymous (NS) mutations continues to increase.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (1) Sequences and metadata are automatically downloaded and \u2018ingested\u2019 on a daily basis. Data for https://covidcg.org is downloaded from a custom GISAID endpoint, but can be configured for any data provider, for\u00a0example, GenBank (see Methods for details). (2) Based on best practices, we filter out sequences on NextStrain\u2019s exclusion list, non-human SARS-CoV-2\u00a0genomes,\u00a0<29,700,700 nt, or with\u00a0>5% ambiguous base calls (van Dorp et al., 2020b). (3) Single-nucleotide variations (SNVs) at the nucleotide and amino acid level are determined by aligning (via bowtie2) each sequence to the WIV04 reference, a high quality December 2019 genome recommended by GISAID; NextStrain uses the 100% identical Wuhan-Hu-1 (Langmead et al., 2009). Importantly, spurious SNVs and probable sequencing errors are filtered out prior to downstream analysis. (4) Viral lineages (defined by the pangolin tool) and clades are provided by GISAID. In accordance with pangolin, SNVs present in\u00a0>90% of sequences within each lineage are assigned as lineage-defining SNVs. (5) The curated data and metadata, SNVs, and lineage-assigned SNVs are associated with their respective sequence identifier and compiled into a compact data set. (6) These data are uploaded onto the COVID-19 CG web application. (7) New analyses will be built into the COVID-19 CG application throughout the course of the pandemic. (8\u201310) Features and modules that integrate knowledge from other COVID-19 initiatives are continuously incorporated into COVID-19 CG.\n\nVaccine and therapeutics developers can inform the design and testing of their vaccine, antibody, or small molecule by using COVID-19 CG to rapidly identify all of the variants in their targeted SARS-CoV-2 protein or antigen, alongside the frequency of each variant in their geographical location(s) of interest. Scientists can use COVID-19 CG to generate hypotheses and determine whether the variants present in the location of vaccine/therapeutic implementation may impact their product-specific interaction interface or antigen.\n\n### Case study of SNVs in the receptor binding domain of the SARS-CoV-2 spike\n\nAnalyzing SNVs by geography and time is critical as the frequency of each SNV may vary significantly across different regions over time. For instance, as of December 2020, an S477N mutation in the receptor binding domain\u00a0(RBD) has become dominant in Australia (69% of Australian SARS-CoV-2 genotypes, all time) although it constitutes less than 6% of SARS-CoV-2 genotypes globally (Figure 2A). SNV frequency in a given region can also shift over time, for\u00a0example, an RBD N439K mutation not found in Ireland prior to July was present in 42% of the genomes collected mid-July through September, peaking in August and gradually fading after (Figure 2B). Another rare RBD S477N mutation, which was found in only 1% of the Australian SARS-CoV-2 sequences before June, has constituted 84% of the sequenced June through December genomes (Figure 2C). This geographical and temporal variation is important to incorporate into the design and testing of therapeutic antibodies (such as those under development as therapeutics by Regeneron that specifically target the SARS-CoV-2 spike RBD), as well as mRNA or recombinant protein-based vaccines. This will help to assure developers of the efficacy of their therapeutics and vaccines against the SARS-CoV-2 variants that are present in the intended location of implementation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig2-v1.jpg)\n\n**Figure 2.:** Screen captures from the Compare AA SNVs tab on December 29, 2020, are shown. (A) The top 10 RBD SNVs alongside the number of high quality sequences available on GISAID are shown for each region. (B) The top RBD SNVs for Ireland between mid-July and August\u00a02020 are shown. The S439N mutant had not been previously detected in Ireland. (C) The top RBD SNVs for Australia between June and December 2020 are shown. The S477N mutant constituted only 1.05% of the Australian SARS-CoV-2 genomes on GISAID prior to June.\n\nIn addition, COVID-19 CG can be harnessed to track changes in SARS-CoV-2 evolution post-implementation of therapeutics and vaccines. It will be crucial to watch for rare escape variants that could resist drug- or immune-based interventions to eventually become the dominant SARS-CoV-2 variant in the community. This need was particularly emphasized by a Regeneron study that demonstrated that single amino acid variants could evolve rapidly in the SARS-CoV-2 spike to ablate binding to antibodies that had been previously selected for their ability to neutralize all known RBD variants; some of these RBD amino acid variations are already present at low frequency among human SARS-CoV-2\u00a0genomes globally (Baum et al., 2020). The authors, Baum et al., suggested that these rare escape variants could be selected under the pressure of single antibody treatment, and, therefore, advocated for the application of cocktails of antibodies that bind to different epitopes to minimize SARS-CoV-2 mutational escape. A recent study by Greaney et al., 2021 generated high-resolution \u2018escape maps\u2019 delineating RBD mutations that could potentially result in virus escape from neutralization by 10 different human antibodies. Based on lessons learnt from the rise of multidrug resistant bacteria and cancer cells, it will be of the utmost importance to continue tracking SARS-CoV-2 evolution even when multiple vaccines and therapeutics are implemented in a given human population.\n\nDiagnostics developers\u00a0can evaluate their probe, primer, or point-of-care diagnostic according to user-defined regional and temporal SARS-CoV-2 genomic variation. More than 665 established primers/probes are built into COVID-19 CG, and new diagnostics will be continually incorporated into the browser as they become publicly available. Users can also input custom coordinates or sequences to evaluate their own target sequences and design new diagnostics.\n\n### Case study of SNVs that could impact the sensitivity of diagnostic primers\n\nA recent preprint alerted us to the finding that a common G29140T SNV, found in 22.3% of the study\u2019s samples from Madera County, California, was adversely affecting SARS-CoV-2 detection by the NIID_2019-nCoV_N_F2 diagnostic primer used at their sequencing center; the single SNV caused a\u00a0~\u00a030-fold drop in the quantity of amplicon produced by the NIID_2019-nCov_N_F2/R2 primer pair (Vanaerschot et al., 2020). We used COVID-19 CG to detect other SNVs that could impact the use of this primer pair, discovering that there are SARS-CoV-2 variants in several countries with a different C29144T mutation at the very 3\u2019 end of the same NIID_2019-nCoV_N_F2 primer (Figure 3A). The authors of the preprint, Vanaerschot et al. noted\u00a0that SNVs could impact assay accuracy if diagnostic primers and probes are also being used to quantify viral loads in patients. We found that at least 10 other primer pairs could potentially be at risk in different geographical regions due to SNVs that appear proximal to the 3\u2019 ends of primers (Figure 3B\u2013K): China-CDC-N-F and R; NIH, Thailand, WH-NIC N-F; US CDC 2019-nCoV-N1-R; US CDC 2019-nCoV-N2-F; ARTIC-V3_nCoV-2019_11_RIGHT; ARTIC-V3_nCoV-2019_13_LEFT; ARTIC-V3_nCoV-2019_34_LEFT; ARTIC-V3_nCoV-2019_39_LEFT (note that the ARTIC primers are used for nanopore sequencing;\u00a0Tyson et al., 2020); WHO N_Sarbarco_R1; and Institut Pasteur, Paris 12759Rv. Labs and clinics can use COVID-19 CG (https://covidcg.org) to check their most commonly used primers and probes against the SARS-CoV-2 sequences that are prevalent in their geographical regions. We reiterate Vanaerschot et al.\u2019s exhortation that SARS-CoV-2 detection strategies should ideally target multiple viral genes and check for concordant Ct values. In addition, scientists have cautioned against lab-specific errors that exist among the available SARS-CoV-2 genomes, often co-localizing with commonly used primer binding sites (Turakhia et al., 2020). These errors appear to be specific to particular labs and do not affect all of the genomes on the GISAID database. Therefore, we have added a caution to our site and a link to the evolving list of problematic sites (Issues with SARS-CoV-2 sequencing data, 2020) so that users are made aware of these potential errors in some subsets of the genomes deposited on GISAID.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig3-v1.jpg)\n\n**Figure 3.:** Images were downloaded from the Compare NT SNVs tab in September 2020. Labels for specific mutations were added. Primer pairs that contain at least one primer with potentially impactful SNVs near the 3\u2019 end are shown. None of the 11 primer pairs shown here were designed with degenerate bases. (A) The G29140T mutation\u00a0has been demonstrated to impact the NIID_2019-nCOV_N_F2 primer sensitivity. (B-K) Primer pairs affected by SNVs with a global frequency of more than 80 instances are shown. (B) As an example, majors SNVs are colored accordingly in the China-CDC-N-F and R (forward and reverse) primers.\n\nResearchers and public health professionals can use COVID-19 CG to gain insights as to how the virus is evolving in a given population over time (e.g., in which genes are mutations occurring, and do these lead to structural or phenotypic changes?). For example, users can track D614G distributions across any region of interest over time. Figure 4 shows a variety of different D614G population dynamics in different areas. Nonetheless, we caution against inferring (1) chains or directionality of transmission and (2) changes in the transmissibility of any SARS-CoV-2 SNV based on population dynamics alone. Inconsistent sampling, sampling biases, differences in founder host population traits (even median patient age), superspreading events, regionally and temporally differential travel restrictions, and numerous other factors instead of virus biological differences can influence the global distribution of SNVs (Grubaugh et al., 2020). Our site carries the following warning: \u2018Inconsistent sampling in the underlying data can result in missing data and artefacts in this visualization. Please interpret this data with care.\u2019\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig4-v1.jpg)\n\n**Figure 4.:** Images were downloaded from the Compare Lineages tab of covidcg.org on December 29, 2020: The spike D614 variants are shown in gray, and the G614 variants are shown in green. Plots displaying different population dynamics were deliberately selected. Time is shown on the horizontal axis and the number of sequences is shown on the vertical axis; these differ per country depending on when and how many samples were collected and whether the sequences were deposited onto GISAID by December 29, 2020.\n\n### Case study of Australia\u2019s new dominant SARS-CoV-2 variant\n\nIn September 2020, we observed that the SARS-CoV-2 spike S477N mutation had become more prevalent in Australia (Figure 5A). Globally, the S477N mutation was first detected in a single sample of lineage B.1.1.25 that was collected on March 19, 2020, in Victoria, Australia, and became the dominant SARS-CoV-2 variant in the region between June and September (Figure 5B). In particular, the set of SNVs that co-occur with the S477N mutation in Australia (all time, as well as prior to May 2020 before the most recent outbreak) are different from the set of co-occurring SNVs in the United Kingdom (Figure 5C) \u2014 suggesting that the S477N mutation occurred separately in the Australian and the UK lineages. However, COVID-19 CG only reflects data contributed to GISAID. Variants of interest could be present in other countries, but not yet known to the public because the sequencing centers in those countries have not collected or deposited their data in GISAID. Furthermore, in instances where only a singular, sporadic variant is detected (no sustained transmission), there is also the possibility of sequencing error resulting in incorrect lineage assignment. Due to these caveats, the genetic data must be used in combination with other types of data, such as from contact tracing efforts, before it is possible to draw conclusions about the international transmission of SARS-CoV-2 variants. In the case of the S477N variant that is now dominating in Australia, the sequencing data alone indicate that the local transmission of this variant in Australia since March 2020 or earlier cannot be ruled out.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig5-v1.jpg)\n\n**Figure 5.:** (A) Image downloaded from the Compare SNVs tab of covidcg.org on December 29, 2020: SARS-CoV-2 variants bearing the spike S477N mutation (also known as the G22992A SNV; depicted in purple), the majority of which lie in the B.1.1.25 lineage, had become the most prevalent form of SARS-CoV-2 in Australia in June through September 2020. (B) Image downloaded from the Compare Locations tab of covidcg.org on December 29, 2020: the cumulative percent of sequences carrying the S477N mutation in Australia and the United\u00a0Kingdom. (C) Images downloaded from the Compare NT SNVs tab of covidcg.org on December 29, 2020: co-occurring SNVs of G22992A (spike S477N) in Australia, all time versus prior to May 2020, versus in the United Kingdom. In addition to the graphical view, co-occurring mutation data is downloadable in an image or table format.\n\n## Discussion\n\nCOVID-19 CG is one of a growing number of COVID-19 public browsers that analyze and visualize the SARS-CoV-2 genomes in the GISAID database, serving different and complementary user objectives. NextStrain (Hadfield et al., 2018) visualizes real-time tracking of SARS-CoV-2 evolution on a global and continental level, using phylogenetic trees, geographical maps, and entropy and frequency plots; CoV-GLUE (Singer et al., 2020) is a browsable database of amino acid replacements and indels; the UCSC SARS-CoV-2 Genome Browser is an extension of their widely used browser that enables layering of annotation tracks and new features such as conservation with similar viruses, immune epitopes, primers, and CRISPR guides (Fernandes et al., 2020); the COVID-19 Viral Genome Analysis Pipeline (Korber et al., 2020) allows for exploring mutations geographically and over time with a focus on the spike protein; COVIDep (Ahmed et al., 2020) is a browser for real-time reporting of vaccine target recommendations; Genomic Signature Analysis of Virus Causing COVID-19 (Bauer et al., 2020) visualizes the similarity between SARS-CoV-2 genomes in 2D space; SARS-CoV-2 Alignment Screen (van Dorp et al., 2020a; van Dorp et al., 2020b) is a visualization tool providing the distribution of SNPs and homoplasies; the WashU Virus Genome Browser (Flynn et al., 2020) provides different tools such as a phylogenetic tree and a genomic-coordinate track-based view of viral sequencing data. There are also websites aimed at helping users to check COVID-19 diagnostic primers and probes, for\u00a0example, the SARS-CoV-2 target regions browser from the European Commission and the Status of SARS-CoV-2 detection systems (RT-PCR) browser from the University of Turin. GISAID also monitors and reports RBD mutations and assigns clades and lineages as well as genome quality. The current GISAID reports describe the geographical distribution of new mutations, total occurrence by country, mutations in commonly used diagnostics, and 3D structural maps of mutations in the four largest clades (gisaid.org/spike). GISAID additionally provides CoVsurver (gisaid.org/covsurver) for users to screen for potential phenotypic changes based on curated literature annotations; BLAST searches and large-scale phylogenetic trees and alignments; and a new functionality for tracking emerging variants (gisaid.org/variants).\n\nCOVID-19 CG provides additional complementary functionalities to those that are available on the GISAID platform, as well as these other diverse COVID-19 public browsers. COVID-19 CG (https://covidcg.org) was built to help scientists and professionals worldwide, with varying levels of bioinformatics expertise, in their real-time analysis of SARS-CoV-2 genetic data. Mainly, COVID-19 CG enables users to track in real\u00a0time, without sub-sampling, lineages, clades, and SNVs (nucleotide or amino acid) across the SARS-CoV-2 genome (or any genomic region of choice) while rapidly filtering on a user-friendly interface by geographical regions, date range, and other criteria of interest to the user. In this work, we explored several case studies that serve to highlight what users can quickly achieve using COVID-19 CG. As more detailed metadata is generated by COVID-19 studies and initiatives, we will update the application to enable filtering according to patient traits such as host species (e.g., human or mink), gender, age, ethnicity, and medical condition (e.g., symptoms, hospitalization). In addition, over the next year, as more mutations accumulate across the tens of millions of COVID cases worldwide, we plan to implement a server-client model for COVID-19 CG, where genomic data is filtered and processed on the server before being sent to the client for visualization. This change should significantly reduce the computational burden of COVID-19 CG on user\u2019s computers, and allow our application to scale to a much larger number of genomes. Our team and colleagues continue to actively use the COVID-19 CG site to quickly generate hypotheses about COVID-19 before performing a deep analysis using the data on GISAID. We anticipate that novel questions will arise over the next year and intentionally designed COVID-19 CG (https://covidcg.org) to be modular in order to continually integrate different types of COVID-19 data and build in new features. Some of these functionalities exist on other platforms, and we recommend that scientists try each browser to find the one that best meets their needs.\n\nSARS-CoV-2 public browsers such as COVID-19 CG and others we have highlighted here help scientists around the world to parse through large quantities of SARS-CoV-2 genomic data and metadata for the purposes of informing vaccine, therapeutics, and policy development. We advocate for decision makers around the world to sustain or accelerate their sequencing of virus genomes in their geographical area. Collecting virus genomic data is particularly relevant to regions that are experiencing increases in COVID-19 cases. If only sparse genomic data are sampled, we risk the late detection of SARS-CoV-2 variants that exhibit enhanced transmissibility, virulence or resistance against therapeutics or vaccination programs in these pandemic hotspots. Furthermore, the widespread implementation of vaccines and antibody therapies could stimulate the emergence and selection of new escape variants (Baum et al., 2020). To compound these risks, SARS-CoV-2 transmission from humans to minks (and in some cases back into humans) has already been detected at farms across at least 10 countries and one wild mink in the United States (OIE - World Organisation for Animal Health, 2020). This process of species crossing, if left unchecked, can risk the spread of SARS-CoV-2 into wild animal populations and the emergence of diverse SARS-CoV-2 variants.\n\nCoordinated sequencing and contact tracing efforts (e.g., in the United\u00a0Kingdom, Singapore, the Netherlands, Italy, California, and Australia) emphasize the urgency of establishing open access platforms to evaluate trends in virus introduction into each country or region in real time. Local policymakers, public health researchers, and scientists can use global SARS-CoV-2 genetic data, in complementation with contact tracing data, to better understand which lineages were imported into their region (from which potential international locations), whether these were introduced multiple times, and if particular lineages are dying out or persisting. Labs in numerous countries are already making incredible efforts to sequence the SARS-CoV-2 variants circulating in their local populations (Figure 6). When each country actively contributes to the database of SARS-CoV-2 genomes, this protects against sampling biases that can impact the ability to perform phylogenetic analysis and interpret global SARS-CoV-2 data. Toward this goal that affects all of humanity, we advocate for the increased sequencing of SARS-CoV-2 isolates from patients (and infected animals) around the world, and for these data to be shared in as timely a manner as possible.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig6-v1.jpg)\n\n**Figure 6.:** Interactive and more comprehensive versions of the figure panels are displayed on the Global Sequencing Coverage tab of covidcg.org. (A) A world map of countries labeled by the number of SARS-CoV-2 sequences contributed per 1000 cases. (B) A bar graph showing the sequences per 1000 cases for the top five countries and the United\u00a0States. Countries with less than 500 cases were excluded from this plot. (C) A world map of countries labeled by median days between sample collection and sequence deposition. (D) A bar graph showing the median days from collection to deposition for the top five countries and the United\u00a0States. These interactive displays are generated using sequencing data from GISAID and case data from the JHU CSSE COVID-19 Dataset (Dong et al., 2020).\n\n## Materials and methods\n\n### Data pipeline\n\nOur data processing pipeline is written with the Snakemake scalable bioinformatics workflow engine (K\u00f6ster and Rahmann, 2012), which modularizes our workflow and enables reproducibility and compatibility with cloud-computing. All code and relevant documentation are hosted on an open-source, publicly available GitHub repository (https://github.com/vector-engineering/COVID19-CG;\u00a0Chen, 2021; copy archived at swh:1:rev:e9558dc11b31b908f3af142e403d33e91d417b8a), providing example data for users to validate our pipeline.\n\nData analysis is broken up into two Snakemake pipelines: (1) ingestion and (2) main. The ingestion pipeline downloads, chunks, and prepares metadata for the main analysis, and the main pipeline analyzes sequences, extracts SNVs, and compiles data for display in the web application. Configuration of the pipeline and the web application is defined by a single YAML file.\n\n### Data ingestion\n\nAt the time of publication, two ingestion workflows are available: workflow_genbank_ingest and workflow_gisaid_ingest. While the GISAID ingestion pipeline is provided as open\u00a0source, it utilizes a custom GISAID endpoint and is intended only for internal use. Both ingestion pipelines are designed to be run daily and chunk sequence data in order to minimize expensive reprocessing/realignment in the downstream main analysis step. In addition, these ingest pipelines clean the provided sequence metadata by removing unwanted fields, renaming fields, and fixing typos (see \u2018Metadata Cleaning\u2019 for details).\n\n### Metadata cleaning\n\nWe clean metadata with the aim of preserving the original intent of the authors and data submitters while presenting simpler and unified versions to end users. Sequencing metadata is cleaned to remove obvious typos, and to unify labels with the same meaning, for\u00a0example, \u2018MinION\u2019 and \u2018Nanopore MinION.\u2019 Location metadata is cleaned with the goal of simplifying the location selector in the sidebar. Locations with excessive children are collapsed to the nearest upper hierarchical grouping. For\u00a0example, if a state has individual data for 200+ towns, these towns will be collapsed to the county level in order to facilitate easier data browsing. Typos and clear identities are also unified to prevent the display of duplicate locations in the application.\n\n### Sequence preprocessing\n\nBased on best practices, we filter out sequences meeting any of the following criteria: (1) present on the NextStrain\u2019s exclusion list (https://github.com/nextstrain/ncov/blob/master/defaults/exclude.txt;\u00a0Hadfield et al., 2018), (2) genomes from non-humans (animals, environmental samples, etc.), (3) genome length less than 29,700 nt, or (4)\u00a0>5% ambiguous base calls. Sequences which pass all preprocessing filters are carried onto the next steps.\n\n### SNV assignments\n\nSNVs and insertions/deletions (indels) at the nucleotide and amino acid level are determined using bowtie2 by aligning each sequence to the WIV04 reference sequence (WIV04 is a high quality December 2019 genome that is 100% identical to the other commonly used publicly available SARS-CoV-2 genome reference Wuhan-Hu-1/NC_045512.2, excepting the length of the poly(A) tail). Spurious SNVs and probable sequencing errors, defined as less than three global occurrences, are filtered out prior to downstream analysis. SNVs involving ambiguous base calls (\u2018N\u2019 in the original sequences) are ignored. Indels resulting in frameshifts are ignored, and SNVs/indels occurring in non-protein-coding regions are ignored when determining SNVs/indels on the AA level.\n\n### Lineage/clade analysis\n\nViral lineages, as defined by the pangolin tool (Rambaut et al., 2020), and clades (Tang et al., 2020) are provided by GISAID. In accordance with pangolin, SNVs present in\u00a0>90% of sequences within each lineage/clade will be assigned as lineage/clade-defining SNVs.\n\n### Application compilation\n\nThe web application is written in Javascript and primarily uses the libraries React.js, MobX, and Vega. The code is compiled into Javascript bundles by webpack. Sequence data and metadata are combined and compressed into one file, which is downloaded by the web application on page load. This allows us to regularly update the data on https://covidcg.org.\n\n### Application deployment\n\nCOVID CG (https://covidcg.org) is hosted by Google Cloud Run. The application code is assembled into a Docker image (see Dockerfile), with a build environment (node.js) and deployment environment (NGINX).\n\n### Data availability\n\nAll of the data shown in this manuscript and displayed on COVID CG (https://covidcg.org) are downloaded from the GISAID EpiCov database (https://www.gisaid.org). All code and relevant documentation are hosted on an open-source, publicly available GitHub repository (https://github.com/vector-engineering/COVID19-CG).\n",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "d3c50f1a-ad3c-4e79-b74c-cf89a2895d71",
+      "submission_id": "92bddd17-2aca-42aa-a249-e7fdca3b1877",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jesse D Bloom, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63409.sa1](https://doi.org/10.7554/eLife.63409.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis publication describes covidcg.org, which is a useful interface for tracking and visualizing mutations that have appeared in sequenced SARS-CoV-2 isolates. It provides complementary functionality to a variety of other interfaces, and together these platforms aid in the important task of tracking the emergence and potential impacts of mutations in SARS-CoV-2.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"COVID-19 CG enables SARS-CoV-2 mutation and lineage tracking by locations and dates of interest\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Miles Davenport as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nDevermen and colleagues describe COVID-19 CG, a resource for information on SARS-CoV-2 data. They present several use cases demonstrating the utility of this resource. Given the nature of the pandemic, integration of datasets in easy to find and analyzable formats are of significant importance. While many other tools provide similar functionalities, covidcg is clearly useful to researchers and likely easier to use and more intuitive in specific use cases. Indeed, we note that one of us has made use of it for the specific purpose of tracking mutations by geographic location.\n\nEssential revisions:\n\nWe had the following suggestions that we think you should find easy to address in a revised version:\n\nThe current interface / setup seems designed for the situation when there are relatively few mutation (e.g., you get a list of all mutations in a region and click on mutation of interest). This seems like it will become increasingly unwieldy as more and more mutations reach appreciable frequencies as the virus evolves. What is the plan to deal with this? Some mention of this point might be helpful in the Discussion.\n\nThe Abstract should have a link to the website: https://covidcg.org. This will make the resource easier to find and allow users to interact with it while reading the paper.\n\nThe authors should note many of the existing sequence resources available including: the UCSC SARS-CoV-2 browser (https://genome.ucsc.edu/covid19.html) , the Wash U Genome browser (https://virusgateway.wustl.edu/), Nextstrain (https://nextstrain.org/) as well as the COG-UK efforts (https://www.cogconsortium.uk/, including CoV-GLUE and Pangolin which is cited, but only in the Materials and methods). These other tools are not competitors but rather complementary and researchers should be encouraged to use the tool that is easiest for them to use and makes the most sense for a specific analysis. Thus \"cannot be found in other public browsers\" should be reworded.\n\nSuggested citations:\n\nhttps://www.nature.com/articles/s41588-020-0700-8\n\nhttps://www.nature.com/articles/s41588-020-0697-z\n\nhttps://europepmc.org/article/ppr/ppr177298\n\nhttps://academic.oup.com/bioinformatics/article/34/23/4121/5001388\n\nRelated to the above point, overall this is a useful resource, but the authors should be clear that many other resources are available and that the scientific community should use the best tools for a particular task to combat this pandemic. In that respect, any additional discussion weighing the strengths and uses of various above resources would probably be useful.\n\nWith regard to the mutations that might disrupt primer binding sites the authors should compare them to problematic/masked sites that are almost certainly due to sequencing/assembly error (e.g. within ARCTIC primers) as they do not obey expected evolutionary patterns. A full list has been collected by the community here: https://github.com/W-L/ProblematicSites_SARS-CoV2/ and is discussed in this paper (https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1009175); see also here (https://virological.org/t/issues-with-sars-cov-2-sequencing-data/473/14). The authors should, in addition to their recommendation that scientists check mutation rates at primer binding sites, also reiterate Vanaerschot et al.'s suggestion to interrogate multiple target genes and compare Ct values.\n\nSubsection \u201cCase study of SNVs in the receptor binding domain (RBD) of the SARS-CoV-2 Spike\u201d: Although Baum et al. identified mutations by deep sequencing both in and out of the RBD, they only validated that mutations in the RBD affected binding by Regeneron antibodies. The others are likely hitchhikers, and should not be referred to as possible escape mutants in the absence of direct functional testing\n",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7eab8eff-bae6-4678-833e-672486698323",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C1",
+      "claim": "COVID-19 CG (covidcg.org) is an open resource for tracking SARS-CoV-2 single-nucleotide variations (SNVs), lineages, and clades using the virus genomes on the GISAID database while filtering by location, date, gene, and mutation of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID-19 CG (covidcg.org) is an open resource for tracking SARS-CoV-2 single-nucleotide variations (SNVs), lineages, and clades using the virus genomes on the GISAID database while filtering by location, date, gene, and mutation of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the tool's functionality and data source as stated in the abstract.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "dc3a4451-aa8e-478d-86da-139cc23992b1",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C2",
+      "claim": "There were 400,000+ virus genomes as of February 2020 on the GISAID database.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the beginning of the pandemic, SARS-CoV-2 genomic data has been accumulating at an unprecedented rate (400,000+ virus genomes as of February 2020 on the GISAID database) (Elbe and Buckland-Merrett, 2017; Shu and McCauley, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the number of genomes in GISAID, supported by citations to the GISAID database papers.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "6db99596-b65c-499f-a399-667b0c44fead",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C3",
+      "claim": "Numerous countries have mobilized to sequence thousands of SARS-CoV-2 genomes upon the occurrence of local outbreaks, collectively and consistently contributing more than 20,000 genomes per month.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous countries have mobilized to sequence thousands of SARS-CoV-2 genomes upon the occurrence of local outbreaks, collectively and consistently contributing more than 20,000 genomes per month (Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1\u2014figure supplement 1A,B which shows sequencing data over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "a59cea6f-1cb3-43b7-8dab-e96e74a9eb11",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C4",
+      "claim": "There has been a steady increase in the number of variants with more than six nonsynonymous mutations compared to the WIV04 reference.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that, despite the slow accumulation of potentially functional (nonsynonymous) mutations, there has been a steady increase in the number of variants with more than six nonsynonymous mutations compared to the WIV04 reference, an early genome of SARS-CoV-2 that was sampled in Wuhan in December 2019 (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1\u2014figure supplement 1C showing the increase in variants with multiple nonsynonymous mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "abb052f1-be35-4b30-a6f8-46347663972a",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C5",
+      "claim": "WIV04 is an early genome of SARS-CoV-2 that was sampled in Wuhan in December 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that, despite the slow accumulation of potentially functional (nonsynonymous) mutations, there has been a steady increase in the number of variants with more than six nonsynonymous mutations compared to the WIV04 reference, an early genome of SARS-CoV-2 that was sampled in Wuhan in December 2019 (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the WIV04 reference genome's origin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "0ee21cfb-77b6-468e-be77-469e41133268",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C6",
+      "claim": "Several countries and the National Institutes of Health (NIH) have recognized how critical it is to collect SARS-CoV-2 genomic data to support contact tracing efforts and to inform public health decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several countries and the National Institutes of Health (NIH) have recognized how critical it is to collect SARS-CoV-2 genomic data to support contact tracing efforts and to inform public health decisions \u2013 these are paramount to the re-opening of countries and inter-regional travel (Collins, 2020; Gudbjartsson et al., 2020; Oude Munnink et al., 2020; Virological, 2020; Rockett et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to relevant publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "96c27c14-8387-457d-9170-56d4d6e405c8",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C7",
+      "claim": "COVID-19 CG is a performant, interactive, and fully scalable web application that tracks SARS-CoV-2 single-nucleotide variants (SNVs), lineages, and clades without sub-sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this challenge, we built COVID-19 CoV Genetics (COVID-19 CG, covidcg.org), a performant, interactive, and fully scalable web application that tracks SARS-CoV-2 single-nucleotide variants (SNVs), lineages, and clades without sub-sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the tool's technical characteristics as stated by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "cc663a9a-87c5-4394-9fb5-2f0e187d62c7",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C8",
+      "claim": "COVID-19 CG is a free, open access interface that allows users to adapt analyses according to their dates and locations of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID-19 CG is a free, open access interface that allows users to adapt analyses according to their dates and locations of interest (Figure 1A,B; data processing workflow in Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the tool's accessibility and functionality, with reference to figures showing the interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "21d618bb-784f-4e28-ba21-aeb8d7226e03",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C9",
+      "claim": "As of December 2020, an S477N mutation in the receptor binding domain (RBD) has become dominant in Australia (69% of Australian SARS-CoV-2 genotypes, all time).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, as of December 2020, an S477N mutation in the receptor binding domain (RBD) has become dominant in Australia (69% of Australian SARS-CoV-2 genotypes, all time) although it constitutes less than 6% of SARS-CoV-2 genotypes globally (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific data point about mutation frequency in Australia, supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "a4c2be03-f130-4269-99ea-a5996b92660b",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C10",
+      "claim": "The S477N mutation constitutes less than 6% of SARS-CoV-2 genotypes globally as of December 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, as of December 2020, an S477N mutation in the receptor binding domain (RBD) has become dominant in Australia (69% of Australian SARS-CoV-2 genotypes, all time) although it constitutes less than 6% of SARS-CoV-2 genotypes globally (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific data point about global mutation frequency, supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "86999a84-3685-4f06-b35a-80f8cd3fd257",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C11",
+      "claim": "An RBD N439K mutation not found in Ireland prior to July was present in 42% of the genomes collected mid-July through September, peaking in August and gradually fading after.",
+      "claim_type": "EXPLICIT",
+      "source": "SNV frequency in a given region can also shift over time, for example, an RBD N439K mutation not found in Ireland prior to July was present in 42% of the genomes collected mid-July through September, peaking in August and gradually fading after (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific observation about temporal changes in mutation frequency in Ireland, supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "a7aa73de-faa2-444c-bd33-43214685b3e6",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C12",
+      "claim": "A rare RBD S477N mutation, which was found in only 1% of the Australian SARS-CoV-2 sequences before June, has constituted 84% of the sequenced June through December genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Another rare RBD S477N mutation, which was found in only 1% of the Australian SARS-CoV-2 sequences before June, has constituted 84% of the sequenced June through December genomes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific observation about temporal changes in mutation frequency in Australia, supported by Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "89d08e54-cccf-4538-b1e3-a08872b53d86",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C13",
+      "claim": "Regeneron is developing therapeutic antibodies that specifically target the SARS-CoV-2 spike RBD.",
+      "claim_type": "IMPLICIT",
+      "source": "This geographical and temporal variation is important to incorporate into the design and testing of therapeutic antibodies (such as those under development as therapeutics by Regeneron that specifically target the SARS-CoV-2 spike RBD), as well as mRNA or recombinant protein-based vaccines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of therapeutic antibodies in development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "099a4af6-21e0-4897-9169-3bbe7245de20",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C14",
+      "claim": "A Regeneron study demonstrated that single amino acid variants could evolve rapidly in the SARS-CoV-2 spike to ablate binding to antibodies that had been previously selected for their ability to neutralize all known RBD variants.",
+      "claim_type": "EXPLICIT",
+      "source": "This need was particularly emphasized by a Regeneron study that demonstrated that single amino acid variants could evolve rapidly in the SARS-CoV-2 spike to ablate binding to antibodies that had been previously selected for their ability to neutralize all known RBD variants; some of these RBD amino acid variations are already present at low frequency among human SARS-CoV-2 genomes globally (Baum et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the Baum et al., 2020 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "84e00ec8-019a-4fa6-a595-9353f0c54963",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C15",
+      "claim": "Some RBD amino acid variations that can ablate antibody binding are already present at low frequency among human SARS-CoV-2 genomes globally.",
+      "claim_type": "EXPLICIT",
+      "source": "This need was particularly emphasized by a Regeneron study that demonstrated that single amino acid variants could evolve rapidly in the SARS-CoV-2 spike to ablate binding to antibodies that had been previously selected for their ability to neutralize all known RBD variants; some of these RBD amino acid variations are already present at low frequency among human SARS-CoV-2 genomes globally (Baum et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the Baum et al., 2020 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "228a7087-3ac7-4f3b-912e-5c4b910decff",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C16",
+      "claim": "Baum et al. suggested that rare escape variants could be selected under the pressure of single antibody treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors, Baum et al., suggested that these rare escape variants could be selected under the pressure of single antibody treatment, and, therefore, advocated for the application of cocktails of antibodies that bind to different epitopes to minimize SARS-CoV-2 mutational escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the conclusions drawn by Baum et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "69b866b9-8b94-4b83-8bf7-171ed616a13a",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C17",
+      "claim": "Baum et al. advocated for the application of cocktails of antibodies that bind to different epitopes to minimize SARS-CoV-2 mutational escape.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors, Baum et al., suggested that these rare escape variants could be selected under the pressure of single antibody treatment, and, therefore, advocated for the application of cocktails of antibodies that bind to different epitopes to minimize SARS-CoV-2 mutational escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the recommendations made by Baum et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "3c7a4839-9983-4be3-ae64-1bbebd1207e4",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C18",
+      "claim": "Greaney et al., 2021 generated high-resolution 'escape maps' delineating RBD mutations that could potentially result in virus escape from neutralization by 10 different human antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study by Greaney et al., 2021 generated high-resolution 'escape maps' delineating RBD mutations that could potentially result in virus escape from neutralization by 10 different human antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the Greaney et al., 2021 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "9c5834f7-6f91-40b2-84c6-6338db8053d5",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C19",
+      "claim": "More than 665 established primers/probes are built into COVID-19 CG.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 665 established primers/probes are built into COVID-19 CG, and new diagnostics will be continually incorporated into the browser as they become publicly available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the content of the COVID-19 CG tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "f7753d29-588d-4f37-becf-8141479f61c3",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C20",
+      "claim": "A common G29140T SNV was found in 22.3% of samples from Madera County, California.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent preprint alerted us to the finding that a common G29140T SNV, found in 22.3% of the study's samples from Madera County, California, was adversely affecting SARS-CoV-2 detection by the NIID_2019-nCoV_N_F2 diagnostic primer used at their sequencing center; the single SNV caused a ~ 30-fold drop in the quantity of amplicon produced by the NIID_2019-nCov_N_F2/R2 primer pair (Vanaerschot et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the Vanaerschot et al., 2020 preprint.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "5cabf5d8-1e10-45e6-8a27-c1d414c448f4",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C21",
+      "claim": "The G29140T SNV was adversely affecting SARS-CoV-2 detection by the NIID_2019-nCoV_N_F2 diagnostic primer.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent preprint alerted us to the finding that a common G29140T SNV, found in 22.3% of the study's samples from Madera County, California, was adversely affecting SARS-CoV-2 detection by the NIID_2019-nCoV_N_F2 diagnostic primer used at their sequencing center; the single SNV caused a ~ 30-fold drop in the quantity of amplicon produced by the NIID_2019-nCov_N_F2/R2 primer pair (Vanaerschot et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the Vanaerschot et al., 2020 preprint.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "21016051-973b-4739-8c4e-5a6e487e7ca1",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C22",
+      "claim": "The G29140T SNV caused a ~30-fold drop in the quantity of amplicon produced by the NIID_2019-nCov_N_F2/R2 primer pair.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent preprint alerted us to the finding that a common G29140T SNV, found in 22.3% of the study's samples from Madera County, California, was adversely affecting SARS-CoV-2 detection by the NIID_2019-nCoV_N_F2 diagnostic primer used at their sequencing center; the single SNV caused a ~ 30-fold drop in the quantity of amplicon produced by the NIID_2019-nCov_N_F2/R2 primer pair (Vanaerschot et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the Vanaerschot et al., 2020 preprint.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "a83ff053-7d3b-497c-b3a4-614c60f9f533",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C23",
+      "claim": "There are SARS-CoV-2 variants in several countries with a C29144T mutation at the very 3' end of the NIID_2019-nCoV_N_F2 primer.",
+      "claim_type": "EXPLICIT",
+      "source": "We used COVID-19 CG to detect other SNVs that could impact the use of this primer pair, discovering that there are SARS-CoV-2 variants in several countries with a different C29144T mutation at the very 3' end of the same NIID_2019-nCoV_N_F2 primer (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' analysis using COVID-19 CG, supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "e9ea05b2-66f4-4e4c-b0fa-f5a2af10ecda",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C24",
+      "claim": "At least 10 other primer pairs could potentially be at risk in different geographical regions due to SNVs that appear proximal to the 3' ends of primers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that at least 10 other primer pairs could potentially be at risk in different geographical regions due to SNVs that appear proximal to the 3' ends of primers (Figure 3B\u2013K): China-CDC-N-F and R; NIH, Thailand, WH-NIC N-F; US CDC 2019-nCoV-N1-R; US CDC 2019-nCoV-N2-F; ARTIC-V3_nCoV-2019_11_RIGHT; ARTIC-V3_nCoV-2019_13_LEFT; ARTIC-V3_nCoV-2019_34_LEFT; ARTIC-V3_nCoV-2019_39_LEFT (note that the ARTIC primers are used for nanopore sequencing; Tyson et al., 2020); WHO N_Sarbarco_R1; and Institut Pasteur, Paris 12759Rv.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' analysis using COVID-19 CG, supported by Figure 3B-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "96823dd2-e5db-4535-916f-d74915a6b1c9",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C25",
+      "claim": "ARTIC primers are used for nanopore sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that at least 10 other primer pairs could potentially be at risk in different geographical regions due to SNVs that appear proximal to the 3' ends of primers (Figure 3B\u2013K): China-CDC-N-F and R; NIH, Thailand, WH-NIC N-F; US CDC 2019-nCoV-N1-R; US CDC 2019-nCoV-N2-F; ARTIC-V3_nCoV-2019_11_RIGHT; ARTIC-V3_nCoV-2019_13_LEFT; ARTIC-V3_nCoV-2019_34_LEFT; ARTIC-V3_nCoV-2019_39_LEFT (note that the ARTIC primers are used for nanopore sequencing; Tyson et al., 2020); WHO N_Sarbarco_R1; and Institut Pasteur, Paris 12759Rv.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Tyson et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "bf66e8ff-4fdd-4920-9c05-23bdfe528518",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C26",
+      "claim": "Vanaerschot et al. noted that SNVs could impact assay accuracy if diagnostic primers and probes are also being used to quantify viral loads in patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors of the preprint, Vanaerschot et al. noted that SNVs could impact assay accuracy if diagnostic primers and probes are also being used to quantify viral loads in patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the conclusions drawn by Vanaerschot et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "f5b53f83-83c1-42c6-aa6d-78e47237c951",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C27",
+      "claim": "Scientists have cautioned against lab-specific errors that exist among the available SARS-CoV-2 genomes, often co-localizing with commonly used primer binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, scientists have cautioned against lab-specific errors that exist among the available SARS-CoV-2 genomes, often co-localizing with commonly used primer binding sites (Turakhia et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Turakhia et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "2c5255f0-d077-458f-aebc-0c505a49ffb1",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C28",
+      "claim": "Lab-specific errors appear to be specific to particular labs and do not affect all of the genomes on the GISAID database.",
+      "claim_type": "EXPLICIT",
+      "source": "These errors appear to be specific to particular labs and do not affect all of the genomes on the GISAID database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of lab-specific errors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "4d216f56-1231-4487-bc8c-ef690ffb1501",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C29",
+      "claim": "Inconsistent sampling, sampling biases, differences in founder host population traits, superspreading events, regionally and temporally differential travel restrictions, and numerous other factors instead of virus biological differences can influence the global distribution of SNVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Inconsistent sampling, sampling biases, differences in founder host population traits (even median patient age), superspreading events, regionally and temporally differential travel restrictions, and numerous other factors instead of virus biological differences can influence the global distribution of SNVs (Grubaugh et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Grubaugh et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "e96e80ff-b293-49a6-97fe-478cfa63f39b",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C30",
+      "claim": "The SARS-CoV-2 spike S477N mutation was first detected globally in a single sample of lineage B.1.1.25 that was collected on March 19, 2020, in Victoria, Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, the S477N mutation was first detected in a single sample of lineage B.1.1.25 that was collected on March 19, 2020, in Victoria, Australia, and became the dominant SARS-CoV-2 variant in the region between June and September (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific observation from the genomic data, supported by Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "46510958-6dfd-4737-b9ca-c43384b0872d",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C31",
+      "claim": "The S477N mutation became the dominant SARS-CoV-2 variant in Australia between June and September 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, the S477N mutation was first detected in a single sample of lineage B.1.1.25 that was collected on March 19, 2020, in Victoria, Australia, and became the dominant SARS-CoV-2 variant in the region between June and September (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific observation from the genomic data, supported by Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "22703237-ac78-4446-a140-34d92a7f1d98",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C32",
+      "claim": "The set of SNVs that co-occur with the S477N mutation in Australia are different from the set of co-occurring SNVs in the United Kingdom.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the set of SNVs that co-occur with the S477N mutation in Australia (all time, as well as prior to May 2020 before the most recent outbreak) are different from the set of co-occurring SNVs in the United Kingdom (Figure 5C) \u2014 suggesting that the S477N mutation occurred separately in the Australian and the UK lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific observation from the genomic data, supported by Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "2158cf62-ccbc-429c-a882-b72bfa81fe3f",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C33",
+      "claim": "The S477N mutation occurred separately in the Australian and the UK lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the set of SNVs that co-occur with the S477N mutation in Australia (all time, as well as prior to May 2020 before the most recent outbreak) are different from the set of co-occurring SNVs in the United Kingdom (Figure 5C) \u2014 suggesting that the S477N mutation occurred separately in the Australian and the UK lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the different co-occurring SNVs in Australia and the UK.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "b9df3e01-eaec-433d-a499-ba5593c9b10e",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C34",
+      "claim": "NextStrain visualizes real-time tracking of SARS-CoV-2 evolution on a global and continental level, using phylogenetic trees, geographical maps, and entropy and frequency plots.",
+      "claim_type": "EXPLICIT",
+      "source": "NextStrain (Hadfield et al., 2018) visualizes real-time tracking of SARS-CoV-2 evolution on a global and continental level, using phylogenetic trees, geographical maps, and entropy and frequency plots",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of NextStrain's functionality, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "8f8e7e5a-dc3a-44b3-9dac-fb1b5dea25a6",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C35",
+      "claim": "CoV-GLUE is a browsable database of amino acid replacements and indels.",
+      "claim_type": "EXPLICIT",
+      "source": "CoV-GLUE (Singer et al., 2020) is a browsable database of amino acid replacements and indels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of CoV-GLUE's functionality, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "8766f52e-dd29-4118-a97f-5c1e32162d3d",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C36",
+      "claim": "The UCSC SARS-CoV-2 Genome Browser is an extension of their widely used browser that enables layering of annotation tracks and new features such as conservation with similar viruses, immune epitopes, primers, and CRISPR guides.",
+      "claim_type": "EXPLICIT",
+      "source": "the UCSC SARS-CoV-2 Genome Browser is an extension of their widely used browser that enables layering of annotation tracks and new features such as conservation with similar viruses, immune epitopes, primers, and CRISPR guides (Fernandes et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the UCSC browser's functionality, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "2f58cddd-3e93-4e58-a2c5-6c78f3ce00a0",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C37",
+      "claim": "The COVID-19 Viral Genome Analysis Pipeline allows for exploring mutations geographically and over time with a focus on the spike protein.",
+      "claim_type": "EXPLICIT",
+      "source": "the COVID-19 Viral Genome Analysis Pipeline (Korber et al., 2020) allows for exploring mutations geographically and over time with a focus on the spike protein",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the pipeline's functionality, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "05b27053-b8cc-404c-8f6b-4dce85a92e95",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C38",
+      "claim": "COVIDep is a browser for real-time reporting of vaccine target recommendations.",
+      "claim_type": "EXPLICIT",
+      "source": "COVIDep (Ahmed et al., 2020) is a browser for real-time reporting of vaccine target recommendations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of COVIDep's functionality, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "9e75078d-826e-4a7c-a3aa-6246ad895873",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C39",
+      "claim": "Genomic Signature Analysis of Virus Causing COVID-19 visualizes the similarity between SARS-CoV-2 genomes in 2D space.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic Signature Analysis of Virus Causing COVID-19 (Bauer et al., 2020) visualizes the similarity between SARS-CoV-2 genomes in 2D space",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the tool's functionality, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "7032ee86-e8ee-465e-875f-d72044471a1a",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C40",
+      "claim": "SARS-CoV-2 Alignment Screen is a visualization tool providing the distribution of SNPs and homoplasies.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 Alignment Screen (van Dorp et al., 2020a; van Dorp et al., 2020b) is a visualization tool providing the distribution of SNPs and homoplasies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the tool's functionality, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "02e4b166-b005-47d8-b818-9648aede305a",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C41",
+      "claim": "The WashU Virus Genome Browser provides different tools such as a phylogenetic tree and a genomic-coordinate track-based view of viral sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "the WashU Virus Genome Browser (Flynn et al., 2020) provides different tools such as a phylogenetic tree and a genomic-coordinate track-based view of viral sequencing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the browser's functionality, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "ee0b0cfa-2e9a-43e7-9b0e-09ce428a4334",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C42",
+      "claim": "GISAID monitors and reports RBD mutations and assigns clades and lineages as well as genome quality.",
+      "claim_type": "EXPLICIT",
+      "source": "GISAID also monitors and reports RBD mutations and assigns clades and lineages as well as genome quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of GISAID's functionality.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "18e4f97d-2a8d-4128-b3ef-9abef5298412",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C45",
+      "claim": "The data processing pipeline is written with the Snakemake scalable bioinformatics workflow engine.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data processing pipeline is written with the Snakemake scalable bioinformatics workflow engine (K\u00f6ster and Rahmann, 2012), which modularizes our workflow and enables reproducibility and compatibility with cloud-computing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the technical implementation, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "8e2fade3-9ff2-4e4f-8063-698c57dcc1e6",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C46",
+      "claim": "All code and relevant documentation are hosted on an open-source, publicly available GitHub repository.",
+      "claim_type": "EXPLICIT",
+      "source": "All code and relevant documentation are hosted on an open-source, publicly available GitHub repository (https://github.com/vector-engineering/COVID19-CG; Chen, 2021; copy archived at swh:1:rev:e9558dc11b31b908f3af142e403d33e91d417b8a), providing example data for users to validate our pipeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data and code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "1a733712-954c-4217-82dc-36493d892922",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C47",
+      "claim": "Sequences meeting any of the following criteria are filtered out: present on NextStrain's exclusion list, genomes from non-humans, genome length less than 29,700 nt, or >5% ambiguous base calls.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on best practices, we filter out sequences meeting any of the following criteria: (1) present on the NextStrain's exclusion list (https://github.com/nextstrain/ncov/blob/master/defaults/exclude.txt; Hadfield et al., 2018), (2) genomes from non-humans (animals, environmental samples, etc.), (3) genome length less than 29,700 nt, or (4) >5% ambiguous base calls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the filtering methodology, supported by citation to best practices.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "4c3a8ee5-45a7-497a-a65f-bbc0cba0c985",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C48",
+      "claim": "SNVs and insertions/deletions (indels) at the nucleotide and amino acid level are determined using bowtie2 by aligning each sequence to the WIV04 reference sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "SNVs and insertions/deletions (indels) at the nucleotide and amino acid level are determined using bowtie2 by aligning each sequence to the WIV04 reference sequence (WIV04 is a high quality December 2019 genome that is 100% identical to the other commonly used publicly available SARS-CoV-2 genome reference Wuhan-Hu-1/NC_045512.2, excepting the length of the poly(A) tail).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the SNV determination methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "1b2ee820-bfcf-4b01-8f06-5ce4394564d2",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C49",
+      "claim": "WIV04 is 100% identical to the other commonly used publicly available SARS-CoV-2 genome reference Wuhan-Hu-1/NC_045512.2, excepting the length of the poly(A) tail.",
+      "claim_type": "EXPLICIT",
+      "source": "SNVs and insertions/deletions (indels) at the nucleotide and amino acid level are determined using bowtie2 by aligning each sequence to the WIV04 reference sequence (WIV04 is a high quality December 2019 genome that is 100% identical to the other commonly used publicly available SARS-CoV-2 genome reference Wuhan-Hu-1/NC_045512.2, excepting the length of the poly(A) tail).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the relationship between two reference genomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "8b3ccd24-9d6c-41c2-b5c0-e2f36d58a764",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C50",
+      "claim": "Spurious SNVs and probable sequencing errors, defined as less than three global occurrences, are filtered out prior to downstream analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Spurious SNVs and probable sequencing errors, defined as less than three global occurrences, are filtered out prior to downstream analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the filtering methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "b66d9638-4e09-49f2-892c-1106a4f8ae85",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C51",
+      "claim": "SNVs present in >90% of sequences within each lineage are assigned as lineage-defining SNVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with pangolin, SNVs present in >90% of sequences within each lineage are assigned as lineage-defining SNVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the lineage-defining SNV assignment methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "976be934-71c1-4295-82f4-c27ced817460",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C52",
+      "claim": "The web application is written in Javascript and primarily uses the libraries React.js, MobX, and Vega.",
+      "claim_type": "EXPLICIT",
+      "source": "The web application is written in Javascript and primarily uses the libraries React.js, MobX, and Vega.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the technical implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "75dccd3e-9529-4a50-a27d-f12871018499",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C53",
+      "claim": "COVID CG is hosted by Google Cloud Run.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID CG (https://covidcg.org) is hosted by Google Cloud Run.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the hosting infrastructure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "35d5594d-0e75-43e5-b8d8-d33307c4d5ec",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C54",
+      "claim": "All of the data shown in this manuscript and displayed on COVID CG are downloaded from the GISAID EpiCov database.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the data shown in this manuscript and displayed on COVID CG (https://covidcg.org) are downloaded from the GISAID EpiCov database (https://www.gisaid.org).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "c9d0afa8-24a0-4a6b-b9ab-95bcb05c4555",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C55",
+      "claim": "The rate of sequence submission has grown to ~50,000,000 genomes per month as of January 2, 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of sequence submission has grown to ~50,000,000 genomes per month.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1\u2014figure supplement 1, which shows data as of January 2, 2021.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "2ecf45c0-6882-43e4-9c34-7dff26d8d268",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C56",
+      "claim": "One hundred and thirty-five countries have deposited SARS-CoV-2 genomes in GISAID as of January 2, 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "One hundred and thirty-five countries have deposited SARS-CoV-2 genomes in GISAID.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1\u2014figure supplement 1, which shows data as of January 2, 2021.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "b6f75c99-2d52-4a70-b760-e6fe78ba708e",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C57",
+      "claim": "Users can select SARS-CoV-2 genomes according to lineage, clade, or single-nucleotide variation (SNV), virus gene or protein, and location(s).",
+      "claim_type": "EXPLICIT",
+      "source": "Users can select SARS-CoV-2 genomes according to lineage, clade, or single-nucleotide variation (SNV), virus gene or protein, and location(s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1 and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "e9e156c3-275d-4b30-af6b-5858224bfd30",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "claim_id": "C58",
+      "claim": "Genomes can be filtered by metadata and specifically analyzed at genomic coordinates of interest, such as the target sites of 665 commonly used diagnostic primers and probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes can also be filtered by metadata and specifically analyzed at genomic coordinates of interest, such as the target sites of 665 commonly used diagnostic primers and probes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed COVID-19 CG, a web-based tool for tracking SARS-CoV-2 variants using GISAID data. The tool is open-source, scalable, and allows filtering by location, date, gene, and mutation, incorporating 665+ diagnostic primers/probes and processing data through a Snakemake pipeline with quality filtering and alignment to the WIV04 reference genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C8, C19, C45-C54, C57-C58 collectively describe the tool's design, implementation, and functionality with specific technical details about data processing, filtering criteria, and web infrastructure. The methodology is clearly documented with references to figures and open-source code availability, providing sufficient evidence for the tool's existence and capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "37400666-f05d-450d-a9a4-3cc50f0c85b5",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 genomic data has accumulated rapidly, with 400,000+ genomes by February 2020 and submission rates reaching ~50,000 genomes per month by January 2021 from 135 countries. There has been a steady increase in variants with more than six nonsynonymous mutations compared to the WIV04 reference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2-C4, C55-C56 present data on genome accumulation rates and variant diversity. However, C2 contains a likely error: 400,000+ genomes by February 2020 is implausible given the pandemic timeline (first cases in late 2019). This appears to be a typo for February 2021, creating uncertainty about data accuracy despite supporting figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "9db9575b-0b7f-45d4-b00a-8b36949fd4e6",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Regional and temporal variation in SARS-CoV-2 RBD mutations is substantial. The S477N mutation became dominant in Australia (69% of genotypes) while remaining <6% globally; the N439K mutation appeared in Ireland at 42% frequency mid-July through September 2020; and the S477N mutation increased from 1% to 84% in Australian sequences from before June to June-December 2020.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 present specific quantitative observations about mutation frequencies across different regions and time periods, all supported by Figure 2A-C. The data demonstrate clear geographic and temporal heterogeneity in mutation prevalence, which is well-documented with specific percentages and time frames.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "f1fcaea2-2231-4681-a5bd-89e4f1d7b927",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SNVs can impact diagnostic primer sensitivity, as demonstrated by the G29140T mutation causing ~30-fold reduction in amplicon production for the NIID_2019-nCoV_N_F2 primer. Using COVID-19 CG, the authors identified at least 10 additional primer pairs potentially at risk due to SNVs near the 3' ends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24, C26 describe diagnostic primer vulnerabilities, with C20-C22 citing external validation (Vanaerschot et al., 2020) and C23-C24 presenting new findings from COVID-19 CG analysis supported by Figure 3A-K. The combination of cited evidence and new analysis provides strong support for the impact of SNVs on diagnostic sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "dd9bce10-752e-4dc3-b40a-572c9cf61f92",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The S477N mutation was first detected globally in Victoria, Australia on March 19, 2020 (lineage B.1.1.25) and became dominant in Australia between June-September 2020. Different co-occurring SNV patterns in Australia versus the UK suggest independent emergence of this mutation in the two lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 trace the emergence and spread of the S477N mutation with specific dates and locations, supported by Figure 5B-C. The inference of independent emergence (C33) is reasonably supported by the different co-occurring SNV patterns shown in C32, though the authors appropriately note caveats about sampling and sequencing errors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "8a57360e-04cd-472b-9c4f-e129b676e71d",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Prior studies have demonstrated that single amino acid variants in SARS-CoV-2 spike can ablate antibody binding, with some escape variants already present at low frequency globally. These findings support the use of antibody cocktails targeting different epitopes to minimize mutational escape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 accurately summarize findings from cited studies (Baum et al., 2020; Greaney et al., 2021) regarding antibody escape variants and therapeutic strategies. These are appropriately attributed to prior work and provide context for the importance of tracking mutations, though they represent background knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "a5ffcb6c-a05f-4e07-b754-5de5f7234d0b",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lab-specific sequencing errors exist in GISAID genomes, often co-localizing with primer binding sites, but these errors are specific to particular labs and do not affect all genomes in the database.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 acknowledge known data quality issues, with C27 citing Turakhia et al., 2020 and C28 providing a reasonable inference about the lab-specific nature of these errors. The authors appropriately incorporated warnings about these issues into their tool, demonstrating awareness of data limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "803b3aca-5b44-413b-9dbc-e9a5fd4f6c38",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multiple non-biological factors including inconsistent sampling, sampling biases, founder population traits, superspreading events, and differential travel restrictions can influence the global distribution of SNVs rather than virus biological differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 appropriately cites Grubaugh et al., 2020 to acknowledge important confounding factors in interpreting SNV distribution patterns. This represents a critical caveat for data interpretation and is appropriately emphasized by the authors with warnings in their tool.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "3d090835-9ed0-404f-b7e6-fef11022ed54",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple complementary COVID-19 genomic analysis tools exist, including NextStrain, CoV-GLUE, UCSC SARS-CoV-2 Genome Browser, COVID-19 Viral Genome Analysis Pipeline, COVIDep, and others, each providing different functionalities for analyzing SARS-CoV-2 genomic data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C42 accurately describe existing tools with appropriate citations, providing context for how COVID-19 CG complements the existing ecosystem. These descriptions appear accurate based on the cited references and establish the landscape of available resources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    },
+    {
+      "id": "41d370c7-2dd2-4431-af18-68334380d079",
+      "content_id": "2febc6ea-7b32-44d5-ac1c-073c4878b402",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background information is provided about the WIV04 reference genome, the importance of genomic surveillance for public health, Regeneron's therapeutic antibody development, and ARTIC primers for nanopore sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C13, C25 provide factual background information with appropriate citations where applicable. These are general knowledge claims that provide context but do not represent novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:32:33.650183Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7eab8eff-bae6-4678-833e-672486698323",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "96c27c14-8387-457d-9170-56d4d6e405c8",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "cc663a9a-87c5-4394-9fb5-2f0e187d62c7",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "9c5834f7-6f91-40b2-84c6-6338db8053d5",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "18e4f97d-2a8d-4128-b3ef-9abef5298412",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "8e2fade3-9ff2-4e4f-8063-698c57dcc1e6",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "1a733712-954c-4217-82dc-36493d892922",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "4c3a8ee5-45a7-497a-a65f-bbc0cba0c985",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "1b2ee820-bfcf-4b01-8f06-5ce4394564d2",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "8b3ccd24-9d6c-41c2-b5c0-e2f36d58a764",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "b66d9638-4e09-49f2-892c-1106a4f8ae85",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "976be934-71c1-4295-82f4-c27ced817460",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "75dccd3e-9529-4a50-a27d-f12871018499",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "35d5594d-0e75-43e5-b8d8-d33307c4d5ec",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "b6f75c99-2d52-4a70-b760-e6fe78ba708e",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "e9e156c3-275d-4b30-af6b-5858224bfd30",
+      "result_id": "4b0e953c-2e9c-4fdd-8582-7ea5c2c5f482"
+    },
+    {
+      "claim_id": "dc3a4451-aa8e-478d-86da-139cc23992b1",
+      "result_id": "37400666-f05d-450d-a9a4-3cc50f0c85b5"
+    },
+    {
+      "claim_id": "6db99596-b65c-499f-a399-667b0c44fead",
+      "result_id": "37400666-f05d-450d-a9a4-3cc50f0c85b5"
+    },
+    {
+      "claim_id": "a59cea6f-1cb3-43b7-8dab-e96e74a9eb11",
+      "result_id": "37400666-f05d-450d-a9a4-3cc50f0c85b5"
+    },
+    {
+      "claim_id": "c9d0afa8-24a0-4a6b-b9ab-95bcb05c4555",
+      "result_id": "37400666-f05d-450d-a9a4-3cc50f0c85b5"
+    },
+    {
+      "claim_id": "2ecf45c0-6882-43e4-9c34-7dff26d8d268",
+      "result_id": "37400666-f05d-450d-a9a4-3cc50f0c85b5"
+    },
+    {
+      "claim_id": "21d618bb-784f-4e28-ba21-aeb8d7226e03",
+      "result_id": "9db9575b-0b7f-45d4-b00a-8b36949fd4e6"
+    },
+    {
+      "claim_id": "a4c2be03-f130-4269-99ea-a5996b92660b",
+      "result_id": "9db9575b-0b7f-45d4-b00a-8b36949fd4e6"
+    },
+    {
+      "claim_id": "86999a84-3685-4f06-b35a-80f8cd3fd257",
+      "result_id": "9db9575b-0b7f-45d4-b00a-8b36949fd4e6"
+    },
+    {
+      "claim_id": "a7aa73de-faa2-444c-bd33-43214685b3e6",
+      "result_id": "9db9575b-0b7f-45d4-b00a-8b36949fd4e6"
+    },
+    {
+      "claim_id": "f7753d29-588d-4f37-becf-8141479f61c3",
+      "result_id": "f1fcaea2-2231-4681-a5bd-89e4f1d7b927"
+    },
+    {
+      "claim_id": "5cabf5d8-1e10-45e6-8a27-c1d414c448f4",
+      "result_id": "f1fcaea2-2231-4681-a5bd-89e4f1d7b927"
+    },
+    {
+      "claim_id": "21016051-973b-4739-8c4e-5a6e487e7ca1",
+      "result_id": "f1fcaea2-2231-4681-a5bd-89e4f1d7b927"
+    },
+    {
+      "claim_id": "a83ff053-7d3b-497c-b3a4-614c60f9f533",
+      "result_id": "f1fcaea2-2231-4681-a5bd-89e4f1d7b927"
+    },
+    {
+      "claim_id": "e9ea05b2-66f4-4e4c-b0fa-f5a2af10ecda",
+      "result_id": "f1fcaea2-2231-4681-a5bd-89e4f1d7b927"
+    },
+    {
+      "claim_id": "bf66e8ff-4fdd-4920-9c05-23bdfe528518",
+      "result_id": "f1fcaea2-2231-4681-a5bd-89e4f1d7b927"
+    },
+    {
+      "claim_id": "e96e80ff-b293-49a6-97fe-478cfa63f39b",
+      "result_id": "dd9bce10-752e-4dc3-b40a-572c9cf61f92"
+    },
+    {
+      "claim_id": "46510958-6dfd-4737-b9ca-c43384b0872d",
+      "result_id": "dd9bce10-752e-4dc3-b40a-572c9cf61f92"
+    },
+    {
+      "claim_id": "22703237-ac78-4446-a140-34d92a7f1d98",
+      "result_id": "dd9bce10-752e-4dc3-b40a-572c9cf61f92"
+    },
+    {
+      "claim_id": "2158cf62-ccbc-429c-a882-b72bfa81fe3f",
+      "result_id": "dd9bce10-752e-4dc3-b40a-572c9cf61f92"
+    },
+    {
+      "claim_id": "099a4af6-21e0-4897-9169-3bbe7245de20",
+      "result_id": "8a57360e-04cd-472b-9c4f-e129b676e71d"
+    },
+    {
+      "claim_id": "84e00ec8-019a-4fa6-a595-9353f0c54963",
+      "result_id": "8a57360e-04cd-472b-9c4f-e129b676e71d"
+    },
+    {
+      "claim_id": "228a7087-3ac7-4f3b-912e-5c4b910decff",
+      "result_id": "8a57360e-04cd-472b-9c4f-e129b676e71d"
+    },
+    {
+      "claim_id": "69b866b9-8b94-4b83-8bf7-171ed616a13a",
+      "result_id": "8a57360e-04cd-472b-9c4f-e129b676e71d"
+    },
+    {
+      "claim_id": "3c7a4839-9983-4be3-ae64-1bbebd1207e4",
+      "result_id": "8a57360e-04cd-472b-9c4f-e129b676e71d"
+    },
+    {
+      "claim_id": "f5b53f83-83c1-42c6-aa6d-78e47237c951",
+      "result_id": "a5ffcb6c-a05f-4e07-b754-5de5f7234d0b"
+    },
+    {
+      "claim_id": "2c5255f0-d077-458f-aebc-0c505a49ffb1",
+      "result_id": "a5ffcb6c-a05f-4e07-b754-5de5f7234d0b"
+    },
+    {
+      "claim_id": "4d216f56-1231-4487-bc8c-ef690ffb1501",
+      "result_id": "803b3aca-5b44-413b-9dbc-e9a5fd4f6c38"
+    },
+    {
+      "claim_id": "b9df3e01-eaec-433d-a499-ba5593c9b10e",
+      "result_id": "3d090835-9ed0-404f-b7e6-fef11022ed54"
+    },
+    {
+      "claim_id": "8f8e7e5a-dc3a-44b3-9dac-fb1b5dea25a6",
+      "result_id": "3d090835-9ed0-404f-b7e6-fef11022ed54"
+    },
+    {
+      "claim_id": "8766f52e-dd29-4118-a97f-5c1e32162d3d",
+      "result_id": "3d090835-9ed0-404f-b7e6-fef11022ed54"
+    },
+    {
+      "claim_id": "2f58cddd-3e93-4e58-a2c5-6c78f3ce00a0",
+      "result_id": "3d090835-9ed0-404f-b7e6-fef11022ed54"
+    },
+    {
+      "claim_id": "05b27053-b8cc-404c-8f6b-4dce85a92e95",
+      "result_id": "3d090835-9ed0-404f-b7e6-fef11022ed54"
+    },
+    {
+      "claim_id": "9e75078d-826e-4a7c-a3aa-6246ad895873",
+      "result_id": "3d090835-9ed0-404f-b7e6-fef11022ed54"
+    },
+    {
+      "claim_id": "7032ee86-e8ee-465e-875f-d72044471a1a",
+      "result_id": "3d090835-9ed0-404f-b7e6-fef11022ed54"
+    },
+    {
+      "claim_id": "02e4b166-b005-47d8-b818-9648aede305a",
+      "result_id": "3d090835-9ed0-404f-b7e6-fef11022ed54"
+    },
+    {
+      "claim_id": "ee0b0cfa-2e9a-43e7-9b0e-09ce428a4334",
+      "result_id": "3d090835-9ed0-404f-b7e6-fef11022ed54"
+    },
+    {
+      "claim_id": "abb052f1-be35-4b30-a6f8-46347663972a",
+      "result_id": "41d370c7-2dd2-4431-af18-68334380d079"
+    },
+    {
+      "claim_id": "0ee21cfb-77b6-468e-be77-469e41133268",
+      "result_id": "41d370c7-2dd2-4431-af18-68334380d079"
+    },
+    {
+      "claim_id": "89d08e54-cccf-4538-b1e3-a08872b53d86",
+      "result_id": "41d370c7-2dd2-4431-af18-68334380d079"
+    },
+    {
+      "claim_id": "96823dd2-e5db-4535-916f-d74915a6b1c9",
+      "result_id": "41d370c7-2dd2-4431-af18-68334380d079"
+    }
+  ],
+  "comparisons": []
+}

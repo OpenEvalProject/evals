@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Retinitis Pigmentosa (RP) is a progressive retinal disease affecting 1 in 4000 people worldwide, characterized by rod dysfunction followed by secondary cone degeneration. Over 65 causative genes have been identified, making gene-by-gene therapy approaches challenging despite proven efficacy in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide well-established background on RP epidemiology, clinical progression, genetic heterogeneity, and pathophysiology. All claims are supported by appropriate citations to peer-reviewed literature or established clinical knowledge, providing a solid foundation for the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "In animal models of RP, cones in the far periphery survive long-term despite complete rod loss, with survival confined to areas with sharp boundaries rather than gradients. Dark rearing can slow but not rescue photoreceptor degeneration, suggesting light exposure is not the sole mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 establish the phenomenon of peripheral cone survival through multiple citations and logical inference. The sharp boundary observation (C10) provides key evidence against light exposure as the sole mechanism, though this is based on inference rather than direct experimental manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "In rd1, rd10, and Rho-/- mouse models, peripheral cones survive long-term (up to P366-P531) in the dorsal retina despite complete rod degeneration by P20-P36. Quantification shows significantly more cones in peripheral versus central regions across all three models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 provide comprehensive characterization of peripheral cone survival across multiple RP mouse models. The data are supported by immunohistochemistry, smFISH, and quantification (Figure 1B-C, Figure 1\u2014figure supplement 1). Statistical significance is demonstrated with appropriate tests and sample sizes (n=4 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "RNA sequencing of peripheral versus central retinal samples revealed enrichment of Aldh1a1 in the periphery. Aldh1a1 is expressed in dorsal Muller glia and catalyzes synthesis of retinoic acid (RA), which binds to RA receptors to drive transcription of target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 identify Aldh1a1 as a candidate mediator through RNA-seq (Figure 1E) and validate expression by smFISH (Figure 1G). However, the RNA-seq had significant Muller glia contamination in the CAR+ FACS population (Figure 1\u2014figure supplement 2), which could confound interpretation of cone-specific versus Muller glia-specific expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Using RARE-LacZ reporter mice, RA signaling activity was detected primarily in Muller glia of the dorsal periphery, with a spatial pattern that closely matched the pattern of cone survival in rd1 mice at both P40 and P100.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate spatial correlation between RA signaling activity and cone survival using the RARE-LacZ reporter (Figure 1H-J). The colocalization with glutamine synthetase confirms Muller glia identity. The spatial correlation is compelling but does not establish causality, which is addressed in subsequent loss-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Conditional knockout of Aldh1a1, Aldh1a2, and Aldh1a3 using CAG-CreER significantly reduced Aldh1a1 expression and decreased the number of surviving peripheral cones in rd1 mice, demonstrating that RA is necessary for peripheral cone survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide loss-of-function evidence through conditional knockout (Figure 2A-E). ddPCR confirms near-complete Aldh1a1 depletion, and quantification shows significant reduction in cone numbers (p=0.0086, n=12 control, n=9 knockout). However, some peripheral cones persisted despite knockout, suggesting additional mechanisms may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Muller glia-specific conditional knockout of Aldh1a1 using Pdgfra-Cre resulted in retina-specific depletion of Aldh1a1 (sparing liver expression) and significant reduction in peripheral cone numbers, confirming that Muller glia-derived RA is necessary for peripheral cone survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 address potential systemic toxicity concerns from the CAG-CreER approach by using Muller glia-specific Pdgfra-Cre (Figure 2F-H). Validation shows specificity (Figure 2F), tissue-specific knockout (Figure 2G), and significant cone reduction (p=0.0016, n=3 control, n=6 knockout). This strengthens the conclusion that Muller glia-specific RA is necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Overexpression of Cyp26a1, an RA-degrading enzyme, via AAV-mediated gene transfer significantly reduced the number of dorsal cones compared to GFP controls, providing additional evidence that RA is necessary for peripheral cone survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 provide complementary loss-of-function evidence through RA degradation (Figure 2I-K). The approach is orthogonal to genetic knockout and shows significant cone reduction (p=0.0441, n=13 per group). However, AAV transduction efficiency and spatial distribution (Figure 2\u2014figure supplement 1) may limit interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The canonical RA signaling pathway involves ligand-dependent transcriptional activation by RAR\u03b1-RXR dimers, with Cyp26a1 as a major feedback target. The RAR\u03b1-VP16 fusion protein was developed to constitutively activate RA signaling independent of ligand availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 describe established mechanisms of RA signaling and the RAR\u03b1-VP16 tool, supported by appropriate citations (Cunningham and Duester, 2015; Lipkin et al., 1996). This provides necessary background for the gain-of-function experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Electroporation of CAG-RAR\u03b1-VP16 into the central retina of rd1 mice induced RA target gene expression and significantly increased cone survival at P40 in a spatially restricted, non-cell autonomous manner (cones are not electroporated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 demonstrate sufficiency through gain-of-function (Figure 3A-D). Significant cone increase is shown (p<0.0001, n=13 control, n=9 RAR\u03b1-VP16). The non-cell autonomous nature is inferred from established electroporation specificity (Matsuda and Cepko, 2004), though direct confirmation in this experimental context would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The cone survival effect of RAR\u03b1-VP16 persisted to P100 and was confirmed using multiple cone markers (M-opsin, Gnat2-driven H2B-GFP), demonstrating that RA signaling promotes bona fide cone survival rather than simply upregulating CAR expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 address important controls for the gain-of-function experiments (Figure 3E-G). Long-term survival (P100) and validation with alternative markers strengthen the conclusion. However, the P100 data show high variability (SD: 9.388 for control, 11.58 for RAR\u03b1), and functional assessment of these surviving cones is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Temporal control experiments using doxycycline-inducible expression and cell-type-specific Cre lines (Cralbp-Cre for Muller glia, Rho-Cre for rods) demonstrated that RA signaling activation specifically in Muller glia after P20 is sufficient to promote cone survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide critical temporal and cell-type specificity (Figure 3H-J). The doxycycline experiment (p=0.0311, n=6-8) shows sufficiency after rod degeneration. Cell-type specificity is demonstrated with Cralbp-Cre showing effect (p=0.0005 vs no Cre) while Rho-Cre does not (p=0.3111 vs no Cre), though the Rho-Cre group shows high variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "ALDH1A1 expression is significantly enriched in the peripheral human retina compared to the central retina, suggesting potential conservation of this mechanism in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 extends findings to human tissue using ddPCR on postmortem samples (Figure 4, n=5 per region, p=0.0146). However, the samples are from non-RP donors, so relevance to human RP patients remains speculative. Postmortem interval (5-9 hours) and lack of spatial resolution within peripheral regions are limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "RA signaling in peripheral Muller glia is both necessary (demonstrated by conditional knockout and Cyp26a1 overexpression) and sufficient (demonstrated by RAR\u03b1-VP16 overexpression) for prolonged cone survival in the rd1 mouse model of retinal degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 synthesize the major findings. The necessity and sufficiency framework is well-supported by multiple complementary approaches with appropriate controls. However, the mechanism downstream of RA signaling remains unknown, and some cones survive even after RA depletion, suggesting additional pathways may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Peripheral Muller glia express Aldh1a1 and exhibit active RA signaling that spatially correlates with cone survival. RA signaling is not activated directly in cones, indicating a non-cell autonomous mechanism of cone survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 establish the cellular basis of the mechanism through expression analysis and RARE-LacZ reporter data. The non-cell autonomous nature is inferred from RARE-LacZ expression pattern and electroporation specificity. However, direct measurement of RA levels or receptor activation in cones would provide stronger evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Prior work in zebrafish and chick suggests RA signaling may regulate blood-retina barrier integrity and retinal patterning. In humans, differential expression of CYP26A1 (central) and ALDH1A1 (peripheral) may contribute to regional differences in susceptibility to photoreceptor death in RP and AMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 provide relevant context from other species and human development, all supported by appropriate citations. These are speculative connections to the current findings but provide useful framework for interpretation and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "During development, Aldh1a1 and Aldh1a3 are expressed in dorsal and ventral retinal progenitor cells, respectively. Postnatally, dorsal Aldh1a1 expression persists in adult Muller glia, possibly as a remnant of the developmental gene expression program, though no overt retinal phenotype has been reported in adult conditional knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 provide developmental and evolutionary context, supported by multiple citations. The speculation about persistence of developmental programs is reasonable but not directly tested. The observation that conditional knockout in healthy adult mice shows no phenotype (C76) contrasts with the effect in degenerating retinas, suggesting context-dependent function.",
+    "result_type": "MINOR"
+  }
+]

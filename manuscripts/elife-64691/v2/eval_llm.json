@@ -1,0 +1,401 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C62",
+      "C69",
+      "C70",
+      "C88",
+      "C89",
+      "C90",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The R1021P mutation causes protein destabilization and loss of lipid kinase activity. The mutation leads to >20-fold decreased purification yields, large-scale increases in HDX exchange throughout the C2, helical, and kinase domains at both early and late timepoints (indicating disruption of secondary structure), greatly decreased lipid kinase activity, but maintained ATPase activity, suggesting impaired membrane binding or PIP2 recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C69-C70, C88-C90, C156-C161 collectively provide strong convergent evidence from multiple experimental approaches (protein yield, HDX-MS, kinase assays, ATPase assays) that the R1021P mutation destabilizes the protein and abolishes lipid kinase activity while maintaining catalytic competence. The data are internally consistent and supported by patient data (C157).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C63",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The R1021C mutation causes localized conformational disruption of the C-terminal regulatory motif and increases lipid kinase activity. HDX-MS shows increased exchange primarily in the C-terminal regulatory motif (k\u03b17-12) at late timepoints, indicating maintained secondary structure with increased flexibility. The mutation results in ~8-fold increased lipid kinase activity both basally and with G\u03b2\u03b3 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C77-C80, C91-C99, C162-C165 provide strong convergent evidence from HDX-MS, kinase assays, and comparison to membrane-bound states that R1021C disrupts the inhibitory conformation while maintaining structural integrity. The increased activity and conformational changes are well-documented and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Molecular dynamics simulations reveal that R1021 mutations disrupt hydrogen bonding networks and increase fluctuations in the regulatory motif. GaMD simulations show increased RMSF in the k\u03b110-k\u03b111 loop, disruption of hydrogen bonds between R1021 and L1055/T1056/K1059, and increased angle fluctuations between regulatory helices, with R1021P showing more extensive disruption than R1021C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 present MD simulation data that is consistent with and provides mechanistic insight into the HDX-MS and kinase activity results. The computational findings align with experimental observations, showing greater disruption for R1021P than R1021C. However, the authors note that large-scale destabilization of R1021P may require longer simulation timescales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Multiple PI3K\u03b3 inhibitors induce allosteric conformational changes, with some mimicking the R1021C mutant. HDX-MS screening of seven inhibitors revealed three classes: (1) IPI-549, PIK-90, AS-604850 causing only localized active site protection; (2) Gedatolisib, Omipalisib, NVS-PI3-4 causing increased exchange in the regulatory motif similar to R1021C; (3) AZ2 causing large-scale disruption of secondary structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C114-C124 present comprehensive HDX-MS data on inhibitor-induced conformational changes. The classification is well-supported by the data, and the similarity between Gedatolisib and R1021C is documented. The distinction between increased dynamics (Gedatolisib) and complete disruption (AZ2) is supported by timepoint analysis (C123).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Crystal structures of p110\u03b3 bound to IPI-549, Gedatolisib, and NVS-PI3-4 reveal molecular basis for isoform selectivity. Structures were solved at 2.55 \u00c5, 2.65 \u00c5, and 3.15 \u00c5 respectively. NVS-PI3-4 opens a p110\u03b3-unique pocket via K883 conformational change that would clash in p110\u03b1/\u03b4. IPI-549 opens the specificity pocket via M804 movement, with selectivity mediated by interactions with K802 and the k\u03b11-k\u03b12 loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C137 present crystallographic data with clear structural interpretations. The selectivity mechanisms are well-supported by structural comparisons to other isoforms and structure-activity relationships from cited work (C133). The inferences about steric clashes (C131, C135, C137) are reasonable based on the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Gedatolisib induces distinct activation loop conformation compared to IPI-549. The Gedatolisib structure shows extensive contacts with the activation loop, altered conformation of H967 following the DFG motif, and minor perturbation of the W1080 lock (disrupted W1080-D904 hydrogen bond), while IPI-549 maintains this bond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 present clear structural differences between Gedatolisib and IPI-549 bound states, supported by crystallographic data (Figure 5B-G). The proposed mechanism linking N-terminus activation loop changes to C-terminus effects (C142) is a reasonable inference from the structural and HDX-MS data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The R1021C mutant shows increased sensitivity to Gedatolisib but not IPI-549. IC50 measurements show Gedatolisib is ~3-fold more potent against R1021C than wild-type, while IPI-549 shows no significant difference. This differential sensitivity, combined with similar HDX-MS profiles between R1021C and Gedatolisib-bound wild-type, suggests R1021C adopts a conformation similar to the Gedatolisib-bound state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145, C182-C184 present IC50 data showing differential inhibitor sensitivity that correlates with HDX-MS conformational similarities. The inference that R1021C mimics the Gedatolisib-bound conformation (C183) is well-supported by convergent evidence. The proposal for mutant-specific inhibitor design (C145, C184) is speculative but reasonable based on the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C154",
+      "C155"
+    ],
+    "result": "R1021 forms critical hydrogen bonds with the regulatory arch that are disrupted by mutations. Structural analysis shows R1021 forms hydrogen bonds with carbonyl oxygens of L1055, T1056, and K1059 in k\u03b110/k\u03b111. The residue is conserved across all class I PI3Ks. Both R1021C and R1021P would disrupt these interactions, with R1021P additionally expected to distort the k\u03b18 helix secondary structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C154-C155 present structural observations (C71) and reasonable inferences about mutation effects based on chemical properties (C72-C73). The conservation across class I PI3Ks (C154) is supported by sequence alignment. The predictions are validated by subsequent experimental data (HDX-MS, MD simulations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "R1021P maintains catalytic activity but loses membrane-dependent lipid kinase activity. Wild-type p110\u03b3/p101 shows >100-fold activation by lipidated G\u03b2\u03b3 and ~10-fold by Ras. R1021P shows weak basal lipid kinase activity with almost no G\u03b2\u03b3 activation, but exhibits higher basal ATPase activity than wild-type, indicating maintained ATP hydrolysis capability but severely impaired membrane binding or PIP2 recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C81-C87 present kinase and ATPase assay data that clearly distinguish between catalytic competence and membrane-dependent activity. The inference that membrane binding or PIP2 recognition is impaired (C87) is well-supported by the differential ATPase vs lipid kinase activity. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "R1021 mutations affect the p101 regulatory subunit. Both R1021C and R1021P complexes with p101 elute similarly to wild-type on gel filtration, suggesting proper folding. However, HDX-MS shows both mutations cause increased exchange in p101 peptides 602-623 and 865-877, with R1021P additionally affecting peptide 102-122.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C101-C103 present gel filtration and HDX-MS data showing that mutations affect the regulatory subunit. The inference of proper folding from gel filtration (C68) is reasonable but limited. The HDX-MS changes in p101 are documented but difficult to interpret structurally due to lack of a p101 structure (as noted in the manuscript).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The C-terminal regulatory motif (k\u03b17-12) maintains p110\u03b3 in an inhibited state through a tryptophan lock mechanism. The motif surrounds the activation loop and keeps the enzyme inhibited. The k\u03b110-12 helices form the regulatory arch. This inhibition is conserved across class I PI3Ks, but p110\u03b3 is unique in maintaining this conformation without regulatory subunits, proposed to be via a W1080 lock that maintains closed conformation of the k\u03b112 helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C41-C47 describe established structural features supported by citations and structural data (Figure 1). The tryptophan lock mechanism (C47) is described as proposed and supported by prior work (Gangadhara et al., 2019). The uniqueness of p110\u03b3 (C46) is supported by comparison to class IA PI3Ks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "PI3K\u03b3 is a master regulator of immune cell function activated downstream of multiple receptors. Class I PI3Ks generate PIP3 to regulate cellular functions. The class IB p110\u03b3 isoform is mainly localized in immune cells and regulates chemotaxis, cytokine release, and ROS generation downstream of GPCRs, IgE/Antigen receptors, RTKs, and TLRs, with activation potentiated by p84/p101 regulatory subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C7-C26 present established background knowledge about PI3K biology, all supported by appropriate citations. These are well-established facts in the field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "PI3K\u03b3 loss is protective in multiple inflammatory diseases and cancer models. Mouse studies show genetic or pharmacological PI3K\u03b3 loss is protective in cardiovascular disease, arthritis, Lupus, asthma, pulmonary inflammation/fibrosis, and metabolic syndrome. PI3K\u03b3 drives pancreatic ductal adenocarcinoma progression, and targeting PI3K\u03b3 with checkpoint inhibitors shows promise in experimental cancer therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 cite multiple studies supporting the protective effects of PI3K\u03b3 loss/inhibition in various disease models. These are established findings from prior work that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C168"
+    ],
+    "result": "PI3K mutations are linked to multiple human diseases with distinct patterns across isoforms. Activating mutations cause oncogenic transformation, with p110\u03b1 most frequently mutated in cancer and overgrowth disorders, while p110\u03b4 mutations cause immunodeficiencies. p110\u03b3 mutations occur at lower frequency but are widely distributed. Loss-of-function p110\u03b3 mutations (R1021P, N1085S) cause immunodeficiencies. The R1021 residue is unique as it is mutated in both immunodeficiencies and tumors, with the equivalent residue in p110\u03b1 (R992) also found mutated in tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57, C146-C152, C168 present established knowledge about PI3K mutations in disease, all supported by appropriate citations. The uniqueness of R1021 (C152) is supported by the data presented in the manuscript showing both activating and inactivating mutations at this position.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C176",
+      "C177"
+    ],
+    "result": "PI3K inhibitor development strategies and selectivity mechanisms. Pan-PI3K inhibitors cause toxicity, driving isoform-selective inhibitor development. Multiple PI3K\u03b1 and PI3K\u03b4 inhibitors are clinically approved. Two strategies for PI3K\u03b3 selectivity are: (1) targeting isoform-specific pockets, and (2) targeting conformational changes. The conformational selective inhibitor AZ2 putatively targets an activated conformation via a cyclopropyl moiety that alters the activation loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C176-C177 present background on inhibitor development supported by citations. The mechanism of AZ2 (C177) is described as putative, appropriately indicating it is a proposed mechanism from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "PI3K\u03b3 activation mechanisms involve G\u03b2\u03b3 and Ras GTPases. Activation is primarily mediated by G\u03b2\u03b3 binding to the C2-helical linker, requiring secondary G\u03b2\u03b3-regulatory subunit interaction for physiological activation. Free p110\u03b3 has no detectable GPCR-stimulated activation in cells. Ras GTPases can facilitate activation via RBD interaction, with the same interface putatively mediating Rab8 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 present established activation mechanisms supported by citations. The Rab8 mechanism (C40) is appropriately described as putative. These provide necessary background for understanding the regulatory mechanisms studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C169"
+    ],
+    "result": "Model for how R1021 mutations affect lipid kinase activity. The C-terminal regulatory motif conformation is critical for regulating activity. Minor perturbations (R1021C) can disrupt inhibitory contacts allowing k\u03b112 reorientation and increased activity, potentially pre-organizing the enzyme for catalysis through increased membrane binding or PIP2 kinase activity. The motif orientation is critical for all class I PI3Ks regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167, C169 present a mechanistic model based on the experimental data. The model (C166) is explicitly stated as proposed and is well-supported by the convergent evidence from HDX-MS, kinase assays, and MD simulations. The generalization to all class I PI3Ks (C169) is supported by the data and established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Regulation of the C-terminal regulatory motif varies across PI3K isoforms. Class IA PI3Ks require p85 regulatory subunits to stabilize the motif, with nSH2 stabilizing k\u03b110 in all class IA isoforms, and cSH2 stabilizing k\u03b17/8/11/12 in p110\u03b2/\u03b4. p110\u03b3 can be post-translationally modified by PKA phosphorylation (T1024) decreasing activity, or PKC phosphorylation (S582) increasing activity. Fragment screens have revealed potential druggable pockets in class IA PI3Ks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C175 present established regulatory mechanisms supported by appropriate citations. These provide important context for understanding the uniqueness of p110\u03b3 regulation and potential therapeutic strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Comparison of inhibitor mechanisms reveals distinct binding modes. PIK90, IPI549, and AS-604850 only cause decreased exchange at the active site with similar activation loop conformations and limited inhibitor-activation loop interactions. Gedatolisib and Omipalisib are not specific for PI3K\u03b3 over class IA PI3Ks. Similar HDX-MS differences were observed for R1021C mutant and wild-type bound to Gedatolisib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C181 present comparative analysis of inhibitor binding modes supported by HDX-MS and crystallographic data. The similarity between R1021C and Gedatolisib-bound wild-type (C181) is well-documented and important for the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C153"
+    ],
+    "result": "Summary of main findings on R1021 mutations and inhibitor mechanisms. The study reveals how immunodeficiency (R1021P) and oncogenic (R1021C) mutations can inactivate or activate enzyme activity. Activation loop-binding inhibitors induce allosteric conformational changes mimicking the R1021C mutant. Mutation of R1021 can lead to either kinase activation or inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C153 summarize the main findings of the study, which are well-supported by the comprehensive experimental data including kinase assays, HDX-MS, MD simulations, and crystallography presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

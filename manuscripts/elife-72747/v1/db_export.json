@@ -1,0 +1,1933 @@
+{
+  "submission": {
+    "id": "f49a5a2f-26a8-4bfb-8490-f0cc015c0658",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:48:11.033127Z",
+    "updated_at": "2025-12-03T09:48:11.033127Z"
+  },
+  "content": [
+    {
+      "id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "submission_id": "f49a5a2f-26a8-4bfb-8490-f0cc015c0658",
+      "content_type": "manuscript",
+      "content_text": "# A dual endosymbiosis supports nutritional adaptation to hematophagy in the invasive tick Hyalomma marginatum\n\n## Authors\n\n- Marie Buysse<sup>1</sup> ([ORCID: 0000-0002-8160-2470](https://orcid.org/0000-0002-8160-2470)) \u2020\n- Anna Maria Floriano<sup>3</sup>\n- Yuval Gottlieb<sup>5</sup>\n- Tiago Nardi<sup>3</sup> ([ORCID: 0000-0002-1248-9873](https://orcid.org/0000-0002-1248-9873))\n- Francesco Comandatore<sup>6</sup>\n- Emanuela Olivieri<sup>3</sup>\n- Alessia Giannetto<sup>7</sup>\n- Ana M Palomar<sup>8</sup> ([ORCID: 0000-0002-5461-5874](https://orcid.org/0000-0002-5461-5874))\n- Benjamin L Makepeace<sup>9</sup>\n- Chiara Bazzocchi<sup>10</sup>\n- Alessandra Cafiso<sup>10</sup>\n- Davide Sassera<sup>3</sup>\n- Olivier Duron<sup>1</sup>\n\n### Affiliations\n\n1. MIVEGEC (Maladies Infectieuses et Vecteurs : Ecologie, G\u00e9n\u00e9tique, Evolution et Contr\u00f4le), Univ. Montpellier (UM) - Centre National de la Recherche Scientifique (CNRS) - Institut pour la Recherche et le D\u00e9veloppement (IRD) Montpellier France\n2. Centre of Research in Ecology and Evolution of Diseases (CREES), Montpellier, France Montpellier France\n3. Department of Biology and Biotechnology \u201cL. Spallanzani\u201d, University of Pavia Pavia Italy\n4. Faculty of Science, University of South Bohemia \u010cesk\u00e9 Bud\u011bjovice Czech Republic\n5. Koret School of Veterinary Medicine, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem Rehovot Israel\n6. Department of Biomedical and Clinical Sciences L. Sacco and Pediatric Clinical Research Center, University of Milan Milan Italy\n7. Department of Chemical, Biological, Pharmaceutical and Environmental Sciences, University of Messina Messina Italy\n8. Center of Rickettsiosis and Arthropod-Borne Diseases (CRETAV), San Pedro University Hospital- Center of Biomedical Research from La Rioja (CIBIR) Logro\u00f1o Spain\n9. Institute of Infection, Veterinary & Ecological Sciences, University of Liverpool Liverpool United Kingdom\n10. Department of Veterinary Medicine, University of Milan Lodi Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany animals are dependent on microbial partners that provide essential nutrients lacking from their diet. Ticks, whose diet consists exclusively on vertebrate blood, rely on maternally inherited bacterial symbionts to supply B vitamins. While previously studied tick species consistently harbor a single lineage of those nutritional symbionts, we evidence here that the invasive tick Hyalomma marginatum harbors a unique dual-partner nutritional system between an ancestral symbiont, Francisella, and a more recently acquired symbiont, Midichloria. Using metagenomics, we show that Francisella exhibits extensive genome erosion that endangers the nutritional symbiotic interactions. Its genome includes folate and riboflavin biosynthesis pathways but deprived functional biotin biosynthesis on account of massive pseudogenization. Co-symbiosis compensates this deficiency since the Midichloria genome encompasses an intact biotin operon, which was primarily acquired via lateral gene transfer from unrelated intracellular bacteria commonly infecting arthropods. Thus, in H. marginatum, a mosaic of co-evolved symbionts incorporating gene combinations of distant phylogenetic origins emerged to prevent the collapse of an ancestral nutritional symbiosis. Such dual endosymbiosis was never reported in other blood feeders but was recently documented in agricultural pests feeding on plant sap, suggesting that it may be a key mechanism for advanced adaptation of arthropods to specialized diets.\n\n## Introduction\n\nTicks evolved to hematophagy through the acquisition of key genomic adaptations (Gulia-Nuss, 2016; Jia et al., 2020) and the evolution of mutualistic interactions with microbial symbionts (Buysse and Duron, 2021; Duron and Gottlieb, 2020). Ticks rely on vertebrate blood as their sole food source throughout their development, although it is nutritionally unbalanced. Blood contains high levels of proteins, iron, and salts, but low levels of carbohydrates, lipids, and vitamins. To overcome these dietary challenges, tick genomes present large repertoires of genes related to vitamin and lipid shortages, iron management, and osmotic homeostasis (Gulia-Nuss, 2016; Jia et al., 2020). Yet, tick genomes do not contain genes for synthesis of some essential vitamins, thus, vitamin-provisioning pathways have indirectly arisen from symbiotic associations with transovarially transmitted intracellular bacteria (Ben-Yosef et al., 2020; Duron et al., 2018; Duron and Gottlieb, 2020; Gerhart et al., 2016; Gottlieb et al., 2015; Guizzo et al., 2017; Smith et al., 2015). This partnership allowed the long-term acquisition of heritable biochemical functions by ticks and favored their radiation into the nearly 900 tick species that currently exist (Duron and Gottlieb, 2020). This co-evolutionary process is reflected by microbial communities dominated by tick nutritional symbionts (Bonnet and Pollet, 2021; Narasimhan and Fikrig, 2015).\n\nMost tick species typically harbor a single lineage of nutritional symbiont, but multiple symbiont lineages exist in different tick species (Duron and Gottlieb, 2020). The most common lineages belong to the Coxiella-like endosymbiont group and to the Francisella-like endosymbiont group (CLE and FLE, hereafter) (Azagi et al., 2017; Binetruy et al., 2020; Duron et al., 2017; Machado-Ferreira et al., 2016), but a few tick species may rely on other symbionts (Duron et al., 2017), such as the Rickettsia-like endosymbionts (Narasimhan et al., 2021) and the intramitochondrial bacterium Midichloria (Sassera et al., 2006). Once deprived of their nutritional symbionts, ticks show a complete stop of growth and moulting, as well as lethal physical abnormalities (Ben-Yosef et al., 2020; Duron et al., 2018; Guizzo et al., 2017; Zhong et al., 2007), which can be fully restored with an artificial supplement of B vitamins (Duron et al., 2018). Nutritional symbionts of ticks exhibit a high degree of lifestyle specialization toward mutualism. They have been found primarily in two tick organs, the ovaries and Malpighian tubules, while other organs have only been found sporadically infected (Buysse et al., 2019; Duron and Gottlieb, 2020). Ovary infection is consistent with vertical transmission of nutritional symbionts in developing oocytes. A high density of nutritional symbionts in Malpighian tubules supports a nutritional role for these symbionts, as Malpighian tubules are involved in excretion and osmoregulation. A likely hypothesis is that nutritional symbionts use tick hemolymph compounds to synthesize de novo B vitamins (Duron and Gottlieb, 2020).\n\nGenomes of CLE and FLE consistently contain complete biosynthesis pathways of the same three B vitamins: biotin (vitamin B7), riboflavin (B2), and folate (B9) (Duron et al., 2018; Gerhart et al., 2018; Gerhart et al., 2016; Gottlieb et al., 2015; Guizzo et al., 2017; Nardi et al., 2021; Smith et al., 2015). These three pathways form a set of core symbiotic genes essential for ticks (Duron and Gottlieb, 2020) while other functions are disposable. As such, the genomes of CLE, FLE, and Midichloria underwent massive reduction as observed in other nutritional endosymbionts of arthropods with a specialized diet (Duron et al., 2018; Gerhart et al., 2018; Gerhart et al., 2016; Gottlieb et al., 2015; Nardi et al., 2021; Sassera et al., 2011; Smith et al., 2015). This reduction process is primarily initiated as a consequence of relaxed selection on multiple genes which are not essential within the host stable and nutrient-rich cellular environment (Bennett and Moran, 2015; McCutcheon et al., 2019). Over time, genes encoding for functions such as motility, regulation, secondary-metabolite biosynthesis, and defense are pseudogenized and then definitively jettisoned (Bennett and Moran, 2015; McCutcheon et al., 2019).\n\nCoevolution of hosts and their nutritional symbionts over millions of years is expected to result in stable co-cladogenesis (Bennett and Moran, 2015). However, in sap-feeding insects where symbionts compensate for nutritional deficiencies of the sap diet, cases of unstable interactions have been observed (Bennett and Moran, 2015; McCutcheon et al., 2019). Indeed, as the symbiont genome decays, repair mechanisms can be lost, leading to faster pseudogenization, which can affect genes in all functional categories including those involved in nutritional supplementation (Bennett and Moran, 2015; McCutcheon et al., 2019). This may ultimately lead to overly reduced and maladapted genomes, limiting beneficial contributions to hosts and opening the road to wholesale replacement by new symbiont(s) (Bennett and Moran, 2015; McCutcheon et al., 2019; Sudakaran et al., 2017). This degeneration\u2013replacement model has been proposed in sap-feeding insects (Campbell et al., 2015; Lukasik et al., 2018; Manzano-Mar\u0131n et al., 2020; Matsuura et al., 2018), but is difficult to document as such replacements are expected to be transient (McCutcheon et al., 2019). In parallel, other forms of multi-partite interactions have been reported, where a novel bacterium with similar function to a pre-existing symbiont enters a bipartite system (Husnik and McCutcheon, 2016; Santos-Garcia et al., 2018; Takeshita et al., 2019). This can lead to relaxation of conservative selection pressure on the original symbionts, which can lose genes that were previously fundamental, ultimately leading to a tripartite stable symbiosis (Husnik and McCutcheon, 2016; Takeshita et al., 2019).\n\nIn this study, we document a complex nutritional endosymbiosis in the invasive bont-legged tick Hyalomma marginatum characterized by a maladapted ancestral symbiont genome compensated by gene functions of a more recently acquired symbiont. This large tick species usually feeds on humans and a diversity of mammals and birds in the Mediterranean climatic zone but has recently expanded its range to the north, invading Western Europe (Vial et al., 2016). Hyalomma marginatum can transmit Crimean-Congo hemorrhagic fever virus, an emerging disease affecting humans in the northern Mediterranean Basin, as well as protozoan parasites and intracellular bacterial pathogens such as Rickettsia aeschlimannii (Vial et al., 2016). Previous studies detected the presence of diverse highly prevalent bacterial symbionts across H. marginatum populations (Di Lecce et al., 2018), but their contribution to tick nutrition was not studied. A previous study showed that high densities of FLE can be observed in Malpighian tubules and ovaries of H. marginatum, while infections in other organs are scattered (Azagi et al., 2017). Here, we sequenced three microbial metagenomes of H. marginatum in three distinct locations, and determined the nutritional interactions in this unique symbiosis system.\n\n## Results\n\n### Microbial metagenomes\n\nWe sequenced three microbial metagenomes from H. marginatum specimens collected in Spain (i.e., the Hmar-ES metagenome), Italy (Hmar-IT), and Israel (Hmar-IL). We obtained 57,592,510 paired-end reads from the Hmar-ES metagenome, 68,515,944 paired-end reads from Hmar-IT, and 10,807,740 paired-end reads from Hmar-IL. We assembled one FLE genome with >99% estimated completeness from each metagenome (FLE-Hmar-ES, FLE-Hmar-IT, and FLE-Hmar-IL; also designated as FLE-Hmar genomes; Supplementary file 1a). In parallel, we assembled one genome with >95% estimated completeness from each metagenome for the bacterium Midichloria, and thus obtained three additional complete genomes (Midi-Hmar-ES, Midi-Hmar-IT, and Midi-Hmar-IL; also designated as Midi-Hmar genomes; Supplementary file 1a). In addition, we detected a third bacterium, the tick-borne pathogen R. aeschlimannii, in the Hmar-IT and Hmar-IL, but not Hmar-ES, metagenomes, and further assembled one genome with 94% estimated completeness (RAES-Hmar-IT) and one partial (RAES-Hmar-IL) genome (Supplementary file 1a; Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig1-v1.jpg)\n\n**Figure 1.:** Sampling countries are colored in gray. The symbiont genomes retrieved from each site are graphically represented in blue, orange, and pink, corresponding to Francisella-LE (FLE), Midichloria (Midi), and R. aeschlimannii (RAES), respectively. Circles on genome maps correspond to the following: (1) forward strand genes; (2) reverse strand genes; (3) in gray and black, contigs. Circular maps of the genomes were produced using CGView.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The phylogenetic tree was inferred using maximum likelihood from a concatenated alignment of 324 single-copy orthologs genes (88,128 amino acids; best-fit approximation for the evolutionary model: JTT+G4+I). The numbers on each node represent the support of 1000 bootstrap replicates; only bootstrap values >70% are shown. The scale bar is in units of substitution/site. Sequence from the newly sequenced Rickettsia genome is indicated by a pink font.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The phylogenetic tree was inferred using maximum likelihood from an alignment of the cytochrome c oxidase I (cox1) gene sequences (546 bp unambiguously aligned, best-fit approximation for the evolutionary model: HKY+G+I). The numbers on each node represent the support of 1000 bootstrap replicates; only bootstrap values >80% are shown. The scale bar is in units of substitution/site.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The Hyalomma cladogram was adapted from cox1 phylogeny showed in Figure 6. The numbers on each node represent the support of 1000 bootstrap replicates; only bootstrap values >80% are shown. The scale bar is in units of substitution/site. Blue and orange plain circles indicate the presence of FLE and Midichloria, respectively, as detailed in Supplementary file 1d. Blank circle represents an absence of symbiont.\n\nThe assemblies of the three FLE draft genomes (13 contigs for FLE Hmar-IT, 17 for FLE Hmar-ES, and 25 FLE Hmar-IL) were very similar in size (1.51\u20131.536 Mb), average G+C content (31.11\u201331.23%), number of predicted protein-coding genes (937\u2013961), and protein-coding sequences with inactivating mutations (pseudogenes, 789\u2013798), no prophages, and two identical insertion sequences (Supplementary file 1a). Phylogenomic analysis based on 436 single-copy orthologs (SCOs) Francisella genes showed that FLE-Hmar-ES, FLE-Hmar-IT, and FLE-Hmar-IL cluster together in a robust clade within other FLE of ticks (Figure 2A). The closest relative of this clade is the FLE of another Hyalomma species, Hyalomma asiaticum from China, while FLEs of other tick genera (Ornithodoros, Argas, and Amblyomma) are more distantly related. The FLE clade is embedded in the Francisella genus and shares a common origin with pathogenic species, including the tularemia agent, F. tularensis, and an opportunistic human pathogen, F. opportunistica (Figure 2A). The FLE-Hmar genomes are similar in organization and content overall, apart from a 127,168 bp inversion in FLE-Hmar-ES and a 4165 bp inversion in FLE-Hmar-IL (Figure 2B). Compared to other FLE genomes (i.e., FLEOm and FLEAm), they are slightly reduced in size and exhibit substantial rearrangements (Figure 2B, Supplementary file 1a and b). Based on gene orthologs, the core-genome of these FLE shares 743 genes, while the core genome of the FLE of H. marginatum contains 796 genes because the FLE-Hmar genomes share 53 genes that are not present in other FLE genomes (Figure 2C). Interestingly, pseudogenes are highly abundant in the three genomes of FLE of H. marginatum, compared with other FLE genomes (Figure 2D), and most functional categories are impacted by this advanced pseudogenization process. Most of the genes associated with virulence in pathogenic Francisella species, including the Francisella pathogenicity island (FPI) and secretion system, are pseudogenized or completely missing in FLE-Hmar genomes, consistent with previous observations in other FLEs (Figure 4\u2014figure supplement 1). Furthermore, FLE-Hmar genomes contain fewer genes involved in replication, recombination, and repair than any other FLEs analyzed (Figure 2C). The nucleotide excision repair system (uvrABCD) in FLE-Hmar genomes is conserved; however, the DNA mismatch repair system (mutSL) is fully pseudogenized. In other FLEs, these systems are conserved, with the exception of the mutSL system in the FLE of Ornithodoros moubata and H. asiaticum genomes (Figure 4\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig2-v1.jpg)\n\n**Figure 2.:** (A) Whole-genome phylogenetic relationship of the three FLE genomes obtained from Hyalomma marginatum specimens (highlighted), FLE of other tick species, and Francisella pathogenic species, including F. tularensis. The phylogenetic tree was inferred using maximum likelihood from a concatenated alignment of 436 single-copy orthologs genes (132,718 amino acids; best-fit approximation for the evolutionary model: CPREV+G4+I). The numbers on each node represent the support of 1000 bootstrap replicates; only bootstrap values >70% are shown. The scale bar is in units of substitution/site. Sequences from newly sequenced FLE genomes are indicated by a blue font. (B) Whole-genome synteny of the three FLE genomes obtained from H. marginatum specimens (blue font) and representative FLE (black font). Each contiguously colored locally collinear block (LCB) represents a region without rearrangement of the homologous backbone sequence. LCBs below the center in Francisella genomes represent blocks in the reverse orientation. The height of color bars within LCBs corresponds to the average level of similarity (conservation) profile in that region of the genome sequence. Areas that are completely white were not aligned and containd sequence elements specific to a particular genome. (C) Venn diagram representing orthologs distribution between the three FLE genomes obtained from H. marginatum specimens (blue font) and representative FLE (black font). (D) Clusters of orthologous groups of proteins (COGs) comparisons between the three FLE genomes obtained from H. marginatum specimens (blue font) and representative FLE (black font). The color scale indicates the percentage of functional genes per category. Gray color means that genes are not present in a given category. The COG category names (capital letters from A to Z) correspond to the NCBI reference naming system.\n\nThe Midichloria genomes, Midi-Hmar-ES, Midi-Hmar-IT, and Midi-Hmar-IL, were assembled in 179, 359, and 123 contigs, respectively, and their genomes reach 1.13\u20131.16 Mb, with consistent G+C content (35.03\u201335.23%), number of predicted protein-coding genes (1032\u20131071), pseudogenes (190\u2013192), no prophages, and between three and 10 insertion sequences (Supplementary file 1a). Remarkably, their average coding density (76%) is higher than those of FLEs of H. marginatum (54%), and furthermore, those of other FLE representatives (range from 57% to 69%). Phylogenomic analysis based on 242 SCOs Rickettsiales genes shows that Midi-Hmar-ES, Midi-Hmar-IT, and Midi-Hmar-IL cluster in a highly supported monophyletic sister group of the single other sequenced Midichloria genome, Candidatus M. mitochondrii strain IricVA (M. mitochondrii hereafter), the intra-mitochondrial endosymbiont of the European sheep tick, Ixodes ricinus. Altogether, they delineate a monophyletic clade within the Midichloriaceae family (Figure 3A). The high number of Midi-Hmar contigs precluded comparison of their genome structures. However, gene contents of the Midi-Hmar genomes are highly similar, differing substantially from M. mitochondrii (Supplementary file 1a and b). Based on gene orthologs, the pan-genome of Midichloria shared 745 genes, and Midi-Hmar genomes shared 181 genes that are not present in M. mitochondrii (Figure 3B). Pseudogenization only impacted a few functional categories (e.g., genes of chromatin structure and dynamics [category B] and genes of the mobilome [prophages and transposons, category X]), across Midi-Hmar genomes (Figure 3C). By contrast to FLE genomes, the DNA mismatch repair system (mutSL) and the nucleotide excision repair (uvrABCD) are not pseudogenized in Midi-Hmar genomes and are thus potentially functional (Figure 4\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig3-v1.jpg)\n\n**Figure 3.:** (A) Whole-genome phylogenetic relationship of the three Midichloria genomes obtained from Hyalomma marginatum specimens (highlighted), 'Ca M. mitochondrii', and other Rickettsiales species. The phylogenetic tree was inferred using maximum likelihood from a concatenated alignment of 242 single-copy orthologs genes (49,957 amino acids; best-fit approximation for the evolutionary model: LG+G4+I). The numbers on each node represent the support of 1000 bootstrap replicates; only bootstrap values >70% are shown. The scale bar is in units of substitution/site. Sequences from newly sequenced Midichloria genomes are indicated by an orange font. (B) Venn diagram representing orthologs distribution between the three Midichloria genomes obtained from H. marginatum specimens (orange font) and \u2018Ca. M. mitochondrii\u2019 (black font). (C) Clusters of orthologous groups of proteins (COGs) comparisons between the three Midichloria genomes obtained from H. marginatum specimens (orange font) and \u2018Ca. M. mitochondrii\u2019 (black font). The color scale indicates the percentage of functional genes per category. Gray color means that genes are not present in a given category. The COG category names (capital letters from A to Z) correspond to the NCBI reference naming system.\n\nIn two metagenomes, we also detected contigs belonging to R. aeschlimannii. We recovered one possibly complete chromosome (1.35 Mb for 165 contigs, with 1122 genes, 475 pseudogenes, and 32.32% G+C content) for RAES-Hmar-IT (Supplementary file 1a), whereas for RAES-Hmar-IL only a partial genome (0.215 Mb) was obtained. No Rickettsia reads were detected in the Hmar-ES metagenome. This may be due to the absence of the bacterium in the Hmar-ES microbiome, or, possibly, to experimental artifact. This metagenome was obtained by sequencing DNA extracted from the dissected ovaries of 10 females, whereas the Hmar-IT metagenome was sequenced from DNA extracted from a whole female, suggesting that Rickettsia may be absent or at low density in tick ovaries. This pattern of tissue localization may be corroborated by the Hmar-IL metagenome, sequenced from a pool of dissected ovaries of 10 ticks, but for which we obtained only a few Rickettsia reads. This reflects either the absence of Rickettsia in the dissected ticks (R. aeschlimannii usually reaches low-to-medium prevalence in field populations of H. marginatum; Azagi et al., 2017), or a lower abundance of Rickettsia in ovaries. Phylogenetic analysis based on 324 SCOs genes present in Rickettsia genomes showed that RAES-Hmar-IT clusters with the tick-associated human pathogen R. aeschlimannii (including the strain MC16 previously isolated from H. marginatum) and altogether delineate a robust clade with the Spotted Fever Rickettsia group (Figure 1\u2014figure supplement 1). Overall, the low abundance of Rickettsia in the Hmar-IL metagenome (8\u00d7 average genome coverage), its absence in the Hmar-ES metagenome, as well as the genetic proximity with R. aeschlimannii, are all indicative of a tick-borne pathogen, rather than a nutritional endosymbiont.\n\n### Complementation in nutritional endosymbiosis\n\nWhile all previously sequenced FLE genomes contain complete pathways for biotin, riboflavin, and folate, the FLE-Hmar genomes only retain intact pathways for riboflavin and folate (Figure 4A). The biosynthesis pathway for biotin is non-functional, as from six genes of the complete pathway, five (bioA, bioD, bioC, bioF, and bioB) are pseudogenized in the FLE-Hmar genomes (only bioH is not pseudogenized; Figure 4A). Pseudogenization is due to indels or mutations that induce premature codon stops interrupting the coding sequences, indicating that FLE-Hmar cannot produce biotin (Figure 4\u2014figure supplement 3). While bioA, bioD, bioC, and bioF contains multiple indels or mutations (introducing premature stop codon, or missing start codon), bioB shows a low level of pseudogenization with a unique indel. A stop codon comes from a reading frame shift due to the insertion of one adenine base on a poly(A) zone (Figure 4\u2014figure supplement 3). Since infidelity at poly(A) tracks can rescue pseudogenes in endosymbionts (Tamas et al., 2008), the bioB gene could be thus functional. Partial biosynthesis pathways of four other B vitamins (pantothenic acid: B5; nicotinic acid: B3; pyridoxine: B6; and thiamine: B1), each containing one to four pseudo/missing genes, are also present in the FLE-Hmar genomes, a pattern consistent with other FLE genomes (Figure 4\u2014figure supplement 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig4-v1.jpg)\n\n**Figure 4.:** (A) Biosynthetic pathways for the three key B vitamins (biotin, folic acid, and riboflavin) required for tick nutrition of FLE, Midichloria, and Rickettsia. Newly sequenced FLE, Midichloria, and Rickettsia genomes are indicated by a blue, an orange, and a pink font, respectively. Green squares, functional genes; gray squares, pseudogenes; white squares, missing genes; asterisk, partial gene sequence that do not contain internal codon stop but that are located at the beginning of a contig. (B) Heme biosynthetic pathway of FLE, Midichloria, and Rickettsia. Newly sequenced FLE, Midichloria, and Rickettsia genomes are indicated by a blue, an orange, and a pink font, respectively. Yellow squares, functional genes; gray squares, pseudogenes; white squares, missing genes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Genomes of FLE of H. marginatum are indicated by a blue font. Francisella pathogenic species is indicated by a red font. Red squares, functional genes; gray squares, pseudogenes; white squares, missing genes.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Newly sequenced FLE and Midichloria genomes are indicated by a blue and an orange font, respectively. Black squares, functional genes; gray squares, pseudogenes; white squares, missing genes.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Representative nucleotide and amino sequences are shown for each of the five pseudogenized biotin genes. Green box, premature stop codon; red box, absence of start codon; asterisk, insertion of one adenine base on a poly(A) zone and inducing a frameshift in the bioB coding sequence. Numbers attached to the boxes correspond to the position of the first nucleic acid leading to the premature stop codon and its position in the protein sequence.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Newly sequenced FLE, Midichloria, and Rickettsia genomes are indicated by a blue, an orange, and a pink font, respectively. Green squares, functional genes; gray squares, pseudogenes; white squares, missing genes.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** The phylogenetic trees of (A) ribH (riboflavin pathway), and (B) folD (folate) were inferred using maximum likelihood from amino acid alignments. The numbers on each node represent the support of 1000 bootstrap replicates; only bootstrap values >70% are shown. The scale bar is in units of substitution/site. ribH: 129 amino acids unambiguously aligned, best-fit approximation for the evolutionary model LG+G4; folD: 273 amino acids unambiguously aligned, best-fit approximation for the evolutionary model CPREV+G4+I. Newly sequenced FLE and Midichloria sequences are indicated by a blue and an orange font, respectively, while sequences from other FLE and Midichloria are highlighted in blue and orange, respectively.\n\nThe B-vitamin pathways in Midi-Hmar genomes are similar to those of M. mitochondrii. A complete pathway of biotin was consistently recovered in Midichloria genomes (Figure 4A). For folate, five of the six biosynthesis genes (folE, folB, folKP, folC, and folD) were present but the sixth gene, folA (encoding for a dihydrofolate reductase), was not. However, we detected an alternative dihydrofolate reductase gene, folM (also known as ydgB), that was shown in other bacteria to provide the same metabolic function as folA (Giladi et al., 2003) suggesting that the folate pathway is functional in Midi-Hmar genomes. Only partial pathways were detected for riboflavin and pantothenic acid with three and four missing genes, respectively (Figure 4A and Figure 4\u2014figure supplement 4).\n\nNo B vitamin pathway seems complete in the RAES-Hmar genomes. In the RAES-Hmar-IT genome, partial pathways of biotin and folate were detected with each three missing genes (Figure 4A). For pantothenic acid, only one of the five biosynthesis genes is present (Figure 4\u2014figure supplement 4). No genes for other B vitamin pathways were found in the RAES-Hmar-IT genome. No additional B vitamin gene was observed in the other Rickettsia genome, RAES-Hmar-IL, which is incomplete. There is thus no obvious evidence that presume that RAES-Hmar is B-vitamin provisioning endosymbionts in H. marginatum.\n\nWe further searched for B vitamin genes of other origins than FLE, Midichloria, and Rickettsia genomes in tick metagenomes. In the Hmar-ES and Hmar-IL metagenomes (obtained from ovary samples), we found no significant hits, indicating that neither an additional B vitamin provisioning microorganism was present, nor did the tick genome itself encodes B vitamin pathways. In the Hmar-IT metagenome (obtained from a whole tick), we found four biotin genes (bioA, bioD, bioF, and bioB) in low abundance contigs of Staphylococcus bacteria. Previous studies report the presence of Staphylococcus, a common skin-associated bacteria, on tick exoskeletons and midguts and hypothesize this to be due to contamination, or acquisition during feeding (Greay et al., 2018).\n\nTicks differ from other eukaryotes in that they lack most of the genes encoding proteins required to produce and degrade heme (Gulia-Nuss, 2016; Jia et al., 2020). We thus searched for relevant pathways in the symbiont genomes and found that the FLE-Hmar and Midi-Hmar genomes contain genes involved in heme and iron homeostasis. The heme biosynthetic pathway was consistently detected, as well as a gene encoding heme oxygenase that catalyzes the degradation of heme and the subsequent release of iron (Figure 4B). In these genomes, we detected similar genetic patterns as those observed in the other FLE and Midichloria genomes. However, the heme pathway is partially degraded in FLE-Hmar genomes since their hemN gene is pseudogenized, a pattern not observed in other FLE genomes, suggesting an early stage of degradation for the heme pathway. This gene is present and not pseudogenized in the Midi-Hmar genomes (Figure 4B), suggesting these symbionts may compensate for the FLE heme pathway. In addition, three other genes, hemL, hemY, and hemG were not found in Midichloria genomes, but were present in FLE genomes (Figure 4B). As a result, a combination of FLE and Midichloria genes may be required to obtain a complete heme pathway.\n\n### Phylogenetic origins of B vitamin biosynthetic pathways\n\nOur analysis shows that the B vitamin biosynthesis genes in the FLE-Hmar genomes have all been vertically inherited from a Francisella ancestor as their B vitamin genes are always more closely related to Francisella orthologous genes than to genes of more distantly related bacteria (examples are shown in Figure 4\u2014figure supplement 5A-B). Similarly, folate and riboflavin biosynthesis genes in the Midi-Hmar genomes are of Midichloria origin as these genes are more closely related to orthologous genes present in M. mitochondrii and other members of the Midichloriaceae family than to genes of other bacteria (Figure 4\u2014figure supplement 5A-B).\n\nBy contrast, the six biotin genes present in the Midi-Hmar genomes did not originate from the Midichloriaceae family, but from an exogenous origin. The biotin synthesis genes bioD, bioC, bioH, bioF, and bioB formed a compact operon in the Midi-Hmar genomes while the bioA gene is more distantly located along the bacterial chromosome (Figure 5). A similar operon structure is also present on the M. mitochondrii genome. In contrast, an arrangement in which the bioA is gene physically associated with the remainder of the biosynthetic operon was identified on the genomes of multiple intracellular bacteria that are all distantly related to Midichloria, including the Cardinium endosymbionts (Bacteroidetes: Flexibacteraceae) of parasitoid wasps and leaf-hoppers; the Wolbachia endosymbionts (Alphaproteobacteria: Anaplasmataceae) of bed bugs, bees, planthoppers, and fleas; the Legionella endosymbiont (Gammaproteobacteria: Legionellaceae) of the rodent lice; Rickettsia buchneri (Alphaproteobacteria: Rickettsiaceae) symbiont of the blacklegged tick Ixodes scapularis; and diverse intracellular pathogens of vertebrates, such as Lawsonia (Deltaproteobacteria: Desulfovibrionaceae) and Neorickettsia (Alphaproteobacteria: Anaplasmataceae) (Figure 5 and Supplementary file 1c). In most cases, the biotin genes form a compact and streamlined operon of 5\u20137 kb without major structural variation among bacteria. Phylogenetic analyses of the six biotin synthesis genes consistently exhibited similar evolutionary patterns (Figure 5). These patterns suggest that the biotin synthesis genes were acquired as a whole operon by an ancestor of Midichloria from an unrelated intracellular bacterium. In some cases, this streamlined biotin operon is also associated with nutritional symbionts of obligate blood feeders, such as Wolbachia of bedbugs, Legionella of rodent lice, and R. buchneri in the blacklegged tick, I. scapularis (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig5-v1.jpg)\n\n**Figure 5.:** The phylogenetic tree of the streamlined biotin operon (left) was inferred using maximum likelihood (ML) from a concatenated alignment of the six genes composing the biotin biosynthetic pathway (1493 amino acids; best-fit approximation for the evolutionary model: CPREV+G4+I). The numbers on each node represent the support of 1000 bootstrap replicates; only bootstrap values >70% are shown. The scale bar is in units of substitution/site. Sequences from newly sequenced Midichloria genomes are indicated by an orange font. Structure of the streamlined biotin operon (middle) is represented by arrows in which each colored arrow corresponds to an intact gene and its direction. A discontinuous line corresponds to genes encoding on two separated contigs. The bacterial phylogenetic tree (right) was inferred using ML from an alignment of 16S rDNA sequences (1362 bp unambiguously aligned; best-fit approximation for the evolutionary model: GTR+G+I). The numbers on each node represent the support of 1000 bootstrap replicates; only bootstrap values >70% are shown. The scale bar is in units of substitution/site. Sequences from Midichloria of Hyalomma marginatum are indicated by an orange font.\n\n### Co-infections of nutritional endosymbionts in tick ovaries\n\nWe next assessed the abundance of FLE and Midichloria in H. marginatum ovaries, which are the key organ where vertical transmission of nutritional symbionts to developing oocytes occurs (Azagi et al., 2017). Real-time qPCR assays on 10 field H. marginatum adult females indicated that FLE and Midichloria are both abundant in tick ovaries, with FLE and Midichloria detected in 10 and 9 ovarian samples, respectively. High densities were always observed for FLE (686.09\u00b1206.89 FLE rpoB gene copies per tick cal gene copies) and for Midichloria (88.72\u00b128.41 Midichloria gyrB gene copies per tick cal gene copies) (Figure 6A). FLE were consistently most abundant with densities 5.8\u201321.4\u00d7 higher than Midichloria densities (paired t-test, p=0.013; one outlier was removed from analysis, n=8). The FLE and Midichloria densities covaried positively in individual ticks (\u03c72=23.937, p=0.003; Figure 6B). FLE and Midichloria densities are provided in Figure 6\u2014source data 1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72747/elife-72747-fig6-v1.jpg)\n\n**Figure 6.:** (A) Representation and statistical comparison of FLE and Midichloria densities. (B) FLE density as a function of Midichloria density in H. marginatum ovaries. Gray area represents 95% confidence interval.\n\n### Evolutionary history of endosymbiosis in the Hyalomma genus\n\nWe further examined the evolutionary history of Hyalomma species and their associations with FLE and Midichloria through a bibliographic survey. Out of 10 Hyalomma species with sufficient published data, all were found infected by FLE, and 9 by Midichloria (Supplementary file 1d). We next reconstructed Hyalomma phylogeny using mitochondrial DNA sequences of the cytochrome c oxidase I (cox1) gene available on Genbank (Figure 1\u2014figure supplement 2). Mapping of FLE and Midichloria onto the Hyalomma phylogenetic tree showed that co-infection by FLE and Midichloria is widespread across all Hyalomma lineages (Figure 1\u2014figure supplement 3). However, FLE and Midichloria co-infection was not detected in one species, H. asiaticum, nested within the Hyalomma phylogeny among co-infected species.\n\n## Discussion\n\nIn this study, we show that the tick H. marginatum is a complex symbiotic system, combining genes of diverse phylogenetic origins to generate nutritional adaptations to obligate hematophagy. This tick harbors a microbiome functionally analogous to those observed in other tick species, dominated by intracellular bacterial symbionts producing the core set of B vitamins (biotin, riboflavin, and folate) essential for tick growth and survival. However, while in other tick species, as in other obligate blood feeders, production of all three core B vitamins is performed by a single nutritional symbiont (Binetruy et al., 2020; Duron et al., 2017; Duron and Gottlieb, 2020), H. marginatum harbors two bacterial partners whose core B vitamins biosynthetic capacities depend on a combination of genes, with indigenous and exogenous phylogenetic origins. This multi-partner nutritional symbiosis is stably maintained at least at the tick species level, as supported by our founding of genetically similar FLE and Midichloria present in H. marginatum populations from geographically distant regions.\n\nGenome reconstructions confirmed the key role of symbionts in H. marginatum nutrition, but contrary to other tick species, no single symbiont does compensate for all nutritional needs. The FLE-Hmar genomes contain the genes to synthesize folate and riboflavin but its biotin synthesis pathway is degraded, and thus non-functional. Genome reduction is a conserved trait in all FLEs, but this process has extended in the FLE of H. marginatum, with an additional loss of genes in most COG functional categories. This process could have been triggered by the pseudogenization of the mismatch repair system (mutSL), leaving the FLE of H. marginatum with only one DNA repair system, nucleotide excision repair (uvrABCD). Absence of the mutSL system, coupled with strict clonality and a small population size during transovarial transmission, have probably led the FLE- Hmar genomes to accumulate deleterious mutations, that resulted in maladaptation, and ultimately limited their beneficial contributions to ticks.\n\nIn the context of FLE genome degradation, co-infection with Midichloria prevents the breakdown and collapse of nutritional symbiosis in H. marginatum; that is, the Midichloria genome contains an intact biotin biosynthesis operon, and thus compensates for genome decay of FLE. Inversely, Midichloria has only partial pathways for riboflavin and folate and hence cannot meet the nutritional needs of H. marginatum for these B vitamins. Consequently, the co-infection of FLE with Midichloria forms a cooperative system essential for the nutritional symbiosis in H. marginatum. In addition, complementary heme synthesis genes are present in the FLE and Midichloria genomes, and these symbionts may be an additional source of heme, perhaps conferring a fitness advantage to H. marginatum during periods of starvation. In animals, heme is essential for the function of all aerobic cells, playing an important role in controlling protein synthesis and cell differentiation. Complete biosynthetic heme gene pathways exist in most animals, but not in ticks that need an exogenous source of heme (Gulia-Nuss, 2016; Jia et al., 2020). Vertebrate blood is usually considered to be their unique source for this essential cofactor (Perner et al., 2016), however ticks spend most of their life off host, and thus the presence of heme genes in FLE and Midichloria genomes may also indicate symbiont provisioning of heme in H. marginatum.\n\nThe co-localization of FLE and Midichloria in tick ovaries suggests that vertical transmission has led to their stable co-inheritance through tick generations, linking their evolutionary fate, as observed in other symbiotic systems of arthropods (McCutcheon et al., 2019; Vautrin and Vavre, 2009). This co-transmission fidelity creates the conditions under which cooperative interactions can emerge. The stable coexistence of FLE and Midichloria genomes makes various genes redundant, as we observed for B vitamin and heme synthesis pathways. Furthermore, the covariance of FLE and Midichloria densities in ticks is positive, suggesting that these two symbionts are not in direct competition but rather cooperative. However, FLE is about 100-times more abundant than Midichloria, which can be suggestive of competition. Indeed, negative interactions among these endosymbionts can occur because their tick host provides a limited amount of resources and space. Under this hypothesis, the density of Midichloria can be depressed by FLE, which could be more competitive. Regardless of the issue of this interaction, FLE and Midichloria depend on each other since their host tick would not survive without their combined production of B vitamins. The asymmetrical abundance of FLE and Midichloria may have further implications in nutritional endosymbiosis. First, it suggests that, at lower abundance, Midichloria can fully bridge the biotin requirements for H. marginatum. Second, it could imply that biotin (produced by Midichloria) is required at much lower abundance than riboflavin (FLE) and folate (FLE and Midichloria), or that Midichloria could over-express its biotin genes, possibly thanks to the streamlined structure of the biotin operon, and finally produce biotin at the same abundance than riboflavin and folate.\n\nWhile the nutritional association of FLE with Hyalomma species has persisted for millions of years (Azagi et al., 2017), the nutritional role of Midichloria seems more recent in this tick genus. Co-infection with Midichloria was reported in at least nine Hyalomma species (Supplementary file 1d), but in most species, such as H. excavatum and H. impeltatum (Azagi et al., 2017; Selmi et al., 2019), Midichloria is present at much lower frequencies than would be expected for an obligate nutritional mutualist, suggesting that it is instead a facultative (i.e., not essential) association. Interestingly, the Hyalomma species apparently devoid of Midichloria, H. asiaticum, harbors an FLE with intact biotin, folate, and riboflavin synthesis pathways (Buysse and Duron, 2021). In H. marginatum, the decay of the FLE genome may have been accelerated by the presence of Midichloria and the redundancy of biotin biosynthesis, a process also reported in sap-feeding insects (Husnik and McCutcheon, 2016; Manzano-Mar\u0131n et al., 2020). While it is clear that two events have led to the current status (loss of biotin genes and acquisition of Midichloria), the order by which these happened is unclear. Midichloria could have rescued a decaying symbiosis, or could have led, with its entrance in the system, to relaxation of selective constraints on FLE. Based on the common presence of Midichloria at lower frequencies in other Hyalomma species, a scenario of gradual parallel occurrence of these two events cannot be ruled out.\n\nOur analyses also indicated that the biotin operon detected in the Midichloria of H. marginatum has an exogenous origin, being acquired following an ancient lateral gene transfer pre-dating the divergence between the Midichloria of H. marginatum and the one of I. ricinus. Accumulating genomic sequences indicate that this streamlined biotin operon (denoted in some studies as the Biotin synthesis Operon of Obligate intracellular Microbes\u2014BOOM Driscoll et al., 2020) has experienced transfers between distantly related endosymbionts inhabiting arthropod cells including Wolbachia (Driscoll et al., 2020; Gerth and Bleidorn, 2016; Ju et al., 2020; Nikoh et al., 2014), Rickettsia (Gillespie et al., 2012), Cardinium (Penz et al., 2012), and Legionella (R\u00edhov\u00e1 et al., 2017). Remarkably, the invasive nature of this streamlined biotin operon has contributed not only to the emergence of novel nutritional symbioses in H. marginatum with Midichloria, but also in other blood feeders, such as bedbugs with Wolbachia (Nikoh et al., 2014) and rodent lice with Legionella (R\u00edhov\u00e1 et al., 2017), or in sap feeders as white flies with Cardinium (Santos-Garcia et al., 2014) and planthoppers with Wolbachia (Ju et al., 2020). Until recently, lateral gene transfer was thought to be rare in intracellular symbionts, as they reside in confined and isolated environments. However, co-infections of unrelated endosymbionts within the same host cell have created freely recombining intracellular bacterial communities, a unique environment previously defined as the \u2018intracellular arena\u2019 (Kent and Bordenstein, 2010). The detection of the streamlined biotin operon in Wolbachia, Rickettsia, and Cardinium\u2014three of the most common intracellular symbionts of arthropods (Duron et al., 2008)\u2014corroborates the role of such \u2018intracellular arenas\u2019 in the evolutionary dynamics of nutritional symbioses, especially as the biotin operon can be found on plasmids (Gillespie et al., 2012).\n\nThe macroevolutionary and ecological consequences of acquiring nutritional symbionts are immense, ticks would simply not exist as strict blood feeders without such mutualistic interactions (Duron and Gottlieb, 2020). Our investigations corroborate that nutritional symbionts of ticks have all converged towards an analogous process of B vitamin provisioning. While past investigations showed that this evolutionary convergence consists in severe degeneration of symbiont genomes accompanied by preservation of biotin, folate, and riboflavin biosynthesis pathways (Buysse and Duron, 2021; Duron and Gottlieb, 2020), nutritional endosymbiosis in H. marginatum is influenced by a more complex web of interactions resulting in a dynamic mosaic of symbiont combinations and offering novel evolutionary possibilities.\n\n## Materials and methods\n\n### Tick collection, DNA extraction, and molecular screening\n\nAdult females of H. marginatum were collected from domestic animals from three geographical regions (Italy, Spain, and Israel) (Figure 1). Whole body of one female from Italy was processed for metagenome sequencing, while ovaries from females collected in Spain (n=10) and Israel (n=10) were used for metagenome sequencing (and for qPCR in the case of samples from Spain). For each sample, total DNA was extracted using either the DNeasy Blood and Tissue Kit (QIAGEN) or the NucleoSpin Plant II Kit (Macherey-Nagel).\n\nA molecular screening was performed by qPCR (iQ5 system, Bio-Rad) on Spanish samples to evaluate the bacterial load of FLE and Midichloria symbionts in ovaries. For each specimen, three SYBR Green-based qPCR (Bio-Rad) assays were performed: (i) a specific amplification for the H. marginatum cal gene, (ii) a specific amplification for the FLE rpoB gene, and (iii) a specific amplification for the Midichloria gyrB gene. Thermal protocols and primers are listed in Supplementary file 1e.\n\n### Genome sequencing, assembly, and annotation\n\nMetagenomes were sequenced on Illumina HiSeq 2500, after a library preparation performed with Nextera XT. For the Italian and the Spanish samples, the raw paired-end reads quality was evaluated with FastQC (Andrews, 2010). Paired-end reads were trimmed via Trimmomatic (v0.40) (Bolger et al., 2014) and then assembled using SPAdes (v3.10.0) Bankevich et al., 2012 following the Blobology pipeline (Kumar et al., 2013) (thus separating reads according to G+C content, coverage, and taxonomic annotation). Discarding of contaminating sequences and refining of the assemblies were performed manually through the analysis of the assemblies\u2019 graphs with Bandage (v0.8.1) (Wick et al., 2015). Bacterial reads were separated from the tick reads, allowing the assembling of different bacterial genomes (\u2018filtered\u2019 assemblies). For the Israeli sample, reads were trimmed using Cutadapt (v1.13) (Martin, 2011) and contaminants\u2019 reads were removed through a mapping against Coliphage phi-X174 (GenBank: NC_001422) and Staphylococcus aureus (NC_010079) genomes with BWA (v0.7.17-r1188) (option mem) and SAMtools (v1.10) (Li and Durbin, 2009). Remaining reads were further assembled using SPAdes (v3.11.1) (Bankevich et al., 2012) with default parameters. These \u2018raw\u2019 assembled scaffolds were compared to different reference genomes separately (FLE of O. moubata FLEOm, M. mitochondrii, and R. aeschlimannii; Supplementary file 1b) to discard unspecific scaffolds using RaGOO (v1.02) (Alonge et al., 2019), and, for each reference genome separately, the assignation of the remaining scaffolds (\u2018filtered\u2019 assembly) was confirmed using the online NCBI BLAST tool (https://blast.ncbi.nlm.nih.gov/Blast.cgi). The quality assessment and the completeness of the \u2018filtered\u2019 assemblies from all H. marginatum metagenomes were estimated using QUAST (v4.6.3) (Gurevich et al., 2013) and miComplete (v1.1.1) (Hugoson et al., 2020) with the --hmms Bact105 setting. The newly obtained genomes were annotated using Prokka (v1.13.1) (Seemann, 2014) with default parameters. The new Midichloria genomes were annotated using a manually revised annotation of M. mitochondrii (Supplementary file 1b) as a reference.\n\n### Genomic content, structure, and metabolic pathways analyses\n\nThe FLE and Midichloria whole-genome alignments were obtained separately using Mauve (Darling et al., 2004). Previously, contigs from newly obtained genomes were reordered with Mauve. Graphical representations of newly sequenced genomes were produced using CGView (v1.5) (Stothard and Wishart, 2005). Genes involved in biosynthesis pathways (B vitamins and heme), FPI, and mismatch repair systems (mutSL and uvrABCD) were retrieved using BLASTn, BLASTp, and tBLASTx on both newly obtained and reference FLE and Midichloria genomes.\n\nTo identify mobile elements, we used ISEScan (Xie and Tang, 2017) to predict insertion sequences and PhySpy (Akhter et al., 2012) for prophages detection. Pseudogenes prediction was performed using Pseudofinder (version downloaded in date April 1, 2020) (Syberg-Olsen et al., 2020) on each genome, including newly obtained and reference genomes of FLE and Midichloria (Supplementary file 1b). The FLE and Midichloria data sets were filtered excluding pseudogenes from the subsequent analyses. Clusters of orthologous groups of proteins (COGs) were predicted using the NCBI pipeline (Galperin et al., 2015) and COGs presence was then plotted with an in-house R script. Then, two different data sets were created: (i) a FLE data set including the three newly sequenced FLE-Hmar genomes and other published FLE genomes; and (ii) a Midichloria data set including the three newly sequenced Midi-Hmar genomes and M. mitochondrii. For each data set, SCOs were identified using OrthoFinder (v2.3.12) (Emms and Kelly, 2019), then SCO lists were retrieved on a R environment (v3.6.2) to build Venn diagrams using the \u2018VennDiagram\u2019 R package (Chen and Boutros, 2011).\n\nTo check if whether B-vitamin biosynthesis genes of other origin than FLE, Midichloria, and Rickettsia, we used the following procedure: we predicted the genes present in the preliminary assemblies of the three tick metagenomes using prodigal (using the setting \u2018-p meta\u2019) and annotated them with GhostKOALA (Kanehisa et al., 2016). Indeed, for biotin, we checked for the presence of the bioA, bioD, bioC, bioH, bioF, and bioB genes searching for \u2018K00833, K01935, K02169, K02170, K00652, and K01012\u2019 sequences in the annotations, setting a cutoff to exclude contigs shorter than 500 bp or with a kmer coverage below 4. The hits above cutoff were manually examined with BLAST for functional and taxonomic classification.\n\n### Phylogenomics\n\nThe FLE, Midichloria, and Rickettsia data sets were filtered excluding the pseudogene sequences and were then used for the phylogenetic analyses. For each symbiont data set, SCOs were identified using OrthoFinder (v2.3.12) (Emms and Kelly, 2019) and then aligned with MUSCLE (v3.8.31) (Edgar, 2004). Poorly aligned positions and divergent regions were removed by Gblocks (v0.91b) (Castresana, 2000) prior to concatenation of individual alignments using an in-house script. Finally, the most suitable evolutionary model was determined using modeltest-ng (v0.1.5) (Darriba et al., 2020) according to the Akaike information criterion and maximum likelihood (ML) trees were inferred using RAxML (v8.2.9) (Stamatakis, 2014) with 1000 bootstrap replicates.\n\n### Biotin operon phylogeny and structure\n\nNucleic and protein sequences of the six genes of the biotin biosynthesis pathway were retrieved using BLASTn, BLASTp, and tBLASTx on all Midichloria genomes. Sequences from described streamlined biotin operons and sequences from biotin genes from other symbionts (retrieved from GenBank) were included in the data set (details in Supplementary file 1c). All protein sequences of the six biotin genes were manually concatenated and aligned with MAFFT (v7.450) (Katoh et al., 2002) and ambiguous positions were removed using trimAl (v1.2rev59) (Capella-Guti\u00e9rrez et al., 2009). The appropriate substitution model, and then ML-tree, were determined as described above. Meanwhile, 16S rRNA sequences from all organisms included in this data set were retrieved from GenBank and aligned with MEGA software. The Gblocks program with default parameters was used to obtain non-ambiguous sequence alignments. Phylogenetic analyses were performed with MEGA software, that is, determination of the appropriate substitution model using Akaike information criterion, ML-tree inference. Clade robustness was assessed by bootstrap analysis using 1000 replicates.\n\nContigs carrying the streamlined biotin operon were retrieved from newly obtained and reference genomes of different intracellular bacteria. Contigs were annotated using Prokka (v1.13.1) (Seemann, 2014) with default parameters. Prokka GenBank outputs were imported in R (v3.6.2) and analyzed using the \u2018genoplotR\u2019 R package (Guy, 2010). Sequences of ribH and folD genes from bacteria carrying the streamlined biotin operon and from other bacteria were secondarily separately analyzed. Phylogenetic analyses on these two genes were performed as described above for biotin genes.\n\n### Bibliographic survey and phylogeny of Hyalomma\n\nTo access the associations between Hyalomma species with FLE and Midichloria, we performed an extensive bibliographic survey of published studies. For Hyalomma species for which presence/absence of FLE and Midichloria is documented, we retrieved cytochrome c oxidase I (cox1) gene sequences from GenBank and further performed an ML phylogenetic analysis with MEGA software as described above.\n\n### Statistical analyses\n\nStatistical analyses were carried out using the R statistical package (v3.6.2) and the \u2018lme4\u2019 R package (Bates et al., 2015). The FLE load was analyzed using linear mixed-effects models on a data set containing loads measured in ovaries from adult engorged ticks. The normality of the data distribution was tested through a Shapiro-Wilk test with a 95% confidence interval. Outliers were removed from data sets. To build models, Midichloria load was fitted as a fixed explanatory variable. The best-fitted model was determined with the following procedure: the maximal model, including all higher-order interactions, was simplified by sequentially eliminating interactions and non-significant terms to establish a minimal model. A likelihood ratio test (using a chi-square distribution and a p-value cutoff of 0.05) was performed to establish the difference between sequential models. The comparison between the densities of FLE and Midichloria of H. marginatum was tested by a paired t-test.\n\n### Data and code availability\n\nThe bacterial genomes obtained in this study were deposited in European Nucleotide Archive (ENA) under the project PRJEB44779 and accession numbers GCA_910592745 (FLE-Hmar-ES), GCA_910592815 (FLE-Hmar-IL), GCA_910592705 (FLE-Hmar-IT), GCA_910592695 (Midi-Hmar-ES), GCA_910592725 (Midi-Hmar-IL), GCA_910592865 (Midi-Hmar-IT), and GCA_910592765 (RAES-Hmar-IT). Metagenome reads were deposited in ENA under accession numbers ERR7255744 (Hmar-ES), ERR7255745 (Hmar-IL), and ERR7255743 (Hmar-IT). Command lines used for the different genomic analyses are available on GitHub (https://github.com/mariebuysse/Hmar-2021; Buysse et al., 2021).\n",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "07a797a1-2925-44d5-af5c-07af0b2821f9",
+      "submission_id": "f49a5a2f-26a8-4bfb-8490-f0cc015c0658",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bruno Lema\u00eetre, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72747.sa0](https://doi.org/10.7554/eLife.72747.sa0)\n\nThis manuscript analyses endosymbionts harbored by field collected ticks in Spain, Italy and Israel. Using metagenomics, the authors infer the evolutionary history of a newly discovered tripartite interaction between Hyalomma marginatum (tick), Franscisella-like endosymbiont (FLE) (ancestral co-obligate endosymbiont) and a Midichloria symbiont (more recent co-obligate endosymbiont). This is the first description of such co-obligate symbiotic association in ticks, which usually harbor only one obligate endosymbiont.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Bruno Lema\u00eetre, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72747.sa1](https://doi.org/10.7554/eLife.72747.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A dual endosymbiosis drives nutritional adaptation to hematophagy in the invasive tick Hyalomma marginatum\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Bruno Lema\u00eetre as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Sukanya Narasimhan (Reviewer #2); Alejandro Manzano-Marin (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThis manuscript analyses endosymbionts harbored by field collected ticks in Spain, Italy and Israel. Using metagenomics, the authors infer the evolutionary history of a newly discovered tripartite interaction between Hyalomma marginatum (tick), Franscisella-like endosymbiont (FLE) (ancestral co-obligate endosymbiont) and a Midichloria symbiont (more recent co-obligate endosymbiont). This is the first description of such co-obligate symbiotic association in ticks, which usually harbor only one obligate endosymbiont.\n\nGenome assembly and analysis reveal a pseudogenization of FLE genes of the biotin-synthesis operon while the Midichloria operon is functional. Furthermore, the authors provide an analysis of the heme biosynthetic pathway that also probably requires the participation of both endosymbiont genomes to function properly. Authors interpret and discuss these observations in the light of operon and bacterial phylogeny and propose that Midichloria could have been selected as co-obligate by ticks to provision biotin (and heme), as a complement for a degenerating ancestral obligate symbiont.\n\nThe main weakness is that the conclusions are predictions based on the the metagenomic analysis of the endosymbiont genomes. Experimental corroboration must await further technological advancements to manipulate these endosymbionts.\n\nEssential revisions\n\n1) One of my major concerns of these paper is the data behind the conclusion of the co-obligate status of these two symbionts. I will detail them next:\n\nRole of additional symbionts: The authors state they found additional symbionts such as Rickettsia and actually assembled one draft genome for this bacteria. While I do not suspect this is probably the nutritional symbiont (these bacteria generally lack some essential nutrient pathways), the authors do not at least mention whether or not they found the \"degraded\" vitamin pathways in the Rickettsia genome. It seems the authors decided a priori this was not a nutritional endosymbiont.\n\nRequest: Could the authors at least mention whether or not they found the \"degraded\" vitamin pathways in the Rickettsia genome? It seems from the manuscript no further consideration of this symbiont as a vitamin provider was done.\n\n2) Localisation and distribution of other symbionts: The authors make the point in lines 196-204 that the different starting samples from the Italian (whole female), Spanish (ovaries), and Israeli (ovaries) populations. While I would also expect to find the nutritional symbionts (mostly) present in the ovaries, other organs were not screened for symbionts (e.g. qPCR or FISH microscopy). How are the Rickettsia, Francisella, and Midichloria bacteria distributed? In general terms, one would expect nutritional symbionts to be localised in very specific tissues and not showing a widespread distribution across the host. However, the authors did not do different organ-specific screenings of the symbionts, which hampers the interpretation of the presence/absence of the Francisella/Midichloria symbionts in ovaries.\n\nRequest: In order to assess the distribution and possible specific localisation of Midichloria in the tick body,other organs need to be screened for symbionts (e.g. qPCR or FISH microscopy). If finding Midichloria and Francisella in the ovaries is to be used as further evidence for the nature of the Midichloria symbiont, please provide further evidence for the absence or presence of these symbionts in other tick organs.\n\n3) Pseudogenisation in B vitamin genes: While missing genes are not necessarily a good indicator or lack of them in a genome, namely when this genome is fragmented, pseudogenes are a very good indicator of this function not being coded for in the draft genome. In line 218, the authors state that the pseudogenes of bioD, bioC, bioF, and bioB are inactivated by a frameshift. My question is which kind of frameshift? This is because as it has been demonstrated in Tamas et al., 2008 (10.1073/pnas.0806554105), where the authors elegantly showed that infidelity at poly(A) tracks rescues pseudogenes in endosymbionts. Same holds true for the hem genes. Are they also pseudogenised by a frameshift? I cannot further assess this myself due to the unavailability of the genomes. An additional comment comes from the bioA gene missing in Francisella or Riboflavin in Midichloria. While these genes are not present in other tick genomes, the authors made no effort in locating them in H. marginatum (e.g. PCR or searches in the host data generated from sequencing). The possibility of these genes being in the host cannot be discarded, especially in relation to my following point regarding the \"bibliographic survey\".\n\nRequest: Since the authors did not make the genomes available for review, I would kindly ask that they either release them so that the reviewers can assess them, or at the minimum provide links to download them. Given that the authors have metagenomic data of three populations of the tick species, why was no effort put toward identifying these genes in the tick genome (through PCR or by analysing the rest of the scaffolds of the metagenomic assembly)? While other tick species do not have these genes, the particular tick species referred to in this work has not been analysed. In addition, please provide a supplementary figure showing the arrangement of the mentioned genes/pseudogenes in Figure 4. This gives a better impression of any other architectural or other changes in the arrangement or disposition of these genes/pseudogenes.\n\n4. Bibliographic survey: The authors make reference to a bibliographic survey performed to assess the co-existence of Francisella and Midichloria in other studies. Namely, the authors state that \"Of 10 Hyalomma species with sufficient published data, all were found infected by FLE, and 9 by Midichloria (Table S4)\" and that \"Mapping of FLE and Midichloria onto the Hyalomma phylogenetic tree showed that co-infection by FLE and Midichloria is widespread across all Hyalomma lineages\". Looking at Table S4, I would argue in fact that in most studies, the authors only report on one of the symbionts, and in most of those where both symbionts where screened for, only one was found (e.g. Azagi et al., 2017, Buysse and Duron 2021, Ravi et al., 2018, Elbir et al., 2019, Alreshidi et al., 2020, Duron et al., 2017). Therefore, I would argue that the bibliographic survey strongly supports the view that only one symbiont tends to be present whenever this species is analysed. Therefore, I find Figure S7 somewhat deceiving when matching it up with Table S4, given that it gives the impression that the bibliographic survey found that these two symbiont have always been found co-existing in H. marginatum, when in fact they have very rarely been found co-existing, but rather they have been found independently on different studies, with some suggesting only one of the two symbionts is housed by H. marginatum.\n",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cbe2a91f-d194-4597-9259-abb6e9e2c950",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C1",
+      "claim": "Ticks rely on vertebrate blood as their sole food source throughout their development.",
+      "claim_type": "EXPLICIT",
+      "source": "Ticks rely on vertebrate blood as their sole food source throughout their development, although it is nutritionally unbalanced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction section of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "e7eba4bc-1bc0-46b4-b5e7-4b30ca4ea4e8",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C2",
+      "claim": "Blood contains high levels of proteins, iron, and salts, but low levels of carbohydrates, lipids, and vitamins.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood contains high levels of proteins, iron, and salts, but low levels of carbohydrates, lipids, and vitamins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about blood composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "28cb6a6f-675b-4da7-81e6-85f337d609a9",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C3",
+      "claim": "Tick genomes do not contain genes for synthesis of some essential vitamins.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, tick genomes do not contain genes for synthesis of some essential vitamins, thus, vitamin-provisioning pathways have indirectly arisen from symbiotic associations with transovarially transmitted intracellular bacteria (Ben-Yosef et al., 2020; Duron et al., 2018; Duron and Gottlieb, 2020; Gerhart et al., 2016; Gottlieb et al., 2015; Guizzo et al., 2017; Smith et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "1b35f9de-af4a-4c4e-a94f-b41c3cafe3a9",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C4",
+      "claim": "Most tick species typically harbor a single lineage of nutritional symbiont.",
+      "claim_type": "EXPLICIT",
+      "source": "Most tick species typically harbor a single lineage of nutritional symbiont, but multiple symbiont lineages exist in different tick species (Duron and Gottlieb, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "62fcc451-e049-4317-be2c-c7a3761616d6",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C5",
+      "claim": "The most common nutritional symbiont lineages in ticks belong to the Coxiella-like endosymbiont group and to the Francisella-like endosymbiont group.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common lineages belong to the Coxiella-like endosymbiont group and to the Francisella-like endosymbiont group (CLE and FLE, hereafter) (Azagi et al., 2017; Binetruy et al., 2020; Duron et al., 2017; Machado-Ferreira et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "5848b7f4-a6ec-4f34-a6e0-db05946843f0",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C6",
+      "claim": "Ticks deprived of their nutritional symbionts show a complete stop of growth and moulting, as well as lethal physical abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Once deprived of their nutritional symbionts, ticks show a complete stop of growth and moulting, as well as lethal physical abnormalities (Ben-Yosef et al., 2020; Duron et al., 2018; Guizzo et al., 2017; Zhong et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "733f9f4c-0854-4598-85f8-dec5b4cd1918",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C7",
+      "claim": "Lethal physical abnormalities in ticks deprived of nutritional symbionts can be fully restored with an artificial supplement of B vitamins.",
+      "claim_type": "EXPLICIT",
+      "source": "Once deprived of their nutritional symbionts, ticks show a complete stop of growth and moulting, as well as lethal physical abnormalities (Ben-Yosef et al., 2020; Duron et al., 2018; Guizzo et al., 2017; Zhong et al., 2007), which can be fully restored with an artificial supplement of B vitamins (Duron et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "235266f6-e144-42f8-80f7-8199af16b49f",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C8",
+      "claim": "Nutritional symbionts of ticks have been found primarily in two tick organs, the ovaries and Malpighian tubules.",
+      "claim_type": "EXPLICIT",
+      "source": "They have been found primarily in two tick organs, the ovaries and Malpighian tubules, while other organs have only been found sporadically infected (Buysse et al., 2019; Duron and Gottlieb, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "47df271c-4a73-4ed4-9381-adbd9c3a5c28",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C9",
+      "claim": "Genomes of CLE and FLE consistently contain complete biosynthesis pathways of biotin, riboflavin, and folate.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes of CLE and FLE consistently contain complete biosynthesis pathways of the same three B vitamins: biotin (vitamin B7), riboflavin (B2), and folate (B9) (Duron et al., 2018; Gerhart et al., 2018; Gerhart et al., 2016; Gottlieb et al., 2015; Guizzo et al., 2017; Nardi et al., 2021; Smith et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to genomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "b06ae33c-9ce4-41f8-9280-df9f84ea47db",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C10",
+      "claim": "The genomes of CLE, FLE, and Midichloria underwent massive reduction as observed in other nutritional endosymbionts of arthropods with a specialized diet.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the genomes of CLE, FLE, and Midichloria underwent massive reduction as observed in other nutritional endosymbionts of arthropods with a specialized diet (Duron et al., 2018; Gerhart et al., 2018; Gerhart et al., 2016; Gottlieb et al., 2015; Nardi et al., 2021; Sassera et al., 2011; Smith et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to genomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "dd8e9847-fef8-4ded-83ab-5598a71db521",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C11",
+      "claim": "Hyalomma marginatum is a large tick species that usually feeds on humans and a diversity of mammals and birds in the Mediterranean climatic zone.",
+      "claim_type": "EXPLICIT",
+      "source": "This large tick species usually feeds on humans and a diversity of mammals and birds in the Mediterranean climatic zone but has recently expanded its range to the north, invading Western Europe (Vial et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "de44d06c-34e4-4298-be0b-c3104925c785",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C12",
+      "claim": "Hyalomma marginatum has recently expanded its range to the north, invading Western Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "This large tick species usually feeds on humans and a diversity of mammals and birds in the Mediterranean climatic zone but has recently expanded its range to the north, invading Western Europe (Vial et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "2fe9a004-c24a-437b-a11f-86ea7bfae309",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C13",
+      "claim": "Hyalomma marginatum can transmit Crimean-Congo hemorrhagic fever virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyalomma marginatum can transmit Crimean-Congo hemorrhagic fever virus, an emerging disease affecting humans in the northern Mediterranean Basin, as well as protozoan parasites and intracellular bacterial pathogens such as Rickettsia aeschlimannii (Vial et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "143a3662-d18d-463b-97ec-08a7aa5e2002",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C14",
+      "claim": "Three microbial metagenomes were sequenced from H. marginatum specimens collected in Spain, Italy, and Israel.",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced three microbial metagenomes from H. marginatum specimens collected in Spain (i.e., the Hmar-ES metagenome), Italy (Hmar-IT), and Israel (Hmar-IL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "48baf599-24c7-4d30-a8dc-0a3defe446b7",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C15",
+      "claim": "57,592,510 paired-end reads were obtained from the Hmar-ES metagenome.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained 57,592,510 paired-end reads from the Hmar-ES metagenome, 68,515,944 paired-end reads from Hmar-IT, and 10,807,740 paired-end reads from Hmar-IL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is sequencing data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "3141954b-233c-4fa3-bfcb-33671c9875e7",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C16",
+      "claim": "One FLE genome with >99% estimated completeness was assembled from each metagenome.",
+      "claim_type": "EXPLICIT",
+      "source": "We assembled one FLE genome with >99% estimated completeness from each metagenome (FLE-Hmar-ES, FLE-Hmar-IT, and FLE-Hmar-IL; also designated as FLE-Hmar genomes; Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is assembly data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "834d7d94-66f1-4067-8698-b45b004e5839",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C17",
+      "claim": "One Midichloria genome with >95% estimated completeness was assembled from each metagenome.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we assembled one genome with >95% estimated completeness from each metagenome for the bacterium Midichloria, and thus obtained three additional complete genomes (Midi-Hmar-ES, Midi-Hmar-IT, and Midi-Hmar-IL; also designated as Midi-Hmar genomes; Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is assembly data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "bf999719-fce4-4dde-bf58-1c8d651634d7",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C18",
+      "claim": "R. aeschlimannii was detected in the Hmar-IT and Hmar-IL metagenomes, but not in Hmar-ES.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we detected a third bacterium, the tick-borne pathogen R. aeschlimannii, in the Hmar-IT and Hmar-IL, but not Hmar-ES, metagenomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is detection data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "b11387c3-857c-4ea8-9477-bdb1a79ea625",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C19",
+      "claim": "The three FLE draft genomes are very similar in size (1.51\u20131.536 Mb).",
+      "claim_type": "EXPLICIT",
+      "source": "The assemblies of the three FLE draft genomes (13 contigs for FLE Hmar-IT, 17 for FLE Hmar-ES, and 25 FLE Hmar-IL) were very similar in size (1.51\u20131.536 Mb)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is genomic data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "99b620e1-94c8-4f06-b5a1-b8c98f811afb",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C20",
+      "claim": "The three FLE draft genomes have average G+C content of 31.11\u201331.23%.",
+      "claim_type": "EXPLICIT",
+      "source": "The assemblies of the three FLE draft genomes (13 contigs for FLE Hmar-IT, 17 for FLE Hmar-ES, and 25 FLE Hmar-IL) were very similar in size (1.51\u20131.536 Mb), average G+C content (31.11\u201331.23%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is genomic data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "a129f249-9889-4d01-8464-4e0e364ec065",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C21",
+      "claim": "The three FLE draft genomes contain 937\u2013961 predicted protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The assemblies of the three FLE draft genomes (13 contigs for FLE Hmar-IT, 17 for FLE Hmar-ES, and 25 FLE Hmar-IL) were very similar in size (1.51\u20131.536 Mb), average G+C content (31.11\u201331.23%), number of predicted protein-coding genes (937\u2013961)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is genomic data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "22853d27-9dfc-4bca-bd45-2f1d5a319567",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C22",
+      "claim": "The three FLE draft genomes contain 789\u2013798 pseudogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "The assemblies of the three FLE draft genomes (13 contigs for FLE Hmar-IT, 17 for FLE Hmar-ES, and 25 FLE Hmar-IL) were very similar in size (1.51\u20131.536 Mb), average G+C content (31.11\u201331.23%), number of predicted protein-coding genes (937\u2013961), and protein-coding sequences with inactivating mutations (pseudogenes, 789\u2013798)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is genomic data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "71e7293e-7499-4d1d-a4a7-d176ab1dd57f",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C23",
+      "claim": "FLE-Hmar-ES, FLE-Hmar-IT, and FLE-Hmar-IL cluster together in a robust clade within other FLE of ticks.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenomic analysis based on 436 single-copy orthologs (SCOs) Francisella genes showed that FLE-Hmar-ES, FLE-Hmar-IT, and FLE-Hmar-IL cluster together in a robust clade within other FLE of ticks (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenomic analysis and Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "02814cce-40af-42a4-8b14-7059e6ede9c2",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C24",
+      "claim": "The closest relative of the FLE-Hmar clade is the FLE of Hyalomma asiaticum from China.",
+      "claim_type": "EXPLICIT",
+      "source": "The closest relative of this clade is the FLE of another Hyalomma species, Hyalomma asiaticum from China, while FLEs of other tick genera (Ornithodoros, Argas, and Amblyomma) are more distantly related.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from phylogenomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "8fee70cd-76c9-471f-b25c-d17151b4aa90",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C25",
+      "claim": "The FLE clade is embedded in the Francisella genus and shares a common origin with pathogenic species, including F. tularensis and F. opportunistica.",
+      "claim_type": "EXPLICIT",
+      "source": "The FLE clade is embedded in the Francisella genus and shares a common origin with pathogenic species, including the tularemia agent, F. tularensis, and an opportunistic human pathogen, F. opportunistica (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenomic analysis and Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "80fe913d-195d-40b5-9c5a-10f43e68889d",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C26",
+      "claim": "Pseudogenes are highly abundant in the three genomes of FLE of H. marginatum, compared with other FLE genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, pseudogenes are highly abundant in the three genomes of FLE of H. marginatum, compared with other FLE genomes (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "5c4771db-b5b2-45ac-81c9-84bca626ebf4",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C27",
+      "claim": "Most functional categories are impacted by the advanced pseudogenization process in FLE-Hmar genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, pseudogenes are highly abundant in the three genomes of FLE of H. marginatum, compared with other FLE genomes (Figure 2D), and most functional categories are impacted by this advanced pseudogenization process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from genomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "fccf5b96-0850-4773-b687-21107de62d31",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C28",
+      "claim": "Most genes associated with virulence in pathogenic Francisella species are pseudogenized or completely missing in FLE-Hmar genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the genes associated with virulence in pathogenic Francisella species, including the Francisella pathogenicity island (FPI) and secretion system, are pseudogenized or completely missing in FLE-Hmar genomes, consistent with previous observations in other FLEs (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "70a77c33-b42c-49ec-b5b5-e5803b420720",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C29",
+      "claim": "FLE-Hmar genomes contain fewer genes involved in replication, recombination, and repair than any other FLEs analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, FLE-Hmar genomes contain fewer genes involved in replication, recombination, and repair than any other FLEs analyzed (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "2800b53f-c7cc-470e-9b23-e95c914de68b",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C30",
+      "claim": "The nucleotide excision repair system (uvrABCD) in FLE-Hmar genomes is conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleotide excision repair system (uvrABCD) in FLE-Hmar genomes is conserved; however, the DNA mismatch repair system (mutSL) is fully pseudogenized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "b48a0420-3311-41a8-a969-dc2469e72743",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C31",
+      "claim": "The DNA mismatch repair system (mutSL) is fully pseudogenized in FLE-Hmar genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleotide excision repair system (uvrABCD) in FLE-Hmar genomes is conserved; however, the DNA mismatch repair system (mutSL) is fully pseudogenized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "dc856d7d-180a-45a8-b3ec-ec8b1cd509a8",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C32",
+      "claim": "The Midichloria genomes reach 1.13\u20131.16 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "The Midichloria genomes, Midi-Hmar-ES, Midi-Hmar-IT, and Midi-Hmar-IL, were assembled in 179, 359, and 123 contigs, respectively, and their genomes reach 1.13\u20131.16 Mb",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is genomic data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "14ff2430-9b11-4044-b3de-e59ee42b2524",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C33",
+      "claim": "The Midichloria genomes have G+C content of 35.03\u201335.23%.",
+      "claim_type": "EXPLICIT",
+      "source": "The Midichloria genomes, Midi-Hmar-ES, Midi-Hmar-IT, and Midi-Hmar-IL, were assembled in 179, 359, and 123 contigs, respectively, and their genomes reach 1.13\u20131.16 Mb, with consistent G+C content (35.03\u201335.23%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is genomic data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "32c135f9-c343-4e2a-97e5-4e02fa4dda57",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C34",
+      "claim": "The Midichloria genomes contain 1032\u20131071 predicted protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Midichloria genomes, Midi-Hmar-ES, Midi-Hmar-IT, and Midi-Hmar-IL, were assembled in 179, 359, and 123 contigs, respectively, and their genomes reach 1.13\u20131.16 Mb, with consistent G+C content (35.03\u201335.23%), number of predicted protein-coding genes (1032\u20131071)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is genomic data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "4d744ed9-7649-4d23-b741-92a91c0f9365",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C35",
+      "claim": "The Midichloria genomes contain 190\u2013192 pseudogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Midichloria genomes, Midi-Hmar-ES, Midi-Hmar-IT, and Midi-Hmar-IL, were assembled in 179, 359, and 123 contigs, respectively, and their genomes reach 1.13\u20131.16 Mb, with consistent G+C content (35.03\u201335.23%), number of predicted protein-coding genes (1032\u20131071), pseudogenes (190\u2013192)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is genomic data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "3e357c53-d842-4337-827b-fcd7dc45e147",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C36",
+      "claim": "The average coding density of Midichloria genomes (76%) is higher than those of FLEs of H. marginatum (54%).",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, their average coding density (76%) is higher than those of FLEs of H. marginatum (54%), and furthermore, those of other FLE representatives (range from 57% to 69%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is genomic data reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "165851d2-5d39-472b-83d1-7c4ae934569f",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C37",
+      "claim": "Midi-Hmar-ES, Midi-Hmar-IT, and Midi-Hmar-IL cluster in a highly supported monophyletic sister group of Candidatus M. mitochondrii strain IricVA.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenomic analysis based on 242 SCOs Rickettsiales genes shows that Midi-Hmar-ES, Midi-Hmar-IT, and Midi-Hmar-IL cluster in a highly supported monophyletic sister group of the single other sequenced Midichloria genome, Candidatus M. mitochondrii strain IricVA (M. mitochondrii hereafter), the intra-mitochondrial endosymbiont of the European sheep tick, Ixodes ricinus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "4be1c961-b7f4-4be9-8b72-e8e4619b2f43",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C38",
+      "claim": "Midichloria genomes delineate a monophyletic clade within the Midichloriaceae family.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, they delineate a monophyletic clade within the Midichloriaceae family (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenomic analysis and Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "d7ac4529-31d6-4ab0-8572-432563577ec7",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C39",
+      "claim": "RAES-Hmar-IT clusters with the tick-associated human pathogen R. aeschlimannii.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis based on 324 SCOs genes present in Rickettsia genomes showed that RAES-Hmar-IT clusters with the tick-associated human pathogen R. aeschlimannii (including the strain MC16 previously isolated from H. marginatum) and altogether delineate a robust clade with the Spotted Fever Rickettsia group (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "65675c7b-2e77-4a02-a229-6e3e2b55bb00",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C40",
+      "claim": "The FLE-Hmar genomes only retain intact pathways for riboflavin and folate.",
+      "claim_type": "EXPLICIT",
+      "source": "While all previously sequenced FLE genomes contain complete pathways for biotin, riboflavin, and folate, the FLE-Hmar genomes only retain intact pathways for riboflavin and folate (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "9eb6f60a-2fd8-4dae-a776-c465e79df016",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C41",
+      "claim": "The biosynthesis pathway for biotin is non-functional in FLE-Hmar genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The biosynthesis pathway for biotin is non-functional, as from six genes of the complete pathway, five (bioA, bioD, bioC, bioF, and bioB) are pseudogenized in the FLE-Hmar genomes (only bioH is not pseudogenized; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "6719914e-b227-47b8-8708-3e2f0206ab53",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C42",
+      "claim": "Five biotin genes (bioA, bioD, bioC, bioF, and bioB) are pseudogenized in the FLE-Hmar genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The biosynthesis pathway for biotin is non-functional, as from six genes of the complete pathway, five (bioA, bioD, bioC, bioF, and bioB) are pseudogenized in the FLE-Hmar genomes (only bioH is not pseudogenized; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "c715dffe-f1e7-4d31-afdf-908e384df12a",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C43",
+      "claim": "A complete pathway of biotin was consistently recovered in Midichloria genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A complete pathway of biotin was consistently recovered in Midichloria genomes (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "ea78b1d3-7ffc-48b3-b855-dbcca1000586",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C44",
+      "claim": "Five of the six folate biosynthesis genes (folE, folB, folKP, folC, and folD) were present in Midichloria genomes but the sixth gene, folA, was not.",
+      "claim_type": "EXPLICIT",
+      "source": "For folate, five of the six biosynthesis genes (folE, folB, folKP, folC, and folD) were present but the sixth gene, folA (encoding for a dihydrofolate reductase), was not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "ef461e17-d367-47a3-a4b4-7623ed564502",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C45",
+      "claim": "An alternative dihydrofolate reductase gene, folM, was detected in Midichloria genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected an alternative dihydrofolate reductase gene, folM (also known as ydgB), that was shown in other bacteria to provide the same metabolic function as folA (Giladi et al., 2003) suggesting that the folate pathway is functional in Midi-Hmar genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic analysis and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "1ed5d8da-43fa-4ba2-9764-066d78d2ee71",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C46",
+      "claim": "The folate pathway is functional in Midi-Hmar genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected an alternative dihydrofolate reductase gene, folM (also known as ydgB), that was shown in other bacteria to provide the same metabolic function as folA (Giladi et al., 2003) suggesting that the folate pathway is functional in Midi-Hmar genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the presence of folM gene and its known function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "31a0175b-e3bc-45ba-86b3-a21877676d6c",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C47",
+      "claim": "No B vitamin pathway seems complete in the RAES-Hmar genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "No B vitamin pathway seems complete in the RAES-Hmar genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "639255b8-5ea1-45be-b57d-e89329f12a18",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C48",
+      "claim": "The FLE-Hmar and Midi-Hmar genomes contain genes involved in heme and iron homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus searched for relevant pathways in the symbiont genomes and found that the FLE-Hmar and Midi-Hmar genomes contain genes involved in heme and iron homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "bd84a2fe-166c-4cfb-b3f0-d5a82777a857",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C49",
+      "claim": "The heme biosynthetic pathway was consistently detected in FLE-Hmar and Midi-Hmar genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The heme biosynthetic pathway was consistently detected, as well as a gene encoding heme oxygenase that catalyzes the degradation of heme and the subsequent release of iron (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "6734e888-f91a-45e4-a3ff-a5f4443fb438",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C50",
+      "claim": "The heme pathway is partially degraded in FLE-Hmar genomes since their hemN gene is pseudogenized.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the heme pathway is partially degraded in FLE-Hmar genomes since their hemN gene is pseudogenized, a pattern not observed in other FLE genomes, suggesting an early stage of degradation for the heme pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "9f6f3642-5002-4980-b3fb-a881dcd33fa7",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C51",
+      "claim": "The hemN gene is present and not pseudogenized in the Midi-Hmar genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This gene is present and not pseudogenized in the Midi-Hmar genomes (Figure 4B), suggesting these symbionts may compensate for the FLE heme pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "e8139926-835a-4138-a518-2fd75035e35b",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C52",
+      "claim": "The B vitamin biosynthesis genes in the FLE-Hmar genomes have all been vertically inherited from a Francisella ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that the B vitamin biosynthesis genes in the FLE-Hmar genomes have all been vertically inherited from a Francisella ancestor as their B vitamin genes are always more closely related to Francisella orthologous genes than to genes of more distantly related bacteria (examples are shown in Figure 4\u2014figure supplement 5A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "89bb1b4b-cd89-468d-995f-75ee8c9a233a",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C53",
+      "claim": "Folate and riboflavin biosynthesis genes in the Midi-Hmar genomes are of Midichloria origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, folate and riboflavin biosynthesis genes in the Midi-Hmar genomes are of Midichloria origin as these genes are more closely related to orthologous genes present in M. mitochondrii and other members of the Midichloriaceae family than to genes of other bacteria (Figure 4\u2014figure supplement 5A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "abf7d9af-7952-4f8c-b363-f0645ee7558b",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C54",
+      "claim": "The six biotin genes present in the Midi-Hmar genomes did not originate from the Midichloriaceae family, but from an exogenous origin.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the six biotin genes present in the Midi-Hmar genomes did not originate from the Midichloriaceae family, but from an exogenous origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "f7f15054-f4f2-4313-b2e2-2ee0e0ce861e",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C55",
+      "claim": "The biotin synthesis genes bioD, bioC, bioH, bioF, and bioB formed a compact operon in the Midi-Hmar genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The biotin synthesis genes bioD, bioC, bioH, bioF, and bioB formed a compact operon in the Midi-Hmar genomes while the bioA gene is more distantly located along the bacterial chromosome (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "90caae2a-c45f-4ed0-9111-b9bf3e42c137",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C56",
+      "claim": "The biotin synthesis genes were acquired as a whole operon by an ancestor of Midichloria from an unrelated intracellular bacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analyses of the six biotin synthesis genes consistently exhibited similar evolutionary patterns (Figure 5). These patterns suggest that the biotin synthesis genes were acquired as a whole operon by an ancestor of Midichloria from an unrelated intracellular bacterium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from phylogenetic analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "69e034f8-90f8-4dae-938b-d6a2fa6e51a0",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C57",
+      "claim": "FLE and Midichloria are both abundant in H. marginatum ovaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Real-time qPCR assays on 10 field H. marginatum adult females indicated that FLE and Midichloria are both abundant in tick ovaries, with FLE and Midichloria detected in 10 and 9 ovarian samples, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "c3e3fc78-3ac9-4081-a547-e9d60e2b21d6",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C58",
+      "claim": "FLE were consistently most abundant with densities 5.8\u201321.4\u00d7 higher than Midichloria densities.",
+      "claim_type": "EXPLICIT",
+      "source": "FLE were consistently most abundant with densities 5.8\u201321.4\u00d7 higher than Midichloria densities (paired t-test, p=0.013; one outlier was removed from analysis, n=8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "67d208d4-aa70-4e3b-8ebf-e40e45cec053",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C59",
+      "claim": "The FLE and Midichloria densities covaried positively in individual ticks.",
+      "claim_type": "EXPLICIT",
+      "source": "The FLE and Midichloria densities covaried positively in individual ticks (\u03c72=23.937, p=0.003; Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "05836922-171f-4a98-91eb-f651d2882a93",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C60",
+      "claim": "Out of 10 Hyalomma species with sufficient published data, all were found infected by FLE, and 9 by Midichloria.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 10 Hyalomma species with sufficient published data, all were found infected by FLE, and 9 by Midichloria (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a bibliographic survey.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "6934fb24-4b38-4bd1-9e59-361138772934",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C61",
+      "claim": "Co-infection by FLE and Midichloria is widespread across all Hyalomma lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping of FLE and Midichloria onto the Hyalomma phylogenetic tree showed that co-infection by FLE and Midichloria is widespread across all Hyalomma lineages (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from phylogenetic mapping shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "63961c4b-b346-4de1-a259-b293277faa69",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C62",
+      "claim": "FLE and Midichloria co-infection was not detected in H. asiaticum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, FLE and Midichloria co-infection was not detected in one species, H. asiaticum, nested within the Hyalomma phylogeny among co-infected species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bibliographic survey and phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "8d101fad-2de3-43c5-bde6-6e0b65974333",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C63",
+      "claim": "H. marginatum harbors a microbiome functionally analogous to those observed in other tick species, dominated by intracellular bacterial symbionts producing biotin, riboflavin, and folate.",
+      "claim_type": "EXPLICIT",
+      "source": "This tick harbors a microbiome functionally analogous to those observed in other tick species, dominated by intracellular bacterial symbionts producing the core set of B vitamins (biotin, riboflavin, and folate) essential for tick growth and survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "422b1fab-e6e9-41a8-b74f-b47469630e91",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C64",
+      "claim": "In other tick species, production of all three core B vitamins is performed by a single nutritional symbiont.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while in other tick species, as in other obligate blood feeders, production of all three core B vitamins is performed by a single nutritional symbiont (Binetruy et al., 2020; Duron et al., 2017; Duron and Gottlieb, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "b1024476-8693-41e6-b915-7efcd5acc1b7",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C65",
+      "claim": "H. marginatum harbors two bacterial partners whose core B vitamins biosynthetic capacities depend on a combination of genes, with indigenous and exogenous phylogenetic origins.",
+      "claim_type": "EXPLICIT",
+      "source": "H. marginatum harbors two bacterial partners whose core B vitamins biosynthetic capacities depend on a combination of genes, with indigenous and exogenous phylogenetic origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "f19801c2-e79c-44a4-a3d4-9f4ca4a51989",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C66",
+      "claim": "Genetically similar FLE and Midichloria are present in H. marginatum populations from geographically distant regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This multi-partner nutritional symbiosis is stably maintained at least at the tick species level, as supported by our founding of genetically similar FLE and Midichloria present in H. marginatum populations from geographically distant regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genomic data from three geographic locations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "3f336d71-348b-4ae3-8800-cd56315a7708",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C67",
+      "claim": "Genome reduction is a conserved trait in all FLEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome reduction is a conserved trait in all FLEs, but this process has extended in the FLE of H. marginatum, with an additional loss of genes in most COG functional categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparative genomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "940f43c2-691f-493e-b6f3-9a0a382bdbe8",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C68",
+      "claim": "The pseudogenization of the mismatch repair system (mutSL) could have triggered the extended genome reduction in FLE of H. marginatum.",
+      "claim_type": "EXPLICIT",
+      "source": "This process could have been triggered by the pseudogenization of the mismatch repair system (mutSL), leaving the FLE of H. marginatum with only one DNA repair system, nucleotide excision repair (uvrABCD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on genomic data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "32fa3205-4be9-4080-9f99-3bb6d99e1257",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C69",
+      "claim": "Absence of the mutSL system, coupled with strict clonality and a small population size during transovarial transmission, have probably led the FLE-Hmar genomes to accumulate deleterious mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Absence of the mutSL system, coupled with strict clonality and a small population size during transovarial transmission, have probably led the FLE- Hmar genomes to accumulate deleterious mutations, that resulted in maladaptation, and ultimately limited their beneficial contributions to ticks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on genomic data and evolutionary theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "47c7bd97-63e8-4a5b-8866-b14f710d3eca",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C70",
+      "claim": "Co-infection with Midichloria prevents the breakdown and collapse of nutritional symbiosis in H. marginatum.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of FLE genome degradation, co-infection with Midichloria prevents the breakdown and collapse of nutritional symbiosis in H. marginatum; that is, the Midichloria genome contains an intact biotin biosynthesis operon, and thus compensates for genome decay of FLE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the complementary genomic capabilities of the two symbionts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "1a1dd949-94cd-430b-8368-5f6c0e1147ff",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C71",
+      "claim": "Midichloria has only partial pathways for riboflavin and folate and hence cannot meet the nutritional needs of H. marginatum for these B vitamins.",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely, Midichloria has only partial pathways for riboflavin and folate and hence cannot meet the nutritional needs of H. marginatum for these B vitamins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from genomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "35ca17a2-1366-4014-a30e-bd63849b459d",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C72",
+      "claim": "The co-infection of FLE with Midichloria forms a cooperative system essential for the nutritional symbiosis in H. marginatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the co-infection of FLE with Midichloria forms a cooperative system essential for the nutritional symbiosis in H. marginatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the complementary genomic capabilities of the two symbionts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "7be515d7-e532-4781-b4c1-0cf356d40845",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C73",
+      "claim": "Complete biosynthetic heme gene pathways exist in most animals, but not in ticks that need an exogenous source of heme.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete biosynthetic heme gene pathways exist in most animals, but not in ticks that need an exogenous source of heme (Gulia-Nuss, 2016; Jia et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "97f90a14-8da8-4dee-bdd4-644e6331ecf6",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C74",
+      "claim": "Vertebrate blood is usually considered to be the unique source of heme for ticks.",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrate blood is usually considered to be their unique source for this essential cofactor (Perner et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "2388fc3b-7d2b-4f23-ad5f-58b6f468ea8c",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C75",
+      "claim": "The presence of heme genes in FLE and Midichloria genomes may indicate symbiont provisioning of heme in H. marginatum.",
+      "claim_type": "EXPLICIT",
+      "source": "however ticks spend most of their life off host, and thus the presence of heme genes in FLE and Midichloria genomes may also indicate symbiont provisioning of heme in H. marginatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on genomic data and tick biology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "eee30120-d17d-46e1-88d2-b924d29c7fec",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C76",
+      "claim": "The co-localization of FLE and Midichloria in tick ovaries suggests that vertical transmission has led to their stable co-inheritance through tick generations.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-localization of FLE and Midichloria in tick ovaries suggests that vertical transmission has led to their stable co-inheritance through tick generations, linking their evolutionary fate, as observed in other symbiotic systems of arthropods (McCutcheon et al., 2019; Vautrin and Vavre, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from localization data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "4d0932c8-13bf-4885-910e-f2acece6f9b1",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C77",
+      "claim": "The covariance of FLE and Midichloria densities in ticks is positive, suggesting that these two symbionts are not in direct competition but rather cooperative.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the covariance of FLE and Midichloria densities in ticks is positive, suggesting that these two symbionts are not in direct competition but rather cooperative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from statistical analysis of density data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "0283894d-4ff2-463c-afc1-fb83b0444094",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C78",
+      "claim": "FLE is about 100-times more abundant than Midichloria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, FLE is about 100-times more abundant than Midichloria, which can be suggestive of competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the density data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "facd20dd-6577-47bf-9b1e-a7d4184d25e8",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C79",
+      "claim": "FLE and Midichloria depend on each other since their host tick would not survive without their combined production of B vitamins.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the issue of this interaction, FLE and Midichloria depend on each other since their host tick would not survive without their combined production of B vitamins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the complementary genomic capabilities and known importance of B vitamins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "9e7a5a16-3c3b-471a-93bc-a30143e5a50a",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C80",
+      "claim": "The nutritional association of FLE with Hyalomma species has persisted for millions of years.",
+      "claim_type": "EXPLICIT",
+      "source": "While the nutritional association of FLE with Hyalomma species has persisted for millions of years (Azagi et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "f0c716e3-58ea-4850-811a-3a9c6f518936",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C81",
+      "claim": "The nutritional role of Midichloria seems more recent in the Hyalomma genus.",
+      "claim_type": "EXPLICIT",
+      "source": "While the nutritional association of FLE with Hyalomma species has persisted for millions of years (Azagi et al., 2017), the nutritional role of Midichloria seems more recent in this tick genus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distribution pattern across Hyalomma species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "4412fac8-4c95-4a7f-b0ad-ac828570631e",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C82",
+      "claim": "In most Hyalomma species, Midichloria is present at much lower frequencies than would be expected for an obligate nutritional mutualist.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-infection with Midichloria was reported in at least nine Hyalomma species (Supplementary file 1d), but in most species, such as H. excavatum and H. impeltatum (Azagi et al., 2017; Selmi et al., 2019), Midichloria is present at much lower frequencies than would be expected for an obligate nutritional mutualist, suggesting that it is instead a facultative (i.e., not essential) association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from prevalence data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "1bdfc82e-23cb-4e50-9e9a-6056633ea621",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C83",
+      "claim": "H. asiaticum harbors an FLE with intact biotin, folate, and riboflavin synthesis pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the Hyalomma species apparently devoid of Midichloria, H. asiaticum, harbors an FLE with intact biotin, folate, and riboflavin synthesis pathways (Buysse and Duron, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "3549d697-d510-4f47-aa29-45dad1185a81",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C84",
+      "claim": "The decay of the FLE genome in H. marginatum may have been accelerated by the presence of Midichloria and the redundancy of biotin biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In H. marginatum, the decay of the FLE genome may have been accelerated by the presence of Midichloria and the redundancy of biotin biosynthesis, a process also reported in sap-feeding insects (Husnik and McCutcheon, 2016; Manzano-Mar\u0131n et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference supported by citations to similar processes in other systems.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "489cb4bd-fb38-4036-b85b-ca389594111f",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C85",
+      "claim": "The biotin operon detected in the Midichloria of H. marginatum has an exogenous origin, being acquired following an ancient lateral gene transfer pre-dating the divergence between the Midichloria of H. marginatum and the one of I. ricinus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses also indicated that the biotin operon detected in the Midichloria of H. marginatum has an exogenous origin, being acquired following an ancient lateral gene transfer pre-dating the divergence between the Midichloria of H. marginatum and the one of I. ricinus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "4b183d95-0420-4fe5-8959-3ede92079073",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C86",
+      "claim": "The streamlined biotin operon has experienced transfers between distantly related endosymbionts inhabiting arthropod cells including Wolbachia, Rickettsia, Cardinium, and Legionella.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulating genomic sequences indicate that this streamlined biotin operon (denoted in some studies as the Biotin synthesis Operon of Obligate intracellular Microbes\u2014BOOM Driscoll et al., 2020) has experienced transfers between distantly related endosymbionts inhabiting arthropod cells including Wolbachia (Driscoll et al., 2020; Gerth and Bleidorn, 2016; Ju et al., 2020; Nikoh et al., 2014), Rickettsia (Gillespie et al., 2012), Cardinium (Penz et al., 2012), and Legionella (R\u00edhov\u00e1 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to genomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "669795de-df77-430f-91b1-4081ad5da8ed",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C87",
+      "claim": "The invasive nature of the streamlined biotin operon has contributed to the emergence of novel nutritional symbioses in H. marginatum with Midichloria.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the invasive nature of this streamlined biotin operon has contributed not only to the emergence of novel nutritional symbioses in H. marginatum with Midichloria, but also in other blood feeders, such as bedbugs with Wolbachia (Nikoh et al., 2014) and rodent lice with Legionella (R\u00edhov\u00e1 et al., 2017), or in sap feeders as white flies with Cardinium (Santos-Garcia et al., 2014) and planthoppers with Wolbachia (Ju et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from phylogenetic analysis and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "8fa5ecc7-86b7-4622-bea9-7eea21b35872",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C88",
+      "claim": "Co-infections of unrelated endosymbionts within the same host cell have created freely recombining intracellular bacterial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, co-infections of unrelated endosymbionts within the same host cell have created freely recombining intracellular bacterial communities, a unique environment previously defined as the 'intracellular arena' (Kent and Bordenstein, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "05fdd7c1-59d0-4aa3-aa48-6cf8c33a265e",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C89",
+      "claim": "Ticks would simply not exist as strict blood feeders without mutualistic interactions with nutritional symbionts.",
+      "claim_type": "EXPLICIT",
+      "source": "The macroevolutionary and ecological consequences of acquiring nutritional symbionts are immense, ticks would simply not exist as strict blood feeders without such mutualistic interactions (Duron and Gottlieb, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "76e937b8-d4cb-4fab-8db2-42198c9acd21",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C90",
+      "claim": "Nutritional symbionts of ticks have all converged towards an analogous process of B vitamin provisioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Our investigations corroborate that nutritional symbionts of ticks have all converged towards an analogous process of B vitamin provisioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the study's findings and previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "3bcc7555-5652-4a60-a40d-d70cf0619e08",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "claim_id": "C91",
+      "claim": "Nutritional endosymbiosis in H. marginatum is influenced by a more complex web of interactions resulting in a dynamic mosaic of symbiont combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "While past investigations showed that this evolutionary convergence consists in severe degeneration of symbiont genomes accompanied by preservation of biotin, folate, and riboflavin biosynthesis pathways (Buysse and Duron, 2021; Duron and Gottlieb, 2020), nutritional endosymbiosis in H. marginatum is influenced by a more complex web of interactions resulting in a dynamic mosaic of symbiont combinations and offering novel evolutionary possibilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c7a9350c-2a80-4e6d-ba2b-9f75547166dd",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Three microbial metagenomes were sequenced from H. marginatum specimens collected in Spain, Italy, and Israel, yielding 10.8-68.5 million paired-end reads. From these metagenomes, three FLE genomes (>99% complete) and three Midichloria genomes (>95% complete) were assembled. R. aeschlimannii was detected in two of the three metagenomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 describe the sequencing and assembly results, which are directly reported data from the study. The completeness estimates, read counts, and detection of R. aeschlimannii are clearly stated and represent standard metagenomic outputs. These are straightforward descriptive results of the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "7c4bf485-fad7-4861-b074-8519f22e8743",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The three FLE-Hmar genomes are highly similar (1.51-1.536 Mb, 31.11-31.23% G+C, 937-961 genes, 789-798 pseudogenes) and cluster together phylogenetically within the FLE clade, most closely related to FLE of H. asiaticum. These genomes show extensive pseudogenization affecting most functional categories, including virulence genes and DNA repair systems, with fewer replication/recombination/repair genes than other FLEs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C29 present genomic characterization and phylogenetic analysis of FLE-Hmar genomes. The genomic statistics are directly measured data, the phylogenetic placement is supported by analysis of 436 single-copy orthologs with bootstrap support shown in Figure 2A, and the pseudogenization patterns are documented through comparative genomic analysis. The methods describe appropriate tools (OrthoFinder, RAxML) and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "308b4dd6-a8c9-4203-bf27-db27b65ba976",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The three Midichloria genomes are 1.13-1.16 Mb with 35.03-35.23% G+C content, 1032-1071 genes, and 190-192 pseudogenes, showing higher coding density (76%) than FLE-Hmar genomes (54%). Phylogenetically, they form a monophyletic clade sister to Candidatus M. mitochondrii within the Midichloriaceae family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 describe genomic characteristics and phylogenetic relationships of Midichloria genomes. The genomic statistics are directly measured, the coding density comparison is straightforward calculation, and the phylogenetic placement is supported by analysis of 242 single-copy orthologs with bootstrap support shown in Figure 3A. The methods are appropriate and results are consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "fd183725-b525-4ddf-9c4e-a6aedbdc57ac",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RAES-Hmar-IT clusters phylogenetically with the tick-associated human pathogen R. aeschlimannii within the Spotted Fever Rickettsia group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by phylogenetic analysis of 324 single-copy ortholog genes with bootstrap support shown in Figure 1\u2014figure supplement 1. The phylogenetic methods are appropriate and the result is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "8a98318a-a153-4851-b736-a96613afddd9",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FLE-Hmar genomes retain intact pathways for riboflavin and folate but have a non-functional biotin biosynthesis pathway, with five of six biotin genes (bioA, bioD, bioC, bioF, bioB) pseudogenized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 describe the B-vitamin biosynthesis capabilities of FLE-Hmar genomes based on genomic analysis shown in Figure 4A. The pseudogenization is documented with specific mutations shown in Figure 4\u2014figure supplement 3, including indels and premature stop codons. The analysis is thorough and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "0c77a28a-114b-4f7b-953e-01cdcc8f07c1",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Midichloria genomes contain a complete biotin biosynthesis pathway and a functional folate pathway (with folM substituting for the missing folA gene), but only partial pathways for riboflavin and pantothenic acid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 describe B-vitamin biosynthesis capabilities in Midichloria genomes. The presence of complete biotin pathway is documented in Figure 4A. The inference that folM can substitute for folA (C46) is supported by citation to Giladi et al., 2003, which demonstrated this functional equivalence in other bacteria. The partial riboflavin pathway is also documented in Figure 4A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "bed70037-315b-4d94-adbb-cb957ef37b44",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "No B vitamin pathway appears complete in the RAES-Hmar genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by genomic analysis showing partial pathways for biotin and folate with multiple missing genes in Figure 4A. This supports the conclusion that R. aeschlimannii is not a B-vitamin provisioning endosymbiont.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "c864db28-9f8a-420a-abc4-075590e6f479",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FLE-Hmar and Midi-Hmar genomes contain genes for heme biosynthesis and degradation. The heme pathway is partially degraded in FLE-Hmar (hemN pseudogenized) but intact in Midi-Hmar genomes, suggesting potential complementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 describe heme biosynthesis pathways documented in Figure 4B. The pseudogenization of hemN in FLE-Hmar and its functional status in Midi-Hmar are clearly shown. The suggestion of complementation (C51) is a reasonable inference from the complementary gene content, though direct functional evidence is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "663321c3-ab26-4922-9bd6-26fc050a5f66",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The nucleotide excision repair system (uvrABCD) is conserved in FLE-Hmar genomes, but the DNA mismatch repair system (mutSL) is fully pseudogenized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 describe DNA repair systems documented in Figure 4\u2014figure supplement 2. The pseudogenization of mutSL is clearly shown, while uvrABCD remains functional. This is straightforward genomic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "ce4da024-e802-4655-b23e-b83c73924bb2",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "B vitamin biosynthesis genes in FLE-Hmar genomes were vertically inherited from a Francisella ancestor, while folate and riboflavin genes in Midi-Hmar genomes are of Midichloria origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by phylogenetic analyses showing that B-vitamin genes cluster with their respective bacterial lineages (examples in Figure 4\u2014figure supplement 5A-B). The phylogenetic methods are appropriate for inferring vertical inheritance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "bf351452-bad3-4b43-84cd-e4ac1966690b",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The six biotin genes in Midi-Hmar genomes have an exogenous origin, with five genes (bioD, bioC, bioH, bioF, bioB) forming a compact operon. Phylogenetic analysis suggests these genes were acquired as a whole operon by a Midichloria ancestor from an unrelated intracellular bacterium via lateral gene transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by phylogenetic analysis in Figure 5 showing that biotin genes in Midichloria do not cluster with Midichloriaceae but with distantly related intracellular bacteria. The operon structure is documented, and the phylogenetic patterns consistently support lateral gene transfer. The analysis is thorough and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "4183fcd6-15e3-469a-8c0b-3b9e17d60dc6",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "qPCR analysis of 10 H. marginatum ovaries showed both FLE and Midichloria are abundant, with FLE 5.8-21.4\u00d7 more abundant than Midichloria (p=0.013). The densities of the two symbionts covaried positively (\u03c7\u00b2=23.937, p=0.003).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 present qPCR data with appropriate statistical analysis (paired t-test and chi-square test). The methods describe the qPCR approach, one outlier was removed (appropriately noted), and the positive covariance is shown in Figure 6B. The statistical tests are appropriate for the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "87801a6b-f418-4cb6-ae49-4f6112776878",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A bibliographic survey of 10 Hyalomma species found all infected by FLE and 9 by Midichloria. Phylogenetic mapping showed co-infection is widespread across Hyalomma lineages, except H. asiaticum which lacks Midichloria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are based on a bibliographic survey (Supplementary file 1d) and phylogenetic mapping (Figure 1\u2014figure supplement 3). The survey methodology is appropriate for assessing symbiont distribution across species, and the phylogenetic context provides evolutionary perspective. The exception of H. asiaticum is notable and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "bcba22ac-307a-4f4a-a80b-49e11400f879",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "H. marginatum harbors a dual-partner nutritional symbiosis where FLE and Midichloria together provide the core B vitamins (biotin, riboflavin, folate), unlike other tick species where a single symbiont provides all three vitamins. This system combines genes of indigenous and exogenous origins and is stably maintained across geographically distant H. marginatum populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 synthesize the major findings of the study. The dual-partner system is supported by the complementary B-vitamin biosynthesis capabilities documented in C40-C46. The contrast with other tick species is supported by citations (C64). The stability across geographic regions is supported by the genomic similarity of symbionts from three locations (C14-C17). This is a well-supported synthesis of the main results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "52f2097d-30a9-4d82-a24c-04dc0182c844",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FLE-Hmar genomes show extended genome reduction compared to other FLEs, potentially triggered by pseudogenization of the mismatch repair system (mutSL). This, coupled with clonality and small population size during transmission, likely led to accumulation of deleterious mutations and maladaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C69 present a mechanistic hypothesis for genome degradation. While C67 is supported by comparative genomic data showing more extensive pseudogenization, C68 and C69 are speculative inferences about causation. The loss of mutSL is documented (C31), but the causal link to accelerated genome decay is not directly tested. The hypothesis is plausible and consistent with evolutionary theory, but lacks direct experimental validation. The authors appropriately use cautious language ('could have,' 'probably').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "b04dc623-e40a-4b4a-b6b5-a105b05c5e56",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Co-infection with Midichloria prevents collapse of nutritional symbiosis in H. marginatum by compensating for FLE's loss of biotin biosynthesis. Conversely, Midichloria cannot meet riboflavin and folate needs. Thus, FLE and Midichloria form a cooperative system essential for H. marginatum nutrition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 present the core functional interpretation of the dual symbiosis. The complementary B-vitamin biosynthesis capabilities are well-documented (C40-C46), and the inference of functional complementation is strongly supported by the genomic data combined with prior knowledge that ticks require these vitamins (C6-C7). While direct functional experiments (e.g., symbiont elimination) are not performed, the genomic evidence is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "fe5aea3c-9ab1-4db5-962a-0cdca88e92ec",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Ticks lack complete heme biosynthesis pathways and typically obtain heme from vertebrate blood. However, the presence of heme genes in FLE and Midichloria genomes may indicate symbiont provisioning of heme in H. marginatum, particularly during off-host periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74 are supported by citations to prior work. However, C75 is speculative. While heme genes are documented in both symbionts (C48-C51), the inference that symbionts provision heme to the tick is not directly tested. The authors appropriately use cautious language ('may indicate'), but functional evidence is lacking. The hypothesis is plausible but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "a22081c4-9f10-41d3-a10c-90393cffb7c8",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Co-localization in ovaries suggests stable vertical co-transmission of FLE and Midichloria. Their densities covaried positively, suggesting cooperation rather than competition, though FLE is ~100\u00d7 more abundant. The symbionts depend on each other since the tick requires their combined B-vitamin production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 integrate localization data (C8, C57), density measurements (C58-C59), and functional genomics (C70-C72). The positive covariance (C77) is statistically supported (C59). The inference of cooperation is reasonable given the complementary functions, though the abundance difference (C78) could suggest competition. The mutual dependence (C79) is a logical inference from the complementary B-vitamin capabilities and known tick requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "4c9095c3-d0a5-4cc7-b6be-c096f6e343ee",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The FLE-Hyalomma association is ancient (millions of years), while Midichloria's nutritional role appears more recent. In most Hyalomma species, Midichloria occurs at low frequencies suggesting facultative association. H. asiaticum, which lacks Midichloria, has an FLE with intact biotin synthesis. The decay of FLE in H. marginatum may have been accelerated by Midichloria presence and biotin biosynthesis redundancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 present an evolutionary scenario. C80 and C83 are supported by citations. C81-C82 are inferences from prevalence data (C60-C62) and are reasonable interpretations. C84 is a speculative hypothesis supported by analogy to similar processes in sap-feeding insects (with citations). The evolutionary scenario is plausible and consistent with the data, though some aspects are inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "055fb0ea-cf68-4d6d-863e-27bb921df8a7",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The biotin operon in Midichloria has an exogenous origin via ancient lateral gene transfer predating divergence from M. mitochondrii. This streamlined biotin operon has experienced transfers among distantly related endosymbionts (Wolbachia, Rickettsia, Cardinium, Legionella) and has contributed to novel nutritional symbioses in multiple blood and sap feeders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 are supported by phylogenetic analysis in Figure 5 and multiple citations documenting the biotin operon in other endosymbionts (C86). The phylogenetic evidence for lateral gene transfer is strong, showing the biotin genes cluster with distantly related bacteria rather than Midichloriaceae. The widespread distribution of this operon across diverse endosymbionts is well-documented in the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "2895b949-cb56-41e7-b0ed-4f1109d5fe61",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Co-infections of unrelated endosymbionts within the same host cell create freely recombining intracellular bacterial communities, termed the 'intracellular arena.'",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is supported by citation to Kent and Bordenstein, 2010, which introduced this concept. This is established knowledge being applied to interpret the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "ad4bf3be-821b-4b53-8fe4-86cc319921ed",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Ticks would not exist as strict blood feeders without nutritional symbionts. All tick nutritional symbionts have converged on B-vitamin provisioning, but H. marginatum shows a more complex system with a dynamic mosaic of symbiont combinations offering novel evolutionary possibilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 are supported by citations to prior work and represent established understanding. C91 synthesizes the study's findings, contrasting the H. marginatum system with the simpler single-symbiont systems in other ticks. This is a well-supported synthesis of the major conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "1a3c3f53-8332-49a7-b80f-64326df5ef29",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Ticks rely exclusively on vertebrate blood, which is nutritionally unbalanced (high in proteins/iron/salts, low in carbohydrates/lipids/vitamins). Tick genomes lack genes for essential vitamin synthesis, so they depend on transovarially transmitted bacterial symbionts. Most tick species harbor a single nutritional symbiont lineage (commonly FLE or CLE) that produces biotin, riboflavin, and folate. These symbionts are essential for tick survival and localize primarily to ovaries and Malpighian tubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 present established background knowledge supported by multiple citations to prior research. These claims set the context for the current study and are well-established in the tick symbiosis literature. The citations are appropriate and the claims are consistent with current understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    },
+    {
+      "id": "c6d2b41b-2329-443b-aefe-1ca80578bc80",
+      "content_id": "15a57295-dfb3-4bb5-827b-a0aa825690e2",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "H. marginatum is a large tick species feeding on humans, mammals, and birds in the Mediterranean region that has recently expanded into Western Europe. It can transmit Crimean-Congo hemorrhagic fever virus and other pathogens including R. aeschlimannii.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 provide background on H. marginatum supported by citation to Vial et al., 2016. This is established knowledge about the study organism and provides important context for the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:48:11.033127Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "143a3662-d18d-463b-97ec-08a7aa5e2002",
+      "result_id": "c7a9350c-2a80-4e6d-ba2b-9f75547166dd"
+    },
+    {
+      "claim_id": "48baf599-24c7-4d30-a8dc-0a3defe446b7",
+      "result_id": "c7a9350c-2a80-4e6d-ba2b-9f75547166dd"
+    },
+    {
+      "claim_id": "3141954b-233c-4fa3-bfcb-33671c9875e7",
+      "result_id": "c7a9350c-2a80-4e6d-ba2b-9f75547166dd"
+    },
+    {
+      "claim_id": "834d7d94-66f1-4067-8698-b45b004e5839",
+      "result_id": "c7a9350c-2a80-4e6d-ba2b-9f75547166dd"
+    },
+    {
+      "claim_id": "bf999719-fce4-4dde-bf58-1c8d651634d7",
+      "result_id": "c7a9350c-2a80-4e6d-ba2b-9f75547166dd"
+    },
+    {
+      "claim_id": "b11387c3-857c-4ea8-9477-bdb1a79ea625",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "99b620e1-94c8-4f06-b5a1-b8c98f811afb",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "a129f249-9889-4d01-8464-4e0e364ec065",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "22853d27-9dfc-4bca-bd45-2f1d5a319567",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "71e7293e-7499-4d1d-a4a7-d176ab1dd57f",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "02814cce-40af-42a4-8b14-7059e6ede9c2",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "8fee70cd-76c9-471f-b25c-d17151b4aa90",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "80fe913d-195d-40b5-9c5a-10f43e68889d",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "5c4771db-b5b2-45ac-81c9-84bca626ebf4",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "fccf5b96-0850-4773-b687-21107de62d31",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "70a77c33-b42c-49ec-b5b5-e5803b420720",
+      "result_id": "7c4bf485-fad7-4861-b074-8519f22e8743"
+    },
+    {
+      "claim_id": "dc856d7d-180a-45a8-b3ec-ec8b1cd509a8",
+      "result_id": "308b4dd6-a8c9-4203-bf27-db27b65ba976"
+    },
+    {
+      "claim_id": "14ff2430-9b11-4044-b3de-e59ee42b2524",
+      "result_id": "308b4dd6-a8c9-4203-bf27-db27b65ba976"
+    },
+    {
+      "claim_id": "32c135f9-c343-4e2a-97e5-4e02fa4dda57",
+      "result_id": "308b4dd6-a8c9-4203-bf27-db27b65ba976"
+    },
+    {
+      "claim_id": "4d744ed9-7649-4d23-b741-92a91c0f9365",
+      "result_id": "308b4dd6-a8c9-4203-bf27-db27b65ba976"
+    },
+    {
+      "claim_id": "3e357c53-d842-4337-827b-fcd7dc45e147",
+      "result_id": "308b4dd6-a8c9-4203-bf27-db27b65ba976"
+    },
+    {
+      "claim_id": "165851d2-5d39-472b-83d1-7c4ae934569f",
+      "result_id": "308b4dd6-a8c9-4203-bf27-db27b65ba976"
+    },
+    {
+      "claim_id": "4be1c961-b7f4-4be9-8b72-e8e4619b2f43",
+      "result_id": "308b4dd6-a8c9-4203-bf27-db27b65ba976"
+    },
+    {
+      "claim_id": "d7ac4529-31d6-4ab0-8572-432563577ec7",
+      "result_id": "fd183725-b525-4ddf-9c4e-a6aedbdc57ac"
+    },
+    {
+      "claim_id": "65675c7b-2e77-4a02-a229-6e3e2b55bb00",
+      "result_id": "8a98318a-a153-4851-b736-a96613afddd9"
+    },
+    {
+      "claim_id": "9eb6f60a-2fd8-4dae-a776-c465e79df016",
+      "result_id": "8a98318a-a153-4851-b736-a96613afddd9"
+    },
+    {
+      "claim_id": "6719914e-b227-47b8-8708-3e2f0206ab53",
+      "result_id": "8a98318a-a153-4851-b736-a96613afddd9"
+    },
+    {
+      "claim_id": "c715dffe-f1e7-4d31-afdf-908e384df12a",
+      "result_id": "0c77a28a-114b-4f7b-953e-01cdcc8f07c1"
+    },
+    {
+      "claim_id": "ea78b1d3-7ffc-48b3-b855-dbcca1000586",
+      "result_id": "0c77a28a-114b-4f7b-953e-01cdcc8f07c1"
+    },
+    {
+      "claim_id": "ef461e17-d367-47a3-a4b4-7623ed564502",
+      "result_id": "0c77a28a-114b-4f7b-953e-01cdcc8f07c1"
+    },
+    {
+      "claim_id": "1ed5d8da-43fa-4ba2-9764-066d78d2ee71",
+      "result_id": "0c77a28a-114b-4f7b-953e-01cdcc8f07c1"
+    },
+    {
+      "claim_id": "31a0175b-e3bc-45ba-86b3-a21877676d6c",
+      "result_id": "bed70037-315b-4d94-adbb-cb957ef37b44"
+    },
+    {
+      "claim_id": "639255b8-5ea1-45be-b57d-e89329f12a18",
+      "result_id": "c864db28-9f8a-420a-abc4-075590e6f479"
+    },
+    {
+      "claim_id": "bd84a2fe-166c-4cfb-b3f0-d5a82777a857",
+      "result_id": "c864db28-9f8a-420a-abc4-075590e6f479"
+    },
+    {
+      "claim_id": "6734e888-f91a-45e4-a3ff-a5f4443fb438",
+      "result_id": "c864db28-9f8a-420a-abc4-075590e6f479"
+    },
+    {
+      "claim_id": "9f6f3642-5002-4980-b3fb-a881dcd33fa7",
+      "result_id": "c864db28-9f8a-420a-abc4-075590e6f479"
+    },
+    {
+      "claim_id": "2800b53f-c7cc-470e-9b23-e95c914de68b",
+      "result_id": "663321c3-ab26-4922-9bd6-26fc050a5f66"
+    },
+    {
+      "claim_id": "b48a0420-3311-41a8-a969-dc2469e72743",
+      "result_id": "663321c3-ab26-4922-9bd6-26fc050a5f66"
+    },
+    {
+      "claim_id": "e8139926-835a-4138-a518-2fd75035e35b",
+      "result_id": "ce4da024-e802-4655-b23e-b83c73924bb2"
+    },
+    {
+      "claim_id": "89bb1b4b-cd89-468d-995f-75ee8c9a233a",
+      "result_id": "ce4da024-e802-4655-b23e-b83c73924bb2"
+    },
+    {
+      "claim_id": "abf7d9af-7952-4f8c-b363-f0645ee7558b",
+      "result_id": "bf351452-bad3-4b43-84cd-e4ac1966690b"
+    },
+    {
+      "claim_id": "f7f15054-f4f2-4313-b2e2-2ee0e0ce861e",
+      "result_id": "bf351452-bad3-4b43-84cd-e4ac1966690b"
+    },
+    {
+      "claim_id": "90caae2a-c45f-4ed0-9111-b9bf3e42c137",
+      "result_id": "bf351452-bad3-4b43-84cd-e4ac1966690b"
+    },
+    {
+      "claim_id": "69e034f8-90f8-4dae-938b-d6a2fa6e51a0",
+      "result_id": "4183fcd6-15e3-469a-8c0b-3b9e17d60dc6"
+    },
+    {
+      "claim_id": "c3e3fc78-3ac9-4081-a547-e9d60e2b21d6",
+      "result_id": "4183fcd6-15e3-469a-8c0b-3b9e17d60dc6"
+    },
+    {
+      "claim_id": "67d208d4-aa70-4e3b-8ebf-e40e45cec053",
+      "result_id": "4183fcd6-15e3-469a-8c0b-3b9e17d60dc6"
+    },
+    {
+      "claim_id": "05836922-171f-4a98-91eb-f651d2882a93",
+      "result_id": "87801a6b-f418-4cb6-ae49-4f6112776878"
+    },
+    {
+      "claim_id": "6934fb24-4b38-4bd1-9e59-361138772934",
+      "result_id": "87801a6b-f418-4cb6-ae49-4f6112776878"
+    },
+    {
+      "claim_id": "63961c4b-b346-4de1-a259-b293277faa69",
+      "result_id": "87801a6b-f418-4cb6-ae49-4f6112776878"
+    },
+    {
+      "claim_id": "8d101fad-2de3-43c5-bde6-6e0b65974333",
+      "result_id": "bcba22ac-307a-4f4a-a80b-49e11400f879"
+    },
+    {
+      "claim_id": "422b1fab-e6e9-41a8-b74f-b47469630e91",
+      "result_id": "bcba22ac-307a-4f4a-a80b-49e11400f879"
+    },
+    {
+      "claim_id": "b1024476-8693-41e6-b915-7efcd5acc1b7",
+      "result_id": "bcba22ac-307a-4f4a-a80b-49e11400f879"
+    },
+    {
+      "claim_id": "f19801c2-e79c-44a4-a3d4-9f4ca4a51989",
+      "result_id": "bcba22ac-307a-4f4a-a80b-49e11400f879"
+    },
+    {
+      "claim_id": "3f336d71-348b-4ae3-8800-cd56315a7708",
+      "result_id": "52f2097d-30a9-4d82-a24c-04dc0182c844"
+    },
+    {
+      "claim_id": "940f43c2-691f-493e-b6f3-9a0a382bdbe8",
+      "result_id": "52f2097d-30a9-4d82-a24c-04dc0182c844"
+    },
+    {
+      "claim_id": "32fa3205-4be9-4080-9f99-3bb6d99e1257",
+      "result_id": "52f2097d-30a9-4d82-a24c-04dc0182c844"
+    },
+    {
+      "claim_id": "47c7bd97-63e8-4a5b-8866-b14f710d3eca",
+      "result_id": "b04dc623-e40a-4b4a-b6b5-a105b05c5e56"
+    },
+    {
+      "claim_id": "1a1dd949-94cd-430b-8368-5f6c0e1147ff",
+      "result_id": "b04dc623-e40a-4b4a-b6b5-a105b05c5e56"
+    },
+    {
+      "claim_id": "35ca17a2-1366-4014-a30e-bd63849b459d",
+      "result_id": "b04dc623-e40a-4b4a-b6b5-a105b05c5e56"
+    },
+    {
+      "claim_id": "7be515d7-e532-4781-b4c1-0cf356d40845",
+      "result_id": "fe5aea3c-9ab1-4db5-962a-0cdca88e92ec"
+    },
+    {
+      "claim_id": "97f90a14-8da8-4dee-bdd4-644e6331ecf6",
+      "result_id": "fe5aea3c-9ab1-4db5-962a-0cdca88e92ec"
+    },
+    {
+      "claim_id": "2388fc3b-7d2b-4f23-ad5f-58b6f468ea8c",
+      "result_id": "fe5aea3c-9ab1-4db5-962a-0cdca88e92ec"
+    },
+    {
+      "claim_id": "eee30120-d17d-46e1-88d2-b924d29c7fec",
+      "result_id": "a22081c4-9f10-41d3-a10c-90393cffb7c8"
+    },
+    {
+      "claim_id": "4d0932c8-13bf-4885-910e-f2acece6f9b1",
+      "result_id": "a22081c4-9f10-41d3-a10c-90393cffb7c8"
+    },
+    {
+      "claim_id": "0283894d-4ff2-463c-afc1-fb83b0444094",
+      "result_id": "a22081c4-9f10-41d3-a10c-90393cffb7c8"
+    },
+    {
+      "claim_id": "facd20dd-6577-47bf-9b1e-a7d4184d25e8",
+      "result_id": "a22081c4-9f10-41d3-a10c-90393cffb7c8"
+    },
+    {
+      "claim_id": "9e7a5a16-3c3b-471a-93bc-a30143e5a50a",
+      "result_id": "4c9095c3-d0a5-4cc7-b6be-c096f6e343ee"
+    },
+    {
+      "claim_id": "f0c716e3-58ea-4850-811a-3a9c6f518936",
+      "result_id": "4c9095c3-d0a5-4cc7-b6be-c096f6e343ee"
+    },
+    {
+      "claim_id": "4412fac8-4c95-4a7f-b0ad-ac828570631e",
+      "result_id": "4c9095c3-d0a5-4cc7-b6be-c096f6e343ee"
+    },
+    {
+      "claim_id": "1bdfc82e-23cb-4e50-9e9a-6056633ea621",
+      "result_id": "4c9095c3-d0a5-4cc7-b6be-c096f6e343ee"
+    },
+    {
+      "claim_id": "3549d697-d510-4f47-aa29-45dad1185a81",
+      "result_id": "4c9095c3-d0a5-4cc7-b6be-c096f6e343ee"
+    },
+    {
+      "claim_id": "489cb4bd-fb38-4036-b85b-ca389594111f",
+      "result_id": "055fb0ea-cf68-4d6d-863e-27bb921df8a7"
+    },
+    {
+      "claim_id": "4b183d95-0420-4fe5-8959-3ede92079073",
+      "result_id": "055fb0ea-cf68-4d6d-863e-27bb921df8a7"
+    },
+    {
+      "claim_id": "669795de-df77-430f-91b1-4081ad5da8ed",
+      "result_id": "055fb0ea-cf68-4d6d-863e-27bb921df8a7"
+    },
+    {
+      "claim_id": "8fa5ecc7-86b7-4622-bea9-7eea21b35872",
+      "result_id": "2895b949-cb56-41e7-b0ed-4f1109d5fe61"
+    },
+    {
+      "claim_id": "05fdd7c1-59d0-4aa3-aa48-6cf8c33a265e",
+      "result_id": "ad4bf3be-821b-4b53-8fe4-86cc319921ed"
+    },
+    {
+      "claim_id": "76e937b8-d4cb-4fab-8db2-42198c9acd21",
+      "result_id": "ad4bf3be-821b-4b53-8fe4-86cc319921ed"
+    },
+    {
+      "claim_id": "3bcc7555-5652-4a60-a40d-d70cf0619e08",
+      "result_id": "ad4bf3be-821b-4b53-8fe4-86cc319921ed"
+    },
+    {
+      "claim_id": "cbe2a91f-d194-4597-9259-abb6e9e2c950",
+      "result_id": "1a3c3f53-8332-49a7-b80f-64326df5ef29"
+    },
+    {
+      "claim_id": "e7eba4bc-1bc0-46b4-b5e7-4b30ca4ea4e8",
+      "result_id": "1a3c3f53-8332-49a7-b80f-64326df5ef29"
+    },
+    {
+      "claim_id": "28cb6a6f-675b-4da7-81e6-85f337d609a9",
+      "result_id": "1a3c3f53-8332-49a7-b80f-64326df5ef29"
+    },
+    {
+      "claim_id": "1b35f9de-af4a-4c4e-a94f-b41c3cafe3a9",
+      "result_id": "1a3c3f53-8332-49a7-b80f-64326df5ef29"
+    },
+    {
+      "claim_id": "62fcc451-e049-4317-be2c-c7a3761616d6",
+      "result_id": "1a3c3f53-8332-49a7-b80f-64326df5ef29"
+    },
+    {
+      "claim_id": "5848b7f4-a6ec-4f34-a6e0-db05946843f0",
+      "result_id": "1a3c3f53-8332-49a7-b80f-64326df5ef29"
+    },
+    {
+      "claim_id": "733f9f4c-0854-4598-85f8-dec5b4cd1918",
+      "result_id": "1a3c3f53-8332-49a7-b80f-64326df5ef29"
+    },
+    {
+      "claim_id": "235266f6-e144-42f8-80f7-8199af16b49f",
+      "result_id": "1a3c3f53-8332-49a7-b80f-64326df5ef29"
+    },
+    {
+      "claim_id": "47df271c-4a73-4ed4-9381-adbd9c3a5c28",
+      "result_id": "1a3c3f53-8332-49a7-b80f-64326df5ef29"
+    },
+    {
+      "claim_id": "b06ae33c-9ce4-41f8-9280-df9f84ea47db",
+      "result_id": "1a3c3f53-8332-49a7-b80f-64326df5ef29"
+    },
+    {
+      "claim_id": "dd8e9847-fef8-4ded-83ab-5598a71db521",
+      "result_id": "c6d2b41b-2329-443b-aefe-1ca80578bc80"
+    },
+    {
+      "claim_id": "de44d06c-34e4-4298-be0b-c3104925c785",
+      "result_id": "c6d2b41b-2329-443b-aefe-1ca80578bc80"
+    },
+    {
+      "claim_id": "2fe9a004-c24a-437b-a11f-86ea7bfae309",
+      "result_id": "c6d2b41b-2329-443b-aefe-1ca80578bc80"
+    }
+  ],
+  "comparisons": []
+}

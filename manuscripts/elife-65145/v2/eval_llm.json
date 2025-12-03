@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "TNBC is an aggressive breast cancer subtype comprising 10-20% of cases, characterized by an immunosuppressive tumor microenvironment dominated by M2-polarized tumor-associated macrophages (TAM) that promote tumor progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide well-established background information about TNBC characteristics, prevalence, clinical behavior, and the role of TAM in the tumor microenvironment. All claims are supported by multiple literature citations and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "In vivo phage display screening in the EF43.fgf4 TNBC mouse model identified the peptide CSSTRESAC, which specifically binds to CD11b+F4/80+ tumor-associated macrophages but not to tumor cells, with 300-fold enrichment after three rounds of selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 describe the phage display selection process and characterization of CSSTRESAC binding specificity. The data show appropriate controls (C7), enrichment metrics (C8-C9), cell binding assays (C10-C11), and flow cytometry characterization (C12-C13). The experimental design includes proper negative controls and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C42"
+    ],
+    "result": "CSSTRESAC targets breast tumors across multiple mouse models (MMTV-PyMT transgenic, MDA-MB-231 xenograft) independently of tumor cell species or host immunocompetency status, as demonstrated by phage homing and MRI imaging with targeted liposomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C42 demonstrate broad applicability of CSSTRESAC targeting across different tumor models. The data include appropriate controls (control phage, control liposomes) and multiple imaging modalities (phage recovery, MRI). Statistical significance is reported for MRI data (p<0.025), and the conclusion of broad targeting (C42) is justified by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C41"
+    ],
+    "result": "CSSTRESAC binds to two vitamin D-binding proteins, PDIA3 and DBP, with computational modeling suggesting that CSSTRESAC binds at a similar site as vitamin D and can be competitively displaced by 1,25-(OH)2D3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 and C41 describe receptor identification through affinity chromatography, mass spectrometry, binding assays, and computational modeling. The experimental competition assay (C19, p<0.05) validates the computational predictions (C41). However, the computational model relies on an unliganded DBP structure (PDB: 1KW2_A) rather than the actual DBP/1,25-(OH)2D3 complex, which introduces some uncertainty. Nevertheless, the experimental validation strengthens the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C33",
+      "C43"
+    ],
+    "result": "PDIA3 is expressed on the cell surface of CD11b+IL-10high IL-12low M2-polarized TAM in tumors but not on tumor cells, and is systemically accessible through the circulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C33, and C43 demonstrate PDIA3 surface expression on M2 TAM using flow cytometry (C20), negative expression on tumor cells (C21), co-localization with macrophage marker CD68 (C22), and systemic accessibility (C23). The data are internally consistent and use appropriate markers. The identification of PDIA3 as a novel M2 TAM marker (C20, C33) is well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C34",
+      "C45",
+      "C46"
+    ],
+    "result": "CSSTRESAC binding to PDIA3 on TAM induces a ~40-fold increase in pro-inflammatory cytokines (IL-1\u03b2, TNF-\u03b1, IL-6), which is specifically abrogated by co-treatment with 1,25-(OH)2D3, demonstrating PDIA3's immunoregulatory function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide strong evidence for functional consequences of CSSTRESAC-PDIA3 binding through qRT-PCR data showing marked cytokine changes. The specificity control with 1,25-(OH)2D3 (C25) is critical and demonstrates that the effect is mediated through the vitamin D binding pathway. Claims C34, C45, and C46 are reasonable interpretations of these data. However, the mechanism by which CSSTRESAC-DBP-PDIA3 interaction leads to cytokine changes remains incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C44"
+    ],
+    "result": "Systemic treatment with soluble CSSTRESAC peptide significantly delayed tumor growth (p<0.001) and reduced the population of PDIA3-expressing M2 TAM in EF43.fgf4 tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C44 demonstrate therapeutic efficacy with appropriate statistical analysis (t-test, p<0.001) and mechanistic support through FACS analysis showing TAM reduction. The study includes proper controls (unrelated peptide and vehicle). However, sample sizes are not explicitly stated in the claims, and the mechanism of TAM reduction is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Targeted gene therapy using CSSTRESAC-AAVP-HSVtk plus ganciclovir significantly reduced tumor size (p<0.001) and decreased PDIA3-expressing TAM while shifting the cytokine profile toward an inflammatory response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 demonstrate therapeutic efficacy of the gene therapy approach with statistical significance (p<0.001) and mechanistic support through flow cytometry and cytokine profiling. The study includes appropriate controls (fd-AAVP-HSVtk and vehicle). The combination of tumor size reduction and immune modulation provides strong evidence for the therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C47"
+    ],
+    "result": "A mathematical model of tumor growth and treatment predicted that continuous infusion of CSSTRESAC would result in ~400 mm\u00b3 greater tumor volume reduction compared to bolus administration, and that native serum 1,25-(OH)2D3 is unlikely to influence CSSTRESAC binding to TAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C47 describe mathematical modeling predictions. The model shows good correlation with experimental data (R=0.998, p=0.001) and incorporates relevant biological parameters including competitive binding with vitamin D. However, the prediction about infusion vs. bolus (C31) is a simulation without experimental validation. The conclusion about serum vitamin D not influencing binding (C47) appears to contradict the in vitro competition data (C19, C25), suggesting the model may not fully capture all biological complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Bioinformatic analysis of single-cell RNA-seq data from TNBC patients showed that high PDIA3 expression in TAM clusters with M2 polarization markers, immune suppression genes, and poor prognosis indicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 provides translational relevance by analyzing human TNBC patient data. The unsupervised clustering analysis is appropriate for this type of data. However, the analysis is limited to 35 single cells from a public dataset (GSE75688), which is a small sample size. The claim would be strengthened by validation in additional patient cohorts or functional studies in human samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "TNBCs are more likely to respond to immunotherapy due to higher tumor-infiltrating lymphocytes, PD-L1 expression, and mutational burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 represents established knowledge about TNBC immunotherapy responsiveness. This is background information supported by general scientific consensus rather than data generated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The Human Protein Atlas shows cytoplasmic expression of PDIA3 in human breast cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 references an external database (Human Protein Atlas) for PDIA3 expression in cancer cells. This is a factual statement about publicly available data, though it raises questions about potential direct effects of CSSTRESAC on tumor cells that warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "CSSTRESAC has a half-life of approximately 26 minutes and is rapidly cleared through renal excretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by pharmacokinetic modeling that calculated the excretion rate constant and derived the half-life. The value is consistent with other targeting peptides as noted by citation. However, direct experimental measurement of peptide half-life in vivo would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Liposome biodistribution showed low uptake in most organs except liver due to reticuloendothelial system clearance, with no evidence of liver toxicity based on normal ALT and AST levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 describe expected liposome pharmacokinetics and safety. The liver accumulation is explained by known biological mechanisms, and the toxicity assessment using standard liver enzymes (ALT, AST) is appropriate. The data support the safety profile of the liposomal formulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "CSSTRESAC could be developed as a non-steroidal vitamin D analogue for drug optimization and may synergize with immunomodulators for cancer therapy, though potential drug interactions with steroids should be considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C51 are speculative statements about potential future applications and considerations. While these are reasonable hypotheses based on the presented data, they lack experimental validation. The suggestions about combination therapy (C49-C50) and drug interactions (C51) are logical extensions but remain untested. These represent discussion points rather than established results.",
+    "result_type": "MINOR"
+  }
+]

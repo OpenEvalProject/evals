@@ -1,0 +1,421 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C49"
+    ],
+    "result": "Propionate and butyrate, but not acetate, induce rapid, dose-dependent, and sustained increases in histone acetylation across multiple cell types without affecting histone methylation. This hyperacetylation phenotype persists for at least 24 hours and is generalizable across HCT116, HEK293, HepG2, and MCF7 cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C40-C49 provide converging evidence from quantitative proteomics experiments (Figure 1) showing differential effects of SCFAs on histone modifications. The data includes dose-response curves, time courses, and validation across multiple cell lines with appropriate controls (pH, glucose, viability). The consistency across cell types and robust statistical significance support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Intracellular SCFA concentrations are much lower than extracellular concentrations, with estimated intracellular levels of ~40 \u00b5M for butyrate and ~100 \u00b5M for propionate and acetate. The IC50 values for HDAC inhibition by propionate (223 \u00b1 64 \u00b5M) and butyrate (52 \u00b1 11 \u00b5M) suggest that intracellular SCFA levels may be insufficient to explain hyperacetylation through HDAC inhibition alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C61 are supported by metabolomics data (Figure 2C, Table 1) and HDAC inhibition assays. The comparison between intracellular concentrations and IC50 values is logical and supported by control experiments showing SCFA volatility. However, the inference that HDAC inhibition is insufficient relies on estimated intracellular concentrations, which have inherent measurement uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Propionate and butyrate are rapidly converted to acyl-carnitine species (appearing within 10 minutes and remaining stable for 24 hours), while acetate does not show this accumulation. No significant labeling of TCA cycle metabolites was observed, suggesting that propionate and butyrate are not extensively metabolized through the TCA cycle under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by isotope labeling experiments (Figure 2D-E) showing differential metabolic fates of SCFAs. The data consistently show acyl-carnitine accumulation across multiple cell lines (C67) with appropriate controls. The inference that hyperacetylation is due to acyl-CoAs rather than free SCFAs (C68) is logical given the metabolomics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Only 1-5% of histone acetylation after SCFA treatment comes from direct incorporation of labeled SCFA-derived acetyl groups. Knockdown of ACLY, ACSS2, and PCC had no significant effect on SCFA-induced histone acetylation, indicating that conversion of acyl-CoAs to acetyl-CoA is not the primary mechanism of hyperacetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by isotope labeling experiments (Figure 2B) and genetic knockdown studies (Figure 2\u2014figure supplement 2). The low percentage of labeled acetyl groups and lack of effect from enzyme knockdowns provide strong evidence against the direct incorporation mechanism. The use of both siRNA and genetic knockout (propionic acidemia cells) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Propionyl-CoA and butyryl-CoA induce dose-dependent increases in HAT activity of nuclear extract, while free propionate and butyrate have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by HAT activity assays (Figure 3A) showing differential effects of acyl-CoAs versus free SCFAs. However, the assay measures CoA release, which could reflect acyl-transfer reactions rather than specifically acetyl-transfer, as noted in the manuscript. This limitation is acknowledged but does not invalidate the finding that acyl-CoAs activate HAT activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Recombinant p300 catalyzes auto-acylation with propionyl-CoA and butyryl-CoA at rates indistinguishable from auto-acetylation with acetyl-CoA. All forms of acylated p300 (acetylated, propionylated, and butyrylated) show approximately 500% increased activity compared to unmodified p300, with no significant differences among the acylation types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by multiple biochemical assays including auto-acylation kinetics (Figure 3B), proteomics identification of acylation sites (Table 2), and radioactive HAT assays (Figure 3C). The use of heat-denatured controls (C80) confirms catalytic activity. The consistency across multiple experimental approaches and replicates (Figure 3\u2014figure supplement 1) strongly supports this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C95"
+    ],
+    "result": "Propionate and butyrate activate p300 through rapid conversion to acyl-CoAs, which catalyze auto-acylation of the autoinhibitory loop, activating the enzyme for histone/protein acetylation. This mechanism, rather than HDAC inhibition, plays a critical role in SCFA-induced chromatin hyperacetylation at low concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C85-C89, and C95 represent the central conclusion supported by pharmacological inhibition experiments (Figure 4A). A485 (p300 inhibitor) reverses SCFA-induced hyperacetylation, while SAHA (HDAC inhibitor) does not prevent additional acetylation from SCFAs. The logic is sound: if SCFAs acted solely through HDAC inhibition, saturating HDAC inhibition with SAHA should prevent further effects. The convergence of metabolomics, biochemical, and pharmacological data strongly supports this novel mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Cells transfected with a p300 mutant lacking functional autoinhibitory loop lysines (\u0394Glu) showed approximately 50% reduction in SCFA-induced histone acetylation compared to wild-type p300, demonstrating that AIL lysines are necessary for the full extent of hyperacetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by transfection experiments (Figure 4B). The \u0394Glu mutant shows reduced but not completely abolished hyperacetylation, which the authors attribute to residual endogenous p300 or remaining lysine sites. While this partial effect introduces some uncertainty, the significant reduction in acetylation with the mutant provides strong genetic evidence for the role of AIL lysines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "p300 immunoprecipitated from propionate and butyrate-treated cells shows increased propionylation, butyrylation, and HAT activity compared to untreated controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by immunoprecipitation experiments (Figure 4C, Figure 4\u2014figure supplement 1D). The increased activity and acylation of endogenous p300 from treated cells provides direct evidence that this mechanism operates in intact cells. However, the activity increases are described as 'small but significant,' suggesting the effect size may be modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Propionyl-CoA and butyryl-CoA do not inhibit HDACs at physiological concentrations, with IC50 values of 18 \u00b1 7 mM and 1.13 \u00b1 0.01 mM respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by HDAC inhibition assays (Table 1) showing that acyl-CoA IC50 values are orders of magnitude higher than physiological concentrations. This finding is critical for ruling out HDAC inhibition by acyl-CoAs as a mechanism and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Acetate's lack of effect on histone acetylation can be explained by its different metabolic fate: under normal conditions, acetyl-CoA is primarily generated from glucose in mitochondria and shuttled to the cytosol via citrate and ACLY, rather than from direct acetate metabolism. p300 auto-acylation and activation via SCFAs depend on robust cellular synthesis of the corresponding acyl-CoAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 provide a mechanistic explanation for acetate's differential behavior. The reasoning is supported by established metabolic pathways (C108-C110) and citations to prior literature (C111). The inference that p300 activation requires robust acyl-CoA synthesis (C112) is logical given the metabolomics data showing differential acyl-CoA/acyl-carnitine accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The historical attribution of SCFA effects to HDAC inhibition may be inadequate because: (1) IC50 values are high (50-300 \u00b5M in nuclear extract, 1-10 mM in whole cells), (2) SCFAs induce hyperacetylation across tissues with vastly different SCFA concentrations, (3) intracellular concentrations may be much lower than extracellular, (4) p300 auto-acetylation has much lower Km values (nM to low \u00b5M range), and (5) auto-acetylated p300 has extended half-life (>24 hr vs 4.5 hr), allowing sustained effects even after SCFA metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 synthesize prior literature with the current findings to challenge the HDAC inhibition paradigm. The arguments are well-supported by citations and logical reasoning. The comparison of IC50/Km values and protein half-lives provides quantitative support for why p300 activation may be more physiologically relevant than HDAC inhibition at low SCFA concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "p300 may be preferentially activated by acyl-CoAs because: (1) p300 auto-acylates at similar rates with all acyl-CoAs, (2) p300's Km for auto-acetylation (~100 nM) is lower than for histone acetylation (~6 \u00b5M), (3) p300 is less efficient at histone propionylation/butyrylation than acetylation, and (4) while longer acyl-CoAs can inhibit other HATs, they may preferentially activate p300 via auto-acylation, explaining why histone acetylation increases more robustly than propionylation or butyrylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 provide a mechanistic explanation for p300's selective activation. The reasoning integrates prior literature on HAT substrate preferences (C118, C120, C122) with the current findings (C121, C125). While some aspects are speculative (C123, C124), the overall model is consistent with the observed data showing robust acetylation increases but modest propionylation/butyrylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Butyrate may induce HDAC inhibition in the colon where concentrations often exceed 10 mM, which may explain why butyrate produces higher histone acetylation than propionate at 1 mM but not at 100 \u00b5M treatment concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 are supported by comparing IC50 values with physiological concentrations and experimental data from Figures 1 and 4. The dose-dependent difference between butyrate and propionate effects is consistent with butyrate's lower IC50 for HDAC inhibition, suggesting both mechanisms may operate at different concentration ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "SCFAs bind and activate GPCRs (FFAR2, FFAR3, HCAR2), but these receptors are not expressed in most cell lines studied and do not influence the hyperacetylation phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by prior literature (C126) and observations from the current study (C127, Figure 1C). This addresses a potential confounding mechanism and appropriately rules it out for the cell systems studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "SCFAs (acetate, propionate, butyrate) are produced in large quantities by gut microbiome fermentation of fiber, reach concentrations over 100 mM in the colon (ratio ~60:20:20), and contribute to various physiological processes including providing up to 10% of daily calories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C19 provide background information well-supported by multiple citations to prior literature. These establish the physiological context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Butyrate has been reported to improve intestinal barrier function, reduce inflammation, improve metabolic health, and prevent cancer, while extremely high propionate levels are associated with negative outcomes. SCFAs are generally believed to induce physiological effects by changing epigenetic state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 summarize prior literature with appropriate citations. These provide motivation for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Histone PTMs affect diverse processes from DNA accessibility to transcription factor binding. Histone acetylation opens chromatin and is regulated by HATs and HDACs. SCFAs have been reported to inhibit HDACs, with butyrate being the most potent, and HDAC inhibition has been proposed as a mechanism for various SCFA effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 provide established background on histone modifications and the prevailing HDAC inhibition hypothesis. These are well-supported by citations but represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The gut microbiome affects histone modifications systemically. Germ-free mice display distinct histone PTM patterns with decreased acetylation, and supplementing germ-free mice with SCFAs mimics bacterial colonization effects, suggesting SCFAs are a critical link between microbiome and epigenetic state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 summarize prior work from the authors' lab and others, providing motivation for the current mechanistic study. These findings are supported by citations but are not novel results from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The 1 mM SCFA dose used in experiments is within physiological concentrations in the colon (0.5-15 mM) but higher than concentrations in other body parts (0-150 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 provide important context for interpreting the experimental results, supported by citations to prior literature. This addresses the physiological relevance of the experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "p300/CBP acetylates numerous lysine sites and encodes an autoinhibitory loop that must be auto-acetylated to stimulate HAT activity. Mass spectrometry surveys have identified propionylation and butyrylation sites on p300 AIL, but their functional consequences were previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 provide essential background on p300 biology from prior literature. These establish the foundation for investigating p300 auto-acylation but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Acetate has been reported to increase histone acetylation only under extreme conditions (hypoxia) or after genetic manipulation, with others reporting no effect under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 summarize prior literature on acetate's effects, supported by citations. This provides context for the current finding that acetate lacks effect under normal conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "In cells treated with SCFA mixtures, acetylation increased based only on butyrate and propionate concentrations. The use of normal or dialyzed FBS did not affect the hyperacetylation phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 provide supporting observations consistent with the main findings. C113 is from prior literature, while C114 is a control experiment from the current study. These support the conclusion that acetate does not contribute to hyperacetylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "SCFA treatment phenocopies HDAC inhibitors in some cases but not others. Phosphatase or PKC inhibitors can reverse SCFA-induced hyperacetylation and are known to interact with p300.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 cite prior literature showing inconsistencies in SCFA effects and potential p300 interactions. These observations support the need for an alternative mechanism beyond HDAC inhibition but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Accumulation of acyl-CoAs after SCFA treatment has been previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 cites prior literature showing acyl-CoA accumulation, providing context that the metabolomics findings are consistent with previous observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Butyrate is the subject of over 100 clinical trials. Evidence suggests low SCFA concentrations can have different physiological effects while still increasing acetylation. Many studies use high SCFA doses (5-30 mM) that may not be necessary and could obscure biologically relevant pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 discuss the translational implications of the findings. C130-C132 are supported by citations or stated as facts about research practices. C133 is speculation about future research directions based on the current findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1718 @@
+{
+  "submission": {
+    "id": "c1e292dc-585e-4c72-9dd9-eeb4e431528f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:17:08.343929Z",
+    "updated_at": "2025-12-03T10:17:08.343929Z"
+  },
+  "content": [
+    {
+      "id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "submission_id": "c1e292dc-585e-4c72-9dd9-eeb4e431528f",
+      "content_type": "manuscript",
+      "content_text": "# Most primary olfactory neurons have individually neutral effects on behavior\n\n## Authors\n\n- Tayfun Tumkaya<sup>1</sup> ([ORCID: 0000-0001-8425-3360](https://orcid.org/0000-0001-8425-3360))\n- Safwan Burhanudin<sup>1</sup>\n- Asghar Khalilnezhad<sup>1</sup>\n- James Stewart<sup>1</sup>\n- Hyungwon Choi<sup>1</sup> ([ORCID: 0000-0002-6687-3088](https://orcid.org/0000-0002-6687-3088))\n- Adam Claridge-Chang<sup>1</sup> ([ORCID: 0000-0002-4583-3650](https://orcid.org/0000-0002-4583-3650)) \u2020\n\n### Affiliations\n\n1. Institute for Molecular and Cell Biology, A*STAR Singapore Singapore\n2. Program in Neuroscience and Behavioral Disorders, Duke NUS Graduate Medical School Singapore Singapore\n3. Department of Medicine, National University of Singapore Singapore Singapore\n4. Department of Physiology, National University of Singapore Singapore Singapore\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimals use olfactory receptors to navigate mates, food, and danger. However, for complex olfactory systems, it is unknown what proportion of primary olfactory sensory neurons can individually drive avoidance or attraction. Similarly, the rules that govern behavioral responses to receptor combinations are unclear. We used optogenetic analysis in Drosophila to map the behavior elicited by olfactory-receptor neuron (ORN) classes: just one-fifth of ORN-types drove either avoidance or attraction. Although wind and hunger are closely linked to olfaction, neither had much effect on single-class responses. Several pooling rules have been invoked to explain how ORN types combine their behavioral influences; we activated two-way combinations and compared patterns of single- and double-ORN responses: these comparisons were inconsistent with simple pooling. We infer that the majority of primary olfactory sensory neurons have neutral behavioral effects individually, but participate in broad, odor-elicited ensembles with potent behavioral effects arising from complex interactions.\n\n## Introduction\n\nAnimals interact with their environment using motor functions that are guided by information that enters the brain from multiple sensory systems. These diverse sensory inputs are thought to interact with each other, with previously stored information, and with the internal physiological state of the animal to elicit a more or less appropriate behavioral response. Two central problems of neuroscientific research are (1) how individual sensations influence behavior and (2) how multiple streams of sensory information are reconciled into meaningful behavior. The Drosophila olfactory system is an effective model to address these critical questions (Couto et al., 2005; Eisthen, 2002; Wang et al., 2003), facilitated by powerful genetic approaches, the ability to handle large sample sizes, and the numerical simplicity of Drosophila neural systems. Flies detect odors with their antennae and maxillary palps, which together contain ~1300 olfactory-receptor neurons (ORNs) (Lai et al., 2008). The odor-response profile of each adult ORN is determined by one of ~45 possible receptor types (Fishilevich and Vosshall, 2005; Gomez-Diaz et al., 2018). ORNs sharing the same receptor type converge on a glomerulus in the antennal lobe, where they synapse with local interneurons (LNs) and projection neurons (PNs) (Couto et al., 2005; Gao et al., 2000). Innervating throughout the antennal lobe and connecting multiple glomeruli, the LNs facilitate both excitatory and inhibitory interactions between glomeruli (Groschner and Miesenb\u00f6ck, 2019). This modified information is relayed by the PNs to higher brain centers, namely mushroom bodies and the lateral horn (Lai et al., 2008; Wang et al., 2014; Wong et al., 2002). The distinct nature of the ORN types allows us to consider each type as a single channel of information input. Mapping how ORNs steer behavior would inform a broader understanding of how sensory circuits influence behavioral output.\n\nOdor-induced activity in ORNs can trigger approach and avoidance behaviors, collectively referred to as behavioral \u2018valence\u2019 (Knaden et al., 2012). At least some ORN-driven behaviors appear to follow simple rules: a subset of receptors respond specifically to single odorants, and their ORNs individually drive innate valence (Ache and Young, 2005; Grabe and Sachse, 2018; Haddad et al., 2010; Haverkamp et al., 2018; Stensmyr et al., 2012; Suh et al., 2007). These acutely tuned, strongly valent ORN classes include neurons tuned to danger (e.g. toxic odorants) and pheromones. Given the direct relationship between such odors and valence, these ORN types and their associated downstream pathways have been termed \u2018labeled lines\u2019 (Grabe and Sachse, 2018; Hildebrand and Shepherd, 1997; Kurtovic et al., 2007). The existence of labeled lines proves that at least some olfactory behaviors follow simple ORN-activity rules.\n\nUnlike labeled lines, many other olfactory receptors are broadly tuned to respond to many odorants, and most pure odorants evoke responses across many ORN classes (Hallem and Carlson, 2006). As most olfactory behavior relies on activity in ORN groups, there is the outstanding question of how individual channels contribute to an odor\u2019s overall valence. It is not known how much more complex multi-ORN valence is compared to the relative simplicity of labeled-line behavior. Earlier studies have looked at whether multi-glomerular olfactory valence could be explained by statistical models of ORN or PN activity patterns. Depending on the type of experiments, some found that valence could be explained by simple rules, for example weighted summation of larval ORN activity (Kreher et al., 2008). Other studies found no relationship between single-glomerulus properties and odor-evoked behavior, or invoked more complex models of antennal-lobe function (Badel et al., 2016; Knaden et al., 2012; Kuebler et al., 2012; Meyer and Galizia, 2011). Due to the many\u2013many relationship of most odorants and ORNs, using natural odors to isolate single-ORN valence effects is challenging (Haddad et al., 2010; Knaden et al., 2012; Semmelhack and Wang, 2009; Thoma et al., 2014; Turner and Ray, 2009). One study overcame this challenge by activating single-ORN types optogenetically (Bell and Wilson, 2016). Using eight attractive ORN types the researchers found that two-way ORN valence combinations follow either summation or max-pooling; this supports the idea that olfactory valence arises from simple rules. Thus, both simple mechanisms (labeled lines, summation) and complex inter-channel interactions have been invoked to explain olfactory valence, but their relative importance remains controversial.\n\nThe present study had two primary aims: to map which single ORN types drive valence; and to examine the extent to which simple pooling rules govern ORN\u2013valence combinations. To do so, we measured the valence coding of the primary olfactory system by optogenetically stimulating single ORN classes. In the wild, olfaction typically occurs in windy environments, and is influenced by hunger state, so we explored whether single-type-ORN valence is similarly contingent on these factors (Bell and Wilson, 2016; Sengupta, 2013). We activated pairs of ORN types to investigate how their combinations influence valence, and built statistical models of ORN interactions. All the results indicate that ORN\u2013valence computations are complex.\n\n## Results\n\n### An optogenetic behavior assay reports on sensory valence\n\nWe investigated which single classes of primary chemosensory neurons can elicit preference behavior, and the capability of the present experimental system to replicate prior studies. Generating Drosophila lines that express the red-light-shifted channelrhodopsin CsChrimson (Chr) in different receptor neurons, we tested whether individual neuronal types drive attraction or avoidance. Flies were presented with a choice between light and dark environments in a wind- and light-induced self-administration response (WALISAR) apparatus (Figure 1A). We tested the validity of this approach with flies expressing the Chr channel under the control of the Gr66a-Gal4 driver line, which labels bitter-taste-sensing gustatory-receptor neurons (Moon et al., 2006) and has been previously reported to drive avoidance when artificially activated (Aso et al., 2014; Shao et al., 2017). In a sequence of 12 trials using three light intensities (14, 42, and 70 \u03bcW/mm2) and two airflow states (on/off), the experimental Gr66a > Chr flies displayed robust light avoidance (Figure 1B\u2013F; Figure 1\u2014figure supplement 1B\u20131D; Figure 1\u2014figure supplement 2). To benchmark the assay against a published method, we compared present data with prior results (Shao et al., 2017); the standardized effect size of Gr66a-neuron avoidance at the highest intensity (Cohen\u2019s d = \u20132.70 at 70 \u03bcW/mm2) was almost as large as that of the previously reported valence response (d = \u20133.63; Figure 1\u2014figure supplement 3A). This replication of aversive Gr66a-cell activation confirmed that this study\u2019s optogenetic-choice apparatus could be used to measure negative valence mediated by sensory neurons.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig1-v4.jpg)\n\n**Figure 1.:** (A) Side view schematic (top) showing air flow path and overview (bottom) of the WALISAR assay. Individual flies were placed in chambers and given a choice between no light or red-light illumination. Air flow was used in some experiments. (B) A representative path of a fly displaying strong light avoidance. The white line represents the location of a Gr66a-Gal4> UAS-CsChrimson fly in the chamber throughout an experiment. The light preference of each fly was calculated by how much time it spent in the illuminated zones after the initial encounter with light (yellow arrows). (C-E) Trace plots representing the mean location of controls (w1118; Gr66a-Gal4 and w1118; UAS-CsChrimson), and test flies (Gr66a-Gal4 > UAS-CsChrimson) throughout an experiment at 14, 42, and 70 \u03bcW/mm2 light intensities. The blue and orange ribbons indicate 95% CIs for the control and test flies, respectively. (F) An estimation plot presents the individual preference (upper axes) and valence (lower) of flies with activatable Gr66a+ neurons in the WALISAR assay. In the upper panel, each dot indicates a preference score (wTSALE) for an individual fly: w1118; Gr66a-Gal4 and w1118; UAS-CsChrimson flies are colored blue; and Gr66a-Gal4 > UAS-CsChrimson flies are in orange. The mean and 95% CIs associated with each group are shown by the adjacent broken line. In the bottom panel, the black dots indicate the mean difference (\u0394wTSALE) between the relevant two groups: the valence effect size. The black whiskers span the 95% CIs, and the orange curve represents the distribution of the mean difference.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig1-figsupp1-v4.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) In each experiment, the flies were subjected to 12 consecutive epochs: three light intensities that were applied in an increasing order (14, 42, 70 \u03bcW/mm2); with and without airflow; and the illumination side was flipped in alternating epochs. (B) The light preferences of control flies across the 12 epochs, as estimated by weighted time spent after light encounter (wTSALE). Each line represents a single fly; the green lines indicate w1118; Gr66a-Gal4 flies, and the orange lines indicate w1118; UAS-CsChrimson flies. The black dots represent the mean wTSALE scores of all control flies per condition; the whiskers indicate the 95% Cis. (C) The light preference of Gr66a-Gal4 > UAS-CsChrimson flies across the epochs. (D) The optogenetic effect sizes, calculated by taking the difference of test and control preferences (\u0394wTSALE).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig1-figsupp2-v4.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The number of occurrences of the control flies (w1118; Gr66a-Gal4 and w1118; UAS-CsChrimson, N 104) across the WALISAR chambers are drawn. The brown curves present the total number, the y axis represents the chamber, and the x axis is the frequency of occurrence (ranging between 0 and 2000). The red shading indicates the three light intensities; and the labels from S1 to S12 represent the 12 experimental epochs (Figure 1C). (B) The number of occurrences of the experimental flies (Gr66a-Gal4>UAS-CsChrimson, N 52) across the WALISAR chambers are summed and drawn for the 12 epochs. The blue curves represent the total number, the y axis represents the chamber, and the x axis is the frequency of occurrence (ranging between 0 and 1500).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig1-figsupp3-v4.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) A comparison of the Gr66a-mediated aversion (Cohen\u2019s d) between this study at different light intensities and Shao et al. at 5 \u00b5W/mm2 of blue light, both in still-air conditions (Shao et al., 2017). (B) The magnitude of the attraction (standardized effect size, Cohen\u2019s d) produced by Orco-neuron activation in the present study is compared to that of two previous studies (Bell and Wilson, 2016; Suh et al., 2007). The light intensity is shown in \u00b5W/mm2, while \u2018On\u2019 and \u2018Off\u2019 indicate the presence of wind.\n\nTo benchmark attraction behavior, we used an Orco-Gal4 driver line that labels ~70% of all ORNs (Larsson et al., 2004; Wang et al., 2003). Others have reported Orco-neuron valence results: one study showed no behavioral effect Suh et al., 2007; another found attraction in the presence of a wind cue only Bell and Wilson, 2016. In our experiments, at two higher light intensities (42 and 70 \u03bcW/mm2), Orco > Chr flies exhibited pronounced attraction even in still air (Figure 2G; Figure 2\u2014figure supplement 1). The valence was typically stronger than that reported in prior studies (e.g. d = 0.56 in still air in this study versus d \u2264 0.10), establishing assay sensitivity for attraction (Figure 1\u2014figure supplement 3B). Changing the temporal sequence of the 12 trials had negligible effects on Orco-neuron positive valence, suggesting that valence is not greatly susceptible to order bias, for example, due to habituation (Figure 2\u2014figure supplement 1). Driver and responder controls typically had very similar distributions (Figure 2\u2014figure supplement 2). Together with the Gr66a + results, these data indicate that WALISAR is a valid, sensitive assay for measuring the valence of chemosensory circuits.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig2-v4.jpg)\n\n**Figure 2.:** (A) An effect-size plot of the valence screen of 45 single-ORN types (and Orco neurons). Each dot represents a mean wTSALE difference of control (N\u2245 104) and test (N\u2245 52) flies, whisker indicate 95% CIs. The shades of red represent the three light intensities. Valent ORNs are shaded with magenta (aversion) or green (attraction). (B) The histogram (gray bars) of the median ORN \u0394wTSALE ratios, and the mixture model that is fit to the data by empirical Bayes method. The blue line represents the null distribution, while the magenta and green curves represent ORNs with negative and positive valences, respectively. The black line represents the overall distribution of the effect sizes. (C) The signed posterior probability that each valence score is a true behavioral change, plotted against the respective effect size (median effect across the three light intensities). (D-E) The olfactory valence of the Orco and four single-ORNs were tested in female flies (the male fly data is replotted from Panel A for comparison). The valence responses are represented as the mean difference (\u0394wTSALE) of control (N\u2245 104) and test (N\u2245 52) flies, along with 95% CIs. Color key is the same as above. (F-G) Estimation plots show the optogenetic preference (upper panel) and valence (lower panel) of flies with activatable Or67d and Orco neurons across three light intensities. The dots in the top panels represent single flies, while the broken lines indicate the mean and 95% CIs. The differences between the pairs of test and control groups are displayed in the bottom panel, where the whiskers are 95% CIs and the curves are the distributions of the mean difference.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The light preference of control flies and the mean wTSALE differences across 12 epochs, in which the light intensities were applied in an ascending order. The green lines represent w1118; Orco-Gal4 flies, and the orange lines represent w1118; UAS-CsChrimson flies. The black dots represent the mean wTSALE scores (with 95% CIs) per epoch. (B) The light preference of the control flies in which the light intensities were applied in a descending order. The green lines represent w1118; Orco-Gal4 flies, and the orange lines represent w1118; UAS-CsChrimson flies. The black dots represent the mean wTSALE scores (with 95% CIs) per epoch. (C) The light preference of the test flies in which the light intensities were applied in an ascending order. The blue lines represent Orco-Gal4 > UAS-CsChrimson flies. (D) The test flies\u2019 light preference was presented across the 12 epochs. The blue lines represent Orco-Gal4 > UAS-CsChrimson flies. (E) The mean wTSALE differences between the test and combined-control flies across the 12 conditions, in ascending order. The orange numbers indicate the order of the respective experiment. The flies were attracted to activity in the Orco + neurons in the absence of wind. (F) The mean wTSALE differences between the test and combined-control flies across 12 conditions in the descending order. The flies were attracted to activity in the Orco+ neurons in the absence of wind. (G) A comparison plot of the effect sizes from experiments in which the light intensities were applied in an ascending or descending order. The black dots represent the difference of the mean \u0394wTSALE differences (\u0394\u0394wTSALE) from the two differently ordered experiments. (H) The mean effect sizes of the ascending and descending light-intensity experiments across the epochs. The black dots represent the mean of the \u0394wTSALE differences (\u0394wTSALE) from the two differently ordered experiments along with 95% CIs.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig2-figsupp2-v4.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A-C) The olfactory valence of the Orco and four single-ORN types were tested in fed or starved female flies with or without airflow. The valence responses are represented as the mean difference (\u0394wTSALE) of control (N\u2245 104) and test (N\u2245 52) flies, along with 95% CIs.\n\n### Only one-fifth of ORN types drive valence\n\nWe aimed to estimate what proportion of single ORN types elicit valence when activated alone. Using available Gal4 lines, each driving expression in a single ORN type, we assessed the optogenetic valence of 46 receptor classes (Figure 2A). To separate the valence effects from noise, we analyzed data from ~7176 flies with the empirical Bayes method (Figure 2B\u2013C). The empirical Bayes analysis identified 10 valent classes: six ORNs elicited attraction and four elicited aversion (Figure 2A). The hits included six ORN classes with identified ligands. Four are considered labeled lines: Or56a, the receptor for the aversive odorant geosmin; Gr21a, the receptor for the aversive odorant carbon dioxide; Or67d, the receptor for the pheromone 11-cis-vaccenyl acetate; and Or47b, which senses the pheromone palmitoleic acid (Davis, 2007; Jones et al., 2007; Kurtovic et al., 2007; Lin et al., 2016; Stensmyr et al., 2012; Suh et al., 2004; van der Goes van Naters and Carlson, 2007). Additionally, Or83c mediates attraction to farnesol, an odorant produced by some ripe fruits (Ronderos et al., 2014), while Or42b mediates attraction to vinegar (Semmelhack and Wang, 2009). Given that this screen successfully recaptured six ORN types already known to be involved in ecologically relevant valence functions, we consider that the screen was valid and sensitive. Furthermore, the majority of the hits being ORNs with already-established valence implies that most ORNs are not singly valent.\n\nTo contextualize the screen\u2019s outcome, we conducted a literature review, tabulating prior and current results in ORN valence (Supplementary file 1), from 16 studies including this one (Bell and Wilson, 2016; Chin et al., 2018; Dweck et al., 2013; Faucher et al., 2006; Gao et al., 2015; Hernandez-Nunez et al., 2015; Jung et al., 2015; Knaden et al., 2012; Mathew et al., 2013; Poon et al., 2010; Ronderos et al., 2014; Semmelhack and Wang, 2009; Stensmyr et al., 2012; Suh et al., 2007; Suh et al., 2004). Although methodological diversity precludes a formal, quantitative meta-analysis (Borenstein et al., 2009; Tumkaya et al., 2018), it is clear that\u2014for many ORNs\u2014a consensus on valence is lacking. For example, the ORN screen showed that two additional, pheromone-responding ORNs (Or88a and Or65a) were not Empirical-Bayes hits (Chin et al., 2018; van der Goes van Naters and Carlson, 2007); however, no prior single-ORN data have shown these ORN types to individually drive valence (Supplementary file 1). It is possible that the behavioral effects of Or88a and Or65a depend on the presence of other cues or the activation of other receptors.\n\nWe only used male flies in the screen. Because odor responses in female flies might differ\u2014especially for pheromonal receptors\u2014we checked for possible sex differences in five receptor classes: Orco cells and four pheromone-responsive ORNs (Figure 2D\u2013E). Although male flies exhibited strong responses to Orco-neuron activation, females showed no response. Surprisingly, this lack of response in females turned into a strong attraction when they were starved (Figure 2\u2014figure supplement 2). Only one pheromone-receptor class showed sexual dimorphism: activation of Or47b neurons (sensors of an aphrodisiac pheromone) was attractive to males, while females were indifferent.\n\nTogether, these results indicate that in isolation, most ORN classes do not drive valence. The presence of six known valent ORN types in the 10 hits, and the predominance of neutral ORNs suggest that most olfactory channels influence behavior only when activated in concert as part of an odor-evoked ensemble. It should be noted, however, that this initial analysis was performed on flies measured in still air\u2014an abnormal condition in the wild.\n\n### Wind does not amplify single-ORN valences\n\nIt has been previously reported that wind is essential for the optogenetic valence of Orco neurons (Bell and Wilson, 2016). We thus aimed to test the hypothesis that wind amplifies ORN valence, possibly eliciting valence in some otherwise non-valent ORN classes. We tested this in the same flies by also measuring the valences of 46 ORN types in the presence of airflow (Figure 3A). From each fly, we used the paired wind\u2013no-wind responses to calculate wind-specific effect sizes, \u2206\u2206, for each light intensity and each ORN type (Figure 3B). With a lone exception (wind rendered Or59b valence more aversive in the lowest light intensity only), an empirical-Bayes model found that the wind effect sizes were indistinguishable from noise (Figure 3C\u2013D). Contradicting our hypothesis, this result indicates that wind has essentially no impact on single ORN type-elicited behavior in walking flies. This result also generalizes the finding that, in either still or windy conditions, only a minority of ORN classes individually drive valence.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig3-v4.jpg)\n\n**Figure 3.:** (A) The results of ORN valence assays in the presence of airflow. The red dots represent the mean wTSALE differences of control (N \u2245 104) and test (N \u2245 52) flies with the 95% CIs. (B) The differences between the effect sizes of air-on and air-off experiments (\u0394\u0394wTSALE). The magenta shaded box indicates the sole empirical Bayes hit, Or59b, that showed an increase in aversion at the lowest light intensity only. (C) A statistical mixture model was fitted to the \u0394\u0394wTSALE scores. The grey bars are the response histogram. The magenta and green curves represent the effect sizes that differ from the null distribution (blue line). The black line represents the overall distribution of the \u0394\u0394wTSALE scores. (D) The signed posterior probabilities of the \u0394\u0394wTSALE scores being true behavioral changes versus their median effect sizes. The overall probability of true wind effects was nearly zero [p(\u2206\u2206wTSALE) \u2245 0.0].\n\n### Hunger has a limited effect on single-ORN valence\n\nChemosensory behaviors\u2014for example gustatory and olfactory responses\u2014are influenced by an animal\u2019s internal energy state. Low internal energy, for example, can sensitize food odor-responsive ORNs and drive foraging (LeDue et al., 2016; Sengupta, 2013; Zhou et al., 2010). We hypothesized that starvation would thus increase the single-ORN valence behavior, especially for attractive ORN types. To test this hypothesis, we assayed ~7176 starved flies for their optogenetic ORN valence (Figure 4A), and compared their behavior with that of the fed flies described above. Surprisingly, starvation did not enhance attraction. On the contrary, it reduced the responses triggered by three otherwise attractive ORNs: Or42b, Or47a, and Or83c (Figure 4B). Starvation also shifted the otherwise neutral valences of Or85f and Or49a, two receptors involved in sensing wasp odors (Ebrahim et al., 2015), into aversion (Figure 4B). Thus, hunger reduced the positive valence of a few pheromone- and food-sensing-ORNs, while slightly increasing the aversiveness of predator-sensing ORN classes. Overall, hunger does not have a broadly amplifying effect on single-ORN valence.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig4-v4.jpg)\n\n**Figure 4.:** (A) An ORN valence screen for starved animals. The red dots indicate the mean wTSALE differences between control (N \u2245 104) and test (N \u2245 52) flies. (B) The mean differences between fed and starved flies across ORNs. The magenta shading indicates the ORNs that are affected by starvation according to the Empirical-Bayes analysis. (C) A histogram of the median \u0394\u0394wTSALE ratio distribution. The blue line represents the null distribution, the magenta and green curves represent the distributions of negative and positive valences that are separated from the null distribution, and the black line represents the overall \u0394\u0394wTSALE distribution. (D) The signed posterior probability of the \u0394\u0394wTSALE scores being true behavioral changes are plotted against their median ratios.\n\n### ORN-valence combinations follow complex rules\n\nBecause the ORN screens showed that most single ORN types do not drive valence individually, it would appear that activity across multiple sensory channels simultaneously is required to drive most (non-labeled-line) olfactory behavior. One hypothesis of combinatorial odor valence holds that ORN-combination behaviors arise from simple two-way pooling rules: summation and max-pooling (both widely used in neural-net construction) (Bell and Wilson, 2016; Goodfellow et al., 2016).\n\nTo address this hypothesis, we asked how single-ORN valences are combined when two ORN classes are activated. We crossed eight ORN driver lines (three positive, two negative, and three neutral) so as to generate seven, two-way ORN combinations (henceforth \u2018ORN-combos\u2019). Compared to their constituent single ORNs, the ORN-combos elicited distinct valences (Figure 5A, B and F). We modeled the combination effect sizes with three pooling functions: summation, max-pooling, and min-pooling (Figure 5C\u2013E). Strikingly, regression showed that none of the three functions could account for a large proportion of ORN-combo valence: summation, min-pooling, and max-pooling all had coefficients of determination of ~0.2 or lower (Figure 5\u2014figure supplement 1A-C). Furthermore, Bland-Altman method-comparison plots revealed wide limits of agreement (LoAs) between the observed and predicted ORN-combo valences by all three models: summation [SD1.96\u20130.45, 0.28], max-pooling [SD1.96\u20130.34, 0.13], min-pooling [SD1.96\u20130.1, 0.35] (Figure 5\u2014figure supplement 1D, E, F). This analysis thus demonstrates that none of these three simple pooling rules are major predictors of how two-ORN odor valence emerges from single-ORN valence.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig5-v4.jpg)\n\n**Figure 5.:** (A) Valence responses of the single-ORN lines used to generate ORN-combos (replotted from Figure 1). The dots represent the mean valence between control (N\u2245 104) and test (N \u2245 52) flies (\u2206wTSALE with 95% CIs). The shades of red signify the three light intensities. (B) The valence responses produced by the ORN-combos in the WALISAR assay in three light intensities. (C\u2013E) ORN-combo valences as predicted by the summation (C), max pooling (D) and min pooling (E) models. (F) Three positive (green), two negative (magenta), and three neutral (gray) ORNs were used to generate seven ORN two-way combinations. (G\u2013I) Scatter plots representing the influence of individual ORNs on the respective ORN-combo valence. The red (G), maroon (H), and black (I) dots indicate ORN-combos at 14, 42, and 70 \u03bcW/mm2 light intensities, respectively. The horizontal (\u03b21) and vertical (\u03b22) axes show the median weights of ORN components in the resulting combination valence. (J) Euclidean distances of the ORN-combo \u03b2 points from the diagonal (summation) line in panel J. The average distance increases as the light stimulus intensifies: 0.14 [95CI 0.06, 0.23], 0.20 [95CI 0.06, 0.34], and 0.37 [95CI 0.20, 0.53], respectively. (K) The \u03b2 weights of the ORN-combos from the multiple linear regression are drawn as the signed distances of each ORN-combo from the diagonal line over three light intensities. The ORN weightings change magnitude and, in a few cases, the dominant partner changes with increasing optogenetic stimulus.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig5-figsupp1-v4.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A-C) Simple linear regression analyses of the experimental ORN-combo results and the predictions by the (A) summation, R2 = 0.2 [95CI 0.01, 0.49], p = 0.04; (B) max-pooling R2 = 0.11 [95CI 0.00, 0.32], p = 0.14; and (C) min-pooling R2 = 0.18 [95CI 0.0, 0.5], p = 0.06 functions. (D\u2013F) Agreement analysis of the observed and predicted ORN-combo valence responses by three pooling functions. Bland-Altman plots of ORN-combo valence responses and predictions by the (D) summation, (E) max-pooling, and (F) min-pooling models. Even though the mean difference of the two tested values (y axis) is low in all models, the limits of agreement (SD \u20131.96, + 1.96) are sufficiently wide for them to be considered dissimilar.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig5-figsupp2-v4.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Associations between ORN-combos and their constituent single-ORN types are tested by using a multiple linear regression analysis approach. ORN1 and ORN2 columns indicate the odor receptor types that are used to generate the respective ORN-combo. The light intensity used in the experiments are shown in the intensity (Int; \u00b5W/mm2) column. \u03b21 and \u03b22 columns present the bootstrapped \u03b2 distributions of the ORN1 and ORN2, respectively; the y axes indicate the count, and are all plotted using the same scale.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig5-figsupp3-v4.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) The heatmap of hierarchical clustering shows the 27 \u00d7 27 Pearson correlation coefficients among the 23 ORN types and eight LVs from PLS-DA analysis. The internal correlation of LVs and their constituent ORN-types is indicated by color, where blue and red ends of the spectrum represent negative and positive correlations, respectively. The three ORN types that produced a valence response in the WALISAR screen are highlighted in orange. (B) A scatter plot displays projection of 110 odorants to two-dimensional LV space. The valence of the odorants are shown with a color gradient ranging from red to green, indicating aversive and attractive odorants, respectively.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71238/elife-71238-fig5-figsupp4-v4.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Performance of a multiple linear regression (MLR) model is shown as the training data size is incrementally increased. The y-axis indicates the root-mean-squared-error (RMSE), while the x-axis is the size of the training data-set. The green and red traces in all the panels represent error rates on training and 10-fold cross-validation test data, respectively. (B) Learning curve of a support vector regression (SVR) model with a linear kernel is drawn. Both MLR and SVR linear models show convergent learning curves. (C) Performance of a support vector regression (SVR) model using a non-linear, polynomial kernel is plotted over an increasing training data-set size. (D) Error rates of a support vector regression (SVR) model with a non-linear, radial-basis-function kernel are plotted over a growing training data size. Both nonlinear models\u2019 learning curves fail to converge, indicating overfit.\n\nTo generalize this analysis, we built multiple-linear regression models of ORN-combo associations (Figure 5\u2014figure supplement 2). In these models, as the effect sizes are standardized on both individual ORNs and combos, the estimated \u03b2 weights indicate the relative contribution strength of each of the two ORN classes. We drew scatterplots of the medians of \u03b2 values for the three light intensities (Figure 5GHI). If the combination valences arose from summation, we would expect the \u03b2 points to cluster along the diagonal (equal contribution); if combination valences followed max- or min-pooling, we would expect points clustering along the axes. However, the \u03b2 points were dispersed, indicating a diversity of pooling rules. Moreover, as the light intensity increased, the \u03b2 points shifted further away from the diagonal (Figure 5J) and, in some cases, flipped dominance (Figure 5K). For these ORN-type pairs, increasing intensity is associated with two phenomena: one of the two ORNs tends to become more dominant; and the combination rules are different at different activity levels. Thus, the interactions between ORN pairs vary depending on receptor identity and stimulus intensity.\n\n### Single ORN information predicts odor behavior poorly\n\nThe variable interactions between pairs of ORN types support the idea that olfactory valence is determined by complex dynamics in multiple layers of downstream circuits. So we anticipated that models using ORN activity would not be strongly predictive of odor valence. To explore this, we drew on data from two previous studies that used a panel of 110 odorants: one used the odor panel to make physiological recordings from 24 ORN types\u2014of which 23 were tested for behavioral valence in this study (Hallem and Carlson, 2006); the other study measured behavioral valence for all 110 odors (Knaden et al., 2012). We adopted a partial-least-squares discriminant analysis (PLS-DA), to reduce the 23-dimensional feature space into fewer latent variables (LVs) with internal correlation (Figure 5\u2014figure supplement 3A). Various models based on various numbers of LVs could partially predict odor preference. A multiple linear regression (MLR) model with eight LVs had the best performance, with an adjusted coefficient of determination (R2adj) of 0.23. While the two-dimensional space defined by the first two LVs supports a partial separation of aversive and attractive odors (Figure 5\u2014figure supplement 3B), the low R2adj score indicates that linear combinations of the available ORN-activity patterns are only weakly predictive of valence. The poor predictiveness of both the MLR model and a support-vector regression model were further confirmed by cross-validation (Supplementary file 2 - Sheet 1). For non-linear models, performance was limited by the relatively small sample size: two models with non-linear kernels (polynomial and radial basis function) had high error rates and learning curves indicating overfit (Supplementary file 2 - Sheet 1, Figure 5\u2014figure supplement 4). Lastly, we asked whether the models could be improved with incorporation of the optogenetic valence data. Although valence-weighting improved the R2adj of the MLR model from 0.23 to 0.33, the predictive performances of the models were not improved (Supplementary file 2 - Sheet 2). This further supports the hypothesis that linear combinations of ORN activity can only account for a minority of odor preference.\n\n## Discussion\n\n### Most ORN classes have no individual effect on valence\n\nThis study\u2019s primary goal was to identify the proportion of ORNs that can drive valence behavior individually. The screen results indicate that 10/45 of single ORN-types have the ability to influence locomotor preference. Thus, most ORN types are not individually valent. Of the 10 valent ORN types, 6 have previously known roles in valence: two sensors each for pheromones, chemical-threat odorants, and food-aroma molecules. So the past two decades of Drosophila olfaction research have already identified a large proportion of strongly valent ORN types. The screen identified four novel valent ORNs (85d, 59 c, 35 a, 47 a) with ligands and ecological roles yet to be determined. Around 60% of pure odorants are valent (Knaden et al., 2012), while at least three of the known valent ORN classes (those for geosmin, CO2, and cVA) are specialized to bind specific ligands exclusively. This disconnect between a preponderance of valent odorants (~60% of odorants) and the scarcity of broadly tuned, valent ORN types ( \u2264 15%) implies that most olfactory valence arises from combined activity in multiple ORN classes (Mathew et al., 2013; Parnas et al., 2013). This idea is also supported by the Orco activation result showing that broad activation across ~70% of ORNs drives strong attraction.\n\n### Wind and hunger effects on ORN valence are minor\n\nAnother goal of this study was to ask whether two contextual factors\u2014wind and hunger\u2014would increase olfactory valence. Prior studies observed that the Orco neurons are either not optogenetically valent or that airflow is essential for valence (Bell and Wilson, 2016; Suh et al., 2007). However, our experiments showed that olfactory neurons elicit valence without airflow, and that wind has little to no amplifying effect (Figures 1C and 2). Note also that even though Drosophila larvae behavioral tests are routinely performed in still air, they display both olfactory behavior and optogenetic ORN valence (Bellmann et al., 2010; Hernandez-Nunez et al., 2015; Mathew et al., 2013). Thus, the overall evidence indicates that Drosophila ORNs influence valence behavior even without wind. A second factor, hunger, has also been reported to increase olfactory attraction (Gelperin, 1971; Ko et al., 2015). However, in the single-ORN screen, starvation had modest effects on valence (Figure 4). If anything, valence was somewhat lower for several attractive ORNs (Figure 4B). There are at least two plausible explanations as to why starvation did not affect many single-ORN valences. First, the difference in olfactory responses between fed and starved animals might only be pronounced for weaker olfactory stimuli: one study showed that the ethyl acetate (EA) response difference between fed and starved flies declines as the EA concentration increases (Chakraborty, 2010). So optogenetic activation might be too strong to observe the starvation effect. Second, ORNs likely have less influence in isolation. Co-activated glomeruli modulate each other via lateral inhibition and excitation (Groschner and Miesenb\u00f6ck, 2019; Huang et al., 2010; Shang et al., 2007; Wilson, 2008). As most odors activate multiple ORN types, any hunger effect might require these lateral signals. One study found that five vinegar-responsive ORNs are modulated by hunger only when activated in concert, but not when they are activated in subsets (Root et al., 2011). In our results, a notable exception was the hunger switch of Orco valence in females (Figure 2\u2014figure supplement 2). The absence of hunger amplification in single-ORN valence\u2014and its presence in female Orco valence\u2014also suggests that the potentiating effects of hunger on olfactory attraction might only operate on multi-ORN stimuli like Orco activation and natural odors. That neither wind nor hunger increased valence of single-ORNs verifies that the majority of single receptor types, on their own, do not convey valence information. Together, the single-ORN results support the idea that most odor-guided locomotion arises from the broad activation of ORNs simultaneously.\n\n### How is ORN information combined?\n\nMany individual odorants bind multiple olfactory receptors, and most natural odors are complex blends that activate receptors broadly, such that odors typically activate multiple ORN classes. A number of groups have constructed statistical models of the relationship between initial layers of olfactory systems and their eventual valent locomotion (Badel et al., 2016; Bell and Wilson, 2016; Kreher et al., 2008; Kuebler et al., 2012; Kundu et al., 2016; Meyer and Galizia, 2011; Mohamed et al., 2019; Riffell et al., 2009; Thoma et al., 2014). The existence of labeled lines indicates that, at least for some odorants and their receptors, ORNs can have a deterministic effect on valence. In a model of Drosophila larval olfaction, the weighted summation of ORN activity in just five of 21 receptors could be used to predict odor valence (Kreher et al., 2008). In adults, an optogenetic study of ORNs reported that combination valences could be explained by summation and/or max-pooling (Bell and Wilson, 2016), further supporting a direct relationship. Summation and max-pooling correspond to special cases of two-way combination weightings of (0.5, 0.5) and (0, 1), respectively; the present analysis found little support for such equal or all-or-none weightings. Rather, the ORN combinations have diverse, intermediate valence weights within the weight space. Moreover, these weights shift as the stimulus intensity increases, and appear to even swap dominancy at different intensities. These features suggest complex ORN-channel interactions.\n\n### Possible models of ORN combination\n\nThe variability of \u03b2 values across a range of stimuli indicates that (1) single-ORNs can contribute a dynamic range of weights when co-activated, (2) the experiment captured particular instances of ORN activation from these many possible neural response mechanisms, and (3) that many ORN combinations likely share downstream targets. Therefore, we can cautiously infer that the underlying neural network is multifactorial (Qiu et al., 2021) and perhaps context-specific. Several kinds of complex architectures and dynamics could contribute to multi-ORN valence. The increasing dominance of one ORN observed in some of the pairs suggests competitive, antagonistic interactions between channels, such as those mediated by broad lateral synaptic inhibition (Olsen and Wilson, 2008) or ephaptic inhibition between neighboring ORNs (Su et al., 2012). Alternatively, motor programs associated with valence might only require a subset of channel combinations to be active, with the remainder playing ancillary roles. However, reverse-engineering the exact combination mechanisms through estimated \u03b2 values would require a larger set of experiments with distinct stimuli. Translating the patterns of \u03b2 shifts into the specific structure of the neural network carries the risk of over-interpreting the current data set.\n\n### Technical differences between studies\n\nIt is relevant to note that several of our conclusions on olfactory valence, notably the nature of ORN-valence combination, diverge from those made in an earlier study (Bell and Wilson, 2016). Along with sampling error, it is possible that these discrepancies can be attributed to differences in experimental design and analysis, some of which are summarized in Supplementary file 2 - Sheet 3. Here, we discuss the different ways the optogenetic valence effect was controlled. As Chrimson was not available at the time, the earlier study used Channelrhodopsin-2 (ChR2), which requires intense blue light (up to 1500 \u00b5W/mm2) that adds significant heat and elicits strong responses in the fly visual system (Supplementary file 2 - Sheet 3). As these stimuli can profoundly alter behavior, especially during a lengthy illumination regime (64 min total), the researchers used genetically blind flies and an infrared laser for compensatory heat. While these technical measures were prudent, they were used largely in place of genetic controls: relative to the experimental animals (N = ~ 2512), the study used few responder UAS controls (N = 88) and no driver Gal4 controls (Supplementary file 2 - Sheet 3). The earlier study appears to have averaged technical replicates to represent behavioral variation, a procedure that under-reports variation (Bell, 2016). The present study dealt with these issues with two changes. First, it was able to make use of the Chrimson channel, which requires lower light intensity and a red wavelength to which the fly eye is less receptive. Second, all non-optogenetic effects were accounted for with balanced experimental, driver, and responder groups (N = ~ 5148 in each group). In our opinion, our approach of testing all three groups in sufficient sample sizes\u2014and using them to calculate effect sizes\u2014enables the exclusion of all confounding influences, including heat, visual effects, and genetic background.\n\n### Limitations of the study\n\nThis study incorporates at least four assumptions that potentially limit the generalizability of the findings. First, the use of narrow chambers effectively canalizes fly locomotion into one dimension (Bell and Wilson, 2016; Claridge-Chang et al., 2009). While this simplifies analysis, it could either alter valence, and/or increase locomotion relative to either broader chambers or behavior in the wild. Second, although the olfactory receptors have been shown to express in specific ORN types (Couto et al., 2005; Fishilevich and Vosshall, 2005), we cannot rule out that they might express elsewhere in the fly nervous system, so some of the valence results could be the result of activity in several neuron types. Third, optogenetic light is not equivalent to odor stimulation: there may be differences in firing rate, response dynamics, or other features of ORN stimulation that mean these data are not directly generalizable to odor-elicited activity. Fourth, no electrophysiological recordings were made from the optogenetically activated ORNs, so their firing rates relative to odor-elicited activity are unknown; published recordings from optogenetic and odor stimuli suggest an approximately five-fold difference in firing rates in some cases (Bell and Wilson, 2016; Hallem and Carlson, 2006).\n\n### Do single-ORN-class properties govern valence?\n\nWhile larval valence has been predicted with a summation model, similar models for olfactory behavior in other systems have not been successful. Studies in various model animals have invoked complex computations to explain olfactory valence (Duchamp-Viret et al., 2003; Kuebler et al., 2012; Kundu et al., 2016; Meyer and Galizia, 2011; Riffell et al., 2009; Shen et al., 2013; Silbering and Galizia, 2007). In adult Drosophila, an analysis of the physiological and behavioral responses to 110 odors found that ORN activities and odor valence have no linear correlation (Knaden et al., 2012), suggesting that valence determination could arise from a downstream computation, for example in the antennal lobe, where incoming ORN activity patterns and outgoing projection-neuron activity patterns are dissimilar (Groschner and Miesenb\u00f6ck, 2019). Indeed, the physiological-activity patterns in projection neurons have been reported to be at least partially predictive of odor valence (Badel et al., 2016; Knaden et al., 2012; Parnas et al., 2013), leading to the idea that the antennal lobe extracts valence features. To examine this, we modeled published ORN activity and valence data sets, finding that linear models of ORN activity data could account for a minor fraction of olfactory-behavior variance, and this was not substantially improved with single-class ORN valence information. All the observations in the present study point to a minimal role for simple pooling rules, and support the idea that odor valence is primarily governed by complex circuit dynamics.\n\n## Materials and methods\n\n### Drosophila strains\n\nFlies were raised on fly medium (Temasek Life Sciences Laboratories, 2018) at 25 \u00b0C in a 12 hr light:12 hr dark cycle. For optogenetic experiments, the flies were kept in the dark and reared on fly food supplemented with 0.5 mM all-trans-retinal (Sigma-Aldrich, USA) for 2 days prior to experimentation. For starvation experiments, the flies were reared on 2% agarose for 12\u201318 hr prior to the assay. Wild type flies were cantonized w1118; all the ORx-Gal4 and UAS-CsChrimson strains were obtained from the Bloomington Drosophila Stock Center (USA) (Supplementary file 2 - Sheet 4) (Couto et al., 2005; Dobritsa et al., 2003; Klapoetke et al., 2014; Vosshall et al., 2000).\n\n### Optogenetic preference assay\n\nThe wind- and light-induced self-administration response (WALISAR) assay was conducted as follows. Two rectangular assemblies (11.5 \u00d7 14.5 \u00d7 0.3 cm) were cut from acrylic sheets; each assembly contained 26 chambers (50 \u00d7 4 \u00d7 3 mm), herein referred to as WALISAR chambers. Airflow inlets and outlets were milled into the ends of each chamber. Optogenetic illumination was achieved using LEDs [LUXEON Rebel LEDs on a SinkPAD-II 10 mm Square Base; red (617 nm), green (530 nm), blue (470 nm), each equipped with lenses (17.7\u00b0 10 mm Circular Beam Optic)] and attached to heatsinks located above the arena on both sides at a ~ 45\u00b0 angle. The LEDs were grouped by color and were powered by 700 mA BuckPuck drivers. Custom instrumentation software (CRITTA) was used to control the intensity and timing of the LEDs throughout the experiments. To achieve a half-dark/half-lit arena for the optogenetic choice experiments, two black acrylic shields were placed between the arena and the LEDs on each side and were adjusted to cast shade on either half of the chamber. By switching the LEDs on either side, the half of the arena that was lit could be alternated. The temperature difference between the dark and lit halves of the WALISAR chambers that could arise from the LED illumination was measured for the duration of a whole experiment using thermocouples, and found to be a negligible ~0.3 \u00b0C (https://doi.org/10.5281/zenodo.4545940). Compressed air was connected to the airflow inlets of the arena, with an intervening stopcock valve (Cole-Parmer) to modulate the flow rate. The air flow in all experiments using wind was 35 cm/s, as described in a previous study (Bell and Wilson, 2016). The airflow was measured before every experiment with an airflow meter (Cole-Parmer).\n\nFlies were collected 2\u20133 days before experiments and cold anesthesia was administered immediately prior to their transfer into the WALISAR chambers. Unless otherwise stated, each experiment typically used sample sizes of N = ~ 104 Gal4 and UAS controls and N = ~ 52 test flies. Transfer to individual chambers took around 5 min. A single experimental cycle consisted of: acclimatization of the flies for 30 s; illumination of the left half of the arena for 45 s; no illumination for 30 s; illumination of the right half of the arena for 45 s; and no illumination for 30 s. The chambers were manually tapped against the incubator base before each cycle. Each group of flies was tested in six conditions comprising three light intensities (14, 42, 70 \u00b5W/mm2), each with and without wind (35 cm/s) (on/off), totaling 12 steps (S1\u2013S12) (Figure 1\u2014figure supplement 1A). The total experiment duration was 180 s \u00d7 12 = 2160s = 36 min. The light intensities were measured with a thermal power sensor (Thorlabs S310C) connected to a power and energy-meter console (Thorlabs PM100D). The flies were recorded with an AVT Guppy PRO F046B camera fitted with an IR bandpass filter, which was positioned on the top of the arena. The camera was connected to a computer running custom LabVIEW software (CRITTA), which was used to determine the flies\u2019 head positions.\n\n### WALISAR protocol and validation\n\nGiven that the ordering of the experiments in repeated-measure designs can affect outcomes, the WALISAR protocol was tested with two sets of experiments performed on Orco-Gal4> UAS-CsChrimson flies, in an ascending or descending light-intensity order (Collie et al., 2003; Howitt and Cramer, 2007; McCall and Appelbaum, 1973). The responses in the two orders were similar for eight of the 12 epochs, being different only for S2, S3, S10, and S11. The difference was due to the weak valence responses in the second- and third-order epochs: S2 and S3 produced lower effects in the ascending order (Figure 2\u2014figure supplement 1E), S10 and S11 produced lower effects in the descending order (Figure 2\u2014figure supplement 1F). The underestimation of the second- and third-order epochs had little effect on the overall interpretation of the results because eight of the epochs generated similar results. Moreover, even a hypothetical extreme case in which the valence is overlooked in the second- and third-order epochs would result in a false negative, rather than a false positive. As such, the experimental order was concluded to not have a major effect on the WALISAR results. Additionally, the effect sizes in the first epoch tended to be smaller than the second epoch when the light was downwind of the air flow (Figure 2\u2014figure supplement 1); to eliminate this bias, only second epochs were used for further data analysis.\n\nOne concern is that the activity rates and temporal structure of optogenetic stimulation are likely different from direct odor stimulation. To mitigate this, we conducted a study of the effect of optogenetic temporal structure, finding that\u2014while this is a relevant concern\u2014continuous illumination is a more conservative method (Tumkaya et al., 2019). We also benchmarked behavioral responses for the Orco neurons against results from a prior study that performed physiological recordings and used a different temporal structure (Bell and Wilson, 2016), finding that the WALISAR protocol has comparable sensitivity (Figure 1\u2014figure supplement 3).\n\n### WALISAR data analysis: the wTSALE metric\n\nFly-position data were analyzed with custom Python scripts. The valence of each fly was measured in terms of how much time it spent in the light after first encountering one of the lit zones. Specifically, the first frame in which a fly entered the lit zone was considered the start of the test session; after this initial light encounter, the amount of time spent in the dark was subtracted from time spent in the light and finally divided by the total amount of time. This metric is designated \u2018Time Spent After Light Encounter\u2019 (TSALE). The duration between the first light discovery and the end of the light epoch varied across individual files, from never discovering the light (0 s) to being exposed to the light at the start of the epoch (60 s). As such, each fly\u2019s TSALE score was weighted by the post-light duration, termed \u2018weighted Time Spent After Light Encounter\u2019 (wTSALE). This weighting was achieved by multiplying the TSALE with the ratio between the remaining time and the full duration of the test epoch. The wTSALE score was calculated for each fly and then averaged for the control and test genotypes. To calculate the effect sizes, responder and driver controls were pooled into a single control group. The mean difference (\u2206) between the pooled-control and test groups was taken as the effect size (\u0394wTSALE). The \u2206 distributions and 95% bootstrapped confidence intervals (CIs) were calculated using the DABEST Python package (Ho et al., 2019), and presented in the results in the following format: \u201c\u2206 [95 CI lower bound, upper bound].\u201d\n\n### Overview of the Empirical Bayes method\n\nEmpirical Bayes (EB) is a method for statistical inference using Bayesian hierarchical models. While relatively unknown in behavioral genetics, EB is widely used to filter omics data, having been originally developed for microarray data, and currently routinely used for, among other applications, mass spectrometry proteomics (Koh et al., 2019). This approach is intrinsically connected to the traditional analysis workflow based on hypothesis testing with multiple-testing correction, but with a major difference (Efron and Tibshirani, 2002). The hypothesis-testing approach is solely based on tail probabilities under the null hypothesis, and does not consider true signals. The key advantage of EB is that it explicitly models distributions of both the noises (null hypotheses) and the true signals (alternative hypotheses). Thus, for the analysis of a genetic screen, the key difference of this approach (compared to the conventional hypotheses testing-based analysis) is that we evaluate the significance of response levels across all ORNs simultaneously, modeling their distributions as a mixture of a random noise component and a real signal component. Empirically speaking, when the true effect sizes are modest, this typically increases the sensitivity of detecting mild effect sizes. Further, the mixture modeling produces a confidence score, that is the posterior probability of true signal from the underlying Bayesian model, which is the complement of the local false discovery rate (Efron, 2010).\n\n### Data analysis with Empirical Bayes\n\nTo draw conclusions from multiple experiments (performed at one of three light intensities) for a given ORN, the dimension of the data was reduced into one summary statistic ($D_{}$) for each ORN, as follows Efron et al., 2001:\n\n$$\nD_{i}=M_{exp}-M_{ctrl1}+M_{ctrl2}*0.5\n$$\n\nwhere $M$ is the mean of the wTSALE score for experimental and control flies. Then, $D_{}$ was used to calculate a $Z_{}$ score:\n\n$$\nZ_{i}=D_{i}/\\alpha_{0}+S_{i}\n$$\n\nwhere $D_{i}$ is the effect size of each ORN, $S_{i}$ is the standard deviation, and $\\alpha_{0}$ is 90th percentile of all the $S_{}$ values (Tusher et al., 2001).\n\nAfter calculating a vector of $Z_{}$ scores, the EBprot software package (Koh et al., 2015) was used to apply the empirical Bayes method to differentiate true behavioral changes from noisy observations through direct estimation of the respective distributions. The empirical Bayes method directly models the valence Z scores as random variables from a two-component mixture, where the noise component is modeled as Gaussian distribution and the signal component (true behavioral changes) is modeled by a non-parametric distribution (Efron, 2010). In effect, the method borrows statistical information across the ORNs to learn the data generating distributions of the null and alternative hypotheses. As the inferential method is based on the Bayesian framework, the model fit naturally yields the posterior probability of true change of each ORN as well as the false discovery rate (FDR) associated with any posterior probability threshold. The true signal component is subsequently divided into positive and negative sub-components depending on the sign of the Z-scores. From this three-component mixture, a signed probability is derived to indicate the likelihood that the valence score came from each of the three candidate distributions (negative, neutral, and positive valence). Prior to calculating the signed probabilities, EBprot removes outliers from the valence distributions (Koh et al., 2015). Effect sizes associated with a < 25% FDR were considered for further analysis.\n\n### Modeling the valence responses of ORN combinations\n\nThe ORN-combo valences were modeled using three functions, each widely used in neural network research for input pooling: summation, max-pooling, and min-pooling. Summation simply sums two individual valence values, while max-pooling and min-pooling return the larger or smaller absolute value of the two components, respectively (Goodfellow et al., 2016), as follows:\n\n$$\nSummation=i_{0}+i_{1}\n$$\n\n\n\n$$\nMax-pooling=maxi_{0},i_{1},key=absolutevalue\n$$\n\n\n\n$$\nMin-pooling=mini_{0},i_{1},key=absolutevalue\n$$\n\nwhere $i_{0}$ and $i_{1}$ are real numbers.\n\nFor example, given $i_{0}$ = \u20132 and $i_{1}$ = + 1, the summation, max-pooling, and min-pooling functions would return -1,\u20132, and +1, respectively.\n\n### Correlation and agreement analyses\n\nLinear regressions were performed using the SciPy library in Python (Jones et al., 2001). Bootstrapped CIs for the coefficient of determination (R2) were calculated using the scikits-bootstrap package in Python (Evans, 2019). Bland-Altman plots were generated using custom scripts using the matplotlib and seaborn libraries in Python (Bland and Altman, 1999; Hunter, 2007; Waskom et al., 2017).\n\n### ORN interaction analyses\n\nCustom R scripts were used to perform statistical inference on multiple linear regression models characterizing the association between single-ORN classes and ORN-combo. Single-ORNs (ORN1 and ORN2) were used as predictors, while the ORN-combo phenotype was the dependent variable, as follows:\n\n$$\nORN-combo=\\beta_{0}+\\beta_{1}\\timesORN1+\\beta_{2}\\timesORN2\n$$\n\nFrom the original data, 10,000 bootstrap samples of the single-fly data were drawn from each group (ORN1, ORN2, and ORN-combo) and the flies were ordered by their valence levels and paired into trios of ORN1, ORN2, and ORN-combo. In each bootstrap sample, a multiple linear regression model was fitted, which revealed the probabilistic distributions of the beta weights (\u03b21 and \u03b22).\n\n### Predictive modeling\n\nWe considered that the available published data has a disproportionate ORN to odor ratio (23\u2013110), with the possibility of internal correlation. Prior to building a valence prediction model, we performed exploratory analyses on the datasets: Pearson correlation among the ORNs, hierarchical clustering, and partial least squares discriminant analysis (PLS-DA). All three analyses were conducted using the pandas and scikit-learn libraries in Python (McKinney, 2010; Pedregosa et al., 2011). The eight latent variables (LVs) calculated by the PLS-DA analysis were used to train the linear and non-linear models using the scikit-learn library in Python (Pedregosa et al., 2011). The performance of the models were evaluated by using the adjusted-R2 and the root-mean-squared error (RMSE). The RMSE values were calculated using a shuffled-split ten-fold cross-validation scheme in Python\u2019s scikit-learn library (Pedregosa et al., 2011). To weight the prediction models, we calculated the Pearson correlation coefficients between Hallem and Carlson\u2019s firing rates and our single-ORN wTSALE valence scores of the 23 ORNs for all 110 samples. So that the odors with higher correlation play a more important role in the model fitting, absolute value of these correlations were then used to re-weight the odor samples in the regression model.\n\n### Re-analyzing previous valence studies\n\nThe relevant studies were downloaded in pdf format, and the data of interest were extracted by using the measuring tool in Adobe Acrobat Pro (Adobe Systems USA). The extracted values for control and experimental groups were then used to calculate the standardized effect size, Cohen\u2019s d (Cumming and Calin-Jageman, 2016). If technical replicates were used to calculate statistics, the effect sizes were corrected accordingly (Supplementary file 2 - Sheet 3).\n\n### Code Availability\n\nAll of the data generated by this study are available to download from Zenodo (https://doi.org/10.5281/zenodo.3994033). The code is available at (https://github.com/ttumkaya/WALiSuite_V2.0; Tumkaya, 2022; copy archived at swh:1:rev:35ca421e06223bc2d5f167783c3029b2a8240a85).\n",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "7df5e938-861e-43da-b118-44a3ac723dab",
+      "submission_id": "c1e292dc-585e-4c72-9dd9-eeb4e431528f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sonia Sen, Tata Institute for Genetics and Society India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71238.sa0](https://doi.org/10.7554/eLife.71238.sa0)\n\nOlfactory coding is still an open question in neuroscience. Therefore, this paper is of potential interest to a broad audience of neuroscientists. It undertakes a thorough investigation of how olfactory sensory neurons drive avoidance or attraction in flies and also addresses how combinations of active ORNs can become behaviorally meaningful. It has great potential value for clarifying how animals map sensory input to valence.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sonia Sen, Tata Institute for Genetics and Society India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71238.sa1](https://doi.org/10.7554/eLife.71238.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Most primary olfactory neurons have individually neutral effects on behavior\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Piali Sengupta as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Matthew C Smear (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nWe appreciated the quality, extent, and importance of this work. While doing so, we had a few concerns that we think the authors should be able to address. They are listed below.\n\n1. Anaesthesia: We were concerned about the short recovery period post cold anesthesia and prior to the behavioural assay. Since cold anesthesia is known to have effects on behaviour, could the authors please demonstrate that a longer duration of recovery doesn't alter their findings of neutral ORN valence?\n\n2. wTSALE: We were concerned that this method of weighting used by the authors may be obscuring real behavioural phenomenon and therefore masking valence. Could the authors please revisit this? Providing more traces of the different response types \u2013 attraction, avoidance, weak responses, etc. \u2013 would also be helpful.\n\n3. ORN combinations: One of the key points of this manuscript is what it tells us about the rules by which ORN combinations work. While the authors show what their study rules out, we felt that they fall short of discussing what might be occurring instead. So, could the authors please include some discussion around this point?\n\nIn this section we also recommend incorporating SupFig8 into the main figure 5. It possible that different ORN pair use different interaction rules and the grouped analysis in figure 5 would mask this. Sup Fig8 is more informative in this regard.\n\n4. Statistics: The statistics in this manuscript are quite involved. We recognise that the authors are promoting the use of Empirical-Bayes methods for statistical inferences. Since this is not commonplace, could the authors please incorporate an intuitive explanation about Empirical Bayes, its assumptions, and why it's better suited to the analysis? We think this will greatly improve accessibility of this manuscript, and therefore its impact.\n\n5. Comparison with the Bell and Wilson study: Could the authors please include the number of ORN pairs tested in the B and W study and their own (28 and 7)? With respect to the stimulation conditions listed in this table (Supp Table 4), we assume that the authors' count of 6 conditions is because they are including with and without airflow for their 3 light intensities. In this case, the B and W study should be listed as 16. Alternatively (indeed preferably), the two studies should be listed as 8 and 3 respectively.\n\nReviewer #1 (Recommendations for the authors):\n\nFigure 1A I cannot tell the direction of airflow in the corridors. The air port is only shown on one side, does that mean airflow is unidirectional? Where is the exhaust?\n\nI would prefer a more schematic/conceptual drawing of the arena than this quasi-realistic one where the main feature that pops out to me are the flies themselves. I would prefer that the drawing conveys the technical details needed to evaluate what the flies experience in the assay.\n\nFig1F The y-axis label wTSALE should be swapped for a term with some intrinsic meaning. There isn't even any basic description of what wTSALE means in the Results section, the reader has to go to the Methods. I think it would be helpful for the reader to understand the assay more clearly if the full description is in the Results. It is basically the proportion of time the flies spend outside the light, with the clock starting only after the fly has experienced the light the first time. That's pretty easy to understand and the y-axis label could be % time outside light' or even 'preference light' for positive values and 'preference dark' for negative values without criminally oversimplifying the measurement (IMO).\n\nAlso I am not convinced the weighting the authors use (i.e. wTSALE vs TSALE) is really justified. Essentially they are trying to control for shorter sampling periods of the fly's behavior in an extremely simple linear way. That implies that short sampling periods may not be representative \u2013 is it fair to simply weight those down so the score goes closer to zero since that actually indicates a lack of preference? Basically since any value on their y-axis carries meaning, it seems unfair to weight some points down simply because sampling wasn't extensive enough. Why not just require some minimal time window for flies to have experienced the light (i.e. know what they are choosing) and look at the overall proportion of time in light vs dark?\n\nP.10 \"This result indicates that wind has essentially no impact on ORN-elicited behavior in walking flies\" this should read 'single-ORN-elicited behavior' since this is all the authors tested. ORN-elicited behavior could be read as ORN activation in general i.e. odor-based activation, where there is likely an effect of wind at least in some assays.\n\nFigure 5: The authors analyze all ORN pairs together to test whether they summate/max pool/min pool but prior work (Bell and Wilson) showed that some pairs summate while others max pool, which would confound the style of grouped analysis in Figure 5G-I.\n\nAdditionally since only 7 combinations were used and only 3 intensity levels, this figure is the weakest part of the paper, which up to this point has been extremely extensive. It also makes the first entry in Table 4 (Number ORNs tested = 45 vs n=8 for Bell and Wilson) unfair since Bell and Wilson actually looked at all combinations among 8 ORNs.\n\nCan the authors discuss more about how the dominant \u03b2 value can flip as the stimulation intensity increases? How would that work in terms of neural activity in the biological network? Also, what does the diversity of \u03b2 values imply about biological network, does it potentially correspond to different weights on different downstream targets?\n\nEnding on a negative result is a little disappointing \u2013 one positive point the authors could make is that (with one exception) the ORN combinations all transition towarrds more max pooling at higher stimulation rates. This suggests an competitive interaction between channels, which is easy to imagine. Undoubtedly it is complex with different downstream targets having different rules, but this is one fairly consistent trend.\n\nI should say that I found Bell and Wilson more convincing because they examine interactions for each ORN pair over a wider range of spike rates. Here there are just three points for comparison, and when my eyes look at Figure 5C-E it seems that there is not a lot of difference between the three interaction modes.\n\nFinally, the authors should somehow incorporate FigS8 into the main text since I'm sure that the interaction mode depends on the pair of ORNs being examined.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 I need to understand the raw data better. What are the flies actually doing here? In 1B, the example fly seems to be walking back and forth at about 0.1 Hz. Is this representative of the population? Do the flies ever not move at all? How is this outcome dealt with? The methods mention that Empirical Bayes has a principled way of excluding outliers. What is that way? When the fly's path enters into the illuminated region, it seems to immediately stop and walk back to the opposite wall, and then on its next two cycles it stops before entering the illuminated region. Is this because the light spreads or does the fly remember where it hit the light before? What happens when the illumination occurs when the fly is already on the illuminated side? The effect of Gr66a>Chr (1F) is much larger than any of the OR effects. What does a weaker avoidance response look like? What does an attraction response look like? The mean +/- 95% CI plots of 1C-E do not answer these questions. More individual animal trajectories and population occupancy heat maps would help a lot. Exclusively compressing the data to the one wTSALE number may well be obscuring worthwhile features of the behavior. With a richer characterization of the behavior, it might be possible to reduce the sample size and simplify the statistics.\n\n\u2013 The statistical methods are unusual and seem unnecessarily complicated (at least to me). Further, why these were used instead of something more conventional? Readers (at least this reader) would benefit greatly from clear language giving an intuition for how Empirical Bayes works, what are its assumptions, and why it is superior to more conventional, easier-to-understand methods.\n\n\u2013 The distribution of wTSALE in Figure 2 F and G is striking. In these plots, including the controls, there is a large mode at wTSALE=1. This mode is not apparent in the distributions of 1F. Why are control flies so much more attracted to light in these experiments? How does Empirical Bayes deal with non-Gaussian distributions?\n\n\u2013 What direction does the wind flow through the chamber? It appears to run perpendicular to the illumination axis. Could this matter? Does wind itself impact the locomotion of the flies? Since only \u03b4-wTSALE is shown, it seems possible that wind may affect the behavior in a way that would obscure an effect. Here again it would be helpful to show more of what the flies are actually doing.\n\n\u2013 The authors invoke \"complex circuit dynamics\" to explain the results of the combined-receptor experiments. I'm not sure what the authors mean here. \"Dynamics\" implies that time-dependent processes determine valence. If this were the case, these experiments would show no effect, since the stimuli don't recapitulate the dynamics of odor-evoked ORN activity. The discussion in a recent paper by Ron Yu's group (Qiu et al., 2021; Current Biology), deals with the non-labelled-line-ness of the mouse olfactory system in a thoughtful way. A similar discussion would benefit this paper as well.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The authors use a large array of GAL4 driver lines that they claim cover only the relevant ORN type. However, for most of these lines this was not examined. Although in the past such lines were used for behavior experiments, recent studies are much stricter with the use of driver lines. Many studies have demonstrated that even expression in a single neuron (other than the target neurons) either in the central brain or in the VNC can affect behavioral results. The authors therefore must show that the lines used in this study only label the target neurons either by providing adequate citations or by examining this directly with confocal stacks of both whole brain and VNC.\n\n2. The authors do not show the relevance of their optogenetic activation of ORNs to odor activation of ORNs. Previous studies have shown that optogenetic activation of ORNs generates a firing rate of approximately 30 Hz (Bell and Wilson, 2016; Fox and Nagel, 2021). In contrast, ORNs can reach firing frequencies of up to 250 Hz in response to odors (Hallem and Carlson, 2006). In addition, ORNs show temporal dynamics, whereas I presume that the continuous illumination generates a more uniform response. The authors briefly discuss this in the methods section. They claim that \"continuous illumination is a more conservative method (Tumkaya et al., 2019)\". However, the same authors claim in their Tumkaya et al., 2019 manuscript that \"These results suggest that neither stimulation type is necessarily superior to the other: static- or pulsed-light stimulation can capture more of the native responses than the other in inducing olfactory behavior, depending on the neuronal type\". The authors also claim that \"We also benchmarked behavioral responses for the Orco neurons against results from a prior study that performed physiological recordings and used a different temporal structure (Bell and Wilson, 2016), finding that the WALISAR protocol has comparable sensitivity (Figure S3)\". The fact that both optogenetic activations has similar behavioral results does not imply any relevance to an olfactory cue.\n\nMy main concern is that the current optogentic stimulation probably activates ORNs relatively weakly, thus mimicking low odor concentration. As low odor concentrations elicit in many cases only weak behavioral responses it is more than possible that the lack of behavioral effect is just due to \"low concentration\" and not an indication to the actual role of each ORN.\n\nTaken together, I think the authors should go the extra mileage and show some relevance to olfactory stimuli.\n\n3. The authors own data raises potential problems with their approach. Some of the ORNs that are classified as driving aversion or attraction seem to change valence value they induce with the light intensity. For example, the authors report Or42b to drive attraction in agreement with published literature. However, at the strongest light intensity it is actually neutral. Similarly, the authors report Or85d to drive aversion. However, at the strongest light intensity it is also neutral. So, are these ORs \"neutral\"?\n\n4. The authors test a number of previously suggested linear models and find that they do not predict how two-ORN odor valence emerges from single-ORN valence. However, linear models were shown to be insufficient to predict odor valence (Badel et al., 2016). It is thus not surprising that these linear models failed.\n\n5. The authors use two databases, one of odor responses (Hallem and Carlson 2006) and one of behavioral responses (Knaden et al., 2012) along with a linear model to try and predict odor valence from ORN activity. However, as mentioned above linear models are not adequate for describing the relation between ORN activity and Odor valence. Furthermore, I think the Knaden et al., database is a wrong database to use in this context. Knaden et al., used a trap assay. In this assay, flies are captured in the trap after a single entrance to the odor source. Thus, exploratory behavior, in which flies examine the odor and then can decide to avoid it, cannot occur, and this assay is expected to be biased towards reporting odors as attractive. Indeed, this was the case in the Knaden et al., database in contrast to other published results. This database was suitable for the claim raised by Knaden et al., that looked only at the most aversive and attractive odors, but it cannot be used to try to predict any odor valence.\n\n6. The authors used cold anesthesia just prior to loading the flies to the chambers and only 30 second acclimation following the cold anesthesia. However, cold anesthesia is known to have effects on behavior, increasing response time, reducing locomotion and reducing overall responses (just a few examples, Barron, 2000; MacMillan et al., 2017, Trannoy et al., 2015). I think most studies today try to avoid cold anesthesia just before the experiment. My concern here is that the lack of effect for most ORNs, may arise from general behavior impairment. Can the authors give a few examples from the neutral ORNs without cold anesthesia?\n\n7. The authors conclude that: 1. \"the majority of primary olfactory sensory neurons have neutral behavioral effects individually\". This conclusion (as mentioned above) is definitely correct for the optogenetic activation, but its relevance to odor valence is questionable. Furthermore, Badel et al., 2016 already demonstrated with actual odor stimuli that \u201cWe find that the behavior is accurately predicted by a model summing normalized glomerular responses, in which each glomerulus contributes a specific, small amount to odor preference.\u201d Thus, the novelty of the current study is not large.\n\nTheir second conclusion is that \u201colfactory sensory neurons\u2026participate in broad, odor-elicited ensembles with potent behavioral effects arising from complex interactions\u201d. I agree with them that olfactory coding is complex. However, they did not show any actual odor responses to support their claim, neither did they provided even one complex mechanism. I think that stating that olfaction is complex is just not enough.\n\n8. To my understanding the order of the \u03b2 coefficients can affect the interpretation of the data. However, I could not find a reference for this in the methods. Can the authors please elaborate on this?\n",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8089101b-f7a9-4180-abca-d6753679aef9",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C1",
+      "claim": "Flies detect odors with their antennae and maxillary palps, which together contain ~1300 olfactory-receptor neurons (ORNs).",
+      "claim_type": "EXPLICIT",
+      "source": "Flies detect odors with their antennae and maxillary palps, which together contain ~1300 olfactory-receptor neurons (ORNs) (Lai et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lai et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "97e4324b-eed0-4824-81f7-39656304d9e3",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C2",
+      "claim": "The odor-response profile of each adult ORN is determined by one of ~45 possible receptor types.",
+      "claim_type": "EXPLICIT",
+      "source": "The odor-response profile of each adult ORN is determined by one of ~45 possible receptor types (Fishilevich and Vosshall, 2005; Gomez-Diaz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fishilevich and Vosshall, 2005 and Gomez-Diaz et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "e18b397f-e96f-4169-8bde-2e383c9a5254",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C3",
+      "claim": "ORNs sharing the same receptor type converge on a glomerulus in the antennal lobe, where they synapse with local interneurons (LNs) and projection neurons (PNs).",
+      "claim_type": "EXPLICIT",
+      "source": "ORNs sharing the same receptor type converge on a glomerulus in the antennal lobe, where they synapse with local interneurons (LNs) and projection neurons (PNs) (Couto et al., 2005; Gao et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Couto et al., 2005 and Gao et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "d14c3eba-a340-443e-9e2f-47c96fec6554",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C4",
+      "claim": "The LNs facilitate both excitatory and inhibitory interactions between glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Innervating throughout the antennal lobe and connecting multiple glomeruli, the LNs facilitate both excitatory and inhibitory interactions between glomeruli (Groschner and Miesenb\u00f6ck, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Groschner and Miesenb\u00f6ck, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "11184ccd-ef13-4ca1-b38a-f03cf40aba8c",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C5",
+      "claim": "Modified information from the antennal lobe is relayed by the PNs to higher brain centers, namely mushroom bodies and the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "This modified information is relayed by the PNs to higher brain centers, namely mushroom bodies and the lateral horn (Lai et al., 2008; Wang et al., 2014; Wong et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lai et al., 2008, Wang et al., 2014, and Wong et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "3020cad6-4009-4986-83c9-41a1241aee7b",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C6",
+      "claim": "A subset of receptors respond specifically to single odorants, and their ORNs individually drive innate valence.",
+      "claim_type": "EXPLICIT",
+      "source": "At least some ORN-driven behaviors appear to follow simple rules: a subset of receptors respond specifically to single odorants, and their ORNs individually drive innate valence (Ache and Young, 2005; Grabe and Sachse, 2018; Haddad et al., 2010; Haverkamp et al., 2018; Stensmyr et al., 2012; Suh et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "437c71db-d2be-407e-ac26-a9300d2773b8",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C7",
+      "claim": "Acutely tuned, strongly valent ORN classes include neurons tuned to danger (e.g. toxic odorants) and pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "These acutely tuned, strongly valent ORN classes include neurons tuned to danger (e.g. toxic odorants) and pheromones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about labeled lines in olfactory systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "1fd8768d-988f-4074-a298-2688a9463659",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C8",
+      "claim": "Many olfactory receptors are broadly tuned to respond to many odorants, and most pure odorants evoke responses across many ORN classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike labeled lines, many other olfactory receptors are broadly tuned to respond to many odorants, and most pure odorants evoke responses across many ORN classes (Hallem and Carlson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hallem and Carlson, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "2802587c-a823-4606-90fe-182e3629919f",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C9",
+      "claim": "Gr66a-Gal4 labels bitter-taste-sensing gustatory-receptor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the validity of this approach with flies expressing the Chr channel under the control of the Gr66a-Gal4 driver line, which labels bitter-taste-sensing gustatory-receptor neurons (Moon et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Moon et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "90fffaf0-5f74-4945-b968-1ec9b755901c",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C10",
+      "claim": "Gr66a-neuron activation has been previously reported to drive avoidance when artificially activated.",
+      "claim_type": "EXPLICIT",
+      "source": "which labels bitter-taste-sensing gustatory-receptor neurons (Moon et al., 2006) and has been previously reported to drive avoidance when artificially activated (Aso et al., 2014; Shao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Aso et al., 2014 and Shao et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "5ae2efaa-4366-4ea2-b9fe-a34cc77b46b8",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C11",
+      "claim": "Experimental Gr66a > Chr flies displayed robust light avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "In a sequence of 12 trials using three light intensities (14, 42, and 70 \u03bcW/mm2) and two airflow states (on/off), the experimental Gr66a > Chr flies displayed robust light avoidance (Figure 1B\u2013F; Figure 1\u2014figure supplement 1B\u20131D; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "ee2b8ddf-8314-4526-a825-3454997e945e",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C12",
+      "claim": "The standardized effect size of Gr66a-neuron avoidance at the highest intensity was Cohen's d = \u20132.70 at 70 \u03bcW/mm2.",
+      "claim_type": "EXPLICIT",
+      "source": "the standardized effect size of Gr66a-neuron avoidance at the highest intensity (Cohen's d = \u20132.70 at 70 \u03bcW/mm2) was almost as large as that of the previously reported valence response (d = \u20133.63; Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and comparison to prior studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "e893da34-fe2b-4629-9e84-b348be527c28",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C13",
+      "claim": "Orco-Gal4 labels ~70% of all ORNs.",
+      "claim_type": "EXPLICIT",
+      "source": "To benchmark attraction behavior, we used an Orco-Gal4 driver line that labels ~70% of all ORNs (Larsson et al., 2004; Wang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Larsson et al., 2004 and Wang et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "d960fe3f-44dc-405d-b469-0e7b355fc836",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C14",
+      "claim": "One prior study showed no behavioral effect of Orco-neuron activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have reported Orco-neuron valence results: one study showed no behavioral effect Suh et al., 2007",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Suh et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "17857a03-f414-44ad-a2e4-a1a11fd9b26d",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C15",
+      "claim": "Another prior study found Orco-neuron attraction in the presence of a wind cue only.",
+      "claim_type": "EXPLICIT",
+      "source": "another found attraction in the presence of a wind cue only Bell and Wilson, 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bell and Wilson, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "19ed730e-6c2f-471a-9cac-9b3eadddc79e",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C16",
+      "claim": "At two higher light intensities (42 and 70 \u03bcW/mm2), Orco > Chr flies exhibited pronounced attraction even in still air.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, at two higher light intensities (42 and 70 \u03bcW/mm2), Orco > Chr flies exhibited pronounced attraction even in still air (Figure 2G; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "34a35696-86e9-4dae-bb6c-ca8111be253e",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C17",
+      "claim": "The valence of Orco-neuron activation was typically stronger than that reported in prior studies (e.g. d = 0.56 in still air in this study versus d \u2264 0.10).",
+      "claim_type": "EXPLICIT",
+      "source": "The valence was typically stronger than that reported in prior studies (e.g. d = 0.56 in still air in this study versus d \u2264 0.10), establishing assay sensitivity for attraction (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of experimental data to prior studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "23cdd081-921c-4ef9-9344-6d2901087676",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C18",
+      "claim": "Changing the temporal sequence of the 12 trials had negligible effects on Orco-neuron positive valence.",
+      "claim_type": "EXPLICIT",
+      "source": "Changing the temporal sequence of the 12 trials had negligible effects on Orco-neuron positive valence, suggesting that valence is not greatly susceptible to order bias, for example, due to habituation (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "210a2bfe-e5d6-4985-94f0-46cf6144222d",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C19",
+      "claim": "Using available Gal4 lines, 46 receptor classes were assessed for optogenetic valence.",
+      "claim_type": "EXPLICIT",
+      "source": "Using available Gal4 lines, each driving expression in a single ORN type, we assessed the optogenetic valence of 46 receptor classes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "889aaf69-abde-42a7-947b-56fe240f2298",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C20",
+      "claim": "The empirical Bayes analysis identified 10 valent classes: six ORNs elicited attraction and four elicited aversion.",
+      "claim_type": "EXPLICIT",
+      "source": "The empirical Bayes analysis identified 10 valent classes: six ORNs elicited attraction and four elicited aversion (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis results presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "3e468142-8518-4b1c-923b-fb56852e9cee",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C21",
+      "claim": "Or56a is the receptor for the aversive odorant geosmin.",
+      "claim_type": "EXPLICIT",
+      "source": "Four are considered labeled lines: Or56a, the receptor for the aversive odorant geosmin; Gr21a, the receptor for the aversive odorant carbon dioxide; Or67d, the receptor for the pheromone 11-cis-vaccenyl acetate; and Or47b, which senses the pheromone palmitoleic acid (Davis, 2007; Jones et al., 2007; Kurtovic et al., 2007; Lin et al., 2016; Stensmyr et al., 2012; Suh et al., 2004; van der Goes van Naters and Carlson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "08d50110-7945-4822-b52a-5d0aa8875d0e",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C22",
+      "claim": "Gr21a is the receptor for the aversive odorant carbon dioxide.",
+      "claim_type": "EXPLICIT",
+      "source": "Four are considered labeled lines: Or56a, the receptor for the aversive odorant geosmin; Gr21a, the receptor for the aversive odorant carbon dioxide; Or67d, the receptor for the pheromone 11-cis-vaccenyl acetate; and Or47b, which senses the pheromone palmitoleic acid (Davis, 2007; Jones et al., 2007; Kurtovic et al., 2007; Lin et al., 2016; Stensmyr et al., 2012; Suh et al., 2004; van der Goes van Naters and Carlson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "0ceb8fbd-d9ea-401b-a1c7-070dffd45126",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C23",
+      "claim": "Or67d is the receptor for the pheromone 11-cis-vaccenyl acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "Four are considered labeled lines: Or56a, the receptor for the aversive odorant geosmin; Gr21a, the receptor for the aversive odorant carbon dioxide; Or67d, the receptor for the pheromone 11-cis-vaccenyl acetate; and Or47b, which senses the pheromone palmitoleic acid (Davis, 2007; Jones et al., 2007; Kurtovic et al., 2007; Lin et al., 2016; Stensmyr et al., 2012; Suh et al., 2004; van der Goes van Naters and Carlson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "43106d71-e357-42ea-a116-122de81f033d",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C24",
+      "claim": "Or47b senses the pheromone palmitoleic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Four are considered labeled lines: Or56a, the receptor for the aversive odorant geosmin; Gr21a, the receptor for the aversive odorant carbon dioxide; Or67d, the receptor for the pheromone 11-cis-vaccenyl acetate; and Or47b, which senses the pheromone palmitoleic acid (Davis, 2007; Jones et al., 2007; Kurtovic et al., 2007; Lin et al., 2016; Stensmyr et al., 2012; Suh et al., 2004; van der Goes van Naters and Carlson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "d9417fb1-2802-421a-851e-479288bf9d39",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C25",
+      "claim": "Or83c mediates attraction to farnesol, an odorant produced by some ripe fruits.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Or83c mediates attraction to farnesol, an odorant produced by some ripe fruits (Ronderos et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ronderos et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "180ddf7a-d57b-4666-a55b-524cf61ff2dd",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C26",
+      "claim": "Or42b mediates attraction to vinegar.",
+      "claim_type": "EXPLICIT",
+      "source": "while Or42b mediates attraction to vinegar (Semmelhack and Wang, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Semmelhack and Wang, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "9d0875a0-ff8a-4470-94c1-9e423bdc4a42",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C27",
+      "claim": "The screen successfully recaptured six ORN types already known to be involved in ecologically relevant valence functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that this screen successfully recaptured six ORN types already known to be involved in ecologically relevant valence functions, we consider that the screen was valid and sensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results matching prior knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "b6ca1c69-1fe7-4ab4-a489-f596ba68057a",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C28",
+      "claim": "The majority of the hits being ORNs with already-established valence implies that most ORNs are not singly valent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the majority of the hits being ORNs with already-established valence implies that most ORNs are not singly valent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "87371524-4ebb-422e-a149-a7221334c984",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C29",
+      "claim": "Male flies exhibited strong responses to Orco-neuron activation, while females showed no response.",
+      "claim_type": "EXPLICIT",
+      "source": "Although male flies exhibited strong responses to Orco-neuron activation, females showed no response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing male and female flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "c9aa7009-ce98-4eb6-a20c-a51a24ceeb1f",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C30",
+      "claim": "The lack of response in female flies to Orco-neuron activation turned into a strong attraction when they were starved.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, this lack of response in females turned into a strong attraction when they were starved (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "8611fee5-5286-4629-95b5-a15b50fd239d",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C31",
+      "claim": "Activation of Or47b neurons (sensors of an aphrodisiac pheromone) was attractive to males, while females were indifferent.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one pheromone-receptor class showed sexual dimorphism: activation of Or47b neurons (sensors of an aphrodisiac pheromone) was attractive to males, while females were indifferent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing male and female responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "4ee2e21e-b4b6-45bc-918f-328a82fcf19a",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C32",
+      "claim": "In isolation, most ORN classes do not drive valence.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that in isolation, most ORN classes do not drive valence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "f75e98f3-b77c-4840-8464-f5ca5a5556e7",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C33",
+      "claim": "Wind has been previously reported to be essential for the optogenetic valence of Orco neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously reported that wind is essential for the optogenetic valence of Orco neurons (Bell and Wilson, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bell and Wilson, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "78bd0f55-7f1f-47a4-9906-d48601a97c3d",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C34",
+      "claim": "With a lone exception (wind rendered Or59b valence more aversive in the lowest light intensity only), an empirical-Bayes model found that the wind effect sizes were indistinguishable from noise.",
+      "claim_type": "EXPLICIT",
+      "source": "With a lone exception (wind rendered Or59b valence more aversive in the lowest light intensity only), an empirical-Bayes model found that the wind effect sizes were indistinguishable from noise (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis results presented in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "20f25e43-f161-4638-a680-607043f061b9",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C35",
+      "claim": "Wind has essentially no impact on single ORN type-elicited behavior in walking flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Contradicting our hypothesis, this result indicates that wind has essentially no impact on single ORN type-elicited behavior in walking flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "699068d7-ccd1-4797-8f6b-584b9206e2f4",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C36",
+      "claim": "Chemosensory behaviors are influenced by an animal's internal energy state.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemosensory behaviors\u2014for example gustatory and olfactory responses\u2014are influenced by an animal's internal energy state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "31c64bd3-a18b-4c50-8b8d-c34a869b8ff1",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C37",
+      "claim": "Low internal energy can sensitize food odor-responsive ORNs and drive foraging.",
+      "claim_type": "EXPLICIT",
+      "source": "Low internal energy, for example, can sensitize food odor-responsive ORNs and drive foraging (LeDue et al., 2016; Sengupta, 2013; Zhou et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "2882121e-443f-48b8-a047-61b2ceca6644",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C38",
+      "claim": "Starvation did not enhance attraction in the ORN valence assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, starvation did not enhance attraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "5364b275-9180-42da-8d0d-6d7e836e8a69",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C39",
+      "claim": "Starvation reduced the responses triggered by three otherwise attractive ORNs: Or42b, Or47a, and Or83c.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, it reduced the responses triggered by three otherwise attractive ORNs: Or42b, Or47a, and Or83c (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "e0e437d7-fc5c-46b0-843f-5d023e5c255d",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C40",
+      "claim": "Starvation shifted the otherwise neutral valences of Or85f and Or49a, two receptors involved in sensing wasp odors, into aversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Starvation also shifted the otherwise neutral valences of Or85f and Or49a, two receptors involved in sensing wasp odors (Ebrahim et al., 2015), into aversion (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and a citation to Ebrahim et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "d0ba5e27-699c-4c63-a184-74fb7b042597",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C41",
+      "claim": "Hunger does not have a broadly amplifying effect on single-ORN valence.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, hunger does not have a broadly amplifying effect on single-ORN valence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "882f2994-5797-4c08-a9df-92004f5e5bc3",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C42",
+      "claim": "Eight ORN driver lines (three positive, two negative, and three neutral) were crossed to generate seven, two-way ORN combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "We crossed eight ORN driver lines (three positive, two negative, and three neutral) so as to generate seven, two-way ORN combinations (henceforth 'ORN-combos').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "268d317f-347e-4025-8bf9-5c452a887ae1",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C43",
+      "claim": "Compared to their constituent single ORNs, the ORN-combos elicited distinct valences.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to their constituent single ORNs, the ORN-combos elicited distinct valences (Figure 5A, B and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "df9393f7-fc2e-4aad-a2a4-066b50820421",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C44",
+      "claim": "Regression showed that none of the three functions (summation, min-pooling, and max-pooling) could account for a large proportion of ORN-combo valence: summation, min-pooling, and max-pooling all had coefficients of determination of ~0.2 or lower.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, regression showed that none of the three functions could account for a large proportion of ORN-combo valence: summation, min-pooling, and max-pooling all had coefficients of determination of ~0.2 or lower (Figure 5\u2014figure supplement 1A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis results presented in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "e59e662c-19a5-4cc0-8d51-bbb8a79ff1eb",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C45",
+      "claim": "Bland-Altman method-comparison plots revealed wide limits of agreement (LoAs) between the observed and predicted ORN-combo valences by all three models: summation [SD1.96\u20130.45, 0.28], max-pooling [SD1.96\u20130.34, 0.13], min-pooling [SD1.96\u20130.1, 0.35].",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Bland-Altman method-comparison plots revealed wide limits of agreement (LoAs) between the observed and predicted ORN-combo valences by all three models: summation [SD1.96\u20130.45, 0.28], max-pooling [SD1.96\u20130.34, 0.13], min-pooling [SD1.96\u20130.1, 0.35] (Figure 5\u2014figure supplement 1D, E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis results presented in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "a6414cb7-ee3e-46c1-81a1-8aa986716311",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C46",
+      "claim": "None of the three simple pooling rules (summation, max-pooling, min-pooling) are major predictors of how two-ORN odor valence emerges from single-ORN valence.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis thus demonstrates that none of these three simple pooling rules are major predictors of how two-ORN odor valence emerges from single-ORN valence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the data analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "3cd117b8-83a0-49ca-a34f-763efe861332",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C47",
+      "claim": "As the light intensity increased, the \u03b2 points shifted further away from the diagonal.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as the light intensity increased, the \u03b2 points shifted further away from the diagonal (Figure 5J) and, in some cases, flipped dominance (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis results presented in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "6c61b167-a392-4289-9789-afb03d791ea7",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C48",
+      "claim": "For ORN-type pairs, increasing intensity is associated with two phenomena: one of the two ORNs tends to become more dominant; and the combination rules are different at different activity levels.",
+      "claim_type": "EXPLICIT",
+      "source": "For these ORN-type pairs, increasing intensity is associated with two phenomena: one of the two ORNs tends to become more dominant; and the combination rules are different at different activity levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "4abd9a46-ef3e-4bcd-9b70-b98ee6f4bcf9",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C49",
+      "claim": "The interactions between pairs of ORN types vary depending on receptor identity and stimulus intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the interactions between ORN pairs vary depending on receptor identity and stimulus intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "d4eef0fd-569a-430a-bd15-6ee0fbe48d0c",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C50",
+      "claim": "A multiple linear regression (MLR) model with eight LVs had the best performance, with an adjusted coefficient of determination (R2adj) of 0.23.",
+      "claim_type": "EXPLICIT",
+      "source": "A multiple linear regression (MLR) model with eight LVs had the best performance, with an adjusted coefficient of determination (R2adj) of 0.23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "2fdd351c-0227-4f73-93ce-119a556fe1fe",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C51",
+      "claim": "The low R2adj score indicates that linear combinations of the available ORN-activity patterns are only weakly predictive of valence.",
+      "claim_type": "EXPLICIT",
+      "source": "While the two-dimensional space defined by the first two LVs supports a partial separation of aversive and attractive odors (Figure 5\u2014figure supplement 3B), the low R2adj score indicates that linear combinations of the available ORN-activity patterns are only weakly predictive of valence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the data analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "bdfa544b-e907-4961-9f02-49c5899c2e73",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C52",
+      "claim": "Valence-weighting improved the R2adj of the MLR model from 0.23 to 0.33, but the predictive performances of the models were not improved.",
+      "claim_type": "EXPLICIT",
+      "source": "Although valence-weighting improved the R2adj of the MLR model from 0.23 to 0.33, the predictive performances of the models were not improved (Supplementary file 2 - Sheet 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "7a240714-2d00-4cb9-a0f0-fafe65bae668",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C53",
+      "claim": "Linear combinations of ORN activity can only account for a minority of odor preference.",
+      "claim_type": "EXPLICIT",
+      "source": "This further supports the hypothesis that linear combinations of ORN activity can only account for a minority of odor preference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the data analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "a5639617-a492-4b83-a400-674c630fdd48",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C54",
+      "claim": "10/45 of single ORN-types have the ability to influence locomotor preference.",
+      "claim_type": "EXPLICIT",
+      "source": "The screen results indicate that 10/45 of single ORN-types have the ability to influence locomotor preference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "bbf1775f-781f-4aab-b88f-47f3903ae402",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C55",
+      "claim": "Most ORN types are not individually valent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, most ORN types are not individually valent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "9f627723-4904-4ff8-83f9-026b0f081efe",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C56",
+      "claim": "The screen identified four novel valent ORNs (85d, 59c, 35a, 47a) with ligands and ecological roles yet to be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "The screen identified four novel valent ORNs (85d, 59 c, 35 a, 47 a) with ligands and ecological roles yet to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "a8ecb2c6-03e7-4dae-9121-b49708b028f1",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C57",
+      "claim": "Around 60% of pure odorants are valent.",
+      "claim_type": "EXPLICIT",
+      "source": "Around 60% of pure odorants are valent (Knaden et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Knaden et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "90836c07-de92-4565-8457-8bf5a3da351a",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C58",
+      "claim": "At least three of the known valent ORN classes (those for geosmin, CO2, and cVA) are specialized to bind specific ligands exclusively.",
+      "claim_type": "EXPLICIT",
+      "source": "while at least three of the known valent ORN classes (those for geosmin, CO2, and cVA) are specialized to bind specific ligands exclusively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about these receptors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "cdc2e640-8eee-47eb-a89e-c3105314396f",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C59",
+      "claim": "The disconnect between a preponderance of valent odorants (~60% of odorants) and the scarcity of broadly tuned, valent ORN types (\u2264 15%) implies that most olfactory valence arises from combined activity in multiple ORN classes.",
+      "claim_type": "EXPLICIT",
+      "source": "This disconnect between a preponderance of valent odorants (~60% of odorants) and the scarcity of broadly tuned, valent ORN types ( \u2264 15%) implies that most olfactory valence arises from combined activity in multiple ORN classes (Mathew et al., 2013; Parnas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "abab3e12-920d-445f-8437-edf32360129c",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C60",
+      "claim": "Broad activation across ~70% of ORNs drives strong attraction.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is also supported by the Orco activation result showing that broad activation across ~70% of ORNs drives strong attraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "588c1c2b-43fe-4ba3-94ba-a2e6c969c83e",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C61",
+      "claim": "Olfactory neurons elicit valence without airflow, and wind has little to no amplifying effect.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our experiments showed that olfactory neurons elicit valence without airflow, and that wind has little to no amplifying effect (Figures 1C and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "ef464f78-b8af-47c4-98b1-1e887bbd5343",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C62",
+      "claim": "Drosophila larvae display both olfactory behavior and optogenetic ORN valence in still air.",
+      "claim_type": "EXPLICIT",
+      "source": "Note also that even though Drosophila larvae behavioral tests are routinely performed in still air, they display both olfactory behavior and optogenetic ORN valence (Bellmann et al., 2010; Hernandez-Nunez et al., 2015; Mathew et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "5c7ac2ed-8828-4585-8628-72933914a424",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C63",
+      "claim": "Drosophila ORNs influence valence behavior even without wind.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the overall evidence indicates that Drosophila ORNs influence valence behavior even without wind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results and prior studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "dfc411b8-b82d-4899-8385-374f32afc7b6",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C64",
+      "claim": "Hunger has been reported to increase olfactory attraction.",
+      "claim_type": "EXPLICIT",
+      "source": "A second factor, hunger, has also been reported to increase olfactory attraction (Gelperin, 1971; Ko et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "c5411885-bab0-4d60-8879-e94232bea0c1",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C65",
+      "claim": "In the single-ORN screen, starvation had modest effects on valence.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the single-ORN screen, starvation had modest effects on valence (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "2926db0f-f03a-4ef6-af0b-53f256809a26",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C66",
+      "claim": "The difference in olfactory responses between fed and starved animals might only be pronounced for weaker olfactory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the difference in olfactory responses between fed and starved animals might only be pronounced for weaker olfactory stimuli: one study showed that the ethyl acetate (EA) response difference between fed and starved flies declines as the EA concentration increases (Chakraborty, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation supported by a citation to Chakraborty, 2010.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "a0cd34c7-ef34-4e6b-bd0d-497adb500416",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C67",
+      "claim": "Five vinegar-responsive ORNs are modulated by hunger only when activated in concert, but not when they are activated in subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "One study found that five vinegar-responsive ORNs are modulated by hunger only when activated in concert, but not when they are activated in subsets (Root et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Root et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "6d0ff66c-c7cf-4ae5-8b97-cf6e38643aec",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C68",
+      "claim": "The absence of hunger amplification in single-ORN valence\u2014and its presence in female Orco valence\u2014suggests that the potentiating effects of hunger on olfactory attraction might only operate on multi-ORN stimuli like Orco activation and natural odors.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of hunger amplification in single-ORN valence\u2014and its presence in female Orco valence\u2014also suggests that the potentiating effects of hunger on olfactory attraction might only operate on multi-ORN stimuli like Orco activation and natural odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation from the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "7f309490-b745-4b1d-bb35-cc96fb680283",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C69",
+      "claim": "Most odor-guided locomotion arises from the broad activation of ORNs simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the single-ORN results support the idea that most odor-guided locomotion arises from the broad activation of ORNs simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "f37d4bc1-27f3-4a4d-8b4f-f41e1cd2830c",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C70",
+      "claim": "In a model of Drosophila larval olfaction, the weighted summation of ORN activity in just five of 21 receptors could be used to predict odor valence.",
+      "claim_type": "EXPLICIT",
+      "source": "In a model of Drosophila larval olfaction, the weighted summation of ORN activity in just five of 21 receptors could be used to predict odor valence (Kreher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kreher et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "ae800c83-1366-4b30-9153-436cd7d78147",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C71",
+      "claim": "An optogenetic study of ORNs reported that combination valences could be explained by summation and/or max-pooling.",
+      "claim_type": "EXPLICIT",
+      "source": "In adults, an optogenetic study of ORNs reported that combination valences could be explained by summation and/or max-pooling (Bell and Wilson, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bell and Wilson, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "1a918fef-ba77-4799-8404-b45130c2eb0f",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C72",
+      "claim": "The ORN combinations have diverse, intermediate valence weights within the weight space.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the ORN combinations have diverse, intermediate valence weights within the weight space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "1eeed296-c728-435f-a5d9-b39a931f1011",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C73",
+      "claim": "The ORN combination weights shift as the stimulus intensity increases, and appear to even swap dominancy at different intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these weights shift as the stimulus intensity increases, and appear to even swap dominancy at different intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "187a6283-e722-426b-977d-85dd27f79f93",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C74",
+      "claim": "The variability of \u03b2 values across a range of stimuli indicates that single-ORNs can contribute a dynamic range of weights when co-activated.",
+      "claim_type": "EXPLICIT",
+      "source": "The variability of \u03b2 values across a range of stimuli indicates that (1) single-ORNs can contribute a dynamic range of weights when co-activated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "f22fdeef-7ce7-489b-9ce5-ddc5220a9e09",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C75",
+      "claim": "Many ORN combinations likely share downstream targets.",
+      "claim_type": "EXPLICIT",
+      "source": "and (3) that many ORN combinations likely share downstream targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "f33c610b-55d1-45ac-8830-fe4c665f9c1b",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C76",
+      "claim": "The underlying neural network is multifactorial and perhaps context-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we can cautiously infer that the underlying neural network is multifactorial (Qiu et al., 2021) and perhaps context-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "fefa5115-df8c-42d7-b348-fcd9bc2fc684",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C77",
+      "claim": "The increasing dominance of one ORN observed in some of the pairs suggests competitive, antagonistic interactions between channels, such as those mediated by broad lateral synaptic inhibition or ephaptic inhibition between neighboring ORNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The increasing dominance of one ORN observed in some of the pairs suggests competitive, antagonistic interactions between channels, such as those mediated by broad lateral synaptic inhibition (Olsen and Wilson, 2008) or ephaptic inhibition between neighboring ORNs (Su et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation from the experimental results and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "60ccf84d-9d7a-4fec-92a3-652822e0ed0d",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C78",
+      "claim": "The earlier study used Channelrhodopsin-2 (ChR2), which requires intense blue light (up to 1500 \u00b5W/mm2) that adds significant heat and elicits strong responses in the fly visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "As Chrimson was not available at the time, the earlier study used Channelrhodopsin-2 (ChR2), which requires intense blue light (up to 1500 \u00b5W/mm2) that adds significant heat and elicits strong responses in the fly visual system (Supplementary file 2 - Sheet 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge about the properties of ChR2 and comparison to prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "c410589b-2d42-4419-a3ef-e2bc03de08ec",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C79",
+      "claim": "The present study used the Chrimson channel, which requires lower light intensity and a red wavelength to which the fly eye is less receptive.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it was able to make use of the Chrimson channel, which requires lower light intensity and a red wavelength to which the fly eye is less receptive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design of the present study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "6f6bcb03-7bfa-4ec2-93cd-069c81ee8ed1",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C80",
+      "claim": "All non-optogenetic effects were accounted for with balanced experimental, driver, and responder groups (N = ~ 5148 in each group).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, all non-optogenetic effects were accounted for with balanced experimental, driver, and responder groups (N = ~ 5148 in each group).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design of the present study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "54498acc-3639-49d6-a28b-b86e7db3938f",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C81",
+      "claim": "The use of narrow chambers effectively canalizes fly locomotion into one dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the use of narrow chambers effectively canalizes fly locomotion into one dimension (Bell and Wilson, 2016; Claridge-Chang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "c10faf68-12e2-4bf0-b45c-eb3fa6341d9e",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C82",
+      "claim": "Optogenetic light is not equivalent to odor stimulation: there may be differences in firing rate, response dynamics, or other features of ORN stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, optogenetic light is not equivalent to odor stimulation: there may be differences in firing rate, response dynamics, or other features of ORN stimulation that mean these data are not directly generalizable to odor-elicited activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about limitations of the experimental approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "d9f195cd-bb8c-43af-bd59-7b29bf5fe2f7",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C83",
+      "claim": "Published recordings from optogenetic and odor stimuli suggest an approximately five-fold difference in firing rates in some cases.",
+      "claim_type": "EXPLICIT",
+      "source": "published recordings from optogenetic and odor stimuli suggest an approximately five-fold difference in firing rates in some cases (Bell and Wilson, 2016; Hallem and Carlson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "2b036dfc-b5ec-4676-9878-8c62b5a214ed",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C84",
+      "claim": "The physiological-activity patterns in projection neurons have been reported to be at least partially predictive of odor valence.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the physiological-activity patterns in projection neurons have been reported to be at least partially predictive of odor valence (Badel et al., 2016; Knaden et al., 2012; Parnas et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "c9f387ac-77cd-4018-baca-8b63e0e8d59d",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C85",
+      "claim": "Linear models of ORN activity data could account for a minor fraction of olfactory-behavior variance, and this was not substantially improved with single-class ORN valence information.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine this, we modeled published ORN activity and valence data sets, finding that linear models of ORN activity data could account for a minor fraction of olfactory-behavior variance, and this was not substantially improved with single-class ORN valence information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "c43b13f4-3c72-4a36-b8a4-4c488a253452",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "claim_id": "C86",
+      "claim": "All the observations in the present study point to a minimal role for simple pooling rules, and support the idea that odor valence is primarily governed by complex circuit dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "All the observations in the present study point to a minimal role for simple pooling rules, and support the idea that odor valence is primarily governed by complex circuit dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from all the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "db9d97ba-c9b1-4929-b516-9e5f0065b9af",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The WALISAR optogenetic assay successfully validated aversive behavior by activating Gr66a+ bitter-taste neurons, producing robust light avoidance with an effect size (Cohen's d = \u22122.70) comparable to prior studies (d = \u22123.63).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 collectively demonstrate that the WALISAR assay can detect aversive valence through optogenetic activation. The experimental data (C11) shows robust avoidance, and the effect size (C12) is comparable to previously published results, validating the assay's sensitivity for measuring negative valence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "886ced39-5ca0-40dd-beb2-59994ee1409d",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Activation of Orco neurons (labeling ~70% of ORNs) elicited pronounced attraction at higher light intensities even in still air, with stronger valence (d = 0.56) than previously reported (d \u2264 0.10), and this response was not susceptible to order effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 demonstrate that the WALISAR assay can detect attractive valence through broad ORN activation. The experimental data (C16) shows attraction in still air, contradicting one prior study (C15), with stronger effects than previously reported (C17). The lack of order effects (C18) supports the robustness of the finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "65d1149a-1bba-4334-8b64-2b6e3337c14e",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A systematic optogenetic screen of 46 ORN receptor classes identified only 10 valent types (6 attractive, 4 aversive), including 6 previously known labeled lines and 4 novel valent ORNs, indicating that most ORN types (approximately 78%) are not individually valent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C28 and C54-C56 collectively demonstrate the main finding of the screen. The empirical Bayes analysis (C20) identified 10/46 valent ORN types, with 6 matching known labeled lines (C21-C26), validating the screen's sensitivity (C27). The finding that most ORNs are not individually valent (C28, C55) is a logical inference from the 10/46 hit rate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "3bfc3659-f987-49d9-a65f-bd0e3d65b7d5",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sex and hunger state modulate ORN valence responses: female flies showed no response to Orco-neuron activation when fed but strong attraction when starved, while Or47b activation showed sexual dimorphism with attraction in males but not females.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 demonstrate context-dependent modulation of ORN valence. The experimental data show clear sex differences for Orco neurons (C29-C30) and Or47b neurons (C31), with starvation specifically affecting female Orco responses. These findings are supported by data presented in figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "e5032f17-1c74-45d8-920c-740420b93e64",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Wind has essentially no impact on single ORN type-elicited behavior in walking flies, contradicting prior reports that wind is essential for optogenetic ORN valence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 and C61-C63 demonstrate that wind does not amplify single-ORN valence. The empirical Bayes analysis (C34) found wind effects indistinguishable from noise except for one ORN at one intensity. This contradicts prior work (C33) but is supported by additional evidence from larval studies (C62) and the overall experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "46ba88ad-6742-4e5e-96fa-38a3c6736706",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Starvation had modest and selective effects on single-ORN valence, reducing attraction for three ORNs (Or42b, Or47a, Or83c) and shifting two predator-sensing ORNs (Or85f, Or49a) to aversion, rather than broadly amplifying attraction as hypothesized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 and C64-C68 demonstrate that hunger does not broadly amplify single-ORN valence. The experimental data (C38-C40) show selective effects on specific ORNs rather than general enhancement. The speculation about why this occurs (C66-C68) is reasonable but the core finding that starvation has limited effects on single-ORN valence is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "4e41428b-de6e-4399-a68e-713325893d46",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Two-way ORN combinations produce valences that cannot be explained by simple pooling rules (summation, max-pooling, min-pooling), with combination weights varying by receptor identity and stimulus intensity, indicating complex, context-dependent interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 and C72-C76 demonstrate that ORN combination valences do not follow simple pooling rules. The regression analysis (C44) shows low R\u00b2 values (~0.2) for all three models, and Bland-Altman analysis (C45) reveals wide limits of agreement. The intensity-dependent shifts in \u03b2 weights (C47-C48) and their variability (C72-C74) support the conclusion of complex interactions (C76).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "f2cf9435-fe75-4552-89ab-829954c1652a",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Linear models of ORN activity patterns from published data are only weakly predictive of odor valence (R\u00b2adj = 0.23), and incorporating single-class ORN valence information does not substantially improve prediction (R\u00b2adj = 0.33).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 and C85 demonstrate that linear combinations of ORN activity poorly predict odor valence. The multiple linear regression model achieved only R\u00b2adj = 0.23 (C50), and valence-weighting improved this only to 0.33 without improving predictive performance (C52). This supports the conclusion that linear models account for only a minority of odor preference (C53).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "b17abeac-2472-46d4-8d13-a659aed323d2",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The disconnect between the high proportion of valent odorants (~60%) and the scarcity of individually valent ORN types (\u226415%) implies that most olfactory valence arises from combined activity in multiple ORN classes, supported by the finding that broad Orco activation drives strong attraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 and C69 present a logical inference from the screen results. The comparison between valent odorants (C57) and valent ORNs (from the screen) supports the conclusion that multi-ORN activity is required for most valence (C59). The Orco activation result (C60) provides direct evidence for this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "4a66a93b-c382-46db-b55c-9f70d98e70a7",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The increasing dominance of one ORN in some pairs suggests competitive, antagonistic interactions between channels, possibly mediated by lateral synaptic inhibition or ephaptic inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C77 is speculative about the mechanisms underlying the observed dominance shifts. While the observation of increasing dominance is supported by the data (C47-C48), the proposed mechanisms (lateral inhibition, ephaptic inhibition) are not directly tested and remain hypothetical explanations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "c8efef3a-0d56-4156-975d-ff1ad5436e2f",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The present study improved upon prior optogenetic valence studies by using Chrimson (requiring lower light intensity and red wavelength), balanced genetic controls (N~5148 each group), and narrow chambers to canalize locomotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 describe methodological improvements over prior work. The use of Chrimson (C79) addresses issues with ChR2 (C78), the balanced controls (C80) address potential confounds, and the narrow chambers (C81) simplify behavioral analysis. These are well-documented design features.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "2e102685-16a2-4c40-b77c-3353522ef256",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation may differ from natural odor stimulation in firing rate, response dynamics, or other features, with published recordings suggesting approximately five-fold differences in firing rates in some cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 acknowledge an important limitation of the optogenetic approach. The speculation about differences (C82) is reasonable and supported by published data showing firing rate differences (C83). This is an appropriate caveat about the generalizability of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "b7143fd2-fd4d-4fe0-a93a-66377afd25a1",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "All observations in the present study point to a minimal role for simple pooling rules and support the idea that odor valence is primarily governed by complex circuit dynamics, consistent with reports that projection neuron activity patterns are at least partially predictive of odor valence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C86 synthesize the overall findings of the study. The conclusion that simple pooling rules play a minimal role (C86) is supported by the combination experiments (C44-C46) and modeling results (C50-C53). The reference to projection neuron activity (C84) provides context from prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "2bc7a91d-d938-42c1-a246-4d11ccec25b9",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Drosophila olfactory system consists of ~1300 ORNs expressing ~45 receptor types that converge on glomeruli in the antennal lobe, where local interneurons mediate inter-glomerular interactions before projection neurons relay information to higher brain centers; some receptors form labeled lines while others are broadly tuned.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide established background on Drosophila olfaction, all supported by appropriate citations to prior work. These claims accurately describe the organization and function of the olfactory system and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    },
+    {
+      "id": "63e31e55-35f6-4928-b513-45be8aa98f10",
+      "content_id": "86353783-6b75-45aa-bde1-2bc55a715e5d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior studies reported that larval ORN valence could be predicted by weighted summation of activity in five receptors, and that adult ORN combination valences could be explained by summation and/or max-pooling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 accurately cite prior work on ORN valence prediction models. These claims provide important context for the present study's findings that contradict the simple pooling rules reported in C71.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:17:08.343929Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2802587c-a823-4606-90fe-182e3629919f",
+      "result_id": "db9d97ba-c9b1-4929-b516-9e5f0065b9af"
+    },
+    {
+      "claim_id": "90fffaf0-5f74-4945-b968-1ec9b755901c",
+      "result_id": "db9d97ba-c9b1-4929-b516-9e5f0065b9af"
+    },
+    {
+      "claim_id": "5ae2efaa-4366-4ea2-b9fe-a34cc77b46b8",
+      "result_id": "db9d97ba-c9b1-4929-b516-9e5f0065b9af"
+    },
+    {
+      "claim_id": "ee2b8ddf-8314-4526-a825-3454997e945e",
+      "result_id": "db9d97ba-c9b1-4929-b516-9e5f0065b9af"
+    },
+    {
+      "claim_id": "e893da34-fe2b-4629-9e84-b348be527c28",
+      "result_id": "886ced39-5ca0-40dd-beb2-59994ee1409d"
+    },
+    {
+      "claim_id": "d960fe3f-44dc-405d-b469-0e7b355fc836",
+      "result_id": "886ced39-5ca0-40dd-beb2-59994ee1409d"
+    },
+    {
+      "claim_id": "17857a03-f414-44ad-a2e4-a1a11fd9b26d",
+      "result_id": "886ced39-5ca0-40dd-beb2-59994ee1409d"
+    },
+    {
+      "claim_id": "19ed730e-6c2f-471a-9cac-9b3eadddc79e",
+      "result_id": "886ced39-5ca0-40dd-beb2-59994ee1409d"
+    },
+    {
+      "claim_id": "34a35696-86e9-4dae-bb6c-ca8111be253e",
+      "result_id": "886ced39-5ca0-40dd-beb2-59994ee1409d"
+    },
+    {
+      "claim_id": "23cdd081-921c-4ef9-9344-6d2901087676",
+      "result_id": "886ced39-5ca0-40dd-beb2-59994ee1409d"
+    },
+    {
+      "claim_id": "210a2bfe-e5d6-4985-94f0-46cf6144222d",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "889aaf69-abde-42a7-947b-56fe240f2298",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "3e468142-8518-4b1c-923b-fb56852e9cee",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "08d50110-7945-4822-b52a-5d0aa8875d0e",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "0ceb8fbd-d9ea-401b-a1c7-070dffd45126",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "43106d71-e357-42ea-a116-122de81f033d",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "d9417fb1-2802-421a-851e-479288bf9d39",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "180ddf7a-d57b-4666-a55b-524cf61ff2dd",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "9d0875a0-ff8a-4470-94c1-9e423bdc4a42",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "b6ca1c69-1fe7-4ab4-a489-f596ba68057a",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "a5639617-a492-4b83-a400-674c630fdd48",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "bbf1775f-781f-4aab-b88f-47f3903ae402",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "9f627723-4904-4ff8-83f9-026b0f081efe",
+      "result_id": "65d1149a-1bba-4334-8b64-2b6e3337c14e"
+    },
+    {
+      "claim_id": "87371524-4ebb-422e-a149-a7221334c984",
+      "result_id": "3bfc3659-f987-49d9-a65f-bd0e3d65b7d5"
+    },
+    {
+      "claim_id": "c9aa7009-ce98-4eb6-a20c-a51a24ceeb1f",
+      "result_id": "3bfc3659-f987-49d9-a65f-bd0e3d65b7d5"
+    },
+    {
+      "claim_id": "8611fee5-5286-4629-95b5-a15b50fd239d",
+      "result_id": "3bfc3659-f987-49d9-a65f-bd0e3d65b7d5"
+    },
+    {
+      "claim_id": "f75e98f3-b77c-4840-8464-f5ca5a5556e7",
+      "result_id": "e5032f17-1c74-45d8-920c-740420b93e64"
+    },
+    {
+      "claim_id": "78bd0f55-7f1f-47a4-9906-d48601a97c3d",
+      "result_id": "e5032f17-1c74-45d8-920c-740420b93e64"
+    },
+    {
+      "claim_id": "20f25e43-f161-4638-a680-607043f061b9",
+      "result_id": "e5032f17-1c74-45d8-920c-740420b93e64"
+    },
+    {
+      "claim_id": "588c1c2b-43fe-4ba3-94ba-a2e6c969c83e",
+      "result_id": "e5032f17-1c74-45d8-920c-740420b93e64"
+    },
+    {
+      "claim_id": "ef464f78-b8af-47c4-98b1-1e887bbd5343",
+      "result_id": "e5032f17-1c74-45d8-920c-740420b93e64"
+    },
+    {
+      "claim_id": "5c7ac2ed-8828-4585-8628-72933914a424",
+      "result_id": "e5032f17-1c74-45d8-920c-740420b93e64"
+    },
+    {
+      "claim_id": "699068d7-ccd1-4797-8f6b-584b9206e2f4",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "31c64bd3-a18b-4c50-8b8d-c34a869b8ff1",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "2882121e-443f-48b8-a047-61b2ceca6644",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "5364b275-9180-42da-8d0d-6d7e836e8a69",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "e0e437d7-fc5c-46b0-843f-5d023e5c255d",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "d0ba5e27-699c-4c63-a184-74fb7b042597",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "dfc411b8-b82d-4899-8385-374f32afc7b6",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "c5411885-bab0-4d60-8879-e94232bea0c1",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "2926db0f-f03a-4ef6-af0b-53f256809a26",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "a0cd34c7-ef34-4e6b-bd0d-497adb500416",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "6d0ff66c-c7cf-4ae5-8b97-cf6e38643aec",
+      "result_id": "46ba88ad-6742-4e5e-96fa-38a3c6736706"
+    },
+    {
+      "claim_id": "882f2994-5797-4c08-a9df-92004f5e5bc3",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "268d317f-347e-4025-8bf9-5c452a887ae1",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "df9393f7-fc2e-4aad-a2a4-066b50820421",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "e59e662c-19a5-4cc0-8d51-bbb8a79ff1eb",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "a6414cb7-ee3e-46c1-81a1-8aa986716311",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "3cd117b8-83a0-49ca-a34f-763efe861332",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "6c61b167-a392-4289-9789-afb03d791ea7",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "4abd9a46-ef3e-4bcd-9b70-b98ee6f4bcf9",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "1a918fef-ba77-4799-8404-b45130c2eb0f",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "1eeed296-c728-435f-a5d9-b39a931f1011",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "187a6283-e722-426b-977d-85dd27f79f93",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "f22fdeef-7ce7-489b-9ce5-ddc5220a9e09",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "f33c610b-55d1-45ac-8830-fe4c665f9c1b",
+      "result_id": "4e41428b-de6e-4399-a68e-713325893d46"
+    },
+    {
+      "claim_id": "d4eef0fd-569a-430a-bd15-6ee0fbe48d0c",
+      "result_id": "f2cf9435-fe75-4552-89ab-829954c1652a"
+    },
+    {
+      "claim_id": "2fdd351c-0227-4f73-93ce-119a556fe1fe",
+      "result_id": "f2cf9435-fe75-4552-89ab-829954c1652a"
+    },
+    {
+      "claim_id": "bdfa544b-e907-4961-9f02-49c5899c2e73",
+      "result_id": "f2cf9435-fe75-4552-89ab-829954c1652a"
+    },
+    {
+      "claim_id": "7a240714-2d00-4cb9-a0f0-fafe65bae668",
+      "result_id": "f2cf9435-fe75-4552-89ab-829954c1652a"
+    },
+    {
+      "claim_id": "c9f387ac-77cd-4018-baca-8b63e0e8d59d",
+      "result_id": "f2cf9435-fe75-4552-89ab-829954c1652a"
+    },
+    {
+      "claim_id": "a8ecb2c6-03e7-4dae-9121-b49708b028f1",
+      "result_id": "b17abeac-2472-46d4-8d13-a659aed323d2"
+    },
+    {
+      "claim_id": "90836c07-de92-4565-8457-8bf5a3da351a",
+      "result_id": "b17abeac-2472-46d4-8d13-a659aed323d2"
+    },
+    {
+      "claim_id": "cdc2e640-8eee-47eb-a89e-c3105314396f",
+      "result_id": "b17abeac-2472-46d4-8d13-a659aed323d2"
+    },
+    {
+      "claim_id": "abab3e12-920d-445f-8437-edf32360129c",
+      "result_id": "b17abeac-2472-46d4-8d13-a659aed323d2"
+    },
+    {
+      "claim_id": "7f309490-b745-4b1d-bb35-cc96fb680283",
+      "result_id": "b17abeac-2472-46d4-8d13-a659aed323d2"
+    },
+    {
+      "claim_id": "fefa5115-df8c-42d7-b348-fcd9bc2fc684",
+      "result_id": "4a66a93b-c382-46db-b55c-9f70d98e70a7"
+    },
+    {
+      "claim_id": "60ccf84d-9d7a-4fec-92a3-652822e0ed0d",
+      "result_id": "c8efef3a-0d56-4156-975d-ff1ad5436e2f"
+    },
+    {
+      "claim_id": "c410589b-2d42-4419-a3ef-e2bc03de08ec",
+      "result_id": "c8efef3a-0d56-4156-975d-ff1ad5436e2f"
+    },
+    {
+      "claim_id": "6f6bcb03-7bfa-4ec2-93cd-069c81ee8ed1",
+      "result_id": "c8efef3a-0d56-4156-975d-ff1ad5436e2f"
+    },
+    {
+      "claim_id": "54498acc-3639-49d6-a28b-b86e7db3938f",
+      "result_id": "c8efef3a-0d56-4156-975d-ff1ad5436e2f"
+    },
+    {
+      "claim_id": "c10faf68-12e2-4bf0-b45c-eb3fa6341d9e",
+      "result_id": "2e102685-16a2-4c40-b77c-3353522ef256"
+    },
+    {
+      "claim_id": "d9f195cd-bb8c-43af-bd59-7b29bf5fe2f7",
+      "result_id": "2e102685-16a2-4c40-b77c-3353522ef256"
+    },
+    {
+      "claim_id": "2b036dfc-b5ec-4676-9878-8c62b5a214ed",
+      "result_id": "b7143fd2-fd4d-4fe0-a93a-66377afd25a1"
+    },
+    {
+      "claim_id": "c43b13f4-3c72-4a36-b8a4-4c488a253452",
+      "result_id": "b7143fd2-fd4d-4fe0-a93a-66377afd25a1"
+    },
+    {
+      "claim_id": "8089101b-f7a9-4180-abca-d6753679aef9",
+      "result_id": "2bc7a91d-d938-42c1-a246-4d11ccec25b9"
+    },
+    {
+      "claim_id": "97e4324b-eed0-4824-81f7-39656304d9e3",
+      "result_id": "2bc7a91d-d938-42c1-a246-4d11ccec25b9"
+    },
+    {
+      "claim_id": "e18b397f-e96f-4169-8bde-2e383c9a5254",
+      "result_id": "2bc7a91d-d938-42c1-a246-4d11ccec25b9"
+    },
+    {
+      "claim_id": "d14c3eba-a340-443e-9e2f-47c96fec6554",
+      "result_id": "2bc7a91d-d938-42c1-a246-4d11ccec25b9"
+    },
+    {
+      "claim_id": "11184ccd-ef13-4ca1-b38a-f03cf40aba8c",
+      "result_id": "2bc7a91d-d938-42c1-a246-4d11ccec25b9"
+    },
+    {
+      "claim_id": "3020cad6-4009-4986-83c9-41a1241aee7b",
+      "result_id": "2bc7a91d-d938-42c1-a246-4d11ccec25b9"
+    },
+    {
+      "claim_id": "437c71db-d2be-407e-ac26-a9300d2773b8",
+      "result_id": "2bc7a91d-d938-42c1-a246-4d11ccec25b9"
+    },
+    {
+      "claim_id": "1fd8768d-988f-4074-a298-2688a9463659",
+      "result_id": "2bc7a91d-d938-42c1-a246-4d11ccec25b9"
+    },
+    {
+      "claim_id": "f37d4bc1-27f3-4a4d-8b4f-f41e1cd2830c",
+      "result_id": "63e31e55-35f6-4928-b513-45be8aa98f10"
+    },
+    {
+      "claim_id": "ae800c83-1366-4b30-9153-436cd7d78147",
+      "result_id": "63e31e55-35f6-4928-b513-45be8aa98f10"
+    }
+  ],
+  "comparisons": []
+}

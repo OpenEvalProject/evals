@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C27",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C60",
+      "C90",
+      "C91"
+    ],
+    "result": "Optogenetic activation of D1+ neurons in the dentate gyrus (DG) is sufficient to support operant self-stimulation in mice. D1-Cre mice expressing ChR2 in D1+ DG neurons learned to press a lever for optogenetic stimulation, while control mice did not. This self-stimulation behavior was remarkably resistant to extinction, persisting for 8 days without photostimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9, C27, C31-C34, C60, C90-C91 collectively demonstrate that D1+ DG neurons are sufficient for self-stimulation. The behavioral data (Figure 1D) shows significant differences between ChR2 and control groups with appropriate statistical tests (two-way RM ANOVA). The extinction resistance is well-documented. The anatomical localization and receptor expression are confirmed by histology and RNAscope data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C24",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C61",
+      "C62",
+      "C92",
+      "C93"
+    ],
+    "result": "The dentate gyrus receives dopaminergic projections from the locus coeruleus (LC), not from the ventral tegmental area (VTA) or substantia nigra pars compacta (SNc). Retrograde tracing experiments showed significant LC projections to the DG that colocalized with tyrosine hydroxylase (TH), while no significant VTA or SNc projections were found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C23-C24, C35-C38, C40-C41, C61-C62, C92-C93 are supported by retrograde tracing data (Figure 2, Table 1) showing colocalization of retrograde label with TH in LC but not VTA. The quantification shows clear differences between LC and VTA labeling. This confirms prior literature (C23, C66) with direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C28",
+      "C42",
+      "C63",
+      "C94",
+      "C97"
+    ],
+    "result": "Optogenetic activation of LC neurons that project to the DG supports self-stimulation behavior comparable to direct D1+ DG neuron stimulation. Mice with ChR2 expressed in LC-DG projection neurons showed significant lever pressing compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C28, C42, C63, C94, C97 are supported by pathway-specific optogenetic experiments (Figure 3C, Figure 4C) with appropriate controls and statistical analyses. The retrograde-Cre approach ensures specificity for LC-DG projections. The behavioral effects are comparable to direct D1+ neuron stimulation, supporting the LC-DG pathway's role in reinforcement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C29",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C64",
+      "C65",
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The reinforcing effects of LC-DG stimulation depend on D1 receptor activation by dopamine, not norepinephrine. Systemic and local infusions of D1 antagonist (SCH-23390) significantly reduced self-stimulation, while \u03b2-adrenergic antagonist (propranolol) had no effect. Movement was not affected by drug treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C29, C46-C50, C64-C65, C95-C96, C98-C100 are supported by pharmacological experiments (Figures 3D-F, 4D-F) with both systemic and local drug infusions. Statistical analyses show significant effects of D1 antagonist but not propranolol. Movement tracking controls (C100) rule out motor impairment. The convergent evidence from multiple approaches strongly supports dopamine's role over norepinephrine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C30",
+      "C52",
+      "C53",
+      "C83",
+      "C103",
+      "C114"
+    ],
+    "result": "D1+ DG neurons are preferentially active during goal-directed instrumental actions (lever pressing) compared to passive reward delivery. Calcium imaging showed significantly more neurons modulated by lever pressing than by reward delivery in operant tasks, with far fewer neurons active during non-contingent reward delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C30, C52-C53, C83, C103, C114 are supported by calcium imaging data (Figures 5F, 7C). Statistical comparisons show significantly more neurons modulated during operant lever pressing than non-contingent reward (Figure 5F: 3% vs ~16%). The action-contingency is clearly demonstrated by comparing operant and Pavlovian tasks. This supports the hypothesis that these neurons encode action-related information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The viral targeting strategy successfully labels D1+ neurons in the DG. RNAscope experiments showed that approximately 80% of GFP+ neurons colocalized with Drd1a probe, significantly higher than negative controls, confirming specificity of the Cre-dependent viral expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C104-C106 are supported by RNAscope data (Figure 6) showing high colocalization (80%) between GFP and Drd1a probe with appropriate statistical comparisons to negative and positive controls. This validates the specificity of the viral targeting approach used throughout the study, which is critical for interpreting all optogenetic and imaging results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In a two-lever delay task, distinct populations of D1+ DG neurons were modulated by lever pressing (16.5%), reward delivery (4.9%), or both. Most press-responsive neurons (9.79%) responded to either lever location, suggesting they encode action rather than spatial location, though a small population (4.2%) was spatially selective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by calcium imaging data from the two-lever delay task (Figure 7C-D). The proportions of neurons modulated by different events are clearly quantified. The finding that most neurons respond to both lever locations (C57-C58) supports action encoding over pure spatial encoding, though the small spatially-selective population (C59) adds nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C81"
+    ],
+    "result": "LC-DG self-stimulation differs from VTA/SNc dopamine neuron stimulation in two key ways: lower lever pressing rates but remarkable resistance to extinction. While VTA/SNc stimulation produces rapid extinction, LC-DG stimulation persists for many days without reinforcement, possibly due to long-lasting memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C77, C81 compare LC-DG stimulation to VTA/SNc stimulation, but this comparison relies heavily on inference and prior literature rather than direct experimental comparison. The extinction resistance is well-documented in the current data (C75, Figure 1D), but the claim about lower pressing rates (C74) lacks quantitative comparison to VTA/SNc data. The mechanistic interpretation (C81) is speculative, though supported by citation to prior work on LC and memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Spatial firing fields of D1+ DG neurons shift with lever location in the FR5 switch task, but occupancy patterns are consistent across different task types (operant vs Pavlovian), suggesting spatial modulation is independent of task type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by spatial analysis data (Figure 7\u2014figure supplement 2). The place field centers differ significantly between lever locations (C110), and occupancy is consistent across tasks (C112), supporting the inference that spatial coding doesn't depend on task type (C113). However, the occupancy did vary in the switch task (C111), which somewhat complicates the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C39",
+      "C43",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C78",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C107",
+      "C108"
+    ],
+    "result": "The manuscript provides appropriate context from prior literature on reinforcement learning, dopamine systems, hippocampal function, and the LC-DG pathway. This includes established knowledge about basal ganglia dopamine in reinforcement learning, hippocampal roles in episodic memory, and recent findings on LC dopaminergic projections to hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C14-C22, C25-C26, C39, C43, C66-C67, C69-C71, C78, C82, C85-C87, C107-C108 represent background knowledge and literature citations that appropriately contextualize the study. These are well-supported by citations to prior research and represent accurate characterizations of the field. They establish the novelty and significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C51",
+      "C72",
+      "C79",
+      "C80",
+      "C84",
+      "C88",
+      "C89"
+    ],
+    "result": "The manuscript identifies several areas of uncertainty and future research directions, including: which neurotransmitter (dopamine vs norepinephrine) mediates self-stimulation effects, whether D1+ neurons are specifically required, how LC activation affects DG neuron activity, and whether LC-DG activation induces learning-related plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C51, C72, C79-C80, C84, C88-C89 represent appropriate acknowledgments of limitations and speculation about mechanisms. While some uncertainty is resolved by subsequent experiments (e.g., C44-C45 addressed by pharmacology), others remain as future directions (C72, C88-C89). The speculative claims (C79-C80) about VTA/SNc mechanisms are clearly identified as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Press rates increased across fixed-ratio schedules (FR1, FR3, FR5), and there was a significant effect of training day on the percentage of neurons modulated by the first press in each FR schedule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by behavioral and calcium imaging data (Figures 5D-E). The increase in press rates across FR schedules is expected with training. The statistical analysis shows a significant effect of day but not FR schedule on neural modulation (C102), suggesting learning-related changes in neural activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Drug doses were selected to minimize effects on movement or arousal while testing the role of dopamine vs norepinephrine in self-stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 describes the rationale for dose selection, which is supported by the movement tracking control experiment (C100, Figure 4F) showing no significant differences in locomotion across drug conditions. This validates the dose selection strategy and rules out non-specific motor effects.",
+    "result_type": "MINOR"
+  }
+]

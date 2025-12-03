@@ -1,0 +1,1348 @@
+{
+  "submission": {
+    "id": "cf452119-025a-4fff-a181-7edd16ce3b9c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:32:43.048929Z",
+    "updated_at": "2025-12-03T18:32:43.048929Z"
+  },
+  "content": [
+    {
+      "id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "submission_id": "cf452119-025a-4fff-a181-7edd16ce3b9c",
+      "content_type": "manuscript",
+      "content_text": "# A CRISPR screen in intestinal epithelial cells identifies novel factors for polarity and apical transport\n\n## Authors\n\n- Katharina MC Klee<sup>1</sup>\n- Michael W Hess<sup>2</sup> ([ORCID: 0000-0002-5154-3553](https://orcid.org/0000-0002-5154-3553))\n- Michael Lohm\u00fcller<sup>3</sup> ([ORCID: 0000-0002-7712-3143](https://orcid.org/0000-0002-7712-3143))\n- Sebastian Herzog<sup>3</sup>\n- Kristian Pfaller<sup>2</sup>\n- Thomas M\u00fcller<sup>4</sup>\n- Georg F Vogel<sup>1</sup> ([ORCID: 0000-0002-2515-4490](https://orcid.org/0000-0002-2515-4490)) \u2020\n- Lukas A Huber<sup>1</sup> ([ORCID: 0000-0003-1116-2120](https://orcid.org/0000-0003-1116-2120))\n\n### Affiliations\n\n1. Institute of Cell Biology, Medical University of Innsbruck Innsbruck Austria ([ROR:03pt86f80](https://ror.org/03pt86f80))\n2. Institute of Histology and Embryology, Medical University of Innsbruck Innsbruck Austria ([ROR:03pt86f80](https://ror.org/03pt86f80))\n3. Institute of Developmental Immunology, Medical University of Innsbruck Innsbruck Austria ([ROR:03pt86f80](https://ror.org/03pt86f80))\n4. Department of Paediatrics I, Medical University of Innsbruck Innsbruck Austria ([ROR:03pt86f80](https://ror.org/03pt86f80))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEpithelial polarization and polarized cargo transport are highly coordinated and interdependent processes. In our search for novel regulators of epithelial polarization and protein secretion, we used a genome-wide CRISPR/Cas9 screen and combined it with an assay based on fluorescence-activated cell sorting (FACS) to measure the secretion of the apical brush-border hydrolase dipeptidyl peptidase 4 (DPP4). In this way, we performed the first CRISPR screen to date in human polarized epithelial cells. Using high-resolution microscopy, we detected polarization defects and mislocalization of DPP4 to late endosomes/lysosomes after knockout of TM9SF4, anoctamin 8, and ARHGAP33, confirming the identification of novel factors for epithelial polarization and apical cargo secretion. Thus, we provide a powerful tool suitable for studying polarization and cargo secretion in epithelial cells. In addition, we provide a dataset that serves as a resource for the study of novel mechanisms for epithelial polarization and polarized transport and facilitates the investigation of novel congenital diseases associated with these processes.\n\n## Introduction\n\nEpithelia are highly specialized tissues that line inner and outer surfaces of various organs of metazoans, performing absorption, secretion, and barrier functions. During polarization, epithelial cells assume their characteristic shape by building specialized apical- and basolateral plasma membrane (PM) domains (Rodriguez-Boulan and Macara, 2014; Apodaca et al., 2012), which are separated by junctional complexes and characterized by a specific composition of lipids and proteins (Martin-Belmonte et al., 2007). The asymmetric distribution of polarity complexes and the mutual exclusion of proteins from one domain by proteins from the other domain are critical for the maintenance of apico- basolateral domains at the cell cortex (Rodriguez-Boulan and Macara, 2014; Rom\u00e1n-Fern\u00e1ndez and Bryant, 2016). Additionally, tightly orchestrated transport mechanisms and machineries, as Rab-GTPases, motor proteins, soluble NSF attachment receptor (SNARE)-proteins, and specific adapter proteins, ensure the establishment and maintenance of specialized membrane domains (Gaisano et al., 1996; Low et al., 1996; Weimbs et al., 1997; Li et al., 2002).\n\nDefects in polarization and polarized traffic often cause diseases, such as congenital diarrhea and enteropathies (Thiagarajah et al., 2018; Berni Canani et al., 2010; Apodaca et al., 2012). Microvillus inclusion disease (MVID) is an autosomal-recessive enteropathy (Cutz et al., 1989), characterized by intractable diarrhea in neonates (Cutz et al., 1989; Ruemmele et al., 2006). Enterocytes of MVID patients show loss of brush-border microvilli, formation of so-called microvillus inclusions and subapical accumulation of so-called 'secretory granules' (Cutz et al., 1989; Phillips et al., 2000). Our studies identified mutations in MYO5B, STX3, and STXBP2 to be causative for MVID (M\u00fcller et al., 2008; Ruemmele et al., 2010; Wiegerinck et al., 2014; Vogel et al., 2017b); they revealed that a molecular transport machinery involving myosin Vb (myo5b), the small Rab-GTPases Rab11a and Rab8a, the t-SNARE syntaxin3 (stx3), and the v-SNAREs slp4a and vamp7 is essential for apical cargo delivery (Vogel et al., 2015b; Vogel et al., 2017b). This cascade is required for the delivery of apical transmembrane transporters that are important for proper physiological function of enterocytes, such as sodium-hydrogen exchanger 3 (NHE3), glucose transporter 5 (GLUT5), and cystic fibrosis transmembrane conductance receptor (CFTR), but not for dipeptidyl-peptidase-4 (DPP4), sucrase-isomaltase (SI), and amino-peptidase-N (APN). This suggests the presence of additional trafficking routes and transport mechanisms for these apical cargos.\n\nBecause the molecular signals for sorting and transport of apical cargo are thought to vary widely, several mechanisms have been proposed to underlie epithelial protein secretion (Levic and Bagnat, 2021). A common, characteristic feature of apical cargo is the presence of post-translational modifications, such as N- and O-linked glycosylations that are recognized by specific lectins, as well as GPI-anchors that allow sorting into cholesterol-rich lipid microdomains (Weisz and Rodriguez-Boulan, 2009; Zurzolo and Simons, 2016). Additionally, recent studies have proposed that protein oligomerization coincides with sorting into specialized membrane domains in the trans-Golgi network (TGN), which depends on the pH regulation of the TGN lumen (Levic and Bagnat, 2021; Levic et al., 2020).\n\nTo uncover protein functions for a wide range of cellular processes, genome-wide clustered regularly interspaced short palindromic repeats (CRISPR)-mediated screens have advanced to a state-of-the-art strategy (Shalem et al., 2014; Shalem et al., 2015; Kampmann, 2018). In addition to their application to understanding the regulation of tumor biology, viral infection, or miRNA processing, CRISPR-mediated screening approaches have recently proven highly effective in discovering novel factors for intracellular protein trafficking and secretion (He et al., 2021; Zhu et al., 2021; Hutter et al., 2020; Stewart et al., 2017; Popa et al., 2020; Bassaganyas et al., 2019). Additionally, the CRISPR-Cas9 technology has been successfully used in Madin\u2013Darby canine kidney (MDCK) cells with the generation of a collection of Rab-GTPase knockouts, which has provided great value for phenotypic analyses of Rab-KOs in epithelial cells (Homma et al., 2019).\n\nIn this study, we employed the CRISPR-screening technology as an unbiased experimental strategy to uncover novel regulators of epithelial cell polarization and trafficking by investigating factors required for the apical delivery of DPP4. The brush-border hydrolase DPP4 is a type II transmembrane protein. It is heavily modified with N- and O-linked glycans in its extracellular domain (Misumi et al., 1992; Baricault et al., 1995; Fan et al., 1997), which have been suggested to be critical apical sorting determinants of DPP4 (Alfalah et al., 2002). Even though several studies have suggested diverse trafficking routes for DPP4, the mechanisms and protein machineries underlying these processes remain enigmatic so far (Casanova et al., 1991; Baricault et al., 1993; Low et al., 1992; Sobajima et al., 2014).\n\nHere, we conducted the first CRISPR screen in human intestinal epithelial cells to date. We present an experimental strategy for applying the CRISPR screening system in polarized epithelial cells to study novel protein functions. We have developed an easy-to-use and adaptable, FACS-based assay to measure the efficiency of protein secretion in polarized epithelial cells after genome editing. In combination with a detailed characterization of selected proteins by immunofluorescence and cryo-based electron microscopy, we have identified novel factors required for proper apico-basolateral polarization and secretion of apical cargo. Therefore, our dataset serves as a foundation for future studies aimed at deciphering novel mechanisms underlying epithelial polarization and polarized cargo transport. In addition, it provides a powerful resource for the investigation and validation of new congenital disease genes to be identified.\n\n## Results\n\n### Development of a genome-wide CRISPR screen to identify factors required for plasma membrane localization of the apical cargo DPP4\n\nWe established an unbiased CRISPR-Cas9-loss-of-function screen to define factors involved in surface targeting of the apical model cargo DPP4 in the enterocyte like colon carcinoma cell line, CaCo2 (Figure 1). DPP4 is a type 2 transmembrane protein that can be detected with antibodies binding to the extracellular C-terminus of the protein (Figure 1A). We made use of this feature to read out the efficiency of endogenous DPP4 surface delivery by fluorescence-activated cell sorting (FACS) in CaCo2 cells after epithelial polarization. Here, we used a period of 18\u201321 days, during which surface DPP4 signal is significantly increased in the course of cell surface expansion and specialized polarized trafficking processes (Figure 1B). In this context, we aimed to define factors required for apical membrane differentiation and cargo trafficking, thereby leading to a strong reduction of DPP4 after surface polarization. First, we generated Cas9-expressing CaCo2 cells and then transduced two biological replicates at a low multiplicity of infection (MOI) (0.2) using the human lentiviral GeCKOv2 CRISPR-library, selecting for successful viral integration with antibiotic treatment with puromycin. We then seeded the infected CaCo2 cultures at high density and allowed the confluent monolayers to further polarize and differentiate for 18 days. Next, polarized cells were detached, stained for endogenous DPP4, and subjected to FACS, separating those cells with only 10% of surface signal left, due to CRISPR targeting (Figure 1C and D). To determine the abundance of gRNAs in sorted versus unsorted cell populations, genomic DNA was isolated and read counts were determined by next-generation sequencing. Subsequent analysis using GenePattern and Galaxy analysis tools enabled the identification of 89 gRNAs significantly enriched in the sorted cell population (p<0.05) and represented genes whose downregulation had resulted in reduced DPP4 surface release (Figure 1D and E, Supplementary file 1A and B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig1-v3.jpg)\n\n**Figure 1.:** (A) Dipeptidylpeptidase 4 (DPP4) localizes to the apical brush-border of polarized enterocytes and can be detected with a specific antibody at its extracellular stalk domain. Top view (XZ) and lateral view (YZ) of a polarized CaCo2 monolayer. Scale = 5 \u00b5m. (B) During polarization, apical DPP4 is increased due to polarized traffic and surface expansion, which can be measured by flow cytometry (right panel, CaCo2 unpolarized versus polarized). HEK293T cells, not expressing DPP4, serve as quality control for staining specificity. (C) CaCo2-Cas9 cells are transduced with the lentiGuide-Puro library and selected with puromycin. After selection, CaCo2 cells are seeded to confluent monolayers and cultured for apico-basolateral polarization. Subsequently, cells are detached, stained, and subjected to fluorescence-activated cell sorting (FACS). Sorted and unsorted control cells are processed for gDNA extraction and genomically integrated CRISPR constructs are amplified by PCR. Finally, PCR products of sorted and unsorted cell populations are analyzed by next-generation sequencing and sgRNAs are ranked by their enrichment in the sorted vs. unsorted cell polpulation. (D) Sorting was performed for 10% of the cells, with lowest surface-signal intensity, thereby enriching for the cell population that had lost 90% of surface DPP4 signal, due to efficient CRISPR targeting. (E) 89 single-guide RNAs were significantly enriched in the sorted cell population. (F) Factors enriched in the sorted cell population could functionally be associated with secretory traffic, cytoskeletal architecture, or transcription, in a manual gene -ontology analysis.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A flow cytometry assay was performed as described for our CRISPR screen. CaCo2 WT cells were polarized for 3 weeks and subsequently detached. After detachment, cells were either stained immediately for surface-DPP4 und subjected to flow cytometry or treated with 20 \u00b5M of colchicine for 2,5 hr. After 2.5 hr, colchicine-treated cells and corresponding control cells (incubation in FACS buffer for 2.5 hr) were stained for surface-DPP4 and subjected to flow cytometry measurements. No change in surface DPP4 signal can be detected upon induction of vacuolar apical compartments (VAC) with colchicine. (B) Quantification of surface-DPP4 signal of colchicine-treated and untreated cells. Induction of VAC formation with colchicine does not cause a reduction in surface DPP4 signal. (C) Generation of knockout (KO) cell lines of seven candidates with additional gRNAs. Protein levels that may remain in KO cells after CRISPR targeting were determined by Western blotting compared with wild-type (WT) cells. Beta-actin was used as loading control. Molecular size markers are depicted in kDa. (D) Paracellular microvilli a/o numerous interdigitations in cryo-fixed ARHGAP33 KO cells. (E) Intracellular microvillar cluster in cryo-fixed MTMR2 KO cell. (F) Mislocalized DPP4 (arrows) in a huge, acidic (i.e., DAMP-positive: arrow head) compartment in ANO8 KO cell. (G) Mislocalized DPP4 (arrows) in a huge DAMP-positive (arrowhead) compartment in TM9SF4 KO cell. (H\u2013K) Normal late endosomal and lysosomal organelles as observed after serum starvation overnight. (H) Overview of TM9SF4 KO cell. (I) Reformed lysosome with cathepsin D immunogold label concentrated at its tubular part (outlined by arrowheads) in TM9SF4 KO cell. (J) Weak DAMP-immunogold label (arrow head) within newly formed lysosome/protolysosome in TM9SF4 KO cell. (K) Lamp1 (arrow) and cathepsin D (arrow heads) immunogold label in normal lysosome in ANO8 KO cell. (L) Ectopic DPP4 immunogold label (arrow heads) at basolateral, paracellular microvilli in TM9SF4 KO cell. (M) Ectopic stx3 immunogold label (arrowheads) at basolateral, paracellular microvilli TM9SF4 KO cell. (N) ZO1 immunogold label (arrowheads) at ectopic, basolateral tight junctions associated with paracellular microvillar spot (asterisk marks intercellular space) in TM9SF4 KO cell culture. (O) E-cadherin immunogold label (arrowheads) at basolateral adherens junctions adjacent to a paracellular microvillar spot (asterisk marks intercellular space) in TM9SF4 KO cell culture. (D\u2013O) Scale = 500 nm.\n\nTo exclude the possibility of aberrant effects caused by vacuolar apical compartment (VAC) formation in our screening workflow, we repeated the FACS screening assay with CaCo2 WT cells treated with colchicine (Gilbert and Rodriguez-Boulan, 1991). This treatment would induce VAC formation, but we found no change in apical DPP4 signaling (Figure 1\u2014figure supplement 1A and B) and therefore concluded that VAC formation should not interfere with the FACS-based screening approach.\n\n### A genome-wide CRISPR screen in polarized enterocytes identifies factors associated with secretory traffic\n\nNext, we wanted to get a comprehensive overview on the gene classes represented in our list of enriched gRNAs. However, automated KEGG pathway and gene enrichment analyses of our results were insufficient. Hence, we manually analyzed the 89 identified genes for common gene ontology (GO) terms and grouped them accordingly. We listed three GO terms from each category (biological process, molecular function, cellular compartment) for each hit, including the most common GO terms captured by the QuickGO -search database, focusing on including GO terms that indicate a role in the secretory pathway (Supplementary file 1C).\n\nOur analysis highlighted several genes, with functions related to the organization of the secretory pathway (Figure 1E and F, Figure 2A and B), including general organization and maintenance of organelles such as the endoplasmic reticulum (ER), the Golgi apparatus, or protein transport at early steps of the secretory pathway (e.g., KDELR2, RTN2, GOLGA8O). Further, identified hits were related to protein modification and transport at cis- and trans-Golgi compartments (GALNT2, SYS1), lipid-biosynthesis (MTMR2, PIP5K1C), and vesicle fusion and endocytic recycling (SNAP29, DSCR3). Two genes identified were associated with ER-plasma membrane (ER-PM) contact sites (TMEM110, ANO8). Furthermore, we found several factors required for various aspects of cytoskeletal organization such as actin-filament organization/polymerization (e.g., MARCKSL1, ARPC4-TTLL3), cell adhesion (e.g., ITGA5, FREM3, MPZ) but also microtubule organizing center (MTOC)/centriole- and cilium assembly and association (e.g., CCDC61, CCDC42B, C2CD3). Finally, we found numerous factors with functions related to DNA-templated transcription and cell differentiation (e.g., ETV7, NKX2-2, ERF), as well as mRNA processing/RNA splicing (e.g., SNRPE, SFSWAP), translation (e.g., RPL30, RPL2), and DNA repair/DNA replication (e.g., SFR1, ATAD5, REV1) (Figure 1E and F, Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic representation of significantly enriched genes obtained from a CRISPR screening approach, grouped and organized according to their associated GO terms. (B) GO association analysis of the seven factors that were chosen for CRISPR screen readout validation and further characterization. CC, cellular compartment; MF, molecular function; BP, biological process.\n\nOverall, in a CRISPR-mediated loss-of-function screen, we identified a variety of factors that affect surface transmission of an apical model cargo protein, DPP4, at different cellular levels. This underscores the value of our dataset and approach to identify novel factors for secretory membrane trafficking in polarized epithelial cells.\n\n### Novel factors for surface localization of the apical cargo DPP4\n\nAfter setting up a CRISPR-mediated screening platform in polarized CaCo2 cells, we validated our screening approach by further characterizing potentially novel factors for apical cargo traffic and membrane polarization. Since we had identified several genes with functions related to secretory trafficking (Figure 2A), we chose seven promising candidates for further analyses (Figure 2B). These factors function on various levels of the endomembrane system: the anoctamin family member anoctamin 8 (ANO8) and the stromal interaction molecule (STIM) enhancing tethering protein STIMATE (TMEM110) are involved in the formation and maintenance of ER-PM contact sites, and in turn, in apical PM-establishment in bile-canaliculi (Jha et al., 2019; Quintana et al., 2015; Chun Chung et al., 2020). The nonaspanin-family member TM9SF4 has been suggested to be required for transmembrane domain sorting in early steps of the secretory pathway but also in the generation of specialized membrane domains in the early cis-Golgi compartment (Perrin et al., 2015; Vernay et al., 2018; Yamaji et al., 2019). Polypeptide N-acetylgalactosaminyltransferase 2 (GALNT2) regulates O-linked glycosylation of transmembrane proteins in the Golgi and was chosen as a candidate for screen validation, with a potentially global effect on secretory traffic (Wandall et al., 1997; Moremen et al., 2012). Sorting nexin 26 (SNX26/ARHGAP33) was included since it has been described as a GTPase-activating protein for Cdc42, a major player in apical domain differentiation (Kim et al., 2013). Finally, we chose the lipid kinase subunit phosphatidylinositol 4-phosphate 5-kinase type-1 gamma (PIP5K1C) and the lipid phosphatase myotubularin-related protein 2 (MTMR2) for screen validation and further analysis since they are known regulators of apical phosphatidylinositolphosphate (PIP) pools (Xu et al., 2019; Rom\u00e1n-Fern\u00e1ndez et al., 2018).\n\nWe generated knockout (KO) cell lines of those candidates using the CRISPR-technology and those gRNAs that had proven to efficiently target in our CRISPR screen (Figure 3A). We then analyzed KO cell lines for surface localization of DPP4 by flow cytometry using the previously described polarization assay from our CRISPR screen (Figure 3B). These measurements showed that targeting of the selected candidates indeed leads to reduced surface localization of DPP4, but to varying degrees (Figure 3C). The strongest effect on DPP4 surface localization was caused by interference with PIP5K1C (~75% reduction), followed by TM9SF4, TMEM110, and GALNT2 (~50% reduction). Interestingly, ANO8-, MTMR2-, and ARHGAP33-KOs showed the mildest phenotype (~30% reduction) (Figure 3B and C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig3-v3.jpg)\n\n**Figure 3.:** (A) Generation of clonal knockout (KO) cell lines of seven candidates chosen for primary CRISPR screen validation and further analysis. Any remaining protein levels in the KO clones after CRISPR targeting were determined by Western blotting compared with wild-type (WT) cells. Beta-actin was used as loading control. Molecular size markers are depicted in kDa. (B) The effect of the respective KOs on DPP4 surface transport, in KO cell lines. Cell lines were polarized for 18 days and then subjected to flow cytometry to determine the KO effect on DPP4 surface targeting. (C) Geometric means of DPP4-area (DPP4 intensity on the cellular surface) were determined of respective cell lines. All KO cell lines show varying extents of DPP4 surface reduction, with PIP5K1C-KO displaying the strongest and ANO8-KO the mildest effect.\n\nBy growing KO cell lines of selected candidate genes and reanalyzing them for the effects of CRISPR targeting on PM localization of DPP4, we validated our primary CRISPR loss-of-function screen and thereby identified new players for surface localization of the apical cargo protein DPP4. For the subsequent analyses of epithelial phenotypes, we generated KO cell lines with a second set of gRNAs targeting the selected seven genes (Figure 1\u2014figure supplement 1C) and included these cell lines in the analyses as indicated.\n\n### 3D cyst models and high-resolution microscopy reveal novel factors for proper epithelial polarization\n\nBecause apical transport and the correct establishment of epithelial polarity are closely linked, we investigated the relevance of the newly identified factors for polarization. Therefore, we performed 3D cyst assays using WT and the corresponding KO cell lines (Figure 4). Cysts were analyzed by immunofluorescence microscopy (IF) to determine the targeting of DPP4 to apical membrane domains. We found that all KO cell lines had severe defects in forming a single, central lumen, but rather established multiple or no lumina (Figure 4A and B). Although DPP4 was localized in the apical PM domains in all KO cell lines, TM9SF4-, MTMR2-, and ANO8-KO cell lines additionally displayed aberrant intracellular accumulation of DPP4 (Figure 4A and C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig4-v3.jpg)\n\n**Figure 4.:** (A) 3D cyst assay were performed with WT and KO cultures. Immunofluorescence micrographs of 3D cysts generated from WT and KO cell lines. All knockdown cell lines form multiple lumina or no lumina. DPP4 localizes to actin-rich structures in al KO cell lines and additionally, to intracellular, actin-negative compartments in TM9SF4-, MTMR2- and ANO8-KO clones (white arrowheads). Scale = 10 \u00b5m. (B) Single central lumen formation was quantified. The percentage of cysts with a single central lumen is substantially decreased in the respective KO cells lines (dot box plot, Mann\u2013Whitney U test. ***p<\u20090.005, n \u2265 100 cells per condition). (C) Delocalized DPP4 in cysts was quantified (dot box plot, Mann\u2013Whitney U test. ***p<0.005, n.s., not significant).\n\nTo characterize the involvement of the selected candidates in apico-basolateral polarization and apical transport in greater detail, we complemented fluorescence microscopy with cryo-based electron microscopy and investigated the ultrastructural phenotype and the subcellular distribution of selected marker molecules in the respective cell lines. To this end, TM9SF4-, ANO8-, ARHGAP33-, TMEM110-, MTMR2-, PIP5K1C-, and GALNT2-KO cell lines were grown on permeable filter membranes for 18\u201321 days to obtain fully polarized, differentiated 2D cell monolayers. Samples were then subjected to rapid cryo-fixation (high-pressure freezing and freeze-substitution) for transmission electron microscopy (TEM) or to conventional aldehyde fixation for scanning EM (SEM) and immunogold-TEM.\n\nIn contrast to CaCo2 WT cells, all KO cell lines had conspicuous clusters of ectopic microvilli (Figure 5A\u2013E, Figure 1\u2014figure supplement 1D and E). They appeared either as well-organized ectopic brush-border and adjacent ectopic terminal web, lining distinct intracellular lumina (i.e., typical microvillus inclusions) (Figure 5A) or as less complex inclusions filled with intertwined masses of long, curved microvilli (Figure 5B, Figure 1\u2014figure supplement 1E). Similar configurations occurred basolaterally as paracellular spots lined by densely packed microvilli (Figure 5C and E), frequently associated with ectopic tight- and adherens-junctions (Figure 5E). In addition, numerous long, curved microvilli were found facing the occasionally widened basolateral intercellular space (Figure 5D, Figure 1\u2014figure supplement 1D). All these patterns (summarized in Supplementary file 2 and Supplementary file 3) together confirm the highly disturbed polarity of all KO cell lines studied here.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig5-v3.jpg)\n\n**Figure 5.:** (A) Distinct intracellular lumen, lined by ectopic brush-border and adjacent terminal web, thus, a typical microvillus inclusion (arrow) inside a PIP5K1C-KO cell. Arrowheads mark lysosomes. (B) Spherical intracellular mass of tangled microvilli associated with ectopic terminal web (arrow) inside a GALNT2-KO cell. Double arrowheads mark enlarged late endocytic organelles. (C) Paracellular, basolateral spot of densely packed microvilli plus associated ectopic terminal web (arrow) in polarized TM9SF4-KO-cell culture. (D) Numerous, slightly bent microvilli facing widened intercellular space (arrows) in polarized ANO8-KO cell culture. (E) Paracellular microvillar spot with adjacent ectopic terminal web (arrow) and associated cell junctions (double arrows) in polarized TMEM110-KO cell culture. Arrowheads mark lysosomes, double arrowhead marks poorly structured late endocytic organelles. (A\u2013E) Scale = 1 \u00b5m.\n\nNotably, remarkable ultrastructural alterations also involved late endocytic and catabolic organelles (Figure 6). In WT CaCo2 cells, the different types and/or maturation stages of multivesicular bodies (MVBs) and lysosomes, as well as some autophagic organelles, appeared normal in size, abundance, and morphology (Figure 6A and B) and resembled patterns previously mapped for other cryo-fixed mammalian cell lines (e.g., MEF, HeLa: Vogel et al., 2015a; Yordanov et al., 2019; Hess and Huber, 2021). However, in most KO lines, the late endosomal/lysosomal endomembrane system was characterized \u2013 if not even dominated\u2212 by partly giant, spherical organelles (in addition to normal MVBs) \u2212 at the expense of normal lysosomes (Figure 5B and E, Figure 6C\u2013G, double arrowheads). These large compartments had either weakly stained, homogeneous granular contents with a few intraluminal elements (Figure 5B and E, Figure 6C\u2013G), or different amounts of partially degraded material. According to ultrastructural criteria, we tentatively interpreted these poorly structured, faint compartments as types of peculiar endolysosomes or (autophago)lysosomes (Bright et al., 2016; Fujita et al., 1990; Remis et al., 2014). Their size and frequency varied throughout the different KO lines. Especially in TM9SF4- and ANO8-KO, they reached dimensions of up to 2 \u00d7 6 \u00b5m in diameter (e.g., Figure 6C), in other KO cell lines only diameters of approximately 500 nm. In CaCo2 WT cells, we infrequently found this type of organelle as well, but here they had rather normal dimensions (Figure 6A and B, double arrowheads; Supplementary files 2 and 3).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig6-v3.jpg)\n\n**Figure 6.:** (A, B) WT CaCo2 cells with normal endosomes and lysosomes: multivesicular bodies (MVBs) with varying contents (regarding intraluminal vesicle [ILV] number, size, and staining patterns), different types of (autophago)lysosomes (arrowheads), all filled with clearly stained, finely granular material plus membrane remnants (i.e., multilamellar bodies), and/or opaque, amorphous residues (i.e., dense-core lysosomes). Double arrowheads mark examples of inconspicuous spherical organelles with weakly stained, quite homogeneous granular contents harboring only sporadic ILVs and/or other structured components, interpreted as kind of endolysosome (Bright et al., 2016). (C) Large, poorly structured putative endolysosome (double arrowhead), virtually the predominant type of late endocytic and/or catabolic organelles in ANO8 KO at steady state. (D) Moderately sized and enlarged putative endolysosomes (double arrowheads) in PIP5K1C KO cells. (E) Enlarged putative endolysosome (arrowhead), the predominant type of late endocytic/catabolic organelles in TM9SF4 KO cells. (F) Moderately enlarged putative endolysosomes (double arrowheads) occurring together with normal lysosomes in ARHGAP33 KO cells. (G) Enlarged putative endolysosomes (double arrowheads) occurring together with slightly smaller lysosomes in MTMR2 KO cells. Arrows mark lateral microvilli. (A\u2013G) Scale = 500 nm.\n\nRegarding the general architecture of the brush-border, SEM and actin fluorescence microscopy revealed more or less severe irregularities in in all KO cell lines studied here (Figures 7\u20149). They included patchy distribution or complete absence of apical microvilli, together with the occurrence of extremely long microvilli (Figure 7B\u2013H). We then combined actin labeling with immunofluorescence microscopy using antibodies against the apical components DPP4 and stx3 (Figure 8A\u2013H, Figure 9A\u2013H). At first glance, we detected DPP4 in most CaCo2-KO monolayers predominantly at the apical plasma membrane. However, more detailed analysis of confocal stacks revealed that DPP4 was also mislocalized to intracellular sites in ARHGAP33-, TM9SF4-, PIP5K1C-, MTMR2-, and ANO8-KO cell lines (Figure 8B, F, and I), although to varying degrees. While DPP4 was mislocalized to subapical compartments in ARHGAP33-, TM9SF4-, and ANO8-KO cell lines, PIP5K1C- and MTMR2-KOs displayed DPP4 localization to large, actin-rich, basolateral structures, reminiscent of microvillus inclusions, observed by EM. Consistent with these observations, stx3 was detected at the apical brush-border microvilli in all KO cell lines (Figure 9B, F, and I). This was accompanied by additional ectopic localization of stx3 in TM9SF4-, ARHGAP33-, MTMR2-, and PIP5K1C-KOs, with MTMR2- and PIP5K1C-KOs exhibiting stx3-positive, basolateral inclusion-like compartments (Figure 9D and F), whereas stx3-positive structures were seen in apical regions in TM9SF4- and ARHGAP33-KO cells (Figure 9B and E). We further analyzed the localization of the apical membrane proteins aminopeptiase N (APN) and sucrase-isomaltase (SI) (Figure 8\u2014figure supplements 1 and 2). Interestingly, we found APN delocalized to actin-rich intracellular compartments only in ARHGAP33-KO cells (Figure 8\u2014figure supplement 1E). However, the apical localization of SI remained unaltered upon deletion of the selected genes (Figure 8\u2014figure supplement 2A\u2013H).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig7-v3.jpg)\n\n**Figure 7.:** (A) CaCo2 WT cells with dense, quite uniform brush-border. (B\u2013H) Patchy distribution of partly abnormal microvilli characterize the apical surface of all KO cell lines specified here. (A\u2013H) Scale = 2 \u00b5m.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig8-v3.jpg)\n\n**Figure 8.:** (A) DPP4 localization is restricted to the actin-rich microvillus brush-border in WT cells. (B, C) DPP4 can still be targeted to the apical plasma membrane, but also mislocalizes to subapical compartments in TM9SF4- (B) and ANO8-KO (C) cells (white arrowheads). (D) PIP5K1C-KO cell lines display large, DPP4- and actin-positive, basolateral compartments (white arrowheads). (E) DPP4 mislocalizes to subapical compartments in ARHGAP33-KO cells (white arrowheads). (F) MTMR2-KO cell lines display large, actin-rich basolateral compartments, that also show DPP4 (white arrowheads). (G, H) In GALNT2- and TMEM110-KO cells, DPP4 localizes strictly to the apical plasma membrane. (I) Delocalized DPP4 in polarized CaCo2 cells was quantified (dot box plot, Mann\u2013Whitney U test. **p<0.01, ***p<0.005, n.s., not significant, n \u2265 100 cells per condition). XY = top view of polarized monolayer; XZ/YZ = lateral view of polarized monolayer. Scale = 5 \u00b5m.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig8-figsupp1-v3.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) APN localization is restricted to the actin-rich microvillus brush-border in WT cells. (B\u2013D) APN localization is restricted to the actin-rich microvillus brush-border in TM9SF4-, PIP5K1C-, and ANO8-KO cells. Additionally, intracellular actin-positive compartments are detected (white arrowheads). (D) ARHGAP33-KO cell lines display large, APN- and actin-positive, intracellular compartments (white arrowheads). (E) DPP4 mislocalizes to subapical compartments in ARHGAP33-KO cells (white arrowheads). (F) APN localization is restricted to the actin-rich microvillus brush-border in MTMR2-KO cells. Additionally, intracellular actin-positive compartments are detected (white arrowheads). (G, H) In GALNT2- and TMEM110-KO cells, DPP4 localizes strictly to the apical plasma membrane. (A\u2013H) XY = top view of polarized monolayer; XZ/YZ = lateral view of polarized monolayer. Scale = 5 \u00b5m. (I) Delocalized APN in polarized CaCo2 cells was quantified (dot box plot, Mann\u2013Whitney U test. ***p<0.005, n.s., not significant, n \u2265 100 cells per condition).\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig8-figsupp2-v3.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) SI localization is restricted to the actin-rich microvillus brush-border in WT cells. (B\u2013H) KO of indicated genes does not alter the localization of SI localization is restricted to the actin-rich microvillus brush-border. XY = top view of polarized monolayer; XZ/YZ = lateral view of polarized monolayer. Scale = 5 \u00b5m.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig9-v3.jpg)\n\n**Figure 9.:** (A) stx3 localizes strictly to the apical plasma membrane in WT cells. (B) stx3 abberantly localizes to a subapical compartment in TM9SF4-KO cells. (C) ANO8-KO cell lines display apical localization of stx3. (D) stx3 mislocalizes to large, basolateral, actin-rich compartments in PIP5K1C-KO cells, reminiscent of microvillus inclusions. (E) stx3 localizes to subapical compartments in ARHGAP33-KO cells. (F) stx3 mislocalizes to large, basolateral actin-rich compartments in MTMR2-KO cells. (G, H) GALNT2- and TMEM110-KO cell lines display apical localization of stx3. XY = top view of polarized monolayer; XZ/YZ = lateral view of polarized monolayer. (I) Delocalized stx3 in polarized CaCo2 cells was quantified (dot box plot, Mann\u2013Whitney U test. **p<0.01, ***p<0.005, n.s., not significant, n \u2265 100 cells per condition). XY = top view of polarized monolayer; XZ/YZ = lateral view of polarized monolayer. Scale = 5 \u00b5m.\n\nTo investigate whether KO of each candidate also affects the junctions and differentiation of basolateral domains, we stained all cell lines for the apical tight-junction protein claudin-3, and the basolateral adherens junction protein E-cadherin (Figure 10A\u2013H). Our analyses revealed a generally normal distribution of those markers in all KO cell lines. Claudin-3 showed the characteristic localization pattern, with an enrichment towards the apical domain and locally also a lateral membrane distribution and E-cadherin marked basolateral membrane domains (Figure 10A\u2013H). Transepithelial electric resistance (TEER) measurements of filter-grown, polarized 2D monolayers of WT and KO cell lines revealed an increase of TEER after measurement day 7 upon KO of ARHGAP33, while TEER of the other KO cell lines remained comparable to those of WT cells (Figure 10I).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig10-v3.jpg)\n\n**Figure 10.:** (A) Localization of E-cadherin and claudin 3 in WT cells, where E-cadherin is distributed over the basolateral plasma membrane and claudin 3 is enriched at apical domains, but can also be found at basolateral membrane regions. (B\u2013H) ARHGAP33-, TM9SF4-, PIP5K1C-, MTMR2-, GALNT2-, TMEM110-, and ANO8-KO cell lines show basolateral E-cadherin localization as well as claudin 3 enrichment at apical and lateral domains, similar to WT cells (A). Scale = 5 \u00b5m. (I) TEER measurements of WT and respective KO clones. TEER of ARHGAP33-KO cells increases substantially around day 7 of the measurement. Measurements are depicted as means with standard deviation. XY = top view of polarized monolayer; XZ/YZ = lateral view of polarized monolayer; scale = 5 \u00b5m.\n\nTaken together, our analyses have so far provided several indications of polarity defects after elimination of the selected candidates (Figure 13A and B, Supplementary file 2): in a 3D polarization assay, all KO cell lines showed severe defects in forming normal cysts with a single, central lumen but rather generated multiple lumina or no lumina at all. Additionally, TM9SF4-, ANO8-, and MTMR2-KO cell lines showed intracellular mislocalization of the apical marker DPP4 in 3D cysts. TEM of polarized 2D monolayers revealed that KO of all candidates induced ectopic intra- and paracellular clusters of microvilli, reminiscent of typical microvillus inclusions, and SEM complemented these findings with observed alterations in apical brush-border in all generated KO cell lines. Furthermore, TEMs revealed partly extremely enlarged endolysosomal compartments in all KO cell lines except for GALNT2-KO. Notably, the ratio between endolysosomal organelles and canonical lysosomes was partly considerably altered in most KO cell lines at the expense of lysosomes (Supplementary files 2 and 3). Finally, immunofluorescence micrographs finally confirmed these observations and additionally indicated partial mislocalization of apical proteins.\n\n### Apical markers mislocalize in enlarged, degradative compartments of TM9SF4-, ARHGAP33-, and ANO8-KO cells\n\nTo further complement these results, we used single and double immunogold labeling primarily to characterize the abnormally large, usually poorly structured organelles in TM9SF4, ANO8, and ARHGAP33 KOs and to evaluate their possible association with the abnormal intracellular DPP4 staining in immunofluorescence (Figure 11A\u2013G). Membrane or contents of those compartments showed distinct Lamp1, Lamp3, or CathepsinD immunogold label, respectively, in all three KO cell lines (Figure 11A, C and D). These findings were also consistent with Lamp1 immunofluorescence micrographs (Figure 12A\u2013D). Successful immunogold detection of the previously internalized acidotropic reagent DAMP provided further evidence for the clearly acidic nature of those organelles, justifying their classification as types of modified endolysosomes/(autophago)lysosomes (Figure 11B, Figure 1\u2014figure supplement 1F and G). They regularly contained mislocalized DPP4 (Figure 11C and D, Figure 1\u2014figure supplement 1F and G). Moderate, but distinct, aberrant stx3 label that was not detectable by immunofluorescence was also observed in these organelles \u2212 in addition to normal apical localization and ectopic localization of DPP4 and stx3 at microvillus inclusions and paracellular microvillar spots (Figure 1\u2014figure supplement 1L and M). Further insight into the late endocytic/catabolic endomembrane system of TM9SF4-, ANO8-, and ARHGAP33-KO cells was obtained from starvation experiments. After serum deprivation overnight almost all the giant, poorly structured, faint compartments had disappeared, likely due to autophagic removal, and reformed lysosomes of normal size and morphology were regularly observed (Figure 1\u2014figure supplement 1H\u2013K).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig11-v3.jpg)\n\n**Figure 11.:** (A, B) Enlarged, poorly structured endolysosomes in TM9SF4 KO cells showing distinct cathepsin D and DAMP-immunogold label (arrowheads) indicative of their acidic contents. Inserts show respective overviews of the depicted organelles. (C, D) Mislocalized DPP4 (arrows) colocalizing with LAMP1 (arrowheads) in enlarged compartments in ANO8 and ARHGAP33-KO cells. (A\u2013D) Scale = 500 nm.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig12-v3.jpg)\n\n**Figure 12.:** (A\u2013D) The Lamp1-positive compartments appear enlarged upon KO of TM9SF4 (B) and localize to basolateral regions upon KO of ARHGAP33 (C) (white arrowheads). Scale = 5 \u00b5m.\n\nFinally, ZO-1 and E-cadherin immunogold labeling allowed us to verify our ultrastructural observations of ectopic tight and adherens junctions associated with paracellular clusters of microvilli that were not seen in the lower resolution immunofluorescence micrographs (Figure 1\u2014figure supplement 1N and O).\n\nIn summary, our analyses showed that in addition to defects in cell polarization, KOs of all candidates lead to basolateral and/or intracellular mislocalization of apical cargo (Figure 13A and B, Supplementary file 2). In particular, we observed localization of DPP4 and stx3, to enlarged, endolysomal/lysosomal compartments, as shown by immunogold labeling of Lamp1, Lamp3, and cathepsin D (Supplementary file 2). Moreover, these enlarged compartments were always capable of acidification, and apparently also autophagic degradation and lysosomal reformation. Thus, our observations suggest that KOs of the factors studied, TM9SF4, ANO8, and ARHGAP33, lead to aberrant traffic of apical cargo proteins.\n\n![Figure 13.](https://cdn.elifesciences.org/articles/80135/elife-80135-fig13-v3.jpg)\n\n**Figure 13.:** (A) Scheme of a healthy enterocyte. The investigated factors for screen validation and further phenotypic characterization are displayed together with their associated gene ontology (GO) terms. (B) KOs of ARHGAP33, TM9SF4, PIP5K1C, MTMR2, GALNT2, ANO8, and TMEM110 lead to the formation of microvillus inclusions and lateral pseudo-apical domains with microvilli. KO of ARHGAP33, TM9SF4, and ANO8 leads to the formation of enlarged late endosomal/lysosomal compartments positive for Lamp1 and cathepsin D and that contain the apical markers DPP4 and stx3. All KOs additionally lead to aberrant, 'tipi-like' assemblies of apical microvilli.\n\n## Discussion\n\nCoordination of molecular polarization and transport machineries in concert with polarized cargo sorting mechanisms is key to epithelial tissue homeostasis. Numerous studies have contributed to our understanding of these processes in the past (Bryant et al., 2010; Levic and Bagnat, 2021; Apodaca et al., 2012). Our previous findings on the mechanisms underlying MVID have elucidated the role of a myo5b-stx3-munc-18-2-dependent trafficking cascade for apical, actin-based cargo delivery; they also suggest the presence of additional trafficking routes and transport mechanisms that direct protein secretion to the apical cortex (Vogel et al., 2017a; Vogel et al., 2015b; Vogel et al., 2017b), which have not been elucidated to date. However, technical advances in CRISPR technology, particularly the development of CRISPR screening strategies, have paved the way for the discovery of protein functions for a wide range of cellular processes (Popa et al., 2020; Hutter et al., 2020; Zhu et al., 2021). In particular, CRISPR-mediated loss-of-function screens have proven to be highly efficient in discovering novel factors for intracellular protein transport and secretory trafficking (Stewart et al., 2017; Bassaganyas et al., 2019).\n\nHere, we performed the first CRISPR-Cas9 loss-of-function screen in polarized human epithelial cells to identify novel regulators of epithelial polarization and polarized membrane trafficking. We developed a FACS-based assay for the detection of endogenous plasma membrane cargo, which is easy to apply and can be adapted to a variety of transmembrane proteins, given that specific antibodies are available. For our purposes, we used this assay in combination with the highly efficient CRISPR screening system to study genes involved in plasma membrane targeting of the apical model cargo DPP4. Our CRISPR screen identified 89 genes, critically involved in apical targeting of our model cargo, DPP4. This rather moderate number of enriched genes resulted from the high stringency in the screening assay, namely sorting for cells with a quite drastic reduction of surface DPP4 (90%). Even though this allowed to enrich cells with a high gRNA targeting efficiency and increased the specificity of our screen, we thereby also limited our approach in terms of quantity and diversity of the identified hits.\n\nOur experimental approach, combined with GO analysis of the 89 hits, highlighted several genes with functions associated to the secretory pathway. To demonstrate the validity of our dataset, we selected seven factors for phenotypic and morphological characterization, focusing mainly on organelles associated with protein transport.\n\nWe demonstrated that the KO of all selected candidates causes disturbed epithelial polarization. This was demonstrated by 3D cyst assays and EM analyses of filter-grown, polarized 2D monolayers, where we detected the formation of ectopic intracellular and paracellular clusters of microvilli. This phenotype was particularly pronounced in KO cells of PIP5K1C, MTMR2, TM9SF4, ANO8, and ARHGAP33, where the localization of the apical components DPP4, stx3 in the intracellular and paracellular microvillar clusters indicated the formation of ectopic neo-/pseudo-apical domains. This highlights yet uncharacterized regulators for epithelial polarization and proposes potentially novel mechanisms for this process. PIP5K1C and MTMR2 are involved in the regulation of PIP pools accounting for apical PM composition. Therefore, imbalances in cellular PIP-pools might be the basis for the observed phenotypes. Interestingly, the mRNAs of MTMR2 and PIP5K1C mRNAs were shown to be expressed predominantly in polarized 2D cultures, whereas they were downregulated in 3D cysts of MDCK cells, indicating differential PIP regulation in 2D polarized monolayers and polarization \u2018de novo\u2019 (Rom\u00e1n-Fern\u00e1ndez et al., 2018). However, our data also hint at a role of enzymes in polarization of 3D cultures, as we observed aberrant lumen formation in KO cells.\n\nFurthermore, the diversity of signals and determinants that coordinate the formation of specialized membrane domains is illustrated by the different functions with which the candidates selected here are associated. The ER-PM contact site proteins ANO8 and TMEM110 might regulate polarization via the control of Ca2+ influx and signaling (Jha et al., 2019; Quintana et al., 2015), while TM9SF4, which has been implicated in the regulation of glycolipids in the Golgi apparatus (Perrin et al., 2015) and VH-ATPase assembly (Lozupone et al., 2015), possibly controls polarization through generation of lipid microdomains and pH regulation. GALNT2 might contribute to establishing polarity via its role as O-glycosylating enzyme in the Golgi apparatus and ARHGAP33 as a GAP-protein for the small GTPase Cdc42 might itself be critically involved in polarization and polarized traffic as well (Nakazawa et al., 2016).\n\nFeatures indicating disturbed polarization were accompanied by the formation of conspicuous, enlarged Lamp1, Lamp3, and cathepsin D-positive endolysomal/lysosomal structures, upon KO of all cell lines, that were additionally positive for DPP4 and stx3 in ANO8-, ARHGAP33-, and TM9SF4-KOs. Notably, these compartments showed functional acidification and could undergo autophagic degradation followed by lysosomal reformation. Therefore, we propose that defective polarization upon disruption of one of these genes may be associated with altered cargo transport and/or sorting of apical cargo into lysosomal compartments by various cellular mechanisms. Little is known about the potential role for ARHGAP33 in epithelial polarization; however, one could speculate that a role in modulating Cdc42 might account for the observed polarity defect and the mislocalization/mistrafficking of apical cargo to late-endosomes/lysosomes (Nakazawa et al., 2016; Schuster et al., 2015). The Golgi apparatus is believed to be a major hub for sorting events of secreted cargo proteins and many signals and mechanisms have been proposed to be major Golgi-associated sorting determinants (Weisz and Rodriguez-Boulan, 2009; Rodriguez-Boulan et al., 2005). Ca2+ levels in the Golgi apparatus, for example, were shown to regulate apical sorting of GPI-anchored proteins in polarized epithelial cells (Lebreton et al., 2021). Thus, mislocalization of DPP4 in ANO8-KOs to endosomal/lysosomal compartments could result from aberrant, Ca2+-dependent sorting in the Golgi apparatus. Finally, lipid microdomains and pH regulation represent major sorting determinants of apical cargo in the Golgi (Hallermann, 2014; Medina et al., 2015; de Araujo et al., 2017; Schuck and Simons, 2004). Therefore, it is plausible to assume that the observed mistargeting of apical cargo into lysosomal compartments may coincide with defects in glycosphingolipid synthesis and/or V-ATPase-mediated pH regulation, caused by TM9SF4-KO (Lozupone et al., 2015; Levic et al., 2020; Levic and Bagnat, 2021).\n\nIt seems noteworthy that cellular Ca2+ homeostasis, the regulation of intracellular pH, as well as the synthesis PIP species and lipid microdomains regulate a variety of processes related to endocytic recycling of membrane cargo, autophagy, and lysosomal biogenesis (Medina et al., 2015; Sbano et al., 2017; Hallermann, 2014). Defects in either of these processes could therefore be responsible for the observed lysosome-related phenotypes, leading either primarily or secondarily to defective epithelial polarization/secretory traffic.\n\nBecause several diseases characterized in the past have been associated with defects in polarized trafficking and protein missorting, we also screened our dataset for all possible genes that have been associated with congenital enteropathies. Apart from the association of Unc-45 Myosin Chaperone A (UNC45A) with syndromal diarrhea and cholestasis, no other genes identified in our CRISPR screen have been published in this context to date (Esteve et al., 2018; Li et al., 2022; Dulcaux-Loras et al., 2022). However, MVID caused by mutations of myo5b, stx3, stxbp2, or unc45a is a prominent example for pathological accumulation of considerably enlarged autophagosomal and/or lysosomal organelles in the cell periphery. Despite their abundance, those catabolic organelles apparently suffer from some degree of overload due to their inability to remove misdirected excess cargo (as reflected by 'secretory granule' accumulation) and to efficiently degrade the ectopic apical domains/microvillar structures. Moreover, abnormal late endosomes/lysosomes with close resemblance to the respective faint, poorly structured lysosomal compartments in the phenotypes we describe here were implicated in another neonatal intestinal disorder, namely, human mucolipidosis type IV. In newly born mice, the absence of mucolipin-1 and -3 induced aberrant swelling of those organelles in enterocytes, diminished apical endocytosis from the intestinal lumen, caused diarrhea, and delayed growth (Remis et al., 2014). In our opinion, all those examples underline the crucial role of proper establishment and maturation of the highly complex system of (late) endosomal and lysosomal organelles in the small intestine; for example, during the early neonatal period of mammals, especially the transient, so-called 'giant lysosomes' during the suckling period (Wilson et al., 1991; Fujita et al., 1990; Remis et al., 2014). In addition to neonates, this seemingly broad spectrum of overload and/or accumulation of enlarged catabolic organelles with enhanced \u2212 but insufficient\u2212 autophagy and lysosomal inefficiency has also been described from intestinal disorders of adults, e.g., in patients with necrotizing enterocolitis (Yamoto et al., 2020).\n\nFinally, it should be noted that several genes identified in our screening have been associated with neuropathies or myopathies (Charcot\u2013Marie\u2013Tooth syndrome [MTMR2]; Dyggve\u2013Melchior\u2013Clausen syndrome [DYM]) (Denais et al., 2011; Wang et al., 2019). Thus, it would be worthwhile to examine our dataset in the context of other cellular systems as defective secretory transport and cellular polarization provide a mechanistic basis for a spectrum of pathologies in many tissues and organs.\n\nIn summary, this genome-wide CRIPR/Cas9 screen, together with the extensively described and illustrated representation of cellular organelle pathologies, provides a very valuable resource for future investigations aimed at unraveling the complexity and diversity of mechanisms underlying epithelial polarization and polarized cargo transport. In addition, this study can contribute to the understanding of many yet-to-be-discovered pathologies associated with impaired epithelial differentiation, polarization, and integrity and could therefore serve as a powerful resource for the investigation and characterization of congenital diseases (Thiagarajah et al., 2018; Berni Canani et al., 2010).\n\n## Materials and methods\n\n### Antibodies and reagents\n\nThe following antibodies were commercially obtained and used as stated:\n\nAminopeptidase N (IF 1:50, #HBB3-153-63, DSHB), Anoctamin 8 (WB 1:500, #HPA049206, Atlas Antibodies), ARHGAP33 (Western blotting [WB] 1:500, #HPA030117, Atlas Antibodies), beta-Actin (WB 1:2000, #A2228, Sigma-Aldrich), cathepsin D (EM 1:50, #219361, Calbiochem), CD63/Lamp3 (EM 1:20, #M1544, Sanquin), Claudin 3 (IF 1:200, #SAB4500435, Sigma-Aldrich), DNP (EM 1:6-1:30, #71-3500, Invitrogen), DPP4 (IF/FACS 1:100, #HBB3/775/42, DSHB; EM 1:10, #AF1180, R&D Systems), E-cadherin (IF 1:200, EM 1:30, #610181, BD Bioscences), GALNT2 (WB 1:1000, #AF7507, Novus Biologicals), Lamp1 (IF 1:200, EM 1:10, #1D4B, DSHB), MTMR2 (WB 1:500, #sc-365184, Santa Cruz Biotechnology), PIP5K1C (WB 1:1000, #3296S, Cell Signaling Technology), Syntaxin3 (IF 1:100, EM 1:10, #133750, Abcam), sucrase-isomaltase (IF 1:100, #HBB2/614/88, DSHB), TM9SF4 (WB 1:1000, #sc-374473, Santa Cruz Biotechnology), TMEM110 (WB 1:1000, #NBP1-69238, Novus Biologicals), and ZO-1 (EM 1:50, #61-7300 Zymed).\n\nSecondary horseradish peroxidase-coupled (HRP) goat anti-mouse and goat anti-rabbit (1:5000, Sigma-Aldrich) were used for WB, and secondary Alexa Fluor-conjugated (Alexa Fluor 488 and 568) goat anti-mouse (1:1000, Life Technologies) and goat anti-rabbit (1:1000, Life Technologies) were used for IF labeling. For labeling of actin filaments, we used phalloidin\u2013Alexa Fluor 568 (1:500, Life Technologies) and for nuclear staining we used Hoechst 3342 (1:10,000, Thermo Fisher Scientific). Secondary antibodies conjugated to 5, 6, 10, or 15 nm colloidal gold particles diluted to 1:50\u2013150 for EM were from British Biocell Intl. and Aurion.\n\n### Plasmids and lentivirus production\n\nFor CRISPR/Cas9-mediated depletion, guide RNA (gRNA) targeting sequences for ARHGAP33 (5\u2032-TCCACCGGTGCATATTTGAC-3\u2032 and 5\u2032-GGCACCCTATGAGGGGTACG-3\u2032), TM9SF4 (5\u2032-GCCCAGCAAGATAACCTACA-3\u2032 and 5\u2032-CATCCTTTACTATCATCGGG-3\u2032), Pip5k1c (5\u2032- GAAGTTGGGCCATCGAGGTG-3\u2032 and 5\u2032-GCTCACCCCATCGTGGACGA-3\u2032), Mtmr2 (5\u2032- AGTCGAGGTGAAAATTCTTA-3\u2032 and 5\u2032-GAGGCCGTATCCCAGTAAGT-3\u2032), Tmem110 (5\u2032-GAGCAAGGTCCGCTACCGGA-3\u2032 and 5\u2032-CCGTCAGCGTCCTGGTAGAG-3\u2032), ANO8 (5\u2032-CCGATGACCACACGCTGCTA-3\u2032 and 5\u2032-GAGCACTACCACCGACACGA-3\u2032), and Galnt2 (5\u2032-ACTGCGAGTGTAATGAGCAC-3\u2032 and 5\u2032-GTCGGCCCTACTCAGGACCG-3\u2032) were selected from the Geckov2-CRISPR library, according to their targeting efficiency in the primary CRISPR screen (CRISPR Design; Zhang lab, Massachusetts Institute of Technology; Hsu et al., 2013). gRNAs were cloned into a lentiCRISPRv2 vector via BsmBI restriction enzyme sites. lentiCRISPRv2 was a gift from F. Zhang (Massachusetts Institute of Technology, Cambridge, MA; Addgene plasmid 52961; Sanjana et al., 2014). For the generation of knockout cell lines, lentiviral plasmids were cotransfected using Lipofectamine LTX (Invitrogen) transfection reagent together with pVSV-G and psPAX2 in the Hek293LTV producer cell line. Virus containing supernatants were collected after 48 and 72 hr after transfection and directly used for CaCo2 cell infection. 6 days after infection, cells were selected with 10 \u00b5g/ml puromycin (Sigma-Aldrich) or 20 \u00b5g/ml blasticidin S (Invitrogen). Depletion efficiency was verified via WB.\n\n### Cell culture\n\nHek293LTV, CaCo2 WT (ATCC, HTP-37), and KI cells were cultured in DMEM (Sigma-Aldrich) containing high glucose, sodium pyruvate, 100 U/ml penicillin (Sigma-Aldrich), 100 \u00b5g/ml streptomycin (Sigma-Aldrich), 5% nonessential amino acids (Gibco), and 10% FBS (Gibco) in a humidified atmosphere with 5% CO2 at 37\u00b0C. For experiments requiring fully polarized growth conditions, CaCo2 cells were seeded on 24 mm or 75 mm filters (Costar Transwell; pore size of 0.4 \u00b5m; Corning) and cultured for 14\u201328 days. For 3D cyst assays, CaCo2 cells were cultivated and processed as described previously (Vogel et al., 2015b; Jaffe et al., 2008). For this purpose, 5\u2009\u00d7\u2009104/mL single cells were embeeded in Matrigel (BD Biosiences, #356231), plated on 8\u00d7 chamber slides (Lab-Tek-chamber slide, Sigma) chamber slides (10,000 cells/slide) and grown for 7 days (Rom\u00e1n-Fern\u00e1ndez et al., 2018). All cell lines were regularly tested negative for mycoplasm.\n\n### TEER measurements\n\nTransepithelial electric resistance (TEER) measurements were performed in CaCo2 wildtype and the generated KO cell lines. TEER was measured using an STX2 electrode together with the EVOM epithelial volt-ohmmeter from World precision instruments. TEER measurements were performed on days 0, 4,7, 11, 14, and 19 after cells were seeded on transwell filters at confluence for polarization. The measurements were performed at three different areas on the filter inserts and calculated as described previously (Klee et al., 2020).\n\n### Genome-wide CRISPR screen\n\nFor the CRISPR screen in polarized CaCo2 cells, we used the 2-vector system (lenti-guide Puro; Addgene #1000000049; Feng Zhang Lab, Sanjana et al., 2014). For the generation of the target CaCo2 cell line, we introduced the vector encoding Cas9 (lentiCas9-Blast) for stable expression with a lentivirus to CaCo2 cells.\n\nFor virus production containing the sgRNA library, HEK293T cells seeded to 150 mm dishes were transfected with 21 \u03bcg of the human gRNA pooled library in lentiGuide-Puro (Addgene #1000000049), 15.75 \u03bcg of pSPAX2 and 5.25 \u03bcg of pVSV-G plasmids. Viral supernatants were collected after 36 hr and 50 hr and concentrated with Amicon ultra-15 centrifugation tubes (Merck). For storage and further usage, samples were snap-frozen in liquid nitrogen.\n\nThe CRISPR/Cas9 screen was performed as described in previous studies by Hutter et al., 2020; Shalem et al., 2014. Two replicates were performed. For each replicate, 2 \u00d7 108 CaCo2-Cas9 screen cells were transduced with a virus preparation containing 16 \u03bcg/ml polybrene at an MOI of 0.2 and seeded at a low density (107 cells/150 mm plate) to 20 150 mm culture dishes. 72 hr after infection, selection with 10 \u00b5g puromycin was started and cells were selected for 7 days. After 7 days of selection, surviving screen cells were pooled and evenly distributed to 100 mm culture dishes to obtain confluent monolayers. The cells were then cultivated for polarization as confluent monolayers for 18 days. After 18 days, cells were detached with StemPro Accutase Cell Dissociation Reagent (Thermo Fisher Scientific, #A1110501) and stained for FACS. Thereby, cell suspensions were washed after detachment 2\u00d7 with ice-cold PBS and subsequently incubated in PBS containing 1% FBS and anti-DPP4 antibody (1:100) on ice for 20 min. After incubation, cells were washed 2\u00d7 in ice-cold PBS and then incubated with PBS containing 1% FBS and a secondary anti-mouse Alexa Fluor-488 antibody (1:1000) on ice for 20 min. After the incubation, cells were washed 2\u00d7 in ice-cold PBS, resuspended in PBS containing 2% FBS, and subjected to FACS sorting using an ARIA III (Becton Dickinson). For each replicate, approximately 1.5 Mio cells corresponding to the lowest 10% Alexa-488 (A-488-negative) of the total cell population was sorted. For colchicine experiments, CaCo2 WT cells were treated with 20 \u00b5M colchicine (Merck, #C9754) for 2.5 hr prior to FACS sorting. Unsorted cells were saved and used as control. Genomic DNA (gDNA) was isolated from sorted and unsorted cells using the Nucleospin Tissue Mini Kit (Macherey-Nagel) and sgRNA sequences were retrieved by a nested PCR approach that pre-amplified sgRNAs in a first round with primers specific to the lentiGuide-Puro construct (5\u2032-AGAGGGCCTATTTCCCATGA-3\u2032) and added stagger bases, specific barcodes, and the Illumina adapters in the second round. The PCR products were separated on a 1% agarose gel, purified by gel extraction, quantified, and then pooled before sequencing on a Hiseq4000 (Illumina) in collaboration with the Biomedical Sequencing Facility (BSF, Vienna, Austria). Sequencing data were analyzed with the publicly available online tools GenePattern (Chapman et al., 2006) and Galaxy (Afgan et al., 2018). Reads were first demultiplexed and trimmed followed by alignment of the sgRNA sequences to a reference using Bowtie2 (Langmead and Salzberg, 2012). SgRNAs enriched in the sorted A-488-negative populations were identified using the edgeR shRNaseq tool (Table CRISPR screen Analysis for Enriched sgRNAs in the A-488-negative; Dai et al., 2014).\n\n### Immunoblots\n\nTotal cell lysates were prepared and Western blot analysis was performed as described previously (Cattelani et al., 2021). Cells were washed in 1\u00d7 cold PBS, scraped from respective culture plates and pelleted with 1500 \u00d7 g for 5 min at 4\u00b0C. Cell pellets were resuspended in lysis buffer (50 mM HEPES pH 8.0, 150 mM NaCl, 5 mM EDTA pH 8.0, 0.5% NP-40, 50 mM NaF, 10 \u00b5g/ml leupeptin, 0.4 mM pefablock, 1 \u00b5/ml pepstatin, 10 \u00b5g/ml aprotinin, 0.5 mM PMSF, 1 mM N3VO4) and lysed for 60 min on ice. Then, lysates were centrifuged at 13.000 \u00d7 g for 15 min and cleared lysate was obtained. Lysates were separated by SDS-polyacrylamide gel electrophoresis (PAGE). Polyacrylamide gels were prepared consisting of stacking (125 mM Tris pH 6.8, 4% acrylamide/bis solution [37:5:1], 6% glycerol, 0.1% SDS, 0.075% APS, and 0.1% TEMED) and resolving gels (0.375 mM Tris pH 8.8, 7\u201315% acrylamide/bis solution [37:5:1], 0.1% SDS, 0.05% APS, and 0.05% TEMED). All SDS-PAGE gels were run in 192 mM glycine, 25 mM Trisma Base, and 0.1% SDS. After separation, the proteins were wet transferred onto \u2018Amersham Protran 0.2 \u00b5m NC\u2019 nitrocellulose membranes (GE10600002, Sigma-Aldrich, Handels Gmbh, Vienna, Austria) at constant 80 V for 1,5 hr. The wet transfer buffer contained 25 mM Tris, 192 mM glycine, 0.1% SDS, and 20% methanol (vol/vol), adjusted to pH 8.3. Membranes were subsequently blocked in 3% BSA (fraction V), 1 mM EDTA, 0.05% Tween20, and 0.02% NaN3, and probed with the respective antibodies.\n\n### Immunofluorescence microscopy\n\nImmunofluorescence stainings on cells grown and polarized on glass coverslips or of 3D cyst cultures were performed as described previously (Vogel et al., 2015b; Vogel et al., 2017b). Briefly, for stainings of polarized 2D monolayers, cells grown on glass coverslips were fixed with 4% formaldehyde (made from paraformaldehyde) at room temperature for 3 hr or 100% methanol at \u201320\u00b0C for 5 min, respectively. Cells stained with anti-DPP4, anti-stx3, anti-HA, and phalloidin were fixed with formaldehyde, while for stainings with anti-ZO-1, anti-ECadherin, anti-clau3, anti-NaK-ATPase, and anti-Moesin, cells were fixed with methanol. CaCo2 cysts were prepared for IF microscopy as described previously (Jaffe et al., 2008). Confocal stacks from monolayers/cysts mounted in Mowiol were taken on confocal fluorescence microscopes (SP5 and SP8; Leica) using a glycerol 63\u00d7 lense with a numerical aperture of 1.3 (Leica) on a Leica SP5 microscope and a glycerol 93\u00d7 lense with a numerical aperture of 1.3 on the Leica SP8 microscope at room temperature. As recording software, LASAF 2.7.3. (Leica) and LAS X (Leica) were used. All images were deconvolved using Huygens Professional Devonvolution and Analysis Software (Scientific Volume Imaging) and exported using Imaris 3D rendering (Bitplane) and finally adjusted for brightness and contrast using Fiji ImageJ software.\n\n### Electron microscopy\n\nTEM for morphology of filter-grown, polarized monolayers included rapid cryo-immobilization through means of high-pressure freezing, followed by freeze-substitution and epoxy resin embedding as described previously (Vogel et al., 2015b; Ruemmele et al., 2010). Immunogold EM was described previously; in brief, polarized monolayers grown for 14 days in Petri dishes were fixed with 4% formaldehyde or 4% formaldehyde plus 0.1% glutaraldehyde and processed for Tokuyasu-ultracryotomy (Vogel et al., 2017a; Tokuyasu, 1973). Optionally, cells were subjected to serum-stravation overnight, followed by incubation for 2 hr with DAMP (Orci et al., 1986; 3-(2,4-dinitroanilino)\u20133\u2032amino-N-methylpropyl-amine, #D1552 from Molecular Probes; 30 \u00b5M/l dissolved in serum-free medium) prior to aldehyde fixation. Analysis of thin sections was performed with a Philips CM120 (now Thermo Fisher Scientific), equipped with a MORADA digital camera and iTEM software (EMSIS, M\u00fcnster, Germany). Image contrast, brightness, greyscale, and sharpness were adjusted with Photoshop CS6 (Adobe, San Jos\u00e9, CA). For morphometry as previously described (Vogel et al., 2015a; Hess and Huber, 2021), we used samples from \u22652 independent cell culture experiments (i.e., n \u2265 2, with several technical replicates each; 40\u2013120 endo/lysosomes per condition, \u226540 cells/condition for ectopic microvilli). Morphometry was carried out on digital micrographs taken at primary magnifications of \u00d77100 to \u00d715000 by using measurement tools of the iTEM software.\n\nSEM of filter-grown polarized monolayers was performed with a DSM 982 Gemini (ZEISS, Oberkochen, Germany) as described previously (Ruemmele et al., 2010); briefly, sample processing included chemical fixation, dehydration, critical point drying and sputter coating.\n\n### GO term analysis\n\nFor manual GO term analysis, each of the 89 significantly enriched genes from out CRISPR screen were subjected to a manual GO term search using https://www.uniprot.org/ and https://www.ebi.ac.uk/QuickGO/annotations. For each gene, three GO terms were listed, prioritizing most common GO terms suggested by the QuickGO-Database and GO terms indicating a relation to the secretory pathway, for each of the three categories, biological process (BP), molecular function (MF), and cellular compartment (CC). According to commonalities in the individual sets of GO terms, genes were then grouped and graphically visualized using Affinity Designer.\n\n### Statistics and software\n\nThe software used, if not already specified, were Affinity Designer (version 1.9.3), Fiji/ImageJ (version 2.1.0/1.53c), GraphPad Prism 9 (version 9.1.0), and Serial Cloner (version 2.6); for the analysis and visualization of FACS-Data, we used FlowJo (Becton Dickinson). Dot box plot graphs were generated and the unpaired Mann\u2013Whitney U test was calculated using R (R Core Team (2021). R: A language and environment for statistical Computing. R Foundation for Statistical Computing, Vienna, Austria https://www.R-project.org) and ggplot2 package.\n",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "7bf89ddb-2694-4a44-b42d-c4eb8f00db84",
+      "submission_id": "cf452119-025a-4fff-a181-7edd16ce3b9c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michel Bagnat, https://ror.org/00py81415 Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80135.sa0](https://doi.org/10.7554/eLife.80135.sa0)\n\nIn this work, Klee et al. carried out a genome-wide CRISPR/Cas9-based screen in human intestinal cell line CaCo2 to uncover factors regulating apical localization of a brush border enzyme. Their findings identified dozens of genes and characterized novel players in apical membrane transport including TM9SF4, anocatmin 8, and ARGAP33. This work provides a useful resource for the study of apical polarity and may aid in the understanding of digestive diseases.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michel Bagnat, https://ror.org/00py81415 Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80135.sa1](https://doi.org/10.7554/eLife.80135.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A CRISPR-screen in intestinal epithelial cells identifies novel factors for polarity and apical transport\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Suzanne Pfeffer as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Fernando Martin-Belmonte (Reviewer #2); David M Bryant (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Previous work by other researchers using cell models similar to those described in this work (i.e., MDCK cells) has shown that apical membrane proteins are internalized in vesicles called vesicular apical compartment (VAC) when detached from the substrate. It would be necessary for researchers to demonstrate that this process is not affecting their apical transport screening by using the appropriate controls.\n\n2. The authors should use rescue systems and/or additional gRNAS to demonstrate that the identified phenotypes are not the product of off-target effects of the gRNAs used in the screening and later in the generation of KO cells.\n\n3. More quantitative phenotypic analysis of the 7 selected target genes should be included. The authors should describe penetrance/frequency and severity of the phenotypes described (inclusions, mislocalized proteins, etc). and add quantification and graphical representation of different lysosome sizes in WT and all KD cell lines.\n\n4. Loss of apical sorting/trafficking machinery results in impaired localization of specific classes of membrane proteins (for example, O- vs N-glycosylated cargoes). This study would therefore be strengthened by analysis of an additional apical membrane protein marker for some of the target gene KD cell lines.\n",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e562b81c-e1ef-48a7-a37d-39163b54c59b",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C1",
+      "claim": "This study performed the first CRISPR screen to date in human polarized epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, we performed the first CRISPR screen to date in human polarized epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this is the first CRISPR screen in human polarized epithelial cells in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "61a6318b-22e7-4af8-b296-0b416228f42d",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C2",
+      "claim": "Knockout of TM9SF4 causes polarization defects in epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-resolution microscopy, we detected polarization defects and mislocalization of DPP4 to late endosomes/lysosomes after knockout of TM9SF4, anoctamin 8, and ARHGAP33, confirming the identification of novel factors for epithelial polarization and apical cargo secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that knockout of TM9SF4 results in polarization defects detected by high-resolution microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "aabf6a4b-731f-4ed4-aa13-ff139b8e8fc7",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C3",
+      "claim": "Knockout of anoctamin 8 causes polarization defects in epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-resolution microscopy, we detected polarization defects and mislocalization of DPP4 to late endosomes/lysosomes after knockout of TM9SF4, anoctamin 8, and ARHGAP33, confirming the identification of novel factors for epithelial polarization and apical cargo secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that knockout of anoctamin 8 results in polarization defects detected by high-resolution microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "00288b89-abcd-4b95-9f35-35669e048574",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C4",
+      "claim": "Knockout of ARHGAP33 causes polarization defects in epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-resolution microscopy, we detected polarization defects and mislocalization of DPP4 to late endosomes/lysosomes after knockout of TM9SF4, anoctamin 8, and ARHGAP33, confirming the identification of novel factors for epithelial polarization and apical cargo secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that knockout of ARHGAP33 results in polarization defects detected by high-resolution microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "d3a1f980-1c24-4d88-8490-4cc4314d711d",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C5",
+      "claim": "DPP4 mislocalizes to late endosomes/lysosomes after knockout of TM9SF4.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-resolution microscopy, we detected polarization defects and mislocalization of DPP4 to late endosomes/lysosomes after knockout of TM9SF4, anoctamin 8, and ARHGAP33, confirming the identification of novel factors for epithelial polarization and apical cargo secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states DPP4 mislocalizes to late endosomes/lysosomes after TM9SF4 knockout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "ae723364-7cbe-4d8b-928a-d189230f7348",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C6",
+      "claim": "DPP4 mislocalizes to late endosomes/lysosomes after knockout of anoctamin 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-resolution microscopy, we detected polarization defects and mislocalization of DPP4 to late endosomes/lysosomes after knockout of TM9SF4, anoctamin 8, and ARHGAP33, confirming the identification of novel factors for epithelial polarization and apical cargo secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states DPP4 mislocalizes to late endosomes/lysosomes after anoctamin 8 knockout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "36f5fbec-3176-4645-b71f-f166888c155e",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C7",
+      "claim": "DPP4 mislocalizes to late endosomes/lysosomes after knockout of ARHGAP33.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-resolution microscopy, we detected polarization defects and mislocalization of DPP4 to late endosomes/lysosomes after knockout of TM9SF4, anoctamin 8, and ARHGAP33, confirming the identification of novel factors for epithelial polarization and apical cargo secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states DPP4 mislocalizes to late endosomes/lysosomes after ARHGAP33 knockout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "88d39f1a-ae00-409c-abb2-7955db0fb304",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C8",
+      "claim": "Epithelial cells build specialized apical and basolateral plasma membrane domains during polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "During polarization, epithelial cells assume their characteristic shape by building specialized apical- and basolateral plasma membrane (PM) domains (Rodriguez-Boulan and Macara, 2014; Apodaca et al., 2012), which are separated by junctional complexes and characterized by a specific composition of lipids and proteins (Martin-Belmonte et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "03c73d06-c919-4bd2-9e60-fb14a587307a",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C9",
+      "claim": "Apical and basolateral plasma membrane domains are separated by junctional complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "During polarization, epithelial cells assume their characteristic shape by building specialized apical- and basolateral plasma membrane (PM) domains (Rodriguez-Boulan and Macara, 2014; Apodaca et al., 2012), which are separated by junctional complexes and characterized by a specific composition of lipids and proteins (Martin-Belmonte et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "638e931e-6151-4bc5-9af5-07450f2e387e",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C10",
+      "claim": "Apical and basolateral plasma membrane domains are characterized by a specific composition of lipids and proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "During polarization, epithelial cells assume their characteristic shape by building specialized apical- and basolateral plasma membrane (PM) domains (Rodriguez-Boulan and Macara, 2014; Apodaca et al., 2012), which are separated by junctional complexes and characterized by a specific composition of lipids and proteins (Martin-Belmonte et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "5a7d5279-b224-4338-905e-0f69e1c92640",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C11",
+      "claim": "Microvillus inclusion disease (MVID) is an autosomal-recessive enteropathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Microvillus inclusion disease (MVID) is an autosomal-recessive enteropathy (Cutz et al., 1989), characterized by intractable diarrhea in neonates (Cutz et al., 1989; Ruemmele et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "6d7a61bf-6e43-4cbe-88de-65700ba33c16",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C12",
+      "claim": "MVID is characterized by intractable diarrhea in neonates.",
+      "claim_type": "EXPLICIT",
+      "source": "Microvillus inclusion disease (MVID) is an autosomal-recessive enteropathy (Cutz et al., 1989), characterized by intractable diarrhea in neonates (Cutz et al., 1989; Ruemmele et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "ccbecac8-1895-463b-8abf-e01df0c7fd6f",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C13",
+      "claim": "Mutations in MYO5B are causative for MVID.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies identified mutations in MYO5B, STX3, and STXBP2 to be causative for MVID (M\u00fcller et al., 2008; Ruemmele et al., 2010; Wiegerinck et al., 2014; Vogel et al., 2017b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with supporting citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "7a05037a-86a0-4572-a6b7-6b665428bfd9",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C14",
+      "claim": "Mutations in STX3 are causative for MVID.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies identified mutations in MYO5B, STX3, and STXBP2 to be causative for MVID (M\u00fcller et al., 2008; Ruemmele et al., 2010; Wiegerinck et al., 2014; Vogel et al., 2017b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with supporting citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "6f86050c-cfc4-4751-b847-9958c081a7d3",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C15",
+      "claim": "Mutations in STXBP2 are causative for MVID.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies identified mutations in MYO5B, STX3, and STXBP2 to be causative for MVID (M\u00fcller et al., 2008; Ruemmele et al., 2010; Wiegerinck et al., 2014; Vogel et al., 2017b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with supporting citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "180478ab-ba1e-4de3-a328-b3ef5eef7824",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C16",
+      "claim": "DPP4 is a type II transmembrane protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The brush-border hydrolase DPP4 is a type II transmembrane protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this fact about DPP4.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "75814243-c8d9-4f88-a9af-ce110ad5dc42",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C17",
+      "claim": "DPP4 is heavily modified with N- and O-linked glycans in its extracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It is heavily modified with N- and O-linked glycans in its extracellular domain (Misumi et al., 1992; Baricault et al., 1995; Fan et al., 1997), which have been suggested to be critical apical sorting determinants of DPP4 (Alfalah et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "f56ddc33-1ad8-4d95-8415-4b69da182974",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C18",
+      "claim": "N- and O-linked glycans have been suggested to be critical apical sorting determinants of DPP4.",
+      "claim_type": "EXPLICIT",
+      "source": "It is heavily modified with N- and O-linked glycans in its extracellular domain (Misumi et al., 1992; Baricault et al., 1995; Fan et al., 1997), which have been suggested to be critical apical sorting determinants of DPP4 (Alfalah et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "f3830502-7ce8-45ba-a43e-d8a90340aa2e",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C19",
+      "claim": "Surface DPP4 signal is significantly increased during 18-21 days of CaCo2 cell polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used a period of 18\u201321 days, during which surface DPP4 signal is significantly increased in the course of cell surface expansion and specialized polarized trafficking processes (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this and references Figure 1B showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "92be3ff8-e419-4f9b-809b-509fc5be1d1c",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C20",
+      "claim": "89 gRNAs were significantly enriched in the sorted cell population from the CRISPR screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent analysis using GenePattern and Galaxy analysis tools enabled the identification of 89 gRNAs significantly enriched in the sorted cell population (p<0.05) and represented genes whose downregulation had resulted in reduced DPP4 surface release (Figure 1D and E, Supplementary file 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this with p-value and references to figures and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "c4088caa-c016-4df9-8369-4809c73c6b16",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C21",
+      "claim": "Colchicine treatment does not cause a reduction in surface DPP4 signal in CaCo2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This treatment would induce VAC formation, but we found no change in apical DPP4 signaling (Figure 1\u2014figure supplement 1A and B) and therefore concluded that VAC formation should not interfere with the FACS-based screening approach.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this with reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "67819517-9c57-4530-b37c-747efdbe45b7",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C22",
+      "claim": "All seven selected KO cell lines show varying extents of DPP4 surface reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "All KO cell lines show varying extents of DPP4 surface reduction, with PIP5K1C-KO displaying the strongest and ANO8-KO the mildest effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3C caption explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "17c1ec48-ec4b-4ed5-b9e4-34b3e6c4b03f",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C23",
+      "claim": "PIP5K1C knockout causes approximately 75% reduction in DPP4 surface localization.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest effect on DPP4 surface localization was caused by interference with PIP5K1C (~75% reduction), followed by TM9SF4, TMEM110, and GALNT2 (~50% reduction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "65b441d2-da0f-4010-91d1-53fee090e39c",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C24",
+      "claim": "TM9SF4, TMEM110, and GALNT2 knockouts cause approximately 50% reduction in DPP4 surface localization.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest effect on DPP4 surface localization was caused by interference with PIP5K1C (~75% reduction), followed by TM9SF4, TMEM110, and GALNT2 (~50% reduction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "b54ac2ea-c7f8-43fb-8cec-a448b59d3ae7",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C25",
+      "claim": "ANO8, MTMR2, and ARHGAP33 knockouts cause approximately 30% reduction in DPP4 surface localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ANO8-, MTMR2-, and ARHGAP33-KOs showed the mildest phenotype (~30% reduction) (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this quantification with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "c150601f-dc8e-428c-b2ea-623dcb1ceb7a",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C26",
+      "claim": "All KO cell lines have severe defects in forming a single, central lumen in 3D cyst assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all KO cell lines had severe defects in forming a single, central lumen, but rather established multiple or no lumina (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "6492b14d-80c6-4a6b-b0f4-34285339a171",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C27",
+      "claim": "TM9SF4, MTMR2, and ANO8 KO cell lines display aberrant intracellular accumulation of DPP4 in 3D cysts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although DPP4 was localized in the apical PM domains in all KO cell lines, TM9SF4-, MTMR2-, and ANO8-KO cell lines additionally displayed aberrant intracellular accumulation of DPP4 (Figure 4A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "8b0ce5db-12b6-420f-aa9c-34f611a7afd5",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C28",
+      "claim": "All KO cell lines have conspicuous clusters of ectopic microvilli.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to CaCo2 WT cells, all KO cell lines had conspicuous clusters of ectopic microvilli (Figure 5A\u2013E, Figure 1\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "8e29132a-60c3-400d-b837-d6b32054b7a7",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C29",
+      "claim": "Most KO lines show late endosomal/lysosomal endomembrane system characterized by partly giant, spherical organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in most KO lines, the late endosomal/lysosomal endomembrane system was characterized \u2013 if not even dominated\u2212 by partly giant, spherical organelles (in addition to normal MVBs) \u2212 at the expense of normal lysosomes (Figure 5B and E, Figure 6C\u2013G, double arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "f6b81112-1698-404c-9a2b-38a2d79f56a7",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C30",
+      "claim": "In TM9SF4 and ANO8 KO cells, enlarged endolysosomes reach dimensions of up to 2 \u00d7 6 \u00b5m in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Especially in TM9SF4- and ANO8-KO, they reached dimensions of up to 2 \u00d7 6 \u00b5m in diameter (e.g., Figure 6C), in other KO cell lines only diameters of approximately 500 nm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this quantification with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "65c1c49c-ec83-47de-903d-2b1faeab3414",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C31",
+      "claim": "All KO cell lines show patchy distribution or complete absence of apical microvilli.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the general architecture of the brush-border, SEM and actin fluorescence microscopy revealed more or less severe irregularities in in all KO cell lines studied here (Figures 7\u20149). They included patchy distribution or complete absence of apical microvilli, together with the occurrence of extremely long microvilli (Figure 7B\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "092ab833-1e94-4999-8331-bbf7d2c75cad",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C32",
+      "claim": "DPP4 mislocalizes to subapical compartments in ARHGAP33, TM9SF4, and ANO8 KO cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "While DPP4 was mislocalized to subapical compartments in ARHGAP33-, TM9SF4-, and ANO8-KO cell lines, PIP5K1C- and MTMR2-KOs displayed DPP4 localization to large, actin-rich, basolateral structures, reminiscent of microvillus inclusions, observed by EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "c0ec8572-25e6-4ff3-81ef-3fe455a23828",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C33",
+      "claim": "PIP5K1C and MTMR2 KO cells display DPP4 localization to large, actin-rich, basolateral structures reminiscent of microvillus inclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "While DPP4 was mislocalized to subapical compartments in ARHGAP33-, TM9SF4-, and ANO8-KO cell lines, PIP5K1C- and MTMR2-KOs displayed DPP4 localization to large, actin-rich, basolateral structures, reminiscent of microvillus inclusions, observed by EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "2cf24d35-97fa-4753-9834-e0bcfab33798",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C34",
+      "claim": "APN delocalizes to actin-rich intracellular compartments only in ARHGAP33 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found APN delocalized to actin-rich intracellular compartments only in ARHGAP33-KO cells (Figure 8\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "7ef1159c-acc7-4742-940a-2fb61252f7e0",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C35",
+      "claim": "The apical localization of SI remains unaltered upon deletion of the selected genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the apical localization of SI remained unaltered upon deletion of the selected genes (Figure 8\u2014figure supplement 2A\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "28c91733-855e-4774-ab81-b36742ada850",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C36",
+      "claim": "TEER of ARHGAP33 KO cells increases substantially around day 7 of measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "Transepithelial electric resistance (TEER) measurements of filter-grown, polarized 2D monolayers of WT and KO cell lines revealed an increase of TEER after measurement day 7 upon KO of ARHGAP33, while TEER of the other KO cell lines remained comparable to those of WT cells (Figure 10I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "e7c7ff91-307a-43c7-8977-1a8d3fe897bc",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C37",
+      "claim": "Enlarged, poorly structured organelles in TM9SF4, ANO8, and ARHGAP33 KO cells show distinct Lamp1, Lamp3, or CathepsinD immunogold label.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane or contents of those compartments showed distinct Lamp1, Lamp3, or CathepsinD immunogold label, respectively, in all three KO cell lines (Figure 11A, C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "f2c28e7f-8019-42ba-9bb6-1a031256ba9f",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C38",
+      "claim": "Enlarged organelles in TM9SF4, ANO8, and ARHGAP33 KO cells are acidic as shown by DAMP labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful immunogold detection of the previously internalized acidotropic reagent DAMP provided further evidence for the clearly acidic nature of those organelles, justifying their classification as types of modified endolysosomes/(autophago)lysosomes (Figure 11B, Figure 1\u2014figure supplement 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "c252934d-6e37-44be-9174-6e3dd0afe0f7",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C39",
+      "claim": "Enlarged organelles in TM9SF4, ANO8, and ARHGAP33 KO cells regularly contain mislocalized DPP4.",
+      "claim_type": "EXPLICIT",
+      "source": "They regularly contained mislocalized DPP4 (Figure 11C and D, Figure 1\u2014figure supplement 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "67f8734f-28ff-441d-aceb-7423f8f15c4e",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C40",
+      "claim": "After serum deprivation overnight, giant, poorly structured compartments in TM9SF4, ANO8, and ARHGAP33 KO cells disappear and reformed lysosomes of normal size and morphology are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "After serum deprivation overnight almost all the giant, poorly structured, faint compartments had disappeared, likely due to autophagic removal, and reformed lysosomes of normal size and morphology were regularly observed (Figure 1\u2014figure supplement 1H\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding with reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "0e9a966f-4c17-4a72-a6f6-418bec7071f0",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C41",
+      "claim": "Imbalances in cellular PIP-pools might be the basis for the observed phenotypes in PIP5K1C and MTMR2 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PIP5K1C and MTMR2 are involved in the regulation of PIP pools accounting for apical PM composition. Therefore, imbalances in cellular PIP-pools might be the basis for the observed phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly proposes this mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "ddd54e30-1f00-4524-8eb0-f4df4519a269",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C42",
+      "claim": "MTMR2 and PIP5K1C mRNAs are expressed predominantly in polarized 2D cultures and downregulated in 3D cysts of MDCK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mRNAs of MTMR2 and PIP5K1C mRNAs were shown to be expressed predominantly in polarized 2D cultures, whereas they were downregulated in 3D cysts of MDCK cells, indicating differential PIP regulation in 2D polarized monolayers and polarization 'de novo' (Rom\u00e1n-Fern\u00e1ndez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states this with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "3b2898ee-03dd-4676-bc68-5fc0ee3c97c0",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C43",
+      "claim": "ANO8 and TMEM110 might regulate polarization via the control of Ca2+ influx and signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The ER-PM contact site proteins ANO8 and TMEM110 might regulate polarization via the control of Ca2+ influx and signaling (Jha et al., 2019; Quintana et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly proposes this mechanism with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "3df8c8dd-e6ca-4139-83fe-6c2d1fea0f34",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C44",
+      "claim": "TM9SF4 possibly controls polarization through generation of lipid microdomains and pH regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "while TM9SF4, which has been implicated in the regulation of glycolipids in the Golgi apparatus (Perrin et al., 2015) and VH-ATPase assembly (Lozupone et al., 2015), possibly controls polarization through generation of lipid microdomains and pH regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly proposes this mechanism with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "cf728dd9-285d-4fe2-8030-e10ea4284e1f",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C45",
+      "claim": "GALNT2 might contribute to establishing polarity via its role as O-glycosylating enzyme in the Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "GALNT2 might contribute to establishing polarity via its role as O-glycosylating enzyme in the Golgi apparatus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly proposes this mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "a06246f6-c07e-4fd2-9d03-1c669b065b5e",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C46",
+      "claim": "ARHGAP33 as a GAP-protein for Cdc42 might be critically involved in polarization and polarized traffic.",
+      "claim_type": "EXPLICIT",
+      "source": "and ARHGAP33 as a GAP-protein for the small GTPase Cdc42 might itself be critically involved in polarization and polarized traffic as well (Nakazawa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly proposes this mechanism with supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "5d62c66a-aafc-4a1a-acc2-71e3fa80bfd4",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C47",
+      "claim": "Ca2+ levels in the Golgi apparatus regulate apical sorting of GPI-anchored proteins in polarized epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ levels in the Golgi apparatus, for example, were shown to regulate apical sorting of GPI-anchored proteins in polarized epithelial cells (Lebreton et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states this with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "c0ada6d7-2f8d-4d85-97f0-370440e8f090",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C48",
+      "claim": "Mislocalization of DPP4 in ANO8 KOs to endosomal/lysosomal compartments could result from aberrant, Ca2+-dependent sorting in the Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mislocalization of DPP4 in ANO8-KOs to endosomal/lysosomal compartments could result from aberrant, Ca2+-dependent sorting in the Golgi apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly proposes this mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "b4ce9b31-bc3b-41ed-8bd9-47776d419d77",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C49",
+      "claim": "Lipid microdomains and pH regulation represent major sorting determinants of apical cargo in the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, lipid microdomains and pH regulation represent major sorting determinants of apical cargo in the Golgi (Hallermann, 2014; Medina et al., 2015; de Araujo et al., 2017; Schuck and Simons, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "26b34e77-f6f8-4b95-979f-4eca2339bb02",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C50",
+      "claim": "Mistargeting of apical cargo into lysosomal compartments may coincide with defects in glycosphingolipid synthesis and/or V-ATPase-mediated pH regulation caused by TM9SF4 KO.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is plausible to assume that the observed mistargeting of apical cargo into lysosomal compartments may coincide with defects in glycosphingolipid synthesis and/or V-ATPase-mediated pH regulation, caused by TM9SF4-KO (Lozupone et al., 2015; Levic et al., 2020; Levic and Bagnat, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly proposes this mechanism with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "256a5d67-7c77-4d43-9376-b1cfd370f1d7",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C51",
+      "claim": "UNC45A has been associated with syndromal diarrhea and cholestasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from the association of Unc-45 Myosin Chaperone A (UNC45A) with syndromal diarrhea and cholestasis, no other genes identified in our CRISPR screen have been published in this context to date (Esteve et al., 2018; Li et al., 2022; Dulcaux-Loras et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states this with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "15bbce27-c528-49ee-97fa-d1d71147982c",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C52",
+      "claim": "MVID caused by mutations of myo5b, stx3, stxbp2, or unc45a is characterized by pathological accumulation of considerably enlarged autophagosomal and/or lysosomal organelles in the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MVID caused by mutations of myo5b, stx3, stxbp2, or unc45a is a prominent example for pathological accumulation of considerably enlarged autophagosomal and/or lysosomal organelles in the cell periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states this.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "ed062453-2fc1-43cc-a469-beae7e25db29",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C53",
+      "claim": "In mucolipidosis type IV, the absence of mucolipin-1 and -3 induced aberrant swelling of late endosomal/lysosomal organelles in enterocytes of newly born mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, abnormal late endosomes/lysosomes with close resemblance to the respective faint, poorly structured lysosomal compartments in the phenotypes we describe here were implicated in another neonatal intestinal disorder, namely, human mucolipidosis type IV. In newly born mice, the absence of mucolipin-1 and -3 induced aberrant swelling of those organelles in enterocytes, diminished apical endocytosis from the intestinal lumen, caused diarrhea, and delayed growth (Remis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states this with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "055461cd-03f9-437b-9185-6dffe373ff91",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C54",
+      "claim": "Several genes identified in the CRISPR screen have been associated with neuropathies or myopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it should be noted that several genes identified in our screening have been associated with neuropathies or myopathies (Charcot\u2013Marie\u2013Tooth syndrome [MTMR2]; Dyggve\u2013Melchior\u2013Clausen syndrome [DYM]) (Denais et al., 2011; Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section explicitly states this with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "09023705-ba7b-4fb3-8a6c-986eecb1f531",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C55",
+      "claim": "CaCo2 cells were transduced with the human lentiviral GeCKOv2 CRISPR-library at a low multiplicity of infection (0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "First, we generated Cas9-expressing CaCo2 cells and then transduced two biological replicates at a low multiplicity of infection (MOI) (0.2) using the human lentiviral GeCKOv2 CRISPR-library, selecting for successful viral integration with antibiotic treatment with puromycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes this experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "22be60fe-243f-4af2-83b0-abee7f91b6bb",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C56",
+      "claim": "Polarized CaCo2 cells were cultured for 18 days before FACS sorting in the CRISPR screen.",
+      "claim_type": "EXPLICIT",
+      "source": "We then seeded the infected CaCo2 cultures at high density and allowed the confluent monolayers to further polarize and differentiate for 18 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes this experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "7b27cfef-cce2-491d-afb0-ce7aa0589231",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C57",
+      "claim": "Approximately 10% of cells with lowest surface DPP4 signal were sorted by FACS in the CRISPR screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, polarized cells were detached, stained for endogenous DPP4, and subjected to FACS, separating those cells with only 10% of surface signal left, due to CRISPR targeting (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes this experimental procedure with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "d14eaa60-3546-4e92-ae36-9d77e5eb81ba",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C58",
+      "claim": "DPP4 localizes to the apical brush-border of polarized enterocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Dipeptidylpeptidase 4 (DPP4) localizes to the apical brush-border of polarized enterocytes and can be detected with a specific antibody at its extracellular stalk domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1A caption explicitly states this with accompanying microscopy image.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "10c5afdf-0755-44f7-bc9c-4f8c8ea73714",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C59",
+      "claim": "During polarization, apical DPP4 is increased due to polarized traffic and surface expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "During polarization, apical DPP4 is increased due to polarized traffic and surface expansion, which can be measured by flow cytometry (right panel, CaCo2 unpolarized versus polarized).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1B caption explicitly states this with accompanying flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "cb1bd1d0-25e5-4434-b47f-fd68ad2379ec",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C60",
+      "claim": "HEK293T cells do not express DPP4.",
+      "claim_type": "EXPLICIT",
+      "source": "HEK293T cells, not expressing DPP4, serve as quality control for staining specificity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1B caption explicitly states this.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "41e6a925-4afe-4a03-a547-d5b794ad0f64",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C61",
+      "claim": "Induction of VAC formation with colchicine does not cause a reduction in surface DPP4 signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of VAC formation with colchicine does not cause a reduction in surface DPP4 signal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1B caption explicitly states this.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "0127d073-be90-4e9b-8b74-e21cca66ad01",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C62",
+      "claim": "The percentage of cysts with a single central lumen is substantially decreased in the respective KO cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of cysts with a single central lumen is substantially decreased in the respective KO cells lines (dot box plot, Mann\u2013Whitney U test. ***p< 0.005, n \u2265 100 cells per condition).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4B caption explicitly states this with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "130e6fc1-519f-4dc4-828a-d14131a239e9",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C63",
+      "claim": "Lamp1-positive compartments appear enlarged upon KO of TM9SF4.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lamp1-positive compartments appear enlarged upon KO of TM9SF4 (B) and localize to basolateral regions upon KO of ARHGAP33 (C) (white arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 12 caption explicitly states this with reference to microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "a4b18175-1c0c-480a-a67e-7cad79731b3c",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "claim_id": "C64",
+      "claim": "Lamp1-positive compartments localize to basolateral regions upon KO of ARHGAP33.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lamp1-positive compartments appear enlarged upon KO of TM9SF4 (B) and localize to basolateral regions upon KO of ARHGAP33 (C) (white arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 12 caption explicitly states this with reference to microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c95becae-e43e-4edf-9be1-bfc22279a18b",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and performed the first genome-wide CRISPR screen in human polarized epithelial cells using a FACS-based assay to measure DPP4 surface localization. CaCo2 cells were transduced with the GeCKOv2 library at low MOI, polarized for 18 days, and the lowest 10% DPP4-expressing cells were sorted, yielding 89 significantly enriched gRNAs (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C55-C57, and C20 collectively describe the experimental workflow and primary outcome. The methodology is clearly described with appropriate controls (C21, C60, C61), statistical thresholds are stated (p<0.05), and the novelty claim is explicitly made. The technical approach appears sound with low MOI to ensure single integration events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "7fe63a97-e692-476f-af5e-690d117005cf",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Validation of seven candidate genes (PIP5K1C, TM9SF4, TMEM110, GALNT2, ANO8, MTMR2, ARHGAP33) by generating individual KO cell lines confirmed varying degrees of DPP4 surface reduction, with PIP5K1C showing the strongest effect (~75% reduction) and ANO8, MTMR2, ARHGAP33 showing the mildest (~30% reduction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 describe quantitative validation of screen hits using flow cytometry. The data are presented with clear quantification and appear consistent across figures. Western blots confirm knockout efficiency (Figure 3A, Figure 1\u2014figure supplement 1C), and the validation uses independent gRNAs, strengthening confidence in the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "f5ac8bc7-df70-4962-bfd8-acc269146398",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "All seven KO cell lines showed severe defects in forming a single central lumen in 3D cyst assays, with statistically significant decreases in the percentage of cysts with proper lumen formation (p<0.005, n\u2265100 cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C62 describe polarization defects in 3D culture with appropriate statistical analysis (Mann-Whitney U test, p<0.005) and adequate sample size (n\u2265100). The phenotype is consistent across all KO lines, suggesting a common requirement for these genes in epithelial polarization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "7526ff68-db42-4b3b-b689-42c435081b91",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TM9SF4, MTMR2, and ANO8 KO cell lines displayed aberrant intracellular accumulation of DPP4 in 3D cysts, with DPP4 mislocalizing to subapical compartments in ARHGAP33, TM9SF4, and ANO8 KOs, while PIP5K1C and MTMR2 KOs showed DPP4 in large basolateral actin-rich structures resembling microvillus inclusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C32, and C33 describe cargo mislocalization patterns supported by immunofluorescence microscopy (Figures 4, 8). The distinction between subapical versus basolateral mislocalization suggests different mechanistic defects. Quantification is provided (Figure 8I) with statistical significance, though the specific mechanisms remain to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "49f0a056-9ff9-4451-8422-d855fa2ebb21",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "All KO cell lines exhibited conspicuous clusters of ectopic microvilli and severe irregularities in brush-border architecture, including patchy distribution or complete absence of apical microvilli and occurrence of extremely long microvilli, as revealed by electron microscopy and actin fluorescence microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C31 are supported by extensive electron microscopy data (Figures 5-7) showing consistent ultrastructural defects across all KO lines. Both SEM and TEM were used, providing complementary views. The phenotypes are well-documented with multiple representative images, though quantification of microvillus defects is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "dde249b8-caa4-41a1-af96-060c6ad2f887",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Most KO cell lines showed enlarged late endosomal/lysosomal compartments (up to 2\u00d76 \u03bcm in TM9SF4 and ANO8 KOs) that were positive for Lamp1, Lamp3, cathepsinD, and the acidotropic marker DAMP, and regularly contained mislocalized DPP4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 and C37-C39 describe endolysosomal phenotypes supported by both TEM morphology (Figure 6) and immunogold labeling (Figure 11). The acidic nature is confirmed by DAMP labeling, and the presence of lysosomal markers is demonstrated. Size measurements are provided. Claims C63-C64 add immunofluorescence confirmation. The convergent evidence from multiple techniques strongly supports these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "bc10874c-1ef5-419e-a973-cfb2cdd9d524",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "After serum deprivation overnight, the giant poorly structured compartments in TM9SF4, ANO8, and ARHGAP33 KO cells disappeared and reformed lysosomes of normal size and morphology were observed, suggesting autophagic removal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is supported by EM data (Figure 1\u2014figure supplement 1H-K) showing that the enlarged compartments are reversible upon starvation. This suggests they are not permanent structural defects but rather reflect an imbalance in lysosomal homeostasis. The interpretation of autophagic removal is reasonable given the starvation stimulus, though direct autophagy markers were not shown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "2e2af118-261c-49a0-8169-c625b1dd0b47",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "APN delocalized to actin-rich intracellular compartments only in ARHGAP33 KO cells, while SI localization remained unaltered in all KO cell lines, suggesting cargo-specific effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34 and C35 demonstrate differential effects on apical cargo proteins. The specificity for ARHGAP33 affecting APN but not other KOs, and the lack of effect on SI across all KOs, suggests these genes specifically affect certain trafficking routes. Statistical analysis is provided (Figure 8\u2014figure supplement 1I), though the mechanistic basis for cargo selectivity is not explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "403d42fa-13c7-475f-bc2d-14d59cb249f0",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TEER measurements revealed a substantial increase in ARHGAP33 KO cells around day 7, while other KO cell lines maintained TEER comparable to WT cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by TEER measurements over time (Figure 10I). The specific increase in ARHGAP33 KO suggests enhanced barrier function, which is interesting given the other polarization defects. However, the biological significance and mechanism of this increase are not explored. The measurements appear technically sound with error bars shown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "933fa7a4-0ca1-4447-80e0-96a7620dbf2a",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Colchicine treatment to induce VAC formation did not cause reduction in surface DPP4 signal, validating that VAC formation would not interfere with the FACS-based screening approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C61 describe an important control experiment showing that VAC formation (a potential confounding factor) does not affect DPP4 surface levels. This validates the screening approach. The data are shown in Figure 1\u2014figure supplement 1A-B with quantification, supporting the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "a7672b72-30c8-4917-a48f-b7d2a5b34088",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose mechanistic hypotheses for how the identified genes might regulate polarization: PIP5K1C and MTMR2 through PIP pool regulation; ANO8 and TMEM110 through Ca2+ signaling; TM9SF4 through lipid microdomains and pH regulation; GALNT2 through O-glycosylation; and ARHGAP33 through Cdc42 regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C50 are largely speculative mechanistic proposals based on known functions of these proteins from the literature (citations provided). While the hypotheses are reasonable and well-grounded in prior work, they are not directly tested in this study. The authors appropriately use tentative language ('might', 'could', 'possibly'). These remain hypotheses requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "472f48fa-e064-495f-9854-f342794fd62e",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about epithelial polarization, MVID disease, and DPP4 properties, including that epithelial cells build specialized membrane domains separated by junctions, that MVID is caused by mutations in MYO5B, STX3, and STXBP2, and that DPP4 is a type II transmembrane protein with N- and O-linked glycans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C18 present established background knowledge with appropriate citations. These are not novel findings but provide necessary context. The authors cite their own previous work for MVID genetics (C13-C15), which is appropriate. The characterization of DPP4 is well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "640cdcb7-6fae-438a-8faa-4c0fbcbb726b",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within disease contexts, noting that UNC45A has been associated with syndromal diarrhea, that MVID shows enlarged lysosomal organelles, that mucolipidosis type IV shows similar endolysosomal swelling, and that several identified genes are associated with neuropathies or myopathies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 appropriately place the findings in broader disease contexts with proper citations. These are literature-based contextual claims rather than novel findings. The parallels drawn between the observed phenotypes and known diseases are reasonable and may guide future clinical investigations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "cb13829b-a95b-4e27-b8c6-eed6b5ac2885",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The abstract claims that knockout of TM9SF4, anoctamin 8, and ARHGAP33 causes polarization defects and DPP4 mislocalization to late endosomes/lysosomes, confirming identification of novel factors for epithelial polarization and apical cargo secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C7 from the abstract are well-supported by the detailed results presented in the manuscript, including 3D cyst assays (C26-C27), immunofluorescence (C32), electron microscopy (C28-C31), and immunogold labeling (C37-C39). The convergent evidence from multiple experimental approaches strongly supports these summary claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    },
+    {
+      "id": "7644448c-396e-43b9-8599-b6dfcd6eefcb",
+      "content_id": "5fba12ec-db80-4ba8-ab88-051b14c556cc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript establishes that DPP4 localizes to the apical brush-border, increases during polarization due to polarized traffic and surface expansion, and that this can be measured by flow cytometry, with HEK293T cells serving as a negative control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C58-C60 describe the basic characterization of the DPP4 assay system. These are supported by microscopy (Figure 1A) and flow cytometry data (Figure 1B). The use of HEK293T as a negative control is appropriate. This establishes the foundation for the screening approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:32:43.048929Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e562b81c-e1ef-48a7-a37d-39163b54c59b",
+      "result_id": "c95becae-e43e-4edf-9be1-bfc22279a18b"
+    },
+    {
+      "claim_id": "09023705-ba7b-4fb3-8a6c-986eecb1f531",
+      "result_id": "c95becae-e43e-4edf-9be1-bfc22279a18b"
+    },
+    {
+      "claim_id": "22be60fe-243f-4af2-83b0-abee7f91b6bb",
+      "result_id": "c95becae-e43e-4edf-9be1-bfc22279a18b"
+    },
+    {
+      "claim_id": "7b27cfef-cce2-491d-afb0-ce7aa0589231",
+      "result_id": "c95becae-e43e-4edf-9be1-bfc22279a18b"
+    },
+    {
+      "claim_id": "92be3ff8-e419-4f9b-809b-509fc5be1d1c",
+      "result_id": "c95becae-e43e-4edf-9be1-bfc22279a18b"
+    },
+    {
+      "claim_id": "67819517-9c57-4530-b37c-747efdbe45b7",
+      "result_id": "7fe63a97-e692-476f-af5e-690d117005cf"
+    },
+    {
+      "claim_id": "17c1ec48-ec4b-4ed5-b9e4-34b3e6c4b03f",
+      "result_id": "7fe63a97-e692-476f-af5e-690d117005cf"
+    },
+    {
+      "claim_id": "65b441d2-da0f-4010-91d1-53fee090e39c",
+      "result_id": "7fe63a97-e692-476f-af5e-690d117005cf"
+    },
+    {
+      "claim_id": "b54ac2ea-c7f8-43fb-8cec-a448b59d3ae7",
+      "result_id": "7fe63a97-e692-476f-af5e-690d117005cf"
+    },
+    {
+      "claim_id": "c150601f-dc8e-428c-b2ea-623dcb1ceb7a",
+      "result_id": "f5ac8bc7-df70-4962-bfd8-acc269146398"
+    },
+    {
+      "claim_id": "0127d073-be90-4e9b-8b74-e21cca66ad01",
+      "result_id": "f5ac8bc7-df70-4962-bfd8-acc269146398"
+    },
+    {
+      "claim_id": "6492b14d-80c6-4a6b-b0f4-34285339a171",
+      "result_id": "7526ff68-db42-4b3b-b689-42c435081b91"
+    },
+    {
+      "claim_id": "092ab833-1e94-4999-8331-bbf7d2c75cad",
+      "result_id": "7526ff68-db42-4b3b-b689-42c435081b91"
+    },
+    {
+      "claim_id": "c0ec8572-25e6-4ff3-81ef-3fe455a23828",
+      "result_id": "7526ff68-db42-4b3b-b689-42c435081b91"
+    },
+    {
+      "claim_id": "8b0ce5db-12b6-420f-aa9c-34f611a7afd5",
+      "result_id": "49f0a056-9ff9-4451-8422-d855fa2ebb21"
+    },
+    {
+      "claim_id": "65c1c49c-ec83-47de-903d-2b1faeab3414",
+      "result_id": "49f0a056-9ff9-4451-8422-d855fa2ebb21"
+    },
+    {
+      "claim_id": "8e29132a-60c3-400d-b837-d6b32054b7a7",
+      "result_id": "dde249b8-caa4-41a1-af96-060c6ad2f887"
+    },
+    {
+      "claim_id": "f6b81112-1698-404c-9a2b-38a2d79f56a7",
+      "result_id": "dde249b8-caa4-41a1-af96-060c6ad2f887"
+    },
+    {
+      "claim_id": "e7c7ff91-307a-43c7-8977-1a8d3fe897bc",
+      "result_id": "dde249b8-caa4-41a1-af96-060c6ad2f887"
+    },
+    {
+      "claim_id": "f2c28e7f-8019-42ba-9bb6-1a031256ba9f",
+      "result_id": "dde249b8-caa4-41a1-af96-060c6ad2f887"
+    },
+    {
+      "claim_id": "c252934d-6e37-44be-9174-6e3dd0afe0f7",
+      "result_id": "dde249b8-caa4-41a1-af96-060c6ad2f887"
+    },
+    {
+      "claim_id": "130e6fc1-519f-4dc4-828a-d14131a239e9",
+      "result_id": "dde249b8-caa4-41a1-af96-060c6ad2f887"
+    },
+    {
+      "claim_id": "a4b18175-1c0c-480a-a67e-7cad79731b3c",
+      "result_id": "dde249b8-caa4-41a1-af96-060c6ad2f887"
+    },
+    {
+      "claim_id": "67f8734f-28ff-441d-aceb-7423f8f15c4e",
+      "result_id": "bc10874c-1ef5-419e-a973-cfb2cdd9d524"
+    },
+    {
+      "claim_id": "2cf24d35-97fa-4753-9834-e0bcfab33798",
+      "result_id": "2e2af118-261c-49a0-8169-c625b1dd0b47"
+    },
+    {
+      "claim_id": "7ef1159c-acc7-4742-940a-2fb61252f7e0",
+      "result_id": "2e2af118-261c-49a0-8169-c625b1dd0b47"
+    },
+    {
+      "claim_id": "28c91733-855e-4774-ab81-b36742ada850",
+      "result_id": "403d42fa-13c7-475f-bc2d-14d59cb249f0"
+    },
+    {
+      "claim_id": "c4088caa-c016-4df9-8369-4809c73c6b16",
+      "result_id": "933fa7a4-0ca1-4447-80e0-96a7620dbf2a"
+    },
+    {
+      "claim_id": "41e6a925-4afe-4a03-a547-d5b794ad0f64",
+      "result_id": "933fa7a4-0ca1-4447-80e0-96a7620dbf2a"
+    },
+    {
+      "claim_id": "0e9a966f-4c17-4a72-a6f6-418bec7071f0",
+      "result_id": "a7672b72-30c8-4917-a48f-b7d2a5b34088"
+    },
+    {
+      "claim_id": "ddd54e30-1f00-4524-8eb0-f4df4519a269",
+      "result_id": "a7672b72-30c8-4917-a48f-b7d2a5b34088"
+    },
+    {
+      "claim_id": "3b2898ee-03dd-4676-bc68-5fc0ee3c97c0",
+      "result_id": "a7672b72-30c8-4917-a48f-b7d2a5b34088"
+    },
+    {
+      "claim_id": "3df8c8dd-e6ca-4139-83fe-6c2d1fea0f34",
+      "result_id": "a7672b72-30c8-4917-a48f-b7d2a5b34088"
+    },
+    {
+      "claim_id": "cf728dd9-285d-4fe2-8030-e10ea4284e1f",
+      "result_id": "a7672b72-30c8-4917-a48f-b7d2a5b34088"
+    },
+    {
+      "claim_id": "a06246f6-c07e-4fd2-9d03-1c669b065b5e",
+      "result_id": "a7672b72-30c8-4917-a48f-b7d2a5b34088"
+    },
+    {
+      "claim_id": "5d62c66a-aafc-4a1a-acc2-71e3fa80bfd4",
+      "result_id": "a7672b72-30c8-4917-a48f-b7d2a5b34088"
+    },
+    {
+      "claim_id": "c0ada6d7-2f8d-4d85-97f0-370440e8f090",
+      "result_id": "a7672b72-30c8-4917-a48f-b7d2a5b34088"
+    },
+    {
+      "claim_id": "b4ce9b31-bc3b-41ed-8bd9-47776d419d77",
+      "result_id": "a7672b72-30c8-4917-a48f-b7d2a5b34088"
+    },
+    {
+      "claim_id": "26b34e77-f6f8-4b95-979f-4eca2339bb02",
+      "result_id": "a7672b72-30c8-4917-a48f-b7d2a5b34088"
+    },
+    {
+      "claim_id": "88d39f1a-ae00-409c-abb2-7955db0fb304",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "03c73d06-c919-4bd2-9e60-fb14a587307a",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "638e931e-6151-4bc5-9af5-07450f2e387e",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "5a7d5279-b224-4338-905e-0f69e1c92640",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "6d7a61bf-6e43-4cbe-88de-65700ba33c16",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "ccbecac8-1895-463b-8abf-e01df0c7fd6f",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "7a05037a-86a0-4572-a6b7-6b665428bfd9",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "6f86050c-cfc4-4751-b847-9958c081a7d3",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "180478ab-ba1e-4de3-a328-b3ef5eef7824",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "75814243-c8d9-4f88-a9af-ce110ad5dc42",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "f56ddc33-1ad8-4d95-8415-4b69da182974",
+      "result_id": "472f48fa-e064-495f-9854-f342794fd62e"
+    },
+    {
+      "claim_id": "256a5d67-7c77-4d43-9376-b1cfd370f1d7",
+      "result_id": "640cdcb7-6fae-438a-8faa-4c0fbcbb726b"
+    },
+    {
+      "claim_id": "15bbce27-c528-49ee-97fa-d1d71147982c",
+      "result_id": "640cdcb7-6fae-438a-8faa-4c0fbcbb726b"
+    },
+    {
+      "claim_id": "ed062453-2fc1-43cc-a469-beae7e25db29",
+      "result_id": "640cdcb7-6fae-438a-8faa-4c0fbcbb726b"
+    },
+    {
+      "claim_id": "055461cd-03f9-437b-9185-6dffe373ff91",
+      "result_id": "640cdcb7-6fae-438a-8faa-4c0fbcbb726b"
+    },
+    {
+      "claim_id": "61a6318b-22e7-4af8-b296-0b416228f42d",
+      "result_id": "cb13829b-a95b-4e27-b8c6-eed6b5ac2885"
+    },
+    {
+      "claim_id": "aabf6a4b-731f-4ed4-aa13-ff139b8e8fc7",
+      "result_id": "cb13829b-a95b-4e27-b8c6-eed6b5ac2885"
+    },
+    {
+      "claim_id": "00288b89-abcd-4b95-9f35-35669e048574",
+      "result_id": "cb13829b-a95b-4e27-b8c6-eed6b5ac2885"
+    },
+    {
+      "claim_id": "d3a1f980-1c24-4d88-8490-4cc4314d711d",
+      "result_id": "cb13829b-a95b-4e27-b8c6-eed6b5ac2885"
+    },
+    {
+      "claim_id": "ae723364-7cbe-4d8b-928a-d189230f7348",
+      "result_id": "cb13829b-a95b-4e27-b8c6-eed6b5ac2885"
+    },
+    {
+      "claim_id": "36f5fbec-3176-4645-b71f-f166888c155e",
+      "result_id": "cb13829b-a95b-4e27-b8c6-eed6b5ac2885"
+    },
+    {
+      "claim_id": "f3830502-7ce8-45ba-a43e-d8a90340aa2e",
+      "result_id": "7644448c-396e-43b9-8599-b6dfcd6eefcb"
+    },
+    {
+      "claim_id": "d14eaa60-3546-4e92-ae36-9d77e5eb81ba",
+      "result_id": "7644448c-396e-43b9-8599-b6dfcd6eefcb"
+    },
+    {
+      "claim_id": "10c5afdf-0755-44f7-bc9c-4f8c8ea73714",
+      "result_id": "7644448c-396e-43b9-8599-b6dfcd6eefcb"
+    },
+    {
+      "claim_id": "cb1bd1d0-25e5-4434-b47f-fd68ad2379ec",
+      "result_id": "7644448c-396e-43b9-8599-b6dfcd6eefcb"
+    }
+  ],
+  "comparisons": []
+}

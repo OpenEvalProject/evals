@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "A VAE with convolutional encoder/decoder architecture was implemented to learn a 32-dimensional latent representation of vocal spectrograms by maximizing the evidence lower bound (ELBO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C64-C65, and C68 collectively describe the VAE architecture, training objective, and implementation details. The methodology is clearly stated with specific parameters (32 latent dimensions, learning rate 10^-3, batch size 64), and the approach is standard for VAE applications to image data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "VAE-learned latent features capture traditional acoustic features (64-95% variance explained) while being more parsimonious (5-7 effective dimensions) and having higher representational capacity than traditional feature sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 provide converging quantitative evidence that latent features encode traditional acoustic information while offering advantages in dimensionality and representational capacity. The prediction asymmetry analysis (C8) and effective dimensionality comparison (C10) support the superiority claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Latent features produce better nearest neighbor matches than DeepSqueak features for vocal syllables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by visual evidence in Figure 3 and supplementary figures showing qualitative comparisons. However, the evaluation is primarily qualitative rather than quantitative, which limits the strength of the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Latent features more sensitively detect the reduction in variability between directed and undirected zebra finch song (27-37% reduction) compared to SAP features (0-20% reduction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 demonstrate that latent features capture a well-established biological effect (C13) with greater sensitivity than traditional methods. The quantitative comparison (C15) and downstream task performance (C16) provide strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Latent features reveal strain-specific differences in mouse USV repertoires and demonstrate that individual mice produce stable, stereotyped vocal repertoires across recording sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 show that latent features successfully capture biologically meaningful variation at multiple levels (strain, individual). The MMD-based analysis and t-SNE visualization provide quantitative support for repertoire stability and individual stereotypy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C47"
+    ],
+    "result": "Mouse USVs form a quasi-continuous distribution rather than discrete clusters, contrary to conventional assumptions in the literature, as evidenced by multiple clustering metrics and interpolation analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 and C47 provide multiple converging lines of evidence (clustering metrics, consistency analysis, interpolation) that challenge the clustering assumption. The comparison to zebra finch syllables (which do cluster) strengthens the argument. However, the authors acknowledge important caveats (C48-C49) about generalizability and perceptual categorization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C50"
+    ],
+    "result": "The shotgun VAE approach enables continuous measurement of vocal variability on tens-of-milliseconds timescales without requiring syllable boundaries, revealing fine-grained temporal structure in zebra finch song.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 and C50 describe a novel methodological contribution that extends VAE analysis to continuous time. The method successfully captures known effects (directed/undirected variability) while providing finer temporal resolution than previous syllable-level approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "VAE latent features accurately capture tutor-pupil song similarity at both syllable and continuous timescales, correctly identifying copying quality and tutor-pupil pairings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 demonstrate that latent features successfully quantify song learning outcomes. The MMD-based analysis identifies both well-copied and poorly-copied syllables, and the shotgun approach provides advantages over syllable-level analysis for fused syllables (C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "VAE-learned features outperform traditional acoustic features across multiple analysis tasks including nearest neighbor similarity, social context discrimination, and cross-session/individual comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 summarize the main findings with references to supporting evidence throughout the paper. These summary claims are well-supported by the specific results in other claim groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The VAE approach has limitations including per-dataset training requirements (~1 hour GPU time), inability to directly compare across datasets, and reduced interpretability compared to named acoustic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 honestly acknowledge methodological limitations. These are straightforward statements about the approach's constraints that are inherent to the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C69",
+      "C70",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Detailed methodological specifications are provided for animal protocols, data collection, preprocessing, model training, and analysis procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C85 provide comprehensive methodological details including animal protocols, recording parameters, preprocessing steps, and analysis procedures. These are straightforward methodological descriptions that enable reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The finding that mouse USVs do not cluster may not generalize to all mouse strains, and signal-level analysis cannot address whether continuous distributions might be perceived categorically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 appropriately qualify the main clustering result by acknowledging limitations and alternative interpretations. These caveats are important for proper interpretation of the findings.",
+    "result_type": "MINOR"
+  }
+]

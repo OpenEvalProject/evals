@@ -1,0 +1,446 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Two commercial ultramicrotomes (Leica UC7 and RMC PTPC) were modified with motorized systems to automate rotational movements. The Leica system uses three DC motors controlled by a Raspberry Pi, while the RMC system uses five stepper motors controlled by a Trinamic driver board. Both systems were calibrated using a Thorlabs rotation mount with 5 arcmin resolution, achieving angular resolutions of 0.1\u00b0 through linear regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 and C66-C76 provide comprehensive technical details about the hardware modifications, control systems, and calibration procedures. The calibration data shown in Figure 1\u2014figure supplements 2-4 demonstrate linear relationships with high R-squared values (>0.999), supporting the claimed precision. The modifications are well-documented with CAD files and software made available.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The targeting problem was decomposed into orientation and distance components, solved using forward and inverse kinematics equations adapted from robotics principles. The orientation solution requires finding three angles (knife tilt, sample tilt, sample rotation) to make the target plane vertical and parallel to the knife. Multiple solutions exist for each targeting setup, constrained by ultramicrotome axis limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C77-C83 describe a mathematically sound approach with coordinate frame definitions shown in Figure 3. The forward kinematics equation is properly constructed, and the existence of multiple solutions is demonstrated in Figure 3E-F. The requirement for manual knife-to-block alignment (C80-C81) to resolve an unknown transformation is a reasonable engineering solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Crosshair, an open-source Fiji plugin, was developed to provide user-friendly access to targeting calculations and X-ray image measurement. The plugin includes BigDataViewer for 2D browsing, ImageJ 3D Viewer for 3D visualization, a 'microtome mode' for interactive solution selection, and a 'cutting mode' for viewing predicted cutting progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 and C97-C103 describe software features that are visually demonstrated in Figures 5 and 5\u2014figure supplement 1. The plugin is documented as open-source with tutorials and video demonstrations (C64-C65), supporting accessibility claims. The integration with established tools (BigDataViewer, ImageJ 3D Viewer) is properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C104",
+      "C107",
+      "C108",
+      "C114"
+    ],
+    "result": "Ten Platynereis dumerilii samples were targeted (5 on each system) to test workflow accuracy. All samples successfully hit their target of cutting through both anterior dorsal cirrus. The workflow achieved a mean angular error of 0.9\u00b0, mean absolute solution distance error of 3.1 microns, and mean point-to-plane distance error of 3.1 microns across all samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C34, C104, C107-C108, and C114 describe a systematic accuracy test with appropriate sample size (n=10). Visual evidence in Figure 7 confirms successful targeting. The quantitative accuracy measures are clearly defined with three complementary metrics. However, the lack of statistical analysis (no standard deviations or confidence intervals reported for the overall means) is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Registration accuracy was assessed by manually placing corresponding points in registered X-ray image pairs. The mean registration error was 1.9 microns, with manual point placement contributing approximately 1.1 microns of error. This indicates that approximately 2 microns of error in distance measurements comes from registration inaccuracies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C171-C175 describe a reasonable approach to quantifying registration uncertainty. The repeat measurement (C173) provides evidence that registration error exceeds manual placement error. However, with only 4 points per sample and 2 repeats, the statistical power is limited. The conclusion that registration contributes ~2 microns error is appropriately cautious given the 1 micron voxel size (C175).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The RMC system achieved better accuracy (0.7\u00b0 angular error, 1.6 microns solution distance error, 1.3 microns point-to-plane error) than the Leica system (1.1\u00b0 angular error, 4.5 microns solution distance error, 4.8 microns point-to-plane error). Potential contributing factors include different X-ray systems used, different operators, and different hardware.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C41 report system-specific accuracy values, but claims C111-C113 acknowledge multiple confounding variables. With only 5 samples per system, different X-ray imaging systems (C111-C112), different operators (C113), and different hardware (C44), it's impossible to determine which factor(s) caused the accuracy difference. No statistical testing was performed to determine if differences are significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C115"
+    ],
+    "result": "The workflow converts X-ray images into ultramicrotome angles and cutting distance, completing measurements and trimming in 1-2 hours after X-ray acquisition. This represents a significant speedup compared to non-assisted targeting from X-ray, which may take 1-2 days for complex samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C115 describe the workflow's efficiency. The 1-2 hour timeframe is stated as experience-based (C46), which is reasonable for a methods paper. The comparison to 1-2 days for non-assisted targeting (C47) is also experience-based but provides useful context. The speedup claim is supported by the automation of calculations and motor movements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C109",
+      "C110"
+    ],
+    "result": "The 1 micron voxel size of lab-based micro-CT systems limits the achievable accuracy of the targeting system and contributes to registration uncertainty. Measurement precision could be improved by using higher-resolution X-ray imaging from synchrotrons, which can provide resolutions in the range of hundreds of nanometres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C109, and C110 correctly identify a fundamental limitation of the imaging resolution. The inference that 1 micron voxels limit measurement precision is sound, especially given that distance errors are on the order of 1-5 microns. The suggestion to use synchrotron imaging (C110) is reasonable speculation supported by citations about synchrotron capabilities (C8, C116).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C118",
+      "C119",
+      "C120",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Manual steps in the workflow (setting zero positions, knife-block alignment, knife approach) introduce variation due to human error. The knife approach step is particularly problematic, as errors accumulate with each ultramicrotome reset. However, good accuracy was still achieved with samples requiring one reset (h, i, j).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C118-C120, and C129-C134 identify legitimate sources of error in the workflow. The inference that manual steps introduce human error (C120) is reasonable. The observation that samples h, i, j maintained good accuracy despite requiring resets (C133) is supported by Figure 6 data. However, the claim that error increases with each reset (C132) is stated as inference without direct measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C135",
+      "C136"
+    ],
+    "result": "Future improvements to eliminate manual steps are proposed, including automated zero-setting, fixed-orientation sample mounting (similar to the pin/holder system used for samples f-j), and automated knife approach. These improvements would require hardware modifications or alternative measurement methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C53 and C121-C128, C135-C136 are speculative proposals for future work. While the suggestions are reasonable engineering solutions, they have not been implemented or tested. The reference to the pin/holder system for samples f-j (C125-C126) provides some evidence that fixed-orientation mounting is feasible, but the proposed modifications (C127-C128) remain untested speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Crosshair's calculations could potentially be extended to other 3D imaging modalities (e.g., 3D light microscopy for CLEM), multiple registered modalities, and targeting specific locations within a plane rather than just the plane itself. These extensions would require additional development of the software and, for some features, additional hardware capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C56 and C137-C140 are entirely speculative about potential future extensions. While the suggestions are reasonable (the mathematics should generalize to other 3D maps), none have been implemented or validated. The citation to Ronchi et al., 2021 for CLEM applications (C138) provides context but not validation of the proposed extension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C141"
+    ],
+    "result": "The targeting workflow represents a first step toward fully automated targeting for EM, making targeting simpler and faster, thereby achieving higher throughput and shorter acquisition times. The open-source availability of plans and software aims to enable more EM labs to rapidly target regions of interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C141 make reasonable summary statements about the work's significance. The workflow does automate key calculations and movements (supporting C58), and the open-source release (C60-C65) does lower barriers to adoption (C59). However, the claim of being a \"first step toward fully automated targeting\" (C57) is somewhat overstated given that substantial manual steps remain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C105",
+      "C106",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "RegistrationTree, a standalone Fiji plugin, was developed as a wrapper around BigWarp and elastix to facilitate registration of large images. The plugin was used to register pre- and post-targeting X-ray scans using two-step registration (point-based with BigWarp, then intensity-based with elastix) limited to rotation and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C105-C106, and C167-C169 describe the RegistrationTree plugin and its application. The two-step registration approach (C167) is standard practice, and limiting to rigid transformations (C168) is appropriate for this application. The plugin's standalone nature (C106) and open-source availability support its utility beyond this specific workflow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C162",
+      "C165",
+      "C176",
+      "C195"
+    ],
+    "result": "All data, software, and documentation are made publicly available through multiple repositories: X-ray images on EMPIAR (EMPIAR-11055), accuracy test files on BioStudies (S-BSST845), hardware designs on GitHub, and Crosshair plugin on GitHub with video tutorials on YouTube.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 and C162, C165, C176, C195 document comprehensive data and code availability. The use of established repositories (EMPIAR, BioStudies, GitHub) and provision of multiple resource types (raw data, processed data, CAD files, software, tutorials) demonstrates strong commitment to reproducibility and open science practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C163",
+      "C164"
+    ],
+    "result": "Platynereis samples were prepared using a modified protocol with microwave processing, flat embedded in resin, and trimmed to create rectangular block faces within one feed length of the target. Samples a-e were imaged with a Bruker SkyScan 1272 (2 hours per sample), while samples f-j were imaged with a Zeiss Versa 510 (5.5 hours per sample), both at approximately 1 micron voxel size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C164 provide detailed methods for sample preparation and X-ray imaging. The preparation protocol is properly cited (C142), and imaging parameters are thoroughly documented (C151-C161). The difference in imaging systems and scan times between sample groups is clearly stated, which is important for interpreting the accuracy differences observed. All raw data are made available (C162).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Three accuracy measures were calculated using Crosshair: angle error (absolute angle between plane normals), solution distance error (difference between predicted and actual cutting distance), and point-to-plane distance error (shortest distance from a point on the target plane to the final surface). Each measure has specific assumptions and limitations that are clearly documented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C194 provide comprehensive documentation of accuracy measurement methodology. The three complementary measures (C181) address different aspects of targeting accuracy. The explicit statement of assumptions (C190, C192) and limitations (C194) demonstrates appropriate scientific rigor. The quality control step of verifying the correct starting vertex (C191) is a good practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The targeting workflow involves: (1) manual trimming of a rectangular block face, (2) X-ray imaging at ~1 micron resolution, (3) defining block and target planes in Crosshair, (4) marking block corners and orientation, (5) setting ultramicrotome zero positions, (6) manual knife-block alignment, (7) entering alignment angles into Crosshair, (8) selecting a solution, and (9) executing the solution with motorized movements. After targeting, samples can be used for TEM, array tomography, or volume SEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C96 describe a complete, step-by-step workflow that is well-documented in Figure 4 and the Materials and Methods section. The workflow is logical and feasible, combining manual preparation steps with automated calculations and movements. The flexibility in block face shape (C85) and downstream applications (C96) enhances the workflow's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Volume EM is time-consuming (weeks to months for large samples), and manual ultramicrotome targeting is difficult, especially for deep regions in opaque, heavy-metal-stained samples. The orientation of cutting must be set manually by adjusting three ultramicrotome axes, which requires significant training and expertise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the motivation for the work. C1 is supported by citations to large-scale EM studies. C2-C4 describe well-known challenges in the field based on established knowledge. These claims appropriately frame the problem that the workflow addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C116",
+      "C117"
+    ],
+    "result": "X-ray imaging offers advantages for EM targeting: compatibility with standard EM sample preparation, similar structural contrast to EM (at lower resolution), and availability through lab-based micro-CT (~1 micron resolution, hours-long scans) or synchrotrons (hundreds to tens of nanometers resolution, minutes-long scans). The combination of synchrotron X-ray with EM is becoming increasingly popular.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C116-C117 are well-supported by multiple citations to published studies. The characterization of X-ray capabilities and the trend toward combined X-ray/EM workflows provide important context for why X-ray-guided targeting is valuable. The resolution and timing specifications are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Platynereis dumerilii is a marine annelid that is an established model system for development, evolution, and neurobiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by three citations to published studies. This provides appropriate justification for the choice of test organism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Three factors may have contributed to the differing accuracy between Leica and RMC systems: higher quality X-ray scans for RMC samples, different researchers performing the targeting, and different hardware between the systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C44 are explicitly speculative (\"may have contributed\"). While these are plausible explanations, they are confounded and cannot be distinguished without additional controlled experiments. The speculation is appropriately cautious but does not constitute supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Combining Crosshair with higher-resolution X-ray imaging from a synchrotron could improve accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 is speculation about future work. While the logic is sound (better imaging resolution should enable better targeting accuracy), this has not been tested. The speculation is reasonable but unsupported by data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C170"
+    ],
+    "result": "Slight variation was observed in the before and after X-ray scans of the same sample, particularly with the Bruker system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C170 is supported by the registration error analysis (C171-C175) and visual evidence in Figure 7\u2014figure supplement 1. This observation motivated the registration accuracy assessment.",
+    "result_type": "MINOR"
+  }
+]

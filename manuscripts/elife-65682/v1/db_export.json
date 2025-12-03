@@ -1,0 +1,1710 @@
+{
+  "submission": {
+    "id": "159a7eea-cd31-45d0-a1ba-37d7ffa0f005",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:21:50.242400Z",
+    "updated_at": "2025-12-03T08:21:50.242400Z"
+  },
+  "content": [
+    {
+      "id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "submission_id": "159a7eea-cd31-45d0-a1ba-37d7ffa0f005",
+      "content_type": "manuscript",
+      "content_text": "# Identifying Plasmodium falciparum transmission patterns through parasite prevalence and entomological inoculation rate\n\n## Authors\n\n- Benjamin Amoah<sup>1</sup> ([ORCID: 0000-0002-9650-2704](https://orcid.org/0000-0002-9650-2704)) \u2020\n- Robert S McCann<sup>2</sup> ([ORCID: 0000-0002-2195-6461](https://orcid.org/0000-0002-2195-6461))\n- Alinune N Kabaghe<sup>3</sup>\n- Monicah Mburu<sup>2</sup>\n- Michael G Chipeta<sup>3</sup> ([ORCID: 0000-0001-5882-9936](https://orcid.org/0000-0001-5882-9936))\n- Paula Moraga<sup>1</sup>\n- Steven Gowelo<sup>2</sup>\n- Tinashe Tizifa<sup>3</sup>\n- Henk van den Berg<sup>2</sup> ([ORCID: 0000-0002-9983-638X](https://orcid.org/0000-0002-9983-638X))\n- Themba Mzilahowa<sup>3</sup>\n- Willem Takken<sup>2</sup>\n- Michele van Vugt<sup>5</sup>\n- Kamija S Phiri<sup>3</sup>\n- Peter J Diggle<sup>1</sup>\n- Dianne J Terlouw<sup>3</sup>\n- Emanuele Giorgi<sup>1</sup> ([ORCID: 0000-0003-0640-181X](https://orcid.org/0000-0003-0640-181X))\n\n### Affiliations\n\n1. Centre for Health Informatics, Computing, and Statistics (CHICAS), Lancaster Medical School, Lancaster University Lancaster United Kingdom\n2. Laboratory of Entomology, Wageningen University and Research Wageningen Netherlands\n3. Department of Public Health, College of Medicine, University of Malawi Blantyre Malawi\n4. Center for Vaccine Development and Global Health, University of Maryland School of Medicine Baltimore United States\n5. Academic Medical Centre, University of Amsterdam Amsterdam Netherlands\n6. Malawi-Liverpool Wellcome Trust Research Programme Blantyre Malawi\n7. Big Data Institute, University of Oxford Oxford United Kingdom\n8. Computer, Electrical and Mathematical Sciences and Engineering Division, King Abdullah University of Science and Technology (KAUST) Thuwal Saudi Arabia\n9. Liverpool School of Tropical Medicine Liverpool United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Monitoring malaria transmission is a critical component of efforts to achieve targets for elimination and eradication. Two commonly monitored metrics of transmission intensity are parasite prevalence (PR) and the entomological inoculation rate (EIR). Comparing the spatial and temporal variations in the PR and EIR of a given geographical region and modelling the relationship between the two metrics may provide a fuller picture of the malaria epidemiology of the region to inform control activities.Methods:Using geostatistical methods, we compare the spatial and temporal patterns of Plasmodium falciparum EIR and PR using data collected over 38 months in a rural area of Malawi. We then quantify the relationship between EIR and PR by using empirical and mechanistic statistical models.Results:Hotspots identified through the EIR and PR partly overlapped during high transmission seasons but not during low transmission seasons. The estimated relationship showed a 1-month delayed effect of EIR on PR such that at lower levels of EIR, increases in EIR are associated with rapid rise in PR, whereas at higher levels of EIR, changes in EIR do not translate into notable changes in PR.Conclusions:Our study emphasises the need for integrated malaria control strategies that combine vector and human host managements monitored by both entomological and parasitaemia indices.Funding:This work was supported by Stichting Dioraphte grant number 13050800.\n\n## Introduction\n\nNational malaria control programmes, working in collaboration with global stakeholders, have achieved extensive intervention coverage over the last two decades, leading to significant reductions in morbidity and mortality due to malaria (Bhatt et al., 2015a). However, malaria is still a leading global health problem. The previous successes and current challenges have motivated ambitious, yet feasible, global and national targets towards malaria elimination. A key component of efforts to achieve these targets is surveillance and monitoring, which is critical for continued assessment of intervention effectiveness, identification of areas or groups at the highest risk, and guiding the development and implementation of new intervention strategies (World Health Organization, 2015).\n\nA wide range of metrics exists for monitoring malaria parasite transmission. The strengths and limitations of each metric are related, in part, to the step of the parasite transmission cycle it measures (Tusting et al., 2014). These strengths and weaknesses, including the sensitivity of each metric, vary across epidemiological settings and as parasite transmission declines within a given setting (The malERA Refresh Consultative Panel on Characterising the Reservoir and Measuring Transmission, 2017). Two of the most commonly monitored metrics are the prevalence of Plasmodium parasites and the entomological inoculation rate (EIR), especially in moderate to high transmission settings.\n\nThe prevalence of Plasmodium parasites in the human population at a given time point (i.e. the parasite rate; PR) approximates the reservoir of hosts potentially available to transmit the parasite from humans to mosquitoes. While only the gametocyte stage of the parasite contributes to transmission, it remains relatively expensive to detect this stage of the parasite. Conversely, rapid diagnostic tests (RDTs) primarily detect asexual-stage antigens, yet they are inexpensive and easily deployed in large-scale community-based surveys (Poti et al., 2020). Still, the limit of detection (50\u2013200 parasites/$\u00b5\u2062l$) for RDTs is higher than that of expert microscopy or PCR (Chiodini, 2014), so that RDT-based estimates of PR are biased by excluding low-density infections. Despite these limitations, RDT-based cross-sectional surveys to measure PR capture both symptomatic and asymptomatic infections, which is important because both are likely to contribute to transmission (Bousema et al., 2014; Slater et al., 2019), and changes in PR over time can indicate changes in transmission.\n\nEIR provides an estimate of the intensity of parasite transmission from mosquitoes to humans, expressed as the number of infectious bites received per person per unit time. EIR is calculated by multiplying the number of malaria vector bites per person per unit time, also known as the human biting rate (HBR), by the proportion of vectors carrying the infectious sporozoite stage of malaria parasites, referred to as the sporozoite rate (SR) (Onori and Grab, 1980). The accuracy and precision of EIR estimates, therefore, depends on the accuracy and precision with which HBR and SR can be measured (Tusting et al., 2014). Two common methods for measuring HBR are the human landing catch and the Centers for Disease Control and Prevention Light Trap, but inter-individual variation in attractiveness to mosquitoes restricts standardisation across sampling points for both of these methods (Knols et al., 1995; Qiu et al., 2006). Alternative methods for estimating HBR include the Suna trap, which uses a synthetic blend of volatiles found on human skin and carbon dioxide to attract host-seeking Anopheles mosquitoes (Mukabana et al., 2012; Menger et al., 2014; Hiscox et al., 2014). The standardised odour blend allows for reliable comparisons among trapping locations (Mburu et al., 2019). Regardless of the method used to estimate HBR, the precision of SR decreases as the number of mosquitoes collected decreases. Despite these limitations, EIR is a vital metric of malaria parasite transmission because it directly describes human exposure to malaria parasites before post-inoculation factors such as immunity, nutrition, and access to health care (Killeen et al., 2000). Moreover, EIR provides information about the relative contributions of different vector species to transmission, which can impact malaria intervention effectiveness based on interspecies differences in biting behaviours related to time and location, non-human blood-meal hosts, larval ecology, and insecticide resistance profiles (Ferguson et al., 2010).\n\nMalaria parasite transmission is heterogeneous in space and time at fine resolution due to several factors, including the availability of larval mosquito habitat, socioeconomics, human behaviour and genetics, and malaria intervention coverage (Carter et al., 2000; Bousema et al., 2012; McCann et al., 2017a). Repeated cross-sectional surveys continuously carried out in communities can reveal this fine-resolution heterogeneity (Roca-Feltrer et al., 2012), providing timely estimates of malaria control progress at the sub-district level and potentially identifying hotspots of malaria parasite transmission for targeted intervention (Kabaghe et al., 2017; Bousema et al., 2016). However, understanding this heterogeneity and identifying hotspots in a way that is meaningful for control programmes remains challenging (Stresman et al., 2019), in part because hotspot location and size can depend on which metric is used (Stresman et al., 2017). Given that PR and EIR are indicative of components of the parasite transmission cycle that are separated by multiple complex steps, each metric provides partial but useful information about the underlying risk of transmission. Therefore, measuring and mapping both metrics can provide a fuller picture of parasite transmission (Cohen et al., 2017).\n\nAdditionally, modelling the functional relationship between EIR and PR can provide further insights into the underlying malaria epidemiology. Previous studies have demonstrated that this relationship is non-linear, such that small changes in EIR are associated with large changes in PR when EIR is low, but PR saturates rather than changing at a constant rate when EIR is high (Beier et al., 1999; Smith et al., 2005). These previous studies were meta-analyses using paired estimates of EIR and PR, with one estimate of each outcome per site, from sites representing a wide range of EIR and PR in Africa. Their findings had a number of important implications, which included providing estimated ranges for the change in PR that may be expected for a given change in EIR. However, these estimates implicitly assumed that the relationship is constant across space on a continental scale, such that differences in EIR and PR between sites would be indicative of differences over time within a site. Yet no previous study has explicitly examined this relationship over time within a single geographical region.\n\nIn the current study, we use a series of repeated cross-sectional surveys conducted over 38 months in one region of southern Malawi to map the fine-scale spatiotemporal dynamics of P. falciparum entomological inoculation rate (PfEIR) and P. falciparum parasite prevalence (PfPR). The joint monitoring of these two outcomes in space and time allows us to identify and compare the spatial heterogeneities and temporal patterns of PfEIR and PfPR in a region with moderately intense, seasonally variable malaria parasite transmission. We then investigate the PfEIR-PfPR relationship based on changes in these outcomes observed at both annual and subannual scales within our study site using several statistical models, which can be distinguished as follows: mechanistic models that are based on different epidemiological assumptions and empirical models where the data inform the PfEIR-PfPR relationship. These approaches allows us to address the following questions. (1) How do spatiotemporal patterns of EIR and PR compare? (2) Do EIR and PR lead to the identification of the same malaria hotspots? (3) As EIR changes over time, how do those changes in EIR affect PR? (4) Does EIR have a lagged effect on PR? (5) Does the EIR-PR relationship vary between women of reproductive age and children between 6 and 59 months of age?\n\n## Materials and methods\n\n### Study site\n\nThis study was part of the Majete Malaria Project (MMP), an integrated malaria control project in Chikwawa District, Malawi. The catchment area of MMP consisted of three distinct geographical regions, referred to as Focal Areas A, B, and C (Figure 1), with a total population of about 25,000 people living in 6600 households in 65 villages.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65682/elife-65682-fig1-v1.jpg)\n\n**Figure 1.:** Map of Malawi (insert) highlighting the Majete Wildlife Reserve and the borders of 19 community-based organisations (CBOs) surrounding the Majete perimeter. Three focal areas (red patches), labelled as A, B, and C, show the households (black points) selected for the parasitaemia and entomological surveys by the Majete Malaria Project (MMP). The base map was obtained from Google Maps.\n\nChikwawa experiences highly variable rainfall during its single rainy season, which spans November/December to April/May. Temperatures are generally high, with daily maximum temperatures in December averaging 37.6\u00b0C, and in July averaging 27.6\u00b0C (Joshua et al., 2016). A wide range of both permanent and temporary water bodies create suitable larval habitats in the region for Anopheles funestus s.s., Anopheles arabiensis, and Anopheles gambiae s.s., including dams, swamps, ponds, borehole runoffs and drainage channels (Gowelo et al., 2020).\n\nMalaria control in the district is implemented through the Chikwawa District Health Office. During the study period, interventions applied throughout the study area included the continuous provision of insecticide-treated nets (ITNs) to pregnant women and children under five years old, mass distribution campaigns of ITNs targeting universal coverage, intermittent preventative therapy for pregnant women, and malaria case diagnosis and treatment with artemisinin-based combination therapy. The only mass distribution of ITNs in the district during the study period occurred in April 2016. As part of the MMP, a randomised trial was conducted to assess the effectiveness of additional, community-implemented malaria interventions between May 2016 and May 2018 (McCann et al., 2017b). The trial interventions were implemented at the village level, with villages assigned to one of four groups: (a) no additional interventions; (b) larval source management; (c) house improvement; and (d) both larval source management and house improvement (McCann et al., 2017b; van den Berg et al., 2018).\n\n### Data\n\nTo quantify PfPR and PfEIR over the course of the study, a rolling malaria indicator survey (rMIS) (Roca-Feltrer et al., 2012) was conducted in conjunction with mosquito sampling, forming a series of repeated cross sectional surveys. Sampling was carried out over 17 rounds, with each round spanning a period of 2 or 3 months. In the first two rounds of data collection (baseline, from April through August 2015), an inhibitory geostatistical sampling design (IGSD) was used to select 300 and 270 households, respectively, for the rMIS from an enumeration database of all households in the catchment area (Chipeta et al., 2017). The IGSD helped to ensure that randomly sampled households are relatively uniformly spaced over the study region by requiring each pair of sampled households to be separated by a distance of at least 0.1 km, which increases the efficiency of hotspot detection (Kabaghe et al., 2017). In the three subsequent rounds of data collection during the baseline, an adaptive geostatistical sampling design (AGSD) was used to select 270 households per round (Chipeta et al., 2016). With AGSD, new households for the current round of rMIS were chosen from regions with high standard errors of estimated prevalence, based on data from all previous rounds. In the baseline period, previously sampled households were not eligible for sampling in subsequent rounds. For the trial period (starting May 2016), IGSD was again used to select households from the enumeration database of all households. All households were eligible for selection in each round of the trial period regardless of whether they were selected in a previous round. At each round of rMIS data collection in the baseline and trial phases, respectively, 75% and 72% of the households chosen at each round of the rMIS were then randomly selected for mosquito sampling.\n\nIn each sampled household, children under five (0.5\u20135 y/o) and women of reproductive age (15\u201349 y/o) were tested for P. falciparum using an RDT (SD BIOLINE Malaria Ag P.f. HRP-II, Standard Diagnostics, Yongin-si, Republic of Korea).\n\nMosquitoes were sampled from 5pm to 7am using Suna traps (Biogents AG, Regensburg, Germany) with MB5 blend plus $C\u2062O_{2}$ to mimic human odour (Hiscox et al., 2014; Mburu et al., 2019). For a selected household in a surveillance round, the trap was set for one night indoors and one night outdoors, with the order of indoor/outdoor determined randomly. For households where the residents were sleeping in more than one building, a trap was set at each building. Trapped female anophelines were preserved using a desiccant and identified using standard morphological and molecular techniques (Gillies and Coetzee, 1987; Koekemoer et al., 2002; Scott et al., 1993). Female anophelines were further tested for the presence of P. falciparum in their head and thorax, after removing the abdomen, using quantitative polymerase chain reaction (qPCR ) (Bass et al., 2008; Perandin et al., 2004). Specimens with a Ct value below 37.0 were considered positive for P. falciparum.\n\n### Environmental and climatic factors\n\nEnvironmental and climatic factors affect the abundance and suitability of water bodies that support the development of immature mosquitoes (Madder et al., 1983; Loetti et al., 2011), the duration of mosquito development (Ciota et al., 2014; Loetti et al., 2011; Craig et al., 1999), mosquito host-seeking and biting behaviour, and the development rate of malaria parasites in mosquitoes (Rumisha et al., 2014; Amek et al., 2011).\n\nUsing hourly measurements of temperature and relative humidity (RH) from a weather station in each focal area, we computed the average temperature and RH for different ranges of days before the day of data collection (Appendix\u00a01\u00a0\u2013\u00a0Procedure for building the HBR, PfSR and PfPR models).\n\nSpectral indices, namely normalised difference vegetation index (NDVI) and enhanced vegetation index (EVI), were computed using remotely sensed multi-spectral imagery from the Landsat 8 satellite. These data are freely available from the United States Geological Survey (USGS) Earth Explorer (earthexplorer.usgs.gov) as raster files at a spatial resolution of 30\u00a0\u00d7\u00a030\u00a0m for every 16 days. For our analysis, we averaged each spectral index over 5 years, from April 2013 to April 2018, while omitting scenes that were dominated by cloud artefacts.\n\nWe extracted raster data of surface elevation from the global digital elevation model (DEM) generated using measurements from the Advanced Space-borne Thermal Emission and Reflection Radiometer (ASTER) (Tachikawa et al., 2011). These data are also freely available for download from the USGS Earth Explorer. Using a flow accumulation map derived from the DEM, a river network map was generated and used to calculate and store as raster images the distance to small rivers and large rivers (henceforth, DSR and DLR, respectively).\n\n### Geostatistical analysis\n\nThe number of mosquitoes trapped by Suna traps can be used to estimate HBR, as these traps primarily target host-seeking mosquitoes. Hence, we first estimated HBR and the P. falciparum sporozoite rate (PfSR). We then estimated PfEIR as the product of these two quantities.\n\nWe carried out separate analyses for A. arabiensis and A. funestus s.s., using explanatory variables and random effects structures that we found to be suitable for each species. Details of the variable selection process and the final sets of explanatory variables for each of the models later described in this section are given in Appendix\u00a01\u00a0\u2013\u00a0Procedure for building the HBR, PfSR, and PfPR models. The correlation structures adopted for the geostatistical models were informed by the variogram-based algorithm described in Giorgi et al., 2018. The geostatistical models for the HBR and PfPR data described below were fitted using PrevMap (Giorgi and Diggle, 2017), freely available from the Comprehensive R Archive Network (CRAN, www.r-project.org). The PfSR models were fitted using the glmm package, also available on CRAN.\n\n#### Human biting rate\n\nLet $Y\u2062(x_{i},t_{i}),i=1,\u2026,M$, where $M=2432$ is the total number of houses, denote counts of mosquitoes trapped at location xi in month $t_{i}\\in{1,\u2026,38}$, where $t_{i}=1$ denotes April 2015. We modelled the $Y\u2062(x_{i},t_{i})$ using Poisson mixed models expressed by the following linear predictor\n\n$$\nlog\u2061{H\u2062B\u2062R\u2062(x_{i},t_{i})}=d\u2062(x_{i},t_{i})^{\u22a4}\u2062\\beta+f\u2062(t_{i};\\alpha)+S\u2062(x_{i})+Z_{i},\n$$\n\nwhere: $d\u2062(x_{i},t_{i})$ is a vector of spatiotemporal explanatory variables with associated regression coefficients \u03b2; the $f\u2062(t_{i};\\alpha)$ is a linear combination of several functions of time, including sines, cosines and splines, with an associated vector of regression parameters \u03b1, accounting for trends and seasonal patterns; the $Z_{i}$ are independent and identically distributed Gaussian random variables with variance $\\tau^{2};\u00a0S(x)$ is a zero-mean stationary and isotropic Gaussian process with variance $\\sigma^{2}$ and exponential correlation function $\u03c1\u2062(u)=exp\u2061(-u/\u03d5)$, where $\u03d5$ regulates the pace at which the spatial correlation decays for increasing distance $u$ between any two locations. We allow the explanatory variables $d\u2062(x_{i},t_{i})$ and $f\u2062(t_{i};\\alpha)$ to differ between different mosquito species since different species may respond differently to environmental changes. We point out that the stationarity of the process $S\u2062(x)$ implies that all of its properties, including the variance ($\\sigma^{2}$) and scale of the spatial correlation ($\u03d5$), are constant over space. The estimation of the model parameters is then carried out using Monte Carlo Maximum Likelihood (Christensen, 2004).\n\n#### Plasmodium falciparum sporozoite rate\n\nLet $Y^{*}\u2062(x_{i},t_{i})$ be the number of mosquitoes that tested positive for the presence of P. falciparum sporozoites. We assumed that the $Y^{*}\u2062(x_{i},t_{i})$ follow a Binomial mixed model with number of trials $N^{*}\u2062(x_{i},t_{i})$, that\u00a0is the total number of successfully tested mosquitoes, and probability of testing positive $P\u2062f\u2062S\u2062R\u2062(x_{i},t_{i})$. We model the latter as a logit-linear regression given by\n\n$$\nlog\u2061{\\frac{P\u2062f\u2062S\u2062R\u2062(x_{i},t_{i})}{1-P\u2062f\u2062S\u2062R\u2062(x_{i},t_{i})}}=d\u2062(x_{i},t_{i})^{\u22a4}\u2062\\beta^{*}+f^{*}\u2062(t_{i};\\alpha^{*})+Z_{i}^{*},\n$$\n\nwhere each term in (2) has an analogous interpretation to those of (1). A spatial process $S\u2062(x)$ was not included in the sporozoite rate model because we found no evidence of residual spatial correlation in the sporozoite rate data\u00a0(Appendix 1\u2014figure 1).\n\n#### Estimating the Plasmodium falciparum entomological inoculation rate\n\nLet $P\u2062f\u2062E\u2062I\u2062R_{f}\u2062(x,t)$ and $P\u2062f\u2062E\u2062I\u2062R_{a}\u2062(x,t)$ denote the PfEIR for A. funestus s.s. and A. arabiensis at a given location $x$ and month $t$. We estimated each of these two as\n\n$$\nPfEIR_{f}(x,t)=HBR_{f}(x,t)PfSR_{f}(x,t)l(t)PfEIR_{a}(x,t)=HBR_{a}(x,t)PfSR_{a}(x,t)l(t),\n$$\n\nwhere $l\u2062(t)$ is the number of days in month $t$. Finally, we estimated the overall PfEIR as\n\n$$\nP\u2062f\u2062E\u2062I\u2062R\u2062(x,t)=P\u2062f\u2062E\u2062I\u2062R_{f}\u2062(x,t)+P\u2062f\u2062E\u2062I\u2062R_{a}\u2062(x,t).\n$$\n\nWe then mapped PfEIR as in (3) over a 30\u00a0\u00d7\u00a030\u00a0m regular grid covering the whole of the study area for each month across 38 months.\n\nTo map PfEIR for each month, we first simulate at each prediction location (i.e. the centroid of each grid cell) 10,000 samples from the conditional distribution of the random effects (corresponding to $S\u2062(x)+Z$ in the case of the PfHBR and $Z$ in the case of PfSR) given the data. We then transform these to obtain 10,000 predicted surfaces for PfHBR and PfSR, and by applying (3) we obtain 10,000 predictive samples for PfEIR. The predicted PfEIR at each prediction location is taken to be the median of the 10,000 samples at that location. The associated 95% predictive interval is the 2.5th to 97.5th percentile of the 10,000 predictive samples.\n\nIn this procedure, all the parameters corresponding to the regression coefficients, the scale and variance of the spatial process, and variance of Gaussian noise are fixed at their MCML estimates.\n\n#### Plasmodium falciparum prevalence\n\nWe mapped PfPR in women and in children by fitting a geostatistical model to each group. More specifically, let $I\u2062(x_{i},t_{i})$ denote the number of RDT positives out of $N_{i\u2062t}$ sampled individuals at location xi in month ti. We then assumed that the $I\u2062(x_{i},t_{i})$ follow a Binomial mixed model with probability of a positive RDT result $p\u2062(x_{i},t_{i})$, such that\u00a0\n\n$$\nlog\u2061{\\frac{p\u2062(x_{i},t_{i})}{1-p\u2062(x_{i},t_{i})}}=d\u2062(x_{i},t_{i})^{\u22a4}\u2062\\phi+g\u2062(t_{i};\u03f1)+T\u2062(x_{i})+U_{i},\n$$\n\nwhere $T\u2062(x_{i})$ is a stationary and isotropic Gaussian process with exponential correlation function and $U_{i}$ are Gaussian noise, $g\u2062(t_{i},\u03f1)$ is a linear combination of splines, and sine and cosine functions of time accounting for trends and seasonality, and \u03c6 and $\u03f1$ are vectors of regression parameters to be estimated.\n\n#### Hotspot detection using PfEIR and PfPR\n\nWe demarcated hotspots for PfEIR and PfPR using an exceedance probability approach. Using the resulting 10,000 predictive samples for PfEIR and PfPR, as described above, we then obtained the exceedance probability for each outcome at each space-time location by computing the proportion of the 10,000 predictive samples that exceeded the respective, predefined thresholds, which were set at 0.1 ib/person/month for EIR, 31% for PfPR in children, and 17% for PfPR in women. Finally, we mapped these exceedance probabilities and demarcated hotspots as areas where these probabilities were at least 0.9. The PfPR thresholds were defined to correspond to the PfEIR threshold based on the best of six functional relationships between PfEIR and PfPR as described in the next section.\n\n### Modelling the relationship between PfEIR and PfPR\n\nBecause PfEIR may have a delayed effect on PfPR, possibly due to the time taken for P. falciparum to develop in the human host, we considered that current PfPR may depend on PfEIR $l$ months prior. In particular, we considered $l=0,1,2$. We then assumed that the number of RDT positive individuals, $I\u2062(x_{i},t_{i})$, follow independent Binomial distributions such that\n\n$$\nP\u2062f\u2062P\u2062R\u2062(x_{i},t_{i})=h\u2062{P\u2062f\u2062E\u2062I\u2062R^\u2062(x_{i},t_{i}-l)},\n$$\n\nwhere $h\u2062(\u22c5)$ is a function depending on a vector of parameters \u03b8 that governs the relationship between PfPR and PfEIR, and $P\u2062f\u2062E\u2062I\u2062R^\u2062(x_{i},t_{i}-l)$ is the estimated PfEIR as in Equation (3). We considered six models, each of which provided a different specification for $h\u2062(\u22c5)$.\n\nWe now describe the six models for $h\u2062(\u22c5)$. Models 1 to 4 make explicit assumptions on the underlying mechanism of transmission, whereas models 5 and 6 describe the functional relationship between PfEIR and PfPR through regression methods.\n\n#### Model 1: The susceptible-infected-susceptible (SIS) model\n\nLet $b$ be the probability that an infectious mosquito bite results in an infection, referred to as the transmission efficiency. Then, infections at $(x_{i},t_{i}-l)$ are assessed to occur at a rate of $b\\timesP\u2062f\u2062E\u2062I\u2062R\u2062(x_{i},t_{i}-l)$. We assumed that each infection cleared independently over a duration $1/r$ so that the ratio $\\gamma=b/r$ is the time taken to clear infection per infectious bite. We assumed that the relationship between PfEIR and PfPR holds throughout the study region. If $P\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)$ is constant, the relationship between $P\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)$ and $P\u2062f\u2062P\u2062R\u2062(x,t)$ is described by Ross, 1911\n\n$$\n\\frac{\\partial\u2061P\u2062f\u2062P\u2062R\u2062(x,t)}{\\partial\u2061t}=b\\timesP\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)\u2062(1-P\u2062f\u2062P\u2062R\u2062(x,t))-r\\timesP\u2062f\u2062P\u2062R\u2062(x,t).\n$$\n\nWe obtained our first model as the non-zero equilibrium solution of (6), given by\n\n$$\nP\u2062f\u2062P\u2062R\u2062(x,t)=\\frac{\\gamma\u2062P\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)}{\\gamma\u2062P\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)+1}.\n$$\n\n#### Model 2: The SIS model with different infection/recovery rates (D.I/R)\n\nModel 1 assumes that women and children get infected and recover at the same rate. However, the transmission and recovery rates in children may differ from those in women. We, therefore, modified Model 1 by allowing different values of $b$ and $r$ for each category of people. Let $\u03be_{1,i\u2062t}$ and $\u03be_{2,i\u2062t}$ respectively be the proportion of children and women sampled at $(x_{i},t_{i})$ and $\\gamma_{k}=b_{k}/r_{k}$, where $k=1$ denotes children and $k=2$ denotes women. The resulting Model 2 is\n\n$$\nP\u2062f\u2062P\u2062R\u2062(x,t)=\\sumk=12\u03be_{k,i\u2062t}\u2062\\frac{\\gamma_{k}\u2062P\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)}{\\gamma_{k}\u2062P\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)+1}.\n$$\n\n#### Model 3: The SIS model with superinfection (S.I.)\n\nIf individuals are super-infected with P. falciparum, then the rate at which infections clear depends on the infection rate, with clearance being faster when infection rate is low, and slower when infection rate is high. To capture this feature, we modelled infection clearance rate as $g\u2062(\u03d1,r)=\u03d1/(e^{\u03d1/r}-1)$, where $\u03d1=b\\timesP\u2062f\u2062E\u2062I\u2062R$(Smith et al., 2005; Walton, 1947; Dietz et al., 1974; Aron and May, 1982). The resulting model for $P\u2062f\u2062P\u2062R\u2062(x,t)$ is\n\n$$\nP\u2062f\u2062P\u2062R\u2062(x,t)=1-exp\u2061{-\\gamma\u2062P\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)}\n$$\n\n#### Model 4: The SIS model with S.I and D.I/R\n\nCombining the assumptions of heterogeneous infection/recovery rates, as in Model 2 and superinfection, as in Model 3, we obtain Model 4,\n\n$$\nP\u2062f\u2062P\u2062R\u2062(x,t)=\\sumk=12\u03be_{k,i\u2062t}\u2062(1-exp\u2061{-\\gamma_{k}\u2062P\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)}).\n$$\n\n#### Model 5: The Beier model\n\nBeier et al., 1999 assumed that the log of PfEIR is linearly related to PfPR, and fitted the regression model\n\n$$\nP\u2062f\u2062P\u2062R\u2062(x,t)=a+b\u2062log\u2061(P\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)),\n$$\n\nthe so called \u2018log-linear model\u2019.\n\n#### Model 6: The logit-linear model\n\nThe Beier model has the limitation that PfPR approaches $-\u221e$ as PfEIR goes to 0 and approaches $\u221e$ as PfEIR goes to $\u221e$. To constrain PfPR to lie between 0 and 1, we applied the logit-link function to PfPR to give Model 6,\u00a0\n\n$$\nlog\u2061(\\frac{P\u2062f\u2062P\u2062R\u2062(x,t)}{1-P\u2062f\u2062P\u2062R\u2062(x,t)})=a+b\u2062log\u2061(P\u2062f\u2062E\u2062I\u2062R\u2062(x,t-l)).\n$$\n\n#### Parameter estimation of the PfEIR-PfPR relationship models\n\nWe estimated the parameters of each of the six models by maximising the log-likelihood function\n\n$$\n\\sumt_{i}\\sumx_{i}I\u2062(x_{i},t_{i})\u2062log\u2061(P\u2062f\u2062P\u2062R\u2062(x_{i},t_{i}))+(N_{i\u2062t}-I\u2062(x_{i},t_{i}))\u2062log\u2061(1-P\u2062f\u2062P\u2062R\u2062(x_{i},t_{i})).\n$$\n\nTo fit each model, we first obtained 10,000 bootstrapped data sets of predicted PfEIR as in (3) at the set of all space-time locations sampled for the rMIS. We did this for two reasons: to obtain PfEIR data at locations $(x_{i},t_{i})$ that were sampled for rMIS but not for the entomological surveillance; and to account for the uncertainty in PfEIR. The predicted PfEIR values were then paired with respective empirical PfPR values at $(x_{i},t_{i})$. By fitting each model to each of the 10,000 datasets, we then obtained 10,000 bootstrapped samples ${\\theta^_{1},\u2026,\\theta^_{10000}}$ for the vector of parameter estimates $\\theta^$ of each the six candidate models. We then summarised these samples by their mean and central 95% probability interval. We repeated this process for $l=0,1,2$.\n\nWe compared the fit of the six models based on their predictive ability as measured by the bias and root-mean-square error when each model is used to predict prevalence at all the observed space-time locations.\n\n## Results\n\n### rMIS and mosquito sampling\n\nFrom April 2015 to May 2018, a total of 6870 traps (3439 indoors; 3431 outdoors) were placed at 2432 houses over 17 rounds of sampling (Figure 2), resulting in the collection of 657 female Anopheles mosquitoes (Table 1). Following PCR of the 478 A. gambiae s.l. collected, 92% were identified as A. arabiensis, 2% as A. gambiae s.s., 1% as A. quadriannulatus, and 5% could not be identified further. From the 179 A. funestus s.l. collected, 95% were identified as A. funestus s.s. by PCR, while the remaining 5% could not be identified further. The observed vector composition is therefore 71%, 27%, and 2% for A. arabiensis, A. funestus s.s., and A. gambiae s.s., respectively.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65682/elife-65682-fig2-v1.jpg)\n\n**Figure 2.:** The top panel shows the number of houses where Suna traps were set, and the bottom panel shows the number of participants in the rMIS.\n\n**Table 1.**\n Details of Anopheles female mosquitoes collected.The table shows the observed numbers collected indoors and outdoors, the HBR (number collected per trap multiplied by the number of days in each of the 38 months of sampling), PfSR and PfEIR for the Anopheles species sampled.Table 1\u2014source data 1.Source data of the details of Anopheles\u00a0female\u00a0mosquitoes\u00a0collected.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>Number</th>\n      <th>Number</th>\n      <th>Empirical</th>\n      <th>Empirical</th>\n      <th>Empirical</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Collected</th>\n      <th>Collected</th>\n      <th>HBR</th>\n      <th>PfSR</th>\n      <th>PfEIR</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Indoors</th>\n      <th>Outdoors</th>\n      <th>(bite/person)</th>\n      <th>%</th>\n      <th>(ib/person)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>A. arabiensis</td>\n      <td>175</td>\n      <td>263</td>\n      <td>73.66</td>\n      <td>5.48%</td>\n      <td>4.04</td>\n    </tr>\n    <tr>\n      <td>A. funestus s.s.</td>\n      <td>74</td>\n      <td>96</td>\n      <td>28.58</td>\n      <td>11.17%</td>\n      <td>3.19</td>\n    </tr>\n    <tr>\n      <td>A. gambiae s.s.</td>\n      <td>5</td>\n      <td>6</td>\n      <td>1.85</td>\n      <td>18.18%</td>\n      <td>0.34</td>\n    </tr>\n    <tr>\n      <td>A. quadriannulatus</td>\n      <td>1</td>\n      <td>3</td>\n      <td>0.67</td>\n      <td>0.00%</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td>A. gambiae s.l.*</td>\n      <td>12</td>\n      <td>13</td>\n      <td>4.20</td>\n      <td>12.00%</td>\n      <td>0.50</td>\n    </tr>\n    <tr>\n      <td>A. funestus s.l.**</td>\n      <td>4</td>\n      <td>5</td>\n      <td>1.51</td>\n      <td>11.11%</td>\n      <td>0.17</td>\n    </tr>\n    <tr>\n      <td>TOTAL</td>\n      <td>271</td>\n      <td>386</td>\n      <td>110.47</td>\n      <td></td>\n      <td>8.24</td>\n    </tr>\n  </tbody>\n</table>\n\n_A. gambiae s.l. * and A. funestus s.l. ** are Anopheles female mosquitoes morphologically identified as belonging to the A. gambiae species complex and A. funestus species group, respectively, but which could not be further identified by PCR. The unit of EIR is infective bites per person over the course of the study (38 months)._\n\nDespite the relatively low abundance of A. funestus s.s. compared to A. arabiensis, the higher sporozoite rate of the former made the contribution of A. funestus s.s. to the total PfEIR almost equivalent to that of A. arabiensis (Table 1). The total PfEIR for the 38 months was 8.24 ib/person, equivalent to an average 2.60 ib/person/year.\n\nOver the same 38-month period, 5685 individual P. falciparum RDT tests were conducted across 3096 household visits (Figure 2). Among the 2401 tests conducted on children aged 6 to 59 months, 25.5% were positive, while 14.3% of the 3284 tests conducted on women aged 15\u201349 y/o were positive.\n\n### Spatiotemporal patterns of PfEIR and PfPR\n\nWe observed clear spatiotemporal heterogeneities in PfEIR, PfPR in children, and PfPR in women when mapped across the study region at a fine spatial resolution (30 x 30 m) and 1 month intervals. For convenient visualisation of the main features of the spatiotemporal maps, we have developed an interactive web-based application to show the maps at http://chicas.lancaster-university.uk/projects/malaria_in_malawi/pfpr/. We show selected predictive maps of PfEIR and PfPR in Figure 3 and exceedance probability of PfEIR and PfPR in Figure 4 for June 2015, August 2016 and November 2017, which are representative of high, medium and low transmission months, relative to the full study period. Spatially, there were differences both within and between the three focal areas. Focal Area A generally showed the lowest PfEIR and PfPR, while Focal Areas B and C showed similar, higher levels of PfEIR. Within each focal area, the spatial patterns changed from month to month, with hotspots of both PfEIR and PfPR proceeding through seasonal cycles of expansion and retraction over time. Over the 3-year study period, hotspots of PfEIR and PfPR generally disappeared during the low transmission seasons, except for residual hotspots of PfPR that persisted throughout the study period.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65682/elife-65682-fig3-v1.jpg)\n\n**Figure 3.:** Left panels: median P. falciparum entomological inoculation rate (PfEIR). Centre panel: mean P. falciparum parasite prevalence (PfPR) in children 0.5\u20135 y/o. Right panel: mean PfPR in women 15\u201349 y/o.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65682/elife-65682-fig4-v1.jpg)\n\n**Figure 4.:** Left panels: probability that PfEIR exceeds 0.1 infective bites/person/month. Centre panels: probability that PfPR in children 0.5\u20135 y/o exceeds 31%. Right panels: probability that PfPR in women 15\u201349 y/o exceeds 17%. Red areas demarcate hotspots, which we define as an exceedance probability at least 0.9.\n\nWhen summarised over the whole study region, each of PfPR and PfEIR exhibited seasonal patterns with a single annual peak. The monthly predicted PfEIRs and PfPRs were similar to the observed values (Figure 5). PfEIR increased from November to a peak in May and decreased to a trough in November. PfPR started increasing from December to a peak around July, after which it decreased to a trough between November/December.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65682/elife-65682-fig5-v1.jpg)\n\n**Figure 5.:** The plot shows monthly median PfEIR (a), mean PfPR in children 0.5\u20135 y/o (b) and mean PfPR in women 15\u201349 y/o (c), over the study region. The round points are the observed data and the triangular points are the predictions from our models. The shaded regions represent the corresponding 95% confidence interval of the predicted values. The confidence intervals were obtained by simulating 10,000 samples of the respective metric under the respective fitted model.\n\nThree observations are clear from both the spatiotemporal maps and the monthly summarised data (Figure 5). First, children aged 6\u201359 months consistently had a higher level of PfPR than women throughout the study period. Second, PfPR in both groups generally decreased from the start of the study in April 2015 to December 2016, after which there was a general trend of increasing PfPR in both age groups. Finally, PfEIR was steady in the first 2 years of the study, followed by a general decrease after May 2016. Strikingly, the observed PfEIR was 0 between June 2017 and the end of the study, while the PfPR increased in both children and women between November 2017 and May 2018.\n\n### The relationship between PfEIR and PfPR\n\nTemporally, the seasonal patterns of PfEIR and PfPR within each year were nearly concurrent, with the estimated peak in PfEIR preceding that of PfPR by one month (Figure 5).\n\nSpatially, PfEIR and PfPR showed broadly similar patterns. When comparing the hotspots of PfEIR and PfPR using spatiotemporal maps of exceedance probabilities, the hotspots of PfEIR and PfPR partly overlapped during the high transmission season (http://chicas.lancaster-university.uk/projects/malaria_in_malawi/pfpr/). However, there were hotspots of PfEIR that were not necessarily hotspots of PfPR and vice versa (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65682/elife-65682-fig6-v1.jpg)\n\n**Figure 6.:** The solid (red) line shows hotspots identified by both PfPR and PfEIR. The long dashed (blue) line shows hotspots identified uniquely by PfPR whilst the short dashed (green) line shows hotspot uniquely identified by PfEIR.\n\nScatter plots of the logit of PfPR against the log of PfEIR show an approximately direct linear relationship (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/65682/elife-65682-fig7-v1.jpg)\n\n**Figure 7.:** Each point represents a focal area and a month where there was empirical data for PfPR (n=100). PfEIR is the median (model-based predicted) PfEIR over the focal area. Prevalence is the average empirical prevalence over the focal area, with children and women put together. The shaded regions represent the corresponding 95% confidence region. The confidence region was obtain from 10,000 predictive samples where each sample was obtained by plugging in one of the bootstrap samples parameter estimate into the logit-linear model.\n\nFor each of the six classes of model, those with a 1-month lagged-effect were found to be the best based on the root-mean-square-error (RMSE) and bias indices of predictive performance. Among these, the empirical models (i.e. logit-linear and Beier) yielded lower values for the bias and RMSE values than the mechanistic models (Appendix 1 \u2013 Procedure for building the HBR, PfSR, and PfPR models, Appendix 1\u2014table 6). The logit-linear model, albeit by a small margin, outperformed all the models (Appendix 1 \u2013 Procedure for building the HBR, PfSR, and PfPR models, Appendix 1\u2014table 6).\n\nThe fitted logit-linear model (Figure 8) shows that PfPR rises quickly with increasing PfEIR at very low PfEIR, followed by a flattening off or saturation. From the estimated relationship for women and children combined (Figure 8a), a decrease in PfEIR from 1 ib/person/month to 0.85 ib/person/month (i.e. a 0.15 decrease in PfEIR) is associated with a reduction in PfPR from 27.17% to 26.85% on average (i.e. a 1.18% decrease in PfPR). However, at the lower ranges of EIR, the same decrease of 0.15 ib/person/month from 0.2 ib/person/month to 0.05 ib/person/month is associated with a reduction in PfPR from 24.10% to 21.66% on average (i.e. a 10.13% decrease in PfPR). The resulting non-linear reltionship emphasizes two aspect of the PfPR-PfEIR relationship. First, for large values in PfEIR, reductions in PfEIR are associated with smaller reductions in PfPR, whilst if PfEIR is low, reductions in PfEIR are associated with greater reductions in PfPR. Second, even when transmission, as measured by PfEIR, has been driven close to zero, PfPR can still remain substantial.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/65682/elife-65682-fig8-v1.jpg)\n\n**Figure 8.:** The solid lines are the estimated relationships and the shaded areas are the associated 95% confidence region for children and women combined (a) and for children and women separately (b). The shaded regions represent the corresponding 95% confidence region. The confidence regions were obtain from 10,000 predictive samples where each sample was obtained by plugging in one of the bootstrap samples parameter estimate into the logit-linear model.\n\nAn indication of possible differences in the PfEIR\u2013PfPR relationship between children and women lies in the logit-linear model fitted to children and women separately (Figure 8b). The average trajectories of PfPR and corresponding 95% confidence intervals with varying PfEIR are distinct for women and children. PfPR in children tends to show a steeper rise with increasing PfEIR than in women. From the estimated relationship for children, a decrease in PfEIR from 0.1 ib/person/month to 0.01 ib/person/month is associated with a reduction in PfPR from 31.07% to 25.52% on average (i.e. a 17.86% decrease in PfPR). From the estimated relationship for women, the same decrease in PfEIR is associated with a reduction in PfPR from 16.84% to 14.33% (i.e. a 14.90% decrease in PfPR) on average. We make two observations. (1) With decreasing PfEIR, the percentage reduction in PfPR achieved in children tends to be higher than in women. (2) When transmission has been driven almost to zero, PfPR remains consistently high in children.\n\n## Discussion\n\nUsing data from 38 months of repeated cross-sectional surveys, we have mapped the fine-scale spatiotemporal dynamics of PfEIR and PfPR in a region of Malawi with moderately intense, seasonally variable malaria parasite transmission. We found evident spatial heterogeneity in both PfEIR and PfPR, with areas of higher PfEIR and PfPR expanding and contracting over time. We also found that hotspots of PfEIR and hotspots of PfPR overlapped at times, but the amount of overlap varied over time. Finally, we showed that month-to-month variations in PfEIR over the study period are strongly associated with changes in PfPR. These findings highlight the dynamic nature of malaria parasite transmission and underscore the value of monitoring both PfEIR and PfPR at fine spatial and temporal resolutions.\n\nIn this study, we used model-based geostatistics (Diggle and Giorgi, 2019) to analyse repeated cross-sectional data with a unique sampling framework (Roca-Feltrer et al., 2012; Kabaghe et al., 2017) and estimate the fine-scale spatial patterns of PfEIR and PfPR across our study site at monthly intervals. This approach was essential for identifying hotspots of PfEIR and PfPR through the use of exceedance probabilities, because it allowed us to acknowledge the effects of unmeasured malaria risk factors on each metric through the inclusion of spatially structured random variations. Consequently, we were able to directly compare the spatial patterns of PfEIR and PfPR over an extended period of time in a single geographical region. As expected, there were hotspots identified by each of the two metrics of malaria transmission risk, which expanded and retracted over time. However, the hotspots of PfEIR and PfPR only partially overlapped, with the most substantial amount of overlap observed during the high transmission seasons. Within-village and between-village spatial heterogeneities of malaria parasite transmission are well documented across many sites (Greenwood, 1989; Thompson et al., 1997; Amek et al., 2012; Mwandagalirwa et al., 2017), but few previous studies have compared the spatial distributions of different transmission metrics in the same site (but see Stresman et al., 2017). Given that all available metrics of malaria parasite transmission have their own strengths and weaknesses (Tusting et al., 2014), our findings suggest that monitoring multiple transmission metrics, each aligned with widely separated steps of the parasite transmission cycle, provides a more complete understanding of the underlying spatial heterogeneity in malaria parasite transmission (Cohen et al., 2017). Furthermore, monitoring multiple metrics may provide an opportunity to optimise the impact of control activities by targeting different control activities to different locations based on differences in the metrics (Cohen et al., 2017). For example, areas with higher transmission risk according to an entomological metric (e.g. PfEIR) than a measure of the potential transmission reservoir (e.g. PfPR) may indicate a need for increased vector control, whereas areas with lower PfEIR and higher PfPR may indicate a need for increased treatment of malaria parasite infections.\n\nOur geostatistical modelling approach also provided a principled framework for estimating PfEIR in our study, allowing us to robustly investigate the PfEIR-PfPR relationship despite the low mosquito densities observed in this region. Previous studies Beier et al., 1999; Smith et al., 2005 have estimated the relationship between PfEIR and PfPR using paired estimates of these metrics from several sites throughout Africa, characterised by a wide range of transmission intensities (PfEIR <1 to >500 ib/person/year). These studies demonstrated that small changes in PfEIR are associated with large changes in PfPR when PfEIR is low, for\u00a0example below about 15 ib/person/year (Beier et al., 1999). However, estimating PfEIR in settings with low mosquito density is challenging because the accuracy and precision of PfEIR depend on the accuracy and precision of the human biting rates and sprorozite rates used to calculate PfEIR (Tusting et al., 2014). We overcame these challenges by using model-based geostatistics to improve the precision of our PfEIR estimates and, just as importantly, used bootstrap procedures to propagate the uncertainty from each modelling step to the next. Altogether, these methods allowed us to investigate the PfEIR-PfPR relationship with a focus on much lower ranges of PfEIR than previous studies.\n\nAn additional advantage of using geostatistical models in this study was the prediction of entomological data at unsampled geographical locations. For a number of logistical reasons (e.g. mosquito sampling was conducted over 2 consecutive nights at each sampled location), we sampled for mosquitoes at roughly 75% of the locations visited for parasitaemia sampling in each round. For the geographical locations where empirical parasitaemia data were available but entomological data were not, our geostatistical model predictions of PfEIR were combined with the empirical PfPR data. This rigorous statistical solution enriched the data used in our assessment of the PfEIR-PfPR relationship.\n\nPrior to our study, the most recent assessment of PfEIR in this district of Malawi was from 2002, with an estimated annual PfEIR of 183 ib/person/year (Mzilahowa et al., 2012). The drastic reduction in annual PfEIR since then to an estimated 2.60 ib/person/year in our study is likely due, at least in part, to an increase in the use of ITNs and ACTs as observed elsewhere (Bayoh et al., 2010; Mwangangi et al., 2013). Nationwide, use of ITNs by children under 5 years old in Malawi has increased from nil in 2000 and 14.8% in 2004 (Mathanga et al., 2012) to 67.8% in 2014 (Malawi National Malaria Control Programme and ICF International, 2014). Treatment for malaria in Malawi switched from sulfadoxine\u2013pyrimethamine to ACT with artemether\u2013lumefantrine in 2007 (Mathanga et al., 2012), and by 2014, 39.3% of children under five reporting a fever had taken ACT (Malawi National Malaria Control Programme and ICF International, 2014). In addition to these long-term, nationwide trends, changes in malaria intervention coverage over time also likely impacted malaria parasite transmission in the more specific context of our study. Mass distributions of ITNs took place across Malawi in 2012 (World Health Organization, 2013), that\u00a0is about 3 years prior to our study, and again in April 2016, that\u00a0is, 1 year into our 38-month study. Additionally, randomly selected villages in our study site implemented community-led larval source management, house improvement, or both as part of a randomised trial between May 2016 and May 2018 (McCann et al., 2017b; van den Berg et al., 2018). Although no differences in PfEIR or PfPR were observed between the trial arms (McCann et al., 2021), the entire study site, including the trial\u2019s control arm, was included in the 2016 mass ITN distribution, as well as other National Malaria Control Programme interventions and a community engagement programme as part of the Majete Malaria Project (McCann et al., 2017b; van den Berg et al., 2018). Therefore, the changes in PfEIR and PfPR over time observed in this study reflect the combined effects of seasonal weather patterns, year-to-year climatic variation and all malaria control activities.\n\nWithin this context of observing month-to-month changes in both PfEIR and PfPR in a single geographical region, we have demonstrated that fluctuations in PfEIR over short periods are associated with predictable changes in PfPR in the same region. We found that a logit-linear model explained the PfEIR-PfPR relationship better than any of the other five model classes examined, and our data better supported a one-month delayed effect of PfEIR on PfPR than no delayed effect or a 2-month delayed effect. The one-month delayed effect is likely due to the incubation period of the parasite (Ruan et al., 2008) and the duration of infections (Felger et al., 2012). As shown in previous studies (Beier et al., 1999; Smith et al., 2005), we observed that small changes in PfEIR led to relatively large changes in PfPR at lower ranges of PfEIR, while PfPR saturated rather than changing at a constant rate at higher ranges of PfEIR. These previous studies were based on estimates of PfEIR and PfPR from 31 locations (Beier et al., 1999) and more than 90 locations (Smith et al., 2005) representing a wide range of PfEIR and PfPR in Africa. By assuming that the PfEIR-PfPR relationship is constant across space on a continental scale, results from these previous studies suggested that variation between PfEIR and PfPR across geographical location is representative of variation between PfEIR and PfPR over time. In our study, we explicitly confirmed this association between PfEIR and PfPR within a single location. Whilst we also assumed that the PfEIR-PfPR relationship does not change dynamically across space and time, we believe this to be a realistic assumption for the restricted geographical setting of our study.\n\nThe saturation in PfPR with increasing PfEIR may be explained by several factors, which are not mutually exclusive. One set of factors relates to people being heterogeneously exposed to vectors (Guelb\u00e9ogo et al., 2018) because of differences in attractiveness (Knols et al., 1995; Qiu et al., 2006), behaviour (Sherrard-Smith et al., 2019; Finda et al., 2019), access to ITNs (Bhatt et al., 2015b), housing design (Tusting et al., 2015; Tusting et al., 2017), or the spatial distribution of vector habitat (McCann et al., 2017a), so that as PfEIR increases, it is more likely that infectious vectors are biting already infected individuals (Smith et al., 2007b; Smith et al., 2010). The second set of factors relates to inter-individual variation in acquired immunity, which in some individuals may prevent vector-inoculated sporozoites from progressing to blood-stage infection (John et al., 2005; Offeddu et al., 2017), keep blood-stage infections at densities lower than the level of detection (Doolan et al., 2009) (about 50\u2013200 parasites/\u00b5l for RDTs as used in our study), or increase the rate at which blood-stage infections are cleared (Hviid et al., 2015).\n\nRegardless of the underlying factors driving the PfEIR-PfPR relationship, our results have practical implications for the selection and interpretation of malaria parasite transmission metrics. In settings with higher ranges of PfEIR, moderate changes in PfEIR will not be associated with appreciable changes in PfPR (Beier et al., 1999; Smith et al., 2005; Churcher et al., 2015). Framed in terms of a public health goal to decrease PfPR in these settings with high baseline PfEIR, relatively large reductions in PfEIR would be required to achieve appreciable reductions in PfPR. In terms of selecting an appropriate metric for monitoring changes in transmission in these same high-PfEIR settings, PfPR may only be suitable for measuring very large changes in transmission.\n\nConversely, in settings with a lower range of PfEIR, our results show that PfPR is sensitive to smaller, short-term changes in malaria parasite transmission. This finding highlights the importance of sustaining vector control efforts in settings with relatively low PfEIR, because a small increase in the rate of infectious bites (PfEIR) could result in a rapid increase in the proportion of people infected (PfPR). This sensitivity of PfPR to short-term changes in parasite transmission, when PfEIR is low, also confirms that PfPR can be used for monitoring changes in the intensity of parasite transmission linked to either environmental conditions or the effects of malaria interventions. However, this sensitivity of PfPR in these settings suggests that annual cross-sectional surveys aiming for a transmission peak are more likely to miss the actual peak than in settings with higher parasite transmission intensity, as shown previously by others (Kang et al., 2018). National malaria control programs and others planning malaria indicator surveys to measure year-to-year variation in PfPR should therefore consider approaches to identify and account for any potential bias in PfPR estimates from a single time point, for\u00a0example incorporating continuous or \u2018rolling\u2019 surveys at sentinel sites (Roca-Feltrer et al., 2012; Kabaghe et al., 2017), monitoring \u2018easy-access groups\u2019 (Sesay et al., 2017), or modelling sub-annual trends based on health facility data (Sturrock et al., 2014; Awine et al., 2018). These considerations likely apply to settings where increasing coverage of ITNs (Bhatt et al., 2015a) and ACTs (Bennett et al., 2017) has reduced PfPR from \u226550% (i.e. holo- and hyperendemic [Hay et al., 2008]) to between 10\u201350% (i.e. mesoendemic), which have become increasingly common over the last 20 years (Weiss et al., 2019).\n\nThe monthly PfEIR in our study region was 0 ib/person/month in multiple months. This likely indicates that the number of infectious bites received per person during these months was below the level of detection, rather than an actual interruption of transmission during those months, especially in the first 2 years of the study when these periods only lasted 2\u20133 months. Our finding that a monthly PfEIR near or equal to zero is associated with substantial PfPR is, therefore, unsurprising given that previous studies have had similar findings when comparing annual PfEIR to PfPR (Kabiru, 1994; Mbogo et al., 1995; Beier et al., 1999; Smith et al., 2005). On the other hand, we observed an increase in PfPR from about November 2017 to May 2018 while PfEIR remained at zero. It remains unclear whether this rise in PfPR was due to new infectious bites that nevertheless remained below the level of detection or to previously infected individuals with parasite densities that increased to detectable levels (Drakeley et al., 2018). Either way, this result shows that a rise in PfPR may be observed even when PfEIR cannot be detected by current methods, and, therefore, both interventions and monitoring need to continue for some time after PfEIR has not been detected. Our results also highlight the importance of monitoring additional metrics of parasite transmission (in addition to PfEIR) when the annual PfEIR is <10 ib/person/year, especially when expecting a reduction in transmission as in the case of testing malaria interventions. Nonetheless, when PfEIR is above the level of detection, it provides information about the vector species involved in transmission, which is critical because different mosquito species may respond differently to vector control interventions (Ferguson et al., 2010; Wilson et al., 2020).\n\nWe observed a consistently higher PfPR in children 0.5\u20135 y/o than in women 15\u201349 y/o throughout the study region and study period, as expected. The extent of difference in PfPR between children and adults for a given region generally increases with parasite transmission intensity. However, even in mesoendemic settings (PfPR between 10\u201350%), it is common for PfPR in children to be appreciably higher than in adults (Smith et al., 2007a). This pattern is due to increasing acquired immunity with increased exposure to malaria parasites over time (Baird, 1995), which may decrease transmission efficiency and time to clear a P. falciparum infection in adults compared to children (see Appendix 1 \u2013 Procedure for building the HBR, PfSR, and PfPR models, Appendix 1\u2014table 6 and Smith et al., 2005). Moreover, the higher PfPR in children than adults, even at the lowest levels of transmission, suggests that children may play a more significant role in transmission, consistent with other studies (Walldorf et al., 2015; Ou\u00e9draogo et al., 2016).\n\nAlthough the functional form of our best fitting PfEIR-PfPR model matches that of previous studies (Beier et al., 1999; Smith et al., 2005), the estimated values of PfPR as a function of PfEIR show non-negligible differences. For example, based on our best model, a 0.15 ib/person/month decrease in PfEIR from 0.2 to 0.05 ib/person/month leads to a decrease in PfPR from 24.10% to 21.66% on average, a reduction of about 10.13%. In Beier et al., 1999, instead, the same decrease in PfEIR corresponds to a decrease in PfPR from 33.88% to 19.31%, a reduction of about 43.00%, whilst in the case of the best model of Smith et al., 2005, that yields a decrease in PfPR from 33.46% to 16.51%, a reduction of about 50.66%. One possible reason for these differences is that our study focuses on a geographically limited area where lower values in PfEIR are observed. Secondly, both previous studies excluded data from sites reporting mosquito control activities whilst our study site included multiple interventions. Finally, another important difference with our study is that, our focus was on a relatively small sub-national area of Malawi, whereas Beier et al., 1999 and Smith et al., 2005 used data from across Africa and implicitly assumed that the properties of the PfEIR-PfPR relationship do not vary over such continental scale.\n\nIn this study, the empirical PfPR was used as the response variables of six different statistical models, while the modelled PfEIR from a geostatistical model was used as the independent variable in each of the six models. As shown in this paper, this approach has two main advantages: (1) it allowed us to develop a bootstrap procedure for propagating the uncertainty arising from the estimates of PfEIR into the PfPR-PfEIR relationship; (2) it allowed us to avoid the generation of spurious correlations in the estimation of the PfPR-PfEIR relationship. The risk of spurious correlation may in fact occur when using approaches that are based on the estimates of both PfPR and PfEIR, which are obtained from statistical models informed by the same set of covariates.\n\nOne limitation of this study was that the six PfEIR-PfPR models do not allow for overdispersion in the estimation of the PfEIR-PfPR relationship. However, the use of standard Binomial likelihoods still delivers unbiased estimates of the functional relationship between PfEIR and PfPR, even in the presence of overdispersion (Godambe and Kale, 1991). Furthermore, given that the uncertainty around the PfPR-PfEIR relationship is mainly driven by the predictive distribution of PfEIR, which we account for through our bootstrap procedure, we do not expect overdispersion to have non-negigible influence on the parameter estimates. Finally, the development of models that allow for overdispersion may be achieved in several different ways, for example, by modelling the parameters that modulate the PfEIR-PfPR relationship as stochastic processes. However, these approaches would require a larger amount of data than those available in this study and should be the subject of future research.\n\nA second limitation was the use of RDTs to estimate PfPR. RDTs can show false positives after anti-malarial drug treatment due to persistence of the antigens detected by RDTs (Dalrymple et al., 2018). Also, the limit of detection (usually 50\u2013200 parasites/\u00b5l) is higher than that of expert microscopy or PCR (Chiodini, 2014). In modelling the relationship between PfEIR and PfPR, we did not account for the sensitivity and specificity of the RDT used to detect P falciparum infection. If the sensitivity \u03b1 and specificity \u03b2 were known, we could account for them by setting $P\u2062f\u2062P\u2062R\u2062(x,t)$ as used in our analysis to $\\alpha\u2062(P\u2062f\u2062P\u2062R\u2062(x,t)\u2062\\beta-1)/(\\alpha+\\beta-1)$. Thus, strictly, what we have called PfPR should be interpreted as the probability of testing positive for P. falciparum using RDT. However, the use of RDTs as a diagnostic test for the detection of malaria infection provides PfPR estimates that are comparable to national malaria indicator surveys.\n\nAn additional limitation of our study was the unidirectional relationship implicitly assumed in our models of PfEIR-PfPR. In reality, PfPR and PfEIR are causally linked by the malaria parasite transmission cycle, which alternates between the human host and the mosquito vector. A higher rate of infectious bites received per person (i.e. PfEIR) increases the probability of the person becoming infected when bitten. Therefore, any factor that reduces mosquito populations, biting rates or human-to-mosquito parasite transmission (e.g. effective vector control interventions) will reduce PfEIR and consequently translate to reductions in PfPR. Similarly, a higher rate of parasite infection in people (i.e. PfPR) increases the probability of a mosquito becoming infected after any given blood meal. Therefore, factors that directly reduce PfPR (e.g. treatment of infections with effective drugs) will consequently reduce PfEIR. The impact of interventions may therefore affect both PfEIR and PfPR in such a way that a cyclic relationship may better describe the association between these metrics. Future modelling efforts may thus be improved by taking into account the cyclic aspect of the PfEIR-PfPR relationship.\n\n### Conclusion\n\nMeasuring PfEIR and PfPR using the rolling MIS sampling framework and a geostatistical modelling approach allowed us to assess the fine-scale spatial and temporal distributions of malaria parasite transmission over 38 months in a mesoendemic setting. The relationship between PfEIR and PfPR estimated here shows that at low levels of PfEIR, changes in PfEIR are associated with rapid changes in PfPR, while at higher levels of PfEIR, changes in PfEIR are not associated with appreciable changes in PfPR. Comparing hotspots of PfEIR and PfPR revealed that each metric could identify potential transmission hotspots that the other fails to capture. Our results emphasise that PfEIR and PfPR are essential, complementary metrics for monitoring short term changes in P. falciparum transmission intensity in mesoendemic settings, which have become increasingly common as many regions reduce transmission and shift from the highest malaria endemicity levels. Our study emphasises the need to couple vector control with identifying and treating infected individuals to drive malaria to elimination levels and to monitor both entomological and parasitaemia indices in malaria surveillance.\n",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "2e4fd88c-e769-4108-b5c1-28a7b6a4870e",
+      "submission_id": "159a7eea-cd31-45d0-a1ba-37d7ffa0f005",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Elena A Levashina, Max Planck Institute for Infection Biology Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65682.sa1](https://doi.org/10.7554/eLife.65682.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nUsing an impressive dataset and a suit of advanced statistical models, the authors illustrated the spatial-temporal patterns of parasite prevalence (PR) and the entomological inoculation rate (EIR) in a rural area in Malawi. This research approach highlights the importance of integrated control malaria strategies based on both entomological and epidemiological surveys.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Identifying Plasmodium falciparum transmission patterns through parasite prevalence and entomological inoculation rate\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Dominique Soldati-Favre as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Chih-hao Hsieh (Reviewer #1); Patrick Brown (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The total number of households under survey is M=2432. The total number of survey months = 38. However, if I understand correctly, not every household is surveyed in each month. However, according to the explanation in the Data section, I cannot understand how many households were surveyed for each month. The data structure needs to be illustrated better so that the readers can get better sense out of the Geostatistical Model section. One simple solution is to make animation that shows the sampling sites for each month. The authors can include the animation as Supplementary Information (can be included in the web portal they provided).\n\n2. How to deal with the uncertainty of PfEIR and PfPR in later analyses? Particularly, error propagates through HBRf (x, t)*PfSRf(x, t)l(t) and PfEIR(x,t) = PfEIRf(x,t) + PfEIRa(x,t). Several estimations have this error propagation issue. I am sure that authors can do these properly using bootstrap. Please explain the procedure clearly and earlier in their Geostatistical analysis section. The bootstrapped approach described in the later section is a good solution.\n\n3. Please provide a clear demonstration of the extra value brought by the spatio-temporal model in terms of: (i) space \u2013 how are the spatial of the aspects of the association better characterized; and (ii) time \u2013 how does the relationship between PfEIR and PfPR vary dynamically over time.\n\n4. On page 6, it would be worth mentioning that frequentist inference was used to estimate model parameters, many readers might associate geostatistical models as Bayesian.\n\n5. The formula on p.16 for calculating PfPR while accounting for sensitivity and specificity seems to be wrong. Shouldn't it be (PfPR + \u03b2 \u2013 1)/(\u03b1 + \u03b2 \u2013 1)? If the formula in the manuscript is correct, please provide a reference.\n\n6. Figure 1: Attribution is required for the map figure (are the raster tiles from Google, OpenStreetMap, or other sources?)\n\n7. Figure 4: is the confidence region calculated with error propagation of estimates of PfSR and PfEIR? Likewise, the uncertainty associated with estimates needs to be carefully addressed in all estimates and clearly depicted in the figures.\n\n8. While the online visualisation is good, the manuscript could include static map figures of the results (PfEIR and PfPR). For example, select certain time points with combination of high/low PfEIR and high/low PfPR. This is useful for archive purposes, and also because only the maps in the manuscript can be said to have been peer-reviewed.\n\nReviewer #1 (Recommendations for the authors):\n\n1. The total number of households under survey is M=2432. The total number of survey months = 38. However, if I understand correctly, not every household is surveyed in each month. However, according to the explanation in the Data section, I cannot understand how many households were surveyed for each month. The data structure needs to be illustrated better so that the readers can get better sense out of the Geostatistical Model section. One simple solution is to make animation that shows the sampling sites for each month. The authors can include the animation as Supplementary Information (can be included in the web portal they provided).\n\n2. How to deal with the uncertainty of PfEIR and PfPR in later analyses? Particularly, error propagates through HBRf (x, t)*PfSRf(x, t)l(t) and PfEIR(x,t) = PfEIRf(x,t) + PfEIRa(x,t). Several estimations have this error propagation issue. I am sure that authors can do these properly using bootstrap. Please explain the procedure clearly and earlier in their Geostatistical analysis section. The bootstrapped approach described in the later section is a good solution.\n\n3. Figure 4: is the confidence region calculated with error propagation of estimates of PfSR and PfEIR? Likewise, the uncertainty associated with estimates needs to be carefully addressed in all estimates and clearly depicted in the figures.\n\nReviewer #2 (Recommendations for the authors):\n\nOn page 6, it would be worth mentioning that frequentist inference was used to estimate model parameters, many readers might associate geostatistical models as Bayesian.\n\nThe formula on p.16 for calculating PfPR while accounting for sensitivity and specificity seems to be wrong. Shouldn't it be (PfPR + \u03b2 \u2013 1)/(\u03b1 + \u03b2 \u2013 1)? If the formula in the manuscript is correct, please provide a reference.\n\nFigures and Tables:\n\nFigure 1: Attribution is required for the map figure (are the raster tiles from Google, OpenStreetMap, or other sources?)\n\nWhile the online visualisation is good, the manuscript could include static map figures of the results (PfEIR and PfPR). For example, select certain time points with combination of high/low PfEIR and high/low PfPR. This is useful for archive purposes, and also because only the maps in the manuscript can be said to have been peer-reviewed.\n\nReviewer #3 (Recommendations for the authors):\n\nTo strengthen this work, I would want a clear demonstration of the extra value brought by the spatio-temporal model in terms of: (i) space \u2013 how are the spatial of the aspects of the association better characterized; and (ii) time \u2013 how does the relationship between PfEIR and PfPR vary dynamically over time.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Identifying Plasmodium falciparum transmission patterns through parasite prevalence and entomological inoculation rate\" for further consideration by eLife. Your revised article has been evaluated by Dominique Soldati-Favre (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n1. Highlight and clarify in the main text the issue related to potential spurious correlation (statistical artifact) between the modelled PfPR and PfEIR.\n\n2. Address in the main text how the inclusion of an over dispersion term will change the results of modelling the relationship between PfPR and PfEIR in the six models.\n\n3. Introduce into the main text comparison of the estimation PfEIR vs PfPR relationship with previously published models from the literature and explain the observed differences beyond the differences between the modelling approaches.\n",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b0f0993b-b344-4de7-9a74-93a54694e10c",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C1",
+      "claim": "The study was conducted in Chikwawa District, Malawi, in the catchment area of the Majete Malaria Project (MMP), which consisted of three distinct geographical regions (Focal Areas A, B, and C) with a total population of about 25,000 people living in 6600 households in 65 villages.",
+      "claim_type": "EXPLICIT",
+      "source": "The catchment area of MMP consisted of three distinct geographical regions, referred to as Focal Areas A, B, and C (Figure 1), with a total population of about 25,000 people living in 6600 households in 65 villages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the study location, population size, and geographical organization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "0ec23eca-d227-49c6-aabb-ef355ba8722c",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C2",
+      "claim": "Chikwawa experiences a single rainy season spanning November/December to April/May with highly variable rainfall.",
+      "claim_type": "EXPLICIT",
+      "source": "Chikwawa experiences highly variable rainfall during its single rainy season, which spans November/December to April/May.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the seasonal rainfall pattern in the study area.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "6335e016-5f68-4386-851a-afc7199bc4af",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C3",
+      "claim": "Daily maximum temperatures in Chikwawa average 37.6\u00b0C in December and 27.6\u00b0C in July.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperatures are generally high, with daily maximum temperatures in December averaging 37.6\u00b0C, and in July averaging 27.6\u00b0C (Joshua et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific temperature measurements with a citation to support the claim.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "e73c693d-d066-4177-b997-4945992ff461",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C4",
+      "claim": "A wide range of permanent and temporary water bodies in the region create suitable larval habitats for Anopheles funestus s.s., Anopheles arabiensis, and Anopheles gambiae s.s.",
+      "claim_type": "EXPLICIT",
+      "source": "A wide range of both permanent and temporary water bodies create suitable larval habitats in the region for Anopheles funestus s.s., Anopheles arabiensis, and Anopheles gambiae s.s., including dams, swamps, ponds, borehole runoffs and drainage channels (Gowelo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the types of water bodies and mosquito species they support, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "47a3fdd5-e583-49b5-ba09-00fc3a3fabba",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C5",
+      "claim": "The only mass distribution of ITNs in the district during the study period occurred in April 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "The only mass distribution of ITNs in the district during the study period occurred in April 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the timing of ITN distribution during the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "76f96b51-b341-4c84-a8d8-476a53732800",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C6",
+      "claim": "A rolling malaria indicator survey (rMIS) was conducted over 17 rounds spanning 2 or 3 months each.",
+      "claim_type": "EXPLICIT",
+      "source": "Sampling was carried out over 17 rounds, with each round spanning a period of 2 or 3 months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the survey design and duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "e2df2604-280c-455b-a97d-e967b7076868",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C7",
+      "claim": "In the first two rounds of data collection, an inhibitory geostatistical sampling design (IGSD) was used to select 300 and 270 households, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first two rounds of data collection (baseline, from April through August 2015), an inhibitory geostatistical sampling design (IGSD) was used to select 300 and 270 households, respectively, for the rMIS from an enumeration database of all households in the catchment area (Chipeta et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the sampling method and sample sizes with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "ec2c9013-94ce-4786-b8b4-f30bc85a72d2",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C8",
+      "claim": "The IGSD ensures that randomly sampled households are relatively uniformly spaced over the study region by requiring each pair of sampled households to be separated by a distance of at least 0.1 km.",
+      "claim_type": "EXPLICIT",
+      "source": "The IGSD helped to ensure that randomly sampled households are relatively uniformly spaced over the study region by requiring each pair of sampled households to be separated by a distance of at least 0.1 km, which increases the efficiency of hotspot detection (Kabaghe et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the spatial constraint of the IGSD method with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "68688a3c-b47b-43f4-a489-fe1b8f68c450",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C9",
+      "claim": "At each round of rMIS data collection, 75% and 72% of the households chosen were randomly selected for mosquito sampling in the baseline and trial phases, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "At each round of rMIS data collection in the baseline and trial phases, respectively, 75% and 72% of the households chosen at each round of the rMIS were then randomly selected for mosquito sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the proportion of households selected for mosquito sampling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "bb081ec5-6476-4e79-a49c-262c0d728340",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C10",
+      "claim": "Children under five (0.5\u20135 y/o) and women of reproductive age (15\u201349 y/o) were tested for P. falciparum using an RDT (SD BIOLINE Malaria Ag P.f. HRP-II).",
+      "claim_type": "EXPLICIT",
+      "source": "In each sampled household, children under five (0.5\u20135 y/o) and women of reproductive age (15\u201349 y/o) were tested for P. falciparum using an RDT (SD BIOLINE Malaria Ag P.f. HRP-II, Standard Diagnostics, Yongin-si, Republic of Korea).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the diagnostic test used and the populations tested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "2e7792ea-c3a4-41fd-9c3e-7504a023abd1",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C12",
+      "claim": "From April 2015 to May 2018, a total of 6870 traps (3439 indoors; 3431 outdoors) were placed at 2432 houses over 17 rounds of sampling, resulting in the collection of 657 female Anopheles mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "From April 2015 to May 2018, a total of 6870 traps (3439 indoors; 3431 outdoors) were placed at 2432 houses over 17 rounds of sampling (Figure 2), resulting in the collection of 657 female Anopheles mosquitoes (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific counts of traps and mosquitoes collected, referencing figures and tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "e23f2e3f-88a1-4109-a804-12d02a4c09ea",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C13",
+      "claim": "Following PCR of the 478 A. gambiae s.l. collected, 92% were identified as A. arabiensis, 2% as A. gambiae s.s., 1% as A. quadriannulatus, and 5% could not be identified further.",
+      "claim_type": "EXPLICIT",
+      "source": "Following PCR of the 478 A. gambiae s.l. collected, 92% were identified as A. arabiensis, 2% as A. gambiae s.s., 1% as A. quadriannulatus, and 5% could not be identified further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the species composition percentages from PCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "7dfbb6b7-978f-4341-88a9-6d8ad81d7a6f",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C14",
+      "claim": "From the 179 A. funestus s.l. collected, 95% were identified as A. funestus s.s. by PCR, while the remaining 5% could not be identified further.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 179 A. funestus s.l. collected, 95% were identified as A. funestus s.s. by PCR, while the remaining 5% could not be identified further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the species identification results from PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "2461ee93-28ca-416a-b1c3-e9edfa4cc09e",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C15",
+      "claim": "The observed vector composition is 71%, 27%, and 2% for A. arabiensis, A. funestus s.s., and A. gambiae s.s., respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed vector composition is therefore 71%, 27%, and 2% for A. arabiensis, A. funestus s.s., and A. gambiae s.s., respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the overall vector composition percentages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "5b8dbd13-b1a0-4c54-ae67-0e43beb9fbad",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C16",
+      "claim": "Despite the relatively low abundance of A. funestus s.s. compared to A. arabiensis, the higher sporozoite rate of the former made the contribution of A. funestus s.s. to the total PfEIR almost equivalent to that of A. arabiensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the relatively low abundance of A. funestus s.s. compared to A. arabiensis, the higher sporozoite rate of the former made the contribution of A. funestus s.s. to the total PfEIR almost equivalent to that of A. arabiensis (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the relative contributions of the two species to PfEIR, referencing Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "ceea0dd8-1c19-414c-a739-70a2b4e85a2e",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C17",
+      "claim": "The total PfEIR for the 38 months was 8.24 ib/person, equivalent to an average 2.60 ib/person/year.",
+      "claim_type": "EXPLICIT",
+      "source": "The total PfEIR for the 38 months was 8.24 ib/person, equivalent to an average 2.60 ib/person/year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the calculated PfEIR values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "581e5045-6452-465a-be24-a967b20bb52e",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C18",
+      "claim": "Over the 38-month period, 5685 individual P. falciparum RDT tests were conducted across 3096 household visits.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the same 38-month period, 5685 individual P. falciparum RDT tests were conducted across 3096 household visits (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the number of tests and household visits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "11698ab7-60ff-4b66-94fd-b8f93b8d20eb",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C19",
+      "claim": "Among the 2401 tests conducted on children aged 6 to 59 months, 25.5% were positive, while 14.3% of the 3284 tests conducted on women aged 15\u201349 y/o were positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 2401 tests conducted on children aged 6 to 59 months, 25.5% were positive, while 14.3% of the 3284 tests conducted on women aged 15\u201349 y/o were positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the positivity rates for both age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "f5c5e785-7030-497b-bf29-c11cd1ea74c8",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C20",
+      "claim": "Clear spatiotemporal heterogeneities in PfEIR, PfPR in children, and PfPR in women were observed when mapped across the study region at a fine spatial resolution (30 x 30 m) and 1 month intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed clear spatiotemporal heterogeneities in PfEIR, PfPR in children, and PfPR in women when mapped across the study region at a fine spatial resolution (30 x 30 m) and 1 month intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the observed heterogeneities and mapping resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "59328ca1-4aa7-4e63-9227-0b81dd0b6520",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C21",
+      "claim": "Focal Area A generally showed the lowest PfEIR and PfPR, while Focal Areas B and C showed similar, higher levels of PfEIR.",
+      "claim_type": "EXPLICIT",
+      "source": "Focal Area A generally showed the lowest PfEIR and PfPR, while Focal Areas B and C showed similar, higher levels of PfEIR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the spatial differences between focal areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "f2509d36-6998-4ee3-83e1-2561f625715a",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C22",
+      "claim": "Hotspots of both PfEIR and PfPR proceeded through seasonal cycles of expansion and retraction over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each focal area, the spatial patterns changed from month to month, with hotspots of both PfEIR and PfPR proceeding through seasonal cycles of expansion and retraction over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the temporal dynamics of hotspots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "81d75496-116c-4b38-8afd-10daf960b508",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C23",
+      "claim": "Over the 3-year study period, hotspots of PfEIR and PfPR generally disappeared during the low transmission seasons, except for residual hotspots of PfPR that persisted throughout the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the 3-year study period, hotspots of PfEIR and PfPR generally disappeared during the low transmission seasons, except for residual hotspots of PfPR that persisted throughout the study period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the persistence patterns of hotspots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "87c4855e-b0c1-463a-8552-1d0d1795d97b",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C24",
+      "claim": "PfEIR increased from November to a peak in May and decreased to a trough in November.",
+      "claim_type": "EXPLICIT",
+      "source": "PfEIR increased from November to a peak in May and decreased to a trough in November.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the seasonal pattern of PfEIR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "927181c0-e41b-479b-af29-22c84ddd8fef",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C25",
+      "claim": "PfPR started increasing from December to a peak around July, after which it decreased to a trough between November/December.",
+      "claim_type": "EXPLICIT",
+      "source": "PfPR started increasing from December to a peak around July, after which it decreased to a trough between November/December.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the seasonal pattern of PfPR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "367bc9b6-3253-4418-9389-9f9ba9afb659",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C26",
+      "claim": "Children aged 6\u201359 months consistently had a higher level of PfPR than women throughout the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "First, children aged 6\u201359 months consistently had a higher level of PfPR than women throughout the study period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the difference in PfPR between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "921b2002-ec59-4325-8acb-96fdeb319da3",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C27",
+      "claim": "PfPR in both groups generally decreased from the start of the study in April 2015 to December 2016, after which there was a general trend of increasing PfPR in both age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, PfPR in both groups generally decreased from the start of the study in April 2015 to December 2016, after which there was a general trend of increasing PfPR in both age groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the temporal trend in PfPR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "b7fae6ee-479e-4365-847b-2351f0f69bb0",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C28",
+      "claim": "PfEIR was steady in the first 2 years of the study, followed by a general decrease after May 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, PfEIR was steady in the first 2 years of the study, followed by a general decrease after May 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the temporal trend in PfEIR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "39709ca5-27b0-45e6-bd88-4aa6f80f5a73",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C29",
+      "claim": "The observed PfEIR was 0 between June 2017 and the end of the study, while the PfPR increased in both children and women between November 2017 and May 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the observed PfEIR was 0 between June 2017 and the end of the study, while the PfPR increased in both children and women between November 2017 and May 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the divergence between PfEIR and PfPR at the end of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "16c3d1b8-5ede-483b-859b-d1fee82c5844",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C30",
+      "claim": "The seasonal patterns of PfEIR and PfPR within each year were nearly concurrent, with the estimated peak in PfEIR preceding that of PfPR by one month.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporally, the seasonal patterns of PfEIR and PfPR within each year were nearly concurrent, with the estimated peak in PfEIR preceding that of PfPR by one month (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the temporal relationship between PfEIR and PfPR peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "44148fd4-ff38-4c85-a025-a7b5c16bf853",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C31",
+      "claim": "Hotspots of PfEIR and PfPR partly overlapped during the high transmission season but not during low transmission seasons.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the hotspots of PfEIR and PfPR using spatiotemporal maps of exceedance probabilities, the hotspots of PfEIR and PfPR partly overlapped during the high transmission season (http://chicas.lancaster-university.uk/projects/malaria_in_malawi/pfpr/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the spatial overlap of hotspots during different seasons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "b85243c0-fdad-48e9-bbf2-a795da637080",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C32",
+      "claim": "There were hotspots of PfEIR that were not necessarily hotspots of PfPR and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were hotspots of PfEIR that were not necessarily hotspots of PfPR and vice versa (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the non-overlapping nature of some hotspots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "d68e1a94-ed2f-41a0-9896-a0fde2549b9e",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C33",
+      "claim": "For each of the six classes of model, those with a 1-month lagged-effect were found to be the best based on the root-mean-square-error (RMSE) and bias indices of predictive performance.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of the six classes of model, those with a 1-month lagged-effect were found to be the best based on the root-mean-square-error (RMSE) and bias indices of predictive performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the model selection results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "0a46ef29-7eb1-4585-881d-4b87adea1677",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C34",
+      "claim": "Among the models with 1-month lag, the empirical models (i.e. logit-linear and Beier) yielded lower values for the bias and RMSE values than the mechanistic models.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, the empirical models (i.e. logit-linear and Beier) yielded lower values for the bias and RMSE values than the mechanistic models (Appendix 1 \u2013 Procedure for building the HBR, PfSR, and PfPR models, Appendix 1\u2014table 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly compares model performance with reference to an appendix table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "8718502a-43f6-4096-a31b-bd2224d1e2ba",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C35",
+      "claim": "The logit-linear model, albeit by a small margin, outperformed all the models.",
+      "claim_type": "EXPLICIT",
+      "source": "The logit-linear model, albeit by a small margin, outperformed all the models (Appendix 1 \u2013 Procedure for building the HBR, PfSR, and PfPR models, Appendix 1\u2014table 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies the best-performing model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "d6579465-72dd-4a59-bd44-fcf8933461a2",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C36",
+      "claim": "The fitted logit-linear model shows that PfPR rises quickly with increasing PfEIR at very low PfEIR, followed by a flattening off or saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitted logit-linear model (Figure 8) shows that PfPR rises quickly with increasing PfEIR at very low PfEIR, followed by a flattening off or saturation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the shape of the PfEIR-PfPR relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "705856f4-f30a-484c-b07d-7091d0d6c887",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C37",
+      "claim": "A decrease in PfEIR from 1 ib/person/month to 0.85 ib/person/month is associated with a reduction in PfPR from 27.17% to 26.85% on average (a 1.18% decrease in PfPR).",
+      "claim_type": "EXPLICIT",
+      "source": "From the estimated relationship for women and children combined (Figure 8a), a decrease in PfEIR from 1 ib/person/month to 0.85 ib/person/month (i.e. a 0.15 decrease in PfEIR) is associated with a reduction in PfPR from 27.17% to 26.85% on average (i.e. a 1.18% decrease in PfPR).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly provides quantitative estimates from the fitted model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "e227c235-0fe1-41a9-82a1-c53ffbe7dd58",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C38",
+      "claim": "A decrease in PfEIR from 0.2 ib/person/month to 0.05 ib/person/month is associated with a reduction in PfPR from 24.10% to 21.66% on average (a 10.13% decrease in PfPR).",
+      "claim_type": "EXPLICIT",
+      "source": "However, at the lower ranges of EIR, the same decrease of 0.15 ib/person/month from 0.2 ib/person/month to 0.05 ib/person/month is associated with a reduction in PfPR from 24.10% to 21.66% on average (i.e. a 10.13% decrease in PfPR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides quantitative estimates from the fitted model at lower EIR ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "625a57b0-34ea-4366-8705-7ed10e3e5a18",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C39",
+      "claim": "For large values in PfEIR, reductions in PfEIR are associated with smaller reductions in PfPR, whilst if PfEIR is low, reductions in PfEIR are associated with greater reductions in PfPR.",
+      "claim_type": "EXPLICIT",
+      "source": "First, for large values in PfEIR, reductions in PfEIR are associated with smaller reductions in PfPR, whilst if PfEIR is low, reductions in PfEIR are associated with greater reductions in PfPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the non-linear nature of the PfEIR-PfPR relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "196f1efb-00c1-4980-a784-b350d061f6a8",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C40",
+      "claim": "Even when transmission, as measured by PfEIR, has been driven close to zero, PfPR can still remain substantial.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, even when transmission, as measured by PfEIR, has been driven close to zero, PfPR can still remain substantial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this observation from the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "9af62765-cf43-4c3e-98fa-7633f3b85046",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C41",
+      "claim": "PfPR in children tends to show a steeper rise with increasing PfEIR than in women.",
+      "claim_type": "EXPLICIT",
+      "source": "PfPR in children tends to show a steeper rise with increasing PfEIR than in women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the difference in the PfEIR-PfPR relationship between age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "1e2f1560-98ec-4d81-97b0-c10aee91408f",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C42",
+      "claim": "A decrease in PfEIR from 0.1 ib/person/month to 0.01 ib/person/month is associated with a reduction in PfPR from 31.07% to 25.52% on average in children (a 17.86% decrease in PfPR).",
+      "claim_type": "EXPLICIT",
+      "source": "From the estimated relationship for children, a decrease in PfEIR from 0.1 ib/person/month to 0.01 ib/person/month is associated with a reduction in PfPR from 31.07% to 25.52% on average (i.e. a 17.86% decrease in PfPR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides quantitative estimates for children from the fitted model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "ab73a5a7-c6bf-4b74-b385-34d6732df50b",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C43",
+      "claim": "A decrease in PfEIR from 0.1 ib/person/month to 0.01 ib/person/month is associated with a reduction in PfPR from 16.84% to 14.33% in women (a 14.90% decrease in PfPR).",
+      "claim_type": "EXPLICIT",
+      "source": "From the estimated relationship for women, the same decrease in PfEIR is associated with a reduction in PfPR from 16.84% to 14.33% (i.e. a 14.90% decrease in PfPR) on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides quantitative estimates for women from the fitted model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "13450088-e002-4bc0-8da7-c108e14cb929",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C44",
+      "claim": "With decreasing PfEIR, the percentage reduction in PfPR achieved in children tends to be higher than in women.",
+      "claim_type": "EXPLICIT",
+      "source": "We make two observations. (1) With decreasing PfEIR, the percentage reduction in PfPR achieved in children tends to be higher than in women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this observation from the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "4d32d495-d693-4a19-a254-bcd8ee369100",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C45",
+      "claim": "When transmission has been driven almost to zero, PfPR remains consistently high in children.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) When transmission has been driven almost to zero, PfPR remains consistently high in children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this observation from the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "939c1692-3700-4733-9882-c9dd4d445279",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C46",
+      "claim": "The most recent assessment of PfEIR in Chikwawa District prior to this study was from 2002, with an estimated annual PfEIR of 183 ib/person/year.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to our study, the most recent assessment of PfEIR in this district of Malawi was from 2002, with an estimated annual PfEIR of 183 ib/person/year (Mzilahowa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides historical data with a citation for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "292bb850-6c02-4350-b213-b4e83270d43b",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C47",
+      "claim": "The drastic reduction in annual PfEIR from 183 ib/person/year in 2002 to an estimated 2.60 ib/person/year in this study is likely due, at least in part, to an increase in the use of ITNs and ACTs.",
+      "claim_type": "EXPLICIT",
+      "source": "The drastic reduction in annual PfEIR since then to an estimated 2.60 ib/person/year in our study is likely due, at least in part, to an increase in the use of ITNs and ACTs as observed elsewhere (Bayoh et al., 2010; Mwangangi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the observed reduction with citations to support the claim.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "09a4a314-2d33-40e3-99c5-d3f167aeeaa4",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C48",
+      "claim": "Use of ITNs by children under 5 years old in Malawi has increased from nil in 2000 and 14.8% in 2004 to 67.8% in 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Nationwide, use of ITNs by children under 5 years old in Malawi has increased from nil in 2000 and 14.8% in 2004 (Mathanga et al., 2012) to 67.8% in 2014 (Malawi National Malaria Control Programme and ICF International, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides historical ITN coverage data with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "bd42af75-cc02-4317-bda1-a4d539f145af",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C49",
+      "claim": "Treatment for malaria in Malawi switched from sulfadoxine\u2013pyrimethamine to ACT with artemether\u2013lumefantrine in 2007.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment for malaria in Malawi switched from sulfadoxine\u2013pyrimethamine to ACT with artemether\u2013lumefantrine in 2007 (Mathanga et al., 2012), and by 2014, 39.3% of children under five reporting a fever had taken ACT (Malawi National Malaria Control Programme and ICF International, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides historical treatment policy data with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "b44257db-75c1-46ec-8246-c88fb633bfa7",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C50",
+      "claim": "Mass distributions of ITNs took place across Malawi in 2012, about 3 years prior to the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass distributions of ITNs took place across Malawi in 2012 (World Health Organization, 2013), that is about 3 years prior to our study, and again in April 2016, that is, 1 year into our 38-month study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides information about ITN distribution timing with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "0b95070a-435b-45b0-9130-b952794de642",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C51",
+      "claim": "Model-based geostatistics was used to analyse repeated cross-sectional data and estimate the fine-scale spatial patterns of PfEIR and PfPR across the study site at monthly intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we used model-based geostatistics (Diggle and Giorgi, 2019) to analyse repeated cross-sectional data with a unique sampling framework (Roca-Feltrer et al., 2012; Kabaghe et al., 2017) and estimate the fine-scale spatial patterns of PfEIR and PfPR across our study site at monthly intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the analytical approach with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "bdc54585-37af-4f7a-9e83-3e4cdd523496",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C52",
+      "claim": "The geostatistical approach allowed identification of hotspots through the use of exceedance probabilities by acknowledging the effects of unmeasured malaria risk factors through the inclusion of spatially structured random variations.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach was essential for identifying hotspots of PfEIR and PfPR through the use of exceedance probabilities, because it allowed us to acknowledge the effects of unmeasured malaria risk factors on each metric through the inclusion of spatially structured random variations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the methodological advantage of the geostatistical approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "11c3f9b7-5af8-4d4c-bc6e-5d2809567818",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C53",
+      "claim": "Previous studies have demonstrated that the relationship between EIR and PR is non-linear, such that small changes in EIR are associated with large changes in PR when EIR is low, but PR saturates rather than changing at a constant rate when EIR is high.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that this relationship is non-linear, such that small changes in EIR are associated with large changes in PR when EIR is low, but PR saturates rather than changing at a constant rate when EIR is high (Beier et al., 1999; Smith et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim about the EIR-PR relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "30976426-1214-49bc-9729-959e8d4e61f5",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C54",
+      "claim": "No previous study has explicitly examined the EIR-PR relationship over time within a single geographical region.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet no previous study has explicitly examined this relationship over time within a single geographical region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the novelty of their approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "bad11490-6ee4-4e6a-8266-e9ff055780a5",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C55",
+      "claim": "Monitoring malaria transmission is a critical component of efforts to achieve targets for elimination and eradication.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitoring malaria transmission is a critical component of efforts to achieve targets for elimination and eradication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a general principle in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "52bbe9c3-03b2-443c-9c1d-e662b674266f",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C56",
+      "claim": "Two commonly monitored metrics of transmission intensity are parasite prevalence (PR) and the entomological inoculation rate (EIR).",
+      "claim_type": "EXPLICIT",
+      "source": "Two commonly monitored metrics of transmission intensity are parasite prevalence (PR) and the entomological inoculation rate (EIR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies these two metrics in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "017992e8-6c75-44b7-a6e0-ef42a14b8508",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C57",
+      "claim": "National malaria control programmes, working in collaboration with global stakeholders, have achieved extensive intervention coverage over the last two decades, leading to significant reductions in morbidity and mortality due to malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "National malaria control programmes, working in collaboration with global stakeholders, have achieved extensive intervention coverage over the last two decades, leading to significant reductions in morbidity and mortality due to malaria (Bhatt et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "3ee3b380-e112-4ce3-ac44-c1b988b8690e",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C58",
+      "claim": "Malaria is still a leading global health problem.",
+      "claim_type": "EXPLICIT",
+      "source": "However, malaria is still a leading global health problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this as context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "073ea3fc-5f67-414a-9b75-6ae5bbc31ca7",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C59",
+      "claim": "A key component of efforts to achieve malaria elimination targets is surveillance and monitoring, which is critical for continued assessment of intervention effectiveness, identification of areas or groups at the highest risk, and guiding the development and implementation of new intervention strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "A key component of efforts to achieve these targets is surveillance and monitoring, which is critical for continued assessment of intervention effectiveness, identification of areas or groups at the highest risk, and guiding the development and implementation of new intervention strategies (World Health Organization, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "a9175fdd-e60e-41a0-823d-32cb29297534",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C60",
+      "claim": "The strengths and limitations of each malaria transmission metric are related, in part, to the step of the parasite transmission cycle it measures.",
+      "claim_type": "EXPLICIT",
+      "source": "The strengths and limitations of each metric are related, in part, to the step of the parasite transmission cycle it measures (Tusting et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "8041439e-9701-47cc-aaa3-a9ad15e4875e",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C61",
+      "claim": "The strengths and weaknesses of transmission metrics, including the sensitivity of each metric, vary across epidemiological settings and as parasite transmission declines within a given setting.",
+      "claim_type": "EXPLICIT",
+      "source": "These strengths and weaknesses, including the sensitivity of each metric, vary across epidemiological settings and as parasite transmission declines within a given setting (The malERA Refresh Consultative Panel on Characterising the Reservoir and Measuring Transmission, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "63316017-39a8-4732-9006-ac3b7be82ba7",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C62",
+      "claim": "The prevalence of Plasmodium parasites in the human population at a given time point (i.e. the parasite rate; PR) approximates the reservoir of hosts potentially available to transmit the parasite from humans to mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of Plasmodium parasites in the human population at a given time point (i.e. the parasite rate; PR) approximates the reservoir of hosts potentially available to transmit the parasite from humans to mosquitoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly defines what PR represents.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "19e6da29-6d79-4fd1-b947-4c7e6c99cbee",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C63",
+      "claim": "Only the gametocyte stage of the parasite contributes to transmission, but it remains relatively expensive to detect this stage of the parasite.",
+      "claim_type": "EXPLICIT",
+      "source": "While only the gametocyte stage of the parasite contributes to transmission, it remains relatively expensive to detect this stage of the parasite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "c1816e11-8650-4244-aa9e-d51ff7567fb2",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C64",
+      "claim": "Rapid diagnostic tests (RDTs) primarily detect asexual-stage antigens, yet they are inexpensive and easily deployed in large-scale community-based surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, rapid diagnostic tests (RDTs) primarily detect asexual-stage antigens, yet they are inexpensive and easily deployed in large-scale community-based surveys (Poti et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "15bb8126-b19a-4693-aebc-21e4b55c13b2",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C66",
+      "claim": "RDT-based cross-sectional surveys to measure PR capture both symptomatic and asymptomatic infections, which is important because both are likely to contribute to transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these limitations, RDT-based cross-sectional surveys to measure PR capture both symptomatic and asymptomatic infections, which is important because both are likely to contribute to transmission (Bousema et al., 2014; Slater et al., 2019), and changes in PR over time can indicate changes in transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "fd4bfa8e-690b-4861-a29e-874163afbfc3",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C67",
+      "claim": "EIR provides an estimate of the intensity of parasite transmission from mosquitoes to humans, expressed as the number of infectious bites received per person per unit time.",
+      "claim_type": "EXPLICIT",
+      "source": "EIR provides an estimate of the intensity of parasite transmission from mosquitoes to humans, expressed as the number of infectious bites received per person per unit time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly defines EIR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "163e7647-1052-4c81-a04b-745a172e599b",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C68",
+      "claim": "EIR is calculated by multiplying the number of malaria vector bites per person per unit time (human biting rate; HBR) by the proportion of vectors carrying the infectious sporozoite stage of malaria parasites (sporozoite rate; SR).",
+      "claim_type": "EXPLICIT",
+      "source": "EIR is calculated by multiplying the number of malaria vector bites per person per unit time, also known as the human biting rate (HBR), by the proportion of vectors carrying the infectious sporozoite stage of malaria parasites, referred to as the sporozoite rate (SR) (Onori and Grab, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes how EIR is calculated with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "a5ff1a0d-bff7-49e2-936f-e2616b2cdf2c",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C69",
+      "claim": "The accuracy and precision of EIR estimates depend on the accuracy and precision with which HBR and SR can be measured.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy and precision of EIR estimates, therefore, depends on the accuracy and precision with which HBR and SR can be measured (Tusting et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "2e04fba3-5c4a-413b-87fb-0d77c85f9461",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C70",
+      "claim": "Two common methods for measuring HBR are the human landing catch and the Centers for Disease Control and Prevention Light Trap.",
+      "claim_type": "EXPLICIT",
+      "source": "Two common methods for measuring HBR are the human landing catch and the Centers for Disease Control and Prevention Light Trap, but inter-individual variation in attractiveness to mosquitoes restricts standardisation across sampling points for both of these methods (Knols et al., 1995; Qiu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "be7b83e5-cfe1-4cc7-8753-a7e50ee3b4b6",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C71",
+      "claim": "Inter-individual variation in attractiveness to mosquitoes restricts standardisation across sampling points for human landing catch and CDC Light Trap methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Two common methods for measuring HBR are the human landing catch and the Centers for Disease Control and Prevention Light Trap, but inter-individual variation in attractiveness to mosquitoes restricts standardisation across sampling points for both of these methods (Knols et al., 1995; Qiu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this limitation with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "85921471-91ff-495e-8beb-f27bde1cd147",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C72",
+      "claim": "The Suna trap uses a synthetic blend of volatiles found on human skin and carbon dioxide to attract host-seeking Anopheles mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternative methods for estimating HBR include the Suna trap, which uses a synthetic blend of volatiles found on human skin and carbon dioxide to attract host-seeking Anopheles mosquitoes (Mukabana et al., 2012; Menger et al., 2014; Hiscox et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the Suna trap method with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "0c5fed07-e790-49b6-b3b3-f8a658322077",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C73",
+      "claim": "The standardised odour blend of the Suna trap allows for reliable comparisons among trapping locations.",
+      "claim_type": "EXPLICIT",
+      "source": "The standardised odour blend allows for reliable comparisons among trapping locations (Mburu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this advantage with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "35f67284-5807-4917-a8f4-2093d8416b38",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C74",
+      "claim": "The precision of SR decreases as the number of mosquitoes collected decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the method used to estimate HBR, the precision of SR decreases as the number of mosquitoes collected decreases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "0b605490-2956-4cf9-b804-85d473805588",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C75",
+      "claim": "EIR is a vital metric of malaria parasite transmission because it directly describes human exposure to malaria parasites before post-inoculation factors such as immunity, nutrition, and access to health care.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these limitations, EIR is a vital metric of malaria parasite transmission because it directly describes human exposure to malaria parasites before post-inoculation factors such as immunity, nutrition, and access to health care (Killeen et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "a591f9f7-f692-4a14-b6d7-65f6451329b9",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C76",
+      "claim": "EIR provides information about the relative contributions of different vector species to transmission, which can impact malaria intervention effectiveness based on interspecies differences in biting behaviours.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, EIR provides information about the relative contributions of different vector species to transmission, which can impact malaria intervention effectiveness based on interspecies differences in biting behaviours related to time and location, non-human blood-meal hosts, larval ecology, and insecticide resistance profiles (Ferguson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "92a16d53-43ab-4c87-91d3-0c070ccdf2d5",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C77",
+      "claim": "Malaria parasite transmission is heterogeneous in space and time at fine resolution due to several factors, including the availability of larval mosquito habitat, socioeconomics, human behaviour and genetics, and malaria intervention coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria parasite transmission is heterogeneous in space and time at fine resolution due to several factors, including the availability of larval mosquito habitat, socioeconomics, human behaviour and genetics, and malaria intervention coverage (Carter et al., 2000; Bousema et al., 2012; McCann et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "dbec12df-22b6-4342-b4e1-a6a55bf865eb",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C78",
+      "claim": "Repeated cross-sectional surveys continuously carried out in communities can reveal fine-resolution heterogeneity in malaria transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeated cross-sectional surveys continuously carried out in communities can reveal this fine-resolution heterogeneity (Roca-Feltrer et al., 2012), providing timely estimates of malaria control progress at the sub-district level and potentially identifying hotspots of malaria parasite transmission for targeted intervention (Kabaghe et al., 2017; Bousema et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "0aa7be9d-1938-43a0-bf3f-2137035f0322",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C79",
+      "claim": "Understanding heterogeneity and identifying hotspots in a way that is meaningful for control programmes remains challenging, in part because hotspot location and size can depend on which metric is used.",
+      "claim_type": "EXPLICIT",
+      "source": "However, understanding this heterogeneity and identifying hotspots in a way that is meaningful for control programmes remains challenging (Stresman et al., 2019), in part because hotspot location and size can depend on which metric is used (Stresman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this challenge with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "dcc2e822-e7c6-45f8-8c3c-6b385a9460f4",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C80",
+      "claim": "Given that PR and EIR are indicative of components of the parasite transmission cycle that are separated by multiple complex steps, each metric provides partial but useful information about the underlying risk of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that PR and EIR are indicative of components of the parasite transmission cycle that are separated by multiple complex steps, each metric provides partial but useful information about the underlying risk of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "bd0ce719-c39f-4594-b485-aa483ab39397",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C81",
+      "claim": "Measuring and mapping both PR and EIR metrics can provide a fuller picture of parasite transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, measuring and mapping both metrics can provide a fuller picture of parasite transmission (Cohen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "ec0d261a-14a9-4430-bb34-9a839afa424d",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C82",
+      "claim": "The study emphasises the need for integrated malaria control strategies that combine vector and human host managements monitored by both entomological and parasitaemia indices.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study emphasises the need for integrated malaria control strategies that combine vector and human host managements monitored by both entomological and parasitaemia indices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "06e91c3b-c8b2-477a-990a-4d28038aa5fe",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C83",
+      "claim": "The study found a 1-month delayed effect of EIR on PR such that at lower levels of EIR, increases in EIR are associated with rapid rise in PR, whereas at higher levels of EIR, changes in EIR do not translate into notable changes in PR.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated relationship showed a 1-month delayed effect of EIR on PR such that at lower levels of EIR, increases in EIR are associated with rapid rise in PR, whereas at higher levels of EIR, changes in EIR do not translate into notable changes in PR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "f3666277-27fd-4382-b83f-1984b19caf59",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "claim_id": "C84",
+      "claim": "Hotspots identified through the EIR and PR partly overlapped during high transmission seasons but not during low transmission seasons.",
+      "claim_type": "EXPLICIT",
+      "source": "Hotspots identified through the EIR and PR partly overlapped during high transmission seasons but not during low transmission seasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "069221f8-01fb-43c2-9920-d38f8a458361",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study was conducted in Chikwawa District, Malawi, in three focal areas (A, B, C) with approximately 25,000 people in 6,600 households across 65 villages. The region experiences a single rainy season (November/December to April/May), high temperatures (averaging 37.6\u00b0C in December and 27.6\u00b0C in July), and contains water bodies suitable for Anopheles mosquito breeding. The only mass ITN distribution during the study occurred in April 2016.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide well-documented descriptive information about the study site, including population demographics, climate patterns with cited temperature data (C3), vector habitat characteristics (C4), and intervention timing (C5). These contextual claims are explicitly stated and appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "9d4ccf66-4bbf-4c0c-aa22-b5da7b404574",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A rolling malaria indicator survey (rMIS) was conducted over 17 rounds spanning 2-3 months each. The first two rounds used inhibitory geostatistical sampling design (IGSD) to select 300 and 270 households with minimum 0.1 km separation. Subsequently, 75% and 72% of households in baseline and trial phases were randomly selected for mosquito sampling. Children (0.5-5 y/o) and women (15-49 y/o) were tested using RDTs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 describe the study design and sampling methodology with explicit details about sample sizes, spatial constraints, and diagnostic methods. The IGSD approach is properly cited (C7, C8), and the sampling proportions and target populations are clearly stated. These methodological details are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "89a0ff81-14cf-4678-b9e0-028ae0090de5",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "From April 2015 to May 2018, 6,870 traps were placed at 2,432 houses, collecting 657 female Anopheles mosquitoes. PCR identification revealed the vector composition was 71% A. arabiensis, 27% A. funestus s.s., and 2% A. gambiae s.s., with small percentages of A. quadriannulatus and unidentified specimens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 provide specific counts of traps, mosquitoes collected, and species composition based on PCR analysis. The data are explicitly stated with clear percentages and sample sizes. The species identification methodology (PCR) is appropriate and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "ed5da10c-96d9-4891-a90c-f0add7af6b9a",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Despite lower abundance of A. funestus s.s. compared to A. arabiensis, the higher sporozoite rate of A. funestus s.s. made its contribution to total PfEIR nearly equivalent to A. arabiensis. The total PfEIR over 38 months was 8.24 ib/person, equivalent to 2.60 ib/person/year.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 present key entomological findings with specific quantitative values. The observation that A. funestus s.s. contributes substantially to PfEIR despite lower abundance is supported by Table 1 data showing higher sporozoite rates. The calculated annual PfEIR is explicitly stated and represents a major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "fc45607b-86d5-410a-be64-4bf9c437567b",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Over 38 months, 5,685 P. falciparum RDT tests were conducted across 3,096 household visits. Among children aged 6-59 months, 25.5% tested positive (612/2,401), while 14.3% of women aged 15-49 y/o tested positive (470/3,284).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 provide explicit sample sizes and positivity rates for the parasitemia surveys. The data are clearly stated with specific numbers and percentages. The higher prevalence in children compared to women is consistent with expected malaria epidemiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "770c9cf9-30b0-4a61-8e95-96e04b12d7cd",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Clear spatiotemporal heterogeneities in PfEIR and PfPR were observed at 30\u00d730 m resolution and monthly intervals. Focal Area A showed lowest PfEIR and PfPR, while Areas B and C showed higher levels. Hotspots underwent seasonal cycles of expansion and retraction, generally disappearing during low transmission seasons except for residual PfPR hotspots that persisted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 describe spatial and temporal patterns supported by the geostatistical mapping (Figures 3-4). The observations of heterogeneity between focal areas and seasonal dynamics are explicitly stated and visually demonstrated. The persistence of PfPR hotspots during low transmission is a notable finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "e82b93dd-4d58-4b51-8095-855245fa12d1",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PfEIR peaked in May and reached a trough in November, while PfPR peaked around July with a trough in November/December. Children consistently had higher PfPR than women. Both PfPR groups decreased from April 2015 to December 2016, then increased. PfEIR was steady for 2 years then decreased after May 2016, reaching zero from June 2017 onward while PfPR increased in both groups between November 2017 and May 2018.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 describe temporal patterns supported by Figure 5. The seasonal cycles, age-group differences, and temporal trends are explicitly shown in the data. The striking divergence where PfEIR reached zero while PfPR increased (C29) is a key observation, though the interpretation requires caution regarding detection limits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "98b4c7ac-3e18-4630-a16b-2aa38e6b17df",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The seasonal patterns of PfEIR and PfPR were nearly concurrent, with PfEIR peak preceding PfPR by one month. Hotspots of PfEIR and PfPR partly overlapped during high transmission seasons but not during low transmission seasons, with some hotspots unique to each metric.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C84 describe the spatiotemporal relationship between PfEIR and PfPR supported by Figures 5-6. The one-month lag and partial overlap of hotspots are explicitly stated and demonstrated. The observation that metrics identify different hotspots is important for surveillance strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "fe2d7c6d-0bb6-4010-ba60-b776e70eaff9",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Among six model classes tested, those with 1-month lagged effect performed best based on RMSE and bias. Empirical models (logit-linear and Beier) outperformed mechanistic models, with the logit-linear model showing the best overall performance, albeit by a small margin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 describe model selection results with reference to Appendix 1\u2014table 6. The comparison of lag times and model types is explicitly stated. However, the manuscript notes the margin of superiority is small (C35), suggesting model differences may not be substantial. The evaluation is appropriate but the practical significance is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "11febe72-cf2b-4dbe-8ed6-7476cde0a30a",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The fitted logit-linear model shows PfPR rises quickly with increasing PfEIR at very low levels, then saturates. At high PfEIR (1.0 to 0.85 ib/person/month), a 0.15 decrease associates with only 1.18% PfPR reduction, while at low PfEIR (0.2 to 0.05 ib/person/month), the same decrease associates with 10.13% PfPR reduction. Even when PfEIR approaches zero, PfPR remains substantial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 present the key findings from the PfEIR-PfPR relationship modeling (Figure 8). The non-linear relationship with saturation at high EIR and steeper response at low EIR is well-documented with specific quantitative examples. This confirms previous cross-sectional findings within a longitudinal framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "f5828b6e-9c8b-40a2-92c0-1c73bf80baf1",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PfPR in children shows a steeper rise with increasing PfEIR than in women. For a decrease from 0.1 to 0.01 ib/person/month, children show 17.86% PfPR reduction (31.07% to 25.52%) while women show 14.90% reduction (16.84% to 14.33%). When transmission approaches zero, PfPR remains consistently high in children.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 describe age-specific differences in the PfEIR-PfPR relationship supported by Figure 8b. The quantitative estimates are explicitly provided with confidence intervals shown. The greater sensitivity in children and persistence of high PfPR at low transmission are important findings for targeting interventions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "c719d112-55e2-4a0e-9990-884a3625eff3",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior to this study, the most recent PfEIR assessment in Chikwawa was from 2002 (183 ib/person/year). The drastic reduction to 2.60 ib/person/year is attributed to increased ITN use (from nil in 2000 to 67.8% in 2014) and ACT introduction in 2007. Mass ITN distributions occurred in 2012 (3 years before study) and April 2016 (during study).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 provide historical context with appropriate citations. The comparison to 2002 data (C46) and attribution to interventions (C47-C50) are reasonable given the documented increases in ITN coverage and ACT use. However, the causal attribution in C47 is appropriately qualified as 'likely due, at least in part,' acknowledging other potential factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "235cdf4a-4c3d-4255-a351-31da224e67e8",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Model-based geostatistics was used to analyze repeated cross-sectional data and estimate fine-scale spatial patterns of PfEIR and PfPR at monthly intervals. This approach allowed identification of hotspots through exceedance probabilities by acknowledging effects of unmeasured risk factors through spatially structured random variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 describe the analytical methodology with appropriate citations. The geostatistical approach is well-established and appropriately applied. The advantage of accounting for unmeasured spatial factors (C52) is a valid methodological strength, though this is more of an inference about the method's capability than a direct result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "54642fef-6d12-49a0-9168-c9e97c4ebecd",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Previous studies demonstrated the non-linear EIR-PR relationship where small EIR changes associate with large PR changes at low EIR, but PR saturates at high EIR. However, no previous study explicitly examined this relationship over time within a single geographical region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 provide appropriate context from prior work (Beier et al. 1999, Smith et al. 2005) and state the novelty of the current study. The claim about no previous longitudinal study (C54) is a knowledge claim that appears reasonable but cannot be fully verified without comprehensive literature review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "ae9bf811-0fd2-4446-bdaf-ee6cc8282bd6",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Monitoring malaria transmission is critical for elimination efforts. PR and EIR are two commonly monitored transmission metrics. Despite extensive intervention coverage and significant reductions in malaria morbidity and mortality over two decades, malaria remains a leading global health problem. Surveillance and monitoring are critical for assessing intervention effectiveness and guiding strategy development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 provide general background context with appropriate citations. These are well-established knowledge claims about malaria epidemiology and control that appropriately frame the study's importance. They represent standard background rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "38dcd029-1272-4ab9-88fb-53c2732c1bc6",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The strengths and limitations of transmission metrics relate to which step of the parasite transmission cycle they measure, and vary across settings and as transmission declines. PR approximates the reservoir of potentially transmissible hosts. While only gametocytes contribute to transmission, they are expensive to detect. RDTs detect asexual-stage antigens, are inexpensive and easily deployed, and capture both symptomatic and asymptomatic infections that likely contribute to transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64, C66 provide appropriate background on transmission metrics with citations. These are well-established concepts in malaria epidemiology that justify the study's approach. The limitations of RDTs (detecting asexual stages rather than gametocytes) are acknowledged, which is important for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "4904318a-8267-4088-af32-cc999525b189",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "EIR estimates parasite transmission intensity from mosquitoes to humans, calculated as HBR \u00d7 SR. EIR accuracy depends on HBR and SR measurement accuracy. Common HBR methods (human landing catch, CDC Light Trap) have standardization issues due to inter-individual variation in attractiveness. The Suna trap uses standardized synthetic odors allowing reliable comparisons. SR precision decreases with fewer mosquitoes collected. Despite limitations, EIR directly describes exposure before post-inoculation factors and provides species-specific transmission information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C76 provide comprehensive background on EIR methodology with appropriate citations. The discussion of measurement challenges and the advantages of Suna traps justifies the methodological choices. These are well-established concepts that appropriately contextualize the study's entomological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "d967382d-d136-4177-ab34-c7f0a758f1ec",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Malaria transmission is heterogeneous in space and time due to multiple factors. Repeated cross-sectional surveys can reveal fine-resolution heterogeneity and identify hotspots for targeted intervention. However, understanding heterogeneity remains challenging because hotspot location and size can depend on which metric is used. Since PR and EIR measure separated transmission cycle components, each provides partial information, and measuring both can provide a fuller picture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 provide appropriate background on transmission heterogeneity and the rationale for multi-metric surveillance, with citations. These concepts justify the study's approach of jointly monitoring PfEIR and PfPR. The acknowledgment that different metrics may identify different hotspots (C79) is important context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    },
+    {
+      "id": "ae448a07-2a0f-49b5-8e4e-1d0c3ca40e54",
+      "content_id": "18ec32db-94d3-47c6-908c-7115b2583236",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study emphasizes the need for integrated malaria control strategies combining vector and human host management monitored by both entomological and parasitemia indices. A 1-month delayed effect of EIR on PR was found, with rapid PR rise at low EIR but no notable PR changes at high EIR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 present the main conclusions stated in the abstract. The recommendation for integrated strategies (C82) is supported by the findings of partial hotspot overlap and non-linear relationships. The 1-month lag and non-linear relationship (C83) are supported by the modeling results (C33-C40).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:21:50.242400Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b0f0993b-b344-4de7-9a74-93a54694e10c",
+      "result_id": "069221f8-01fb-43c2-9920-d38f8a458361"
+    },
+    {
+      "claim_id": "0ec23eca-d227-49c6-aabb-ef355ba8722c",
+      "result_id": "069221f8-01fb-43c2-9920-d38f8a458361"
+    },
+    {
+      "claim_id": "6335e016-5f68-4386-851a-afc7199bc4af",
+      "result_id": "069221f8-01fb-43c2-9920-d38f8a458361"
+    },
+    {
+      "claim_id": "e73c693d-d066-4177-b997-4945992ff461",
+      "result_id": "069221f8-01fb-43c2-9920-d38f8a458361"
+    },
+    {
+      "claim_id": "47a3fdd5-e583-49b5-ba09-00fc3a3fabba",
+      "result_id": "069221f8-01fb-43c2-9920-d38f8a458361"
+    },
+    {
+      "claim_id": "76f96b51-b341-4c84-a8d8-476a53732800",
+      "result_id": "9d4ccf66-4bbf-4c0c-aa22-b5da7b404574"
+    },
+    {
+      "claim_id": "e2df2604-280c-455b-a97d-e967b7076868",
+      "result_id": "9d4ccf66-4bbf-4c0c-aa22-b5da7b404574"
+    },
+    {
+      "claim_id": "ec2c9013-94ce-4786-b8b4-f30bc85a72d2",
+      "result_id": "9d4ccf66-4bbf-4c0c-aa22-b5da7b404574"
+    },
+    {
+      "claim_id": "68688a3c-b47b-43f4-a489-fe1b8f68c450",
+      "result_id": "9d4ccf66-4bbf-4c0c-aa22-b5da7b404574"
+    },
+    {
+      "claim_id": "bb081ec5-6476-4e79-a49c-262c0d728340",
+      "result_id": "9d4ccf66-4bbf-4c0c-aa22-b5da7b404574"
+    },
+    {
+      "claim_id": "2e7792ea-c3a4-41fd-9c3e-7504a023abd1",
+      "result_id": "89a0ff81-14cf-4678-b9e0-028ae0090de5"
+    },
+    {
+      "claim_id": "e23f2e3f-88a1-4109-a804-12d02a4c09ea",
+      "result_id": "89a0ff81-14cf-4678-b9e0-028ae0090de5"
+    },
+    {
+      "claim_id": "7dfbb6b7-978f-4341-88a9-6d8ad81d7a6f",
+      "result_id": "89a0ff81-14cf-4678-b9e0-028ae0090de5"
+    },
+    {
+      "claim_id": "2461ee93-28ca-416a-b1c3-e9edfa4cc09e",
+      "result_id": "89a0ff81-14cf-4678-b9e0-028ae0090de5"
+    },
+    {
+      "claim_id": "5b8dbd13-b1a0-4c54-ae67-0e43beb9fbad",
+      "result_id": "ed5da10c-96d9-4891-a90c-f0add7af6b9a"
+    },
+    {
+      "claim_id": "ceea0dd8-1c19-414c-a739-70a2b4e85a2e",
+      "result_id": "ed5da10c-96d9-4891-a90c-f0add7af6b9a"
+    },
+    {
+      "claim_id": "581e5045-6452-465a-be24-a967b20bb52e",
+      "result_id": "fc45607b-86d5-410a-be64-4bf9c437567b"
+    },
+    {
+      "claim_id": "11698ab7-60ff-4b66-94fd-b8f93b8d20eb",
+      "result_id": "fc45607b-86d5-410a-be64-4bf9c437567b"
+    },
+    {
+      "claim_id": "f5c5e785-7030-497b-bf29-c11cd1ea74c8",
+      "result_id": "770c9cf9-30b0-4a61-8e95-96e04b12d7cd"
+    },
+    {
+      "claim_id": "59328ca1-4aa7-4e63-9227-0b81dd0b6520",
+      "result_id": "770c9cf9-30b0-4a61-8e95-96e04b12d7cd"
+    },
+    {
+      "claim_id": "f2509d36-6998-4ee3-83e1-2561f625715a",
+      "result_id": "770c9cf9-30b0-4a61-8e95-96e04b12d7cd"
+    },
+    {
+      "claim_id": "81d75496-116c-4b38-8afd-10daf960b508",
+      "result_id": "770c9cf9-30b0-4a61-8e95-96e04b12d7cd"
+    },
+    {
+      "claim_id": "87c4855e-b0c1-463a-8552-1d0d1795d97b",
+      "result_id": "e82b93dd-4d58-4b51-8095-855245fa12d1"
+    },
+    {
+      "claim_id": "927181c0-e41b-479b-af29-22c84ddd8fef",
+      "result_id": "e82b93dd-4d58-4b51-8095-855245fa12d1"
+    },
+    {
+      "claim_id": "367bc9b6-3253-4418-9389-9f9ba9afb659",
+      "result_id": "e82b93dd-4d58-4b51-8095-855245fa12d1"
+    },
+    {
+      "claim_id": "921b2002-ec59-4325-8acb-96fdeb319da3",
+      "result_id": "e82b93dd-4d58-4b51-8095-855245fa12d1"
+    },
+    {
+      "claim_id": "b7fae6ee-479e-4365-847b-2351f0f69bb0",
+      "result_id": "e82b93dd-4d58-4b51-8095-855245fa12d1"
+    },
+    {
+      "claim_id": "39709ca5-27b0-45e6-bd88-4aa6f80f5a73",
+      "result_id": "e82b93dd-4d58-4b51-8095-855245fa12d1"
+    },
+    {
+      "claim_id": "16c3d1b8-5ede-483b-859b-d1fee82c5844",
+      "result_id": "98b4c7ac-3e18-4630-a16b-2aa38e6b17df"
+    },
+    {
+      "claim_id": "44148fd4-ff38-4c85-a025-a7b5c16bf853",
+      "result_id": "98b4c7ac-3e18-4630-a16b-2aa38e6b17df"
+    },
+    {
+      "claim_id": "b85243c0-fdad-48e9-bbf2-a795da637080",
+      "result_id": "98b4c7ac-3e18-4630-a16b-2aa38e6b17df"
+    },
+    {
+      "claim_id": "f3666277-27fd-4382-b83f-1984b19caf59",
+      "result_id": "98b4c7ac-3e18-4630-a16b-2aa38e6b17df"
+    },
+    {
+      "claim_id": "d68e1a94-ed2f-41a0-9896-a0fde2549b9e",
+      "result_id": "fe2d7c6d-0bb6-4010-ba60-b776e70eaff9"
+    },
+    {
+      "claim_id": "0a46ef29-7eb1-4585-881d-4b87adea1677",
+      "result_id": "fe2d7c6d-0bb6-4010-ba60-b776e70eaff9"
+    },
+    {
+      "claim_id": "8718502a-43f6-4096-a31b-bd2224d1e2ba",
+      "result_id": "fe2d7c6d-0bb6-4010-ba60-b776e70eaff9"
+    },
+    {
+      "claim_id": "d6579465-72dd-4a59-bd44-fcf8933461a2",
+      "result_id": "11febe72-cf2b-4dbe-8ed6-7476cde0a30a"
+    },
+    {
+      "claim_id": "705856f4-f30a-484c-b07d-7091d0d6c887",
+      "result_id": "11febe72-cf2b-4dbe-8ed6-7476cde0a30a"
+    },
+    {
+      "claim_id": "e227c235-0fe1-41a9-82a1-c53ffbe7dd58",
+      "result_id": "11febe72-cf2b-4dbe-8ed6-7476cde0a30a"
+    },
+    {
+      "claim_id": "625a57b0-34ea-4366-8705-7ed10e3e5a18",
+      "result_id": "11febe72-cf2b-4dbe-8ed6-7476cde0a30a"
+    },
+    {
+      "claim_id": "196f1efb-00c1-4980-a784-b350d061f6a8",
+      "result_id": "11febe72-cf2b-4dbe-8ed6-7476cde0a30a"
+    },
+    {
+      "claim_id": "9af62765-cf43-4c3e-98fa-7633f3b85046",
+      "result_id": "f5828b6e-9c8b-40a2-92c0-1c73bf80baf1"
+    },
+    {
+      "claim_id": "1e2f1560-98ec-4d81-97b0-c10aee91408f",
+      "result_id": "f5828b6e-9c8b-40a2-92c0-1c73bf80baf1"
+    },
+    {
+      "claim_id": "ab73a5a7-c6bf-4b74-b385-34d6732df50b",
+      "result_id": "f5828b6e-9c8b-40a2-92c0-1c73bf80baf1"
+    },
+    {
+      "claim_id": "13450088-e002-4bc0-8da7-c108e14cb929",
+      "result_id": "f5828b6e-9c8b-40a2-92c0-1c73bf80baf1"
+    },
+    {
+      "claim_id": "4d32d495-d693-4a19-a254-bcd8ee369100",
+      "result_id": "f5828b6e-9c8b-40a2-92c0-1c73bf80baf1"
+    },
+    {
+      "claim_id": "939c1692-3700-4733-9882-c9dd4d445279",
+      "result_id": "c719d112-55e2-4a0e-9990-884a3625eff3"
+    },
+    {
+      "claim_id": "292bb850-6c02-4350-b213-b4e83270d43b",
+      "result_id": "c719d112-55e2-4a0e-9990-884a3625eff3"
+    },
+    {
+      "claim_id": "09a4a314-2d33-40e3-99c5-d3f167aeeaa4",
+      "result_id": "c719d112-55e2-4a0e-9990-884a3625eff3"
+    },
+    {
+      "claim_id": "bd42af75-cc02-4317-bda1-a4d539f145af",
+      "result_id": "c719d112-55e2-4a0e-9990-884a3625eff3"
+    },
+    {
+      "claim_id": "b44257db-75c1-46ec-8246-c88fb633bfa7",
+      "result_id": "c719d112-55e2-4a0e-9990-884a3625eff3"
+    },
+    {
+      "claim_id": "0b95070a-435b-45b0-9130-b952794de642",
+      "result_id": "235cdf4a-4c3d-4255-a351-31da224e67e8"
+    },
+    {
+      "claim_id": "bdc54585-37af-4f7a-9e83-3e4cdd523496",
+      "result_id": "235cdf4a-4c3d-4255-a351-31da224e67e8"
+    },
+    {
+      "claim_id": "11c3f9b7-5af8-4d4c-bc6e-5d2809567818",
+      "result_id": "54642fef-6d12-49a0-9168-c9e97c4ebecd"
+    },
+    {
+      "claim_id": "30976426-1214-49bc-9729-959e8d4e61f5",
+      "result_id": "54642fef-6d12-49a0-9168-c9e97c4ebecd"
+    },
+    {
+      "claim_id": "bad11490-6ee4-4e6a-8266-e9ff055780a5",
+      "result_id": "ae9bf811-0fd2-4446-bdaf-ee6cc8282bd6"
+    },
+    {
+      "claim_id": "52bbe9c3-03b2-443c-9c1d-e662b674266f",
+      "result_id": "ae9bf811-0fd2-4446-bdaf-ee6cc8282bd6"
+    },
+    {
+      "claim_id": "017992e8-6c75-44b7-a6e0-ef42a14b8508",
+      "result_id": "ae9bf811-0fd2-4446-bdaf-ee6cc8282bd6"
+    },
+    {
+      "claim_id": "3ee3b380-e112-4ce3-ac44-c1b988b8690e",
+      "result_id": "ae9bf811-0fd2-4446-bdaf-ee6cc8282bd6"
+    },
+    {
+      "claim_id": "073ea3fc-5f67-414a-9b75-6ae5bbc31ca7",
+      "result_id": "ae9bf811-0fd2-4446-bdaf-ee6cc8282bd6"
+    },
+    {
+      "claim_id": "a9175fdd-e60e-41a0-823d-32cb29297534",
+      "result_id": "38dcd029-1272-4ab9-88fb-53c2732c1bc6"
+    },
+    {
+      "claim_id": "8041439e-9701-47cc-aaa3-a9ad15e4875e",
+      "result_id": "38dcd029-1272-4ab9-88fb-53c2732c1bc6"
+    },
+    {
+      "claim_id": "63316017-39a8-4732-9006-ac3b7be82ba7",
+      "result_id": "38dcd029-1272-4ab9-88fb-53c2732c1bc6"
+    },
+    {
+      "claim_id": "19e6da29-6d79-4fd1-b947-4c7e6c99cbee",
+      "result_id": "38dcd029-1272-4ab9-88fb-53c2732c1bc6"
+    },
+    {
+      "claim_id": "c1816e11-8650-4244-aa9e-d51ff7567fb2",
+      "result_id": "38dcd029-1272-4ab9-88fb-53c2732c1bc6"
+    },
+    {
+      "claim_id": "15bb8126-b19a-4693-aebc-21e4b55c13b2",
+      "result_id": "38dcd029-1272-4ab9-88fb-53c2732c1bc6"
+    },
+    {
+      "claim_id": "fd4bfa8e-690b-4861-a29e-874163afbfc3",
+      "result_id": "4904318a-8267-4088-af32-cc999525b189"
+    },
+    {
+      "claim_id": "163e7647-1052-4c81-a04b-745a172e599b",
+      "result_id": "4904318a-8267-4088-af32-cc999525b189"
+    },
+    {
+      "claim_id": "a5ff1a0d-bff7-49e2-936f-e2616b2cdf2c",
+      "result_id": "4904318a-8267-4088-af32-cc999525b189"
+    },
+    {
+      "claim_id": "2e04fba3-5c4a-413b-87fb-0d77c85f9461",
+      "result_id": "4904318a-8267-4088-af32-cc999525b189"
+    },
+    {
+      "claim_id": "be7b83e5-cfe1-4cc7-8753-a7e50ee3b4b6",
+      "result_id": "4904318a-8267-4088-af32-cc999525b189"
+    },
+    {
+      "claim_id": "85921471-91ff-495e-8beb-f27bde1cd147",
+      "result_id": "4904318a-8267-4088-af32-cc999525b189"
+    },
+    {
+      "claim_id": "0c5fed07-e790-49b6-b3b3-f8a658322077",
+      "result_id": "4904318a-8267-4088-af32-cc999525b189"
+    },
+    {
+      "claim_id": "35f67284-5807-4917-a8f4-2093d8416b38",
+      "result_id": "4904318a-8267-4088-af32-cc999525b189"
+    },
+    {
+      "claim_id": "0b605490-2956-4cf9-b804-85d473805588",
+      "result_id": "4904318a-8267-4088-af32-cc999525b189"
+    },
+    {
+      "claim_id": "a591f9f7-f692-4a14-b6d7-65f6451329b9",
+      "result_id": "4904318a-8267-4088-af32-cc999525b189"
+    },
+    {
+      "claim_id": "92a16d53-43ab-4c87-91d3-0c070ccdf2d5",
+      "result_id": "d967382d-d136-4177-ab34-c7f0a758f1ec"
+    },
+    {
+      "claim_id": "dbec12df-22b6-4342-b4e1-a6a55bf865eb",
+      "result_id": "d967382d-d136-4177-ab34-c7f0a758f1ec"
+    },
+    {
+      "claim_id": "0aa7be9d-1938-43a0-bf3f-2137035f0322",
+      "result_id": "d967382d-d136-4177-ab34-c7f0a758f1ec"
+    },
+    {
+      "claim_id": "dcc2e822-e7c6-45f8-8c3c-6b385a9460f4",
+      "result_id": "d967382d-d136-4177-ab34-c7f0a758f1ec"
+    },
+    {
+      "claim_id": "bd0ce719-c39f-4594-b485-aa483ab39397",
+      "result_id": "d967382d-d136-4177-ab34-c7f0a758f1ec"
+    },
+    {
+      "claim_id": "ec0d261a-14a9-4430-bb34-9a839afa424d",
+      "result_id": "ae448a07-2a0f-49b5-8e4e-1d0c3ca40e54"
+    },
+    {
+      "claim_id": "06e91c3b-c8b2-477a-990a-4d28038aa5fe",
+      "result_id": "ae448a07-2a0f-49b5-8e4e-1d0c3ca40e54"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1403 @@
+{
+  "submission": {
+    "id": "e30c8953-b2e3-431e-a83e-f760fb9c5360",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:39:28.373814Z",
+    "updated_at": "2025-12-03T09:39:28.373814Z"
+  },
+  "content": [
+    {
+      "id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "submission_id": "e30c8953-b2e3-431e-a83e-f760fb9c5360",
+      "content_type": "manuscript",
+      "content_text": "# Building a community to engineer synthetic cells and organelles from the bottom-up\n\n## Authors\n\n- Oskar Staufer<sup>1</sup> ([ORCID: 0000-0002-8015-3132](https://orcid.org/0000-0002-8015-3132)) \u2020\n- Jacqueline A De Lora<sup>1</sup> ([ORCID: 0000-0001-5599-7838](https://orcid.org/0000-0001-5599-7838))\n- Eleonora Bailoni<sup>4</sup>\n- Alisina Bazrafshan<sup>5</sup> ([ORCID: 0000-0002-3259-8196](https://orcid.org/0000-0002-3259-8196))\n- Amelie S Benk<sup>1</sup>\n- Kevin Jahnke<sup>1</sup> ([ORCID: 0000-0001-7311-6993](https://orcid.org/0000-0001-7311-6993))\n- Zachary A Manzer<sup>6</sup> ([ORCID: 0000-0002-8225-8990](https://orcid.org/0000-0002-8225-8990))\n- Lado Otrin<sup>7</sup> ([ORCID: 0000-0001-5862-456X](https://orcid.org/0000-0001-5862-456X))\n- Telmo D\u00edez P\u00e9rez<sup>8</sup>\n- Judee Sharon<sup>9</sup> ([ORCID: 0000-0001-5691-0407](https://orcid.org/0000-0001-5691-0407))\n- Jan Steink\u00fchler<sup>10</sup> ([ORCID: 0000-0003-4226-7945](https://orcid.org/0000-0003-4226-7945))\n- Katarzyna P Adamala<sup>9</sup> ([ORCID: 0000-0003-1066-7207](https://orcid.org/0000-0003-1066-7207))\n- Bruna Jacobson<sup>8</sup>\n- Marileen Dogterom<sup>11</sup> ([ORCID: 0000-0002-8803-5261](https://orcid.org/0000-0002-8803-5261))\n- Kerstin G\u00f6pfrich<sup>1</sup> ([ORCID: 0000-0003-2115-3551](https://orcid.org/0000-0003-2115-3551))\n- Darko Stefanovic<sup>8</sup>\n- Susan R Atlas<sup>8</sup> ([ORCID: 0000-0003-1542-2700](https://orcid.org/0000-0003-1542-2700))\n- Michael Grunze<sup>1</sup> ([ORCID: 0000-0002-2335-9513](https://orcid.org/0000-0002-2335-9513))\n- Matthew R Lakin<sup>8</sup>\n- Andrew P Shreve<sup>8</sup> ([ORCID: 0000-0002-9567-3181](https://orcid.org/0000-0002-9567-3181))\n- Joachim P Spatz<sup>1</sup> ([ORCID: 0000-0003-3419-9807](https://orcid.org/0000-0003-3419-9807)) \u2020\n- Gabriel P L\u00f3pez<sup>8</sup> ([ORCID: 0000-0002-5383-0708](https://orcid.org/0000-0002-5383-0708)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Medical Research Heidelberg Germany\n2. Max Planck School Matter to Life Heidelberg Germany\n3. Max Planck Bristol Center for Minimal Biology, University of Bristol Bristol United Kingdom\n4. University of Groningen Groningen Netherlands\n5. Emory University Atlanta United States\n6. Cornell University Ithaca United States\n7. Max Planck Institute for Dynamics of Complex Technical Systems Magdeburg Germany\n8. University of New Mexico Albuquerque United States\n9. University of Minnesota Minneapolis United States\n10. Northwestern University Evanston United States\n11. BaSyC Consortium Delft Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nEmploying concepts from physics, chemistry and bioengineering, 'learning-by-building' approaches are becoming increasingly popular in the life sciences, especially with researchers who are attempting to engineer cellular life from scratch. The SynCell2020/21 conference brought together researchers from different disciplines to highlight progress in this field, including areas where synthetic cells are having socioeconomic and technological impact. Conference participants also identified the challenges involved in designing, manipulating and creating synthetic cells with hierarchical organization and function. A key conclusion is the need to build an international and interdisciplinary research community through enhanced communication, resource-sharing, and educational initiatives.\n\n## Philosophy of the field and past achievements\n\nPhysicists and engineers traditionally focus on the non-living world and apply model systems with reduced complexity to capture the essentials of a living entity, and to gain mechanistic insights into higher-order processes on a micro-, meso- and macroscale. This approach is also becoming more popular in the life sciences, where a \u2018learning-by-building\u2019 strategy is used to design and construct synthetic cells and organelles of reduced but defined complexity (Jia and Schwille, 2019; Ausl\u00e4nder et al., 2017). Early national and transnational initiatives, such as the Max Planck School \u2018Matter to Life\u2019 (https://mattertolife.maxplanckschools.org), the Build-A-Cell research coordination network (https://www.buildacell.org/), the Building a Synthetic Cell (BaSyC) research program (https://www.basyc.nl/about-basyc/), and the International Genetically Engineered Machine competition (https://igem.org/Competition), have been established to advance training, research and collaboration in this exciting new field.\n\nCells are the basic units of life. But their intricate structure and the tightly orchestrated interplay of individual molecular components within cells are far from basic. Most cellular phenomena are not understandable through intuition but require complex analytical systems to provide a mechanistic description of the processes forming living matter. Yet, within the complexity of living cells hide the answers to some of the most fundamental questions in the life sciences, from the emergence of life and the transition from inanimate matter to life, to the development and cure of diseases.\n\nThese compelling and profoundly difficult questions reflect a vision for the future of the field as expressed by the SynCell2020/21 early-career panelists. The philosophical and ethical considerations underlying these questions, e.g., the misuse of synthetic cells for biological warfare, the impact of synthetic cells on natural environments, or the unpredictable nature of completely new life forms, are notable for their contrast with technological and engineering-focused objectives (Gallup et al., 2021).\n\nUsing principles from biology and engineering, interdisciplinary research teams have applied synthetic cells to construct materials and hierarchical structures with life-like properties that recreate essential features of living cells and reach beyond the capabilities of natural cells (Figure 1; Elani et al., 2018; Krinsky et al., 2018; Rampioni et al., 2018; Staufer et al., 2021a; Tian et al., 2019). Cellular functions entail a diverse spectrum of modular components that regulate cell behavior. These include the ability to process chemical and physical signals from extracellular stimuli (information processing and decision making), cellular motions and adaptation to the environment (molecular adaptivity), cellular replication through division (proliferation) and nutrient uptake and garbage disposal (energy homeostasis). These abilities have helped to guide the functional design of synthetic cells and their equipment with modules that allow them to interact with the extracellular environment and to discriminate extracellular signals. For instance, extracellular morphogen sensing systems have been implemented in protocells that are able to change their structure and to discriminate between uni- and counter-directional morphogen gradients (Tian et al., 2019). Tactile behavior in the form of chemo- and phototaxis has also been engineered into synthetic cell surrogates (Bartelt et al., 2018; Pan et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73556/elife-73556-fig1-v2.jpg)\n\n**Figure 1.:** The common objective of the field is to engineer synthetic structures with defined complexity to mimic biological systems on multiple length scales. The creation and characterization of these experimental systems draws on a wide variety of interdisciplinary inputs, including biological cells, biochemical components (such as cell-free TXTL extracts), and control programs that encode desired behavior in a variety of formats. In addition, a broad range of computational and experimental tools are required.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73556/elife-73556-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The global pandemic necessitated the presentation of the program over the next year in a free, virtual format (SynCell2020/21), which greatly enhanced global participation. The world map depicts the origin and diversity of the participants, as well as the major research and educational initiatives in the field of engineering synthetic cells and organelles. Logos indicate organizations that made the conferences possible.\n\nBroadly speaking, there are two primary approaches to construct low-complexity synthetic cells: top-down and bottom-up (Ausl\u00e4nder et al., 2017). Top-down approaches make use of existing living cells and sequentially remove individual components such as single genes (Lachance et al., 2019). This process can be iterated until reaching the absolute lowest point of complexity required for a cell to live. Analogous to synthetic lethality experiments in model organisms, top-down approaches provide descriptive insights into which parts of a cell are most crucial. However, it can be harder to obtain a systems-level understanding of how the parts work together.\n\nIn contrast, the bottom-up approach rationally combines non-living molecules in an understand-by-design approach to activate and exhibit the behaviors of living cells within artificial structures (Buddingh\u2019 and van Hest, 2017). A common defining element of cellular life forms is the ability to replicate a compartmentalized information-storing and self-sustaining, out-of-equilibrium system that manifests itself in specific characteristics, which can be selected in an evolutionary process (Benner, 2010; Damiano and Stano, 2020; Porcar et al., 2011). This could be achieved by engineering a compartmentalized entity that exhibits a metabolism for reproduction purposes and environmental adaptation. For example, a lipid membrane vesicle that can grow and divide by catabolizing external substrates and harboring DNA-encoded genes that specify the enzymes required for catabolism and reproduction. The advantage of the bottom-up approach is that every component of the created system can be located and defined in a quantitative manner, together with specified interactions between molecules.\n\nBut regardless of the approach \u2013 top-down or bottom-up \u2013 the knowledge gained from building synthetic cells has the potential to provide fundamental insights into life and to shape technologies of global impact, such as new vaccination strategies (Dormitzer et al., 2013), routes to overcome antibiotic resistance (Wu et al., 2017), new manufacturing pipelines for synthetic materials (Le Feuvre and Scrutton, 2018), and alternatives to petrochemicals (Shih, 2018).\n\nWithin the last decade, the field of building synthetic cells and organelles has achieved several major technological breakthroughs. A minimal synthetic cell consisting of only 473 genes, capable of metabolizing and reproducing, has been constructed using a top-down approach (Hutchison et al., 2016). With the objective of engineering a minimal synthetic cell synthetic chromosomes have been designed to generate artificial genetic blueprints for operating synthetic cell systems (Greene et al., 2019). In addition, droplet-based synthetic cells with an artificial photosynthetic metabolism that can bind CO2 have been created, and synthetic cell systems for the scalable bio-production of natural plant products have also been built (Miller et al., 2020). Bioengineering concepts emerging from such studies have guided the implementation of new, application-focused technologies, e.g., cell-free expression systems. And most recently, the advanced synthetic genetic codes and technologies to rewire translational processes of protein production have provided the foundation for RNA-based SARS-CoV-2 vaccines (Karik\u00f3 et al., 2008; Mulligan et al., 2020). Together with liposomal and lipid nanoparticle technologies, which program cellular uptake and processing of the RNA content, these vaccines have been a vital tool in the fight against COVID-19 (Park et al., 2021).\n\nExploring the fundamentals of life as illustrated in these brief examples requires diverse skill sets for designing and engineering experimental systems. It further needs an unbiased and creative mind with a strong interdisciplinary background to successfully integrate aspects of physics, chemistry, biology, and the information sciences. Similar to fields that explore artificial intelligence and neuromorphic computing (Valeri et al., 2020), students attracted to synthetic cell research often share enthusiasm and interests that go beyond their primary disciplines, incorporating aspects of philosophy and cognition within their research (e.g., the 'Synthetic Biology, Politics and Philosophy' workshop held at BrisSynBio Meacham and Prado Casanova, 2020). This cross-fertilization provides unique opportunities for attracting young researchers into the field of engineering synthetic cells and organelles (see Box 1 and Box 2 in Supplementary file 1 for selected quotations from young researchers who participated in the SynCell2021 Workshop).\n\n## Recent research directions and bottlenecks\n\nThe creation of compartmentalized, cell-mimicking structures and the integration of coupled transcription-translation (TXTL) systems has seen substantial progress (Garamella et al., 2019). However, considerable challenges, some seemingly paradoxical, remain. Many of these were highlighted at the recent SynCell2020/21 conference (see Figure 1\u2014figure supplement 1 and Tables S1\u2013S5 in Supplementary file 1 for listings of the conference program and links to recordings) and have been extensively reviewed recently (Gallup et al., 2021; Meng and Ellis, 2020).\n\nOne of the most demanding challenges remains the coupling of information-encoding systems with self-replicating cell-like entities (Walker et al., 2017), which can be framed in terms of von Neumann\u00b4s abstract generality about the logic of cell-like, self-replicating automata (von Neumann, 1966) Such entities require both a mechanism to copy the cellular architecture and functionalities that allow copying of genetic information specifying cellular structure and function. Such units need molecular systems that link the functional parts of a synthetic cell to a decoding mechanism that reads the genetic instructions required to autocatalytically build a new cell. They also require a molecular module that copies and reinserts a transcript of the (genetic) instruction into the synthetic daughter cell (Olivi et al., 2021). This is the logical basis of self-reproduction.\n\nThe first steps towards the synthetic construction of such systems were presented at the conference. DNA-encoded genetic systems represent just one implementation of self-reproduction, leaving ample room for designing alternatives to fulfil the basic conditions for a 'living', synthetic cell (Dreher et al., 2021; Otrin et al., 2021). In addition, synthetic cells will also require control programs to orchestrate the interconnected processes of sensing, response and metabolism necessary for replication and other processes relevant for life-like behavior (Lakin and Stefanovic, 2016; Li et al., 2021; Steink\u00fchler et al., 2020).\n\nImportant progress reported at the meeting also included the engineering of synthetic structures with hierarchical organization inspired by eukaryotic life forms. Several implementations of such systems, such as hierarchical intrinsically disordered protein and nucleic acid droplets generated within synthetic cell-like compartments, were presented (Simon et al., 2017; P\u00e9rez et al., 2021). These efforts are aimed at deconvolving the organizational principles of life, including the highly dynamic cross-scale architecture of eukaryotic and multicellular organisms, most apparent during embryogenic development and tissue regeneration.\n\nHow the structural organization of subcellular, cellular and tissue components is hard-wired and how degrees of plasticity in respective structures are regulated, are problems of such immense complexity for which approaches including multi-centered global screening efforts have not been able to resolve the underlying principles. New methods based on in vitro synthetic model systems of lower complexity may provide new insights into these processes.\n\nFor example, a pivotal driving force behind tissue organization consists of genetic feedback loops based on reaction-diffusion processes and hysteresis, as first proposed by Alan Turing in his work on the chemical basis of morphogenesis in the mid-twentieth century (Turing, 1997). This is a prime example of how reductionist approaches in the form of precisely defined models can be applied to the study of complex behaviors in biological systems. Researchers in synthetic biology have recently recreated Turing patterns from protein-based systems and used these to study decision-making during cellular organization and symmetry breaking (Glock et al., 2019). This underscores both the fundamental impact of the questions asked in the field and their longstanding relevance that argues for the need to pursue novel theoretical, computational and experimental approaches by unbiased young scientists working in integrative research communities.\n\nOther approaches have contributed insights into the spatio-temporal dynamics and organization principles of membrane-less organelles (P\u00e9rez et al., 2021). Until recently, studying such dynamic structures in living cells has mostly been limited by a lack of perturbation capabilities and the undefined chemical environment within the cytosol. However, through in vitro reconstitution of intrinsically disordered protein/nucleic acid systems in isolated low-complexity environments, quantitative insights into the molecular and thermodynamic principles needed for assembly and homeostasis of phase-separated organelles has been achieved (Linsenmeier et al., 2019). Understanding the hierarchical organization principles of life will ultimately enable the formulation of the principal laws of decision-making within living matter, and the basis of information processing and signal integration within cell collectives (Staufer et al., 2018; Staufer et al., 2019).\n\nEngineering synthetic cells and organelles is not solely directed towards investigating biological principles, but also holds promise for practical applications. This offers the opportunity to explore an extensive technical repertoire. For instance, microfluidic approaches have been developed to assemble synthetic cells with adjustable and tunable composition. Specifically, cell-sized compartments in the form of water-in-oil droplets that contain proteins, lipids or nucleic acids, provide means of engineering systems capable of genetic information processing and artificial genotype-to-phenotype coupling, where selection is exerted at the level of the synthetic cells\u00b4 phenotype but propagation of a selected trait depends on the relevant genetic information being carried forward (Miller et al., 2020; Staufer et al., 2021b; Staufer et al., 2020; van Vliet et al., 2015; Weiss et al., 2018). Such droplet-based approaches have also been adopted for lipid membrane engineering (Lussier et al., 2021; Steink\u00fchler et al., 2020). Similarly, DNA nanotechnology has allowed to combine programmable molecular architectures with extrinsically controlled functions (Bazrafshan et al., 2020; Jahnke et al., 2020). In a combinatorial approach, integration of DNA nano-architectures with synthetic cells has synergized top-down and bottom-up strategies (Jahnke et al., 2021). These examples demonstrate the potential for technology innovation originating from the field.\n\nAlthough the reductionist approach pursued in the field of engineering synthetic cells and organelles has proven to be powerful for several lines of research, it is also confronted with systematic limitations. Foremost, as an engineering approach that iteratively reduces the complexity of living systems, the construction of synthetic cells will always be subjected to the problem of \u2018hidden variables\u2019 (Garcia et al., 2016). Unobservable or unidentified molecular components of importance to natural systems might be underrepresented or absent in the recreated in vitro system. Such unknown variables could contribute to the stochastic behavior of a system, and biological phenomena could potentially be masked behind noise effects in synthetic cells and organelles.\n\nMoreover, living cells cannot only be considered as the simple sum of their parts. Emergence in living systems is poorly defined and understood, and the possibility to capture this aspect by a modular approach remains to be evaluated. A second systematic limitation of the reductionist approach lies in the fact that reduced complexity does not directly imply increased understanding of a biological phenomenon. This is well illustrated by the creation of minimal bacterial genomes with only 473 genes (Hutchison et al., 2016). Despite the remarkably reduced complexity and size of this genome, 149 of the genes are still of unknown function. Addressing these limitations provides opportunities for ongoing research and collaborative efforts, even as progress continues in advancing understanding and functional applications of synthetic cells and organelles.\n\n## Future perspectives and community\n\nEngineering approaches set the stage for implementing synthetic functional modules capable of performing specific functions in synthetic cells. The successful combination of all individual elements within a single entity will be key to assemble synthetic living cells. This, in turn, requires integrated inter-laboratory solutions that allow for off-the-shelf unification of individual modules. Exchanging expertise between laboratories and universal module interfaces will be essential and will enable broad participation in the field.\n\nDiscussions during the SynCell2020/21 revealed several fundamental strategic frameworks and infrastructure that are needed to achieve such a successful integration of the global community. Firstly, in the interest of effective paywall-free knowledge transfer among researchers, open-access data repositories are needed. This will facilitate transfer of experimental protocols and sharing of data and blueprints for synthetic cell modules, effectively boosting access of interested students to the field. Moreover, standardization efforts that strive to provide universal norms for the design and assembly of synthetic cell modules and interfaces need to be developed. Specific implementations of such platforms could be arranged, inspired by the collaborative software development and version control platform GitHub, which has experienced community-wide acceptance within computer science and engineering fields. The Build-A-Cell network has embraced this approach and has begun to assemble such open-access repositories.\n\nSecondly, engineering synthetic cells and organelles will be a model for new transcontinental educational modalities. SynCell2020/21 was organized by the National Science Foundation (USA) and the Max Planck Society (Germany). It also received support from national research programs, e.g., the Build-A-Cell network (USA-based) and the BaSyC program (Netherlands; Figure 1\u2014figure supplement 1). Presentations by leading researchers in student-centered tutorials were a focus of the conference framework. Community-driven education programs for specialized training in relevant domains (biology, physics, chemistry, microbiology, molecular biology, biophysics, computer science or ethics) will be key for equipping new generations with the necessary skills to successfully engineer living synthetic cells and organelles. International workshops and research summer schools will be important to develop a coherent, long-lasting community that fosters cross-generational collaborations among scholars.\n\nAt present, only a limited number of training and graduate programs focused on the engineering of synthetic cells and organelles have been established, such as the Max Planck School \u2018Matter to Life\u2019, the Cold Spring Harbor Laboratory Summer School on Synthetic Biology, and research programs supported by the US National Science Foundation \u2018Rules of Life\u2019 initiative. Their successful implementation will not only nurture the next generation of scientists but will also train a cohort of researchers to enable industrial applications. If possible, future events should be organized between all major research and teaching initiatives (Figure 1\u2014figure supplement 1) to bring together the global expertise and emerging talent, and to promote a broad distribution of thought leadership across institutions as the field continues to grow and develop.\n\nLastly, following the learning-by-building approach, the field awaits a steadily growing demand for an integrated research infrastructure that provides computational power and specialized courses in molecular and genetic design. This includes molecular modelling of large-scale, whole-cell models to predict the interactions of engineered components with host cells. Access to advanced computational facilities and enhanced algorithms for simulations based on machine learning and optimization techniques, will greatly expand the scope for designing and constructing synthetic cells and organelles. Dedicated research centers, such as the Max Planck\u2013Bristol Center for Minimal Biology, could provide such facilities, as well as technical support for the increasingly important administrative aspects to the field, including technology transfer procedures, handling of intellectual property issues, and curation of specialized genetic parts and molecular module libraries specified for the field (inspired by biobanks such as Addgene and large-scale gene and genome synthesis 'bio foundries', such as those funded by the Department of Energy in the US).\n\nFor all the proposed measures, commitment and support from funding bodies, political and regulatory authorities, and universities with established teaching infrastructure, will be essential. Especially to successfully install a strategic, open-source platform for synthetic biology and student exchange programs, like the ones between the University of New Mexico and the Max Planck Society.\n\nWe also observe that connections to and inspiration drawn from other research communities will be important. For example, research advances addressing origin-of-life questions, the basic principles of life, and the exploration of eukaryogenesis, connect many scientific themes that arise in the study of synthetic cells and organelles. This was highlighted by the observation that many SynCell2020/21 participants are also active in these related communities. Furthermore, expanding the research community in synthetic cells to connect to these and other related scientific communities opens additional opportunities for research support, including that available from private and philanthropic foundations. Recent examples of such initiatives include the 'Life? \u2013 A Fresh Scientific Approach to the Basic Principles of Life' program, supported by the Volkswagen Foundation, and the 'Project on the Origin of the Eukaryotic Cell', sponsored jointly by the Gordon and Betty Moore Foundation and the Simons Foundation.\n\nSpecific measures will include a joint program between the research initiatives mentioned above, aimed towards continued organization of the SynCell conference as a think-tank for community building and research exchange. Moreover, the Build-a-Cell initiative has initiated several focused working groups, e.g., working towards collection and annotation of synthetic cell subtype components or towards establishing in silico modeling frameworks of synthetic cells with predictable behavior. These groups provide an optimal platform to develop future cross-scale-organized infrastructure that will be able to manage between different stakeholders from academia, industry and political authorities, while also serving as an advisory council representing the field\u2019s interest. Furthermore, concentrated efforts will be made to raise awareness in academic faculties and scientific societies towards the importance of establishing relevant teaching schemes in graduate and undergraduate programs.\n\nA compelling model for developing and sharing modular tools across the diverse synthetic biology community can be found in the design of the original Unix multi-user operating system and subsequent community-driven, evolutionary development of Linux (Raymond and Young, 2001). Unix\u2019s 'graceful facilities' enabled users to create complex programs by using software 'pipes' to compose simple modules together: at the same time, the operating system was designed to facilitate communication among programmers as 'the essence of communal computing\u2019 (as seen in the video \u2018The Unix System: Making Computers Easier to Use\u2019). Linux emerged from an unprecedented, worldwide open-source effort by volunteer programmers. These core values of streamlined, modular design and enthusiastic, open, collaborative development can similarly inform and shape progress in the synthetic cell community.\n\n## Conclusions\n\nSynCell2020/21 demonstrated remarkable engagement of a large and geographically diverse community, and potential for global collaboration and transcontinental knowledge-sharing as the foundation for future success in the field. Importantly, a collaborative and well-trained community, including a new generation of young scholars, will be able to communicate the societal impacts of engineering synthetic cells and organelles responsibly and effectively to the public. Particularly with respect to questions of how to share intellectual property to benefit humanity while continuing to reward innovation, biosafety, biosecurity and other unique ethical and philosophical considerations, including the most fundamental question of all: 'what is life?'.\n",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "f0bcf68d-9691-4bac-b809-0949df5e2748",
+      "submission_id": "e30c8953-b2e3-431e-a83e-f760fb9c5360",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Helga Groll, eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73556.sa1](https://doi.org/10.7554/eLife.73556.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Building a community to engineer synthetic cells and organelles from the bottom-up\" to eLife for consideration as a Feature Article. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by 2 members of the eLife Features Team (Helga Groll and Peter Rodgers). The following individuals involved in review of your submission have agreed to reveal their identity: Atul Parikh, Erdinc Sezgin\n\nThe reviewers and editors have discussed the reviews and we have drafted this decision letter to help you prepare a revised submission.\n\nSummary:\n\nThis is a nicely written article that summarizes the proceedings of the SynCell 2020/2021 conference, which brought together a diverse group of early-stage and senior researchers focused on designing, manipulating and creating cell-like synthetic activities.\n\nThe report highlights the importance of building an international and multidisciplinary community dedicated to developing the fundamental understanding and technical know-how to create synthetic cells from the bottom up. It discusses achievements within the emerging field, projects broader impacts, including socioeconomic and technological ones, and identifies challenges and opportunities. It concludes with a call for building an integrated research community through resource-sharing, enhanced communication, and cross-institutional and transnational educational initiatives.\n\nThe fascinating convergence of scientific and technological knowledge with philosophical and ethical considerations will inspire early-career scholars and bring transformative innovations to society.\n\nEssential revisions:\n\n1. To an engaged and informed readership, the article, would serve as a valuable resource and a roadmap if the conference proceedings (a) identified specific milestones, (b) highlighted major accomplishments, and (c) tabulated specific challenges and opportunities that must be addressed to meet the aspirations of the field.\n\nA graphic or a table highlighting the timeline/milestones/opportunities and projecting the future would prove useful.\n\n2. The description of the perceived limitations of the approach needs elaborating. Many features of complex systems are often lost when complexities are reduced and systems dissected to their presumed essential ingredients. But which emergent aspects are important? What does minimal complexity entail? How does minimal complexity change with the increased functionality, adaptability and survivability?\n\n3. The discussion in the role of function in guiding the cellular design appears to be conspicuously missing. What ingredients must be incorporated to recapitulate some of the most basic abilities of the living cell, such as surviving in harsh environments, processing physical and chemical signals from their local environment, making decisions, i.e., selecting a specific phenotype (e.g., gene expression, morphology, organization) from a range of possibilities in response to an extracellular change, or identifying signals from noisy backgrounds?\n\n4. The discussion on hierarchical organization is particularly interesting. I recommend considering insights from the growing body of literature on eukaryogenesis, including possibly a description of the initiative from the Simons-Moore Foundation.\n\n5. It would be important to contemplate on the inclusivity aspect of the field while providing a perspective on the future of this discipline. Almost all research areas are dominated by a few established people or family-like consortiums \u2013 mostly from established countries, which makes it difficult for the young researchers to be part of the community. I cannot say this is the case for this effort authors are presenting here, but it needs to be kept in mind. Clearly, a few programs (such as Max Planck programs) have taken the initiative for this endeavour, but future steps would be stronger if more parties are involved regardless of their geographical whereabouts, career stage, or previous involvement in the established network.\n",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "715e4c08-3d4b-4f8f-907d-5af20cc19520",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C1",
+      "claim": "'Learning-by-building' approaches are becoming increasingly popular in the life sciences, especially with researchers attempting to engineer cellular life from scratch.",
+      "claim_type": "EXPLICIT",
+      "source": "Employing concepts from physics, chemistry and bioengineering, 'learning-by-building' approaches are becoming increasingly popular in the life sciences, especially with researchers who are attempting to engineer cellular life from scratch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general observation about trends in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "a1e1fd6c-07fa-4e91-8dc2-4eb9ccaf3839",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C2",
+      "claim": "The SynCell2020/21 conference brought together researchers from different disciplines to highlight progress in engineering synthetic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The SynCell2020/21 conference brought together researchers from different disciplines to highlight progress in this field, including areas where synthetic cells are having socioeconomic and technological impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference that occurred.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "57f31de7-9fa2-428b-8403-b03fd632cc82",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C3",
+      "claim": "There is a need to build an international and interdisciplinary research community through enhanced communication, resource-sharing, and educational initiatives.",
+      "claim_type": "EXPLICIT",
+      "source": "A key conclusion is the need to build an international and interdisciplinary research community through enhanced communication, resource-sharing, and educational initiatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key conclusion from the conference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "4bf41ad6-6860-4166-96c1-cab61f7f46e6",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C4",
+      "claim": "A 'learning-by-building' strategy is used to design and construct synthetic cells and organelles of reduced but defined complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach is also becoming more popular in the life sciences, where a 'learning-by-building' strategy is used to design and construct synthetic cells and organelles of reduced but defined complexity (Jia and Schwille, 2019; Ausl\u00e4nder et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "d1f7c92d-eb1a-4021-a151-2433860a2a9d",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C5",
+      "claim": "Early national and transnational initiatives have been established to advance training, research and collaboration in the field of synthetic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Early national and transnational initiatives, such as the Max Planck School 'Matter to Life' (https://mattertolife.maxplanckschools.org), the Build-A-Cell research coordination network (https://www.buildacell.org/), the Building a Synthetic Cell (BaSyC) research program (https://www.basyc.nl/about-basyc/), and the International Genetically Engineered Machine competition (https://igem.org/Competition), have been established to advance training, research and collaboration in this exciting new field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific initiatives are named with their URLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "efd46c73-b369-4fec-ab3a-b77e8321556b",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C6",
+      "claim": "Cells are the basic units of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells are the basic units of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental biological principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "33b0705b-4174-4a2e-9639-a237ea4cae37",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C7",
+      "claim": "The intricate structure and tightly orchestrated interplay of individual molecular components within cells are far from basic.",
+      "claim_type": "EXPLICIT",
+      "source": "But their intricate structure and the tightly orchestrated interplay of individual molecular components within cells are far from basic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cellular complexity based on established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "2450f22b-2c27-4a46-a5f2-1fc28f036680",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C8",
+      "claim": "Most cellular phenomena are not understandable through intuition but require complex analytical systems to provide a mechanistic description.",
+      "claim_type": "EXPLICIT",
+      "source": "Most cellular phenomena are not understandable through intuition but require complex analytical systems to provide a mechanistic description of the processes forming living matter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the complexity of cellular biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "3694d046-797b-4210-8ff2-7e1a389c4cb9",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C9",
+      "claim": "Philosophical and ethical considerations underlying synthetic cell research include the misuse of synthetic cells for biological warfare, the impact of synthetic cells on natural environments, and the unpredictable nature of completely new life forms.",
+      "claim_type": "EXPLICIT",
+      "source": "The philosophical and ethical considerations underlying these questions, e.g., the misuse of synthetic cells for biological warfare, the impact of synthetic cells on natural environments, or the unpredictable nature of completely new life forms, are notable for their contrast with technological and engineering-focused objectives (Gallup et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "027c8f20-0c4d-4ded-8765-95495a101253",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C10",
+      "claim": "Interdisciplinary research teams have applied synthetic cells to construct materials and hierarchical structures with life-like properties that recreate essential features of living cells and reach beyond the capabilities of natural cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using principles from biology and engineering, interdisciplinary research teams have applied synthetic cells to construct materials and hierarchical structures with life-like properties that recreate essential features of living cells and reach beyond the capabilities of natural cells (Figure 1; Elani et al., 2018; Krinsky et al., 2018; Rampioni et al., 2018; Staufer et al., 2021a; Tian et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multiple citations and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "2abdf9b9-2f42-4158-85db-39885e11c5ea",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C11",
+      "claim": "Extracellular morphogen sensing systems have been implemented in protocells that are able to change their structure and discriminate between uni- and counter-directional morphogen gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, extracellular morphogen sensing systems have been implemented in protocells that are able to change their structure and to discriminate between uni- and counter-directional morphogen gradients (Tian et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "f6aee33d-e8a3-4d01-88ee-e9f19783f08b",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C12",
+      "claim": "Tactile behavior in the form of chemo- and phototaxis has been engineered into synthetic cell surrogates.",
+      "claim_type": "EXPLICIT",
+      "source": "Tactile behavior in the form of chemo- and phototaxis has also been engineered into synthetic cell surrogates (Bartelt et al., 2018; Pan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "5c61e7ec-f0d6-4a0e-8336-0b4d28f8d227",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C13",
+      "claim": "There are two primary approaches to construct low-complexity synthetic cells: top-down and bottom-up.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly speaking, there are two primary approaches to construct low-complexity synthetic cells: top-down and bottom-up (Ausl\u00e4nder et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "96933d9f-3295-4786-9f8e-1a119af55aec",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C14",
+      "claim": "Top-down approaches make use of existing living cells and sequentially remove individual components such as single genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Top-down approaches make use of existing living cells and sequentially remove individual components such as single genes (Lachance et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "96a00214-7b02-46f8-ac70-20be14005a42",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C15",
+      "claim": "The bottom-up approach rationally combines non-living molecules in an understand-by-design approach to activate and exhibit the behaviors of living cells within artificial structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the bottom-up approach rationally combines non-living molecules in an understand-by-design approach to activate and exhibit the behaviors of living cells within artificial structures (Buddingh' and van Hest, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "b61999b9-9732-4346-839b-822282ca1e61",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C16",
+      "claim": "A common defining element of cellular life forms is the ability to replicate a compartmentalized information-storing and self-sustaining, out-of-equilibrium system that manifests itself in specific characteristics, which can be selected in an evolutionary process.",
+      "claim_type": "EXPLICIT",
+      "source": "A common defining element of cellular life forms is the ability to replicate a compartmentalized information-storing and self-sustaining, out-of-equilibrium system that manifests itself in specific characteristics, which can be selected in an evolutionary process (Benner, 2010; Damiano and Stano, 2020; Porcar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "fd42946b-a0c6-49db-a794-84c5861693ce",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C17",
+      "claim": "The advantage of the bottom-up approach is that every component of the created system can be located and defined in a quantitative manner, together with specified interactions between molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of the bottom-up approach is that every component of the created system can be located and defined in a quantitative manner, together with specified interactions between molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of the bottom-up approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "d5a3519d-fb0b-4221-ba85-fa90280ffaac",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C18",
+      "claim": "Knowledge gained from building synthetic cells has the potential to provide fundamental insights into life and to shape technologies of global impact, such as new vaccination strategies, routes to overcome antibiotic resistance, new manufacturing pipelines for synthetic materials, and alternatives to petrochemicals.",
+      "claim_type": "EXPLICIT",
+      "source": "But regardless of the approach \u2013 top-down or bottom-up \u2013 the knowledge gained from building synthetic cells has the potential to provide fundamental insights into life and to shape technologies of global impact, such as new vaccination strategies (Dormitzer et al., 2013), routes to overcome antibiotic resistance (Wu et al., 2017), new manufacturing pipelines for synthetic materials (Le Feuvre and Scrutton, 2018), and alternatives to petrochemicals (Shih, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations for each application area.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "1c553977-bf68-4286-a182-289df7ef3a5f",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C19",
+      "claim": "A minimal synthetic cell consisting of only 473 genes, capable of metabolizing and reproducing, has been constructed using a top-down approach.",
+      "claim_type": "EXPLICIT",
+      "source": "A minimal synthetic cell consisting of only 473 genes, capable of metabolizing and reproducing, has been constructed using a top-down approach (Hutchison et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "335ee42c-b312-47e9-bea4-d19e8e0f8b74",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C20",
+      "claim": "Synthetic chromosomes have been designed to generate artificial genetic blueprints for operating synthetic cell systems.",
+      "claim_type": "EXPLICIT",
+      "source": "With the objective of engineering a minimal synthetic cell synthetic chromosomes have been designed to generate artificial genetic blueprints for operating synthetic cell systems (Greene et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "7408cc28-9db1-49fc-bdd1-7c8bc9e5a5be",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C21",
+      "claim": "Droplet-based synthetic cells with an artificial photosynthetic metabolism that can bind CO2 have been created.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, droplet-based synthetic cells with an artificial photosynthetic metabolism that can bind CO2 have been created, and synthetic cell systems for the scalable bio-production of natural plant products have also been built (Miller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "e6c77ad8-414c-4d86-aa92-0734f0792db9",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C22",
+      "claim": "Advanced synthetic genetic codes and technologies to rewire translational processes of protein production have provided the foundation for RNA-based SARS-CoV-2 vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "And most recently, the advanced synthetic genetic codes and technologies to rewire translational processes of protein production have provided the foundation for RNA-based SARS-CoV-2 vaccines (Karik\u00f3 et al., 2008; Mulligan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "cf8157f0-5873-4e85-b080-0925e2af0a40",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C23",
+      "claim": "Liposomal and lipid nanoparticle technologies program cellular uptake and processing of RNA content in vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with liposomal and lipid nanoparticle technologies, which program cellular uptake and processing of the RNA content, these vaccines have been a vital tool in the fight against COVID-19 (Park et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "7a10cf29-b007-4da5-be84-82a8196f705f",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C24",
+      "claim": "Exploring the fundamentals of life requires diverse skill sets for designing and engineering experimental systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploring the fundamentals of life as illustrated in these brief examples requires diverse skill sets for designing and engineering experimental systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the interdisciplinary nature of the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "ba3cb786-88e8-48be-9c1b-8246fb42f97d",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C25",
+      "claim": "Students attracted to synthetic cell research often share enthusiasm and interests that go beyond their primary disciplines, incorporating aspects of philosophy and cognition within their research.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to fields that explore artificial intelligence and neuromorphic computing (Valeri et al., 2020), students attracted to synthetic cell research often share enthusiasm and interests that go beyond their primary disciplines, incorporating aspects of philosophy and cognition within their research (e.g., the 'Synthetic Biology, Politics and Philosophy' workshop held at BrisSynBio Meacham and Prado Casanova, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and a specific example.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "3d65ef0c-209e-499b-a3a6-d9e03da904ff",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C26",
+      "claim": "The creation of compartmentalized, cell-mimicking structures and the integration of coupled transcription-translation (TXTL) systems has seen substantial progress.",
+      "claim_type": "EXPLICIT",
+      "source": "The creation of compartmentalized, cell-mimicking structures and the integration of coupled transcription-translation (TXTL) systems has seen substantial progress (Garamella et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "2ce759bf-75e3-4d7c-8a5a-111e1a6b2a6b",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C27",
+      "claim": "One of the most demanding challenges remains the coupling of information-encoding systems with self-replicating cell-like entities.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most demanding challenges remains the coupling of information-encoding systems with self-replicating cell-like entities (Walker et al., 2017), which can be framed in terms of von Neumann\u00b4s abstract generality about the logic of cell-like, self-replicating automata (von Neumann, 1966)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "5a0c170f-c752-476d-ae1e-8c87b6fa9111",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C28",
+      "claim": "Self-replicating entities require both a mechanism to copy the cellular architecture and functionalities that allow copying of genetic information specifying cellular structure and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Such entities require both a mechanism to copy the cellular architecture and functionalities that allow copying of genetic information specifying cellular structure and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical requirement for self-replication based on von Neumann's work.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "ad5eb6bf-48fa-4674-97ae-b2bb3500eae5",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C29",
+      "claim": "DNA-encoded genetic systems represent just one implementation of self-reproduction, leaving ample room for designing alternatives.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA-encoded genetic systems represent just one implementation of self-reproduction, leaving ample room for designing alternatives to fulfil the basic conditions for a 'living', synthetic cell (Dreher et al., 2021; Otrin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "5828b384-a8c0-44f0-83dc-bf7d03b6f1f4",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C30",
+      "claim": "Synthetic cells will require control programs to orchestrate the interconnected processes of sensing, response and metabolism necessary for replication and other processes relevant for life-like behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, synthetic cells will also require control programs to orchestrate the interconnected processes of sensing, response and metabolism necessary for replication and other processes relevant for life-like behavior (Lakin and Stefanovic, 2016; Li et al., 2021; Steink\u00fchler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "49cbd22c-42c1-44ee-a93c-cd979f9e93f2",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C31",
+      "claim": "Important progress includes the engineering of synthetic structures with hierarchical organization inspired by eukaryotic life forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Important progress reported at the meeting also included the engineering of synthetic structures with hierarchical organization inspired by eukaryotic life forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported as progress from the conference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "68b1c9a2-61f0-43f1-ae54-8727694a30b3",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C32",
+      "claim": "Hierarchical intrinsically disordered protein and nucleic acid droplets have been generated within synthetic cell-like compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Several implementations of such systems, such as hierarchical intrinsically disordered protein and nucleic acid droplets generated within synthetic cell-like compartments, were presented (Simon et al., 2017; P\u00e9rez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "e03ede3c-a799-4782-b1e5-82dd210bc718",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C33",
+      "claim": "A pivotal driving force behind tissue organization consists of genetic feedback loops based on reaction-diffusion processes and hysteresis, as first proposed by Alan Turing.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a pivotal driving force behind tissue organization consists of genetic feedback loops based on reaction-diffusion processes and hysteresis, as first proposed by Alan Turing in his work on the chemical basis of morphogenesis in the mid-twentieth century (Turing, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Turing's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "969a043c-b73a-4a58-8af1-dfefb83209c3",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C34",
+      "claim": "Researchers in synthetic biology have recently recreated Turing patterns from protein-based systems and used these to study decision-making during cellular organization and symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers in synthetic biology have recently recreated Turing patterns from protein-based systems and used these to study decision-making during cellular organization and symmetry breaking (Glock et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "cff7bda4-766e-48ce-bace-b55452dbc1d9",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C35",
+      "claim": "Through in vitro reconstitution of intrinsically disordered protein/nucleic acid systems in isolated low-complexity environments, quantitative insights into the molecular and thermodynamic principles needed for assembly and homeostasis of phase-separated organelles has been achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "However, through in vitro reconstitution of intrinsically disordered protein/nucleic acid systems in isolated low-complexity environments, quantitative insights into the molecular and thermodynamic principles needed for assembly and homeostasis of phase-separated organelles has been achieved (Linsenmeier et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "ae009530-d041-44bb-8431-404097a8fcdb",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C36",
+      "claim": "Microfluidic approaches have been developed to assemble synthetic cells with adjustable and tunable composition.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, microfluidic approaches have been developed to assemble synthetic cells with adjustable and tunable composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about technological developments in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "0eb6d8f7-3cc8-45b4-95d5-d94c263c03eb",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C37",
+      "claim": "Cell-sized compartments in the form of water-in-oil droplets that contain proteins, lipids or nucleic acids provide means of engineering systems capable of genetic information processing and artificial genotype-to-phenotype coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, cell-sized compartments in the form of water-in-oil droplets that contain proteins, lipids or nucleic acids, provide means of engineering systems capable of genetic information processing and artificial genotype-to-phenotype coupling, where selection is exerted at the level of the synthetic cells\u00b4 phenotype but propagation of a selected trait depends on the relevant genetic information being carried forward (Miller et al., 2020; Staufer et al., 2021b; Staufer et al., 2020; van Vliet et al., 2015; Weiss et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "f92a80c4-e789-44c8-a208-b3d47d0d7d34",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C38",
+      "claim": "Droplet-based approaches have been adopted for lipid membrane engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "Such droplet-based approaches have also been adopted for lipid membrane engineering (Lussier et al., 2021; Steink\u00fchler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "79aed541-ef7c-4e9c-97f5-b45b1ac26b23",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C39",
+      "claim": "DNA nanotechnology has allowed to combine programmable molecular architectures with extrinsically controlled functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, DNA nanotechnology has allowed to combine programmable molecular architectures with extrinsically controlled functions (Bazrafshan et al., 2020; Jahnke et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "dc62704c-18c6-41c4-9072-4d1d111d2285",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C40",
+      "claim": "Integration of DNA nano-architectures with synthetic cells has synergized top-down and bottom-up strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "In a combinatorial approach, integration of DNA nano-architectures with synthetic cells has synergized top-down and bottom-up strategies (Jahnke et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "f50d1ea3-ac4a-41b2-9fd8-a948f49d58c9",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C41",
+      "claim": "The construction of synthetic cells is subjected to the problem of 'hidden variables' - unobservable or unidentified molecular components of importance to natural systems might be underrepresented or absent in the recreated in vitro system.",
+      "claim_type": "EXPLICIT",
+      "source": "Foremost, as an engineering approach that iteratively reduces the complexity of living systems, the construction of synthetic cells will always be subjected to the problem of 'hidden variables' (Garcia et al., 2016). Unobservable or unidentified molecular components of importance to natural systems might be underrepresented or absent in the recreated in vitro system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and logical reasoning.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "98c96eb7-e784-4000-ad18-af4e7528a3fe",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C42",
+      "claim": "Living cells cannot only be considered as the simple sum of their parts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, living cells cannot only be considered as the simple sum of their parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about emergent properties in biological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "340a897a-ab43-4ead-a026-6233720b6c05",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C43",
+      "claim": "Reduced complexity does not directly imply increased understanding of a biological phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "A second systematic limitation of the reductionist approach lies in the fact that reduced complexity does not directly imply increased understanding of a biological phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical statement about limitations of reductionism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "3fee99ef-28ed-4da6-b7f8-0ae7cfd2bf6f",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C44",
+      "claim": "Despite the remarkably reduced complexity of a minimal bacterial genome with only 473 genes, 149 of the genes are still of unknown function.",
+      "claim_type": "EXPLICIT",
+      "source": "This is well illustrated by the creation of minimal bacterial genomes with only 473 genes (Hutchison et al., 2016). Despite the remarkably reduced complexity and size of this genome, 149 of the genes are still of unknown function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and specific data about gene function.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "738602a3-a6fb-4fbe-83d4-ea43cff83f4e",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C45",
+      "claim": "The successful combination of all individual elements within a single entity will be key to assemble synthetic living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The successful combination of all individual elements within a single entity will be key to assemble synthetic living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about requirements for the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "2865c368-2d82-4b1b-930e-7290424cb806",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C46",
+      "claim": "Integrated inter-laboratory solutions that allow for off-the-shelf unification of individual modules are required.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, requires integrated inter-laboratory solutions that allow for off-the-shelf unification of individual modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about what is needed for progress.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "0f38b664-d5e4-4850-ada4-e6d36023bd7a",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C47",
+      "claim": "Open-access data repositories are needed for effective paywall-free knowledge transfer among researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, in the interest of effective paywall-free knowledge transfer among researchers, open-access data repositories are needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation from the conference discussions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "1039b51b-9b9d-408b-a154-802f8a1144c5",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C48",
+      "claim": "Standardization efforts that strive to provide universal norms for the design and assembly of synthetic cell modules and interfaces need to be developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, standardization efforts that strive to provide universal norms for the design and assembly of synthetic cell modules and interfaces need to be developed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation from the conference discussions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "5ccef1b2-0dfd-460f-9e87-7e891abee62e",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C49",
+      "claim": "The Build-A-Cell network has begun to assemble open-access repositories inspired by GitHub.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific implementations of such platforms could be arranged, inspired by the collaborative software development and version control platform GitHub, which has experienced community-wide acceptance within computer science and engineering fields. The Build-A-Cell network has embraced this approach and has begun to assemble such open-access repositories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about what the Build-A-Cell network is doing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "81db3bb5-b207-4731-8ea8-cd9f598d69ca",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C50",
+      "claim": "SynCell2020/21 was organized by the National Science Foundation (USA) and the Max Planck Society (Germany).",
+      "claim_type": "EXPLICIT",
+      "source": "SynCell2020/21 was organized by the National Science Foundation (USA) and the Max Planck Society (Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference organization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "e3b7ac13-1f18-46a9-ab23-3045d1476260",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C51",
+      "claim": "Only a limited number of training and graduate programs focused on the engineering of synthetic cells and organelles have been established.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, only a limited number of training and graduate programs focused on the engineering of synthetic cells and organelles have been established, such as the Max Planck School 'Matter to Life', the Cold Spring Harbor Laboratory Summer School on Synthetic Biology, and research programs supported by the US National Science Foundation 'Rules of Life' initiative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the current state of educational programs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "76da09fe-5c9c-4526-930b-9e9f8e33317b",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C52",
+      "claim": "The field awaits a steadily growing demand for an integrated research infrastructure that provides computational power and specialized courses in molecular and genetic design.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, following the learning-by-building approach, the field awaits a steadily growing demand for an integrated research infrastructure that provides computational power and specialized courses in molecular and genetic design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about infrastructure needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "5d890e5d-a6de-4138-92a0-8676fc54c411",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C53",
+      "claim": "Access to advanced computational facilities and enhanced algorithms for simulations based on machine learning and optimization techniques will greatly expand the scope for designing and constructing synthetic cells and organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Access to advanced computational facilities and enhanced algorithms for simulations based on machine learning and optimization techniques, will greatly expand the scope for designing and constructing synthetic cells and organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future capabilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "f0fa8665-6847-48e4-83ec-a0ac275903ab",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C54",
+      "claim": "Dedicated research centers, such as the Max Planck\u2013Bristol Center for Minimal Biology, could provide computational facilities and technical support.",
+      "claim_type": "EXPLICIT",
+      "source": "Dedicated research centers, such as the Max Planck\u2013Bristol Center for Minimal Biology, could provide such facilities, as well as technical support for the increasingly important administrative aspects to the field, including technology transfer procedures, handling of intellectual property issues, and curation of specialized genetic parts and molecular module libraries specified for the field (inspired by biobanks such as Addgene and large-scale gene and genome synthesis 'bio foundries', such as those funded by the Department of Energy in the US).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about what research centers could provide.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "6596d38e-1111-4ce8-b196-758fa84a82c8",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C55",
+      "claim": "Commitment and support from funding bodies, political and regulatory authorities, and universities with established teaching infrastructure will be essential.",
+      "claim_type": "EXPLICIT",
+      "source": "For all the proposed measures, commitment and support from funding bodies, political and regulatory authorities, and universities with established teaching infrastructure, will be essential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about requirements for implementing proposed measures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "cc85111e-5695-4cfc-8981-5da3383fcce9",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C56",
+      "claim": "Connections to and inspiration drawn from other research communities, such as those addressing origin-of-life questions, will be important.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe that connections to and inspiration drawn from other research communities will be important. For example, research advances addressing origin-of-life questions, the basic principles of life, and the exploration of eukaryogenesis, connect many scientific themes that arise in the study of synthetic cells and organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the importance of interdisciplinary connections.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "b8a1e8bd-be71-405f-a487-1adb83dc39d8",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C57",
+      "claim": "Many SynCell2020/21 participants are also active in related communities such as origin-of-life research.",
+      "claim_type": "EXPLICIT",
+      "source": "This was highlighted by the observation that many SynCell2020/21 participants are also active in these related communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual observation about conference participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "59763275-ad5b-41c1-9d0c-72e46bea307c",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C58",
+      "claim": "The 'Life? \u2013 A Fresh Scientific Approach to the Basic Principles of Life' program is supported by the Volkswagen Foundation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent examples of such initiatives include the 'Life? \u2013 A Fresh Scientific Approach to the Basic Principles of Life' program, supported by the Volkswagen Foundation, and the 'Project on the Origin of the Eukaryotic Cell', sponsored jointly by the Gordon and Betty Moore Foundation and the Simons Foundation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about funding sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "2b4f1630-706a-4178-83a9-49750b2743bb",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C59",
+      "claim": "The 'Project on the Origin of the Eukaryotic Cell' is sponsored jointly by the Gordon and Betty Moore Foundation and the Simons Foundation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent examples of such initiatives include the 'Life? \u2013 A Fresh Scientific Approach to the Basic Principles of Life' program, supported by the Volkswagen Foundation, and the 'Project on the Origin of the Eukaryotic Cell', sponsored jointly by the Gordon and Betty Moore Foundation and the Simons Foundation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about funding sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "3ecadc9f-c433-45de-8e3a-99fe281de0c9",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C60",
+      "claim": "The Build-a-Cell initiative has initiated several focused working groups working towards collection and annotation of synthetic cell subtype components and establishing in silico modeling frameworks.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the Build-a-Cell initiative has initiated several focused working groups, e.g., working towards collection and annotation of synthetic cell subtype components or towards establishing in silico modeling frameworks of synthetic cells with predictable behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Build-a-Cell activities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "d321b6f6-f666-4cfd-af3c-f19c6b3a8eda",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C61",
+      "claim": "Unix's design enabled users to create complex programs by using software 'pipes' to compose simple modules together.",
+      "claim_type": "EXPLICIT",
+      "source": "Unix's 'graceful facilities' enabled users to create complex programs by using software 'pipes' to compose simple modules together: at the same time, the operating system was designed to facilitate communication among programmers as 'the essence of communal computing' (as seen in the video 'The Unix System: Making Computers Easier to Use').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Unix design with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "fcf59ad5-615b-4866-b27a-b7885617ff0c",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C62",
+      "claim": "Linux emerged from an unprecedented, worldwide open-source effort by volunteer programmers.",
+      "claim_type": "EXPLICIT",
+      "source": "Linux emerged from an unprecedented, worldwide open-source effort by volunteer programmers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Linux development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "9cd6ff4c-0cd1-4a11-ab5d-133e9117bd08",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C63",
+      "claim": "Core values of streamlined, modular design and enthusiastic, open, collaborative development can inform and shape progress in the synthetic cell community.",
+      "claim_type": "EXPLICIT",
+      "source": "These core values of streamlined, modular design and enthusiastic, open, collaborative development can similarly inform and shape progress in the synthetic cell community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the Unix/Linux example.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "fb8e5d84-277a-40cb-b6df-0a350209bee4",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C64",
+      "claim": "SynCell2020/21 demonstrated remarkable engagement of a large and geographically diverse community.",
+      "claim_type": "EXPLICIT",
+      "source": "SynCell2020/21 demonstrated remarkable engagement of a large and geographically diverse community, and potential for global collaboration and transcontinental knowledge-sharing as the foundation for future success in the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "8435192b-376a-4b87-94c7-6e579dfb4ee7",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C65",
+      "claim": "A collaborative and well-trained community will be able to communicate the societal impacts of engineering synthetic cells and organelles responsibly and effectively to the public.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, a collaborative and well-trained community, including a new generation of young scholars, will be able to communicate the societal impacts of engineering synthetic cells and organelles responsibly and effectively to the public.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about community capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "43312b7c-c346-4f54-97b5-a075b6797ad0",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C69",
+      "claim": "The creation and characterization of synthetic systems draws on a wide variety of interdisciplinary inputs, including biological cells, biochemical components, and control programs.",
+      "claim_type": "EXPLICIT",
+      "source": "The common objective of the field is to engineer synthetic structures with defined complexity to mimic biological systems on multiple length scales. The creation and characterization of these experimental systems draws on a wide variety of interdisciplinary inputs, including biological cells, biochemical components (such as cell-free TXTL extracts), and control programs that encode desired behavior in a variety of formats.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "3ced0c09-3fcc-441b-a565-6b88d1d2bec8",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "claim_id": "C70",
+      "claim": "A broad range of computational and experimental tools are required for engineering synthetic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a broad range of computational and experimental tools are required.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "17ac7807-1ddc-4f3d-aad8-c5c1029aa69e",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The SynCell2020/21 conference successfully brought together a large, geographically diverse international community of researchers from different disciplines to discuss progress in engineering synthetic cells and organelles. The conference was organized by the National Science Foundation (USA) and the Max Planck Society (Germany) and demonstrated remarkable engagement and potential for global collaboration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C50, and C64 are factual statements about the conference that are directly verifiable from the manuscript and Figure 1\u2014figure supplement 1, which shows participation from 43 countries across 287 institutions with 675 attendees. These claims are well-documented and consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "ada680df-595b-434d-991e-37eaef36bccf",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The conference identified a key need to build an international and interdisciplinary research community through enhanced communication, resource-sharing, and educational initiatives. This requires integrated inter-laboratory solutions, open-access data repositories, standardization efforts, and commitment from funding bodies and institutions. The authors draw parallels to the Unix/Linux model of modular design and collaborative development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C45-C48, C55, C63, and C65 represent coherent recommendations and conclusions from the conference discussions. These are logical inferences about community needs that are consistently presented throughout the manuscript, though they represent aspirational goals rather than demonstrated achievements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "84fed0ba-4028-4379-9688-49759945a8f6",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Learning-by-building approaches are becoming increasingly popular in the life sciences for engineering synthetic cells and organelles of reduced but defined complexity. Early national and transnational initiatives have been established to advance this field. This approach is motivated by the complexity of cellular systems, which are the basic units of life but require complex analytical systems to understand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C8 provide context about the field and are supported by citations (C4, C5) and established biological knowledge (C6-C8). These claims accurately describe the philosophical foundation and motivation for synthetic cell research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "398b9f27-e79a-46ac-95f9-343f9cdd5cf3",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "There are two primary approaches to construct synthetic cells: top-down (removing components from existing cells) and bottom-up (rationally combining non-living molecules). The bottom-up approach allows every component to be located and defined quantitatively. A defining element of cellular life is the ability to replicate a compartmentalized, information-storing, self-sustaining system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 describe established methodological approaches in the field, supported by citations (C13-C16). The characterization of these approaches and their advantages is consistent with the cited literature and represents accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "42157de4-abf0-4fba-be9d-d1ac105cffef",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Interdisciplinary research teams have applied synthetic cells to construct materials and hierarchical structures with life-like properties that recreate and exceed natural cell capabilities. Examples include morphogen sensing systems, chemo- and phototaxis. This requires diverse interdisciplinary inputs including biological cells, biochemical components, control programs, and computational/experimental tools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12, C69-C70 describe achievements in the field supported by multiple citations and Figure 1. The examples provided are specific and well-documented in the cited literature, demonstrating concrete progress in synthetic cell engineering.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "84c21418-50c9-43d1-b8c7-b00a1cd29134",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Knowledge from building synthetic cells has potential for global impact including new vaccination strategies, overcoming antibiotic resistance, manufacturing synthetic materials, and alternatives to petrochemicals. Major achievements include a minimal 473-gene synthetic cell, synthetic chromosomes, artificial photosynthetic systems, and RNA-based SARS-CoV-2 vaccines using synthetic genetic codes and lipid nanoparticle technologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 describe both potential applications and concrete achievements, all supported by citations. The connection between synthetic biology advances and COVID-19 vaccines (C22-C23) is particularly well-documented and represents a significant real-world impact of the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "fd5a1d71-6b4e-463e-8820-9a423e9d3fd8",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "While progress has been made in creating compartmentalized structures and integrating transcription-translation systems, a major challenge remains coupling information-encoding systems with self-replicating cell-like entities. Such entities require mechanisms to copy both cellular architecture and genetic information. DNA-encoded systems represent just one implementation, and synthetic cells will require control programs to orchestrate sensing, response, and metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 identify current progress and remaining challenges in the field, supported by citations including von Neumann's theoretical framework. These represent well-recognized challenges in synthetic cell engineering and are consistently described in the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "8fe43fdc-7a6f-49e2-b7ba-96ae6084baac",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Progress reported at the conference included engineering synthetic structures with hierarchical organization inspired by eukaryotic life, including intrinsically disordered protein/nucleic acid droplets. Researchers have recreated Turing patterns from protein-based systems to study cellular organization and symmetry breaking. In vitro reconstitution has provided quantitative insights into assembly and homeostasis of phase-separated organelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 describe recent progress in understanding hierarchical organization and phase separation, supported by citations including Turing's foundational work and recent experimental studies. These represent significant advances in understanding cellular organization principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "09e7066f-291f-4790-80f2-4c08a605a8da",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Microfluidic and droplet-based approaches have been developed to assemble synthetic cells with tunable composition, enabling genetic information processing and artificial genotype-to-phenotype coupling. DNA nanotechnology has enabled programmable molecular architectures with controlled functions. Integration of DNA nano-architectures with synthetic cells has synergized top-down and bottom-up strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 describe technological advances in synthetic cell assembly and engineering, supported by multiple citations. These represent concrete methodological developments that have enabled progress in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "9bd70a76-7d1d-408f-9404-0c3641c0b557",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The reductionist approach faces systematic limitations including the problem of 'hidden variables' where unobservable components may be absent in synthetic systems. Living cells exhibit emergent properties beyond the sum of their parts. Reduced complexity does not directly imply increased understanding, as illustrated by the minimal 473-gene bacterial genome where 149 genes remain of unknown function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 identify important limitations of the reductionist approach, supported by citations and the concrete example of the minimal genome. The specific data point about 149 genes of unknown function (C44) effectively illustrates the conceptual limitation described in C43.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "678b616b-cd45-4c43-95af-148d75868cef",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Synthetic cell research involves philosophical and ethical considerations including potential misuse for biological warfare, environmental impacts, and unpredictable new life forms. The field requires diverse interdisciplinary skill sets, and students are often attracted by interests beyond their primary disciplines, incorporating philosophy and cognition into their research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C24-C25 describe the interdisciplinary nature and ethical dimensions of the field, supported by citations. The observation about student interests (C25) is supported by specific examples including a workshop at BrisSynBio.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "af134f2e-2e4d-45d6-bfa8-a507c1ec5884",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Build-A-Cell network has begun assembling open-access repositories inspired by GitHub and has initiated focused working groups for component annotation and in silico modeling. Currently, only a limited number of training and graduate programs focused on synthetic cells have been established, including the Max Planck School 'Matter to Life' and programs supported by the NSF 'Rules of Life' initiative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C51, and C60 are factual statements about existing initiatives and programs. These are verifiable and represent the current state of educational and collaborative infrastructure in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "35613b60-176f-495c-b541-54dfc998b507",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The field anticipates growing demand for integrated research infrastructure providing computational power and specialized courses. Access to advanced computational facilities and machine learning algorithms will greatly expand the scope for designing synthetic cells. Dedicated research centers like the Max Planck\u2013Bristol Center for Minimal Biology could provide such facilities and technical support.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C54 are speculative statements about future needs and capabilities (marked as SPECULATION in evidence_type). While these represent reasonable projections based on field trends, they are not demonstrated results but rather aspirational goals and predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "9a17038a-2f12-464e-a22a-a59b95a1111c",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Connections to related research communities addressing origin-of-life questions and eukaryogenesis are important, as evidenced by many SynCell2020/21 participants being active in these communities. Recent initiatives include the 'Life?' program supported by the Volkswagen Foundation and the 'Project on the Origin of the Eukaryotic Cell' sponsored by the Gordon and Betty Moore Foundation and Simons Foundation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 describe interdisciplinary connections and funding initiatives. The observation about participant overlap (C57) is a factual statement about the conference, and the funding initiatives (C58-C59) are verifiable facts about existing programs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    },
+    {
+      "id": "10ba146b-d166-4278-9089-ddf3069204ac",
+      "content_id": "97f66791-fc59-4e9a-b012-6d60f4c48abb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors draw parallels between synthetic cell community development and the Unix/Linux model. Unix's design enabled modular composition of programs, while Linux emerged from worldwide open-source collaboration. These core values of modular design and collaborative development can inform progress in the synthetic cell community.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 present an analogy between software development and synthetic cell research. The factual statements about Unix/Linux (C61-C62) are accurate, and the inference that these principles could inform synthetic cell research (C63) is a reasonable conceptual framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:39:28.373814Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a1e1fd6c-07fa-4e91-8dc2-4eb9ccaf3839",
+      "result_id": "17ac7807-1ddc-4f3d-aad8-c5c1029aa69e"
+    },
+    {
+      "claim_id": "81db3bb5-b207-4731-8ea8-cd9f598d69ca",
+      "result_id": "17ac7807-1ddc-4f3d-aad8-c5c1029aa69e"
+    },
+    {
+      "claim_id": "fb8e5d84-277a-40cb-b6df-0a350209bee4",
+      "result_id": "17ac7807-1ddc-4f3d-aad8-c5c1029aa69e"
+    },
+    {
+      "claim_id": "57f31de7-9fa2-428b-8403-b03fd632cc82",
+      "result_id": "ada680df-595b-434d-991e-37eaef36bccf"
+    },
+    {
+      "claim_id": "738602a3-a6fb-4fbe-83d4-ea43cff83f4e",
+      "result_id": "ada680df-595b-434d-991e-37eaef36bccf"
+    },
+    {
+      "claim_id": "2865c368-2d82-4b1b-930e-7290424cb806",
+      "result_id": "ada680df-595b-434d-991e-37eaef36bccf"
+    },
+    {
+      "claim_id": "0f38b664-d5e4-4850-ada4-e6d36023bd7a",
+      "result_id": "ada680df-595b-434d-991e-37eaef36bccf"
+    },
+    {
+      "claim_id": "1039b51b-9b9d-408b-a154-802f8a1144c5",
+      "result_id": "ada680df-595b-434d-991e-37eaef36bccf"
+    },
+    {
+      "claim_id": "6596d38e-1111-4ce8-b196-758fa84a82c8",
+      "result_id": "ada680df-595b-434d-991e-37eaef36bccf"
+    },
+    {
+      "claim_id": "9cd6ff4c-0cd1-4a11-ab5d-133e9117bd08",
+      "result_id": "ada680df-595b-434d-991e-37eaef36bccf"
+    },
+    {
+      "claim_id": "8435192b-376a-4b87-94c7-6e579dfb4ee7",
+      "result_id": "ada680df-595b-434d-991e-37eaef36bccf"
+    },
+    {
+      "claim_id": "715e4c08-3d4b-4f8f-907d-5af20cc19520",
+      "result_id": "84fed0ba-4028-4379-9688-49759945a8f6"
+    },
+    {
+      "claim_id": "4bf41ad6-6860-4166-96c1-cab61f7f46e6",
+      "result_id": "84fed0ba-4028-4379-9688-49759945a8f6"
+    },
+    {
+      "claim_id": "d1f7c92d-eb1a-4021-a151-2433860a2a9d",
+      "result_id": "84fed0ba-4028-4379-9688-49759945a8f6"
+    },
+    {
+      "claim_id": "efd46c73-b369-4fec-ab3a-b77e8321556b",
+      "result_id": "84fed0ba-4028-4379-9688-49759945a8f6"
+    },
+    {
+      "claim_id": "33b0705b-4174-4a2e-9639-a237ea4cae37",
+      "result_id": "84fed0ba-4028-4379-9688-49759945a8f6"
+    },
+    {
+      "claim_id": "2450f22b-2c27-4a46-a5f2-1fc28f036680",
+      "result_id": "84fed0ba-4028-4379-9688-49759945a8f6"
+    },
+    {
+      "claim_id": "5c61e7ec-f0d6-4a0e-8336-0b4d28f8d227",
+      "result_id": "398b9f27-e79a-46ac-95f9-343f9cdd5cf3"
+    },
+    {
+      "claim_id": "96933d9f-3295-4786-9f8e-1a119af55aec",
+      "result_id": "398b9f27-e79a-46ac-95f9-343f9cdd5cf3"
+    },
+    {
+      "claim_id": "96a00214-7b02-46f8-ac70-20be14005a42",
+      "result_id": "398b9f27-e79a-46ac-95f9-343f9cdd5cf3"
+    },
+    {
+      "claim_id": "b61999b9-9732-4346-839b-822282ca1e61",
+      "result_id": "398b9f27-e79a-46ac-95f9-343f9cdd5cf3"
+    },
+    {
+      "claim_id": "fd42946b-a0c6-49db-a794-84c5861693ce",
+      "result_id": "398b9f27-e79a-46ac-95f9-343f9cdd5cf3"
+    },
+    {
+      "claim_id": "027c8f20-0c4d-4ded-8765-95495a101253",
+      "result_id": "42157de4-abf0-4fba-be9d-d1ac105cffef"
+    },
+    {
+      "claim_id": "2abdf9b9-2f42-4158-85db-39885e11c5ea",
+      "result_id": "42157de4-abf0-4fba-be9d-d1ac105cffef"
+    },
+    {
+      "claim_id": "f6aee33d-e8a3-4d01-88ee-e9f19783f08b",
+      "result_id": "42157de4-abf0-4fba-be9d-d1ac105cffef"
+    },
+    {
+      "claim_id": "43312b7c-c346-4f54-97b5-a075b6797ad0",
+      "result_id": "42157de4-abf0-4fba-be9d-d1ac105cffef"
+    },
+    {
+      "claim_id": "3ced0c09-3fcc-441b-a565-6b88d1d2bec8",
+      "result_id": "42157de4-abf0-4fba-be9d-d1ac105cffef"
+    },
+    {
+      "claim_id": "d5a3519d-fb0b-4221-ba85-fa90280ffaac",
+      "result_id": "84c21418-50c9-43d1-b8c7-b00a1cd29134"
+    },
+    {
+      "claim_id": "1c553977-bf68-4286-a182-289df7ef3a5f",
+      "result_id": "84c21418-50c9-43d1-b8c7-b00a1cd29134"
+    },
+    {
+      "claim_id": "335ee42c-b312-47e9-bea4-d19e8e0f8b74",
+      "result_id": "84c21418-50c9-43d1-b8c7-b00a1cd29134"
+    },
+    {
+      "claim_id": "7408cc28-9db1-49fc-bdd1-7c8bc9e5a5be",
+      "result_id": "84c21418-50c9-43d1-b8c7-b00a1cd29134"
+    },
+    {
+      "claim_id": "e6c77ad8-414c-4d86-aa92-0734f0792db9",
+      "result_id": "84c21418-50c9-43d1-b8c7-b00a1cd29134"
+    },
+    {
+      "claim_id": "cf8157f0-5873-4e85-b080-0925e2af0a40",
+      "result_id": "84c21418-50c9-43d1-b8c7-b00a1cd29134"
+    },
+    {
+      "claim_id": "3d65ef0c-209e-499b-a3a6-d9e03da904ff",
+      "result_id": "fd5a1d71-6b4e-463e-8820-9a423e9d3fd8"
+    },
+    {
+      "claim_id": "2ce759bf-75e3-4d7c-8a5a-111e1a6b2a6b",
+      "result_id": "fd5a1d71-6b4e-463e-8820-9a423e9d3fd8"
+    },
+    {
+      "claim_id": "5a0c170f-c752-476d-ae1e-8c87b6fa9111",
+      "result_id": "fd5a1d71-6b4e-463e-8820-9a423e9d3fd8"
+    },
+    {
+      "claim_id": "ad5eb6bf-48fa-4674-97ae-b2bb3500eae5",
+      "result_id": "fd5a1d71-6b4e-463e-8820-9a423e9d3fd8"
+    },
+    {
+      "claim_id": "5828b384-a8c0-44f0-83dc-bf7d03b6f1f4",
+      "result_id": "fd5a1d71-6b4e-463e-8820-9a423e9d3fd8"
+    },
+    {
+      "claim_id": "49cbd22c-42c1-44ee-a93c-cd979f9e93f2",
+      "result_id": "8fe43fdc-7a6f-49e2-b7ba-96ae6084baac"
+    },
+    {
+      "claim_id": "68b1c9a2-61f0-43f1-ae54-8727694a30b3",
+      "result_id": "8fe43fdc-7a6f-49e2-b7ba-96ae6084baac"
+    },
+    {
+      "claim_id": "e03ede3c-a799-4782-b1e5-82dd210bc718",
+      "result_id": "8fe43fdc-7a6f-49e2-b7ba-96ae6084baac"
+    },
+    {
+      "claim_id": "969a043c-b73a-4a58-8af1-dfefb83209c3",
+      "result_id": "8fe43fdc-7a6f-49e2-b7ba-96ae6084baac"
+    },
+    {
+      "claim_id": "cff7bda4-766e-48ce-bace-b55452dbc1d9",
+      "result_id": "8fe43fdc-7a6f-49e2-b7ba-96ae6084baac"
+    },
+    {
+      "claim_id": "ae009530-d041-44bb-8431-404097a8fcdb",
+      "result_id": "09e7066f-291f-4790-80f2-4c08a605a8da"
+    },
+    {
+      "claim_id": "0eb6d8f7-3cc8-45b4-95d5-d94c263c03eb",
+      "result_id": "09e7066f-291f-4790-80f2-4c08a605a8da"
+    },
+    {
+      "claim_id": "f92a80c4-e789-44c8-a208-b3d47d0d7d34",
+      "result_id": "09e7066f-291f-4790-80f2-4c08a605a8da"
+    },
+    {
+      "claim_id": "79aed541-ef7c-4e9c-97f5-b45b1ac26b23",
+      "result_id": "09e7066f-291f-4790-80f2-4c08a605a8da"
+    },
+    {
+      "claim_id": "dc62704c-18c6-41c4-9072-4d1d111d2285",
+      "result_id": "09e7066f-291f-4790-80f2-4c08a605a8da"
+    },
+    {
+      "claim_id": "f50d1ea3-ac4a-41b2-9fd8-a948f49d58c9",
+      "result_id": "9bd70a76-7d1d-408f-9404-0c3641c0b557"
+    },
+    {
+      "claim_id": "98c96eb7-e784-4000-ad18-af4e7528a3fe",
+      "result_id": "9bd70a76-7d1d-408f-9404-0c3641c0b557"
+    },
+    {
+      "claim_id": "340a897a-ab43-4ead-a026-6233720b6c05",
+      "result_id": "9bd70a76-7d1d-408f-9404-0c3641c0b557"
+    },
+    {
+      "claim_id": "3fee99ef-28ed-4da6-b7f8-0ae7cfd2bf6f",
+      "result_id": "9bd70a76-7d1d-408f-9404-0c3641c0b557"
+    },
+    {
+      "claim_id": "3694d046-797b-4210-8ff2-7e1a389c4cb9",
+      "result_id": "678b616b-cd45-4c43-95af-148d75868cef"
+    },
+    {
+      "claim_id": "7a10cf29-b007-4da5-be84-82a8196f705f",
+      "result_id": "678b616b-cd45-4c43-95af-148d75868cef"
+    },
+    {
+      "claim_id": "ba3cb786-88e8-48be-9c1b-8246fb42f97d",
+      "result_id": "678b616b-cd45-4c43-95af-148d75868cef"
+    },
+    {
+      "claim_id": "5ccef1b2-0dfd-460f-9e87-7e891abee62e",
+      "result_id": "af134f2e-2e4d-45d6-bfa8-a507c1ec5884"
+    },
+    {
+      "claim_id": "e3b7ac13-1f18-46a9-ab23-3045d1476260",
+      "result_id": "af134f2e-2e4d-45d6-bfa8-a507c1ec5884"
+    },
+    {
+      "claim_id": "3ecadc9f-c433-45de-8e3a-99fe281de0c9",
+      "result_id": "af134f2e-2e4d-45d6-bfa8-a507c1ec5884"
+    },
+    {
+      "claim_id": "76da09fe-5c9c-4526-930b-9e9f8e33317b",
+      "result_id": "35613b60-176f-495c-b541-54dfc998b507"
+    },
+    {
+      "claim_id": "5d890e5d-a6de-4138-92a0-8676fc54c411",
+      "result_id": "35613b60-176f-495c-b541-54dfc998b507"
+    },
+    {
+      "claim_id": "f0fa8665-6847-48e4-83ec-a0ac275903ab",
+      "result_id": "35613b60-176f-495c-b541-54dfc998b507"
+    },
+    {
+      "claim_id": "cc85111e-5695-4cfc-8981-5da3383fcce9",
+      "result_id": "9a17038a-2f12-464e-a22a-a59b95a1111c"
+    },
+    {
+      "claim_id": "b8a1e8bd-be71-405f-a487-1adb83dc39d8",
+      "result_id": "9a17038a-2f12-464e-a22a-a59b95a1111c"
+    },
+    {
+      "claim_id": "59763275-ad5b-41c1-9d0c-72e46bea307c",
+      "result_id": "9a17038a-2f12-464e-a22a-a59b95a1111c"
+    },
+    {
+      "claim_id": "2b4f1630-706a-4178-83a9-49750b2743bb",
+      "result_id": "9a17038a-2f12-464e-a22a-a59b95a1111c"
+    },
+    {
+      "claim_id": "d321b6f6-f666-4cfd-af3c-f19c6b3a8eda",
+      "result_id": "10ba146b-d166-4278-9089-ddf3069204ac"
+    },
+    {
+      "claim_id": "fcf59ad5-615b-4866-b27a-b7885617ff0c",
+      "result_id": "10ba146b-d166-4278-9089-ddf3069204ac"
+    },
+    {
+      "claim_id": "9cd6ff4c-0cd1-4a11-ab5d-133e9117bd08",
+      "result_id": "10ba146b-d166-4278-9089-ddf3069204ac"
+    }
+  ],
+  "comparisons": []
+}

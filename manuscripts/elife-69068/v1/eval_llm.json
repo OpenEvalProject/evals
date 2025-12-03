@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C30",
+      "C31",
+      "C57",
+      "C59",
+      "C132",
+      "C151",
+      "C152"
+    ],
+    "result": "Baseline comparison reveals systematic differences between modalities: electrophysiology shows higher responsiveness (larger fraction of responsive neurons across all stimulus types and areas), while calcium imaging shows higher selectivity (sharper tuning) among responsive neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C30, C31, C57, C59 are directly supported by experimental data shown in Figure 2E-G and related figures. The differences are quantified using Jensen-Shannon distance and are consistent across multiple stimulus types (drifting gratings, static gratings, natural scenes, natural movies) and visual areas (V1, LM, AL, PM, AM). Statistical significance is demonstrated through p-values and effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C58",
+      "C130",
+      "C131"
+    ],
+    "result": "Preference metrics (preferred temporal frequency, direction, orientation, spatial frequency) are largely invariant across modalities and robust to data processing choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C58, C130 are supported by data in Figure 2F and supplementary figures showing similar distributions of preference metrics between modalities with low Jensen-Shannon distances. C131 provides the mechanistic explanation that categorical preference metrics are inherently robust to the choice of event extraction method and forward model application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C127",
+      "C160"
+    ],
+    "result": "Applying a spikes-to-calcium forward model (MLSpike) to electrophysiology data partially reconciles selectivity differences but not responsiveness differences. Nearly all neurons increased selectivity after forward model application, reducing Jensen-Shannon distance from 0.41 to 0.14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are directly supported by data in Figure 5H-I showing increased selectivity and quantified improvement in distribution matching. However, C4 and C5 indicate only partial reconciliation, as responsiveness differences remained (C100, C124). The forward model's sparsifying effect (C97, C160) provides mechanistic explanation for selectivity changes but cannot account for responsiveness differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C121",
+      "C122",
+      "C123",
+      "C134",
+      "C165",
+      "C166"
+    ],
+    "result": "Responsiveness differences can only be reconciled by restricting analysis to neurons with low contamination (ISI violations score = 0) in electrophysiology data. Contamination by neighboring neurons reduces selectivity and increases apparent responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 are supported by Figure 6C-D showing that the most restrictive contamination thresholds maximize the match between synthetic and experimental imaging distributions. C165 quantifies that reconciliation requires either strict ISI filtering or removing 61-93% of least active imaging neurons. The inference about contamination effects (C122, C166) is well-supported by the systematic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C164",
+      "C214"
+    ],
+    "result": "Extracellular electrophysiology exhibits selection bias, predominantly capturing highly active units while missing or merging low-firing-rate units. The observed unit density (42,000 neurons/mm\u00b3) is much lower than the known cortical density (~90,000 neurons/mm\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C115-C116 provide quantitative evidence for sampling bias through density calculations with appropriate citations. C111-C114 describe the technical limitations of spike sorting based on established knowledge. C36 and C164 are well-supported inferences from the data showing that forward model application did not change responsiveness (C98, C100), pointing to electrophysiology sampling bias rather than calcium indicator limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C47",
+      "C97",
+      "C161",
+      "C162"
+    ],
+    "result": "Calcium-indicator binding dynamics sparsify neural responses and supralinearly amplify spike bursts. Events detected from 2P imaging are heavily biased toward short bouts of high firing rate rather than individual spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C47 is supported by citation to ground truth data (Huang et al., 2021). C97, C161-C162 describe the forward model's sparsifying effect supported by Figure 5 data showing that burst-dependent calcium transients have amplitudes several orders of magnitude above median, while isolated spikes are indistinguishable from noise. This mechanistic understanding is consistent with the observed selectivity increases after forward model application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C136",
+      "C137",
+      "C153"
+    ],
+    "result": "Event detection method significantly impacts functional metrics. Exact \u21130 has low false positive rate (8\u00b12%) while NND has higher rate (21\u00b14%). Applying amplitude thresholds (3-5\u03c3) to NND events can reconcile selectivity but different parameters are needed for responsiveness, indicating this cannot fully explain modality differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by ground truth analysis (N=32 recordings, p=8e-7). C73-C80 show systematic effects of amplitude thresholding on metrics (Figure 3B-G). However, C82 correctly notes that different parameters are needed for different metrics and stimulus types, limiting the utility of this approach. The conclusion (C81, C153) that event detection impacts metrics is well-supported, but the inability to consistently reconcile both responsiveness and selectivity indicates additional factors are at play.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C125",
+      "C135"
+    ],
+    "result": "Filtering imaging neurons by event rate increases responsiveness but worsens selectivity differences. The most active 7-39% of imaged neurons (varying by area) best match synthetic imaging responsiveness, but these neurons are also more selective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are directly supported by Figure 6A-B showing systematic effects of event rate filtering. C118 provides a reasonable inference that more active neurons are more responsive. However, C119-C120 demonstrate that this approach cannot fully reconcile differences because it worsens selectivity matching, indicating the complexity of the relationship between activity level and functional properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C66",
+      "C67",
+      "C143",
+      "C168"
+    ],
+    "result": "Laminar sampling bias and behavioral differences (running speed) do not account for the observed differences in functional properties between modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C60-C61 are supported by Figure 2\u2014figure supplement 2 showing minimal change after resampling to match layer distributions. C66-C67 are supported by Figure 2\u2014figure supplement 4 showing negligible impact of matching running behavior. The experimental design with standardized protocols (C26) strengthens these conclusions. However, C144 appropriately notes this may not generalize to less carefully matched studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C169"
+    ],
+    "result": "Transgenic expression of GCaMP6f does not substantially impact functional metrics. While dense excitatory Cre lines showed slight increase in burst fraction, this was not associated with changes in responsiveness or selectivity that could account for modality differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are supported by data in Figure 4 comparing wild-type (N=17 mice, 45.9\u00b17.5 neurons/area) to GCaMP6f transgenic mice (N=19 mice, 55.8\u00b115.6 neurons/area). The slight increase in burst fraction (C90) is documented but C91-C94 correctly conclude this cannot explain the large discrepancies between modalities. The sample sizes are adequate and the comparison is well-controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C170",
+      "C180",
+      "C181"
+    ],
+    "result": "Forward model parameter optimization shows that the initially chosen parameters (based on mode of imaging dataset distribution) were near optimal. Brute-force exploration of 1000 parameter combinations could not significantly improve the match between real and synthetic imaging data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by Figure 5\u2014figure supplement 1 showing parameter sweep results. C107 notes that parameter combinations that would reduce responsiveness were observed in <1% of actual neurons. C109-C110 show parameter distributions across genotypes were largely overlapping with no correlation to functional metrics. This systematic exploration strengthens confidence that parameter choice is not the primary limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Functional classification analysis reveals that modality-specific biases in responsiveness propagate to higher-order conclusions. Using a 40% responsiveness threshold for ephys (vs 25% for imaging) reconciles the functional class distributions, showing similar meta-preferences across modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 are supported by Figure 8 showing dramatically different functional class distributions with naive analysis. C149-C150 demonstrate that adjusting the responsiveness threshold (from 25% to 40%) minimizes Jensen-Shannon distance and reveals similar functional organization. This illustrates how baseline metric differences can propagate to affect biological interpretations, though the need for different thresholds itself reflects the underlying responsiveness bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C49",
+      "C50",
+      "C55"
+    ],
+    "result": "The study used standardized Allen Brain Observatory pipelines with matched experimental conditions, analyzing 41,578 neurons from 170 mice (imaging) and 11,030 neurons from 52 mice (ephys) from five visual cortical areas, using consistent response metrics including lifetime sparseness as the primary selectivity measure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are well-documented in the manuscript and figures. C26 is supported by Figure 1C-D showing matched pipelines. Sample sizes (C41-C42) are clearly stated and adequate. The choice of lifetime sparseness (C50) is justified as a general metric applicable to all stimulus types, with high correlations to traditional metrics demonstrated (C52-C54: R=0.69-0.95).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C218",
+      "C220"
+    ],
+    "result": "The primary contributions to differences in functional metrics come from (1) the intrinsic nature of the spikes-to-calcium transfer function and (2) selection bias of extracellular electrophysiology. Even after accounting for known factors, imaging still displayed higher selectivity than ephys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C171 is a well-supported conclusion synthesizing results from multiple analyses ruling out other factors (laminar sampling, behavior, transgenes, forward model parameters). C172 acknowledges remaining differences (Figure 5I, Figure 8B-D) even after corrections. C218 and C220 appropriately summarize that functional metrics are sensitive to multiple biases at different levels (data processing, hardware, physical signals), making it difficult to determine which are most impactful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Potential explanations for remaining selectivity differences include: residual undetected contamination in ephys (ISI violations score = 0 doesn't guarantee no contamination), missed spikes reducing simulated calcium amplitudes, non-stationary spike-to-calcium transfer functions, and prolonged depolarization events (PDEs) that produce large calcium increases indistinguishable from bursts in extracellular recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative explanations (C173-C176) for remaining differences after corrections. C177 cites evidence for PDEs from simultaneous recordings (Ledochowitsch et al., 2019), but whether these account for the observed differences is not tested. C174 suggests potential solutions (denser sampling, improved spike sorting) but these are future work. These represent reasonable hypotheses but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202",
+      "C213"
+    ],
+    "result": "The authors recommend that researchers examine sensitivity of their functional metrics to: (1) signal contamination during spike sorting, (2) application of forward models, (3) filtering by event rate, and (4) false positives in event detection. If metrics are insensitive, results can be compared directly across modalities; otherwise, sensitivity analysis establishes bounds on expected discrepancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These recommendations (C200-C202) are well-justified by the systematic analyses presented. The study demonstrates that different metrics have different sensitivities to these factors (e.g., preference metrics are robust while responsiveness and selectivity are sensitive). C213 appropriately frames the goal as establishing guidelines for interpretation rather than declaring one modality superior. These are practical, evidence-based recommendations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "Future work with high-density probes (Neuropixels Ultra, >10x denser) and combined probe/imaging experiments could better quantify electrophysiology selection bias and provide more direct ground-truth information about the relationship between modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are proposals for future work (C203-C207). C204 describes ongoing work but no results are presented. C205-C206 make reasonable predictions about benefits of higher-density probes (easier disambiguation of nearby neurons, better quantification of selection bias) but these are speculative. C207 suggests combined approaches could provide ground truth but acknowledges technical difficulties. These represent logical next steps but are not tested in the current study.",
+    "result_type": "MINOR"
+  }
+]

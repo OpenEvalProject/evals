@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors developed a new SPR method using W6/32 antibody binding to constrain Bmax, enabling accurate measurement of ultra-low TCR/pMHC affinities (KD ~1 mM) at 37\u00b0C. The new method (Bmax constrained) showed similar KD values to the standard method (Bmax fitted) for higher affinities but revealed 100-fold discrepancies for lower-affinity interactions, with the standard method consistently underestimating KD due to over-fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C47 collectively describe the development and validation of a new SPR method. The linear relationship between W6/32 binding and TCR Bmax (C41), the validation at higher affinities (C44), and the improved precision for low-affinity interactions (C47) provide strong experimental support. The method addresses a critical technical limitation (C39) and is well-justified by the data in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Primary human T cells respond to ultra-low-affinity pMHCs (KD ~1 mM) without a sharp affinity threshold. T cell responses gradually decreased with decreasing affinity, with enhanced discrimination powers (\u03b1=1.8-2.1) observed across na\u00efve, memory, and blasted T cells for both 1G4 and A6 TCRs, despite ~1000-fold variation in antigen sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C31, C48-C52 are supported by experimental data in Figure 2 showing dose-response curves and potency correlations with KD. The gradual loss of response without a sharp threshold directly contradicts the prevailing view of near-perfect discrimination. The consistency across T cell types and TCRs strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C62"
+    ],
+    "result": "Re-analysis of published data using revised SPR measurements revealed that the original murine TCR data (OT-I, 3.L2, 2B4) suggesting near-perfect discrimination (\u03b1~9) was based on inaccurate affinity measurements. Using revised binding data, the discrimination power for these TCRs was appreciably lower (\u03b1=2.1-3.2), similar to other mouse and human TCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 are supported by re-analysis of published functional and binding data shown in Figure 3. The key observation is that revised SPR data (C55, C57) showed no binding for E1 and wider KD variation than originally reported, leading to lower discrimination powers. This systematic re-analysis across multiple TCRs provides strong evidence that the discrepancy stems from measurement issues rather than biological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "TCR discrimination is enhanced (\u03b1~2.0) compared to conventional cell-surface receptors (cytokine receptors, RTKs, GPCRs, CARs: \u03b1\u22641), but is imperfect rather than near-perfect. The BCR showed intermediate discrimination (\u03b1=1.3), suggesting the TCR is unique in its enhanced ligand discriminatory powers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32, C88-C91 are supported by systematic analysis of published data for multiple receptor types shown in Figure 6. The comparison is comprehensive and uses consistent methodology across receptor families. However, the BCR conclusion (C90) is preliminary, based on a single study, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The kinetic proofreading mechanism fits the experimental data with 2.67 biochemical steps and a 2.8 s time delay. The KP mechanism can simultaneously achieve sensitivity and imperfect discrimination (\u03b1=2.0) but not near-perfect discrimination (\u03b1=9). The higher discrimination on APCs versus plates results from a slower rate per step rather than more steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C80-C86 are supported by model fitting to experimental data (Figure 5) using ABC-SMC parameter estimation. The finding that 2.67 steps is near the minimum required for achieving both sensitivity and imperfect discrimination (C86) is supported by theoretical analysis. The mechanistic explanation for differences between APCs and plates (C82) is a logical inference from the fitted parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "TCR discrimination power shows no significant differences between CD4+ and CD8+ T cells or across different T cell responses, consistent with a TCR-proximal mechanism. However, abolishing CD4/CD8 co-receptor binding significantly increased discrimination power, suggesting co-receptors increase sensitivity at the cost of decreased discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by analysis of published data shown in Figure 3K-N. The lack of differences between CD4+ and CD8+ T cells (C65-C66) and the significant increase in discrimination when co-receptors are abolished (C68) are statistically supported. The inference about co-receptor function (C69) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Discrimination power decreased from \u03b1=2.0 on APCs to \u03b1=0.93-1.1 when antigen was presented on artificial surfaces in isolation. Addition of co-signaling receptors CD2 and LFA-1 ligands (CD58 or ICAM1) increased discrimination power from 1.1 to >1.5 and amplified the fold-variation in potency from 414-fold to >1,600-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 are supported by analysis of published data (C70) and experimental validation with 1G4 T cell blasts (C71-C76) shown in Figure 4. The hypothesis about CD2 and LFA-1 (C73) is tested experimentally (C74-C76), providing strong support for the conclusion that these co-signaling receptors enhance discrimination (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The estimated kinetic proofreading time delay of 2.8 s is at the shorter end of tetramer-based estimates (8 s, 95% CI: 3-19 s) and consistent with the 4 s delay between pMHC binding and LAT phosphorylation. The small number of steps (2.67) is reasonable because only sequential biochemical modifications contribute to proofreading, not parallel modifications like multiple ITAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 compare the fitted parameters to published measurements and provide mechanistic interpretation. The comparisons to published estimates (C92-C93) are appropriately cited. The explanation for the small number of steps (C94-C95) is a logical inference supported by citation to the complexity of TCR signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The fractional number of kinetic proofreading steps (2.67) suggests that at least one intermediate proofreading step may be sustained upon pMHC unbinding, potentially representing the time delay between pMHC unbinding and dephosphorylation of the TCR signaling complex or ZAP70 unbinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C98 are speculative interpretations of the fractional step number. While the speculation is reasonable and supported by citations to relevant mechanisms, there is no direct experimental evidence in this study to test this hypothesis. The fractional number could have alternative explanations not explored here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C18",
+      "C19",
+      "C20",
+      "C122",
+      "C123"
+    ],
+    "result": "The imperfect discrimination power (\u03b1=2) explains why self-pMHCs can induce autoimmune diseases and anti-tumor responses. With 10-100-fold lower affinity for self-antigens, T cells can become activated if self-antigen expression increases by 100-10,000-fold, and such increases have been implicated in T cell-mediated autoimmunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C18-C20, C122-C123 connect the experimental findings to clinical observations. The mathematical relationship between discrimination power and required antigen concentration increase is sound. The connection to increased self-antigen expression in autoimmunity is supported by recent citations (C123). This provides a mechanistic explanation for previously inconsistent observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Co-signaling receptors CD2 and LFA-1 appear to be required for enhanced TCR discrimination. The preliminary observation that BCR may also exhibit enhanced discrimination suggests a role for ITAM-based signaling, though ITAM-based CARs did not show enhanced discrimination, possibly due to defects in ITAM signaling in these artificial molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C102 present competing lines of evidence about the mechanism of enhanced discrimination. While C100 is supported by experimental data (Figure 4), the speculation about ITAM-based signaling (C101) is contradicted by CAR data (C102), though with a caveat about CAR defects. The BCR observation is preliminary (single study), making the overall conclusion uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "While ligand potency usually correlates with 3D affinity measured by SPR, there are occasional exceptions where structural features (unusual docking geometry preventing co-receptor binding), mechanical forces, or 2D binding parameters may better predict T cell responses. However, one study found 2D and 3D parameters equally accurate for the 1E6 TCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 discuss limitations and exceptions to the correlation between 3D affinity and potency. Each exception is supported by appropriate citations (C104-C107). The conclusion that exceptions exist (C108) is a reasonable inference, and the authors appropriately acknowledge this may explain lack of correlation in some published studies they analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The basic kinetic proofreading mechanism accurately captures antigen discrimination within the physiological affinity range on APCs, but cannot explain antagonism or optimal affinity phenomena. These can be explained by augmenting the KP mechanism with feedbacks (for antagonism) or limited signaling (for optimal affinity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 appropriately scope the applicability of the basic KP model. C109 is supported by the model fitting results. C110 acknowledges established knowledge about the limitations of basic KP. C111-C113 cite published work showing how augmented models can explain these phenomena. This provides appropriate context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors introduce the discriminatory power (\u03b1) as a quantitative measure of discrimination independent from sensitivity. They propose using 'discrimination' to refer to tolerance of changes in binding parameters and 'specificity/promiscuity' to refer to tolerance of peptide sequence diversity. Using this terminology, co-receptors decrease discrimination but can increase promiscuity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 present methodological and terminological contributions. The discriminatory power \u03b1 is well-defined and consistently applied throughout the study (C114). The terminological proposal (C117) addresses ambiguity in the field (C115-C116). The application to co-receptors (C118-C119) is supported by data (Figure 3M-N) and published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The prevailing view that TCR discrimination is near-perfect was based on early influential studies with three murine TCRs showing sharp affinity thresholds. However, systematic measurements to quantify discrimination have not been performed, and technical difficulties in measuring very weak TCR/pMHC affinities (KD 1-100 \u03bcM) at 37\u00b0C have hampered efforts. Issues with the original OT-I measurements, including biphasic binding possibly due to protein aggregates, may explain the reported small threefold affinity change between activating and non-activating ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C11-C28 establish the background and motivation for the study. The prevailing view (C2, C11) is well-supported by multiple citations. The technical challenges (C21-C23) are established knowledge. The critical analysis of the original OT-I data (C24-C28) is supported by citations to more recent studies showing different results (C26-C27), providing strong motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "The therapeutic use of T cells in eliminating tumor cells is often limited by toxicities to lower-affinity off-tumor antigens. The factors identified that control antigen discrimination may enable engineering of T cells with improved discriminatory powers that selectively reduce responses to lower-affinity off-tumor antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is supported by citation to clinical observations. However, C125 is speculative about potential applications. While the speculation is reasonable given the findings about factors controlling discrimination (co-signaling receptors, etc.), there is no experimental evidence in this study demonstrating that these factors can be manipulated to improve discrimination in a therapeutic context.",
+    "result_type": "MINOR"
+  }
+]

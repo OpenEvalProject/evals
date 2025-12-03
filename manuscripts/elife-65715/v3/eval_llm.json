@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Meta-analysis of discovery and cross-validation cohorts identified 14 Bonferroni-significant differentially methylated sites (DMS), 4 CpG islands, and 6 gene-body regions showing differential methylation between PDB cases and controls. All replicated DMS showed hypermethylation in PDB cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C46-C57 provide converging evidence from site-level and region-level analyses with appropriate statistical corrections (FDR and Bonferroni). The discovery-replication design with meta-analysis strengthens the findings. The consistent direction of effect (hypermethylation) across all replicated sites adds credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C87",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "A multivariate OPLS-DA classifier trained on pooled differentially methylated sites discriminated PDB cases from controls in the cross-validation set with sensitivity 0.84, specificity 0.81, and AUC 92.8%. A reduced 95-site 'Best subset' achieved AUC 82.5%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C87, C116-C120 demonstrate robust classifier performance with appropriate train-test split methodology. The high AUC values (92.8% for pooled sites, 82.5% for best subset) are well-documented in Figure 4. The comparison across different feature sets (DMS, DMR islands, promoters, gene bodies) provides comprehensive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Expression quantitative trait-methylation (eQTM) analysis identified two functional differentially methylated loci: cg10964367 associated with ARHGEF10 expression (p=3.9\u00d710\u207b\u2079) and cg26724726 associated with LTB expression (p=1.10\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C98-C100 provide functional validation of methylation changes through eQTM analysis using the BIOS QTL database. The highly significant p-values and use of an established reference database support these associations, though the analysis was performed in blood rather than bone tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Functional enrichment analysis revealed that differentially methylated loci were associated with osteoclast differentiation, mechanical loading, immune function, and viral infection pathways, with many genes falling into multiple functional categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C121-C123 are supported by consistent results from both IPA and Gene Ontology enrichment analyses. The functional categories align with known PDB pathophysiology. However, the enrichment is based on inference from gene annotations rather than direct functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Comparison with published blood-bone methylation correlation data showed that 8 of 14 DMS genes and 6 of 10 DMR genes had CpG sites with high correlation (r\u00b2>0.74) between blood and bone tissue, partially addressing tissue-specificity concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97, C124-C128 acknowledge the tissue-specificity limitation and provide evidence that a substantial proportion of identified sites show blood-bone correlation based on Ebrahimi et al. 2021. This strengthens the relevance of blood-based findings, though not all sites were validated and the correlation data comes from a different cohort.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The discovery set showed age and sex imbalances between cases and controls, but the cross-validation set was balanced. SQSTM1 mutations were present in ~14% of PDB cases and absent in all controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by Table 1 data. The acknowledgment of demographic differences in the discovery set is important for interpretation. The statistical models appropriately adjusted for these confounders. SQSTM1 mutation frequencies align with known PDB genetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The study used samples from the UK-based PRISM trial (253 PDB cases, 280 controls from 27 centers), with DNA methylation profiling via Illumina 450K array. After quality control, 232 cases and 260 controls with 429,156 CpG sites were analyzed. Power calculations indicated adequate sample size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C114 provide comprehensive methodological details supported by appropriate citations and quality control procedures. The power calculation (C108-C109) based on Tsai and Bell 2015 justifies the sample size. The multi-center design enhances generalizability, though the cross-validation set is not fully independent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C101"
+    ],
+    "result": "This is the first study to demonstrate that epigenetic factors contribute to PDB pathogenesis, and epigenetic markers may offer diagnostic potential for disease prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13-C15, C101 represent the study's main conclusions. While the differential methylation findings are supported (C13), the causal claim about 'contribution to pathogenesis' is inferential and cannot be established from cross-sectional data. The diagnostic potential (C14) is speculative and requires prospective validation. The novelty claim (C15, C101) appears accurate but the authors acknowledge methylation changes could be disease consequences rather than causes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The identified differentially methylated genes have established biological functions relevant to bone metabolism, immune responses, and cellular processes based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C86 provide biological context for identified genes through appropriate citations to previous literature. These claims establish the plausibility of the findings but do not demonstrate that the methylation changes in these genes are functionally relevant in PDB. The literature support is appropriate for contextualizing results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Previous studies showed elevated mumps antibodies in PDB cases, and despite lack of evidence for ongoing viral infection, the methylation data suggests altered host immune responses to infection may be involved in PDB, supporting an osteoimmunological basis for the disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C92 integrate prior findings with current results to propose mechanistic hypotheses. While C89-C90 are supported by citations, C91-C92 are speculative interpretations. The connection between differential methylation of immune-related genes and altered immune responses is inferential. The osteoimmunological hypothesis is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C95"
+    ],
+    "result": "The classifier performance (AUC 82.5% for best subset) is promising for clinical application, and epigenetic markers combined with genetic profiling may be valuable for assessing PDB risk in individuals with family history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88, C95 represent speculative conclusions about clinical utility. While the classifier performance is documented, the authors appropriately note that 'future experiments are warranted' (C88). The proposal for risk assessment (C95) is reasonable but requires prospective validation. The cross-sectional design cannot establish whether methylation changes precede disease onset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C115"
+    ],
+    "result": "The Best subset sites showed significantly higher effect sizes (mean 0.011\u00b10.019) compared to other pooled sites (0.007\u00b10.01, p=1.9\u00d710\u207b\u00b3). The genomic inflation factor was 1.23.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C115 provide quality control metrics. The effect size comparison (C102) demonstrates that the feature selection identified sites with larger methylation differences. The genomic inflation factor of 1.23 (C115) indicates modest inflation, which could reflect population stratification or polygenic signal, but is within acceptable range for EWAS studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C93",
+      "C94"
+    ],
+    "result": "Background claims about PDB characteristics, genetics, environmental factors, and treatment are established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16-C39, C93-C94 provide established background knowledge about PDB, appropriately cited from previous literature. These contextual claims are well-supported and provide necessary background for interpreting the study's findings.",
+    "result_type": "MINOR"
+  }
+]

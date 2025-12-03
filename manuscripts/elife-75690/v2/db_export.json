@@ -1,0 +1,1407 @@
+{
+  "submission": {
+    "id": "bfc3f04f-1e01-4d38-8b76-0c3f239b85b2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:32:49.981350Z",
+    "updated_at": "2025-12-03T12:32:49.981350Z"
+  },
+  "content": [
+    {
+      "id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "submission_id": "bfc3f04f-1e01-4d38-8b76-0c3f239b85b2",
+      "content_type": "manuscript",
+      "content_text": "# Zebrafish airinemes optimize their shape between ballistic and diffusive search\n\n## Authors\n\n- Sohyeon Park<sup>1</sup>\n- Hyunjoong Kim<sup>2</sup> ([ORCID: 0000-0002-3534-2102](https://orcid.org/0000-0002-3534-2102))\n- Yi Wang<sup>3</sup> ([ORCID: 0000-0001-7409-4335](https://orcid.org/0000-0001-7409-4335))\n- Dae Seok Eom<sup>1</sup> ([ORCID: 0000-0002-0617-8788](https://orcid.org/0000-0002-0617-8788)) \u2020\n- Jun Allard<sup>1</sup> ([ORCID: 0000-0002-2758-4515](https://orcid.org/0000-0002-2758-4515)) \u2020\n\n### Affiliations\n\n1. Center for Complex Biological Systems, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))\n2. Center for Mathematical Biology, Department of Mathematics, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n3. Department of Developmental & Cell Biology, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))\n4. Department of Physics and Astronomy, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))\n5. Department of Mathematics, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn addition to diffusive signals, cells in tissue also communicate via long, thin cellular protrusions, such as airinemes in zebrafish. Before establishing communication, cellular protrusions must find their target cell. Here, we demonstrate that the shapes of airinemes in zebrafish are consistent with a finite persistent random walk model. The probability of contacting the target cell is maximized for a balance between ballistic search (straight) and diffusive search (highly curved, random). We find that the curvature of airinemes in zebrafish, extracted from live-cell microscopy, is approximately the same value as the optimum in the simple persistent random walk model. We also explore the ability of the target cell to infer direction of the airineme\u2019s source, finding that there is a theoretical trade-off between search optimality and directional information. This provides a framework to characterize the shape, and performance objectives, of non-canonical cellular protrusions in general.\n\n## Introduction\n\nThe question of optimal search \u2014 given a spatiotemporal process, what parameters allow a searcher to find its target with greatest success? \u2014 arises in many biological contexts for a variety of spatiotemporal processes. Examples of relevant processes include searchers moving by diffusion or random walks (Lawley et al., 2020; Berg and Purcell, 1977), Levy walks (Fricke et al., 2016), and ballistic motion (straight trajectories [Bressloff, 2020], which, e.g., arises in chromosome search by microtubules [Holy et al., 1994; Paul et al., 2009]), and combinations of these (Berg, 1993). Another type of motion is the persistent random walk (PRW), which has intermediate properties between diffusion and ballistic motion. PRWs have been studied in continuous space (Schakenraad et al., 2020; Gro\u00dfmann et al., 2016; Khatami et al., 2016) and on a lattice (Tejedor et al., 2012), have been used with variants to model cell migration (Jones et al., 2015; Weavers et al., 2016; Harrison and Baker, 2018), and are mathematically equivalent to worm-like chains, which have been used to study the search by a polymer for a binding partner (Mogre et al., 2020). For all the above processes, optimality depends on parameters of the searcher (e.g., whether searchers operate individually or many in parallel; Schuss et al., 2019; Lawley and Madrid, 2020), the target(s), and the environment (De Bruyne et al., 2020; Bressloff, 2020).\n\nOne example of a biological search process arises during organismal development, when cells must establish long-range communication. Some of this communication occurs by diffusing molecules (Hu et al., 2010; Govern and ten Wolde, 2012; Bialek and Setayeshgar, 2008; Endres and Wingreen, 2009) like morphogens. However, recently, an alternative cell\u2013cell communication mechanism has been revealed to be long, thin cellular protrusions extending tens to hundreds of micrometers (Eom, 2020; Yamashita et al., 2018; Caviglia and Ober, 2018; Sanders et al., 2013; Bressloff and Kim, 2019; Inaba et al., 2015). These include cytonemes (Kornberg and Roy, 2014), tunneling nanotubes (Zurzolo, 2021), tenocyte projections (Subramanian et al., 2018), and airinemes in zebrafish (Volkening and Sandstede, 2018; Volkening, 2020; Eom and Parichy, 2017; Eom et al., 2015), shown in Figure 1A. One of the difficulties delaying their discovery and characterization is their thin, suboptical width, and the fact that they only form at specific stages of development (Eom, 2020; Yamashita et al., 2018; Caviglia and Ober, 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig1-v2.jpg)\n\n**Figure 1.:** (A) Multiple airinemes extend from xanthoblast (undifferentiated yellow pigment cell, green). Airineme makes successful contact (arrowhead) with melanophore cell (pigment cell, purple). Asterisks indicate airinemes from other sources. Scale bar: 50 \u00b5m. (B) Model schematic. A single airineme extends from the source (right, green circle) and searches for the target cell (left, purple circle). Target cell has radius $r_{targ}$ and has distance $d_{targ}$ away from the origin. The airineme\u2019s contour length at time $t$ is $l\u2062(t)$.\n\nAirinemes are produced by xanthoblasts (undifferentiated yellow pigment cells) and play a role in the spatial organization of pigment cells that produce the patterns on zebrafish skin (Eom et al., 2015; Eom and Parichy, 2017; Eom, 2020; Volkening and Sandstede, 2018). Macrophages recognize a signal on xanthoblasts and begin dragging a protruding airineme from the xanthoblast as they migrate around the tissue, with the airineme trailing behind them. Airineme lengths have a maximum, regardless of whether they reach their target. If the tip complex reaches a target before this length, it recognizes target cells (melanophores) and the macrophage and airineme tip disconnect. The airineme tip contains the Delta-C ligand, which activates Notch signaling in the target cell. Due to experimental limitations on spatial and temporal resolution, the mechanism by which the airineme tip complex (which might include the entire macrophage) recognizes the target is still mysterious, as is the mechanism by which the macrophage hands off the airineme tip. It is also not known what other signals, if any, are carried by the airineme. If no target cell is found by the maximum length, the macrophage and airineme disconnect, and the airineme retracts. In the unrelated context of wound-healing, macrophages are recruited to the site of injury by detecting chemokines released by damaged cells or other immune cells. In contrast, macrophages pulling airinemes during development are not triggered by tissue damage or infections in zebrafish skin (Eom et al., 2015), and there is no experimental evidence that the airineme search process responds to any directional cues.\n\nFor diffusing cell\u2013cell signals, dynamics are characterized by a diffusion coefficient. In contrast, cellular protrusions require more parameters to describe, for example, a velocity and angular diffusion, or equivalently a curvature persistence length. Here, we ask, what are these parameters, and what determines their values? We focus on airinemes where quantitative details have been measured (Eom and Parichy, 2017; Eom et al., 2015). We find that airineme shape is most consistent with a finite-length PRW model, and that the parameters of this model exhibit an optimum for minimizing the probability of finding a target (or, equivalently, the mean number of attempts). We compare this with another performance objective, the ability for the airineme to provide a directional cue to the target cell, and find that there is a theoretical trade-off between these two objectives. This work provides an example where a readily observable optimum appears to be obtained by a biological system.\n\n## Results\n\n### Airinemes are consistent with a finite PRW model\n\nWe examined time-lapse live-cell image data as described in Eom and Parichy, 2017 and Eom et al., 2015. We confirmed that the time series and the final state are similar (Figure 2\u2014figure supplement 1), meaning that the shape of the part of the airineme existing at time $t$ does not significantly change after time $t$, as the tip of the airineme continues to extend. This allows us to consider only the fully extended airineme and infer the dynamics, assuming airinemes extend with constant velocity v = 4.5 \u03bcm/min (Eom et al., 2015). This removes artifacts like microscope stage drift and drastically simplifies the analysis. We manually identified and discretized 70 airinemes into 5596 position vectors $r\u2062(t)$, and from these, computed the mean squared displacement (MSD) $\u27e8r^{2}\u27e9$. Random walks satisfy $\u27e8r^{2}\u27e9=4\u2062D\u2062t$. However, the observed MSD, shown in Figure 2A, does not appear linear in $t$. We fit it to $\u27e8r^{2}\u27e9=\\gamma\u2062t^{\\alpha}$ and found the best-fit exponent $\\alpha$ of 1.55 (90% CI in [1.50,1.61]), and indeed it appears that a single exponent is not appropriate across orders of magnitude. We therefore reject the simple random walk description.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig2-v2.jpg)\n\n**Figure 2.:** (A) Mean squared displacement (MSD) of airinemes. Airineme experimental MSDs have exponent $\u22482$ (corresponding to slope in log\u2013log plot) up to $\u224815$ min, arguing against a simple random walk model. $N=70$ airinemes. (B) For airinemes with growth periods longer than 15 min, the distribution of final angles, that is, the angle between the tangent vector at the airineme\u2019s origin and the tangent vector at its tip. This is consistent with isotropy, that is, a uniform distribution in $(-\\pi,\\pi)$, shown as a dashed line (Kolmogorov\u2013Smirnov test, $N=26$, p-value 0.37). The results of this test are insensitive to the cutoff length (see Figure 2\u2014source data 1). (C) Step length complementary cumulative distribution function (CCDF). Levy models in 2D are characterized by CCDF tails with an exponent between 1 and 3. However, for two different time sampling intervals (10 and 20 min, from $N=56$ airinemes), the tails of the distribution fit to an exponent greater than 3, and a continued downward curvature instead of a power-law, arguing against Levy models. Inset shows same data, same time sampling intervals, and same axes, but on semi-log plot.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each panel shows the examination of a single representative airineme as it emerges from the source cell at $t=0$, large star. Every 10 min, the shape is tracked at discrete points as it grows away from the source cell. The micrograph of the final length is shown as an inset (only the channel labeling the source cell is shown, so the target cells are not visible). Scale bar is in 20 \u00b5m. We computed root mean squared curvature of both the time-series tip location and of just the final state for the airinemes shown here. These two methods yield a difference, on average, of 0.7%. Thus, we conclude that the shape of the part of the airineme already existing at time $t$ does not significantly change after time $t$ as the tip of the airineme continues to extend.\n\nNext, we consider Levy-type models such as those that have been used to describe animal optimal foraging (Viswanathan et al., 2011) and T cell migration (Fricke et al., 2016). These processes have a step size distribution whose tail has exponent between 1 and 3 in 2D (Fricke et al., 2016; Viswanathan et al., 2011), where step size is the displacement during a specified time interval. We revisit the time-series data (i.e., here we do not use the final state approximation) and compute a step length complementary cumulative distribution function (CCDF). For two time interval choices, shown in Figure 2B, the best-fit CCDF exponents are greater than 3 (for 10 min, exponent is 3.81 with 90% CI in [3.68,3.95]; for 20 min, exponent is 4.40 with 90% CI in [4.18,4.61]). Indeed, the CCDFs at two different time sampling intervals have continued downward curvature, indicating that a power-law description is inappropriate. We thus conclude that the process is not consistent with Levy-type models.\n\nFinally, we consider a finite-length PRW. In this model, the tip of the airineme moves at constant speed $v$, while the direction undergoes random changes with parameter $D_{\\theta}$, the angular diffusion coefficient. This parameter has units inverse minutes and roughly corresponds to the \u2018curviness\u2019 of the path. The dynamics are governed by Equations 2\u20134. A key observation from time-lapse imaging is that airinemes have a maximum length, after which the search process terminates if unsuccessful. Thus, our PRW model is finite-length, meaning that we assume the airinemes extend only up to $l_{max}=250\\mum$. This assumption yields a final length distribution (Figure 3, Figure 3\u2014figure supplement 1) consistent with the observed distribution (Eom et al., 2015).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Simulated airineme target search for various $D_{\\theta}$. The values of $D_{\\theta}$ that leads to the highest search success probability are shown as black open circles. Theoretical values for ballistic limit from Equation 6 are shown as red circles. (A) Varying distances between the target and the source cell, while fixing the target cell radius at 25 \u00b5m. We validate simulation results with survival probability PDE at high $D_{\\theta}$ from Equation 7, shown in blue circles. (B) Varying target cell radii while fixing the distance between the target and the source. For the biologically relevant parameter ($d_{targ}\u223c50\\mum$), optimal angular diffusion is around $D_{\\theta}\u223c0.18\u2062min^{-1}$. (C) Qualitative behavior of airineme target search depends on $D_{\\theta}$. (D) Optimal $D_{\\theta}$ for a larger range of cell-to-cell distances and target cell radii. Rectangular region shows biologically relevant parameters.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** For the model parameter lmax, which is the length at which an airineme stops searching if it has not yet found a target, we wondered whether a single number would be appropriate or whether we needed to use a distribution to capture the variability of airineme lengths. We measure the experimental quantity lfinal, which is the length of airinemes when they stop growing, whether or not they have made contact with a target cell, shown in red in (A, B) ($N=56$ airinemes). We run simulations in which target cells are randomly placed according to 2D Poisson statistics with mean distance $d_{targ}=50\\mum$ and measured their length distribution when they stop growing lfinal, shown in blue in (A, C) (again, whether or not they have made contact with a target). We find that the distributions for experimental data and simulated data agree qualitatively when $l_{max}=250\\mum$. Note that the variability in both experimental and simulated distributions is of similar magnitude, suggesting that the randomness in observed airineme length arises from the randomness in target cell placement.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Same as Figure 3A and B, but showing contact success as mean number of attempts ($=1/p_{contact}$).\n\nThe airineme MSD fits the prediction of the PRW model, in Equation 5, up to time point around 15 min. Above this time, the PRW model is consistent with the data, although the low number of long airinemes in our data precludes a strong conclusion from MSD alone. We therefore took all airinemes whose growth time was greater than 15 min and plotted their final angle, that is, the angle between the tangent vector at their point of emergence from the source cell and the tangent vector at their tip. The PRW model predicts that, for long times $>1/D_{\\theta}$, the angular distribution should become isotropic. In Figure 2B, we find that the angular distribution is uniform, that is, isotropic (Kolmogorov\u2013Smirnov test p-value 0.37, $N=26$). Since there are relatively few data points, we repeated this analysis under various airineme selection criteria, which includes up to $N=49$ airinemes, and in all cases found the final angular distribution to be consistent with uniformity (Figure 2\u2014source data 1). (In Figure 4, we also check the autocorrelation function and further confirm consistency with the PRW model.) Taken together, the data favor the PRW model, which we use in the following analysis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig4-v2.jpg)\n\n**Figure 4.:** (A) Orientation autocorrelation function. We measure tangent angles $cos\u2062(\\theta)$ at 5596 points along 70 airinemes, and then compute the likelihood function (B, bottom) of $D_{\\theta}$ fit to Equation 1. Best-fit curve is shown as red with a 90% confidence interval shown in black. Blue dots and heatmap were generated using a moving average with a window of 10 nearest data points and the heatscatter MATLAB function. (B) Bottom: we find that the best-fit airineme curvature from maximum likelihood estimation is $D_{\\theta}=0.1838\u2062min^{-1}$. We find that this value is similar to the $D_{\\theta}$ that optimizes contact probability for the biologically relevant target cell distance $d_{targ}=50\\mum$ (top). The experimentally observed probability of contact per airineme, center estimate (horizontal dashed line), and 90% confidence interval (gray area) are also shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (I) Fully extended airineme micrograph image. Arrow indicates the airineme. (II) Extraction of the average noise level from image. (III) Images of simulated airinemes are convoluted to have the same statistical noise properties of the experimental image. We use a \u2018ground truth\u2019 $D_{\\theta}\u223c0.1525\u2062min^{-1}$. (IV) In order to characterize technical variation in our analysis pipeline, five people used a manual image analysis pipeline to locate points along airinemes. From these points, curvatures and autocorrelation functions were computed, and $D_{\\theta}$ likelihoods extracted. Curvature of simulated airineme images and likelihood distributions are shown as colored curves. Black curve shows the likelihood distribution for combined data. (V) The maximum likelihood $D_{\\theta}$ value was close to the simulation input $D_{\\theta}$, with typically 2% error. The most erroneous (yellow curve) was 7% and corresponds to the manual entry of the corresponding author, JA. (Top right) Likelihoods of $D_{\\theta}$ estimates from experimental images from five people (colored curves) and combined (black curve).\n\nWe also assume that airinemes operate independently as there is no evidence of airinemes communicating with each other during the search process. Furthermore, airinemes are generated at approximately 0.15 airinemes per cell per hour. Thus, the mean time between airineme initiations is $\u2248400\u2062min$, much larger than the time each airineme extends, which is 56 min. Note that many airinemes emanating from the same source cell may exist simultaneously, but most of the time only one airinemes is extending. Also, while the tissue surface is crowded, the airineme tips (which are transported by macrophages; Eom et al., 2015) appear unrestricted in their motion on the 2D surface, passing over or under other cells unimpeded (Eom and Parichy, 2017). We therefore do not consider obstacles in our model (although these have been studied in other PRW contexts; Schakenraad et al., 2020; Khatami et al., 2016; Hassan et al., 2019). This includes the source cell, that is, we allow the search process to overlie the source cell.\n\nThe target cell is modeled as a circle of radius $r_{targ}=15\u221225\\mum$(Eom et al., 2015), separated from the source of the airineme by a distance $d_{targ}\u224850\\mum$, as shown in Figure 1B. Including the position and size of the target, the model has five parameters, all of which have been measured (see Table 1 and Eom et al., 2015; Ryu et al., 2016) except for $D_{\\theta}$.\n\n**Table 1.**\n Parameter values.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Symbol</th>\n      <th>Meaning</th>\n      <th>Estimate and value used</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>lmax</td>\n      <td>Maximum length of airineme</td>\n      <td>250 \u03bcm</td>\n      <td>Figure 3\u2014figure supplement 1</td>\n    </tr>\n    <tr>\n      <td>v</td>\n      <td>Velocity of airineme growth</td>\n      <td>4.5 \u03bcm (1.4\u201312 \u03bcm, N = 929)</td>\n      <td>Eom et al., 2015</td>\n    </tr>\n    <tr>\n      <td>dtarg</td>\n      <td>Distance to target cell</td>\n      <td>51 \u03bcm (33\u201384 \u03bcm, N = 70)</td>\n      <td>Eom et al., 2015</td>\n    </tr>\n    <tr>\n      <td>rtarg</td>\n      <td>Target cell radius</td>\n      <td>15\u201325 \u03bcm</td>\n      <td>Ryu et al., 2016</td>\n    </tr>\n    <tr>\n      <td>D\u03b8</td>\n      <td>Angular diffusion</td>\n      <td>0.1838rad2/min</td>\n      <td>Estimated here</td>\n    </tr>\n  </tbody>\n</table>\n\n### Contact probability is maximized for a balance between ballistic and diffusive search\n\nWe performed simulations of the PRW model, testing different angular diffusion values for different values of cell-to-cell distance and target cell radius. For each parameter set, we measured the proportion of simulations that contacted the target. Specifically, contact is defined as the event in which the tip of the growing airineme intersects with the target. In simulations, we assume contact has occurred when the airineme tip reaches within a distance rtarg of the center of the target cell. We refer to rtarg as the target cell radius. However, as discussed above, the mechanism by which contact is detected is unknown, and it could be that the airineme tip has a large effective spatial extent that includes some or all of the macrophage. Note again the search process is finite-length (otherwise in two dimensions would always eventually find the target). These contact probabilities are shown in Figure 3A and B. Equivalently, we plot the inverse, the mean number of attempts, in Figure 3\u2014figure supplement 2.\n\nWe find that there exists an optimal angular diffusion coefficient that maximizes the chance to contact the target cell. The optimal value balances between ballistic and diffusion-like search. This has been previously shown for infinite, on-lattice PRWs (Tejedor et al., 2012) and worm-like chain models searching for binding partners (Mogre et al., 2020). We heuristically understand it as follows. When $D_{\\theta}$ is small (Figure 3C, left), airinemes are straight and therefore move outward a large distance, which is favorable for finding distant targets. However, straight airinemes easily miss targets. On the other hand, for $D_{\\theta}$ large (Figure 3C, right), the airineme executes a random walk. Random walks are locally thorough, so do not miss nearby targets, but the search rarely travels far. Thus, if the target cell is small or close, a diffusion-like search process is favored, but if the target cell is far or large, then a ballistic search is favored. We confirm this in Figure 3D, where we plot optimal $D_{\\theta}$ over a large range of target cell radii and cell-to-cell distances. For the biologically relevant parameters (rectangular region in Figure 3D), a balance between ballistic and diffusion-like is optimal.\n\n### Experimental airineme curvature is approximately optimal\n\nIn order to estimate the missing parameter $D_{\\theta}$, we use the angular autocorrelation function\n\n$$\n\u27e8cos\u2062\\theta\u2062(s)\u27e9=exp\u2062(-D_{\\theta}\u2062s/v)\n$$\n\nshown in Figure 4. We performed manual image analysis and maximum likelihood estimation to fit Equation 1, along with model convolution (Figure 4\u2014figure supplement 1, Gardner et al., 2010, Materials and methods) to estimate uncertainty.\n\nWe find the maximum likelihood estimated persistence length of $12.24\\mum$, corresponding to an angular diffusion $D_{\\theta}=0.184min^{\u22121}$. Surprisingly, as shown in Figure 4B, this value matches our simulated optimal angular diffusion value for the biologically relevant parameter values. Moreover, in the experimental data, we find that the proportion making successful contact with target cells is $P_{contact}=0.15$ (horizontal dashed line), from $N=49$ airinemes with a 90% confidence interval in $[0.06,0.24]$ (gray box in Figure 4B). This also agrees surprisingly well with the model prediction $p_{contact}\u22480.185$.\n\n### Directional information at the target cell\n\nIn some models of zebrafish pattern formation, the target cells receive directional information from source cells (Eom, 2020; Volkening, 2020), that is, the target cell must determine where the source cell is, relative to the target\u2019s current position. We explore the hypothesis that airineme contact itself could provide directional information since the location on the target cell at which the airineme contacts, $\\theta_{contact}$ as shown in Figure 5A, is correlated with the direction of the source cell. Analogous directional sensing is possible by diffusive signals, where physical limits have been computed in a variety of situations (Lawley et al., 2020; Berg and Purcell, 1977).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig5-v2.jpg)\n\n**Figure 5.:** (A) Given that the source cell is located at $\\theta=0$, the distribution of angles at which the airineme contacts the target cell. (B) Given a source cell is located at $\\theta=0$, the distribution of angles at which the airineme contacts the target cell. Angle distributions with higher variance indicate poorer directional sensing. Three angular diffusion values (near ballistic limit, experimentally observed, and near diffusion limit) are shown. (C) Directional sensing accuracy, quantified using the modified Fisher information (FI) Equation 9, for different source-to-target distances and different ranges of angular diffusion values are tested, while fixing target cell radius at 25 \u00b5m. Black rectangular region shows the FI values for the observed airineme curvature. (D) Relationship between the contact probability $P_{contact}$ and FI for a range of $D_{\\theta}$ (increasing with direction of arrow).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Representative image of source cell (green), airineme (light green, touching two white lines), and target cell (purple). To estimate the contact angle distribution, we draw a line from the source of the airineme to the center of the nucleus of the target cell, then another line from here to the airineme contact point. Scale bar is 50 \u03bcm. (B) The angle distribution of contact angles shown in an angular histogram (top) and empirical cumulative distribution (bottom). From these, compute (unmodified) Fisher information (FI) of $3.93\\times10^{-4}\u2062rad^{-2}$, and modified FI to be $5.7\\times10^{-5}\u2062rad^{-2}$ from Equation 9. Data from $N=83$ airinemes.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75690/elife-75690-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Each plot shows, identically to Figure 5D, the contact probability $P_{contact}$ (vertical axis) versus the directional information (modified Fisher information defined in Equation 9) for a range of angular diffusion coefficients $D_{\\theta}$ indicated by color along a parametric curve. The grid of plots shows this for a range of distances to the target dtarg and target sizes rtarg. Note that although we do not explicitly explore lmax, since these plots have not been nondimensionalized, the parametric curve for a different lmax can be obtained by rescaling the results shown.\n\nWe examined the contact angle distribution on the target cell. In Figure 5B, we show this distribution for three values of $D_{\\theta}$: low (ballistic), high (diffusion-like), and the observed value we found above. The source cell is placed at $\\theta_{origin}=0$ without loss of generality (its initial direction is still chosen uniformly randomly). We show the distribution of contact angles on the target cell $p\u2062(\\theta_{contact}|\\theta_{origin}=0)$ as both a radial histogram (top) and cumulative distribution (bottom). Interestingly, we find that the observed airineme parameters lead to a wide distribution of contact angles compared to both ballistic or diffusion-like airinemes.\n\nTo quantify the ability of the target cell to sense the direction of the source by arrival angle of a single airineme, we use Fisher information (Fisher, 1997), modified to take into account the probabilistic number of airinemes that a target cell receives, using Equation 9. Using this measure, we observe a minimum at intermediate $D_{\\theta}$, shown in Figure 5C. We understand this intuitively as follows. For very straight airinemes, the allowed contact locations are restricted to a narrow range (a straight airineme can never hit the target\u2019s far side), resulting in high directional information. For high $D_{\\theta}$, we initially expected low and decreasing directional information since there is more randomness. However, these are finite-length searches, and the spatial extent of the search process shrinks as $D_{\\theta}$ increases. This leads to a situation where the tip barely reaches the target, and only at closest points (near $\\theta_{contact}=0$), resulting again in high directional information.\n\nTo compare with experimental observations, we attempted to measure the contact angle distribution of airinemes in contact with target cells. This is complicated by the highly noncircular shape of these cells, so we approximate the angle by connecting three points: the point on the source cell from which the airineme begins, the center of the nucleus of the target, and the point on the surface of the target where the airineme makes contact, as shown in Figure 5\u2014figure supplement 1. We find a modified Fisher information of $5.7\\times10^{-5}$, slightly smaller but similar in magnitude to the angle distribution predicted by the simulation.\n\n### Trade-off between directional sensing and contact probability\n\nBy inspecting both $P_{contact}$ and directional information shown in Figure 5D, we find that there is a trade-off between the searcher\u2019s contact success and the target cell\u2019s directional sensing. Heuristically, this is because the two objectives prefer opposite variances. To maximize contact probability, variance should be maximal, taking full advantage of the surface of the target. On the other hand, to maximize directional information, the variance of contact angle should be minimized.\n\nInterestingly, the experimentally observed $D_{\\theta}$ is at a point where either increasing or decreasing its value would suffer one or the other objectives, a property known as Pareto optimality (Alon, 2009; Barton and Sontag, 2013). Note that this is also the $D_{\\theta}$ value that maximizes search success, so the data is consistent with either conclusion that the curvature is optimized for search or it is optimized to balance search and directional information. In other words, in the case of zebrafish airinemes, there is no evidence that the shape of these protrusions sacrifices the goal of optimal search in order to achieve increased directional signaling. We wondered whether this is a general feature of search by PRW. The parametric curve in Figure 5D has a peculiar loop, the concave-down region giving rise to the Pareto optimum. In Figure 5\u2014figure supplement 2, we show the parametric curve for a range of distances to the target dtarg and target sizes rtarg. Note that we do not explicitly explore lmax, but since these plots have not been nondimensionalized, the parametric curve for a different lmax can be obtained by rescaling the results shown. At low dtarg (top row of Figure 5\u2014figure supplement 2), the trade-off is amplified, and the parametric curve resembles bull\u2019s horns with two tips representing the smallest and largest $D_{\\theta}$ in our explored range, pointing outward so the shape is concave-up. Intuitively, we understand this as follows: since the target is fairly close (relative to lmax), contact is easy. But the only way to get directional specification is by increasing $D_{\\theta}$ to be very large, effectively shrinking the search range so it only reaches (with significant probability) the target at the near side at $\\theta_{contact}=0$. The parametric curve is concave-up, and there is no Pareto optimum. At high dtarg (bottom row of Figure 5\u2014figure supplement 2), the searcher either barely reaches, and does so at $\\theta_{contact}=0$, therefore providing high directional information, or $D_{\\theta}$ is high, and the searcher fails to reach, and therefore also fails to provide directional information. So, there is no trade-off. At intermediate dtarg, the curve transitions from concave-up bull\u2019s horn to the no-trade-off diagonal line. Interestingly, it does so by bending forward, forming a loop, and closing the loop as the low-$D_{\\theta}$ tip moves toward the origin. At these intermediate dtarg values, the loop offers a concave-down region with a Pareto optimum.\n\n## Discussion\n\nAs long-range cellular projections like airinemes continue to be discovered in multicellular systems, their mathematical characterization will become increasingly valuable, mirroring the mathematical characterization of diffusion-mediated cell\u2013cell signals. We have measured the in situ shape of airinemes, and find agreeable fit to a finite, unobstructed PRW model, rather than Levy or diffusion-like motion. The mean square curvature, or equivalently the directional persistent length, is close to that which allows optimal search efficiency for target cells. Since airineme tip motion is driven by macrophages, our results have implications for macrophage cell motility, which is relevant in other macrophage-dependent processes like wound healing and infection (Sun et al., 2019; Achouri et al., 2015).\n\nThe growing catalog of non-canonical cellular protrusions (Eom, 2020; Yamashita et al., 2018; Caviglia and Ober, 2018; Sanders et al., 2013; Bressloff and Kim, 2019; Inaba et al., 2015; Kornberg and Roy, 2014; Parker et al., 2017; Subramanian et al., 2018; Wang and Gerdes, 2015) includes strikingly different shapes. For example, some tunneling nanotubes in cancer cells (Parker et al., 2017) are straight compared to airinemes. They also have different functions. For example, nanotubes in PC12 cells serve as conduits for organelles (Wang and Gerdes, 2015). This raises an intriguing possibility that different protrusions have a shape optimized for different functions. Besides search success probability and directional information, one obvious candidate for optimization is the efficient transport of signaling molecules after contact has been established (Bressloff and Kim, 2018; Kim and Bressloff, 2018). This might prefer shorter protrusion length, and therefore favor straight morphologies. In the future, it would be intriguing to compare all known non-canonical protrusions in light of the three performance objectives, and others.\n\nSince the airineme tip\u2019s motion is linked to macrophage motion, these results also inform cell migration patterns. Variants of the PRW model have been found to describe cell migration (Harrison and Baker, 2018; Weavers et al., 2016). Specifically, a related model was found to accurately describe macrophages in zebrafish (Jones et al., 2015). Two observations from Jones et al., 2015 are particularly relevant to our work: that macrophages in zebrafish demonstrate a mix of directional persistence and randomness, and that their migration patterns adapt to circumstance (specifically, in their case, distance to wound and time since wounding).\n\nMathematically, the finite PRW process is equivalent to the worm-like chain model, for which exact formula have been derived for the tip location (Spakowitz and Wang, 2005; Mehraeen et al., 2008). The contact probability corresponds to a survival probability in the presence of an absorbing disk representing the target cell, and therefore an integral of the formulae in Spakowitz and Wang, 2005; Mehraeen et al., 2008. There is an opportunity to find analytic (asymptotic or exact) expressions for the contact probabilities, which would obviate the need for stochastic simulation.\n\nThe cell\u2013cell interactions mediated by airinemes contribute to large-scale pattern formation in zebrafish, a subject of previous mathematical modeling (Volkening and Sandstede, 2015; Volkening and Sandstede, 2018; Nakamasu et al., 2009). Our results provide a contact probability per airineme, setting an upper bound on the ability of cells to communicate via this modality, which is itself a function of cell density (related to dtarg in our notation). Thus, our results may inform future pattern formation models. In the reciprocal direction, these models may provide information about the distribution of target cells, which may significantly affect search efficiencies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(tyrp1b: PALM-mCherry)</td>\n      <td>Eom et al., 2015</td>\n      <td>RRID:ZDB-TGCONSTRCT-141218-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>aox5: palmEGFP (plasmid)</td>\n      <td>Eom et al., 2015</td>\n      <td>RRID:ZDB-TGCONSTRCT-160414-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>ImageJ</td>\n      <td>http://imagej.nih.gov/ij/</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>MATLAB R2021b</td>\n      <td>http://www.mathworks.com/</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish husbandry and maintenance\n\nAdult zebrafish were maintained at 28.5\u00b0C on a 16 hr:8 hr light:dark cycle. Fish stocks of Tg(tyrp1b:palmmCherry)wp.rt11 (McMenamin et al., 2014) were used. Embryos were collected in E3 medium (5.0 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, 0.33 mM MgCl2\u00b76H2O, adjusted to pH 7.2\u20137.4) in Petri dishes by in vitro fertilization as described in Westerfield with modifications (Westerfield, 2004). Unfertilized and dead embryos were removed 5 hr post-fertilization (hpf) and 1-day post-fertilization (dpf). Fertilized embryos were kept in E3 medium at 28.5\u00b0C until 5 dpf, at which time they were introduced to the main system until they were ready for downstream procedures. All animal work in this study was conducted with the approval of the University of California Irvine Institutional Animal Care and Use Committee (protocol #AUP-19-043) in accordance with institutional and federal guidelines for the ethical use of animals.\n\n### Time-lapse and static imaging\n\nThe transgenic embryos, Tg(tyrp1b:palmmCherry), were injected with the construct drive membrane-bound EGFP under the aox5 promoter to visualize airinemes in xanthophore lineages and melanophores (Eom et al., 2015). Zebrafish larvae of 7.5 SSL were staged following Parichy et al., 2009 prior to explant preparation for ex vivo imaging of pigment cells in their native tissue environment as described by Budi et al., 2011 and Eom et al., 2012. Time-lapse images, acquired at 5 min intervals for 12 hr, and static images were taken at \u00d740 (water-emulsion objective) on a Leica SP8 confocal microscope with resonant scanner.\n\n### Model definitions, simulation, and analysis\n\nIn the finite-length PRW model, the position of the airineme tip at time $t$ is given by\n\n$$\n\\frac{d\u2062x}{d\u2062t}=v\u2062cos\u2061(\\theta\u2062(t))\n$$\n\n\n\n$$\n\\frac{d\u2062y}{d\u2062t}=v\u2062sin\u2061(\\theta\u2062(t))\n$$\n\n\n\n$$\nd\u2062\\theta=\\sqrt{2\u2062D_{\\theta}}\u2062d\u2062W_{t}\n$$\n\nwhere $W_{t}$ is a Wiener process, and $D_{\\theta}$ is related to the directional persistence length lp in 2D by $D_{\\theta}=v/2\u2062l_{p}$.\n\nThe MSD for PRWs is (Wu et al., 2014; Sadjadi et al., 2020)\n\n$$\n\u27e8r^{2}\u27e9=4\u2062l_{p}\u2062v\u2062t\u2062(1-\\frac{2\u2062l_{p}}{v\u2062t}\u2062(1-exp\u2061(-\\frac{v\u2062t}{2\u2062l_{p}}))).\n$$\n\nTo simulate this model, we use an Euler\u2013Maruyama scheme with timestep $\u0394\u2062t\u226a1/D_{\\theta}$, implemented in MATLAB (The MathWorks). To validate these simulations, at two limits of $D_{\\theta}$, search contact probabilities can be solved analytically (Figure 3A and B, filled circles). First, the straight limit $D_{\\theta}\u21920$. Suppose an airineme searches for the target cell centered at $(0,0)$ with radius $r_{targ}$, and the airineme emanates from a source at $(r_{targ}+d_{targ},0)$. Let $\u03d5$ be the angle between the hitting point on the target cell and the center line. Then,\n\n$$\n\u03d5=\\frac{\\pi}{2}-arccos\u2062(\\frac{r_{targ}}{r_{targ}+d_{targ}})\n$$\n\nand $P_{contact}=\u03d5/\\pi$. At the other limit, $l_{P}\u226ad_{targ}$, the PRW is approximately equivalent to diffusion with coefficient $D=v^{2}/2\u2062D_{\\theta}$. For a finite time $0<t<l_{max}/v$ diffusive search process, the probability of hitting the target cell is $P_{contact}=1-S\u2062(r,t)$, where $S\u2062(r,t)$ denotes the survival probability, which evolves according to\n\n$$\n\\partial\u2061S/\\partial\u2061t=D\u2062\\nabla^{2}\u2061S\n$$\n\nwith $S\u2062(r,t)=0$ on the surface of the target cell. We solve this PDE and display results in Figure 3A and B, blue circles. For these validations, the $D_{\\theta}$ values were chosen to fit the blue circles onto the plot.\n\n### Image analysis and model fitting\n\nIn order to estimate uncertainty in our analysis method, we used model convolution (Figure 4\u2014figure supplement 1, Gardner et al., 2010). Specifically, we first measured the experimental signal-to-noise ratio and point spread function. We then simulated airinemes with a ground-truth curvature value and convoluted the simulated images with a Gaussian kernel with the signal-to-noise ratio and point spread function measured from experimental data. Since there is a manual step in this analysis pipeline, independent analyses by five people were performed on both simulated data and experimental data. For simulated data, the difference between simulated and estimated $D_{\\theta}$ was less than 7% in all cases and usually $\u223c2%$.\n\nThe extracted data and analysis routines are available openly at: https://github.com/sohyeonparkgithub/Airineme-optimal-target-search, (copy archived at swh:1:rev:366ad6e1e3e5061c0cf395c8e3be784872903922; Park, 2021).\n\n### Directional information\n\nTo measure the directional information that, stochastically, an airineme provides its target cell, we use the Fisher information,\n\n$$\nI_{1}(\\theta_{origin})=E(\u2212\\frac{\u2202^{2}}{\u2202\\theta_{origin}^{2}}logp(\\theta_{target}|\\theta_{origin})).\n$$\n\nThis quantity can be intuitively understood by noting that, for Gaussian distributions, Fisher information is the inverse of the variance. So, high variance implies low information and low variance implies high information. If multiple independent and identically distributed airinemes provide information to the target cell, then the probability densities of each airineme multiply, and the Fisher information is $I\u2062(\\theta_{origin})=n_{h\u2062i\u2062t}\u22c5I_{1}\u2062(\\theta_{origin})$, where $n_{h\u2062i\u2062t}$ is the number of successful attempts, which is proportional to $P_{contact}$. Therefore, we define the modified Fisher information as\n\n$$\nModifed FI=I\u2062(origin)\u22c5P_{contact}.\n$$\n\nWith this modification, a target cell that receives almost no airinemes will score low in directional information.\n\n### Experimental measurement of directional information\n\nImages capturing incidences of airinemes with membrane-bound vesicles extended from xanthoblasts, stabilizing on melanophores were captured and imported into ImageJ for angle analysis between (1) originating point of airinemes on xanthoblasts, (2) center of target cells (i.e., melanophores), and (3) docking site of airineme vesicles on target cells. Two intersecting lines were drawn as follows: (1) connect the originating point of an airineme on a xanthoblast with the center of the target melanophore to draw the first line, and (2) connect the center of the target melanophore to the docking site of the airineme vesicle on the target melanophore to draw the second line. The angle between the three points connected by the two intersecting lines was then generated automatically with the angle tool in ImageJ. Coordinates of each point and the corresponding angle were recorded with ImageJ and exported to an Excel worksheet for further analysis. Each angle was assigned a \u00b1 sign in the 180\u00b0 system based on the relative location of the three points at the time of the airineme incident. The 0\u00b0 line was defined as the line passing through the center of the target melanophore. Thus, a positive angle was assigned when the originating point of an airineme on a xanthoblast lies on the 0\u00b0 line with the docking site of airineme vesicles on the target melanophore lies above the 0\u00b0 line, and vice versa.\n\nThe extracted data and analysis routines are available openly at https://github.com/sohyeonparkgithub/Airineme-optimal-target-search.\n",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "1b04e378-0e2e-42ec-ab58-a5aa77ce821b",
+      "submission_id": "bfc3f04f-1e01-4d38-8b76-0c3f239b85b2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pierre Sens, https://ror.org/04t0gwh46 Institut Curie, CNRS UMR168 Paris France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75690.sa0](https://doi.org/10.7554/eLife.75690.sa0)\n\nThis article studies statistical aspects of the role of long-range cellular protrusions called airinemes as means of intracellular communication. The authors use published data showing how airinemes approach a target cell and describe these movements with a mathematical model for an unobstructed persistent random walk. Beyond the specialized readers interested in modeling and airineme biology, this article will also be of interest to cell biologists and biophysicists interested in intracellular communication.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Pierre Sens, https://ror.org/04t0gwh46 Institut Curie, CNRS UMR168 Paris France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75690.sa1](https://doi.org/10.7554/eLife.75690.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Zebrafish airineme shape is optimized between ballistic search and diffusive search\" for consideration by eLife. Your article has been reviewed by 4 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Elena F Koslover (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) (Reviewer#3 and reviewer#2 \u2013 point 2) Some aspects of the biological situation under study must be explained better, as early as possible in the main text:\n\n\u2013 The authors describe the characteristics of an airineme as it would be a signalling filopodia, e.g. a nanotube or a cytoneme, which sends out to target a cell.\n\nAn airineme is fundamentally different from a self-guided cellular protrusion since it is driven by a macrophage. Therefore, it is essential to focus on the \"search-and-find\" walk of the macrophage and not the passively dragged airineme. In the light of this discussion, it is not clear if statements like \"allow the airineme to hit the target cell\" are helpful as it would point towards an actively expanding protrusion like a filopodium. Furthermore, since the protrusion tip is directed by a macrophage, contact mean that the driving macrophage must contact the target cell and attached the airineme to it. So the airineme tip has a large spatial extent (the macrophage size), which will certainly affect the contact probability. The consequence of this for the probability of establishing contact must be discussed.\n\n\u2013 In the current version of the paper, one must go to the material method section to understand that there is a maximal length for airinemes. For clarity it should be mention in the main text, because it is an important point of the discussion of Section 2.2 and Figure 3A. Indeed it is very well known that a 2D a diffusive walker will always find any target, which makes very surprising the Figure 3A until one understands that there is a maximal length in the model.\n\n2) (Reviewer # 1, Reviewer #3 \u2013 point 1, Reviewer #4 ) One possibly surprising results is the fact that the diffusion coefficient is optimised both for finding the target, AND for finding the best compromised between finding the target and providing directional information, while the latter must necessarily require weaker diffusion. This necessitates more explanation. Is this true in general or does this rely on the particular range of parameter explored? Is it applicable to other systems involving a semiflexible structure reaching for a target or a moving agent executing a PRW?\n\n3) Provide a point-by-point response to the reviewers' comments appended below.\n\nReviewer #1 (Recommendations for the authors):\n\nI found this to be an interesting and well-written manuscript. Most of my recommendations are along the lines of suggestions for clarifications and further discussion placing this work into context.\n\n1) Figure 2A is not very compelling in terms of the long-time scaling. Are there any other metrics that could be shown to bolster the case for approximately diffusive behavior at long times. Velocity correlation functions perhaps? Or step size distributions over long time intervals?\n\n2) I was persistently confused when reading the paper (until I finally found it in the methods) about the definition of contact probability. It should be made clearer in the main text that this is the probability for a fixed length of airineme that somewhere along the length (or is it just at the tip?) it will intersect a circular target.\n\n3) Some background context is provided in the intro and discussion linking the models here to previously explored stochastic processes that are described as persistent random walks. However, as I understand it, the persistent random walk is also mathematically equivalent to a wormlike chain in the polymer physics field. Given the authors are mostly exploring fixed structures of a mechanical object rather than particles moving through time, this is an analogy that could use further highlighting. There is extensive literature available on the distribution properties of wormlike chains. For example, I believe the distribution of angular source positions (used in calculating directional information) could be computed analytically using known wormlike chain distribution functions (such as in Spakowitz and Wang, 2005). In Mogre et al., Biophys J, 2020 very similar problems are discussed in the context of a wormlike chain polymer needing to contact a target with its tip, and the trade-off between a stiff, narrow path and a more meandering one depending on the polymer flexibility. The numerical calculations done in this paper are sufficient and reasonable for the problems addressed, but drawing connections to similar past work in the discussion may be helpful.\n\n4) It would also be helpful to the reader to provide further context on the biological function and regulation of airinemes. In particular, the PRW model here necessarily assumes that the airineme tips grow in an unguided manner (as opposed to following potential signals that indicate target location). Is there any evidence that this is indeed the case? What is the functional role of the airinemes -- what is it they transport and how? Are there diffusing molecules that move through them? Motor-carried particles? Signaling waves? Do they exert mechanical forces on the target? I realize that incorporating transport processes along the airinemes is outside the scope of the calculations in this paper, but further discussion of these issues would be helpful to place the work in context.\n\n5) It would also help to highlight which of the results encountered are generalizable to PRWs in many different systems, not just in airinemes. In particular, the fact that the optimal flexibility both maximizes contact probability and the trade-off between contact and directional information -- is this very specific to the particular length parameter or target size picked? Or is it a general feature of PRWs? If the former, what are the parameter criteria for which this relationship holds? Exploration of this would help future researchers looking to apply these results to biologically unrelated processes that show similar PRW behaviors.\n\nReviewer #2 (Recommendations for the authors):\n\nThe modelling suggests that the shape of the long-range projections can be established by macrophages and thus fits their random walk model. Indeed, such a mechanism would fit very nicely to previously published data describing the chemotaxis movement of macrophages in zebrafish wound healing (Phoebe et al., 2015; Inference of random walk models to describe leukocyte migration). The authors could explore this more in detail and propose a comparative analysis of macrophage movements in different contexts.\n\nAirinemes seem to be protrusions transferring signals to a distant cell. This would be a similar aspect as for nanotubes and cytonemes, defined as signalling filopodia. There is now a good amount of literature on nanotubes from PC12 cells (e.g. structural components) and cytonemes in zebrafish (e.g. dynamics), which deliver the signal directly to a neighbouring cell. I believe the \"search-and-find mode\" could also be applied to these protrusions? The authors could use their model in the context of these actively extending signalling protrusions.\n\nThe authors mention that the \"shape of an airineme does not change throughout extension\". However, this is an unclear expression because the shape certainly refers also to the length.\n\nReviewer #3 (Recommendations for the authors):\n\nMy recommendation, following the list made in the public review are\n\n1) Discuss the robustness of the conclusion regarding optimisation. hoe can the system be optimised both with respect to optimal contact and to the balance between optimal contact and optimal directionality information.\n\n2) enhance the discussion regarding the biology of the system. What are you really modelling? The motion of a cellular protrusion whose velocity and persistence is related to its molecular constituent (cytoskeleton) or the motion of an entire cell (the macrophage quiding the protrusion).\n\n3) Discuss the data in more detail, in particular how well they really agree with the model.\n\n4) Discuss the assumption of the model more precisely, in particular regarding directional information.\n\nReviewer #4 (Recommendations for the authors):\n\nI have only a few remarks that could be taken into account to improve clarity of the manuscript.\n\nIn the current version of the paper, one must go to the material method section to understand that there is a maximal length for airinemes. For clarity it should probably be better to mention it in the main text, because it is an important point of the discussion of Section 2.2 and Fig 3A. Indeed it is very well known that a 2D a diffusive walker will always find any target, which makes very surprising the Figure 3A until one understands that there is a maximal length in the model.\n\n- Again for clarity it could be useful to present Fig1B also in semi-log scales since this type of curved lines in log-log scales may simply be exponentials. Identifying an exponential law for the step size distribution would certainly lead to a rejection of Levy type walks.\n\nPlease also define clearly what is the \"best fit exponent\" (Section 2.1, first paragraph) : which exponent is it (I guess it is the exponent in the MSD) ? Also what is the step size shown on Fig 2B (is it the distance travelled during a specific time ?)\n\n- To avoid any confusion, it would be useful to draw Fig5A with an airineme that is not perpendicular to the cell surface, so that there is no confusion between the angle that the airineme's tip makes with the cell surface, and the contact angle.\n",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fdec735e-bca2-400c-9770-3dc08c7fb290",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C1",
+      "claim": "Airinemes are long, thin cellular protrusions extending tens to hundreds of micrometers in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recently, an alternative cell\u2013cell communication mechanism has been revealed to be long, thin cellular protrusions extending tens to hundreds of micrometers (Eom, 2020; Yamashita et al., 2018; Caviglia and Ober, 2018; Sanders et al., 2013; Bressloff and Kim, 2019; Inaba et al., 2015). These include cytonemes (Kornberg and Roy, 2014), tunneling nanotubes (Zurzolo, 2021), tenocyte projections (Subramanian et al., 2018), and airinemes in zebrafish (Volkening and Sandstede, 2018; Volkening, 2020; Eom and Parichy, 2017; Eom et al., 2015), shown in Figure 1A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work and reference to Figure 1A showing airinemes.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "e998ae9c-5135-4ee7-afd4-502cef1f6d29",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C2",
+      "claim": "Airinemes are produced by xanthoblasts (undifferentiated yellow pigment cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Airinemes are produced by xanthoblasts (undifferentiated yellow pigment cells) and play a role in the spatial organization of pigment cells that produce the patterns on zebrafish skin (Eom et al., 2015; Eom and Parichy, 2017; Eom, 2020; Volkening and Sandstede, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "cc9f3b7c-6884-4e63-890f-eedb689297e9",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C3",
+      "claim": "Airinemes play a role in the spatial organization of pigment cells that produce patterns on zebrafish skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Airinemes are produced by xanthoblasts (undifferentiated yellow pigment cells) and play a role in the spatial organization of pigment cells that produce the patterns on zebrafish skin (Eom et al., 2015; Eom and Parichy, 2017; Eom, 2020; Volkening and Sandstede, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "d6d0ea46-be11-4615-9d4f-0e41f909a3b7",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C4",
+      "claim": "Macrophages drag protruding airinemes from xanthoblasts as they migrate around the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages recognize a signal on xanthoblasts and begin dragging a protruding airineme from the xanthoblast as they migrate around the tissue, with the airineme trailing behind them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the manuscript describing the mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "ec3cefdc-9882-4c12-9294-d4f57013feae",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C5",
+      "claim": "Airineme lengths have a maximum, regardless of whether they reach their target.",
+      "claim_type": "EXPLICIT",
+      "source": "Airineme lengths have a maximum, regardless of whether they reach their target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "9ec07a0f-aeac-4598-b7be-8242aa964cab",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C6",
+      "claim": "The airineme tip contains the Delta-C ligand, which activates Notch signaling in the target cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The airineme tip contains the Delta-C ligand, which activates Notch signaling in the target cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about molecular composition and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "aa0fbf92-f78a-43b3-8f33-93af51763f8b",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C7",
+      "claim": "If no target cell is found by the maximum airineme length, the macrophage and airineme disconnect, and the airineme retracts.",
+      "claim_type": "EXPLICIT",
+      "source": "If no target cell is found by the maximum length, the macrophage and airineme disconnect, and the airineme retracts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the outcome of unsuccessful search.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "b7d3e49b-46b9-432c-bab9-f06b8bd10001",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C8",
+      "claim": "There is no experimental evidence that the airineme search process responds to any directional cues.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, macrophages pulling airinemes during development are not triggered by tissue damage or infections in zebrafish skin (Eom et al., 2015), and there is no experimental evidence that the airineme search process responds to any directional cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about lack of evidence for directional cues, with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "3f790dec-2ef4-44cf-a38d-77d2cd941c94",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C10",
+      "claim": "Airinemes extend with constant velocity v = 4.5 \u03bcm/min.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows us to consider only the fully extended airineme and infer the dynamics, assuming airinemes extend with constant velocity v = 4.5 \u03bcm/min (Eom et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Velocity value cited from prior work (Eom et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "0042b538-cc26-46df-9a5e-fc50f015b503",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C14",
+      "claim": "A simple random walk model is rejected for describing airineme motion.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore reject the simple random walk description.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on MSD analysis showing non-linear behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "6c303db3-06cc-4209-9921-3995ddcf5d32",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C16",
+      "claim": "Levy-type models are not consistent with airineme motion.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that the process is not consistent with Levy-type models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on CCDF analysis showing exponents greater than 3 and continued downward curvature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "153d40ba-99c8-40c3-bdcd-cb9bbf6bcfd8",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C17",
+      "claim": "For two time interval choices (10 min and 20 min), the best-fit CCDF exponents are greater than 3.",
+      "claim_type": "EXPLICIT",
+      "source": "For two time interval choices, shown in Figure 2B, the best-fit CCDF exponents are greater than 3 (for 10 min, exponent is 3.81 with 90% CI in [3.68,3.95]; for 20 min, exponent is 4.40 with 90% CI in [4.18,4.61]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical fits to experimental data with confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "d6bff039-c132-4878-83ee-1f577c2a879c",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C18",
+      "claim": "Airineme shape is most consistent with a finite-length persistent random walk (PRW) model.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that airineme shape is most consistent with a finite-length PRW model, and that the parameters of this model exhibit an optimum for minimizing the probability of finding a target (or, equivalently, the mean number of attempts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from comparison of experimental data with multiple models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "5afa1b3e-9562-4243-8147-4194cbc4de48",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C20",
+      "claim": "The assumption of maximum length 250 \u03bcm yields a final length distribution consistent with observed distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption yields a final length distribution (Figure 3, Figure 3\u2014figure supplement 1) consistent with the observed distribution (Eom et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of model predictions with experimental data shown in figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "ad89ccfb-5c3e-4587-bc09-168ff13bbe32",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C21",
+      "claim": "Airinemes operate independently with no evidence of communication between them during search.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assume that airinemes operate independently as there is no evidence of airinemes communicating with each other during the search process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assumption based on lack of experimental evidence for inter-airineme communication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "2b1b94cd-f9a0-4d72-bd1a-3c602e3c0af0",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C22",
+      "claim": "Airinemes are generated at approximately 0.15 airinemes per cell per hour.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, airinemes are generated at approximately 0.15 airinemes per cell per hour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement of airineme generation rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "f6df3596-42ed-4597-8e0f-27beb36db541",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C24",
+      "claim": "Airineme tips appear unrestricted in their motion on the 2D surface, passing over or under other cells unimpeded.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, while the tissue surface is crowded, the airineme tips (which are transported by macrophages; Eom et al., 2015) appear unrestricted in their motion on the 2D surface, passing over or under other cells unimpeded (Eom and Parichy, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from live-cell imaging cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "1d6918c4-0928-4a82-8e7b-67b85bb145e4",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C27",
+      "claim": "There exists an optimal angular diffusion coefficient that maximizes the chance to contact the target cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that there exists an optimal angular diffusion coefficient that maximizes the chance to contact the target cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "16c85754-0729-4ffc-b1cb-f6ee8329ae71",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C28",
+      "claim": "The optimal value of angular diffusion balances between ballistic and diffusion-like search.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal value balances between ballistic and diffusion-like search.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from simulation results and theoretical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "d24ab407-6146-4ce3-9653-ea0d536c7507",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C31",
+      "claim": "If the target cell is small or close, a diffusion-like search process is favored.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, if the target cell is small or close, a diffusion-like search process is favored, but if the target cell is far or large, then a ballistic search is favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from simulation results analyzing different target parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "578c8792-0302-4f9a-9c2d-6a3115a85d4b",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C32",
+      "claim": "If the target cell is far or large, a ballistic search is favored.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, if the target cell is small or close, a diffusion-like search process is favored, but if the target cell is far or large, then a ballistic search is favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from simulation results analyzing different target parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "921025f0-44ce-4dce-8df2-30feb5e81d0c",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C35",
+      "claim": "The experimentally observed angular diffusion value matches the simulated optimal angular diffusion value for biologically relevant parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, as shown in Figure 4B, this value matches our simulated optimal angular diffusion value for the biologically relevant parameter values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of experimental measurement with simulation predictions shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "deb203a3-da36-4504-9f99-8759e80963b3",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C39",
+      "claim": "The observed airineme parameters lead to a wide distribution of contact angles compared to both ballistic or diffusion-like airinemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that the observed airineme parameters lead to a wide distribution of contact angles compared to both ballistic or diffusion-like airinemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from analysis of contact angle distributions shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "b3f6e533-bbd2-4206-a5e7-138a9b4ae446",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C41",
+      "claim": "For very straight airinemes, allowed contact locations are restricted to a narrow range, resulting in high directional information.",
+      "claim_type": "EXPLICIT",
+      "source": "For very straight airinemes, the allowed contact locations are restricted to a narrow range (a straight airineme can never hit the target's far side), resulting in high directional information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of directional information results based on geometric constraints.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "629512c0-e03d-4266-8b06-957f32236946",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C45",
+      "claim": "In the case of zebrafish airinemes, there is no evidence that the shape sacrifices optimal search to achieve increased directional signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, in the case of zebrafish airinemes, there is no evidence that the shape of these protrusions sacrifices the goal of optimal search in order to achieve increased directional signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from analysis of trade-off between search and directional information.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "99a31184-4de1-44e2-93f4-6f2ac93173a3",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C46",
+      "claim": "Airinemes have suboptical width, which delayed their discovery and characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the difficulties delaying their discovery and characterization is their thin, suboptical width, and the fact that they only form at specific stages of development (Eom, 2020; Yamashita et al., 2018; Caviglia and Ober, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about technical challenges with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "7130ba9b-6410-4407-b823-a6093eb427fc",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C47",
+      "claim": "Airinemes only form at specific stages of development.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the difficulties delaying their discovery and characterization is their thin, suboptical width, and the fact that they only form at specific stages of development (Eom, 2020; Yamashita et al., 2018; Caviglia and Ober, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about developmental timing with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "ac87d5c7-6209-4a85-8ec3-faefad863b5d",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C48",
+      "claim": "The airineme MSD fits the prediction of the PRW model up to time point around 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The airineme MSD fits the prediction of the PRW model, in Equation 5, up to time point around 15 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of experimental MSD with theoretical PRW prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "fcb282b4-0fbe-4564-987d-f0e00e0c4fd2",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C49",
+      "claim": "Different cellular protrusions may have shapes optimized for different functions.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises an intriguing possibility that different protrusions have a shape optimized for different functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on observed differences in protrusion morphology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "6cd6c4b9-c199-4e2a-ac6e-0b6c0d594466",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C50",
+      "claim": "Some tunneling nanotubes in cancer cells are straight compared to airinemes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, some tunneling nanotubes in cancer cells (Parker et al., 2017) are straight compared to airinemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with other cellular protrusions cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "b3e199fb-c7f6-4985-9b09-a1f82c3fff85",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C51",
+      "claim": "Nanotubes in PC12 cells serve as conduits for organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, nanotubes in PC12 cells serve as conduits for organelles (Wang and Gerdes, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Function of nanotubes cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "733dabc5-9c18-437a-a025-369cc0366a18",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C52",
+      "claim": "The finite PRW process is mathematically equivalent to the worm-like chain model.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematically, the finite PRW process is equivalent to the worm-like chain model, for which exact formula have been derived for the tip location (Spakowitz and Wang, 2005; Mehraeen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical equivalence stated with citations to theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "11f466de-0b84-4bba-b226-adb76c7db461",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C53",
+      "claim": "The contact probability per airineme sets an upper bound on the ability of cells to communicate via this modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide a contact probability per airineme, setting an upper bound on the ability of cells to communicate via this modality, which is itself a function of cell density (related to dtarg in our notation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about implications of results for cell communication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "6d22dadf-2663-4185-b980-93b5eaebafc3",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C54",
+      "claim": "Variants of the PRW model have been found to describe cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants of the PRW model have been found to describe cell migration (Harrison and Baker, 2018; Weavers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about model applications with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "cfefa27c-2ab2-43b6-bcc5-02c2e9525638",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C55",
+      "claim": "A related PRW model was found to accurately describe macrophages in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, a related model was found to accurately describe macrophages in zebrafish (Jones et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior work on macrophage modeling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "9388f297-4d25-4e1e-a5cc-ac50e6dfab2d",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C56",
+      "claim": "Macrophages in zebrafish demonstrate a mix of directional persistence and randomness.",
+      "claim_type": "EXPLICIT",
+      "source": "Two observations from Jones et al., 2015 are particularly relevant to our work: that macrophages in zebrafish demonstrate a mix of directional persistence and randomness, and that their migration patterns adapt to circumstance (specifically, in their case, distance to wound and time since wounding).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from cited work (Jones et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "8efe7b2c-d70d-4927-b626-43ccffb1ba15",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C57",
+      "claim": "Macrophage migration patterns adapt to circumstance such as distance to wound and time since wounding.",
+      "claim_type": "EXPLICIT",
+      "source": "Two observations from Jones et al., 2015 are particularly relevant to our work: that macrophages in zebrafish demonstrate a mix of directional persistence and randomness, and that their migration patterns adapt to circumstance (specifically, in their case, distance to wound and time since wounding).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from cited work (Jones et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "817bea72-8cc1-4357-aaec-0d98a763bc4d",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C58",
+      "claim": "The variability in both experimental and simulated airineme length distributions is of similar magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the variability in both experimental and simulated distributions is of similar magnitude, suggesting that the randomness in observed airineme length arises from the randomness in target cell placement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of experimental and simulation data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "3cbd987f-cb27-4e06-9cb3-93270bd4ede1",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C59",
+      "claim": "The randomness in observed airineme length arises from the randomness in target cell placement.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the variability in both experimental and simulated distributions is of similar magnitude, suggesting that the randomness in observed airineme length arises from the randomness in target cell placement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of experimental and simulation variability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "c377107d-668f-4b3b-9d77-7167426c65b2",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C60",
+      "claim": "The difference between time-series tip location curvature and final state curvature is on average 0.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed root mean squared curvature of both the time-series tip location and of just the final state for the airinemes shown here. These two methods yield a difference, on average, of 0.7%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison stated in Figure 2\u2014figure supplement 1 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "6f046400-7706-4bf3-b29e-1a1442f2433a",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C61",
+      "claim": "The results of the isotropy test are insensitive to the cutoff length.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of this test are insensitive to the cutoff length (see Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about robustness of statistical test with reference to source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "872d66b2-26c7-4e0c-8701-2503fd99d9cb",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C63",
+      "claim": "Contact is defined as the event in which the tip of the growing airineme intersects with the target.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, contact is defined as the event in which the tip of the growing airineme intersects with the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of contact used in simulations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "5099cf70-8256-40cd-80e7-f9714af8d975",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C64",
+      "claim": "In simulations, contact is assumed to have occurred when the airineme tip reaches within a distance rtarg of the center of the target cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In simulations, we assume contact has occurred when the airineme tip reaches within a distance rtarg of the center of the target cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Operational definition used in computational model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "b8df13e1-ba38-4377-b34b-0d383e75d3f1",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C65",
+      "claim": "The mechanism by which contact is detected is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as discussed above, the mechanism by which contact is detected is unknown, and it could be that the airineme tip has a large effective spatial extent that includes some or all of the macrophage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitation of current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "63de814f-88d3-44e8-830d-76d9d2cb55d3",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C66",
+      "claim": "The search process is finite-length and would not always eventually find the target in two dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Note again the search process is finite-length (otherwise in two dimensions would always eventually find the target).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about mathematical property of finite vs infinite search.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "a7016918-bc73-4977-ae5c-f2cc7fa2871d",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C67",
+      "claim": "To maximize contact probability, variance of contact angle should be maximal.",
+      "claim_type": "EXPLICIT",
+      "source": "Heuristically, this is because the two objectives prefer opposite variances. To maximize contact probability, variance should be maximal, taking full advantage of the surface of the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Heuristic explanation of trade-off mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "976dd408-d290-4eba-be9a-5df23820a296",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C68",
+      "claim": "To maximize directional information, the variance of contact angle should be minimized.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, to maximize directional information, the variance of contact angle should be minimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Heuristic explanation of trade-off mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "2aac834f-9344-4a3f-8cbc-8ae19eab722b",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C70",
+      "claim": "At intermediate cell-to-cell distances, the parametric curve forms a loop offering a concave-down region with a Pareto optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "At these intermediate dtarg values, the loop offers a concave-down region with a Pareto optimum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of parametric curve behavior shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "d43231e7-c685-47e0-b332-3591d96b84e7",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C73",
+      "claim": "The mathematical characterization of long-range cellular projections will become increasingly valuable as they continue to be discovered.",
+      "claim_type": "EXPLICIT",
+      "source": "As long-range cellular projections like airinemes continue to be discovered in multicellular systems, their mathematical characterization will become increasingly valuable, mirroring the mathematical characterization of diffusion-mediated cell\u2013cell signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about future importance of this type of research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "7e42827d-d92f-49c5-ba69-1dacb3366468",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C74",
+      "claim": "The results have implications for macrophage cell motility relevant in wound healing and infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Since airineme tip motion is driven by macrophages, our results have implications for macrophage cell motility, which is relevant in other macrophage-dependent processes like wound healing and infection (Sun et al., 2019; Achouri et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about broader implications with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "955379fe-5b32-4b04-a4e3-0ba619bcc5d9",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C75",
+      "claim": "Efficient transport of signaling molecules after contact might prefer shorter protrusion length and favor straight morphologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides search success probability and directional information, one obvious candidate for optimization is the efficient transport of signaling molecules after contact has been established (Bressloff and Kim, 2018; Kim and Bressloff, 2018). This might prefer shorter protrusion length, and therefore favor straight morphologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about alternative optimization objectives with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "f9d6e458-e712-4f79-a366-d9f7c6950f6c",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C76",
+      "claim": "There is an opportunity to find analytic expressions for the contact probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an opportunity to find analytic (asymptotic or exact) expressions for the contact probabilities, which would obviate the need for stochastic simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about future mathematical work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "db186186-801b-48fb-b577-1b4ec9f49ffa",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C77",
+      "claim": "The contact probability per airineme is a function of cell density.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide a contact probability per airineme, setting an upper bound on the ability of cells to communicate via this modality, which is itself a function of cell density (related to dtarg in our notation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about relationship between contact probability and cell density.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "afaa9d71-2102-4efd-b8a0-e26696628733",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C78",
+      "claim": "The results may inform future pattern formation models.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results may inform future pattern formation models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about potential application of results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "8cb726a1-9c9e-4910-b831-7b3b1bd16e03",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C79",
+      "claim": "Pattern formation models may provide information about the distribution of target cells which may affect search efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "In the reciprocal direction, these models may provide information about the distribution of target cells, which may significantly affect search efficiencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about reciprocal relationship between models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "18d302b4-ac57-4d6b-aff9-3014385bdf4d",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C80",
+      "claim": "Time-lapse images were acquired at 5 min intervals for 12 hr at \u00d740 magnification on a Leica SP8 confocal microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse images, acquired at 5 min intervals for 12 hr, and static images were taken at \u00d740 (water-emulsion objective) on a Leica SP8 confocal microscope with resonant scanner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of imaging methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "d67be173-0d4c-4817-9e2a-0c499247dac4",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C81",
+      "claim": "Zebrafish larvae of 7.5 SSL were staged prior to explant preparation for ex vivo imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish larvae of 7.5 SSL were staged following Parichy et al., 2009 prior to explant preparation for ex vivo imaging of pigment cells in their native tissue environment as described by Budi et al., 2011 and Eom et al., 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methodology with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "f253c676-032a-466c-b29f-7af824c86161",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C87",
+      "claim": "Model convolution was used to estimate uncertainty in the analysis method.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to estimate uncertainty in our analysis method, we used model convolution (Figure 4\u2014figure supplement 1, Gardner et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of uncertainty quantification method with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "d9d00139-bdbb-496d-937d-2e3d14e34943",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C88",
+      "claim": "Independent analyses by five people were performed on both simulated data and experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there is a manual step in this analysis pipeline, independent analyses by five people were performed on both simulated data and experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of validation approach for manual analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "a326ec58-1f11-4321-9ba0-03c0c28d8a04",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C90",
+      "claim": "Fisher information can be intuitively understood as the inverse of variance for Gaussian distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "This quantity can be intuitively understood by noting that, for Gaussian distributions, Fisher information is the inverse of the variance. So, high variance implies low information and low variance implies high information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of Fisher information concept.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "a2a8ec2c-6b2e-43b1-8999-ed464412586e",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C92",
+      "claim": "A target cell that receives almost no airinemes will score low in directional information using the modified Fisher information metric.",
+      "claim_type": "EXPLICIT",
+      "source": "With this modification, a target cell that receives almost no airinemes will score low in directional information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of rationale for modified Fisher information.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "f113fcb6-2184-469c-908e-ee7dedfa80c8",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C93",
+      "claim": "The extracted data and analysis routines are available openly at a GitHub repository.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracted data and analysis routines are available openly at: https://github.com/sohyeonparkgithub/Airineme-optimal-target-search, (copy archived at swh:1:rev:366ad6e1e3e5061c0cf395c8e3be784872903922; Park, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data and code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "f1b9c8ac-3baf-463c-bf20-4f0cf61af613",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C94",
+      "claim": "Adult zebrafish were maintained at 28.5\u00b0C on a 16 hr:8 hr light:dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult zebrafish were maintained at 28.5\u00b0C on a 16 hr:8 hr light:dark cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of animal husbandry conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "5bdbfdc0-1eb7-424b-800a-1aa8ebaadf1d",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C95",
+      "claim": "All animal work was conducted with approval of the University of California Irvine Institutional Animal Care and Use Committee (protocol #AUP-19-043).",
+      "claim_type": "EXPLICIT",
+      "source": "All animal work in this study was conducted with the approval of the University of California Irvine Institutional Animal Care and Use Committee (protocol #AUP-19-043) in accordance with institutional and federal guidelines for the ethical use of animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "f1ace21d-fcf8-456d-9c0b-e8e101746432",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "claim_id": "C96",
+      "claim": "The transgenic embryos Tg(tyrp1b:palmmCherry) were injected with a construct to drive membrane-bound EGFP under the aox5 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The transgenic embryos, Tg(tyrp1b:palmmCherry), were injected with the construct drive membrane-bound EGFP under the aox5 promoter to visualize airinemes in xanthophore lineages and melanophores (Eom et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methodology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8e4d28e2-81d7-453f-942a-285d8f28cd18",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Airinemes are long, thin cellular protrusions (tens to hundreds of micrometers) produced by xanthoblasts in zebrafish that search for target melanophore cells via macrophage-mediated transport. The search process has a maximum length, contains Delta-C ligand at the tip for Notch signaling, and shows no evidence of responding to directional cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe established biological properties of airinemes based on prior experimental work (C1-C8, C46-C47), all supported by multiple citations to published studies. The characterization is consistent with the cited literature and provides the biological context for the current study's modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "7f330e25-1b12-4ce2-8cf3-34d85fbfbb3b",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Analysis of airineme motion rejects both simple random walk and Levy-type models. The MSD shows non-linear behavior with best-fit exponent \u03b1=1.55, and CCDF analysis yields exponents >3 (3.81 for 10 min, 4.40 for 20 min intervals) with continued downward curvature inconsistent with Levy models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The rejection of alternative models (C14, C16) is well-supported by quantitative statistical analysis with confidence intervals (C17). The MSD and CCDF analyses provide complementary evidence, and the data clearly distinguish airineme motion from these simpler models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "8ff21580-7b67-4704-bff0-358b31c28767",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Airineme shape is most consistent with a finite-length persistent random walk (PRW) model with maximum length 250 \u03bcm. The MSD fits PRW predictions up to ~15 min, the final length distribution matches observations, and time-series versus final-state curvature differs by only 0.7%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The PRW model is supported by multiple lines of evidence: MSD fit (C48), length distribution agreement (C20), and validation that final state approximates dynamics (C60). The model is appropriately validated against experimental data and provides a mechanistic framework consistent with observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "f71a4a40-fc66-43d2-a5dd-d81ac921ec82",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Model assumptions include constant airineme extension velocity (4.5 \u03bcm/min), independent operation of airinemes with generation rate ~0.15 per cell per hour, and unrestricted 2D motion of airineme tips on the tissue surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These modeling assumptions (C10, C21, C22, C24) are justified by citations to prior experimental measurements and observations. The independence assumption is reasonable given the long mean time between initiations (~400 min) compared to extension time (~56 min).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "cf391abc-5e03-4c39-9583-9448f860257b",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Simulations reveal an optimal angular diffusion coefficient that maximizes target contact probability by balancing ballistic (straight) and diffusive (curved) search strategies. The optimal strategy depends on target parameters: diffusion-like search is favored for small/close targets, while ballistic search is favored for large/distant targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The existence of an optimum (C27, C28) is demonstrated through systematic simulations across parameter space, and the heuristic explanation for target-dependent optimization (C31, C32) is mechanistically sound. The results are consistent with prior theoretical work on PRW and worm-like chain models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "8b40e5b8-7024-4d33-ac0e-1bd39d3711ee",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The experimentally measured angular diffusion coefficient (D\u03b8 = 0.1838 min\u207b\u00b9) matches the simulated optimal value for biologically relevant parameters. This was determined using maximum likelihood estimation with model convolution for uncertainty quantification and validation by five independent analysts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The agreement between experimental measurement and theoretical optimum (C35) is striking and represents a key finding. The methodology is rigorous, including uncertainty quantification (C87) and inter-analyst validation showing <7% error (C88). However, the sample size (N=70 airinemes) is modest, and the agreement could be fortuitous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "28abe5d8-162e-46a6-a3c2-629315cbd11f",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis of contact angle distributions reveals that observed airineme parameters produce wider contact angle distributions compared to ballistic or diffusion-like extremes. This reflects a trade-off where maximizing contact probability requires maximal variance while maximizing directional information requires minimal variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The contact angle analysis (C39, C41) is supported by simulations, and the trade-off mechanism (C67, C68) is explained through clear geometric reasoning. The heuristic explanations are mechanistically sound and consistent with the simulation results shown in Figure 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "bab095cc-a065-4cff-baa1-9ffba843b37c",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For zebrafish airinemes, the observed angular diffusion represents a Pareto optimum that balances search success and directional information without sacrificing one for the other. This Pareto optimum emerges at intermediate cell-to-cell distances where the parametric curve forms a concave-down loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Pareto optimality analysis (C45, C70) is well-supported by the parametric curve analysis across parameter space (Figure 5\u2014figure supplement 2). The conclusion that airinemes don't sacrifice search for directional information is justified, though it's noted this could also simply reflect optimization for search alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "63578030-bceb-4395-8c70-14e7b761d46e",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The variability in experimental and simulated airineme length distributions is of similar magnitude, suggesting that randomness in observed airineme length arises from randomness in target cell placement rather than intrinsic variability in the search process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison of experimental and simulation variability (C58) supports the inference about the source of length variability (C59). This is a reasonable interpretation given the model's ability to reproduce the observed distribution, though other sources of variability cannot be completely ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "a702aad3-0b92-429c-aa84-f1e963b549c1",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The isotropy test showing uniform final angle distribution for long airinemes (>15 min growth time) is robust and insensitive to the cutoff length choice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The robustness analysis (C61) strengthens confidence in the isotropy result, which is a key prediction of the PRW model. Testing multiple cutoff criteria (N=26 to N=49 airinemes) and consistently finding uniformity (p=0.37) supports the PRW model interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "69b6ff86-3f6e-4a56-a4d7-3c12ed2679be",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Contact is operationally defined in simulations as the airineme tip reaching within distance rtarg of the target cell center, though the actual biological mechanism of contact detection remains unknown and could involve the entire macrophage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The operational definition (C63, C64) is clearly stated and appropriate for modeling purposes. The acknowledgment of uncertainty about the biological mechanism (C65) is important and honest, representing a limitation that could affect quantitative predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "3847a9bc-c334-4c39-9468-9fe4293770c6",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Directional information is quantified using modified Fisher information that accounts for the probabilistic number of airinemes received by target cells, ensuring that cells receiving few airinemes score low in directional information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The use of Fisher information is appropriate for quantifying directional sensing (C90), and the modification to account for contact probability (C92) is a reasonable methodological choice that prevents misleading conclusions about rarely-contacted cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "4d8d416c-1ae8-4104-a1fb-fdfee7523770",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The finite PRW process is mathematically equivalent to the worm-like chain model, for which exact formulas exist for tip location. There is an opportunity to derive analytic expressions for contact probabilities that would obviate stochastic simulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mathematical equivalence (C52) is correctly stated with appropriate citations. The suggestion for future analytical work (C76) is reasonable speculation about extending existing theoretical results, though it represents future work rather than a current result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "e29659e8-6b8b-44f6-8676-1af16179631d",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Different cellular protrusions may have shapes optimized for different functions. Mathematical characterization of long-range cellular projections will become increasingly valuable, and alternative optimization objectives like efficient molecular transport might favor different morphologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C49, C50, C51, C73, C75) represent speculation about broader implications and future directions. While the comparisons to other protrusion types are supported by citations, the hypotheses about function-specific optimization remain untested and speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "5cce7620-408d-43f6-9440-1c7d1dff43c3",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The results provide contact probability per airineme as a function of cell density, setting bounds on communication ability with implications for macrophage motility in wound healing/infection and for future pattern formation models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C53, C74, C77, C78, C79) represent reasonable inferences about the implications of the results. The connection to macrophage motility is justified given that macrophages drive airineme tip motion, and the relevance to pattern formation models is appropriate given the biological context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "b5a632d0-b223-40e1-b504-0001ed99f88d",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "PRW models have been used to describe cell migration, including macrophages in zebrafish, which demonstrate directional persistence mixed with randomness and adaptive migration patterns depending on circumstance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C54-C57) accurately summarize prior work on PRW models for cell migration with appropriate citations. The connection to the current work is relevant since airineme motion is driven by macrophage migration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "c6ac0b5d-d518-4cb3-ad5d-bd251c383b1e",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Experimental methods include time-lapse confocal imaging of transgenic zebrafish at 5 min intervals, ex vivo explant preparation, appropriate animal care protocols, and open availability of data and analysis code.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims (C80, C81, C93-C96) are clearly documented with appropriate detail and citations. The open availability of data and code (C93) enhances reproducibility. The methods appear standard and appropriate for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    },
+    {
+      "id": "97836b74-ecae-4902-ba54-9a16118e0d7a",
+      "content_id": "c1a15bbd-9760-48fa-ad0b-c8cb2d0effcc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The search process is finite-length and would not always eventually find the target in two dimensions, unlike an infinite-length search.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim (C66) correctly states a fundamental mathematical property distinguishing finite from infinite random walks in 2D. The finite-length constraint is biologically realistic and critical for the model's predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:32:49.981350Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fdec735e-bca2-400c-9770-3dc08c7fb290",
+      "result_id": "8e4d28e2-81d7-453f-942a-285d8f28cd18"
+    },
+    {
+      "claim_id": "e998ae9c-5135-4ee7-afd4-502cef1f6d29",
+      "result_id": "8e4d28e2-81d7-453f-942a-285d8f28cd18"
+    },
+    {
+      "claim_id": "cc9f3b7c-6884-4e63-890f-eedb689297e9",
+      "result_id": "8e4d28e2-81d7-453f-942a-285d8f28cd18"
+    },
+    {
+      "claim_id": "d6d0ea46-be11-4615-9d4f-0e41f909a3b7",
+      "result_id": "8e4d28e2-81d7-453f-942a-285d8f28cd18"
+    },
+    {
+      "claim_id": "ec3cefdc-9882-4c12-9294-d4f57013feae",
+      "result_id": "8e4d28e2-81d7-453f-942a-285d8f28cd18"
+    },
+    {
+      "claim_id": "9ec07a0f-aeac-4598-b7be-8242aa964cab",
+      "result_id": "8e4d28e2-81d7-453f-942a-285d8f28cd18"
+    },
+    {
+      "claim_id": "aa0fbf92-f78a-43b3-8f33-93af51763f8b",
+      "result_id": "8e4d28e2-81d7-453f-942a-285d8f28cd18"
+    },
+    {
+      "claim_id": "b7d3e49b-46b9-432c-bab9-f06b8bd10001",
+      "result_id": "8e4d28e2-81d7-453f-942a-285d8f28cd18"
+    },
+    {
+      "claim_id": "99a31184-4de1-44e2-93f4-6f2ac93173a3",
+      "result_id": "8e4d28e2-81d7-453f-942a-285d8f28cd18"
+    },
+    {
+      "claim_id": "7130ba9b-6410-4407-b823-a6093eb427fc",
+      "result_id": "8e4d28e2-81d7-453f-942a-285d8f28cd18"
+    },
+    {
+      "claim_id": "0042b538-cc26-46df-9a5e-fc50f015b503",
+      "result_id": "7f330e25-1b12-4ce2-8cf3-34d85fbfbb3b"
+    },
+    {
+      "claim_id": "153d40ba-99c8-40c3-bdcd-cb9bbf6bcfd8",
+      "result_id": "7f330e25-1b12-4ce2-8cf3-34d85fbfbb3b"
+    },
+    {
+      "claim_id": "6c303db3-06cc-4209-9921-3995ddcf5d32",
+      "result_id": "7f330e25-1b12-4ce2-8cf3-34d85fbfbb3b"
+    },
+    {
+      "claim_id": "d6bff039-c132-4878-83ee-1f577c2a879c",
+      "result_id": "8ff21580-7b67-4704-bff0-358b31c28767"
+    },
+    {
+      "claim_id": "ac87d5c7-6209-4a85-8ec3-faefad863b5d",
+      "result_id": "8ff21580-7b67-4704-bff0-358b31c28767"
+    },
+    {
+      "claim_id": "5afa1b3e-9562-4243-8147-4194cbc4de48",
+      "result_id": "8ff21580-7b67-4704-bff0-358b31c28767"
+    },
+    {
+      "claim_id": "c377107d-668f-4b3b-9d77-7167426c65b2",
+      "result_id": "8ff21580-7b67-4704-bff0-358b31c28767"
+    },
+    {
+      "claim_id": "3f790dec-2ef4-44cf-a38d-77d2cd941c94",
+      "result_id": "f71a4a40-fc66-43d2-a5dd-d81ac921ec82"
+    },
+    {
+      "claim_id": "ad89ccfb-5c3e-4587-bc09-168ff13bbe32",
+      "result_id": "f71a4a40-fc66-43d2-a5dd-d81ac921ec82"
+    },
+    {
+      "claim_id": "2b1b94cd-f9a0-4d72-bd1a-3c602e3c0af0",
+      "result_id": "f71a4a40-fc66-43d2-a5dd-d81ac921ec82"
+    },
+    {
+      "claim_id": "f6df3596-42ed-4597-8e0f-27beb36db541",
+      "result_id": "f71a4a40-fc66-43d2-a5dd-d81ac921ec82"
+    },
+    {
+      "claim_id": "1d6918c4-0928-4a82-8e7b-67b85bb145e4",
+      "result_id": "cf391abc-5e03-4c39-9583-9448f860257b"
+    },
+    {
+      "claim_id": "16c85754-0729-4ffc-b1cb-f6ee8329ae71",
+      "result_id": "cf391abc-5e03-4c39-9583-9448f860257b"
+    },
+    {
+      "claim_id": "d24ab407-6146-4ce3-9653-ea0d536c7507",
+      "result_id": "cf391abc-5e03-4c39-9583-9448f860257b"
+    },
+    {
+      "claim_id": "578c8792-0302-4f9a-9c2d-6a3115a85d4b",
+      "result_id": "cf391abc-5e03-4c39-9583-9448f860257b"
+    },
+    {
+      "claim_id": "921025f0-44ce-4dce-8df2-30feb5e81d0c",
+      "result_id": "8b40e5b8-7024-4d33-ac0e-1bd39d3711ee"
+    },
+    {
+      "claim_id": "f253c676-032a-466c-b29f-7af824c86161",
+      "result_id": "8b40e5b8-7024-4d33-ac0e-1bd39d3711ee"
+    },
+    {
+      "claim_id": "d9d00139-bdbb-496d-937d-2e3d14e34943",
+      "result_id": "8b40e5b8-7024-4d33-ac0e-1bd39d3711ee"
+    },
+    {
+      "claim_id": "deb203a3-da36-4504-9f99-8759e80963b3",
+      "result_id": "28abe5d8-162e-46a6-a3c2-629315cbd11f"
+    },
+    {
+      "claim_id": "b3f6e533-bbd2-4206-a5e7-138a9b4ae446",
+      "result_id": "28abe5d8-162e-46a6-a3c2-629315cbd11f"
+    },
+    {
+      "claim_id": "a7016918-bc73-4977-ae5c-f2cc7fa2871d",
+      "result_id": "28abe5d8-162e-46a6-a3c2-629315cbd11f"
+    },
+    {
+      "claim_id": "976dd408-d290-4eba-be9a-5df23820a296",
+      "result_id": "28abe5d8-162e-46a6-a3c2-629315cbd11f"
+    },
+    {
+      "claim_id": "629512c0-e03d-4266-8b06-957f32236946",
+      "result_id": "bab095cc-a065-4cff-baa1-9ffba843b37c"
+    },
+    {
+      "claim_id": "2aac834f-9344-4a3f-8cbc-8ae19eab722b",
+      "result_id": "bab095cc-a065-4cff-baa1-9ffba843b37c"
+    },
+    {
+      "claim_id": "817bea72-8cc1-4357-aaec-0d98a763bc4d",
+      "result_id": "63578030-bceb-4395-8c70-14e7b761d46e"
+    },
+    {
+      "claim_id": "3cbd987f-cb27-4e06-9cb3-93270bd4ede1",
+      "result_id": "63578030-bceb-4395-8c70-14e7b761d46e"
+    },
+    {
+      "claim_id": "6f046400-7706-4bf3-b29e-1a1442f2433a",
+      "result_id": "a702aad3-0b92-429c-aa84-f1e963b549c1"
+    },
+    {
+      "claim_id": "872d66b2-26c7-4e0c-8701-2503fd99d9cb",
+      "result_id": "69b6ff86-3f6e-4a56-a4d7-3c12ed2679be"
+    },
+    {
+      "claim_id": "5099cf70-8256-40cd-80e7-f9714af8d975",
+      "result_id": "69b6ff86-3f6e-4a56-a4d7-3c12ed2679be"
+    },
+    {
+      "claim_id": "b8df13e1-ba38-4377-b34b-0d383e75d3f1",
+      "result_id": "69b6ff86-3f6e-4a56-a4d7-3c12ed2679be"
+    },
+    {
+      "claim_id": "a326ec58-1f11-4321-9ba0-03c0c28d8a04",
+      "result_id": "3847a9bc-c334-4c39-9468-9fe4293770c6"
+    },
+    {
+      "claim_id": "a2a8ec2c-6b2e-43b1-8999-ed464412586e",
+      "result_id": "3847a9bc-c334-4c39-9468-9fe4293770c6"
+    },
+    {
+      "claim_id": "733dabc5-9c18-437a-a025-369cc0366a18",
+      "result_id": "4d8d416c-1ae8-4104-a1fb-fdfee7523770"
+    },
+    {
+      "claim_id": "f9d6e458-e712-4f79-a366-d9f7c6950f6c",
+      "result_id": "4d8d416c-1ae8-4104-a1fb-fdfee7523770"
+    },
+    {
+      "claim_id": "fcb282b4-0fbe-4564-987d-f0e00e0c4fd2",
+      "result_id": "e29659e8-6b8b-44f6-8676-1af16179631d"
+    },
+    {
+      "claim_id": "6cd6c4b9-c199-4e2a-ac6e-0b6c0d594466",
+      "result_id": "e29659e8-6b8b-44f6-8676-1af16179631d"
+    },
+    {
+      "claim_id": "b3e199fb-c7f6-4985-9b09-a1f82c3fff85",
+      "result_id": "e29659e8-6b8b-44f6-8676-1af16179631d"
+    },
+    {
+      "claim_id": "d43231e7-c685-47e0-b332-3591d96b84e7",
+      "result_id": "e29659e8-6b8b-44f6-8676-1af16179631d"
+    },
+    {
+      "claim_id": "955379fe-5b32-4b04-a4e3-0ba619bcc5d9",
+      "result_id": "e29659e8-6b8b-44f6-8676-1af16179631d"
+    },
+    {
+      "claim_id": "11f466de-0b84-4bba-b226-adb76c7db461",
+      "result_id": "5cce7620-408d-43f6-9440-1c7d1dff43c3"
+    },
+    {
+      "claim_id": "7e42827d-d92f-49c5-ba69-1dacb3366468",
+      "result_id": "5cce7620-408d-43f6-9440-1c7d1dff43c3"
+    },
+    {
+      "claim_id": "db186186-801b-48fb-b577-1b4ec9f49ffa",
+      "result_id": "5cce7620-408d-43f6-9440-1c7d1dff43c3"
+    },
+    {
+      "claim_id": "afaa9d71-2102-4efd-b8a0-e26696628733",
+      "result_id": "5cce7620-408d-43f6-9440-1c7d1dff43c3"
+    },
+    {
+      "claim_id": "8cb726a1-9c9e-4910-b831-7b3b1bd16e03",
+      "result_id": "5cce7620-408d-43f6-9440-1c7d1dff43c3"
+    },
+    {
+      "claim_id": "6d22dadf-2663-4185-b980-93b5eaebafc3",
+      "result_id": "b5a632d0-b223-40e1-b504-0001ed99f88d"
+    },
+    {
+      "claim_id": "cfefa27c-2ab2-43b6-bcc5-02c2e9525638",
+      "result_id": "b5a632d0-b223-40e1-b504-0001ed99f88d"
+    },
+    {
+      "claim_id": "9388f297-4d25-4e1e-a5cc-ac50e6dfab2d",
+      "result_id": "b5a632d0-b223-40e1-b504-0001ed99f88d"
+    },
+    {
+      "claim_id": "8efe7b2c-d70d-4927-b626-43ccffb1ba15",
+      "result_id": "b5a632d0-b223-40e1-b504-0001ed99f88d"
+    },
+    {
+      "claim_id": "18d302b4-ac57-4d6b-aff9-3014385bdf4d",
+      "result_id": "c6ac0b5d-d518-4cb3-ad5d-bd251c383b1e"
+    },
+    {
+      "claim_id": "d67be173-0d4c-4817-9e2a-0c499247dac4",
+      "result_id": "c6ac0b5d-d518-4cb3-ad5d-bd251c383b1e"
+    },
+    {
+      "claim_id": "f113fcb6-2184-469c-908e-ee7dedfa80c8",
+      "result_id": "c6ac0b5d-d518-4cb3-ad5d-bd251c383b1e"
+    },
+    {
+      "claim_id": "f1b9c8ac-3baf-463c-bf20-4f0cf61af613",
+      "result_id": "c6ac0b5d-d518-4cb3-ad5d-bd251c383b1e"
+    },
+    {
+      "claim_id": "5bdbfdc0-1eb7-424b-800a-1aa8ebaadf1d",
+      "result_id": "c6ac0b5d-d518-4cb3-ad5d-bd251c383b1e"
+    },
+    {
+      "claim_id": "f1ace21d-fcf8-456d-9c0b-e8e101746432",
+      "result_id": "c6ac0b5d-d518-4cb3-ad5d-bd251c383b1e"
+    },
+    {
+      "claim_id": "63de814f-88d3-44e8-830d-76d9d2cb55d3",
+      "result_id": "97836b74-ecae-4902-ba54-9a16118e0d7a"
+    }
+  ],
+  "comparisons": []
+}

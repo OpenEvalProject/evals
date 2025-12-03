@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The study resolved four distinct conformational states (C1, C2, C3, C4) of the AdiC transporter using fluorescence polarization microscopy. All four states were observed both in the absence and presence of arginine, requiring a minimal eight-state model (four apo and four ligand-bound states) to account for the observed behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41, C42, and C43 collectively demonstrate successful resolution of four conformational states through polarization measurements. The data in Figures 5, 6, and 7 show distinct angle distributions for each state, and the observation of all states across arginine concentrations (Figure 10A) supports the eight-state model requirement. The resolution criterion of 2.5\u03c3 separation between peaks was met.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "All equilibrium constants defining energetic relationships among the eight states were determined, with KD values for arginine binding ranging from 25-69 \u03bcM across the four conformations. These values are statistically comparable to previously reported overall KD values (32-204 \u03bcM) determined by isothermal titration calorimetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48, C49, and C50 are well-supported by Table 1 and Figure 10A. The global fitting approach to concentration-dependent probability data yielded all necessary equilibrium constants with 95% confidence intervals. The agreement with independent ITC measurements (C25, C26) validates the method and indicates minimal perturbation from the experimental modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C56",
+      "C57"
+    ],
+    "result": "States C2 and C3 were identified as open states based on their strong arginine concentration-dependent probability changes, while C1 and C4 were identified as occluded states based on their minimal concentration dependence. All four states bind arginine, as evidenced by their persistence at saturating concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, C46, C56, and C57 are supported by the concentration-dependent probability data in Figure 10A. The logical inference that non-binding states would vanish at saturating ligand concentrations (C46) is sound. The classification into open versus occluded states based on accessibility to ligand is consistent with established transporter nomenclature (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C58"
+    ],
+    "result": "The observation that all four conformations exist in both apo and ligand-bound forms is consistent with the Monod-Wyman-Changeux allosteric model, where ligand binding stabilizes pre-existing conformations rather than creating new ones. The comparable probabilities of C2 and C3 at saturating arginine are consistent with previous flux measurements showing comparable Km and maximal flux rates in both directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C58 provide valid interpretations of the experimental observations. The presence of all states without and with ligand (C43) supports the MWC model framework. The comparison with previous flux data (Tsai et al., 2012) provides independent validation of the functional symmetry implied by the probability measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Structural matching analysis comparing the orientations of helix 6A in crystal structures with the conformational states identified by polarization microscopy suggests that C1 corresponds to Ex (externally occluded), C2 to Eo (externally open), C3 to Io (internally open), and C4 to Ix (internally occluded). This assignment is consistent with the ligand concentration-dependence classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60 and C61 describe structural matching results shown in Figures 8 and 11, but the analysis relies on proxy structures from BasC and ApcT (C54, C55) for the Io and Ix states rather than actual AdiC structures. While the best-fit matching (Figure 11E) and angle comparisons (Figure 8B, C) are presented, the use of homologous protein structures introduces uncertainty. The consistency with concentration-dependence data (C60) provides some support, but definitive assignment awaits AdiC structures in all four states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The method achieved detection of conformational transitions with 10 ms time resolution using an average of 92 photons per frame (SNR=7), and angle determination with better than 10\u00b0 resolution using an average of 1740 photons per dwell time (\u03c3<4\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by the experimental data and analysis shown in Figures 3 and 4. The photon counts and SNR values are clearly stated, and the relationship between SNR and angular resolution (Figure 4) demonstrates the achieved precision. The ability to detect transitions at 10 ms resolution while calculating accurate angles from dwell-time-averaged data represents a key technical achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study achieved an effective angular resolution of 5\u00b0 (\u03c3=2\u00b0), representing a five-fold improvement over previous polarization microscopy methods (\u226525\u00b0). This resolution enables tracking of protein conformational changes occurring on the angstrom scale, as a 5-10\u00b0 rotation at 20 \u00c5 radius corresponds to 1.7-3.5 \u00c5 chord distance changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C70, C71, and C72 are well-supported. The geometric calculations (C69) relating angular to linear displacement are mathematically sound. The comparison with previous methods (C65, C66) establishes the improvement. The actual resolution achieved in this study (C71, C72) is demonstrated by the smallest resolved angle changes between C2 and C3 (\u226510\u00b0, Figure 8B) and the SNR-\u03c3 relationship (Figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Bifunctional rhodamine was attached to helix 6a via two cysteine residues (G188C, S195C) spaced seven residues apart, aligning the fluorophore dipole with the helix axis. Native cysteines were removed to minimize background labeling, with minimal functional impact based on previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 describe the labeling strategy, which is well-documented in the methods and Figure 1. The lack of detectable background labeling (C20, Figure 1\u2014figure supplement 1A-B) validates the specificity. The citation to previous work (C22) supports the claim of minimal functional impact from cysteine removal, though this relies on prior literature rather than direct demonstration in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C27",
+      "C28"
+    ],
+    "result": "AdiC molecules were reconstituted into nanodiscs and attached to streptavidin-coated coverslips via biotin and streptavidin-binding tags with flexible spacer sequences. This flexible attachment resulted in considerable variation in inclination angle \u03b8 among molecules, necessitating development of a coordinate transformation method for spatial alignment during analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C27, and C28 describe the sample preparation and its consequences. The attachment strategy is illustrated in Figure 1C and Figure 1\u2014figure supplement 1C. The observation of \u03b8 variation among molecules (C28) is evident in Figure 7A-B, and the development of the local coordinate transformation (described in Materials and methods, Equations 29-32) successfully addresses this challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C51"
+    ],
+    "result": "The engineered AdiC construct exhibited a KD of 104 \u03bcM for arginine by ITC, within the previously reported range of 32-204 \u03bcM. This indicates that the genetic modifications (tags, mutations, fluorophore attachment) had no markedly consequential energetic impacts on arginine affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, and C51 are supported by the ITC data in Figure 1\u2014figure supplement 1D and comparison with literature values. The agreement between the modified construct and wild-type protein validates the experimental design. This is an important control demonstrating that the necessary modifications for the polarization measurements did not substantially perturb the protein's ligand-binding properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C35",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Fluorophores were excited by a circularly polarized laser under total internal reflection conditions, and emission was captured through four polarization channels (0\u00b0, 45\u00b0, 90\u00b0, 135\u00b0) at 10 ms intervals at 22\u00b0C. A Gaussian filter (7.5 Hz corner frequency, 22 ms rise time) was applied after changepoint analysis to reduce high-frequency noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, C35, C86, C87, and C88 describe the core experimental methodology, which is well-documented in the methods section and illustrated in Figure 2. The four-channel polarization detection system encodes full 3D orientation information (C35), which is the fundamental principle enabling the measurements. The data processing workflow is clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Experiments were performed on five separate occasions with statistically comparable results that were pooled together. All analyzed traces contained four states with an average length of ~4 s, and no traces with adequate SNR failed to exhibit transitions. Distribution widths reflect both technical and biological variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 describe data collection and quality control procedures. The reproducibility across five experimental sessions (C74, C75) and the consistent observation of four-state behavior (C77, C78) support the robustness of the findings. The acknowledgment that distribution widths include both technical and biological variation (C76) is appropriate, though the relative contributions are not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The changepoint detection threshold was set to limit false-positive transition detection to 5% based on simulation studies, resulting in approximately 1% false-negative events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C82 describe the statistical criteria for transition detection. The use of simulation studies to calibrate the threshold is appropriate methodology. The low false-positive and false-negative rates indicate reliable transition detection, which is critical for accurate state identification and dwell time determination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "System parameters were calibrated for the EMCCD camera (quantum efficiency ~0.95, gain=146, offset=220) and fluorophore wobble (\u03b4=22.5\u00b0). These parameters were used to correct raw intensity measurements for accurate angle calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C80, C83, C84, and C85 describe technical calibrations essential for quantitative measurements. The quantum efficiency (C79, C80) is a manufacturer specification. The gain and offset (C83, C84) were experimentally determined as described in the methods. The wobble parameter (C85) was determined in a separate study (Lewis and Lu, 2019c), which is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "This study represents the first successful tracking of conformational changes in a single integral membrane protein among four states occurring on angstrom and millisecond scales, establishing a fully determined eight-state quantitative model. This capability forms the foundation for future kinetic studies and can be applied to other membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 summarize the major achievements, which are well-supported by the collective evidence from all experimental results. Claim C64 about future applications is speculative but reasonable given the demonstrated capabilities. The novelty claim (\"for the first time\") for membrane proteins is supported by the comparison with previous polarization microscopy studies that were limited to soluble proteins or large-angle changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Membrane protein conformational changes typically occur on millisecond and angstrom scales, requiring methods capable of resolving individual conformational states at these spatiotemporal scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 present established knowledge about membrane protein dynamics that motivates the study. These are general principles in the field rather than novel findings, but they accurately frame the technical challenge addressed by the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "FRET-based methods can deduce distances on nanometer scales but face challenges in determining actual transfer efficiency due to environmental and orientation dependencies. Resolution and identification of multiple conformational states using FRET is particularly challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C8 accurately describe known limitations of FRET methodology, supported by citation to Stryer (1978). These claims provide context for why an alternative approach (polarization microscopy) was developed, though they represent established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Alpha-helices constrained by other secondary structures adopt unique spatial orientations in each conformational state, enabling conformational tracking by monitoring helix orientation (\u03b8 and \u03c6 angles) through a fluorophore dipole aligned with the helix axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, and C11 describe the fundamental principle underlying the methodology. This is a logical inference about protein structure that is validated by the successful application in this study. The alignment of the bifunctional rhodamine dipole with the helix axis (C11, C19) is supported by citation to Corrie et al. (1998) and illustrated in Figure 1B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "AdiC is a member of the APC transporter superfamily that facilitates arginine/agmatine exchange in pathogenic enterobacteria, contributing to acid resistance. The transporter can facilitate substrate movement in either direction as an intrinsic property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 provide biological context for AdiC, all supported by multiple literature citations. These represent established knowledge about the protein rather than new findings, but accurately describe the system under study and justify its selection as a model for method development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Transporters are expected to adopt four main structure-function states (Eo, Ex, Io, Ix). Crystal structures of AdiC in Eo and Ex states have been solved, while structures of homologous proteins BasC and ApcT in Io and Ix states are available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 summarize structural knowledge from the literature, all supported by appropriate citations. This provides the structural framework for interpreting the conformational states identified by polarization microscopy, though the reliance on homologous structures (C54, C55) for Io and Ix states introduces some uncertainty in the structural assignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Previous polarization-based detection methods had resolution \u226525\u00b0 and were limited to proteins undergoing large-angle changes such as myosin lever-arm rotation (~80\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 accurately describe the state of the field prior to this work, supported by multiple citations (Rosenberg et al., 2005; Forkey et al., 2005; Ohmachi et al., 2012; Lippert et al., 2017). This establishes the baseline against which the improvements in this study should be evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The median radius of proteins is approximately 20 \u00c5, and a 5-10\u00b0 rotation at this radius corresponds to 1.7-3.5 \u00c5 chord distance change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C69 provide geometric context for interpreting angular resolution in terms of linear displacement. The protein radius estimate (C68) is supported by citations to Brocchieri and Karlin (2005) and Erickson (2009). The geometric calculation (C69) is mathematically correct and helps translate angular resolution into biologically meaningful spatial scales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Protein density on coverslips was optimized for spatial resolution of individual fluorescent particles. Single-fluorophore labeling was optimized through protein-to-fluorophore ratio and confirmed by single-step photobleaching during analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, and C31 describe sample preparation quality control. These are standard practices for single-molecule fluorescence microscopy. The single-step bleaching criterion (C31) is an appropriate method for confirming single-fluorophore labeling, and the bleaching steps are shown in Figure 3\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Using combined information from both \u03b8 and \u03c6 angles should lead to higher effective resolution than using either angle alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is a logical inference about the methodology. Combining information from two independent angular measurements in 3D space should indeed improve resolution compared to using a single angle, as it provides more constraints on the fluorophore orientation. This principle underlies the k-means clustering approach in Cartesian coordinates described in the methods.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,479 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C64",
+      "C173",
+      "C174"
+    ],
+    "result": "2DTM successfully localizes 60S ribosomal subunits in FIB-milled yeast cells with high precision and specificity, identifying 4363 targets in 28 images with biologically relevant locations and orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 provide quantitative detection data showing 4363 60S targets with clear peaks distinguishable from background, minimal false positives in vacuoles, and appropriate subcellular distribution. Claims C64, C173-C174 confirm biological relevance through orientation analysis and 3D reconstruction (C60-C63), validating that FIB-milling preserves high-resolution signal for 2DTM detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C34",
+      "C70",
+      "C71",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "Comparing 2DTM SNR ratios using mature and LN 60S templates effectively differentiates nuclear pre-60S from cytoplasmic mature 60S populations based on subcellular localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 provide statistical evidence (p<0.0001) showing significantly higher mature/LN SNR ratios in cytoplasm vs nucleus, with 94% of cytoplasmic targets matching mature 60S and 88% of nuclear targets matching LN 60S. The overlap analysis (C80-C82) and classification results (C86-C87) demonstrate effective separation validated by known biology (C65-C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C190",
+      "C191"
+    ],
+    "result": "A maximum likelihood approach using Gaussian mixture models provides quantitative confidence metrics for single-particle classification, effectively separating nuclear and cytoplasmic 60S populations with specified probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 demonstrate excellent model fit (R\u00b2=0.993) with means matching independently calculated nuclear (-0.026) and cytoplasmic (0.335) populations. Claims C102-C104 show the method assigns appropriate confidence thresholds (95% and 50%) consistent with biological expectations. The approach provides particle-level probability assignments (C105, C190-C191) addressing a key limitation identified in C92-C93.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C36",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C182",
+      "C184"
+    ],
+    "result": "2DTM with three templates (EN, LN, mature 60S) classifies at least three distinct 60S maturation states from <500 molecules, with EN 60S predominantly nuclear (70%), LN 60S evenly distributed, and mature 60S predominantly cytoplasmic (85%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C167 provide quantitative classification data showing biologically consistent subcellular distributions for three maturation states. The EN 60S population (C157-C159) shows 43% nuclear localization with >3-fold fewer cytoplasmic targets than LN 60S, consistent with earlier maturation stage. Claims C162-C164 demonstrate detection of population heterogeneity, and C182-C184 confirm classification from small populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C168",
+      "C169",
+      "C170",
+      "C238"
+    ],
+    "result": "Inhibiting Crm1-mediated nuclear export with Leptomycin B causes accumulation of late nuclear intermediates, with >90% of nuclear targets shifting to LN 60S classification and loss of Nog2 occupancy differences between compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142, C168-C169 show increased nuclear pre-60S density and shift to >90% LN 60S classification after export inhibition. Claims C143-C147 demonstrate that Nog1 (removed post-export) still differentiates compartments while Nog2 (removed pre-export) no longer does, consistent with accumulation of export-competent Nog2-lacking intermediates. This provides biological validation of the classification method (C170, C238).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C148",
+      "C195"
+    ],
+    "result": "Modified 2DTM templates reveal that ribosome biogenesis factors, particularly Nog1 and Nog2, differentiate nuclear from cytoplasmic 60S populations, with rRNA contributing 1.5-1.8 fold more to SNR than proteins despite only 1.25-fold greater mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 provide quantitative analysis showing LN 60S proteins contribute positively to nuclear target SNR and negatively to cytoplasmic targets. Claims C137-C141 demonstrate that Nog1 and Nog2 (50% of RBF mass) differentiate compartments in cells with active export, consistent with known biology (C138-C140). The template truncation experiments (C133-C134) validate compositional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C199",
+      "C200"
+    ],
+    "result": "The mean log2 SNR ratio is largely independent of absolute SNR values and can be predicted from template structures alone, with simulated mature 60S showing mean 0.337 matching observed cytoplasmic population (p=0.867).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 show only ~10% difference in mean log2 ratios between top and bottom 20% of targets by SNR. Claims C119-C121 demonstrate simulation agreement with experimental data for cytoplasmic population. This independence from image SNR (C199-C200) enables model validation and suggests cytoplasmic population closely matches mature 60S template.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C150",
+      "C151",
+      "C236",
+      "C237"
+    ],
+    "result": "The nuclear 60S population deviates from predicted SNR ratios and fits a single Gaussian poorly, indicating a more complex mixture of maturation states distinct from both mature and LN 60S templates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 show nuclear population deviates from simulation predictions, unlike cytoplasmic population. Claims C150-C151 demonstrate poor single Gaussian fit with mean log2 near 0, suggesting additional populations. Claims C236-C237 confirm presence of at least one additional pre-60S population (Figure 6), supporting the complexity inference (C126).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C243",
+      "C244",
+      "C245",
+      "C246",
+      "C247"
+    ],
+    "result": "An EN 60S population with 5S rRNP rotated 180\u00b0 was identified accounting for >50% of nuclear 60S, and a nuclear LN 60S population was detected, suggesting temporal lag between 5S rotation/ITS2 removal and nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C243 identifies EN 60S population consistent with in vitro structures (Leidig et al., 2014). Claim C245 shows this population represents >50% of nuclear 60S, arguing for on-pathway intermediate despite prior difficulty establishing in vivo presence (C244). Claims C246-C247 identify nuclear LN 60S population implying temporal lag, though C248 acknowledges need for flux studies to test this hypothesis more thoroughly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "2DTM detects ~6500 60S/\u03bcm\u00b3 in cytoplasm corresponding to ~180,000 60S/cell, consistent with prior rRNA-based estimates, and ~200 60S/\u03bcm\u00b3 in nucleus (~30-fold lower).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 provide density measurements with calculation based on assumed cell volume (42 \u03bcm\u00b3, 65% cytoplasm). Claim C53 shows agreement with prior estimate of 187,000\u00b156,000 ribosomes/cell (von der Haar, 2008). Claims C54-C55 show lower nuclear density consistent with prior observations, though C56 acknowledges this likely reflects subset of nuclear population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mature 60S-detected targets are oriented with polypeptide exit tunnels facing the cytoplasmic surface of the nuclear envelope and depleted within ~20 nm of vacuole, indicating biologically relevant orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 describe specific orientations at nuclear envelope and depletion near vacuole. Claim C59 infers these orientations are unlikely artifacts based on biological relevance. The orientation analysis provides validation that 2DTM identifies genuine ribosomes in functionally appropriate locations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "3D reconstruction from 3991 mature 60S-detected targets shows density for 40S subunit in addition to 60S, with lower 40S resolution consistent with positional heterogeneity in translation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 shows 40S density in reconstruction, supporting that targets represent 80S ribosomes (C61). Claims C62-C63 explain lower 40S resolution as expected from positional heterogeneity during translation, consistent with prior work (Freitas et al., 2021; Korostelev, 2022; Lucas et al., 2021). This validates that detected targets are genuine ribosomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Normalized maximum intensity projections show similar distributions across nucleus, cytoplasm, and vacuole, indicating similar false positive probability across compartments and that false detections are not more likely in darker/denser regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 shows similar MIP distributions across compartments (Figure 1\u2014figure supplement 2). Claim C48 infers similar false positive probability from distribution similarity. Claim C50 concludes false detections not biased by image density. However, C49 is speculative about causes of slight differences. This analysis validates that compartment-based classification is not confounded by differential false positive rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C111",
+      "C112",
+      "C114",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "Overfitting contributes substantially to variance in individual 2DTM SNRs (estimated ~40% bias at threshold), but effect is reduced for SNR ratios when using similar templates, with Gaussian modeling accounting for this bias in classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 establish theoretical basis for overfitting with 243 degrees of freedom yielding apparent noise SNR of 3.31. Claims C111-C112 show proportionally greater effect at low SNR but substantial reduction when comparing similar templates. Claims C203-C210 explain how Gaussian modeling captures these factors, accounting for bias in probability calculations. This provides important methodological context for classification reliability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Cytoplasmic targets detected by both EN and LN 60S show single population resembling LN 60S, while nuclear targets show at least two distinct populations based on relative similarity to EN, LN, and mature 60S templates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C164 describe distributions of SNR ratios for targets detected by multiple templates (Figure 6\u2014figure supplement 1C-D). The cytoplasmic homogeneity vs nuclear heterogeneity supports the maturation pathway model and validates the classification approach. This demonstrates the method can detect population complexity beyond simple binary classification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "LN 60S template detected 1651 targets (84% cytoplasmic, 16% nuclear), with three-fold greater nuclear proportion than mature 60S and only one vacuole target (below false positive rate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 provide detection statistics showing expected enrichment of LN 60S in nucleus relative to mature 60S. Claims C75-C76 explain higher cytoplasmic counts by larger imaging area and higher concentration. Claims C77-C78 show low vacuole detection confirming specificity. This demonstrates the LN 60S template successfully enriches for nuclear intermediates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "2DTM enables single-molecule classification from fewer images than traditional reference-free methods, potentially distinguishing populations from single images given sufficient target abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C185 suggests single-image classification is possible with sufficient abundance (Figure 2\u2014figure supplement 1D). Claims C186-C187 contrast with traditional methods requiring hundreds-thousands of particles. However, the single-image capability is presented as inference rather than demonstrated systematically. The advantage over traditional methods is conceptually sound but not rigorously validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213"
+    ],
+    "result": "Classification requires aligned molecular models producing correlation peaks at same pixel location; imperfect rotational matches or differences in model quality may affect SNR ratios and classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C211 states methodological requirement for template alignment. Claims C212-C213 identify potential sources of error from rotational matching and model quality differences. These are reasonable concerns based on the methodology, though their actual impact is not quantified experimentally. This represents important methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "Templates were generated from maps at 3.1-3.5 \u00c5 resolution, with mature 60S potentially more accurate due to more available structures; this may partially explain better agreement of cytoplasmic vs nuclear population with predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C214-C216 document template sources and resolutions. Claims C217-C220 speculate that mature 60S model may be more accurate due to more structures available, potentially explaining observed differences. This is reasonable speculation but not directly tested. The discussion appropriately acknowledges model quality as potential confounding factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "False positive rate is estimated at 0.6% for mature 60S-detected targets (28 expected in 4363), with even lower rate for targets detected by multiple templates; worst-case 6% for smallest EN 60S class is not expected to significantly affect classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C222-C224 describe threshold methodology allowing one false positive per image, likely an overestimate (Lucas et al., 2021). Claims C225-C226 calculate worst-case false positive rates and conclude minimal impact on classification. Claim C227 acknowledges need for adjusted thresholds for low-abundance targets. The false positive analysis is appropriately conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C228",
+      "C229",
+      "C234"
+    ],
+    "result": "Future improvements to 2DTM algorithm (correlation peak integration, peak profile fitting) could reduce overfitting and improve signal/noise separation, enabling classification of smaller/less abundant complexes and targets with smaller structural differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C228-C229, C234 propose future algorithmic improvements with citation to McDonough and Whalen, 1995. These are reasonable suggestions for future work but represent speculation about potential improvements rather than demonstrated capabilities. The suggestions are appropriate for discussion but do not constitute results of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C230",
+      "C231",
+      "C232",
+      "C233"
+    ],
+    "result": "Multiple factors (sample thickness, radiation damage, beam-induced motion, charging, frame alignment errors) cause high-resolution signal loss, making SNR ratios less sensitive to structural differences and biasing log2 values toward 0; systematic local noise differences may require context-specific biological controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C230-C231 list known factors affecting cryo-EM data quality and their expected effects on SNR ratios. Claims C232-C233 note cellular heterogeneity may affect classification and require biological controls. These are reasonable assessments of limitations based on established knowledge, appropriately discussed as factors requiring further research (C234).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C235",
+      "C236",
+      "C237",
+      "C239",
+      "C240",
+      "C241",
+      "C242"
+    ],
+    "result": "Only three 60S templates were used; imperfect Gaussian fits and small cytoplasmic population with higher LN SNR suggest additional intermediates exist, requiring further investigation and additional templates to fully characterize spatiotemporal organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C235 states study scope. Claims C236-C237 note imperfect fits suggesting additional populations. Claims C239-C241 identify small cytoplasmic population with unexpected LN 60S preference, acknowledging uncertainty about interpretation. Claim C242 appropriately suggests future work. This represents honest assessment of study limitations and need for follow-up.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "Multiple similar aligned templates require only single exhaustive search, with additional templates evaluated at detected locations/orientations, avoiding time-consuming searches; approach could be extended to library of alternate structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C197 describe methodological efficiency demonstrated in Figure 5, where template truncation analysis evaluates multiple templates at previously detected locations. Claim C198 suggests future extension to structure libraries. This represents an important practical advantage of the method, though library approach is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C201",
+      "C202"
+    ],
+    "result": "The approach could streamline model validation from in vitro/in silico experiments using few images; hypothetically, with complete conformational/compositional models, likelihood of specific structures could be calculated for individual molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C201-C202 propose potential applications for model validation and structure determination. These are speculative suggestions about future capabilities rather than demonstrated results. While conceptually reasonable extensions of the method, they represent hypothetical applications requiring substantial additional development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C248",
+      "C249"
+    ],
+    "result": "Future studies establishing flux through assembly pathway are needed to test temporal lag hypothesis; 2DTM could study assembly kinetics by freezing cells at different time points after inhibiting specific maturation steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C248-C249 propose future experiments to test the temporal lag hypothesis (C247) and study assembly kinetics. These represent appropriate suggestions for follow-up work but are speculative proposals rather than results of the current study. The suggestions are reasonable but do not constitute demonstrated capabilities.",
+    "result_type": "MINOR"
+  }
+]

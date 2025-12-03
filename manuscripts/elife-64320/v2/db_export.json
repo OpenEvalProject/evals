@@ -1,0 +1,1304 @@
+{
+  "submission": {
+    "id": "5abd61d6-5e9a-435b-85d6-7ea873c06832",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:48:31.697451Z",
+    "updated_at": "2025-12-03T05:48:31.697451Z"
+  },
+  "content": [
+    {
+      "id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "submission_id": "5abd61d6-5e9a-435b-85d6-7ea873c06832",
+      "content_type": "manuscript",
+      "content_text": "# How subtle changes in 3D structure can create large changes in transcription\n\n## Authors\n\n- Jordan Yupeng Xiao<sup>1</sup> ([ORCID: 0000-0001-8072-9341](https://orcid.org/0000-0001-8072-9341))\n- Antonina Hafner<sup>2</sup> ([ORCID: 0000-0003-4927-5227](https://orcid.org/0000-0003-4927-5227))\n- Alistair N Boettiger<sup>1</sup> ([ORCID: 0000-0002-3554-5196](https://orcid.org/0000-0002-3554-5196)) \u2020\n\n### Affiliations\n\n1. Program in Biophysics, Stanford University Stanford United States\n2. Department of Developmental Biology, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimal genomes are organized into topologically associated domains (TADs). TADs are thought to contribute to gene regulation by facilitating enhancer-promoter (E-P) contacts within a TAD and preventing these contacts across TAD borders. However, the absolute difference in contact frequency across TAD boundaries is usually less than 2-fold, even though disruptions of TAD borders can change gene expression by 10-fold. Existing models fail to explain this hypersensitive response. Here, we propose a futile cycle model of enhancer-mediated regulation that can exhibit hypersensitivity through bistability and hysteresis. Consistent with recent experiments, this regulation does not exhibit strong correlation between E-P contact and promoter activity, even though regulation occurs through contact. Through mathematical analysis and stochastic simulation, we show that this system can create an illusion of E-P biochemical specificity and explain the importance of weak TAD boundaries. It also offers a mechanism to reconcile apparently contradictory results from recent global TAD disruption with local TAD boundary deletion experiments. Together, these analyses advance our understanding of cis-regulatory contacts in controlling gene expression and suggest new experimental directions.\n\n## Introduction\n\nThe genomes of many organisms have been shown to adopt a domain-like structure commonly referred to as topologically associated domains (TADs) (Ibrahim and Mundlos, 2020; Jerkovi\u0107 et al., 2020; McCord et al., 2020; Rowley and Corces, 2018), defined as contiguous regions of the genome where intra-region 3D proximity is greater than inter-region (Dixon et al., 2012; Nora et al., 2012). When plotted as a heat map of contact frequency as a function of two genomic coordinates, TADs appear as boxes on the diagonal at specific genomic coordinates. They can be detected by a range of distinct techniques, including methods relying on proximity ligation like 3C/Hi-C (Jerkovi\u0107 et al., 2020; Kempfer and Pombo, 2020; McCord et al., 2020; Rowley and Corces, 2018), ligation-free sequencing methods like GAM (Beagrie et al., 2017) and SPRITE (Quinodoz et al., 2018), microscopy methods such as ORCA (Bintu et al., 2018; Mateo et al., 2019), and even live-cell measurements like DAMC (Redolfi et al., 2019). Recent microscopy experiments have shown that\u00a0TADs are a statistical property that emerges from a population of cells dynamically exploring multiple conformational states, rather than a static structure found in all cells (Bintu et al., 2018).\n\nDespite broad agreement on the existence of TADs, their role in transcriptional regulation has recently become a subject of controversy as different recent results have been interpreted to support or refute a functional link (Finn and Misteli, 2019a; Ghavi-Helm et al., 2019; Mir et al., 2019). For example, many TAD boundaries demarcate regions of co-expressed genes and separate differentially expressed genes, suggesting that\u00a0they play a role in cis-regulatory specificity (Long et al., 2016; McCord et al., 2020; Spielmann et al., 2018). Opposing this interpretation, it has been noted that the quantitative difference in interaction frequency is generally small: inter-TAD contacts often reach only half the frequency of intra-TAD contacts, raising questions of how such small differences could explain such clear separation of expression (McCord et al., 2020). The disruption of TAD boundaries by cis-mutation has been proposed as the causal driver of the substantial alterations in gene expression for a variety of disease conditions, a conclusion supported by animal models (Dowen et al., 2014; Franke et al., 2016; Hnisz et al., 2016; Lupi\u00e1\u00f1ez et al., 2015) reviewed in Long et al., 2016; McCord et al., 2020; Spielmann et al., 2018. However, global disruption of TAD boundaries by depletion of boundary-associated factors led to few substantial changes in gene expression in cell culture models (Cuartero et al., 2018; Nora et al., 2017; Rao et al., 2017; Schwarzer et al., 2017; Stik et al., 2020; Zuin et al., 2014), though such depletion does obstruct the ability of macrophages to respond to inflammatory stimuli (Cuartero et al., 2018; Stik et al., 2020). Genetic experiments have made it clear that enhancers act on promoters only in cis, suggesting a requirement for physical proximity that would explain the functional role of TADs (Furlong and Levine, 2018). However, recent microscopy experiments uncovered little correlation between enhancer-promoter (E-P) proximity and nascent transcription activity at well-studied loci (Alexander et al., 2019; Mateo et al., 2019) reviewed in Finn and Misteli, 2019b. This surprising disagreement has led to various speculative explanations, such as action at a distance through condensates with diameters of tens of molecules (Alexander et al., 2019; Benabdallah et al., 2019; Cavalheiro et al., 2021; Heist et al., 2019; Lim and Levine, 2021).\n\nWe wondered whether these apparent contradictions can be reasonably reconciled with known biochemical mechanisms. To answer these questions, we examined simple biophysical models of proximity-dependent E-P communication grounded in known physical laws (the chemical master equation\u00a0[CME]). Here, we identified biochemical mechanisms whose relevance for the spatial organization of the genome has not previously been considered and showed how the\u00a0said mechanisms provide a simple reconciliation of all three apparent contradictions. We discuss the implications for this revised view of contact-mediated cis-regulation of gene expression for interpreting experimental results.\n\n## Results\n\n### A transcriptional response hypersensitive to changes in contact frequency\n\nTo better understand the connection between E-P contact frequency and transcriptional behavior, we started with a quantitative analysis of recently published super-resolution microscopy data (Mateo et al., 2019). These experiments used Optical Reconstruction of Chromatin Architecture to observe the 3D path of chromatin through two neighboring regulatory domains of the Drosophila Hox genes. The upstream domain contained the gene Ubx and its enhancers, and the downstream region contained the gene abd-A and its enhancers (Figure 1A). In wildtype Drosophila embryos, interactions between the two domains were less frequent than within the domains, producing two clearly distinct TADs in population average data (Figure 1A). Deletion of only a few kilobases of sequence at the border of these TADs resulted in a clear increase in interaction between the domains, including between Ubx enhancers and the abd-A promoter. However, interaction frequency increased only by a factor of 1\u20132.5-fold across the population (Figure 1A). Moreover, while the structures were easily distinguished at the population level, the structures of single cells were more variable (Figure 1\u2014figure supplement 1A,\u00a0B), with 25% of individual wildtype cells showing some cross-TAD border mixing between the Ubx enhancers and the abd-A promoter compared to 50% of mutant cells (Figure 1\u2014figure supplement 1C). The change in gene expression, as assayed by single-molecule fluorescent in situ hybridization (smFISH), was hypersensitive to this moderate change in contact frequency, with an average fivefold increase in mRNA counts of abd-A (Figure 1B). Similar changes were also seen for Ubx (Figure 1\u2014figure supplement 2). From these single-cell\u00a0analyses, we concluded that the quantitative disconnect between weak TAD borders (see also Figure 1\u2014figure supplement 3) and the large transcriptional effects of border disruption (see also Figure 1\u2014figure supplement 4) is not an artifact of Hi-C or of population averaging. Instead, small differences in the frequency of contact appear sufficient to drive large changes in expression, requiring us to re-examine the textbook picture of E-P regulation (Alberts et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig1-v2.jpg)\n\n**Figure 1.:** (A) Quantification of the minor difference in cross-border contact frequency between the Ubx and abd-A regulatory domains in wildtype and domain-border-deleted embryos, quantified by Optical Reconstruction of Chromatin Architecture.\u00a0(B) Quantification of the major change in transcription of abd-A between wildtype and domain-border-deleted embryos. Raw data taken from\u00a0Mateo et al., 2019.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Images of the Ubx and abd-A domain from two wildtype cells, reconstructed with Optical Reconstruction of Chromatin Architecture. White arrows mark the border between the domains, which are well-separated in the first example and intermixed in the second. (B) Quantification of the respective pairwise distances between all labeled positions along the chromatin for the two cells shown in (A). The black-dotted box highlights the cross-border proximity found in the second cell. (C) Quantification of the frequency in which Ubx enhancers are in proximity to the abd-A promoter in wildtype vs. border-deleted cells.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic of the genomic region containing the genes Ubx and abd-A and their surrounding enhancers. Both genes are expressed in two cell types of the abdominal region of the Drosophila embryo, under control of the indicated enhancers. Ubx enhancers drive strong expression in cell type 1 and weak expression in type 2 cells and v.v. for abd-A enhancers, as assayed by both individual enhancer-reporter transgenes and spatial analysis of the domain (Irvine et al., 1991; Mateo et al., 2019; M\u00fcller and Bienz, 1991; Qian et al., 1991). The position of the TAD border removed by a 4 kb deletion in \u2018border-deleted cells\u2019 is also shown. (B) A zoomed-in view of smRNA fluorescent in situ hybridization signal from single cells of either cell type, showing the typical difference in expression levels in wildtype cells and mutant cells. (C) Quantification of expression levels across the population, shown as a violin plot across all cells. The mRNA type (red = abd-A, cyan = Ubx), genotype (wildtype = solid outline, border-deletion = dotted outline), and cell type are indicated (black = type 1, gray = type 2), along with the median fold\u00a0change in expression upon border deletion. Results from Wilcoxon comparison of median expression are given as p-values.\u00a0We note that in cell type 2, abd-A expression decreases in the mutant cells. This decrease in expression is not due to a decrease in contact between abd-A enhancers and abd-A promoter and is likely due to other regulatory mechanisms, as for example, increased contact with silencer elements.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Hi-C data from an arbitrarily selected region of chromosome 1, exhibiting multiple TADs also known as contact domains. The blowout shows a zoomed-in view of the masked region, following normalization to linear-distance separation. The insulation score for this data computed with two different sliding window sizes is plotted below. Peak calls for the 150 kb window are shown, though both windows give similar results. These peaks correspond well to borders of the TADs, as seen by visual inspection. (B) Histogram of the insulation score for all peaks (TAD borders) called genome-wide. The insulation score is normalized for linear distance effects (see Materials\u00a0and\u00a0methods), and so reflects the ratio of the preference for intra-TAD vs. inter-TAD contacts.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Data are organized by source publication, indexed by first author and publication year and gene studied. In some cases, expression was not appreciably detected prior to genomic perturbation, indicated by the asterisk (*). Quantification techniques varied between experiments, and include smFISH, RNAseq, and qPcR. Dotted red line marks genes showing a greater than twofold change.\n\n### Modeling nonlinear transcriptional response\n\nWe set out to explore theoretical models that can explain how changes in\u00a0E-P interaction frequency (3D genome folding) can lead to nonlinear effects on transcription.\u00a0To do this, we used the chemical master equation (CME) approach, represented as a continuous-time Markov process (Durrett, 2012; Strogatz, 2019;\u00a0Figure 2A), to model the discrete/stochastic nature of enhancer-promoter interactions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig2-v2.jpg)\n\n**Figure 2.:** (A) A stochastic model for the evolution of the chemical system, which specifies how the probability of observing the system in state i at time s given it was in state j at time t evolves in time (the forward Kolmogorov equation). M is a transition matrix for the continuous-time Markov system. (B) Cartoon illustration of chemical states for the 2-state enhancer model and the corresponding transition matrix M, as a function of the concentration of transcription factor\u00a0(TF) activator, A. (C) The probability of TF binding as a function of molecule count, for the2-state and 3-state systems. The Hill equation with a coefficient n\u00a0=\u00a02\u00a0is shown for comparison. (D) As in (B), but for the 3-state enhancer model with two potentially cooperative binding sites. (E) Cartoon depiction of state space for the enhancer cooperativity model and corresponding matrix M for the Markov system/chemical master equation model. The DNA is denoted by a blue polymer, the positions of the enhancers by green segments, and the promoter region by an orange segment. Contacts form with probability c1 and c2 for enhancers 1 and 2, respectively, and separate from loop configuration with probability u1 and u2. (F) Probability of being in the two-loop state as a function of the fold change in loop frequency, for a selection of rate constants chosen to demonstrate the existence of a hypersensitive response. (G) Cartoon depiction of the expected change in contact frequency according to the cooperativity model presented in (E). Enhancer cooperativity leads to the formation of specific loop interactions.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The Hill equation is given at the top. Left: the effect of changing n, which becomes hypersensitive for n > 2 and approaches a digital switch between 0 and v. Center: the effect of changing c, the value at which the function reaches half maximum. Right: the effect of changing v, the maximum value obtained by the function.\n\nNonlinear transcriptional responses have been a subject of intense research, both experimental and theoretical\u00a0(Bergmann et al., 2007; Bintu et al., 2005a; Bintu et al., 2005b; Eldar et al., 2002; Gregor et al., 2007; Haskel-Ittah et al., 2012; He et al., 2010; Manu et al., 2009; Ozbudak et al., 2004; Sanchez et al., 2011; Ben-Tabou de-Leon and Davidson, 2009; Zinzen and Papatsenko, 2007; Zinzen et al., 2006; Bentovim et al., 2017).\u00a0While this previous modeling work has focused on\u00a0connecting transcriptional output to changes in transcription factor (TF) concentrations and not to E-P contact, we used it as a starting point to build intuition for how to obtain a hypersensitive response. Additionally, as CMEs and continuous-time Markov processes may be less familiar to some readers, we first applied it to a familiar problem: a model of the molecular mechanisms that render transcription hypersensitive to changes in nucleoplasmic TF concentration. All\u00a0models in this work start with the common framework of transcription (more details in Materials and Methods): TFs bind an enhancer, the enhancer interacts with a promoter, and the promoter\u00a0state determines transcriptional output. For simplicity, we assume that\u00a0E-P interaction and binding of General Transcription Factors (GTFs)\u00a0occur at a much faster rate than TF-enhancer binding, in which case transcription rate is simply proportional to the fraction of time the enhancer is bound\u00a0(see Materials\u00a0and\u00a0Methods for a discussion on relaxing this assumption).\n\nConsider first an enhancer with only one TF-binding site for factor A. The enhancer has two states: unbound and TF-bound (Figure 2B). It transitions from unbound to bound with a probability per unit time proportional to the number of molecules of A: konA, and transitions from bound to unbound with fixed probability per unit time koff (Figure 2B). This stochastic process can be compactly expressed by writing down the corresponding stochastic matrix, M, associated with the continuous-time Markov jump process (Figure 2B). Here, Pij(s,t) is the probability the system is in state i at time s given that it was in state j at time t. The time evolution of P is governed by the forward\u00a0Kolmogorov equation (Figure 2A). Standard probability theorems for Markov processes enable us to compute the complete stochastic dynamic behavior of this system, frequently through straightforward matrix operations (Durrett, 2012). While trivial cases like this example may be solved without this matrix formalism, the formalism will become helpful for more complex models and the matrix operations will remain identical to those introduced here. Of immediate interest, we can see a stationary state exists because M is irreducible and recurrent. And by solving for the normalized kernel of M, the stationary probability that the system is in the TF-bound state (state 2) is \u03c02 = A/(koff/kon + A) (Figure 2C). From this result, we see, for any value kon or koff, the probability that the enhancer is bound (and therefore whether it can activate transcription) exhibits only sublinear responses to A (i.e., is never hypersensitive) (Figure 2C).\n\nNow consider a minor variation: an enhancer that has two binding sites for factor A (Figure 2D). For simplicity, let the two sites be identical, so the system can be described with only three states: (1) no sites bound, (2) either bound, or (3) both bound. If only the state with both sites bound is transcriptionally active, we are interested in the probability the system is in state 3, which at stationary state is \u03c03 = A2/((koff1koff2)/(kon1kon2) + koff2/kon2A + A2) (the normalized kernel of the matrix M in Figure 2D). From this equation, we observe that for the special case where koff2/kon2 < koff1/kon1, this system is hypersensitive to A (Figure 2C). The stronger this difference, the more the system approaches the behavior of f(A) = An/(cn+An), which is the Hill equation: a sigmoidal curve, starting at zero and reaching a maximum value of 1 as A increases, with an inflection at A = c (Figure 2C, Figure 2\u2014figure supplement 1). As n increases, the gentle curve sharpens into a step function, where A\u00a0=\u00a00 for A\u00a0<\u00a0c and A\u00a0=\u00a01 for A\u00a0>\u00a0c. Thus, the Hill equation provides a convenient way of parameterizing a sigmoidal response in terms of its critical threshold c and its sensitivity, n (Figure 2\u2014figure supplement 1).\n\nWe next wondered if a simple adaptation of this model, replacing TF interactions with enhancer-enhancer interactions, could explain the hypersensitive transcriptional response to changes in genome structure (Figure 2E\u2013F). In this scenario, a small change in the initial interaction frequency increases slightly the probability that two enhancers interact, much like how a small change in TF concentration improves the probability two TFs bind the same enhancer (Figure 2G). Mutual affinity between these enhancers stabilizes their interaction with the promoter, much like mutual affinity between TFs stabilizes their interaction with an enhancer. In the hypersensitive regime, a minor initial change in contact frequency (x-fold), due to disruption of the TAD border, leads to a major change in E-P contact frequency (y-fold > x-fold), due to cooperativity in forming the hub, which could in turn produce a major change in transcription (Figure 2F,\u00a0G).\n\nUnfortunately, this model is immediately rejected by available data. Upon perturbation of TAD boundaries, we (Figure 1A) and others do not observe the appearance or loss of cooperative enhancer contacts of great enough magnitude to explain the change in transcription (Figure 1B). These and other recent multi-contact data have revealed the existence of cooperative three-way interactions (Allahyar et al., 2018; Bintu et al., 2018; Oudelaar et al., 2019, Oudelaar et al., 2018). Yet even with these cooperative effects, the fold change in measured contact frequency is not as large as the fold change in transcription before and after TAD border deletion.\n\n### Promoter futile cycles and hypersensitive response\n\nWe thus sought to identify other mechanisms that could give rise to hypersensitivity to E-P contact frequency. Inspired by the hypersensitive cell-signaling pathways dependent on futile\u00a0cycle competition between phosphatases and kinases (Ferrell, 2012; Huang and Ferrell, 1996; Qiao et al., 2007), we considered a mechanism in which the promoter is not waiting passively for an enhancer signal, but rather is engaged in a futile cycle of accumulation and removal of factors that favor transcription. We propose two chemically explicit realizations of this model to establish concrete examples.\n\nThe first is the \u2018condensate version,\u2019 in which a ubiquitously expressed GTF, such as PolII itself, is allowed to accumulate at individual promoters. Additional molecules join the condensate and dissolve back into the nucleoplasm at rates r and g, respectively. Condensates with n molecules already at the promoter provide n chances per interaction for a newly arrived molecule to be captured, such that capture is more likely at larger condensates (Figure 3A,\u00a0B). For simplicity, we assumed that the transcription rate of the gene is proportional to the size of the condensate (see Materials\u00a0and\u00a0methods for a discussion on relaxing this assumption). As in other futile\u00a0cycle signal transduction systems, these competing processes of addition and removal happen in all cells at all times\u2014they are not dependent on interactions with an enhancer or the presence of cell-type-specific TFs. Promoters where condensates dissolve faster than they form will generally be silent, but retain a non-zero probability of transitioning to the active state. Cell-type-specific/enhancer-dependent gene activation arises as follows: each time an active enhancer contacts the promoter, a single additional molecule is transferred to the condensate. We denoted the probability of contact per unit time as e, which is a property of the 3D structural dynamics of the domain. While enhancer contact is\u00a0not explicitly required for promoter activation, we will show that this simple model still exhibits rapid and relatively homogenous responses to enhancer activation/deactivation. For the moment, we assumed the enhancer is already activated by the necessary TF binding and requires only looping to influence transcription, allowing us to focus on the effects of 3D structure. The relevant states in the chemical master equation are shown in cartoon form in Figure 3B, along with the stochastic matrix of the corresponding Markov jump process (Figure 3C). In the interest of simplicity, we have introduced a maximum cluster size as a fixed parameter. The effects of relaxing this assumption are discussed in Materials\u00a0and\u00a0methods.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig3-v2.jpg)\n\n**Figure 3.:** (A) Generalized cartoon depiction of probabilistic events that affect promoter activity. (B) Schematic of the general transcription factor (GTF) condensate version of the futile cycle model. (C) Markov matrix corresponding to the GTF model version depicted in (B). (D) Simulated condensate size distribution as a function of enhancer-promoter looping rate e. Each violin plot represents a single simulation with fixed e. The superlinear regime reflects where fold change in transcription (linearly proportional to condensate size) is greater than corresponding fold change in e. (E\u2013G) Sensitivity, critical threshold, and maximum value of the GTF system as a function of condensate dissociation rate and max cluster size. (H\u2013J) Same as in (B), (C), and (D), but for the post-translational modification (PTM) model version.\u00a0Numerical differences in model outputs between D and J, reflect primarily differences in parameter choices rather than intrinsic differences between the model versions, as seen also in the parameter sweeps (E-G, Figure 3\u2014figure supplement 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Ordinary differential equation representation of the post-translational modification\u00a0(PTM) model version and corresponding phase portraits for generic parameter values. At a stable point, tag addition and tag removal cancel out, and minor fluctuations about the stable point are pushed back by the imbalance between addition and removal. The sensitivity is defined as the fold change in tag accumulation (proxy for transcription) divided by the fold change in enhancer-promoter (E-P)\u00a0contact frequency. The stability of a stable point reflects how much of an E-P contact \u2018kick\u2019 is needed to jump to the upper stable point. (B) If the tag addition curve is similar to the linear removal curve, the system is highly sensitive to changes in E-P contact but also jumps between stable points very easily (low stability). (C) Under the same reasoning as (B), if the tag addition curve is a step function, the high and low states are highly stable and relatively insensitive to E-P contact changes. (D) If the tag removal curve is steeper than any point on the addition curve, there is only a single stable point that exists for all values of \u2206e. This system does not jump between low or high, and is not hypersensitive. (E) Same reasoning as (C).\n\nThis simple model version includes a regime in which condensate size (a proxy for transcription) is hypersensitive to changes in 3D structure, as illustrated by simulations of the Markov jump process (Figure 3D). (Specific numerical parameters for the simulations shown in Figure 3D and all following figures may be found in Materials\u00a0and\u00a0methods.) In this regime, at low E-P contact frequencies, condensates dissolve faster than they form at the promoter, and most of the population has no PolII bound. As E-P contact frequency approaches the hypersensitive regime, a higher percentage of the population binds multiple PolII molecules, but most are still unbound (Figure 3D). At this point, the fold change in contact is still greater than the fold change in transcription, and the system is in a transcriptional regime largely unaffected by structural change. However, a further increase in the E-P contact frequency tips the balance, such that most of the population shifts from an unbound to a mature condensate state. This is the hypersensitive regime\u2014a small (2-fold) increase in e resulted in a large (10-fold) increase in the average amount of PolII per promoter, and thus on transcription. Further increases in contact frequency have sublinear effects on transcription output.\n\nTo investigate the generality of this hypersensitive regime, we conducted a sweep of model parameters (Figure 3E\u2013G). Normalizing to association probability per unit time, we characterized the response as a function of maximum cluster size, cmax, and the dissolution constant, g. We parameterized the response by fitting the average condensate size vs. enhancer loop\u00a0rate to a Hill function and plotting the sensitivity (n), critical threshold (c), and max value of that function (v) (see Figure 2\u2014figure supplement 1). We saw that sensitivity increased with cluster size, and hypersensitive behavior required cluster size greater than 2 (Figure 3E). In addition, the PolII off-rate had to be not too\u00a0small, or the stability of the off-state was too low to permit hypersensitivity, and not too\u00a0large, or the mature condensates were never stable (Figure 3F). A higher dissolution constant resulted in greater sensitivity up until the point where g was so high that the cluster state was no longer reached, as can be seen in the max-value plot (Figure 3G). As expected, increasing the max cluster size linearly increased the cluster size obtained at the maximal E-P looping rate (Figure 3G). The critical threshold increases as a function of g as well, also to the point where high g prevented the system from ever reaching the max cluster size (Figure 3F). For larger cmax, larger values of g can be used without preventing access to this state, allowing higher critical thresholds and higher sensitivity (Figure 3E,\u00a0F).\n\nWhile we have described the condensate model version using PolII as an example, any variety of GTF (or even combination thereof) could play this role in the cell. Recent experimental work supports the formation of condensates of GTFs such as PolII, Mediator, and BRD4 at the promoters, (Chong et al., 2018; Cho et al., 2018; Sabari et al., 2018; Lu et al., 2018), and provides experimental evidence for enhanced capture/reduced release (Chong et al., 2018) as expected for phase separating condensates. The biological significance for transcription of such condensates remains disputed.\n\nThe second realization of the futile\u00a0cycle model is the \u2018post-translational modification\u00a0(PTM) version\u2019 (Figure 3H). It is based on accumulation of PTMs, \u2018tags,\u2019 deposited by constitutively expressed enzymes in the vicinity of the promoter, and does not require any condensate of molecules to form (Figure 3H). We assumed that the enzyme can physically interact with deposited tags, which allosterically stimulate its effective addition rate from r0 to r1, r2, \u2026, rn, where n is the total number of stimulated states. For simplicity, we focused on the minimal case of n = 2 (i.e., the enzyme has only two stimulated states). The probabilities of enzyme-tag association and dissociation are proportional to the amount of tag existing at the promoter, with respective rate constants kn and \u03c4n. The promoter also has an intrinsic rate of tag removal g. Finally, as in the condensate version, cell-type-specific regulation occurs through physical interaction with an enhancer that happens at rate e, determined by the 3D chromatin structure. Each E-P interaction adds one tag. The corresponding stochastic transition matrix is shown in Figure 3I. Note that in enumerating the states of the system we tracked all possible combinations of enzyme stimulation states and promoter tag levels.\n\nThe PTM futile\u00a0cycle model version can also achieve a hypersensitive regime in which small fold changes in E-P contact lead to large fold changes in transcription (Figure 3J), around the experimentally observed range (Figure 1A, B). This hypersensitive behavior suggests that the relatively weak effects of most TAD boundaries (Figure 1\u2014figure supplement 3) may still have important consequences for the control of gene expression. While the higher-dimensional parameter space of the PTM version is more cumbersome to scan comprehensively and less practical to plot, the minimal conditions for hypersensitivity can be derived by considering the deterministic limits of the stochastic system (see Figure 3\u2014figure supplement 1 and Materials\u00a0and\u00a0methods).\n\nThus, the requirements for hypersensitivity to structural change in the PTM version are conceptually similar to those of the condensate version. The tag-removal rate must be neither too small, or the system will activate too easily, nor too large, or the system will never be able to fully activate. This is analogous to the dissolution rate restrictions in the condensate version. The rate of accumulation of tags must be larger for systems with a larger number of tags to start with, which is achieved when nmax\u00a0>= 2\u00a0and r0\u00a0<\u00a0r1\u00a0<\u00a0r2 in the PTM version. In the condensate version, a conceptually similar bias is achieved through the larger capture probability of the larger condensates. As long as these conditions are met, the system admits hypersensitivity\u00a0E-P loop rate e.\n\n### Promoter-specific properties can create an illusion of E-P specificity\n\nWe next investigated how differences in promoter-specific rate constants in these model versions affect E-P responsiveness to TAD boundary removal. We considered two promoters that differ by a factor of 2\u00a0in\u00a0g\u00a0(the condensate dissolution or tag removal rate), but are otherwise identical. Both start the simulation in a low-transcription state and experience the same twofold increase in E-P interaction at the start of the simulation, simulating the effect of TAD border disruption (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cartoon depiction of two simulated promoters undergoing the same change in enhancer contact frequency after a topologically associated domain\u00a0(TAD)-border deletion. (B) Violin plots of the changes in transcription rates (which are linearly proportional to promoter tag levels) after a twofold increase in the E-P contact rate for each promoter, simulating the border deletion depicted in (A). (C) Cartoon representation of the \u2018lock and key\u2019 explanation of E-P specificity, contrasted with the \u2018tipping point\u2019 explanation suggested by results in (B).\n\nFor both versions of the model, Promoter 1 exhibited a large (greater than twofold) increase in transcription, yet Promoter 2 remained almost unaffected in response to the twofold perturbation of the E-P interaction frequency (Figure 4B). Because of its higher intrinsic affinity for the condensate dissolution or tag removal machinery, Promoter 2 was still in the sublinear, low-transcription-response regime (Figure 4B). Further increases in E-P interaction would be sufficient to drive it into a high-transcribing state like Promoter 1 (due to the sigmoidal behavior explored above, Figure 3E\u2013G). Quantitative differences in the simulation results largely reflect the particular parameter regime of the model (Figure 4B). Note\u00a0that \u2018low-transcribing state\u2019 and \u2018high-transcribing state\u2019 refer to the qualitatively distinct behavioral modes of the system shown in Figure 4. It is this qualitative switch and the relative magnitude of the change that is of interest to us, not the numerical values. The total number of tags or molecules in the condensate between the low and high state may vary between different simulations without affecting the existence of a hypersensitive regime or the ability for a single parameter like tag removal to shift the system from the hypersensitive to the sublinear-low or sublinear-high regimes. These simulations illustrate that the apparent specificity (\u2018lock and key\u2019) may be an illusion resulting from different tipping points among promoters, which arise from regulating accumulation/depletion of TF condensates or promoter-associated PTMs (Figure 4C). The promoter-specific response observed in these simulations follows from sigmoidal sensitivity to E-P contact frequency described above, which exist across a broad range of parameters.\n\n### Hysteresis in promoter activation leads to a unique response at different time\u00a0scales\n\nWhile experiments that perturb chromatin structure by deleting TAD borders have reported large (over 8-fold) changes in gene expression (Cavalheiro et al., 2021; McCord et al., 2020;\u00a0Figure 1\u2014figure supplement 4), experiments that globally abrogated TADs by depleting cohesin observed few genes changing expression by more than 2-fold (Rao et al., 2014; Zuin et al., 2014;\u00a0Figure 5A,\u00a0B). As these experiments differ by orders of magnitude in the time scale at which transcription changes are assessed (due to technical limitations), we wanted to explore the temporal behavior of the futile cycle promoters by assessing the effect of a TAD boundary deletion/fusion at an early time point relative to a late time point.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of global cohesin loop disruption experiments. (B) Schematic of individual topologically associated domain\u00a0(TAD) boundary deletion experiments. (C) Violin plots of transcription as a function of enhancer contact, as in Figure 4. Blue and red violin plots represent cell populations that start in the OFF (blue,\u00a0zero-molecule condensate) or ON state (red,\u00a0condensate of six molecules). Blue and red lines connect the median behavior from the corresponding simulations. (D) Same as in (C) but for the post-translational modification\u00a0(PTM) model version (OFF = 0 tags, ON = 30 tags). (E) Median transcription rate for populations starting in \u2018OFF\u2019 or \u2018ON\u2019 states, observed at different times after initialization of the simulation as indicated by the color legend. (F) Simulation of futile cycle promoter transcription rate as a\u00a0function of time under different enhancer perturbations for the general transcription factor\u00a0(GTF) condensate model version. As described in the text, \u2018early\u2019 is the amount of time it takes for the promoter to switch off following enhancer deactivation, and late is an order of magnitude or longer later. (G) Same as in (F), but for the PTM model version.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Green curves follow the tag addition rate as a function of tag concentration (sigmoidal), while turquoise plots the tag removal rate (linear). Where these curves intersect (black circles), addition equals removal, representing the steady-state tag concentration of the system, and by proxy, transcription levels. The black points are stable critical points since to the left addition exceeds removal and to the right removal exceeds addition. The fade from white to green (upper left and upper middle) indicates the effect of increasing e, the enhancer-promoter\u00a0(E-P) loop rate on the position of the stable point, for a system that starts in the low state. Note that after the second step the system has three critical points (crossings points of the removal and addition curves), the system remains in the low state. After the third step, tag addition now exceeds removal at all but the high state, and the system jumps discontinuously to the high state (this is known as a saddle-node bifurcation as the unstable saddle point has collided with the lower stable point). Further increases in e result in only minor further increases. Second and third rows are identical to the white-green fade, but split into multiple panels. Upper right, replotting the stable points on a graph of tag concentration vs. E-P loop rate. The arrows show the effect of increasing (blue) or decreasing (red) e.\n\nWe found\u00a0that, in addition to exhibiting hypersensitivity, both the condensate and PTM model versions readily exhibited hysteresis. Hysteresis means that the system has memory such that its behavior depends not only on its current state but also the preceding states (Figure 5C,\u00a0D). For example, the transition from the high-transcribing state to the low-transcribing state occurs at different E-P contact frequency depending on\u00a0whether the system started in the high or low regime initially (Figure 5C,\u00a0D). In the continuum limit, as shown with the PTM model version, even at t = infinity promoters that started in the high-tag (\u2018ON\u2019) state transitioned to the low-tag (\u2018OFF\u2019) state at a different value of e than promoters starting in the low-tag state transition to the high-tag state (Figure 5\u2014figure supplement 1), making it clear this hysteresis is an emergent property of the dynamic feedback and not a trivial delay. In the discrete stochastic case, the memory of the starting state is not permanent. As there is always a finite probability of tag removal or condensate shrinkage, there is always a finite probability that n such loss events occur consecutively before a gain event, and in infinite time, such an event is guaranteed to happen, so no promoter will stay active forever. The length of the memory is determined by the difference in the average rate of gain vs. the average rate of loss in the respective high and low states. However, because of the hysteresis in the system, we observed qualitatively distinct sensitivities of the average transcription rate to small changes in E-P interaction at short time scales than we saw at long time scales (Figure 5E). At short time scales, the effect of a twofold change in contact frequency was minor across the whole range of E-P loop frequency compared to the change observed at long time scales in the hypersensitive regime (Figure 5E).\n\nTo explore this further, we examined the distribution of transcription rates in simulation for both the condensate and PTM model versions for promoters experiencing a twofold change in the E-P rate (simulating the effect of TAD loss by border deletion or cohesin depletion) (Figure 5F,\u00a0G). We chose model parameters that positioned these promoters in the hypersensitive regime at long time scales (as in Figures 4 and 5; see Materials\u00a0and\u00a0methods). As the absolute kinetic rate constants for these model versions are not known empirically, the units of time in the simulation are arbitrary. We defined \u2018early\u2019 as the amount of simulation time required for a population of active promoters to transition into the non-transcribing state when the enhancer is deactivated (e.g., bound by repressors). Empirical measures of such time vary substantially among genes, but generally lie on the minutes-to-hours time scale. This scale corresponds with the time used in the cohesin-degron experiments and is distinct from the many-cell-generations/days required for testing genetic boundary deletions. We defined \u2018late\u2019 time points as one or more orders of magnitude longer than \u2018early.\u2019 With these definitions in mind, we examined the difference in simulated transcriptional response at different times. Both the condensate and the PTM simulations exhibited a weak (less than twofold) change in transcription in most of the simulated cells of the population by the early time point, even though this was sufficient for enhancer deactivation to lead most of the population to drop into the low expressing state (Figure 5F,\u00a0G). As before, the parameter of interest is the relative change in transcription rate (tag concentration or condensate size), not the numerical value.\n\n### Transcription and E-P contact may be largely uncorrelated in single cells\n\nHaving examined the temporal dynamics at the population scale, we turned to the dynamic behaviors in single cells. We asked whether a promoter driven by contact-dependent enhancer activity and futile cycles, as described above, would be expected to show correlation between E-P looping and transcription at the single-cell level (Figure 6A). From our simulated cells, we computed the odds ratios for observing transcription in a window of time given observation of contact in that window of time, in either the condensate (Figure 6B) or PTM (Figure 6C) version of the model. Across the different regimes of E-P contact frequency, the odds ratios were statistically greater than 1, but only by a small margin of 0\u201330%, paralleling our recent empirical observation (Mateo et al., 2019;\u00a0Figure 6D). These simulations demonstrate that contact-dependent mechanisms of E-P regulation can be still consistent with empirical data in which many transcribing cells lack contacts and vice versa. Since the frequency of E-P interaction only tips the scales in the existing futile cycles of promoter modification, rather than acting as a triggering event for transcription, a strong correlation is not expected. The odds ratio still remains different from 1, however, as promoters that are experiencing a high frequency of E-P contact are more likely to transcribe, increasing the probability the two events co-occur.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic of the textbook expectation of correlation between E-P contact and transcription. (B, C) Odds ratios for observing nascent transcription given E-P proximity, from simulations of the condensate and post-translational modification\u00a0(PTM) model versions. (D) As in (B)\u00a0and (C), but for actual data from recent super-resolution imaging experiments (Mateo et al., 2019). Error\u00a0bars show standard error from bootstrapping. (E) Average measured distance between enhancer and promoter probes relative to the time of transcriptional bursts, reproduced from Figure 6E of Alexander et al., 2019. (F, G) Average E-P distance from simulations of both versions of the futile cycle model, where 0 represents contact and 1 represents no contact, relative to time transcription burst, modeled as a tag concentration > 20. Shaded region denotes \u00b1 standard error of the mean. (H, I) As in F and G, with sample size increased to 40-fold.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64320/elife-64320-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Published results from the Sox2 locus (Figure\u00a06C\u00a0of\u00a0Alexander et al., 2019), quantifying the percent time spent in the bursting state, for cells binned by average E-P distance. E-P distance is measured using enhancer and promoter probes. (B) Percent time in the bursting transcription state (promoter tag concentration > 20) for simulated cells, binned by observed E-P contact frequency during the simulation window shown. N = 500 cells. Error bars indicate 95% confidence limit around the median. The median time bursting for the high contact sample is not significantly different (ns) from any of the others by a Wilcoxon test (p>0.05). (C) As in (B), but with N = 3000 simulated cells, showing the emergence of a clear and statistically significant trend, Wilcoxon test, p<0.05. Error bars indicate 95% confidence interval. (D) Box-plot analysis taken directly from Figure 6D of Alexander et al., 2019, showing no significant difference in the median distance between bursting and non-bursting promoters. (E) As in (D) but using simulation results sampled in (B). Wilcoxon rank-sum test results indicated by the bar. (F) As in (E) but using simulation results from (C).\n\nTo further study the relation between E-P contact and transcription, we examined contact frequency in the stochastic models relative to the timing of transcription events. Such temporally ordered analysis requires live imaging data. Pioneering work by Alexander and colleagues observed no significant change in E-P distance across any time scale relative to detected transcription bursts, which was interpreted to refute a contact-dependent model of gene enhancer-mediated regulation (Alexander et al., 2019;\u00a0Figure 6E). For a moderate number of simulated bursts (~500), we also found no detectable increase in proximity at any time\u00a0scales relative to that of the burst (Figure 6F,\u00a0G). This is surprising at first since by construction transcription is dependent on contact. Because the transition also depends on promoter-intrinsic addition and removal events of tags or GTFs, which also occur stochastically with variable timing, the dependence was obscured by stochastic noise. Thus, simulations involving a similar number of total cells as experiments also lacked detectable correlation between the fraction of time spent transcribing and average E-P distance or contact rate for individual cells, same as observed in the experimental data (Figure 6\u2014figure supplement 1A, B, D, E). Substantially increasing the number of simulated cells (~20,000) uncovered weak but statistically significant correlations in each of these cases (Figure 6H,\u00a0I and Figure 6\u2014figure supplement 1C,\u00a0F), similar to the observations from the Drosophila data (Figure 6D). Similar results were observed with either the condensate or PTM version of the futile cycle. Thus, these models show that enhancers could regulate genes like Sox2 or the Bithorax genes in a purely contact-dependent manner, even without strong correlation between contact events and transcription at the single-cell level.\n\n## Discussion\n\n### Paradoxes and apparent contradictions arising from recent experimental results are reconciled by a minimal model of promoter activity\n\nHere, we set out to understand one paradox: what molecular mechanisms, if any, could enable subtle changes in chromatin structure to lead to large changes in transcription? We developed a futile cycle model and described two possible biochemical realizations/versions that both exhibit hypersensitivity and hysteresis: TF condensates and PTM accumulation. These two distinct formulations of promoter behavior highlight the common features required for a promoter to become hypersensitive to minor changes in E-P contact frequency. Both versions propose the existence of a promoter that accumulates or loses a molecular species, the abundance of which correlates with transcriptional activity of the promoter. In both model versions, accumulation and loss proceed in futile cycles, whether or not the activating signals at the enhancer are present. For a broad range of parameter values, this futile competition renders the promoter sensitive to the activation state of its associated enhancer, and in some regimes hypersensitive to small changes in contact frequency with the active enhancer. While both TF condensates and PTM accumulation have been extensively studied empirically, their role in\u00a03D transcriptional regulation by enhancers has received less attention in modeling, hithertofore. Using the two concrete examples, we showed that the general futile cycle model provides an unexpected explanation of three recent, controversial results. Here, we discuss these three controversies, identify which features of the model offer explanation of the controversy, and identify experiments which may test these features in the future.\n\n### Some promoters may be insensitive to contact perturbations, but still activate in a contact-dependent manner\n\nThe observation that many TADs harbor genes whose spatial-temporal patterns of expression differ substantially across development poses an obstacle to the hypothesis that 3D chromatin structures like TADs contribute to regulatory specificity of gene expression (Kvon et al., 2014; Schwarzer and Spitz, 2014; Symmons et al., 2014). For these patterns to differ, enhancers within the TAD must be able to regulate some promoters and not others even though all experience a similar frequency of E-P interaction. A simple and common explanation of these differences is to conclude that contact frequency differences do\u00a0not generally play a role in E-P specificity (since two promoters seeing similar contacts respond the same). Similarly, many enhancers are known to \u2018hop over\u2019 intervening promoters (van Arensbergen et al., 2014)\u2014activating expression of more distal genes without notably affecting the transcription of more proximal ones, such as Shh limb enhancer (Lettice et al., 2003) and several FGF8 limb enhancers (Marini\u0107 et al., 2013) or the snail shadow enhancer in flies (Perry et al., 2010). In most of these cases, the more distal gene experiences less frequent contact in available measurements. Such cases have been used to argue that chemical mechanisms determine E-P specificity, and as a corollary, that structural differences that affect E-P contact frequency are of little biological relevance (Ghavi-Helm et al., 2019; Kumar et al., 2020; Mir et al., 2019).\n\nOur simulations indicate that\u00a0such conclusions are premature. A futile cycle promoter exhibits not just hypersensitive response to contact interactions, but also substantial regimes of sublinear or insensitive response. Promoter-specific differences in the intrinsic addition or removal of tags (or the recruitment of GTFs to a promoter condensate) can render one promoter unresponsive to an enhancer that activates a second promoter, even though the two experience similar absolute interaction frequency. Indeed, the unresponsive one may even experience a higher interaction frequency (e.g., because it is physically closer). It is thus premature to interpret such results as evidence of biochemical specificity or to dismiss a role for chromatin structure. This is notable since transgene assays indicate most regulatory elements will promiscuously activate most promoters if placed close enough (Arnold et al., 2013; Furlong and Levine, 2018; Kvon, 2015; Kvon et al., 2014). We do not argue either that one should dismiss a role for chemical specificity\u2014several previous experiments suggest that an enhancer that strongly activates one promoter may only weakly activate a different one, and that a second enhancer may have reversed preferences (Haberle et al., 2019; Hong and Cohen, 2021). However, we do propose that existing data still supports a model in which 3D structure is of critical importance for E-P interactions genome wide. If certain perturbations show no effect, it may be because the promoter is in the insensitive rather than hypersensitive regime.\n\nThe model also suggests further experiments to test this mechanism. In particular, promoters that exhibit hypersensitive responses to certain perturbations, such as increased contact upon insulator removal, should be relatively insensitive in other regimes, which could be tested by secondary mutations. For example, increasing the contact frequency between Ubx enhancers and the abd-A promoter following deletion of the border element, by removing some of the 30\u201360 kb that separates them, is predicted to have sublinear effects on promoter activity since the hypersensitive regime was already crossed following the initial deletion.\n\nA more comprehensive test of this prediction of the models would be an experiment that measured gene expression from a reporter construct, while systematically varying the separation between an enhancer and promoter across a wide range of distances, from most proximal, until too far away to have any effect. Here, E-P contact frequency would be proportional to E-P genomic distance. The models predict that there is a threshold distance, below which the promoter is active and above which it is inactive. The response around this threshold is thus hypersensitive, and further changes at either side of the threshold are sublinear. This experiment is predicted to exhibit the sigmoidal response seen in the models: two sublinear regimes separated by a hypersensitive regime.\n\nSuch an experiment has recently been published with Drosophila enhancers, and results are consistent with the model prediction\u2014decreasing E-P contact frequency by increasing E-P distance within a TAD produced a sharp drop in expression (Yokoshi et al., 2020). Similarly, manipulations of the Sox9 locus, which progressively increased the contact frequency between Sox9 enhancers and the adjacent Kcnj2 gene by deleting first the TAD border between them and then further shortening the distance, also exhibited just such a nonlinear response (Despang et al., 2019). Most notably, systematic variation of the distance between the Sox2 promoter and one of its enhancers, both inserted into an ectopic site, reveals a strikingly hypersensitive dependence of transcription on E-P contact frequency (Zuin et al., 2021).\n\n### Understanding global disruption of TADs\n\nExamination of the time sensitivity of the model provided a possible explanation of a second set of controversial experiments. It was reported in 2017 that rapid removal of cohesin from the genome substantially altered global contact patterns, removing TADs and so-called \u2018loops\u2019 or corner points from contact maps genome wide (Rao et al., 2017). Surprisingly, this structural perturbation resulted in few transcriptional changes, with hardly any gene changing nascent transcription levels by more than a factor of 2. This apparently contradicted results in earlier and concurrent reports, in which disruption of single TAD boundaries resulted in substantial change in expression to the local genes. While it is important to note that the experiments were conducted in different cellular backgrounds, our modeling work demonstrates that a simple explanation may exist. Twofold or smaller differences in contact frequency in the model show significant hysteresis and will retain their initial transcription rate for many hours after such perturbation, but this memory is lost on longer time scales. Transcription was assayed only hours after the contact changes in the degron experiment, which may explain why little change was detected. In contrast, experiments that genetically deleted border elements assayed transcription days and many cell generations later, at which point some promoters saw major changes in expression.\n\nNotably, TAD boundaries have been globally weakened or removed through a variety of alternative methods, including degradation of CTCF, deletion of the cohesin-associated factor NIPBL, protease cleavage of cohesin, and siRNA (Cuartero et al., 2018; Nora et al., 2017; Schwarzer et al., 2017; Stik et al., 2020; Zuin et al., 2014). A direct comparison between the studies is complicated by the variations in cell type and genetic background used. Yet, by and large, transcriptional assays performed at longer intervals after first detection of E-P contact disruption exhibit greater transcriptional changes, consistent with the explanation suggested by these simulations.\n\nHow can we connect modeling time scales with the experimental measurements? While too little is known about the detailed chemical kinetics in vivo to confidently extrapolate these results to absolute time scales, it is clear there is a fast regime and a slow regime, with moderate change looping rates associated with a slower time scale. Available in vivo data on recruiting epigenetic modifiers to promoters predominantly shows significant response on the time scale of hours (Braun et al., 2017; Hathaway et al., 2012; Ho et al., 1996), though subtle responses can be detected with stronger recruitment in as little as 15 min in some studies (Braun et al., 2017). If the promoter tags of our PTM model version are realized by such epigenetic mechanisms (discussed below), our results are consistent with the expectation that a decreased or increased contact frequency over only 6 hr will be insufficient to change the promoter state, while a substantially longer period such as the multiple days/generations between deletion and measurement can give the promoter enough time to change states. Less is known about condensate kinetics, whose very existence and reliable detection in vivo remain controversial. Nonetheless, studies reporting condensates of GTFs such as Med1, PolII, and Brd4 indicate a stability that generally exceeds the imaging time (Chong et al., 2018; Cho et al., 2018; Sabari et al., 2018).\n\nOur model suggests experiments to test the hypothesis\u00a0that promoters\u00a0are\u00a0hysteretic. Deletion of essential enhancers, such as the Sox2 control region, results in substantial decreases in gene expression, even though alterations to the interaction frequency do not. If expression were to be measured within 6 hr of enhancer deletion or inactivation, rather than many cell generations later, the model predicts the change would be much less dramatic. Though not a trivial experiment to execute, this could be attempted using CRISPR to induce the deletion in a population (or CRISPRi to silence the enhancer), followed by fixation within a few hours and combined single-molecule RNA FISH and DNA FISH. RNA FISH would quantify RNA expression per cell, and the DNA FISH would sort out which cells actually contained the deletion.\n\n### Transcription may be dependent on E-P contact even when the two are\u00a0not correlated in single cells\n\nIt has been widely expected that active promoters should colocalize with their active enhancers, based largely on bulk population assays such 3C and H3K27ac Hi-ChIP (Bartman et al., 2016; Deng et al., 2012; Kagey et al., 2010; Mumbach et al., 2017, Mumbach et al., 2016; Rao et al., 2014; Williamson et al., 2016); for review see Furlong and Levine, 2018. Surprisingly, recent single-cell measurements found that cells with close E-P proximity were only slightly more likely to exhibit nascent transcription than those lacking contact (Finn and Misteli, 2019b; Mateo et al., 2019). It is possible the correlation between looping and expression is missed in these fixed cell assays because the loops are transient relative to the rate of transcription, such that loops dissociate by the time the nascent RNA transcript is detectable. However, recent live-cell imaging experiments suggest otherwise: live-cell tagging of chromatin proximal to the enhancer and promoter of Sox2 coupled with live-cell measurements of nascent RNA transcription uncovered no significant correlation between E-P proximity and transcription activity (Alexander et al., 2019). These data have supported speculation that enhancers must be able to influence promoter activity from a distance, for\u00a0example, through bridging by large protein condensates (Alexander et al., 2019; Benabdallah et al., 2019; Heist et al., 2019).\n\nThe futile cycle model demonstrates that it is possible for transcription to be regulated by E-P contact and yet show little temporal correlation, even in live, single-cell time-lapse data. This is because individual E-P contact events have little impact on promoter state, contributing to only marginally more promoter tags or larger condensates. However, repeated interaction events, coupled with promoter-intrinsic feedback to accumulate tags, eventually lead to activation. This explanation can be directly tested with larger data\u00a0sets\u2014with sufficient observations, a weak correlation should be detectable (as seen in the fixed cell data), since cells experiencing a higher frequency of contact are more likely to have a high level of tag and thus more likely to transcribe, even though it is not a one-to-one dependency.\n\nA simple test of this could be performed by collecting deeper single-cell live imaging data sets\u2014a feasible though exceedingly laborious task given the available throughput of live imaging. An order of magnitude more measurements may allow detection of the expected weak temporal correlation. A yet more direct experiment would be to take single-cell measurements of the protein state of the promoter, with simultaneous measurement of transcriptional state\u2014for example, monitoring the level of H3K4me3 or PolII. Of course, this experiment is exceedingly difficult with current technology, which lacks reliable detection of protein state at individual promoter loci, and is further complicated by the substantial number of candidates to test for promoter accumulation signals. While dynamic measurements would lead to stronger conclusions, even in fixed cell populations, correlating promoter state in terms of protein occupancy and abundance to the RNA expression state would be informative. While out of reach of current technologies, given the rapid improvements in experimental methods for enhanced sensitivity and versatility, it is imaginable that such direct measures will one day be possible.\n\n### Repression also supports hypersensitivity and hysteresis\n\nFor simplicity, the futile cycle model presented above assumed that the condensates or the tags that accumulated at the promoter are activating, such that transcription is proportional to tag level. However, it is equally plausible that futile cycles of repressive condensates or tags at the promoter account for hypersensitivity of some promoters. In this case, transcription can be modeled as inversely proportional to the concentration of the promoter tag; everything else about the analysis and its conclusions remains unchanged. The distal regulatory element that adds more of the tag should be termed a silencer rather than an enhancer. In response to increased contact with the silencer, the promoter would\u00a0transition\u00a0through a weakly\u00a0sensitive ON regime, a hypersensitive bistable regime, to a weakly\u00a0sensitive OFF regime. Alternatively, a model in which the enhancer removes the repressive tag from the promoter would\u00a0support all three regimes.\n\n### Conclusion\n\nWe have described and analyzed a simple futile cycle model of enhancer-contact-dependent promoter activity and presented two concrete realizations for analysis. In this view, the promoter is not merely\u00a0an\u00a0intermediary in the regulation of transcription. It does not only relay the activity state of the enhancer into transcriptional activity of its target gene, nor function only as an amplifier of enhancer activity to set the levels of expression. Instead, through accumulation of local tags or GTFs in a condensate, the promoter is able to integrate its history of interaction with one or more regulatory elements and respond in striking nonlinear ways to changes in these signals. In addition to its core sequence, the accumulation of other factors at the promoter, be they histone modifications or transcription factors, provides the necessary mechanism for the dynamical system to exhibit memory.\n\nThis view of the promoter as an integrator of signaling by accumulation of molecules is not new and does not posit the existence of any unknown molecular mechanisms. However, we found that a minimal model that captures the key features of such promoters can exhibit a much more complex dependency on chromatin structure than previously acknowledged. Our modeling results offer a simple explanation to controversies of major importance to the chromatin structure and transcription community. These include (1) why TAD boundaries can be weak and why insulators only mildly affect contact frequency and yet be major regulators of transcription; (2) why many genes thought to be responsive to distal enhancers are insensitive to some structural changes; (3) why global disruption of structure and acute disruption of structure have been reported to have distinct effects on transcription; and (4) why physical distance between known distal enhancers and their cognate gene does not show obvious correlation with transcriptional state in single cells.\n\n## Materials and methods\n\n### Transcriptional framework and terminology\n\nThe terms enhancer and promoter have fluid definitions in the literature, with overlapping empirical criteria. For clarity, we will use the following simplified definitions. Regulated genes are genes activated by cell-type-specific combinations of transcription factors (TFs), which bind regulatory DNA sequence elements called enhancers. The enhancer loops to the promoter at some frequency determined by the genome structure. The promoter is a different regulatory DNA element that contains the transcription start site (TSS) and binding sites for general transcription factors (GTFs). As they bind the promoter, GTFs can influence transcription immediately, whereas TFs, which bind enhancers, only affect transcription when an E-P loop occurs. There is no loss of generality with these definitions\u2014a TF-binding site that is close to the TSS, rather than being described as part of the \u2018promoter,\u2019 is, in this view, part of an enhancer with a high interaction frequency (one which is likely never rate-limiting). Many informative prior models of transcriptional regulation (Ben-Tabou de-Leon and Davidson, 2009; Gregor et al., 2007; Manu et al., 2009; Sanchez et al., 2011; Zinzen et al., 2006; Zinzen and Papatsenko, 2007) assume that the rate of transcription is simply proportional to TF occupancy. These models are consistent with the general definition we just described, with the added assumptions that E-P contact and GTF-promoter binding are fast relative to TF binding, and that transcription itself is proportional to GTF binding. This broader definition will help us see how genome structure would be expected to impact the behavior of these models.\n\n### Nonlinear mathematical frameworks\n\nTwo distinct mathematical frameworks have been used to model nonlinear transcriptional systems. Mass action kinetics models chemical entities using continuous variables representing concentrations. Interaction rates are quantified by on/off rate constants. The mathematical tools of ordinary differential equations (ODEs) can be used to study the behavior of systems under these assumptions (Strogatz, 2019). Alternatively, the CME models the chemical species as discrete molecules, which interact stochastically. The mathematical tools of probability theory, particularly continuous-time Markov chains, allow analysis of the behavior of such discrete systems (Durrett, 2012). Each chemical state of the system is enumerated, and transitions between states occur with a finite probability that depends only on the current state. The CME\u2019s assumptions are less restrictive than the ODE approach, and it allows the study of variability in stochastic systems. In the limit where the number of discrete molecules is large, the master equation is accurately described by the corresponding continuous ODEs. Stochastic models of transcription have been instructive in understanding promoter bursting and how different chemical signaling pathways buffer or amplify stochastic variations, which in turn improves robustness or increases heterogeneity (Ycart and Peccoud 1995, Raj 2006, Sanchez et al., 2011, Boettiger 2013).\n\n### Solutions to the chemical master equation/Markov jump process\n\nConsider a system with n states. Note n is not required to be finite. Let P(t) be a matrix where element pi,j(t) indicates the probability the system is in state i at time t given that it started in state j at time 0. The evolution of P(t) is given by the forward Kolmogorov equation, d/dt P(t)\u00a0= P(t)M, where M is the transition probability matrix, shown in each of the model figures (see Figures 2\u20134).\n\nThe stationary distribution of P$\\pi$ is given by the normalized kernel of M. In the two- and three-state models shown in Figure 2, we were interested only in the probability the system was in the fully occupied state, and thus inspect only the last element of\u00a0$\\pi$. In other models, like the condensate model, transcription was assumed to be proportional to the size of the condensate, and we must sum all the elements of $\\pi$\u00a0scaled by their corresponding transcription rate for the corresponding condensate size in order to determine the expected distribution of transcription.\n\nIt is also instructive to look at solutions not at steady state. This solution is straightforward for small matrices (see Durrett, 2012), but for large matrices is more efficiently explored by stochastic simulation of the underlying jump process as discussed below.\n\n### Stochastic simulation of the Markov jump process\n\nStochastic simulations were written in MATLAB 2020a. Executable source code to run these simulations is available here: https://github.com/BoettigerLab/model-transcription-looping (copy archived at swh:1:rev:8af1e7fcf1fa126908465558c4ef6d127000a9c8),\u00a0Boettiger, 2021. A detailed table of parameters values and parameter descriptions is provided at the start of each script. The associated figure is indicated in the filename and in the header of the corresponding script for each simulation.\n\nWhy use stochastic simulations when analytic methods are available? While the matrix formalism can be used to solve analytically the time-dependent and stationary probability distributions for all the states of interest in both the PTM mechanism and condensate mechanism flavors of the model, we find the complexity of the expressions in full variable form does not easily facilitate interpretation. The analytic solutions in variable form require many pages just to write down, and as such do not facilitate the mental evaluation of limit behavior as demonstrated with simpler models. By contrast, the parametric approximation of the numerical results we find more intuitive.\n\nIn brief, these simulations model the chemical master equation in explicit time and discrete time steps, with discrete transition probabilities for the addition and removal of promoter tags. For simplicity, we equate promoter modification and transcription, reducing the total parameter space without loss of generality.\n\nThe number of time steps used in the simulation was explored systematically to benchmark their effects on model behavior (e.g., see Figure 5E). As can be seen from these simulations and inferred from the structure of the model, the system asymptotically approaches the stationary distribution, such that the difference in the distribution of states observed after 104 or after 105 units of simulation time is small. The simulations in Figure 5 explored also the more transient behaviors at shorter time scales, which were benchmarked against the time it took the simulation to respond to enhancer deactivation. The initial conditions were selected to have all promoters start in the OFF state with no tags or condensate molecules, unless indicated as a \u2018start on\u2019 simulation. In the latter case, all promoters were initialized with a condensate or tag size equal to\u00a0that observed on average at stationarity. The specific number of time\u00a0steps used in each simulation and the specific initialization conditions are recorded along with the corresponding rate constants used in the supplemental code provided.\n\n### Model assumptions and justification\n\n#### The free concentration of high abundance molecular species, like nucleotides, soluble GTFs, or tags, is unchanged by their accumulation at the promoter\n\nRNA production consumes ATP to produce multiple mRNA molecules from a DNA template and so these models do not explicitly conserve energy or mass. This does not violate any laws of physics; other processes in the cell, not explicitly described in the model, produce (and consume) species such as ATP in such a way that mass energy in the universe is still conserved. When these components are in sufficient excess and produced at a sufficient rate, they are reasonably approximated as constants.\n\nThis assumption can be removed with no observable change to the results, save added complexity in their computation. This follows as the relative effect of a minor depletion of the bulk population, from N to N-1, has an effect size of 1/N on the addition rate.\n\n#### Transcription is proportional to condensate size/tag amount\n\nTo keep the parameter list minimal and emphasize the chemical features chiefly responsible for the hypersensitivity to E-P contact frequency, we assumed transcription is proportional to condensate size and tag amount. This assumption can be replaced with a variety of more complex, more stochastic models of transcription. As long as transcription is correlated with the accumulated amount of these factors, the hypersensitivity will remain. The degree of hypersensitivity will be lessened (or require averaging over many more promoters in order to emerge) if the correlation is weak.\n\n#### Enhancers are already bound by TFs\n\nIt is straightforward to add a more complex model of the enhancer, one, for example, which cooperatively binds multiple TFs and thus whose occupancy depends on the concentration of the respective TF activators and repressors as in Zinzen 2006 and related works. One must decide which TF occupancy configurations are capable of influencing transcription via PTM or condensate recruitment. The addition then is a function not just of the loop frequency e, but rescaled by the probability the enhancer is in an active state(s), which is a function of the TF concentrations.\n\n#### Condensates have a fixed maximum size while promoter PTMs do\u00a0not\n\nTo keep the parameter space small in the condensate model version and facilitate a systematic scan over parameters, we modeled the system with a fixed maximum condensate size. A more realistic model would postulate that this value is a stochastic number, determined by the concentration at which the GTF forming the condensate passes below the solubility critical point and stops condensing. If the concentration is always below this threshold, no condensation will be observed. For systems with concentration above the critical point, condensates form, and compete to associate out the extra molecules. Should distinct liquid condensates meet in 3D space, they will fuse, though the frequency of such events will be dramatically reduced if the condensates are tethered on chromatin as postulated in our model, as the dense packaging of these long polymer fibers limits their diffusive mobility. In the tethered regime, condensate size is limited by the competition with other condensates for the limited pool of GTF molecules and the limited lifetime of the processes permissive to formation at a given site (such as the activity of the enhancer). Importantly, the soluble pool of GTFs remains large even once condensates have formed, and thus individual GTFs will still leave and fuse with existing condensates. The tethered condensate model is analogous to beads of dew condensing on a glass window as the air cools, forcing a fraction of water molecules out of the gas phase and into the liquid phase\u2014the surface tension keeps the beads generally in place, so they do\u00a0not all condense into a single droplet. The size of the beads is limited by the amount of water available above the critical dew point (which depends on the size of the temperature drop and how saturated the air was to begin with). Individual water molecules in the dew drops continually escape back into the gas phase, and individual molecules in the air continually join the dew drops, and are preferentially captured by the larger drops. Local variations in temperature of the substrate, much like local variations in the enhancer activity of different promoters in the model, will cause variations in the growth and dissolution rates of the different droplets.\n\nNo fixed saturation for the total amount of tag is assumed in the PTM model version. Since tag removal is proportional to current abundance, for all non-zero removal rates the amount of tag will always have a finite average. Since an individual promoter can always add one more tag though, the transition matrix is infinite. As the substrates for common PTMs (phosphates, methyl groups, acetyl groups) are in high abundance and under rapid turnover in the cell, the addition of a tag to the promoter is not expected to deplete the available pool and so impact the next modification.\n\n### Analytic inference of the parameter space of the PTM model\n\nStandard dynamical systems theory (Strogatz, 2019) reveals the continuum limit version of the PTM mechanism has at most three real, critical points, one unstable and two stable, at high and low tag levels, respectively, arising from the intersection of a sigmoidal tag production curve, p(a) with a linear decay d(a) (Figure 3\u2014figure supplement 1). Hypersensitivity in this model arises for parameter regimes in which a minor increase or decrease in e leads to the loss of either the upper or lower stable point in a saddle node bifurcation, causing the system to tip into the remaining stable point. The conditions for the existence and annihilation of these stable points can all be seen from a phase-portrait analysis of the shape of the curves p(a) and d(a). The effects of the individual rate constants on the shape of p(a) and d(a) can be seen from the analytical forms of these equations (Figure 3\u2014figure supplement 1A,\u00a0B). The amplitude of p(a) sets the maximal transcriptional difference between enhancer-induced and -uninduced states. The sensitivity and stability of the response to enhancer promoter contact is determined by the sensitivity of p(a). When p(a) is a gentle sigmoid, it is possible for a very small change in e to transition the system from a mono-stable off-state, through the bistable regime, into the monostable on-state (Figure 3\u2014figure supplement 1C). In the corresponding stochastic regime, the difference in p(a) and d(a) for values of a left of the upper stable point determines the ultimate stability of the upper stable point. In this stochastic regime, when the difference between p(a) and d(a) is small, there is a non-zero probability of losing more tags than gained in a certain time window, even when p(a) is on average greater than d(a). Thus, hypersensitivity to e is reduced/lost as the Hill coefficient of p(a) approaches 1 or approaches infinity: moderate Hill coefficients in p(a) produce the most hypersensitivity to e (Figure 3\u2014figure supplement 1C\u2013E). Similarly, if d(a) becomes too large or too small, it also limits the sensitivity, as can be seen schematically by its effect on the position of stable points (Figure 3\u2014figure supplement 1F).\n\n### Derivation of the continuum limit equations\n\nThe ODE model (Figure 3\u2014figure supplement 1A) was derived from the discrete chemical master equation using mass-action kinetics as described below. The stimulated enzyme example presented below is only one implementation of the PTM version, but used here because it\u00a0is the simplest and most intuitive system that recapitulates the desired quantitative behavior.\n\n#### Model parameter definitions\n\nConsider a promoter-bound enzyme that attaches molecular tags to a promoter at some basal rate\u00a0$r_{0}$. This enzyme can also associate with $n$\u00a0promoter-bound tags up to some number\u00a0$n_{max}$, which changes the tagging rate to\u00a0$r_{n}$. The enzyme-tag association rates $k_{n}$ are dependent on the current association state (e.g., cooperativity), while dissociation is assumed to be constant (for now, but can be generalized later). 'Free' tags not associated with the enzyme but still promoter-bound are removed from the promoter with a rate constant\u00a0$g$.\n\n#### Reaction and rate equations\n\nFor illustrative purposes, we will start with the $n_{max}=2$ case (later, we\u00a0will show this is sufficient to capture nonlinear behavior of interest). Then, the enzyme has three 'association states' (n\u00a0=\u00a00, 1, or 2):\n\nStimulation of enzyme activity by tag association:\n\nwhere $E$\u00a0is enzyme and $a$\u00a0is tag. In general, there may be up to n different stimulation states:\n\nTagging/detagging:\n\nIn general:\n\nNote: The enzyme adds a tag to the vicinity of the promoter by reacting with abundant ambient substrate or coenzyme (e.g., Acetyl-CoA). As described above, the abundance of this substrate/coenzyme is assumed to be sufficiently large that its addition to the promoter does not appreciably change the total abundance, enabling us to reduce the number of necessary parameters by accounting for this constant concentration in the production rates\u00a0$r_{n}$. In other words, a appears to be created \u2018from nothing,\u2019 but the requisite material pool actually exists on both sides of each reaction equation and is simply omitted for readability.\n\nNow we can write out the rate equations:\n\n$$\n\\frac{d[E]}{dt}=\u2212k_{1}[E][a]+\\tau[Ea]\n$$\n\n\n\n$$\n\\frac{d[Ea]}{dt}=k_{1}[E][a]-\\tau[Ea]-k_{2}[Ea][a]+\\tau[Ea_{2}]\n$$\n\n\n\n$$\n\\frac{d[Ea_{2}]}{dt}=k_{2}[Ea][a]-\\tau[Ea_{2}]\n$$\n\n\n\n$$\n\\frac{d[a]}{dt}=r_{0}[E]+r_{1}[Ea]+r_{2}[Ea_{2}]-g[a]+e\n$$\n\nwhere $e$\u00a0is the tagging contribution from E-P contact. Assuming the total enzyme number is constant,\n\n$$\n[E_{tot}]=[E]+[Ea]+[Ea_{2}]\n$$\n\nOur goal is to find $\\frac{d[a]}{dt}$\u00a0as a function of $[a]$ and constants, and to study the steady-state behavior of the system, that\u00a0is, finding the solutions for $[a]$ when Equations (1)\u2013(4) are all set to zero. Solving (1) and (3), then substituting $[Ea]$ and $[Ea_{2}]$ into (4) and (5):\n\n$$\n\\frac{d[a]}{dt}=r_{0}[E]+r_{1}\\frac{k_{1}}{\\tau}[E][a]+r_{2}\\frac{k_{1}k_{2}}{\\tau^{2}}[E][a]^{2}-g[a]+e\n$$\n\n\n\n$$\n[E_{tot}]=[E]+\\frac{k_{1}}{\\tau}[E][a]+\\frac{k_{1}k_{2}}{\\tau^{2}}[E][a]^{2}\n$$\n\n\n\n$$\n\u21d2[E]=\\frac{[E_{tot}]}{1+\\frac{k_{1}}{\\tau}[a]+\\frac{k_{1}k_{2}}{\\tau^{2}}[a]^{2}}\n$$\n\nCombining (6) and (7):\n\n$$\n\\frac{d[a]}{dt}=[E_{tot}](\\frac{r_{0}+r_{1}\\frac{k_{1}}{\\tau}[a]+r_{2}\\frac{k_{1}k_{2}}{\\tau^{2}}[a]^{2}}{1+\\frac{k_{1}}{\\tau}[a]+\\frac{k_{1}k_{2}}{\\tau^{2}}[a]^{2}})\u2212g[a]+e\n$$\n\n\n\n$$\n=[E_{tot}](\\frac{r_{0}\\frac{\\tau^{2}}{k_{1}k_{2}}+r_{1}\\frac{\\tau}{k_{2}}[a]+r_{2}[a]^{2}}{\\frac{\\tau^{2}}{k_{1}k_{2}}+\\frac{\\tau}{k_{2}}[a]+[a]^{2}})\u2212g[a]+\u039e\n$$\n\nThe terms with $r_{n}$ represent enzyme tagging, and the term with $g$\u00a0is detagging. This nonlinear system with n\u00a0=\u00a02 can be solved explicitly for the steady-state values of a, though the solutions are less compact than the final equation, and are most easily interpreted in the phase portraits of Equation (6). Analytic steady-state solutions were calculated in MATLAB using the symbolic algebra package. Scripts to reproduce these calculations are available on our GitHub site at:\u00a0https://github.com/BoettigerLab/model-transcription-looping.\n\n### Insulation score calculations\n\nSeveral variations of this metric exist, but we define it as follows: first, the contact\u00a0frequency map is normalized relative to linear genomic distance by dividing each off-diagonal row by the sum of the row. This improves the interpretability of the measure as the inter-domain triangle contains more interactions further from the diagonal than the intra-domain ones (Figure 1\u2014figure supplement 3). We then scan the whole genome, computing the average, normalized interaction\u00a0frequency within each of the three triangular regions shown in Figure 1\u2014figure supplement 3: upstream (intra-domain U), downstream, intra-domain D, and between inter-window (domain I) of query point. We report the ratio of intra-domain to inter-domain interactions for this sliding window as the insulation score for that genomic position, as indicated in Figure 1\u2014figure supplement 3. This metric can be computed for a range of sliding window sizes. As long as the window size is smaller than the typical TAD and large enough not to be sensitive to measurement-error fluctuations associated with over-binning the data, the distribution of insulation scores does not depend strongly on bin size. A comparison of several different computational algorithms for identifying TADs showed greatest agreement across replicates and robustness to data normalization using this metric (Gong et al., 2018; Lazaris et al., 2017).\n\nBalanced, Hi-C matrices from Rao et al., 2014 were downloaded and exported using Juicebox (Durand et al., 2016) for manipulation in MATLAB for computing insulation scores.\n",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "55943b12-e9c9-4276-a07b-9511ab144aed",
+      "submission_id": "5abd61d6-5e9a-435b-85d6-7ea873c06832",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Job Dekker, University of Massachusetts Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64320.sa1](https://doi.org/10.7554/eLife.64320.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe work describes a simple theoretical model for enhancer action that explains several major controversies in the field of long-range gene regulation and the role of topologically associating domains and insulating boundaries in modulating enhancer-promoter interactions. Further, the model makes predictions that be experimentally tested. This is valuable for the field of gene regulation.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"How subtle changes in 3D structure can create large changes in transcription\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Job Dekker as the Reviewing Editor and Reviewer #3, and the evaluation has been overseen by Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Katie S. Pollard (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThe work describes a simple theoretical model for enhancer action that explains several major controversies in the field of long-range gene regulation and the role of topologically associating domains and insulating boundaries in modulating enhancer-promoter interactions. Further, the model makes predictions that can be experimentally tested. This is valuable for the field of gene regulation.\n\nEssential revisions:\n\nAll three reviewers agreed the work addresses a major question in the field but also raised important issues that should be addressed. These primarily revolve around how the model is described, and the extent to which the full parameter space is explored. Further, the authors have not explored alternative models which would help clarify how surprising and robust their results are. There is also an opportunity to emphasize that the proposed model is not necessarily absolutely correct, but one of many plausible models that can produce a non-linear relationship between genome structure (enhancer-promoter contact) and transcription. Any thoughts on other models that could generate similar dynamics would be a useful discussion point.\n\n1. The presentation of the model is unclear. It is currently present in the text, lines 110-122, in pure qualitative description. Authors define only rates in the text; definitions of other model parameters are not present. For example, E and a are not specifically defined in the text or Methods section. Since both terms \"enzyme\" and \"enhancer\" are being used and in fact \"enzyme tagging\" and \"enhancer tagging\" occur simultaneously in the model, it is not possible to say for sure when do authors call which one in the model and thus the methods section can be interpreted in different ways. Moreover, the cartoon is missing a legend confirming, which molecular player is which. The figure caption mentions only green triangles being the tags, but no other parts of the cartoon are being explained. Taken together, this makes it very difficult to verify the mechanics of the model.\n\n\u2013 Given its centrality to the manuscript, we recommend describing the overall strategy in more detail in Results. For example, at line 124 (Pg. 4) the authors could talk about how the simulations are done, including where the variability comes from (e.g., random starting conditions vs. probabilistic events vs. different parameters).\n\n\u2013 \u2013 The authors should provide a detailed technical description of their model directly in the text, including description of their parameters, list their constitutive equations and identify all parameters in their cartoon Figure 1C.\n\n\u2013 Axes labels in all figures should be expressed in the parameters/variables of the model (as in Figure 6C-D) directly connecting to inputs/outputs of the model.\n\n2. In the Methods section, it appears that in lines 577-580 of the model description, the mass is not conserved. This issue is critical to address, because when mass is not conserved the model can not be physical.\n\n3. Xiao et al. make several key assumptions to dramatically simplify their model. Namely, it is assumed that promoter modification and transcription are equivalent and that enhancer-promoter contact influences transcription instead of transcription influencing structure. Steady-state equilibrium must also be assumed. It would be helpful if the authors explicitly stated these assumptions and provided references to support their being reasonable.\n\n4. For clarity, it would be helpful to discuss model parameters in greater detail. First, we suggest noting which parameters shift the location of the curve and which increase the steepness of the curve. Second, we recommend including a phase diagram exploring when sigmoidal behavior and any other key model predictions arise across parameter space. In what circumstances does hypersensitivity or time lag emerge? The authors demonstrate that a narrow set of parameters is sufficient to produce a super-linear relationship between enhancer-promoter contact and transcription in Figure 6. One potential dilemma is this model's ability to explain many experimental observations by indicating that minimal changes all occur in the sub-linear regime while observable changes occur in the super-linear regime. Given that one needs specific parameters to replicate an example of the hyper-linear regime (including at least three degrees of stimulation and increasing stimulation of the successive states), it could be valuable to demonstrate how large the plausible parameter space is. Without an exhaustive search across the space of minimal parameters, it is not clear when this property emerges or how common it is within the full parameter space. The authors could vary model parameters and plot a grid visualizing behavior (e.g., steepness of the curve or Hill coefficient).\n\n5. The authors observe hysteresis in median transcription rate as a function of enhancer contact frequency. However, the presented violin plots suggest a presence of two states, one with low and one with high transcription rates. In the intermediate regime of enhancer contact frequency, where authors report hysteresis, the violin plots show bimodal distributions suggesting coexistence of these two states. This would suggest that the system exists in and switches between two distinct states with a discontinuous transition, instead of a continuous hysteretic behavior as suggested by the median behavior.\n\n6. There is also an opportunity to emphasize that the proposed model is not necessarily absolutely correct, but one of many plausible models that can produce a non-linear relationship between genome structure (enhancer-promoter contact) and transcription. Any thoughts on other models that could generate similar dynamics would be a useful discussion point. There are parallels to both sigmoidal dose-response curves, where drug concentration is plotted against response, and transcription factor binding curves, where free ligand concentration is plotted against the fraction bound. We recommend providing background context on these types of models or the Hill equation to illustrate why non-linear behavior is or is not surprising given the proposed model.\n\n7. It is not totally clear why the authors decide to call their proposed approach the futile cycle model. There are similarities to other well-known models in biochemistry and biophysics that should be noted. It might make sense to simply call this a mechanistic model of cooperative promoter activation. If the authors stick with \"futile cycle\", the relationship between promoter activation through tags and metabolic signaling should be described in more detail.\n\n8. At the beginning of the Discussion section authors state they will propose future experiments in each section. However, in some of the sections it is not clear what specifically authors are proposing. These suggestions should be made clearer.\n\n9. If I understand the model correctly, the non-linearity arises because of the increase rate of tag addition when tag is already present. The authors then speculate histone modifications can be one such tag. However, there is only so many sites of modification at a promoter. Can the authors analyze how the possible range of tag densities affects performance of the model? Is the range required biologically plausible?\n\n10. Can the authors do more analysis to explore how rapid changes in gene expression may occur (e.g. upon signaling a gene may go up within minutes)? How much more frequent does the E-P interaction need to be for rapid switch to the active promoter state? Can the authors do an analysis where they change the rates of the futile cycle upon some signal: at what time scale does transcription then change (keeping E-P frequency the same)?\n\n11. Due to the lack of description, in many sections it is not clear what are the specific inputs and outputs of the model (e.g. Figure 2).\n\n12. The Methods section describes the chemical kinetics of the suggested reactions and the insulation score calculations. But it is not clear how do these inform each other, how are contact-frequency maps chosen/computed and cross-referenced with the local E-P kinetics?\n\n13. In 587-588, the index of k is 2(n+1), which equals to 2n+2, but then in the next line the following assumption is made 2n+1 \u2192 n+1.\n\n14. The authors make assumptions that their kinetic considerations hold for n>2. What is the evidence?\n\n15. The language of the paper is often not technically precise with qualifiers missing, which could lead to ambiguities and misinterpretations. Here are some examples:\n\np. 1, line 10, \"difference in contact across TAD borders is usually less than twofold\";\n\np. 1, line 17, \"results from recent cohesion disruption\";\n\np. 2, line 71, \"A simple model of hypersensitivity to changes in contact frequency\".\n\n16. On p. 13, line 483, authors define Ostwald ripening as given by weak multivalent interactions; however, Ostwald ripening is a thermodynamic process. In addition, they propose that liquid condensates become larger due to Ostwald ripening, but there are also other processes that may occur, such as coalescence of condensates, which would also lead to larger condensates.\n\n17. An alternative explanation for TAD-specific enhancer action is that an E-P interaction within a TAD (between two convergent CTCF sites), one that is brought about by extruding cohesin, is not equivalent to an interaction that occurs between two loci on either side of a CTCF site and that can be a random collision that is not mediated by extruding cohesin. In other words, two interactions can be of the same frequency but can be of a very different molecular nature. I agree that this model would not explain the results of the experiment where cohesin is acutely removed.\n\n18. In the beginning of the introduction the authors introduce TADS. I recommend that the authors present this in a more nuanced way: compartment domains also appear as boxes along the diagonal, an issue that has led some in the chromosome folding field to be confused. This reviewer believes TADS are those domains that strictly depend on cohesin mediated loop extrusion, whereas compartment domains are not. If the authors agree, perhaps they can rewrite this section?\n",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "849a6700-b93b-4500-b975-62b580a5a735",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C1",
+      "claim": "Animal genomes are organized into topologically associated domains (TADs).",
+      "claim_type": "EXPLICIT",
+      "source": "Animal genomes are organized into topologically associated domains (TADs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding in the field, supported by multiple citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "737ca496-a56d-4bc7-a28b-5056a13410dc",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C2",
+      "claim": "TADs are thought to contribute to gene regulation by facilitating enhancer-promoter (E-P) contacts within a TAD and preventing these contacts across TAD borders.",
+      "claim_type": "EXPLICIT",
+      "source": "TADs are thought to contribute to gene regulation by facilitating enhancer-promoter (E-P) contacts within a TAD and preventing these contacts across TAD borders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing hypothesis in the field about TAD function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "169b92c9-3dff-4dd0-b4ff-57b3f7720b86",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C3",
+      "claim": "The absolute difference in contact frequency across TAD boundaries is usually less than 2-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the absolute difference in contact frequency across TAD boundaries is usually less than 2-fold, even though disruptions of TAD borders can change gene expression by 10-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Figure 1 and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "fa57cc45-fcc4-4e7d-9f02-e68f5744ee8e",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C4",
+      "claim": "Disruptions of TAD borders can change gene expression by 10-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the absolute difference in contact frequency across TAD boundaries is usually less than 2-fold, even though disruptions of TAD borders can change gene expression by 10-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in Figure 1 and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "310a51b8-de09-4d86-b6a1-7c8b38fd1343",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C5",
+      "claim": "Existing models fail to explain the hypersensitive response of gene expression to small changes in contact frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing models fail to explain this hypersensitive response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the motivation for the authors' work, based on their analysis of existing literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "8014c5b4-489e-4a93-b024-c742f1e7e791",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C6",
+      "claim": "A futile cycle model of enhancer-mediated regulation can exhibit hypersensitivity through bistability and hysteresis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose a futile cycle model of enhancer-mediated regulation that can exhibit hypersensitivity through bistability and hysteresis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis and stochastic simulations presented in Figures 3-5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "8b65639d-8631-435a-8756-d5874b7e0744",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C7",
+      "claim": "The futile cycle model does not exhibit strong correlation between E-P contact and promoter activity, even though regulation occurs through contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with recent experiments, this regulation does not exhibit strong correlation between E-P contact and promoter activity, even though regulation occurs through contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 6 through simulations and comparison with experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "b77306a8-2370-4248-9a8f-8c9003d70560",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C8",
+      "claim": "TADs are defined as contiguous regions of the genome where intra-region 3D proximity is greater than inter-region.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomes of many organisms have been shown to adopt a domain-like structure commonly referred to as topologically associated domains (TADs) (Ibrahim and Mundlos, 2020; Jerkovi\u0107 et al., 2020; McCord et al., 2020; Rowley and Corces, 2018), defined as contiguous regions of the genome where intra-region 3D proximity is greater than inter-region (Dixon et al., 2012; Nora et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the standard definition of TADs in the field, supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "03a16f21-cc43-4a06-9e92-ee50ef4d498d",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C9",
+      "claim": "TADs can be detected by a range of distinct techniques, including methods relying on proximity ligation like 3C/Hi-C.",
+      "claim_type": "EXPLICIT",
+      "source": "They can be detected by a range of distinct techniques, including methods relying on proximity ligation like 3C/Hi-C (Jerkovi\u0107 et al., 2020; Kempfer and Pombo, 2020; McCord et al., 2020; Rowley and Corces, 2018), ligation-free sequencing methods like GAM (Beagrie et al., 2017) and SPRITE (Quinodoz et al., 2018), microscopy methods such as ORCA (Bintu et al., 2018; Mateo et al., 2019), and even live-cell measurements like DAMC (Redolfi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to different experimental methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "0d0025b2-8e07-44ef-908e-57577432f081",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C10",
+      "claim": "TADs are a statistical property that emerges from a population of cells dynamically exploring multiple conformational states, rather than a static structure found in all cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent microscopy experiments have shown that TADs are a statistical property that emerges from a population of cells dynamically exploring multiple conformational states, rather than a static structure found in all cells (Bintu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to microscopy experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "54e6255b-9f8d-435e-a640-73b0b2643f2b",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C11",
+      "claim": "Many TAD boundaries demarcate regions of co-expressed genes and separate differentially expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, many TAD boundaries demarcate regions of co-expressed genes and separate differentially expressed genes, suggesting that they play a role in cis-regulatory specificity (Long et al., 2016; McCord et al., 2020; Spielmann et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies showing this pattern.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "ac2e5ea9-8452-4108-846a-f00b5e8a79f1",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C12",
+      "claim": "Inter-TAD contacts often reach only half the frequency of intra-TAD contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Opposing this interpretation, it has been noted that the quantitative difference in interaction frequency is generally small: inter-TAD contacts often reach only half the frequency of intra-TAD contacts, raising questions of how such small differences could explain such clear separation of expression (McCord et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and by the data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "0dbc5d77-eb75-437d-80ce-55e2e8f3d174",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C13",
+      "claim": "Disruption of TAD boundaries by cis-mutation has been proposed as the causal driver of substantial alterations in gene expression for a variety of disease conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The disruption of TAD boundaries by cis-mutation has been proposed as the causal driver of the substantial alterations in gene expression for a variety of disease conditions, a conclusion supported by animal models (Dowen et al., 2014; Franke et al., 2016; Hnisz et al., 2016; Lupi\u00e1\u00f1ez et al., 2015) reviewed in Long et al., 2016; McCord et al., 2020; Spielmann et al., 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to animal model studies and reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "b437eb52-4438-4faf-9b86-aedfc3d0297c",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C14",
+      "claim": "Global disruption of TAD boundaries by depletion of boundary-associated factors led to few substantial changes in gene expression in cell culture models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, global disruption of TAD boundaries by depletion of boundary-associated factors led to few substantial changes in gene expression in cell culture models (Cuartero et al., 2018; Nora et al., 2017; Rao et al., 2017; Schwarzer et al., 2017; Stik et al., 2020; Zuin et al., 2014), though such depletion does obstruct the ability of macrophages to respond to inflammatory stimuli (Cuartero et al., 2018; Stik et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "ab31f6a4-49db-406b-bb29-0f4fa399e6c8",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C15",
+      "claim": "Genetic experiments have made it clear that enhancers act on promoters only in cis, suggesting a requirement for physical proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic experiments have made it clear that enhancers act on promoters only in cis, suggesting a requirement for physical proximity that would explain the functional role of TADs (Furlong and Levine, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review of genetic experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "6393e8a5-4df2-4a4f-ab54-ee45a3ab04e5",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C16",
+      "claim": "Recent microscopy experiments uncovered little correlation between enhancer-promoter proximity and nascent transcription activity at well-studied loci.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent microscopy experiments uncovered little correlation between enhancer-promoter (E-P) proximity and nascent transcription activity at well-studied loci (Alexander et al., 2019; Mateo et al., 2019) reviewed in Finn and Misteli, 2019b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to microscopy studies and a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "e196c746-ec8b-4a26-9b2a-c814810eb1a8",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C17",
+      "claim": "Deletion of a few kilobases of sequence at the border of the Ubx and abd-A TADs resulted in a 1-2.5-fold increase in interaction frequency between the domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of only a few kilobases of sequence at the border of these TADs resulted in a clear increase in interaction between the domains, including between Ubx enhancers and the abd-A promoter. However, interaction frequency increased only by a factor of 1\u20132.5-fold across the population (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from published data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "bb6da52a-e9f4-40aa-b9db-2da55c6608af",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C18",
+      "claim": "TAD border deletion at the Ubx/abd-A locus resulted in a fivefold increase in mRNA counts of abd-A.",
+      "claim_type": "EXPLICIT",
+      "source": "The change in gene expression, as assayed by single-molecule fluorescent in situ hybridization (smFISH), was hypersensitive to this moderate change in contact frequency, with an average fivefold increase in mRNA counts of abd-A (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from published data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "aefc8ccf-1881-43bd-ac65-bd93874e8d16",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C19",
+      "claim": "In wildtype cells, 25% of individual cells showed some cross-TAD border mixing between the Ubx enhancers and the abd-A promoter compared to 50% of mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while the structures were easily distinguished at the population level, the structures of single cells were more variable (Figure 1\u2014figure supplement 1A, B), with 25% of individual wildtype cells showing some cross-TAD border mixing between the Ubx enhancers and the abd-A promoter compared to 50% of mutant cells (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from published data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "1361b553-4878-4a35-9981-1741226315df",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C20",
+      "claim": "The quantitative disconnect between weak TAD borders and large transcriptional effects of border disruption is not an artifact of Hi-C or of population averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "From these single-cell analyses, we concluded that the quantitative disconnect between weak TAD borders (see also Figure 1\u2014figure supplement 3) and the large transcriptional effects of border disruption (see also Figure 1\u2014figure supplement 4) is not an artifact of Hi-C or of population averaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the authors' analysis of single-cell data shown in Figure 1 and supplements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "253031d3-93ff-4e4d-8e24-2b60a5b041ed",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C21",
+      "claim": "Small differences in the frequency of contact appear sufficient to drive large changes in expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, small differences in the frequency of contact appear sufficient to drive large changes in expression, requiring us to re-examine the textbook picture of E-P regulation (Alberts et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data analysis presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "e6cb68d7-7ade-4bd4-8c6d-0ae8a8bbd884",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C22",
+      "claim": "A two-state enhancer model with one TF-binding site exhibits only sublinear responses to TF concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "From this result, we see, for any value kon or koff, the probability that the enhancer is bound (and therefore whether it can activate transcription) exhibits only sublinear responses to A (i.e., is never hypersensitive) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through mathematical analysis and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "f85a458d-e5c7-470d-bc6e-0cb2691d9f65",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C23",
+      "claim": "A three-state enhancer model with two identical binding sites can be hypersensitive to TF concentration when koff2/kon2 < koff1/kon1.",
+      "claim_type": "EXPLICIT",
+      "source": "From this equation, we observe that for the special case where koff2/kon2 < koff1/kon1, this system is hypersensitive to A (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through mathematical analysis and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "2bfb5328-aab8-48bb-bb05-bff89faee6a2",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C24",
+      "claim": "The enhancer cooperativity model is rejected because it does not match observed data on contact frequency changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, this model is immediately rejected by available data. Upon perturbation of TAD boundaries, we (Figure 1A) and others do not observe the appearance or loss of cooperative enhancer contacts of great enough magnitude to explain the change in transcription (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of model predictions with experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "03d73cb3-cd57-48b2-bb66-465d8990a0b3",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C25",
+      "claim": "The GTF condensate model can achieve a hypersensitive regime where small fold changes in E-P contact lead to large fold changes in transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple model version includes a regime in which condensate size (a proxy for transcription) is hypersensitive to changes in 3D structure, as illustrated by simulations of the Markov jump process (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through stochastic simulations shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "a94c71f1-25cc-464f-b93b-8242ed82b094",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C26",
+      "claim": "Hypersensitive behavior in the GTF condensate model requires cluster size greater than 2.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw that sensitivity increased with cluster size, and hypersensitive behavior required cluster size greater than 2 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through parameter sweeps in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "23867e52-80ba-4d82-9a71-74d237f71a58",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C27",
+      "claim": "Recent experimental work supports the formation of condensates of GTFs such as PolII, Mediator, and BRD4 at promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experimental work supports the formation of condensates of GTFs such as PolII, Mediator, and BRD4 at the promoters, (Chong et al., 2018; Cho et al., 2018; Sabari et al., 2018; Lu et al., 2018), and provides experimental evidence for enhanced capture/reduced release (Chong et al., 2018) as expected for phase separating condensates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "527a751e-805a-4876-a07d-91e3ceb53bf8",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C28",
+      "claim": "The PTM futile cycle model can achieve a hypersensitive regime in which small fold changes in E-P contact lead to large fold changes in transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The PTM futile cycle model version can also achieve a hypersensitive regime in which small fold changes in E-P contact lead to large fold changes in transcription (Figure 3J), around the experimentally observed range (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through stochastic simulations shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "661f4a8b-ed13-4739-8a34-24000f764603",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C29",
+      "claim": "Two promoters differing by a factor of 2 in condensate dissolution or tag removal rate can respond differently to the same change in E-P interaction frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "For both versions of the model, Promoter 1 exhibited a large (greater than twofold) increase in transcription, yet Promoter 2 remained almost unaffected in response to the twofold perturbation of the E-P interaction frequency (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "e390ecc9-8b47-46e3-a3c4-0eb74a998224",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C30",
+      "claim": "The apparent specificity of E-P interactions may be an illusion resulting from different tipping points among promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations illustrate that the apparent specificity ('lock and key') may be an illusion resulting from different tipping points among promoters, which arise from regulating accumulation/depletion of TF condensates or promoter-associated PTMs (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "a44e1738-4143-470c-ab03-b1ecbf9b9ed2",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C31",
+      "claim": "Both the condensate and PTM model versions readily exhibit hysteresis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, in addition to exhibiting hypersensitivity, both the condensate and PTM model versions readily exhibited hysteresis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 5C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "0800142b-6fd8-4b6f-a11a-cbce83c2f325",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C32",
+      "claim": "The futile cycle models exhibit qualitatively distinct sensitivities of transcription rate to small changes in E-P interaction at short time scales compared to long time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the hysteresis in the system, we observed qualitatively distinct sensitivities of the average transcription rate to small changes in E-P interaction at short time scales than we saw at long time scales (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "4baa8be5-bead-4653-9c79-28dc88f68700",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C33",
+      "claim": "Both the condensate and PTM simulations exhibited a weak (less than twofold) change in transcription in most simulated cells by the early time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the condensate and the PTM simulations exhibited a weak (less than twofold) change in transcription in most of the simulated cells of the population by the early time point, even though this was sufficient for enhancer deactivation to lead most of the population to drop into the low expressing state (Figure 5F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 5F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "af7c2dd7-a99b-46f6-a869-ced63cad9ca1",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C34",
+      "claim": "The odds ratios for observing transcription given E-P contact in the simulations were statistically greater than 1, but only by a small margin of 0-30%.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the different regimes of E-P contact frequency, the odds ratios were statistically greater than 1, but only by a small margin of 0\u201330%, paralleling our recent empirical observation (Mateo et al., 2019; Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 6B, C and comparison with experimental data in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "4b9942da-6e1b-46d6-a70c-c839e8b1ba8a",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C35",
+      "claim": "Contact-dependent mechanisms of E-P regulation can be consistent with empirical data in which many transcribing cells lack contacts and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations demonstrate that contact-dependent mechanisms of E-P regulation can be still consistent with empirical data in which many transcribing cells lack contacts and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "e86a405d-80f5-4c9b-8960-795d372b6489",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C36",
+      "claim": "For a moderate number of simulated bursts (~500), no detectable increase in E-P proximity was found at any time scales relative to transcription bursts.",
+      "claim_type": "EXPLICIT",
+      "source": "For a moderate number of simulated bursts (~500), we also found no detectable increase in proximity at any time scales relative to that of the burst (Figure 6F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 6F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "9f48f68f-bbb4-48f2-894a-21ca9d657dd8",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C37",
+      "claim": "Substantially increasing the number of simulated cells (~20,000) uncovered weak but statistically significant correlations between E-P contact and transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Substantially increasing the number of simulated cells (~20,000) uncovered weak but statistically significant correlations in each of these cases (Figure 6H, I and Figure 6\u2014figure supplement 1C, F), similar to the observations from the Drosophila data (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 6H, I and Figure 6\u2014figure supplement 1C, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "153be38d-33a6-4bc8-a065-54304f93a99b",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C38",
+      "claim": "Enhancers could regulate genes like Sox2 or the Bithorax genes in a purely contact-dependent manner, even without strong correlation between contact events and transcription at the single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these models show that enhancers could regulate genes like Sox2 or the Bithorax genes in a purely contact-dependent manner, even without strong correlation between contact events and transcription at the single-cell level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "07fa5f11-8813-4566-8561-fe218aed2163",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C39",
+      "claim": "The futile cycle model provides an explanation for why TAD boundaries can be weak and yet be major regulators of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "These include (1) why TAD boundaries can be weak and why insulators only mildly affect contact frequency and yet be major regulators of transcription",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of their modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "813c888e-578c-45d9-ad04-a707c5cf4752",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C40",
+      "claim": "The futile cycle model explains why many genes thought to be responsive to distal enhancers are insensitive to some structural changes.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) why many genes thought to be responsive to distal enhancers are insensitive to some structural changes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of their modeling results shown in Figure 4.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "cabf56b1-7fe5-43c9-81f3-af097faa4e83",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C41",
+      "claim": "The futile cycle model explains why global disruption of structure and acute disruption of structure have been reported to have distinct effects on transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) why global disruption of structure and acute disruption of structure have been reported to have distinct effects on transcription",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of their modeling results shown in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "9ec6500f-07c9-4585-9964-f56316b2eb8b",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C42",
+      "claim": "The futile cycle model explains why physical distance between known distal enhancers and their cognate gene does not show obvious correlation with transcriptional state in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) why physical distance between known distal enhancers and their cognate gene does not show obvious correlation with transcriptional state in single cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of their modeling results shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "7a020523-5d8d-475b-ab86-9476a8a21dc4",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C43",
+      "claim": "A futile cycle promoter exhibits not just hypersensitive response to contact interactions, but also substantial regimes of sublinear or insensitive response.",
+      "claim_type": "EXPLICIT",
+      "source": "A futile cycle promoter exhibits not just hypersensitive response to contact interactions, but also substantial regimes of sublinear or insensitive response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulations shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "14af26c2-35c2-402b-bdb3-2d9f1c7cfaac",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C44",
+      "claim": "Promoter-specific differences in the intrinsic addition or removal of tags can render one promoter unresponsive to an enhancer that activates a second promoter, even though the two experience similar absolute interaction frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Promoter-specific differences in the intrinsic addition or removal of tags (or the recruitment of GTFs to a promoter condensate) can render one promoter unresponsive to an enhancer that activates a second promoter, even though the two experience similar absolute interaction frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "360835b3-d4fc-48f7-82e0-8870d972e055",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C45",
+      "claim": "Transgene assays indicate most regulatory elements will promiscuously activate most promoters if placed close enough.",
+      "claim_type": "EXPLICIT",
+      "source": "This is notable since transgene assays indicate most regulatory elements will promiscuously activate most promoters if placed close enough (Arnold et al., 2013; Furlong and Levine, 2018; Kvon, 2015; Kvon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to transgene assay studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "40d2a2f9-e52e-433c-b947-aecc156cce4c",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C46",
+      "claim": "Decreasing E-P contact frequency by increasing E-P distance within a TAD produced a sharp drop in expression in Drosophila enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an experiment has recently been published with Drosophila enhancers, and results are consistent with the model prediction\u2014decreasing E-P contact frequency by increasing E-P distance within a TAD produced a sharp drop in expression (Yokoshi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "aa23e133-0560-45fa-a0ce-832f5635e64e",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C47",
+      "claim": "Manipulations of the Sox9 locus that progressively increased contact frequency between Sox9 enhancers and the adjacent Kcnj2 gene exhibited a nonlinear response.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, manipulations of the Sox9 locus, which progressively increased the contact frequency between Sox9 enhancers and the adjacent Kcnj2 gene by deleting first the TAD border between them and then further shortening the distance, also exhibited just such a nonlinear response (Despang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "9609a5fc-802c-45ae-ae9f-44281a40a5af",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C48",
+      "claim": "Systematic variation of the distance between the Sox2 promoter and one of its enhancers reveals a strikingly hypersensitive dependence of transcription on E-P contact frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, systematic variation of the distance between the Sox2 promoter and one of its enhancers, both inserted into an ectopic site, reveals a strikingly hypersensitive dependence of transcription on E-P contact frequency (Zuin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "f25449f9-86c9-425c-84d6-a133c34c83c4",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C49",
+      "claim": "Transcription was assayed only hours after contact changes in the cohesin degron experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription was assayed only hours after the contact changes in the degron experiment, which may explain why little change was detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation based on the timing of the experiments.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "e88069ce-e92e-41af-b73b-38c536ea8b66",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C50",
+      "claim": "Experiments that genetically deleted border elements assayed transcription days and many cell generations later.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, experiments that genetically deleted border elements assayed transcription days and many cell generations later, at which point some promoters saw major changes in expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation based on the timing of the experiments.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "59185250-f12d-4c78-9e7e-8ab7a3b81e01",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C51",
+      "claim": "Transcriptional assays performed at longer intervals after first detection of E-P contact disruption exhibit greater transcriptional changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, by and large, transcriptional assays performed at longer intervals after first detection of E-P contact disruption exhibit greater transcriptional changes, consistent with the explanation suggested by these simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation based on comparison of different experimental studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "91a5eb9f-0f85-4993-b83f-65d3f60afcef",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C52",
+      "claim": "Studies reporting condensates of GTFs such as Med1, PolII, and Brd4 indicate a stability that generally exceeds the imaging time.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, studies reporting condensates of GTFs such as Med1, PolII, and Brd4 indicate a stability that generally exceeds the imaging time (Chong et al., 2018; Cho et al., 2018; Sabari et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "789011a2-bdc7-441b-9b2f-5ff0bf271432",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C53",
+      "claim": "It has been widely expected that active promoters should colocalize with their active enhancers, based largely on bulk population assays.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been widely expected that active promoters should colocalize with their active enhancers, based largely on bulk population assays such 3C and H3K27ac Hi-ChIP (Bartman et al., 2016; Deng et al., 2012; Kagey et al., 2010; Mumbach et al., 2017, Mumbach et al., 2016; Rao et al., 2014; Williamson et al., 2016); for review see Furlong and Levine, 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies and a review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "37658db8-abf8-4d21-854c-b6c0063d2105",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C54",
+      "claim": "Recent single-cell measurements found that cells with close E-P proximity were only slightly more likely to exhibit nascent transcription than those lacking contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, recent single-cell measurements found that cells with close E-P proximity were only slightly more likely to exhibit nascent transcription than those lacking contact (Finn and Misteli, 2019b; Mateo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to single-cell measurement studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "72a1c221-ce55-426a-bf6e-abad93536d87",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C55",
+      "claim": "Live-cell tagging of chromatin proximal to the enhancer and promoter of Sox2 coupled with live-cell measurements of nascent RNA transcription uncovered no significant correlation between E-P proximity and transcription activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent live-cell imaging experiments suggest otherwise: live-cell tagging of chromatin proximal to the enhancer and promoter of Sox2 coupled with live-cell measurements of nascent RNA transcription uncovered no significant correlation between E-P proximity and transcription activity (Alexander et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a live-cell imaging study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "3e2e6f1b-7baa-4dfb-be01-52e198c454b5",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C56",
+      "claim": "The futile cycle model demonstrates that it is possible for transcription to be regulated by E-P contact and yet show little temporal correlation, even in live, single-cell time-lapse data.",
+      "claim_type": "EXPLICIT",
+      "source": "The futile cycle model demonstrates that it is possible for transcription to be regulated by E-P contact and yet show little temporal correlation, even in live, single-cell time-lapse data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulations shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "e65fd9c7-2205-4fc6-9d03-66e0b9e04bb6",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C57",
+      "claim": "Individual E-P contact events have little impact on promoter state, contributing to only marginally more promoter tags or larger condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because individual E-P contact events have little impact on promoter state, contributing to only marginally more promoter tags or larger condensates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model structure and simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "73e56194-a2cb-4393-822a-9b15475cd682",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C58",
+      "claim": "With sufficient observations, a weak correlation between E-P contact and transcription should be detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "This explanation can be directly tested with larger data sets\u2014with sufficient observations, a weak correlation should be detectable (as seen in the fixed cell data), since cells experiencing a higher frequency of contact are more likely to have a high level of tag and thus more likely to transcribe, even though it is not a one-to-one dependency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the simulation results shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "64423279-bbcf-41a0-b7b5-6bd9b0ae00f3",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C59",
+      "claim": "It is equally plausible that futile cycles of repressive condensates or tags at the promoter account for hypersensitivity of some promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is equally plausible that futile cycles of repressive condensates or tags at the promoter account for hypersensitivity of some promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors about alternative implementations of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "99bc757c-4538-49ce-a48e-d5ec5069517b",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "claim_id": "C60",
+      "claim": "Through accumulation of local tags or GTFs in a condensate, the promoter is able to integrate its history of interaction with one or more regulatory elements and respond in striking nonlinear ways to changes in these signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, through accumulation of local tags or GTFs in a condensate, the promoter is able to integrate its history of interaction with one or more regulatory elements and respond in striking nonlinear ways to changes in these signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of their modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "905e1af5-69c6-4f67-a664-8f34a581e6c7",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TADs are genomic domains with higher intra-domain than inter-domain 3D proximity, detectable by multiple techniques, and represent a statistical property emerging from dynamic conformational states rather than static structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C8, C9, and C10 establish well-supported background knowledge about TADs based on extensive prior literature. These are established findings in the field with multiple independent experimental validations cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "c0b95b9e-85d8-4973-bffa-0a02ad3fbfb1",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TAD border deletion at the Ubx/abd-A locus causes only 1-2.5-fold increase in E-P contact frequency but results in 5-fold increase in gene expression, demonstrating hypersensitive transcriptional response to small structural changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C17-C21 present quantitative analysis of published ORCA data (Mateo et al., 2019) showing the disconnect between modest contact frequency changes and large transcriptional effects. The analysis includes both population-level and single-cell data, ruling out technical artifacts. The quantification is clearly presented in Figure 1 with appropriate statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "58e65e4d-ed19-45b6-b4cf-c18615ddedfd",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TAD boundaries correlate with gene expression patterns and their disruption by cis-mutation causes disease-associated expression changes, yet global TAD disruption by cohesin depletion causes minimal transcriptional changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 accurately summarize prior experimental findings from multiple cited studies. This establishes the paradox motivating the authors' modeling work. The claims are well-supported by the cited literature, though the authors are reporting others' findings rather than generating new data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "9e6d3ded-83e4-4c65-abd2-952cc326374d",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Enhancers act on promoters in cis requiring physical proximity, yet recent single-cell and live-cell measurements show little correlation between E-P proximity and transcription activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C16, C53-C55 accurately describe another key paradox from recent literature. The claims are well-supported by multiple cited experimental studies using different methodologies (fixed-cell and live-cell imaging). This establishes a second major motivation for the modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "f491c7cb-9ec3-4d89-9b48-122b10541f59",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Existing models fail to explain the hypersensitive response of gene expression to small changes in contact frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is supported by the authors' analysis of existing literature and the quantitative disconnect demonstrated in claims C3-C4 and C17-C21. This motivates the need for new theoretical frameworks.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "8791efe4-b7c5-42ed-841a-577be4ab7791",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A two-state enhancer model exhibits only sublinear responses to TF concentration, while a three-state model with two binding sites can be hypersensitive when koff2/kon2 < koff1/kon1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 present mathematical analysis of simple enhancer models shown in Figure 2. The derivations follow standard chemical master equation approaches and the conditions for hypersensitivity are correctly identified. The mathematical reasoning is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "584e6eac-7248-4659-8910-8c2fbf140488",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The enhancer cooperativity model is rejected because observed contact frequency changes upon TAD boundary perturbation are insufficient to explain transcriptional changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is supported by comparison of the cooperativity model predictions with the experimental data presented in Figure 1. The authors correctly identify that the magnitude of cooperative contact changes is too small to account for the observed transcriptional effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "7679f147-82e4-461e-80e1-a308967002bb",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Futile cycle models based on either GTF condensates or PTM accumulation at promoters can achieve hypersensitive transcriptional responses to small changes in E-P contact frequency, with hypersensitivity requiring cluster/tag size greater than 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C25-C28 present the core theoretical contribution. The models are mathematically well-defined (Figures 3B-C, 3H-I), simulations demonstrate hypersensitivity (Figures 3D, 3J), and parameter sweeps identify conditions for hypersensitivity (Figure 3E-G). The models are grounded in known biochemical mechanisms with experimental support cited (C27). The mathematical framework is rigorous and the simulations are reproducible with provided code.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "2055bce8-837d-4f71-a777-f655eb5a4ec8",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Promoters with different intrinsic properties (condensate dissolution or tag removal rates) can respond differently to the same E-P contact change, creating apparent E-P specificity through different tipping points rather than biochemical lock-and-key mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 and C43-C44 demonstrate an important prediction of the futile cycle models through simulations (Figure 4). The models show how promoter-intrinsic parameters can create differential responses to identical structural perturbations, offering a mechanistic explanation for observed E-P specificity without requiring specific biochemical recognition. The logic is sound and simulations support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "bd5cdf5a-9ef5-4165-ad03-24ca05461d90",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Futile cycle models exhibit hysteresis, with qualitatively different transcriptional sensitivities at short versus long time scales, showing weak changes at early time points despite sufficient perturbation to eventually drive state transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 demonstrate hysteresis in both model versions through simulations (Figures 5C-G). The time-dependent behavior is clearly shown with appropriate parameter choices. The mathematical basis for hysteresis in futile cycle systems is well-established, and the simulations correctly demonstrate this property.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "e92a3fdc-cc84-458c-946e-00a4129784d2",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The futile cycle models show weak correlation between E-P contact and transcription at the single-cell level (odds ratios 1.0-1.3), matching experimental observations, with correlation becoming detectable only with large sample sizes (~20,000 cells), demonstrating that contact-dependent regulation need not produce strong single-cell correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 and C56-C58 address the third paradox through simulations (Figure 6). The models correctly predict weak odds ratios matching experimental data (C34, Figure 6D), show no detectable temporal correlation with moderate sample sizes (C36, Figure 6F-G), and reveal weak but significant correlations with large samples (C37, Figure 6H-I). The mechanistic explanation (C57) follows logically from the model structure. This provides a compelling resolution to the apparent contradiction between contact-dependent regulation and lack of single-cell correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "899c3f18-b7f2-4b46-81b4-74dff7c00e67",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The futile cycle model provides unified explanations for four key observations: weak TAD boundaries having major regulatory effects, gene insensitivity to some structural changes, differential effects of global versus local disruption, and lack of single-cell E-P distance-transcription correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 synthesize the implications of the modeling results for resolving the paradoxes established earlier. Each explanation follows logically from the demonstrated properties of the futile cycle models (hypersensitivity, differential tipping points, hysteresis, and weak single-cell correlation). The claims represent valid interpretations of the modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "049d9345-9f11-423a-a3ae-e5b56625f039",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Recent experimental studies show nonlinear/hypersensitive transcriptional responses to E-P distance variation, consistent with futile cycle model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 cite recent experimental studies that support the model predictions. The cited work (Yokoshi et al., 2020; Despang et al., 2019; Zuin et al., 2021) provides independent experimental validation of hypersensitive responses to E-P contact frequency changes. The authors accurately represent these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "fd14f0e5-1c36-4176-b0c6-4e161c5136eb",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The timing difference between cohesin degron experiments (hours) and genetic deletion experiments (days/generations) may explain their different transcriptional outcomes, with longer intervals showing greater changes consistent with hysteresis predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C51 propose an explanation for the differential effects of global versus local TAD disruption based on hysteresis and timing. While the model demonstrates hysteresis (C31-C33) and the timing difference is factually correct, the explanation remains somewhat speculative. The authors acknowledge this is their interpretation and note complications from different cellular backgrounds. Additional experimental validation would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "cdf75ecb-43ce-4488-8f07-053a2ee4d9e1",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "GTF condensates (Med1, PolII, Brd4) show stability exceeding imaging time in reported studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 accurately reports findings from cited experimental studies on condensate stability. This provides some support for the timescales assumed in the condensate model version, though the authors appropriately note that condensate existence and detection remain controversial.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "77cbe39e-56e8-496c-a489-86261fa6f431",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Futile cycles of repressive condensates or tags could also account for hypersensitivity at some promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is a logical extension of the model framework. The mathematical structure would support repressive mechanisms with transcription inversely proportional to tag/condensate levels. This is appropriately presented as a plausible alternative rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    },
+    {
+      "id": "e11dcc0c-cb92-48f1-bb2f-ad7aa4338ea5",
+      "content_id": "e32a695c-28de-477b-aeef-2318c49d2d77",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Through accumulation of tags or GTFs in condensates, promoters integrate their history of regulatory element interactions and respond nonlinearly to structural changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 synthesizes the key conceptual insight from the modeling work. This interpretation follows directly from the demonstrated properties of the futile cycle models and represents the central mechanistic proposal of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:31.697451Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "849a6700-b93b-4500-b975-62b580a5a735",
+      "result_id": "905e1af5-69c6-4f67-a664-8f34a581e6c7"
+    },
+    {
+      "claim_id": "737ca496-a56d-4bc7-a28b-5056a13410dc",
+      "result_id": "905e1af5-69c6-4f67-a664-8f34a581e6c7"
+    },
+    {
+      "claim_id": "b77306a8-2370-4248-9a8f-8c9003d70560",
+      "result_id": "905e1af5-69c6-4f67-a664-8f34a581e6c7"
+    },
+    {
+      "claim_id": "03a16f21-cc43-4a06-9e92-ee50ef4d498d",
+      "result_id": "905e1af5-69c6-4f67-a664-8f34a581e6c7"
+    },
+    {
+      "claim_id": "0d0025b2-8e07-44ef-908e-57577432f081",
+      "result_id": "905e1af5-69c6-4f67-a664-8f34a581e6c7"
+    },
+    {
+      "claim_id": "169b92c9-3dff-4dd0-b4ff-57b3f7720b86",
+      "result_id": "c0b95b9e-85d8-4973-bffa-0a02ad3fbfb1"
+    },
+    {
+      "claim_id": "fa57cc45-fcc4-4e7d-9f02-e68f5744ee8e",
+      "result_id": "c0b95b9e-85d8-4973-bffa-0a02ad3fbfb1"
+    },
+    {
+      "claim_id": "e196c746-ec8b-4a26-9b2a-c814810eb1a8",
+      "result_id": "c0b95b9e-85d8-4973-bffa-0a02ad3fbfb1"
+    },
+    {
+      "claim_id": "bb6da52a-e9f4-40aa-b9db-2da55c6608af",
+      "result_id": "c0b95b9e-85d8-4973-bffa-0a02ad3fbfb1"
+    },
+    {
+      "claim_id": "aefc8ccf-1881-43bd-ac65-bd93874e8d16",
+      "result_id": "c0b95b9e-85d8-4973-bffa-0a02ad3fbfb1"
+    },
+    {
+      "claim_id": "1361b553-4878-4a35-9981-1741226315df",
+      "result_id": "c0b95b9e-85d8-4973-bffa-0a02ad3fbfb1"
+    },
+    {
+      "claim_id": "253031d3-93ff-4e4d-8e24-2b60a5b041ed",
+      "result_id": "c0b95b9e-85d8-4973-bffa-0a02ad3fbfb1"
+    },
+    {
+      "claim_id": "54e6255b-9f8d-435e-a640-73b0b2643f2b",
+      "result_id": "58e65e4d-ed19-45b6-b4cf-c18615ddedfd"
+    },
+    {
+      "claim_id": "ac2e5ea9-8452-4108-846a-f00b5e8a79f1",
+      "result_id": "58e65e4d-ed19-45b6-b4cf-c18615ddedfd"
+    },
+    {
+      "claim_id": "0dbc5d77-eb75-437d-80ce-55e2e8f3d174",
+      "result_id": "58e65e4d-ed19-45b6-b4cf-c18615ddedfd"
+    },
+    {
+      "claim_id": "b437eb52-4438-4faf-9b86-aedfc3d0297c",
+      "result_id": "58e65e4d-ed19-45b6-b4cf-c18615ddedfd"
+    },
+    {
+      "claim_id": "ab31f6a4-49db-406b-bb29-0f4fa399e6c8",
+      "result_id": "9e6d3ded-83e4-4c65-abd2-952cc326374d"
+    },
+    {
+      "claim_id": "6393e8a5-4df2-4a4f-ab54-ee45a3ab04e5",
+      "result_id": "9e6d3ded-83e4-4c65-abd2-952cc326374d"
+    },
+    {
+      "claim_id": "789011a2-bdc7-441b-9b2f-5ff0bf271432",
+      "result_id": "9e6d3ded-83e4-4c65-abd2-952cc326374d"
+    },
+    {
+      "claim_id": "37658db8-abf8-4d21-854c-b6c0063d2105",
+      "result_id": "9e6d3ded-83e4-4c65-abd2-952cc326374d"
+    },
+    {
+      "claim_id": "72a1c221-ce55-426a-bf6e-abad93536d87",
+      "result_id": "9e6d3ded-83e4-4c65-abd2-952cc326374d"
+    },
+    {
+      "claim_id": "310a51b8-de09-4d86-b6a1-7c8b38fd1343",
+      "result_id": "f491c7cb-9ec3-4d89-9b48-122b10541f59"
+    },
+    {
+      "claim_id": "e6cb68d7-7ade-4bd4-8c6d-0ae8a8bbd884",
+      "result_id": "8791efe4-b7c5-42ed-841a-577be4ab7791"
+    },
+    {
+      "claim_id": "f85a458d-e5c7-470d-bc6e-0cb2691d9f65",
+      "result_id": "8791efe4-b7c5-42ed-841a-577be4ab7791"
+    },
+    {
+      "claim_id": "2bfb5328-aab8-48bb-bb05-bff89faee6a2",
+      "result_id": "584e6eac-7248-4659-8910-8c2fbf140488"
+    },
+    {
+      "claim_id": "8014c5b4-489e-4a93-b024-c742f1e7e791",
+      "result_id": "7679f147-82e4-461e-80e1-a308967002bb"
+    },
+    {
+      "claim_id": "03d73cb3-cd57-48b2-bb66-465d8990a0b3",
+      "result_id": "7679f147-82e4-461e-80e1-a308967002bb"
+    },
+    {
+      "claim_id": "a94c71f1-25cc-464f-b93b-8242ed82b094",
+      "result_id": "7679f147-82e4-461e-80e1-a308967002bb"
+    },
+    {
+      "claim_id": "23867e52-80ba-4d82-9a71-74d237f71a58",
+      "result_id": "7679f147-82e4-461e-80e1-a308967002bb"
+    },
+    {
+      "claim_id": "527a751e-805a-4876-a07d-91e3ceb53bf8",
+      "result_id": "7679f147-82e4-461e-80e1-a308967002bb"
+    },
+    {
+      "claim_id": "661f4a8b-ed13-4739-8a34-24000f764603",
+      "result_id": "2055bce8-837d-4f71-a777-f655eb5a4ec8"
+    },
+    {
+      "claim_id": "e390ecc9-8b47-46e3-a3c4-0eb74a998224",
+      "result_id": "2055bce8-837d-4f71-a777-f655eb5a4ec8"
+    },
+    {
+      "claim_id": "7a020523-5d8d-475b-ab86-9476a8a21dc4",
+      "result_id": "2055bce8-837d-4f71-a777-f655eb5a4ec8"
+    },
+    {
+      "claim_id": "14af26c2-35c2-402b-bdb3-2d9f1c7cfaac",
+      "result_id": "2055bce8-837d-4f71-a777-f655eb5a4ec8"
+    },
+    {
+      "claim_id": "a44e1738-4143-470c-ab03-b1ecbf9b9ed2",
+      "result_id": "bd5cdf5a-9ef5-4165-ad03-24ca05461d90"
+    },
+    {
+      "claim_id": "0800142b-6fd8-4b6f-a11a-cbce83c2f325",
+      "result_id": "bd5cdf5a-9ef5-4165-ad03-24ca05461d90"
+    },
+    {
+      "claim_id": "4baa8be5-bead-4653-9c79-28dc88f68700",
+      "result_id": "bd5cdf5a-9ef5-4165-ad03-24ca05461d90"
+    },
+    {
+      "claim_id": "af7c2dd7-a99b-46f6-a869-ced63cad9ca1",
+      "result_id": "e92a3fdc-cc84-458c-946e-00a4129784d2"
+    },
+    {
+      "claim_id": "4b9942da-6e1b-46d6-a70c-c839e8b1ba8a",
+      "result_id": "e92a3fdc-cc84-458c-946e-00a4129784d2"
+    },
+    {
+      "claim_id": "e86a405d-80f5-4c9b-8960-795d372b6489",
+      "result_id": "e92a3fdc-cc84-458c-946e-00a4129784d2"
+    },
+    {
+      "claim_id": "9f48f68f-bbb4-48f2-894a-21ca9d657dd8",
+      "result_id": "e92a3fdc-cc84-458c-946e-00a4129784d2"
+    },
+    {
+      "claim_id": "153be38d-33a6-4bc8-a065-54304f93a99b",
+      "result_id": "e92a3fdc-cc84-458c-946e-00a4129784d2"
+    },
+    {
+      "claim_id": "3e2e6f1b-7baa-4dfb-be01-52e198c454b5",
+      "result_id": "e92a3fdc-cc84-458c-946e-00a4129784d2"
+    },
+    {
+      "claim_id": "e65fd9c7-2205-4fc6-9d03-66e0b9e04bb6",
+      "result_id": "e92a3fdc-cc84-458c-946e-00a4129784d2"
+    },
+    {
+      "claim_id": "73e56194-a2cb-4393-822a-9b15475cd682",
+      "result_id": "e92a3fdc-cc84-458c-946e-00a4129784d2"
+    },
+    {
+      "claim_id": "07fa5f11-8813-4566-8561-fe218aed2163",
+      "result_id": "899c3f18-b7f2-4b46-81b4-74dff7c00e67"
+    },
+    {
+      "claim_id": "813c888e-578c-45d9-ad04-a707c5cf4752",
+      "result_id": "899c3f18-b7f2-4b46-81b4-74dff7c00e67"
+    },
+    {
+      "claim_id": "cabf56b1-7fe5-43c9-81f3-af097faa4e83",
+      "result_id": "899c3f18-b7f2-4b46-81b4-74dff7c00e67"
+    },
+    {
+      "claim_id": "9ec6500f-07c9-4585-9964-f56316b2eb8b",
+      "result_id": "899c3f18-b7f2-4b46-81b4-74dff7c00e67"
+    },
+    {
+      "claim_id": "360835b3-d4fc-48f7-82e0-8870d972e055",
+      "result_id": "049d9345-9f11-423a-a3ae-e5b56625f039"
+    },
+    {
+      "claim_id": "40d2a2f9-e52e-433c-b947-aecc156cce4c",
+      "result_id": "049d9345-9f11-423a-a3ae-e5b56625f039"
+    },
+    {
+      "claim_id": "aa23e133-0560-45fa-a0ce-832f5635e64e",
+      "result_id": "049d9345-9f11-423a-a3ae-e5b56625f039"
+    },
+    {
+      "claim_id": "9609a5fc-802c-45ae-ae9f-44281a40a5af",
+      "result_id": "049d9345-9f11-423a-a3ae-e5b56625f039"
+    },
+    {
+      "claim_id": "f25449f9-86c9-425c-84d6-a133c34c83c4",
+      "result_id": "fd14f0e5-1c36-4176-b0c6-4e161c5136eb"
+    },
+    {
+      "claim_id": "e88069ce-e92e-41af-b73b-38c536ea8b66",
+      "result_id": "fd14f0e5-1c36-4176-b0c6-4e161c5136eb"
+    },
+    {
+      "claim_id": "59185250-f12d-4c78-9e7e-8ab7a3b81e01",
+      "result_id": "fd14f0e5-1c36-4176-b0c6-4e161c5136eb"
+    },
+    {
+      "claim_id": "91a5eb9f-0f85-4993-b83f-65d3f60afcef",
+      "result_id": "cdf75ecb-43ce-4488-8f07-053a2ee4d9e1"
+    },
+    {
+      "claim_id": "64423279-bbcf-41a0-b7b5-6bd9b0ae00f3",
+      "result_id": "77cbe39e-56e8-496c-a489-86261fa6f431"
+    },
+    {
+      "claim_id": "99bc757c-4538-49ce-a48e-d5ec5069517b",
+      "result_id": "e11dcc0c-cb92-48f1-bb2f-ad7aa4338ea5"
+    }
+  ],
+  "comparisons": []
+}

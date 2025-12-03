@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "BLBP (Fabp7) is specifically enriched in satellite glia of adult mouse sympathetic ganglia, and Fabp7-CreER2 mice enable satellite glia-specific genetic manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 demonstrate BLBP enrichment via single-cell RNA-seq (140-fold), developmental expression patterns, and reporter mouse specificity with multiple cell-type markers. The convergent evidence from transcriptomics, immunostaining, and genetic reporters strongly supports satellite glia specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Tamoxifen-induced DTA expression in BLBP:iDTA mice causes progressive satellite glia apoptosis and loss without compensatory proliferation or macrophage infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C13 provide temporal analysis showing glial apoptosis at 5 dpi (C4-C6) and substantial loss by 14 dpi (C7-C10), with appropriate controls for inflammation and proliferation (C11-C13). Multiple quantification methods (TUNEL, Sox2, binary imaging, qPCR) converge on consistent findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Satellite glia depletion causes downregulation of noradrenergic biosynthetic enzymes (TH and DBH), neuronal soma atrophy, and impaired mTOR signaling in sympathetic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 demonstrate dramatic reductions in TH (88%) and DBH (99%) transcripts, reduced soma size (median 162 vs 118 \u03bcm\u00b2), and decreased mTOR effectors (p-S6, p-4-EBP1). The mechanistic link between mTOR and soma size is well-established, supporting the inference in C19.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Satellite glia depletion leads to delayed neuronal loss (24% by 14 dpi) while maintaining axonal innervation and differential TH regulation in soma versus axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 show no neuronal loss at 5 dpi but significant loss by 14 dpi, with preserved axonal innervation and TH levels in axons despite somatic downregulation. The temporal progression and compartment-specific effects are well-documented, though the mechanism for differential TH regulation (C23) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "BLBP:iDTA mice exhibit increased basal pupil size and elevated heart rate with intact parasympathetic function, indicating elevated sympathetic tone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 demonstrate increased pupil size and heart rate with normal pupil constriction responses to light, supported by appropriate tamoxifen controls. The inference of elevated sympathetic tone (C28) is well-supported by the pattern of autonomic measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C89",
+      "C90"
+    ],
+    "result": "6-OHDA-mediated ablation of peripheral sympathetic nerves rescues the elevated heart rate in BLBP:iDTA mice, confirming peripheral sympathetic neuron dysfunction as the primary cause.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C89-C90 provide a critical rescue experiment demonstrating that selective sympathetic nerve ablation prevents cardiac phenotypes. The specificity of 6-OHDA for sympathetic nerves and peripheral restriction is well-established in cited literature, making this a strong mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Satellite glia depletion results in elevated circulating norepinephrine, compensatory downregulation of cardiac adrenergic receptors, and increased neuronal c-Fos expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 demonstrate 1.6-fold increased NE, decreased cardiac adrenergic receptor expression, and 8-fold increased c-Fos+ neurons. The pattern is internally consistent with elevated sympathetic activity and compensatory receptor downregulation, though the paradox of increased NE despite reduced biosynthetic enzymes requires mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Kir4.1 is enriched in satellite glia and can be specifically deleted using Fabp7-CreER2 mice without affecting glial numbers or morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 establish Kir4.1 expression (3-fold enrichment), successful deletion (76% reduction), and preservation of glial numbers and morphology. Multiple validation methods (RNA-seq, qPCR, smFISH, immunostaining) provide robust evidence for the conditional knockout model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Satellite glia-specific Kir4.1 deletion increases neuronal c-Fos expression and downregulates noradrenergic enzymes, similar to satellite glia ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 show increased c-Fos+ cells (primarily neurons) and reduced TH/DBH expression in Kir4.1 cKO mice, recapitulating key cellular phenotypes from BLBP:iDTA mice. This convergence from two independent genetic models strengthens the mechanistic role of Kir4.1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Kir4.1 deletion in satellite glia causes neuronal soma atrophy, impaired mTOR signaling, increased neuronal apoptosis (8-fold), and 22% neuronal loss while preserving axonal innervation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 demonstrate that Kir4.1 deletion recapitulates the cellular phenotypes of satellite glia ablation, including reduced soma size, decreased mTOR effectors, and neuronal loss. The specificity for neuronal (not glial) apoptosis (C53-C54) is well-documented with appropriate markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Kir4.1 deletion recapitulates cellular but not behavioral phenotypes of satellite glia ablation, indicating additional glia-dependent mechanisms regulate autonomic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 show that despite cellular similarities, Kir4.1 cKO mice lack the autonomic behavioral defects (pupil size, heart rate, circulating NE) seen in BLBP:iDTA mice. This important negative result is well-controlled and suggests Kir4.1-independent mechanisms contribute to circuit-level regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Satellite glia modulate multiple aspects of sympathetic neuron function and restrain neuronal activity to regulate autonomic output in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 synthesize the major findings into an overarching conclusion about satellite glia function. The evidence from genetic ablation, cellular phenotypes, and behavioral measurements provides strong support for this integrative conclusion about neuron-glia functional units.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Satellite glia likely inhibit neuronal activity through Kir4.1-dependent K+ buffering, similar to astrocyte functions in the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 propose K+ homeostasis as a key mechanism based on increased c-Fos in both ablation and Kir4.1 deletion models, supported by extensive literature on Kir4.1 function and spatial K+ buffering. The mechanistic inference is well-grounded in established glial physiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Additional mechanisms beyond K+ buffering, including potential BDNF signaling, cholinergic modulation, and ATP metabolism, may contribute to satellite glia regulation of neuronal excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C87 propose multiple alternative or complementary mechanisms, but most are speculative (C77, C79, C82, C84) or based solely on literature (C78, C83, C85-C86). While C87 provides RNA-seq evidence for ATP-related transcripts, functional validation is lacking. These hypotheses require experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The autonomic phenotypes in BLBP:iDTA mice arise from peripheral sympathetic neurons rather than CNS astrocyte dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 address the critical specificity concern about BLBP expression in CNS glia. The 6-OHDA rescue (C89), normal parasympathetic function (C91), 45-fold enrichment in satellite glia vs astrocytes (C93), and absence of CNS phenotypes (C94-C95) provide convergent evidence for peripheral localization, though complete exclusion of CNS contribution is difficult.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Satellite glia may exert context-dependent excitatory and inhibitory effects on neurons, with reactive changes under pathological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C100 discuss potential dual functions of satellite glia based on literature, but the comparison to chemogenetic activation (C97) involves different experimental paradigms. The speculation about context-dependent effects (C98) and reactive changes (C99-C100) is reasonable but requires direct experimental validation in the current model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Satellite glia provide metabolic and trophic support for adult sympathetic neuron survival primarily through K+ homeostasis, independent of NGF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 establish that ~25% of adult sympathetic neurons require satellite glia for survival, with similar phenotypes in both genetic models suggesting K+-dependent mechanisms. The comparison to NGF independence (C102-C103) and astrocyte-specific Kir4.1 deletion (C105) provides important context, though the exact trophic mechanisms remain undefined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Satellite glia depletion causes compartment-specific effects with downregulated TH in soma but maintained axonal TH, potentially through enhanced local mRNA trafficking and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C110 document an intriguing soma-axon differential in TH regulation. While the observation is well-supported (C106, C108), the proposed mechanism of enhanced Th mRNA trafficking (C110) is speculative. The paradox of reduced somatic TH but increased circulating NE (C106) requires mechanistic resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "This study highlights therapeutic potential for targeting the neuron-satellite glia unit in autonomic-related diseases characterized by sympathetic hyperactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112 propose translational implications based on the association between sympathetic hyperactivity and various pathologies (C111). While the basic science findings are robust, the therapeutic potential (C112) is speculative and would require validation in disease models and assessment of whether satellite glia dysfunction contributes to these conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Satellite glia are specialized glial cells that form discrete structural and functional units with neurons in sympathetic ganglia, sharing features with CNS astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 provide established background on satellite glia architecture and function, well-supported by extensive literature citations. These contextual claims establish the rationale for the study and are appropriately referenced to prior work.",
+    "result_type": "MINOR"
+  }
+]

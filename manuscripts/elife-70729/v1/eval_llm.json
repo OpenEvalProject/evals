@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C24",
+      "C36",
+      "C37"
+    ],
+    "result": "AA women exhibit significantly higher TNBC incidence, lower survival rates, and more advanced disease at diagnosis compared to WA women. SEER and TCGA database analyses show AA women have twice the TNBC incidence (38/100,000 vs 19/100,000), lower 5-year survival (14% vs 36%), higher prevalence of grade 3 tumors (83.1% vs 77.98%), and more stage III tumors (18.75% vs 11.76%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C5, C24, C36, and C37 are supported by SEER and TCGA database analyses presented in Figure 1. The epidemiological data consistently demonstrate racial disparities in TNBC incidence, survival, and tumor characteristics. These are descriptive statistics from established databases and are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "AA-TNBC cells exhibit inherently higher growth and migration rates compared to WA-TNBC cells. AA-TNBC cells showed 2.5-4-fold growth within 96 hours versus 1.8-2.5-fold for WA-TNBC cells. Migration assays demonstrated AA-TNBC cells migrated at speeds of 2.8-3.1 \u00b5m/hr (scratch) and 1.155-1.209 \u00b5m/hr (spheroid) compared to 1.8 \u00b5m/hr and 0.42-0.644 \u00b5m/hr for WA-TNBC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C38, C39, and C40 are supported by multiple in vitro assays (MTT, trypan blue, scratch-migration, spheroid-migration) shown in Figure 1G-L. The data consistently demonstrate higher proliferation and migration in AA-TNBC cells across multiple cell lines and assay types, providing robust evidence for inherent biological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "AA-TNBC cells possess elevated stemness characteristics compared to WA-TNBC cells. AA-TNBC cells showed ~2-fold higher mammosphere formation, elevated expression of embryonic stem cell markers (NANOG, OCT4, SOX2, KLF4, c-MYC), higher CD44high/CD49fhigh populations (80.7-93.4% vs 1.6-55.4%), and enrichment of EMT/metastasis pathways by GSEA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C41-C48 are supported by multiple complementary assays including mammosphere formation (Figure 2C-D), Western blot (Figure 2F), FACS analysis (Figure 2E), immunofluorescence (Figure 2G), GSEA (Figure 2A), and RNA-seq analysis (Figure 2B, 2H). The convergent evidence from diverse methodologies strongly supports elevated stemness in AA-TNBC cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C11",
+      "C27",
+      "C49"
+    ],
+    "result": "GLI1 pathway is enriched and activated in AA-TNBC cells and tumors. RNA-sequencing meta-analysis showed enrichment of GLI1 pathway genes in AA-TNBC cells. Immunofluorescence demonstrated elevated nuclear GLI1 accumulation in AA-TNBC cells. GLI1 and GLI1-responsive genes (CCNF, FOXM1, GSK3, CDC34) showed higher expression in AA-TNBC tumors and associated with poor recurrence-free survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C11, C27, and C49 are supported by RNA-seq analysis (Figure 3A), immunofluorescence (Figure 3E-F), Western blot (Figure 3B, 3G), Kaplan-Meier survival analysis (Figure 3C), and TCGA/Affymetrix dataset analysis (Figure 3D). The multi-level evidence from genomic, protein, and clinical data consistently demonstrates GLI1 pathway enrichment in AA-TNBC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C12",
+      "C28",
+      "C50",
+      "C51"
+    ],
+    "result": "Notch1 pathway is enriched and activated in AA-TNBC cells and tumors. RNA-sequencing and GSEA showed enrichment of Notch1 pathway in AA-TNBC. Immunofluorescence revealed >4-fold higher nuclear NICD accumulation in AA-TNBC cells. Notch1-responsive genes (HEY1, HEY2, HES1, HES4, HES5, HES6) showed higher expression in AA-TNBC tumors, and high Notch1 expression associated with poor RFS (HR=1.97, p=0.0021).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C12, C28, C50, and C51 are supported by GSEA (Figure 4A), immunofluorescence (Figure 4F-G), Western blot (Figure 4D, 4H), Kaplan-Meier analysis (Figure 4C), and TCGA/Affymetrix analysis (Figure 4B, 4E). The convergent evidence from multiple methodologies and datasets strongly supports Notch1 pathway activation in AA-TNBC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C13",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "GLI1 and Notch1 exhibit positive correlation and physical interaction in AA-TNBC but negative correlation in WA-TNBC. ssGSEA analysis showed positive correlation (R=0.4845) in AA-TNBC versus negative correlation (R=-0.2220) in WA-TNBC. Co-immunoprecipitation demonstrated physical interaction between GLI1 and NICD in AA-TNBC cells. GLI1 overexpression increased NICD transactivation and Notch-responsive genes, while Notch1 overexpression increased GLI1-responsive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C10 show weak correlations (R=0.4845 and R=-0.2220) that the authors acknowledge are not strong. Claims C13, C29-C31 are supported by co-IP (Figure 5B-C), luciferase assay (Figure 5D), and Western blot (Figure 5E). While the interaction data is convincing, the correlation analysis has limited strength and would benefit from larger sample sizes to confirm the differential correlation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Combined inhibition of GLI1 and Notch1 synergistically inhibits AA-TNBC cells and enhances chemotherapy efficacy. GANT61 (20 \u00b5M) achieved 50% growth inhibition while DAPT alone did not reach IC50. DAPT+GANT61 combination showed synergistic effects (CI<1). Triple combination (DAPT+GANT61+doxorubicin) reduced IC50 10-fold, and DAPT+GANT61+carboplatin achieved IC50 at 0.25 \u00b5M versus no IC50 with 40 \u00b5M carboplatin alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, C52-C55 are supported by MTT assays (Figure 5\u2014figure supplement 1), combination index analysis using Compusyn software, clonogenicity assays (Figure 5G), and dose-response curves (Figure 5H-K). The synergy calculations and dose-reduction data provide strong evidence for therapeutic benefit of combined GLI1/Notch1 inhibition with chemotherapy in AA-TNBC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Triple-therapy (DAPT+GANT61+chemotherapy) significantly inhibits AA-TNBC tumor growth and reduces aggressive phenotypes. In vivo treatment resulted in significant tumor regression (Figure 6B). Tumor-dissociated cells from triple-therapy-treated tumors showed significantly reduced migration, invasion, mammosphere formation, and CD44+/CD24- population (87.6% vehicle vs 48.6-65.2% triple-therapy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by in vivo tumor growth curves (Figure 6B), transwell migration assays (Figure 6D), Matrigel invasion assays (Figure 6E), mammosphere formation assays (Figure 6G-H), and flow cytometry (Figure 6I). The consistent reduction across multiple functional assays using tumor-dissociated cells provides strong evidence for therapeutic efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C35",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Triple-therapy treatment diminishes stem cell phenotype in AA-TNBC tumors. Secondary tumors from triple-therapy-treated primary tumors showed reduced stem cell frequency (1 in 1,178,112 vs 1 in 70,160 for control at week 3). Tumor-dissociated cells showed reduced ALDH activity (17.7% vs 45.5% vehicle), reduced ALDH+ cells (2.5% vs 14.4% vehicle), and reduced CD44+/CD24- and CD44+/CD49f+ populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C35, C56-C58 are supported by limiting dilution assay (Figure 7D), ALDEFLOUR assay (Figure 7E), flow cytometry (Figure 7F, Figure 7\u2014figure supplement 2), and secondary tumor formation data (Figure 7B-C). The limiting dilution assay provides functional evidence of reduced tumor-initiating capacity, and the stem cell marker data corroborates this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "TNBC tumors from AA women express significantly higher levels of GLI1 and Notch1 compared to tumors from WA women. Immunohistochemical analysis of clinical TNBC tissue samples (25 AA, 46 WA) showed significantly higher GLI1 (p<0.001) and NICD (p<0.001) expression in AA-TNBC tissues using modified H-score system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C23 are supported by immunohistochemical analysis of clinical tissue samples shown in Figure 7G-I and quantified in Table 2. The use of a validated H-score system and statistical significance (p<0.001) for both markers in a reasonably sized cohort (n=71 total) provides strong clinical validation of the cell line and animal model findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "AA-TNBC tumors respond better to DAPT+GANT61 while WA-TNBC tumors respond better to chemotherapy. HCC1806 (AA-TNBC) tumors showed more effective growth inhibition with DAPT+GANT61 compared to doxorubicin+carboplatin, whereas HCC1937 and MDA-MB-231 (WA-TNBC) tumors showed enhanced growth inhibition with chemotherapy. GANT61+DAPT did not reduce growth of WA-TNBC-derived tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by in vivo tumor growth data in Figure 6\u2014figure supplement 1 and ALDH activity assays in Figure 6A and Figure 6\u2014figure supplement 2. The differential response patterns between AA-TNBC and WA-TNBC tumors to GLI1/Notch1 inhibition versus chemotherapy provide important evidence for race-specific therapeutic strategies, though additional cell lines would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C60"
+    ],
+    "result": "AA tumors show higher prevalence of TP53 mutations (42.9% vs 27.6%) and lower level of PIK3CA mutations (20.0% vs 33.9%) compared to WA tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, and C60 are factual statements about genomic differences cited from published literature. These are well-established findings in the field and are appropriately cited. The claims serve as background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Multiple studies have documented biological differences between AA-TNBC and WA-TNBC including genetic heterogeneity, gene expression variations, pathway alterations, and clinical aggressiveness, with disparities persisting after adjusting for socioeconomic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C70 are literature-based statements appropriately cited from published studies. These claims establish the scientific context and rationale for the current study. The citations appear appropriate and the statements accurately represent prior work in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "GLI1 is overexpressed in breast cancer stem cells, important for EMT and metastatic progression, associates with angiogenesis, and preferentially promotes growth of ER-negative breast cancer cells with poorer survival in TNBC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are literature-based statements appropriately cited from published studies. These claims provide established biological context for GLI1's role in TNBC and justify investigating GLI1 in the context of racial disparities. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Notch1 plays important roles in maintenance of breast cancer stem cells, EMT, and metastasis. Notch1 overexpression correlates with ALDH1, high grade, metastasis, and TNBC. Positive correlations exist between Notch1 and EMT-related genes, and Notch1 inhibition reverses EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are literature-based statements appropriately cited from published studies. These claims provide established biological context for Notch1's role in TNBC and justify investigating Notch1 in the context of racial disparities. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Recent studies have identified various molecular differences between AA-TNBC and WA-TNBC including increased self-renewal in cancer stem-like cells, higher ALDH+ populations, similar mutational profiles, differences in immune infiltration, exosomal markers, proteome profiles, and differential expression of specific proteins like Kaiso.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 are literature-based statements appropriately cited from recent published studies. These claims establish the current state of knowledge regarding molecular differences between AA-TNBC and WA-TNBC and position the current study within this context. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "GLI1 translocates to nucleus upon activation to enable transcription of GLI1-responsive genes. Notch receptor undergoes cleavage to release NICD which translocates to nucleus for transcriptional activation. Nuclear translocation of NICD is the hallmark of induced Notch signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are established mechanistic knowledge about GLI1 and Notch signaling pathways, appropriately cited. These claims provide necessary background for interpreting the nuclear localization data presented in the study. The statements represent well-established biological mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Prior studies have reported upregulation of Notch-responsive gene HES1 via sonic hedgehog in multipotent mesodermal cells, co-targeting Notch and hedgehog depletes docetaxel-resistant cells in prostate cancer, and TNBC tumors are primarily treated with chemotherapy but have poor response and recurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are literature-based statements appropriately cited. These claims provide context for the rationale of combining GLI1 and Notch1 inhibition and the need for improved TNBC therapies. The citations are appropriate and the statements accurately represent prior work.",
+    "result_type": "MINOR"
+  }
+]

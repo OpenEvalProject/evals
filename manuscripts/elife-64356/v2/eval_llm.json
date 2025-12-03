@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C27"
+    ],
+    "result": "GETMap was developed as a method to determine tissue composition of plasma DNA carrying genetic variants by comparing methylation profiles with reference tissues. Simulation analyses demonstrated high accuracy with a median of 98.3% (range 95.5\u201399.8%) across five reference tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C27 together establish the development and validation of GETMap through simulation. The high accuracy (98.3%) across multiple tissue types in simulation provides strong evidence for the method's technical feasibility. However, this represents computational validation rather than biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In pregnant women, GETMap analysis validated that plasma DNA carrying fetal-specific alleles was 100% placenta-derived, while maternal-specific DNA was predominantly (80%) from hematopoietic cells. For shared alleles, placental contribution correlated positively with fetal DNA fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C34, C67-C69 provide converging evidence from 30 pregnant women across all trimesters. The 100% placental attribution for fetal-specific DNA, absence of placental contribution to maternal-specific DNA, and positive correlation for shared alleles (C34) are internally consistent and align with prior knowledge (C31, C69). The large number of informative SNPs (median ~190,000) and CpG sites provides adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "At 72 hours post-lung transplantation, GETMap analysis revealed that donor-derived plasma DNA was predominantly from hematopoietic cells (median 78%) rather than lung tissue (median 17%), with other tissues contributing only 5%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C35-C38 present consistent quantitative findings from 11 lung transplant patients. The high sequencing depth (median 327 million reads) and large numbers of informative SNPs (median ~270,000) provide robust data. The finding explains the previously unclear mechanism of donor DNA surge post-transplantation (C13, C72-C73). However, the sample size at 72hr is limited (n=11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C74",
+      "C75"
+    ],
+    "result": "Temporal analysis of lung transplant recipients showed that lung contribution to donor-derived DNA increased over time (17% at 72hr to 66% beyond 50 weeks) while hematopoietic cell contribution decreased correspondingly (78% to 21%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C74-C75 present a clear temporal trend across five time categories with 40 total samples. The inverse relationship between lung and hematopoietic contributions is biologically plausible and internally consistent. However, the persistent 21% hematopoietic contribution at >50 weeks is acknowledged as potentially due to measurement imprecision at low donor DNA concentrations (C76) or biological persistence (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "For plasma DNA carrying recipient-specific alleles in lung transplant patients, hematopoietic cells were the key contributors across all time points (median 83-94%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 show consistent high hematopoietic contribution to recipient-specific DNA across five time categories. This serves as an internal control demonstrating that recipient DNA composition remains stable and is dominated by blood cells, as expected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C79",
+      "C80"
+    ],
+    "result": "Lung contribution to donor-derived DNA appeared higher during rejection episodes (69%) compared to remission (48%), but this difference did not reach statistical significance (p=0.09).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C46 and C79-C80 report a trend toward higher lung contribution during rejection, but the lack of statistical significance (p=0.09 and p=0.22 for donor DNA fraction) prevents definitive conclusions. The authors acknowledge this limitation and suggest larger studies are needed. The small number of rejection episodes limits statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C118",
+      "C120",
+      "C121"
+    ],
+    "result": "In two HCC patients, GETMap analysis using tumor tissue-identified mutations showed that plasma DNA carrying tumor-specific mutations was predominantly liver-derived (87-90%), with small placental contributions (10-13%). Wildtype DNA was mainly from hematopoietic cells (48-53%) and liver (23-32%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47, C49-C52 present consistent findings from two HCC patients using tumor tissue mutations. The high liver attribution for tumor DNA is biologically expected for HCC. The small placental contribution in male patients (C50, C106) is explained by methylation similarities between placenta and tumor. However, the sample size is very limited (n=2), and the placental attribution in males requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C92",
+      "C93",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "When tumor mutations were identified directly from plasma DNA sequencing (without tumor tissue), GETMap correctly identified liver as the predominant source (69-95%) of cancer-derived DNA in HCC patients, demonstrating feasibility for cancer screening applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 and C92-C93 show that GETMap can identify tissue origin even when mutations are called directly from plasma. The liver was correctly identified despite fewer mutations being detected (10,864 and 3,446 vs 30,383 and 6,996 from tissue). This is a critical proof-of-concept for clinical application. However, the validation is limited to two HCC cases, and the method's performance across different cancer types remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C94",
+      "C95",
+      "C125",
+      "C126"
+    ],
+    "result": "In a pregnant woman with lymphoma, GETMap successfully distinguished plasma DNA origins: tumor mutations were 100% lymphocyte-derived, fetal-specific alleles were 95% placenta-derived, demonstrating the method's ability to simultaneously analyze multiple DNA sources in complex clinical scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C57-C66 present a complex case study where GETMap successfully separated three DNA sources (maternal, fetal, tumor). The classification strategy using dbSNP overlap (C58-C59) is reasonable but introduces uncertainty. The 100% lymphocyte attribution for tumor DNA and 95% placental attribution for fetal DNA are consistent with expectations. However, this is a single case study, and the variant classification approach lacks independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "GETMap differs from existing methods by enabling tissue composition analysis of specific DNA subsets carrying genetic variants, rather than analyzing all plasma DNA as a single entity, which enhances signal-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 clearly articulate the conceptual advantage of GETMap over existing deconvolution methods. The ability to analyze genetically-defined DNA subsets is a genuine methodological advance. However, no direct comparative analysis with existing methods is provided to quantitatively demonstrate the claimed improvement in signal-to-noise ratio.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "GETMap could potentially identify hematopoietic origin of abnormal signals in cases of clonal hematopoiesis, addressing a source of false-positives in liquid biopsy cancer screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 propose a potential application for distinguishing clonal hematopoiesis from cancer, but no experimental data is provided to support this capability. This remains speculative and would require validation with actual clonal hematopoiesis cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The current GETMap implementation uses whole-genome bisulfite sequencing, which limits detection of C-to-T mutations. A targeted sequencing approach enriching mutation hotspots and differentially methylated regions could improve cost-effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 accurately describe a technical limitation of bisulfite sequencing and propose a reasonable solution. The limitation is well-established in the field. However, the proposed targeted approach (C105) is speculative and has not been implemented or validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C55",
+      "C106"
+    ],
+    "result": "A small proportion (5-31%) of tumor-derived DNA in male HCC patients was attributed to placenta, potentially due to shared methylation features between placental and tumor tissues (global hypomethylation and tumor suppressor gene hypermethylation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50, C55, and C106 identify an unexpected finding of placental attribution in male patients. While the explanation based on methylation similarities (C106) is plausible and supported by citations, this represents a potential limitation of the method. The attribution could reflect either biological similarity or a methodological artifact. Further investigation is needed to determine if this affects clinical interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The elevation in donor DNA early post-transplantation is likely due to residual blood cells in the transplanted organ. The persistent hematopoietic contribution at late timepoints may reflect measurement imprecision at low DNA concentrations or persistence of donor immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C76-C78 provide reasonable interpretations of the observed data. The explanation for early elevation (C73) is directly supported by the GETMap findings (C3-C4). The alternative explanations for late persistence (C76-C77) are appropriately presented as speculative, with C78 providing literature support for immune cell persistence. These interpretations are logical but not definitively proven.",
+    "result_type": "MINOR"
+  }
+]

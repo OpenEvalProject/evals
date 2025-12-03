@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Macrophages transfer intact mitochondria to cancer cells in vitro at a rate of 0.84% across donors, with higher transfer to malignant versus non-malignant cells, requiring direct cell-to-cell contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from multiple experimental approaches (confocal microscopy, flow cytometry, trans-well experiments) demonstrating mitochondrial transfer. The transferred mitochondria contain TOMM20 and mtDNA (C5-C6), confirming intact organelles. Transfer requires direct contact (C7) and shows specificity for malignant cells (C4). Sample sizes are adequate (N=14 donors for C2, N=3 donors for C3-C4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Cancer cells that receive macrophage mitochondria exhibit increased proliferation, with significant increases in G2/M phase cells and specific growth rates, sustained across cell divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 demonstrate proliferation effects through multiple complementary methods: scRNA-seq pathway analysis (C8), flow cytometry cell cycle analysis (C9, N=4 donors), QPI growth measurements (C11, N=60 control and 115 recipient cells), and daughter cell tracking (C12, N=5 triads). The cytokinesis data (C10) rules out cell cycle arrest as an alternative explanation. The convergence of independent methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Macrophage mitochondrial transfer causes cancer cell proliferation rather than proliferative cells being more capable of receiving mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 establish causality through well-designed experiments. Palbociclib treatment blocking G1 phase does not change transfer rates (C14), ruling out the alternative hypothesis that proliferative cells preferentially receive mitochondria (C15). The purified mitochondria experiments (C16, N=3 donors) provide strong causal evidence by isolating the effect of mitochondria alone. The logic is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Transferred macrophage mitochondria remain distinct from the host mitochondrial network, lack membrane potential, and are not degraded or sequestered in recipient cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 characterize the fate of transferred mitochondria using multiple approaches. Time-lapse microscopy (C18, 15 hours) shows persistent distinct signal. Two independent membrane potential dyes (MTDR and TMRM) confirm 100% of transferred mitochondria lack membrane potential (C19, N=25 cells from 5 donors). LysoTracker (C20, N=24 cells from 4 donors) and MemBrite (C21, N=11 cells from 1 donor) staining exclude degradation and sequestration. The convergence of evidence is compelling, though C21 has limited sample size from a single donor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Transferred mitochondria accumulate significantly higher levels of reactive oxygen species (ROS) compared to the host mitochondrial network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 demonstrate ROS accumulation using two independent genetically encoded biosensors. The mito-Grx1-roGFP2 biosensor (C23) shows significant oxidation at 24hr (N=27 cells) and 48hr (N=37 cells) from 3 donors. The H2O2-specific mito-roGFP2-Orp1 biosensor (C25) confirms the finding at 48hr (N=26 cells from 3 donors). The use of two independent biosensors with different specificities strengthens the conclusion. Sample sizes are adequate and statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Transferred mitochondria promote cancer cell proliferation in a ROS-dependent manner, as demonstrated by ROS scavenging experiments with mitoTEMPO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 establish ROS-dependence through pharmacological intervention. Purified mitochondria experiments (C27) confirm the phenotype persists with isolated mitochondria. MitoTEMPO treatment specifically abolishes the proliferation increase in recipient cells (C28, N=3 donors) but does not affect non-recipient cells (C29), demonstrating specificity. The experimental design with appropriate controls is rigorous and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Optogenetic induction of mitochondrial ROS using mito-KillerRed is sufficient to directly promote cancer cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 establish sufficiency of mitochondrial ROS for proliferation using an elegant optogenetic approach. Photobleaching mito-KillerRed generates ROS (C31, confirmed by DCFDA). Cells with induced mitochondrial ROS show increased division compared to cytoplasmic photobleaching controls (C32, N=13 experiments). The use of within-experiment controls (cytoplasmic vs mitochondrial bleaching) is rigorous. This causally demonstrates that localized mitochondrial ROS can drive proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Cancer cells with macrophage mitochondria exhibit increased ERK activity, and ROS induction is sufficient to increase ERK activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 link ROS to ERK signaling using the ERK-KTR translocation reporter. ImageStream analysis (C34) shows significantly higher C/N ratios in recipient cells (N=3 donors, hundreds of cells). Optogenetic ROS induction (C35) increases ERK-KTR translocation 40 minutes post-bleaching. The ERK-KTR reporter is validated in supplementary data. The combination of correlative (C34) and causal (C35) evidence is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Mitochondrial transfer promotes cancer cell proliferation through an ERK-dependent mechanism, as ERK inhibition specifically blocks proliferation in recipient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 establish ERK-dependence through pharmacological inhibition. ERK inhibitor (1 \u03bcM SCH772984) specifically decreases proliferation in recipient cells (C36-C37, N=3 donors) without affecting non-recipient cells or transfer rates (C38, C40). Purified mitochondria experiments confirm the effect (C39). The specificity of the effect (only in recipient cells) and appropriate controls (no effect on transfer rates) strengthen the conclusion. The integration with ROS data (C41) completes the mechanistic pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "M2-like macrophages exhibit increased mitochondrial fragmentation and enhanced mitochondrial transfer rates to cancer cells, with DRP1 knockdown reducing transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46, C48 establish the relationship between macrophage activation, mitochondrial morphology, and transfer. MiNA analysis (C42, N=2 donors) shows M2 macrophages have more fragmented mitochondria. Flow cytometry (C43, N=4 donors) demonstrates increased transfer from M2 macrophages. DRP1 knockdown (C44-C45, N=3 donors) causally links fragmentation to transfer. The combination of correlative and causal evidence is strong, though C42 has only N=2 donors for morphology analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Transferred mitochondria from M1-like and M2-like macrophages are similarly depolarized as those from M0 macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 demonstrates that the depolarized state of transferred mitochondria is consistent across macrophage activation states. MTDR and LysoTracker staining show 100% of transferred mitochondria from M1 and M2 are MTDR-negative (N=15 cells from 2 donors for M1, N=24 cells from 2 donors for M2). This is consistent with earlier findings for M0 macrophages (C19), suggesting the dysfunctional state is a general feature of transferred mitochondria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mitochondrial transfer occurs from macrophages to patient-derived xenograft organoid (PDxO) cells, with M2-like macrophages preferentially transferring to bone metastasis PDxO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 extend findings to clinically relevant PDxO models. Transfer is observed to both primary tumor (HCI-037) and bone metastasis (HCI-038) PDxO cells (C49, N=4 donors). M2 macrophages show preferential transfer to metastatic cells (C50), suggesting biological relevance. Transferred mitochondria lack membrane potential (C51), consistent with cell line data. The use of patient-derived models strengthens translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C90"
+    ],
+    "result": "Macrophage mitochondrial transfer occurs in vivo at a rate of 4.8% and promotes tumor cell proliferation in two independent mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55, C90 demonstrate in vivo relevance using two independent mouse models. Bone marrow reconstitution experiments (C52, N=10 mice per condition) show 4.8% transfer rate. LysM-Cre/MitoTag mice (C53-C54, N=3 mice) confirm transfer and show increased proliferation in recipient tumor cells. The use of two independent models with different approaches strengthens the conclusion. Sample sizes are adequate for in vivo studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C91"
+    ],
+    "result": "An agent-based model predicts that even with low transfer rates (5%) and modest growth increases (15%), mitochondrial transfer can lead to a 15% increase in population size after 20 doublings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C91 use computational modeling to demonstrate the population-level impact of rare mitochondrial transfer events. The model parameters are based on experimental data (5% transfer rate from in vivo studies, 15% growth increase from QPI measurements). The modeling approach is appropriate for predicting long-term population effects. However, the model makes simplifying assumptions (e.g., 50% loss at division) that may not fully capture biological complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C89"
+    ],
+    "result": "Transferred macrophage mitochondria are dysfunctional, accumulate ROS, and activate ERK-mediated proliferation through a ROS-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C89 are integrative summary statements that synthesize the major findings. These claims are well-supported by the collective evidence from multiple experimental approaches: membrane potential assays (C19), ROS biosensors (C23-C26), ROS scavenging (C28-C30), optogenetic ROS induction (C31-C33), ERK activity measurements (C34-C35), and ERK inhibition (C36-C41). The mechanistic pathway is established through both correlative and causal experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The manuscript contextualizes findings within established knowledge about mitochondrial transfer, ROS signaling, ERK/MAPK pathways, macrophage biology, and mitochondrial quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C87 represent citations of prior work and established knowledge that provide context for the current findings. These claims are appropriately cited and represent accurate summaries of the referenced literature. They establish the paradigm that the current work challenges (C87: functional mitochondria restore bioenergetics) and provide mechanistic context (C63-C65: ROS and ERK signaling). The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Mitochondrial transfer occurs between cells with functioning endogenous mitochondrial networks, challenging the prevailing paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 represents a key conceptual advance. The use of MDA-MB-231 cells with functioning mitochondria (confirmed by C85: capable of mitophagy) distinguishes this work from prior studies using \u03c10 cells. This is supported by the experimental system design and the observation that transferred mitochondria remain distinct rather than being degraded or fused (C18-C22). The claim appropriately positions the work as challenging the existing paradigm (C87).",
+    "result_type": "MAJOR"
+  }
+]

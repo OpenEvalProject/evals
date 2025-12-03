@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study analyzed fMRI data from 414 children and adolescents (ages 5-19) from the Healthy Brain Network project while they watched a 10-minute clip from the movie Despicable Me. Data were collected at two sites using 3T scanners and underwent rigorous quality control, resulting in the final sample of 414 subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14, C70-C74 provide consistent and detailed information about the dataset, including sample size, age range, data source, acquisition parameters, and quality control procedures. The methods are clearly described and the sample size is substantial for developmental neuroimaging research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C47"
+    ],
+    "result": "Within-group inter-subject correlation (ISC) increases with age in sensory regions (auditory cortex) but decreases with age in higher-level association regions (retrosplenial cortex/PMC). Motion artifacts do not explain the ISC increases in sensory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C20, C47 converge on a consistent pattern of age-related ISC changes supported by Figure 1 and statistical analyses. The control for motion artifacts (C20) strengthens the interpretation that these are genuine developmental effects rather than confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C21"
+    ],
+    "result": "Using a novel between-group ISC (ISCb) measure, age-related shifts in brain responses were detected across 81 of 100 cortical parcels, including default mode regions (TPJ, PMC) and language/concept-sensitive regions (dlPFC, inferior temporal cortex, orbitofrontal cortex).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C21 describe the widespread nature of age-related changes detected by the ISCb method, supported by Figure 2. The novel ISCb measure is mathematically derived in Appendix 1 and appropriately controls for within-group consistency when assessing between-group differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C75",
+      "C76"
+    ],
+    "result": "Behavioral event segmentation showed small but significant differences between adults and children (ISCb=0.97, p=0.009) and between younger and older children (ISCb=0.96, p=0.01). Adult raters identified an average of 14.4\u00b16.5 events in the movie clip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C75-C76 provide converging behavioral evidence with appropriate statistical tests and effect sizes. The small but significant differences suggest largely similar but not identical event perception across ages, which is important context for interpreting neural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C67"
+    ],
+    "result": "Hidden Markov Model (HMM) analysis identified event structure in 70 of 100 parcels, with optimal timescales highly correlated between youngest and oldest groups (r=0.78). Event timescales increased from sensory to association regions, and this hierarchy was present even in the youngest (5-8 years) age group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28, C67 describe the HMM event structure findings with appropriate statistical support. The high correlation in optimal timescales between age groups justifies the joint-fitting approach and demonstrates that basic event segmentation structure is mature by age 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "HMM-derived event boundaries corresponded to boundaries subjectively placed by human raters in association regions (PMC, TPJ, precuneus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 validates the HMM approach by showing correspondence with behavioral annotations, supported by Figure 5\u2014figure supplement 3 and consistent with prior adult research (Baldassano et al., 2020).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C54"
+    ],
+    "result": "Brain responses became more discretized into stable and coherent events with age in most cortical parcels. Event model fits improved with age in sensory areas (auditory, visual cortex), left parietal operculum, and dlPFC, with the largest changes in sensory regions occurring between ages 5-11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C33, C54 describe age-related improvements in event structure supported by HMM model-fit analyses shown in Figure 5. The developmental trajectories are clearly documented and statistically validated with appropriate permutation testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C55",
+      "C56"
+    ],
+    "result": "Contrary to predictions, HMM event model fits were better in the youngest group than the oldest group in the posterior medial cortex (PMC), including both posterior cingulate cortex (PCC) and retrosplenial cortex (RSC). ISC reliability also decreased with age in RSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C55-C56 report an unexpected finding that contradicts the authors' hypothesis about schematic event representations. This result is clearly stated and supported by Figures 1 and 5, though the interpretation remains speculative (discussed in C57-C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "Brain responses shifted earlier in time with age to anticipate upcoming event transitions. This anticipation occurred in sensory regions (auditory, visual cortex) and left-lateralized association regions (left precuneus, left dlPFC), with anticipation increasing rapidly between ages 5-11. Older ages generally anticipated event shifts while younger ages lagged behind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35-C38, C40 describe age-related timing shifts supported by Figure 6 and appropriate statistical analyses. The finding that older children anticipate events up to tens of seconds in advance is a novel and important developmental result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "In the right ventral temporal cortex, the youngest children anticipated upcoming events slightly sooner, and anticipation decreased almost linearly with age, showing a reversal of the typical pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 reports a region-specific exception to the general pattern of increased anticipation with age, supported by Figure 6. This finding is clearly documented though not extensively discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42",
+      "C43",
+      "C63",
+      "C82",
+      "C83"
+    ],
+    "result": "The hippocampus showed robust responses to event boundaries across all ages (all p<0.0001), but these responses decreased with age (r=-0.16, p=0.001, N=414). The decrease was significant in anterior hippocampus (aHPC: r=-0.18, p=0.0002) but not posterior hippocampus (pHPC: r=-0.09, p=0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41-C43, C63, C82-C83 describe hippocampal event boundary responses with appropriate statistical tests and effect sizes shown in Figure 7. The finding of decreased hippocampal responses with age is unexpected but well-documented and statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The age-related decrease in hippocampal event boundary responses was not explained by anatomical volume changes. While hippocampal volume correlated with age (entire HPC: r=-0.1, p=0.03; aHPC: r=-0.1, p=0.03), the functional boundary responses did not correlate with volume changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46, C77-C79 provide important control analyses ruling out anatomical explanations for functional changes. The statistical tests are appropriate and strengthen the interpretation that functional changes reflect developmental shifts in processing strategy rather than structural maturation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C80",
+      "C81"
+    ],
+    "result": "The pattern of cortical and hippocampal findings suggests a shifting division of labor between episodic encoding processes and schematic event representations between ages 5 and 19. Brain responses become more synchronized and event-structured in cortex while hippocampal boundary responses decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C80-C81 present an interpretive framework integrating the cortical and hippocampal findings. While the individual findings are well-supported, this mechanistic interpretation of a 'shifting division of labor' is speculative and not directly tested. Alternative explanations (novelty, consolidation demands) are mentioned but not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Very large age-related changes were found in temporoparietal junction (TPJ), a theory of mind region that develops substantially during the studied age range. Neural representations in 16-19 year-olds were up to 20 seconds ahead of 5-8 year-olds in right posterior-superior temporal sulcus and left postcentral sulcus. Age-related shifts were also found in dlPFC with increasing anticipation from ages 5-11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 describe substantial developmental changes in TPJ and dlPFC supported by Figures 2 and 6. The 20-second anticipation difference is a striking and well-documented finding, though the specific cognitive mechanisms remain interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Age-related shifts in narrative representation patterns were found bilaterally in PMC with increased anticipation in left PMC. Small but significant changes in timecourse were found in medial prefrontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 describe changes in PMC and medial prefrontal cortex supported by Figures 2 and 6. These findings are modest but statistically significant and contribute to the overall picture of developmental changes in default mode regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C24",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "The manuscript cites extensive prior literature on cognitive development, naturalistic stimuli methods, brain region functions, and event segmentation to contextualize the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13, C15-C17, C24, C52-C53, C57-C59, C62, C64-C66, C68 accurately represent cited prior work and provide appropriate context for the study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Children develop enough narrative comprehension to segment stories in an adult-like manner (in terms of timescales) by age five, based on the similarity of optimal event timescales between youngest and oldest groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is an inference based on C67 (similar timescales between age groups). While the neural timescale similarity is well-documented, the interpretation that this reflects 'adult-like narrative comprehension' is somewhat overstated given the behavioral differences (C22-C23) and the many other neural differences documented throughout the paper.",
+    "result_type": "MINOR"
+  }
+]

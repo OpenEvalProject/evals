@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The cryoChip device consists of a 2\u00d72 mm silicon base with 100 \u00b5m thickness, featuring hollow microcantilevers for sample application and electron-transparent nanochannels (~700 nm wide, ~100 nm high) enclosed by ultrathin SiNx membranes. The device is fabricated using a sacrificial polysilicon process and is compatible with standard cryo-EM cartridges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 and C51-C55 provide consistent descriptions of the device design and fabrication, supported by SEM images (Figure 1), fabrication schematics (Figure 1\u2014figure supplement 1), and compatibility demonstrations (Figure 1\u2014figure supplement 2). The dimensional specifications are directly measured and documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C56",
+      "C57"
+    ],
+    "result": "The SiNx membrane thickness is 9.5\u00b10.2 nm as measured by ellipsometry, with a combined water-equivalent thickness of 39 nm for the two membranes. The nanochannels display a concave profile with maximum thickness ~100 nm at the wall and 0 nm at center, with channel width ranging from 650-1000 nm between chips but consistent within individual chips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 and C56-C57 are supported by multiple measurement techniques including ellipsometry (Figure 1d), zero-loss imaging (Figure 1e), and tomography. The measurements are internally consistent and the variability between chips is acknowledged and attributed to fabrication process variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C94"
+    ],
+    "result": "The cryoChip filling volume is ~4 pL (six orders of magnitude less than conventional methods), achieved via capillary action through the microcantilever at ~1 mm/s following Washburn kinetics. Filling can be performed in ambient conditions without humidity control, requires no parameter optimization beyond sample concentration, and allows recovery of residual sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26, C58-C61, and C94 are supported by geometric calculations, experimental observations of filling kinetics (Figure 2c-d), and kymograph analysis. The Washburn kinetics are confirmed by the square-root-of-time relationship. The practical advantages are demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C63",
+      "C64"
+    ],
+    "result": "The observation membrane contains 30 observation squares arranged in a regular grid, allowing acquisition of up to 540 images per chip using an automated multishot acquisition strategy. Most observation squares were suitable for data collection, though partially broken or cracked membranes were occasionally observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C63-C64 are supported by device design specifications (Figure 3) and experimental observations during data collection. The calculation of 540 images (30 squares \u00d7 6 points \u00d7 3 images) is straightforward arithmetic. The occasional membrane damage is acknowledged as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C97"
+    ],
+    "result": "Vitrification efficiency varied by specimen: 86% for ApoFtn, 75% for T20S, and 52% for TMV. Heat transfer simulations predict cooling below glass-transition temperature at timescales (<10\u207b\u2075 s) compatible with vitrification, though 10-40% of images contained non-vitreous ice with evidence of hexagonal ice indicating incomplete vitrification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C33 and C97 present measured vitrification efficiencies supported by manual classification (Figure 4e) and power spectra analysis (Figure 4\u2014figure supplement 3). However, the discrepancy between simulation predictions (C32) and observed incomplete vitrification (C97) is not fully resolved. The authors acknowledge potential underestimation due to inability to distinguish surface contamination from crystalline ice in nanochannels (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C68",
+      "C69",
+      "C6",
+      "C96"
+    ],
+    "result": "High-resolution 3D reconstructions were achieved for three test specimens: ApoFtn at 3.0 \u00c5 (21,238 particles), TMV at 3.7 \u00c5 (14,238 segments), and T20S at 5.4 \u00c5 (5,750 particles). High-contrast 2D class averages with visible secondary structure features were observed for all specimens, and ab initio model generation was successful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C68-C69, C6, and C96 are supported by comprehensive single-particle analysis workflows (Figures 4\u2014figure supplements 4-6), FSC curves (Figure 4f), and visible side chain densities in reconstructions (Figure 4c-d). The successful ab initio model generation demonstrates data quality sufficient for structure determination without external references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C70"
+    ],
+    "result": "B-factors for cryoChip datasets were 217 \u00c5\u00b2 for ApoFtn and 490 \u00c5\u00b2 for T20S, compared to 178 \u00c5\u00b2 and 328 \u00c5\u00b2 respectively for holey carbon reference datasets. A consistent upward shift in B-factor plot offsets for holey carbon compared to cryoChips reflects differences in signal-to-noise ratio from additional SiNx membrane scattering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C70 are supported by ResLog analysis (Figure 4g, Figure 4\u2014figure supplement 7). The higher B-factors for cryoChips are consistent with the additional scattering from SiNx membranes (C49, C102), and the comparison with reference datasets provides appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C72",
+      "C74",
+      "C76",
+      "C111",
+      "C112"
+    ],
+    "result": "Beam-induced motion in cryoChips is largely unidirectional but clusters into three distinct directions associated with beam-image shift positions. Overall specimen movement ranges from 3.8-5.1 \u00c5 RMSD over 0-40 e\u207b/\u00c5\u00b2, with initial movement of 1.8 \u00c5. While higher than some modified support films, this displacement is not limiting for ~2 \u00c5 reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C72, C74, C76, C111-C112 are supported by motion trajectory analysis (Figure 5) and comparison with EMPIAR reference datasets. The inference that 1.8 \u00c5 initial movement is not limiting (C43, C112) is supported by comparison with EMPIAR-10389 which achieved 2.0 \u00c5 resolution with similar motion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C80",
+      "C79",
+      "C81",
+      "C117"
+    ],
+    "result": "Tomographic reconstructions show that the majority of particles are found close to or associated with the SiNx membrane. Preferential orientation was observed for ApoFtn (fourfold axis) and T20S (side views), but no convincing correlation with molecular electrostatic potential was found, and no pronounced preferred orientation was evident for the cases studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C80-C81, C79, and C117 are supported by tomographic reconstructions (Figure 6), Euler angle distribution analysis (Figure 4\u2014figure supplements 4, 6), and electrostatic potential comparisons (Figure 6\u2014figure supplement 3). The authors appropriately note the limitation that analysis was restricted to particles with internal symmetry (C118).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C82",
+      "C83",
+      "C120"
+    ],
+    "result": "Particle concentration in nanochannels was measured at 262 \u00b5M (126 mg/mL) for ApoFtn, representing a 37-fold increase compared to the initial sample concentration of 3.4 mg/mL. This concentration effect, observed across all three specimens, is attributed to strong interaction with the solid-liquid interface at the SiNx channel walls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C82-C83, and C120 are supported by quantitative particle counting and volume measurements from tomograms (Figure 6\u2014figure supplement 1). The concentration effect is consistent with observations for other solid-liquid interfaces in cryo-EM (C84) and explains the higher particle densities observed in micrographs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C102",
+      "C103"
+    ],
+    "result": "The SiNx membranes lead to additional background noise from increased inelastic scattering, resulting in reduced image contrast. The minimal scattering mass for successful particle detection and alignment is estimated at ~200 kDa, rendering cryoChips suitable for a wide range of protein targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C102-C103 are supported by theoretical considerations and calculations based on additional scattering measurements. The 200 kDa estimate is derived from quantifying the effective increase in ice thickness and is supported by citations to established theory (Henderson, 1995; Zhang et al., 2020). The successful structure determination of specimens ranging from 480 kDa to 37 MDa provides empirical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Several factors may currently limit resolution: spectral properties of structural noise from SiNx membranes differ from vitreous ice, there may be interference from membranes and particles at different focal heights affecting CTF estimation, and assumptions in current 3D reconstruction algorithms may be sub-optimal for cryoChip data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 are speculative discussions of potential limitations supported by citation (Tichelaar et al., 2020) and analysis (Figure 6\u2014figure supplement 2). While plausible, these remain hypotheses requiring further investigation. The speculation about software optimization (C106) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C73"
+    ],
+    "result": "The closed nanochannel architecture may contribute to beam-induced motion through trapped molecular hydrogen from radiolysis that cannot escape, potentially leading to pressure build-up. Different thickness and geometry of confined ice in subregions may lead to preferential directionality of specimen movement, possibly combined with microlensing effects from charge build-up on non-conductive SiNx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C108 and C73 are speculative mechanistic explanations for observed beam-induced motion patterns. While the closed architecture and trapped gas hypothesis (C107-C108) is logical and supported by citation about radiolysis (Aronova et al., 2011), direct evidence is lacking. The clustering of motion by shot position (C41, C72) supports the speculation about geometry and charge effects (C73), but the precise mechanisms remain unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The air-water interface is hydrophobic and can drive protein unfolding, while the polar SiNx surface is hydrophilic with protein adsorption mediated by zeta potential. For the three cases investigated, interaction with SiNx did not promote denaturation or aberrant structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by established knowledge about protein-surface interactions (citations to Glaeser, 2018; D'Imprima et al., 2019; Noble et al., 2018; Norde, 1986) and by the successful high-resolution structure determination without evidence of denaturation. The inference that SiNx does not cause denaturation (C115) is reasonable given the quality of the reconstructions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Early design iterations with narrow filling channels showed apparent protein depletion before reaching observation nanochannels, attributed to the large surface-to-volume ratio potentially depleting solute proteins through interactions with SiN walls. The increased diameter of filling channels in the current design substantially improved efficacy for reaching suitable particle concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 describe design iterations supported by experimental observations. The depletion problem (C121) and its resolution through wider channels (C123) demonstrate iterative design improvement. The mechanistic explanation (C122) is speculative but reasonable given the observed concentration effects at solid-liquid interfaces (C46-C48).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "MEMS-based nanofluidic cryoChips provide a viable alternative for cryo-EM sample preparation that mitigates prevalent issues with grid-based supports. Biological specimens can be successfully vitrified with reproducible ice thickness controlled by channel geometry, and nanochannels are highly consistent within individual chips while eliminating the air-water interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 and C3-C5 represent the main conclusions of the study, supported by the comprehensive experimental results including successful structure determination (C34-C36), reproducible ice thickness measurements (C17-C20), and consistent channel geometry (C90). The elimination of the air-water interface (C5, C15) is a design feature, and the viability as an alternative method is demonstrated by the successful high-resolution reconstructions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Conventional cryo-EM methods require ~3 \u00b5L sample volume per grid, though only 1.5-7.0 fL is actually used for imaging (nine orders of magnitude less). The cryoChip reduces required sample volume by 1000-fold to ~4 pL, approaching the practical minimum for cryo-EM structure determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by geometric calculations for conventional methods (C92) and cryoChip measurements (C21). The comparison is valid and the 1000-fold reduction claim (C93) is accurate when comparing to recent nanoliter-scale methods rather than conventional microliter methods. The calculation that cryoChips approach the practical minimum is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Several factors may contribute to incomplete vitrification: cryogen displacement preventing complete chip wetting, air trapped below the observation membrane impeding heat transfer, and the central location of the observation membrane affecting vitrification probability. Different plunging parameters or jet-based cooling may be more appropriate for cryoChips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C100 are speculative explanations for the observed incomplete vitrification (C97). While plausible and supported by citation to literature on cooling dynamics (C99), these remain untested hypotheses. The suggestion about optimized plunging parameters (C100) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Future improvements in electron transparency, electrical and thermal conductance of enclosing materials could allow nanofluidic supports to approach resolutions achieved with ideal samples. The cryoChip represents the beginning of a range of future MEMS-based cryo-EM supports, with possibilities for extended imaging areas, parallel sample screening, and integration with lab-on-a-chip approaches for new applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C128, C130-C132 are speculative statements about future developments and applications. While the potential improvements are plausible based on analogy with developments in holey support films (C125), these remain untested predictions. The speculation is reasonable but lacks experimental support.",
+    "result_type": "MINOR"
+  }
+]

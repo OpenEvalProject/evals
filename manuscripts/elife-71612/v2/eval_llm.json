@@ -1,0 +1,438 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8"
+    ],
+    "result": "Gerbils exhibit primate-like magnitude estimation characteristics in time reproduction, including the regression effect (overestimation of small stimuli and underestimation of large stimuli). The coefficient of variation and feedback range width both correlate with the strength of the regression effect, indicating a connection to error minimization strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, and C8 collectively demonstrate that gerbils show the regression effect in time reproduction behavior. The behavioral data in Figure 1D-F show systematic deviations from unity, and the correlations between CV, feedback range, and slope provide converging evidence for error minimization. The statistical relationships are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C10",
+      "C38"
+    ],
+    "result": "The majority of mPFC neurons respond during either measurement or reproduction phases, with distinct response patterns between phases. About 17% of cells are active in both phases, 16% only during measurement, 23% only during reproduction, and 44% show no substantial contribution in either phase. No single cell repeated the same activity pattern across both phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C10, and C38 are supported by systematic electrophysiological recordings from 1766 neurons (C9) and categorization analysis (Figure 6D). The finding that no cells show identical responses across phases (C10) is particularly strong evidence for phase-specific encoding. The percentages are clearly quantified and based on objective categorization criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Only populations with mixed response types can encode the regression effect. Linear increasing neurons (ramping with constant slope) show precise time representation without regression, while ramp-to-threshold neurons (changing slope) produce maximal regression. The strength of the regression effect increases with the proportion of slope-changing cells in the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40, C41, and C42 are supported by decoding analysis (Figure 7) showing that different neuron types produce different regression patterns. The demonstration that mixing response types at different fractions produces intermediate regression effects (Figure 7F) provides strong mechanistic evidence. However, the decoding analysis uses a simple linear regression decoder, which may not capture all aspects of neural computation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Neural activity scales with stimulus duration during reproduction but not measurement. Centers of mass of spike density functions tile the time intervals during reproduction and differ significantly from noise controls (p<0.001). Scaling indices during reproduction are consistent with the regression effect, with bootstrapped tests showing significance in almost all cases during reproduction but only ~30% during measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 are supported by systematic scaling analysis (Figure 4) with appropriate statistical controls. The use of bootstrapped Kolmogorov-Smirnov tests (C19, C20) strengthens the findings. The correlation between center of mass position and activity correlation across stimuli (C17) provides additional support. The distinction between measurement and reproduction phases is consistently demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Demixed PCA reveals that principal components for measurement and reproduction share common features, including ramp-like PC1 and non-monotonous PC2-3. The strongest stimulus-dependent PC is constant over time with amplitudes ordered by stimulus. During reproduction but not measurement, stimulus PC1 correlates with PCs 2 and 3, suggesting richer representation of the to-be-reproduced interval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 are supported by demixed PCA analysis (Figure 5) with appropriate bootstrapping validation. The correlation analysis between PC scores (C24) and the differential patterns between measurement and reproduction (C25, C26) are clearly demonstrated. The use of demixed PCA is appropriate for separating time-course and stimulus-dependent components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "During measurement, neural activity develops at similar speed along trajectories with length dependent on stimulus duration. During reproduction, trajectories have similar length but activity accelerates over an interval, resulting in higher average speed for shorter stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 are supported by conventional PCA trajectory analysis (Figure 5D-E). The findings are consistent with temporal scaling results (C18) and align with previous studies cited. The distinction between measurement and reproduction dynamics is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "About 25% of cells show ramping activity during measurement. During reproduction, ~10% show PC1-only ramping, ~10% mix PCs 1 and 2, 6% mix PCs 1-3, and ~5% combine ramps with stimulus-dependent firing. In total, 35% of cells during reproduction contain a ramping component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by systematic categorization analysis (Figure 6D) based on demixed PCA scores. The categorization procedure is clearly described and validated by bootstrapping. The percentages are internally consistent (C35 is the sum of ramping categories). However, the categorization threshold (tan(67.5\u00b0)) appears somewhat arbitrary and could affect the exact percentages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Population activity correlates for different stimuli during reproduction but not during measurement. Population vector correlations between measurement and reproduction are low, but single-cell correlations between phases are significant in about 20% of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by correlation analysis (Figure 3D-G). The distinction between population-level and single-cell correlations is important and well-documented. The finding that ~20% of cells show significant correlations between phases (C14) is consistent with the categorization showing 17% active in both phases (C38).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "During measurement, PC1 of the original data was larger than expected from surrogate data. During reproduction, PC3 and stimulus PC1 were larger than expected, indicating that the population as a whole contributes to representing the stimulus interval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C30 are supported by comparison to tensor maximum entropy surrogate data (Figure 5\u2014figure supplement 6). This analysis appropriately tests whether population responses contain collective contributions beyond what is expected from pooling single neurons. The interpretation that the population contributes to stimulus representation (C30) is reasonable but involves some inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Half of ramping neurons were significantly modulated by virtual speed and 60% by running speed, but speed modulation indices were generally low for ramping cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 are supported by speed response function analysis (Figure 2\u2014figure supplement 5). The finding that modulation indices are low despite statistical significance is important for interpreting the role of movement in neural responses. However, the analysis does not fully exclude the possibility that speed contributes to some aspects of ramping responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Virtual speed significantly modulated 22% of neurons and running speed significantly modulated 27% of neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by systematic speed response function analysis (Figure 2\u2014figure supplement 5) with appropriate shuffle controls. The relatively low percentages suggest that speed is not the primary driver of neural responses in most cells, which is important for interpreting timing-related activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "During reproduction, time readouts from neural activity were accurate in the first seconds but showed a regression effect by the end of the phase, with over- and underestimation at short and long stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by linear regression decoding analysis (Figure 7A). The finding that neural decoding reproduces the behavioral regression effect is important for linking neural activity to behavior. However, the decoded regression is stronger than behavioral regression (slope closer to zero), which the authors acknowledge may be due to including neurons not encoding the regression effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "During measurement, time decoding was imprecise with overestimation at the beginning and underestimation at the end of the interval. When decoding from PC1-only cells during measurement, a regression effect was seen, suggesting prior knowledge impacts these neurons during stimulus measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 are supported by decoding analysis during measurement (Figure 7\u2014figure supplement 3). The finding that PC1-only cells show regression during measurement (C46) is interesting and suggests prior expectations influence measurement. However, the interpretation involves inference and would benefit from additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Theoretical simulations show that neurons phasically active at different absolute times tiling the whole interval would provide accurate time representation, while neurons active relative to the stimulus interval can only encode a single time point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 are supported by theoretical simulations (Figure 7\u2014figure supplement 2). These are theoretical predictions rather than empirical findings from the data. The authors note that matching these predictions to their recordings was less straightforward because phasically active cells did not completely tile the intervals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Without noise, duration encoding is dominated by neurons that ramp with constant slope and no regression effect emerges. If activity is noisy, neurons with stimulus-dependent slope contribute and the regression effect appears. The amount of noise determines the balance between current stimulus estimate and prior knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C62 are theoretical proposals based on the mixed population findings but are not directly tested in the data. These claims are labeled as inference/speculation in the evidence type. While the reasoning is plausible and consistent with the decoding results, direct experimental manipulation of noise levels would be needed to fully support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "State-space trajectories for different stimulus durations were well separated during measurement. Since stimulus duration is unknown at the beginning of measurement, such duration-dependent trajectories are likely due to prior expectations about stimulus duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is directly supported by demixed PCA analysis (Figure 5A). Claim C64 is an inference about the mechanism, which is reasonable given that stimulus duration cannot be known in advance. The interpretation is supported by citations to previous work on sequential effects (C65, C66), but direct experimental manipulation would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "During reproduction, trajectories were ordered by stimulus, which is considered an indication that cortical dynamics are adjusted for reproducing different time intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by PCA trajectory analysis (Figure 5B, Figure 5\u2014figure supplement 5B) and citation to previous work (Remington et al., 2018). The finding is consistent with the temporal scaling results and provides additional evidence for stimulus-dependent neural dynamics during reproduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Demixed PCs showed curved trajectories during measurement, but trajectories from conventional PCA did not show such curvatures. Curved state-space trajectories were observed in the reproduction phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by comparison of demixed and conventional PCA (Figure 5A, 5D, Figure 5\u2014figure supplement 5A). The discrepancy between demixed and conventional PCA during measurement is noted but not fully explained. The observation of curved trajectories during reproduction (C59) is used to suggest mPFC may contribute to reproducing compressed time estimates, but this interpretation involves inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Variables underlying cognitive functions may be encoded by mixed responses within a local neural population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a general conclusion based on the finding that mixed response types encode the regression effect (C5). This is supported by the data but represents a broader interpretation. The claim is consistent with cited work on mixed selectivity in cognitive tasks (C89, C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C55"
+    ],
+    "result": "The regression effect may be the result of an error minimization strategy, as demonstrated by Bayesian models and other approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C55 are supported by citations to previous theoretical and modeling work. These are not findings from the current study but rather established context from the literature. The current study provides neural evidence consistent with these models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C87",
+      "C88"
+    ],
+    "result": "The mPFC responses during reproduction are reminiscent of neural correlates of self-initiated behavior found in rat secondary motor cortex. Ramp-to-threshold responses have been found in monkey motor cortices during timing behaviors. However, Murakami et al. reported absence of such responses in mPFC, which may be due to different tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, C87, and C88 place the current findings in context of previous literature. The comparisons are appropriate and the proposed explanation for discrepancies (C88) is reasonable. These are primarily literature comparisons rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Linear increasing neurons may serve as integrators of time information provided by sequentially activated, phasically responding cells. Responses with linear ramping components have been shown to be important for precise time decoding and low-dimensional population dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is a speculative interpretation of observed linear increasing neurons, as indicated by the evidence type. Claim C50 is supported by citation to previous work (Cueva et al., 2020). The speculation in C49 is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Temporal scaling appears to be a general feature of timed computations in the brain. In the current experiments, neuronal activity scaled and changed speed in relation to stimulus duration in the reproduction phase only, corresponding to the regression effect observed in behavioral data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C52 are supported by citations to previous studies. Claims C53 and C54 are supported by the scaling analysis (Figure 4) and connect neural scaling to behavioral regression. The correspondence between neural scaling and behavioral regression (C54) involves some inference but is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Curved state-space trajectories during measurement can be interpreted as a compressed nonlinear representation of time, which when read-out appropriately during reproduction can explain regression effects seen in behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is based on interpretation of findings from Sohn et al., 2019 and involves inference about the current data. The authors note that their demixed PCs showed curved trajectories during measurement (C57) but conventional PCA did not (C58), which complicates the interpretation. The claim is plausible but not definitively demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The experiments tested time intervals on a continuous range (3-7.5 s) and combined timing of an external event (measurement) with timing of own behavior (reproduction). The task was implemented in virtual reality to enable treadmill use, prevent landmark-based strategies, and decouple time from distance. This is conceptually different from fixed interval or discrimination tasks used in most previous timing studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, C82, C83, and C84 describe the experimental design, which is clearly documented in the methods and figures. The rationale for the design choices is well-explained. These are methodological descriptions rather than findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Gerbils were used because they can be successfully trained in complex virtual reality tasks. The mPFC is a brain area implicated in interval timing in rodents and other species. The observed activity was composed of mixtures of responses including phasic activation and ramp-like firing patterns, response types well known from the interval timing literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 provide rationale for experimental choices and context from the literature. These are supported by appropriate citations and are primarily methodological justifications rather than findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Human studies identified frontal, parietal, and striatal regions active during magnitude estimation. Recent primate studies investigated neural dynamics in frontal and parietal cortices during time interval reproduction, focusing on intervals of hundreds of milliseconds. It remains unclear how these findings translate to durations of several seconds or to nonprimate species. There is ongoing debate about whether a dedicated or distributed magnitude system exists in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 provide literature context and identify gaps in knowledge that the current study addresses. These are supported by appropriate citations and accurately represent the state of the field. These are background claims rather than findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The neural activity in primate parietal and frontal cortices observed in previous studies is surprisingly similar to what was found in rodent mPFC. This is especially interesting since the experiments tested timing of several seconds and neural dynamics typically act on much shorter time scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C86 compare current findings to previous primate studies and note the surprising similarity despite differences in timescale. This comparison is appropriate and highlights the significance of the findings. The claim involves some interpretation but is well-supported by the data and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Mixed response types are important in cognitive tasks and coding of variables related to cognitive functions like choice and task engagement is often distributed across brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C90 are supported by citations to previous studies and provide context for interpreting the current findings about mixed response types. These are established findings from the literature rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C9",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A total of 1766 mPFC units were recorded over 101 experimental sessions from three female adult Mongolian gerbils. Training started at age 4+ months. Animals were housed individually on a 12 hr light/dark cycle and maintained at 85-95% free feeding weight. All experiments were approved according to national and European guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C91-C95 are direct statements of experimental procedures and data collection. These are clearly documented and appropriate for the study. The sample size of 1766 neurons from 3 animals is substantial, though the small number of animals is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Sequential effects are known in magnitude estimation. Influences of prior expectations on neural activity during time interval estimation have been reported recently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 are supported by citations to previous studies and provide context for interpreting the trajectory separation during measurement (C63, C64). These are established findings from the literature.",
+    "result_type": "MINOR"
+  }
+]

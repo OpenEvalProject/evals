@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C141"
+    ],
+    "result": "The authors developed KeyAlloSite, a novel computational method to predict allosteric sites and identify key allosteric residues based on the evolutionary coupling model. This is claimed to be the first systematic and efficient computational method to predict key allo-residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C141 describe the development of KeyAlloSite as a novel method. The manuscript provides detailed methodology, applies it to multiple protein systems, and validates predictions against experimental data. The claim of being 'first' is supported by the review of existing methods (C26-C29) showing they focus on different aspects (allosteric sites, pathways) rather than key allo-residues specifically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C69",
+      "C70",
+      "C71",
+      "C142"
+    ],
+    "result": "The study demonstrates that protein allosteric sites are strongly coupled to orthosteric sites compared to non-functional sites during evolution. Among 25 allosteric pockets, 23 had Z-scores >0.5 (recall=0.92), and 96% ranked in top 3 by evolutionary coupling strength. This coupling is significantly stronger than between random patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46, C51-C54, C69-C71, and C142 collectively demonstrate strong evolutionary coupling between orthosteric and allosteric sites. The quantitative results (92% recall, 96% in top 3) are clearly stated with supporting figures (Figure 2C-D). The comparison with random patches (C70-C71, Figure 2\u2014figure supplement 3) provides statistical validation. This is a core finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Key allo-residues are identified by pairwise comparing evolutionary coupling scores between residues in allosteric and orthosteric pockets, using a Z-score threshold of 0.8. On average, 8 key allo-residues (18.6% of allosteric pocket residues) are identified per protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C73-C75 describe the methodological approach for identifying key allo-residues. The method is clearly described with mathematical formulation in Materials and Methods. The threshold selection (C74) is justified based on balancing sensitivity and specificity. The statistical summary (C75, Figure 3) provides quantitative validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "KeyAlloSite predictions for BCR-ABL1 are validated by experimental drug development data. The method correctly predicted L359 as a key allo-residue, which forms critical interactions with the CF3O- group in hit 5 (active, Kd=10\u03bcM) but not hit 4 (inactive, Kd=6\u03bcM). Additional predicted residues (T453, Y454, V525) show structural interactions with asciminib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C95 provide comprehensive validation of KeyAlloSite predictions for BCR-ABL1. The experimental evidence from drug development (C83-C85) directly supports the functional importance of predicted residue L359 (C86-C88). Additional predictions (C89-C91) are supported by structural analysis. The conformational role of V525 (C92-C94) is supported by citations. This represents strong experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "KeyAlloSite correctly predicted key allo-residues Y149 and Q152 in the Tar receptor, which were experimentally shown to be critical for attractant chemotactic signaling. The method works on both holo and apo structures, though conformational changes cause subtle variations in predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 demonstrate validation of KeyAlloSite on Tar receptor. The predictions (C99-C100) match experimental findings from Bi et al. (C98). Testing on both apo and holo structures (C102-C104) shows robustness while acknowledging limitations. The experimental validation is strong, and the discussion of conformational effects is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "KeyAlloSite predicted A347 and L353 as key allo-residues in PDZ3, which is supported by multiple independent experimental studies showing these residues are critical for allosteric function through rigid residue scanning, statistical coupling analysis, and high-throughput mutagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 provide strong validation through convergence of multiple experimental approaches. The predictions (C105) are validated by three independent studies using different methodologies (C106-C108). The convergence of evidence from different experimental approaches strongly supports the KeyAlloSite predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "KeyAlloSite identified 11 of 51 predicted key allo-residues in 7 human proteins that are mutated in various cancers, particularly uterine corpus endometrial carcinoma and skin cutaneous melanoma. This suggests KeyAlloSite can predict key pathogenetic mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 demonstrate application to cancer mutations. The analysis (C111-C112) shows enrichment of mutations in predicted key allo-residues using the Allo-Mutation dataset. The inference about pathogenetic importance (C113-C114) is reasonable given the enrichment, though direct experimental validation of these specific predictions is not provided. The result is supported but represents correlation rather than causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "KeyAlloSite can predict allosteric functional residues important for enzyme catalysis. For CALB, the method predicted 52 residues outside the orthosteric pocket, including 20 experimentally validated functional residues. Specific examples include A225 (11-fold improvement) and V37 (3-fold improvement) in catalytic efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C115-C121 demonstrate application to enzyme engineering. The predictions for CALB (C118) show good agreement with experimental mutagenesis data. Specific examples (C119-C120) provide quantitative validation with fold-improvements in catalytic efficiency. The conclusion (C121) is well-supported by the CALB results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "For chorismate mutase (CM), KeyAlloSite predicted 10 key allo-residues, including R44 and L40, which were experimentally shown by Russ et al. to be important for catalysis. This demonstrates KeyAlloSite's utility for enzyme design applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 provide validation on CM enzymes. The predictions (C125) partially overlap with experimental findings from Russ et al. (C124, C126). While only 2 of 8 experimentally validated residues were predicted, this represents meaningful validation. The comparison with Russ et al.'s approach (C127-C128) appropriately distinguishes the different applications of DCA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "KeyAlloSite performs better than Statistical Coupling Analysis (SCA) in predicting key allo-residues across multiple test cases (BCR-ABL1, Tar, PDZ3, CALB, CM, AurA), with higher precision and fewer false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C139 provide systematic comparison with SCA. The comparison shows KeyAlloSite correctly predicts known key residues that SCA misses (C131, C135, C137, C138) and avoids false positives that SCA includes (C133). The conclusion (C139) is supported by multiple examples across different protein systems. However, the comparison is indirect (using published SCA results) rather than a systematic head-to-head benchmark.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C41",
+      "C42",
+      "C152"
+    ],
+    "result": "The study demonstrates that weak coevolutionary couplings (weak terms in J_ij) contain important information about protein allosteric regulation function, providing a possible physical explanation for these previously unexplained weak coupling terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C41, C42, and C152 address the significance of weak couplings. The study demonstrates that weak couplings between distant residues (allosteric and orthosteric sites) carry functional information (C11). This is supported by successful predictions and provides interpretation for weak terms noted by Russ et al. (C41) and Bitbol (C42). The claim is well-supported by the overall results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The dataset consists of 23 allosteric proteins from ASBench with 25 known allosteric sites and sequence lengths ranging from 166-788 residues. Two proteins (AR1 and CYP3A4) showed Z-scores <0.5, attributed to insufficient homologous sequences and low conservation in the orthosteric pocket, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C59 describe the dataset and explain failures. The dataset description (C47-C48) is clear and appropriate. The explanations for failures (C55-C59) are reasonable: AR1 has limited sequences (108 effective) and phylogenetic analysis suggests late evolutionary origin (C56-C57); CYP3A4 has low conservation in orthosteric pocket (C59). These represent honest assessment of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "KeyAlloSite was tested on Aurora A kinase (not in the dataset) and correctly identified the allosteric pocket (cavity_3, Z-score=1.48, ranked 2nd) and functional phosphorylation sites T288 and T287 (Z-scores 0.83 and 1.05), demonstrating the method can predict PTM sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 demonstrate application to AurA kinase. The predictions (C63-C65) correctly identify known allosteric mechanisms (C62). The inference about PTM site prediction (C66) is reasonable given the successful prediction of T288/T287. This represents good validation on an independent test case not in the training set.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C69"
+    ],
+    "result": "Analysis using different numbers of residue pairs (top 200, 300, 400 vs. all pairs) shows that the number of residues in pockets does not significantly affect evolutionary coupling strength calculations, indicating the measure captures intrinsic coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C69 address potential size bias. The analysis (Figure 2\u2014figure supplement 2) shows consistent results across different numbers of residue pairs, supporting the conclusion that pocket size doesn't drive the signal (C67). This is an important control that strengthens the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Analysis of sequence requirements shows that approximately 7L (\u00b14L) effective homologous sequences are sufficient for stable predictions, where L is the protein length. Shorter proteins require fewer sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by the random sampling analysis (Figure 3\u2014figure supplement 3). The guideline of 7L\u00b14L effective sequences provides practical guidance for method application. This is a useful characterization of data requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Due to limited experimental information, while all predicted known key allo-residues ranked in top 20%, other high-ranking residues remain unvalidated. These are predicted to play important roles in allosteric signaling and the predicted list greatly reduces the number of residues requiring experimental verification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 acknowledge limitations and make predictions. The acknowledgment of unvalidated predictions (C145) is appropriate. The prediction that these residues are functionally important (C146) is reasonable given the validation rate for known residues. The practical benefit (C147) is valid. This represents honest assessment of current limitations and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "KeyAlloSite uses the same theoretical formulation as Hopf et al. for extracting coupling scores but applies them differently: Hopf et al. predict mutation effects via statistical energy differences, while KeyAlloSite predicts allosteric sites and key residues via pairwise comparison of coupling scores, highlighting weak coupling terms for allosteric function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 clarify the relationship to prior work. The distinction between using the same underlying model (ECM/DCA) but for different purposes is clearly articulated. The emphasis on weak couplings (C152) vs. strong couplings (C151) represents a conceptual contribution. This appropriately positions the work relative to prior methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "KeyAlloSite requires sufficient homologous and diversified sequences in MSA for accurate predictions. Predictions depend on both coevolutionary information and residue composition in allosteric pockets. Different protein conformations may yield slightly different results; holo structures are recommended when available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 describe method limitations and recommendations. The sequence requirements (C153-C154) are fundamental to coevolutionary methods. The dependence on pocket composition (C155-C156) is demonstrated by the Tar apo/holo comparison (C103-C104). The recommendation for holo structures (C157) is reasonable. These represent honest assessment of method limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "KeyAlloSite can be applied without 3D structures if homologous sequences and functional site location are known. AlphaFold can provide structures when needed. The method can potentially predict PTM sites with functional correlation to orthosteric sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C160 describe potential applications. While the logic is sound (C158), this hasn't been demonstrated in the manuscript. The AlphaFold suggestion (C159) is reasonable but speculative. The PTM prediction capability (C160) is partially demonstrated with AurA (C65-C66) but requires further validation. These represent reasonable extrapolations but lack comprehensive validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C12",
+      "C144",
+      "C163",
+      "C164"
+    ],
+    "result": "KeyAlloSite can be applied to study evolution of allosteric regulation, design and optimize allosteric drugs, and perform functional protein design and enzyme engineering. For drug optimization, the strategy is to maintain/enhance interactions with key allo-residues while altering interactions with other residues to achieve both strong binding and allosteric signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12, C144, C163-C164 describe potential applications and strategies. While the logic is sound and supported by the validation results, these represent proposed applications rather than demonstrated capabilities. The drug optimization strategy (C163-C164) is reasonable but speculative. These are appropriate forward-looking statements but lack direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C140",
+      "C161",
+      "C162"
+    ],
+    "result": "The introduction establishes the importance of allostery in biological processes, challenges in predicting allosteric effects and optimizing allosteric drugs, the concept of key allo-residues, limitations of existing computational methods, and principles of coevolution and evolutionary coupling analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C13-C34, C38, C140, C161-C162 provide background and motivation. These claims are well-supported by citations to established literature and represent accurate characterization of the field. They appropriately motivate the need for KeyAlloSite and establish the conceptual foundation for the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C43",
+      "C49",
+      "C50"
+    ],
+    "result": "The study analyzed evolutionary couplings between orthosteric and allosteric sites. Previous studies showed these sites have correlated motions and bidirectional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C49-C50 describe the analysis approach and cite prior work. The analysis performed (C43) is clearly described in methods. The citations to prior work (C49-C50) appropriately establish the biological basis for expecting evolutionary coupling between these sites.",
+    "result_type": "MINOR"
+  }
+]

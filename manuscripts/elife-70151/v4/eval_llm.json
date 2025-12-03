@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A zebrafish embryo screen of 1280 FDA-approved drugs identified pizotifen as an epiboly-interrupting drug. At 10 \u03bcM, 0.9% of drugs caused severe arrest, 5.2% caused delayed/interrupted epiboly, 93.3% had no effect, and 0.6% were toxic. At 50 \u03bcM, effects were more pronounced with 1.7% causing severe arrest, 8.6% causing delayed epiboly, and 4.3% causing toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, and C26-C32 provide comprehensive quantitative data from the screening experiment with clear percentages and drug counts. The identification of pizotifen as a hit is explicitly stated and supported by the screening data shown in Figure 1A-B and Table 2. The dose-dependent effects are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C17"
+    ],
+    "result": "At least 50 genes are involved in both metastasis and gastrulation progression, and GSEA demonstrated that zebrafish embryos at 50%-epiboly, shield, and 75%-epiboly stages expressed genes promoting EMT-mediated metastasis including EMT induction, TGF-\u03b2 signaling, Wnt/\u03b2-catenin signaling, and Notch signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C17 establish the conceptual foundation for the screening approach. C2 is supported by Table 1 listing 50 genes and multiple citations. C17 is supported by GSEA analysis shown in Figure 1\u2014figure supplement 1 with appropriate statistical thresholds (FDR < 0.25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "PRMT1 and CYP11A1 were elevated in highly metastatic breast cancer cell lines, and knockdown of these genes through RNA interference suppressed motility and invasion of MDA-MB-231 cells without affecting viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide validation of the screening concept using known gastrulation genes. Western blot data (Figure 1\u2014figure supplement 2A-C) shows differential expression, and Boyden chamber assays demonstrate functional effects. Statistical significance is indicated (p-values shown in figures).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Known metastasis suppressors niclosamide and vinpocetine interrupted zebrafish epiboly progression, with niclosamide causing complete arrest at early stages and vinpocetine causing severe delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 provide proof-of-concept validation. The literature citations support the anti-metastatic properties of these drugs (C22, C23), and the zebrafish phenotypes (C24, C25) are documented in Figure 1\u2014figure supplement 2D, demonstrating the predictive validity of the screen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C110"
+    ],
+    "result": "Of 78 epiboly-interrupting drugs tested, 16 affected cell viability at <1 \u03bcM and were excluded. Of the remaining 62 drugs, 20 (25.6% of 76 total) inhibited motility and invasion of MDA-MB-231 cells without affecting viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, and C110 provide clear quantitative outcomes from the secondary validation experiments. The percentages are internally consistent (20/76 = 26.3%, close to stated 25.6%). MTT assays and Boyden chamber data support the viability and motility findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "HTR2C expression correlates with tumor stage in breast cancer patients and is higher in metastatic and Her2/neu-overexpressing tumors. Pizotifen suppressed cell motility and invasion of several highly metastatic human cancer cell lines in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by clinical data citation (Pai et al., 2009). C45 is supported by Boyden chamber data in Figure 2C showing dose-dependent effects across multiple cell lines. The clinical correlation strengthens the rationale for targeting HTR2C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In zebrafish xenotransplantation experiments with MDA-MB-231 cells, pizotifen treatment significantly reduced metastatic dissemination to head (55.3% vs 95.8%), trunk (28.5% vs 47.1%), and end-tail (43.5% vs 82.6%) regions, while fish without dissemination increased from 2.0% to 45.4%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide quantitative in vivo validation data from three independent experiments with clear statistical significance. The data are presented with standard errors and shown in Figure 2D and Table 4. The magnitude of effects is substantial and consistent across dissemination patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Genetic knockdown of HTR2C in MDA-MB-231 cells significantly reduced metastatic dissemination in zebrafish, with head (6.7% vs 80.0%), trunk (6.7% vs 20.0%), and end-tail (20.0% vs 90.0%) dissemination all decreased, while fish without dissemination increased from 0% to 80.0%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide genetic validation of the pharmacological findings, ruling out off-target effects. The shRNA knockdown data (Figure 2E, Table 6) show even stronger effects than pharmacological inhibition, with dramatic reductions in all dissemination patterns and high statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In a mouse model, pizotifen treatment did not affect primary tumor size, Ki67 proliferation index, or apoptosis (cleaved caspase 3 <1% in both groups), indicating no anti-tumor effect on primary tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 establish that pizotifen specifically affects metastasis without impacting primary tumor growth. Bioluminescence imaging, tumor measurements, and immunofluorescence data (Figure 3A-C, Figure 3\u2014figure supplement 1) support this conclusion with n=10 mice per group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Pizotifen suppressed metastasis in a mouse model without affecting primary tumor growth. After 70 days, vehicle-treated mice showed metastases in lungs (5-50 nodules, 10/10 mice), livers (4/10 mice), and lymph nodes, while pizotifen-treated mice had 0-5 lung nodules (10/10 mice), lung metastases in only 2/10 mice, and no liver metastases (0/10 mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 provide comprehensive in vivo validation in a clinically relevant mouse model. Bioluminescence imaging (Figure 3C), histological analysis (Figure 3D-E), and quantitative nodule counts demonstrate robust anti-metastatic effects with n=10 mice per group. The specificity for metastasis over primary tumor growth is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Genetic validation in the mouse model showed that 4T1 cells with HTR2C knockdown formed significantly fewer lung metastases (mean reduced to 10% of control) compared to control shRNA, with only 1/5 mice showing metastases versus 5/5 control mice (mean 26.4 \u00b1 7.8 lesions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 provide genetic confirmation of pharmacological findings in the mouse model. The shRNA knockdown data (Figure 3F-H) show dramatic reduction in metastatic burden with clear statistical significance (p<0.01), ruling out off-target effects of pizotifen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "HTR2C overexpression in MCF7 and HaCaT cells induced EMT, characterized by loss of cell-cell contact, spindle-like morphology, loss of E-cadherin and EpCAM, and gain of N-cadherin, vimentin, and ZEB1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 demonstrate that HTR2C is sufficient to induce EMT. Morphological observations, western blotting, and immunofluorescence data (Figure 4A-C) show consistent EMT markers across two cell lines. The molecular and morphological changes are well-documented and characteristic of EMT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "HTR2C-expressing MCF7 cells showed increased motility and invasion in vitro and promoted metastatic dissemination in zebrafish xenotransplantation, with significantly increased head (96.7% vs 33.1%), trunk (68.8% vs 0%), and end-tail (89.5% vs 56.9%) dissemination, demonstrating that HTR2C promotes metastasis through EMT induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 establish HTR2C as a pro-metastatic factor through gain-of-function experiments. Boyden chamber data (Figure 4D) and zebrafish xenotransplantation results (Figure 4E, Table 7) from two independent experiments show consistent and statistically significant increases in metastatic behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Pizotifen treatment restored epithelial properties to metastatic cells, with 20% of MDA-MB-231 cells restoring E-cadherin expression and showing elevated epithelial markers (KRT14, KRT19), decreased mesenchymal markers (vimentin, MMP1, MMP3, S100A4), and decreased ZEB1 expression in both cells and 4T1 primary tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 demonstrate mesenchymal-to-epithelial transition induced by pizotifen. IF, FACS, and western blotting data (Figure 5A-D) show consistent marker changes. The 20% E-cadherin restoration is quantified by FACS, and the molecular changes are confirmed in both cell culture and mouse tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "HTR2C-mediated signaling induced EMT through up-regulation of ZEB1 (and also Twist1 and Snail in MCF7 cells), while blocking HTR2C with pizotifen induced mesenchymal-to-epithelial transition through down-regulation of ZEB1 (and Twist1 in MDA-MB-231 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 establish ZEB1 as a key mediator of HTR2C effects. Western blotting data (Figure 4C, Figure 5\u2014figure supplement 2-4) show reciprocal regulation of EMT transcription factors by HTR2C overexpression and inhibition. The specificity for ZEB1 in primary tumors is noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "HTR2C regulates \u03b2-catenin transcriptional activity, with HTR2C expression causing nuclear accumulation of \u03b2-catenin in MCF7 cells, while pizotifen treatment caused cytoplasmic localization in MDA-MB-231 cells. In 4T1 tumors, pizotifen decreased nuclear \u03b2-catenin and phospho-GSK3\u03b2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C106 establish the mechanism linking HTR2C to Wnt signaling. Immunofluorescence and western blotting data (Figure 5E-H, Figure 5\u2014figure supplement 1, 5) show consistent \u03b2-catenin localization changes across multiple experimental systems. The GSK3\u03b2 phosphorylation data supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Blocking HTR2C with pizotifen restored epithelial properties to metastatic MDA-MB-231 and 4T1 cells through decreased transcriptional activity of \u03b2-catenin, which suppressed metastatic progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 represent the main mechanistic conclusion integrating multiple lines of evidence. The conclusion is supported by \u03b2-catenin localization data (C97-C104), EMT marker changes (C85-C90), and functional metastasis suppression data (C48-C72). The mechanism is coherent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Several epiboly-interrupting drugs have known connections to metastasis-related mechanisms: adrenosterone and zardaverine (targeting HSD11\u03b21 and PDE3/4) inhibit EMT, racecadotril (targeting enkephalinase) confers metastatic potential, and disulfiram (targeting ALDH) confers stem-like properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 provide literature-based validation that epiboly-interrupting drugs are enriched for metastasis-relevant targets. All claims are supported by appropriate citations. This strengthens the rationale for the screening approach but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "DRD2 was highly expressed only in metastatic cell lines, and S(-)eticlopride hydrochloride (a DRD2 antagonist) suppressed cell motility and invasion of these cells in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 identify DRD2 as another potential target from the screen. Western blot data (Figure 2\u2014figure supplement 2A-C) shows differential expression, and Boyden chamber assays demonstrate functional effects. However, the manuscript notes that DRD2 overexpression did not induce EMT, limiting its validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The zebrafish embryo screen is highly efficient, low-cost, and low-labor, enabling one researcher to test 100 drugs in 5 hours using only optical microscopy, drugs, and zebrafish embryos, making it accessible to researchers without high-throughput screening instruments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 describe practical advantages of the screening method. C111 provides specific quantitative efficiency data (100 drugs/5 hours). C112 and C113 are reasonable conclusions about the method's accessibility based on the simple requirements (microscopy, embryos, drugs). The claims are supported by the described methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background knowledge establishing that metastasis is responsible for ~90% of cancer mortality, occurs through multiple steps (invasion, intravasation, extravasation, colonization), involves EMT and related mechanisms, and shares cell-biological phenomena with zebrafish gastrulation (epiboly initiated at 4 hpf, completing by 10 hpf).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C16 provide established background knowledge supported by appropriate citations. These claims set the context for the study but do not represent new findings. The information is accurate and well-cited, establishing the rationale for using zebrafish gastrulation as a model for metastasis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C4",
+      "C109"
+    ],
+    "result": "Pizotifen is an antagonist for HTR2C, and zebrafish have orthologues to 86% of 1318 human drug targets, supporting the translational relevance of the zebrafish screening approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C109 provide established pharmacological and comparative genomics knowledge supported by citations. C4 is standard drug knowledge, and C109 (Gunnarsson et al., 2008) supports the validity of using zebrafish for drug target identification. These are contextual facts rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

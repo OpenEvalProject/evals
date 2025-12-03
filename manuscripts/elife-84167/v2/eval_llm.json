@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The UKHSA genomic surveillance program collected 10,223 S. Enteritidis isolates between 2014-2019, of which 3,434 had travel metadata. After quality filtering, clone downsampling (\u22645 SNPs), and removal of low-incidence countries (<10 isolates), 2,313 genomes from 38 countries across four continents were retained for machine learning, displaying strong phylogeographical signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 and C99-C103 provide a clear and consistent description of the dataset collection, filtering, and composition. The phylogeographical signal is supported by Figure 1B. The methodological steps are well-documented and the final dataset composition is explicitly stated with appropriate quality control measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "S. Enteritidis infections showed strong seasonality in Europe and Asia (summer peaks), with Turkey and Egypt presenting disproportionately high infection risk for UK travelers, while France and Spain showed very low risk despite being popular destinations. The UKHSA dataset demonstrated more consistent sampling than NCBI data for the same period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by data presented in Figures 1C, 1D, and 1E. The seasonality patterns, relative risk calculations, and dataset comparisons are clearly documented with appropriate statistical methods (Kolmogorov-Smirnov test for sampling consistency).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A hierarchical machine learning classifier was developed with 16 multi-class classifiers (1 root, 4 regional, 11 sub-regional) to classify 2,313 S. Enteritidis genomes into 53 classes (4 continents, 11 sub-regions, 38 countries). The model uses a top-down approach with a 0.5 probability threshold and was trained on unitig presence-absence patterns from raw sequencing reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C49-C53 provide a clear and consistent description of the hierarchical model architecture and methodology. The model structure is well-documented and the approach is appropriately described with supporting figures (Figure 2A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C54",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The hierarchical model achieved macro F1 scores of 0.954 (continental), 0.718 (sub-regional), and 0.661 (country level), outperforming a flat classifier (macro F1: 0.61). Ensemble classifiers performed best, and class imbalance had minimal impact, with two of the top four models requiring no resampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C54 report clear performance metrics supported by Figure 2 and Supplementary file 1A. Claims C78-C80 about model selection are supported by comparative analysis. The hierarchical advantage over flat classification is demonstrated with appropriate metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C55",
+      "C75"
+    ],
+    "result": "The complete pipeline processes samples from raw sequencing reads to geographical prediction in under 4 minutes per sample (approximately 3.5 minutes assuming <100x coverage).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C55, and C75 consistently report the computational performance of the method. The timing is explicitly stated and represents a key practical advantage of the approach for real-time surveillance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C56",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "Classification accuracy varied by region: Africa showed consistently high accuracy (hF1 >0.7 for all classes), Asia showed moderate to high accuracy (hF1: 0.58-0.95), and Europe was generally well-classified (hF1 >0.66) except for France and Italy (hF1 ~0.3). Nine commonly visited countries achieved hF1 >0.9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C56-C58, C62 are directly supported by data in Figure 3A. The regional and country-level performance metrics are clearly presented with specific values. The variation in performance across geographical regions is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C77"
+    ],
+    "result": "Classification accuracy was negatively correlated with low sample numbers and high within-class genetic diversity. France and the United States showed both characteristics, with French samples arising from multiple divergent clades. However, these factors did not fully explain all variation in predictive accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 and C77 are supported by analyses in Figure 3B and supplementary figures. The correlation between sample size, diversity, and accuracy is demonstrated, though the authors appropriately note this doesn't explain all variation, suggesting additional complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Longitudinal analysis showed that predictive accuracy improved with training window size, asymptoting after 2 years of data. The largest improvement occurred between 1-2 years of training data. Predictive accuracy decreased by approximately 0.05 micro F1 per year when predicting into the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by data in Figure 4A and 4B. The temporal stability analysis is well-designed and provides practical guidance for model retraining schedules. The quantitative decay rate is explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "External validation showed high accuracy for single-country outbreaks: Spanish egg outbreak (100% correct), South African clinical cases (100% correct), and Singaporean outbreaks (100% correct regional attribution, 91.7% correct country attribution).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C72-C74 report validation results supported by Figure 5A, 5D, and 5E with appropriate citations. The high accuracy for geographically focused outbreaks demonstrates model robustness for this use case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The Polish egg outbreak (2015-2018) was correctly attributed to Europe (131/131) but misattributed at finer scales to Southern Europe (131/131) and Spain (103/130). Polish poultry samples showed 97.1% European attribution but only 51.4% Poland attribution. This multi-country outbreak represents an important model limitation, demonstrating how contaminated food distribution networks can confound source attribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 and C85-C87 are supported by Figure 5B and 5C. The authors appropriately identify this as a limitation and provide a mechanistic explanation: mislabeled training samples from the outbreak were attributed to Southern European countries based on travel data, biasing the model. This represents honest reporting of model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Genomic features were extracted using a colored De Bruijn graph approach, identifying 426,647 unique unitigs that were clustered into 94,865 pattern features based on perfect co-occurrence. The dataset was split 75-25% train-test stratified by country.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 describe the feature engineering methodology with appropriate technical detail and citations. The dimensionality reduction from unitigs to patterns is clearly explained and the train-test split follows standard practices with appropriate stratification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The model does not incorporate temporal information, seasonal fluctuations, multiple label assignment, or animal host/food source information, which could potentially improve predictions for multi-country outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 explicitly acknowledge model limitations with appropriate citations to methods that could address these gaps. This represents transparent reporting of scope limitations and suggests directions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C95",
+      "C96"
+    ],
+    "result": "Only 38 of 122 countries (31%) in the initial dataset had sufficient samples (\u226510) for model inclusion. The UK was excluded as a source due to extremely low S. Enteritidis prevalence in domestic poultry and lack of clinical isolates linked to local foodstuffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C95-C96 describe dataset limitations with appropriate justification. The UK exclusion is supported by citation to European surveillance data. The sample size threshold is clearly stated and represents a reasonable inclusion criterion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The model has inherent limitations in complex scenarios: it cannot identify true pathogen reservoirs when contaminated foodstuffs are exported between countries, though travel data can capture relevant strains in imported foods. Potential confounders include multi-country trips and layovers (~15% of flights), and strain prevalence likely varies across borders due to regulatory differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C88-C90 acknowledge important limitations with appropriate citations. The discussion of confounding factors is balanced and realistic. Claim C84 is appropriately labeled as speculation about model behavior in complex scenarios, supported by the Polish outbreak validation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C97"
+    ],
+    "result": "This work represents the first application of hierarchical machine learning to geographical source attribution for bacterial pathogens, as machine learning had previously been applied only to host prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C97 assert novelty based on literature review (C31-C34 cite prior work on host prediction). The claim is appropriately scoped to geographical source attribution specifically, distinguishing it from prior host attribution work. The literature review appears comprehensive for this specific application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "S. Enteritidis is a major global cause of salmonellosis transmitted through contaminated food, causing 550 million illnesses annually including 220 million children. In the UK, imported foods and foreign travel are now the primary infection risks following successful domestic control programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C12-C20 provide background context supported by appropriate citations to WHO, UKHSA, and peer-reviewed literature. These establish the public health significance and epidemiological context for the study. All claims are properly attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Whole genome sequencing provides high-resolution typing for outbreak investigation. The UKHSA has routinely sequenced all UK Salmonella cases since 2014 with travel metadata, enabling identification of major outbreaks. Traditional UKHSA source attribution involves phylogenetic analysis, genetic relatedness assessment, travel case analysis, and food network reconstruction, but is resource-intensive and limited to major threats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 describe current WGS surveillance practices and traditional attribution methods with appropriate citations. The description of UKHSA methods and their limitations provides important context for the need for automated approaches. The resource limitations are acknowledged as motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "Machine learning has successfully predicted bacterial host sources for multiple pathogens (S. enterica, E. coli, S. typhimurium, C. jejuni, L. monocytogenes). S. Enteritidis has a population structure stratified by geographical source, making it suitable for ML-based geographical attribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C36 establish the precedent for ML in microbial source attribution and the biological basis for geographical prediction. All claims are supported by appropriate citations. The phylogeographical structure of S. Enteritidis is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C98"
+    ],
+    "result": "The pipeline outputs predicted probabilities at each hierarchical level (region, sub-region, country), providing granular source attribution with confidence assessment. The rapidity of predictions should enhance epidemiologists' ability to trace outbreak sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is supported by the methodology and Figure 3C showing probability outputs. However, C98 is speculative about future impact on epidemiological practice. While the technical capability is demonstrated, the actual enhancement of epidemiological practice would require prospective implementation and evaluation, which has not been performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The COVID-19 pandemic disrupted international travel, but UKHSA is seeing a return to pre-pandemic infection levels and expects seasonal patterns to return.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 acknowledge a limitation regarding model applicability during/after COVID-19. C81 is well-established knowledge about pandemic travel disruption. C82 represents current UKHSA observations about infection patterns returning to baseline, which is reasonable given the timing of the manuscript.",
+    "result_type": "MINOR"
+  }
+]

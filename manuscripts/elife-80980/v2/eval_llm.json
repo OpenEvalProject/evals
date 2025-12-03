@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C80",
+      "C81"
+    ],
+    "result": "DeCo-LACE successfully collected high-resolution images of entire lamellae (100-250 nm thick) representing 1-2% of cellular volume using a novel data acquisition scheme with three key strategies: capturing all electrons, using image shift to raster the lamella, and focusing without sacrificial areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C36, C80-C81 collectively demonstrate successful implementation of DeCo-LACE. The methodology is well-documented with timing data (~30 min milling, ~90 min imaging per lamella), consistent defocus measurements (800 nm), and coverage of entire lamellae. The experimental data from eight lamellae with detailed imaging parameters supports the technical feasibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C53",
+      "C148",
+      "C149"
+    ],
+    "result": "2DTM successfully detected and localized large ribosomal subunits across entire cellular sections, producing maps with 10-500 ribosomes per micrograph in cytosolic regions and achieving SNR values up to 10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C25-C28, C53, C148-C149 provide converging evidence for successful 2DTM application. The detection threshold (SNR 7.75) was validated by false-positive analysis in nuclear regions (247 detections in 670 tiles, lower than expected), and clear peaks were observed in MIPs. The spatial distribution data across lamellae confirms the method's effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C70",
+      "C71",
+      "C76",
+      "C105",
+      "C106",
+      "C113"
+    ],
+    "result": "Aberrations from large beam-image shifts (up to 7 \u03bcm) and condensed beams did not significantly impede LSU detection by 2DTM, with uniformly high SNR values throughout illuminated areas in both eucentric and fringe-free conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C70-C71, C76, C105-C106, C113 demonstrate that expected aberrations did not limit detection. The data showing uniform SNR distribution across beam-image shift values (Figure 6D-F) and comparable performance between illumination conditions directly support this conclusion. The analysis correctly identifies lamella thickness as the primary limiting factor rather than optical aberrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C29",
+      "C30",
+      "C54",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Highly heterogeneous ribosome density was observed within and between lamellae, with 10-500 ribosomes per cytosolic micrograph, 1089-6433 total detections per lamella, and median SNRs of 8.7-9.7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C29-C30, C54, C65-C68 document substantial spatial heterogeneity in ribosome distribution. The quantitative data showing 10-fold variation in local concentrations, absence of detections in nucleus/mitochondria, and inter-lamella variability are well-supported by Figures 1, 4-6. This variability is appropriately attributed to both biological and technical factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C82",
+      "C83",
+      "C84",
+      "C125"
+    ],
+    "result": "Computation is the primary bottleneck for visual proteomics, with 2DTM requiring approximately one week per lamella on 32 Nvidia A6000 GPUs, substantially longer than sample preparation (~30 min) and imaging (~90 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C82-C84, C125 provide clear timing data demonstrating computational limitations. The calculation that ~17,000 GPU hours would be needed for 100 lamellae is based on measured performance. This conclusion is well-supported by direct comparison of processing times to experimental times.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C22"
+    ],
+    "result": "Plunge-frozen mammalian neutrophil-like cells showed successful vitrification throughout lamellae, with smooth bilayered membranes and no crystalline ice, despite uncertainty about whether plunge freezing would be adequate for larger mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 document successful sample preparation. The image data (Figures 1C-D) showing smooth membranes and absence of crystalline ice directly supports vitrification quality. The initial uncertainty (C22) about vitrifying larger cells was appropriately resolved by experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "Initial 2DTM attempts failed due to beam edge interference with motion correction, but cropping movie frames to exclude beam edges enabled successful detection with motion below 1 \u00c5 per frame.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe a technical problem and solution. The progression from failed detection (C46) to successful detection after cropping (C48-C49) is documented with motion data (Figure 3\u2014figure supplement 1-2). The identification of beam edges as the cause and the implementation of a solution demonstrates rigorous troubleshooting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Lamellae showed thickness gradients (100-250 nm, thinner at leading edge) and no LSU detections within ~35 nm of edges, possibly due to FIB-milling damage, indicating need for improved sample preparation methods for accurate molecular quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 document sample preparation limitations. The thickness measurements using Beer-Lambert law and the 70 nm gap in detection range (Figure 3\u2014figure supplement 2B-C) provide quantitative evidence. The speculation about FIB damage (C58) is appropriately supported by citation to similar observations. The recommendation for improved methods (C60) logically follows from the limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "LSUs were observed in biologically relevant patterns including association with rough ER and nuclear membranes, ring-like structures potentially indicating circularized mRNAs, and clusters within granule inclusions spanning the lamella thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 describe biological observations from the ribosome maps. The image data (Figures 4C-F, 5C-F) clearly show these patterns. The interpretation of ring structures as circularized mRNAs (C62) is appropriately marked as speculative with citation support. The z-position analysis for granule inclusions (C64) provides additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Novel granule structures containing membrane-enclosed cytosolic inclusions (150-300 nm diameter granules with 100-200 nm inclusions) were observed, potentially representing a new type of extracellular vesicle (granule-derived vesicles, GDVs) that can contain ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C45, C93-C99 describe a potentially novel observation. While the structural data (Figure 3\u2014figure supplement 4C, Figures 4F, 5D-E) clearly show these inclusions, the interpretation as a new vesicle type (GDVs) is highly speculative (C94, C96, C98). The novelty claim (C45) is based only on authors' knowledge. The functional significance and existence in primary cells remain unvalidated (C99), requiring substantial additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C119"
+    ],
+    "result": "Substantial inter-lamella variability in ribosome detection (despite identical preparation conditions) indicates that visual proteomics studies will require orders of magnitude more data than collected here to achieve statistical power for quantitative conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C119 appropriately identify a critical limitation. The observation that lamellae from identical conditions show substantial variability (C78) logically leads to the conclusion about data requirements (C79, C119). This is an important insight for future experimental design, though the specific magnitude of additional data needed is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Eucentric focus conditions produced visible beam fringes at tile edges that were absent in fringe-free conditions, but these fringes did not impede 2DTM detection. A consistent shading artifact pattern attributed to K3 camera non-linear behavior was observed in both conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C100-C104 document technical artifacts and their impact. The visual evidence of fringes (Figures 3C vs 3F) and shading patterns (Figure 3\u2014figure supplement 3) is clear. The conclusion that fringes don't affect detection (C40) is supported by comparable performance data (C70-C71). The camera behavior explanation (C102) is appropriately marked as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "DeCo-LACE provides advantages over previous approaches in high throughput imaging and biological context, offering full coverage of cellular cross-sections that cannot be achieved by existing tomography-based montaging methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 appropriately position the work relative to prior art. The comparisons to Peck et al., Yang et al., Bouvette et al., and Eisenstein et al. are supported by citations and accurately describe differences in scope and coverage. The claim of superior coverage (C92) is justified by the demonstrated ability to image entire lamellae.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The 2DTM template used a mouse LSU structure with B-factors multiplied by 1.5 (resulting in median 120 \u00c5\u00b2 equivalent to 7.7 \u00c5 filter), and expected beam-tilt of 1.75 mrad would cause phase errors >\u03c0/4 at resolutions >5.75 \u00c5, exceeding the template's effective resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 provide detailed technical analysis of template resolution and expected aberrations. The B-factor calculations (C109) and beam-tilt phase error estimates (C111-C112) based on Cheng et al. citations are mathematically sound. This analysis explains why beam-tilt effects were not observed (they exceed the template's effective resolution).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C126",
+      "C127"
+    ],
+    "result": "Future visual proteomics studies could achieve one cellular volume (~100 lamellae) within 12 hours of TEM time with improved data acquisition, though FIB/SEM sample preparation and computational analysis remain bottlenecks that might be addressed through methods like WAFFLE and algorithm optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C124, C126-C127 make predictions about future capabilities. While the calculations for TEM time (C122) are based on measured exposure times, the feasibility depends on unvalidated improvements (parallel calculations). The suggestions for addressing bottlenecks (WAFFLE for sample prep, FFT optimization for computation) are speculative. These represent reasonable projections but lack experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The mouse LSU template (~2 MDa, ~1.3 MDa nucleic acid) may have higher scattering density than protein-only complexes, and simulations suggest 2DTM could detect complexes as small as 300 kDa, though conformational homogeneity and cellular concentration affect detectability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 appropriately discuss detection limits and factors affecting 2DTM performance. The molecular weight data (C114) is factual, the speculation about protein-only complexes (C115) is appropriately qualified, and the 300 kDa limit (C116) is supported by citation to simulations. The discussion of conformational homogeneity and concentration effects (C117-C118) represents reasonable inference about detection challenges.",
+    "result_type": "MINOR"
+  }
+]

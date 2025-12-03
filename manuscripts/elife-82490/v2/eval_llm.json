@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C54",
+      "C55"
+    ],
+    "result": "The Pump-Leak model quantitatively explains cell size scaling laws through three physical constraints (electroneutrality, osmotic balance, and ionic flux balance). Order of magnitude estimates show that metabolites and ions dominate cell volume (78% wet volume) while proteins dominate dry mass (60%), and homeostatic density arises from linear scaling between proteins and small osmolytes during exponential growth via enzymatic control of amino acid production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C30-C33, C54-C55 collectively establish the theoretical framework and its quantitative predictions. The order of magnitude estimates (Table 1, Figure 1B-C) provide quantitative support, and the theoretical derivations (Equations 1-4, 10) are mathematically sound. The mapping between coarse-grained parameters and biological components is explicit and justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C63",
+      "C66",
+      "C68",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "The model predicts and quantitatively explains dry mass dilution at senescence through saturation of DNA and mRNAs by RNA polymerases and ribosomes, leading to protein saturation while amino acids increase linearly. This prediction is validated against yeast data showing exponential-to-linear growth transition at ~3 hours with ploidy-dependent volume scaling and growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C63, C66, C68, C72-C76, C79 are strongly supported by quantitative comparison with Neurohr et al. 2019 data (Figure 2B-E). The model fits volume data with 4 parameters and predicts protein dynamics and density without additional fitting. The protein degradation time (\u03c4_p=1hr9min) matches independent measurements (Belle et al. 2006: 43min). The saturation time (t**=2hr44min) corresponds to observed dilution onset. Ploidy predictions match experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Mitotic swelling (~10% volume increase) is explained by counterion release from chromatin due to histone tail modifications (particularly deacetylation), which increases free osmolytes and causes water influx. The mechanism predicts universal mammalian cell swelling during prophase, reversibility during anaphase, and positive correlation with genome content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C38, C80-C100 present a theoretically plausible mechanism based on Manning counterion condensation theory. Order of magnitude estimates suggest ~10% swelling is achievable (C97). However, the mechanism remains speculative (C6, C38 marked as SPECULATION). The histone deacetylation hypothesis (C93) is supported by citation but the causal link to counterion release lacks direct experimental validation. The HeLa cell observation (C100) provides correlative support but is insufficient for strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C102",
+      "C103",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C139"
+    ],
+    "result": "Nuclear scaling (linear NC ratio) originates from osmotic balance at the nuclear envelope and a large metabolite pool that dilutes non-scaling chromatin counterions. The NC ratio would be 4\u00d7 larger without metabolites, and maintaining constant NC ratio during growth requires high metabolite concentrations, a conserved biological feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C39-C42, C102-C103, C109-C112, C139 are supported by the nested Pump-Leak model (Equations 12, 15-17) and numerical simulations (Figure 4B-C, Appendix 1-figure 1B). The theoretical prediction that metabolites dilute chromatin counterions is quantitatively demonstrated (C109: 4\u00d7 effect). The model explains the century-old nuclear scaling observation (C103) through physical principles. Order of magnitude estimates confirm the biological regime (C112, C143).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Nuclear envelope folds provide nonlinear mechanical properties that buffer tension and maintain osmotic balance, explaining nuclear scaling robustness. Under hypo-osmotic shock, fold unfolding causes nuclear volume saturation and NC ratio decrease, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 are supported by theoretical analysis (Equation 19) and comparison with Finan et al. 2009 data (Figure 4D). The nonlinear constitutive equation for lamina tension (C126) is inferred from the contrast between linear elasticity predictions (C125) and observed scaling robustness. The hypo-osmotic shock predictions (C130) match experimental data with fitted parameters (K=50mN/m, s=4% folds). The model correctly predicts metabolite efflux during shock (C131).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C137"
+    ],
+    "result": "Three amino acids (glutamate, glutamine, aspartate) account for 73% of metabolites, with glutamate representing 50% of free amino acids but only 6% of protein composition. This disproportionate representation indicates roles beyond protein synthesis, linking metabolic reprogramming in cancer (increased glutamate/glutamine consumption) to abnormal NC ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C114-C117, C137 are supported by Park et al. 2016 data (C56) and King and Jukes 1969 (C58). The inference that amino acids have non-protein roles (C59) is logical given the disproportionate representation. The connection to cancer (C116-C117) is supported by citations (Fujita et al. 2020, Altman et al. 2016). The prediction that metabolite depletion affects NC ratio (C114-C115) is testable and follows from the model (Figure 4B-C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C138"
+    ],
+    "result": "Disruption of nuclear import decreases NC ratio while disruption of nuclear export increases it, explained by changes in protein partitioning and subsequent decoupling of protein-amino acid homeostasis. This explains recent observations of increased nuclear diffusivities after blocking nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120, C138 are supported by numerical simulations (Appendix 1-figure 1) and comparison with Lemi\u00e8re et al. 2022 experiments. The model correctly predicts the transient decrease followed by increase in nuclear diffusivities (C120) through the mechanism of ribosome synthesis impingement (C138). The predictions are testable and consistent with experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Changing external ion concentration does not directly influence nuclear scaling as long as the nuclear envelope is not under strong tension, as the five essential parameters remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by theoretical prediction from the model and experimental validation from Guo et al. 2017. The prediction follows logically from the osmotic balance condition and the identification of five key parameters. The experimental confirmation (C122) provides strong support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The quasi-static Pump-Leak model is valid for timescales >few minutes, as water equilibrates in seconds and ions in minutes. Osmotic pressure is balanced at the plasma membrane since hydrostatic and osmotic pressures differ by \u22653 orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C48-C50 establish the model's validity regime based on established timescales (Venkova et al. 2022, Milo and Phillips 2015, Hoffmann et al. 2009). The osmotic balance conclusion (C52) is supported by order of magnitude estimates in Table 1 showing \u0394P~10-100 Pa vs \u03a0\u2080~7.2\u00d710\u2075 Pa. The quasi-static approximation (C50) follows logically from the timescale separation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The ideal solution approximation for osmotic pressure is justified because small osmolytes dominate free osmolytes, making steric and attractive interactions small corrections (~2 kPa vs ~720 kPa). The Donnan equilibrium effectively accounts for electrostatic interactions despite using ideal gas law.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 provide theoretical justification for the model's approximations. The second virial coefficient estimate (C152) shows corrections are ~2 orders of magnitude smaller than ideal terms (Table 1). The Donnan equilibrium accounting for electrostatics (C153) is demonstrated in Appendix 1, section 7.1. These justifications are mathematically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Genome size directly impacts nuclear volume only when chromatin counterions dominate trapped proteins and metabolites. Since chromatin counterions are comparable to trapped proteins but ~60\u00d7 smaller than metabolites, genome content does not directly determine nuclear volume in normal cells, but may in cancer cells with high nuclear envelope potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C148 are supported by order of magnitude estimates (C143) and agreement with Cantwell and Nurse 2019b observations (C144). The prediction about cancer cells (C147-C148) is speculative but follows logically from the model. The connection to genetic screens (C146, Cantwell and Nurse 2019a) provides additional support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "The nested Pump-Leak model predicts cell swelling upon nuclear envelope breakdown (NEB) if the nuclear envelope is under tension. This can be tested by artificially increasing nuclear envelope tension through strong uniaxial confinement to synchronize mitotic swelling with NEB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C150 present a testable prediction from the model. However, the prediction remains untested (C150 is marked SPECULATION). The mechanism is theoretically sound but requires experimental validation. The suggestion to use uniaxial confinement (Berre et al. 2014) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The Pump-Leak framework can be generalized to multiple ion species and organelles (vacuoles, mitochondria, nucleoids) while maintaining the same functional form for volume expressions, as the Donnan picture does not require membranes and multivalent ions are negligible (micromolar range).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154-C159 propose extensions of the framework. The generalization to multiple monovalent ions (C154) is mathematically justified. The negligibility of multivalent ions (C155) is supported by established knowledge. However, the applications to other organelles (C156-C158) are speculative suggestions for future work, not demonstrated results. The theoretical basis (Appendix 1, Equation A.83) is provided but lacks experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Cell size scaling laws (linear relations between cell volume, dry mass, and nuclear size) are robust and ubiquitous across yeasts, bacteria, and mammals, but break down in pathologies like cancer and senescence. Despite experimental and theoretical progress, the underlying principles remain incompletely understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C21 establish the biological context and motivation. These are well-supported by extensive citations (Wilson 1925, Conklin 1912, Neurohr and Amon 2020, Cantwell and Nurse 2019b, Webster et al. 2009, etc.). The statements about experimental difficulties (C18-C19) and theoretical gaps (C20-C21) accurately characterize the field's state and motivate the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Existing theories include the nucleoskeletal theory (DNA content controls NC ratio via ploidy) and Pump-Leak models based on nonequilibrium thermodynamics. However, genome size alone is insufficient to explain nuclear size, and the correspondence between biological factors and Pump-Leak model parameters remains poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 accurately summarize prior theoretical work with appropriate citations (Webster et al. 2009, Kedem and Katchalsky 1958, Mori 2012, Cadart et al. 2019, etc.). The critique of existing theories (C24, C29) is fair and motivates the current study's contribution. The description of the Donnan effect (C27) and cellular strategies (C28) is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Cells control size independently of mass through two established mechanisms: mechanosensitive ion channel permeability changes during cell spreading (volume adaptation at constant dry mass) and metabolite synthesis (e.g., glycerol in budding yeast under hypertonic shock).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe established mechanisms supported by recent citations (Venkova et al. 2022, Adar and Safran 2020, Neurohr and Amon 2020). These provide biological context for the model's predictions and demonstrate that the framework can accommodate known regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The Pump-Leak model is based on three fundamental equations: electroneutrality (charge neutrality at scales >Debye length ~nm), osmotic balance (water chemical potential equilibrium), and ionic flux balance. The model considers impermeant molecules (proteins, metabolites) and ions, with only cations pumped outward as a simplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 describe the model's physical foundations. The three fundamental equations (C46: electroneutrality, osmotic balance, ionic flux balance) are well-established physical principles. The Debye length scale (C47) is correct for physiological conditions. The simplification to pump only cations (C45) is justified in the Discussion. The model description is accurate and complete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C160",
+      "C161"
+    ],
+    "result": "Cell size scaling laws can be understood quantitatively through three physical properties (electroneutrality, water chemical potential balance, ionic flux balance) combined with universal biological features. The simplified Pump-Leak model focusing on leading-order effects provides a powerful framework fundamental to cell biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133, C160-C161 summarize the study's main conclusions. These are supported by the comprehensive theoretical framework, quantitative comparisons with data, and successful predictions across multiple phenomena. The claim of fundamental importance (C161) is justified by the breadth of explained phenomena and quantitative accuracy, though marked as SPECULATION regarding future impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Dry mass dilution at senescence is believed to be fundamentally important for stem cell potential during aging. While the physical laws and coarse-grained parameters are ubiquitous, the specific biological processes (DNA/mRNA saturation mechanism) are not universal, and other mechanisms (mechanosensitivity, metabolite synthesis) also affect density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 provide important caveats about the model's scope. The biological importance of senescence dilution (C134) is supported by citations (Neurohr et al. 2019, Lengefeld et al. 2021) but marked as SPECULATION. The clarification about universality (C135-C136) is appropriate and honest about the model's limitations. The acknowledgment of alternative mechanisms strengthens rather than weakens the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C140",
+      "C141"
+    ],
+    "result": "Organelle volume scales with cell volume, a widely documented phenomenon. Yeast cells lack lamina, suggesting nuclear folds may not be required for scaling in all organisms. Recent evidence supports osmotic pressure balance at the nuclear envelope in isotonic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C140-C141 provide biological context and connect to recent literature. The organelle scaling observation (C101) is well-established (Chan and Marshall 2010, Cantwell and Nurse 2019b). The yeast observation (C140) is accurate and appropriately qualified as speculation about fold requirement. The osmotic balance evidence (C141) is supported by multiple recent citations (Deviri and Safran 2022, Lemi\u00e8re et al. 2022, Finan et al. 2009).",
+    "result_type": "MINOR"
+  }
+]

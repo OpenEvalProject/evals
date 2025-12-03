@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C29",
+      "C45"
+    ],
+    "result": "Lateralization strength (MeanAbsHI) displays a strong phylogenetic signal (\u03bb=0.89, p=0.03) among anthropoids, varying substantially between lineages but remaining stable within closely related taxa. In contrast, lateralization direction (MeanHI) shows random fluctuations around zero (\u03bb<0.001, p=1) with no phylogenetic signal, and notable population-level shifts toward either right- or left-hand preferences are uncommon among non-human primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C29, and C45 are well-supported by phylogenetic statistical analyses (Pagel's \u03bb and likelihood ratio tests) and are visualized in Figure 1. The contrasting patterns between strength and direction are clearly demonstrated with appropriate statistical tests and effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A significant effect of ecology on lateralization direction was found when humans were included in the model (p=0.04), with terrestrial species displaying a right-hand bias compared to arboreal ones. However, when humans were removed, this effect became a non-significant trend (p=0.07). Tool use and brain size showed no significant effects on lateralization direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C32 show that the ecological effect on direction is heavily dependent on human inclusion, suggesting the result may be driven by human outlier status rather than a general anthropoid pattern. The p-value of 0.07 without humans is marginal and the effect appears weak, requiring cautious interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C46"
+    ],
+    "result": "A significant negative effect of terrestrial lifestyle on lateralization strength was found (p=0.04), with terrestrial anthropoids showing weaker hand preferences than arboreal species. Hand preference strength patterns show signatures of both ecology and phylogeny, with no correlation to brain size or habitual tool use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, and C46 are supported by PGLS modeling (Table 2C, Table 3C) showing a significant ecological effect on strength. The phylogenetic signal for strength (C27) combined with the ecological correlation provides converging evidence, though the model improvement over null is modest (\u0394AICc = 2.53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Only 2 of 37 non-human species (gorillas and chimpanzees) exhibited significant population-level hand preference bias after Bonferroni correction, restricting such biases to the African ape lineage. Chimpanzees showed right-handedness, while golden snub-nosed monkeys showed left-handedness, and geladas and black lion tamarins had large proportions of ambipreferent individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by statistical analyses (one-sample t-tests and chi-square tests with multiple testing correction) presented in Table 1. The rarity of significant population-level biases is clearly demonstrated, though sample size effects are acknowledged (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Human right-handedness represents an unparalleled extreme among anthropoids in terms of direction (MeanHI = 0.761, 87.3% right-handers), but not in strength of lateralization (MeanAbsHI = 0.943). Some non-human primates (Trachypithecus langurs: 0.868, Ateles spider monkeys: 0.831) approach human lateralization strength, while great apes show modest strength in comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, C76-C79 are well-supported by the data in Table 1 and comparative analyses. The distinction between direction and strength is important and clearly demonstrated. However, the claim about humans being deviant among terrestrial primates (C79) requires more careful consideration of the ecological effect uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Bayesian models showed no effect of age or sex on lateralization direction in the total sample, but subadult hominoids tended toward left-handedness compared to adults (credible interval: -0.28 to -0.01). Age effects on lateralization strength were found in the total sample and hominoids (weaker in subadults), but not in platyrrhines or cercopithecoids separately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by Bayesian phylogenetic multilevel models with credible intervals reported in Supplementary file 2. The age effect on strength replicates previous findings (C95). The hominoid-specific directional effect may reflect sample composition biases acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study's data does not unambiguously support any tested hypothesis on hand preference evolution. The traditional postural origins hypothesis (POH) predicting right-hand bias across anthropoids is contradicted, as 21 of 38 species show weak left-hand bias. The novel POH predicting terrestrial right-handedness and arboreal left-handedness has markedly low predictive power, lacks an evolutionary mechanism, and is based on outdated assumptions about primate ancestry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65, C71-C73 present a coherent critique of the POH supported by the study's empirical findings (C61, C64) and conceptual analysis (C65). The rejection is well-justified by the data showing uniform direction across most species and the weak/non-significant ecological effects. The critique of the hypothesis's theoretical foundations (C66-C70) is supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "No effects of foraging-related tool use on lateralization direction or strength were found, despite the sample representing all primate lineages with habitual tool users. Surprisingly, no notable influences of absolute brain size on hand preferences were recovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C75 are supported by PGLS modeling results (Tables 2 and 3) showing non-significant effects of tool use and brain size. However, the authors acknowledge this contradicts theoretical expectations and prior neuroanatomical evidence (C20, C21), suggesting the null result may reflect limitations rather than true absence of effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Ancestral state reconstruction modeled similarly moderate hand preference strength in hominoid (AbsHI = 0.606) and cercopithecoid (AbsHI = 0.627) stem lineages, with higher strength in ancestral platyrrhines (AbsHI = 0.740). Hand preference strength was particularly weak in Papionina species (especially geladas: MeanAbsHI = 0.257) and strongest in humans (0.943), Trachypithecus langurs (0.868), and Ateles spider monkeys (0.831).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by phylogenetic maximum likelihood ancestral state estimation (Figure 1, Supplementary file 1) and empirical data (Table 1). The methods are appropriate for this type of inference, though ancestral state estimates always carry uncertainty that should be acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C92",
+      "C93"
+    ],
+    "result": "The study assembled data on hand preferences for standardized object manipulation in 1,786 individuals from 38 anthropoid species, combining 501 newly collected individuals from 26 species (14 never tested before) with published literature. This represents the first quantitative phylogenetic analysis of hand preferences across monkeys, apes, and humans using phylogenetically informed modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C92-C93 accurately describe the study design and dataset. The sample size is substantial and the phylogenetic approach is novel for this research area. The combination of original and literature data is appropriate, though mixing insertion and bout data (acknowledged in C58) introduces some methodological heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The hand used by experimenters to offer tubes had no effect on primate hand preferences (t=-1.31, SE=0.02, p=0.191). The vast majority of tube task responses (90.6%) were observed in a sitting position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C57 are supported by appropriate statistical analysis (linear mixed effects model) and descriptive statistics. These methodological controls strengthen confidence in the main results by ruling out experimenter bias and documenting postural consistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The finding that terrestrial taxa are less lateralized than arboreal ones appears intuitive given that arboreal species need to flexibly stabilize their bodies in the canopy. The fact that these patterns were found in zoo-housed primates with different locomotor regimes than wild conspecifics suggests a significant innate component. However, PGLS models for lateralization strength considering ecology only moderately exceeded null models (\u0394AICc = 2.53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 provide appropriate interpretation of the ecological effect on strength. The modest model improvement (C98) is honestly reported and tempers the strength of conclusions. The inference about innate components (C97) is reasonable but somewhat speculative given the captive sample.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C52",
+      "C69",
+      "C81",
+      "C84",
+      "C90",
+      "C91"
+    ],
+    "result": "Human lateralization patterns do not align with trends found among other anthropoids, suggesting unique selective pressures gave rise to unusual human hand preferences. The data challenge popular ideas on primate handedness evolution, and the evolutionary underpinnings of human handedness remain enigmatic. Future hypotheses should focus more on lateralization strength rather than direction to address the phylogenetic patterns observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C52, C69, C81, C84, C90-C91 present well-supported conclusions and recommendations based on the study's findings. The inference about unique selective pressures (C47, C84) is reasonable given the data, though necessarily speculative. The recommendation to focus on strength (C91) follows logically from the strong phylogenetic signal for strength versus direction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Pronounced right-handedness (85-95% right-handers) is a universal trait among human populations and might be ancient in genus Homo. This proportion appears unmatched among primates, and individual humans tend to be strongly handed with ambiguous preferences being extremely rare, which is unusual compared to other primate lineages. Both strength and direction of population-level manual lateralization in humans are widely considered remarkable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 establish the background context for human handedness based on well-cited literature. These are established facts in the field that provide the motivation for the comparative study. The citations are appropriate and the claims are not controversial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Handedness is a behavioral consequence of functional brain asymmetries, with right-handedness resulting from left hemisphere specializations. In anthropoid primates, precentral gyrus asymmetries in primary motor cortex show particular association with individual hand preference. However, the proximate reasons for individual manual lateralization expression, including genetic basis and influences outside motor cortex, are not fully understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 accurately summarize established neuroscientific knowledge about handedness and brain lateralization based on appropriate citations. These provide necessary background on the neural basis of handedness, though they are not findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C88",
+      "C89"
+    ],
+    "result": "The origins of human right-handedness have traditionally been linked to language and manual gestures (also left-hemisphere processed), but current evidence suggests manual and language lateralization are not as tightly correlated as once believed. A link beyond superficial left-hemisphere collateralization is far from evident, and language and handedness appear largely independent on various structural levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C88, C89 accurately represent the current state of knowledge about handedness-language relationships based on appropriate citations. This provides important context for why alternative evolutionary explanations are needed, though these are not findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Various non-human primates show significant hand use asymmetries at individual and population levels in various tasks, but reports of significant population-level biases are confined to comparatively few species with more balanced distributions than humans. For example, olive baboons, Western gorillas, and chimpanzees show significant right-hand bias for bimanual manipulation but only around 50% right-handers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 accurately summarize prior literature on non-human primate handedness based on appropriate citations. These establish the comparative context showing that population-level biases exist but are weaker than in humans, motivating the current study's systematic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The postural origins hypothesis (POH) assumes insectivorous primate ancestors exhibited right-hand bias for body support and left-hand specialization for ballistic reaching, predicting all anthropoids share right-hand manipulation bias (most extreme in humans). A novel interpretation proposes arboreal monkeys/apes should display left-hand manipulation bias (right hand for postural support), while terrestrial lineages should evolve right-hand preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 accurately describe the traditional and novel versions of the POH based on appropriate citations. These are established hypotheses in the literature that the study aims to test, not findings of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "It has been proposed that foraging-related extractive tool use facilitated hand preference evolution in humans for efficient object handling. Neuroanatomical studies show overall neural lateralization and hemispheric independence positively correlate with absolute brain size in primates, implying individual handedness strength could be tied to brain size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 accurately summarize hypotheses about tool use and brain size effects on handedness based on appropriate citations. These represent testable predictions that the study evaluates, providing important theoretical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Individual hand preference strength and direction can be task-dependent in primates, with expression often correlating positively with motor complexity. Bimanual actions are particularly suitable for detecting hand preferences, while non-gestural unimanual actions often do not elicit pronounced lateralized responses. The tube task robustly correlates with hemispheric asymmetries across primate groups and shows intraindividual consistency across re-tests separated by years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 provide important methodological justification for using the tube task based on well-cited literature. The validation of the tube task method (C25, C26) is crucial for interpreting the study's results, as it establishes the task's reliability and neural correlates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "There is no convincing evidence for preferably left-handed grasping in galagos or other galagids. Bushbabies represent a remarkably derived strepsirrhine radiation and are not suitable ecological models for the common primate ancestor. Current evidence suggests earliest primates and anthropoid ancestors were omnivorous arboreal quadrupeds with moderate leaping ability. Lemurs show consistent left-hand preference for unimanual reaching but not in bimanual tasks, contradicting the POH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C70 provide important critiques of the POH's foundational assumptions based on appropriate citations. These demonstrate that the hypothesis rests on outdated or incorrect premises about primate evolution and galagid behavior, strengthening the case for rejecting the POH.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "Quadrupedal primates tend to exhibit stronger hand preferences when adopting relatively unstable bipedal posture. Some non-primate vertebrates (parrots, ground-living kangaroos) approach humans more closely in population-level handedness than simian relatives do, showing extreme forms of vertebrate limb use biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C82, C83 provide comparative context from other taxa based on appropriate citations. These observations about posture effects and convergent evolution in other vertebrates are relevant for interpreting the uniqueness of human handedness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Areas of the prefrontal cortex involved in motor cognition are structurally derived in humans and differ significantly from ape and monkey homologs. Specializations of both hemispheres determine human-specific tool use proficiency and motor planning, with particular involvement of the right inferior frontal gyrus. The arcuate fasciculus connectivity is highly derived in humans, suggesting important qualitative differences from other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 summarize neuroanatomical differences between humans and other primates based on appropriate citations. These provide context for understanding potential neural substrates of human handedness uniqueness, though they are not findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Simply determining presence or absence of significant population-level handedness is of little merit for comparative studies due to sample size effects, as species with vastly different hand preference distributions might fall into either category depending on available sample sizes. The finding that hand preference strength is weaker in juveniles compared to adults replicates results from several previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C95 provide important methodological insights. C94 is a critical observation about statistical power that affects interpretation of significance tests across species. C95 confirms the age effect finding is robust by replicating prior work with larger samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Hand preferences derived from bouts and insertions are highly correlated and non-conflicting, so mixing these measures in the dataset is not considered a confounding factor for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by citations to previous validation work. This justifies the methodological decision to combine bout and insertion data from different sources, though ideally all data would use the same metric. The authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  }
+]

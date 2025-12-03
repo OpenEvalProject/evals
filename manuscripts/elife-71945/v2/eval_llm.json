@@ -1,0 +1,590 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Expression of most SARS-CoV-2 proteins resulted in modest or no transcriptome changes in HEK293T cells, with 17 of 25 proteins showing <300 DEGs. Seven proteins (M, Nsp9, E, ORF9b, ORF3a, Nsp13, Nsp1) showed moderate effects (300-700 DEGs), while Nsp14 dramatically altered expression of >4000 genes (1862 up, 2161 down), suggesting roles beyond known viral replication functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are well-supported by experimental data from 3' RNA-seq screening of 25 SARS-CoV-2 proteins (Figure 1B). The quantitative findings are clearly presented with appropriate statistical thresholds (|L2FC| > 1, p-adj < 0.05), and the dramatic effect of Nsp14 compared to other proteins is evident in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Expression of individual SARS-CoV-2 proteins altered host cell pathways related to their known functions. Nsp7 (RNA polymerase accessory) affected DNA/RNA metabolism; Nsp9 and Nsp13 (RNA-binding proteins) impacted RNA metabolism and translation; ORF3d affected cell metabolism and immunity. Nsp14 expression altered ~4000 genes involved in splicing, RNA metabolism, cell-cycle control, and nucleotide metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C72 are supported by GO enrichment analysis (Figure 1C) showing pathway-specific effects that align with known protein functions. The functional enrichment analysis appropriately uses the HEK293T transcriptome as background, and the observed patterns are consistent with prior knowledge about these viral proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Nsp14 expression recapitulates SARS-CoV-2 infection transcriptional response. GSEA analysis showed that genes upregulated by Nsp14 were highly enriched for SARS-CoV-2 infection signatures (3 of 4 top enriched datasets), with smaller enrichment for MERS but no enrichment for influenza A. Downregulated genes also showed strong overlap with SARS-CoV-2 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 are strongly supported by total RNA-seq data and GSEA analysis (Figure 2A-C). The statistical significance is clearly demonstrated (NES values 2.15-2.36, p-adj < 0.01), and the specificity for coronavirus infection (vs. influenza) strengthens the conclusion. The inference that Nsp14 is important for hijacking host gene expression is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Gene expression changes induced by Nsp14 are predominantly transcriptional. Intronic signal analysis showed strong correlation (R=0.73, p<2.2e-16) with mRNA changes, with >50% of DEGs showing concordant intronic signal changes. Chromatin-bound RNA analysis confirmed transcriptional regulation for tested genes (FGF-18, CXCL8 upregulated; SH2D2A, COL13A downregulated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are well-supported by multiple complementary approaches: intronic signal analysis from total RNA-seq (Figure 2D-E) and chromatin-bound RNA RT-qPCR (Figure 2F). The correlation statistics are appropriate, and the chromatin fractionation controls (Figure 2\u2014supplement 2A) validate the approach. The >50% estimate is conservative given potential underestimation from rapid splicing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "More than 1000 genes display higher intronic signals without changes in mRNA expression upon Nsp14 expression, suggesting that Nsp14 affects splicing in addition to transcriptional effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by intronic signal analysis (Supplementary file 1e). The observation of increased intronic signal without mRNA changes is a reasonable indicator of altered splicing efficiency, though the inference could be strengthened with direct splicing analysis (which is provided in subsequent claims).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Nsp14 expression strongly altered alternative splicing of almost 2300 exons (>2000 with lower inclusion, 238 with higher inclusion) and increased retention of >2000 introns. The effect appears specific to particular exons/introns per gene (~62% of genes had single splicing event altered), and most genes with altered splicing showed no expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 are well-supported by comprehensive alternative splicing analysis using Vast-Tools (Figure 3A-D, Supplementary file 1e). The thresholds (\u0394PSI > 15%, non-overlapping distributions) are appropriate. The observation that most affected genes lack expression changes (Figure 3\u2014supplement 1B) strengthens the conclusion that splicing effects are independent of transcriptional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Affected introns by Nsp14 tended to be at the 5' end of transcripts and embedded in genomic regions with higher-than-average GC content. Affected exons were shorter with higher GC content around splice sites, suggesting stable RNA structures that correlate with alternative splicing propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are supported by genomic feature analysis (Figure 3\u2014supplement 1C-D, Supplementary file 1f). The GC content analysis is appropriate, though the authors correctly note potential confounding with 5' location. The inference about RNA structure (C101) is reasonable given citations to prior work linking GC content to splicing propensity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Alternative splicing changes induced by Nsp14 expression significantly overlap with those during SARS-CoV-2 infection. Re-analysis of published infection data showed 10% of infection-associated splicing events also change in the same direction with Nsp14 expression (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by re-analysis of published SARS-CoV-2 infection data (GSE169158) using the same analytical pipeline. The statistical validation using randomization (10,000 replicas, p<0.01) is appropriate. However, the 10% overlap is modest, suggesting Nsp14 accounts for only a portion of infection-induced splicing changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Nsp14 expression caused a >2-fold increase in total circRNA reads, with 246 circRNAs differentially expressed (mostly upregulated). The host mRNA levels and transcription of circRNA-hosting loci were largely unchanged, suggesting increased circRNA biosynthesis or stability rather than increased transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 are well-supported by circRNA analysis from total RNA-seq (Figure 3E-H). The logic is sound: increased circRNA without increased host gene transcription (only 20/190 loci showed increased intronic signal) indicates post-transcriptional regulation. However, the mechanism (biosynthesis vs. stability) cannot be definitively distinguished without additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Co-expression of Nsp10 with Nsp14 did not enhance Nsp14's effects on gene expression. Nsp10 alone caused minimal changes (88 DEGs), and co-expression with Nsp14 produced nearly identical results to Nsp14 alone (strong correlation, complete overlap of DEGs, no change in circRNA levels), suggesting Nsp14 ExoN activity is not responsible for transcriptome effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 are strongly supported by multiple lines of evidence: Western blot (Figure 4A), RT-qPCR (Figure 4\u2014supplement 1A), PCA (Figure 4\u2014supplement 1B), and RNA-seq (Figure 4B-D). The inference that ExoN activity is not responsible is reasonable since Nsp10 enhances ExoN activity up to 35-fold but shows no additional effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "ExoN domain mutations (D90A/G92A and D273A) that completely abolish ExoN activity did not alter Nsp14's effects on gene expression. Fold changes in mRNA expression and circRNA levels were strikingly similar between wild-type and ExoN mutants, confirming ExoN activity is not required for transcriptome effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 are well-supported by 3' RNA-seq of ExoN mutants (Figure 4E, Figure 4\u2014supplement 2B-D). The mutations are validated in prior literature (Ma et al., 2015; Ogando et al., 2020). The near-perfect correlation between wild-type and mutant effects provides strong evidence that ExoN activity is dispensable for the observed transcriptome changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The N7-guanine-methyltransferase domain of Nsp14 is required for gene expression changes. The D331A mutant (which abolishes methyltransferase activity) did not alter expression of tested mRNA and circRNA targets, despite being expressed at similar levels to wild-type Nsp14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by RT-qPCR data (Figure 4G-H) and Western blot confirming protein expression (Figure 4\u2014supplement 2E). However, the evidence is limited to a small number of targets by RT-qPCR rather than genome-wide analysis. A full RNA-seq experiment with the D331A mutant would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Time course analysis revealed that Nsp14's effects dramatically increased over time, with gradual increase in DEGs (19 at 8h, 200 at 12h, >4000 at 48h) and enriched GO terms. Effects on cell metabolism, RNA metabolism, and cell cycle were only detected at 24-48h post-transfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 are well-supported by time course 3' RNA-seq (Figure 5A-C, Figure 5\u2014supplement 1A-C). The detection of Nsp14 mRNA and protein at early timepoints validates the experimental design. The temporal progression of effects is clearly demonstrated with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "CXCL8 (encoding IL8) was the most highly induced mRNA at 8h (fold change=11.5, p=1.2e-5) and remained induced >12-fold through 48h. Luciferase reporter assays confirmed that Nsp14 activates CXCL8 transcription (~4-fold increase). CXCL8/IL8 is upregulated in SARS-CoV-2 infection and elevated in COVID-19 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 are strongly supported by time course RNA-seq (Figure 5D), luciferase assays (Figure 5E), and multiple citations to prior work. The luciferase reporter assay directly demonstrates transcriptional activation. The clinical relevance is well-established in the literature, making this a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Nsp14 activates the NFkB pathway. Early upregulated genes (8h) included NFKBIA, JUN, and ATF3 (NFkB pathway components). Promoter analysis showed significant enrichment for NFkB binding sites in genes upregulated at 8h. NFkB luciferase reporter showed ~1.6-fold activation by Nsp14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C147 are well-supported by multiple lines of evidence: time course RNA-seq (Figure 5\u2014supplement 1D), motif enrichment analysis (Figure 5F, Supplementary file 2c-d), and NFkB reporter assays (Figure 5\u2014supplement 1F). The convergence of transcriptomic and reporter data provides strong support for NFkB activation, though the 1.6-fold reporter activation is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Extended promoter analysis revealed enrichment for interferon response factors (EGR2, STAT2, SP3) in genes upregulated early after Nsp14 expression. The initial response to Nsp14 involves modulation of both NFkB and interferon pathways, consistent with prior work showing both pathways are affected during SARS-CoV-2 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 are supported by motif enrichment analysis (Supplementary file 2e) and citations to prior work. The inference that both pathways are involved is reasonable given the enrichment data, though direct validation of interferon pathway activation (e.g., interferon reporter assay) would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Nsp14 localizes to the cytoplasm and does not associate with chromatin, demonstrating that its transcriptional effects are indirect. This was confirmed by subcellular fractionation and chromatin purification followed by Western blot at multiple timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 are supported by subcellular fractionation experiments (Figure 6\u2014supplement 1A) and prior work (Gordon et al., 2020a). The fractionation controls (GAPDH for cytoplasm, H3K27me3 for chromatin) are appropriate. The inference that transcriptional effects are indirect is logical given the cytoplasmic localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Nsp14 expression altered purine metabolism genes and significantly downregulated IMPDH2 mRNA. Metabolomic analysis revealed ~3-fold increases in xanthine diphosphate and GTP (IMPDH2 products), plus increased levels of other IMP-derived nucleotides. Since GTP inversely regulates IMPDH2 expression, this suggests Nsp14 activates IMPDH2 enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C159 are well-supported by GO analysis (Figure 1C), RNA-seq (Figure 6A), and metabolomic analysis (Figure 6B, Supplementary file 3a). The logic connecting IMPDH2 downregulation, increased GTP, and IMPDH2 activation is sound and supported by citation (Glesne et al., 1991). The metabolomic data provides direct biochemical evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "IMPDH2 inhibition with MPA partially rescued Nsp14-induced gene expression changes. MPA treatment reduced DEGs from 3761 (Nsp14 alone) to 1245 (Nsp14+MPA), indicating ~73% of changes depend on IMPDH2 activity. MPA also narrowed the distribution of fold changes for remaining DEGs, showing mitigation even for genes still differentially expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C166 are strongly supported by 3' RNA-seq with MPA treatment (Figure 6D-F, Figure 6\u2014supplement 1B, 2A-B). The experimental design is appropriate (MPA added 8h post-transfection, low concentration to avoid cytotoxicity). The 73% calculation is straightforward and well-supported. Western blot confirms MPA doesn't affect Nsp14 or IMPDH2 protein levels (Figure 6C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "IMPDH2 inhibitors (MPA and MZR) partially rescued Nsp14-induced changes in circRNA expression and intron retention. Both inhibitors showed similar rescue effects without altering Nsp14 or IMPDH2 protein levels, demonstrating that IMPDH2 is a key mediator of Nsp14's effects on the host cell transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C169 are supported by RT-qPCR data for circRNAs (Figure 6\u2014supplement 2C, F) and intron retention (Figure 6G, Figure 6\u2014supplement 2G), plus Western blots (Figure 6C, Figure 6\u2014supplement 2D). The use of two independent IMPDH2 inhibitors strengthens the conclusion. The inference that IMPDH2 is a 'key mediator' is well-supported by the rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "IMPDH2 mediates both gene expression changes and alternative splicing effects induced by Nsp14. Increased intron retention for PAXIP1, SETD1A, and ZNF507 was detected upon Nsp14 expression, and both MPA and MZR treatment partially rescued this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C173 are supported by RT-qPCR measuring intron retention (Figure 6G, Figure 6\u2014supplement 2G). The rescue by two independent IMPDH2 inhibitors provides strong evidence for IMPDH2's role in mediating splicing changes. However, the evidence is limited to three genes; genome-wide splicing analysis with inhibitor treatment would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The experimental model recapitulates key aspects of SARS-CoV-2 infection. Both gene expression and alternative splicing effects of Nsp14 significantly overlap with infection, and Nsp14 localizes to the cytoplasm in both contexts (replication organelles during infection, cytoplasm in the model).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C180 are supported by GSEA analysis (Figure 2B-C), alternative splicing overlap analysis, subcellular fractionation (Figure 6\u2014supplement 1A), and citation to prior work (V'kovski et al., 2021). The authors appropriately acknowledge model limitations while demonstrating substantial overlap with infection. The inference is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The transcriptional response to Nsp14 is temporally subdivided into two phases: an early response involving NFkB activation, and a later phase (24-48h) including effects on cellular metabolism, RNA metabolism, and cell-cycle control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C183 are well-supported by time course RNA-seq and GO analysis (Figure 5A-C). The temporal separation of early immune response (NFkB) from later metabolic effects is clearly demonstrated in the data and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "NFkB is one of the first pathways activated upon SARS-CoV-2 infection, and IL8 is elevated in plasma of COVID-19 patients and is a marker of acute severe lung distress, confirming the relevance of the experimental model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C186 are supported by multiple citations to prior work. These are well-established findings in the COVID-19 literature that provide clinical context for the experimental observations. The connection to the model's relevance is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C187"
+    ],
+    "result": "A recent study showed that IMPDH2 mediates activation of CXCL8 expression and NFkB transcriptional reporters during Nsp14 expression, in accordance with the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C187 is supported by citation to Li et al., 2021. This represents independent validation of key findings from the current study, strengthening the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Splicing is strongly disrupted upon SARS-CoV-2 infection, and Nsp14 affects expression of genes encoding RNA processing and splicing proteins. Unlike Nsp16's general splicing effects, Nsp14's effect appears specific to certain exons and introns (most genes have only one altered splicing event).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C190 are supported by citation to prior work (Banerjee et al., 2020), GO analysis, and alternative splicing data (Figure 3D). The comparison to Nsp16 is appropriate and highlights the distinct mechanisms by which different viral proteins affect splicing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C191",
+      "C192"
+    ],
+    "result": "While Nsp16 directly binds pre-mRNA, Nsp14 is localized to the cytoplasm and therefore modifies splicing indirectly through a cascade of events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C192 are supported by citation (Banerjee et al., 2020) and subcellular localization data. The inference about indirect mechanism is logical given the cytoplasmic localization, though the specific cascade of events remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C193",
+      "C194"
+    ],
+    "result": "IMPDH2 has been shown to enter the nucleus and alter gene expression in other physiological contexts, and Nsp14 altered expression of several RNA binding proteins and splicing regulators, suggesting potential mechanisms for the observed splicing effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C194 are supported by citations (Kozhevnikova et al., 2012; Ahangari et al., 2021) and GO analysis. These provide plausible mechanisms for how cytoplasmic Nsp14 could indirectly affect nuclear splicing, though direct evidence for IMPDH2 nuclear translocation in this system is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C195",
+      "C196"
+    ],
+    "result": "Nsp14 altered expression of ~10% of cellular circRNAs, a striking magnitude considering that deletion or knock-down of factors involved in circRNA production generally affects smaller percentages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C196 are supported by circRNA analysis and citations to prior work (Conn et al., 2015; Errichelli et al., 2017; Knupp et al., 2021). The comparison to other circRNA regulators provides important context for the magnitude of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "circRNAs accumulate in non-proliferating cells and modulate immune factors by repressing pro-inflammatory activity under normal conditions. Upon viral infection, circRNAs are typically degraded to allow immune response. The increase in circRNAs upon Nsp14 expression suggests a possible mechanism for immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C197-C200 are supported by citations to prior work. However, C201 is explicitly labeled as speculation by the authors. While the hypothesis is plausible given the observed increase in circRNAs (opposite to typical viral infection), direct evidence linking this to immune evasion is not provided. This remains an interesting hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C202",
+      "C203"
+    ],
+    "result": "Both ExoN and N7-guanine-methyltransferase domains of Nsp14 are important for viral replication and considered drug targets. However, the N7-guanine-methyltransferase domain, but not the ExoN domain, is necessary for Nsp14's effects on host gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C203 are supported by citations (Otava et al., 2021; Saramago et al., 2021) and experimental data with domain mutants (Figures 4, 4\u2014supplements). This is a key finding with implications for understanding Nsp14 function and potential therapeutic targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C204",
+      "C205"
+    ],
+    "result": "Nsp14 interacts with the replication complex and other 5' cap modification enzymes like Nsp16. IMPDH2 mediates Nsp14's effects on cell transcriptome, altered splicing, and circRNA deregulation, as shown by partial rescue with IMPDH2 inhibitors (MPA and MZR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C204-C205 are supported by citation (Romano et al., 2020) and extensive experimental data with IMPDH2 inhibitors (Figure 6, supplements). The use of two independent inhibitors and multiple readouts (mRNA, splicing, circRNA) provides strong evidence for IMPDH2's mediating role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C206",
+      "C207"
+    ],
+    "result": "MPA is a known immunosuppressant and antiviral agent that inhibits SARS-CoV-2 propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C206-C207 are supported by multiple citations. This provides important context for the therapeutic potential of targeting the Nsp14-IMPDH2 interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "IMPDH2 binds nucleic acids and acts as a transcription factor in Drosophila. While IMPDH2 is conserved and can localize to the nucleus in mammalian cells, its TF activity has not been demonstrated in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C208-C212 are supported by citations to prior work. This provides important context about IMPDH2's potential mechanisms of action, while appropriately noting the gap in knowledge regarding mammalian TF activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C213"
+    ],
+    "result": "A recent study reported that IMPDH2 can bind a circRNA and this interaction activates IMPDH2 enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C213 is supported by citation (Wang et al., 2022). This provides an interesting potential mechanism connecting the observed circRNA changes to IMPDH2 activation, though direct evidence for this mechanism in the current system is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221"
+    ],
+    "result": "While a prior study showed Nsp14 blocks interferon response by shutting down translation at 24h, the current data show transcriptional NFkB activation occurs very early (8h). Some effects are transcriptional and occur soon after Nsp14 expression (as shown by MPA/MZR rescue at 8h), suggesting some gene expression changes might precede translation shutoff. This leads to speculation that Nsp14 may disrupt both transcriptome and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C215-C221 appropriately reconcile the current findings with prior work (Hsu, 2021). The time course data (Figure 5) clearly shows early transcriptional effects, and the rescue experiments demonstrate these occur before the reported 24h translation shutoff. The speculation (C221) is reasonable given the data, though the authors appropriately label it as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "The N7-guanine-methyltransferase domain is important for Nsp14 translational repression. Nsp14 can methylate free GTP to m7GTP, which blocks cap-dependent translation by competing with mRNA for eIF4E. The current results indicate Nsp14 increases cellular GTP by activating IMPDH2, potentially leading to increased m7GTP production and translation repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C222-C226 integrate prior work (Jin et al., 2013; Hsu, 2021) with current findings to propose a unified model. The GTP increase is directly demonstrated (C158), and the inference about IMPDH2 activation (C226) is well-supported. The connection to m7GTP and translation is based on prior work and represents a plausible mechanistic model, though direct measurement of m7GTP levels would strengthen this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C227"
+    ],
+    "result": "Expression of Nsp1, which directly inhibits protein synthesis, altered levels of a much smaller set of genes than Nsp14, suggesting translation inhibition alone cannot explain Nsp14's extensive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C227 is supported by the screening data (Figure 1B) showing Nsp1 caused 300-700 DEGs compared to >4000 for Nsp14. This provides important context arguing against translation inhibition as the primary mechanism for Nsp14's transcriptome effects.",
+    "result_type": "MINOR"
+  }
+]

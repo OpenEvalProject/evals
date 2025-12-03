@@ -1,0 +1,1073 @@
+{
+  "submission": {
+    "id": "38092650-2bcf-4c1e-8d17-eb8d57346541",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:16:52.886293Z",
+    "updated_at": "2025-12-03T08:16:52.886293Z"
+  },
+  "content": [
+    {
+      "id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "submission_id": "38092650-2bcf-4c1e-8d17-eb8d57346541",
+      "content_type": "manuscript",
+      "content_text": "# Neuronal sequences during theta rely on behavior-dependent spatial maps\n\n## Authors\n\n- Eloy Parra-Barrero<sup>1</sup> ([ORCID: 0000-0001-5702-4466](https://orcid.org/0000-0001-5702-4466))\n- Kamran Diba<sup>3</sup> ([ORCID: 0000-0001-5128-4478](https://orcid.org/0000-0001-5128-4478))\n- Sen Cheng<sup>1</sup> ([ORCID: 0000-0002-6719-8029](https://orcid.org/0000-0002-6719-8029)) \u2020\n\n### Affiliations\n\n1. Institute for Neural Computation, Ruhr University Bochum Bochum Germany\n2. International Graduate School of Neuroscience, Ruhr University Bochum Bochum Germany\n3. Department of Anesthesiology, University of Michigan, Michigan Medicine Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNavigation through space involves learning and representing relationships between past, current, and future locations. In mammals, this might rely on the hippocampal theta phase code, where in each cycle of the theta oscillation, spatial representations provided by neuronal sequences start behind the animal\u2019s true location and then sweep forward. However, the exact relationship between theta phase, represented position and true location remains unclear and even paradoxical. Here, we formalize previous notions of \u2018spatial\u2019 or \u2018temporal\u2019 theta sweeps that have appeared in the literature. We analyze single-cell and population variables in unit recordings from rat CA1 place cells and compare them to model simulations based on each of these schemes. We show that neither spatial nor temporal sweeps quantitatively accounts for how all relevant variables change with running speed. To reconcile these schemes with our observations, we introduce \u2018behavior-dependent\u2019 sweeps, in which theta sweep length and place field properties, such as size and phase precession, vary across the environment depending on the running speed characteristic of each location. These behavior-dependent spatial maps provide a structured heterogeneity that is essential for understanding the hippocampal code.\n\n## Introduction\n\nHippocampal place cells elevate their firing rates within circumscribed regions in the environment (\u2018place fields\u2019) (O'Keefe and Dostrovsky, 1971). In addition to this firing rate code, place cells display phase coding relative to the \u223c8 Hz theta oscillations of the hippocampal local field potential (LFP) (Vanderwolf, 1969). As animals cross a cell\u2019s place field, the cell fires at progressively earlier phases of the oscillation, a phenomenon known as theta phase precession (O'Keefe and Recce, 1993). At the population level, phase precession yields distinct neuronal sequences that traverse multiple positions within each cycle of the theta oscillation. The first cells to fire typically have place fields centered behind the current position of the animal, followed by cells with place fields centered progressively ahead, generating so-called \u2018theta sequences\u2019 (Figure 1\u2014figure supplement 1; Skaggs et al., 1996; Dragoi and Buzs\u00e1ki, 2006; Foster and Wilson, 2007). Formally, the position $r\u2062(t)$ represented by the hippocampal population at time $t$ appears to deviate from the physical location $x\u2062(t)$ of the animal, sweeping from past to future positions during each theta cycle (Maurer et al., 2012; Gupta et al., 2012; Muessig et al., 2019; Kay et al., 2020; Zheng et al., 2021). This phenomenon suggests that beyond the representation of the current spatial location of an animal, the hippocampal theta code more generally encompasses representations of past, present, and future events (Dragoi and Buzs\u00e1ki, 2006; Cei et al., 2014; Terada et al., 2017). In support of this, theta phase precession and theta sequences have been reported to respond to elapsed time (Pastalkova et al., 2008; Shimbo et al., 2021), particular events and behaviors including jumping (Lenck-Santini et al., 2008), pulling a lever, and sampling an object (Terada et al., 2017; Aronov et al., 2017; Robinson et al., 2017). Phase-precession and theta sequences have also been observed in brain regions other than the hippocampus (Kim et al., 2012; Hafting et al., 2008; Jones and Wilson, 2005; van der Meer and Redish, 2011; Tingley et al., 2018; Tang et al., 2021). These studies indicate that the theta phase code plays a supporting role in a wide array of cognitive functions, such as sequential learning (Lisman and Idiart, 1995; Skaggs et al., 1996; Reifenstein et al., 2021), prediction (Lisman and Redish, 2009; Kay et al., 2020), and planning (Johnson and Redish, 2007; Erdem and Hasselmo, 2012; Bolding et al., 2020; Bush et al., 2015).\n\nHowever, for the hippocampal theta phase code to be useful, there must be a consistent relationship between theta phase, represented position $r\u2062(t)$, and the animal\u2019s true location $x\u2062(t)$. Surprisingly, this relationship has not previously been made explicit. It is often stated interchangeably that activity at certain phases of theta reflect positions \u2018behind\u2019 or \u2018ahead\u2019 of the animal, or, alternatively, in its \u2018past\u2019 or \u2018future\u2019, but these statements hint at two fundamentally different coding schemes. The first notion is that different theta phases encode positions at certain distances behind or ahead of the animal\u2019s current location. For example, within each theta cycle, the represented position $r\u2062(t)$ could sweep from the position two meters behind the current location to the position two meters ahead. The hippocampus would thus represent positions shifted in space: we therefore refer to this coding scheme as the \u2018spatial sweep\u2019 model. The second notion is that the hippocampus represents positions that were or will be reached at some time intervals into the past or future, respectively. For example, $r\u2062(t)$ might start in the position that was reached 5 s ago and extend to the position projected 5 s into the future. We call this the \u2018temporal sweep\u2019 scheme. Notably, the temporal sweep predicts different distances depending on speed of movement. In such a sweep, walking down a hallway, the prospective position reached in 5 s might be a couple of meters ahead, whereas when driving on the highway that position could be more than a hundred meters away. Thus, in temporal sweeps, the look-behind and look-ahead distances adapt to the speed of travel, which could make for a more efficient code.\n\nIn the following, we set out to develop a quantitative description of the hippocampal theta phase code by formalizing the spatial and temporal sweep models and comparing them to experimental results. Intriguingly, different experimental results appear to support different models. One the one hand, the length of theta sweeps has been shown to increase proportionally with running speed (Maurer et al., 2012; Gupta et al., 2012), a result which is consistent with temporal sweeps. On the other hand, place field parameters, such as place field size or the slope of the spikes\u2019 phase vs. position relationship (phase precession slope), do not change with speed (Huxter et al., 2003; Maurer et al., 2012; Schmidt et al., 2009; Geisler et al., 2007), which is consistent with spatial sweeps. To reconcile these apparently contradictory observations, we propose an additional coding scheme: the \u2018behavior-dependent sweep' based on a behavior-dependent spatial map that varies according to the animal\u2019s characteristic running speed at each location. We analyze recordings from rat CA1 place cells and in the same dataset reproduce the paradoxical results from different studies. Notably, we find that place fields are larger and have shallower phase precession slopes at locations where animals typically run faster, in support of the behavior-dependent sweep model. Finally, we compare simulated data generated from the three models based on experimentally measured trajectories and theta oscillations, and confirm that the behavior-dependent sweep uniquely accounts for the combination of experimental findings at the population and single-cell levels.\n\n## Results\n\n### Formalizing the theta phase code\n\nWe first put forward a mathematical framework for quantitatively describing the relationship between the current location of the animal, $x\u2062(t)$, and the position represented in the hippocampus at each moment in time, $r\u2062(t)$. While this framework considers the population representation, i.e. neuronal sequences during theta, the primary variable to be explained, it is linked to the activity of single place cells as follows. Each cell is considered to posses a \u2018true place field\u2019 (Sanders et al., 2015; Lisman and Grace, 2005), which corresponds to the positions represented by the cell, that\u00a0is, a cell becomes active when the position represented by the population, $r\u2062(t)$, falls within the cell\u2019s true place field. Note that due to the prospective and retrospective aspects of the theta phase code, $r\u2062(t)$ reaches behind and ahead of $x\u2062(t)$, so a place cell will also fire when the animal is located ahead or behind its true place field. This results in a measured place field that is larger than the underlying true place field. To stay consistent with the literature on place cells, in the following, when we refer to \u2018place field\u2019, we mean the measured place field.\n\nFirst, we consider the spatial sweep scheme where the theta phase of a place cell\u2019s spike reflects the distance traveled through the place field (Huxter et al., 2003; Geisler et al., 2007; Cei et al., 2014) or equivalently, some measure of the distance to the field\u2019s preferred position (Jeewajee et al., 2014; Huxter et al., 2008; Drieu and Zugaro, 2019). In a uniform population of such phase coding neurons, the represented position, $r\u2062(t)$, sweeps forward within each theta cycle, starting at some distance behind the current location of the animal, $x\u2062(t)$, and ending at some distance ahead. We formalize these spatial sweeps by the equation:\n\n$$\nr\u2062(t)=x\u2062(t)+d_{\\theta}\u2062\\frac{\\theta\u2062(t)-\\theta_{0}}{360},\n$$\n\nwhere $d_{\\theta}$, which we call the theta distance, is a parameter that determines the extent of the spatial sweep, $\\theta\u2062(t)$ is the instantaneous theta phase in degrees, and $\\theta_{0}$ is the theta phase at which the population represents the actual position of the animal. The value of $\\theta_{0}$ effectively determines the proportion of the theta cycle that lies behind vs ahead of the animal. We note that none of our results or analyses depends on the particular value of this variable.\n\nAt the single-cell level, the spatial sweep model predicts that the phases of a cell\u2019s spikes will advance over a spatial range of $d_{\\theta}$. Assuming that the phase advances over the whole theta cycle, the slope of spatial phase precession will be given by $m=\u2212360^{\u2218}/d_{\\theta}$ (Equation 13 in Materials\u00a0and\u00a0methods). Place field sizes will be given by $s=s_{0}+d_{\\theta}$, where s0 is the size of the true place field (Equation 14 in Materials and methods). Both phase precession slopes and place field sizes are independent of running speed (Figure 1B), consistent with experimental observations (Huxter et al., 2003; Schmidt et al., 2009; Geisler et al., 2007; Sup. Fig. 1 in Maurer et al., 2012). At the population level, we can define the theta trajectory length as the difference between the maximum and minimum positions that $r\u2062(t)$ represents within a theta cycle. To a first-order approximation, that\u00a0is, assuming that effects from acceleration and higher order derivatives are negligible, the theta trajectory length is given by $L=v\u2062T+d_{\\theta}$, where $v$ is the running speed, and $T$ is the duration of a theta cycle (Equation 11 in Materials and methods). While the spatial sweep predicts that theta trajectory length increases with running speed, the increase is small since the term $v\u2062T$, which represents the change in $x\u2062(t)$ due to the animal\u2019s motion during the theta cycle (Figure 1A, see also Figure 1 in Maurer et al., 2012) is smaller than $d_{\\theta}$ for usual running speeds. Contrary to this prediction, experimental results show that the theta trajectory length is roughly proportional to running speed (Figure 2 in Maurer et al., 2012; Figure 1C in Gupta et al., 2012 for speeds above 5 cm/s).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig1-v2.jpg)\n\n**Figure 1.:** Certain findings in previous studies (green) paradoxically support the spatial sweep at the single-cell level, but the temporal sweep at the population level. (A) Left. At different phases of theta, the population represents positions shifted behind or ahead in space by fixed distances. Right. The black lines represents the rat\u2019s actual location $x\u2062(t)$ as it runs through a linear track; the color-coded lines indicate theta trajectories represented by the place cell population $r\u2062(t)$. Since each theta trajectory starts and ends at fixed distances behind and ahead of the animal\u2019s current location, the length of a theta trajectory increases slightly with running speed (37.5 vs. 31.9 cm) to account for the animal\u2019s motion during the span of the theta cycle. (B) Left. At the single-cell level, the phases at which a cell spikes reflect the distances to the cell\u2019s preferred location. Right. The cell\u2019s preferred location is defined by its underlying 'true' place field (top). The cell fires proportionally to the activation of its true place field at $r\u2062(t)$, generating a phase precession cloud (middle) and corresponding measured place field (bottom). Phase precession slopes and place field sizes remain constant with running speed since, e.g., the cell always starts firing at 12 cm from the cell\u2019s preferred location. (C) Left. At different phases of theta, the population represents the positions that were or will be reached at fixed time intervals into the past or future, respectively. Right. A higher running speed leads to a proportionally increased theta trajectory length since, e.g., the position that will be reached in 200 ms is further ahead in space at higher speeds. (D) Left. At the single-cell level, the phase of theta reflects the time to reach the cell\u2019s preferred location. Right. At higher speed, the phase precession slope becomes shallower (\u221210.3 vs. \u221230.1 \u00b0/cm) and the size of the measured place field increases (50 vs. 40 cm) since, e.g., the cell will start signaling arrival at the cell\u2019s preferred location in 200 ms from an earlier position in space.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Illustration of theta phase coding in spatial navigation. (A) A rat is running from left to right on a linear track. The firing rate of three place cells are indicated in different colors. (B) The idealized theta phase vs. position relationship for the spikes emitted by each of the cells shows a decrease in phase as the animal crosses the field (theta phase precession). (C) At the population level, phase precession manifests as spike sequences that represent, in a temporally compressed fashion, the sequence of place fields being traversed. The falling edge of the oscillation holds spikes from place cells with fields centered behind the current position of the rat, followed by spikes from cells with fields centered at the current position of the rat at the trough of the oscillation, and place cells with fields centered ahead in the rising edge.\n\nAn alternative to the above is the temporal sweep model, where different phases of theta represent the positions that the animals have reached or will reach at some time interval in the past and future, respectively (see Itskov et al., 2008 for a similar model). More formally,\n\n$$\nr\u2062(t)=x\u2062(t+\\tau_{\\theta}\u2062\\frac{\\theta\u2062(t)-\\theta_{0}}{360}),\n$$\n\nwhere $\\tau_{\\theta}$ stands for the extent of the temporal sweep. To a first-order approximation, we derived for the theta trajectory length $L=(\\tau_{\\theta}+T)\u2062v$, which is proportional to running speed (Equation 18 in Materials and methods) (Figure 1C). This is almost exactly the result reported by Maurer et al., 2012; Gupta et al., 2012. However, at the single-cell level, the temporal sweep model predicts that place field sizes increase and phase precession slopes become shallower with running speed (Figure 1D) \u2013 in clear conflict with the experimental results mentioned above. In particular, to a first-order approximation, theta phase precesses over the spatial range of $v\u2062\\tau_{\\theta}$. Thus, the slope of phase precession is given by $m=\u2212360^{\u2218}/(v\\tau_{\\theta})$, which increases hyperbolically with running speed (Equation 19 in Materials and methods). Place field sizes would in turn increase linearly with speed, determined by $s=s_{0}+v\u2062\\tau_{\\theta}$ (Equation 20 in Materials and methods).\n\nThese conflicting results could potentially arise from differences in analytical methods (e.g. definition of key parameters, comparisons within versus across cells) or experimental procedures (e.g. task difficulty due to the use of linear vs. circular or complex mazes). If this was the case, spatial or temporal sweeps could adequately describe the theta phase code, perhaps switching dynamically depending on the circumstances. Therefore, in the subsequent section, we attempt to reproduce and reexamine these different observations in the same dataset.\n\nHowever, we also propose an additional scheme that, as it turns out, can potentially reconcile these findings. This third option combines the spatial sweep\u2019s constant place field sizes and phase precession slopes with the temporal sweep\u2019s increase in theta trajectory length with running speed. The former property requires that sweeps are independent of running speed whereas the latter requires that they depend on it. While at first this appears to be a plain contradiction, a resolution is offered if sweeps are made independent of the animal\u2019s instantaneous running speed $v\u2062(t)$, but dependent on their \u2018characteristic running speed\u2019 at each position $v\u00af\u2062(x\u2062(t))$. This characteristic speed could be calculated as as a moving average (e.g. cumulative, exponentially weighted, etc.) as long as it evolves sufficiently slowly, so that it can filter out variation in $v\u2062(t)$ from run to run. We refer to this model as the behavior-dependent sweep:\n\n$$\nr\u2062(t)=x\u2062(t)+v\u00af\u2062(x\u2062(t))\u2062\\tau_{\\theta}\u2062\\frac{\\theta\u2062(t)-\\theta_{0}}{360}\n$$\n\nAccording to this model, at different phases of theta, the place cell population represents the positions that would have been or would be reached at certain time intervals in the past or future, like in the temporal sweep, but under the assumption that the animal runs at the characteristic speed through each location, rather than at the instantaneous running speed (Figure 2A,B). To avoid confusion in the following, when we use the terms \u2018speed\u2019 or \u2018running speed\u2019 without further qualifiers, we always refer to the instantaneous running speed. In the behavioral-dependent scheme, to a first-order approximation the length of a theta trajectory is given by $L=v\u2062T+v\u00af\u2062(x\u2062(t))\u2062\\tau_{\\theta}$ (Equation 22 in Materials and methods). Thus, the more stereotyped the behavior of the animal is (i.e. $v\u2062(t)\u2248v\u00af\u2062(x\u2062(t))$), the more the behavior-dependent sweep model would share the temporal sweep model\u2019s feature that theta trajectory length increases proportionally with running speed. At the same time, the behavior-dependent sweep model is formally equivalent to the spatial sweep model (Equation 1) with a theta distance that depends on the characteristic running speed at each position:\u00a0\n\n$$\nd_{\\theta}=v\u00af\u2062(x\u2062(t))\u2062\\tau_{\\theta}.\n$$\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig2-v2.jpg)\n\n**Figure 2.:** Simulated data plotted as in Figure 1A and C. (A) Different phases of theta represent positions reached at different time intervals into the past or future assuming the animal ran at the characteristic speed at that location. (B) Comparison of theta trajectory lengths in areas of low and fast characteristic running speed (rows) at low and fast instantaneous running speeds (columns). When both characteristic and instantaneous running speeds coincide, the behavior-dependent sweep model and the first-order approximation of the temporal sweep model agree (ochre arrow). On the other hand, when changing the instantaneous speed at a given location, the behavior-dependent and spatial sweeps agree (orange arrow). Theta trajectory length is primarily determined by characteristic running speed. Instantaneous running speed has a modest effect caused by the larger change in $x\u2062(t)$ during the theta cycle at higher speeds. Place fields (right) are larger in areas of higher characteristic running speed, but do not change size with instantaneous running speed.\n\nTherefore, place fields, being fixed in space, remain unaltered by the instantaneous running speed, similar to in the spatial sweep model (Figure 2B). However, in regions of higher characteristic running speed, place fields are characterized by larger sizes and shallower phase precession slopes. Specifically, the slope of phase precession is given by $m=\u2212360^{\u2218}/(v\u00af(x(t))\\tau_{\\theta})$ (Equation 23 in Materials and methods); and the place field size would be $s=s_{0}+v\u00af\u2062(x\u2062(t))\u2062\\tau_{\\theta}$ (Equation 24 in Materials and methods).\n\n### Theta trajectory lengths increase proportionally with running speed\n\nTo better evaluate the conflicting observations across the afore-mentioned studies, we next sought to reproduce their separate observations on the effect of running speed on population-level theta trajectories and single-neuron place field parameters within the same dataset and compare these against predictions from the three theta phase coding models.\n\nTo this end, we re-analyzed publicly available simultaneous single unit recordings from CA1 of 6 rats running on linear tracks for water rewards at both ends. Three of the sessions (Mizuseki et al., 2013) were from tracks that were familiar to the animal while the remaining three Grosmark et al., 2016 were from novel tracks. To ensure that spatial representations and theta phase precession were stable for the entirety of the periods under examination, we discarded the first 5 min of the recording on the novel track, allowing sufficient time for hippocampal place fields and phase precession to have stabilized (Frank et al., 2004; Cheng and Frank, 2008).\n\nFirst, we examined the effect of running speed on theta trajectory length. We performed a Bayesian decoding of positions from the ensemble neuronal firing (Zhang et al., 1998; Davidson et al., 2009) within each theta cycle in overlapping 90\u00b0 bins with a step size of 30\u00b0. Figure 3A shows examples of individual decoded theta trajectories belonging to periods of slow (below 20 cm/s) and fast (above 40 cm/s) running in a sample experimental session. The lengths of the trajectories were measured from best-fit lines. Despite the high level of variability, it was clear in the individual rats\u2019 averages and in the grand average across animals that the trajectory lengths increased roughly proportionately to running speed (Figure 3B). We saw the same effect when we averaged the decoded position probabilities over all cycles belonging to the same speed bin before fitting a line and calculating the theta trajectory length (Figure 3C,D). For this analysis, we defined seven 20 cm/s wide overlapping speed bins starting at 2 cm/s in increments of 10 cm/s. Thus, our results on the dependence of theta trajectory lengths on running speed were consistent with those of Maurer et al., 2012 and Gupta et al., 2012, and appear to be supportive of the temporal sweep model. Alternatively, the results could be accounted for by the behavior-dependent sweep model, if running behavior was sufficiently stereotyped across the track, a question to which we return below.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig3-v2.jpg)\n\n**Figure 3.:** (A) A random sample of theta sequences from a representative experimental session, with position probabilities decoded from the population spikes. Zero corresponds to the actual position of the rat at the middle of the theta cycle; negative positions are behind and positive ones, ahead. Orange lines indicate linear fits, from which theta trajectory lengths are computed. White pixels correspond to positions outside of the track or phase bins with no spikes. The red number at the lower right corner indicates the running speed in cm/s. (B) Moving averages for theta trajectory length for each animal using a 10 cm/s wide sliding window (colored lines). These averages are averaged again (thick black line) to obtain a grand average that weighs all animals equally. Shaded region indicates a standard deviation around the mean of all data points pooled across animals, which weigh each theta sequence equally. This mean does not necessarily match the grand average since different animals contribute different numbers of theta sequences. (C) Similar to A, but averaging the decoded probabilities across theta cycles belonging to the same speed bin indicated above the panel. (D) Similar to B for the averaged cycles, confirming the observation in B.\n\n### Individual place field sizes are independent of running speed\n\nWe next analyzed the effect of running speed on place field size. First, we calculated firing rates separately for periods with different running speeds using the same speed bins as before. As the number of trials in each spatial bin at a given running speeds were limited, we calculated place field sizes only when a field was sufficiently well sampled at a given speed (see Materials and methods). Visual inspection revealed that individual fields tended to maintain similar sizes regardless of running speed (Figure 4A). To quantify the relationship more systematically, we performed linear regression on place field size vs. speed for each field and examined the slopes of the best fitting lines (Figure 4A, bottom row). Figure 4B shows that for each rat, slopes variably took on both negative and positive values, with no clear bias towards either ($p>0.3$, Wilcoxon signed-rank test). Thus, we found no evidence for a systematic increase in place field size with running speed.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig4-v2.jpg)\n\n**Figure 4.:** (A) The size of a given place field remains roughly constant regardless of running speed in examples from three individual place fields (one per column). Dashed gray lines represent the extent of the place fields calculated from the complete set of spikes at all running speeds. Black lines mark the extent of the place field calculated for each speed bin. Where only one end of the place field could be determined (e.g., field 3, third and fourth rows), place field size was set to twice the distance from the field\u2019s peak (orange star) to the detected field end (see Materials and methods). Thin gray lines represent the occupancy (time spent) per spatial bin (axis on the right). At the bottom, linear regressions on place field size versus running speed for each place field. Fields 2 and 3 belong to the same cell. (B) The slopes from linear regression of place field size vs. running speed for all place fields, sorted for each animal. Across the population of place fields, slopes were not significantly different from zero (indicated p values). The size of the dot reflects the number of data points that contributed to the regression. The black vertical lines indicate the weighted averages of these slopes for each animal. The gray lines indicate the slope of the regression calculated by first pooling together data points from all place fields for each animal. (C) Remarkably, when combining data across fields, the average field size generally increases as a function of running speed. Colored lines represent individual animals, and the thick black line averages over them. Shading represents the standard deviation around the mean of all data points pooled across animals.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Theta trajectory lengths remain unchanged when restricting the analysis to theta cycles occurring in areas covered by place field analyses. Same analysis as in Figure 3D, but pooling only theta cycles occurring in portions of the track that are covered by place fields included in the place field size or phase precession slope analyses.\n\nIntriguingly, however, when we combined all place field sizes corresponding to each speed bin, we uncovered a linear relationship between place-field size and speed (Figure 4C; $p<0.02$ for the association between place field sizes combined across fields and speed bin for five of the six animals, Kendall\u2019s $\\tau$ test). This increase in place field sizes is consistent with the temporal sweep model, whereas the lack of within-field changes mentioned above supports spatial sweeps. Both findings, however, can be consistent with the behavior-dependent sweep model provided that place fields are larger in track areas characterized by faster running (Figure 2). We examine this question below.\n\n### Phase precession slopes of individual place fields are independent of running speed\n\nSimilarly conflicting results were obtained when analyzing phase precession. We calculated phase precession slopes at each running speed bin for each field separately by pooling spikes across different field traversals according to the instantaneous running speed of the animal when the spikes were emitted. Figure 5A shows the results of this analysis for three example place fields. To ensure that we capture and adequately describe steep phase precession in small place fields (e.g. Figure 1D), we devised a method using orthogonal regression (see Materials and methods). An analysis of all place fields (Figure 5B) revealed that phase precession slopes of individual fields did not change systematically with running speed for any of the six animals ($p>0.05$, Wilcoxon signed-rank test). Remarkably, however, when we combined phase precession slopes across different fields for each speed bin, the combined slopes at slower speeds tended to be steeper than at faster speeds (Figure 5C; $p<0.006$ for the association between phase precession slopes combined across fields and speed for five of the six animals, Kendall\u2019s $\\tau$ test).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig5-v2.jpg)\n\n**Figure 5.:** (A) Example phase precession slopes at different speeds for three fields. Instantaneous speeds when the spikes where emitted are color coded. Thin gray line displays the occupancy. At the bottom, linear regressions on phase precession slope versus running speed for each place field. (B) Similar to Figure 4B for the slopes of the linear regressions on phase precession slope vs. running speed for individual fields. (C) Similar to Figure 4C for phase precession slopes combined across fields for each speed bin. (D) Example phase precessions in single passes through two place fields (rows) sorted by running speed (upper right corner, in cm/s). Color code as in A. (E, F) Same as in B and C but for single-trial phase precession slopes. The means for each animal in F were calculated as a moving average on a 10 cm/s wide sliding window.\n\nIn this analysis, when rats accelerate or decelerate through a field, different parts of the field\u2019s phase precession cloud are sampled at different running speeds. This can be seen in the first field (no. 4) in Figure 5A. Since the rat was accelerating through the field, spikes emitted at lower and higher speeds appeared more frequently at the beginning and end of the field, respectively. Phase precession clouds have some curvature (Souza and Tort, 2017; Yamaguchi et al., 2002), so sampling different parts of the field under acceleration or deceleration could lead to a spurious relationship between speed and phase precession slope. To avoid this confound, we further analyzed phase precession slopes in single passes through a field (Schmidt et al., 2009). We only included passes that occurred at approximately constant speed, that\u00a0is, passes with a coefficient of variation in speed lower than 0.3. Figure 5D shows examples of individual passes through two fields, sorted by running speed. Note how, notwithstanding variability in the slopes, there is no systematic change with running speed, even though the speeds nearly double. There was no significant relationship between phase precession slope and speed for individual fields in any of the three animals with sufficient data for this analysis, that\u00a0is, more than 10 fields (Figure 5E). Yet again, when we combined phase precession slopes across place fields, we saw that they become shallower with speed ($p<0.04$ for five of the six animals, Kendall\u2019s $\\tau$ test; Figure 5F). Hence, the results from single pass phase precession analysis confirm those obtained from the session-wide analysis.\n\n### Theta trajectories and place field parameters vary according to characteristic running speed across the track\n\nWe have shown that theta trajectory lengths and place field sizes increase with running speed, and phase precession slopes become shallower, when combining data-points from different positions along the track or place fields (Figure 3B,D; Figure 4C and Figure 5C,F), but not when fields are analyzed individually (Figure 4B and Figure 5B,E). While these combined findings appear counter-intuitive, the behavior-dependent sweep model offers a simple explanation: short theta trajectories and small place field sizes could occur at locations where animals tend to run slowly, contributing to the low-speed averages, while long theta trajectories and large place field sizes could occur where animals tend to run fast, contributing to the fast-speed averages (Figure 6A). For this explanation to be valid, the following prerequisites must hold: (1) running speeds should differ systematically along the track such that (2) place fields in different positions contribute differently to the low- and high-speed analyses; and (3) theta trajectory lengths, place field sizes and the inverse of phase precession slopes depend linearly on the characteristic speed across different locations (Equation 22-24).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig6-v2.jpg)\n\n**Figure 6.:** (A) Potential explanation for the increase in average theta trajectory length, place field size and phase precession slopes with speed despite the lack of systematic within-field changes. The histogram shows the distribution of running speeds by positions for rightward runs in one experimental session. The thick red line is the characteristic speed, defined as the mean speed after discarding trials with running speed < 10 cm/s in the center of the track (exclusion criteria indicated by dotted red line). Running speeds tend to cluster around the characteristic speed. (B) Average characteristic speed as a function of the normalized distance from the start of the run for each animal (colored lines) and the grand average across animals (thick black line). Shaded region as in Figure 3B. (C) The proportion of fields sufficiently sampled for place field analysis at a certain speed bin falls steeply with the deviation between the speed bin and the mean characteristic speed through the field. Grey bars indicate averages across animals. (D) Histogram of individual theta trajectory lengths across the track for all animals combined and their mean (red line). Negative values correspond to theta trajectories going in the opposite directional as running. (E) Place field sizes and (F) the inverse of phase precession slopes across the track for each animal (colored dots), and their moving average with a window size of 0.1 (normalized units; black lines). (G) Histogram of theta trajectory lengths (with mean [red line] and linear fit [black line]) versus characteristic running speed for locations where each trajectory was observed. (H) Place fields are larger and with (I) shallower phase precession slopes for fields with higher mean characteristic speed. Solid black lines represent moving averages with a window size of 15 cm/s, and dashed lines indicate linear fits.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Theta trajectory lengths vary across the track and correlate with characteristic running speed. Histograms of theta trajectory lengths as a function of normalized distance from the start of the run (first row) and characteristic running speed at the position where the theta trajectory occurred (second row). The red lines indicates mean values, and black lines, linear fits. p-Values are indicated for Kendall\u2019s $\\tau$ tests.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Place field sizes and phase precession slopes vary across the track and correlate with characteristic running speed. (A) Place field sizes as a function of distance from the start of the run (first row), and characteristic speed through the field (second row). Each column contains data for one animal. Different colors for each animal represent different experimental sessions. Each point is a place field. Thick black lines indicate moving averages with sliding windows of 15 cm and 15 cm/s for distance and speed, respectively (minimum three points per window). Dashed lines correspond to linear fits. p-Values are indicated for Kendall\u2019s $\\tau$ tests, null hypothesis: no association between place field size and characteristic speed. (B) Same as above but for the inverse of phase precession slopes.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Place field sizes, phase precession slopes, and theta trajectory lengths correlate with one another. (A) The inverse of phase precession slope correlates strongly with place field size. Colored dots indicate individual place fields from different animals. The solid line represents a moving average with a window size of 15 cm, and the dashed line, a linear fit. (B) Histogram of theta trajectory lengths as a function of the mean place field size or (C) mean inverse phase precession slope in 15 cm wide windows centered at the positions where the theta trajectories occurred (black lines in Figure 6\u2014figure supplement 2). Changing the size of the moving average window to 10 cm/s or lower, or 20 cm/s or higher decreased the value of the correlations. The red lines indicates mean values, and black lines, linear fits.\n\nTo test the first prerequisite, we calculated the characteristic speed for each spatial bin along the track. This was defined as the mean speed after discarding trials where the animal stopped running on the track (speeds <\u00a010 cm/s), to prevent atypical pauses from distorting the mean values. The upper panel in Figure 6A shows the characteristic speed for rightward runs in one sample experimental session and Figure 6B shows averages across running directions and sessions. All animals showed similar asymmetric inverted U-shape relationships between characteristic speed and position along the track. Next, as required by the second prerequisite, we confirmed that running speeds at each position were clustered around the characteristic running speed (Figure 6C). We also observed inverted U-shape relationships between position along the track, and theta trajectory lengths and place field sizes (Figure 6D,E). Because theta trajectory lengths and place field sizes should be linearly related to the inverse of phase precession slopes (Equation 22-24), we plotted this variable along the track and found the corresponding U-shape distribution (Figure 6F). Finally, in support of the third prerequisite, we found that theta trajectory lengths and place field sizes increased, and inverse phase precession slopes decreased, roughly in proportion to characteristic speed for up to at least 60 cm/s, which encompassed most of the data (Figure 6G\u2013I). Some flattening of the curves appeared after 60 cm/s, but this was less apparent when considering each animal individually (Figure 6\u2014figure supplement 1 and Figure 6\u2014figure supplement 2), suggesting that the flattening is at least partly caused by combining points from clouds with different slopes and speed ranges.\n\nSince theta trajectory lengths, place field sizes and inverse phase precession slopes all displayed matching distributions, we tested their mutual relationships. We found that the three of them displayed strikingly linear relationships to one another (Figure 6\u2014figure supplement 3), underscoring the intimate relationships that hold between these systematically interrelated measures of place cell activity. It is also worth noting that theta trajectory length correlates slightly better with characteristic running speed than with either mean place field size or mean inverse phase precession slope at the locations where the trajectories occurred (R = 0.35 vs 0.29 for the latter two; Figure 6\u2014figure supplement 3B,C).\n\nSince speed and location on the track are correlated, we also tested whether place field parameters could be best explained by distance to the nearest end of the track, rather than by characteristic running speed. We performed a likelihood ratio test that indicated that both variables contributed significantly to the prediction of place field sizes and inverse phase precession slopes ($p<10^{-6}$). However, the fraction of the total variance accounted for differed substantially between the two variables. A model combining both variables could account for 29% and 28% of the variance in place field sizes and inverse phase precession slopes, respectively. Out of this, characteristic running speed uniquely accounted for 13% and 11% of the variance, whereas distance to the border uniquely accounted for 3% and 7%, respectively. Therefore we conclude that although both variables are related and contribute to determining place field parameters, characteristic running speed plays a more prominent role.\n\nTaken together, these findings account for and reconcile the speed-dependence of average theta trajectory lengths, place field sizes and phase precession slopes with the speed-independence of individual fields, and satisfy the prerequisites of the behavior-dependent sweep model.\n\n### The behavior-dependent sweep model accounts best for all of these experimental results\n\nOur analyses so far suggest that neither the spatial nor the temporal sweep models can account for all of the experimental observations, whereas the behavior-dependent sweep appears consistent with all of them. However, these analyses might involve too many simplifying assumptions about how running speeds, theta coupling and place field parameters are co-distributed. To address this issue, we developed generative models based on the experimental LFP and animal tracking data to generate spikes according to each of the different theta phase coding schemes. The parameters in each model were adjusted to account for as many features in the experimental data as possible. We analyzed the effect of instantaneous running speed on theta trajectory lengths, place field sizes and phase precession slopes in each of the simulated datasets alongside the experimental data (Figure 7). This approach further allowed us to examine whether any of the models could provide a simple unified account of the data, using a single set of parameters.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig7-v2.jpg)\n\n**Figure 7.:** (A) Summary of experimental results from Figures 3\u20135. Results from all animals are combined. Only one animal featured more than three sessions. For this animal, we sub-selected three sessions at random so that it would not dominate the results. Top three rows: theta trajectory lengths, place field sizes and phase precession slopes combined across positions and fields based on instantaneous running speed. Bottom two rows: the changes in individual place fields\u2019 sizes and phase precession slopes as a function of the difference between instantaneous running speed and the characteristic running speed. For this analysis, fields were assigned to the speed bins closest to the characteristic running speeds at their locations. Black dots represent average values. (B) Similar to A for data generated by the temporal sweep model. The temporal sweep model provides a qualitative fit to the average theta trajectory lengths, place field sizes and phase precession slopes, but incorrectly predicts increases in individual place field sizes and phase precession slopes. In this and other columns, green and red axes indicate good and bad qualitative fits, respectively (i.e. whether the model predicts the same type of change in the variables with speed as the experimental data exhibits) and the numbers in the lower right corners indicate the mean squared differences between the average values produced by the model and the experimental data across speed bins. (C) The spatial sweep model accounts for the lack of within-field increases in place field sizes and phase precession slopes. However, the increase in theta trajectory length with running speed is not nearly large enough and place field sizes and phase precession slopes remain flat with running speed. (D) The behavior-dependent sweep model captures both the population average and within-field effects, providing a good agreement with all experimental results.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The behavior-dependent sweep model captures changes in place field skewness with acceleration. Place field skewness is correlated with the mean acceleration through the field in the experimental data (left) and the model (right), although the experimental distribution is notably broader. Black lines represent linear fits. The correlations are significant ($p=3.8\\times10^{-8}$ and $p=7.7\\times10^{-23}$ for the experimental and simulated data, respectively [Kendall\u2019s $\\tau$ test]).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70296/elife-70296-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** The behavior-dependent sweep model replicates the experimentally observed increase in firing rates with running speed. Analyses and plotting conventions as for Figure 4B & C, for the peak firing rate of place fields.\n\nThe temporal sweep model roughly captures the observed increase in theta trajectory lengths, place field sizes and phase precession slopes combined across different positions and fields based on instantaneous running speed. However, it did so for the wrong reasons, since it incorrectly predicts changes in individual fields with speed (Figure 7B). By contrast, the spatial sweep model accounts for the speed-independence of individual fields, but severely undershoots the increase in theta trajectory length with running speed and fails to capture the increases in place field sizes and phase precession slopes (Figure 7C). Only the behavior-dependent sweep model is able to replicate the correct combination of qualitative effects (Figure 7D). Furthermore, the behavior-dependent sweep produced values with the lowest mean squared deviation to the experimental data for four of the five variables considered (Figure 7; numbers in corners).\n\nFurther proof for the validity of the behavior-dependent sweep model comes from the fact that we fitted one of its crucial parameters based on a different subset of the data as the one used to evaluate the models. In particular, we estimated $\\tau_{\\theta}$ based on Equation 23 from the experimentally observed relationship between phase precession slopes and characteristic running speed (Figure 6I), yielding \u03c4\u03b8\u00a0=\u00a00.57 s. With this value, the model provided a good fit to the relationship between instantaneous running speed and theta trajectory lengths, place field sizes and phase precession slopes (Figure 7D). This highlights the ability of the model to account for the relationships and internal consistency of multiple measurements of place cell activity.\n\nFinally, a subtle prediction of the behavior-dependent sweep model is that fields will skew differently depending on whether the animal is typically accelerating or decelerating through the field\u2013that\u00a0is when the characteristic running speed changes within the field. We therefore analyzed the relationship between mean acceleration and place field skew in the experimental data and found a good qualitative fit with the predictions from the model (Figure 7\u2014figure supplement 1). Negatively skewed fields Mehta et al., 2000 were observed at all acceleration values, but positively skewed fields occurred mainly at positive accelerations, resulting overall in a significant correlation between mean acceleration and skew ($p=4\\times10^{-8}$, Kendall\u2019s $\\tau$ test). A similar observation was made by Diba and Buzs\u00e1ki, 2008, who reported positive skews at the beginning of the track, where rats are usually accelerating, and negative skews towards the end, where rats decelerate.\n\nIn summary, we found that the behavior-dependent sweep model provided the best overall fit to the experimental data with a single set of model parameters.\n\n## Discussion\n\nWhile research over the past four decades has shed light on numerous aspects of the hippocampal code, the exact relationship between represented position, theta phase, and the animal\u2019s physical location has remained ambiguous. The expression of this relationship in theta sequence trajectories at the population level and in theta phase precession at the single-cell level are two sides of the same coin, but the two levels have seldom been explored side by side. Here, we illustrated that established findings in the field at these different levels are in apparent contradiction with one another. We reconciled these findings by demonstrating that even though individual place fields do not change with instantaneous running speed, their size and phase precession slopes vary according to the animal\u2019s characteristic running speed through these place fields. In particular, regions of slow running are tiled with smaller place fields with steeper phase precession, corresponding to shorter theta trajectories at the population level, whereas regions of fast running are covered by larger place fields with shallower phase precession, corresponding to longer theta trajectories. Based on these observations, we proposed a novel theta phase coding scheme, the behavior-dependent sweep. In this model, the spatial extent of the theta oscillation sweep varies across the environment in proportion to the characteristic running speed at each location. As a result, the sweeps can be seen as going through the positions that were or will be reached at certain time intervals in the past or future, assuming the animal runs at the speed characteristic of each place, as opposed to at its actual instantaneous speed. This coding scheme thus integrates aspects of both the spatial and temporal sweeps.\n\n### Relationship to previous studies on the speed-dependence of the hippocampal code\n\nWhy were the relationships between characteristic speed, hippocampal sweeps and place field parameters not evident in previous studies? Two previous studies (Maurer et al., 2012; Gupta et al., 2012) pooled theta trajectories across different positions when showing the effect of speed on theta trajectory length, therefore masking the role of position in mediating the relationship between the two variables. In other studies, the dependence of place field parameters on the characteristic running speed through the field did not emerge because analyses focused on relative measures between pairs of cells (Geisler et al., 2007; Diba and Buzs\u00e1ki, 2008) or individual fields (Schmidt et al., 2009; Huxter et al., 2003; Maurer et al., 2012) that remain unaffected.\n\nWe note that one other study (Chadwick et al., 2015) previously proposed a model to account for the increase in theta trajectory length with running speed despite stable place field sizes and phase-precession. The model achieved this by increasing the precision of the theta phase versus position relationships of cells with running speed. This feature, however, results in unusually noisy phase-precession at low speeds (see Neuronal sequences during theta rely on behavior-dependent spatial maps for results on a model that operates based on the same principle and comparisons to experimental data). Furthermore, this kind of model cannot account for the dependence of average place field size on characteristic running speed.\n\nOn the other hand, two models which are consistent with the increase in place field sizes with characteristic speed did not address theta phase coding. Slow feature analysis attempts to extract slowly varying signals from the sensory input, and has been found to account for different properties of place, head direction and view cells (Franzius et al., 2007). Extracting place-specific features that vary on the order of several seconds, for instance, would lead to larger place fields at locations of higher speeds, as we have observed. This observation is also consistent with the successor representation model of place-fields (Stachenfeld et al., 2017). In this model, the activity of a cell is determined by the expected discounted future occupancy of the cell\u2019s preferred location, which proves useful for planning. Thus, a cell with a preferred location where average running speed is higher would begin firing relatively further away from that place. The behavior-dependent theta sweep model shares this prediction with these two models, and further accounts for theta-phase and trajectory relationships.\n\n### Behavior-dependent sweeps are advantageous for prediction and planning\n\nGiven the purported role of theta phase coding in prediction and planning, we can compare our three coding schemes in terms of their benefit for these functions. Representing future positions based on the distance to them, as in the spatial sweep, could allow an animal to calculate the speed necessary to reach those positions in a given amount of time. This representation might also be convenient because our bodies and sensory organs limit the spatial range at which we can interact with the world. In contrast, looking forward based on an interval of time rather than space, as in the temporal sweep model, could increase the code\u2019s efficiency by matching the extent of the look-ahead to the speed of progression through the environment. For instance, while driving a car on a highway, we might have to look ahead by several hundred meters, since those positions are just seconds away, while such a distance is not useful when strolling in a park. Plans made too far in advance are very likely to be discarded upon unexpected changes or as new information comes to light, which is conceivably related to the use of a discount factor in reinforcement learning models (Sutton and Barto, 1998). Temporal sweeps also seem more plausible for phase-coding in non-spatial domains (Pastalkova et al., 2008; Lenck-Santini et al., 2008; Robinson et al., 2017; Terada et al., 2017; Aronov et al., 2017). However, temporal sweeps require a fine control by the instantaneous running speed, and there are indications that the hippocampal network lacks the the flexibility required to modify the time lags between pairs of cells at the theta timescale (Diba and Buzs\u00e1ki, 2008; Shimbo et al., 2021).\n\nThe behavior-dependent sweep might thus represent the best solution compatible with network constraints by taking advantage of the relative simplicity of spatial sweeps while still enjoying the benefits of temporal sweeps in situations in which behavior is stereotyped. Thus, the look ahead on a highway remains a few hundred meters even if on occasion we are stuck in a traffic jam. Finally, behavior-dependent sweeps could make predictions of future positions more robust through the averaging of past experience.\n\nDespite the potential benefits of behavior-dependent sweeps mentioned here, these sweeps are probably best construed as a default or baseline mode of operation, which could be further modulated by ongoing cognitive demands and task contingencies (Wikenheiser and Redish, 2015; Shimbo et al., 2021; Zheng et al., 2021).\n\n### Look-ahead times can help explain place field sizes\n\nAll theta sweep models and concepts of prospective and retrospective coding, and extra-field spikes in general, imply that place cells also fire outside their true place fields. In other words, an experimentally measured place field encompasses the extent of the true place field, as well as look-ahead and look-behind activity. This link between place fields and prospective/restrospective representations at the theta timescale provides a lower bound on place field sizes for a given task based on its characteristic running speed. For sweeps that are centered around the current position, a $\\tau_{\\theta}$ of $\u223c0.6$ s means that theta sweeps on average end in positions arrived at in $\u223c300$ ms. Representing those future positions would be of use only if there was enough time for the animal to modify its behavior in response to them. Reaction times for rats performing simple and choice tasks range between 150 ms and 500 ms (Baunez et al., 2001; Brown and Robbins, 1991), and stop signal reaction times stand at around 360 ms (Eagle et al., 2009). Therefore, place field sizes associated with a look-ahead time of 300 ms probably stand towards the lower end of what can be used to control behavior through rapid decision-making. However, place fields (Kjelstrup et al., 2008) increase in size along the dorsoventral axis of the hippocampus. The largest place fields recorded in rats stand at about 10 m, which would correspond to representing a time window of > 10 s. Thus, we can conceive of a hierarchy of subregions corresponding to predictions at different temporal scales.\n\n### Potential mechanisms of behavior-dependent sweeps\n\nThe dependence of place field parameters and theta trajectories on characteristic speed raises the question of how and when this speed might be computed in the brain, and how it is used to control hippocampal sweeps. One intriguing possibility is that the animal can estimate the speed at which it will typically traverse some region of an environment based on general knowledge of similar environments (e.g. knowing that speed will tend to be lower around boundaries). Another possibility is that the characteristic speed is taken to be the speed of the firsts traversals through the environment, in which theta sequences are reportedly lacking or reduced (Feng et al., 2015; Tang et al., 2021), and then updated incrementally.\n\nThe latter suggestion fits naturally with network connectivity models of phase precession (Jensen and Lisman, 1996; Tsodyks et al., 1996; Drieu and Zugaro, 2019). In these models, theta sequences are produced by the propagation of activity through the population, perhaps owing to the recurrent connectivity in area CA3 (Cheng, 2013; Azizi et al., 2013). The network is cued with the current position and recalls upcoming positions. As the animal moves forward, positions will activate at earlier phases of the theta cycle, producing phase precession. In this family of models, it is easy to imagine sweeps varying based on average speed. Place cells could be connected with a higher synaptic strength the closer in time they become activated, leading to stronger and further reaching connectivity in areas through which the animals run faster on average. If the speed of propagation in the network is then made dependent on synaptic strength, activity would propagate further in the network within each theta cycle where speed had been higher, producing longer theta trajectories in those areas. Alternatively, based on the view that theta sequences arise from independently phase-precessing cells (Chadwick et al., 2015), behavior-dependent sweeps could simply result from a behavior-dependent spatial map that yields larger place fields in areas of faster running.\n\n### Predictions and outlook\n\nIn the dataset analyzed, changes in running speed arose naturally from animals running on a finite track, but were not controlled by the experimenter. Further confirmation for the behavior-dependent sweep model could come from experiments in more complex environments that can produce variable running speeds at different specific locations (Kropff et al., 2021), such as slowing down in previously fast segments and speeding up in slow ones. This would allow for the comparison between behavior-dependent sweeps, and alternative models for which the look-behind and look-ahead distances vary depending on other variables. In particular, it would be interesting to dissociate the effect of characteristic running speed from that of distance to the environmental boundaries, since the boundary vector cell (Barry et al., 2006) and Laplace transform (Sheehan et al., 2021) models suggest that it could be some non-linear function of distance to the border or trial start, rather than characteristic running speed, that determines place field parameters. Other factors that could play a role are the distance to reward locations (Hollup et al., 2001), the distance to the goal (Wikenheiser and Redish, 2015), the density of sensory cues, the spatial rate of change of visual input (Tanni et al., 2021), the complexity of the maze, or the amount of retrospection and prospection required for the task.\n\nAlthough we have focused primarily on the effect of speed, it is reasonable to also expect acceleration to have an effect on theta phase coding. We discuss three specific mechanisms. First, acceleration could introduce a second-order term in the equation for $r\u2062(t)$ such that theta trajectories curve in areas through which the animal typically accelerates or decelerates. This might cause trajectories in areas of positive acceleration to reach further ahead than behind, and trajectories in areas of negative acceleration to reach further behind than ahead, consistent with the findings of Gupta et al., 2012 and Bieri et al., 2014. This effect would also be modulated by the phase at which the current position is represented ($\\theta_{0}$ in our equations), since this controls the ratio of look-ahead to look-behind. For instance, the more look-ahead there is, the longer the theta trajectories would become in areas of positive acceleration. Second, acceleration leads to different characteristic running speeds in different parts of a place field. Our model predicts that this would cause place fields to skew differently in areas of positive and negative acceleration, a prediction for which we have found some preliminary experimental support (Figure 7\u2014figure supplement 1). Additionally, the model indicates that changes in characteristic speeds through fields cause corresponding changes in theta phase precession. If characteristic speed increases across a field, the slope of phase precession would become increasingly shallow, resulting in concave phase precession clouds, whereas if characteristic speed decreases across the field, the slope of phase precession would be increasingly steep, producing convex \u2018banana shaped\u2019 phase precession clouds (Souza and Tort, 2017; Yamaguchi et al., 2002). Future studies are required to test these two predictions, since the range of accelerations in the current dataset was relatively small, especially for positive values, and strong acceleration and deceleration were concentrated over small regions at the start and end of the track, respectively. Third, theta frequency has recently been shown to increase with positive acceleration, but not deceleration or speed (Kropff et al., 2021). One might wonder whether shorter theta cycles due to positive acceleration, rather than the lower running speed, could explain the shorter theta trajectories we observed at the beginning of the track. However, we also observe shorter theta trajectories at the end of the track, where running speeds are also lower, but acceleration is negative and theta cycles are longest (Figure 6B,C). Furthermore, as shown by Kropff et al., 2021, the increase in theta frequency is accompanied by an increase in the intrinsic firing frequency of cells which would provide a compensatory effect on theta trajectories. Even without such compensation, the reduction in theta trajectory length due to shortened theta cycle is small and insufficient to account for the observed effect.\n\nLastly, our behavior-dependent sweep model could be applied to describing the activity of place cells in two-dimensional environments, and potentially also that of grid cells, since theta phase coding has been demonstrated in both of these cases (Huxter et al., 2008; Jeewajee et al., 2014; Hafting et al., 2008). For grid cells, our model predicts that sizes of individual firing fields within the grid will vary according to running speeds characteristic of the corresponding maze regions. By contrast, the distance between firing field peaks would remain constant, since the locations of the underlying true fields remain fixed in the model.\n\nIn conclusion, our analyses have highlighted the heretofore unresolved tension lurking in the field between experimental results and interpretations explicitly or implicitly supporting spatial and temporal sweeps. Our novel interpretation reconciles apparently contradictory findings by making spatial sweeps dependent on the average behavior at each position, combining features and benefits of both kinds of sweep. In doing so, the model advances our understanding of how the mammalian brain represents past, present and future spatial positions for learning and planning, and provides a quantitative framework that can stimulate further research.\n\n## Materials and methods\n\n### Data analysis\n\nWe re-analyze data from two publicly available data sets (Mizuseki et al., 2013; Grosmark et al., 2016) containing recordings of male Long-Evans rats running on linear tracks of various lengths for water rewards at both ends. From the first data set, we limited the analysis to the data from three animals, described in Mizuseki et al., 2009, which contained sufficient parallel recordings for Bayesian decoding of position. The second data set, described in Grosmark and Buzs\u00e1ki, 2016, contains data from four animals running on a novel track. Data from one animal was excluded due to issues with local field potential recordings (see below), resulting in a total of six animals included in this study. The first 5 min of the recordings in a novel track were discarded since place fields of hippocampal place cells might be unstable in the first 5 min of novel experience (Frank et al., 2004) and we wanted to only include periods with stable spatial representations. Five of the animals had one\u00a0to\u00a0three experimental sessions available. The remaining animal had a disproportionately large number of experimental sessions, so a random subset was chosen. The exact number and identity of the sessions analyzed for each animal are reported in Figure 6\u2014figure supplement 2A. In these data, neural activity was recorded using multi-shank silicon probes targeting region CA1 of dorsal hippocampus. After spike sorting, cells were classified as principal neurons or interneurons based on monosynaptic interactions, wave-shapes and burstiness.\n\n#### Local field potential\n\nWe filtered the local field potential (LFP) with a Butterworth filter of 3rd order between 4 and 12 Hz. We then estimated theta phase from the signal\u2019s Hilbert transform and shifted it by 180\u00b0 so that 0\u00b0 and 360\u00b0 correspond to the peaks of the filtered LFP. Individual theta cycles were then defined as spanning the range from 0\u00b0 to 360\u00b0. Periods of significant theta oscillation were identified by an instantaneous amplitude above the 97th percentile of amplitudes from a shuffled surrogate signal. To create this surrogate, we high-pass filtered the LFP at 1 Hz with another Butterworth filter of 3rd order and randomly permuted the time stamps. All the analyses carried out throughout the paper deal exclusively with periods with significant theta oscillations. In the excluded rat, the LFP signals were particularly noisy, leading to an atypically low fraction of theta cycles categorized as periods of significant theta oscillation as defined below ($0.38\\pm0.02$, compared to an average of $0.81\\pm0.06$ for the other animals).\n\n#### Tracking data\n\nThe position of the rat was determined as the midpoint of the two LEDs mounted on its head. The 2D positions where then projected onto the linear track. We calculated instantaneous speed as the central difference of the position along the track, smoothed with a Gaussian filter with a standard deviation of 100 ms. Periods where rats ran continuously in the same direction from corner to corner were identified as rightward or leftward runs. A characteristic speed was calculated for each running direction in 4 cm spatial bins by taking the mean of speeds after discarding instantaneous speed values below 10 cm/s that did not occur within 40 cm of either end of the track (e.g. see Figure 6B). This was done to avoid contamination of the calculation of the mean speed by infrequent cases where rats stopped in the middle of the track. Near the ends of the tracks, however, low speeds are the norm and therefore we did not set a minimum threshold there. A mean acceleration value was also calculated for each spatial bin by taking the difference of the smoothed speeds.\n\n#### Firing rates\n\nAfter excluding spikes during pauses in track running (previous paragraph), firing rates were calculated in 4 cm spatial bins and smoothed with a Gaussian filter with a standard deviation of 6 cm. Virtually the same results were produced without this restriction (not shown). Firing rates were calculated independently for each running direction.\n\n#### Identification of place fields\n\nCandidate place fields were required to have a peak firing rate above 2 Hz and at least 25 spikes. The spatial extent of the field was defined by the positions at which the firing rate fell below 15% of the peak firing rate. If a place field was cut on either side by the end of the track, but the firing rate had gone below 66% of the peak firing rate before then, the field was accepted but marked as incomplete. If there were more than three consecutive spatial bins with zero occupancy between the field\u2019s peak and one of the points at which the firing rate fell below threshold, the field was also marked as incomplete. Incomplete fields were excluded from the phase precession and place field skew analyses, and were treated differently in the place field size analysis (see below). Candidate place fields were screened manually to remove instances with multiple overlapping phase precession clouds.\n\n#### Place field sizes\n\nFor incomplete fields, place field size was calculated as twice the distance between the field\u2019s peak and the point on either side of the peak for which the firing rate fell below the 15% threshold. This ensured that a sufficient number of place fields at the ends of the track entered the analysis. Due to the pattern of place field skews along linear tracks (Diba and Buzs\u00e1ki, 2008), we expect this method to slightly overestimate actual sizes, and thus the smaller place field sizes that we observed at the ends of the track should not be an artifact of the procedure.\n\nFor calculating the effect of running speed on place field sizes, we recalculated the firing rates with the same spatial bin size and smoothing as described above, but using data corresponding to periods with running speeds belonging to overlapping 20 cm/s wide speed bins in 10 cm/s steps starting at 2 cm/s. Rats spent too little time at some positions and speeds, often leading to an apparent firing rate of 0 due to the lack of time to produce any spikes. Thus, we defined a sampling index that identified areas within the spatial extent of the place field (defined above) that had been sufficiently sampled; we only attempt to measure the place field size in such cases. To obtain this sampling index, we summed the distances between all pairs of spatial bins within the field with occupancy above 300 ms, and divided it by the sum of distances between all pairs of bins in the field. This gave a number that increases nonlinearly from 0 (no valid bins) to 1 (all bins are valid) taking into account both the number of valid bins and how spread out they are through the field. We excluded place fields with a sampling index below 0.4. Place fields where then identified and their sizes calculated as described above. For the summary analyses, we removed extreme outliers below $Q\u20621-k\u22c5I\u2062Q\u2062R$ or above $Q\u20623+k\u22c5I\u2062Q\u2062R$ where Q1 and Q3 are the 25% and 75% percentiles, $I\u2062Q\u2062R=Q\u20623-Q\u20621$ and $k=3$.\n\n#### Phase precession slopes\n\nPhase precession slopes were measured from linear fits of phase precession clouds falling within the extent of place fields as defined above. The fitting of phase precession clouds is complicated by two matters: (i) phase is a circular variable, and (ii) the slope of the precession might be very steep. One possible way of dealing with the circularity of phase is to directly minimize angular distances between points and the best fitting line in the cylinder defined by position and phase. This can be done using circular-linear regression (Kempter et al., 2012; Schmidt et al., 2009) or by exhaustive search (O'Keefe and Recce, 1993). However, in such cases, one must set the minimum and maximum slopes allowed, otherwise the optimal solution would be a line with a slope approaching $\\pm\u221e$ that loops around the cylinder going through all points. This would preclude us from correctly fitting steep phase-precession clouds. Another possibility is to try to unwrap the phase precession cloud so that it lays uninterrupted in a plane and then perform a standard linear regression (Lenck-Santini and Holmes, 2008). However, this does not work well either for very steep phase precession clouds, since linear regression minimizes only the sum of square errors in phase, leading to excessively shallow fits of steep clouds.\n\nWe therefore developed a new method to determine phase precession slopes robustly even when they are very steep. It is based on orthogonal distance regression, which minimizes the orthogonal distance of the data points to the best fitting line. This method introduces fewer a priori assumptions than standard linear regression, since it does not distinguish between independent and dependent variables. Phase and positions were normalized to a range of $[0,1]$ to make their contribution equivalent in the calculation of orthogonal errors.\n\nAs commonly observed, spikes in the phase precession plot (theta phase vs. position) did not generally form a monotonic relationship. Instead, phase precession clouds slightly wrapped around 0\u00b0 or 360\u00b0. This means that the theta phase, as extracted from the filtered LFP, does not accurately mark the transitions between actual theta cycles. Since we later analyze theta sequences, it is crucial to identify the proper beginning and end of the theta cycles. We did this by identifying the theta phase offset that optimized the phase precession relationship across all fields for each experimental session as follows. We considered potential offsets from \u221260\u00b0 to 60\u00b0 in 2\u00b0 steps. For each value, we calculated orthogonal fits to the phase precession clouds for all fields within that session, and then selected the phase shift that led to the lowest mean orthogonal error across all fields. The optimal shift corresponded to the phase shift for which the most points fell along uninterrupted phase precession clouds.\n\nIn addition to ambiguity about boundaries of the theta cycle, for spikes near this boundary there is an ambiguity as to which cycle these spikes should be attributed to. This could lead to large errors in the orthogonal fit and therefore distortion in the estimate of the precession slope. Thus, we slightly modified the orthogonal fit procedure. We computed the slope and intercept of the line that minimized the sum of squared orthogonal distances with the following caveat. For points with normalized phases below 0.3 or above 0.7, we minimized the orthogonal distance to the line for either the original point or the point phase shifted in phase by 1 or \u22121, respectively, and chose whichever phase yielded the smallest distance. The minimization was done using the Nelder-Mead algorithm (Gao and Han, 2012) implemented in the SciPy library (SciPy 1.0 Contributors et al., 2020).\n\nFor calculating the effect of running speed on phase precession we proceeded as described for the place field sizes. We only attempted to calculate phase precession slopes when there were 12 or more spikes. Additionally, we analyzed phase precession slopes in single passes through a field. We calculated the average speed of the pass through the field from the tracking data. Note that this 'traversal speed' typically deviates from the 'characteristic speed' which is determined by the average over all the field traversals in a session. We focused on passes with a running speed above 2 cm/s, six or more spikes, a duration between the first and last emitted spikes above 400 ms and a coefficient of variation (standard deviation / mean) of instantaneous speed below 0.3. Passes with too many invalid positions in the tracking data where also excluded (sampling index < 0.4). For the summary analyses, we removed extreme outliers as described for place field sizes with $k=3$ for phase precession slopes in the pooled phase precession analysis and $k=6$ for single-pass phase precession slopes.\n\n#### Bayesian decoding and theta trajectory lengths\n\nWe performed a Bayesian decoding of position based on the ensemble spikes (Zhang et al., 1998) assuming a prior distribution over positions (Davidson et al., 2009). The probability of the rat being at position $x$ given a vector of spike counts for each cell, $n$, during a temporal bin of width $\\tau$ is given by:\n\n$$\nP(x|n)=C(\\tau,n)(\\prodi=1Nf_{i}(x)^{n_{i}})exp\u2061(\u2212\\tau\\sumi=1Nf_{i}(x))\n$$\n\nwhere $C\u2062(\\tau,n)$ is a normalization factor which can be determined by the normalization condition $\\sum_{x}P\u2062(x|n)=1$, and fi is the firing rate of cell $i$ in the corresponding running direction. We shifted theta phases so as to minimize the wrapping of phase precession clouds (see above), therefore we expected theta trajectories to be centered within individual theta cycles. We decoded within each cycle in overlapping 90\u00b0 windows with a step size of 30\u00b0 (no windows crossed theta cycles). The relatively large window size was due to the need to gather a sufficient number of spikes for the decoding. These phase intervals were transformed into time intervals independently for each theta cycle based on the cycle\u2019s duration. We attempted to decode position only in time bins where at least one spike was emitted, and for positions bins within a spatial extent of 70 cm centered at the current position. This value is below the average place field size at all running speeds (Figure 4C) and should therefore encompass the whole extent of the sweep.\n\nWhen averaging across theta cycles with similar speeds, we calculated theta trajectory lengths only in samples with more than five cycles. When analyzing theta trajectories in individual cycles, we focused on cycles well covered by phase bins with peak decoded probabilities larger than 0.1. In particular, we required at least five such phase bins spanning a minimum of 210\u00b0. Theta trajectory lengths were derived from a best fit line. To calculate this best fit, we first found the line that maximized the sum of decoded probabilities for positions within \u00b15 cm of the line (Davidson et al., 2009) and then performed linear regression with the points in this region weighted by their probabilities.\n\n#### Place field skew\n\nPlace field skew was calculated as the ratio of the third moment of the place field firing rate distribution divided by the cube of the standard deviation (Mehta et al., 2000; Davoudi and Foster, 2019):\n\n$$\n\\mu~_{3}=\\frac{\\mu_{3}}{\\sigma^{3}}\\mu_{3}=\\frac{\\sumj=1Sf_{j}(x_{j}\u2212\\mu_{1})^{3}}{\\sumj=1Sf_{j}}\\sigma=\\sqrt{\\frac{\\sumj=1Sf_{j}(x_{j}\u2212\\mu_{1})^{2}}{\\sumj=1Sf_{i}}}\n$$\n\nwhere, unlike above, fj is the firing rate of a given cell in the spatial bin xj, $S$ is the number of spatial bins, and $\\mu_{1}$ is the center of mass of the field:\n\n$$\n\\mu_{1}=\\frac{\\sum_{j=1}^{S}f_{j}\u2062x_{j}}{\\sum_{j=1}^{S}f_{j}}\n$$\n\n### Mathematical description of coding schemes\n\n#### Spatial sweep\n\nIn the spatial sweep model, the represented position at time $t$, $r\u2062(t)$ is given by\n\n$$\nr\u2062(t)=x\u2062(t)+d_{\\theta}\u2062\\frac{t-t_{n}}{T}\n$$\n\nwhere $x\u2062(t)$ indicates the actual location of the animal, $d_{\\theta}$ represents the extent of the spatial sweep, $T$ is the period of the theta oscillation and tn is the time for which $r\u2062(t)=x\u2062(t)$ within the current theta cycle.\n\nIn order to derive an expression for the length of theta trajectories, we can perform a Taylor series expansion around tn:\n\n$$\nr\u2062(t)=x\u2062(t_{n})+v\u2062(t_{n})\u2062(t-t_{n})+\\frac{a\u2062(t_{n})}{2}\u2062(t-t_{n})^{2}+\u2026+d_{\\theta}\u2062\\frac{t-t_{n}}{T}\n$$\n\nwhere $v$ and $a$ are the speed and acceleration, respectively. Since $(t-t_{n})$ is small, we can ignore the effects of the acceleration and higher order derivatives and approximate the represented position as:\u00a0\n\n$$\nr\u2062(t)=x\u2062(t_{n})+v\u2062(t_{n})\u2062(t-t_{n})+d_{\\theta}\u2062\\frac{t-t_{n}}{T}\n$$\n\nHere, the first two terms reflect the actual movement of the animal and the last one represents the sweep across positions starting behind the current position of the animal and extending ahead. Note that the model makes the simplifying assumption that sweeps, and hence also phase precession, are linear. There are indications that this could be the case when analyzing single trials (Schmidt et al., 2009) or when calculating theta phase using a wave-form method (Belluscio et al., 2012) (but see Souza and Tort, 2017; Yamaguchi et al., 2002).\n\nFrom Equation 10, we can calculate the length of theta trajectories, which encompasses both the sweep and the change in the actual position of the animal due to its movement during a theta cycle:\n\n$$\nl=r\u2062(t_{n}+(1-\\alpha)\u2062T)-r\u2062(t_{n}-\\alpha\u2062T)=v\u2062(t_{n})\u2062T+d_{\\theta},\n$$\n\nwhere $\\alpha$ is the relative position within the theta cycle for which $r\u2062(t)=x\u2062(t)$. The length of theta trajectories has an offset of $d_{\\theta}$ and is only weakly dependent on speed since the speed term is multiplied by the relatively small theta period.\n\nAt the single-cell level, we postulate a cell\u2019s activity is driven by the represented position $r\u2062(t)$ according to its true place field with preferred location r0 and width $\\sigma$. Specifically,\n\n$$\na(r)=f_{max}exp\u2061(\u2212\\frac{r\u2212r_{0}}{2\\sigma^{2}}).\n$$\n\nAll theta sweep models postulate that the position $r\u2062(t)$ represented by the place cell population differs from the actual location of the animal $x\u2062(t)$ depending on the phase of theta. $r\u2062(t)-x\u2062(t)=-\\alpha\u2062d_{\\theta}$ at the beginning of the theta cycle, and $r\u2062(t)-x\u2062(t)=(1-\\alpha)\u2062d_{\\theta}$ at the end. Since a place cell\u2019s place field is determined by $r\u2062(t)$ at all times, its firing relative to $x\u2062(t)$ will shift with the theta phase and this gives rise to phase precession in this model. For instance, the peaks of firing occur at $r_{0}-\\alpha\u2062d_{\\theta}$ at the beginning of the theta cycle and at $r_{0}+(1-\\alpha)\u2062d_{\\theta}$ at the end of the cycle. Hence, the theta phase of maximal firing precesses over a range of $d_{\\theta}$ and the slope of phase precession is:\n\n$$\nm=\u2212\\frac{360^{\u2218}}{d_{\\theta}}\n$$\n\nFurthermore, the shift of the cell\u2019s firing enlarges the measured place field beyond its true place field (size s0) by the amount of the shift, that\u00a0is the size of the measured place field is given by\n\n$$\ns=s_{0}+d_{\\theta}\n$$\n\nHowever, in practice, this will be further modulated by other factors such as the presence of theta modulation or the smoothing used when calculating firing rates.\n\n#### Temporal sweep\n\nFor the temporal sweep model, the represented position is given by,\n\n$$\nr\u2062(t)=x\u2062(t+\\tau_{\\theta}\u2062\\frac{t-t_{n}}{T})\n$$\n\nwhere $\\tau_{\\theta}$ is the extent of the temporal sweep. Again, we can perform a Taylor series expansion around tn:\n\n$$\nr\u2062(t)=x\u2062(t_{n})+v\u2062(t_{n})\u2062\\frac{(\\tau_{\\theta}+T)}{T}\u2062(t-t_{n})+\\frac{a\u2062(t_{n})}{2}\u2062\\frac{(\\tau_{\\theta}+T)^{2}}{T^{2}}\u2062(t-t_{n})^{2}+\u2026\n$$\n\nAnd discarding the effects of higher-order derivatives:\n\n$$\nr\u2062(t)=x\u2062(t_{n})+v\u2062(t_{n})\u2062(t-t_{n})+v\u2062(t_{n})\u2062\\tau_{\\theta}\u2062\\frac{t-t_{n}}{T}\n$$\n\nwhere again the first two terms reflect the movement of the animal and the last one, the sweep. In this case, the length of the theta trajectories is directly proportional to running speed:\n\n$$\nl=r\u2062(t_{n}+(1-\\alpha)\u2062T)-r\u2062(t_{n}-\\alpha\u2062T)=(\\tau_{\\theta}+T)\u2062v\u2062(t_{n})\u221dv\u2062(t_{n})\n$$\n\nFrom the first-order approximation of $r\u2062(t)$ in Equation 17, we see that the spatial extent of the sweep is $v\u2062(t_{n})\u2062\\tau_{\\theta}$. Therefore, we can substitute this for $d_{\\theta}$ in Equation 13 and Equation 14 to obtain the equations for phase precession slopes and place field sizes:\n\n$$\nm=\u2212\\frac{360^{\u2218}}{v(t_{n})\\tau_{\\theta}}\u221d\u2212\\frac{1}{v(t_{n})},\n$$\n\nand\n\n$$\ns=s_{0}+v\u2062(t_{n})\u2062\\tau_{\\theta}\n$$\n\nAs speed goes to 0, phase precession slopes becomes increasingly steep and place field sizes converge to that of the underlying true place fields.\n\n#### Behavior-dependent sweep\n\nTo reconcile the presented analytical observations with aspects of spatial and temporal sweeps that they appear to be consistent with, we make the extent of spatial sweeps directly proportional to the characteristic running speed at each location. Thus, we set $d_{\\theta}=v\u00af\u2062(x\u2062(t))\u2062\\tau_{\\theta}$ in Equation 8:\n\n$$\nr\u2062(t)=x\u2062(t)+v\u00af\u2062(x\u2062(t))\u2062\\tau_{\\theta}\u2062\\frac{t-t_{n}}{T}.\n$$\n\nNote that second term representing the sweep is equivalent to the sweep term in Equation 17, but using the characteristic speed through the current location as opposed to the instantaneous speed at which the animal is running.\n\nProceeding as above, we can derive equations for the theta trajectory length:\n\n$$\nl=v\u2062(t_{n})\u2062T+v\u00af\u2062(x\u2062(t_{n}))\u2062\\tau_{\\theta},\n$$\n\nwhich is roughly proportional to the characteristic running speed. Similarly, we can obtain the equations for the phase precession slopes, $m$:\n\n$$\nm=\u2212\\frac{360^{\u2218}}{v\u00af(x(t_{n}))\\tau_{\\theta}},\n$$\n\nand place field sizes:\n\n$$\ns=s_{0}+v\u00af\u2062(x\u2062(t_{n}))\u2062\\tau_{\\theta}.\n$$\n\nPlace fields will therefore be larger and have shallower phase precession slopes for locations with higher characteristic running speed, but will not otherwise vary with instantaneous running speed.\n\n### Computational modeling\n\nWe generated surrogate data sets by taking the tracking and LFP data from experimental sessions and substituting the experimental spikes with those generated by our models under different coding assumptions. We discretized the session into 2 ms time bins and calculated for each bin the position that the cell population represents, $r\u2062(t)$, according to each coding scheme at that particular phase of theta, $\\theta\u2062(t)$. For the temporal sweep model, $r\u2062(t)=x\u2062(t+\\tau_{\\theta}\u2062(\\theta\u2062(t)-180)/360)$, where $x\u2062(t)$ is the position obtained from the tracking and $\\tau_{\\theta}$ is the time interval swept over in each theta cycle. We manually tuned $\\tau_{\\theta}$ iteratively to minimize the deviations in theta trajectory lengths, place field sizes and phase precession slopes between experimental and simulated data (Figure 7). A good compromise was obtained for a $\\tau_{\\theta}$ of 0.55 s. For the spatial sweep model, $r(t)=x(t)+d_{\\theta}(\\theta(t)\u2212180)/360$, where $d_{\\theta}$ is the spatial distance swept over in each theta cycle. We tuned $d_{\\theta}$ as described for $\\tau_{\\theta}$, obtaining a value of 30 cm. For the behavior-dependent sweep model, $r(t)=x(t)+v\u00af(x(t))\\tau_{\\theta}(\\theta(t)\u2212180)/360$, where $v\u00af\u2062(x\u2062(t))$ was taken to be the experimentally observed characteristic running speed at each position, calculated independently for each experimental session and running direction (e.g. Figure 6A). $\\tau_{\\theta}$ was obtained from fitting Equation 23 to the relationship between inverse phase precession slopes and characteristic running speed (Figure 6I), resulting in a value of 0.57 s.\n\nThen, for each time bin, we generated spikes for each of 20 simulated place cells uniformly distributed along the track. Spikes were generated based on the activation level of each cell $i$ at the represented position, as determined by the cell\u2019s true place field. These true place fields were defined as Gaussian activation functions, fi, with a peak value of 1, discretized in 1 cm steps. The standard deviation of the Gaussian, $\\sigma$, determines the size of the true place fields, which controls how tight the relationship is between firing at a particular phase and the time or distance to the peak\u2019s center. A small true place field size leads to very crisp phase precession clouds, whereas a bigger one results in wider clouds with a noisier relationship between phase and position. For the temporal and spatial sweep models, the standard deviation was set to 7 cm, which corresponds to true place field sizes of 27 cm. With this value, the model produced phase precession clouds approximately matching the experimental ones. For behavior-dependent sweeps, the standard deviation was heterogeneous across the population, set to $max\u2061(4,\u20050.3\u2062v\u00af\u2062(c_{i})\u2062\\tau_{\\theta})$, where ci is the center of each place field.\n\nSpikes were generated from a Poisson process with probability equal to an instantaneous firing rate times the width of the time bin:\n\n$$\nP_{i}(t)=[15+0.2v(t)][1\u2212m_{\\theta}cos\u2061(\\theta(t))]f_{i}(r(t))\\deltat,\n$$\n\nwhere $v\u2062(t)$ is the instantaneous running speed in cm/s. The first term sets the maximum firing rate and the values were chosen to approximate the increase in peak firing rate with running speed observed in the experimental data (Figure 7\u2014figure supplement 2). The second term introduces an inhibitory modulation by the amplitude of the theta oscillation with $m_{\\theta}=0.35$ approximating the experimentally observed value in the experimental data set (not shown).\n\nFor the model predictions shown in the the schematics in Figure 1 and Figure 2, we simulated runs at constant speed with a regular 8 Hz theta oscillation, and used the models as described above, except for $\\tau_{\\theta}=0.5$ s and $\\sigma=6$ cm.\n",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "383bbb43-1edf-4e1a-88d8-d523e411e4e4",
+      "submission_id": "38092650-2bcf-4c1e-8d17-eb8d57346541",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Laura L Colgin, University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70296.sa1](https://doi.org/10.7554/eLife.70296.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work develops a novel and rigorous mathematical framework to analyze spatial and temporal sequence coding in hippocampal place cells. The findings have potential to advance our understanding of hippocampal place cell functions by providing an explanation for seemingly conflicting results in previous studies of theta phase precession and theta sequences. The findings are likely to have an important impact on the hippocampal community.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Neuronal sequences during theta rely on behavior-dependent spatial maps\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. A list of Essential Revisions, compiled from all reviews, is provided below. Please refer to the individual reviews, shown in their entirety below, for additional details about the comments in the essential revisions.\n\nEssential revisions:\n\n1. The authors conclude the experimental data best fit the behavior-dependent sweep model. However, the predicted effects on theta trajectory length and place cell properties are very similar between the temporal sweep model and the behavior-dependent sweep model (Figure 7). Therefore, it is unclear if they can conclusively determine experimental data best fit the behavior-dependent sweep model rather than the temporal sweep model, especially based on visual inspection. Their argument would be strengthened by analytically directly comparing the models and experimental data to determine which is a best fit. For example, is there are larger different between predicted and real data for the spatial and temporal sweep models than the behavior-dependent sweep model? A deeper analysis of what specifically differentiates the temporal sweep and behavior-dependent sweep is warranted. For example, the authors state \"The temporal sweep model could be fitted to roughly capture the observed increase in theta trajectory lengths, place field sizes and phase precession slopes pooled by running speed, but it incorrectly predicted changes in individual fields with speed.\" Visually these \"incorrect predictions\" do not seem that far off. Are they significantly different and if so what is the magnitude of the difference?\n\n2. The behavior-dependent sweep model (equation 3) is essentially the spatial sweep model with dependence on the averaged speed which is a function of location. There is no instantaneous speed term in this model, even though they show the effects of instantaneous running speed in the model (Figure 2). The authors do not describe how exactly variation in instantaneous speed affect the model. Does the model only use average speed and if so, over what time scales? If the model uses average speed over long timescales like a whole trial or multiple trials, how does the model account for rapid changes in speed levels, like at the scale of a single theta cycle? Relatedly, the use of the speed term needs to be clarified in several places:\n\na. In Figure 7D, cell firing properties are separated for different speed levels. Over what time scales was speed measured? Are these speed levels the \"average speed\" term in equation (3)?\n\nb. Based on equation (21), phase precession slope depends on the average speed in the behavior-dependent sweep model. How does this fit on single trial phase precession slope? For single phase precession, is the \"averaged speed\" calculated from the limited data within that trial?\n\n3. Related to the above points, the two models that the authors contrast with their own with are oversimplified. Rather than highlighting the virtues of their own model, this creates the impression that any model in which place cells do not have unrealistic properties, such as place field width vanishing as the animal slows down, would work equally well. This impression is reinforced by the fact that crucial aspects of the model are not tested, and instead very general properties, some of which were already known, are tested as predictions of the model: running speed and properties of place cells vary along the track. To increase the impact of this work, the text should be revised to ensure that the authors' model is not compared with overly simplified models.\n\n4. The authors should make sure that prior work from other labs is presented in its proper context and not specifically associated with one of the two overly simplified models presented in the text.\n\n5. To address the issue whether field size or speed is better correlated with theta (spatial) length, the authors may consider producing a plot similar to Figure 7A, but using (mean) place field size rather than (mean) running speed, and adding a simulation condition using mean place field size as a controlling variable. The outcome could be one is better than the other, or they are similar or equivalent. Regardless of the outcome, the authors could discuss further the functional differences between these scenarios.\n\n6. What is the evidence for the assumption of a \"true place field\"? What are the potential limitations of this assumption?\n\n7. To increase impact, the overall organization and presentation of ideas should be revised to ensure clarity for a general audience.\n\nReviewer #1:\n\nIn this work, the authors develop precise mathematical models to determine if sequential hippocampal neural activity during behavior is best described as spatial or temporal sweeps. While prior work has shown evidence relating neural activity to both spatial and temporal sweeps, a cohesive and quantitative description of how neural activity sweeps relate to both time and space is needed. Whether theta sweeps better represent spatial or temporal coding of position (eg distance vs time to past and future locations) is readily distinguishable when animals run at different speeds. The authors make use of these models to make specific predictions about how population codes and single cell properties will vary with animal speed. The authors find that neither the spatial sweep model nor temporal sweep model fully describes observed place cells firing properties at the single cell or population levels. They propose a 'behavior-dependent' sweeps model to bridge both spatial temporal models and claim this model best described the experimental observations. Overall, this work develops a novel and rigorous mathematical framework to study spatial and temporal sequence coding in hippocampus and uses this framework to test whether theta sweeps in the hippocampus best represent spatial or temporal codes. Therefore, this work addresses important questions about how the hippocampus simultaneously encodes spatial and temporal information.\n\nHowever, some clarifications are required. Specifically, it is unclear if they can conclusively determine experimental data best fit the behavior-dependent sweep model rather than the temporal sweep model, especially based on visual inspection. Their argument would be strengthened by analytically directly comparing the models and experimental data to determine which is a best fit. Furthermore, the temporal resolution of speed used in the models and analysis of experimental data requires clarification. In particular, it is unclear if the temporal resolution of speed is precise enough to account for rapid changes in speed.\n\n1. The authors conclude the experimental data best fit the behavior-dependent sweep model. However, the predicted effects on theta trajectory length and place cell properties are very similar between the temporal sweep model and the behavior-dependent sweep model (Figure 7). Therefore, it is unclear if they can conclusively determine experimental data best fit the behavior-dependent sweep model rather than the temporal sweep model, especially based on visual inspection. Their argument would be strengthened by analytically directly comparing the models and experimental data to determine which is a best fit. For example, is there are larger different between predicted and real data for the spatial and temporal sweep models than the behavior-dependent sweep model? A deeper analysis of what specifically differentiates the temporal sweep and behavior-dependent sweep is warranted. For example, the authors state \"The temporal sweep model could be fitted to roughly capture the observed increase in theta trajectory lengths, place field sizes and phase precession slopes pooled by running speed, but it incorrectly predicted changes in individual fields with speed.\" Visually these \"incorrect predictions\" do not seem that far off. Are they significantly different and if so what is the magnitude of the difference?\n\n2. The behavior-dependent sweep model (equation 3) is essentially the spatial sweep model with dependence on the averaged speed which is a function of location. There is no instantaneous speed term in this model, even though they show the effects of instantaneous running speed in the model (Figure 2). The authors do not describe how exactly variation in instantaneous speed affect the model. Does the model only use average speed and if so, over what time scales? If the model uses average speed over long timescales like a whole trial or multiple trials, how does the model account for rapid changes in speed levels, like at the scale of a single theta cycle? Relatedly, the use of the speed term needs to be clarified in several places:\n\na. In Figure 7D, cell firing properties are separated for different speed levels. Over what time scales was speed measured? Are these speed levels the \"average speed\" term in equation (3)?\n\nb. Based on equation (21), phase precession slope depends on the average speed in the behavior-dependent sweep model. How does this fit on single trial phase precession slope? For single phase precession, is the \"averaged speed\" calculated from the limited data within that trial?\n\n3. What is the evidence for the assumption of a \"true place field\"? What are the potential limitations of this assumption?\n\nReviewer #2:\n\nAfter the finding of theta phase precession in rat place cells, it was soon discovered that place cells form sequential firing patterns within individual theta cycles that maintain the sequential order of their place fields along a spatial trajectory. The so-called theta sequences have important functional consequences, because they indicate that place cells at the population level encode not just the animal's current location, but also the past and future locations, all amazingly in the short time scale of a theta cycle (~120 ms). In this paper, the authors ask whether the \"past and future\" coding is spatial or temporal, i.e., whether the spatial contents represented in theta sequences go beyond a fixed time or distance from the animal's current time or location. The authors realize that results from previous studies cannot be explained by either, especially those regarding how the spatial distance within a theta sequence depends on the animal's running speed. The authors present a new explanation, called \"behavior-dependent sweep model\", which relies on a key point that place fields of individual place cells vary in their sizes (lengths) at different locations along a trajectory and they tend to be larger when speed is high. By analyzing existing data and by computational modeling, the authors present evidence that supports their model.\n\nAlthough most of the results from the data analysis confirm the findings in previous studies, these results, together with the key new finding on the relationship between place field size and speed (Figure 6), support the authors' conclusion. The data analysis and modeling are straightforward, the writing is mostly clear, and the conclusion is well balanced with sufficient discussions.\n\nHowever, there is one major concern that may help clarify or strengthen the author's model that emphasizes the speed at each location of a trajectory, which the authors conceptualize as varies around a \"characteristic\" (mean) speed. The question here is whether it is necessary to introduce a behavioral variable, rather than a neurophysiological or functional one, to explain the spatial contents in theta sequences. A related and perhaps important issue is which one, place field size or speed, is more fundamental here. It is possible that simply stating that field sizes systematically vary at different locations along a trajectory and the animal tends to run faster at locations with larger fields, together with the well-known properties of of single-cell theta phase precession (termed \"spatial sweep\" by the authors), could be sufficient to explain all the data. The reason why emphasizing place field size is that place field is a functional concept that could be influenced by factors in spatial information encoding, such as task demand (e.g. turning points, reward sites), sensory cue density (e.g. rich in visual cues), or spatial layout (e.g. long straight arm). It is conceivable that these factors systematically vary from one location to another, leading to systematically larger or smaller place fields. On the other hand, running speed varies from one animal to another, from one session to another session in the same animal, and from one moment to another moment (and thus the definition of a \"characteristic\" mean speed is needed). From the data in Figures 3B, 6B, it seems that the same animal had more speed variation in one session (ec014, green), but the correlation between theta (spatial) length and speed was worse, than another (ec016, red). It is possible that the data like these can be better explained by directly targeting the relationship between theta length and place field size.\n\n1) I only have one major suggestion. To address the issue whether field size or speed is better correlated with theta (spatial) length, the authors may consider producing a plot similar to Figure 7A, but using (mean) place field size rather than (mean) running speed, and adding a simulation condition using mean place field size as a controlling variable. The outcome could be one is better than the other, or they are similar or equivalent. Regardless of the outcome, the authors could discuss further the functional differences between these scenarios.\n\nReviewer #3:\n\nParra-Barrero and colleagues analyze and compare conceptually different modes in which neuronal sequences could be organized within a theta cycle in the hippocampus. They show that we cannot think of them as purely temporal or purely spatial predictions, and instead propose that we should think of them as temporal predictions at the animals' characteristic speed in a given position, hence 'behavior-dependent' sweeps. While this manuscript has many strengths and represents a significant step forward in organizing ideas around theta sweeps, my feeling is that it compares a reasonable model with two oversimplified models. More work should be directed to understanding which are the crucial ingredients for this model to work, and what are the degrees of freedom that could be used to build a family of models that would perform equally well.\n\nParra-Barrero and colleagues organize existing ideas about theta sweeps into a framework that allows contrasting different models with key experimental observations. In particular, they show that purely spatial theta sweeps (where the extent of the spatial sweep, and thus the place field size, is the same for all locations) do not produce a dependence of place field size or phase precession slope on running speed, as observed in experimental data. Similarly, they show that purely temporal sweeps (projecting the current instantaneous trajectory of the animal for a fixed time interval), produce sweeps with a length proportional to running speed. As running speed approaches zero, this generates the unrealistic situation in which theta sweep length and place field width go to zero, while phase precession slope goes to minus infinity. The authors contrast these two models with one based on behavior-dependent sweeps. In this model, sweeps are temporal but their spatial extension is proportional to the typical running speed in that position.\n\nThe major strengths of the manuscript are two. First, organizing previous ideas into a framework where different models can be contrasted. Second, proposing a model that does not have the caveats of the purely temporal or the purely spatial sweeps. I find that it also has some weaknesses. First, the two models that they contrast their own with are oversimplified. Rather than highlighting the virtues of their own model, this creates the impression that any model in which place cells do not have unrealistic properties, such as place field width vanishing as the animal slows down, would work equally well. This impression is reinforced by the fact that crucial aspects of the model are not tested, and instead very general properties, some of which were already known, are tested as predictions of the model: running speed and properties of place cells vary along the track. Second, I think that the authors have gone too far in associating the two oversimplified models with the previous work of colleagues that, in my view, not only would not accept these ideas as their own but in some cases would even claim that they have already published some results contradicting them. Carefully dissecting exactly which ideas were put forward by whom in the past would not only be fair to colleagues in the field but would also highlight the contrasting novelties presented in this manuscript. Third, the overall development of ideas is somewhat obscure and I think that the authors could find a way to present information so as to maximize the chances that interested readers will understand everything on the first attempt. The authors have chosen a way to present their ideas in which contradictions are left unresolved for a substantial part of the paper. In my view, this aesthetic choice has the risk of losing readers before they get to the point where everything becomes clear (the behavior-dependent sweep model and the idea that different cells provide information about different parts of the track, with different typical speed and place field properties). There is no need to do this, contradictions could be resolved as they appear, helping the reader to better navigate the manuscript.\n\nThe main result of the authors is a model that is compatible with experimental results. In my view, they should put some effort into clarifying whether this is a unique model or similar proposals would perform equally well. This means dissecting the crucial aspects that make this model better than any other (not just the two oversimplified models with unrealistic place field properties). Variations that I can think of are, for example, temporal sweeps with an overall mean speed rather than the mean speed for a given position, or spatial sweeps with a d_theta that depends on the width and density of place fields. If they find that there is a family of models sharing some crucial element that perform similarly, this would strengthen rather than weaken the manuscript. In addition, they should test specific predictions of the behavior-dependent sweep model. For example, characteristic speed and theta trajectory length along the track are not proportional (Figures 6B and C). Does the model require some improvement to account for this?\n\nOverall I think that the authors have succeeded in bringing into the spotlight properties of theta sweeps that have been studied extensively from a qualitative perspective, but for which quantitative accounts are lacking. They have put forward a framework in which different models can be compared and proposed a model that is compatible with most of the experimental observations. In this sense, I think that a revised version of this manuscript would have an important impact on the hippocampal community.\n\n30 \u2013 'The current position of the animal'. There is an issue in how one defines this. What we typically have is an estimation of the position of LEDs that are placed somewhere above the animal's head. We ignore the distance between these LEDs and the position that CA1 considers to be the 'actual' position of the animal. Please comment on how this correction would affect the estimation of past and future positions at different speeds, especially when considering time sweeps.\n\n69 \u2013 Geisler and colleagues (2007) claim in page 1:'Furthermore, the phase advance of the spikes relative to theta was steeper in fast than in slow trials'.\n\n94 \u2013 Again, Geisler et al., 2007, seem to claim the opposite. On top of this, Maurer et al., 2012 do not seem to refer directly to the phase precession slope. They find a relationship between speed and look ahead distance and a speed dependent population CCG slope. Somehow this does not seem to comply with what is described here as the spatial sweep model not accounting for results at the population level. Perhaps what the authors present as 'the model' and the bits of it that can be related to previous descriptions could be described in greater depth.\n\n98 \u2013 This length does not seem to be affected by a potential increase in field size as a result of place cells increasing their firing rate with speed. Why is this not taken into account?\n\n625 \u2013 Equation 12. It should be clarified that this is an approximation, since phase precession has been shown to be highly non-linear already by O'Keefe and Recce. Thus, the exact value of the slope is highly dependent on the method, especially on the relative sampling of different phase ranges.\n\n108 \u2013 L = v(t). As I understand it, dimensions do not match. The same happens to Equation 16 in the methods. Do parenthesis stand for multiplication or evaluation of the function v at a given time?\n\n635 to 637 \u2013 There is a problem with the logic here. As v, goes to 0, v*tau going to 0 implies a slope going to minus infinity. However, v*tau is roughly speaking the width of the field of a cell at speed v. I do not think any of the authors cited in this manuscript would claim that the width of fields vanishes as v goes to 0. What is this temporal sweep model actually modeling? The fact that tau is independent of speed is more a choice of the manuscript authors than a claim coming from experimental results.\n\n108 \u2013 'This is almost exactly the result reported by Maurer et al., (2012); Gupta et al., (2012).'. Please specify how and in which figures. For example, Figure 8 from Gupta et al., seems to be at odds with this claim.\n\n112 \u2013 Please specify or give an example of which procedures or methods can cause a contradiction. It is not clear from the text.\n\nFigure 4a \u2013 The visualization of these examples is really poor. Since the purpose of this panel is visualization, I suggest to find a better way, perhaps with fewer examples or speed bins.\n\nFigure 4b-c \u2013 Although the conclusion is plausible, and the examples seem to indicate this, the analysis is not convincing. The procedure based on regressing 7 datapoints has too much error, and this might mask an effect at the population level. (For example, are these individual regressions significant?) A high p-value does not necessarily mean that there is no effect. I suggest trying other methods. For example, the half-width decay in the spatial autocorrelation for the population of all cells could be studied and compared at different speeds. Fewer speed groups would also help getting better statistics. All of the analyses could also be applied to pools of cells with neighboring fields, to explain the contradiction right a way and thus help the reader navigate the manuscript.\n\n178 \u2013 It is not clear at this point of the manuscript why both results are compatible with behavior dependent sweeps. This might need some more explanation.\n\n191 \u2013 I suggest to try to make explicit and consistent the description of slopes. Unfortunately, describing a negative slope as 'lower' is ambiguous. Similarly, in 209 an 'increase in the slope' is mentioned, which is also ambiguous. Please revise this language throughout the manuscript. I believe people in the past have referred to slopes as shallower or steeper to avoid ambiguity.\n\n181 \u2013 194. What would the different models predict and why?\n\n234 \u2013 Why are these results striking? Similar findings have been reported before. For example in Gupta et al., 2012. I disagree with lines 312 \u2013 314. Figure S3 of Gupta et al., shows very similar results to the ones analyzed here.\n\nFigure 6A \u2013 If this explains the apparent contradictions found in Figures 4 and 5, then pooling locations with similar average speed should make the pooled average effects disappear. This needs to be shown in those figures to help readers navigate the manuscript.\n\nFigure 6,B-C \u2013 running speed at 0.25 is leeds then two thirds of the speed at 0.75. However theta length trajectories are similar. To my view this speaks directly against the simple explanation that is being tested 'Short theta trajectories and small place field sizes could occur where animals tend to run slow, contributing to the low speed averages, and long theta trajectories and large place field sizes could occur where animals tend to run fast, contributing to the fast speed averages'. There seems to be something else going on here.\n\nFigure 7 \u2013 Comparisons are purely visual. Could some quantification be provided?\n\n329 \u2013 Figure S5. In this paragraph an alternative model is discarded, but no quantification is provided. In the last two subpanels of panel F, Can the authors show how phase precession looks at these speeds in the experimental data and in their model, and compare it with the alternative model?\n\nPlease discuss how much of these behavioral-dependent sweeps could be thought of a side effect of a behavioral-dependent place field size and density resulting from the process of place cells learning their place fields.\n",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b09dfab8-0f46-4e5b-9759-96ce1fab56c5",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C1",
+      "claim": "Hippocampal place cells elevate their firing rates within circumscribed regions in the environment called 'place fields'.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal place cells elevate their firing rates within circumscribed regions in the environment ('place fields') (O'Keefe and Dostrovsky, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to O'Keefe and Dostrovsky, 1971",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "36c8ba0f-787c-4774-973b-0760a7a31551",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C2",
+      "claim": "Place cells display phase coding relative to the ~8 Hz theta oscillations of the hippocampal local field potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this firing rate code, place cells display phase coding relative to the \u223c8 Hz theta oscillations of the hippocampal local field potential (LFP) (Vanderwolf, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vanderwolf, 1969",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "27a6f353-c795-4e58-8fb9-85ea1bd642db",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C3",
+      "claim": "As animals cross a cell's place field, the cell fires at progressively earlier phases of the oscillation, a phenomenon known as theta phase precession.",
+      "claim_type": "EXPLICIT",
+      "source": "As animals cross a cell's place field, the cell fires at progressively earlier phases of the oscillation, a phenomenon known as theta phase precession (O'Keefe and Recce, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to O'Keefe and Recce, 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "2f6f4838-c0e2-42b5-9a70-81235f636af6",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C4",
+      "claim": "Phase precession yields distinct neuronal sequences that traverse multiple positions within each cycle of the theta oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the population level, phase precession yields distinct neuronal sequences that traverse multiple positions within each cycle of the theta oscillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the description of phase precession",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "2540e81a-358b-4758-be2e-09972cbd12f5",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C5",
+      "claim": "The first cells to fire in a theta cycle typically have place fields centered behind the current position of the animal, followed by cells with place fields centered progressively ahead, generating 'theta sequences'.",
+      "claim_type": "EXPLICIT",
+      "source": "The first cells to fire typically have place fields centered behind the current position of the animal, followed by cells with place fields centered progressively ahead, generating so-called 'theta sequences' (Figure 1\u2014figure supplement 1; Skaggs et al., 1996; Dragoi and Buzs\u00e1ki, 2006; Foster and Wilson, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Skaggs et al., 1996; Dragoi and Buzs\u00e1ki, 2006; Foster and Wilson, 2007 and reference to Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "450cb37a-8721-4ac5-a1af-65a7c0d4c813",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C7",
+      "claim": "The hippocampal theta code encompasses representations of past, present, and future events beyond just the current spatial location.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon suggests that beyond the representation of the current spatial location of an animal, the hippocampal theta code more generally encompasses representations of past, present, and future events (Dragoi and Buzs\u00e1ki, 2006; Cei et al., 2014; Terada et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dragoi and Buzs\u00e1ki, 2006; Cei et al., 2014; Terada et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "0ca9bfb9-6208-4ce4-be95-0dbd90686074",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C8",
+      "claim": "Theta phase precession and theta sequences have been reported to respond to elapsed time.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, theta phase precession and theta sequences have been reported to respond to elapsed time (Pastalkova et al., 2008; Shimbo et al., 2021), particular events and behaviors including jumping (Lenck-Santini et al., 2008), pulling a lever, and sampling an object (Terada et al., 2017; Aronov et al., 2017; Robinson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pastalkova et al., 2008; Shimbo et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "6734ac5b-7ddf-49c9-8d09-8a8c4ab5e515",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C9",
+      "claim": "Phase-precession and theta sequences have been observed in brain regions other than the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase-precession and theta sequences have also been observed in brain regions other than the hippocampus (Kim et al., 2012; Hafting et al., 2008; Jones and Wilson, 2005; van der Meer and Redish, 2011; Tingley et al., 2018; Tang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 2012; Hafting et al., 2008; Jones and Wilson, 2005; van der Meer and Redish, 2011; Tingley et al., 2018; Tang et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "4bac42c9-b793-4ef2-be3b-68f50f115e17",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C10",
+      "claim": "The theta phase code plays a supporting role in sequential learning, prediction, and planning.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies indicate that the theta phase code plays a supporting role in a wide array of cognitive functions, such as sequential learning (Lisman and Idiart, 1995; Skaggs et al., 1996; Reifenstein et al., 2021), prediction (Lisman and Redish, 2009; Kay et al., 2020), and planning (Johnson and Redish, 2007; Erdem and Hasselmo, 2012; Bolding et al., 2020; Bush et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations for each cognitive function",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "a69f0259-1042-425b-a118-7476b669b809",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C11",
+      "claim": "The relationship between theta phase, represented position, and the animal's true location has not previously been made explicit.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, this relationship has not previously been made explicit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' assessment of the literature",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "47710abf-ca5a-4093-a709-d636c4b562a3",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C12",
+      "claim": "The length of theta sweeps has been shown to increase proportionally with running speed.",
+      "claim_type": "EXPLICIT",
+      "source": "One the one hand, the length of theta sweeps has been shown to increase proportionally with running speed (Maurer et al., 2012; Gupta et al., 2012), a result which is consistent with temporal sweeps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Maurer et al., 2012; Gupta et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "932e68bf-0401-4754-8e88-e56b4020e8e4",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C13",
+      "claim": "Place field parameters such as place field size and phase precession slope do not change with speed.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, place field parameters, such as place field size or the slope of the spikes' phase vs. position relationship (phase precession slope), do not change with speed (Huxter et al., 2003; Maurer et al., 2012; Schmidt et al., 2009; Geisler et al., 2007), which is consistent with spatial sweeps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Huxter et al., 2003; Maurer et al., 2012; Schmidt et al., 2009; Geisler et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "777df869-1872-4bd2-b75f-767fa43dab7d",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C14",
+      "claim": "Place fields are larger and have shallower phase precession slopes at locations where animals typically run faster.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we find that place fields are larger and have shallower phase precession slopes at locations where animals typically run faster, in support of the behavior-dependent sweep model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data analysis presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "8018bc7a-226d-421a-8e80-a02ed452e9f3",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C15",
+      "claim": "The behavior-dependent sweep model uniquely accounts for the combination of experimental findings at the population and single-cell levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we compare simulated data generated from the three models based on experimentally measured trajectories and theta oscillations, and confirm that the behavior-dependent sweep uniquely accounts for the combination of experimental findings at the population and single-cell levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model simulations and comparisons to experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "855bb20d-ca7b-4f25-a99b-d98145e324a4",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C19",
+      "claim": "In the spatial sweep model, both phase precession slopes and place field sizes are independent of running speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Both phase precession slopes and place field sizes are independent of running speed (Figure 1B), consistent with experimental observations (Huxter et al., 2003; Schmidt et al., 2009; Geisler et al., 2007; Sup. Fig. 1 in Maurer et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model predictions shown in Figure 1B and citations to experimental studies",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "e27f4b6e-399c-470e-a220-0fe68bab48a4",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C21",
+      "claim": "Experimental results show that theta trajectory length is roughly proportional to running speed for speeds above 5 cm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this prediction, experimental results show that the theta trajectory length is roughly proportional to running speed (Figure 2 in Maurer et al., 2012; Figure 1C in Gupta et al., 2012 for speeds above 5 cm/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Maurer et al., 2012 and Gupta et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "12fac79d-86de-44f5-8d34-ee6b53578b10",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C22",
+      "claim": "In the temporal sweep model, different phases of theta represent the positions that the animals have reached or will reach at some time interval in the past and future, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative to the above is the temporal sweep model, where different phases of theta represent the positions that the animals have reached or will reach at some time interval in the past and future, respectively (see Itskov et al., 2008 for a similar model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical description with citation to similar model by Itskov et al., 2008",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "4d0ea7e6-e1cf-445e-8b6a-caa88cef95fa",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C24",
+      "claim": "In the temporal sweep model, place field sizes increase and phase precession slopes become shallower with running speed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at the single-cell level, the temporal sweep model predicts that place field sizes increase and phase precession slopes become shallower with running speed (Figure 1D) \u2013 in clear conflict with the experimental results mentioned above.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model prediction shown in Figure 1D",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "8dcb40ce-2d9d-43ed-a3cf-7917d1123ada",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C27",
+      "claim": "In the behavior-dependent sweep model, at different phases of theta, the place cell population represents the positions that would have been or would be reached at certain time intervals in the past or future, assuming the animal runs at the characteristic speed through each location.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this model, at different phases of theta, the place cell population represents the positions that would have been or would be reached at certain time intervals in the past or future, like in the temporal sweep, but under the assumption that the animal runs at the characteristic speed through each location, rather than at the instantaneous running speed (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Theoretical description illustrated in Figure 2A,B",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "bd8aca4e-f7ea-45ae-af37-9e499fa66f91",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C31",
+      "claim": "The study re-analyzed publicly available single unit recordings from CA1 of 6 rats running on linear tracks for water rewards at both ends.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we re-analyzed publicly available simultaneous single unit recordings from CA1 of 6 rats running on linear tracks for water rewards at both ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental data used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "517ee5da-05b9-493e-b37f-82f173ba6a65",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C32",
+      "claim": "Three of the experimental sessions were from tracks that were familiar to the animal while the remaining three were from novel tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the sessions (Mizuseki et al., 2013) were from tracks that were familiar to the animal while the remaining three Grosmark et al., 2016 were from novel tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental data sources",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "0e3640da-2549-475d-8ba9-5320589df297",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C33",
+      "claim": "The first 5 minutes of recordings on the novel track were discarded to ensure stable spatial representations and theta phase precession.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that spatial representations and theta phase precession were stable for the entirety of the periods under examination, we discarded the first 5 min of the recording on the novel track, allowing sufficient time for hippocampal place fields and phase precession to have stabilized (Frank et al., 2004; Cheng and Frank, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological decision supported by citations to Frank et al., 2004; Cheng and Frank, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "00810694-cf6a-4ed5-815c-ab0a71eeb316",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C34",
+      "claim": "Theta trajectory lengths increased roughly proportionately to running speed in the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the high level of variability, it was clear in the individual rats' averages and in the grand average across animals that the trajectory lengths increased roughly proportionately to running speed (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data analysis shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "0eb96b2c-35b5-4652-8c13-79a542a62197",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C35",
+      "claim": "Individual place fields tended to maintain similar sizes regardless of running speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection revealed that individual fields tended to maintain similar sizes regardless of running speed (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data analysis shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "70650b87-f32d-4b27-8dfe-fe3f3f5e5811",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C37",
+      "claim": "When combining data across fields, the average field size generally increases as a function of running speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, when combining data across fields, the average field size generally increases as a function of running speed. Colored lines represent individual animals, and the thick black line averages over them.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data analysis shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "7147f58b-8d80-4abc-88ed-fa7bd015730e",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C38",
+      "claim": "The increase in place field sizes combined across fields is statistically significant for five of the six animals (p<0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in place field sizes is consistent with the temporal sweep model, whereas the lack of within-field changes mentioned above supports spatial sweeps. Both findings, however, can be consistent with the behavior-dependent sweep model provided that place fields are larger in track areas characterized by faster running (Figure 2). We examine this question below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test results from experimental data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "2e720e60-020a-4fa8-9dc7-1ff227d01e27",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C41",
+      "claim": "There was no significant relationship between phase precession slope and speed for individual fields in single-pass analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant relationship between phase precession slope and speed for individual fields in any of the three animals with sufficient data for this analysis, that is, more than 10 fields (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of experimental data shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "b7fba08b-fb2a-464d-bf37-ac76f659b35e",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C43",
+      "claim": "All animals showed similar asymmetric inverted U-shape relationships between characteristic speed and position along the track.",
+      "claim_type": "EXPLICIT",
+      "source": "All animals showed similar asymmetric inverted U-shape relationships between characteristic speed and position along the track.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "43b3cc25-42c2-45e5-b5d9-18c0675bfeec",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C44",
+      "claim": "Running speeds at each position were clustered around the characteristic running speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, as required by the second prerequisite, we confirmed that running speeds at each position were clustered around the characteristic running speed (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data analysis shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "17b4aebf-cb92-44da-966a-d90a5bb10479",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C45",
+      "claim": "Inverted U-shape relationships were observed between position along the track and theta trajectory lengths and place field sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed inverted U-shape relationships between position along the track, and theta trajectory lengths and place field sizes (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data analysis shown in Figure 6D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "ed02b56e-87cd-456f-b9d7-95078e015c79",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C46",
+      "claim": "Theta trajectory lengths and place field sizes increased, and inverse phase precession slopes decreased, roughly in proportion to characteristic speed for up to at least 60 cm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in support of the third prerequisite, we found that theta trajectory lengths and place field sizes increased, and inverse phase precession slopes decreased, roughly in proportion to characteristic speed for up to at least 60 cm/s, which encompassed most of the data (Figure 6G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data analysis shown in Figure 6G\u2013I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "bb4dd956-aeb4-4975-8065-4df7520b5416",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C47",
+      "claim": "Theta trajectory lengths, place field sizes and inverse phase precession slopes all displayed strikingly linear relationships to one another.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the three of them displayed strikingly linear relationships to one another (Figure 6\u2014figure supplement 3), underscoring the intimate relationships that hold between these systematically interrelated measures of place cell activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data analysis shown in Figure 6\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "16902972-4444-4eae-9a05-3e99ba2ebb73",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C48",
+      "claim": "Theta trajectory length correlates slightly better with characteristic running speed than with either mean place field size or mean inverse phase precession slope at the locations where the trajectories occurred (R = 0.35 vs 0.29).",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worth noting that theta trajectory length correlates slightly better with characteristic running speed than with either mean place field size or mean inverse phase precession slope at the locations where the trajectories occurred (R = 0.35 vs 0.29 for the latter two; Figure 6\u2014figure supplement 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation analysis of experimental data shown in Figure 6\u2014figure supplement 3B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "944af66a-c275-46cb-b9ec-508e86b93d0e",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C50",
+      "claim": "Characteristic running speed uniquely accounted for 13% and 11% of the variance in place field sizes and inverse phase precession slopes, respectively, while distance to the border uniquely accounted for 3% and 7%.",
+      "claim_type": "EXPLICIT",
+      "source": "A model combining both variables could account for 29% and 28% of the variance in place field sizes and inverse phase precession slopes, respectively. Out of this, characteristic running speed uniquely accounted for 13% and 11% of the variance, whereas distance to the border uniquely accounted for 3% and 7%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "321b0695-948f-4c60-b4f4-a02ae9c7a18f",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C51",
+      "claim": "The temporal sweep model provides a qualitative fit to the average theta trajectory lengths, place field sizes and phase precession slopes, but incorrectly predicts increases in individual place field sizes and phase precession slopes.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal sweep model provides a qualitative fit to the average theta trajectory lengths, place field sizes and phase precession slopes, but incorrectly predicts increases in individual place field sizes and phase precession slopes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model simulation results shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "97aa3c4d-4ecc-4d5c-834c-11f0cd21c939",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C52",
+      "claim": "The spatial sweep model accounts for the lack of within-field increases in place field sizes and phase precession slopes, but the increase in theta trajectory length with running speed is not nearly large enough and place field sizes and phase precession slopes remain flat with running speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial sweep model accounts for the lack of within-field increases in place field sizes and phase precession slopes. However, the increase in theta trajectory length with running speed is not nearly large enough and place field sizes and phase precession slopes remain flat with running speed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model simulation results shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "4cdf5867-e71c-45df-9150-8c1c282a88ff",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C53",
+      "claim": "The behavior-dependent sweep model captures both the population average and within-field effects, providing a good agreement with all experimental results.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavior-dependent sweep model captures both the population average and within-field effects, providing a good agreement with all experimental results.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model simulation results shown in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "0cbe675f-ff27-4a02-b192-19ff07d8bca5",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C54",
+      "claim": "The behavior-dependent sweep model produced values with the lowest mean squared deviation to the experimental data for four of the five variables considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the behavior-dependent sweep produced values with the lowest mean squared deviation to the experimental data for four of the five variables considered (Figure 7; numbers in corners).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative comparison of model predictions to experimental data shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "e53c717a-d707-4193-a825-37ea10def6a3",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C57",
+      "claim": "The behavior-dependent sweep model replicates the experimentally observed increase in firing rates with running speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavior-dependent sweep model replicates the experimentally observed increase in firing rates with running speed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model simulation results shown in Figure 7\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "efd0cb09-6332-4982-882f-07de2edcbdc0",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C58",
+      "claim": "Reaction times for rats performing simple and choice tasks range between 150 ms and 500 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Reaction times for rats performing simple and choice tasks range between 150 ms and 500 ms (Baunez et al., 2001; Brown and Robbins, 1991), and stop signal reaction times stand at around 360 ms (Eagle et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baunez et al., 2001; Brown and Robbins, 1991; Eagle et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "8eac8dfd-b170-441a-8cfe-400df772f56a",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C59",
+      "claim": "Place fields increase in size along the dorsoventral axis of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, place fields (Kjelstrup et al., 2008) increase in size along the dorsoventral axis of the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kjelstrup et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "a0c9e125-7c9a-4e21-a01f-3fb4d2e3a9e6",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C60",
+      "claim": "The largest place fields recorded in rats stand at about 10 m, which would correspond to representing a time window of > 10 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest place fields recorded in rats stand at about 10 m, which would correspond to representing a time window of > 10 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on established knowledge about place field sizes",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "a8160ffb-ec65-4a6d-8c9e-df8879933918",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C61",
+      "claim": "Theta sequences are reportedly lacking or reduced during the first traversals through a novel environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that the characteristic speed is taken to be the speed of the firsts traversals through the environment, in which theta sequences are reportedly lacking or reduced (Feng et al., 2015; Tang et al., 2021), and then updated incrementally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Feng et al., 2015; Tang et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "84fcb5ad-91c8-455f-8fe4-9e9d2f85c86d",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C62",
+      "claim": "Theta frequency has been shown to increase with positive acceleration, but not deceleration or speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, theta frequency has recently been shown to increase with positive acceleration, but not deceleration or speed (Kropff et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kropff et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "f3821993-8aa5-434d-bd34-73e170eca156",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C63",
+      "claim": "The increase in theta frequency is accompanied by an increase in the intrinsic firing frequency of cells which would provide a compensatory effect on theta trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as shown by Kropff et al., 2021, the increase in theta frequency is accompanied by an increase in the intrinsic firing frequency of cells which would provide a compensatory effect on theta trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kropff et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "466e5035-5dcc-4a76-9206-f25abbc9b411",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C64",
+      "claim": "Theta phase coding has been demonstrated in two-dimensional environments and in grid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, our behavior-dependent sweep model could be applied to describing the activity of place cells in two-dimensional environments, and potentially also that of grid cells, since theta phase coding has been demonstrated in both of these cases (Huxter et al., 2008; Jeewajee et al., 2014; Hafting et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Huxter et al., 2008; Jeewajee et al., 2014; Hafting et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "ffb47f27-ac1e-438c-a9c4-8c4d9288a2ce",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "claim_id": "C65",
+      "claim": "The behavior-dependent sweep model predicts that sizes of individual firing fields within the grid will vary according to running speeds characteristic of the corresponding maze regions, while the distance between firing field peaks would remain constant.",
+      "claim_type": "EXPLICIT",
+      "source": "For grid cells, our model predicts that sizes of individual firing fields within the grid will vary according to running speeds characteristic of the corresponding maze regions. By contrast, the distance between firing field peaks would remain constant, since the locations of the underlying true fields remain fixed in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction derived from the behavior-dependent sweep model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cc29ff09-fc22-40bf-ac08-d6b28758d801",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about hippocampal place cells, theta phase precession, and theta sequences, including their role in representing past, present, and future positions, and their involvement in cognitive functions such as learning, prediction, and planning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 are well-supported by extensive citations to prior literature. These claims establish the foundational knowledge about hippocampal theta phase coding that motivates the current study. All claims are appropriately attributed to published work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "7f189af6-34f7-4b28-a60c-f98a717da7c0",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript identifies a paradox in the literature: theta sweep length increases with running speed (supporting temporal sweeps), while individual place field parameters remain speed-independent (supporting spatial sweeps). The relationship between theta phase, represented position, and true location has not been explicitly formalized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 accurately characterize the conflicting findings in prior literature, with C12 and C13 supported by appropriate citations. C11 represents the authors' assessment of a gap in the literature, which is reasonable given the subsequent analysis. This paradox motivates the study's central question.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "8ba563bc-43d9-46f7-b92c-515d3456476b",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript formalizes two existing models: the spatial sweep model (where theta phases represent fixed spatial distances) predicts speed-independent place field parameters but fails to predict proportional increases in theta trajectory length with speed; the temporal sweep model (where theta phases represent fixed time intervals) predicts proportional increases in trajectory length but incorrectly predicts speed-dependent place field parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C21, C22, and C24 present theoretical predictions from formalized models with mathematical derivations provided in the Materials and Methods. The predictions are logically derived from the model equations and are compared against cited experimental observations. The mathematical framework is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "4fbd8df6-f0a9-4015-8122-ea08441d440d",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript proposes a novel behavior-dependent sweep model where theta phases represent positions that would be reached at fixed time intervals assuming the animal runs at the characteristic (average) speed for each location, rather than instantaneous speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 introduces the key theoretical innovation of the paper. The model is clearly defined mathematically (Equation 21) and represents a logical synthesis that could potentially resolve the paradox identified in C11-C13. The theoretical framework is internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "2425a6b4-8fe2-470d-895b-8fc4f1d24ed5",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study re-analyzed publicly available CA1 recordings from 6 rats running on linear tracks, excluding the first 5 minutes of novel track recordings to ensure stable spatial representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 describe the experimental dataset and preprocessing. The use of publicly available data is appropriate, and the exclusion of the first 5 minutes is justified by citations showing that place fields stabilize after this period. The methodological choices are reasonable and well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "d63c4780-8a7b-4fb7-b0d7-7ba32c0306a2",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Analysis of the experimental data confirmed that theta trajectory lengths increase roughly proportionally with running speed, consistent with prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by Bayesian decoding analysis shown in Figure 3B. The result replicates prior findings (Maurer et al., 2012; Gupta et al., 2012) in the current dataset, providing a consistent baseline for subsequent analyses. The high variability noted in the text is visible in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "a117d906-d55e-472c-8792-217b35ce0473",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Individual place fields maintain similar sizes regardless of instantaneous running speed, but when combining data across fields, average place field size increases significantly with running speed (p<0.02 for 5/6 animals).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C37, and C38 present the key paradoxical finding at the single-cell level. The within-field analysis (C35, Figure 4A-B) shows no systematic speed dependence, while the across-field analysis (C37-C38, Figure 4C) shows significant increases. Statistical tests support the significance claims. This reproduces the literature paradox in a single dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "38f0f585-5cfe-429d-b4cc-c1f30925cae3",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Phase precession slopes of individual fields showed no significant relationship with running speed in single-pass analysis for any of the three animals with sufficient data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by the single-pass analysis shown in Figure 5E. The analysis appropriately controls for potential confounds from acceleration/deceleration by analyzing passes at approximately constant speed. The lack of within-field changes parallels the place field size findings and is consistent with prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "462a0b07-f7ed-4c56-b3bc-22013604f1cb",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study demonstrates three prerequisites for the behavior-dependent sweep model: (1) characteristic running speed varies systematically along the track with an inverted U-shape, (2) running speeds cluster around characteristic speeds at each position, and (3) theta trajectory lengths, place field sizes, and inverse phase precession slopes increase proportionally with characteristic speed up to ~60 cm/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 establish the empirical foundation for the behavior-dependent sweep model through systematic analysis shown in Figure 6. The inverted U-shape distribution of characteristic speed (C43), clustering of instantaneous speeds (C44), and proportional relationships (C46) are clearly demonstrated. These findings directly support the model's key assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "c4e5fcf6-9677-49f4-a39d-88896ca9b7a1",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Theta trajectory lengths, place field sizes, and inverse phase precession slopes display strikingly linear relationships to one another, with theta trajectory length correlating slightly better with characteristic speed (R=0.35) than with place field parameters (R=0.29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C48 are supported by correlation analyses shown in Figure 6\u2014figure supplement 3. The linear relationships among the three measures underscore their systematic interdependence. The slightly stronger correlation with characteristic speed (C48) is consistent with the behavior-dependent sweep model's predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "e170854f-ac89-4304-85e7-c7f7919ae3a6",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In a combined model, characteristic running speed uniquely accounted for 13% and 11% of variance in place field sizes and inverse phase precession slopes respectively, while distance to border uniquely accounted for 3% and 7%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 presents results from a likelihood ratio test that partitions variance between characteristic speed and distance to border. The analysis appropriately addresses the confound that these variables are correlated. The finding that characteristic speed explains more variance supports its primary role, though the modest R\u00b2 values indicate substantial unexplained variance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "5d7e50e7-9204-42dc-8f20-23c929e4571b",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Computational modeling shows that the temporal sweep model qualitatively fits population averages but incorrectly predicts within-field changes; the spatial sweep model accounts for within-field stability but severely underestimates trajectory length increases; only the behavior-dependent sweep model captures both population and within-field effects, producing the lowest mean squared deviation for 4/5 variables.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 present systematic model comparisons shown in Figure 7. The generative modeling approach appropriately tests each model's ability to reproduce multiple experimental observations simultaneously. The behavior-dependent sweep model's superior performance across both qualitative patterns and quantitative fits provides strong support for the model. The parameter fitting approach (\u03c4\u03b8 estimated from phase precession slopes, then validated against other measures) is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "afdffa44-8c6f-4aee-b5b5-e66d676e9cbb",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The behavior-dependent sweep model replicates the experimentally observed increase in firing rates with running speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by analysis shown in Figure 7\u2014figure supplement 2. This represents an additional validation of the model beyond the primary variables analyzed, demonstrating that the model captures multiple aspects of place cell activity. The result strengthens confidence in the model's biological plausibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "c3332294-ab51-4a81-97e7-c63a2dac3805",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study's main findings are that place fields are larger and have shallower phase precession slopes at locations where animals typically run faster, and that the behavior-dependent sweep model uniquely accounts for the combination of experimental findings at population and single-cell levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C15 summarize the paper's central empirical and theoretical contributions. C14 is supported by the analyses in Figure 6 showing systematic relationships between characteristic speed and place field parameters. C15 is supported by the comprehensive model comparison in Figure 7. Together, these claims represent the resolution of the paradox identified in the introduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "7d80f704-9a1f-4e8c-aac1-c3f8130433ab",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The discussion contextualizes the findings with respect to reaction times, place field size gradients along the hippocampal axis, theta sequence development in novel environments, theta frequency modulation by acceleration, and potential extensions to 2D environments and grid cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64 are appropriately supported by citations to relevant literature. These claims place the findings in broader context and discuss implications. C58-C60 relate sweep timescales to behavioral timescales; C61-C63 discuss potential mechanisms and confounds; C64 discusses generalization. All are reasonable interpretations supported by cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    },
+    {
+      "id": "a363876c-f68c-47ad-b697-60133ff89a45",
+      "content_id": "3d973329-5285-4ab8-af8d-a46285d18561",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The behavior-dependent sweep model predicts that for grid cells, individual firing field sizes will vary with characteristic running speed while the distance between field peaks remains constant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 presents a testable prediction derived logically from the behavior-dependent sweep model. The prediction follows from the model's assumption that true place fields (or grid fields) remain fixed in space while measured fields expand due to behavior-dependent sweeps. This represents a clear, falsifiable prediction for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:16:52.886293Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b09dfab8-0f46-4e5b-9759-96ce1fab56c5",
+      "result_id": "cc29ff09-fc22-40bf-ac08-d6b28758d801"
+    },
+    {
+      "claim_id": "36c8ba0f-787c-4774-973b-0760a7a31551",
+      "result_id": "cc29ff09-fc22-40bf-ac08-d6b28758d801"
+    },
+    {
+      "claim_id": "27a6f353-c795-4e58-8fb9-85ea1bd642db",
+      "result_id": "cc29ff09-fc22-40bf-ac08-d6b28758d801"
+    },
+    {
+      "claim_id": "2f6f4838-c0e2-42b5-9a70-81235f636af6",
+      "result_id": "cc29ff09-fc22-40bf-ac08-d6b28758d801"
+    },
+    {
+      "claim_id": "2540e81a-358b-4758-be2e-09972cbd12f5",
+      "result_id": "cc29ff09-fc22-40bf-ac08-d6b28758d801"
+    },
+    {
+      "claim_id": "450cb37a-8721-4ac5-a1af-65a7c0d4c813",
+      "result_id": "cc29ff09-fc22-40bf-ac08-d6b28758d801"
+    },
+    {
+      "claim_id": "0ca9bfb9-6208-4ce4-be95-0dbd90686074",
+      "result_id": "cc29ff09-fc22-40bf-ac08-d6b28758d801"
+    },
+    {
+      "claim_id": "6734ac5b-7ddf-49c9-8d09-8a8c4ab5e515",
+      "result_id": "cc29ff09-fc22-40bf-ac08-d6b28758d801"
+    },
+    {
+      "claim_id": "4bac42c9-b793-4ef2-be3b-68f50f115e17",
+      "result_id": "cc29ff09-fc22-40bf-ac08-d6b28758d801"
+    },
+    {
+      "claim_id": "a69f0259-1042-425b-a118-7476b669b809",
+      "result_id": "7f189af6-34f7-4b28-a60c-f98a717da7c0"
+    },
+    {
+      "claim_id": "47710abf-ca5a-4093-a709-d636c4b562a3",
+      "result_id": "7f189af6-34f7-4b28-a60c-f98a717da7c0"
+    },
+    {
+      "claim_id": "932e68bf-0401-4754-8e88-e56b4020e8e4",
+      "result_id": "7f189af6-34f7-4b28-a60c-f98a717da7c0"
+    },
+    {
+      "claim_id": "855bb20d-ca7b-4f25-a99b-d98145e324a4",
+      "result_id": "8ba563bc-43d9-46f7-b92c-515d3456476b"
+    },
+    {
+      "claim_id": "e27f4b6e-399c-470e-a220-0fe68bab48a4",
+      "result_id": "8ba563bc-43d9-46f7-b92c-515d3456476b"
+    },
+    {
+      "claim_id": "12fac79d-86de-44f5-8d34-ee6b53578b10",
+      "result_id": "8ba563bc-43d9-46f7-b92c-515d3456476b"
+    },
+    {
+      "claim_id": "4d0ea7e6-e1cf-445e-8b6a-caa88cef95fa",
+      "result_id": "8ba563bc-43d9-46f7-b92c-515d3456476b"
+    },
+    {
+      "claim_id": "8dcb40ce-2d9d-43ed-a3cf-7917d1123ada",
+      "result_id": "4fbd8df6-f0a9-4015-8122-ea08441d440d"
+    },
+    {
+      "claim_id": "bd8aca4e-f7ea-45ae-af37-9e499fa66f91",
+      "result_id": "2425a6b4-8fe2-470d-895b-8fc4f1d24ed5"
+    },
+    {
+      "claim_id": "517ee5da-05b9-493e-b37f-82f173ba6a65",
+      "result_id": "2425a6b4-8fe2-470d-895b-8fc4f1d24ed5"
+    },
+    {
+      "claim_id": "0e3640da-2549-475d-8ba9-5320589df297",
+      "result_id": "2425a6b4-8fe2-470d-895b-8fc4f1d24ed5"
+    },
+    {
+      "claim_id": "00810694-cf6a-4ed5-815c-ab0a71eeb316",
+      "result_id": "d63c4780-8a7b-4fb7-b0d7-7ba32c0306a2"
+    },
+    {
+      "claim_id": "0eb96b2c-35b5-4652-8c13-79a542a62197",
+      "result_id": "a117d906-d55e-472c-8792-217b35ce0473"
+    },
+    {
+      "claim_id": "70650b87-f32d-4b27-8dfe-fe3f3f5e5811",
+      "result_id": "a117d906-d55e-472c-8792-217b35ce0473"
+    },
+    {
+      "claim_id": "7147f58b-8d80-4abc-88ed-fa7bd015730e",
+      "result_id": "a117d906-d55e-472c-8792-217b35ce0473"
+    },
+    {
+      "claim_id": "2e720e60-020a-4fa8-9dc7-1ff227d01e27",
+      "result_id": "38f0f585-5cfe-429d-b4cc-c1f30925cae3"
+    },
+    {
+      "claim_id": "b7fba08b-fb2a-464d-bf37-ac76f659b35e",
+      "result_id": "462a0b07-f7ed-4c56-b3bc-22013604f1cb"
+    },
+    {
+      "claim_id": "43b3cc25-42c2-45e5-b5d9-18c0675bfeec",
+      "result_id": "462a0b07-f7ed-4c56-b3bc-22013604f1cb"
+    },
+    {
+      "claim_id": "17b4aebf-cb92-44da-966a-d90a5bb10479",
+      "result_id": "462a0b07-f7ed-4c56-b3bc-22013604f1cb"
+    },
+    {
+      "claim_id": "ed02b56e-87cd-456f-b9d7-95078e015c79",
+      "result_id": "462a0b07-f7ed-4c56-b3bc-22013604f1cb"
+    },
+    {
+      "claim_id": "bb4dd956-aeb4-4975-8065-4df7520b5416",
+      "result_id": "c4e5fcf6-9677-49f4-a39d-88896ca9b7a1"
+    },
+    {
+      "claim_id": "16902972-4444-4eae-9a05-3e99ba2ebb73",
+      "result_id": "c4e5fcf6-9677-49f4-a39d-88896ca9b7a1"
+    },
+    {
+      "claim_id": "944af66a-c275-46cb-b9ec-508e86b93d0e",
+      "result_id": "e170854f-ac89-4304-85e7-c7f7919ae3a6"
+    },
+    {
+      "claim_id": "321b0695-948f-4c60-b4f4-a02ae9c7a18f",
+      "result_id": "5d7e50e7-9204-42dc-8f20-23c929e4571b"
+    },
+    {
+      "claim_id": "97aa3c4d-4ecc-4d5c-834c-11f0cd21c939",
+      "result_id": "5d7e50e7-9204-42dc-8f20-23c929e4571b"
+    },
+    {
+      "claim_id": "4cdf5867-e71c-45df-9150-8c1c282a88ff",
+      "result_id": "5d7e50e7-9204-42dc-8f20-23c929e4571b"
+    },
+    {
+      "claim_id": "0cbe675f-ff27-4a02-b192-19ff07d8bca5",
+      "result_id": "5d7e50e7-9204-42dc-8f20-23c929e4571b"
+    },
+    {
+      "claim_id": "e53c717a-d707-4193-a825-37ea10def6a3",
+      "result_id": "afdffa44-8c6f-4aee-b5b5-e66d676e9cbb"
+    },
+    {
+      "claim_id": "777df869-1872-4bd2-b75f-767fa43dab7d",
+      "result_id": "c3332294-ab51-4a81-97e7-c63a2dac3805"
+    },
+    {
+      "claim_id": "8018bc7a-226d-421a-8e80-a02ed452e9f3",
+      "result_id": "c3332294-ab51-4a81-97e7-c63a2dac3805"
+    },
+    {
+      "claim_id": "efd0cb09-6332-4982-882f-07de2edcbdc0",
+      "result_id": "7d80f704-9a1f-4e8c-aac1-c3f8130433ab"
+    },
+    {
+      "claim_id": "8eac8dfd-b170-441a-8cfe-400df772f56a",
+      "result_id": "7d80f704-9a1f-4e8c-aac1-c3f8130433ab"
+    },
+    {
+      "claim_id": "a0c9e125-7c9a-4e21-a01f-3fb4d2e3a9e6",
+      "result_id": "7d80f704-9a1f-4e8c-aac1-c3f8130433ab"
+    },
+    {
+      "claim_id": "a8160ffb-ec65-4a6d-8c9e-df8879933918",
+      "result_id": "7d80f704-9a1f-4e8c-aac1-c3f8130433ab"
+    },
+    {
+      "claim_id": "84fcb5ad-91c8-455f-8fe4-9e9d2f85c86d",
+      "result_id": "7d80f704-9a1f-4e8c-aac1-c3f8130433ab"
+    },
+    {
+      "claim_id": "f3821993-8aa5-434d-bd34-73e170eca156",
+      "result_id": "7d80f704-9a1f-4e8c-aac1-c3f8130433ab"
+    },
+    {
+      "claim_id": "466e5035-5dcc-4a76-9206-f25abbc9b411",
+      "result_id": "7d80f704-9a1f-4e8c-aac1-c3f8130433ab"
+    },
+    {
+      "claim_id": "ffb47f27-ac1e-438c-a9c4-8c4d9288a2ce",
+      "result_id": "a363876c-f68c-47ad-b697-60133ff89a45"
+    }
+  ],
+  "comparisons": []
+}

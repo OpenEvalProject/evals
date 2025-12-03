@@ -1,0 +1,2063 @@
+{
+  "submission": {
+    "id": "29a8d181-9d5b-4177-91b1-6a08eba77106",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:17:45.399096Z",
+    "updated_at": "2025-12-03T06:17:45.399096Z"
+  },
+  "content": [
+    {
+      "id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "submission_id": "29a8d181-9d5b-4177-91b1-6a08eba77106",
+      "content_type": "manuscript",
+      "content_text": "# Cortical excitability signatures for the degree of sleepiness in human\n\n## Authors\n\n- Chin-Hsuan Chia<sup>1</sup> ([ORCID: 0000-0002-3343-9541](https://orcid.org/0000-0002-3343-9541))\n- Xin-Wei Tang<sup>1</sup>\n- Yue Cao<sup>1</sup>\n- Hua-Teng Cao<sup>2</sup>\n- Wei Zhang<sup>4</sup>\n- Jun-Fa Wu<sup>1</sup>\n- Yu-Lian Zhu<sup>1</sup>\n- Ying Chen<sup>1</sup>\n- Yi Lin<sup>1</sup>\n- Yi Wu<sup>1</sup>\n- Zhe Zhang<sup>2</sup> ([ORCID: 0000-0002-0899-8077](https://orcid.org/0000-0002-0899-8077)) \u2020\n- Ti-Fei Yuan<sup>5</sup> ([ORCID: 0000-0003-0510-715X](https://orcid.org/0000-0003-0510-715X)) \u2020\n- Rui-Ping Hu<sup>1</sup> ([ORCID: 0000-0002-7626-2061](https://orcid.org/0000-0002-7626-2061)) \u2020\n\n### Affiliations\n\n1. Department of Rehabilitation Medicine, Huashan Hospital, Fudan University Shanghai China\n2. Institute of Neuroscience, State Key Laboratory of Neuroscience, Center for Excellence in Brain Science and Intelligence Technology, Chinese Academy of Sciences Shanghai China\n3. Shanghai Center for Brain Science and Brain-Inspired Intelligence Technology Shanghai China\n4. Institute of Brain Science, Fudan University Shanghai China\n5. Shanghai Key Laboratory of Psychotic Disorders, Shanghai Mental HealthCenter, Shanghai Jiaotong University School of Medicine Shanghai China\n6. Co-innovation Center of Neuroregeneration, Nantong University Nantong China\n7. Translational Research Institute of Brain and Brain-Like Intelligence, Shanghai Fourth People\u2019s Hospital Affiliated to Tongji University School of Medicine Shanghai China\n\n\u2020 Corresponding author\n\n## Abstract\n\nSleep is essential in maintaining physiological homeostasis in the brain. While the underlying mechanism is not fully understood, a \u2018synaptic homeostasis\u2019 theory has been proposed that synapses continue to strengthen during awake and undergo downscaling during sleep. This theory predicts that brain excitability increases with sleepiness. Here, we collected transcranial magnetic stimulation measurements in 38 subjects in a 34 hr program and decoded the relationship between cortical excitability and self-report sleepiness using advanced statistical methods. By utilizing a combination of partial least squares regression and mixed-effect models, we identified a robust pattern of excitability changes, which can quantitatively predict the degree of sleepiness. Moreover, we found that synaptic strengthen occurred in both excitatory and inhibitory connections after sleep deprivation. In sum, our study provides supportive evidence for the synaptic homeostasis theory in human sleep and clarifies the process of synaptic strength modulation during sleepiness.\n\n## Introduction\n\nDuring sleep, brains undergo profound neurophysiological changes that restore the decline in cognitive functions associated with sleepiness (Harrison and Horne, 2000; Tononi and Cirelli, 2006). While this homeostatic process provides an important opportunity in studying the modulation of cognitive states, the key features of neural circuits underlying wakefulness, sleepiness, and sleep remain to be poorly understood. A synaptic homeostasis theory has been proposed to describe the biophysical change of neural circuits during sleep: wakefulness associates with strengthening of the synaptic connection, while sleep initiates synaptic weight downscaling and facilitates homeostasis (Tononi and Cirelli, 2006; Tononi and Cirelli, 2003). This theory reasons that constant learning and memory activities during awake lead to synaptic potentiation, thus prolonged awake period causes hyperactivity in the neural circuit, enhancing the noise among neural communications and disrupting cognitive functions (Tononi and Cirelli, 2003). It follows that the sleep pressure may be correlated to the degree of this hyperactivity. As increasing noise in the circuits adds barriers for information processing, the organism inevitably falls in sleep to restore the synaptic balance. In a prolonged sleep-deprived state (>24 hr), this hyperactivation may be partially restored, together with the subjective feeling of sleepiness, by circadian modulation (Borb\u00e9ly et al., 2016; Frank and Cantera, 2014).\n\nIn agreement with this synaptic homeostasis theory, biochemical markers of synaptic potentiation increase with prolonged wakefulness (Cirelli and Tononi, 2000; Tononi and Cirelli, 2001; Silva, 2003). In addition, resting-state electroencephalogram (EEG) revealed a global increase in theta band power (4\u20138 Hz) with increased sleepiness (Cajochen et al., 1995; Aeschbach et al., 1997; Vyazovskiy and Tobler, 2005), suggesting sleep-wake state exerts a robust modulation on the neural circuits. However, experiments attempting to pinpoint this modulation by directly measuring brain excitability have yielded less consistent results (Huber et al., 2013; De Gennaro et al., 2007; Manganotti et al., 2001). This is at least partially due to the technical challenges in measuring brain excitability, commonly via transcranial magnetic stimulation (TMS). TMS induces noninvasive activation of local brain region by applying a transient, alternating magnetic field through the skull, the effect of which can be readout through EEG or downstream motor output. Brain excitability can be measured by determining the minimal power required to achieve reliable output or the amplitude of the output given a standardized stimulation (Pascual-Leone et al., 1994). In addition, paired TMS pulses can be applied consecutively within a short temporal interval (e.g., several milliseconds) to induce certain facilitatory or inhibitory effect (Stefan et al., 2000). The nature of these paired-pulse effects has been studied extensively, and some of them have been attributed to the function of certain synaptic receptors (Van den Bos et al., 2018; Daskalakis et al., 2002). While TMS allows noninvasive assessment of cortical excitability in humans, it suffers from relatively high degree of inter-subject variability. Previous studies taking group averages of TMS measurements reported either hyper- (Huber et al., 2013) or hypo- (De Gennaro et al., 2007) excitability associated with sleep deprivation, with inconsistent effects of pair-pulse stimulation results (Manganotti et al., 2001; Kreuzer et al., 2011; Kuhn et al., 2016; Chellappa et al., 2016).\n\nIn this study, we attempted to circumvent the above-mentioned person-to-person variability by applying more advanced statistical methods to analyze the relationship between cortical excitability measured by TMS and self-report sleepiness. We collected TMS measurements in 38 healthy subjects in a continuous 34 hr study program. By utilizing a combination of partial least squares (PLS) regression and mixed-effect models, we identified a robust pattern of cortical excitability change that quantitatively predicts the degree of sleepiness in two separate subgroups of subjects. Interestingly, we found that both facilitatory and inhibitory changes in pair-pulse TMS enhance with sleepiness, while the overall excitability moderately decreases. While our results strongly support the synaptic homeostasis theory that synaptic connection strengthens overtime during wakefulness, we showed that the strengthening occurs in both excitatory and inhibitory synapses. Such changes may contribute to the overall maintenance, and subtle decline, of cognitive functions during prolonged wakefulness (Rubin et al., 2017). In sum, our study revealed strengthening of both excitatory and inhibitory synaptic transmission with sleepiness, clarifying and supporting a role of homeostatic modulation of synaptic strength by sleep.\n\n## Results\n\n### Sleep deprivation program\n\nThe awake period started after subjects arrived at the hospital and spent the previous night. During the 34 hr of study, the subjects were kept awake with two researchers and took eight times of Stanford Sleepiness Scales (SSS) evaluations and TMS assessments, and three times of EEG measurements (Figure 1A and B, Figure 1\u2014figure supplement 1). Sleepiness showed an increased after 16 hr (group average SSS scores increased from 2.75 to 4.5), and then a slight decrease after 24 hr (from 4.5 to 3.25) (Figure 1C, Figure 1\u2014figure supplement 2). This decrease in sleepiness agrees with previous sleep deprivation studies (Manganotti et al., 2001), likely due to circadian modulations. Furthermore, consistent with previous reports (Cajochen et al., 1995), EEG showed a stereotypical increase in the power of theta band (4\u20138 Hz), and a decrease in the alpha band (8\u201312 Hz) (Figure 1D and E, Figure 1\u2014figure supplement 2). While all brain regions showed consistent global trends, we observed more prominent changes in the occipital areas, consistent with previous studies indicating these areas showed more prominent changes around sleep onsets (Gorgoni et al., 2019; Finelli et al., 2001). We did not observe an increase in the alpha and beta band in frontal regions, a prominent feature associated with sleep onset (Finelli et al., 2001; Marzano et al., 2013), suggesting that the subjects did not fall in and out sleep. In sum, the self-report sleepiness and EEG patterns provided quantitative measurements of the degree of sleepiness in our subjects throughout the study.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematics of study design. All subjects received eight sessions of transcranial magnetic stimulation (TMS) measurements, but only 15 subjects received electroencephalogram (EEG) measurements (Figure 1\u2014figure supplement 1). (B) Locations of EEG electrodes used in the study. Positionings are labeled following the extended international 10\u201320 system. (C) Measurements of self-report sleepiness using Stanford Sleepiness Scales (SSS). All individuals received eight measurements. Individuals\u2019 scores were showed in gray and averaged responses were plotted in red curve (applied spline interpolation for smooth visualization). Statistical comparisons between sessions are reported in Figure 1\u2014figure supplement 2. (D) Averaged heatmaps of different frequency bands\u2019 powers in EEG data (N = 15). Interpolations between electrodes were calculated using triangulation-based cubic interpolation method. (E) Quantifications of frequency bands\u2019 powers showed in (D) at different timepoints. Average powers among all electrodes were used for plotting. Red dotted plots show averaged SSS (from C). Data are represented as mean \u00b1 SD (in shaded areas). Powers at 21 hr and 28 hr are compared with the 4 hr ones using paired t-test with Bonferroni\u2019s correction for multiple comparisons. Statistically significant points were labeled (*p<0.05; **p<0.01; ***p<0.001).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Gender and age of each participant is shown. 23 subjects received five transcranial magnetic stimulation (TMS) protocols (purple group) and 15 subjects received six TMS protocols and electroencephalogram measurements (green group). Ages and genders are balanced in both groups.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A-F) Raw data from all TMS measurements of each subject is plotted with group averages, showing mean \u00b1 SD. Related to Figure 2. (G\u2013I) Post-hoc pair-wise comparison from ANOVA for Figures 1C, 2C and E. Multiple comparison is corrected with Bonferroni\u2019s correction. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.\n\n### Raw TMS measurements showed weak correlations to sleepiness\n\nWe performed TMS stimulation on subjects\u2019 motor cortices on the left hemispheres and measured motor-evoked potentials (MEPs) in first interosseous dorsal (FDI) muscle on the right hand (Figure 2A and B, Table 1). On average, the minimal power necessary for eliciting reliable MEPs decreased after the subjects woke up and mildly increased after 21 hr (Figure 2C). The delay between TMS and MEP followed a similar pattern (Figure 2E). The increase of minimal power and delay time indicates a reduction in excitability with prolonged wakefulness. However, individuals\u2019 data often do not agree with the average trend (Figure 1\u2014figure supplement 2), and correlations between individuals\u2019 sleepiness score and these parameters showed wide ranges of variabilities (Figure 2D and F). The MT (motor response threshold) and MEP latency are influenced by the excitability along the corticospinal tract. In contrast, the pair-pulse protocols reflect characteristics within the cortex. Among four types of pair-pulse protocols (SICF, SICI, ICF, and LICI; Figure 2G, J, M and P), SICI, ICF, and LICI showed strengthening trends on average, yet none were statistically significant (Figure 2H, K, N and Q), nor any showed consistent correlations to SSS (Figure 2I, L, O and R). In summary, raw TMS measurements showed weak correlation with sleepiness on average, with considerable variance among subjects.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig2-v2.jpg)\n\n**Figure 2.:** (A) Position of TMS targeting. (B) Schematics of the TMS study design. The electroencephalogram (EMG) trace showed is for illustrative purpose only. (C) Averaged measurements of motor threshold. Data are represented as mean \u00b1 SD (in shaded areas). ANOVA test was applied to test the differences among timepoints; p-value is showed when statistically significant. (D) Distribution of the correlation coefficients between individuals\u2019 sleepiness scores and motor threshold measurements (median in red line, 25% and 75% quantiles in dotted lines). One-sample t-test was used to compare the distribution to 0; p-value is showed when statistically significant. Equivalent to the formats of (C) and (D), later panels show data for motor-evoked potentials latencies (E, F), short interval intracortical facilitations (SICFs) (H, I), short interval intracortical inhibitions (SICIs) (K, L), intracortical facilitations (ICFs) (N, O), and long interval intracortical inhibition (LICI) (Q, R). For the four pair-pulse protocols, a schematic is showed for the respective protocol, (G) SICF, (J) SICI, (M) ICF, and (P) LICI. For all TMS measurements, N = 38 except for LICI (Q, R, N = 15, Figure 1\u2014figure supplement 1). Statistical comparisons between sessions are reported in Figure 1\u2014figure supplement 2.\n\n**Table 1.**\n The result of the Stanford Sleepiness Scales (SSS) and transcranial magnetic stimulation (TMS).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>SSS</th>\n      <th>MT (% MSO)</th>\n      <th>MEP latency (ms)</th>\n      <th>SICF</th>\n      <th>ICF</th>\n      <th>SICI</th>\n      <th>LICI</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>38</td>\n      <td>38</td>\n      <td>38</td>\n      <td>38</td>\n      <td>38</td>\n      <td>38</td>\n      <td>15</td>\n      <td>n</td>\n    </tr>\n    <tr>\n      <td>2.68 \u00b1 0.189</td>\n      <td>0.49 \u00b1 0.02</td>\n      <td>21.67 \u00b1 0.26</td>\n      <td>1.64 \u00b1 0.10</td>\n      <td>1.14 \u00b1 0.09</td>\n      <td>0.49 \u00b1 0.04</td>\n      <td>0.39 \u00b1 0.07</td>\n      <td>0 hr</td>\n    </tr>\n    <tr>\n      <td>1.76 \u00b1 0.122</td>\n      <td>0.45 \u00b1 0.02</td>\n      <td>21.46 \u00b1 0.27</td>\n      <td>1.71 \u00b1 0.13</td>\n      <td>1.29 \u00b1 0.09</td>\n      <td>0.47 \u00b1 0.05</td>\n      <td>0.35 \u00b1 0.07</td>\n      <td>4 hr</td>\n    </tr>\n    <tr>\n      <td>2.26 \u00b1 0.180</td>\n      <td>0.45 \u00b1 0.02</td>\n      <td>2.43 \u00b1 0.25</td>\n      <td>1.72 \u00b1 0.08</td>\n      <td>1.27 \u00b1 0.08</td>\n      <td>0.42 \u00b1 0.04</td>\n      <td>0.31 \u00b1 0.07</td>\n      <td>10 hr</td>\n    </tr>\n    <tr>\n      <td>2.34 \u00b1 0.143</td>\n      <td>0.45 \u00b1 0.02</td>\n      <td>21.48 \u00b1 0.26</td>\n      <td>1.71 \u00b1 0.11</td>\n      <td>1.39 \u00b1 0.08</td>\n      <td>0.39 \u00b1 0.04</td>\n      <td>0.26 \u00b1 0.07</td>\n      <td>16 hr</td>\n    </tr>\n    <tr>\n      <td>3.74 \u00b1 0.149</td>\n      <td>0.47 \u00b1 0.02</td>\n      <td>21.91 \u00b1 0.23</td>\n      <td>1.58 \u00b1 0.08</td>\n      <td>1.46 \u00b1 0.14</td>\n      <td>0.38 \u00b1 0.03</td>\n      <td>0.24 \u00b1 0.07</td>\n      <td>21 hr</td>\n    </tr>\n    <tr>\n      <td>4.50 \u00b1 0.191</td>\n      <td>0.46 \u00b1 0.02</td>\n      <td>21.86 \u00b1 0.26</td>\n      <td>1.73 \u00b1 0.11</td>\n      <td>1.46 \u00b1 0.09</td>\n      <td>0.42 \u00b1 0.03</td>\n      <td>0.25 \u00b1 0.06</td>\n      <td>24 hr</td>\n    </tr>\n    <tr>\n      <td>3.79 \u00b1 0.21</td>\n      <td>0.45 \u00b1 0.02</td>\n      <td>21.66 \u00b1 0.27</td>\n      <td>1.71 \u00b1 0.0.9</td>\n      <td>1.33 \u00b1 0.09</td>\n      <td>0.45 \u00b1 0.04</td>\n      <td>0.31 \u00b1 0.09</td>\n      <td>28 hr</td>\n    </tr>\n    <tr>\n      <td>3.32 \u00b1 0.223</td>\n      <td>0.45 \u00b1 0.02</td>\n      <td>21.62 \u00b1 0.26</td>\n      <td>1.75 \u00b1 0.14</td>\n      <td>1.31 \u00b1 0.10</td>\n      <td>0.46 \u00b1 0.04</td>\n      <td>0.26 \u00b1 0.07</td>\n      <td>34 hr</td>\n    </tr>\n  </tbody>\n</table>\n\n_MT: motor response threshold; MSO: maximal stimulation output; MEP: motor-evoked potential; SICF: short interval intracortical facilitation; ICF: intracortical facilitation; SICI: short interval intracortical inhibition; LICI: long interval intracortical inhibition._\n\n### Sleepiness states can be mapped to latent dimensions in TMS measurements\n\nConsidering the individual variability in the TMS measurements, we hypothesized that each subject may have certain intrinsic noise pattern and group averages do not separate these noises from underlying correlation between TMS and sleepiness. In order to explore whether TMS measurements encode sleepiness states, we performed a PLS regression using six TMS parameters as predictors and sleepiness scores as responses (15 subjects, Figure 1\u2014figure supplement 2). When we mapped the non-sleepy states (SSS = 1 or 2, blue dots) and sleepy states (SSS = 5, 6, or 7, red dots) on the first two PLS dimensions, we found that the first dimension showed significant separation between these two states, and a mild-sleepy state (SSS = 3 or 4) showed an intermediate peak (Figure 3A). Interestingly, while the first dimension explained only ~13 % of the total data variance, other PLS dimensions did not show separation of sleepiness states, suggesting that indeed the TMS data contain high variance, and a particular linear combination of the parameters captures the association to the degree of sleepiness. In comparison, similar analysis using the power of different EEG frequency bands from the same subjects showed obvious separation between sleepy states and non-sleepy states, yet the mild sleepiness showed a bimodal distribution, rather than forming an intermediate cluster (Figure 3B). Our results indicated that EEG data exhibits a phasic switch to sleepiness, while TMS data showed a correlation to the degree of sleepiness.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig3-v2.jpg)\n\n**Figure 3.:** (A) Partial least squares (PLS) regression of TMS measurements to sleepiness scores (15 subjects with eight timepoints each, N = 120 states). The plot shows a scatter plot of each state in the first two PLS dimensions (Stanford Sleepiness Scales [SSS] = 1 or 2 for non-sleepy state, blue dots; SSS = 3 or 4 for mild sleepy state, purple dots; and SSS = 5, 6, or 7 for sleepy state, red dots). The heatmaps show density plots of the blue and red dots. And the distributions along each dimension are plotted on top and right side of the plot. Student\u2019s t-tests were used to compare the distributions between sleepy and non-sleepy states, with p-value indicated if statistically significant. (B) PLS regression of electroencephalogram (EEG) measurements (15 subjects with three timepoints each, N = 45 states), similar to panel (A). (C) Log likelihood of different regression models. Increase in absolute values indicates a worse fit. Dash line indicates the level of full model. All models were compared to the full model using F-test of all four information criteria: Akaike Information Criterion (AIC), Bayesian Information Criterion (BIC), log likelihood and deviance; with asterisks showing statistical significance. The red bar indicates the model chosen for later analysis. (D) Mixed-effect linear model fitting results from the training set (15 subjects with eight timepoints each, N = 120 states). Green line shows mean \u00b1 SEM of the model predictions. p-Values of each coefficient was showed. (E) Mixed-effect linear model fitting results from the testing set (23 subjects with eight timepoints each, N = 184 states). All coefficients were kept the same with the training set in (D), except allowing a new random effect on intercept for each new subject. p-value was calculated with a F-test of a linear regression between predicted values to reported values to show the slope is significantly different from 0. Inset in (E) shows average performance from fivefold cross-validation compared to shuffled control. (F) Comparison of mixed-effect linear model fittings between TMS and EEG measurements, with balanced dataset (15 subjects with three timepoints each, N = 45 states for both). Heatmaps were calculated by fitting a normal distribution density function with the predicted values at each reported value bin.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) PLS regression of EEG measurements to SSS using only extreme states. Non-sleepy: SSS = 1 or 2; sleepy state: SSS = 5, 6, or 7. Density heatmaps were generated similar to Figure 3. (B) PLS regression of EEG measurements to SSS using only datasets from 11 a.m. (sleep deprived for 4 and 28 hr). After controlling for this circadian effect, EEG data still show obvious separation between non-sleepy and sleepy states.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Partial least squares (PLS) regression of TMS measurements to Stanford Sleepiness Scales (SSS) using matched timepoints. The 7 a.m. and 11 a.m. group showed separation between sleepy and non-sleepy state, but not the 5 p.m. group. (B) Mixed-effect model predictions of hour of the day based on TMS measurements. No significant prediction power is found between TMS measurements and hour of the day.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65099/elife-65099-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** CCA analysis using four variables of TMS (motor response threshold [MT], motor-evoked potentials latentcy [MEPL], short interval intracortical inhibition [SICI], and intracortical facilitation [ICF]) and four variables of EEG (delta, theta, alpha, and beta). Four output modes are plotted, and linear correlation is evaluated with a regression of the scatter plots. The Stanford Sleepiness Scales (SSS) of each datapoint is superimposed on the scatter plot.\n\nIn order to examine whether the observed correlations between sleepiness and TMS or EEG measurements are due to a confounding effect of circadian modulation, we conducted three groups of paired analyses for datapoints at 7 a.m. (sleep deprived 0 and 24 hr), 11 a.m. (sleep deprived 4 and 28 hr), and 5 p.m. (sleep deprived 10 and 34 hr). The separation between no sleepy and sleepy states remained primarily consistent, except for the 5 p.m. group with TMS measurements (Figure 3\u2014figure supplements 1 and 2). The lack of correlation in the 5 p.m. group could be due to a lack of sufficient variation in the sleepy states in this timepoint. These data indicate that after controlling for the circadian modulation TMS and EEG measurements still correlate sleepiness.\n\n### TMS quantitatively predicts sleepiness\n\nBased on the conclusion above, we further hypothesized that a mixed-effect model of TMS measurements should be able to predict subjects\u2019 sleepiness, while tolerating the high degree of inter-subject variability. We established a linear full model using data from 15 subjects with all six TMS measurements to predict sleepiness scores (Figure 1\u2014figure supplement 2), without considering any interaction among these measurements, and each subject was given a random effect on intercept. The model showed a statistically significant fit. We then performed backward variable selection based on F-test of the standard model information criterion (Figure 3C, plotting log likelihood as representative), and found that SICF and LICI can be eliminated without reducing the model performance. With the updated model, all four TMS parameters (MT, MEP latency, SICI, and ICF) showed statistically significant coefficients, and the predicted sleepiness showed high correlation to the reported sleepiness (Figure 3D). Using the same coefficients on these four TMS parameters, we predicted the other 23 subjects\u2019 sleepiness (Figure 1\u2014figure supplement 2), allowing a new random effect for each subject. Our prediction showed high degree of correlation to their reported sleepiness (Figure 3E), strongly indicating that these coefficients represent a stable pattern in the TMS that robustly correlated with the degree of sleepiness. Using these four parameters and data from all subjects, we performed fivefolded cross-validation of our model (Colby and Bair, 2013). Testing group showed performance close to the training group, while shuffled control generated chance-level prediction, further supporting the validity of our model. Similar analysis using TMS measurements from matched SSS states to predict time of the data showed no significant correlation (Figure 3\u2014figure supplement 2B), indicating that circadian modulation contributed minimally in the TMS variance in our dataset.\n\nIn addition to predicting subjective self-reported sleepiness, we explored the group-level correlation between TMS and EEG measurements using canonical correlation analysis (Figure 3\u2014figure supplement 3). We found that the most correlated mode between TMS and EEG is aligned with sleepiness, indicating that sleepiness is the primary covariate linking these two measurements. Finally, we applied the same mixed-effect regression using frequencies power averaged from all EEG electrodes and plotted the variance in the predictions at each degree of reported sleepiness. Consistent with the PLS analysis (Figure 3A and B), averaged EEG showed a robust detection of sleepiness, but the gradient was not distinguishable (Figure 3F). Together, these analyses showed a robust signature of TMS that uniquely reflects the degree of sleepiness in human.\n\nFurthermore, examining the coefficients in the four TMS parameters revealed that all of them were positive. Therefore, our data indicate that sleepiness is associated with increased MT and MEP latency, both pointing to a decrease in the corticospinal tract excitability. Sleepiness is also associated with enhancement in both facilitatory (ICF) and inhibitory (SICI) pair-pulse effects, suggesting the strengthening of both excitatory and inhibitory synapses during prolonged wakefulness.\n\n## Discussion\n\nThe present study reported that a combination of four TMS parameters (rMT, MEP latency, SICI, ICF) could efficiently predict subjective sleepiness. The values of rMT and MEP latency together directly reflect and measure the excitability states of motor cortical region. Enhanced rMT has been reported using similar sleep-deprivation paradigm (Manganotti et al., 2001). And increases in cortical excitability were reported using local EEG measurements of TMS-evoked responses (Huber et al., 2013). On the other hand, the pair-pulse parameters, SICI and ICF, reflect local changes in the cortex. SICI is believed to be mediated by GABAAR, and ICF is mediated by glutamatergic transmission, potentially through NMDAR (Van den Bos et al., 2018). Therefore, our study suggested that both excitatory and inhibitory synapses are strengthening with prolonged wakefulness. Previous studies demonstrated that cortical excitability can be sensitive to many variables including age (Gaggioni et al., 2019), attention (Cardone et al., 2021), and circadian rhythm (Chellappa et al., 2016; Ly et al., 2016). Among these, effects of circadian rhythm are challenging to disambiguate since sleepiness correlates to circadian factors (Figure 1). Thanks to the prolonged durations of our study, we were able to compare timepoints 24 hr apart (Figure 3\u2014figure supplement 2), which were not available to previous studies (Chellappa et al., 2016; Ly et al., 2016). We found that the correlation between TMS measurements and sleepiness remains significant after controlling for the circadian factors; but TMS measurements do not show correlation to circadian timing within each SSS subgroup. These data strongly suggest that the variance in cortical excitability is primarily correlated with sleepiness in our dataset. However, in other situations with short or no sleep deprivation, it is still likely that circadian factors are correlated with cortical excitability.\n\nThis finding agrees with the general theme of the synaptic homeostasis theory of sleep: wakefulness is associated with continuous strengthening of the synapses. Importantly, we provided an additional supplement to this theory that the synaptic strengthening does not only happen in excitatory synapses, but also in inhibitory synapses. Lacking the exact mechanism of these changes, it is possible the observed strengthening in both types of synapses was independently modulated by sleepiness or is due to the circuit response to changes in one type of the synapse in order to maintain the excitation/inhibition balance (E/I balance). Thus, in contrast to the original prediction of the theory that sleepiness leads to overt hyperactivity, we showed that there is a robust E/I balance. Nevertheless, the strengthening of synapses while maintaining balance can still have a detrimental effect on the information processing in the circuits, as demonstrated by multiple studies simulating these effects. Deviating from the optimal range of the synaptic strengths will lead to a reduction in the signal-to-noise ratio in individual neurons (Rubin et al., 2017), as well as the suboptimal sparseness and noise correlations in the population-wide coding (Zhou and Yu, 2018). Sleep, then, may depress these synaptic weights and restore the circuits to an optimal state (Kuhn et al., 2016).\n\nWhile the above-mentioned modification of the synaptic homeostasis theory does not change the general framework of sleep function, it is worth noting that the difference is not just a pedantic discussion. Our finding predicts that general excitability will not be a reliable marker for sleepiness. In addition, if any intervention were to develop to relief sleep drive, our finding suggests that prolonged synaptic suppression will not serve a restorative function. These predictions differ from the ones posited from the original synaptic homeostasis theory and will have important implications in the future research on the monitoring and modulation of sleep states.\n\nFinally, we reported that a linear combination of TMS parameters can predict the gradual extent for the degree of sleepiness, while using the averaged EEG data only categorically separated non-sleepy and sleepy states. Although EEG was only recorded on three timepoints, limiting the TMS model using the same amount of data still produced a gradient prediction for the degree of sleepiness (Figure 3), suggesting that there is likely to be some intrinsic different modes of modulation to the sources of EEG and TMS measurements by sleepiness. As many frequency bands are empirically and potentially mechanistically linked to neural network function (Ba\u015far et al., 2001; Klimesch, 1999), the binary switch of EEG states may reflect a robust scheme of neural computation up to a high degree of sleepiness, and the change in the EEG state is potentially more predictive to the cognitive function decline related to sleepiness, compared to changes in the TMS measurements. Yet the synaptic changes revealed by TMS measurements may represent a mechanism underlying the EEG state switch as the synaptic strengths could impose biophysical boundaries and stable-state landscapes that force the switch in rhythmic activities states. On the other hand, a previous EEG and intracranial recording study showed that sleep onset is associated with a strong theta rhythm in the occipital regions and an increase in alpha and beta rhythm in the frontal regions (Marzano et al., 2013), suggesting that sleep deprivation may lead to different changes in rhythmic activities and potentially excitabilities in different brain regions. It remains to be seen whether our current finding represents a general feature across the brain.\n\nAlthough our sleep deprivation paradigm exceeded the duration of many previous studies, one limitation of the current study is the limited datapoints of level 6\u20137 sleepiness. While we observed robust correlation with SSS levels of 1\u20135, the statistical power for very sleepy states is lower. This may partially explain the lack of correlation in one of the subsets in our results (Figure 3\u2014figure supplement 2).\n\nIn conclusion, our study showed that the strengthening of both excitatory and inhibitory synaptic connections in the cortex can quantitatively predict the degree of sleepiness. This finding indicates a modification of the synaptic homeostasis theory of sleep and furthers our understanding of how sleepiness state modulates brain functions.\n\n## Materials and methods\n\n### Participants\n\nThirty-eight healthy participants (21 males, 17 females, age: 22.46 \u00b1 0.29 years, age range: 20\u201327 years, Figure 1\u2014figure supplement 1) with no history of sleep disorders (Pittsburgh Sleep Quality Index; Buysse et al., 1989), head trauma, psychiatric conditions, or any other chronic disease were recruited for present study. The subjects were free of medication and tobacco use. All participants wrote informed consent before the experiment; the study has been approved by the Ethics Committee of Huashan Hospital (2017-410).\n\n### Study flow\n\nThe subjects were asked to stay in their regular sleep pattern at least 1 week before the experiment, and the experiment would postpone if the participants have a cold or any other uncomfortable situation. The subjects arrived at the laboratory 1 day before the experiment for preparation and to adapt to the environment. They slept in the separate and quiet room for one night. They were asked not to use the alarm and are wakened by the researchers at 7 a.m. of the second day.\n\nThe study lasts for 34 hr, during which the subjects received eight times for SSS evaluation and TMS assessments, as well as three times resting-state EEG measurements (Figure 1). SSS was used in our study due to its wide usage in research, previous validation against objective measurements, and brevity (Hungs, 2012). During the study period, the subjects were not allowed engaging in vigorous exercise or taking coffee or tea, and were maintained awake by two independent researchers.\n\n### EEG recording and data processing\n\nThe EEG signal was recorded by EEG system of BrainAmp MR32, BrainProducts, using a 32-channel EEG cap. A specific electrode was used as the reference channel placed between Cz and Fz. Reference would then be transferred offline into overall average reference. Subjects were seated in a comfortable chair with a computer screen in front of them showing instructions when recording the resting state EEG. Subjects were asked to focus on a cross symbol on the screen for 5 min to record their open-eye EEG and followed by another 5 min of close-eye EEG epoch and then repeated for totally 20 min EEG recording with two episodes of open and close eye EEG, respectively. The EEG was acquired at 4, 21, and 28 hr from awake.\n\nThe collected EEG signals were processed offline using MATLAB (The MathWorks Inc, Natick, MA). Primary processing included eye-blink correction, artifact rejection, segmentation, and band-pass filter. The eye-blinks were removed from the EEG signal in other channels to eliminate the effects of electro-ocular artifacts. High-frequency artifacts, such as muscle activity, and high-amplitude slow wave were rejected based on the automatic removal algorithm with an initial threshold of 70 \u03bcV, which would continuously increase 5 \u03bcV at a time if more than 20% of the data was rejected until the threshold reached 150 \u03bcV. According to the study protocol, the EEG signal was then segmented by 1 min and following band filter of 0.5\u201349 Hz as beta wave was often interested in sleep deprivation studies.\n\nThe EEG signals were decomposed into the delta (1\u20134 Hz), theta (4\u20138 Hz), alpha (8\u201312 Hz), and low-beta (12\u201320 Hz) frequency components, spectral power (\u03bcV2) of which was analyzed separately via fast Fourier transform (FFT) for overall average at the three timepoints, respectively.\n\n### TMS procedures\n\nThe subjects were seated on a comfortable chair in a silent environment. TMS studied was conducted with OSF\u2013priming TMS (YRD CCY-IA, Yiruide Co., Wuhan, China) connected with a 70 mm figure-of-8 coil (CCY-I TMS instrument, Yiruide Co.). The motor hotspot for FDI muscle on the contralateral hemisphere of primary motor cortex (M1) was defined with maximum MEP value. The MT is defined as the lowest density that can be evoked at least 5 MEP, with amplitude more than 50 \u03bcV in 10 times of successive stimulation with the relaxed recording muscle (Rossini et al., 2015). Then, the intensity of the test stimulation (TS) was determined when the average amplitude reached at 400\u20131000 \u03bcV. The TS was given 10 times continuously, and their latency and amplitude were recorded.\n\nThe paired-pulses TMS (ppTMS) included short interval intracortical inhibition (SICI), long interval intracortical inhibition (LICI), short interval intracortical facilitation (SICF), and intracortical facilitation (ICF). The ppTMS also included three controllable parameters, TS, conditioning stimulation (CS), and interstimulus intervals (ISI). The setting of ppTMS in this study is shown in Table 2 (Rossini et al., 2015; Lazzaro and Ziemann, 2013). Every index was repeated 10 times, and the single pulse of the TS was inserted between the pulses to guarantee the accurate stimulation site and the angle of the coil. The pause was set within 5\u20137 s between the pulses to make sure the excitability would not have been interfered by the last stimulation. The format of the index of the ppTMS is shown below. The 10 times stimulation of each index were averaged.\n\n$$\nppTMS%MEP=\\frac{amplitude of ppTMS}{amplitude of TS}\\times100%\n$$\n\n**Table 2.**\n The setting of the ppTMS.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>SICI</th>\n      <th>LICI</th>\n      <th>SICF</th>\n      <th>ICF</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CS (%MEP)</td>\n      <td>70</td>\n      <td>120</td>\n      <td>90</td>\n      <td>70</td>\n    </tr>\n    <tr>\n      <td>TS (%MEP)</td>\n      <td colspan=\"4\">Average amplitude reached at 400\u20131000 \u03bcV</td>\n    </tr>\n    <tr>\n      <td>ISI</td>\n      <td>2</td>\n      <td>150</td>\n      <td>1.5</td>\n      <td>15</td>\n    </tr>\n  </tbody>\n</table>\n\n_ppTMS: paired-pulses transcranial magnetic stimulation; SICI: short interval intracortical inhibition; LICI: long interval intracortical inhibition; SICF: short interval intracortical facilitation; ICF: intracortical facilitation; MEP: motor-evoked potential; CS: conditioning stimulation; TS: test stimulation: ISI: interstimulus interval._\n\n### Statistical analysis\n\nThe data were repeated measurement variables of single group. One-way ANOVA was used for statistics, and the sample size was calculated based on the data from previous studies. TMS and SSS were repeated seven times and EEG three times. PASS 11 was used to calculate the sample size of 34 (power = 0.9, \u03b1 = 0.05 [double-sided]). If the lost rate was assumed to be 10%, then the sample size was 34/0.9 = 38 cases. In the actual study, 40 cases were included and lost 2 cases.\n\nAll statistical analyses were performed with GraphPad Prism (GraphPad Software LLC, USA). Paired t-tests were used in EEG dataset (Figure 1). One-way ANOVA was applied in the result of TMS measurements and one-sample t-test for the correlations between TMS and SSS (Figure 2). The statistical significance threshold was set as two-tailed, p<0.05. F-tests were used in most of the model-related coefficient comparisons (Figure 3). Data are presented as mean \u00b1 standard deviation or mean \u00b1 standard error of the mean.\n\nPartial least-square regressions were performed with MATLAB, using SSS as responses. In the case of TMS measurements, all six TMS parameters were used as predictors and output was set with five dimensions. In the case of EEG measurements, all four EEG bands were used as predictors and output was set with three dimensions. The correlation between SSS and the predictor scores for each output dimensions was examined, and the first two dimensions were plotted.\n\nMixed-effect linear regressions were performed with MATLAB, using SSS as responses. All parameters were normalized to a 0\u20131 scale according to group extrema before used in the model. Pilot explorations adding sex and age as predictor variables show no effect of these variables. Additionally, using all subjects\u2019 data, all random effects and residuals follow normal distribution and are not correlated, suggesting compliance to the core assumption of the mixed-effect model. No interaction term was allowed, and the random effect was limited to only the intercept for each subject. Backward model selection was performed based on information criteria compared to the full model. It should be noted that parameters not selected may still change with SSS, but would not provide further information in a prediction model. To apply the fitted model in a new group, we calculated the fixed effects of each new subject using the fitted coefficients and then fit a new model adding only a random intercept for each new subject.\n\nFor cross-validation of our model, we adopted the methods described in a previous study (Colby and Bair, 2013). In brief, for each iteration, all subjects were randomly assigned into training (23 out of 38) or testing (15 out of 38) group. Within training group, 18 subjects were used to estimate model coefficients. After freezing the fixed-effects coefficients, random effects were estimated for the remaining five subjects and residuals from these five subjects were used as model performance. This within-training group sampling was repeated 500 times and the best model is selected. Using the fixed-effect coefficients from this model, we re-evaluated the random effects from all 23 subjects and calculated the residuals as training group performance. And then we applied this model to the 15 subjects and calculated the random effects and residuals, which were recorded as testing group performance. This concluded one iteration of the cross-validation process. 500 iterations were performed on the dataset, and averaged performance was reported in the results. We conducted the same procedures in randomly shuffled SSS data, and the testing performance in that group is recorded. To estimate chance level, we draw 38 random number from 1 to 7 following a normal distribution as model prediction and calculated the errors. This procedure was repeated 500 times to get an average chance level.\n",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "e1f04e72-d318-43f4-8b07-666bf6bad78a",
+      "submission_id": "29a8d181-9d5b-4177-91b1-6a08eba77106",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Laura Dugu\u00e9, Uni\u00adver\u00adsit\u00e9 de Paris France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65099.sa1](https://doi.org/10.7554/eLife.65099.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper is of potential interest to neuroscientists and sleep researchers, as it links measures of cortical excitability to self-reported sleepiness. The dataset is interesting given all the various measures reported. The authors revised the manuscript in depth according to the reviewers' suggestions, with some new control analyses, including the relative independence from circadian factors.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cortical excitability signatures for the degree of sleepiness in human\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Huguenard as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Giulia Gaggioni (Reviewer #2).\n\nBased on the reviews, and as detailed below we would like to see a revised version of your manuscript before making a final decision. The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The main concern raised by all three reviewers regards the impossibility to disentangle between the contributions of circadian vs. homeostatic factors on the observed effects. The analyses have been performed only considering the homeostatic factor (i.e., the time spent awake). We recommend that you address this concern by the following additional analysis: comparisons between data points collected at the same time-of-day (i.e., controlling the circadian factor): 3 data points for the TMS measures [7 a.m, 11 a.m., and 5 p.m. of the first and second day (before vs. after sleep deprivation)] and 1 data point for EEG measures (11 a.m. of the first and second day).\n\n2. Linking the wakefulness measure to synaptic homeostasis theory may be possible via literature references. It would be important to explain (in the introduction, at least) what synaptic homeostasis theory predicts about a >24h sleep-deprivation intervention including the 'rebound' effect on sleepiness after 24h, since that is what the authors have done.\n\n3. It would also make sense to test the model more rigorously with something like 5-fold cross-validation.\n\n4. Line 352: \"Pilot explorations adding sex and age as predictor variables show no effect of these variables.\" It would be interesting to know if the predictor \"session\" was also tested.\n\n5. Figures 1.C. and 2.C-E.: if there are any significant differences between sessions, please report it in the figure.\n\n6. Figure 1.D..: could you discuss the higher \u03b4 and theta activity observed in occipital areas (instead of fronto-central areas)?\n\n7. Line 128: MT abbreviation without previous definition in the text (but in line 307).\n\n8. Methods / Statistical analysis: specify if the main assumptions required by mixed-effect model where checked and met.\n\n9. Methods / Study flow: give a brief rational why SSS (instead of, for example, KSS, VAS, etc.).\n\n10. An interesting analysis could be to test if the model could also predict the EEG activity (mean or theta), as an objective marker of sleepiness (even though EEG was only recorded 3 times in a subgroup of 15 participants).\n\n11. The study participants do not actually report feeling very sleepy. The key behavioral measure is self-reported sleepiness on the Stanford Sleepiness Scale which is a 7-point scale, with only 6-7 indicating the participant is 'sleepy'. However participants reported level 6-7 sleepiness only at approximately 15 observations (fig3D, grey dots). This is from 38 participants * 8 testing moments i.e., >300 total observations. If participants were only actually sleepy in <5% of observations this could weaken the conclusions about sleep and sleepiness. And the clustering of the observations around the lower points 1-5 on the Sleepiness Scale might reduce confidence in the model fit. This is not necessarily a big issue but it might be sensible to acknowledge it in the discussion.\n\nReviewer #1:\n\nThis study investigates in 38 healthy subjects the association between cortical excitability increases, as assessed by transcranial magnetic stimulation (TMS), and sleepiness induced by a 34-hour protocol of sleep deprivation.\n\nUsing advanced statistical methods, the study confirms that the cortical excitability changes are associated to the degree of sleepiness. They also report that synaptic strengthen after sleep deprivation occurred in both excitatory and inhibitory connections.\n\nOn the whole, the study is essentially replicative. Differently from what stated by the authors (\"Previous studies taking group averages of TMS measurements reported either hyper- [10] or hypo- [11] excitability associated with sleep deprivation, with inconsistent effects of pair-pulse stimulation results [12, 17-19].\"), the existing studies are mostly coherent. Refs. #11, #12, and 18 substantially confirm the hypothesis. Refs. #12 and #17 are methodologically weak studies providing inconsistent findings, while Ref. #19 highlights the contribution of both circadian-timing and prior sleep-wake history in regulating cortical excitation/inhibition balance.\n\nOn the other hand, the most novel aspect of the current study is represented by the use of advanced statistical methods, which allow to control intrinsic individual variability in the TMS measures. The second novel finding of the study is that the synaptic strengthening does not only happen in excitatory synapses, but also in inhibitory synapses.\n\nTaking into consideration the protocol (please see panel A of Figure 1), TMS measures were collected in eight different datapoints [7 a.m., 11 a.m., 5 p.m., and 11 p.m. of the first day (i.e., without any sleep deprivation) and 4 a.m. 7 a.m. 11 a.m. 5 p.m. of the second day (i.e., after sleep deprivation)]. On the other hand, EEG measures were collected at 11 p.m. of the first day and at 4 a.m. and 11 a.m. of the second day.\n\nThe study seems not considering that consolidated models of sleep regulation (Borb\u00e9ly AA, Daan S, Wirz-Justice A, Deboer T. The two-process model of sleep regulation: a reappraisal. J Sleep Res. 2016 Apr;25(2):131-43) state that nightly sleep and diurnal sleep pressure are affected and regulated by circadian-timing (i.e., the circadian process) and prior sleep-wake history (i.e., the homeostatic factor). This means that considering the 8 TMS datapoints and the 3 EEG datapoints intrinsecally mix the effects of circadian and homeostatic factors.\n\nAccording to this very basic point, the current results can't disentangle in any way the contributions of the two factors. The analyses have been performed only considering the homeostatic factor (i.e., the time spent awake).\n\nReviewer #2:\n\nIn this study, Zhang and colleagues tracked the time course of sleepiness (self-reported), of the EEG, and of 6 indices of cortical excitability (MT, MEP latency, SICF, SICI, ICF, LICI), measured by TMS and paired-pulse TMS at the motor cortex, during 34 hours of sleep deprivation in 38 subjects (EEG and SICI measured in a subgroup of 15 subjects in 3 out of 8 sessions). Only MT and MEP latency showed a significant change with time spent awake. MEP latency was also significantly associated with self-reported sleepiness. The profile of the 6 raw indices showed high variability between individuals. Thus, the authors decided to apply advanced statistical methods such as partial least squares (PLS) regression and mixed-effect models to further analyse the relationship between cortical excitability measures and self-reported sleepiness. Zhang at al. identified a model based on the combination of 4 indices of cortical excitability (MT, MEP latency, SICI, ICF) that quantitatively predicts the degree of sleepiness in two separate subgroups of subjects. Furthermore, based on the regression coefficients of the model, they found that -while corticospinal excitability decreases- both facilitatory and inhibitory changes enhance with sleepiness. These data from a human in vivo protocol add in an interesting twist to the current frame of the SHY theory. The conclusions of this paper are mostly well supported by data driven from the model. However, the raw data are difficult to decipher. Some aspects of the volunteers' recruitment and final claims need to be clarified and extended.\n\nStrengths\n\nThe duration and the number of sessions of the protocol are remarkable, as well as the number of participants. The design of the study is articulated and includes questionnaires, EEG and TMS / ppTMS over the motor cortex. Zhang at al. investigated both cortex excitability (i.e. reactivity) through motor-evoked potentials as well as the excitatory and inhibitory balance directly at the motor cortex. In this paper, cortical excitability measures are linked to self-reported sleepiness during an extended wakefulness, possibly representing the neurophysiological substrates of various aspects of human cognitive performance during sleep deprivation.\n\nThe authors applied a combination of PLS and mixed model and showed that self-reported sleepiness can be elegantly predicted by a set of indices of cortical excitability. This model allows a fine-grained prediction compared to the bymodal EEG one. This model recalls and further disentangles the positive association between cortical excitability (TEP amplitude) and subjective sleepiness previously reported during a 29 hrs sleep deprivation protocol under constant routine conditions (Ly, J. Q. M. et al. Circadian regulation of human cortical excitability. Nat. Commun. 7:11828 doi: 10.1038/ncomms11828 (2016)).\n\nWeaknesses\n\nPerson-to-person variability of the raw data, resulting in weak correlation of the raw data with self-reported sleepiness. This inter-variability could potentially have been minimised, at least in part, by:\n\n1. Designing the sessions based on time elapsed since awake (0h, +4h, +10h, etc.), instead of fixed external clock time (7AM, 11AM, 5PM, etc.), which could have been in contradiction with the individual's normal sleep-wake timing. By designing sessions in function of the individual's timing of awakeness, sessions would have been in line with the sleep-wake pattern of each individual and still comparable between subjects, without the disadvantage of potentially impacting sleepiness and the underlying neurophysiology.\n\n2. Furthermore, since one of the aims was to predict sleepiness, it would have been good practice to administer sleepiness (e.g. Epworth Sleepiness Scale (ESS)) and chronotype questionnaires in the recruitment phase. Ideally, it would have been also better to quantify the sleep-wake pattern of volunteers during the week before the study, ideally with actigraph or at least with sleep diaries.\n\nClarification and extension of the main conclusion (e.g. as reported in lines 92-94).\n\n1. \"While our results strongly support the synaptic homeostasis theory that synaptic connection strengthens overtime during wakefulness, [\u2026]\". Authors should explain and reconcile the reduction in excitability during sleep deprivation (as inferred from MT and MEP latency) with the synaptic homeostasis theory (and other studies based on TEP).\n\n2. \"[\u2026], we showed that the strengthening occurs in both excitatory and inhibitory synapses.\" Authors should clarify that this conclusion is based on a mixed-effect model and it is not supported by the raw data, which do not show any significant modulation of the excitatory and inhibitory profiles with time spent awake. Furthermore, it would be beneficial for the paper's clarity if the authors report the \u03b2 values as well as their \"R2\", and eventually depict this with a graph. Finally, the authors reported \"Pilot explorations adding sex and age as predictor variables show no effect of these variables.\" (line 352). It would be interesting to know if the predictor \"session\" was also tested in pilot explorations.\n\nReviewer #3:\n\nZhang and colleagues investigated the link between cortical excitability and self-reported sleepiness using a combination of resting-state electroencephalogram (EEG), non-invasive brain stimulation (TMS), and a sleep-deprivation intervention. Their key finding is that a subset of TMS measures including the amplitude and latency of the motor-evoked potential, plus measures of intra-cortical inhibition and facilitation, collectively predict a participants' degree of subjective sleepiness across the sleep-deprived period.\n\nThe underlying data for this paper is very strong. The authors have collected data from a good number of volunteers (N=38), and have acquired a broad range of TMS measurements; 6 different measurements acquired up to 8 times each. This richness has many advantages: It ensures good statistical power and enables the core mixed-model approach. It also allows the authors to link their results to deeper mechanisms, e.g. by including paired-pulse protocols that probe both cortical excitation and inhibition. That's really important for linking the results to models of sleepiness specified at the synaptic level, rather than just correlating TMS and sleepiness.\n\nHowever some aspects of the paper require further attention. One is implementational and related to the model fitting. One is conceptual and relates to the behavioural self-reports.\n\n1) The authors claim that the 4 TMS measures predict scores on the sleepiness scale. Therefore I was expecting some kind of cross-validation: partition data into subsets, obtain regression co-efficients from one subset, test the model fit on the other subset, repeat for many partitions. The authors do something a little less robust: they obtain regression co-efficients from 15 subjects and test on the other 23. Only partitioning once seems insufficient, and I couldn't find justifications for the choice of training on n = 15 testing on n = 23. It seems important to rule out that the results depend on the details of their fitting procedure, and to show that the model fit is truly robust.\n\n2) The authors have demonstrated a link between TMS measures of cortical excitability and self-reported sleepiness. However, the link between self-reported sleepiness and synaptic potentiation seems weaker. The authors explain in the intro that learning during wakefulness leads to synaptic potentiation, and eventually circuit hyperactivity that is rebalanced by sleep. In that case, shouldn't longer wake time lead to more hyperactivity? In fact, in their data longer wake time does not lead to greater subjective sleepiness; after 24h of wakefulness the participants report feeling relatively wakeful again (Figure 1C). Is this prediction made by the synaptic homeostasis theory? If so, the paper would be stronger if the authors explained the prediction in the introduction. If not, then it's hard to see how results pertaining to subjective sleepiness support a conclusion about synaptic homeostasis.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cortical excitability signatures for the degree of sleepiness in human\" for further consideration by eLife. Your revised article has been evaluated by John Huguenard (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe authors made a deep and accurate revision, with some new control analyses. They responded to the points that were raised by the reviewers, and the manuscript is now quite improved. Two concerns need further consideration:\n\n1. The authors provide some support to the relative independence from circadian factors. Please discuss the current results within the context of previous studies of cortical excitability as a function of circadian factors (e.g. Chellappa et al. Circadian dynamics in measures of cortical excitation and inhibition balance. Sci Rep. 2016 Sep 21;6:33661. doi: 10.1038/srep33661).\n\n2. Concerning the theta and \u03b1 activity across sleep onset, please also consider a preliminary finding on intracranial recordings of a pharmaco-resistant patient with epilepsy [supplementary Figure 1 in Marzano et al., 2013 (Sleep Med. 2013 Nov;14(11):1112-22. doi: 10.1016/j.sleep.2013.05.021)]\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cortical excitability signatures for the degree of sleepiness in human\" for further consideration by eLife. Your revised article has been evaluated by John Huguenard (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed. In particular, we note that there were apparently some significant changes in the author list, which is a bit unusual at this stage of the process, as the current revisions were relatively minor. Can you please provide a rationale for each of the authorship changes?\n",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3ee23dbc-7345-42b3-ad41-92c1609f8a43",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C1",
+      "claim": "Sleep is essential in maintaining physiological homeostasis in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep is essential in maintaining physiological homeostasis in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "1b72d10c-8397-4e14-9481-5ccf8e6de674",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C2",
+      "claim": "A 'synaptic homeostasis' theory has been proposed that synapses continue to strengthen during awake and undergo downscaling during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "While the underlying mechanism is not fully understood, a 'synaptic homeostasis' theory has been proposed that synapses continue to strengthen during awake and undergo downscaling during sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to an existing theory in the literature, supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "1b7c52a7-5fb2-4692-a2a1-0f4979c098b4",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C3",
+      "claim": "The synaptic homeostasis theory predicts that brain excitability increases with sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "This theory predicts that brain excitability increases with sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction derived from the synaptic homeostasis theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "8dfdc9ce-2a73-4190-9791-ba5798ff0ef6",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C4",
+      "claim": "Transcranial magnetic stimulation measurements were collected in 38 subjects in a 34 hr program.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we collected transcranial magnetic stimulation measurements in 38 subjects in a 34 hr program and decoded the relationship between cortical excitability and self-report sleepiness using advanced statistical methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and data collection performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "f5d23630-8a6f-4b1e-acda-eb1c6f5f7b63",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C5",
+      "claim": "A combination of partial least squares regression and mixed-effect models identified a robust pattern of excitability changes that can quantitatively predict the degree of sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "By utilizing a combination of partial least squares regression and mixed-effect models, we identified a robust pattern of excitability changes, which can quantitatively predict the degree of sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical methods and results obtained from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "c30a7ed9-da39-4657-acb0-04d5e0af80d8",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C6",
+      "claim": "Synaptic strengthening occurred in both excitatory and inhibitory connections after sleep deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that synaptic strengthen occurred in both excitatory and inhibitory connections after sleep deprivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's TMS measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "2dd93bea-7b55-46d3-997b-862d539794ac",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C7",
+      "claim": "The study provides supportive evidence for the synaptic homeostasis theory in human sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, our study provides supportive evidence for the synaptic homeostasis theory in human sleep and clarifies the process of synaptic strength modulation during sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "3b79685a-f52a-4bfe-a1c7-ccc9ef109cc1",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C8",
+      "claim": "Sleep restores the decline in cognitive functions associated with sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "During sleep, brains undergo profound neurophysiological changes that restore the decline in cognitive functions associated with sleepiness (Harrison and Horne, 2000; Tononi and Cirelli, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "cbb955cf-b313-4d59-9d39-c22730b12f8e",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C9",
+      "claim": "Wakefulness associates with strengthening of the synaptic connection, while sleep initiates synaptic weight downscaling and facilitates homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "A synaptic homeostasis theory has been proposed to describe the biophysical change of neural circuits during sleep: wakefulness associates with strengthening of the synaptic connection, while sleep initiates synaptic weight downscaling and facilitates homeostasis (Tononi and Cirelli, 2006; Tononi and Cirelli, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the synaptic homeostasis theory with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "a2741734-b950-4f6c-b89d-8cd2cebbdac8",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C10",
+      "claim": "Constant learning and memory activities during awake lead to synaptic potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This theory reasons that constant learning and memory activities during awake lead to synaptic potentiation, thus prolonged awake period causes hyperactivity in the neural circuit, enhancing the noise among neural communications and disrupting cognitive functions (Tononi and Cirelli, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reasoning from the synaptic homeostasis theory, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "eeca410d-ff95-4ca6-a133-afc1ba81a845",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C11",
+      "claim": "Prolonged awake period causes hyperactivity in the neural circuit, enhancing the noise among neural communications and disrupting cognitive functions.",
+      "claim_type": "EXPLICIT",
+      "source": "This theory reasons that constant learning and memory activities during awake lead to synaptic potentiation, thus prolonged awake period causes hyperactivity in the neural circuit, enhancing the noise among neural communications and disrupting cognitive functions (Tononi and Cirelli, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the synaptic homeostasis theory, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "ee85aff0-3af8-40a7-838c-cc62cefa317a",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C12",
+      "claim": "Sleep pressure may be correlated to the degree of hyperactivity in neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "It follows that the sleep pressure may be correlated to the degree of this hyperactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the synaptic homeostasis theory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "69e3b5b7-47a1-4cdb-affc-bc43daf0402a",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C13",
+      "claim": "In a prolonged sleep-deprived state (>24 hr), hyperactivation may be partially restored by circadian modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a prolonged sleep-deprived state (>24 hr), this hyperactivation may be partially restored, together with the subjective feeling of sleepiness, by circadian modulation (Borb\u00e9ly et al., 2016; Frank and Cantera, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "f9bd8634-4a6e-4ead-8fea-ebf7eeea9ca7",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C14",
+      "claim": "Biochemical markers of synaptic potentiation increase with prolonged wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this synaptic homeostasis theory, biochemical markers of synaptic potentiation increase with prolonged wakefulness (Cirelli and Tononi, 2000; Tononi and Cirelli, 2001; Silva, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "23f9eda6-4f75-4d9a-9e67-ccfb6be4aa18",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C15",
+      "claim": "Resting-state EEG revealed a global increase in theta band power (4\u20138 Hz) with increased sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, resting-state electroencephalogram (EEG) revealed a global increase in theta band power (4\u20138 Hz) with increased sleepiness (Cajochen et al., 1995; Aeschbach et al., 1997; Vyazovskiy and Tobler, 2005), suggesting sleep-wake state exerts a robust modulation on the neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "67bfffa8-8da2-44a5-b6f9-bb1b1839b818",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C16",
+      "claim": "Experiments attempting to pinpoint modulation by directly measuring brain excitability have yielded less consistent results.",
+      "claim_type": "EXPLICIT",
+      "source": "However, experiments attempting to pinpoint this modulation by directly measuring brain excitability have yielded less consistent results (Huber et al., 2013; De Gennaro et al., 2007; Manganotti et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research showing inconsistent findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "be755510-5e6f-4165-ab07-72f9ca9fe542",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C17",
+      "claim": "TMS induces noninvasive activation of local brain region by applying a transient, alternating magnetic field through the skull.",
+      "claim_type": "EXPLICIT",
+      "source": "TMS induces noninvasive activation of local brain region by applying a transient, alternating magnetic field through the skull, the effect of which can be readout through EEG or downstream motor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical mechanism of TMS, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "9ce12e49-c6be-4030-a3fe-eef67787a5ff",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C18",
+      "claim": "Brain excitability can be measured by determining the minimal power required to achieve reliable output or the amplitude of the output given a standardized stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain excitability can be measured by determining the minimal power required to achieve reliable output or the amplitude of the output given a standardized stimulation (Pascual-Leone et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a measurement method supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "9621f616-973a-4893-9380-870ecce1f3e3",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C19",
+      "claim": "Paired TMS pulses can be applied consecutively within a short temporal interval to induce certain facilitatory or inhibitory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, paired TMS pulses can be applied consecutively within a short temporal interval (e.g., several milliseconds) to induce certain facilitatory or inhibitory effect (Stefan et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a TMS technique supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "427f9162-23fe-4690-85dc-a7d7ca94c9d1",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C20",
+      "claim": "Some paired-pulse effects have been attributed to the function of certain synaptic receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The nature of these paired-pulse effects has been studied extensively, and some of them have been attributed to the function of certain synaptic receptors (Van den Bos et al., 2018; Daskalakis et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "92f02ad8-d73e-4af2-a2ed-1ac60eca70ca",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C21",
+      "claim": "TMS suffers from relatively high degree of inter-subject variability.",
+      "claim_type": "EXPLICIT",
+      "source": "While TMS allows noninvasive assessment of cortical excitability in humans, it suffers from relatively high degree of inter-subject variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of TMS methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "ea3fb392-0fe5-48df-a607-e91d37d06819",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C22",
+      "claim": "Previous studies taking group averages of TMS measurements reported either hyper- or hypo- excitability associated with sleep deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies taking group averages of TMS measurements reported either hyper- (Huber et al., 2013) or hypo- (De Gennaro et al., 2007) excitability associated with sleep deprivation, with inconsistent effects of pair-pulse stimulation results (Manganotti et al., 2001; Kreuzer et al., 2011; Kuhn et al., 2016; Chellappa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes findings from previous studies with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "31fc9d06-80e5-4e1f-9de1-61cfd9d12d9b",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C23",
+      "claim": "The study collected TMS measurements in 38 healthy subjects in a continuous 34 hr study program.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected TMS measurements in 38 healthy subjects in a continuous 34 hr study program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "aa2efdfc-7a5d-47b6-98a7-522bdcaeee01",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C24",
+      "claim": "Both facilitatory and inhibitory changes in pair-pulse TMS enhance with sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that both facilitatory and inhibitory changes in pair-pulse TMS enhance with sleepiness, while the overall excitability moderately decreases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's TMS measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "81101cd7-8e58-4cdb-94b0-c694b3627227",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C25",
+      "claim": "Overall excitability moderately decreases with sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that both facilitatory and inhibitory changes in pair-pulse TMS enhance with sleepiness, while the overall excitability moderately decreases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's TMS measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "9a2ecaa1-d82b-4e76-a8b7-322079c3705f",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C26",
+      "claim": "The strengthening of synapses while maintaining balance can have a detrimental effect on information processing in the circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes may contribute to the overall maintenance, and subtle decline, of cognitive functions during prolonged wakefulness (Rubin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "eb4a8fee-4a3f-48cc-b9d7-f3faebc839cc",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C27",
+      "claim": "The study revealed strengthening of both excitatory and inhibitory synaptic transmission with sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, our study revealed strengthening of both excitatory and inhibitory synaptic transmission with sleepiness, clarifying and supporting a role of homeostatic modulation of synaptic strength by sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "bf831d83-7e9e-491b-aaa6-29f8b60d43b1",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C28",
+      "claim": "Subjects were kept awake for 34 hours during the study.",
+      "claim_type": "EXPLICIT",
+      "source": "During the 34 hr of study, the subjects were kept awake with two researchers and took eight times of Stanford Sleepiness Scales (SSS) evaluations and TMS assessments, and three times of EEG measurements (Figure 1A and B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental protocol and is shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "09b522d6-e127-4150-9d40-1f571eaa1b49",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C29",
+      "claim": "Sleepiness showed an increase after 16 hr (group average SSS scores increased from 2.75 to 4.5).",
+      "claim_type": "EXPLICIT",
+      "source": "Sleepiness showed an increased after 16 hr (group average SSS scores increased from 2.75 to 4.5), and then a slight decrease after 24 hr (from 4.5 to 3.25) (Figure 1C, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "6a1e492e-ca74-49c1-8a40-06fff150a450",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C30",
+      "claim": "Sleepiness showed a slight decrease after 24 hr (from 4.5 to 3.25).",
+      "claim_type": "EXPLICIT",
+      "source": "Sleepiness showed an increased after 16 hr (group average SSS scores increased from 2.75 to 4.5), and then a slight decrease after 24 hr (from 4.5 to 3.25) (Figure 1C, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "e53cb3fe-307d-4d60-ba42-286c8b5196a8",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C31",
+      "claim": "The decrease in sleepiness after 24 hr agrees with previous sleep deprivation studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease in sleepiness agrees with previous sleep deprivation studies (Manganotti et al., 2001), likely due to circadian modulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "5d9d37ec-d5d9-462d-9390-1aaff577e85c",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C32",
+      "claim": "The decrease in sleepiness after 24 hr is likely due to circadian modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease in sleepiness agrees with previous sleep deprivation studies (Manganotti et al., 2001), likely due to circadian modulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data based on known circadian effects.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "d7184521-e381-42a4-9d5b-dddc46c7687c",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C33",
+      "claim": "EEG showed a stereotypical increase in the power of theta band (4\u20138 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, consistent with previous reports (Cajochen et al., 1995), EEG showed a stereotypical increase in the power of theta band (4\u20138 Hz), and a decrease in the alpha band (8\u201312 Hz) (Figure 1D and E, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's EEG data shown in Figure 1D and E, consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "92905861-e292-47a6-bb03-9fd8227a0ddd",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C34",
+      "claim": "EEG showed a decrease in the alpha band (8\u201312 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, consistent with previous reports (Cajochen et al., 1995), EEG showed a stereotypical increase in the power of theta band (4\u20138 Hz), and a decrease in the alpha band (8\u201312 Hz) (Figure 1D and E, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's EEG data shown in Figure 1D and E, consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "7912af59-ed25-497a-89d8-0a20f74d63ad",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C35",
+      "claim": "More prominent EEG changes were observed in the occipital areas.",
+      "claim_type": "EXPLICIT",
+      "source": "While all brain regions showed consistent global trends, we observed more prominent changes in the occipital areas, consistent with previous studies indicating these areas showed more prominent changes around sleep onsets (Gorgoni et al., 2019; Finelli et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's EEG data, consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "0ed22244-2f3e-4b0c-9ee9-3175744940c0",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C36",
+      "claim": "The subjects did not fall in and out of sleep during the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe an increase in the alpha and beta band in frontal regions, a prominent feature associated with sleep onset (Finelli et al., 2001; Marzano et al., 2013), suggesting that the subjects did not fall in and out sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the absence of specific EEG patterns associated with sleep onset.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "45d83d1b-64d3-4274-a0d3-1cd6cd34c611",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C37",
+      "claim": "The minimal power necessary for eliciting reliable MEPs decreased after the subjects woke up and mildly increased after 21 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the minimal power necessary for eliciting reliable MEPs decreased after the subjects woke up and mildly increased after 21 hr (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's TMS measurements shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "fae740cd-8b67-4821-adfc-4e68ee979d3e",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C38",
+      "claim": "The delay between TMS and MEP followed a similar pattern to motor threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "The delay between TMS and MEP followed a similar pattern (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's TMS measurements shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "1bf2de58-a5f7-4820-801f-8e89cb7f59ca",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C39",
+      "claim": "The increase of minimal power and delay time indicates a reduction in excitability with prolonged wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase of minimal power and delay time indicates a reduction in excitability with prolonged wakefulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the TMS measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "902aede1-5f0d-469c-b400-7331e8e74a91",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C40",
+      "claim": "Individuals' data often do not agree with the average trend in TMS measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "However, individuals' data often do not agree with the average trend (Figure 1\u2014figure supplement 2), and correlations between individuals' sleepiness score and these parameters showed wide ranges of variabilities (Figure 2D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study's data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "552a00eb-5035-42e4-a016-4adef071d616",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C41",
+      "claim": "MT and MEP latency are influenced by the excitability along the corticospinal tract.",
+      "claim_type": "EXPLICIT",
+      "source": "The MT (motor response threshold) and MEP latency are influenced by the excitability along the corticospinal tract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TMS measurements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "ba6f8a9f-4a0c-4e23-bfbf-f049164bc432",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C42",
+      "claim": "Pair-pulse protocols reflect characteristics within the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the pair-pulse protocols reflect characteristics within the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TMS measurements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "4dc075b2-46f1-4117-bde1-3c171ab85174",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C43",
+      "claim": "SICI, ICF, and LICI showed strengthening trends on average, yet none were statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Among four types of pair-pulse protocols (SICF, SICI, ICF, and LICI; Figure 2G, J, M and P), SICI, ICF, and LICI showed strengthening trends on average, yet none were statistically significant (Figure 2H, K, N and Q), nor any showed consistent correlations to SSS (Figure 2I, L, O and R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's TMS measurements shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "ae4f55b2-3c93-4e14-9a3c-51b91838cbe6",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C44",
+      "claim": "Raw TMS measurements showed weak correlation with sleepiness on average, with considerable variance among subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, raw TMS measurements showed weak correlation with sleepiness on average, with considerable variance among subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the TMS measurement findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "447f06a6-325f-4840-a01e-65441d088c53",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C45",
+      "claim": "Each subject may have certain intrinsic noise pattern and group averages do not separate these noises from underlying correlation between TMS and sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the individual variability in the TMS measurements, we hypothesized that each subject may have certain intrinsic noise pattern and group averages do not separate these noises from underlying correlation between TMS and sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the variability in TMS measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "e5a49bcd-8326-4e90-a00b-e10c99be9719",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C46",
+      "claim": "The first PLS dimension showed significant separation between non-sleepy and sleepy states.",
+      "claim_type": "EXPLICIT",
+      "source": "When we mapped the non-sleepy states (SSS = 1 or 2, blue dots) and sleepy states (SSS = 5, 6, or 7, red dots) on the first two PLS dimensions, we found that the first dimension showed significant separation between these two states, and a mild-sleepy state (SSS = 3 or 4) showed an intermediate peak (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the PLS analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "bf6390f1-e8ee-4ff6-9597-3a780b0e34ae",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C47",
+      "claim": "A mild-sleepy state (SSS = 3 or 4) showed an intermediate peak in the first PLS dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "When we mapped the non-sleepy states (SSS = 1 or 2, blue dots) and sleepy states (SSS = 5, 6, or 7, red dots) on the first two PLS dimensions, we found that the first dimension showed significant separation between these two states, and a mild-sleepy state (SSS = 3 or 4) showed an intermediate peak (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the PLS analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "bdabddd8-22d4-48cf-a8c3-4b0476417565",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C48",
+      "claim": "The first PLS dimension explained only ~13% of the total data variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while the first dimension explained only ~13 % of the total data variance, other PLS dimensions did not show separation of sleepiness states, suggesting that indeed the TMS data contain high variance, and a particular linear combination of the parameters captures the association to the degree of sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the PLS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "d3d57b34-c251-4903-bced-9baa94aeea8f",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C49",
+      "claim": "TMS data contain high variance, and a particular linear combination of the parameters captures the association to the degree of sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while the first dimension explained only ~13 % of the total data variance, other PLS dimensions did not show separation of sleepiness states, suggesting that indeed the TMS data contain high variance, and a particular linear combination of the parameters captures the association to the degree of sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the PLS analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "d3b68257-d98a-4c99-8744-9ef4a31e6b6d",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C50",
+      "claim": "EEG data exhibits a phasic switch to sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that EEG data exhibits a phasic switch to sleepiness, while TMS data showed a correlation to the degree of sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the PLS analysis comparing EEG and TMS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "4d916ab7-9df3-4a92-99c4-446b4e1b9101",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C51",
+      "claim": "TMS data showed a correlation to the degree of sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that EEG data exhibits a phasic switch to sleepiness, while TMS data showed a correlation to the degree of sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the PLS analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "be90c51f-d36f-48b3-9d50-84bb4679f67b",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C52",
+      "claim": "After controlling for circadian effect, EEG data still show obvious separation between non-sleepy and sleepy states.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to examine whether the observed correlations between sleepiness and TMS or EEG measurements are due to a confounding effect of circadian modulation, we conducted three groups of paired analyses for datapoints at 7 a.m. (sleep deprived 0 and 24 hr), 11 a.m. (sleep deprived 4 and 28 hr), and 5 p.m. (sleep deprived 10 and 34 hr). The separation between no sleepy and sleepy states remained primarily consistent, except for the 5 p.m. group with TMS measurements (Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the paired analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "99a3f875-961f-4c9b-9fe4-5cc414fd9e28",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C53",
+      "claim": "After controlling for the circadian modulation TMS and EEG measurements still correlate sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that after controlling for the circadian modulation TMS and EEG measurements still correlate sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the paired analysis controlling for circadian effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "19f68875-503a-40bc-b3e3-329378507687",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C54",
+      "claim": "A mixed-effect model of TMS measurements can predict subjects' sleepiness while tolerating the high degree of inter-subject variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the conclusion above, we further hypothesized that a mixed-effect model of TMS measurements should be able to predict subjects' sleepiness, while tolerating the high degree of inter-subject variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis tested in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "892bda12-90ce-4bf2-85e0-7e858ba6c8b6",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C55",
+      "claim": "SICF and LICI can be eliminated from the model without reducing the model performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed backward variable selection based on F-test of the standard model information criterion (Figure 3C, plotting log likelihood as representative), and found that SICF and LICI can be eliminated without reducing the model performance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model selection analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "72762a74-cfa9-4924-ae2a-4bf6effe57e8",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C56",
+      "claim": "All four TMS parameters (MT, MEP latency, SICI, and ICF) showed statistically significant coefficients in the updated model.",
+      "claim_type": "EXPLICIT",
+      "source": "With the updated model, all four TMS parameters (MT, MEP latency, SICI, and ICF) showed statistically significant coefficients, and the predicted sleepiness showed high correlation to the reported sleepiness (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mixed-effect model shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "1e2667f3-3399-4688-926c-b676696d2e81",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C57",
+      "claim": "The predicted sleepiness showed high correlation to the reported sleepiness in the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "With the updated model, all four TMS parameters (MT, MEP latency, SICI, and ICF) showed statistically significant coefficients, and the predicted sleepiness showed high correlation to the reported sleepiness (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mixed-effect model shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "428017d0-0156-4439-b79a-fe7b72df017f",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C58",
+      "claim": "The model prediction showed high degree of correlation to reported sleepiness in the testing set.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same coefficients on these four TMS parameters, we predicted the other 23 subjects' sleepiness (Figure 1\u2014figure supplement 2), allowing a new random effect for each subject. Our prediction showed high degree of correlation to their reported sleepiness (Figure 3E), strongly indicating that these coefficients represent a stable pattern in the TMS that robustly correlated with the degree of sleepiness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model validation shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "f205df54-de82-438b-a82a-ddc6bb413dde",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C59",
+      "claim": "The coefficients represent a stable pattern in the TMS that robustly correlated with the degree of sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same coefficients on these four TMS parameters, we predicted the other 23 subjects' sleepiness (Figure 1\u2014figure supplement 2), allowing a new random effect for each subject. Our prediction showed high degree of correlation to their reported sleepiness (Figure 3E), strongly indicating that these coefficients represent a stable pattern in the TMS that robustly correlated with the degree of sleepiness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the model validation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "793764a1-6671-457f-82c3-e750f7f22b6f",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C60",
+      "claim": "Testing group showed performance close to the training group in fivefold cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these four parameters and data from all subjects, we performed fivefolded cross-validation of our model (Colby and Bair, 2013). Testing group showed performance close to the training group, while shuffled control generated chance-level prediction, further supporting the validity of our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the cross-validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "73e040b6-893e-417d-a425-a9ed1796c924",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C61",
+      "claim": "Shuffled control generated chance-level prediction in cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these four parameters and data from all subjects, we performed fivefolded cross-validation of our model (Colby and Bair, 2013). Testing group showed performance close to the training group, while shuffled control generated chance-level prediction, further supporting the validity of our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the cross-validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "b167f228-f0e5-4f6b-817f-30f9c25234b3",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C62",
+      "claim": "TMS measurements from matched SSS states to predict time of the data showed no significant correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar analysis using TMS measurements from matched SSS states to predict time of the data showed no significant correlation (Figure 3\u2014figure supplement 2B), indicating that circadian modulation contributed minimally in the TMS variance in our dataset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "672ce3e3-5fcf-4a58-96de-644dff9d7acc",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C63",
+      "claim": "Circadian modulation contributed minimally in the TMS variance in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar analysis using TMS measurements from matched SSS states to predict time of the data showed no significant correlation (Figure 3\u2014figure supplement 2B), indicating that circadian modulation contributed minimally in the TMS variance in our dataset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the analysis shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "785e9d43-99fb-499f-82af-a6dd8f2f0ef4",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C64",
+      "claim": "The most correlated mode between TMS and EEG is aligned with sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to predicting subjective self-reported sleepiness, we explored the group-level correlation between TMS and EEG measurements using canonical correlation analysis (Figure 3\u2014figure supplement 3). We found that the most correlated mode between TMS and EEG is aligned with sleepiness, indicating that sleepiness is the primary covariate linking these two measurements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the canonical correlation analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "0cd12d16-7c77-4901-9d29-b4c1b5f4ff5e",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C65",
+      "claim": "Sleepiness is the primary covariate linking TMS and EEG measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to predicting subjective self-reported sleepiness, we explored the group-level correlation between TMS and EEG measurements using canonical correlation analysis (Figure 3\u2014figure supplement 3). We found that the most correlated mode between TMS and EEG is aligned with sleepiness, indicating that sleepiness is the primary covariate linking these two measurements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the canonical correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "fcb9de13-d455-4896-8893-ed4ea3f75330",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C66",
+      "claim": "Averaged EEG showed a robust detection of sleepiness, but the gradient was not distinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we applied the same mixed-effect regression using frequencies power averaged from all EEG electrodes and plotted the variance in the predictions at each degree of reported sleepiness. Consistent with the PLS analysis (Figure 3A and B), averaged EEG showed a robust detection of sleepiness, but the gradient was not distinguishable (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mixed-effect regression analysis shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "0d590220-7f29-45f4-be37-4d0cbce707e4",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C67",
+      "claim": "All four TMS parameter coefficients were positive in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, examining the coefficients in the four TMS parameters revealed that all of them were positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mixed-effect model coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "8a3a7945-3071-48fa-be57-f3f05ef9f241",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C68",
+      "claim": "Sleepiness is associated with increased MT and MEP latency, both pointing to a decrease in the corticospinal tract excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data indicate that sleepiness is associated with increased MT and MEP latency, both pointing to a decrease in the corticospinal tract excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the positive coefficients in the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "1f548746-14d2-4c5a-a112-9687d4cc1bc4",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C69",
+      "claim": "Sleepiness is associated with enhancement in both facilitatory (ICF) and inhibitory (SICI) pair-pulse effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleepiness is also associated with enhancement in both facilitatory (ICF) and inhibitory (SICI) pair-pulse effects, suggesting the strengthening of both excitatory and inhibitory synapses during prolonged wakefulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the positive coefficients in the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "003a573f-160f-46f0-9d09-5093494026eb",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C70",
+      "claim": "The enhancement in both facilitatory and inhibitory pair-pulse effects suggests the strengthening of both excitatory and inhibitory synapses during prolonged wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleepiness is also associated with enhancement in both facilitatory (ICF) and inhibitory (SICI) pair-pulse effects, suggesting the strengthening of both excitatory and inhibitory synapses during prolonged wakefulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the TMS findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "3a3e8aad-f37d-4c0e-addf-051be0d8dfc9",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C71",
+      "claim": "A combination of four TMS parameters (rMT, MEP latency, SICI, ICF) could efficiently predict subjective sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study reported that a combination of four TMS parameters (rMT, MEP latency, SICI, ICF) could efficiently predict subjective sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "624f2168-0e1d-470f-a908-bf931e054f48",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C72",
+      "claim": "The values of rMT and MEP latency together directly reflect and measure the excitability states of motor cortical region.",
+      "claim_type": "EXPLICIT",
+      "source": "The values of rMT and MEP latency together directly reflect and measure the excitability states of motor cortical region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TMS measurements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "85eb6b14-98c8-48c2-8605-13eb611b9d2b",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C73",
+      "claim": "Enhanced rMT has been reported using similar sleep-deprivation paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced rMT has been reported using similar sleep-deprivation paradigm (Manganotti et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "a062e24f-fd6f-4cd9-9fba-a0fd02c8d9e5",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C74",
+      "claim": "Increases in cortical excitability were reported using local EEG measurements of TMS-evoked responses.",
+      "claim_type": "EXPLICIT",
+      "source": "And increases in cortical excitability were reported using local EEG measurements of TMS-evoked responses (Huber et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "3a692116-a678-47f8-90ed-debabf71610e",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C75",
+      "claim": "SICI and ICF reflect local changes in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the pair-pulse parameters, SICI and ICF, reflect local changes in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TMS measurements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "d64068a9-4bf7-43fe-9f9c-6f2b2c74bc93",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C76",
+      "claim": "SICI is believed to be mediated by GABAAR.",
+      "claim_type": "EXPLICIT",
+      "source": "SICI is believed to be mediated by GABAAR, and ICF is mediated by glutamatergic transmission, potentially through NMDAR (Van den Bos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "d92f4f8b-a4c2-4603-b05e-ebf554f0ff70",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C77",
+      "claim": "ICF is mediated by glutamatergic transmission, potentially through NMDAR.",
+      "claim_type": "EXPLICIT",
+      "source": "SICI is believed to be mediated by GABAAR, and ICF is mediated by glutamatergic transmission, potentially through NMDAR (Van den Bos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "0d0cc8be-5432-4121-af94-50f3cc00c8fc",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C78",
+      "claim": "Both excitatory and inhibitory synapses are strengthening with prolonged wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our study suggested that both excitatory and inhibitory synapses are strengthening with prolonged wakefulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "5fa44f45-a843-44f2-a3de-f3c1f41dcc62",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C79",
+      "claim": "Cortical excitability can be sensitive to many variables including age, attention, and circadian rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies demonstrated that cortical excitability can be sensitive to many variables including age (Gaggioni et al., 2019), attention (Cardone et al., 2021), and circadian rhythm (Chellappa et al., 2016; Ly et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "2d7b7380-d7e7-4e14-b06d-c0f5c459f264",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C80",
+      "claim": "Effects of circadian rhythm are challenging to disambiguate since sleepiness correlates to circadian factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, effects of circadian rhythm are challenging to disambiguate since sleepiness correlates to circadian factors (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation about the challenge in interpreting the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "501f689b-550d-48c0-babd-55ff0d2a26ea",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C81",
+      "claim": "The correlation between TMS measurements and sleepiness remains significant after controlling for the circadian factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thanks to the prolonged durations of our study, we were able to compare timepoints 24 hr apart (Figure 3\u2014figure supplement 2), which were not available to previous studies (Chellappa et al., 2016; Ly et al., 2016). We found that the correlation between TMS measurements and sleepiness remains significant after controlling for the circadian factors; but TMS measurements do not show correlation to circadian timing within each SSS subgroup.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis controlling for circadian effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "befa71f9-5184-47a8-b492-c7f0918b8da4",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C82",
+      "claim": "TMS measurements do not show correlation to circadian timing within each SSS subgroup.",
+      "claim_type": "EXPLICIT",
+      "source": "Thanks to the prolonged durations of our study, we were able to compare timepoints 24 hr apart (Figure 3\u2014figure supplement 2), which were not available to previous studies (Chellappa et al., 2016; Ly et al., 2016). We found that the correlation between TMS measurements and sleepiness remains significant after controlling for the circadian factors; but TMS measurements do not show correlation to circadian timing within each SSS subgroup.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis controlling for circadian effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "ae296c78-8d01-4287-80cb-82ee1b8b9200",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C83",
+      "claim": "The variance in cortical excitability is primarily correlated with sleepiness in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "These data strongly suggest that the variance in cortical excitability is primarily correlated with sleepiness in our dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis controlling for circadian effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "d4e1ed82-6e34-47ef-a251-0d385337f6ee",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C84",
+      "claim": "In other situations with short or no sleep deprivation, it is still likely that circadian factors are correlated with cortical excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in other situations with short or no sleep deprivation, it is still likely that circadian factors are correlated with cortical excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the generalizability of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "beb9cf5b-78c6-49d0-9f33-4c3a437bc359",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C85",
+      "claim": "The finding agrees with the general theme of the synaptic homeostasis theory of sleep: wakefulness is associated with continuous strengthening of the synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding agrees with the general theme of the synaptic homeostasis theory of sleep: wakefulness is associated with continuous strengthening of the synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of existing theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "23247157-54a8-4d86-b2d9-44acb8f5c7b1",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C86",
+      "claim": "The study provided an additional supplement to the synaptic homeostasis theory that the synaptic strengthening does not only happen in excitatory synapses, but also in inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we provided an additional supplement to this theory that the synaptic strengthening does not only happen in excitatory synapses, but also in inhibitory synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "53ad1bac-a165-40ed-8450-5236dc6c319a",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C87",
+      "claim": "The observed strengthening in both types of synapses was possibly independently modulated by sleepiness or is due to the circuit response to changes in one type of the synapse in order to maintain the excitation/inhibition balance.",
+      "claim_type": "EXPLICIT",
+      "source": "Lacking the exact mechanism of these changes, it is possible the observed strengthening in both types of synapses was independently modulated by sleepiness or is due to the circuit response to changes in one type of the synapse in order to maintain the excitation/inhibition balance (E/I balance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism underlying the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "59887a8e-0237-46be-99a4-44b5c9be744c",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C88",
+      "claim": "There is a robust E/I balance during sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in contrast to the original prediction of the theory that sleepiness leads to overt hyperactivity, we showed that there is a robust E/I balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "83245081-13f9-4960-8d4a-ceb25e384a31",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C89",
+      "claim": "The strengthening of synapses while maintaining balance can still have a detrimental effect on the information processing in the circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the strengthening of synapses while maintaining balance can still have a detrimental effect on the information processing in the circuits, as demonstrated by multiple studies simulating these effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "f6f19e53-72e9-4035-894a-8c7a6eee46a7",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C90",
+      "claim": "Deviating from the optimal range of the synaptic strengths will lead to a reduction in the signal-to-noise ratio in individual neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Deviating from the optimal range of the synaptic strengths will lead to a reduction in the signal-to-noise ratio in individual neurons (Rubin et al., 2017), as well as the suboptimal sparseness and noise correlations in the population-wide coding (Zhou and Yu, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "0f1e2f9a-8881-40c2-8de3-0206496c4eef",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C91",
+      "claim": "Deviating from the optimal range of the synaptic strengths will lead to suboptimal sparseness and noise correlations in the population-wide coding.",
+      "claim_type": "EXPLICIT",
+      "source": "Deviating from the optimal range of the synaptic strengths will lead to a reduction in the signal-to-noise ratio in individual neurons (Rubin et al., 2017), as well as the suboptimal sparseness and noise correlations in the population-wide coding (Zhou and Yu, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "6163ca8a-b4fe-4fa7-b2d2-083ecc7a16d4",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C92",
+      "claim": "Sleep may depress synaptic weights and restore the circuits to an optimal state.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep, then, may depress these synaptic weights and restore the circuits to an optimal state (Kuhn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "18b57fc6-99dd-42bb-b4e3-d4dcd4317a16",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C93",
+      "claim": "The finding predicts that general excitability will not be a reliable marker for sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding predicts that general excitability will not be a reliable marker for sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "0bcc002a-ba3a-4e06-bc90-d97f9af74814",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C94",
+      "claim": "If any intervention were to develop to relief sleep drive, prolonged synaptic suppression will not serve a restorative function.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, if any intervention were to develop to relief sleep drive, our finding suggests that prolonged synaptic suppression will not serve a restorative function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "b5a98c50-2707-4514-a057-55a0b48c2771",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C95",
+      "claim": "A linear combination of TMS parameters can predict the gradual extent for the degree of sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we reported that a linear combination of TMS parameters can predict the gradual extent for the degree of sleepiness, while using the averaged EEG data only categorically separated non-sleepy and sleepy states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "7b319b0e-10e0-4c89-b634-88dbfc6fd348",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C96",
+      "claim": "Using the averaged EEG data only categorically separated non-sleepy and sleepy states.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we reported that a linear combination of TMS parameters can predict the gradual extent for the degree of sleepiness, while using the averaged EEG data only categorically separated non-sleepy and sleepy states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "8b7baeb4-1d10-4726-ae83-499424260309",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C97",
+      "claim": "Limiting the TMS model using the same amount of data as EEG still produced a gradient prediction for the degree of sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Although EEG was only recorded on three timepoints, limiting the TMS model using the same amount of data still produced a gradient prediction for the degree of sleepiness (Figure 3), suggesting that there is likely to be some intrinsic different modes of modulation to the sources of EEG and TMS measurements by sleepiness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis comparing TMS and EEG.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "90406bca-fef0-419c-a736-01d6cfb633da",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C98",
+      "claim": "There is likely to be some intrinsic different modes of modulation to the sources of EEG and TMS measurements by sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Although EEG was only recorded on three timepoints, limiting the TMS model using the same amount of data still produced a gradient prediction for the degree of sleepiness (Figure 3), suggesting that there is likely to be some intrinsic different modes of modulation to the sources of EEG and TMS measurements by sleepiness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the comparison of TMS and EEG findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "f3fe3342-a7cb-4f50-9514-e8d00adcd9dc",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C99",
+      "claim": "The binary switch of EEG states may reflect a robust scheme of neural computation up to a high degree of sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "As many frequency bands are empirically and potentially mechanistically linked to neural network function (Ba\u015far et al., 2001; Klimesch, 1999), the binary switch of EEG states may reflect a robust scheme of neural computation up to a high degree of sleepiness, and the change in the EEG state is potentially more predictive to the cognitive function decline related to sleepiness, compared to changes in the TMS measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings and previous research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "b4403753-9eec-416c-a7f7-d96f4439fdaa",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C100",
+      "claim": "The change in the EEG state is potentially more predictive to the cognitive function decline related to sleepiness, compared to changes in the TMS measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "As many frequency bands are empirically and potentially mechanistically linked to neural network function (Ba\u015far et al., 2001; Klimesch, 1999), the binary switch of EEG states may reflect a robust scheme of neural computation up to a high degree of sleepiness, and the change in the EEG state is potentially more predictive to the cognitive function decline related to sleepiness, compared to changes in the TMS measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "fcfb3aed-7537-475e-9724-9e7e97640852",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C101",
+      "claim": "The synaptic changes revealed by TMS measurements may represent a mechanism underlying the EEG state switch.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet the synaptic changes revealed by TMS measurements may represent a mechanism underlying the EEG state switch as the synaptic strengths could impose biophysical boundaries and stable-state landscapes that force the switch in rhythmic activities states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the relationship between TMS and EEG findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "2b6d6f4b-ebd7-4f21-8c6c-dfebcc6dd534",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C102",
+      "claim": "Sleep onset is associated with a strong theta rhythm in the occipital regions and an increase in alpha and beta rhythm in the frontal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a previous EEG and intracranial recording study showed that sleep onset is associated with a strong theta rhythm in the occipital regions and an increase in alpha and beta rhythm in the frontal regions (Marzano et al., 2013), suggesting that sleep deprivation may lead to different changes in rhythmic activities and potentially excitabilities in different brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "3e60ebe4-7c5e-4776-b77f-9bb868f9919d",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C103",
+      "claim": "Sleep deprivation may lead to different changes in rhythmic activities and potentially excitabilities in different brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a previous EEG and intracranial recording study showed that sleep onset is associated with a strong theta rhythm in the occipital regions and an increase in alpha and beta rhythm in the frontal regions (Marzano et al., 2013), suggesting that sleep deprivation may lead to different changes in rhythmic activities and potentially excitabilities in different brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on previous research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "21d95c6c-d4d3-41dc-ab31-a09472bb11a8",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C104",
+      "claim": "One limitation of the current study is the limited datapoints of level 6\u20137 sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our sleep deprivation paradigm exceeded the duration of many previous studies, one limitation of the current study is the limited datapoints of level 6\u20137 sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "d9047b80-d574-4e1e-a7f7-daf1941075f6",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C105",
+      "claim": "The statistical power for very sleepy states is lower.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed robust correlation with SSS levels of 1\u20135, the statistical power for very sleepy states is lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "767226b4-7cfc-4c27-a317-2d6c7b5535d4",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C106",
+      "claim": "The strengthening of both excitatory and inhibitory synaptic connections in the cortex can quantitatively predict the degree of sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our study showed that the strengthening of both excitatory and inhibitory synaptic connections in the cortex can quantitatively predict the degree of sleepiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's main conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "f8a151ab-fa0f-4729-b426-4dab764df39d",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C107",
+      "claim": "This finding indicates a modification of the synaptic homeostasis theory of sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates a modification of the synaptic homeostasis theory of sleep and furthers our understanding of how sleepiness state modulates brain functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the implications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "f4e2acc2-a2a6-4cb6-91fd-10c188233a4e",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C108",
+      "claim": "Thirty-eight healthy participants (21 males, 17 females, age: 22.46 \u00b1 0.29 years, age range: 20\u201327 years) were recruited for the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-eight healthy participants (21 males, 17 females, age: 22.46 \u00b1 0.29 years, age range: 20\u201327 years, Figure 1\u2014figure supplement 1) with no history of sleep disorders (Pittsburgh Sleep Quality Index; Buysse et al., 1989), head trauma, psychiatric conditions, or any other chronic disease were recruited for present study.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the study participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "41436398-f55c-4c2e-9a01-9d0610a93633",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C109",
+      "claim": "The study has been approved by the Ethics Committee of Huashan Hospital (2017-410).",
+      "claim_type": "EXPLICIT",
+      "source": "All participants wrote informed consent before the experiment; the study has been approved by the Ethics Committee of Huashan Hospital (2017-410).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "18cf602b-e93b-4c44-bd70-da56772da55a",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C110",
+      "claim": "The study lasts for 34 hr, during which the subjects received eight times for SSS evaluation and TMS assessments, as well as three times resting-state EEG measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The study lasts for 34 hr, during which the subjects received eight times for SSS evaluation and TMS assessments, as well as three times resting-state EEG measurements (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the study protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "6d1d0d9a-acb2-444e-bcf1-2e6d1bdf0a94",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C111",
+      "claim": "The EEG signal was recorded by EEG system of BrainAmp MR32, BrainProducts, using a 32-channel EEG cap.",
+      "claim_type": "EXPLICIT",
+      "source": "The EEG signal was recorded by EEG system of BrainAmp MR32, BrainProducts, using a 32-channel EEG cap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the EEG recording equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "2785b75a-ae22-458c-b609-0f7d4ef9959f",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C112",
+      "claim": "TMS studied was conducted with OSF\u2013priming TMS (YRD CCY-IA, Yiruide Co., Wuhan, China) connected with a 70 mm figure-of-8 coil.",
+      "claim_type": "EXPLICIT",
+      "source": "TMS studied was conducted with OSF\u2013priming TMS (YRD CCY-IA, Yiruide Co., Wuhan, China) connected with a 70 mm figure-of-8 coil (CCY-I TMS instrument, Yiruide Co.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the TMS equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "d883da99-5519-44de-bc2c-0ed25b96d2f7",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C113",
+      "claim": "The motor hotspot for FDI muscle on the contralateral hemisphere of primary motor cortex (M1) was defined with maximum MEP value.",
+      "claim_type": "EXPLICIT",
+      "source": "The motor hotspot for FDI muscle on the contralateral hemisphere of primary motor cortex (M1) was defined with maximum MEP value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the TMS targeting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "b315e9b3-66e4-43b5-b068-5d6b898f7027",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C114",
+      "claim": "The MT is defined as the lowest density that can be evoked at least 5 MEP, with amplitude more than 50 \u03bcV in 10 times of successive stimulation with the relaxed recording muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "The MT is defined as the lowest density that can be evoked at least 5 MEP, with amplitude more than 50 \u03bcV in 10 times of successive stimulation with the relaxed recording muscle (Rossini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MT measurement procedure with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "8e29c442-cd0e-4d98-97cc-32d075d77f2f",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "claim_id": "C115",
+      "claim": "The intensity of the test stimulation (TS) was determined when the average amplitude reached at 400\u20131000 \u03bcV.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, the intensity of the test stimulation (TS) was determined when the average amplitude reached at 400\u20131000 \u03bcV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the TS determination procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f1270df9-aaeb-4c0a-ac9c-60f3218d7a54",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The 34-hour sleep deprivation protocol successfully induced sleepiness that peaked at 24 hours (SSS 4.5) and then decreased slightly at 28 hours (SSS 3.25), consistent with circadian modulation. EEG measurements confirmed increased theta power and decreased alpha power with sleepiness, with prominent changes in occipital regions. Subjects remained awake throughout the study without falling asleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C36 provide converging evidence from self-report (SSS), EEG spectral analysis, and absence of sleep-onset markers. The findings replicate prior work (C31, C33-C35) and demonstrate adequate experimental control (C36). The circadian interpretation (C32) is reasonable given the 24-hour cycle.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "8455cbd2-5473-4c91-a9a6-e8128afafd09",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Raw TMS measurements showed weak and inconsistent correlations with sleepiness across subjects. Motor threshold (MT) and MEP latency showed mild increases after 21 hours, suggesting reduced corticospinal excitability. Paired-pulse measures (SICI, ICF, LICI) showed strengthening trends but were not statistically significant and exhibited high inter-subject variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 accurately describe the raw TMS data showing weak group-level effects and high variability. The lack of statistical significance for paired-pulse measures (C43) and wide variability (C40, C44) are honestly reported. This motivates the subsequent advanced statistical approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "f7f419f5-cf30-43c5-b12a-6d489899de0b",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Partial least squares (PLS) regression revealed that the first PLS dimension of TMS measurements significantly separated non-sleepy, mildly-sleepy, and sleepy states, explaining ~13% of variance. TMS showed a graded correlation with sleepiness degree, while EEG exhibited a more binary (phasic) switch between sleepy and non-sleepy states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 describe PLS analysis results shown in Figure 3A-B. The separation of sleepiness states in the first dimension (C46-C47) and the contrast between TMS gradation vs. EEG binary switching (C50-C51) are supported by the visualizations. The low variance explained (C48) is acknowledged, supporting the high-noise hypothesis (C49).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "ad59e7de-fe46-4255-9f1f-235fe43cf4ff",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "After controlling for circadian effects by comparing timepoints 24 hours apart, TMS and EEG measurements remained significantly correlated with sleepiness. TMS measurements showed no significant correlation with time-of-day within matched SSS subgroups, indicating that sleepiness rather than circadian timing is the primary driver of cortical excitability variance in this dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 and C62-C63 describe paired analyses controlling for circadian effects (Figure 3\u2014figure supplements 1-2). The persistence of sleepiness correlations after controlling for time-of-day (C81-C82) and lack of correlation with circadian timing within SSS groups (C82) support the conclusion that sleepiness is the primary covariate (C83). The caveat about generalizability (C84) is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "3708a5ee-dde7-41c9-9c45-ff83d0f146f1",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A mixed-effect linear model using four TMS parameters (MT, MEP latency, SICI, ICF) successfully predicted subjective sleepiness in both training (15 subjects) and independent testing (23 subjects) datasets. The model showed high correlation with reported sleepiness and outperformed shuffled controls in five-fold cross-validation, demonstrating a robust and stable pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C61 describe the mixed-effect modeling approach and validation. The backward selection (C55), significant coefficients (C56), training performance (C57), independent validation (C58-C59), and cross-validation results (C60-C61) provide strong evidence for model validity. The use of independent test set and proper cross-validation strengthens the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "328b20f6-fc32-4e6b-93d7-25e484c5198a",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Canonical correlation analysis revealed that the most correlated mode between TMS and EEG measurements is aligned with sleepiness, indicating that sleepiness is the primary covariate linking these two measurement modalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 describe CCA results (Figure 3\u2014figure supplement 3) showing alignment of the primary correlated mode with sleepiness. This provides additional evidence that sleepiness is the common factor driving both TMS and EEG changes, supporting the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "968c39c7-5a8a-4f0c-a049-1d76c1a44c33",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mixed-effect regression showed that TMS parameters can predict graded levels of sleepiness, while averaged EEG data only categorically separated sleepy from non-sleepy states. This difference persisted even when TMS data was limited to match EEG timepoints, suggesting intrinsically different modes of modulation by sleepiness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C95-C98 describe the differential predictive capacity of TMS vs. EEG (Figure 3F). The gradient vs. categorical distinction is supported by the visualizations and the robustness test with matched timepoints (C97). The inference about different modulation modes (C98) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "5705752f-c7bd-4e83-b71e-a88debfef92b",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "All four TMS model coefficients were positive, indicating that sleepiness is associated with increased MT and MEP latency (decreased corticospinal excitability) and enhanced both facilitatory (ICF) and inhibitory (SICI) paired-pulse effects, suggesting strengthening of both excitatory and inhibitory synapses during prolonged wakefulness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 and C24-C25 describe the key physiological interpretation of the model coefficients. The positive coefficients (C67) support decreased overall excitability (C68, C25) but enhanced paired-pulse effects in both directions (C69, C24). The interpretation of synaptic strengthening (C70) is reasonable given established TMS mechanisms (C76-C77).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "354a3324-d424-4aef-bd00-311bbb27dc68",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study found that both excitatory and inhibitory synaptic connections strengthen with prolonged wakefulness and sleepiness, providing a modification to the synaptic homeostasis theory which originally predicted only excitatory strengthening. This pattern of strengthening in both synapse types can quantitatively predict the degree of sleepiness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C27, C78, C86, and C106 represent the study's main conclusion. The evidence from paired-pulse TMS showing enhancement of both ICF (excitatory) and SICI (inhibitory) effects (C69, C24) supports this conclusion. The interpretation as a modification of synaptic homeostasis theory (C86) is justified by the data, though the mechanism remains speculative (C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "a31c772a-baf7-4eaa-bf91-e2a6ad2c17c7",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The findings support the general theme of synaptic homeostasis theory (wakefulness strengthens synapses) but reveal a robust excitation/inhibition (E/I) balance rather than overt hyperactivity. Despite maintaining balance, strengthened synapses can still impair information processing by reducing signal-to-noise ratios and affecting population coding, which sleep may restore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85 and C88-C92 provide theoretical interpretation supported by citations to computational studies (C89-C91). The E/I balance finding (C88) contrasts with the original theory's hyperactivity prediction (C3, C11) but is well-supported by the data showing both excitatory and inhibitory strengthening. The functional consequences (C89-C91) are appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "531f728c-a5b1-4117-8cdc-3cea7e6c245d",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study provides supportive evidence for the synaptic homeostasis theory in human sleep and indicates a modification of the theory, furthering understanding of how sleepiness modulates brain functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C107 represent the study's overall contribution. The evidence supports the general framework of synaptic homeostasis (C85) while proposing an important modification regarding E/I balance (C86, C88). The conclusion is justified by the convergent TMS, EEG, and modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "c279347a-78ed-4063-b197-6aa879cf6c8a",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The findings predict that general excitability will not be a reliable marker for sleepiness, and that prolonged synaptic suppression interventions will not serve a restorative function for sleep drive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C94 are predictions/implications rather than tested results. While C93 is consistent with the finding of maintained E/I balance, these remain untested hypotheses requiring future experimental validation. The predictions are logical but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "d557936f-ab05-4dc2-a14c-69ba7c0dea99",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The binary EEG state switch may reflect a robust neural computation scheme up to high sleepiness levels and may be more predictive of cognitive decline than TMS changes. TMS-revealed synaptic changes may represent a mechanism underlying the EEG state switch through biophysical constraints on rhythmic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C101 are speculative interpretations about the relationship between TMS and EEG findings. While the differential patterns are observed (C50-C51, C66), the mechanistic links (C101) and cognitive predictions (C100) are not directly tested. These remain hypotheses for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "b5f4b88a-536a-482f-9512-d57b899b9ddd",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A limitation of the study is the limited datapoints at very high sleepiness levels (SSS 6-7), resulting in lower statistical power for these extreme sleepy states despite robust correlations for SSS levels 1-5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C105 honestly acknowledge a limitation in the study design. The distribution of SSS scores (Figure 1C) shows fewer extreme values, which appropriately limits the strength of conclusions about very sleepy states. This is a fair assessment of the data's limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    },
+    {
+      "id": "69d0328a-afa7-46ef-9198-1b3e7ef7fe0a",
+      "content_id": "3e563d5c-3305-47f7-be32-c9c16c10a218",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study collected TMS measurements from 38 subjects over 34 hours and used a combination of partial least squares regression and mixed-effect models to identify a pattern of cortical excitability changes that quantitatively predicts sleepiness. Four TMS parameters (rMT, MEP latency, SICI, ICF) efficiently predict subjective sleepiness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C23, and C71 accurately summarize the study design and main methodological approach. The sample size (N=38), duration (34 hours), and analytical methods (PLS + mixed-effects) are clearly described and appropriately applied. The identification of four key parameters is supported by the model selection process (C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:45.399096Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bf831d83-7e9e-491b-aaa6-29f8b60d43b1",
+      "result_id": "f1270df9-aaeb-4c0a-ac9c-60f3218d7a54"
+    },
+    {
+      "claim_id": "09b522d6-e127-4150-9d40-1f571eaa1b49",
+      "result_id": "f1270df9-aaeb-4c0a-ac9c-60f3218d7a54"
+    },
+    {
+      "claim_id": "6a1e492e-ca74-49c1-8a40-06fff150a450",
+      "result_id": "f1270df9-aaeb-4c0a-ac9c-60f3218d7a54"
+    },
+    {
+      "claim_id": "e53cb3fe-307d-4d60-ba42-286c8b5196a8",
+      "result_id": "f1270df9-aaeb-4c0a-ac9c-60f3218d7a54"
+    },
+    {
+      "claim_id": "5d9d37ec-d5d9-462d-9390-1aaff577e85c",
+      "result_id": "f1270df9-aaeb-4c0a-ac9c-60f3218d7a54"
+    },
+    {
+      "claim_id": "d7184521-e381-42a4-9d5b-dddc46c7687c",
+      "result_id": "f1270df9-aaeb-4c0a-ac9c-60f3218d7a54"
+    },
+    {
+      "claim_id": "92905861-e292-47a6-bb03-9fd8227a0ddd",
+      "result_id": "f1270df9-aaeb-4c0a-ac9c-60f3218d7a54"
+    },
+    {
+      "claim_id": "7912af59-ed25-497a-89d8-0a20f74d63ad",
+      "result_id": "f1270df9-aaeb-4c0a-ac9c-60f3218d7a54"
+    },
+    {
+      "claim_id": "0ed22244-2f3e-4b0c-9ee9-3175744940c0",
+      "result_id": "f1270df9-aaeb-4c0a-ac9c-60f3218d7a54"
+    },
+    {
+      "claim_id": "45d83d1b-64d3-4274-a0d3-1cd6cd34c611",
+      "result_id": "8455cbd2-5473-4c91-a9a6-e8128afafd09"
+    },
+    {
+      "claim_id": "fae740cd-8b67-4821-adfc-4e68ee979d3e",
+      "result_id": "8455cbd2-5473-4c91-a9a6-e8128afafd09"
+    },
+    {
+      "claim_id": "1bf2de58-a5f7-4820-801f-8e89cb7f59ca",
+      "result_id": "8455cbd2-5473-4c91-a9a6-e8128afafd09"
+    },
+    {
+      "claim_id": "902aede1-5f0d-469c-b400-7331e8e74a91",
+      "result_id": "8455cbd2-5473-4c91-a9a6-e8128afafd09"
+    },
+    {
+      "claim_id": "552a00eb-5035-42e4-a016-4adef071d616",
+      "result_id": "8455cbd2-5473-4c91-a9a6-e8128afafd09"
+    },
+    {
+      "claim_id": "ba6f8a9f-4a0c-4e23-bfbf-f049164bc432",
+      "result_id": "8455cbd2-5473-4c91-a9a6-e8128afafd09"
+    },
+    {
+      "claim_id": "4dc075b2-46f1-4117-bde1-3c171ab85174",
+      "result_id": "8455cbd2-5473-4c91-a9a6-e8128afafd09"
+    },
+    {
+      "claim_id": "ae4f55b2-3c93-4e14-9a3c-51b91838cbe6",
+      "result_id": "8455cbd2-5473-4c91-a9a6-e8128afafd09"
+    },
+    {
+      "claim_id": "447f06a6-325f-4840-a01e-65441d088c53",
+      "result_id": "f7f419f5-cf30-43c5-b12a-6d489899de0b"
+    },
+    {
+      "claim_id": "e5a49bcd-8326-4e90-a00b-e10c99be9719",
+      "result_id": "f7f419f5-cf30-43c5-b12a-6d489899de0b"
+    },
+    {
+      "claim_id": "bf6390f1-e8ee-4ff6-9597-3a780b0e34ae",
+      "result_id": "f7f419f5-cf30-43c5-b12a-6d489899de0b"
+    },
+    {
+      "claim_id": "bdabddd8-22d4-48cf-a8c3-4b0476417565",
+      "result_id": "f7f419f5-cf30-43c5-b12a-6d489899de0b"
+    },
+    {
+      "claim_id": "d3d57b34-c251-4903-bced-9baa94aeea8f",
+      "result_id": "f7f419f5-cf30-43c5-b12a-6d489899de0b"
+    },
+    {
+      "claim_id": "d3b68257-d98a-4c99-8744-9ef4a31e6b6d",
+      "result_id": "f7f419f5-cf30-43c5-b12a-6d489899de0b"
+    },
+    {
+      "claim_id": "4d916ab7-9df3-4a92-99c4-446b4e1b9101",
+      "result_id": "f7f419f5-cf30-43c5-b12a-6d489899de0b"
+    },
+    {
+      "claim_id": "be90c51f-d36f-48b3-9d50-84bb4679f67b",
+      "result_id": "ad59e7de-fe46-4255-9f1f-235fe43cf4ff"
+    },
+    {
+      "claim_id": "99a3f875-961f-4c9b-9fe4-5cc414fd9e28",
+      "result_id": "ad59e7de-fe46-4255-9f1f-235fe43cf4ff"
+    },
+    {
+      "claim_id": "b167f228-f0e5-4f6b-817f-30f9c25234b3",
+      "result_id": "ad59e7de-fe46-4255-9f1f-235fe43cf4ff"
+    },
+    {
+      "claim_id": "672ce3e3-5fcf-4a58-96de-644dff9d7acc",
+      "result_id": "ad59e7de-fe46-4255-9f1f-235fe43cf4ff"
+    },
+    {
+      "claim_id": "2d7b7380-d7e7-4e14-b06d-c0f5c459f264",
+      "result_id": "ad59e7de-fe46-4255-9f1f-235fe43cf4ff"
+    },
+    {
+      "claim_id": "501f689b-550d-48c0-babd-55ff0d2a26ea",
+      "result_id": "ad59e7de-fe46-4255-9f1f-235fe43cf4ff"
+    },
+    {
+      "claim_id": "befa71f9-5184-47a8-b492-c7f0918b8da4",
+      "result_id": "ad59e7de-fe46-4255-9f1f-235fe43cf4ff"
+    },
+    {
+      "claim_id": "ae296c78-8d01-4287-80cb-82ee1b8b9200",
+      "result_id": "ad59e7de-fe46-4255-9f1f-235fe43cf4ff"
+    },
+    {
+      "claim_id": "19f68875-503a-40bc-b3e3-329378507687",
+      "result_id": "3708a5ee-dde7-41c9-9c45-ff83d0f146f1"
+    },
+    {
+      "claim_id": "892bda12-90ce-4bf2-85e0-7e858ba6c8b6",
+      "result_id": "3708a5ee-dde7-41c9-9c45-ff83d0f146f1"
+    },
+    {
+      "claim_id": "72762a74-cfa9-4924-ae2a-4bf6effe57e8",
+      "result_id": "3708a5ee-dde7-41c9-9c45-ff83d0f146f1"
+    },
+    {
+      "claim_id": "1e2667f3-3399-4688-926c-b676696d2e81",
+      "result_id": "3708a5ee-dde7-41c9-9c45-ff83d0f146f1"
+    },
+    {
+      "claim_id": "428017d0-0156-4439-b79a-fe7b72df017f",
+      "result_id": "3708a5ee-dde7-41c9-9c45-ff83d0f146f1"
+    },
+    {
+      "claim_id": "f205df54-de82-438b-a82a-ddc6bb413dde",
+      "result_id": "3708a5ee-dde7-41c9-9c45-ff83d0f146f1"
+    },
+    {
+      "claim_id": "793764a1-6671-457f-82c3-e750f7f22b6f",
+      "result_id": "3708a5ee-dde7-41c9-9c45-ff83d0f146f1"
+    },
+    {
+      "claim_id": "73e040b6-893e-417d-a425-a9ed1796c924",
+      "result_id": "3708a5ee-dde7-41c9-9c45-ff83d0f146f1"
+    },
+    {
+      "claim_id": "785e9d43-99fb-499f-82af-a6dd8f2f0ef4",
+      "result_id": "328b20f6-fc32-4e6b-93d7-25e484c5198a"
+    },
+    {
+      "claim_id": "0cd12d16-7c77-4901-9d29-b4c1b5f4ff5e",
+      "result_id": "328b20f6-fc32-4e6b-93d7-25e484c5198a"
+    },
+    {
+      "claim_id": "fcb9de13-d455-4896-8893-ed4ea3f75330",
+      "result_id": "968c39c7-5a8a-4f0c-a049-1d76c1a44c33"
+    },
+    {
+      "claim_id": "b5a98c50-2707-4514-a057-55a0b48c2771",
+      "result_id": "968c39c7-5a8a-4f0c-a049-1d76c1a44c33"
+    },
+    {
+      "claim_id": "7b319b0e-10e0-4c89-b634-88dbfc6fd348",
+      "result_id": "968c39c7-5a8a-4f0c-a049-1d76c1a44c33"
+    },
+    {
+      "claim_id": "8b7baeb4-1d10-4726-ae83-499424260309",
+      "result_id": "968c39c7-5a8a-4f0c-a049-1d76c1a44c33"
+    },
+    {
+      "claim_id": "90406bca-fef0-419c-a736-01d6cfb633da",
+      "result_id": "968c39c7-5a8a-4f0c-a049-1d76c1a44c33"
+    },
+    {
+      "claim_id": "0d590220-7f29-45f4-be37-4d0cbce707e4",
+      "result_id": "5705752f-c7bd-4e83-b71e-a88debfef92b"
+    },
+    {
+      "claim_id": "8a3a7945-3071-48fa-be57-f3f05ef9f241",
+      "result_id": "5705752f-c7bd-4e83-b71e-a88debfef92b"
+    },
+    {
+      "claim_id": "1f548746-14d2-4c5a-a112-9687d4cc1bc4",
+      "result_id": "5705752f-c7bd-4e83-b71e-a88debfef92b"
+    },
+    {
+      "claim_id": "003a573f-160f-46f0-9d09-5093494026eb",
+      "result_id": "5705752f-c7bd-4e83-b71e-a88debfef92b"
+    },
+    {
+      "claim_id": "aa2efdfc-7a5d-47b6-98a7-522bdcaeee01",
+      "result_id": "5705752f-c7bd-4e83-b71e-a88debfef92b"
+    },
+    {
+      "claim_id": "81101cd7-8e58-4cdb-94b0-c694b3627227",
+      "result_id": "5705752f-c7bd-4e83-b71e-a88debfef92b"
+    },
+    {
+      "claim_id": "c30a7ed9-da39-4657-acb0-04d5e0af80d8",
+      "result_id": "354a3324-d424-4aef-bd00-311bbb27dc68"
+    },
+    {
+      "claim_id": "eb4a8fee-4a3f-48cc-b9d7-f3faebc839cc",
+      "result_id": "354a3324-d424-4aef-bd00-311bbb27dc68"
+    },
+    {
+      "claim_id": "0d0cc8be-5432-4121-af94-50f3cc00c8fc",
+      "result_id": "354a3324-d424-4aef-bd00-311bbb27dc68"
+    },
+    {
+      "claim_id": "23247157-54a8-4d86-b2d9-44acb8f5c7b1",
+      "result_id": "354a3324-d424-4aef-bd00-311bbb27dc68"
+    },
+    {
+      "claim_id": "767226b4-7cfc-4c27-a317-2d6c7b5535d4",
+      "result_id": "354a3324-d424-4aef-bd00-311bbb27dc68"
+    },
+    {
+      "claim_id": "beb9cf5b-78c6-49d0-9f33-4c3a437bc359",
+      "result_id": "a31c772a-baf7-4eaa-bf91-e2a6ad2c17c7"
+    },
+    {
+      "claim_id": "59887a8e-0237-46be-99a4-44b5c9be744c",
+      "result_id": "a31c772a-baf7-4eaa-bf91-e2a6ad2c17c7"
+    },
+    {
+      "claim_id": "83245081-13f9-4960-8d4a-ceb25e384a31",
+      "result_id": "a31c772a-baf7-4eaa-bf91-e2a6ad2c17c7"
+    },
+    {
+      "claim_id": "f6f19e53-72e9-4035-894a-8c7a6eee46a7",
+      "result_id": "a31c772a-baf7-4eaa-bf91-e2a6ad2c17c7"
+    },
+    {
+      "claim_id": "0f1e2f9a-8881-40c2-8de3-0206496c4eef",
+      "result_id": "a31c772a-baf7-4eaa-bf91-e2a6ad2c17c7"
+    },
+    {
+      "claim_id": "6163ca8a-b4fe-4fa7-b2d2-083ecc7a16d4",
+      "result_id": "a31c772a-baf7-4eaa-bf91-e2a6ad2c17c7"
+    },
+    {
+      "claim_id": "2dd93bea-7b55-46d3-997b-862d539794ac",
+      "result_id": "531f728c-a5b1-4117-8cdc-3cea7e6c245d"
+    },
+    {
+      "claim_id": "f8a151ab-fa0f-4729-b426-4dab764df39d",
+      "result_id": "531f728c-a5b1-4117-8cdc-3cea7e6c245d"
+    },
+    {
+      "claim_id": "18b57fc6-99dd-42bb-b4e3-d4dcd4317a16",
+      "result_id": "c279347a-78ed-4063-b197-6aa879cf6c8a"
+    },
+    {
+      "claim_id": "0bcc002a-ba3a-4e06-bc90-d97f9af74814",
+      "result_id": "c279347a-78ed-4063-b197-6aa879cf6c8a"
+    },
+    {
+      "claim_id": "f3fe3342-a7cb-4f50-9514-e8d00adcd9dc",
+      "result_id": "d557936f-ab05-4dc2-a14c-69ba7c0dea99"
+    },
+    {
+      "claim_id": "b4403753-9eec-416c-a7f7-d96f4439fdaa",
+      "result_id": "d557936f-ab05-4dc2-a14c-69ba7c0dea99"
+    },
+    {
+      "claim_id": "fcfb3aed-7537-475e-9724-9e7e97640852",
+      "result_id": "d557936f-ab05-4dc2-a14c-69ba7c0dea99"
+    },
+    {
+      "claim_id": "21d95c6c-d4d3-41dc-ab31-a09472bb11a8",
+      "result_id": "b5f4b88a-536a-482f-9512-d57b899b9ddd"
+    },
+    {
+      "claim_id": "d9047b80-d574-4e1e-a7f7-daf1941075f6",
+      "result_id": "b5f4b88a-536a-482f-9512-d57b899b9ddd"
+    },
+    {
+      "claim_id": "8dfdc9ce-2a73-4190-9791-ba5798ff0ef6",
+      "result_id": "69d0328a-afa7-46ef-9198-1b3e7ef7fe0a"
+    },
+    {
+      "claim_id": "f5d23630-8a6f-4b1e-acda-eb1c6f5f7b63",
+      "result_id": "69d0328a-afa7-46ef-9198-1b3e7ef7fe0a"
+    },
+    {
+      "claim_id": "31fc9d06-80e5-4e1f-9de1-61cfd9d12d9b",
+      "result_id": "69d0328a-afa7-46ef-9198-1b3e7ef7fe0a"
+    },
+    {
+      "claim_id": "3a3e8aad-f37d-4c0e-addf-051be0d8dfc9",
+      "result_id": "69d0328a-afa7-46ef-9198-1b3e7ef7fe0a"
+    }
+  ],
+  "comparisons": []
+}

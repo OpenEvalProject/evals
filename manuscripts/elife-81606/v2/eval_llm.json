@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C49",
+      "C50",
+      "C53",
+      "C54"
+    ],
+    "result": "NINL is unique among dynein/dynactin/activating adaptor genes in showing signatures of recurrent positive selection in primates, with 24 of 30 positively selected codons located in the carboxy-terminal cargo-binding region rather than the dynein/dynactin-binding region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-5, C50, C53-54 are well-supported by evolutionary analyses using multiple methods (PAML, FEL, MEME) across 13-20 primate species. The data clearly show NINL has elevated dN/dS (0.52) and significant p-value (0.003) compared to other dynein components (dN/dS <0.1), with domain-specific analysis confirming positive selection is concentrated in the C-terminus (Figure 1B-D, Supplementary files 1-3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C59",
+      "C62",
+      "C86"
+    ],
+    "result": "NINL knockout cells show significantly attenuated antiviral response to interferon alpha pretreatment across multiple RNA viruses (VSV, SinV, CVB3), with >100-fold IFN effect in WT cells reduced to <10-fold in NINL KO cells, while the paralog NIN KO cells maintain normal IFN response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6-8, C59, C62, C86 are strongly supported by viral replication assays in multiple cell types (A549, U-2 OS) with multiple independent NINL KO clones and appropriate controls (NIN KO). The data consistently show reduced IFN antiviral efficacy specific to NINL loss across three different viral families (Figure 2B-D, Figure 2\u2014figure supplement 2). Statistical significance is demonstrated with appropriate replication (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C65",
+      "C66",
+      "C87",
+      "C96"
+    ],
+    "result": "NINL KO cells show robust STAT1/STAT2 phosphorylation after IFN treatment but dramatically reduced expression of interferon-stimulated genes (ISGs) at both protein and transcript levels, with 66 of 88 ISGs significantly downregulated compared to WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-12, C65-66, C87, C96 are well-supported by western blots showing normal pSTAT1/pSTAT2 but reduced ISG proteins (MX1, IFIT3, OAS1, ISG15) in NINL KO cells (Figure 3A, Figure 3\u2014figure supplement 1), and RNAseq data showing widespread ISG transcript reduction (Figure 3B, Figure 3\u2014figure supplement 3-4, Supplementary file 4). The phenotype is consistent across multiple cell lines and CRISPR clones, ruling out off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "NINL KO cells fail to restrict replication of the IFN-sensitive vaccinia virus J3 mutant, which is sensitized to IFIT family ISGs that are among the ISGs reduced in NINL KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-15 are supported by VacV replication assays showing that the J3 mutant (sensitive to IFIT ISGs) replicates equivalently to WT VacV in NINL KO cells regardless of IFN treatment, while WT and NIN KO cells show normal J3 restriction (Figure 3C-D, Figure 3\u2014figure supplement 5). This functional validation is consistent with RNAseq data showing IFIT1/2/3 reduction in NINL KO cells (Supplementary file 4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C70",
+      "C88"
+    ],
+    "result": "NINL KO cells show significantly reduced nuclear localization of phosphorylated STAT1 after IFN treatment, with diffuse cytoplasmic staining instead of nuclear accumulation, implicating NINL in pSTAT1 nuclear trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-19, C70, C88 are supported by immunofluorescence microscopy showing normal pSTAT1 nuclear localization in WT and NIN KO cells but cytoplasmic retention in NINL KO cells after IFN treatment (Figure 4A-B, Figure 4\u2014figure supplement 1). Quantification of nuclear:cytoplasmic ratios shows statistically significant differences (p<0.0001, n=30 cells per condition). However, the mechanistic link is inferential\u2014no direct evidence that NINL transports pSTAT1 as cargo is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C30",
+      "C74"
+    ],
+    "result": "CVB3 3Cpro cleaves human NINL at three sites (Q231, Q827, Q1032) that show amino acid variation across primates, with cleavage confirmed by predictive modeling, transfection assays, and infection experiments. Point mutations at these sites (Q\u2192R) prevent cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-23, C25, C30, C74 are well-supported by predictive modeling (Tsu et al., 2021a), cleavage assays showing products at expected sizes (Figure 5C-E), and mutational analysis where Q\u2192R substitutions (individually or in combination) prevent cleavage (Figure 5D). The triple mutant eliminates all cleavage products. Infection-based assays recapitulate transfection results, confirming physiological relevance. Primate sequence alignments show variation at cleavage sites (Figure 5B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C78",
+      "C89",
+      "C103",
+      "C105",
+      "C107"
+    ],
+    "result": "Diverse viral proteases from picornaviruses and coronaviruses cleave NINL with variable efficiency and site preference, with all tested proteases showing some cleavage activity. NINL isoform 2 (lacking exon 17) shows minimal cleavage compared to isoform 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C26-28, C31, C78, C89, C103, C105, C107 are supported by cleavage assays with a panel of 3Cpros from diverse picornaviruses (CVB3, EV71, PV1, EV68, HRVA, EMCV, Parecho, HepA, Sali) and 3CLpros from coronaviruses (SARS-CoV-2, SARS-CoV, NL63-CoV) showing variable cleavage patterns (Figure 5\u2014figure supplement 1A-B). EMCV shows minimal cleavage, while CVB3 shows strong cleavage. Isoform 2 (lacking exon 17 with sites Q827/Q1032) shows minimal cleavage (Figure 5D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C104",
+      "C106",
+      "C108",
+      "C110"
+    ],
+    "result": "The host- and virus-specific cleavage of NINL at sites that vary among primates suggests that viral proteases are an evolutionary pressure driving NINL's rapid evolution, similar to other host-virus arms races.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29, C104, C106, C108, C110 are inferential interpretations of the data rather than direct experimental findings. While the data showing primate sequence variation at cleavage sites (C21) and variable cleavage by different viral proteases (C26, C105) are solid, the causal link to evolutionary pressure is speculative. The comparison to other arms races (MAVS, TRIF, NEMO) is supported by citation (Tsu et al., 2021b) but the specific evolutionary dynamics of NINL remain to be directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C81",
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "In a heterologous peroxisome trafficking assay, rapalog-induced recruitment of NINL to peroxisomes causes their redistribution to the centrosome. Co-expression of CVB3 3Cpro prevents this redistribution, but the uncleavable NINL triple mutant maintains trafficking function in the presence of 3Cpro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-36, C81-82, C84-85 are supported by peroxisome trafficking assays in U-2 OS cells using NINL-FRB and PEX3-FKBP constructs (Figure 6C-E, Figure 6\u2014figure supplement 1). Quantification shows significant centrosomal accumulation with rapalog treatment (p<0.0001, n~80 cells), loss of accumulation with CVB3 3Cpro co-expression, and rescue with the triple mutant. The approach is well-established (Kapitein et al., 2010; Passmore et al., 2021) and provides functional validation of cleavage effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C77",
+      "C90",
+      "C109"
+    ],
+    "result": "Live CVB3 infection disrupts NINL-mediated peroxisome trafficking to the centrosome in cells expressing wild-type NINL but not in cells expressing the uncleavable NINL triple mutant, demonstrating that viral protease cleavage during infection functionally disrupts NINL's cargo transport role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-38, C77, C90, C109 are supported by peroxisome trafficking assays during CVB3 infection showing significant reduction in centrosomal peroxisome accumulation with WT NINL but not with the triple mutant (Figure 7A-B, Figure 7\u2014figure supplement 1). This demonstrates that infection-mediated cleavage recapitulates transfection results and has functional consequences for NINL's transport activity. Statistical significance is shown (p<0.0001, n~80 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "This study demonstrates that NINL is a rapidly evolving component of the dynein transport machinery that functions as a barrier to viral replication, and that an evolution-guided approach can identify new host-virus interactions and components of antiviral immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-92, C111-114 represent the overarching conclusions of the study. These are well-supported by the convergence of evolutionary data (positive selection in NINL), functional data (antiviral role in IFN response), and antagonism data (viral protease cleavage and functional disruption). The study successfully uses evolutionary signatures to discover a new antiviral function, validating the evolution-guided approach. However, the claim that intracellular transport is an 'important battleground' (C114) is somewhat speculative based on a single example.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C100",
+      "C101"
+    ],
+    "result": "NINL KO cells show transcriptional changes beyond ISG expression, suggesting NINL plays broader regulatory roles in the cell beyond the IFN response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-68, C100-101 are supported by RNAseq data showing differential expression of non-ISG genes in NINL KO cells (Figure 3\u2014figure supplement 4, Supplementary file 4). However, the interpretation that NINL has 'regulatory roles' is somewhat speculative\u2014these changes could be indirect consequences of NINL loss rather than direct regulatory functions. The overall lower ISG expression pattern is clear and supports a distinct defect in antiviral response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C79",
+      "C80",
+      "C95",
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "While NINL is known as a centrosome-associated protein and may traffic endo/lysosomal membranes, its specific cargo in the context of interferon response remains unidentified, and whether NINL's interaction with dynein/dynactin is required for its IFN function remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-33, C79-80, C95, C98-99, C102 accurately describe the current state of knowledge and limitations. These are honest assessments of what is known (centrosome association, potential endo/lysosomal trafficking) versus unknown (specific IFN-related cargo, requirement for dynein/dynactin interaction). The authors appropriately acknowledge these gaps and suggest directions for future research. This represents good scientific practice in distinguishing demonstrated findings from remaining questions.",
+    "result_type": "MINOR"
+  }
+]

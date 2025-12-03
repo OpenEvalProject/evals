@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Replacement of DBP1 with a kanMX6 cassette causes reduced MRP51 expression through production of a 5' extended transcript containing translated uORFs, resulting in decreased Mrp51 protein levels despite increased mRNA abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, and C9 collectively demonstrate that kanMX6 insertion at DBP1 leads to MRP51 mis-regulation through a LUTI mechanism. The data show 8.4-fold reduced translation despite 1.8-fold increased mRNA (C7), presence of 3 translated uORFs in the extended transcript (C8), and reduced Mrp51 protein levels by western blot (C9), providing converging evidence for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The MRP51 mis-regulation phenotype is reproducible across different cassettes and strain backgrounds, as demonstrated by similar effects with hphMX4 insertion in S288C background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 show that hphMX4 cassette insertion causes similar MRP51 mis-regulation (4.4-fold reduced translation, extended transcript with uORFs) in an independent study using a different strain background and cassette type, confirming the generality of the phenomenon beyond the initial observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "All observed phenotypes in dbp1\u0394::kanMX6 cells result from MRP51 mis-regulation rather than loss of Dbp1 function, as demonstrated by rescue experiments showing that exogenous Mrp51, but not Dbp1, restores wild-type phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C22 provide strong complementation evidence that phenotypes are due to MRP51 mis-regulation. Exogenous Mrp51 rescues all respiratory growth defects (C19), sporulation defects (C20), and polysome profiles (C21), while exogenous Dbp1 at wild-type levels (C22) fails to rescue (C18), definitively establishing causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C51"
+    ],
+    "result": "dbp1\u0394::kanMX6 cells exhibit reduced global translation rates and accumulation of mitochondrial large ribosomal subunits, consistent with mitochondrial dysfunction due to reduced Mrp51 (a mitochondrial small subunit protein).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 and C51 demonstrate systemic effects of MRP51 mis-regulation through polysome profiling showing reduced translation (24% decrease by amino acid incorporation, C51), and mass spectrometry showing enrichment of all quantified mt-LSU proteins (C14-C15), consistent with the expected consequences of reduced mt-SSU component Mrp51.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C23"
+    ],
+    "result": "Cassette insertion at DBP1 causes respiratory growth defects that are general to multiple cassette types (kanMX6, natMX6, TRP1), demonstrating the phenomenon is not specific to a particular cassette sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, and C23 show that respiratory growth defects occur with multiple different cassettes (kanMX6, natMX6, TRP1) at the DBP1 locus, with growth curves demonstrating similar phenotypes across cassette types. This establishes that the off-target effect is a general property of cassette insertion rather than a cassette-specific artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C30"
+    ],
+    "result": "Bidirectional promoter activity from cassettes drives divergent transcripts that cause MRP51 repression, as demonstrated by orientation-dependent effects where reversed cassette orientation prevents the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, and C30 establish the mechanism through orientation experiments. Reversed kanMX6 cassette insertion prevents respiratory growth defects (C27), and all observed divergent transcripts originate from the 5' end of cassettes (C30), supporting the model that bidirectional promoter activity drives the off-target effect (C3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C24",
+      "C25",
+      "C26",
+      "C28"
+    ],
+    "result": "Insertion of transcription terminator sequences flanking the cassette promoter prevents off-target MRP51 mis-regulation and restores wild-type phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C24-C26, and C28 demonstrate that terminator-flanked cassettes (kanMX6-ins) prevent off-target effects. Growth rates are restored to wild-type (C24), Mrp51 protein levels are normal (C25), MRP51 transcript structure is wild-type by 5' RACE (C26), and the effect is orientation-independent (C28), providing strong evidence for the solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C32",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Divergent transcript production from cassette insertion is ubiquitous, occurring at 100% of loci in rrp6\u0394 backgrounds, but stable divergent transcripts are detected at only ~30% of loci in wild-type cells due to nuclear exosome-mediated degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C29, C32, C58-C60 establish the ubiquity of divergent transcription. Analysis shows stable divergent transcripts at 6/20 (~30%) loci in wild-type (C29, C58) but 7/7 (100%) in rrp6\u0394 backgrounds (C32, C59), demonstrating that divergent transcription is universal (C60) but often masked by RNA decay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C61",
+      "C62"
+    ],
+    "result": "Local sequence features, particularly NNS-mediated transcription termination and nuclear exosome degradation, naturally prevent off-target effects at many loci by limiting divergent transcript stability and reach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31, C61-C62 explain why only some loci show off-target effects. Divergent transcripts are absent or less abundant in RRP6 controls (C31), nuclear exosome is the major contributor to masking (C61), and the NNS pathway terminates and degrades most divergent transcripts (C62), establishing the protective mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Use of minimal promoter regions in cassettes removes natural termination signals that normally limit divergent transcription, as demonstrated by experiments showing that longer promoter regions with endogenous termination sites or insertion of NNS termination sequences prevent off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C63-C67 establish that minimal promoters lack protective features. S. cerevisiae pTEF1 naturally produces terminated divergent transcript CUT910 (C63-C64), but minimal short-pTEF1 causes stronger defects than long-pTEF1 with termination sites (C33-C34), and NNS termination sequences are sufficient to prevent effects (C35-C36), supporting the minimal promoter hypothesis (C65-C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The neighboring gene effect (NGE) identified in yeast deletion collection studies has been estimated to affect 10-20% of loci, but most cases remained mechanistically unexplained prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 and C55-C57 establish the context of prior NGE observations. Previous studies identified the phenomenon (C44), explained some cases by regulatory overlap (C45), but left most unexplained (C46). Estimates suggest 10-20% of loci affected (C55), with genomic proximity being a significant factor (C56), but all prior examples focused only on kanMX (C57).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Natural LUTI-based regulation is a conserved eukaryotic mechanism involving bidirectional promoters, transcriptional interference, and uORF-mediated translational repression that temporally controls gene expression during meiosis and stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 establish the biological context for understanding the cassette-induced effects. Bidirectional promoters are universal (C37), transcription interference is widespread (C38), LUTI regulation involves both transcriptional and translational repression (C39-C41), occurs naturally in yeast (C42), and is conserved across eukaryotes (C43). These are well-established facts from cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Cassette-driven transcription interference is mechanistically distinct from natural LUTI-based regulation in that it does not require head-to-head orientation, continuous transcripts, or repressive uORFs, and can act over large distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 distinguish cassette-driven effects from natural LUTI regulation. Natural LUTI requires specific features (C70), while cassette-driven interference is less constrained (C71). Examples of natural transcription interference (C72) demonstrate it can act over large distances (C73), supporting the model that cassette effects can occur through transcription interference alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cassette-induced off-target effects are difficult to predict from sequence alone due to multiple contributing factors including transcript stability, condition-specific expression, and local sequence context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 establish the complexity of predicting off-target effects. Detection is difficult (C74), absence of stable transcripts is not diagnostic (C75), effects can be condition-specific (C76-C77), and prediction is currently not possible (C78). These conclusions are well-supported by the experimental observations showing variable effects across loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Even markerless genome editing approaches can cause off-target effects, as demonstrated by translation of novel ORFs in CRISPR/Cas9-based DBP1 deletion, emphasizing the need for complementation controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 extend the findings beyond cassette-mediated effects. Complementation experiments identified the unexpected regulation (C79), markerless deletions can also cause off-target effects (C80), as shown by novel ORF translation in dbp1\u0394 (C81-C82), demonstrating that even precise genome engineering requires careful validation (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C54"
+    ],
+    "result": "Selection-mediated genome editing using PCR-based cassette insertion has been widely used in yeast research since the 1990s and remains commonplace despite the development of CRISPR/Cas9 methods, though bidirectional promoter activity has long been known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C54 establish the historical and practical context. PCR-based editing was pioneered in yeast (C47), used to create the deletion collection (C48), remains common (C49), and bidirectional promoter activity has been known (C54). These are factual statements about the field supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Two-step strategies like Cre/loxP can prevent neighboring gene disruption but are labor-intensive and often not utilized, while single-step insulated cassettes maintain efficiency while preventing off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 compare alternative approaches. Two-step strategies exist (C84-C85) but are labor-intensive (C86) and often not used even when loxP sites are present (C87), while insulated cassettes provide a practical solution (C88). The evidence for underutilization of Cre/loxP (C87) and effectiveness of insulated cassettes (demonstrated throughout) supports these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The key features driving cassette-induced off-target effects (bidirectional promoters, transcription interference, termination mechanisms) are conserved across eukaryotes, suggesting similar effects may occur in other organisms including mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98 extend the implications beyond yeast. Key mechanisms are conserved (C89-C90), bidirectional promoters are universal (C91), termination mechanisms differ but serve similar functions (C92-C94), yet consequences for cassette design are not widely considered (C95-C96). The solution of adding terminators (C97-C98) should be applicable broadly. The inference to other organisms is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "MRP51 encodes a mitochondrial small subunit ribosome protein, and its loss leads to accumulation of free large subunits and affects global translation through the TOR pathway, consistent with known mitochondrial-translation crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C52-C53 provide biological context for understanding the phenotypes. MRP51 is a mt-SSU protein (C50), loss of SSU proteins causes LSU accumulation (C52), and mitochondrial dysfunction affects TOR and translation (C53). These are established facts from cited literature that explain the observed phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Naturally occurring NNS termination sites may determine locus sensitivity to cassette-driven NGE, but prediction of these sites from sequence alone is difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 identify NNS termination as an important factor (C68) but note the difficulty of sequence-based prediction (C69). This is supported by observations of short divergent transcripts at many loci and the effectiveness of NNS sequences in preventing effects, though the predictive limitation is acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "This study emphasizes the need for proper controls including complementation experiments to establish causality of observed phenotypes, even when using precision genome engineering approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is a methodological recommendation well-supported by the findings that cassette insertion caused phenotypes misattributed to the deleted gene. The rescue experiments in this study demonstrate the value of complementation controls for establishing causality.",
+    "result_type": "MINOR"
+  }
+]

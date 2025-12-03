@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Loss of SRSF6 uniquely upregulates interferon-stimulated genes (ISGs) in resting macrophages. This phenotype is specific to SRSF6 knockdown, observed in both stable knockdown cell lines and transient siRNA knockdown in multiple cell types including RAW macrophages, BMDMs, and MEFs, with ISG accumulation correlating with SRSF6 knockdown efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C24 collectively demonstrate a robust and specific ISG upregulation phenotype upon SRSF6 loss. The evidence includes RNA-seq data (C15-C19), validation by RT-qPCR and immunoblot in multiple independent cell lines (C20), transient knockdown controls ruling out off-target effects (C21), replication in primary cells (C22-C23), and specificity demonstrated by comparison with other SRSF knockdowns (C24). The convergence of multiple experimental approaches and cell types strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The elevated basal ISG expression in SRSF6 knockdown macrophages is driven by IRF3-mediated IFN-\u03b2 production and secretion. This results in functional antiviral immunity, as demonstrated by dramatic restriction of VSV replication in SRSF6 knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 establish a clear mechanistic pathway from IRF3 phosphorylation (C25) through IFN-\u03b2 secretion (C26) to ISG upregulation (C27-C28), with functional validation through VSV restriction (C30). The IFN-\u03b2 neutralizing antibody rescue experiment (C28) provides strong evidence for the causal role of secreted IFN-\u03b2. The functional consequence (VSV restriction, C30-C31) validates the biological significance of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Cytosolic mitochondrial DNA (mtDNA) is the trigger for elevated ISG expression in SRSF6 knockdown macrophages, acting through the cGAS-dependent DNA sensing pathway. Loss of SRSF6 causes mtDNA leakage into the cytosol, which engages cGAS to drive IRF3 phosphorylation, IFN-\u03b2 expression, and ISG activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 establish a clear causal chain from cytosolic mtDNA enrichment (C33) to ISG expression through cGAS-dependent sensing (C35). The mtDNA depletion experiment (C34) and cGAS knockout experiment (C35) provide strong genetic and pharmacological evidence for necessity. The integration of these findings (C36) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Loss of SRSF6 disrupts mitochondrial homeostasis, causing mitochondrial fragmentation, membrane depolarization, and impaired oxidative phosphorylation (OXPHOS), while glycolysis remains unaffected. This indicates SRSF6 specifically regulates mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 provide comprehensive characterization of mitochondrial dysfunction in SRSF6 knockdown cells using multiple complementary approaches: microscopy (C37), TMRE staining (C39), and Seahorse metabolic analysis (C40-C42). The specificity for OXPHOS over glycolysis (C42-C43) strengthens the conclusion. The comparable levels of mitochondrial proteins (C38) rule out simple loss of mitochondrial mass as an explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "SRSF6 controls alternative splicing in macrophages, predominantly regulating exon inclusion. SRSF6-dependent splicing of Bax intron 1 generates the BAX-\u03ba isoform, which has a 20 amino acid N-terminal truncation but maintains the rest of the coding sequence in-frame, without affecting total BAX protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 establish SRSF6's role in Bax splicing through multiple lines of evidence: MAJIQ computational analysis (C44, C46-C47), RT-qPCR validation (C48), semi-quantitative RT-PCR (C49), and sequence analysis (C51). The validation using multiple independent methods strengthens confidence in the splicing event. The observation that total BAX protein is unchanged (C50) is important for interpreting downstream phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "SRSF6 directly binds to Bax pre-mRNA to control splicing of intron 1. ESE Finder identified three strong SRSF6 consensus sequences in Bax exons, and CLIP experiments confirmed direct binding of SRSF6 to Bax transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 establish direct binding through computational prediction (C56) validated by experimental CLIP data (C57). The convergence of bioinformatic prediction and experimental validation provides strong evidence for direct regulation. However, the CLIP experiment does not definitively prove binding to the specific predicted sites, only that SRSF6 binds somewhere on Bax transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "BAX is necessary for elevated ISG expression specifically in SRSF6 knockdown cells. Knockdown of Bax rescues high ISG expression in SRSF6 knockdown macrophages, but has no effect on ISG expression in wild-type cells, indicating the link between BAX and ISG expression is specific to the context of defective Bax splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 establish necessity of BAX for the ISG phenotype through genetic epistasis experiments. The differential effect of Bax knockdown in SRSF6 KD versus wild-type cells (C61-C62) is critical for establishing specificity and ruling out general effects of BAX on ISG expression. This provides strong evidence linking the splicing defect to the ISG phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "SRSF6 knockdown sensitizes macrophages to cell death. Resting SRSF6 knockdown cells show increased PI incorporation and annexin V staining, and are more sensitive to apoptosis-inducing drugs. This cell death is independent of IFN-\u03b2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 demonstrate increased cell death through multiple complementary assays (PI incorporation, annexin V staining, flow cytometry) and with multiple apoptosis-inducing agents (staurosporine, ABT373, etoposide). The IFN-\u03b2 neutralizing antibody experiment (C65-C66) effectively rules out IFN-\u03b2 as a mediator of cell death, distinguishing this phenotype from the ISG upregulation phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Cell death in SRSF6 knockdown macrophages is caspase-independent and does not involve cytochrome c release, suggesting a form of mitochondrial-dependent caspase-independent cell death (CICD). BAX-\u03ba is hypothesized to trigger mitochondrial outer membrane permeabilization and mtDNA release without releasing cytochrome c.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 provide strong experimental evidence for caspase-independent cell death lacking cytochrome c release. However, C75-C76 are largely inferential and speculative. While the characterization as CICD is reasonable given the data, the specific mechanism involving BAX-\u03ba (C76) is hypothesized rather than directly demonstrated. Additional experiments directly testing BAX-\u03ba's ability to release mtDNA without cytochrome c would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "BAX protein accumulates on mitochondria in SRSF6 knockdown cells, and BAX-\u03ba transcript levels correlate with mitochondrial depolarization. Cells with low mitochondrial membrane potential have higher BAX-\u03ba expression, and this correlation is observed in both SRSF6 knockdown and control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 use mitoFLOW and FACS sorting combined with RT-qPCR to establish correlation between BAX mitochondrial localization, BAX-\u03ba expression, and mitochondrial depolarization. The observation that this correlation exists in control cells as well (C79) is important and suggests BAX-\u03ba may be a general marker or contributor to mitochondrial dysfunction, not just in SRSF6 knockdown context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "BAX-\u03ba overexpression is sufficient to induce robust basal ISG expression and cell death in wild-type macrophages in a dose-dependent manner. Unlike full-length BAX, which requires an activation signal, BAX-\u03ba constitutively localizes to mitochondria and can trigger these phenotypes without additional stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83, C86-C88 establish sufficiency of BAX-\u03ba through gain-of-function experiments. The dose-dependence (C81, C83), early timepoint effects (C81), comparison with full-length BAX (C86), and mitoFLOW data (C87) provide strong evidence that BAX-\u03ba is sufficient and acts differently from canonical BAX. This is a critical result establishing BAX-\u03ba as a key mediator of the SRSF6 knockdown phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "BAX-\u03ba-induced cell death at later timepoints (15-24 hours) post-induction is largely caspase-dependent, contrasting with the caspase-independent cell death observed in resting SRSF6 knockdown cells. This is predicted to result from high levels of BAX-\u03ba inducing sufficient MOMP to release cytochrome c and activate caspases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 identify an important distinction between the overexpression system and the knockdown system. The caspase-dependence at later timepoints with high BAX-\u03ba expression (C84) is well-documented experimentally. The mechanistic explanation (C85) is reasonable speculation based on dose-dependence, though it remains a prediction rather than directly demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Phosphorylation of SRSF6 at serine 303 regulates Bax splicing and cell death. Expression of the phosphomimetic SRSF6-S303D decreases BAX-\u03ba transcripts, increases canonical Bax transcripts, and renders cells less prone to apoptosis and cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 establish a functional role for S303 phosphorylation through phosphomimetic experiments. The effects on Bax splicing (C91-C92) and cell death (C93) are well-documented. However, the interpretation relies on the assumption that the phosphomimetic accurately recapitulates phosphorylation, which is a limitation of this approach. The lack of effect of other phosphomutants (shown in supplemental data referenced in C91) strengthens the specificity for S303.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "SRSF6 transcript levels are downregulated in response to diverse pathogen sensing and immune stimulation, including M. tuberculosis infection, dsDNA transfection, IFN-\u03b2 treatment, Salmonella infection, LPS treatment, and VSV infection. This suggests downregulation of SRSF6 is part of the general macrophage pathogen sensing response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 demonstrate consistent downregulation of SRSF6 across multiple stimuli and infection models, both in vitro and in vivo. The breadth of conditions tested (bacterial, viral, TLR agonists, cytokines) strongly supports the conclusion that SRSF6 downregulation is a general feature of immune activation (C101). The in vivo validation (C95) adds physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "SRSF6 plays a critical role in controlling M. tuberculosis infection outcomes. Mtb grows significantly better in SRSF6 knockdown cells, concomitant with hyperinduction of IFN-\u03b2 and ISGs and increased cell death. This demonstrates that regulation of SRSF6 at post-translational and transcriptional levels is important for the macrophage innate immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 establish a functional role for SRSF6 in bacterial infection through direct infection experiments. The increased bacterial growth (C102), hyperinduction of type I IFN responses (C103), and increased cell death (C104) are well-documented. The integration of these findings with the phosphorylation and transcriptional regulation data (C106) provides a comprehensive model, though the precise mechanisms linking these phenotypes remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "SRSF6-dependent control of BAX to BAX-\u03ba isoform ratios balances innate immune homeostasis in macrophages. BAX-\u03ba expression promotes basal type I IFN expression driven by cytosolic mtDNA and renders cells prone to apoptotic cell death. Unlike canonical BAX, BAX-\u03ba does not require an activation signal and may uncouple mtDNA release from cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 represent the main conclusions of the paper, integrating findings from multiple experimental approaches. The evidence for SRSF6 controlling BAX/BAX-\u03ba ratios (C107) is strong. The sufficiency of BAX-\u03ba for ISG expression and cell death (C108-C109) is well-established. The distinction from canonical BAX (C110) is supported by comparative experiments. The speculation about uncoupling mtDNA release from cell death (C111) is reasonable but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims about alternative splicing prevalence, SR protein functions, and SRSF6 properties establish the context for the study. These include the extent of alternative splicing in the human genome, roles of various SRSF proteins in immunity and disease, and SRSF6's molecular properties and regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 are background information supported by citations to prior literature. These establish the rationale and context for studying SRSF6 in macrophages. While these are not novel findings of this study, they are accurately represented based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C32",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C59",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Background claims about mitochondrial DNA sensing, BAX isoforms, SRSF6 in cancer, and cell death modalities provide context for interpreting the experimental findings. These include prior knowledge about mtDNA-triggered immunity, BAX-\u03ba and BAX-psi isoforms, SRSF6's role in cancer, and the relationship between BAX/BAK pores and mtDNA release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C52-C55, C59, C112-C124 are background information from prior literature that contextualizes the current findings. These are accurately represented based on the citations provided and help frame the significance of the new discoveries about SRSF6 and BAX-\u03ba in macrophages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "SRSF6 knockdown does not affect IL-1\u03b2 release in BMDMs, either in unprimed or poly dA:dT-primed conditions, ruling out inflammasome-mediated cell death as an explanation for the observed phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 provides an important negative control ruling out inflammasome activation as a mechanism for the cell death phenotype. The ELISA data in both unprimed and primed conditions provides adequate evidence for this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Phosphomutant and phosphomimetic SRSF6 variants show no major differences in subcellular localization compared to wild-type SRSF6, with all variants being predominantly nuclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by immunofluorescence microscopy data. This is an important control showing that the effects of phosphorylation on Bax splicing and cell death are not due to altered SRSF6 localization, despite prior literature suggesting phosphorylation can affect SR protein shuttling.",
+    "result_type": "MINOR"
+  }
+]

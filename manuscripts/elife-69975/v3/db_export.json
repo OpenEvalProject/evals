@@ -1,0 +1,1603 @@
+{
+  "submission": {
+    "id": "78c67ec0-6e6f-41be-b6f9-2ad603263786",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:50:21.815332Z",
+    "updated_at": "2025-12-03T05:50:21.815332Z"
+  },
+  "content": [
+    {
+      "id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "submission_id": "78c67ec0-6e6f-41be-b6f9-2ad603263786",
+      "content_type": "manuscript",
+      "content_text": "# Notch-induced endoplasmic reticulum-associated degradation governs mouse thymocyte \u03b2\u2212selection\n\n## Authors\n\n- Xia Liu<sup>1</sup>\n- Jingjing Yu<sup>1</sup> ([ORCID: 0000-0002-2408-5809](https://orcid.org/0000-0002-2408-5809))\n- Longyong Xu<sup>1</sup> ([ORCID: 0000-0002-8574-4062](https://orcid.org/0000-0002-8574-4062))\n- Katharine Umphred-Wilson<sup>3</sup> ([ORCID: 0000-0001-6416-0466](https://orcid.org/0000-0001-6416-0466))\n- Fanglue Peng<sup>1</sup>\n- Yao Ding<sup>1</sup>\n- Brendan M Barton<sup>3</sup>\n- Xiangdong Lv<sup>1</sup>\n- Michael Y Zhao<sup>1</sup>\n- Shengyi Sun<sup>4</sup>\n- Yuning Hong<sup>5</sup>\n- Ling Qi<sup>6</sup>\n- Stanley Adoro<sup>3</sup> \u2020\n- Xi Chen<sup>1</sup> ([ORCID: 0000-0002-7995-6202](https://orcid.org/0000-0002-7995-6202)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology, Baylor College of Medicine Houston United States\n2. Lester and Sue Smith Breast Center and Dan L Duncan Comprehensive Cancer Center, Baylor College of Medicine Houston United States\n3. Department of Pathology, School of Medicine, Case Western Reserve University Cleveland United States\n4. Center for Molecular Medicine and Genetics, Wayne State University Detroit United States\n5. Department of Chemistry and Physics, La Trobe University Melbourne Australia\n6. Department of Molecular and Integrative Physiology, University of Michigan Medical School Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSignals from the pre-T cell receptor and Notch coordinately instruct \u03b2-selection of CD4\u2013CD8\u2013double negative (DN) thymocytes to generate \u03b1\u03b2 T cells in the thymus. However, how these signals ensure a high-fidelity proteome and safeguard the clonal diversification of the pre-selection TCR repertoire given the considerable translational activity imposed by \u03b2-selection is largely unknown. Here, we identify the endoplasmic reticulum (ER)-associated degradation (ERAD) machinery as a critical proteostasis checkpoint during \u03b2-selection. Expression of the SEL1L-HRD1 complex, the most conserved branch of ERAD, is directly regulated by the transcriptional activity of the Notch intracellular domain. Deletion of Sel1l impaired DN3 to DN4 thymocyte transition and severely impaired mouse \u03b1\u03b2 T cell development. Mechanistically, Sel1l deficiency induced unresolved ER stress that triggered thymocyte apoptosis through the PERK pathway. Accordingly, genetically inactivating PERK rescued T cell development from Sel1l-deficient thymocytes. In contrast, IRE1\u03b1/XBP1 pathway was induced as a compensatory adaptation to alleviate Sel1l-deficiency-induced ER stress. Dual loss of Sel1l and Xbp1 markedly exacerbated the thymic defect. Our study reveals a critical developmental signal controlled proteostasis mechanism that enforces T cell development to ensure a healthy adaptive immunity.\n\n## Introduction\n\nT cells develop from bone-marrow-derived early T-cell progenitors (ETP) through a series of well-orchestrated proliferation and differentiation steps in the thymus. In response to intrathymic interleukin (IL)\u22127 and Kit ligand, ETPs proliferate and differentiate into CD4-CD8-double negative (DN) thymocytes (von Freeden-Jeffry et al., 1997). Subsequent differentiation of DN thymocytes into CD4+CD8+ (double positive, DP) thymocytes depends on whether DN3 stage (CD44-CD25+) thymocytes successfully undergo \u2018\u03b2-selection\u2019, the first major checkpoint during \u03b1\u03b2 T cell development (Shah and Z\u00fa\u00f1iga-Pfl\u00fccker, 2014). \u03b2-selection is initiated by signals from the pre-TCR (a heterodimer of the invariant pre-T\u03b1 and TCR\u03b2 proteins) in DN3 thymocytes that have productively undergone V(D)J recombination at the Tcrb locus (Mallick et al., 1993; Michie and Z\u00fa\u00f1iga-Pfl\u00fccker, 2002). In addition to cell autonomous signal through the pre-TCR, \u03b2-selection also requires signal from the Notch receptor (Ciofani and Z\u00fa\u00f1iga-Pfl\u00fccker, 2005; Sambandam et al., 2005). Coordinately, pre-TCR and Notch signals induce DN3 thymocytes to undergo 100\u2013200 fold clonal expansion (Yamasaki et al., 2006; Zhao et al., 2019) as they differentiate into DN4 (CD44-CD25-) cells which give rise to the DP thymocyte precursors of mature \u03b1\u03b2 T cells. This proliferative burst is crucial for the diversification of the pre-selection TCR repertoire (Kreslavsky et al., 2012) and so must be robustly buffered to ensure adequate number of thymocytes audition for positive selection. \u03b2-selection imposes a considerable demand for new protein synthesis of the newly rearranged Tcrb gene and the multiple factors that execute the transcriptional and metabolic programs demanded by DN thymocyte proliferation. However, how proteome homeostasis or \u2018proteostasis\u2019 is regulated during thymocyte development is largely unknown.\n\nEndoplasmic reticulum (ER) is the major subcellular site for synthesis and maturation of all transmembrane and secreted proteins. Protein folding is an inherently error-prone process and is tightly regulated by a myriad of chaperones and enzymes (Balchin et al., 2016; Cox et al., 2020). To maintain proteostasis and normal cell function, cells have evolved highly sensitive and sophisticated quality control systems to ensure the fidelity of protein structure, which is especially important for thymocytes undergoing \u03b2-selection that must repair protein damage and generate a functional and diverse repertoire of T cell receptors with high fidelity (Feige et al., 2015; Feige and Hendershot, 2013). Two such systems conserved across different species are ER-associated degradation (ERAD) and the unfolded protein response (UPR) (Figure 1\u2014figure supplement 1A; Brodsky, 2012; Hwang and Qi, 2018; Walter and Ron, 2011). ERAD is the principal protein quality control mechanism responsible for targeting misfolded proteins in the ER for cytosolic proteasomal degradation. The E3 ubiquitin ligase HRD1 and its adaptor protein SEL1L, constitute the most conserved branch of ERAD (Brodsky, 2012; Qi et al., 2017; Ruggiano et al., 2014; Sun et al., 2014). SEL1L recruits misfolded proteins bound by ER protein chaperones to the SEL1L-HRD1 complex, through which the misfolded proteins are retrotranslocated into cytosol, ubiquitinated and degraded by the proteasome in the cytosol with the help of CDC48/ p97 (Brodsky, 2012; Nakatsukasa and Brodsky, 2008). Failure to clear the misfolded proteins in the ER activates the UPR (Brodsky, 2012; Hwang and Qi, 2018; Ruggiano et al., 2014). The UPR is a highly conserved, three-pronged pathway that is activated when the rate of cellular protein production exceeds the capacity of the ER to correctly fold and process its protein load or by various intracellular and extracellular stressors that interfere with the protein folding process. This coordinated response is mediated by three ER-localized transmembrane sensors: IRE1\u03b1, ATF6\u03b1, and PERK (Hetz et al., 2011).\u00a0Under ER stress, IRE1\u03b1 undergoes oligomerization and trans-autophosphorylation to activate its RNase domain to induce unconventional splicing of its substrate XBP1 (Hwang and Qi, 2018; Walter and Ron, 2011). ER stress also induces PERK-dependent eIF2\u03b1 phosphorylation and subsequent increased cap-independent translation of ATF4 and induction of CHOP (Figure 1\u2014figure supplement 1A; Hwang and Qi, 2018; Walter and Ron, 2011).\n\nHere, we show that ERAD is the master regulator of physiological ER proteostasis in immature DN thymocytes. The ERAD machinery was critically required for successful \u03b2-selection of DN3 thymocytes and consequently, ERAD deficiency impeded \u03b1\u03b2 T cell development. Intriguingly, ERAD selectively preserves the cellular fitness of \u03b1\u03b2, but not \u03b3\u03b4 T lymphocytes. We found that Notch signaling directly regulates ERAD gene expression to promote the integrity of ER proteostasis during \u03b2-selection. Activation of ERAD restricts PERK-dependent cell death in DN3 thymocytes during \u03b2-selection. Genetic inactivation of Perk rescued \u03b2-selection in Sel1l-deficient thymocytes.\n\n## Results\n\n### Stringent protein quality control in \u03b2-selected thymocytes\n\nTo determine translational dynamics in developing thymocytes, we injected wildtype C57BL/6 (WT) mice with O-propargyl puromycin (OP-Puro), a cell-permeable puromycin analog that is incorporated into newly synthesized proteins as a measure of protein synthesis rates (Hidalgo San Jose and Signer, 2019; Tong et al., 2020). Animals were euthanized 1 hr after OP-Puro injection, and thymocyte subsets (gated as shown in Figure 1\u2014figure supplement 1B,C) were assessed by flow cytometry for OP-Puro incorporation (Figure 1A). Compared to DP and mature single positive thymocytes, DN2 to DN4 thymocytes incorporated the most OP-Puro (Figure 1B), a likely reflection of their high metabolic and proliferative activity (Carpenter and Bosselut, 2010; Kreslavsky et al., 2012; Nagelreiter et al., 2018). To assess the relationship between translational activity and proteome quality, we stained WT thymocytes with tetraphenylethene maleimide (TMI), a cell-permeable reagent that only fluoresces when bound to free thiol groups typically exposed on misfolded or unfolded proteins (Chen et al., 2017; Hidalgo San Jose et al., 2020). Intriguingly, despite comparable and high protein synthesis rates across DN2 to DN4 thymocytes, we found that DN4 thymocytes displayed markedly lower levels of misfolded/unfolded proteins (Figure 1C). These observations suggested that the DN3-to-DN4 transition, which is initiated by \u03b2-selection, is accompanied by induction of proteome quality control mechanisms.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of labeling and detection of nascent protein with OP-Puro. OP-Puro (O-propargyl puromycin) is a cell-permeable puromycin analog that is incorporated into the C-terminus of newly synthesized peptide chain. Fluorophore conjugated with Alexa Fluor 647 was then attached to OP-Puro through a copper-catalyzed click chemistry reaction between alkyne and azide group, which quantifies protein synthesis by fluorescence intensity. (B) Representative histogram (left) and quantification (right) of OP-Puro incorporation in different thymocyte subsets from 8-week-old wild-type mice. FMO represents AF647 control which is the background from the click chemistry in the absence of OP-Puro. MFI, mean fluorescence intensity. n = four mice. (C) Quantification of tetraphenylethene maleimide (TMI) fluorescence in different thymocyte subsets from 8-week-old wild-type mice. n = seven mice. (D) Quantitative RT-PCR analysis of ERAD (Sel1l) and UPR-related (Xbp1, Hspa5(Bip), Dnajb9, Ddit3 (Chop), Atf4) genes expression in different thymocyte subsets from 6-week-old wild-type mice. Data are presented relative to Actb; n = three mice. (B\u2013D), ETP: early T lineage precursor (Lin- CD4- CD8- CD44+ CD25- CD117+); DN2: double negative two thymocytes (Lin- CD4- CD8- CD44+ CD25+); DN3: double negative three thymocytes (Lin- CD4- CD8- CD44- CD25+); DN4: double negative four thymocytes (Lin- CD4- CD8- CD44- CD25-); DP: double positive thymocytes (Lin- CD4+ CD8+); SP4: CD4 single positive thymocytes (Lin- CD4+ CD8-); SP8: CD8 single positive thymocytes (Lin- CD4- CD8+). Results are shown as mean \u00b1 s.d. The statistical signi\ufb01cance was calculated by one-way ANOVA with Bonferroni test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, n.s., not signi\ufb01cant.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Diagram showing two ER quality control machineries: ERAD and UPR. The E3 ubiquitin ligase HRD1 and its adaptor protein SEL1L is the most conserved ERAD complex in mammals. While correctly folded proteins exit the ER, misfolded proteins in the ER are recruited to the SEL1L-HRD1 complex through ER chaperones (such as BiP, EDEM, and OS9), and then retrotranslocated into the cytosol, ubiquitinated and degraded by the proteasome. Failure to clear the misfolded or unfolded proteins in the ER activates the UPR signaling through three ER stress sensors IRE1\u03b1, ATF6, and PERK. Upon activation, IRE1\u03b1 oligomerizes and undergoes trans-autophosphorylation to activate its RNase domain, resulting in the removal of 26 nucleotides from unspliced XBP1 (XBP1u) mRNA to produce mature, spliced XBP1 (XBP1s) mRNA. PERK is a serine-threonine kinase. ER stress induces PERK-dependent eIF2\u03b1 phosphorylation and subsequent increased cap-independent translation of ATF4 and induction of CHOP. (B) Schematic diagram of T-cell development in the thymus. CLP: common lymphoid progenitors; ETP: early T lineage precursor (Lin- CD4- CD8- CD44+ CD25- CD117+); DN2: double negative two thymocytes (Lin- CD4- CD8- CD44+ CD25+); DN3: double negative three thymocytes (Lin- CD4- CD8- CD44- CD25+); DN4: double negative four thymocytes (Lin- CD4- CD8- CD44- CD25-); ISP: immature single-positive thymocytes (Lin-CD8+CD24+TCR\u03b2-); DP: double positive thymocytes (Lin- CD4+ CD8+); SP4: CD4 single positive thymocytes (Lin- CD4+ CD8-); SP8: CD8 single positive thymocytes (Lin- CD4- CD8+). (C) Representative pseudocolor plots showing the gating strategy to identify different thymocyte subsets in the thymus.\n\nTo understand the protein quality control mechanisms operating in thymocytes, we performed quantitative PCR to determine expression of genes encoding ER protein quality control machinery. We found elevated expression of the core ERAD (Sel1l) and the UPR (Xbp1, Ddit3 (Chop), Atf4, Dnajb9, and Hspa5 (Bip)) genes in DN3 thymocytes (Figure 1D). Notably, induction of these genes peaked in the DN3 thymocyte stage in which \u03b2-selection is initiated (Takahama, 2006) and preceded the reduction of misfolded/unfolded proteins in DN4 cells. These results prompted us to hypothesize and explore whether \u03b2-selection signals induce proteome quality control mechanisms in DN3 cells to enable subsequent stages of thymocyte development.\n\n### The ERAD machinery is required for \u03b1\u03b2 T cell development\n\nTo resolve the ER proteostasis machinery required for the development of thymocytes, we conditionally deleted individual genes encoding key mediators of the UPR (Xbp1, Perk) and ERAD (Sel1l) using the hCD2-iCre transgene (Siegemund et al., 2015). In this model, significant Cre activity initiated in ETP thymocytes (Shi and Petrie, 2012; Siegemund et al., 2015) and was efficient in depleting genes in subsequent stages of thymocyte development and mature T cells (Figure 2\u2014figure supplement 1A,B). Deletion of the UPR mediator Xbp1 or Perk had no effect on T cell development as thymic cellularity, numbers of DN, DP, single positive (SP) thymocytes and splenic T cell numbers were comparable in gene-deficient and littermate control animals (Figure 2\u2014figure supplement 1C\u2013J). Similarly, Vav1-iCre-mediated deletion of Atf6a which initiates in bone marrow hematopoietic cell progenitors (Joseph et al., 2013) did not perturb thymocyte development (Figure 2\u2014figure supplement 1K\u2013N).\n\nStrikingly, CD2-iCre-mediated deletion of the ERAD core component Sel1l (Sel1lflox/flox; CD2-iCre mice, hereafter designated as Sel1l CKO) resulted in a markedly decreased thymus size and cellularity, with significantly reduced and dispersed medullary regions compared to control littermates (Sel1lflox/flox; Ctrl) (Figure 2A\u2013D). The reduced thymus cellularity was accompanied by a profound reduction of peripheral T cells in the spleen and lymph nodes from Sel1l CKO mice compared to control animal (Figure 2\u2014figure supplement 1O\u2013R). Sel1l deletion had no impact on \u03b3\u03b4 T cells (Figure 2\u2014figure supplement 1S), indicating that within the T-cell lineage, SEL1L is selectively required for \u03b1\u03b2 T cell development.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig2-v3.jpg)\n\n**Figure 2.:** (A) Images of thymus from 6 to 8 week-old control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. n = 3. (B and C) Thymus weight (B) and thymus cellularity (C) of age and gender-matched control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. n = 4. (D) Representative images of H and E staining of thymus from 6~8-week-old control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. Scale bars are indicated. C: Cortex. M: Medulla. (E and F) Quantification of cell numbers of the indicated thymocyte subsets in 6-\u00a0to\u00a08-week-old control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. n = 4. (G) Schematic depiction of the competitive bone marrow transplantation (BMT) experiment using whole bone marrow cells from control (Ctrl, Sel1lflox/flox) or Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice as donors. (H and I) Representative flow cytometry plots (H) and percentage (I) of control (Ctrl, Sel1lflox/flox) or Sel1l CKO donor-derived thymocyte subsets in the recipient mice 14 weeks after transplantation. n = 4\u20135. (J), Schematic overview of OP9-DL1 cell co-culture system. Sorted DN2 or DN3 cells from control (Ctrl) or Sel1l CKO mice were cultured on a monolayer of OP9 -DL1 cells supplemented with IL-7 and Flt3. (K, L, M) Representative pseudocolor plots (K) and percentage of DN3 (L) or DN4 (M) in DN thymocytes at indicated time points after in vitro co-culture of equal number of control (Ctrl, Sel1lflox/flox) or Sel1l CKO DN2 cells on OP9-DL1 cells supplemented with IL-7 and Flt3. n = 3. Results are shown as mean \u00b1 s.d. The statistical signi\ufb01cance was calculated by two-tailed unpaired t-test (B, C, E, F, I) or two-way ANOVA with Bonferroni test (L, M). *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, n.s., not signi\ufb01cant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Quantitative RT-PCR analysis of Sel1l expression in murine bone marrow progenitors and different thymocyte subsets from control (Ctrl, Sel1lflox/flox) or Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. Data are presented relative to Actb. n = 4. LMPP: lymphoid-primed multipotent progenitor. (B) Western blot analysis of SEL1L protein in sorted DN3 and DN4 thymocytes from Ctrl or Sel1l CKO mice. \u03b2-ACTIN was used as loading control. The original western blot images are provided in Figure 2\u2014figure supplement 1\u2014source data 1. (C\u2013F) Representative images of thymus (C), thymus cellularity (D), cell numbers of indicated populations in the thymus (E) and peripheral splenocyte numbers of indicated populations (F) from age and gender-matched control (Ctrl, Perkflox/flox) or Perk CKO (Perkflox/flox; CD2-iCre) mice. n = 4. (G\u2013J) Representative images of thymus (G), thymus cellularity (H), cell numbers of indicated populations in the thymus (I) and peripheral splenocyte numbers of indicated populations (J) from age and gender-matched control (Ctrl, Xbp1flox/flox) or Xbp1 CKO (Xbp1flox/flox; CD2-iCre) mice. n = 3\u20134. (K\u2013N) Representative images of thymus (K), thymus cellularity (L), cell numbers of indicated populations in the thymus (M) and peripheral splenocyte numbers of indicated populations (N) from age and gender-matched control (Ctrl, Atf6flox/flox) and Atf6flox/flox; Vav1-iCre mice. n = 5. (O) Images of spleen from 6 to 8 week-old control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. (P) Quantification of cell numbers of the indicated populations in the spleen of 6-\u00a0to\u00a08-week-old control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. (Q) Images of the inguinal (left) lymph nodes from 6- to 8-week-old control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. (R) Quantification of cell numbers in the lymph nodes of 6-\u00a0to\u00a08 week-old control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. n = 4. (S) Quantification of cell numbers of \u03b3\u03b4 T cells from 6- to 8-week-old control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. Ctrl: n = 4. Sel1l CKO: n = 5. Data are representative of three independent experiments and are shown as mean \u00b1 s.d. Two-tailed Student\u2019s t-tests (A, D\u2013F, H\u2013J, L\u2013N, P, R, S) was used to calculate p values. n.s., not significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative flow cytometry plots of different thymocyte subsets in control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. (B) Diagram showing different stages of CD2-iCre and Cd4-Cre initiated gene depletion during T cell development. (C) Quantitative RT-PCR analysis of Sel1l in different thymocyte subsets from control (Ctrl, Sel1lflox/flox) and Sel1lflox/flox; Cd4-Cre mice. Data are presented relative to Actb. n = 3. (D and E) Representative images of thymus (D) and quantification of thymus cellularity (E) in 6-\u00a0to\u00a08-week-old control (Ctrl, Sel1lflox/flox) and Sel1lflox/flox; Cd4-Cre mice. n = 3. (F and G) Quantification of cell numbers of different thymocyte subsets from control (Ctrl, Sel1lflox/flox) and Sel1lflox/flox; Cd4-Cre mice. n = 3. (H) Percentage of Ctrl or Sel1l CKO donor-derived progenitors in the bone marrow of recipient mice 14 weeks after transplantation. n = 4\u20135. (I) Quantification of Ctrl or Sel1l CKO donor-derived DN3/DN4 ratio. n = 4\u20135. (J)\u00a0Percentage of Ctrl or Sel1l CKO donor-derived CD4+ T cells, CD8+ T cells, myeloid cells, and dendritic cells (DC) in the spleen of recipient mice 14 weeks after transplantation. n = 4\u20135. (K and L) Cell cycle analysis of DN3 thymocytes in 6-week-old control (Ctrl) and Sel1l CKO mice using Ki67 and DAPI. Representative flow cytometry plots (K) and quantification (L) are shown. n = 3. Data are shown as mean \u00b1 s.d. The statistical signi\ufb01cance was calculated by two-tailed unpaired t-test (C, E-J) or Two-way ANOVA with Bonferroni test (L). n.s., not significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\n### SEL1L is required for DN to DP thymocyte transition following \u03b2 selection\n\nWhile Sel1l CKO mice had similar numbers of DN thymocytes (Figure 2E and Figure 2\u2014figure supplement 2A), they showed significantly reduced numbers of DP and mature SP thymocytes compared to littermate controls (Figure 2F). This finding suggests that SEL1L functioned during the DN to DP thymocyte transition. To clarify this possibility, we generated and analyzed thymocyte developmental stages in Sel1lflox/flox; Cd4-Cre mice. Unlike CD2-iCre which initiated in ETP (Siegemund et al., 2015), Cd4-Cre initiated in immature single-positive (ISP, CD8+CD24+TCR\u03b2-) thymocytes (Gegonne et al., 2018; Kadakia et al., 2019; Xu et al., 2016) and only significantly depleted Sel1l in ISPs and later stage thymocytes (Figure 2\u2014figure supplement 2B,C). Sel1lflox/flox; Cd4-Cre mice exhibited indistinguishable thymic cellularity, immature DN, DP and SP thymocytes numbers from control mice (Figure 2\u2014figure supplement 2D\u2013G). Thus, whereas SEL1L is dispensable for differentiation of post-DN4 thymocytes (i.e. DP, SP, and mature T cells), its expression is critical for DN to DP thymocyte differentiation.\n\nTo delineate the DN thymocyte developmental stage at which SEL1L is required, we generated 1:1 mixed bone marrow (BM) chimeras by transplanting equal numbers of whole BM cells from control (Sel1lflox/flox, CD45.2+) or Sel1l CKO (Sel1lflox/flox; CD2-iCre, CD45.2+) mice along with congenic (CD45.1+) wild-type (WT) competitor BM cells into irradiated CD45.1+ recipient mice (Figure 2G). Fourteen weeks after transplantation, control and Sel1l CKO donors reconstituted similar numbers of all BM hematopoietic progenitors including Lineage-Sca-1+c-Kit+ (LSK) cells, hematopoietic stem progenitor cells (HSPC), multipotent progenitor (MPP), and myeloid progenitors (Lineage-Sca-1-c-Kit+LS-K) cells (Figure 2\u2014figure supplement 2H). We found substantial defective thymus reconstitution starting from the DN4 stage from Sel1l-CKO donors (Figure 2H,I). Sel1l CKO-donor-derived DN3 to DN4 ratio was significantly increased compared to controls (Figure 2\u2014figure supplement 2I), suggesting that Sel1l depletion compromised the fitness of DN3 thymocytes in which \u03b2-selection occurs and impaired their transition to the DN4 stage. The impaired DN thymus reconstitution from Sel1l CKO donors was accompanied by severe defects in subsequent donor-derived DP and SP thymocytes (Figure 2H,I), as well as peripheral T cells in the spleen (Figure 2\u2014figure supplement 2J). These data demonstrate a cell-intrinsic requirement of Sel1l for DN3 thymocyte progression to later stages of thymocyte differentiation. Sel1l deletion also caused significant B cell reconstitution defects (Figure 2\u2014figure supplement 2J), consistent with previous publications showing that SEL1L/HRD1 ERAD is required for B cell development through regulating pre-BCR (Ji et al., 2016; Yang et al., 2018).\n\nTo further clarify the requirement for SEL1L in DN3-to-DN4 thymocyte transition during \u03b2-selection, we used the in vitro T cell differentiation system of culturing immature thymocytes on monolayers of OP9 stromal cells expressing the Notch ligand Delta-like 1 (OP9-DL1 cells) supplemented with IL-7 and Flt3 ligand (Balciunaite et al., 2005; Holmes and Z\u00fa\u00f1iga-Pfl\u00fccker, 2009; Schmitt et al., 2004; Figure 2J). We cultured DN2 thymocytes from control or Sel1l CKO mice on OP9-DL1 cells and found that Sel1l-deficiency markedly abrogated DN4 thymocyte generation (Figure 2K\u2013M). On day 17 of co-culture, only 31.3% DN3 cells remained in control-derived cells, while more than three-fold DN3 cells (71.6%) were found in Sel1l CKO-derived cells (Figure 2K\u2013M), consistent with a block in DN3 to DN4 thymocyte transition. Since only DN3 thymocytes that have successfully undergone \u03b2-selection differentiate to the DN4 and DP thymocyte stage, these results reinforce that cell-intrinsic SEL1L activity is required for post \u03b2-selection DN thymocyte development.\n\n### SEL1L is required for thymocyte survival at the \u03b2-selection checkpoint\n\nNext, we assessed the impact of Sel1l deletion on DN thymocyte proliferation and survival, two key outcomes of successful \u03b2-selection (Ciofani and Z\u00fa\u00f1iga-Pfl\u00fccker, 2005; Kreslavsky et al., 2012). Although BrdU incorporation was similar in control and Sel1l CKO DN3 thymocytes, we observed more BrdU incorporation in Sel1l CKO DN4 thymocytes than that in control DN4 thymocytes (Figure 3A). In agreement, co-staining for Ki-67 and the DNA dye (DAPI) revealed less Sel1l CKO DN4 thymocytes in G0 phase, and more in G1 and S/G2/M phase (Figure 3B,C). Sel1l CKO DN3 cells showed similar cell cycle kinetics as control DN3 thymocytes, in line with their normal levels of BrdU incorporation (Figure 2\u2014figure supplement 2K,L). The higher proliferation of endogenous Sel1l-deficient DN4 thymocytes may be a compensation for their compromised fitness. This likely explains the paradoxical observation that Sel1l CKO donors generated markedly reduced DN4 thymocytes in BM chimeras (Figure 2H,I), yet Sel1l CKO mice had comparable DN4 thymocytes as control mice in steady state (Figure 2E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig3-v3.jpg)\n\n**Figure 3.:** (A) Quantification of BrdU incorporation in different thymocyte subsets from 6-week-old control (Ctrl, Sel1lflox/flox) or Sel1l CKO mice. n = 3\u20134. (B and C) Cell cycle analysis of DN4 thymocytes in 6-week-old control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) using Ki67 and DAPI. Representative flow cytometry plots (B) and quantification (C) are shown. n = 3. (D) Quantification of apoptotic Ctrl or Sel1l CKO (Sel1lflox/flox; CD2-iCre) DN3 thymocytes co-cultured with OP9-DL1 cells in vitro for 2 days. n = 3. (E and F) Representative images (E) and quantification (F) of cleaved caspase-3 (CC3) positive cells in the thymus of 6-\u00a0to\u00a08-week-old control (Ctrl, Sel1lflox/flox) or Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. Sixteen fields were counted at \u00d720 magnification from 4 Ctrl or Sel1l CKO mice. Scale bars are indicated. (G and H) Representative images (G) and quantification (H) of TUNEL positive cells in the thymus of 6-\u00a0to\u00a08-week-old control (Ctrl, Sel1lflox/flox) or Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. n = 4. Scale bar, 20 \u03bcM. Results are shown as mean \u00b1 s.d. The statistical signi\ufb01cance was calculated by two-tailed unpaired t-test (D, F, H) or two-way ANOVA with Bonferroni test (A, C). *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, n.s., not signi\ufb01cant.\n\nThat, despite their higher proliferative status, Sel1l CKO DN4 thymocytes failed to progress to DP thymocytes and generate mature T-cells prompted us to ask if Sel1l deficiency resulted in apoptosis of \u03b2-selected thymocytes. To test this possibility, we cultured equal number of DN3 thymocytes from control or Sel1l CKO mice on OP9-DL1 stromal cells and assessed their apoptosis in vitro. Indeed, Sel1l CKO DN3 thymocytes showed higher apoptosis measured by proportions of Annexin-V positive cells (Figure 3D). To confirm that Sel1l-deficiency resulted in DN thymocyte apoptosis in vivo, we histologically enumerated apoptosis in thymic sections by measuring active Caspase-3 which degrades multiple cellular proteins and is responsible for morphological changes and DNA fragmentation in cells during apoptosis (Bai et al., 2013). Compared to controls, Sel1l CKO thymus showed more active Caspase-3 apoptotic cells in the cortex area (Figure 3E,F), which is typically populated by DN thymocytes (Trampont et al., 2010). This observation was further confirmed using TUNEL (terminal deoxynucleotidyl transferase dUTP nick end labeling) staining (Figure 3G,H). Taken together, we concluded that Sel1l-deficient \u03b2-selected DN3 cells were undergoing apoptosis as they differentiated into DN4 thymocytes.\n\n### Notch directly regulates transcription of ERAD genes\n\nHaving established that the SEL1L-ERAD is a crucial proteostasis machinery required for \u03b2-selection, we next sought to understand the thymic signals which regulate Sel1l expression in DN thymocytes. Because high Sell1l expression (Figure 1D) coincided with high levels of Notch1 in DN2 and DN3 thymocytes (Figure 4A), we explored the possibility that Notch ligands might activate the ERAD machinery to enable DN thymocytes to maintain proteostasis during \u03b2-selection. Stimulation of the thymoma cell line EL4 with Notch ligand Delta-like 4 (DLL4) (Camelo et al., 2012;\u00a0Fitzgerald and Greenwald, 1995)\u00a0induced expression of the genes involved in ERAD including Sel1l, Hrd1, Os9, and Edem1 as well as SEL1L proteins (Figure 4B,C). Induction of these genes by DLL4 was concomitant with the induction of classical Notch targets like Hes1, Deltex1, and Ptcra (pre-T\u03b1) (Figure 4\u2014figure supplement 1A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig4-v3.jpg)\n\n**Figure 4.:** (A) Quantification of surface NOTCH1 levels in different thymocyte subsets from wild-type mice. MFI, mean fluorescence intensity. n = four mice. (B) Quantitative RT\u2013PCR analysis of ERAD genes (Sel1l, Hrd1, Os9, Edem1) expression in EL4 cells after stimulation with 5 \u03bcg/ml Delta ligand 4 (DLL4) for 24 hr. Data are presented relative to Actb. n = 3. (C) Western blot analysis of SEL1L level in EL4 cells after stimulation with Delta ligand 4 (DLL4) for 12 hr. \u03b2-ACTIN was used as loading control. The original western blot images are provided in Figure 4\u2014source data 1. (D) Quantitative RT\u2013PCR analysis of ERAD genes (Sel1l, Hrd1, Os9, Edem1) expression in primary DN3 thymocytes treated with 2 \u03bcM \u03b3-secretase inhibitor DAPT for 5 hr. Data are presented relative to Actb. n = 3. (E) Conserved RBP-J binding motif (Red) within the promoters of Sel1l and Hrd1. Alignment of the Sel1l (Upper) or Hrd1 (lower) promoter from genomic sequence from human, mouse, and rat. The numbering corresponds to the mouse sequence and is relative to the transcription start site (TSS). Mutations of the RBP-J-binding motifs within Sel1l or Hrd1 promoter luciferase reporters (as in L, M) are shown. (F\u2013I). Upper: Schematic diagram of the ChIP primer (P1\u2013P3) locations across the Sel1l (F) Hrd1, (G) Edem1, (H) or Os9 (I) promoter regions. TSS: transcription start site. Lower: Chromatin extracts from EL4 cells treated with PBS or 5 \u03bcg/ml DLL4 for 24 hr were subjected to ChIP using anti-RBP-J antibody, anti-NICD antibody, or normal IgG. Genomic regions of Sel1l (F), Hrd1 (G), Edem1 (H), or Os9 (I) promoter (as in left panel) were tested for enrichment of RBP-J, NICD or IgG. Data are shown as percentage of input. (J) Sel1l or Hrd1 promoter luciferase reporter was co-transfected with empty vector or different doses of NICD into HEK293T cells, and luciferase activity was measured 36 hr after transfection. pGL3 basic was used as control. (K and L) Wild-type or mutant (RBP-J motif mutations, as shown in E) Sel1l (K) or Hrd1 (L) promoter luciferase reporter was transfected into EL4 cells which were treated with PBS or 5 \u03bcg/ml DLL4 for 24 hr before harvest. Luciferase activity was measured 36 hr after transfection. All luciferase data are presented relative to Renilla readings. Data are shown as mean \u00b1 s.d. Two-tailed Student\u2019s t-tests (A, B, D, F-I, K, L) or one-way ANOVA with Bonferroni test (J) were used to calculate p values. n.s., not significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantitative RT-PCR analysis of Notch target genes expression in EL4 cells after stimulation with 5 \u03bcg/ml Delta ligand 4 (DLL4) for 24 hr. Data are presented relative to Actb. n = 3. (B) Quantitative RT-PCR analysis of Notch target genes expression in primary DN3 thymocytes treated with 2 \u03bcM \u03b3-secretase inhibitor DAPT for 5 hr. Data are presented relative to Actb. n = 3. (C) Expression of Notch1 on cell surface of different thymocyte subsets from control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. Ctrl: n = 2. Sel1l CKO: n = 4. (D) Quantitative RT-PCR analysis of Notch target genes expression in primary DN3 thymocytes from control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. n = 4. Data are shown as mean \u00b1 s.d. Two-tailed Student\u2019s t-tests (A\u2013C) was used to calculate p values. n.s., not significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\nTo further determine whether Notch regulates expression of ERAD component genes, we treated freshly isolated primary DN3 thymocytes with the highly specific \u03b3-secretase inhibitor DAPT (N-[N-(3,5-difluorophenacetyl)-L-alanyl]-S-phenylglycine t-butyl ester) that blocks ligand-induced cleavage of the Notch intracellular domain (NICD), preventing its nuclear translocation and subsequent transactivation of the RBP-J transcription factor at target genes (Chen et al., 2019; De Obaldia et al., 2013; Schmitt et al., 2004; Bray, 2016). Indeed, treatment with DAPT significantly reduced expression of Notch target genes Hes1, Deltex1, and Ptcra (Figure 4\u2014figure supplement 1B) and also reduced Sel1l, Hrd1, Os9, and Edem1 expression in DN3 thymocytes (Figure 4D). These data demonstrate that Notch signals regulate expression of genes constituting the ERAD machinery.\n\nAnalysis of the promoters of the core ERAD genes, Sel1l and Hrd1, revealed conserved binding sites for RBP-J (Figure 4E), the DNA binding partner and master transcription factor of the NICD transactivation complex (Castel et al., 2013; Tanigaki and Honjo, 2007). To interrogate how Notch regulates the ERAD gene components, we performed chromatin immunoprecipitation and qPCR of target DNA (ChIP-qPCR) experiments in EL4 cells. DLL4 stimulation of Notch signaling significantly induced NICD and RBP-J bindings at the promoters of Sel1l, Hrd1, Os9, and Edem (Figure 4F\u2013I).\n\nWe cloned the Sel1l and Hrd1 promoters containing the RBP-J-binding sites into the pGL3 firefly luciferase reporter and tested the regulation of these promoters by Notch. When co-transfected with promoter luciferase reporters into HEK293T cells, NICD potently induced both Sel1l and Hrd1 promoter activity in a dose-dependent manner (Figure 4J). In agreement, DLL4 stimulation of Notch signaling in EL4 cells also substantially activated Sel1l and Hrd1 promoter activity (Figure 4K,L). Importantly, mutation of the RBP-J-binding sites abolished DLL4-driven induction of Sel1l or Hrd1 luciferase reporter activity (Figure 4K,L). These data indicate that Notch signaling directly regulates expression of SEL1L ERAD machinery. Interestingly, although ERAD is known to regulate surface receptor expression in a substrate-specific manner (van den Boomen and Lehner, 2015; Xu et al., 2020), Sel1l deletion did not affect surface Notch1 protein levels in DN thymocyte populations (Figure 4\u2014figure supplement 1C). Similarly, SEL1L had little impact on the expression of Notch target genes Hes1 and Ptcra in DN3 thymocytes (Figure 4\u2014figure supplement 1D). These results not only suggest that ERAD does not regulate Notch signaling per se but also imply that thymocyte \u03b2-selection defects in Sel1l CKO mice were not due to failure in Notch signal transduction.\n\n### SEL1L is not required for pre-TCR signaling\n\nThe Tcrb allele is rearranged in DN2/DN3 thymocytes and the resulting TCR\u03b2 protein pairs with pre-T\u03b1 and CD3 complex proteins to form the pre-TCR which, together with Notch, transduces \u03b2-selection signals and promotes survival, proliferation and further differentiation of DN3 thymocytes (Ciofani et al., 2004; Michie and Z\u00fa\u00f1iga-Pfl\u00fccker, 2002; Sambandam et al., 2005). DN3 thymocytes that fail to undergo productive recombination of the Tcrb locus fail \u03b2-selection, do not complete the DN4-DP transition and are eliminated by apoptosis (Ciofani et al., 2004). Therefore, to understand how SEL1L regulates \u03b2-selection thymocyte survival and the resulting DN-to-DP transition, we first asked whether Sel1l-deficiency caused defective V(D)J recombination. Genomic DNA analysis of Sel1l-deficient DN3 and DN4 thymocytes showed that recombination of Vb5-Jb2, Vb8-Jb2, and Vb11-Jb2 gene segments were not altered (Figure 5\u2014figure supplement 1A), indicating that Sel1l deficiency does not affect Tcrb gene rearrangement.\n\nNext, we asked whether SEL1L regulates the expression and signaling of the pre-TCR complex. Expression of intracellular TCR\u03b2 in pre-selected DN3a, post-selected DN3b and DN4 cells was comparable between control and Sel1l CKO mice (Figure 5\u2014figure supplement 1B,C). Sel1l deletion also had no impact on the expression of pre-TCR signaling intermediates including LCK and ZAP-70 in DN3 and DN4 thymocytes (Figure 5\u2014figure supplement 1D).\n\nTo further evaluate whether the Sel1l CKO mice phenotype was due to defective pre-TCR signaling, we introduced the MHCII-restricted TCR-\u03b2 transgene OT-II into Sel1l CKO mice. As previously reported (Kim et al., 2014; Marquis et al., 2014), expression of TCR transgenes like OT-II in early DN thymocytes can rescue \u03b2-selection defects caused by defective pre-TCR expression or signaling. However, the OT-II TCR transgene did not rescue T cell development in OT-II. Sel1l CKO mice which showed a >80% decrease in thymic cellularity, DP and SP thymocytes (Figure 5\u2014figure supplement 1E\u2013G). In addition, OT-II TCR failed to rescue impaired DN3 to DN4 thymocyte transition resulting from Sel1l deficiency as DN4 thymocytes were decreased ~60% in OT-II. Sel1l CKO mice compared to littermate controls (Figure 5\u2014figure supplement 1H). Taken together, these data implied that \u03b2-selection defects in Sel1l CKO mice were not due to defects in pre-TCR expression or signaling.\n\n### Sel1l-deficiency triggers unresolved ER stress during \u03b2-selection\n\nTo understand the molecular mechanism by which SEL1L ERAD regulates thymocyte survival and differentiation at \u03b2-selection, we performed RNA-seq on control and Sel1l CKO DN3 thymocytes. The most upregulated pathways in Sel1l CKO DN3 thymocytes were ER stress response and the UPR, including both IRE1\u03b1 and PERK pathways (Figure 5A,B). Gene set enrichment analysis (GSEA) also revealed enriched ER stress response in Sel1l CKO thymocytes (Figure 5C\u2013E). These signatures hinted at elevated ER stress in Sel1l CKO DN3 thymocytes. Consistent with elevated ER stress, flow cytometry quantification of ER tracker dye staining indicated significant ER expansion in Sel1l CKO DN3 cells compared to control thymocytes (Figure 5F,G).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig5-v3.jpg)\n\n**Figure 5.:** (A) Heatmap showing differentially expressed genes from the RNA-seq analysis of DN3 thymocytes sorted from control (Ctrl, Sel1lflox/flox) or Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. n = 4. (B) Gene Ontology (GO) analysis of the most significantly upregulated pathways in Sel1l CKO (Sel1lflox/flox; CD2-iCre) DN3 thymocytes compared with control (Ctrl, Sel1lflox/flox) DN3 thymocytes. (C\u2013E) Plots from GSEA analysis showing enrichment of Unfolded Protein Response (C), IRE1\u03b1 (D), and PERK (E) pathways in Sel1l CKO (Sel1lflox/flox; CD2-iCre) DN3 thymocytes compared to control (Ctrl, Sel1lflox/flox) DN3 thymocytes. (F and G) Representative histogram (F) and quantification(G) of ER-tracker staining in DN3 thymocytes sorted from control (Ctrl, Sel1lflox/flox) and Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. Ctrl: n = 4; Sel1l CKO: n = 3. MFI, mean fluorescence intensity. (H) Western blot analysis of UPR pathway markers in primary DN3 thymocytes sorted from 6-week-old Ctrl or Sel1l CKO mice. \u03b2-ACTIN was used as loading control. The original western blot images are provided in Figure 5\u2014source data 1. (I) PCR analysis of XBP1-splicing in DN3 thymocytes sorted from Ctrl or Sel1l CKO mice. Xbp1u: Unspliced Xbp1; Xbp1s: Spliced Xbp1. ACTIN was used as loading control. The original gel images are provided in Figure 5\u2014source data 2. (J and K) Representative histogram (J) and quantification (K) of unfolded/misfolded protein level measured by TMI in DN3 thymocytes sorted from Ctrl or Sel1l CKO mice. n = 3. (L) Schematic illustration of labeling and detection of misfolded and aggregated proteins with ProteoStat dye. (M and N) Representative images (M) and quantification (N) of protein aggregation measured by ProteoStat Protein Aggregation Detection Kit in primary DN3 thymocytes sorted from three pooled Ctrl or Sel1l CKO mice. Results are shown as mean \u00b1 s.d. Two-tailed Student\u2019s t-tests (G, K, N) was used to calculate p values. **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) PCR analysis of V\u03b25-J\u03b22, V\u03b28-J\u03b22, and V\u03b211-J\u03b22 gene rearrangements using genomic DNA of DN3 and DN4 thymocytes sorted from control (Ctrl, Sel1lflox/flox) or Sel1l CKO (Sel1lflox/flox; CD2-iCre) mice. The original gel images are provided in Figure 5\u2014figure supplement 1\u2014source data 1. (B and C) Representative flow cytometry plots (B) and quantification (C) of intracellular TCR\u03b2 positive cells in DN3a, DN3b and DN4 thymocytes from Ctrl or Sel1l CKO mice. n = 5. (D) Western blot analysis of the expression of proteins involved in pre-TCR signaling in primary DN3 and DN4 thymocytes sorted from Ctrl or Sel1l CKO mice. \u03b2-ACTIN was used as loading control. The original western blot images are provided in Figure 5\u2014figure supplement 1\u2014source data 2. (E\u2013H) Representative pseudocolor plots (E) quantification of total thymocytes (F) and cell numbers of indicated populations (G and H) from OT-II.Ctrl (OT-II; Sel1lflox/flox) or OT-II. Sel1l CKO (OT-II; Sel1lflox/flox; CD2-iCre) mice. OT-II.Ctrl: n = 7. OT-II. Sel1l CKO: n = 6. Data are shown as mean \u00b1 s.d. Two-tailed Student\u2019s t-tests (C, F\u2013H) was used to calculate p values. n.s., not significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Western blot analysis of UPR pathway markers in primary DN4 thymocytes sorted from 6-week-old Ctrl or Sel1l CKO mice. \u03b2-ACTIN was used as loading control. The original western blot images are provided in Figure 5\u2014figure supplement 2\u2014source data 1. (B) PCR analysis of XBP1-splicing in DN4 thymocytes sorted from Ctrl or Sel1l CKO mice. Xbp1u: Unspliced Xbp1; Xbp1s: Spliced Xbp1. ACTIN was used as loading control. The original gel images are provided in Figure 5\u2014figure supplement 2\u2014source data 2. (C and D) Quantitative RT-PCR analysis of ER chaperone genes expression in DN3 (C) and DN4 (D) thymocytes sorted from 6-week-old Ctrl or Sel1l CKO mice. Data are presented relative to Actb. n = 3. Data are shown as mean \u00b1 s.d. Two-tailed Student\u2019s t-tests was used to calculate p values. n.s., not significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\nTo further ascertain the induction of ER stress following Sel1l deletion, we sorted DN3 and DN4 thymocytes from control or Sel1l CKO mice and examined the activation of all three UPR branches. We found a significant increase in IRE1\u03b1 proteins and in the splicing of its substrate Xbp1 in Sel1l CKO thymocytes (Figure 5H,I and Figure 5\u2014figure supplement 2A,B). We also observed increased PERK and eIF2\u03b1 phosphorylation as well as increased ATF4 and BIP proteins in Sel1l CKO DN3 thymocytes (Figure 5H). Various ER chaperones, including Calreticulin, Grp94 (Hsp90b1), Hspa5(Bip), Hyou1, and Canx, and other members of ERAD pathway were markedly upregulated in Sel1l CKO DN3 and DN4 thymocytes (Figure 5\u2014figure supplement 2C,D). These data indicate that Sel1l deletion triggers ER stress leading to activation of all three UPR branches in DN thymocytes.\n\nAs ERAD alleviates proteotoxic stress by promoting the degradation of misfolded or unfolded proteins, we hypothesized that loss of SEL1L increased proteotoxic stress during \u03b2-selection. Indeed, we found that Sel1l CKO DN3 thymocytes exhibited significantly higher staining for misfolded/unfolded proteins with TMI (Figure 5J,K). We also employed proteostat, a molecular rotor dye, to examine protein aggregation in DN3 thymocytes. The proteostat dye specifically intercalates into the cross-beta spine of quaternary protein structures typically found in misfolded and aggregated proteins, which inhibits the dye\u2019s rotation and leads to a strong fluorescence (Figure 5L). Sel1l CKO DN3 thymocytes displayed more protein aggregates compared with control thymocytes (Figure 5M,N). Collectively, these results corroborate that DN thymocytes lacking SEL1L accumulate misfolded/unfolded proteins leading to proteotoxic stress that then trigged the UPR and eventually apoptosis.\n\n### PERK signaling drives \u03b2-selected thymocyte apoptosis in Sel1l CKO mouse\n\nTo determine whether upregulation of the UPR contributed to post-\u03b2-selected thymocyte apoptosis and the Sel1l CKO mouse phenotype, we generated Sel1l/Xbp1 double-knockout (Sel1flox/flox.Xbp1flox/flox.CD2-iCre), and Sel1l/Perk double-knockout (Sel1flox/flox.Perkflox/flox.CD2-iCre) mice. Deletion of Xbp1 in Sel1l CKO mice did not rescue thymocyte development (Figure 6\u2014figure supplement 1A). In fact, Sel1l/Xbp1 double-knockout (DKO) mice showed more severe thymocytes development defects including a more than 95% loss in thymus cellularity and DP thymocyte numbers (Figure 6\u2014figure supplement 1A). The DN3 and DN4 thymocytes from Sel1l/Xbp1 DKO exhibited much more Chop expression (Figure 6\u2014figure supplement 1B). These data suggest that induction of the IRE1\u03b1/XBP1 pathway functions as a compensatory adaptative pathway to restrain Sel1l-deficiency induced ER stress.\n\nIn contrast to deletion of Xbp1, we found that deletion of Perk significantly rescued the Sel1l CKO mouse phenotype evident in the near complete restoration of thymus cellularity, DP and SP thymocyte cell numbers (Figure 6A,B). Perk deletion also restored peripheral T cells in spleen and lymph nodes compared to Sel1l CKO mice (Figure 6C\u2013F). Consistent with the rescue, Perk deletion significantly reduced Sel1l-deficiency induced Chop induction (Figure 6G) and thymocyte apoptosis (Figure 6H,I) and restored normal cell cycle kinetics to Sel1l CKO DN4 thymocytes (Figure 6\u2014figure supplement 1C). As Perk deficiency alone had no effect on T cell development (Figure 6A\u2013I), these results indicate that activated PERK signaling contributed to the apoptosis of DN3/DN4 thymocytes that impaired \u03b2-selection in Sel1l CKO mice. Collectively, we conclude that SEL1L-ERAD promotes \u03b2-selected DN thymocyte differentiation by maintaining ER proteostasis and suppressing ER stress-induced cell death through the PERK pathway.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig6-v3.jpg)\n\n**Figure 6.:** (A and B) Representative images of thymus (A) and quantification of total thymocytes, DP, SP4 and SP8 thymocytes (B) from age (6-week-old) and gender-matched control (Ctrl, Sel1lflox/flox), Sel1l KO (Sel1lflox/flox; CD2-iCre), Perk KO (Perkflox/flox; CD2-iCre)and Sel1l/Perk double knockout (DKO. Sel1lflox/flox, Perkflox/flox; CD2-iCre) mice. n = 3\u20135 each group. (C and D) Representative images of spleen (C) and quantification of total splenocytes, total CD3+ T cells, CD4+ T cells, and CD8+ T cells (D) from the same mice with indicated genotype as in A and B. n = 3\u20135 each group. (E and F) Representative images of the inguinal (left) lymph node (E) and quantification of total lymphocytes, total CD3+ T cells, CD4+ T cells, and CD8+ T cells (F) from the same mice with indicated genotype as in A and B. n = 3\u20135 each group. (G) Quantitative RT\u2013PCR analysis of Chop expression in DN3 thymocytes sorted from mice with indicated genotype. n = 3\u20135 each group. (H and I) Representative images (H) and quantification (I) of cleaved caspase-3 (CC3)-positive cells in the thymus of 6-\u00a0to\u00a08-week-old gender-matched mice with indicated genotype. Twelve fields were counted at \u00d720 magnification from four mice with indicated genotype. Scale bars are indicated. Data are representative of three independent experiments and are shown as mean \u00b1 s.d. The statistical signi\ufb01cance was calculated by two-tailed unpaired t-test (D, F) One-way ANOVA with turkey test (B, G) or one-way ANOVA with Bonferroni test (I). ns, not significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69975/elife-69975-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Quantification of total cellularity and DP cell numbers of 6\u20138 week-old gender-matched control (Ctrl, Sel1lflox/flox), Sel1l KO (Sel1lflox/flox; CD2-iCre), Xbp1 KO (Xbp1 flox/flox; CD2-iCre), and Sel1l/Xbp1 double knockout (DKO, Sel1lflox/flox; Xbp1flox/flox; CD2-iCre) mice. n = 3\u20136/each group. (B) Quantitative RT-PCR analysis Chop expression in DN3 thymocytes sorted from mice with indicated genotype. Data are presented relative to Actb. (C) Cell cycle analysis of DN4 thymocytes from age (6-week-old) and gender-matched control (Ctrl, Sel1lflox/flox), Sel1l KO (Sel1lflox/flox; CD2-iCre), Perk KO (Perkflox/flox; CD2-iCre)\u00a0and Sel1l/Perk double knockout (DKO. Sel1lflox/flox; Perkflox/flox; CD2-iCre) mice. n = 3\u20135 each group. Data are shown as mean \u00b1 s.d. The statistical signi\ufb01cance was calculated by two-tailed unpaired t-test (A, B) or One-way ANOVA with Turkey test (C). n.s., not significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\n## Discussion\n\nIn this study, we have uncovered a novel 'Notch-ERAD' axis in thymocyte development. In the absence of the core ERAD protein SEL1L, thymocytes failed to survive \u03b2-selection and T cell development was severely impaired. Our results imply that the protein synthesis and folding demands during \u03b2-selection require a robust proteome quality control monitoring which is accomplished by the ERAD in thymocytes transitioning from the DN3 to DN4 stage. Thus, induction of the SEL1L axis of ERAD, which peaks at the DN3 stage, represents a previously undefined and critical ER proteostasis checkpoint during \u03b2-selection. It is notable that this ER proteostasis checkpoint is also regulated by the same Notch signals which, together with the pre-TCR, induce \u03b2-selection in DN3 thymocytes. We identified that Notch1 and RBP-J directly bind to most ERAD gene promoters and directly regulate their expression. In fact, we observed that Notch-signal induced SEL1L protein levels exceeded the change in Sel1l mRNA expression (Figure 4B,C), suggesting additional post-transcriptional regulation of ERAD by Notch that warrants further investigation.\n\nERAD and UPR are two key ER protein quality control machineries that are activated at different thresholds. ERAD is responsible for the clearance of misfolded proteins at steady-state and is constitutively activated regardless of ER stress. In contrast, the UPR is a stress response pathway that is triggered when the accumulation of misfolded and unfolded proteins exceed the ER folding capacity. Existing evidence suggest that UPR pathways like the IRE1\u03b1-XBP1 axis appear to selectively regulate hematopoietic cell differentiation programs but individual UPR enzymes influence early thymopoiesis remain to be fully characterized. For instance, the IRE1\u03b1-XBP1 is essential for eosinophil (Bettigole et al., 2015), dendritic cell (Cubillos-Ruiz et al., 2015; Iwakoshi et al., 2007; Osorio et al., 2014), NK (Dong et al., 2019; Wang et al., 2019), and plasma cell (Reimold et al., 2001; Shapiro-Shelef and Calame, 2005) differentiation. Unlike the marked defect in thymocyte development in the absence of SEL1L-ERAD, our current study now clearly demonstrates that individual UPR regulators are dispensable for \u03b2-selection and subsequent stages of thymocyte maturation. We specifically found that deletion of the individual UPR master regulators XBP1, ATF6, or PERK had no overt impact on \u03b1\u03b2 T cell development in the thymus and peripheral tissues. Nevertheless, our results don\u2019t exclude the possibility that redundancy might exist among the UPR pathways during thymocyte development.\n\nSel1l-deficiency impaired the survival of DN thymocytes following \u03b2 selection and resulted in the inability of DN3 thymocytes to expand and progress to DP thymocytes. Interestingly, this phenotype was not due to defective rearrangement of TCR\u03b2 nor defective Notch or pre-TCR signaling which both activate pro-survival genes in \u03b2-selected thymocytes (Ciofani and Z\u00fa\u00f1iga-Pfl\u00fccker, 2005; Kreslavsky et al., 2012; Zhao et al., 2019). Instead, our genetic inactivation delineate a pro-apoptotic pathway driven by the PERK axis. While all three UPR pathways can promote apoptosis and appear to be upregulated in Sel1l CKO thymocytes, it is notable that only PERK axis induces apoptosis in Sel1l CKO thymocytes. On the contrary, induction of the IRE1\u03b1-XBP1 axis of the UPR can help cells adapt to stress. Consistent with this view, deletion of Xbp1 in Sel1l CKO thymocytes exacerbated defects in thymocyte development unlike PERK inactivation which restored T cell development from Sel1l CKO thymocytes.\n\nAlthough \u03b1\u03b2 T and \u03b3\u03b4 T cells develop in the thymus from the same thymic seeding progenitors, the function of ERAD appears to be restricted to \u03b1\u03b2 T cells. While future studies are needed to determine the alternative protein quality control mechanism regulating \u03b3\u03b4 T cell development, our findings are consistent with the selective requirement for Notch in driving \u03b2-selection (Maillard et al., 2006), a key developmental checkpoint unique to the \u03b1\u03b2 T cell differentiation program. In addition, DN thymocytes undergoing \u03b2 selection expand more than 100-fold, a situation that likely explains their increased translational activity. That post-\u03b2-selected DN thymocytes displayed markedly low levels of misfolded/unfolded proteins support the view that upregulation of the SEL1L-ERAD axis in DN3 thymocytes provides a mechanism to alleviate deleterious proteotoxic stress that compromise the fitness of DN4 thymocytes. In this way, SEL1L-ERAD safeguards to DN3/DN4 thymocyte pool to ensure that the maximum number of DN thymocytes expressing a functional TCR\u03b2 protein progress to the DP stage to audition for positive selection.\n\nActivating NOTCH1 mutations are found in more than 50% of human T cell acute lymphoblastic leukemia (T-ALL) patients (Weng et al., 2004) wherein Notch plays pivotal roles in regulating the survival and metabolism of T-ALL cells (Aster et al., 2011; Garc\u00eda-Peydr\u00f3 et al., 2018). It will be of interest in future studies to investigate whether Notch-regulated ERAD also promotes ER proteostasis and sustains T-ALL survival by clearing misfolded proteins and restricting ER stress-induced cell death.\n\nIn summary, our study reports a previously unknown function of Notch in maintaining proteostasis and protecting post-\u03b2-selection thymocytes from ER stress by upregulating ERAD. We propose that in addition to driving energy metabolism and survival programs demanded by proliferating thymocytes following \u03b2-selection, Notch signals in parallel activate the ERAD machinery in DN3 thymocytes to clear misfolded proteins. Thus, stringent protein quality control through the SEL1L-ERAD pathway is required for successful \u03b2-selection and the development of the \u03b1\u03b2 T cells that mediate adaptive immunity.\n\n## Materials and methods\n\nKey resources table is in Appendix 1.\n\n### Mice\n\nThe mice were maintained in a pure C57BL/6 background and kept under specific-pathogen-free conditions in the transgenic mouse facility of the Baylor College of Medicine (22\u201324\u00b0C, 30\u201370% humidity with a 12 hr dark and 12 hr light cycle). Sel1lflox/flox and Xbp1flox/flox were described previously (Xu et al., 2020), Perkflox/flox mice were purchased from Jackson Laboratory (Stock No. 023066). The floxed mice were crossed with either hCD2-iCre (The Jackson Laboratory, 008520) or Cd4-Cre (The Jackson Laboratory, 022071) mice to generate Sel1lflox/flox; CD2-iCre, Sel1lflox/flox; Cd4-Cre, Xbp1flox/flox; CD2-iCre, or Perkflox/flox; CD2-iCre mice. The Sel1lflox/flox; Xbp1flox/flox; CD2-iCre mice and Sel1lflox/flox; Perkflox/flox; CD2-iCre mice were generated by crossing Sel1lflox/flox; CD2-iCre mice with Xbp1flox/flox or Perkflox/flox mice respectively. Atf6flox/flox; Vav1-iCre mice were generated by crossing Atf6lflox/flox (The Jackson Laboratory, 028253) with Vav1-iCre mice (The Jackson Laboratory, 008610). Sel1l CKO; OTII transgenic mice were generated by crossing Sel1l CKO mice with OTII transgenic mice (The Jackson Laboratory, 004194).\n\nSix- to 8-week-old gender-matched mice were used for phenotype analysis and in vitro assay. For the bone marrow transplantation assays, female C57BL/6-Ly5.1 (CD45.1+) mice (Charles River, 564) were used at 8\u201312 weeks of age. All procedures were approved by the Baylor College of Medicine Institutional Animal Care and Use Committee or Case Western Reserve University Institutional Animal Care and Use Committee. The study is compliant with all of the relevant ethical regulations regarding animal research.\n\n### In vivo assays\n\nFor the competitive bone marrow transplantation experiments, CD45.1+-recipient mice were lethally irradiated (10 Gy, delivered with two equal doses 4 hr apart) and injected retro-orbitally with 1x106 whole bone marrow cells from Sel1lflox/flox or Sel1lflox/flox; CD2-iCre mice with an equal number of CD45.1+ competitor BM cells. For the BrdU incorporation assay, the mice were injected intraperitoneally with single dose of BrdU (BD, 559619; 50 mg/kg body weight) 2 hr before euthanization.\n\n### Flow cytometry and cell sorting\n\nSingle-cell suspensions from thymus, spleen and lymph nodes were obtained by passing the tissues through a 70 \u03bcm strainer. Bone marrow was removed from femurs and tibiae by flushing with PBS, 2% FBS. For bone marrow and spleen cell suspensions, red blood cells were removed by incubating with RBC Lysis Buffer (Biolegend, 420301). 1 \u00d7 106 to 2 \u00d7 106 cells were stained with antibodies at 4\u00b0C for 30 min in phosphate-buffered saline (PBS) containing 1% bovine serum albumin (BSA), followed by washing to remove the unbound antibodies.\n\nAntibodies used for flow cytometry: The biotin-conjugated lineage markers for excluding non-DN cells are purchased from BioLegend: CD11b (M1/70, 101204), CD11c (N418, 117303), Ter119 (Ter119, 116204), Gr-1 (RB6-8C5, 108404), CD49b (DX5, 108904), and B220 (RA3-6B2, 103204). CD4 (BV650, RM4-5, 100546, BioLegend), CD8 (AF700, 53\u20136.7, 100730, BioLegend), CD25 (PE-Cy7, 3C7, 101915, BioLegend), CD44 (PE594, IM7, 103056, BioLegend), c-Kit (APC-Cy7, 2B8, 105838, Biolegend), \u03b3\u03b4TCR (PE, GL3, 118108, Biolegend), and CD27 (APC, LG.3A10, 124211, BioLegend) antibodies were used for analysis of ETP to SP cells in the thymus. CD4 (BV650, RM4-5, 100546, BioLegend), CD8 (AF700, 53\u20136.7, 100730, BioLegend), \u03b3\u03b4TCR (APC, GL3, 118115, BioLegend), B220 (PB, RA3-6B2, 103230, BioLegend), and NK1.1 (FITC, PK136, 108706, BioLegend) antibodies were used for the analysis of mature cells in the spleen and lymph nodes. Anti-CD45.1 (FITC, A20, 110706, BioLegend) and CD45.2 (APC, 104, 109814, BioLegend) antibodies were used for the analyses of donor chimerism in the bone marrow transplantation assay. All antibodies used in this study are listed in Appendix 1. Dead cells were excluded by 4,6-diamidino-2-phenylindole (DAPI) staining.\n\nFor cell sorting, DN thymocytes were purified by negative selection using a magnetic bead/column system (CD4 (L3T4) MicroBeads, 130-117-043; CD8a (Ly-2) MicroBeads, 130-117-044; LD Columns, 130-042-901; all purchased from Miltenyi Biotec) in accordance to the manufacturer\u2019s instructions. The pre-enriched DN cells were further stained as described above to sort DN2, DN3, or DN4 cells. Dead cells were excluded by DAPI staining.\n\nFlow cytometry data were collected using BD FACS Diva eight on a BD LSR II or BD Fortessa analyzer. The cell-sorting experiments were performed on a FACS Aria II cell sorter (BD). The acquired data were analyzed using the FlowJo 10 software.\n\n### Apoptosis assay\n\nFor Annexin V staining, thymocytes were first stained with surface makers and then stained with Annexin V antibody for 30 min at room temperature in Annexin V binding buffer (TONBO, TNB-5000-L050). The cells were resuspended in Annexin V binding buffer with 1 \u03bcg/ml DAPI for analysis.\n\n### Cell proliferation assay\n\nFor cell cycle analysis, thymocytes were stained with surface markers followed by fixation and permeabilization with eBioscience Transcription Factor Staining Buffer Set (Life Technologies, 00-5523-00). The cells were then stained with anti-Ki-67 (FITC, 16A8, 652409, Biolegend) and DAPI for cell cycle analysis. For BrdU staining, total thymocytes were stained with surface markers to define each subset, followed by intracellular staining using the BrdU staining kit according to the manufacturer\u2019s instructions (BD Biosciences, 559619).\n\n### Cell culture and cell lines\n\nOP9 bone marrow stromal cells expressing the Notch ligand DL-1 (OP9-DL1) were kindly provided by Dr. Juan Carlos Z\u00fa\u00f1iga-Pfl\u00fccker (University of Toronto). The OP9-DL1 cells were cultured and maintained in \u03b1MEM medium, supplemented with 10% FBS (Gibco), penicillin (100 \u03bcg/mL), and streptomycin (100 U/mL) (Invitrogen). For thymocytes co-cultures, the sorted DN2 or DN3 cells were plated onto con\ufb02uent OP9-DL1 monolayers (70\u201380% con\ufb02uent) with addition of 5 ng/ml recombinant murine interleukin-7 (PeproTech) and 5 ng/ml Flt3L (PeproTech). Cells were harvested at different time points, filtered through 40 \u03bcm cell strainer, and stained with antibodies including ani-CD45 V450 (Tonbo, 75\u20130451 U100), anti-CD4 BV650 (Biolegend, 100546), anti-CD8a AF700 (Biolegend, 100730), anti-CD44 FITC (Biolegend, 103006), or anti-CD25 APC (Biolegend, 101910), followed by staining with Annexin V PE (Biolegend, 640908) and DAPI (4,6-diamidino-2-phenylindole, Invitrogen, D1306). EL4 cells (ATCC-TIB39) and HEK293T cells (ATCC CRL-3216) were cultured in DMEM with 10% FBS (Gibco), penicillin (100 \u03bcg/mL) and streptomycin (100 U/mL) (Invitrogen). No cell lines were listed in the database of cross-contaminated or misidentified cell lines by International Cell Line Authentication Committee (ICLAC). Cell lines from ATCC were authenticated by the STR profiling method and tested as mycoplasma contamination free by ATCC.\n\n### Immunohistochemical staining\n\nThymus was fixed in fresh 4% paraformaldehyde for 24 hr and stored in 70% ethanol until paraffin embedding. Hematoxylin and eosin staining were performed on 5 \u03bcm\u2013thick paraffin sections. For cleaved caspase-3 IHC, the anti-cleaved caspase-3 antibody (1:50, Cell Signaling Technology #9661) was used. Slides were incubated with Envision Labeled Polymer-HRP Anti-Rabbit (Dako, K4002) for 30 min. Sections were developed with DAB+ solution (Dako, K3468) and counterstained with Harris Hematoxylin. Imaging analysis was performed with ImageJ (FIJI) to automatically count the labeled cells in each region, the data were shown as number of positive cells per region.\n\n### RNA extraction and quantitative real-time PCR\n\nThymocytes were sorted directly into TRIzol LS reagent (Invitrogen, 10296010). Total RNA was extracted according to the manufacturer\u2019s instructions. Total RNA was reverse-transcribed using High-Capacity cDNA Reverse Transcription Kit (Thermo Fisher Scientific, 4368813). Quantitative real-time PCR was performed using PowerUp SYBR Green Master Mix (Thermo Fisher Scientific, A25778) on QuantStudio six real-time PCR system (Applied Biosystems). The primer sequences are listed in Appendix 1.\n\n### Western blot analysis\n\nWestern blot was performed as described previously (Xu et al., 2020). Approximately 5 \u00d7 105 DN3 cells were sorted directly into 250 \u03bcl PBS containing 20% trichoracetic acid (TCA). The concentration of TCA was adjusted to 10% after sorting and cells were incubated on ice for 30 min before centrifugation at 13,000 rpm for 10 min at 4\u00b0C. Precipitates were washed twice with pure acetone (Fisher scientific, A18-4) and solubilized in 9 M urea, 2% Triton X-100, and 1% dithiothreitol (DTT) in 1 x LDS sample buffer (Invitorgen, NP0007). Samples were separated on NuPAGE 4\u201312% Bis-Tris protein gels (Invitrogen, NP0336BOX) and transferred to PVDF membrane (Millipore). The blots were incubated with primary antibodies overnight at 4\u00b0C and then with secondary antibodies. Blots were developed with the SuperSignal West Femto chemiluminescence kit (Thermo Scientific, 34096). Antibodies and reagents used are in Appendix 1. The original western blot images are in source data files.\n\n### RNA-seq and analysis\n\nDN3 thymocytes were directly sorted into TRIzol LS (ThermoFisher, cat. 10296028) and RNA was extracted following the standard protocol. The cDNA libraries were prepared using Truseq Stranded mRNA Kit (Illumina, California, USA # 20020594). Sequencing was performed on Illumina HiSeq 2000 (Illumina, California, USA), 150 bp paired end. Quality control was performed using FastQC. Raw reads were aligned to mouse genome GRC38 using STAR (2.5.2b) and counts for each protein-coding gene were obtained with HTSeq (2.7). DESeq2 package (1.26.0) in R (3.6.1) was used to perform analysis of differential gene expression. Upregulated genes (with adjusted p value < 0.05, log2 fold change > 0.59) were selected for Gene Ontology (GO) analysis using Enrichr (https://maayanlab.cloud/Enrichr/). We further performed Gene Set Enrichment Analysis (GSEA) using fgsea package (1.11.2) with padj-preranked gene lists and mouse gene set collection from Bader Lab. Heatmaps were generated with pheatmap (1.0.12).\n\n### Chromatin immunoprecipitation (ChIP) assay\n\nFor Figure 4C, cell culture plates were pre-coated with PBS or 5 \u03bcg/ml recombinant mouse DLL4 (BioLegend, #776706) overnight at 4\u00b0C before seeding EL4 cells. For Figure 4B,F\u2013I,K and L, soluble DLL4 (5 \u03bcg/ml) was used. EL4 cells were incubated with soluble DLL4 for 24 hr before crosslinked with 1% formaldehyde for 10 min at room temperature. Reaction was quenched with 125 mM glycine. ChIP was performed as previously described (Zhao et al., 2018) with NOTCH1 NICD\u00a0antibody (Abcam, ab27526), RBPJ antibody (Cell Signaling Technology, #5313), or normal rabbit IgG (Cell Signaling Technology, #2729). The sequences of all ChIP primers are listed in Appendix 1.\n\n### Luciferase assay\n\nThe firefly luciferase reporter for Sel1l or Hrd1 (Syvn1) promoter was constructed by cloning the genomic region into the MluI and XhoI sites or the MluI and HindIII sites in the pGL-3 basic vector (Promega), respectively. Mutations were made by overlap extension polymerase chain reaction as previously described (Bryksin and Matsumura, 2010). All constructs were verified by DNA sequencing. The sequences of all primers are listed in Appendix 1. HEK293T cells were transfected with Sel1l or Hrd1 promoter constructs, pRL-PGK (Promega) and 3xFlag-NICD1 (Addgene, #20183) or empty using Lipofectamine 3000 (Invitrogen, L3000015). Cell lysates were collected 48 hr after transfection, and luciferase activities were analyzed using the dual-luciferase reporter assay system (E1910, Promega). pRL-PGK, which expresses Renilla luciferase, was used as the internal control for adjustment of discrepancies in transfection and harvest efficiencies. EL4 cells were transfected with Sel1l or Hrd1 promoter constructs and pRL-PGK (Promega) using Lipofectamine 3000 (Invitrogen, L3000015). Cells were incubated with PBS or 5 \u03bcg/ml recombinant mouse DLL4 (BioLegend, #776706) for 24 hr before analysis.\n\n### V(D)J recombination assay\n\nA total of 5 \u00d7 105 DN3 thymocytes were sorted from control (Ctrl, Sel1lflox/flox) or Sel1l CKO (Sel1lflox/flox; CD2-iCre) thymus and subjected to genomic DNA isolation using PureLink Genomic DNA Mini Kit (K1820-02) according to the manufacturer\u2019s instructions. The amplification of eF-1 fragment was used as input control. The primers used for V\u03b25-J\u03b22, V\u03b28- J\u03b22, V\u03b211-J\u03b22, and eF1 are listed inAppendix 1. PCR products were resolved by 2% agarose gel electrophoresis.\n\n### ER tracker staining\n\nSorted DN3 thymocytes were washed with PBS, incubated with 1 \u03bcM ER-Tracker Green (Thermo Fisher, E34251) in PBS for 15 min at 37\u00b0C. The cells were then washed and resuspended in PBS, and analyzed by flow cytometry.\n\n### Tetraphenylethene maleimide (TMI) staining\n\n5x106 thymocytes were stained for cell surface markers as described above. After surface markers staining, cells were washed twice with PBS. Tetraphenylethene maleimide (TMI; 2 mM in DMSO) was diluted in PBS to reach 50 \u03bcM final concentration and stained samples for 30 min at 37\u00b0C. Samples were washed once with PBS and analyzed by flow cytometry.\n\n### In vivo measurement of protein synthesis\n\nO-propargyl-puromycin (OPP; MedChem Source LLP) stock dissolved in 10% DMSO/PBS was diluted in PBS for intraperitoneal injection at 50 mg/kg. Mice were weighed, individually injected with OPP or vehicle, and euthanized 1 hr after injection. Thymuses were immediately harvested. Thymocytes were isolated and stained for surface antigens and viability dyes, which was followed by fixation and permeabilization according to the Click-iT Plus OPP Alexa Fluor 647 Protein Synthesis Assay Kit (ThermoFisher Scientific). Briefly, after incubation cells were subsequently fixed in 4% paraformaldehyde, permeabilized with 0.5% Triton-X100, then incubated with the AF647 reaction cocktail. Samples were acquired using a BD LSRFortessa and analyzed using FlowJo (Becton Dickinson) as per flow cytometry methods.\n\n### Protein aggregation detection assay\n\nThe PROTEOSTAT Aggresome Detection kit (Enzo Life Sciences, ENZ-51035\u20130025) was used to detect protein aggregates in freshly sorted DN3 thymocytes according to the manufacturer\u2019s instructions. DN3 thymocytes were fixed, permeabilized and incubated with PROTEOSTAT dye (1:10,000 dilution) for 30 min at room temperature. Nuclei were counterstained with DAPI. Samples stained with DAPI only were used as negative controls. Images (16-bit greyscale TIFFs) were analyzed using CellProfiler v2.2. In brief, the DAPI channel images were first smoother with a median filter and nuclei identified with automatic thresholding and a fixed diameter. Nuclei touching the border of the image are eliminated. Touching nuclei are separated with a watershed algorithm. Then, cell boundaries were identified by watershed gradient based on the dye signal, using nuclei as a seed. Metrics were extracted from the cell, cytoplasm, and nuclear compartments.\n\n### TUNEL staining\n\nTUNEL staining was performed on paraffin-embedded tissue sections using the In Situ Cell Death Detection Kit (catalog 11684795910, Roche) following the manufacturer\u2019s instructions. Sections were counterstained with DAPI, and images were captured under fluorescence microscope. Tissue sections incubated with TUNEL reaction buffer without dTd enzyme served as negative controls. Tissue sections treated with DNase I served as positive controls. The quantification of TUNEL+ cells was performed with ImageJ (FIJI) to automatically count the labeled cells in each region. The data were presented as number of positive cells per region.\n\n### Statistics and reproducibility\n\nData are expressed as the mean \u00b1 s.d. or mean \u00b1 s.e.m. as indicated in the figure legends; n is the number of independent biological replicates, unless specifically indicated otherwise in the figure legend. The respective n values are shown in the figure legends. The mice used for bone marrow transplantation were randomized and no blinding protocol was used. No statistical method was used to pre-determine the sample sizes. The results were quantified using GraphPad Prism 8. Student\u2019s t test was utilized to compare the differences between two groups. One-way ANOVA with Tukey\u2019s or Bonferroni\u2019s multiple comparison test was used to compare the differences among three or more groups. Two-way ANOVA with Bonferroni\u2019s post test was used to calculate the significance for in vitro DN2 differentiation measurement over time.\n\n### Study approval\n\nAll protocols described in this study were approved by the Baylor College of Medicine Institutional Animal Care and Use Committee (protocol: AN-6813) or Case Western Reserve University Institutional Animal Care and Use Committee (protocol: 2017\u20130055).\n",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "013d527e-e22b-4e23-8202-5df3f891785a",
+      "submission_id": "78c67ec0-6e6f-41be-b6f9-2ad603263786",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Juan Carlos Z\u00fa\u00f1iga-Pfl\u00fccker, University of Toronto, Sunnybrook Research Institute Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69975.sa1](https://doi.org/10.7554/eLife.69975.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe findings by Liu and colleagues will be of interest to those working on T cell development, thymus biology and metabolic regulation of lymphocyte differentiation. The authors show that thymocytes undergoing pre-T cell receptor signaling, which leads to a highly proliferative state, require the endoplasmic reticulum-associated degradation (ERAD) complex to maintain high fidelity in their protein translational machinery, which enables thymocytes to effectively undergo further differentiation. Key components of the ERAD complex are shown to be under Notch regulation, further extending the absolute and critical role for Notch signaling in the differentiation of thymocytes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Notch-Induced Endoplasmic Reticulum-Associated Degradation Governs Thymocyte b-Selection\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including JC Z\u00fa\u00f1iga-Pfl\u00fccker as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen Satyajit Rath as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michele Anderson (Reviewer #2); David Wiest (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) All three reviewers concurred with the importance and novelty of the work. No new experiments are required, and only clarifications or additional discussion points are required. Please see below for the specific points that need to be addressed.\n\nReviewer #1:\n\nThe work by Liu et al. addresses the translational activity associated with the \u03b2-selection step in T cell development, during which CD4- CD8- double negative (DN) thymocytes that have properly rearranged a T cell receptor (TCR) \u03b2 chain undergo several quick rounds of cell division. The requirement for Notch and TCR-\u03b2, along with a pre-T-\u03b1 chain to form the pre-TCR, have been understood for some time. However, whether Notch also regulated aspects of the translational activity in \u03b2-selection remained unknown.\n\nHere the authors demonstrate that thymocyte differentiation from the DN to the CD4+ CD8+ double positive (DP) stage is tightly regulated by endoplasmic reticulum (ER)-associated degradation (ERAD) complex, which ensures proteome homeostasis, and key components of the ERAD are themselves under transcriptional regulation by Notch. These conclusions are solidly supported by several genetic approaches that take advantage of conditional knock-out mice for Sel1l, a key component of the ERAD complex.\n\nThe authors show that Sel1l deficient thymocytes fail to undergo efficient \u03b2-selection events and have increased ER stress and apoptosis via an unfolded protein response (UPR) activation of the PERK pathway. An elegant mixed bone marrow chimera approach is used to demonstrate the intrinsic requirement for Sel1l in allowing for effective \u03b2-selection.\n\nThe authors also reveal that the XBP1-dependent pathway play a redundant role during \u03b2-selection. Overall, the conclusions are strongly supported by the experimental approaches.\n\nTo increase the breath and potential impact of their findings the authors are encouraged to discuss whether a similar requirement for Sel1l would be present in T-ALLs that show a similar need for Notch signaling to maintain their proteostasis.\n\nThe work presented by the authors convincingly illustrates the role played by the ERAD complex in enabling \u03b2-selection induced proliferation and associated protein synthesis. The demonstration that Notch signaling directly regulates several of the key components of the ERAD complex, such as Sel1l1, nicely adds to our understanding of the critical role play by Notch at this stage of T cell development.\n\n1) Given that Notch is also critically important for the survival and metabolism of many T-ALLs, it would be good for the authors to add this consideration in their discussion. This would further the impact of their work. Plus, if possible, they may be able to show that interfering with the Sel1l-HRD1 pathway can lead to T-ALL cell apoptosis.\n\n2) It is not clear how the Dll4 signaling experiments were performed, was the Dll4 protein pre-bound to the plates prior to adding the EL4 cells? Otherwise, it is quite surprising to see a soluble Notch ligand being able to induce a productive Notch signal.\n\n3) The dual loss of Sel1l and Xbp1 shows a very dramatic loss in thymus cellularity, perhaps this finding should be mentioned in the abstract.\n\n4) In Figure 2 \u2013 supplement 2J, is there are reason that donor derived B cells were not shown?\n\n5) The results shown in Figure 1 \u2013 supplement 1D-L, represent an enormous amount of work for the authors, even if the results from three additional conditionally-deleted gene mouse models are negative, they should be commended for their thoroughness.\n\nReviewer #2:\n\nThis manuscript describes a new type of quality control during the TCRbeta(b)-selection checkpoint of early T cell development. It is known that pre-TCR and Notch signaling at the DN3 to DN4 stages of thymocyte development results in a proliferative burst. High rates of protein translation during this rapid expansion can overwhelm the machinery required for proper protein folding, leading to endoplasmic reticulum (ER) stress. ER stress induces several pathways including the endoplasmic reticulum (ER)-associated degradation (ERAD) pathway and the unfolded protein response (UPR) pathways. While these pathways have been well explored in plasma cell development, their roles in T cell development have been unclear. The importance of this question for understanding thymocyte biology is a major strength of the paper.\n\nIn this study, the authors conditionally deleted Sel1l, a central mediator of ERAD, in early T cell precursors using a CD2-Cre transgene. They found that thymocytes beyond the b-selection checkpoint were severely decreased, indicating a requirement for the ERAD pathway. Using a diverse set of complementary assays, they showed that the absence of Sel1l led to increased apoptosis of DN3 cells due to an increase in unfolded and misfolded proteins. This conclusion was robustly supported by separate assays measuring protein synthesis, ER stress, protein aggregation, proliferation, and apoptosis.\n\nThe defect in T cell development at the DN3 to DN4 transition was even more clearly manifested in a competitive bone marrow chimera study, emphasizing a cell intrinsic role for Sel1l in maintaining DN3 fitness.\n\nBy contrast, loss of Sel1l in the CD2-Cre mice did not affect gd T cell development, although the authors did not distinguish between different gd T cell subsets in this study. They also found that Sel1l was dispensable for T cell development after b-selection using a CD4-Cre transgene, which was consistent with the fact that positive selection of DP thymocytes does not result in a proliferative burst. The specific importance of the ERAD pathway was reinforced by studies of a number of mouse strains carrying mutations in the UPR responses, which did not perturb T cell development. The comprehensive nature of these analyses is a major strength of the paper.\n\nAnother important finding was that multiple members of the ERAD pathway were under direct regulation of Notch signaling in T lineage cells, providing a previously unappreciated role for Notch1 in regulating survival. Again, multiple complementary assays were used to reach this conclusion, including chromatin immunoprecipitation, promoter assays, and the use of OP9-DL4 cells to activate Notch signaling, which is a much more physiological method for studying Notch biology than introducing a constitutively activated form of Notch.\n\nInterestingly, an RNA-seq analysis of Sell1l-deficient DN3 cells showed that genes belonging to UPR pathways were upregulated, presumably to help compensate for the absence of ERAD. Double mutants of Sel1l and Xbp1 exacerbated the defect, whereas deletion of PERK in Sel1l-deficient mice restored thymocyte numbers and survival. Thus, the authors concluded that Notch-mediated upregulation of the ERAD machinery alleviates the proteotoxic stress that occurs during the post-b selection expansion, and that PERK is required for the ER-stress cell death that occurs in the absence of ERAD.\n\nThis is a well-written, elegant, and comprehensive study that sheds new light on physiological parameters of T cell development. Moreover, the connection between Notch1 and ERAD highlights its central role in many aspects of survival at the b-selection checkpoint.\n\nThis is a comprehensive analysis of the pathways that regulate proteotoxic stress during T cell development, with well supported conclusions and beautifully presented data.\n\nReviewer #3:\n\nThe manuscript by Liu et al., explores the mechanisms controlling proteostasis during development of T cell progenitors in the thymus. Their principal finding is that the rapid transition from quiescence to active proliferation that occurs during traversal of the \u03b2-selection checkpoint causes the accumulation of misfolded proteins that are managed via dislocation from the endoplasmic reticulum (ER) into the cytol and degradation through the process of ER-associated degradation (ERAD). Moreover, the trophic signals that promote this transition and the capacity of these cells to manage their proteotoxic insult are both linked to Notch signaling and its capacity to induce genes associated with ERAD, specifically Sel1l. Sel1l appears to be a direct Notch target and its absence blocks traversal of the \u03b2-selection checkpoint via induction of proteotoxicity induced apoptosis. Apoptosis and the developmental arrest can be alleviated by co-elimination of one of the major ER-stress signaling effectors, PERK, but not another ER-stress effector XBP-1. Based on these findings, the authors conclude that Notch regulation of ERAD, but not ER-stress (or the unfolded protein response) play a critical role in supporting traversal of the \u03b2-selection checkpoint.\n\nThis study is well designed and executed, the experimental findings support the authors conclusions, and work performed provides new insight into a new role for Notch signaling in supporting the development of \u03b1-\u03b2 lineage T cells.\n",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "caa29aca-2a16-4937-a9ec-8e1e6a14af9f",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C1",
+      "claim": "DN2 to DN4 thymocytes incorporated the most O-propargyl puromycin (OP-Puro) compared to DP and mature single positive thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to DP and mature single positive thymocytes, DN2 to DN4 thymocytes incorporated the most OP-Puro (Figure 1B), a likely reflection of their high metabolic and proliferative activity (Carpenter and Bosselut, 2010; Kreslavsky et al., 2012; Nagelreiter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B measuring OP-Puro incorporation across thymocyte subsets, and is also supported by citations to prior literature on metabolic and proliferative activity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "fd9b6703-4875-4695-b549-a937eebd1863",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C2",
+      "claim": "DN4 thymocytes display markedly lower levels of misfolded/unfolded proteins compared to DN2 and DN3 thymocytes despite comparable protein synthesis rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, despite comparable and high protein synthesis rates across DN2 to DN4 thymocytes, we found that DN4 thymocytes displayed markedly lower levels of misfolded/unfolded proteins (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C measuring misfolded/unfolded proteins using TMI staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "4055101a-4b54-4f0e-9dea-56cddadecd5d",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C3",
+      "claim": "The DN3-to-DN4 transition is accompanied by induction of proteome quality control mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggested that the DN3-to-DN4 transition, which is initiated by \u03b2-selection, is accompanied by induction of proteome quality control mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that DN4 cells have lower misfolded proteins despite high synthesis rates, suggesting quality control induction.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "a930fff0-06f4-4cf4-aae7-4bcb8535d625",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C4",
+      "claim": "Expression of ERAD gene Sel1l peaks in DN3 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found elevated expression of the core ERAD (Sel1l) and the UPR (Xbp1, Ddit3 (Chop), Atf4, Dnajb9, and Hspa5 (Bip)) genes in DN3 thymocytes (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative RT-PCR data shown in Figure 1D measuring gene expression across thymocyte subsets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "80c7613c-c3ab-4368-bc61-730589cc5992",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C5",
+      "claim": "Expression of UPR genes (Xbp1, Ddit3, Atf4, Dnajb9, and Hspa5) is elevated in DN3 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found elevated expression of the core ERAD (Sel1l) and the UPR (Xbp1, Ddit3 (Chop), Atf4, Dnajb9, and Hspa5 (Bip)) genes in DN3 thymocytes (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative RT-PCR data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "dee20545-544a-479b-90f0-4eb9c003ccc4",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C6",
+      "claim": "Induction of ERAD and UPR genes peaks in the DN3 thymocyte stage in which \u03b2-selection is initiated.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, induction of these genes peaked in the DN3 thymocyte stage in which \u03b2-selection is initiated (Takahama, 2006) and preceded the reduction of misfolded/unfolded proteins in DN4 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and a citation to prior literature on \u03b2-selection timing.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "4b1aae11-efcd-4aea-abb3-eca7fcb7d173",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C7",
+      "claim": "CD2-iCre-mediated deletion of Sel1l results in markedly decreased thymus size and cellularity.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, CD2-iCre-mediated deletion of the ERAD core component Sel1l (Sel1lflox/flox; CD2-iCre mice, hereafter designated as Sel1l CKO) resulted in a markedly decreased thymus size and cellularity, with significantly reduced and dispersed medullary regions compared to control littermates (Sel1lflox/flox; Ctrl) (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 2A-D measuring thymus size and cellularity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "6e8d3a0f-ed97-4ee9-a2ff-b7d3a3666364",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C8",
+      "claim": "Sel1l deletion results in a profound reduction of peripheral T cells in the spleen and lymph nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced thymus cellularity was accompanied by a profound reduction of peripheral T cells in the spleen and lymph nodes from Sel1l CKO mice compared to control animal (Figure 2\u2014figure supplement 1O\u2013R).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1O\u2013R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "51a61132-32a7-434d-b8d1-cddd2c711926",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C9",
+      "claim": "Sel1l deletion has no impact on \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Sel1l deletion had no impact on \u03b3\u03b4 T cells (Figure 2\u2014figure supplement 1S), indicating that within the T-cell lineage, SEL1L is selectively required for \u03b1\u03b2 T cell development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1S.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "a3a0e227-1fbb-4519-a658-e63e61e1ef5f",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C10",
+      "claim": "SEL1L is selectively required for \u03b1\u03b2 T cell development within the T-cell lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Sel1l deletion had no impact on \u03b3\u03b4 T cells (Figure 2\u2014figure supplement 1S), indicating that within the T-cell lineage, SEL1L is selectively required for \u03b1\u03b2 T cell development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Sel1l deletion affects \u03b1\u03b2 but not \u03b3\u03b4 T cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "03c4086a-4a0c-4712-9525-cb47a14cb4e7",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C11",
+      "claim": "Deletion of Xbp1 or Perk using hCD2-iCre had no effect on T cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the UPR mediator Xbp1 or Perk had no effect on T cell development as thymic cellularity, numbers of DN, DP, single positive (SP) thymocytes and splenic T cell numbers were comparable in gene-deficient and littermate control animals (Figure 2\u2014figure supplement 1C\u2013J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1C\u2013J comparing thymocyte populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "fcfb13de-d51a-4506-8426-f0e31131528d",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C12",
+      "claim": "Vav1-iCre-mediated deletion of Atf6a did not perturb thymocyte development.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Vav1-iCre-mediated deletion of Atf6a which initiates in bone marrow hematopoietic cell progenitors (Joseph et al., 2013) did not perturb thymocyte development (Figure 2\u2014figure supplement 1K\u2013N).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1K\u2013N and a citation about Vav1-iCre activity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "be948267-12d3-4c6d-89ae-81e334941db6",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C13",
+      "claim": "Sel1l-deficiency markedly abrogated DN4 thymocyte generation in OP9-DL1 co-culture.",
+      "claim_type": "EXPLICIT",
+      "source": "We cultured DN2 thymocytes from control or Sel1l CKO mice on OP9-DL1 cells and found that Sel1l-deficiency markedly abrogated DN4 thymocyte generation (Figure 2K\u2013M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from OP9-DL1 co-culture shown in Figures 2K-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "fdd43ca4-bf5e-4d8e-970d-a65c2b8e319b",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C14",
+      "claim": "On day 17 of OP9-DL1 co-culture, 71.6% of Sel1l CKO-derived cells remained as DN3 cells compared to 31.3% of control-derived cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 17 of co-culture, only 31.3% DN3 cells remained in control-derived cells, while more than three-fold DN3 cells (71.6%) were found in Sel1l CKO-derived cells (Figure 2K\u2013M), consistent with a block in DN3 to DN4 thymocyte transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from OP9-DL1 co-culture shown in Figures 2K-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "3238a4ab-d311-4325-a75a-8f8b0f4bd219",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C15",
+      "claim": "Cell-intrinsic SEL1L activity is required for post \u03b2-selection DN thymocyte development.",
+      "claim_type": "EXPLICIT",
+      "source": "Since only DN3 thymocytes that have successfully undergone \u03b2-selection differentiate to the DN4 and DP thymocyte stage, these results reinforce that cell-intrinsic SEL1L activity is required for post \u03b2-selection DN thymocyte development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the OP9-DL1 co-culture data and established knowledge about \u03b2-selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "e5b9ccb2-3ec8-451b-83f7-f3d2bf0c86a3",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C16",
+      "claim": "Sel1l CKO DN4 thymocytes showed more BrdU incorporation than control DN4 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although BrdU incorporation was similar in control and Sel1l CKO DN3 thymocytes, we observed more BrdU incorporation in Sel1l CKO DN4 thymocytes than that in control DN4 thymocytes (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A measuring BrdU incorporation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "47e23351-a94e-46c3-bf6c-a1e5b6dbf8c9",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C17",
+      "claim": "Sel1l CKO DN4 thymocytes have less cells in G0 phase and more in G1 and S/G2/M phase compared to control DN4 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, co-staining for Ki-67 and the DNA dye (DAPI) revealed less Sel1l CKO DN4 thymocytes in G0 phase, and more in G1 and S/G2/M phase (Figure 3B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cell cycle analysis data shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "cd7e7b09-255a-4987-bc7a-b52d77f1d76f",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C18",
+      "claim": "Sel1l CKO DN3 thymocytes showed higher apoptosis measured by proportions of Annexin-V positive cells in OP9-DL1 co-culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Sel1l CKO DN3 thymocytes showed higher apoptosis measured by proportions of Annexin-V positive cells (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D measuring Annexin-V staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "3de7bff2-bd78-42ed-a43b-92ec79fe045a",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C19",
+      "claim": "Sel1l CKO thymus showed more active Caspase-3 apoptotic cells in the cortex area compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controls, Sel1l CKO thymus showed more active Caspase-3 apoptotic cells in the cortex area (Figure 3E,F), which is typically populated by DN thymocytes (Trampont et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunohistochemistry data shown in Figures 3E and 3F, and a citation about cortex composition.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "23eb2613-8806-4878-9271-ad6ed155d5da",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C20",
+      "claim": "Sel1l-deficient \u03b2-selected DN3 cells undergo apoptosis as they differentiate into DN4 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we concluded that Sel1l-deficient \u03b2-selected DN3 cells were undergoing apoptosis as they differentiated into DN4 thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple apoptosis measurements including Annexin-V, Caspase-3, and TUNEL staining.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "9046fffc-ab1b-42b2-930a-47eb0b37deae",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C21",
+      "claim": "Stimulation of EL4 cells with Notch ligand Delta-like 4 (DLL4) induced expression of ERAD genes including Sel1l, Hrd1, Os9, and Edem1.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of the thymoma cell line EL4 with Notch ligand Delta-like 4 (DLL4) (Camelo et al., 2012; Fitzgerald and Greenwald, 1995) induced expression of the genes involved in ERAD including Sel1l, Hrd1, Os9, and Edem1 as well as SEL1L proteins (Figure 4B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 4B and 4C, and citations about DLL4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "d61981a7-bdb3-4ae7-b4d2-11763c8da460",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C22",
+      "claim": "Treatment with DAPT significantly reduced expression of Sel1l, Hrd1, Os9, and Edem1 in DN3 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, treatment with DAPT significantly reduced expression of Notch target genes Hes1, Deltex1, and Ptcra (Figure 4\u2014figure supplement 1B) and also reduced Sel1l, Hrd1, Os9, and Edem1 expression in DN3 thymocytes (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D measuring gene expression after DAPT treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "203a92c9-af02-403e-80b3-fa92e99a9a47",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C23",
+      "claim": "Notch signals regulate expression of genes constituting the ERAD machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that Notch signals regulate expression of genes constituting the ERAD machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from DLL4 stimulation and DAPT inhibition experiments showing Notch-dependent ERAD gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "7e0bde07-d18d-41a5-b5a9-346bf60105b8",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C24",
+      "claim": "The promoters of Sel1l and Hrd1 contain conserved binding sites for RBP-J.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the promoters of the core ERAD genes, Sel1l and Hrd1, revealed conserved binding sites for RBP-J (Figure 4E), the DNA binding partner and master transcription factor of the NICD transactivation complex (Castel et al., 2013; Tanigaki and Honjo, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequence analysis shown in Figure 4E and citations about RBP-J function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "1e2dcf48-b630-4917-b407-300a4a970633",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C25",
+      "claim": "DLL4 stimulation of Notch signaling significantly induced NICD and RBP-J bindings at the promoters of Sel1l, Hrd1, Os9, and Edem.",
+      "claim_type": "EXPLICIT",
+      "source": "DLL4 stimulation of Notch signaling significantly induced NICD and RBP-J bindings at the promoters of Sel1l, Hrd1, Os9, and Edem (Figure 4F\u2013I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ChIP-qPCR data shown in Figures 4F-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "83ca7626-c1ae-4019-9c6e-8c36e96d46b3",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C26",
+      "claim": "NICD potently induced both Sel1l and Hrd1 promoter activity in a dose-dependent manner in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When co-transfected with promoter luciferase reporters into HEK293T cells, NICD potently induced both Sel1l and Hrd1 promoter activity in a dose-dependent manner (Figure 4J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by luciferase reporter assay data shown in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "1ba377c6-cc38-40e5-9d2a-6e022160d812",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C27",
+      "claim": "Mutation of the RBP-J-binding sites abolished DLL4-driven induction of Sel1l or Hrd1 luciferase reporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, mutation of the RBP-J-binding sites abolished DLL4-driven induction of Sel1l or Hrd1 luciferase reporter activity (Figure 4K,L).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by luciferase reporter assay data with mutant promoters shown in Figures 4K and 4L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "c2cd537c-492f-4d98-9eb3-ef2a82ed6a33",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C28",
+      "claim": "Notch signaling directly regulates expression of SEL1L ERAD machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Notch signaling directly regulates expression of SEL1L ERAD machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from ChIP and luciferase reporter data showing direct binding and transcriptional activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "fe6946b4-0671-445d-bfe8-7b69c78044a4",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C29",
+      "claim": "Sel1l deletion did not affect surface Notch1 protein levels in DN thymocyte populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although ERAD is known to regulate surface receptor expression in a substrate-specific manner (van den Boomen and Lehner, 2015; Xu et al., 2020), Sel1l deletion did not affect surface Notch1 protein levels in DN thymocyte populations (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 4\u2014figure supplement 1C and citations about ERAD substrate specificity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "34cfee50-6806-42fe-b997-7ad93a2415ca",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C30",
+      "claim": "SEL1L has little impact on the expression of Notch target genes Hes1 and Ptcra in DN3 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SEL1L had little impact on the expression of Notch target genes Hes1 and Ptcra in DN3 thymocytes (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "0c48d1ee-878f-49c6-a76e-eec670f97d15",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C31",
+      "claim": "Thymocyte \u03b2-selection defects in Sel1l CKO mice were not due to failure in Notch signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results not only suggest that ERAD does not regulate Notch signaling per se but also imply that thymocyte \u03b2-selection defects in Sel1l CKO mice were not due to failure in Notch signal transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from data showing Sel1l deletion does not affect Notch1 levels or target gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "a9dc9f0e-3e04-4bcc-8630-6e768bef25a5",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C32",
+      "claim": "Sel1l-deficiency does not affect Tcrb gene rearrangement in DN3 and DN4 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic DNA analysis of Sel1l-deficient DN3 and DN4 thymocytes showed that recombination of Vb5-Jb2, Vb8-Jb2, and Vb11-Jb2 gene segments were not altered (Figure 5\u2014figure supplement 1A), indicating that Sel1l deficiency does not affect Tcrb gene rearrangement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PCR analysis of V(D)J recombination shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "7e87fad5-60db-4183-bf94-9540563d71a2",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C33",
+      "claim": "Expression of intracellular TCR\u03b2 in pre-selected DN3a, post-selected DN3b and DN4 cells was comparable between control and Sel1l CKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of intracellular TCR\u03b2 in pre-selected DN3a, post-selected DN3b and DN4 cells was comparable between control and Sel1l CKO mice (Figure 5\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 5\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "04b52b68-7244-44b7-8705-3486cfe71519",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C34",
+      "claim": "Sel1l deletion had no impact on the expression of pre-TCR signaling intermediates including LCK and ZAP-70 in DN3 and DN4 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sel1l deletion also had no impact on the expression of pre-TCR signaling intermediates including LCK and ZAP-70 in DN3 and DN4 thymocytes (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "5adbd0a8-e05e-4a0c-bb34-1f590e7f7fdb",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C35",
+      "claim": "The OT-II TCR transgene did not rescue T cell development in OT-II. Sel1l CKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the OT-II TCR transgene did not rescue T cell development in OT-II. Sel1l CKO mice which showed a >80% decrease in thymic cellularity, DP and SP thymocytes (Figure 5\u2014figure supplement 1E\u2013G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1E\u2013G comparing OT-II transgenic mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "7d5d1430-dd46-4d36-813c-988a5df21526",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C36",
+      "claim": "\u03b2-selection defects in Sel1l CKO mice were not due to defects in pre-TCR expression or signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data implied that \u03b2-selection defects in Sel1l CKO mice were not due to defects in pre-TCR expression or signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from data showing normal TCR\u03b2 expression, signaling intermediates, and lack of rescue by TCR transgene.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "09b78f13-8b83-42e1-8899-bedce26beed8",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C37",
+      "claim": "The most upregulated pathways in Sel1l CKO DN3 thymocytes were ER stress response and the UPR, including both IRE1\u03b1 and PERK pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The most upregulated pathways in Sel1l CKO DN3 thymocytes were ER stress response and the UPR, including both IRE1\u03b1 and PERK pathways (Figure 5A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data and pathway analysis shown in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "e5add144-5d7a-4bfd-8f9d-7ba7044b7b8e",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C38",
+      "claim": "Sel1l CKO DN3 cells showed significant ER expansion compared to control thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with elevated ER stress, flow cytometry quantification of ER tracker dye staining indicated significant ER expansion in Sel1l CKO DN3 cells compared to control thymocytes (Figure 5F,G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ER tracker staining data shown in Figures 5F and 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "07717248-f006-4f75-8882-a3e69b12c014",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C39",
+      "claim": "Sel1l CKO thymocytes showed a significant increase in IRE1\u03b1 proteins and in the splicing of its substrate Xbp1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant increase in IRE1\u03b1 proteins and in the splicing of its substrate Xbp1 in Sel1l CKO thymocytes (Figure 5H,I and Figure 5\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Western blot and PCR data shown in Figures 5H, 5I and Figure 5\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "f38e7499-a8d3-415d-a92b-427fef8741a0",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C40",
+      "claim": "Sel1l CKO DN3 thymocytes showed increased PERK and eIF2\u03b1 phosphorylation as well as increased ATF4 and BIP proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed increased PERK and eIF2\u03b1 phosphorylation as well as increased ATF4 and BIP proteins in Sel1l CKO DN3 thymocytes (Figure 5H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "28568c85-8642-4d95-9f7d-254d81e70756",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C41",
+      "claim": "Various ER chaperones and other members of ERAD pathway were markedly upregulated in Sel1l CKO DN3 and DN4 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Various ER chaperones, including Calreticulin, Grp94 (Hsp90b1), Hspa5(Bip), Hyou1, and Canx, and other members of ERAD pathway were markedly upregulated in Sel1l CKO DN3 and DN4 thymocytes (Figure 5\u2014figure supplement 2C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 5\u2014figure supplement 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "6cac30fc-a201-4fd6-80ea-940fa1a52f9c",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C42",
+      "claim": "Sel1l deletion triggers ER stress leading to activation of all three UPR branches in DN thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Sel1l deletion triggers ER stress leading to activation of all three UPR branches in DN thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from data showing activation of IRE1\u03b1, PERK, and ATF6 pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "e43bc9cb-f8f1-43b6-9cb4-f895273cbd09",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C43",
+      "claim": "Sel1l CKO DN3 thymocytes exhibited significantly higher staining for misfolded/unfolded proteins with TMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that Sel1l CKO DN3 thymocytes exhibited significantly higher staining for misfolded/unfolded proteins with TMI (Figure 5J,K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by TMI staining data shown in Figures 5J and 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "a997aaee-8102-4671-a7f3-b5126dac66b8",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C44",
+      "claim": "Sel1l CKO DN3 thymocytes displayed more protein aggregates compared with control thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sel1l CKO DN3 thymocytes displayed more protein aggregates compared with control thymocytes (Figure 5M,N).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ProteoStat staining data shown in Figures 5M and 5N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "ea0497f8-d966-4cb6-9782-a4b6a2ad3d61",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C45",
+      "claim": "DN thymocytes lacking SEL1L accumulate misfolded/unfolded proteins leading to proteotoxic stress that triggers the UPR and eventually apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results corroborate that DN thymocytes lacking SEL1L accumulate misfolded/unfolded proteins leading to proteotoxic stress that then trigged the UPR and eventually apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple measurements of misfolded proteins, UPR activation, and apoptosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "9fc9b081-b355-4c65-8d11-2b6458fadb93",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C46",
+      "claim": "Sel1l/Xbp1 double-knockout mice showed more severe thymocyte development defects including a more than 95% loss in thymus cellularity and DP thymocyte numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, Sel1l/Xbp1 double-knockout (DKO) mice showed more severe thymocytes development defects including a more than 95% loss in thymus cellularity and DP thymocyte numbers (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "3759fc87-6ee2-4203-afb1-bbdc9f706a5a",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C47",
+      "claim": "Induction of the IRE1\u03b1/XBP1 pathway functions as a compensatory adaptative pathway to restrain Sel1l-deficiency induced ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that induction of the IRE1\u03b1/XBP1 pathway functions as a compensatory adaptative pathway to restrain Sel1l-deficiency induced ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Xbp1 deletion worsens the Sel1l CKO phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "97282b7e-3ad9-4673-a1a0-81479264c06f",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C48",
+      "claim": "Deletion of Perk significantly rescued the Sel1l CKO mouse phenotype evident in the near complete restoration of thymus cellularity, DP and SP thymocyte cell numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to deletion of Xbp1, we found that deletion of Perk significantly rescued the Sel1l CKO mouse phenotype evident in the near complete restoration of thymus cellularity, DP and SP thymocyte cell numbers (Figure 6A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 6A and 6B comparing double knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "5e22d6aa-0239-45f2-8d6f-ae92577d1261",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C49",
+      "claim": "Perk deletion restored peripheral T cells in spleen and lymph nodes compared to Sel1l CKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Perk deletion also restored peripheral T cells in spleen and lymph nodes compared to Sel1l CKO mice (Figure 6C\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 6C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "8f5ea140-f1b4-4c03-b534-66ea69a26507",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C50",
+      "claim": "Perk deletion significantly reduced Sel1l-deficiency induced Chop induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the rescue, Perk deletion significantly reduced Sel1l-deficiency induced Chop induction (Figure 6G) and thymocyte apoptosis (Figure 6H,I) and restored normal cell cycle kinetics to Sel1l CKO DN4 thymocytes (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "a65d288c-7434-46da-8415-ceda3e55e22b",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C51",
+      "claim": "Perk deletion reduced thymocyte apoptosis in Sel1l CKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the rescue, Perk deletion significantly reduced Sel1l-deficiency induced Chop induction (Figure 6G) and thymocyte apoptosis (Figure 6H,I) and restored normal cell cycle kinetics to Sel1l CKO DN4 thymocytes (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunohistochemistry data shown in Figures 6H and 6I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "fe7e2efe-5ae5-4dcd-90ae-dec877d19a2c",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C52",
+      "claim": "Activated PERK signaling contributed to the apoptosis of DN3/DN4 thymocytes that impaired \u03b2-selection in Sel1l CKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As Perk deficiency alone had no effect on T cell development (Figure 6A\u2013I), these results indicate that activated PERK signaling contributed to the apoptosis of DN3/DN4 thymocytes that impaired \u03b2-selection in Sel1l CKO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the rescue of Sel1l CKO phenotype by Perk deletion and the lack of phenotype in Perk single knockout.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "8456f309-3798-4efb-b54d-6f2134db6c32",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C53",
+      "claim": "SEL1L-ERAD promotes \u03b2-selected DN thymocyte differentiation by maintaining ER proteostasis and suppressing ER stress-induced cell death through the PERK pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, we conclude that SEL1L-ERAD promotes \u03b2-selected DN thymocyte differentiation by maintaining ER proteostasis and suppressing ER stress-induced cell death through the PERK pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the collective data showing Sel1l maintains proteostasis, prevents ER stress, and that PERK drives apoptosis in its absence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "913fa9bd-2220-497e-8d1e-f6115273d568",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C54",
+      "claim": "ERAD is the master regulator of physiological ER proteostasis in immature DN thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that ERAD is the master regulator of physiological ER proteostasis in immature DN thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the severe phenotype of ERAD deficiency and lack of phenotype from individual UPR component deletions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "9a4ca339-dc28-4888-b619-3f32c49925d6",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C55",
+      "claim": "The ERAD machinery was critically required for successful \u03b2-selection of DN3 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The ERAD machinery was critically required for successful \u03b2-selection of DN3 thymocytes and consequently, ERAD deficiency impeded \u03b1\u03b2 T cell development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing DN3 to DN4 transition defects and subsequent developmental blocks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "d3c1ef67-3e43-48ba-971d-fad1624bb6c3",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C56",
+      "claim": "ERAD selectively preserves the cellular fitness of \u03b1\u03b2, but not \u03b3\u03b4 T lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, ERAD selectively preserves the cellular fitness of \u03b1\u03b2, but not \u03b3\u03b4 T lymphocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing normal \u03b3\u03b4 T cell numbers in Sel1l CKO mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "07cc65c5-9a6d-437d-a092-608b59bc4f86",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C57",
+      "claim": "Notch signaling directly regulates ERAD gene expression to promote the integrity of ER proteostasis during \u03b2-selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Notch signaling directly regulates ERAD gene expression to promote the integrity of ER proteostasis during \u03b2-selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ChIP data showing direct binding and luciferase data showing transcriptional activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "d69268a4-415b-49c9-a3e6-f1125236ca45",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C58",
+      "claim": "Activation of ERAD restricts PERK-dependent cell death in DN3 thymocytes during \u03b2-selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of ERAD restricts PERK-dependent cell death in DN3 thymocytes during \u03b2-selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from data showing PERK-driven apoptosis in ERAD-deficient cells and rescue by PERK deletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "0cebef82-177b-4501-9a38-fba112588339",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C59",
+      "claim": "Genetic inactivation of Perk rescued \u03b2-selection in Sel1l-deficient thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic inactivation of Perk rescued \u03b2-selection in Sel1l-deficient thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing restoration of thymocyte development in Sel1l/Perk double knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "570cde9a-8743-48f6-981a-806085fbbd55",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C60",
+      "claim": "Individual UPR regulators are dispensable for \u03b2-selection and subsequent stages of thymocyte maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the marked defect in thymocyte development in the absence of SEL1L-ERAD, our current study now clearly demonstrates that individual UPR regulators are dispensable for \u03b2-selection and subsequent stages of thymocyte maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing normal T cell development in Xbp1, Perk, and Atf6 single knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "7a52b459-5805-4ebb-8f9a-a3ab824b8f52",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C61",
+      "claim": "Induction of the SEL1L axis of ERAD, which peaks at the DN3 stage, represents a previously undefined and critical ER proteostasis checkpoint during \u03b2-selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, induction of the SEL1L axis of ERAD, which peaks at the DN3 stage, represents a previously undefined and critical ER proteostasis checkpoint during \u03b2-selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from data showing peak ERAD expression in DN3 cells and requirement for \u03b2-selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "3c9f480c-5dbb-4d79-9ac6-74c2640fb418",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C62",
+      "claim": "This ER proteostasis checkpoint is regulated by the same Notch signals which, together with the pre-TCR, induce \u03b2-selection in DN3 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that this ER proteostasis checkpoint is also regulated by the same Notch signals which, together with the pre-TCR, induce \u03b2-selection in DN3 thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from data showing Notch directly regulates ERAD genes and established knowledge about Notch's role in \u03b2-selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "7b41615f-bbd3-40c8-8196-673a2865a98e",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C63",
+      "claim": "Notch1 and RBP-J directly bind to most ERAD gene promoters and directly regulate their expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified that Notch1 and RBP-J directly bind to most ERAD gene promoters and directly regulate their expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ChIP-qPCR data showing binding to ERAD gene promoters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "ae638286-9b1a-4f57-80aa-36db0c9cb54b",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C64",
+      "claim": "Notch-signal induced SEL1L protein levels exceeded the change in Sel1l mRNA expression, suggesting additional post-transcriptional regulation of ERAD by Notch.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we observed that Notch-signal induced SEL1L protein levels exceeded the change in Sel1l mRNA expression (Figure 4B,C), suggesting additional post-transcriptional regulation of ERAD by Notch that warrants further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparing mRNA and protein level changes shown in Figures 4B and 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "07159146-5555-4140-a26b-10a7d8eb0d99",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C65",
+      "claim": "ERAD is responsible for the clearance of misfolded proteins at steady-state and is constitutively activated regardless of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "ERAD is responsible for the clearance of misfolded proteins at steady-state and is constitutively activated regardless of ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim draws from established scientific knowledge about ERAD function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "fc37aa17-e237-42a6-99fb-fcb8c15d3946",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C66",
+      "claim": "The UPR is a stress response pathway that is triggered when the accumulation of misfolded and unfolded proteins exceed the ER folding capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the UPR is a stress response pathway that is triggered when the accumulation of misfolded and unfolded proteins exceed the ER folding capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim draws from established scientific knowledge about UPR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "3f22152a-921b-42ae-8849-48b578093936",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C67",
+      "claim": "The IRE1\u03b1-XBP1 axis is essential for eosinophil, dendritic cell, NK, and plasma cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the IRE1\u03b1-XBP1 is essential for eosinophil (Bettigole et al., 2015), dendritic cell (Cubillos-Ruiz et al., 2015; Iwakoshi et al., 2007; Osorio et al., 2014), NK (Dong et al., 2019; Wang et al., 2019), and plasma cell (Reimold et al., 2001; Shapiro-Shelef and Calame, 2005) differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "71aa3e42-cff2-4679-afe8-15fa6c25f88b",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C68",
+      "claim": "Sel1l-deficiency impaired the survival of DN thymocytes following \u03b2 selection and resulted in the inability of DN3 thymocytes to expand and progress to DP thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sel1l-deficiency impaired the survival of DN thymocytes following \u03b2 selection and resulted in the inability of DN3 thymocytes to expand and progress to DP thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing increased apoptosis and developmental block.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "f928edc3-4ccc-4a43-b0b3-ec261280b491",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C69",
+      "claim": "This phenotype was not due to defective rearrangement of TCR\u03b2 nor defective Notch or pre-TCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this phenotype was not due to defective rearrangement of TCR\u03b2 nor defective Notch or pre-TCR signaling which both activate pro-survival genes in \u03b2-selected thymocytes (Ciofani and Z\u00fa\u00f1iga-Pfl\u00fccker, 2005; Kreslavsky et al., 2012; Zhao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing normal TCR\u03b2 rearrangement, Notch signaling, and pre-TCR signaling, along with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "4144dc2c-6392-482c-9641-cdf8a909415a",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C70",
+      "claim": "Only PERK axis induces apoptosis in Sel1l CKO thymocytes among the three UPR pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "While all three UPR pathways can promote apoptosis and appear to be upregulated in Sel1l CKO thymocytes, it is notable that only PERK axis induces apoptosis in Sel1l CKO thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the selective rescue by PERK deletion and worsening by XBP1 deletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "208895e5-e74d-4b64-8232-c3a60ef3f3c7",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C71",
+      "claim": "Induction of the IRE1\u03b1-XBP1 axis of the UPR can help cells adapt to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, induction of the IRE1\u03b1-XBP1 axis of the UPR can help cells adapt to stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the worsening of phenotype when XBP1 is deleted in Sel1l CKO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "1417e705-7d71-43cd-8154-cf3483fa46ac",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C72",
+      "claim": "Deletion of Xbp1 in Sel1l CKO thymocytes exacerbated defects in thymocyte development unlike PERK inactivation which restored T cell development from Sel1l CKO thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this view, deletion of Xbp1 in Sel1l CKO thymocytes exacerbated defects in thymocyte development unlike PERK inactivation which restored T cell development from Sel1l CKO thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data comparing double knockout phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "825385a6-2eed-407d-adc6-d962e94dd855",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C73",
+      "claim": "DN thymocytes undergoing \u03b2 selection expand more than 100-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, DN thymocytes undergoing \u03b2 selection expand more than 100-fold, a situation that likely explains their increased translational activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim draws from established knowledge about \u03b2-selection and is consistent with observed translational activity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "2ab6d0de-dfd5-4b8b-8395-5a05a09c6848",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C74",
+      "claim": "Upregulation of the SEL1L-ERAD axis in DN3 thymocytes provides a mechanism to alleviate deleterious proteotoxic stress that compromise the fitness of DN4 thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "That post-\u03b2-selected DN thymocytes displayed markedly low levels of misfolded/unfolded proteins support the view that upregulation of the SEL1L-ERAD axis in DN3 thymocytes provides a mechanism to alleviate deleterious proteotoxic stress that compromise the fitness of DN4 thymocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from data showing low misfolded proteins in DN4 cells and high ERAD expression in DN3 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "b179cb09-cc28-4dbf-8793-532e6889acc6",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C75",
+      "claim": "SEL1L-ERAD safeguards the DN3/DN4 thymocyte pool to ensure that the maximum number of DN thymocytes expressing a functional TCR\u03b2 protein progress to the DP stage to audition for positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, SEL1L-ERAD safeguards to DN3/DN4 thymocyte pool to ensure that the maximum number of DN thymocytes expressing a functional TCR\u03b2 protein progress to the DP stage to audition for positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the role of ERAD in maintaining thymocyte fitness during \u03b2-selection.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "19b91503-6a59-47fe-92fa-a354f8fc2fc8",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C76",
+      "claim": "Activating NOTCH1 mutations are found in more than 50% of human T cell acute lymphoblastic leukemia (T-ALL) patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating NOTCH1 mutations are found in more than 50% of human T cell acute lymphoblastic leukemia (T-ALL) patients (Weng et al., 2004) wherein Notch plays pivotal roles in regulating the survival and metabolism of T-ALL cells (Aster et al., 2011; Garc\u00eda-Peydr\u00f3 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature on T-ALL.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "15f06004-e77b-4871-859e-6cb482a60f88",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C77",
+      "claim": "Notch plays pivotal roles in regulating the survival and metabolism of T-ALL cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating NOTCH1 mutations are found in more than 50% of human T cell acute lymphoblastic leukemia (T-ALL) patients (Weng et al., 2004) wherein Notch plays pivotal roles in regulating the survival and metabolism of T-ALL cells (Aster et al., 2011; Garc\u00eda-Peydr\u00f3 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "01c1f739-eab2-4bf8-bccc-74144b132655",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C78",
+      "claim": "In addition to driving energy metabolism and survival programs demanded by proliferating thymocytes following \u03b2-selection, Notch signals in parallel activate the ERAD machinery in DN3 thymocytes to clear misfolded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that in addition to driving energy metabolism and survival programs demanded by proliferating thymocytes following \u03b2-selection, Notch signals in parallel activate the ERAD machinery in DN3 thymocytes to clear misfolded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed model based on the data showing Notch regulates ERAD and ERAD is required for \u03b2-selection.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "742d1cb8-94aa-4865-bc8e-3757545784fe",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "claim_id": "C79",
+      "claim": "Stringent protein quality control through the SEL1L-ERAD pathway is required for successful \u03b2-selection and the development of the \u03b1\u03b2 T cells that mediate adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, stringent protein quality control through the SEL1L-ERAD pathway is required for successful \u03b2-selection and the development of the \u03b1\u03b2 T cells that mediate adaptive immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the collective data showing ERAD requirement for \u03b2-selection and \u03b1\u03b2 T cell development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "80b2635f-c04f-470a-b7f8-4d82a8aa2970",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DN3 thymocytes exhibit peak expression of ERAD and UPR genes coinciding with \u03b2-selection, while DN4 thymocytes show reduced misfolded proteins despite high protein synthesis rates, suggesting induction of proteome quality control mechanisms during the DN3-to-DN4 transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 collectively demonstrate that DN2-DN4 thymocytes have high protein synthesis (C1), DN4 cells have lower misfolded proteins despite comparable synthesis rates (C2), and ERAD/UPR gene expression peaks in DN3 cells (C4-C6). The data from OP-Puro incorporation, TMI staining, and qRT-PCR provide converging evidence for proteome quality control induction during \u03b2-selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "788e05f5-d981-42e7-a9e4-c1d85471a399",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SEL1L-ERAD is selectively required for \u03b1\u03b2 T cell development but not \u03b3\u03b4 T cells, while individual UPR regulators (XBP1, PERK, ATF6) are dispensable for normal thymocyte development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 demonstrate that Sel1l deletion causes severe thymic defects and peripheral T cell reduction (C7-C8), spares \u03b3\u03b4 T cells (C9-C10), while deletion of individual UPR components has no effect (C11-C12). The data from multiple knockout models with appropriate controls provide strong evidence for selective ERAD requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "727e4617-6924-40a9-a618-542d905eff11",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cell-intrinsic SEL1L activity is required for DN3 to DN4 thymocyte transition following \u03b2-selection, as demonstrated by in vitro OP9-DL1 co-culture and bone marrow chimera experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 show that Sel1l-deficient DN2 cells fail to progress to DN4 in OP9-DL1 culture (C13-C14), with 71.6% remaining as DN3 versus 31.3% in controls. The bone marrow chimera data and in vitro culture system provide complementary evidence for cell-intrinsic requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "d569cbe9-7c1f-4290-a6d1-e4555a262cd3",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sel1l-deficient \u03b2-selected DN3 cells undergo apoptosis during differentiation to DN4 thymocytes, despite showing increased proliferation in DN4 cells that do survive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 demonstrate increased apoptosis through multiple independent assays (Annexin-V, Caspase-3, TUNEL) in Sel1l CKO thymocytes (C18-C19), alongside paradoxically increased proliferation in surviving DN4 cells (C16-C17). The convergent evidence from multiple apoptosis markers strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "404e4137-deab-4e25-bbb1-11bf1dc10ee8",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Notch signaling directly regulates ERAD gene expression through NICD and RBP-J binding to conserved sites in Sel1l and Hrd1 promoters, as demonstrated by DLL4 stimulation, DAPT inhibition, ChIP, and luciferase reporter assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 provide comprehensive evidence for direct Notch regulation of ERAD: DLL4 induces ERAD genes (C21), DAPT blocks this induction (C22), conserved RBP-J sites exist in promoters (C24), ChIP shows direct binding (C25), luciferase assays demonstrate transcriptional activation (C26), and mutations abolish activation (C27). The multiple complementary approaches provide strong mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "dd92072d-252b-4ba3-8886-5a9009890c4c",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The \u03b2-selection defects in Sel1l CKO mice are not due to impaired Notch signaling, as Sel1l deletion does not affect Notch1 surface levels or Notch target gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 demonstrate that Sel1l deletion does not affect Notch1 surface expression (C29) or Notch target genes (C30), indicating ERAD does not regulate Notch signaling itself. The flow cytometry and gene expression data support that the phenotype is downstream of Notch signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "538a4765-ca95-48e1-b836-78bf6ff533e5",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "\u03b2-selection defects in Sel1l CKO mice are not due to defective TCR\u03b2 gene rearrangement, pre-TCR expression, or pre-TCR signaling, as demonstrated by V(D)J recombination analysis, TCR\u03b2 expression, signaling intermediate levels, and failure of TCR transgene rescue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 systematically exclude pre-TCR defects through multiple approaches: normal V(D)J recombination (C32), normal TCR\u03b2 expression (C33), normal signaling intermediates (C34), and lack of rescue by OT-II transgene (C35). The comprehensive exclusion of alternative mechanisms strengthens the proteostasis hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "6191f2f5-ac87-44d8-bfc8-0da301d099ca",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sel1l deletion triggers unresolved ER stress with activation of all three UPR branches (IRE1\u03b1, PERK, ATF6) and accumulation of misfolded/aggregated proteins in DN thymocytes, leading to proteotoxic stress and apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C45 provide comprehensive evidence for ER stress: RNA-seq shows UPR pathway upregulation (C37), ER expansion (C38), activation of all three UPR branches (C39-C41), and accumulation of misfolded proteins measured by TMI and ProteoStat (C43-C44). The convergent evidence from transcriptomics, protein markers, and functional assays strongly supports the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "4078bdd6-ad67-4153-bbc4-d3b944489807",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PERK signaling drives apoptosis in Sel1l-deficient thymocytes, as Perk deletion rescues the Sel1l CKO phenotype while Xbp1 deletion exacerbates it, indicating IRE1\u03b1/XBP1 functions as a compensatory adaptive pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 demonstrate opposing roles of UPR branches: Xbp1 deletion worsens the phenotype (C46-C47) while Perk deletion rescues thymus cellularity, peripheral T cells, and reduces apoptosis (C48-C51). The genetic epistasis experiments with appropriate single and double knockout controls provide strong mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "5883cc90-a234-4689-be1f-bbd5060f031e",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ERAD represents a critical, Notch-regulated ER proteostasis checkpoint during \u03b2-selection that is selectively required for \u03b1\u03b2 T cell development, with individual UPR regulators being dispensable, and PERK-dependent cell death being the primary failure mode in ERAD deficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C62 synthesize the major findings: ERAD is the master regulator (C54), required for \u03b2-selection (C55), selective for \u03b1\u03b2 T cells (C56), directly regulated by Notch (C57), restricts PERK-mediated death (C58-C59), while individual UPR components are dispensable (C60). The comprehensive genetic and mechanistic data support this integrative model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "d784172a-a760-4723-aceb-b128830e37c3",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Notch1 and RBP-J directly bind to ERAD gene promoters, with evidence suggesting additional post-transcriptional regulation of ERAD by Notch based on protein levels exceeding mRNA changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by ChIP-qPCR data showing direct binding. Claim C64 notes a discrepancy between mRNA and protein induction suggesting post-transcriptional regulation, which is appropriately presented as speculation requiring further investigation. The direct binding is well-supported while the post-transcriptional mechanism remains a hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "05b4934e-9651-4650-95a5-b0196de03169",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ERAD and UPR represent distinct quality control mechanisms with different activation thresholds, and the IRE1\u03b1-XBP1 axis is essential for differentiation of specific immune cell types including eosinophils, dendritic cells, NK cells, and plasma cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 present established knowledge about ERAD/UPR function (C65-C66) and cite prior literature on IRE1\u03b1-XBP1 requirements in other cell types (C67). These provide appropriate context for the current findings but represent background knowledge rather than novel results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "9a93ea9e-c799-47b1-96a2-d35be17ac60c",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sel1l-deficiency impairs DN thymocyte survival through a mechanism independent of TCR\u03b2 rearrangement or pre-TCR/Notch signaling, with PERK specifically driving apoptosis while IRE1\u03b1-XBP1 provides adaptive stress relief.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 integrate mechanistic findings showing the phenotype is independent of canonical \u03b2-selection signals (C69), with selective PERK-mediated apoptosis (C70) and compensatory XBP1 function (C71-C72). The genetic epistasis data and exclusion of alternative mechanisms support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "566bafec-0475-44dd-84a2-f5d849d744b7",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The 100-fold expansion of DN thymocytes during \u03b2-selection creates high translational demand, and upregulation of SEL1L-ERAD in DN3 cells alleviates proteotoxic stress to maintain fitness of the DN3/DN4 pool for progression to positive selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 integrate established knowledge about \u03b2-selection expansion (C73) with the current findings on ERAD function (C74-C75). The model is well-supported by data showing high synthesis rates, peak ERAD expression in DN3, and low misfolded proteins in DN4 cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    },
+    {
+      "id": "c87e41e9-66e5-4b0b-add2-8451ce597650",
+      "content_id": "fee87ccd-c83e-452e-a4dd-df5ffb11edad",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Notch-ERAD axis may have implications for T-ALL, where activating NOTCH1 mutations are prevalent, and the findings establish that stringent protein quality control through SEL1L-ERAD is required for \u03b1\u03b2 T cell development and adaptive immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77 cite established facts about NOTCH1 mutations in T-ALL. Claim C78 proposes a model for Notch's parallel activation of metabolism and ERAD, which is supported by the data but represents a proposed mechanism. Claim C79 summarizes the main conclusion, which is well-supported. However, the T-ALL implications (C76-C77) are speculative and require future investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:50:21.815332Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "caa29aca-2a16-4937-a9ec-8e1e6a14af9f",
+      "result_id": "80b2635f-c04f-470a-b7f8-4d82a8aa2970"
+    },
+    {
+      "claim_id": "fd9b6703-4875-4695-b549-a937eebd1863",
+      "result_id": "80b2635f-c04f-470a-b7f8-4d82a8aa2970"
+    },
+    {
+      "claim_id": "4055101a-4b54-4f0e-9dea-56cddadecd5d",
+      "result_id": "80b2635f-c04f-470a-b7f8-4d82a8aa2970"
+    },
+    {
+      "claim_id": "a930fff0-06f4-4cf4-aae7-4bcb8535d625",
+      "result_id": "80b2635f-c04f-470a-b7f8-4d82a8aa2970"
+    },
+    {
+      "claim_id": "80c7613c-c3ab-4368-bc61-730589cc5992",
+      "result_id": "80b2635f-c04f-470a-b7f8-4d82a8aa2970"
+    },
+    {
+      "claim_id": "dee20545-544a-479b-90f0-4eb9c003ccc4",
+      "result_id": "80b2635f-c04f-470a-b7f8-4d82a8aa2970"
+    },
+    {
+      "claim_id": "4b1aae11-efcd-4aea-abb3-eca7fcb7d173",
+      "result_id": "788e05f5-d981-42e7-a9e4-c1d85471a399"
+    },
+    {
+      "claim_id": "6e8d3a0f-ed97-4ee9-a2ff-b7d3a3666364",
+      "result_id": "788e05f5-d981-42e7-a9e4-c1d85471a399"
+    },
+    {
+      "claim_id": "51a61132-32a7-434d-b8d1-cddd2c711926",
+      "result_id": "788e05f5-d981-42e7-a9e4-c1d85471a399"
+    },
+    {
+      "claim_id": "a3a0e227-1fbb-4519-a658-e63e61e1ef5f",
+      "result_id": "788e05f5-d981-42e7-a9e4-c1d85471a399"
+    },
+    {
+      "claim_id": "03c4086a-4a0c-4712-9525-cb47a14cb4e7",
+      "result_id": "788e05f5-d981-42e7-a9e4-c1d85471a399"
+    },
+    {
+      "claim_id": "fcfb13de-d51a-4506-8426-f0e31131528d",
+      "result_id": "788e05f5-d981-42e7-a9e4-c1d85471a399"
+    },
+    {
+      "claim_id": "be948267-12d3-4c6d-89ae-81e334941db6",
+      "result_id": "727e4617-6924-40a9-a618-542d905eff11"
+    },
+    {
+      "claim_id": "fdd43ca4-bf5e-4d8e-970d-a65c2b8e319b",
+      "result_id": "727e4617-6924-40a9-a618-542d905eff11"
+    },
+    {
+      "claim_id": "3238a4ab-d311-4325-a75a-8f8b0f4bd219",
+      "result_id": "727e4617-6924-40a9-a618-542d905eff11"
+    },
+    {
+      "claim_id": "e5b9ccb2-3ec8-451b-83f7-f3d2bf0c86a3",
+      "result_id": "d569cbe9-7c1f-4290-a6d1-e4555a262cd3"
+    },
+    {
+      "claim_id": "47e23351-a94e-46c3-bf6c-a1e5b6dbf8c9",
+      "result_id": "d569cbe9-7c1f-4290-a6d1-e4555a262cd3"
+    },
+    {
+      "claim_id": "cd7e7b09-255a-4987-bc7a-b52d77f1d76f",
+      "result_id": "d569cbe9-7c1f-4290-a6d1-e4555a262cd3"
+    },
+    {
+      "claim_id": "3de7bff2-bd78-42ed-a43b-92ec79fe045a",
+      "result_id": "d569cbe9-7c1f-4290-a6d1-e4555a262cd3"
+    },
+    {
+      "claim_id": "23eb2613-8806-4878-9271-ad6ed155d5da",
+      "result_id": "d569cbe9-7c1f-4290-a6d1-e4555a262cd3"
+    },
+    {
+      "claim_id": "9046fffc-ab1b-42b2-930a-47eb0b37deae",
+      "result_id": "404e4137-deab-4e25-bbb1-11bf1dc10ee8"
+    },
+    {
+      "claim_id": "d61981a7-bdb3-4ae7-b4d2-11763c8da460",
+      "result_id": "404e4137-deab-4e25-bbb1-11bf1dc10ee8"
+    },
+    {
+      "claim_id": "203a92c9-af02-403e-80b3-fa92e99a9a47",
+      "result_id": "404e4137-deab-4e25-bbb1-11bf1dc10ee8"
+    },
+    {
+      "claim_id": "7e0bde07-d18d-41a5-b5a9-346bf60105b8",
+      "result_id": "404e4137-deab-4e25-bbb1-11bf1dc10ee8"
+    },
+    {
+      "claim_id": "1e2dcf48-b630-4917-b407-300a4a970633",
+      "result_id": "404e4137-deab-4e25-bbb1-11bf1dc10ee8"
+    },
+    {
+      "claim_id": "83ca7626-c1ae-4019-9c6e-8c36e96d46b3",
+      "result_id": "404e4137-deab-4e25-bbb1-11bf1dc10ee8"
+    },
+    {
+      "claim_id": "1ba377c6-cc38-40e5-9d2a-6e022160d812",
+      "result_id": "404e4137-deab-4e25-bbb1-11bf1dc10ee8"
+    },
+    {
+      "claim_id": "c2cd537c-492f-4d98-9eb3-ef2a82ed6a33",
+      "result_id": "404e4137-deab-4e25-bbb1-11bf1dc10ee8"
+    },
+    {
+      "claim_id": "fe6946b4-0671-445d-bfe8-7b69c78044a4",
+      "result_id": "dd92072d-252b-4ba3-8886-5a9009890c4c"
+    },
+    {
+      "claim_id": "34cfee50-6806-42fe-b997-7ad93a2415ca",
+      "result_id": "dd92072d-252b-4ba3-8886-5a9009890c4c"
+    },
+    {
+      "claim_id": "0c48d1ee-878f-49c6-a76e-eec670f97d15",
+      "result_id": "dd92072d-252b-4ba3-8886-5a9009890c4c"
+    },
+    {
+      "claim_id": "a9dc9f0e-3e04-4bcc-8630-6e768bef25a5",
+      "result_id": "538a4765-ca95-48e1-b836-78bf6ff533e5"
+    },
+    {
+      "claim_id": "7e87fad5-60db-4183-bf94-9540563d71a2",
+      "result_id": "538a4765-ca95-48e1-b836-78bf6ff533e5"
+    },
+    {
+      "claim_id": "04b52b68-7244-44b7-8705-3486cfe71519",
+      "result_id": "538a4765-ca95-48e1-b836-78bf6ff533e5"
+    },
+    {
+      "claim_id": "5adbd0a8-e05e-4a0c-bb34-1f590e7f7fdb",
+      "result_id": "538a4765-ca95-48e1-b836-78bf6ff533e5"
+    },
+    {
+      "claim_id": "7d5d1430-dd46-4d36-813c-988a5df21526",
+      "result_id": "538a4765-ca95-48e1-b836-78bf6ff533e5"
+    },
+    {
+      "claim_id": "09b78f13-8b83-42e1-8899-bedce26beed8",
+      "result_id": "6191f2f5-ac87-44d8-bfc8-0da301d099ca"
+    },
+    {
+      "claim_id": "e5add144-5d7a-4bfd-8f9d-7ba7044b7b8e",
+      "result_id": "6191f2f5-ac87-44d8-bfc8-0da301d099ca"
+    },
+    {
+      "claim_id": "07717248-f006-4f75-8882-a3e69b12c014",
+      "result_id": "6191f2f5-ac87-44d8-bfc8-0da301d099ca"
+    },
+    {
+      "claim_id": "f38e7499-a8d3-415d-a92b-427fef8741a0",
+      "result_id": "6191f2f5-ac87-44d8-bfc8-0da301d099ca"
+    },
+    {
+      "claim_id": "28568c85-8642-4d95-9f7d-254d81e70756",
+      "result_id": "6191f2f5-ac87-44d8-bfc8-0da301d099ca"
+    },
+    {
+      "claim_id": "6cac30fc-a201-4fd6-80ea-940fa1a52f9c",
+      "result_id": "6191f2f5-ac87-44d8-bfc8-0da301d099ca"
+    },
+    {
+      "claim_id": "e43bc9cb-f8f1-43b6-9cb4-f895273cbd09",
+      "result_id": "6191f2f5-ac87-44d8-bfc8-0da301d099ca"
+    },
+    {
+      "claim_id": "a997aaee-8102-4671-a7f3-b5126dac66b8",
+      "result_id": "6191f2f5-ac87-44d8-bfc8-0da301d099ca"
+    },
+    {
+      "claim_id": "ea0497f8-d966-4cb6-9782-a4b6a2ad3d61",
+      "result_id": "6191f2f5-ac87-44d8-bfc8-0da301d099ca"
+    },
+    {
+      "claim_id": "9fc9b081-b355-4c65-8d11-2b6458fadb93",
+      "result_id": "4078bdd6-ad67-4153-bbc4-d3b944489807"
+    },
+    {
+      "claim_id": "3759fc87-6ee2-4203-afb1-bbdc9f706a5a",
+      "result_id": "4078bdd6-ad67-4153-bbc4-d3b944489807"
+    },
+    {
+      "claim_id": "97282b7e-3ad9-4673-a1a0-81479264c06f",
+      "result_id": "4078bdd6-ad67-4153-bbc4-d3b944489807"
+    },
+    {
+      "claim_id": "5e22d6aa-0239-45f2-8d6f-ae92577d1261",
+      "result_id": "4078bdd6-ad67-4153-bbc4-d3b944489807"
+    },
+    {
+      "claim_id": "8f5ea140-f1b4-4c03-b534-66ea69a26507",
+      "result_id": "4078bdd6-ad67-4153-bbc4-d3b944489807"
+    },
+    {
+      "claim_id": "a65d288c-7434-46da-8415-ceda3e55e22b",
+      "result_id": "4078bdd6-ad67-4153-bbc4-d3b944489807"
+    },
+    {
+      "claim_id": "fe7e2efe-5ae5-4dcd-90ae-dec877d19a2c",
+      "result_id": "4078bdd6-ad67-4153-bbc4-d3b944489807"
+    },
+    {
+      "claim_id": "8456f309-3798-4efb-b54d-6f2134db6c32",
+      "result_id": "4078bdd6-ad67-4153-bbc4-d3b944489807"
+    },
+    {
+      "claim_id": "913fa9bd-2220-497e-8d1e-f6115273d568",
+      "result_id": "5883cc90-a234-4689-be1f-bbd5060f031e"
+    },
+    {
+      "claim_id": "9a4ca339-dc28-4888-b619-3f32c49925d6",
+      "result_id": "5883cc90-a234-4689-be1f-bbd5060f031e"
+    },
+    {
+      "claim_id": "d3c1ef67-3e43-48ba-971d-fad1624bb6c3",
+      "result_id": "5883cc90-a234-4689-be1f-bbd5060f031e"
+    },
+    {
+      "claim_id": "07cc65c5-9a6d-437d-a092-608b59bc4f86",
+      "result_id": "5883cc90-a234-4689-be1f-bbd5060f031e"
+    },
+    {
+      "claim_id": "d69268a4-415b-49c9-a3e6-f1125236ca45",
+      "result_id": "5883cc90-a234-4689-be1f-bbd5060f031e"
+    },
+    {
+      "claim_id": "0cebef82-177b-4501-9a38-fba112588339",
+      "result_id": "5883cc90-a234-4689-be1f-bbd5060f031e"
+    },
+    {
+      "claim_id": "570cde9a-8743-48f6-981a-806085fbbd55",
+      "result_id": "5883cc90-a234-4689-be1f-bbd5060f031e"
+    },
+    {
+      "claim_id": "7a52b459-5805-4ebb-8f9a-a3ab824b8f52",
+      "result_id": "5883cc90-a234-4689-be1f-bbd5060f031e"
+    },
+    {
+      "claim_id": "3c9f480c-5dbb-4d79-9ac6-74c2640fb418",
+      "result_id": "5883cc90-a234-4689-be1f-bbd5060f031e"
+    },
+    {
+      "claim_id": "7b41615f-bbd3-40c8-8196-673a2865a98e",
+      "result_id": "d784172a-a760-4723-aceb-b128830e37c3"
+    },
+    {
+      "claim_id": "ae638286-9b1a-4f57-80aa-36db0c9cb54b",
+      "result_id": "d784172a-a760-4723-aceb-b128830e37c3"
+    },
+    {
+      "claim_id": "07159146-5555-4140-a26b-10a7d8eb0d99",
+      "result_id": "05b4934e-9651-4650-95a5-b0196de03169"
+    },
+    {
+      "claim_id": "fc37aa17-e237-42a6-99fb-fcb8c15d3946",
+      "result_id": "05b4934e-9651-4650-95a5-b0196de03169"
+    },
+    {
+      "claim_id": "3f22152a-921b-42ae-8849-48b578093936",
+      "result_id": "05b4934e-9651-4650-95a5-b0196de03169"
+    },
+    {
+      "claim_id": "71aa3e42-cff2-4679-afe8-15fa6c25f88b",
+      "result_id": "9a93ea9e-c799-47b1-96a2-d35be17ac60c"
+    },
+    {
+      "claim_id": "f928edc3-4ccc-4a43-b0b3-ec261280b491",
+      "result_id": "9a93ea9e-c799-47b1-96a2-d35be17ac60c"
+    },
+    {
+      "claim_id": "4144dc2c-6392-482c-9641-cdf8a909415a",
+      "result_id": "9a93ea9e-c799-47b1-96a2-d35be17ac60c"
+    },
+    {
+      "claim_id": "208895e5-e74d-4b64-8232-c3a60ef3f3c7",
+      "result_id": "9a93ea9e-c799-47b1-96a2-d35be17ac60c"
+    },
+    {
+      "claim_id": "1417e705-7d71-43cd-8154-cf3483fa46ac",
+      "result_id": "9a93ea9e-c799-47b1-96a2-d35be17ac60c"
+    },
+    {
+      "claim_id": "825385a6-2eed-407d-adc6-d962e94dd855",
+      "result_id": "566bafec-0475-44dd-84a2-f5d849d744b7"
+    },
+    {
+      "claim_id": "2ab6d0de-dfd5-4b8b-8395-5a05a09c6848",
+      "result_id": "566bafec-0475-44dd-84a2-f5d849d744b7"
+    },
+    {
+      "claim_id": "b179cb09-cc28-4dbf-8793-532e6889acc6",
+      "result_id": "566bafec-0475-44dd-84a2-f5d849d744b7"
+    },
+    {
+      "claim_id": "19b91503-6a59-47fe-92fa-a354f8fc2fc8",
+      "result_id": "c87e41e9-66e5-4b0b-add2-8451ce597650"
+    },
+    {
+      "claim_id": "15f06004-e77b-4871-859e-6cb482a60f88",
+      "result_id": "c87e41e9-66e5-4b0b-add2-8451ce597650"
+    },
+    {
+      "claim_id": "01c1f739-eab2-4bf8-bccc-74144b132655",
+      "result_id": "c87e41e9-66e5-4b0b-add2-8451ce597650"
+    },
+    {
+      "claim_id": "742d1cb8-94aa-4865-bc8e-3757545784fe",
+      "result_id": "c87e41e9-66e5-4b0b-add2-8451ce597650"
+    }
+  ],
+  "comparisons": []
+}

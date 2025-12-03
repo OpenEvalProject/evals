@@ -1,0 +1,537 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes positional information as a central concept in developmental biology, particularly in plants where cells cannot relocate and must determine fate based on location. Examples from roots, leaves, and other organs demonstrate that positional information controls morphogenesis through organizing centers and morphogen gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 are well-supported by established literature (citations to Wolpert 1969, Scheres et al. 2002, van den Berg et al. 1995, Marhava et al. 2019, Kierzkowski et al. 2019, Kuchen et al. 2012, Barkoulas et al. 2008). These claims represent accepted knowledge in developmental biology and provide the conceptual foundation for the software development described in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "MorphoGraphX software implements a generalized framework to annotate developing organs with local coordinate systems, representing cell layers as curved 2.5D surface meshes that capture organ geometry at multiple scales and enable quantification of growth, cell division, and gene expression in spatial context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C19-C24 describe the core functionality of MorphoGraphX 2.0, supported by Figure 1 showing the workflow from confocal images to surface meshes to cellular quantification. The 2.5D representation and ability to quantify cellular dynamics are demonstrated with visual evidence and supported by multiple citations to prior work using the software (C20).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MorphoGraphX provides multiple methods for defining organ-centric coordinate systems, including alignment with 3D axes, curved Bezier splines/surfaces that conform to organ curvature, and cell-based distance fields that naturally follow tissue curvature by computing shortest paths through cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 describe coordinate system methods implemented in the software, supported by Figure 2 showing examples on roots, seedlings, and sepals. The methods are clearly demonstrated with visual evidence (Figure 2A-D, Video 1) and citations to prior implementations (Schmidt et al. 2014, Montenegro-Johnson et al. 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Analysis of Arabidopsis sepal development using organ-centric coordinates reveals that growth is initially located distally and progressively moves toward the base, with proliferation following a similar pattern. This differs subtly from Arabidopsis leaf development where growth zones remain relatively fixed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 present observations from time-lapse analysis shown in Figure 2\u2014figure supplement 1, with data from Hervieux et al. 2016. The comparative analysis between sepal and leaf is supported by data visualization and citation to Kierzkowski et al. 2019 (C36). The observations are clearly documented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "MorphoGraphX can quantify principal directions of growth (PDGs) and project them onto developmental axes to separate parallel and perpendicular components. In A. thaliana leaf primordia, this reveals that differences in area extension between midrib/petiole and blade cells are mainly due to medial-lateral growth differences, with increased ML growth around forming serrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 describe PDG analysis capabilities and specific findings in leaf development, supported by Figure 3A-E. The method addresses a known issue with directional data in isotropic growth (C38-C39) and provides clearer visualization of growth patterns. The observations about ML vs PD growth are directly shown in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Using local coordinate systems to analyze PDGs enables direct comparison between experimental data and computational simulations, as developmental models often use morphogens controlling growth parallel and perpendicular to developmental axes. MorphoGraphX can load various mesh formats to facilitate model-experiment comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe the utility of the coordinate system approach for model validation, supported by citations to modeling studies (Kierzkowski et al. 2019, Kuchen et al. 2012, Whitewoods et al. 2020). The capability to load various mesh formats (C47) is a stated software feature that enables this comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In tomato meristem primordia, radial growth shows high negative correlation with DR5 signal intensity, with radial growth peaking on the abaxial side while DR5 signal is higher on the adaxial side. This spatial separation supports the hypothesis that auxin acts as a trigger for primordium initiation rather than directly controlling growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 present analysis of tomato meristem data (from Kierzkowski et al. 2012) shown in Figure 3F-J. The negative correlation between growth and DR5 signal is clearly demonstrated, and the interpretation (C52) is supported by citations to Reinhardt et al. 2003 and Smith et al. 2006. The spatial patterns are directly visualized in Figure 3J.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "For 3D organs, MorphoGraphX enables definition of three-dimensional coordinate systems by combining different distance measures. The 3D Cell Atlas add-on combines Bezier curves along the longitudinal direction with surface meshes to obtain radial directions, enabling classification of cell layers in radially symmetric organs like roots and hypocotyls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 describe 3D coordinate system methods, supported by Figure 4A-D and citations to Montenegro-Johnson et al. 2015, 2019. The methods are demonstrated on Arabidopsis root (Figure 4B, D) and shoot apical meristem (Figure 4A, C). The relative coordinate system that follows tissue layers (C59) is a documented feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In Arabidopsis ovule outer integument, cell volume varies along the proximal-distal axis with a minimum around 100 \u03bcm. Cell shape changes from relatively isotropic at the proximal end to increasingly anisotropic distally, first due to decreasing depth/width, then due to increased cell length. The increased length suggests highly anisotropic growth, and the region of smallest cells (100-150 \u03bcm) may represent a proliferative zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 present observations from 3D analysis of Arabidopsis ovule shown in Figure 5, with data from Vijayan et al. 2021. The quantitative observations about cell volume and dimensions are directly shown in Figure 5G. However, C68 is speculative ('could be suspected') and represents an inference rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MorphoGraphX supports extensive measures to quantify cell morphology (geometry, shape, neighborhood, gene expression, network measures) and can use these on time-lapse data. The software uses a standardized attribute system and provides methods to assign secondary labels for cell type classification, either manually or using heat map data, leveraging the principle that cells of common type cluster in attribute space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C79 describe the measurement and classification capabilities of the software, supported by Tables 1-2 listing available measures and Figure 4E-H showing classification methods. The modular architecture (C75) and standardized attribute system (C76) are stated design features. The clustering principle (C79) is a logical inference about cell type classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "MorphoGraphX integrates machine learning for cell type classification through a simple interface to libSVM. The 3D Cell Atlas add-on uses clustering by radial distance and cell size for layer classification. The software provides a 2D interactive heat map for optimizing clustering and supports SVM training on any quantifiable cell attribute, with iterative improvement through manual curation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 describe cell classification methods, supported by Figure 4 and Figure 4\u2014figure supplement 1, with citations to Montenegro-Johnson et al. 2015 (3D Cell Atlas), Cortes and Vapnik 1995 (SVMs), de Reuille and Ragni 2017, Sankar et al. 2014 (SVM for plant cells), and Chang and Lin 2011 (libSVM). Video 2 demonstrates the SVM workflow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In Arabidopsis gynoecium, stomata are homogeneously distributed in the valve tissue (consistent with uniform growth), while the replum contains no stomata and consists of smaller, more homogeneous cells. Cell typing can identify the valve margin region where fruit dehiscence occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 present observations about Arabidopsis gynoecium anatomy and cell distribution, supported by Figure 4G-H and Figure 4\u2014figure supplement 1F-G. The utility of cell typing for identifying the valve margin (C91) is supported by citations to Eldridge et al. 2016 and Ripoll et al. 2019.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "MorphoGraphX implements semi-automatic lineage tracking using 3D deformation functions based on cubic radial-basis function interpolation. The method uses a few manually placed landmarks to compute an initial transformation, then iteratively assigns and verifies parent labels by checking neighborhood correspondence, causing correctly labeled regions to grow from landmarks until the entire sample is labeled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C108 describe the lineage tracking method, supported by Figure 6A-C, Video 3, and citations to Duchon 1977 and Turk and O'Brien 1999 for the mathematical basis. The iterative refinement process is clearly described and demonstrated. The method's advantages (C107-C108) and limitations (C99-C100, C105) are appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Deformation functions enable creation of smooth animations from time-lapse data by interpolating mesh vertices between time points using cell centers/junctions as landmarks. MorphoGraphX provides a user-friendly pipeline for recording animations with adjustable visualization options. Temporal smoothing uses Catmull-Rom splines, and heat/signal values can be interpolated along with vertex positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 describe animation capabilities, supported by Figure 6\u2014figure supplement 1, Video 4, and citation to Catmull and Rom 1974 for the spline method. The user-friendly pipeline (C113) is a stated feature, and the ability to interpolate various data types (C115) is documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The deformation function gradient enables continuous growth mapping at any point on a mesh, allowing approximation of areal expansion and PDGs at subcellular level (quality limited by landmark placement). The method can be applied to subcellular landmarks like tracked microbeads and has been used on both curved surface meshes and volumetric meshes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 describe subcellular growth analysis capabilities, supported by Figure 6D-E, Figure 7I, and citations to Armour et al. 2015 and Elsner et al. 2018 for subcellular growth variation and microbead tracking. The limitation regarding landmark placement (C118) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "In Arabidopsis root, the four tissue types (epidermis, cortex, endodermis, pericycle) show similar patterns of cell volume increase with slow growth in the meristem and faster growth near the transition zone. Most volume growth occurs longitudinally (reflected in cell length increase, highly synchronized across layers), while growth along width and depth is less synchronized and much smaller, reflecting strong anisotropic growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 present observations from 3D root analysis shown in Figure 7D-F, with citation to Fridman et al. 2021. The patterns are clearly visualized in the figures, and the synchronization of longitudinal growth due to physical connections (C122) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "MorphoGraphX now supports complete 3D image processing tools, with automated lineage tracking extended from surfaces to full 3D. While 3D lineage tracking is harder due to lack of cellular junctions, surface landmarks can be combined with 3D cell centers/face centers to construct deformation functions. Methods for calculating growth rates and PDGs have been extended to full 3D, and most measures can be quantified from 3D time-lapse data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 describe 3D capabilities, supported by Figure 7 and Figure 7\u2014figure supplement 1, with citation to Fridman et al. 2021. The challenge of 3D lineage tracking (C126) and the solution using surface landmarks (C127-C128) are clearly described. The extension of 2.5D methods to 3D (C129) is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "MorphoGraphX can identify dividing cells and quantify division wall orientation in both 2.5D (best-fit line) and 3D (best-fit plane), with measures for daughter cell asymmetry. Division orientations can be computed relative to organ coordinate axes, and the software can quantify how closely divisions follow proposed rules (shortest wall, PDG-based, network-based).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C140 describe cell division analysis capabilities, supported by Figure 8A-I and Figure 8\u2014figure supplement 1, with citations to Besson and Dumais 2011, Yoshida et al. 2014, Vaddepalli et al. 2021 (shortest wall rule), Hejnowicz 2014 (PDG rule), and Jackson et al. 2019 (network rules). The methods are clearly demonstrated in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "MorphoGraphX enables cell connectivity network analysis, extracting physical associations (cell-cell wall areas) and computing network measures including local measures (degree) and global measures (betweenness centrality, random walk centrality). Network analysis revealed that in Arabidopsis SAM, path length is maximized, cells on more shortest paths have greater division propensity, and division orientation minimizes daughter cells on shortest paths. Perturbation in katanin1 mutant altered path length and correlated with phyllotaxis defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C149 describe network analysis capabilities and findings, supported by Figure 8J-K and citations to Jackson et al. 2017, 2019. The specific findings about SAM organization (C146-C147) and katanin1 mutant (C149) are from Jackson et al. 2019. The utility of network measures for understanding information flow (C145) is supported by the citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "MorphoGraphX can quantify cellular signals (fluorescent reporters) by projecting signal from a second channel onto surface meshes and computing abundance, orientation, and polarity. Examples include PIN auxin transporter and GFP:MBD microtubule markers. For polarity quantification, signal along cell borders is binned by position relative to cell center. The software implements FibrilTool for MT alignment quantification, adapted for surface processing, with quantification at subcellular or whole-cell level. Directional information can be combined with organ coordinates to compute angles relative to organ axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C159 describe signal quantification capabilities, supported by Figure 8L-N and Figure 8\u2014figure supplement 2, with citations to Benkov\u00e1 et al. 2003 (PIN), Van Bruaene et al. 2004 (GFP:MBD), and Boudaoud et al. 2014 (FibrilTool). The methods are demonstrated on SAM (PIN1, MT) and root (PIN2) samples. The observation about MT alignment in SAM (C159) is shown in Figure 8\u2014figure supplement 2E-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "MorphoGraphX has a flexible rendering engine handling millions of triangles, supporting independent rotation/translation of stacks/meshes, rendering voxel and geometric data together, adjustable clipping planes, bendable Bezier cutting surfaces, and animation interfaces. To address 3D visualization challenges, the software implements exploded views (particularly useful for embryos), which can be combined with clipping planes and bundled by cell-type labels to visualize biological features like cell divisions or tissue layers, aiding curation of 3D segmentations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C175 describe visualization capabilities, supported by Video 5, Figure 7D, Figure 8\u2014figure supplement 1C, and citation to Li et al. 2008 for exploded views and Wolny et al. 2020 for segmentation curation. The challenges of 3D visualization (C165-C167) are acknowledged, and the solutions are demonstrated in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "MorphoGraphX provides voxel editing tools including an eraser tool for removing interfering portions. A typical 3D segmentation workflow involves preprocessing (blurring, background removal) followed by algorithms like ITK Morphological Watershed. The software integrates 3D U-Net CNN for boundary prediction, enabling interactive use from within MorphoGraphX and simplifying experimentation with different networks. Several CNN networks are implemented, and the add-on works with any libtorch traced model. Interactive tools allow combining/splitting cell labels, with oversegmentation typically easier than undersegmentation. Corrected segmentations can train deep learning networks, and MorphoGraphX has been used to create ground truth for confocal prediction networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C191 describe voxel editing and CNN integration, supported by Video 6 and citations to Aegerter-Wilmsen et al. 2012 (Drosophila example), \u00c7i\u00e7ek et al. 2016 and Ourselin et al. 2016 (3D U-Net), Eschweiler et al. 2019, 2021 (CNN implementation), Wolny et al. 2020 (ovule ground truth), and Vijayan et al. 2021 (training networks). The integration is demonstrated in Video 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "MorphoGraphX has a modular C++ architecture designed for extensibility, with a small core augmented by dynamically loaded processes providing most functionality. The software has grown to over 540 processes (vs. 160 in previous version) for 2.5D/3D image processing and coordinate systems. It integrates published tools (deep learning, ITK libraries) to increase accessibility. ITK integration reduces learning curve (e.g., Morphological Watershed with one click), and XPIWIT enables interactive ITK pipeline development without C++ programming. R integration provides plots for statistical analysis on attributes including positional information. Python scripting enables batch operations and tool integration, with operations logged to Python files for reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C205 describe software architecture and integrations, supported by Video 7 (R integration) and citations to Bartschat et al. 2016 (XPIWIT) and Stegmaier et al. 2014 (TWANG pipeline). The quantitative comparison of process numbers (C225, related claim) is stated with citation to Barbier de Reuille et al. 2015. The design features are documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228"
+    ],
+    "result": "MorphoGraphX focuses on creating, manipulating, and visualizing geometry as surface meshes for 2.5D and 3D cellular meshes, handling both voxel and mesh data (unlike most software). It is unique in allowing image processing on surface meshes (2.5D processing). The software has grown from 160 to over 540 processes, including comprehensive toolkits for cell shape analysis, growth tracking, cell division analysis, and polarity marker quantification in both 2.5D and 3D. Measures can be stored in meshes or exported, and custom measures can be imported for visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C206-C228 describe the software's scope and capabilities, with the quantitative comparison (C225) supported by citation to Barbier de Reuille et al. 2015. The uniqueness claim for 2.5D processing (C220) is stated as 'the only software that we are aware of,' appropriately qualified. The comprehensive toolkit (C226) is supported by Tables 1-2 and demonstrated throughout the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234"
+    ],
+    "result": "Cell shape measures combined with positional information provide a powerful framework for cell-type classification using machine learning and clustering. This positional information is unavailable in most machine learning cell classification software. A key strength of MorphoGraphX is offering both manual and automatic tools for segmentation, lineage tracking, and analysis, with streamlined manual/semi-automatic methods providing a path to completion when automatic methods are 'almost' good enough. The automatic lineage tracking benefits from previously developed manual tools for correction. This reflects the software's interactive nature and focus on low-throughput but high-quality datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C229-C234 describe the software's approach and strengths, supported by Figure 4G-H and citation to Montenegro-Johnson et al. 2019. The comparative statement about other software (C230) is a reasonable assessment of the field. The complementary nature of manual and automatic methods (C233) is demonstrated in the lineage tracking workflow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C235",
+      "C236"
+    ],
+    "result": "Similar to sequencing data, geometric data on cell shape/size is of limited value without annotation. Spatial context for cell shape, division, and gene expression is paramount for developmental questions, requiring position in a coordinate system relative to developing tissue (not just 3D position). Organ-centric coordinates reflect developmental axes, enabling comparison of morphology with controlling gene expression, comparison across different morphologies (mutants, species), and determination of cell correspondence across developmental stages. MorphoGraphX provides a generalized framework for creating customized organ-centric coordinate systems, from simple distance-based systems for leaf growth to complex methods for 3D organs. As imaging datasets become available, annotation with positional information will be critical for understanding how genes translate to 3D tissue forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C219 and C235-C236 present the conceptual framework and utility of the software, supported by citations to Thompson 1942 (comparing morphologies), Kierzkowski et al. 2019 (species comparison), Montenegro-Johnson et al. 2015, 2019, Schmidt et al. 2014, Vijayan et al. 2021, 2022 (published tools). The importance of annotation (C211, C235) is a reasonable inference by analogy to sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C237",
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243"
+    ],
+    "result": "MorphoGraphX is open-source software running on Linux and Windows, with binaries and source code available at https://www.MorphoGraphX.org/software. Binaries are available for Ubuntu and Windows. Linux is recommended as some add-ons are not available for Windows. For Linux, both Cuda (for nVidia GPUs) and non-Cuda versions are provided; Windows has only non-Cuda version. No Mac version exists, though some have run it in virtual machines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C237-C243 provide software availability information. These are straightforward statements about the software distribution that can be verified at the provided URL. The platform-specific limitations (C240, C242) and Mac compatibility note (C243) are appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

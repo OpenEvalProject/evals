@@ -1,0 +1,1274 @@
+{
+  "submission": {
+    "id": "f93b2643-de2b-4e97-a592-c41c57bb9544",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:41:18.350501Z",
+    "updated_at": "2025-12-03T16:41:18.350501Z"
+  },
+  "content": [
+    {
+      "id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "submission_id": "f93b2643-de2b-4e97-a592-c41c57bb9544",
+      "content_type": "manuscript",
+      "content_text": "# Continuous sensing of IFN\u03b1 by hepatic endothelial cells shapes a vascular antimetastatic barrier\n\n## Authors\n\n- Ngoc Lan Tran<sup>1</sup> ([ORCID: 0000-0003-4270-376X](https://orcid.org/0000-0003-4270-376X))\n- Lorena Maria Ferreira<sup>1</sup> ([ORCID: 0000-0002-4262-0406](https://orcid.org/0000-0002-4262-0406))\n- Blanca Alvarez-Moya<sup>1</sup> ([ORCID: 0000-0003-2573-7909](https://orcid.org/0000-0003-2573-7909))\n- Valentina Buttiglione<sup>1</sup>\n- Barbara Ferrini<sup>1</sup>\n- Paola Zordan<sup>1</sup> ([ORCID: 0000-0001-6915-5535](https://orcid.org/0000-0001-6915-5535))\n- Andrea Monestiroli<sup>1</sup> ([ORCID: 0000-0001-5818-2028](https://orcid.org/0000-0001-5818-2028))\n- Claudio Fagioli<sup>1</sup> ([ORCID: 0000-0001-9889-4695](https://orcid.org/0000-0001-9889-4695))\n- Eugenia Bezzecchi<sup>3</sup> ([ORCID: 0000-0002-8838-4736](https://orcid.org/0000-0002-8838-4736))\n- Giulia Maria Scotti<sup>3</sup>\n- Antonio Esposito<sup>2</sup>\n- Riccardo Leone<sup>2</sup>\n- Chiara Gnasso<sup>2</sup> ([ORCID: 0000-0001-8005-5439](https://orcid.org/0000-0001-8005-5439))\n- Andrea Brendolan<sup>5</sup> ([ORCID: 0000-0003-0109-6879](https://orcid.org/0000-0003-0109-6879))\n- Luca G Guidotti<sup>1</sup> ([ORCID: 0000-0002-0205-2678](https://orcid.org/0000-0002-0205-2678))\n- Giovanni Sitia<sup>1</sup> ([ORCID: 0000-0003-1024-9128](https://orcid.org/0000-0003-1024-9128)) \u2020\n\n### Affiliations\n\n1. Division of Immunology, Transplantation and Infectious Diseases, IRCCS San Raffaele Scientific Institute Milan Italy ([ROR:04tfzc498](https://ror.org/04tfzc498))\n2. Vita-Salute San Raffaele University Milan Italy ([ROR:01gmqr298](https://ror.org/01gmqr298))\n3. Center for Omics Sciences, IRCCS San Raffaele Hospital Milan Italy ([ROR:04tfzc498](https://ror.org/04tfzc498))\n4. Experimental Imaging Center, IRCCS San Raffaele Scientific Institute Milan Italy ([ROR:04tfzc498](https://ror.org/04tfzc498))\n5. Division of Experimental Oncology, IRCCS San Raffaele Scientific Institute Milan Italy ([ROR:04tfzc498](https://ror.org/04tfzc498))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHepatic metastases are a poor prognostic factor of colorectal carcinoma (CRC) and new strategies to reduce the risk of liver CRC colonization are highly needed. Herein, we used mouse models of hepatic metastatization to demonstrate that the continuous infusion of therapeutic doses of interferon-alpha (IFN\u03b1) controls CRC invasion by acting on hepatic endothelial cells (HECs). Mechanistically, IFN\u03b1 promoted the development of a vascular antimetastatic niche characterized by liver sinusoidal endothelial cells (LSECs) defenestration extracellular matrix and glycocalyx deposition, thus strengthening the liver vascular barrier impairing CRC trans-sinusoidal migration, without requiring a direct action on tumor cells, hepatic stellate cells, hepatocytes, or liver dendritic cells (DCs), Kupffer cells (KCs) and liver capsular macrophages (LCMs). Moreover, IFN\u03b1 endowed LSECs with efficient cross-priming potential that, along with the early intravascular tumor burden reduction, supported the generation of antitumor CD8+ T cells and ultimately led to the establishment of a protective long-term memory T cell response. These findings provide a rationale for the use of continuous IFN\u03b1 therapy in perioperative settings to reduce CRC metastatic spreading to the liver.\n\n## Introduction\n\nColorectal cancer (CRC) is the third most common cancer and the second leading cause of cancer-related death worldwide (Sung et al., 2021). Surgical resection of the primary CRC tumor is the mainstay of treatment (Argil\u00e9s et al., 2020; Cunningham et al., 2010; Seo et al., 2013) unfortunately, up to 50% of these patients \u2013 despite chemotherapy and targeted adjuvant therapies \u2013 often develop life-threatening liver metastatic disease in the following years (Argil\u00e9s et al., 2020; Sargent et al., 2009). While the overall benefit of surgery is well established (Seo et al., 2013), it has been also proposed that this procedure may foster liver metastases by increasing the dissemination of CRC cells into the portal circulation (Chow and Chok, 2019; Den\u00e8ve et al., 2013), enhancing the adhesion of CRC cells to the liver endothelium (Chambers et al., 2002; G\u00fcl et al., 2011) or promoting transient immunosuppression awakening dormant intrahepatic micrometastases (Ananth et al., 2016).\n\nAccordingly, there is growing recognition that the use of perioperative immunotherapies in CRC patients undergoing surgical resection may represent a unique treatment window to prevent metastatic colonization and control minimal residual disease (Badia-Ramentol et al., 2021; Bakos et al., 2018; Horowitz et al., 2015). In this context, interferon-alpha (IFN\u03b1), a pleiotropic cytokine with multiple antitumor effects such as the direct inhibition of cancer cell growth and angiogenesis (Indraccolo, 2010), the sustained upregulation of major histocompatibility complexes (Gessani et al., 2014) and the induction of innate and adaptive antitumor immune responses (Aichele et al., 2006; Curtsinger et al., 2007; Fuertes et al., 2013), has been used as adjuvant immunotherapy in various solid cancers such as renal cell carcinoma (Flanigan et al., 2001), melanoma (Lens and Dawes, 2002) and colorectal cancer (K\u00f6hne et al., 1997; Link et al., 2005). Unfortunately, systemic administration of IFN\u03b1 has shown limited clinical efficacy, likely due to its short plasma half-life (~1 hr) (Bocci, 1994) and the use of high and pulsed doses, which often resulted in systemic side effects (Weber et al., 2015). To overcome these limitations, several strategies to prolong IFN\u03b1 half-life and target the tumor microenvironment have been tested (Fioravanti et al., 2011; Herndon et al., 2012; Jeon et al., 2013; Li et al., 2017; Liang et al., 2018; Yang et al., 2014), including a preclinical gene/cell therapy approach that can deliver constant amounts of IFN\u03b1 into the liver to significantly curb CRC metastatic growth (Catarinella et al., 2016).\n\nHerein, we adopted a continuous intraperitoneal (ip) IFN\u03b1 delivery strategy to show that steady and tolerable IFN\u03b1 doses reduce liver CRC metastatic spreading and improves survival in several CRC mouse models. Our results showed that the antimetastatic effects of IFN\u03b1 rely neither on the direct inhibition of tumor cell proliferation nor on the indirect stimulation of hepatocytes, hepatic stellate cells, liver DCs, Kupffer cells (KCs) and liver capsular macrophages (LCMs). Rather, the results identify HECs, including LSECs, as key mediators of IFN\u03b1-dependent anti-tumor activities that involve the impairment of CRC trans-sinusoidal migration and the development of long-term anti-tumor CD8+ T cell immunity.\n\n## Results\n\n### Selection of the optimal IFN\u03b1 dosing regimen\n\nTo avoid well-known toxicities, especially myelotoxicity, caused by high IFN\u03b1 doses (Weber et al., 2015) and to define a delivery strategy providing prolonged and non-fluctuating IFN\u03b1 levels in blood and tissues, normal inbred mice were implanted intraperitoneally with mini-osmotic pumps (MOP) constantly releasing different rates (i.e. 50 ng/day, 150 ng/day, or 1050 ng/day) of recombinant mouse IFN\u03b11 (termed IFN\u03b1 from now on) over time. Serum IFN\u03b1 levels peaked at day 2 after MOP implantation and relative IFN\u03b1 amounts (from ~100 pg/ml to ~1200 pg/ml) reflected the different MOP loading doses (Figure 1A). Serum IFN\u03b1 levels decreased, albeit not uniformly, at days 5 and 7 post implantation (Figure 1A), mirroring the pharmacokinetic-pharmacodynamic (PK-PD) behavior of other long-lasting formulations of IFN\u03b1 (Jeon et al., 2013). A reduction in circulating white blood cells (WBCs) but not in platelet (PLT) counts or hematocrit (HCT) was detected only with the highest dose (Figure 1B and Figure 1\u2014figure supplement 1A,B). Looking at liver toxicity, we observed no increases in serum alanine aminotransferase (sALT) at all tested doses and time points (Figure 1\u2014figure supplement 1C) and no abnormal changes in liver morphology at autopsy (Figure 1\u2014figure supplement 1D). Looking at the intrahepatic induction of the interferon-stimulated gene (ISG) Irf7 (Cheon et al., 2014) at day 7, we observed a proportional dose response, with a six-fold increase in Irf7 expression at the 150 ng/day dosing regimen (Figure 1C). Notably, this increase paralleled the increase that we previously documented to be associated with protection against liver CRC colonization following a gene/cell therapy based IFN\u03b1 delivery strategy (Catarinella et al., 2016). Lack of bone marrow and liver toxicity, proper induction of hepatic Irf7 expression and maintained responsiveness of hepatic liver cells to IFN\u03b1 (Figure 1\u2014figure supplement 1E) prompted us to select the 150 ng/day dosing regimen for follow-up investigations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig1-v1.jpg)\n\n**Figure 1.:** (A) Quantification of plasma IFN\u03b1 concentration from mice continuously treated with different IFN\u03b1 doses at the indicated time points. Mean values \u00b1 SEM are shown; p-values were calculated by one-way ANOVA Tukey\u2019s multiple comparison test. Significant p-values refer to the IFN\u03b1 50 ng/day group, since NaCl-treated animals had IFN\u03b1 plasma levels below the assay detection limit. p\u22640.05; **p\u22640.01; ***p\u22640.001. (B) White blood cell (WBC) counts of mice treated with different IFN\u03b1 doses at indicated time points. Horizontal dashed lines delimit normal WBC range. Mean value \u00b1 SEM are shown; p-values were calculated by one-way ANOVA Tukey\u2019s multiple comparison test. Significant p-values are referred to the NaCl group. *p\u22640.05; **p\u22640.01. (C) Quantitative real-time PCR analysis of Irf7 mRNA expression from liver tissues of mice treated with different IFN\u03b1 doses for 7 days. Basal Irf7 mRNA expression level was determined in control mice (NaCl; n=9) and the relative expression of Irf7 upon IFN\u03b1 treatment is shown (n=3, for each IFN\u03b1-treated group). Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Platelet (PLT) count from mice treated with NaCl (n=9) or different IFN\u03b1 doses at the indicated time points (n=3 each). Horizontal dashed lines delimit normal PLT range. Mean value \u00b1 SEM are shown; p-values were calculated by one-way ANOVA Tukey\u2019s multiple comparison test. Significant p-values are referred to NaCl group. **p\u22640.01. (B) Hematocrit (HCT) from mice treated with NaCl or different IFN\u03b1 doses at indicated time points. Horizontal dashed lines delimit normal HCT range. Mean value \u00b1 SEM are shown; p-values were calculated by one-way ANOVA Tukey\u2019s multiple comparison test. Significant p-values are referred to NaCl group. **p\u22640.01. (C) Serum Alanine Aminotransferases (sALT) quantification in plasma of mice treated with NaCl or different IFN\u03b1 doses at indicated time points. Horizontal dashed line delimits normal sALT range. Mean values \u00b1 SEM are shown. (D) Representative hepatic H&E micrographs from NaCl and IFN\u03b1-treated mice with the indicated IFN\u03b1 doses 7 days after MOP implantation. Scale bar = 100 \u00b5m. (E) Representative microscopic images of phospho-STAT1 (pSTAT1) IHC of the liver of mice treated continuously with NaCl or 150 ng/day IFN for 7 days and euthanized 30 min after ip injection with NaCl or 1 \u00b5g IFN\u03b1. Scale bar = 50 \u00b5m. Note that pSTAT1 is expressed only in small clusters of cells in close proximity to the portal circulation (i.e. HECs, stellate cells, or leukocytes) in mice continuously treated with IFN\u03b1 at day 7 after treatment initiation. Of note, injection of pSTAT1-synchronising doses of IFN\u03b1 resulted in complete activation of all hepatic cells in both groups of mice, suggesting that IFN\u03b1-dependent counterregulatory mechanisms are not induced by continuous IFN\u03b1 treatment.\n\n### Continuous IFN\u03b1 administration reduces liver CRC metastatic burden and improves survival\n\nWe next tested the ability of continuous IFN\u03b1 administration (150 ng/day for 28 days) to reduce CRC metastatic growth in the liver. Groups of H-2bxd F1 hybrids of C57BL/6 J x BALB/c (CB6) mice were implanted with either control MOP-NaCl (termed NaCl) or MOP-IFN\u03b1 (termed IFN\u03b1) (Figure 2A). Seven days later, a time frame compatible with the perioperative period in humans (Horowitz et al., 2015), CB6 mice were intrasplenically challenged with either the immunogenic microsatellite instable (MSI) MC38 CRC cell line (Efremova et al., 2018; Rosenberg et al., 1986) or the poorly immunogenic microsatellite stable (MSS) CT26 CRC cell line (Brattain et al., 1980; Efremova et al., 2018). Rapid removal of the spleen after CRC cell injection was implemented to avoid intrasplenic tumor growth (Catarinella et al., 2016). Each CRC cell line was injected at doses known to induce similar survival rates in age- and sex-matched CB6 recipients that, carrying hybrid H-2bxd alleles, are immunologically permissive to both MC38 and CT26 cells (Catarinella et al., 2016). After treatment initiation, well-tolerated serum IFN\u03b1 levels of ~300 pg/ml at day 2 and ~100 pg/ml thereafter were observed (Figure 2B and Figure 2\u2014figure supplement 1A,B), which subsequently declined to undetectable levels. The intrahepatic expression of Irf7 monitored at day 21 after continuous IFN\u03b1 therapy (Figure 2\u2014figure supplement 1C, D) was like that observed earlier at day 7 (Figure 1C). Magnetic resonance imaging (MRI)-based longitudinal analyses \u2013 in MC38- (Figure 2C and Figure 2\u2014figure supplement 1E) or CT26-challenged (Figure 2D and Figure 2\u2014figure supplement 1F) animals \u2013 revealed that 100% of NaCl-treated mice (Figure 2E and F) develop multiple metastatic tumor lesions by days 21 and 28 after challenge and no mice displayed detectable tumors in other organs. Liver lesions increased in volume afterwards, ultimately resulting in imposed humane euthanization of both MC38 (Figure 2\u2014figure supplement 1I) or CT26 (Figure 2\u2014figure supplement 1J) tumor carriers in the intervening weeks. Conversely, 45% and 66% of IFN\u03b1-treated mice challenged with MC38 or CT26 cells, respectively, showed absence of liver metastases throughout the entire duration of the experiment (Figure 2E and F). All the remaining mice scoring disease-positive at days 21 and 28 displayed lesions that were reduced in number and size when compared to those detected in NaCl-treated counterparts (Figure 2\u2014figure supplement 1G, J). Of note, metastatic lesions eventually regressed and achieved complete remission by day 50 in approximately 33% of IFN\u03b1-treated mice that were challenged with MC38 cells and scored disease-positive at day 21 (Figure 2C and E and Figure 2\u2014figure supplement 1E), whereas none of the few CT26-challenged mice scoring disease-positive at day 21 survived long-term (Figure 2D and F and Figure 2\u2014figure supplement 1F), with tumors confined only to the liver. Continuous IFN\u03b1 administration also improved survival, with similar rates for both MC38- and CT26-challenged mice (Figure 2G and H). These results indicate that the continuous IFN\u03b1 administration safely and efficiently limits the liver metastatic colonization of CRC cell lines intrinsically carrying different immunogenic or genetic properties.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic representation of the experimental procedure. Intrasplenic injection of 7x104 MC38 or 5x103 CT26 cells was performed 7 days after continuous NaCl or IFN\u03b1 therapy. (B) Quantification of plasma IFN\u03b1 concentration at different time points after continuous IFN\u03b1 administration (n=6). The time of intrasplenic CRC cell injection has also been depicted. Mean values \u00b1 SEM are shown. (C\u2013D) Representative T1 contrast-enhanced magnetic resonance images (MRI) of the liver of mice treated with NaCl (red frame) and IFN\u03b1 (blue frame) at 21, 28, and 50 days after MC38 (C) or CT26 (D) cells injection. Red dashed lines highlight CRC liver metastases, characterized as hypointense regions in T1-weighted sequences. n.a.=not assessed, is referred to mice euthanized before the specified time point; scale bar = 5 mm. (E\u2013F) Percentage of mice treated with NaCl (MC38 n=3 + 3; CT26 n=5 + 5 for each of two independent experiments) or IFN\u03b1 (MC38 n=5 + 6; CT26 n=5 + 6 for each of two independent experiments) bearing at least one CRC liver metastasis estimated by MRI analysis at indicated time points after MC38 or CT26 injection. The oblique black line pattern within columns depicts the percentage of mice euthanized before the indicated time point. Mean values are shown; p-values were calculated by Fisher\u2019s exact test. (G\u2013H) Kaplan-Meier survival curves of Sham (n=3), NaCl- (MC38 n=6; CT26 n=10) or IFN\u03b1-treated (MC38 n=11; CT26 n=11) mice after MC38 or CT26 cells injection. The blue pattern indicates the time frame of IFN\u03b1 ip release; p-values were calculated by log-rank/Mantel-Cox test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B) WBC counts of mice treated with NaCl or IFN\u03b1 and injected with MC38 (A) or CT26 (B) at the indicated time points. Horizontal dashed lines delimit normal WBC range. (Arrows indicate the time of MC38 or CT26 cells injection.) Mean values \u00b1 SEM are shown; p-values were calculated by one-way ANOVA Tukey\u2019s multiple comparison test. Significant p-values are referred to NaCl group. *p\u22640.05; **p\u22640.01; ***p\u22640.001. (C\u2013D), Quantitative real-time PCR analyses of the relative expression levels of the Irf7 mRNAs within the metastatic liver tissue of mice treated with NaCl (n=5) or IFN\u03b1 (n=5) at 14 days after intrasplenic injection of MC38 or CT26 cells. The basal Irf7 mRNA expression was estimated in the liver tissue of Sham control mice (n=3) and the relative expressions of Irf7 are shown as mean value \u00b1 SEM; p-values were calculated by Mann-Whitney test relative to NaCl treated mice. (E\u2013F) Representative T2 MRI analysis of the liver of mice treated with MOP-NaCl (red frame) and MOP-IFN\u03b1 (blue frame) at 21, 28, and 50 days after injection of MC38 (E) or CT26 (F) cells. Red dashed lines mark CRC liver metastases characterized as slightly-hyperintense regions in T2-weighted Sequences. n.a.=not assessed, is referred to mice euthanized before the specified time point; scale bar: 5 mm. (G\u2013H) Quantification of the number of lesions in the liver of mice treated with MOP-NaCl and MOP-IFN\u03b1 at indicated time points after MC38 (G) and CT26 (H) cells injection by MRI analysis. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test; n.a.=not assessed, is referred to mice euthanized before the specified time point. (I\u2013J), Quantification of the total tumor volume in the liver of mice treated with MOP-NaCl and MOP-IFN\u03b1 at indicated time points after MC38 (I) and CT26 (J) cells injection by MRI analysis. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test; n.a.=not assessed, is referred to mice euthanized before the indicated time point.\n\n### Continuous IFN\u03b1 administration prevents spontaneous hepatic colonization of orthotopically implanted CT26LM3 cells\n\nTo confirm the above-mentioned results in a different metastatic setting, we developed an orthotopic CRC model of liver metastases by implanting invasive CRC cells into the mouse cecal wall. As previously reported (Zhang et al., 2013), invasive CRC cells were generated by serial intracecal injections of the parental CT26 cells into CB6 mice (Figure 3\u2014figure supplement 1A). The percentage of metastatic livers in intracecally implanted mice significantly increased as CT26 cells were passaged, with an almost 100% of animals bearing multiple liver metastases after 3 rounds of in vivo selection (Figure 3\u2014figure supplement 1B-D). Three-time passaged cells (termed CT26LM3) were then orthotopically implanted in the cecal wall of CB6 mice and 7 days later the animals were treated with either NaCl or IFN\u03b1 (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic representation of the experimental procedure. Seven days after intracecal injection of 2x105 CT26LM3 cells, mice were randomly assigned to receive either continuous NaCl (n=7) or IFN\u03b1 (n=6) administration and analyzed by MRI 14 days later. (B) Quantification of plasma IFN\u03b1 concentration at the indicated time point after cecal wall injection of CT26LM3 cells in mice described in a. The arrow indicates the time of NaCl or IFN\u03b1 therapy initiation. Mean values \u00b1 SEM are shown. (C) WBC counts from mice described in (A) continuously treated with NaCl or IFN\u03b1 at indicated time points. Horizontal dashed lines delimit the normal WBC range. The time of MOP implantation has also been depicted. Mean value \u00b1 SEM are shown; p-values were calculated by one-way ANOVA Tukey\u2019s multiple comparison test. Significant p-values are referred to NaCl group. ***p\u22640.001. (D) Representative images (top panels) of the hepatic lesions and intracecal tumors observed in NaCl- (red frame) and IFN\u03b1-treated (blue frame) mice, 21 days after CT26LM3 cells intracecal wall injection, and the corresponding hepatic contrast-enhanced MRI, T1-weighted (middle panels) and T2-weighted (bottom panels) sequences. Red dashed lines identify macroscopic liver metastatic lesions. Scale bars = 5 mm. (E) Quantification of the weight of primary CRC tumors 21 days after CT26LM3 cells intracecal wall injection of mice described in D. (F) Quantification of the number of hepatic lesions and total tumor volume of liver metastases by MRI analysis of mice described in D. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (G) Representative H&E, Ki67, CD34, F4/80, and CD3 immunohistochemical micrographs of liver metastatic lesions found in NaCl- (red frame) and IFN\u03b1-treated (blue frame) mice, 21 days after intracecal injection of CT26LM3 cells. Scale bar = 100 \u03bcm. (H) Quantification of the percentage of mice bearing liver metastases, as well as the percentage of tumor area and the number of cells expressing Ki67, CD34, F4/80, and CD3 per mm2 determined by IHC. Immunohistochemical measurements were conducted on at least 1000 mm2 of total liver area for both experimental conditions. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic representation of the experimental procedure. (1) 2x106 CT26 cells were grown subcutaneously (sc) c into NSG immunodeficient mice. (2) Excised tumors were disaggregated and cultured in vitro to generate CT26sc cells. (3) 2x106 CT26sc cells were injected into the cecal wall of immunocompetent CB6 mice. (4) After 28 days, the number of liver metastatic foci that arised from primary cecal tumors were counted and (5) metastatic liver tumor cells were isolated and cultured in vitro to generate CT26LM1 cells. (6) 2x105 CT26LM1 cells were injected into the cecal wall of a new immunocompetent mice to obtain CT26LM2 cells. The procedure was repeated with 2x105 CT26LM2 cells to obtain CT26LM3 cells. (B) Percentage of mice bearing at least one macroscopic liver metastasis 28 days after intracecal wall injection of CT26LM1 (n=5), CT26LM2 (n=7) or CT26LM3 (n=5) cells. Mean values are shown; p-value was calculated by Fisher\u2019s exact test. (C) Number of hepatic lesions in the same mice described in (B). Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (D) Representative image of the hepatic lesions observed in mice 28 days after intracecal injection of CT26LM3. Black dashed line identifies macroscopic cecal primary tumor whereas white dashed lines delineate liver metastatic lesions.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Representative H&E, Ki67, CD34, F4/80, and CD3 immunohistochemical micrographs of primary CRC cecal tumors developed in NaCl- (red frame) and IFN\u03b1-treated (blue frame) mice, 21 days after intracecal injection of CT26LM3 cells. Scale bar = 100 \u03bcm. (B) Quantification of the number of cells expressing Ki67, CD34, F4/80, and CD3 per mm2 determined by IHC. Immunohistochemical measurements were conducted on at least 1000 mm2 of total liver area of sham mice and within all metastatic lesions found in both experimental conditions. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (C) Representative H&E, Ki67, CD34, F4/80, and CD3 immunohistochemical micrographs showing liver tumor characteristics of metastases found in NaCl- (red frame) and IFN\u03b1-treated (blue frame) mice, 21 days after intracecal injection of CT26LM3 cells. Scale bar = 100 \u03bcm. (D) Quantification of the number of cells expressing Ki67, CD34, F4/80, and CD3 per mm2 determined by IHC. Immunohistochemical measurements were conducted on at least 1000 mm2 of total liver area of sham mice and within all metastatic lesions found in both experimental conditions. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test.\n\nConsistent with our previous results (Figure 2B), serum IFN\u03b1 levels peaked at day 2 after MOP implantation (Figure 3B), without causing myelotoxicity (Figure 3C), and MRI analyses performed 14 days later revealed that continuous IFN\u03b1 therapy did not alter the growth of primary intracecal tumors (Figure 3D and E), while IFN\u03b1 treatment significantly reduced both number and size of hepatic lesions (Figure 3D and F) with 60% of mice spared from metastatic lesions (Figure 3H). The primary intracecal tumors (Figure 3\u2014figure supplement 2A) and liver metastases (Figure 3G) detected after orthotopic implantation of CT26LM3 cells were also characterized by immunohistochemistry (IHC). This analysis showed that primary intracecal tumors and liver metastatic lesions of NaCl-treated control mice were highly proliferative (as denoted by Ki67 positivity), exhibited marked signs of angiogenesis (as denoted by CD34 staining) and, accordingly with previous reports (Catarinella et al., 2016; Tauriello et al., 2018), were devoted of F4/80+ resident macrophages and CD3+ T cells (Figure 3G and H). Similar results were also observed in IFN\u03b1-treated primary intracecal tumors (Figure 3\u2014figure supplement 2A, B). The absence of liver metastases in the majority of IFN\u03b1-treated mice is reflected by a reduced Ki67 or CD34 staining and an apparently normal distribution of F4/80+ macrophages and CD3+ T cells (Figure 3G and H). The few small hepatic lesions detected in 40% of mice continuously treated with IFN\u03b1 (Figure 3H and Figure 3\u2014figure supplement 2C, D) did not show differences in Ki67 positivity, CD34 staining or amount of F4/80+ resident macrophages and CD3+ T cells in relation to NaCl-treated mice (Figure 3\u2014figure supplement 2C, D), consistent with the notion that CRC tumors may deregulate the Ifnar1 receptor and, thus, become refractory to IFN\u03b1 therapy (Boukhaled et al., 2021; Katlinski et al., 2017).\n\nAltogether, these results indicate that continuous IFN\u03b1 therapy does not significantly alter the growth of primary established CRC tumors but reduces the liver metastatic potential of invasive CRC cells emerging from the cecum.\n\n### HECs mediate the anti-metastatic activity of IFN\u03b1\n\nAs the Ifnar1 surface receptor subunit is necessary to mediate the pleiotropic anti-tumor properties of IFN\u03b1 (Cheon et al., 2014), we deleted this molecule from CRC cells and from hepatic parenchymal and non-parenchymal cells to identify the mechanism of action (MoA) of continuous IFN\u03b1 administration in our in vivo system. We restricted these studies to MC38 CRC cells because the genetic background of the mouse models did not allow us to use CT26 CRC MHC-I mismatched cell lines in C57BL/6 recipients. We also adopted a new seeding approach that \u2013 involving the injection of CRC cells through the superior mesenteric vein \u2013 potentially avoids immune deregulations linked to the splenectomy procedure. Seven days after NaCl or IFN\u03b1 administration, C57BL/6 mice were challenged with wild-type MC38 cells or with MC38 cells that were CRISPR-Cas9-edited to lack a functional Ifnar1 receptor (MC38Ifnar1_KO). To this end, MC38-edited clones showed mismatches in a T7E1 assay and clone C8 (MC38C8) carrying Ifnar1 deleting mutations failed to express Irf7 upon in vitro IFN\u03b1 stimulation (Figure 4\u2014figure supplement 1A-C).\n\nMRI analysis at day 21 after CRC challenge revealed that, in comparison with liver metastases observed in NaCl-treated controls, the lesions produced by MC38- or MC38Ifnar1_KO cells in IFN\u03b1-treated mice were similarly reduced in number and size (Figure 4A and C\u2013D) and this resulted in comparable mouse survival rates (Figure 4E) in the absence of apparent myelotoxicity (Figure 4\u2014figure supplement 2A). These data support the hypothesis that in our experimental setting the continuous IFN\u03b1 administration has no direct antiproliferative activity towards CRC cells consistent with our previous reported data (Figure 4\u2014figure supplement 1A-C; Catarinella et al., 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative hepatic contrast-enhanced MRI of wild-type mice (C57BL/6) at day 21 after injection of 5x104 MC38 cells or 5x104 MC38Ifnar1_KO cells. Treatment with NaCl (red frame) and IFN\u03b1 (blue frame) was initiated 7 days prior to intrasplenic injection of CRC cells. Red dashed lines highlight CRC liver metastases, characterized as hypointense and slightly-hyperintense regions in T1- and T2-weighted sequences, respectively. Scale bar = 5 mm. The number of mice for each experimental condition is also indicated. (B) Representative hepatic contrast-enhanced MRI at day 21 after MC38 intrasplenic injection of Ifnar1fl/fl mice and mice lacking Ifnar1 on hepatocytes (AlbIfnar1_KO), hepatic stellate cells (PdgfrbIfnar1_KO), CD11c-expressing DCs/KCs/LMCs (ItgaxIfnar1_KO) and endothelial cells (VeCadIfnar1_KO) injected with 5x104 MC38 cells. Treatment with NaCl (red frame) and IFN\u03b1 (blue frame) was initiated 7 days before MC38 cells intrasplenic injection. Red dashed lines highlight CRC liver metastases, characterized as hypointense and slightly-hyperintense regions in T1- and T2-weighted sequences, respectively. Scale bar = 5 mm. Number of mice for each experimental condition are also indicated. (C) Quantification of the number of hepatic lesions by MRI analysis, 21 days after CRC cells injection, of NaCl and IFN\u03b1-treated mice found in C57BL/6 mice, Ifnar1fl/fl mice and all conditional Ifnar1_KO mouse models described in (A) and (B). Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (D) Quantification of total tumor volume of liver metastases by MRI analysis at day 21 after CRC intrasplenic injection of NaCl- and IFN\u03b1-treated mice found in C57BL/6 mice, Ifnar1fl/fl mice and all conditional Ifnar1_KO mouse models analyzed. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (E) Kaplan-Meier survival curves of C57BL/6 mice injected with MC38 cells (top) or MC38Ifnar1_KO cells (bottom) described in (A). Sham injected animals (n=3) were used as control. The blue pattern indicates the time frame of IFN\u03b1 ip release; p-values were calculated by log-rank/Mantel-Cox test. (F) Kaplan-Meier survival curves of the indicated groups of mice described in (B). Sham injected animals (n=3 per group) were used as control. The blue pattern indicates the time frame of IFN\u03b1 ip release. The total number of mice for each experimental group were: NaCl-C57BL/6 n=8; IFN\u03b1-C57BL/6 n=6; NaCl-MC38Ifnar1_KO-C57BL/6 n=5; IFN\u03b1-MC38Ifnar1_KO-C57BL/6 n=6; NaCl-Ifnar1fl/fl n=6; IFN\u03b1-Ifnar1fl/fl n=11; NaCl-AlbIfnar1_KO n=6; IFN\u03b1-AlbIfnar1_KO n=8; NaCl-PdgfrbIfnar1_KO n=5; IFN\u03b1-PdgfrbIfnar1_KO n=7; NaCl-ItgaxIfnar1_KO n=8; IFN\u03b1-ItgaxIfnar1_KO n=8 and NaCl-VeCadIfnar1_KO n=10; IFN\u03b1-VeCadIfnar1_KO n=9. Data pooled from at least two independent experiments of each experimental group; p-values were calculated by log-rank/Mantel-Cox test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) T7E1 mismatch detection assay was used to screen three representative single-cell MC38 clones (MC38B2 and MC38C8 transfected with crRNA1 or MC38H11 transfected with crRNA2). Additionally, untransfected MC38, the bulk crRNA1 MC38 line (defined as MC38Bulk) and a no DNA control were also treated or not with T7E1 and analyzed as further controls. A 100 bp Marker lane was used as reference. Note that only MC38 transfected with crRNA1 showed cleaved mismatched products and were further characterized. (B) Sanger sequencing was performed to validate the location and nature of indel events of the MC38C8 cell clone. The location of crRNA1 is depicted in red, insertions are highlighted in blue and dashed lines indicate deleted regions. Sequence alignment of MC38 and the two Ifnar1 alleles of MC38C8 confirmed a 296 bp deletion in allele 1 and a 2 bases insertion in allele 2, causing a non-functional frame shift. (C) Functional screening of MC38B2 and MC38C8 cells and MC38 controls, was determined by quantitative real-time PCR of the Irf7 gene after 4 hours of in vitro stimulation with 300 ng/ml IFN\u03b1 (n=3). Mean values \u00b1 SEM are shown; p-values were calculated by one-way ANOVA Tukey\u2019s multiple comparison test. (D) VeCadCreERT2, PdgfrbCreERT2, AlbCre and ItgaxCre mice were crossed with Ifnar1fl/fl mice to generate progenies with Ifnar1 conditional deletion in the corresponding cell type. Amplified Ifnar1 products from hepatic genomic DNA of C57BL/6 (WT), Ifnar1fl/fl, VeCadIfnar1_KO, PdgfrbIfnar1_KO, AlbIfnar1_KO and ItgaxIfnar1_KO mice and a no DNA control are shown. A 100 bp Marker lane was used as reference. The expected PCR amplicons size are 1100 bp for Ifnar1 WT, 669 bp for Ifnar1fl and 389 bp for Ifnar1 deleted alleles. Note that the ratio between each floxed band and deleted band is consistent with the relative abundance of each cell type within the liver. (E) Composite immunofluorescent characterization of the patterns of Cre recombination in AlbCre, PdgfrbCreERT2, ItgaxCre , and VeCadCreERT2 mice crossed to Rosa26-ZsGreen reporter mice. Representative IF show specific recombination in hepatocytes, hepatic stellate cells (PDGFR\u03b2+), endothelial cells (CD31+), and CD11c+ hepatic DCs and F4/80+ KCs, respectively; Scale bar = 100 \u00b5m. (F) Immunofluorescent quantification of the percentage of GFP+ cells that colocalize with specific cell type markers (PDGFR\u03b2+, CD11c+F4/80+, and CD31+) for the most relevant Cre recombinant mouse models (PdgfrbCreERT2, ItgaxCre, and VeCadCreERT2, respectively).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) WBC counts at indicated time point from C57BL/6, injected with MC38 or MC38Ifnar1_KO cells and treated with NaCl or IFN\u03b1. Sham injected animals (n=3) were used as controls. Horizontal dashed lines delimit normal WBC range. Arrows indicate the time of MC38 cells injection. Mean values \u00b1 SEM are shown; p-values were calculated by two-way ANOVA mixed-effect analysis. Significant p-values are referred to NaCl group. *p\u22640.05; **p\u22640.01. (B) WBC counts at indicated time point from Ifnar1fl/fl, AlbCre, PdgfrbCreERT2, ItgaxCre, and VeCadCreERT2 mice injected with MC38 cells and treated with NaCl or IFN\u03b1. Sham injected animals (n=3) were used as controls. Horizontal dashed lines delimit normal WBC range. Arrows indicate the time of MC38 cells injection. Mean values \u00b1 SEM are shown; p-values were calculated by two-way ANOVA mixed-effect analysis. Significant p-values are referred to NaCl group. *p\u22640.05; **p\u22640.01; ***p\u22640.001. (C) Kaplan-Meier survival curves of Ifnar1fl/fl mice injected with MC38 cells. Sham injected animals per group (n=3) were used as control. The blue pattern indicates the time frame of IFN\u03b1 ip release. Mean values are shown; p-values were calculated by log-rank/Mantel-Cox test. (D) Kaplan-Meier survival analysis of MOP-NaCl-treated VeCadIfnar1_KO mice in relation to all cell type-specific conditional Ifnar1_KO mice and Ifnar1fl/fl mice showing that upon Ifnar1 loss from endothelial cells mouse survival was compromised. Mean values are shown; p-values were calculated by log-rank/Mantel-Cox test.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Representative H&E, CD34, F4/80 and CD3 immunohistochemical micrographs of liver metastatic lesions found in NaCl- (red frame, n=4) and IFN\u03b1-treated (blue frame, n=7) Ifnar1fl/fl mice or in NaCl- (red frame, n=4) and IFN\u03b1-treated (blue frame, n=4) VeCadIfnar1_KO mice. Scale bar = 100 \u03bcm. (B) Quantification of the percentage of tumor area and the number of cells expressing CD34, F4/80, and CD3 per mm2 determined by IHC. Immunohistochemical measurements were conducted on at least 1000 mm2 of total liver area for both experimental conditions. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test.\n\nNext, we crossed Ifnar1-floxed mice (termed Ifnar1fl/fl) (Prigge et al., 2015) with transgenic mice selectively expressing Cre recombinase in parenchymal and non-parenchymal liver cells (Gerl et al., 2015; Postic et al., 1999; Wang et al., 2010; Figure 4\u2014figure supplement 1D). Cell type-specific recombination was confirmed by crossing each parental mouse line with Rosa26-ZsGreen reporter mice. Note that by crossing the parental Cre-expressing lines with Rosa26-ZsGreen reporter mice (Madisen et al., 2010) the resultant mice showed specific recombination in most hepatocytes (identified by morphology), and liver fibroblast (GFP+/PDGFR\u03b2+), with about 98.2 \u00b1 0.72% hepatic stellate cells that co-expressed GFP+ and PDGFR\u03b2+ signals (Figure 4\u2014figure supplement 1E, F). Similarly, hepatic DCs (GFP+/CD11c+) had 94.17 \u00b1 2.16% colocalization with GFP, while the colocalization percentage of F4/80+ KCs or LCMs (GFP+/F4/80+) was 78.14 \u00b1 5.03% (Figure 4\u2014figure supplement 1E,F; Bl\u00e9riot and Ginhoux, 2019; Karmaus and Chi, 2014; Madisen et al., 2010). Finally, HECs, including LSECs, (GFP+/CD31+) showed 85.3 \u00b1 5.03% colocalization (Figure 4\u2014figure supplement 1E, F), with no expression of GFP signals in cells other than CD31+. Ifnar1fl/fl control mice and mice lacking Ifnar1 in hepatocytes (termed AlbIfnar1_KO), hepatic stellate cells (termed PdgfrbIfnar1_KO), Itgax+ (CD11c) DCs/KCs/LCMs (termed ItgaxIfnar1_KO) or Cdh5+ + cells (termed VeCadIfnar1_KO) were intramesenterically injected with MC38 cells 7 days after NaCl or IFN\u03b1 therapy initiation and did not show signs of hematotoxicity during IFN\u03b1 infusion (Figure 4\u2014figure supplement 2B). Metastatic growth was assessed by MRI at day 21 (Figure 4B). Loss of Ifnar1 on hepatocytes, hepatic stellate cells or DCs/KCs/LCMs did not significantly alter the anti-metastatic activity of IFN\u03b1 treatment (Figure 4C, D and F and Figure 4\u2014figure supplement 2C). By contrast, the depletion of Ifnar1 on HECs allowed the lesions to grow undisturbed (Figure 4B). Indeed, VeCadIfnar1_KO mice treated with either NaCl or IFN\u03b1 displayed very similar numbers and sizes of hepatic lesions (Figure 4C and D) or survival rates (Figure 4F), indicating that the antimetastatic properties of IFN\u03b1 requires Ifnar1 signaling on HECs. VeCadIfnar1_KO mice exhibited increased tumor burden (Figure 4D) and mortality rates (Figure 4\u2014figure supplement 2D) when compared to NaCl-treated Ifnar1fl/fl mice, suggesting that hepatic endothelial Ifnar1 signaling exerts significant anti-tumor activity even in the context of physiologic endogenous intrahepatic levels of type I interferons. Furthermore, histological analysis of hepatic CRC lesions from NaCl- and IFN\u03b1-treated VeCadIfnar1_KO mice euthanized at day 21 after MC38 intramesenteric injection indicated that these tumors resembled NaCl-treated Ifnar1fl/fl lesions, showing signs of angiogenesis (as denoted by CD34 positivity) and similar content of F4/80+ macrophages and CD3+ T cells within the intrahepatic CRC foci (Figure 4\u2014figure supplement 3A, B).\n\n### Continuous IFN\u03b1 administration limits trans-sinusoidal migration of CRC cells by strengthening the liver vascular barrier\n\nWe next took advantage of fluorescence-based techniques to investigate the initial steps of liver colonization. First, we assessed the intrahepatic localization of GFP-expressing MC38 cells (MC38GFP) (Talamini et al., 2021) that were intramesenterically challenged 5 min earlier. Most MC38GFP cells in Ifnar1fl/fl or VeCadIfnar1_KO mice appeared physically trapped at the beginning of the sinusoidal circulation in both mouse lineages. This was evidenced by the close contact of MC38GFP cells with LYVE-1-expressing LSECs in the proximity of the portal tracts (Figure 5\u2014figure supplement 1A). Further, MC38GFP cells arrested where the sinusoidal diameter (Figure 5\u2014figure supplement 1B) is smaller than their own (12\u00b10.1 \u00b5m), similar to what we previously reported (Catarinella et al., 2016). As the process of trans-sinusoidal migration \u2013 a critical limiting step in the metastatic cascade \u2013 is known to occur within 24 hr of CRC challenge (Chambers et al., 2002; Valastyan and Weinberg, 2011; Wolf et al., 2012), the intrahepatic number and localization of MC38GFP cells were then studied at this time point. Confocal IF quantification revealed that, compared to NaCl-treated Ifnar1fl/fl animals, MC38GFP cells were about ~twofold less abundant in IFN\u03b1-treated Ifnar1fl/fl mice and ~threefold more abundant in VeCadIfnar1_KO mice treated with NaCl or IFN\u03b1 (Figure 5A top). Moreover, confocal 3D reconstructions of liver sinusoids from IFN\u03b1-treated Ifnar1fl/fl mice unveiled that by 24 hr most MC38GFP cells localize intravascularly (i.e. they did not invade the liver parenchyma), while in NaCl-treated Ifnar1fl/fl controls and in NaCl- or IFN\u03b1-treated VeCadIfnar1_KO mice only few MC38GFP cells remain within the liver vasculature (i.e. they invaded the liver parenchyma) (Figure 5A bottom, 5B and Figure 5\u2014videos 1\u20134). These results indicate that HECs, including LSECs, negatively control trans-sinusoidal CRC migration upon IFN\u03b1 sensing.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig5-v1.jpg)\n\n**Figure 5.:** (A) Total number of MC38GFP cells per area (top) and total number of intravascular MC38GFP cells per tissue area (bottom). The total hepatic area was approximately 5 mm2 for each experimental group. Intravascular localization was measured on 20 x images, 5 randomly selected images per mouse (n=3 per group). Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (B) Confocal reconstruction of the liver vasculature from Ifnar1fl/fl and VeCadIfnar1_KO mice 24 hr after MC38GFP cells (green) intramesenteric vein injection in mice that were treated with NaCl or IFN\u03b1 for 7 days. CD31 is shown in grey. To allow visualization of intravascular MC38GFP cells and to enhance image clarity, the transparency of the sinusoidal rendering was increased up to 80% (bottom). Scale bars = 20\u00b5m. (C) Fenestrae frequency histogram (top) and percentage of vessel porosity (the percentage of liver endothelial surface area occupied by fenestrae, bottom) in liver sections of control Ifnar1fl/fl and VeCadIfnar1-KO mice treated for 7 days with continuous NaCl or IFN\u03b1 therapy. Quantification was performed on 17.000 x SEM images, 10 randomly selected images per mouse (n=3 per group). A total area of approximately 720 \u00b5m2 of sinusoidal surface was analyzed for each mouse. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (D) Representative scanning electron micrographs (SEM, top) and transmission electron micrographs (TEM, bottom) images from liver sections of mice described in (C), showing hepatic fenestrations and endothelial features. Arrow indicates the increased endothelial thickness observed after continuous IFN\u03b1 therapy in Ifnar1fl/fl mice. SEM scale bars = 1 \u00b5m; TEM scale bars = 500 nm. (E) Quantification of the arithmetical mean deviation or Ra coefficient (top) and the percentage of hepatic area positive for HS staining (bottom) on Ifnar1fl/fl and VeCadIfnar1_KO livers treated with continuous NaCl or IFN\u03b1 therapy for 7 days. Quantification was performed on at least 3 Ifnar1fl/fl and VeCadIfnar1_KO livers per group. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (F) Liver sinusoidal endothelial glycocalyx (GCX) visualization by scanning electron micrographs (SEM, top) from Ifnar1fl/fl and VeCadIfnar1_KO livers that were perfused with lanthanum nitrate (a heavy metal that allows GCX visualization by stabilizing negatively charged GCX structures) 7 days after continuous NaCl or IFN\u03b1 therapy. Scale bars = 1 \u00b5m. Inserts display a representation of the 3D topographic surface of a selected area within the liver sinusoid of each experimental condition. Representative immunofluorescence micrographs of Heparan sulfate (HS; green) and CD31 (red) staining from Ifnar1fl/fl and VeCadIfnar1_KO mice treated with continuous NaCl or IFN\u03b1 therapy for 7 days, showing increased HS accumulation after IFN\u03b1 therapy only in Ifnar1fl/fl mice (bottom). Hoechst (blue) was used for nuclear counterstaining. Scale bars = 20\u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Representative composite immunofluorescence images showing a pan-endothelial cell marker (CD31, blue) and a liver sinusoidal marker (LYVE-1; red) 5 min after MC38GFP cells (green) injection in Ifnar1fl/fl or VeCadIfnar1_KO mice. Colocalization between CD31 and LYVE-1 is shown in magenta. \u00d73 magnification shows entrapment of CRC cells at the beginning of the hepatic sinusoid. Scale bar = 20 \u00b5m. (B) Quantitative analysis of hepatic sinusoids diameter from transmission electron micrographs (TEM) images of Ifnar1fl/fl and VeCadIfnar1_KO mice after 7 days of continuous NaCl or IFN\u03b1 therapy. Quantification was performed on 3.400 x TEM images of three animals per group, nine randomly selected images per mouse. A total area of approximately 286 \u00b5m2 was analyzed for each mouse. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (C) FACS analysis showing the percentage of ITGB2+ (top graph) and ITGA4+ (bottom graph) cells within the hepatic CD31+ non-parenchymal cells (NPC) population of Ifnar1fl/fl and VeCadIfnar1_KO mice after 7 days of continuous NaCl or IFN\u03b1 therapy. For each experimental group, five animals were analyzed. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (D) Table displaying the quantification of endothelial thickness (nm), the Space of Disse density (%), the amount of collagen deposits (expressed as the percentage of hepatic sinusoids exhibiting visible collagen fibers) and the presence of basal lamina (expressed as the percentage of hepatic sinusoids exhibiting continuous basal lamina) quantified in TEM images of three animals per group. Randomly selected images (10 fields/mouse) were acquired from Ifnar1fl/fl and VeCadIfnar1_KO mouse livers treated for 7 days with continuous NaCl or IFN\u03b1 therapy. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. *p<0.05. (E) Representative composite immunofluorescent micrographs of mouse liver cryosections, from Ifnar1fl/fl and VeCadIfnar1_KO mice treated for 7 days with continuous NaCl or IFN\u03b1 therapy and stained with CD31 pan-endothelial marker (red) and the ECM components, Collagen IV (green, top images) or Laminin (green, bottom images). Hoechst (blue) was used for nuclear counterstaining. Scale bars = 20\u00b5m. (F) Quantification of the percentage of hepatic area positive for Collagen type IV (top graph) or Laminin (bottom graph) staining on Ifnar1fl/fl and VeCadIfnar1_KO livers treated with continuous NaCl or IFN\u03b1 therapy for 7 days. Quantification was performed on 20 x images of at least 3 mice per group, 10 randomly selected images per mouse. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (G) Representative composite immunofluorescent micrographs of mouse liver cryosections, from Ifnar1fl/fl and VeCadIfnar1_KO mice treated for 7 days with continuous NaCl or IFN\u03b1 therapy, with CD31 pan-endothelial marker (red) and the cell-adhesion molecules ICAM1 (green, top images) or E-selectin (green, bottom images). Hoechst (blue) was used for nuclear counterstaining. Scale bars = 20 \u00b5m. (H) Quantification of the percentage of hepatic area positive for ICAM1 (top graph) or E-selectin (bottom graph) staining on Ifnar1fl/fl and VeCadIfnar1_KO livers treated with continuous NaCl or IFN\u03b1 therapy for 7 days. Quantification was performed on 20 x images of at least 3 mice per group, 10 randomly selected images per mouse. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Representative composite immunofluorescent micrographs of mouse liver cryosections, from Ifnar1fl/fl and VeCadIfnar1_KO mice treated for 7 days with continuous NaCl or IFN\u03b1 therapy, with CD31 (red) and LYVE-1 (green). Hoechst (blue) was used for nuclear counterstaining. Scale bars = 20 \u00b5m. (B) Quantification of the percentage of hepatic area positive for LYVE-1 staining of mice described in (A). Quantification was performed on 20 x images of at least 3 mice per group. Mean values \u00b1 SEM; p-values Mann-Whitney test. (C) Representative scanning electron micrographs (SEM) images from liver sections from IFN\u03b1-treated Ifnar1fl/fl mice 40 days after continuous IFN\u03b1 therapy discontinuation (n=3 per group), showing hepatic fenestrations. Scale bars = 1 \u00b5m. (D) Histograms depicting fenestrae frequency (left) and percentage of vessel porosity (right) quantified in liver sections of IFN\u03b1 treated Ifnar1fl/fl mice 40 days after treatment discontinuation of mice described in (C). Dashed lines represent the average of fenestrae frequency (left) or porosity (right) from 6 randomly selected NaCl-treated images. Quantification was performed on 17.000 x SEM images, 2 randomly selected images per mouse. A total area of approximately 300 \u00b5m2 of sinusoidal surface was analyzed. Mean values \u00b1 SEM are shown. (E\u2013I) White blood cell (WBC) counts (E), Platelet (PLT) count (F), Hematocrit (HCT) (G) and serum Alanine Aminotransferases (sALT) quantification (H) of NaCl-treated control mice and mice described in (C). Horizontal dashed lines delimit normal ranges. Mean values \u00b1 SEM are shown. (I) Representative hepatic H&E micrographs from NaCl-treated mice at day 7 after MOP implantation and IFN\u03b1-treated Ifnar1fl/fl mice at day 40 after IFN\u03b1 therapy discontinuation. Scale bar = 100 \u00b5m.\n\nTo unravel phenotypic modifications associated with such antitumor function of HECs, including LSECs, the liver microvasculature of NaCl- or IFN\u03b1-treated Ifnar1fl/fl and VeCadIfnar1_KO mice was analyzed by scanning electron microscopy (SEM) and transmission electron microscopy (TEM). IFN\u03b1 treatment of Ifnar1fl/fl mice significantly decreased the frequency of sinusoidal fenestrae and the overall porosity of LSECs (Figure 5C and D top), while it increased: (i) the endothelial thickness (Figure 5\u2014figure supplement 1D), (ii) the space of Disse density (an indirect measure of hepatocyte microvilli density) (Figure 5\u2014figure supplement 1D; Gissen and Arias, 2015), (iii) the subendothelial deposition of collagen fibrils (Figure 5\u2014figure supplement 1D) and (iv) the appearance of a basal lamina (Figure 5D bottom and Figure 5\u2014figure supplement 1D). These results were corroborated by immunofluorescence analysis assessing an enhanced perivascular expression of Collagen type IV and Laminin (Figure 5\u2014figure supplement 1E, F), two components of the basal lamina previously shown to form a barrier against tumor cell invasion (Mak and Mei, 2017; Tanjore and Kalluri, 2006). By contrast, IFN\u03b1 treatment of VeCadIfnar1_KO mice failed to significantly support these changes, leaving the liver microvasculature of these animals highly similar to that of liver metastases-permissive NaCl-treated Ifnar1fl/fl controls (Figure 5C and D and Figure 5\u2014figure supplement 1D-F). Moreover, IFN\u03b1 treatment of Ifnar1fl/fl mice significantly increased the expression of LYVE-1, a marker of hepatic capillarization (Pandey et al., 2020; Wohlfeil et al., 2019). By contrast, IFN\u03b1 treatment of VeCadIfnar1_KO mice showed no effect (Figure 5\u2014figure supplement 2A,B).\n\nNext, we evaluated the status of the vascular glycocalyx (GCX), a fibrous network of glycoproteins and proteoglycans that lines the LSECs and projects intraluminally (Reitsma et al., 2007). Notably, enhanced GCX deposits can act as a repulsive barrier that prevents tumor cell interactions with endothelial cells, adhesion molecules or chemokines have been previously identified as negative correlates of transendothelial migration (Glinskii et al., 2005; Mitchell and King, 2014; Offeddu et al., 2021; Wilkinson et al., 2020). Continuous IFN\u03b1 treatment modified this network as well, increasing its thickness (Figure 5E and F top) and the expression of one of its major components, the heparan sulfate (HS) (Reitsma et al., 2007; Figure 5E and F bottom). Of note, VeCadIfnar1_KO mice displayed reduced GCX thickness independently of NaCl- or IFN\u03b1-treatment (Figure 5E and F). Additionally, we evaluated the vascular and perivascular status of cell adhesion molecules such as selectins and integrins, which have been positively associated with the transendothelial migration of tumor cells (Glinskii et al., 2005; Wilkinson et al., 2020). The expression of ICAM1, E-Selectin (CD62E) (Figure 5\u2014figure supplement 1G,H) and the integrins ITGB2 (CD18) or ITGA4 (CD49d) (Figure 5\u2014figure supplement 1C) was up-regulated in IFN\u03b1-treated Ifnar1fl/fl controls, while significantly reduced or attenuated in IFN\u03b1-treated VeCadIfnar1_KO mice. The notion that a more modest upregulation of some these markers was still evident in the latter mice may reflect the capacity of liver cells other than HECs to respond to IFN\u03b1. Altogether, these results indicate that numerous phenotypic modifications of the liver microvasculature previously associated with the deficient extravasation of both normal and transformed cells of different origin (Guidotti et al., 2015; Valastyan and Weinberg, 2011) also occur because of continuous IFN\u03b1 sensing by HECs, including LSECs. Notably, these microvascular modifications were reverted after the discontinuation of IFN\u03b1 therapy with no impact on long-term liver functionality/viability (Figure 5\u2014figure supplement 2C-I).\n\n### HECs acquire an antimetastatic transcriptional profile upon continuous IFN\u03b1 sensing\n\nTo confirm the above-mentioned data and to shed new light on the transcriptional changes that HECs adopt to limit CRC trans-sinusoidal migration, we performed RNA-seq analyses on CD31+ endothelial cells isolated from the liver of Ifnar1fl/fl or VeCadIfnar1_KO mice 7 days after NaCl or IFN\u03b1 treatment (Figure 6\u2014figure supplement 1A). Using SEM to assess the % of CD31+ cells bearing the typical sinusoidal fenestrae, we determined that our preparations contain ~96% of bona-fide LSECs (Figure 6\u2014figure supplement 1B), consistently to previous reports (Liu et al., 2011; Su et al., 2021). When compared to HECs isolated from NaCl-treated Ifnar1fl/fl mice, HECs derived from IFN\u03b1-treated animals of the same lineage showed 381 transcripts that were differentially expressed (Figure 6A). As expected, many of these up-regulated transcripts belonged to the ISG family, including Irf7, Irf9, Mx1, Mx2, Isg15, Stat1, and Oasl1 (Figure 6A and B). Pre-ranked gene set enrichment analyses (GSEA) of IFN\u03b1-treated LSECs also revealed a significant enrichment of transcripts involved in interferon signaling or in the induction of varying cytokines and chemokines (Figure 6C). Several transcripts related to the ECM/GCX organization or the cell-cell/cell-matrix adhesion pathways were upregulated as well (Figure 6B and D). Of note, the expression of Itga4 and Itgb2 \u2013 previously shown to be increased by IFN\u03b1 treatment at the protein level (Figure 5\u2014figure supplement 1C) \u2013 was also enhanced at the transcriptional level (Figure 6B). A similar association did not hold true for Icam1 and Sele, suggesting that the increased protein expression we observed earlier (Figure 5\u2014figure supplement 1G) occurred independently of transcriptional activity (Figure 6B). Notably, GSEA also identified gene sets involved in the IFN\u03b1-dependent activation of innate and adaptive immune responses or in TCR-dependent signaling pathways (Figure 6\u2014figure supplement 1C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig6-v1.jpg)\n\n**Figure 6.:** (A) Volcano plots of differential gene expression (DGE) results obtained from the comparisons between HECs-derived from Ifnar1fl/fl mice treated with NaCl and IFN\u03b1 for 7 days (left) and between HECs-derived from VeCadIfnar1_KO and Ifnar1fl/fl NaCl-treated mice (right) (Ifnar1fl/fl n=3; VeCadIfnar1_KO n=4). Significant false discovery rate (FDR <0.05) up- and down-regulated genes are highlighted in red and blue colors, respectively, not significant genes are depicted in grey. (B) Heatmap of the expression values (log2-transformed rpkm) of manually selected genes retrieved from differentially regulated pathways. (C) Pre-ranked Gene Set Enrichment Analysis (GSEA) enrichment plots of the indicated pathways between CD31+ cells from Ifnar1fl/fl-IFN\u03b1 and Ifnar1fl/fl-NaCl (left) and between VeCadIfnar1_KO-NaCl and Ifnar1fl/fl-NaCl-treated animals (right). (D) Bar charts showing the adjusted p-values (-log10 transformed) of selected pathways from the enrichment analysis performed on comparisons between Ifnar1fl/fl-IFN\u03b1 and Ifnar1fl/fl-NaCl CD31+ cells (left graph) and between VeCadIfnar1_KO-NaCl and Ifnar1fl/fl-NaCl CD31+ cells (right graph).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Flow cytometry gating strategy for the sorting and isolation of CD31+ HECs isolated from the livers of Ifnar1fl/fl and VeCadIfnar1_KO mice 7 days after continuous NaCl and IFN\u03b1 therapy. Viable cells were first selected on their morphology (using FSC/SSC parameters), followed by the exclusion of doublets and 7AAD+ dead cells. (B) Representative SEM micrograph of the hepatic CD31+-sorted cell 12 hr after in vitro adhesion onto fibronectin-coated coverslips. \u00d71,3 magnification highlights LSEC fenestration. Scale bar = 2 \u00b5m. The presence of LSEC fenestrations on ~96% of CD31+ cells indicates that most sorted cells represent bona vide LSECs (n=24 cells). (C) Pre-ranked Gene Set Enrichment Analysis (GSEA) enrichment plots of the indicated pathways evaluated on the comparisons between IFN\u03b1-treated Ifnar1fl/fl and NaCl-treated Ifnar1fl/fl CD31+ HECs. (D) Pre-ranked Gene Set Enrichment Analysis (GSEA) enrichment plots of the indicated pathways evaluated on the comparisons between VeCadIfnar1_KO and Ifnar1fl/fl NaCl-treated CD31+ HECs.\n\nKeeping the HECs transcriptional profile of NaCl-treated Ifnar1fl/fl mice as a point of reference, a total of 566 genes were differentially expressed (DEGs) in HECs isolated from NaCl-treated VeCadIfnar1_KO mice, of which 373 (mostly ISGs and genes involved in the immune response or in the antigen processing) were downregulated (Figure 6A\u2013C). These latter results indirectly suggest that \u2013 when compared to HECs capable of sensing low levels of endogenous type I IFNs, as those present in NaCl-treated Ifnar1fl/fl mice \u2013 LSECs devoted of Ifnar1 may be less prepared to stimulate innate and adaptive immunity (Figure 6B). The downregulation of transcripts involved in cell-cell adhesion molecules and matrix remodeling (Figure 6\u2014figure supplement 1D) further suggests a relative unpreparedness of VeCadIfnar1_KO HECs at accommodating changes that may confer protection against CRC trans-sinusoidal cell migration. Along these lines, the upregulation of the transcripts for Gata4 -a master-regulator of liver sinusoidal differentiation which leads to liver fibrosis deposition upon its loss (Winkler et al., 2021)- and Smad7 \u2013 an inhibitor of transforming growth factor-beta (TGF-\u03b2)-dependent subendothelial matrix deposition causative of sinusoidal capillarization (Tauriello et al., 2018) \u2013 in HECs isolated from NaCl-treated VeCadIfnar1_KO mice (Figure 6A) could be interpreted as a diminished capacity to shape a vascular antimetastatic barrier. Finally, Gene Ontology (GO) analysis of HECs confirmed that Ifnar1-proficient, but not Ifnar1-deficient, HECs upregulate transcriptional pathways involved in the production of immunostimulatory cytokines and chemokines, the capacity to process and present antigens or the regulation of immune responses (Figure 6D). Altogether, the data support the hypothesis that, upon IFN\u03b1 sensing, HECs and particularly LSECs not only acquire a transcriptional profile that can reinforce their barrier function, but they may also enhance HECs/LSECs immunostimulatory functions contributing to antitumor activity.\n\n### Continuous IFN\u03b1 sensing improves immunostimulatory properties of HECs to provide long-term tumor protection\n\nFirst, HECs/LSECs isolated from the liver of Ifnar1fl/fl or VeCadIfnar1_KO mice 7 days after continuous NaCl or IFN\u03b1 treatment were assessed for the relative surface protein expression of MHC-I, CD86 (a costimulatory molecule Katz et al., 2004) or the interleukin 6 receptor alpha (IL-6RA, a molecule that LSECs use to properly cross-prime antigens to na\u00efve CD8+ T cells B\u00f6ttcher et al., 2014). Following IFN\u03b1 treatment, Ifnar1-bearing LSECs significantly increased MHC-I, CD86 and IL-6RA expression (Figure 7\u2014figure supplement 1A), while no induction was detected in Ifnar1-negative LSECs (Figure 7\u2014figure supplement 1A). We then analyzed the ability of IFN\u03b1-treated LSECs or splenic DCs (sDCs) from Ifnar1fl/fl and VeCadIfnar1_KO mice to stimulate the cross-priming of naive CD8+ T cells in vitro. To this end, viable CD31+ HECs and CD11c+ sDCs were isolated and purified (Figure 7\u2014figure supplement 2A, B). sDCs were cultured to acquire mature CD8\u03b1+ (~25%) or plasmacytoid (45%\u201350%) phenotypes endowed with cross-priming capacity (Figure 7\u2014figure supplement 2C, D; Fu et al., 2020). HECs and sDCs from Ifnar1fl/fl or VeCadIfnar1_KO mice previously pulsed with the SIINFEKL peptide or soluble ovalbumin (sOVA) in the presence or absence of either IFN\u03b1 or NaCl were then co-cultured with naive OT-I CD8+ T cells and their relative cross-priming capacity was defined by the percentage of these latter cells to express both CD44 and IFN\u03b3 (Figure 7\u2014figure supplement 1B). IFN\u03b1 stimulation of Ifnar1-bearing HECs (HECs from Ifnar1fl/fl mice or sDCs from Ifnar1fl/fl and VeCadIfnar1_KO mice) pulsed with SIINFEKL or sOVA promptly increased their cross-priming capacities, while the same IFN\u03b1 treatment failed to do so in Ifnar1-negative cells (HECs from VeCadIfnar1_KO mice) (Figure 7A and B and Figure 7\u2014figure supplement 1B, C). Once exposed to IFN\u03b1 and pulsed with sOVA, HECs and sDCs from Ifnar1fl/fl mice cross-primed na\u00efve OT-I CD8+T cells to a similar extent (Figure 7B and Figure 7\u2014figure supplement 1C), highlighting once more the immunostimulating potential of IFN\u03b1 treatment on HECs, including LSECs. We also evaluated the splenic composition of central memory T cell populations (Tcm, CD8+CD44+CD62L+) (Figure 7C and Figure 7\u2014figure supplement 1D) as a proxy of potential systemic memory responses against tumor antigens (Sallusto et al., 2004; Stone et al., 2009; Yu et al., 2019). Splenic naive T cells (Tn, CD8+CD44-CD62L+) were also evaluated. Looking at Ifnar1fl/fl or VeCadIfnar1_KO mice continuously treated with NaCl or IFN\u03b1 and euthanized by day 21 after challenge, we found that only IFN\u03b1-treated Ifnar1fl/fl mice showed an increased proportion of Tcm and decreased percentage of Tn when compared to NaCl-treated Ifnar1fl/fl controls (Figure 7C), suggesting that IFN\u03b1-responsive LSECs may promote antitumor immune memory in secondary lymphoid organs.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig7-v1.jpg)\n\n**Figure 7.:** (A\u2013B) Quantification of the percentage of OT-I CD8+ T cells expressing CD44+IFN\u03b3+ generated after the co-cultured with HECs, including LSECs, or sDCs isolated from Ifnar1fl/fl and VeCadIfnar1-KO mice and stimulated with SIINFEKL peptide (A) or soluble OVA protein (sOVA) (B) in the presence of NaCl or IFN\u03b1. Mean values \u00b1 SEM are shown; p-values were calculated by two-way ANOVA test from two independent experiments with three biological replicates each. (C) Quantification of the percentage of splenic T central memory (Tcm, CD8+CD44+CD62L+) and na\u00efve T cells (Tn, CD8+CD44-CD62L+) populations 21 days after intramesenteric MC38 cells injection into NaCl- or IFN\u03b1-treated Ifnar1fl/fl and VeCadIfnar1_KO mice. Quantification was performed on least 4 mice per group. Mean values \u00b1 SEM are shown; p-values were calculated by Mann-Whitney test. (D) Schematic representation of the experimental procedure used for tumor rechallenge. IFN\u03b1-Ifnar1fl/fl-cured mice and na\u00efve Ifnar1fl/fl mice were subcutaneously rechallenged with 5x103 MC38 cells and received no further treatment. Tumor growth was monitored weekly for 35 days. Note that we used aged-matched Ifnar1fl/fl na\u00efve mice because NaCl-treated mice had to be euthanized for ethical reasons by day 50. (E) Kinetics of subcutaneous tumor growth in na\u00efve (n=10) and IFN\u03b1-cured (n=7) mice. Both, mean tumor volume and individual animal measurements are shown. Mean values \u00b1 SEM are shown; p-values were calculated by two-way ANOVA test. (F) Schematic model: CRC cells emerging from the primary tumor reach the hepatic sinusoids via the portal circulation and arrest - mostly because of size constrains - at the portal side of the sinusoidal circulation (1), CRC cells trans-sinusoidally migrate into the liver parenchyma (2) and develop micro-metastases that will eventually grow overtime (3; red frame), promoting the generation of an immunosuppressive microenvironment leading to dysfunctional T cells (4; red frame). Conversely, IFN\u03b1 therapy (blue frame), by modifying LSECs porosity, thickness, deposition of basal membrane and GCX depth, builds up a vascular antimetastatic barrier (5), that impairs CRC trans-sinusoidal migration, promoting intravascular containment of invading tumor cells (6) that together with IFN\u03b1-mediated increased cross-presentation and cross-priming by HECs/LSEC, will lead to na\u00efve CD8+ T cell activation and secondary generation of long-term antitumor immunity and protection from secondary tumor challenge (7). Created with https://biorender.com/.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) FACS analysis showing the mean fluorescence intensity (MFI) of MHC-I (left) and the percentage of CD86 (middle) and IL-6RA cells (right) within the hepatic CD31+ non-parenchymal cells (NPC) population of Ifnar1fl/fl and VeCadIfnar1_KO mice after 7 days of continuous NaCl or IFN\u03b1 therapy. For each experimental group, three animals were analyzed. Mean values \u00b1 SEM are shown; p-values were calculated by two-way ANOVA test. (B\u2013C) Representative FACS profiles showing the percentage of OT-I CD8+ T cells expressing CD44+IFN\u03b3+ obtained from the co-cultured with HECs (top) or sDCs (bottom) isolated from Ifnar1fl/fl and VeCadIfnar1-KO mice and stimulated with SIINFEKL peptide (b) or soluble OVA protein (c). (D) Representative FACS analysis of splenic T na\u00efve (Tn; CD44-CD62L+) and T central memory (Tcm; CD44+CD62L+) endogenous CD8+ T cells identified 21 days after intramesenteric MC38 cells injection into NaCl- or IFN\u03b1-treated Ifnar1fl/fl and VeCadIfnar1_KO mice.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80690/elife-80690-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Schematic diagram of the protocol used to isolate HECs, including LSECs, from murine liver tissue (left) and sDCs from mouse spleen (right). (B) Assessment of LSEC purity by flow cytometry using CD31 as a pan-endothelial marker, CD146 as a specific marker for LSECs and F4/80 to identify Kupffer cells contaminants. Analysis was performed in Ifnar1fl/fl and VeCadIfnar1_KO-derived LSECs. (C) Schematic representation of the experimental procedure used for cross-priming analysis of in vitro cultured HECs and sDCs, pulsed with SIINFEKL peptide or sOVA and co-cultured with na\u00efve OT-I CD8+ T cells for 3 days to evaluate the percentage of CD8+ T cells that co-express both CD44 and IFN\u03b3. (D) Evaluation by flow cytometry of the purity and the characteristics of sDCs isolated from Ifnar1fl/fl and VeCadIfnar1-KO mice. The percentage of conventional DCs was estimated by analyzing the amount of CD8\u03b1+ cells within CD11c+ DCs. Plasmacytoid DCs (pDCs) were measured by B220+CD11c+ staining and the maturation status of DCs was evaluated with MHC-I and MHC-II markers.\n\nTo assess whether IFN\u03b1-stimulated HECs and LSECs promoted memory responses endowed with antitumor potential, Ifnar1fl/fl-cured mice (defined as animals that 7 days after IFN\u03b1 treatment initiation were intramesenterically challenged with MC38 cells and survived as disease-free animals until day 50) or naive Ifnar1fl/fl control mice were subcutaneously rechallenged with MC38 cells (Figure 7D). Notably, while the latter animals developed subcutaneous tumors that increased in size over time, none of the Ifnar1fl/fl-cured mice showed detectable lesions at any time point studied (Figure 7E). These results indicate that continuous IFN\u03b1 treatment promotes protection against secondary tumor challenge even after IFN\u03b1 therapy discontinuation. The results also suggest that this effect may be dependent on the capacity of IFN-sensitive HECs and LSECs to foster antitumor immunity, especially tumor-specific effector CD8+ T cell responses that are well-known to control tumor growth in vivo in different experimental settings (Dobrzanski et al., 2000; Katlinski et al., 2017; Klebanoff et al., 2005; Yu et al., 2019).\n\n## Discussion\n\nIn this study, we used different mouse models of CRC liver metastasis to show that the continuous perioperative administration of relatively low IFN\u03b1 doses provides significant antitumor potential in vivo without provoking overt toxicity. Moreover, under the pharmacological conditions we defined (route, dosage, treatment duration, and chemical nature of the recombinant protein), we did not observe counter-regulatory mechanisms affecting IFN\u03b1 efficacy (Katlinski et al., 2017), or significant systemic side effects, as our strategy avoids the short tissue-oscillatory IFN\u03b1 bursts that are often achieved after high and pulsed administrations, often associated with efficacy-limiting toxicities (Weber et al., 2015). These results are consistent with previous preclinical work indicating that the intrahepatic delivery of IFN\u03b1 through a gene/cell therapy approach curbs CRC liver metastases by acting primarily on unidentified non-hematopoietic stromal cell populations (Catarinella et al., 2016).\n\nGiven the pleotropic nature of IFN\u03b1, we demonstrated that the antimetastatic activity of IFN\u03b1 is neither based on the direct inhibition of primary intracecal tumor growth, favoring the hypothesis that IFN\u03b1 therapy does not modify the number of cells that spread from primary tumors and seed into the liver \u2013 nor on the direct inhibition of metastatic cell growth within the liver. These data are consistent with the high IFN\u03b1 concentrations required to activate the \u2018tunable\u2019 direct antiproliferative functions of this cytokine, likely exceeding the levels achieved in our system (Catarinella et al., 2016; Schreiber, 2017). In addition, IFN\u03b1 therapy does not require indirect stimulation of hepatocytes, HSCs, DCs, KCs, or LCMs to exert its antimetastatic functions. Rather, the results pinpointed HECs/LSECs as key local and early sensors of IFN\u03b1 that ultimately limit CRC cell invasion into the liver.\n\nMechanistically, we showed that IFN\u03b1-stimulated LSECs inhibit the trans-sinusoidal migration of circulating CRC cells normally occurring within 24 hr of their initial intrahepatic landing. This effect is associated with phenotypic changes that IFN\u03b1-stimulated LSECs acquire or induce in the liver microenvironment. Among these changes, we observed a reduction in the overall LSEC porosity (i.e. sinusoidal fenestrae were reduced in number and size), an enhancement in the subendothelial deposition of basal membrane components (including Collagen IV and Laminin) and an upregulation of LYVE-1, a marker of hepatic capillarization (Pandey et al., 2020; Wohlfeil et al., 2019). Along these lines, it is noteworthy that in the \u2018healthy\u2019 liver, functioning as a common site for CRC metastases, LSECs contain numerous fenestrae of up to 200 nm in diameter and normally lack the typical basal membrane that characterizes the microvasculature of most other tissues and organs (Jacobs et al., 2010). It is also interesting to note that IFN\u03b1-stimulated LSECs promote microvascular alterations like those typifying pathological conditions (e.g. initial hepatic capillarization and liver fibrosis Pandey et al., 2020; Wohlfeil et al., 2019) associated with impaired immune cell extravasation and reduced immune surveillance (Guidotti et al., 2015) and reduction of hepatic metastases from solid tumors including CRCs (Wohlfeil et al., 2019). This fits with the evidence that CRC patients suffering from chronic viral liver fibrotic diseases characterized by hepatic endogenous type I interferon production display lower incidence of hepatic metastases (Augustin et al., 2013; Baiocchini et al., 2019; Li Destri et al., 2013). The existence that fibrotic liver diseases not associated with reduced metastatic risk (Kondo et al., 2016) suggests that changes in the vascular hepatic niche other than matrix deposition play additional roles in this process. Indeed, IFN\u03b1 stimulated LSEC-governed changes hampering CRC extravasation including the modification of the sinusoidal GCX that, by increasing its thickness and modifying its chemical composition, recapitulated conditions known to negatively regulate the trans-endothelial migration of tumor cells in other settings (Glinskii et al., 2005; Mitchell and King, 2014; Offeddu et al., 2021; Wilkinson et al., 2020). The continuous administration of therapeutic low-doses of IFN\u03b1 thus stimulate HECs/LSECs to shape a vascular antimetastatic barrier preventing the interaction between tumor cells and endothelial cells that are known to promote the extravasation of the former cells (Glinskii et al., 2005; Mitchell and King, 2014; Wilkinson et al., 2020). Accordingly, the enhanced expression of \u2018pro-migratory\u2019 adhesion molecules and integrins that we observed in the liver of animals bearing IFN\u03b1-responsive LSECs appear to be efficiently counteracted by the creation of such vascular barrier.\n\nOf note, the functional consequences of LSEC capillarization (especially the induction of hepatic fibrosis) during states of chronic liver injury highly depend on the relative magnitude and duration of the underlying liver disease (DeLeve, 2015). Additionally, both LSEC capillarization and hepatic fibrosis are reversed when chronic liver injury resolves (DeLeve, 2015). In keeping with these concepts and the absence of sALT elevation or morphological evidence of liver disease during continuous IFN\u03b1 therapy, it is not surprising that we observed a complete recovery of fenestrae abundance and LSEC porosity 40 days after therapy discontinuation. This supports the notion that a continuous but relatively short IFN\u03b1 therapy promotes changes in the structure and function of LSECs that are mild and reversible and should not result in persistent hepatic fibrinogenesis. Such notion is also supported by the absence of hepatic toxicity (Weber et al., 2015) and the significant reduction in established fibrosis in patients with chronic viral liver diseases treated with recombinant IFN\u03b1 for up to 48 weeks (Li et al., 2019; Poynard et al., 2002). The notion that IFN\u03b1 treatment failed to shape the vascular antimetastatic barrier in mice carrying the Ifnar1-deficiency only in endothelial cells further strengthens this hypothesis and places HECs/LSECs at a center of a relevant antitumor process ultimately limiting CRC liver invasion. This concept is also indirectly supported by the fact that the increased expression Gata4 -a master-regulator of liver sinusoidal differentiation which leads to liver fibrosis deposition upon its loss (Winkler et al., 2021) - and Smad7 \u2013 an inhibitor of transforming growth factor-beta (TGF-\u03b2) dependent subendothelial matrix deposition and sinusoidal capillarization (Tauriello et al., 2018) were not downregulated by IFN\u03b1 treatment in mice in which all cell types except LSECs could sense this cytokine, thus loosening the hepatic vascular barrier.\n\nIn addition, to hindering the initial trans-sinusoidal migration of CRC cells in vivo, IFN\u03b1-stimulated LSECs efficiently cross-presented nominal tumor antigens to naive CD8+ T cells in vitro, enabling degrees of T cell priming and effector differentiation that were comparable to those induced by professional APCs. In keeping with this, we demonstrated that the in vivo IFN\u03b1 stimulation of LSECs resulted in the upregulation of proteins and transcripts associated with antigen processing and presentation or co-stimulation (e.g. MHC-I, CD86, IL-6RA, B2m, Tap1, Psmb-8/9 and H2-d1, H2-k1/2) (B\u00f6ttcher et al., 2014; Katz et al., 2004; Montoya et al., 2002; Rodriguez et al., 1999). Moreover, our results also suggest that IFN\u03b1-stimulated LSECs may play a key role in antitumor immunity, as mice were protected from secondary tumor rechallenge even after discontinuation of IFN\u03b1 treatment. The fact that the same IFN\u03b1 therapy also significantly increased the overall number of central memory T cells in the spleen while decreasing that of naive T cells (Sallusto et al., 2004; Yu et al., 2019) further suggests a role for IFN\u03b1-stimulated LSECs in the generation of systemic and protective long-term antitumor immunity.\n\nThese data are consistent with the notion that IFN\u03b1-stimulated LSECs, due to their anatomical proximity and efficient endocytosis capacity that is among the highest of all cell types in the body (Sorensen and Smedsrod, 2020) \u2013 rapidly remove CRC-derived antigens from the intravascular space and productively and rapidly contribute to the development of effective antitumor immunity, since this process does not require the time-consuming step of migration to lymphatic tissue (B\u00f6ttcher et al., 2014). This concept is also supported by the upregulation by IFN\u03b1-stimulated LSECs of Cxcl9 and Cxcl10, two chemokines involved in the attraction and retention of na\u00efve T cell populations of lymphocytes into the liver (Franciszkiewicz et al., 2012), a necessary step for the generation of an efficient antitumor immune response. Additionally, other cell types within the hepatic niche could further amplify this IFN\u03b1-initiated cascade, as it has been shown that dendritic cells releasing IFN\u03b1 also reduce liver metastatic colonization by CRC cells (Toyoshima et al., 2019) and that this cytokine properly polarizes the tumor microenvironment (Catarinella et al., 2016; De Palma et al., 2008). On the contrary, the notion that a minority of IFN\u03b1-treated animals develop small intrahepatic lesions that display similar proliferation, neoangiogenic and immunologic markers than untreated lesions highlights the possibility that CRC tumors, once established as macroscopic metastases, may become refractory and resistant to IFN\u03b1 therapy by downregulating Ifnar1 (Boukhaled et al., 2021; Katlinski et al., 2017). This would be consistent with the lack of efficacy of our approach in established orthotopic tumors within the cecal wall.\n\nAltogether, we have identified a novel MoA by which IFN\u03b1 functions as antitumor drug against CRC liver metastases. Whether the adoption of similar LSEC-stimulating IFN\u03b1 treatments may also curb the hepatic growth of metastatic cells originating from other solid tumors, or if continuous IFN\u03b1 treatment promote the generation of vascular barriers in other metastasis-prone organs remains to be determined (Crist and Ghajar, 2021). Based on the findings of this report, we propose the following model: CRC cells emerging from the primary tumor reach the hepatic sinusoids via the portal circulation and arrest \u2013 mostly because of size constrains \u2013 at the portal side of the sinusoidal circulation. CRC cells then trans-sinusoidally migrate into the liver parenchyma and develop micrometastases that will eventually grow overtime, promoting the generation of an immunosuppressive microenvironment. Continuous therapy with well-tolerated doses of recombinant IFN\u03b1, stimulates HECs/LSECs to limit CRC trans-sinusoidal migration and parenchymal invasion by building up a vascular barrier typified by the reduction of LSECs porosity, the increased thickness of GCX and the appearance of a basal membrane. Continuous IFN\u03b1 therapy also promotes long-term antitumor immunity in cured mice and protection from secondary tumor challenge, by stimulating LSECs to efficiently cross-prime tumor antigens to na\u00efve CD8+ T cells (Figure 7F).\n\nIn terms of future clinical applications, our strategy could be used as perioperative neoadjuvant immunotherapy in CRC patients undergoing resection of their primary tumor who are at high risk for developing metachronous liver metastases (Engstrand et al., 2019; van Gestel et al., 2014). Indeed, several technologies have already been developed for the sustained release of drugs, such as osmotic pumps, electronic devices, hyaluronic acid-based hydrogels (Park et al., 2018; Stewart et al., 2018; Yun and Huang, 2016), FDA-approved polymer miscellas \u2013 such as pegylated (PEG)-IFN\u03b1 (Foser et al., 2003; Glue et al., 2000) \u2013 and IFN\u03b1 cell/gene therapy approaches (Catarinella et al., 2016), which could quickly translate our results into clinical practice. Of note, the use of clinically approved doses of pegylated-IFN\u03b1 has shown improved serum stability and clinical efficacy and reduced side effects, with serum IFN\u03b1 concentrations similar to those achieved in our system (Foser et al., 2003; Glue et al., 2000).\n\nAll in all, the results of this study support the use of continuous low doses of IFN\u03b1 as an antimetastatic drug during the perioperative period, due to its ability to transform a metastases-prone liver into a metastases-resistant organ.\n\n## Materials and methods\n\n### Animal studies\n\nEight- to 10-week-old C57BL/6 J and BALB/c mice were purchased from Charles River Laboratory, Calco, Italy. CB6 mice were obtained by crossing Mus musculus inbred C57BL/6 J male mice (H-2b restricted) with Mus musculus inbred BALB/c female mice (H-2d restricted), to produce H-2bxd F1 hybrids. Ifnar1fl/fl mice on a C57BL/6 J background (B6(Cg)-Ifnar1tm1.1Ees/J, JAX:028256), AlbCre (B6.Cg-Speer6-ps1Tg(Alb-cre)21Mgn/J, JAX:003574), PdgfrbCreERT2 (B6.Cg-Tg(Pdgfrb-cre/ERT2)6096Rha/J JAX:029684), ItgaxCre (CD11c, B6.Cg-Tg(Itgax-cre)1-1Reiz/J, JAX:008068), and Rosa26-ZsGreen (B6.Cg-Gt(ROSA)26Sortm6(CAG-ZsGreen1)Hze/J, JAX:007906) reporter mice were purchased from the Jackson Laboratory. Cdh5(PAC)-CreERT2 mice (VeCadCreERT2) (Wang et al., 2010) were kindly provided by S. Brunelli (UniMib, Milan). NOD-scid IL2R\u03b3null (NSG) immunodeficient mice (NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ, JAX:005557) and OT-I mice (C57BL/6-Tg(TcraTcrb)1100Mgb/Crl, JAX:003831) were purchased from Charles River Laboratory.\n\nThe conditional deletion of Ifnar1 was obtained by crossing mice carrying loxP-flanked Ifnar1 (Prigge et al., 2015) with transgenic mice expressing Cre recombinase under the control of either endothelial cell (VeCadCreERT2), stellate cell (PdgfrbCreERT2), hepatocyte (AlbCre) and dendritic cell (ItgaxCre) promoters. To induce the Cre recombination and Ifnar1 deletion into VeCadCreERT2, Cre recombinase was induced by three subcutaneous injections of Tamoxifen 50 mg/kg at p5, p6 and p7, as previously described (Tirone et al., 2018), while PdgfrbCreERT2 adult mice were treated by three consecutive ip injections of Tamoxifen 100 mg/kg. Upon treatment, the exon3 of Ifnar1 is excised resulting in a loss of Ifnar1 in endothelial and stellate cells. To ensure that Ifnar1 exon 3 of was efficiently excised hepatic DNA was isolated from the liver of 8-week-old VeCadIfnar1_KO, PdgfrbIfnar1_KO, AlbIfnar1_KO and ItgaxIfnar1_KO mice and polymerase chain reaction (PCR) analysis using Ifnar1 intron 3-forward and Ifnar1 intron 3-reverse oligonucleotides was performed. To control for possible changes in the microbiota composition of VeCadIfnar1_KO, PdgfrbIfnar1_KO, AlbIfnar1_KO and ItgaxIfnar1_KO and Ifnar1fl/fl littermates, mice from each litter and cage were randomly allocated into the experimental groups and were co-housed or systematically exposed to beddings of the other groups to ensure the same exposure to the microbiota.\n\n### Study approval\n\nAll animal experiments were approved by the Animal Care and Use Committee of the San Raffaele Scientific Institute (SRSI, IACUC 691, 808 and 1042) and were conducted in specific pathogen-free (SPF) facility in microisolator cages under a 12 hr light/dark cycle with free access to water and standard mouse diet (Teklad Global 18% Protein Rodent Diet, Harlan).\n\n### CRC cell lines\n\nCT26 (H-2d, BALB/c-derived) cell line was purchased from ATCC. MC38 (H-2b, C57BL/6-derived), have been previously described (Catarinella et al., 2016). MC38 cells were transduced with a PGK-GFP lentiviral vector, cloned and sorted by FACS to establish MC38GFP fluorescently tagged cell lines (Talamini et al., 2021). All cells were routinely tested for mycoplasma contamination using the N-GARDE Mycoplasma PCR reagent set (EuroClone). CT26 and CT26LM3 cells were cultured under standard condition at 37 \u00b0C in a humid atmosphere with 5% CO2 in RPMI GlutaMAX medium (Gibco) supplemented with 10% FBS (Lonza) and 1% penicillin/streptomycin (P/S) (Gibco). MC38, MC38GFP, MC38Ifnar1_KO and cells were cultured under standard condition at 37 \u00b0C in a humid atmosphere with 5% CO2 in DMEM GlutaMAX medium (Gibco) supplemented with 10% FBS (Lonza) and 1% P/S (Gibco). Cell number and dimension was routinely assessed by automated CytoSMART cell counter (Corning). Details of murine cell lines used in the experiments (source of cell lines, background and origin of cancer) are mentioned in key resource table. The tumor cell lines MC38, MC38GFP, MC38Ifnar1_KO and CT26 were passaged in vivo once before use in experiments.\n\n### Mouse models of liver metastases\n\nEight-to ten-week-old sex- and age-matched mice were injected with 5x103 CT26 or 5x104 MC38 CRC cell lines either through intrasplenic or superior mesenteric vein injections as previously described (Catarinella et al., 2016; van der Bij et al., 2010). For early time point experiments, 7x105 MC38GFP cells were injected in the superior mesenteric vein of anesthetized mice as described (van der Bij et al., 2010). For intrasplenic or superior mesenteric vein injections, deep anesthesia was induced by isoflurane inhalation (5% induction and 2% for maintenance in 2 l/min oxygen). The indicated number of CRC cells was injected into spleen or the superior mesenteric vein using a 29 G needle and to prevent excessive bleeding vein puncture was compressed with a sterile and absorbable hemostatic gauze (TABOTAMP). The peritoneum and skin were sutured with silk 4.0 and 7 mm wound clips as described (Catarinella et al., 2016). This experimental setting may mimic the vascular spreading of CRC cells during primary tumor resection and, thus, preventive IFN\u03b1 infusion may be considered as a neoadjuvant treatment.\n\n### Mouse model of orthotopic colorectal cancer liver metastases\n\nThe generation of highly metastatic CT26 CRC cells was obtained by three consecutive rounds of in vivo selection as previously reported (Zhang et al., 2013). Briefly, 2x106 CT26 cells were first injected subcutaneously into the right flank of immunodeficient NSG mice. After 28 days, tumors were excised, dissected, sliced into small fragments, and digested for 30 min at 37 \u00b0C in DMEM containing collagenase type IV (200 units/ml; Sigma-Aldrich) and Dnase I (100 units/ml; Sigma-Aldrich). The resulting cell suspension defined as CT26sc, were maintained at 4 \u00b0C, filtered through a 70 \u03bcm nylon cell strainer (BD Biosciences, Bedford, MA), washed in PBS, and grown in RPMI 10% FBS. Sub-confluent CT26sc cells were harvested, resuspended in PBS:Matrigel (1:1) (Corning, MERK) and then injected into the cecal wall of immune competent anesthetized (isoflurane, 5% induction and 2% for maintenance in 2 l/min oxygen), CB6 recipient mice as described (Zhang et al., 2013). Briefly, a midline incision was made to exteriorize the cecum. Using a 33 G micro-injector (Hamilton, USA), 10 \u00b5l of a 50% Matrigel solution (BD Bioscience, USA) containing 2x105 CT26sc cells were injected into the cecum wall. To avoid intraperitoneal spreading of CT26sc, the injection site was sealed with tissue adhesive (3 M Vetbond, USA) and washed with 70% alcohol. The cecum was replaced in the peritoneal cavity, and the abdominal wall and skin incision was sutured with silk 4.0 and 7 mm wound clips as described (Catarinella et al., 2016). Twenty-eight days after injection, mice were euthanized and single cell suspensions of liver metastatic lesions, defined as CT26LM1, were obtained as described above. This cycle was repeated twice to obtain the highly metastatic CT26LM3 cells.\n\n### Recombinant mouse IFN\u03b1 therapy\n\nContinuous intraperitoneal IFN\u03b1 delivery (IFN\u03b11 carrier-free, Biolegend, San Diego, CA, USA) was achieved by intraperitoneal implantation of mini-osmotic pumps (MOP, ALZET, Cupertino, CA, USA) able to deliver either 50, 150, or 1050 ng IFN\u03b1 a day for 14 or 28 days. NaCl-containing MOP were used as controls. Within each specific experiment, mice of each genotype were randomly assigned to receive either NaCl- or IFN\u03b1-containing MOP. MOP filling, priming and implantation within the peritoneum was performed following manufacturer\u2019s instructions. To avoid MRI artifacts due to the presence of metallic components within MOP, the day before MRI acquisition, MOP were removed from the peritoneum. To directly investigate responsiveness of liver cells to IFN\u03b1, signaling downstream of Ifnar1 receptor was assessed by measuring pSTAT1 by IHC 30 min after an ip injection of NaCl or 1 \u03bcg IFN\u03b1, a dose able to synchronize pSTAT1 expression in all Ifnar1 expressing cells (Lin et al., 2016).\n\n### Tumor rechallenge of IFN\u03b1 cured mice\n\nIFN\u03b1-cured mice that were designated as MC38-tumor free for at least 50 days after challenge, were subcutaneously rechallenged with 5x103 MC38 cells resuspended in 200 \u00b5l of PBS:Matrigel (1:1). Age-matched na\u00efve syngeneic mice were used as control. Tumor volumes were measured twice a week and euthanized for ethical reasons when tumor size reached ~500\u00a0mm3.\n\n### Magnetic resonance imaging (MRI)\n\nAll MRI studies were carried out at the Experimental Imaging Center of SRSI on a preclinical 7-Tesla MR scanner (Bruker, BioSpec 70/30 USR, Paravision 6.0.1, Germany) equipped with 450/675 mT/m gradients (slew rate: 3400/4500 T/m/s; rise time 140 \u00b5s), coupled with a dedicated 4 channels volumetric mouse body coil. All images were acquired in vivo, under inhalational anesthesia (Isoflurane, 3% for induction and 2% for maintenance in 1 L/min oxygen) with mice laid prone on the imaging table. A dedicated temperature control system was used to prevent hypothermia; respiratory rate and body temperature were continuously monitored (SA Instruments, Inc, Stony Brook, NY, USA) during the whole MRI scan. An intravenous injection of gadoxetic acid (Gd-EOB-DTPA; Primovist, Bayer Schering Pharma) at a dose of 0.05 \u03bcmol/g of body weight was administered via the tail vein before placing the mice on the scanner table. As previously described (Sitia et al., 2012), the MRI studies relied on an axial fat-saturated T2-weighted sequence (TurboRARE-T2: TR = 3394ms, TE = 33ms, voxel-size=0.125 \u00d7 0.09 x0.8mm, averages = 3) acquired immediately after Gd-EOB-DTPA injection and an axial fat-saturated T1-weighted scan (RARE-T1: TR = 581ms, TE = 8.6ms, voxel-size=0.125 \u00d7 0.07 x0.8mm, averages = 4) acquired thereafter, during the hepatobiliary phase (HBP) of contrast excretion (starting from 10 min after Gd-EOB-DTPA injection). Two board certified radiologists skilled in clinical and preclinical abdominal MR imaging, blinded to any other information, reviewed all MRI studies using an open-source image visualization and quantification software (Mipav, 5.3.4 and later versions, Biomedical Imaging Research Services Section, ISL, CIT, National Institute of Health, USA). Liver metastases were identified as focal lesions showing slight hyper-intensity on T2-weighted images and concurrent hypo-intensity on contrast-enhanced HBP T1-weighted images. Liver metastases segmentation was performed by manual drawing of regions-of-interest (ROIs) on each slice, yielding volumes-of-interest (VOIs; lesion area x slice thickness) for the entire sequence. The total CRC metastatic mass was obtained by summing up the volumes of all single VOIs that were semi-automatically provided by the software.\n\n### MC38 gene editing\n\nTo knockout Ifnar1 in MC38 cell line, we used GeneArt CRISPR Nuclease Vector with OFP Reporter Kit (ThermoFisher Scientific). Target-specific CRISPR RNA guides (crRNA) were designed using GeneArt CRISPR Search and Design Tool (ThermoFisher Scientific) and the two following crRNAs with the fewest predicted off-target effects were selected: crRNA1: TAGACGTCTATATTCTCAGGGTTTT; crRNA2: ATGTAGACGTCTATATTCTCGTTTT. Annealed crRNAs were cloned in GeneArt CRISPR Nuclease Vector with OFP according to the manufacturer\u2019s instructions and vector constructs were used to transform OneShot TOP10 chemically competent E. coli cells (ThermoFisher Scientific). Vectors were validated by Sanger sequencing of DNA from 10 colonies for each crRNA (LightRun GATC Carlo Erba). To express the CRISPR\u2013Cas9 system transiently, 2 \u03bcg of each vector were used to transfect 5x105 MC38 cell line with Lipofectamine 2000 (ThermoFisher Scientific) in Opti-MEM medium (ThermoFisher Scientific). After 3 days, transfection efficiency was evaluated measuring the orange fluorescence protein (OFP) by FACS (LSRFortessa) and data analysed using FlowJo v10.5. OFP positive bulk populations were single-cell cloned in 96-well plates and a total of 12 clones screened for mismatches by T7E1 assay (New England Biolabs). Briefly, genomic DNA from MC38 clones was extracted by Qiamp mini kit (Qiagen) and amplified within the exon 2 of Ifnar1 locus using the following oligos: Ifnar1 exon2 forward, TCCAAGACTCCTGCTGTC and Ifnar1 exon2 reverse: GCACTTTTACTTGCTCGGT. The PCR products were denaturated and annealed according to manufacture protocol (New England Biolabs). The digestion reaction was run onto 2% agarose gel to identify mismatched clones. Genetic validation of T7E1-positive clones was assessed by cloning the PCR products with TOPO TA Cloning, Dual Promoter, Kit (ThermoFisher Scientific) and subsequently 10 clones per cell line were sequenced (LightRun GATC Carlo Erba). Functional validation of Ifnar1 knockout MC38 cells was determined by RT-PCR for the ISG Irf7 after 4 hr of in vitro stimulation with 300 ng/ml IFN\u03b1, using MC38 transfected non-edited WT clone as control (MC38).\n\n### Peripheral blood analyses\n\nAt the indicated time points after IFN\u03b1 administration, whole anti-coagulated blood of MOP-NaCl and MOP-IFN\u03b1-treated mice was collected from the retro-orbital plexus of anesthetized animals (isoflurane, 5% for induction and 2% for maintenance in 2 l/min oxygen) using Na-heparin coated capillaries (Hirschmann Laborger\u00e4te GmbH, Germany) and vials (Microvette, Sarstedt, Germany). Hematologic parameters were evaluated using an automated cell counter (ProCyte Dx, IDEXX Laboratories, USA). The extent of hepatocellular injury was monitored by measuring serum ALT (sALT) activity at several time points after IFN\u03b1 treatment, as previously described (Sitia et al., 2012).\n\n### Measurement of plasma IFN\u03b1 by ELISA\n\nCirculating levels of IFN\u03b1 were quantified in plasma collected from NaCl controls or IFN\u03b1-treated mice at indicated time points using VeriKine-HS Mouse IFN\u03b1 all Subtype ELISA Kit (PBL) according to the manufacturer\u2019s instructions. The IFN\u03b1 titer in the samples was determine by plotting the optical density (OD) subtracted of blank OD to eliminate background, using a 4-parameter logistic fit for the standard curve by using Prism v8 (GraphPad). Detection range is comprised between 2.38 and 152 pg/ml of IFN\u03b1.\n\n### RNA extraction and quantitative real-time PCR gene expression analyses\n\nTotal RNA was isolated from liver homogenates of MOP-NaCl control and MOP-IFN\u03b1-treated mice by using the ReliaPrep RNA Tissue Miniprep System (Promega) and DNAse TURBO (Thermo Fisher Scientific) following manufacturer\u2019s recommendation. The extracted RNA was subsequently retro-transcribed to cDNA as previously described (Sitia et al., 2011). Quantitative real-time PCR analysis was performed utilizing the ViiA7 Fast Real-Time PCR System (Applied Biosystems). The ISG, Irf7 (Mm00516793_g1) as well as the housekeeping Gapdh (Mm 99999915_g1) were quantified by using the indicated FAM-MGB labeled TaqMan Gene Expression Assays (Applied Biosystems). Gene expression was determined as the difference between the threshold cycle (Ct) of the gene of interest (Goi) and the Ct of the housekeeping (Gapdh) of the same sample (\u2206Ct). The fold-change expression of each Goi was calculated over its basal expression in the control sample by the formula 2-\u2206\u2206Ct as described (Sitia et al., 2012).\n\n### Immunohistochemistry\n\nAt time of autopsy for each mouse, livers were perfused with PBS, harvested and different pieces were sampled, fixed in zinc-formalin, processed and embedded in paraffin for histological and immunohistochemical analysis, as previously described (Sitia et al., 2012). Immunohistochemical staining using a Bond RX Automated Immunohistochemistry (Leica Microsystems GmbH, Wetzlar, Germany) was performed on 3-\u03bcm-thick sections. First, tissues were deparaffinized and pre-treated with the Epitope Retrieval Solution [ER1 Citrate Buffer for Ki-67 (dilution 1:200, clone SP6, Thermo Fisher Scientific) and F4/80 (dilution 1:200, clone A3-1, Bio-Rad); ER2 EDTA for CD3 (dilution 1:100, clone SP7, Abcam),CD34 (dilution 1:300, clone MEC14.7, Biolegend) and pSTAT1 (dilution 1:800, clone 58D6, Cell Signaling)] at 100 \u00b0C for 30 min. After washing steps, peroxidase blocking was carried out for 10 min using the Bond Polymer Refine Detection Kit DS9800 (Leica Microsystems GmbH). Then, tissues were washed and incubated for 1 hr RT with the primary antibody diluted in IHC Antibody Diluent (Novocastra, Leica RE7133). Subsequently, tissues were incubated with polymer-HRP or Rat-on-Mouse HRP (Biocare Medical, RT517H), developed with DAB-Chromogen for 10 min and counterstained with Hematoxilin for 5 min. For image acquisition and analysis, eSlide Manager (Aperio Leica Biosystems) was used. All images were acquired using the Aperio AT2 system (Leica Biosystems). Quantifications were performed by automated image analysis software through dedicated macros of the ImageScope program, customized following manufacturer\u2019s instructions (Leica Biosystems). The images shown were identified as representative area of interest within the total area of the specimen analyzed and exported as ImageScope snapshots.\n\n### Immunofluorescence and confocal microscopy\n\nLivers were perfused with PBS, harvested and fixed over-night in 4% paraformaldehyde (PFA), equilibrated in 30% sucrose in PBS over-night at 4 \u00b0C prior to embedding in OCT (Bio-Optica) for quick freezing at \u201380 \u00b0C. Thirty-\u03bcm-thick cryosections were adhered to Superfrost Plus slides (Thermo Scientific). For immunofluorescence staining, sections were blocked and permeabilized with PBS containing 5% FBS and 0.1% Triton X-100 (Sigma-Aldrich) for 30 min at room temperature and subsequently incubated with 10% of donkey serum (DS; Sigma-Aldrich) in PBS for 30\u201360 min at room temperature. Staining with primary and secondary antibodies, were performed with staining buffer (PBS with 1.5% DS, 0.2% Triton X-100 and 1% BSA), using the following antibodies and dilutions: anti-PDGFR\u03b2/CD140b (dilution 1:200, clone APB5, eBioscience)+anti rat AF647 (dilution 1:200, Jackson IR); anti-CD11c AF647, (dilution 1:100, clone N418, Biolegend); anti-GFP (dilution 1:100, rabbit polyclonal, A11122 Thermo Fisher Scientific)+anti-rabbit AF 488 (dilution 1:200, Thermo Fisher Scientific); anti-CD31/PECAM-1 (dilution 1:300, goat polyclonal, AF3628 R&D Systems)+anti goat AF546 (dilution 1:200, Thermo Fisher Scientific); anti-Heparan Sulfate (dilution 1:50, clone F58-10E4, Amsbio)+anti IgM conjugated to APC (dilution 100, clone II/41, Thermo Fisher Scientific); anti-LYVE-1 (dilution 1:300, rabbit polyclonal, Novus Biologicals)+anti-rabbit AF647 (dilution 1:200, Thermo Fisher Scientific); anti-Collagen type IV (dilution 1:100, rabbit polyclonal, Abcam)+anti-rabbit AF488 (dilution 1:200, Thermo Fisher Scientific); anti-Laminin (dilution 1:300, rabbit polyclonal, Sigma-Aldrich)+anti-rabbit AF488 (dilution 1:200, Thermo Fisher Scientific); anti-CD54/ICAM1 (dilution 1:100, clone YN1/1.7.4, Biolegend)+anti rat AF647 (dilution 1:200, Jackson IR); anti-CD62E/E-selectin (dilution 1:100, clone 10E9.6, BD Bioscience)+anti rat AF647 (dilution 1:200, Jackson IR). Confocal images were acquired using a Leica SP8 confocal systems (Leica Microsystems) that are available at the SRSI Advanced Light and Electron Microscopy BioImaging Center (ALEMBIC). Fifteen\u201320 \u03bcm z-stacks were projected in 2D and processed using Fiji image processing software (Schindelin et al., 2012). Localization of MC38GFP tumor cells within liver vessels, 20\u201330 square xy sections (1024x1,024 pixel) confocal xyz stacks, from NaCl- and IFN\u03b1-treated mice, were acquired with 0.5 \u00b5m z-spacing on a Leica TCS SP8. The Imaris Surpass View and Surface Creation Wizard were used to create 3D renderings of MC38GFP cells and CD31+ liver vessels as previously reported (Guidotti et al., 2015). A tumor cell was considered intravascular when at least 95% of its surface-reconstructed body was inside the vessel lumen in all the acquired sections projected in the horizontal (xy), transversal (yz) and longitudinal (xz) planes. Entire liver sections were acquired using MAVIG RS-G4 confocal microscope (MAVIG GmbH Research, Germany) to quantify the number of MC38GFP tumor cells in relation to the total liver area. The quantification of the percentage of liver area covered by endothelial markers and extracellular matrix components, such as Heparan Sulfate, Laminin, Collagen type IV, ICAM1 and E-Selectin, was evaluated using ImageJ software, applying the same threshold to the different experimental groups for each channel and measuring the percentage of area limited to threshold. Colocalization analysis of GFP in the different Cre recombinant mouse models was performed using an unsupervised ImageJ plugin algorithm termed Colocalization, which was developed by Pierre Bourdoncle (Institut Jacques Monod, Service Imagerie, Paris; 2003\u20132004).\n\n### Scanning and transmission electron microscopy\n\nElectron microscopy (EM) fixative composition was 2,5% glutaraldehyde, 2% paraformaldehyde, 2 mM CaCl2 and 2% sucrose in 0.1 M Na cacodylate buffer (pH 7,4). For the analysis of endothelial GCX, the EM fixative was supplemented with 2% Lanthanum nitrate (MERK) as previously reported (Inagawa et al., 2018). Warm PBS and EM fixative at 35\u201337\u00b0C was used to ensure tissue integrity. When mice were under deep anesthesia, with a single ip injection of 50\u201360 mg/kg Tribromoethanol (Avertin), a Y incision was made in the abdomen to expose the liver and the portal vein. The portal vein was cannulated with an appropriately sized IV cannula of 22 G and the liver was perfused with 15 ml of warm PBS at a constant rate of 3 rpm using a peristaltic pump (Peri-Star Pro, 2Biological Instruments) as previously reported (Guidotti et al., 2015). In situ fixation was achieved by perfusing EM fixative for approximately 5 min at 3 rpm. Fixed liver was harvested and cut into 5 mm blocks using a scalpel. Liver blocks were ulteriorly immersed in EM fixative for 24\u201372 hr at 4 \u00b0C and finally EM fixative was replaced with 0.1 M sodium cacodylate buffer and stored at 4 \u00b0C until processed for TEM or SEM analysis. Liver blocks were post-fixed in 1% osmium tetroxide (OsO4), 1,5% potassium ferricyanide(K4[Fe(CN)6]) in 0.1 M Na Cacodylate buffer for 1 hr on ice. Afterwards, for SEM, 150-\u00b5m-thick sections were obtained from perfused livers using a vibratome (Leica VT1000S). Sections were further post-fixed in 1% OsO4 in 0.1 M Na Cacodylate, dehydrated through a series of increasing concentration of ethanol and immersed in absolute hexamethyldisilazane (HMDS) that was left to evaporate overnight. Dried sections were sputter-coated with Chromium using a Quorum Q150T ES sputter coater. Sections were then mounted on SEM stubs using conductive adhesive tape and observed in a field-emission scanning electron microscope Gemini 500 (ZEISS, Oberkochen, Germany). The LSEC fenestra measurements were performed from SEM microphotographs taken under a magnification of 20,000 X, using three independent samples from each experimental condition [NaCl-Ifnar1fl/fl (n=3), IFN\u03b1-Ifnar1fl/fl (n=3), NaCl-VeCadIfnar1_KO (n=3) and IFN\u03b1-VeCadIfnar1_KO mice (n=3)] and a total area of about 720 \u00b5m2 of sinusoids was analyzed for each mouse. After 40 days of IFN\u03b1 discontinuation, two randomly selected liver micrographs of IFN\u03b1-Ifnar1fl/fl (n=3) were analyzed to determine LSEC fenestra measurements and a total area of approximately 300 \u00b5m2 of sinusoidal surface was analyzed. All measurements were made using the ImageJ software, as previously described (Cogger et al., 2015). Briefly, the flattened area of the liver sinusoid was selected and longest diameter of each fenestrae was measured. Gaps larger than 250 nm were excluded from the analysis. The average fenestration diameter (defined as the average of all fenestrae diameters excluding gaps area), the fenestration area (\u03c0 r2, where r, the radius, was calculated from the individual fenestrae diameter r=d/2, without gaps area), the porosity [ \u03a3(\u03c0 r2)/(total area analyzed \u2013 \u03a3(area of gaps))\u00d7100; expressed as a percentage], and the fenestration frequency [total number of fenestrations/(total sinusoidal area analyzed \u2013 \u03a3(area of gaps)); expressed as \u03bcm2] have been calculated. Surface roughness analysis of endothelial GCX was determined using Image J software. The flattened area of the liver sinusoid was analyzed, with the SurfChartJ1Q plugin to determine the roughness deviation of all points from a plane after background subtraction, known as Ra coefficient, as previously reported (Pavlovi\u0107 et al., 2012). A representative area within the flatten liver sinusoidal surface was used to generate a 3D surface plot image.\n\nFor TEM, tissue pieces were rinsed in Na Cacodylate buffer, washed with distilled water (dH2O) and en bloc stained with 0.5% uranyl acetate in dH2O overnight at 4 \u00b0C in the dark. Finally, samples were rinsed in dH2O, dehydrated with increasing concentrations of ethanol, embedded in Epon resin and cured in an oven at 60 \u00b0C for 48 hr. Ultrathin sections (70\u201390 nm) were obtained using an ultramicrotome (UC7, Leica microsystem, Vienna, Austria), collected, stained with uranyl acetate and Sato\u2019s lead solutions, and observed in a Transmission Electron Microscope Talos L120C (FEI, Thermo Fisher Scientific) operating at 120kV. Images were acquired with a Ceta CCD camera (FEI, Thermo Fisher Scientific). TEM microphotographs were taken under a magnification of 3.400 X, using three independent samples from each experimental condition and a total area of approximately 2.575 \u00b5m2 was analyzed for each mouse. LSECs thickness and the width of the space of Disse were measured using ImageJ software. For collagen deposition analysis, at least 10 randomly selected sinusoids from each mouse were analyzed as previously reported (Gissen and Arias, 2015; Warren et al., 2007).\n\n### Isolation of liver non-parenchymal cells (NPCs)\n\nLiver NPCs, including leukocytes, were isolated from NaCl control or IFN\u03b1-treated mice 7 days after MOP implantation, as previously described (B\u00e9n\u00e9chet et al., 2019). Briefly, after euthanasia, the liver was perfused through the vena cava with 5\u20138 ml of PBS to remove most blood cells. Livers were weighted and 50% of the tissue was sliced in small pieces and incubated 30 min at 37 \u00b0C in 10 ml of digestion medium (RPMI GlutaMAX medium [Gibco] containing 200 U/ml of collagenase type IV [Sigma-Aldrich] and 100 U/ml of DNAse I [Sigma-Aldrich]). Remaining undigested fragments were syringed with an 18 G needle and filtered through a 70 \u00b5m cell strainer to obtain a single cell suspension. Cells were centrifuged 3 min at 50 g at room temperature and the pellet containing hepatocytes was discarded. The resultant cell suspension of NPCs was incubated for 30 s with ACK lysis buffer (Lonza) to deplete red blood cells, washed with cold RPMI. NPCs were counted and processed for flow cytometry analysis or sorting.\n\n### Isolation of splenocytes and na\u00efve CD8+ T cells\n\nSpleens were obtained from Ifnar1fl/fl and VeCadIfnar1_KO mice 21 days after MC38 cells challenge and placed in a 70 \u03bcm cell strainer on a petri dish containing 10 ml of plain RPMI, ground with a syringe plunger to obtain a cell suspension and washed three times with plain RPMI as previously described (Sitia et al., 2012). The cell suspension was centrifugated at 400 g for 5 min at room temperature, the resuspended pellet was incubated for 30 s with ACK lysis buffer and neutralized with RPMI. Resultant splenocytes were counted and processed for FACS analysis. Splenocytes derived from OT1 mice were prepared as described above and na\u00efve CD8+ T cells were isolated using EasySep Mouse Na\u00efve CD8+ T cell isolation kit (STEMCELL Technologies) following manufacturer\u2019s instructions.\n\n### Flow cytometry and cell sorting\n\nCells were resuspended in PBS and LIVE/DEAD Fixable Near-IR or Green dead cell dyes (Thermo Fisher Scientific) and incubated 15 min at RT in the dark for cell viability assessment. Subsequently, cells were blocked with FACS buffer (PBS supplemented with 2% FBS) containing InVivo Mab anti-mouse CD16/CD32 (BioXCell) and stained for surface markers using the following antibodies: anti-CD45R/B220 (clone RA3-6B2, Biolegend), anti-CD11b (clone M1/70, Biolegend), anti-mouse CD11c (clone N418, Biolegend), anti-CD3 (clone 145\u20132 C11, Thermo Fisher Scientific), anti-CD45 (clone 30-F11, Bioegend), anti-CD8a (clone 53\u20136.7, Biolegend), anti-F4/80 (clone BM8, Biolegend), anti-CD126/IL-6RA (clone D7715A7, Biolegend), anti-CD18/ITGB2 (clone M18/2, Biolegend), anti-CD49d/ITGA4 (clone 9C10(MFR4.B), Biolegend), anti-H-2Kb/H-2Db (clone 28-8-6, Biolegend), anti-CD86 (clone GL-1, Biolegend), anti-CD146 (clone ME-9F1, Biolegend), anti-CD44 (clone IM7, Biolegend), anti-CD62L (clone MEL-14, Biolegend), anti-IFN\u03b3 (clone XMG1.2, BD Biosciences), anti-CD31 (clone MEC13.3, BD Biosciences)for 20 min at 4 \u00b0C. For intracellular IFN\u03b3 staining, cells were then fixed, permeabilized and stained following Foxp3/Transcription Factor Staining buffer set (Thermo Fisher Scientific) manufacturer\u2019s guidelines. When preparing samples for FACS sorting, NPCs were directly blocked and stained with CD45-APC and CD31-BV421. Viability was evaluated by 7-AAD (Biolegend) staining that was added to samples 5 min before sorting. Cell sorting was performed on a BD FACSAria Fusion (BD Biosciences) equipped with four lasers: Blue (488 nm), Yellow/Green (561 nm), Red (640 nm) and Violet (405 nm). 85 \u00b5m nozzle was used and sheath fluid pressure was at 45 psi. A highly pure sorting modality (four-way purity sorting) was chosen. The drop delay was determined using BD FACS AccuDrop beads. Unstained and a single-stained controls have been used to set up compensation. Rainbow beads (SPHEROTM Rainbow Calibration Particles) were used to standardize the experiment and were run before each acquisition. Samples were sorted at 4 \u00b0C to slow down metabolic activities. Sorted cells were collected in 1.5 ml Eppendorf tubes containing 200 \u00b5l of DMEM 10% FBS medium and immediately processed for RNA extraction using ReliaPrep RNA Cell Miniprep System (Promega) and DNAse TURBO (Thermo Fisher Scientific) following manufacturer\u2019s recommendation.\n\n### Isolation of HECs, including LSECs and splenic DCs for in vitro studies\n\nMouse liver perfusion was performed as described in the section Electron Microscopy. After PBS perfusion, liver digestion was achieved in situ by perfusing warm digestion medium at 4 rpm for 10 min. The cava vein was squeezed tight several times to build up some pressure within the liver in order to fill all liver lobes with digestion medium. The resultant digested liver was excised, placed on a petri dish containing digestion medium and the Glisson\u2019s capsule was removed. Disaggregated tissue was filtered using a 70-\u00b5m cell strainer and centrifuged at 50 g for 3 min to discard hepatocytes. The supernatant containing NPCs was counted and Kupffer cells (KC) were removed using anti-F4/80 Ultrapure microbeads (Miltenyi Biotec) following manufacturer\u2019s guidelines. The flow-through of unlabeled NPCs was placed on top of a 25\u201350% Percoll gradient and centrifuged at 850 g for 20 min at RT without brake and the LSECs located at the 25/50% interface were collected. LSECs were counted and 105 cells were seeded in a 48-well plate and cultured in collagenated plates with EGM-2 medium (Lonza) for 3 days. For the isolation of splenic DC, spleens were slowly injected with 1 ml of digestion medium until they changed from dark maroon to reddish-orange color. Then, the spleen was minced and pipetted vigorously several times in digestion medium. The cell suspension was filtered using a 70 \u00b5m cell strainer, and larger undigested fragments were ulteriorly incubated with digestion medium at 37 \u00b0C for 30 min. After tissue digestion, splenocytes were centrifuged at 500 g for 5 min and washed three times with plain RPMI supplemented with 5 mM EDTA to disrupt DC-T cell complexes. Red blood cells were lysed with ACK lysis buffer and DCs cells were isolated using anti-CD11c microbeads UltraPure (Miltenyi) according to manufacturer\u2019s instructions. CD11c+ DCs were counted and seeded at 105 cells in a 48-well plate using RPMI GlutaMAX supplemented with 10% FBS, 1% P/S, 1 x Na Pyruvate (Gibco), 1 x MEM Non-essential Amino Acid Solution (Gibco), 20 \u00b5M \u03b2-mercaptoethanol and 40 ng/ml GM-CSF (BioXcell). Every 48 hr 200 \u00b5l of fresh medium were added to cultured cells and DCs were grown for 7 days to stimulate DCs differentiation.\n\n### Antigen cross-priming\n\nPrior to na\u00efve CD8+ T cell co-culture, HECs, including LSECs, and sDCs were stimulated for 18 hr with 1 \u00b5g/ml of SIINFEKL peptide (OVA 257\u2013264, Proimmune) or with 1 mg/ml of low endotoxin soluble ovalbumin protein (sOVA; Sigma-Aldrich) in combination with NaCl or 5 ng/ml of IFN\u03b1. Subsequently, after extensive washes, cells were co-culture with 5x105 naive CD8+T cells isolated from OT-I mice in complete RPMI (containing 10% FBS and 50 \u00b5M \u03b2-mercaptoethanol) in combination with NaCl or 5 ng/ml of IFN\u03b1. After 3 days, CD8+ T cells were stimulated for 4 hr with 1 \u00b5g/ml of SIINFEKL peptide, 5 \u00b5g/ml of Brefeldin A (Sigma-Aldrich) and 2.5% EL-4 supernatant in complete RPMI. Finally, the production of IFN\u03b3 and the expression of activation markers, such as CD44, were measured by FACS.\n\n### RNA-seq and bioinformatic data analysis\n\nRNA integrity, isolated from sorted liver CD31+ cells, was evaluated using the Agilent 4100 TapeStation (Agilent Technologies) and samples with RNA integrity number (RIN) above 7.0 were used for subsequent RNA-Seq-based profiling. Libraries were prepared using the Illumina Stranded mRNA ligation kit, according to the manufacturer\u2019s instructions. The RNA-Seq library was generated following the standard Illumina RNA-Seq protocol and sequenced on an Illumina NovaSeq 6000 machine (Illumina, San Diego, CA) obtaining an average of 40 millions of single-end reads per sample. The raw reads produced from sequencing were trimmed using Trimmomatic, version 0.32, to remove adapters and to exclude low-quality reads from the analysis. The remaining reads were then aligned to the murine genome GRCm38 using STAR, version 2.5.3 a. Reads were eventually assigned to the corresponding genomic features using featureCounts, according to the Gencode basic annotations (Gencode version M22). Quality of sequencing and alignment was assessed using FastQC, RseQC, and MultiQC tools. Expressed genes were defined as those genes showing at least 1 Count Per Million reads (CPM) on at least a selected number of samples, depending on the size of the compared groups (Chen et al., 2016). Low-expressed genes that did not match these criteria were excluded from the corresponding dataset. Gene expression read counts were exported and analyzed in R environment (v. 4.0.3) to identify differentially expressed genes (DEGs), using the DESeq2 Bioconductor library (v. 1.30.1, Love et al., 2014). P-values were adjusted using a threshold for false discovery rate (FDR)<0.05 (Benjamini and Hochberg, 1995). Significant genes were identified as those genes showing FDR <0.05. Functional enrichment analysis was conducted using the enrichR R package (v. 3.0, Kuleshov et al., 2016), starting from the lists of differentially expressed genes as defined by FDR <0.05. Selected pathways were grouped and summarized according to their general biological functions and the hypergeometric test was performed to test the enrichment of these custom genesets, exploiting the hypeR R package (v. 1.8.0). Pre-ranked Gene Set Enrichment Analysis (GSEA Subramanian et al., 2005) was performed for each DGE comparison, on all the expressed genes ranked for Log2 fold change. The gene-sets included in the GSEA analyses were obtained from Canonical Pathways, Hallmark and the Gene Ontology collections as they are reported in the MsigDB database.\n\n### Statistical analysis\n\nIn all experiments, values are expressed as mean values \u00b1 SEM. Statistical significance was estimated by two-tailed non-parametric Mann-Whitney test (e.g. to evaluate differences generated as a consequence of tumor growth) or by one-way ANOVA with Tukey\u2019s multiple comparison test when more than two groups were analyzed. Contingency tables were tested by two-tailed Fisher\u2019s exact test and Chi-square test. Statistical significance of survival experiments was calculated by log-rank/Mantel-Cox test. All statistical analyses were performed with Prism 8 (GraphPad Software) and were reported in Figure legends. p-values <0.05 were considered statistically significant and reported on graphs. If not mentioned, differences were not statistically significant.\n",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "f395e251-365c-469c-9d12-ca962a9496de",
+      "submission_id": "f93b2643-de2b-4e97-a592-c41c57bb9544",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Victoria L Bautch, https://ror.org/0130frc33 University of North Carolina, Chapel Hill United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80690.sa0](https://doi.org/10.7554/eLife.80690.sa0)\n\nThis study describing how continuous perioperative IFN\u03b1 therapy stimulates hepatic endothelial cells to build up a physical vascular barrier that limits tumor cell entry into the liver and promotes long-term antitumor immunity provides novel evidence for anti-metastatic effects of IFN\u03b1 via effects on the liver vascular compartment. This work is predicted to advance the field and will be of interest to scientists studying cancer, inflammation and liver function.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Victoria L Bautch, https://ror.org/0130frc33 University of North Carolina, Chapel Hill United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80690.sa1](https://doi.org/10.7554/eLife.80690.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0647f3a0-4c5a-48e7-8bda-0bdf51bd36f3",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C1",
+      "claim": "Colorectal cancer (CRC) is the third most common cancer and the second leading cause of cancer-related death worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Colorectal cancer (CRC) is the third most common cancer and the second leading cause of cancer-related death worldwide (Sung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sung et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "9dbcb426-01d9-4f38-94e5-b96e62d3842e",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C2",
+      "claim": "Up to 50% of CRC patients develop life-threatening liver metastatic disease despite chemotherapy and targeted adjuvant therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "unfortunately, up to 50% of these patients \u2013 despite chemotherapy and targeted adjuvant therapies \u2013 often develop life-threatening liver metastatic disease in the following years (Argil\u00e9s et al., 2020; Sargent et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Argil\u00e9s et al., 2020 and Sargent et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "ba437846-1615-4780-8162-9f551cfa495a",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C3",
+      "claim": "Surgical resection may foster liver metastases by increasing the dissemination of CRC cells into the portal circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "it has been also proposed that this procedure may foster liver metastases by increasing the dissemination of CRC cells into the portal circulation (Chow and Chok, 2019; Den\u00e8ve et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chow and Chok, 2019 and Den\u00e8ve et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "15f17475-bbc8-4e50-99e6-5676ff17c790",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C4",
+      "claim": "Surgical resection may enhance the adhesion of CRC cells to the liver endothelium.",
+      "claim_type": "EXPLICIT",
+      "source": "enhancing the adhesion of CRC cells to the liver endothelium (Chambers et al., 2002; G\u00fcl et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chambers et al., 2002 and G\u00fcl et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "38df0c44-ac37-4eb3-87c6-cad9279f627e",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C5",
+      "claim": "Surgical resection may promote transient immunosuppression awakening dormant intrahepatic micrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "or promoting transient immunosuppression awakening dormant intrahepatic micrometastases (Ananth et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ananth et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "8bbbc081-4c0e-4fe2-b942-9b04c9d12c67",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C6",
+      "claim": "IFN\u03b1 has multiple antitumor effects including direct inhibition of cancer cell growth and angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "interferon-alpha (IFN\u03b1), a pleiotropic cytokine with multiple antitumor effects such as the direct inhibition of cancer cell growth and angiogenesis (Indraccolo, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Indraccolo, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "df36b407-6cfd-4456-9045-31763befcb32",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C7",
+      "claim": "IFN\u03b1 induces sustained upregulation of major histocompatibility complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "the sustained upregulation of major histocompatibility complexes (Gessani et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gessani et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "45c0c802-ec1a-4218-b857-e6794224029c",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C8",
+      "claim": "IFN\u03b1 induces innate and adaptive antitumor immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "and the induction of innate and adaptive antitumor immune responses (Aichele et al., 2006; Curtsinger et al., 2007; Fuertes et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aichele et al., 2006, Curtsinger et al., 2007, and Fuertes et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "0b5f543b-5645-475e-8606-4f7ab6069800",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C9",
+      "claim": "IFN\u03b1 has a short plasma half-life of approximately 1 hour.",
+      "claim_type": "EXPLICIT",
+      "source": "likely due to its short plasma half-life (~1 hr) (Bocci, 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bocci, 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "f3d95634-b1ab-4c14-9ace-52fb60cf008c",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C10",
+      "claim": "Serum IFN\u03b1 levels peaked at day 2 after MOP implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum IFN\u03b1 levels peaked at day 2 after MOP implantation and relative IFN\u03b1 amounts (from ~100 pg/ml to ~1200 pg/ml) reflected the different MOP loading doses (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "601b7749-22c6-43da-acf5-0495e386c2a5",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C11",
+      "claim": "A reduction in circulating white blood cells was detected only with the highest IFN\u03b1 dose (1050 ng/day).",
+      "claim_type": "EXPLICIT",
+      "source": "A reduction in circulating white blood cells (WBCs) but not in platelet (PLT) counts or hematocrit (HCT) was detected only with the highest dose (Figure 1B and Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "d8d453a5-9d1f-45d0-a81e-a6614c4638c8",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C12",
+      "claim": "No increases in serum alanine aminotransferase (sALT) were observed at all tested IFN\u03b1 doses and time points.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed no increases in serum alanine aminotransferase (sALT) at all tested doses and time points (Figure 1\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "cfd5c717-a6f0-4c6b-a67b-be904afc8fa4",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C13",
+      "claim": "The 150 ng/day IFN\u03b1 dosing regimen induced a six-fold increase in Irf7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed a proportional dose response, with a six-fold increase in Irf7 expression at the 150 ng/day dosing regimen (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "595f3a73-3bd3-458f-9dec-abb3d2e66b76",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C14",
+      "claim": "Continuous IFN\u03b1 administration (150 ng/day for 28 days) reduces CRC metastatic growth in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested the ability of continuous IFN\u03b1 administration (150 ng/day for 28 days) to reduce CRC metastatic growth in the liver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental design and subsequent results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "65438d4a-9d95-48a9-bf18-29ec3798f1a1",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C15",
+      "claim": "100% of NaCl-treated mice developed multiple metastatic tumor lesions by days 21 and 28 after CRC challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "revealed that 100% of NaCl-treated mice (Figure 2E and F) develop multiple metastatic tumor lesions by days 21 and 28 after challenge",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "ccdb1212-ff43-49de-9dff-c12f1262e180",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C16",
+      "claim": "45% of IFN\u03b1-treated mice challenged with MC38 cells showed absence of liver metastases throughout the entire duration of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, 45% and 66% of IFN\u03b1-treated mice challenged with MC38 or CT26 cells, respectively, showed absence of liver metastases throughout the entire duration of the experiment (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "728c2651-e8c9-4259-b7ba-7606bf12bd40",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C17",
+      "claim": "66% of IFN\u03b1-treated mice challenged with CT26 cells showed absence of liver metastases throughout the entire duration of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, 45% and 66% of IFN\u03b1-treated mice challenged with MC38 or CT26 cells, respectively, showed absence of liver metastases throughout the entire duration of the experiment (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "4cae6c12-8ebb-416e-a2c6-9477e6c2619e",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C18",
+      "claim": "Approximately 33% of IFN\u03b1-treated mice challenged with MC38 cells achieved complete remission by day 50.",
+      "claim_type": "EXPLICIT",
+      "source": "metastatic lesions eventually regressed and achieved complete remission by day 50 in approximately 33% of IFN\u03b1-treated mice that were challenged with MC38 cells and scored disease-positive at day 21 (Figure 2C and E and Figure 2\u2014figure supplement 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C, 2E and Figure 2\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "a945c2b6-66e2-446c-b1bb-e8dc1af2c11d",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C19",
+      "claim": "Continuous IFN\u03b1 administration improved survival in both MC38- and CT26-challenged mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous IFN\u03b1 administration also improved survival, with similar rates for both MC38- and CT26-challenged mice (Figure 2G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2G and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "1064552c-b0f5-4f7e-a019-99ce389d7853",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C20",
+      "claim": "Continuous IFN\u03b1 therapy does not significantly alter the growth of primary established CRC tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results indicate that continuous IFN\u03b1 therapy does not significantly alter the growth of primary established CRC tumors but reduces the liver metastatic potential of invasive CRC cells emerging from the cecum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from orthotopic model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "91e64a62-5e50-45b8-b8ac-4d02132c1605",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C21",
+      "claim": "Continuous IFN\u03b1 therapy reduces the liver metastatic potential of invasive CRC cells emerging from the cecum.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results indicate that continuous IFN\u03b1 therapy does not significantly alter the growth of primary established CRC tumors but reduces the liver metastatic potential of invasive CRC cells emerging from the cecum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from orthotopic model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "8df5f74d-431c-429a-983b-0b98cdb02f3c",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C22",
+      "claim": "The antimetastatic activity of IFN\u03b1 does not require direct action on tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b1 promoted the development of a vascular antimetastatic niche characterized by liver sinusoidal endothelial cells (LSECs) defenestration extracellular matrix and glycocalyx deposition, thus strengthening the liver vascular barrier impairing CRC trans-sinusoidal migration, without requiring a direct action on tumor cells, hepatic stellate cells, hepatocytes, or liver dendritic cells (DCs), Kupffer cells (KCs) and liver capsular macrophages (LCMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from conditional knockout mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "0b75fd1c-ba24-40d8-a464-fd4bbb31b1e4",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C23",
+      "claim": "The antimetastatic activity of IFN\u03b1 does not require direct action on hepatic stellate cells.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b1 promoted the development of a vascular antimetastatic niche characterized by liver sinusoidal endothelial cells (LSECs) defenestration extracellular matrix and glycocalyx deposition, thus strengthening the liver vascular barrier impairing CRC trans-sinusoidal migration, without requiring a direct action on tumor cells, hepatic stellate cells, hepatocytes, or liver dendritic cells (DCs), Kupffer cells (KCs) and liver capsular macrophages (LCMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from conditional knockout mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "7c27833f-7d6a-4d99-8546-c8058044725b",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C24",
+      "claim": "The antimetastatic activity of IFN\u03b1 does not require direct action on hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b1 promoted the development of a vascular antimetastatic niche characterized by liver sinusoidal endothelial cells (LSECs) defenestration extracellular matrix and glycocalyx deposition, thus strengthening the liver vascular barrier impairing CRC trans-sinusoidal migration, without requiring a direct action on tumor cells, hepatic stellate cells, hepatocytes, or liver dendritic cells (DCs), Kupffer cells (KCs) and liver capsular macrophages (LCMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from conditional knockout mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "674a888e-aa80-4812-a630-a1208a68b098",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C25",
+      "claim": "The antimetastatic activity of IFN\u03b1 does not require direct action on liver dendritic cells (DCs).",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b1 promoted the development of a vascular antimetastatic niche characterized by liver sinusoidal endothelial cells (LSECs) defenestration extracellular matrix and glycocalyx deposition, thus strengthening the liver vascular barrier impairing CRC trans-sinusoidal migration, without requiring a direct action on tumor cells, hepatic stellate cells, hepatocytes, or liver dendritic cells (DCs), Kupffer cells (KCs) and liver capsular macrophages (LCMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from conditional knockout mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "b46a097e-b125-4bc0-b218-3f3aab62d11a",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C26",
+      "claim": "The antimetastatic activity of IFN\u03b1 does not require direct action on Kupffer cells (KCs).",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b1 promoted the development of a vascular antimetastatic niche characterized by liver sinusoidal endothelial cells (LSECs) defenestration extracellular matrix and glycocalyx deposition, thus strengthening the liver vascular barrier impairing CRC trans-sinusoidal migration, without requiring a direct action on tumor cells, hepatic stellate cells, hepatocytes, or liver dendritic cells (DCs), Kupffer cells (KCs) and liver capsular macrophages (LCMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from conditional knockout mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "fbe27cb7-b7a7-4c39-8184-3a23c6c43d2f",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C27",
+      "claim": "The antimetastatic activity of IFN\u03b1 does not require direct action on liver capsular macrophages (LCMs).",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b1 promoted the development of a vascular antimetastatic niche characterized by liver sinusoidal endothelial cells (LSECs) defenestration extracellular matrix and glycocalyx deposition, thus strengthening the liver vascular barrier impairing CRC trans-sinusoidal migration, without requiring a direct action on tumor cells, hepatic stellate cells, hepatocytes, or liver dendritic cells (DCs), Kupffer cells (KCs) and liver capsular macrophages (LCMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from conditional knockout mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "c64de934-5349-49b8-8fd9-6dcf00af930c",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C28",
+      "claim": "Hepatic endothelial cells (HECs) mediate the anti-metastatic activity of IFN\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the results identify HECs, including LSECs, as key mediators of IFN\u03b1-dependent anti-tumor activities that involve the impairment of CRC trans-sinusoidal migration and the development of long-term anti-tumor CD8+ T cell immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from conditional knockout mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "ad9b4b4a-4bbb-4e42-af11-5c403ef2b99c",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C29",
+      "claim": "Loss of Ifnar1 on hepatic endothelial cells allowed CRC lesions to grow undisturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the depletion of Ifnar1 on HECs allowed the lesions to grow undisturbed (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "00771225-efb1-4a8f-9118-1399d7ec2b90",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C30",
+      "claim": "VeCadIfnar1_KO mice treated with either NaCl or IFN\u03b1 displayed very similar numbers and sizes of hepatic lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, VeCadIfnar1_KO mice treated with either NaCl or IFN\u03b1 displayed very similar numbers and sizes of hepatic lesions (Figure 4C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "723fb61a-30c1-445c-94b4-1822f21e2542",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C31",
+      "claim": "IFN\u03b1 treatment significantly decreased the frequency of sinusoidal fenestrae in Ifnar1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN\u03b1 treatment of Ifnar1fl/fl mice significantly decreased the frequency of sinusoidal fenestrae and the overall porosity of LSECs (Figure 5C and D top)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "85d286a7-f697-48ee-a21d-35ad8e39a90e",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C32",
+      "claim": "IFN\u03b1 treatment increased the endothelial thickness in Ifnar1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "while it increased: (i) the endothelial thickness (Figure 5\u2014figure supplement 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "5de8a952-7670-43d4-bb3c-fc3aee6480db",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C33",
+      "claim": "IFN\u03b1 treatment increased the space of Disse density in Ifnar1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) the space of Disse density (an indirect measure of hepatocyte microvilli density) (Figure 5\u2014figure supplement 1D; Gissen and Arias, 2015)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 1D and citation to Gissen and Arias, 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "a97535bf-b148-48e5-bf3b-9231b8966132",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C34",
+      "claim": "IFN\u03b1 treatment increased the subendothelial deposition of collagen fibrils in Ifnar1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) the subendothelial deposition of collagen fibrils (Figure 5\u2014figure supplement 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "03ec2e3d-53c5-4e93-9686-59b37fd27b39",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C35",
+      "claim": "IFN\u03b1 treatment promoted the appearance of a basal lamina in Ifnar1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "and (iv) the appearance of a basal lamina (Figure 5D bottom and Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5D and Figure 5\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "f9746cf8-da09-4e25-8672-b5bd0963a6ef",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C36",
+      "claim": "IFN\u03b1 treatment increased the thickness of the vascular glycocalyx (GCX) in Ifnar1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous IFN\u03b1 treatment modified this network as well, increasing its thickness (Figure 5E and F top)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "c7a270f2-55ee-41c8-b170-2b891e6422b7",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C37",
+      "claim": "IFN\u03b1 treatment increased the expression of heparan sulfate (HS) in Ifnar1fl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "and the expression of one of its major components, the heparan sulfate (HS) (Reitsma et al., 2007; Figure 5E and F bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5E and F and citation to Reitsma et al., 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "f9e8e753-4f12-455c-9d64-beedbe481705",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C38",
+      "claim": "MC38GFP cells were about twofold less abundant in IFN\u03b1-treated Ifnar1fl/fl mice compared to NaCl-treated controls at 24 hours after challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal IF quantification revealed that, compared to NaCl-treated Ifnar1fl/fl animals, MC38GFP cells were about ~twofold less abundant in IFN\u03b1-treated Ifnar1fl/fl mice and ~threefold more abundant in VeCadIfnar1_KO mice treated with NaCl or IFN\u03b1 (Figure 5A top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "9ca1002e-f7c2-47fa-a1bb-4e65c6e00968",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C39",
+      "claim": "Most MC38GFP cells localize intravascularly in IFN\u03b1-treated Ifnar1fl/fl mice at 24 hours after challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, confocal 3D reconstructions of liver sinusoids from IFN\u03b1-treated Ifnar1fl/fl mice unveiled that by 24 hr most MC38GFP cells localize intravascularly (i.e. they did not invade the liver parenchyma)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A bottom, 5B and Figure 5\u2014videos 1\u20134",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "c65832cd-6c4b-4611-b46f-7606e18a894a",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C40",
+      "claim": "HECs isolated from sorted CD31+ cells contain approximately 96% of bona-fide LSECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using SEM to assess the % of CD31+ cells bearing the typical sinusoidal fenestrae, we determined that our preparations contain ~96% of bona-fide LSECs (Figure 6\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "ed26ced9-b5c5-47db-ba60-b96eb948cce6",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C41",
+      "claim": "HECs from IFN\u03b1-treated Ifnar1fl/fl mice showed 381 differentially expressed transcripts compared to NaCl-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to HECs isolated from NaCl-treated Ifnar1fl/fl mice, HECs derived from IFN\u03b1-treated animals of the same lineage showed 381 transcripts that were differentially expressed (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "d63b368f-d19d-4631-bf0c-a438ca525088",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C42",
+      "claim": "IFN\u03b1-stimulated LSECs upregulate interferon-stimulated genes including Irf7, Irf9, Mx1, Mx2, Isg15, Stat1, and Oasl1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, many of these up-regulated transcripts belonged to the ISG family, including Irf7, Irf9, Mx1, Mx2, Isg15, Stat1, and Oasl1 (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 6A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "4cdeb74d-d3bf-4031-a0d4-d1650bdd08fe",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C43",
+      "claim": "IFN\u03b1-stimulated LSECs upregulate transcripts related to ECM/GCX organization and cell-cell/cell-matrix adhesion pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Several transcripts related to the ECM/GCX organization or the cell-cell/cell-matrix adhesion pathways were upregulated as well (Figure 6B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 6B and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "8a37cae6-6f5d-464d-8c9f-ace9ec1b6291",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C44",
+      "claim": "IFN\u03b1 stimulation of Ifnar1-bearing HECs significantly increased MHC-I, CD86 and IL-6RA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Following IFN\u03b1 treatment, Ifnar1-bearing LSECs significantly increased MHC-I, CD86 and IL-6RA expression (Figure 7\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "af5e3145-edf6-4b9d-84c0-2e5fcfb5d756",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C45",
+      "claim": "IFN\u03b1-stimulated HECs from Ifnar1fl/fl mice cross-primed na\u00efve OT-I CD8+ T cells to a similar extent as splenic DCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Once exposed to IFN\u03b1 and pulsed with sOVA, HECs and sDCs from Ifnar1fl/fl mice cross-primed na\u00efve OT-I CD8+T cells to a similar extent (Figure 7B and Figure 7\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7B and Figure 7\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "c0e08292-6bfa-483b-80ce-09d4c5590633",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C46",
+      "claim": "IFN\u03b1-treated Ifnar1fl/fl mice showed an increased proportion of central memory T cells (Tcm) compared to NaCl-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that only IFN\u03b1-treated Ifnar1fl/fl mice showed an increased proportion of Tcm and decreased percentage of Tn when compared to NaCl-treated Ifnar1fl/fl controls (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "0a41d77a-00a0-4013-867f-48d90a798dac",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C47",
+      "claim": "None of the Ifnar1fl/fl-cured mice showed detectable tumors after subcutaneous rechallenge with MC38 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, while the latter animals developed subcutaneous tumors that increased in size over time, none of the Ifnar1fl/fl-cured mice showed detectable lesions at any time point studied (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "392efb79-23da-4b9b-8ea2-e3cf6ea8bccc",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C48",
+      "claim": "Continuous IFN\u03b1 treatment promotes protection against secondary tumor challenge even after IFN\u03b1 therapy discontinuation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that continuous IFN\u03b1 treatment promotes protection against secondary tumor challenge even after IFN\u03b1 therapy discontinuation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from tumor rechallenge experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "a39abb7a-f0c1-4404-800d-a6613e878e5c",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C49",
+      "claim": "The microvascular modifications induced by IFN\u03b1 were reverted after the discontinuation of IFN\u03b1 therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these microvascular modifications were reverted after the discontinuation of IFN\u03b1 therapy with no impact on long-term liver functionality/viability (Figure 5\u2014figure supplement 2C-I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 2C-I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "d787f8a4-d4b6-49b3-a497-b90d03b96904",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C50",
+      "claim": "Trans-sinusoidal migration of CRC cells is a critical limiting step in the metastatic cascade that occurs within 24 hours of CRC challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "As the process of trans-sinusoidal migration \u2013 a critical limiting step in the metastatic cascade \u2013 is known to occur within 24 hr of CRC challenge (Chambers et al., 2002; Valastyan and Weinberg, 2011; Wolf et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chambers et al., 2002, Valastyan and Weinberg, 2011, and Wolf et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "9599f9a9-4b86-4cf9-bfd3-64d709488539",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C51",
+      "claim": "LSECs in the healthy liver contain numerous fenestrae of up to 200 nm in diameter and normally lack a typical basal membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "it is noteworthy that in the 'healthy' liver, functioning as a common site for CRC metastases, LSECs contain numerous fenestrae of up to 200 nm in diameter and normally lack the typical basal membrane that characterizes the microvasculature of most other tissues and organs (Jacobs et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jacobs et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "69b69c5c-8c2a-4a63-b09c-8436eaf62c42",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C52",
+      "claim": "CRC patients suffering from chronic viral liver fibrotic diseases display lower incidence of hepatic metastases.",
+      "claim_type": "EXPLICIT",
+      "source": "This fits with the evidence that CRC patients suffering from chronic viral liver fibrotic diseases characterized by hepatic endogenous type I interferon production display lower incidence of hepatic metastases (Augustin et al., 2013; Baiocchini et al., 2019; Li Destri et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Augustin et al., 2013, Baiocchini et al., 2019, and Li Destri et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "234d8dc2-ec60-4c2f-b460-7cedfc3d1a39",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C53",
+      "claim": "Enhanced GCX deposits can act as a repulsive barrier that prevents tumor cell interactions with endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, enhanced GCX deposits can act as a repulsive barrier that prevents tumor cell interactions with endothelial cells, adhesion molecules or chemokines have been previously identified as negative correlates of transendothelial migration (Glinskii et al., 2005; Mitchell and King, 2014; Offeddu et al., 2021; Wilkinson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Glinskii et al., 2005, Mitchell and King, 2014, Offeddu et al., 2021, and Wilkinson et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "21a3d6ad-2e0c-4b0c-88a9-710c1ec64562",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C54",
+      "claim": "LSEC capillarization and hepatic fibrosis are reversed when chronic liver injury resolves.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, both LSEC capillarization and hepatic fibrosis are reversed when chronic liver injury resolves (DeLeve, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to DeLeve, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "f4020dbb-dfe1-4883-ab1d-69c2d945eb0d",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C55",
+      "claim": "IFN\u03b1 treatment showed significant reduction in established fibrosis in patients with chronic viral liver diseases treated for up to 48 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Such notion is also supported by the absence of hepatic toxicity (Weber et al., 2015) and the significant reduction in established fibrosis in patients with chronic viral liver diseases treated with recombinant IFN\u03b1 for up to 48 weeks (Li et al., 2019; Poynard et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Weber et al., 2015, Li et al., 2019, and Poynard et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "083dfd5c-0cee-4d06-a926-3a2f4e7597b6",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C56",
+      "claim": "LSECs have efficient endocytosis capacity that is among the highest of all cell types in the body.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the notion that IFN\u03b1-stimulated LSECs, due to their anatomical proximity and efficient endocytosis capacity that is among the highest of all cell types in the body (Sorensen and Smedsrod, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sorensen and Smedsrod, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "62fca7dd-f5c1-4dc1-a76a-701497b81186",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C57",
+      "claim": "Dendritic cells releasing IFN\u03b1 reduce liver metastatic colonization by CRC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, other cell types within the hepatic niche could further amplify this IFN\u03b1-initiated cascade, as it has been shown that dendritic cells releasing IFN\u03b1 also reduce liver metastatic colonization by CRC cells (Toyoshima et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Toyoshima et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "89a64c35-b25c-43d5-a2e0-6a62996f9a0c",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "claim_id": "C58",
+      "claim": "CRC tumors may deregulate the Ifnar1 receptor and become refractory to IFN\u03b1 therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion that a minority of IFN\u03b1-treated animals develop small intrahepatic lesions that display similar proliferation, neoangiogenic and immunologic markers than untreated lesions highlights the possibility that CRC tumors, once established as macroscopic metastases, may become refractory and resistant to IFN\u03b1 therapy by downregulating Ifnar1 (Boukhaled et al., 2021; Katlinski et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Boukhaled et al., 2021 and Katlinski et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e92148fb-61be-4b8f-a9bc-604b95bb646d",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CRC is a major global health burden with high metastatic potential to the liver, and surgical resection may paradoxically promote liver metastases through multiple mechanisms including increased dissemination, enhanced adhesion, and immunosuppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the clinical context through citations to epidemiological data and mechanistic studies. These are background claims supported by appropriate literature citations that provide the rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "8c7af0cf-2c49-4db4-b28f-1641b24f02c8",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IFN\u03b1 has multiple antitumor properties including direct effects on cancer cells, immune modulation, and MHC upregulation, but its clinical utility is limited by short half-life.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 are background claims supported by appropriate citations describing known properties of IFN\u03b1. These establish the rationale for developing continuous delivery strategies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "1207825b-7f8a-4d03-99e7-f6699a059c11",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Continuous IFN\u03b1 administration via mini-osmotic pumps achieves dose-dependent serum levels and hepatic ISG induction, with the 150 ng/day dose showing optimal safety profile (no liver toxicity, minimal myelotoxicity) and six-fold Irf7 upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are supported by experimental data in Figures 1A-C showing pharmacokinetics, toxicity profiles, and ISG induction. The dose-response relationship is clearly demonstrated with appropriate controls and statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "f6064ea3-a41e-4af2-86a7-18fde65082a2",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Continuous IFN\u03b1 administration (150 ng/day) significantly reduces liver metastatic burden in both MC38 and CT26 CRC models, with 45-66% of mice remaining metastasis-free and approximately 33% of MC38-challenged mice achieving complete remission, resulting in improved survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 are supported by comprehensive MRI data (Figures 2C-H) showing reduced metastatic burden and improved survival in two different CRC models. The use of both immunogenic (MC38) and poorly immunogenic (CT26) cell lines strengthens the findings. Statistical analyses support the claimed percentages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "e70dbf0f-5503-467a-bf22-0833c4943e4d",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In an orthotopic CT26LM3 model, continuous IFN\u03b1 therapy does not affect primary tumor growth but significantly reduces spontaneous liver metastases, with 60% of mice remaining metastasis-free.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by data from the orthotopic model (Figure 3) showing no effect on primary tumor weight but significant reduction in liver metastases. This demonstrates that IFN\u03b1 acts on the metastatic process rather than primary tumor growth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "fa7ee7b8-1fb0-44aa-8cdc-f69a0cba89f2",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The antimetastatic activity of IFN\u03b1 requires Ifnar1 signaling specifically on hepatic endothelial cells (HECs), but not on tumor cells, hepatocytes, hepatic stellate cells, dendritic cells, Kupffer cells, or liver capsular macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 are supported by comprehensive conditional knockout experiments (Figure 4) showing that only VeCadIfnar1_KO mice lose IFN\u03b1-mediated protection, while other cell-type-specific knockouts retain protection. This elegant genetic dissection clearly identifies HECs as the critical mediators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "65f6caef-1ec3-4377-974d-fc53007917bd",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Loss of Ifnar1 specifically on hepatic endothelial cells completely abrogates the antimetastatic effects of IFN\u03b1, with VeCadIfnar1_KO mice showing similar metastatic burden regardless of NaCl or IFN\u03b1 treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are directly supported by MRI data (Figure 4B-D) showing that VeCadIfnar1_KO mice treated with IFN\u03b1 develop similar numbers and sizes of metastases as NaCl controls, confirming the essential role of endothelial Ifnar1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "7d91318a-6225-440c-858b-8509e6ba68ee",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "IFN\u03b1 treatment induces structural changes in liver sinusoidal endothelial cells including decreased fenestrae frequency and porosity, increased endothelial thickness, increased space of Disse density, enhanced collagen deposition, and appearance of a basal lamina.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 are supported by detailed electron microscopy data (Figure 5C-D and supplements) showing quantitative changes in LSEC ultrastructure. The measurements are rigorous and include appropriate controls comparing Ifnar1fl/fl and VeCadIfnar1_KO mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "9b7c6c13-6443-45d1-9b4e-ed680073fec3",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "IFN\u03b1 treatment increases the thickness of the vascular glycocalyx and enhances expression of heparan sulfate, a major glycocalyx component.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by SEM imaging with lanthanum nitrate staining and immunofluorescence quantification (Figure 5E-F) showing increased glycocalyx thickness and heparan sulfate expression in IFN\u03b1-treated Ifnar1fl/fl but not VeCadIfnar1_KO mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "b2cc26de-b72b-4383-b0c5-2bba3aba33ec",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "At 24 hours after CRC challenge, IFN\u03b1-treated Ifnar1fl/fl mice show twofold fewer intrahepatic MC38GFP cells compared to controls, with most tumor cells remaining intravascular rather than invading the liver parenchyma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by confocal microscopy and 3D reconstruction data (Figure 5A-B) showing reduced tumor cell numbers and intravascular localization. This provides direct evidence that IFN\u03b1 impairs trans-sinusoidal migration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "c8279244-b79a-452c-8565-b989e852ffcb",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RNA-seq analysis of sorted CD31+ hepatic endothelial cells (96% LSECs) reveals that IFN\u03b1 treatment induces 381 differentially expressed transcripts including interferon-stimulated genes and transcripts related to ECM/glycocalyx organization and cell adhesion pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by RNA-seq data (Figure 6) with appropriate quality control (SEM validation of LSEC purity) and bioinformatic analysis. The transcriptional changes align with the observed structural and functional alterations in LSECs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "bbfa6d32-8f91-45fc-9ba7-7ab92536fb53",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "IFN\u03b1 stimulation of Ifnar1-bearing HECs increases expression of MHC-I, CD86, and IL-6RA, and enables HECs to cross-prime na\u00efve CD8+ T cells to a similar extent as splenic dendritic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by flow cytometry data (Figure 7\u2014supplement 1A) and in vitro cross-priming assays (Figure 7B) showing that IFN\u03b1-treated HECs acquire antigen-presenting capacity comparable to professional APCs. This demonstrates an immunological mechanism beyond the physical barrier.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "7cc2d8c3-d6ac-4874-baf0-4fee095245d3",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "IFN\u03b1 treatment increases the proportion of central memory T cells in the spleen, and IFN\u03b1-cured mice are completely protected against subcutaneous tumor rechallenge even after therapy discontinuation, demonstrating long-term immunological memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by flow cytometry data showing increased Tcm (Figure 7C) and tumor rechallenge experiments (Figure 7E) demonstrating complete protection. This provides strong evidence for durable adaptive immunity induced by IFN\u03b1-stimulated LSECs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "a60c8247-0739-4cb0-b3d4-da7c882953a3",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The microvascular modifications induced by IFN\u03b1 are reversible, with fenestrae abundance and LSEC porosity returning to normal 40 days after therapy discontinuation without impact on liver function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by SEM data and liver function tests (Figure 5\u2014supplement 2C-I) showing recovery of LSEC structure and maintained liver viability after IFN\u03b1 withdrawal. This addresses important safety concerns about potential long-term fibrotic effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "49eb0116-f22b-45bc-8c93-d1af68fd5638",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Trans-sinusoidal migration of CRC cells is a critical limiting step in the metastatic cascade that occurs within 24 hours of CRC challenge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is a background claim supported by appropriate citations establishing the temporal window for trans-sinusoidal migration, which justifies the 24-hour time point used in the mechanistic studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "6e1d0bfc-549f-487a-827f-fc7ca437930f",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Multiple lines of evidence from the literature support the biological plausibility of the findings, including the permissive nature of healthy liver sinusoids, clinical observations in fibrotic liver disease, the role of glycocalyx in preventing tumor cell adhesion, and the reversibility of LSEC capillarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 are background claims supported by appropriate citations that provide context for interpreting the experimental findings and their potential clinical relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    },
+    {
+      "id": "56bbd0a9-82a3-4321-ba20-e60c59c427c5",
+      "content_id": "76ff88c0-eb9c-4bfc-a995-08713350ad2c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CRC tumors may become refractory to IFN\u03b1 therapy by downregulating Ifnar1 once established as macroscopic metastases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by citations and is consistent with the observation that a minority of IFN\u03b1-treated animals develop small lesions with characteristics similar to untreated tumors. This provides a plausible explanation for incomplete therapeutic efficacy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:41:18.350501Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0647f3a0-4c5a-48e7-8bda-0bdf51bd36f3",
+      "result_id": "e92148fb-61be-4b8f-a9bc-604b95bb646d"
+    },
+    {
+      "claim_id": "9dbcb426-01d9-4f38-94e5-b96e62d3842e",
+      "result_id": "e92148fb-61be-4b8f-a9bc-604b95bb646d"
+    },
+    {
+      "claim_id": "ba437846-1615-4780-8162-9f551cfa495a",
+      "result_id": "e92148fb-61be-4b8f-a9bc-604b95bb646d"
+    },
+    {
+      "claim_id": "15f17475-bbc8-4e50-99e6-5676ff17c790",
+      "result_id": "e92148fb-61be-4b8f-a9bc-604b95bb646d"
+    },
+    {
+      "claim_id": "38df0c44-ac37-4eb3-87c6-cad9279f627e",
+      "result_id": "e92148fb-61be-4b8f-a9bc-604b95bb646d"
+    },
+    {
+      "claim_id": "8bbbc081-4c0e-4fe2-b942-9b04c9d12c67",
+      "result_id": "8c7af0cf-2c49-4db4-b28f-1641b24f02c8"
+    },
+    {
+      "claim_id": "df36b407-6cfd-4456-9045-31763befcb32",
+      "result_id": "8c7af0cf-2c49-4db4-b28f-1641b24f02c8"
+    },
+    {
+      "claim_id": "45c0c802-ec1a-4218-b857-e6794224029c",
+      "result_id": "8c7af0cf-2c49-4db4-b28f-1641b24f02c8"
+    },
+    {
+      "claim_id": "0b5f543b-5645-475e-8606-4f7ab6069800",
+      "result_id": "8c7af0cf-2c49-4db4-b28f-1641b24f02c8"
+    },
+    {
+      "claim_id": "f3d95634-b1ab-4c14-9ace-52fb60cf008c",
+      "result_id": "1207825b-7f8a-4d03-99e7-f6699a059c11"
+    },
+    {
+      "claim_id": "601b7749-22c6-43da-acf5-0495e386c2a5",
+      "result_id": "1207825b-7f8a-4d03-99e7-f6699a059c11"
+    },
+    {
+      "claim_id": "d8d453a5-9d1f-45d0-a81e-a6614c4638c8",
+      "result_id": "1207825b-7f8a-4d03-99e7-f6699a059c11"
+    },
+    {
+      "claim_id": "cfd5c717-a6f0-4c6b-a67b-be904afc8fa4",
+      "result_id": "1207825b-7f8a-4d03-99e7-f6699a059c11"
+    },
+    {
+      "claim_id": "595f3a73-3bd3-458f-9dec-abb3d2e66b76",
+      "result_id": "f6064ea3-a41e-4af2-86a7-18fde65082a2"
+    },
+    {
+      "claim_id": "65438d4a-9d95-48a9-bf18-29ec3798f1a1",
+      "result_id": "f6064ea3-a41e-4af2-86a7-18fde65082a2"
+    },
+    {
+      "claim_id": "ccdb1212-ff43-49de-9dff-c12f1262e180",
+      "result_id": "f6064ea3-a41e-4af2-86a7-18fde65082a2"
+    },
+    {
+      "claim_id": "728c2651-e8c9-4259-b7ba-7606bf12bd40",
+      "result_id": "f6064ea3-a41e-4af2-86a7-18fde65082a2"
+    },
+    {
+      "claim_id": "4cae6c12-8ebb-416e-a2c6-9477e6c2619e",
+      "result_id": "f6064ea3-a41e-4af2-86a7-18fde65082a2"
+    },
+    {
+      "claim_id": "a945c2b6-66e2-446c-b1bb-e8dc1af2c11d",
+      "result_id": "f6064ea3-a41e-4af2-86a7-18fde65082a2"
+    },
+    {
+      "claim_id": "1064552c-b0f5-4f7e-a019-99ce389d7853",
+      "result_id": "e70dbf0f-5503-467a-bf22-0833c4943e4d"
+    },
+    {
+      "claim_id": "91e64a62-5e50-45b8-b8ac-4d02132c1605",
+      "result_id": "e70dbf0f-5503-467a-bf22-0833c4943e4d"
+    },
+    {
+      "claim_id": "8df5f74d-431c-429a-983b-0b98cdb02f3c",
+      "result_id": "fa7ee7b8-1fb0-44aa-8cdc-f69a0cba89f2"
+    },
+    {
+      "claim_id": "0b75fd1c-ba24-40d8-a464-fd4bbb31b1e4",
+      "result_id": "fa7ee7b8-1fb0-44aa-8cdc-f69a0cba89f2"
+    },
+    {
+      "claim_id": "7c27833f-7d6a-4d99-8546-c8058044725b",
+      "result_id": "fa7ee7b8-1fb0-44aa-8cdc-f69a0cba89f2"
+    },
+    {
+      "claim_id": "674a888e-aa80-4812-a630-a1208a68b098",
+      "result_id": "fa7ee7b8-1fb0-44aa-8cdc-f69a0cba89f2"
+    },
+    {
+      "claim_id": "b46a097e-b125-4bc0-b218-3f3aab62d11a",
+      "result_id": "fa7ee7b8-1fb0-44aa-8cdc-f69a0cba89f2"
+    },
+    {
+      "claim_id": "fbe27cb7-b7a7-4c39-8184-3a23c6c43d2f",
+      "result_id": "fa7ee7b8-1fb0-44aa-8cdc-f69a0cba89f2"
+    },
+    {
+      "claim_id": "c64de934-5349-49b8-8fd9-6dcf00af930c",
+      "result_id": "fa7ee7b8-1fb0-44aa-8cdc-f69a0cba89f2"
+    },
+    {
+      "claim_id": "ad9b4b4a-4bbb-4e42-af11-5c403ef2b99c",
+      "result_id": "65f6caef-1ec3-4377-974d-fc53007917bd"
+    },
+    {
+      "claim_id": "00771225-efb1-4a8f-9118-1399d7ec2b90",
+      "result_id": "65f6caef-1ec3-4377-974d-fc53007917bd"
+    },
+    {
+      "claim_id": "723fb61a-30c1-445c-94b4-1822f21e2542",
+      "result_id": "7d91318a-6225-440c-858b-8509e6ba68ee"
+    },
+    {
+      "claim_id": "85d286a7-f697-48ee-a21d-35ad8e39a90e",
+      "result_id": "7d91318a-6225-440c-858b-8509e6ba68ee"
+    },
+    {
+      "claim_id": "5de8a952-7670-43d4-bb3c-fc3aee6480db",
+      "result_id": "7d91318a-6225-440c-858b-8509e6ba68ee"
+    },
+    {
+      "claim_id": "a97535bf-b148-48e5-bf3b-9231b8966132",
+      "result_id": "7d91318a-6225-440c-858b-8509e6ba68ee"
+    },
+    {
+      "claim_id": "03ec2e3d-53c5-4e93-9686-59b37fd27b39",
+      "result_id": "7d91318a-6225-440c-858b-8509e6ba68ee"
+    },
+    {
+      "claim_id": "f9746cf8-da09-4e25-8672-b5bd0963a6ef",
+      "result_id": "9b7c6c13-6443-45d1-9b4e-ed680073fec3"
+    },
+    {
+      "claim_id": "c7a270f2-55ee-41c8-b170-2b891e6422b7",
+      "result_id": "9b7c6c13-6443-45d1-9b4e-ed680073fec3"
+    },
+    {
+      "claim_id": "f9e8e753-4f12-455c-9d64-beedbe481705",
+      "result_id": "b2cc26de-b72b-4383-b0c5-2bba3aba33ec"
+    },
+    {
+      "claim_id": "9ca1002e-f7c2-47fa-a1bb-4e65c6e00968",
+      "result_id": "b2cc26de-b72b-4383-b0c5-2bba3aba33ec"
+    },
+    {
+      "claim_id": "c65832cd-6c4b-4611-b46f-7606e18a894a",
+      "result_id": "c8279244-b79a-452c-8565-b989e852ffcb"
+    },
+    {
+      "claim_id": "ed26ced9-b5c5-47db-ba60-b96eb948cce6",
+      "result_id": "c8279244-b79a-452c-8565-b989e852ffcb"
+    },
+    {
+      "claim_id": "d63b368f-d19d-4631-bf0c-a438ca525088",
+      "result_id": "c8279244-b79a-452c-8565-b989e852ffcb"
+    },
+    {
+      "claim_id": "4cdeb74d-d3bf-4031-a0d4-d1650bdd08fe",
+      "result_id": "c8279244-b79a-452c-8565-b989e852ffcb"
+    },
+    {
+      "claim_id": "8a37cae6-6f5d-464d-8c9f-ace9ec1b6291",
+      "result_id": "bbfa6d32-8f91-45fc-9ba7-7ab92536fb53"
+    },
+    {
+      "claim_id": "af5e3145-edf6-4b9d-84c0-2e5fcfb5d756",
+      "result_id": "bbfa6d32-8f91-45fc-9ba7-7ab92536fb53"
+    },
+    {
+      "claim_id": "c0e08292-6bfa-483b-80ce-09d4c5590633",
+      "result_id": "7cc2d8c3-d6ac-4874-baf0-4fee095245d3"
+    },
+    {
+      "claim_id": "0a41d77a-00a0-4013-867f-48d90a798dac",
+      "result_id": "7cc2d8c3-d6ac-4874-baf0-4fee095245d3"
+    },
+    {
+      "claim_id": "392efb79-23da-4b9b-8ea2-e3cf6ea8bccc",
+      "result_id": "7cc2d8c3-d6ac-4874-baf0-4fee095245d3"
+    },
+    {
+      "claim_id": "a39abb7a-f0c1-4404-800d-a6613e878e5c",
+      "result_id": "a60c8247-0739-4cb0-b3d4-da7c882953a3"
+    },
+    {
+      "claim_id": "d787f8a4-d4b6-49b3-a497-b90d03b96904",
+      "result_id": "49eb0116-f22b-45bc-8c93-d1af68fd5638"
+    },
+    {
+      "claim_id": "9599f9a9-4b86-4cf9-bfd3-64d709488539",
+      "result_id": "6e1d0bfc-549f-487a-827f-fc7ca437930f"
+    },
+    {
+      "claim_id": "69b69c5c-8c2a-4a63-b09c-8436eaf62c42",
+      "result_id": "6e1d0bfc-549f-487a-827f-fc7ca437930f"
+    },
+    {
+      "claim_id": "234d8dc2-ec60-4c2f-b460-7cedfc3d1a39",
+      "result_id": "6e1d0bfc-549f-487a-827f-fc7ca437930f"
+    },
+    {
+      "claim_id": "21a3d6ad-2e0c-4b0c-88a9-710c1ec64562",
+      "result_id": "6e1d0bfc-549f-487a-827f-fc7ca437930f"
+    },
+    {
+      "claim_id": "f4020dbb-dfe1-4883-ab1d-69c2d945eb0d",
+      "result_id": "6e1d0bfc-549f-487a-827f-fc7ca437930f"
+    },
+    {
+      "claim_id": "083dfd5c-0cee-4d06-a926-3a2f4e7597b6",
+      "result_id": "6e1d0bfc-549f-487a-827f-fc7ca437930f"
+    },
+    {
+      "claim_id": "62fca7dd-f5c1-4dc1-a76a-701497b81186",
+      "result_id": "6e1d0bfc-549f-487a-827f-fc7ca437930f"
+    },
+    {
+      "claim_id": "89a64c35-b25c-43d5-a2e0-6a62996f9a0c",
+      "result_id": "56bbd0a9-82a3-4321-ba20-e60c59c427c5"
+    }
+  ],
+  "comparisons": []
+}

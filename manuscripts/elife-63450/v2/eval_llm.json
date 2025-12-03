@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study obtained single-cell transcriptomes of approximately 4900 high-quality Drosophila olfactory projection neurons (PNs) across four developmental stages (0 hr APF, 24 hr APF, 48 hr APF, and adult) using SMART-seq2. Different GAL4 drivers were used to label PNs at different stages, with VT033006-GAL4 used at 0 hr APF to avoid labeling optic lobe cells, and GH146-GAL4 used at later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C24-C32 describe the experimental design and data collection. The methodology is clearly described with appropriate controls (e.g., using VT033006-GAL4 at 0 hr APF to avoid optic lobe contamination). Quality control metrics are provided (C31, C32), and the approach is supported by figures and prior literature citations. The experimental design is sound and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study decoded the identity of 21 transcriptomic clusters corresponding to 20 PN types at 24 hr APF by sequencing subsets of PNs labeled by specific split-GAL4 lines and using combinatorial marker gene expression. This approach overcame the challenge that PNs lack unique type-specific markers and are instead specified by combinatorial gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C35-C54 describe a systematic approach to decode PN identities using multiple GAL4 drivers and marker genes. The methodology is rigorous, combining transcriptomic clustering with anatomical validation using intersectional genetics. The use of permanent labeling strategies (C46) to reveal transiently expressed drivers is particularly clever. Results are supported by multiple figures showing both transcriptomic and anatomical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C55",
+      "C56"
+    ],
+    "result": "Unbiased clustering using overdispersed genes or ICIM genes separates PNs primarily by developmental stage rather than by PN type, indicating that developmental stage represents the principal source of transcriptomic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C55-C56 are supported by Figure 1F and Figure 3A showing clear separation by developmental stage. This is a robust finding using multiple clustering approaches. The interpretation that developmental stage is the principal source of variation is well-supported by the data and consistent with the biological processes occurring at each stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Neural development-related genes (morphogenesis, cytoskeleton organization) are enriched in developing PNs, while genes related to synaptic transmission, ion transport, and behavior are upregulated in mature PNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by Figure 3C-E and Gene Ontology analysis. The findings are consistent with prior knowledge (citations to Li et al., 2017; Li et al., 2020b) and expected biological processes at different developmental stages. The differential expression patterns make biological sense and are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C70"
+    ],
+    "result": "At 0 hr APF, PNs form two distinct clusters: a larger cluster of both adPNs and lPNs, and a smaller cluster of only adPNs representing embryonically born PNs undergoing pruning. The smaller cluster shows higher expression of pruning-related genes including Sox14, Mical, Cullin1, shrb, and Vps20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C70 are supported by Figure 4B-D and Figure 4\u2014figure supplement 2. The hypothesis that the smaller cluster represents embryonically born PNs (C60) is validated by mapping known embryonically born PN types (DA4l, VA6) to this cluster (C62) and by showing enrichment of known pruning genes (C61). Statistical significance is provided for differential expression (p-values in C61). The biological interpretation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C71"
+    ],
+    "result": "At 24 hr APF, PNs exhibit the highest transcriptomic diversity among all stages, with the highest number of distinct clusters. This peak diversity reflects the circuit assembly stage when PNs refine their dendrites, prepare for ORN axon matching, and establish characteristic lateral horn branching patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66, C71 are supported by Figure 4A, E-G showing quantitative measures of transcriptomic diversity. The biological interpretation (C65-C66) is supported by prior literature (Jefferis et al., 2004) and makes biological sense given the developmental processes occurring at this stage. The quantification methods (cell-level and cluster-level similarity) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C72"
+    ],
+    "result": "Adult PNs form only three clusters representing cholinergic excitatory PNs and two GABAergic inhibitory cell types (vPNs and APL neurons), reflecting reduced transcriptomic diversity after wiring specificity is achieved and grouping primarily by neurotransmitter type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C72 are supported by Figure 4A (bottom) and Figure 4H showing marker expression. The interpretation that reduced diversity reflects functional convergence after wiring (C68) is reasonable speculation based on the data. The clustering by neurotransmitter type is clearly demonstrated and makes biological sense.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Gene sets identified from 24 hr APF PNs, particularly ICIM genes, outperform gene sets from other stages in separating different PN types across all developmental timepoints, indicating that 24 hr APF transcriptomes carry the most type-specific information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by Figure 5A showing superior clustering performance. The finding is consistent with the peaked diversity at 24 hr APF (previous result). While C74 mentions 'data not shown,' the main conclusion is well-supported by the presented data. This is an important methodological finding for the subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Using MARS (meta-learned representations for single-cell data) with 24 hr APF as the starting annotated dataset, approximately 30 cell types were identified at each stage. MARS outperformed HDBSCAN and Leiden clustering methods, particularly for closely related clusters and at stages with lower inherent diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe the application of MARS for cell type identification. The methodology is appropriate and validated against two independent clustering methods (C78). The superior performance of MARS (C79-C80) is demonstrated in Figure 5\u2014figure supplement 1. The use of 24 hr APF as the reference stage is well-justified based on prior results. The approach is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Standard batch correction methods (Harmony, BBKNN, ComBat, Scanorama) failed to reliably match transcriptomes of the same PN types across developmental stages, showing instances of inappropriate splitting and merging of clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 describes the failure of standard batch correction methods. While specific results are not shown in detail, the observation is credible given the large transcriptomic changes across development demonstrated earlier. This negative result motivated the development of alternative matching approaches and is important for understanding the methodological challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "Using kn-GAL4 labeled PNs as a test case, the study successfully matched all kn+ PN types (six adPNs and three vPNs) across three developmental stages (24 hr APF, 48 hr APF, adult) using both automatic (transcriptomic similarity) and manual (marker-based) approaches. The data confirmed decreasing transcriptomic differences between PN types as development proceeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C85-C86 describe the development and validation of matching methods using kn+ PNs. The approach is well-designed with two independent methods that agree with each other (Figure 6G). The finding of decreasing transcriptomic differences (C86) is consistent with earlier results and quantified in Figure 6\u2014figure supplement 1. This provides strong validation of the matching methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C136",
+      "C137",
+      "C143"
+    ],
+    "result": "The study developed and applied two complementary methods (manual marker-based and automatic similarity-based) to match PN types across four developmental stages, successfully matching 18 decoded PN types and seven additional transcriptomic clusters across multiple timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88, C136-C137, C143 describe the matching methodology and results. The dual approach provides mutual validation, with the majority of matches confirmed by both methods (C88, Figure 7C). The methodology is clearly described in Figure 6D and Materials and Methods. The results are presented in Figure 7B-C with appropriate documentation of confidence levels (solid vs. dashed lines).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C15"
+    ],
+    "result": "At early developmental stages (0 hr and 24 hr APF), PN types with adjacent birth order share more similar transcriptomes, reflecting temporal gene expression dynamics of their progenitor neuroblasts. This birth-order-related transcriptomic similarity is statistically significant at early stages but gradually lost as PNs mature. Fifteen genes with temporal gradients in neuroblasts, including the cell-fate regulator Imp, maintain expression patterns in postmitotic PNs at 0 hr APF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C99, C15 describe birth-order-related transcriptomic similarity. The findings are supported by multiple lines of evidence: hierarchical clustering (Figure 8B, Figure 8\u2014figure supplement 1), permutation tests showing statistical significance at 0 hr and 24 hr APF but not later stages (C91-C92, Figure 8C), developmental trajectory analysis (C93, Figure 8D), and analysis of known temporal gradient genes (C96, Figure 8E). The statistical approach is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The similarities between different PN types change across development, with approximately 500 differentially expressed genes identified at 24 hr APF, 48 hr APF, and adult stages, and many more (1393) at 0 hr APF. A core set of 103 genes are differentially expressed throughout all four developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 describe differential gene expression across stages. The findings are supported by Figure 8\u2014figure supplement 1 and Figure 9A. The larger number of DE genes at 0 hr APF (C103) is explained by the distinct transcriptomic signature of embryonically born PNs undergoing pruning, which is consistent with earlier results. The identification of stage-specific and persistent DE genes is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Among genes differentially expressed across all four stages, transcription factors (TFs) and cell surface molecules (CSMs) are over-represented compared to genome-wide fractions. TFs are generally expressed in a binary, lineage-specific fashion, while CSMs exhibit graded expression with complex temporal dynamics. Some genes show differential expression at the protein level but not at the mRNA level, indicating post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C116 describe patterns of TF and CSM expression. The over-representation of TFs and CSMs (C105) is shown in Figure 9B. Expression patterns are documented in Figure 9C-D and supplements. The observation about graded CSM expression (C111) is consistent with findings in the optic lobe (C112, citations provided). The note about post-transcriptional regulation (C115-C116) is an important caveat supported by prior literature (Hong et al., 2012). The analysis is thorough and interpretations are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "More than one-third of differentially expressed genes are shared between 24 hr APF and adult stages, predominantly related to neural development. These shared genes may represent developmentally differentially expressed genes that play roles in maintaining adult nervous system structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 describe overlap in DE genes between developmental and adult stages. The finding is supported by Figure 10A-B showing the Venn diagram and Gene Ontology analysis. The interpretation (C119) is reasonable speculation based on the data, appropriately qualified with 'could play a role.' This provides insight into the relationship between developmental and maintenance gene expression programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Adult-specific differentially expressed genes are enriched for Gene Ontology terms related to physiological properties of PNs, including ion channels and transmembrane receptors (neurotransmitter receptors and GPCRs). These genes may contribute to differences in physiological properties between different adult PN types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 describe adult-specific DE genes. The findings are supported by Figure 10B-C showing Gene Ontology analysis and specific gene examples. The interpretation that these genes 'might lead to differences in physiological properties' (C122) is appropriately qualified speculation based on the gene categories identified. This represents a novel finding about functional diversification in mature neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study generalizes prior findings that transcriptomic differences peak during circuit assembly (24 hr APF) across many PN types. At certain stages, type-specific gene differences can be masked by genes involved in dominant biological processes (e.g., pruning at 0 hr APF), which can lead to underestimation of cell type diversity. This pattern has also been observed in the Drosophila optic lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C133 synthesize findings and place them in broader context. The generalization from prior work (C126-C127, Li et al., 2017) to many PN types (C128-C129) is well-supported by the current data (Figures 4-5). The interpretation about masking of type-specific genes (C130-C131) is a reasonable inference from the data. The comparison to optic lobe (C132, \u00d6zel et al., 2021) strengthens the generalizability. The proposed strategy (C133) is reasonable speculation based on the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript provides background on Drosophila olfactory projection neurons (PNs), describing their organization, lineages, developmental timeline, and prior characterization of their connectivity and physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8, C16-C23 provide established background knowledge about PNs, all supported by appropriate citations to prior literature. These claims set the context for the study and are well-documented in the field. The information is accurate and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C69"
+    ],
+    "result": "The study developed methods to match transcriptomic clusters representing the same PN type across development, revealing that differentially expressed genes at each stage reflect the dominant biological processes occurring at that stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C69 summarize key methodological and conceptual contributions. The matching methods are described in detail in other claim groups and are well-supported. The conclusion that DE genes reflect stage-specific biological processes (C69) is a synthesis of multiple results and is well-supported by the data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "PN transcriptomes reflect unique biological processes at each developmental stage: neurite growth and pruning at early pupal stage, peaked diversity during circuit assembly at mid-pupal stages, and neuronal signaling in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are high-level summary statements of major findings, each supported by detailed results described in other claim groups. These represent the main conclusions of the study and are well-supported by the comprehensive data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C134",
+      "C135",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The Discussion contextualizes findings within the broader field, discusses methodological considerations, and proposes future applications of the dataset and methods. The study provides a rich, well-annotated dataset that can be used to identify candidate molecules for various aspects of PN development and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125, C134-C135, C138-C149 are from the Discussion section. They appropriately contextualize the findings with prior literature (C123, C134, C138), summarize the study's contributions (C141-C143), and propose reasonable future applications (C144-C149). The speculative claims (C139-C140, C144-C149) are appropriately qualified and represent reasonable extensions of the work.",
+    "result_type": "MINOR"
+  }
+]

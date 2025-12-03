@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Smart-seq2 data exhibit coverage biases where transcript coverage decays with distance from the 3' end, varying across technical replicates (plates). These biases affect gene expression quantification and create batch effects that stratify cells by plate rather than biological cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C12 collectively demonstrate coverage biases in Smart-seq2 data through multiple lines of evidence: visual inspection of coverage patterns (C5, C6), observation of plate-specific variation (C7, C10), and differential expression analysis showing 2870 genes with plate-associated differences (C11, C12). The data from both Tabula Muris and BICCN datasets support this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "scQuint's quantification approach, which restricts to alternative introns sharing a common 3' acceptor site, is more robust to coverage biases than other methods including kallisto, DEXSeq, ODEGR-NMF, DESJ, and LeafCutter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 demonstrate that scQuint's approach reduces plate clustering artifacts compared to other methods (C14, C15, C18). The restriction to introns sharing 3' acceptor sites (C16, C17) provides a mechanistic explanation for robustness. Visual evidence in Figure 1 supports these comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Intron-based quantification enables annotation-free discovery of novel alternative splicing events, with up to 30% of cell-type-specific differential splicing events being novel in certain cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 establish both the methodological advantage of intron-based quantification (C19-C21) and provide empirical evidence of novel event discovery (C22). The 30% figure is supported by data in Figure 10a, though the exact percentage may vary by cell type and sequencing depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "scQuint's Variational Autoencoder (VAE) better distinguishes cell types than PCA in the splicing latent space, and scQuint's modifications to LeafCutter's differential splicing model produce well-calibrated p-values with improved computational efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by comparative analyses shown in Figures 3 and Figure 2\u2014figure supplement 2. The VAE shows clearer cell type separation (C25), p-value calibration is demonstrated through QQ plots (C26), and runtime/memory improvements are quantified (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "In simulation studies, scQuint performs comparably to other methods under ideal conditions but substantially outperforms them when transcript coverage decays with distance from the 3' end, while maintaining annotation-free capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by simulation results in Figure 4. The benchmarking covers multiple scenarios (even coverage, unannotated events, coverage decay) with appropriate controls. The simulation parameters (low coverage, high overdispersion) are clearly stated, though the generalizability to all real-world scenarios remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "BICCN Cortex neurons contain more alternative introns than the diverse cell types in Tabula Muris, consistent with known high levels of alternative splicing in the mammalian brain. Cells strongly cluster by cell type in the splicing latent space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by data in Table 1 (39,357 vs 29,965 alternative introns) and Figure 6a. The observation is consistent with prior literature (C33, citation to Yeo et al., 2004), providing external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Multiple genes show differential splicing between neuron classes and subclasses in BICCN Cortex, including Grm5, Shisa9, Pgm2, Rbfox1, and Nrxn1, with several novel events identified. These splicing differences often occur without corresponding expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are supported by data in Figure 6b-e and supplementary figures. Each gene is documented with sashimi plots and PSI distributions. The complementarity of splicing and expression (C36) is demonstrated. Novel events are identified with genomic coordinates and conservation data (C38, C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In Tabula Muris, expression and splicing latent spaces show broadly consistent but distinct clustering patterns. Cell types separate better in expression space while cell classes form more coherent clusters in splicing space, with 6% dendrogram entanglement indicating high similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by UMAP visualizations (Figure 7a) and dendrogram analysis (Figure 7b). The 6% entanglement value (C42) is quantitative and compared to a reference value of 11% (C43). Specific observations about immune cells (C44) and pancreatic cells clustering with neurons (C45) are visible in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "During B cell development in bone marrow, immature B cells show less distinct splicing patterns and fewer differential splicing events. Alternative TSSs in transcription factors Smarca4 and Foxp1 show developmental trajectories independent from gene expression, with Foxp1's alternative TSS progressively included despite non-monotonic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by data in Figure 8. The difficulty distinguishing immature B cells (C47, C48) is shown in Figure 8a-b. Independent trajectories of splicing and expression (C49, C52, C53) are demonstrated in Figure 8c-e. The biological importance of Smarca4 and Foxp1 is supported by citations (C50, C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Epithelial cells show strong PSI differences across tissues while endothelial cells (except brain) show less heterogeneity. A novel alternative TSS in Itpr1 produces a shorter isoform preserving the transmembrane domain, predominant in large intestine secretory cells which express Itpr1 at the highest level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by data in Figure 9a-c and supplementary figures. The contrast between epithelial and endothelial heterogeneity (C54-C56) is consistent across analyses. The Itpr1 novel TSS is documented with sashimi plots and protein structure (C57, C59, C60). The functional uncertainty (C58) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The Khk gene shows complex alternative splicing involving exons 3a and 3c, which encode protein isoforms with different thermostability and substrate affinity. Multiple cell types show both exons predominantly excluded, including large intestine epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by literature citations (Hayward and Bonthron, 1998; Asipu et al., 2003) and data in Figure 9d. The observation of both exons excluded (C63) is novel and challenges the simple mutually exclusive model, though the functional implications remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The intersection between top 100 differentially expressed and top 100 differentially spliced genes is consistently low across tissues, indicating that most differentially spliced genes would be missed by expression-only studies. L5 IT neurons show a higher ratio of differential splicing to differential expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by data in Table 2. The low overlap (2-5 genes) is consistent across multiple tissues. The inference about missed genes (C65) is logical. The L5 IT neuron observation (C66) is quantified with a 0.23 ratio compared to 0.05-0.10 in other cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The cortex shows more cell-type-specific differential splicing events than marrow, with up to 30% involving novel junctions in certain cell types. Most events fall in coding regions with high proportions in 5' UTR, and the cortex shows increased differentially spliced non-coding RNA, mostly unannotated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by data in Figure 10a-c. The cortex vs. marrow comparison (C67) is consistent with prior literature (Yeo et al., 2004). The 30% novel junction proportion (C68) and regional distribution (C69, C70) are quantified, though the authors appropriately note that novel junction proportions may be affected by sequencing depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Cell type classification based only on the splicing latent space achieves high ROC AUC scores across most cell types, suggesting pervasive cell-type-specific differential splicing, with some exceptions like immature B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by data in Figure 10d showing high classification performance. The inference about pervasive differential splicing is reasonable given the high accuracy. The exception of immature B cells is consistent with earlier findings (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A sparse linear regression model recovers known splicing factor regulatory interactions (Khdrbs3 repressing neurexin SS4, Rbfox1 regulating Camta1 and Grin1) and identifies novel regulatory roles for alternative splicing events in the regulators themselves, including a novel TSS in Khdrbs3 and Rbfox1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by data in Figure 11 and multiple literature citations validating known interactions. The model recovers established regulatory relationships (C72, C75, C76) while proposing novel regulatory roles for alternative splicing in the factors themselves (C73, C74, C78). The approach is sound though the novel predictions require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Alternative splicing serves as a complementary rather than redundant component of transcriptional regulation. Despite strong associations with cell identity, splicing-based clustering has not revealed new cell subpopulations invisible in expression space, suggesting expression and splicing provide different projections of the same cell state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 represent high-level interpretations supported by the cumulative evidence of low overlap between differential expression and splicing (C64), independent trajectories (C49), and consistent but distinct clustering patterns (C41). The negative result (C80) is appropriately reported. The interpretation (C81) is reasonable but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "scQuint is not recommended for 10x Genomics Chromium data due to strong 3' bias and evidence that these data detect about half the junctions detected by Smart-seq2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by citation to Wang et al., 2021 and knowledge about 10x Chromium technology. The recommendation is appropriately conservative given the method's design for full-length protocols.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Alternative splicing affects >90% of human pre-mRNAs but has been largely ignored in single-cell studies due to quantification difficulties with short-read technologies. Long-read technologies are improving but remain more costly and lower-throughput.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide background context supported by appropriate citations (Wang et al., 2008; Picelli et al., 2014; multiple citations for long-read technologies). These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Current scRNA-seq technologies face challenges including RNA Velocity distortion by alternative splicing, low transcript capture efficiency introducing noise, incomplete annotations reducing sensitivity, and even advanced methods like Smart-seq3 can only unambiguously assign <40% of reads to single isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 describe technical limitations supported by appropriate citations. These provide context for the study's motivation and are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The analyzed datasets comprise Tabula Muris (44,518 cells, 29,965 alternative introns, 25% unannotated) and BICCN Cortex (6,220 cells, 39,357 alternative introns, 29% unannotated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 provide dataset statistics supported by Table 1 and data accession information. These are straightforward descriptive statistics.",
+    "result_type": "MINOR"
+  }
+]

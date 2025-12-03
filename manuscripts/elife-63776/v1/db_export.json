@@ -1,0 +1,1218 @@
+{
+  "submission": {
+    "id": "f007f77c-154e-4d42-a23b-a33a7f5e4db9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:57:59.940253Z",
+    "updated_at": "2025-12-03T10:57:59.940253Z"
+  },
+  "content": [
+    {
+      "id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "submission_id": "f007f77c-154e-4d42-a23b-a33a7f5e4db9",
+      "content_type": "manuscript",
+      "content_text": "# Intravital deep-tumor single-beam 3-photon, 4-photon, and harmonic microscopy\n\n## Authors\n\n- Gert-Jan Bakker<sup>1</sup> ([ORCID: 0000-0003-3602-0014](https://orcid.org/0000-0003-3602-0014)) \u2020\n- Sarah Weischer<sup>1</sup>\n- J\u00falia Ferrer Ortas<sup>2</sup>\n- Judith Heidelin<sup>3</sup>\n- Volker Andresen<sup>3</sup>\n- Marcus Beutler<sup>4</sup>\n- Emmanuel Beaurepaire<sup>2</sup>\n- Peter Friedl<sup>1</sup> ([ORCID: 0000-0002-0119-4041](https://orcid.org/0000-0002-0119-4041)) \u2020\n\n### Affiliations\n\n1. Department of Cell Biology, Radboud Institute for Molecular Life Sciences, Radboud University Medical Centre Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))\n2. Laboratory for Optics & Biosciences \u00c9cole Polytechnique, CNRS, INSERM Paris France ([ROR:000p29f53](https://ror.org/000p29f53))\n3. LaVision BioTec GmbH, a Miltenyi Biotec company Bielefeld Germany ([ROR:00qhe6a56](https://ror.org/00qhe6a56))\n4. APE Angewandte Physik & Elektronik GmbH Berlin Germany\n5. Cancer Genomics Centre Utrecht Netherlands ([ROR:02y9qjz38](https://ror.org/02y9qjz38))\n6. David H. Koch Center for Applied Genitourinary Cancers, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThree-photon excitation has recently been demonstrated as an effective method to perform intravital microscopy in deep, previously inaccessible regions of the mouse brain. The applicability of 3-photon excitation for deep imaging of other, more heterogeneous tissue types has been much less explored. In this work, we analyze the benefit of high-pulse-energy 1 MHz pulse-repetition-rate infrared excitation near 1300 and 1700 nm for in-depth imaging of tumorous and bone tissue. We show that this excitation regime provides a more than 2-fold increased imaging depth in tumor and bone tissue compared to the illumination conditions commonly used in 2-photon excitation, due to improved excitation confinement and reduced scattering. We also show that simultaneous 3- and 4-photon processes can be effectively induced with a single laser line, enabling the combined detection of blue to far-red fluorescence together with second and third harmonic generation without chromatic aberration, at excitation intensities compatible with live tissue imaging. Finally, we analyze photoperturbation thresholds in this excitation regime and derive setpoints for safe cell imaging. Together, these results indicate that infrared high-pulse-energy low-repetition-rate excitation opens novel perspectives for intravital deep-tissue microscopy of multiple parameters in strongly scattering tissues and organs.\n\n## Introduction\n\nIntravital microscopy enables studies of the physiology and malfunction of live cells in multicellular organisms (Ritsma et al., 2012). Several excitation and detection modalities have been applied for multiparameter three-dimensional (3D) imaging in live tissues, yielding different compromises between imaging depth and resolution. Linear imaging modalities such as confocal microscopy enable a penetration depth less than 100 \u00b5m (Helmchen and Denk, 2005), which restricts their application to low-scattering, thin or surface-specific tissue models, such as the mouse inner ear and chick embryo (Deryugina, 2016; Tomo et al., 2007; Figure 1a, Supplementary file 1a). Taking advantage of reduced scattering and absorption of the excitation light and selective excitation of the focal plane (Helmchen and Denk, 2005; Diaspro et al., 2005), 2-photon (2P) microscopy based on high-frequency near-infrared excitation pulses (80 MHz, ~100\u2013200 fs, 800\u20131300 nm, further referred to as lowIR) provides 100\u2013400 \u00b5m imaging depth in highly scattering tissues, for example, liver (Ritsma et al., 2012) and skin (Andresen et al., 2009), and up to 500\u2013800 \u00b5m in less scattering tissues, such as mouse brain cortex (Helmchen and Denk, 2005).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig1-v1.jpg)\n\n**Figure 1.:** (a) Jablonski diagrams (left) and scaled excitation/emission spectra (right) of 1-, 2-, 3-, and 4P-excited fluorescence and higher harmonic generation. Diagram 1\u20133 (left to right): 1- up to 3P excitation of eGFP with 488 nm continuous, 910 nm lowIR, and 1300 nm highIR, respectively. Diagram 4\u20137: excitation with 1650 nm results in signals of a distinct emission wavelength, including 4P-excited eGFP. S0 and S1, ground level and first-excited electron state, respectively, with vibrational levels (thin lines). Dashed lines, virtual states. Thin\u2013thick upward arrows: low\u2013high photon density required for excitation. Downward arrows: emission. (b) Five-channel 1300 nm excited (left) and six-channel 1650 nm excited (middle and right) images were taken in the center of fluorescent tumors through a dermis imaging window. Images were selected from median-filtered (one-pixel) z-stacks. The excitation wavelength, calculated pulse energy at the sample surface, and imaging depth z are indicated (top). Cell nuclei containing a mixture of mCherry and Hoechst appear as green (right). Details from images left to right: day-10, day-13, and day-14 tumor; 9.2, 4.5, and 4.4 s image acquisition time; 24, 12, and 12 \u00b5s pixel integration time; 0.36, 0.46, and 0.46 \u00b5m pixel size. (c) Zoomed xy-plane with individual channels (left) and orthogonal (xz-) projection (right) from (b), dotted rectangle. (d) Relation between measured emissions and excitation energy reveals the order of the excitation processes. Normalized emission intensity ($S$) as a function of pulse excitation energy ($E$), for TagRFP, SHG, Hoechst, third harmonic generation (THG), and eGFP recorded with an excitation wavelength of 1650 nm. Data was fitted with S(E) = A\u22c5En, with $A$ the proportional factor and $n$ the order of the excitation process (indicated as numbers in the figure). For curve fitting, excitation intensities at the sample surface below the threshold of physical damage (14 nJ) for SHG and THG and up to their saturation limit (7.6 nJ, eGFP; 6.9 nJ, TagRFP and Hoechst) for fluorophores were used. Images were acquired at the same position as panel (a, right), except for the fit line of eGFP, which was retrieved from a different dataset (Figure 1\u2014figure supplement 4). Bars, 25 \u00b5m (b); 12.5 \u00b5m (c). Source data files: Figure 1\u2014source data 1 and Figure 1-source data 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Simplified schematics of the setup. Main stages in the excitation path (boxes right to left) including pump laser, optical parametric amplifier (OPA) or optical parametric oscillator (OPO), and light conditioning elements. A switchable mirror for selecting OPA or OPO excitation (diagonal dotted box), scanhead (diagonal light gray box), autocorrelator with external detector (dotted line), emission path, detectors (PMTs), objective lens, and sample are shown. Light conditioning: pulse compression, attenuation, and beam expansion for overfilling of the objective. (b) OPA excitation path efficiencies at 1300 and 1650 nm: \u03b71, light conditioning; \u03b72, scanhead; \u03b73, objective lens; \u03b74, complete path. (c) Autocorrelation plots of OPA excitation pulses measured under the objective. Pulse lengths were estimated assuming a Sech2 intensity profile. (d) Orthogonal and lateral point spread function images of multicolor fluorescent beads acquired with lowIR and highIR excitations. The order of the excitation process was predicted from the fluorescence absorption and emission spectrum of the bead in comparison to the 2- and 3-photon absorption spectra of other, known fluorophores (Hontani et al., 2021; Drobizhev et al., 2011). Average lateral (Rxy) and axial (Rz) resolution values and errors were derived over 13, 51, 7, and 67 beads, respectively. (e) Epi fluorescence overview image of the tumor, made prior to multiphoton measurements used for Figure 3. Fluorescence: TagRFP and eGFP; contrast: blood vessels. Bar: 1 mm. Source data files: Figure 1\u2014source data 2.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) The relation between Esample surface /Eobjective and z is given by Esample surface /Eobjective (z) = e \u03b1(z \u2013 ct + wd), where \u03b1 is the water absorption at the given wavelength, which was 6.14, 1.32, 1.2, and 0.07 cm\u20131 at 1650, 1300, 1200, and 900 nm, respectively (Qiu et al., 2017; Wang et al., 2016; Nachab\u00e9 et al., 2010). (b) Relative attenuation of excitation light of different wavelengths by water immersion in between the sample and the objective (Esample surface/Eobjective) as a function of imaging depth (z). Maximum imaging depth is indicated for bone, tumor, and brain tissue (dashed lines). Source data files: Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Bar: 5 mm. (a) Brain with coverglass and immersion liquid for multiphoton imaging. Green spot (focused epi-excitation): position of the multiphoton imaging area, above the hippocampus. (b) Orthogonal (yz-) views of THG and fluorescently labeled vessels (AlexaFluor680-dextran) excited with 1650 nm highIR (left) or 1270 nm lowIR (right). Gray profiles indicate pulse energy E at the sample surface as a function of imaging depth z. Left, representative contrast enhanced xy-images at different depths, represented by the dotted horizontal lines in the yz-views. Specifications: 12\u201371 \u00b5s pixel integration time, 2\u201312 s/frame, 0.50 \u00b5m pixel size, 4 \u00b5m z-step size. Detailed imaging settings: Supplementary file 1c. Bar: 25 \u00b5m. (c) Signal-to-noise ratio (SNR) derived from THG intensity line profiles drawn over myelinated neuronal features at different depths (panel (b), yellow lines). (d) Signal attenuation as a function of imaging depth for applied excitation wavelengths. The THG intensities derived from (b) were normalized for representation (see Materials and methods). Effective attenuation lengths le (indicated as numbers) were derived for neocortex and external capsule (EC) layers (black lines). (e) SNR as a function of imaging depth, derived from the image data shown in panel (b). Horizontal dotted line: detection limit (SNR = 3). Vertical dotted lines: SNR-derived depth limit. Source data files: Figure 1\u2014source data 1 and Figure 1\u2014source data 2.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Normalized emission intensity (S)as a function of excitation energy at the sample surface (E), for eGFP, AF680, mCherry, second harmonic generation (SHG), and third harmonic generation (THG), recorded with an excitation wavelength of 1650 nm. Data was fitted with S(E) = A\u22c5E n, with A the proportional factor and n the order of the excitation process. Maximum excitation pulse energy E used for fitting of SHG and THG was below the threshold of physical damage (14 nJ) and up to the saturation limit for fluorophores (7.6 nJ, eGFP; 6.9 nJ, AF680 and mCherry). AF680, mCherry, SHG, and THG were acquired during the measurement described in Figure 1c. For eGFP, S(E) was derived from 30 images, retrieved from live imaging of human fibrosarcoma spheroids in rattail collagen. Source data files: Figure 1\u2014source data 1, Figure 1\u2014source data 2, Source data 1 and Source data 2.\n\nWith increasing imaging depth in tissue, 2P imaging requires to increase the excitation power in order to compensate for tissue-induced light scattering, absorption and aberrations, to maintain a constant intensity at the plane of focus. However, the required exponential increase in excitation power may provoke light-induced tissue damage (D\u00e9barre et al., 2014). Heating caused by linear absorption can be minimized by redistributing the excitation power into a reduced number of pulses per second and a higher energy per pulse (further referred to as highIR), which enhances the excitation efficiency per pulse. For example, reducing the pulse repetition rate from 80 to 1 MHz while increasing the pulse energy is an effective means to reach larger depths (Beaurepaire et al., 2001; Theer et al., 2003), albeit at the cost of reduced imaging speed, because 80 times less excitation events per second are introduced into the sample. Ultimately, 2P imaging depth in densely labeled fluorescent samples is limited by out-of-focus background produced in superficial regions, which at large depths becomes dominant over the signal produced in the focus (Helmchen and Denk, 2005; Theer and Denk, 2006).\n\nTo reduce these confounding effects, shifting the excitation wavelength to the infrared optical windows at ~1300 or 1650\u20131700 nm was shown to reduce light scattering and, by 3-photon (3P) excitation, improve confinement of the scan focus and thereby reduce out-of-focus background signal (Xu et al., 1996; Hell et al., 1996). This approach is compatible with commonly used fluorophores (Deng et al., 2019; Hontani et al., 2021), and was demonstrated to increase penetration in densely labeled brain tissue by 50\u2013100%, reaching imaging depths beyond 1 mm in the brain of live mice (Horton et al., 2013; Ouzounov et al., 2017; Yildirim et al., 2019; Weisenburger et al., 2019).\n\nIn fundamental and preclinical cancer research, intravital microscopy is an important strategy to record dynamic processes of the tumor microenvironment, including tumor cell invasion, metastasis, and interactions with the tumor stroma. Intravital microscopy of the tumor microenvironment faces several tissue-intrinsic challenges. Tumors are dense, opaque, three-dimensional objects with a size of millimeters to centimeters, which causes strong light scattering (Andresen et al., 2009). In addition, analysis of the tumor microenvironment requires to detect multiple cell types, their morphology and activation states simultaneously, and tissue structures over time through a body window (Weigelin et al., 2021). HighIR combined with 3P microscopy enables the label-free detection of metabolites, tissue morphology, and leukocyte migration in mammary tumor microenvironment in vivo (You et al., 2018b). However, the relevance of 3P intravital microscopy for multiparametric detection of tumors expressing fluorescent reporters, as used in preclinical cancer research, and detection of tumor cells deeply inside the tumor has not been explored. We here apply 1300 and 1650\u20131700 nm highIR excitation to achieve 3- and 4P and higher harmonics microscopy of live fluorescent tumors in mice and other strongly scattering tissues, such as bone. We report improved multiparameter detection of cells and complex tissues, a 2-fold gain of penetration depth at non-toxic laser intensities, and established criteria to minimize photodamage that enable long-term time-lapse imaging of live-cell biology.\n\n## Results and discussion\n\n### 3P excitation setup characterization\n\nIn contrast to the well-established 2P microscopy lowIR excitation regime (100\u2013200 fs pulses with sub-nJ energy density at the focus), efficient 3P microscopy requires shorter (sub-100 fs) pulses at the focus with ~5\u201310 times higher energy (K\u00f6nig et al., 1999) (highIR excitation) to generate comparable excitation of fluorophores (Xu et al., 1996; Wang and Xu, 2020; Supplementary file 1a, Figure 1a). To keep the average power and associated sample heating at an acceptable level, 3P microscopy applies lower pulse repetition rates (1\u20132 MHz) compared to pulse repetition rates commonly used for 2P microscopy (80 MHz) (Beaurepaire et al., 2001; Theer et al., 2003). The source used in this study consisted of a fiber laser pumping an optical parametric amplifier (OPA) providing 1 MHz, sub-100 fs pulses at 1300 or 1650 nm wavelengths. Excitation was focused with a high-NA objective, resulting in a resolution better than 0.8 \u00b5m in the lateral and 3 \u00b5m in the axial dimension (Figure 1\u2014figure supplement 1). Physiological saline was used as immersion medium for high compatibility with the tissue and observation window. Since part of the excitation pulse energy (Eobj) was absorbed by the immersion medium, we calculated the pulse energy at the sample surface (E) as a reference for each experiment (Figure 1\u2014figure supplement 2). We compared highIR excitation at 1300 and 1650 nm with lowIR excitation in the range 1100\u20131300 nm, the current standard for in-depth multiphoton imaging (Andresen et al., 2009). Using the mouse brain as a reference (Horton et al., 2013; Weisenburger et al., 2019), we confirmed that 1650 nm highIR excitation enables to resolve structural details with third harmonic generation (THG) contrast at depths encompassing the entire cortex (>1 mm), which outperforms the imaging depth obtained with 1270 nm lowIR excitation by almost a factor of two (Figure 1\u2014figure supplement 3b,c). Since both high- and lowIR excitation measurements were using a 3P process to generate contrast, the superior performance with highIR excitation can be attributed to the enhanced excitation efficiency rather than to reduced out-of-focus background. We calculated the effective attenuation length (le), which is the mean distance travelled by light before being scattered or absorbed by the tissue (Wang et al., 2018b). In the neocortex, le was 336 \u00b5m for 1650 nm excitation and 280 \u00b5m for 1280 nm excitation (Figure 1\u2014figure supplement 3d), in agreement with previous work (Horton et al., 2013; Wang et al., 2018b).\n\n### Simultaneous multicolor 3P, 4P, and harmonic generation microscopy with a single excitation beam\n\nWhen applied to multicolor-labeled HT-1080 sarcoma tumors in the deep dermis, excitation with 1300 or 1650 nm highIR pulses produced simultaneous distinct signals from fluorescent proteins (eGFP, TagRFP, mCherry), a far-red vascular tracer (AlexaFluor680-conjugated 70-kD-dextran) and blue fluorescence (Hoechst 33342), together with second harmonic generation (SHG) and THG signals (Figure 1b\u2013c, Figure 1\u2014video 1). To understand the nonlinear processes underlying this unusually broad spectrum of fluorophores excited with a single laser line, we investigated the order of the excitation process for each signal (Figure 1a). We recorded the emission intensity in response to increasing excitation energy E and estimated the order of dependence between emission intensity and E by fitting the data to a power law (Figure 1d, Figure 1\u2014figure supplement 4 and Supplementary file 1b). As internal controls, SHG and THG signals were used as reference for second- and third-order processes (Cheng et al., 2014). When excited at 1650 nm, the red fluorophores TagRFP, mCherry, and AF680 followed a cubic dependence on excitation power, while green and blue fluorophores eGFP and Hoechst followed a quartic dependence, consistent with respective third- and fourth-order processes (Cheng et al., 2014). This shows that 3- and 4-photon-excited fluorescence (3PEF, 4PEF) along with multi-harmonic SHG and THG signals were obtained simultaneously using 1650 nm excitation, resulting in six-channel images in a single scan (Figure 1b). Although independent control of each respective signal strength is not possible, a key advantage of this one-shot excitation scheme is that it is free of chromatic aberration, a common problem in multi-beam imaging (Theer et al., 2014).\n\n### Characterization of phototoxicity and bleaching\n\nThe high pulse energy required for efficient highIR excitation is a double-edged sword. Although it enables multi-modal excitation as seen above, pulsed light can induce nonlinear and linear perturbations. First, the energy density within the beam focus, which causes nonlinear interactions between a strong electric field and matter, may induce physical damage by ionization (Konig et al., 1997), toxic reactive oxygen species, and photobleaching (D\u00e9barre et al., 2014; Tirlapur et al., 2001). This focused energy may further cause local transient heating of the focal volume during the excitation pulse, caused by water absorption (Qiu et al., 2017). This type of phototoxicity is dependent on the pulse energy (nJ) at the focal plane. Second, phototoxicity may arise from linear absorption of light above and below the focal plane, which may cause accumulation of heat in a larger tissue volume (D\u00e9barre et al., 2014; Podgorski and Ranganathan, 2016; Wang et al., 2018a; Rowlands et al., 2017). Sample heating is proportional to the average power of the incident excitation beam. Previous studies have investigated phototoxicity mechanisms with 1300 nm highIR excitation in the brain, and have established safety thresholds for 3P imaging of neuronal activity in this wavelength range (Ouzounov et al., 2017; Yildirim et al., 2019; Wang et al., 2020). In this work, we investigated the mechanisms and onset of photoperturbation with 1700 nm highIR excitation in tumor models in vitro (tumoroids), and with 1300 and 1700 nm highIR excitation in mouse dermis tumors in vivo and achieved safe live-cell imaging conditions.\n\nAs a readout for cell stress, we continuously recorded the intracellular Ca2+ responses of live tumor cells expressing a Ca2+ sensor GCaMP6 (Chen et al., 2013) in combination with the cell-death indicator Sytox Green (Figure 2a). GCaMP6 fluorescence was monitored using lowIR 2P excitation (920 nm, 80 MHz) in parallel to 1700 nm highIR exposure (see Materials and methods). Intracellular Ca2+ responses represent a sensitive readout for non-lethal cell stress, caused by opening of calcium channels as well as by transient membrane damage caused by reactive oxygen species and other cytotoxic events (Hopt and Neher, 2001; Iwanaga et al., 2006). In a collagen-based 3D phantom containing a reconstituted cell-rich tumoroid, spontaneous reversible Ca2+ fluctuations and few Sytox-positive damaged cells were detected before highIR exposure (Figure 2b, frame #70). As a positive control, intermittent highIR scanning at toxic intensity (17 nJ) caused rapid-onset Ca2+ elevation in cell subsets followed by gradual increase of the Sytox signal (Figure 2b, frames #102\u2013201). High exposure was further confirmed by significant photobleaching of mCherry emission from cell nuclei (Figure 2b, arrowheads). After termination of toxic highIR exposure, the Ca2+ elevation persisted, and an increasing number of cells became Sytox-positive (Figure 2b, frame #425). To study the toxicity of highIR exposure in detail, Sytox-positive and -negative cells at the endpoint (frame #425) were grouped and the kinetics of Ca2+ and Sytox responses of both subsets were quantified (Figure 2c and Figure 2\u2014figure supplement 1a). The Sytox-negative, surviving cells showed a transient Ca2+ elevation which declined to half of the maximum amplitude after cessation of highIR exposure, whereas Sytox-positive cells showed an accelerated and transient Ca2+ elevation upon onset of highIR exposure in combination with delayed nuclear Sytox increment (Figure 2c). In Sytox-positive cells, the GCaMP6 signal level eventually declined to its initial level before highIR exposure, likely as a consequence of persisting membrane damage with leakage of GCaMP6 in parallel to Sytox entry. At the single-cell level, Ca2+ elevation was nearly instantaneous with the onset of laser exposure in Sytox-positive cells, followed by Sytox elevation thereafter with a large spread of the onset time (Figure 2\u2014figure supplement 1b). Thus, the Ca2+ signal reliably indicated phototoxic stress, prior to detection of cell death by Sytox and even in cells which remained viable at the experimental endpoint.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig2-v1.jpg)\n\n**Figure 2.:** (a) Experimental approach for cell viability detection in vitro. B16F10/GCaMP6/H2B.mCherry (Chen et al., 2013) melanoma tumoroid embedded in 3D collagen was monitored through a coverglass. Sytox Green was supplemented to the medium. Both GCaMP and Sytox signals were continuously monitored (3.3 s/frame, 6 \u00b5s pixel integration time) at ~40 \u00b5m penetration depth using low pulse-energy excitation (920 nm). During part of the measurement, the sample was simultaneously exposed to 1700 nm highIR excitation, approximately at the same focal plane (I). ( b) Representative frames from continuous scanning with the indicated excitation pulse energy and detection of emitted signals. Details from dotted squares: (1) spontaneous reversible Ca2+ activity (green); (2) highIR-excited fading mCherry signal from the nuclei (red); (3) strong highIR-induced Ca2+ response in the majority of the cells and bleached, decreasing mCherry signal; and (4) Sytox-positive nucleus (yellow). (c) Intensity curves of Sytox (black, left y-axis) and GCaMP (turquoise, right y-axis) signals in cells developing Sytox-positive nuclei (solid lines) or not (dashed lines), classified at the endpoint by eye (frame #425). Data show the mean intensity of single-cell intensities. For technical details, see Figure 2\u2014figure supplement 1a and b. (d) Predictive power of GCaMP positivity for photodamage. The highIR-induced percentage of GCaMP-positive cells was quantified over time for moderate- (\u22648.4 nJ; ~1220 cells from n = 4 measurements) and high-exposure (12 nJ; ~720 cells from n = 4 measurements) conditions. *, p = 0.03, Mann-Whitney test. Data indicate the median (line), 25/75 percentile (box) and 5/95 percentile (whiskers). (e) Spatial restriction of GCaMP and Sytox positivity to excitation plane (I). A z-stack of 80 \u00b5m depth (5 \u00b5m step size) was taken 15 min after the endpoint of highIR exposure shown in (b). Above: xy-image at the highIR exposure plane I. Below: xz-sideview positioned at the line in the xy-image. Line in sideview: excitation plane I. (f) Detection of phototoxicity of highIR in vivo. Intradermal tumor imaged after 6 (1650 nm) or 11 days (1300 nm) of growth. GCaMP signal was continuously monitored (~1.5 s/frame, 6 \u00b5s pixel integration time) in an ~50 \u00b5m deep focal plane using lowIR excitation (910 nm). The sample was simultaneously exposed to highIR excitation at the same focal plane. (g) Ca2+ signaling in individual cells. Representative frames from the 1300 nm highIR exposure time-series at pulse energies at the sample surface below (2.8 nJ), or above (3.9 nJ) the toxicity threshold. Asterisk, spontaneous, reversible Ca2+ signal in single cell, as seen in ~10 of 83 cells in the field of view. Arrowhead, persistent Ca2+ signal starting at frame #2, as seen in 8 of 74 cells. Double arrowheads, multiple cells developing increasing Ca2+ signal, present in 45 of 74 cells. Closed arrowheads, burning marks. The frame number is indicated. (h, i) Ca2+ signal as a function of time for increasing highIR pulse energies at the sample surface, recorded with an excitation wavelength of 1300 nm (h) or 1650 nm (i). Single and double arrowheads: steep and gradual Ca2+ rise, respectively, related to cell populations as described in (g). Emission signal was retrieved after averaging over the image area, background subtraction and normalization to the first highIR-excited frame (#1, 1300 nm and #50, 1650 nm, dotted lines). The number of cells per field is indicated. Bars: 50 \u00b5m, 10 \u00b5m (details). Source data files: Figure 2\u2014source data 1 and Figure 2-source data 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Image area with Sytox-positive cells selected for manual tracking. Individual Sytox-positive cells determined by visual inspection at the endpoint (frame #425; Figure 2b) were tracked manually to obtain intensity-time traces from the nucleus (combination of Sytox and GCaMP) and cytosol (GCaMP). The nucleus signal was divided by the cytosol signal to obtain ratiometric Sytox intensity-time traces. (b) Typical single-cell Ca2+ (GCaMP) and Sytox responses upon highIR exposure with a strongly toxic pulse energy (17 nJ). Horizontal dotted lines: thresholds to define the moment of onset from which cells are classified as Sytox-positive (red star) or GCaMP-positive (black star) (p = 0.001, one-tailed z-test). Green star: spontaneous reversible Ca2+ fluctuations. Vertical dotted lines: highIR exposure window. (c) Experimental approach to study the spatial and temporal dependency of highIR-induced responses of cell viability reporters. Image quantification was performed within the red marked region of interest on the tumoroid (ROI), where the highIR exposure focal depth in the tumoroid was 40\u00b110 \u00b5m (left). Z-stacks of 80 \u00b5m depth and 5 \u00b5m step size were recorded before and 15 min after the endpoint of highIR exposure, at the same position as the time-lapse recordings (right). Dotted lines: highIR exposure and time-lapse recording focal plane (I); 20 \u00b5m higher highIR exposure out-of-focus plane (O). ( d) Spatial restriction of highIR-induced GCaMP positivity to cells in plane I (as defined in c). Xy-images at plane I (above) and xz-sideviews (below) from stacks taken before (left) and after highIR exposure (right). Xz-sideviews were taken at the position of the dotted line in the xy-image. Lines in sideview: planes I and O (as defined in c). ROI: according to definition in (c). (e) HighIR-induced Sytox (left) and GCaMP (right) responses show spatial restriction and highIR-energy dependence. The highIR-induced fractions of positive cells as a function of imaging depth were quantified from z-stacks before (except for 17 nJ measurement) and after highIR exposure within the ROI as defined in (c). Vertical dotted lines: imaging planes O and I (as defined in c). (f) Comparison of GCaMP responses at imaging planes I and O shown in (e) indicate spatial restriction of highIR-induced GCaMP positivity to the highIR focal plane (~1600 cells from n = 4 paired measurements at both planes, 12\u201317 nJ highIR exposure). \u2020, p = 0.05, Wilcoxon signed rank test. Data indicate the median (line), 25/75 percentile (box), and 5/95 percentile (whiskers). Source data files: Figure 2\u2014source data 1 and Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Stasis of blood flow in tumor vessels upon 2.5 min of continuous highIR imaging above the functional toxicity threshold. Arrowheads left (0 min): flowing erythrocytes in vessels (third harmonic generation [THG], stripes and diagonal features), blood vessel labeling (AF680). Arrowheads right (2.5 min): arrested or absent erythrocytes in vessels (THG, round features), blood vessel labeling disappeared. First signs of stasis were observed after 51 or 42 s (respectively 1300 or 1650 nm, not shown). Specifications: 2 \u00b5s pixel integration time, 0.82 \u00b5m pixel size, 0.182 s/frame. Fibrosarcoma after 10 days of growth (upper images), melanoma after 6 days of growth (lower images). Bar: 25 \u00b5m. (b) Bleaching curves of H2B-eGFP (above, 1300 nm excitation) and H2B-mCherry (below, 1650 nm excitation), retrieved from 3D live-cell imaging of human fibrosarcoma spheroids in rattail collagen. Specifications: 0.53 \u00b5m pixel size, 5 \u00b5m z-step size, 6 \u00b5s pixel integration time, 2.3 s per frame, and 1 min per stack (11\u201316 images). Bar: 25 \u00b5m. Source data files: Figure 2\u2014source data 1 and Figure 2\u2014source data 2.\n\nUsing both GCaMP6 and Sytox recording, we then aimed to identify the highIR conditions tolerated by live tumor cells upon consecutive scanning, using a highIR energy escalation approach followed by quantification of the highIR-induced Ca2+ responding (GCaMP+) cell fraction for each condition (See Materials and methods section for further details). For moderate highIR pulse energies, comprising pooled datasets from 5.0 and 8.4 nJ, the median percentage of cells with elevated Ca2+ was 0.7%, whereas at 12 nJ this fraction was 10-fold increased (Figure 2d). Thus, a threshold for excitation energy in the focus of up to 8.4 nJ at the sample surface allows for safe time-lapse imaging inside the tissue, when focusing at least 40 \u00b5m deep inside the sample.\n\nTo account for linear phototoxicity outside of the highIR focal plane, depth stacks were obtained before and after time-lapse measurements at low-to-high highIR exposure dose (5.0\u201317 nJ). Both Ca2+ and Sytox signals were spatially restricted within the highIR excitation plane, without effects in regions above and below (Figure 2e and Figure 2\u2014figure supplement 1c-f). This result shows that continuous scanning with 1700 nm highIR excitation power of 17 mW (17 nJ \u00d7 1 MHz) at the sample surface can be used without causing linear phototoxicity.\n\nTo verify the setpoint for phototoxicity for intravital microscopy, we exposed mouse dermis tumors to 1300 and 1650 nm highIR excitation and monitored their cellular Ca2+ responses (Figure 2f). During continuous highIR exposure for energies at the sample surface below or equal to 2.8 nJ (1300 nm) or 8.7 nJ (1650 nm), the Ca2+ signal retained background activity, with occasional spontaneous Ca2+ fluctuations (Figure 2g, asterisk; Figure 2\u2014videos 1; 2). Higher excitation energies (3.9 nJ for 1300 nm, 12 nJ for 1650 nm) induced Ca2+ elevation in cell subsets (Figure 2g and Figure 2\u2014videos 1; 2, arrowheads). These Ca2+ responses differed from the background fluctuations by their steep or gradual increase of signal (Figure 2h and i, arrowheads). Moreover, at prolonged exposure above the observed thresholds, Ca2+ signal induction preceded the onset of burning marks (Figure 2g and Figure 2\u2014video 1 , Figure 2\u2014video 2, closed arrowheads) or intravascular blood stasis (Figure 2\u2014figure supplement 2a). Furthermore, to avoid thermal damage induced by heating, we applied average power levels at the sample surface of at most 38 mW (38 nJ times 1 MHz) under live-cell and in vivo conditions, which in the brain suffices to limit tissue heating below ~1.8\u00b0C (Podgorski and Ranganathan, 2016; Rowlands et al., 2017). Thus, we established a limit for power densities to be used for multimodal excitation in tumors to remain below functional phototoxicity levels and showed that higher doses induce different grades of damage (Iwanaga et al., 2006; Koester et al., 1999).\n\nTo quantify photobleaching, repeated 3D scanning was performed over 60\u201375 min (one 3D scan/min), using highIR exposure within the toxic (3.5 nJ, 1300 nm; 12 nJ, 1650 nm) or nontoxic range. Within the toxic range, eGFP intensity declined by 25% after 25 scans (1300 nm) and mCherry intensity declined by 25% after two scans (1650 nm) (Figure 2\u2014figure supplement 2b). Within the non-toxic range, mCherry intensity decreased by 10\u201320% after 50 scans, while 3P-excited eGFP signal remained stable. This level of photobleaching may limit applicability for imaging with sub-second frame rates, as required for Ca2+ monitoring in the brain (Weisenburger et al., 2019), but remains acceptable for monitoring with lower frame rates, in the minute-range up to days, and for large-volume scanning, which are relevant imaging regimes for monitoring tumor cell kinetics and therapy response in tumor models (Haeger et al., 2020; Khalil et al., 2020).\n\n### Deep-tumor multiparameter microscopy with highIR excitation\n\nWe next investigated whether highIR excitation at 1300 and 1650 nm provides an advantage for imaging deep-tumors regions, with respect to conventional lowIR excitation at 1180 nm using a titanium sapphire/optical parametric oscillator (Ti:Sa/OPO) combination (Figure 3). To achieve arbitrarily constant emission with increasing imaging depth, we manually increased the excitation energy E using eGFP (for 1300 nm) and TagRFP (1180 and 1650 nm) as a reference, while remaining below the phototoxicity thresholds as defined above (Figure 3a, gray profiles). 3P and 4P highIR excitation resolved subcellular features of eGFP and TagRFP labeled cells at depths beyond 400 \u00b5m, as compared to 225 \u00b5m for OPO-generated 2P lowIR excitation (Figure 3a). Multiparameter recordings were reliably obtained at a depth of 350 \u00b5m inside the tumor using 1300 and 1650 nm highIR excitation, but not with the 1180 nm lowIR source (Figure 3b). To investigate the imaging depth limit for the different modalities, we first quantified the signal-to-noise ratio (SNR) of fluorescent features as a function of imaging depth. While the SNR remained above the detection limit (SNR \u22653) until a depth of only ~255 \u00b5m using the 2P lowIR excitation regime, the 3P highIR excitation regime enabled us to reach depths of ~395 \u00b5m (1650 nm) or ~415 \u00b5m (1300 nm) (Figure 3c), corresponding to a nearly 2-fold increase as compared to lowIR. The limits of deep-tissue microscopy also depend on resolution, which is affected by scattering and aberration of the incident excitation beam (Cheng et al., 2020). We thus evaluated how the axial resolution depends on imaging depth and excitation process. For 3PE and 4PE processes, resolution remained higher with increasing imaging depth as compared to the resolution achieved by 2PE, which declined steeply beyond 125 \u00b5m (Figure 3d). Thus, 3PE and 4PE modalities provide improved resolution in strongly scattering tissues compared to 2PE, which may be explained by the superior spatial confinement of the 3P or 4P excitation processes (Xu et al., 1996; Hell et al., 1996). In addition, light scattering and aberration may affect the quality of the focus and, thereby, resolution in a wavelength-dependent manner (Cheng et al., 2020). To address the attenuation of 3PE with increasing tissue penetration in tumors, we measured the fluorescence intensity as a function of increasing imaging depth and derived the effective attenuation length le (Figure 3e). le remained constant over hundreds of micrometers, indicating that the tumor composition was homogenous over this depth range. When red-shifting the excitation wavelength from 1180 to 1300 or 1650 nm, le increased from 103 to 128 or 220 \u00b5m, respectively. Thus, compared to lowIR excitation, the gain in resolution and SNR in deep-tissue zones with highIR excitation can be attributed to several effects, including: (i) improved localization of the multiphoton effect in the focus region (Theer and Denk, 2006; Xu et al., 1996), (ii) increased le in the 1300 and 1700 nm spectral excitation windows (Horton et al., 2013; Wang et al., 2018b; Wang et al., 2018a), and (iii) improved excitation efficiency as a consequence of increased pulse-energy and low laser repetition rate (Beaurepaire et al., 2001; Theer et al., 2003). Through these combined effects, highIR excitation increases the imaging depth by 2-fold compared to lowIR excitation using OPO-based sources and by 4-fold compared to lowIR excitation in the 800\u2013900 nm range (Andresen et al., 2009).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig3-v1.jpg)\n\n**Figure 3.:** After 15 days growth, an intradermal HT-1080 sarcoma tumor expressing eGFP and TagRFP was repetitively imaged with highIR and lowIR excitation to compare tissue penetration of the respective excitation modalities. (a) Orthogonal (yz-) views of fluorescent tumor excited at 1650 nm (3PE and 4PE), 1300 nm (3PE), and 1180 nm (2PE). Z-stacks were recorded with increasing excitation pulse energy E at the sample surface with increasing imaging depth z (gray profiles right from orthogonal views). Left, representative (contrast enhanced xy-) images at different depths, represented by the dotted horizontal lines in the yz-views. Details from images: 2.2 s frame time, 20 \u00b5s pixel integration time. Numbers: depth in \u00b5m. Bar: 25 \u00b5m. (b) HighIR excitation enables simultaneous multiparameter microscopy up to 350 \u00b5m depth, in contrast to lowIR multiparameter microscopy. Images were processed (median filtered, 1 pixel). Bar: 25 \u00b5m. (c) Signal-to-noise ratio (SNR) of highIR- versus lowIR-excited fluorescent signals as a function of imaging depth, derived from the images shown in (a). Horizontal dotted line: detection limit (SNR = 3). (d) Axial resolution of the fluorescence signals derived for three depth ranges of the images in panel (a). The steepness of the transition between the normalized intensity of a fluorescent feature and its nonfluorescent surrounding along the z-direction ((\u03b4I/\u03b4z)max) was taken as a measure for resolution. For each depth range, the median and standard deviation were calculated over 11\u201317 fluorescent features per channel. (e) Attenuation of fluorescence signals for applied excitation wavelengths. The 3P-excited fluorescence intensities derived from (a) were normalized to the cubic of the calculated laser power at the sample surface and to the order of the excitation process to obtain normalized signal S, and plotted as a function of imaging depth (see Materials and methods). For 3PE, the effective attenuation length le of the tissue was defined as the depth at which fluorescence intensities attenuate by 1/e3, where e is Euler\u2019s number (Wang et al., 2018b). le (indicated as numbers) were derived from single exponential decay functions (black lines) fitted to the normalized data. Source data files: Figure 3\u2014source data 1 and Figure 3\u2014source data 2.\n\n### Improved THG imaging depth of highIR over lowIR in soft and dense tissue models\n\nLastly, we compared lowIR and highIR excitation for THG microscopy in tissues with various scattering properties: tumor, bone, and brain. In the tumor, highIR-excited THG resolved extracellular and cellular details (arrowheads) at depths beyond 400 \u00b5m, while lowIR resolved primarily extracellular details until a depth of ~150 \u00b5m (Figure 4a). SNR analysis showed a maximum imaging depth of >400 \u00b5m for highIR and <100 \u00b5m for lowIR (Figure 4b). Imaging depth limits of THG microscopy with lowIR excitation results from the lower photon density in the focus, leading to a drastically lower excitation efficiency, in combination with the rapid attenuation of nonlinear signals upon scattering and absorption of excitation light (Beaurepaire et al., 2001; Theer et al., 2003). In contrast, THG by highIR excitation, which creates a multifold higher photon density in the focus, is achieved with only a small fraction of the available power at the tissue surface, which allows to increase the excitation energy at the sample surface with imaging depth further, to maintain a constant signal over a much broader depth range. Interestingly, different details were accentuated in THG images recorded with different excitation regimes. For example, THG by small collagen fibers under non-scattering conditions was best with excitation at 1180 nm, whereas THG by tumor cell nuclei was strongest at 1300 nm excitation (Figure 4a, arrowheads). The wavelength-dependent size of the focal volume relative to THG-generating cell and tissue structures is a possible explanation for these differences (D\u00e9barre et al., 2006). Bone is a strongly light-scattering tissue, yet thin cortical bone such as the mouse skull is amenable to highIR excitation (Wang et al., 2018a; Wang et al., 2019). To address whether thick bone can be effectively penetrated by highIR, we performed THG microscopy in an excised ossicle, which is an ectopic bone induced by a tissue engineering approach in the mouse (Dondossola et al., 2018). Subcellular structures were reliably resolved by highIR excitation beyond 220 \u00b5m depth, including osteocyte lacunae and canaliculi in the cortical bone layer and trabeculae in the bone marrow (Figure 4c; yz-projections and arrowheads). At comparable pulse energies and near the surface (<105 \u00b5m, 1300 versus 1270 nm), a superior SNR was obtained with lowIR excitation, taking advantage of the 80 times higher repetition rate and thus increased emission photon flux (Figure 4d). Beyond 150 \u00b5m depth, lowIR excitation reached its maximum available power, while highIR excitation power could be further increased to maintain a constant SNR. Thus, as a consequence of the improved excitation efficiency of highIR excitation, superior SNR beyond 165 \u00b5m scan depths was obtained compared to lowIR (Figure 4d, dotted lines). In addition, 1650 nm highIR excitation resulted in both increased effective attenuation length le and larger imaging depth compared to 1270 nm lowIR excitation (Figure 4e). Thus, consistent with previous reports in thin bone samples (Wang et al., 2019), highIR excitation improves deep-tissue bone microscopy and imaging depth is doubled when using 1300 or 1650 nm highIR excitation compared to 1270 nm lowIR excitation. We finally investigated the imaging depth limit in the mouse brain (Figure 1\u2014figure supplement 3b). The SNR remained above the detection limit up to 928 \u00b5m depth for 1650 nm highIR, and up to 444 \u00b5m for 1270 nm lowIR excitation (Figure 1\u2014figure supplement 3e, dotted lines). HighIR imaging depth was ultimately limited by the dense external capsule with short le, which was not reached with lowIR THG imaging (Figure 1\u2014figure supplement 3b, d, and e).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig4-v1.jpg)\n\n**Figure 4.:** (a) THG microscopy in the tumor. THG images were registered simultaneously with the modalities presented in Figure 3a. The xy-images represent the intersections in the yz-images (dotted lines). Arrowheads: collagen fibers (top xy-images), tumor cell nuclei (1300 nm xy-images). Numbers: depth in \u00b5m. Bar: 25 \u00b5m. (b) Signal-to-noise ratio (SNR) as a function of imaging depth, derived from the data shown in panel (a). Horizontal dotted line: detection limit (SNR = 3). Vertical dotted lines: SNR-derived depth limit. (c) THG microscopy of ex vivo bone scaffold. Arrowheads: canaliculi (105 \u00b5m), channels (165 \u00b5m), and sheets of trabecular bone (220 \u00b5m). Excitation pulse energy, increasing from sample surface with imaging depth to the maximum: 4.6\u201332 nJ (left, 1650 nm highIR), 1.3\u201330 nJ (middle, 1300 nm highIR), and 1.1\u20131.9 nJ (right, 1270 nm lowIR). Details from images: 2.3 s frame time, 6 \u00b5s pixel integration time, 5 \u00b5m z-step size. Bars: 25 \u00b5m. (d) SNR as a function of imaging depth, derived from the image data shown in panel (c). Horizontal dotted line: detection limit (SNR = 3). Vertical dotted lines: SNR-derived depth limit. (e) Attenuation of THG signals from the bone as a function of imaging depth. The signals derived from (c) were normalized (see Materials and methods) and effective attenuation lengths le (indicated as numbers) were derived for cortical and trabecular bone layers (black lines). Source data files: Figure 4\u2014source data 1 and Figure 4\u2014source data 2.\n\nWhen comparing the applicability of highIR for deep imaging, the depth gain for THG imaging was at least 2-fold compared to lowIR excitation and irrespective of tissue type and density, including brain, tumor, and bone (Figure 5a). We experienced stable imaging conditions by carefully increasing the excitation energy with increasing tissue penetration until the maximum energy was reached, followed by rapid deterioration of the signal. For tissues with higher scattering properties (smaller le), such as bone and cell-rich tumors, the excitation energy E needed to be increased faster with imaging depth, so that the average excitation power reached its maximum value at shallower imaging depths. For 1300 nm highIR excitation in tumor, we used maximum average powers (33 nJ at 1 MHz = 33 mW, Figure 3a) well below the reported limits for tissue heating (150 mW) (Wang et al., 2018a; Rowlands et al., 2017), and therefore the imaging depth can be extended further for this modality. However, additional experiments and simulations defining linear phototoxicity limits need to be performed for the 1700 nm excitation range. It remains to be established to what extend the maximum tolerable power depends on differences in water absorption at 1700 nm compared to 1300 nm (Horton et al., 2013; Cheng et al., 2014). Tissue heating may be reduced and imaging depth increased by reducing the imaging frame rate, which allows the tissue to cool down between images or lines, or by reducing the frequency of excitation pulses. This is possible when the biological process of interest can be monitored with lower frame rates or image resolution. For example, studying cancer cell invasion only requires image acquisition with 10 min intervals, which allows effective heat dissipation during image acquisition; conversely, high scan rates required for calcium imaging deeply inside the tumor (20 s) may require a higher repetition rate of excitation pulses and preclude effective deep imaging in highly scattering tissue (Weigelin et al., 2021).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63776/elife-63776-fig5-v1.jpg)\n\n**Figure 5.:** (a) Third harmonic generation (THG) imaging depth limit in hard to soft tissues based on the signal-to-noise ratio (SNR) detection limit. Maximum imaging depth was derived from the SNR curves presented in Figures 3c, 4b and d and Figure 1\u2014figure supplement 3d. (b) Summary of applicability of 2PE, 3PE, and 4PE of different fluorophores, based on signal strength and the required restrictions on imaging parameters to avoid phototoxicity. For each fluorophore multiphoton process (2-, 3-, or 4PE), the SNR performance and the severity of restrictions on imaging parameters to avoid phototoxicity are indicated. For THG and SHG, the emission wavelength (fraction of excitation wavelength \u03bb) and the amount of signal are indicated. Source data files: Figure 3\u2014source data 1 and Figure 4\u2014source data 1.\n\nWe monitored laser-induced toxicity, including nonlinear effects in the focus and linear thermal toxicity in out-of-focus tissue, using a dual toxicity reporter strategy for transient cell stress (GCaMP6 Ca2+ reporter) and irreversible membrane damage and cell death (Sytox DNA probe). The Ca2+ detection of phototoxic cell stress was faster and more sensitive than recording of irreversible cell death. Additionally, the Ca2+ reporter enabled to detect damage which remained sublethal within the time frame of the experiments, which may affect cell functionally but could escape detection by commonly used live-death reporters, such as DNA intercalating probes. Cell stress and bleaching were induced in the focal plane when pulse energies reached threshold values (3.9 nJ for 1300 nm and 12 nJ for 1650 nm at 50 \u00b5m depth), eventually leading to physical disruption of tissue structures (burning marks), in line with observations by others (Hopt and Neher, 2001). Conversely, energy doses below the thresholds were tolerated by cells without in-focus Ca2+ elevation, and this energy level was sufficient to achieve high-quality multiparametric image acquisition at matched depth. The in-focus phototoxicity thresholds obtained in the cell-rich tumor model are comparable to the dynamic range detected in low-density tissues (Ouzounov et al., 2017; Yildirim et al., 2019; Wang et al., 2020), indicating that nonlinear phototoxicity might have a general cause, such as light-induced ionization or formation of reactive oxygen species (D\u00e9barre et al., 2014; Tirlapur et al., 2001), irrespective of the tissue density. The impact of sub-threshold highIR light exposure on long-term integrity of cell structure and function requires further exploration, including growth, differentiation, and chromatin integrity (D\u00e9barre et al., 2014), as well as benchmarking of stress-sensitive complex cell functions, such as cell migration and cell-cell interactions (Weigelin et al., 2021; Kiepas et al., 2020).\n\nWe generated up to six-channel multiparametric images in live tumors with sufficient signal-to-noise ratio using a single highIR excitation, simultaneously detecting 3PEF and 4PEF along with SHG and THG (Figure 5b). To achieve multiparametric imaging, the used excitation pulse energy in the focus was higher compared to previous studies: 1.4\u20132.1 times for 1650 nm (Horton et al., 2013; Li et al., 2020; Guesmi et al., 2018) and 0.7\u20131.7 times for 1300 nm (Ouzounov et al., 2017; Wang et al., 2018a), but still below the defined phototoxicity thresholds. Other methods to achieve multichannel imaging with highIR excitation have been demonstrated, such as simultaneous 1300 and 1700 nm highIR excitation (Guesmi et al., 2018). The method demonstrated here offers the advantage of single laser line excitation and therefore the absence of chromatic aberration and reduced excitation load. On the other hand, the requirements for fluorophore concentration and brightness are stricter for 4P, as compared to 3P excitation processes (Figure 5b), due to their even smaller absorption cross-section (Cheng et al., 2014). Therefore, fluorophores with high quantum efficiency and/or abundance, such as H2B/eGFP or Hoechst must be selected for 4P excitation. Besides addition of fluorescence channels by combination of 3P and 4P excitation, multiparametric imaging was also achieved by combination of 3P-excited fluorophores with different excitation/emission spectra, such as TagRFP, mCherry, and AlexaFluor680 at 1650 nm or TagRFP and eGFP at 1300 nm. At 1300 nm however, red fluorescent proteins were excited with reduced efficiency. Recently, the excitation efficiency of red fluorescent proteins at 1300 nm was enhanced by carefully tuning the central excitation wavelength to higher-energy electronic excited states, enabling multiparametric imaging with high SNR in three fluorescent channels, at the cost of accelerated photobleaching (Hontani et al., 2021). Thus, multiparametric imaging is a promising approach for the intravital study of complex tissue structures, but labeling and imaging conditions require careful optimization.\n\nUpcoming technical improvements of highIR microscopy include lateral, axial, and temporal multiplexing (Weisenburger et al., 2019), refined compensation of pulse broadening and detection efficiency (Yildirim et al., 2019) and selective regional scanning (Li et al., 2020), providing means to reduce the photon burden and latent phototoxicity to advance imaging speed and depth. Furthermore, the advantages of lowIR excitation at shallow depths and highIR excitation at deep imaging regions can be combined, resulting in optimized imaging speed and SNR over the full imaging depth range (Weisenburger et al., 2019; Wang et al., 2020).\n\n### Conclusion\n\nIn conclusion, we find that the benefits of highIR excitation (1300/1700 nm, 1\u20132 MHz, sub-100 fs pulse length, and nJ-range pulse energy in the focus) previously demonstrated for brain deep-tissue microscopy (Horton et al., 2013) also prevail in even more strongly scattering tissues, including thick tumors and bone (Figure 5a). HighIR excitation has two important advantages in the context of tumor microscopy: it can roughly double the imaging depth compared to previous state-of-the-art 2P imaging, and it gives access to multiparametric imaging through the simultaneous detection of 3- and 4P fluorescence excitation and multi-harmonic signals (You et al., 2018b). We note that using several chromophores simultaneously with a single beam may require to adjust their relative labeling densities and to experimentally determine the best excitation wavelength to optimize the signal and average excitation power threshold to avoid phototoxic effects depending on the application (Figure 5b). Based on its simple single-beam excitation and improved imaging depth, highIR microscopy holds great potential to advance biomedicine and material sciences. In cancer research, highIR excitation will improve intravital microscopy of understudied regions, including the tumor core and necrosis zones (Deryugina and Kiosses, 2017). Beyond cancer, highIR excitation should advance live imaging of structurally challenging tissues, including the bone marrow (Kim and Bixel, 2020), organoids, and embryos (D\u00e9barre et al., 2014; Guesmi et al., 2018). In addition, the much-improved THG signal, together with SHG, 3- and 4P fluorescence excitation of molecular reporters and/or endogenous fluorophores, will allow to record cell type and dynamic functions in a broader morphological context (Hontani et al., 2021; You et al., 2018b; Guesmi et al., 2018), such as cell activities and inflammation in the tumor microenvironment and label-free intra-operative histology (You et al., 2018b; You et al., 2018a; Zhang et al., 2019; Weigelin et al., 2016).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (murine, male)</td>\n      <td>C57Bl/6J WT</td>\n      <td>Charles River, Germany</td>\n      <td>C57Bl/6J WT</td>\n      <td>8 to 24 weeks of age</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (murine, male)</td>\n      <td>BALB/c CAnN.Cg-Foxn1nu</td>\n      <td>Charles River, Germany</td>\n      <td>BALB/c CAnN.Cg-Foxn1nu</td>\n      <td>8 to 24 weeks of age</td>\n    </tr>\n    <tr>\n      <td>Cell line (murine)</td>\n      <td>B16F10</td>\n      <td>ATCC, VA</td>\n      <td>RRID:CVCL_0159</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HT1080</td>\n      <td>DSMZ, Braunschweig, Germany</td>\n      <td>RRID:CVCL_0317, ACC315</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Rattus norvegicus)</td>\n      <td>GCaMP6s</td>\n      <td>https://doi.org/10.1038/nature12354</td>\n      <td>RRID:Addgene_40753</td>\n      <td>Chen et al., 2013</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Rattus)</td>\n      <td>Collagen I solution</td>\n      <td>Corning, NY</td>\n      <td>REF 354249</td>\n      <td>Final concentration 4 mg/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dextran70-AlexaFluor680</td>\n      <td>Invitrogen, CA</td>\n      <td>C29808</td>\n      <td>20\u2013100 \u00b5l, 20 mg/ml in saline</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hoechst 33342</td>\n      <td>Sigma-Aldrich</td>\n      <td>14533</td>\n      <td>1.1 mg in milliQ</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sytox Green</td>\n      <td>Thermo Fisher, Waltham, MA</td>\n      <td>S7020</td>\n      <td>5 mM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Origin 2019</td>\n      <td>OriginLab Corporation, MA</td>\n      <td>RRID:SCR_002815</td>\n      <td>https://www.originlab.com/viewer/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji/ImageJ</td>\n      <td>https://doi.org/10.1038/nmeth.2019</td>\n      <td>version 1.52n</td>\n      <td>https://imagej.net/software/fiji/ Schindelin et al., 2012</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>Mathworks</td>\n      <td>R2017b</td>\n      <td>https://www.mathworks.com</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>25 \u00d7 1.05 NA water immersion objective lens</td>\n      <td>Olympus, Tokyo, Japan</td>\n      <td>XLPLN25XWMP2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>0.2 \u00b5m multicolor beads</td>\n      <td>Polysciences Inc, PA</td>\n      <td>Cat. 24050</td>\n      <td>FluoresBrite 0.2 \u00b5m</td>\n    </tr>\n  </tbody>\n</table>\n\n### Imaging setup\n\nThe setup was based on a customized upright multiphoton microscope (TrimScope II, LaVision BioTec, a Miltenyi Biotec company, Bielefeld, Germany) equipped with two tunable Ti:Sa lasers (Chameleon Ultra I and II, Coherent, CA), an OPO (MPX, APE, Berlin, Germany) and up to six PMTs distributed over a two- and a four-channel port (Figure 1\u2014figure supplement 1a). The setup was modified to facilitate high-energy, low-repetition rate excitation. A high-power fiber laser (Satsuma HP2, 1030 nm, 20 W, 1 MHz Amplitude Syst\u00e8mes, Bordeaux, France) was used to pump an OPA (AVUS SP, APE), which generated 460 or 330 mW at 1300 or 1650 nm, respectively. A fixed-distance prism compressor (Femtocontrol, APE), glass block (IR-coated 25 mm ZnSe, for 1650 nm), and an autocorrelator with internal and external detector (Carpe, APE) were included in the optical path to control the pulse length under the objective lens. The beam path further included an adjustable 2:1 telescope (f = 80 mm and f = 40 mm apochromat lenses; IR-coated), a motorized half-wave plate and a glan-laser polarizer to control laser beam diameter, power, and polarization. The pulse length under the objective lens and its point-spread-function were optimized for the chosen OPA excitation wavelength by adjustment of the excitation path bulk compression, beam pointing, and telescope, such that the objective lens\u2019 back focal plane was 10% overfilled. A movable mirror was used to guide either the OPO or the OPA beam into the scanhead, where it was spatially overlaid with the Ti:Sa beam. Mirrors, dichroic mirrors, and lenses in the scanhead were carefully selected for high reflectance or transmission in the extended excitation wavelength range. Microscopy was performed using a 25 \u00d7 1.05 NA water immersion objective lens (XLPLN25XWMP2, Olympus, Tokyo, Japan; transmission of 69% at 1700 nm, data not shown). The following filter/PMT configurations were used: blue-green emission was split off to a two-channel port with a 560lp dichroic mirror and a 700SP laser blocker filter, while red emission was split off to a two-channel port with a 900lp dichroic mirror and an 880SP laser blocker filter. Red emission was first split by a 697sp, then further split by a 605lp and a 750sp dichroic mirror, bandpass filtered with 572/28 (TagRFP) or 593/40 (TagRFP and mCherry), 620/60 (mCherry), 710/75 (AlexaFluor680), and 810/90 (AlexaFluor750, SHG) and detected by alkali, GaAsP, or GaAs PMT detectors (H6780-20, H7422A-40, or H7422A-50, Hamamatsu, Hamamatsu city, Japan). For 1180, 1270, and 1300 nm excitation, blue-green emission was split by a 506lp dichroic mirror, bandpass filtered with 447/60 (THG) and 525/50 (eGFP) and detected by alkali or GaAsP detectors (H6780-01, H6780-20, or H7422A-40, Hamamatsu). For 1650 nm excitation, blue-green emission was split by a 506lp (more THG signal) or 560lp (more eGFP signal) dichroic mirror, bandpass filtered with 447/60 (Hoechst) or 505/40 (eGFP) and 562/40 (THG) and detected by alkali or GaAsP detectors (Hamamatsu, H6780-01, H6780-20, or H7422A-40). Filters were fabricated by Semrock (New York, NY) or Chroma Technology GmbH (Olching, Germany). The setup was equipped with a warm plate (DC60 and THO 60\u201316, Linkam Scientific Instruments Ltd, Tadworth, UK) and a custom-made objective heater (37\u00b0C) for live-cell and in vivo experiments, as described (Haeger et al., 2020).\n\n### Determination of setup resolution\n\nThe point-spread-function was obtained using 0.2 \u00b5m multicolor beads (FluoresBrite 0.2 um, Cat. 24050, Polysciences Inc, PA). Beads were washed, suspended in agarose (A4718, 1 %w in 1\u00d7 phosphate buffered saline (PBS), Sigma-Aldrich, MO), and scanned through a coverglass (18 \u00d7 18 mm2 #1, Menzel-Glaeser, Braunschweig, Germany). Z-stacks of 30 \u00b5m depth were recorded with 0.5 \u00b5m step interval, 0.24 \u00b5m pixel size, 1.0\u20131.5 \u00b5s pixel dwell time, and 4- to 10-fold line averaging and with 1650 nm (5.5 nJ, sample surface), 1300 nm (3.5 nJ, sample surface), 1280 nm (89 mW, under objective), or 910 nm (13 mW, under objective) excitation. Emission was bandpass filtered with 562/40 (1650, 1300, and 910 nm) or 620/60 (1280 nm) and detected with a GaAsP detector (specified above). The software PSFj (Theer et al., 2014) was used for point-spread-function analysis.\n\n### Intravital imaging procedures\n\nIntravital microscopy of intradermal tumors was performed as described (Haeger et al., 2020). In brief, the animal was anesthetized (1\u20132% isoflurane in O2 for up to 4 hr), and vessels visualized using intravenously injected Dextran70-AlexaFluor680 (25 min prior to multiphoton imaging, 20\u2013100 \u00b5l, 20 mg/ml in saline, C29808, Invitrogen, CA). At endpoint sessions, Hoechst 33342 (14533, 1.1 mg in milliQ, Sigma-Aldrich) was injected intravenously to visualize cell nuclei. To define regions of interest, overview images were obtained using an Olympus XL Fluor 4\u00d7/340 objective lens and epifluorescence excitation (X-Cite 120 lamp, Excelitas, MA; Olympus GFP/RFP filter block and a 2/3\u201d cooled CCD camera) (Figure 1\u2014figure supplement 1e). Prior to multiphoton imaging, the maximum average power under the objective was measured (FieldMaxII-TO power meter with PM2 sensor, resolution 1 mW, Coherent) and the excitation energy at the surface of the sample (Figure 1\u2014figure supplement 2) was adjusted below the found functional toxicity threshold (Figure 2, Figure 2\u2014figure supplement 1). To maintain a constant 3P emission over imaging depth, the excitation power was increased as defined in the measurement. For image acquisition, the pixel dwell time was set to 2 or 4 \u00b5s to synchronize with the laser repetition rate, line averaging was set between 1 and 6, pixel size was 0.7 \u00b5m and the step size of z-stacks was 2.5 \u00b5m unless stated otherwise. To ensure maximum compatibility of highIR excitation with open-window longitudinal imaging of in vivo tumors models, saline was used as immersion liquid.\n\n### Brain imaging ex vivo\n\nAt the endpoint, a tumor-bearing 9-week-old C57BL/6J mouse was anesthetized, intravenously injected with Dextran70-AF680, and sacrificed. The brain was excised, placed in a PBS filled container, and covered with a #1 microscope coverglass (Menzel-Glaser). Z-stack images were acquired in the neocortex above the hippocampus area, with 12 \u00b5s pixel dwell time, pixel size 0.50 \u00b5m, and 4 \u00b5m z-step size. Multiple measurements were performed, to optimize either THG and/or AF680 emission for different depth ranges, for 1650 and 1270 nm excitation wavelengths (Supplementary file 1c). Measurements were combined to generate signal attenuation curves and to compose one image stack with maximized penetration depth.\n\n### Image processing, data representation, and statistics\n\nUnless stated otherwise, image processing was performed with Fiji/ImageJ, version 1.52n (Schindelin et al., 2012). Part of the datasets contained positional jitter, which was removed with the Image Stabilizer plugin (Li, 2008). Unless stated otherwise, Origin 2019 (OriginLab Corporation, MA) was used for numerical and statistical calculations, data fitting, and representation.\n\n### Study of the multiphoton processes underlying multimodal excitation\n\nExcitation power under the objective was calibrated for all used attenuator settings. Images were acquired with stepwise decreasing\u2013 increasing excitation power (P). For bleaching correction, reference images were taken after each image at a fixed low excitation power (Pbleach). All images were acquired in one imaging plane, with pixel size 0.74 \u00b5m and pixel integration time 6.0 \u00b5s. For each channel, individual images were merged into two stacks; one for excitation power and one for bleaching correction. To quantify intensities, bright pixels and background pixels were selected by gating with a manually drawn region of interest (ROI) and/or by multiplication of the image stack with a binary mask. Masks were created by a combination of median filtering, auto-thresholding, and binary erode steps. For the selected pixels, area, mean intensity, and standard deviation (resp. Imean, \u03c3I for bright pixels; Bmean, \u03c3B for background) were quantified along the excitation and bleaching correction stacks. Normalized, bleaching corrected, background subtracted mean intensity (S) in relation to excitation power was derived as follows: S(P) = Fnorm\u22c5[Imean(P) \u2013 Bmean(P)]/[Imean(Pbleach) \u2013 Bmean(Pbleach)], where Fnorm is a constant for normalization. To estimate the order of the excitation process (n), a power function S(P) = A\u22c5Pn was fitted to the data, with A the proportional factor. The orthogonal distance regression iteration algorithm was applied to include both P (measurement inaccuracy) and S (linear approximation including pixel noise and normalization) errors in the fitting process. Reduced chi-square and adjusted R-square values were below 2 and above 0.995, respectively. Standard errors were given for A and n.\n\n### Analysis of fluorescence bleaching\n\nThe H2B channel (1300 nm, eGFP or 1650 nm, mCherry) of the 3D + time stack was mean (2) filtered and average projected over the z-axis. Bright pixels in cells were selected by auto-thresholding (1300 nm, Huang or 1650 nm, Iso) in combination with manual selection of an ROI and their average intensity was obtained. The average background was calculated over the manually selected darkest region of the image stack and subtracted from the cell-based fluorescence signal for every time point, to obtain the background subtracted fluorescence signal as a function of time.\n\n### SNR analysis\n\nThe SNR as a function of imaging depth was calculated for every position in the depth stack from the average fluorescence intensity ($I_{mean}$) over the brightest 1st (THG signal), 10th (nuclei, eGFP), or 40th (cytosol, TagRFP) percentile of pixels in the median filtered (2, fluorescence; 1, THG) image. As background signal, the average ($B_{mean}$) and standard deviation ($\\sigma_{B}$) were calculated over an ROI in a dark location of the unfiltered stack. Then, the SNR was calculated as SNR = (Imean \u2212 Bmean)/\u03c3B. The SNR along a line profile was obtained from the intensity values along the line (Iline), as SNR = (Iline \u2212 Bmean)/\u03c3B.\n\n### Axial resolution analysis of in vivo data stacks\n\nPixels in fluorescent cell bodies or nuclei in the z-stack were selected with a fixed-size ROI, their average intensities were calculated over the ROI and intensity z-profiles were generated. Intensity z-profiles were normalized (0\u20131) and their maximum derivatives ((\u03b4I/\u03b4z)max) were calculated (Figure 3\u2014source code 1, custom script, Matlab). Median and standard deviation values were derived over sets of (\u03b4I/\u03b4z)max and were used as a relative measure for axial resolution.\n\n### Signal attenuation analysis\n\nTo display signal attenuation curves independent of excitation power at the sample surface (P) and independent of the order of the excitation process (n), average pixel intensities (Imean) were background subtracted and normalized to P and n, to obtain the normalized signal S for each imaging depth: S = N\u22c5[(Imean \u2212 Bmean)/Pn]1/n, where N is a normalization constant and Bmean is the background. Imean was quantified (described in the paragraph SNR analysis) and Bmean was estimated by averaging all the pixel values of the last frame of the image stack. For 3P processes, the effective attenuation length le of the tissue was defined as the depthat which Imean attenuates by 1/e 3, where e is Euler\u2019s number and Imean the average intensity of the 3P process (Horton et al., 2013). To obtain le, the normalized signal S of the attenuation curves was fitted with a single exponential function S(z) = A \u22c5 exp(\u2212z/le), where A is a proportional constant and z the imaging depth. Note that for 3P processes (n = 3), the signal S shown in the attenuation curves was normalized as: S(z) \u221d (Imean)1/3. Therefore, fitting the normalized signal S(z) with A \u22c5 exp(\u2212z/le) is similar to fitting (Imean \u2212 Bmean)/P3 with A \u22c5 exp(\u20133z/le).\n\n### Cells and cell culture\n\nMurine B16F10 melanoma cells (ATCC, VA) were cultured in RPMI (Gibco) supplemented with 10% FCS (Sigma-Aldrich), 1% sodium pyruvate (11360, GIBCO, MA), and 1% penicillin and streptomycin (PAA, P11/010) at 37\u00b0C in a humidified 5% CO2 atmosphere. Human HT1080 (ACC315) fibrosarcoma cells (DSMZ, Braunschweig, Germany) were cultured in DMEM (Gibco) supplemented with 10% FCS (Sigma-Aldrich), 1% sodium pyruvate (11360, Gibco), and 1% penicillin and streptomycin (PAA, P11/010) at 37\u00b0C in a humidified 5% CO2 atmosphere. Cell line identity was verified by a SNP_ID Assay (Sequenom, MassArray System, Characterized Cell Line Core facility, MD Anderson Cancer Center, Houston, TX). Cells were routinely tested for mycoplasma using MycoAltert Mycoplasma Detection Kit (Lonza, Basel, Switzerland). HT1080 cells were lentivirally transduced to stably express the fluorescent proteins eGFP or mCherry tagged to histone 2B and cytoplasmic TagRFP. B16F10 cells were lentivirally transduced to stably express the green fluorescent intracellular calcium sensor GCaMP6s (Chen et al., 2013) and mCherry tagged to histone 2B.\n\n### 3D spheroid culture\n\n3D spheroid culture was established as described (Veelken et al., 2017). Shortly, HT1080 fibrosarcoma cells from sub-confluent culture were detached with 2 mM EDTA (1 mM) and spheroids containing 1000 cells were formed with the hanging drop method. Aggregated spheroids were embedded into a collagen I solution (non-pepsinized rat-tail collagen type I, final concentration 4 mg/ml, REF 354249, Corning, NY) and transferred into a chambered coverglass prior to polymerization at 37\u00b0C. After polymerization, chambers were filled with culture medium (specified above), incubated overnight at 37\u00b0C in a humidified 5% CO2 atmosphere and sealed prior to microscopy.\n\n### Animal procedures\n\nAll animal procedures were approved by the ethical committee on animal experimentation (RU-DEC 2014\u2013031) or the Central Authority for Scientific Procedures on Animals (CCD: AVD10300 2017 4444, license: 2017\u20130042). Handlings were performed at the central animal facility (CDL) of the Radboud University, Nijmegen, in accordance with the Dutch Animal experimentation act and the European FELASA protocol. C57Bl/6J WT mice and BALB/c CAnN.Cg-Foxn1nu were purchased from Charles River, Germany. Before the experiment, mice were housed in IVCM cages at standard housing conditions. Food and water were accessible ad libitum. Dorsal skinfold chambers (DSFC) were transplanted on 8- to 24-week-old male mice as described (Haeger et al., 2020). In short, mice were anesthetized using isoflurane anesthesia (2% in oxygen), the chamber was mounted on the dorsal skinfold of the mice, one side was surgically removed, and a coverglass was used to close the imaging window. Mice received an adequate peri-surgical analgesia using carprofen and buprenorphine. To prevent dislocation and inflammation of the DSFC, mice were housed with reduced cage enrichment during the experiment. Mice were housed in a temperature-controlled incubator at 28\u00b0C to minimize heat loss in the skin tissue due to the DSFC. One day after surgery, B16F10 melanoma (0.5 \u00d7 105) or HT1080 fibrosarcoma (2 \u00d7 106) were implanted as single-cell suspension into the deep dermis of the mouse using a 30-G needle (one or two tumors per mouse). To monitor tumor progression, mice were briefly anesthetized using isoflurane and epifluorescence overview images were taken (Figure 1\u2014figure supplement 1e).\n\n### 3D sample preparation for cell viability experiments in vitro\n\nA chambered coverglass was filled halfway with collagen I solution (4 mg/ml, as described above) and allowed to polymerize (37\u00b0C, 5% CO2, humidified atmosphere) in a vertical position. Then, B16F10 melanoma cells from sub-confluent (25%) culture were detached with 2 mM EDTA (1 mM) and resuspended at high density (~1 \u00d7 108). Approximately 10 \u00b5l of cell suspension was transferred into a slightly bended 27-G hypodermic needle (BD) and positioned onto a P20 pipette. The needle was brought into the collagen gel, parallel to the coverglass. A small volume (~1 \u00b5l) was injected while retracting the needle to form a rod-shaped cell structure. Spill-over cells were removed by gently washing with PBS. Chambers were filled up with culture medium, placed in a 15 cm culture dish with wet paper to prevent evaporation, and incubated overnight (37\u00b0C, 5% CO2, humidified atmosphere). Prior to microscopy (~1 hr), 1 \u00b5M of Sytox Green (S7020, 5 mM, LOT #2204228, Thermo Fisher, Waltham, MA) was added to the medium and the sample was sealed.\n\n### Imaging setup for in vitro cell viability measurements\n\nA custom-built setup was used for in vitro cell viability measurements. Shortly, the microscope was based on a lab-built upright frame in combination with the 25 \u00d7 1.05 NA water immersion objective, and a prototype highIR source (LOB and Amplitude Syst\u00e8mes, Bordeaux, France) was used for excitation. The setup had the following highIR excitation specifications: 1700 nm central wavelength, 78 fs pulse length and >100 mW under the objective, 1 MHz pulse repetition rate, and 3 \u00b5m axial resolution for 3P excitation. Thus, these conditions matched those used on the intravital imaging setup. GCaMP6 and Sytox Green were 2P excited with an Axon920 source (Coherent Inc 920 nm, 140 fs, 80 MHz), which focal plane was shifted ~6 \u00b5m deeper into the sample as compared to 1700 nm excitation. Scanning and acquisition was controlled using ScanImage software (Vidrio Technologies). Emission was split by a R561 dichroic mirror with the slope centered at 575 nm, bandpass filtered with ET505/40 (Sytox Green and GCaMP6) and 650/100 (mCherry and Sytox Green) and detected by GaAsP detectors (H7422-40, Hamamatsu, Hamamatsu city, Japan). Sample temperature was kept at 37\u00b0C using a heating chamber for upright microscopes (H310 UP with an UP-1 \u00d7 35 M insert, Okolab SRL, Pozzuoli, Italy) and an objective heater (as described for the intravital setup).\n\n### Cell viability analysis based on tracking of individual cells\n\nIn the last recorded composite image of the time-lapse stack (Figure 2b most right image), a group of Sytox-positive and Sytox-negative cells were selected by visual inspection. The frame order of the stack was reversed to facilitate manual tracking, which was performed on the nucleus and cytosol of each selected cell (Figure 2\u2014figure supplement 1a). Then, a Matlab script (Figure 2\u2014source code 1, Figure 2\u2014source code 2) was used to retrieve intensity-time traces at the coordinates of the manually tracked cells, from the spatially filtered (multiplication by 10, two-pixel mean) green channel of the raw time-lapse stack. Nucleus and cytosol intensity-time traces of Sytox-positive and Sytox-negative cells were imported into Origin2019 for further processing: the normalized single-cell GCaMP intensity-time traces (Figure 2\u2014figure supplement 1b) were obtained by subsequent dark background subtraction, smoothing (method: Savitzky-Golay, window: 10 points, polynomal order: 2) and normalization to maximum of cytosol intensity-time traces. To obtain Sytox intensity-time traces without GCaMP crosstalk, the nucleus signal was divided by the cytosol signal, after background subtraction and prior to smoothing. The other processing steps were similar compared to the generation of GCaMP time traces. Cells were considered responsive (positive) if the trace intensity crossed a value threshold = meanbaseline + 3* SDbaseline, where meanbaseline and SDbaseline are respectively the mean and the standard deviation of the unsmoothed intensity-time trace before highIR exposure. Assuming a normal distribution of trace intensities around meanbaseline, a null hypothesis stating that intensity is below the threshold value can be rejected with p = 0.0015, if intensity values are above a threshold value equal to 3* SDbaseline above the meanbaseline (one-tailed z-test). The Sytox and GCaMP responses over time presented in Figure 2 were derived by averaging all raw intensity-time traces per group (nucleus and cytosol, Sytox positive and negative) prior to background subtraction and calculation of the ratio nucleus/cytosol for the Sytox response.\n\n### Image area-based cell viability analysis\n\nThe cell fraction responding upon highIR exposure (GCaMP+ or Sytox+ cell fraction) was derived from time-lapse and z-stack measurements within an ROI of the image for which cell mass above the highIR focal plane was 40\u00b110 \u00b5m thick, unless stated otherwise (Figure 2a and Figure 2\u2014figure supplement 1c). Here, the green channel images were used for quantification of GCaMP while the red channel was used for Sytox signals. An ImageJ script (Figure 2\u2014source code 3, Figure 2\u2014source code 4) was used to derive the fraction, in the following manner: first, to discriminate between responding and not responding cell area within frames, a threshold t = mean + 3*SD was defined, where mean and standard deviation (SD) were derived over the 95% dimmest pixels within the ROI, drawn in a time-lapse frame taken before highIR exposure. Second, a mask was created for every time point or depth in the median filtered (one-pixel) stack, where pixels above threshold t within the ROI are classified as high. In this mask all GCaMP+ or Sytox+ classified pixels were included, also those which were positive prior to highIR exposure. Since the aim was to quantify the positive cell fraction upon highIR exposure, the positively classified pixels prior to highIR exposure (caused by spontaneous fluctuations, dead or dying cells, melanin artifacts) were removed from the mask in the next steps. Third, a mask was created from the last time point or from the complete z-stack before highIR exposure, following the steps described above. Additionally, six dilation steps were applied to this mask, to correct for drift and/or expansion of detected features. Fourth, the last mask was subtracted from the uncorrected mask and the area of the highIR-induced GCaMP+ or Sytox+ pixels was quantified for each frame of the newly created mask. Finally, the area of the ROI corrected for positively classified pixels prior to highIR exposure was measured. The quantified areas per frame were exported to Origin2019 in order to derive the relative GCaMP+ or Sytox+ cell fractions upon highIR exposure for further representation and statistical analysis of time-lapse and z-stack measurements. For time-lapse measurements, the highIR-induced GCaMP+ cell fraction was defined as the maximum fraction obtained during highIR exposure.\n",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "9501b5ae-1bd4-4521-9d49-b28c46994bd6",
+      "submission_id": "f007f77c-154e-4d42-a23b-a33a7f5e4db9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maddy Parsons, King's College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63776.sa0](https://doi.org/10.7554/eLife.63776.sa0)\n\nNonlinear microscopy is in the unique position that high-resolution images of cells and other tissue components can be obtained in live tissue. However, scattering and absorption limit the penetration depth and thus the level of 3D information that can be achieved. In this manuscript, the authors develop a new approach that can accomplish deeper imaging in complex specimens, which has potential to provide new insight into biological mechanisms within living tissues and whole organisms.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Maddy Parsons, King's College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63776.sa1](https://doi.org/10.7554/eLife.63776.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Intravital Deep-Tumor Single-Beam 2-, 3-and 4-Photon Microscopy\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. Two of the following individuals involved in review of your submission have agreed to reveal their identity: Scott E Fraser (Reviewer #1); Marloes Groot (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nNonlinear microscopy is in the unique position that high-resolution images of cells and other tissue components can be obtained in live tissue. However, scattering and absorption limit the penetration depth. The impact of nonlinear microscopy in biomedicine and biology would be much improved if higher imaging depths can be achieved. In this manuscript, the authors show they can accomplish imaging in complex specimens using 3- and 4-photon excitation, deeper in the specimen than comparable optics can accomplish with 2-photon excitation laser scanning microscopy. Using a customised commercial system, the authors have incorporated a high-powered laser source with an OPA and dispersion compensation to generate either 1330nm or 1650nm laser lines with high peak pulse energies at low pulse repetition rates. They then compare the relative capabilities of each laser line in terms of number of fluorescence emission channels measured (skin tumour xenografts), fluorescence bleaching analysis and functional toxicity thresholds and fluorescence signal attenuation (excised murine bone).\n\nThis is a very interesting study with some potentially important findings from a technical perspective. However, there is a disconnect at present between the quality of the work and the quality of the presentation. There are many areas of quantitative imaging and intravital imaging that are well known to those in the direct field, and that are a complete mystery to vast majority of those that are not. It would therefore be highly beneficial to re-structure the manuscript in such a way that the findings can reach the many researchers that could benefit from this powerful approach rather than the few who already use it.\n\n1. Duty cycles, fluorescence saturation, water absorption effects and longer acquisition times lead to greater phototoxicity, so may not be appropriate for most dynamic biological applications where acquisition speed and/or continued image acquisitions are the key factors. The authors should explain and perform cell viability tests to address this in the context of their current analysis approaches. Calcium imaging for assessing tissue viability is not the technique of choice for most readers and is presented in a way that assumes general knowledge that does not exist. Assays using membrane-impermeant DNA dyes, or other live-dead assays are far more common, and this study would benefit significantly from inclusion of these assays. The authors should also clearly explain the need for such viability analysis and clearly discuss the potential limitations of their imaging regimes with respect to live samples.\n\n2. How long does it take to acquire a single frame with four-photon excitation at 1700nm? In none of the data sets was frame time mentioned in particular when acquired 3D data sets. Can the authors please ensure that these times are mentioned both in the main text and the figures containing images.\n\n3. Line131/Fig3D: the authors present data showing relative axial resolution measurements. Are these features measured diffraction limited and how do they know? These are clearly not like for like structures (different fluorescent species) so it is not clear this can be used as a measure of resolution. Can the authors please provide other resolution measurements?\n\n4. Lines 140-42: the authors present data showing the advantages of THG at 1650nm over other excitation lines. Aside from the excitation wavelength could this data be explained by the greater absorption and scattering at the emission wavelengths generated at these laser lines?\n\n5. Figure 3A and C: the SNR for 1650nm increases whilst for 1300nm and 1180 excitation this decreases. Is this simply due to more of the exciting fluorophore species residing deeper into the tissue?\n\n6. The authors should provide a clear view early on in the introduction of the problems associated with imaging biological tissues with the longer wavelengths that are used for confocal laser scanning microscopy and for two-photon laser scanning microscopy and present this in an accessible manner. For most readers, the need for a larger laser won't be their first question; instead, it will be the viability after/during the imaging session. The expected temperature rise, and an indirect mention of burn marks, comes at the end of the section but should be discussed early on so the potential limitations are transparently presented.\n\n7. The findings and the figures in general should be presented in a more accessible and accurate manner. The figures are highly unlikely to be understandable by the readers who do not perform this sort of imaging, and the legends do not help as they are either far too brief or contain too many terms that are poorly explained. The legend and figure that it describes should be able to stand on their own, not simply defer to the body of the paper to explain what was done or is shown. For experts in the field, the figures are also not as convincing as they could be or presented in a way that they can be critically evaluated.\n",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88856145-201b-47aa-9559-d4ddb7f452a0",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C1",
+      "claim": "Three-photon excitation has recently been demonstrated as an effective method to perform intravital microscopy in deep, previously inaccessible regions of the mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Three-photon excitation has recently been demonstrated as an effective method to perform intravital microscopy in deep, previously inaccessible regions of the mouse brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work in the field, supported by the context of the manuscript and likely by citations in the full text.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "f41c7c5d-658c-434a-9f57-d8ed9bfeefa8",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C2",
+      "claim": "High-pulse-energy 1 MHz pulse-repetition-rate infrared excitation near 1300 and 1700 nm provides a more than 2-fold increased imaging depth in tumor and bone tissue compared to illumination conditions commonly used in 2-photon excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this excitation regime provides a more than 2-fold increased imaging depth in tumor and bone tissue compared to the illumination conditions commonly used in 2-photon excitation, due to improved excitation confinement and reduced scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including SNR analysis and imaging depth measurements shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "78528e51-6903-415b-81b6-98c85dbc7138",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C3",
+      "claim": "The increased imaging depth is due to improved excitation confinement and reduced scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this excitation regime provides a more than 2-fold increased imaging depth in tumor and bone tissue compared to the illumination conditions commonly used in 2-photon excitation, due to improved excitation confinement and reduced scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results, supported by measurements of effective attenuation length and resolution analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "b55e648f-4f25-46b6-9fdf-f4218f8fb021",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C4",
+      "claim": "Simultaneous 3- and 4-photon processes can be effectively induced with a single laser line.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that simultaneous 3- and 4-photon processes can be effectively induced with a single laser line, enabling the combined detection of blue to far-red fluorescence together with second and third harmonic generation without chromatic aberration, at excitation intensities compatible with live tissue imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally through power-dependence measurements shown in Figure 1d and multicolor imaging in Figure 1b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "3b4b0e1c-1d0e-4c6c-b89c-d11e91050f50",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C5",
+      "claim": "Single laser line excitation enables combined detection of blue to far-red fluorescence together with second and third harmonic generation without chromatic aberration.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that simultaneous 3- and 4-photon processes can be effectively induced with a single laser line, enabling the combined detection of blue to far-red fluorescence together with second and third harmonic generation without chromatic aberration, at excitation intensities compatible with live tissue imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through multiparametric imaging experiments shown in Figure 1b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "217b6182-8dd4-4794-9057-8099faa5b562",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C6",
+      "claim": "The excitation intensities used are compatible with live tissue imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that simultaneous 3- and 4-photon processes can be effectively induced with a single laser line, enabling the combined detection of blue to far-red fluorescence together with second and third harmonic generation without chromatic aberration, at excitation intensities compatible with live tissue imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phototoxicity experiments shown in Figure 2, which establish safe imaging thresholds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "9d151458-18d3-41c3-940e-dd05d57b6544",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C7",
+      "claim": "Photoperturbation thresholds have been analyzed for this excitation regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we analyze photoperturbation thresholds in this excitation regime and derive setpoints for safe cell imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through systematic phototoxicity experiments using GCaMP6 and Sytox reporters shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "8aba6af6-5ed3-455e-aa4b-01bde0521c2b",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C8",
+      "claim": "Setpoints for safe cell imaging have been derived.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we analyze photoperturbation thresholds in this excitation regime and derive setpoints for safe cell imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Safe imaging thresholds are established as 2.8 nJ for 1300 nm and 8.7 nJ for 1650 nm excitation, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "f2ab0bba-15b3-4e13-9813-592e6716f138",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C9",
+      "claim": "Infrared high-pulse-energy low-repetition-rate excitation opens novel perspectives for intravital deep-tissue microscopy of multiple parameters in strongly scattering tissues and organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that infrared high-pulse-energy low-repetition-rate excitation opens novel perspectives for intravital deep-tissue microscopy of multiple parameters in strongly scattering tissues and organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "9fdff12b-0391-4f8a-a38e-8a14004127e2",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C10",
+      "claim": "Confocal microscopy enables a penetration depth less than 100 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Linear imaging modalities such as confocal microscopy enable a penetration depth less than 100 \u00b5m (Helmchen and Denk, 2005), which restricts their application to low-scattering, thin or surface-specific tissue models, such as the mouse inner ear and chick embryo (Deryugina, 2016; Tomo et al., 2007; Figure 1a, Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Helmchen and Denk, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "4e337b44-f259-4388-b858-04a8233002a7",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C11",
+      "claim": "Confocal microscopy is restricted to low-scattering, thin or surface-specific tissue models.",
+      "claim_type": "EXPLICIT",
+      "source": "Linear imaging modalities such as confocal microscopy enable a penetration depth less than 100 \u00b5m (Helmchen and Denk, 2005), which restricts their application to low-scattering, thin or surface-specific tissue models, such as the mouse inner ear and chick embryo (Deryugina, 2016; Tomo et al., 2007; Figure 1a, Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Deryugina, 2016 and Tomo et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "0f12f3d9-94f9-4a35-8b00-3d5dc4a62cfb",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C12",
+      "claim": "2-photon microscopy based on high-frequency near-infrared excitation pulses (80 MHz, ~100\u2013200 fs, 800\u20131300 nm) provides 100\u2013400 \u00b5m imaging depth in highly scattering tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of reduced scattering and absorption of the excitation light and selective excitation of the focal plane (Helmchen and Denk, 2005; Diaspro et al., 2005), 2-photon (2P) microscopy based on high-frequency near-infrared excitation pulses (80 MHz, ~100\u2013200 fs, 800\u20131300 nm, further referred to as lowIR) provides 100\u2013400 \u00b5m imaging depth in highly scattering tissues, for example, liver (Ritsma et al., 2012) and skin (Andresen et al., 2009), and up to 500\u2013800 \u00b5m in less scattering tissues, such as mouse brain cortex (Helmchen and Denk, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ritsma et al., 2012 and Andresen et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "aab40796-5c73-42ae-8131-fa7288437ea6",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C13",
+      "claim": "2-photon microscopy provides up to 500\u2013800 \u00b5m imaging depth in less scattering tissues, such as mouse brain cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of reduced scattering and absorption of the excitation light and selective excitation of the focal plane (Helmchen and Denk, 2005; Diaspro et al., 2005), 2-photon (2P) microscopy based on high-frequency near-infrared excitation pulses (80 MHz, ~100\u2013200 fs, 800\u20131300 nm, further referred to as lowIR) provides 100\u2013400 \u00b5m imaging depth in highly scattering tissues, for example, liver (Ritsma et al., 2012) and skin (Andresen et al., 2009), and up to 500\u2013800 \u00b5m in less scattering tissues, such as mouse brain cortex (Helmchen and Denk, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Helmchen and Denk, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "c1025fd3-538a-4d30-8749-f02d107a3b0c",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C14",
+      "claim": "Efficient 3P microscopy requires shorter (sub-100 fs) pulses at the focus with ~5\u201310 times higher energy compared to 2P microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the well-established 2P microscopy lowIR excitation regime (100\u2013200 fs pulses with sub-nJ energy density at the focus), efficient 3P microscopy requires shorter (sub-100 fs) pulses at the focus with ~5\u201310 times higher energy (K\u00f6nig et al., 1999) (highIR excitation) to generate comparable excitation of fluorophores (Xu et al., 1996; Wang and Xu, 2020; Supplementary file 1a, Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to K\u00f6nig et al., 1999, Xu et al., 1996, and Wang and Xu, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "7db85895-4187-42f1-81e1-d2dc5a8f03e6",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C15",
+      "claim": "3P microscopy applies lower pulse repetition rates (1\u20132 MHz) compared to pulse repetition rates commonly used for 2P microscopy (80 MHz) to keep average power and sample heating at acceptable levels.",
+      "claim_type": "EXPLICIT",
+      "source": "To keep the average power and associated sample heating at an acceptable level, 3P microscopy applies lower pulse repetition rates (1\u20132 MHz) compared to pulse repetition rates commonly used for 2P microscopy (80 MHz) (Beaurepaire et al., 2001; Theer et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beaurepaire et al., 2001 and Theer et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "6c3a08c9-0655-42de-8302-b981e4f1de68",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C16",
+      "claim": "The setup achieved a resolution better than 0.8 \u00b5m in the lateral and 3 \u00b5m in the axial dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitation was focused with a high-NA objective, resulting in a resolution better than 0.8 \u00b5m in the lateral and 3 \u00b5m in the axial dimension (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental measurements shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "8cec8c84-830f-4bc8-8324-b4f131bd44a0",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C17",
+      "claim": "1650 nm highIR excitation enables resolution of structural details with THG contrast at depths encompassing the entire cortex (>1 mm) in mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the mouse brain as a reference (Horton et al., 2013; Weisenburger et al., 2019), we confirmed that 1650 nm highIR excitation enables to resolve structural details with third harmonic generation (THG) contrast at depths encompassing the entire cortex (>1 mm), which outperforms the imaging depth obtained with 1270 nm lowIR excitation by almost a factor of two (Figure 1\u2014figure supplement 3b,c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "6fc6596a-a887-46d3-b799-9d3e2d835e86",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C18",
+      "claim": "1650 nm highIR excitation outperforms 1270 nm lowIR excitation by almost a factor of two in imaging depth in mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the mouse brain as a reference (Horton et al., 2013; Weisenburger et al., 2019), we confirmed that 1650 nm highIR excitation enables to resolve structural details with third harmonic generation (THG) contrast at depths encompassing the entire cortex (>1 mm), which outperforms the imaging depth obtained with 1270 nm lowIR excitation by almost a factor of two (Figure 1\u2014figure supplement 3b,c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "a928b136-602e-47b3-8c21-66b484ddbcfe",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C19",
+      "claim": "In the neocortex, the effective attenuation length (le) was 336 \u00b5m for 1650 nm excitation and 280 \u00b5m for 1280 nm excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the neocortex, le was 336 \u00b5m for 1650 nm excitation and 280 \u00b5m for 1280 nm excitation (Figure 1\u2014figure supplement 3d), in agreement with previous work (Horton et al., 2013; Wang et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental measurements shown in Figure 1\u2014figure supplement 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "a970d12d-cbf4-4b0b-9e1e-ae7bd5d1e7cd",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C20",
+      "claim": "When excited at 1650 nm, TagRFP, mCherry, and AF680 followed a cubic dependence on excitation power, consistent with third-order processes.",
+      "claim_type": "EXPLICIT",
+      "source": "When excited at 1650 nm, the red fluorophores TagRFP, mCherry, and AF680 followed a cubic dependence on excitation power, while green and blue fluorophores eGFP and Hoechst followed a quartic dependence, consistent with respective third- and fourth-order processes (Cheng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by power-dependence measurements shown in Figure 1d and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "d52103cd-c320-49ea-881a-ae092eb69bac",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C21",
+      "claim": "When excited at 1650 nm, eGFP and Hoechst followed a quartic dependence on excitation power, consistent with fourth-order processes.",
+      "claim_type": "EXPLICIT",
+      "source": "When excited at 1650 nm, the red fluorophores TagRFP, mCherry, and AF680 followed a cubic dependence on excitation power, while green and blue fluorophores eGFP and Hoechst followed a quartic dependence, consistent with respective third- and fourth-order processes (Cheng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by power-dependence measurements shown in Figure 1d and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "0573c0a1-c4a9-4327-a31f-b082e31ecc62",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C22",
+      "claim": "3- and 4-photon-excited fluorescence along with multi-harmonic SHG and THG signals were obtained simultaneously using 1650 nm excitation, resulting in six-channel images in a single scan.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that 3- and 4-photon-excited fluorescence (3PEF, 4PEF) along with multi-harmonic SHG and THG signals were obtained simultaneously using 1650 nm excitation, resulting in six-channel images in a single scan (Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by multiparametric imaging shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "34ee8b10-f912-4496-ba83-755cdbda6320",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C23",
+      "claim": "A key advantage of one-shot excitation scheme is that it is free of chromatic aberration.",
+      "claim_type": "EXPLICIT",
+      "source": "Although independent control of each respective signal strength is not possible, a key advantage of this one-shot excitation scheme is that it is free of chromatic aberration, a common problem in multi-beam imaging (Theer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the single-beam excitation approach, supported by citation to Theer et al., 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "ff7cf23a-b1b5-4e02-bdc6-58dc36d1b175",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C24",
+      "claim": "Intracellular Ca2+ responses represent a sensitive readout for non-lethal cell stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular Ca2+ responses represent a sensitive readout for non-lethal cell stress, caused by opening of calcium channels as well as by transient membrane damage caused by reactive oxygen species and other cytotoxic events (Hopt and Neher, 2001; Iwanaga et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hopt and Neher, 2001 and Iwanaga et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "15e49406-c879-422d-a62e-2897728dbc84",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C25",
+      "claim": "Intermittent highIR scanning at toxic intensity (17 nJ) caused rapid-onset Ca2+ elevation in cell subsets followed by gradual increase of the Sytox signal.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, intermittent highIR scanning at toxic intensity (17 nJ) caused rapid-onset Ca2+ elevation in cell subsets followed by gradual increase of the Sytox signal (Figure 2b, frames #102\u2013201).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "c45f39a6-9fd7-48ff-829b-5ceca1a6a960",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C26",
+      "claim": "The Ca2+ signal reliably indicated phototoxic stress, prior to detection of cell death by Sytox and even in cells which remained viable at the experimental endpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Ca2+ signal reliably indicated phototoxic stress, prior to detection of cell death by Sytox and even in cells which remained viable at the experimental endpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the temporal analysis of Ca2+ and Sytox responses shown in Figure 2c and Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "59cea63f-9e40-40ff-bcf2-e0df18d14411",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C27",
+      "claim": "A threshold for excitation energy in the focus of up to 8.4 nJ at the sample surface allows for safe time-lapse imaging inside the tissue, when focusing at least 40 \u00b5m deep inside the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a threshold for excitation energy in the focus of up to 8.4 nJ at the sample surface allows for safe time-lapse imaging inside the tissue, when focusing at least 40 \u00b5m deep inside the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from experimental measurements shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "17cf9f8f-c98d-4fec-8b5a-b91640f5e141",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C28",
+      "claim": "Both Ca2+ and Sytox signals were spatially restricted within the highIR excitation plane, without effects in regions above and below.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Ca2+ and Sytox signals were spatially restricted within the highIR excitation plane, without effects in regions above and below (Figure 2e and Figure 2\u2014figure supplement 1c-f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by depth-stack measurements shown in Figure 2e and Figure 2\u2014figure supplement 1c-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "dd01e0cd-0ddb-4f21-95f3-22cd5f6965e0",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C29",
+      "claim": "Continuous scanning with 1700 nm highIR excitation power of 17 mW (17 nJ \u00d7 1 MHz) at the sample surface can be used without causing linear phototoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that continuous scanning with 1700 nm highIR excitation power of 17 mW (17 nJ \u00d7 1 MHz) at the sample surface can be used without causing linear phototoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the spatial restriction of damage to the focal plane shown in Figure 2e and Figure 2\u2014figure supplement 1c-f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "3d5ed736-bf6c-42ea-9863-2eece412a40f",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C30",
+      "claim": "During continuous highIR exposure for energies at the sample surface below or equal to 2.8 nJ (1300 nm) or 8.7 nJ (1650 nm), the Ca2+ signal retained background activity, with occasional spontaneous Ca2+ fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "During continuous highIR exposure for energies at the sample surface below or equal to 2.8 nJ (1300 nm) or 8.7 nJ (1650 nm), the Ca2+ signal retained background activity, with occasional spontaneous Ca2+ fluctuations (Figure 2g, asterisk; Figure 2\u2014videos 1; 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in vivo imaging experiments shown in Figure 2g and associated videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "884c57cf-1f72-40d9-b349-6b50617cea62",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C31",
+      "claim": "Higher excitation energies (3.9 nJ for 1300 nm, 12 nJ for 1650 nm) induced Ca2+ elevation in cell subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher excitation energies (3.9 nJ for 1300 nm, 12 nJ for 1650 nm) induced Ca2+ elevation in cell subsets (Figure 2g and Figure 2\u2014videos 1; 2, arrowheads).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in vivo imaging experiments shown in Figure 2g and associated videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "9acf4b6b-dc64-475d-b298-f8e54b58748c",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C32",
+      "claim": "Within the toxic range, eGFP intensity declined by 25% after 25 scans (1300 nm) and mCherry intensity declined by 25% after two scans (1650 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the toxic range, eGFP intensity declined by 25% after 25 scans (1300 nm) and mCherry intensity declined by 25% after two scans (1650 nm) (Figure 2\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by photobleaching measurements shown in Figure 2\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "78b7eb8d-5aa3-4241-9ac1-8081e6945d1a",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C33",
+      "claim": "Within the non-toxic range, mCherry intensity decreased by 10\u201320% after 50 scans, while 3P-excited eGFP signal remained stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the non-toxic range, mCherry intensity decreased by 10\u201320% after 50 scans, while 3P-excited eGFP signal remained stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by photobleaching measurements shown in Figure 2\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "d2fdcf49-0a07-477f-93ac-f58e8358d9e4",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C34",
+      "claim": "3P and 4P highIR excitation resolved subcellular features of eGFP and TagRFP labeled cells at depths beyond 400 \u00b5m, as compared to 225 \u00b5m for OPO-generated 2P lowIR excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "3P and 4P highIR excitation resolved subcellular features of eGFP and TagRFP labeled cells at depths beyond 400 \u00b5m, as compared to 225 \u00b5m for OPO-generated 2P lowIR excitation (Figure 3a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by imaging depth comparison shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "e650a583-a898-484f-a49e-04a6ae0da1f2",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C35",
+      "claim": "While the SNR remained above the detection limit (SNR \u22653) until a depth of only ~255 \u00b5m using the 2P lowIR excitation regime, the 3P highIR excitation regime enabled reaching depths of ~395 \u00b5m (1650 nm) or ~415 \u00b5m (1300 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "While the SNR remained above the detection limit (SNR \u22653) until a depth of only ~255 \u00b5m using the 2P lowIR excitation regime, the 3P highIR excitation regime enabled us to reach depths of ~395 \u00b5m (1650 nm) or ~415 \u00b5m (1300 nm) (Figure 3c), corresponding to a nearly 2-fold increase as compared to lowIR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by SNR analysis shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "4ce466ab-14bc-4ce1-8584-888157c4eba1",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C36",
+      "claim": "For 3PE and 4PE processes, resolution remained higher with increasing imaging depth as compared to the resolution achieved by 2PE, which declined steeply beyond 125 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "For 3PE and 4PE processes, resolution remained higher with increasing imaging depth as compared to the resolution achieved by 2PE, which declined steeply beyond 125 \u00b5m (Figure 3d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by axial resolution analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "a32f7d11-6745-48f9-b38b-b94fe831a7c9",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C37",
+      "claim": "When red-shifting the excitation wavelength from 1180 to 1300 or 1650 nm, le increased from 103 to 128 or 220 \u00b5m, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "When red-shifting the excitation wavelength from 1180 to 1300 or 1650 nm, le increased from 103 to 128 or 220 \u00b5m, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by signal attenuation analysis shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "eb87be6c-141d-4570-80c7-692d2ba93e66",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C38",
+      "claim": "HighIR excitation increases the imaging depth by 2-fold compared to lowIR excitation using OPO-based sources and by 4-fold compared to lowIR excitation in the 800\u2013900 nm range.",
+      "claim_type": "EXPLICIT",
+      "source": "Through these combined effects, highIR excitation increases the imaging depth by 2-fold compared to lowIR excitation using OPO-based sources and by 4-fold compared to lowIR excitation in the 800\u2013900 nm range (Andresen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the imaging depth improvements demonstrated throughout the manuscript, with citation to Andresen et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "710b0f4b-c4c0-4dfd-ba7b-2940b0673e93",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C39",
+      "claim": "HighIR-excited THG resolved extracellular and cellular details at depths beyond 400 \u00b5m in tumor, while lowIR resolved primarily extracellular details until a depth of ~150 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tumor, highIR-excited THG resolved extracellular and cellular details (arrowheads) at depths beyond 400 \u00b5m, while lowIR resolved primarily extracellular details until a depth of ~150 \u00b5m (Figure 4a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by THG imaging comparison shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "b6b6717d-83a3-4952-b14b-82fe2f3716c8",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C40",
+      "claim": "SNR analysis showed a maximum imaging depth of >400 \u00b5m for highIR and <100 \u00b5m for lowIR in tumor THG imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "SNR analysis showed a maximum imaging depth of >400 \u00b5m for highIR and <100 \u00b5m for lowIR (Figure 4b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by SNR analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "25065ef5-2ac8-4075-8b3d-446a7f9647bd",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C41",
+      "claim": "Subcellular structures were reliably resolved by highIR excitation beyond 220 \u00b5m depth in bone, including osteocyte lacunae and canaliculi in the cortical bone layer and trabeculae in the bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcellular structures were reliably resolved by highIR excitation beyond 220 \u00b5m depth, including osteocyte lacunae and canaliculi in the cortical bone layer and trabeculae in the bone marrow (Figure 4c; yz-projections and arrowheads).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by bone imaging shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "76792d1e-4e13-4278-bb6d-31fd420adc6f",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C42",
+      "claim": "1650 nm highIR excitation resulted in both increased effective attenuation length le and larger imaging depth compared to 1270 nm lowIR excitation in bone.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 1650 nm highIR excitation resulted in both increased effective attenuation length le and larger imaging depth compared to 1270 nm lowIR excitation (Figure 4e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by signal attenuation analysis shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "499fea77-3b39-4a81-9093-cc5150ce8484",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C43",
+      "claim": "The SNR remained above the detection limit up to 928 \u00b5m depth for 1650 nm highIR, and up to 444 \u00b5m for 1270 nm lowIR excitation in mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNR remained above the detection limit up to 928 \u00b5m depth for 1650 nm highIR, and up to 444 \u00b5m for 1270 nm lowIR excitation (Figure 1\u2014figure supplement 3e, dotted lines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by SNR analysis shown in Figure 1\u2014figure supplement 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "6d0c7d75-33e9-4b10-9c3c-6df8a52acb99",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C44",
+      "claim": "The depth gain for THG imaging with highIR was at least 2-fold compared to lowIR excitation and irrespective of tissue type and density, including brain, tumor, and bone.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the applicability of highIR for deep imaging, the depth gain for THG imaging was at least 2-fold compared to lowIR excitation and irrespective of tissue type and density, including brain, tumor, and bone (Figure 5a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the summary of imaging depth limits shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "f44b18f2-8cd8-4968-aa52-f83a3823427d",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C45",
+      "claim": "The Ca2+ detection of phototoxic cell stress was faster and more sensitive than recording of irreversible cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ca2+ detection of phototoxic cell stress was faster and more sensitive than recording of irreversible cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the temporal analysis of Ca2+ and Sytox responses shown in Figure 2c and Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "a9212c97-e7e3-41cf-82a6-ab8773bd9870",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C46",
+      "claim": "The Ca2+ reporter enabled detection of damage which remained sublethal within the time frame of the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the Ca2+ reporter enabled to detect damage which remained sublethal within the time frame of the experiments, which may affect cell functionally but could escape detection by commonly used live-death reporters, such as DNA intercalating probes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the observation of Ca2+ responses in cells that remained Sytox-negative, shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "32ab3bee-33dc-4e77-81ca-77a414f661e2",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C47",
+      "claim": "Cell stress and bleaching were induced in the focal plane when pulse energies reached threshold values (3.9 nJ for 1300 nm and 12 nJ for 1650 nm at 50 \u00b5m depth).",
+      "claim_type": "EXPLICIT",
+      "source": "Cell stress and bleaching were induced in the focal plane when pulse energies reached threshold values (3.9 nJ for 1300 nm and 12 nJ for 1650 nm at 50 \u00b5m depth), eventually leading to physical disruption of tissue structures (burning marks), in line with observations by others (Hopt and Neher, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by phototoxicity experiments shown in Figure 2, with citation to Hopt and Neher, 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "78343676-d238-42ce-a24f-ccf640b4102b",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C48",
+      "claim": "The in-focus phototoxicity thresholds obtained in the cell-rich tumor model are comparable to the dynamic range detected in low-density tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The in-focus phototoxicity thresholds obtained in the cell-rich tumor model are comparable to the dynamic range detected in low-density tissues (Ouzounov et al., 2017; Yildirim et al., 2019; Wang et al., 2020), indicating that nonlinear phototoxicity might have a general cause, such as light-induced ionization or formation of reactive oxygen species (D\u00e9barre et al., 2014; Tirlapur et al., 2001), irrespective of the tissue density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with cited studies and inference about the mechanism.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "3a5b22a4-e942-41b9-866b-57dbd8dd4270",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C49",
+      "claim": "Up to six-channel multiparametric images were generated in live tumors with sufficient signal-to-noise ratio using a single highIR excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated up to six-channel multiparametric images in live tumors with sufficient signal-to-noise ratio using a single highIR excitation, simultaneously detecting 3PEF and 4PEF along with SHG and THG (Figure 5b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by multiparametric imaging shown in Figure 1b and summarized in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "df8ea00a-7a7c-4ba0-b208-c4a472613da8",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C50",
+      "claim": "The used excitation pulse energy in the focus was higher compared to previous studies: 1.4\u20132.1 times for 1650 nm and 0.7\u20131.7 times for 1300 nm, but still below the defined phototoxicity thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve multiparametric imaging, the used excitation pulse energy in the focus was higher compared to previous studies: 1.4\u20132.1 times for 1650 nm (Horton et al., 2013; Li et al., 2020; Guesmi et al., 2018) and 0.7\u20131.7 times for 1300 nm (Ouzounov et al., 2017; Wang et al., 2018a), but still below the defined phototoxicity thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited studies and reference to the phototoxicity thresholds established in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "fbd86847-b138-4738-a48a-1f073be8e377",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C51",
+      "claim": "The requirements for fluorophore concentration and brightness are stricter for 4P, as compared to 3P excitation processes, due to their even smaller absorption cross-section.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the requirements for fluorophore concentration and brightness are stricter for 4P, as compared to 3P excitation processes (Figure 5b), due to their even smaller absorption cross-section (Cheng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cheng et al., 2014 and summarized in Figure 5b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "391f5ca0-753e-40d2-84e5-22cface27465",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C52",
+      "claim": "Fluorophores with high quantum efficiency and/or abundance, such as H2B/eGFP or Hoechst must be selected for 4P excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, fluorophores with high quantum efficiency and/or abundance, such as H2B/eGFP or Hoechst must be selected for 4P excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the stricter requirements for 4P excitation and the successful use of these fluorophores in the experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "79eb9ff3-3650-4435-ab64-b032d49ee29c",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C53",
+      "claim": "At 1300 nm, red fluorescent proteins were excited with reduced efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "At 1300 nm however, red fluorescent proteins were excited with reduced efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the imaging experiments and shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "a90fcc2d-b0fd-4625-873c-8b443047488e",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C54",
+      "claim": "The excitation efficiency of red fluorescent proteins at 1300 nm was enhanced by carefully tuning the central excitation wavelength to higher-energy electronic excited states, enabling multiparametric imaging with high SNR in three fluorescent channels, at the cost of accelerated photobleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the excitation efficiency of red fluorescent proteins at 1300 nm was enhanced by carefully tuning the central excitation wavelength to higher-energy electronic excited states, enabling multiparametric imaging with high SNR in three fluorescent channels, at the cost of accelerated photobleaching (Hontani et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hontani et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "6e3d3a17-ec64-4517-9e17-15c8d50b3c3f",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C55",
+      "claim": "HighIR excitation has two important advantages in the context of tumor microscopy: it can roughly double the imaging depth compared to previous state-of-the-art 2P imaging, and it gives access to multiparametric imaging through the simultaneous detection of 3- and 4P fluorescence excitation and multi-harmonic signals.",
+      "claim_type": "EXPLICIT",
+      "source": "HighIR excitation has two important advantages in the context of tumor microscopy: it can roughly double the imaging depth compared to previous state-of-the-art 2P imaging, and it gives access to multiparametric imaging through the simultaneous detection of 3- and 4P fluorescence excitation and multi-harmonic signals (You et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings demonstrated throughout the manuscript, with citation to You et al., 2018b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "a785c89e-94f4-46e6-956b-c9b07884050c",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C56",
+      "claim": "HighIR excitation will improve intravital microscopy of understudied regions, including the tumor core and necrosis zones.",
+      "claim_type": "EXPLICIT",
+      "source": "In cancer research, highIR excitation will improve intravital microscopy of understudied regions, including the tumor core and necrosis zones (Deryugina and Kiosses, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective claim about future applications, supported by citation to Deryugina and Kiosses, 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "d5810749-e433-44d4-985a-3e83798e9db3",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C57",
+      "claim": "HighIR excitation should advance live imaging of structurally challenging tissues, including the bone marrow, organoids, and embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond cancer, highIR excitation should advance live imaging of structurally challenging tissues, including the bone marrow (Kim and Bixel, 2020), organoids, and embryos (D\u00e9barre et al., 2014; Guesmi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective claim about future applications, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "e662bf95-5b4d-487b-8193-f11f0f662d3f",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "claim_id": "C58",
+      "claim": "The much-improved THG signal, together with SHG, 3- and 4P fluorescence excitation of molecular reporters and/or endogenous fluorophores, will allow to record cell type and dynamic functions in a broader morphological context.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the much-improved THG signal, together with SHG, 3- and 4P fluorescence excitation of molecular reporters and/or endogenous fluorophores, will allow to record cell type and dynamic functions in a broader morphological context (Hontani et al., 2021; You et al., 2018b; Guesmi et al., 2018), such as cell activities and inflammation in the tumor microenvironment and label-free intra-operative histology (You et al., 2018b; You et al., 2018a; Zhang et al., 2019; Weigelin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective claim about future applications, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "05a428dd-2c49-4699-aa11-a972caa9dc75",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HighIR excitation (1300 and 1650 nm) provides more than 2-fold increased imaging depth in tumor tissue compared to lowIR 2-photon excitation, reaching depths of ~395-415 \u00b5m versus ~255 \u00b5m. This improvement is attributed to improved excitation confinement, reduced scattering (increased effective attenuation length from 103 \u00b5m at 1180 nm to 220 \u00b5m at 1650 nm), and maintained resolution at depth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C34, C35 provide direct experimental evidence from SNR analysis and imaging depth measurements in tumor tissue (Figure 3). Claims C36-C37 provide mechanistic support through resolution and attenuation length measurements. The 2-fold improvement is consistently demonstrated across multiple metrics and tissue types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "82c992dc-8041-41c4-9743-7efcdc60f4d3",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HighIR excitation provides at least 2-fold improved imaging depth for THG microscopy across multiple tissue types including tumor (>400 \u00b5m vs <100 \u00b5m), bone (beyond 220 \u00b5m with resolved subcellular structures), and brain (928 \u00b5m vs 444 \u00b5m), irrespective of tissue density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 provide consistent experimental evidence from SNR analysis and direct imaging comparisons across three distinct tissue types (Figures 4 and Figure 1\u2014figure supplement 3). The 2-fold or greater improvement is demonstrated with quantitative depth measurements and is attributed to increased effective attenuation length.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "8bf6de79-60fe-40e0-a68a-369e25d6891b",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A single highIR laser line at 1650 nm simultaneously induces 3-photon and 4-photon excitation processes, enabling six-channel multiparametric imaging (blue to far-red fluorescence plus SHG and THG) without chromatic aberration. Red fluorophores (TagRFP, mCherry, AF680) follow cubic power dependence (3P), while green/blue fluorophores (eGFP, Hoechst) follow quartic dependence (4P).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C20-C22 are directly supported by power-dependence measurements (Figure 1d, Figure 1\u2014figure supplement 4) showing the expected cubic and quartic relationships. Claims C5, C23, C49 demonstrate the practical application with multicolor imaging (Figure 1b-c). The chromatic aberration advantage is a logical consequence of single-beam excitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "34c9543f-45bd-4620-9755-35c6117404c3",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Safe imaging thresholds for highIR excitation were established at 2.8 nJ (1300 nm) and 8.7 nJ (1650 nm) at the sample surface using dual Ca2+ (GCaMP6) and cell death (Sytox) reporters. Ca2+ detection proved faster and more sensitive than Sytox for detecting phototoxic stress, including sublethal damage. Above threshold (3.9 nJ at 1300 nm, 12 nJ at 1650 nm), cells showed Ca2+ elevation and eventual cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C24-C27, C30-C31, C45-C47 are well-supported by systematic phototoxicity experiments (Figure 2). The dual-reporter approach provides both sensitive (Ca2+) and definitive (Sytox) readouts. Thresholds are quantitatively defined with clear dose-response relationships. The temporal dynamics showing Ca2+ preceding Sytox positivity (C26, C45-C46) strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "6be4eac2-0a89-483d-98b1-2c05cb0c92ca",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Phototoxic effects from highIR excitation are spatially restricted to the focal plane without linear phototoxicity in out-of-focus regions, even at average powers up to 17 mW (17 nJ \u00d7 1 MHz) at the sample surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by depth-stack measurements (Figure 2e, Figure 2\u2014figure supplement 1c-f) showing Ca2+ and Sytox signals confined to the excitation plane. This demonstrates that damage is due to nonlinear effects in the focus rather than linear absorption throughout the tissue volume.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "019f6480-0ed3-4861-9fcb-c42381c165f1",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Photobleaching within the toxic range showed 25% intensity decline after 25 scans for eGFP (1300 nm) and after 2 scans for mCherry (1650 nm). Within the non-toxic range, mCherry decreased 10-20% after 50 scans while 3P-excited eGFP remained stable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by quantitative photobleaching measurements (Figure 2\u2014figure supplement 2b). The differential bleaching rates between toxic and non-toxic ranges, and between fluorophores, are clearly documented. This establishes practical limits for time-lapse imaging applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "6c2ec69a-2941-49d9-b338-5092cf17e28d",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The highIR microscopy setup achieved resolution better than 0.8 \u00b5m lateral and 3 \u00b5m axial. In mouse brain, 1650 nm highIR excitation enabled THG imaging throughout the cortex (>1 mm depth), outperforming 1270 nm lowIR by nearly 2-fold. Effective attenuation lengths in neocortex were 336 \u00b5m (1650 nm) vs 280 \u00b5m (1280 nm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 are supported by direct measurements of point-spread functions (Figure 1\u2014figure supplement 1) and brain imaging experiments (Figure 1\u2014figure supplement 3). The resolution specifications and depth improvements are quantitatively documented with SNR analysis and attenuation length calculations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "9c2a8c4f-25a4-4ddf-8d86-bf6710478f71",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In-focus phototoxicity thresholds in cell-rich tumor models are comparable to those in low-density tissues, suggesting a general mechanism such as light-induced ionization or reactive oxygen species formation, irrespective of tissue density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by comparison with cited studies (Ouzounov et al., 2017; Yildirim et al., 2019; Wang et al., 2020) and the authors' own measurements. The inference about mechanism is reasonable given the consistency across tissue types, though direct mechanistic evidence is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "bfc59d6b-9c45-429b-ad01-9999eaa22b77",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiparametric imaging required pulse energies 1.4-2.1\u00d7 higher than previous studies at 1650 nm and 0.7-1.7\u00d7 at 1300 nm, but remained below phototoxicity thresholds. Requirements for 4P excitation are stricter than 3P due to smaller absorption cross-sections, necessitating high quantum efficiency fluorophores like H2B-eGFP or Hoechst. Red fluorescent proteins showed reduced excitation efficiency at 1300 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by comparison with cited literature and the experimental results (Figure 5b). The stricter requirements for 4P excitation (C51) are well-established in the literature (Cheng et al., 2014) and consistent with the observed need for high-abundance fluorophores. The reduced efficiency of red proteins at 1300 nm (C53) is directly observed in the imaging data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "389db580-0cd0-4fe3-b1b8-e204e14394a4",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has established that confocal microscopy penetrates <100 \u00b5m and is restricted to low-scattering tissues, 2P microscopy (80 MHz, 800-1300 nm) provides 100-400 \u00b5m depth in scattering tissues and 500-800 \u00b5m in brain, 3P microscopy has been demonstrated for deep brain imaging, and efficient 3P microscopy requires sub-100 fs pulses with 5-10\u00d7 higher energy than 2P at lower repetition rates (1-2 MHz vs 80 MHz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C15 accurately summarize prior work and are supported by appropriate citations (Helmchen and Denk 2005, Ritsma et al. 2012, Andresen et al. 2009, K\u00f6nig et al. 1999, Xu et al. 1996, Beaurepaire et al. 2001, Theer et al. 2003). These claims provide necessary context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "db21f9b6-d85b-4550-965a-b5084d327056",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Recent work has shown that excitation efficiency of red fluorescent proteins at 1300 nm can be enhanced by tuning the excitation wavelength to higher-energy electronic excited states, enabling multiparametric imaging with high SNR in three channels, at the cost of accelerated photobleaching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is supported by citation to Hontani et al., 2021. This represents accurate reporting of prior work that addresses a limitation identified in the current study (reduced red protein excitation at 1300 nm).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "02890fe3-3918-4ed5-bfc8-0bad37a72205",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The excitation intensities used are compatible with live tissue imaging, and highIR excitation opens novel perspectives for intravital deep-tissue microscopy. HighIR excitation has two main advantages: roughly doubling imaging depth compared to state-of-the-art 2P imaging, and enabling multiparametric imaging through simultaneous 3P/4P fluorescence and multi-harmonic signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C9, C55 represent summary conclusions supported by the phototoxicity experiments (Figure 2) and the imaging depth/multiparametric imaging results throughout the manuscript. These are appropriate syntheses of the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    },
+    {
+      "id": "a13106aa-dbc5-473e-9f3f-f0ad070e1d94",
+      "content_id": "5de2946a-c4c9-492b-8803-e3cc79b7ae52",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "HighIR excitation will improve intravital microscopy of understudied tumor regions (core, necrosis zones), advance imaging of challenging tissues (bone marrow, organoids, embryos), and enable recording of cell functions in broader morphological context including tumor microenvironment and label-free intra-operative histology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C58 are prospective statements about future applications. While they are reasonable extrapolations from the demonstrated capabilities and are supported by citations to relevant literature, they represent speculation about future work rather than demonstrated results. The claims are plausible but not experimentally validated in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:57:59.940253Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f41c7c5d-658c-434a-9f57-d8ed9bfeefa8",
+      "result_id": "05a428dd-2c49-4699-aa11-a972caa9dc75"
+    },
+    {
+      "claim_id": "78528e51-6903-415b-81b6-98c85dbc7138",
+      "result_id": "05a428dd-2c49-4699-aa11-a972caa9dc75"
+    },
+    {
+      "claim_id": "d2fdcf49-0a07-477f-93ac-f58e8358d9e4",
+      "result_id": "05a428dd-2c49-4699-aa11-a972caa9dc75"
+    },
+    {
+      "claim_id": "e650a583-a898-484f-a49e-04a6ae0da1f2",
+      "result_id": "05a428dd-2c49-4699-aa11-a972caa9dc75"
+    },
+    {
+      "claim_id": "4ce466ab-14bc-4ce1-8584-888157c4eba1",
+      "result_id": "05a428dd-2c49-4699-aa11-a972caa9dc75"
+    },
+    {
+      "claim_id": "a32f7d11-6745-48f9-b38b-b94fe831a7c9",
+      "result_id": "05a428dd-2c49-4699-aa11-a972caa9dc75"
+    },
+    {
+      "claim_id": "eb87be6c-141d-4570-80c7-692d2ba93e66",
+      "result_id": "05a428dd-2c49-4699-aa11-a972caa9dc75"
+    },
+    {
+      "claim_id": "710b0f4b-c4c0-4dfd-ba7b-2940b0673e93",
+      "result_id": "82c992dc-8041-41c4-9743-7efcdc60f4d3"
+    },
+    {
+      "claim_id": "b6b6717d-83a3-4952-b14b-82fe2f3716c8",
+      "result_id": "82c992dc-8041-41c4-9743-7efcdc60f4d3"
+    },
+    {
+      "claim_id": "25065ef5-2ac8-4075-8b3d-446a7f9647bd",
+      "result_id": "82c992dc-8041-41c4-9743-7efcdc60f4d3"
+    },
+    {
+      "claim_id": "76792d1e-4e13-4278-bb6d-31fd420adc6f",
+      "result_id": "82c992dc-8041-41c4-9743-7efcdc60f4d3"
+    },
+    {
+      "claim_id": "499fea77-3b39-4a81-9093-cc5150ce8484",
+      "result_id": "82c992dc-8041-41c4-9743-7efcdc60f4d3"
+    },
+    {
+      "claim_id": "6d0c7d75-33e9-4b10-9c3c-6df8a52acb99",
+      "result_id": "82c992dc-8041-41c4-9743-7efcdc60f4d3"
+    },
+    {
+      "claim_id": "b55e648f-4f25-46b6-9fdf-f4218f8fb021",
+      "result_id": "8bf6de79-60fe-40e0-a68a-369e25d6891b"
+    },
+    {
+      "claim_id": "3b4b0e1c-1d0e-4c6c-b89c-d11e91050f50",
+      "result_id": "8bf6de79-60fe-40e0-a68a-369e25d6891b"
+    },
+    {
+      "claim_id": "a970d12d-cbf4-4b0b-9e1e-ae7bd5d1e7cd",
+      "result_id": "8bf6de79-60fe-40e0-a68a-369e25d6891b"
+    },
+    {
+      "claim_id": "d52103cd-c320-49ea-881a-ae092eb69bac",
+      "result_id": "8bf6de79-60fe-40e0-a68a-369e25d6891b"
+    },
+    {
+      "claim_id": "0573c0a1-c4a9-4327-a31f-b082e31ecc62",
+      "result_id": "8bf6de79-60fe-40e0-a68a-369e25d6891b"
+    },
+    {
+      "claim_id": "34ee8b10-f912-4496-ba83-755cdbda6320",
+      "result_id": "8bf6de79-60fe-40e0-a68a-369e25d6891b"
+    },
+    {
+      "claim_id": "3a5b22a4-e942-41b9-866b-57dbd8dd4270",
+      "result_id": "8bf6de79-60fe-40e0-a68a-369e25d6891b"
+    },
+    {
+      "claim_id": "9d151458-18d3-41c3-940e-dd05d57b6544",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "8aba6af6-5ed3-455e-aa4b-01bde0521c2b",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "ff7cf23a-b1b5-4e02-bdc6-58dc36d1b175",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "15e49406-c879-422d-a62e-2897728dbc84",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "c45f39a6-9fd7-48ff-829b-5ceca1a6a960",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "59cea63f-9e40-40ff-bcf2-e0df18d14411",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "3d5ed736-bf6c-42ea-9863-2eece412a40f",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "884c57cf-1f72-40d9-b349-6b50617cea62",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "f44b18f2-8cd8-4968-aa52-f83a3823427d",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "a9212c97-e7e3-41cf-82a6-ab8773bd9870",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "32ab3bee-33dc-4e77-81ca-77a414f661e2",
+      "result_id": "34c9543f-45bd-4620-9755-35c6117404c3"
+    },
+    {
+      "claim_id": "17cf9f8f-c98d-4fec-8b5a-b91640f5e141",
+      "result_id": "6be4eac2-0a89-483d-98b1-2c05cb0c92ca"
+    },
+    {
+      "claim_id": "dd01e0cd-0ddb-4f21-95f3-22cd5f6965e0",
+      "result_id": "6be4eac2-0a89-483d-98b1-2c05cb0c92ca"
+    },
+    {
+      "claim_id": "9acf4b6b-dc64-475d-b298-f8e54b58748c",
+      "result_id": "019f6480-0ed3-4861-9fcb-c42381c165f1"
+    },
+    {
+      "claim_id": "78b7eb8d-5aa3-4241-9ac1-8081e6945d1a",
+      "result_id": "019f6480-0ed3-4861-9fcb-c42381c165f1"
+    },
+    {
+      "claim_id": "6c3a08c9-0655-42de-8302-b981e4f1de68",
+      "result_id": "6c2ec69a-2941-49d9-b338-5092cf17e28d"
+    },
+    {
+      "claim_id": "8cec8c84-830f-4bc8-8324-b4f131bd44a0",
+      "result_id": "6c2ec69a-2941-49d9-b338-5092cf17e28d"
+    },
+    {
+      "claim_id": "6fc6596a-a887-46d3-b799-9d3e2d835e86",
+      "result_id": "6c2ec69a-2941-49d9-b338-5092cf17e28d"
+    },
+    {
+      "claim_id": "a928b136-602e-47b3-8c21-66b484ddbcfe",
+      "result_id": "6c2ec69a-2941-49d9-b338-5092cf17e28d"
+    },
+    {
+      "claim_id": "78343676-d238-42ce-a24f-ccf640b4102b",
+      "result_id": "9c2a8c4f-25a4-4ddf-8d86-bf6710478f71"
+    },
+    {
+      "claim_id": "df8ea00a-7a7c-4ba0-b208-c4a472613da8",
+      "result_id": "bfc59d6b-9c45-429b-ad01-9999eaa22b77"
+    },
+    {
+      "claim_id": "fbd86847-b138-4738-a48a-1f073be8e377",
+      "result_id": "bfc59d6b-9c45-429b-ad01-9999eaa22b77"
+    },
+    {
+      "claim_id": "391f5ca0-753e-40d2-84e5-22cface27465",
+      "result_id": "bfc59d6b-9c45-429b-ad01-9999eaa22b77"
+    },
+    {
+      "claim_id": "79eb9ff3-3650-4435-ab64-b032d49ee29c",
+      "result_id": "bfc59d6b-9c45-429b-ad01-9999eaa22b77"
+    },
+    {
+      "claim_id": "88856145-201b-47aa-9559-d4ddb7f452a0",
+      "result_id": "389db580-0cd0-4fe3-b1b8-e204e14394a4"
+    },
+    {
+      "claim_id": "9fdff12b-0391-4f8a-a38e-8a14004127e2",
+      "result_id": "389db580-0cd0-4fe3-b1b8-e204e14394a4"
+    },
+    {
+      "claim_id": "4e337b44-f259-4388-b858-04a8233002a7",
+      "result_id": "389db580-0cd0-4fe3-b1b8-e204e14394a4"
+    },
+    {
+      "claim_id": "0f12f3d9-94f9-4a35-8b00-3d5dc4a62cfb",
+      "result_id": "389db580-0cd0-4fe3-b1b8-e204e14394a4"
+    },
+    {
+      "claim_id": "aab40796-5c73-42ae-8131-fa7288437ea6",
+      "result_id": "389db580-0cd0-4fe3-b1b8-e204e14394a4"
+    },
+    {
+      "claim_id": "c1025fd3-538a-4d30-8749-f02d107a3b0c",
+      "result_id": "389db580-0cd0-4fe3-b1b8-e204e14394a4"
+    },
+    {
+      "claim_id": "7db85895-4187-42f1-81e1-d2dc5a8f03e6",
+      "result_id": "389db580-0cd0-4fe3-b1b8-e204e14394a4"
+    },
+    {
+      "claim_id": "a90fcc2d-b0fd-4625-873c-8b443047488e",
+      "result_id": "db21f9b6-d85b-4550-965a-b5084d327056"
+    },
+    {
+      "claim_id": "217b6182-8dd4-4794-9057-8099faa5b562",
+      "result_id": "02890fe3-3918-4ed5-bfc8-0bad37a72205"
+    },
+    {
+      "claim_id": "f2ab0bba-15b3-4e13-9813-592e6716f138",
+      "result_id": "02890fe3-3918-4ed5-bfc8-0bad37a72205"
+    },
+    {
+      "claim_id": "6e3d3a17-ec64-4517-9e17-15c8d50b3c3f",
+      "result_id": "02890fe3-3918-4ed5-bfc8-0bad37a72205"
+    },
+    {
+      "claim_id": "a785c89e-94f4-46e6-956b-c9b07884050c",
+      "result_id": "a13106aa-dbc5-473e-9f3f-f0ad070e1d94"
+    },
+    {
+      "claim_id": "d5810749-e433-44d4-985a-3e83798e9db3",
+      "result_id": "a13106aa-dbc5-473e-9f3f-f0ad070e1d94"
+    },
+    {
+      "claim_id": "e662bf95-5b4d-487b-8193-f11f0f662d3f",
+      "result_id": "a13106aa-dbc5-473e-9f3f-f0ad070e1d94"
+    }
+  ],
+  "comparisons": []
+}

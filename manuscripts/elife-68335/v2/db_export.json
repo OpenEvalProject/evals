@@ -1,0 +1,2286 @@
+{
+  "submission": {
+    "id": "557530e2-b348-40d2-816f-670cae7d767a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:39:45.929744Z",
+    "updated_at": "2025-12-03T05:39:45.929744Z"
+  },
+  "content": [
+    {
+      "id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "submission_id": "557530e2-b348-40d2-816f-670cae7d767a",
+      "content_type": "manuscript",
+      "content_text": "# A deep learning algorithm to translate and classify cardiac electrophysiology\n\n## Authors\n\n- Parya Aghasafari<sup>1</sup>\n- Pei-Chi Yang<sup>1</sup>\n- Divya C Kernik<sup>2</sup>\n- Kazuho Sakamoto<sup>3</sup>\n- Yasunari Kanda<sup>4</sup> ([ORCID: 0000-0003-2527-3526](https://orcid.org/0000-0003-2527-3526))\n- Junko Kurokawa<sup>3</sup>\n- Igor Vorobyov<sup>1</sup> ([ORCID: 0000-0002-4767-5297](https://orcid.org/0000-0002-4767-5297))\n- Colleen E Clancy<sup>1</sup> ([ORCID: 0000-0001-6849-4885](https://orcid.org/0000-0001-6849-4885)) \u2020\n\n### Affiliations\n\n1. Department of Physiology and Membrane Biology, University of California, Davis Davis United States\n2. Washington University in St. Louis St. Louis United States\n3. Department of Bio-Informational Pharmacology, School of Pharmaceutical Sciences, University of Shizuoka Shizuoka Japan\n4. Division of Pharmacology, National Institute of Health Sciences Kanagawa Japan\n5. Department of Pharmacology, University of California, Davis Davis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe development of induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) has been a critical in vitro advance in the study of patient-specific physiology, pathophysiology, and pharmacology. We designed a new deep learning multitask network approach intended to address the low throughput, high variability, and immature phenotype of the iPSC-CM platform. The rationale for combining translation and classification tasks is because the most likely application of the deep learning technology we describe here is to translate iPSC-CMs following application of a perturbation. The deep learning network was trained using simulated action potential (AP) data and applied to classify cells into the drug-free and drugged categories and to predict the impact of electrophysiological perturbation across the continuum of aging from the immature iPSC-CMs to the adult ventricular myocytes. The phase of the AP extremely sensitive to perturbation due to a steep rise of the membrane resistance was found to contain the key information required for successful network multitasking. We also demonstrated successful translation of both experimental and simulated iPSC-CM AP data validating our network by prediction of experimental drug-induced effects on adult cardiomyocyte APs by the latter.\n\n## Introduction\n\nThe development of novel technologies has resulted in new ways to study cardiac function and rhythm disorders (Shaheen et al., 2018). One such technology is the induced pluripotent stem cell-derived cardiomyocyte (iPSC-CMs) in vitro model system (Leyton-Mange et al., 2014). The iPSC-CM system constitutes a powerful in vitro tool for preclinical assessment of cardiac electrophysiological impact and drug safety liabilities in a human physiological context (Sun et al., 2012; Lan et al., 2013; Burridge et al., 2016; Doss and Sachinidis, 2019; Collins et al., 2020; Wu et al., 2019). Moreover, because iPSC-CMs can be cultured from patient-specific\u00a0cells, it has shown to be an ideal model system for patient-based medicine (Wu et al., 2019; Sayed et al., 2016; Matsa et al., 2016).\n\nWhile utilization of in vitro iPSC-CMs allows for testing of responses to drugs and understanding physiological mechanisms (Tveito et al., 2018; Tveito et al., 2020; Sube and Ertel, 2017; Navarrete et al., 2013), there is still a major inherent limitation of the approach: the complex differentiation process to create iPSC-CMs results in a model of cardiac electrical behavior that resembles fetal cardiomyocytes. Hallmarks of the immature phenotype include spontaneous beating, immature calcium handling, presence of developmental currents, and significant differences in the relative contributions of repolarizing potassium currents compared to adult cardiomyocytes (adult-CMs) (Lieu et al., 2013; Veerman et al., 2015; Tu et al., 2018). The profound differences between the immature iPSC-CMs and the adult-CMs have led to persistent questions about the utility and applicability of the iPSC-CM action potential (AP) to predict relevant drug impacts on adult human electrophysiology (Blinova et al., 2018; Sala et al., 2017).\n\nSeveral recent studies have proposed computational frameworks to address the primary limitation in using iPSC-CMs and animal cardiomyocytes for drug screening (Tveito et al., 2018; Tveito et al., 2020; Gong and Sobie, 2018; de Korte et al., 2020). The innovative studies described by Tvieto and colleagues (Sayed et al., 2016; Matsa et al., 2016) presented a translation algorithm that identified a mapping function to identify the relationships between the parameters that are defined by key ion channel conductances in the iPSC-CM APs and the adult-CM APs. In another study by Gong and Sobie, additional insights were revealed through application of an efficient partial least squares regression (PLSR) methodology to translate key physiological features between iPSC-CMs and adult-CMs. They also demonstrated the potential to translate between species, between drug-free and simple drugged models, as well as between healthy and diseased phenotypes (Gong and Sobie, 2018). Koivum\u00e4ki et al. also tried to address the problem of iPSC-CMs immaturity by establishing a novel in silico mathematical model for iPSC-CMs, which can estimate adult-CM behavior (Koivum\u00e4ki et al., 2018).\n\nThe efficacy of the linear translation algorithms used in the earlier studies relies on a collection of underlying assumptions (Gong and Sobie, 2018). One described by Tvieto et al. is that cardiac protein expression levels would differ but their functional properties remain invariant during maturation and that a drug will modify protein function in the same way for iPSC-CMs and the adult-CMs (Tveito et al., 2018). Tvieto et al. also acknowledged the difficulty in minimizing the cost function that measures the differences between the initial and target parameters, which therefore required a brute force search algorithm for minimization. One possible explanation for the difficulty in cost function minimization is that linear translation may not capture the nonlinearities comprising the actual underlying physiological differences (Gong and Sobie, 2018). Another underlying assumption with linear translation is the required representation of drug effects as a simple pore\u00a0block, modeled as a reduction in the maximal conductance of the channel (Tveito et al., 2018; Gong and Sobie, 2018). The earlier studies employed a biased method in that they rely on a priori parameter identification and extraction from voltage and calcium traces to allow feature mapping from immature to mature conditions (Tveito et al., 2018; Gong and Sobie, 2018). Earlier translators must also consider drug-free and drugged conditions independently.\n\nIn this study, we describe a deep learning multitask network that simultaneously performs translation and classification of signals from simulated cardiac myocytes for both drug-free and drugged conditions and demonstrate its utility for translating and predicting experimental data as well. The multitask network is an unbiased approach in that the user does not predefine the important parameters of the system. Rather, the network learns from the data to define important parameter regimes and data ranges. The new approach is indifferent to the underlying form of the models and can translate time-series data from any source. Moreover, the deep learning approach accepts nonlinearity of the system, makes no assumptions about changes in cardiac protein expression and function during maturation, and can successfully translate simple pore block and complex conformation state-dependent channel\u2013drug interaction. The network learns from all of these data sources suggesting its broad applicability, but it requires multiple quality datasets for robust and successful translation. In addition, the multitask behavior of the network presents a single process that can perform translating any cardiac AP into the subject of perturbation.\n\nThere are multiple reasons why cell classification was considered in the study. Importantly, iPSC-CMs are generally used to understand how perturbation to the cells will result in a change to cardiac electrophysiology. Genetic and drug-induced perturbations have been commonly studied using iPSC-CM lines. An important aspect iPSC-CMs is the inherent variability reported in measurements. Indeed, wide-ranging behavior has been reported to spontaneously occur even from cells cultured from the same genetic line. Thus, it can be difficult at times to determine if a perturbation indeed has an effect compared to a control cell. Therefore, one purpose of the classification task as described in this study is to allow sorting of cells into categories without perturbation and cells that have undergone perturbation. The classification task allows us to then address the question of whether translation is effective in the setting of perturbation. We demonstrate here the efficacy of a deep learning network to perform classification in the example setting of a drug-induced perturbation.\n\nArtificial neural networks (ANNs)\u00a0are increasingly used to advance personalized medicine (Alhusseini et al., 2020; Rogers, 2020; Sevakula et al., 2020; Jin et al., 2009; Trayanova et al., 2021). Long-short-term-memory (LSTM)-based networks, which are capable of learning order dependence in sequence prediction problems (Hochreiter and Schmidhuber, 1997), have been widely used for cardiac monitoring purposes (Guo et al., 2021; Shi et al., 2021; Picon et al., 2019). They have been used to extract important biomarkers from raw ECG signals (Ballinger, 2018; He et al., 2019; Hou et al., 2019) and help clinicians to accurately detect common heart failure biomarkers in ECG screenings (Ballinger, 2018; Warrick and Homsi, 2017; Oh et al., 2018; Chen et al., 2020; Wang and Zhou, 2019; Bian, 2019). LSTM networks, which can catch existing temporal information in the electronic health records (EHRs), have been highlighted as the best predictive models using real-time data (Maragatham and Devi, 2019). LSTM-based classifiers have also empowered early arrhythmia detection by automatically classifying arrhythmias using ECG features (Yildirim et al., 2019; Wang et al., 2019; Martis et al., 2013; Liu et al., 2019; Yildirim, 2018). In addition, deep learning algorithms have been employed to predict drug-induced arrhythmogenicity associated with blockade of the delayed rectifier K+ channel current (IKr) in the CMs encoded by human ether-\u00e0-go-go-related gene (hERG) (Yang et al., 2020) for sets of small molecules in drug discovery and screening process (Yang et al., 2020; Cai et al., 2019; Zhang et al., 2019; Dickson et al., 2020; Ryu et al., 2020; Li et al., 2020).\n\nHere, we implemented a deep learning LSTM-based multitask network to classify iPSC-CM AP traces into drug-free and drugged categories and translate them into adult-CM AP waveforms. To collect robust realistic simulated data for training the multitask network, we paced simulated cardiac myocytes with the addition of a physiological noise current at matching cycle lengths for Kernik in silico iPSC-CMs (Kernik et al., 2019) and O\u2019Hara\u2013Rudy in silico human adult-CMs (O'Hara et al., 2011) to generate a population of drug-free simulated cardiac myocyte data. To ensure that our model could perform for both drug-free and drugged iPSC-CM and adult-CM APs simultaneously, we simulated drugged samples via both a simple drug-induced IKr block model of hERG channel conduction, GKr, reduction by 1\u201350% and a complex Markov model of conformation-state dependent IKr block in the presence of a clinical concentration, 2.72 ng/mL, of a potent hERG blocking drug dofetilide from our recent study (Yang et al., 2020). We evaluated the multitask network performance on a test dataset and showed excellent performance to translate and classify signals in the form of time-resolved AP traces. We performed ablation studies to reveal the most important iPSC-CM AP information for classifying AP traces into drug-free and drugged categories and network translation into adult-CM APs by removing iPSC-CM AP values during various time frames (feature ablation). We also explored the importance of individual LSTM network building blocks and how decoupling of the translation and classification tasks affected overall network performance. We then showed how the\u00a0proposed multitask network can be applied even to scarce experimental data, which was also used to validate the model.\n\nIn this study, we show that developments in iPSC-CM experimental technology and cardiac electrophysiological modeling and simulation of iPSC-CMs can be leveraged for the application of ANNs as a universal approximator (Goodfellow et al., 2016) to find the most accurate mapping function that is capable of learning nonlinear relationships to predict disease phenotype and drug response in cardiac myocytes from immaturity to maturation.\n\n## Results\n\nIn this study, we set out to build a multitask network that would perform two distinct tasks: the first task is to classify iPSC-CM APs into drug-free and drugged categories. The second goal is to translate iPSC-CM APs into corresponding adult-CM AP waveforms. To collect the data for training the multitask network, we simulated a population of 208 AP waveforms for both Kernik in silico human iPSC-CMs (Kernik et al., 2019; Figure 1E, blue) and O\u2019Hara\u2013Rudy in silico human adult-CMs (O'Hara et al., 2011; Figure 1F, blue). We ensured consistency across a population of simulated myocytes by applying physiological noise at matching the cycle lengths into the iPSC-CMs and adult-CMs. The cell variability in each population is intended to represent the individual variability that is observed in a drug-free human population (Kernik et al., 2019; O'Hara et al., 2011; Tanskanen and Alvarez, 2007). An average AP trace from the population is shown in Figure 1A for iPSC-CMs and Figure 1B for adult-CMs. In Figure 1C,\u00a0D, the ionic currents underlying the in silico iPSC-CM APs and adult-CM APs show marked differences, one reason for the broadly expressed concerns about the applicability of utilizing immature iPSC-CM APs in the study of human disease and pharmacology. The substantial current differences illustrate the necessity of a generalized approach to perform translation from immature myocytes into mature myocytes. To ensure that our multitask network could perform over a range of conditions and model forms, we simulated drugged iPSC-CM and adult-CM APs via both a simple IKr drug block model of GKr reduction by 1\u201350% (250 samples in Figure 1E,\u00a0F, green) and a complex model of conformation-state dependent IKr block in the presence of 2.72 ng/mL dofetilide (300 samples in Figure 1E,\u00a0F, purple). We combined the drug-free and drugged models with simple and complex IKr block model schemes (758 samples) for training the multitask network. The differences in key parameters, upstroke velocity (Vmax), maximum diastolic potential (MDP), and action potential durations (APD) across the three conditions are tabulated and shown in Figure 1G.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig1-v2.jpg)\n\n**Figure 1.:** Comparison of cellular APs in the baseline model of (A) iPSC-CMs and (B) adult-CMs at a matched cycle length of 982 ms. (C,\u00a0D) Simulated ionic current (ICaL, IKr, IKs, Ito, IK1) profiles during (C) iPSC-CM and (D) adult-CM APs. (E) APs of spontaneously beating iPSC-CM cells (n =\u00a0208) and (F) adult-CM APs at matched cycle lengths were simulated after incorporating physiological noise currents as drug-free (blue) and drugged IKr modeled as simple GKr reduction by 1\u201350% IKr block (green) and a complex model of conformation-state dependent IKr block in the presence of 2.72 ng/mL dofetilide (purple). (G) Comparison between iPSC-CM and adult-CM drug-free and drugged models with simple and complex IKrblock model schemes (as indicated in the\u00a0right column), including upstroke velocity (Vmax), maximum diastolic potential (MDP), and action potential duration (APD).\n\nNext, we applied a digital forward and backward data filtering technique (Gustafsson, 1996) to the simulated iPSC-CM and adult-CM AP traces (Figure 2, left panels). Since we applied physiological noise to introduce a source of variability (as observed in human populations) in our model simulations, we assessed the possible phase distortion for AP waveforms following noise filtering. In Figure 2 (right panels), the distribution of iPSC-CM and adult-CM AP duration at 90% repolarization (APD90) values is shown. The near superimposition of the histogram distributions assures that noise filtering does not change the AP waveform morphology or time course and primarily removes existing vertical noises. Figure 2A,\u00a0B shows simulated drug-free iPSC-CM and adult-CM APs and corresponding APD90 distribution with physiological noise in blue and after applying the noise filtering technique in black for iPSC-CM APs and red for adult-CM APs. The same plots are illustrated for drugged AP traces with simple 1\u201350% IKr block (Figure 2C, D) and with complex IKr block model in the presence of 2.72 ng/mL dofetilide (Figure 2E, F). Next, we normalized drug-free and drugged noise-filtered iPSC-CM APs and adult-CM APs to use them as input and output, respectively, for training the multitask network.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig2-v2.jpg)\n\n**Figure 2.:** (A) drug-free iPSC-CM APs with physiological noise in blue and after applying the noise filtering technique in black; (B) drug-free adult-CM APs \u2013 blue and red traces; (C) drugged iPSC-CM APs with\u00a01\u201350%\u00a0IKr\u00a0block \u2013 green and black traces; (D) drugged adult-CM APs with\u00a01\u201350%\u00a0IKr\u00a0block \u2013 green and red traces; (E) drugged iPSC-CM APs with\u00a02.72\u00a0ng/mL\u00a0dofetilide \u2013 purple and black traces;\u00a0and\u00a0(F) drugged adult-CM APs with\u00a02.72\u00a0ng/mL\u00a0dofetilide \u2013purple and red traces.\n\nThe building blocks of the multitask network are illustrated in Figure 3A. The multitask network receives preprocessed simulation-generated iPSC-CM AP waveforms (noise-filtered and normalized) as input and scans whole AP time-series values through two stacked LSTM layers (Figure 3A,\u00a0D). The LSTM layers remember the most important iPSC-CM AP values (features) they need to perform the translation and classification tasks and pass the information to two fully connected layers (Figure 3A,\u00a0E), one for the translation task to predict the corresponding adult-CM AP waveform (Figure 3B) and one for the classification task to classify iPSC-CM APs into drug-free and drugged categories (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig3-v2.jpg)\n\n**Figure 3.:** (A) The general overview of the multitask network presented in this study. (B) The translation task to reconstruct adult cardiomyocyte\u00a0(adult-CM) action potentials\u00a0(APs) from the\u00a0corresponding induced pluripotent stem cell-derived cardiomyocyte\u00a0(iPSC-CM) APs. (C) The classification task to classify iPSC-CM APs into drug-free and drugged categories. (D) The logic flow process in the long-short-term-memory\u00a0(LSTM) layers. (E) The architecture of the implemented fully connected layers in the multitask network.\n\nThe workflow for training and evaluating the multitask network is depicted in Figure 4. As described above, we generated simulated drug-free and drugged iPSC-CM and adult-CM APs and applied a noise filtering technique to the AP waveforms. The waveforms were then normalized in a data preprocessing step for more efficient training of the multitask network. We used preprocessed iPSC-CM APs as the network input and adult-CM APs along with corresponding drug-free and drugged labels as network outputs, respectively. Next, we randomly split input and output data in 70:10:20 ratio into three subcategories: training, validation, and test datasets. We used the training dataset for training the multitask network to simultaneously perform translation and classification. The mean squared error, R2\u00a0score (Devore, 2011), and error in adult-CM APD90 prediction were used as evaluation metrics for the translation task. For the classification task, area under the receiver operating characteristic (AUROC) curve (Fawcett, 2006), network prediction accuracy, precision, and recall (Powers, 2011) were used to evaluate the network performance. To prevent overfitting, we calculated the evaluation metrics for both tasks using validation data during each iteration of training and compared those with values from the training dataset. When the model performance on the training dataset exhibited degradation relative to the validation dataset, we ceased training and tuning of the network hyperparameters. We evaluated the underlying mechanisms that inform the network performance by using a holdout test dataset to perform an ablation study. The ablation study allowed us to identify the most important information for network performance and is an indicator of the data that the network deems most important to remember to classify AP traces into drug-free and drugged categories and allow accurate translation into adult-CM APs (feature ablation). Finally, we performed a type of network component dissection by sequentially eliminating individual LSTM layers or the classification task to determine if all elements of the network are important to the overall performance.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig4-v2.jpg)\n\n**Figure 4.:** (1) Data preprocessing includes noise\u00a0filtering and normalization of the drug-free and drugged induced pluripotent stem cell-derived cardiomyocyte\u00a0(iPSC-CM) and adult cardiomyocyte\u00a0(adult-CM) action potentials\u00a0(APs). (2) Incorporating the preprocessed iPSC-CM APs as input and adult-CM APs and corresponding labels (drug-free [0] and drugged [1]) of iPSC-CM APs as targets into the multitask network. (3) Splitting the input and target data into training, validation and test set, and using training and validation set for training and tuning the network hyperparameters. (4) Comparing the network performance for training set and validation set to decide when to stop training and tuning the network hyperparameters. (5) Testing the overall multitask network performance using holdout test dataset and removing the long-short-term-memory\u00a0(LSTM) layers, classification task (model ablation), and iPSC-CM AP values at different time frames (feature ablation) to study the performance of the network in the absence of its building blocks.\n\nFigure 5 and Table 1 illustrate the overall multitask network performance for translation and classification tasks for the training and test datasets. Figure 5A,\u00a0B represents iPSC-CM APs (black), which were used for training and testing the multitask network, respectively. Figure 5B,\u00a0E depicts the comparison between simulated (red) and translated (cyan) adult-CM APs used for the training and testing the network. The comparison between histogram distribution of APD90 values for simulated and translated adult-CM APs in Figure 5C, F shows good agreement in terms of the frequency of virtual cells with similar APD.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig5-v2.jpg)\n\n**Figure 5.:** (A) The iPSC-CM APs used for training the multitask network contained a variety of drug-free and drugged action potential morphologies (training set). (B) Comparison between simulated (red) and translated adult-CM APs (cyan) in the training set. (C) Comparison between the histogram distribution of APD90 values for simulated and translated adult-CM APs in the training set. (D) Dedicated iPSC-CM APs for testing the performance of the multitask network (test set). (E) Comparison between simulated (red) and translated adult-CM APs (cyan) in the test set. (F) Comparison between histogram distribution of APD90 values for simulated and translated adult-CM APs in the test set.\n\n**Table 1.**\n Statistical measures for evaluating the performance of the multitask network for both iPSC-CM\u00a0AP trace classification into drug-free and drugged categories and their translation into adult-CM APs for training and test datasets as well as the effect of removing LSTM layers and classification task on the network performance.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"8\">Translation</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Performance metrics</td>\n      <td colspan=\"2\">MSE</td>\n      <td colspan=\"2\">R2\u00a0score</td>\n      <td colspan=\"2\">Error in APD90 prediction</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Training dataset</td>\n      <td colspan=\"2\">0.0027</td>\n      <td colspan=\"2\">0.992</td>\n      <td colspan=\"2\">3.41%</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Test dataset</td>\n      <td colspan=\"2\">0.0029</td>\n      <td colspan=\"2\">0.991</td>\n      <td colspan=\"2\">3.60%</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Remove LSTM layers test dataset</td>\n      <td colspan=\"2\">0.0031</td>\n      <td colspan=\"2\">0.991</td>\n      <td colspan=\"2\">3.78%</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Remove classification task test dataset</td>\n      <td colspan=\"2\">0.0034</td>\n      <td colspan=\"2\">0.990</td>\n      <td colspan=\"2\">4.33%</td>\n    </tr>\n    <tr>\n      <td colspan=\"8\">Classification</td>\n    </tr>\n    <tr>\n      <td>Performance metrics</td>\n      <td colspan=\"2\">AUROC</td>\n      <td colspan=\"2\">Accuracy</td>\n      <td colspan=\"2\">Recall</td>\n      <td>Precision</td>\n    </tr>\n    <tr>\n      <td>Training dataset</td>\n      <td colspan=\"2\">0.93</td>\n      <td colspan=\"2\">92%</td>\n      <td colspan=\"2\">0.92</td>\n      <td>0.93</td>\n    </tr>\n    <tr>\n      <td>Test dataset</td>\n      <td colspan=\"2\">0.91</td>\n      <td colspan=\"2\">92%</td>\n      <td colspan=\"2\">0.92</td>\n      <td>0.92</td>\n    </tr>\n    <tr>\n      <td>Remove LSTM layers test dataset</td>\n      <td colspan=\"2\">0.90</td>\n      <td colspan=\"2\">92%</td>\n      <td colspan=\"2\">0.90</td>\n      <td>0.91</td>\n    </tr>\n    <tr>\n      <td colspan=\"8\">iPSC-CM:\u00a0induced pluripotent stem cell-derived cardiomyocyte;\u00a0AP:\u00a0action potential;\u00a0adult-CM:\u00a0adult cardiomyocyte;\u00a0AP:\u00a0action potential;\u00a0AUROC:\u00a0area under the\u00a0receiver operating characteristic curve; LSTM: long-short-term-memory.</td>\n    </tr>\n  </tbody>\n</table>\n\nThe performance evaluation metrics for both the translation and classification tasks are listed in Table 1. The multitask network exhibits high accuracy in performing translation, despite large variability in APDs and regardless of the underlying model form. The network is able to translate iPSC-CM APs into adult-CM APs with less than 0.003 mean-squared error (MSE), 0.99 R2\u00a0score, and <4% error in APD90 prediction for both training and test datasets. To evaluate the network performance for the classification task, we compared the AUROC, prediction accuracy, recall, and precision for both training and test datasets. The multitask network proved to perform well in categorizing iPSC-CM APs into drug-free and drugged waveforms with approximately 90% accuracy (Table 1). Finally, we performed a type of network component dissection by sequentially eliminating individual LSTM layers or the classification task to determine if all elements of the network are important to the overall performance. The impact of removing these elements of the network on the network performance is shown in Table 1.\n\nNext, we performed a \u2018computational\u2019 ablation study as a correlate to the types of physiological ablations that are used to examine the roles and functions of a physiological system (LeCun et al., 1989; Reale et al., 1987). We tested how the performance of the multitask network would change by removing various information contained within specified time frames as shown in Figure 6A, B. To reveal the most important iPSC-CM AP information for classifying iPSC-CM APs into drug-free and drugged traces and translation into adult-CM APs, we did not allow the network to process data from within designated time frames from the iPSC-CM APs (feature ablation). We then retrained the multitask network by setting the missing information equal to zero and compared the calculated AUROC for classification task and MSE in adult-CM APs translation (red bars) with the recorded corresponding values for multitask network (green line) when it was provided full access to the complete iPSC-CM AP data. We observed that the\u00a0network is extremely sensitive to information contained within the 400\u2013500 ms time\u00a0frame (blacked dashed bar in Figure 6A, B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig6-v2.jpg)\n\n**Figure 6.:** The largest effect (most important information) is observed at 400\u2013500 ms interval (dotted black line). (A) Comparison between intact multitask network area under the\u00a0receiver operating characteristic\u00a0curve\u00a0(AUROC) and obtained AUROC values for drug-free and drugged iPSC-CM AP classification during removal of indicated time frames within iPSC-CM APs. (B) Comparison between intact multitask network mean-squared error\u00a0(MSE) (cyan line) and obtained MSE values for adult-CM AP translation during removal of indicated time frames within iPSC-CM APs (red bars). (C) AP trace (green) and membrane resistance (red) as a function of simulation time indicating very high values (as dI \u2192 0, dV/dI \u2192 \u221e) for the latter at 400\u2013500 ms. (D) Total current density, Itotal, demonstrates a plateau followed by a rapid decline at 400\u2013500 ms. (E) Individual current densities indicate a period of inward and outward current balance followed by rapid changes in IKrand other repolarizing components at 400\u2013500 ms time interval.\n\nThis result suggests that the most important information needed to classify iPSC-CM APs into drug-free and drugged traces and distinguish adult-CM AP signals from iPSC-CM AP signals is contained in a particular region of the AP plateau. The time\u00a0frame of the AP between 400 and 500 ms (Figure 6A, B) corresponds to a phase of exquisite sensitivity to perturbation. We have identified this particular AP range in an earlier study as the phase when the membrane resistance of the myocyte increases markedly (Figure 6C; Yang et al., 2015). This occurs as the inward and outward currents balance each other, leading to a net whole cell current that is nearly constant so that dI \u2192 0, dV/dI \u2192 \u221e (Figure 6D), followed by a rapid reduction in outward current. Figure 6E demonstrates that individual current densities have a period of inward and outward current balance followed by rapid changes in IKr and other repolarizing currents at 400\u2013500 ms time interval.\n\nWe next set out to demonstrate the real-world utility of the multitask classification and translation network by applying the network to experimental data. We used experimental iPSC-CM APs from the Kurokawa lab (Figure 7A) as the input data into the multitask network and translated to predicted adult-CM APs as shown in Figure 7B. The translation notably resulted in a reduction in variability in APD in the adult translated cells, consistent with our simulated results and with previous experimental observations (Blinova et al., 2018; Fabbri et al., 2019). In an additional validation of the multitask network, we undertook a test of the network to accurately translate drug block in iPSC-CMs to adult AP effects and then compared the predicted results with measured experimental data (O'Hara et al., 2011). We first simulated iPSC-CM APs with 50% block of IKr. We then used these simulated APs as an input for the multitask network and used the output from the translation task to predict 50% block on adult-CMs. In Figure 7C, the translated drugged APD90 values are shown as turquoise asterisks from spontaneously beating (~1000 ms cycle length) simulated iPSC-CMs plotted against simulations from O\u2019Hara\u2013Rudy adult-CM APs with 50% IKr block (red curve) and experimental 50% block of IKr by 1 \u03bcM E-4031 (blue squares) (O'Hara et al., 2011). These data validate that the effects of drug block in iPSC-CMs can be successfully translated to predict drug effect on adult human cardiomyocyte APs.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig7-v2.jpg)\n\n**Figure 7.:** (A) Experimentally recorded iPSC-CM APs from the Kurokawa lab. (B) Translated adult-CM APs from experimentally recorded iPSC-CM APs via the multitask network. (C) Comparing translated adult-CM APD90 values with 50% IKrblock from spontaneously beating simulated iPSC-CMs around 1000 ms beating frequency (turquoise asterisks) with previously published simulated (red curve for drugged and black for drug-free control) and experimental (blue squares) values from the O\u2019Hara\u2013Rudy study (Shaheen et al., 2018) indicates that\u00a0predictions fall within the range of experimentally reported values at 1 Hz.\n\n## Discussion\n\nIn this study, we developed a data-driven deep learning approach to address the\u00a0well-known shortcomings in the iPSC-CM platform. A concern with iPSC-CM is that the data collection results in measurements from immature APs, and it is unclear if these data reliably indicate impact in the adult cardiac environment (Navarrete et al., 2013; Casini et al., 2017; Goversen et al., 2018; Knollmann, 2013; Sinnecker et al., 2013; Blinova et al., 2017). Here, we set out to demonstrate a new way to allow translation of results from the iPSC-CM to a mature adult cardiac response. The deep learning network also revealed new mechanisms that are critical to convert iPSC-CM APs to mature adult cardiac APs.\n\nApplication of a deep learning ANN to simultaneously translate and classify signals from simulated iPSC-CMs for both drug-free and drugged conditions has several key advantages. Because there is no need for the multitask network user to a priori define the important system parameters, the approach is by definition an unbiased model. A key part of the \u2018artificial intelligence\u2019 is learning from the data to make decisions about which elements of the data are the most important. Another benefit is the model-agnostic approach in that the learning network is indifferent to the underlying form of the models and can readily translate time-series data from any source. The nonlinearity of the system is accepted by the deep learning approach, and there are no assumptions made about cardiac protein expression levels and changes in their function during cardiomyocyte maturation. The deep learning ANN can successfully translate simple pore block and complex conformation state-dependent channel\u2013drug interaction models. The network can learn from multiple sources of data even when they are generated from different models and learns from all the data sources concurrently for robust and successful translation. All of these aspects of the technology presented here suggest broad applicability for use across ages, species, and conditions, and we demonstrate its utility for translating and predicting experimental data.\n\nThe multitask network presented here performed well in the setting of the noted variability in measurements from iPSC-CM APs. As described in Figure 1, we utilized a modeling and simulation approach from our recent studies (Kernik et al., 2019; Kernik et al., 2020) to generate a population of iPSC-CM APs that incorporate variability comparable to that in experimental measurements. Utilizing simulated data presented a unique opportunity: we were able to generate large amounts of data that were used both to train and optimize the network and then to test the network with specifically designated distinct simulated datasets. Utilizing simulated data to train a deep learning network may constitute a widely applicable approach that could be used to train a\u00a0variety of networks to perform multiple functions where access to comparable experimental data is not feasible.\n\nThe multitask network exhibits high accuracy in performing translation, despite large variability in APDs and regardless of the underlying model form (Figure 5 and Table 1). The network was able to translate iPSC-CM APs into adult-CM APs with less than 0.003 MSE, 0.99 R2\u00a0score, and less than 4% error in APD90 prediction for both the training and test datasets. To evaluate the network performance for the classification task, we compared the AUROC, prediction accuracy, recall, and precision for both training and test datasets. The multitask network proved to perform well in categorizing iPSC-CM APs into drug-free and drugged waveforms with approximately 90% accuracy (Table 1). Finally, we performed a type of network component dissection by sequentially eliminated individual LSTM layers or the classification task to determine if all elements of the network are important to the overall performance. The impact of removing these elements of the network on its performance is shown in Table 1. The studies show that the multitask network conferred additional benefit over considering the translation task alone. For example, we noted that adding the classification task to distinguish drug-free and drugged APs could improve the performance of the translation task (Table 1).\n\nWhen we performed an ablation study to prevent the deep learning network from using information within prespecified time windows, the results revealed that the most important information needed to classify iPSC-CM APs into drug-free and drugged traces and predict adult-CM APs from iPSC-CM AP signals is contained in the phase of the AP between 400 and 500 ms (Figure 6). This result suggests that the most important information needed to classify and distinguish iPSC-CM AP signals from adult-CM AP signals is contained in the range of the AP that corresponds to a phase of exquisite sensitivity to perturbation. We have identified this particular AP range in an earlier study as the phase when the membrane resistance of the myocyte increases markedly (Figure 6C; Yang et al., 2015).\u00a0This occurs as the inward and outward currents balance each other, leading to a net whole cell current that is unchanging (dI \u2192 0, dV/dI \u2192 \u221e), followed by a rapid reduction in the outward current (Figure 6D, E). It is not surprising that this time\u00a0frame is shown to contain the most important information to perform the classification task as the effect of IKr block is critical during the high resistance phase of the membrane potential. It is possible that other types of perturbations (e.g., Na channel blocker, ischemia) may lead to a different outcome, and we will pursue those questions in future studies.\n\nFollowing the optimization and demonstration of the network as an accurate tool for both translating and classifying data, we then used the same network to translate experimentally obtained data. We showed that the proposed network can effectively take experimental data as an input from immature iPSC-CM APs and translate those data to produce adult AP waveforms. It is notable that the variation observed in the adult-CM AP duration is smaller compared to iPSC-CM APDs (Figure 7A,\u00a0B). This has been observed both experimentally (Blinova et al., 2018; Fabbri et al., 2019) and in our simulated cell environment (Kernik et al., 2019; Kernik et al., 2020). Although the simulated iPSC-CM has a large initial calcium current (Figure 1C) compared to the simulated adult-CM (Figure 1D), the amplitude of currents flowing through adult-CM AP plateau is notably larger. The immature iPSC-CM cells have low conductance during the AP plateau, rendering it comparably higher resistance. For this reason, small perturbations to the iPSC-CM APs have a larger impact on the resulting AP duration than observed in adult cells (Yang et al., 2015). We also used simulated iPSC-CM APs subject to 50% block of IKr. We translated those data to adult-CM APs and then compared with the previously reported impact of 50% IKr block on adult human cell APs from experiments (O'Hara et al., 2011) and noted excellent agreement, thereby providing validation of our network.\n\nThe deep learning algorithm presented here has the benefit of automating feature extraction without any predetermination of the feature. It also allows for the translation of time-course data from simulated or experimental datasets. However, there are some limitations to the approach. One limitation is the requirement for multiple datasets that are of sufficient quality for training \u2013 the more robust the training set, the higher the accuracy of the task. It is possible that this limitation can be addressed in future studies by developing new methods for data extraction and data interpolation in sparse datasets. We addressed this limitation by utilizing simulated data to train the network, and this approach might be applicable for a variety of physiological problems. Simulated data can be generated to constitute a robust dataset that can be used to train the multitask model and allow extraction of the relevant features from any time-course dataset.\n\nIn this study, we show that a deep learning network can be applied to classify cells into the drug-free and drugged categories and can be used to predict the impact of electrophysiological perturbation across the continuum of aging from the immature iPSC-CM AP to the adult ventricular myocyte AP. By extension, the classification task might even be applied to distinguish cellular-level signals derived from cells cultured using different protocols. We translated experimental immature APs into mature APs using the proposed network and validated the output of some key model simulations with experimental data. The multitask network in this study was used for translation of iPSC-CMs to adult APs but could be readily extended and applied to translate data across species and classify data from a variety of systems. Also, another extension of the technology presented here is to predict the impact of naturally occurring mutations and other genetic variations (Yoshinaga et al., 2019).\n\n## Materials and methods\n\n### Simulated data for training and testing the multitask network\n\n#### The drug-free iPSC-CM and adult-CM APs\n\nThe Kernik in silico iPSC-CM baseline cells were paced from resting steady\u00a0state. The O\u2019Hara\u2013Rudy in silico endocardial cell model was used for the baseline adult-CMs (O'Hara et al., 2011). The control adult-CMs were paced at the cycle length of 982 ms to match the cycle length of the last beat of the spontaneously depolarizing iPSC-CM AP. The iPSC-CM AP populations (n =\u00a0208) were generated by incorporating physiological noise (see Simulated physiological noise currents section below). The adult-CMs were paced with noise for 100 beats after reaching steady state at the matching cycle length of the last beat of iPSC-CM AP populations. The numerical method used for updating the voltage was Forward Euler method (Atkinson, 2008).\n\n### A simple drug-induced 1\u201350% IKr block model through GKr reduction\n\nThe iPSC-CMs and the adult-CMs populations were paced with 1\u201350% IKr block with 1% increments. This was accomplished by scaling down hERG channel (IKr) conduction, GKr, by the fraction of the block, GKrscale, in the 0.50\u20130.99 range with 0.01 decrements (see central rows in Figure 1G). The adult-CM model was simulated at five varying beating rates for each percentage of block that matches to the last beat of iPSC-CMs with 1\u201350% IKr block (n = 250). For example, one drugged adult-CM (50% IKr inhibition) was paced at cycle length of 1047 ms to match the cycle length of the last beat of iPSC-CMs AP with 50% IKr block.\n\n### Complex model of conformation-state dependent IKr block in the presence of 2.72 ng/mL dofetilide\n\nThe IKr channel Hodgkin\u2013Huxley model in both iPSC-CM and adult-CM AP models was replaced with a drug\u2013hERG channel interaction Markov model (see bottom rows in Figure 1G) that we have previously published (Yang et al., 2020). iPSC-CM (n = 300) and adult-CM AP populations (n = 300) were generated with physiological noise in the presence of 2.72 ng/mL dofetilide, a potent hERG channel blocker. The adult-CM populations were paced with dofetilide for 100 beats after reaching steady state at the matching cycle length of the last beat of iPSC-CM AP populations with dofetilide as described above. The simulated drugged and drug-free iPSC-CM and adult-CM AP data used for training and testing the multitask network have been made publicly available at Clancy lab GitHub. (https://github.com/ClancyLabUCD/Multitask_network/tree/master/data, copy archived at swh:1:rev:7f2b653a91f552d66ae2d9b70b720f8706b36da3,\u00a0Aghasafari, 2021).\n\n### Simulated physiological noise currents\n\nSimulated noise current was added to the last 100 paced beats in the simulated AP models, and simulated APs were recorded at the 2000th paced beat in single cells. This noise current was modeled using the equation from Tanskanen and Alvarez, 2007\n\n$$\nV_{t+\\Deltat}=V_{t}-\\frac{IV_{t}\\Deltat}{C_{m}}+\u03ben\\sqrt{\\Deltat}\n$$\n\nwhere n\u2208N(0,1) is a random number from a Gaussian distribution, and \u2206t is the time step. \u03be = 0.3 is the diffusion coefficient, which is the amplitude of noise. The noise current was generated and applied to membrane potential, Vt, throughout the last 100 beats of simulated time course.\n\n### Experimental iPSC-CMs\n\nHuman iPSC-CMs (201B7, RIKEN BRC, Tsukuba, Japan) were cultured and subcultured on SNL76/7 feeder cells as described in detail previously (Li et al., 2017). Cardiomyocyte differentiation was performed as described (Li et al., 2017). Commercially available iCell-cardiomyocytes (FUJIFILM Cellular Dynamics, Inc, Tokyo, Japan) were cultured according to the manual provided from the company. APs were recorded with the perforated configuration of the patch-clamp technique as described in detail previously (Li et al., 2017). Measurements were performed at 36 \u00b1 1\u00b0C with the external solution composed of (in mM) NaCl (135), NaH2PO4 (0.33), KCl (5.4), CaCl2 (1.8), MgCl2 (0.53), glucose (5.5), and\u00a0HEPES, pH 7.4. To achieve patch perforation (10\u201320 M\u03a9; series resistances), amphotericin B (0.3\u20130.6 \u00b5g/mL) was added to the internal solution composed of (in mM) aspartic acid (110), KCl (30), CaCl2 (1), adenosine-5\u2032-triphosphate magnesium salt (5), creatine phosphate disodium salt (5), HEPES (5), and\u00a0EGTA (11), pH 7.25. In quiescent cardiomyocytes, APs were elicited by passing depolarizing current pulses (2 ms in duration) of suprathreshold intensity (120% of the minimum input to elicit APs) with a frequency at 1 Hz unless noted otherwise. The experimental data used for the model validation have been made publicly available at Clancy lab GitHub. (https://github.com/ClancyLabUCD/Multitask_network/blob/master/data/clean_data/experiments.csv).\n\n### The multitask network architecture\n\nThe multitask network comprised two stacked LSTM layers followed by independent fully connected layers (Figure 3A) for the classification and translation tasks. The LSTM layers memorized the important information the network needed to perform two discussed tasks and then transferred the extracted information (features) into the subsequent fully connected layers to translate iPSC-CM APs into adult-CM AP waveforms (Figure 3B) and classify iPSC-CM APs into drug-free and drugged categories (Figure 3C).\n\n### LSTM layers (Figure 3D)\n\nWe used LSTM layers as the first two layers of the multitask network to promote network temporal information learning which data in a sequence was important to keep or to throw away. At each time step, the LSTM cell took in three different pieces of information, the current input data\u00a0$(AP_{iPSC_{t}})$, incoming short-term memory (hidden state) $(h_{t-1})$\u00a0and incoming long-term memory (cell state)\u00a0$(C_{t-1})$. The LSTM layers were responsible for extracting the most important information while scanning the AP traces using the short- and long-term memory components. The short-term memory weighted the importance of AP values at subsequent time steps and long-term memory has been using the short-term memory to decide the overall importance of all AP values from the beginning (t = 0 ms) to the end (t = 701 ms) for performing classification and translation tasks. The LSTM cells contained internal mechanisms called gates. The gates were neural network with weights (w) and bias terms (b) that regulated the flow of information at each time step before passing on the long-term and short-term information to the next cell (Cheng et al., 2016). These gates are called input gate, forget gate, and output gate (Figure 3D).\n\nThe forget gate, as the name implies, determined which information from the long-term memory should be kept or discarded. This was done by multiplying the incoming long-term memory by a forget vector generated by the current input ($AP_{iPSC_{t}}$) and incoming short-term memory ($h_{t-1}$). To obtain the forget vector, the incoming short-term memory and current input were passed through a sigmoid function ($\\sigma_{f}$) (Olah, 2017). The output vector of sigmoid function, Ft, (Equation 2) was a binary comprising 0s and 1s and was then multiplied by the incoming long-term memory ($C_{t-1}$) to choose which parts of the long-term memory were retained.\n\n$$\nF_{t}=\\sigma_{f}w_{f}AP_{iPSC_{t}}+w_{f}h_{t-1}+b_{f}t\\in0,1,\u2026,701\n$$\n\nThe input gate decided what new information is being stored in current long-term memory ($C_{t}$). It considered the current input ($AP_{iPSC_{t}}$) and the incoming short-term memory ($h_{t-1}$) and transformed the values to be between 0 (unimportant) and 1 (important) using a sigmoid activation function ($\\sigma_{i}$) (Equation 3). The second layer in input gate took the incoming short-term memory ($h_{t-1}$) and current input ($AP_{iPSC_{t}}$) and passed them through a hyperbolic tangent activation function ($tanh_{i}$) to regulate the network computation (Equation 4).\n\n$$\nI_{t}=\\sigma_{i}W_{i}AP_{iPSC}_{t}+W_{i}h_{t-1}+b_{i}t\\in0,1,\u2026,701\n$$\n\n\n\n$$\nS_{t}=tanh_{i}w_{s}AP_{iPSC}_{t}+w_{s}h_{t-1}+b_{s}\n$$\n\nThe outputs from the forget and input gates then underwent a pointwise addition to find the current long-term memory ($C_{t}$) (Equation 5), which was then passed on to the next cell.\n\n$$\nC_{t}=F_{t}*C_{t-1}+I_{t}*S_{t}\n$$\n\nFinally, the output gate utilized current input ($AP_{iPSC_{t}}$) and the incoming short-term memory ($h_{t-1}$) and passed them into a sigmoid function ($\\sigma_{o}$) (Equation 6). Then the current long-term memory ($C_{t}$) passed through a tanh activation function ($tanh_{o}$) and the outputs from these two processes were multiplied to produce the current short-term memory $h_{t}$ (Equation 7).\n\n$$\nO_{t}=\\sigma_{o}w_{o}AP_{iPSC}_{t}+w_{o}h_{t-1}+b_{o}\n$$\n\n\n\n$$\nh_{t}=O_{t}*tanh_{o}C_{t}\n$$\n\nThe short-term and long-term memory produced by these gates were carried over to the next cell for the process to be repeated. The output of LSTM layers for each time step ($h_{t}$) was obtained from the short-term memory, also known as the hidden state, and was subsequently passed into fully connected layers to perform the translation and classification tasks as described below.\n\n### Fully connected layers (Figure 3E)\n\nThe fully connected neural network layers contained input, hidden, and output layers (Figure 2E) with various numbers of neurons ($l_{r}$). Every neuron in a layer was connected to neurons in the next layer (Krogh, 2008). Fully connected layers received the output of LSTM layers as input. The fully connected layers calculated a weighted sum of LSTM outputs and added a bias term to the outputs. These data were then passed to an activation function (f) to define the output for each neuron (Equations 8 and 9; Carugo and Eisenhaber, 2010).\n\n$$\na_{j}^{k}=fZ_{j}^{k}\n$$\n\n\n\n$$\nZ_{j}^{k}=W_{i,j}^{k}*a_{j}^{k-1}+b^{k}\n$$\n\nwhere $k\\in1,\u2026,n$\u00a0and (i, j) represent the number of hidden layers and neurons in each pair of subsequent hidden layers ($l_{r},l_{r+1}$). The optimized values for these parameters were found via hyperparameter tuning where\u00a0$a^{k}$ is each neuron output. $a^{0}\\inh_{1},\u2026,h_{m}$ is the LSTM layer output and the input to the fully connected layers, and $a^{n+1}$ is the network output: $y^\u03f5y_{t_{i}},y_{c_{i}}$,\u00a0where $y_{t_{i}}$ and $y_{c_{i}}$ are the outputs for translation and classification tasks, respectively. We first assigned random values to all network parameters\u00a0$\\theta_{t}$; each neuron weight $W_{i,j}$ (Figure 3E), bias term $b$, which is a constant added to calculate the neurons output and other network hyperparameters (the number of hidden layers, the number of neurons for each hidden layer and activation functions for each hidden layer) to start the optimization process for finding the best network infrastructure. Next, we estimated the network errors using MSE (Equation 10) and cross-entropy loss functions (Equation 11) to map the translation and classification tasks (Goodfellow et al., 2016; Murphy, 2012), respectively.\n\n$$\nMSE=\\frac{1}{m}\\sumi=1ny_{t_{i}}-y^_{t_{i}}^{2}\n$$\n\n\n\n$$\nCrossEntropy=-y_{c_{i}}log\u2061y^_{c_{i}}+1-y_{c_{i}}log\u20611-y^_{c_{i}}\n$$\n\nwhere m is the total number of LSTM layer outputs ($h_{m}$) and $y_{t_{i}}$ and $y^_{t_{i}}$ are the simulated and translated adult-CM APs (the network output for translation task). The $y_{c_{i}}$ is binary indicator of class labels for iPSC-CM APs (0 for drug-free or 1 for drugged categories) and $y^_{c_{i}}$ is predicted probability of APs being classified into the discussed classes. We used sum of both loss functions (Equation 12) to calculate the overall network error ($J$) for both translation and classification tasks during the network training process. We updated network parameters $\\theta_{t+1}$ using adaptive momentum estimation (ADAM) optimization algorithm (Kingma and Ba, 2014) based on the average gradient of overall loss function with respect to the network parameters for 64 randomly selected simulated AP traces (mini-batch = 64) at each training iteration (Equations 13\u201315).\n\n$$\nJ\\theta_{t}=CrossEntropy_{Classification}(\\theta_{t})+MSE_{Translation}(\\theta_{t})\n$$\n\n\n\n$$\n\\theta_{t+1}=\\theta_{t}\u2212\\frac{\\alpha.m^_{t}}{\\sqrt{\u03bd^_{t}}+\u03f5},\\theta_{t}\u03f5{W_{i,j}^{n},b_{j}^{n}}\n$$\n\n\n\n$$\nm^_{t}=\\frac{m_{t}}{1\u2212\\beta_{1}},wherem_{t}=(1\u2212\\beta_{1})\u2207J(\\theta_{t})+\\beta_{1}m_{t\u22121}\n$$\n\n\n\n$$\n\u03bd^_{t}=\\frac{\u03bd_{t}}{1\u2212\\beta_{2}},where\u03bd_{t}=(1\u2212\\beta_{2})(\u2207J(\\theta_{t}))^{2}+\\beta_{2}v_{t\u22121}\n$$\n\nWe used a rectified linear unit (ReLu) (Glorot et al., 2011) as activation function in Equation 8 to calculate the output for each hidden layer neuron at each training iteration. We used dropout regularization (Zaremba et al., 2014) to randomly drop neurons with 0.2 probability of elimination along with their connections from the LSTM and fully connected layers during training to reduce the overfitting. We kept updating the network parameters using ADAM optimization algorithm (Equation 13) to find global minimum of loss function (Equation 12). We computed the exponential average of the gradient (Equation 14) as well as the square of the gradient (Equation 15) for each parameter ($\\theta_{t}$), where $\\alpha$\u00a0is the learning rate equal to 0.001, $\\beta_{1},\\beta_{2}$\u00a0are first and second momentum coefficients equal to 0.9 and 0.999, and $\u03f5$\u00a0is a small term equal to 1e-8 preventing division by 0.\n\n### Computational workflow (Figure 4)\n\nWe first preprocessed iPSC-CM and adult-CM APs by applying a digital forward and backward data filtering technique (Gustafsson, 1996) and calculated the mean values for iPSC-CM and adult-CM AP traces. We removed the calculated mean values from the corresponding AP traces to center values on zero. Next the iPSC-CM and adult-CM AP traces were divided by maximum AP values to normalize the AP values for more efficient training process. Next, we split the preprocessed data in 70:10:20 ratio into training, validation, and test datasets, respectively, and implemented the network architecture using Pytorch (Ketkar, 2017). During the training process, the multitask network received iPSC-CM AP time-course data as inputs and predicted adult-CM AP time courses. The network also received the category (drug-free and drugged) of the iPSC-CM AP data. The network next calculated the MSE (Equation 10) between predicted AP waveforms and the expected waveforms for adult-CM APs. It also calculated cross-entropy (Equation 11) between the predicted category for the iPSC-CM AP and the expected value. The cross-entropy was added to the calculated MSE to determine the total loss for training. The ADAM optimization algorithm was then used to update the network weights and bias terms.\n\nWe performed updating the network parameters (Equation 13) and monitored the network performance for the training and validation datasets until the point at which the network performance on the training dataset began to degrade compared to the validation dataset. This process was used to identify the optimal number of iterations (epochs = 300) for the training process. The last trained network was designated as the best possible model to perform both translation and classification tasks. We then used a holdout test dataset and calculated MSE (Equation 10), R2\u00a0score (Equations 16 and 17), and the error in prediction for adult-CM APD90 as evaluation metrics to assess the performance of the network for translation task and the AUROC, accuracy, recall, and precision to measure capability of network for classification task as described below. The network codes have been made publicly available at Clancy lab GitHub. (https://github.com/ClancyLabUCD/Multitask_network).\n\n### Evaluation metrics for the translation and classification tasks\n\nAs we discussed, we used MSE and cross-entropy loss functions for performance evaluation of translation and classification tasks. In addition to MSE, we computed R2\u00a0score (Devore, 2011; Equations 16 and 17) to measure how close the translated adult-CM AP $(y^_{t_{i}})$ was to the expected simulated adult-CM AP\u00a0$(y_{t_{i}})$. We compared the histogram distribution of simulated and translated adult-CM APD90 values and the error in APD90 prediction to assess the accuracy of network prediction.\n\n$$\ny^-_{t_{i}}=\\frac{1}{m}\\sumi=1my^_{t_{i}}\n$$\n\n\n\n$$\nR^{2}=\\frac{\\sumi(y^_{t_{i}}-y^-_{t_{i}})}{\\sumiy_{t_{i}}-y-_{t_{i}}}\n$$\n\nWe used AUROC to measure the capability of the model to distinguish between drug-free and drugged iPSC-CM APs (Fawcett, 2006). AUROC is the area under the receiver operating characteristic (ROC) curve that is a plot of the false-positive rate (FPR), the probability that the network classified drug-free iPSC-CM APs into drugged categories (FP) (Equation 18) versus the true-positive rate (TPR) or recall, the probability that the network correctly classified drugged iPSC-CM APs into drugged category (TP) (Equation 19). AUROC close to 1 indicated a model with a desirable measure of separability, while a poor model had AUROC near 0, which means that it had poor separability.\n\nIn addition, we used recall, accuracy, and precision to describe the performance of the network for the classification task (Sube and Ertel, 2017), where the accuracy and precision indicated the proportion of all correct, TP\u00a0+ true negatives (TN), that\u00a0is, predicted drug-free APs (Equation 20) and correct positive identifications (Equation 21). False negatives (FN) in Equations 19\u00a0and 20 were the total number of drugged iPSC-CM APs classified as drug-free.\n\n$$\nFPR=\\frac{FP}{FP+TN}\n$$\n\n\n\n$$\nRecall=\\frac{TP}{TP+FN}\n$$\n\n\n\n$$\nAccuracy=100*\\frac{TP+TN}{TP+TN+FP+FN}\n$$\n\n\n\n$$\nPrecision=\\frac{TP}{TP+FP}\n$$\n",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "99d3d70a-0fc3-4dc1-a34a-d38a6b38cb4e",
+      "submission_id": "557530e2-b348-40d2-816f-670cae7d767a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas Hund, The Ohio State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68335.sa1](https://doi.org/10.7554/eLife.68335.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors are to be commended on a rigorous, impactful and well-written manuscript describing an unbiasd computational tool for classifying and translating action potential waveforms from iPSC-CMs to those that would be expected in a mature adult CM. This work will likely be of interest to growing number of investigators using iPSC-CMs for drug screening and disease mechanisms.\n\nDecision letter after peer review:\n\nThank you for submitting your work entitled \"A deep learning algorithm to translate and classify cardiac electrophysiology: From induced pluripotent stem cell-derived cardiomyocytes to adult cardiac cells\" for further consideration by eLife. Your article has been evaluated by two Reviewers, one of whom is a member of our Board of Reviewing Editors. This evaluation has been overseen by Jos\u00e9 Faraldo-G\u00f3mez as Senior Editor. As you will see below, there are several issues that would need to be resolved before your manuscript can be accepted for publication. We encourage you to address these issues as clearly and unequivocally as possible, and to submit a revised version of your manuscript.\n\nReviewer #1:\n\nThe authors set out to develop an unbiased computational tool for classifying and translating action potential waveforms from iPSC-CMs to those that would be expected in a mature adult CM. A deep-learning neural network approach is used for the model which avoids some of the limiting assumptions (for example, linearity) employed in previous modeling approaches. Two different established computational models are used to generate iPSC-CM and adult waveforms for training and testing the deep learning model. They show their approach is able to do a good job classifying waveforms into drug free and drugged and then translating an iPSC-CM AP into an adult AP. The model is further tested on experimentally recorded iPSC-CM APs and data in the literature. In general, the authors do a good job establishing the potential strengths of their approach, which will likely be of interest to growing number of investigators using iPSC-CMs for drug screening and disease mechanisms.\n\nIt would help from the onset to provide more clear rationale for the classification part of the model \u2013 it's easy to understand why one would want to translate from iPSC-CM to adult but how do the authors envision the classification piece being used? I could see this being useful potentially for diagnosis \u2013 but the rationale or potential application could be better spelled out.\n\nA nice feature of the study is not just showing effective classification/translation but also doing some analysis to see what part of the waveform is most important for the translation (late repolarization phase). Can a similar analysis be done to determine what part is most important for the classification part? Do the authors expect the same part of the AP would be most important in determining drug vs drug free?\n\nThe validation of the drug block in figure 7 is a little confusing and could be more clear. Why were only 4 datapoints used? The range is narrow and comparison not that impressive (rate dependence is inverted at least for the data shown).\n\nSome additional discussion about limitations of the approach and how the authors envision implementation in practice would be useful. iPSC-CMs properties can vary quite a bit depending on protocol for differentiation, etc. Presumably the network model developed here would only be useful for iPSCs generated in a specific manner. This should be more clearly discussed.\n\nReviewer #2:\n\nAlthough iPSC-CMs have much potential as an in vitro model, their well-known limitations in mimicking adult cardiac electrophysiological behaviors is a serious shortcoming and puts limits of their utilization, e.g., for safety pharmacology. This manuscript provides an approach to overcome some of these shortcomings by translating the immature iPSC-CM action potentials into human adult-like action potentials. This is accomplished by a novel application of deep learning techniques. The learning algorithm is also capable of classifying between drug-free and drugged action potentials under conditions of IKr (a key ionic current in safety pharmacology) block.\n\nStrengths:\n\nThe application of a deep learning network approach to classify and translate action potential will be of interest in the field of cardiac electrophysiology.\n\nThe main conclusions are well-supported by the data.\n\nWeaknesses:\n\nPrevious work (including refs. 11, 12, and 20) have made headway into the problem of translating between iPSC-CM and adult electrophysiology using optimization or regression methods. Although these previous approaches rely on a number of assumptions (as mentioned by the authors), they do work quite well.\n\nLimitations of the deep learning method are not discussed.\n\nComments for the authors:\n\nThe authors should specify how the normalization procedure was done and comment on the difference in baseline between iPSC-CM models (around -1) and adult modes (around -0.5) in figure 5.\n\nThe lack of longer APD values for the translated population in Figure 5B is not apparent in panel C. Similarly, in panel E the longer APDs would be expected to give a much more narrow second peak in panel F. The authors should clarify this.\n\nThe authors identify the 400-500 ms time frame as key to successful translation (Figure 6). The authors offer two explanations: an increase in membrane resistance (panel B) and a small total current (panel C). However, the latter explanation does not seem consistent with the figure: the total current is actually larger in that time frame than earlier in the plateau.\n\nOnly 4 action potential recordings are used to test the network on experimental data. More cells would generate a stronger validation.\n\nThe authors should discuss limitations of their approach.\n",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f8ac0b19-e7cd-4ee3-b02b-64e0adfbb5a5",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C1",
+      "claim": "The development of induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) has been a critical in vitro advance in the study of patient-specific physiology, pathophysiology, and pharmacology.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) has been a critical in vitro advance in the study of patient-specific physiology, pathophysiology, and pharmacology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of iPSC-CMs, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "8e04d7c8-1bec-403d-939b-923cd575044b",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C2",
+      "claim": "The deep learning network was trained using simulated action potential (AP) data.",
+      "claim_type": "EXPLICIT",
+      "source": "The deep learning network was trained using simulated action potential (AP) data and applied to classify cells into the drug-free and drugged categories and to predict the impact of electrophysiological perturbation across the continuum of aging from the immature iPSC-CMs to the adult ventricular myocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology used to train the network.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "e65819a0-1afb-46b3-afe7-b5eec98a4c22",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C3",
+      "claim": "The deep learning network was applied to classify cells into drug-free and drugged categories.",
+      "claim_type": "EXPLICIT",
+      "source": "The deep learning network was trained using simulated action potential (AP) data and applied to classify cells into the drug-free and drugged categories and to predict the impact of electrophysiological perturbation across the continuum of aging from the immature iPSC-CMs to the adult ventricular myocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the classification task performed by the network.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "56dbf1e2-27cd-416e-94c2-3a9e0f663d0b",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C4",
+      "claim": "The deep learning network predicts the impact of electrophysiological perturbation across the continuum of aging from immature iPSC-CMs to adult ventricular myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The deep learning network was trained using simulated action potential (AP) data and applied to classify cells into the drug-free and drugged categories and to predict the impact of electrophysiological perturbation across the continuum of aging from the immature iPSC-CMs to the adult ventricular myocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the translation capability of the network.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "9f3d5f54-fa87-4420-a820-acc3f550df8b",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C5",
+      "claim": "The phase of the AP extremely sensitive to perturbation due to a steep rise of the membrane resistance contains the key information required for successful network multitasking.",
+      "claim_type": "EXPLICIT",
+      "source": "The phase of the AP extremely sensitive to perturbation due to a steep rise of the membrane resistance was found to contain the key information required for successful network multitasking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is based on ablation studies performed in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "aea12cc7-ee4a-4b17-b3dc-be97b1918b02",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C6",
+      "claim": "The network successfully translated both experimental and simulated iPSC-CM AP data.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrated successful translation of both experimental and simulated iPSC-CM AP data validating our network by prediction of experimental drug-induced effects on adult cardiomyocyte APs by the latter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports successful translation of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "2882356e-a75f-4a58-84b7-bba7eecbe845",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C7",
+      "claim": "The network validated predictions by comparing with experimental drug-induced effects on adult cardiomyocyte APs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrated successful translation of both experimental and simulated iPSC-CM AP data validating our network by prediction of experimental drug-induced effects on adult cardiomyocyte APs by the latter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes validation against experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "a72f032c-7cf9-4988-8cfb-6e19dad5df6a",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C8",
+      "claim": "The iPSC-CM system constitutes a powerful in vitro tool for preclinical assessment of cardiac electrophysiological impact and drug safety liabilities in a human physiological context.",
+      "claim_type": "EXPLICIT",
+      "source": "The iPSC-CM system constitutes a powerful in vitro tool for preclinical assessment of cardiac electrophysiological impact and drug safety liabilities in a human physiological context (Sun et al., 2012; Lan et al., 2013; Burridge et al., 2016; Doss and Sachinidis, 2019; Collins et al., 2020; Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "820b7b0b-eec7-49d5-8eb3-fcb143d86e6c",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C9",
+      "claim": "iPSC-CMs can be cultured from patient-specific cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, because iPSC-CMs can be cultured from patient-specific cells, it has shown to be an ideal model system for patient-based medicine (Wu et al., 2019; Sayed et al., 2016; Matsa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "ab012e14-325a-4439-ae24-a560b731cca7",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C10",
+      "claim": "iPSC-CMs have been shown to be an ideal model system for patient-based medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, because iPSC-CMs can be cultured from patient-specific cells, it has shown to be an ideal model system for patient-based medicine (Wu et al., 2019; Sayed et al., 2016; Matsa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "4b603a00-4cbb-4690-a625-910bcc29e9bf",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C11",
+      "claim": "The complex differentiation process to create iPSC-CMs results in a model of cardiac electrical behavior that resembles fetal cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "While utilization of in vitro iPSC-CMs allows for testing of responses to drugs and understanding physiological mechanisms (Tveito et al., 2018; Tveito et al., 2020; Sube and Ertel, 2017; Navarrete et al., 2013), there is still a major inherent limitation of the approach: the complex differentiation process to create iPSC-CMs results in a model of cardiac electrical behavior that resembles fetal cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of iPSC-CMs supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "337d1cb0-593b-46ad-a140-54c58f8da817",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C12",
+      "claim": "Hallmarks of the immature iPSC-CM phenotype include spontaneous beating, immature calcium handling, presence of developmental currents, and significant differences in the relative contributions of repolarizing potassium currents compared to adult cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hallmarks of the immature phenotype include spontaneous beating, immature calcium handling, presence of developmental currents, and significant differences in the relative contributions of repolarizing potassium currents compared to adult cardiomyocytes (adult-CMs) (Lieu et al., 2013; Veerman et al., 2015; Tu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "0b42306e-238c-4b17-b55e-b83005953404",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C13",
+      "claim": "The profound differences between immature iPSC-CMs and adult-CMs have led to persistent questions about the utility and applicability of the iPSC-CM action potential to predict relevant drug impacts on adult human electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "The profound differences between the immature iPSC-CMs and the adult-CMs have led to persistent questions about the utility and applicability of the iPSC-CM action potential (AP) to predict relevant drug impacts on adult human electrophysiology (Blinova et al., 2018; Sala et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "ad923e47-9eb4-44f8-abcf-a2ba233b6b84",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C14",
+      "claim": "Tvieto and colleagues presented a translation algorithm that identified a mapping function to identify the relationships between parameters defined by key ion channel conductances in iPSC-CM APs and adult-CM APs.",
+      "claim_type": "EXPLICIT",
+      "source": "The innovative studies described by Tvieto and colleagues (Sayed et al., 2016; Matsa et al., 2016) presented a translation algorithm that identified a mapping function to identify the relationships between the parameters that are defined by key ion channel conductances in the iPSC-CM APs and the adult-CM APs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes prior work by other researchers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "89a29b98-cbf0-4d96-b7ec-c96aa550e34c",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C15",
+      "claim": "Gong and Sobie applied an efficient partial least squares regression (PLSR) methodology to translate key physiological features between iPSC-CMs and adult-CMs.",
+      "claim_type": "EXPLICIT",
+      "source": "In another study by Gong and Sobie, additional insights were revealed through application of an efficient partial least squares regression (PLSR) methodology to translate key physiological features between iPSC-CMs and adult-CMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes prior work by other researchers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "ef2b4105-6c20-4d0e-a926-3c5aa1b777fd",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C16",
+      "claim": "Gong and Sobie demonstrated the potential to translate between species, between drug-free and simple drugged models, as well as between healthy and diseased phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "They also demonstrated the potential to translate between species, between drug-free and simple drugged models, as well as between healthy and diseased phenotypes (Gong and Sobie, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes prior work by other researchers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "3c7bcc5e-a00b-445d-a3d5-66c5c78823a6",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C17",
+      "claim": "Koivum\u00e4ki et al. established a novel in silico mathematical model for iPSC-CMs which can estimate adult-CM behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Koivum\u00e4ki et al. also tried to address the problem of iPSC-CMs immaturity by establishing a novel in silico mathematical model for iPSC-CMs, which can estimate adult-CM behavior (Koivum\u00e4ki et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes prior work by other researchers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "30729ed5-8481-4cc3-8116-b50c6ace3dec",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C18",
+      "claim": "One assumption of linear translation algorithms is that cardiac protein expression levels would differ but their functional properties remain invariant during maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "One described by Tvieto et al. is that cardiac protein expression levels would differ but their functional properties remain invariant during maturation and that a drug will modify protein function in the same way for iPSC-CMs and the adult-CMs (Tveito et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption made in prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "df3b86c1-0c04-4db4-a3d1-a51e6bf2512c",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C19",
+      "claim": "Linear translation algorithms assume that a drug will modify protein function in the same way for iPSC-CMs and adult-CMs.",
+      "claim_type": "EXPLICIT",
+      "source": "One described by Tvieto et al. is that cardiac protein expression levels would differ but their functional properties remain invariant during maturation and that a drug will modify protein function in the same way for iPSC-CMs and the adult-CMs (Tveito et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption made in prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "893d7d8f-8a36-42b4-baa2-d81f466f3a8a",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C20",
+      "claim": "Tvieto et al. acknowledged the difficulty in minimizing the cost function that measures the differences between the initial and target parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Tvieto et al. also acknowledged the difficulty in minimizing the cost function that measures the differences between the initial and target parameters, which therefore required a brute force search algorithm for minimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation acknowledged in prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "844846cd-8fdf-4d69-82d7-cc47a9f0acca",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C21",
+      "claim": "One possible explanation for the difficulty in cost function minimization is that linear translation may not capture the nonlinearities comprising the actual underlying physiological differences.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for the difficulty in cost function minimization is that linear translation may not capture the nonlinearities comprising the actual underlying physiological differences (Gong and Sobie, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for limitations in prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "009eeebf-263e-41f5-a90b-6ba7edc40fdf",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C22",
+      "claim": "Linear translation requires representation of drug effects as a simple pore block, modeled as a reduction in the maximal conductance of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Another underlying assumption with linear translation is the required representation of drug effects as a simple pore block, modeled as a reduction in the maximal conductance of the channel (Tveito et al., 2018; Gong and Sobie, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption in prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "3cbcce12-0892-4189-8d1f-26290e82d288",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C23",
+      "claim": "Earlier translation studies employed a biased method in that they rely on a priori parameter identification and extraction from voltage and calcium traces.",
+      "claim_type": "EXPLICIT",
+      "source": "The earlier studies employed a biased method in that they rely on a priori parameter identification and extraction from voltage and calcium traces to allow feature mapping from immature to mature conditions (Tveito et al., 2018; Gong and Sobie, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "44e4350b-73f2-444e-947e-dd896b14ac43",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C24",
+      "claim": "Earlier translators must consider drug-free and drugged conditions independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier translators must also consider drug-free and drugged conditions independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "c073621f-3628-451c-b49d-b016741a2e7b",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C25",
+      "claim": "The multitask network simultaneously performs translation and classification of signals from simulated cardiac myocytes for both drug-free and drugged conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we describe a deep learning multitask network that simultaneously performs translation and classification of signals from simulated cardiac myocytes for both drug-free and drugged conditions and demonstrate its utility for translating and predicting experimental data as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the main contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "769c2ee9-3bcb-4e87-b80d-a9d75f578a53",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C26",
+      "claim": "The multitask network is an unbiased approach in that the user does not predefine the important parameters of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "The multitask network is an unbiased approach in that the user does not predefine the important parameters of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the proposed method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "7a81a477-b3bd-4369-86e2-e7cbd88253ea",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C27",
+      "claim": "The network learns from the data to define important parameter regimes and data ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the network learns from the data to define important parameter regimes and data ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the network operates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "f52bec7f-b354-4949-bdd3-169444ad883d",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C28",
+      "claim": "The new approach is indifferent to the underlying form of the models and can translate time-series data from any source.",
+      "claim_type": "EXPLICIT",
+      "source": "The new approach is indifferent to the underlying form of the models and can translate time-series data from any source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key advantage of the proposed method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "2a9195c0-d6e6-4da5-a831-75bfc1129db6",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C29",
+      "claim": "The deep learning approach accepts nonlinearity of the system and makes no assumptions about changes in cardiac protein expression and function during maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the deep learning approach accepts nonlinearity of the system, makes no assumptions about changes in cardiac protein expression and function during maturation, and can successfully translate simple pore block and complex conformation state-dependent channel\u2013drug interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes advantages of the proposed method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "e569b96f-9f46-49bf-ab54-7b1e46eec6aa",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C30",
+      "claim": "The deep learning approach can successfully translate simple pore block and complex conformation state-dependent channel\u2013drug interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the deep learning approach accepts nonlinearity of the system, makes no assumptions about changes in cardiac protein expression and function during maturation, and can successfully translate simple pore block and complex conformation state-dependent channel\u2013drug interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "24b54a54-b4e0-4e55-963e-8d3e6abce9f4",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C31",
+      "claim": "The network requires multiple quality datasets for robust and successful translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The network learns from all of these data sources suggesting its broad applicability, but it requires multiple quality datasets for robust and successful translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a requirement of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "22048930-7bb0-49c9-8f63-929e8f39cc3d",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C32",
+      "claim": "The multitask behavior of the network presents a single process that can perform translating any cardiac AP into the subject of perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the multitask behavior of the network presents a single process that can perform translating any cardiac AP into the subject of perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the network.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "d4b31a44-656a-4cb2-8034-0471bbd257ec",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C33",
+      "claim": "iPSC-CMs are generally used to understand how perturbation to the cells will result in a change to cardiac electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, iPSC-CMs are generally used to understand how perturbation to the cells will result in a change to cardiac electrophysiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of how iPSC-CMs are used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "41405e83-d947-4dfe-a0ce-0c4c9393449b",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C34",
+      "claim": "Wide-ranging behavior has been reported to spontaneously occur even from cells cultured from the same genetic line.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, wide-ranging behavior has been reported to spontaneously occur even from cells cultured from the same genetic line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes known variability in iPSC-CMs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "6b20e42d-ff2e-4275-9daa-3bb9131956e0",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C35",
+      "claim": "It can be difficult at times to determine if a perturbation indeed has an effect compared to a control cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it can be difficult at times to determine if a perturbation indeed has an effect compared to a control cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the variability in iPSC-CMs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "737de289-1d2b-46f4-95b2-9cf9efcb7307",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C36",
+      "claim": "The classification task allows sorting of cells into categories without perturbation and cells that have undergone perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, one purpose of the classification task as described in this study is to allow sorting of cells into categories without perturbation and cells that have undergone perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose of the classification task.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "5feb5f7f-d683-42a5-a621-c6948cc6edd7",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C37",
+      "claim": "Long-short-term-memory (LSTM)-based networks are capable of learning order dependence in sequence prediction problems.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-short-term-memory (LSTM)-based networks, which are capable of learning order dependence in sequence prediction problems (Hochreiter and Schmidhuber, 1997), have been widely used for cardiac monitoring purposes (Guo et al., 2021; Shi et al., 2021; Picon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "6fdda254-e812-4ea5-84ab-f85cd429c8ed",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C38",
+      "claim": "LSTM-based networks have been widely used for cardiac monitoring purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-short-term-memory (LSTM)-based networks, which are capable of learning order dependence in sequence prediction problems (Hochreiter and Schmidhuber, 1997), have been widely used for cardiac monitoring purposes (Guo et al., 2021; Shi et al., 2021; Picon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "83112f36-ee32-4527-8a67-45ec0bdacd44",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C39",
+      "claim": "LSTM networks have been used to extract important biomarkers from raw ECG signals.",
+      "claim_type": "EXPLICIT",
+      "source": "They have been used to extract important biomarkers from raw ECG signals (Ballinger, 2018; He et al., 2019; Hou et al., 2019) and help clinicians to accurately detect common heart failure biomarkers in ECG screenings (Ballinger, 2018; Warrick and Homsi, 2017; Oh et al., 2018; Chen et al., 2020; Wang and Zhou, 2019; Bian, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "af5a43c1-0b89-42fa-bafc-d2d87a6be004",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C40",
+      "claim": "LSTM networks help clinicians to accurately detect common heart failure biomarkers in ECG screenings.",
+      "claim_type": "EXPLICIT",
+      "source": "They have been used to extract important biomarkers from raw ECG signals (Ballinger, 2018; He et al., 2019; Hou et al., 2019) and help clinicians to accurately detect common heart failure biomarkers in ECG screenings (Ballinger, 2018; Warrick and Homsi, 2017; Oh et al., 2018; Chen et al., 2020; Wang and Zhou, 2019; Bian, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "19140fec-6a87-4286-b95d-ecd1a43ec69c",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C41",
+      "claim": "LSTM networks have been highlighted as the best predictive models using real-time data.",
+      "claim_type": "EXPLICIT",
+      "source": "LSTM networks, which can catch existing temporal information in the electronic health records (EHRs), have been highlighted as the best predictive models using real-time data (Maragatham and Devi, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "dd32a1a2-d0dd-4765-adfb-bf38d3baeeac",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C42",
+      "claim": "LSTM-based classifiers have empowered early arrhythmia detection by automatically classifying arrhythmias using ECG features.",
+      "claim_type": "EXPLICIT",
+      "source": "LSTM-based classifiers have also empowered early arrhythmia detection by automatically classifying arrhythmias using ECG features (Yildirim et al., 2019; Wang et al., 2019; Martis et al., 2013; Liu et al., 2019; Yildirim, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "3049b777-277d-4b28-a7f6-d2c38de49e8c",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C43",
+      "claim": "Deep learning algorithms have been employed to predict drug-induced arrhythmogenicity associated with blockade of the delayed rectifier K+ channel current (IKr) in the CMs encoded by hERG.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, deep learning algorithms have been employed to predict drug-induced arrhythmogenicity associated with blockade of the delayed rectifier K+ channel current (IKr) in the CMs encoded by human ether-\u00e0-go-go-related gene (hERG) (Yang et al., 2020) for sets of small molecules in drug discovery and screening process (Yang et al., 2020; Cai et al., 2019; Zhang et al., 2019; Dickson et al., 2020; Ryu et al., 2020; Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "e66374a2-cfdc-402f-a2b4-4edb54f5aa8b",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C44",
+      "claim": "A population of 208 AP waveforms was simulated for both Kernik in silico human iPSC-CMs and O'Hara\u2013Rudy in silico human adult-CMs.",
+      "claim_type": "EXPLICIT",
+      "source": "To collect the data for training the multitask network, we simulated a population of 208 AP waveforms for both Kernik in silico human iPSC-CMs (Kernik et al., 2019; Figure 1E, blue) and O'Hara\u2013Rudy in silico human adult-CMs (O'Hara et al., 2011; Figure 1F, blue).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data generation process for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "c6af13ca-0917-4977-b5b3-65b7e2ae49d6",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C45",
+      "claim": "Physiological noise was applied at matching cycle lengths into the iPSC-CMs and adult-CMs to ensure consistency across a population of simulated myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We ensured consistency across a population of simulated myocytes by applying physiological noise at matching the cycle lengths into the iPSC-CMs and adult-CMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "ed48c10a-ef32-4671-958d-c79096065171",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C46",
+      "claim": "The cell variability in each population is intended to represent the individual variability that is observed in a drug-free human population.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell variability in each population is intended to represent the individual variability that is observed in a drug-free human population (Kernik et al., 2019; O'Hara et al., 2011; Tanskanen and Alvarez, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for the modeling approach.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "9f03fe5f-644f-4177-a857-4be5eba4e2a0",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C47",
+      "claim": "The ionic currents underlying the in silico iPSC-CM APs and adult-CM APs show marked differences.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 1C, D, the ionic currents underlying the in silico iPSC-CM APs and adult-CM APs show marked differences, one reason for the broadly expressed concerns about the applicability of utilizing immature iPSC-CM APs in the study of human disease and pharmacology.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "0cb343ce-a687-4068-8db4-7dce1eeea4c1",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C48",
+      "claim": "The substantial current differences illustrate the necessity of a generalized approach to perform translation from immature myocytes into mature myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The substantial current differences illustrate the necessity of a generalized approach to perform translation from immature myocytes into mature myocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "82eaf992-6fb2-4bb4-9749-ad6c226ea4b5",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C49",
+      "claim": "Drugged iPSC-CM and adult-CM APs were simulated via both a simple IKr drug block model of GKr reduction by 1\u201350% and a complex model of conformation-state dependent IKr block in the presence of 2.72 ng/mL dofetilide.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that our multitask network could perform over a range of conditions and model forms, we simulated drugged iPSC-CM and adult-CM APs via both a simple IKr drug block model of GKr reduction by 1\u201350% (250 samples in Figure 1E, F, green) and a complex model of conformation-state dependent IKr block in the presence of 2.72 ng/mL dofetilide (300 samples in Figure 1E, F, purple).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data generation process for drugged conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "11797b69-c543-43b9-92e3-ef7ea57e99c8",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C50",
+      "claim": "The drug-free and drugged models with simple and complex IKr block model schemes (758 samples) were combined for training the multitask network.",
+      "claim_type": "EXPLICIT",
+      "source": "We combined the drug-free and drugged models with simple and complex IKr block model schemes (758 samples) for training the multitask network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training data composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "61c03b32-7bfb-41b7-9d9b-f86f97defdc0",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C51",
+      "claim": "A digital forward and backward data filtering technique was applied to the simulated iPSC-CM and adult-CM AP traces.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we applied a digital forward and backward data filtering technique (Gustafsson, 1996) to the simulated iPSC-CM and adult-CM AP traces (Figure 2, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data preprocessing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "92dad9f4-5df6-4c96-a96b-a456b6e2932c",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C52",
+      "claim": "Noise filtering does not change the AP waveform morphology or time course and primarily removes existing vertical noises.",
+      "claim_type": "EXPLICIT",
+      "source": "The near superimposition of the histogram distributions assures that noise filtering does not change the AP waveform morphology or time course and primarily removes existing vertical noises.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing APD90 distributions before and after filtering.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "5336f8ea-6f98-4530-9ad2-8c2bfd09dacf",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C53",
+      "claim": "The multitask network receives preprocessed simulation-generated iPSC-CM AP waveforms as input.",
+      "claim_type": "EXPLICIT",
+      "source": "The multitask network receives preprocessed simulation-generated iPSC-CM AP waveforms (noise-filtered and normalized) as input and scans whole AP time-series values through two stacked LSTM layers (Figure 3A, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the network architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "ad38c3ae-0e00-40cc-8837-394deec6807f",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C54",
+      "claim": "The LSTM layers remember the most important iPSC-CM AP values (features) they need to perform the translation and classification tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "The LSTM layers remember the most important iPSC-CM AP values (features) they need to perform the translation and classification tasks and pass the information to two fully connected layers (Figure 3A, E), one for the translation task to predict the corresponding adult-CM AP waveform (Figure 3B) and one for the classification task to classify iPSC-CM APs into drug-free and drugged categories (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes how the LSTM layers function in the network.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "bcf26d60-c598-4f9d-ba56-b1b10e964e08",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C55",
+      "claim": "The mean squared error, R2 score, and error in adult-CM APD90 prediction were used as evaluation metrics for the translation task.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean squared error, R2 score (Devore, 2011), and error in adult-CM APD90 prediction were used as evaluation metrics for the translation task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the evaluation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "2d95aed2-1cbb-47fc-90dd-bc3c7074f536",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C56",
+      "claim": "For the classification task, area under the receiver operating characteristic (AUROC) curve, network prediction accuracy, precision, and recall were used to evaluate the network performance.",
+      "claim_type": "EXPLICIT",
+      "source": "For the classification task, area under the receiver operating characteristic (AUROC) curve (Fawcett, 2006), network prediction accuracy, precision, and recall (Powers, 2011) were used to evaluate the network performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the evaluation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "479bf2a0-bbd4-4231-8466-30dbf611bbc6",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C57",
+      "claim": "The multitask network is able to translate iPSC-CM APs into adult-CM APs with less than 0.003 mean-squared error (MSE).",
+      "claim_type": "EXPLICIT",
+      "source": "The network is able to translate iPSC-CM APs into adult-CM APs with less than 0.003 mean-squared error (MSE), 0.99 R2 score, and <4% error in APD90 prediction for both training and test datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "e6716938-c020-470f-a665-d5a8be5b9adb",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C58",
+      "claim": "The multitask network is able to translate iPSC-CM APs into adult-CM APs with 0.99 R2 score.",
+      "claim_type": "EXPLICIT",
+      "source": "The network is able to translate iPSC-CM APs into adult-CM APs with less than 0.003 mean-squared error (MSE), 0.99 R2 score, and <4% error in APD90 prediction for both training and test datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "38f4da33-49c5-4b1e-9523-676e27a2e8d4",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C59",
+      "claim": "The multitask network is able to translate iPSC-CM APs into adult-CM APs with <4% error in APD90 prediction for both training and test datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The network is able to translate iPSC-CM APs into adult-CM APs with less than 0.003 mean-squared error (MSE), 0.99 R2 score, and <4% error in APD90 prediction for both training and test datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "61d68ce7-b6ee-4d50-9cd5-fcf58d62f7f5",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C60",
+      "claim": "The multitask network proved to perform well in categorizing iPSC-CM APs into drug-free and drugged waveforms with approximately 90% accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "The multitask network proved to perform well in categorizing iPSC-CM APs into drug-free and drugged waveforms with approximately 90% accuracy (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the study shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "ea26ed3d-9be9-4c64-8c77-86fdba65e2d4",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C61",
+      "claim": "The network is extremely sensitive to information contained within the 400\u2013500 ms time frame.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the network is extremely sensitive to information contained within the 400\u2013500 ms time frame (blacked dashed bar in Figure 6A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the ablation study results shown in Figure 6A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "73ee2e64-ad72-43a7-84ab-d6665ae01c8a",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C62",
+      "claim": "The most important information needed to classify iPSC-CM APs into drug-free and drugged traces and distinguish adult-CM AP signals from iPSC-CM AP signals is contained in a particular region of the AP plateau.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the most important information needed to classify iPSC-CM APs into drug-free and drugged traces and distinguish adult-CM AP signals from iPSC-CM AP signals is contained in a particular region of the AP plateau.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ablation study results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "9442ca03-050b-4853-b24b-0cbca7abca2d",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C63",
+      "claim": "The time frame of the AP between 400 and 500 ms corresponds to a phase of exquisite sensitivity to perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "The time frame of the AP between 400 and 500 ms (Figure 6A, B) corresponds to a phase of exquisite sensitivity to perturbation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on prior work and current observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "933ee3e3-b2a2-4a38-942b-a982f617b670",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C64",
+      "claim": "This particular AP range has been identified in an earlier study as the phase when the membrane resistance of the myocyte increases markedly.",
+      "claim_type": "EXPLICIT",
+      "source": "We have identified this particular AP range in an earlier study as the phase when the membrane resistance of the myocyte increases markedly (Figure 6C; Yang et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to prior work and shown in Figure 6C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "f3a42657-b4e9-41ad-be82-a0544fd97345",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C65",
+      "claim": "The membrane resistance increases markedly as the inward and outward currents balance each other, leading to a net whole cell current that is nearly constant so that dI \u2192 0, dV/dI \u2192 \u221e.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs as the inward and outward currents balance each other, leading to a net whole cell current that is nearly constant so that dI \u2192 0, dV/dI \u2192 \u221e (Figure 6D), followed by a rapid reduction in outward current.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "3b98d1e4-fc79-4421-a92d-b7ab4de73d28",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C66",
+      "claim": "Individual current densities have a period of inward and outward current balance followed by rapid changes in IKr and other repolarizing currents at 400\u2013500 ms time interval.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6E demonstrates that individual current densities have a period of inward and outward current balance followed by rapid changes in IKr and other repolarizing currents at 400\u2013500 ms time interval.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "004ac4fe-2cc3-4a2d-ac60-929900b516ea",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C67",
+      "claim": "Experimental iPSC-CM APs from the Kurokawa lab were used as input data into the multitask network and translated to predicted adult-CM APs.",
+      "claim_type": "EXPLICIT",
+      "source": "We used experimental iPSC-CM APs from the Kurokawa lab (Figure 7A) as the input data into the multitask network and translated to predicted adult-CM APs as shown in Figure 7B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the application of the network to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "683da6a7-e220-4d61-b2d6-2cba37142740",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C68",
+      "claim": "The translation notably resulted in a reduction in variability in APD in the adult translated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The translation notably resulted in a reduction in variability in APD in the adult translated cells, consistent with our simulated results and with previous experimental observations (Blinova et al., 2018; Fabbri et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the results and consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "9c437d27-7674-424f-bee2-5219ef9e6abe",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C69",
+      "claim": "The reduction in variability in APD in adult translated cells is consistent with simulated results and with previous experimental observations.",
+      "claim_type": "EXPLICIT",
+      "source": "The translation notably resulted in a reduction in variability in APD in the adult translated cells, consistent with our simulated results and with previous experimental observations (Blinova et al., 2018; Fabbri et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "2d5e8507-c9aa-4426-b662-b5d6952c0ac3",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C70",
+      "claim": "The translated drugged APD90 values from spontaneously beating simulated iPSC-CMs fall within the range of experimentally reported values at 1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 7C, the translated drugged APD90 values are shown as turquoise asterisks from spontaneously beating (~1000 ms cycle length) simulated iPSC-CMs plotted against simulations from O'Hara\u2013Rudy adult-CM APs with 50% IKr block (red curve) and experimental 50% block of IKr by 1 \u03bcM E-4031 (blue squares) (O'Hara et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7C by comparison with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "e0f5a842-d543-40bb-9352-2031b9525869",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C71",
+      "claim": "The effects of drug block in iPSC-CMs can be successfully translated to predict drug effect on adult human cardiomyocyte APs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data validate that the effects of drug block in iPSC-CMs can be successfully translated to predict drug effect on adult human cardiomyocyte APs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is validated by comparison with experimental data in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "8bdd29dc-9086-4526-a287-dc8028f93854",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C72",
+      "claim": "A concern with iPSC-CM is that the data collection results in measurements from immature APs, and it is unclear if these data reliably indicate impact in the adult cardiac environment.",
+      "claim_type": "EXPLICIT",
+      "source": "A concern with iPSC-CM is that the data collection results in measurements from immature APs, and it is unclear if these data reliably indicate impact in the adult cardiac environment (Navarrete et al., 2013; Casini et al., 2017; Goversen et al., 2018; Knollmann, 2013; Sinnecker et al., 2013; Blinova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known concern supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "b5d91f91-d742-4bb7-b2f2-ba136d5e529e",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C73",
+      "claim": "Application of a deep learning ANN to simultaneously translate and classify signals from simulated iPSC-CMs for both drug-free and drugged conditions has several key advantages.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of a deep learning ANN to simultaneously translate and classify signals from simulated iPSC-CMs for both drug-free and drugged conditions has several key advantages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the advantages of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "a6cbe144-b0c8-48cc-97c2-0cc7f76020ec",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C74",
+      "claim": "There is no need for the multitask network user to a priori define the important system parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Because there is no need for the multitask network user to a priori define the important system parameters, the approach is by definition an unbiased model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key advantage of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "9f428507-2a7b-4cf6-bd6e-da4c1a3bc75b",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C75",
+      "claim": "The learning network is indifferent to the underlying form of the models and can readily translate time-series data from any source.",
+      "claim_type": "EXPLICIT",
+      "source": "Another benefit is the model-agnostic approach in that the learning network is indifferent to the underlying form of the models and can readily translate time-series data from any source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key advantage of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "c4c44e5d-da57-4e27-98c7-5375112cbe18",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C76",
+      "claim": "The nonlinearity of the system is accepted by the deep learning approach, and there are no assumptions made about cardiac protein expression levels and changes in their function during cardiomyocyte maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The nonlinearity of the system is accepted by the deep learning approach, and there are no assumptions made about cardiac protein expression levels and changes in their function during cardiomyocyte maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key advantage of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "0c149196-91f9-4cf0-b689-3de37851c54a",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C77",
+      "claim": "The deep learning ANN can successfully translate simple pore block and complex conformation state-dependent channel\u2013drug interaction models.",
+      "claim_type": "EXPLICIT",
+      "source": "The deep learning ANN can successfully translate simple pore block and complex conformation state-dependent channel\u2013drug interaction models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "c8c99d8f-13b2-4ab2-a426-7ac10844f793",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C78",
+      "claim": "The network can learn from multiple sources of data even when they are generated from different models.",
+      "claim_type": "EXPLICIT",
+      "source": "The network can learn from multiple sources of data even when they are generated from different models and learns from all the data sources concurrently for robust and successful translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the network.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "b4ae420b-8864-4e20-885b-d16ef7e582f0",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C79",
+      "claim": "All aspects of the technology presented suggest broad applicability for use across ages, species, and conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these aspects of the technology presented here suggest broad applicability for use across ages, species, and conditions, and we demonstrate its utility for translating and predicting experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "9e315636-acaa-43c7-b3e9-0b4c9dd5db23",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C80",
+      "claim": "The multitask network performed well in the setting of the noted variability in measurements from iPSC-CM APs.",
+      "claim_type": "EXPLICIT",
+      "source": "The multitask network presented here performed well in the setting of the noted variability in measurements from iPSC-CM APs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "f31bdd04-d5bb-4106-99de-464c78b2d32b",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C81",
+      "claim": "Utilizing simulated data presented a unique opportunity to generate large amounts of data that were used both to train and optimize the network and then to test the network with specifically designated distinct simulated datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing simulated data presented a unique opportunity: we were able to generate large amounts of data that were used both to train and optimize the network and then to test the network with specifically designated distinct simulated datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "19178ca8-7943-4726-8495-9012954777ca",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C82",
+      "claim": "Utilizing simulated data to train a deep learning network may constitute a widely applicable approach that could be used to train a variety of networks to perform multiple functions where access to comparable experimental data is not feasible.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing simulated data to train a deep learning network may constitute a widely applicable approach that could be used to train a variety of networks to perform multiple functions where access to comparable experimental data is not feasible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "b7f68684-65a0-43cb-845d-cfb0b8433c49",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C83",
+      "claim": "Adding the classification task to distinguish drug-free and drugged APs could improve the performance of the translation task.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we noted that adding the classification task to distinguish drug-free and drugged APs could improve the performance of the translation task (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "3587c3c1-6849-4d4f-aac2-b44d4759f1ba",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C84",
+      "claim": "It is not surprising that the 400-500 ms time frame is shown to contain the most important information to perform the classification task as the effect of IKr block is critical during the high resistance phase of the membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not surprising that this time frame is shown to contain the most important information to perform the classification task as the effect of IKr block is critical during the high resistance phase of the membrane potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on physiological knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "46eca0f3-55ce-4b05-96ba-b1a4c48ba983",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C85",
+      "claim": "It is possible that other types of perturbations (e.g., Na channel blocker, ischemia) may lead to a different outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that other types of perturbations (e.g., Na channel blocker, ischemia) may lead to a different outcome, and we will pursue those questions in future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "a4b983a2-7c60-4781-92a6-c3fadf510b8d",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C86",
+      "claim": "The variation observed in the adult-CM AP duration is smaller compared to iPSC-CM APDs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that the variation observed in the adult-CM AP duration is smaller compared to iPSC-CM APDs (Figure 7A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 7A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "f2d50cc5-6445-45e1-a0d9-cc92d671b62b",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C87",
+      "claim": "The smaller variation in adult-CM AP duration compared to iPSC-CM APDs has been observed both experimentally and in simulated cell environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been observed both experimentally (Blinova et al., 2018; Fabbri et al., 2019) and in our simulated cell environment (Kernik et al., 2019; Kernik et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "cca46153-8f83-461f-8b3b-b24752ca6f76",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C88",
+      "claim": "The immature iPSC-CM cells have low conductance during the AP plateau, rendering it comparably higher resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "The immature iPSC-CM cells have low conductance during the AP plateau, rendering it comparably higher resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on physiological knowledge and model properties.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "61b4d56c-a3b7-412b-a794-8e834548590e",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C89",
+      "claim": "Small perturbations to the iPSC-CM APs have a larger impact on the resulting AP duration than observed in adult cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, small perturbations to the iPSC-CM APs have a larger impact on the resulting AP duration than observed in adult cells (Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "84cc36b3-e685-49bb-bf43-9cad978dba99",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C90",
+      "claim": "The deep learning algorithm presented has the benefit of automating feature extraction without any predetermination of the feature.",
+      "claim_type": "EXPLICIT",
+      "source": "The deep learning algorithm presented here has the benefit of automating feature extraction without any predetermination of the feature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "e0cdbbc1-7f5f-4c77-910d-56bc67f67699",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C91",
+      "claim": "The deep learning algorithm allows for the translation of time-course data from simulated or experimental datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "It also allows for the translation of time-course data from simulated or experimental datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "b4aa34b6-f56d-43f9-bf13-76b0bec22a06",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C92",
+      "claim": "One limitation of the deep learning approach is the requirement for multiple datasets that are of sufficient quality for training.",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation is the requirement for multiple datasets that are of sufficient quality for training \u2013 the more robust the training set, the higher the accuracy of the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "8f0b4e03-caf2-440b-b55d-6628e73879e5",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C93",
+      "claim": "The limitation of requiring multiple quality datasets can possibly be addressed in future studies by developing new methods for data extraction and data interpolation in sparse datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that this limitation can be addressed in future studies by developing new methods for data extraction and data interpolation in sparse datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "ca0e9687-42db-4648-990e-e13c96514239",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C94",
+      "claim": "Simulated data can be generated to constitute a robust dataset that can be used to train the multitask model and allow extraction of the relevant features from any time-course dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulated data can be generated to constitute a robust dataset that can be used to train the multitask model and allow extraction of the relevant features from any time-course dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "a284cff4-bf3a-4bde-9884-c086ff8186cf",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C95",
+      "claim": "The classification task might be applied to distinguish cellular-level signals derived from cells cultured using different protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "By extension, the classification task might even be applied to distinguish cellular-level signals derived from cells cultured using different protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "7faa2b4c-2ab9-4a49-8c62-bf32f75a87ef",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C96",
+      "claim": "The multitask network could be readily extended and applied to translate data across species and classify data from a variety of systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The multitask network in this study was used for translation of iPSC-CMs to adult APs but could be readily extended and applied to translate data across species and classify data from a variety of systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "2eff92b7-2b44-4e16-84f8-30b16180f3c5",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C97",
+      "claim": "Another extension of the technology is to predict the impact of naturally occurring mutations and other genetic variations.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, another extension of the technology presented here is to predict the impact of naturally occurring mutations and other genetic variations (Yoshinaga et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "f95adb62-bfee-4959-98f1-35173c9bb327",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C98",
+      "claim": "The Kernik in silico iPSC-CM baseline cells were paced from resting steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kernik in silico iPSC-CM baseline cells were paced from resting steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "6f10f7b4-3226-475b-99e2-f15d70b1f340",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C99",
+      "claim": "The O'Hara\u2013Rudy in silico endocardial cell model was used for the baseline adult-CMs.",
+      "claim_type": "EXPLICIT",
+      "source": "The O'Hara\u2013Rudy in silico endocardial cell model was used for the baseline adult-CMs (O'Hara et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "37b19c61-f540-40e8-9797-13356ba84a29",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C100",
+      "claim": "The control adult-CMs were paced at the cycle length of 982 ms to match the cycle length of the last beat of the spontaneously depolarizing iPSC-CM AP.",
+      "claim_type": "EXPLICIT",
+      "source": "The control adult-CMs were paced at the cycle length of 982 ms to match the cycle length of the last beat of the spontaneously depolarizing iPSC-CM AP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "496c2786-4b24-45d1-b3e9-1291607948cc",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C101",
+      "claim": "The numerical method used for updating the voltage was Forward Euler method.",
+      "claim_type": "EXPLICIT",
+      "source": "The numerical method used for updating the voltage was Forward Euler method (Atkinson, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "7936762b-5e34-430c-ab69-4c38e02cd3f5",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C102",
+      "claim": "The iPSC-CMs and the adult-CMs populations were paced with 1\u201350% IKr block with 1% increments.",
+      "claim_type": "EXPLICIT",
+      "source": "The iPSC-CMs and the adult-CMs populations were paced with 1\u201350% IKr block with 1% increments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology for drug block.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "51dc71e6-9e7f-460e-9fac-cf00b46e8eee",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C103",
+      "claim": "The IKr channel Hodgkin\u2013Huxley model in both iPSC-CM and adult-CM AP models was replaced with a drug\u2013hERG channel interaction Markov model that was previously published.",
+      "claim_type": "EXPLICIT",
+      "source": "The IKr channel Hodgkin\u2013Huxley model in both iPSC-CM and adult-CM AP models was replaced with a drug\u2013hERG channel interaction Markov model (see bottom rows in Figure 1G) that we have previously published (Yang et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the simulation methodology for complex drug block.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "6deb932b-a1c5-4642-b6d3-772b6d4b0f14",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C104",
+      "claim": "iPSC-CM (n = 300) and adult-CM AP populations (n = 300) were generated with physiological noise in the presence of 2.72 ng/mL dofetilide.",
+      "claim_type": "EXPLICIT",
+      "source": "iPSC-CM (n = 300) and adult-CM AP populations (n = 300) were generated with physiological noise in the presence of 2.72 ng/mL dofetilide, a potent hERG channel blocker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data generation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "fc5b92f9-fb57-4533-8966-470e72e5c8d6",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C105",
+      "claim": "Simulated noise current was added to the last 100 paced beats in the simulated AP models.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulated noise current was added to the last 100 paced beats in the simulated AP models, and simulated APs were recorded at the 2000th paced beat in single cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "d73d0450-880c-4cb9-afed-a461b8924d4d",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C106",
+      "claim": "Human iPSC-CMs (201B7, RIKEN BRC, Tsukuba, Japan) were cultured and subcultured on SNL76/7 feeder cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Human iPSC-CMs (201B7, RIKEN BRC, Tsukuba, Japan) were cultured and subcultured on SNL76/7 feeder cells as described in detail previously (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "63577ae9-0167-4710-a480-132b7eecd4f5",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C107",
+      "claim": "APs were recorded with the perforated configuration of the patch-clamp technique.",
+      "claim_type": "EXPLICIT",
+      "source": "APs were recorded with the perforated configuration of the patch-clamp technique as described in detail previously (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "7d7b9465-acfd-460d-bcd0-951d0dfadd5e",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C108",
+      "claim": "The multitask network comprised two stacked LSTM layers followed by independent fully connected layers for the classification and translation tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "The multitask network comprised two stacked LSTM layers followed by independent fully connected layers (Figure 3A) for the classification and translation tasks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the network architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "1c67313e-a30f-4b0d-83c6-03974b2554eb",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C110",
+      "claim": "The LSTM layers were responsible for extracting the most important information while scanning the AP traces using the short- and long-term memory components.",
+      "claim_type": "EXPLICIT",
+      "source": "The LSTM layers were responsible for extracting the most important information while scanning the AP traces using the short- and long-term memory components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how LSTM layers function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "74387c93-cffb-4ecf-a0c9-4d7120d8c066",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C111",
+      "claim": "The LSTM cells contained internal mechanisms called gates that regulated the flow of information at each time step.",
+      "claim_type": "EXPLICIT",
+      "source": "The LSTM cells contained internal mechanisms called gates. The gates were neural network with weights (w) and bias terms (b) that regulated the flow of information at each time step before passing on the long-term and short-term information to the next cell (Cheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how LSTM layers function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "d0c8d11c-c61f-47d8-88fc-df29b0c0bac4",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C112",
+      "claim": "The forget gate determined which information from the long-term memory should be kept or discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "The forget gate, as the name implies, determined which information from the long-term memory should be kept or discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how LSTM gates function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "02c75bcb-73d3-43c8-b353-b01679c70912",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C115",
+      "claim": "Fully connected layers received the output of LSTM layers as input.",
+      "claim_type": "EXPLICIT",
+      "source": "Fully connected layers received the output of LSTM layers as input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the network architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "b6c24a2c-cf0e-4f86-8702-820487e6a2a0",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C116",
+      "claim": "The fully connected layers calculated a weighted sum of LSTM outputs and added a bias term to the outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "The fully connected layers calculated a weighted sum of LSTM outputs and added a bias term to the outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how fully connected layers function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "a7224de5-bb37-433f-80c3-22421f55dabd",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C117",
+      "claim": "MSE and cross-entropy loss functions were used to map the translation and classification tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we estimated the network errors using MSE (Equation 10) and cross-entropy loss functions (Equation 11) to map the translation and classification tasks (Goodfellow et al., 2016; Murphy, 2012), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "44eb31d7-51de-4996-989d-d3c2250c3096",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C119",
+      "claim": "A rectified linear unit (ReLu) was used as activation function to calculate the output for each hidden layer neuron at each training iteration.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a rectified linear unit (ReLu) (Glorot et al., 2011) as activation function in Equation 8 to calculate the output for each hidden layer neuron at each training iteration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "0d636a3c-59c4-479a-937e-5659bb068bde",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C120",
+      "claim": "Dropout regularization was used to randomly drop neurons with 0.2 probability of elimination along with their connections from the LSTM and fully connected layers during training to reduce overfitting.",
+      "claim_type": "EXPLICIT",
+      "source": "We used dropout regularization (Zaremba et al., 2014) to randomly drop neurons with 0.2 probability of elimination along with their connections from the LSTM and fully connected layers during training to reduce the overfitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "a4b50b4c-6fa2-422a-8100-248c9deb24aa",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C121",
+      "claim": "The preprocessed data was split in 70:10:20 ratio into training, validation, and test datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we split the preprocessed data in 70:10:20 ratio into training, validation, and test datasets, respectively, and implemented the network architecture using Pytorch (Ketkar, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "cd0819bd-9f98-4c10-9998-d4476ce51029",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "claim_id": "C122",
+      "claim": "The network architecture was implemented using Pytorch.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we split the preprocessed data in 70:10:20 ratio into training, validation, and test datasets, respectively, and implemented the network architecture using Pytorch (Ketkar, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the implementation methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8388b433-a294-4e69-8a2d-b6e5d2403ad4",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a deep learning multitask network trained on simulated action potential (AP) data from iPSC-CMs and adult-CMs to simultaneously perform classification (drug-free vs. drugged) and translation (iPSC-CM to adult-CM APs). The training dataset consisted of 758 samples including drug-free cells (n=208 each for iPSC-CM and adult-CM) and drugged cells simulated with both simple IKr block (1-50% reduction) and complex Markov models of dofetilide block.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C25, C44-C46, C49-C50 collectively describe the network design, training approach, and data generation methodology. The manuscript provides detailed methods for simulation, physiological noise application, and drug modeling. The approach is well-documented with appropriate model citations and clear description of the 758-sample training set composition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The multitask network architecture consists of two stacked LSTM layers followed by separate fully connected layers for translation and classification tasks. Data preprocessing included noise filtering and normalization, with a 70:10:20 train/validation/test split. Training used MSE and cross-entropy loss functions, ReLU activation, dropout regularization (0.2 probability), and ADAM optimization, implemented in PyTorch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54, C108, C110-C112, C115-C117, C119-C122 describe the network architecture and training methodology in detail. The manuscript provides appropriate technical specifications, mathematical formulations (Equations 2-15), and implementation details. The LSTM gate mechanisms are explained with proper citations, and the training procedure is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "24466e68-0a36-4340-a9be-e51f357567b5",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The multitask network achieved high performance on both tasks: translation with MSE <0.003, R\u00b2 score of 0.99, and <4% error in APD90 prediction; classification with ~90% accuracy (AUROC ~0.91-0.93) for distinguishing drug-free from drugged iPSC-CM APs. Performance was consistent across training and test datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 report quantitative performance metrics supported by Table 1 and Figure 5. The metrics are appropriate for the tasks (MSE, R\u00b2, APD90 error for translation; AUROC, accuracy, precision, recall for classification). Results show good generalization from training to test sets, though the manuscript does not report confidence intervals or statistical significance tests for the performance differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "34e83b0b-fde3-49f1-bb8c-8135e3f64de1",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ablation studies revealed that the 400-500 ms time window of the AP contains the most critical information for both classification and translation tasks. This corresponds to the phase of high membrane resistance where inward and outward currents balance (dI\u21920, dV/dI\u2192\u221e), followed by rapid changes in IKr and other repolarizing currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C61-C66 describe the ablation study findings supported by Figure 6A-E. The manuscript demonstrates that removing data from the 400-500 ms window substantially degrades both AUROC and MSE. The physiological interpretation is supported by prior work (Yang et al., 2015) and current simulations showing membrane resistance dynamics. The connection between network sensitivity and physiological mechanisms is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "a9ff107e-6474-48c9-9828-24605c58d6a6",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The network successfully translated experimental iPSC-CM APs to adult-CM APs, with reduced variability in the translated adult APDs consistent with prior observations. Validation using simulated 50% IKr block showed that translated APD90 values from iPSC-CMs fell within the range of experimental adult-CM data from O'Hara et al. (2011).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C67-C71 describe application to experimental data (Figure 7). The network successfully processed experimental iPSC-CM APs and produced adult-CM predictions. The validation against published experimental data (O'Hara et al., 2011) provides external support. However, the experimental validation is limited to a small number of traces, and no quantitative comparison metrics are provided for the experimental translation accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "fa7fa681-664e-41d6-ae5b-f854c7a35ddc",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Adding the classification task improved translation performance compared to translation alone, as demonstrated by comparing metrics in Table 1 when the classification task was removed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by Table 1, which shows that removing the classification task increases MSE from 0.0029 to 0.0034 and APD90 error from 3.60% to 4.33% on the test dataset. This demonstrates the benefit of multitask learning, though the improvement is modest and no statistical testing is reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The deep learning approach offers several advantages over prior linear translation methods: it is unbiased (no a priori parameter selection), model-agnostic (can handle any time-series data), accepts system nonlinearity, makes no assumptions about protein expression changes during maturation, and successfully translates both simple pore block and complex state-dependent drug interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30, C73-C78, C90-C91 describe methodological advantages. The unbiased nature is supported by the LSTM architecture learning features automatically. Model-agnostic capability is demonstrated by successful translation of both simple (1-50% IKr block) and complex (Markov model dofetilide) drug effects. However, the claim of handling 'any time-series data' is overstated\u2014the network was only tested on cardiac AP data with specific characteristics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "478a44fc-eecb-4529-8f8f-dc3e15eec25f",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A limitation of the approach is the requirement for multiple high-quality datasets for robust training\u2014the more robust the training set, the higher the task accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C92 acknowledge a key limitation. This is a well-recognized constraint of deep learning approaches and is appropriately stated. The manuscript used 758 training samples, which is substantial for this application, but the limitation is relevant for extending to other cell types or conditions where such data may not be available.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "9e6ade4d-31ee-4611-844a-86cc9ef58f7a",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The network performed well despite variability in iPSC-CM measurements. Using simulated data for training presented advantages for generating large datasets and may constitute a widely applicable approach for training networks when comparable experimental data is not feasible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C82, C94 discuss the use of simulated data for training. While the network did perform well on simulated test data and showed some success on limited experimental data (C80 supported), the broader claims about 'widely applicable approach' (C82, C94) are speculative. The manuscript only demonstrates this for one specific application (iPSC-CM to adult-CM translation), and generalizability to other domains is not established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "ba0778a5-6ace-4b1c-ac9d-fc29989a16db",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "iPSC-CMs have an immature phenotype resembling fetal cardiomyocytes with marked differences in ionic currents compared to adult-CMs, leading to persistent questions about their utility for predicting adult cardiac responses. These differences necessitate a generalized translation approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13, C47-C48, C72 describe the motivation for the study based on well-established limitations of iPSC-CMs. These are supported by multiple citations and demonstrated in Figure 1C-D showing substantial differences in ionic current profiles. This provides appropriate context for why translation methods are needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior translation approaches by Tveito et al., Gong and Sobie, and Koivum\u00e4ki et al. used linear methods with assumptions including invariant protein function during maturation, simple pore block drug models, a priori parameter identification, and independent consideration of drug-free and drugged conditions. These approaches faced challenges including difficulty minimizing cost functions and potential inability to capture nonlinearities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C24 accurately describe prior work and its limitations based on appropriate citations. The characterization of assumptions and limitations in prior linear translation methods provides proper context for the current work. However, the authors should note that some of these 'limitations' may be appropriate simplifications depending on the application.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "3249023f-c8a8-41d8-bbc4-7f9f69303e70",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The 400-500 ms time frame contains critical information for classification because IKr block effects are most important during the high membrane resistance phase. iPSC-CMs show greater APD variability than adult-CMs due to lower conductance during the plateau phase, making them more sensitive to perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84, C86-C89 provide physiological interpretation of results. The explanation for why the 400-500 ms window is critical is well-reasoned and supported by prior work (Yang et al., 2015). The observation of reduced variability in adult-CMs is supported by both current simulations and prior experimental work (Blinova et al., 2018; Fabbri et al., 2019). The mechanistic explanation based on membrane resistance is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "bedbb54b-2716-4644-a8f0-a549316fbffa",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "iPSC-CMs are used to study perturbation effects on cardiac electrophysiology, but wide-ranging behavior occurs even in cells from the same genetic line, making it difficult to determine if perturbations have effects. The classification task addresses this by sorting cells into perturbed and unperturbed categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 provide rationale for including the classification task. The variability in iPSC-CMs is well-established (C34), and the difficulty in distinguishing perturbation effects from baseline variability is a recognized challenge (C35). The classification task is a reasonable approach to address this issue (C36).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "83792f28-588c-46c0-b42f-ef04a91f2d70",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Future extensions could include testing other perturbations (Na channel blockers, ischemia), developing methods for sparse datasets, distinguishing cells from different culture protocols, translating across species, and predicting impacts of genetic mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85, C93, C95-C97 are speculative statements about future work. While these are reasonable extensions, they are not demonstrated in the current manuscript. These represent hypotheses about potential applications rather than established results. The speculation is appropriately qualified with language like 'possible,' 'might,' and 'could.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "6e82fcfc-3a1a-4d82-9cc7-208045b0e6e7",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "iPSC-CMs represent a critical advance for studying patient-specific physiology and pharmacology, constitute a powerful tool for preclinical cardiac assessment, can be cultured from patient-specific cells, and are ideal for patient-based medicine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C10 provide general background on iPSC-CMs supported by multiple citations. These are well-established facts in the field and provide appropriate context for the study. The claims accurately represent the current state of knowledge about iPSC-CM applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "0c544838-36b7-4c08-bad2-1a1b976b299a",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "LSTM-based networks are capable of learning temporal dependencies, have been widely used for cardiac monitoring, ECG analysis, arrhythmia detection, and predicting drug-induced arrhythmogenicity, and are considered among the best predictive models for real-time data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 provide background on LSTM applications in cardiac research, supported by numerous citations. This establishes the rationale for using LSTM architecture for the current application. The characterization of LSTM capabilities and prior applications is accurate based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    },
+    {
+      "id": "5fba613f-10b1-4224-b5db-676e8d433b0b",
+      "content_id": "e95e26ec-cbe9-43de-8f13-b74886987920",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Detailed simulation and experimental methods are described, including use of Kernik iPSC-CM and O'Hara-Rudy adult-CM models, pacing protocols, Forward Euler numerical methods, drug block implementations, noise current addition, and patch-clamp recording techniques for experimental validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C107 describe methodological details supported by appropriate citations and clear descriptions. The simulation protocols are well-documented with specific parameters. The experimental methods reference prior detailed protocols (Li et al., 2017). These provide sufficient detail for reproducibility, though some parameters (e.g., random seeds for simulations) are not specified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:39:45.929744Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8e04d7c8-1bec-403d-939b-923cd575044b",
+      "result_id": "8388b433-a294-4e69-8a2d-b6e5d2403ad4"
+    },
+    {
+      "claim_id": "e65819a0-1afb-46b3-afe7-b5eec98a4c22",
+      "result_id": "8388b433-a294-4e69-8a2d-b6e5d2403ad4"
+    },
+    {
+      "claim_id": "56dbf1e2-27cd-416e-94c2-3a9e0f663d0b",
+      "result_id": "8388b433-a294-4e69-8a2d-b6e5d2403ad4"
+    },
+    {
+      "claim_id": "c073621f-3628-451c-b49d-b016741a2e7b",
+      "result_id": "8388b433-a294-4e69-8a2d-b6e5d2403ad4"
+    },
+    {
+      "claim_id": "e66374a2-cfdc-402f-a2b4-4edb54f5aa8b",
+      "result_id": "8388b433-a294-4e69-8a2d-b6e5d2403ad4"
+    },
+    {
+      "claim_id": "c6af13ca-0917-4977-b5b3-65b7e2ae49d6",
+      "result_id": "8388b433-a294-4e69-8a2d-b6e5d2403ad4"
+    },
+    {
+      "claim_id": "ed48c10a-ef32-4671-958d-c79096065171",
+      "result_id": "8388b433-a294-4e69-8a2d-b6e5d2403ad4"
+    },
+    {
+      "claim_id": "82eaf992-6fb2-4bb4-9749-ad6c226ea4b5",
+      "result_id": "8388b433-a294-4e69-8a2d-b6e5d2403ad4"
+    },
+    {
+      "claim_id": "11797b69-c543-43b9-92e3-ef7ea57e99c8",
+      "result_id": "8388b433-a294-4e69-8a2d-b6e5d2403ad4"
+    },
+    {
+      "claim_id": "61c03b32-7bfb-41b7-9d9b-f86f97defdc0",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "92dad9f4-5df6-4c96-a96b-a456b6e2932c",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "5336f8ea-6f98-4530-9ad2-8c2bfd09dacf",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "ad38c3ae-0e00-40cc-8837-394deec6807f",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "7d7b9465-acfd-460d-bcd0-951d0dfadd5e",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "1c67313e-a30f-4b0d-83c6-03974b2554eb",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "74387c93-cffb-4ecf-a0c9-4d7120d8c066",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "d0c8d11c-c61f-47d8-88fc-df29b0c0bac4",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "02c75bcb-73d3-43c8-b353-b01679c70912",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "b6c24a2c-cf0e-4f86-8702-820487e6a2a0",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "a7224de5-bb37-433f-80c3-22421f55dabd",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "44eb31d7-51de-4996-989d-d3c2250c3096",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "0d636a3c-59c4-479a-937e-5659bb068bde",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "a4b50b4c-6fa2-422a-8100-248c9deb24aa",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "cd0819bd-9f98-4c10-9998-d4476ce51029",
+      "result_id": "0d30b5b8-7f48-4f2f-88e9-2b4323e04b62"
+    },
+    {
+      "claim_id": "bcf26d60-c598-4f9d-ba56-b1b10e964e08",
+      "result_id": "24466e68-0a36-4340-a9be-e51f357567b5"
+    },
+    {
+      "claim_id": "2d95aed2-1cbb-47fc-90dd-bc3c7074f536",
+      "result_id": "24466e68-0a36-4340-a9be-e51f357567b5"
+    },
+    {
+      "claim_id": "479bf2a0-bbd4-4231-8466-30dbf611bbc6",
+      "result_id": "24466e68-0a36-4340-a9be-e51f357567b5"
+    },
+    {
+      "claim_id": "e6716938-c020-470f-a665-d5a8be5b9adb",
+      "result_id": "24466e68-0a36-4340-a9be-e51f357567b5"
+    },
+    {
+      "claim_id": "38f4da33-49c5-4b1e-9523-676e27a2e8d4",
+      "result_id": "24466e68-0a36-4340-a9be-e51f357567b5"
+    },
+    {
+      "claim_id": "61d68ce7-b6ee-4d50-9cd5-fcf58d62f7f5",
+      "result_id": "24466e68-0a36-4340-a9be-e51f357567b5"
+    },
+    {
+      "claim_id": "9f3d5f54-fa87-4420-a820-acc3f550df8b",
+      "result_id": "34e83b0b-fde3-49f1-bb8c-8135e3f64de1"
+    },
+    {
+      "claim_id": "ea26ed3d-9be9-4c64-8c77-86fdba65e2d4",
+      "result_id": "34e83b0b-fde3-49f1-bb8c-8135e3f64de1"
+    },
+    {
+      "claim_id": "73ee2e64-ad72-43a7-84ab-d6665ae01c8a",
+      "result_id": "34e83b0b-fde3-49f1-bb8c-8135e3f64de1"
+    },
+    {
+      "claim_id": "9442ca03-050b-4853-b24b-0cbca7abca2d",
+      "result_id": "34e83b0b-fde3-49f1-bb8c-8135e3f64de1"
+    },
+    {
+      "claim_id": "933ee3e3-b2a2-4a38-942b-a982f617b670",
+      "result_id": "34e83b0b-fde3-49f1-bb8c-8135e3f64de1"
+    },
+    {
+      "claim_id": "f3a42657-b4e9-41ad-be82-a0544fd97345",
+      "result_id": "34e83b0b-fde3-49f1-bb8c-8135e3f64de1"
+    },
+    {
+      "claim_id": "3b98d1e4-fc79-4421-a92d-b7ab4de73d28",
+      "result_id": "34e83b0b-fde3-49f1-bb8c-8135e3f64de1"
+    },
+    {
+      "claim_id": "aea12cc7-ee4a-4b17-b3dc-be97b1918b02",
+      "result_id": "a9ff107e-6474-48c9-9828-24605c58d6a6"
+    },
+    {
+      "claim_id": "2882356e-a75f-4a58-84b7-bba7eecbe845",
+      "result_id": "a9ff107e-6474-48c9-9828-24605c58d6a6"
+    },
+    {
+      "claim_id": "004ac4fe-2cc3-4a2d-ac60-929900b516ea",
+      "result_id": "a9ff107e-6474-48c9-9828-24605c58d6a6"
+    },
+    {
+      "claim_id": "683da6a7-e220-4d61-b2d6-2cba37142740",
+      "result_id": "a9ff107e-6474-48c9-9828-24605c58d6a6"
+    },
+    {
+      "claim_id": "9c437d27-7674-424f-bee2-5219ef9e6abe",
+      "result_id": "a9ff107e-6474-48c9-9828-24605c58d6a6"
+    },
+    {
+      "claim_id": "2d5e8507-c9aa-4426-b662-b5d6952c0ac3",
+      "result_id": "a9ff107e-6474-48c9-9828-24605c58d6a6"
+    },
+    {
+      "claim_id": "e0f5a842-d543-40bb-9352-2031b9525869",
+      "result_id": "a9ff107e-6474-48c9-9828-24605c58d6a6"
+    },
+    {
+      "claim_id": "b7f68684-65a0-43cb-845d-cfb0b8433c49",
+      "result_id": "fa7fa681-664e-41d6-ae5b-f854c7a35ddc"
+    },
+    {
+      "claim_id": "769c2ee9-3bcb-4e87-b80d-a9d75f578a53",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "7a81a477-b3bd-4369-86e2-e7cbd88253ea",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "f52bec7f-b354-4949-bdd3-169444ad883d",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "2a9195c0-d6e6-4da5-a831-75bfc1129db6",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "e569b96f-9f46-49bf-ab54-7b1e46eec6aa",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "b5d91f91-d742-4bb7-b2f2-ba136d5e529e",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "a6cbe144-b0c8-48cc-97c2-0cc7f76020ec",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "9f428507-2a7b-4cf6-bd6e-da4c1a3bc75b",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "c4c44e5d-da57-4e27-98c7-5375112cbe18",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "0c149196-91f9-4cf0-b689-3de37851c54a",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "c8c99d8f-13b2-4ab2-a426-7ac10844f793",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "84cc36b3-e685-49bb-bf43-9cad978dba99",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "e0cdbbc1-7f5f-4c77-910d-56bc67f67699",
+      "result_id": "9acf6cb4-ef28-403f-bd27-8c44229acb7d"
+    },
+    {
+      "claim_id": "24b54a54-b4e0-4e55-963e-8d3e6abce9f4",
+      "result_id": "478a44fc-eecb-4529-8f8f-dc3e15eec25f"
+    },
+    {
+      "claim_id": "b4aa34b6-f56d-43f9-bf13-76b0bec22a06",
+      "result_id": "478a44fc-eecb-4529-8f8f-dc3e15eec25f"
+    },
+    {
+      "claim_id": "9e315636-acaa-43c7-b3e9-0b4c9dd5db23",
+      "result_id": "9e6ade4d-31ee-4611-844a-86cc9ef58f7a"
+    },
+    {
+      "claim_id": "f31bdd04-d5bb-4106-99de-464c78b2d32b",
+      "result_id": "9e6ade4d-31ee-4611-844a-86cc9ef58f7a"
+    },
+    {
+      "claim_id": "19178ca8-7943-4726-8495-9012954777ca",
+      "result_id": "9e6ade4d-31ee-4611-844a-86cc9ef58f7a"
+    },
+    {
+      "claim_id": "ca0e9687-42db-4648-990e-e13c96514239",
+      "result_id": "9e6ade4d-31ee-4611-844a-86cc9ef58f7a"
+    },
+    {
+      "claim_id": "4b603a00-4cbb-4690-a625-910bcc29e9bf",
+      "result_id": "ba0778a5-6ace-4b1c-ac9d-fc29989a16db"
+    },
+    {
+      "claim_id": "337d1cb0-593b-46ad-a140-54c58f8da817",
+      "result_id": "ba0778a5-6ace-4b1c-ac9d-fc29989a16db"
+    },
+    {
+      "claim_id": "0b42306e-238c-4b17-b55e-b83005953404",
+      "result_id": "ba0778a5-6ace-4b1c-ac9d-fc29989a16db"
+    },
+    {
+      "claim_id": "9f03fe5f-644f-4177-a857-4be5eba4e2a0",
+      "result_id": "ba0778a5-6ace-4b1c-ac9d-fc29989a16db"
+    },
+    {
+      "claim_id": "0cb343ce-a687-4068-8db4-7dce1eeea4c1",
+      "result_id": "ba0778a5-6ace-4b1c-ac9d-fc29989a16db"
+    },
+    {
+      "claim_id": "8bdd29dc-9086-4526-a287-dc8028f93854",
+      "result_id": "ba0778a5-6ace-4b1c-ac9d-fc29989a16db"
+    },
+    {
+      "claim_id": "ad923e47-9eb4-44f8-abcf-a2ba233b6b84",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "89a29b98-cbf0-4d96-b7ec-c96aa550e34c",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "ef2b4105-6c20-4d0e-a926-3c5aa1b777fd",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "3c7bcc5e-a00b-445d-a3d5-66c5c78823a6",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "30729ed5-8481-4cc3-8116-b50c6ace3dec",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "df3b86c1-0c04-4db4-a3d1-a51e6bf2512c",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "893d7d8f-8a36-42b4-baa2-d81f466f3a8a",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "844846cd-8fdf-4d69-82d7-cc47a9f0acca",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "009eeebf-263e-41f5-a90b-6ba7edc40fdf",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "3cbcce12-0892-4189-8d1f-26290e82d288",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "44e4350b-73f2-444e-947e-dd896b14ac43",
+      "result_id": "4e7bf233-de2e-4224-a32e-05bd1b136aa7"
+    },
+    {
+      "claim_id": "3587c3c1-6849-4d4f-aac2-b44d4759f1ba",
+      "result_id": "3249023f-c8a8-41d8-bbc4-7f9f69303e70"
+    },
+    {
+      "claim_id": "a4b983a2-7c60-4781-92a6-c3fadf510b8d",
+      "result_id": "3249023f-c8a8-41d8-bbc4-7f9f69303e70"
+    },
+    {
+      "claim_id": "f2d50cc5-6445-45e1-a0d9-cc92d671b62b",
+      "result_id": "3249023f-c8a8-41d8-bbc4-7f9f69303e70"
+    },
+    {
+      "claim_id": "cca46153-8f83-461f-8b3b-b24752ca6f76",
+      "result_id": "3249023f-c8a8-41d8-bbc4-7f9f69303e70"
+    },
+    {
+      "claim_id": "61b4d56c-a3b7-412b-a794-8e834548590e",
+      "result_id": "3249023f-c8a8-41d8-bbc4-7f9f69303e70"
+    },
+    {
+      "claim_id": "d4b31a44-656a-4cb2-8034-0471bbd257ec",
+      "result_id": "bedbb54b-2716-4644-a8f0-a549316fbffa"
+    },
+    {
+      "claim_id": "41405e83-d947-4dfe-a0ce-0c4c9393449b",
+      "result_id": "bedbb54b-2716-4644-a8f0-a549316fbffa"
+    },
+    {
+      "claim_id": "6b20e42d-ff2e-4275-9daa-3bb9131956e0",
+      "result_id": "bedbb54b-2716-4644-a8f0-a549316fbffa"
+    },
+    {
+      "claim_id": "737de289-1d2b-46f4-95b2-9cf9efcb7307",
+      "result_id": "bedbb54b-2716-4644-a8f0-a549316fbffa"
+    },
+    {
+      "claim_id": "46eca0f3-55ce-4b05-96ba-b1a4c48ba983",
+      "result_id": "83792f28-588c-46c0-b42f-ef04a91f2d70"
+    },
+    {
+      "claim_id": "8f0b4e03-caf2-440b-b55d-6628e73879e5",
+      "result_id": "83792f28-588c-46c0-b42f-ef04a91f2d70"
+    },
+    {
+      "claim_id": "a284cff4-bf3a-4bde-9884-c086ff8186cf",
+      "result_id": "83792f28-588c-46c0-b42f-ef04a91f2d70"
+    },
+    {
+      "claim_id": "7faa2b4c-2ab9-4a49-8c62-bf32f75a87ef",
+      "result_id": "83792f28-588c-46c0-b42f-ef04a91f2d70"
+    },
+    {
+      "claim_id": "2eff92b7-2b44-4e16-84f8-30b16180f3c5",
+      "result_id": "83792f28-588c-46c0-b42f-ef04a91f2d70"
+    },
+    {
+      "claim_id": "f8ac0b19-e7cd-4ee3-b02b-64e0adfbb5a5",
+      "result_id": "6e82fcfc-3a1a-4d82-9cc7-208045b0e6e7"
+    },
+    {
+      "claim_id": "a72f032c-7cf9-4988-8cfb-6e19dad5df6a",
+      "result_id": "6e82fcfc-3a1a-4d82-9cc7-208045b0e6e7"
+    },
+    {
+      "claim_id": "820b7b0b-eec7-49d5-8eb3-fcb143d86e6c",
+      "result_id": "6e82fcfc-3a1a-4d82-9cc7-208045b0e6e7"
+    },
+    {
+      "claim_id": "ab012e14-325a-4439-ae24-a560b731cca7",
+      "result_id": "6e82fcfc-3a1a-4d82-9cc7-208045b0e6e7"
+    },
+    {
+      "claim_id": "5feb5f7f-d683-42a5-a621-c6948cc6edd7",
+      "result_id": "0c544838-36b7-4c08-bad2-1a1b976b299a"
+    },
+    {
+      "claim_id": "6fdda254-e812-4ea5-84ab-f85cd429c8ed",
+      "result_id": "0c544838-36b7-4c08-bad2-1a1b976b299a"
+    },
+    {
+      "claim_id": "83112f36-ee32-4527-8a67-45ec0bdacd44",
+      "result_id": "0c544838-36b7-4c08-bad2-1a1b976b299a"
+    },
+    {
+      "claim_id": "af5a43c1-0b89-42fa-bafc-d2d87a6be004",
+      "result_id": "0c544838-36b7-4c08-bad2-1a1b976b299a"
+    },
+    {
+      "claim_id": "19140fec-6a87-4286-b95d-ecd1a43ec69c",
+      "result_id": "0c544838-36b7-4c08-bad2-1a1b976b299a"
+    },
+    {
+      "claim_id": "dd32a1a2-d0dd-4765-adfb-bf38d3baeeac",
+      "result_id": "0c544838-36b7-4c08-bad2-1a1b976b299a"
+    },
+    {
+      "claim_id": "3049b777-277d-4b28-a7f6-d2c38de49e8c",
+      "result_id": "0c544838-36b7-4c08-bad2-1a1b976b299a"
+    },
+    {
+      "claim_id": "f95adb62-bfee-4959-98f1-35173c9bb327",
+      "result_id": "5fba613f-10b1-4224-b5db-676e8d433b0b"
+    },
+    {
+      "claim_id": "6f10f7b4-3226-475b-99e2-f15d70b1f340",
+      "result_id": "5fba613f-10b1-4224-b5db-676e8d433b0b"
+    },
+    {
+      "claim_id": "37b19c61-f540-40e8-9797-13356ba84a29",
+      "result_id": "5fba613f-10b1-4224-b5db-676e8d433b0b"
+    },
+    {
+      "claim_id": "496c2786-4b24-45d1-b3e9-1291607948cc",
+      "result_id": "5fba613f-10b1-4224-b5db-676e8d433b0b"
+    },
+    {
+      "claim_id": "7936762b-5e34-430c-ab69-4c38e02cd3f5",
+      "result_id": "5fba613f-10b1-4224-b5db-676e8d433b0b"
+    },
+    {
+      "claim_id": "51dc71e6-9e7f-460e-9fac-cf00b46e8eee",
+      "result_id": "5fba613f-10b1-4224-b5db-676e8d433b0b"
+    },
+    {
+      "claim_id": "6deb932b-a1c5-4642-b6d3-772b6d4b0f14",
+      "result_id": "5fba613f-10b1-4224-b5db-676e8d433b0b"
+    },
+    {
+      "claim_id": "fc5b92f9-fb57-4533-8966-470e72e5c8d6",
+      "result_id": "5fba613f-10b1-4224-b5db-676e8d433b0b"
+    },
+    {
+      "claim_id": "d73d0450-880c-4cb9-afed-a461b8924d4d",
+      "result_id": "5fba613f-10b1-4224-b5db-676e8d433b0b"
+    },
+    {
+      "claim_id": "63577ae9-0167-4710-a480-132b7eecd4f5",
+      "result_id": "5fba613f-10b1-4224-b5db-676e8d433b0b"
+    }
+  ],
+  "comparisons": []
+}

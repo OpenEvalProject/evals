@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "GCaMP6s calcium signals correlate with STN neuronal firing rates at moderate frequencies (10-100 Hz) in both ex vivo and in vivo conditions. The relationship breaks down at very high frequencies (>100 Hz) or during depolarization block, but at physiological firing rates (5-10 Hz baseline), GCaMP6s signals track movement-related increases in STN activity with a ~1 second lag due to indicator kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide ex vivo validation showing GCaMP6s correlates with firing up to ~100 Hz with appropriate controls (C1-C4, C6-C7). Claims C13-C18 demonstrate in vivo concordance between calcium signals and electrophysiology around movement onset, with expected kinetic lag (C16). The validation is rigorous with both ex vivo and in vivo comparisons, though limitations at high frequencies are appropriately noted (C4, C8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The 6-OHDA mouse model successfully recapitulates parkinsonian motor deficits with decreased movement velocity and ipsilesional rotation bias. STN implants do not significantly alter these gross motor parameters, suggesting minimal confounding from surgical trauma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 shows significant behavioral deficits consistent with prior literature (p<0.001 for both measures). Claim C11 demonstrates no significant difference between parkinsonian mice with/without implants (p=0.66, p=0.97), supporting C12's inference about minimal implant effects. Statistical tests are appropriate and the model validation is adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "STN DBS at multiple frequencies (5-180 Hz) improves motor function in parkinsonian mice, with 60-100 Hz stimulation producing robust increases in movement velocity and percent time moving without altering rotation bias or causing dyskinesias. Surprisingly, therapeutic STN DBS significantly increases STN calcium signals rather than inhibiting them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 demonstrate consistent behavioral improvements across frequency ranges with highly significant p-values (p<10^-8). Claims C27-C28 show paradoxical increases in STN activity during therapeutic DBS (p<10^-6), contradicting the inhibition hypothesis (C29). The data are robust with appropriate statistical tests, though the calcium signal is correlative and could reflect network effects rather than direct STN activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Levodopa improves motor function but produces variable effects on STN calcium signals (no significant group change, p=0.90) despite causing modest but significant decreases in STN firing rates measured by electrophysiology (p=0.029). This contrasts with DBS, which increases STN activity while also improving movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 show levodopa's behavioral efficacy with variable STN calcium responses. Claim C34 provides electrophysiological validation showing modest firing rate decreases. The discrepancy between calcium and electrophysiology (C35) is acknowledged as potentially reflecting differential sensitivity. Claim C36's conclusion about opposite effects of DBS vs levodopa is supported, though the mechanisms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "STN DBS increases SNr activity (p<10^-4 at both 60 and 100 Hz), contradicting the rate model prediction of basal ganglia output inhibition. In contrast, levodopa decreases SNr activity measured by both fiber photometry (p<10^-5) and electrophysiology (p=0.012), demonstrating that DBS and levodopa have opposite effects on basal ganglia output despite both improving motor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 demonstrate consistent SNr activation during therapeutic DBS with strong statistical significance. Claims C42-C45 show levodopa decreases SNr activity with concordance between photometry and electrophysiology (C46), validating the measurement approach. Claim C47's conclusion that DBS doesn't work through STN/SNr inhibition is well-supported, though alternative mechanisms remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Hyperdirect M1 pathway activity shows variable and inconsistent responses to STN DBS, with no correlation between M1 activity changes and behavioral improvement (R\u00b2=-0.14, p=0.96). M1 activity changes evolve much more slowly (17.3\u00b13.1 s lag) than behavioral benefits (2.8\u00b10.6 s) or STN/SNr activity changes (~3 s lag). Critically, surgical removal of M1 does not abolish therapeutic DBS effects (p=0.008), demonstrating that antidromic M1 activation is not necessary for DBS efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 show poor correlation between M1 activity and DBS benefits with appropriate statistical analysis. Claims C56-C62 demonstrate kinetic mismatch between M1 activation and behavioral improvement. The M1 lesion experiment (C63) provides strong causal evidence against the hyperdirect pathway hypothesis, though the lesion approach is somewhat crude. The conclusion (C64) is well-supported by converging evidence from correlation, kinetics, and lesion studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Therapeutic STN DBS specifically disrupts movement-related increases in STN activity. High-effect stimulation parameters abolish the normal movement-aligned STN activity pattern (p<10^-10), while low-effect parameters preserve it (p=0.54 vs pre-stim). This disruption correlates with behavioral efficacy, suggesting pattern disruption rather than rate changes mediates therapeutic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 establish baseline movement-related STN activity and its abolition during therapeutic DBS. Claims C68-C70 demonstrate parameter-specificity with highly significant differences between high-effect and low-effect stimulation. The correlation between pattern disruption and therapeutic efficacy (C71) is compelling, though causality requires the optogenetic experiments. Statistical analysis is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Optogenetic experiments demonstrate that disrupting movement-related STN dynamics is sufficient to produce therapeutic benefit. Pulsatile 50 Hz optical stimulation attenuates movement-related STN firing (p=0.039) and significantly improves motor function (p<10^-7), while constant illumination that decreases overall firing rate without altering movement-related patterns produces no behavioral benefit (p=0.30). This dissociation between rate and pattern effects provides causal evidence for the pattern disruption mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 establish that both optical paradigms decrease firing rate similarly (p=0.98, C74) but have different effects on movement-related patterns. Claims C83-C85 show only pulsatile stimulation improves behavior, with appropriate eYFP controls. The causal inference (C87) is well-supported by the dissociation between rate and pattern effects, though the optogenetic approach has limitations (different from electrical DBS, potential off-target effects). The logic is sound and the controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "This study is the first to use artifact-free GCaMP fiber photometry to link DBS-mediated physiological changes to behavior in freely moving parkinsonian animals, and one of the first to use fiber photometry in deep basal ganglia nuclei with comparison to single-unit electrophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately cite prior work (Trevathan et al., 2021) while distinguishing the current study's novelty in linking physiology to behavior. Claim C94 asserts additional novelty in the technical approach. The claims of novelty appear accurate based on the citations provided, though comprehensive literature review would be needed for full verification. The technical achievement is substantial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Fiber photometry offers key advantages over electrophysiology including artifact-free recording during DBS and cell-type/projection-specific targeting, but has important limitations including poor temporal resolution, population averaging, and ambiguity about whether signals reflect firing rate or synchrony. Despite these limitations, photometry and electrophysiology show striking concordance over both short and long timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 accurately describe advantages with appropriate context. Claims C99-C105 honestly acknowledge significant limitations with appropriate citations (C100, C103). Claim C106-C107 assert concordance between methods, which is supported by the validation experiments (C1-C20, C34, C45-C46). The balanced assessment of strengths and limitations is appropriate and scientifically rigorous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The finding that STN DBS increases rather than decreases STN and SNr activity contradicts traditional rate-based models but is consistent with some prior primate studies. Multiple mechanisms could explain increased activity including antidromic/orthodromic axonal activation, though the correlative nature of GCaMP signals and potential confounding from movement-related feedback limit mechanistic conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 appropriately contextualize findings within existing literature with proper citations. Claims C113-C114 acknowledge potential sources of discrepancy. Claims C115-C118 propose plausible mechanisms with appropriate citations. Claims C119-C122 honestly acknowledge limitations in establishing causality and directionality. The discussion is balanced and appropriately cautious about mechanistic interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The lack of correlation between hyperdirect pathway activity and DBS efficacy, combined with preserved therapeutic effects after M1 lesion, suggests M1 activation is not the primary mechanism in mice. However, species differences in cortical-STN connectivity may mean the hyperdirect pathway plays a larger role in primates, and the study only assessed gross motor outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 provide reasonable alternative explanations for negative M1 findings while maintaining the core conclusion. Claims C127-C130 thoughtfully distinguish between sufficiency (optogenetics) and necessity (electrical DBS) experiments. Claim C131 appropriately acknowledges potential species differences with citations. The nuanced discussion appropriately qualifies the conclusions without undermining them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The 6-OHDA mouse model has important limitations including rapid, focal dopamine depletion versus gradual, widespread neurodegeneration in PD, and potential differences in how electrical stimulation affects the small mouse brain versus human brain. However, the model shows appropriate parameter sensitivity and rapid therapeutic kinetics similar to human DBS, and prior work demonstrates sustained benefits over longer timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C151 honestly acknowledge significant model limitations with appropriate context. Claims C152, C155 provide evidence that despite limitations, the model has translational validity with proper citations. Claim C153-C154 acknowledge the short stimulation epochs as a limitation while C155 provides evidence this is not a major concern. The balanced assessment of model validity is appropriate and scientifically rigorous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Movement-related STN activity increases have been observed across species (mice, NHPs, cats) and may be driven by multiple inputs including hyperdirect M1, GPe, and/or synchronization. The disruption of these patterns during DBS relates to prior observations of altered firing patterns and oscillations, but establishing causal links between pattern changes and behavioral improvement has been challenging until the current optogenetic experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 appropriately contextualize findings with proper citations. Claims C139-C142 relate findings to broader literature on pattern-based mechanisms with appropriate citations. Claims C143-C144 accurately identify the gap filled by the current study. The discussion appropriately positions the work within the field and identifies its contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The finding that non-rate-based alterations in STN activity can improve motor function suggests a wider therapeutic space for PD treatment beyond traditional inhibition-based approaches. This has implications for developing DBS therapies for other neuropsychiatric disorders where understanding how electrical stimulation impacts disease circuitry is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 draw appropriate broader implications from the findings with relevant citations to closed-loop DBS work. Claims C159-C160 extend implications to other disorders, which is reasonable given the mechanistic insights. The conclusions are appropriately qualified and don't overstate the findings. The translational implications are logical extensions of the core results.",
+    "result_type": "MINOR"
+  }
+]

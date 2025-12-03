@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The \u0394parDE4 mutant exhibits reduced cell death, increased biofilm formation, and decreased eDNA release compared to wild-type under moderate aeration conditions. This phenotype is specific to parDE4 among the tested TAS mutants and does not require cells to be adhered to a surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by experimental data in Figure 1 showing that \u0394parDE4 has ~30% more biofilm, ~50% less eDNA, and lower cell death compared to WT. The phenotype is reproduced in the \u0394hfsDAB double mutant (C30), confirming it does not require surface adhesion. Multiple TAS deletion strains were tested as controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C46"
+    ],
+    "result": "Over time in biofilm maturation, \u0394parDE4 shows reduced cell death, decreased eDNA release, and increased attached biomass compared to WT, with differences becoming more pronounced at later time points. The increased biofilm formation is attributed to both reduced cell death and decreased dispersal efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by time-course data in Figure 2 showing progressive differences between WT and \u0394parDE4 in cell death, eDNA release, and biofilm biomass. Claim C46 synthesizes these observations with dispersal data from Figure 4C to provide a mechanistic explanation. The temporal dynamics strengthen the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Constitutive expression of the ParD4 antitoxin increases biofilm formation and decreases eDNA concentration in WT but has no effect in \u0394parE4 mutants, demonstrating that ParD4 protects against cell lysis in a ParE4-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by complementation experiments in Figure 3A-B. The genetic epistasis experiment (no effect in \u0394parE4) provides strong evidence that ParD4's protective effect requires the ParE4 toxin, consistent with TAS biology. This establishes the functional relationship between the antitoxin and toxin components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "WT and \u0394parDE4 respond similarly to exogenous eDNA, indicating that the increased biofilm formation in \u0394parDE4 is not due to impaired eDNA response but rather to reduced cell death and/or decreased dispersal stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by spent medium experiments in Figure 3\u2014figure supplement 1 showing equivalent biofilm inhibition by eDNA in both strains. This control experiment rules out an alternative explanation (altered eDNA sensitivity) and strengthens the conclusion that differences arise from altered eDNA production rather than response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In mixed biofilm competition experiments, \u0394parDE4 outcompetes WT in attached biomass (reaching ~80% by 96h), but WT cells show higher dispersal rates from the biofilm, indicating more efficient dispersal in WT despite lower biomass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by flow cell experiments in Figure 4A-C. The spatial organization data (C42) and temporal dynamics (C43-C44) are clearly shown. The dispersal measurements (C45) provide direct evidence that WT disperses more efficiently despite being outcompeted in the biofilm, which is a key finding linking ParDE4 to dispersal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C5",
+      "C51"
+    ],
+    "result": "ParDE4 expression is positively regulated by O2 availability: PparDE4 transcription is 2-3 times higher under maximal aeration compared to moderate aeration, while the O2-responsive PccoN promoter shows the opposite pattern (10-13 times more active under moderate aeration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by \u03b2-galactosidase assays and RT-qPCR data in Figures 5C and 6B. The use of PccoN as a validated O2 biosensor provides strong internal validation. The inverse correlation between O2 availability and parDE4 expression is consistently demonstrated across multiple aeration conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C67",
+      "C68"
+    ],
+    "result": "Under low O2 conditions, WT releases twice as much eDNA and forms less biofilm than \u0394parDE4, while under maximal aeration these differences disappear. This demonstrates that ParDE4-dependent cell death is highest when O2 is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55, C67-C68 are supported by experiments across four aeration conditions in Figure 6C-D. The O2-dependent phenotype is clearly demonstrated: differences between WT and \u0394parDE4 increase as O2 decreases. This establishes the environmental trigger (O2 limitation) for ParDE4-mediated cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Single-cell fluorescence reporter analysis reveals strong anticorrelation between PccoN (hypoxia marker) and PparDE4 expression: cells experiencing hypoxia rarely express parDE4, while cells with higher O2 levels do, with expression patterns varying across aeration conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by dual-reporter fluorescence microscopy in Figure 7A-B. The single-cell resolution data strengthen the population-level observations by showing the anticorrelation holds at the individual cell level. The quantification of >3000 cells provides statistical robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Within biofilms grown on vertical strips, spatial gradients of O2 availability correlate with ParDE4 activity and cell death: WT shows twice as much cell death at the bottom (low O2) compared to the top, while \u0394parDE4 shows no spatial difference in cell death, demonstrating that ParDE4 regulates O2-limitation-induced cell death in specific biofilm regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by spatial analysis in Figure 8A-B using PparDE4-lacZ and PccoN-lacZ reporters plus Live/Dead staining. The spatial correlation between low O2 (high PccoN), low PparDE4 activity, and high cell death in WT, combined with loss of spatial pattern in \u0394parDE4, provides strong evidence for localized ParDE4-mediated PCD in O2-limited biofilm regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The authors propose a model where biofilm maturation leads to O2 limitation, which activates ParDE4 TAS causing cell death and eDNA release. The released eDNA binds to holdfasts of newborn swarmer cells, inhibiting their adhesion and promoting dispersal to new environments while preserving the initial biofilm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 and C1-C4 synthesize the experimental findings into a coherent model supported by the combined data: O2 regulation of ParDE4 (Figures 5-7), spatial patterns in biofilms (Figure 8), correlation between cell death and eDNA (Figures 1-2), and dispersal effects (Figure 4). The model integrates prior work on eDNA-holdfast interactions with new ParDE4 findings. While speculative elements exist, the core model is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C84",
+      "C82",
+      "C6"
+    ],
+    "result": "The O2-limited conditions where parDE4-dependent cell death occurs correspond to the lowest levels of parDE4 transcription, representing an unusual TAS regulatory pattern where the 'neutralized' steady state appears to be under high O2 when transcription is maximal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C84, C82, and C6 are supported by data in Figures 6B and 7A showing inverse correlation between O2 limitation (the stress condition) and parDE4 expression. This is explicitly noted as unusual compared to most TAS (C83, C85). The observation is robust across multiple experimental approaches, though the mechanistic interpretation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C90"
+    ],
+    "result": "The authors acknowledge that whether the decrease in parDE4 transcription mechanistically triggers toxin activation and cell death remains unknown, representing a key limitation of the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C90 explicitly acknowledge uncertainty about the mechanism linking reduced transcription to TAS activation. This is an appropriate acknowledgment of study limitations. The correlation is established but causation is not demonstrated, which is honestly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The authors propose that ParDE4-mediated PCD is conceptually similar to TAS in plasmid maintenance and phage defense, selectively killing some cells in crowded biofilms to promote dispersal of newborn cells from detrimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 present an interesting conceptual framework but are largely speculative (evidence_type: INFERENCE, SPECULATION). While the analogy to plasmid addiction and phage defense is reasonable, direct evidence for this specific function is limited. The comparison helps contextualize the findings but requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The ParDE family shows heterogeneity in targets and mechanisms: C. crescentus ParDE1 causes filamentation, E. coli plasmid ParDE targets DNA gyrase, but E. coli ParE2 (structurally similar to C. crescentus ParE1) has unknown targets. ParDE4 causes cell death without morphological changes, and ParE4 appears highly toxic as it cannot be expressed in E. coli or C. crescentus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by citations to prior work and the authors' experimental observations. The comparison across ParDE family members is well-documented in the literature (C91, C93-C94). The observation about ParE4 toxicity (C96) is based on failed expression attempts, which is reasonable evidence though negative results. This contextualizes ParDE4 within the broader TAS family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors speculate that ParDE4-mediated PCD may provide multiple benefits: reducing overcrowding and O2 starvation in biofilms, acting as a safety trigger for environmental O2 changes, and functioning as a rheostat linking dispersal to O2 availability. However, fitness advantages have not been directly demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C76 and C101-C103 are largely speculative (evidence_type: SPECULATION, INFERENCE). While the proposed benefits are plausible and consistent with the data, they lack direct experimental validation. The authors appropriately acknowledge these limitations (C101-C102). These represent reasonable hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "C. crescentus biofilms consist of discrete clonal microcolonies where released eDNA will be at maximum concentration locally before diffusing to adjacent microcolonies at lower concentrations, creating spatial heterogeneity in eDNA exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by microscopy data in Figure 4A and citations to prior work. Claim C72 is a logical inference about eDNA diffusion based on the spatial organization. While C72 is not directly measured, it is a reasonable physical prediction that helps explain the dispersal patterns observed. The microcolony structure is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims establishing general knowledge about biofilms, C. crescentus biology, holdfast composition and function, eDNA roles in biofilms, programmed cell death, and toxin-antitoxin systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C25 provide essential background supported by appropriate citations to established literature. These are not novel findings but necessary context. The citations appear appropriate and the general knowledge claims are accurate based on the cited sources. C25 specifically notes 13 of 18 C. crescentus TAS have been studied, providing relevant context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C85",
+      "C88",
+      "C89"
+    ],
+    "result": "Background claims about TAS involvement in biofilm regulation across species, O2 limitation as a biofilm stress, typical TAS stress responses, and recent challenges to TAS physiological roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C83, C85, C88-C89 provide literature context supported by appropriate citations. These establish that (1) TAS-PCD in biofilms is known, (2) O2 limitation is a common biofilm stress, (3) most TAS are upregulated by stress (making ParDE4 unusual), and (4) TAS physiological roles are debated. This contextualizes the novelty and significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Background on altruism in biofilms and prior findings that eDNA-mediated dispersal is specific to Caulobacter species, combined with the current observation that ParDE4 deletion decreases dispersal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 provide theoretical context on altruism supported by citations. Claim C99 cites prior work on eDNA specificity. Claim C100 references current data (Figure 4C). These claims contextualize the potential evolutionary significance of the ParDE4 mechanism, though direct fitness measurements are lacking (as acknowledged in C101-C103).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The parDE4 operon consists of parD4 (antitoxin, CC2985/CCNA_03080) and parE4 (toxin, CC2984/CCNA_03079), overlapping by 21 bp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 provides basic genetic information about the parDE4 locus supported by citations to genome annotations and prior studies. This is factual information necessary for understanding the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Prior transcriptome profiling showed a twofold decrease in parD4 expression under hypoxic stress, though not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 cites prior work (Fiebig et al., 2010) that foreshadowed the current findings. The authors appropriately note the prior result was not statistically significant, and their current work provides more robust evidence for O2 regulation of parDE4.",
+    "result_type": "MINOR"
+  }
+]

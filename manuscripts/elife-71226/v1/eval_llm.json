@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C37"
+    ],
+    "result": "Bacterial populations autonomously smooth out large-scale perturbations in their morphology during collective migration. The smoothing dynamics are regulated by both the undulation wavelength and the ease with which cells migrate through the porous medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33, and C37 are directly supported by experimental observations shown in Figures 1C-E and Videos 1-3, which demonstrate autonomous smoothing of undulated fronts. The quantitative analysis in Figure 1F-G shows exponential decay of undulation amplitude and systematic dependence on wavelength and pore size, providing strong empirical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C53"
+    ],
+    "result": "Chemotaxis in response to a self-generated nutrient gradient is both necessary and sufficient for front smoothing and provides the driving force for collective migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C53 are supported by systematic knockout simulations (Figure 3) showing that removing chemotaxis abolishes smoothing, while removing diffusion or proliferation does not. This demonstrates necessity and sufficiency through computational elimination experiments with clear phenotypic outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C68",
+      "C69"
+    ],
+    "result": "The smoothing mechanism arises from spatial variations in the chemotactic response function: cells at peaks experience higher nutrient concentrations that saturate their receptors, weakening their chemotactic response compared to cells in valleys, causing valleys to migrate faster and smooth the front.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14, C15, C68, and C69 are supported by detailed analysis of simulation data (Figure 4) showing spatial variations in nutrient concentration, chemotactic response function, and resulting velocity differences. The mechanistic explanation is validated by quantitative agreement between predicted catch-up times and measured smoothing times (Figure 4D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C60"
+    ],
+    "result": "Variations in the local nutrient gradient along the leading edge oppose smoothing by promoting faster migration at peaks, but variations in the chemotactic response function dominate and drive smoothing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C60 are supported by analysis in Figure 4C showing that while the nutrient gradient is stronger at peaks (destabilizing), the chemotactic response is weaker at peaks due to receptor saturation (stabilizing), and the response variation dominates. This is a key mechanistic insight distinguishing two competing effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The continuum Keller-Segel model recapitulates the essential spatio-temporal features of smoothing observed in experiments, with simulated fronts showing remarkably similar behavior including exponential decay of undulation amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, and C42 are supported by qualitative and quantitative comparison between experiments (Figure 1) and simulations (Figure 2). The model captures front formation, migration, smoothing dynamics, and exponential amplitude decay with smoothing times agreeing within a factor of ~3, demonstrating good model validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "High nutrient concentrations saturate cell-surface receptors, causing the chemotactic response function to decrease with nutrient concentration. Nutrient concentrations are higher at peaks than valleys, resulting in weaker chemotactic response at peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C58, and C59 are supported by established receptor saturation kinetics (C57 is general knowledge), direct observation of nutrient fields in simulations (Figure 4A showing higher concentration at peaks), and quantitative measurement of response function values (Figure 4B). The logical chain is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "This work provides an explanation for front smoothing as a population-scale consequence of cellular signal transduction limitations, highlighting the pivotal role of the chemotactic response function in regulating population morphology and contributing a new factor for morphogenesis studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C78, C79, and C80 represent valid conclusions drawn from the mechanistic findings. The work successfully explains a previously unexamined phenomenon (C65) through a novel mechanism linking individual cell sensing limitations to population-level morphological stability, representing a significant conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The smoothing mechanism is distinct from diffusion, which is too slow to drive the observed smoothing on experimental timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by quantitative estimates showing diffusive smoothing timescales (~100-700 hr) are orders of magnitude longer than observed smoothing times (~0.2-8 hr), and by knockout simulations (Figure 3A) showing smoothing persists without diffusion. This effectively rules out diffusion as the primary mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The 3D printing platform in hydrogel-based porous media provides a unique experimental system to tune perturbation shape and cellular migration hindrance while maintaining nutrient field uniformity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C16-C19 describe the experimental methodology supported by Figure 1A-B and citations to previous validation work. The system's key features (tunable pore size without altering nutrient field, ability to print defined morphologies) are well-established in prior publications and enable the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "The 3D printing process (~10 seconds per cylinder) is two orders of magnitude faster than the imaging interval (~10 minutes), enabling the initial perturbation to be treated as instantaneous relative to migration dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C22 provide important methodological validation showing the printing timescale is sufficiently fast to not confound the migration measurements. The two-order-of-magnitude separation provides adequate temporal resolution for tracking front dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "E. coli 3D-printed in straight cylinders migrate radially outward in smooth fronts via chemotaxis driven by self-generated nutrient gradients. After an initial slow spreading phase hindered by cell-cell collisions, the periphery organizes into a ~300 \u03bcm-wide front that collectively migrates outward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe baseline behavior from previous work (C28-C30 cite prior studies) and current observations (C31-C32 from Figure 1C). These establish the unperturbed reference state against which smoothing is measured and are well-supported by both prior validation and current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Variants of the Keller-Segel model successfully capture key features of chemotactic migration of flat E. coli fronts in both bulk liquid and porous media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 are statements about prior work supported by appropriate citations. These establish the foundation for applying the model to the current problem of undulated fronts and are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Differential proliferation typically destabilizes bacterial communities rather than stabilizing them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is a statement about prior work supported by multiple citations. This provides important context for ruling out differential proliferation as a smoothing mechanism and is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The requirement for a concave sensing function that saturates at high stimulus levels is satisfied for diverse active matter systems including bacteria, enzymes, amoeba, and mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by extensive citations to prior work demonstrating sensing saturation in various systems. This establishes the potential generalizability of the smoothing mechanism beyond E. coli, though experimental validation in other systems would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "Smoothing appears robust to large changes in environmental conditions based on parameter exploration varying initial nutrient concentration, sensing limits, and migration parameters over orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is supported by simulations exploring parameter space (mentioned in text and shown in supplementary figures). The robustness analysis strengthens confidence that smoothing is a general phenomenon, though the claim appropriately uses cautious language ('appears to be').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The experimental medium consists of specific components at defined volume fractions, resulting in swollen hydrogel particles of 5-10 \u03bcm diameter with 40-100 nm mesh size that allows free diffusion of small molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 provide detailed methodological information about medium preparation and characterization. These are supported by citations to previous characterization work and represent standard materials methods documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The 3D printing process does not appreciably alter hydrogel packing properties and maintains cell viability and motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by citation to previous validation work. This is an important methodological control ensuring the printing process itself does not confound the biological measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Confocal images show only actively moving cells near the leading edge because they are exposed to sufficient oxygen for GFP folding, while cells in oxygen-depleted inner regions lose fluorescence over ~30 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C89 explain the imaging observations, with C88 being a direct observation and C89 being a reasonable conjecture supported by prior work on oxygen depletion. This clarifies what the fluorescence images represent and is important for data interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "E. coli consume L-serine first and respond to it most strongly as a chemoattractant compared to other media components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C92 are statements about E. coli behavior supported by multiple citations. This justifies focusing on L-serine as the primary nutrient and chemoattractant in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The pore space is too small to fit multiple cells side-by-side, restricting cell-cell interactions to end-on interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C101 describe geometric constraints of the experimental system supported by size comparisons and citation to prior direct observation. This justifies the simplified treatment of cell-cell interactions in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Radial and out-of-plane effects do not need to be considered to capture essential features of bacterial front formation and migration, justifying the 2D modeling approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by citation to previous work validating the 2D approximation. This is an important modeling assumption that simplifies the computational approach while maintaining essential physics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C65"
+    ],
+    "result": "Collective migration is important for various functions, can be disrupted by external or internal perturbations through various mechanisms, but mechanisms by which populations withstand perturbations have been scarcely examined, particularly the robustness of chemotactic front morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C12, and C65 provide background context and identify the knowledge gap addressed by this study. These are well-supported by extensive citations and accurately characterize the state of the field, establishing the motivation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The chemotactic smoothing process is autonomous, arising without external intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a valid characterization of the phenomenon observed in experiments and simulations. The smoothing occurs spontaneously in response to the initial perturbation without any external manipulation, distinguishing it from externally controlled processes.",
+    "result_type": "MINOR"
+  }
+]

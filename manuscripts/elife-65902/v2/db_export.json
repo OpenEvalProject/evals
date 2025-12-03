@@ -1,0 +1,1937 @@
+{
+  "submission": {
+    "id": "83881c22-fcd4-4d5c-8d73-a53011c60d95",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:54:39.979921Z",
+    "updated_at": "2025-12-03T05:54:39.979921Z"
+  },
+  "content": [
+    {
+      "id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "submission_id": "83881c22-fcd4-4d5c-8d73-a53011c60d95",
+      "content_type": "manuscript",
+      "content_text": "# Mechanistic theory predicts the effects of temperature and humidity on inactivation of SARS-CoV-2 and other enveloped viruses\n\n## Authors\n\n- Dylan H Morris<sup>1</sup> ([ORCID: 0000-0002-3655-406X](https://orcid.org/0000-0002-3655-406X)) \u2020\n- Kwe Claude Yinda<sup>3</sup> ([ORCID: 0000-0002-5195-5478](https://orcid.org/0000-0002-5195-5478))\n- Amandine Gamble<sup>2</sup> ([ORCID: 0000-0001-5430-9124](https://orcid.org/0000-0001-5430-9124))\n- Fernando W Rossine<sup>1</sup>\n- Qishen Huang<sup>4</sup> ([ORCID: 0000-0002-8493-5799](https://orcid.org/0000-0002-8493-5799))\n- Trenton Bushmaker<sup>3</sup> ([ORCID: 0000-0002-2161-4808](https://orcid.org/0000-0002-2161-4808))\n- Robert J Fischer<sup>3</sup> ([ORCID: 0000-0002-1816-472X](https://orcid.org/0000-0002-1816-472X))\n- M Jeremiah Matson<sup>3</sup> ([ORCID: 0000-0003-3404-1380](https://orcid.org/0000-0003-3404-1380))\n- Neeltje Van Doremalen<sup>3</sup> ([ORCID: 0000-0003-4368-6359](https://orcid.org/0000-0003-4368-6359))\n- Peter J Vikesland<sup>4</sup> ([ORCID: 0000-0003-2654-5132](https://orcid.org/0000-0003-2654-5132))\n- Linsey C Marr<sup>4</sup> ([ORCID: 0000-0003-3628-6891](https://orcid.org/0000-0003-3628-6891))\n- Vincent J Munster<sup>3</sup>\n- James O Lloyd-Smith<sup>2</sup> ([ORCID: 0000-0001-7941-502X](https://orcid.org/0000-0001-7941-502X)) \u2020\n\n### Affiliations\n\n1. Department of Ecology and Evolutionary Biology, Princeton University Princeton United States\n2. Department of Ecology and Evolutionary Biology, University of California, Los Angeles Los Angeles United States\n3. Rocky Mountain Laboratories, National Institute of Allergy and Infectious Diseases Hamilton United States\n4. Department of Civil and Environmental Engineering, Virginia Tech Blacksburg United States\n5. Joan C. Edwards School of Medicine, Marshall University Huntington United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAmbient temperature and humidity strongly affect inactivation rates of enveloped viruses, but a mechanistic, quantitative theory of these effects has been elusive. We measure the stability of SARS-CoV-2 on an inert surface at nine temperature and humidity conditions and develop a mechanistic model to explain and predict how temperature and humidity alter virus inactivation. We find SARS-CoV-2 survives longest at low temperatures and extreme relative humidities (RH); median estimated virus half-life is >24 hr at 10\u00b0C and 40% RH, but \u223c1.5 hr at 27\u00b0C and 65% RH. Our mechanistic model uses fundamental chemistry to explain why inactivation rate increases with increased temperature and shows a U-shaped dependence on RH. The model accurately predicts existing measurements of five different human coronaviruses, suggesting that shared mechanisms may affect stability for many viruses. The results indicate scenarios of high transmission risk, point to mitigation strategies, and advance the mechanistic study of virus transmission.\n\n## Introduction\n\nFor viruses to transmit from one host to the next, virus particles must remain infectious in the period between release from the transmitting host and uptake by the recipient host. Virus environmental stability thus determines the potential for surface (fomite) transmission and for mid-to-long range transmission through the air. Empirical evidence suggests that virus environmental stability depends strongly on ambient temperature and humidity, particularly for enveloped viruses; examples among enveloped viruses that infect humans include influenza viruses (Marr et al., 2019), endemic human coronaviruses (Ijaz et al., 1985), and the zoonotic coronaviruses SARS-CoV-1 (Chan et al., 2011) and MERS-CoV (van Doremalen et al., 2013).\n\nIn late 2019, a new zoonotic coronavirus now called SARS-CoV-2 emerged; it has since caused a global pandemic (COVID-19) and is poised to become an endemic human pathogen. Many countries in the Northern Hemisphere experienced a substantial uptick in transmission with the arrival of their late autumn and winter. Epidemiologists had anticipated such a seasonal increase (Neher et al., 2020; Kissler et al., 2020) based on observations from other enveloped respiratory viruses, such as endemic human coronaviruses (Monto et al., 2020) and influenza viruses (Lofgren et al., 2007). These viruses spread more readily in temperate zone winters than in temperate zone summers. SARS-CoV-2 has also displayed epidemic dynamics shaped by superspreading events, in which one person transmits to many others (Furuse et al., 2020; Kain et al., 2021); the related SARS-CoV-1 virus was likewise characterized by superspreading (Lloyd-Smith et al., 2005).\n\nVirus transmission is governed by many factors, among them properties of the virus and properties of the host population. But anticipating seasonal changes in transmission and preventing superspreading events both require an understanding of virus persistence in the environment, since ambient conditions can facilitate or impede virus spread. Empirical evidence suggests that SARS-CoV-2, like other enveloped viruses, varies in its environmental stability as a function of temperature and humidity (Biryukov et al., 2020; Matson et al., 2020), but the joint effect of these two factors remains unclear.\n\nMoreover, despite years of research on virus environmental stability, there do not exist mechanistically motivated quantitative models for virus inactivation as a function of both temperature and humidity. Existing predictive models for the environmental stability of SARS-CoV-2 (Biryukov et al., 2020; Guillier et al., 2020) and other viruses (Posada et al., 2010) are phenomenological regression models that do not model the underlying biochemical mechanisms of inactivation. This limits both our insight into the underlying inactivation process and our ability to generalize from any given experiment to unobserved conditions, or to real-world settings. A lack of quantitative, mechanistic models also makes it difficult to determine which environmental factors are most important, for instance whether absolute humidity (Shaman et al., 2010) or relative humidity (Marr et al., 2019) best explains influenza inactivation and seasonality.\n\nWe measured the environmental stability of SARS-CoV-2 virus particles (virions) suspended in cell culture medium and deposited onto a polypropylene plastic surface at nine environmental conditions: three relative humidities (RH; 40%, 65%, and 85%) at each of three temperatures (10\u00b0C, 22\u00b0C, and 27\u00b0C). We first quantified viable (infectious) virus titer over time and estimated virus decay rates and corresponding half-lives in each condition using a simple Bayesian regression model (see Materials and methods). We quantified the evaporation of the suspension medium and compared virus stability during the sample evaporation phase\u2014while substantial water loss was ongoing\u2014to virus stability after a quasi-equilibrium phase was reached\u2014when further evaporation was not evident over the timescale of the experiment.\n\nWe then created a mechanistic biochemical model of virus inactivation kinetics, drawing upon existing hypotheses for how temperature and humidity affect the inactivation chemistry of virus particles in microdroplets (Marr et al., 2019; Lin and Marr, 2020). We fit this mechanistic model to our SARS-CoV-2 data, and used it to predict observations from other human coronaviruses and other studies of SARS-CoV-2, and to extrapolate our SARS-CoV-2 results to unobserved temperature and humidity conditions.\n\nOur mechanistic model is based on a simple premise: virus inactivation in the environment is a chemical reaction and so obeys the laws of chemical kinetics. Reactions proceed faster at higher temperatures and higher solute concentrations. Solutes will be more concentrated when there is more evaporation; this occurs when the ambient relative humidity is lower. But below a threshold relative humidity, the efflorescence relative humidity (ERH), droplets may crystallize; this is also expected to change reaction kinetics. These principles apply across reactions. We do not need to know the exact identities and concentrations of non-virus reactants (e.g. amino acids, electrolytes, etc.) involved to make mechanistic predictions about how the inactivation reaction rate will vary with temperature and humidity.\n\nOur model encodes these principles. We estimated its three central parameters from our data.\n\n## Results\n\n### Empirical patterns of virus decay\n\nOur data suggest that SARS-CoV-2 environmental persistence could vary meaningfully across the range of temperatures and humidities encountered in daily life, with posterior median [95% credible interval] half-lives as long as 27 hr\u00a0[20,\u00a039] (10\u00b0C, 40% RH) and as short as 1.5 hr [1.1, 2.1] (27\u00b0C, 65% RH), once droplets reach quasi-equilibrium with the ambient air conditions (Figure 1b, Appendix 1\u2014table 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig1-v2.jpg)\n\n**Figure 1.:** (a) Example of medium evaporation and virus inactivation as a function of time since deposition; experiments at 22\u00b0C and 65% RH shown. Inactivation proceeds in two phases: an evaporation phase during which water mass is lost from the sample to evaporation and a quasi-equilibrium phase once the sample mass has plateaued. Light blue vertical line shows posterior median estimated time that quasi-equilibrium was reached. Top plot: medium evaporation. Dots show measured masses. Square shows measured final (quasi-equilibrium) mass; plotted at 24 hr for readability. Lines are 10 random draws from the posterior for the evaporation rate; horizontal section of line reflects the reaching of quasi-equilibrium (measured final mass). See figure supplements for all conditions. Bottom plot: virus inactivation. Points show posterior median estimated titers in log10\u00a0TCID50/mL\u00a0for each sample; lines show 95% credible intervals. Black dotted line shows the approximate single-replicate limit of detection (LOD) of the assay: 100.5TCID50/mL\u00a0media. Three samples collected at each time-point. Lines are 10 random draws per measurement from the posterior distribution for the inactivation rates, estimated by a simple regression model (see Materials and methods). (b) Measured virus half-lives. Violin plots show posterior distribution of estimated half-lives, plotted on a logarithmic scale. Dots show posterior median value. Color indicates temperature. Measurements at 40%, 65%, and 85% RH reflect decay kinetics once the deposited solution has reached quasi-equilibrium with the ambient air. Estimated half-lives for the evaporation phase that occurs prior to quasi-equilibrium are plotted to the right, since conditions during this phase are mainly dilute, and thus analogous to high RH quasi-equilibrium conditions. See figure supplements for plots showing the fit of the regression used to estimate half-lives to the titer data. (c) Schematic of hypothesized effects of temperature and relative humidity on duration of virus viability. Virus half-lives are longer at lower temperatures, regardless of humidity, because inactivation reaction kinetics proceed more slowly. Relative humidity affects virus half-life by determining quasi-equilibrium solute concentration in the droplet containing the virus. Above the efflorescence relative humidity (ERH), solutes are concentrated by evaporation. The lower the ambient humidity, the more water evaporates, the more concentration occurs, and the faster inactivation reactions proceed. Below the ERH, solutes effloresce, forming crystals. Half-lives are thus not particularly sensitive to changes in sub-ERH relative humidity, and half-lives even slightly below the ERH may be substantially longer than half-lives slightly above it.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Fit of the regression model used to estimate half-lives to evaporation phase (pre-drying) SARS-CoV-2 titer data, according to method described in Empirical virus decay estimation (see Equation 44). We model evaporation phase decay of infectious virus at temperature $T\u2062(i)$ as exponential at a rate $l_{T\u2062(i)}$; this decay rate can therefore be estimated by fitting a line to the time series of estimated log10 virus titers. Points show posterior median estimated titers in log10\u00a0TCID50/mL for each sample; lines show 95% credible intervals. Black dotted line shows the approximate single-replicate limit of detection (LOD) of the assay: 100.5\u00a0TCID50/mL\u00a0media. Three samples collected at each time-point. x-axis shows time since sample deposition. Lines are truncated at the estimated time quasi-equilibrium was reached. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the estimated decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Fit of the regression model used to estimate half-lives to quasi-equilibrium (post-drying) SARS-CoV-2 titer data, according to method described in Empirical virus decay estimation (see Equation 44). We model quasi-equilibrium decay of infectious virus in environmental condition $i$ as exponential at a rate $\\lambda_{i}$; this decay rate can therefore be estimated by fitting a line to the time series of estimated log10 virus titers. Points show posterior median estimated titers in log10\u00a0TCID50/mL for each sample; lines show 95% credible intervals. Time-points with no positive wells for any replicate are plotted as triangles at the approximate single-replicate limit of detection (LOD) of the assay\u2014denoted by a black dotted line at 100.5\u00a0TCID50/mL\u00a0media\u2014to indicate that a range of sub-LOD values are plausible. Three samples collected at each time-point. x-axis shows time since quasi-equilibrium was reached, as measured in evaporation experiments. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the estimated decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Evaporation of supplemented Dulbecco\u2019s Modified Eagle Medium (DMEM) as a function of temperature and humidity. Dots show measured masses. Square shows measured final (quasi-equilibrium) mass; actual measurement times for final masses were upon removal of sample from chamber, but for readability they are plotted at 24 hr for all experiments. Lines are 100 random draws from the posterior\u00a0distribution for the evaporation rate; horizontal section of line reflects the reaching of quasi-equilibrium (measured final mass). Transition point between evaporation phase and quasi-equilibrium phase inferred from data (see Modeling of medium evaporation and Evaporation model fitting). Note that final mass measurement is more accurate than time series measurements (see Materials and methods, Evaporation experiment).\n\nMinimal virus decay occurred during the evaporation phase (Figure 1a, Figure 1\u2014figure supplement 1), when excess water was present. Estimated half-lives were long but exact values were highly uncertain, as the small amount of absolute virus inactivation during the brief evaporation phases, combined with the noise involved in sampling and titration, limits our inferential capacity. Posterior median half-lives during the evaporation phase were 42 hr [11, 330] at 10\u00b0C, 12 hr [4.5, 160] at 22\u00b0C, and 5.8 hr [2.1, 130] at 27\u00b0C (Table 1).\n\n**Table 1.**\n Estimated half-lives in hours of SARS-CoV-2 on polypropylene as a function of temperature (T) and relative humidity (RH).Estimated half-lives are reported as posterior median and the middle 95% credible interval.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>T (\u00b0C)</th>\n      <th>RH (%)</th>\n      <th>Median half-life (h)</th>\n      <th>2.5 %</th>\n      <th>97.5 %</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Quasi-equilibrium phase</td>\n      <td>10</td>\n      <td>40</td>\n      <td>26.55</td>\n      <td>20.28</td>\n      <td>38.75</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>10</td>\n      <td>65</td>\n      <td>14.22</td>\n      <td>12.17</td>\n      <td>17.16</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>10</td>\n      <td>85</td>\n      <td>13.78</td>\n      <td>10.67</td>\n      <td>19.70</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>22</td>\n      <td>40</td>\n      <td>6.43</td>\n      <td>5.52</td>\n      <td>7.56</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>22</td>\n      <td>65</td>\n      <td>2.41</td>\n      <td>2.03</td>\n      <td>2.88</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>22</td>\n      <td>85</td>\n      <td>7.50</td>\n      <td>6.22</td>\n      <td>9.24</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>27</td>\n      <td>40</td>\n      <td>3.43</td>\n      <td>2.91</td>\n      <td>4.12</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>27</td>\n      <td>65</td>\n      <td>1.52</td>\n      <td>1.05</td>\n      <td>2.14</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>27</td>\n      <td>85</td>\n      <td>2.79</td>\n      <td>2.12</td>\n      <td>3.78</td>\n    </tr>\n    <tr>\n      <td>Evaporation phase</td>\n      <td>10</td>\n      <td></td>\n      <td>42.08</td>\n      <td>10.97</td>\n      <td>334.34</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>22</td>\n      <td></td>\n      <td>12.18</td>\n      <td>4.47</td>\n      <td>163.58</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>27</td>\n      <td></td>\n      <td>5.76</td>\n      <td>2.14</td>\n      <td>125.85</td>\n    </tr>\n  </tbody>\n</table>\n\nOverall, virus decay became markedly faster as temperature increased for all humidities, with decay at 27\u00b0C roughly five to ten times faster than decay at 10\u00b0C. Across temperatures, virus decay was relatively rapid at 65% RH and tended to be slower either at lower (40%) or higher (85%) humidities, or when excess water was present during the evaporation phase (Figure 1b, Table 1).\n\n### Mechanistic model for temperature and humidity effects\n\nMany viruses, including SARS-CoV-2, exhibit exponential decay on surfaces and in aerosols (Marr et al., 2019; van Doremalen et al., 2020; Biryukov et al., 2020). We drew upon chemical principles of droplet evaporation and virus inactivation (Figure 1c) to create a minimal mechanistic model incorporating the effects of both temperature and relative humidity on exponential decay rates.\n\nWe model virus inactivation at quasi-equilibrium on inert surfaces as a chemical reaction with first-order reaction kinetics; that is, the quantity of virus is the limiting reactant of the rate-determining step. This reflects the empirical pattern of exponential decay and is consistent with the fact that virions will be numerically rare in microdroplets compared to other reactants.\n\nWe characterize the temperature dependence of this reaction with the Arrhenius equation, which describes a reaction rate (here the virus inactivation rate $k$) as a function of an activation energy $E_{a}$, an asymptotic high-temperature reaction rate $A$, the universal gas constant $R$, and the absolute temperature $T$:\u00a0\n\n$$\nk=A\u2062exp\u2061(-\\frac{E_{a}}{R\u2062T})\n$$\n\nPrior work has found Arrhenius-like temperature dependence for virus inactivation on surfaces and in aerosols for many viruses (Adams, 1949), including human coronaviruses (Yap et al., 2020).\n\nMechanistic principles of virus inactivation as a function of humidity have been more elusive. Recent work has suggested that relative humidity affects virus inactivation by controlling evaporation and thus governing the solute concentrations in a droplet containing virions (Marr et al., 2019; Lin and Marr, 2020). In more humid environments, evaporation is slower and more water remains when quasi-equilibrium is reached. In less humid environments, evaporation is faster and little or no water remains (Figure 1c).\n\nWhen released from infected hosts, virions are found in host bodily fluids, and virus inactivation experiments are typically conducted in cell culture medium. Both solutions contain amino acids and electrolytes, in particular sodium chloride (NaCl) (Cavaliere et al., 1989; Dulbecco and Freeman, 1959). Prior work has found that higher quasi-equilibrium solute concentrations are associated with faster virus inactivation rates (Yang and Marr, 2012; Yang et al., 2012). The simplest explanation for this is that the measured solute concentration is a direct proxy for the concentration of the reactants governing the inactivation reaction. Thus, ambient humidity affects the reaction rate by setting the quasi-equilibrium concentrations of the reactants that induce inactivation of the virus.\n\nThe exact quasi-equilibrium state reached will depend on the solutes present, since different solutes depress vapor pressure to different degrees. In electrolyte solutions like bodily fluids or cell culture media, efflorescence is also important. Below a threshold ambient humidity\u2014the efflorescence relative humidity (ERH)\u2014electrolytes effloresce out of solution, forming a crystal (Figure 1c). Below the ERH, the reaction no longer occurs in solution, and so inactivation may be slower. The non-monotonic (\u2018U-shaped\u2019) dependence of virus inactivation on relative humidity, observed in our data (Figure 1a) and elsewhere in the literature (Yang et al., 2012; Benbough, 1971; Prussin et al., 2018; Webb et al., 1963), including for coronaviruses (Casanova et al., 2010; Songer, 1967), could be explained by this regime shift around the ERH (Figure 1c).\n\nDuring the evaporation phase prior to quasi-equilibrium, reactants are less concentrated and decay is expected to be slower, as observed from our data (Figure 1a,b). If small initial droplet sizes are used\u2014as in real-world depositions (predominantly < 10\u00a0\u00b5L; Johnson et al., 2011; Johnson et al., 2013; Thompson et al., 2013) and in some experiments\u2014evaporative quasi-equilibration should be near instant, and so inactivation should follow the kinetics at quasi-equilibrium. Larger droplets, such as those used in our experiments, will take more time to equilibrate (depending on temperature and humidity); this allows us to distinguish the quasi-equilibrium phase from the evaporation phase.\n\nWe partition inactivation at quasi-equilibrium into two humidity regimes, effloresced and solution, according to whether the ambient RH is below the ERH (effloresced) or above (solution). In either case, we approximate virus inactivation as a first-order reaction with inactivation rate $k_{eff}$ or $k_{sol}$, respectively. Based on observations of NaCl solutions at room temperature and atmospheric pressure (Mikhailov et al., 2004), we use an ERH of 45%. This means that 40% RH experiments are in the effloresced regime and 65% and 85% RH experiments are in the solution regime.\n\nWe model the effloresced and solution inactivation rates $k_{eff}$ and $k_{sol}$ using two Arrhenius equations with a shared activation energy $E_{a}$ but distinct asymptotic high-temperature reaction rates $A_{eff}$ and $A_{sol}$. In solution conditions, we further modulate $k_{sol}$ by a quasi-equilibrium \u2018concentration factor\u2019 $\\frac{[S_{eq}]}{[S_{0}]}$, which quantifies how concentrated the solution has become at quasi-equilibrium $[S_{eq}]$ relative to its initial state $[S_{0}]$.\n\nGiven our assumption of first-order kinetics, an n-fold increase in the non-virion reactant concentrations should translate directly into an n-fold increase in the inactivation rate. Lower relative humidity leads to higher quasi-equilibrium concentration and thus increases virus inactivation rate, until the ERH is reached. Below the ERH, inactivation rates may again be low due to crystallization, depending on $A_{eff}$. We do not force the relationship between RH and inactivation rate to be continuous at the ERH; there may be a discontinuity (see Appendix, Interpretation of the transition in inactivation rate at the ERH, for a discussion).\n\n$$\nk_{eff}=A_{eff}\u2062exp\u2061(-\\frac{E_{a}}{R\u2062T})\n$$\n\n\n\n$$\nk_{sol}=\\frac{[S_{eq}]}{[S_{0}]}\u2062A_{sol}\u2062exp\u2061(-\\frac{E_{a}}{R\u2062T})\n$$\n\nWe estimated $E_{a}$, $A_{eff}$, and $A_{sol}$ from our data, constraining all to be positive. We treated evaporation phase data as governed by $k_{sol}$, with a dynamic value of the concentration factor $\\frac{[S\u2062(t)]}{[S_{0}]}$ (Appendix, Modeling of virus decay dynamics during the evaporation phase). We computed the quasi-equilibrium concentration factor $\\frac{[S_{eq}]}{[S_{0}]}$ by fitting a theoretically-motivated curve to our evaporation data (Figure 2\u2014figure supplement 1).\n\nThe relationship between RH and quasi-equilibrium concentration factor depends on complex evaporative kinetics that will vary among media. For this reason, we do not attempt to predict it from first principles, but instead measure it directly and use the fitted curve to extrapolate to unmeasured RH conditions. We use this approach for the results presented in the main text; we refer to it as the \u2018main model\u2019.\n\nTo check robustness of the main model results, we also estimated a version of the model without this theoretical curve\u2013using only directly-measured equilibrium concentration factors. This model (referred to as the \u2018directly-measured concentration model\u2019) yielded similar results to the main model; see Appendix, Mechanistic model versions for details.\n\nWe also considered a four-parameter variant of the model with distinct activation energies below the ERH ($E_{a}^{eff}$) and above ($E_{a}^{sol}$), placing the same prior on each. This accounts for the possibility that the rate-determining step of the inactivation reaction might be distinct in the two regimes. The estimated activation energies were very similar below and above the ERH (Appendix 1\u2014figure 1). This suggests that the rate-determining reaction step\u2014and thus the activation energy\u2014is the same in both regimes. Accordingly, we report estimates from the three-parameter model with a shared $E_{a}$. We provide additional details and interpretation of our mechanistic inactivation modeling in the Appendix; see Mechanistic inactivation model interpretation and Mechanistic model estimation.\n\n### Model fitting and prediction of unobserved conditions\n\nOur dataset comprises nine experimental conditions, each with seven time-points that span the evaporation and quasi-equilibrium phases. We sought to explain the virus inactivation rates across this entire dataset using our mechanistic model with just three free parameters: the activation energy $E_{a}$ and the asymptotic high-temperature reaction rates under effloresced and solution conditions, $A_{eff}$ and $A_{sol}$. The mechanistic function used and the constraint on the parameters to be positive means that inactivation rate must increase with temperature and with increasing solute concentration. Remarkably, the fit of the mechanistic model (Figure 2) is nearly as good as that of the simple regression, in which we estimate independent exponential decay rates for each condition to measure virus half-life (Figure 1\u2014figure supplement 2, see Appendix, Simple regression model). Mechanistic model parameter estimates are given in Figure 2\u2014figure supplement 2\u00a0and Appendix 1\u2014table 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-v2.jpg)\n\n**Figure 2.:** Points show posterior median estimated titers in log10\u00a0TCID50/mL for each sample; lines show 95% credible intervals. Time-points with no positive wells for any replicate are plotted as triangles at the approximate single-replicate limit of detection (LOD) of the assay\u2014denoted by a black dotted line at 100.5TCID50/mL\u00a0media\u2014to indicate that a range of sub-LOD values are plausible. Three samples collected at each time-point. x-axis shows time since quasi-equilibrium was reached, as measured in evaporation experiments. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the mechanistic model predicted decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment. See Figure 2\u2014figure supplement 4 for a visualization of the mechanistic model fit using directly-measured concentration, rather with a curve estimating the humidity/concentration relationship.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Fitted curve estimating concentration factor at quasi-equilibrium a function of relative humidity. Points show estimates for quasi-equilibrium concentration factor based on empirically measured masses from the evaporation experiments (Figure 1\u2014figure supplement 3) and the estimated initial solute mass fraction. Estimates shown for each temperature (point color) and ambient RH (x-axis value). Vertical lines around the points show a 68% (thick) and 95% (thin) credible interval. Blue curves show model predictions for concentration factor given parameters $\\alpha_{c}$, $\\alpha_{s}$ (see Solute concentration factor, Equation 12), and the initial solute mass fraction, all estimated jointly alongside mechanistic model parameters and evaporation rates. Each curve is an independent draw from the joint posterior distribution of the parameters, thus giving a sense of the distribution of possible curves; 100\u00a0curves\u00a0plotted.\u00a0Vertical dashed line shows the efflorescence relative humidity, 45%.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Posterior distributions for key mechanistic model parameters. Main model fit (with fitted curve relating RH to concentration factor) shown at left, directly-measured concentration factor model fit shown at right. Distributions are visualized as quantile dotplots (Kale et al., 2020); 100 representative dots are shown for each parameter. Black circle below shows posterior median, bars show 68% (thick) and 95% (thin) credible intervals. For $A_{eff}$ and $A_{sol}$, parameter values are plotted on a logarithmic scale. See Appendix 1\u2014table 1 and\u00a0Appendix 1\u2014table 2 for posterior medians and 95% credible intervals; see Code and data availability for code to reproduce full set of posterior samples.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Comparison of directly-measured half-lives (left) with those predicted by the mechanistic model, either with a fitted curve relating RH to concentration (center), as in the main text, or using directly-measured concentration factors (right). Violin plots show posterior distribution of estimated half-lives, plotted on a logarithmic scale. Dots show posterior median value. Color indicates temperature. Measurements at 40%, 65%, and 85% RH reflect decay kinetics once the deposited solution has reached quasi-equilibrium with the ambient air.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Estimated titers and fit of the directly-measured concentration mechanistic model for SARS-CoV-2 stability on polypropylene at quasi-equilibrium (concentration factor taken from evaporation experiments, rather than from a fitted curve that relates RH to concentration). Points show posterior median estimated titers in log10\u00a0TCID50/mL for each sample; lines show 95% credible intervals. Time-points with no positive wells for any replicate are plotted as triangles at the approximate single-replicate limit of detection (LOD) of the assay\u2014denoted by a black dotted line at 100.5\u00a0TCID50/mL\u00a0media\u2014to indicate that a range of sub-LOD values are plausible. Three samples collected at each time-point. x-axis shows time since quasi-equilibrium was reached, as measured in evaporation experiments. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the mechanistic model predicted decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Estimated titers and main mechanistic model fit for SARS-CoV-2 stability on polypropylene during the evaporation phase. Points show posterior median estimated titers in log10\u00a0TCID50/mL for each sample; lines show 95% credible intervals. Black dotted line shows the approximate single-replicate limit of detection (LOD) of the assay: 100.5\u00a0TCID50/mL\u00a0media. Three samples collected at each time-point. x-axis shows time since sample deposition. Lines are truncated at the estimated time quasi-equilibrium was reached. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the mechanistic model predicted decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Estimated titers and fit of the directly-measured concentration mechanistic model for SARS-CoV-2 stability on polypropylene during the evaporation phase (concentration factor taken from evaporation experiments, rather than from a fitted curve that relates RH to concentration). Points show posterior median estimated titers in log10\u00a0TCID50/mL for each sample; lines show 95% credible intervals. Black dotted line shows the approximate single-replicate limit of detection (LOD) of the assay: 100.5\u00a0TCID50/mL\u00a0media. Three samples collected at each time-point. x-axis shows time since sample deposition. Lines are truncated at the estimated time quasi-equilibrium was reached. Lines are random draws (10 per sample) from the joint posterior distribution of the initial sample virus concentration and the mechanistic model predicted decay rate; the distribution of lines gives an estimate of the uncertainty in the decay rate and the variability of the initial titer for each experiment.\n\nWe used the mechanistic model to predict SARS-CoV-2 half-life for unobserved temperature and humidity conditions from 0\u00b0C to 40\u00b0C, and from 0% to 100% RH. We chose these ranges to reflect environments encountered by human beings in daily life. We did not extrapolate to temperatures below 0\u00b0C since inactivation kinetics may be different when fluid containing the virus freezes. The exact freezing points of suspension medium and human fluids at sea level will depend on solute concentration, but will typically be below the 0\u00b0C freezing point of pure water.\n\nMedian predicted SARS-CoV-2 half-life varies by more than three orders of magnitude, from less than half an hour at 40\u00b0C just above the modeled approximate ERH, to more than a month at 0\u00b0C and 100% RH (Figure 3a,c). We find good qualitative agreement between model predictions and model-free estimates from our data, including long half-lives prior to quasi-equilibrium. The U-shaped effect of humidity on virus half-life is readily explained by the regime-shift at the ERH (Figure 3a). In particular, half-lives become extremely long at cold temperatures and in very dilute solutions, which are expected at high RH (Figure 3a,b). Of note, the worst agreement between mechanistic model predictions and (independent) simple regression estimates is found at 10\u00b0C and 85% RH (Figure 3a). This is partially explained by the fact that the empirical\u00a0quasi-equilibrium concentration reached under those conditions was higher than our model prediction based on RH (Figure 2\u2014figure supplement 1). Accordingly, the half-life prediction for 10\u00b0C and 85% RH based on directly-measured concentrations is superior to the prediction based on an extrapolation from the relative humidity (Figure 2\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig3-v2.jpg)\n\n**Figure 3.:** (a) Predicted half-life as a function of relative humidity. Points show posterior median for measured half-lives, estimated without the mechanistic model (simple regression estimate for each temperature/humidity combination), lines show a 68% (thick) and 95% (thin) credible interval. Dashed line shows the ERH. Estimated evaporation phase half-lives are plotted at the right. Colored lines show predicted half-lives as a function of humidity at five temperatures: 0\u00b0C, 10\u00b0C, 22\u00b0C, 27\u00b0C, and 40\u00b0C. One\u00a0hundred100 random draws from the posterior distribution are shown at each temperature to visualize uncertainty. Line and point colors indicate temperature. (b) Predicted half-life above the ERH as a function of quasi-equilibrium concentration factor. Points and lines as in a, but only solution (above ERH) conditions are shown. (c) Heatmap showing posterior median predicted half-lives as a function of temperature and relative humidity. Posterior median estimated half-lives for human coronaviruses from our study and from the literature plotted on top using the same color map (see also Appendix 1\u2014table 3 and Figure 3\u2014figure supplement 1). Shape indicates virus; measurements from our own group are shown slightly larger with a slightly thicker outline. Points of identical temperature and humidity are nudged slightly to avoid direct overplotting. (d) Relative within-study mechanistic model predictions (x-axis, see Appendix, Relative predictions) compared to simple regression measurements (y-axis) for human coronavirus half-lives. Points show posterior median for measured (horizontal) or predicted (vertical) half-lives and lines show a 68% (thick) and 95% (thin) credible interval. Shape indicates virus; datapoints come from studies in the literature for which there were measurements at at least two temperature and/or humidity conditions for the same virus and experimental material (e.g. plastic, steel, bulk medium).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65902/elife-65902-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Mechanistic model predictions compared to half-lives estimated directly from data via simple regression. All inactivation studies in which both temperature and relative humidity were reported are included. (a) Half-life as a function of relative humidity at different temperatures. Colored lines show predicted half-life as a function of relative humidity (x-axis value) and temperature (color) according to the main model fit. 100 random draws from the posterior distribution are plotted for each of 20 evenly spaced temperatures between 0 and 40\u00b0C. Gray line shows the efflorescence relative humidity (ERH) assumed in the model, 45%. Points show posterior median for measured half-lives for human coronaviruses. Measurements included come from this study (Table 1), from our meta-analysis of the literature (Appendix 1\u2014table 3), and from SARS-CoV-1 and MERS-CoV data collected by our group (Appendix 1\u2014table 4). (b) Half-lives predicted from the mechanistic model (x-axis) compared to independent estimates (y-axis), for the same observations plotted in a. In both panels, half-life estimates are simple regression estimates (i.e. no mechanistic model; fitting of independent exponential decay rates to each condition). Shape indicates virus; in a, measurements from our own group are shown slightly larger. Black lines show a 68% (thick) and 95% (thin) credible interval for posterior estimates. Note that three SARS-CoV-2 points from a particular study (Harbourt et al., 2020) show consistently longer-than-predicted half-lives, and all MERS-CoV points show shorter-than-predicted half-lives. In both instances, our mechanistic model makes accurate relative predictions for these data once calibrated to a reference half-life within the same study (Figure 3d). Taken together, this indicates that there can be experiment- and/or virus- specific effects on absolute half-lives while the general mechanism remains: hotter, more concentrated solutions produce faster virus inactivation.\n\nAs a stronger test of our model\u2019s validity, we used our estimated $E_{a}$ and $A$ values to make out-of-sample predictions of the half-lives of five human coronaviruses reported from independent studies: four betacoronaviruses (SARS-CoV-2, SARS-CoV-1, MERS-CoV and HCoV-OC43) and one alphacoronavirus (HCoV-229E). We compiled data on the environmental stability of those viruses under conditions ranging from 4\u00b0C to 95\u00b0C, from 30% to 80% RH, and on a range of surfaces or bulk media, and computed empirical (regression) estimates of virus half-lives (Appendix 1\u2014table 3). We also included data on stability of SARS-CoV-1 (van Doremalen et al., 2020) and MERS-CoV (same method as in van Doremalen et al., 2020) collected by our group during previous studies (Appendix 1\u2014table 4).\n\nWhere both temperature and RH were available, we compared these model-free estimates to predictions based on the mechanistic model parameterized with our SARS-CoV-2 data (Figure 3c, Figure 3\u2014figure supplement 1). We found striking agreement for half-life estimates both above and below the ERH, and for temperatures ranging from 4\u00b0C to 37\u00b0C.\n\nTo include a broader range of conditions in our out-of-sample model testing, we used our model to predict half-lives observed in all comparable studies by extrapolating from a reference half-life in each study. Predicted half-lives matched observations well across five orders of magnitude (Figure 3d), despite spanning five virus species and despite important heterogeneities in the data collection process (see Appendix, Meta-analysis of human coronavirus half-lives). The two conspicuous outliers, where SARS-CoV-2 half-lives were measured to be substantially shorter than our prediction, correspond to samples exposed to high heat in closed vials (Chin et al., 2020; Chin, 2020,\u00a0personal\u00a0communication) which is known to accelerate virus inactivation (Gamble et al., 2021).\n\n## Discussion\n\nCombining novel data, mathematical modeling, and a meta-analysis of existing literature, we have developed a unified, mechanistic framework to quantify the joint effects of temperature and humidity on virus stability. In particular, our model provides a mechanism for the non-linear and non-monotonic relationship between relative humidity and virus stability previously observed for numerous enveloped viruses (Yang and Marr, 2012; Casanova et al., 2010; Songer, 1967), but not previously reported for SARS-CoV-2. Our work documents and explains the strong dependence of SARS-CoV-2 stability on environmental temperature and relative humidity, and accurately predicts half-lives for five coronavirus species in conditions from 4\u00b0C to 95\u00b0C, and from 30% to 80% RH and in bulk solution.\n\nOur findings have direct implications for the epidemiology and control of SARS-CoV-2 and other enveloped viruses. The majority of SARS-CoV-2 clusters have been linked to indoor settings (Leclerc et al., 2020), suggesting that virus stability in indoor environmental conditions may be an important determinant of superspreading risk. Our results provide a mechanistic explanation for the many observed SARS-CoV-2 superspreading events in cool indoor environments such as food processing plants (Dyal, 2020; G\u00fcnther et al., 2020; Pokora et al., 2020) and hockey rinks (Atrubin et al., 2020; McNabb and Ries, 2020), where the typical air temperature is around 10\u00b0C, or in dry indoor environments such as long-distance flights (Khanh et al., 2020; Jayaweera et al., 2020). Conversely, our results imply that the relative rarity of outdoor SARS-CoV-2 transmission clusters is not readily explained by temperature and humidity effects, since these conditions outdoors during temperate zone winters should be favorable for the virus. Instead, increased ventilation (Prather et al., 2020) and UV light inactivation (Ratnesar-Shumate et al., 2020) may be more important than the effects of temperature and humidity outdoors. In contrast, typical climate-controlled conditions indoors (moderate temperature and low humidity) are favorable for virus stability, and specialized conditions such as those found in food processing plants even more so. Our results highlight the importance of proper personal protective equipment and improved ventilation for protecting workers, particularly in cold indoor settings, and the general transmission risks associated with indoor gatherings.\n\nThe effects of temperature and humidity we observe in our data and model are relevant both to fomite and to airborne transmission. Prior work has shown that virus decay as a function of RH is similar in droplets on surfaces and suspended aerosols (Lin and Marr, 2020; Kormuth et al., 2018). Numerous studies of smaller deposited droplets (Prussin et al., 2018) or aerosols (Benbough, 1971; Yang et al., 2012; Ijaz et al., 1985)\u00a0have reported similar qualitative patterns to those we report, with increased decay rates at high temperatures and a U-shaped effect of RH. Furthermore, surface stability can matter for aerosol transmission risk, since small particles containing infectious virions can be re-suspended from surfaces and inhaled (Asadi et al., 2020). Re-suspension is further enhanced by procedures such as high-pressure washing, which is common in food processing plants. While the relative contributions of aerosol and fomite transmission to the epidemiology of SARS-CoV-2 continue to be investigated (Ong et al., 2020; Cai et al., 2020), our results indicate that cold situations present elevated transmission risks for either mode, especially if air is either dry or very humid. It has been speculated, for instance, that chilled or frozen foods might allow for rare but impactful long-range fomite transmission (Han et al., 2020). Our results show that this is conceivable, as there is good empirical and mechanistic support for prolonged virus viability at very low temperatures.\n\nEnvironmental stability is not the only mechanism by which temperature and humidity affect respiratory virus transmission. Very hot or cold conditions outdoors can lead people to spend more time indoors, where transmission risks are heightened due to poor ventilation. Low-humidity environments can dry out human airways and thus impair defenses against respiratory viruses (Kudo et al., 2019). Ambient humidity also determines the size distribution of aerosols in the environment, again by affecting evaporation rates. Smaller aerosols settle to the ground more slowly (Marr et al., 2019), which could facilitate transmission.\n\nAt low RH, humidity effects on inactivation, immunity, and settling may compound each other: all increase transmission risk. At high RH, reduced inactivation could promote transmission, but improved immune defenses and faster settling could hinder it, so the net effect on transmission is less clear.\n\nStill, temperate zone winters increase transmission of many respiratory viruses (Lofgren et al., 2007). Individuals spend increased time indoors in heated buildings. Ventilation is often poor, as windows are kept closed to make heating efficient. Air in heated buildings is typically very dry; this improves virus stability and weakens immune defenses. Policymakers should consider ventilating and humidifying essential indoor spaces to reduce transmission risk. Other mitigation measures such as indoor masking may likewise be even more crucial during winter. Indoor spaces in which individuals cannot be masked, such as bars and restaurants, remain particular cause for concern.\n\nSeveral analyses have projected that SARS-CoV-2 transmission will likewise be faster in temperate zone winters (Neher et al., 2020; Kissler et al., 2020; Baker et al., 2020). Major seasonal or climate-mediated mitigation of SARS-CoV-2 spread was not evident during the northern hemisphere\u2019s spring and summer (Carlson et al., 2020; Poirier et al., 2020). This was expected, since population susceptibility and epidemic control measures can be more important than seasonality in an early pandemic context (Baker et al., 2020). Thus, the fact that temperate zone summers did not eliminate transmission should not have led to false confidence that temperate zone winters would not promote it. Winter surges in cases, hospitalizations, and deaths across the northern hemisphere may have been driven in part by behavioral, immunological, or virological seasonality.\n\nOur work has implications for the study of virus environmental stability and seasonality more broadly. Whether absolute or relative humidity is more important for influenza stability has been a matter of debate (Shaman et al., 2010; Marr et al., 2019). The answer has proved elusive because it is difficult to disentangle the effects of humidity from those of temperature. Our mechanistic model permits principled dis-aggregation of those effects, and reveals a strong effect of relative humidity even after accounting for the effects of temperature.\n\nThere may thus exist general principles that govern virus inactivation across enveloped viruses, and perhaps even more broadly. Similar empirical patterns of temperature and humidity dependence to what we measured, and modeled, for SARS-CoV-2 have been observed for other important viruses. In particular, the U-shaped dependence of inactivation on RH has been reported for animal coronaviruses (Songer, 1967; Casanova et al., 2010), as well as for influenza viruses, paramyxoviruses, rhabdoviruses, and retroviruses (Yang et al., 2012; Benbough, 1971; Prussin et al., 2018; Webb et al., 1963), suggesting the existence of a shared mechanism for the effect of humidity across enveloped RNA viruses. Some enveloped DNA viruses such as herpesviruses and poxviruses (Songer, 1967; Webb et al., 1963) and some encapsulated viruses such as polioviruses (de Jong and Winkler, 1968; Songer, 1967) also show similar empirical behavior. Experiments have found that heat treatment of viruses reduces infectivity principally by degrading surface proteins (Wigginton et al., 2012), lending further support to a chemical model of environmental virus inactivation.\n\nIndividual enveloped viruses may be more or less stable than SARS-CoV-2 while still obeying our model\u2019s basic principle: increased heat and concentration lead to faster inactivation. The values of model parameters ($E_{a}$, $A_{eff}$, $A_{sol}$) may change while the mechanistic model itself remains valid. The data from our own group and from the literature on MERS-CoV is suggestive in this regard: our model predictions using SARS-CoV-2 parameters slightly overestimate the stability of MERS-CoV, but correctly predict the pattern of temperature and humidity effects (Figure 3\u2014figure supplement 1).\n\nSimilarly, it is striking that our model for Arrhenius-like temperature dependence works well with a single estimated activation energy across the effloresced and solution regimes for our SARS-CoV-2 experiments and for experiments on a range of coronaviruses conducted in different conditions by other investigators. This suggests that the rate-limiting step in coronavirus inactivation may not necessarily depend on the exact inactivating reactant. We propose one simple potential mechanism for how this could be so: if inactivation depends on disruption of the virion once it has formed a complex with some inactivating reactant, the activation energy for that disruption event could depend mainly on the chemical properties of the virion itself (see Appendix, Interpretation of the single activation energy).\n\nWe discuss additional practical implications for the empirical study of virus environmental stability in the Appendix (Methodological implications for experimental studies on virus stability).\n\nDespite years of research on virus stability as a function of temperature and humidity and plausible hypotheses about the underlying chemistry, proposed mechanisms have lacked explicit quantitative support. By encoding the underlying chemistry into a mathematical model and estimating parameters using modern computational techniques, we provide such support, with critical insights for the control of an ongoing pandemic. Our empirical results provide mechanistic insight into transmission risks associated with cold and climate-controlled indoor settings, while our modeling work allows for explicit quantitative comparison of the aerosol and fomite risks in different environments, and suggests that simple, general mechanisms govern the viability of enveloped viruses: hotter, more concentrated solutions are favorable to chemical reactions\u2014and therefore unfavorable to viruses.\n\n## Materials and methods\n\n### Laboratory experiments\n\n#### Viruses and titration\n\nWe used SARS-CoV-2 strain HCoV-19 nCoV-WA1-2020 (MN985325.1; Holshue et al., 2020) for this study. We quantified viable virus by end-point titration on Vero E6 cells as described previously (Fischer et al., 2020; van Doremalen et al., 2020), and inferred posterior distributions for titers and exponential decay rates directly from raw titration data using Bayesian statistical models (see Statistical analyses and mathematical modeling, below).\n\n#### Virus stability experiment\n\nWe measured virus stability on polypropylene (ePlastics, reference PRONAT.030X24X47S/M) as previously described (van Doremalen et al., 2020). We prepared a solution of Dulbecco\u2019s Modified Eagle Medium (DMEM, a common cell culture medium) supplemented with 2 mM L-glutamine, 2% fetal bovine serum, and 100 units/mL penicillin/streptomycin, and containing 105\u00a0TCID50/mL SARS-CoV-2. Polypropylene disks were autoclaved for decontamination prior to the experiment. We then placed 50\u00a0\u03bcL aliquots of this SARS-CoV-2 suspension onto the polypropylene disks under nine environmental conditions: three RH (40%, 65%, and 85%) at each of three temperatures (10\u00b0C, 22\u00b0C, and 27\u00b0C). These controlled environmental conditions were produced in incubators (MMM Group CLIMACELL and Caron model 6040) with protection from UV-B or UV-C exposure. We prepared 216 disks corresponding to three replicates per eight post-deposition time-points (0, 1, 4, 8, and 24 hr, then daily for 4 days) for the nine conditions. At each time-point, samples were collected by rinsing the disks with 1\u00a0mL of DMEM and stored at \u221280\u00b0C until titration.\n\n#### Evaporation experiment\n\nWe measured the evaporation kinetics of suspension medium under the same temperature and humidity conditions as the virus stability experiments. We placed 50\u00a0\u03bcL aliquots of supplemented DMEM onto polypropylene disks in a Electro-Tech Systems 5518 environmental chamber. The polypropylene disks were rinsed three times 1M sulfuric acid, ethanol and DI H2O respectively before use. We measured medium mass $m\u2062(t)$ every 5\u00a0min for up to 20\u00a0hr or until a quasi-equilibrium was reached using a micro-balance (Sartorius MSE3.6P-000-DM, readability 0.0010\u00a0mg). The chamber of the micro-balance was half-opened to keep air circulating with the environmental chamber. The flow entering the balance chamber decreased the balance accuracy to around 0.01\u00a0mg. We measured initial droplet mass ($m\u2062(0)$) and final droplet mass ($m\u2062(\u221e)$) under closed-chamber conditions to increase accuracy.\n\n### Statistical analyses and mathematical modeling\n\nWe quantified the stability of SARS-CoV-2 under different conditions by estimating the decay rates of viable virus titers. We inferred individual titers using a Bayesian model we have previously described (Gamble et al., 2021). Briefly, the model treats titration well infection as a Poisson single-hit process. We inferred raw exponential decay rates by modifying a previously-described simple regression model (Gamble et al., 2021) to account for the evaporation phase. See the Appendix (Empirical virus decay estimation) for model description.\n\nWe estimated parameters of our mechanistic models by predicting titers based on those models and then applying the same Poisson single-hit observation process to estimate parameters from the data. See Appendix (Mechanistic model estimation) for a complete description, including model priors.\n\nWe estimated evaporation rates and corresponding drying times by modeling mass loss for each environmental condition $i$ as linear in time at a rate $\\beta_{i}$ until the final mass $m\u2062(\u221e)$ was reached. See Appendix (Modeling of medium evaporation and Evaporation model fitting) for a full description, including model priors.\n\nWe drew posterior samples using Stan (Stan Development Team, 2018), which implements a No-U-Turn Sampler (a form of Markov Chain Monte Carlo), via its R interface RStan (Stan Development Team, 2016). We inferred all parameters jointly (e.g. evaporation parameters and mechanistic model parameters were inferred in light of each other).\n\n### Meta-analysis\n\nTo test the validity of our model beyond the measured environmental conditions (i.e. beyond 10\u201327\u00b0C and 40\u201385% RH), we compiled data from 11 published studies on human coronaviruses, including SARS-CoV-2, SARS-CoV-1, MERS-CoV, HCoV-OC43, and HCoV-299E, under 17 temperature-RH conditions. We generated estimates of half-lives and uncertainties (Appendix 1\u2014table 3) and compared those estimates to the half-lives predicted by the mechanistic model parametrized from our SARS-CoV-2 data. As data on evaporation kinetics were not available, we estimated a unique half-life for each experimental condition, covering both the evaporation and quasi-equilibrium phases. As virus decay during the evaporation phase is expected to be minimal, and the evaporation phase to be short, the estimated half-life can be used as a proxy for the quasi-equilibrium half-life. The complete data selection, extraction and analysis process is detailed in the Appendix (Meta-analysis of human coronavirus half-lives).\n\nWe also included data from SARS-CoV-1 and MERS-CoV collected by our group during previous studies (van Doremalen et al., 2020). Those data were collected at 22\u00b0C and 40% RH on polypropylene using the protocol described previously (van Doremalen et al., 2020) and similar to the one used to collect the SARS-CoV-2 data. SARS-CoV-1 strain Tor2 (AY274119.3) (Marra et al., 2003) and MERS-CoV strain HCoV-EMC/2012 (Zaki et al., 2012) were used for these experiments. We calculated half-lives for evaporation and quasi-equilibrium phases using the same analysis pipeline used for SARS-CoV-2 (Appendix, Empirical virus decay estimation). These data were used only for out-of-sample prediction testing. We used the obtained evaporation phase half-lives as proxies for the half-life at 100% RH, as with SARS-CoV-2. See Appendix for a figure showing model fits (Appendix 1\u2014figure 23) and a table of estimated half-lives (Appendix 1\u2014table 4).\n\n### Visualization\n\nWe created plots in R using ggplot2 (Wickham, 2016), ggdist (Kay, 2020a), and tidybayes (Kay, 2020b), and created original schematics using BioRender.com.\n",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "3c2d6080-f3b2-4a80-8046-bbcbf45b917b",
+      "submission_id": "83881c22-fcd4-4d5c-8d73-a53011c60d95",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- C Brandon Ogbunugafor, Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65902.sa1](https://doi.org/10.7554/eLife.65902.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe study offered a provocative, highly technical, and courageously cross-disciplinary approach to understanding environmental survival in viruses, including SARS-CoV-2. We applaud the rigor and care in the work, and thank you for submitting it to eLife. There is little doubt that this will be a very worthy and meaningful contribution to the literature. Even further, this work may transcend the COVID-19 pandemic, and serve as grand example of how one can rigorously integrate fields like biophysics with epidemiology.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mechanistic theory predicts the effects of temperature and humidity on inactivation of SARS-CoV-2 and other enveloped viruses\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor.\n\nPlease address the changes as outlined by the reviewers below, as they will make for an improved manuscript. We encourage the authors to address them, and more broadly, make this article as clear as possible. Both reviewers provided some insight into this, and strongly encourage the authors to pay close attention to this.\n\nReviewer #1:\n\nIn this manuscript, Morris and colleagues offer a mechanistic model, featuring chemistry and physics details, that explain the effects of temperature and humidity.\n\nI found this manuscript to be highly relevant for any virus, but given the context-the COVID-19 pandemic-I find the results to be timely, relevant, and fantastically well conducted. The interaction between the epidemiological knowledge and biophysical precision is clear, and the implications are also very clear. The manuscript is well-written and organized.\n\nI believe that this manuscript should be published, would make a worthy contribution to great body of SARS-CoV-2 and extended COVID-19 literature.\n\nThe recommended changes have to do with subtle editorial points, and efforts to make this work as clear as possible.\n\n1. Figure 1: I believe that the authors should check the labels. I could be wrong, but I believe the labels in the captions are wrong.\n\n2. Equations:\n\nThe interaction between the text and the appendix could be improved, and I challenge the authors to better integrate this information. The authors should read the equations from the perspective of the reader: can the reader fully grasp the flow of information from the equations as provided. I am of a mixed opinion on this, but given the overall excellence of the manuscript, I encourage the authors to make this work as clear and digestible as possible, as it has the potential to be a defining piece of literature.\n\nReviewer #2:\n\nThis is a very well-done and thorough analysis of SARS-CoV-2 decay rates, with new theory and models being developed that also apply to other viruses. The methodology is solid, the analyses extensive, and the authors fully achieve their goal of further understanding the decay characteristics of SARS-CoV-2 and other viruses in the environment. The main novel contribution is the detailed mechanistic model relating decay rates to temperature and relative humidity. I believe this is a major contribution toward better understanding and predicting environmental virus decay dynamics.\n\nI consider this paper perfectly suited for eLife. Overall, I think another pass-through the main manuscript with an eye to making it as easy and stand-alone to follow as possible for the 'casual reader/browser' would be useful.\n",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2ea87f6d-91d6-42e3-953c-0fe0fcdb21aa",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C1",
+      "claim": "SARS-CoV-2 was measured for stability on polypropylene at nine temperature and humidity conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the environmental stability of SARS-CoV-2 virus particles (virions) suspended in cell culture medium and deposited onto a polypropylene plastic surface at nine environmental conditions: three relative humidities (RH; 40%, 65%, and 85%) at each of three temperatures (10\u00b0C, 22\u00b0C, and 27\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design and conditions tested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "263f440f-55b7-43a9-9042-9639f63fb36b",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C2",
+      "claim": "The median estimated virus half-life of SARS-CoV-2 is greater than 24 hours at 10\u00b0C and 40% RH.",
+      "claim_type": "EXPLICIT",
+      "source": "We find SARS-CoV-2 survives longest at low temperatures and extreme relative humidities (RH); median estimated virus half-life is >24 hr at 10\u00b0C and 40% RH, but \u223c1.5 hr at 27\u00b0C and 65% RH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports measured half-life values from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "0dd1a869-a430-44ad-a70d-fb56aad35f1d",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C3",
+      "claim": "The median estimated virus half-life of SARS-CoV-2 is approximately 1.5 hours at 27\u00b0C and 65% RH.",
+      "claim_type": "EXPLICIT",
+      "source": "We find SARS-CoV-2 survives longest at low temperatures and extreme relative humidities (RH); median estimated virus half-life is >24 hr at 10\u00b0C and 40% RH, but \u223c1.5 hr at 27\u00b0C and 65% RH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports measured half-life values from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "9c9c71aa-8a75-4dde-b269-611c42b3ac28",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C4",
+      "claim": "Virus inactivation rate increases with increased temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mechanistic model uses fundamental chemistry to explain why inactivation rate increases with increased temperature and shows a U-shaped dependence on RH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes findings from the mechanistic model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "2343ae67-71e6-4a10-a38f-200628c5df56",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C5",
+      "claim": "Virus inactivation rate shows a U-shaped dependence on relative humidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mechanistic model uses fundamental chemistry to explain why inactivation rate increases with increased temperature and shows a U-shaped dependence on RH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes findings from the mechanistic model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "8b33f066-dfe7-4d7e-82de-87fa70f6df85",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C6",
+      "claim": "The mechanistic model accurately predicts existing measurements of five different human coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The model accurately predicts existing measurements of five different human coronaviruses, suggesting that shared mechanisms may affect stability for many viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports the model's predictive performance on independent data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "8e0625d0-dda5-4181-bbcb-8dc9cfd909a2",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C7",
+      "claim": "Shared mechanisms may affect stability for many viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The model accurately predicts existing measurements of five different human coronaviruses, suggesting that shared mechanisms may affect stability for many viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the model's ability to predict multiple virus species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "96890b55-0c7e-499f-84c5-9bdb6b19d321",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C8",
+      "claim": "Ambient temperature and humidity strongly affect inactivation rates of enveloped viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Ambient temperature and humidity strongly affect inactivation rates of enveloped viruses, but a mechanistic, quantitative theory of these effects has been elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "177bfb9b-8985-4f67-a42c-706714d7ad4b",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C9",
+      "claim": "Virus environmental stability depends strongly on ambient temperature and humidity, particularly for enveloped viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirical evidence suggests that virus environmental stability depends strongly on ambient temperature and humidity, particularly for enveloped viruses; examples among enveloped viruses that infect humans include influenza viruses (Marr et al., 2019), endemic human coronaviruses (Ijaz et al., 1985), and the zoonotic coronaviruses SARS-CoV-1 (Chan et al., 2011) and MERS-CoV (van Doremalen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "ed141683-64f7-41ef-bfcd-28a2029d5160",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C10",
+      "claim": "SARS-CoV-2 emerged in late 2019 and has caused a global pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "In late 2019, a new zoonotic coronavirus now called SARS-CoV-2 emerged; it has since caused a global pandemic (COVID-19) and is poised to become an endemic human pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the COVID-19 pandemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "b3a54745-5947-4d5a-96d0-502920987a12",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C11",
+      "claim": "Many countries in the Northern Hemisphere experienced a substantial uptick in SARS-CoV-2 transmission with the arrival of late autumn and winter.",
+      "claim_type": "EXPLICIT",
+      "source": "Many countries in the Northern Hemisphere experienced a substantial uptick in transmission with the arrival of their late autumn and winter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed epidemiological pattern.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "e112c47c-bd93-4fba-852a-94279b89eea6",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C12",
+      "claim": "Epidemiologists had anticipated a seasonal increase in SARS-CoV-2 transmission based on observations from other enveloped respiratory viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiologists had anticipated such a seasonal increase (Neher et al., 2020; Kissler et al., 2020) based on observations from other enveloped respiratory viruses, such as endemic human coronaviruses (Monto et al., 2020) and influenza viruses (Lofgren et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "783ecb9f-4897-4936-851b-dae65bd5652b",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C13",
+      "claim": "Endemic human coronaviruses and influenza viruses spread more readily in temperate zone winters than in temperate zone summers.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiologists had anticipated such a seasonal increase (Neher et al., 2020; Kissler et al., 2020) based on observations from other enveloped respiratory viruses, such as endemic human coronaviruses (Monto et al., 2020) and influenza viruses (Lofgren et al., 2007). These viruses spread more readily in temperate zone winters than in temperate zone summers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "9218e3a4-8034-422a-88f8-7d063ca1e5a6",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C14",
+      "claim": "SARS-CoV-2 has displayed epidemic dynamics shaped by superspreading events.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 has also displayed epidemic dynamics shaped by superspreading events, in which one person transmits to many others (Furuse et al., 2020; Kain et al., 2021); the related SARS-CoV-1 virus was likewise characterized by superspreading (Lloyd-Smith et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "f6069746-9363-4f79-aeda-350d1494e584",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C15",
+      "claim": "SARS-CoV-1 was characterized by superspreading.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 has also displayed epidemic dynamics shaped by superspreading events, in which one person transmits to many others (Furuse et al., 2020; Kain et al., 2021); the related SARS-CoV-1 virus was likewise characterized by superspreading (Lloyd-Smith et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "a57cd519-f0f6-4851-8a97-99a3ca26c6cb",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C16",
+      "claim": "SARS-CoV-2 varies in its environmental stability as a function of temperature and humidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirical evidence suggests that SARS-CoV-2, like other enveloped viruses, varies in its environmental stability as a function of temperature and humidity (Biryukov et al., 2020; Matson et al., 2020), but the joint effect of these two factors remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "05b9d29b-947f-4994-b4d6-91cdbaaa5f21",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C17",
+      "claim": "There do not exist mechanistically motivated quantitative models for virus inactivation as a function of both temperature and humidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, despite years of research on virus environmental stability, there do not exist mechanistically motivated quantitative models for virus inactivation as a function of both temperature and humidity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "27204b0b-32aa-4e58-8c57-eda8258cb3a7",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C18",
+      "claim": "Existing predictive models for the environmental stability of SARS-CoV-2 and other viruses are phenomenological regression models that do not model the underlying biochemical mechanisms of inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing predictive models for the environmental stability of SARS-CoV-2 (Biryukov et al., 2020; Guillier et al., 2020) and other viruses (Posada et al., 2010) are phenomenological regression models that do not model the underlying biochemical mechanisms of inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "43e58b1e-fe7d-403e-b648-053ba0f5f01d",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C19",
+      "claim": "Posterior median estimated virus half-life is 27 hours [20, 39] at 10\u00b0C and 40% RH once droplets reach quasi-equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that SARS-CoV-2 environmental persistence could vary meaningfully across the range of temperatures and humidities encountered in daily life, with posterior median [95% credible interval] half-lives as long as 27 hr [20, 39] (10\u00b0C, 40% RH) and as short as 1.5 hr [1.1, 2.1] (27\u00b0C, 65% RH), once droplets reach quasi-equilibrium with the ambient air conditions (Figure 1b, Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "d880168f-a705-468c-8a58-41cbf740b3b9",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C20",
+      "claim": "Posterior median estimated virus half-life is 1.5 hours [1.1, 2.1] at 27\u00b0C and 65% RH once droplets reach quasi-equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that SARS-CoV-2 environmental persistence could vary meaningfully across the range of temperatures and humidities encountered in daily life, with posterior median [95% credible interval] half-lives as long as 27 hr [20, 39] (10\u00b0C, 40% RH) and as short as 1.5 hr [1.1, 2.1] (27\u00b0C, 65% RH), once droplets reach quasi-equilibrium with the ambient air conditions (Figure 1b, Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "368efcee-f536-4fb3-9c35-e017db8658a5",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C21",
+      "claim": "Minimal virus decay occurred during the evaporation phase when excess water was present.",
+      "claim_type": "EXPLICIT",
+      "source": "Minimal virus decay occurred during the evaporation phase (Figure 1a, Figure 1\u2014figure supplement 1), when excess water was present.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "0b24a801-24fe-49b2-9c9f-4319358b7e0d",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C22",
+      "claim": "Posterior median half-lives during the evaporation phase were 42 hr [11, 330] at 10\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Posterior median half-lives during the evaporation phase were 42 hr [11, 330] at 10\u00b0C, 12 hr [4.5, 160] at 22\u00b0C, and 5.8 hr [2.1, 130] at 27\u00b0C (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "21308963-45be-4d24-bbb9-2b335c6f372f",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C23",
+      "claim": "Posterior median half-lives during the evaporation phase were 12 hr [4.5, 160] at 22\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Posterior median half-lives during the evaporation phase were 42 hr [11, 330] at 10\u00b0C, 12 hr [4.5, 160] at 22\u00b0C, and 5.8 hr [2.1, 130] at 27\u00b0C (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "4b8859ed-2b11-47ae-b1db-f72ca140c008",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C24",
+      "claim": "Posterior median half-lives during the evaporation phase were 5.8 hr [2.1, 130] at 27\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Posterior median half-lives during the evaporation phase were 42 hr [11, 330] at 10\u00b0C, 12 hr [4.5, 160] at 22\u00b0C, and 5.8 hr [2.1, 130] at 27\u00b0C (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "1a03979f-7f43-4f3a-85e8-841341d82b88",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C25",
+      "claim": "Virus decay became markedly faster as temperature increased for all humidities, with decay at 27\u00b0C roughly five to ten times faster than decay at 10\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, virus decay became markedly faster as temperature increased for all humidities, with decay at 27\u00b0C roughly five to ten times faster than decay at 10\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "5efaaa49-fb0b-49aa-8b3f-eb048eeb3469",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C26",
+      "claim": "Virus decay was relatively rapid at 65% RH and tended to be slower either at lower (40%) or higher (85%) humidities.",
+      "claim_type": "EXPLICIT",
+      "source": "Across temperatures, virus decay was relatively rapid at 65% RH and tended to be slower either at lower (40%) or higher (85%) humidities, or when excess water was present during the evaporation phase (Figure 1b, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data shown in figures and tables.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "4606f8b0-1fd3-4848-80f9-c624cb11546d",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C27",
+      "claim": "Many viruses, including SARS-CoV-2, exhibit exponential decay on surfaces and in aerosols.",
+      "claim_type": "EXPLICIT",
+      "source": "Many viruses, including SARS-CoV-2, exhibit exponential decay on surfaces and in aerosols (Marr et al., 2019; van Doremalen et al., 2020; Biryukov et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "cfaf1901-8ad6-444c-b445-20235828fdd0",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C28",
+      "claim": "Virus inactivation at quasi-equilibrium on inert surfaces is modeled as a chemical reaction with first-order reaction kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "We model virus inactivation at quasi-equilibrium on inert surfaces as a chemical reaction with first-order reaction kinetics; that is, the quantity of virus is the limiting reactant of the rate-determining step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption based on empirical patterns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "433a7de7-523b-4ade-b208-30318a62c418",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C29",
+      "claim": "Prior work has found Arrhenius-like temperature dependence for virus inactivation on surfaces and in aerosols for many viruses, including human coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has found Arrhenius-like temperature dependence for virus inactivation on surfaces and in aerosols for many viruses (Adams, 1949), including human coronaviruses (Yap et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "cdd79eca-e2c6-4228-b424-e2f7f62ebbd7",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C30",
+      "claim": "Relative humidity affects virus inactivation by controlling evaporation and thus governing the solute concentrations in a droplet containing virions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has suggested that relative humidity affects virus inactivation by controlling evaporation and thus governing the solute concentrations in a droplet containing virions (Marr et al., 2019; Lin and Marr, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "c1a4c896-b627-4759-8385-17dc8007f1ab",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C31",
+      "claim": "Higher quasi-equilibrium solute concentrations are associated with faster virus inactivation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has found that higher quasi-equilibrium solute concentrations are associated with faster virus inactivation rates (Yang and Marr, 2012; Yang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "c033e76d-c0b4-4221-a074-3b1625aa1147",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C32",
+      "claim": "Below a threshold ambient humidity\u2014the efflorescence relative humidity (ERH)\u2014electrolytes effloresce out of solution, forming a crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "Below a threshold ambient humidity\u2014the efflorescence relative humidity (ERH)\u2014electrolytes effloresce out of solution, forming a crystal (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a known chemical principle and illustrated in a figure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "f54a7fd3-e4c5-42a7-92cb-66c574e5d151",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C33",
+      "claim": "The non-monotonic ('U-shaped') dependence of virus inactivation on relative humidity has been observed for coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-monotonic ('U-shaped') dependence of virus inactivation on relative humidity, observed in our data (Figure 1a) and elsewhere in the literature (Yang et al., 2012; Benbough, 1971; Prussin et al., 2018; Webb et al., 1963), including for coronaviruses (Casanova et al., 2010; Songer, 1967), could be explained by this regime shift around the ERH (Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and the current study's data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "a622971e-f1cc-4e98-99a8-ad42b655d0c2",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C34",
+      "claim": "An efflorescence relative humidity (ERH) of 45% is used in the model based on observations of NaCl solutions at room temperature and atmospheric pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on observations of NaCl solutions at room temperature and atmospheric pressure (Mikhailov et al., 2004), we use an ERH of 45%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling parameter choice based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "2b4bc88c-bd9e-40cf-8ac7-00b82d37d958",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C35",
+      "claim": "The fit of the mechanistic model is nearly as good as that of the simple regression, in which independent exponential decay rates are estimated for each condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the fit of the mechanistic model (Figure 2) is nearly as good as that of the simple regression, in which we estimate independent exponential decay rates for each condition to measure virus half-life (Figure 1\u2014figure supplement 2, see Appendix, Simple regression model).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of model performance based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "3b77b124-a867-4ecc-af5e-d1defc249ac6",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C36",
+      "claim": "Median predicted SARS-CoV-2 half-life varies by more than three orders of magnitude, from less than half an hour at 40\u00b0C just above the modeled approximate ERH, to more than a month at 0\u00b0C and 100% RH.",
+      "claim_type": "EXPLICIT",
+      "source": "Median predicted SARS-CoV-2 half-life varies by more than three orders of magnitude, from less than half an hour at 40\u00b0C just above the modeled approximate ERH, to more than a month at 0\u00b0C and 100% RH (Figure 3a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the mechanistic model shown in figures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "c62c8be4-ac92-4e46-8020-385c12241ab0",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C38",
+      "claim": "Striking agreement was found between model predictions and model-free estimates for half-life estimates both above and below the ERH, and for temperatures ranging from 4\u00b0C to 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "We found striking agreement for half-life estimates both above and below the ERH, and for temperatures ranging from 4\u00b0C to 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the out-of-sample validation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "a48a648b-27c4-4cee-a76c-f39f6c1c3979",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C39",
+      "claim": "Predicted half-lives matched observations well across five orders of magnitude, spanning five virus species.",
+      "claim_type": "EXPLICIT",
+      "source": "Predicted half-lives matched observations well across five orders of magnitude (Figure 3d), despite spanning five virus species and despite important heterogeneities in the data collection process (see Appendix, Meta-analysis of human coronavirus half-lives).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the meta-analysis validation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "5b334dd5-ab7d-49bb-b590-0831fe1240e9",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C40",
+      "claim": "The mechanistic model provides a mechanism for the non-linear and non-monotonic relationship between relative humidity and virus stability previously observed for numerous enveloped viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining novel data, mathematical modeling, and a meta-analysis of existing literature, we have developed a unified, mechanistic framework to quantify the joint effects of temperature and humidity on virus stability. In particular, our model provides a mechanism for the non-linear and non-monotonic relationship between relative humidity and virus stability previously observed for numerous enveloped viruses (Yang and Marr, 2012; Casanova et al., 2010; Songer, 1967), but not previously reported for SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's contribution, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "b09cafcb-7682-400b-a0ae-af272d664bae",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C41",
+      "claim": "The work documents and explains the strong dependence of SARS-CoV-2 stability on environmental temperature and relative humidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work documents and explains the strong dependence of SARS-CoV-2 stability on environmental temperature and relative humidity, and accurately predicts half-lives for five coronavirus species in conditions from 4\u00b0C to 95\u00b0C, and from 30% to 80% RH and in bulk solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "72f92701-3913-4d2a-b96e-07e8cc30b7a6",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C42",
+      "claim": "The model accurately predicts half-lives for five coronavirus species in conditions from 4\u00b0C to 95\u00b0C, and from 30% to 80% RH and in bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work documents and explains the strong dependence of SARS-CoV-2 stability on environmental temperature and relative humidity, and accurately predicts half-lives for five coronavirus species in conditions from 4\u00b0C to 95\u00b0C, and from 30% to 80% RH and in bulk solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model's predictive performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "94054fb1-c973-4cd9-95a7-26cdaa2bcf14",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C43",
+      "claim": "The majority of SARS-CoV-2 clusters have been linked to indoor settings.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of SARS-CoV-2 clusters have been linked to indoor settings (Leclerc et al., 2020), suggesting that virus stability in indoor environmental conditions may be an important determinant of superspreading risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "ed415600-256a-4517-a015-d9113a570ba2",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C44",
+      "claim": "Virus stability in indoor environmental conditions may be an important determinant of superspreading risk.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of SARS-CoV-2 clusters have been linked to indoor settings (Leclerc et al., 2020), suggesting that virus stability in indoor environmental conditions may be an important determinant of superspreading risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cited observation about indoor clusters.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "26052cde-5aeb-4400-a642-147224f5e6b0",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C45",
+      "claim": "The results provide a mechanistic explanation for the many observed SARS-CoV-2 superspreading events in cool indoor environments such as food processing plants and hockey rinks.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide a mechanistic explanation for the many observed SARS-CoV-2 superspreading events in cool indoor environments such as food processing plants (Dyal, 2020; G\u00fcnther et al., 2020; Pokora et al., 2020) and hockey rinks (Atrubin et al., 2020; McNabb and Ries, 2020), where the typical air temperature is around 10\u00b0C, or in dry indoor environments such as long-distance flights (Khanh et al., 2020; Jayaweera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings applied to cited observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "69606196-a7b3-4179-926e-d82cc8ec1190",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C46",
+      "claim": "The relative rarity of outdoor SARS-CoV-2 transmission clusters is not readily explained by temperature and humidity effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, our results imply that the relative rarity of outdoor SARS-CoV-2 transmission clusters is not readily explained by temperature and humidity effects, since these conditions outdoors during temperate zone winters should be favorable for the virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "e1b0a4e6-1670-4d5d-bb81-a4ee93810f75",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C47",
+      "claim": "Increased ventilation and UV light inactivation may be more important than the effects of temperature and humidity outdoors.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, increased ventilation (Prather et al., 2020) and UV light inactivation (Ratnesar-Shumate et al., 2020) may be more important than the effects of temperature and humidity outdoors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "36987328-93ab-438d-885b-74ee5db5ee89",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C48",
+      "claim": "Typical climate-controlled conditions indoors (moderate temperature and low humidity) are favorable for virus stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, typical climate-controlled conditions indoors (moderate temperature and low humidity) are favorable for virus stability, and specialized conditions such as those found in food processing plants even more so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "f83e8203-18f9-446f-b7fc-2f8cb0f36875",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C49",
+      "claim": "The effects of temperature and humidity observed in the data and model are relevant both to fomite and to airborne transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of temperature and humidity we observe in our data and model are relevant both to fomite and to airborne transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the applicability of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "146f92df-05c6-47ff-979e-9787496666e0",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C50",
+      "claim": "Virus decay as a function of RH is similar in droplets on surfaces and suspended aerosols.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has shown that virus decay as a function of RH is similar in droplets on surfaces and suspended aerosols (Lin and Marr, 2020; Kormuth et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "7b7aa80f-0274-4f3a-91bd-62368588fa68",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C51",
+      "claim": "Numerous studies of smaller deposited droplets or aerosols have reported similar qualitative patterns with increased decay rates at high temperatures and a U-shaped effect of RH.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies of smaller deposited droplets (Prussin et al., 2018) or aerosols (Benbough, 1971; Yang et al., 2012; Ijaz et al., 1985) have reported similar qualitative patterns to those we report, with increased decay rates at high temperatures and a U-shaped effect of RH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "59494a54-6365-4e48-83ea-a5d410f1108a",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C52",
+      "claim": "Small particles containing infectious virions can be re-suspended from surfaces and inhaled.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, surface stability can matter for aerosol transmission risk, since small particles containing infectious virions can be re-suspended from surfaces and inhaled (Asadi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "01a572d6-8060-4d06-a078-4c344f6c57db",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C53",
+      "claim": "Re-suspension is enhanced by procedures such as high-pressure washing, which is common in food processing plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-suspension is further enhanced by procedures such as high-pressure washing, which is common in food processing plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about food processing practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "6d2a7378-842c-45a8-900d-e2c24bc1637d",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C54",
+      "claim": "Cold situations present elevated transmission risks for either aerosol or fomite transmission modes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the relative contributions of aerosol and fomite transmission to the epidemiology of SARS-CoV-2 continue to be investigated (Ong et al., 2020; Cai et al., 2020), our results indicate that cold situations present elevated transmission risks for either mode, especially if air is either dry or very humid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "e779715b-ea99-432b-be13-68a1860fd889",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C55",
+      "claim": "It has been speculated that chilled or frozen foods might allow for rare but impactful long-range fomite transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been speculated, for instance, that chilled or frozen foods might allow for rare but impactful long-range fomite transmission (Han et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "2bbd6084-9795-4cd0-bbdd-7c43b4d2f943",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C56",
+      "claim": "The results show that long-range fomite transmission via chilled or frozen foods is conceivable, as there is good empirical and mechanistic support for prolonged virus viability at very low temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that this is conceivable, as there is good empirical and mechanistic support for prolonged virus viability at very low temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings applied to a speculative scenario.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "d13257a6-d91b-4aa5-8fba-5e87d60688f5",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C57",
+      "claim": "Environmental stability is not the only mechanism by which temperature and humidity affect respiratory virus transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Environmental stability is not the only mechanism by which temperature and humidity affect respiratory virus transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a caveat about the scope of the findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "3a923e00-cebb-4090-8a15-5dac3ab99f2a",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C58",
+      "claim": "Very hot or cold conditions outdoors can lead people to spend more time indoors, where transmission risks are heightened due to poor ventilation.",
+      "claim_type": "EXPLICIT",
+      "source": "Very hot or cold conditions outdoors can lead people to spend more time indoors, where transmission risks are heightened due to poor ventilation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known behavioral and environmental factor.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "fd41efa2-1b04-4804-be59-ae16b6396337",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C59",
+      "claim": "Low-humidity environments can dry out human airways and thus impair defenses against respiratory viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-humidity environments can dry out human airways and thus impair defenses against respiratory viruses (Kudo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "96efe05e-a244-4ea3-a1a8-fb726aae263b",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C60",
+      "claim": "Ambient humidity determines the size distribution of aerosols in the environment by affecting evaporation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Ambient humidity also determines the size distribution of aerosols in the environment, again by affecting evaporation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known physical principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "49aa4553-8d49-43e8-8910-125dc563eced",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C61",
+      "claim": "Smaller aerosols settle to the ground more slowly, which could facilitate transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Smaller aerosols settle to the ground more slowly (Marr et al., 2019), which could facilitate transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited physical principles.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "4a51af1b-9719-4230-8bf9-3ba187c894d4",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C62",
+      "claim": "At low RH, humidity effects on inactivation, immunity, and settling may compound each other to increase transmission risk.",
+      "claim_type": "EXPLICIT",
+      "source": "At low RH, humidity effects on inactivation, immunity, and settling may compound each other: all increase transmission risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the combined effects of multiple mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "80215c81-0059-4b92-9c7b-0d196183aa33",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C63",
+      "claim": "At high RH, reduced inactivation could promote transmission, but improved immune defenses and faster settling could hinder it, so the net effect on transmission is less clear.",
+      "claim_type": "EXPLICIT",
+      "source": "At high RH, reduced inactivation could promote transmission, but improved immune defenses and faster settling could hinder it, so the net effect on transmission is less clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the combined effects of multiple mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "4bec9de3-6547-40f7-8bde-3d9b05d203ed",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C64",
+      "claim": "Temperate zone winters increase transmission of many respiratory viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, temperate zone winters increase transmission of many respiratory viruses (Lofgren et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "5255c2b8-ed90-4641-989a-b4ff2a577c2b",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C65",
+      "claim": "Individuals spend increased time indoors in heated buildings during temperate zone winters.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals spend increased time indoors in heated buildings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known behavioral pattern.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "0221d276-32cf-4a06-b91a-0f625f1e760c",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C66",
+      "claim": "Ventilation is often poor in heated buildings during winter, as windows are kept closed to make heating efficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventilation is often poor, as windows are kept closed to make heating efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known environmental condition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "ea46dd33-62dc-4380-b940-87d4d1b0dba3",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C67",
+      "claim": "Air in heated buildings is typically very dry, which improves virus stability and weakens immune defenses.",
+      "claim_type": "EXPLICIT",
+      "source": "Air in heated buildings is typically very dry; this improves virus stability and weakens immune defenses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings combined with known environmental conditions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "357d0e48-01d2-4c94-ae05-ce23f1448eed",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C68",
+      "claim": "Several analyses have projected that SARS-CoV-2 transmission will be faster in temperate zone winters.",
+      "claim_type": "EXPLICIT",
+      "source": "Several analyses have projected that SARS-CoV-2 transmission will likewise be faster in temperate zone winters (Neher et al., 2020; Kissler et al., 2020; Baker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "1e441ce7-8fde-4c76-80d0-d4281286f95b",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C69",
+      "claim": "Major seasonal or climate-mediated mitigation of SARS-CoV-2 spread was not evident during the northern hemisphere's spring and summer.",
+      "claim_type": "EXPLICIT",
+      "source": "Major seasonal or climate-mediated mitigation of SARS-CoV-2 spread was not evident during the northern hemisphere's spring and summer (Carlson et al., 2020; Poirier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "fc30c7c5-209a-4b56-9c0e-948fbb614cb0",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C70",
+      "claim": "Population susceptibility and epidemic control measures can be more important than seasonality in an early pandemic context.",
+      "claim_type": "EXPLICIT",
+      "source": "This was expected, since population susceptibility and epidemic control measures can be more important than seasonality in an early pandemic context (Baker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "cf88d70d-832a-48ad-8a34-fbace0290533",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C71",
+      "claim": "Winter surges in cases, hospitalizations, and deaths across the northern hemisphere may have been driven in part by behavioral, immunological, or virological seasonality.",
+      "claim_type": "EXPLICIT",
+      "source": "Winter surges in cases, hospitalizations, and deaths across the northern hemisphere may have been driven in part by behavioral, immunological, or virological seasonality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the causes of observed patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "a590eb5d-ca07-4468-aa1f-d5a584d6dd97",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C72",
+      "claim": "Whether absolute or relative humidity is more important for influenza stability has been a matter of debate.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether absolute or relative humidity is more important for influenza stability has been a matter of debate (Shaman et al., 2010; Marr et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "d93990eb-fd87-439c-9131-27eccd347503",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C73",
+      "claim": "The mechanistic model permits principled dis-aggregation of the effects of humidity from those of temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "The answer has proved elusive because it is difficult to disentangle the effects of humidity from those of temperature. Our mechanistic model permits principled dis-aggregation of those effects, and reveals a strong effect of relative humidity even after accounting for the effects of temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the methodological contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "2229156f-52f8-41bb-99bb-e73e8e1ffecc",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C74",
+      "claim": "The model reveals a strong effect of relative humidity even after accounting for the effects of temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mechanistic model permits principled dis-aggregation of those effects, and reveals a strong effect of relative humidity even after accounting for the effects of temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "d4fbe17d-ebff-4f63-88c5-e9cb51760bed",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C75",
+      "claim": "General principles may govern virus inactivation across enveloped viruses, and perhaps even more broadly.",
+      "claim_type": "EXPLICIT",
+      "source": "There may thus exist general principles that govern virus inactivation across enveloped viruses, and perhaps even more broadly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference from the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "65a4fb42-8cf8-4cd3-b316-e7de800e122e",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C76",
+      "claim": "The U-shaped dependence of inactivation on RH has been reported for animal coronaviruses, influenza viruses, paramyxoviruses, rhabdoviruses, and retroviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the U-shaped dependence of inactivation on RH has been reported for animal coronaviruses (Songer, 1967; Casanova et al., 2010), as well as for influenza viruses, paramyxoviruses, rhabdoviruses, and retroviruses (Yang et al., 2012; Benbough, 1971; Prussin et al., 2018; Webb et al., 1963), suggesting the existence of a shared mechanism for the effect of humidity across enveloped RNA viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "b54ebdc0-9f2d-4ad0-8dbb-fd1ce30bcd81",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C77",
+      "claim": "Some enveloped DNA viruses such as herpesviruses and poxviruses show similar empirical behavior to the U-shaped humidity dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Some enveloped DNA viruses such as herpesviruses and poxviruses (Songer, 1967; Webb et al., 1963) and some encapsulated viruses such as polioviruses (de Jong and Winkler, 1968; Songer, 1967) also show similar empirical behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "594ed43c-eca8-4051-b27d-e98f96171b77",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C78",
+      "claim": "Experiments have found that heat treatment of viruses reduces infectivity principally by degrading surface proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments have found that heat treatment of viruses reduces infectivity principally by degrading surface proteins (Wigginton et al., 2012), lending further support to a chemical model of environmental virus inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "813bf7ba-6cf6-4e76-bd07-1b8b3e0c0151",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C79",
+      "claim": "Individual enveloped viruses may be more or less stable than SARS-CoV-2 while still obeying the model's basic principle that increased heat and concentration lead to faster inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual enveloped viruses may be more or less stable than SARS-CoV-2 while still obeying our model's basic principle: increased heat and concentration lead to faster inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the generalizability of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "00738f7a-b29e-468b-8f74-2cd4be974927",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C80",
+      "claim": "The model predictions using SARS-CoV-2 parameters slightly overestimate the stability of MERS-CoV, but correctly predict the pattern of temperature and humidity effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The data from our own group and from the literature on MERS-CoV is suggestive in this regard: our model predictions using SARS-CoV-2 parameters slightly overestimate the stability of MERS-CoV, but correctly predict the pattern of temperature and humidity effects (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of model predictions to data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "d43db5bc-5ce9-407d-aa8e-3993f71348f6",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C81",
+      "claim": "The model for Arrhenius-like temperature dependence works well with a single estimated activation energy across the effloresced and solution regimes for SARS-CoV-2 experiments and for experiments on a range of coronaviruses conducted by other investigators.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, it is striking that our model for Arrhenius-like temperature dependence works well with a single estimated activation energy across the effloresced and solution regimes for our SARS-CoV-2 experiments and for experiments on a range of coronaviruses conducted in different conditions by other investigators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the model's performance across different datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "edbc0c8b-19f9-4cc4-b94a-c22ae38f8895",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C82",
+      "claim": "The rate-limiting step in coronavirus inactivation may not necessarily depend on the exact inactivating reactant.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the rate-limiting step in coronavirus inactivation may not necessarily depend on the exact inactivating reactant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation about the single activation energy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "6fe2c887-8b0b-405e-9a5c-03ad1ce00898",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C83",
+      "claim": "If inactivation depends on disruption of the virion once it has formed a complex with some inactivating reactant, the activation energy for that disruption event could depend mainly on the chemical properties of the virion itself.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose one simple potential mechanism for how this could be so: if inactivation depends on disruption of the virion once it has formed a complex with some inactivating reactant, the activation energy for that disruption event could depend mainly on the chemical properties of the virion itself (see Appendix, Interpretation of the single activation energy).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanistic explanation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "0b253ab3-a5d7-4afb-b046-96b12a5c79ce",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C84",
+      "claim": "SARS-CoV-2 strain HCoV-19 nCoV-WA1-2020 (MN985325.1) was used for this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We used SARS-CoV-2 strain HCoV-19 nCoV-WA1-2020 (MN985325.1; Holshue et al., 2020) for this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the virus strain used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "8a9006bb-aac7-41de-bfe3-b92f2e8df447",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C85",
+      "claim": "Viable virus was quantified by end-point titration on Vero E6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified viable virus by end-point titration on Vero E6 cells as described previously (Fischer et al., 2020; van Doremalen et al., 2020), and inferred posterior distributions for titers and exponential decay rates directly from raw titration data using Bayesian statistical models (see Statistical analyses and mathematical modeling, below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "05ec0227-80cd-48eb-ac4e-ecae6173c741",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C86",
+      "claim": "Virus stability was measured on polypropylene.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured virus stability on polypropylene (ePlastics, reference PRONAT.030X24X47S/M) as previously described (van Doremalen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental surface used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "ea5c112d-44ea-4865-bdc7-7a7f7a2779a9",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C87",
+      "claim": "A solution of DMEM supplemented with 2 mM L-glutamine, 2% fetal bovine serum, and 100 units/mL penicillin/streptomycin, containing 105 TCID50/mL SARS-CoV-2 was prepared.",
+      "claim_type": "EXPLICIT",
+      "source": "We prepared a solution of Dulbecco's Modified Eagle Medium (DMEM, a common cell culture medium) supplemented with 2 mM L-glutamine, 2% fetal bovine serum, and 100 units/mL penicillin/streptomycin, and containing 105 TCID50/mL SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "894eaf07-6a83-43c0-825f-c88022fc755c",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C88",
+      "claim": "50 \u03bcL aliquots of SARS-CoV-2 suspension were placed onto polypropylene disks.",
+      "claim_type": "EXPLICIT",
+      "source": "We then placed 50 \u03bcL aliquots of this SARS-CoV-2 suspension onto the polypropylene disks under nine environmental conditions: three RH (40%, 65%, and 85%) at each of three temperatures (10\u00b0C, 22\u00b0C, and 27\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "70373087-6381-4be9-91de-aef4c57efaea",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C89",
+      "claim": "Controlled environmental conditions were produced in incubators with protection from UV-B or UV-C exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "These controlled environmental conditions were produced in incubators (MMM Group CLIMACELL and Caron model 6040) with protection from UV-B or UV-C exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "fdb2fe49-3110-412f-b63c-4f9ba9a1aa4a",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C90",
+      "claim": "216 disks were prepared corresponding to three replicates per eight post-deposition time-points for the nine conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We prepared 216 disks corresponding to three replicates per eight post-deposition time-points (0, 1, 4, 8, and 24 hr, then daily for 4 days) for the nine conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "699835f1-73ba-4a69-80c7-e8496fc4cdf6",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C91",
+      "claim": "At each time-point, samples were collected by rinsing the disks with 1 mL of DMEM and stored at \u221280\u00b0C until titration.",
+      "claim_type": "EXPLICIT",
+      "source": "At each time-point, samples were collected by rinsing the disks with 1 mL of DMEM and stored at \u221280\u00b0C until titration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "64962881-13bc-4b79-b30c-0ac3e71ffc45",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C92",
+      "claim": "The evaporation kinetics of suspension medium were measured under the same temperature and humidity conditions as the virus stability experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the evaporation kinetics of suspension medium under the same temperature and humidity conditions as the virus stability experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the evaporation experiment design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "67dbae3f-bbfa-482c-b197-17dec9dbb088",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C94",
+      "claim": "Posterior samples were drawn using Stan, which implements a No-U-Turn Sampler, via its R interface RStan.",
+      "claim_type": "EXPLICIT",
+      "source": "We drew posterior samples using Stan (Stan Development Team, 2018), which implements a No-U-Turn Sampler (a form of Markov Chain Monte Carlo), via its R interface RStan (Stan Development Team, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "7acce275-db67-46ce-a091-bf6e6325d1b5",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C95",
+      "claim": "All parameters were inferred jointly (e.g. evaporation parameters and mechanistic model parameters were inferred in light of each other).",
+      "claim_type": "EXPLICIT",
+      "source": "We inferred all parameters jointly (e.g. evaporation parameters and mechanistic model parameters were inferred in light of each other).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "c49d3b8a-239f-451e-9312-a78e7bff1843",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C96",
+      "claim": "Data from 11 published studies on human coronaviruses were compiled, including SARS-CoV-2, SARS-CoV-1, MERS-CoV, HCoV-OC43, and HCoV-299E, under 17 temperature-RH conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the validity of our model beyond the measured environmental conditions (i.e. beyond 10\u201327\u00b0C and 40\u201385% RH), we compiled data from 11 published studies on human coronaviruses, including SARS-CoV-2, SARS-CoV-1, MERS-CoV, HCoV-OC43, and HCoV-299E, under 17 temperature-RH conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the meta-analysis data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "c09d8276-e573-4877-890e-2e53024e3f3c",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C97",
+      "claim": "Data from SARS-CoV-1 and MERS-CoV collected by the authors' group during previous studies were included.",
+      "claim_type": "EXPLICIT",
+      "source": "We also included data from SARS-CoV-1 and MERS-CoV collected by our group during previous studies (van Doremalen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes additional data sources for validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "57314ec8-c98d-4c34-bbd4-c8e94ead4d65",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C98",
+      "claim": "SARS-CoV-1 strain Tor2 (AY274119.3) was used for experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-1 strain Tor2 (AY274119.3) (Marra et al., 2003) and MERS-CoV strain HCoV-EMC/2012 (Zaki et al., 2012) were used for these experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the virus strains used in additional experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "394b78ea-5f86-489b-a586-eba5ce700fad",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "claim_id": "C99",
+      "claim": "MERS-CoV strain HCoV-EMC/2012 was used for experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-1 strain Tor2 (AY274119.3) (Marra et al., 2003) and MERS-CoV strain HCoV-EMC/2012 (Zaki et al., 2012) were used for these experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the virus strains used in additional experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5af62466-a27a-4b81-9957-c7e58749f285",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 stability was experimentally measured on polypropylene surfaces at nine temperature-humidity conditions (10\u00b0C, 22\u00b0C, 27\u00b0C \u00d7 40%, 65%, 85% RH) using 50 \u03bcL droplets of virus suspended in supplemented DMEM, with viable virus quantified by end-point titration on Vero E6 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C84-C91 collectively describe a well-documented experimental protocol with appropriate controls (UV protection, temperature/humidity control, replicate sampling). The methods are standard for virology stability studies and are described with sufficient detail for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "d06ecc3d-a705-4977-8a25-cc847a437c5a",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 half-life at quasi-equilibrium varies dramatically with temperature and humidity: from >24 hours (median 27 hr [20, 39]) at 10\u00b0C/40% RH to ~1.5 hours (median 1.5 hr [1.1, 2.1]) at 27\u00b0C/65% RH. Minimal decay occurred during the evaporation phase, with longer but highly uncertain half-lives (42 hr [11, 330] at 10\u00b0C to 5.8 hr [2.1, 130] at 27\u00b0C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C19-C24 report direct experimental measurements with credible intervals from Bayesian analysis. The wide credible intervals for evaporation phase estimates (C21-C24) appropriately reflect the limited decay observed during this brief phase. The data are visualized in Figure 1 and Table 1, showing consistency between claims and evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "d7ecaa78-c7fc-4f4d-97de-a185f2889551",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Virus decay rate increases 5-10 fold from 10\u00b0C to 27\u00b0C across all humidities, and shows a U-shaped dependence on relative humidity with fastest decay at 65% RH and slower decay at 40% and 85% RH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are inferences directly supported by the experimental data shown in Figure 1b and Table 1. The temperature effect is consistent across all humidity conditions, and the U-shaped humidity dependence is evident in the data, though the mechanistic explanation requires the model (addressed separately).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "e1c992e2-c442-46ba-869a-fd2311e7186e",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Evaporation kinetics of the suspension medium were measured under the same nine temperature-humidity conditions as the virus stability experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 describes a parallel evaporation experiment that is essential for distinguishing evaporation phase from quasi-equilibrium phase decay. The methods are described and data shown in Figure 1\u2014figure supplement 3, providing necessary context for interpreting virus decay kinetics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "7be21307-2692-4c98-9973-9c59f5de40e1",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The mechanistic model is based on established principles: viruses exhibit exponential (first-order) decay, temperature dependence follows Arrhenius kinetics, relative humidity controls solute concentration via evaporation, and efflorescence at ~45% RH causes a regime shift explaining the U-shaped humidity dependence observed for coronaviruses and other enveloped viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 establish the theoretical foundation of the mechanistic model, each supported by appropriate citations to prior literature (C27, C29-C31, C33) or established physical chemistry principles (C32, C34). The ERH value of 45% (C34) is justified by citation to NaCl solution behavior. The U-shaped pattern (C33) is documented both in the current data and prior coronavirus studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "3893230e-5fce-439b-a8af-847b1b551083",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A three-parameter mechanistic model (activation energy Ea, and asymptotic rates Aeff and Asol) explains virus inactivation across all nine experimental conditions nearly as well as independent regression for each condition, and predicts half-lives varying over three orders of magnitude (from <0.5 hr at 40\u00b0C/~45% RH to >1 month at 0\u00b0C/100% RH).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C35-C36 describe the mechanistic model's performance. The model fit is shown in Figure 2 and is visually comparable to the simple regression (Figure 1\u2014figure supplement 2). The three-order-of-magnitude prediction range (C36) is shown in Figure 3a,c. The model successfully captures both temperature and humidity effects with only three parameters, which is a strong result given the complexity of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "f4d87851-fa7b-4a05-9da2-6ae23bcd1882",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The mechanistic model accurately predicts half-lives for five human coronavirus species (SARS-CoV-2, SARS-CoV-1, MERS-CoV, HCoV-OC43, HCoV-229E) across conditions from 4\u00b0C to 95\u00b0C and 30% to 80% RH, with predictions matching observations across five orders of magnitude despite heterogeneities in experimental protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C38-C39, C42, C96-C99 describe out-of-sample validation using meta-analysis of 11 published studies. Figure 3c-d and Figure 3\u2014figure supplement 1 show strong agreement between predictions and observations. The model's ability to predict across such a wide range of conditions and virus species, using parameters estimated only from SARS-CoV-2 data at 10-27\u00b0C, is impressive. Two outliers (high-heat closed vials) are appropriately explained (C39).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "f18d99b1-9c19-47c6-80c5-dbcee554b257",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mechanistic model suggests general principles govern virus inactivation across enveloped viruses: the U-shaped humidity dependence is observed across multiple virus families, a single activation energy works across effloresced and solution regimes, and the rate-limiting step may depend on virion properties rather than specific reactants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C40-C41, C75-C83 make broad generalizations about virus inactivation mechanisms. While the U-shaped pattern is well-documented across virus families (C76-C77, supported by citations), and the single activation energy finding is intriguing (C81), the mechanistic interpretation (C82-C83) is speculative. The model slightly overestimates MERS-CoV stability (C80) but captures patterns correctly, suggesting virus-specific parameters may be needed. The generalization requires more direct testing across diverse viruses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "214d0057-be15-4d8d-adb7-c70188db3c56",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The results explain observed SARS-CoV-2 superspreading events in cool indoor environments (food processing plants at ~10\u00b0C, hockey rinks) and dry indoor environments (flights), as these conditions favor prolonged virus stability and thus elevated transmission risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45, C48, C54 connect the experimental findings to epidemiological observations. The link between indoor clusters (C43, cited) and virus stability is a reasonable inference (C44). The mechanistic explanation for superspreading in cold/dry environments (C45, C48) follows logically from the measured half-lives showing longest stability at low temperature and extreme humidity. The inference is well-supported though not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "8577cbee-5ef9-44ae-bfda-74df5f236f23",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The relative rarity of outdoor SARS-CoV-2 transmission is not explained by temperature/humidity effects alone, as winter outdoor conditions should favor the virus; instead, ventilation and UV inactivation are likely more important outdoors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 make a logical inference: if cold/humid conditions favor virus stability, winter outdoor conditions should promote transmission, yet outdoor transmission is rare. The conclusion that other factors (ventilation, UV) dominate outdoors is reasonable and supported by citations (C47). This demonstrates appropriate scientific reasoning about the limits of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "6b5794a6-a30f-4fee-800c-28e8d5a640b4",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The temperature and humidity effects on virus stability are relevant to both fomite and aerosol transmission, as prior work shows similar RH-dependent decay in droplets on surfaces and suspended aerosols, and surface-deposited virions can be resuspended and inhaled.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 extend the findings' relevance beyond surface stability. The assertion is supported by citations showing similar patterns in aerosols (C50-C51) and evidence for resuspension (C52). The connection to food processing plant practices (C53) is stated as known fact. The reasoning is sound though the direct applicability to aerosol transmission could benefit from more direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "3dc624bd-4a8c-426c-ae71-13f829a07e42",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Long-range fomite transmission via chilled or frozen foods is conceivable based on the demonstrated prolonged virus viability at very low temperatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C56 address a speculative scenario. While C55 appropriately cites speculation from prior literature, and C56 notes the finding is 'conceivable' based on low-temperature stability, the study did not test frozen conditions (extrapolation stopped at 0\u00b0C, noting different kinetics may apply when fluid freezes). This is appropriately cautious but remains speculative without direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "7601bfab-7fb1-4378-bf55-0b5478c83fca",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Environmental stability is not the only mechanism by which temperature and humidity affect transmission; other factors include behavioral changes (time spent indoors), immune function (airway drying at low humidity), and aerosol physics (settling rates). At low RH, these effects may compound to increase transmission risk, while at high RH the net effect is unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 appropriately contextualize the findings within broader transmission mechanisms. The additional mechanisms are supported by citations (C59, C61) or stated as known principles (C58, C60). The inference about compounding effects at low RH (C62) is logical, and the uncertainty about high RH effects (C63) is appropriately cautious. This demonstrates good scientific practice in acknowledging study limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "3695131e-bfd1-4096-b9c6-ca98c50ad074",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Temperate zone winters promote respiratory virus transmission through multiple mechanisms including increased indoor time, poor ventilation, and dry air that both stabilizes viruses and impairs immunity. Winter surges in SARS-CoV-2 may reflect these seasonal factors, though population susceptibility and control measures dominated early pandemic dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C71 synthesize the findings with epidemiological context. The winter seasonality of respiratory viruses (C64) and behavioral factors (C65-C66) are cited or stated as known. The inference about dry indoor air (C67) combines the study's findings with known conditions. The discussion of SARS-CoV-2 seasonality (C68-C71) appropriately balances projections with observed patterns and cites relevant literature. The speculation about winter surges (C71) is appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "fe3fd2ec-2203-4506-8d33-d4f599f3a86a",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The mechanistic model resolves the debate about whether absolute or relative humidity is more important for virus stability by permitting principled separation of temperature and humidity effects, revealing a strong effect of relative humidity even after accounting for temperature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 address a methodological contribution. The debate about absolute vs. relative humidity (C72) is documented by citations. The model's ability to separate these effects (C73) is a valid methodological advance, and the finding of strong RH effects (C74) is supported by the model's performance across conditions. This represents an important conceptual contribution beyond the specific SARS-CoV-2 findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "1e8e3f96-293a-46a3-83a6-e0f38dbb1fe6",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "All model parameters were estimated jointly using Bayesian inference implemented in Stan with a No-U-Turn Sampler via RStan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C95 describe the statistical methodology. Joint inference of all parameters (C95) is appropriate for this complex model with interdependencies between evaporation and decay kinetics. The use of Bayesian methods with MCMC sampling is well-suited to the hierarchical structure and provides proper uncertainty quantification. The methods are standard and appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    },
+    {
+      "id": "db493bbe-560c-4a6f-a5b4-64e286184d10",
+      "content_id": "64d36244-3327-42e4-aec6-2daaea3ee6a6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work establishes that temperature and humidity affect enveloped virus stability, SARS-CoV-2 emerged in 2019 causing a pandemic with winter surges and superspreading dynamics, but mechanistically motivated quantitative models for joint temperature-humidity effects on virus inactivation have been lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C18 establish the background and motivation. The effects of temperature/humidity on viruses (C8-C9, C13, C16) are supported by appropriate citations. The COVID-19 pandemic context (C10-C12, C14-C15) is established knowledge or cited. The gap in mechanistic models (C17-C18) is appropriately identified with citations to phenomenological alternatives. This provides solid justification for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:54:39.979921Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2ea87f6d-91d6-42e3-953c-0fe0fcdb21aa",
+      "result_id": "5af62466-a27a-4b81-9957-c7e58749f285"
+    },
+    {
+      "claim_id": "0b253ab3-a5d7-4afb-b046-96b12a5c79ce",
+      "result_id": "5af62466-a27a-4b81-9957-c7e58749f285"
+    },
+    {
+      "claim_id": "8a9006bb-aac7-41de-bfe3-b92f2e8df447",
+      "result_id": "5af62466-a27a-4b81-9957-c7e58749f285"
+    },
+    {
+      "claim_id": "05ec0227-80cd-48eb-ac4e-ecae6173c741",
+      "result_id": "5af62466-a27a-4b81-9957-c7e58749f285"
+    },
+    {
+      "claim_id": "ea5c112d-44ea-4865-bdc7-7a7f7a2779a9",
+      "result_id": "5af62466-a27a-4b81-9957-c7e58749f285"
+    },
+    {
+      "claim_id": "894eaf07-6a83-43c0-825f-c88022fc755c",
+      "result_id": "5af62466-a27a-4b81-9957-c7e58749f285"
+    },
+    {
+      "claim_id": "70373087-6381-4be9-91de-aef4c57efaea",
+      "result_id": "5af62466-a27a-4b81-9957-c7e58749f285"
+    },
+    {
+      "claim_id": "fdb2fe49-3110-412f-b63c-4f9ba9a1aa4a",
+      "result_id": "5af62466-a27a-4b81-9957-c7e58749f285"
+    },
+    {
+      "claim_id": "699835f1-73ba-4a69-80c7-e8496fc4cdf6",
+      "result_id": "5af62466-a27a-4b81-9957-c7e58749f285"
+    },
+    {
+      "claim_id": "263f440f-55b7-43a9-9042-9639f63fb36b",
+      "result_id": "d06ecc3d-a705-4977-8a25-cc847a437c5a"
+    },
+    {
+      "claim_id": "0dd1a869-a430-44ad-a70d-fb56aad35f1d",
+      "result_id": "d06ecc3d-a705-4977-8a25-cc847a437c5a"
+    },
+    {
+      "claim_id": "43e58b1e-fe7d-403e-b648-053ba0f5f01d",
+      "result_id": "d06ecc3d-a705-4977-8a25-cc847a437c5a"
+    },
+    {
+      "claim_id": "d880168f-a705-468c-8a58-41cbf740b3b9",
+      "result_id": "d06ecc3d-a705-4977-8a25-cc847a437c5a"
+    },
+    {
+      "claim_id": "368efcee-f536-4fb3-9c35-e017db8658a5",
+      "result_id": "d06ecc3d-a705-4977-8a25-cc847a437c5a"
+    },
+    {
+      "claim_id": "0b24a801-24fe-49b2-9c9f-4319358b7e0d",
+      "result_id": "d06ecc3d-a705-4977-8a25-cc847a437c5a"
+    },
+    {
+      "claim_id": "21308963-45be-4d24-bbb9-2b335c6f372f",
+      "result_id": "d06ecc3d-a705-4977-8a25-cc847a437c5a"
+    },
+    {
+      "claim_id": "4b8859ed-2b11-47ae-b1db-f72ca140c008",
+      "result_id": "d06ecc3d-a705-4977-8a25-cc847a437c5a"
+    },
+    {
+      "claim_id": "1a03979f-7f43-4f3a-85e8-841341d82b88",
+      "result_id": "d7ecaa78-c7fc-4f4d-97de-a185f2889551"
+    },
+    {
+      "claim_id": "5efaaa49-fb0b-49aa-8b3f-eb048eeb3469",
+      "result_id": "d7ecaa78-c7fc-4f4d-97de-a185f2889551"
+    },
+    {
+      "claim_id": "64962881-13bc-4b79-b30c-0ac3e71ffc45",
+      "result_id": "e1c992e2-c442-46ba-869a-fd2311e7186e"
+    },
+    {
+      "claim_id": "4606f8b0-1fd3-4848-80f9-c624cb11546d",
+      "result_id": "7be21307-2692-4c98-9973-9c59f5de40e1"
+    },
+    {
+      "claim_id": "cfaf1901-8ad6-444c-b445-20235828fdd0",
+      "result_id": "7be21307-2692-4c98-9973-9c59f5de40e1"
+    },
+    {
+      "claim_id": "433a7de7-523b-4ade-b208-30318a62c418",
+      "result_id": "7be21307-2692-4c98-9973-9c59f5de40e1"
+    },
+    {
+      "claim_id": "cdd79eca-e2c6-4228-b424-e2f7f62ebbd7",
+      "result_id": "7be21307-2692-4c98-9973-9c59f5de40e1"
+    },
+    {
+      "claim_id": "c1a4c896-b627-4759-8385-17dc8007f1ab",
+      "result_id": "7be21307-2692-4c98-9973-9c59f5de40e1"
+    },
+    {
+      "claim_id": "c033e76d-c0b4-4221-a074-3b1625aa1147",
+      "result_id": "7be21307-2692-4c98-9973-9c59f5de40e1"
+    },
+    {
+      "claim_id": "f54a7fd3-e4c5-42a7-92cb-66c574e5d151",
+      "result_id": "7be21307-2692-4c98-9973-9c59f5de40e1"
+    },
+    {
+      "claim_id": "a622971e-f1cc-4e98-99a8-ad42b655d0c2",
+      "result_id": "7be21307-2692-4c98-9973-9c59f5de40e1"
+    },
+    {
+      "claim_id": "9c9c71aa-8a75-4dde-b269-611c42b3ac28",
+      "result_id": "3893230e-5fce-439b-a8af-847b1b551083"
+    },
+    {
+      "claim_id": "2343ae67-71e6-4a10-a38f-200628c5df56",
+      "result_id": "3893230e-5fce-439b-a8af-847b1b551083"
+    },
+    {
+      "claim_id": "2b4bc88c-bd9e-40cf-8ac7-00b82d37d958",
+      "result_id": "3893230e-5fce-439b-a8af-847b1b551083"
+    },
+    {
+      "claim_id": "3b77b124-a867-4ecc-af5e-d1defc249ac6",
+      "result_id": "3893230e-5fce-439b-a8af-847b1b551083"
+    },
+    {
+      "claim_id": "8b33f066-dfe7-4d7e-82de-87fa70f6df85",
+      "result_id": "f4d87851-fa7b-4a05-9da2-6ae23bcd1882"
+    },
+    {
+      "claim_id": "c62c8be4-ac92-4e46-8020-385c12241ab0",
+      "result_id": "f4d87851-fa7b-4a05-9da2-6ae23bcd1882"
+    },
+    {
+      "claim_id": "a48a648b-27c4-4cee-a76c-f39f6c1c3979",
+      "result_id": "f4d87851-fa7b-4a05-9da2-6ae23bcd1882"
+    },
+    {
+      "claim_id": "72f92701-3913-4d2a-b96e-07e8cc30b7a6",
+      "result_id": "f4d87851-fa7b-4a05-9da2-6ae23bcd1882"
+    },
+    {
+      "claim_id": "c49d3b8a-239f-451e-9312-a78e7bff1843",
+      "result_id": "f4d87851-fa7b-4a05-9da2-6ae23bcd1882"
+    },
+    {
+      "claim_id": "c09d8276-e573-4877-890e-2e53024e3f3c",
+      "result_id": "f4d87851-fa7b-4a05-9da2-6ae23bcd1882"
+    },
+    {
+      "claim_id": "57314ec8-c98d-4c34-bbd4-c8e94ead4d65",
+      "result_id": "f4d87851-fa7b-4a05-9da2-6ae23bcd1882"
+    },
+    {
+      "claim_id": "394b78ea-5f86-489b-a586-eba5ce700fad",
+      "result_id": "f4d87851-fa7b-4a05-9da2-6ae23bcd1882"
+    },
+    {
+      "claim_id": "8e0625d0-dda5-4181-bbcb-8dc9cfd909a2",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "5b334dd5-ab7d-49bb-b590-0831fe1240e9",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "b09cafcb-7682-400b-a0ae-af272d664bae",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "d4fbe17d-ebff-4f63-88c5-e9cb51760bed",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "65a4fb42-8cf8-4cd3-b316-e7de800e122e",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "b54ebdc0-9f2d-4ad0-8dbb-fd1ce30bcd81",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "594ed43c-eca8-4051-b27d-e98f96171b77",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "813bf7ba-6cf6-4e76-bd07-1b8b3e0c0151",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "00738f7a-b29e-468b-8f74-2cd4be974927",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "d43db5bc-5ce9-407d-aa8e-3993f71348f6",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "edbc0c8b-19f9-4cc4-b94a-c22ae38f8895",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "6fe2c887-8b0b-405e-9a5c-03ad1ce00898",
+      "result_id": "f18d99b1-9c19-47c6-80c5-dbcee554b257"
+    },
+    {
+      "claim_id": "94054fb1-c973-4cd9-95a7-26cdaa2bcf14",
+      "result_id": "214d0057-be15-4d8d-adb7-c70188db3c56"
+    },
+    {
+      "claim_id": "ed415600-256a-4517-a015-d9113a570ba2",
+      "result_id": "214d0057-be15-4d8d-adb7-c70188db3c56"
+    },
+    {
+      "claim_id": "26052cde-5aeb-4400-a642-147224f5e6b0",
+      "result_id": "214d0057-be15-4d8d-adb7-c70188db3c56"
+    },
+    {
+      "claim_id": "36987328-93ab-438d-885b-74ee5db5ee89",
+      "result_id": "214d0057-be15-4d8d-adb7-c70188db3c56"
+    },
+    {
+      "claim_id": "6d2a7378-842c-45a8-900d-e2c24bc1637d",
+      "result_id": "214d0057-be15-4d8d-adb7-c70188db3c56"
+    },
+    {
+      "claim_id": "69606196-a7b3-4179-926e-d82cc8ec1190",
+      "result_id": "8577cbee-5ef9-44ae-bfda-74df5f236f23"
+    },
+    {
+      "claim_id": "e1b0a4e6-1670-4d5d-bb81-a4ee93810f75",
+      "result_id": "8577cbee-5ef9-44ae-bfda-74df5f236f23"
+    },
+    {
+      "claim_id": "f83e8203-18f9-446f-b7fc-2f8cb0f36875",
+      "result_id": "6b5794a6-a30f-4fee-800c-28e8d5a640b4"
+    },
+    {
+      "claim_id": "146f92df-05c6-47ff-979e-9787496666e0",
+      "result_id": "6b5794a6-a30f-4fee-800c-28e8d5a640b4"
+    },
+    {
+      "claim_id": "7b7aa80f-0274-4f3a-91bd-62368588fa68",
+      "result_id": "6b5794a6-a30f-4fee-800c-28e8d5a640b4"
+    },
+    {
+      "claim_id": "59494a54-6365-4e48-83ea-a5d410f1108a",
+      "result_id": "6b5794a6-a30f-4fee-800c-28e8d5a640b4"
+    },
+    {
+      "claim_id": "01a572d6-8060-4d06-a078-4c344f6c57db",
+      "result_id": "6b5794a6-a30f-4fee-800c-28e8d5a640b4"
+    },
+    {
+      "claim_id": "e779715b-ea99-432b-be13-68a1860fd889",
+      "result_id": "3dc624bd-4a8c-426c-ae71-13f829a07e42"
+    },
+    {
+      "claim_id": "2bbd6084-9795-4cd0-bbdd-7c43b4d2f943",
+      "result_id": "3dc624bd-4a8c-426c-ae71-13f829a07e42"
+    },
+    {
+      "claim_id": "d13257a6-d91b-4aa5-8fba-5e87d60688f5",
+      "result_id": "7601bfab-7fb1-4378-bf55-0b5478c83fca"
+    },
+    {
+      "claim_id": "3a923e00-cebb-4090-8a15-5dac3ab99f2a",
+      "result_id": "7601bfab-7fb1-4378-bf55-0b5478c83fca"
+    },
+    {
+      "claim_id": "fd41efa2-1b04-4804-be59-ae16b6396337",
+      "result_id": "7601bfab-7fb1-4378-bf55-0b5478c83fca"
+    },
+    {
+      "claim_id": "96efe05e-a244-4ea3-a1a8-fb726aae263b",
+      "result_id": "7601bfab-7fb1-4378-bf55-0b5478c83fca"
+    },
+    {
+      "claim_id": "49aa4553-8d49-43e8-8910-125dc563eced",
+      "result_id": "7601bfab-7fb1-4378-bf55-0b5478c83fca"
+    },
+    {
+      "claim_id": "4a51af1b-9719-4230-8bf9-3ba187c894d4",
+      "result_id": "7601bfab-7fb1-4378-bf55-0b5478c83fca"
+    },
+    {
+      "claim_id": "80215c81-0059-4b92-9c7b-0d196183aa33",
+      "result_id": "7601bfab-7fb1-4378-bf55-0b5478c83fca"
+    },
+    {
+      "claim_id": "4bec9de3-6547-40f7-8bde-3d9b05d203ed",
+      "result_id": "3695131e-bfd1-4096-b9c6-ca98c50ad074"
+    },
+    {
+      "claim_id": "5255c2b8-ed90-4641-989a-b4ff2a577c2b",
+      "result_id": "3695131e-bfd1-4096-b9c6-ca98c50ad074"
+    },
+    {
+      "claim_id": "0221d276-32cf-4a06-b91a-0f625f1e760c",
+      "result_id": "3695131e-bfd1-4096-b9c6-ca98c50ad074"
+    },
+    {
+      "claim_id": "ea46dd33-62dc-4380-b940-87d4d1b0dba3",
+      "result_id": "3695131e-bfd1-4096-b9c6-ca98c50ad074"
+    },
+    {
+      "claim_id": "357d0e48-01d2-4c94-ae05-ce23f1448eed",
+      "result_id": "3695131e-bfd1-4096-b9c6-ca98c50ad074"
+    },
+    {
+      "claim_id": "1e441ce7-8fde-4c76-80d0-d4281286f95b",
+      "result_id": "3695131e-bfd1-4096-b9c6-ca98c50ad074"
+    },
+    {
+      "claim_id": "fc30c7c5-209a-4b56-9c0e-948fbb614cb0",
+      "result_id": "3695131e-bfd1-4096-b9c6-ca98c50ad074"
+    },
+    {
+      "claim_id": "cf88d70d-832a-48ad-8a34-fbace0290533",
+      "result_id": "3695131e-bfd1-4096-b9c6-ca98c50ad074"
+    },
+    {
+      "claim_id": "a590eb5d-ca07-4468-aa1f-d5a584d6dd97",
+      "result_id": "fe3fd2ec-2203-4506-8d33-d4f599f3a86a"
+    },
+    {
+      "claim_id": "d93990eb-fd87-439c-9131-27eccd347503",
+      "result_id": "fe3fd2ec-2203-4506-8d33-d4f599f3a86a"
+    },
+    {
+      "claim_id": "2229156f-52f8-41bb-99bb-e73e8e1ffecc",
+      "result_id": "fe3fd2ec-2203-4506-8d33-d4f599f3a86a"
+    },
+    {
+      "claim_id": "67dbae3f-bbfa-482c-b197-17dec9dbb088",
+      "result_id": "1e8e3f96-293a-46a3-83a6-e0f38dbb1fe6"
+    },
+    {
+      "claim_id": "7acce275-db67-46ce-a091-bf6e6325d1b5",
+      "result_id": "1e8e3f96-293a-46a3-83a6-e0f38dbb1fe6"
+    },
+    {
+      "claim_id": "96890b55-0c7e-499f-84c5-9bdb6b19d321",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    },
+    {
+      "claim_id": "177bfb9b-8985-4f67-a42c-706714d7ad4b",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    },
+    {
+      "claim_id": "ed141683-64f7-41ef-bfcd-28a2029d5160",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    },
+    {
+      "claim_id": "b3a54745-5947-4d5a-96d0-502920987a12",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    },
+    {
+      "claim_id": "e112c47c-bd93-4fba-852a-94279b89eea6",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    },
+    {
+      "claim_id": "783ecb9f-4897-4936-851b-dae65bd5652b",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    },
+    {
+      "claim_id": "9218e3a4-8034-422a-88f8-7d063ca1e5a6",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    },
+    {
+      "claim_id": "f6069746-9363-4f79-aeda-350d1494e584",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    },
+    {
+      "claim_id": "a57cd519-f0f6-4851-8a97-99a3ca26c6cb",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    },
+    {
+      "claim_id": "05b9d29b-947f-4994-b4d6-91cdbaaa5f21",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    },
+    {
+      "claim_id": "27204b0b-32aa-4e58-8c57-eda8258cb3a7",
+      "result_id": "db493bbe-560c-4a6f-a5b4-64e286184d10"
+    }
+  ],
+  "comparisons": []
+}

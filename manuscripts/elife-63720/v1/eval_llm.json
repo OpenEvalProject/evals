@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors establish the motivation for MARS by describing the current state of behavioral neuroscience: manual annotation of social behaviors is time-consuming (3-4\u00d7 video duration), prone to quality issues, and lacks standardization across labs, while recent neural recording technologies in freely behaving mice require detailed behavioral characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 collectively establish a well-supported motivation for the work. The characterization of manual annotation as time-consuming (C13) and prone to quality issues (C14) is consistent with field knowledge, and the need for behavioral quantification alongside neural recordings (C9-C11) is supported by appropriate citations. The statement about inter-lab variability (C15) sets up the later empirical investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "MARS is an automated pipeline for pose estimation and behavior classification trained on a novel dataset of 15,000 frames with crowdsourced pose annotations (5 annotators per frame) and 14+ hours of behavior video annotated by a single expert for attack, mounting, and close investigation behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C16-C28 describe the MARS system and training data with appropriate detail. The use of crowdsourced annotations with multiple annotators per frame (C18) and the decision to use a single annotator for behavior labels (C27) are clearly documented. The dataset sizes are specific and verifiable from the figures referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Human annotators showed higher inter-annotator variability in front-view (52.3% within 5mm) compared to top-view (86.2% within 5mm) pose annotations, likely due to increased occlusion in the front view.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 present quantitative measurements of human annotation variability with specific percentages and appropriate spatial scale (5mm radius). The inference about occlusion (C92) is reasonable given the visual evidence referenced in Figure 1\u2014figure supplement 1B, though it remains an interpretation rather than a directly tested hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "MARS performs two-stage pose estimation using MSC-MultiBox detection followed by stacked hourglass network pose estimation, achieving 92% accuracy within 5mm in top view and 67% in front view, with processing speed of ~11 Hz on specified hardware.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C102 describe MARS's pose estimation architecture and performance with appropriate technical detail and citations (C94, C95). The quantitative performance metrics (C99, C100) are compared against human baselines established earlier. The decision to use only top-view for behavior classification (C101) is justified by the performance difference. Hardware specifications for speed benchmarks (C102) are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Analysis of eight human annotators revealed substantial inter-annotator variability in behavior scoring, with annotator F1 scores predicted by mean bout duration, and within-annotator consistency significantly higher than between-annotator agreement, indicating genuine stylistic differences rather than random noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C111 present a systematic analysis of inter-annotator variability with appropriate statistical testing (C110, referenced in Table 2). The finding that bout duration predicts F1 scores (C107) is data-driven and shown in Figure 5\u2014figure supplement 3. The exclusion of two annotators (C105) is documented with justification. The conclusion about genuine stylistic differences (C111) is supported by the within- vs. between-annotator comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "MARS behavior classifiers, trained on 270 spatiotemporal features using XGBoost with HMM smoothing, achieved human-level performance for attack and close investigation (comparable precision/recall to human annotators) and slightly lower performance for mounting, with performance robust to head-mounted devices and cables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C122 describe the behavior classification pipeline and its performance. The feature engineering (C112-C113) and classifier architecture (C114-C115) are clearly specified. Performance comparisons to human annotators (C116-C117) are shown in Figure 6 with appropriate precision-recall curves. The improvement when using pooled annotations (C119) and the correlation with bout duration (C121) provide additional validation. The robustness to cables (C122) is supported by Figure 6\u2014figure supplement 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C155"
+    ],
+    "result": "MARS achieves human-level performance in both pose estimation and behavior classification when compared to multiple human annotators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C155 make the central performance claim of the paper. This is well-supported by the detailed comparisons in Figures 2, 4, 5, and 6, where MARS performance falls within or near the range of human annotator performance. However, 'human-level' is defined relative to the best-performing human in some cases and the median in others, which should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Training MARS on new datasets shows that pose model performance plateaus around 1500 frames, behavior classifier performance improves logarithmically with training set size, and the number of annotated bouts is a better predictor of classifier performance than the number of frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 present findings from training experiments on the CRIM13 dataset and additional behaviors. The results are shown in Figure 6\u2014figure supplement 3 with clear trends. The insight about bout count vs. frame count (C126) is valuable for practical guidance, though the mechanism is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "MARS was used to screen social behaviors in autism-associated mouse lines, revealing increased aggression in Chd8+/- mice, complex housing effects in Nlgn3+/- mice, and reduced face- and genital-directed (but not body-directed) investigation in BTBR mice, demonstrating MARS's utility for exploratory behavioral analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C138 present a use case demonstrating MARS's application. The findings are supported by statistical tests (Table 2) and shown in Figure 8. The novel analysis of body-part-specific investigation (C134-C135) demonstrates the exploratory power of MARS's pose features. The speculation about pheromonal cues (C136) is appropriately qualified. Statistical significance is properly reported with effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Using BENTO to analyze neural imaging data from MPOA during social interactions, 28 mount-modulated neurons were identified, revealing multiple subtypes with diverse temporal response patterns relative to mounting behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 present a second use case demonstrating integration of MARS with neural data analysis. The identification of 28 neurons and their diverse response patterns is shown in Figure 9C-D. However, the analysis is relatively superficial\u2014no statistical testing of response significance is mentioned, and 'modulated' is not rigorously defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The MARS software suite includes four components: MARS (end-user tool with GUI), MARS_Developer (training pipeline with crowdsourcing tools), MARS_pycocotools (evaluation tools), and BENTO (multimodal data visualization and analysis GUI), providing an end-to-end pipeline from data collection to analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C48 describe the software components with appropriate detail about functionality and interfaces. The descriptions are consistent with the figures showing the GUIs (Figures 1, 7). The claim about compatibility with other systems like DeepLabCut (C48) is stated but not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C168",
+      "C169"
+    ],
+    "result": "MARS provides a pretrained, publicly available system for pose estimation and behavior classification that facilitates comparison across labs and enables high-throughput behavioral screening without requiring users to collect their own training data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145, C168-C169 describe MARS's intended contribution to the field. The provision of pretrained models with public training data addresses the standardization issue raised in the introduction. However, actual adoption and cross-lab validation are not demonstrated in this paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors position MARS within the landscape of existing behavior analysis tools, comparing it to both unsupervised methods (Moseq, MotionMapper) and supervised methods (SimBA, MiceProfiler, Giancardo et al., Hong et al.), highlighting MARS's hybrid approach of providing pretrained models while allowing user customization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C89 provide extensive context about related work with appropriate citations. The comparisons are generally fair and acknowledge similarities (e.g., C72-C77 on feature engineering). The characterization of MARS as taking a 'hybrid approach' (C84) is accurate. However, the claim that direct performance comparison is challenging (C80) somewhat undermines the comparative statements made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The authors acknowledge that there is no field-wide consensus on behavior definitions and that MARS classifiers reflect one lab's definitions, but argue that MARS's support for retraining enables labs to compare their own definitions and potentially establish consensus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 appropriately acknowledge a limitation while proposing a path forward. The acknowledgment that classifiers reflect one individual's annotations (C148) is important for interpretation. The suggestion about comparing classifiers (C150) is reasonable but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "MARS improves upon the authors' previous system (Hong et al., 2015) by eliminating the need for multiple cameras and depth sensors, using deep learning for true pose estimation rather than ellipse fitting, and achieving greater accuracy and invariance to lighting and cables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 compare MARS to the authors' previous work with appropriate citations. The technical distinctions (C152) are clear. However, the performance comparison (C153) is stated but not quantitatively demonstrated with side-by-side benchmarks on the same data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The authors discuss future directions including improving training data quality, the possibility that behavior may be too complex for consistent annotation, potential integration with unsupervised methods, and plans to incorporate TREBA for semi-supervised learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C164 are primarily speculative statements about future work and alternative interpretations. While these are reasonable directions, they are not tested in the current work. The mention of TREBA (C163-C164) references the authors' other work but does not demonstrate integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The authors characterize the current state of the field as having many automated tools that still require users to provide training data and lack mechanisms for standardization across labs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C167 provide field context with appropriate citations (C165). The characterization of limitations (C166-C167) is accurate and motivates MARS's contribution of pretrained models and public data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "To evaluate inter-annotator variability and self-consistency, the authors collected annotations from eight annotators on ten 10-minute videos, with two videos re-annotated after 10+ months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 describe the data collection for the multi-annotator study. The design is appropriate for assessing both inter-annotator variability and temporal consistency. Sample sizes are clearly stated.",
+    "result_type": "MINOR"
+  }
+]

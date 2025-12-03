@@ -1,0 +1,1818 @@
+{
+  "submission": {
+    "id": "05135f57-daee-4f42-9036-b450c7ee8628",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:07:50.818560Z",
+    "updated_at": "2025-12-03T20:07:50.818560Z"
+  },
+  "content": [
+    {
+      "id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "submission_id": "05135f57-daee-4f42-9036-b450c7ee8628",
+      "content_type": "manuscript",
+      "content_text": "# Single-cell RNA-seq of heart reveals intercellular communication drivers of myocardial fibrosis in diabetic cardiomyopathy\n\n## Authors\n\n- Wei Li<sup>1</sup>\n- Xinqi Lou<sup>2</sup>\n- Yingjie Zha<sup>2</sup>\n- Yinyin Qin<sup>2</sup>\n- Jun Zha<sup>3</sup>\n- Lei Hong<sup>2</sup>\n- Zhanli Xie<sup>2</sup>\n- Shudi Yang<sup>4</sup>\n- Chen Wang<sup>3</sup>\n- Jianzhong An<sup>2</sup>\n- Zhenhao Zhang<sup>2</sup> ([ORCID: 0000-0001-5659-6315](https://orcid.org/0000-0001-5659-6315)) \u2020\n- Shigang Qiao<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Cyrus Tang Hematology Center, Soochow University Suzhou China ([ROR:05t8y2r12](https://ror.org/05t8y2r12))\n2. Institute of Clinical Medicine Research, Suzhou Science & Technology Town Hospital, Gusu School, Nanjing Medical University Suzhou China ([ROR:059gcgy73](https://ror.org/059gcgy73))\n3. Faculty of Anesthesiology, Suzhou Science & Technology Town Hospital, Gusu School, Nanjing Medical University Suzhou China ([ROR:059gcgy73](https://ror.org/059gcgy73))\n4. Suzhou Polytechnic Institute of Agriculture Suzhou China ([ROR:03ywvs716](https://ror.org/03ywvs716))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMyocardial fibrosis is the characteristic pathology of diabetes-induced cardiomyopathy. Therefore, an in-depth study of cardiac heterogeneity and cell-to-cell interactions can help elucidate the pathogenesis of diabetic myocardial fibrosis and identify treatment targets for the treatment of this disease. In this study, we investigated intercellular communication drivers of myocardial fibrosis in mouse heart with high-fat-diet/streptozotocin-induced diabetes at single-cell resolution. Intercellular and protein\u2013protein interaction networks of fibroblasts and macrophages, endothelial cells, as well as fibroblasts and epicardial cells revealed critical changes in ligand\u2013receptor interactions such as Pdgf(s)\u2013Pdgfra and Efemp1\u2013Egfr, which promote the development of a profibrotic microenvironment during the progression of and confirmed that the specific inhibition of the Pdgfra axis could significantly improve diabetic myocardial fibrosis. We also identified phenotypically distinct Hrchi and Postnhi fibroblast subpopulations associated with pathological extracellular matrix remodeling, of which the Hrchi fibroblasts were found to be the most profibrogenic under diabetic conditions. Finally, we validated the role of the Itgb1 hub gene-mediated intercellular communication drivers of diabetic myocardial fibrosis in Hrchi fibroblasts, and confirmed the results through AAV9-mediated Itgb1 knockdown in the heart of diabetic mice. In summary, cardiac cell mapping provides novel insights into intercellular communication drivers involved in pathological extracellular matrix remodeling during diabetic myocardial fibrosis.\n\n## Introduction\n\nDiabetes is the third most common threat to human health, approximately 537 million adults living with diabetes, of which type 2 diabetes patients account for more than 90% of all diabetic patients. Cardiac complications are the most common causes of death and disability associated with diabetes. As the key initiating factor of diabetic cardiomyopathy, hyperglycemia can prevent optimal utilization of glucose by cardiomyocytes, which leads to myocardial fibrosis. Myocardial fibrosis is characterized by the increase in extracellular matrix proteins, deposition of interstitial collagen, disarrangement of cardiomyocytes, and the remodeling of cardiac structure (Russo and Frangogiannis, 2016; Jia et al., 2018). Since adult mammalian cardiomyocytes are incapable of regeneration, the most extensive pathological extracellular matrix remodeling and fibrosis occur during various heart diseases caused by cardiomyocyte death (Kong et al., 2014). Understanding the mechanisms responsible for myocardial fibrosis is critical to develop anti-fibrotic therapy strategies for diabetic patients.\n\nMammalian hearts consist of many cell types, including cardiomyocytes, macrophages, fibroblasts and endothelial cells, etc. (Banerjee et al., 2007; Litvi\u0148ukov\u00e1 et al., 2020). Cell-to-cell communication is a fundamental feature of adult complex organs. These different types of cells communicate through interactions with ligand\u2013receptor, where a ligand may be secreted and bind to a receptor, or through the fusion of two adjacent interacting cell membranes (Ramilowski et al., 2015). The maintenance of heart homeostasis depends on intercellular communication (Ramilowski et al., 2015). Many ligand\u2013receptor signaling patterns have been identified between cardiac cells, indicating the critical role of intercellular communication in many pathophysiological processes. Therefore, intercellular communication has become a powerful therapeutic target for prevention or reversion of some of the damaging consequences of diabetic myocardial fibrosis by maintaining fine-tuned intercellular communication among different cardiac cells. Despite these findings, the overall effect of diabetes on cardiac intercellular communication and myocardial fibrosis remains poorly understood.\n\nSingle-cell RNA sequencing (scRNA-seq) is a feasible strategy for studying the cellular heterogeneity of any organ since it allows transcriptomic profiling of individual cells (Butler et al., 2018; Gladka et al., 2018; Litvi\u0148ukov\u00e1 et al., 2020; McLellan et al., 2020). Recent scRNA-seq of many tissues has revealed cellular heterogeneity and novel intercellular crosstalk among different cell types. In this study, we developed a diabetic mouse model through high-fat diet (HFD) combined with streptozotocin (STZ) administration, and identified the composition of all cardiac cells, cellular subpopulations associated with diabetic cardiomyopathy, enrichment of signaling pathways involved in myocardial fibrosis, alterations of key ligand\u2013receptor interactions and the most profibrotic Hrchi fibroblast subcluster in mouse hearts using scRNA-seq on a 10\u00d7 genomics platform. Our study suggests that cardiac intercellular communication plays a critical role in diabetic myocardial fibrosis and specific targeting of Hrchi fibroblasts may be a potential therapeutic target for this cardiac disease.\n\n## Results\n\n### Single-cell profile of heart in diabetic mice\n\nConventional single-cell RNA-seq does not cover all cells in the rodent myocardium for subsequent deep sequencing (Skelly et al., 2018; Forte et al., 2020). Therefore, we isolated the nuclear fractions of all cardiac cells to assess the heterogeneity of cell populations and changes in the transcriptional profile in response to the pathology of HFD/STZ-induced diabetes (Figure 1\u2014figure supplement 1A; Grindberg et al., 2013; Ackers-Johnson et al., 2018; Lake et al., 2019; Koenig et al., 2022). We classified 32,585 cardiac cells from 6 healthy controls (16,490 cells) and 6 HFD/STZ-induced diabetic mice (16,095 cells) into 25 transcriptionally distinct pre-clusters that exhibited highly consistent expression patterns across individual mice (Figure 1\u2014figure supplement 1B and Supplementary file 1), and identified 14 populations (Figure 1A) based on cell-specific markers and significantly enriched genes. The cell populations included fibroblasts (Pdgfra, Pcdh9, Bmper), endothelial cells (Pecam1, Ccdc85a, Btnl9), macrophages (Fcgr1, F13a1, Adgre1), pericytes (Pdgfrb, Vtn, Trpc3), adipocytes (Adipoq, Plin1, Tshr), cardiomyocytes (Ttn, Mhrt, Myh6), smooth muscle cells (Acta2, Myh11, Cdh6), endocardial cells (Npr3, Tmem108, Plvap), epicardial cells (Msln, Pcdh15, Muc16), schwan cells (Plp1, Gfra3), and other immune cell populations (T cells, monocytes, B cells) (Figure 1B). Based on cell types, markers, and relative proportions, we concluded that our data were robust and consistent with previous 10\u00d7 single nucleus data from mice heart (McLellan et al., 2020; Koenig et al., 2022). Further examination of established marker genes in each cardiac cell population revealed the presence of a wide range of cell types in all analyzed hearts (Figure 1C, D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig1-v2.jpg)\n\n**Figure 1.:** (A) t-SNE projection of all mouse cardiac cells (n = 16,490 cardiac cells from 6 control mice and n = 16,095 cardiac cells from 6 diabetic mice). (B) The marker genes defining each type of cell cluster in A are listed. (C) Heatmap showings the canonical cell markers of major cardiac cell populations. (D) Dot plot representing the top 5 distinct genes in each cell population. (E) Lollipop plot showing the number of up- and downregulated genes in high-fat diet (HFD)/streptozotocin (STZ)-treated mouse heart cells, compared with the control. Adipo, adipocytes; Cardio, cardiomyocytes; Endocar, endocardial cells; EC, endothelial cells; Epicar, epicardial cells; Fibro, fibroblasts; LEC, lymphatic ECs; Mono, monocytes; Schwann, schwann cells; SMC, smooth muscle cells; Macro, macrophages; Peri, pericytes; Details of the 25 transcriptionally distinct pre-clusters with highly consistent expression patterns across individual mouse heart are listed in Supplementary file 1. Detailed genes with significant transcriptomic changes in cardiac populations are listed in Supplementary file 2. The details of top 10 upregulated genes in cardiac populations are listed in Supplementary file 3.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic overview of the experimental design. (B) t-SNE projection of all pre-clustered cells (n = 16,490 cardiac cells from 6 control mice and n = 16,095 cardiac cells from 6 diabetic mice).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The circle size illustrates the proportion of cells within each transcript, while the dot color indicates the relative average expression level of the gene.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The plot shows top 30 enriched KEGG pathways in HFD/STZ-treated mouse fibroblasts relative to control (two-sided Wilcoxon rank-sum test, false discovery rate (FDR \u22640.05).\n\nHFD/STZ treatment induced significant transcriptomic changes in most cardiac populations, especially in fibroblasts, endothelial cells, endocardial cells, cardiomyocytes and macrophages (Figure 1E, Supplementary file 2 and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36). Analysis of the top 10 upregulated genes during the pathology of HFD/STZ-induced diabetes within each cell population showed that some of the top 10 upregulated genes show a noticeable increase in expression across many different cell types, even though some are primarily expressed in only one cell type (Figure 1\u2014figure supplement 2 and Supplementary file 3). Among the top upregulated genes in response to HFD/STZ-induced diabetes within each cell population were transcripts for Pdk4, Angptl4, Txnip, Postn, Hmgcs2, and Ucp3, of which several have been previously involved in heart failure (Yoshioka et al., 2007; Lang et al., 2018; Sheeran et al., 2019; Koenig et al., 2022). The top 30 KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways within fibroblast population were associated with dilated cardiomyopathy, cardiac muscle contraction, and hypertrophic cardiomyopathy (Figure 1\u2014figure supplement 3, two-sided Wilcoxon rank-sum test, FDR \u22640.05). These results indicate a significantly increased risk of cardiovascular diseases in a diabetic setting.\n\nTaken together, scRNA-seq identified distinct cell populations in the mouse heart that can help characterize HFD/STZ-induced diabetes-related changes based on gene expression and quantify gene\u2013trait associations.\n\n### Effects of HDF/STZ-induced diabetes on cardiac intercellular communication\n\nCell subpopulations with non-overlapping functions present distinct transcriptomic perturbations in response to pathological stimuli (Mathys et al., 2019). To determine whether distinct cardiac cell populations respond heterogeneously to diabetic stimuli, we compared differentially expressed genes in all cardiac cell types and identified 2118 unique differentially expressed genes (uni-DEGs) associated with each of the major cardiac cell types (Supplementary file 4). Most of the uni-DEGs (96.6%) were detected in cardiomyocytes (32.8%), fibroblasts (18.5%), macrophages (17.7%), endothelial cells (19.7%), and endocardial cells (7.9%). The genes that were most highly expressed in only a single-cell type were Gm20658 (fibroblasts), Ucp3 (cardiomyocytes), Spock2 (endocardial cells), Irf7 (endothelial cells), and Ifi206 (macrophages), of which Ucp3 and Irf7 were involved in heart failure and pathological cardiac hypertrophy (Jiang et al., 2014; Senatus et al., 2020). However, the association of Gm20658, Spock2 and Ifi206 with myocardial fibrosis or heart failure has not been previously reported. Gene Ontology (GO) analysis of the uni-DEGs (upregulated) showed that terms associated with collagen fibril organization and extracellular matrix remodeling were enriched in the cardiac fibroblasts (Figure 2A , two-sided Wilcoxon rank-sum test, FDR \u22640.05), indicating that fibroblasts are key cellular contributors to extracellular matrix remodeling and cardiac fibrosis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig2-v2.jpg)\n\n**Figure 2.:** (A) Heatmap showing the enriched Gene Ontology (GO) terms associated with extracellular matrix remodeling and myocardial fibrosis in major cardiac cell populations in the diabetic group. (B) The relative expression of selected essential growth factors in the major cardiac cell types. (C) Heatmap showings the number of ligand\u2013receptor pairs between cardiac cell populations in healthy mice. (D) Heatmap shows the number of ligand\u2013receptor pairs between cardiac cell populations in the HFD/STZ-induced diabetic mice. (E) Bar plot shows total number of connections made by each cell type without (gray bars) and with HFD/STZ treatment (red bars). (F) Bar plot illustrates the number of upregulated receptors and ligands for each population of cardiac cells. (G) Bar plot showing the number of downregulated receptors and ligands in each cardiac cell population. DB, diabetes. The details of unique differentially expressed genes (uni-DEGs) in the cardiac populations are listed in Supplementary file 4. The details of significantly differentially expressed genes in the specific cell populations relative to others in mouse heart are listed in Supplementary file 5. Details of cell type-specific receptors in the cardiac populations and cell type-specific ligands in cardiac populations are listed in Supplementary file 6 and Supplementary file 7, respectively. The details of relative expression of a selection of essential growth factors across major cardiac cell types are listed in Supplementary file 8. The details of the number of ligand\u2013receptor pairs between cardiac cell populations in healthy mice or diabetic mice are listed in Supplementary file 9 and Supplementary file 10, respectively. The details of significantly differentially expressed ligands and receptors in each cell population are listed in Supplementary file 11 and Supplementary file 12, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The heatmap shows the relative expression of receptors (A) and ligands (B) across the major cardiac cell populations (FDR \u22640.01, log2FC \u22651).\n\nThe proper functioning of metazoans is tightly controlled by intercellular communication between multiple cell populations, which is based on interactions between secretory ligands and receptors (Ramilowski et al., 2015). To determine the effect of HFD/STZ-induced diabetes on cardiac intracellular communication, we mapped the intercellular connection network of the cardiac cellulome in healthy controls and diabetic mice. Initially, we identified genes that were differentially expressed in specific cell populations in the mouse heart, focusing on those that were overexpressed in a single-cell type, that is, specific highly expressed genes, at FDR \u22640.01 with a minimum twofold difference in expression (Supplementary file 5). The gene expression patterns for receptors and ligands were found to be cell type specific in the heart secretome genes analyzed through clustering (Figure 2\u2014figure supplement 1A, B, Supplementary file 6, Supplementary file 7). Analysis of the factors that support the growth of specific cell populations revealed critical intercellular communication channels. These include signaling pathways that support the survival of specific cell populations of the mouse hearts (Figure 2B, Supplementary file 8). For example, pericytes and fibroblasts express Il34 and Csf1, respectively (Figure 2B), and communicate through Csf1r, while functioning as key factors for macrophage survival and growth. Fibroblasts also express Igf1 and Ngf (Figure 2B), which support the growth of endothelial cells, mural cells, and neurons (Glebova and Ginty, 2004; Bach, 2015). To construct a map of intercellular signaling among heart cells using scRNA-seq data, we integrated them with a ligand\u2013receptor interaction database (Ramilowski et al., 2015). The results showed that the endothelial and fibroblast clusters are prominent hubs for autocrine and paracrine signaling (Figure 2C, D, Supplementary file 9, Supplementary file 10, FDR \u22640.01, log2FC \u22651), and that intercellular signaling in response to HFD/STZ-induced diabetes had changed in all cardiac cells, with fibroblasts showing the greatest increase in the number of connections (Figure 2E\u2013G, Supplementary file 11, Supplementary file 12 and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36). Together, the results of these analyses suggest that intercellular communications play an important role in the alterations of cardiac microenvironment of diabetic mice.\n\n### Identification of key ligand\u2013receptor pairs associated with diabetic myocardial fibrosis in fibroblasts\n\nCardiac fibroblasts are the primary drivers of myocardial fibrosis (Travers et al., 2016; Frangogiannis, 2021). Given the result that cardiac fibroblasts cause the greatest increase in the number of connections in response to HFD/STZ-induced diabetes, perturbations of intercellular communications between cardiac fibroblasts and cardiac populations may be key drivers of diabetic myocardial fibrosis. To investigate the key receptor\u2013ligand interactions in diabetic myocardial fibrosis, highly expressed receptors in cardiac fibroblasts were screened (Figure 3\u2014figure supplement 1A, FDR \u22640.01, log2FC \u22651). Then, we merged the upregulated uni-DEGs in the fibroblasts and the highly expressed fibroblast receptors, whose cognate ligands were upregulated in at least one cardiac cell type during diabetic progression (Figure 3A). A protein\u2013protein interaction (PPI) network was constructed using the new fibroblast-specific gene set (Figure 3B). Egfr and Pdgfra were among the top hub genes based on the node degree that were specifically high-expressed receptors in the cardiac fibroblasts (Figure 3\u2014figure supplement 1B, C). To clarify their role in fibrotic progression, we screened for the cognate ligands of Egfr and Pdgfra in each cardiac cell population (Figure 3\u2014figure supplement 2A, B, Supplementary file 13, and Supplementary file 14). Both Pdgfb and Pdgfd transcripts were upregulated in endothelial cells, while Pdgfc levels were significantly elevated in the macrophages of diabetic mice (Figure 3C, D and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36). The protein levels of Pdgfb, Pdgfd, and Pdgfc showed similar changes in the corresponding cardiac cells (Figure 3\u2014figure supplement 1D\u2013F, n = 6 mice per group). In addition, the Egfr ligand Efemp1 was upregulated in the epicardial cells (Figure 3E and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36). These results suggest that the interactions between cardiac fibroblasts with endothelial cells, macrophages and epicardial cells through Pdgf(s)\u2013Pdgfra and Efemp1\u2013Egfr may contribute to myocardial fibrosis in the diabetic mouse heart.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig3-v2.jpg)\n\n**Figure 3.:** (A) Heatmap showing the pairs of highly expressed fibroblast receptors and upregulated ligands in each cell type in the diabetic hearts. (B) PPI network showing the interactions of the upregulated genes in the fibroblasts. The circle size represents the protein node degree in the network. Volcano plots of the DEGs in the heart tissues of high-fat diet (HFD)/streptozotocin (STZ)-treated and control mice. Pdgfa, Pdgfb, Pdgfc, and Pdgfd expression in the endothelial cells (C) and macrophages (D) are highlighted. (E) Volcano plots of the DEGs in the hearts of the HFD/STZ-treated and control mice. Efemp1 expression in the epicardial cells is highlighted. (F) Representative immunofluorescence images of p-Pdgfra in the heart tissues of the HFD/STZ-treated mice with or without Ima treatment (n = 6 mice per group), scale bar = 40 \u00b5m. Bar plots showing mRNA expression of Col1a1 (G) and Col3a1 (H) in the heart tissues of the HFD/STZ-treated mice with or without Ima treatment (n = 6 mice per group; mean \u00b1 SEM; **p < 0.01; ***p < 0.001). (I) Representative images of Masson dye-stained heart sections from the groups indicated showing the extent of collagen deposition (n = 6 mice per group), scale bar = 20 \u00b5m. Ima, imatinib mesylate; SEM, standard error of mean. The details of the cognate ligands of Egfr and Pdgfra are listed in Supplementary file 13 and Supplementary file 14, respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Dot plot showing the high expression of specific receptors in the cardiac cell populations. The circle size indicates the proportion of cells within the groups that express each transcript. The red and blue dots indicate up- and downregulated genes, respectively. Two-dimensional t-SNE projection of Pdgfra (B) and Egfr (C) expression in the cardiac cell populations. Green and gray colors indicate up- and downregulated genes, respectively. Representative immunofluorescence images of Pdgfb (D) and Pdgfc (E) in the CD31+ cells, and Pdgfd (F) in the CD68+ cells in the heart tissues of high-fat diet (HFD)/streptozotocin (STZ)-treated and control mice (n = 6 mice per group), scale bar = 100 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Dot plot showing the cognate ligands of Egfr in each cardiac cell population. (B) Dot plot showing the cognate ligands of Pdgfra in each cardiac cell population. The circle size indicates the proportion of cells within groups that express each transcript. The red and blue dots indicate up- and downregulated genes, respectively.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Representative immunofluorescence images for Pdgfb (A), Pdgfc (B), and Pdgfd (C) in Pdgfra+ cells in the heart tissues of high-fat diet (HFD)/streptozotocin (STZ)-treated and control groups (n = 6 mice per group), scale bar = 40 \u00b5m.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Representative heart WGA staining using tissues from high-fat diet (HFD)/streptozotocin (STZ)-treated mice with or without Ima treatment (n = 6 mice per group), scale bar = 50 \u00b5m.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (Figure 1) Left ventricular ECG representative images of the control, diabetic and Ima treatment mice. (Table 1) ECG assessment of heart function in each different group.\n\nPdgfra exerts its tyrosine kinase activity by binding to its cognate ligands. Immunostaining of cardiac tissue revealed significantly higher protein levels of Pdgfb, Pdgfc, and Pdgfd in the Pdgfra-positive cells of the diabetic group (Figure 3\u2014figure supplement 3A\u2013C, n = 6 mice per group). To examine the functional role of Pdgfra in diabetic myocardial fibrosis, we treated the HFD/STZ-induced diabetic mice with the Pdgfra inhibitor imatinib mesylate (Ima). The results showed that HFD/STZ treatment significantly increased cardiac p-Pdgfra protein levels and decreased that of p-Pdgfra in the HFD/STZ + Ima group compared with the HFD/STZ group (Figure 3F, n = 6 mice per group). In addition, the myocardium of the HFD/STZ-treated mice expressed higher levels of Col1a1 and Col3a1 compared with the control group (Figure 3G, H, n = 6 mice per group, mean \u00b1 standard error of mean [SEM], **p < 0.01, ***p < 0.001), which coincided with increased collagen deposition in the extracellular matrix. However, Ima treatment attenuated the increase in HFD/STZ-induced collagen synthesis and deposition (Figure 3I, n = 6 mice per group). Next, we performed WGA staining to assess myocardial hypertrophy in mice. The myocardial hypertrophy of HFD/STZ diabetic mice was improved significantly after Ima treatment (Figure 3\u2014figure supplement 4, n = 6 mice per group). Finally, we evaluated the improvement of heart function in diabetic mice after Ima treatment using echocardiography (Figure 3\u2014figure supplement 5, n = 15 mice per group, mean \u00b1 standard deviation; *p < 0.01; **p < 0.01; ***p < 0.001). As shown in the Figure 3\u2014figure supplement 5, Ima treatment significantly improved the LV function of the diabetic mice as evaluated using IVSs, EF, FS, LV mass, and the E/A ratio. Taken together, our results show that Pdgf(s)\u2013Pdgfra interactions contribute to diabetic myocardial fibrosis.\n\n### Identification of myocardial fibrosis-related cardiac fibroblast subpopulation\n\nCell subpopulations in the tissues perform non-overlapping functions and play different biological roles (Croft et al., 2019). Cell types can be defined by the unbiased clustering of single cells based on global transcriptome patterns (Rozenblatt-Rosen et al., 2017; McLellan et al., 2020). To observe the heterogeneity of fibroblasts in the heart, we examined 6416 fibroblasts from the diabetes and control mice. Unsupervised Seurat-based clustering of the 6416 fibroblasts revealed 10 distinct subpopulations (Figure 4A, Supplementary file 15, and n = 3428 fibroblasts from healthy control and n = 2988 fibroblasts from 6 diabetic mice). Next, hierarchical clustering with multiscale bootstrap resampling was used to analyze the heterogeneity of these cardiac fibroblast subpopulations. The analysis revealed that fibroblast subpopulation 3 formed a distinct cluster from other fibroblast subpopulations, based on its expression pattern (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig4-v2.jpg)\n\n**Figure 4.:** (A) t-SNE plot of the 10 cardiac fibroblast subpopulations in the high-fat diet (HFD)/streptozotocin (STZ)-treated and control mice (n = 3428 fibroblasts from healthy control and n = 2988 fibroblasts from 6 diabetic mice). (B) Correlation heatmap of the gene-expression signatures of each fibroblast subpopulation. Color differences indicate subpopulations that were resolved through multiscale bootstrapping. (C) Heatmap showing the top 5 marker genes in each fibroblast subpopulation. The red color indicates high expression, while green color indicates low expression. (D) Heatmap showing the enriched Gene Ontology (GO) terms associated with cardiac fibrosis in each fibroblast population. (E, F) Representative immunofluorescence images of Hrc (E) and Postn (F) in mouse heart (n = 6 mice per group), scale bar = 100 \u00b5m. The details of the 10 transcriptionally distinct fibroblast subpopulations are listed in Supplementary file 15. The details of distinct signatures of each fibroblast subpopulation in the heart are listed in Supplementary file 16.\n\nWe further investigated the contribution of all fibroblast populations to myocardial fibrosis. The top 5 ranking markers in the heart showed distinct signatures for each subpopulation of fibroblasts using heatmap analysis (Figure 4C, Supplementary file 16, FDR \u22640.05, log2FC \u22650.36). It is worthy to note that the top enriched genes in subpopulation 3 (Nppa and Clu) and subpopulation 5 (Postn and Cilp) are well-established biomarkers of pro-fibrotic function. The gene set variation analysis (GSVA) of each fibroblast subpopulation suggested a diversification of function between the subpopulations, and fibroblast 3 and 5 populations were strongly involved in extracellular matrix remodeling and collagen synthesis (Figure 4D, FDR \u22640.05). These results indicate that fibroblast 3 and 5 subpopulations are myocardial fibrosis-related cardiac fibroblast subpopulations.\n\nThe most significantly enriched gene in subpopulation 3 was Hrc, which is crucial for proper cardiac function through the regulation of Ca2+-uptake, storage, and release. The most significantly enriched gene in fibroblast subpopulation 5 was Postn, which is consistent with the fibroblast subset identified in an animal model of angiotensin-induced myocardial hypertrophy (McLellan et al., 2020). The Hrchi and Postnhi fibroblast populations were also detected in mouse heart by immunostaining for Hrc and Postn, respectively (Figure 4E, F, n = 6 mice per group).\n\n### Transcription factor network analysis\n\nTo investigate the underlying molecular mechanisms that drive the phenotypic differentiation of the fibroblast subpopulations, we used single-cell regulatory network inference and clustering. The results revealed the upregulation of different transcription factor networks in each subpopulation. For instance, Thra and Creb5 regulons were upregulated in fibroblast subpopulation 0 and 2, respectively, whereas the Nfe2l1 network was enriched in subpopulation 3, while subpopulation 4 showed the increased activation of the Foxp2 network (Figure 5A, Supplementary file 17). Regulons driven by Tcf4 transcription factors were enriched in subpopulations 1 and 9, while Mef2a was enriched in subpopulations 7 and 8. Consistent with the role of Hmgb1 in cardiac fibrosis (Wu et al., 2018), a Hmgb1-based network was upregulated in the Hrchi and Postnhi fibroblast populations (Figure 5A). Heatmap analysis further confirmed the upregulation of transcription factors (Figure 5B, Supplementary file 18).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig5-v2.jpg)\n\n**Figure 5.:** (A) Heatmap shows the inferred transcription factor gene-regulatory networks. Numbers between brackets indicate the (extended) regulons for respective transcription factors. (B) Heatmap shows the expression level of transcription factors in (A). The details of transcription factor gene-regulatory networks in the distinct subpopulations are listed in Supplementary file 17. The details of the transcription factors expression are listed in Supplementary file 18.\n\n### Identification of intercellular communication drivers of myocardial fibrosis in the Hrchi fibroblasts\n\nTo identify the cellular drivers of myocardial fibrosis during diabetes, we performed a cluster analysis of the DEGs between control and diabetic mice heart. HFD/STZ treatment induced transcriptional changes in all cardiac fibroblast subpopulations (Figure 6\u2014figure supplement 1, Supplementary files 19, and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36), and the upregulated genes in the Hrchi fibroblasts were enriched in GO terms such as collagen fiber reorganization and extracellular matrix binding (Figure 6A and two-sided Wilcoxon rank-sum test, FDR \u22640.05). Furthermore, the top 20 enriched pathways in the Hrchi fibroblasts of the diabetic group were associated with extracellular matrix organization, myocardial fibrosis, and fibroblast activation (Figure 6B and two-sided Wilcoxon rank-sum test, FDR \u22640.05). These results suggest that the Hrchi fibroblasts are key cellular drivers of myocardial fibrosis in response to HFD/STZ-induced diabetes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig6-v2.jpg)\n\n**Figure 6.:** (A) Heatmap showing high-fat diet (HFD)/streptozotocin (STZ)-induced enrichment of Gene Ontology (GO) terms associated with extracellular matrix remodeling and myocardial fibrosis in each subpopulation of cardiac fibroblasts. (B) Dot plot of the GO analysis showing the top 20 terms with the highest enrichment in the Hrchi fibroblasts of the HFD/STZ-treated mice relative to controls. (C) PPI network showing the interactions of the upregulated genes in the Hrchi fibroblasts of diabetic mice relative to controls. The circle size represents the protein node degree in the network. (D) Representative immunofluorescence images of Itgb1 in the heart of SHH-fed or control mice (n = 6 mice per group). scale bar = 40 \u00b5m. (E) Volcano plots showing the DEGs in the heart tissues of the HFD/STZ-treated or control mice with Fn1 and Lgals3bp highlighted. Representative immunofluorescence images for Fn1 (F) and Lgals3bp (G) in the mouse heart (n = 6 mice per group), scale bar = 100 \u00b5m. (H) The efficiency of siRNA-mediated Itgb1 mRNA knockdown was confirmed by qRT\u2013PCR (n = 6 mice per group, mean \u00b1 standard error of mean [SEM], ****p < 0.0001). (I) Representative images of Masson dye-stained heart sections from the indicated groups showing extent of collagen deposition (n = 6 mice per group), scale bar = 20 \u00b5m. Detailed genes of significant transcriptomic changes in each fibroblast subpopulation are listed in Supplementary file 19. The details of unique differentially expressed genes (uni-DEGs) in each fibroblast subpopulation are listed in Supplementary file 20. The details of the cognate ligands of Itgb1 are listed in Supplementary file 21.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Lollipop plot shows the up- and downregulated genes in each fibroblast subpopulation of diabetic mice, compared with the control mice (two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Volcano plots showing the DEGs in each cardiac fibroblast subpopulation (A-J indicated Fibro_0 to Fibro_9 fibrobalst subcluster) of the HFD/STZ-treated or control mice with Itgb1 highlighted.\n\nTo identify the critical signaling molecules in the Hrchi fibroblasts that mediate myocardial fibrosis during diabetics, we identified the uni-DEGs in each fibroblast subpopulation (Supplementary file 20) and constructed a PPI network using the upregulated genes (Figure 6C). The top 15 hub genes included Itgb1, Col6a1, Col1a2, Dcn, Rpl6, Rps20, Serpinh1, Bgn, Hsp90aa1, and Col6a2, of which Col6a1, Col1a2, Col6a2, Dcn, and Bgn encode for ECM proteins (Schipke et al., 2017). In addition, both Serpinh1 and Hsp90aa1 have been reported to participate in collagen synthesis (Christiansen et al., 2010; Garc\u00eda et al., 2016). Although the role of these candidate hub genes has been well established in myocardial fibrosis, the function of Itgb1 is currently unknown.\n\nThe PPI network of the upregulated uni-DEGs and immunostaining results indicate the key role of Itgb1 of Hrchi fibroblasts in diabetic myocardial fibrosis (Figure 6D, n = 6 mice per group; Figure 6\u2014figure supplement 2, two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36). Itgb1 deficiency increases the risk of ventricular arrhythmias in patients with arrhythmogenic right ventricular cardiomyopathy (Wang et al., 2020). It is therefore reasonable to surmise that the interaction between Itgb1 and its cognate ligand is involved in diabetes-related myocardial fibrosis. To confirm this hypothesis, we screened all potential ligands of Itgb1 (Supplementary file 21), and found that Lgals3bp and Fn1 were upregulated in the heart tissues of diabetic mice (Figure 6E - G, n = 6 mice per group).\n\nTo validate the role of Itgb1 in the heart in myocardial fibrosis during diabetes, we used the adeno-associated virus 9 (AAV9) to deliver Itgb1 siRNA, which preferentially targets the heart. The level of Itgb1 mRNA decreased by >80% in response to a single injection of Itgb1 siRNA, compared with the negative control (Figure 6H, n = 6 mice per group, mean \u00b1 SEM, ****p < 0.0001). Moreover, the knockdown of Itgb1 lasted for more than 5 months after the injection of the siRNA. Next, we tested collagen synthesis and deposition in the diabetic mouse heart with Itgb1 knockdown using Masson dye staining. The results showed that levels of collagen synthesis and deposition were indeed downregulated in the Itgb1 knockout mice (Figure 6I, n = 6 mice per group). Taken together, our results show that Itgb1 in Hrchi fibroblasts contributes to HFD/STZ-induced myocardial fibrosis. Further studies are warranted to establish the exact function of these ligand\u2013receptor interactions in diabetic myocardial fibrosis.\n\n### Validating the results of scRNA-seq data in the DB/DB diabetic mice model\n\nTo confirm if the scRNA-seq data is consistent with that of other mouse models of type 2 diabetes, we performed a data validation in the DB/DB mice. DB/DB is a spontaneous transgenic mouse model of type 2 diabetes with leptin receptor point mutation, which develops symptoms of obesity, insulin resistance, and hyperglycemia. We found that Pdgfra phosphorylation was significantly promoted in the DB/DB mice, and the phosphorylation level of Pdgfra was significantly inhibited after Ima treatment (Figure 7A, n = 6 mice per group). Subsequently, we examined whether Hrc-activated fibroblasts could be detected in the DB/DB mice, and we performed Hrc and Desmin co-staining experiment. Hrc was highly expressed in DB/DB diabetic mice and overlaps with the fibroblast marker Desmin, suggesting that Hrc is significantly activated in the fibroblasts of the diabetic heart. After treatment with Ima, the expression of Hrc and Desmin was significantly inhibited (Figure 7B, n = 6 mice per group). Finally, the qRT-PCR results of Acta2 and Col3a1 further confirmed that Ima treatment could significantly inhibit the accumulation of collagen fibers in the heart of the diabetic mice (Figure 7C, D, n = 4 mice for Acta2 and n = 6 mice for Col3a1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig7-v2.jpg)\n\n**Figure 7.:** (A) p-Pdgfra (green) and Desmin (red) labeled fibroblasts in the mice heart. (B) Hrc (green) and Desmin (red) labeled activated fibroblasts in the mice heart (n = 6 mice per group for A and B; scale bar = 50 \u03bcm). (C) Acta2 mRNA expression level in the mice heart (n = 4 mice per group; mean \u00b1 standard error of mean [SEM]; *p < 0.05; ***p < 0.001). (D) Col3a1 mRNA expression level in mice heart (n = 6 mice per group; mean \u00b1 SEM; **p < 0.01; ***p < 0.001).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Representative immunofluorescence images of Pdgfd (A) and Pdgfd (B) in the Pdgfra+ cells in the heart tissues of DB/DB diabetic mice and DB/M control groups (n = 6 mice per group; scale bar = 50 \u00b5m).\n\nNext, we also examined the role of the Pdgf(s)\u2013Pdgfra axis in the fibrogenesis of diabetic myocardium, and confirmed that Pdgf(s)\u2013Pdgfra axis-mediated ligand\u2013receptor interaction play a similar important role in the fibrogenic progression of the myocardium in DB/DB diabetic mice through the double immunofluorescence staining of Pdgfra with Pdgfc and Pdgfd (Figure 7\u2014figure supplement 1, n = 6 mice per group).\n\n### Identification of the results of scRNA-seq data in female C57 diabetic mice\n\nTo further verify the results of scRNA-seq in diabetic cardiomyopathy, we performed validation studies on female C57 mice. First, we examined whether Pdgfra is activated in the heart of diabetic mice by performing p-Pdgfra and desmin double staining, and the results showed that Pdgfra phosphorylation was significantly activated in the diabetic mice, and that phosphorylation was inhibited after Ima treatment (Figure 8A, n = 6 mice per group). Subsequently, we examined whether there was a subpopulation of Hrc+ fibroblasts in the hearts of the female diabetic mice. Hrc is highly expressed in the heart of female mice and overlaps with that of the cardiac fibroblast marker, desmin. However, Ima treatment significantly inhibited the activation of Hrc fibroblasts (Figure 8B, n = 6 mice per group). These results suggest that the appearance of Hrc+ fibroblast subsets is a common phenomenon in diabetic cardiomyopathy. Further examination of Acta2 (Figure 8C, n = 4 mice per group) and Col3a1 (Figure 8D, n = 4 mice per group) mRNA levels revealed that Ima treatment significantly inhibited collagen accumulation in the heart of diabetic mice.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig8-v2.jpg)\n\n**Figure 8.:** (A) p-Pdgfra (green) and Desmin (red) labeled fibroblasts in the mice heart. (B) Hrc (green) and Desmin (red) labeled activated fibroblasts in the mice heart. n = 6 mice per group for A and B; scale bar = 50 \u03bcm. (C) Acta2 mRNA expression level in the mice heart (n = 4 mice per group; mean \u00b1 standard error of mean [SEM], *p < 0.05; ***p < 0.001). (D) Col3a1 mRNA expression level in mice heart (n = 4 mice per group; mean \u00b1 SEM; **p < 0.01; ***p < 0.001).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80479/elife-80479-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Representative immunofluorescence images for Pdgfd (A) and Pdgfd (B) in the Pdgfra+ cells in the heart tissues of female C57 diabetic mice and control groups (n = 6 mice per group; scale bar = 50 \u00b5m).\n\nFinally, we further examined whether the Pdgf(s)\u2013Pdgfra interactions are involved in the pathogenesis of diabetic myocardial fibrosis. The results suggest that ligand\u2013receptor interactions between macrophages, endothelial cells, and fibroblasts play an important role in promoting myocardial fibrosis (Figure 8\u2014figure supplement 1, n = 6 mice per group). This theory has been validated in both male C57 mice and DB/DB diabetes model and appears to be a common mechanism that promotes cardiac fibrosis in diabetes.\n\n## Discussion\n\nscRNA-seq allows for the in-depth analysis of individual cells in heterogenous populations (Butler et al., 2018) in healthy and diseased tissues (Ackers-Johnson et al., 2018; Mathys et al., 2019; Peng et al., 2019; Kalucka et al., 2020; Litvi\u0148ukov\u00e1 et al., 2020; Li et al., 2021). However, the effect of diabetes on cardiac cell function and cardiac cell heterogeneity at single-cell level has not been previously reported. In this study, we mapped out the transcriptional alterations associated with HFD/STZ-induced diabetes in different cardiac cell populations, and identified the key ligand\u2013receptor pair drivers of myocardial fibrosis in the fibroblasts of the diabetic heart. Specifically, the emergence of Hrchi fibroblast subpopulations in response to diabetic progression, presumably to remodel the extracellular environment through multiple ligand\u2013receptor interactions. In addition, the appearance of the Postn+ fibroblast subpopulation was also identified in this study. Interestingly, a subset of Postn+ fibroblasts was found in both human dilated cardiomyopathy and mouse cardiac hypertrophy models (Koenig et al., 2022; McLellan et al., 2020), and our scRNA-seq results also identified Postn+ fibroblasts. These results suggest that Postn+ fibroblasts may play a similar important role in the various pathology of cardiac fibrosis.\n\nThe heart of a mammal is a complex organ composed of a variety of cell types (Banerjee et al., 2007; Litvi\u0148ukov\u00e1 et al., 2020). Cardiac fibroblasts synthesize extracellular matrix proteins and their excessive activation in response to stress induced cardiac fibrosis (Travers et al., 2016). GO enrichment analysis of all upregulated genes in the cardiac cell populations from the diabetic mice confirmed the association of fibroblasts and extracellular matrix remodeling with myocardial fibrosis, which is consistent with the results of previous studies (Jia et al., 2018; Ivey et al., 2019; McLellan et al., 2020; Frangogiannis, 2021; Koenig et al., 2022). The survival and proper functioning of metazoans depends on communication between multiple cell populations and tissues via secretary ligands and membrane receptors (Ramilowski et al., 2015). Therefore, we screened for receptor genes that were highly expressed in the cardiac fibroblasts of diabetic mice and their cognate ligands that were upregulated in other cardiac cell populations to identify the dysregulated ligand\u2013fibroblast receptor interactions. Protein\u2013protein interaction network analysis indicated that the receptors, Pdgfra and Egfr, which are highly expressed in the fibroblasts, play a central role in myocardial fibrosis in diabetes. Pdgfra is a surface receptor tyrosine kinase that is activated upon binding to its corresponding ligand Pdgf(s), and regulates cell division and proliferation (Rudat et al., 2013; Gouveia et al., 2018; Soliman et al., 2020). Egfr on the other hand is a member of the ErbB family of receptor tyrosine kinases and plays an important role in wound healing and cardiac hypertrophy (Peng et al., 2016). The upregulation of the Pdgfra ligands, Pdgfb and Pdgfd in endothelial cells and Pdgfc in macrophages, and that of the Egfr ligand, Efemp1 in epicardial cells of the HFD/STZ-treated mice indicate that the cardiac microenvironment had changed, resulting in extracellular matrix remodeling and cardiac fibrosis. This is of particular interest given the pathological role of these cell populations and ligand\u2013receptor pairs in cardiovascular diseases (Rottlaender et al., 2011; Shinagawa and Frantz, 2015; Farbehi et al., 2019; Mar\u00edn-Juez et al., 2019; Peet et al., 2020; Baguma-Nibasheka et al., 2021). Ligand\u2013receptor pair analysis also revealed the synergistic role of endothelial cells, macrophages, and epicardial cells with fibroblasts in diabetic myocardial fibrosis. Further analysis of the interactions between these cell populations will help us understand the pathogenesis of diabetes-induced fibrosis.\n\nTerminally differentiated cells are generally considered to have limited plasticity. Cellular plasticity in adults is mostly reported during the terminal differentiation stage of many progenitor cells (Chang-Panesso and Humphreys, 2017). However, these cellular transitions may also be present in cardiac fibroblasts. Unbiased single-cell clustering can redefine cell type based on the global transcriptome patterns (Rozenblatt-Rosen et al., 2017; Ackers-Johnson et al., 2018; McLellan et al., 2020; Koenig et al., 2022). Such analyses have already been applied to other organs (Macosko et al., 2015; Chen et al., 2017; Stubbington et al., 2017) and even to whole multicellular organisms (Cao et al., 2017; Karaiskos et al., 2017). These experiments have identified new cells as well as previously defined cells with catalogued marker genes, demonstrating that this approach can be used to redefine cardiac cell types. One of the most important results of the mouse cardiac fibroblasts analysis was the identification of two different phenotypic Hrchi and Postnhi fibroblast subpopulations associated with extracellular matrix remodeling. The Postnhi fibroblasts participate in fibrogenic progression, which is consistent with another subpopulation of fibroblasts identified in an animal model of angiotensin-induced myocardial hypertrophy (McLellan et al., 2020; Koenig et al., 2022), suggesting that these fibroblasts may contribute to both myocardial hypertrophy and cardiac fibrosis. Hrchi fibroblasts express fibrogenic marker genes, such as Nppa, Ttn, and Clu, which indicates a key pro-fibrotic function. Hrc knockout or AAV-mediated knockdown results in pulmonary edema, severe cardiac hypertrophy, fibrosis, heart failure, and decreased survival after transverse aortic constriction in mice (Park et al., 2012; Park et al., 2013). Combined with our single-cell sequencing results, we can surmise that Hrc is a potential target for the inhibition of myocardial fibrosis during diabetes.\n\nStrikingly, GSVA and GO analyses of each fibroblast subpopulation indicated that the Hrchi fibroblasts were the most profibrogenic under diabetic conditions. This finding suggests that the Hrchi fibroblasts may be key cellular drivers of myocardial fibrosis in diabetes. We speculated that intercellular communication between Hrchi fibroblasts and other cardiac cells is a constitutive process activated in diabetes. Intercellular and protein-protein interaction networks within the Hrchi fibroblasts reveal the key role of the receptor, Itgb1, in diabetic myocardial fibrosis. The potential ligands of Itgb1, Lgals3bp, and Fn1, are upregulated in the heart tissues of diabetic mice. Perhaps, the gain-of-function of the Lgals3bp\u2013Itgb1 and Fn1\u2013Itgb1 pairs may explain the role of Hrchi fibroblasts in diabetic myocardial fibrosis.\n\nIn summary, we mapped the transcriptional alterations associated with HFD/STZ-induced diabetes in different cardiac subpopulations, and identified key ligand\u2013receptor pair drivers of myocardial fibrosis in the diabetic heart, specifically the Pdgf(s)\u2013Pdgfra and Efemp1\u2013Egfr interactions, which are mediated by fibroblasts with macrophages, endothelial cells, and epicardial cells. Crucially, Hrchi fibroblasts were identified as the key profibrogenic subpopulation that may contribute to cardiac fibrosis by remodeling the extracellular environment through drivers of intercellular communication mediated by Itgb1. Therefore, we speculate that the specific targeting of Hrchi fibroblasts will be a promising target for the treatment of myocardial fibrosis. Our future research direction will involve the combination of fibroblast-specific Hrc knockout mice and the analysis of cardiac cellular networks to confirm the role of Hrc in regulating diabetic myocardial fibrosis.\n\n## Materials and methods\n\n### Animals and treatments\n\nMale and female C57BL/6J mice weighing 18\u201322 g that were 6 weeks old were purchased from the Center for Laboratory Animals, Soochow University. After 1 week of acclimatization, a diabetic mouse model was constructed as previously described with some modifications (Lu et al., 2011; Li et al., 2017). The mice in the normal group were fed on a normal diet, while all mice in the other groups were fed with HFD (60% fat, 20% protein, and 20% carbohydrate) during the animal experiments. After 6 weeks of HFD feeding, the mice in the diabetic control model and imatinib group were fasted for 12 hr every night and injected with STZ (35 mg/kg, dissolved in 0.1 mM cold citrate buffer, pH 4.4) for 3 days to induce diabetes. Meanwhile, the control group was injected with a citrate buffer. After a week of STZ injection, the 12 hr fasting glucose level of all mice was measured. Mice with fasting blood glucose levels of \u226511.1 mmol/l (Yu et al., 2014) were considered to be type 2 diabetes mice. Then, imatinib (40 mg/kg) was administered daily through intraperitoneal injection during the procedure. After 21 weeks of the injection of STZ, the mice were anesthetized using an intraperitoneal injection of pentobarbital sodium. The hearts were dissected and stored at \u221280\u2103 for further analysis. During the experiment, the mice were kept on their respective diets and their body weight was measured weekly. All procedures were performed with minimal damage to the mice. DB/DB and DB/M transgenic mice that were 8 weeks old were purchased from the Center for Laboratory Animals, Soochow University. For the DB/M normal control group, the mice were fed on a normal diet, while the diabetic DB/DB mice were divided into two groups, one was diabetic control group and the other was Ima treatment group. After 8 weeks of injection of Ima, all mice were euthanized and the hearts were dissected for further analysis.\n\n### Echocardiographic evaluation\n\nWe performed echocardiographic measurements before and after the experimental intervention. A Vevo 2100TM High Resolution Imaging System (Visual Sonics) was used for M-mode echocardiography. According to a previous study, an evaluation of the following structural variables was conducted: left ventricular internal dimension in diastole (LVIDD), left ventricular internal dimension in systole (LVIDS), interventricular septal thickness in diastole (IVSd) and in systole (IVSs), and LV posterior wall thickness in diastole (LVPWd) and systole (LVPWs). Ejection fraction (EF), fractional shortening (FS), and E/A ratio were used to evaluate left ventricular (LV) function. We calculated the LV mass using the formula [(LVIDd + LVPWd + IVSd)3 \u2212 (LVIDd)3 \u00d7 1.04 \u00d7 0.8 + 0.6].\n\n### Immunofluorescence\n\nAfter fixing in 4% paraformaldehyde(PFA) and dehydrating with 20% sucrose, the hearts were embedded in the optimal cutting temperature compound and stored at \u221280\u00b0C. They were then sectioned using a Leica CM1950 system into 10-\u00b5m-thick horizontal slices. The sections were incubated with the primary antibody (anti-CD68 (Abcam, ab955), anti-CD31 (Abcam, ab28364), anti-CD31 (BD, 553700), anti-Pdgfb (CST, 3169T), anti-Pdgfc (Abcam, ab200401), anti-Pdgfd (Abcam, ab234666), anti-Pdgfra (R&D, AF1062-SP), anti-phospho-Pdgfra (Tyr754) (Thermo Fisher, 441008G), anti-Vim (R&D, BAM2105), anti-Hrc (Proteintech, 18142-1-AP), anti-Postn (R&D, AF2955-SP), anti-Itgb1 (Invitrogen, 14-0299-82), anti-FN1 (Abcam, ab2413), and anti-Lgals3bp (Abcam, ab236509)) or an IgG control for the immunofluorescence staining. The fluorescent secondary antibodies (goat anti mouse IgM Alexa Fluor 647, abcam, ab150123, or donkey anti rabbit IgG Alexa Fluor 568, abcam, ab175470) and DAPI (SouthernBiotech, 0100-01) were used to visualize the specific proteins. Wheat Germ Agglutinin (WGA) kit was obtained from (Thermo Fisher, W11261).\n\n### Real-time quantitative polymerase chain reaction\n\nTotal RNA from the mouse hearts was extracted using QIAGEN\u2019s miRNeasy Mini kit (217004; Qiagen, Germany). The reverse transcription step was performed using Takara\u2019s PrimeScript RT Master Mix (RR036A; Takara, Japan). A brilliant SYBR green PCR master mix (4913914, Roche, Switzerland) was used to perform qPCR on the cDNA templates in a LightCycler 480 system (Roche, Switzerland). The target mRNA expression levels were normalized to that of Gapdh and the relative fold change was calculated using the 2\u2212\u0394\u0394CT method. The qPCR primers for Col1a1 (forward 5\u2032- AACTCCCTCCACCCCAATCT, reverse 5\u2032-CCATGGAGATGCCAGATGGTT), Col3a1 (forward 5\u2032-ACGTAAGCACTGGTGGACAG, reverse 5\u2032-GGAGGGCCATAGCTGAACTG), Itgb1 (forward 5\u2032-ATGCCAAATCTTGCGGAG AAT, reverse 5\u2032-TTTGCTGCGATTGGTGACATT), and Gapdh (forward 5\u2032-GGTCATCCATGACAACTT, reverse 5\u2032-GGGGCCATCCACAGTCTT) were designed and synthesized by Invitrogen (Shanghai, China).\n\n### siRNA-mediated knockdown of Itgb1 in the mice heart\n\nThe siRNAs targeting Itgb1 were used, as previously reported (Speicher et al., 2014). Sense 5\u2032-AGAuGAGGuucAAuuuGAAdTsdT, antisense 5\u2032-UUcAAAUUGAACCUcAUCUdTsdT. Negative control: sense 5\u2032-cuuAcGcuGAGuAcuucGAdTsdT, antisense 5\u2032-UCGAAGuACUcAGCGuAAGdTsdT. These targeted siRNA sequences were subcloned into an AAV9 plasmid vector and packaged into a AAV virus particle in vitro, and the titers of the AAV viruses were ensured to exceed 1 \u00d7 1012 vg/ml. Diabetic C57BL/6 male mice received the negative control or Itgb1 siRNA mediated by AAV (0.5 mg/kg) via tail vein injection at a volume of 5 ml/kg body weight on days 1 and 5 after the first STZ injection. At day 10 and month 5, the knockdown efficiency of Itgb1 was determined in the mice heart.\n\n### Isolation of the nuclei from heart tissue\n\nIsolation of nuclei from heart tissue were analyzed, as previously described (McLellan et al., 2020). In Brief, mouse heart tissues were homogenized using a Wheaton Dounce Tissue Grinder. Then, 3 ml of the homogenization buffer was added and incubated the homogenized tissue on ice for 5 min. Then, the homogenized tissue was filtered through a 40 mm cell strainer, mixed with an equal volume of working solution and loaded into the top of an OptiPrep density gradient on top of 5 ml of 35% OptiPrep solution. The nuclei were separated through ultracentrifugation using an SW32 rotor (20 min, 9000 rpm). Thereafter, 3 ml of the nuclei were collected at the 29%/35% interphase and washed with 30 ml of phosphate-buffered saline (PBS) containing 0.04% bovine serum albumin (BSA). The nuclei were centrifuged at 300 \u00d7 g for 3 min and washed with 20 ml of PBS containing 0.04% BSA. Then, the nuclei were centrifuged at 300 \u00d7 g for 3 min and resuspended in 500 ml of PBS containing 0.04% BSA. All procedures were conducted on ice or at 4\u00b0C.\n\n### Single-nucleus transcriptomic library preparation\n\nSingle-nucleus transcriptomic library preparation were performed as previously described (Li et al., 2021). Briefly, single nucleus was resuspended in PBS containing 0.04% BSA and added to each channel. The captured nucleus was lysed, and the RNA released was barcoded through reverse transcription in individual GEMs. Barcoded cDNA was amplified, and the quality was controlled using an Agilent 4200 TapeStation System. scRNA-seq libraries were prepared using Single Cell 3\u2032 Library and Gel Bead Kit V3 following the manufacturer\u2019s introduction. Sequencing was performed on an Illumina Novaseq 6000 sequencer using a pair-end 150 bp (PE150) reading strategy (performed by Gene Denovo Biotechnology Co, Guangzhou, China).\n\n### Clustering analysis\n\nAlignment, filtering, barcode counting, and UMI counting were performed with Cell Ranger to generate a feature-barcode matrix and their global gene expression. Dimensionality reduction, visualization, and analysis of the scRNA-sequencing data were performed with the R package Seurat (version 3.1.2). As a further quality-control measure, nuclei that met any of the following criteria were filtered out: <500 or>4000 unique genes expressed, >8000 UMIs, or >10% of reads mapped to the mitochondria. After removing unwanted nuclei from the dataset, 2000 highly variable genes were used for the downstream clustering analysis. Principal component analysis (PCA) was performed, and the number of the significant principal components was calculated using the built-in \u2018ElbowPlot\u2019 function.\n\n### Differentially expressed genes analysis\n\nThe expression level of each gene in the target cluster was compared with other cells using the Wilcoxon rank-sum test. The significantly upregulated genes were identified using the following criteria: (1) at least 1.28-fold overexpression in the target cluster, (2) expression in more than 25% of the cells belonging to the target cluster, and (3) FDR is less than 0.05.\n\n### Gene set variation analysis\n\nTo identify cellular processes and pathways that were enriched in the different clusters, GSVA was performed using the GSVA R package (H\u00e4nzelmann et al., 2013) version 1.26, based on the cluster-averaged log-transformed expression matrix.\n\n### GO and KEGG pathway enrichment analysis of the differentially expressed genes\n\nGO and KEGG pathway enrichment analysis identified significantly enriched cellular processes and pathways in differentially expressed genes comparing with the whole genome background. The calculated p-value was gone through FDR correction, taking FDR \u22640.05 as a threshold. GO term and KEGG pathways that met this condition were defined as the significantly enriched pathways in differentially expressed genes.\n\n### Regulon analysis\n\nRegulon analysis was performed on the SCENIC R package to carry out transcription factor network inference (Aibar et al., 2017). In brief, gene expression matrix was used as the input, and the pipeline was implanted in three steps. First, the gene co-expression network was identified via GENIE3 (Huynh-Thu et al., 2010). Second, we pruned each module based on a regulatory motif near a transcription start site via RcisTarget. Third, we scored the activity of each regulon for each single cell via theArea Under Curve (AUC) scores using AUCell R package.\n\n### Statistical analyses\n\nThe statistical analysis of the results was performed using GraphPad Prism 9.0 software. Unpaired t-test or one-way analysis of variance was used to calculate the differences in mean values. A p-value \u22640.05 was considered statistically significant. Other statistical analyses not described above were performed using the ggpubr package in R software (https://github.com/kassambara/ggpubr copy archived at Li, 2023).\n",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "56305b73-d74d-4661-80ec-d71b0fa1df1f",
+      "submission_id": "05135f57-daee-4f42-9036-b450c7ee8628",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Muthuswamy Balasubramanyam, https://ror.org/00czgcw56 Madras Diabetes Research Foundation India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80479.sa0](https://doi.org/10.7554/eLife.80479.sa0)\n\nIn this work, utilizing a murine model as well as in vitro studies, the authors provide novel insights about drivers of intercellular communication underlying pathological extracellular matrix remodeling during diabetic cardiomyopathy. The results of the study will be of interest to investigators interested in diabetic cardiomyopathy and heart failure as well as those looking for new potential targets in the treatment of heart failure.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Muthuswamy Balasubramanyam, https://ror.org/00czgcw56 Madras Diabetes Research Foundation India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80479.sa1](https://doi.org/10.7554/eLife.80479.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Single-Cell RNA-seq of Heart Reveals Intercellular Communication Drivers of Myocardial Fibrosis in Diabetic Mice\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Muthuswamy Balasubramanyam as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Paolo Madeddu (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this letter to help you prepare a revised submission.\n\nEssential revisions:\n\nReviewer #1 (Recommendations for the authors):\n\nThe manuscript does have some limitations which need to be addressed via the review process. The study in its technical components and presentation are appropriate.\n\nComments:\n\n1. Overall, the manuscript needs some improvement in results and discussion sessions. Authors are advised to discuss their results in consonance with the recent findings illustrated in the following recent important articles pertinent to the manuscript topic.\n\nKoenig A.L. et al. 2022 (Nature Cardiovascular Research)\n\nAckers-Johnson et al. 2018 (Nature Communications)\n\n2. Legends to the figures need to be shortened \u2013 as there is an overlap in the figure legends and the methodology section.\n\n3. In the introduction, lines 78-88 should be deleted as the text context belongs to the Results section.\n\nReviewer #2 (Recommendations for the authors):\n\n1) Figure2 S1: Please highlight some examples of what is displayed.\n\n2) 2C and D: Please use the same color code for the panels.\n\n3) 2F, G please label the y-axis.\n\nReviewer #3 (Recommendations for the authors):\n\nThe study is technically sound and well-illustrated. Some sentences need to be revisited. For instance, in the Introduction \"Since adult mammalian cardiomyocytes are virtually incapable of regeneration, the most extensive extracellular matrix remodeling and fibrosis of the heart occurs in diseases caused by acute cardiomyocyte death\". Diabetes does not cause acute cardiomyocyte death.\n\nIn other points, associative findings are used to state a cause-relation effect or to highlight obvious concepts such as fibroblasts are important in fibrosis.\n\nThe study will take advantage of confirming the main data with the use of an additional mouse model. In addition, female mice should be included. The most important limit is represented by the fact the authors studied at a very late stage, these changes may not be the ones responsible for the final phenotype. A pseudotime analysis adding an early analysis of gene expression at a single cell level is mandatory.\n\nFunctional data are missing and histology is limited to fibrosis. What about capillary density and cardiomyocytes? Any effect on these cells by the used treatments? What about diastolic dysfunction? To understand whether the improvements are significant, an analysis by echocardiography is relevant.\n\nThe human data are not very useful. The association of diabetes with variants does not add to the experimental evidence provided on fibrosis. This part is weak and may be eliminated unless they provide evidence of an association with cardiac fibrosis or diastolic dysfunction.\n\nGeneral Recommendations for the authors:\n\nThe manuscript should be checked and corrected by a colleague whose first language is English. Also, the manuscript title should be changed from \"Single-Cell RNA-seq of Heart Reveals Intercellular Communication Drivers of Myocardial Fibrosis in Diabetic Mice\" to \"Single-Cell RNA-seq of Cardiomyocytes Reveals Intercellular Communication Drivers of Myocardial Fibrosis in Diabetic Cardiomyopathy\".\n",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e5a9dac6-b523-49fa-a0aa-f62ceb78c453",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C1",
+      "claim": "Approximately 537 million adults are living with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes is the third most common threat to human health, approximately 537 million adults living with diabetes, of which type 2 diabetes patients account for more than 90% of all diabetic patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about diabetes prevalence presented in the introduction without specific citation, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "13168c7c-1dad-4f5c-afbf-6c000d20a391",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C2",
+      "claim": "Type 2 diabetes patients account for more than 90% of all diabetic patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes is the third most common threat to human health, approximately 537 million adults living with diabetes, of which type 2 diabetes patients account for more than 90% of all diabetic patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the proportion of type 2 diabetes among all diabetes cases, representing established epidemiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "4b73ac8b-42b5-458c-ac38-84b8b67e71fa",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C3",
+      "claim": "Cardiac complications are the most common causes of death and disability associated with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiac complications are the most common causes of death and disability associated with diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established medical knowledge about diabetes complications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "cab6c126-5345-4c9a-a4d8-802b298ed37c",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C4",
+      "claim": "Hyperglycemia is the key initiating factor of diabetic cardiomyopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "As the key initiating factor of diabetic cardiomyopathy, hyperglycemia can prevent optimal utilization of glucose by cardiomyocytes, which leads to myocardial fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact about the pathophysiology of diabetic cardiomyopathy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "99daa20c-616e-4d57-bb01-59c26c4886c0",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C5",
+      "claim": "Hyperglycemia can prevent optimal utilization of glucose by cardiomyocytes, which leads to myocardial fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "As the key initiating factor of diabetic cardiomyopathy, hyperglycemia can prevent optimal utilization of glucose by cardiomyocytes, which leads to myocardial fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a mechanistic pathway from hyperglycemia to myocardial fibrosis, representing established pathophysiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "3be485b2-c5dc-46fe-a1fb-69129a056d7c",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C6",
+      "claim": "Myocardial fibrosis is characterized by the increase in extracellular matrix proteins, deposition of interstitial collagen, disarrangement of cardiomyocytes, and the remodeling of cardiac structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Myocardial fibrosis is characterized by the increase in extracellular matrix proteins, deposition of interstitial collagen, disarrangement of cardiomyocytes, and the remodeling of cardiac structure (Russo and Frangogiannis, 2016; Jia et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Russo and Frangogiannis, 2016; Jia et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "67e1cf16-b2d5-4495-89fb-a7136fbc34ba",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C7",
+      "claim": "Adult mammalian cardiomyocytes are incapable of regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Since adult mammalian cardiomyocytes are incapable of regeneration, the most extensive pathological extracellular matrix remodeling and fibrosis occur during various heart diseases caused by cardiomyocyte death (Kong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established biological fact and supported by citation to Kong et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "8b539000-daa8-4e72-8976-9639e8bf4ac5",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C8",
+      "claim": "The most extensive pathological extracellular matrix remodeling and fibrosis occur during various heart diseases caused by cardiomyocyte death.",
+      "claim_type": "EXPLICIT",
+      "source": "Since adult mammalian cardiomyocytes are incapable of regeneration, the most extensive pathological extracellular matrix remodeling and fibrosis occur during various heart diseases caused by cardiomyocyte death (Kong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kong et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "b74f08e3-d951-4bfc-b1d0-49378899179e",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C9",
+      "claim": "Mammalian hearts consist of many cell types, including cardiomyocytes, macrophages, fibroblasts and endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian hearts consist of many cell types, including cardiomyocytes, macrophages, fibroblasts and endothelial cells, etc. (Banerjee et al., 2007; Litvi\u0148ukov\u00e1 et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Banerjee et al., 2007; Litvi\u0148ukov\u00e1 et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "1196297d-aeba-44d2-8e1e-5537b0cbbf9c",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C10",
+      "claim": "Cell-to-cell communication is a fundamental feature of adult complex organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-to-cell communication is a fundamental feature of adult complex organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established biological principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "cfb19096-a515-4707-a018-bc4540fb0f9d",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C11",
+      "claim": "Different types of cells communicate through interactions with ligand\u2013receptor, where a ligand may be secreted and bind to a receptor, or through the fusion of two adjacent interacting cell membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "These different types of cells communicate through interactions with ligand\u2013receptor, where a ligand may be secreted and bind to a receptor, or through the fusion of two adjacent interacting cell membranes (Ramilowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ramilowski et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "f7b17e1c-98d2-4389-9897-373089679e6e",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C12",
+      "claim": "The maintenance of heart homeostasis depends on intercellular communication.",
+      "claim_type": "EXPLICIT",
+      "source": "The maintenance of heart homeostasis depends on intercellular communication (Ramilowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ramilowski et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "d6dcab7e-19b5-42e6-b55e-97bd569358ab",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C13",
+      "claim": "The study classified 32,585 cardiac cells from 6 healthy controls (16,490 cells) and 6 HFD/STZ-induced diabetic mice (16,095 cells) into 25 transcriptionally distinct pre-clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We classified 32,585 cardiac cells from 6 healthy controls (16,490 cells) and 6 HFD/STZ-induced diabetic mice (16,095 cells) into 25 transcriptionally distinct pre-clusters that exhibited highly consistent expression patterns across individual mice (Figure 1\u2014figure supplement 1B and Supplementary file 1), and identified 14 populations (Figure 1A) based on cell-specific markers and significantly enriched genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental data obtained from the scRNA-seq analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "112d687c-80e3-4cdd-9672-aea5dcef9703",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C14",
+      "claim": "The 25 pre-clusters exhibited highly consistent expression patterns across individual mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We classified 32,585 cardiac cells from 6 healthy controls (16,490 cells) and 6 HFD/STZ-induced diabetic mice (16,095 cells) into 25 transcriptionally distinct pre-clusters that exhibited highly consistent expression patterns across individual mice (Figure 1\u2014figure supplement 1B and Supplementary file 1), and identified 14 populations (Figure 1A) based on cell-specific markers and significantly enriched genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 1\u2014figure supplement 1B and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "91326972-a82e-4a34-99cb-8eabe768d1d6",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C15",
+      "claim": "14 cell populations were identified based on cell-specific markers and significantly enriched genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We classified 32,585 cardiac cells from 6 healthy controls (16,490 cells) and 6 HFD/STZ-induced diabetic mice (16,095 cells) into 25 transcriptionally distinct pre-clusters that exhibited highly consistent expression patterns across individual mice (Figure 1\u2014figure supplement 1B and Supplementary file 1), and identified 14 populations (Figure 1A) based on cell-specific markers and significantly enriched genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "3692e623-18bf-4d0b-bef8-352469f832ec",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C16",
+      "claim": "Fibroblasts are characterized by expression of Pdgfra, Pcdh9, and Bmper.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell populations included fibroblasts (Pdgfra, Pcdh9, Bmper), endothelial cells (Pecam1, Ccdc85a, Btnl9), macrophages (Fcgr1, F13a1, Adgre1), pericytes (Pdgfrb, Vtn, Trpc3), adipocytes (Adipoq, Plin1, Tshr), cardiomyocytes (Ttn, Mhrt, Myh6), smooth muscle cells (Acta2, Myh11, Cdh6), endocardial cells (Npr3, Tmem108, Plvap), epicardial cells (Msln, Pcdh15, Muc16), schwan cells (Plp1, Gfra3), and other immune cell populations (T cells, monocytes, B cells) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on marker gene expression data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "dc657ccd-6990-4cef-809d-c61df1d21b55",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C17",
+      "claim": "Endothelial cells are characterized by expression of Pecam1, Ccdc85a, and Btnl9.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell populations included fibroblasts (Pdgfra, Pcdh9, Bmper), endothelial cells (Pecam1, Ccdc85a, Btnl9), macrophages (Fcgr1, F13a1, Adgre1), pericytes (Pdgfrb, Vtn, Trpc3), adipocytes (Adipoq, Plin1, Tshr), cardiomyocytes (Ttn, Mhrt, Myh6), smooth muscle cells (Acta2, Myh11, Cdh6), endocardial cells (Npr3, Tmem108, Plvap), epicardial cells (Msln, Pcdh15, Muc16), schwan cells (Plp1, Gfra3), and other immune cell populations (T cells, monocytes, B cells) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on marker gene expression data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "8f388c54-b081-46bc-940c-f33b4b072178",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C18",
+      "claim": "Macrophages are characterized by expression of Fcgr1, F13a1, and Adgre1.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell populations included fibroblasts (Pdgfra, Pcdh9, Bmper), endothelial cells (Pecam1, Ccdc85a, Btnl9), macrophages (Fcgr1, F13a1, Adgre1), pericytes (Pdgfrb, Vtn, Trpc3), adipocytes (Adipoq, Plin1, Tshr), cardiomyocytes (Ttn, Mhrt, Myh6), smooth muscle cells (Acta2, Myh11, Cdh6), endocardial cells (Npr3, Tmem108, Plvap), epicardial cells (Msln, Pcdh15, Muc16), schwan cells (Plp1, Gfra3), and other immune cell populations (T cells, monocytes, B cells) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on marker gene expression data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "ae90c251-3faf-41b8-b97a-1116b5ff89dc",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C19",
+      "claim": "HFD/STZ treatment induced significant transcriptomic changes in most cardiac populations, especially in fibroblasts, endothelial cells, endocardial cells, cardiomyocytes and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "HFD/STZ treatment induced significant transcriptomic changes in most cardiac populations, especially in fibroblasts, endothelial cells, endocardial cells, cardiomyocytes and macrophages (Figure 1E, Supplementary file 2 and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E and Supplementary file 2, with statistical testing (two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "250c0f23-caa3-4140-9528-0d173b8c9f6e",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C20",
+      "claim": "Among the top upregulated genes in response to HFD/STZ-induced diabetes were transcripts for Pdk4, Angptl4, Txnip, Postn, Hmgcs2, and Ucp3.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the top upregulated genes in response to HFD/STZ-induced diabetes within each cell population were transcripts for Pdk4, Angptl4, Txnip, Postn, Hmgcs2, and Ucp3, of which several have been previously involved in heart failure (Yoshioka et al., 2007; Lang et al., 2018; Sheeran et al., 2019; Koenig et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data from the study and supported by citations to prior literature showing involvement in heart failure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "12a9e894-3c12-4f86-9d74-5dbfa5c89373",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C21",
+      "claim": "Several of the top upregulated genes (Pdk4, Angptl4, Txnip, Postn, Hmgcs2, and Ucp3) have been previously involved in heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the top upregulated genes in response to HFD/STZ-induced diabetes within each cell population were transcripts for Pdk4, Angptl4, Txnip, Postn, Hmgcs2, and Ucp3, of which several have been previously involved in heart failure (Yoshioka et al., 2007; Lang et al., 2018; Sheeran et al., 2019; Koenig et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Yoshioka et al., 2007; Lang et al., 2018; Sheeran et al., 2019; Koenig et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "9657323c-0953-4b22-830c-d09ae6912755",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C22",
+      "claim": "The top 30 KEGG pathways within fibroblast population were associated with dilated cardiomyopathy, cardiac muscle contraction, and hypertrophic cardiomyopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 30 KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways within fibroblast population were associated with dilated cardiomyopathy, cardiac muscle contraction, and hypertrophic cardiomyopathy (Figure 1\u2014figure supplement 3, two-sided Wilcoxon rank-sum test, FDR \u22640.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pathway analysis data shown in Figure 1\u2014figure supplement 3, with statistical testing (two-sided Wilcoxon rank-sum test, FDR \u22640.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "5defb6ac-cbb0-484e-b5bf-35f951a00262",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C23",
+      "claim": "2118 unique differentially expressed genes (uni-DEGs) were identified associated with each of the major cardiac cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether distinct cardiac cell populations respond heterogeneously to diabetic stimuli, we compared differentially expressed genes in all cardiac cell types and identified 2118 unique differentially expressed genes (uni-DEGs) associated with each of the major cardiac cell types (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on differential gene expression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "ccb1a2d4-8623-49be-a06c-ea8aa4b43132",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C24",
+      "claim": "Most of the uni-DEGs (96.6%) were detected in cardiomyocytes (32.8%), fibroblasts (18.5%), macrophages (17.7%), endothelial cells (19.7%), and endocardial cells (7.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the uni-DEGs (96.6%) were detected in cardiomyocytes (32.8%), fibroblasts (18.5%), macrophages (17.7%), endothelial cells (19.7%), and endocardial cells (7.9%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on quantitative analysis of the uni-DEGs distribution across cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "8f608ecf-9022-488b-9da3-052c7e35a53e",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C25",
+      "claim": "The genes that were most highly expressed in only a single-cell type were Gm20658 (fibroblasts), Ucp3 (cardiomyocytes), Spock2 (endocardial cells), Irf7 (endothelial cells), and Ifi206 (macrophages).",
+      "claim_type": "EXPLICIT",
+      "source": "The genes that were most highly expressed in only a single-cell type were Gm20658 (fibroblasts), Ucp3 (cardiomyocytes), Spock2 (endocardial cells), Irf7 (endothelial cells), and Ifi206 (macrophages), of which Ucp3 and Irf7 were involved in heart failure and pathological cardiac hypertrophy (Jiang et al., 2014; Senatus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on gene expression analysis from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "872af471-5ac1-447d-b283-9a3d51409abf",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C26",
+      "claim": "Ucp3 and Irf7 were involved in heart failure and pathological cardiac hypertrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes that were most highly expressed in only a single-cell type were Gm20658 (fibroblasts), Ucp3 (cardiomyocytes), Spock2 (endocardial cells), Irf7 (endothelial cells), and Ifi206 (macrophages), of which Ucp3 and Irf7 were involved in heart failure and pathological cardiac hypertrophy (Jiang et al., 2014; Senatus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Jiang et al., 2014; Senatus et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "a09a8766-6947-4ea5-b196-64f69bd2261a",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C27",
+      "claim": "GO analysis of the uni-DEGs (upregulated) showed that terms associated with collagen fibril organization and extracellular matrix remodeling were enriched in the cardiac fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) analysis of the uni-DEGs (upregulated) showed that terms associated with collagen fibril organization and extracellular matrix remodeling were enriched in the cardiac fibroblasts (Figure 2A , two-sided Wilcoxon rank-sum test, FDR \u22640.05), indicating that fibroblasts are key cellular contributors to extracellular matrix remodeling and cardiac fibrosis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GO analysis data shown in Figure 2A, with statistical testing (two-sided Wilcoxon rank-sum test, FDR \u22640.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "691116fc-4234-4413-985a-b0dadcd0c34d",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C28",
+      "claim": "Fibroblasts are key cellular contributors to extracellular matrix remodeling and cardiac fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) analysis of the uni-DEGs (upregulated) showed that terms associated with collagen fibril organization and extracellular matrix remodeling were enriched in the cardiac fibroblasts (Figure 2A , two-sided Wilcoxon rank-sum test, FDR \u22640.05), indicating that fibroblasts are key cellular contributors to extracellular matrix remodeling and cardiac fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the GO analysis results showing enrichment of ECM-related terms in fibroblasts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "34fea6d9-3432-4606-946a-48882d4f4bf0",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C29",
+      "claim": "The endothelial and fibroblast clusters are prominent hubs for autocrine and paracrine signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the endothelial and fibroblast clusters are prominent hubs for autocrine and paracrine signaling (Figure 2C, D, Supplementary file 9, Supplementary file 10, FDR \u22640.01, log2FC \u22651), and that intercellular signaling in response to HFD/STZ-induced diabetes had changed in all cardiac cells, with fibroblasts showing the greatest increase in the number of connections (Figure 2E\u2013G, Supplementary file 11, Supplementary file 12 and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ligand-receptor interaction analysis shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "97914c8b-9156-41c3-b862-4f47f4d6d38c",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C30",
+      "claim": "Intercellular signaling in response to HFD/STZ-induced diabetes had changed in all cardiac cells, with fibroblasts showing the greatest increase in the number of connections.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the endothelial and fibroblast clusters are prominent hubs for autocrine and paracrine signaling (Figure 2C, D, Supplementary file 9, Supplementary file 10, FDR \u22640.01, log2FC \u22651), and that intercellular signaling in response to HFD/STZ-induced diabetes had changed in all cardiac cells, with fibroblasts showing the greatest increase in the number of connections (Figure 2E\u2013G, Supplementary file 11, Supplementary file 12 and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 2E-G with statistical testing (two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "72e256a4-70fe-44b7-8bcd-a587722b14da",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C31",
+      "claim": "Egfr and Pdgfra were among the top hub genes based on the node degree that were specifically high-expressed receptors in the cardiac fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Egfr and Pdgfra were among the top hub genes based on the node degree that were specifically high-expressed receptors in the cardiac fibroblasts (Figure 3\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on PPI network analysis and receptor expression data shown in Figure 3\u2014figure supplement 1B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "46ea04b1-ae85-4b3b-bb3e-ee5a44606cda",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C32",
+      "claim": "Both Pdgfb and Pdgfd transcripts were upregulated in endothelial cells in diabetic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Pdgfb and Pdgfd transcripts were upregulated in endothelial cells, while Pdgfc levels were significantly elevated in the macrophages of diabetic mice (Figure 3C, D and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figures 3C and 3D with statistical testing (two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "8b5271a1-6b49-42db-857f-2045dae83022",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C33",
+      "claim": "Pdgfc levels were significantly elevated in the macrophages of diabetic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Pdgfb and Pdgfd transcripts were upregulated in endothelial cells, while Pdgfc levels were significantly elevated in the macrophages of diabetic mice (Figure 3C, D and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figures 3C and 3D with statistical testing (two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "ed823974-bcbc-414f-9bc6-3dc96c689464",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C34",
+      "claim": "The Egfr ligand Efemp1 was upregulated in the epicardial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Egfr ligand Efemp1 was upregulated in the epicardial cells (Figure 3E and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 3E with statistical testing (two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "8f6386d1-a99b-40d6-bacd-7110f42ab6f4",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C35",
+      "claim": "The interactions between cardiac fibroblasts with endothelial cells, macrophages and epicardial cells through Pdgf(s)\u2013Pdgfra and Efemp1\u2013Egfr may contribute to myocardial fibrosis in the diabetic mouse heart.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the interactions between cardiac fibroblasts with endothelial cells, macrophages and epicardial cells through Pdgf(s)\u2013Pdgfra and Efemp1\u2013Egfr may contribute to myocardial fibrosis in the diabetic mouse heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the ligand-receptor expression data, representing an inference from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "cc27ed71-21f0-4368-83b2-be3baddb0d68",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C36",
+      "claim": "HFD/STZ treatment significantly increased cardiac p-Pdgfra protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that HFD/STZ treatment significantly increased cardiac p-Pdgfra protein levels and decreased that of p-Pdgfra in the HFD/STZ + Ima group compared with the HFD/STZ group (Figure 3F, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "e3460fae-b9c5-478b-928a-4be753e7e1c3",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C37",
+      "claim": "Ima treatment decreased p-Pdgfra levels in the HFD/STZ + Ima group compared with the HFD/STZ group.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that HFD/STZ treatment significantly increased cardiac p-Pdgfra protein levels and decreased that of p-Pdgfra in the HFD/STZ + Ima group compared with the HFD/STZ group (Figure 3F, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "8bd400e3-4dbf-4cf4-b4a3-1bf6c8c029b1",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C38",
+      "claim": "The myocardium of the HFD/STZ-treated mice expressed higher levels of Col1a1 and Col3a1 compared with the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the myocardium of the HFD/STZ-treated mice expressed higher levels of Col1a1 and Col3a1 compared with the control group (Figure 3G, H, n = 6 mice per group, mean \u00b1 standard error of mean [SEM], **p < 0.01, ***p < 0.001), which coincided with increased collagen deposition in the extracellular matrix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figures 3G and 3H with statistical significance (n = 6 mice per group, mean \u00b1 SEM, **p < 0.01, ***p < 0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "1c79f02c-d024-47e1-9a7a-aedb97ace8f3",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C39",
+      "claim": "Ima treatment attenuated the increase in HFD/STZ-induced collagen synthesis and deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Ima treatment attenuated the increase in HFD/STZ-induced collagen synthesis and deposition (Figure 3I, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Masson staining data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "0c4ee8bb-e4ee-4628-8c15-f46468ecc22c",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C40",
+      "claim": "Ima treatment significantly improved the LV function of the diabetic mice as evaluated using IVSs, EF, FS, LV mass, and the E/A ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the Figure 3\u2014figure supplement 5, Ima treatment significantly improved the LV function of the diabetic mice as evaluated using IVSs, EF, FS, LV mass, and the E/A ratio.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by echocardiography data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "8de9cca0-02a3-4f5d-99e0-ad26237b2af6",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C41",
+      "claim": "Pdgf(s)\u2013Pdgfra interactions contribute to diabetic myocardial fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results show that Pdgf(s)\u2013Pdgfra interactions contribute to diabetic myocardial fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing effects of Pdgfra inhibition on fibrosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "c988ff23-8de5-4c2f-b9d9-77467dd1da73",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C42",
+      "claim": "Unsupervised Seurat-based clustering of the 6416 fibroblasts revealed 10 distinct subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised Seurat-based clustering of the 6416 fibroblasts revealed 10 distinct subpopulations (Figure 4A, Supplementary file 15, and n = 3428 fibroblasts from healthy control and n = 2988 fibroblasts from 6 diabetic mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on clustering analysis of fibroblast scRNA-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "3a69c414-0670-4437-a23c-2c938d3919d1",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C43",
+      "claim": "Fibroblast subpopulation 3 formed a distinct cluster from other fibroblast subpopulations, based on its expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis revealed that fibroblast subpopulation 3 formed a distinct cluster from other fibroblast subpopulations, based on its expression pattern (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hierarchical clustering analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "d5d23381-7503-4b86-b9f6-681299457688",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C44",
+      "claim": "The top enriched genes in subpopulation 3 (Nppa and Clu) and subpopulation 5 (Postn and Cilp) are well-established biomarkers of pro-fibrotic function.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worthy to note that the top enriched genes in subpopulation 3 (Nppa and Clu) and subpopulation 5 (Postn and Cilp) are well-established biomarkers of pro-fibrotic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about these genes as pro-fibrotic markers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "e838efd6-204e-4aa6-828a-7bdf6f7839a5",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C45",
+      "claim": "Fibroblast 3 and 5 populations were strongly involved in extracellular matrix remodeling and collagen synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene set variation analysis (GSVA) of each fibroblast subpopulation suggested a diversification of function between the subpopulations, and fibroblast 3 and 5 populations were strongly involved in extracellular matrix remodeling and collagen synthesis (Figure 4D, FDR \u22640.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GSVA analysis shown in Figure 4D with statistical significance (FDR \u22640.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "82228c71-f4b2-4876-adb8-6bacc9d4bc01",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C46",
+      "claim": "Fibroblast 3 and 5 subpopulations are myocardial fibrosis-related cardiac fibroblast subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that fibroblast 3 and 5 subpopulations are myocardial fibrosis-related cardiac fibroblast subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the GSVA analysis showing involvement in ECM remodeling and collagen synthesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "e2bf6446-683e-47c8-b8c8-c99f6561b4b0",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C47",
+      "claim": "The most significantly enriched gene in subpopulation 3 was Hrc.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significantly enriched gene in subpopulation 3 was Hrc, which is crucial for proper cardiac function through the regulation of Ca2+-uptake, storage, and release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on differential gene expression analysis of fibroblast subpopulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "a0a7cfc0-4f09-4056-ba6e-3702daf143a2",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C48",
+      "claim": "Hrc is crucial for proper cardiac function through the regulation of Ca2+-uptake, storage, and release.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significantly enriched gene in subpopulation 3 was Hrc, which is crucial for proper cardiac function through the regulation of Ca2+-uptake, storage, and release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the function of Hrc.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "5535d584-a01b-41a3-ac27-aad6f63fce70",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C49",
+      "claim": "The most significantly enriched gene in fibroblast subpopulation 5 was Postn.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significantly enriched gene in fibroblast subpopulation 5 was Postn, which is consistent with the fibroblast subset identified in an animal model of angiotensin-induced myocardial hypertrophy (McLellan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on differential gene expression analysis of fibroblast subpopulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "52d2f65e-6ed1-4c5e-a487-56ee4ab914f0",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C50",
+      "claim": "Postn-enriched fibroblast subset is consistent with the fibroblast subset identified in an animal model of angiotensin-induced myocardial hypertrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significantly enriched gene in fibroblast subpopulation 5 was Postn, which is consistent with the fibroblast subset identified in an animal model of angiotensin-induced myocardial hypertrophy (McLellan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to McLellan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "8891bb8c-65af-424a-a320-7ea607e00774",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C51",
+      "claim": "Regulons driven by Tcf4 transcription factors were enriched in subpopulations 1 and 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulons driven by Tcf4 transcription factors were enriched in subpopulations 1 and 9, while Mef2a was enriched in subpopulations 7 and 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on regulon analysis of transcription factor networks shown in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "7540afd6-0127-4fca-95e2-a64dc8168ede",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C52",
+      "claim": "Mef2a was enriched in subpopulations 7 and 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulons driven by Tcf4 transcription factors were enriched in subpopulations 1 and 9, while Mef2a was enriched in subpopulations 7 and 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on regulon analysis of transcription factor networks shown in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "dacd29aa-2585-46fe-91bf-6247a9c3e62d",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C53",
+      "claim": "A Hmgb1-based network was upregulated in the Hrchi and Postnhi fibroblast populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the role of Hmgb1 in cardiac fibrosis (Wu et al., 2018), a Hmgb1-based network was upregulated in the Hrchi and Postnhi fibroblast populations (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by regulon analysis data shown in Figure 5A and citation to Wu et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "d84ca07a-8d41-42e8-bd5b-1b0dcd99e4c6",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C54",
+      "claim": "HFD/STZ treatment induced transcriptional changes in all cardiac fibroblast subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "HFD/STZ treatment induced transcriptional changes in all cardiac fibroblast subpopulations (Figure 6\u2014figure supplement 1, Supplementary files 19, and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36), and the upregulated genes in the Hrchi fibroblasts were enriched in GO terms such as collagen fiber reorganization and extracellular matrix binding (Figure 6A and two-sided Wilcoxon rank-sum test, FDR \u22640.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis shown in Figure 6\u2014figure supplement 1 with statistical testing (two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "93efba6b-5fa5-48d5-af16-6f22dfbc2619",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C55",
+      "claim": "The upregulated genes in the Hrchi fibroblasts were enriched in GO terms such as collagen fiber reorganization and extracellular matrix binding.",
+      "claim_type": "EXPLICIT",
+      "source": "HFD/STZ treatment induced transcriptional changes in all cardiac fibroblast subpopulations (Figure 6\u2014figure supplement 1, Supplementary files 19, and two-sided Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36), and the upregulated genes in the Hrchi fibroblasts were enriched in GO terms such as collagen fiber reorganization and extracellular matrix binding (Figure 6A and two-sided Wilcoxon rank-sum test, FDR \u22640.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GO analysis shown in Figure 6A with statistical testing (two-sided Wilcoxon rank-sum test, FDR \u22640.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "eebff5bd-f0a0-4db0-9e25-9b78dba9f50d",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C56",
+      "claim": "The top 20 enriched pathways in the Hrchi fibroblasts of the diabetic group were associated with extracellular matrix organization, myocardial fibrosis, and fibroblast activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the top 20 enriched pathways in the Hrchi fibroblasts of the diabetic group were associated with extracellular matrix organization, myocardial fibrosis, and fibroblast activation (Figure 6B and two-sided Wilcoxon rank-sum test, FDR \u22640.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pathway analysis shown in Figure 6B with statistical testing (two-sided Wilcoxon rank-sum test, FDR \u22640.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "e40c17f5-c240-4d59-ae98-630ec1211e69",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C57",
+      "claim": "The Hrchi fibroblasts are key cellular drivers of myocardial fibrosis in response to HFD/STZ-induced diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the Hrchi fibroblasts are key cellular drivers of myocardial fibrosis in response to HFD/STZ-induced diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the GO and pathway analysis showing enrichment of fibrosis-related terms in Hrchi fibroblasts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "6f86e788-c575-4f61-b038-743bd6921515",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C58",
+      "claim": "The top 15 hub genes in the PPI network of upregulated genes in Hrchi fibroblasts included Itgb1, Col6a1, Col1a2, Dcn, Rpl6, Rps20, Serpinh1, Bgn, Hsp90aa1, and Col6a2.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 15 hub genes included Itgb1, Col6a1, Col1a2, Dcn, Rpl6, Rps20, Serpinh1, Bgn, Hsp90aa1, and Col6a2, of which Col6a1, Col1a2, Col6a2, Dcn, and Bgn encode for ECM proteins (Schipke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on PPI network analysis of upregulated genes in Hrchi fibroblasts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "4453d231-ec47-47ed-8c21-0c61e1e8beac",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C59",
+      "claim": "Col6a1, Col1a2, Col6a2, Dcn, and Bgn encode for ECM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 15 hub genes included Itgb1, Col6a1, Col1a2, Dcn, Rpl6, Rps20, Serpinh1, Bgn, Hsp90aa1, and Col6a2, of which Col6a1, Col1a2, Col6a2, Dcn, and Bgn encode for ECM proteins (Schipke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Schipke et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "673bb75d-3ab5-45bf-a49c-90ef629bacf3",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C60",
+      "claim": "Both Serpinh1 and Hsp90aa1 have been reported to participate in collagen synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both Serpinh1 and Hsp90aa1 have been reported to participate in collagen synthesis (Christiansen et al., 2010; Garc\u00eda et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Christiansen et al., 2010; Garc\u00eda et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "02c9c37d-ef4d-4547-8792-5558f87447a0",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C61",
+      "claim": "Lgals3bp and Fn1 were upregulated in the heart tissues of diabetic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this hypothesis, we screened all potential ligands of Itgb1 (Supplementary file 21), and found that Lgals3bp and Fn1 were upregulated in the heart tissues of diabetic mice (Figure 6E - G, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figures 6E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "c2ebce83-8615-4521-bfa0-57707f9f3ea7",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C62",
+      "claim": "The level of Itgb1 mRNA decreased by >80% in response to a single injection of Itgb1 siRNA, compared with the negative control.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of Itgb1 mRNA decreased by >80% in response to a single injection of Itgb1 siRNA, compared with the negative control (Figure 6H, n = 6 mice per group, mean \u00b1 SEM, ****p < 0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 6H with statistical significance (n = 6 mice per group, mean \u00b1 SEM, ****p < 0.0001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "a7b4c76b-cc10-4377-ba82-a09be7ac5c98",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C63",
+      "claim": "The knockdown of Itgb1 lasted for more than 5 months after the injection of the siRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the knockdown of Itgb1 lasted for more than 5 months after the injection of the siRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observation of the duration of Itgb1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "e242ec94-0fe9-4d2a-8a18-f9f1ccd80733",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C64",
+      "claim": "Levels of collagen synthesis and deposition were downregulated in the Itgb1 knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that levels of collagen synthesis and deposition were indeed downregulated in the Itgb1 knockout mice (Figure 6I, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Masson staining data shown in Figure 6I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "1057ef31-2a55-485b-9356-07507e683c39",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C65",
+      "claim": "Itgb1 in Hrchi fibroblasts contributes to HFD/STZ-induced myocardial fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results show that Itgb1 in Hrchi fibroblasts contributes to HFD/STZ-induced myocardial fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing effects of Itgb1 knockdown on fibrosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "6c3247bf-8ec1-4083-9d35-59cef5444bc5",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C66",
+      "claim": "Pdgfra phosphorylation was significantly promoted in the DB/DB mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Pdgfra phosphorylation was significantly promoted in the DB/DB mice, and the phosphorylation level of Pdgfra was significantly inhibited after Ima treatment (Figure 7A, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "9f46a4c0-66e5-4ec5-8808-a1def93957cf",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C67",
+      "claim": "The phosphorylation level of Pdgfra was significantly inhibited after Ima treatment in DB/DB mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Pdgfra phosphorylation was significantly promoted in the DB/DB mice, and the phosphorylation level of Pdgfra was significantly inhibited after Ima treatment (Figure 7A, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "76676b75-bcb0-412b-b610-893be05432b3",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C68",
+      "claim": "Hrc was highly expressed in DB/DB diabetic mice and overlaps with the fibroblast marker Desmin.",
+      "claim_type": "EXPLICIT",
+      "source": "Hrc was highly expressed in DB/DB diabetic mice and overlaps with the fibroblast marker Desmin, suggesting that Hrc is significantly activated in the fibroblasts of the diabetic heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on immunofluorescence co-staining data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "85dbdd3a-a808-466f-9d28-7ddf7d291ecc",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C69",
+      "claim": "Hrc is significantly activated in the fibroblasts of the diabetic heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Hrc was highly expressed in DB/DB diabetic mice and overlaps with the fibroblast marker Desmin, suggesting that Hrc is significantly activated in the fibroblasts of the diabetic heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the co-localization of Hrc with the fibroblast marker Desmin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "566d1c57-8995-4eb8-bdd9-f4a22dba8325",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C70",
+      "claim": "Ima treatment significantly inhibited the expression of Hrc and Desmin in DB/DB mice.",
+      "claim_type": "EXPLICIT",
+      "source": "After treatment with Ima, the expression of Hrc and Desmin was significantly inhibited (Figure 7B, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "b83f5abd-31ee-453d-83da-9ac9ef66fe79",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C71",
+      "claim": "Ima treatment could significantly inhibit the accumulation of collagen fibers in the heart of the diabetic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the qRT-PCR results of Acta2 and Col3a1 further confirmed that Ima treatment could significantly inhibit the accumulation of collagen fibers in the heart of the diabetic mice (Figure 7C, D, n = 4 mice for Acta2 and n = 6 mice for Col3a1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figures 7C and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "77ec1f2e-de71-4747-a322-76b2d660a626",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C72",
+      "claim": "Pdgf(s)\u2013Pdgfra axis-mediated ligand\u2013receptor interaction play a similar important role in the fibrogenic progression of the myocardium in DB/DB diabetic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we also examined the role of the Pdgf(s)\u2013Pdgfra axis in the fibrogenesis of diabetic myocardium, and confirmed that Pdgf(s)\u2013Pdgfra axis-mediated ligand\u2013receptor interaction play a similar important role in the fibrogenic progression of the myocardium in DB/DB diabetic mice through the double immunofluorescence staining of Pdgfra with Pdgfc and Pdgfd (Figure 7\u2014figure supplement 1, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "06c1abb6-6aef-47bc-af24-2b67d559520e",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C73",
+      "claim": "Pdgfra phosphorylation was significantly activated in the diabetic female mice.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we examined whether Pdgfra is activated in the heart of diabetic mice by performing p-Pdgfra and desmin double staining, and the results showed that Pdgfra phosphorylation was significantly activated in the diabetic mice, and that phosphorylation was inhibited after Ima treatment (Figure 8A, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "23eb3204-9e90-4ed9-8709-abc88eefc018",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C74",
+      "claim": "Pdgfra phosphorylation was inhibited after Ima treatment in female diabetic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we examined whether Pdgfra is activated in the heart of diabetic mice by performing p-Pdgfra and desmin double staining, and the results showed that Pdgfra phosphorylation was significantly activated in the diabetic mice, and that phosphorylation was inhibited after Ima treatment (Figure 8A, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "46e6dadb-96d8-4d83-94f9-b317772acd7e",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C75",
+      "claim": "Hrc is highly expressed in the heart of female mice and overlaps with that of the cardiac fibroblast marker, desmin.",
+      "claim_type": "EXPLICIT",
+      "source": "Hrc is highly expressed in the heart of female mice and overlaps with that of the cardiac fibroblast marker, desmin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on immunofluorescence co-staining data in female mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "b2cefcae-40da-414e-8991-2c11cdf2ceca",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C76",
+      "claim": "Ima treatment significantly inhibited the activation of Hrc fibroblasts in female diabetic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Ima treatment significantly inhibited the activation of Hrc fibroblasts (Figure 8B, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "84600060-ef0f-4a6c-8c37-1882e80d234f",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C77",
+      "claim": "The appearance of Hrc+ fibroblast subsets is a common phenomenon in diabetic cardiomyopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the appearance of Hrc+ fibroblast subsets is a common phenomenon in diabetic cardiomyopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observation of Hrc+ fibroblasts in multiple diabetic mouse models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "71e55962-d4c3-4ba2-abaa-51165cabf4d7",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C78",
+      "claim": "Ligand\u2013receptor interactions between macrophages, endothelial cells, and fibroblasts play an important role in promoting myocardial fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that ligand\u2013receptor interactions between macrophages, endothelial cells, and fibroblasts play an important role in promoting myocardial fibrosis (Figure 8\u2014figure supplement 1, n = 6 mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "f35aa769-fd88-4487-ae75-c308e1fc096e",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C79",
+      "claim": "This theory has been validated in both male C57 mice and DB/DB diabetes model and appears to be a common mechanism that promotes cardiac fibrosis in diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "This theory has been validated in both male C57 mice and DB/DB diabetes model and appears to be a common mechanism that promotes cardiac fibrosis in diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from validation experiments in multiple mouse models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "46226e33-87bc-4ecd-a1c3-4eb8beb40108",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C80",
+      "claim": "The study mapped out the transcriptional alterations associated with HFD/STZ-induced diabetes in different cardiac cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we mapped out the transcriptional alterations associated with HFD/STZ-induced diabetes in different cardiac cell populations, and identified the key ligand\u2013receptor pair drivers of myocardial fibrosis in the fibroblasts of the diabetic heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's findings based on the scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "d6ac2a2e-fd24-41a2-bd22-dec7d8f81ac9",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C81",
+      "claim": "The study identified the key ligand\u2013receptor pair drivers of myocardial fibrosis in the fibroblasts of the diabetic heart.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we mapped out the transcriptional alterations associated with HFD/STZ-induced diabetes in different cardiac cell populations, and identified the key ligand\u2013receptor pair drivers of myocardial fibrosis in the fibroblasts of the diabetic heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's findings based on ligand-receptor analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "36742bc1-088f-4d9e-a80c-05d260c73d3a",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C82",
+      "claim": "The emergence of Hrchi fibroblast subpopulations in response to diabetic progression presumably remodel the extracellular environment through multiple ligand\u2013receptor interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the emergence of Hrchi fibroblast subpopulations in response to diabetic progression, presumably to remodel the extracellular environment through multiple ligand\u2013receptor interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the identification and characterization of Hrchi fibroblasts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "b8c3dc72-bbef-4988-859e-4598f91b3977",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C83",
+      "claim": "A subset of Postn+ fibroblasts was found in both human dilated cardiomyopathy and mouse cardiac hypertrophy models.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a subset of Postn+ fibroblasts was found in both human dilated cardiomyopathy and mouse cardiac hypertrophy models (Koenig et al., 2022; McLellan et al., 2020), and our scRNA-seq results also identified Postn+ fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Koenig et al., 2022; McLellan et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "8ddaf720-b499-4581-a928-200f1f7729e7",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C84",
+      "claim": "Postn+ fibroblasts may play a similar important role in the various pathology of cardiac fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Postn+ fibroblasts may play a similar important role in the various pathology of cardiac fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim inferred from the observation of Postn+ fibroblasts in multiple cardiac pathologies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "59517982-3ba1-4d10-979a-f15e2e0e1391",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C85",
+      "claim": "Cardiac fibroblasts synthesize extracellular matrix proteins and their excessive activation in response to stress induced cardiac fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiac fibroblasts synthesize extracellular matrix proteins and their excessive activation in response to stress induced cardiac fibrosis (Travers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Travers et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "e3c05778-450d-4ed7-b46a-5a26e9cf4055",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C86",
+      "claim": "Pdgfra is a surface receptor tyrosine kinase that is activated upon binding to its corresponding ligand Pdgf(s), and regulates cell division and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pdgfra is a surface receptor tyrosine kinase that is activated upon binding to its corresponding ligand Pdgf(s), and regulates cell division and proliferation (Rudat et al., 2013; Gouveia et al., 2018; Soliman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Rudat et al., 2013; Gouveia et al., 2018; Soliman et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "c8e4c3ec-ef93-4fdc-8f31-b1fd8823b4e0",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C87",
+      "claim": "Egfr is a member of the ErbB family of receptor tyrosine kinases and plays an important role in wound healing and cardiac hypertrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Egfr on the other hand is a member of the ErbB family of receptor tyrosine kinases and plays an important role in wound healing and cardiac hypertrophy (Peng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Peng et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "69b49f04-8dd3-406a-82c1-cfcc59e85466",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C88",
+      "claim": "Hrc knockout or AAV-mediated knockdown results in pulmonary edema, severe cardiac hypertrophy, fibrosis, heart failure, and decreased survival after transverse aortic constriction in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Hrc knockout or AAV-mediated knockdown results in pulmonary edema, severe cardiac hypertrophy, fibrosis, heart failure, and decreased survival after transverse aortic constriction in mice (Park et al., 2012; Park et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Park et al., 2012; Park et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "039c8b5f-4bcd-497c-88ae-18ef68b858d5",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C89",
+      "claim": "Hrc is a potential target for the inhibition of myocardial fibrosis during diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with our single-cell sequencing results, we can surmise that Hrc is a potential target for the inhibition of myocardial fibrosis during diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim inferred from the study's findings about Hrchi fibroblasts and prior literature on Hrc.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "20e85f02-ad5b-481e-b62b-92e02fb5e9e5",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "claim_id": "C90",
+      "claim": "Specific targeting of Hrchi fibroblasts may be a potential therapeutic target for diabetic myocardial fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests that cardiac intercellular communication plays a critical role in diabetic myocardial fibrosis and specific targeting of Hrchi fibroblasts may be a potential therapeutic target for this cardiac disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the study's findings about the role of Hrchi fibroblasts in diabetic myocardial fibrosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "08f2b2fb-8973-4601-b88a-f65835855fe8",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing identified 14 distinct cardiac cell populations from 32,585 cells (16,490 control and 16,095 diabetic mice), with consistent expression patterns across individuals. Cell types were characterized by specific marker genes including fibroblasts (Pdgfra, Pcdh9, Bmper), endothelial cells (Pecam1, Ccdc85a, Btnl9), and macrophages (Fcgr1, F13a1, Adgre1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 are well-supported by the scRNA-seq data presented in Figure 1 and supplementary files. The cell numbers, clustering approach, and marker gene identification are clearly documented with appropriate statistical methods and visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "4eb43f85-d8a0-4fbf-9324-6271d2eba892",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HFD/STZ treatment induced significant transcriptomic changes across cardiac cell populations, particularly in fibroblasts, endothelial cells, endocardial cells, cardiomyocytes, and macrophages. Top upregulated genes included Pdk4, Angptl4, Txnip, Postn, Hmgcs2, and Ucp3, several of which are associated with heart failure. KEGG pathway analysis revealed enrichment in dilated cardiomyopathy, cardiac muscle contraction, and hypertrophic cardiomyopathy pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 are supported by differential expression analysis with appropriate statistical testing (Wilcoxon rank-sum test, FDR \u22640.05, log2FC \u22650.36) and pathway enrichment analysis shown in Figure 1E and supplementary figures. The connection to heart failure is supported by citations to prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "f4ae26ca-4a2c-4a5e-a7e9-fdc5de27517d",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of unique differentially expressed genes (uni-DEGs) identified 2118 genes associated with major cardiac cell types, with 96.6% detected in cardiomyocytes, fibroblasts, macrophages, endothelial cells, and endocardial cells. GO analysis showed enrichment of collagen fibril organization and extracellular matrix remodeling terms in cardiac fibroblasts, indicating their key role in cardiac fibrosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 are supported by differential expression analysis and GO enrichment analysis with appropriate statistical testing (FDR \u22640.05). The conclusion about fibroblasts' role in ECM remodeling is a reasonable inference from the GO enrichment data shown in Figure 2A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "c52d5f52-43fd-4e22-8047-61aafb6a5a10",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ligand-receptor interaction analysis revealed that endothelial and fibroblast clusters are prominent hubs for autocrine and paracrine signaling. In response to HFD/STZ-induced diabetes, intercellular signaling changed in all cardiac cells, with fibroblasts showing the greatest increase in the number of connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by ligand-receptor interaction network analysis shown in Figures 2C-G with appropriate statistical testing (FDR \u22640.01 for C29, FDR \u22640.05 for C30). The quantitative comparison of connection numbers across cell types provides clear evidence for the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "90fab778-07bf-499a-93b1-fdef57568ab9",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PPI network analysis identified Egfr and Pdgfra as top hub genes highly expressed in cardiac fibroblasts. In diabetic mice, Pdgfb and Pdgfd were upregulated in endothelial cells, Pdgfc in macrophages, and Efemp1 in epicardial cells, suggesting these ligand-receptor interactions contribute to myocardial fibrosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 are supported by PPI network analysis and gene expression data with statistical testing (FDR \u22640.05, log2FC \u22650.36) shown in Figure 3. The conclusion in C35 is appropriately stated as a suggestion based on the ligand-receptor expression patterns, though it represents an inference requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "4bf3a82c-7d05-41cf-9409-f76b44e09dea",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Functional validation showed that HFD/STZ treatment significantly increased cardiac p-Pdgfra protein levels and collagen gene expression (Col1a1, Col3a1), which were attenuated by imatinib (Ima) treatment. Ima treatment also improved left ventricular function in diabetic mice, demonstrating that Pdgf(s)-Pdgfra interactions contribute to diabetic myocardial fibrosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 are well-supported by immunofluorescence, qRT-PCR, Masson staining, and echocardiography data with appropriate sample sizes (n=6 mice per group) and statistical significance testing. The conclusion in C41 is justified by the convergent evidence from multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "6a3b1073-0026-45f8-88a7-66c2ca334bca",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Unsupervised clustering of 6,416 fibroblasts revealed 10 distinct subpopulations, with subpopulation 3 forming a distinct cluster. Subpopulations 3 and 5, enriched for pro-fibrotic markers (Nppa, Clu, Postn, Cilp), were strongly involved in extracellular matrix remodeling and collagen synthesis based on GSVA analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are supported by clustering analysis, hierarchical clustering, and GSVA with appropriate statistical testing (FDR \u22640.05). The identification of pro-fibrotic subpopulations is based on established marker genes and functional enrichment analysis shown in Figure 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "7b6232b0-8bcd-4cf1-abcf-02c53344cc4f",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Transcription factor network analysis identified distinct regulons in fibroblast subpopulations. Subpopulation 3 was enriched for Hrc (involved in Ca2+ regulation), while subpopulation 5 was enriched for Postn (consistent with fibroblasts in cardiac hypertrophy models). Hmgb1-based networks were upregulated in Hrc-high and Postn-high fibroblast populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 are supported by differential expression analysis, regulon analysis (Figure 5A), and citations to prior literature. The characterization of fibroblast subpopulations by marker genes and transcription factor networks is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "4255f62b-aa41-43a3-8584-cd08c094ba1d",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HFD/STZ treatment induced transcriptional changes in all cardiac fibroblast subpopulations. Hrc-high fibroblasts showed enrichment of GO terms related to collagen fiber reorganization and extracellular matrix binding, with top enriched pathways associated with ECM organization, myocardial fibrosis, and fibroblast activation, identifying them as key cellular drivers of myocardial fibrosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by differential expression analysis, GO enrichment, and pathway analysis with appropriate statistical testing (FDR \u22640.05, log2FC \u22650.36) shown in Figures 6A-B. The conclusion in C57 is a reasonable inference from the enrichment data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "d8c56b0f-db8b-4239-bd09-3206e5440af8",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PPI network analysis of upregulated genes in Hrc-high fibroblasts identified Itgb1 as a top hub gene. Itgb1 ligands Lgals3bp and Fn1 were upregulated in diabetic hearts. AAV9-mediated Itgb1 knockdown (>80% reduction lasting >5 months) reduced collagen synthesis and deposition in diabetic mice, demonstrating that Itgb1 in Hrc-high fibroblasts contributes to myocardial fibrosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C65 are well-supported by PPI network analysis, gene expression data, and functional validation using AAV9-mediated knockdown with appropriate sample sizes (n=6 mice per group) and statistical significance (p<0.0001 for knockdown efficiency). The conclusion in C65 is justified by the functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "d34b3ca8-393c-4a7a-b78e-5590f8589d1f",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Validation in DB/DB diabetic mice confirmed that Pdgfra phosphorylation was significantly promoted and inhibited by Ima treatment. Hrc was highly expressed in fibroblasts (co-localized with Desmin) and inhibited by Ima treatment. Ima treatment significantly reduced collagen accumulation (Acta2, Col3a1), confirming the role of Pdgf(s)-Pdgfra axis in DB/DB diabetic myocardial fibrosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C72 are supported by immunofluorescence and qRT-PCR data in an independent mouse model (DB/DB) with appropriate sample sizes (n=4-6 mice per group) and statistical significance. This validation strengthens the generalizability of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "b26311d3-ecf2-451c-9db2-58ba73bc7703",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Validation in female C57 diabetic mice confirmed Pdgfra phosphorylation activation and inhibition by Ima treatment, along with Hrc expression in fibroblasts. Ima treatment reduced collagen accumulation. Ligand-receptor interactions between macrophages, endothelial cells, and fibroblasts were confirmed, establishing this as a common mechanism promoting cardiac fibrosis in diabetes across multiple models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C79 are supported by validation experiments in female mice with appropriate sample sizes (n=4-6 mice per group) and statistical testing. The conclusion in C79 about a common mechanism is justified by consistent findings across male C57, DB/DB, and female C57 models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "4c615f03-4a5c-4734-b29a-be49c8439b1d",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about diabetes prevalence (537 million adults, >90% type 2), cardiac complications as leading causes of death, hyperglycemia as the key initiating factor of diabetic cardiomyopathy, characteristics of myocardial fibrosis, cardiac cell composition, and the importance of intercellular communication in heart homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 represent established knowledge in the field, supported by citations to prior literature where appropriate (C6-C9, C11-C12). These claims provide necessary context for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "c59c116d-40ec-4c49-a9a0-efb29845995a",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript cites prior literature to support claims about gene functions and disease associations, including roles of upregulated genes in heart failure, Ucp3 and Irf7 in cardiac pathology, Postn+ fibroblasts in cardiomyopathy models, ECM protein encoding genes, collagen synthesis genes, fibroblast functions, and receptor functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C26, C50, C59, C60, C83, C85-C88 are appropriately supported by citations to prior literature. These claims establish the context and significance of the findings but represent knowledge from previous work rather than novel discoveries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    },
+    {
+      "id": "2beb356f-97b8-4ffc-8009-46f64192f759",
+      "content_id": "04a339e9-ec16-49c4-9623-255f8471ea96",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript presents interpretive and speculative claims about pro-fibrotic markers, Hrc function, study achievements, Hrc-high fibroblast emergence, Postn+ fibroblast roles, and potential therapeutic targets. These represent conclusions and future directions based on the study findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44, C48, C80-C82, C84, C89-C90 include a mix of established knowledge (C44, C48), summary statements (C80-C81), inferences (C82), and speculative therapeutic implications (C84, C89-C90). While C80-C82 are supported by the data, C84, C89-C90 are appropriately stated as speculative but require further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:07:50.818560Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d6dcab7e-19b5-42e6-b55e-97bd569358ab",
+      "result_id": "08f2b2fb-8973-4601-b88a-f65835855fe8"
+    },
+    {
+      "claim_id": "112d687c-80e3-4cdd-9672-aea5dcef9703",
+      "result_id": "08f2b2fb-8973-4601-b88a-f65835855fe8"
+    },
+    {
+      "claim_id": "91326972-a82e-4a34-99cb-8eabe768d1d6",
+      "result_id": "08f2b2fb-8973-4601-b88a-f65835855fe8"
+    },
+    {
+      "claim_id": "3692e623-18bf-4d0b-bef8-352469f832ec",
+      "result_id": "08f2b2fb-8973-4601-b88a-f65835855fe8"
+    },
+    {
+      "claim_id": "dc657ccd-6990-4cef-809d-c61df1d21b55",
+      "result_id": "08f2b2fb-8973-4601-b88a-f65835855fe8"
+    },
+    {
+      "claim_id": "8f388c54-b081-46bc-940c-f33b4b072178",
+      "result_id": "08f2b2fb-8973-4601-b88a-f65835855fe8"
+    },
+    {
+      "claim_id": "ae90c251-3faf-41b8-b97a-1116b5ff89dc",
+      "result_id": "4eb43f85-d8a0-4fbf-9324-6271d2eba892"
+    },
+    {
+      "claim_id": "250c0f23-caa3-4140-9528-0d173b8c9f6e",
+      "result_id": "4eb43f85-d8a0-4fbf-9324-6271d2eba892"
+    },
+    {
+      "claim_id": "12a9e894-3c12-4f86-9d74-5dbfa5c89373",
+      "result_id": "4eb43f85-d8a0-4fbf-9324-6271d2eba892"
+    },
+    {
+      "claim_id": "9657323c-0953-4b22-830c-d09ae6912755",
+      "result_id": "4eb43f85-d8a0-4fbf-9324-6271d2eba892"
+    },
+    {
+      "claim_id": "5defb6ac-cbb0-484e-b5bf-35f951a00262",
+      "result_id": "f4ae26ca-4a2c-4a5e-a7e9-fdc5de27517d"
+    },
+    {
+      "claim_id": "ccb1a2d4-8623-49be-a06c-ea8aa4b43132",
+      "result_id": "f4ae26ca-4a2c-4a5e-a7e9-fdc5de27517d"
+    },
+    {
+      "claim_id": "8f608ecf-9022-488b-9da3-052c7e35a53e",
+      "result_id": "f4ae26ca-4a2c-4a5e-a7e9-fdc5de27517d"
+    },
+    {
+      "claim_id": "872af471-5ac1-447d-b283-9a3d51409abf",
+      "result_id": "f4ae26ca-4a2c-4a5e-a7e9-fdc5de27517d"
+    },
+    {
+      "claim_id": "a09a8766-6947-4ea5-b196-64f69bd2261a",
+      "result_id": "f4ae26ca-4a2c-4a5e-a7e9-fdc5de27517d"
+    },
+    {
+      "claim_id": "691116fc-4234-4413-985a-b0dadcd0c34d",
+      "result_id": "f4ae26ca-4a2c-4a5e-a7e9-fdc5de27517d"
+    },
+    {
+      "claim_id": "34fea6d9-3432-4606-946a-48882d4f4bf0",
+      "result_id": "c52d5f52-43fd-4e22-8047-61aafb6a5a10"
+    },
+    {
+      "claim_id": "97914c8b-9156-41c3-b862-4f47f4d6d38c",
+      "result_id": "c52d5f52-43fd-4e22-8047-61aafb6a5a10"
+    },
+    {
+      "claim_id": "72e256a4-70fe-44b7-8bcd-a587722b14da",
+      "result_id": "90fab778-07bf-499a-93b1-fdef57568ab9"
+    },
+    {
+      "claim_id": "46ea04b1-ae85-4b3b-bb3e-ee5a44606cda",
+      "result_id": "90fab778-07bf-499a-93b1-fdef57568ab9"
+    },
+    {
+      "claim_id": "8b5271a1-6b49-42db-857f-2045dae83022",
+      "result_id": "90fab778-07bf-499a-93b1-fdef57568ab9"
+    },
+    {
+      "claim_id": "ed823974-bcbc-414f-9bc6-3dc96c689464",
+      "result_id": "90fab778-07bf-499a-93b1-fdef57568ab9"
+    },
+    {
+      "claim_id": "8f6386d1-a99b-40d6-bacd-7110f42ab6f4",
+      "result_id": "90fab778-07bf-499a-93b1-fdef57568ab9"
+    },
+    {
+      "claim_id": "cc27ed71-21f0-4368-83b2-be3baddb0d68",
+      "result_id": "4bf3a82c-7d05-41cf-9409-f76b44e09dea"
+    },
+    {
+      "claim_id": "e3460fae-b9c5-478b-928a-4be753e7e1c3",
+      "result_id": "4bf3a82c-7d05-41cf-9409-f76b44e09dea"
+    },
+    {
+      "claim_id": "8bd400e3-4dbf-4cf4-b4a3-1bf6c8c029b1",
+      "result_id": "4bf3a82c-7d05-41cf-9409-f76b44e09dea"
+    },
+    {
+      "claim_id": "1c79f02c-d024-47e1-9a7a-aedb97ace8f3",
+      "result_id": "4bf3a82c-7d05-41cf-9409-f76b44e09dea"
+    },
+    {
+      "claim_id": "0c4ee8bb-e4ee-4628-8c15-f46468ecc22c",
+      "result_id": "4bf3a82c-7d05-41cf-9409-f76b44e09dea"
+    },
+    {
+      "claim_id": "8de9cca0-02a3-4f5d-99e0-ad26237b2af6",
+      "result_id": "4bf3a82c-7d05-41cf-9409-f76b44e09dea"
+    },
+    {
+      "claim_id": "c988ff23-8de5-4c2f-b9d9-77467dd1da73",
+      "result_id": "6a3b1073-0026-45f8-88a7-66c2ca334bca"
+    },
+    {
+      "claim_id": "3a69c414-0670-4437-a23c-2c938d3919d1",
+      "result_id": "6a3b1073-0026-45f8-88a7-66c2ca334bca"
+    },
+    {
+      "claim_id": "d5d23381-7503-4b86-b9f6-681299457688",
+      "result_id": "6a3b1073-0026-45f8-88a7-66c2ca334bca"
+    },
+    {
+      "claim_id": "e838efd6-204e-4aa6-828a-7bdf6f7839a5",
+      "result_id": "6a3b1073-0026-45f8-88a7-66c2ca334bca"
+    },
+    {
+      "claim_id": "82228c71-f4b2-4876-adb8-6bacc9d4bc01",
+      "result_id": "6a3b1073-0026-45f8-88a7-66c2ca334bca"
+    },
+    {
+      "claim_id": "e2bf6446-683e-47c8-b8c8-c99f6561b4b0",
+      "result_id": "7b6232b0-8bcd-4cf1-abcf-02c53344cc4f"
+    },
+    {
+      "claim_id": "a0a7cfc0-4f09-4056-ba6e-3702daf143a2",
+      "result_id": "7b6232b0-8bcd-4cf1-abcf-02c53344cc4f"
+    },
+    {
+      "claim_id": "5535d584-a01b-41a3-ac27-aad6f63fce70",
+      "result_id": "7b6232b0-8bcd-4cf1-abcf-02c53344cc4f"
+    },
+    {
+      "claim_id": "52d2f65e-6ed1-4c5e-a487-56ee4ab914f0",
+      "result_id": "7b6232b0-8bcd-4cf1-abcf-02c53344cc4f"
+    },
+    {
+      "claim_id": "8891bb8c-65af-424a-a320-7ea607e00774",
+      "result_id": "7b6232b0-8bcd-4cf1-abcf-02c53344cc4f"
+    },
+    {
+      "claim_id": "7540afd6-0127-4fca-95e2-a64dc8168ede",
+      "result_id": "7b6232b0-8bcd-4cf1-abcf-02c53344cc4f"
+    },
+    {
+      "claim_id": "dacd29aa-2585-46fe-91bf-6247a9c3e62d",
+      "result_id": "7b6232b0-8bcd-4cf1-abcf-02c53344cc4f"
+    },
+    {
+      "claim_id": "d84ca07a-8d41-42e8-bd5b-1b0dcd99e4c6",
+      "result_id": "4255f62b-aa41-43a3-8584-cd08c094ba1d"
+    },
+    {
+      "claim_id": "93efba6b-5fa5-48d5-af16-6f22dfbc2619",
+      "result_id": "4255f62b-aa41-43a3-8584-cd08c094ba1d"
+    },
+    {
+      "claim_id": "eebff5bd-f0a0-4db0-9e25-9b78dba9f50d",
+      "result_id": "4255f62b-aa41-43a3-8584-cd08c094ba1d"
+    },
+    {
+      "claim_id": "e40c17f5-c240-4d59-ae98-630ec1211e69",
+      "result_id": "4255f62b-aa41-43a3-8584-cd08c094ba1d"
+    },
+    {
+      "claim_id": "6f86e788-c575-4f61-b038-743bd6921515",
+      "result_id": "d8c56b0f-db8b-4239-bd09-3206e5440af8"
+    },
+    {
+      "claim_id": "4453d231-ec47-47ed-8c21-0c61e1e8beac",
+      "result_id": "d8c56b0f-db8b-4239-bd09-3206e5440af8"
+    },
+    {
+      "claim_id": "673bb75d-3ab5-45bf-a49c-90ef629bacf3",
+      "result_id": "d8c56b0f-db8b-4239-bd09-3206e5440af8"
+    },
+    {
+      "claim_id": "02c9c37d-ef4d-4547-8792-5558f87447a0",
+      "result_id": "d8c56b0f-db8b-4239-bd09-3206e5440af8"
+    },
+    {
+      "claim_id": "c2ebce83-8615-4521-bfa0-57707f9f3ea7",
+      "result_id": "d8c56b0f-db8b-4239-bd09-3206e5440af8"
+    },
+    {
+      "claim_id": "a7b4c76b-cc10-4377-ba82-a09be7ac5c98",
+      "result_id": "d8c56b0f-db8b-4239-bd09-3206e5440af8"
+    },
+    {
+      "claim_id": "e242ec94-0fe9-4d2a-8a18-f9f1ccd80733",
+      "result_id": "d8c56b0f-db8b-4239-bd09-3206e5440af8"
+    },
+    {
+      "claim_id": "1057ef31-2a55-485b-9356-07507e683c39",
+      "result_id": "d8c56b0f-db8b-4239-bd09-3206e5440af8"
+    },
+    {
+      "claim_id": "6c3247bf-8ec1-4083-9d35-59cef5444bc5",
+      "result_id": "d34b3ca8-393c-4a7a-b78e-5590f8589d1f"
+    },
+    {
+      "claim_id": "9f46a4c0-66e5-4ec5-8808-a1def93957cf",
+      "result_id": "d34b3ca8-393c-4a7a-b78e-5590f8589d1f"
+    },
+    {
+      "claim_id": "76676b75-bcb0-412b-b610-893be05432b3",
+      "result_id": "d34b3ca8-393c-4a7a-b78e-5590f8589d1f"
+    },
+    {
+      "claim_id": "85dbdd3a-a808-466f-9d28-7ddf7d291ecc",
+      "result_id": "d34b3ca8-393c-4a7a-b78e-5590f8589d1f"
+    },
+    {
+      "claim_id": "566d1c57-8995-4eb8-bdd9-f4a22dba8325",
+      "result_id": "d34b3ca8-393c-4a7a-b78e-5590f8589d1f"
+    },
+    {
+      "claim_id": "b83f5abd-31ee-453d-83da-9ac9ef66fe79",
+      "result_id": "d34b3ca8-393c-4a7a-b78e-5590f8589d1f"
+    },
+    {
+      "claim_id": "77ec1f2e-de71-4747-a322-76b2d660a626",
+      "result_id": "d34b3ca8-393c-4a7a-b78e-5590f8589d1f"
+    },
+    {
+      "claim_id": "06c1abb6-6aef-47bc-af24-2b67d559520e",
+      "result_id": "b26311d3-ecf2-451c-9db2-58ba73bc7703"
+    },
+    {
+      "claim_id": "23eb3204-9e90-4ed9-8709-abc88eefc018",
+      "result_id": "b26311d3-ecf2-451c-9db2-58ba73bc7703"
+    },
+    {
+      "claim_id": "46e6dadb-96d8-4d83-94f9-b317772acd7e",
+      "result_id": "b26311d3-ecf2-451c-9db2-58ba73bc7703"
+    },
+    {
+      "claim_id": "b2cefcae-40da-414e-8991-2c11cdf2ceca",
+      "result_id": "b26311d3-ecf2-451c-9db2-58ba73bc7703"
+    },
+    {
+      "claim_id": "84600060-ef0f-4a6c-8c37-1882e80d234f",
+      "result_id": "b26311d3-ecf2-451c-9db2-58ba73bc7703"
+    },
+    {
+      "claim_id": "71e55962-d4c3-4ba2-abaa-51165cabf4d7",
+      "result_id": "b26311d3-ecf2-451c-9db2-58ba73bc7703"
+    },
+    {
+      "claim_id": "f35aa769-fd88-4487-ae75-c308e1fc096e",
+      "result_id": "b26311d3-ecf2-451c-9db2-58ba73bc7703"
+    },
+    {
+      "claim_id": "e5a9dac6-b523-49fa-a0aa-f62ceb78c453",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "13168c7c-1dad-4f5c-afbf-6c000d20a391",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "4b73ac8b-42b5-458c-ac38-84b8b67e71fa",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "cab6c126-5345-4c9a-a4d8-802b298ed37c",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "99daa20c-616e-4d57-bb01-59c26c4886c0",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "3be485b2-c5dc-46fe-a1fb-69129a056d7c",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "67e1cf16-b2d5-4495-89fb-a7136fbc34ba",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "8b539000-daa8-4e72-8976-9639e8bf4ac5",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "b74f08e3-d951-4bfc-b1d0-49378899179e",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "1196297d-aeba-44d2-8e1e-5537b0cbbf9c",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "cfb19096-a515-4707-a018-bc4540fb0f9d",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "f7b17e1c-98d2-4389-9897-373089679e6e",
+      "result_id": "4c615f03-4a5c-4734-b29a-be49c8439b1d"
+    },
+    {
+      "claim_id": "12a9e894-3c12-4f86-9d74-5dbfa5c89373",
+      "result_id": "c59c116d-40ec-4c49-a9a0-efb29845995a"
+    },
+    {
+      "claim_id": "872af471-5ac1-447d-b283-9a3d51409abf",
+      "result_id": "c59c116d-40ec-4c49-a9a0-efb29845995a"
+    },
+    {
+      "claim_id": "52d2f65e-6ed1-4c5e-a487-56ee4ab914f0",
+      "result_id": "c59c116d-40ec-4c49-a9a0-efb29845995a"
+    },
+    {
+      "claim_id": "4453d231-ec47-47ed-8c21-0c61e1e8beac",
+      "result_id": "c59c116d-40ec-4c49-a9a0-efb29845995a"
+    },
+    {
+      "claim_id": "673bb75d-3ab5-45bf-a49c-90ef629bacf3",
+      "result_id": "c59c116d-40ec-4c49-a9a0-efb29845995a"
+    },
+    {
+      "claim_id": "b8c3dc72-bbef-4988-859e-4598f91b3977",
+      "result_id": "c59c116d-40ec-4c49-a9a0-efb29845995a"
+    },
+    {
+      "claim_id": "59517982-3ba1-4d10-979a-f15e2e0e1391",
+      "result_id": "c59c116d-40ec-4c49-a9a0-efb29845995a"
+    },
+    {
+      "claim_id": "e3c05778-450d-4ed7-b46a-5a26e9cf4055",
+      "result_id": "c59c116d-40ec-4c49-a9a0-efb29845995a"
+    },
+    {
+      "claim_id": "c8e4c3ec-ef93-4fdc-8f31-b1fd8823b4e0",
+      "result_id": "c59c116d-40ec-4c49-a9a0-efb29845995a"
+    },
+    {
+      "claim_id": "69b49f04-8dd3-406a-82c1-cfcc59e85466",
+      "result_id": "c59c116d-40ec-4c49-a9a0-efb29845995a"
+    },
+    {
+      "claim_id": "d5d23381-7503-4b86-b9f6-681299457688",
+      "result_id": "2beb356f-97b8-4ffc-8009-46f64192f759"
+    },
+    {
+      "claim_id": "a0a7cfc0-4f09-4056-ba6e-3702daf143a2",
+      "result_id": "2beb356f-97b8-4ffc-8009-46f64192f759"
+    },
+    {
+      "claim_id": "46226e33-87bc-4ecd-a1c3-4eb8beb40108",
+      "result_id": "2beb356f-97b8-4ffc-8009-46f64192f759"
+    },
+    {
+      "claim_id": "d6ac2a2e-fd24-41a2-bd22-dec7d8f81ac9",
+      "result_id": "2beb356f-97b8-4ffc-8009-46f64192f759"
+    },
+    {
+      "claim_id": "36742bc1-088f-4d9e-a80c-05d260c73d3a",
+      "result_id": "2beb356f-97b8-4ffc-8009-46f64192f759"
+    },
+    {
+      "claim_id": "8ddaf720-b499-4581-a928-200f1f7729e7",
+      "result_id": "2beb356f-97b8-4ffc-8009-46f64192f759"
+    },
+    {
+      "claim_id": "039c8b5f-4bcd-497c-88ae-18ef68b858d5",
+      "result_id": "2beb356f-97b8-4ffc-8009-46f64192f759"
+    },
+    {
+      "claim_id": "20e85f02-ad5b-481e-b62b-92e02fb5e9e5",
+      "result_id": "2beb356f-97b8-4ffc-8009-46f64192f759"
+    }
+  ],
+  "comparisons": []
+}

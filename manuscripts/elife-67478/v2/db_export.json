@@ -1,0 +1,1788 @@
+{
+  "submission": {
+    "id": "6a8b1065-0c4d-4454-b6d4-dcb5dd20f0b2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:39:07.230271Z",
+    "updated_at": "2025-12-03T04:39:07.230271Z"
+  },
+  "content": [
+    {
+      "id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "submission_id": "6a8b1065-0c4d-4454-b6d4-dcb5dd20f0b2",
+      "content_type": "manuscript",
+      "content_text": "# Conformational specificity of opioid receptors is determined by subcellular location irrespective of agonist\n\n## Authors\n\n- Stephanie E Crilly<sup>1</sup> ([ORCID: 0000-0002-8151-290X](https://orcid.org/0000-0002-8151-290X))\n- Wooree Ko<sup>2</sup>\n- Zara Y Weinberg<sup>2</sup> ([ORCID: 0000-0001-7176-038X](https://orcid.org/0000-0001-7176-038X))\n- Manojkumar A Puthenveedu<sup>1</sup> ([ORCID: 0000-0002-3177-4231](https://orcid.org/0000-0002-3177-4231)) \u2020\n\n### Affiliations\n\n1. Cellular and Molecular Biology Program, University of Michigan Ann Arbor United States\n2. Department of Pharmacology University of Michigan Medical School Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe prevailing model for the variety in drug responses is that different drugs stabilize distinct active states of their G protein-coupled receptor (GPCR) targets, allowing coupling to different effectors. However, whether the same ligand generates different GPCR active states based on the immediate environment of receptors is not known. Here we address this question using spatially resolved imaging of conformational biosensors that read out distinct active conformations of the \u03b4-opioid receptor (DOR), a physiologically relevant GPCR localized to Golgi and the surface in neuronal cells. We have shown that Golgi and surface pools of DOR both inhibit cAMP, but engage distinct conformational biosensors in response to the same ligand in rat neuroendocrine cells. Further, DOR recruits arrestins on the surface but not on the Golgi. Our results suggest that the local environment determines the active states of receptors for any given drug, allowing GPCRs to couple to different effectors at different subcellular locations.\n\n## Introduction\n\nA given G protein-coupled receptor\u00a0(GPCR) can generate a diverse array of signaling responses, underscoring the physiological and clinical relevance of this class of proteins. Endogenous and synthetic ligands that \u2018bias\u2019 the responses of a given receptor toward one response or another are a key aspect of this signaling diversity (Wootten et al., 2018). This diversity in responses provides several opportunities to target specific GPCR\u00a0signaling responses to reduce potential adverse effects while managing a variety of clinical conditions. However, using bias to precisely tune GPCR signaling has been difficult, suggesting that we are missing some key pieces in our understanding. Understanding the cellular mechanisms that contribute to individual components of the integrated signaling response is therefore of profound importance to understanding GPCR pharmacology.\n\nThe specific conformations adopted by GPCRs, which preferentially allow coupling to distinct effectors, are likely key determinants of which specific downstream signaling response is amplified (Latorraca et al., 2017; Wingler et al., 2019; Suomivuori et al., 2020; Okude et al., 2015). Recent studies support an allosteric model of coupling in which binding to both agonist and G protein stabilizes an active state of the receptor, among a number of states that a given receptor may sample (Okude et al., 2015; Weis and Kobilka, 2018; Nygaard et al., 2013; Ye et al., 2016; Manglik et al., 2015). In addition to canonical G protein effectors, \u03b2-arrestins interact with GPCRs through additional receptor conformations and can serve as scaffolds for kinase signaling pathways (Gurevich and Gurevich, 2019a; Liu et al., 2012; Wingler et al., 2020). However, efforts to develop compounds that stabilize one set of conformations and therefore bias the receptor response to specific pathways have been promising but difficult to translate to in vivo models (Gillis et al., 2020; Luttrell et al., 2015; Viscusi et al., 2019).\n\nOne hypothesis that could explain this difficulty is that the same agonist could drive coupling of the same receptor to different core signaling proteins based on the immediate subcellular environment of the\u00a0receptor. Although an exciting idea with profound implications, this hypothesis has been difficult to test using traditional methods, because receptor signaling readouts are complex and have been difficult to separate based on location.\n\nHere we use the \u03b4-opioid receptor (DOR), a physiologically and clinically relevant GPCR, as a model to test this hypothesis. DOR localizes primarily to the Golgi in neuronal cells, with a small amount on the plasma membrane (PM)\u00a0(Kim and von Zastrow, 2003; Shiwarski et al., 2017a; Zhang et al., 1998; Cahill et al., 2001a; Wang and Pickel, 2001; Mittal et al., 2013; Shiwarski et al., 2017b). DOR can be activated both on the PM and the Golgi by synthetic agonists, but whether the two activation states are different is not clear (Stoeber et al., 2018). Relocating DOR from intracellular compartments to the PM increases the ability of DOR agonists to relieve pain (Shiwarski et al., 2017a; Mittal et al., 2013; Cahill et al., 2001b; Patwardhan et al., 2005), illustrating the importance of understanding whether DOR activation on the Golgi is different from that on the PM.\n\nHere we leverage conformational biosensors and high-resolution imaging to test whether DOR activation on the Golgi is different from that on the PM. We have\u00a0shown that DOR on the PM, when activated by the selective DOR agonist SNC80, can recruit both a nanobody-based sensor and a G protein-based sensor that read out active DOR conformations, as well as \u03b2-arrestins. In contrast, DOR in the Golgi apparatus, when activated by the same ligand, recruits the nanobody sensor, but not the G protein-based sensor or \u03b2-arrestins. Nevertheless, Golgi-localized DOR is competent to inhibit cAMP. Together, these data demonstrate that these biosensors could be used to read out subtle differences in GPCR conformations even if signaling readouts are similar. Our results that the downstream effectors recruited by the same GPCR, activated by the same ligand, depend on the location of the receptor, suggest that subcellular location could be a master regulator of GPCR coupling to specific effectors and signaling for any given GPCR-ligand pair.\n\n## Results\n\nNanobody and miniG protein biosensors are emerging as powerful tools to study the effects of ligand-induced receptor conformational changes at the molecular and cellular level (Manglik et al., 2017; Crilly and Puthenveedu, 2020; Wan et al., 2018). These sensors differentially engage the \u03bc-opioid receptor (MOR) and the\u00a0\u03ba-opioid receptor (KOR) activated by different agonists in vitro (Livingston et al., 2018) or in the PM (Stoeber et al., 2020), suggesting that they can provide a readout of conformational heterogeneity in agonist-stabilized active states. Because DOR is highly similar to MOR and KOR in the intracellular regions recognized by the sensors (Chen et al., 1993), we asked whether these sensors could be optimized to read out specific active DOR conformations at distinct subcellular locations. We used the nanobody biosensor Nb39, which recognizes opioid receptor active conformations through residues conserved across MOR, KOR, and DOR (Che et al., 2018; Huang et al., 2015), and the miniGsi biosensor, which mimics the interaction of the G\u03b1i protein with GPCRs (Wan et al., 2018; Nehm\u00e9 et al., 2017), as two orthogonal readouts of DOR conformations.\n\nAs an initial step, we first tested whether these sensors report active DOR conformations on the PM, similar to what has been reported for MOR and KOR. We used total internal fluorescence reflection microscopy (TIR-FM), which uses an evanescent wave to specifically excite fluorescent proteins on the PM to a depth of approximately 100 nm into the cell (Hellen and Axelrod, 1991), to visualize sensor recruitment to activated DOR on the PM with high sensitivity (Figure 1A). When cells were treated with either small molecule agonist SNC80 or peptide DPDPE, Nb39 (Figure 1B\u2013C) and miniGsi (Figure 1D\u2013E) were rapidly recruited to DOR on the plasma membrane (PM DOR), as observed by a rapid increase in fluorescence. Fluorescence of both sensors increased significantly after treatment with either agonist, but not inverse agonist ICI174864 (ICI) (Figure 1F), indicating specificity of both sensors for an agonist-induced active conformation. Furthermore, recruitment of Nb39 and miniGsi to PM DOR was concentration-dependent and saturated at the concentration of SNC80 used in these experiments (10 \u03bcM) (Figure 1G). Concentration-response curves also revealed that miniGsi was more potently recruited to PM DOR than Nb39 in response to the agonist SNC80.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67478/elife-67478-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of biosensor recruitment to \u03b4-opioid receptor (DOR) in the plasma\u00a0membrane\u00a0(PM) using total internal reflection fluorescence microscopy (TIR-FM). Only fluorescent proteins within the evanescent wave close to the PM were excited, such that baseline fluorescence was low when biosensors were diffuse in the cell but increased upon agonist addition as biosensors were\u00a0recruited to active DOR in the plasma membrane. (B) Nb39-mVenus in PC12 cells expressing SNAP-DOR imaged using TIR-FM to capture recruitment to the PM after addition of 10 \u00b5M SNC80 (scale bar\u00a0=\u00a05 \u00b5m). (C) Increase in Nb39-mVenus fluorescence by TIR-FM normalized to the mean baseline fluorescence over time after addition of 10 \u00b5M DOR agonist, DPDPE or SNC80, 10 \u00b5M inverse agonist, ICI174864 (ICI), or vehicle control (Ctrl, n\u00a0=\u00a010 cells; ICI, n\u00a0=\u00a017 cells; DPDPE, n\u00a0=\u00a017 cells; SNC80, n\u00a0=\u00a016 cells; all across three biological replicates defined as coverslips prepared and imaged independently; solid line indicates mean, shading\u00a0\u00b1\u00a0SEM). (D) Venus-miniGsi in PC12 cells expressing SNAP-DOR imaged using TIR-FM to capture recruitment to the PM after addition of 10 \u00b5M SNC80 (scale bar\u00a0=\u00a05 \u00b5m). Calibration bars indicate relative fluorescence values in scaled images. (E) Increase in Venus-miniGsi fluorescence by TIR-FM normalized to the mean baseline fluorescence over time after addition of 10 \u00b5M DPDPE or SNC80, 10 \u00b5M inverse agonist ICI, or vehicle control (Ctrl, n\u00a0=\u00a017 cells; ICI, n\u00a0=\u00a015 cells; DPDPE, n\u00a0=\u00a017 cells; SNC80, n\u00a0=\u00a014 cells; all across three biological replicates; dashed line indicates mean, shading\u00a0\u00b1\u00a0SEM). (F) Nb39 max PM biosensor fluorescence significantly increased over baseline within 60 s of addition of either agonist DPDPE or SNC80 but not with addition of inverse agonist ICI, by one-way ANOVA (p<0.0001) with p-values from Dunnett\u2019s multiple comparisons test to vehicle control reported in the figure. miniGsi max PM biosensor fluorescence significantly increased over baseline within 60 s of addition of either agonist DPDPE or SNC80 but not with addition of inverse agonist ICI, by one-way ANOVA (p<0.0001) with p-values from Dunnett\u2019s multiple comparisons test to vehicle control reported in the figure. Venus-miniGs, a sensor for Gs coupling, fluorescence did not visibly increase after addition of 10 \u00b5M SNC80 (Nb39: Ctrl, n\u00a0=\u00a010 cells; ICI, n\u00a0=\u00a017 cells; DPDPE, n\u00a0=\u00a017 cells; SNC80, n\u00a0=\u00a016 cells; miniGsi: Ctrl, n\u00a0=\u00a017 cells; ICI, n\u00a0=\u00a015 cells; DPDPE, n\u00a0=\u00a017 cells; SNC80, n\u00a0=\u00a014 cells; miniGs-SNC80, n\u00a0=\u00a020 cells; all across three biological replicates; mean\u00a0\u00b1\u00a095% CI, points represent individual cells). (G) Concentration-response curves for Nb39 (EC50\u00a0=\u00a022.7 nM) and miniGsi (EC50\u00a0=\u00a02.284 nM) plasma membrane recruitment measured in TIR-FM, in cells treated with increasing concentrations of SNC80 ranging from 0.1 nM to 10 \u03bcM. Responses were normalized from 0 to 100 for cells within each condition (Nb39, n\u00a0=\u00a013 cells; miniGsi, n\u00a0=\u00a07 cells; symbols indicate mean normalized response for cells in each condition with error bars indicating\u00a0\u00b1\u00a095% CI; solid and dashed lines indicate fitted non-linear curves with a standard slope of 1, for Nb39 and miniGsi, respectively). (H) Schematic of biosensor recruitment to DOR in intracellular compartments upon addition of a cell-permeable agonist. Both Nb39 and miniGsi biosensors were diffuse throughout the cytoplasm in the absence of agonist (left), but were expected to localize to membranes containing active receptor upon agonist addition (right). (I) PC12 cells expressing SNAP-DOR (magenta in merge) and Nb39-mVenus (green in merge) were treated with 10 \u00b5M SNC80 and imaged live by confocal microscopy. Treatment with SNC80 led to an increase in Nb39-mVenus signal in a perinuclear region (yellow arrow), which colocalized with intracellular DOR (white in merge). A small amount of Nb39 recruitment is also visible at the PM (yellow arrowhead) (scale bar\u00a0=\u00a05 \u00b5m). (J) PC12 cells expressing SNAP-DOR (magenta in merge) and Venus-miniGsi (green in merge) were treated with 10 \u00b5M SNC80 and imaged live by confocal microscopy. miniGsi did not localize to intracellular DOR after agonist treatment, though a small amount of miniGsi recruitment is visible at the PM (yellow arrowhead) (scale bar\u00a0=\u00a05 \u00b5m). (K) Nb39 (solid line indicates mean, shading\u00a0\u00b1\u00a0SEM) and miniGsi (dashed line, shading\u00a0\u00b1\u00a0SEM) fluorescence in the region of the cell defined by intracellular DOR normalized to mean baseline fluorescence over time after addition of 10 \u00b5M SNC80 (Nb39, n\u00a0=\u00a049 cells across four biological replicates; miniGsi, n\u00a0=\u00a051 cells across three biological replicates). (L) Max intracellular biosensor fluorescence in the region of the cell defined by intracellular DOR within 120 s of agonist addition shows a significant increase in Nb39 recruitment with addition of permeable agonist SNC80 but not with peptide agonist DPDPE, by one-way ANOVA (p<0.0001) with p-values from Dunnett\u2019s multiple comparisons test to vehicle control reported in the figure. In contrast, miniGsi intracellular max fluorescence did not increase upon addition of 10 \u00b5M SNC80 by one-tailed Student\u2019s t-test compared to vehicle control. miniGs intracellular max fluorescence also did not visibly increase upon SNC80 treatment (Nb39: Ctrl, n\u00a0=\u00a061 cells; DPDPE, n\u00a0=\u00a061 cells; SNC80, n\u00a0=\u00a049 cells; miniGsi: Ctrl, n\u00a0=\u00a057 cells; SNC80, n\u00a0=\u00a051 cells; miniGs: SNC80, n\u00a0=\u00a036 cells; all across a minimum of three biological replicates; mean\u00a0\u00b1\u00a095% CI, points represent individual cells). (M) Max plasma membrane biosensor fluorescence in the region of the cell defined by plasma membrane DOR for the same cells quantified in (L) shows a significant increase in Nb39 recruitment with addition of DPDPE and a small but non-significant increase upon addition of SNC80, by one-way ANOVA (p<0.0001). P-values from Dunnett\u2019s multiple comparisons test to vehicle control are reported. MiniGsi plasma membrane max fluorescence also significantly increased upon addition of SNC80, as estimated by one-tailed Student\u2019s t-test, compared to vehicle control (Nb39: Ctrl, n\u00a0=\u00a061 cells; DPDPE, n\u00a0=\u00a061 cells; SNC80, n\u00a0=\u00a049 cells; miniGsi: Ctrl, n\u00a0=\u00a057 cells; SNC80, n\u00a0=\u00a051 cells; miniGs: SNC80, n\u00a0=\u00a036 cells; all across a minimum of three biological replicates; mean\u00a0\u00b1\u00a095% CI, points represent individual cells with one outlier in the miniGsi SNC80 condition equal to 2.0167, not shown in the graph).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67478/elife-67478-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Plasma membrane \u03b4-opioid receptor\u00a0(DOR) expression levels in cells expressing Nb39, miniGsi, or miniGs were similar across untreated or 10 \u00b5M agonist treatment conditions control (Nb39: Ctrl, n\u00a0=\u00a010 cells; ICI, n\u00a0=\u00a017 cells; DPDPE, n\u00a0=\u00a017 cells; SNC80, n\u00a0=\u00a016 cells; miniGsi: Ctrl, n\u00a0=\u00a017 cells; ICI, n\u00a0=\u00a015 cells; DPDPE, n\u00a0=\u00a017 cells; SNC80, n\u00a0=\u00a014 cells; miniGs-SNC80, n\u00a0=\u00a020 cells; across a minimum of three biological replicates; mean\u00a0\u00b1\u00a095% CI, points represent individual cells). (B) Intracellular DOR expression levels in cells expressing Nb39, miniGsi, or miniGs were similar across untreated or 10 \u00b5M agonist treatment conditions (Nb39: Ctrl, n\u00a0=\u00a061 cells; DPDPE, n\u00a0=\u00a061 cells; SNC80, n\u00a0=\u00a049 cells; miniGsi: Ctrl, n\u00a0=\u00a057 cells; SNC80, n\u00a0=\u00a051 cells; miniGs: SNC80, n\u00a0=\u00a036 cells; all across three biological replicates; mean\u00a0\u00b1\u00a095% CI, points represent individual cells).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67478/elife-67478-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) PC12 cells expressing SNAP-DOR (magenta in merge) and Nb39-mVenus (green in merge) were imaged live by confocal microscopy. Cells were pretreated with an\u00a0irreversible, impermeable antagonist \u03b2-chlornaltrexamine\u00a0(CNA) (1 \u00b5M) for 15 min prior to imaging to inhibit plasma membrane \u03b4-opioid receptor\u00a0(DOR) activation and internalization. After 1 \u00b5M SNC80 treatment, Nb39-mVenus fluorescence increased in a perinuclear region, which colocalized with intracellular DOR (white in merge), and this recruitment was reversed upon a washout, introducing fresh imaging media containing permeable antagonist naltrindole (NTI, 10 \u00b5M) (scale bar\u00a0=\u00a05 \u00b5m). (B) Representative trace of Nb39 fluorescence in the region of the cell defined by intracellular DOR normalized to mean baseline fluorescence for the cell shown in (A).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67478/elife-67478-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Nb39, but not miniGsi, max intracellular fluorescence increased over baseline within 120 s of 10 \u00b5M SNC80 addition in cells treated with 10 \u00b5M PI3K inhibitor LY294002 or 20 \u00b5M PI4K inhibitor MI14 to induce \u03b4-opioid receptor\u00a0(DOR) retention in the Golgi through a DOR-specific and -non-specific mechanism (Malhotra and Campelo, 2011; Wang et al., 2003), respectively (Nb39: PI3Ki, n\u00a0=\u00a018 cells; PI4Ki, n\u00a0=\u00a025 cells; miniGsi: PI3Ki, n\u00a0=\u00a012 cells; PI4Ki, n\u00a0=\u00a08 cells; all across one biological replicate; mean\u00a0\u00b1\u00a095% CI, points represent individual cells). (B) Nb39 and miniGsi max plasma membrane fluorescence increased to a similar degree within 60 s of 10 \u00b5M SNC80 addition in untreated cells without Golgi DOR and\u00a0nerve growth factor\u00a0(NGF)-treated cells with Golgi DOR (Nb39: untreated, n\u00a0=\u00a016 cells; NGF, n\u00a0=\u00a07 cells; miniGsi: untreated, n\u00a0=\u00a014 cells; NGF, n\u00a0=\u00a011 cells; all across one biological replicate; mean\u00a0\u00b1\u00a095% CI, points represent individual cells). (C) Scatterplot of max intracellular fluorescence increase and corresponding mean Nb39 fluorescence as a measure of sensor expression (n\u00a0=\u00a049 cells, points represent individual cells). Linear regression analysis indicated no significant correlation between max intracellular fluorescence increase and Nb39 expression (R2\u00a0=\u00a00.05745, p=0.0972). (D) Scatterplot of max intracellular fluorescence increase and corresponding mean miniGsi fluorescence as a measure of sensor expression (n\u00a0=\u00a051 cells, points represent individual cells). Linear regression analysis indicated no significant correlation between max intracellular fluorescence increase and miniGsi expression (R2\u00a0=\u00a00.005465, p=0.6062).\n\nInterestingly, DPDPE recruited Nb39 to PM DOR more strongly than SNC80 (Figure 1C,F), whereas the opposite trend was observed for miniGsi (Figure 1E\u2013F), suggesting that these sensors might report selective conformations of DOR induced by different agonists. MiniGs, which mimics G\u03b1s protein interaction with Gs-coupled GPCRs, was not recruited to PM DOR (Figure 1F), suggesting that the miniGsi sensor specifically reports activation of the Gi-coupled DOR. DOR expression levels were, overall, comparable across conditions (Figure 1\u2014figure supplement 1A). Overall, our data show that Nb39 and miniGsi report agonist-induced active conformations of PM DOR.\n\nTo test whether DOR localized to an intracellular compartment engages Nb39 or miniGsi differently upon activation by the same agonist, we took advantage of the fact that newly synthesized DOR is retained in an intracellular compartment in neurons and pheochromocytoma-12 cells\u00a0(PC12 cells) (Figure 1H and I, yellow arrows) acutely treated with nerve growth factor (NGF) (Kim and von Zastrow, 2003; Shiwarski et al., 2017a). The presence of both plasma membrane and intracellular pools of DOR in these cells allowed us to measure sensor recruitment to DOR at both of these locations.\n\nWe first tested whether the two different biosensors were differentially recruited to DOR in intracellular compartments (IC DOR) vs PM DOR by confocal imaging (Figure 1H). When cells were treated with 10 \u00b5M SNC80, a membrane-permeable, small molecule agonist, Nb39 was rapidly recruited to intracellular SNAP-tagged DOR, within 30 s (Figure 1I, Video 1). When quantitated, Nb39 fluorescence in the region of the cell defined by IC DOR rapidly and significantly increased after SNC80 addition (Figure 1K\u2013L). This Nb39 recruitment was dynamic and required DOR activation, as the DOR antagonist naltrindole rapidly reversed this effect (Figure 1\u2014figure supplement 2A\u2013B). In striking contrast to Nb39, miniGsi was not recruited to IC DOR in the same time frame (Figure 1J\u2013K, Video 2), despite comparable levels of IC DOR (Figure 1\u2014figure supplement 1B). MiniGsi fluorescence in the region of the cell defined by IC DOR did not increase in cells treated with SNC80 (Figure 1K\u2013L). As a control, miniGs was also not recruited to IC DOR in cells treated with SNC80 (Figure 1L).\n\n![Video 1.](https://cdn.elifesciences.org/articles/67478/elife-67478-video1.mp4.jpg)\n\n**Video 1.:** Nb39 was rapidly recruited to intracellular \u03b4-opioid receptor\u00a0(DOR) (seen as white due to colocalization) upon SNC80 addition.\n\n![Video 2.](https://cdn.elifesciences.org/articles/67478/elife-67478-video2.mp4.jpg)\n\n**Video 2.:** In contrast to Nb39, miniGsi was not recruited to intracellular \u03b4-opioid receptor\u00a0(DOR) upon SNC80 addition.\n\nBoth sensors were recruited to PM DOR, as seen by confocal imaging in the same cells in which we measured recruitment to IC DOR, although the sensitivity of detection was lower in confocal imaging (Figure 1I\u2013J, yellow arrowheads, and Figure 1M). MiniGsi was recruited to PM DOR more strongly than Nb39 (Figure 1F,M), consistent with the TIR-FM results, which makes the absence of miniGsi recruitment to IC DOR in response to SNC80 even more striking. These results indicate that SNC80 promotes an active DOR conformation preferentially recognized by Nb39 in intracellular compartments and a distinct active DOR conformation preferentially recognized by miniGsi at the PM, suggesting location-specific conformational effects of SNC80 on DOR.\n\nDifferential biosensor recruitment to IC DOR did not depend on the method used to cause DOR retention in this compartment (Figure 1\u2014figure supplement 3A), and recruitment to PM DOR was unaffected by the presence of IC DOR (Figure 1\u2014figure supplement 3B). Further, recruitment of either sensor was not significantly correlated with sensor expression level (Figure 1\u2014figure supplement 3C\u2013D), as miniGsi failed to show recruitment to IC DOR across a broad range of expression levels (Figure 1\u2014figure supplement 3D).\n\nWhen cells were treated with 10 \u00b5M peptide agonist DPDPE, which does not readily cross the PM over short time scales (Stoeber et al., 2018), Nb39 was not recruited to IC DOR (Figure 1L). This suggests that activation of PM DOR is not sufficient for recruitment of Nb39 to IC DOR. We next tested whether PM DOR activation was required for differential sensor recruitment to IC DOR. Cells were pretreated with a high concentration (100 \u00b5M) of DOR inverse agonist ICI, a peptide restricted to the extracellular space (Stoeber et al., 2018), to pharmacologically block PM DOR. Nb39 recruitment to IC DOR after 100 nM SNC80 addition was then measured. Nb39 was robustly recruited to IC DOR, even when PM DOR was pharmacologically blocked, indicating that recruitment to IC DOR does not require activation of PM DOR (Figure 2A, top, 2B, C). When PM DOR was pharmacologically blocked, miniGsi again remained diffuse throughout the cell and was not recruited to IC DOR (Figure 2A, bottom, 2B, C), indicating that the absence of miniGsi recruitment to IC DOR is not due to sequestration of sensor at PM DOR. To test whether activation of endogenous G proteins was restricting miniGsi recruitment, cells were pretreated with pertussis toxin (PTX) to inactivate endogenous G\u03b1i/o proteins. Even in PTX-treated cells, miniGsi was not recruited to IC DOR, suggesting that competition with endogenous G\u03b1i/o protein effectors for interaction with DOR is not responsible for the lack of recruitment of miniGsi to IC DOR (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67478/elife-67478-fig2-v2.jpg)\n\n**Figure 2.:** (A) PC12 cells expressing SNAP-DOR (magenta in merge) and Nb39-mVenus or Venus-miniGsi (green in merge) were imaged live by confocal microscopy with 100 \u00b5M ICI174864\u00a0(ICI) present in the media before addition of 100 nM SNC80. After SNC80 treatment, Nb39-mVenus fluorescence increased in a perinuclear region (yellow arrow), which colocalized with intracellular \u03b4-opioid receptor\u00a0(DOR) (white in merge), whereas Venus-miniGsi remained diffuse through the cell (scale bar\u00a0=\u00a05 \u00b5m). (B) Nb39 (solid line indicates mean, shading\u00a0\u00b1\u00a0SEM) or miniGsi (dashed line, shading\u00a0\u00b1\u00a0SEM) fluorescence in the region of the cell defined by intracellular DOR normalized to mean baseline fluorescence in cells treated with 100 \u00b5M ICI and 100 nM SNC80 (Nb39, n\u00a0=\u00a054 cells across three biological replicates; miniGsi, n\u00a0=\u00a058 cells across four biological replicates). (C) Nb39-mVenus max intracellular fluorescence increased over baseline within 120 s of SNC80 in cells treated with 100 \u00b5M ICI and 100 nM SNC80. In contrast, miniGsi intracellular max fluorescence did\u00a0not visibly increase over baseline in cells treated with ICI and SNC80, nor in cells pretreated with pertussis toxin (PTX) and SNC80 (Nb39: ICI\u00a0+\u00a0SNC80, n\u00a0=\u00a054 cells; miniGsi: ICI\u00a0+\u00a0SNC80, n\u00a0=\u00a058 cells; PTX\u00a0+\u00a0SNC80, n\u00a0=\u00a033 cells; mean\u00a0\u00b1\u00a095% CI, points represent individual cells). (D) PC12 cells expressing Flag-DOR and Nb39-mVenus or Venus-miniGsi, (E) (green in merge) were treated with either 10 \u00b5M \u03b2-chlornaltrexamine (CNA) alone for 15 min or 10 \u00b5M CNA for 15 min followed by 10 \u00b5M SNC80 for 5 min, then fixed and stained for Flag (magenta in merge) and trans-Golgi network marker TGN-38 (blue in merge) (scale bar\u00a0=\u00a05 \u00b5m). Colocalization of DOR, Nb39, and TGN-38 is visible in white and light blue (yellow arrow) in cells treated with CNA and SNC80, but not CNA alone. (F) Normalized Nb39-mVenus fluorescence enriched in the Golgi, expressed as sensor fluorescence in the region of the cell defined by TGN-38 staining divided by sensor fluorescence in the region of the cell not containing TGN-38 staining. Nb39 Golgi enrichment was significantly increased in cells treated with CNA and SNC80, but not CNA alone, by one-way ANOVA (p<0.0001) with p-values reported in the figure from Dunnett\u2019s multiple comparisons test compared to control cells (Ctrl, n\u00a0=\u00a046 cells; CNA, n\u00a0=\u00a049; CNA\u00a0+\u00a0SNC80, n\u00a0=\u00a052; all across two biological replicates; points indicate individual cells with bars representing mean\u00a0\u00b1\u00a095% CI). (G) Venus-miniGsi Golgi enrichment was not significantly increased in cells treated with either CNA and SNC80 or CNA alone, by one-way ANOVA (p=0.0654) with p-values reported in the figure from Dunnett\u2019s multiple comparisons test compared to control cells (Ctrl, n\u00a0=\u00a040 cells; CNA, n\u00a0=\u00a050; CNA\u00a0+\u00a0SNC80, n\u00a0=\u00a037; all across two biological replicates; points indicate individual cells with bars representing mean\u00a0\u00b1\u00a095% CI).\n\nImmunofluorescence microscopy showed that Nb39 was recruited to IC DOR localized to the Golgi. Using a similar approach as described above, PC12 cells expressing Flag-tagged DOR and either Nb39 or miniGsi were pretreated for 15 min with 10 \u00b5M \u03b2-chlornaltrexamine (CNA), an irreversible, cell-impermeable antagonist (Shiwarski et al., 2017a; Virk and Williams, 2008), to irreversibly block PM DOR, before treating with 10 \u00b5M SNC80 for 5 min. Cells were stained for TGN-38, a marker for the trans-Golgi network, which was previously shown to colocalize with IC DOR (Shiwarski et al., 2017a). Consistent with live-cell imaging data, only Nb39, and not miniGsi, was recruited to IC DOR in a region of the cell colocalizing with the TGN-38 marker (Figure 2D,E) in cells treated with CNA and SNC80. CNA alone did not cause recruitment of either sensor. Sensor fluorescence in the region of the cell defined by TGN-38 staining was normalized to sensor fluorescence in the cell outside this region, as a measure of sensor enrichment in the Golgi. Treatment with CNA and SNC80 significantly increased Nb39 Golgi enrichment (Figure 2F), whereas miniGsi enrichment was not significantly different from control cells (Figure 2G). These results confirm differential biosensor recruitment to IC DOR specifically localized to the Golgi and reiterate that PM DOR activation is not required for differential biosensor recruitment to Golgi DOR.\n\nIn addition to heterotrimeric G proteins, DOR and other GPCRs interact with other proteins and signaling effectors after agonist-induced conformational changes. Agonist-dependent differential biosensor recruitment to MOR and KOR in the PM correlates with recruitment of other receptor effectors, specifically G protein-coupled receptor kinase 2 (GRK2), which mediates receptor desensitization (Stoeber et al., 2020). Given differential recruitment of Nb39 and miniGsi to IC DOR, we hypothesized that Golgi localization may also influence coupling to other downstream signaling effectors. \u03b2-arrestins interact with DOR and other GPCRs after activation by agonists and receptor phosphorylation by GRKs to mediate receptor desensitization and internalization from the PM (Zhang et al., 1999; Zhang et al., 2005; Gurevich and Gurevich, 2019b). \u03b2-arrestins can also scaffold kinase-signaling complexes from GPCRs at the PM and endosomes (Peterson and Luttrell, 2017; DeFea et al., 2000a; DeFea et al., 2000b; McDonald et al., 2000; Weinberg et al., 2017).\n\nTo test whether \u03b2-arrestin effectors are recruited to active IC DOR, we monitored recruitment of fluorescently tagged \u03b2-arrestin-1 or \u03b2-arrestin-2 to IC DOR. Similar to miniGsi, neither \u03b2-arrestin-1 nor \u03b2-arrestin-2 was recruited to IC DOR in cells treated with SNC80, and no increase in fluorescence in the region of the cell defined by IC DOR was detected (Figure 3A\u2013C). In contrast, both \u03b2-arrestins were visibly recruited to the PM by confocal imaging (Figure 3A,B, yellow arrowheads) and by quantitation of TIR-FM imaging (Figure 3D\u2013F) in response to SNC80 treatment. Together, these data indicate that like miniGsi, \u03b2-arrestins interact with only agonist-activated DOR present in the PM.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67478/elife-67478-fig3-v2.jpg)\n\n**Figure 3.:** (A) PC12 cells expressing SNAP-DOR (magenta in merge) and \u03b2-arrestin-1-mScarlet (green in merge) were treated with 10 \u00b5M SNC80 and imaged live by confocal microscopy. \u03b2-arrestin-1-mScarlet signal increased at the plasma\u00a0membrane\u00a0(PM) (yellow arrowhead) but not at sites colocalized with intracellular \u03b4-opioid receptor (DOR) upon 10 \u00b5M SNC80 treatment (scale bar\u00a0=\u00a05 \u00b5m). (B) PC12 cells expressing SNAP-DOR (magenta in merge) and \u03b2-arrestin-2-tdTomato (green in merge). \u03b2-arrestin-2-tdTomato signal increased at the PM (yellow arrowhead) but not at sites colocalized with intracellular DOR upon 10 \u00b5M SNC80 treatment (scale bar\u00a0=\u00a05 \u00b5m). (C) Neither \u03b2-arrestin-1-mScarlet nor \u03b2-arrestin-2-tdTomato max intracellular fluorescence significantly increased within 120 s of SNC80 addition by one-tailed Student\u2019s t-test compared to control cells (\u03b2-arr-1: Ctrl, n\u00a0=\u00a016 cells; SNC80, n\u00a0=\u00a033 cells; \u03b2-arr-2: Ctrl, n\u00a0=\u00a014 cells; SNC80, n\u00a0=\u00a037 cells; with control conditions across one biological replicate and SNC80 conditions across three biological replicates; mean\u00a0\u00b1\u00a095% CI, points represent individual cells). (D) \u03b2-arrestin-1-mScarlet in PC12 cells expressing SNAP-DOR imaged using total internal fluorescence reflection microscopy (TIR-FM) to capture recruitment to the PM after addition of 10 \u00b5M SNC80 (scale bar\u00a0=\u00a05 \u00b5m). (E) \u03b2-arrestin-2-tdTomato in PC12 cells expressing SNAP-DOR imaged using TIR-FM to capture recruitment to the PM after addition of 10 \u00b5M SNC80 (scale bar\u00a0=\u00a05 \u00b5m). Calibration bars indicate relative fluorescence values in scaled images. (F) Both \u03b2-arrestin-1-mScarlet and \u03b2-arrestin-2-tdTomato max PM fluorescence increased within 60 s of 10 \u00b5M SNC80 addition (\u03b2-arr-1: SNC80, n\u00a0=\u00a017 cells; \u03b2-arr-2: SNC80, n\u00a0=\u00a020 cells; all across three biological replicates; mean\u00a0\u00b1\u00a095% CI, points represent individual cells).\n\nGiven the\u00a0differential recruitment of active conformation biosensors, Nb39 and miniGsi, and the absence of \u03b2-arrestin recruitment to IC DOR, we asked whether the active conformation of IC DOR allows for signaling through G proteins. Like the other opioid receptors, DOR couples primarily to G\u03b1i/o proteins, which inhibit adenylyl cyclase activity to decrease cAMP (Gendron et al., 2016). We used a Forster resonance energy transfer (FRET) sensor, ICUE3, to monitor cAMP levels in single cells in real time (DiPilato and Zhang, 2009). In PC12 cells expressing ICUE3 and SNAP-DOR, addition of adenylyl cyclase activator forskolin (Fsk, 2 \u00b5M) caused a rapid increase in the cyan fluorescent protein\u00a0(CFP/FRET) ratio over the baseline ratio (Figure 4A\u2013B). Pretreatment with 100 nM SNC80 prior to Fsk addition decreased the Fsk-stimulated cAMP response (Figure 4C\u2013D), consistent with DOR activation inhibiting adenylyl cyclase activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67478/elife-67478-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013H) Ratiometric CFP/Forster resonance energy transfer\u00a0(FRET) and receptor images, along with corresponding trace of mean cellular CFP/FRET ratios (solid line indicates mean, shading\u00a0\u00b1\u00a095% CI), in PC12 cells expressing the ICUE3 cAMP FRET sensor and SNAP-DOR (scale bar\u00a0=\u00a010 \u00b5m). Calibration bars indicate relative fluorescence values in scaled images. (A\u2013B) In cells without intracellular \u03b4-opioid receptor (DOR), CFP/FRET ratio increased over baseline upon treatment with 2 \u00b5M forskolin (Fsk), consistent with increase in cellular cAMP levels. (C\u2013D) Treatment with DOR agonist SNC80 (100 nM) decreased Fsk-stimulated increase in CFP/FRET ratio. (E\u2013F) In cells without intracellular DOR, SNC80-dependent decrease in Fsk-stimulated CFP/FRET ratio was reversed when peptide inverse agonist ICI174864\u00a0(ICI) (100 \u00b5M) was present in media. (G\u2013H) In cells containing intracellular DOR (G, yellow arrow), SNC80 decreased Fsk-stimulated CFP/FRET ratio even when ICI was present in media. (I\u2013J) Fsk-stimulated total cAMP levels (area under the curve) (I) and endpoint CFP/FRET ratios (J), normalized to mean of control treated cells within -Golgi receptor and\u00a0+Golgi receptor groups. Treatment with 100 nM SNC80 significantly decreased total Fsk-stimulated cAMP and endpoint ratios. ICI and SNC80 treatment of cells without Golgi DOR did not significantly decrease total cAMP or endpoint ratios. In contrast, ICI and SNC80 treatment of cells with Golgi DOR significantly decreased total cAMP and endpoint ratios. ICI treatment alone in cells with Golgi DOR did not significantly decrease total cAMP and endpoint ratios (-Golgi receptor: control, n\u00a0=\u00a059 cells; SNC80, n\u00a0=\u00a058; ICI\u00a0+\u00a0SNC80, n\u00a0=\u00a057;\u00a0+Golgi DOR: control, n\u00a0=\u00a048; SNC80, n\u00a0=\u00a050; ICI\u00a0+\u00a0SNC80, n\u00a0=\u00a055; ICI, n\u00a0=\u00a047; all across two biological replicates; one-way ANOVA (total cAMP, p<0.0001; endpoint cAMP, p<0.0001) with p-values reported in the figure from Sidak\u2019s multiple comparisons test for each condition compared to control cells within \u2013Golgi receptor and\u00a0+Golgi receptor groups).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67478/elife-67478-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Trace of mean cellular cAMP levels in PC12 cells expressing SNAP-DOR and cAMP Forster resonance energy transfer\u00a0(FRET) sensor ICUE3 with and without Golgi receptor (-Golgi receptor: control, n\u00a0=\u00a059 cells; SNC80, n\u00a0=\u00a058; ICI\u00a0+\u00a0SNC80, n\u00a0=\u00a057;\u00a0+Golgi DOR: control, n\u00a0=\u00a048; SNC80, n\u00a0=\u00a050; ICI\u00a0+\u00a0SNC80, n\u00a0=\u00a055; ICI, n\u00a0=\u00a047). (B) Trace of mean cellular cAMP levels in PC12 cells expressing SNAP-DOR and ICUE3 with Golgi receptor and treated with either small molecule agonist SNC80 or peptide agonist DPDPE (control, n\u00a0=\u00a089 cells; DPDPE, n\u00a0=\u00a0101; ICI\u00a0+\u00a0DPDPE, n\u00a0=\u00a062; SNC80, n\u00a0=\u00a087; ICI\u00a0+\u00a0SNC80, n\u00a0=\u00a095). (C\u2013F) Ratiometric CFP/FRET and receptor images, along with corresponding trace of mean cellular CFP/FRET ratios (solid line indicates mean, shading\u00a0\u00b1\u00a095% CI), in PC12 cells expressing the ICUE3 cAMP FRET sensor and SNAP-DOR (scale bar\u00a0=\u00a010 \u00b5m). Calibration bars indicate relative fluorescence values in scaled images. (C\u2013D) In cells containing Golgi \u03b4-opioid receptor (DOR) (E, yellow arrow), SNC80 (100 nM) decreased Fsk-stimulated cAMP levels even when peptide inverse agonist\u00a0ICI174864\u00a0(ICI) (100 \u00b5M) was present in media. (E\u2013F) In cells containing Golgi DOR (C, yellow arrow), peptide agonist DPDPE (100 nM) did not decrease Fsk-stimulated cAMP levels when peptide inverse agonist ICI (100 \u00b5M) was present in media. (G\u2013H) Fsk-stimulated total cAMP levels (area under the curve) (G) and endpoint CFP/FRET ratios (H), normalized to the mean of control treated cells. Cells in all conditions had intracellular DOR. Total and endpoint cAMP responses were significantly decreased in cells treated with 100 nM peptide agonist DPDPE or small molecule agonist SNC80. Total and endpoint cAMP responses were significantly decreased only in cells treated with membrane-permeable agonist SNC80 and not DPDPE when 100 \u00b5M ICI was present in media (Ctrl, n\u00a0=\u00a089 cells; DPDPE, n\u00a0=\u00a0101; ICI\u00a0+\u00a0DPDPE, n\u00a0=\u00a062; SNC80, n\u00a0=\u00a087; ICI\u00a0+\u00a0SNC80, n\u00a0=\u00a095; all across three biological replicates; one-way ANOVA (total, p<0.0001; endpoint, p<0.0001) with p-values reported in the figure from Dunnett\u2019s multiple comparisons test for each condition compared to control (Fsk only) condition).\n\nWe next specifically tested whether IC DOR was sufficient for cAMP inhibition. Cells expressing DOR were treated with cycloheximide (CHX) to ensure that, in the absence of NGF, newly synthesized DOR transiting the Golgi was cleared out and that no residual DOR remained in the Golgi. In cells pretreated with NGF before CHX, the pool of IC DOR was maintained even after CHX treatment, consistent with previous results (Kim and von Zastrow, 2003; Shiwarski et al., 2017a). Under these conditions, the overall Fsk response and SNC80-mediated inhibition in cells treated with NGF were comparable to untreated cells (Figure 4\u2014figure supplement 1A). To isolate the contribution of IC DOR to cAMP inhibition, we pharmacologically blocked PM DOR with 100 \u00b5M ICI. In cells with PM DOR only, SNC80 failed to decrease Fsk-stimulated cAMP in the presence of ICI (Figure 4E\u2013F). Neither the total cAMP levels, measured as area under the curve, nor the endpoint cAMP levels, measured as the change in endpoint cAMP levels over baseline, were significantly different from cells treated with Fsk alone (Figure 4I\u2013J). In contrast, in cells with IC DOR, SNC80 decreased Fsk-stimulated cAMP even in the presence of ICI (Figure 4G\u2013H), and significantly decreased endpoint and total cAMP levels (Figure 4I\u2013J). IC DOR activation suppressed Fsk-stimulated cAMP to approximately half the degree suppressed by combined PM and IC DOR (Figure 4I\u2013J, Figure 4\u2014figure supplement 1A). As a control, ICI alone did not significantly affect endpoint or total cAMP levels (Figure 4I\u2013J). These results indicate that Golgi DOR activation is sufficient for cAMP inhibition.\n\nAs an independent method to induce an intracellular pool of DOR, we used LY294002, a small molecule inhibitor of PI3K that causes DOR retention in the Golgi independent of NGF (Shiwarski et al., 2017b). Similar to results obtained in NGF-treated cells, the permeable small molecule agonist SNC80 decreased Fsk-stimulated cAMP (Figure 4\u2014figure supplement 1B\u2013D) even in the presence of ICI, reiterating that Golgi DOR activation is sufficient for cAMP inhibition. The total and endpoint cAMP levels decreased significantly compared to cells treated with Fsk alone (Figure 4\u2014figure supplement 1G\u2013H). Again, IC DOR alone suppressed Fsk-stimulated cAMP to approximately half the degree suppressed by combined PM and IC DOR (Figure 4\u2014figure supplement 1B,G\u2013H). As a control, the peptide DPDPE agonist did not decrease the Fsk response in the presence of ICI (Figure 4\u2014figure supplement 1B,E\u2013F).\n\n## Discussion\n\nTogether, our data suggest that DOR activation by the same agonist in different subcellular compartments promotes distinct active conformations recognized differentially by biosensors. The conventional model suggests that distinct GPCR conformations can drive coupling to distinct effectors, which determine subsequent downstream signaling responses. This relationship between structure and function has been a subject of great interest due to its potential to explain the pleiotropic effects of GPCR activation by any given ligand. Our results suggest that the subcellular location in which receptors are activated might determine the conformational landscapes that receptors can adopt upon activation, because the immediate environment of receptors varies between these locations.\n\nConformational biosensors like Nb39 and miniGsi used here are valuable tools to study how location can bias receptor conformations. The possibility that Nb39 and miniGsi could recognize distinct conformations is supported by structures of agonist-bound homologous MOR and KOR in complex with Nb39 or MOR in complex with the heterotrimeric G protein complex, G\u03b1i1\u03b21\u03b32. Structures of MOR with agonist BU72 and KOR with agonist MP1104 share the outward shift of transmembrane helix (TM)6, which is characteristic of active GPCR structures (Che et al., 2018; Huang et al., 2015). Nb39 appears to stabilize this conformation via contacts with intracellular loop (ICL)2 and ICL3, as well as the eighth helix through residues conserved across MOR, KOR, and DOR (Che et al., 2018; Huang et al., 2015). The structure of MOR in complex with agonist [D-Ala2, N-MePhe4, Gly-ol5]-enkephalin\u00a0(DAMGO) and the nucleotide-free G\u03b1i protein is very similar to the MOR-Nb39 structure, with the exception of a greater displacement of TM6 toward TM7 and a\u00a0decreased extension of ICL3 (Koehl et al., 2018). The miniGsi sensor does not contain all regions of G\u03b1i that contact the receptor, but many of the residues that interact with MOR ICL2 and ICL3 via the G\u03b1i C-terminal \u03b15 helix are present in miniGsi, and previous reports show that miniGs and G\u03b1s contact B2AR similarly (Nehm\u00e9 et al., 2017; Carpenter et al., 2016). Though Nb39 and G\u03b1i contact opioid receptors in similar regions and share two interaction residues, each also makes additional distinct contacts with TM domains and the eighth helix. Distinct interactions with these intracellular domains important for effector coupling and unique stabilization of TM6 and ICL3 by Nb39 could suggest that these sensors differentially report distinct conformations relevant to receptor function. Additionally, these structures are limited to a single static view of opioid receptor-active conformation, and the ability of Nb39 and miniGsi to discriminate between additional distinct intermediate or active conformations will be an exciting area for future study.\n\nOne clear difference between compartments is the composition of specific phospholipids that make up the membranes (Ikonen, 2008; van Meer et al., 2008; Balla, 2013). Phospholipids differing in charge can stabilize active or inactive conformations of the \u03b22-adrenergic receptor, stabilize G protein coupling, and modulate G protein selectivity (Dawaliby et al., 2016; Strohman et al., 2019; Yen et al., 2018). Lipid composition can also influence recruitment of effectors like \u03b2-arrestins, which bind PI4,5P2, a phospholipid species enriched in the PM (Gaidarov et al., 1999), potentially contributing to the lack of observed arrestin recruitment to Golgi DOR. To date, \u03b2-arrestin recruitment to active GPCRs in the Golgi has not been reported, and the impact of receptor localization to this compartment on desensitization, \u03b2-arrestin recruitment, and \u03b2-arrestin-biased signaling is not known.\n\nOther compartment-specific factors including ion concentrations and GPCR-interacting proteins could influence receptor conformations and effector coupling. The Golgi lumen is more acidic than the extracellular space, pH 6.4 vs pH 7.4 (Kim et al., 1996;\u00a0Llopis et al., 1998;\u00a0Miesenb\u00f6ck et al., 1998),\u00a0which could affect ligand binding and GPCR activation (Ghanouni et al., 2000; Meyer et al., 2019; Vetter et al., 2006; Pert and Snyder, 1973). Estimated concentrations of sodium in the Golgi are closer to cytosolic sodium concentrations (12\u201327 mM) than high extracellular sodium concentrations (100 mM) (Chandra et al., 1991; Hooper and Dick, 1976). Sodium acts as an allosteric modulator of class A GPCRs, and DOR specifically has been crystallized with a coordinated sodium ion, which stabilizes the inactive receptor conformation, and is required for receptor activation and signaling (Fenalti et al., 2014; Zarzycka et al., 2019), suggesting Golgi sodium concentrations could affect DOR activity. Ligand concentrations of a permeable agonist like SNC80 may also differ between the Golgi lumen and the extracellular space. A lower SNC80 concentration in the Golgi, however, is unlikely to explain the differential recruitment we observed, as miniGsi is more potently recruited to PM DOR than Nb39 (Figure 1G). Additionally, DOR-interacting proteins, which regulate DOR trafficking and localize to the Golgi, like the coatomer protein I\u00a0(COPI) complex and Rab10, could also regulate receptor conformations and effector coupling (Degrandmaison et al., 2020; St-Louis et al., 2017; Shiwarski et al., 2019).\n\nOur results suggest that the conformational space sampled by any given GPCR, even when activated by the same agonist, differs based on the precise subcellular location of the receptor. Compartmental effects on GPCR conformations may also be specific to individual GPCRs. In contrast to DOR, both an active-state nanobody and miniGs are recruited to active G\u03b1s-coupled \u03b21-adrenergic receptor (B1AR) in the Golgi, suggesting that\u00a0the local Golgi environment may influence DOR and B1AR energy landscapes differently (Irannejad et al., 2017; Nash et al., 2019). Additionally, the A1-adenosine receptor, when expressed exogenously, can localize to the Golgi and recruit miniGsi to this compartment upon adenosine treatment (Wan et al., 2018). This result demonstrates that miniGsi can in fact report active conformations of G\u03b1i-coupled receptors in the Golgi, which emphasizes the absence of miniGsi recruitment to Golgi DOR that we observed. These GPCR-specific effects may reflect important differences in pharmacology among individual GPCRs and emphasize the importance of characterizing compartmental effects for each GPCR.\n\nThese results also provide a new perspective into drug development efforts, by highlighting the effects that the subcellular location of receptors could have on the integrated effects of any given drug. The majority of these efforts largely rely on assays using conventional readouts of signaling in model cells, where GPCR localization could be different from that of physiologically relevant cells in vivo. This difference is especially true for DOR, which exhibits robust surface localization in model cell lines, but high levels of intracellular pools in many neuronal subtypes. Traditional signaling assays, which rely on whole-cell readouts of primary signaling pathways such as cAMP, will not distinguish between the contributions of different pools of receptors, which could signal differently via pathways outside the primary readouts (Costa-Neto et al., 2016). Therefore, the potentially distinct effects of ligands at spatially distinct pools of receptors in the integrated response should be an important consideration for measuring the outcomes of receptor activation.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Rattus norvegicus, male)</td>\n      <td>PC12</td>\n      <td>ATCC</td>\n      <td>CRL-1721</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SNAP-DOR</td>\n      <td>This paper</td>\n      <td></td>\n      <td>pcDNA3.1 backbone; see \u2018Materials and methods\u2019</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SSF-DOR</td>\n      <td>Kim and von Zastrow, 2003; PMID:12657666</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Nb39-mVenus</td>\n      <td>Che et al., 2020; PMID:32123179</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Venus-miniGsi</td>\n      <td>Wan et al., 2018; PMID:29523687</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Venus-miniGs</td>\n      <td>Wan et al., 2018; PMID:29523687</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>\u03b2-arrestin-1-mScarlet</td>\n      <td>This paper</td>\n      <td></td>\n      <td>pcDNA3.1 backbone; see \u2018Materials and methods\u2019</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>\u03b2-arrestin-2-tdTomato</td>\n      <td>Weinberg et al., 2017; PMID:28153854</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ICUE3</td>\n      <td>Addgene; DiPilato and Zhang, 2009; PMID:19603118</td>\n      <td>Plasmid #61622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-FLAG M1 (mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>#S3040</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TGN-38 (rabbit polyclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>#T9826</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SNAP-Cell 647 SiR</td>\n      <td>New England BioLabs</td>\n      <td>#S9102S</td>\n      <td>1 \u03bcM; membrane -permeable SNAP tag substrate</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SNAP-Surface 649</td>\n      <td>New England BioLabs</td>\n      <td>#S9159S</td>\n      <td>500 nM; membrane -impermeable SNAP tag substrate</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nerve growth factor (NGF)</td>\n      <td>Gibco</td>\n      <td>#13257</td>\n      <td>100 ng/ml; induces retention of newly\u00a0synthesized DOR in the Golgi</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>LY294002</td>\n      <td>Tocris</td>\n      <td>#1130</td>\n      <td>10 \u03bcM; PI3K inhibitor; induces retention of newly\u00a0synthesized DOR in the Golgi</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MI 14</td>\n      <td>Tocris</td>\n      <td>#5604</td>\n      <td>20 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SNC80</td>\n      <td>Tocris</td>\n      <td>#0764</td>\n      <td>Small molecular DOR agonist</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DPDPE</td>\n      <td>Tocris</td>\n      <td>#1431</td>\n      <td>Peptide DOR agonist</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ICI174864</td>\n      <td>Tocris</td>\n      <td>#0820</td>\n      <td>100 \u03bcM; Peptide DOR inverse agonist</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>\u03b2-chlornaltrexamine (CNA)</td>\n      <td>Sigma-Aldrich</td>\n      <td>#O001</td>\n      <td>10 \u03bcM; irreversible antagonist</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cycloheximide (CHX)</td>\n      <td>Tocris</td>\n      <td>#0970</td>\n      <td>3 \u03bcg/ml; protein synthesis inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Forskolin</td>\n      <td>Sigma-Aldrich</td>\n      <td>#F3917</td>\n      <td>2 \u03bcM; adenylyl cyclase activator</td>\n    </tr>\n  </tbody>\n</table>\n\n### DNA constructs\n\nSSF-DOR construct consists of an N-terminal signal sequence followed by a Flag tag followed by the mouse DOR sequence in a pcDNA3.1 vector backbone. To create SNAP-DOR, the full-length receptor sequence was amplified from the SSF-DOR construct by PCR with compatible cut sites (BamHI and XbaI). The SNAP tag (New England Biolabs, Ipswich, MA) was amplified by PCR with compatible cut sites (HindIII and BamHI) and both were ligated into a pcDNA3.1 vector backbone to produce the final construct containing an N-terminal signal sequence, followed by the SNAP tag and then the receptor. \u03b2-arrestin-1 was generated from a geneblock (Integrated DNA Technologies, Coralville, IA) containing the human cDNA (ENST00000420843) for hARRB1 with HindIII and AgeI cut sites. mScarlet was amplified by PCR from pmScarlet_alphaTubulin_C1, a gift from Dorus Gadella (Addgene plasmid #85045) (Bindels et al., 2017), with AgeI and XbaI cut sites. Both were then ligated into a pcDNA3.1 vector backbone to produce a C-terminally tagged \u03b2-arrestin-1. \u03b2-arrestin-2 tagged with tdTomato was generated from \u03b2-arrestin 2-GFP via restriction site cloning (Weinberg et al., 2017). Nb39-mVenus was a gift from Drs. Bryan Roth and Tao Che (Che et al., 2020). Venus-miniGsi and Venus-miniGs were gifts from Drs. Greg Tall and Nevin Lambert. pcDNA3-ICUE3 was a gift from Dr. Jin Zhang (Addgene plasmid #61622) (DiPilato and Zhang, 2009).\n\n### Cell culture and transfection\n\nPC12 cells (ATCC, #CRL-1721), which were validated cells purchased from ATCC, were used for all experiments. Cells in the lab were routinely tested for mycoplasma contamination, and only negative cells were used. Cells were maintained at 37\u00b0C with 5% CO2 and cultured in F-12K media (Gibco, #21127), with 10% horse serum and 5% fetal bovine serum (FBS). Cells were grown in flasks coated with CollagenIV (\ufeffSigma-Aldrich, #C5533) to allow for adherence. PC12 cells were transiently transfected at 90% confluency according to manufacturer\u2019s guidelines with Lipofectamine 2000 (\ufeffInvitrogen, #11668) with 1.5 ug of each DNA construct to be expressed. The transfection mixture was incubated with cells in Opti-MEM media (Gibco, #31985) for 5 hr, then removed and replaced with normal culture media until imaging 48\u201372 hr following transfection.\n\n### Live-cell imaging with fluorescent biosensors\n\nPC12 cells transfected with SNAP-DOR and the appropriate biosensor were plated and imaged in single-use MatTek dishes (MatTek Life Sciences, #P35G-1.5\u201314 C) coated with 20 \u03bcg/ml poly-D-lysine (Sigma-Aldrich, #P7280) for 1 hr. For experiments requiring a Golgi pool of DOR, cells were pretreated with 100 ng/ml of NGF (Gibco, #13257) or 10 \u03bcM LY294002 (Tocris, #1130) or 20 \u03bcM PI4K inhibitor MI 14 (Tocris, #5604) for 1 hr prior to imaging, as described previously (Kim and von Zastrow, 2003; Shiwarski et al., 2017a; Shiwarski et al., 2017b). Cells were labeled with 500 nM SNAP-Surface 649 (New England Biolabs, #S9159S) for 5 min at 37\u00b0C for TIR-FM imaging or 1 \u03bcM permeable SNAP-Cell 647-SiR (New England Biolabs, #S9102S) for 15 min followed by a 15-min wash in cell culture media for confocal imaging. Cells were imaged on a Nikon TiE inverted microscope using a x60/1.49 Apo-TIRF (Nikon Instruments, Melville, NY) objective in CO2-independent Leibovitz\u2019s L-15 media (Gibco, #11415), supplemented with 1% FBS in a 37\u00b0C-heated imaging chamber (In Vivo Scientific). Red fluorescent protein\u00a0(RFP) (\u03b2-arrestin-1 and \u03b2-arrestin-2; 561 nm excitation, 620 emission filter), yellow fluorescent protein\u00a0(YFP) (Nb39-mVenus and Venus-miniGsi; 488 nm excitation, 446/523/600/677 quad-band filter), and the SNAP-labeled DOR (647 nm excitation, 700 emission filter when imaged with RFP or 446/523/600/677 quad-band filter when imaged with YFP) were excited with solid-state lasers and collected with an iXon\u00a0+897 EMCCD camera (Andor, Belfast, UK).\n\n### Immunofluorescence and fixed-cell imaging\n\nPC12 cells transfected with Flag-DOR and either Nb39-mVenus or Venus-miniGsi were plated on poly-D-lysine-coated coverslips and grown at 37\u00b0C for 48 hr. To induce intracellular accumulation of newly synthesized DOR, cells were treated with NGF (100 ng/ml) for 1 hr prior to treatment for 15 min with 10 \u00b5M \u03b2-chlornaltrexamine (CNA; Sigma-Aldrich, #O001) or CNA followed by 10 \u00b5M SNC80 (Tocris, #0764) for 5 min. Cells were fixed with 4% paraformaldehyde, pH 7.4, for 20 min at 25\u00b0C followed by blocking with phosphate-buffered saline with 5% FBS, 5% glycine, 0.75% Triton-X-100, 1 mM magnesium chloride, and 1 mM calcium chloride. Primary and secondary antibody incubations were performed for 1 hr at 25\u00b0C in blocking buffer with anti-Flag-M1 (Sigma-Aldrich, #F3040, 1:1000) conjugated with Alexa-647 (Molecular Probes, #A20186) and anti-TGN-38 rabbit polyclonal antibody (Sigma-Aldrich, #T9826, 1:1000), and goat anti-Rabbit IgG conjugated to Alexa-568 (ThermoFisher, #A-11011, 1:1000), respectively. Cells were washed with blocking buffer without Triton-X-100 after primary and secondary incubations. Coverslips were mounted on glass slides using Prolong Diamond Reagent (Molecular Probes, #P36962). Cells were imaged on a Nikon TiE inverted microscope using a x60/1.49 Apo-TIRF (Nikon Instruments, Melville, NY) objective and iXon\u00a0+897 EMCCD camera (Andor, Belfast, UK).\n\n### Live-cell FRET imaging\n\nPC12 cells transfected with SNAP-DOR and the ICUE3 FRET sensor were plated and imaged in MatTek dishes (MatTek Life Sciences, #P35G-1.5\u201314 C) coated with poly-D-lysine. For experiments comparing inhibition of Fsk-stimulated cAMP in cells with and without Golgi DOR, cells in all conditions were treated with CHX (3 \u03bcg/ml) for 1 hr before imaging to chase out any receptor transiting through the biosynthetic pathway. To induce a Golgi pool, cells were treated with NGF for 1 hr prior to CHX treatment to build up a pool of internal receptors that is maintained even in the absence of new protein synthesis with NGF maintained in the media during the subsequent CHX incubation (Shiwarski et al., 2017a). CHX, NGF, and 100 \u03bcM ICI174864 (ICI; Tocris, #0820), when appropriate, were present in the media for the duration of the experiment. For experiments comparing the signaling of DPDPE (Tocris, #1431) peptide agonist and SNC80 small molecule agonist with and without a surface block, cells in all conditions were treated with 10 \u03bcM LY294002 for 1 hr prior to imaging to induce a Golgi pool of receptor, and LY294002 was maintained in the media throughout the duration of the experiment. Cells were labeled with 1 \u03bcM permeable SNAP-Cell 647-SiR for 15 min followed by a 15-min wash to visualize receptor. Cells were imaged in L-15 media supplemented with 1% FBS at 25\u00b0C in a temperature-controlled imaging chamber (In Vivo Scientific) at 60 s intervals. Imaging was conducted on a Ti2 inverted microscope (Nikon Instruments, Melville, NY) with a x60 NA 1.49 Apo-TIRF objective (Nikon Instruments, Melville, NY). CFP (405 nm excitation, 400 emission filter), YFP (FRET) (405 nm excitation, 514 emission filter) and the SNAP-tagged isoform (647 nm excitation, 700 emission filter) were collected with an iXon-888 Life EMCCD camera (Andor, Belfast, UK) every 60 s with five frames of baseline after agonist addition before 2 \u03bcM Fsk (Sigma-Aldrich, #F3917) addition to stimulate adenylyl cyclase activity.\n\n### Image quantification\n\nAll image quantifications were performed using ImageJ/Fiji (National Institutes of Health, Bethesda, MD) (Rueden et al., 2017; Schindelin et al., 2012). To quantify biosensor recruitment to IC DOR or PM DOR, the receptor channel at each timepoint was thresholded and used to create a binary mask to isolate only pixels containing the\u00a0receptor signal. The receptor mask from each timepoint was then applied to the corresponding timepoint in the biosensor channel to produce an image of biosensor fluorescence in regions of the cell containing the\u00a0receptor. A region of interest corresponding to intracellular receptor was selected in confocal images, and in TIRF images, a region of interest capturing the entire cell was selected. Mean fluorescence intensity was then measured in these images over time and normalized to average baseline fluorescence before drug addition.\n\nA similar approach was used to measure biosensor recruitment to the Golgi in cells fixed and stained for TGN-38. In these images, TGN-38 was used to create the binary mask, which was then applied to the biosensor channel to isolate biosensor fluorescence in the Golgi region of the cell. An inverse mask of the TGN-38 channel was also created and applied to the biosensor channel to isolate biosensor fluorescence in all other regions of the cell. Biosensor enrichment in the Golgi is expressed as the mean fluorescence intensity in the Golgi region divided by the mean fluorescence intensity in the rest of the cell. FRET images were analyzed in ImageJ as previously described (Shiwarski et al., 2017a; Weinberg et al., 2017). Briefly, the CFP channel was divided by the FRET channel at each timepoint. A region of interest was defined for each cell in a given field and the resulting CFP/FRET ratio measured at each timepoint. The CFP/FRET ratio was normalized to the mean baseline ratio before drug addition for each cell. Endpoint CFP/FRET ratios (measured as the change of the endpoint value from the baseline of 1) and total cAMP responses (measured as area under the curve) for all cells were normalized to the average of cells in the control condition for each experimental replicate.\n",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "06b69d04-0cc3-4f46-8056-91a1fdf810fe",
+      "submission_id": "6a8b1065-0c4d-4454-b6d4-dcb5dd20f0b2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan A Cooper, Fred Hutchinson Cancer Research Centre United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67478.sa1](https://doi.org/10.7554/eLife.67478.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper is of interest for cell biologists and pharmacologists interested in G protein-coupled receptor signaling. There is a growing body of literature showing that drug receptors signal differently from the plasma membrane and intracellular compartments. This work provides new insight into how the subcellular location of one such receptor, the \u03b4 opioid receptor, can lead to differential sensitivity to external stimuli. The approach is technically sophisticated, making use of novel biosensors for different receptor conformations. Overall, the data is intriguing, furthering our understanding of how location can \"bias\" GPCR signaling. The results set the stage for more mechanistic studies that might seek to determine how different cellular environments affect responses to drugs.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Conformational specificity of opioid receptors is determined by subcellular location irrespective of agonist\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Jonathan Cooper as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Aashish Manglik (Reviewer #1); Nevin A Lambert (Reviewer #2); John T Williams (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe review discussion mostly focused on the convergence of the independent reviews on the same conclusion: that this paper is an importance advance for the field. The individual \"Recommendations for the Authors\" are below, and you will see that they can be simply addressed by:\n\n1. Adding quantification of recruitment of probes to the plasma membrane vs Golgi.\n\n2. Concentration-response curves, to allow for the possibility that drug concentrations at Golgi may be much lower than at the PM.\n\n3. Add a caveat to the Discussion regarding the possibility that differential drug concentrations at PM and Golgi may contribute to the conformational specificity of the receptors.\n\nReviewer #1:\n\nCrilly et al. investigated how the cellular location of a G protein-coupled receptor (GPCR) influences its ability to respond to an activating drug. As a model system, they use the \u03b4-opioid receptor (DOR), a well studied GPCR with potential roles in pain biology. To directly assess where the DOR is active in cells, they make use of two previously developed biosensors that specifically bind activated opioid receptors. One of these biosensors is a nanobody (Nb39) that was used to solve the structure of active mu-opioid receptor. Another biosensor is an engineered \"mini\" G protein that binds activated Gi-coupled receptors. Intriguingly, they find that although both of these biosensors bind to activated DOR when it is located at the plasma membrane, only Nb39 binds to DOR when it is located at the Golgi membrane. By using a combination of membrane impermeant and permeant DOR ligands, they specifically isolate that this effect is unique to the Golgi pool and independent of whether plasma membrane DOR is activated. The GPCR effector \u03b2-arrestin is conversely only specific to the plasma membrane DOR. Despite this distinction in which proteins can be recruited to DOR depending on sub cellular location, both plasma membrane and Golgi DOR can interact with G proteins to inhibit cAMP production.\n\nThe central conclusion of this work is that the differential localization of these two biosensors in response to the same agonist (SNC80) suggests that the conformation of DOR is different when its at the plasma membrane vs the Golgi. The experiments carried out in this work are of high quality, and the individual conclusions are supported by the data. However, the overall conclusion of this work relies on the notion that binding of the minGsi biosensor to DOR is physiologically meaningful. Clearly both Nb39 and wild-type Gi (presumably leading to the effect on cAMP) are able to bind DOR in both locations. Arrestin recruitment is known to be specific to plasma membrane, which is defined in part by activity of the GRK2 kinase at this specific location. That leaves only the miniGsi \"transducer\" as the outlier, with its incapability to recruit to the Golgi membrane. While the data are indeed intriguing, it is possible that this distinction may just be specific to miniGsi. The authors should entertain the possibility that this differential recruitment of minGsi may result from other factors apart from a distinct DOR conformation. For example, it is possible that different intracellular concentrations of sensors in cells and their relative affinities for a similar active state may yield similar results. This may be especially true in PC12 cells, where the confocal signal for plasma membrane recruitment of both Nb39 and miniGsi is fairly weak. Better quantitation of relative recruitment of each biosensor to the plasma membrane and Golgi in the same cell line (e.g. PC12) would help some of these concerns.\n\nThe imaging work is fantastic, but I think more caveats are needed in the discussion to highlight that the differential recruitment of miniGsi may happen for other reasons. It would be helpful if there was a way to quantitate the level of plasma membrane activation by miniGsi and Nb39 in PC12 cells, as the confocal images in 1H/I suggest that there is barely any recruitment to this compartment.\n\nReviewer #2:\n\nCrilly and colleagues study recruitment of two different G protein surrogate \"conformational sensors\" to active DORs at the plasma membrane and Golgi apparatus. This is similar to several recent studies examining the activity of GPCRs at different subcellular locations, and is particularly interesting in this case because a substantial population of DORs resided in the Golgi in neurons. They make the surprising observation that a nanobody sensor (Nb39) is recruited to DORs at both the PM and Golgi in response to a membrane-permeant agonist, whereas a mini G protein sensor (mini Gsi) is recruited only to the PM in response to the same ligand. They further show that this ligand fails to recruit arrestin to the Golgi, but does appear to activate Gi heterotrimers in this compartment, as assessed by inhibition of adenylyl cyclase in the presence of an impermeant antagonist. They conclude that subcellular location affects conformational sampling of the receptor, although the underlying mechanism is unknown.\n\nThe major strengths of the manuscript include the striking and surprising main result, namely a dramatic difference in the response of two biosensors that might be expected to behave identically. Moreover, the authors extend the observation to show apparent activation of Gi heterotrimers in the Golgi, which makes the primary observation even more surprising and is a nice result in its own right. Finally, the manuscript is succinct and beautifully written, and the experiments are carefully controlled and logically laid out.\n\nWeaknesses of the manuscript include the absence of a molecular mechanism, although admittedly this is a tall order as there are many possibilities. Mitigating this somewhat, the discussion contains appropriate speculation about what factors in \"the immediate subcellular environment\" might affect conformational sampling. It must also be said that conformational sampling is not observed directly, but is inferred from the behavior of two different probes that could conceivably have other properties that differentially affect movement between compartments. There are also a few technical issues, and a few interesting observations that deserve more discussion.\n\nThese results are a valuable addition to the growing body of literature addressing the possible functional roles of GPCRs located in intracellular compartments, and set the stage for more mechanistic studies that might seek to determine how different lipid environments (for example) in cells affect GPCR conformational dynamics, or motivate studies seeking to monitor receptor conformation more directly in intact cells.\n\nThe authors should produce a concentration-response curve for both sensors at the PM. If SNC80 is much less potent for mini Gsi recruitment then it is possible that the difference observed at the Golgi is due to inadequate SNC80 exposure to the Golgi lumen. This is important, as the concentration of SNC80 in the Golgi lumen is unknown.\n\nCan the authors produce a DOR/sensor fluorescence ratio in different ROIs centered on PM and Golgi? Recruitment efficiency of both sensors to the PM seems to be very low for SNC80 in general. The confocal images in Figure 1 show very modest recruitment of either sensor to a significant pool of PM DOR (c.f. arrestin), and the only really compelling images of either sensor at the PM are TIRF.\n\nSNC80 produces only a slow 50% increase in Nb39 at the PM, whereas the same ligand produces a faster 3-fold increase in mini Gsi at the PM. Perhaps it's worth pointing out that not only does the \"mini Gsi conformation\" of the receptor seem to be absent at the Golgi, but it also seems to be preferred at the PM. This is perhaps subtle but not clear from the present discussion.\n\nCould the authors quantify the relative surface vs. Golgi pools of DOR under the conditions used in their experiments and report this? As it is the manuscript sort of implies that cells have DOR either almost entirely at the PM (without NGF, etc.) or almost entirely at the Golgi (with NGF), and this seems unlikely. This might have important implications. For example, on page 4, line 23 the authors attribute a DPDPE vs. SNC80 difference to ligand bias, but alternatively DPDPE recruitment of Nb39 to the PM may be stronger due to lack of competition from receptors in intracellular sites, which presumably are present at some level after overexpression despite the lack of NGF pretreatment.\n\nCycloheximide was used for the cAMP experiments. This is only in the methods, and should be mentioned and justified (why was this necessary?) in the main text.\n\nHas any receptor been shown to recruit mini Gsi to the Golgi? If a positive control for this can be shown or cited it would make a more useful control than mini Gs.\n\nIt is a bit odd that 10 \u03bcm SNC80 was used for the only experiments showing recruitment to the PM, and 100 fold less was used thereafter.\n\n2 \u03bcm Fsk is used. This seems like a modest or weak AC stimulus. Was this critical for observing DOR effects?\n\nReviewer #3:\n\nThis manuscript uses state of the art tools in a clever series of experiments to investigate the roll of intracellular receptors. It has been known for some time that cell permeant ligands associate with receptors located in the Golgi. This work demonstrates that the active conformation or at least or one of the active conformations of DOR is distinctly different in the two locations. This is an important contribution.\n\nThe demonstration that the Golgi associated receptors are functional is important. Again this is known from work with Gs linked receptors but remains an important observation. This observation suggests that although the miniGsi does not mimic the conformation that some G protein does.\n\nFinally the discussion on the fact that active states of the receptor are highly dynamic is very important and often not appreciated.\n\nIn the first read though the manuscript I found the presentation of the functional part a little confusing. With a more careful read it was clear that the inhibition of adenylyl cyclase induced by intracellular receptors was very significant. Does that mean that the plasma membrane associated receptors do not inhibit cyclase? Seems to be something that should be addressed.\n\nThe first paragraph of the discussion blew me away with the details. It is clearly important to distinguish how the sensors associate with the receptor. I think a more gentle description of why that is important to begin with would help readers that are not intimately knowledgeable of GPCR structure.\n",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "87c461c7-c945-4cb8-9f71-58d8e12889f7",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C1",
+      "claim": "Different drugs stabilize distinct active states of their G protein-coupled receptor (GPCR) targets, allowing coupling to different effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevailing model for the variety in drug responses is that different drugs stabilize distinct active states of their G protein-coupled receptor (GPCR) targets, allowing coupling to different effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the prevailing model in the field, representing established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "6afd9183-39c0-4b09-acef-7340a76606ce",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C2",
+      "claim": "Golgi and surface pools of DOR both inhibit cAMP in rat neuroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that Golgi and surface pools of DOR both inhibit cAMP, but engage distinct conformational biosensors in response to the same ligand in rat neuroendocrine cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "efc97988-0eaf-4995-b0d2-cd6118605e30",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C3",
+      "claim": "Golgi and surface pools of DOR engage distinct conformational biosensors in response to the same ligand in rat neuroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that Golgi and surface pools of DOR both inhibit cAMP, but engage distinct conformational biosensors in response to the same ligand in rat neuroendocrine cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "afcf08e5-9914-4745-b7f2-cf5af2741b98",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C4",
+      "claim": "DOR recruits arrestins on the surface but not on the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, DOR recruits arrestins on the surface but not on the Golgi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "735ab08c-5412-477a-aa89-149e65af06f1",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C5",
+      "claim": "The local environment determines the active states of receptors for any given drug, allowing GPCRs to couple to different effectors at different subcellular locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the local environment determines the active states of receptors for any given drug, allowing GPCRs to couple to different effectors at different subcellular locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, inferred from the experimental results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "781ed492-d231-4973-984d-9c256f79f149",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C6",
+      "claim": "Binding to both agonist and G protein stabilizes an active state of the receptor, among a number of states that a given receptor may sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies support an allosteric model of coupling in which binding to both agonist and G protein stabilizes an active state of the receptor, among a number of states that a given receptor may sample (Okude et al., 2015; Weis and Kobilka, 2018; Nygaard et al., 2013; Ye et al., 2016; Manglik et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "4ec9ce59-7aa0-4b24-9d82-032c367efef9",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C7",
+      "claim": "\u03b2-arrestins interact with GPCRs through additional receptor conformations and can serve as scaffolds for kinase signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to canonical G protein effectors, \u03b2-arrestins interact with GPCRs through additional receptor conformations and can serve as scaffolds for kinase signaling pathways (Gurevich and Gurevich, 2019a; Liu et al., 2012; Wingler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "c3dbd258-93b8-4135-b929-54fb7b4d99c0",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C8",
+      "claim": "Efforts to develop compounds that stabilize one set of conformations and therefore bias the receptor response to specific pathways have been promising but difficult to translate to in vivo models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, efforts to develop compounds that stabilize one set of conformations and therefore bias the receptor response to specific pathways have been promising but difficult to translate to in vivo models (Gillis et al., 2020; Luttrell et al., 2015; Viscusi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "2552fe78-6ffb-458b-80e3-12ef7d778889",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C9",
+      "claim": "DOR localizes primarily to the Golgi in neuronal cells, with a small amount on the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "DOR localizes primarily to the Golgi in neuronal cells, with a small amount on the plasma membrane (PM) (Kim and von Zastrow, 2003; Shiwarski et al., 2017a; Zhang et al., 1998; Cahill et al., 2001a; Wang and Pickel, 2001; Mittal et al., 2013; Shiwarski et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "63b3b08f-4a92-4ce8-bc61-6bf716d02e7f",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C10",
+      "claim": "DOR can be activated both on the PM and the Golgi by synthetic agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "DOR can be activated both on the PM and the Golgi by synthetic agonists, but whether the two activation states are different is not clear (Stoeber et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "23fcb968-9a59-4d57-86b8-6d204c04b957",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C11",
+      "claim": "Relocating DOR from intracellular compartments to the PM increases the ability of DOR agonists to relieve pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Relocating DOR from intracellular compartments to the PM increases the ability of DOR agonists to relieve pain (Shiwarski et al., 2017a; Mittal et al., 2013; Cahill et al., 2001b; Patwardhan et al., 2005), illustrating the importance of understanding whether DOR activation on the Golgi is different from that on the PM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "91542be5-2754-43d4-a5e3-c460c9b51127",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C12",
+      "claim": "DOR on the PM, when activated by SNC80, can recruit both a nanobody-based sensor and a G protein-based sensor that read out active DOR conformations, as well as \u03b2-arrestins.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that DOR on the PM, when activated by the selective DOR agonist SNC80, can recruit both a nanobody-based sensor and a G protein-based sensor that read out active DOR conformations, as well as \u03b2-arrestins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "5b5fa2c1-8dc2-4add-8100-f472e3459eca",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C13",
+      "claim": "DOR in the Golgi apparatus, when activated by SNC80, recruits the nanobody sensor, but not the G protein-based sensor or \u03b2-arrestins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DOR in the Golgi apparatus, when activated by the same ligand, recruits the nanobody sensor, but not the G protein-based sensor or \u03b2-arrestins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "25fe73ad-c3f1-45d0-bd5f-26fc4b324464",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C14",
+      "claim": "Golgi-localized DOR is competent to inhibit cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, Golgi-localized DOR is competent to inhibit cAMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "7d413faf-52fb-4d9f-91d7-c25934cc9030",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C15",
+      "claim": "Nanobody and miniG protein biosensors differentially engage the \u03bc-opioid receptor (MOR) and the \u03ba-opioid receptor (KOR) activated by different agonists in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These sensors differentially engage the \u03bc-opioid receptor (MOR) and the \u03ba-opioid receptor (KOR) activated by different agonists in vitro (Livingston et al., 2018) or in the PM (Stoeber et al., 2020), suggesting that they can provide a readout of conformational heterogeneity in agonist-stabilized active states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "4685184c-5717-4001-8745-e3cf84d9edde",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C16",
+      "claim": "Nanobody and miniG protein biosensors differentially engage the \u03bc-opioid receptor (MOR) and the \u03ba-opioid receptor (KOR) activated by different agonists in the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "These sensors differentially engage the \u03bc-opioid receptor (MOR) and the \u03ba-opioid receptor (KOR) activated by different agonists in vitro (Livingston et al., 2018) or in the PM (Stoeber et al., 2020), suggesting that they can provide a readout of conformational heterogeneity in agonist-stabilized active states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "524bac91-b1f8-4722-8fca-e39922723f3e",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C17",
+      "claim": "DOR is highly similar to MOR and KOR in the intracellular regions recognized by the sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Because DOR is highly similar to MOR and KOR in the intracellular regions recognized by the sensors (Chen et al., 1993), we asked whether these sensors could be optimized to read out specific active DOR conformations at distinct subcellular locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "b7ec9d34-36a3-4f3c-ab84-4820cecce287",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C18",
+      "claim": "Nb39 recognizes opioid receptor active conformations through residues conserved across MOR, KOR, and DOR.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the nanobody biosensor Nb39, which recognizes opioid receptor active conformations through residues conserved across MOR, KOR, and DOR (Che et al., 2018; Huang et al., 2015), and the miniGsi biosensor, which mimics the interaction of the G\u03b1i protein with GPCRs (Wan et al., 2018; Nehm\u00e9 et al., 2017), as two orthogonal readouts of DOR conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "8fc9972f-132e-4c74-8d44-9680f2e5a1e3",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C19",
+      "claim": "The miniGsi biosensor mimics the interaction of the G\u03b1i protein with GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the nanobody biosensor Nb39, which recognizes opioid receptor active conformations through residues conserved across MOR, KOR, and DOR (Che et al., 2018; Huang et al., 2015), and the miniGsi biosensor, which mimics the interaction of the G\u03b1i protein with GPCRs (Wan et al., 2018; Nehm\u00e9 et al., 2017), as two orthogonal readouts of DOR conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "77c51027-2ef7-4173-9ccc-7ec37f60d1d8",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C20",
+      "claim": "Nb39 was rapidly recruited to PM DOR when cells were treated with SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated with either small molecule agonist SNC80 or peptide DPDPE, Nb39 (Figure 1B\u2013C) and miniGsi (Figure 1D\u2013E) were rapidly recruited to DOR on the plasma membrane (PM DOR), as observed by a rapid increase in fluorescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "67fe9bdc-914c-4250-af68-4bb50ce3ee4e",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C21",
+      "claim": "Nb39 was rapidly recruited to PM DOR when cells were treated with DPDPE.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated with either small molecule agonist SNC80 or peptide DPDPE, Nb39 (Figure 1B\u2013C) and miniGsi (Figure 1D\u2013E) were rapidly recruited to DOR on the plasma membrane (PM DOR), as observed by a rapid increase in fluorescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "5e2dd279-87ba-4f58-b5a3-7ec36d021b19",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C22",
+      "claim": "miniGsi was rapidly recruited to PM DOR when cells were treated with SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated with either small molecule agonist SNC80 or peptide DPDPE, Nb39 (Figure 1B\u2013C) and miniGsi (Figure 1D\u2013E) were rapidly recruited to DOR on the plasma membrane (PM DOR), as observed by a rapid increase in fluorescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "2fb9624c-e569-408f-88ef-fdf69e44aabe",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C23",
+      "claim": "miniGsi was rapidly recruited to PM DOR when cells were treated with DPDPE.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated with either small molecule agonist SNC80 or peptide DPDPE, Nb39 (Figure 1B\u2013C) and miniGsi (Figure 1D\u2013E) were rapidly recruited to DOR on the plasma membrane (PM DOR), as observed by a rapid increase in fluorescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "1cb59c7e-e73e-4ec4-b198-190e69ad8a10",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C24",
+      "claim": "Fluorescence of both Nb39 and miniGsi increased significantly after treatment with SNC80, but not inverse agonist ICI174864.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence of both sensors increased significantly after treatment with either agonist, but not inverse agonist ICI174864 (ICI) (Figure 1F), indicating specificity of both sensors for an agonist-induced active conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "1f6751c8-dee7-4f52-a39a-a71366cee244",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C25",
+      "claim": "Fluorescence of both Nb39 and miniGsi increased significantly after treatment with DPDPE, but not inverse agonist ICI174864.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence of both sensors increased significantly after treatment with either agonist, but not inverse agonist ICI174864 (ICI) (Figure 1F), indicating specificity of both sensors for an agonist-induced active conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "6e3dc7e1-0f52-454a-835f-359fe013e4c1",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C26",
+      "claim": "Recruitment of Nb39 and miniGsi to PM DOR was concentration-dependent and saturated at 10 \u03bcM SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recruitment of Nb39 and miniGsi to PM DOR was concentration-dependent and saturated at the concentration of SNC80 used in these experiments (10 \u03bcM) (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "aaf896e0-660e-449f-a41f-63b02ddac4ed",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C27",
+      "claim": "miniGsi was more potently recruited to PM DOR than Nb39 in response to the agonist SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration-response curves also revealed that miniGsi was more potently recruited to PM DOR than Nb39 in response to the agonist SNC80.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from concentration-response curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "87bda349-bfd3-49cf-a4c9-769ab8cc227a",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C28",
+      "claim": "DPDPE recruited Nb39 to PM DOR more strongly than SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, DPDPE recruited Nb39 to PM DOR more strongly than SNC80 (Figure 1C,F), whereas the opposite trend was observed for miniGsi (Figure 1E\u2013F), suggesting that these sensors might report selective conformations of DOR induced by different agonists.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C and 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "142e2ff9-cd77-45d2-8ddc-d199f146546b",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C29",
+      "claim": "SNC80 recruited miniGsi to PM DOR more strongly than DPDPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, DPDPE recruited Nb39 to PM DOR more strongly than SNC80 (Figure 1C,F), whereas the opposite trend was observed for miniGsi (Figure 1E\u2013F), suggesting that these sensors might report selective conformations of DOR induced by different agonists.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E and 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "c5970177-f769-4d09-b2e3-33760a3d474e",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C30",
+      "claim": "MiniGs was not recruited to PM DOR.",
+      "claim_type": "EXPLICIT",
+      "source": "MiniGs, which mimics G\u03b1s protein interaction with Gs-coupled GPCRs, was not recruited to PM DOR (Figure 1F), suggesting that the miniGsi sensor specifically reports activation of the Gi-coupled DOR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "2de0f230-7014-4c87-9cbd-4987ac74b1c8",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C31",
+      "claim": "Newly synthesized DOR is retained in an intracellular compartment in neurons and PC12 cells acutely treated with nerve growth factor (NGF).",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether DOR localized to an intracellular compartment engages Nb39 or miniGsi differently upon activation by the same agonist, we took advantage of the fact that newly synthesized DOR is retained in an intracellular compartment in neurons and pheochromocytoma-12 cells (PC12 cells) (Figure 1H and I, yellow arrows) acutely treated with nerve growth factor (NGF) (Kim and von Zastrow, 2003; Shiwarski et al., 2017a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous studies and experimental data shown in Figure 1H and 1I.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "48630de7-4383-4b09-af7f-acbb512e91b3",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C32",
+      "claim": "Nb39 was rapidly recruited to intracellular SNAP-tagged DOR within 30 s when cells were treated with 10 \u00b5M SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated with 10 \u00b5M SNC80, a membrane-permeable, small molecule agonist, Nb39 was rapidly recruited to intracellular SNAP-tagged DOR, within 30 s (Figure 1I, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1I and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "0daf55ce-c96f-43da-bd4e-7199197c6aec",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C33",
+      "claim": "Nb39 fluorescence in the region of the cell defined by IC DOR rapidly and significantly increased after SNC80 addition.",
+      "claim_type": "EXPLICIT",
+      "source": "When quantitated, Nb39 fluorescence in the region of the cell defined by IC DOR rapidly and significantly increased after SNC80 addition (Figure 1K\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1K-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "f289eaad-bf53-4075-93e3-1fb3c62aee17",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C34",
+      "claim": "Nb39 recruitment to IC DOR was dynamic and required DOR activation, as the DOR antagonist naltrindole rapidly reversed this effect.",
+      "claim_type": "EXPLICIT",
+      "source": "This Nb39 recruitment was dynamic and required DOR activation, as the DOR antagonist naltrindole rapidly reversed this effect (Figure 1\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "75c5c5a3-83be-44d8-a336-6b168c8404b1",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C35",
+      "claim": "miniGsi was not recruited to IC DOR in the same time frame as Nb39.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast to Nb39, miniGsi was not recruited to IC DOR in the same time frame (Figure 1J\u2013K, Video 2), despite comparable levels of IC DOR (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1J-K and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "dc3718aa-5f19-4636-b55e-43ced398e800",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C36",
+      "claim": "MiniGsi fluorescence in the region of the cell defined by IC DOR did not increase in cells treated with SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "MiniGsi fluorescence in the region of the cell defined by IC DOR did not increase in cells treated with SNC80 (Figure 1K\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1K-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "eb2e9971-34e8-4077-8c77-3f0aeae2837a",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C37",
+      "claim": "miniGs was not recruited to IC DOR in cells treated with SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, miniGs was also not recruited to IC DOR in cells treated with SNC80 (Figure 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "e86135cc-7b3b-4201-a79f-22418f7f0747",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C38",
+      "claim": "Both Nb39 and miniGsi were recruited to PM DOR, as seen by confocal imaging in the same cells in which recruitment to IC DOR was measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sensors were recruited to PM DOR, as seen by confocal imaging in the same cells in which we measured recruitment to IC DOR, although the sensitivity of detection was lower in confocal imaging (Figure 1I\u2013J, yellow arrowheads, and Figure 1M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1I-J and 1M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "0fd85f3d-cad2-46b5-ad3d-9e059267b970",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C39",
+      "claim": "MiniGsi was recruited to PM DOR more strongly than Nb39.",
+      "claim_type": "EXPLICIT",
+      "source": "MiniGsi was recruited to PM DOR more strongly than Nb39 (Figure 1F,M), consistent with the TIR-FM results, which makes the absence of miniGsi recruitment to IC DOR in response to SNC80 even more striking.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F and 1M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "64fb7396-71c3-4cc5-9b29-eea9fbe3e27c",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C40",
+      "claim": "SNC80 promotes an active DOR conformation preferentially recognized by Nb39 in intracellular compartments and a distinct active DOR conformation preferentially recognized by miniGsi at the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that SNC80 promotes an active DOR conformation preferentially recognized by Nb39 in intracellular compartments and a distinct active DOR conformation preferentially recognized by miniGsi at the PM, suggesting location-specific conformational effects of SNC80 on DOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "8161e8b8-146c-4182-9699-9532e12dc564",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C41",
+      "claim": "Nb39 was not recruited to IC DOR when cells were treated with 10 \u00b5M peptide agonist DPDPE.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated with 10 \u00b5M peptide agonist DPDPE, which does not readily cross the PM over short time scales (Stoeber et al., 2018), Nb39 was not recruited to IC DOR (Figure 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "14d0d437-7e52-44dd-8fe7-3c17b84aad00",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C42",
+      "claim": "DPDPE does not readily cross the PM over short time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were treated with 10 \u00b5M peptide agonist DPDPE, which does not readily cross the PM over short time scales (Stoeber et al., 2018), Nb39 was not recruited to IC DOR (Figure 1L).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "79485143-2e3d-4fcf-adcb-46d6880cad89",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C43",
+      "claim": "Activation of PM DOR is not sufficient for recruitment of Nb39 to IC DOR.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that activation of PM DOR is not sufficient for recruitment of Nb39 to IC DOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that DPDPE, which activates PM DOR but does not cross the membrane, does not recruit Nb39 to IC DOR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "77f063c0-d15c-4dd7-9249-ddcafd58225a",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C44",
+      "claim": "Nb39 was robustly recruited to IC DOR after 100 nM SNC80 addition, even when PM DOR was pharmacologically blocked with ICI.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb39 was robustly recruited to IC DOR, even when PM DOR was pharmacologically blocked, indicating that recruitment to IC DOR does not require activation of PM DOR (Figure 2A, top, 2B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A, 2B, and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "2c0634b7-2826-424c-8358-3d9add59a3d2",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C45",
+      "claim": "Recruitment of Nb39 to IC DOR does not require activation of PM DOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb39 was robustly recruited to IC DOR, even when PM DOR was pharmacologically blocked, indicating that recruitment to IC DOR does not require activation of PM DOR (Figure 2A, top, 2B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that Nb39 is recruited to IC DOR even when PM DOR is blocked.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "1e623f36-f8d3-499c-97a3-d9e5ab8e0dc8",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C46",
+      "claim": "miniGsi remained diffuse throughout the cell and was not recruited to IC DOR when PM DOR was pharmacologically blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "When PM DOR was pharmacologically blocked, miniGsi again remained diffuse throughout the cell and was not recruited to IC DOR (Figure 2A, bottom, 2B, C), indicating that the absence of miniGsi recruitment to IC DOR is not due to sequestration of sensor at PM DOR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A, 2B, and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "0bf6cddb-5ff9-4a06-bfd5-f6d34755ad86",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C47",
+      "claim": "The absence of miniGsi recruitment to IC DOR is not due to sequestration of sensor at PM DOR.",
+      "claim_type": "EXPLICIT",
+      "source": "When PM DOR was pharmacologically blocked, miniGsi again remained diffuse throughout the cell and was not recruited to IC DOR (Figure 2A, bottom, 2B, C), indicating that the absence of miniGsi recruitment to IC DOR is not due to sequestration of sensor at PM DOR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that miniGsi is not recruited to IC DOR even when PM DOR is blocked.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "f58c2200-925d-43e5-8925-2306e811caf0",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C48",
+      "claim": "miniGsi was not recruited to IC DOR even in PTX-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in PTX-treated cells, miniGsi was not recruited to IC DOR, suggesting that competition with endogenous G\u03b1i/o protein effectors for interaction with DOR is not responsible for the lack of recruitment of miniGsi to IC DOR (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "30f3dfe5-78d1-4028-9fc5-496283fecfa9",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C49",
+      "claim": "Competition with endogenous G\u03b1i/o protein effectors for interaction with DOR is not responsible for the lack of recruitment of miniGsi to IC DOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in PTX-treated cells, miniGsi was not recruited to IC DOR, suggesting that competition with endogenous G\u03b1i/o protein effectors for interaction with DOR is not responsible for the lack of recruitment of miniGsi to IC DOR (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that miniGsi is not recruited to IC DOR even when endogenous G\u03b1i/o proteins are inactivated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "fe9d7207-b490-40ff-8125-2511fd282e90",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C50",
+      "claim": "Nb39 was recruited to IC DOR localized to the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence microscopy showed that Nb39 was recruited to IC DOR localized to the Golgi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunofluorescence microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "c7eaf0d9-1914-44dd-83eb-79afa05d34bd",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C51",
+      "claim": "Only Nb39, and not miniGsi, was recruited to IC DOR in a region of the cell colocalizing with the TGN-38 marker in cells treated with CNA and SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with live-cell imaging data, only Nb39, and not miniGsi, was recruited to IC DOR in a region of the cell colocalizing with the TGN-38 marker (Figure 2D,E) in cells treated with CNA and SNC80.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "767444e2-7307-4bdd-976e-0ccc5e35f77f",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C52",
+      "claim": "CNA alone did not cause recruitment of either Nb39 or miniGsi.",
+      "claim_type": "EXPLICIT",
+      "source": "CNA alone did not cause recruitment of either sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "daac2c04-8068-4b12-b076-464c7dddf335",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C53",
+      "claim": "Treatment with CNA and SNC80 significantly increased Nb39 Golgi enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with CNA and SNC80 significantly increased Nb39 Golgi enrichment (Figure 2F), whereas miniGsi enrichment was not significantly different from control cells (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "ee8284ef-2724-4e0a-8fe4-24d03fab1c4d",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C54",
+      "claim": "miniGsi enrichment in the Golgi was not significantly different from control cells after treatment with CNA and SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with CNA and SNC80 significantly increased Nb39 Golgi enrichment (Figure 2F), whereas miniGsi enrichment was not significantly different from control cells (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "4f406f5d-ca34-48ce-aab4-3066a529b0f4",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C55",
+      "claim": "Agonist-dependent differential biosensor recruitment to MOR and KOR in the PM correlates with recruitment of other receptor effectors, specifically G protein-coupled receptor kinase 2 (GRK2), which mediates receptor desensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "Agonist-dependent differential biosensor recruitment to MOR and KOR in the PM correlates with recruitment of other receptor effectors, specifically G protein-coupled receptor kinase 2 (GRK2), which mediates receptor desensitization (Stoeber et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "d4478292-b6f5-4071-9ead-d5c14f137507",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C56",
+      "claim": "\u03b2-arrestins interact with DOR and other GPCRs after activation by agonists and receptor phosphorylation by GRKs to mediate receptor desensitization and internalization from the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-arrestins interact with DOR and other GPCRs after activation by agonists and receptor phosphorylation by GRKs to mediate receptor desensitization and internalization from the PM (Zhang et al., 1999; Zhang et al., 2005; Gurevich and Gurevich, 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "16b56a47-b746-49a2-a921-d4c3f6bdd080",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C57",
+      "claim": "\u03b2-arrestins can scaffold kinase-signaling complexes from GPCRs at the PM and endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-arrestins can also scaffold kinase-signaling complexes from GPCRs at the PM and endosomes (Peterson and Luttrell, 2017; DeFea et al., 2000a; DeFea et al., 2000b; McDonald et al., 2000; Weinberg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "5c5a23f0-bdf1-42e4-b132-c0375056b7d8",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C58",
+      "claim": "Neither \u03b2-arrestin-1 nor \u03b2-arrestin-2 was recruited to IC DOR in cells treated with SNC80.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to miniGsi, neither \u03b2-arrestin-1 nor \u03b2-arrestin-2 was recruited to IC DOR in cells treated with SNC80, and no increase in fluorescence in the region of the cell defined by IC DOR was detected (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "c74d4c2c-531f-4739-88cb-c5ca607bc3f1",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C59",
+      "claim": "Both \u03b2-arrestin-1 and \u03b2-arrestin-2 were visibly recruited to the PM by confocal imaging in response to SNC80 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both \u03b2-arrestins were visibly recruited to the PM by confocal imaging (Figure 3A,B, yellow arrowheads) and by quantitation of TIR-FM imaging (Figure 3D\u2013F) in response to SNC80 treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A, 3B, 3D, 3E, and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "40170580-53f8-476c-8ac5-f733a39f1032",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C60",
+      "claim": "\u03b2-arrestins interact with only agonist-activated DOR present in the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that like miniGsi, \u03b2-arrestins interact with only agonist-activated DOR present in the PM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that \u03b2-arrestins are recruited to PM DOR but not IC DOR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "68ac758a-ba12-4e7e-9106-0b114e6323f7",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C61",
+      "claim": "DOR couples primarily to G\u03b1i/o proteins, which inhibit adenylyl cyclase activity to decrease cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the other opioid receptors, DOR couples primarily to G\u03b1i/o proteins, which inhibit adenylyl cyclase activity to decrease cAMP (Gendron et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "6abd6af3-d249-4024-af82-f5f8c2248cf2",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C62",
+      "claim": "Addition of adenylyl cyclase activator forskolin (Fsk, 2 \u00b5M) caused a rapid increase in the cyan fluorescent protein (CFP/FRET) ratio over the baseline ratio in PC12 cells expressing ICUE3 and SNAP-DOR.",
+      "claim_type": "EXPLICIT",
+      "source": "In PC12 cells expressing ICUE3 and SNAP-DOR, addition of adenylyl cyclase activator forskolin (Fsk, 2 \u00b5M) caused a rapid increase in the cyan fluorescent protein (CFP/FRET) ratio over the baseline ratio (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "4a075d44-62a9-4207-86c2-ef4dc22f4e88",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C63",
+      "claim": "Pretreatment with 100 nM SNC80 prior to Fsk addition decreased the Fsk-stimulated cAMP response.",
+      "claim_type": "EXPLICIT",
+      "source": "Pretreatment with 100 nM SNC80 prior to Fsk addition decreased the Fsk-stimulated cAMP response (Figure 4C\u2013D), consistent with DOR activation inhibiting adenylyl cyclase activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "68778484-c572-4e57-93b6-ea83fc9cf73d",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C64",
+      "claim": "In cells with PM DOR only, SNC80 failed to decrease Fsk-stimulated cAMP in the presence of ICI.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells with PM DOR only, SNC80 failed to decrease Fsk-stimulated cAMP in the presence of ICI (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "93aa65d4-188b-4caa-b681-901d1a6092fe",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C65",
+      "claim": "In cells with IC DOR, SNC80 decreased Fsk-stimulated cAMP even in the presence of ICI.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in cells with IC DOR, SNC80 decreased Fsk-stimulated cAMP even in the presence of ICI (Figure 4G\u2013H), and significantly decreased endpoint and total cAMP levels (Figure 4I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4G-H and 4I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "b6f08ccc-8107-4b0e-9d37-879a85858bd9",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C66",
+      "claim": "Golgi DOR activation is sufficient for cAMP inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Golgi DOR activation is sufficient for cAMP inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that IC DOR can inhibit cAMP even when PM DOR is blocked.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "7c6e494e-231d-462e-b06c-efd676b6e139",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C67",
+      "claim": "IC DOR activation suppressed Fsk-stimulated cAMP to approximately half the degree suppressed by combined PM and IC DOR.",
+      "claim_type": "EXPLICIT",
+      "source": "IC DOR activation suppressed Fsk-stimulated cAMP to approximately half the degree suppressed by combined PM and IC DOR (Figure 4I\u2013J, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4I-J and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "a52904fb-4cbf-4d31-ac22-706d4966c42f",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C68",
+      "claim": "ICI alone did not significantly affect endpoint or total cAMP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, ICI alone did not significantly affect endpoint or total cAMP levels (Figure 4I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "435e0297-e160-4d43-b919-bfe2c6f01879",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C69",
+      "claim": "The permeable small molecule agonist SNC80 decreased Fsk-stimulated cAMP even in the presence of ICI in cells treated with LY294002.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to results obtained in NGF-treated cells, the permeable small molecule agonist SNC80 decreased Fsk-stimulated cAMP (Figure 4\u2014figure supplement 1B\u2013D) even in the presence of ICI, reiterating that Golgi DOR activation is sufficient for cAMP inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "a0d888b2-d2a8-4c87-96a9-ed5c3b43230d",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C70",
+      "claim": "The peptide DPDPE agonist did not decrease the Fsk response in the presence of ICI.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, the peptide DPDPE agonist did not decrease the Fsk response in the presence of ICI (Figure 4\u2014figure supplement 1B,E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1B, E, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "d861f18b-6bbe-4d64-ba5f-e094b04d565e",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C71",
+      "claim": "DOR activation by the same agonist in different subcellular compartments promotes distinct active conformations recognized differentially by biosensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data suggest that DOR activation by the same agonist in different subcellular compartments promotes distinct active conformations recognized differentially by biosensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, inferred from the experimental results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "4bb50ba3-f648-455c-afd4-0574ad46adfb",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C72",
+      "claim": "The subcellular location in which receptors are activated might determine the conformational landscapes that receptors can adopt upon activation, because the immediate environment of receptors varies between these locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the subcellular location in which receptors are activated might determine the conformational landscapes that receptors can adopt upon activation, because the immediate environment of receptors varies between these locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "b790527f-9a54-4eb9-86fd-72273623f41d",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C73",
+      "claim": "Structures of MOR with agonist BU72 and KOR with agonist MP1104 share the outward shift of transmembrane helix (TM)6, which is characteristic of active GPCR structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Structures of MOR with agonist BU72 and KOR with agonist MP1104 share the outward shift of transmembrane helix (TM)6, which is characteristic of active GPCR structures (Che et al., 2018; Huang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "040ff626-2f39-4d13-9bc7-62cf4838b46a",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C74",
+      "claim": "Nb39 appears to stabilize the active conformation via contacts with intracellular loop (ICL)2 and ICL3, as well as the eighth helix through residues conserved across MOR, KOR, and DOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb39 appears to stabilize this conformation via contacts with intracellular loop (ICL)2 and ICL3, as well as the eighth helix through residues conserved across MOR, KOR, and DOR (Che et al., 2018; Huang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "6e9baf73-3d0b-44ec-9578-b2636ad3f86a",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C75",
+      "claim": "The structure of MOR in complex with agonist DAMGO and the nucleotide-free G\u03b1i protein is very similar to the MOR-Nb39 structure, with the exception of a greater displacement of TM6 toward TM7 and a decreased extension of ICL3.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of MOR in complex with agonist [D-Ala2, N-MePhe4, Gly-ol5]-enkephalin (DAMGO) and the nucleotide-free G\u03b1i protein is very similar to the MOR-Nb39 structure, with the exception of a greater displacement of TM6 toward TM7 and a decreased extension of ICL3 (Koehl et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "f9591030-1e3b-44d9-bb23-0c267bf8fb76",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C76",
+      "claim": "miniGs and G\u03b1s contact B2AR similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "The miniGsi sensor does not contain all regions of G\u03b1i that contact the receptor, but many of the residues that interact with MOR ICL2 and ICL3 via the G\u03b1i C-terminal \u03b15 helix are present in miniGsi, and previous reports show that miniGs and G\u03b1s contact B2AR similarly (Nehm\u00e9 et al., 2017; Carpenter et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "d1f0b5f3-f04c-4a12-8472-294339456362",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C77",
+      "claim": "Phospholipids differing in charge can stabilize active or inactive conformations of the \u03b22-adrenergic receptor, stabilize G protein coupling, and modulate G protein selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Phospholipids differing in charge can stabilize active or inactive conformations of the \u03b22-adrenergic receptor, stabilize G protein coupling, and modulate G protein selectivity (Dawaliby et al., 2016; Strohman et al., 2019; Yen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "3263cefe-f78b-40b9-99c7-307a3af95a66",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C78",
+      "claim": "Lipid composition can influence recruitment of effectors like \u03b2-arrestins, which bind PI4,5P2, a phospholipid species enriched in the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid composition can also influence recruitment of effectors like \u03b2-arrestins, which bind PI4,5P2, a phospholipid species enriched in the PM (Gaidarov et al., 1999), potentially contributing to the lack of observed arrestin recruitment to Golgi DOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study and is used to speculate about the experimental results.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "daf56c54-ec9c-4b79-b319-4e443fad7218",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C79",
+      "claim": "\u03b2-arrestin recruitment to active GPCRs in the Golgi has not been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, \u03b2-arrestin recruitment to active GPCRs in the Golgi has not been reported, and the impact of receptor localization to this compartment on desensitization, \u03b2-arrestin recruitment, and \u03b2-arrestin-biased signaling is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "b04e5186-30d9-4ee2-bf1c-4f8c8d98b8ea",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C80",
+      "claim": "The Golgi lumen is more acidic than the extracellular space, pH 6.4 vs pH 7.4.",
+      "claim_type": "EXPLICIT",
+      "source": "The Golgi lumen is more acidic than the extracellular space, pH 6.4 vs pH 7.4 (Kim et al., 1996; Llopis et al., 1998; Miesenb\u00f6ck et al., 1998), which could affect ligand binding and GPCR activation (Ghanouni et al., 2000; Meyer et al., 2019; Vetter et al., 2006; Pert and Snyder, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "47f48ec6-bc50-49c4-a17e-f49fda0769e8",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C81",
+      "claim": "Estimated concentrations of sodium in the Golgi are closer to cytosolic sodium concentrations (12\u201327 mM) than high extracellular sodium concentrations (100 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "Estimated concentrations of sodium in the Golgi are closer to cytosolic sodium concentrations (12\u201327 mM) than high extracellular sodium concentrations (100 mM) (Chandra et al., 1991; Hooper and Dick, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "73739677-fb3a-494a-bf3c-6e08cda858ed",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C82",
+      "claim": "Sodium acts as an allosteric modulator of class A GPCRs, and DOR specifically has been crystallized with a coordinated sodium ion, which stabilizes the inactive receptor conformation, and is required for receptor activation and signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Sodium acts as an allosteric modulator of class A GPCRs, and DOR specifically has been crystallized with a coordinated sodium ion, which stabilizes the inactive receptor conformation, and is required for receptor activation and signaling (Fenalti et al., 2014; Zarzycka et al., 2019), suggesting Golgi sodium concentrations could affect DOR activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "2b3b5b0c-53ea-4d32-b3c4-40f79f86f0be",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C83",
+      "claim": "DOR-interacting proteins, which regulate DOR trafficking and localize to the Golgi, like the coatomer protein I (COPI) complex and Rab10, could also regulate receptor conformations and effector coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, DOR-interacting proteins, which regulate DOR trafficking and localize to the Golgi, like the coatomer protein I (COPI) complex and Rab10, could also regulate receptor conformations and effector coupling (Degrandmaison et al., 2020; St-Louis et al., 2017; Shiwarski et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and is used to speculate about potential mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "5a408c08-a6b2-4733-937a-c9588e81c889",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C84",
+      "claim": "Both an active-state nanobody and miniGs are recruited to active G\u03b1s-coupled \u03b21-adrenergic receptor (B1AR) in the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to DOR, both an active-state nanobody and miniGs are recruited to active G\u03b1s-coupled \u03b21-adrenergic receptor (B1AR) in the Golgi, suggesting that the local Golgi environment may influence DOR and B1AR energy landscapes differently (Irannejad et al., 2017; Nash et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "013bd86a-67d0-454e-979b-a86473d2495d",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C85",
+      "claim": "The A1-adenosine receptor, when expressed exogenously, can localize to the Golgi and recruit miniGsi to this compartment upon adenosine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the A1-adenosine receptor, when expressed exogenously, can localize to the Golgi and recruit miniGsi to this compartment upon adenosine treatment (Wan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "7508a754-e1e7-4564-9409-5aa302f29731",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C86",
+      "claim": "miniGsi can report active conformations of G\u03b1i-coupled receptors in the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "This result demonstrates that miniGsi can in fact report active conformations of G\u03b1i-coupled receptors in the Golgi, which emphasizes the absence of miniGsi recruitment to Golgi DOR that we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that miniGsi is recruited to A1-adenosine receptor in the Golgi.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "11da56e1-d5c6-4949-83ca-d468bd954f47",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C87",
+      "claim": "DOR exhibits robust surface localization in model cell lines, but high levels of intracellular pools in many neuronal subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference is especially true for DOR, which exhibits robust surface localization in model cell lines, but high levels of intracellular pools in many neuronal subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the known localization patterns of DOR in different cell types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "ddf9cbc4-d8cb-4efa-b162-071db57a7d2d",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C88",
+      "claim": "The EC50 for Nb39 plasma membrane recruitment measured in TIR-FM is 22.7 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration-response curves for Nb39 (EC50 = 22.7 nM) and miniGsi (EC50 = 2.284 nM) plasma membrane recruitment measured in TIR-FM, in cells treated with increasing concentrations of SNC80 ranging from 0.1 nM to 10 \u03bcM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "29ba472f-ea49-48b8-84e0-2958a1f68a77",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C89",
+      "claim": "The EC50 for miniGsi plasma membrane recruitment measured in TIR-FM is 2.284 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration-response curves for Nb39 (EC50 = 22.7 nM) and miniGsi (EC50 = 2.284 nM) plasma membrane recruitment measured in TIR-FM, in cells treated with increasing concentrations of SNC80 ranging from 0.1 nM to 10 \u03bcM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "ad60f5b6-a056-40a4-9ebb-646b51ce525f",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C90",
+      "claim": "PC12 cells were maintained at 37\u00b0C with 5% CO2 and cultured in F-12K media with 10% horse serum and 5% fetal bovine serum (FBS).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were maintained at 37\u00b0C with 5% CO2 and cultured in F-12K media (Gibco, #21127), with 10% horse serum and 5% fetal bovine serum (FBS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "0e68cba4-9276-4fd1-b1c9-2ebd6abfe7a7",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C91",
+      "claim": "PC12 cells were transiently transfected at 90% confluency with Lipofectamine 2000 with 1.5 ug of each DNA construct to be expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "PC12 cells were transiently transfected at 90% confluency according to manufacturer's guidelines with Lipofectamine 2000 (\ufeffInvitrogen, #11668) with 1.5 ug of each DNA construct to be expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "bd7916b2-787e-4d9d-badd-86cc6c80e3d8",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C92",
+      "claim": "Cells were pretreated with 100 ng/ml of NGF or 10 \u03bcM LY294002 or 20 \u03bcM PI4K inhibitor MI 14 for 1 hr prior to imaging to induce a Golgi pool of DOR.",
+      "claim_type": "EXPLICIT",
+      "source": "For experiments requiring a Golgi pool of DOR, cells were pretreated with 100 ng/ml of NGF (Gibco, #13257) or 10 \u03bcM LY294002 (Tocris, #1130) or 20 \u03bcM PI4K inhibitor MI 14 (Tocris, #5604) for 1 hr prior to imaging, as described previously (Kim and von Zastrow, 2003; Shiwarski et al., 2017a; Shiwarski et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used, supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "fb52befa-dce4-46a6-a667-21f3905782f4",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C93",
+      "claim": "Cells were labeled with 500 nM SNAP-Surface 649 for 5 min at 37\u00b0C for TIR-FM imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were labeled with 500 nM SNAP-Surface 649 (New England Biolabs, #S9159S) for 5 min at 37\u00b0C for TIR-FM imaging or 1 \u03bcM permeable SNAP-Cell 647-SiR (New England Biolabs, #S9102S) for 15 min followed by a 15-min wash in cell culture media for confocal imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "930eff9d-bc1a-4a09-8927-949dbb56614b",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "claim_id": "C94",
+      "claim": "Cells were labeled with 1 \u03bcM permeable SNAP-Cell 647-SiR for 15 min followed by a 15-min wash in cell culture media for confocal imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were labeled with 500 nM SNAP-Surface 649 (New England Biolabs, #S9159S) for 5 min at 37\u00b0C for TIR-FM imaging or 1 \u03bcM permeable SNAP-Cell 647-SiR (New England Biolabs, #S9102S) for 15 min followed by a 15-min wash in cell culture media for confocal imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Both Nb39 and miniGsi biosensors are recruited to plasma membrane DOR upon agonist treatment (SNC80 and DPDPE), with concentration-dependent responses. miniGsi shows higher potency (EC50=2.284 nM) than Nb39 (EC50=22.7 nM) for SNC80. The sensors show differential recruitment patterns: DPDPE recruits Nb39 more strongly while SNC80 recruits miniGsi more strongly. MiniGs (Gs sensor) is not recruited, confirming specificity for Gi-coupled DOR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C30, C88-C89 are well-supported by TIR-FM imaging data in Figures 1B-G showing rapid, agonist-specific, concentration-dependent recruitment with appropriate controls (inverse agonist ICI, miniGs negative control). Statistical significance is demonstrated, EC50 values are quantified, and differential agonist effects are clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "a9b858d0-f0e3-4a19-89b5-de563857f6cf",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In intracellular compartments, Nb39 is rapidly recruited to DOR upon SNC80 treatment (within 30s), while miniGsi is not recruited to intracellular DOR despite being recruited to PM DOR in the same cells. This differential recruitment suggests SNC80 promotes distinct active DOR conformations at different subcellular locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40 are strongly supported by confocal imaging data (Figures 1I-M, Videos 1-2) showing clear differential recruitment. The antagonist reversal experiment (C34, Figure 1-supplement 2) confirms specificity. Controls include miniGs negative control (C37) and demonstration that both sensors recruit to PM DOR in the same cells (C38-C39), ruling out expression or technical artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "d6877ba6-7865-49b0-8cbc-9a79a3053ff2",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nb39 recruitment to intracellular DOR requires direct activation of intracellular receptors by membrane-permeable agonist SNC80, not activation of PM DOR. The peptide agonist DPDPE (which doesn't cross membranes) fails to recruit Nb39 to intracellular DOR. Pharmacological blockade of PM DOR with ICI does not prevent Nb39 recruitment to intracellular DOR, and PTX treatment (inactivating endogenous G\u03b1i/o) does not enable miniGsi recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49 are well-supported by experiments using membrane-impermeable antagonist ICI and peptide agonist DPDPE (Figures 1L, 2A-C). The logic is sound: DPDPE activates PM DOR but not IC DOR (C41-C43), and ICI blocks PM DOR allowing isolation of IC DOR signaling (C44-C47). PTX experiments (C48-C49) rule out competition with endogenous G proteins as explanation for miniGsi absence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "242158c9-03d9-4dd9-8824-f843c05a7d2e",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Immunofluorescence microscopy confirms that Nb39, but not miniGsi, is recruited to intracellular DOR specifically localized to the Golgi (colocalization with TGN-38 marker). Treatment with CNA (to block PM DOR) plus SNC80 significantly increases Nb39 Golgi enrichment but not miniGsi enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by fixed-cell immunofluorescence data (Figures 2D-G) using the Golgi marker TGN-38. Statistical analysis shows significant Nb39 enrichment (p<0.0001, Figure 2F) but not miniGsi (p=0.0654, Figure 2G). This confirms the live-cell imaging results and establishes the Golgi as the specific intracellular compartment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "1f5cfb6f-3a3c-4f0b-bcc7-3a2b95ad9713",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "\u03b2-arrestin-1 and \u03b2-arrestin-2 are recruited to PM DOR upon SNC80 treatment but are not recruited to intracellular/Golgi DOR, similar to the miniGsi pattern. This indicates that \u03b2-arrestins interact only with agonist-activated DOR at the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by both confocal and TIR-FM imaging data (Figures 3A-F). The absence of intracellular recruitment is clearly demonstrated (Figure 3C, no significant increase), while PM recruitment is visible and quantifiable (Figures 3D-F). This parallel with miniGsi strengthens the conclusion about location-specific effector coupling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "41b4cccb-976c-41c7-bba5-865cbb6bb88c",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Golgi-localized DOR is competent to inhibit forskolin-stimulated cAMP production. When PM DOR is blocked with ICI, SNC80 (membrane-permeable) still decreases cAMP in cells with intracellular DOR, but DPDPE (membrane-impermeable) does not. Intracellular DOR activation suppresses cAMP to approximately half the level of combined PM and IC DOR activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 are well-supported by FRET-based cAMP measurements (Figures 4A-J, Figure 4-supplement 1). The experimental design properly isolates IC DOR contribution using ICI blockade and CHX treatment. Statistical significance is demonstrated (p<0.0001, Figures 4I-J). The DPDPE control (C70) confirms specificity. The quantitative comparison (C67) is clearly shown in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "e86e6d9e-3ea2-40a8-b954-b8e3688e754a",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The main conclusion: DOR at the Golgi and plasma membrane both inhibit cAMP but engage distinct conformational biosensors and effectors in response to the same ligand. The local subcellular environment determines the active conformational states that receptors adopt, allowing GPCRs to couple to different effectors at different locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5, C12-C14, C71-C72 represent the integrated conclusions supported by the collective experimental evidence. The differential biosensor recruitment (Nb39 vs miniGsi), differential \u03b2-arrestin recruitment, and maintained cAMP inhibition at both locations together strongly support the conclusion that subcellular location determines conformational landscapes and effector coupling. This is the central finding of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background context establishing the prevailing model of GPCR activation, the role of \u03b2-arrestins, challenges in biased agonist development, and prior work on DOR localization and biosensor characterization in related opioid receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C11, C15-C19 are background claims supported by appropriate citations to prior literature. These establish the scientific context and rationale for the current study. The citations appear appropriate and the claims accurately represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "81e68566-be70-4072-8834-96fac4a8b089",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Methodological details: PC12 cells treated with NGF retain newly synthesized DOR in intracellular compartments. Cells were cultured, transfected, and labeled using standard protocols with specific reagents and conditions detailed for reproducibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C90-C94 describe experimental methods. C31 is supported by citations to prior work (Kim and von Zastrow, 2003; Shiwarski et al., 2017a) and imaging data (Figures 1H-I). The other claims are straightforward methodological descriptions that are standard and appropriately detailed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    },
+    {
+      "id": "5785f309-770a-401a-ba9d-fab60fbdbe4b",
+      "content_id": "876ef3c0-f1aa-4ee9-88f1-c661f90c9f73",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Discussion context: Prior structural and functional studies of opioid receptors, biosensors, and related GPCRs; potential mechanisms for location-dependent conformational differences including lipid composition, pH, sodium concentration, and receptor-interacting proteins; comparison with other GPCRs (B1AR, A1-adenosine receptor) showing different location-dependent behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C61, C73-C87 are discussion points supported by appropriate citations. These provide mechanistic context and compare findings to other systems. The citations appear accurate and the speculative elements (C72, C78, C83) are appropriately qualified. C86 makes a valid inference from cited work about miniGsi capability in Golgi.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:07.230271Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "77c51027-2ef7-4173-9ccc-7ec37f60d1d8",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "67fe9bdc-914c-4250-af68-4bb50ce3ee4e",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "5e2dd279-87ba-4f58-b5a3-7ec36d021b19",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "2fb9624c-e569-408f-88ef-fdf69e44aabe",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "1cb59c7e-e73e-4ec4-b198-190e69ad8a10",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "1f6751c8-dee7-4f52-a39a-a71366cee244",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "6e3dc7e1-0f52-454a-835f-359fe013e4c1",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "aaf896e0-660e-449f-a41f-63b02ddac4ed",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "87bda349-bfd3-49cf-a4c9-769ab8cc227a",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "142e2ff9-cd77-45d2-8ddc-d199f146546b",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "c5970177-f769-4d09-b2e3-33760a3d474e",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "ddf9cbc4-d8cb-4efa-b162-071db57a7d2d",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "29ba472f-ea49-48b8-84e0-2958a1f68a77",
+      "result_id": "d5fba2c4-58fc-4cad-baa5-bac0fb055fda"
+    },
+    {
+      "claim_id": "48630de7-4383-4b09-af7f-acbb512e91b3",
+      "result_id": "a9b858d0-f0e3-4a19-89b5-de563857f6cf"
+    },
+    {
+      "claim_id": "0daf55ce-c96f-43da-bd4e-7199197c6aec",
+      "result_id": "a9b858d0-f0e3-4a19-89b5-de563857f6cf"
+    },
+    {
+      "claim_id": "f289eaad-bf53-4075-93e3-1fb3c62aee17",
+      "result_id": "a9b858d0-f0e3-4a19-89b5-de563857f6cf"
+    },
+    {
+      "claim_id": "75c5c5a3-83be-44d8-a336-6b168c8404b1",
+      "result_id": "a9b858d0-f0e3-4a19-89b5-de563857f6cf"
+    },
+    {
+      "claim_id": "dc3718aa-5f19-4636-b55e-43ced398e800",
+      "result_id": "a9b858d0-f0e3-4a19-89b5-de563857f6cf"
+    },
+    {
+      "claim_id": "eb2e9971-34e8-4077-8c77-3f0aeae2837a",
+      "result_id": "a9b858d0-f0e3-4a19-89b5-de563857f6cf"
+    },
+    {
+      "claim_id": "e86135cc-7b3b-4201-a79f-22418f7f0747",
+      "result_id": "a9b858d0-f0e3-4a19-89b5-de563857f6cf"
+    },
+    {
+      "claim_id": "0fd85f3d-cad2-46b5-ad3d-9e059267b970",
+      "result_id": "a9b858d0-f0e3-4a19-89b5-de563857f6cf"
+    },
+    {
+      "claim_id": "64fb7396-71c3-4cc5-9b29-eea9fbe3e27c",
+      "result_id": "a9b858d0-f0e3-4a19-89b5-de563857f6cf"
+    },
+    {
+      "claim_id": "8161e8b8-146c-4182-9699-9532e12dc564",
+      "result_id": "d6877ba6-7865-49b0-8cbc-9a79a3053ff2"
+    },
+    {
+      "claim_id": "14d0d437-7e52-44dd-8fe7-3c17b84aad00",
+      "result_id": "d6877ba6-7865-49b0-8cbc-9a79a3053ff2"
+    },
+    {
+      "claim_id": "79485143-2e3d-4fcf-adcb-46d6880cad89",
+      "result_id": "d6877ba6-7865-49b0-8cbc-9a79a3053ff2"
+    },
+    {
+      "claim_id": "77f063c0-d15c-4dd7-9249-ddcafd58225a",
+      "result_id": "d6877ba6-7865-49b0-8cbc-9a79a3053ff2"
+    },
+    {
+      "claim_id": "2c0634b7-2826-424c-8358-3d9add59a3d2",
+      "result_id": "d6877ba6-7865-49b0-8cbc-9a79a3053ff2"
+    },
+    {
+      "claim_id": "1e623f36-f8d3-499c-97a3-d9e5ab8e0dc8",
+      "result_id": "d6877ba6-7865-49b0-8cbc-9a79a3053ff2"
+    },
+    {
+      "claim_id": "0bf6cddb-5ff9-4a06-bfd5-f6d34755ad86",
+      "result_id": "d6877ba6-7865-49b0-8cbc-9a79a3053ff2"
+    },
+    {
+      "claim_id": "f58c2200-925d-43e5-8925-2306e811caf0",
+      "result_id": "d6877ba6-7865-49b0-8cbc-9a79a3053ff2"
+    },
+    {
+      "claim_id": "30f3dfe5-78d1-4028-9fc5-496283fecfa9",
+      "result_id": "d6877ba6-7865-49b0-8cbc-9a79a3053ff2"
+    },
+    {
+      "claim_id": "fe9d7207-b490-40ff-8125-2511fd282e90",
+      "result_id": "242158c9-03d9-4dd9-8824-f843c05a7d2e"
+    },
+    {
+      "claim_id": "c7eaf0d9-1914-44dd-83eb-79afa05d34bd",
+      "result_id": "242158c9-03d9-4dd9-8824-f843c05a7d2e"
+    },
+    {
+      "claim_id": "767444e2-7307-4bdd-976e-0ccc5e35f77f",
+      "result_id": "242158c9-03d9-4dd9-8824-f843c05a7d2e"
+    },
+    {
+      "claim_id": "daac2c04-8068-4b12-b076-464c7dddf335",
+      "result_id": "242158c9-03d9-4dd9-8824-f843c05a7d2e"
+    },
+    {
+      "claim_id": "ee8284ef-2724-4e0a-8fe4-24d03fab1c4d",
+      "result_id": "242158c9-03d9-4dd9-8824-f843c05a7d2e"
+    },
+    {
+      "claim_id": "5c5a23f0-bdf1-42e4-b132-c0375056b7d8",
+      "result_id": "1f5cfb6f-3a3c-4f0b-bcc7-3a2b95ad9713"
+    },
+    {
+      "claim_id": "c74d4c2c-531f-4739-88cb-c5ca607bc3f1",
+      "result_id": "1f5cfb6f-3a3c-4f0b-bcc7-3a2b95ad9713"
+    },
+    {
+      "claim_id": "40170580-53f8-476c-8ac5-f733a39f1032",
+      "result_id": "1f5cfb6f-3a3c-4f0b-bcc7-3a2b95ad9713"
+    },
+    {
+      "claim_id": "6abd6af3-d249-4024-af82-f5f8c2248cf2",
+      "result_id": "41b4cccb-976c-41c7-bba5-865cbb6bb88c"
+    },
+    {
+      "claim_id": "4a075d44-62a9-4207-86c2-ef4dc22f4e88",
+      "result_id": "41b4cccb-976c-41c7-bba5-865cbb6bb88c"
+    },
+    {
+      "claim_id": "68778484-c572-4e57-93b6-ea83fc9cf73d",
+      "result_id": "41b4cccb-976c-41c7-bba5-865cbb6bb88c"
+    },
+    {
+      "claim_id": "93aa65d4-188b-4caa-b681-901d1a6092fe",
+      "result_id": "41b4cccb-976c-41c7-bba5-865cbb6bb88c"
+    },
+    {
+      "claim_id": "b6f08ccc-8107-4b0e-9d37-879a85858bd9",
+      "result_id": "41b4cccb-976c-41c7-bba5-865cbb6bb88c"
+    },
+    {
+      "claim_id": "7c6e494e-231d-462e-b06c-efd676b6e139",
+      "result_id": "41b4cccb-976c-41c7-bba5-865cbb6bb88c"
+    },
+    {
+      "claim_id": "a52904fb-4cbf-4d31-ac22-706d4966c42f",
+      "result_id": "41b4cccb-976c-41c7-bba5-865cbb6bb88c"
+    },
+    {
+      "claim_id": "435e0297-e160-4d43-b919-bfe2c6f01879",
+      "result_id": "41b4cccb-976c-41c7-bba5-865cbb6bb88c"
+    },
+    {
+      "claim_id": "a0d888b2-d2a8-4c87-96a9-ed5c3b43230d",
+      "result_id": "41b4cccb-976c-41c7-bba5-865cbb6bb88c"
+    },
+    {
+      "claim_id": "6afd9183-39c0-4b09-acef-7340a76606ce",
+      "result_id": "e86e6d9e-3ea2-40a8-b954-b8e3688e754a"
+    },
+    {
+      "claim_id": "efc97988-0eaf-4995-b0d2-cd6118605e30",
+      "result_id": "e86e6d9e-3ea2-40a8-b954-b8e3688e754a"
+    },
+    {
+      "claim_id": "afcf08e5-9914-4745-b7f2-cf5af2741b98",
+      "result_id": "e86e6d9e-3ea2-40a8-b954-b8e3688e754a"
+    },
+    {
+      "claim_id": "735ab08c-5412-477a-aa89-149e65af06f1",
+      "result_id": "e86e6d9e-3ea2-40a8-b954-b8e3688e754a"
+    },
+    {
+      "claim_id": "91542be5-2754-43d4-a5e3-c460c9b51127",
+      "result_id": "e86e6d9e-3ea2-40a8-b954-b8e3688e754a"
+    },
+    {
+      "claim_id": "5b5fa2c1-8dc2-4add-8100-f472e3459eca",
+      "result_id": "e86e6d9e-3ea2-40a8-b954-b8e3688e754a"
+    },
+    {
+      "claim_id": "25fe73ad-c3f1-45d0-bd5f-26fc4b324464",
+      "result_id": "e86e6d9e-3ea2-40a8-b954-b8e3688e754a"
+    },
+    {
+      "claim_id": "d861f18b-6bbe-4d64-ba5f-e094b04d565e",
+      "result_id": "e86e6d9e-3ea2-40a8-b954-b8e3688e754a"
+    },
+    {
+      "claim_id": "4bb50ba3-f648-455c-afd4-0574ad46adfb",
+      "result_id": "e86e6d9e-3ea2-40a8-b954-b8e3688e754a"
+    },
+    {
+      "claim_id": "87c461c7-c945-4cb8-9f71-58d8e12889f7",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "781ed492-d231-4973-984d-9c256f79f149",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "4ec9ce59-7aa0-4b24-9d82-032c367efef9",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "c3dbd258-93b8-4135-b929-54fb7b4d99c0",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "2552fe78-6ffb-458b-80e3-12ef7d778889",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "63b3b08f-4a92-4ce8-bc61-6bf716d02e7f",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "23fcb968-9a59-4d57-86b8-6d204c04b957",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "7d413faf-52fb-4d9f-91d7-c25934cc9030",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "4685184c-5717-4001-8745-e3cf84d9edde",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "524bac91-b1f8-4722-8fca-e39922723f3e",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "b7ec9d34-36a3-4f3c-ab84-4820cecce287",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "8fc9972f-132e-4c74-8d44-9680f2e5a1e3",
+      "result_id": "7249f95f-a4eb-46ab-b30a-d213fef17cdc"
+    },
+    {
+      "claim_id": "2de0f230-7014-4c87-9cbd-4987ac74b1c8",
+      "result_id": "81e68566-be70-4072-8834-96fac4a8b089"
+    },
+    {
+      "claim_id": "ad60f5b6-a056-40a4-9ebb-646b51ce525f",
+      "result_id": "81e68566-be70-4072-8834-96fac4a8b089"
+    },
+    {
+      "claim_id": "0e68cba4-9276-4fd1-b1c9-2ebd6abfe7a7",
+      "result_id": "81e68566-be70-4072-8834-96fac4a8b089"
+    },
+    {
+      "claim_id": "bd7916b2-787e-4d9d-badd-86cc6c80e3d8",
+      "result_id": "81e68566-be70-4072-8834-96fac4a8b089"
+    },
+    {
+      "claim_id": "fb52befa-dce4-46a6-a667-21f3905782f4",
+      "result_id": "81e68566-be70-4072-8834-96fac4a8b089"
+    },
+    {
+      "claim_id": "930eff9d-bc1a-4a09-8927-949dbb56614b",
+      "result_id": "81e68566-be70-4072-8834-96fac4a8b089"
+    },
+    {
+      "claim_id": "4f406f5d-ca34-48ce-aab4-3066a529b0f4",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "d4478292-b6f5-4071-9ead-d5c14f137507",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "16b56a47-b746-49a2-a921-d4c3f6bdd080",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "68ac758a-ba12-4e7e-9106-0b114e6323f7",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "b790527f-9a54-4eb9-86fd-72273623f41d",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "040ff626-2f39-4d13-9bc7-62cf4838b46a",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "6e9baf73-3d0b-44ec-9578-b2636ad3f86a",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "f9591030-1e3b-44d9-bb23-0c267bf8fb76",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "d1f0b5f3-f04c-4a12-8472-294339456362",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "3263cefe-f78b-40b9-99c7-307a3af95a66",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "daf56c54-ec9c-4b79-b319-4e443fad7218",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "b04e5186-30d9-4ee2-bf1c-4f8c8d98b8ea",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "47f48ec6-bc50-49c4-a17e-f49fda0769e8",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "73739677-fb3a-494a-bf3c-6e08cda858ed",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "2b3b5b0c-53ea-4d32-b3c4-40f79f86f0be",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "5a408c08-a6b2-4733-937a-c9588e81c889",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "013bd86a-67d0-454e-979b-a86473d2495d",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "7508a754-e1e7-4564-9409-5aa302f29731",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    },
+    {
+      "claim_id": "11da56e1-d5c6-4949-83ca-d468bd954f47",
+      "result_id": "5785f309-770a-401a-ba9d-fab60fbdbe4b"
+    }
+  ],
+  "comparisons": []
+}

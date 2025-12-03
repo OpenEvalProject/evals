@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Spindle-associated genes show a significant enrichment of missense changes in modern humans after divergence from archaic humans. Eight spindle genes (SPAG5, KNL1, ATRX, KATNA1, KIF18A, NEK6, RSPH1, STARD9) carry 11 missense changes total, with 6 expected by chance (p=0.045), and multiple changes in single genes occur more often than expected (p=0.044 for two changes, p<0.001 for three changes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C22 collectively demonstrate significant enrichment through permutation testing with appropriate statistical thresholds. The analysis properly accounts for gene length and uses one-tailed tests appropriate for enrichment analysis. The distinction between number of changes versus number of genes (C22) shows analytical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C77"
+    ],
+    "result": "SPAG5 shows consistent evidence of positive selection in modern humans, while evidence for ATRX and KIF18A is recombination-map dependent. Using a hidden Markov model approach, SPAG5 exhibits segments >0.025cM in both African-American and deCODE recombination maps (false positive rate <0.1%), while ATRX and KIF18A exceed this threshold in only one map each.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30-C32, C77 provide convergent evidence for selection on SPAG5 using established methods (Peyr\u00e9gne et al., 2017) with appropriate statistical thresholds. The acknowledgment of recombination map dependency for ATRX and KIF18A (C31-C32) demonstrates appropriate caution. The false positive rate is well-characterized through neutral simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The timing of spindle gene mutations varies substantially, with KATNA1, KNL1, and STARD9 mutations occurring much earlier (potentially >1 million years ago) than SPAG5 and KIF18A mutations. The more recent age of SPAG5 and KIF18A mutations correlates with evidence of positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by TMRCA estimates shown in Figure 2B-C. The correlation between recent mutation age and selection evidence (C35) is logically consistent, as older mutations would have longer haplotypes broken down by recombination. However, the >1 million year estimate for older mutations approaches or exceeds the modern-archaic split time, which warrants caution in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Four of twelve Neandertals carry derived KNL1 alleles previously thought specific to modern humans, including high-coverage genome Chagyrskaya 8 (27-fold coverage). These Neandertals carry modern human-like derived alleles at 21 additional positions across a 276kb region and likely carried this haplotype in homozygous form, with ancient DNA damage patterns confirming authenticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36-C40 are well-supported by genomic data (Figure 3) with multiple lines of evidence against contamination: high coverage (C37), ancient DNA damage patterns (C38), extended haplotype sharing (C39), and absence of ancestral alleles (C40). The convergence of evidence from multiple Neandertal individuals strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The modern human-like KNL1 haplotype in Neandertals results from gene flow rather than incomplete lineage sorting. The 276kb haplotype is longer than expected under incomplete lineage sorting (p\u22640.006), and divergence between Neandertal haplotypes with and without the modern-like variant is in the top 0.27% genome-wide, indicating gene flow from modern humans (or relatives) to Neandertals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 provide strong statistical evidence (p\u22640.006, C44) using established methods (Huerta-S\u00e1nchez et al., 2014) to reject incomplete lineage sorting. The extreme divergence between Neandertal haplotypes (C41-C43) and the distribution pattern of derived alleles (C46) logically support the direction of gene flow. The analysis appropriately accounts for local recombination rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Gene flow of the KNL1 haplotype from modern humans to Neandertals occurred after 265 thousand years ago, with estimates of ~202 kya (95% CI: 118-317 kya) based on haplotype length and genetic distance, and 251 kya (95% CI: 131-421 kya) based on TMRCA with present-day individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47-C49 provide convergent age estimates using multiple independent approaches (haplotype length, recombination rates, pairwise differences). The overlapping confidence intervals (C48-C49) and consistency with the upper bound (C47) strengthen confidence. However, the wide confidence intervals reflect substantial uncertainty, and the assumption about undetectable recombination in fixed alleles (C47) is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Twelve non-African individuals carry KNL1 haplotypes inherited from Neandertals, differing at only 7-13 positions from Chagyrskaya 8 (compared to 54-179 differences in other non-Africans), with TMRCA estimates of 96-139 kya. These individuals share archaic-specific alleles in adjacent regions, supporting Neandertal ancestry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C54-C57 are supported by clear genetic distance differences (C54-C55), TMRCA estimates consistent with known Neandertal introgression timing (C56), and presence of archaic-specific alleles (Figure 4\u2014figure supplement 1). The identification of only 12 individuals among 825 non-Africans is consistent with low-frequency introgression. However, the inference relies on similarity to a single Neandertal genome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Ancestral KNL1 variants are essentially absent in present-day humans despite their presence in Neandertals. Among 227,420 exome sequences and 15,684 whole genomes in gnomAD, only one ancestral allele was found (possibly a back mutation), suggesting the ancestral variants may have been disadvantageous and eliminated after admixture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C58-C61 are well-supported by large-scale genomic data showing near-complete absence of ancestral alleles. However, C62's interpretation that ancestral variants were disadvantageous is speculative and not directly tested. Alternative explanations (drift, sampling, demographic effects) are not excluded. The single ancestral allele (C59-C60) could represent back mutation, sequencing error, or rare persistence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The modern human-like KNL1 haplotype is present in Chagyrskaya 8 (60-80 kya) and three of five late Neandertals (40-50 kya) but absent in older Neandertals, possibly indicating frequency increase over time. However, analysis of 7,881 polymorphic positions shows no statistical evidence for positive selection in Neandertals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 appropriately acknowledge limited sample sizes while providing temporal distribution data. The control analysis (C53) showing 35.2% of positions exhibit similar frequency changes is methodologically sound and properly tempers interpretation. The apparent frequency increase (C52) is suggestive but not statistically validated given small sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The KNL1 gene flow from modern humans to Neandertals supports previous evidence for early contacts between these populations in Eurasia, with timing estimates (\u2264265 kya, ~202 kya) consistent with prior studies and potentially relevant to human remains found in Greece (~210 kya) and the Levant (177-194 kya).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 appropriately contextualize findings within existing literature on modern human-Neandertal contacts (mitochondrial DNA, Y chromosomes, genome-wide data). The temporal concordance with fossil evidence (C67-C68) is noted cautiously with appropriate qualifiers ('may be morphologically similar'). The integration of multiple lines of evidence strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C70",
+      "C76"
+    ],
+    "result": "The enrichment of missense changes in spindle genes may relate to prolonged mitotic metaphase in human brain development compared to apes, with functional effects of KIF18A and KNL1 changes on metaphase prolongation demonstrated in a companion study (Mora-Berm\u00fadez et al., 2022).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C70, C76 are supported by citations to relevant studies, with C76 providing experimental validation in a companion paper. However, C64 remains speculative about the specific involvement of these changes in metaphase differences. The connection between spindle gene evolution and brain development is plausible but requires the external validation provided by C76.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The absence of selection evidence for some spindle genes does not exclude positive selection, as the method detects only selective advantages \u22650.5% with 65% probability and cannot detect selection from standing variation. The persistence of only derived KNL1 haplotypes in modern humans provides suggestive evidence for functional importance, though functional characterization is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 appropriately acknowledge methodological limitations (C71-C72) and avoid over-interpretation (C73). The inference about KNL1 importance (C74) is reasonable but correctly characterized as 'suggestive.' The call for functional studies (C75) is appropriate. This represents good scientific practice in acknowledging uncertainty and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C79",
+      "C80"
+    ],
+    "result": "Background information and gene function descriptions establish the evolutionary context and molecular functions of spindle-associated genes, including divergence times, numbers of fixed differences, and specific roles of SPAG5, KNL1, ATRX, KATNA1, KIF18A, NEK6, RSPH1, and STARD9 in cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15, C23-C29, C79-C80 provide essential background information supported by appropriate citations to primary literature and established databases (Gene Ontology, 1000 Genomes Project). These are largely descriptive claims about gene function and evolutionary parameters that establish context for the main findings. The information is well-documented and uncontroversial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C69",
+      "C78"
+    ],
+    "result": "The complex evolutionary history of spindle genes, particularly KNL1, illustrates the intricate relationship between Neandertals and modern humans. The findings may also help resolve the apparent discrepancy between high mitochondrial diversity and nuclear diversity in early Neandertals if mitochondrial diversity reflects inheritance from a more diverse modern human population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16, C69 are well-supported summary statements. However, C78's speculation about resolving mitochondrial-nuclear diversity discrepancies is interesting but not directly tested. This hypothesis requires additional analysis of mitochondrial introgression patterns and diversity metrics that are not presented in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

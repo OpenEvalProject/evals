@@ -1,0 +1,1412 @@
+{
+  "submission": {
+    "id": "2f80e1c8-844b-448e-8d9d-7df76b578622",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:47:23.796430Z",
+    "updated_at": "2025-12-03T09:47:23.796430Z"
+  },
+  "content": [
+    {
+      "id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "submission_id": "2f80e1c8-844b-448e-8d9d-7df76b578622",
+      "content_type": "manuscript",
+      "content_text": "# Anopheles salivary antigens as serological biomarkers of vector exposure and malaria transmission: A systematic review with multilevel modelling\n\n## Authors\n\n- Ellen A Kearney<sup>1</sup> ([ORCID: 0000-0001-8912-8067](https://orcid.org/0000-0001-8912-8067))\n- Paul A Agius<sup>1</sup>\n- Victor Chaumeau<sup>4</sup> ([ORCID: 0000-0003-0171-2176](https://orcid.org/0000-0003-0171-2176))\n- Julia C Cutts<sup>1</sup>\n- Julie A Simpson<sup>2</sup> ([ORCID: 0000-0002-2660-2013](https://orcid.org/0000-0002-2660-2013))\n- Freya JI Fowkes<sup>1</sup> ([ORCID: 0000-0001-5832-9464](https://orcid.org/0000-0001-5832-9464)) \u2020\n\n### Affiliations\n\n1. The McFarlane Burnet Institute of Medical Research and Public Health Melbourne Australia\n2. Centre for Epidemiology and Biostatistics, Melbourne School of Population and Global Health, The University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))\n3. Department of Epidemiology and Preventive Medicine, Monash University Melbourne Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))\n4. Shoklo Malaria Research Unit, Mahidol-Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine, Mahidol University Mae Sot Thailand ([ROR:03fs9z545](https://ror.org/03fs9z545))\n5. Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n6. Department of Medicine at the Doherty Institute, The University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Entomological surveillance for malaria is inherently resource-intensive and produces crude population-level measures of vector exposure which are insensitive in low-transmission settings. Antibodies against Anopheles salivary proteins measured at the individual level may serve as proxy biomarkers for vector exposure and malaria transmission, but their relationship is yet to be quantified.Methods:A systematic review of studies measuring antibodies against Anopheles salivary antigens (PROSPERO: CRD42020185449). Multilevel modelling (to account for multiple study-specific observations [level 1], nested within study [level 2], and study nested within country [level 3]) estimated associations between seroprevalence with Anopheles human biting rate (HBR) and malaria transmission measures.Results:From 3981 studies identified in literature searches, 42 studies across 16 countries were included contributing 393 study-specific observations of anti-Anopheles salivary antibodies determined in 42,764 samples. A positive association between HBR (log transformed) and seroprevalence was found; overall a twofold (100% relative) increase in HBR was associated with a 23% increase in odds of seropositivity (OR: 1.23, 95% CI: 1.10\u20131.37; p<0.001). The association between HBR and Anopheles salivary antibodies was strongest with concordant, rather than discordant, Anopheles species. Seroprevalence was also significantly positively associated with established epidemiological measures of malaria transmission: entomological inoculation rate, Plasmodium spp. prevalence, and malarial endemicity class.Conclusions:Anopheles salivary antibody biomarkers can serve as a proxy measure for HBR and malaria transmission, and could monitor malaria receptivity of a population to sustain malaria transmission. Validation of Anopheles species-specific biomarkers is important given the global heterogeneity in the distribution of Anopheles species. Salivary biomarkers have the potential to transform surveillance by replacing impractical, inaccurate entomological investigations, especially in areas progressing towards malaria elimination.Funding:Australian National Health and Medical Research Council, Wellcome Trust.\n\n## Introduction\n\nSensitive and accurate tools to measure and monitor changes in malaria transmission are essential to track progress towards malaria control and elimination goals. Currently, the gold standard measurement of malaria transmission intensity is the entomological inoculation rate (EIR), a population measure defined as the number of infective Anopheles mosquito bites a person receives per unit of time. EIR is calculated as the human biting rate (HBR; measured at the population level by entomological vector-sampling methodologies [gold standard: human landing catch]) multiplied by the sporozoite index (proportion of captured Anopheles with sporozoites present in their salivary glands). However, estimation of EIR and HBR via entomological investigations is inherently labour and resource intensive, requiring trained collectors, specialised laboratories, and skilled entomologists. Furthermore, these approaches provide a crude population-level estimate of total vector exposure at a particular time and location, precluding investigation of heterogeneity and natural transmission dynamics of individual-level vector\u2013human interactions (Monroe et al., 2020). For example, indoor human landing catches provide poor estimates of outdoor biting and thus total vector exposure (Mathenge et al., 2005). The sensitivity of EIR is further compromised in low transmission settings where the number of Plasmodium-infected specimens detected is low and often zero.\n\nEvaluation of the human antibody response to Anopheles spp. salivary proteins has the potential to be a logistically practical approach to estimate levels of exposure to vector bites at an individual level. Several Anopheles salivary proteins have been shown to be immunogenic in individuals naturally exposed to the bites of Anopheles vectors and have been investigated as serological biomarkers to measure Anopheles exposure (Badu et al., 2012b; Drame et al., 2013a; Drame et al., 2010a; Drame et al., 2010b; Drame et al., 2015; Rizzo et al., 2011a; Rizzo et al., 2011b; Stone et al., 2012; Drame et al., 2012), malaria transmission (Londono-Renteria et al., 2015a; Ya-Umphan et al., 2017; Noukpo et al., 2016), and as an outcome for vector control intervention studies (Drame et al., 2013a; Drame et al., 2010a; Drame et al., 2010b; Noukpo et al., 2016; Idris et al., 2017). However, a major shortcoming of the literature is that studies are largely descriptive and do not quantify the association between entomological and malariometric measures and anti-Anopheles salivary antibody responses. We undertook a systematic review with multilevel modelling to quantify the association between HBR, EIR, and other markers of malaria transmission, with anti-Anopheles salivary antibody responses, and to understand how these associations vary according to transmission setting and dominant Anopheles vectors which can exhibit different biting behaviours. In particular, we were interested in comparing the African context (where Anopheles gambiae and Plasmodium falciparum predominates) to non-African settings (where An. gambiae is absent and where both P. falciparum and Plasmodium vivax are prevalent). This knowledge is pertinent to advance the use of salivary antibody biomarkers as a vector and malaria transmission serosurveillance tool.\n\n## Methods\n\n### Search strategy and selection criteria\n\nWe performed a systematic review with multilevel modelling according to the Meta-analysis of Observational Studies in Epidemiology (MOOSE) and Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines (Moher et al., 2009; Stroup et al., 2000) (Reporting Standards Document). Five databases were searched for published studies investigating antibodies to Anopheles salivary antigens as a biomarker for mosquito exposure or malaria transmission published before 30 June 2020. The protocol (Appendix 1) was registered with PROSPERO (CRD42020185449).\n\nThe primary criterion for inclusion in this systematic review was the reporting of estimates of seroprevalence or total levels of immunoglobulin (Ig) in human sera against Anopheles salivary antigens. We considered for inclusion cross-sectional, cohort, intervention, and case\u2013control studies of individuals or populations living in all geographies with natural exposure to Anopheles mosquitoes. Studies that were solely performed in participants not representative of the wider naturally exposed population (i.e. mosquito-allergic patients, soldiers, returned travellers) were excluded.\n\n### Measures\n\n#### Outcomes\n\nThe primary outcome of our systematic review was antibodies (seroprevalence or levels, including all Ig isotypes and subclasses) against any Anopheles salivary antigens (full-length recombinant proteins, peptides, and crude salivary extract). Study-reported salivary antibody data was extracted at the most granular level (i.e. for each site; time point), with each observation of seroprevalence or levels included as a study-specific salivary antibody observation. As measurement of antibody levels does not produce a common metric between studies, only values of seroprevalence could be included in multilevel modelling analyses. Therefore, to maximise data, authors of studies that reported only antibody levels were contacted and asked to classify their participants as \u2018responders\u2019 or \u2018non-responders\u2019 according to seropositivity (antibody level relative to unexposed sera). Studies that provided antibody levels or categorised seropositivity based upon arbitrary cut-offs are included in narrative terms only.\n\n#### Exposures\n\nThe primary exposures of interest were the entomological metrics HBR (average number of bites received per person per night) and EIR (infectious bites received per person per year). Secondary exposures included study-reported prevalence of Plasmodium spp. infection (confirmed by either microscopy, rapid diagnostic test (RDT), or polymerase chain reaction [PCR]) and seroprevalence of antimalarial antibodies against pre-erythrocytic and blood stage Plasmodium spp. antigens. Where exposure estimates were not provided, we attempted to source data from other publications by the authors or used the site geolocation (longitude and latitude) and year to obtain estimates of EIR from the Pangaea dataset (Yamba et al., 2018), P. falciparum rates in 2\u201310 year olds (PfPR2-10), and dominant vector species (DVS) from the Malaria Atlas Project (MAP; The Malaria Atlas, 2017). Malarial endemicity classes were derived by applying established endemicity cut-offs to MAP PfPR2-10 estimates (Bhatt et al., 2015). For the purposes of the modelling analyses, we defined DVS as where An. gambiae sensu lato (s.l.) was the only DVS, where An. gambiae s.l. was present with additional DVS, or where An. gambiae s.l. was absent. Studies of salivary antigens where exposure variables could not be sourced and data could not be extracted were excluded.\n\n### Statistical analysis\n\nWhere observations of the seroprevalence of antibodies against the same salivary antigen and exposure of interest were reported in more than one study, generalised linear multilevel modelling (mixed effects, logistic) was used to quantify associations between the exposures of interest and salivary antibody seroprevalence measurements (Song et al., 2019). Random intercepts for study and country were estimated to account for nested dependencies induced from multiple study-specific salivary antibody observations (level 1) from the same study (level 2) and studies from the same country (level 3). Additionally, study-level random slopes for the entomological and malariometric exposure parameters were estimated to model study-specific heterogeneity in the effect of the exposure of interest (HBR/EIR/malaria prevalence/antimalarial antibody seroprevalence). The associations between the various exposures and the different salivary antigens were analysed separately; however, observations of IgG seroprevalence against the recombinant full-length protein (gSG6) and synthetic peptide (gSG6-P1, the one peptide determined in all studies utilising peptides) form of the gSG6 antigen were analysed together.\n\nPotential effect modification of the associations between exposures and anti-Anopheles salivary antibody responses was explored. In analyses quantifying the associations between HBR, as well as EIR, and seropositivity, we included an interaction term with DVS and for vector collection method (human landing catch or other indirect measures, e.g. light traps, spray catches, etc.). For the association between Plasmodium spp. prevalence and seropositivity, interaction terms with malaria detection methodology (light microscopy or PCR) and malarial species (P. falciparum only, or P. falciparum and P. vivax) were estimated.\n\nFor the exposure measures (HBR, EIR, malaria prevalence, and antimalarial antibody seroprevalence), the data were log transformed since there were non-linear associations between the exposure measures on the original scale and seroprevalence \u2013 supported empirically by superior model fit as indicated by Akaike\u2019s information criterion (AIC) and Bayesian information criterion (BIC) fit indices (Appendix 1\u2014table 1). To aid interpretation, we present our results as a relative increase in the odds of the gSG6 IgG seropositivity for a twofold or, in other words, a 100% relative increase in the exposures. Intraclass correlation coefficients (ICCs) were estimated for country- and study-specific heterogeneity using estimated model variance components. In order to explore the presence of study-level influence in (HBR and EIR) effect estimate modelling, the Generalised Linear Latent and Mixed Models (gllamm) package (Rabe-Hesketh et al., 2000) was used to produce Cooks distance statistics (Cook, 1977) at the study level from the generalised linear multilevel models. A conservative cut-off threshold for Cooks distance (4 /n) was used to guide sensitivity analyses, where studies were excluded, in turn, to assess outlier influence. All statistical analyses were performed using STATA v15.1.\n\n### Risk of bias in individual studies\n\nRisk of bias was assessed by one reviewer using the Risk of Bias in Prevalence Studies tool (Hoy et al., 2012). The risk of bias pertains to the reported observations of anti-Anopheles salivary antibody seroprevalence included in the multilevel modelling.\n\n## Results\n\nLiterature searches identified 158 potentially relevant studies, of which 42 studies were included in the systematic review (Figure 1) and are described in Table 1. From these studies, we extracted n = 393 study-specific observations of anti-Anopheles salivary antibodies determined from antibody measurements in a total of 42,764 sera samples. These studies were performed in 16 countries mostly in hypo- or mesoendemic areas of Africa (32 studies), with a minority performed in South America (four studies), Asia (four studies), and the Pacific (two studies). Studies were classified according to their DVS which reflected the region where the study was conducted. An. gambiae s.l. was a DVS in all African study sites (n = 151 study-specific observations from 23 studies where An. gambiae s.l. was the only DVS and n = 68 from 16 studies where An. gambiae s.l. was present with additional DVS [i.e. Anopheles funestus, Anopheles pharoensis]), with the exception of one study, which together with the 10 non-African studies contributed n = 174 study-specific estimates where An. gambiae s.l. was absent. Most observations came from cross-sectional (n = 191 from 16 studies) or repeated cross-sectional studies (n = 137 from 18 studies), with n = 60 from cohort studies (six studies) and n = 5 from case\u2013control studies (two studies).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73080/elife-73080-fig1-v2.jpg)\n\n**Figure 1.:** Excluded studies are detailed in Appendix 3.\n\n**Table 1.**\n Key descriptive information from included studies.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Study year</th>\n      <th>Country</th>\n      <th>Malarial endemicity class</th>\n      <th>Dominant malaria vector species</th>\n      <th>Study design</th>\n      <th>No.participants(samples)</th>\n      <th>Study-specific n</th>\n      <th>Vector and malariometric variables</th>\n      <th>Salivary antibody outcomes(seroprevalence [%];[L]evels)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Africa</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Brosseau et al., 2012</td>\n      <td>Angola</td>\n      <td>Hypoendemic;mesoendemic</td>\n      <td>An. gambiae s.l.;An. funestus</td>\n      <td>Cross-sectional\u2021</td>\n      <td>-(1584)</td>\n      <td>6</td>\n      <td>Plas+LM; PfPR</td>\n      <td>gSGE IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Drame et al., 2010a</td>\n      <td>Angola</td>\n      <td>Hypoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Cohort</td>\n      <td>105(1470)</td>\n      <td>12</td>\n      <td>HBR; Plas+LM; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Drame et al., 2010b</td>\n      <td>Angola</td>\n      <td>Hypoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Cohort</td>\n      <td>109(1279)</td>\n      <td>12</td>\n      <td>HBR; Plas+LM; PfPR</td>\n      <td>gSGE IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Marie et al., 2015</td>\n      <td>Angola</td>\n      <td>Hypoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Cohort</td>\n      <td>71(852)</td>\n      <td>12</td>\n      <td>HBR; PfPR</td>\n      <td>gcE5 IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Drame et al., 2015</td>\n      <td>Benin</td>\n      <td>Hyperendemic</td>\n      <td>An. gambiae s.l.;An. funestus</td>\n      <td>Cohort\u2021</td>\n      <td>133(532)</td>\n      <td>4</td>\n      <td>HBR; PfPR</td>\n      <td>gSG6-P1 IgG and IgM [%; L]</td>\n    </tr>\n    <tr>\n      <td>Rizzo et al., 2011b</td>\n      <td>Burkina Faso</td>\n      <td>Hyperendemic*</td>\n      <td>An. gambiae s.l.</td>\n      <td>Repeated cross-sectional</td>\n      <td>-(2066)</td>\n      <td>14</td>\n      <td>HBR; EIR; Plas+LM\u00a7</td>\n      <td>gSG6 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Rizzo et al., 2011a</td>\n      <td>Burkina Faso</td>\n      <td>Hyperendemic*</td>\n      <td>An. gambiae s.l.</td>\n      <td>Repeated cross-sectional</td>\n      <td>335(335)</td>\n      <td>3</td>\n      <td>HBR</td>\n      <td>fSG6 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Rizzo et al., 2014a</td>\n      <td>Burkina Faso</td>\n      <td>Hyperendemic*</td>\n      <td>An. gambiae s.l.</td>\n      <td>Repeated cross-sectional</td>\n      <td>-(359)</td>\n      <td>3</td>\n      <td>HBR</td>\n      <td>gcE5 IgG [%; L]; IgG1 and IgG4 [L]</td>\n    </tr>\n    <tr>\n      <td>Rizzo et al., 2014b</td>\n      <td>Burkina Faso</td>\n      <td>Hyperendemic*</td>\n      <td>An. gambiae s.l.</td>\n      <td>Repeated cross-sectional</td>\n      <td>270(270)</td>\n      <td>6</td>\n      <td>HBR</td>\n      <td>gSG6 IgG1 and IgG4 [L]</td>\n    </tr>\n    <tr>\n      <td>Soma et al., 2018</td>\n      <td>Burkina Faso</td>\n      <td>Mesoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Cross-sectional</td>\n      <td>1,728(273)</td>\n      <td>6</td>\n      <td>HBR; EIR; Plas+LM; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Koffi et al., 2015</td>\n      <td>Cote d'Ivoire</td>\n      <td>Hypoendemic;mesoendemic</td>\n      <td>An. gambiae s.l.;An. funestus\u2020</td>\n      <td>Cross-sectional</td>\n      <td>94(94)</td>\n      <td>3</td>\n      <td>Plas+LM; Pf-IgG; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Koffi et al., 2017</td>\n      <td>Cote d'Ivoire</td>\n      <td>Hypoendemic</td>\n      <td>An. gambiae s.l.;An. funestus\u2020</td>\n      <td>Repeated cross-sectional</td>\n      <td>234(234)</td>\n      <td>5</td>\n      <td>Pf-IgG; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Traor\u00e9 et al., 2018</td>\n      <td>Cote d'Ivoire</td>\n      <td>Hypoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Repeated cross-sectional\u2021</td>\n      <td>89 (178)</td>\n      <td>4</td>\n      <td>HBR; Plas+LM; PfPR</td>\n      <td>gSG6-P1 IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Traor\u00e9 et al., 2019</td>\n      <td>Cote d'Ivoire</td>\n      <td>Hypoendemic</td>\n      <td>An. gambiae s.l.;An. funestus\u2020</td>\n      <td>Repeated cross-sectional\u2021</td>\n      <td>-(442)</td>\n      <td>6</td>\n      <td>HBR; Plas+LM; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Sadia-Kacou et al., 2019</td>\n      <td>Cote d'Ivoire</td>\n      <td>Mesoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Repeated cross-sectional\u2021</td>\n      <td>775(775)</td>\n      <td>8</td>\n      <td>PfPR</td>\n      <td>gSG6-P1 IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Badu et al., 2015</td>\n      <td>Ghana</td>\n      <td>Mesoendemic</td>\n      <td>An. gambiae s.l.;An. funestus\u2020</td>\n      <td>Repeated cross-sectional\u2021</td>\n      <td>295(885)</td>\n      <td>3</td>\n      <td>Plas+LM; Pf-IgG; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Badu et al., 2012b</td>\n      <td>Kenya</td>\n      <td>Hypoendemic;mesoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Repeated cross-sectional</td>\n      <td>-(1366)</td>\n      <td>5</td>\n      <td>EIR; Plas+LM\u00a7; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Sagna et al., 2013b</td>\n      <td>Senegal</td>\n      <td>Hypoendemic;mesoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Cohort\u2021</td>\n      <td>265(1325)</td>\n      <td>25</td>\n      <td>HBR; Plas+LM\u00a7; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Drame et al., 2012</td>\n      <td>Senegal</td>\n      <td>Hypoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Cross-sectional</td>\n      <td>1010(1010)</td>\n      <td>16</td>\n      <td>HBR; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Poinsignon et al., 2010b</td>\n      <td>Senegal</td>\n      <td>Hypoendemic</td>\n      <td>An. funestus</td>\n      <td>Cohort\u2021</td>\n      <td>87(261)</td>\n      <td>3</td>\n      <td>HBR; Plas+LM\u00a7; PfPR</td>\n      <td>gSG6-P1 IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Sarr et al., 2012</td>\n      <td>Senegal</td>\n      <td>Hypoendemic;mesoendemic</td>\n      <td>An. gambiae s.l.;An. funestus\u2020</td>\n      <td>Repeated cross-sectional\u2021</td>\n      <td>-(401)</td>\n      <td>4</td>\n      <td>HBR; Plas+LM\u00a7; Pf-IgG; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Lawaly et al., 2012</td>\n      <td>Senegal</td>\n      <td>Mesoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Cohort</td>\n      <td>387(711)</td>\n      <td>4</td>\n      <td>HBR; Plas+LM\u00a7; PfPR</td>\n      <td>gSGE IgG, IgG4 and IgE [L]</td>\n    </tr>\n    <tr>\n      <td>Ali et al., 2012</td>\n      <td>Senegal</td>\n      <td>Hypoendemic;*mesoendemic;*hyperendemic*</td>\n      <td>An. gambiae s.l.;An. funestus;An. pharoensis</td>\n      <td>Cross-sectional</td>\n      <td>-(134)</td>\n      <td>3</td>\n      <td>HBR; EIR</td>\n      <td>gSG6 IgG [%; L] fSG6 IgG [%; L]; f5\u2019nuc IgG [%; L]; g5\u2019nuc IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Ambrosino et al., 2010</td>\n      <td>Senegal</td>\n      <td>Hypoendemic;*mesoendemic;*hyperendemic*</td>\n      <td>An. gambiae s.l.;An. funestus;An. pharoensis</td>\n      <td>Cross-sectional</td>\n      <td>-(123)</td>\n      <td>3</td>\n      <td>EIR; Pf-IgG</td>\n      <td>gSG6-P1 IgG [%]; gSG6-P2 IgG [%]</td>\n    </tr>\n    <tr>\n      <td>Perraut et al., 2017</td>\n      <td>Senegal</td>\n      <td>Hypoendemic;mesoendemic</td>\n      <td>An. gambiae s.l.; An. funestus</td>\n      <td>Repeated cross-sectional</td>\n      <td>-(798)</td>\n      <td>4</td>\n      <td>EIR; Plas+LM; Plas+PCR; Pf-IgG; PfPR</td>\n      <td>gSG6-P1 IgG [%]</td>\n    </tr>\n    <tr>\n      <td>Poinsignon et al., 2008a</td>\n      <td>Senegal</td>\n      <td>Mesoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Cross-sectional\u2021</td>\n      <td>241(241)</td>\n      <td>3</td>\n      <td>HBR; PfPR</td>\n      <td>gSG6-P1 IgG [L]; gSG6-P2 IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Poinsignon et al., 2009</td>\n      <td>Senegal</td>\n      <td>Mesoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Repeated cross-sectional\u2021</td>\n      <td>61 (122)</td>\n      <td>2</td>\n      <td>HBR; Plas+LM\u00a7; PfPR</td>\n      <td>gSG6-P1 IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Remoue et al., 2006</td>\n      <td>Senegal</td>\n      <td>Mesoendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Cross-sectional\u2021</td>\n      <td>448(448)</td>\n      <td>4</td>\n      <td>HBR; Plas+LM\u00a7; PfPR</td>\n      <td>gSGE IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Sagna et al., 2019</td>\n      <td>Senegal</td>\n      <td>Hypoendemic</td>\n      <td>An. gambiae s.l.\u2020</td>\n      <td>Cross-sectional\u2021</td>\n      <td>809(809)</td>\n      <td>4</td>\n      <td>PfPR</td>\n      <td>gSG6-P1 IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Stone et al., 2012</td>\n      <td>Tanzania</td>\n      <td>Mesoendemic;hyperendemic</td>\n      <td>An. gambiae s.l.</td>\n      <td>Cross-sectional\u2021</td>\n      <td>636(636)</td>\n      <td>16</td>\n      <td>HBR; Pf-IgG; PfPR</td>\n      <td>gSG6 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Yman et al., 2016</td>\n      <td>Tanzania</td>\n      <td>Mesoendemic;holoendemic*</td>\n      <td>An. gambiae s.l.;An. funestus</td>\n      <td>Repeated cross-sectional\u2021</td>\n      <td>668(668)</td>\n      <td>16</td>\n      <td>Pf-IgG; PfPR</td>\n      <td>gSG6 IgG [%]</td>\n    </tr>\n    <tr>\n      <td>Proietti et al., 2013</td>\n      <td>Uganda</td>\n      <td>Mesoendemic</td>\n      <td>An. gambiae s.l.;An. funestus\u2020</td>\n      <td>Repeated cross-sectional</td>\n      <td>509(509)</td>\n      <td>3</td>\n      <td>Pf-IgG; PfPR</td>\n      <td>gSG6 IgG [%]</td>\n    </tr>\n    <tr>\n      <td>South America</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Andrade et al., 2009</td>\n      <td>Brazil</td>\n      <td>Eliminating;hypoendemic</td>\n      <td>An. darlingi</td>\n      <td>Cross-sectional</td>\n      <td>204(204)</td>\n      <td>3</td>\n      <td>Plas+LM\u00b6; Plas+PCR\u00b6; PfPR</td>\n      <td>dSGE IgG [L||]</td>\n    </tr>\n    <tr>\n      <td>Londono-Renteria et al., 2015a</td>\n      <td>Colombia</td>\n      <td></td>\n      <td>An. albimanus</td>\n      <td>Cross-sectional</td>\n      <td>42(42)</td>\n      <td>2</td>\n      <td>Plas+PCR\u00b6</td>\n      <td>gSG6-P1 IgG [L||]</td>\n    </tr>\n    <tr>\n      <td>Londono-Renteria et al., 2020a</td>\n      <td>Colombia</td>\n      <td>Eliminating</td>\n      <td>An. albimanus</td>\n      <td>Cross-sectional</td>\n      <td>337(337)</td>\n      <td>2</td>\n      <td>Plas+PCR; PfPR</td>\n      <td>aPEROX-P1, P2 and P3 IgG [L]; aTRANS-P1 and P2 IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Montiel et al., 2020</td>\n      <td>Colombia</td>\n      <td>Eliminating</td>\n      <td>An. albimanus</td>\n      <td>Case\u2013control</td>\n      <td>113(113)</td>\n      <td>2</td>\n      <td>Plas+LM; Plas+PCR\u00b6; PfPR</td>\n      <td>gSG6-P1 IgG [L ||]; dSGE IgG [L ||]; aSTECLA SGE IgG [L ||]; aCartagena SGE IgG [L ||]</td>\n    </tr>\n    <tr>\n      <td>Asia</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Kerkhof et al., 2016</td>\n      <td>Cambodia</td>\n      <td>Hypoendemic</td>\n      <td>An. dirus</td>\n      <td>Cross-sectional</td>\n      <td>-(8438)</td>\n      <td>113</td>\n      <td>Plas+PCR; Pf-IgG; Pv-IgG; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]; gSG6-P2 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Charlwood et al., 2017</td>\n      <td>Cambodia</td>\n      <td>Eliminating</td>\n      <td>An. dirus</td>\n      <td>Repeated cross-sectional</td>\n      <td>454(1180)</td>\n      <td>6</td>\n      <td>HBR; Plas+PCR; Pf-IgG; PfPR</td>\n      <td>gSG6 IgG [L]</td>\n    </tr>\n    <tr>\n      <td>Ya-Umphan et al., 2017</td>\n      <td>Myanmar</td>\n      <td>Eliminating</td>\n      <td>An. minimus;An. maculatus;An. dirus s.l.</td>\n      <td>Repeated cross-sectional</td>\n      <td>2602(9425)</td>\n      <td>28</td>\n      <td>HBR; EIR;Plas+PCR;Pf-IgG; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Waitayakul et al., 2006</td>\n      <td>Thailand</td>\n      <td></td>\n      <td>An. dirus</td>\n      <td>Case\u2013control</td>\n      <td>139 (139)</td>\n      <td>3</td>\n      <td>Plas+LM</td>\n      <td>dirSGE IgG and IgM [L ||]</td>\n    </tr>\n    <tr>\n      <td>Pacific</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pollard et al., 2019</td>\n      <td>Solomon Islands</td>\n      <td>Eliminating;hypoendemic</td>\n      <td>An. farauti</td>\n      <td>Repeated cross-sectional</td>\n      <td>686(791)</td>\n      <td>9</td>\n      <td>HBR; EIR; PfPR</td>\n      <td>gSG6-P1 IgG [%; L]</td>\n    </tr>\n    <tr>\n      <td>Idris et al., 2017</td>\n      <td>Vanuatu</td>\n      <td>Eliminating;hypoendemic;mesoendemic</td>\n      <td>An. farauti</td>\n      <td>Repeated cross-sectional</td>\n      <td>905(905)</td>\n      <td>3</td>\n      <td>Plas+LM; Pf-IgG; Pv-IgG; PfPR</td>\n      <td>gSG6 IgG [%; L]</td>\n    </tr>\n  </tbody>\n</table>\n\n_Data are given as study, year of publication, country, malarial endemicity class, malarial DVS, study design (\u2021 indicates that study was performed solely in children), number of participants and number of samples, number of study-specific salivary antibody outcome observations (study-specific n), entomological and malariometric parameters, and salivary antibody outcomes assessed. Malarial endemicity class (categorical) is derived from P. falciparum prevalence rate in 2\u201310 year olds (PfPR) extracted from MAP using site geolocations and year of study, and applying established cut-offs reported in Bhatt et al., 2015. If PfPR data were not available (e.g. surveys prior to 2000; or unable to determine study site geolocation and year), endemicity class is given as stated in the study (indicated by *). DVS is as stated in the study or extracted from MAP (indicated by \u2020). Of note, An. gambiae sensu lato (s.l.) includes both An. gambiae sensu stricto and An. arabiensis. Entomological and malariometric parameters include HBR, EIR, prevalence estimates of Plasmodium spp. (Plas+): detected by LM, or PCR, with \u00a7 indicating prevalence of P. falciparum only and \u00b6 indicating prevalence of P. vivax only (no footnote indicates P. falciparum and P. vivax co-endemic), as well as PfPR extracted from MAP (The Malaria Atlas, 2017). Salivary antibody outcomes are indicated as either seroprevalence [%] or levels [L], or both [%; L], with || indicating that studies reported results stratified by malarial infection status. Salivary antigens include recombinant full-length proteins, synthetic peptides, and whole SGE. Italicised prefix of salivary antigen indicates species: An. gambiae (g), An. funestus (f), An. darlingi (d), An. albimanus (a), An. dirus (dir).DVS: dominant vector species; MAP: Malaria Atlas Project; HBR: human biting rate; EIR: entomological inoculation rate; LM: light microscopy; PCR: polymerase chain reaction; SGE: salivary gland extracts._\n\nThe salivary antigen most commonly assessed was An. gambiae salivary gland 6 (gSG6), as a full-length protein (n = 67 from 8 studies) and synthetic peptide (An. gambiae salivary gland 6 peptide 1 [gSG6-P1]; n = 270 from 24 studies). Additional salivary antigens assessed included An. gambiae gSG6-P2 (n = 119 from three studies), recombinant cE5 (n = 15 from two studies), g-5\u2019nuc (n = 3 from one study), and recombinant An. funestus fSG6 (n = 6 from two studies) and f-5\u2019nuc (n = 3 from one study). Seven studies measured antibodies to whole salivary gland extracts (SGE) from An. gambiae (n = 24 from four studies), Anopheles darlingi (n = 5 from two studies), Anopheles albimanus (n = 2 from one study), and Anopheles dirus (n = 3 from one study), while one study assessed antibodies against synthetic peptides of An. albimanus (n = 2) (Table 1). All studies investigated total IgG and only five determined an additional isotype or subclass (Drame et al., 2015; Lawaly et al., 2012; Rizzo et al., 2014a; Rizzo et al., 2014b; Waitayakul et al., 2006). The paucity of studies investigating these latter-mentioned antibody types and Anopheles salivary biomarkers precluded extensive multilevel analyses; instead, we present their associations in narrative terms in Appendix 10. Analyses reported below focus on quantifying the relationships between HBR, EIR, and markers of malaria transmission with total IgG to An. gambiae gSG6. The distributions of exposure observations were: HBR (n = 197 from 24 studies, median: 3.0 bites per person per night, IQR: 0.9\u201312.1; range: 0\u2013121.4), EIR (n = 60 from 8 studies, median: 7.3 infectious bites received per person per year, IQR: 0\u201336.4; range: 0\u2013585.6), and Plasmodium spp. prevalence (n = 266 from 22 studies, median: 9.1%; IQR: 4\u201322%; range: 0\u201394.6%).\n\nGeneralised linear multilevel modelling (mixed effects, logistic) of n = 132 study-specific observations from 12 studies estimated a positive association between Anopheles spp.-HBR (log transformed) and seroprevalence of IgG to An. gambiae gSG6 salivary antigen (Drame et al., 2010a; Drame et al., 2015; Rizzo et al., 2011a; Stone et al., 2012; Drame et al., 2012; Ya-Umphan et al., 2017; Soma et al., 2018; Traor\u00e9 et al., 2019; Sagna et al., 2013b; Sarr et al., 2012; Ali et al., 2012; Pollard et al., 2019; Figure 2, Appendix 4\u2014table 1). As we have log transformed HBR to account for the non-linear relationship between HBR and log odds of gSG6 IgG seropositivity, we have presented estimated odds ratios for different incremental percent increases in HBR (Figure 2\u2014figure supplement 1). For example, the magnitude of the association was such that a twofold (100% relative) increase in HBR was associated with a 23% increase (OR: 1.23; 95% CI: 1.10\u20131.37; p<0.001) in the odds of anti-gSG6 IgG seropositivity (Figure 2). Heterogeneity in the effect of HBR on gSG6 across studies was observed (likelihood ratio \u03c72(1) = 109.25, p<0.001); the 95% reference range of study-specific effects for a twofold increase in HBR ranged from a 12% reduction to a 70% increase in odds (OR: 0.88\u20131.70). There was no evidence that the association between HBR and gSG6 IgG varied according to vector collection method (human landing catch or other indirect methods; p=0.443) or study design (longitudinal cohort or cross-sectional/repeated cross-sectional; p=0.138). Given the global heterogeneity in the distribution of Anopheles species, we sought to quantify the extent to which the association between An. gambiae gSG6 IgG seropositivity and HBR is moderated by DVS. We observed that the magnitude of the association between An. gambiae gSG6 IgG seropositivity and HBR was greatest in African studies where An. gambiae s.l. was the only dominant vector (p<0.001, Appendix 5); a twofold increase in HBR was associated with a 37% increase (OR: 1.37; 95% CI: 1.19\u20131.58; p<0.001) in the odds of gSG6 IgG seropositivity compared to an attenuated association for African studies where An. gambiae s.l. was not the only DVS (OR: 1.14 per twofold increase in HBR; 95% CI: 0.98\u20131.33; p=0.079) and non-African studies where An. gambiae s.l. was absent (OR: 1.05 per twofold increase in HBR; 95% CI: 1.03\u20131.08; p<0.001). In order to quantify the relationship between gSG6 IgG seroprevalence and HBR, for given HBR values we estimated gSG6 IgG seroprevalence by producing model-based predicted probabilities overall and by DVS (Figure 3). In African studies where An. gambiae s.l. is the only DVS, predicted seroprevalence of An. gambiae gSG6 ranged from 21% (95% CI: 0\u201345%) to 86% (95% CI: 67\u2013100%) for an HBR of 0.1\u2013100 bites per person per night, respectively (Figure 3, Figure 3\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73080/elife-73080-fig2-v2.jpg)\n\n**Figure 2.:** Figure shows the observed anti-gSG6 (either recombinant or peptide form) IgG seroprevalence (%) and HBR for each study-specific observation, as well as the predicted average anti-gSG6 IgG seroprevalence (predicted probability for the average study and country) with 95% confidence intervals (95% CI). Circles are proportional to the size of the sample for each study-specific observation, with colours indicating sample size: black (<50), red (50\u2013100), navy (100\u2013150), and green (>150). Association estimated using generalised linear multilevel modelling (mixed effects, logistic) to account for the hierarchical nature of the data, where study-specific anti-gSG6 IgG observations are nested within study and study is nested within country (model output shown in Appendix 4; p<0.001).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73080/elife-73080-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** HBR has been log transformed to account for the non-linear relationship between HBR and log odds of gSG6 IgG seropositivity, where a 100% relative increase in HBR corresponds to a twofold increase in HBR. Estimated using generalised linear multilevel modelling (mixed effects, logistic) of the association between anti-gSG6 IgG seropositivity and log HBR, with random effects for country-specific and study-specific heterogeneity in gSG6 IgG seroprevalence and study-specific heterogeneity in effect of HBR (see Appendix 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73080/elife-73080-fig3-v2.jpg)\n\n**Figure 3.:** Panels show the predicted average anti-gSG6 IgG seroprevalence (predicted probability for the average study and country) with 95% confidence intervals for given HBR, for all Anopheles spp. (using model output from Appendix 4) and for specific-dominant vector species (DVS): where An. gambiae s.l. is the only DVS, where other DVS were present in addition to An. gambiae s.l. and where An. gambiae s.l. was absent (using model output from Appendix 5).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73080/elife-73080-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Figure shows the observed anti-gSG6 (either recombinant or peptide form) IgG seroprevalence (%) and HBR for each study-specific observation coloured by dominant vector species (DVS), as well as the predicted average anti-gSG6 IgG seroprevalence (predicted probability for the average study and country) with 95% confidence intervals (95% CI). Coloured circles and lines denote DVS, with red indicating where An. gambiae s.l. is the only DVS, navy where other DVS were present in addition to An. gambiae s.l., and green where An. gambiae s.l. was absent. Circles are proportional to the size of the sample for each study-specific estimate. Association estimated using generalised linear multilevel modelling (mixed effects, logistic) to account for the hierarchical nature of the data, where study-specific anti-gSG6 IgG observations, are nested within study, and study is nested within country.\n\nA positive association was also found between seroprevalence of anti-gSG6 IgG antibodies and EIR in analysis of n = 38 study-specific observations from eight studies (Figure 4, Appendix 6) [Rizzo et al., 2011b; Ya-Umphan et al., 2017; Soma et al., 2018; Ali et al., 2012; Ambrosino et al., 2010; Perraut et al., 2017; Pollard et al., 2019; Badu et al., 2012b]. For a twofold increase in EIR, the odds of anti-gSG6 IgG seropositivity increased by 11% (OR: 1.11; 95% CI: 1.05\u20131.17; p<0.001), with heterogeneity in the study-specific effects (95% reference range: 1.00\u20131.24; likelihood ratio \u03c72(1) = 15.02, p<0.001). There was no evidence of effect modification by either vector collection method (p=0.095) or DVS (p=0.080) on the association between seroprevalence of anti-gSG6 IgG and EIR.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73080/elife-73080-fig4-v2.jpg)\n\n**Figure 4.:** Figure shows the observed anti-gSG6 (either recombinant or peptide form) IgG seroprevalence (%) and EIR for each study-specific observation, as well as the predicted average anti-gSG6 IgG seroprevalence (predicted probability for the average study and country) with 95% confidence intervals (95% CI). Circles are proportional to the size of the sample for each study-specific estimate, with colours indicating sample size: black (<50), red (50\u2013100), navy (100\u2013150), and green (>150). Association estimated using generalised linear multilevel modelling (mixed effects, logistic) to account for the hierarchical nature of the data, where study-specific anti-gSG6 IgG observations are nested within study and study is nested within country (model output shown in Appendix 6; p<0.001).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73080/elife-73080-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** EIR has been log transformed to account for the non-linear relationship between EIR and log odds of gSG6 IgG seropositivity, where a 100% relative increase in EIR corresponds to a twofold increase in EIR. Estimated using generalised linear multilevel modelling (mixed effects, logistic) of the association between anti-gSG6 IgG seropositivity and log EIR, with random effects for country-specific and study-specific heterogeneity in gSG6 IgG seroprevalence and study-specific heterogeneity in effect of EIR (see Appendix 6).\n\nSimilar positive associations were also found between anti-gSG6 IgG levels, HBR, and EIR in 11 studies [Drame et al., 2015; Drame et al., 2012; Stone et al., 2012; Soma et al., 2018; Ali et al., 2012; Rizzo et al., 2011a; Rizzo et al., 2011b; Poinsignon et al., 2010b; Poinsignon et al., 2008a; Charlwood et al., 2017; Sagna et al., 2013b] and 3 studies [Rizzo et al., 2011b; Ya-Umphan et al., 2017; Ali et al., 2012], respectively, but 7 studies showed no association between HBR and levels of IgG to gSG6 [Drame et al., 2010a; Ya-Umphan et al., 2017; Traor\u00e9 et al., 2018; Traor\u00e9 et al., 2019; Sarr et al., 2012; Poinsignon et al., 2009; Pollard et al., 2019].\n\nThe association between anti-gSG6 IgG seroprevalence and population-level prevalence of Plasmodium spp. infection was investigated. Generalised linear multilevel modelling (mixed effects, logistic) of n = 212 from 14 studies that measured Plasmodium spp. prevalence contemporaneously in their study [Badu et al., 2012b; Rizzo et al., 2011b; Ya-Umphan et al., 2017; Soma et al., 2018; Koffi et al., 2015; Traor\u00e9 et al., 2019; Badu et al., 2015; Sagna et al., 2013b; Sarr et al., 2012; Perraut et al., 2017; Drame et al., 2010a; Idris et al., 2017; Proietti et al., 2013; Kerkhof et al., 2016] showed that for a twofold increase in the prevalence of Plasmodium spp. infection the odds of gSG6 IgG seropositivity increased by 38%, although the confidence intervals were wide (OR: 1.38; 95% CI: 0.89\u20132.12; p=0.148) and heterogeneity in the study-specific effects was observed (95% reference range: 0.30\u20136.37; likelihood ratio \u03c72(1) = 235.5, p<0.001) (Figure 5 and Appendix 7). In the association between gSG6 IgG seropositivity and Plasmodium spp. infection, there was no evidence for a moderating effect of Plasmodium spp. detection method (light microscopy or PCR, p=0.968), or species (African studies with P. falciparum versus non-African studies where P. falciparum and P. vivax are co-prevalent, p=0.538).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73080/elife-73080-fig5-v2.jpg)\n\n**Figure 5.:** Figure shows the observed anti-gSG6 (either recombinant or peptide form) IgG seroprevalence (%) and prevalence of any Plasmodium spp. infection (%) for each study-specific observation, as well as the predicted average anti-gSG6 IgG seroprevalence (predicted probability for average study) with 95% confidence intervals (95% CI). Circles are proportional to the size of the sample for each study-specific observation, with colours indicating sample size: black (<50), red (50\u2013100), navy (100\u2013150), and green (>150). Association estimated using generalised linear multilevel modelling (mixed effects, logistic) to account for the hierarchical nature of the data, where study-specific anti-gSG6 IgG observations are nested within study. See Appendix 7 for model output.\n\nAdditionally, 14 studies reported observations of anti-gSG6 IgG levels and the prevalence of Plasmodium spp. infections measured contemporaneously in their study. The median anti-gSG6 IgG antibody levels increased with increasing Plasmodium spp. prevalence in six of these studies (Drame et al., 2010a; Ya-Umphan et al., 2017; Idris et al., 2017; Poinsignon et al., 2010b; Sarr et al., 2012; Kerkhof et al., 2016), or in Plasmodium spp.-infected compared to non-infected individuals (Londono-Renteria et al., 2015a; Montiel et al., 2020), but showed no association in eight studies (Rizzo et al., 2011b; Soma et al., 2018; Koffi et al., 2015; Traor\u00e9 et al., 2018; Traor\u00e9 et al., 2019; Badu et al., 2015; Sagna et al., 2013b; Poinsignon et al., 2009). Furthermore, we also investigated associations with serological measures of malaria exposure and found that for a twofold increase in pre-erythrocytic and blood stage antigen seroprevalence there was a 2.19-fold (OR: 2.19; 95% CI: 1.18\u20134.04; p=0.013) and 41% to 5.69-fold (OR range: 1.41\u20135.69; p range: <0.001 to 0.523) increase in the odds of anti-gSG6 IgG seropositivity, respectively (Appendix 8).\n\nTo give epidemiological context, we estimated anti-gSG6 seroprevalence by producing model-based predicted probabilities by malarial endemicity class (a categorical variable derived by applying established cut-off values for the PfPR2-10 extracted from MAP). Generalised linear multilevel modelling (mixed effects, logistic) on 297 study-specific salivary antibody observations from 22 studies shows that the estimated anti-gSG6 IgG seroprevalence is higher for the higher endemicity classes (eliminating malaria: 20% [95% CI: 8\u201331%]; hypoendemic: 34% [95% CI: 19\u201349%]; mesoendemic: 52% [95 CI: 35\u201368%]; hyperendemic settings: 47% [95% CI: 27\u201364%]; holoendemic: 78% [95% CI: 67\u201390%]; p<0.001; Table 2). Interactions with DVS or region (Africa/non-Africa) could not be explored due to collinearity with malaria endemicity class. Therefore, in addition using Bayes best linear unbiased predictions (BLUPs) we estimated country-specific gSG6 IgG seroprevalence from an intercept-only multilevel model fitted to 301 study-specific salivary antibody observations from 22 studies. It showed that IgG seroprevalence to An. gambiae gSG6 was lowest in countries in the Pacific region where An. gambiae is absent (Vanuatu [31%] and Solomon Islands [32%]) and highest in countries where An. gambiae is a DVS (Benin [72%] and Burkina Faso [65%]; Appendix 9).\n\n**Table 2.**\n Association between gSG6 IgG seroprevalence (%) and malarial endemicity (PfPR2-10).Table shows the odds ratio (OR), 95% confidence interval (95% CI), p-value, as well as the predicted gSG6 IgG seroprevalence and associated 95%CI\u2020 for associations between endemicity class (categorical: derived from P. falciparum parasite rates in 2\u201310 year olds [PfPR]) and anti-gSG6 IgG seropositivity.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Malaria endemicity class*</th>\n      <th>OR</th>\n      <th>95% CI</th>\n      <th>p-Value</th>\n      <th>Predicted gSG6 IgG seroprevalence (%)</th>\n      <th>95% CI</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Eliminating malaria(PfPR &lt;1%)</td>\n      <td>Ref.</td>\n      <td></td>\n      <td></td>\n      <td>20.0</td>\n      <td>8.3\u201331.7</td>\n    </tr>\n    <tr>\n      <td>Hypoendemic(PfPR 1-10%)</td>\n      <td>2.04</td>\n      <td>1.43\u20132.90</td>\n      <td>&lt;0.001</td>\n      <td>33.7</td>\n      <td>18.9\u201348.5</td>\n    </tr>\n    <tr>\n      <td>Mesoendemic(PfPR 10-50%)</td>\n      <td>4.19</td>\n      <td>2.80\u20136.08</td>\n      <td>&lt;0.001</td>\n      <td>51.5</td>\n      <td>34.6\u201367.7</td>\n    </tr>\n    <tr>\n      <td>Hyperendemic(PfPR 50-75%)</td>\n      <td>3.36</td>\n      <td>1.98\u20135.71</td>\n      <td>&lt;0.001</td>\n      <td>46.5</td>\n      <td>27.4\u201363.8</td>\n    </tr>\n    <tr>\n      <td>Holoendemic(PfPR &gt;75%)</td>\n      <td>14.4</td>\n      <td>9.72\u201321.36</td>\n      <td>&lt;0.001</td>\n      <td>78.2</td>\n      <td>66.8\u201389.7</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Generalised linear multilevel modelling (mixed effects, logistic) estimating the association between anti-gSG6 IgG seropositivity and endemicity class with random effects for study-specific heterogeneity in gSG6 IgG. Model fitted to n = 297 study-specific observations from 22 studies. Of note, nine studies that measured Plasmodium spp. prevalence and IgG antibodies to gSG6 were excluded from this analysis as eight only reported gSG6 IgG levels and one was a case\u2013control study. Endemicity class membership is derived from PfPR from The Malaria Atlas, 2017 (MAP) using cut-offs taken from Bhatt et al., 2015, or where MAP data were unavailable, endemicity was included as indicated in the study.\u2020Predicted gSG6 IgG seroprevalence (predicted probability in the average study) is estimated from generalised linear multilevel modelling (mixed effects, logistic)._\n\nAssessments of internal and external study validity revealed there was a moderate risk of selection bias (Appendix 2) due to the study-specific inclusion criteria of populations at higher risk of malaria which contributed gSG6 seroprevalence observations. Sensitivity analyses exploring potential study-level outlier influence on the estimated associations between anti-gSG6 IgG seroprevalence, HBR, and EIR showed no evidence of bias (effect estimates for each sensitivity analysis were consistent with model estimates overall) for studies identified as exhibiting potential influence (HBR: n = 6; EIR: n = 6).\n\n## Discussion\n\nThis systematic review and multilevel modelling analysis provides the first quantification of a positive non-linear association between seroprevalence of An. gambiae gSG6 IgG antibodies and HBR and demonstrated that its magnitude varied with respect to the DVS present in the area. Importantly, this review identified a paucity of studies conducted outside of Africa, as well as investigating salivary antigens representing different Anopheles spp. and antigenic targets. gSG6 antibodies were positively associated with the prevalence of Plasmodium spp. infection as well as established epidemiological measures of malaria transmission: malaria endemicity class and EIR. Overall, our results demonstrate that antibody seroprevalence specific for Anopheles spp. salivary antigens has the potential to be an effective measure of vector exposure and malaria transmission at the population and, potentially, individual level.\n\nAn. gambiae gSG6 IgG seropositivity increased with increasing HBR, although these increases had diminishing impact on An. gambiae gSG6 IgG seropositivity at higher levels of HBR (approximately greater than two bites per person per night). In our study, 17 studies performed across Africa (Angola, Benin, Burkina Faso, Cote d\u2019Ivoire, and Senegal) and the Asia Pacific (Cambodia, Myanmar, and the Solomon Islands) reported an HBR < 2, demonstrating the applicability of gSG6 as a biomarker of HBR across a broad range of malaria-endemic regions. We also observed that the association was strongest in areas where An. gambiae s.l. was the only DVS (i.e. concordant An. gambiae species-specific HBR with An. gambiae gSG6 antibodies). Associations, albeit weaker, were also observed between discordant species-specific HBR and gSG6, most likely because the An. gambiae SG6 gene shares moderate sequence identity with vector species that are dominant in other regions (Africa: 80% An. funestus; Asia: 79% Anopheles stephensi and Anopheles maculatus; 54% An. dirus; Pacific: 52.5% Anopheles farauti), and is absent from the DVS of the Americas (An. albimanus and An. darlingi) (Arc\u00e0 et al., 2017). The generalisability of An. gambiae gSG6 IgG as a biomarker of exposure to other Anopheles spp. may therefore be limited. However, our review also identified a paucity of studies investigating additional salivary antigenic targets and Anopheles species not present in Africa. The identification of novel salivary antigens that are species-specific will be valuable in quantifying exposure to the other Anopheles vectors that share limited identity with An. gambiae SG6 (such as An. farauti and An. dirus), as well as Anopheles spp. which lack SG6 (as done for An. albimanus and An. darlingi; Londono-Renteria et al., 2020a; Londono-Renteria et al., 2020b). An Anopheles species-specific serological platform could advance vector surveillance by more accurately capturing exposure to DVS in the South American and Asia Pacific regions which exhibit diverse biting behaviours and vector competence (DVS typically bite outdoors during the night and day, respectively; The Malaria Atlas, 2017; Sinka et al., 2012; Sinka et al., 2010; Trung et al., 2005; Herrera et al., 2015; Chaumeau et al., 2018), as well as the increasing threat of urban malaria from An. stephensi in Africa (Takken and Lindsay, 2019; Sinka et al., 2020).\n\nThis review demonstrated that the prevalence of Anopheles salivary antibodies increased with increasing prevalence of Plasmodium spp. infection (although confidence intervals were wide and we observed heterogeneity in the effect between studies) as well as established epidemiological measures of malaria transmission: malaria endemicity class and EIR. Anti-salivary antibodies, such as SG6 IgG, may therefore have the potential to serve as a proxy measure for receptivity of a population to sustain malaria transmission. Their application could be particularly relevant in pre-elimination areas, or non-endemic areas under threat of imported malaria, where Anopheles salivary antibodies are more readily detectable than parasites; salivary antibodies were predicted to be prevalent (20%) in areas defined as eliminating malaria (<1% PfPR2-10). Furthermore, if SG6 IgG seroprevalence can be effectively combined with a measurement of the sporozoite index, salivary antibodies as a marker of HBR could help overcome sensitivity limitations of EIR in low transmission areas. Additional measures could include estimates of malaria prevalence or serological biomarkers that are species- or life stage-specific (e.g. Plasmodium spp. pre-erythrocytic antigens as biomarkers for recent parasite inoculation). Indeed, positive associations between antibodies specific for Plasmodium spp. pre-erythrocytic and blood stage antigens with gSG6 were demonstrated in analyses of data from diverse malaria-endemic areas. Serological tools combining salivary antigens with antigens specific for the different Plasmodium spp. could be easy to employ and complement malaria surveillance programmes. These tools may be particularly useful in the Asia Pacific, a region of relatively low malaria transmission with goals of elimination, but the highest burden of P. vivax malaria where blood stage infection can be caused by relapses from dormant liver stages. In these areas, parasite prevalence may therefore overestimate ongoing malaria transmission, making vector surveillance tools essential to informing elimination strategies in the Asia Pacific and other regions where P. vivax is endemic.\n\nThe gold standard entomological measures HBR and EIR provide crude population-level estimates of vector and malaria exposure that are specific in space and time and preclude investigation of individual-level heterogeneity and natural transmission dynamics. Our study demonstrated that salivary biomarkers measured at the individual level, such as gSG6 IgG, can be used to quantify total vector exposure at the population level, without requiring laborious entomological experiments. However, validating an individual-level serological measure, which demonstrates considerable individual-level variation, against the imperfect population-level gold standards of HBR and EIR is challenging and reflected in the variation in study-specific estimates in the association between gSG6 IgG and HBR in modelling analyses. However, the accuracy of salivary antibodies to measure individual-level exposure to Anopheles bites is yet to be validated; literature searches identified no studies investigating this association at the individual level. Without detailed measurements of individual-level vector exposure, or a detailed knowledge of the half-life of Anopheles salivary antibodies post biting event, the true accuracy of salivary antibodies, such as SG6 IgG, to measure individual-level HBR remains unknown. This knowledge is particularly pertinent where Anopheles salivary biomarkers might be applied to assess the effectiveness of a vector control intervention or used to measure temporal changes in malaria transmission; particularly in areas or populations where there is considerable heterogeneity in individual-level risk of Anopheles exposure (e.g. unmeasured outdoor biting due to occupational exposure for forest workers; Sandfort et al., 2020).\n\nThe broad nature of our inclusion and quality criteria was a key strength of our systematic review, which aimed to provide a comprehensive analysis of all Anopheles salivary biomarkers and determine their associations with entomological and malariometric measures of transmission. However, this review has two main limitations. First, despite the inclusive nature, assessment of the external validity of the review revealed a moderate risk of bias; some studies exhibited a high risk of selection bias as they were performed in specific high-risk populations not representative of the overall population (i.e. children only). This is accounted for to some degree by specification of a random effect (i.e. intercept) for study, which accounts for unmeasured study-specific factors that may introduce study-specific measurement error to measurement of the outcome. Second, with respect to internal validity, there may be potential selection bias introduced by the exclusion of studies reporting zero HBR (7 observations from three studies; Rizzo et al., 2011b; Pollard et al., 2019; Sagna et al., 2013b), EIR (22 observations from three studies; Ya-Umphan et al., 2017; Rizzo et al., 2011b; Soma et al., 2018), and malaria prevalence (15 observations from three studies; Idris et al., 2017; Sagna et al., 2013b; Kerkhof et al., 2016) estimates, given we modelled the log of these factors. However, adding a small constant (e.g. 0.001) to a zero value to permit modelling of a log estimate can also introduce considerable bias (i.e. seemingly small differences between values become very large on the log scale). In light of this, we also chose to provide estimates of association and gSG6 IgG seroprevalence according to a selected range of epidemiologically relevant hypothetical HBRs (no widely accepted HBR classification exists in the literature) and according to widely accepted, discrete, endemicity classes according to MAP estimates (which permitted inclusion of all studies) to provide epidemiological context. However, there is the potential for misclassification of malarial endemicity class derived from geospatially extracted MAP predictions of PfPR2-10 which increase in uncertainty in areas with scarce data. Similarly, we used MAP vector occurrence data to inform DVS categories for 7 (out of 42) studies. Cross-referencing these 7 studies with a 2017 updated database for African vectors (using data for the nearest neighbouring village) identified 10 discrepant datapoints from 3 studies (from a total of 28 datapoints from 7 studies) (Snow, 2017). Any misclassification events may cause us to underestimate the standard error in the effect of malaria endemicity class and DVS on gSG6 IgG.\n\n### Conclusions\n\nIn order to advance progress towards malaria elimination, the World Health Organization has called for innovative tools and improved approaches to enhance vector surveillance and monitoring and evaluation of interventions (World Health Organization, 2017). Our systematic review has provided evidence that Anopheles salivary antibodies are serological biomarkers of vector and malaria exposure, by quantifying their positive association with Anopheles-HBR and established epidemiological measures of malaria transmission. These salivary biomarkers have the potential to replace crude population-level estimates of entomological indices with a precise and scalable tool that measures Anopheles vector exposure at the individual level. This approach could be expanded into a serosurveillance tool to assess the effectiveness of vector control interventions, define heterogeneity in malaria transmission, and inform efficient resource allocation that would ultimately accelerate progress towards elimination.\n",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "3a5c4786-61df-4cb0-a47f-230a31abc39e",
+      "submission_id": "2f80e1c8-844b-448e-8d9d-7df76b578622",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Amy Wesolowski, Johns Hopkins Bloomberg School of Public Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73080.sa0](https://doi.org/10.7554/eLife.73080.sa0)\n\nWe believe this systematic review on the use of serological data to monitor anopheline mosquito exposure will add to the existing literature and help provide important insight into how these markers may be used to understand malaria transmission.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Amy Wesolowski, Johns Hopkins Bloomberg School of Public Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73080.sa1](https://doi.org/10.7554/eLife.73080.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Anopheles salivary antigens as serological biomarkers of vector exposure and malaria transmission: A systematic review with multilevel modelling\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and David Serwadda as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Philip Bejon (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The paper would be strengthened if it focused on Africa, with sub-group analyses between Africa and Asia, given the differences in vector behavior in both settings.\n\n2. The overall conclusions often use phrasing such as 'strong' evidence/association, however in many instances this level of support is overly optimistic, given the noise in these types of data and issues with a number of the malaria metrics. Further, for some of the statistical analyses require additional justification and more robust model evaluation.\n\n3. There are a number of points raised in both reviewers where the results should be clarified (ex. text and display of Figure 2; relationship between HBR and seroprevalence as a metric; etc.). In addition, the sources of data for each point of evidence \u2013 is it MAP estimates? Microscopy? Which type of study design? Should be clarified to help provide the reader with a better understanding of the pieces of information (and level of bias, etc.) are providing which types of evidence.\n\nReviewer #1:\n\nThis is an interesting paper highlighting the use of serological data for monitoring anopheline mosquito bites. The concept is good, rationale clear and the statistical modelling appears robust. Some of the stats could be better explained at times and the conclusions should be tapered somewhat as there is lots of \"strong\" evidence/association statements that seem overly optimistic given the noise in these types of data and the frailties of the malaria metrics. This meta-analyses will help crystalise thought on whether the technique should be further invested in.\n\n(1) The study groups together cross-sectional and cohort data yet this was never really explored. How strong was the association in the cohort data and did it give the same trends? This is important if recommending using this method for surveillance as there is no mention of antibody decay.\n\n(2) Abstract and through paper \u2013 not clear what a \"meta-observation\" is. Please clarify.\n\n(3) Figure 2 could be improved. It plots the x-axis on the normal scale when it was fitted on the log. Statements about how it could be used in elimination settings were given but we cannot see how well the model behaves down this region. Consider putting on the log. Given (2) not clear what the size of the points are.\n\n(4) Model fitting \u2013 a ln transformation was used which could do with a justification. It could be fine, but we cannot tell given the plotting outlined above. Given the choice of transformation determines values presented in figure 3 I would like to see either a more rigorous model selection or at least a plot which indicates this is a reasonable choice. This could be done by binning the data and including a repeat of Figure 2 and 5 with these binned data in the appendix.\n\n(5) Table 1 is unwieldly and hard to understand what the breakdown of the different metrics are. This would benefit from either a summary table/figure or a narrative in the results (i.e. what % of studies/datapoints had HBR, EIR etc). What % datapoints were from longitudinal studies?\n\n(6) Why is the figure for the relationship between sero-prevalence and EIR not shown, though model predictions are? Should this not go in the main text.\n\n(7) The malaria data is a hodgepodge of microscopy, PBR and MAP estimated values. This is fine, though clearly some of these are more bias than others. The problem is that it isn't really differentiated in the Results section leaving me unsure of whether it was the data or the MAP predictions that were finding the association. Specifically, did the microscopy or PCR data predict a positive association alone or was it the modelled estimates which generate the positive association. Clearly, if it is the former, the story is stronger but given the narrative in lines 254-258 when 8 studies did not find an association, I am unsure. Could the points be coloured by the source of the prevalence estimate in Figure 5?\n\n(8) The authors are conflating seropositivity for anopheles bites with malaria transmission. There are many reasons why this might not be so, but the most obvious is altitude and use of vector control. Altitude could explain why 20% people have mosquito bites but <1% malaria and given you have geospatial information this could be easily tested (ie. Excluding sites over 2000m). The use of control interventions/treatment is harder to control for and could be discussed more thoroughly in light of comment (1)\n\n(9) Finally, though the analyses is interesting, the frailties of using geospatial data should be discussed given that this is often based on a paucity of data.\n\nReviewer #2:\n\nThe problem to be addressed is well formulated, and there are sufficient secondary data available to conduct a useful analysis to address it. The statistical approach is careful and multi-level modelling is an appropriate way of dealing with the linked observations in this dataset.\n\nI thought a stronger case would be made if the paper focused on Africa, as vector behaviour is so very different in Asia, and I would like to see a sub-group analysis of the two. There is good evidence for a non-linear relationship as reported by the authors, and the graph in Figure 2 is persuasive: but I found it difficult to follow the quantification of this in the text (details in private review). It is a matter of preference, but I would relegate more of the material after figure 2 to supplementary figures so as to focus the presentation more on this figure.\n\nThe authors are well justified in claiming a relationship between HBR and seroprevalence of mosquito salivary antigen, and this could be useful for vector surveillance. The shape of the line indicates a dynamic range where seroprevalence is a useful metric, and a statement of this range could be added.\n\nIn practice, the investment in this form of vector surveillance would need to be balanced against spending in other forms of disease or infection surveillance, and this could be mentioned as an issue in terms of a policy impact.\n\n(1) Abstract: If the association is non-linear is it reasonable to represent it with a % in X leads to % in y? Also multi-level modelling in methods could usefully give an indication of what the levels used were.\n\n(2) Introduction is well formulated and I have no comments\n\n(3) Methods: I agree with the decision to use seropositivity rather than levels, and also to include studies that classify based on seronegative.\n\n(4) Were estimates were taken from MAP or Pangea, at what level was geolocation used? Longitude/latitude or administrative category?\n\n(5) MAP focuses on PfPR, how much data has fed into DVS?\n\n(6) The random intercepts sentence has three levels, but gives same study and same country \u2013 please clarify which relates to which level?\n\n(7) I think it would be worth examining Africa and outside-Africa separately, to get a sense of whether the relationships are different. (Or use an interacting term for continent and slope).\n\n(8) The methods section does not help me understand how non-linearity was allowed for. Natural log transformations are mentioned, but if these are applied to both x's and y then we end up linear again. So a combination must have been selected. Was there any testing of whether the non-linear fit was superior to the linear fit?\n\n(9) Results \u2013 Figure 1 \u2013 I would be interested in knowing how many studies were excluded because seroprevalence was described differently from the parameters set.\n\n(10) Results \u2013 again I struggled with the description of non-linearity here. It seems like IgG was kept linear, HBR was log transformed. Therefore shouldn't there be a % increase in the log transformed variable for each unit of absolute increase in the untransformed variable?\n\n(11) Figure 2 \u2013 a lot of the \"action\" is down below 1 HBR. This is expected, and I have no problem with the shape of the fit, but I would be interested in seeing this more clearly in a log-transformed x axis.\n\n(12) Having struggled with the non-linearity up to Figure 3, I couldn't then cope with the increase Figure 3 was communicating. Isn't a percent increase just a linear factor away from an Odds Ratio?\n\n(13) For figures 2 and 5 there is obviously a lot of variation left unexplained judging by the scatter \u2013 including some quite large studies. I think this should be commented on in the results and discussion. Did the authors check if the risk of bias tended to be linked with outlying observations?\n\n(14) I felt uncomfortable in combining Asia and Africa.\n\n(15) I thought the discussion was well balanced overall. As above, some discussion on the very wide scatter would be useful, and also the fact that the relationship between seroprevalence and HBR is flat above an HBR of 1.5 limits the usefulness of this method in that dynamic range. The authors could comment on how many malaria endemic regions would be covered in the 0-1.5 range. The authors could also comment on the advantage or complimentarity of malaria antigen serology for surveillance in comparison.\n",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d2518718-33c0-42c4-856b-3679e917f9d2",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C1",
+      "claim": "From 3981 studies identified in literature searches, 42 studies across 16 countries were included contributing 393 study-specific observations of anti-Anopheles salivary antibodies determined in 42,764 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "From 3981 studies identified in literature searches, 42 studies across 16 countries were included contributing 393 study-specific observations of anti-Anopheles salivary antibodies determined in 42,764 samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific counts of studies identified, included, and samples analyzed from the systematic review process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "e423641e-cd7b-4add-a82b-564404709cf4",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C2",
+      "claim": "A twofold (100% relative) increase in HBR was associated with a 23% increase in odds of seropositivity (OR: 1.23, 95% CI: 1.10\u20131.37; p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "overall a twofold (100% relative) increase in HBR was associated with a 23% increase in odds of seropositivity (OR: 1.23, 95% CI: 1.10\u20131.37; p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis with specific odds ratio, confidence intervals, and p-value provided from multilevel modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "85fc73d2-62e2-47cc-bbb9-7be04c2b7494",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C3",
+      "claim": "The association between HBR and Anopheles salivary antibodies was strongest with concordant, rather than discordant, Anopheles species.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between HBR and Anopheles salivary antibodies was strongest with concordant, rather than discordant, Anopheles species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the abstract summarizing findings from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "6695849f-465e-4c59-8303-c9b0c9fc7b4d",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C4",
+      "claim": "Seroprevalence was significantly positively associated with entomological inoculation rate, Plasmodium spp. prevalence, and malarial endemicity class.",
+      "claim_type": "EXPLICIT",
+      "source": "Seroprevalence was also significantly positively associated with established epidemiological measures of malaria transmission: entomological inoculation rate, Plasmodium spp. prevalence, and malarial endemicity class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical associations found in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "9c7c94af-4256-485c-b389-fb1a8dc67df6",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C5",
+      "claim": "Entomological surveillance for malaria is inherently resource-intensive and produces crude population-level measures of vector exposure which are insensitive in low-transmission settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Entomological surveillance for malaria is inherently resource-intensive and produces crude population-level measures of vector exposure which are insensitive in low-transmission settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of current entomological surveillance methods, drawing on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "ffc15666-832f-45e1-b1e3-9e219a48805d",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C6",
+      "claim": "EIR is calculated as the human biting rate multiplied by the sporozoite index.",
+      "claim_type": "EXPLICIT",
+      "source": "EIR is calculated as the human biting rate (HBR; measured at the population level by entomological vector-sampling methodologies [gold standard: human landing catch]) multiplied by the sporozoite index (proportion of captured Anopheles with sporozoites present in their salivary glands).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of EIR calculation based on established entomological methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "6235bdbc-1cf1-48ca-a8b8-b44d1a407a77",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C7",
+      "claim": "Several Anopheles salivary proteins have been shown to be immunogenic in individuals naturally exposed to the bites of Anopheles vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Several Anopheles salivary proteins have been shown to be immunogenic in individuals naturally exposed to the bites of Anopheles vectors and have been investigated as serological biomarkers to measure Anopheles exposure (Badu et al., 2012b; Drame et al., 2013a; Drame et al., 2010a; Drame et al., 2010b; Drame et al., 2015; Rizzo et al., 2011a; Rizzo et al., 2011b; Stone et al., 2012; Drame et al., 2012), malaria transmission (Londono-Renteria et al., 2015a; Ya-Umphan et al., 2017; Noukpo et al., 2016), and as an outcome for vector control intervention studies (Drame et al., 2013a; Drame et al., 2010a; Drame et al., 2010b; Noukpo et al., 2016; Idris et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "b51b081f-b462-4e53-86fc-0dabc44ec221",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C8",
+      "claim": "Indoor human landing catches provide poor estimates of outdoor biting and thus total vector exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, indoor human landing catches provide poor estimates of outdoor biting and thus total vector exposure (Mathenge et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "8dd49409-1f8c-438e-931a-cf289bccd8ba",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C9",
+      "claim": "The sensitivity of EIR is compromised in low transmission settings where the number of Plasmodium-infected specimens detected is low and often zero.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensitivity of EIR is further compromised in low transmission settings where the number of Plasmodium-infected specimens detected is low and often zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of EIR based on established knowledge of detection challenges in low transmission settings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "d5848c74-aa39-44a2-bc07-42a0676195c8",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C10",
+      "claim": "The systematic review was performed according to MOOSE and PRISMA guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a systematic review with multilevel modelling according to the Meta-analysis of Observational Studies in Epidemiology (MOOSE) and Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines (Moher et al., 2009; Stroup et al., 2000) (Reporting Standards Document).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodology with citations to the guidelines followed.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "a04724d7-040d-434a-9c64-44b3818800b7",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C11",
+      "claim": "Five databases were searched for published studies investigating antibodies to Anopheles salivary antigens as a biomarker for mosquito exposure or malaria transmission published before 30 June 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Five databases were searched for published studies investigating antibodies to Anopheles salivary antigens as a biomarker for mosquito exposure or malaria transmission published before 30 June 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the search strategy used in the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "c3872fda-a0e6-4b85-8919-d2609fccdcf0",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C12",
+      "claim": "The protocol was registered with PROSPERO (CRD42020185449).",
+      "claim_type": "EXPLICIT",
+      "source": "The protocol (Appendix 1) was registered with PROSPERO (CRD42020185449).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about protocol registration with specific identifier.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "3409de0a-1b06-4aa8-9224-53186e1c5f7a",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C13",
+      "claim": "Studies were performed in 16 countries mostly in hypo- or mesoendemic areas of Africa (32 studies), with a minority performed in South America (four studies), Asia (four studies), and the Pacific (two studies).",
+      "claim_type": "EXPLICIT",
+      "source": "These studies were performed in 16 countries mostly in hypo- or mesoendemic areas of Africa (32 studies), with a minority performed in South America (four studies), Asia (four studies), and the Pacific (two studies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of geographic distribution of included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "06411805-a6db-4f06-b3d4-57e6d0f35e43",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C14",
+      "claim": "An. gambiae s.l. was a DVS in all African study sites with the exception of one study.",
+      "claim_type": "EXPLICIT",
+      "source": "An. gambiae s.l. was a DVS in all African study sites (n = 151 study-specific observations from 23 studies where An. gambiae s.l. was the only DVS and n = 68 from 16 studies where An. gambiae s.l. was present with additional DVS [i.e. Anopheles funestus, Anopheles pharoensis]), with the exception of one study, which together with the 10 non-African studies contributed n = 174 study-specific estimates where An. gambiae s.l. was absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of dominant vector species distribution across study sites with specific counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "e9d579fd-aa03-4e4c-ac9f-a655afdaaca6",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C15",
+      "claim": "Most observations came from cross-sectional (n = 191 from 16 studies) or repeated cross-sectional studies (n = 137 from 18 studies), with n = 60 from cohort studies (six studies) and n = 5 from case\u2013control studies (two studies).",
+      "claim_type": "EXPLICIT",
+      "source": "Most observations came from cross-sectional (n = 191 from 16 studies) or repeated cross-sectional studies (n = 137 from 18 studies), with n = 60 from cohort studies (six studies) and n = 5 from case\u2013control studies (two studies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of study design distribution with specific counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "fe640a0b-d815-4315-af03-408864c473b7",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C16",
+      "claim": "The salivary antigen most commonly assessed was An. gambiae salivary gland 6 (gSG6), as a full-length protein (n = 67 from 8 studies) and synthetic peptide (An. gambiae salivary gland 6 peptide 1 [gSG6-P1]; n = 270 from 24 studies).",
+      "claim_type": "EXPLICIT",
+      "source": "The salivary antigen most commonly assessed was An. gambiae salivary gland 6 (gSG6), as a full-length protein (n = 67 from 8 studies) and synthetic peptide (An. gambiae salivary gland 6 peptide 1 [gSG6-P1]; n = 270 from 24 studies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the most commonly studied salivary antigen with specific counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "f336fd53-e607-4fa8-aaae-5a10ba64a4c5",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C17",
+      "claim": "The distributions of exposure observations were: HBR (n = 197 from 24 studies, median: 3.0 bites per person per night, IQR: 0.9\u201312.1; range: 0\u2013121.4), EIR (n = 60 from 8 studies, median: 7.3 infectious bites received per person per year, IQR: 0\u201336.4; range: 0\u2013585.6), and Plasmodium spp. prevalence (n = 266 from 22 studies, median: 9.1%; IQR: 4\u201322%; range: 0\u201394.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "The distributions of exposure observations were: HBR (n = 197 from 24 studies, median: 3.0 bites per person per night, IQR: 0.9\u201312.1; range: 0\u2013121.4), EIR (n = 60 from 8 studies, median: 7.3 infectious bites received per person per year, IQR: 0\u201336.4; range: 0\u2013585.6), and Plasmodium spp. prevalence (n = 266 from 22 studies, median: 9.1%; IQR: 4\u201322%; range: 0\u201394.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Descriptive statistics of exposure variables from included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "ec63b711-bff0-42b3-aac1-7f1193e9f5e2",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C18",
+      "claim": "Generalised linear multilevel modelling of n = 132 study-specific observations from 12 studies estimated a positive association between Anopheles spp.-HBR (log transformed) and seroprevalence of IgG to An. gambiae gSG6 salivary antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Generalised linear multilevel modelling (mixed effects, logistic) of n = 132 study-specific observations from 12 studies estimated a positive association between Anopheles spp.-HBR (log transformed) and seroprevalence of IgG to An. gambiae gSG6 salivary antigen (Drame et al., 2010a; Drame et al., 2015; Rizzo et al., 2011a; Stone et al., 2012; Drame et al., 2012; Ya-Umphan et al., 2017; Soma et al., 2018; Traor\u00e9 et al., 2019; Sagna et al., 2013b; Sarr et al., 2012; Ali et al., 2012; Pollard et al., 2019; Figure 2, Appendix 4\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis result with specific sample size and citations to included studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "53460b2e-a6ed-4bb1-85a7-f4ac0d25140e",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C19",
+      "claim": "Heterogeneity in the effect of HBR on gSG6 across studies was observed (likelihood ratio \u03c72(1) = 109.25, p<0.001); the 95% reference range of study-specific effects for a twofold increase in HBR ranged from a 12% reduction to a 70% increase in odds (OR: 0.88\u20131.70).",
+      "claim_type": "EXPLICIT",
+      "source": "Heterogeneity in the effect of HBR on gSG6 across studies was observed (likelihood ratio \u03c72(1) = 109.25, p<0.001); the 95% reference range of study-specific effects for a twofold increase in HBR ranged from a 12% reduction to a 70% increase in odds (OR: 0.88\u20131.70).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test results showing heterogeneity with specific test statistics and effect ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "e1aa50ee-320c-4490-9143-0606ea2d6d97",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C20",
+      "claim": "There was no evidence that the association between HBR and gSG6 IgG varied according to vector collection method (human landing catch or other indirect methods; p=0.443) or study design (longitudinal cohort or cross-sectional/repeated cross-sectional; p=0.138).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence that the association between HBR and gSG6 IgG varied according to vector collection method (human landing catch or other indirect methods; p=0.443) or study design (longitudinal cohort or cross-sectional/repeated cross-sectional; p=0.138).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test results for effect modification with specific p-values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "4aa361d4-30d7-4a5a-abb0-a7ef22b19254",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C21",
+      "claim": "The magnitude of the association between An. gambiae gSG6 IgG seropositivity and HBR was greatest in African studies where An. gambiae s.l. was the only dominant vector (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the magnitude of the association between An. gambiae gSG6 IgG seropositivity and HBR was greatest in African studies where An. gambiae s.l. was the only dominant vector (p<0.001, Appendix 5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical finding with p-value showing effect modification by dominant vector species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "aca0a56c-7e13-4880-81df-b81e3c22305f",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C22",
+      "claim": "A twofold increase in HBR was associated with a 37% increase (OR: 1.37; 95% CI: 1.19\u20131.58; p<0.001) in the odds of gSG6 IgG seropositivity in African studies where An. gambiae s.l. was the only DVS.",
+      "claim_type": "EXPLICIT",
+      "source": "a twofold increase in HBR was associated with a 37% increase (OR: 1.37; 95% CI: 1.19\u20131.58; p<0.001) in the odds of gSG6 IgG seropositivity compared to an attenuated association for African studies where An. gambiae s.l. was not the only DVS (OR: 1.14 per twofold increase in HBR; 95% CI: 0.98\u20131.33; p=0.079) and non-African studies where An. gambiae s.l. was absent (OR: 1.05 per twofold increase in HBR; 95% CI: 1.03\u20131.08; p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis result with specific odds ratio, confidence intervals, and p-value for subgroup analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "bb16ab41-623c-4061-9e13-ba57717c2e3a",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C23",
+      "claim": "In African studies where An. gambiae s.l. is the only DVS, predicted seroprevalence of An. gambiae gSG6 ranged from 21% (95% CI: 0\u201345%) to 86% (95% CI: 67\u2013100%) for an HBR of 0.1\u2013100 bites per person per night, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In African studies where An. gambiae s.l. is the only DVS, predicted seroprevalence of An. gambiae gSG6 ranged from 21% (95% CI: 0\u201345%) to 86% (95% CI: 67\u2013100%) for an HBR of 0.1\u2013100 bites per person per night, respectively (Figure 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model-based predictions with confidence intervals, referenced to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "c3eb5ef9-d7a0-4a15-aa50-be9d0d49fef4",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C24",
+      "claim": "A positive association was found between seroprevalence of anti-gSG6 IgG antibodies and EIR in analysis of n = 38 study-specific observations from eight studies.",
+      "claim_type": "EXPLICIT",
+      "source": "A positive association was also found between seroprevalence of anti-gSG6 IgG antibodies and EIR in analysis of n = 38 study-specific observations from eight studies (Figure 4, Appendix 6) [Rizzo et al., 2011b; Ya-Umphan et al., 2017; Soma et al., 2018; Ali et al., 2012; Ambrosino et al., 2010; Perraut et al., 2017; Pollard et al., 2019; Badu et al., 2012b].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding with sample size, figure reference, and citations to included studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "8a30590b-1043-483c-80e3-1d5a8a234680",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C25",
+      "claim": "For a twofold increase in EIR, the odds of anti-gSG6 IgG seropositivity increased by 11% (OR: 1.11; 95% CI: 1.05\u20131.17; p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "For a twofold increase in EIR, the odds of anti-gSG6 IgG seropositivity increased by 11% (OR: 1.11; 95% CI: 1.05\u20131.17; p<0.001), with heterogeneity in the study-specific effects (95% reference range: 1.00\u20131.24; likelihood ratio \u03c72(1) = 15.02, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis result with specific odds ratio, confidence intervals, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "cebc33cf-c5c4-4193-bf28-9393387c5bd0",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C26",
+      "claim": "There was no evidence of effect modification by either vector collection method (p=0.095) or DVS (p=0.080) on the association between seroprevalence of anti-gSG6 IgG and EIR.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence of effect modification by either vector collection method (p=0.095) or DVS (p=0.080) on the association between seroprevalence of anti-gSG6 IgG and EIR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test results for effect modification with specific p-values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "adbcf14f-98ba-4abe-98a6-1f41281ed200",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C27",
+      "claim": "Similar positive associations were found between anti-gSG6 IgG levels, HBR, and EIR in 11 studies and 3 studies, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar positive associations were also found between anti-gSG6 IgG levels, HBR, and EIR in 11 studies [Drame et al., 2015; Drame et al., 2012; Stone et al., 2012; Soma et al., 2018; Ali et al., 2012; Rizzo et al., 2011a; Rizzo et al., 2011b; Poinsignon et al., 2010b; Poinsignon et al., 2008a; Charlwood et al., 2017; Sagna et al., 2013b] and 3 studies [Rizzo et al., 2011b; Ya-Umphan et al., 2017; Ali et al., 2012], respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from multiple studies with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "f1795b27-2f35-4d72-994e-817f6b86716a",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C28",
+      "claim": "Seven studies showed no association between HBR and levels of IgG to gSG6.",
+      "claim_type": "EXPLICIT",
+      "source": "but 7 studies showed no association between HBR and levels of IgG to gSG6 [Drame et al., 2010a; Ya-Umphan et al., 2017; Traor\u00e9 et al., 2018; Traor\u00e9 et al., 2019; Sarr et al., 2012; Poinsignon et al., 2009; Pollard et al., 2019].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of null findings from multiple studies with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "5dbf7d86-eb85-4f59-952c-d0079c527803",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C29",
+      "claim": "For a twofold increase in the prevalence of Plasmodium spp. infection the odds of gSG6 IgG seropositivity increased by 38%, although the confidence intervals were wide (OR: 1.38; 95% CI: 0.89\u20132.12; p=0.148).",
+      "claim_type": "EXPLICIT",
+      "source": "showed that for a twofold increase in the prevalence of Plasmodium spp. infection the odds of gSG6 IgG seropositivity increased by 38%, although the confidence intervals were wide (OR: 1.38; 95% CI: 0.89\u20132.12; p=0.148) and heterogeneity in the study-specific effects was observed (95% reference range: 0.30\u20136.37; likelihood ratio \u03c72(1) = 235.5, p<0.001) (Figure 5 and Appendix 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis result with odds ratio, confidence intervals, p-value, and figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "eaf4b75f-fab4-4d88-9a19-58deaaa2530b",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C30",
+      "claim": "In the association between gSG6 IgG seropositivity and Plasmodium spp. infection, there was no evidence for a moderating effect of Plasmodium spp. detection method (light microscopy or PCR, p=0.968), or species (African studies with P. falciparum versus non-African studies where P. falciparum and P. vivax are co-prevalent, p=0.538).",
+      "claim_type": "EXPLICIT",
+      "source": "In the association between gSG6 IgG seropositivity and Plasmodium spp. infection, there was no evidence for a moderating effect of Plasmodium spp. detection method (light microscopy or PCR, p=0.968), or species (African studies with P. falciparum versus non-African studies where P. falciparum and P. vivax are co-prevalent, p=0.538).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test results for effect modification with specific p-values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "7a9e7e13-ab95-4098-ae84-b297ee9dc054",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C31",
+      "claim": "The median anti-gSG6 IgG antibody levels increased with increasing Plasmodium spp. prevalence in six studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The median anti-gSG6 IgG antibody levels increased with increasing Plasmodium spp. prevalence in six of these studies (Drame et al., 2010a; Ya-Umphan et al., 2017; Idris et al., 2017; Poinsignon et al., 2010b; Sarr et al., 2012; Kerkhof et al., 2016), or in Plasmodium spp.-infected compared to non-infected individuals (Londono-Renteria et al., 2015a; Montiel et al., 2020), but showed no association in eight studies (Rizzo et al., 2011b; Soma et al., 2018; Koffi et al., 2015; Traor\u00e9 et al., 2018; Traor\u00e9 et al., 2019; Badu et al., 2015; Sagna et al., 2013b; Poinsignon et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from multiple studies with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "765fbf1f-c5cb-48ad-8086-5180c1a65566",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C32",
+      "claim": "For a twofold increase in pre-erythrocytic antigen seroprevalence there was a 2.19-fold (OR: 2.19; 95% CI: 1.18\u20134.04; p=0.013) increase in the odds of anti-gSG6 IgG seropositivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we also investigated associations with serological measures of malaria exposure and found that for a twofold increase in pre-erythrocytic and blood stage antigen seroprevalence there was a 2.19-fold (OR: 2.19; 95% CI: 1.18\u20134.04; p=0.013) and 41% to 5.69-fold (OR range: 1.41\u20135.69; p range: <0.001 to 0.523) increase in the odds of anti-gSG6 IgG seropositivity, respectively (Appendix 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis result with odds ratio, confidence intervals, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "1ff31bbc-ced7-497e-8b95-d9d3161b77af",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C33",
+      "claim": "For a twofold increase in blood stage antigen seroprevalence there was a 41% to 5.69-fold (OR range: 1.41\u20135.69; p range: <0.001 to 0.523) increase in the odds of anti-gSG6 IgG seropositivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we also investigated associations with serological measures of malaria exposure and found that for a twofold increase in pre-erythrocytic and blood stage antigen seroprevalence there was a 2.19-fold (OR: 2.19; 95% CI: 1.18\u20134.04; p=0.013) and 41% to 5.69-fold (OR range: 1.41\u20135.69; p range: <0.001 to 0.523) increase in the odds of anti-gSG6 IgG seropositivity, respectively (Appendix 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis result with odds ratio range and p-value range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "b79cc36a-dd7a-40d6-999f-a7a4f4662451",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C34",
+      "claim": "The estimated anti-gSG6 IgG seroprevalence is higher for the higher endemicity classes (eliminating malaria: 20% [95% CI: 8\u201331%]; hypoendemic: 34% [95% CI: 19\u201349%]; mesoendemic: 52% [95 CI: 35\u201368%]; hyperendemic settings: 47% [95% CI: 27\u201364%]; holoendemic: 78% [95% CI: 67\u201390%]; p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Generalised linear multilevel modelling (mixed effects, logistic) on 297 study-specific salivary antibody observations from 22 studies shows that the estimated anti-gSG6 IgG seroprevalence is higher for the higher endemicity classes (eliminating malaria: 20% [95% CI: 8\u201331%]; hypoendemic: 34% [95% CI: 19\u201349%]; mesoendemic: 52% [95 CI: 35\u201368%]; hyperendemic settings: 47% [95% CI: 27\u201364%]; holoendemic: 78% [95% CI: 67\u201390%]; p<0.001; Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis result with predicted seroprevalence values, confidence intervals, and p-value for different endemicity classes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "44796b15-56b3-4701-94fb-221bc6872a59",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C35",
+      "claim": "IgG seroprevalence to An. gambiae gSG6 was lowest in countries in the Pacific region where An. gambiae is absent (Vanuatu [31%] and Solomon Islands [32%]) and highest in countries where An. gambiae is a DVS (Benin [72%] and Burkina Faso [65%]).",
+      "claim_type": "EXPLICIT",
+      "source": "It showed that IgG seroprevalence to An. gambiae gSG6 was lowest in countries in the Pacific region where An. gambiae is absent (Vanuatu [31%] and Solomon Islands [32%]) and highest in countries where An. gambiae is a DVS (Benin [72%] and Burkina Faso [65%]; Appendix 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Country-specific estimates from statistical modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "3d0dbb89-28b0-4604-a303-2968d60f1e0d",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C36",
+      "claim": "Studies were classified according to their DVS which reflected the region where the study was conducted.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies were classified according to their DVS which reflected the region where the study was conducted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of classification methodology used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "dd49f73f-7345-4c99-9a22-13ee8fdb2b02",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C37",
+      "claim": "All studies investigated total IgG and only five determined an additional isotype or subclass.",
+      "claim_type": "EXPLICIT",
+      "source": "All studies investigated total IgG and only five determined an additional isotype or subclass (Drame et al., 2015; Lawaly et al., 2012; Rizzo et al., 2014a; Rizzo et al., 2014b; Waitayakul et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of antibody types measured across studies with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "7a8362cc-191e-463b-9f5d-87f41440f1fc",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C38",
+      "claim": "The paucity of studies investigating additional antibody types and Anopheles salivary biomarkers precluded extensive multilevel analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "The paucity of studies investigating these latter-mentioned antibody types and Anopheles salivary biomarkers precluded extensive multilevel analyses; instead, we present their associations in narrative terms in Appendix 10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitation in the data that affected analytical approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "56f613a9-dd3a-47b7-993e-362e943e79ab",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C39",
+      "claim": "Seventeen studies performed across Africa and the Asia Pacific reported an HBR < 2.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, 17 studies performed across Africa (Angola, Benin, Burkina Faso, Cote d'Ivoire, and Senegal) and the Asia Pacific (Cambodia, Myanmar, and the Solomon Islands) reported an HBR < 2, demonstrating the applicability of gSG6 as a biomarker of HBR across a broad range of malaria-endemic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of HBR values from included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "0257a9a3-810d-4a77-becb-a1655a6c3c68",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C40",
+      "claim": "The An. gambiae SG6 gene shares moderate sequence identity with vector species that are dominant in other regions (Africa: 80% An. funestus; Asia: 79% Anopheles stephensi and Anopheles maculatus; 54% An. dirus; Pacific: 52.5% Anopheles farauti).",
+      "claim_type": "EXPLICIT",
+      "source": "Associations, albeit weaker, were also observed between discordant species-specific HBR and gSG6, most likely because the An. gambiae SG6 gene shares moderate sequence identity with vector species that are dominant in other regions (Africa: 80% An. funestus; Asia: 79% Anopheles stephensi and Anopheles maculatus; 54% An. dirus; Pacific: 52.5% Anopheles farauti), and is absent from the DVS of the Americas (An. albimanus and An. darlingi) (Arc\u00e0 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about sequence identity supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "cd374495-852d-4d84-a828-ad8c67858074",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C41",
+      "claim": "The An. gambiae SG6 gene is absent from the DVS of the Americas (An. albimanus and An. darlingi).",
+      "claim_type": "EXPLICIT",
+      "source": "Associations, albeit weaker, were also observed between discordant species-specific HBR and gSG6, most likely because the An. gambiae SG6 gene shares moderate sequence identity with vector species that are dominant in other regions (Africa: 80% An. funestus; Asia: 79% Anopheles stephensi and Anopheles maculatus; 54% An. dirus; Pacific: 52.5% Anopheles farauti), and is absent from the DVS of the Americas (An. albimanus and An. darlingi) (Arc\u00e0 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gene absence supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "7f30083f-8bc3-43b1-b13c-f12ff2e24bfa",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C42",
+      "claim": "The generalisability of An. gambiae gSG6 IgG as a biomarker of exposure to other Anopheles spp. may be limited.",
+      "claim_type": "EXPLICIT",
+      "source": "The generalisability of An. gambiae gSG6 IgG as a biomarker of exposure to other Anopheles spp. may therefore be limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the sequence identity data and observed weaker associations with discordant species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "452f6720-0990-415b-84e4-13e3c2e2995b",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C43",
+      "claim": "This review identified a paucity of studies investigating additional salivary antigenic targets and Anopheles species not present in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our review also identified a paucity of studies investigating additional salivary antigenic targets and Anopheles species not present in Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary observation from the systematic review findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "aa08ea96-c754-4472-8506-da1844953593",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C44",
+      "claim": "DVS in South American and Asia Pacific regions typically bite outdoors during the night and day, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "An Anopheles species-specific serological platform could advance vector surveillance by more accurately capturing exposure to DVS in the South American and Asia Pacific regions which exhibit diverse biting behaviours and vector competence (DVS typically bite outdoors during the night and day, respectively; The Malaria Atlas, 2017; Sinka et al., 2012; Sinka et al., 2010; Trung et al., 2005; Herrera et al., 2015; Chaumeau et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about biting behavior supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "b9cc65de-f0d8-438e-88d9-4a7a896f00f2",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C45",
+      "claim": "There is an increasing threat of urban malaria from An. stephensi in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as the increasing threat of urban malaria from An. stephensi in Africa (Takken and Lindsay, 2019; Sinka et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about emerging threat supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "505c36d5-0278-44df-b07f-81135ccfde90",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C46",
+      "claim": "Anti-salivary antibodies may serve as a proxy measure for receptivity of a population to sustain malaria transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-salivary antibodies, such as SG6 IgG, may therefore have the potential to serve as a proxy measure for receptivity of a population to sustain malaria transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the demonstrated associations with malaria transmission measures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "d6347f61-8174-4f93-80f5-c140eba43954",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C47",
+      "claim": "Salivary antibodies were predicted to be prevalent (20%) in areas defined as eliminating malaria (<1% PfPR2-10).",
+      "claim_type": "EXPLICIT",
+      "source": "Their application could be particularly relevant in pre-elimination areas, or non-endemic areas under threat of imported malaria, where Anopheles salivary antibodies are more readily detectable than parasites; salivary antibodies were predicted to be prevalent (20%) in areas defined as eliminating malaria (<1% PfPR2-10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model-based prediction from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "913def98-9f61-4d4b-920d-09e365c61c12",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C48",
+      "claim": "If SG6 IgG seroprevalence can be effectively combined with a measurement of the sporozoite index, salivary antibodies as a marker of HBR could help overcome sensitivity limitations of EIR in low transmission areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, if SG6 IgG seroprevalence can be effectively combined with a measurement of the sporozoite index, salivary antibodies as a marker of HBR could help overcome sensitivity limitations of EIR in low transmission areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential application based on study findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "5b505975-2357-4426-b6a2-03cb442c71df",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C49",
+      "claim": "Positive associations between antibodies specific for Plasmodium spp. pre-erythrocytic and blood stage antigens with gSG6 were demonstrated in analyses of data from diverse malaria-endemic areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, positive associations between antibodies specific for Plasmodium spp. pre-erythrocytic and blood stage antigens with gSG6 were demonstrated in analyses of data from diverse malaria-endemic areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "ccee4e3c-2ab8-466d-ba41-dcd11df7d45a",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C50",
+      "claim": "Serological tools combining salivary antigens with antigens specific for the different Plasmodium spp. could be easy to employ and complement malaria surveillance programmes.",
+      "claim_type": "EXPLICIT",
+      "source": "Serological tools combining salivary antigens with antigens specific for the different Plasmodium spp. could be easy to employ and complement malaria surveillance programmes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "72035d86-be41-4aa2-a7b2-2689f148a30d",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C51",
+      "claim": "The Asia Pacific is a region of relatively low malaria transmission with goals of elimination, but the highest burden of P. vivax malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "These tools may be particularly useful in the Asia Pacific, a region of relatively low malaria transmission with goals of elimination, but the highest burden of P. vivax malaria where blood stage infection can be caused by relapses from dormant liver stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about regional malaria epidemiology based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "aada95b2-e2fa-4fd8-9d4a-7624c3215059",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C52",
+      "claim": "In P. vivax endemic areas, parasite prevalence may overestimate ongoing malaria transmission due to relapses from dormant liver stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In these areas, parasite prevalence may therefore overestimate ongoing malaria transmission, making vector surveillance tools essential to informing elimination strategies in the Asia Pacific and other regions where P. vivax is endemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the biology of P. vivax and its implications for transmission measurement.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "9a2829de-9241-4364-8fb6-02a6a672fefe",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C53",
+      "claim": "Salivary biomarkers measured at the individual level, such as gSG6 IgG, can be used to quantify total vector exposure at the population level, without requiring laborious entomological experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study demonstrated that salivary biomarkers measured at the individual level, such as gSG6 IgG, can be used to quantify total vector exposure at the population level, without requiring laborious entomological experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "706e3c4b-fd78-4c85-8083-7fc991ad0ea7",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C54",
+      "claim": "Validating an individual-level serological measure against the imperfect population-level gold standards of HBR and EIR is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, validating an individual-level serological measure, which demonstrates considerable individual-level variation, against the imperfect population-level gold standards of HBR and EIR is challenging and reflected in the variation in study-specific estimates in the association between gSG6 IgG and HBR in modelling analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about methodological challenges based on the observed heterogeneity in results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "64ffa013-5ac9-4a3e-b04c-260c4c08dcaf",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C55",
+      "claim": "Literature searches identified no studies investigating the association between salivary antibodies and individual-level vector exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the accuracy of salivary antibodies to measure individual-level exposure to Anopheles bites is yet to be validated; literature searches identified no studies investigating this association at the individual level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from the systematic literature search.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "2da04d1c-3ddf-467d-a658-7e9bbcfa9c78",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C56",
+      "claim": "Without detailed measurements of individual-level vector exposure, or a detailed knowledge of the half-life of Anopheles salivary antibodies post biting event, the true accuracy of salivary antibodies to measure individual-level HBR remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Without detailed measurements of individual-level vector exposure, or a detailed knowledge of the half-life of Anopheles salivary antibodies post biting event, the true accuracy of salivary antibodies, such as SG6 IgG, to measure individual-level HBR remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about knowledge gaps and their implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "562e2d8f-017b-492c-9858-862dc8ba9f5d",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C57",
+      "claim": "Some studies exhibited a high risk of selection bias as they were performed in specific high-risk populations not representative of the overall population.",
+      "claim_type": "EXPLICIT",
+      "source": "First, despite the inclusive nature, assessment of the external validity of the review revealed a moderate risk of bias; some studies exhibited a high risk of selection bias as they were performed in specific high-risk populations not representative of the overall population (i.e. children only).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of study quality and potential bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "b29c79f0-bd77-44ba-ae1a-f39723a2d4a5",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C58",
+      "claim": "There may be potential selection bias introduced by the exclusion of studies reporting zero HBR (7 observations from three studies), EIR (22 observations from three studies), and malaria prevalence (15 observations from three studies) estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, with respect to internal validity, there may be potential selection bias introduced by the exclusion of studies reporting zero HBR (7 observations from three studies; Rizzo et al., 2011b; Pollard et al., 2019; Sagna et al., 2013b), EIR (22 observations from three studies; Ya-Umphan et al., 2017; Rizzo et al., 2011b; Soma et al., 2018), and malaria prevalence (15 observations from three studies; Idris et al., 2017; Sagna et al., 2013b; Kerkhof et al., 2016) estimates, given we modelled the log of these factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of potential bias in the analysis with specific counts and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "b27ecdf6-9f4e-4304-be23-fdc3317bc40b",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C59",
+      "claim": "Adding a small constant to a zero value to permit modelling of a log estimate can introduce considerable bias.",
+      "claim_type": "EXPLICIT",
+      "source": "However, adding a small constant (e.g. 0.001) to a zero value to permit modelling of a log estimate can also introduce considerable bias (i.e. seemingly small differences between values become very large on the log scale).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about statistical methodology and its limitations based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "08197e4b-4ead-401e-a009-3ccbb6a33836",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C60",
+      "claim": "There is the potential for misclassification of malarial endemicity class derived from geospatially extracted MAP predictions of PfPR2-10 which increase in uncertainty in areas with scarce data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is the potential for misclassification of malarial endemicity class derived from geospatially extracted MAP predictions of PfPR2-10 which increase in uncertainty in areas with scarce data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of potential limitation in data classification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "0af18bf4-cab7-45e5-8e83-dea79f3c2227",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C61",
+      "claim": "MAP vector occurrence data was used to inform DVS categories for 7 (out of 42) studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we used MAP vector occurrence data to inform DVS categories for 7 (out of 42) studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data sources used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "a11bb059-6766-4e00-8df4-15272ef62681",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C62",
+      "claim": "Cross-referencing 7 studies with a 2017 updated database for African vectors identified 10 discrepant datapoints from 3 studies (from a total of 28 datapoints from 7 studies).",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-referencing these 7 studies with a 2017 updated database for African vectors (using data for the nearest neighbouring village) identified 10 discrepant datapoints from 3 studies (from a total of 28 datapoints from 7 studies) (Snow, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data validation result with specific counts and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "fe28b0c2-9a4b-410e-a4b3-4a897ecbb443",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C63",
+      "claim": "Any misclassification events may cause underestimation of the standard error in the effect of malaria endemicity class and DVS on gSG6 IgG.",
+      "claim_type": "EXPLICIT",
+      "source": "Any misclassification events may cause us to underestimate the standard error in the effect of malaria endemicity class and DVS on gSG6 IgG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about potential impact of data quality issues on statistical estimates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "6d83e6f1-1364-4df7-8f35-20d15306387e",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C64",
+      "claim": "Sensitivity analyses exploring potential study-level outlier influence on the estimated associations between anti-gSG6 IgG seroprevalence, HBR, and EIR showed no evidence of bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity analyses exploring potential study-level outlier influence on the estimated associations between anti-gSG6 IgG seroprevalence, HBR, and EIR showed no evidence of bias (effect estimates for each sensitivity analysis were consistent with model estimates overall) for studies identified as exhibiting potential influence (HBR: n = 6; EIR: n = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from sensitivity analyses conducted to assess robustness of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "841447e7-ba68-4d92-9820-6e5ea95d50a3",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C65",
+      "claim": "The World Health Organization has called for innovative tools and improved approaches to enhance vector surveillance and monitoring and evaluation of interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to advance progress towards malaria elimination, the World Health Organization has called for innovative tools and improved approaches to enhance vector surveillance and monitoring and evaluation of interventions (World Health Organization, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about WHO recommendations supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "c956dc63-3edc-4e74-879d-21836306e5af",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C66",
+      "claim": "Anopheles salivary antibodies are serological biomarkers of vector and malaria exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our systematic review has provided evidence that Anopheles salivary antibodies are serological biomarkers of vector and malaria exposure, by quantifying their positive association with Anopheles-HBR and established epidemiological measures of malaria transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the systematic review findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "fe485762-c236-4fb1-9c8c-a5a67de881cf",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C67",
+      "claim": "Salivary biomarkers have the potential to replace crude population-level estimates of entomological indices with a precise and scalable tool that measures Anopheles vector exposure at the individual level.",
+      "claim_type": "EXPLICIT",
+      "source": "These salivary biomarkers have the potential to replace crude population-level estimates of entomological indices with a precise and scalable tool that measures Anopheles vector exposure at the individual level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential application based on study findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "44776b80-c548-4b76-8998-a187b346c46d",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "claim_id": "C68",
+      "claim": "Salivary biomarkers could be expanded into a serosurveillance tool to assess the effectiveness of vector control interventions, define heterogeneity in malaria transmission, and inform efficient resource allocation.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach could be expanded into a serosurveillance tool to assess the effectiveness of vector control interventions, define heterogeneity in malaria transmission, and inform efficient resource allocation that would ultimately accelerate progress towards elimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f312cf9f-ab40-4bc6-9256-01e8ddc81e43",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A systematic review following MOOSE and PRISMA guidelines identified 42 studies across 16 countries, contributing 393 study-specific observations from 42,764 samples. Studies were predominantly from Africa (32 studies) with An. gambiae s.l. as the dominant vector species, and most commonly assessed the gSG6 antigen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C17 provide comprehensive methodological details and descriptive statistics of the systematic review. The specific counts, geographic distribution, study designs, and antigen types are clearly documented with appropriate registration (PROSPERO) and adherence to established guidelines, supporting the validity of the review process.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "a4518e74-d698-4120-bae0-0449183d8e05",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Multilevel modeling of 132 observations from 12 studies found a positive association between HBR and gSG6 IgG seroprevalence, with a twofold increase in HBR associated with a 23% increase in odds of seropositivity (OR: 1.23, 95% CI: 1.10-1.37; p<0.001). Significant heterogeneity was observed across studies, but no effect modification by vector collection method or study design was detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C18-C20 present statistically significant findings with appropriate confidence intervals and p-values. The multilevel modeling approach appropriately accounts for nested data structure. Heterogeneity is acknowledged and quantified (C19), and potential confounders were tested (C20), strengthening the validity of the association.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "f752ab3d-fa4f-421c-a91d-6db0fe3f0495",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The association between HBR and gSG6 IgG was strongest when An. gambiae s.l. was the only dominant vector species (OR: 1.37 per twofold HBR increase), with attenuated associations in settings with mixed or absent An. gambiae s.l. This pattern is explained by moderate sequence identity of the An. gambiae SG6 gene with other vector species (52.5-80%) and its absence in American vectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C21-C23, C39-C42 demonstrate species-specific effects with statistical support (p<0.001) and provide biological rationale through sequence identity data. The predicted seroprevalence ranges (C23) are model-based with confidence intervals. The inference about limited generalizability (C42) is appropriately cautious and supported by the observed effect modification and sequence data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "185fe010-e8ce-4e35-9ad4-a48493510de1",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A positive association was found between EIR and gSG6 IgG seroprevalence (OR: 1.11 per twofold EIR increase, 95% CI: 1.05-1.17; p<0.001) in 38 observations from 8 studies. Similar positive associations with antibody levels were found in 11 studies for HBR and 3 studies for EIR, though 7 studies showed no association between HBR and gSG6 IgG levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 present consistent findings for EIR associations with appropriate statistical support. The acknowledgment of null findings in some studies (C28) demonstrates balanced reporting. However, the smaller sample size for EIR analyses (n=38 vs n=132 for HBR) and heterogeneity in results suggest the association, while statistically significant, may be less robust than the HBR association.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "ca7f9a9c-1365-4a36-8271-7c951635317a",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The association between Plasmodium spp. prevalence and gSG6 IgG seropositivity showed a 38% increase in odds per twofold increase in prevalence, but with wide confidence intervals (OR: 1.38, 95% CI: 0.89-2.12; p=0.148) and substantial heterogeneity across studies. Results from individual studies were mixed, with 6 showing positive associations and 8 showing no association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C31 present an association that is not statistically significant (p=0.148, CI crosses 1.0) with very high heterogeneity. The mixed findings across individual studies and wide confidence intervals indicate insufficient evidence to conclude a consistent association between Plasmodium prevalence and gSG6 seropositivity, despite the point estimate suggesting a positive trend.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "5e24e9b9-71f3-4ded-ab27-5afdcf2a058c",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Positive associations were found between gSG6 IgG seropositivity and serological markers of malaria exposure, with a 2.19-fold increase for pre-erythrocytic antigens (OR: 2.19, 95% CI: 1.18-4.04; p=0.013) and 1.41-5.69-fold increase for blood stage antigens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33, C49 demonstrate statistically significant associations between malaria-specific antibodies and salivary antibodies. The pre-erythrocytic antigen association is clearly significant (p=0.013), though the wide range for blood stage antigens (OR: 1.41-5.69, p range: <0.001 to 0.523) suggests heterogeneity. These findings support the link between vector exposure and malaria transmission.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "d3adc742-e8df-4d5a-993d-f4d50df57e5b",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Anti-gSG6 IgG seroprevalence increased with malaria endemicity class, ranging from 20% in eliminating areas to 78% in holoendemic settings (p<0.001). Country-specific estimates showed lowest seroprevalence in Pacific countries without An. gambiae (31-32%) and highest in African countries with An. gambiae as dominant vector (65-72%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35, C47 present a clear dose-response relationship between endemicity and seroprevalence with strong statistical significance. The geographic patterns align with vector distribution. However, potential misclassification of endemicity (acknowledged in C60) and collinearity issues preventing interaction testing are limitations that don't invalidate but add uncertainty to these estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "12b2101b-e2f2-41fa-b06f-1c5cbbb9c16c",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Anopheles salivary antibodies are serological biomarkers of both vector exposure and malaria transmission, as demonstrated by positive associations with HBR, EIR, Plasmodium prevalence, and malaria endemicity class. These antibodies may serve as proxy measures for population receptivity to sustain malaria transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C46, C66 synthesize the major findings. The associations with HBR and EIR are well-supported (C2, C25), though the Plasmodium prevalence association is uncertain (C29). The conclusion that salivary antibodies are biomarkers is justified by the preponderance of evidence, though the inference about receptivity (C46) is appropriately cautious as it extends beyond direct measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "e5d0104d-2c25-4f1b-a2d9-1f8eb06ef982",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While salivary biomarkers can quantify vector exposure at the population level, their accuracy for measuring individual-level exposure remains unvalidated. No studies were identified that investigated individual-level associations, and knowledge gaps regarding antibody half-life limit understanding of individual-level accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 appropriately distinguish between population-level validation (demonstrated) and individual-level validation (absent). The acknowledgment that literature searches found no individual-level studies (C55) is a clear limitation. The inference about unknown individual-level accuracy (C56) is appropriately cautious and identifies an important research gap.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "0a36a475-1700-46a1-ab1d-cfda74f7cd25",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The review has moderate risk of bias due to selection bias in some studies (high-risk populations) and potential bias from excluding zero-value observations. Misclassification of endemicity and dominant vector species may underestimate standard errors, though sensitivity analyses showed no evidence of outlier bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 provide transparent assessment of study limitations. The identification of selection bias (C57), exclusion of zero values (C58-C59), and potential misclassification (C60-C63) are appropriately acknowledged. The sensitivity analyses (C64) strengthen confidence in the main findings despite these limitations. This honest appraisal of bias is methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "ad741b77-552a-4a3d-8ea9-db40bd93864c",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Only 5 of 42 studies investigated antibody isotypes beyond total IgG, and there is a paucity of studies on additional salivary antigens and non-African Anopheles species, precluding extensive multilevel analyses of these biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38, C43 accurately describe gaps in the literature. The specific count of 5 studies investigating additional isotypes (C37) is verifiable from the data. The inference that this paucity precludes extensive analysis (C38) is reasonable and appropriately limits the scope of conclusions about these understudied biomarkers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "7d5adbd9-d20e-47f9-b99e-dce467d7cd3e",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Current entomological surveillance methods (HBR and EIR) are resource-intensive, produce crude population-level measures, and have limited sensitivity in low-transmission settings. Anopheles salivary proteins have been shown to be immunogenic and investigated as biomarkers in prior research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 establish the rationale for the study by describing limitations of current methods and prior work on salivary biomarkers. These are supported by citations (C7, C8) and represent established knowledge in the field (C5, C6, C9). This background appropriately motivates the systematic review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "02c386cb-c315-4e18-957f-0f836cdce96c",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Vector species in South America and Asia Pacific exhibit diverse biting behaviors (outdoor, day/night), An. stephensi poses an increasing urban malaria threat in Africa, and P. vivax prevalence may overestimate transmission in endemic areas due to relapses from dormant liver stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45, C51-C52 provide epidemiological context supported by citations. These statements about regional vector behavior, emerging threats, and P. vivax biology represent established knowledge that appropriately contextualizes the need for species-specific biomarkers and their application in different settings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "91db802b-8da8-46da-9eb8-288c83dd568a",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Salivary biomarkers have potential to overcome EIR sensitivity limitations when combined with sporozoite index measurements, could be combined with Plasmodium-specific antigens in surveillance tools, and may replace crude entomological indices with scalable individual-level measurements for assessing vector control interventions and transmission heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C48, C50, C67-C68 are speculative statements about potential future applications that extend beyond the demonstrated findings. While the associations support the biomarker concept, these claims about replacing current methods, ease of employment, and specific applications require validation studies that have not been conducted. The lack of individual-level validation (C55-C56) particularly undermines claims about individual-level measurement (C67).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    },
+    {
+      "id": "499b2344-40f6-4c34-a2a1-08fc58ed904b",
+      "content_id": "bc3953df-58b2-462e-8f87-3fa9037830a4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The World Health Organization has called for innovative tools and improved approaches to enhance vector surveillance and monitoring of interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is a factual statement about WHO recommendations supported by citation. This provides policy context for the research but is not a finding of the study itself.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:47:23.796430Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d2518718-33c0-42c4-856b-3679e917f9d2",
+      "result_id": "f312cf9f-ab40-4bc6-9256-01e8ddc81e43"
+    },
+    {
+      "claim_id": "d5848c74-aa39-44a2-bc07-42a0676195c8",
+      "result_id": "f312cf9f-ab40-4bc6-9256-01e8ddc81e43"
+    },
+    {
+      "claim_id": "a04724d7-040d-434a-9c64-44b3818800b7",
+      "result_id": "f312cf9f-ab40-4bc6-9256-01e8ddc81e43"
+    },
+    {
+      "claim_id": "c3872fda-a0e6-4b85-8919-d2609fccdcf0",
+      "result_id": "f312cf9f-ab40-4bc6-9256-01e8ddc81e43"
+    },
+    {
+      "claim_id": "3409de0a-1b06-4aa8-9224-53186e1c5f7a",
+      "result_id": "f312cf9f-ab40-4bc6-9256-01e8ddc81e43"
+    },
+    {
+      "claim_id": "06411805-a6db-4f06-b3d4-57e6d0f35e43",
+      "result_id": "f312cf9f-ab40-4bc6-9256-01e8ddc81e43"
+    },
+    {
+      "claim_id": "e9d579fd-aa03-4e4c-ac9f-a655afdaaca6",
+      "result_id": "f312cf9f-ab40-4bc6-9256-01e8ddc81e43"
+    },
+    {
+      "claim_id": "fe640a0b-d815-4315-af03-408864c473b7",
+      "result_id": "f312cf9f-ab40-4bc6-9256-01e8ddc81e43"
+    },
+    {
+      "claim_id": "f336fd53-e607-4fa8-aaae-5a10ba64a4c5",
+      "result_id": "f312cf9f-ab40-4bc6-9256-01e8ddc81e43"
+    },
+    {
+      "claim_id": "e423641e-cd7b-4add-a82b-564404709cf4",
+      "result_id": "a4518e74-d698-4120-bae0-0449183d8e05"
+    },
+    {
+      "claim_id": "ec63b711-bff0-42b3-aac1-7f1193e9f5e2",
+      "result_id": "a4518e74-d698-4120-bae0-0449183d8e05"
+    },
+    {
+      "claim_id": "53460b2e-a6ed-4bb1-85a7-f4ac0d25140e",
+      "result_id": "a4518e74-d698-4120-bae0-0449183d8e05"
+    },
+    {
+      "claim_id": "e1aa50ee-320c-4490-9143-0606ea2d6d97",
+      "result_id": "a4518e74-d698-4120-bae0-0449183d8e05"
+    },
+    {
+      "claim_id": "85fc73d2-62e2-47cc-bbb9-7be04c2b7494",
+      "result_id": "f752ab3d-fa4f-421c-a91d-6db0fe3f0495"
+    },
+    {
+      "claim_id": "4aa361d4-30d7-4a5a-abb0-a7ef22b19254",
+      "result_id": "f752ab3d-fa4f-421c-a91d-6db0fe3f0495"
+    },
+    {
+      "claim_id": "aca0a56c-7e13-4880-81df-b81e3c22305f",
+      "result_id": "f752ab3d-fa4f-421c-a91d-6db0fe3f0495"
+    },
+    {
+      "claim_id": "bb16ab41-623c-4061-9e13-ba57717c2e3a",
+      "result_id": "f752ab3d-fa4f-421c-a91d-6db0fe3f0495"
+    },
+    {
+      "claim_id": "56f613a9-dd3a-47b7-993e-362e943e79ab",
+      "result_id": "f752ab3d-fa4f-421c-a91d-6db0fe3f0495"
+    },
+    {
+      "claim_id": "0257a9a3-810d-4a77-becb-a1655a6c3c68",
+      "result_id": "f752ab3d-fa4f-421c-a91d-6db0fe3f0495"
+    },
+    {
+      "claim_id": "cd374495-852d-4d84-a828-ad8c67858074",
+      "result_id": "f752ab3d-fa4f-421c-a91d-6db0fe3f0495"
+    },
+    {
+      "claim_id": "7f30083f-8bc3-43b1-b13c-f12ff2e24bfa",
+      "result_id": "f752ab3d-fa4f-421c-a91d-6db0fe3f0495"
+    },
+    {
+      "claim_id": "c3eb5ef9-d7a0-4a15-aa50-be9d0d49fef4",
+      "result_id": "185fe010-e8ce-4e35-9ad4-a48493510de1"
+    },
+    {
+      "claim_id": "8a30590b-1043-483c-80e3-1d5a8a234680",
+      "result_id": "185fe010-e8ce-4e35-9ad4-a48493510de1"
+    },
+    {
+      "claim_id": "cebc33cf-c5c4-4193-bf28-9393387c5bd0",
+      "result_id": "185fe010-e8ce-4e35-9ad4-a48493510de1"
+    },
+    {
+      "claim_id": "adbcf14f-98ba-4abe-98a6-1f41281ed200",
+      "result_id": "185fe010-e8ce-4e35-9ad4-a48493510de1"
+    },
+    {
+      "claim_id": "f1795b27-2f35-4d72-994e-817f6b86716a",
+      "result_id": "185fe010-e8ce-4e35-9ad4-a48493510de1"
+    },
+    {
+      "claim_id": "5dbf7d86-eb85-4f59-952c-d0079c527803",
+      "result_id": "ca7f9a9c-1365-4a36-8271-7c951635317a"
+    },
+    {
+      "claim_id": "eaf4b75f-fab4-4d88-9a19-58deaaa2530b",
+      "result_id": "ca7f9a9c-1365-4a36-8271-7c951635317a"
+    },
+    {
+      "claim_id": "7a9e7e13-ab95-4098-ae84-b297ee9dc054",
+      "result_id": "ca7f9a9c-1365-4a36-8271-7c951635317a"
+    },
+    {
+      "claim_id": "765fbf1f-c5cb-48ad-8086-5180c1a65566",
+      "result_id": "5e24e9b9-71f3-4ded-ab27-5afdcf2a058c"
+    },
+    {
+      "claim_id": "1ff31bbc-ced7-497e-8b95-d9d3161b77af",
+      "result_id": "5e24e9b9-71f3-4ded-ab27-5afdcf2a058c"
+    },
+    {
+      "claim_id": "5b505975-2357-4426-b6a2-03cb442c71df",
+      "result_id": "5e24e9b9-71f3-4ded-ab27-5afdcf2a058c"
+    },
+    {
+      "claim_id": "b79cc36a-dd7a-40d6-999f-a7a4f4662451",
+      "result_id": "d3adc742-e8df-4d5a-993d-f4d50df57e5b"
+    },
+    {
+      "claim_id": "44796b15-56b3-4701-94fb-221bc6872a59",
+      "result_id": "d3adc742-e8df-4d5a-993d-f4d50df57e5b"
+    },
+    {
+      "claim_id": "d6347f61-8174-4f93-80f5-c140eba43954",
+      "result_id": "d3adc742-e8df-4d5a-993d-f4d50df57e5b"
+    },
+    {
+      "claim_id": "6695849f-465e-4c59-8303-c9b0c9fc7b4d",
+      "result_id": "12b2101b-e2f2-41fa-b06f-1c5cbbb9c16c"
+    },
+    {
+      "claim_id": "505c36d5-0278-44df-b07f-81135ccfde90",
+      "result_id": "12b2101b-e2f2-41fa-b06f-1c5cbbb9c16c"
+    },
+    {
+      "claim_id": "c956dc63-3edc-4e74-879d-21836306e5af",
+      "result_id": "12b2101b-e2f2-41fa-b06f-1c5cbbb9c16c"
+    },
+    {
+      "claim_id": "9a2829de-9241-4364-8fb6-02a6a672fefe",
+      "result_id": "e5d0104d-2c25-4f1b-a2d9-1f8eb06ef982"
+    },
+    {
+      "claim_id": "706e3c4b-fd78-4c85-8083-7fc991ad0ea7",
+      "result_id": "e5d0104d-2c25-4f1b-a2d9-1f8eb06ef982"
+    },
+    {
+      "claim_id": "64ffa013-5ac9-4a3e-b04c-260c4c08dcaf",
+      "result_id": "e5d0104d-2c25-4f1b-a2d9-1f8eb06ef982"
+    },
+    {
+      "claim_id": "2da04d1c-3ddf-467d-a658-7e9bbcfa9c78",
+      "result_id": "e5d0104d-2c25-4f1b-a2d9-1f8eb06ef982"
+    },
+    {
+      "claim_id": "562e2d8f-017b-492c-9858-862dc8ba9f5d",
+      "result_id": "0a36a475-1700-46a1-ab1d-cfda74f7cd25"
+    },
+    {
+      "claim_id": "b29c79f0-bd77-44ba-ae1a-f39723a2d4a5",
+      "result_id": "0a36a475-1700-46a1-ab1d-cfda74f7cd25"
+    },
+    {
+      "claim_id": "b27ecdf6-9f4e-4304-be23-fdc3317bc40b",
+      "result_id": "0a36a475-1700-46a1-ab1d-cfda74f7cd25"
+    },
+    {
+      "claim_id": "08197e4b-4ead-401e-a009-3ccbb6a33836",
+      "result_id": "0a36a475-1700-46a1-ab1d-cfda74f7cd25"
+    },
+    {
+      "claim_id": "0af18bf4-cab7-45e5-8e83-dea79f3c2227",
+      "result_id": "0a36a475-1700-46a1-ab1d-cfda74f7cd25"
+    },
+    {
+      "claim_id": "a11bb059-6766-4e00-8df4-15272ef62681",
+      "result_id": "0a36a475-1700-46a1-ab1d-cfda74f7cd25"
+    },
+    {
+      "claim_id": "fe28b0c2-9a4b-410e-a4b3-4a897ecbb443",
+      "result_id": "0a36a475-1700-46a1-ab1d-cfda74f7cd25"
+    },
+    {
+      "claim_id": "6d83e6f1-1364-4df7-8f35-20d15306387e",
+      "result_id": "0a36a475-1700-46a1-ab1d-cfda74f7cd25"
+    },
+    {
+      "claim_id": "dd49f73f-7345-4c99-9a22-13ee8fdb2b02",
+      "result_id": "ad741b77-552a-4a3d-8ea9-db40bd93864c"
+    },
+    {
+      "claim_id": "7a8362cc-191e-463b-9f5d-87f41440f1fc",
+      "result_id": "ad741b77-552a-4a3d-8ea9-db40bd93864c"
+    },
+    {
+      "claim_id": "452f6720-0990-415b-84e4-13e3c2e2995b",
+      "result_id": "ad741b77-552a-4a3d-8ea9-db40bd93864c"
+    },
+    {
+      "claim_id": "9c7c94af-4256-485c-b389-fb1a8dc67df6",
+      "result_id": "7d5adbd9-d20e-47f9-b99e-dce467d7cd3e"
+    },
+    {
+      "claim_id": "ffc15666-832f-45e1-b1e3-9e219a48805d",
+      "result_id": "7d5adbd9-d20e-47f9-b99e-dce467d7cd3e"
+    },
+    {
+      "claim_id": "6235bdbc-1cf1-48ca-a8b8-b44d1a407a77",
+      "result_id": "7d5adbd9-d20e-47f9-b99e-dce467d7cd3e"
+    },
+    {
+      "claim_id": "b51b081f-b462-4e53-86fc-0dabc44ec221",
+      "result_id": "7d5adbd9-d20e-47f9-b99e-dce467d7cd3e"
+    },
+    {
+      "claim_id": "8dd49409-1f8c-438e-931a-cf289bccd8ba",
+      "result_id": "7d5adbd9-d20e-47f9-b99e-dce467d7cd3e"
+    },
+    {
+      "claim_id": "aa08ea96-c754-4472-8506-da1844953593",
+      "result_id": "02c386cb-c315-4e18-957f-0f836cdce96c"
+    },
+    {
+      "claim_id": "b9cc65de-f0d8-438e-88d9-4a7a896f00f2",
+      "result_id": "02c386cb-c315-4e18-957f-0f836cdce96c"
+    },
+    {
+      "claim_id": "72035d86-be41-4aa2-a7b2-2689f148a30d",
+      "result_id": "02c386cb-c315-4e18-957f-0f836cdce96c"
+    },
+    {
+      "claim_id": "aada95b2-e2fa-4fd8-9d4a-7624c3215059",
+      "result_id": "02c386cb-c315-4e18-957f-0f836cdce96c"
+    },
+    {
+      "claim_id": "913def98-9f61-4d4b-920d-09e365c61c12",
+      "result_id": "91db802b-8da8-46da-9eb8-288c83dd568a"
+    },
+    {
+      "claim_id": "ccee4e3c-2ab8-466d-ba41-dcd11df7d45a",
+      "result_id": "91db802b-8da8-46da-9eb8-288c83dd568a"
+    },
+    {
+      "claim_id": "fe485762-c236-4fb1-9c8c-a5a67de881cf",
+      "result_id": "91db802b-8da8-46da-9eb8-288c83dd568a"
+    },
+    {
+      "claim_id": "44776b80-c548-4b76-8998-a187b346c46d",
+      "result_id": "91db802b-8da8-46da-9eb8-288c83dd568a"
+    },
+    {
+      "claim_id": "841447e7-ba68-4d92-9820-6e5ea95d50a3",
+      "result_id": "499b2344-40f6-4c34-a2a1-08fc58ed904b"
+    }
+  ],
+  "comparisons": []
+}

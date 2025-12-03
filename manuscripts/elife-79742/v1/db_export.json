@@ -1,0 +1,2540 @@
+{
+  "submission": {
+    "id": "e02afebb-dad6-44f4-b24c-25d6403a9b6f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:08:09.248291Z",
+    "updated_at": "2025-12-03T19:08:09.248291Z"
+  },
+  "content": [
+    {
+      "id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "submission_id": "e02afebb-dad6-44f4-b24c-25d6403a9b6f",
+      "content_type": "manuscript",
+      "content_text": "# Associations of genetic and infectious risk factors with coronary heart disease\n\n## Authors\n\n- Flavia Hodel<sup>1</sup> ([ORCID: 0000-0001-7331-7357](https://orcid.org/0000-0001-7331-7357))\n- Zhi Ming Xu<sup>1</sup>\n- Christian Wandall Thorball<sup>3</sup>\n- Roxane de La Harpe<sup>4</sup>\n- Prunelle Letang-Mathieu<sup>1</sup>\n- Nicole Brenner<sup>5</sup> ([ORCID: 0000-0002-7690-4925](https://orcid.org/0000-0002-7690-4925))\n- Julia Butt<sup>5</sup>\n- Noemi Bender<sup>5</sup> ([ORCID: 0000-0003-2542-9949](https://orcid.org/0000-0003-2542-9949))\n- Tim Waterboer<sup>5</sup>\n- Pedro Manuel Marques-Vidal<sup>4</sup> ([ORCID: 0000-0002-4548-8500](https://orcid.org/0000-0002-4548-8500))\n- Peter Vollenweider<sup>4</sup>\n- Julien Vaucher<sup>3</sup>\n- Jacques Fellay<sup>1</sup> ([ORCID: 0000-0002-8240-939X](https://orcid.org/0000-0002-8240-939X)) \u2020\n\n### Affiliations\n\n1. Global Health Institute, School of Life Sciences, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))\n2. Swiss Institute of Bioinformatics Lausanne Switzerland ([ROR:002n09z45](https://ror.org/002n09z45))\n3. Precision Medicine Unit, Lausanne University Hospital and University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))\n4. Department of Medicine, Internal medicine, Lausanne University Hospital and University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))\n5. Division of Infections and Cancer Epidemiology, German Cancer Research Center Heidelberg Germany ([ROR:04cdgtt98](https://ror.org/04cdgtt98))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCoronary heart disease (CHD) is one of the most pressing health problems of our time and a major cause of preventable death. CHD results from complex interactions between genetic and environmental factors. Using multiplex serological testing for persistent or frequently recurring infections and genome-wide analysis in a prospective population study, we delineate the respective and combined influences of genetic variation, infections, and low-grade inflammation on the risk of incident CHD. Study participants are enrolled in the CoLaus|PsyCoLaus study, a longitudinal, population-based cohort with baseline assessments from 2003 through 2008 and follow-up visits every 5 years. We analyzed a subgroup of 3459 individuals with available genome-wide genotyping data and immunoglobulin G levels for 22 persistent or frequently recurring pathogens. All reported CHD events were evaluated by a panel of specialists. We identified independent associations with incident CHD using univariable and multivariable stepwise Cox proportional hazards regression analyses. Of the 3459 study participants, 210 (6.07%) had at least one CHD event during the 12 years of follow-up. Multivariable stepwise Cox regression analysis, adjusted for known cardiovascular risk factors, socioeconomic status, and statin intake, revealed that high polygenic risk (hazard ratio [HR] 1.31, 95% CI 1.10\u20131.56, p=2.64 \u00d7 10\u22123) and infection with Fusobacterium nucleatum (HR 1.63, 95% CI 1.08\u20132.45, p=1.99 \u00d7 10\u22122) were independently associated with incident CHD. In a prospective, population-based cohort, high polygenic risk and infection with F. nucleatum have a small, yet independent impact on CHD risk.\n\n## Introduction\n\nWorldwide, cardiovascular diseases (CVDs) are the leading cause of mortality (Roth et al., 2018). An estimated 17.9 million people die from CVD each year, accounting for 32% of all deaths. CVD is a broad term for medical conditions involving the heart and blood vessels, such as coronary heart disease (CHD), congenital heart disease, cerebrovascular disease, peripheral arterial disease, rheumatic heart disease, deep vein thrombosis, and pulmonary embolism (World Health Organization, 2009).\n\nCHD is the most common type of heart disease (Roth et al., 2018). It is caused by atherosclerosis, a build-up of plaque inside the walls of the arteries that supply blood to the heart. CHD progresses over a long period of time and eventually evolves into symptoms such as chest pain (angina), tightness in the chest, breathing difficulties, and pain in the arms or shoulders (Ambrose and Singh, 2015). A complete blockage can cause a heart attack.\n\nA combination of demographic, environmental, and genetic factors contribute to the development of CHD (Khot et al., 2003; Mendis et al., 2011). The main risk factors associated with the development of CHD \u2013 smoking, diabetes, hyperlipidemia, and hypertension \u2013 have been established by extensive epidemiological research (MacMahon et al., 1990; Stamler et al., 1993; Verschuren et al., 1995; Weintraub, 1990). Age is also an important risk factor for CHD (Castelli, 1984). Finally, the incidence of CHD is greater in males than in females (Castelli, 1984). Very recently, a new algorithm, named Systematic COronary Risk Evaluation 2 (SCORE2), was developed to predict the 10-year risk of first-onset CVD in European populations (SCORE2 working group and ESC Cardiovascular risk collaboration, 2021; SCORE2-OP working group and ESC Cardiovascular risk collaboration, 2021). This score has replaced the existing HeartScore scoring system, and incorporates most of the risk factors mentioned above (Conroy et al., 2003).\n\nCHD also has an important genetic component. In 1938, the first familial risk model for CHD was described and later confirmed by clinical observations and large studies of twins and of longitudinal cohorts (M\u00fcller, 1938; Marenberg et al., 1994; Samani et al., 2007; Abraham et al., 2016). Based on whole-genome approaches, the heritability of CHD has been estimated at 40\u201360%, even after controlling for known risk factors (Vinkhuyzen et al., 2013).\n\nMultiple clinical studies have identified inflammatory risk factors that are predictive of future cardiovascular events (Alfaddagh et al., 2020; Libby, 2006; Hansson, 2005). Endothelial dysfunction and subintimal cholesterol have been shown to trigger an inflammatory cascade, involving activated macrophages and leading to atherosclerotic lesions. At the molecular level, inflammasome formation in macrophages plays, through their production of interleukin (IL)-1\u03b2, an essential role in the propagation of inflammation. These cytokines are released, trigger various inflammatory cells, and produce IL-6 that in turn, stimulate C-reactive protein (CRP) production by the liver, which further enhances the inflammatory cascade within the vascular wall. Today, CRP is an established biomarker of systemic inflammation and a possible predictor of future cardiovascular events (Libby, 2006).\n\nThe recognition of atherosclerosis as an inflammatory disease has renewed interest in examining the role of pathogens in CHD and other CVDs. Nearly 150 years ago, acute infection with Bacillus typhosus was found to cause sclerosing changes in the arterial wall (Gilbert and Lion, 1889). A century later, the interest for a potential role of infection in atherosclerosis was renewed, with the discovery that CHD-positive individuals show an increased likelihood of having elevated levels of antibodies to Chlamydia pneumoniae (C. pneumoniae) (Saikku et al., 1988). This was followed by the discovery of the association with CHD of several other infectious agents, including bacteria and viruses, such as Helicobacter pylori (H. pylori), hepatitis C virus (HCV), and human herpes viruses (Adinolfi et al., 2018; Filardo et al., 2015; Wang et al., 2020; Zhang et al., 2008). The exact mechanisms linking infection to low-grade inflammation and atherosclerosis are still being studied, though some potential pathways have been proposed. One proposed mechanism involves the production of pro-inflammatory molecules in response to an infection (Campbell and Rosenfeld, 2015). These molecules, such as cytokines, can increase the activity of cells involved in atherosclerosis, such as macrophages and smooth muscle cells, leading to the formation of plaques and other changes in the walls of arteries (Campbell and Rosenfeld, 2015). Another mechanism is related to the inflammation at the site of vessel wall. Specifically, it is characterized by the presence of the infectious agents within the atherosclerotic plaques. The infectious consequences on the atherosclerotic plaque can be accelerated progression or a final complication like thrombosis and plaque rupture (Pedicino et al., 2013).\n\nAlthough enormous progress has been made in the understanding of CHD pathogenesis, the overall picture of the combined contribution of infectious, inflammatory, and genetic factors to the risk of developing CHD in the general population remains incomplete. We here use data from the CoLaus|PsyCoLaus study, a well-characterized, longitudinal, population-based study from Switzerland, to obtain a more comprehensive view of the evidence for the respective contributions of these factors to CHD.\n\n## Results\n\n### Demographic and serological characteristics\n\nA total of 3459 CoLaus|PsyCoLaus participants with available phenotypic, serological, and genotypic data were included. Their characteristics are presented in Table 1.\n\n**Table 1.**\n Baseline characteristics of 3459 CoLaus|PsyCoLaus participants by coronary heart disease (CHD) cases and controls.p-Values are based on the t-test for continuous variables and Fisher\u2019s exact test for categorical variables comparing the CHD cases and controls group.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>OverallN = 3249 (100%)</th>\n      <th>ControlsN = 3249 (93.93%)</th>\n      <th>CHD casesN = 210 (6.07%)</th>\n      <th>p</th>\n    </tr>\n    <tr>\n      <th>Baseline characteristics</th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age (mean [SD])</td>\n      <td>52.83 [10.48]</td>\n      <td>52.34 [10.36]</td>\n      <td>60.34 [9.53]</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>BMI (mean [SD])</td>\n      <td>25.51 [4.31]</td>\n      <td>25.41 [4.27]</td>\n      <td>27.11 [4.62]</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Systolic blood pressure (mean [SD])</td>\n      <td>129.04 [18.40]</td>\n      <td>128.32 [18.01]</td>\n      <td>140.18 [20.60]</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>HDL cholesterol (mean [SD])</td>\n      <td>1.66 [0.43]</td>\n      <td>1.67 [0.43]</td>\n      <td>1.49 [0.41]</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>LDL cholesterol (mean [SD])</td>\n      <td>3.34 [0.92]</td>\n      <td>3.33 [0.92]</td>\n      <td>3.48 [0.91]</td>\n      <td>0.018</td>\n    </tr>\n    <tr>\n      <td>Total cholesterol (mean [SD])</td>\n      <td>5.60 [1.03]</td>\n      <td>5.59 [1.02]</td>\n      <td>5.73 [1.04]</td>\n      <td>0.051</td>\n    </tr>\n    <tr>\n      <td>Sex = male (%)</td>\n      <td>1592 (46.0)</td>\n      <td>1448 (44.6)</td>\n      <td>144 (68.6)</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Statin = yes (%)</td>\n      <td>296 (8.6)</td>\n      <td>242 (7.4)</td>\n      <td>54 (25.7)</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Average gross monthly income (in CHF):</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>0.029</td>\n    </tr>\n    <tr>\n      <td>&lt;2999 (%)</td>\n      <td>178 (5.1)</td>\n      <td>161 (5.0)</td>\n      <td>17 (8.1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>3000\u20134999 (%)</td>\n      <td>452 (13.1)</td>\n      <td>425 (13.1)</td>\n      <td>27 (12.9)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>5000\u20136999 (%)</td>\n      <td>552 (16.0)</td>\n      <td>517 (15.9)</td>\n      <td>35 (16.7)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>7000\u20139499 (%)</td>\n      <td>504 (14.6)</td>\n      <td>468 (14.4)</td>\n      <td>36 (17.1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>9500\u201313,000 (%)</td>\n      <td>338 (9.8)</td>\n      <td>323 (9.9)</td>\n      <td>15 (7.1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>&gt;13,000 (%)</td>\n      <td>344 (9.9)</td>\n      <td>335 (10.3)</td>\n      <td>9 (4.3)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Refused or missing (%)</td>\n      <td>1091 (31.5)</td>\n      <td>1020 (31.4)</td>\n      <td>71 (33.8)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Smoking = yes (%)</td>\n      <td>883 (25.5)</td>\n      <td>820 (25.2)</td>\n      <td>63 (30.0)</td>\n      <td>0.146</td>\n    </tr>\n    <tr>\n      <td>Genetics</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CHD-PRS (mean [SD])</td>\n      <td>0.00 [1.00]</td>\n      <td>\u22120.02 [0.99]</td>\n      <td>0.26 [1.01]</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Biomarkers of inflammation</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>hs-CRP (mean [SD])</td>\n      <td>0.09 [0.46]</td>\n      <td>0.08 [0.46]</td>\n      <td>0.22 [0.44]</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>TNF-\u03b1 (mean [SD]) \u2013 63 NAs</td>\n      <td>0.46 [0.38]</td>\n      <td>0.46 [0.38]</td>\n      <td>0.53 [0.35]</td>\n      <td>0.013</td>\n    </tr>\n    <tr>\n      <td>IL-1\u03b2 (mean [SD]) \u2013 1\u2019319 NAs</td>\n      <td>0.17 [0.64]</td>\n      <td>0.17 [0.64]</td>\n      <td>0.14 [0.67]</td>\n      <td>0.637</td>\n    </tr>\n    <tr>\n      <td>IL-6 (mean [SD]) \u2013 294 NAs</td>\n      <td>0.24 [0.58]</td>\n      <td>0.24 [0.58]</td>\n      <td>0.28 [0.55]</td>\n      <td>0.398</td>\n    </tr>\n    <tr>\n      <td>Persistent pathogens</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Human polyomaviruses:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>BKPyV = seropositive (%)</td>\n      <td>2912 (84.2)</td>\n      <td>2735 (84.2)</td>\n      <td>177 (84.3)</td>\n      <td>1.000</td>\n    </tr>\n    <tr>\n      <td>JCPyV = seropositive (%)</td>\n      <td>1812 (52.4)</td>\n      <td>1696 (52.2)</td>\n      <td>116 (55.2)</td>\n      <td>0.434</td>\n    </tr>\n    <tr>\n      <td>HPyV6 = seropositive (%)</td>\n      <td>2948 (85.2)</td>\n      <td>2759 (84.9)</td>\n      <td>189 (90.0)</td>\n      <td>0.056</td>\n    </tr>\n    <tr>\n      <td>WUPyV = seropositive (%)</td>\n      <td>3309 (95.7)</td>\n      <td>3105 (95.6)</td>\n      <td>204 (97.1)</td>\n      <td>0.362</td>\n    </tr>\n    <tr>\n      <td>Human herpes viruses:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HSV-1 = seropositive (%)</td>\n      <td>2547 (73.6)</td>\n      <td>2373 (73.0)</td>\n      <td>174 (82.9)</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>HSV-2 = seropositive (%)</td>\n      <td>601 (17.4)</td>\n      <td>564 (17.4)</td>\n      <td>37 (17.6)</td>\n      <td>0.998</td>\n    </tr>\n    <tr>\n      <td>CMV = seropositive (%)</td>\n      <td>1868 (54.0)</td>\n      <td>1756 (54.0)</td>\n      <td>112 (53.3)</td>\n      <td>0.897</td>\n    </tr>\n    <tr>\n      <td>EBV = seropositive (%)</td>\n      <td>3350 (96.8)</td>\n      <td>3147 (96.9)</td>\n      <td>203 (96.7)</td>\n      <td>1.000</td>\n    </tr>\n    <tr>\n      <td>HHV-6A = seropositive (%)</td>\n      <td>865 (25.0)</td>\n      <td>800 (24.6)</td>\n      <td>65 (31.0)</td>\n      <td>0.049</td>\n    </tr>\n    <tr>\n      <td>HHV-6B = seropositive (%)</td>\n      <td>1373 (39.7)</td>\n      <td>1295 (39.9)</td>\n      <td>78 (37.1)</td>\n      <td>0.480</td>\n    </tr>\n    <tr>\n      <td>HHV-7 = seropositive (%)</td>\n      <td>1846 (53.4)</td>\n      <td>1746 (53.7)</td>\n      <td>100 (47.6)</td>\n      <td>0.099</td>\n    </tr>\n    <tr>\n      <td>KSHV = seropositive (%)</td>\n      <td>141 (4.1)</td>\n      <td>133 (4.1)</td>\n      <td>8 (3.8)</td>\n      <td>0.983</td>\n    </tr>\n    <tr>\n      <td>VZV = seropositive (%)</td>\n      <td>3047 (88.1)</td>\n      <td>2853 (87.8)</td>\n      <td>194 (92.4)</td>\n      <td>0.061</td>\n    </tr>\n    <tr>\n      <td>Parvovirus:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PVB-19 = seropositive (%)</td>\n      <td>2420 (70.0)</td>\n      <td>2277 (70.1)</td>\n      <td>143 (68.1)</td>\n      <td>0.595</td>\n    </tr>\n    <tr>\n      <td>Bacteria:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>C. trachomatis = seropositive (%)</td>\n      <td>1213 (35.1)</td>\n      <td>1120 (34.5)</td>\n      <td>93 (44.3)</td>\n      <td>0.005</td>\n    </tr>\n    <tr>\n      <td>F. nucleatum = seropositive (%)</td>\n      <td>520 (15.0)</td>\n      <td>473 (14.6)</td>\n      <td>47 (22.4)</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>H. pylori = seropositive (%)</td>\n      <td>685 (19.8)</td>\n      <td>645 (19.9)</td>\n      <td>40 (19.0)</td>\n      <td>0.846</td>\n    </tr>\n    <tr>\n      <td>S. gallolyticus = seropositive (%)</td>\n      <td>135 (3.9)</td>\n      <td>130 (4.0)</td>\n      <td>5 (2.4)</td>\n      <td>0.322</td>\n    </tr>\n    <tr>\n      <td>Parasite:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>T. gondii = seropositive (%)</td>\n      <td>1445 (41.8)</td>\n      <td>1349 (41.5)</td>\n      <td>96 (45.7)</td>\n      <td>0.262</td>\n    </tr>\n  </tbody>\n</table>\n\nDuring the follow-up of 4500 days (12.3 years), at least one CHD event occurred in 210 individuals (6.07%). The number of participants with one, two, and three coronary events was 140, 47, and 14, respectively. Nine individuals had between four and eight coronary events. Eligible study participants were on average 52.8 (standard deviation [SD] \u00b1 10.5) years of age at baseline, 54% were women and 25.5% were smokers. On average, their body mass index (BMI) was 25.5 (\u00b14.3) kg/m2, their systolic blood pressure was 129 (\u00b118) mmHg, and their HDL cholesterol level was 1.66 (\u00b10.43) mmol/L. The percentages of participants by average gross monthly income are 7.5 (<CHF 2999), 19.1 (CHF 3000\u20134999), 23.3 (CHF 5000\u20136999), 21.3 (CHF 7000\u20139499), 14.3 (CHF 9500\u201313,000), and 14.5% (CHF > 13,000).\n\nFor the measured biomarkers of inflammation, the log10-transformed mean (SD) values for high-sensitive CRP (hs-CRP), IL-1\u03b2, IL-6, and tumor necrosis factor \u03b1 (TNF-\u03b1) were 0.09 (\u00b10.46), 0.17 (\u00b10.64), 0.24 (\u00b10.58), and 0.46 (\u00b10.38), respectively.\n\nWe also investigated participants\u2019 serostatus for the following 22 human pathogens: 15 viruses (human polyomaviruses BK [BKV], JC [JCV], 6 [HPyV6], and WU [WUPyV], herpes simplex virus [HSV]-1, HSV-2, varicella zoster virus (VZV), Epstein\u2013Barr virus [EBV], cytomegalovirus [CMV], human herpes virus 6A [HHV-6A], HHV-6B, HHV-7, Kaposi\u2019s sarcoma-associated herpes virus [KSHV], parvovirus B19 [PVB-19], and rubella virus); six bacteria (Chlamydia trachomatis [C. trachomatis], Clostridium tetani [C. tetani], Cornybacterium diphteriae [C. diphteriae], F. nucleatum, H. pylori, and S. gallolyticus); and one parasite (T. gondii) (Appendix 1\u2014table 1). The overall seropositivity ranged from 3.99% (S. gallolyticus) to 96.80% (EBV). The overall serostatus split between CHD-positive (with at least one CHD event during follow-up) and CHD-negative individuals are shown in Figure 1. Rubella, C. tetani and C. diphteriae were excluded from further analyses as the antibodies detected against these pathogens were most likely induced by vaccination.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79742/elife-79742-fig1-v1.jpg)\n\n**Figure 1.:** Overall serostatus for the 22 pathogens are shown in the CHD-positive group (individuals with at least one CHD event during follow-up) or CHD-negative group. The y-axis indicates the relative percentage within each group. Pathogens are ranked in ascending order of overall seropositivity (all individuals combined).\n\n### Univariable predictors of CHD incidence\n\nTo validate the utility of SCORE2 in our cohort, we tested its association with CHD. SCORE2 was significantly and positively associated with CHD (HR 1.72, 95% CI 1.61\u20131.85, p = 2.87\u00d710\u221261) (Appendix 1\u2014table 2). We also observed a significant inverse association between average gross monthly income and CHD risk (HR 0.85, 95% CI 0.76\u20130.96, p = 7.27\u00d710\u22123).\n\nTo investigate the relationship between CHD and humoral response to infectious agents, we tested the association of serostatus for each of the included 19 persistent or frequently occurring pathogens with CHD. We found significant positive associations for six of them, including three herpes viruses, namely HSV-1 (HR 1.88, 95% CI 1.30\u20132.68, p = 6.52\u00d710\u22124), HHV-6A (HR 1.39, 95% CI 1.03\u20131.86, p = 2.89\u00d710\u22122), and VZV (HR 1.70, 95% CI 1.02\u20132.82, p = 4.25\u00d710\u22122), one polyomavirus, HPyV6 (HR 1.66, 95% CI 1.06\u20132.61, p = 2.74\u00d710\u22122), and two bacteria, F. nucleatum (HR 1.66, 95% CI 1.20\u20132.29, p = 2.32\u00d710\u22123), and C. trachomatis (HR 1.45, 95% CI 1.11\u20131.91, p = 7.22\u00d710\u22123) (Appendix 1\u2014table 2).\n\nTo evaluate the impact of the biomarkers of inflammation on CHD risk, we tested the association of log10-transformed levels of hs-CRP, IL-1\u03b2, IL-6, and TNF-\u03b1 with CHD. We observed a positive relationship between individuals\u2019 hs-CRP (HR 1.91, 95% CI 1.42\u20132.55, p = 1.51\u00d710\u22125) and TNF-\u03b1 (HR 1.43, 95% CI 1.05\u20131.96, p = 2.46\u00d710\u22122) levels, and increased risk of CHD event (Appendix 1\u2014table 2).\n\nFinally, we calculated a CHD polygenic risk score (CHD-PRS) for each subject to investigate the effect of common human genetic variations on CHD. As expected, we observed a significant association between the PRS and CHD (HR 1.32, 95% CI 1.16\u20131.51, p = 4.29\u00d710\u22125), confirming that genetic predisposition to CHD can be captured through CHD-PRS. The top three genetic principal components (PC1, PC2, and PC3) were not significantly associated with CHD (Appendix 1\u2014table 2).\n\n### Co-linearity and proportional hazard assumption testing\n\nWe calculated pairwise correlations between all variables that were found to be significant in univariable analyses. Appendix 2\u2014figure 1 and Appendix 2\u2014figure 2 illustrate that no strong correlations exist between significant variables. The strongest correlation was observed between SCORE2 and hs-CRP, and between seropositivity to C. trachomatis and gross monthly household income, with Pearson\u2019s and Cramer\u2019s V coefficients of 0.22 and 0.15, respectively. The proportionality assumption was tested for all significant variables using the Schoenfeld residuals. The residual tests indicated that all variables satisfied the proportional hazards assumption, revealing that the effect of all covariates are constant in time (Appendix 2\u2014figure 3). Finally, we also assessed potential co-linearity issues among predictors that could affect model fitting. No variance inflation factor (VIF) value was indicative of co-linearity.\n\n### Multivariable model\n\nTo identify the independent risk factors of CHD in our cohort, we performed backward stepwise selection on 2323 individuals with non-missing data using a multivariable Cox proportional hazards model, starting with all the significant factors from the univariable models. The final multivariable analysis confirmed that SCORE2 (HR 1.96 per SD increase, 95% CI 1.74\u20132.22, p = 2.42\u00d710\u221227) is an independent prognostic factor of CHD (Figure 2). We also observed significant independent associations for statin intake (HR 2.24, 95% CI 1.50\u20133.35, p = 9.17\u00d710\u22125) and for seropositivity to F. nucleatum infection (HR 1.63, 95% CI 1.08\u20132.45, p = 1.99\u00d710\u22122). Comparing individuals who had a least one CHD event (CHD group) against those who had no event during the follow-up period (control group), 22.4% (47/210) of the individuals in the CHD group were seropositive to F. nucleatum, versus 14.6% (473/3249) in the control group (p = 0.003) (Figure 1, Table 1). Lastly, we also observed a significant association between CHD occurrence and elevated CHD-PRS with an HR of 1.31 (95% CI 1.10\u20131.56, p = 3.32\u00d710\u22123) per SD increase.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79742/elife-79742-fig2-v1.jpg)\n\n**Figure 2.:** HR > 1 indicates an increased risk of CHD, whereas HR < 1 indicates a protective effect. p-Values (p) for each factor based on the multivariable Cox regression are shown.\n\nTo assess if the overall burden of infections contributed to increased risk of CHD, study participants were stratified according to their overall seropositivity index for measured pathogens, calculated by summing the number of pathogens for which they show seropositivity (range: 0\u201316). The numbers of individuals in each pathogen burden stratum are shown in Appendix 2\u2014figure 4. In the univariable Cox model, pathogen burden significantly increased the risk of CHD occurrence (HR 1.11, 95% CI 1.03\u20131.18, p = 3.25\u00d710\u22123) (Appendix 1\u2014table 2). However, after adjustment with multivariable Cox proportional hazards regression, pathogen burden did not meet the level of significance for staying in the model.\n\n## Discussion\n\nCHD is a complex disease that is influenced by demographic, environmental, and genetic factors (Khot et al., 2003; Mendis et al., 2011). Infections have also been suspected to increase the risk of CHD, directly or through the induction of chronic inflammation (Vojdani, 2003). The present study investigated the independent and combined effects of these risk factors as possible prognostic indicators for the occurrence of CHD. We performed an event-free survival analysis of incident CHD using data from a longitudinal, population-based study, in which more than 6% of participants developed CHD over a 12-year study period.\n\nWe confirmed the utility of SCORE2 to predict CHD risk in our cohort (SCORE2 working group and ESC Cardiovascular risk collaboration, 2021). Of note, chronic inflammation reflected in hs-CRP level did not appear as an independent predictor of CHD in our analyses, as the univariable association signal was suppressed after adjustment for SCORE2 levels.\n\nWe studied the effect of human genetic determinants on CHD occurrence using PRS, and we reproduced previously observed effects: participants with a higher CHD-PRS have a greater risk of CHD, even after adjustment for all known factors (Ding et al., 2011; Kullo et al., 2016). This result confirms the existence of genetic susceptibility loci for CHD, and that the individual genetic background modulates CHD risk independently from age, sex, or co-morbidities. Our work confirms the potential interest in using PRS to improve the prediction of coronary events.\n\nWe also evaluated the potential contribution of multiple persistent or frequently recurring pathogens to CHD after controlling for conventional CHD risk factors, socioeconomic status, and human genetic variability. We observed an association of CHD with detection of antibodies against F. nucleatum. This pathogen is very prevalent in humans (Adams et al., 2004; Afra et al., 2013; Looker et al., 2015). F. nucleatum is an anaerobic bacterium that belongs to the normal flora of the oral cavity and plays an important role in the development and progression of oral diseases, such as gingivitis (gum inflammation) and periodontitis (infection of the gums). Under pathological conditions, the pathogen can spread by the hematogenous route to extra-oral systemic sites, including the gut and the female genital tract (Han and Wang, 2013; Han et al., 2004). Studies have also suggested the involvement of F. nucleatum in CVD. First, by its capacity to directly migrate into arterial plaques, thus exacerbating atherosclerosis, and more recently, through the association of periodontitis and CVD (Kholy et al., 2015; Elka\u00efm et al., 2008; Figuero et al., 2011; Ford et al., 2006; Han, 2015; Zardawi et al., 2020). Finally, it has been shown that periodontal pathogens are able to spread through the bloodstream from the buccal cavity to the arteries in patients with detectable coronary calcium, a very specific marker of atherosclerosis (Corredor et al., 2022). In summary, the relationship between oral inflammations and CVD could be explained by the colonization of arterial walls and atherosclerosis plaques by dental bacteria, as well as by increased systemic inflammation due to oral infection. However, to date, no direct causality has been established. Besides, no genome-wide association study on F. nucleatum has been published, neither on humoral immune response (i.e., IgG levels) nor on susceptibility to infection/colonization (i.e., serostatus).\n\nHSV-1, HHV-6A, VZV, HPyV6, and C. trachomatis serologies, as well as total burden of infection, were associated with CHD occurrence in univariable models. However, these factors were not significantly associated in the multivariable analysis, suggesting that at least some of them could be indirect markers of socioeconomic status.\n\nOur data do not support the existence of the previously identified associations between CHD and H. pylori, or CMV. The conflicting reports of possible associations between these pathogens and CHD could be due to sample size but remain questionable. Further extensive, and high-quality studies are needed to thoroughly examine these associations and provide firm conclusions.\n\nOur study has several limitations. As is the case for most longitudinal studies, the absence of data on individuals who dropped out before the end of the follow-up implies that some CHD events could have gone undetected. Also, the demographic information, as well as the clinical and laboratory measurements, were obtained at baseline, and we do not know whether participant information changed over time. Adjustment for risk factors measured at baseline does not account for clinical or demographic changes that could influence CHD outcomes. Similarly, we do not know how the antibody responses against the various antigens evolved over the 12 years of the study. In addition, no significance adjustment was performed when using multiple univariable tests to determine the effect of single factors on CHD risk, although this may increase the false positive rate. Moreover, we were unable to replicate previously published observations of associations of CHD with C. pneumoniae and HCV as serologies for these pathogens were not available. From a more practical point of view, the identified association with F. nucleatum needs to be replicated and validated in independent cohorts and different populations. Finally, the clinical utility of including genetic and infection biomarkers in CHD prediction algorithms will need to be demonstrated.\n\n### Conclusion\n\nCHD is a multicomponent disease that is caused by demographic, environmental, and genetic factors. Inflammation, possibly caused by persistent or frequently recurring infections, can contribute to its development. We identified a statistically significant association between the incidence of CHD and F. nucleatum infection, after adjustment for all established risk factors. We also confirmed that the individual polygenic risk of CVD, calculated from genome-wide genotypes, represents an independent risk factor for incident CHD. Our results can help to better identify subjects at high risk for CHD and provide a rationale for future anti-infective prevention trials.\n\n## Methods\n\n### Study cohort\n\nThe CoLaus|PsyCoLaus study is a longitudinal population-based study initiated in Lausanne in 2003; it mainly investigates the biological, environmental, and genetic determinants of CVD (https://www.colaus-psycolaus.ch/) (Firmann et al., 2008). The study involves over 6500 participants of European ancestry, who were recruited at random from the general population and represent approximately 10% sample of Lausanne citizens. Of the participants, 47.5% are men, and age at enrolment ranged from 35 to 75 years (mean \u00b1 SD: 51 \u00b1 10.9). The study participants provided detailed phenotypic information through questionnaires, interviews, clinical and biological data. Nuclear deoxyribonucleic acid (DNA) was also extracted from the blood for whole-genome genotyping data. Every 5 years, follow-up interviews on the participants\u2019 lifestyle and health status are conducted. There are three completed follow-ups and a fourth follow-up began in January 2022. The institutional Ethics Committee of the University of Lausanne, which later became the Ethics Commission of the Canton Vaud (https://www.cer-vd.ch/), approved the CoLaus|PsyCoLaus study (reference 16/03, decisions of January 13 and February 10, 2003), and all participants gave written consent.\n\n### Cardiovascular phenotype\n\nThe medical records of the participants who reported a CHD event during their lifetime were collected and evaluated by an independent panel of specialists. Information on the cause of death was also collected prospectively during the study period. The full procedure was described previously (Beuret et al., 2021). Only first events occurring after the baseline and up to day 4500 after the baseline were included in the analysis, as only during this period were all participants reliably followed.\n\n### DNA genotyping data and PRS calculation for cardiovascular phenotypes\n\nThe BB2 GSK-customized Affymetrix Axiom Biobank array was used to genotype DNA samples from 5399 participants at approximately 800,000 single nucleotide polymorphisms (SNPs). After genotype imputation and quality control procedures, approximately 9 million SNPs were available for analysis (Hodel et al., 2021). We then calculated, based on the risk effects of common SNPs, the CHD-PRS for each study participant. We used validated PRS from Inouye et al., available in the polygenic score catalog (Inouye et al., 2018; Lambert et al., 2021). These scores and summary statistics were used to construct the CHD-PRS in our target cohort data by using the clumping and thresholding method of the PRSice-2 v2.2.7 software (Choi et al., 2020). A standardized method was used to obtain the PRS, by multiplying the risk allele dosage for each variant by the effect size and summing the scores across all selected variants. SNPs were clumped according to linkage disequilibrium (r2 < 0.1) within a 250 kb window.\n\n### CHD risk evaluation\n\nThe risk of CHD for each participant was also assessed using the very recent SCORE2 and SCORE2-Older Persons (SCORE2-OP, for individuals >65 years of age) algorithms (SCORE2-OP working group and ESC Cardiovascular risk collaboration, 2021; SCORE2 working group and ESC Cardiovascular risk collaboration, 2021). These two algorithms will be referred to as SCORE2. SCORE2 was derived, calibrated, and validated to predict the 10-year risk of first-onset CVD using data from 13 million individuals from >50 European prospective studies and national registries. To develop this algorithm, the authors used competing risk-adjusted and age- and sex-specific models including age, current smoking, systolic blood pressure, and total, low-density lipoprotein (LDL), and high-density lipoprotein (HDL) cholesterol. The authors also defined four risk regions in Europe on the basis of country-specific CVD mortality. For CoLaus|PsyCoLaus participants, calculations were based on the low-risk region corresponding to Switzerland. The raw scores of participants were standardized to Z-scores with approximately zero mean and unit variance before data analysis.\n\n### Measurement of inflammatory biomarkers\n\nVenous blood samples (50 mL) of the participants, in a fasted state, were drawn. Before cytokine assessment, the serum blood samples were stored at \u221280\u00b0C, then they were sent to the laboratory on dry ice. The measurements of hs-CRP, IL-1\u03b2, IL-6, and TNF-\u03b1 cytokine levels were described previously in detail (Marques-Vidal et al., 2011). Briefly, hs-CRP levels were assessed by immunoassay and latex HS (IMMULITE 1000-High, Diagnostic Products Corporation, Los Angeles, CA, USA). Cytokine levels were measured using a multiplexed particle-based flow cytometric cytokine assay on the flow cytometer (FC500 MPL, BeckmanCoulter, Nyon, Switzerland), thus following the manufacturer\u2019s instructions. The lower limits of detection for IL-1\u03b2, IL-6, and TNF-\u03b1 were 0.2 pg/mL. Intra- and inter-assay coefficients of variation were, respectively, 15% and 16.7% for IL-1\u03b2, 16.9% and 16.1% for IL-6, and 12.5% and 13.5% for TNF-\u03b1. For quality control, repeat measurements were performed on 80 subjects randomly selected from the initial sample. Individuals with hs-CRP levels above 20 mg/L were assigned a value of 20 by the manufacturer therefore were removed from the hs-CRP analyses as indicative of acute inflammation.\n\n### Serological analyses\n\nTo assess the humoral responses to a total of 38 antigens derived from 22 persistent infectious agents, serum samples were analyzed by the Infections and Cancer Epidemiology Division at the German Cancer Research Center (Deutsches Krebsforschungszentrum [DKFZ]) in Heidelberg (Waterboer et al., 2005; Waterboer et al., 2006). Studied pathogens included 15 viruses (BKV, JCV, HPyV6, WUPyV, HSV-1, HSV-2, VZV, EBV, CMV, HHV-6A, HHV-6B, HHV-7, KSHV, PVB-19, and rubella virus); six bacteria (C. diphteriae, C. tetani, C. trachomatis, F. nucleatum, H. pylori, and S. gallolyticus); and one parasite (T. gondii) (for details, see Appendix 1\u2014table 1). The seroreactivity was measured at a serum dilution of 1:1000 by using multiplex serology based on glutathione S-transferase fusion capture immunosorbent assays combined with fluorescent bead technology. For each infectious agent tested, the antibody responses were measured for one to six antigens and then expressed as a binary result (IgG positive or negative), based on the predefined median fluorescence intensity thresholds. To define overall seropositivity against infectious agents when more than one antigen was used, we applied the pathogen-specific algorithms suggested by the manufacturer (see references in Appendix 1\u2014table 1).\n\n### Statistical analyses\n\nUnivariable and multivariable Cox proportional hazard models were used to explore the relationship between risk factors and CHD incidence in the CoLaus|PsyCoLaus study. Each variable was first screened in the univariable model. To identify potential confounding due to population structure, we also tested the top three genetic principal components (PC1, PC2, and PC3) for association with CHD. We then examined the proportional hazards assumption of the significant (p < 0.05) covariates by using the scaled Schoenfeld residuals. The residuals were plotted over time for each covariate to test for time independence. Risk factors significantly associated with CHD in the univariable model were further evaluated using pairwise correlations. Finally, the identified risk factors were assessed using multivariable stepwise Cox regression analysis, adjusted for competing risk (i.e., SCORE2), socioeconomic status (i.e., gross monthly household income), and statin intake. Potential multicollinearity between statistically significant factors (p < 0.05) were identified using VIFs. The existence of multicollinearity between co-variates was determined by a VIF value > 2. We performed all statistical analyses using R (version 4.2.1).\n",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "8e298c1d-f7d4-47f0-9ccd-23daa42e2e16",
+      "submission_id": "e02afebb-dad6-44f4-b24c-25d6403a9b6f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- J\u00e9r\u00e9mie Nsengimana, https://ror.org/01kj2bm70 Newcastle University United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79742.sa0](https://doi.org/10.7554/eLife.79742.sa0)\n\nThis study is an important contribution to the understanding of cardiovascular disease aetiology based on solid design and methodology. It is a useful independent replication of the effects of traditional risk factors in a large prospective cohort and a valuable investigation of the role of past infection with a commensal bacterium F. nucleatum which warrants validation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- J\u00e9r\u00e9mie Nsengimana, https://ror.org/01kj2bm70 Newcastle University United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79742.sa1](https://doi.org/10.7554/eLife.79742.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Associations of genetic and infectious risk factors with coronary heart disease\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by David James as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Nabila Bouatia-Naji (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. You should limit your description of the traditional risk factors and genetic risk scores as this is not the main focus of their analyses. An introduction to the expected mechanisms linking infection and inflammation and link with atherosclerosis is missing. It would also be good to have a comment on any pre-existing GWAS on seropositivity for F. nucleatum.\n\n2. A brief discussion should be included on the implications of conducting multiple tests\n\nReviewer #1 (Recommendations for the authors):\n\n1. Multiple risk factors were investigated in univariable analysis before their combination into multivariable models. The authors should add to the discussion multiple testing implications\n\n2. Why was no statistical interaction considered?\n\n3. Was there any correlation between Fusobacterium nucleatum with hs-CRP or TNF-a? It would be interesting to know if inflammation is predictive of CHD in multivariable models excluding F. nucleatum\n\n4. Adjusting principal components should be described in Methods not in Results\n\n5. Table 1 title shows n=3462 subjects instead of 3459\n\n6. Table 1 shows Statin=No for 8.6% of the cohort but Figure 2 shows that is probably Statin=yes instead\n\n7. On figure 2 the numbers for all factors do not add up to those in table 1 - please indicate if it is due to missingness in multivariable analysis\n\n8. Supplementary figure 1: scatter plot involving income looks odd. Best fit line does not make sense with income categorised\n\n9. Supplementary figure 2: correlation coefficient between binary variables does not make much sense either. Pairwise association as chi2 test or Cramer V is more appropriate\n\n10. Use correct notation for pvalues (e.g. 2.58e-01=0.26; 2.58e-08=3x10-8)\n\nReviewer #2 (Recommendations for the authors):\n\nThe manuscript is very well organized and has several strengths. The methodology is very solid.\n\n1. The authors should limit their description of the traditional risk factors and genetic risk scores as this is not the main focus of their analyses. Overall, the investigation of the genetic score seems artificial to me in the context of the scientific questions of the study.\n\n2. Although I do think the results are sound, the study is overall descriptive and do not provide any support toward a mechanism until we get into the discussion.\n\n3. I understand the article is built as an unbiased approach to test the broad hypothesis of how response to infection may predict the risk for CHD, but some introduction to the expected mechanisms linking infection to low grade inflammation in link to atherosclerosis is missing in the current version of the article, and I would have found it helpful to follow the reasoning of the authors.\n\n4. Also, could the authors comment on potentially pre-exisitng GWAS about infection (or seropositivity for F. nucleatum)? Their current numbers do not allow this investigation of course.\n",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bf089cad-841c-40b2-8154-724aea7c7553",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C1",
+      "claim": "Coronary heart disease (CHD) is one of the most pressing health problems of our time and a major cause of preventable death.",
+      "claim_type": "EXPLICIT",
+      "source": "Coronary heart disease (CHD) is one of the most pressing health problems of our time and a major cause of preventable death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about CHD that draws from established scientific consensus about the public health burden of CHD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "cc628e50-3a30-44e8-81a6-22e4087afdcc",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C2",
+      "claim": "CHD results from complex interactions between genetic and environmental factors.",
+      "claim_type": "EXPLICIT",
+      "source": "CHD results from complex interactions between genetic and environmental factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established scientific knowledge about the multifactorial etiology of CHD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "95126747-46bc-42f5-9d70-b0fc86748be9",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C3",
+      "claim": "The CoLaus|PsyCoLaus study is a longitudinal, population-based cohort with baseline assessments from 2003 through 2008 and follow-up visits every 5 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Study participants are enrolled in the CoLaus|PsyCoLaus study, a longitudinal, population-based cohort with baseline assessments from 2003 through 2008 and follow-up visits every 5 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and timing, which is factual information about the study itself.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "60ba1000-36a7-486f-94ff-ca64882ee55c",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C4",
+      "claim": "3459 individuals with available genome-wide genotyping data and immunoglobulin G levels for 22 persistent or frequently recurring pathogens were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed a subgroup of 3459 individuals with available genome-wide genotyping data and immunoglobulin G levels for 22 persistent or frequently recurring pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size and data types available for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "4b72893f-c9a4-4dda-bd56-740b60474707",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C5",
+      "claim": "210 out of 3459 study participants (6.07%) had at least one CHD event during the 12 years of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 3459 study participants, 210 (6.07%) had at least one CHD event during the 12 years of follow-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the observed CHD incidence in the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "5dfaeb42-545d-43cc-8a9f-359223c70f2d",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C6",
+      "claim": "High polygenic risk is independently associated with incident CHD with a hazard ratio of 1.31 (95% CI 1.10\u20131.56, p=2.64 \u00d7 10\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariable stepwise Cox regression analysis, adjusted for known cardiovascular risk factors, socioeconomic status, and statin intake, revealed that high polygenic risk (hazard ratio [HR] 1.31, 95% CI 1.10\u20131.56, p=2.64 \u00d7 10\u22123) and infection with Fusobacterium nucleatum (HR 1.63, 95% CI 1.08\u20132.45, p=1.99 \u00d7 10\u22122) were independently associated with incident CHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "a644e20e-2ab3-4ef4-82d0-2e46cb1441cf",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C7",
+      "claim": "Infection with Fusobacterium nucleatum is independently associated with incident CHD with a hazard ratio of 1.63 (95% CI 1.08\u20132.45, p=1.99 \u00d7 10\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariable stepwise Cox regression analysis, adjusted for known cardiovascular risk factors, socioeconomic status, and statin intake, revealed that high polygenic risk (hazard ratio [HR] 1.31, 95% CI 1.10\u20131.56, p=2.64 \u00d7 10\u22123) and infection with Fusobacterium nucleatum (HR 1.63, 95% CI 1.08\u20132.45, p=1.99 \u00d7 10\u22122) were independently associated with incident CHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "8d2bc3c4-6a62-491b-ae8a-94caffbe6d3a",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C8",
+      "claim": "An estimated 17.9 million people die from CVD each year, accounting for 32% of all deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "An estimated 17.9 million people die from CVD each year, accounting for 32% of all deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Roth et al., 2018 in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "eb86cacc-202e-4190-889a-600f8cbf39cc",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C9",
+      "claim": "Cardiovascular diseases (CVDs) are the leading cause of mortality worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Worldwide, cardiovascular diseases (CVDs) are the leading cause of mortality (Roth et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is directly supported by the citation to Roth et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "a2870634-8f32-4592-bdf8-f280fee5a383",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C10",
+      "claim": "CHD is the most common type of heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "CHD is the most common type of heart disease (Roth et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is directly supported by the citation to Roth et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "76d4c539-6ce4-4d61-a619-de5aa9c6b94f",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C11",
+      "claim": "CHD is caused by atherosclerosis, a build-up of plaque inside the walls of the arteries that supply blood to the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "It is caused by atherosclerosis, a build-up of plaque inside the walls of the arteries that supply blood to the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge about the pathophysiology of CHD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "0ee2698c-52f1-4348-a5fd-32486bf55085",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C12",
+      "claim": "CHD progresses over a long period of time and eventually evolves into symptoms such as chest pain (angina), tightness in the chest, breathing difficulties, and pain in the arms or shoulders.",
+      "claim_type": "EXPLICIT",
+      "source": "CHD progresses over a long period of time and eventually evolves into symptoms such as chest pain (angina), tightness in the chest, breathing difficulties, and pain in the arms or shoulders (Ambrose and Singh, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Ambrose and Singh, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "c081ebff-2694-4411-8933-43d603ca96ef",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C13",
+      "claim": "A complete blockage can cause a heart attack.",
+      "claim_type": "EXPLICIT",
+      "source": "A complete blockage can cause a heart attack.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge about the consequences of complete arterial blockage in CHD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "2df4a156-5b00-4f51-ae9f-f7fd3fe33222",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C14",
+      "claim": "A combination of demographic, environmental, and genetic factors contribute to the development of CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "A combination of demographic, environmental, and genetic factors contribute to the development of CHD (Khot et al., 2003; Mendis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Khot et al., 2003 and Mendis et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "94d9e34e-9d68-4f8c-8fc5-146627aa5abf",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C15",
+      "claim": "The main risk factors associated with the development of CHD are smoking, diabetes, hyperlipidemia, and hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "The main risk factors associated with the development of CHD \u2013 smoking, diabetes, hyperlipidemia, and hypertension \u2013 have been established by extensive epidemiological research (MacMahon et al., 1990; Stamler et al., 1993; Verschuren et al., 1995; Weintraub, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to epidemiological research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "11cacf76-763b-4756-b18e-dc6d1c10416d",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C16",
+      "claim": "Age is an important risk factor for CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Age is also an important risk factor for CHD (Castelli, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Castelli, 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "696b9aa7-82b8-4fcc-801c-59b30d46f9ab",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C17",
+      "claim": "The incidence of CHD is greater in males than in females.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the incidence of CHD is greater in males than in females (Castelli, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Castelli, 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "883f3d41-0ce7-42ee-9869-06a7b8c6c0b9",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C18",
+      "claim": "SCORE2 was developed to predict the 10-year risk of first-onset CVD in European populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Very recently, a new algorithm, named Systematic COronary Risk Evaluation 2 (SCORE2), was developed to predict the 10-year risk of first-onset CVD in European populations (SCORE2 working group and ESC Cardiovascular risk collaboration, 2021; SCORE2-OP working group and ESC Cardiovascular risk collaboration, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to the SCORE2 working group publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "602089bd-59ba-42a2-a9e1-1813d2f26090",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C19",
+      "claim": "SCORE2 has replaced the existing HeartScore scoring system.",
+      "claim_type": "EXPLICIT",
+      "source": "This score has replaced the existing HeartScore scoring system, and incorporates most of the risk factors mentioned above (Conroy et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Conroy et al., 2003 and the preceding SCORE2 citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "d0f9925e-9bac-48db-881b-4b2e36f1923c",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C20",
+      "claim": "The first familial risk model for CHD was described in 1938.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1938, the first familial risk model for CHD was described and later confirmed by clinical observations and large studies of twins and of longitudinal cohorts (M\u00fcller, 1938; Marenberg et al., 1994; Samani et al., 2007; Abraham et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to M\u00fcller, 1938.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "60e037a0-baad-4182-8c78-1d250afc57fc",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C21",
+      "claim": "The heritability of CHD has been estimated at 40\u201360%, even after controlling for known risk factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on whole-genome approaches, the heritability of CHD has been estimated at 40\u201360%, even after controlling for known risk factors (Vinkhuyzen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Vinkhuyzen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "9ac3fd96-50fa-4e4e-b47a-d72bdd82c7c3",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C22",
+      "claim": "Multiple clinical studies have identified inflammatory risk factors that are predictive of future cardiovascular events.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple clinical studies have identified inflammatory risk factors that are predictive of future cardiovascular events (Alfaddagh et al., 2020; Libby, 2006; Hansson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "0354b78d-1c98-4d6a-85c5-2b4ee95c67a1",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C23",
+      "claim": "Endothelial dysfunction and subintimal cholesterol trigger an inflammatory cascade, involving activated macrophages and leading to atherosclerotic lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial dysfunction and subintimal cholesterol have been shown to trigger an inflammatory cascade, involving activated macrophages and leading to atherosclerotic lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes established mechanisms of atherosclerosis development, drawing from scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "5b86d09c-8bbd-4fd4-8dd8-4cef0170f985",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C24",
+      "claim": "Inflammasome formation in macrophages plays an essential role in the propagation of inflammation through production of interleukin (IL)-1\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, inflammasome formation in macrophages plays, through their production of interleukin (IL)-1\u03b2, an essential role in the propagation of inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established molecular mechanisms of inflammation in atherosclerosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "2c7ae72f-248e-4337-bac3-80a9474b249c",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C25",
+      "claim": "CRP is an established biomarker of systemic inflammation and a possible predictor of future cardiovascular events.",
+      "claim_type": "EXPLICIT",
+      "source": "Today, CRP is an established biomarker of systemic inflammation and a possible predictor of future cardiovascular events (Libby, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Libby, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "8bc970d8-9832-4450-82c6-cd0c4f1578fe",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C26",
+      "claim": "Nearly 150 years ago, acute infection with Bacillus typhosus was found to cause sclerosing changes in the arterial wall.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly 150 years ago, acute infection with Bacillus typhosus was found to cause sclerosing changes in the arterial wall (Gilbert and Lion, 1889).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Gilbert and Lion, 1889.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "171e3a4f-b128-46fa-8d63-8f82f0294096",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C27",
+      "claim": "CHD-positive individuals show an increased likelihood of having elevated levels of antibodies to Chlamydia pneumoniae (C. pneumoniae).",
+      "claim_type": "EXPLICIT",
+      "source": "A century later, the interest for a potential role of infection in atherosclerosis was renewed, with the discovery that CHD-positive individuals show an increased likelihood of having elevated levels of antibodies to Chlamydia pneumoniae (C. pneumoniae) (Saikku et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Saikku et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "4d833e6f-e75d-433e-8522-7f94dbab16df",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C28",
+      "claim": "Several infectious agents, including Helicobacter pylori (H. pylori), hepatitis C virus (HCV), and human herpes viruses, have been associated with CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "This was followed by the discovery of the association with CHD of several other infectious agents, including bacteria and viruses, such as Helicobacter pylori (H. pylori), hepatitis C virus (HCV), and human herpes viruses (Adinolfi et al., 2018; Filardo et al., 2015; Wang et al., 2020; Zhang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "b0224e79-09ca-46eb-84f6-2ab104f20848",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C29",
+      "claim": "One proposed mechanism linking infection to atherosclerosis involves the production of pro-inflammatory molecules in response to an infection.",
+      "claim_type": "EXPLICIT",
+      "source": "One proposed mechanism involves the production of pro-inflammatory molecules in response to an infection (Campbell and Rosenfeld, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Campbell and Rosenfeld, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "ee82e947-5404-4fd2-b850-9c0bed6c6d8c",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C30",
+      "claim": "Pro-inflammatory molecules such as cytokines can increase the activity of cells involved in atherosclerosis, such as macrophages and smooth muscle cells, leading to the formation of plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "These molecules, such as cytokines, can increase the activity of cells involved in atherosclerosis, such as macrophages and smooth muscle cells, leading to the formation of plaques and other changes in the walls of arteries (Campbell and Rosenfeld, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Campbell and Rosenfeld, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "8ce26d66-d135-4592-9d84-bc8264f8ed3b",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C31",
+      "claim": "Another mechanism linking infection to atherosclerosis is characterized by the presence of infectious agents within the atherosclerotic plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "Another mechanism is related to the inflammation at the site of vessel wall. Specifically, it is characterized by the presence of the infectious agents within the atherosclerotic plaques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a proposed mechanism based on the presence of pathogens in plaques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "eeb3d7f4-8662-4bd7-b9d6-84d208508005",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C32",
+      "claim": "The infectious consequences on the atherosclerotic plaque can be accelerated progression or a final complication like thrombosis and plaque rupture.",
+      "claim_type": "EXPLICIT",
+      "source": "The infectious consequences on the atherosclerotic plaque can be accelerated progression or a final complication like thrombosis and plaque rupture (Pedicino et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Pedicino et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "659317c3-c98e-415e-8a19-009f5e1d5686",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C33",
+      "claim": "During the follow-up of 4500 days (12.3 years), at least one CHD event occurred in 210 individuals (6.07%).",
+      "claim_type": "EXPLICIT",
+      "source": "During the follow-up of 4500 days (12.3 years), at least one CHD event occurred in 210 individuals (6.07%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the observed CHD incidence in the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "8dc107e0-ed48-4d34-a58b-321f6305a7c3",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C34",
+      "claim": "The number of participants with one, two, and three coronary events was 140, 47, and 14, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of participants with one, two, and three coronary events was 140, 47, and 14, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the distribution of CHD events in the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "5e327522-b709-4188-a73e-31126047089c",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C35",
+      "claim": "Nine individuals had between four and eight coronary events.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine individuals had between four and eight coronary events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the number of individuals with multiple CHD events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "5fbce25c-dcb3-45c0-99a6-7290ed13ed24",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C36",
+      "claim": "Eligible study participants were on average 52.8 (standard deviation [SD] \u00b1 10.5) years of age at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Eligible study participants were on average 52.8 (standard deviation [SD] \u00b1 10.5) years of age at baseline, 54% were women and 25.5% were smokers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of baseline demographic characteristics of the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "15d53c5d-07a8-4de5-acbe-5a35caad9a3a",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C37",
+      "claim": "54% of eligible study participants were women.",
+      "claim_type": "EXPLICIT",
+      "source": "Eligible study participants were on average 52.8 (standard deviation [SD] \u00b1 10.5) years of age at baseline, 54% were women and 25.5% were smokers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of baseline demographic characteristics of the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "ba46d49b-190d-48c2-a939-0a1b20e9754b",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C38",
+      "claim": "25.5% of eligible study participants were smokers.",
+      "claim_type": "EXPLICIT",
+      "source": "Eligible study participants were on average 52.8 (standard deviation [SD] \u00b1 10.5) years of age at baseline, 54% were women and 25.5% were smokers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of baseline demographic characteristics of the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "4caa612d-669a-4e23-8479-1aba079fd168",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C39",
+      "claim": "The average body mass index (BMI) of study participants was 25.5 (\u00b14.3) kg/m2.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, their body mass index (BMI) was 25.5 (\u00b14.3) kg/m2, their systolic blood pressure was 129 (\u00b118) mmHg, and their HDL cholesterol level was 1.66 (\u00b10.43) mmol/L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of baseline clinical characteristics of the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "e0a60c9c-772b-422c-83da-ccd4739df69f",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C40",
+      "claim": "The average systolic blood pressure of study participants was 129 (\u00b118) mmHg.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, their body mass index (BMI) was 25.5 (\u00b14.3) kg/m2, their systolic blood pressure was 129 (\u00b118) mmHg, and their HDL cholesterol level was 1.66 (\u00b10.43) mmol/L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of baseline clinical characteristics of the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "fb6904ca-c2e5-4a36-8ebf-8b0a4d708da1",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C41",
+      "claim": "The average HDL cholesterol level of study participants was 1.66 (\u00b10.43) mmol/L.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, their body mass index (BMI) was 25.5 (\u00b14.3) kg/m2, their systolic blood pressure was 129 (\u00b118) mmHg, and their HDL cholesterol level was 1.66 (\u00b10.43) mmol/L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of baseline clinical characteristics of the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "f110c288-e45d-4718-ba1c-89cc4c495a4b",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C42",
+      "claim": "The overall seropositivity for the 22 pathogens tested ranged from 3.99% (S. gallolyticus) to 96.80% (EBV).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall seropositivity ranged from 3.99% (S. gallolyticus) to 96.80% (EBV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the serological findings in the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "b0ac42ef-fd3f-4c68-af6c-973d576df331",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C43",
+      "claim": "Rubella, C. tetani and C. diphteriae were excluded from further analyses as the antibodies detected against these pathogens were most likely induced by vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Rubella, C. tetani and C. diphteriae were excluded from further analyses as the antibodies detected against these pathogens were most likely induced by vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision based on the inference that antibodies to these pathogens are vaccine-induced.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "cc961cfd-d9e5-4161-b9ff-c721602ebc75",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C44",
+      "claim": "SCORE2 was significantly and positively associated with CHD (HR 1.72, 95% CI 1.61\u20131.85, p = 2.87\u00d710\u221261).",
+      "claim_type": "EXPLICIT",
+      "source": "To validate the utility of SCORE2 in our cohort, we tested its association with CHD. SCORE2 was significantly and positively associated with CHD (HR 1.72, 95% CI 1.61\u20131.85, p = 2.87\u00d710\u221261) (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "b995570d-904a-47b6-bd5a-497cd3141f05",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C45",
+      "claim": "There is a significant inverse association between average gross monthly income and CHD risk (HR 0.85, 95% CI 0.76\u20130.96, p = 7.27\u00d710\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a significant inverse association between average gross monthly income and CHD risk (HR 0.85, 95% CI 0.76\u20130.96, p = 7.27\u00d710\u22123).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "26400940-402d-4438-8c2b-2b968b7890a4",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C46",
+      "claim": "HSV-1 seropositivity is significantly positively associated with CHD (HR 1.88, 95% CI 1.30\u20132.68, p = 6.52\u00d710\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant positive associations for six of them, including three herpes viruses, namely HSV-1 (HR 1.88, 95% CI 1.30\u20132.68, p = 6.52\u00d710\u22124), HHV-6A (HR 1.39, 95% CI 1.03\u20131.86, p = 2.89\u00d710\u22122), and VZV (HR 1.70, 95% CI 1.02\u20132.82, p = 4.25\u00d710\u22122), one polyomavirus, HPyV6 (HR 1.66, 95% CI 1.06\u20132.61, p = 2.74\u00d710\u22122), and two bacteria, F. nucleatum (HR 1.66, 95% CI 1.20\u20132.29, p = 2.32\u00d710\u22123), and C. trachomatis (HR 1.45, 95% CI 1.11\u20131.91, p = 7.22\u00d710\u22123) (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "8aa5e57c-dbb3-4976-9b68-951ba379167c",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C47",
+      "claim": "HHV-6A seropositivity is significantly positively associated with CHD (HR 1.39, 95% CI 1.03\u20131.86, p = 2.89\u00d710\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant positive associations for six of them, including three herpes viruses, namely HSV-1 (HR 1.88, 95% CI 1.30\u20132.68, p = 6.52\u00d710\u22124), HHV-6A (HR 1.39, 95% CI 1.03\u20131.86, p = 2.89\u00d710\u22122), and VZV (HR 1.70, 95% CI 1.02\u20132.82, p = 4.25\u00d710\u22122), one polyomavirus, HPyV6 (HR 1.66, 95% CI 1.06\u20132.61, p = 2.74\u00d710\u22122), and two bacteria, F. nucleatum (HR 1.66, 95% CI 1.20\u20132.29, p = 2.32\u00d710\u22123), and C. trachomatis (HR 1.45, 95% CI 1.11\u20131.91, p = 7.22\u00d710\u22123) (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "c20c9eb1-59b5-4eb7-8eca-fe794cf2c727",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C48",
+      "claim": "VZV seropositivity is significantly positively associated with CHD (HR 1.70, 95% CI 1.02\u20132.82, p = 4.25\u00d710\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant positive associations for six of them, including three herpes viruses, namely HSV-1 (HR 1.88, 95% CI 1.30\u20132.68, p = 6.52\u00d710\u22124), HHV-6A (HR 1.39, 95% CI 1.03\u20131.86, p = 2.89\u00d710\u22122), and VZV (HR 1.70, 95% CI 1.02\u20132.82, p = 4.25\u00d710\u22122), one polyomavirus, HPyV6 (HR 1.66, 95% CI 1.06\u20132.61, p = 2.74\u00d710\u22122), and two bacteria, F. nucleatum (HR 1.66, 95% CI 1.20\u20132.29, p = 2.32\u00d710\u22123), and C. trachomatis (HR 1.45, 95% CI 1.11\u20131.91, p = 7.22\u00d710\u22123) (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "49946e53-750b-41ef-b625-9c70e853b236",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C49",
+      "claim": "HPyV6 seropositivity is significantly positively associated with CHD (HR 1.66, 95% CI 1.06\u20132.61, p = 2.74\u00d710\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant positive associations for six of them, including three herpes viruses, namely HSV-1 (HR 1.88, 95% CI 1.30\u20132.68, p = 6.52\u00d710\u22124), HHV-6A (HR 1.39, 95% CI 1.03\u20131.86, p = 2.89\u00d710\u22122), and VZV (HR 1.70, 95% CI 1.02\u20132.82, p = 4.25\u00d710\u22122), one polyomavirus, HPyV6 (HR 1.66, 95% CI 1.06\u20132.61, p = 2.74\u00d710\u22122), and two bacteria, F. nucleatum (HR 1.66, 95% CI 1.20\u20132.29, p = 2.32\u00d710\u22123), and C. trachomatis (HR 1.45, 95% CI 1.11\u20131.91, p = 7.22\u00d710\u22123) (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "7cd76133-5fea-48d0-bc47-bf44e16a8865",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C50",
+      "claim": "F. nucleatum seropositivity is significantly positively associated with CHD (HR 1.66, 95% CI 1.20\u20132.29, p = 2.32\u00d710\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant positive associations for six of them, including three herpes viruses, namely HSV-1 (HR 1.88, 95% CI 1.30\u20132.68, p = 6.52\u00d710\u22124), HHV-6A (HR 1.39, 95% CI 1.03\u20131.86, p = 2.89\u00d710\u22122), and VZV (HR 1.70, 95% CI 1.02\u20132.82, p = 4.25\u00d710\u22122), one polyomavirus, HPyV6 (HR 1.66, 95% CI 1.06\u20132.61, p = 2.74\u00d710\u22122), and two bacteria, F. nucleatum (HR 1.66, 95% CI 1.20\u20132.29, p = 2.32\u00d710\u22123), and C. trachomatis (HR 1.45, 95% CI 1.11\u20131.91, p = 7.22\u00d710\u22123) (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "1ba48cfb-4006-4c74-b812-a59678cdb9a5",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C51",
+      "claim": "C. trachomatis seropositivity is significantly positively associated with CHD (HR 1.45, 95% CI 1.11\u20131.91, p = 7.22\u00d710\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant positive associations for six of them, including three herpes viruses, namely HSV-1 (HR 1.88, 95% CI 1.30\u20132.68, p = 6.52\u00d710\u22124), HHV-6A (HR 1.39, 95% CI 1.03\u20131.86, p = 2.89\u00d710\u22122), and VZV (HR 1.70, 95% CI 1.02\u20132.82, p = 4.25\u00d710\u22122), one polyomavirus, HPyV6 (HR 1.66, 95% CI 1.06\u20132.61, p = 2.74\u00d710\u22122), and two bacteria, F. nucleatum (HR 1.66, 95% CI 1.20\u20132.29, p = 2.32\u00d710\u22123), and C. trachomatis (HR 1.45, 95% CI 1.11\u20131.91, p = 7.22\u00d710\u22123) (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "727ab163-5600-47eb-9d73-17d4a1516471",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C52",
+      "claim": "There is a positive relationship between individuals' hs-CRP levels and increased risk of CHD event (HR 1.91, 95% CI 1.42\u20132.55, p = 1.51\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a positive relationship between individuals' hs-CRP (HR 1.91, 95% CI 1.42\u20132.55, p = 1.51\u00d710\u22125) and TNF-\u03b1 (HR 1.43, 95% CI 1.05\u20131.96, p = 2.46\u00d710\u22122) levels, and increased risk of CHD event (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "45d6833b-77d5-4347-abc3-650f0a7d60c2",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C53",
+      "claim": "There is a positive relationship between individuals' TNF-\u03b1 levels and increased risk of CHD event (HR 1.43, 95% CI 1.05\u20131.96, p = 2.46\u00d710\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a positive relationship between individuals' hs-CRP (HR 1.91, 95% CI 1.42\u20132.55, p = 1.51\u00d710\u22125) and TNF-\u03b1 (HR 1.43, 95% CI 1.05\u20131.96, p = 2.46\u00d710\u22122) levels, and increased risk of CHD event (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "1ea090f7-5344-4823-a687-7098a9c86769",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C54",
+      "claim": "There is a significant association between the CHD-PRS and CHD (HR 1.32, 95% CI 1.16\u20131.51, p = 4.29\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a significant association between the PRS and CHD (HR 1.32, 95% CI 1.16\u20131.51, p = 4.29\u00d710\u22125), confirming that genetic predisposition to CHD can be captured through CHD-PRS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "d33b30b3-17b0-42b1-bd6c-3099f71af4c1",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C55",
+      "claim": "Genetic predisposition to CHD can be captured through CHD-PRS.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a significant association between the PRS and CHD (HR 1.32, 95% CI 1.16\u20131.51, p = 4.29\u00d710\u22125), confirming that genetic predisposition to CHD can be captured through CHD-PRS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed association between CHD-PRS and CHD.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "eb7cadab-dc7b-4bf9-87ca-eee370a3360b",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C56",
+      "claim": "The top three genetic principal components (PC1, PC2, and PC3) were not significantly associated with CHD.",
+      "claim_type": "EXPLICIT",
+      "source": "The top three genetic principal components (PC1, PC2, and PC3) were not significantly associated with CHD (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "4cdf5df4-56be-41fa-98e2-6b22f88b2ee3",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C57",
+      "claim": "No strong correlations exist between significant variables identified in univariable analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated pairwise correlations between all variables that were found to be significant in univariable analyses. Appendix 2\u2014figure 1 and Appendix 2\u2014figure 2 illustrate that no strong correlations exist between significant variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "bdf68590-95c6-40c0-b0bd-d8b1053d3074",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C58",
+      "claim": "The strongest correlation was observed between SCORE2 and hs-CRP, with a Pearson's coefficient of 0.22.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest correlation was observed between SCORE2 and hs-CRP, and between seropositivity to C. trachomatis and gross monthly household income, with Pearson's and Cramer's V coefficients of 0.22 and 0.15, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "84af7d4e-7b52-4163-8a04-853a448f75f1",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C59",
+      "claim": "The strongest correlation was observed between seropositivity to C. trachomatis and gross monthly household income, with a Cramer's V coefficient of 0.15.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest correlation was observed between SCORE2 and hs-CRP, and between seropositivity to C. trachomatis and gross monthly household income, with Pearson's and Cramer's V coefficients of 0.22 and 0.15, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "2ff07f2e-8abe-42fa-9be1-5398d91b98f1",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C60",
+      "claim": "All significant variables satisfied the proportional hazards assumption.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportionality assumption was tested for all significant variables using the Schoenfeld residuals. The residual tests indicated that all variables satisfied the proportional hazards assumption, revealing that the effect of all covariates are constant in time (Appendix 2\u2014figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the proportional hazards assumption testing performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "3f895a35-c830-4ca1-9615-ddd73edd721d",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C61",
+      "claim": "No variance inflation factor (VIF) value was indicative of co-linearity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also assessed potential co-linearity issues among predictors that could affect model fitting. No variance inflation factor (VIF) value was indicative of co-linearity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the co-linearity assessment performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "10f00630-737e-4492-8beb-ce8382a80c4a",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C62",
+      "claim": "SCORE2 is an independent prognostic factor of CHD (HR 1.96 per SD increase, 95% CI 1.74\u20132.22, p = 2.42\u00d710\u221227).",
+      "claim_type": "EXPLICIT",
+      "source": "The final multivariable analysis confirmed that SCORE2 (HR 1.96 per SD increase, 95% CI 1.74\u20132.22, p = 2.42\u00d710\u221227) is an independent prognostic factor of CHD (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the multivariable Cox regression analysis performed in the study, also shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "69b46cef-1bee-4760-8e84-2775da8eeca4",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C63",
+      "claim": "Statin intake is independently associated with CHD (HR 2.24, 95% CI 1.50\u20133.35, p = 9.17\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed significant independent associations for statin intake (HR 2.24, 95% CI 1.50\u20133.35, p = 9.17\u00d710\u22125) and for seropositivity to F. nucleatum infection (HR 1.63, 95% CI 1.08\u20132.45, p = 1.99\u00d710\u22122).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "9f51db9e-ff03-4ba5-976f-dc6690c7e4a6",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C64",
+      "claim": "Seropositivity to F. nucleatum infection is independently associated with CHD (HR 1.63, 95% CI 1.08\u20132.45, p = 1.99\u00d710\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed significant independent associations for statin intake (HR 2.24, 95% CI 1.50\u20133.35, p = 9.17\u00d710\u22125) and for seropositivity to F. nucleatum infection (HR 1.63, 95% CI 1.08\u20132.45, p = 1.99\u00d710\u22122).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "e19860b5-c881-436a-80cb-f6850f1265a7",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C65",
+      "claim": "22.4% (47/210) of individuals in the CHD group were seropositive to F. nucleatum, versus 14.6% (473/3249) in the control group (p = 0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing individuals who had a least one CHD event (CHD group) against those who had no event during the follow-up period (control group), 22.4% (47/210) of the individuals in the CHD group were seropositive to F. nucleatum, versus 14.6% (473/3249) in the control group (p = 0.003) (Figure 1, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison of F. nucleatum seropositivity between CHD cases and controls, shown in Figure 1 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "0ffbe26b-c37d-40a0-aa15-3deba3dbfe63",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C66",
+      "claim": "There is a significant association between CHD occurrence and elevated CHD-PRS with an HR of 1.31 (95% CI 1.10\u20131.56, p = 3.32\u00d710\u22123) per SD increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we also observed a significant association between CHD occurrence and elevated CHD-PRS with an HR of 1.31 (95% CI 1.10\u20131.56, p = 3.32\u00d710\u22123) per SD increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "89fe9052-d177-4ab4-8d1f-2384e60d4246",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C67",
+      "claim": "In the univariable Cox model, pathogen burden significantly increased the risk of CHD occurrence (HR 1.11, 95% CI 1.03\u20131.18, p = 3.25\u00d710\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "In the univariable Cox model, pathogen burden significantly increased the risk of CHD occurrence (HR 1.11, 95% CI 1.03\u20131.18, p = 3.25\u00d710\u22123) (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "84e8601b-2338-4da0-b874-10361d649f6a",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C68",
+      "claim": "After adjustment with multivariable Cox proportional hazards regression, pathogen burden did not meet the level of significance for staying in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after adjustment with multivariable Cox proportional hazards regression, pathogen burden did not meet the level of significance for staying in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "1481f7ea-2512-4f50-8a57-76a8ee519321",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C69",
+      "claim": "Chronic inflammation reflected in hs-CRP level did not appear as an independent predictor of CHD in the multivariable analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, chronic inflammation reflected in hs-CRP level did not appear as an independent predictor of CHD in our analyses, as the univariable association signal was suppressed after adjustment for SCORE2 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "b0496777-a4ce-4e3f-b4d5-3b092ef62c61",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C70",
+      "claim": "The univariable association signal between hs-CRP and CHD was suppressed after adjustment for SCORE2 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, chronic inflammation reflected in hs-CRP level did not appear as an independent predictor of CHD in our analyses, as the univariable association signal was suppressed after adjustment for SCORE2 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "c26de091-efd3-4b8d-8942-0716ac866f14",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C71",
+      "claim": "Participants with a higher CHD-PRS have a greater risk of CHD, even after adjustment for all known factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We studied the effect of human genetic determinants on CHD occurrence using PRS, and we reproduced previously observed effects: participants with a higher CHD-PRS have a greater risk of CHD, even after adjustment for all known factors (Ding et al., 2011; Kullo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariable Cox regression analysis performed in the study, supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "b0aa478a-ec44-4747-b631-22ddc5832937",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C72",
+      "claim": "The individual genetic background modulates CHD risk independently from age, sex, or co-morbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "This result confirms the existence of genetic susceptibility loci for CHD, and that the individual genetic background modulates CHD risk independently from age, sex, or co-morbidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed independent association between CHD-PRS and CHD after adjustment for other factors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "e1093087-d5ab-4a9b-abf3-8b54a1e58b7d",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C73",
+      "claim": "F. nucleatum is very prevalent in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an association of CHD with detection of antibodies against F. nucleatum. This pathogen is very prevalent in humans (Adams et al., 2004; Afra et al., 2013; Looker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "4e896736-87ba-4e6e-808d-5f4de659b470",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C74",
+      "claim": "F. nucleatum is an anaerobic bacterium that belongs to the normal flora of the oral cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "F. nucleatum is an anaerobic bacterium that belongs to the normal flora of the oral cavity and plays an important role in the development and progression of oral diseases, such as gingivitis (gum inflammation) and periodontitis (infection of the gums).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established microbiological knowledge about F. nucleatum.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "8c2c3c5a-8d8a-4f27-bcdc-59179ade231d",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C75",
+      "claim": "F. nucleatum plays an important role in the development and progression of oral diseases, such as gingivitis and periodontitis.",
+      "claim_type": "EXPLICIT",
+      "source": "F. nucleatum is an anaerobic bacterium that belongs to the normal flora of the oral cavity and plays an important role in the development and progression of oral diseases, such as gingivitis (gum inflammation) and periodontitis (infection of the gums).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established microbiological knowledge about F. nucleatum.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "ef986695-2a7a-438e-8a39-ac5ae824fdff",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C76",
+      "claim": "Under pathological conditions, F. nucleatum can spread by the hematogenous route to extra-oral systemic sites, including the gut and the female genital tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Under pathological conditions, the pathogen can spread by the hematogenous route to extra-oral systemic sites, including the gut and the female genital tract (Han and Wang, 2013; Han et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Han and Wang, 2013 and Han et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "03517d2c-0407-4260-a584-9f51801ad698",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C77",
+      "claim": "F. nucleatum has the capacity to directly migrate into arterial plaques, thus exacerbating atherosclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have also suggested the involvement of F. nucleatum in CVD. First, by its capacity to directly migrate into arterial plaques, thus exacerbating atherosclerosis, and more recently, through the association of periodontitis and CVD (Kholy et al., 2015; Elka\u00efm et al., 2008; Figuero et al., 2011; Ford et al., 2006; Han, 2015; Zardawi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "ce22dc8a-bb06-4c99-bbba-3c8142cd8019",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C78",
+      "claim": "There is an association between periodontitis and CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have also suggested the involvement of F. nucleatum in CVD. First, by its capacity to directly migrate into arterial plaques, thus exacerbating atherosclerosis, and more recently, through the association of periodontitis and CVD (Kholy et al., 2015; Elka\u00efm et al., 2008; Figuero et al., 2011; Ford et al., 2006; Han, 2015; Zardawi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "2cb4f64c-5b3b-42dc-8747-edb2b5c746d5",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C79",
+      "claim": "Periodontal pathogens are able to spread through the bloodstream from the buccal cavity to the arteries in patients with detectable coronary calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it has been shown that periodontal pathogens are able to spread through the bloodstream from the buccal cavity to the arteries in patients with detectable coronary calcium, a very specific marker of atherosclerosis (Corredor et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the citation to Corredor et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "78beb14a-e091-4f18-b626-8206fceadc21",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C80",
+      "claim": "The relationship between oral inflammations and CVD could be explained by the colonization of arterial walls and atherosclerosis plaques by dental bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the relationship between oral inflammations and CVD could be explained by the colonization of arterial walls and atherosclerosis plaques by dental bacteria, as well as by increased systemic inflammation due to oral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on inference from the cited studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "1278036c-b030-41d2-8661-be7477a00826",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C81",
+      "claim": "The relationship between oral inflammations and CVD could be explained by increased systemic inflammation due to oral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the relationship between oral inflammations and CVD could be explained by the colonization of arterial walls and atherosclerosis plaques by dental bacteria, as well as by increased systemic inflammation due to oral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on inference from the cited studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "46091a57-6fb6-4607-ab18-eb8c17293335",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C82",
+      "claim": "No direct causality has been established between F. nucleatum and CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to date, no direct causality has been established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge regarding F. nucleatum and CVD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "b29d65fd-3b7f-4a01-9923-0be46fd5eda6",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C83",
+      "claim": "No genome-wide association study on F. nucleatum has been published, neither on humoral immune response nor on susceptibility to infection/colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, no genome-wide association study on F. nucleatum has been published, neither on humoral immune response (i.e., IgG levels) nor on susceptibility to infection/colonization (i.e., serostatus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of published research on F. nucleatum.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "bdfd0f11-baa6-4226-ac6a-72341f2aadb3",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C84",
+      "claim": "HSV-1, HHV-6A, VZV, HPyV6, and C. trachomatis serologies were not significantly associated with CHD in the multivariable analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "HSV-1, HHV-6A, VZV, HPyV6, and C. trachomatis serologies, as well as total burden of infection, were associated with CHD occurrence in univariable models. However, these factors were not significantly associated in the multivariable analysis, suggesting that at least some of them could be indirect markers of socioeconomic status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the multivariable Cox regression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "40fb0493-0d88-4bc5-8423-fad18c4182cd",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C85",
+      "claim": "HSV-1, HHV-6A, VZV, HPyV6, and C. trachomatis could be indirect markers of socioeconomic status.",
+      "claim_type": "EXPLICIT",
+      "source": "HSV-1, HHV-6A, VZV, HPyV6, and C. trachomatis serologies, as well as total burden of infection, were associated with CHD occurrence in univariable models. However, these factors were not significantly associated in the multivariable analysis, suggesting that at least some of them could be indirect markers of socioeconomic status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the finding that these factors were not significant in multivariable analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "86efc0b6-093d-405c-8cae-54fa4b1c7850",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C86",
+      "claim": "The data do not support the existence of previously identified associations between CHD and H. pylori.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data do not support the existence of the previously identified associations between CHD and H. pylori, or CMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "cf90ff65-2cf7-4ae4-801c-8314659692e6",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C87",
+      "claim": "The data do not support the existence of previously identified associations between CHD and CMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data do not support the existence of the previously identified associations between CHD and H. pylori, or CMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "8b99c019-0149-4b27-894b-2f2fc3da92d9",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C88",
+      "claim": "The absence of data on individuals who dropped out before the end of the follow-up implies that some CHD events could have gone undetected.",
+      "claim_type": "EXPLICIT",
+      "source": "As is the case for most longitudinal studies, the absence of data on individuals who dropped out before the end of the follow-up implies that some CHD events could have gone undetected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a potential limitation of the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "e9d0a4c9-f00e-4995-89e6-fdbce054d281",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C89",
+      "claim": "The demographic information, as well as the clinical and laboratory measurements, were obtained at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the demographic information, as well as the clinical and laboratory measurements, were obtained at baseline, and we do not know whether participant information changed over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the timing of data collection in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "ea0023a3-7bd3-4645-9edf-ef97f1209b55",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C90",
+      "claim": "Adjustment for risk factors measured at baseline does not account for clinical or demographic changes that could influence CHD outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjustment for risk factors measured at baseline does not account for clinical or demographic changes that could influence CHD outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a potential limitation of the analytical approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "79b0288e-1c0e-470c-83d7-25d50aa1ee1e",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C91",
+      "claim": "It is not known how the antibody responses against the various antigens evolved over the 12 years of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we do not know how the antibody responses against the various antigens evolved over the 12 years of the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study design regarding serological measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "07280afe-c706-4b59-9a46-661cd0ea6c08",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C92",
+      "claim": "No significance adjustment was performed when using multiple univariable tests to determine the effect of single factors on CHD risk.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, no significance adjustment was performed when using multiple univariable tests to determine the effect of single factors on CHD risk, although this may increase the false positive rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice in the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "62d49368-6d6d-49e4-a442-7f441bbf7908",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C93",
+      "claim": "Not performing significance adjustment when using multiple univariable tests may increase the false positive rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, no significance adjustment was performed when using multiple univariable tests to determine the effect of single factors on CHD risk, although this may increase the false positive rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential consequence of not performing multiple testing correction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "173226fa-d9c9-45e3-a6b8-cafc8c07f260",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C94",
+      "claim": "The study was unable to replicate previously published observations of associations of CHD with C. pneumoniae and HCV as serologies for these pathogens were not available.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we were unable to replicate previously published observations of associations of CHD with C. pneumoniae and HCV as serologies for these pathogens were not available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study regarding available serological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "87dee284-aa8e-43db-9fcd-636a0db11c4c",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C95",
+      "claim": "The identified association with F. nucleatum needs to be replicated and validated in independent cohorts and different populations.",
+      "claim_type": "EXPLICIT",
+      "source": "From a more practical point of view, the identified association with F. nucleatum needs to be replicated and validated in independent cohorts and different populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future research to validate the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "f3f8eaf8-d2d0-4452-99b4-63a5eec24138",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C96",
+      "claim": "The clinical utility of including genetic and infection biomarkers in CHD prediction algorithms will need to be demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the clinical utility of including genetic and infection biomarkers in CHD prediction algorithms will need to be demonstrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future research to demonstrate clinical utility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "509fddb0-9ab5-44b2-a87e-4352855d9918",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C97",
+      "claim": "The CoLaus|PsyCoLaus study is a longitudinal population-based study initiated in Lausanne in 2003.",
+      "claim_type": "EXPLICIT",
+      "source": "The CoLaus|PsyCoLaus study is a longitudinal population-based study initiated in Lausanne in 2003; it mainly investigates the biological, environmental, and genetic determinants of CVD (https://www.colaus-psycolaus.ch/) (Firmann et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and is supported by the citation to Firmann et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "14fe4526-0298-4f64-a879-5ace55953518",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C98",
+      "claim": "The CoLaus|PsyCoLaus study mainly investigates the biological, environmental, and genetic determinants of CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "The CoLaus|PsyCoLaus study is a longitudinal population-based study initiated in Lausanne in 2003; it mainly investigates the biological, environmental, and genetic determinants of CVD (https://www.colaus-psycolaus.ch/) (Firmann et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study objectives and is supported by the citation to Firmann et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "57e8b07c-064d-4af4-ba0d-b45e055abe05",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C99",
+      "claim": "The CoLaus|PsyCoLaus study involves over 6500 participants of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "The study involves over 6500 participants of European ancestry, who were recruited at random from the general population and represent approximately 10% sample of Lausanne citizens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "4c167fd5-3f51-416c-9226-0d8c39a0f885",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C100",
+      "claim": "CoLaus|PsyCoLaus participants were recruited at random from the general population and represent approximately 10% sample of Lausanne citizens.",
+      "claim_type": "EXPLICIT",
+      "source": "The study involves over 6500 participants of European ancestry, who were recruited at random from the general population and represent approximately 10% sample of Lausanne citizens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study sampling method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "d957e8b3-4cc9-4d9b-b0b2-4c0532f71d81",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C101",
+      "claim": "47.5% of CoLaus|PsyCoLaus participants are men.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the participants, 47.5% are men, and age at enrolment ranged from 35 to 75 years (mean \u00b1 SD: 51 \u00b1 10.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the demographic characteristics of the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "8d5bea4a-0c0f-4255-afb5-141f15296ac5",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C102",
+      "claim": "Age at enrolment in CoLaus|PsyCoLaus ranged from 35 to 75 years (mean \u00b1 SD: 51 \u00b1 10.9).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the participants, 47.5% are men, and age at enrolment ranged from 35 to 75 years (mean \u00b1 SD: 51 \u00b1 10.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the demographic characteristics of the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "417dd555-9a8b-4338-8c42-1b5c23f06537",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C103",
+      "claim": "CoLaus|PsyCoLaus study participants provided detailed phenotypic information through questionnaires, interviews, clinical and biological data.",
+      "claim_type": "EXPLICIT",
+      "source": "The study participants provided detailed phenotypic information through questionnaires, interviews, clinical and biological data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the types of data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "b7aca793-f8d4-4ba5-bce0-51929e82145b",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C104",
+      "claim": "Nuclear DNA was extracted from the blood for whole-genome genotyping data in CoLaus|PsyCoLaus.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear deoxyribonucleic acid (DNA) was also extracted from the blood for whole-genome genotyping data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genetic data collection in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "3048618f-7449-4bd7-b49f-1fad9902622a",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C105",
+      "claim": "Every 5 years, follow-up interviews on the participants' lifestyle and health status are conducted in CoLaus|PsyCoLaus.",
+      "claim_type": "EXPLICIT",
+      "source": "Every 5 years, follow-up interviews on the participants' lifestyle and health status are conducted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the follow-up schedule of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "692b760d-afed-4580-8e37-8ba17ec235d5",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C106",
+      "claim": "There are three completed follow-ups in CoLaus|PsyCoLaus and a fourth follow-up began in January 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three completed follow-ups and a fourth follow-up began in January 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the current status of the study follow-ups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "a85546bf-5985-484d-92aa-b604db885766",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C107",
+      "claim": "The institutional Ethics Committee of the University of Lausanne approved the CoLaus|PsyCoLaus study (reference 16/03, decisions of January 13 and February 10, 2003).",
+      "claim_type": "EXPLICIT",
+      "source": "The institutional Ethics Committee of the University of Lausanne, which later became the Ethics Commission of the Canton Vaud (https://www.cer-vd.ch/), approved the CoLaus|PsyCoLaus study (reference 16/03, decisions of January 13 and February 10, 2003), and all participants gave written consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "ab84d53b-3d4e-4f85-9fbd-b8a33e039a79",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C108",
+      "claim": "All CoLaus|PsyCoLaus participants gave written consent.",
+      "claim_type": "EXPLICIT",
+      "source": "The institutional Ethics Committee of the University of Lausanne, which later became the Ethics Commission of the Canton Vaud (https://www.cer-vd.ch/), approved the CoLaus|PsyCoLaus study (reference 16/03, decisions of January 13 and February 10, 2003), and all participants gave written consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the informed consent process for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "95ebb04e-818f-42f5-8db0-d4017fb3fd9a",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C109",
+      "claim": "The medical records of participants who reported a CHD event during their lifetime were collected and evaluated by an independent panel of specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "The medical records of the participants who reported a CHD event during their lifetime were collected and evaluated by an independent panel of specialists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for CHD event ascertainment in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "cfe58391-1cd3-44d7-852d-266a3ad0734e",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C110",
+      "claim": "Information on the cause of death was collected prospectively during the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "Information on the cause of death was also collected prospectively during the study period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for mortality data collection in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "2d88aa0c-c730-46ad-af05-0fa2f604a56d",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C111",
+      "claim": "Only first events occurring after the baseline and up to day 4500 after the baseline were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Only first events occurring after the baseline and up to day 4500 after the baseline were included in the analysis, as only during this period were all participants reliably followed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inclusion criteria for CHD events in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "0ba47913-e198-4e18-a616-a5ec68b97e9b",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C112",
+      "claim": "The BB2 GSK-customized Affymetrix Axiom Biobank array was used to genotype DNA samples from 5399 participants at approximately 800,000 single nucleotide polymorphisms (SNPs).",
+      "claim_type": "EXPLICIT",
+      "source": "The BB2 GSK-customized Affymetrix Axiom Biobank array was used to genotype DNA samples from 5399 participants at approximately 800,000 single nucleotide polymorphisms (SNPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genotyping method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "625638bd-cd7b-43ee-8911-c1fd95b796a2",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C113",
+      "claim": "After genotype imputation and quality control procedures, approximately 9 million SNPs were available for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "After genotype imputation and quality control procedures, approximately 9 million SNPs were available for analysis (Hodel et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genotyping data processing and is supported by the citation to Hodel et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "58f0eb78-6fb9-44ee-9801-acda5cc0f9cf",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C114",
+      "claim": "Validated PRS from Inouye et al., available in the polygenic score catalog, were used to calculate CHD-PRS.",
+      "claim_type": "EXPLICIT",
+      "source": "We used validated PRS from Inouye et al., available in the polygenic score catalog (Inouye et al., 2018; Lambert et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the PRS used in the study and is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "2594a2fe-1eca-4437-a8a3-a0699a6d8ac5",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C115",
+      "claim": "The clumping and thresholding method of the PRSice-2 v2.2.7 software was used to construct the CHD-PRS.",
+      "claim_type": "EXPLICIT",
+      "source": "These scores and summary statistics were used to construct the CHD-PRS in our target cohort data by using the clumping and thresholding method of the PRSice-2 v2.2.7 software (Choi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for PRS calculation and is supported by the citation to Choi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "9473c11a-ddf8-40f2-a1d3-0436a7784037",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C116",
+      "claim": "SNPs were clumped according to linkage disequilibrium (r2 < 0.1) within a 250 kb window.",
+      "claim_type": "EXPLICIT",
+      "source": "SNPs were clumped according to linkage disequilibrium (r2 < 0.1) within a 250 kb window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameters used for SNP clumping in PRS calculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "7f31d1cd-f2c7-4180-b3fe-f62000f1f4bb",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C117",
+      "claim": "SCORE2 and SCORE2-OP algorithms were used to assess the risk of CHD for each participant.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk of CHD for each participant was also assessed using the very recent SCORE2 and SCORE2-Older Persons (SCORE2-OP, for individuals >65 years of age) algorithms (SCORE2-OP working group and ESC Cardiovascular risk collaboration, 2021; SCORE2 working group and ESC Cardiovascular risk collaboration, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for CHD risk assessment and is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "4cfab776-1770-4ed1-9543-b3278d64d93f",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C118",
+      "claim": "SCORE2 was derived, calibrated, and validated to predict the 10-year risk of first-onset CVD using data from 13 million individuals from >50 European prospective studies and national registries.",
+      "claim_type": "EXPLICIT",
+      "source": "SCORE2 was derived, calibrated, and validated to predict the 10-year risk of first-onset CVD using data from 13 million individuals from >50 European prospective studies and national registries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the development of the SCORE2 algorithm, drawing from the cited publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "2a362194-0f6d-4e9e-a4b9-47c955a773a2",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C119",
+      "claim": "SCORE2 uses competing risk-adjusted and age- and sex-specific models including age, current smoking, systolic blood pressure, and total, LDL, and HDL cholesterol.",
+      "claim_type": "EXPLICIT",
+      "source": "To develop this algorithm, the authors used competing risk-adjusted and age- and sex-specific models including age, current smoking, systolic blood pressure, and total, low-density lipoprotein (LDL), and high-density lipoprotein (HDL) cholesterol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the variables included in the SCORE2 algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "73fd87c9-8542-430d-b333-2a43a579305c",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C120",
+      "claim": "Four risk regions in Europe were defined on the basis of country-specific CVD mortality for SCORE2.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors also defined four risk regions in Europe on the basis of country-specific CVD mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the risk stratification approach in SCORE2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "64d554e3-4cc4-4c11-b26b-6ae26eddc389",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C121",
+      "claim": "For CoLaus|PsyCoLaus participants, SCORE2 calculations were based on the low-risk region corresponding to Switzerland.",
+      "claim_type": "EXPLICIT",
+      "source": "For CoLaus|PsyCoLaus participants, calculations were based on the low-risk region corresponding to Switzerland.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific SCORE2 risk region used for the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "a7ce714f-af6d-4e42-8a12-871a4eae9abe",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C122",
+      "claim": "Venous blood samples (50 mL) of the participants were drawn in a fasted state.",
+      "claim_type": "EXPLICIT",
+      "source": "Venous blood samples (50 mL) of the participants, in a fasted state, were drawn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the blood sample collection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "c5c4de6b-fe97-43bd-b2d7-8a79bfccad01",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C123",
+      "claim": "Before cytokine assessment, the serum blood samples were stored at \u221280\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Before cytokine assessment, the serum blood samples were stored at \u221280\u00b0C, then they were sent to the laboratory on dry ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample storage procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "a4e789ec-fb18-4665-8049-494ab8e68660",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C124",
+      "claim": "hs-CRP levels were assessed by immunoassay and latex HS (IMMULITE 1000-High, Diagnostic Products Corporation, Los Angeles, CA, USA).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, hs-CRP levels were assessed by immunoassay and latex HS (IMMULITE 1000-High, Diagnostic Products Corporation, Los Angeles, CA, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for hs-CRP measurement and is supported by the citation to Marques-Vidal et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "0285f20a-ac42-4dff-9004-7aa21ca9bd35",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C125",
+      "claim": "Cytokine levels were measured using a multiplexed particle-based flow cytometric cytokine assay on the flow cytometer (FC500 MPL, BeckmanCoulter, Nyon, Switzerland).",
+      "claim_type": "EXPLICIT",
+      "source": "Cytokine levels were measured using a multiplexed particle-based flow cytometric cytokine assay on the flow cytometer (FC500 MPL, BeckmanCoulter, Nyon, Switzerland), thus following the manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for cytokine measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "33046ea5-a44a-416c-b2ca-9adeeba2a12b",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C126",
+      "claim": "The lower limits of detection for IL-1\u03b2, IL-6, and TNF-\u03b1 were 0.2 pg/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower limits of detection for IL-1\u03b2, IL-6, and TNF-\u03b1 were 0.2 pg/mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assay sensitivity for cytokine measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "7319f7a4-3144-4849-8a53-1dbde99fca42",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C127",
+      "claim": "Intra- and inter-assay coefficients of variation were, respectively, 15% and 16.7% for IL-1\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Intra- and inter-assay coefficients of variation were, respectively, 15% and 16.7% for IL-1\u03b2, 16.9% and 16.1% for IL-6, and 12.5% and 13.5% for TNF-\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assay precision for cytokine measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "65524dcd-17c3-45e1-9a11-1fdb3be6dec6",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C128",
+      "claim": "Intra- and inter-assay coefficients of variation were, respectively, 16.9% and 16.1% for IL-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Intra- and inter-assay coefficients of variation were, respectively, 15% and 16.7% for IL-1\u03b2, 16.9% and 16.1% for IL-6, and 12.5% and 13.5% for TNF-\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assay precision for cytokine measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "40843f11-dab7-4c88-9b80-25863178ec33",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C129",
+      "claim": "Intra- and inter-assay coefficients of variation were, respectively, 12.5% and 13.5% for TNF-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Intra- and inter-assay coefficients of variation were, respectively, 15% and 16.7% for IL-1\u03b2, 16.9% and 16.1% for IL-6, and 12.5% and 13.5% for TNF-\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assay precision for cytokine measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "e1584c25-518c-4044-82e8-d712b9933086",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C130",
+      "claim": "Individuals with hs-CRP levels above 20 mg/L were removed from the hs-CRP analyses as indicative of acute inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with hs-CRP levels above 20 mg/L were assigned a value of 20 by the manufacturer therefore were removed from the hs-CRP analyses as indicative of acute inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria for hs-CRP analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "939c333f-677c-4cd8-88b9-32ab6644fbb3",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C131",
+      "claim": "Serum samples were analyzed by the Infections and Cancer Epidemiology Division at the German Cancer Research Center (DKFZ) in Heidelberg to assess humoral responses to 38 antigens derived from 22 persistent infectious agents.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the humoral responses to a total of 38 antigens derived from 22 persistent infectious agents, serum samples were analyzed by the Infections and Cancer Epidemiology Division at the German Cancer Research Center (Deutsches Krebsforschungszentrum [DKFZ]) in Heidelberg (Waterboer et al., 2005; Waterboer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the serological analysis method and is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "9c6f9481-63a3-4a81-a200-5fd2edaf8ce0",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C132",
+      "claim": "The seroreactivity was measured at a serum dilution of 1:1000 by using multiplex serology based on glutathione S-transferase fusion capture immunosorbent assays combined with fluorescent bead technology.",
+      "claim_type": "EXPLICIT",
+      "source": "The seroreactivity was measured at a serum dilution of 1:1000 by using multiplex serology based on glutathione S-transferase fusion capture immunosorbent assays combined with fluorescent bead technology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the serological assay method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "0c37ba40-eaad-4019-953e-eb93a3ead318",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C133",
+      "claim": "For each infectious agent tested, the antibody responses were measured for one to six antigens and then expressed as a binary result (IgG positive or negative), based on predefined median fluorescence intensity thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "For each infectious agent tested, the antibody responses were measured for one to six antigens and then expressed as a binary result (IgG positive or negative), based on the predefined median fluorescence intensity thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for determining seropositivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "4f5822ab-1196-44e9-8d89-b2b209db7332",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C134",
+      "claim": "Univariable and multivariable Cox proportional hazard models were used to explore the relationship between risk factors and CHD incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Univariable and multivariable Cox proportional hazard models were used to explore the relationship between risk factors and CHD incidence in the CoLaus|PsyCoLaus study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "b9da6ee0-1295-4d27-9b58-13073763da2d",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C135",
+      "claim": "The proportional hazards assumption of significant covariates was examined using the scaled Schoenfeld residuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We then examined the proportional hazards assumption of the significant (p < 0.05) covariates by using the scaled Schoenfeld residuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method for testing the proportional hazards assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "9074bc26-f92e-4553-b59e-befd55a310db",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C136",
+      "claim": "Potential multicollinearity between statistically significant factors was identified using variance inflation factors (VIFs).",
+      "claim_type": "EXPLICIT",
+      "source": "Potential multicollinearity between statistically significant factors (p < 0.05) were identified using VIFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method for assessing multicollinearity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "b9bd9c39-a3c3-4a6a-9981-008dd71eec78",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C137",
+      "claim": "The existence of multicollinearity between co-variates was determined by a VIF value > 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of multicollinearity between co-variates was determined by a VIF value > 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the threshold used for determining multicollinearity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "0d54f4fa-57bd-4625-bfa7-945bfbf63ba6",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "claim_id": "C138",
+      "claim": "All statistical analyses were performed using R (version 4.2.1).",
+      "claim_type": "EXPLICIT",
+      "source": "We performed all statistical analyses using R (version 4.2.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software used for statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d589506e-ee49-4705-bff2-1988d2adc22a",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The CoLaus|PsyCoLaus study is a longitudinal, population-based cohort initiated in 2003 in Lausanne, Switzerland, involving over 6500 participants of European ancestry with baseline assessments and follow-up visits every 5 years. A subgroup of 3459 individuals with available genome-wide genotyping data and immunoglobulin G levels for 22 persistent or frequently recurring pathogens were analyzed. During 12 years of follow-up, 210 participants (6.07%) experienced at least one CHD event.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C33-C41, and C97-C108 collectively describe the study design, population characteristics, and CHD incidence. These are straightforward descriptive claims about the cohort that are internally consistent and well-documented. The study design is appropriate for investigating longitudinal associations with CHD.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "dca60836-ce5b-4489-a460-3fbd89306df1",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Seropositivity for 22 pathogens ranged from 3.99% (S. gallolyticus) to 96.80% (EBV). Rubella, C. tetani, and C. diphteriae were excluded from analyses as antibodies were likely vaccine-induced. F. nucleatum seropositivity was significantly higher in CHD cases (22.4%) compared to controls (14.6%, p=0.003).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C43, and C65 describe serological findings that are directly reported from the data. The exclusion of vaccine-related pathogens (C43) is methodologically sound. The difference in F. nucleatum seropositivity between cases and controls (C65) is statistically significant and supported by Figure 1 and Table 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "02a4cb2a-16ae-4626-af9c-266209e2a721",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In univariable analysis, SCORE2 was significantly associated with CHD (HR 1.72, 95% CI 1.61-1.85, p=2.87\u00d710\u207b\u2076\u00b9), validating its utility in this cohort. Average gross monthly income showed a significant inverse association with CHD risk (HR 0.85, 95% CI 0.76-0.96, p=7.27\u00d710\u207b\u00b3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C45 report univariable associations that validate the SCORE2 algorithm and identify socioeconomic factors. The extremely small p-value for SCORE2 is consistent with its established predictive value. The inverse association with income is biologically plausible and statistically significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "dee5e1f6-822d-4d07-ae01-43ba7acb078a",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In univariable analysis, seropositivity to six pathogens was significantly associated with CHD: HSV-1 (HR 1.88, p=6.52\u00d710\u207b\u2074), HHV-6A (HR 1.39, p=2.89\u00d710\u207b\u00b2), VZV (HR 1.70, p=4.25\u00d710\u207b\u00b2), HPyV6 (HR 1.66, p=2.74\u00d710\u207b\u00b2), F. nucleatum (HR 1.66, p=2.32\u00d710\u207b\u00b3), and C. trachomatis (HR 1.45, p=7.22\u00d710\u207b\u00b3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46-C51 report univariable associations between pathogen seropositivity and CHD. However, the authors acknowledge that no multiple testing correction was performed (C92-C93), which may inflate the false positive rate. Without correction, the significance of these associations, particularly those with marginal p-values (e.g., VZV, HPyV6), is uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "a843c887-5120-4628-b27e-e9c6f2a2c730",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In univariable analysis, elevated hs-CRP (HR 1.91, 95% CI 1.42-2.55, p=1.51\u00d710\u207b\u2075) and TNF-\u03b1 (HR 1.43, 95% CI 1.05-1.96, p=2.46\u00d710\u207b\u00b2) levels were positively associated with increased CHD risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C53 report univariable associations between inflammatory biomarkers and CHD that are consistent with established knowledge about inflammation in cardiovascular disease. The effect sizes and confidence intervals are reasonable, though these associations did not remain significant in multivariable analysis (C69-C70).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "31707e82-5f47-44cb-99aa-ced5a53e094c",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CHD-PRS showed a significant association with CHD in univariable analysis (HR 1.32, 95% CI 1.16-1.51, p=4.29\u00d710\u207b\u2075), confirming that genetic predisposition to CHD can be captured through polygenic risk scores. The top three genetic principal components were not significantly associated with CHD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 demonstrate that the CHD-PRS captures genetic risk while population structure (PCs) does not confound the association. This is methodologically sound and consistent with prior literature. The lack of PC association (C56) supports the validity of the genetic findings in this European ancestry cohort.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "4b32c1af-5910-4fc6-a52f-2a1b2e3f1232",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Correlation analysis showed no strong correlations between significant variables from univariable analyses. The strongest correlations were between SCORE2 and hs-CRP (Pearson's r=0.22) and between C. trachomatis seropositivity and income (Cramer's V=0.15). All significant variables satisfied the proportional hazards assumption, and no variance inflation factors indicated collinearity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 describe appropriate statistical checks for Cox regression assumptions. The weak correlations (C57-C59) support the independence of predictors. The proportional hazards assumption (C60) and absence of collinearity (C61) validate the appropriateness of the Cox modeling approach. These are well-documented in the supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "acfd70b9-96e2-4053-a2e6-fea9752e34e1",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multivariable stepwise Cox regression analysis, adjusted for known cardiovascular risk factors, socioeconomic status, and statin intake, identified four independent predictors of incident CHD: SCORE2 (HR 1.96 per SD, 95% CI 1.74-2.22, p=2.42\u00d710\u207b\u00b2\u2077), statin intake (HR 2.24, 95% CI 1.50-3.35, p=9.17\u00d710\u207b\u2075), F. nucleatum seropositivity (HR 1.63, 95% CI 1.08-2.45, p=1.99\u00d710\u207b\u00b2), and elevated CHD-PRS (HR 1.31 per SD, 95% CI 1.10-1.56, p=3.32\u00d710\u207b\u00b3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 and C66 report the main findings from multivariable analysis shown in Figure 2. SCORE2 and CHD-PRS associations are well-established. The statin association likely reflects confounding by indication (patients at higher risk receive statins). The F. nucleatum association (C64) is novel and statistically significant after adjustment, though the lower confidence interval is close to 1.0, suggesting modest effect size.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "ea3765fd-3c51-4f7c-a41d-2d1efa24f9da",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "High polygenic risk (HR 1.31, 95% CI 1.10-1.56, p=2.64\u00d710\u207b\u00b3) and infection with F. nucleatum (HR 1.63, 95% CI 1.08-2.45, p=1.99\u00d710\u207b\u00b2) were independently associated with incident CHD after adjustment for known cardiovascular risk factors, socioeconomic status, and statin intake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 represent the primary findings of the study, confirmed by multivariable analysis (C62-C66). The polygenic risk association replicates prior findings. The F. nucleatum association is novel but has a confidence interval lower bound close to 1.0, indicating modest effect size. Both associations are independent of established risk factors, supporting their validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "052f9c75-b7fd-4ea0-84db-8a301194972f",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Pathogen burden (total number of seropositive pathogens) significantly increased CHD risk in univariable analysis (HR 1.11, 95% CI 1.03-1.18, p=3.25\u00d710\u207b\u00b3) but did not remain significant in multivariable analysis after adjustment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C68 show that overall pathogen burden does not independently predict CHD when accounting for other factors. This suggests that the univariable association may be confounded by socioeconomic status or other factors, or that specific pathogens (like F. nucleatum) drive the association rather than cumulative burden.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "e3b89fbb-3eb5-4dae-aec2-5bd2eec8ab61",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Chronic inflammation reflected in hs-CRP level did not appear as an independent predictor of CHD in multivariable analysis, as the univariable association signal was suppressed after adjustment for SCORE2 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C70 indicate that hs-CRP does not add independent predictive value beyond SCORE2. This is plausible since SCORE2 incorporates multiple cardiovascular risk factors that may mediate the relationship between inflammation and CHD. The suppression of the hs-CRP signal suggests it may be a marker rather than an independent risk factor in this context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "75656e37-5906-4def-976f-176c2144c202",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Participants with higher CHD-PRS have greater CHD risk even after adjustment for all known factors, confirming that individual genetic background modulates CHD risk independently from age, sex, or comorbidities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71 and C72 are supported by the multivariable analysis (C66) and consistent with prior studies (citations to Ding et al., 2011; Kullo et al., 2016). The independent association of CHD-PRS after comprehensive adjustment demonstrates that genetic factors contribute to CHD risk beyond traditional risk factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "34c5f89e-cda1-4e51-927d-26879e7f8bac",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "HSV-1, HHV-6A, VZV, HPyV6, and C. trachomatis serologies were associated with CHD in univariable models but not in multivariable analysis, suggesting they could be indirect markers of socioeconomic status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C84 is supported by the data showing loss of significance in multivariable analysis. However, claim C85 is speculative\u2014the authors suggest these may be markers of socioeconomic status, but this is not directly tested. Alternative explanations (confounding by other factors, insufficient power, or true lack of independent association) are not ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "81820be6-1ce4-427e-a95c-27bbf2a145e5",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The data do not support previously identified associations between CHD and H. pylori or CMV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86 and C87 report null findings for H. pylori and CMV, which contradicts some prior literature. The authors acknowledge this discrepancy may be due to sample size or other factors. The null findings are clearly stated and appropriately interpreted with caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "2c657ef4-af00-4c7d-95b8-60c5a2f1f919",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study has several limitations: potential undetected CHD events due to dropout, baseline-only measurements of risk factors and antibody responses, lack of multiple testing correction in univariable analyses (which may increase false positive rate), and unavailability of serologies for C. pneumoniae and HCV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C94 appropriately acknowledge study limitations. The lack of multiple testing correction (C92-C93) is particularly important and may affect the interpretation of univariable associations. The baseline-only measurements (C89-C91) limit the ability to assess temporal relationships. These are honest assessments of methodological constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "deb77e76-5495-42fa-bb60-7358f5b7ae8a",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The F. nucleatum association needs replication in independent cohorts and different populations, and the clinical utility of including genetic and infection biomarkers in CHD prediction algorithms needs to be demonstrated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95 and C96 appropriately call for validation studies and clinical utility assessment. These are standard requirements for translating observational associations into clinical practice. The modest effect size of F. nucleatum (HR 1.63) and the need for external validation are correctly emphasized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "b3ae21e0-710c-48b4-8925-6b72a896e703",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "F. nucleatum is a prevalent anaerobic bacterium in the oral cavity that plays a role in periodontal diseases and can spread hematogenously to extra-oral sites. Studies suggest its involvement in CVD through direct migration into arterial plaques and association with periodontitis, though no direct causality has been established and no GWAS on F. nucleatum immune response or susceptibility has been published.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C83 provide biological context for F. nucleatum supported by multiple citations. The authors appropriately note that causality has not been established (C82) and that genetic studies are lacking (C83). This contextualizes the novel association found in the study while acknowledging mechanistic uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    },
+    {
+      "id": "d21c1ece-f203-4c8c-9695-b574b1870f1b",
+      "content_id": "cd2a0b28-4cd5-4a6b-89d4-10b1d8b6c58e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study employed rigorous methods including independent panel evaluation of CHD events, genome-wide genotyping with ~9 million SNPs after imputation, validated CHD-PRS calculation using PRSice-2, SCORE2 risk assessment, multiplex serology for 38 antigens from 22 pathogens, measurement of inflammatory biomarkers, and appropriate statistical analyses using Cox proportional hazards models with assumption testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C138 describe comprehensive and appropriate methodological approaches. The use of validated tools (SCORE2, established PRS), standardized serological assays, and proper statistical methods (Cox regression with assumption testing) supports the validity of the findings. The methods are well-documented and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:08:09.248291Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "95126747-46bc-42f5-9d70-b0fc86748be9",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "60ba1000-36a7-486f-94ff-ca64882ee55c",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "4b72893f-c9a4-4dda-bd56-740b60474707",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "659317c3-c98e-415e-8a19-009f5e1d5686",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "8dc107e0-ed48-4d34-a58b-321f6305a7c3",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "5e327522-b709-4188-a73e-31126047089c",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "5fbce25c-dcb3-45c0-99a6-7290ed13ed24",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "15d53c5d-07a8-4de5-acbe-5a35caad9a3a",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "ba46d49b-190d-48c2-a939-0a1b20e9754b",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "4caa612d-669a-4e23-8479-1aba079fd168",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "e0a60c9c-772b-422c-83da-ccd4739df69f",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "fb6904ca-c2e5-4a36-8ebf-8b0a4d708da1",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "509fddb0-9ab5-44b2-a87e-4352855d9918",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "14fe4526-0298-4f64-a879-5ace55953518",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "57e8b07c-064d-4af4-ba0d-b45e055abe05",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "4c167fd5-3f51-416c-9226-0d8c39a0f885",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "d957e8b3-4cc9-4d9b-b0b2-4c0532f71d81",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "8d5bea4a-0c0f-4255-afb5-141f15296ac5",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "417dd555-9a8b-4338-8c42-1b5c23f06537",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "b7aca793-f8d4-4ba5-bce0-51929e82145b",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "3048618f-7449-4bd7-b49f-1fad9902622a",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "692b760d-afed-4580-8e37-8ba17ec235d5",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "a85546bf-5985-484d-92aa-b604db885766",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "ab84d53b-3d4e-4f85-9fbd-b8a33e039a79",
+      "result_id": "d589506e-ee49-4705-bff2-1988d2adc22a"
+    },
+    {
+      "claim_id": "f110c288-e45d-4718-ba1c-89cc4c495a4b",
+      "result_id": "dca60836-ce5b-4489-a460-3fbd89306df1"
+    },
+    {
+      "claim_id": "b0ac42ef-fd3f-4c68-af6c-973d576df331",
+      "result_id": "dca60836-ce5b-4489-a460-3fbd89306df1"
+    },
+    {
+      "claim_id": "e19860b5-c881-436a-80cb-f6850f1265a7",
+      "result_id": "dca60836-ce5b-4489-a460-3fbd89306df1"
+    },
+    {
+      "claim_id": "cc961cfd-d9e5-4161-b9ff-c721602ebc75",
+      "result_id": "02a4cb2a-16ae-4626-af9c-266209e2a721"
+    },
+    {
+      "claim_id": "b995570d-904a-47b6-bd5a-497cd3141f05",
+      "result_id": "02a4cb2a-16ae-4626-af9c-266209e2a721"
+    },
+    {
+      "claim_id": "26400940-402d-4438-8c2b-2b968b7890a4",
+      "result_id": "dee5e1f6-822d-4d07-ae01-43ba7acb078a"
+    },
+    {
+      "claim_id": "8aa5e57c-dbb3-4976-9b68-951ba379167c",
+      "result_id": "dee5e1f6-822d-4d07-ae01-43ba7acb078a"
+    },
+    {
+      "claim_id": "c20c9eb1-59b5-4eb7-8eca-fe794cf2c727",
+      "result_id": "dee5e1f6-822d-4d07-ae01-43ba7acb078a"
+    },
+    {
+      "claim_id": "49946e53-750b-41ef-b625-9c70e853b236",
+      "result_id": "dee5e1f6-822d-4d07-ae01-43ba7acb078a"
+    },
+    {
+      "claim_id": "7cd76133-5fea-48d0-bc47-bf44e16a8865",
+      "result_id": "dee5e1f6-822d-4d07-ae01-43ba7acb078a"
+    },
+    {
+      "claim_id": "1ba48cfb-4006-4c74-b812-a59678cdb9a5",
+      "result_id": "dee5e1f6-822d-4d07-ae01-43ba7acb078a"
+    },
+    {
+      "claim_id": "727ab163-5600-47eb-9d73-17d4a1516471",
+      "result_id": "a843c887-5120-4628-b27e-e9c6f2a2c730"
+    },
+    {
+      "claim_id": "45d6833b-77d5-4347-abc3-650f0a7d60c2",
+      "result_id": "a843c887-5120-4628-b27e-e9c6f2a2c730"
+    },
+    {
+      "claim_id": "1ea090f7-5344-4823-a687-7098a9c86769",
+      "result_id": "31707e82-5f47-44cb-99aa-ced5a53e094c"
+    },
+    {
+      "claim_id": "d33b30b3-17b0-42b1-bd6c-3099f71af4c1",
+      "result_id": "31707e82-5f47-44cb-99aa-ced5a53e094c"
+    },
+    {
+      "claim_id": "eb7cadab-dc7b-4bf9-87ca-eee370a3360b",
+      "result_id": "31707e82-5f47-44cb-99aa-ced5a53e094c"
+    },
+    {
+      "claim_id": "4cdf5df4-56be-41fa-98e2-6b22f88b2ee3",
+      "result_id": "4b32c1af-5910-4fc6-a52f-2a1b2e3f1232"
+    },
+    {
+      "claim_id": "bdf68590-95c6-40c0-b0bd-d8b1053d3074",
+      "result_id": "4b32c1af-5910-4fc6-a52f-2a1b2e3f1232"
+    },
+    {
+      "claim_id": "84af7d4e-7b52-4163-8a04-853a448f75f1",
+      "result_id": "4b32c1af-5910-4fc6-a52f-2a1b2e3f1232"
+    },
+    {
+      "claim_id": "2ff07f2e-8abe-42fa-9be1-5398d91b98f1",
+      "result_id": "4b32c1af-5910-4fc6-a52f-2a1b2e3f1232"
+    },
+    {
+      "claim_id": "3f895a35-c830-4ca1-9615-ddd73edd721d",
+      "result_id": "4b32c1af-5910-4fc6-a52f-2a1b2e3f1232"
+    },
+    {
+      "claim_id": "10f00630-737e-4492-8beb-ce8382a80c4a",
+      "result_id": "acfd70b9-96e2-4053-a2e6-fea9752e34e1"
+    },
+    {
+      "claim_id": "69b46cef-1bee-4760-8e84-2775da8eeca4",
+      "result_id": "acfd70b9-96e2-4053-a2e6-fea9752e34e1"
+    },
+    {
+      "claim_id": "9f51db9e-ff03-4ba5-976f-dc6690c7e4a6",
+      "result_id": "acfd70b9-96e2-4053-a2e6-fea9752e34e1"
+    },
+    {
+      "claim_id": "0ffbe26b-c37d-40a0-aa15-3deba3dbfe63",
+      "result_id": "acfd70b9-96e2-4053-a2e6-fea9752e34e1"
+    },
+    {
+      "claim_id": "5dfaeb42-545d-43cc-8a9f-359223c70f2d",
+      "result_id": "ea3765fd-3c51-4f7c-a41d-2d1efa24f9da"
+    },
+    {
+      "claim_id": "a644e20e-2ab3-4ef4-82d0-2e46cb1441cf",
+      "result_id": "ea3765fd-3c51-4f7c-a41d-2d1efa24f9da"
+    },
+    {
+      "claim_id": "89fe9052-d177-4ab4-8d1f-2384e60d4246",
+      "result_id": "052f9c75-b7fd-4ea0-84db-8a301194972f"
+    },
+    {
+      "claim_id": "84e8601b-2338-4da0-b874-10361d649f6a",
+      "result_id": "052f9c75-b7fd-4ea0-84db-8a301194972f"
+    },
+    {
+      "claim_id": "1481f7ea-2512-4f50-8a57-76a8ee519321",
+      "result_id": "e3b89fbb-3eb5-4dae-aec2-5bd2eec8ab61"
+    },
+    {
+      "claim_id": "b0496777-a4ce-4e3f-b4d5-3b092ef62c61",
+      "result_id": "e3b89fbb-3eb5-4dae-aec2-5bd2eec8ab61"
+    },
+    {
+      "claim_id": "c26de091-efd3-4b8d-8942-0716ac866f14",
+      "result_id": "75656e37-5906-4def-976f-176c2144c202"
+    },
+    {
+      "claim_id": "b0aa478a-ec44-4747-b631-22ddc5832937",
+      "result_id": "75656e37-5906-4def-976f-176c2144c202"
+    },
+    {
+      "claim_id": "bdfd0f11-baa6-4226-ac6a-72341f2aadb3",
+      "result_id": "34c5f89e-cda1-4e51-927d-26879e7f8bac"
+    },
+    {
+      "claim_id": "40fb0493-0d88-4bc5-8423-fad18c4182cd",
+      "result_id": "34c5f89e-cda1-4e51-927d-26879e7f8bac"
+    },
+    {
+      "claim_id": "86efc0b6-093d-405c-8cae-54fa4b1c7850",
+      "result_id": "81820be6-1ce4-427e-a95c-27bbf2a145e5"
+    },
+    {
+      "claim_id": "cf90ff65-2cf7-4ae4-801c-8314659692e6",
+      "result_id": "81820be6-1ce4-427e-a95c-27bbf2a145e5"
+    },
+    {
+      "claim_id": "8b99c019-0149-4b27-894b-2f2fc3da92d9",
+      "result_id": "2c657ef4-af00-4c7d-95b8-60c5a2f1f919"
+    },
+    {
+      "claim_id": "e9d0a4c9-f00e-4995-89e6-fdbce054d281",
+      "result_id": "2c657ef4-af00-4c7d-95b8-60c5a2f1f919"
+    },
+    {
+      "claim_id": "ea0023a3-7bd3-4645-9edf-ef97f1209b55",
+      "result_id": "2c657ef4-af00-4c7d-95b8-60c5a2f1f919"
+    },
+    {
+      "claim_id": "79b0288e-1c0e-470c-83d7-25d50aa1ee1e",
+      "result_id": "2c657ef4-af00-4c7d-95b8-60c5a2f1f919"
+    },
+    {
+      "claim_id": "07280afe-c706-4b59-9a46-661cd0ea6c08",
+      "result_id": "2c657ef4-af00-4c7d-95b8-60c5a2f1f919"
+    },
+    {
+      "claim_id": "62d49368-6d6d-49e4-a442-7f441bbf7908",
+      "result_id": "2c657ef4-af00-4c7d-95b8-60c5a2f1f919"
+    },
+    {
+      "claim_id": "173226fa-d9c9-45e3-a6b8-cafc8c07f260",
+      "result_id": "2c657ef4-af00-4c7d-95b8-60c5a2f1f919"
+    },
+    {
+      "claim_id": "87dee284-aa8e-43db-9fcd-636a0db11c4c",
+      "result_id": "deb77e76-5495-42fa-bb60-7358f5b7ae8a"
+    },
+    {
+      "claim_id": "f3f8eaf8-d2d0-4452-99b4-63a5eec24138",
+      "result_id": "deb77e76-5495-42fa-bb60-7358f5b7ae8a"
+    },
+    {
+      "claim_id": "e1093087-d5ab-4a9b-abf3-8b54a1e58b7d",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "4e896736-87ba-4e6e-808d-5f4de659b470",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "8c2c3c5a-8d8a-4f27-bcdc-59179ade231d",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "ef986695-2a7a-438e-8a39-ac5ae824fdff",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "03517d2c-0407-4260-a584-9f51801ad698",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "ce22dc8a-bb06-4c99-bbba-3c8142cd8019",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "2cb4f64c-5b3b-42dc-8747-edb2b5c746d5",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "78beb14a-e091-4f18-b626-8206fceadc21",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "1278036c-b030-41d2-8661-be7477a00826",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "46091a57-6fb6-4607-ab18-eb8c17293335",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "b29d65fd-3b7f-4a01-9923-0be46fd5eda6",
+      "result_id": "b3ae21e0-710c-48b4-8925-6b72a896e703"
+    },
+    {
+      "claim_id": "95ebb04e-818f-42f5-8db0-d4017fb3fd9a",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "cfe58391-1cd3-44d7-852d-266a3ad0734e",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "2d88aa0c-c730-46ad-af05-0fa2f604a56d",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "0ba47913-e198-4e18-a616-a5ec68b97e9b",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "625638bd-cd7b-43ee-8911-c1fd95b796a2",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "58f0eb78-6fb9-44ee-9801-acda5cc0f9cf",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "2594a2fe-1eca-4437-a8a3-a0699a6d8ac5",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "9473c11a-ddf8-40f2-a1d3-0436a7784037",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "7f31d1cd-f2c7-4180-b3fe-f62000f1f4bb",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "4cfab776-1770-4ed1-9543-b3278d64d93f",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "2a362194-0f6d-4e9e-a4b9-47c955a773a2",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "73fd87c9-8542-430d-b333-2a43a579305c",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "64d554e3-4cc4-4c11-b26b-6ae26eddc389",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "a7ce714f-af6d-4e42-8a12-871a4eae9abe",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "c5c4de6b-fe97-43bd-b2d7-8a79bfccad01",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "a4e789ec-fb18-4665-8049-494ab8e68660",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "0285f20a-ac42-4dff-9004-7aa21ca9bd35",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "33046ea5-a44a-416c-b2ca-9adeeba2a12b",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "7319f7a4-3144-4849-8a53-1dbde99fca42",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "65524dcd-17c3-45e1-9a11-1fdb3be6dec6",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "40843f11-dab7-4c88-9b80-25863178ec33",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "e1584c25-518c-4044-82e8-d712b9933086",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "939c333f-677c-4cd8-88b9-32ab6644fbb3",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "9c6f9481-63a3-4a81-a200-5fd2edaf8ce0",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "0c37ba40-eaad-4019-953e-eb93a3ead318",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "4f5822ab-1196-44e9-8d89-b2b209db7332",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "b9da6ee0-1295-4d27-9b58-13073763da2d",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "9074bc26-f92e-4553-b59e-befd55a310db",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "b9bd9c39-a3c3-4a6a-9981-008dd71eec78",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    },
+    {
+      "claim_id": "0d54f4fa-57bd-4625-bfa7-945bfbf63ba6",
+      "result_id": "d21c1ece-f203-4c8c-9695-b574b1870f1b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1782 @@
+{
+  "submission": {
+    "id": "b36177a6-eb6c-4feb-9a50-120bc4edd0ce",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:51:52.769562Z",
+    "updated_at": "2025-12-03T17:51:52.769562Z"
+  },
+  "content": [
+    {
+      "id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "submission_id": "b36177a6-eb6c-4feb-9a50-120bc4edd0ce",
+      "content_type": "manuscript",
+      "content_text": "# Piezo1 as a force-through-membrane sensor in red blood cells\n\n## Authors\n\n- George Vaisey<sup>1</sup> ([ORCID: 0000-0002-8359-1314](https://orcid.org/0000-0002-8359-1314))\n- Priyam Banerjee<sup>2</sup>\n- Alison J North<sup>2</sup>\n- Christoph A Haselwandter<sup>3</sup> ([ORCID: 0000-0002-5012-5640](https://orcid.org/0000-0002-5012-5640))\n- Roderick MacKinnon<sup>1</sup> ([ORCID: 0000-0001-7605-4679](https://orcid.org/0000-0001-7605-4679)) \u2020\n\n### Affiliations\n\n1. Laboratory of Molecular Neurobiology and Biophysics, Howard Hughes Medical Institute, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))\n2. Bio-Imaging Resource Center, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))\n3. Department of Physics and Astronomy and Department of Quantitative and Computational Biology, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPiezo1 is the stretch activated Ca2+ channel in red blood cells that mediates homeostatic volume control. Here, we study the organization of Piezo1 in red blood cells using a combination of super-resolution microscopy techniques and electron microscopy. Piezo1 adopts a non-uniform distribution on the red blood cell surface, with a bias toward the biconcave \u2018dimple\u2019. Trajectories of diffusing Piezo1 molecules, which exhibit confined Brownian diffusion on short timescales and hopping on long timescales, also reflect a bias toward the dimple. This bias can be explained by \u2018curvature coupling\u2019 between the intrinsic curvature of the Piezo dome and the curvature of the red blood cell membrane. Piezo1 does not form clusters with itself, nor does it colocalize with F-actin, Spectrin, or the Gardos channel. Thus, Piezo1 exhibits the properties of a force-through-membrane sensor of curvature and lateral tension in the red blood cell.\n\n## Introduction\n\nRed blood cells (RBCs) experience significant mechanical forces in their lifetime as they traverse the mammalian circulatory system, squeezing through capillaries of smaller diameters than themselves (Chien, 1987). Central to the ability of RBCs to deform in response to shear stress is their biconcave disk shape (Lister, 1827; Mohandas and Evans, 1994). RBCs lack organelles and a transcytosolic network and their biconcave shape is instead imparted by the plasma membrane and the membrane skeleton, a 2D quasihexagonal network of actin filament (F-actin) nodes connected by (\u03b11\u03b21)2-spectrin tetramers bound to transmembrane proteins (Fowler, 2013; Gratzer, 1981). In response to shear stress a Ca2+ influx is activated in RBCs (Larsen et al., 1981; Dyrda et al., 2010). Ca2+ entry into RBCs modulates junctional protein interactions in the membrane skeleton (Nunomura, 2006) in addition to activating the Gardos channel (Gardos, 1958), a K+ channel, leading to K+ efflux and subsequent cell volume decrease (Danielczok et al., 2017), which together facilitate flexibility of the cell membrane.\n\nPiezo1 was first suggested as the mechanosensitive Ca2+ channel in RBCs after identification of gain-of-function mutations in patients with dehydrated xerocytosis (Bae et al., 2013; Albuisson et al., 2013; Andolfo et al., 2013; Zarychanski et al., 2012). Subsequent studies using a hematopoietic PIEZO1 knockout mouse confirmed that the channel is responsible for stretch-induced calcium influx in RBCs (Cahalan et al., 2015). How Piezo1 is organized in the RBC membrane, however, is not known. The unique biconcave shape of the RBC poses interesting questions about how membrane curvature, which locally is known to be important for Piezo1 structure (Guo and MacKinnon, 2017; Lin et al., 2019; Haselwandter and MacKinnon, 2018), might globally impact Piezo1 distribution and function. It has been proposed that due to its intrinsic curvature, Piezo1 might tend to concentrate in the dimple region of RBCs (Svetina et al., 2019), but direct experimental evidence is lacking. More broadly, how Piezo channels are organized in cell membranes is poorly understood. Based on electrophysiological recordings in overexpressing cells (Gottlieb et al., 2012) or fluorescence microscopy of a stable cell line (Ridone et al., 2020), some authors have reported clustering of Piezo1, but channel densities in both cases are likely non-physiological. Extensive patch-clamp studies and simulation of Piezo1 densities in neuro2Acells, which express Piezo1 natively, led others to the conclusion that Piezo1 channels are homogenously expressed across cell membranes and function as independent mechanotransducers (Lewis and Grandl, 2021). Additionally, it is unclear what role the actin cytoskeleton plays in organizing and gating the Piezo1 channel in cells. Piezo1 can be pressure activated in membrane blebs lacking cytoskeleton (Cox et al., 2016) and exhibits spontaneous openings in asymmetric lipid droplet bilayers (Syeda et al., 2016), consistent with a \u2018force-from-lipids\u2019 model of activation (Martinac et al., 1990). Others claim that Piezo1 is tethered to the actin cytoskeleton and is gated by a \u2018force-from-filament\u2019 mechanism (Wang et al., 2022).\n\nHere, we set out to image and analyze the organization of Piezo1 channels in RBC membranes. The small size of RBCs and their inherent autofluorescence makes them refractory to conventional fluorescence microscopy, so we employed more sensitive super-resolution microscopic methods. Fluorescent Piezo1 spots can be resolved into single Piezo1 channels which, along with electron microscopy studies, confirm that they do not cluster in RBC membranes. Although not clustering, we find a non-uniform distribution of Piezo1 in the RBC membrane with enrichment at the dimple, which can be rationalized through the energetic coupling of the intrinsic curvature of Piezo1 to the curvature of the surrounding membrane. Single particle tracking (SPT) studies of Piezo1 demonstrate its lateral mobility in the plasma membrane. This is consistent with co-immunostaining analysis, suggesting that Piezo1 is not tethered to the membrane skeleton. Mobility of Piezo1 in the RBC membrane permits Piezo1 to explore the curvature landscape of the RBC surface and may allow Piezo1 to respond to local and global changes in membrane curvature as well as membrane tension.\n\n## Results\n\n### Expression and localization of Piezo1 in red blood cells\n\nTo detect Piezo1 in RBCs a Piezo1HA mouse line was generated (Jackson Laboratories) in which an HA epitope tag was inserted into an extracellular loop of the PIEZO1 gene. The HA-tagged Piezo1 channel functions similar to the WT channel in electrophysiological recordings of HEK cells and could be specifically detected by immunostaining (Figure 1\u2014figure supplement 1). Importantly, only RBCs from the Piezo1HA mice and not wildtype mice showed fluorescent signal when immunostained with an anti-HA antibody (Figure 1A), confirming clear expression of Piezo1 in RBCs. As shown in 3D reconstructions, single optical sections and volume renderings from reconstructed 3D-structured illumination microscopy (3D-SIM) images (Gustafsson, 2000; Heintzmann and Huser, 2017) of immunostained RBCs, Piezo1 channels appear as spots (Figure 1A, B and Figure 1\u2014figure supplement 2). These spots are distributed on the RBC membrane, here contoured by phalloidin staining of actin, which forms part of the actin\u2013spectrin network bound to the cytosolic face of the RBC membrane (Ballas and Krasnow, 1980; Figure 1\u2014figure supplement 2). 3D reconstructions from z-stacks reveal ~80 Piezo1 puncta per RBC (Figure 1C), suggesting a relatively low copy number of channels per RBC, similar to estimations of Gardos channel number per RBC (Lew et al., 1982; Brugnara et al., 1993) and in contrast to very abundant RBC membrane proteins such as Band3, which is estimated to have a copy number of 1 million per cell (Fairbanks et al., 1971). Supportively, our patch-clamp recordings of RBCs occasionally identified single channel currents that are stretch activated and have a conductance consistent with other reports of Piezo1 (Coste et al., 2010; Del M\u00e1rmol et al., 2018; Harraz et al., 2022; Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig1-v1.jpg)\n\n**Figure 1.:** (A) Reconstructed 3D-structured illumination microscopy (3D-SIM) images of red blood cells (RBCs), shown as maximum projections of z-stacks, from control (Ctrl, top row) or Piezo1HA (bottom row) mice labeled using rhodamine phalloidin (magenta) and an antibody directed against the HA tag of Piezo1 (green). Scale bar, 3 \u03bcm. (B) 3D volume rendering of a representative labeled Piezo1-HA-KI mouse RBC displayed as XY (left) and XZ (right) axis views, showing the distribution of Piezo1. Scale bar, 2 \u03bcm. (C) Quantification of the number of Piezo1 spots per cell from 3D-SIM maximum projections. Mean \u00b1 standard deviation (SD) = 80.2 \u00b1 26 spots per cell. Numbers were calculated on individual cells (n = 57) using Imaris spot detection. (D) Representative single channel traces from excised inside-out patch recordings of RBCs in symmetric 150 mM NaMethanesulfonate. The patch was clamped at \u221280 mV and negative pressure (0 to \u221230 mm Hg) was applied to the patch pipette. Amplitude histogram (right) enables estimation of single channel conductance. Showing one trace from n = 4 recordings.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative traces of currents elicited at 60 mm Hg pressure and increasing voltages (in 20 mV steps from \u221280 to +80 mV) in symmetrical NaCl from excised outside-out patches of HEK293 Piezo1 KO cells overexpressing wildtype (left) or HA-tagged mPiezo1 (right). (B) Inactivation time-constants for wildtype and HA-tagged mouse Piezo1 with a holding voltage \u221280 mV and pressure pulses of +60 mm Hg. (C) Outside-out patches were held at +60 mV and subjected to 500-ms pulses of increasing pressure. Normalized mean current\u2013pressure relations are shown. For each individual patch, currents were normalized to the peak current for that patch. (D) Immunofluorescence in HEK293 Piezo KO cells expressing wildtype or HA-tagged mPiezo1 in a Piezo1-IRES-GFP (green) vector stained with anti-HA primary antibody and Alexa 568-conjugated secondary antibody (red). Membranes were not permeabilized and nuclear stain 4\u2019,6\u2019-diamidino-2-phenylindole (DAPI) (blue) was used for nuclear staining. Scale bars, 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Piezo1 is in green and actin stained by phalloidin is in magenta. Piezo1 spots are observed adjacent to the actin signal, which is a proxy for the membrane in RBCs. Scale bars, 1 \u03bcm.\n\n### Piezo1 does not cluster in RBC membranes\n\nWhether Piezo1 channels cluster in membranes to form mechanosensory domains or are distributed more randomly as independent mechanosensors remains unknown. In 3D-SIM images of labeled intact RBCs, fluorescent Piezo1 spots are relatively uniform in size and do not appear to cluster (Figure 1). However, our SIM data are diffraction limited by an XY resolution of ~120 nm at best and thus each individual spot could feasibly contain a few Piezo1 channels (~23 nm diameter) tightly packed together. To address whether fluorescent spots represent single or multiple Piezo1 channels we therefore employed stimulated emission depletion (STED) microscopy (Hell and Wichmann, 1994), which can achieve resolutions below 50 nm and down to for example 22 nm after deconvolution (Schoonderwoert et al., 2013), depending on the selected dyes. Owing to the absorption of high-power lasers by heme (Schloetel et al., 2019), it was not possible to image intact RBCs by STED. Instead, RBCs adhered to poly-lysine coated coverslips were unroofed by a stream of isotonic buffer (Swihart et al., 2001), washing away hemoglobin and leaving patches of RBC membrane still bound to the actin\u2013spectrin network (Figure 2A). The approximate flat dimensionality of unroofed RBCs also enabled us to use facilitated image acquisition 2D STED mode to achieve maximal XY resolutions of ~40 nm by full width half maximum (FWHM) in single images, closer to the size of a Piezo1 channel. Approximately 26 \u00b1 7 (n = 12 cells) spots were observed per unroofed RBC, which equates to ~0.6 puncta/\u03bcm2, consistent with the Piezo1 abundance observed in SIM images of intact RBCs. Piezo1 spots in 3D-SIM images of intact RBCs show a range of nearest neighbor distances (Figure 2B) with an average nearest spot distance of 540 \u00b1 37 nm (n = 19 cells). This is similar to the observed distribution of Piezo1 spots in 2D STED images of unroofed RBC membranes, where the nearest spot distance is 544 \u00b1 106 nm (n = 12 cells) and is consistent with fluorescent Piezo1 spots not clustering in the RBC membrane. Further cluster analysis of Piezo1 spots in 2D STED images by 2D spatial analysis (Andrey et al., 2010) shows no statistical difference between the observed spot distribution and a simulation of randomly distributed spots (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative 2D stimulated emission depletion (STED) image of an unroofed RBC immunostained with an anti-HA tag antibody for Piezo1 (green) and labeled with phalloidin STAR 580 for F-actin (magenta). Scale bar, 1 \u03bcm. (B) 3D reconstruction from SIM imaging of immunostained RBCs, where Piezo1 spots are detected by the spot detector function in Imaris and are colored yellow. The distance from each Piezo1 spot to the nearest Piezo1 spot in this cell was calculated in Imaris and is shown on the right. Scale bar, 1 \u03bcm. (C) The same analysis as in (B) was carried out on a 2D STED image of an unroofed RBC, but here Piezo1 spots at the edge of the membrane were masked out from spot detection to prevent edge-based artifacts in estimating nearest neighbor distances. Scale bar, 1 \u03bcm. (D) The mean nearest spot distance was calculated for SIM and STED analyses and plotted. For SIM the mean is 540 \u00b1 37 nm (n = 19 cells) and for STED the mean is 544 \u00b1 106 nm (n = 12 cells). (E) (Left) Huygens deconvolution of a Piezo1 puncta, imaged by 2D STED, resolving into a triplet after deconvolution, scale bar is 50 nm. (Bottom right) A top-down view of the Piezo1 channel structure with red asterisks indicating the positions of antibody binding. (Top right) An intensity profile of fluorescent signal from a line-scan of two adjacent bright pixels from the bottom left image, showing a distance of ~25 nm. (F) Negative stain electron microscopy of an unroofed RBC immunostained with an anti-HA tag primary antibody and a secondary antibody conjugated to 18-nm gold. Low magnification image of an unroofed RBC (left) with a region highlighted in red imaged at medium magnification (right). 18-nm gold particles corresponding to labeled Piezo1 channels are highlighted by red circles. As in fluorescence microscopy images, Piezo1 channels do not appear to cluster. (G) Negative stain electron microscopy image at high magnification of a triple-labeled Piezo1 channel.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative 2D STED image of an unroofed RBC membrane immunostained with an anti-HA tag antibody for Piezo1 (green) and labeled with phalloidin STAR 580 for F-actin (magnta). Scal bar, 1 \u03bcm. (B) Binarized mask of the RBC membrane using thresholding of the rhodamine\u2013phalloidin (left) and binarized thresholding of fluorescent Piezo1 spots (right). (C) Cluster analysis using the spatial statistics 2D/3D ImageJ plugin. The cumulative distribution frequency of the distance between a typical position within the masked reference structure and its nearest point in the pattern is plotted on the y-axis against the distance, x-axis, for a simulated random spatial distribution (black) with 95% confidence limits (gray) compared to the observed experimental distribution (green). There is no statistical difference between the simulated randomly distributed data and observed data. N = 1 cell.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Two representative sets of images of Piezo1 fluorescent spots after stimulated emission depletion (STED) data collection (top panels) followed by Huygens deconvolution (bottom panels) Piezo1 spots resolve into singlets, doublets, or triplets, with the bright pixels separated by approximately 25 nm. Scale bar, 50 nm. (B) After selecting Piezo1 fluorescent puncta with a max intensity above 20,000 arbitrary units we counted the putative number of antibodies bound based on resolved bright pixels where n = 33 fluorescent puncta from 3 unroofed cells. Here, we show a relative frequency distribution for 1, 2, or 3 antibodies bound. Assuming a binomial distribution for antibody binding, our data are consistent with approximately 60% antibody binding.\n\nOptimizing 2D STED image acquisition parameters, including imaging over multiple Z planes and employing adaptive illumination (Heine et al., 2017), as well as image processing through spherical aberration correction and iterative deconvolution (Huygens Professional) (Schoonderwoert et al., 2013) enabled an improvement of the lateral FWHM resolution toward ~25 nm (Figure 2E), approximating the diameter of the Piezo channel. Post-deconvolution, we observed that a significant number of fluorescent spots resolved into triplets of bright spots, consistent with labeling each arm of the trimeric structure of Piezo1 (Saotome et al., 2018; Guo and MacKinnon, 2017; Figure 2E and Figure 2\u2014figure supplement 2). In a single field of view, we can often observe multiple triple-labeled Piezo1 channels (Figure 2\u2014figure supplement 2). Line-scan analysis of the intensity between resolved bright pixels after deconvolution yields a pixel size-limited distance of ~25 nm (Figure 2E). This distance is consistent across analysis of all bright puncta that resolve into triplets, which we would not expect if these puncta represented multiple channels clustering. Further, Piezo1 puncta never resolve beyond triplets, consistent with single Piezo1 channels where all three antibody-binding sites are occupied, and not multiple trimeric Piezo1 channels clustered tightly together. The occurrence of triple-labeled Piezo1 in our STED data suggests we are toward the upper limit of labeling. An important corollary to this conclusion is that, at least if the probability of observing a given number of antibodies bound to each Piezo1 channel is non-cooperative, we should expect only a small fraction of Piezo1 channels to be unlabeled, giving us confidence in our estimation of Piezo1 channel number per RBC (Figure 1C). This settles inconsistencies in the available quantitative proteomics analyses of the RBC proteome (Bryk and Wi\u015bniewski, 2017; Ravenhill et al., 2019) and is in line with a study of highly purified erythrocytes, which estimates approximately one hundred Piezo1 channels per cell (Gautier et al., 2018). We further analyzed Piezo1 distribution in unroofed red blood cells by negative stain electron microscopy using an 18-nm gold-conjugated secondary antibody (Figure 2F, G). Gold particles were distributed over the unroofed RBC membrane without apparent clustering, comparable to the distribution of fluorescent spots in STED images. Gold particles were not observed in RBCs from control mice. By negative stain electron microscopy, we were also able to observe triplets of gold particles (Figure 2G) with an inter-particle distance of ~25 nm, consistent with our 2D STED imaging of labeled trimeric Piezo1 channels. Thus, using multiple imaging approaches, we do not observe Piezo1 clustering in the RBC membrane.\n\n### Piezo1 is enriched at the dimple region of RBC membranes\n\nWe were curious whether Piezo1 is evenly distributed throughout the RBC membrane or tends to localize to specific regions of the RBC biconcave disk. Because of its intrinsic curvature, it has been hypothesized that Piezo1 concentrates in the curved dimple of the RBC membrane (Svetina et al., 2019). Other force-related proteins such as myosin IIA exhibit a non-uniform membrane density and are enriched at the dimple region (Alimohamadi et al., 2020). Using 2D slices from 3D-SIM images of intact RBCs we segmented the cells into the dimple and rim regions based on F-actin staining of the membrane (Figure 3A) and quantified the number of Piezo1 puncta per \u03bcm2 surface area of each region using the cell imaging software Imaris (Figure 3B). The dimple accounts for about 17% of the total RBC surface area. We find that the whole RBC and rim have similar Piezo1 puncta densities (0.50 \u00b1 0.16 and 0.46 \u00b1 0.17 \u03bcm\u20132, respectively) while at the dimple region the density is higher (0.80 \u00b1 0.31 \u03bcm\u20132). Thus, there is approximately a twofold enrichment of Piezo1 at the dimple region of RBC membranes compared to the rim (Figure 3B). This enrichment of Piezo1 at the dimple region of the RBC membrane is not due to enzymatic deglycosylation of RBCs, which we used to increase antibody binding to HA-tagged Piezo1 (Figure 3\u2014figure supplement 1). To strengthen the hypothesis that it is the intrinsic curvature of Piezo1 that biases it toward the curved dimple region of the RBC we also analyzed the dimple versus rim ratio of two other RBC membrane proteins that are not intrinsically curved: the Gardos channel (Lee and MacKinnon, 2018) and Band3 (Vallese et al., 2022; Xia et al., 2022; Arakawa et al., 2015). We find no statistically significant enrichment of the Gardos channel (KCNN4) or Band3 in the dimple of RBCs (Figure 3C). Further, we find no statistical enrichment of actin at the dimple, indicating that the actin\u2013spectrin meshwork is not more densely packed there (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig3-v1.jpg)\n\n**Figure 3.:** (A) Two dimensional slices in XY and YZ views from SIM images illustrating volume segmentation of RBCs and Piezo1 puncta distribution after labeling with an antibody against Piezo1-HA (green) and rhodamine\u2013phalloidin for F-actin (magenta). Cells were segmented and masked in Imaris as shown. Scale bar, 1 \u03bcm. (B) Distribution of Piezo1 puncta in RBCs. The RBC dimple has a higher density of Piezo1 puncta than whole RBCs (Total) (p = <0.0001) and the rim region (p = <0.0001) by the one-way analysis of variance (ANOVA) test with Tukeys post hoc analysis, as indicated on the graph by asterisks where *** indicates p<0.001 and **** indicates p<0.0001. N = 39 cells (C) The ratio of Piezo1 spot density (1.87 \u00b1 0.76, N = 39 cells) in the dimple and rim region of RBCs compared to that of KCNN4 (0.99 \u00b1 0.36, N = 12 cells), Band3 (0.95 \u00b1 0.33, N = 20 cells), and Actin (0.93 \u00b1 0.36, N = 31 cells). The dimple over rim ratio is higher for Piezo1 than KCNN4 (p = 0.0003) and Band3 (p = 0.0003) and Actin (p < 0.0001). (D) Scatterplot of ratio of Piezo1 puncta density in dimple over rim plotted against RBC biconcavity, measured as height ratio a/b (see inset). N = 37 cells. Data are fit by linear regression with equation y = 1.08x + 0.55, R2 = 0.34 and p = 0.0001. (E) Probability per unit area for finding a Piezo1 channel at a given RBC membrane location, calculated from a physical model of Piezo1 curvature coupling (see methods) and plotted over the RBC membrane surface. The RBC shape corresponds to Beck\u2019s model of for RBC discocytes (Beck, 1978).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) 2D slices of a red blood cell (RBC) with a biconcavity (measured as the ratio of maximum to minimum heights of the RBC along a central XZ slice) of 6.25 and a relative dimple to rim Piezo1 spot density of 2.83. (B) As in (A) but of a RBC with a biconcavity of 1.1 and a relative dimple to rim density of 1.05. Scale bar, 1 \u03bcm. (C) Comparison of the number of Piezo1 spots per cell from 3D-structured illumination microscopy (3D-SIM) maximum projections of RBCs prepared with or without PNGase F treatment. For cells treated with PNGase F mean \u00b1 standard deviation (SD) = 80.2 \u00b1 26.0 spots per cell (N = 57 cells) and for cells not treated with PNGase F mean \u00b1 SD = 17.3 \u00b1 6.3.0 spots per cell (n = 19 cells). (D) Comparison of the Piezo1 spot density in the dimple over rim region of RBCs prepared with or without PNGase F treatment. For cells treated with PNGase F mean \u00b1 SD = 1.87 \u00b1 0.76 (N = 39 cells) and for cells not treated with PNGase F mean \u00b1 SD = 1.81 \u00b1 0.77 (N = 18 cells).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Brightfield imaging of red blood cells (RBCs) treated with 10 mM NaSalicylate to generate echinocytes. Two examples of echinocytes are indicated with red arrows. Scale bar, 2 \u03bcm. (B) Example of an echinocyte labeled with an anti-HA antibody against Piezo1 (green) and rhodamine\u2013phalloidin to label F-actin (magenta). White arrows indicate membrane protrusions of positive curvature where Piezo1 is clearly excluded. Scale bar, 500 nm. (C) as in (B) but with the F-actin signal shown as a translucent surface representation (magenta) and the fluorescent Piezo1 spots in green for easier visualization of exclusion of Piezo1 from membrane protrusions. Scale bar, 500 nm. (D) Left and right are two different Z-slice images from the echinocyte in (B) to illustrate in 2D the exclusion of Piezo1 from membrane protrusions. Scale bar, 500 nm.\n\nBecause we observe a range of relative enrichments of Piezo1 at the dimple we asked whether this correlates with the degree of RBC biconcavity, since we also observe a range of biconcavities via F-actin staining of the RBC membrane (Figure 3\u2014figure supplement 1). The degree of biconcavity was parameterized as the ratio of the maximum to minimum heights of RBCs at a central XZ slice (Figure 3D). Indeed, with increasing RBC biconcavity, we observe a greater enrichment of Piezo1 at the dimple (Figure 3D). If the distribution of Piezo1 in the RBC membrane is determined by the coupling of the channels\u2019 intrinsic curvature to the global curvature of the membrane we would expect an unfavorable distribution of Piezo1 into membrane protrusions where the membrane curvature is opposing to that of Piezo1\u2019s. Treatment of RBCs with NaSalicyate, which preferentially binds into the outer membrane leaflet, generates echinocytes (Li et al., 1999), RBCs that are characterized by \u2018thorny\u2019 membrane protrusions. 3D-SIM imaging of labeled echinocytes qualitatively shows a depletion of Piezo1 channels from such membrane protrusions relative to regions of negative membrane curvature, further supporting a mechanism of curvature coupling between the intrinsic curvature of Piezo1 and the surrounding membrane (Figure 3\u2014figure supplement 2).\n\nThe relative abundance of Piezo1 in the dimple and positive correlation with the degree of biconcavity indicates that RBC membrane curvature might be the primary determinant of the Piezo1 distribution. The intrinsic curvature of Piezo1 suggests a possible mechanism, based on \u2018curvature coupling\u2019, for bias toward the dimple. To examine the plausibility of this mechanism, we developed a simple physical model of Piezo1 curvature coupling in which Piezo1 is represented as a spherical cap with area 450 nm2 and approximate radius of curvature 42 nm, the estimated asymptotic value in a planar membrane (Haselwandter et al., 2022a). To describe the RBC shape, we used the model of Beck, 1978 and calculated the mean curvature at each point on the surface (Methods). Then, using the Helfrich functional (Helfrich, 1973), we calculated the minimum shape energy of the membrane surrounding Piezo1 in a vesicle that, if spherical, would have a radius of curvature equal to the reciprocal of the mean curvature at that point on the RBC surface. This procedure associates each point on the RBC surface with a membrane curvature energy which, when applied to the Boltzmann distribution equation, yields a probability distribution for the density of Piezo1 on the membrane surface. Further details of this calculation are outlined in Methods. The surface distribution of Piezo1 calculated according to this method is shown in Figure 3E. The curvature coupling model predicts an approximately two-fold increase in the density of Piezo1 in the dimple relative to the rim, close to the experimentally observed ratio of densities. In the Beck model of RBC shape, the mean curvature at any point on the RBC surface ranges from 0.24 \u03bcm\u22121 (favorable to Piezo1 in the dimple) to about \u22120.52 \u03bcm\u22121 (unfavorable to Piezo1 in the rim). Because these mean curvatures for the RBC membrane are very small (compare these values to the approximate intrinsic curvature of Piezo1, 1/42 nm \u224824 \u03bcm\u22121), it was not immediately clear to us whether Piezo1 would be sensitive to surface curvature in the RBC. The correspondence between experiment and theory suggests that Piezo1 is indeed sensitive to RBC shape and adopts an equilibrium distribution by a mechanism of curvature coupling. If one thinks about this result, the sensitivity of Piezo1 distribution to the global curvature of the RBC membrane implies that the membrane must be relatively smooth. Indeed, this implication is consistent with electron microscopic images of healthy RBCs (Marikovsky and Danon, 1969; Lewis et al., 1968).\n\n### Piezo1 is mobile within the red blood cell plasma membrane\n\nThe above distribution of Piezo1 according to the curvature coupling model suggests that Piezo1 ought to be laterally mobile so that it can explore the curvature landscape of the RBC membrane. However, the quasihexagonal actin\u2013spectrin meshwork and large junctional protein complexes that make up the RBC membrane layer are known to corral and confine membrane protein diffusion (Sheetz, 1983). Additionally, at least some membrane proteins, including roughly one third of Band3, are essentially immobilized by direct binding to actin\u2013spectrin (Tomishige et al., 1998; Tsuji et al., 1988). We studied Piezo1 mobility in the RBC membrane with SPT using 40-nm gold nanoparticles conjugated to a secondary antibody under differential interference contrast (DIC) microscopy (Wu et al., 2019). The fast time resolution and ability to record over minutes without photobleaching has advantages for studying confined membrane protein diffusion (Tomishige et al., 1998; Daumas et al., 2003). Gold particles could be unambiguously identified on RBC membranes (Figure 4A and Video 1). We imaged at 100 Hz for 2 min. In recordings lasting 2 min we observed a range of Piezo1 diffusion trajectories (Figure 4B\u2013D). Most trajectories exhibited confined diffusion, although sometimes Piezo1 appeared to be freely diffusing. Occasionally, we observed both types of diffusion in a single recording. In all cases, Piezo1 was more mobile than in control cells chemically fixed with paraformaldehyde, when analyzed by a mean squared displacement (MSD) analysis (Figure 4D). For confined trajectories, we find that the confinement diameter is in the range of 200\u2013600 nm. Although limited by the spatial resolution of our recordings, this range is largely consistent with the organization of the actin\u2013spectrin meshwork we observe by 2D STED imaging of unroofed RBCs stained for actin or spectrin (Figure 4\u2014figure supplement 1). In addition to smaller corrals of intact actin\u2013spectrin, we find voids deficient in actin or spectrin staining, approximately 200\u2013500 nm in size (Figure 4\u2014figure supplement 1). Such voids in the actin\u2013spectrin skeleton have also been observed by Stochastic Optical Reconstruction Microscopy (STORM) studies on RBCs (Pan et al., 2018). Plotting the average MSD of the first 5 s of Piezo1 tracks yielded an apparent macroscopic diffusion coefficient of 0.0075 \u03bcm2 s\u22121 (Figure 4E), which is similar to that of the mobile population of Band3 (Tomishige et al., 1998) and likely reflects occasional localized periods of confinement within actin\u2013spectrin corrals over time. Microscopic diffusion was also analyzed by plotting the average MSD of the first 50 ms of Piezo1 tracks before the channel will tend to become localized within confinement zones. This analysis yielded an apparent diffusion coefficient of 0.037 \u03bcm2 s\u22121, consistent with measurements of freely diffusing Piezo1 in mouse neural stem progenitor cells (Ellefsen et al., 2019). The diffusion coefficient of a free ~50-nm gold nanoparticle in solution has been reported as ~1 \u03bcm2 s\u22121 (Giorgi et al., 2019), two orders of magnitude faster than the estimated microscopic diffusion coefficient of gold-labeled Piezo1 in our experiments. It is possible that a 40-nm gold particle may somewhat slow diffusion of membrane-embedded Piezo1, leading to an underestimation of its diffusion coefficient by our calculations. Nevertheless, Piezo1 appears laterally mobile within the RBC membrane.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig4-v1.jpg)\n\n**Figure 4.:** (A) Example of a RBC imaged under DIC microscopy showing three 40-nm gold particle-labeled Piezo1 channels. Scale bar, 2 \u03bcm. (B) Close-up image of the gold particles with trajectories from a 2-min recording at 100 Hz frequency. Scale bar, 1 \u03bcm. (C) Representative trajectories corresponding to distinct Piezo1 diffusive behaviors in unfixed conditions, shown in blue (trajectories U1, U2, and U3). The green trajectories correspond to labeled Piezo1 in cells fixed with paraformaldehyde (PFA). (D) MSD against time for the first 60 s of the trajectories U1, U2, and U3 in C corresponding to unfixed conditions (blue) and an average of n = 5 fixed trajectories (green). (E) MSD against time for the first 5 s of an average of 14 trajectories. The data are fit to a straight line with a slope corresponding to a 2D diffusion coefficient of 0.0075 \u03bcm2 s\u22121. R2 for linear fit to data is 0.99. (F) MSD against time for the first 50 ms of an average of 14 trajectories. The data are fit to a straight line with a slope corresponding to a 2D diffusion coefficient of 0.037 \u03bcm2 s\u22121. R2 for linear fit to data is 0.98. (G) Image of a RBC with a single gold-labeled Piezo1 channel that was recorded for 1 hr at 1 Hz frequency. Superimposed are the final tracking result (blue) and a circle (red) indicating the approximate segmentation of the RBC dimple. Scale bar, 1 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) 2D stimulated emission depletion (STED) image of an unroofed RBC stained with phalloidin to label F-actin filaments. White arrows indicate voids deficient in phalloidin staining. These voids are approximately 200\u2013500 nm in size. (B) As in (A) but with immunostaining against \u03b1-Spectrin. Scale bar, 1 \u03bcm. (C, D) Frequency distributions for the nearest-neighbor distance for F-actin (C) and \u03b1-Spectrin (D). (E) Example tracks of Piezo1 exhibiting confined diffusion in spaces <500 nm (red tracks). The right panel shows a track of a Piezo1 channel that becomes trapped in a <500-nm confinement radius (red portion of the track) toward the end of the recording. (F) (left) Imaris spot detection was used to detect spots of actin (magenta) and Piezo1 (green) from a 2D STED image of an unroofed RBC. Dashed squares indicate regions of focus (right) where Piezo1 is found in smaller (above) and larger (below) confinement spaces. Scale bars, 1 \u03bcm (left) and 200 nm (right).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Mean squared displacement (MSD) against time for the first 3 s of an average of n = 6 trajectories from tracks at the red blood cell (RBC) dimple and n = 8 trajectories from tracks at the RBC rim. R2 for linear fits is 0.98 for dimple measurements and 0.94 for rim measurements. (B) Comparison of diffusion coefficients measured from the slopes of MSD analysis of n = 6 trajectories from tracks at the RBC dimple and n = 8 trajectories from tracks at the RBC rim. The mean and standard error of the mean (SEM) are plotted and there is no statistically significant difference between mean diffusion coefficients at the dimple and the rim as determined by unpaired t-test analysis.\n\n![Video 1.](https://cdn.elifesciences.org/articles/82621/elife-82621-video1.mp4.jpg)\n\n**Video 1.:** The recording was made at 100 Hz frequency and lasted 2 min. Scale bar, 1 \u00b5m. Video is sped up 2x.\n\nBased on our imaging experiments of fixed RBCs that show an enrichment of Piezo1 in the dimple (Figure 3), we tracked Piezo1\u2019s preference for the dimple versus rim in real time by recording for an hour at 1-Hz frequency (Figure 4G and Video 2). We approximated the dimple as a circle with radius 1.13 \u03bcm, comparable to our segmentation based on F-actin staining (Figure 3) and calculated the frequency at which gold-labeled Piezo1 is within 1.13 \u03bcm of an origin defined as the center of the RBC (Figure 4G). We find that Piezo1 is observed within the dimple 81% of the time during this 1 hr recording, consistent with a preference of Piezo1 for the dimple over the rim. This observed preference for the RBC dimple was not due to slower diffusion here: analysis of tracks that could easily be segmented as at the dimple or the rim yielded macroscopic diffusion coefficients of 0.0086 and 0.0074 \u03bcm2 s\u22121, respectively, which were not statistically different (Figure 4\u2014figure supplement 2). If Piezo1 were to bind to specific sites in the dimple we would expect the diffusion coefficient to be smaller there. As the diffusion coefficient is not smaller, we can understand the observed bias toward the dimple as resulting from curvature coupling between Piezo1\u2019s shape and the membrane\u2019s curvature.\n\n![Video 2.](https://cdn.elifesciences.org/articles/82621/elife-82621-video2.mp4.jpg)\n\n**Video 2.:** The recording was made at 1 Hz frequency and lasted 1 hr. Scale bar, 1 \u00b5m. Video is sped up 100x.\n\n### Piezo1 is not bound to the actin\u2013spectrin meshwork\n\nTo further explore the behavior of Piezo1 in RBC membranes we analyzed its spatial proximity to the actin\u2013spectrin meshwork by fluorescence microscopy. Proteins including ankyrin and protein 4.1 bind both to components of the meshwork and to proteins in the membrane, most commonly Band3 proteins, organizing the RBC membrane into functional microdomains composed of channels and transporters tethered to the actin\u2013spectrin skeleton (Lux, 2016). Using co-immunostaining of unroofed RBC membranes, we asked whether Piezo1 is associated with these well-known complexes. Because of the small size of RBCs and the density of actin\u2013spectrin at the membrane, super-resolution microscopy was necessary to address this question. Indeed, others have claimed that Piezo1 does colocalize with spectrin in red blood cells (Dumitru et al., 2021), but this study used diffraction-limited confocal microscopy, whereby every red blood cell membrane protein would be expected to show some degree of colocalization with spectrin. We employed 2D STED to image unroofed RBCs. To analyze spatial proximity of two fluorescent signals in our STED datasets we utilized optimal transport colocalization (OTC) (Tameling et al., 2021) analysis, which is more appropriate for STED microscopy than traditional pixel-based methods. First, we validated our experimental approach by co-immunostaining proteins of known complexes at the RBC membrane. There are three distinct known populations of Band3: one linked to spectrin via ankyrin, another bound to actin via protein 4.1 and other bridging proteins, and finally proteins that remain untethered to the actin\u2013spectrin meshwork (Lux, 2016; Kodippili et al., 2009). A significant fraction of Band3 fluorescent puncta are observed as overlapping or directly adjacent to both F-actin and spectrin puncta by STED microscopy, indicating close spatial proximity (Figure 5A). In contrast, we do not observe a significant spatial proximity of Band3 and Piezo1, suggesting that if Piezo1 is tethered to actin\u2013spectrin it is not as part of the Band3 complex. This is quantified by OTC analysis, where we plot the fraction of pixel intensities that is matched (colocalized) at distances less than the defined threshold distance. Following Nyquist sampling, the pixel size of 12.5 nm served as the lower limit of this threshold and the upper limit was set to 300 nm (Figure 5B). At a threshold of 100 nm, for example, 0.6 or 60% of signals from Band3 complexes are considered proximal enough to specify as colocalized with both actin and spectrin, consistent with the two aforementioned well-known populations of Band3 complexes. By contrast, only 0.15 or 15% of Piezo1 signals are considered proximal enough to specify as colocalized with Band3. We also co-immunostained Piezo1 with F-actin or spectrin to ask whether it is tethered to the RBC membrane skeleton. We do not observe significant spatial proximity between Piezo1 to either F-actin or spectrin by STED microscopy (Figure 5A). At a threshold of 100 nm we observe an OTC score of only 0.1 for Piezo (Figure 5B). Thus, our data show that unlike Band3, Piezo does not tend to exhibit close spatial proximity to actin or spectrin and is unlikely to bind to the membrane skeleton, consistent with its observed mobility in tracking experiments.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82621/elife-82621-fig5-v1.jpg)\n\n**Figure 5.:** (A) Exemplary STED microscopy images assessing interactions of Band3 (upper panels) and Piezo1 (lower panels) with known members of the RBC membrane skeleton as well as with each other and with KCNN4. Close spatial proximity for Band3 with actin and spectrin can be observed in STED images but not for Piezo1. Scale bar, 200 nm. (B) OTCanalysis including 95% confidence error bars of STED microscopy image sections (Band3/F-actin, n = 11; Band3/Spectrin, n = 10; Band3/Piezo1, n = 7; Piezo1/F-actin, n = 10; Piezo1/Spectrin, n = 7; Piezo1/KCNN4, n = 8).\n\nBased on a proposed mechanism of Piezo1-mediated Ca2+ influx activating the Gardos channel (Cahalan et al., 2015) (KCNN4), we also analyzed spatial proximity of these two proteins by STED. Piezo1 and KCNN4 do not appear to form complexes in RBCs (Figure 5A, B), but it should be noted, given the small size of the RBC, that colocalization of Piezo1 and KCNN4 is not necessary for a functional coupling of the ion fluxes associated with these two channels (see Discussion).\n\n## Discussion\n\nSince its discovery (Coste et al., 2010), Piezo1 has been identified as a primary mechanosensitive molecule in a wide range of force-sensing physiological processes from cell and organ development (Sun et al., 2019; Li et al., 2014; Ranade et al., 2014) to blood pressure regulation (Zeng et al., 2018) and stem cell lineage choice (Pathak et al., 2014). How Piezo1 is organized in different cell types and how this might pertain to the sensing of different types of physiological force is currently not well understood. Here we studied Piezo1 organization in RBCs, both because of the clear importance of Piezo1 in RBC physiology (Bae et al., 2013; Zarychanski et al., 2012; Cahalan et al., 2015) and because of the unique cellular structure of RBCs, particularly their biconcave disk shape.\n\nAt the smallest level of Piezo1 organization, that is with itself, we find that Piezo1 does not cluster in the RBC membrane. By 3D-SIM microscopy (Figure 1) we observe diffraction-limited fluorescent spots that could technically represent multiple, closely located, Piezo1 channels. To distinguish these spots as individual channels, we needed to employ 2D STED microscopy (Figure 2). As the power of the depletion laser was increased to improve resolution, the size of each spot decreased correspondingly, but never resolved into multiple spots, even when the achieved resolution was near the size of the Piezo1 channel. Further, after Huygens deconvolution post-processing of our 2D STED data we could resolve triple-antibody-labeled Piezo1 channels, with an inter-subunit diameter consistent with the channel size. Thus, we conclude that each fluorescent spot, whether viewed by 3D-SIM or 2D STED, corresponds to a single Piezo1 channel. The average distance between Piezo1 channels is approximately 550 nm, although occasionally we observe two to three channels within 100-nm distances. This is in good agreement with studies of neuro2A cells, which natively express Piezo1, that also found that Piezo1 channels do not tend to cluster (Lewis and Grandl, 2021). While clustering could affect Piezo1 gating through Piezo\u2019s membrane footprint, the precise coupling of Piezo1 gating to clustering would depend on the specific scenario considered, and clustering does not necessarily facilitate gating (Haselwandter and MacKinnon, 2018). A relatively homogenous membrane distribution of Piezo1 might be well suited to RBCs that are tumbling through solution, experiencing shear forces from all angles, and may contribute to the remarkable plasticity of RBC shapes under stress (Dupire et al., 2012). Of course, our data on RBCs do not rule out the possibility of Piezo1 clustering in other cell types.\n\nBecause of the intrinsic curvature of Piezo1 we were curious about its distribution as a function of the curvature of the RBC membrane. Experimentally we were able to ask this question through 3D-SIM microscopy, which yielded sufficiently high-resolution spatial information on Piezo1 channels while enabling easy assignment of the RBC dimple and rim membrane regions (Figure 3). Per \u03bcm2 area of membrane we find an almost twofold enrichment of Piezo1 in the dimple relative to the rim. Our experimental data can be rationalized by a physical model of curvature coupling between the intrinsic curvature of the Piezo1 dome and the surrounding membrane curvature of the RBC along its biconcave surface (see Methods). Whilst the curved biconcave shape of RBCs is unique, the good agreement between our experimental data and theoretical prediction based on energetic curvature coupling would suggest an inherent relationship between Piezo\u2019s intrinsic curvature and the surrounding membrane that is broadly relevant to other cell types. This is because the curvature coupling theory, which was developed with experiments on lipid bilayer vesicles, depends only on the bending elasticity of membranes and the intrinsic curvature of Piezo1, not on the unique shape of RBCs. It will be interesting to explore whether Piezo1, for example, is enriched in membrane invaginations or other curvature-matched membrane regions in different cell types. Recently, a study analyzing overexpressed Piezo1 in HeLa cells showed depletion of the channel from membrane filopodia, consistent with a mechanism of curvature coupling whereby the channel unfavorably distributes into membrane regions of high opposing curvature (Yang et al., 2022).\n\nCurvature sensing of membrane proteins by curvature matching has been well documented for other intrinsically curved proteins such as Bin/Amphiphysin/Rvs (BAR) (Simunovic et al., 2015; Tsai et al., 2021) proteins. More recently, it has been shown that glycosylation can determine the membrane curvature sensing properties of some proteins (Lu et al., 2022). It is unclear from our current data whether the enrichment of Piezo1 in the RBC dimple is simply a corollary of the curved structure of Piezo1, which determines the channel\u2019s tension sensitivity as described by the membrane dome model (Guo and MacKinnon, 2017; Haselwandter and MacKinnon, 2018), or whether it also has some important consequences for physiological force sensation of RBCs. In this context, it is noteworthy that the force-generating protein myosin IIA also shows an enrichment in the RBC dimple relative to the RBC rim (Alimohamadi et al., 2020).\n\nConsistent with its ability to equilibrate along the RBC surface as a function of membrane curvature, we find that Piezo1 exhibits lateral mobility within the RBC plasma membrane. We used gold nanoparticle tracking under DIC (Figure 4) so we could record for minutes to an hour without being limited by photobleaching and at fast time resolution (100 Hz). This enabled us to record both the confined (<500 nm) diffusion of Piezo1 as well as Piezo1\u2019s \u2018hopping\u2019 into more freely diffusing behavior. The spatial scales associated with the confined diffusion regime most likely reflect the compartment sizes of the actin\u2013spectrin meshwork we observe by 2D STED. Such a model of confined diffusion set by actin\u2013spectrin is well documented in RBCs (Tsuji et al., 1988) and other cell types (Fujiwara et al., 2016). Similar to observations by others using STORM microscopy (Pan et al., 2018), we observe ~200\u2013500 nm voids that are deficient in actin or spectrin signal by 2D STED. Similar nanoscale \u2018defects\u2019 in the actin\u2013spectrin meshwork have also been observed by atomic force microscopy imaging of RBCs (Nowakowski et al., 2001) and may serve as weak points in the meshwork that facilitate fast RBC remodeling during shear stress. Such defects may also permit faster diffusion of transmembrane proteins such as Piezo1.\n\nOur double labeling experiments suggest that Piezo1 does not form a complex with actin or spectrin, which is consistent with Piezo1\u2019s confined diffusion within the actin\u2013spectrin meshwork compartments, and should be contrasted with the near-immobilization observed for proteins such as CFTR and Band3 (Kodippili et al., 2009, 3; Haggie et al., 2006), which both form complexes with actin. Additionally, our data are not consistent with Piezo1 being tethered to the underlying actin and activated by a \u2018force-from-filament\u2019 mechanism as has been traditionally described (Cox et al., 2019; Zhang et al., 2015). Of course, the actin\u2013spectrin meshwork organizes the RBC membrane into compartments whose boundary conditions could impact how changes in local curvature and lateral tension of the membrane gate Piezo1. This could also explain how chemical agents that disrupt the actin cytoskeleton affect Piezo1 currents in other cell types (Gottlieb et al., 2012; Wang et al., 2022), that is through changes in organization of the membrane rather than disruption of a direct tether to the channel itself.\n\nAdditionally, we asked whether Piezo1 might be colocalized with the Ca2+-activated K+ (Gardos) channel. Ca2+ flux into the RBC through Piezo1 and subsequent activation of the Gardos channel is thought to be the initial step in mechanically activated RBC volume regulation (Danielczok et al., 2017; Cahalan et al., 2015). We do not, however, observe significant spatial proximity between Piezo1 and Gardos channels. Given the small size of RBCs, approximately 1 \u03bcm thick in the dimple and 2\u20133 \u03bcm thick in the rim, and the Piezo1 density of around 0.5 per \u03bcm2, it seems that colocalization is probably not necessary for rapid opening of the Gardos channel following Piezo activation. For diffusion in three dimensions, the mean dispersion time can be approximated by $\\tau=\\frac{x^{2}}{6D}$ , $x$ the mean distance and $D$ the diffusion coefficient. The apparent diffusion coefficient for intracellular Ca2+ is in the range 13\u201365 \u03bcm2/s (Nakatani et al., 2002), meaning that Ca2+ should equilibrate within tens of ms within a RBC. In larger cell types, colocalization of Piezo1 with other channels might be necessary to elicit a functional coupling of ion fluxes. In rat ventricular myocytes, for example, Piezo1 has recently been shown, by diffraction-limited confocal microscopy, to colocalize with transient receptor melastatin (TRPM4) channels (Yu et al., 2022).\n\nThe experimentally determined values of the intrinsic curvature and the bending stiffness of Piezo1 in lipid bilayers enable us to estimate changes in Piezo1 curvature at the dimple versus the rim of a RBC membrane (Haselwandter et al., 2022a). We estimate a radius of curvature of 41.4 nm at the dimple and 42.7 nm at the rim and thus the curvature differences across the unperturbed RBC membrane are, alone, insufficient to substantially change the shape of Piezo1, and thus are not expected to open its pore. However, that Piezo1 distributes on the surface of RBCs by sensing the membrane curvature, by corollary, means that it must have the capacity to sense lateral membrane tension by a force-through-membrane mechanism. To see this, consider that Piezo1 has been shown to flex, that is, change its curvature, as a function of local membrane curvature (Haselwandter et al., 2022b). Consider also that membrane tension changes membrane curvature by flattening it. In this manner, curvature sensing and lateral membrane tension sensing are inextricably linked. This linkage lies at the heart of the membrane dome model of Piezo gating (Guo and MacKinnon, 2017; Haselwandter and MacKinnon, 2018; Haselwandter et al., 2022b; Haselwandter et al., 2022a). When RBCs squeeze through small capillaries, the membrane shape as well as the transmembrane pressure change transiently. The resulting changes in membrane curvature and lateral membrane tension can both, according to the membrane dome model of Piezo gating, open Piezo1\u2019s pore to trigger Ca2+ entry.\n\n## Methods\n\n### HA-tag knock in mice\n\nC57BL/6 background mice heterozygous for an HA tag knocked into the coding sequence after amino acid position 893 of Piezo1, generated by CRISPR/Cas9 technology, were purchased from Jackson Laboratories. Heterozygous mice were bred to generate mice homozygous for the HA tag knock in and were genotyped by PCR amplification around the 893 insertion site and gel electrophoresis analysis of the amplified band size.\n\n### Preparation of blood\n\nAdult mice (>3 months old) were anesthetized by isoflurane inhalation and retro-orbital bleeds were taken using a heparinized micro-hematrocrit capillary tube (Fisherbrand). Whole blood was washed in Dulbecco\u2019s phosphate-buffered saline (DPBS) three times by centrifugation at 1000 \u00d7 g to separate RBCs from the buffy coat.\n\n### Electrophysiological recordings\n\nWashed RBCs were diluted 1:1000 and plated on uncoated Petri dishes containing bath solution consisting of 140 mM NaMethanesulfonate, 10 HEPES pH 7.4. RBCs were imaged with a Nikon eclipse DIC microscope at \u00d740 magnification. Pipettes of borosilicate glass (Sutter Instruments; BF150-86-10) were pulled to ~15\u201320 M\u03a9 resistance with a micropipette puller (Sutter Instruments; P-97) and polished with a microforge (Narishige; MF-83). The pipette was filled with identical bath solution. Recordings were obtained with an Axopatch 200B amplifier (Molecular Devices), filtered at 1 kHz and digitized at 10 kHz (Digidata 1440A; Molecular devices). Gigaseals were obtained by applying a suction pulse (\u221210 mm Hg) using a high-speed pressure clamp (ALA scientific). Holding at negative voltages often facilitated seal formation. To obtain excised inside-out patches, attached cells were lifted briefly to the air\u2013water interface which about 50% of the time would remove the cell but leave an intact inside-out membrane patch in the pipette.\n\n### Immunofluorescence of intact RBCs using 3D-SIM\n\nWashed RBCs were deglycosylated by incubation with 10% PNGase F (New England Biolabs) at 37\u00b0C for 2 hr, which we found increased antibody binding. RBCs were then diluted 1:50 in DPBS with 4% PFA and incubated overnight at room temperature to fix. Fixed cells were washed three times in DPBS by centrifugation at 1000 \u00d7 g for 5 min and then permeabilized in DPBS + 0.3% Triton X-100 for 15 min. Permeabilized cells were then blocked in DPBS + 4% bovine serum albumin (BSA) + 1% normal goat serum (blocking buffer) overnight at 4\u00b0C. Permeabilized and blocked RBCs were then incubated with a rabbit anti-HA primary antibody (3724; Cell Signaling Technology) diluted in blocking buffer for 1 hr at room temperature, washed three times in blocking buffer and then incubated in 1:500 dilution of Alexa-488-conjugated goat anti-rabbit secondary (ab150077; Abcam) mixed with \u00d71 rhodamine\u2013phalloidin (Invitrogen) for 1 hr, followed by washing three times in blocking buffer. For 3D-SIM imaging of KCNN4 and Band3 in RBCs, 1:100 dilution of rabbit anti-Band3 primary (Proteintech) and 1:500 dilution of rabbit anti-KCN44 (76647, Invitrogen) were used. 1:500 dilution of Alexa-488-conjugated goat anti-rabbit (ab150077; Abcam) was used as the secondary along with 1\u00d7 rhodamine\u2013phalloidin (Invitrogen).\n\n3D-SIM images were acquired using a DeltaVision OMX V4/Blaze system (Cytiva) fitted with an Olympus \u00d7100/1.40 NA UPLSAPO oil objective and Photometrics Evolve EMCCD cameras. 488 and 568 nm laser lines were used for excitation and the corresponding emission filters sets were 528/48 and 609/37 nm, respectively. Image stacks were acquired with an optical section spacing of 125 nm. SI reconstruction and Image Registration were performed with softWoRx v 6.1 software using Optical Transfer Functions (OTFs) generated from Point Spread Functions (PSFs) acquired from 100 nm green and red FluoSpheres and alignment parameters refined using 100 nm TetraSpeck beads (Invitrogen).\n\nImaris version 9.9 was used for analyzing 3D-SIM images. Detection of Piezo1 fluorescent spots was performed with Imaris spot detection with an estimated XY diameter of 120 nm, based on measurements of fluorescent spots in 2D slices and the approximate XY resolution limit of 3D-SIM experiments. Spots were mostly uniform in size with a maximum XY diameter of 180 nm. The intensity threshold for spot detection was set to between 3000 and 5000 based on excluding detection of weak background fluorescent signal on the coverslip surface.\n\n### Echinocyte formation\n\nWashed RBCs that were degclyosylated were incubated in DPBS + 10 mM NaSalicylate for 30 min at 37\u00b0C to generate echinocytes before fixation and immunostaining as described above.\n\n### Immunofluorescence of unroofed RBCs using STED microscopy\n\nWashed RBCs that were deglycosylated as above were plated onto poly-D-lysine coated high-performance coverslips and allowed to adhere at room temperature for 15 min. Plated RBCs were unroofed by applying a stream of 10 ml DPBS through a 20 gauge needle at a ~20o angle (Swihart et al., 2001). Unroofed RBCs were fixed in DPBS with 4% PFA for 15 min and then washed three times in DPBS before blocking in blocking buffer for 30 min. This was followed by immunostaining with 1:500 dilution of rabbit anti-HA primary (3724; Cell Signaling Technology) for 1 hr at room temperature, washing three times in blocking buffer and then incubating in 1:500 dilution of anti-rabbit STAR RED secondary (Abberior) mixed with 1\u00d7 phalloidin STAR 580 (Abberior) for 1 hr. Immunostained unroofed cells were then, again, washed three times in blocking buffer and mounted in uncured Prolong Diamond Antifade mountant (Invitrogen) before imaging. For co-immunostaining experiments, additional antibodies used were as follows: 1:100 dilution of rabbit anti-Band3 primary (Proteintech), 1:100 dilution of mouse anti-alpha 1 Spectrin (ab11751), and 1:500 dilution of rabbit anti-KCNN4 (76647, Invitrogen). For co-immunostaining experiments with rabbit primary antibodies, rat anti-HA (Roche) primary was used to label Piezo1 and in all cases the species-appropriate STAR RED and STAR 580 (Abberior) secondaries were used.\n\nSTED microscopy was performed using a Facility Line STED microscope (Abberior Instruments) equipped with Olympus IX83 stand, Olympus UPLXAPO \u00d7100/1.45 NA oil objective, pulsed excitation lasers with time gating (405, 488, 561, and 640 nm) and a 775-nm pulsed STED depletion laser, 4 Avalance Photo Diode detectors, adaptive illumination packages (DyMIN/ RESCue), and a deformable mirror for correction of spherical aberrations. Abberior Imspector software version 16.3.14287-w2129 with Lightbox interface was used for image acquisition. Fluorophore excitation was facilitated at 580 nm (Phalloidin STAR 580) and 640 nm (STAR RED), whereas depletion was achieved using a wavelength of 775 nm. A pixel size of 12.5 nm was used in 2D STED mode. Excitation laser power, depletion laser power, line averaging/accumulation, and pixel dwell time were optimized for balancing signal-to-noise ratio (SNR), and resolution, while minimizing photobleaching. Adaptive illumination techniques RESCue (Staudt et al., 2011) and DyMIN (Heine et al., 2017) were employed to reduce photobleaching and increase SNR.\n\nAcquired STED images were saved as OBF files, which were deconvolved using theoretical PSF modeled from microscopy parameters in Huygens Professional version 22.04 (Scientific Volume Imaging). Imported images were cropped as needed, microscopic parameters were edited for refractive index mismatch correction, the excitation fill factor was set to 1.38 per software developer recommendations, and the STED saturation factor was tested within a range of 40\u201380, as per vendor recommendations, for optimal resolution. The deconvolution wizard was used to estimate background manually in the raw images and the acuity option was set for optimal image sharpness. Deconvolved images were exported as 16-bit TIFF files.\n\nCluster analysis on 2D STED images was performed using the spatial statistics 2D/3D ImageJ plugin (Andrey et al., 2010).\n\n### Image analysis in Imaris\n\nImaris version 9.9 was used for analyzing fluorescent images. Detection of Piezo1 fluorescent spots was performed with Imaris spot detection with an estimated XY diameter of 120 nm, based on measurement of fluorescent spots in 2D slices and the approximate XY resolution limit of 3D-SIM experiments.\n\n### Negative stain electron microscopy of unroofed RBCs\n\nWashed and deglycosylated RBCs were diluted 1:100 and added to carbon coated 400 mesh copper grids (CF400-CU, Electron Microscopy Sciences) that had been glow discharged and pre-coated in poly-D-lysine solution. After 30 min incubation, RBCs were unroofed in DPBS as described above. Unroofed RBCs were blocked for 30 min at room temperature in blocking buffer and then incubated with 1:200 rabbit anti-HA primary antibody (3724; Cell Signaling Technology) for 1 hr at room temperature. Unroofed cells were then washed three times in blocking buffer and incubated with 1:20 diluted 18-nm gold-conjugated goat anti-rabbit secondary antibody (Jackson Laboratories) for 1 hr at room temperature. After rinsing three times in blocking buffer, grids were then washed three times in 150 NaCl, 20 HEPES 7.5 to remove phosphate before staining in 1% uranyl acetate for 1 min. Images were collected on a Tecnai G2 Spirit BioTWIN Transmission Electron Microscope.\n\n### Probability distribution calculation of Piezo1 along the RBC membrane\n\nThe Beck RBC model was used to describe the surface of a biconcave disk with diameter 8.0 \u03bcm, dimple thickness 1.0 \u03bcm, maximum rim thickness 2.5 \u03bcm, and area 138 \u03bcm2 (Beck, 1978). The mean curvature at each point on this surface was calculated as $H(x)=\\frac{1}{2}(c_{1}+c_{2})$, where $c_{1}$ and $c_{2}$ are the principal curvatures, which are functions of the position $x$ on the surface (Carmo, 2016). The following calculation was carried out to assign a (relative) membrane energy, and associated probability density, to Piezo1 at each position $x$ on the RBC surface. The aim of this calculation is not to provide a detailed description of RBC membrane shape but, rather, to test whether Piezo1 localization can couple to curvatures on the RBC surface that are 1\u20132 orders of magnitude smaller than the Piezo dome curvature. In particular, Piezo1, modeled as a spherical cap (dome) with area 450 nm2 and radius of curvature 42 nm (Haselwandter et al., 2022a), was placed into a vesicle whose radius of curvature, if it were spherical, equals $1/H(x)$. We note that the above conditions specify the area of the vesicle, which equals the free membrane area plus 450 nm2. For positions on the RBC surface at which the orientation (sign) of the RBC curvature matches the orientation of the Piezo1 intrinsic curvature (concave side facing outside the cell) Piezo1 was placed into the vesicle with an inside-out orientation, that is, matching the orientation of the vesicle curvature. Otherwise, Piezo1 was placed into the vesicle with an outside-out orientation. The energy of the vesicle free membrane (outside the perimeter of the Piezo dome) was calculated through minimization of the Helfrich membrane bending energy\n\n$$\nG_{M}=\\frac{K_{b}}{2}\\intdA\u00a0(c_{1}+c_{2})^{2},\n$$\n\nwhere the lipid bilayer bending modulus $K_{b}\u2248 20 k_{B}T$ and the integral is carried out over the entire vesiclefree membrane, subject to the boundary conditions at the Piezo dome-free membrane interface mandated by the shape of the Piezo dome (Helfrich, 1973; Haselwandter et al., 2022b; Haselwandter et al., 2022a). The resulting energy as a function of RBC curvature (and, thus, as a function of the position $x$ on the RBC surface) was applied to the Boltzmann distribution equation to calculate the probability per unit area of observing Piezo1 across the RBC surface. This probability density is graphed on the surface of the Beck RBC model in Figure 3. Three major assumptions underlie our calculation of the curvature coupling energy. First, Piezo1 is treated as a spherical cap. Second, for each position on the RBC surface the two principal curvatures, $c_{1}$ and $c_{2}$ , are used to define a radius of curvature equal to the reciprocal of the mean curvature. Both the first and second assumption simplify the problem by imposing radial symmetry on the system of the Piezo dome and its surrounding membrane. The third assumption is that Piezo1 is sensing the curvature associated with the overall shape of the RBC, rather than the curvature of a locally specified surface (small membrane compartment) with nearby fixed boundaries.\n\nWe also carried out a joint energy minimization of the free membrane as described above while simultaneously permitting Piezo1 to flex, that is, to change its radius of curvature, as part of the energy minimization. This calculation was made possible through our recently determined bending modulus of the Piezo dome itself (Haselwandter et al., 2022a). This calculation leads to the conclusion that Piezo1 in an unperturbed RBC should change its mean dome radius of curvature by less than approximately 2 nm as a function of position on the RBC surface.\n\n### Single particle tracking and diffusion analysis\n\nWashed RBCs were adhered to poly-lysine coated 35 mm glass-bottom dishes (MatTeK) and blocked in blocking buffer before incubation with 1:500 dilution of rabbit anti-HA primary (3725; Cell Signaling Technology) for 1 hr at room temperature. Cells were then washed in blocking buffer and incubated with 1:20 diluted 40-nm gold-conjugated goat anti-rabbit secondary antibody (Jackson Laboratories) for 1 hr at room temperature. Cells were washed in blocking buffer and then DPBS before imaging. The movement of colloidal gold particles was observed at room temperature using DIC microscopy on an eclipse Ti2 inverted microscope (Nikon) using a \u00d740/0.65 objective lens and coupled to an Orca Fusion CMOS camera (Hamamatsu). Video sequences were recorded on Nikon NIS-Elements AR5.4.1 software.\n\nDetection and tracking were carried out in ImageJ imaging analysis software using the TrackMate plugin (Tinevez et al., 2017; Ershov et al., 2021). First, trainable WEKA segmentation (Arganda-Carreras et al., 2017) was employed to generate a model of gold nanoparticles that could be used for spot detection. Detection was then carried out in TrackMate using the Linear Assignment Problem (LAP) tracker. Tracks were exported as XYT coordinates and further analyzed in MATLAB. The MATLAB class msdanalyzer (Tarantino et al., 2014) was used for MSD analysis of trajectories and estimation of diffusion coefficients.\n\n### Spatial proximity analysis by OTC\n\nCo-immunostained STED images were analyzed using an open-source R code package (Tameling et al., 2021; Tameling and Naas, 2021) based on OTC. Sections of 64 \u00d7 64 pixels (800 \u00d7 800 nm) were picked only if they contained fluorescent signal and were analyzed in parallel to get 95% confidence bands.\n",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "1cc70a46-a799-41cd-a59b-2e3a838a31f6",
+      "submission_id": "b36177a6-eb6c-4feb-9a50-120bc4edd0ce",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alexander Theodore Chesler, https://ror.org/01cwqze88 National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82621.sa0](https://doi.org/10.7554/eLife.82621.sa0)\n\nThis study reveals the super-resolution localization of native Piezo1 channels in red blood cells. The data provide further evidence to support the force-through membrane mechanism of mechanotransduction. Notably, the authors find that the distribution of proteins on a cell surface can be governed by membrane curvature.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Alexander Theodore Chesler, https://ror.org/01cwqze88 National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82621.sa1](https://doi.org/10.7554/eLife.82621.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Piezo1 as a force-through-membrane sensor in red blood cells.\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kenton Swartz as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Zheng Shi (Reviewer #2).\n\nThe reviewers all agree this is a strong, interesting, and technically innovative study. They have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Note that there are several places where new data, analyses, and discussion are requested to help clarify and strengthen to work.\n\nEssential revisions:\n\n1. Please analyze diffusion in rim vs dimple from the data collected already and only need to analyze (see comments from reviewer #1 for detail).\n\n2. Measuring the mesh size would provide essential information. This could be accomplished by segmenting the existing actin super-resolution data to see if the \"holes\" in the cortex are different along the edges, flat areas, or dimples. The 3D data should be sufficient to see if there are \"gross\" changes in the actin cytoskeleton in different parts of the cell (see comments from reviewer #1 for detail).\n\n3. The echinocyte data needs to be quantified. (All reviewers raised this as essential)\n\n4. Please discuss these physiological effects/functions in the discussion more to spur the future.\n\n5. More detailed methods for the modeling need to be provided.\n\n6. If possible, please measure membrane density (see reviewer #2 for details).\n\n7. In Figure 2, the claim that \"we can often observe multiple triple labels Piezo1 channels\" and that \"fluorescent spots do not represent multiple Piezo1 channels\" needs to be supported by statistical data (see reviewer #3 comments for details).\n\nReviewer #1 (Recommendations for the authors):\n\nI have several suggestions/comments that might improve the manuscript.\n\n1. If the preference of piezo1 to the dimple of the RBC is solely based on an energetic cost to being located in positivity curved membranes, then there should be an \"apparent\" driving force directing the channel to negatively curved membranes. Thus, I would expect the diffusion coefficient to be different in the dimple vs the edge regions. Did the authors detect different diffusion coefficients in different regions of the cell? This could explain the confinement in these areas.\n\n2. Similar to the above comment, does the size of the actin/spectrin mesh vary in different areas of the cell? Specifically, if the size of the mesh is smaller in the dimple, confinement that is not directly dependent on membrane curvature per se could result. Can the authors show that the mesh size is consistent across the cell's differently-curved sections? Could modeling be used to test these ideas?\n\n3. It would be helpful to quantitate the echinocyte membrane supplemental data and not just show example images. I would also suggest moving this to a main figure.\n\nReviewer #2 (Recommendations for the authors):\n\nMy main suggestions are:\n\n1. The Method section describes the use of the Helfrich bending energy of the membrane to understand the distribution of Piezo1 on the RBC surface. However, it is unclear how the modeling was carried out to compare with the experimental observations, potentially due to the referenced PNAS submission. Particularly, it will be helpful to have a reference state (e.g. Piezo1 on a flat membrane) when discussing the curvature-dependent distribution of Piezo1. This is important for the finding to be of general relevance, as most mammalian cells do not take on the special shape of RBCs.\n\nAccording to the numbers provided in the manuscript, it appears intuitive to think that the ~2-fold difference in Piezo1 density between the dimple and rim of RBCs is due to a depletion effect from the rim rather than an enrichment effect on the dimple.\n\n2. The authors took advantage of the natural bi-concave shape of RBCs to investigate the curvature-mediated distribution of Piezo1. This is quite clever, however, a missing control experiment would be to see if the curvature preference of Piezo1 diminishes upon osmotically swelling the RBCs.\n\n3. Cell membranes often have folds that are below optical resolution. Thus, it is important to compare the density of Piezo1 to that of a lipid membrane marker, to make sure that the observed enrichment of Piezo1 on dimples is not due to higher projected membrane density in these regions.\n\n4. Many membrane proteins (such as integrin) are glycosylated. Are Piezo1 glycosylated? If so, how would the enzymatic deglycosylation treatments affect the interpretation of the lack of clusters?\n\n5. The authors used co-immunostaining to show that 'Piezo1 is not bound to the actin-spectrin meshwork'. However, as Piezo1 is tagged with HA, a more direct experiment seems to be co-immunoprecipitation analysis with Piezo1.\n\n6. A recent publication by Dumitru et al. (Nano Letter 2021) investigated the distribution of Piezo1 in RBCs and Piezo1's interaction with the cytoskeleton. Some of the results are in apparent contradiction with the current manuscript. It will be important to discuss the findings of Dumitru et al.\n\n7. I'd like to draw the authors' attention to a recent preprint (doi: https://doi.org/10.1101/2022.06.22.497259) that quantitatively studies the role of membrane curvature in regulating the distribution of Piezo1 in mammalian cells.\n\nReviewer #3 (Recommendations for the authors):\n\n1. Regarding 2D STED images (Figure 2) the authors claim that \"we can often observe multiple triple labels Piezo1 channels\" and that \"fluorescent spots do not represent multiple Piezo1 channels\", but none of these claims is supported by statistical data. The authors should calculate fluorescence intensity histograms of ROIs surrounding fluorescent spots. This is absolutely necessary to conclude that (a) labeling is near saturation, and that (b) most spots are one single independent channel.\n\n2. Similarly, data related to the localization of Piezo1 channels in echinocytes (Supplementary Figure 6) are not analyzed, but the authors claim \"exclusion of Piezo1 channels from protrusions\". The authors should quantify the mean curvature of the membrane embedding each Piezo1 channel, then calculate the distribution of channels as a function of curvature (in a histogram), and statistically test if this distribution is biased. This is absolutely necessary to support the claim that Piezo1 does not localize in regions of mismatched, positive membrane curvature.\n\n3. The measurements of nearest neighbor distances in unroofed cells may be skewed by edge effects: Piezo1 channels near the edges have fewer neighbors thus artificially increasing the next neighbor stances. The authors should consider correcting for this effect, perhaps by excluding spots near the edges, or mentioning and discussing this potential artifact.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Piezo1 as a force-through-membrane sensor in red blood cells.\" for further consideration by eLife. Your revised article has been evaluated by Kenton Swartz (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe reviewers are largely satisfied with your responses to their comments but have asked for a few clarifications to be added to the final publication. Specifically, they ask if you would please better explain how \"a comparable diffusion coefficient\" was reached, to please add statistical analysis/error bars to the new analyses and to please mention these new data in the main manuscript. They also ask you to provide the reference for the statement that membrane is \"smooth\" in red blood cells.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have addressed the majority of my concerns in this revision.\n\nReviewer #2 (Recommendations for the authors):\n\n1. In the additional diffusion analysis, it's unclear how \"a comparable diffusion coefficient\" was reached, please add proper statistical analysis or error bars. Also, why not mention this new analysis in the manuscript?\n\n2. Response to the analysis of echinocyte membrane is not fully satisfactory. Can the authors at least segment out regions of obvious protrusion and show that the density of Piezo1 is significantly lower in these regions?\n\n3. Response to the request regarding modeling. The reviewer will need significantly more time to digest the newly published PNAS papers, therefore cannot comment on the completeness of the response in a timely manner.\n\n4. Response to controlling for membrane density. Please provide reference to support the claim that membrane is \"smooth\" in red blood cells.\n\nMembrane folds and fluctuations below resolution limit will lead to a difference between the real membrane area and the projected membrane area. The analysis and comparison of Piezo1 density could be affect, especially if the rim and the dimple of RBC have different amount of such membrane fluctuations.\n\nReviewer #3 (Recommendations for the authors):\n\nAll my concerns have been addressed. This is now a very nice manuscript.\n",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "66db8444-606e-48cf-903c-2dfa22e72a5d",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C1",
+      "claim": "Piezo1 is the stretch activated Ca2+ channel in red blood cells that mediates homeostatic volume control.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 is the stretch activated Ca2+ channel in red blood cells that mediates homeostatic volume control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about Piezo1's function in RBCs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "1a16e452-c3d5-4c04-9025-39e517e5b11b",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C2",
+      "claim": "Piezo1 adopts a non-uniform distribution on the red blood cell surface, with a bias toward the biconcave 'dimple'.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 adopts a non-uniform distribution on the red blood cell surface, with a bias toward the biconcave 'dimple'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from 3D-SIM microscopy showing enrichment of Piezo1 in the dimple region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "8662bfb1-a26c-4714-bcb8-d4a963165e5b",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C3",
+      "claim": "Trajectories of diffusing Piezo1 molecules exhibit confined Brownian diffusion on short timescales and hopping on long timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Trajectories of diffusing Piezo1 molecules, which exhibit confined Brownian diffusion on short timescales and hopping on long timescales, also reflect a bias toward the dimple.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single particle tracking data showing different diffusion behaviors at different timescales.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "6b42fc89-bbe0-4fc9-9c37-3bd528efbb4b",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C4",
+      "claim": "The bias of Piezo1 toward the dimple can be explained by 'curvature coupling' between the intrinsic curvature of the Piezo dome and the curvature of the red blood cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This bias can be explained by 'curvature coupling' between the intrinsic curvature of the Piezo dome and the curvature of the red blood cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by both experimental observations and theoretical modeling using the Helfrich functional.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "34de77e3-b9ec-40ea-9f34-c6a57ad48211",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C5",
+      "claim": "Piezo1 does not form clusters with itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 does not form clusters with itself, nor does it colocalize with F-actin, Spectrin, or the Gardos channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by STED microscopy, electron microscopy, and cluster analysis showing individual Piezo1 channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "e836bdd1-07bb-46a7-bd9f-acacb3539ea5",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C6",
+      "claim": "Piezo1 does not colocalize with F-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 does not form clusters with itself, nor does it colocalize with F-actin, Spectrin, or the Gardos channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by OTC analysis of co-immunostained STED images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "44b0e4b3-0eee-45a7-9e58-58aa2f0dd413",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C7",
+      "claim": "Piezo1 does not colocalize with Spectrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 does not form clusters with itself, nor does it colocalize with F-actin, Spectrin, or the Gardos channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by OTC analysis of co-immunostained STED images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "64b33e23-3e73-4ff9-8f0d-a3efc4f03489",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C8",
+      "claim": "Piezo1 does not colocalize with the Gardos channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 does not form clusters with itself, nor does it colocalize with F-actin, Spectrin, or the Gardos channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by OTC analysis of co-immunostained STED images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "6eec5a9c-9676-4846-910b-b0e4d156f126",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C9",
+      "claim": "Piezo1 exhibits the properties of a force-through-membrane sensor of curvature and lateral tension in the red blood cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Piezo1 exhibits the properties of a force-through-membrane sensor of curvature and lateral tension in the red blood cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the curvature coupling behavior and lack of tethering to the cytoskeleton.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "3f2cd45d-e588-4bc2-84ab-0916c4be7207",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C10",
+      "claim": "Red blood cells experience significant mechanical forces in their lifetime as they traverse the mammalian circulatory system, squeezing through capillaries of smaller diameters than themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Red blood cells (RBCs) experience significant mechanical forces in their lifetime as they traverse the mammalian circulatory system, squeezing through capillaries of smaller diameters than themselves (Chien, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chien, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "3fbe309e-2743-49e4-92bc-0c41e9e1303c",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C11",
+      "claim": "The biconcave disk shape is central to the ability of RBCs to deform in response to shear stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Central to the ability of RBCs to deform in response to shear stress is their biconcave disk shape (Lister, 1827; Mohandas and Evans, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lister, 1827 and Mohandas and Evans, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "878d44e2-cb65-473e-baa0-37e6098ad75f",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C12",
+      "claim": "RBCs lack organelles and a transcytosolic network.",
+      "claim_type": "EXPLICIT",
+      "source": "RBCs lack organelles and a transcytosolic network and their biconcave shape is instead imparted by the plasma membrane and the membrane skeleton, a 2D quasihexagonal network of actin filament (F-actin) nodes connected by (\u03b11\u03b21)2-spectrin tetramers bound to transmembrane proteins (Fowler, 2013; Gratzer, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RBC structure, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "f471e681-ec78-4cca-b125-57d7d5386ead",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C13",
+      "claim": "The biconcave shape of RBCs is imparted by the plasma membrane and the membrane skeleton, a 2D quasihexagonal network of actin filament (F-actin) nodes connected by (\u03b11\u03b21)2-spectrin tetramers bound to transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "RBCs lack organelles and a transcytosolic network and their biconcave shape is instead imparted by the plasma membrane and the membrane skeleton, a 2D quasihexagonal network of actin filament (F-actin) nodes connected by (\u03b11\u03b21)2-spectrin tetramers bound to transmembrane proteins (Fowler, 2013; Gratzer, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fowler, 2013 and Gratzer, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "9bd178c8-a646-479b-a743-d720c6dd4a0d",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C14",
+      "claim": "In response to shear stress a Ca2+ influx is activated in RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to shear stress a Ca2+ influx is activated in RBCs (Larsen et al., 1981; Dyrda et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Larsen et al., 1981 and Dyrda et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "5b445ab4-508a-4ebb-8a13-47b3995b9f85",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C15",
+      "claim": "Ca2+ entry into RBCs modulates junctional protein interactions in the membrane skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ entry into RBCs modulates junctional protein interactions in the membrane skeleton (Nunomura, 2006) in addition to activating the Gardos channel (Gardos, 1958), a K+ channel, leading to K+ efflux and subsequent cell volume decrease (Danielczok et al., 2017), which together facilitate flexibility of the cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nunomura, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "bdac2f4b-28a2-48ea-8a00-a4db64b83de7",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C16",
+      "claim": "Ca2+ entry into RBCs activates the Gardos channel, a K+ channel, leading to K+ efflux and subsequent cell volume decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ entry into RBCs modulates junctional protein interactions in the membrane skeleton (Nunomura, 2006) in addition to activating the Gardos channel (Gardos, 1958), a K+ channel, leading to K+ efflux and subsequent cell volume decrease (Danielczok et al., 2017), which together facilitate flexibility of the cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gardos, 1958 and Danielczok et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "39334638-c5af-4868-aedb-ff5dd7edb019",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C17",
+      "claim": "Piezo1 was first suggested as the mechanosensitive Ca2+ channel in RBCs after identification of gain-of-function mutations in patients with dehydrated xerocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 was first suggested as the mechanosensitive Ca2+ channel in RBCs after identification of gain-of-function mutations in patients with dehydrated xerocytosis (Bae et al., 2013; Albuisson et al., 2013; Andolfo et al., 2013; Zarychanski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies from 2012-2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "64fcf640-7c2a-4ed9-8a4a-12cb25aaab7c",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C18",
+      "claim": "A hematopoietic PIEZO1 knockout mouse confirmed that the channel is responsible for stretch-induced calcium influx in RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies using a hematopoietic PIEZO1 knockout mouse confirmed that the channel is responsible for stretch-induced calcium influx in RBCs (Cahalan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cahalan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "dd30e70c-68f3-4960-83b2-d02e7b8a9397",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C19",
+      "claim": "It has been proposed that due to its intrinsic curvature, Piezo1 might tend to concentrate in the dimple region of RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that due to its intrinsic curvature, Piezo1 might tend to concentrate in the dimple region of RBCs (Svetina et al., 2019), but direct experimental evidence is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from the literature, cited to Svetina et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "d541a698-3fec-41ae-a70b-65431ce50174",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C20",
+      "claim": "Some authors have reported clustering of Piezo1 based on electrophysiological recordings in overexpressing cells or fluorescence microscopy of a stable cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on electrophysiological recordings in overexpressing cells (Gottlieb et al., 2012) or fluorescence microscopy of a stable cell line (Ridone et al., 2020), some authors have reported clustering of Piezo1, but channel densities in both cases are likely non-physiological.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gottlieb et al., 2012 and Ridone et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "297c687d-b189-4261-a8f9-1e6967b6773c",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C21",
+      "claim": "Extensive patch-clamp studies and simulation of Piezo1 densities in neuro2A cells led to the conclusion that Piezo1 channels are homogenously expressed across cell membranes and function as independent mechanotransducers.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive patch-clamp studies and simulation of Piezo1 densities in neuro2Acells, which express Piezo1 natively, led others to the conclusion that Piezo1 channels are homogenously expressed across cell membranes and function as independent mechanotransducers (Lewis and Grandl, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lewis and Grandl, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "451fe158-9c8e-41b7-beb5-1d5f72bdbf5b",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C22",
+      "claim": "Piezo1 can be pressure activated in membrane blebs lacking cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 can be pressure activated in membrane blebs lacking cytoskeleton (Cox et al., 2016) and exhibits spontaneous openings in asymmetric lipid droplet bilayers (Syeda et al., 2016), consistent with a 'force-from-lipids' model of activation (Martinac et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cox et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "914e3d30-723e-47b0-898e-b8c605d2a363",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C23",
+      "claim": "Piezo1 exhibits spontaneous openings in asymmetric lipid droplet bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 can be pressure activated in membrane blebs lacking cytoskeleton (Cox et al., 2016) and exhibits spontaneous openings in asymmetric lipid droplet bilayers (Syeda et al., 2016), consistent with a 'force-from-lipids' model of activation (Martinac et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Syeda et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "f2244bc7-8ae9-45e6-9e1e-28fc2d639ac6",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C24",
+      "claim": "Some claim that Piezo1 is tethered to the actin cytoskeleton and is gated by a 'force-from-filament' mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Others claim that Piezo1 is tethered to the actin cytoskeleton and is gated by a 'force-from-filament' mechanism (Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "6c4f9e25-c5d4-480d-907a-3b0aec778e6d",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C25",
+      "claim": "Only RBCs from the Piezo1HA mice and not wildtype mice showed fluorescent signal when immunostained with an anti-HA antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, only RBCs from the Piezo1HA mice and not wildtype mice showed fluorescent signal when immunostained with an anti-HA antibody (Figure 1A), confirming clear expression of Piezo1 in RBCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1A comparing control and Piezo1HA mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "a98fe955-c403-46d6-bfeb-386943475b35",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C26",
+      "claim": "Piezo1 channels appear as spots distributed on the RBC membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in 3D reconstructions, single optical sections and volume renderings from reconstructed 3D-structured illumination microscopy (3D-SIM) images (Gustafsson, 2000; Heintzmann and Huser, 2017) of immunostained RBCs, Piezo1 channels appear as spots (Figure 1A, B and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by 3D-SIM imaging data in Figure 1A, B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "fb30cc9e-8726-4abd-9c26-4b72fe84048a",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C27",
+      "claim": "3D reconstructions from z-stacks reveal ~80 Piezo1 puncta per RBC.",
+      "claim_type": "EXPLICIT",
+      "source": "3D reconstructions from z-stacks reveal ~80 Piezo1 puncta per RBC (Figure 1C), suggesting a relatively low copy number of channels per RBC, similar to estimations of Gardos channel number per RBC (Lew et al., 1982; Brugnara et al., 1993) and in contrast to very abundant RBC membrane proteins such as Band3, which is estimated to have a copy number of 1 million per cell (Fairbanks et al., 1971).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from 3D-SIM data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "0c8af386-86ec-4dc4-b667-43dc2272b9e1",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C28",
+      "claim": "Patch-clamp recordings of RBCs occasionally identified single channel currents that are stretch activated and have a conductance consistent with other reports of Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Supportively, our patch-clamp recordings of RBCs occasionally identified single channel currents that are stretch activated and have a conductance consistent with other reports of Piezo1 (Coste et al., 2010; Del M\u00e1rmol et al., 2018; Harraz et al., 2022; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 1D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "3b05b03f-f54b-4cff-8dfd-cd5258e2c2b1",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C29",
+      "claim": "Approximately 26 \u00b1 7 spots were observed per unroofed RBC, which equates to ~0.6 puncta/\u03bcm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 26 \u00b1 7 (n = 12 cells) spots were observed per unroofed RBC, which equates to ~0.6 puncta/\u03bcm2, consistent with the Piezo1 abundance observed in SIM images of intact RBCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from STED microscopy data of unroofed RBCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "4e790844-a6b0-411d-b704-5cefd5519abe",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C30",
+      "claim": "Piezo1 spots in 3D-SIM images of intact RBCs show an average nearest spot distance of 540 \u00b1 37 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 spots in 3D-SIM images of intact RBCs show a range of nearest neighbor distances (Figure 2B) with an average nearest spot distance of 540 \u00b1 37 nm (n = 19 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from 3D-SIM data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "c5a014ec-b48a-492f-8cc4-d8ae5c90a103",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C31",
+      "claim": "The nearest spot distance in 2D STED images of unroofed RBC membranes is 544 \u00b1 106 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "This is similar to the observed distribution of Piezo1 spots in 2D STED images of unroofed RBC membranes, where the nearest spot distance is 544 \u00b1 106 nm (n = 12 cells) and is consistent with fluorescent Piezo1 spots not clustering in the RBC membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from 2D STED microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "2821cbd1-14ac-4afa-8b78-ee52c96f24d5",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C32",
+      "claim": "Cluster analysis of Piezo1 spots in 2D STED images shows no statistical difference between the observed spot distribution and a simulation of randomly distributed spots.",
+      "claim_type": "EXPLICIT",
+      "source": "Further cluster analysis of Piezo1 spots in 2D STED images by 2D spatial analysis (Andrey et al., 2010) shows no statistical difference between the observed spot distribution and a simulation of randomly distributed spots (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spatial statistics analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "6d7f8b88-0d86-4dc2-9342-4fbbbdf9be7f",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C33",
+      "claim": "A significant number of fluorescent spots resolved into triplets of bright spots after deconvolution, consistent with labeling each arm of the trimeric structure of Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-deconvolution, we observed that a significant number of fluorescent spots resolved into triplets of bright spots, consistent with labeling each arm of the trimeric structure of Piezo1 (Saotome et al., 2018; Guo and MacKinnon, 2017; Figure 2E and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by deconvolved STED images in Figure 2E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "c9cb0483-b1df-403d-bbc4-801e6644c56c",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C34",
+      "claim": "Line-scan analysis of the intensity between resolved bright pixels after deconvolution yields a pixel size-limited distance of ~25 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Line-scan analysis of the intensity between resolved bright pixels after deconvolution yields a pixel size-limited distance of ~25 nm (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by line-scan analysis in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "5c539341-ca09-4e44-9a8e-84f90887b894",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C35",
+      "claim": "Piezo1 puncta never resolve beyond triplets, consistent with single Piezo1 channels where all three antibody-binding sites are occupied.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, Piezo1 puncta never resolve beyond triplets, consistent with single Piezo1 channels where all three antibody-binding sites are occupied, and not multiple trimeric Piezo1 channels clustered tightly together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from analysis of deconvolved STED images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "e3b5b187-246c-41a6-8abf-d270061dd111",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C36",
+      "claim": "A study of highly purified erythrocytes estimates approximately one hundred Piezo1 channels per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This settles inconsistencies in the available quantitative proteomics analyses of the RBC proteome (Bryk and Wi\u015bniewski, 2017; Ravenhill et al., 2019) and is in line with a study of highly purified erythrocytes, which estimates approximately one hundred Piezo1 channels per cell (Gautier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gautier et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "ce8e9097-ccb3-4cf9-8222-869522ad00a5",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C37",
+      "claim": "Gold particles were distributed over the unroofed RBC membrane without apparent clustering by negative stain electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Gold particles were distributed over the unroofed RBC membrane without apparent clustering, comparable to the distribution of fluorescent spots in STED images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by electron microscopy data in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "a14421a9-60ae-4c07-ad04-0507eec8cc7c",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C38",
+      "claim": "Triplets of gold particles with an inter-particle distance of ~25 nm were observed by negative stain electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "By negative stain electron microscopy, we were also able to observe triplets of gold particles (Figure 2G) with an inter-particle distance of ~25 nm, consistent with our 2D STED imaging of labeled trimeric Piezo1 channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by electron microscopy data in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "948ec8f1-36b1-429c-8188-db7770f10704",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C39",
+      "claim": "The dimple accounts for about 17% of the total RBC surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimple accounts for about 17% of the total RBC surface area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from segmentation analysis of 3D-SIM images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "7e8bbbb0-c8a0-4315-961f-737292e36658",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C40",
+      "claim": "The whole RBC and rim have similar Piezo1 puncta densities (0.50 \u00b1 0.16 and 0.46 \u00b1 0.17 \u03bcm\u20132, respectively) while at the dimple region the density is higher (0.80 \u00b1 0.31 \u03bcm\u20132).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the whole RBC and rim have similar Piezo1 puncta densities (0.50 \u00b1 0.16 and 0.46 \u00b1 0.17 \u03bcm\u20132, respectively) while at the dimple region the density is higher (0.80 \u00b1 0.31 \u03bcm\u20132).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from 3D-SIM imaging data with segmentation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "dee1a73d-493f-4b5c-8bce-c055b4fab414",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C41",
+      "claim": "There is approximately a twofold enrichment of Piezo1 at the dimple region of RBC membranes compared to the rim.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is approximately a twofold enrichment of Piezo1 at the dimple region of RBC membranes compared to the rim (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from density measurements shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "73f3e58a-98bb-4bd6-9161-cd8482b63ae3",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C42",
+      "claim": "There is no statistically significant enrichment of the Gardos channel (KCNN4) or Band3 in the dimple of RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find no statistically significant enrichment of the Gardos channel (KCNN4) or Band3 in the dimple of RBCs (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparative analysis in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "a8d4b921-40e8-49e8-b443-89adcf336cbf",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C43",
+      "claim": "There is no statistical enrichment of actin at the dimple, indicating that the actin\u2013spectrin meshwork is not more densely packed there.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we find no statistical enrichment of actin at the dimple, indicating that the actin\u2013spectrin meshwork is not more densely packed there (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by analysis in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "a67b99fc-7f98-4b7b-9ffc-7f410affa58d",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C44",
+      "claim": "With increasing RBC biconcavity, there is a greater enrichment of Piezo1 at the dimple.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, with increasing RBC biconcavity, we observe a greater enrichment of Piezo1 at the dimple (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by correlation analysis in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "ec4d6b30-6952-41ed-9498-fe2d702d5088",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C45",
+      "claim": "3D-SIM imaging of labeled echinocytes qualitatively shows a depletion of Piezo1 channels from membrane protrusions relative to regions of negative membrane curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "3D-SIM imaging of labeled echinocytes qualitatively shows a depletion of Piezo1 channels from such membrane protrusions relative to regions of negative membrane curvature, further supporting a mechanism of curvature coupling between the intrinsic curvature of Piezo1 and the surrounding membrane (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by imaging data in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "7f015a0c-dfe9-4845-962b-3915e1e7635d",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C46",
+      "claim": "The curvature coupling model predicts an approximately two-fold increase in the density of Piezo1 in the dimple relative to the rim.",
+      "claim_type": "EXPLICIT",
+      "source": "The curvature coupling model predicts an approximately two-fold increase in the density of Piezo1 in the dimple relative to the rim, close to the experimentally observed ratio of densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the physical model described in the Methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "9f8d4d99-2e68-46fc-a556-f769c967c5e2",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C47",
+      "claim": "In the Beck model of RBC shape, the mean curvature at any point on the RBC surface ranges from 0.24 \u03bcm\u22121 (favorable to Piezo1 in the dimple) to about \u22120.52 \u03bcm\u22121 (unfavorable to Piezo1 in the rim).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Beck model of RBC shape, the mean curvature at any point on the RBC surface ranges from 0.24 \u03bcm\u22121 (favorable to Piezo1 in the dimple) to about \u22120.52 \u03bcm\u22121 (unfavorable to Piezo1 in the rim).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the Beck model of RBC shape.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "da888542-3376-4520-aedb-f067b280a4f3",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C48",
+      "claim": "Gold particles could be unambiguously identified on RBC membranes in DIC microscopy recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Gold particles could be unambiguously identified on RBC membranes (Figure 4A and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by DIC microscopy data in Figure 4A and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "3d43187e-a092-4bb5-8879-605863a984c1",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C49",
+      "claim": "Most Piezo1 trajectories exhibited confined diffusion, although sometimes Piezo1 appeared to be freely diffusing.",
+      "claim_type": "EXPLICIT",
+      "source": "In recordings lasting 2 min we observed a range of Piezo1 diffusion trajectories (Figure 4B\u2013D). Most trajectories exhibited confined diffusion, although sometimes Piezo1 appeared to be freely diffusing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by single particle tracking data in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "e8efa2b0-de3d-4ddc-aa85-d2ed7239469b",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C50",
+      "claim": "Piezo1 was more mobile than in control cells chemically fixed with paraformaldehyde.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, Piezo1 was more mobile than in control cells chemically fixed with paraformaldehyde, when analyzed by a mean squared displacement (MSD) analysis (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by MSD analysis comparing fixed and unfixed cells in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "e1a10902-e7ee-4a7c-92af-4d2f40a05559",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C51",
+      "claim": "For confined trajectories, the confinement diameter is in the range of 200\u2013600 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "For confined trajectories, we find that the confinement diameter is in the range of 200\u2013600 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from single particle tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "8a92d21b-a493-49c9-a83b-e5325428ab89",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C52",
+      "claim": "The average MSD of the first 5 s of Piezo1 tracks yielded an apparent macroscopic diffusion coefficient of 0.0075 \u03bcm2 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the average MSD of the first 5 s of Piezo1 tracks yielded an apparent macroscopic diffusion coefficient of 0.0075 \u03bcm2 s\u22121 (Figure 4E), which is similar to that of the mobile population of Band3 (Tomishige et al., 1998) and likely reflects occasional localized periods of confinement within actin\u2013spectrin corrals over time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from MSD analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "a8562db6-89d7-49d6-b0b1-2256701c67a9",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C53",
+      "claim": "The average MSD of the first 50 ms of Piezo1 tracks yielded an apparent diffusion coefficient of 0.037 \u03bcm2 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Microscopic diffusion was also analyzed by plotting the average MSD of the first 50 ms of Piezo1 tracks before the channel will tend to become localized within confinement zones. This analysis yielded an apparent diffusion coefficient of 0.037 \u03bcm2 s\u22121, consistent with measurements of freely diffusing Piezo1 in mouse neural stem progenitor cells (Ellefsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from MSD analysis and compared to literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "fcf4325f-9322-4d0a-bf49-3b09e3826b4c",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C54",
+      "claim": "Piezo1 is observed within the dimple 81% of the time during a 1 hr recording.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Piezo1 is observed within the dimple 81% of the time during this 1 hr recording, consistent with a preference of Piezo1 for the dimple over the rim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from long-term single particle tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "26baa25f-fbdc-4630-8137-5640d0eac0c2",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C55",
+      "claim": "Analysis of tracks at the dimple or the rim yielded macroscopic diffusion coefficients of 0.0086 and 0.0074 \u03bcm2 s\u22121, respectively, which were not statistically different.",
+      "claim_type": "EXPLICIT",
+      "source": "This observed preference for the RBC dimple was not due to slower diffusion here: analysis of tracks that could easily be segmented as at the dimple or the rim yielded macroscopic diffusion coefficients of 0.0086 and 0.0074 \u03bcm2 s\u22121, respectively, which were not statistically different (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparative diffusion analysis in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "73265a1c-b7ff-478e-a07f-c0b516c2f155",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C56",
+      "claim": "A significant fraction of Band3 fluorescent puncta are observed as overlapping or directly adjacent to both F-actin and spectrin puncta by STED microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant fraction of Band3 fluorescent puncta are observed as overlapping or directly adjacent to both F-actin and spectrin puncta by STED microscopy, indicating close spatial proximity (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by co-immunostaining STED data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "db62cae2-1444-416f-9a59-c1a3cb139583",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C57",
+      "claim": "There is no significant spatial proximity of Band3 and Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we do not observe a significant spatial proximity of Band3 and Piezo1, suggesting that if Piezo1 is tethered to actin\u2013spectrin it is not as part of the Band3 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by OTC analysis of co-immunostained STED images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "42d998ff-8c21-47d3-b13f-782a96b4a0f3",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C58",
+      "claim": "At a threshold of 100 nm, 0.6 or 60% of signals from Band3 complexes are considered proximal enough to specify as colocalized with both actin and spectrin.",
+      "claim_type": "EXPLICIT",
+      "source": "At a threshold of 100 nm, for example, 0.6 or 60% of signals from Band3 complexes are considered proximal enough to specify as colocalized with both actin and spectrin, consistent with the two aforementioned well-known populations of Band3 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from OTC analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "350a9ef3-d52f-4a14-8163-a2fd7a10d1d6",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C59",
+      "claim": "Only 0.15 or 15% of Piezo1 signals are considered proximal enough to specify as colocalized with Band3 at a threshold of 100 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, only 0.15 or 15% of Piezo1 signals are considered proximal enough to specify as colocalized with Band3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from OTC analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "a7613c8d-d758-48ed-ae96-a488dad9f048",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C60",
+      "claim": "There is no significant spatial proximity between Piezo1 to either F-actin or spectrin by STED microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not observe significant spatial proximity between Piezo1 to either F-actin or spectrin by STED microscopy (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by co-immunostaining STED data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "eec083f7-dc40-4251-b2b2-d5bdf3508b93",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C61",
+      "claim": "At a threshold of 100 nm, an OTC score of only 0.1 is observed for Piezo1 with actin or spectrin.",
+      "claim_type": "EXPLICIT",
+      "source": "At a threshold of 100 nm we observe an OTC score of only 0.1 for Piezo (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from OTC analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "08e29008-e171-4774-acc1-7860349711aa",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C62",
+      "claim": "Piezo1 does not tend to exhibit close spatial proximity to actin or spectrin and is unlikely to bind to the membrane skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data show that unlike Band3, Piezo does not tend to exhibit close spatial proximity to actin or spectrin and is unlikely to bind to the membrane skeleton, consistent with its observed mobility in tracking experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from OTC analysis and single particle tracking data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "ddee715a-90f0-4bbe-af4e-85a2ce654752",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C63",
+      "claim": "Piezo1 and KCNN4 do not appear to form complexes in RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 and KCNN4 do not appear to form complexes in RBCs (Figure 5A, B), but it should be noted, given the small size of the RBC, that colocalization of Piezo1 and KCNN4 is not necessary for a functional coupling of the ion fluxes associated with these two channels (see Discussion).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by OTC analysis in Figure 5A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "4d96c9cb-1b7e-4b42-8c14-365b22404395",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C64",
+      "claim": "Piezo1 does not cluster in the RBC membrane at the smallest level of organization.",
+      "claim_type": "EXPLICIT",
+      "source": "At the smallest level of Piezo1 organization, that is with itself, we find that Piezo1 does not cluster in the RBC membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from multiple imaging approaches including STED and electron microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "0f23b62c-fa8e-4579-ad37-02ab27fc8079",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C65",
+      "claim": "The average distance between Piezo1 channels is approximately 550 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The average distance between Piezo1 channels is approximately 550 nm, although occasionally we observe two to three channels within 100-nm distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from SIM and STED imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "8c70cbf8-01da-4514-9ba6-681b238fb5fa",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C66",
+      "claim": "Studies of neuro2A cells found that Piezo1 channels do not tend to cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in good agreement with studies of neuro2A cells, which natively express Piezo1, that also found that Piezo1 channels do not tend to cluster (Lewis and Grandl, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lewis and Grandl, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "f91b0d83-9052-42b6-911c-931e0ec8b366",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C67",
+      "claim": "Per \u03bcm2 area of membrane there is an almost twofold enrichment of Piezo1 in the dimple relative to the rim.",
+      "claim_type": "EXPLICIT",
+      "source": "Per \u03bcm2 area of membrane we find an almost twofold enrichment of Piezo1 in the dimple relative to the rim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from 3D-SIM imaging data with segmentation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "b6d3fe66-681f-4cb1-af30-3ede37f977ea",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C68",
+      "claim": "A study analyzing overexpressed Piezo1 in HeLa cells showed depletion of the channel from membrane filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a study analyzing overexpressed Piezo1 in HeLa cells showed depletion of the channel from membrane filopodia, consistent with a mechanism of curvature coupling whereby the channel unfavorably distributes into membrane regions of high opposing curvature (Yang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Yang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "9a07c72a-249c-4a1e-b59d-90e37d049b4c",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C69",
+      "claim": "Curvature sensing of membrane proteins by curvature matching has been well documented for BAR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Curvature sensing of membrane proteins by curvature matching has been well documented for other intrinsically curved proteins such as Bin/Amphiphysin/Rvs (BAR) (Simunovic et al., 2015; Tsai et al., 2021) proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Simunovic et al., 2015 and Tsai et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "3c7d865d-1f6e-4b72-ae62-05b83ee203e8",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C70",
+      "claim": "Glycosylation can determine the membrane curvature sensing properties of some proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, it has been shown that glycosylation can determine the membrane curvature sensing properties of some proteins (Lu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "042a0b78-1104-44cc-a936-528d0f56b480",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C71",
+      "claim": "Myosin IIA shows an enrichment in the RBC dimple relative to the RBC rim.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, it is noteworthy that the force-generating protein myosin IIA also shows an enrichment in the RBC dimple relative to the RBC rim (Alimohamadi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Alimohamadi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "8e5f9d08-7b75-4c48-9147-89522ac58122",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C72",
+      "claim": "The spatial scales associated with the confined diffusion regime most likely reflect the compartment sizes of the actin\u2013spectrin meshwork.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial scales associated with the confined diffusion regime most likely reflect the compartment sizes of the actin\u2013spectrin meshwork we observe by 2D STED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of confinement sizes with STED imaging of the actin-spectrin meshwork.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "3dfb167a-4438-4699-861a-026c15d317f1",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C73",
+      "claim": "A model of confined diffusion set by actin\u2013spectrin is well documented in RBCs and other cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a model of confined diffusion set by actin\u2013spectrin is well documented in RBCs (Tsuji et al., 1988) and other cell types (Fujiwara et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tsuji et al., 1988 and Fujiwara et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "fbc01f34-8811-45e6-8ca3-5c923a50a90a",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C74",
+      "claim": "~200\u2013500 nm voids that are deficient in actin or spectrin signal are observed by 2D STED.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to observations by others using STORM microscopy (Pan et al., 2018), we observe ~200\u2013500 nm voids that are deficient in actin or spectrin signal by 2D STED.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by STED imaging data and compared to literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "79bf7cd7-26d1-4352-ac26-25c7adbab64d",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C75",
+      "claim": "Nanoscale 'defects' in the actin\u2013spectrin meshwork have been observed by atomic force microscopy imaging of RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar nanoscale 'defects' in the actin\u2013spectrin meshwork have also been observed by atomic force microscopy imaging of RBCs (Nowakowski et al., 2001) and may serve as weak points in the meshwork that facilitate fast RBC remodeling during shear stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nowakowski et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "4e3ddac0-248d-479b-837c-5f555ea1572d",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C76",
+      "claim": "Piezo1's confined diffusion within the actin\u2013spectrin meshwork compartments should be contrasted with the near-immobilization observed for proteins such as CFTR and Band3.",
+      "claim_type": "EXPLICIT",
+      "source": "Our double labeling experiments suggest that Piezo1 does not form a complex with actin or spectrin, which is consistent with Piezo1's confined diffusion within the actin\u2013spectrin meshwork compartments, and should be contrasted with the near-immobilization observed for proteins such as CFTR and Band3 (Kodippili et al., 2009, 3; Haggie et al., 2006), which both form complexes with actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with literature on other membrane proteins.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "3c95e6c3-583f-40d8-88d2-36e9bd935ea1",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C77",
+      "claim": "Chemical agents that disrupt the actin cytoskeleton affect Piezo1 currents in other cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "This could also explain how chemical agents that disrupt the actin cytoskeleton affect Piezo1 currents in other cell types (Gottlieb et al., 2012; Wang et al., 2022), that is through changes in organization of the membrane rather than disruption of a direct tether to the channel itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gottlieb et al., 2012 and Wang et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "014ddf3d-8c59-4456-a1db-b90380aec02a",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C78",
+      "claim": "Ca2+ should equilibrate within tens of ms within a RBC based on the apparent diffusion coefficient for intracellular Ca2+ being in the range 13\u201365 \u03bcm2/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent diffusion coefficient for intracellular Ca2+ is in the range 13\u201365 \u03bcm2/s (Nakatani et al., 2002), meaning that Ca2+ should equilibrate within tens of ms within a RBC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from known diffusion coefficients cited from literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "d69cd47d-a500-49e9-ba11-527f048066b0",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C79",
+      "claim": "In rat ventricular myocytes, Piezo1 has been shown to colocalize with TRPM4 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In rat ventricular myocytes, for example, Piezo1 has recently been shown, by diffraction-limited confocal microscopy, to colocalize with transient receptor melastatin (TRPM4) channels (Yu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Yu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "5ba0c7d2-43e6-435f-8dcf-c4bd8b83ad9d",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C80",
+      "claim": "The radius of curvature of Piezo1 is estimated to be 41.4 nm at the dimple and 42.7 nm at the rim.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate a radius of curvature of 41.4 nm at the dimple and 42.7 nm at the rim and thus the curvature differences across the unperturbed RBC membrane are, alone, insufficient to substantially change the shape of Piezo1, and thus are not expected to open its pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the physical model using experimentally determined values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "b5c8c018-a9fc-48ff-9350-379ea0ecaccc",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C81",
+      "claim": "Curvature differences across the unperturbed RBC membrane are insufficient to substantially change the shape of Piezo1 and thus are not expected to open its pore.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate a radius of curvature of 41.4 nm at the dimple and 42.7 nm at the rim and thus the curvature differences across the unperturbed RBC membrane are, alone, insufficient to substantially change the shape of Piezo1, and thus are not expected to open its pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from calculations of Piezo1 curvature at different RBC locations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "a9c094c1-4d14-4ed8-86df-8153f98beff9",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C82",
+      "claim": "Curvature sensing and lateral membrane tension sensing are inextricably linked for Piezo1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this manner, curvature sensing and lateral membrane tension sensing are inextricably linked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between membrane tension and curvature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "6bd0f9b4-15e8-4a38-bb68-21907ba9bd21",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C83",
+      "claim": "When RBCs squeeze through small capillaries, the membrane shape as well as the transmembrane pressure change transiently.",
+      "claim_type": "EXPLICIT",
+      "source": "When RBCs squeeze through small capillaries, the membrane shape as well as the transmembrane pressure change transiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of RBC behavior in circulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "ca6e2a5d-efa5-40c2-9224-35fb327b34d5",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C84",
+      "claim": "Changes in membrane curvature and lateral membrane tension can both open Piezo1's pore to trigger Ca2+ entry according to the membrane dome model of Piezo gating.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting changes in membrane curvature and lateral membrane tension can both, according to the membrane dome model of Piezo gating, open Piezo1's pore to trigger Ca2+ entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the membrane dome model and the observed properties of Piezo1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "85d76d35-88a0-427d-884e-5caa66d2d3cd",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C85",
+      "claim": "An HA epitope tag was inserted into an extracellular loop of the PIEZO1 gene in the Piezo1HA mouse line.",
+      "claim_type": "EXPLICIT",
+      "source": "To detect Piezo1 in RBCs a Piezo1HA mouse line was generated (Jackson Laboratories) in which an HA epitope tag was inserted into an extracellular loop of the PIEZO1 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used to generate the mouse line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "4882f1ac-6911-4754-a9de-516341c92d28",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C86",
+      "claim": "The HA-tagged Piezo1 channel functions similar to the WT channel in electrophysiological recordings of HEK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The HA-tagged Piezo1 channel functions similar to the WT channel in electrophysiological recordings of HEK cells and could be specifically detected by immunostaining (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by electrophysiological data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "98327744-484a-49dc-a96a-245fd16a1761",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C87",
+      "claim": "Piezo1 spots are distributed on the RBC membrane contoured by phalloidin staining of actin.",
+      "claim_type": "EXPLICIT",
+      "source": "These spots are distributed on the RBC membrane, here contoured by phalloidin staining of actin, which forms part of the actin\u2013spectrin network bound to the cytosolic face of the RBC membrane (Ballas and Krasnow, 1980; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by imaging data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "0e5b520c-399f-4483-a5fd-f5bab155edb7",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C88",
+      "claim": "The enrichment of Piezo1 at the dimple region of the RBC membrane is not due to enzymatic deglycosylation of RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment of Piezo1 at the dimple region of the RBC membrane is not due to enzymatic deglycosylation of RBCs, which we used to increase antibody binding to HA-tagged Piezo1 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by control experiments in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "a004489d-f3ff-44bc-9c7c-415daa12f12d",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C89",
+      "claim": "Treatment of RBCs with NaSalicyate generates echinocytes characterized by 'thorny' membrane protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of RBCs with NaSalicyate, which preferentially binds into the outer membrane leaflet, generates echinocytes (Li et al., 1999), RBCs that are characterized by 'thorny' membrane protrusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "82c8e414-5807-4cc7-98fe-e92800277132",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C90",
+      "claim": "Piezo1 is represented as a spherical cap with area 450 nm2 and approximate radius of curvature 42 nm in the physical model.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the plausibility of this mechanism, we developed a simple physical model of Piezo1 curvature coupling in which Piezo1 is represented as a spherical cap with area 450 nm2 and approximate radius of curvature 42 nm, the estimated asymptotic value in a planar membrane (Haselwandter et al., 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameters used in the physical model, based on literature values.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "6aa63514-df3a-423b-88ae-a1ca2943455e",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C91",
+      "claim": "The Beck model was used to describe the RBC shape with diameter 8.0 \u03bcm, dimple thickness 1.0 \u03bcm, maximum rim thickness 2.5 \u03bcm, and area 138 \u03bcm2.",
+      "claim_type": "EXPLICIT",
+      "source": "To describe the RBC shape, we used the model of Beck, 1978 and calculated the mean curvature at each point on the surface (Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model used for RBC shape, citing Beck, 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "17d5abf6-00d9-452a-9e19-0920df5e1528",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "claim_id": "C93",
+      "claim": "Joint energy minimization permitting Piezo1 to flex leads to the conclusion that Piezo1 in an unperturbed RBC should change its mean dome radius of curvature by less than approximately 2 nm as a function of position on the RBC surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We also carried out a joint energy minimization of the free membrane as described above while simultaneously permitting Piezo1 to flex, that is, to change its radius of curvature, as part of the energy minimization. This calculation was made possible through our recently determined bending modulus of the Piezo dome itself (Haselwandter et al., 2022a). This calculation leads to the conclusion that Piezo1 in an unperturbed RBC should change its mean dome radius of curvature by less than approximately 2 nm as a function of position on the RBC surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the extended physical model allowing Piezo1 flexibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "640d7c9a-d1e6-415c-9e94-6b0e04223b9d",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated a Piezo1HA mouse line with an HA epitope tag inserted into an extracellular loop of the PIEZO1 gene. The HA-tagged Piezo1 channel functions similarly to the WT channel in electrophysiological recordings and can be specifically detected by immunostaining. Only RBCs from Piezo1HA mice showed fluorescent signal when immunostained with an anti-HA antibody, confirming expression of Piezo1 in RBCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85, C86, and C25 provide converging evidence that the Piezo1HA mouse model is functional and suitable for studying Piezo1 in RBCs. The electrophysiological validation (C86) and specific immunostaining (C25) demonstrate that the tagged channel behaves like WT and can be reliably detected.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "56714d17-85e5-4209-afce-404def20b017",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using 3D-SIM microscopy, the authors show that Piezo1 channels appear as spots distributed on the RBC membrane, with approximately 80 Piezo1 puncta per RBC. This low copy number is consistent with patch-clamp recordings that occasionally identified single stretch-activated channel currents with conductance consistent with Piezo1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C27, C28, and C87 provide complementary evidence from imaging and electrophysiology. The 3D-SIM quantification (C27) is supported by functional patch-clamp data (C28), and the distribution on the membrane is clearly visualized (C26, C87). The convergence of these independent methods strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "06804a2d-aa32-4b28-963f-07c397d59478",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Piezo1 does not cluster in RBC membranes. Multiple imaging approaches including 3D-SIM, 2D STED microscopy, and electron microscopy show that Piezo1 channels are distributed with an average nearest neighbor distance of approximately 540-550 nm. Deconvolved STED images resolve individual Piezo1 channels as triplets of bright spots consistent with the trimeric structure, and these puncta never resolve beyond triplets, indicating single channels rather than clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C29-C35, C37-C38, C64-C65 provide extensive evidence from multiple orthogonal techniques (3D-SIM, STED, EM) all converging on the conclusion that Piezo1 does not cluster. The resolution of triplets (C33-C35) is particularly strong evidence for single channels. The spatial statistics analysis (C32) provides quantitative support. This is a well-supported major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "a99022dd-c03f-4410-8059-76f5617263d9",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Piezo1 adopts a non-uniform distribution on the RBC surface with approximately twofold enrichment at the biconcave dimple compared to the rim. The dimple accounts for about 17% of total RBC surface area. This enrichment is specific to Piezo1, as other membrane proteins (Gardos channel, Band3) and actin show no significant enrichment at the dimple. The enrichment increases with greater RBC biconcavity and is not due to the deglycosylation treatment used for antibody binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C39-C45, C67, C88 provide strong quantitative evidence for Piezo1 enrichment at the dimple. The specificity is demonstrated by negative controls (C42-C43), the correlation with biconcavity (C44) supports the curvature coupling mechanism, and the echinocyte data (C45) provides additional supporting evidence. The control for deglycosylation (C88) addresses a potential confound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "aaaf8bfd-4a9a-4810-bd45-d276fa59e395",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The bias of Piezo1 toward the dimple can be explained by curvature coupling between the intrinsic curvature of the Piezo dome and the curvature of the RBC membrane. A physical model using the Helfrich functional and Beck RBC shape model predicts approximately twofold enrichment in the dimple, matching experimental observations. However, curvature differences across the unperturbed RBC membrane are insufficient to substantially change Piezo1 shape or open its pore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C46-C47, C80-C81, C90-C91, C93 present a theoretical model that quantitatively matches experimental observations (C46). The model is based on established physical principles (Helfrich functional) and uses reasonable parameters from literature. The conclusion that curvature differences don't gate the channel (C80-C81) is appropriately cautious. The agreement between theory and experiment is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Piezo1 exhibits lateral mobility in the RBC membrane with confined Brownian diffusion on short timescales (microscopic diffusion coefficient 0.037 \u03bcm\u00b2/s) and hopping on long timescales (macroscopic diffusion coefficient 0.0075 \u03bcm\u00b2/s). Confinement diameters range from 200-600 nm, likely reflecting actin-spectrin meshwork compartments. Long-term tracking shows Piezo1 spends 81% of time in the dimple, but diffusion coefficients at dimple and rim are not statistically different.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C48-C55, C72 provide detailed characterization of Piezo1 mobility using single particle tracking. The two diffusion regimes are well-documented (C52-C53), the confinement sizes are consistent with cytoskeletal organization (C51, C72), and the dimple preference without slower diffusion (C54-C55) supports the curvature coupling model rather than specific binding. The data are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "76d8ec42-8853-401e-a420-0bbb06382bf8",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Piezo1 does not colocalize with F-actin, spectrin, or Band3 in RBCs. Using STED microscopy and optimal transport colocalization (OTC) analysis, only 10% of Piezo1 signals show spatial proximity to actin or spectrin at 100 nm threshold, compared to 60% for Band3. This indicates Piezo1 is unlikely to bind to the membrane skeleton, consistent with its observed mobility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C56-C62 use appropriate super-resolution microscopy and quantitative colocalization analysis. The positive control with Band3 (C56, C58) validates the approach. The low OTC scores for Piezo1 (C61) and comparison with Band3 (C59) provide strong evidence against cytoskeletal tethering. This is consistent with the mobility data (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "0eeb67a5-24f4-4434-9c5e-8e93ce86a18e",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Piezo1 and the Gardos channel (KCNN4) do not appear to form complexes in RBCs based on OTC analysis. However, given the small size of RBCs and the rapid equilibration of Ca\u00b2\u207a (within tens of ms), colocalization is not necessary for functional coupling between these channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C63, C78 appropriately conclude that lack of colocalization does not preclude functional coupling. The Ca\u00b2\u207a diffusion calculation (C78) provides quantitative support for why spatial proximity is unnecessary in RBCs. This is a reasonable interpretation of negative colocalization data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "97d01f44-8a8d-4ae2-8e39-8710aa0c5647",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Piezo1 exhibits the properties of a force-through-membrane sensor of curvature and lateral tension in RBCs. Curvature sensing and lateral membrane tension sensing are inextricably linked for Piezo1. When RBCs squeeze through capillaries, changes in membrane curvature and lateral tension can both open Piezo1's pore according to the membrane dome model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C82-C84 synthesize the experimental findings into a coherent model. The conclusion is well-supported by the curvature coupling data, lack of cytoskeletal tethering, and mobility observations. The linkage between curvature and tension sensing (C82) is a logical inference from the membrane dome model. This represents the main conceptual advance of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "3f28172c-9a80-4f48-b552-a7b323404cc0",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing the physiological context: RBCs experience mechanical forces in circulation, their biconcave shape is central to deformation, Ca\u00b2\u207a influx is activated by shear stress, and Piezo1 was identified as the mechanosensitive Ca\u00b2\u207a channel responsible for stretch-induced calcium influx in RBCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C18 are well-established facts from the literature, appropriately cited. These provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "e9a8758c-d44c-41b2-8b9d-713f8ddf6dee",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Literature review claims: Previous work proposed Piezo1 might concentrate in the RBC dimple but lacked direct evidence. Conflicting reports exist about Piezo1 clustering and cytoskeletal tethering, with some studies suggesting clustering in overexpression systems and others concluding homogeneous distribution in native cells. Evidence exists for both force-from-lipids and force-from-filament gating mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 accurately represent the state of the literature and identify gaps that this study addresses. These are appropriately cited and provide motivation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    },
+    {
+      "id": "1a1b7172-ab70-45b9-a4c1-067216b29a01",
+      "content_id": "6e3baf26-87e5-4434-b7d8-d8f97dd54075",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Supporting literature claims: The ~100 Piezo1 channels per RBC estimate is consistent with prior proteomics studies. The lack of clustering agrees with studies in neuro2A cells. Curvature coupling is documented for other proteins like BAR domains. The confined diffusion model and actin-spectrin defects are well-documented. Effects of cytoskeletal disruption on Piezo1 may reflect membrane organization changes rather than direct tethering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C66, C68-C71, C73-C77, C79, C89 appropriately contextualize the findings within existing literature. These comparisons strengthen the conclusions by showing consistency with other systems and mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:51:52.769562Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "85d76d35-88a0-427d-884e-5caa66d2d3cd",
+      "result_id": "640d7c9a-d1e6-415c-9e94-6b0e04223b9d"
+    },
+    {
+      "claim_id": "4882f1ac-6911-4754-a9de-516341c92d28",
+      "result_id": "640d7c9a-d1e6-415c-9e94-6b0e04223b9d"
+    },
+    {
+      "claim_id": "6c4f9e25-c5d4-480d-907a-3b0aec778e6d",
+      "result_id": "640d7c9a-d1e6-415c-9e94-6b0e04223b9d"
+    },
+    {
+      "claim_id": "a98fe955-c403-46d6-bfeb-386943475b35",
+      "result_id": "56714d17-85e5-4209-afce-404def20b017"
+    },
+    {
+      "claim_id": "fb30cc9e-8726-4abd-9c26-4b72fe84048a",
+      "result_id": "56714d17-85e5-4209-afce-404def20b017"
+    },
+    {
+      "claim_id": "0c8af386-86ec-4dc4-b667-43dc2272b9e1",
+      "result_id": "56714d17-85e5-4209-afce-404def20b017"
+    },
+    {
+      "claim_id": "98327744-484a-49dc-a96a-245fd16a1761",
+      "result_id": "56714d17-85e5-4209-afce-404def20b017"
+    },
+    {
+      "claim_id": "34de77e3-b9ec-40ea-9f34-c6a57ad48211",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "3b05b03f-f54b-4cff-8dfd-cd5258e2c2b1",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "4e790844-a6b0-411d-b704-5cefd5519abe",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "c5a014ec-b48a-492f-8cc4-d8ae5c90a103",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "2821cbd1-14ac-4afa-8b78-ee52c96f24d5",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "6d7f8b88-0d86-4dc2-9342-4fbbbdf9be7f",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "c9cb0483-b1df-403d-bbc4-801e6644c56c",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "5c539341-ca09-4e44-9a8e-84f90887b894",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "ce8e9097-ccb3-4cf9-8222-869522ad00a5",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "a14421a9-60ae-4c07-ad04-0507eec8cc7c",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "4d96c9cb-1b7e-4b42-8c14-365b22404395",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "0f23b62c-fa8e-4579-ad37-02ab27fc8079",
+      "result_id": "06804a2d-aa32-4b28-963f-07c397d59478"
+    },
+    {
+      "claim_id": "1a16e452-c3d5-4c04-9025-39e517e5b11b",
+      "result_id": "a99022dd-c03f-4410-8059-76f5617263d9"
+    },
+    {
+      "claim_id": "948ec8f1-36b1-429c-8188-db7770f10704",
+      "result_id": "a99022dd-c03f-4410-8059-76f5617263d9"
+    },
+    {
+      "claim_id": "7e8bbbb0-c8a0-4315-961f-737292e36658",
+      "result_id": "a99022dd-c03f-4410-8059-76f5617263d9"
+    },
+    {
+      "claim_id": "dee1a73d-493f-4b5c-8bce-c055b4fab414",
+      "result_id": "a99022dd-c03f-4410-8059-76f5617263d9"
+    },
+    {
+      "claim_id": "73f3e58a-98bb-4bd6-9161-cd8482b63ae3",
+      "result_id": "a99022dd-c03f-4410-8059-76f5617263d9"
+    },
+    {
+      "claim_id": "a8d4b921-40e8-49e8-b443-89adcf336cbf",
+      "result_id": "a99022dd-c03f-4410-8059-76f5617263d9"
+    },
+    {
+      "claim_id": "a67b99fc-7f98-4b7b-9ffc-7f410affa58d",
+      "result_id": "a99022dd-c03f-4410-8059-76f5617263d9"
+    },
+    {
+      "claim_id": "ec4d6b30-6952-41ed-9498-fe2d702d5088",
+      "result_id": "a99022dd-c03f-4410-8059-76f5617263d9"
+    },
+    {
+      "claim_id": "f91b0d83-9052-42b6-911c-931e0ec8b366",
+      "result_id": "a99022dd-c03f-4410-8059-76f5617263d9"
+    },
+    {
+      "claim_id": "0e5b520c-399f-4483-a5fd-f5bab155edb7",
+      "result_id": "a99022dd-c03f-4410-8059-76f5617263d9"
+    },
+    {
+      "claim_id": "6b42fc89-bbe0-4fc9-9c37-3bd528efbb4b",
+      "result_id": "aaaf8bfd-4a9a-4810-bd45-d276fa59e395"
+    },
+    {
+      "claim_id": "7f015a0c-dfe9-4845-962b-3915e1e7635d",
+      "result_id": "aaaf8bfd-4a9a-4810-bd45-d276fa59e395"
+    },
+    {
+      "claim_id": "9f8d4d99-2e68-46fc-a556-f769c967c5e2",
+      "result_id": "aaaf8bfd-4a9a-4810-bd45-d276fa59e395"
+    },
+    {
+      "claim_id": "5ba0c7d2-43e6-435f-8dcf-c4bd8b83ad9d",
+      "result_id": "aaaf8bfd-4a9a-4810-bd45-d276fa59e395"
+    },
+    {
+      "claim_id": "b5c8c018-a9fc-48ff-9350-379ea0ecaccc",
+      "result_id": "aaaf8bfd-4a9a-4810-bd45-d276fa59e395"
+    },
+    {
+      "claim_id": "82c8e414-5807-4cc7-98fe-e92800277132",
+      "result_id": "aaaf8bfd-4a9a-4810-bd45-d276fa59e395"
+    },
+    {
+      "claim_id": "6aa63514-df3a-423b-88ae-a1ca2943455e",
+      "result_id": "aaaf8bfd-4a9a-4810-bd45-d276fa59e395"
+    },
+    {
+      "claim_id": "17d5abf6-00d9-452a-9e19-0920df5e1528",
+      "result_id": "aaaf8bfd-4a9a-4810-bd45-d276fa59e395"
+    },
+    {
+      "claim_id": "8662bfb1-a26c-4714-bcb8-d4a963165e5b",
+      "result_id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc"
+    },
+    {
+      "claim_id": "da888542-3376-4520-aedb-f067b280a4f3",
+      "result_id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc"
+    },
+    {
+      "claim_id": "3d43187e-a092-4bb5-8879-605863a984c1",
+      "result_id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc"
+    },
+    {
+      "claim_id": "e8efa2b0-de3d-4ddc-aa85-d2ed7239469b",
+      "result_id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc"
+    },
+    {
+      "claim_id": "e1a10902-e7ee-4a7c-92af-4d2f40a05559",
+      "result_id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc"
+    },
+    {
+      "claim_id": "8a92d21b-a493-49c9-a83b-e5325428ab89",
+      "result_id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc"
+    },
+    {
+      "claim_id": "a8562db6-89d7-49d6-b0b1-2256701c67a9",
+      "result_id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc"
+    },
+    {
+      "claim_id": "fcf4325f-9322-4d0a-bf49-3b09e3826b4c",
+      "result_id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc"
+    },
+    {
+      "claim_id": "26baa25f-fbdc-4630-8137-5640d0eac0c2",
+      "result_id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc"
+    },
+    {
+      "claim_id": "8e5f9d08-7b75-4c48-9147-89522ac58122",
+      "result_id": "125014c9-5c2c-422a-9f6f-4b3a0c4702dc"
+    },
+    {
+      "claim_id": "e836bdd1-07bb-46a7-bd9f-acacb3539ea5",
+      "result_id": "76d8ec42-8853-401e-a420-0bbb06382bf8"
+    },
+    {
+      "claim_id": "44b0e4b3-0eee-45a7-9e58-58aa2f0dd413",
+      "result_id": "76d8ec42-8853-401e-a420-0bbb06382bf8"
+    },
+    {
+      "claim_id": "73265a1c-b7ff-478e-a07f-c0b516c2f155",
+      "result_id": "76d8ec42-8853-401e-a420-0bbb06382bf8"
+    },
+    {
+      "claim_id": "db62cae2-1444-416f-9a59-c1a3cb139583",
+      "result_id": "76d8ec42-8853-401e-a420-0bbb06382bf8"
+    },
+    {
+      "claim_id": "42d998ff-8c21-47d3-b13f-782a96b4a0f3",
+      "result_id": "76d8ec42-8853-401e-a420-0bbb06382bf8"
+    },
+    {
+      "claim_id": "350a9ef3-d52f-4a14-8163-a2fd7a10d1d6",
+      "result_id": "76d8ec42-8853-401e-a420-0bbb06382bf8"
+    },
+    {
+      "claim_id": "a7613c8d-d758-48ed-ae96-a488dad9f048",
+      "result_id": "76d8ec42-8853-401e-a420-0bbb06382bf8"
+    },
+    {
+      "claim_id": "eec083f7-dc40-4251-b2b2-d5bdf3508b93",
+      "result_id": "76d8ec42-8853-401e-a420-0bbb06382bf8"
+    },
+    {
+      "claim_id": "08e29008-e171-4774-acc1-7860349711aa",
+      "result_id": "76d8ec42-8853-401e-a420-0bbb06382bf8"
+    },
+    {
+      "claim_id": "64b33e23-3e73-4ff9-8f0d-a3efc4f03489",
+      "result_id": "0eeb67a5-24f4-4434-9c5e-8e93ce86a18e"
+    },
+    {
+      "claim_id": "ddee715a-90f0-4bbe-af4e-85a2ce654752",
+      "result_id": "0eeb67a5-24f4-4434-9c5e-8e93ce86a18e"
+    },
+    {
+      "claim_id": "014ddf3d-8c59-4456-a1db-b90380aec02a",
+      "result_id": "0eeb67a5-24f4-4434-9c5e-8e93ce86a18e"
+    },
+    {
+      "claim_id": "6eec5a9c-9676-4846-910b-b0e4d156f126",
+      "result_id": "97d01f44-8a8d-4ae2-8e39-8710aa0c5647"
+    },
+    {
+      "claim_id": "a9c094c1-4d14-4ed8-86df-8153f98beff9",
+      "result_id": "97d01f44-8a8d-4ae2-8e39-8710aa0c5647"
+    },
+    {
+      "claim_id": "6bd0f9b4-15e8-4a38-bb68-21907ba9bd21",
+      "result_id": "97d01f44-8a8d-4ae2-8e39-8710aa0c5647"
+    },
+    {
+      "claim_id": "ca6e2a5d-efa5-40c2-9224-35fb327b34d5",
+      "result_id": "97d01f44-8a8d-4ae2-8e39-8710aa0c5647"
+    },
+    {
+      "claim_id": "66db8444-606e-48cf-903c-2dfa22e72a5d",
+      "result_id": "3f28172c-9a80-4f48-b552-a7b323404cc0"
+    },
+    {
+      "claim_id": "3f2cd45d-e588-4bc2-84ab-0916c4be7207",
+      "result_id": "3f28172c-9a80-4f48-b552-a7b323404cc0"
+    },
+    {
+      "claim_id": "3fbe309e-2743-49e4-92bc-0c41e9e1303c",
+      "result_id": "3f28172c-9a80-4f48-b552-a7b323404cc0"
+    },
+    {
+      "claim_id": "878d44e2-cb65-473e-baa0-37e6098ad75f",
+      "result_id": "3f28172c-9a80-4f48-b552-a7b323404cc0"
+    },
+    {
+      "claim_id": "f471e681-ec78-4cca-b125-57d7d5386ead",
+      "result_id": "3f28172c-9a80-4f48-b552-a7b323404cc0"
+    },
+    {
+      "claim_id": "9bd178c8-a646-479b-a743-d720c6dd4a0d",
+      "result_id": "3f28172c-9a80-4f48-b552-a7b323404cc0"
+    },
+    {
+      "claim_id": "5b445ab4-508a-4ebb-8a13-47b3995b9f85",
+      "result_id": "3f28172c-9a80-4f48-b552-a7b323404cc0"
+    },
+    {
+      "claim_id": "bdac2f4b-28a2-48ea-8a00-a4db64b83de7",
+      "result_id": "3f28172c-9a80-4f48-b552-a7b323404cc0"
+    },
+    {
+      "claim_id": "39334638-c5af-4868-aedb-ff5dd7edb019",
+      "result_id": "3f28172c-9a80-4f48-b552-a7b323404cc0"
+    },
+    {
+      "claim_id": "64fcf640-7c2a-4ed9-8a4a-12cb25aaab7c",
+      "result_id": "3f28172c-9a80-4f48-b552-a7b323404cc0"
+    },
+    {
+      "claim_id": "dd30e70c-68f3-4960-83b2-d02e7b8a9397",
+      "result_id": "e9a8758c-d44c-41b2-8b9d-713f8ddf6dee"
+    },
+    {
+      "claim_id": "d541a698-3fec-41ae-a70b-65431ce50174",
+      "result_id": "e9a8758c-d44c-41b2-8b9d-713f8ddf6dee"
+    },
+    {
+      "claim_id": "297c687d-b189-4261-a8f9-1e6967b6773c",
+      "result_id": "e9a8758c-d44c-41b2-8b9d-713f8ddf6dee"
+    },
+    {
+      "claim_id": "451fe158-9c8e-41b7-beb5-1d5f72bdbf5b",
+      "result_id": "e9a8758c-d44c-41b2-8b9d-713f8ddf6dee"
+    },
+    {
+      "claim_id": "914e3d30-723e-47b0-898e-b8c605d2a363",
+      "result_id": "e9a8758c-d44c-41b2-8b9d-713f8ddf6dee"
+    },
+    {
+      "claim_id": "f2244bc7-8ae9-45e6-9e1e-28fc2d639ac6",
+      "result_id": "e9a8758c-d44c-41b2-8b9d-713f8ddf6dee"
+    },
+    {
+      "claim_id": "e3b5b187-246c-41a6-8abf-d270061dd111",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "8c70cbf8-01da-4514-9ba6-681b238fb5fa",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "b6d3fe66-681f-4cb1-af30-3ede37f977ea",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "9a07c72a-249c-4a1e-b59d-90e37d049b4c",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "3c7d865d-1f6e-4b72-ae62-05b83ee203e8",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "042a0b78-1104-44cc-a936-528d0f56b480",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "3dfb167a-4438-4699-861a-026c15d317f1",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "fbc01f34-8811-45e6-8ca3-5c923a50a90a",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "79bf7cd7-26d1-4352-ac26-25c7adbab64d",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "4e3ddac0-248d-479b-837c-5f555ea1572d",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "3c95e6c3-583f-40d8-88d2-36e9bd935ea1",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "d69cd47d-a500-49e9-ba11-527f048066b0",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    },
+    {
+      "claim_id": "a004489d-f3ff-44bc-9c7c-415daa12f12d",
+      "result_id": "1a1b7172-ab70-45b9-a4c1-067216b29a01"
+    }
+  ],
+  "comparisons": []
+}

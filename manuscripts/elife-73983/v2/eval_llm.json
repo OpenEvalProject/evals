@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The BB-QTL mapping approach enables construction, genotyping, and phenotyping of 100,000 F1 yeast segregants, representing a two-order-of-magnitude increase over previous QTL mapping studies. The method combines DNA barcoding, low-coverage sequencing with genotype imputation, liquid handling robotics, and cross-validated statistical inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C20-C26 describe the BB-QTL method and its scale. The manuscript provides detailed protocols, demonstrates successful generation of ~100,000 segregants, and shows this represents a substantial advance over previous studies (C9-C10 indicate prior studies used at most a few thousand individuals). The technical implementation is thoroughly documented in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Low-coverage sequencing (median 0.6x) combined with HMM-based genotype imputation achieves high accuracy for genotyping F1 segregants. At 0.1x coverage and above, genotypes are confidently assigned at >99% of loci with posterior probability >92%, with errors detectable only near recombination breakpoints. Posterior probabilities are well-calibrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe genotyping performance with specific quantitative metrics. The manuscript provides validation through high-coverage resequencing comparisons (C31), posterior probability calibration analysis (C32), and demonstrates the approach exploits high SNP density (~700 SNPs between breakpoints, C28). The allele frequency distribution (C33) confirms expected Mendelian segregation except at selected markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44"
+    ],
+    "result": "Bulk phenotyping via barcoded competition assays enables scalable fitness measurements across 18 environments. The approach tracks individual segregant frequencies through 49 generations of competition, with measurements that are reproducible between replicates (average R\u00b2=0.77) despite inverse correlation between fitness and measurement error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 describe the phenotyping approach and its validation. The manuscript demonstrates reproducibility across replicates (Figure 1E, Figure 1\u2014figure supplement 4), documents 18 different growth conditions (C40, Table 1), and addresses potential confounders like de novo mutations (C44). The approach is clearly distinguished from bulk segregant analysis (C39) and shown to be scalable (C35-C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A modified stepwise regression approach using cross-validation for model selection, joint re-optimization of effect sizes and lead SNP positions, and Bayesian credible intervals achieves low false positive rates while accurately identifying QTL. Simulations show the method accurately identifies lead SNPs and credible intervals even with moderate linkage, though it tends to be conservative, missing only QTL of extremely small effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe the statistical inference method and its validation. The manuscript provides detailed methodological description (Appendix 3) and simulation-based validation demonstrating low false positive rates, accurate lead SNP identification, and conservative behavior (C49-C51). The three key innovations (cross-validation, joint optimization, Bayesian intervals) are clearly justified as improvements over traditional stepwise regression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Complex traits in yeast are highly polygenic, with hundreds of small-effect loci (>100 QTL for almost every trait) densely distributed throughout the genome. The distribution of effect sizes shows enrichment of small-effect loci consistent with an exponential-like distribution above the detection limit. This polygenicity is directly attributable to large sample size, as downsampling to 1000 individuals detects no more than 30 QTL per trait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C54-C59 describe the highly polygenic architecture. The manuscript provides direct evidence through QTL mapping results (Figure 2, Figure 3B, Table 1), downsampling analysis demonstrating sample size dependence (C54-C55), and effect size distributions (C56-C58, Figure 3C). The exponential-like distribution and inference about undetected smaller-effect loci (C59) are reasonable interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "High mapping resolution is achieved, with most QTL mapped to one or two genes and dozens mapped to single SNPs. Many identified genes are consistent with previous studies, and in some cases the causal SNP within a previously identified gene is resolved for the first time. However, some lead SNPs may tag linked variation rather than being causal themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 describe fine-mapping resolution. The manuscript demonstrates high resolution through multiple recombinants between neighboring SNPs (C60), quantifies mapping precision (C61-C62, Figure 3D), and validates findings against previous studies (C63-C64). The caveat about linked variation (C65) is appropriately acknowledged given that the SNP panel doesn't capture all genetic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C75",
+      "C77",
+      "C92"
+    ],
+    "result": "Widespread pleiotropy is observed, with 449 pleiotropic genes affecting multiple traits. While pleiotropy is common, changes in effect sizes across environments are largely unpredictable, even for similar traits. Dividing QTL into functional modules and predicting effect size changes across environments remains difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C75, C77, C92 describe pleiotropic patterns. The manuscript identifies 449 pleiotropic genes (C75), demonstrates unpredictable effect size changes even along temperature gradients (Figure 3H, Figure 3\u2014figure supplement 3), and acknowledges the difficulty in identifying functional modules (C77). The evidence supports both the prevalence of pleiotropy and the complexity of its patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C93"
+    ],
+    "result": "Epistasis is widespread, with nearly twice as many interaction terms as additive QTL (thousands of interactions total). Epistatic networks show small-world properties characteristic of the 'omnigenic' model: heavy-tailed degree distributions, high clustering coefficients, and short average path lengths (~3 steps between genes). Hundreds of epistatic interactions are shared across environments, with a subset of genes occupying central network positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C78-C82, C93 describe epistatic architecture. The manuscript provides extensive evidence: counts of epistatic interactions (Table 1), network analysis showing small-world properties (C79-C80, Figure 4C), comparison to omnigenic model predictions (C81), and identification of shared interactions across environments (C82, Figure 4D). The network statistics are compared to appropriate null models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C90"
+    ],
+    "result": "Experimental validation through reconstruction of 6 single and 9 double mutants shows that additive-only models are correlated with measured phenotypes but systematically overestimate effect sizes. Additive-plus-pairwise models show significantly better agreement with measured values (p<0.0001), suggesting models with epistasis more closely approach the correct genetic architecture despite explaining only marginally more variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87, C90 describe reconstruction validation. The manuscript provides experimental measurements (C85), demonstrates correlation but systematic bias in additive models (C86), shows improved predictions with epistatic models (C87, Figure 5A), and uses permutation tests to demonstrate statistical significance (p<0.0001). The interpretation that epistatic models better capture architecture despite similar variance explained (C90) is supported by the data and consistent with previous studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "A dense neural network explains slightly more phenotypic variance (on average 1% more) than the additive-plus-pairwise QTL model, suggesting potential higher-order interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 describes neural network performance. The manuscript provides quantitative comparison (Figure 5B, Appendix 4) showing modest improvement. The 1% increase is small but consistent, suggesting the presence of higher-order effects that the neural network can capture but that are difficult to interpret mechanistically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Lead SNP alleles with large effect sizes are observed at significantly lower minor allele frequencies in natural populations, consistent with rare, strongly deleterious alleles under negative selection contributing to complex trait architecture. However, strong evidence of directional selection was not detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 describe signatures of selection. The manuscript provides statistical evidence for enrichment of rare alleles among large-effect QTL (Figure 3F, p=0.0004) and interprets this in the context of negative selection (C70). The negative result for directional selection (C71) is appropriately qualified with potential explanations (high polygenicity, weak concordance with natural selection pressures).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The BB-QTL approach reveals that complex trait architecture in model organisms is influenced by large numbers of previously unobserved small-effect variants, bridging the gap between laboratory QTL studies and large-scale GWAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 summarizes the main conclusion. This is well-supported by the totality of evidence showing highly polygenic architecture (C3, C54-C59), the dependence on large sample size (C54-C55), and the resolution of composite QTL into multiple linked loci. The claim appropriately positions the work as bridging QTL and GWAS approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The parental strains YAN696 and YAN695 are derived from BY4741 (S288C) and RM11-1a backgrounds, chosen for their history in QTL mapping and phenotypic diversity. The RM strain was modified to correct an incomplete division phenotype by introducing the A1103T allele in AMN1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 describe strain construction. The manuscript provides detailed strain information with appropriate citations (C94-C95), documents a known phenotype of the ancestral RM strain (C96), and describes the correction procedure (C97). These are straightforward methodological details that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "To avoid yeast DNA contamination in commercial zymolyase preparations, beta-1,3-glucanase was recombinantly produced in E. coli. The Tn5 transposition reaction is efficient in crude yeast lysate when cells are lysed appropriately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 describe technical solutions for library preparation. The manuscript documents the contamination problem with commercial zymolyase (C98), describes the recombinant production solution (C99), and reports successful tagmentation in crude lysate (C100). These are methodological optimizations that enabled the high-throughput approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Combinatorial pooling with five orthogonal pool types (row, column, plate, set, batch) enables barcode-to-well assignment for 99,950 segregants. The approach achieves high accuracy, with 99.5% of first-pass assignments and 97.7% of LAP algorithm assignments showing correct batch and set matches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108 describe the combinatorial pooling strategy and its validation. The manuscript provides sequencing coverage statistics (C101), explains the pooling principle (C102-C103), documents sequencing depth (C104), reports final assignment numbers (C105-C106), and validates accuracy using parental barcode information (C107-C108). The high validation rates support the reliability of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The segregant collection was processed in batches of 48 96-well plates (4,608 segregants each), with each batch requiring 14 days to process. By maintaining 2-6 batches concurrently in staggered fashion, 23 batches were completed in approximately 6 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 describe the workflow logistics. These are straightforward operational details that are clearly documented in the Materials and Methods section. The timeline and batch processing strategy are internally consistent and demonstrate the feasibility of the large-scale approach.",
+    "result_type": "MINOR"
+  }
+]

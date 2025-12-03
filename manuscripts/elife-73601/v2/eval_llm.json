@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The three K-to-A mutations (K810A, K848A, K855A) alter the allosteric structure of the HNH domain, with K855A exerting the strongest disruption of allosteric connectivity, K810A and K848A showing moderate effects, and this differential perturbation correlating with the order of specificity enhancement (K855A > K848A ~ K810A) observed in biochemical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 are well-supported by converging evidence from NMR chemical shift perturbations (C24-C29), computational EP scores (C33-C35), edge betweenness analysis (C47, C50-C51, C63), and CPMG relaxation dispersion experiments (C37-C39, C53). The correlation with biochemical specificity data from Slaymaker et al., 2016 (C7, C64-C65) strengthens the mechanistic link between allosteric perturbation and specificity enhancement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C89",
+      "C90"
+    ],
+    "result": "The overall structure of the HNH domain is maintained in all three K-to-A mutants, with all systems >95% folded at 25\u00b0C, though K855A and K810A show lower melting temperatures than K848A and WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C89-C90 are directly supported by circular dichroism spectroscopy data shown in Figure 1\u2014figure supplement 2. The CD spectra demonstrate that all mutants retain significant alpha-helical character similar to WT, and melting curve analysis quantifies the thermal stability differences. This establishes that the mutations cause functional changes without gross structural disruption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "NMR chemical shift perturbation analysis reveals that K855A causes the most extensive structural perturbations (severe exchange broadening and significant chemical shifts on the RuvC-adjacent interface), K810A shows intermediate effects, and K848A causes the most modest perturbations, with this trend correlating to the mutations' positions relative to the allosteric pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 are well-supported by NMR 1H-15N HSQC data shown in Figures 1 and 2. The composite chemical shift perturbations (\u0394\u03b4) are quantified and show a clear trend (K855A > K810A > K848A) that correlates with the structural location of each residue relative to the previously identified allosteric pathway. The exchange broadening observed for K855A provides additional evidence of dynamic perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The environmental perturbation (EP) scores computed from MD simulations follow the experimental trend of NMR chemical shift perturbations, with consistent results between isolated HNH domain and full-length Cas9 simulations, validating that the MD structural ensemble properly represents the local environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by the qualitative agreement between computational EP scores and experimental NMR \u0394\u03b4 shown in Figure 2. The consistency between isolated HNH and full-length Cas9 simulations (Figure 2 and Figure 2\u2014figure supplement 1) strengthens confidence in the computational approach. However, the agreement is qualitative rather than quantitative, which is appropriate given the different physical quantities being compared.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "CPMG relaxation dispersion experiments detect \u03bcs-ms timescale motions in residues comprising the WT allosteric pathway in all three mutants, with consistent dispersion profiles suggesting retention of dynamic residues. The mutations modestly shift the distribution of exchange rates (kex) toward slower regimes while maintaining similar average kex values, and faster (ps-ns) timescale motions are only locally altered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are well-supported by CPMG relaxation dispersion data (Figure 3, Figure 3\u2014figure supplements 1-4). The retention of curved dispersion profiles across mutants indicates preservation of the allosteric pathway dynamics. The kex distribution analysis (Figure 3\u2014figure supplement 3) and order parameter comparisons (Figure 3\u2014figure supplement 4) provide quantitative support. The modest changes in average kex and good agreement between experimental and computational S2 values strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C58"
+    ],
+    "result": "The residues composing the dynamic pathways differ very little between the three mutants and WT, with consistency between full-length Cas9 and isolated HNH construct, indicating that dynamic allosteric signaling is preserved in the mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C58 are supported by pathway analysis shown in Appendix 1\u2014figures 1-4 and Figure 3. The computational pathway analysis using information theory and the experimental CPMG data converge on the conclusion that the overall pathway structure is maintained. This is an important finding that distinguishes pathway preservation from altered communication efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C59",
+      "C60"
+    ],
+    "result": "Community network analysis identifies seven communities in WT HNH, with three allosteric communities (A1, A2, A3) holding most residues displaying slow timescale dynamics. All three K-to-A mutations dramatically disrupt communication between the A1 and A2 allosteric communities, which are central to the pathway, indicating that the mutations disrupt the allosteric crosstalk between RuvC and REC2 and that this disruption is associated with increased specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49, C59-C60 are strongly supported by community network analysis and edge betweenness (\u0394EB) calculations shown in Figure 4. The consistent loss of A1-A2 communication across all mutants (shown by negative \u0394EB values in Figure 4B) provides a mechanistic link between allosteric disruption and specificity enhancement. The integration of computational \u0394EB analysis with NMR CPMG data (Figure 5) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C63"
+    ],
+    "result": "K855A primarily disrupts crosstalk between allosteric communities while non-allosteric sites gain communication, whereas K810A and K848A display progressive gain in communication between both allosteric and non-allosteric sites, with K855A more strongly disrupting communication between allosteric sites compared to the other two mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C63 are supported by detailed \u0394EB analysis shown in Figure 4B. The circular network diagrams clearly show differential patterns of communication loss (red) and gain (blue) for each mutant. K855A shows predominantly red connections between allosteric communities, while K810A and K848A show more blue connections, indicating compensatory communication gains. This differential effect correlates with the specificity enhancement order.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "NMR-based community network analysis shows a decrease in dynamic exchange between allosteric communities upon mutation (represented by thinner bonds) while non-allosteric communities show increased involvement, consistent with the mutation-induced edge betweenness changes determined from computational analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by the integrated analysis of CPMG data in the context of computationally-derived communities (Figure 5 and Figure 5\u2014figure supplement 1). The consistency between experimental (NMR) and computational (MD) approaches strengthens confidence in the conclusions. The visualization of bond thickness reflecting dynamic exchange provides clear evidence of altered communication patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C85"
+    ],
+    "result": "The A1-A2 communities are identified as critical allosteric hotspots for signal transmission, and future mutational studies of residues comprising these communities (residues 839-856, 864-869, 809-828, 857-863) could impact allosteric communication and modulate Cas9 function and specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 and C85 represent speculative suggestions based on the identification of A1-A2 as consistently disrupted across all mutants. While the identification of these communities as hotspots is well-supported by the data (C60), the suggestion that targeting these residues will improve function is a hypothesis requiring experimental validation. The claims appropriately use conditional language ('could', 'suggesting'), but no experimental evidence is provided to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C73"
+    ],
+    "result": "The biophysical magnitude of allosteric signal perturbation mirrors the biochemical order of specificity enhancement (K855A > K848A ~ K810A) observed in prior studies, with K855A achieving the highest specificity as a single mutation while K810A and K848A required additional substitutions for maximal specificity, suggesting that structural and dynamic perturbations can be related to increased specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 and C72-C73 establish a correlation between the biophysical measurements in this study and biochemical specificity data from Slaymaker et al., 2016. The correlation is well-supported by multiple converging lines of evidence (NMR, MD, network analysis) all showing the same rank order. However, correlation does not prove causation, and the mechanistic link, while plausible, remains inferential. The claims appropriately acknowledge this with language like 'can be related to' rather than claiming direct causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "K810A and K848A require additional K1003A and R1060A mutations (localized away from HNH) to achieve maximal specificity. MD simulations show these additional mutations induce remarkable flexibility of distal DNA bases, consistent with a mechanism involving neutralization of positive charges at the DNA non-target strand. K855A likely increases specificity mainly through HNH allosterism, while K810A and K848A combine moderate allosteric effects with weakening of DNA non-target strand interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 integrate data from this study with prior biochemical work (Slaymaker et al., 2016) and new MD simulations of triple mutants (Figure 7). The increased DNA flexibility in triple mutants is directly shown by RMSD analysis (C77). However, the mechanistic interpretations (C76, C78-C81) involve significant inference and speculation. The claims appropriately use conditional language ('might', 'could', 'suggest'), but the dual mechanism hypothesis (allosteric + electrostatic) lacks direct experimental validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In addition to electrostatic effects, the K-to-A mutants alter HNH dynamics and impact allosteric communication between REC and RuvC, which has a profound influence on Cas9 activation and represents an important source of specificity enhancement. The allosteric crosstalk can be targeted for improving specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are well-supported by the comprehensive \u0394EB and NMR analyses showing altered allosteric communication. The conclusion that this altered communication influences Cas9 activation is supported by the correlation with specificity data. However, C84 is more speculative, suggesting that allosteric crosstalk 'can be targeted' for improvement. While supported by analogy to other allosteric proteins (Liu and Nussinov, 2016), this remains a hypothesis requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study employed a 'bottom-up' integrative approach combining solution NMR (to identify allosteric motions in optimized HNH constructs) with multi-microsecond all-atom MD simulations (~14.4 \u03bcs total, with ~1.2 \u03bcs trajectories in three replicas per system) and graph theory-derived models to translate allosteric signaling from the individual HNH domain to full-length Cas9 with atomic-level detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 and C91-C93 describe the methodological approach and are well-supported by the detailed methods section and results. The simulation times are clearly stated, and the integration of NMR and MD is demonstrated throughout the results. The 'bottom-up' strategy is validated by the consistency between isolated HNH and full-length Cas9 analyses (C34, C43). This represents a sound methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The X-ray structure of the isolated HNH construct shows high structural similarity to HNH within full-length Cas9, with an RMSD of 0.92 \u00c5 for C\u03b1 atoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is directly supported by structural superposition shown in Figure 1\u2014figure supplement 1. The low RMSD value validates the use of the isolated HNH construct as a model for studying the domain within full-length Cas9, which is critical for the study's bottom-up approach. This is a straightforward structural validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C56",
+      "C69",
+      "C70"
+    ],
+    "result": "Background and context claims establishing that CRISPR-Cas9 is a genome editing tool with transformative capabilities, that allosteric signaling through the HNH domain is critical for DNA cleavage and specificity, that off-target DNA binding affects HNH dynamics, and that three K-to-A mutations (K810A, K848A, K855A) enhance specificity but their mechanism was poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C21, C56, C69-C70 represent background knowledge and literature context supported by appropriate citations to foundational papers (Jinek et al., 2012; Jiang and Doudna, 2017; Sternberg et al., 2015; Chen et al., 2017; Dagdas et al., 2017; Slaymaker et al., 2016; and others). These claims establish the scientific context and knowledge gap that motivates the study. The citations appear appropriate and the claims accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C68",
+      "C79",
+      "C80"
+    ],
+    "result": "Speculative mechanistic interpretations suggesting that K855A increases specificity mainly by leveraging HNH allosterism, while K810A and K848A combine moderate allosteric effects with weakening of DNA non-target strand interactions, and that allosteric hotspots can be targeted for improving Cas9 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C68, C79-C80 represent mechanistic interpretations that extend beyond the direct experimental evidence. While these interpretations are reasonable given the data (correlation between allosteric perturbation and specificity, need for additional mutations in K810A/K848A, DNA flexibility in triple mutants), they involve significant inference. The claims appropriately use conditional language ('could', 'suggest'), but experimental validation of these mechanisms (e.g., testing whether targeting A1-A2 hotspots improves specificity, or directly demonstrating that K855A works purely through allosterism) is not provided.",
+    "result_type": "MINOR"
+  }
+]

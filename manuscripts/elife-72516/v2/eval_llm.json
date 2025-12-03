@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The local fitness landscape topology of a seven-residue NA antigenic region is highly conserved across six H3N2 strains isolated approximately 10 years apart (1968-2019), with variant fitness correlating well across genetic backgrounds (Pearson correlation = 0.48-0.79). This conservation indicates that epistasis between the antigenic region and the rest of NA is largely variant-nonspecific, contrasting with findings for HA where fitness landscape topology differed dramatically among genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43, C44, and C45 are well-supported by experimental data showing strong correlations of variant fitness across genetic backgrounds (Figure 2b). The inference that epistasis is variant-nonspecific (C44) logically follows from the high correlation despite differences in absolute fitness values. The comparison to HA (C46) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C56",
+      "C85"
+    ],
+    "result": "Pairwise epistasis is highly conserved across the six genetic backgrounds (Pearson correlation = 0.69-0.86), while additive fitness contributions vary substantially (Pearson correlation = 0.12-0.88). This demonstrates that epistatic interactions, rather than additive effects, are the conserved feature of this NA antigenic region's fitness landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C56 are strongly supported by the experimental data shown in Figures 3b-c and supplementary figures. The statistical model comparison (C57) further validates that epistasis is necessary to explain the data. The contrast between conserved epistasis and variable additive fitness is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C59",
+      "C60",
+      "C62",
+      "C84"
+    ],
+    "result": "Local net charge governs pairwise epistasis in the studied NA antigenic region, with amino acid variants of opposite charges exhibiting positive epistasis and variants with the same charge exhibiting negative epistasis. This charge balancing imposes a key biophysical constraint on the evolution of this antigenic region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are supported by data in Figures 3b, 4a, and supplementary figures showing clear patterns of epistasis based on charge states. The inference that charge balancing is a biophysical constraint (C62, C84) is well-justified by the systematic relationship between charge and epistasis across all genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Variants with local net charge around -1 have higher fitness, while variants with more positive or negative charges have lower fitness across all genetic backgrounds. This demonstrates that local net charge is a molecular phenotype under balancing selection that constrains NA antigenic evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by data in Figure 4c and Figure 4\u2014figure supplement 4 showing consistent fitness optima around -1 charge across all backgrounds. The inference that this represents balancing selection (C72, C94) is well-justified by the fitness data showing intermediate optima.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Direct side-chain electrostatic interactions are unlikely to be the major determinant of epistasis in this NA antigenic region, as the distances between charged residues (5.5-11.6 \u00c5) are too large for salt bridge formation or significant electrostatic forces, and pairwise epistasis does not correlate with side-chain distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural measurements (C63, C64, C66) are supported by crystal structure analysis. The interpretation that these distances preclude direct electrostatic interactions (C65, C67) is appropriately cited. The lack of correlation between epistasis and distance (C69, shown in Figure 4d-f) provides strong evidence against direct interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C86"
+    ],
+    "result": "Pairwise epistasis between charge states is highly correlated with residue coevolution in naturally circulating H3N2 strains (Pearson correlation = 0.79-0.92), with opposite charges showing positive coevolution scores and epistasis, while same charges show negative scores and epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by data in Figure 5c and Figure 5\u2014figure supplement 4. The coevolution analysis methodology is described in detail. The high correlation between experimentally measured epistasis and natural coevolution provides strong validation of the biophysical constraint model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Most natural variants in the antigenic region have local net charge between -1 and +1, with variants having charges of -3, -2, +2, or +3 being rare. This suggests natural evolution is constrained by the need to balance local net charge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by analysis of 66,562 natural sequences shown in Figure 5a. The observation that extreme charges are rare (C75) and the inference that evolution is constrained by charge balancing (C76) are well-supported by the fitness data showing optimal fitness at intermediate charges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C51",
+      "C98"
+    ],
+    "result": "The ancestral strain HK68 has much lower mutational tolerance at the studied antigenic region compared to subsequent strains, with most variants being strongly deleterious (fitness < -1) in HK68 while such variants are rare in other backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C51 are clearly supported by data in Figure 2a showing the distinct fitness distribution for HK68. The observation is consistent across replicates despite lower correlation for HK68 (C38-C39). This represents a robust finding about differential mutational tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Most natural variants from the 1980s onward are strongly deleterious (fitness < -1) on the HK68 background, indicating that many natural variants would not have emerged without evolution of the genetic background. This demonstrates that emergence of variants in the antigenic region is contingent on evolution of the rest of NA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by data in Figure 2c showing fitness of natural variants across backgrounds. The inference that variants are contingent on background evolution (C49-C50) is well-justified by the observation that later variants are deleterious on the ancestral background but viable on evolved backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C82"
+    ],
+    "result": "Realized evolutionary trajectories in nature are seldom the most probable ones constructed from fitness data alone, indicating that additional considerations beyond fitness and epistasis are needed to predict exact amino acid mutations along evolutionary trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by data in Figure 5\u2014figure supplement 5 showing that natural trajectories differ from fitness-maximizing trajectories. The inference that additional factors are needed (C82) is appropriately cautious and acknowledges limitations of fitness-only models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Other biophysical features of NA are evolving over time and epistatically interact with the antigenic region in a residue-nonspecific manner, potentially explained by the threshold robustness model where protein stability differences affect mutational tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is an inference from the differential mutational tolerance data. Claims C102-C104 are explicitly speculative explanations invoking the threshold robustness model. While the speculation is reasonable and appropriately cited, no direct evidence for stability differences is provided (acknowledged in C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "High correlation was observed between biological replicates (Pearson correlation = 0.81-0.89) except for HK68 and Bk79 (0.39 and 0.63), with lower correlation attributed to high measurement noise for low fitness variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is directly supported by data in Figure 1\u2014figure supplement 3. The explanation for lower correlation in HK68 and Bk79 (C39) is a reasonable inference from the scatter plots showing more noise at low fitness values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The difference in variant fitness distribution across genetic backgrounds was not due to differences in wild-type replication fitness, as viral titers from rescue experiments were similar among HK68 WT, Bei89 WT, and Mos99 WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by experimental data in Figure 2\u2014figure supplement 1 showing similar TCID50 values across strains. This control experiment appropriately addresses a potential confounding explanation for the fitness distribution differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "An additive-only model without epistasis shows poor fit to the fitness landscape data compared to the pairwise epistasis model, despite additive fitness effects correlating well between the two models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by model comparison data in Figure 3\u2014figure supplement 4. This validates the necessity of including epistasis terms in the model and demonstrates that epistasis captures variance not explained by additive effects alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Since H3N2 virus entered the human population in 1968, HA has accumulated more than 83 amino acid mutations and NA has accumulated more than 73 mutations, accounting for approximately 15% of their protein sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by data analysis shown in Figure 1\u2014figure supplement 1. The calculation that this represents ~15% of sequences (C13) is straightforward arithmetic from the mutation counts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Only 53 of the 864 possible haplotypes of interest have been observed in naturally circulating human H3N2 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by analysis of natural sequences shown in Figure 1\u2014figure supplement 2. This observation motivates the study by showing that most theoretically possible combinations are not realized in nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The six strains studied (HK68, Bk79, Bei89, Mos99, Vic11, and HK19) were all historical vaccine strains isolated approximately 10 years apart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is a factual statement about the experimental design that is verifiable from the strain names and dates. This represents appropriate sampling across the evolutionary history of H3N2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Homologous regions in H1N1 NA and influenza B NA do not evolve as extensively as H3N2 NA, but residue 329 coevolves with 344 in seasonal H1N1 NA, suggesting similar charge balancing may influence H1N1 NA evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by data in Figure 5\u2014figure supplement 6. The inference that similar charge balancing may occur in H1N1 (C89) is appropriately tentative and based on the observed coevolution pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "E344 and K369 had the strongest positive epistasis in five of six genetic backgrounds (except Bei89), with both E344/K369 and K328/E344 pairs exhibiting positive epistasis while K328/K369 exhibited negative epistasis across all backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by epistasis data shown in Figure 3\u2014figure supplement 5. These specific examples illustrate the general pattern of charge-dependent epistasis and provide concrete evidence for the charge balancing mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Seven residues (328, 329, 344, 367, 368, 369, 370) form a spatial cluster in NA structure, with residues 328 and 367 under positive selection and coevolution of residues 367 and 369 creating an N-glycosylation site in 2010, indicating these residues participated in antigenic drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by structural data (Figure 1a-b) and natural sequence analysis (Figure 1c). The inference about participation in antigenic drift (C35) is reasonable given the positive selection and coevolution evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The local net charge may affect host membrane attachment kinetics, NA catalytic efficiency, or protein stability, though the specific functional mechanisms remain speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 are explicitly speculative about functional mechanisms. While the speculation is reasonable and C97 is supported by citations, no direct experimental evidence for these specific mechanisms is provided in the study. These represent hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C10",
+      "C14"
+    ],
+    "result": "NA in H3N2 virus has evolved extensively for over 50 years due to immune pressure and has recently emerged as an effective vaccine target, though NA evolution is less well characterized than HA evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6, and C10 are appropriately supported by citations to published literature. Claim C14 is a reasonable assessment of the field. These claims provide important context and motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C30",
+      "C31"
+    ],
+    "result": "NA has a defined structural organization with the head domain functioning as an enzyme to cleave sialylated glycan receptors, and most NA antibodies target surface loops surrounding the catalytic site, with specific residues identified as antibody escape sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 represent established structural and functional knowledge about NA, appropriately cited. Claims C30-C31 provide historical context about antibody epitope mapping that is well-cited. This background information is accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Epistasis is a phenomenon where mutation fitness effects depend on genetic background, can restrict or open evolutionary trajectories, is a primary challenge for predicting evolution, and has been shown to influence influenza evolution including drug resistance, though its role in NA antigenic evolution remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 represent established knowledge about epistasis appropriately supported by citations. Claim C22 accurately assesses the knowledge gap that motivates this study. This background is accurate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Deep mutational scanning has been used to measure fitness effects of single mutations in influenza proteins and can help model evolution, but lacks power to measure epistasis. Combinatorial mutagenesis enables measurement of high-order mutants and has provided insights into HA antigenic evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 accurately describe the methodological context and prior work, appropriately supported by citations. This establishes the rationale for using combinatorial mutagenesis to study epistasis in NA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C83",
+      "C90",
+      "C91",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Understanding biophysical constraints is key to modeling protein evolution, charge balancing is a known signature of correlated evolution, and accurate influenza evolution prediction likely requires integrating multiple types of data including biophysical epistatic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C90, and C108 are appropriately supported by citations to relevant literature. Claims C91, C109 summarize the contribution of the current work. Claim C110 is appropriately speculative about future developments. This discussion contextualizes the findings appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C105",
+      "C106"
+    ],
+    "result": "Nonspecific epistasis is often related to protein stability as described by the threshold robustness model, and some nonlinearity observed in variant fitness comparisons is consistent with this model, though additional studies are needed to confirm the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 accurately describe the threshold robustness model with appropriate citations. Claim C105 notes features in the data consistent with the model. Claim C106 appropriately acknowledges that the mechanism remains unconfirmed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The experimental system used chimeric 6:2 reassortant viruses with HA from HK68 and NA from strains of interest, with specific construct designs for HA and NA segments, and analyzed 66,562 natural H3N2 NA sequences from GISAID.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 describe the experimental methods and data sources used in the study. These are factual statements about the experimental design that are verifiable from the methods section.",
+    "result_type": "MINOR"
+  }
+]

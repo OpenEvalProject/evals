@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Actin assembles in discrete, transient patches at the presynaptic membrane with quantifiable dynamics. Using multiple actin probes (GMA, GFP::actin, Lifeact::Ruby), the authors measured patch frequency (~1.2-2.8 patches/10 \u03bcm\u00b2/min at 0.25 Hz), duration (mean ~48s at 0.25 Hz, ~16s at 1 Hz), and amplitude (68\u00b132%), with similar dynamics across different probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 provide converging evidence from multiple actin probes showing consistent patch dynamics. The quantitative measurements are supported by automated tracking analysis (Figure 1B-D) and validated across different imaging frequencies. The robustness analysis (Figure 1\u2014figure supplement 2) demonstrates that findings are stable across parameter space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Synaptic actin patches are predominantly composed of branched F-actin and require WASp for assembly. Patches strongly colocalize with Arp3::GFP (Pearson coefficient 0.70), and both genomic and RNAi-mediated loss of WASp significantly reduces patch frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are well-supported by colocalization data (Figure 1E-F) and genetic manipulation experiments (Figure 1G-I, Figure 1\u2014figure supplement 1C-F). The Arp3 colocalization is significantly higher than the negative control (BRP), and WASp loss-of-function consistently reduces patch frequency across different experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The endocytic machinery (Nwk, Dap160, WASp) localizes broadly across the periactive zone membrane, while actin assembly is spatially and temporally restricted. PAZ proteins form a membrane-proximal mesh surrounding active zones, but actin patches only partially colocalize with these proteins (Pearson coefficients 0.36-0.38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C42-C46 are supported by SIM imaging (Figure 2A-B) and colocalization analysis (Figure 2C-F). The broad distribution of PAZ proteins contrasts sharply with the sparse actin patches, establishing a key spatial mismatch that motivates the autoinhibition hypothesis. The quantitative colocalization data are appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Dap160 and Nwk interact through multiple domain interfaces with distinct biochemical properties. Dap160 SH3C-containing fragments interact with NwkSH3b via hydrophobic interactions (salt-resistant), while Dap160 SH3C/D domains interact with the Nwk F-BAR domain via electrostatic interactions (salt-sensitive).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by systematic GST pulldown assays (Figure 3B, Figure 3\u2014figure supplement 1) with appropriate salt titration controls. The differential salt sensitivity clearly distinguishes the two interaction modes. The biochemical characterization is thorough and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The Dap160-Nwk interaction is required for normal Nwk localization and abundance at synapses in vivo. Truncation of Dap160SH3CD reduces Nwk levels and colocalization with Dap160 at synaptic boutons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by imaging and quantification of Nwk levels in Dap160 domain deletion mutants (Figure 3D-E). The phenotype is specific to the SH3CD deletion and not observed with SH3D deletion alone, supporting the importance of the SH3C-mediated interaction. The data are consistent with the in vitro binding studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Collective interactions between Nwk, Dap160SH3CD, and WASp relieve Nwk autoinhibition and enhance actin assembly in vitro. The combination of Nwk and Dap160SH3CD significantly enhances WASp-Arp2/3-mediated actin assembly compared to Nwk alone, and this effect requires the Dap160SH3D domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C53-C55 are supported by pyrene-actin assembly assays (Figure 4A) showing synergistic activation. The requirement for specific domains is demonstrated by domain deletion analysis. The in vitro reconstitution provides direct mechanistic evidence for relief of autoinhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "PI(4,5)P2-containing membranes synergistically activate the Nwk-Dap160-WASp complex and direct actin assembly to the lipid interface. Neither Nwk, PI(4,5)P2, nor their combination alone activates WASp, but together with Dap160 they promote membrane-coupled actin assembly, while deregulated Nwk\u0394SH3b produces free-floating actin asters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by pyrene-actin assays with liposomes (Figure 4B) and droplet assays (Figure 4C). The requirement for all three components (Nwk, Dap160, membrane) demonstrates coincidence detection. The contrast between wild-type Nwk (membrane-coupled) and Nwk\u0394SH3b (free asters) directly demonstrates the role of autoinhibition in directing actin assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Dap160SH3CD and WASp cooperatively enhance Nwk membrane recruitment in a membrane charge-dependent manner. Dap160SH3CD enhances Nwk membrane binding at 5-10% PI(4,5)P2, and the addition of both Dap160SH3CD and WASp together promotes maximal Nwk membrane association and enriches membrane recruitment of both WASp and Dap160.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by liposome cosedimentation assays (Figure 5A-C) with systematic variation of PI(4,5)P2 concentration and protein combinations. The requirement for specific domains is demonstrated (Figure 5\u2014figure supplement 1A). The cooperative recruitment of all three components provides strong evidence for coordinated complex assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Dap160 and WASp potentiate rather than alter the inherent membrane-remodeling activity of Nwk. Addition of Dap160 and WASp does not change the nature of membrane deformations (scalloped and pinched membranes) generated by Nwk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by GUV imaging (Figure 5\u2014figure supplement 1D) showing that membrane deformation morphology is preserved in the presence of Dap160 and WASp. This observation is important for understanding the mechanism of activation as enhancement rather than qualitative change in activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Dap160 is required for stable membrane association of Nwk at synapses in vivo. Dap160 knockdown leads to loss of Nwk::GFP from synaptic membranes and significantly increases the rate of Nwk::GFP recovery after photobleaching, consistent with a shift from membrane-bound to cytosolic localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by imaging of endogenously tagged Nwk::GFP (Figure 5E) and FRAP analysis (Figure 5F) in Dap160 RNAi conditions. The loss of peripheral membrane signal and faster recovery kinetics provide converging evidence for reduced membrane association. The in vivo data are consistent with the in vitro membrane binding studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C69",
+      "C70"
+    ],
+    "result": "Nwk-Dap160 interactions constrain spurious actin assembly at synapses. Both nwk and Dap160\u0394SH3CD mutants significantly increase actin patch frequency without changing patch duration distribution, supporting a 'clamp' function for these proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C69-C70 are supported by automated patch tracking in mutants (Figure 6A-F) and validated by complementary coefficient of variation analysis (Figure 6\u2014figure supplement 2). The increased frequency without duration changes suggests a specific effect on initiation rather than dynamics. The robustness analysis (Figure 6\u2014figure supplement 1) confirms the finding across parameter space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Actin patches colocalize with endocytic adaptors and their assembly requires dynamin activity. Actin significantly colocalizes with both Clc and AP2, and acute disruption of dynamin (shiTS1) decreases patch frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by colocalization analysis (Figure 7C, Figure 7\u2014figure supplement 1C) and temperature-shift experiments with shiTS1 (Figure 7D-E). The colocalization with endocytic markers and sensitivity to dynamin inhibition provide functional evidence linking patches to endocytosis, though the authors appropriately note caveats about postsynaptic AP2 and broad distribution of coat proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Nwk-Dap160 interactions are functionally required for synaptic vesicle endocytosis. nwk mutants show 34% reduction in FM dye uptake, and Dap160\u0394SH3CD shows 27% reduction, while both mutants unload FM dye normally. The increased patch frequency combined with decreased endocytosis indicates that spurious actin structures in mutants are unproductive for endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C73-C79 are supported by FM dye uptake assays (Figure 7F-I) and unloading controls (Figure 7\u2014figure supplement 3). The combination of increased patch frequency (from C69) with decreased FM uptake provides strong evidence that the Nwk-Dap160 interaction is required for productive endocytosis. The normal unloading rules out secondary exocytic defects. The logic connecting actin dynamics to endocytic function is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Synaptic vesicle endocytosis and growth factor receptor endocytosis are mechanistically separable. Both Dap160\u0394SH3D and Dap160\u0394SH3CD rescue satellite bouton numbers to wild-type levels despite their effects on synaptic vesicle endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by satellite bouton quantification (Figure 7\u2014figure supplement 2). The rescue of the growth phenotype by domain deletions that impair synaptic vesicle endocytosis demonstrates separable mechanisms. This is an important control showing specificity of the actin dynamics phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C88",
+      "C89",
+      "C91",
+      "C94"
+    ],
+    "result": "Autoinhibition both clamps and primes the synaptic endocytic machinery. The broad membrane localization of PAZ proteins in a partially autoinhibited state constrains spurious actin assembly, while coordinated relief of autoinhibition enables productive membrane remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C88-C89, C91, and C94 represent the central mechanistic model integrating multiple lines of evidence: broad PAZ protein distribution (C2, C42), increased patch frequency in mutants (C69), decreased endocytosis in mutants (C73-C74), and in vitro relief of autoinhibition (C53-C65). The model is well-supported by the collective data, though it remains somewhat inferential regarding the precise in vivo activation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background and prior work establishing the context for the study. These claims summarize established knowledge about actin's role in synaptic function, the properties of Nwk/FCHSD2 and Dap160/intersectin, and the rationale for investigating autoinhibition mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C9-C31 are appropriately cited background claims from the introduction. They establish the scientific context and are supported by the cited literature. These are not novel findings of this study but provide necessary background for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Synaptic actin patch dynamics are consistent with endocytic events based on comparison to other systems. Patch morphology and duration are similar to endocytic actin dynamics in yeast (16s) and mammalian cells (~40s), and patch frequency approaches the rate of spontaneous vesicle release (~5-6/10 \u03bcm\u00b2/min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 from the discussion appropriately contextualize the findings by comparison to other systems. The cited time constants and frequencies are from the literature and the authors' own measurements. The comparisons support the interpretation that patches represent endocytic events, though the authors appropriately note this remains somewhat indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C92",
+      "C93",
+      "C95",
+      "C96"
+    ],
+    "result": "Discussion and interpretation of mechanisms. These claims discuss the implications of the findings, including the role of other WASp activators, connections to preassembly and delivery models of endocytosis, and potential regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C92-C93, C95-C96 are interpretive claims from the discussion that extend beyond the direct experimental evidence. While they are reasonable interpretations supported by the data and literature, they involve speculation about mechanisms not directly tested (e.g., roles of Snx9 and Cip4, connections between preassembly and delivery models). These represent plausible hypotheses for future work rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

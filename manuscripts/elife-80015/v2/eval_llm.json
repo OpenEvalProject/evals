@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "High-frequency sensorineural hearing loss (SNHL) is a common clinical condition, affecting 23% of audiograms from a large clinical database, and is associated with auditory perceptual disorders including tinnitus, abnormal loudness growth, and poor speech intelligibility in noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C1 provides quantitative epidemiological data from a large clinical database (132,504 records), while C2 is supported by multiple citations to prior research establishing the association between high-frequency SNHL and auditory perceptual disorders. Together, these claims establish the clinical relevance and prevalence of the condition being modeled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Exposure to narrow-band high-frequency noise (16\u201332 kHz) at 103 dB SPL for 2 hr in mice produces a sustained high-frequency hearing loss characterized by elevated ABR and DPOAE thresholds, approximately 50% loss of IHC-afferent synapses in the high-frequency cochlear base, OHC death limited to the extreme cochlear base, and stereocilia damage throughout mid- and high-frequency regions, resulting in a stable 45 dB behavioral threshold elevation at high frequencies without affecting mid-frequency detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 provide converging evidence from multiple measurement modalities (electrophysiology, histology, behavior) that collectively characterize the peripheral damage and functional consequences. The data show appropriate controls (sham exposure), longitudinal measurements, and consistency across different assessment methods. Statistical analyses are reported in figure legends as stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Following acoustic trauma, mice exhibit behavioral hypersensitivity to spared 8 kHz tones, as evidenced by steeper psychometric detection functions (d-prime growth) near threshold compared to pre-exposure baseline and sham controls, with 7/7 trauma mice showing \u226530% increases in psychometric slopes versus 0/6 sham mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C8 and C9 provide both group-level and individual-level evidence for behavioral hypersensitivity. The use of d-prime controls for changes in false alarm rates and overall behavioral state. The 100% penetrance in trauma mice (7/7) versus complete absence in controls (0/6) provides strong evidence, though the sample sizes are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C36"
+    ],
+    "result": "Mice with high-frequency SNHL exhibit behavioral hypersensitivity to direct optogenetic stimulation of auditory thalamocortical neurons, identifying the auditory cortex as a potential locus of plasticity underlying auditory hypersensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C10 provides direct experimental evidence using an intersectional viral strategy to selectively stimulate thalamocortical projection neurons, demonstrating hypersensitivity that bypasses peripheral damage. C36 synthesizes this finding with the acoustic hypersensitivity data to support the inference about cortical involvement. The approach is technically sound and the logic is valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Following acoustic trauma, tonotopic maps in primary auditory cortex undergo large-scale reorganization over the first week, stabilizing in a state where the percentage of L2/3 pyramidal neurons tuned to lesion edge frequencies (8\u201316 kHz) more than doubles in deafferented regions, without systematic changes in response threshold. This remapping is spatially restricted to deafferented zones and does not occur in sham-exposed controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 describe tonotopic reorganization using chronic widefield and two-photon imaging with appropriate controls (sham exposure, baseline stability). The analysis includes large sample sizes (n=1749 trauma, n=1748 sham PyrNs) and demonstrates spatial specificity of remapping. Statistical analyses confirm the topographic and temporal patterns described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "Individual L2/3 pyramidal neurons exhibit strong tone-evoked calcium transients and well-organized tonal receptive fields as measured by two-photon imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C13 describes basic response properties that validate the imaging approach and demonstrate that individual neurons can be reliably characterized. This is supported by data shown in Figure 3D and is consistent with prior literature using similar methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Neural gain in A1 L2/3 pyramidal neurons is broadly enhanced across the tonotopic map in the first several days following trauma, then becomes restricted to deafferented regions for spared mid-frequency tones by 1 week post-exposure. Excess central gain reflects the interaction of four factors: whether SNHL was induced, cortical map location, time post-exposure, and proximity of stimulus frequency to the cochlear lesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe the spatiotemporal dynamics of neural gain changes with appropriate statistical analyses (four-way ANOVA). The findings are based on systematic measurements across multiple frequencies, time points, and map regions in both trauma and sham mice. The synthesis in C21 appropriately integrates the empirical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Enhanced neural detection of 8 kHz tones, as measured by SVM decoder analysis of ensemble activity, is largely driven by pyramidal neurons in deafferented map regions, while loss of cortical sensitivity to high-frequency tones is observed in both intact and deafferented zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C22 describes population-level decoding results that complement single-neuron gain measurements. The SVM decoder approach is appropriate for assessing ensemble-level information content, and the spatial specificity of enhanced 8 kHz detection aligns with the tonotopic remapping and gain changes described in other claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Spontaneous activity in A1 L2/3 pyramidal neurons increases by approximately 20% following acoustic trauma, is not topographically restricted, and continues to increase steadily over time, contrasting with modest effects in sham-exposed mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C23 and C24 describe spontaneous activity changes with appropriate normalization to pre-exposure baseline. The findings are based on chronic tracking of individual neurons and include proper controls. The lack of topographic restriction distinguishes spontaneous hyperactivity from the spatially specific gain changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Following acoustic trauma, pairwise synchrony between pyramidal neurons is significantly enhanced, particularly in the first 72 hours when it extends to neurons separated by up to 0.7 mm (versus 0.25 mm at baseline). After 3 days, elevated local synchrony persists and is concentrated near the deafferentation boundary in tonotopic regions corresponding to lesion edge frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe neural synchrony changes using shuffle-corrected cross-correlograms, an appropriate method for controlling overall activity rate changes. The analysis reveals both temporal dynamics (initial widespread enhancement, later spatial restriction) and topographic organization. Large sample sizes (>3 million neuron pairs) provide statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Cortical plasticity following acoustic trauma is organized into two phases: a dynamic phase (0-72 hours) with widespread hyper-correlation, hyper-responsivity in intact regions, and large-scale neuronal turnover near the deafferentation boundary; and a stable phase (\u22653 days) with increased gain for spared frequencies in deafferented regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C29 synthesizes multiple observations from chronic imaging experiments (tonotopic remapping, gain changes, synchrony, neuronal turnover) into a coherent temporal framework. This synthesis is supported by the convergent evidence from C12, C17-C21, C26-C28, and C30-C31, though it represents an interpretive integration rather than a single direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Following acoustic trauma, new active pyramidal neurons appear while previously tracked neurons disappear, with approximately 75% of neuronal disappearance occurring within 48 hours. This turnover is concentrated near the deafferentation boundary and is far less pronounced after sham exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C30 and C31 describe neuronal turnover using chronic cell tracking with appropriate confidence thresholds (0.8) validated against shuffled controls. The temporal concentration of disappearance (75% within 48 hr) and spatial restriction near the boundary are well-documented. However, the mechanisms underlying 'appearance' and 'disappearance' remain uncertain (could reflect activity state changes, imaging artifacts, or actual structural changes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C46",
+      "C47"
+    ],
+    "result": "Approximately 40% of the variability in excess neural gain among individual pyramidal neurons can be predicted from pre-exposure baseline response features. Neurons with weak monotonically increasing intensity functions, higher spontaneous activity, and location in deafferented regions with lower-frequency best frequencies are most likely to exhibit non-homeostatic excess gain. Conversely, neurons with low spontaneous activity and non-monotonic intensity functions show more stable homeostatic gain control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C38, C46-C47 describe predictive modeling results using multiple linear regression on chronically tracked neurons (n=510 trauma, n=749 sham). The model accounts for 40% of variance in trauma mice versus 13% in sham, indicating meaningful predictive power. The predictor variables are physiologically interpretable and the analysis appropriately uses pre-exposure features to predict post-exposure outcomes. However, 60% of variance remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Excess central gain\u2014an abnormally steep growth of neural response with sound intensity\u2014is the hypothesized neural substrate of auditory hypersensitivity and is prominently expressed in auditory cortex of animals with sensorineural cochlear damage, in contrast to reduced responses in the auditory nerve and less robust changes in subcortical stations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 summarize established knowledge from prior literature (supported by multiple citations) that provides the conceptual framework for the current study. These claims accurately represent the state of the field and are appropriately cited, though they represent background knowledge rather than novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Hypersensitivity to thalamocortical stimulation may be underpinned by changes in auditory cortex gene expression (elevated glutamate receptor subunits, reduced GABA_A receptor expression) that result in elevated excitatory and reduced inhibitory postsynaptic currents. Disinhibition and hypersensitization are conceptualized as synergistic compensatory responses triggered by reduced peripheral input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C45 propose mechanistic explanations for the observed hypersensitivity based on prior literature, but these mechanisms were not directly tested in the current study. C43 is explicitly speculative ('may be underpinned'), and C45 represents a conceptual framework rather than empirical findings from this work. While the proposed mechanisms are plausible and well-cited, they remain hypotheses requiring direct validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The effects of peripheral afferent perturbations on central circuits are not exclusively determined by bottom-up drive but are also brokered by variations in excitation-inhibition balance within local circuits or gene expression differences between cells. This is supported by prior findings showing that rapid decline in PV-mediated inhibition predicts functional recovery after near-complete cochlear deafferentation, and that neurons with stronger inhibition (non-monotonic responses) are suppressed by cochlear implant stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 synthesize findings from prior studies by the authors and others to support the interpretation that local circuit properties modulate responses to peripheral damage. C48-C50 accurately cite prior work, and C51 provides a reasonable synthesis. However, these represent integration of prior literature rather than novel findings from the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Mitigating influences on cortical plasticity are shaped by developmental stage and circadian programs at a global level, and may reflect latent differences in genetic subtypes of L2/3 pyramidal neurons or stochastic variations in inhibitory tone at the level of individual neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C52 is supported by citations to prior research, but C53 is explicitly speculative ('may reflect') and was not directly tested. While the speculation is reasonable given the predictive modeling results, distinguishing between genetic subtypes versus stochastic variations would require additional experiments (e.g., single-cell transcriptomics, optogenetic manipulation of inhibition).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Auditory overload phenotypes (tinnitus affecting 14% of adults, hyperacusis affecting 9%, and hearing difficulty in noise without hearing loss affecting 9%) are common and debilitating, and while they can occur without peripheral dysfunction, they are frequently associated with age- or noise-induced sensorineural hearing loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide epidemiological context from prior literature (appropriately cited) that establishes the clinical significance of the research problem. These claims accurately represent published prevalence data and the association between auditory overload and SNHL, though they represent background information rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In developing sensory systems, peripheral input deprivation triggers homeostatic plasticity mechanisms (synaptic sensitization, disinhibition, increased intrinsic excitability) that restore activity to baseline. However, following adult-onset hearing loss, these mechanisms often overshoot, producing non-homeostatic excess gain that manifests as increased spontaneous activity, spike synchrony, and steeper intensity growth functions. Hyperactive and hyper-correlated activity in deafferented cortical regions is widely understood to underlie tinnitus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 accurately summarize established knowledge from prior literature (supported by citations to review articles and primary research) that provides the theoretical framework for interpreting the current findings. These claims represent well-established concepts in the field rather than novel discoveries from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Neural hyperresponsivity to spared mid-frequency sounds is accompanied by hyperactive and hyper-correlated spontaneous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C37 synthesizes findings from multiple analyses (sound-evoked responses, spontaneous activity, synchrony) shown in Figure 7. This represents an accurate summary of the co-occurrence of these phenomena, though the causal relationships between them are not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "These findings identify a neurophysiological target for testing therapeutic strategies in animals and inform the selection of non-invasive biomarkers for the development of improved diagnostics and therapies in human populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C63 represents a reasonable statement of the translational implications of the findings. The identification of excess cortical gain and its predictors as potential therapeutic targets and biomarkers is a logical extension of the results, though actual therapeutic development and biomarker validation would require additional studies.",
+    "result_type": "MINOR"
+  }
+]

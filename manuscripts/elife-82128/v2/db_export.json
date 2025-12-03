@@ -1,0 +1,1521 @@
+{
+  "submission": {
+    "id": "f89add4f-a8f6-4090-8727-75c78f08d2e3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:54:12.396975Z",
+    "updated_at": "2025-12-03T17:54:12.396975Z"
+  },
+  "content": [
+    {
+      "id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "submission_id": "f89add4f-a8f6-4090-8727-75c78f08d2e3",
+      "content_type": "manuscript",
+      "content_text": "# Generating colorblind-friendly scatter plots for single-cell data\n\n## Authors\n\n- Tejas Guha<sup>1</sup>\n- Elana J Fertig<sup>2</sup> ([ORCID: 0000-0003-3204-342X](https://orcid.org/0000-0003-3204-342X)) \u2020\n- Atul Deshpande<sup>2</sup> ([ORCID: 0000-0001-5144-6924](https://orcid.org/0000-0001-5144-6924)) \u2020\n\n### Affiliations\n\n1. Department of Electrical and Computer Engineering, A. James Clark School of Engineering, The University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))\n2. Department of Oncology, Sidney Kimmel Comprehensive Cancer Center, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n3. Convergence Institute, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n4. Bloomberg-Kimmel Immunotherapy Institute, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n5. Department of Applied Mathematics and Statistics, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n6. Department of Biomedical Engineering, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n\n\u2020 Corresponding author\n\n## Abstract\n\nReduced-dimension or spatial in situ scatter plots are widely employed in bioinformatics papers analyzing single-cell data to present phenomena or cell-conditions of interest in cell groups. When displaying these cell groups, color is frequently the only graphical cue used to differentiate them. However, as the complexity of the information presented in these visualizations increases, the usefulness of color as the only visual cue declines, especially for the sizable readership with color-vision deficiencies (CVDs). In this paper, we present scatterHatch, an R package that creates easily interpretable scatter plots by redundant coding of cell groups using colors as well as patterns. We give examples to demonstrate how the scatterHatch plots are more accessible than simple scatter plots when simulated for various types of CVDs.\n\n## Introduction\n\nData visualization is a key component in the presentation of single-cell analyses with multiple cell groups representing factors such as cell types, states, and so forth. Color is commonly used as the only visual cue in low-dimensional scatter plots (e.g., tSNE, UMAP, etc.) or in situ spatial plots of single-cell data. We either use colormaps to represent values on a continuum or distinct colors to identify different cell groups. However, with the increasing complexity of the information being represented in these scatter plots, the ability of the readers to distinguish between the colors decreases, diminishing the interpretability of the visualizations. This problem is exacerbated for the approximately 8% of male and 0.5% of female readers who have some type of color-vision deficiency (CVD) (Wong, 2011). Over the course of the last decade, we have seen a number of papers (Wong, 2011; Katsnelson, 2021; Crameri et al., 2020; Wong, 2010) providing guidelines for the effective use of colors to create accessible visualizations. More recently, software packages have also been developed that either simulate different CVDs (Ou, 2021), or use colorblind-friendly color palettes (Bunis et al., 2020; Steenwyk and Rokas, 2021). However, the rules for choosing accessible color palettes may change depending on the type of CVD. For example, protanopes lack the photoreceptors of red light, whereas deuteranopes lack green photoreceptors (Deeb, 2005). We can overcome this problem by using strategies and software solutions that reduce the dependence of visualizations on colors by \u2018redundant coding\u2019 (Wong, 2011; Color Universal Design, 2008; Oliveira, 2013) using other visual cues such as line types, point shapes, and hatched patterns over areas.\n\nSingle-cell or spatial omics data visualizations often contain scatter plots with a mixture of varying point distributions. Although simpler strategies for redundant coding already exist, they are only suitable for specific types of scatter plots. For example, we can combine colors with point shapes (Color Universal Design, 2008) in sparse scatter plots, but the point shapes are not apparent when the points are densely clustered together. On the other hand, distinct hatched patterns (Wong, 2011; Oliveira, 2013; Fc and Davis, 2022) overlaid over dense regions of the scatterplot can be used as a visual cue, but this strategy is not well suited for sparsely distributed points. However, hatched patterns can be easily added to violin plots or alluvial plots using R packages such as ggpattern to improve their accessibility.\n\nWe present scatterHatch, an R package for generating easily interpretable scatter plots by redundant coding of point groups using patterns and colors. scatterHatch avoids the drawbacks of the simpler strategies discussed before and easily handles point visualizations that contain mixtures of sparse and dense point distributions. Furthermore, we generate example reduced-dimension and spatial scatterHatch plots. Using the same CVD-friendly color palettes, we simulate the perception and accessibility of our scatterHatch plots against standard scatter plots for various types of CVDs.\n\n## Results\n\n### scatterHatch adds patterns to scatter plots with mixtures of dense and sparse regions\n\nIn this paper, we present scatterHatch, a R/Bioconductor package to generate colorblind-friendly point visualizations commonly used in single-cell and spatial bioinformatics data analyses. scatterHatch greatly enhances the accessibility of low-dimensional scatter plots and in situ spatial plots of single-cell and spatial omics by using a combination of colors and patterns. A scatterHatch plot effectively represents mixtures of varying point distributions by using simple patterns which are easily plotted over dense clusters as well as sparsely distributed points.\n\nFigure 1 shows the scatterHatch workflow. The minimum required input to scatterHatch is a data frame containing the x, y coordinates and the condition or factor to be visually represented. The output of scatterHatch is a ggplot2 object representing a scatter plot with colors and patterns assigned for each factor. Each point pertaining to a factor is classified as either belonging to a dense cluster or as an individual sparse point. scatterHatch plots coarse patterns over the dense point clusters and individually plots a matching pattern over each sparse point. Users have the option to bypass the in-built sparse point detector by providing a list of sparse points as input to scatterHatch. scatterHatch has six default patterns\u2014horizontal, vertical, right diagonal, left diagonal, checkers and crisscross\u2014in addition to supporting a \u2018blank\u2019 pattern or color-only mode. The choice of patterns is intentionally limited to those achievable by simple line segments which are suitable for both individual points or large regions of dense point clusters. The default color palette uses 40 high-contrast CVD-friendly colors imported from the dittoSeq package (Bunis et al., 2020). To advanced users, scatterHatch extends the ability to customize patterns by specifying the type (e.g., solid, dashed, dotted, etc.), color, and thickness of the lines used in the patterns. Furthermore, users can also generate new patterns composed of one or more lines by providing a list of corresponding line angles and aesthetics as input.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82128/elife-82128-fig1-v2.jpg)\n\n**Figure 1.:** For every point group, scatterHatch separates sparsely distributed points from the dense clusters. scatterHatch plots coarse patterns over the dense clusters and individually plots patterns over the sparse points. Created using Biorender.com.\n\n### Improving the accessibility of scatter plots for all types of color vision deficiencies\n\nHere, we demonstrate the accessibility of a reduced-dimension UMAP scatter plot of single-cell data generated using scatterHatch from the perspective of different CVDs. Specifically, 10,000 cells were selected at random from single-cell data collected from a resection specimen (Lin et al., 2018) of Pancreatic Ductal Carcinoma (PDAC) and adjacent normal tissues. The reduced-dimension coordinates are calculated using the UMAP algorithm (Becht et al., 2018) and the cells are classified into four groups using K-means clustering of the UMAP coordinates. A scatterHatch plot was generated where a color and pattern were assigned to each cell group. Subsequently, we used the cvdPlot function from the R package colorblindness to simulate common CVDs such as deuteranomaly (red-green colorblindness), protanomaly (blue-yellow colorblindness), and monochromacy (complete color blindness or grayscale vision).\n\nFigure 2 compares the accessibility of the UMAP scatter plot when compared to a scatterHatch plot as perceived by individuals with normal vision (Figure 2A), deuteranomaly (Figure 2B), protanomaly (Figure 2C), and monochromacy (Figure 2D), respectively. Each simulated visualization also includes an inset with a zoomed-in view of a region with sparse points from the distinct cell groups. As shown in the figure, the addition of the patterns makes it much easier to distinguish between factors for all types of CVD. In the zoomed-out view, we can readily distinguish between large dense clusters associated with each cell group. Similarly, the zoomed-in view demonstrates how plotting the patterns individually over sparse points enables us to distinguish them from adjacent points from other cell groups.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82128/elife-82128-fig2-v2.jpg)\n\n**Figure 2.:** Simulated perception of a UMAP scatter plot compared with a scatterHatch plot by individuals with (A) normal color vision, (B) deuteranomaly, (C) protanomaly, and (D) monochromacy, with the insets showing a magnified sparse region showing patterns assigned to individual cells. Despite the change in color perception, readers have access to secondary visual information in the form of patterns to help interpret the data. CVD, color-vision deficiency.\n\n### Increasing the accessibility of scatter plots with large number of cell groups\n\nThe benefits of enhanced accessibility are not just limited to individuals with CVD. Different backgrounds can cause the same color to be perceived differently, or for two different colors to be perceived as the same (Wong, 2010). When publishing a plot with few colors, the authors can appropriately assign distinct colors to individual cell groups to avoid confusing color perceptions. As the number of colors in a scatter plot increases, however, the ability to choose distinct colors as well as to control the relative distribution of these colors in the plot is severely hampered, leading to a higher probability of color misperception. Redundant coding with patterns facilitated the interpretation of such plots for all readers.\n\nFigure 3A shows a spatial scatter plot of the cells from the PDAC resection specimen (Lin et al., 2018) color-coded by the frame number in the microscopy image (82 groups), with a corresponding scatterHatch plot having redundant coding using both color and pattern. For each type of plot, the groups are colored using 82 distinct colors from the \u201cMuted Nine\u201d colorblind-friendly color palette from the ggpubfigs (Steenwyk and Rokas, 2021) package. Using a similar approach to that used in Figure 2, we simulate the perceptibility of this figure for different CVDs. We see that the addition of patterns facilitates the interpretation of the visualizations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82128/elife-82128-fig3-v2.jpg)\n\n**Figure 3.:** Perception of a spatial plot of the PDAC data set with 82-cell groups compared with a corresponding scatterHatch plot as simulated for (A) normal color vision, (B) deuteranomaly, (C) protanomaly, and (D) monochromacy. As the number of colors in the scatter plot increases, its interpretability reduces even for normal color vision. The redundant coding used in scatterHatch plots results in increased accessibility. PDAC, Pancreatic Ductal Carcinoma.\n\n### User-programmable aesthetics and patterns further increase the addressable dimensionality of scatterHatch\n\nCombining the 40 colors and the 7 patterns provided in the default settings, scatterHatch is already capable of visualizing 280 patterns. Users can input custom color palettes with higher number of colors. In addition, advanced users can customize patterns by choosing line types, line colors, and line widths to achieve a broader pattern library. Finally, scatterHatch also facilitates the introduction of new patterns composed of one or more lines by providing a list of line angles and custom aesthetics. For example, in Figure 4, the different cell groups are represented using patterns with custom line types (PDAC cell group), custom line colors (Other and Pancreas cell groups), and completely new patterns (Small Intestine cell group). Table 1 shows the parameters that can be used to either customize the aesthetics of a pattern or to create new patterns.\n\n**Table 1.**\n Parameters to enable users to customize pattern aesthetics or to create new patterns.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Description</th>\n      <th>Options</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>pattern</td>\n      <td>Specifies the pattern type</td>\n      <td>Default options are \u2018horizontal\u2019, \u2018vertical\u2019, \u2018positiveDiagonal\u2019, \u2018negativeDiagonal\u2019, \u2018cross\u2019, \u2018checkers\u2019, \u2018blank\u2019E.g.: pattern=\u2018checkers\u201d</td>\n    </tr>\n    <tr>\n      <td>angle</td>\n      <td>Allows users to specify line angles to be included in the pattern (enables users to create new patterns)</td>\n      <td>Numeric array with values from 0 to 180.E.g.: angle=c(45, 90, 135)</td>\n    </tr>\n    <tr>\n      <td>lineWidth</td>\n      <td>Width of the lines in a pattern</td>\n      <td>Numeric - default value based on point sizeE.g.: lineWidth=0.1</td>\n    </tr>\n    <tr>\n      <td>lineColor</td>\n      <td>Color of the lines in a pattern</td>\n      <td>Character string specifying a colorE.g.: lineColor=\u2018white\u2019</td>\n    </tr>\n    <tr>\n      <td>lineType</td>\n      <td>Type of the lines in a pattern</td>\n      <td>Character string to specify the line type from the ggplot2 package.E.g.: lineType=\u2018dotted\u2019</td>\n    </tr>\n    <tr>\n      <td>LineAlpha</td>\n      <td>Transparency of the lines in a pattern</td>\n      <td>Numeric value from 0 to 1. Default is 1.Ex: lineAlpha=0.1</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82128/elife-82128-fig4-v2.jpg)\n\n**Figure 4.:** Spatial scatterHatch plot of the PDAC data set showing four tissue regions using customized patterns with a custom line type (PDAC), custom line colors (Other and Pancreas), and a completely new pattern (Small Intestine).\n\n## Discussion\n\nWe present scatterHatch, a R/Bioconductor package for generating colorblind-friendly scatter plots of embeddings for single-cell and spatial datasets. scatterHatch enables users to generate scatterHatch plots\u2014scatter plots with both a color and a pattern as visual cues. These plots are aesthetically pleasing as well as highly accessible to a broad readership including those with color vision deficiencies. scatterHatch plots are compatible with point distributions that are sparse, dense, as well as mixtures of both. We demonstrate how scatterHatch plots have better accessibility than simple scatter plots in low dimensional embeddings (e.g., PCA, UMAP, and TSNE) as well as spatial plots of cells in the tissue with up to 82-cell groups. As the number of cell groups increases, the benefits of scatterHatch plots extend even to readers with normal vision. In future work, we will make enhancements to the algorithms and plotting functions to improve the aesthetics and accessibility of scatterHatch plots with overlapping cell groups. Additionally, the software will be extended to be compatible with single-cell and spatial data formats from commonly used bioinformatics packages such as Seurat (Butler et al., 2018) and scanpy (Wolf et al., 2018).\n\nDespite the consensus on the need for bioinformatics visualizations that are accessible across the spectrum of color perception, the progress has been slow in terms of actually affecting this change in our publications. While well intentioned, recommendations for incorporating additional steps to ensure accessible visualizations are not sufficient by themselves. For example, simulating multiple CVDs and subjectively selecting the best possible color palette for their visualizations may not come naturally to a vast majority of researchers who have normal color vision. In fact, such strategies are themselves not practical for individuals with one type of CVD who wish to ensure accessibility for other types of CVD. Software packages, such as ggpattern, dittoSeq, and scatterHatch, remove this subjectivity to a large extent by using colorblind-friendly color palettes as default, and enabling the use of visualization strategies that reduce the dependence on color. Future work could include the development of a software suite that combines the functionalities of these packages into a comprehensive software solution for creating CVD-friendly visualizations. Meanwhile, there is also a need for standards and guidelines for creating accessible visualizations, which requires support at multiple levels\u2014from funding agencies, journals, and developers of large-scale analysis software and visualization tools (Speir et al., 2021). The submission review process for R or Python packages should require that the default color palettes used by the software visualizations are colorblind friendly according to well-established accessibility standards. In addition, we should develop processes for periodically incorporating the best practices for accessibility introduced in new software packages into the graphical design language standards expected from newer packages. Finally, the strategies developed by scatterHatch and other recent software only address color-vision deficiencies and not other visual impairments such as double vision or complete blindness. In such cases, we need to incorporate accessibility features such as screen reader-friendly alternate texts (Jung et al., 2022) which describe the graphical elements of the visualizations.\n\n### Code availability\n\nscatterHatch is available on Bioconductor at https://bioconductor.org/packages/release/bioc/html/scatterHatch.html.\n\nThe development version is available on Github at https://github.com/FertigLab/scatterHatch, (copy archived at swh:1:rev:ae8a6b69722adb123fbcde40d12e2b2317deec2e; Deshpande, 2022).\n\nThe scripts used to generate the figures in the manuscript are available at https://github.com/FertigLab/scatterHatch-paper; Deshpande, 2022.\n",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "f4f81681-8455-4412-b012-6eb09b77f12a",
+      "submission_id": "f89add4f-a8f6-4090-8727-75c78f08d2e3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jungmin Choi, https://ror.org/047dqcg40 Korea University College of Medicine Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82128.sa0](https://doi.org/10.7554/eLife.82128.sa0)\n\nThis manuscript demonstrates a beneficial R package that provides a valuable pattern and overlay framework for producing colorblind-friendly scatter plots for the field. This work will be an extraordinary resource to the single-cell genomics community and of broad interest to many biomedical scientists, especially to viewers with color-vision deficiency. This attempt should become a new standard in the scientific community that strives to achieve greater inclusiveness.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jungmin Choi, https://ror.org/047dqcg40 Korea University College of Medicine Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82128.sa1](https://doi.org/10.7554/eLife.82128.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"scatterHatch: an R/Bioconductor package for generating colorblind-friendly scatter plots for single-cell data\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Daniel G Bunis (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) In Figure 1, it is a little hard to see the yellow-colored points in the sparse points demonstration. Perhaps the colors could be cycled, or one of the other regions could be used, in order for a darker color to be used for this demonstration.\n\n2) The manuscript appears well written and where there are shortcomings would be in helping inexperienced r users navigate the add-on package. I would recommend a supplementary guide that helps novice users install and use the package--this would help strive for greater inclusiveness of individuals with varying levels of skill in r.\n\n3) The pattern-overlay framework could be expanded and applied to other plots such as alluvial plots, violin plots, etc in addition to dim plots.\n\nReviewer #2 (Recommendations for the authors):\n\nscatterHatch seems a well-constructed R package, and the manuscript is well-written. I believe this manuscript will be a very valuable addition to the field, especially because scatterHatch's system provides aid to viewers with monochromatic vision, an aid that even other common CVD-aware visualization tools fail to provide.\n",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e63a010a-9ad3-4d6e-b576-e2a9e75461ed",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C1",
+      "claim": "Reduced-dimension or spatial in situ scatter plots are widely employed in bioinformatics papers analyzing single-cell data to present phenomena or cell-conditions of interest in cell groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced-dimension or spatial in situ scatter plots are widely employed in bioinformatics papers analyzing single-cell data to present phenomena or cell-conditions of interest in cell groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about current practices in bioinformatics visualization, drawing from established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "b501afc8-1f43-487e-ac68-538092ab4d31",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C2",
+      "claim": "Color is frequently the only graphical cue used to differentiate cell groups in scatter plots.",
+      "claim_type": "EXPLICIT",
+      "source": "When displaying these cell groups, color is frequently the only graphical cue used to differentiate them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects common practice in the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "5f9af66d-5f54-45a0-afb9-013e0c2cf8f5",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C3",
+      "claim": "As the complexity of information in visualizations increases, the usefulness of color as the only visual cue declines, especially for readers with color-vision deficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the complexity of the information presented in these visualizations increases, the usefulness of color as the only visual cue declines, especially for the sizable readership with color-vision deficiencies (CVDs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wong, 2011 and represents an inference based on established understanding of CVD impacts.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "9ff0abcf-475d-4248-82a4-c2263e89c0cc",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C4",
+      "claim": "Approximately 8% of male readers have some type of color-vision deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem is exacerbated for the approximately 8% of male and 0.5% of female readers who have some type of color-vision deficiency (CVD) (Wong, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statistic is supported by citation to Wong, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "50711b2f-2619-4342-ab9a-98f022a10c55",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C5",
+      "claim": "Approximately 0.5% of female readers have some type of color-vision deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem is exacerbated for the approximately 8% of male and 0.5% of female readers who have some type of color-vision deficiency (CVD) (Wong, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statistic is supported by citation to Wong, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "d30c34e0-ce4f-43dc-b8bd-f0f8a2dacf89",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C6",
+      "claim": "scatterHatch is an R package that creates easily interpretable scatter plots by redundant coding of cell groups using colors as well as patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paper, we present scatterHatch, an R package that creates easily interpretable scatter plots by redundant coding of cell groups using colors as well as patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the software package developed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "fbaa44f8-5a65-449f-97fe-d20b2a3fc11b",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C7",
+      "claim": "scatterHatch plots are more accessible than simple scatter plots when simulated for various types of CVDs.",
+      "claim_type": "EXPLICIT",
+      "source": "We give examples to demonstrate how the scatterHatch plots are more accessible than simple scatter plots when simulated for various types of CVDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the examples and simulations presented in the manuscript figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "81be3fbe-c088-42a7-bb46-96510f9bd279",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C8",
+      "claim": "Papers have been published over the last decade providing guidelines for the effective use of colors to create accessible visualizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of the last decade, we have seen a number of papers (Wong, 2011; Katsnelson, 2021; Crameri et al., 2020; Wong, 2010) providing guidelines for the effective use of colors to create accessible visualizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "c351fae1-51de-4d88-bd40-ad1e142da436",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C9",
+      "claim": "Software packages have been developed that simulate different CVDs.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, software packages have also been developed that either simulate different CVDs (Ou, 2021), or use colorblind-friendly color palettes (Bunis et al., 2020; Steenwyk and Rokas, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ou, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "e1d5541c-13ea-42a5-8f35-89e4d065da8e",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C10",
+      "claim": "Software packages have been developed that use colorblind-friendly color palettes.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, software packages have also been developed that either simulate different CVDs (Ou, 2021), or use colorblind-friendly color palettes (Bunis et al., 2020; Steenwyk and Rokas, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bunis et al., 2020 and Steenwyk and Rokas, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "5e91599d-632c-4633-947b-e8197c4f1c53",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C11",
+      "claim": "Protanopes lack the photoreceptors of red light.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, protanopes lack the photoreceptors of red light, whereas deuteranopes lack green photoreceptors (Deeb, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Deeb, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "2d8a3b69-8a8b-415b-8b5f-2eb7da7df2ad",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C12",
+      "claim": "Deuteranopes lack green photoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, protanopes lack the photoreceptors of red light, whereas deuteranopes lack green photoreceptors (Deeb, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Deeb, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "227098e2-4558-4693-96f1-01dd81ea4468",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C13",
+      "claim": "Redundant coding using other visual cues such as line types, point shapes, and hatched patterns over areas can overcome the problem of different CVD types requiring different color palette rules.",
+      "claim_type": "EXPLICIT",
+      "source": "We can overcome this problem by using strategies and software solutions that reduce the dependence of visualizations on colors by 'redundant coding' (Wong, 2011; Color Universal Design, 2008; Oliveira, 2013) using other visual cues such as line types, point shapes, and hatched patterns over areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wong, 2011; Color Universal Design, 2008; and Oliveira, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "586a10b8-846a-424f-81ce-da320aeb1ddb",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C14",
+      "claim": "Combining colors with point shapes works in sparse scatter plots but point shapes are not apparent when points are densely clustered together.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we can combine colors with point shapes (Color Universal Design, 2008) in sparse scatter plots, but the point shapes are not apparent when the points are densely clustered together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Color Universal Design, 2008 and represents an inference about the limitations of this approach.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "9f014319-3d52-405b-bf0f-8086ecf0fc37",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C15",
+      "claim": "Distinct hatched patterns overlaid over dense regions of scatterplots can be used as a visual cue but this strategy is not well suited for sparsely distributed points.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, distinct hatched patterns (Wong, 2011; Oliveira, 2013; Fc and Davis, 2022) overlaid over dense regions of the scatterplot can be used as a visual cue, but this strategy is not well suited for sparsely distributed points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wong, 2011; Oliveira, 2013; and Fc and Davis, 2022, and represents an inference about limitations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "a31edc22-0ce6-425f-b286-3c048062175a",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C16",
+      "claim": "Hatched patterns can be easily added to violin plots or alluvial plots using R packages such as ggpattern to improve their accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hatched patterns can be easily added to violin plots or alluvial plots using R packages such as ggpattern to improve their accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of existing R packages and their capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "50b12760-9851-49bc-bad3-887466431c64",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C17",
+      "claim": "scatterHatch avoids the drawbacks of simpler strategies and easily handles point visualizations that contain mixtures of sparse and dense point distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "scatterHatch avoids the drawbacks of the simpler strategies discussed before and easily handles point visualizations that contain mixtures of sparse and dense point distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data and examples presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "699ab28c-30d0-43a9-8ae6-1f0d3c8566ae",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C18",
+      "claim": "scatterHatch is a R/Bioconductor package to generate colorblind-friendly point visualizations commonly used in single-cell and spatial bioinformatics data analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paper, we present scatterHatch, a R/Bioconductor package to generate colorblind-friendly point visualizations commonly used in single-cell and spatial bioinformatics data analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the software package developed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "7fac1217-f829-4167-9580-b02a37ede83b",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C19",
+      "claim": "scatterHatch greatly enhances the accessibility of low-dimensional scatter plots and in situ spatial plots of single-cell and spatial omics by using a combination of colors and patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "scatterHatch greatly enhances the accessibility of low-dimensional scatter plots and in situ spatial plots of single-cell and spatial omics by using a combination of colors and patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the examples and data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "8ed8523a-6ea0-419f-af29-67c43f927c7f",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C20",
+      "claim": "A scatterHatch plot effectively represents mixtures of varying point distributions by using simple patterns which are easily plotted over dense clusters as well as sparsely distributed points.",
+      "claim_type": "EXPLICIT",
+      "source": "A scatterHatch plot effectively represents mixtures of varying point distributions by using simple patterns which are easily plotted over dense clusters as well as sparsely distributed points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the workflow and examples shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "02c14e1f-11ac-43aa-8ffd-8549d7e47d35",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C21",
+      "claim": "The minimum required input to scatterHatch is a data frame containing the x, y coordinates and the condition or factor to be visually represented.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimum required input to scatterHatch is a data frame containing the x, y coordinates and the condition or factor to be visually represented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the software requirements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "08fad4d5-dabe-48f9-977f-d119e10eaa4c",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C22",
+      "claim": "The output of scatterHatch is a ggplot2 object representing a scatter plot with colors and patterns assigned for each factor.",
+      "claim_type": "EXPLICIT",
+      "source": "The output of scatterHatch is a ggplot2 object representing a scatter plot with colors and patterns assigned for each factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the software output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "4cf91c02-3e38-478c-98c0-faf37e990288",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C23",
+      "claim": "Each point pertaining to a factor is classified as either belonging to a dense cluster or as an individual sparse point in scatterHatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Each point pertaining to a factor is classified as either belonging to a dense cluster or as an individual sparse point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the algorithm used by scatterHatch.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "d10cbcb4-5979-43df-a70f-3ab8b91d1601",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C24",
+      "claim": "scatterHatch plots coarse patterns over the dense point clusters and individually plots a matching pattern over each sparse point.",
+      "claim_type": "EXPLICIT",
+      "source": "scatterHatch plots coarse patterns over the dense point clusters and individually plots a matching pattern over each sparse point.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the text description and Figure 1 showing the workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "c97c97c3-7b24-422d-a833-97332cfe612e",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C25",
+      "claim": "Users have the option to bypass the in-built sparse point detector by providing a list of sparse points as input to scatterHatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Users have the option to bypass the in-built sparse point detector by providing a list of sparse points as input to scatterHatch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "afd3e785-b3b7-4417-8cf9-962fc29fd77e",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C26",
+      "claim": "scatterHatch has six default patterns: horizontal, vertical, right diagonal, left diagonal, checkers and crisscross.",
+      "claim_type": "EXPLICIT",
+      "source": "scatterHatch has six default patterns\u2014horizontal, vertical, right diagonal, left diagonal, checkers and crisscross\u2014in addition to supporting a 'blank' pattern or color-only mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the default patterns available in the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "3f303843-e116-4843-a623-c66bc6415bff",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C27",
+      "claim": "scatterHatch supports a 'blank' pattern or color-only mode.",
+      "claim_type": "EXPLICIT",
+      "source": "scatterHatch has six default patterns\u2014horizontal, vertical, right diagonal, left diagonal, checkers and crisscross\u2014in addition to supporting a 'blank' pattern or color-only mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "5b6131ab-fc4e-4492-926b-18cf6eb96976",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C28",
+      "claim": "The choice of patterns is intentionally limited to those achievable by simple line segments which are suitable for both individual points or large regions of dense point clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The choice of patterns is intentionally limited to those achievable by simple line segments which are suitable for both individual points or large regions of dense point clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design decision in the software development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "b74c79e2-6a12-4176-8492-ab59498a979c",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C29",
+      "claim": "The default color palette uses 40 high-contrast CVD-friendly colors imported from the dittoSeq package.",
+      "claim_type": "EXPLICIT",
+      "source": "The default color palette uses 40 high-contrast CVD-friendly colors imported from the dittoSeq package (Bunis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the default color palette and cites the source package.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "b51a2875-daa4-4a05-a89e-305516607fec",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C30",
+      "claim": "scatterHatch extends the ability to customize patterns by specifying the type, color, and thickness of the lines used in the patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "To advanced users, scatterHatch extends the ability to customize patterns by specifying the type (e.g., solid, dashed, dotted, etc.), color, and thickness of the lines used in the patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the software for advanced users.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "de153acf-456c-4497-977e-5407ad9b80d6",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C31",
+      "claim": "Users can generate new patterns composed of one or more lines by providing a list of corresponding line angles and aesthetics as input.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, users can also generate new patterns composed of one or more lines by providing a list of corresponding line angles and aesthetics as input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the software for advanced users.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "ee3f2034-3106-497e-96d5-c9f8dd69d33e",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C32",
+      "claim": "10,000 cells were selected at random from single-cell data collected from a resection specimen of Pancreatic Ductal Carcinoma (PDAC) and adjacent normal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 10,000 cells were selected at random from single-cell data collected from a resection specimen (Lin et al., 2018) of Pancreatic Ductal Carcinoma (PDAC) and adjacent normal tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the example, with citation to the source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "ac4a35a8-2292-4f79-bbf8-44e39887bc7d",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C33",
+      "claim": "The reduced-dimension coordinates are calculated using the UMAP algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced-dimension coordinates are calculated using the UMAP algorithm (Becht et al., 2018) and the cells are classified into four groups using K-means clustering of the UMAP coordinates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used with citation to the UMAP algorithm.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "27bd0f67-5993-4adf-9105-52b9499f283e",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C34",
+      "claim": "The cells are classified into four groups using K-means clustering of the UMAP coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced-dimension coordinates are calculated using the UMAP algorithm (Becht et al., 2018) and the cells are classified into four groups using K-means clustering of the UMAP coordinates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clustering method used in the example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "79c4f473-4c95-444b-a5c3-fe438322fd4b",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C35",
+      "claim": "The cvdPlot function from the R package colorblindness was used to simulate common CVDs such as deuteranomaly, protanomaly, and monochromacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we used the cvdPlot function from the R package colorblindness to simulate common CVDs such as deuteranomaly (red-green colorblindness), protanomaly (blue-yellow colorblindness), and monochromacy (complete color blindness or grayscale vision).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used to simulate CVDs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "b4a61d16-fc82-4802-94d5-be7461a414ab",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C36",
+      "claim": "Deuteranomaly is red-green colorblindness.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we used the cvdPlot function from the R package colorblindness to simulate common CVDs such as deuteranomaly (red-green colorblindness), protanomaly (blue-yellow colorblindness), and monochromacy (complete color blindness or grayscale vision).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "30040930-aaf6-4f1b-95d0-d3fcd3a96531",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C37",
+      "claim": "Protanomaly is blue-yellow colorblindness.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we used the cvdPlot function from the R package colorblindness to simulate common CVDs such as deuteranomaly (red-green colorblindness), protanomaly (blue-yellow colorblindness), and monochromacy (complete color blindness or grayscale vision).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "8de5b108-e88e-44e9-b8ff-1581ff2153c0",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C38",
+      "claim": "Monochromacy is complete color blindness or grayscale vision.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we used the cvdPlot function from the R package colorblindness to simulate common CVDs such as deuteranomaly (red-green colorblindness), protanomaly (blue-yellow colorblindness), and monochromacy (complete color blindness or grayscale vision).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "d5113f19-d78c-4a5c-b50c-e09960363acb",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C39",
+      "claim": "The addition of patterns makes it much easier to distinguish between factors for all types of CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the figure, the addition of the patterns makes it much easier to distinguish between factors for all types of CVD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visual comparison shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "4041c973-ec37-4dd1-aca7-06184e94ca63",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C40",
+      "claim": "In the zoomed-out view, we can readily distinguish between large dense clusters associated with each cell group in scatterHatch plots.",
+      "claim_type": "EXPLICIT",
+      "source": "In the zoomed-out view, we can readily distinguish between large dense clusters associated with each cell group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visual evidence in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "7084f541-d878-4a92-b8a9-6e5ea0ea190a",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C41",
+      "claim": "The zoomed-in view demonstrates how plotting the patterns individually over sparse points enables us to distinguish them from adjacent points from other cell groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the zoomed-in view demonstrates how plotting the patterns individually over sparse points enables us to distinguish them from adjacent points from other cell groups.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visual evidence in Figure 2 insets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "af921bf3-e755-475d-a46b-92eced3180df",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C42",
+      "claim": "Different backgrounds can cause the same color to be perceived differently, or for two different colors to be perceived as the same.",
+      "claim_type": "EXPLICIT",
+      "source": "Different backgrounds can cause the same color to be perceived differently, or for two different colors to be perceived as the same (Wong, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wong, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "b88e2a58-09e4-4915-80a5-c915e74e0bfa",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C43",
+      "claim": "As the number of colors in a scatter plot increases, the ability to choose distinct colors as well as to control the relative distribution of these colors in the plot is severely hampered, leading to a higher probability of color misperception.",
+      "claim_type": "EXPLICIT",
+      "source": "As the number of colors in a scatter plot increases, however, the ability to choose distinct colors as well as to control the relative distribution of these colors in the plot is severely hampered, leading to a higher probability of color misperception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the principles of color perception and visualization design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "f8e77c8f-d950-4e43-be0f-d6ffd3b197a4",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C44",
+      "claim": "Redundant coding with patterns facilitates the interpretation of plots with many colors for all readers.",
+      "claim_type": "EXPLICIT",
+      "source": "Redundant coding with patterns facilitated the interpretation of such plots for all readers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the examples shown in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "f6eafa63-1425-40c7-9046-e4c09c3603f7",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C45",
+      "claim": "The spatial scatter plot of cells from the PDAC resection specimen is color-coded by the frame number in the microscopy image (82 groups).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3A shows a spatial scatter plot of the cells from the PDAC resection specimen (Lin et al., 2018) color-coded by the frame number in the microscopy image (82 groups), with a corresponding scatterHatch plot having redundant coding using both color and pattern.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data shown in Figure 3A with citation to the data source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "f72486cb-81ac-456e-ab96-eb7903ab73b7",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C46",
+      "claim": "The groups in Figure 3 are colored using 82 distinct colors from the 'Muted Nine' colorblind-friendly color palette from the ggpubfigs package.",
+      "claim_type": "EXPLICIT",
+      "source": "For each type of plot, the groups are colored using 82 distinct colors from the \"Muted Nine\" colorblind-friendly color palette from the ggpubfigs (Steenwyk and Rokas, 2021) package.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the color palette used with citation to the source package.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "c248a5ba-49b1-425a-a626-e49a09e2d9f7",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C47",
+      "claim": "The addition of patterns facilitates the interpretation of visualizations with 82 cell groups for different CVDs.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that the addition of patterns facilitates the interpretation of the visualizations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visual comparison shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "9fae42a3-0e1f-4482-ab8d-672707e058c2",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C48",
+      "claim": "Combining the 40 colors and the 7 patterns provided in the default settings, scatterHatch is capable of visualizing 280 patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the 40 colors and the 7 patterns provided in the default settings, scatterHatch is already capable of visualizing 280 patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the software specifications (40 \u00d7 7 = 280).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "db2ca4bc-bb42-440a-bfc9-d0a26325ad91",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C49",
+      "claim": "Users can input custom color palettes with higher number of colors in scatterHatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Users can input custom color palettes with higher number of colors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "ca08f6e4-d328-4c36-82c2-10e158525f4c",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C50",
+      "claim": "Advanced users can customize patterns by choosing line types, line colors, and line widths to achieve a broader pattern library.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, advanced users can customize patterns by choosing line types, line colors, and line widths to achieve a broader pattern library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the software for advanced users.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "840e1291-fe77-43e0-ac2e-2b98eab75f70",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C51",
+      "claim": "scatterHatch facilitates the introduction of new patterns composed of one or more lines by providing a list of line angles and custom aesthetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, scatterHatch also facilitates the introduction of new patterns composed of one or more lines by providing a list of line angles and custom aesthetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "fb5a873c-203c-4ff8-bcd7-32069829ae90",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C52",
+      "claim": "In Figure 4, different cell groups are represented using patterns with custom line types (PDAC cell group), custom line colors (Other and Pancreas cell groups), and completely new patterns (Small Intestine cell group).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in Figure 4, the different cell groups are represented using patterns with custom line types (PDAC cell group), custom line colors (Other and Pancreas cell groups), and completely new patterns (Small Intestine cell group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the customization shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "2a2f6dd9-a7c2-4584-b6ae-8cbfb9df8e6c",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C53",
+      "claim": "scatterHatch is a R/Bioconductor package for generating colorblind-friendly scatter plots of embeddings for single-cell and spatial datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "We present scatterHatch, a R/Bioconductor package for generating colorblind-friendly scatter plots of embeddings for single-cell and spatial datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the software package.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "6ea73834-c06d-46dc-ad93-8772ec736ba3",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C54",
+      "claim": "scatterHatch enables users to generate scatterHatch plots\u2014scatter plots with both a color and a pattern as visual cues.",
+      "claim_type": "EXPLICIT",
+      "source": "scatterHatch enables users to generate scatterHatch plots\u2014scatter plots with both a color and a pattern as visual cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the core functionality of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "028b885a-3002-43e1-ae72-1e2dfd46e99c",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C55",
+      "claim": "scatterHatch plots are aesthetically pleasing as well as highly accessible to a broad readership including those with color vision deficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "These plots are aesthetically pleasing as well as highly accessible to a broad readership including those with color vision deficiencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the properties of the plots, supported by the examples shown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "a1cf7a96-c990-4d6b-b9af-d1abed10bccd",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C56",
+      "claim": "scatterHatch plots are compatible with point distributions that are sparse, dense, as well as mixtures of both.",
+      "claim_type": "EXPLICIT",
+      "source": "scatterHatch plots are compatible with point distributions that are sparse, dense, as well as mixtures of both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the software demonstrated in the examples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "72201ce0-f537-4039-aa65-fe731ffd7e8f",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C57",
+      "claim": "scatterHatch plots have better accessibility than simple scatter plots in low dimensional embeddings (e.g., PCA, UMAP, and TSNE) as well as spatial plots of cells in the tissue with up to 82-cell groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate how scatterHatch plots have better accessibility than simple scatter plots in low dimensional embeddings (e.g., PCA, UMAP, and TSNE) as well as spatial plots of cells in the tissue with up to 82-cell groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the examples and simulations shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "32249074-3ce2-44c9-975a-e52aea1b64f2",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C58",
+      "claim": "As the number of cell groups increases, the benefits of scatterHatch plots extend even to readers with normal vision.",
+      "claim_type": "EXPLICIT",
+      "source": "As the number of cell groups increases, the benefits of scatterHatch plots extend even to readers with normal vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the example with 82 cell groups shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "1b706aa2-65e1-401d-ad8b-3603167814bb",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C59",
+      "claim": "Future work will make enhancements to the algorithms and plotting functions to improve the aesthetics and accessibility of scatterHatch plots with overlapping cell groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In future work, we will make enhancements to the algorithms and plotting functions to improve the aesthetics and accessibility of scatterHatch plots with overlapping cell groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about planned future work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "a6be69af-d167-4577-b3f3-cb88d0ce1f86",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C60",
+      "claim": "The software will be extended to be compatible with single-cell and spatial data formats from commonly used bioinformatics packages such as Seurat and scanpy.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the software will be extended to be compatible with single-cell and spatial data formats from commonly used bioinformatics packages such as Seurat (Butler et al., 2018) and scanpy (Wolf et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about planned future work with citations to the relevant packages.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "d82c6971-ab40-4093-a389-197cc60efbe4",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C61",
+      "claim": "There is consensus on the need for bioinformatics visualizations that are accessible across the spectrum of color perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the consensus on the need for bioinformatics visualizations that are accessible across the spectrum of color perception, the progress has been slow in terms of actually affecting this change in our publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "c24e8fb0-0fcc-4c58-9b7f-84a6cbafc324",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C62",
+      "claim": "Progress has been slow in terms of actually affecting change toward accessible visualizations in publications.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the consensus on the need for bioinformatics visualizations that are accessible across the spectrum of color perception, the progress has been slow in terms of actually affecting this change in our publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "edacc607-c34a-42af-b919-c6c6c49c8b74",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C63",
+      "claim": "Simulating multiple CVDs and subjectively selecting the best possible color palette may not come naturally to a vast majority of researchers who have normal color vision.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, simulating multiple CVDs and subjectively selecting the best possible color palette for their visualizations may not come naturally to a vast majority of researchers who have normal color vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about researcher behavior and challenges.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "532558b4-4d4b-4d04-b89c-23f887114156",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C64",
+      "claim": "Strategies for simulating CVDs and selecting color palettes are not practical for individuals with one type of CVD who wish to ensure accessibility for other types of CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, such strategies are themselves not practical for individuals with one type of CVD who wish to ensure accessibility for other types of CVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of current strategies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "9dc1cde2-c6fe-43cb-9fff-b89a6bb0d1af",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C65",
+      "claim": "Software packages such as ggpattern, dittoSeq, and scatterHatch remove subjectivity to a large extent by using colorblind-friendly color palettes as default and enabling the use of visualization strategies that reduce the dependence on color.",
+      "claim_type": "EXPLICIT",
+      "source": "Software packages, such as ggpattern, dittoSeq, and scatterHatch, remove this subjectivity to a large extent by using colorblind-friendly color palettes as default, and enabling the use of visualization strategies that reduce the dependence on color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the benefits of these software packages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "051e99f2-6def-4d0f-ada0-1051461d3d3b",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C66",
+      "claim": "Future work could include the development of a software suite that combines the functionalities of packages like ggpattern, dittoSeq, and scatterHatch into a comprehensive software solution for creating CVD-friendly visualizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Future work could include the development of a software suite that combines the functionalities of these packages into a comprehensive software solution for creating CVD-friendly visualizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential future work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "d5114a41-64dd-499f-bc29-a2cbc486f2ac",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C67",
+      "claim": "There is a need for standards and guidelines for creating accessible visualizations, which requires support at multiple levels\u2014from funding agencies, journals, and developers of large-scale analysis software and visualization tools.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, there is also a need for standards and guidelines for creating accessible visualizations, which requires support at multiple levels\u2014from funding agencies, journals, and developers of large-scale analysis software and visualization tools (Speir et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation supported by citation to Speir et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "698c9b6b-2d4b-490f-a717-3647a19aa5bd",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C68",
+      "claim": "The submission review process for R or Python packages should require that the default color palettes used by the software visualizations are colorblind friendly according to well-established accessibility standards.",
+      "claim_type": "EXPLICIT",
+      "source": "The submission review process for R or Python packages should require that the default color palettes used by the software visualizations are colorblind friendly according to well-established accessibility standards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for policy changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "b50d62b7-d943-4c6a-bc5f-d9c3f11dedfc",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C69",
+      "claim": "We should develop processes for periodically incorporating the best practices for accessibility introduced in new software packages into the graphical design language standards expected from newer packages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we should develop processes for periodically incorporating the best practices for accessibility introduced in new software packages into the graphical design language standards expected from newer packages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future practices.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "a9f378ca-2184-405e-8c59-1534ac8f9631",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C70",
+      "claim": "The strategies developed by scatterHatch and other recent software only address color-vision deficiencies and not other visual impairments such as double vision or complete blindness.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the strategies developed by scatterHatch and other recent software only address color-vision deficiencies and not other visual impairments such as double vision or complete blindness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of current approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "04e71ecd-d1bc-434f-b4c4-99d32b5effc9",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C71",
+      "claim": "For visual impairments such as double vision or complete blindness, we need to incorporate accessibility features such as screen reader-friendly alternate texts which describe the graphical elements of the visualizations.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cases, we need to incorporate accessibility features such as screen reader-friendly alternate texts (Jung et al., 2022) which describe the graphical elements of the visualizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation supported by citation to Jung et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "e8e40b5b-5efc-4d37-9769-ba9fc43367d6",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C72",
+      "claim": "scatterHatch is available on Bioconductor at https://bioconductor.org/packages/release/bioc/html/scatterHatch.html.",
+      "claim_type": "EXPLICIT",
+      "source": "scatterHatch is available on Bioconductor at https://bioconductor.org/packages/release/bioc/html/scatterHatch.html.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the location where the software can be accessed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "0ce9ad09-99aa-45f2-a2e6-db75c514633c",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C73",
+      "claim": "The development version of scatterHatch is available on Github at https://github.com/FertigLab/scatterHatch.",
+      "claim_type": "EXPLICIT",
+      "source": "The development version is available on Github at https://github.com/FertigLab/scatterHatch, (copy archived at swh:1:rev:ae8a6b69722adb123fbcde40d12e2b2317deec2e; Deshpande, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the location where the development version can be accessed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "3903279f-2596-42dc-be94-cb3e01970e4c",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C74",
+      "claim": "The scripts used to generate the figures in the manuscript are available at https://github.com/FertigLab/scatterHatch-paper.",
+      "claim_type": "EXPLICIT",
+      "source": "The scripts used to generate the figures in the manuscript are available at https://github.com/FertigLab/scatterHatch-paper; Deshpande, 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the location where the analysis scripts can be accessed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "871ac81b-4af2-4587-96a4-e0a6ad0d3b2c",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "claim_id": "C75",
+      "claim": "For every point group, scatterHatch separates sparsely distributed points from the dense clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "For every point group, scatterHatch separates sparsely distributed points from the dense clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the algorithm shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "scatterHatch is an R/Bioconductor package that creates scatter plots using redundant coding with both colors and patterns. The software classifies points as sparse or dense, applies coarse patterns over dense clusters and individual patterns over sparse points, and provides 6 default patterns plus customization options.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C18-C31, and C75 collectively describe the core functionality and technical specifications of the scatterHatch software. These are straightforward descriptions of software features that are demonstrated in the figures and documented in the text, making them well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "44038300-2fec-4c82-b551-ab5214e47072",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "scatterHatch plots improve accessibility compared to simple scatter plots when simulated for various CVD types. Using PDAC single-cell data (10,000 cells, UMAP embedding, 4 K-means clusters), the addition of patterns makes it easier to distinguish cell groups in simulated deuteranomaly, protanomaly, and monochromacy conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C32-C35, C39-C41, and C57 describe the demonstration using PDAC data and CVD simulations shown in Figure 2. The visual evidence clearly shows improved distinguishability with patterns across different CVD simulations, supporting the accessibility claims for low-dimensional embeddings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "fa9edbce-a30d-4a5f-ad8e-795fee117081",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "As the number of cell groups increases, color-only plots become harder to interpret even for readers with normal vision, and redundant coding with patterns facilitates interpretation. This is demonstrated with spatial plots of 82 cell groups from PDAC data using the 'Muted Nine' colorblind-friendly palette.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 and C58 are supported by Figure 3, which demonstrates that with 82 cell groups, pattern addition improves interpretability across all CVD types and normal vision. The visual comparison provides clear evidence for this scalability benefit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "974eaa2d-6a0b-4580-880b-b741c63625d0",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "scatterHatch can visualize 280 distinct patterns by combining 40 default colors with 7 patterns, and advanced users can further customize patterns through line types, colors, widths, and custom angles to create new patterns, as demonstrated in Figure 4 with tissue-specific customizations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 describe the extensibility of the software. The calculation of 280 patterns (40\u00d77) is mathematically correct, and Figure 4 demonstrates the customization capabilities with different line types, colors, and novel patterns for different tissue groups.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "5904d18f-b85f-438a-8a3a-297555d775e9",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "scatterHatch avoids drawbacks of simpler strategies (point shapes for sparse plots, hatched patterns for dense regions) by handling mixtures of sparse and dense point distributions, producing aesthetically pleasing and accessible plots.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C53-C56 summarize the advantages of scatterHatch over alternative approaches. These claims are supported by the demonstrations in Figures 2-4 showing successful handling of mixed point distributions and the visual quality of the outputs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "ade8b9e4-ce4c-4822-8750-e8ea236420b0",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Scatter plots are widely used in single-cell bioinformatics with color as the primary visual cue, but color's usefulness declines with increasing complexity, especially for the ~8% of males and ~0.5% of females with CVD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the motivation for the work. C1-C2 describe common practices (knowledge-based), while C3-C5 cite established statistics from Wong, 2011. These background claims are well-supported by citations and field knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "0824276e-832e-4f69-a5ab-19883d7f0e15",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior work has provided guidelines for accessible visualizations and developed CVD simulation software and colorblind-friendly palettes. Different CVD types (protanopes lacking red photoreceptors, deuteranopes lacking green) require different approaches. Redundant coding strategies exist but have limitations: point shapes don't work for dense clusters, hatched patterns don't work for sparse points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16 review prior work and are supported by appropriate citations (Wong 2011, Deeb 2005, Ou 2021, Bunis et al. 2020, etc.). The characterization of limitations in existing approaches (C14-C15) is reasonable and sets up the rationale for scatterHatch.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "7500d1a6-cc0c-4912-b678-8a69a6378cc4",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Deuteranomaly is red-green colorblindness, protanomaly is blue-yellow colorblindness, and monochromacy is complete color blindness or grayscale vision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C38 contain a potential error: protanomaly is typically associated with red-green colorblindness (affecting red cones), not blue-yellow colorblindness. Tritanomaly/tritanopia affects blue-yellow perception. This mischaracterization raises concerns about the accuracy of the CVD definitions, though it doesn't invalidate the simulation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "8e26fe46-242f-4441-ad0b-d51046c131a4",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Different backgrounds can cause the same color to be perceived differently, or two different colors to be perceived as the same.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is a well-established principle of color perception supported by citation to Wong, 2010. This is a standard observation in color theory and visualization design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "b764b13c-cd2b-4f50-afeb-9370e6b4e635",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Future work will enhance algorithms for overlapping cell groups and extend compatibility to Seurat and scanpy data formats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C60 describe planned future work. These are speculative statements about intended developments and cannot be evaluated as supported or unsupported since they describe work not yet completed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "51618798-1ba0-4edf-97c7-7d6d4bb47e97",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Despite consensus on the need for accessible visualizations, progress has been slow. Simulating CVDs and selecting palettes is challenging for researchers with normal vision or those with one CVD type. Software packages like ggpattern, dittoSeq, and scatterHatch reduce subjectivity by using colorblind-friendly defaults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 provide discussion context about adoption challenges and the role of software in addressing them. These are reasonable inferences about barriers to adoption and the value proposition of automated solutions, supported by the demonstrated functionality of scatterHatch.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "e3d8bfa8-2a53-4ab0-a099-5dd473a1fe8d",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Future work could develop comprehensive CVD-friendly visualization suites. Standards and guidelines are needed with support from funding agencies, journals, and developers. Package review processes should require colorblind-friendly defaults, and best practices should be periodically incorporated into design standards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C69 are recommendations and speculations about future directions and policy changes. While C67 cites Speir et al. 2021 for the need for standards, these are primarily aspirational statements rather than empirical results that can be evaluated as supported or unsupported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "7e645f50-e6dd-4842-a57b-5459834a299a",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "scatterHatch and similar software only address CVD, not other visual impairments like double vision or complete blindness, which require features like screen reader-friendly alternate texts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 acknowledge limitations of the current approach and suggest complementary accessibility features. This is an honest assessment of scope limitations, supported by citation to Jung et al. 2022 for alternate text approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    },
+    {
+      "id": "5d4e654d-2b39-4014-9074-fc45392e2719",
+      "content_id": "97e10798-ee2d-43c0-b633-a0c6eb174d70",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "scatterHatch is available on Bioconductor, with development version on Github, and analysis scripts are publicly available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 provide software availability information with specific URLs and archive references. These are verifiable statements about code and data availability that support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:54:12.396975Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d30c34e0-ce4f-43dc-b8bd-f0f8a2dacf89",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "699ab28c-30d0-43a9-8ae6-1f0d3c8566ae",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "7fac1217-f829-4167-9580-b02a37ede83b",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "8ed8523a-6ea0-419f-af29-67c43f927c7f",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "02c14e1f-11ac-43aa-8ffd-8549d7e47d35",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "08fad4d5-dabe-48f9-977f-d119e10eaa4c",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "4cf91c02-3e38-478c-98c0-faf37e990288",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "d10cbcb4-5979-43df-a70f-3ab8b91d1601",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "c97c97c3-7b24-422d-a833-97332cfe612e",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "afd3e785-b3b7-4417-8cf9-962fc29fd77e",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "3f303843-e116-4843-a623-c66bc6415bff",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "5b6131ab-fc4e-4492-926b-18cf6eb96976",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "b74c79e2-6a12-4176-8492-ab59498a979c",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "b51a2875-daa4-4a05-a89e-305516607fec",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "de153acf-456c-4497-977e-5407ad9b80d6",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "871ac81b-4af2-4587-96a4-e0a6ad0d3b2c",
+      "result_id": "a960b3c5-4674-4508-8a5c-c4a821c00a0f"
+    },
+    {
+      "claim_id": "fbaa44f8-5a65-449f-97fe-d20b2a3fc11b",
+      "result_id": "44038300-2fec-4c82-b551-ab5214e47072"
+    },
+    {
+      "claim_id": "ee3f2034-3106-497e-96d5-c9f8dd69d33e",
+      "result_id": "44038300-2fec-4c82-b551-ab5214e47072"
+    },
+    {
+      "claim_id": "ac4a35a8-2292-4f79-bbf8-44e39887bc7d",
+      "result_id": "44038300-2fec-4c82-b551-ab5214e47072"
+    },
+    {
+      "claim_id": "27bd0f67-5993-4adf-9105-52b9499f283e",
+      "result_id": "44038300-2fec-4c82-b551-ab5214e47072"
+    },
+    {
+      "claim_id": "79c4f473-4c95-444b-a5c3-fe438322fd4b",
+      "result_id": "44038300-2fec-4c82-b551-ab5214e47072"
+    },
+    {
+      "claim_id": "d5113f19-d78c-4a5c-b50c-e09960363acb",
+      "result_id": "44038300-2fec-4c82-b551-ab5214e47072"
+    },
+    {
+      "claim_id": "4041c973-ec37-4dd1-aca7-06184e94ca63",
+      "result_id": "44038300-2fec-4c82-b551-ab5214e47072"
+    },
+    {
+      "claim_id": "7084f541-d878-4a92-b8a9-6e5ea0ea190a",
+      "result_id": "44038300-2fec-4c82-b551-ab5214e47072"
+    },
+    {
+      "claim_id": "72201ce0-f537-4039-aa65-fe731ffd7e8f",
+      "result_id": "44038300-2fec-4c82-b551-ab5214e47072"
+    },
+    {
+      "claim_id": "b88e2a58-09e4-4915-80a5-c915e74e0bfa",
+      "result_id": "fa9edbce-a30d-4a5f-ad8e-795fee117081"
+    },
+    {
+      "claim_id": "f8e77c8f-d950-4e43-be0f-d6ffd3b197a4",
+      "result_id": "fa9edbce-a30d-4a5f-ad8e-795fee117081"
+    },
+    {
+      "claim_id": "f6eafa63-1425-40c7-9046-e4c09c3603f7",
+      "result_id": "fa9edbce-a30d-4a5f-ad8e-795fee117081"
+    },
+    {
+      "claim_id": "f72486cb-81ac-456e-ab96-eb7903ab73b7",
+      "result_id": "fa9edbce-a30d-4a5f-ad8e-795fee117081"
+    },
+    {
+      "claim_id": "c248a5ba-49b1-425a-a626-e49a09e2d9f7",
+      "result_id": "fa9edbce-a30d-4a5f-ad8e-795fee117081"
+    },
+    {
+      "claim_id": "32249074-3ce2-44c9-975a-e52aea1b64f2",
+      "result_id": "fa9edbce-a30d-4a5f-ad8e-795fee117081"
+    },
+    {
+      "claim_id": "9fae42a3-0e1f-4482-ab8d-672707e058c2",
+      "result_id": "974eaa2d-6a0b-4580-880b-b741c63625d0"
+    },
+    {
+      "claim_id": "db2ca4bc-bb42-440a-bfc9-d0a26325ad91",
+      "result_id": "974eaa2d-6a0b-4580-880b-b741c63625d0"
+    },
+    {
+      "claim_id": "ca08f6e4-d328-4c36-82c2-10e158525f4c",
+      "result_id": "974eaa2d-6a0b-4580-880b-b741c63625d0"
+    },
+    {
+      "claim_id": "840e1291-fe77-43e0-ac2e-2b98eab75f70",
+      "result_id": "974eaa2d-6a0b-4580-880b-b741c63625d0"
+    },
+    {
+      "claim_id": "fb5a873c-203c-4ff8-bcd7-32069829ae90",
+      "result_id": "974eaa2d-6a0b-4580-880b-b741c63625d0"
+    },
+    {
+      "claim_id": "50b12760-9851-49bc-bad3-887466431c64",
+      "result_id": "5904d18f-b85f-438a-8a3a-297555d775e9"
+    },
+    {
+      "claim_id": "2a2f6dd9-a7c2-4584-b6ae-8cbfb9df8e6c",
+      "result_id": "5904d18f-b85f-438a-8a3a-297555d775e9"
+    },
+    {
+      "claim_id": "6ea73834-c06d-46dc-ad93-8772ec736ba3",
+      "result_id": "5904d18f-b85f-438a-8a3a-297555d775e9"
+    },
+    {
+      "claim_id": "028b885a-3002-43e1-ae72-1e2dfd46e99c",
+      "result_id": "5904d18f-b85f-438a-8a3a-297555d775e9"
+    },
+    {
+      "claim_id": "a1cf7a96-c990-4d6b-b9af-d1abed10bccd",
+      "result_id": "5904d18f-b85f-438a-8a3a-297555d775e9"
+    },
+    {
+      "claim_id": "e63a010a-9ad3-4d6e-b576-e2a9e75461ed",
+      "result_id": "ade8b9e4-ce4c-4822-8750-e8ea236420b0"
+    },
+    {
+      "claim_id": "b501afc8-1f43-487e-ac68-538092ab4d31",
+      "result_id": "ade8b9e4-ce4c-4822-8750-e8ea236420b0"
+    },
+    {
+      "claim_id": "5f9af66d-5f54-45a0-afb9-013e0c2cf8f5",
+      "result_id": "ade8b9e4-ce4c-4822-8750-e8ea236420b0"
+    },
+    {
+      "claim_id": "9ff0abcf-475d-4248-82a4-c2263e89c0cc",
+      "result_id": "ade8b9e4-ce4c-4822-8750-e8ea236420b0"
+    },
+    {
+      "claim_id": "50711b2f-2619-4342-ab9a-98f022a10c55",
+      "result_id": "ade8b9e4-ce4c-4822-8750-e8ea236420b0"
+    },
+    {
+      "claim_id": "81be3fbe-c088-42a7-bb46-96510f9bd279",
+      "result_id": "0824276e-832e-4f69-a5ab-19883d7f0e15"
+    },
+    {
+      "claim_id": "c351fae1-51de-4d88-bd40-ad1e142da436",
+      "result_id": "0824276e-832e-4f69-a5ab-19883d7f0e15"
+    },
+    {
+      "claim_id": "e1d5541c-13ea-42a5-8f35-89e4d065da8e",
+      "result_id": "0824276e-832e-4f69-a5ab-19883d7f0e15"
+    },
+    {
+      "claim_id": "5e91599d-632c-4633-947b-e8197c4f1c53",
+      "result_id": "0824276e-832e-4f69-a5ab-19883d7f0e15"
+    },
+    {
+      "claim_id": "2d8a3b69-8a8b-415b-8b5f-2eb7da7df2ad",
+      "result_id": "0824276e-832e-4f69-a5ab-19883d7f0e15"
+    },
+    {
+      "claim_id": "227098e2-4558-4693-96f1-01dd81ea4468",
+      "result_id": "0824276e-832e-4f69-a5ab-19883d7f0e15"
+    },
+    {
+      "claim_id": "586a10b8-846a-424f-81ce-da320aeb1ddb",
+      "result_id": "0824276e-832e-4f69-a5ab-19883d7f0e15"
+    },
+    {
+      "claim_id": "9f014319-3d52-405b-bf0f-8086ecf0fc37",
+      "result_id": "0824276e-832e-4f69-a5ab-19883d7f0e15"
+    },
+    {
+      "claim_id": "a31edc22-0ce6-425f-b286-3c048062175a",
+      "result_id": "0824276e-832e-4f69-a5ab-19883d7f0e15"
+    },
+    {
+      "claim_id": "b4a61d16-fc82-4802-94d5-be7461a414ab",
+      "result_id": "7500d1a6-cc0c-4912-b678-8a69a6378cc4"
+    },
+    {
+      "claim_id": "30040930-aaf6-4f1b-95d0-d3fcd3a96531",
+      "result_id": "7500d1a6-cc0c-4912-b678-8a69a6378cc4"
+    },
+    {
+      "claim_id": "8de5b108-e88e-44e9-b8ff-1581ff2153c0",
+      "result_id": "7500d1a6-cc0c-4912-b678-8a69a6378cc4"
+    },
+    {
+      "claim_id": "af921bf3-e755-475d-a46b-92eced3180df",
+      "result_id": "8e26fe46-242f-4441-ad0b-d51046c131a4"
+    },
+    {
+      "claim_id": "1b706aa2-65e1-401d-ad8b-3603167814bb",
+      "result_id": "b764b13c-cd2b-4f50-afeb-9370e6b4e635"
+    },
+    {
+      "claim_id": "a6be69af-d167-4577-b3f3-cb88d0ce1f86",
+      "result_id": "b764b13c-cd2b-4f50-afeb-9370e6b4e635"
+    },
+    {
+      "claim_id": "d82c6971-ab40-4093-a389-197cc60efbe4",
+      "result_id": "51618798-1ba0-4edf-97c7-7d6d4bb47e97"
+    },
+    {
+      "claim_id": "c24e8fb0-0fcc-4c58-9b7f-84a6cbafc324",
+      "result_id": "51618798-1ba0-4edf-97c7-7d6d4bb47e97"
+    },
+    {
+      "claim_id": "edacc607-c34a-42af-b919-c6c6c49c8b74",
+      "result_id": "51618798-1ba0-4edf-97c7-7d6d4bb47e97"
+    },
+    {
+      "claim_id": "532558b4-4d4b-4d04-b89c-23f887114156",
+      "result_id": "51618798-1ba0-4edf-97c7-7d6d4bb47e97"
+    },
+    {
+      "claim_id": "9dc1cde2-c6fe-43cb-9fff-b89a6bb0d1af",
+      "result_id": "51618798-1ba0-4edf-97c7-7d6d4bb47e97"
+    },
+    {
+      "claim_id": "051e99f2-6def-4d0f-ada0-1051461d3d3b",
+      "result_id": "e3d8bfa8-2a53-4ab0-a099-5dd473a1fe8d"
+    },
+    {
+      "claim_id": "d5114a41-64dd-499f-bc29-a2cbc486f2ac",
+      "result_id": "e3d8bfa8-2a53-4ab0-a099-5dd473a1fe8d"
+    },
+    {
+      "claim_id": "698c9b6b-2d4b-490f-a717-3647a19aa5bd",
+      "result_id": "e3d8bfa8-2a53-4ab0-a099-5dd473a1fe8d"
+    },
+    {
+      "claim_id": "b50d62b7-d943-4c6a-bc5f-d9c3f11dedfc",
+      "result_id": "e3d8bfa8-2a53-4ab0-a099-5dd473a1fe8d"
+    },
+    {
+      "claim_id": "a9f378ca-2184-405e-8c59-1534ac8f9631",
+      "result_id": "7e645f50-e6dd-4842-a57b-5459834a299a"
+    },
+    {
+      "claim_id": "04e71ecd-d1bc-434f-b4c4-99d32b5effc9",
+      "result_id": "7e645f50-e6dd-4842-a57b-5459834a299a"
+    },
+    {
+      "claim_id": "e8e40b5b-5efc-4d37-9769-ba9fc43367d6",
+      "result_id": "5d4e654d-2b39-4014-9074-fc45392e2719"
+    },
+    {
+      "claim_id": "0ce9ad09-99aa-45f2-a2e6-db75c514633c",
+      "result_id": "5d4e654d-2b39-4014-9074-fc45392e2719"
+    },
+    {
+      "claim_id": "3903279f-2596-42dc-be94-cb3e01970e4c",
+      "result_id": "5d4e654d-2b39-4014-9074-fc45392e2719"
+    }
+  ],
+  "comparisons": []
+}

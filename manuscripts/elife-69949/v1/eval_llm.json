@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C90",
+      "C91"
+    ],
+    "result": "COV-ID successfully modifies RT-LAMP primers to introduce patient-specific barcodes and PCR handles, enabling two-dimensional barcoding for high-throughput sequencing. Modified primers showed slightly delayed but successful amplification, and the approach was validated on both viral (SARS-CoV-2) and human (ACTB) targets with correct product generation confirmed by Sanger sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 and C90 provide converging experimental evidence that the primer modification strategy works: prior literature supports primer tolerance (C22), experimental data shows successful amplification with modified primers (C23-C25), and the two-dimensional barcoding design is clearly demonstrated (C90-C91). The method description (C2) is well-supported by the experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C72"
+    ],
+    "result": "COV-ID achieves a limit of detection of 5-10 virions per \u03bcL in contrived saliva samples, which is comparable or superior to established testing protocols. In validation experiments, 95% (19/20) of samples with spiked-in virus were correctly classified as positive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32, C33, C72 are directly supported by experimental data in Figure 2D showing consistent detection at 5 virions/\u03bcL. The comparison to established protocols (C34) is supported by citation and experimental data. The 95% classification accuracy (C32) provides strong quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C73",
+      "C74"
+    ],
+    "result": "COV-ID showed 100% (8/8) concordance with RT-qPCR on clinical saliva samples, with a limit of detection of at least 300 virions/\u03bcL in clinical settings. The actual limit may be lower but could not be determined due to sample limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C38, and C73 are directly supported by experimental data in Figure 2E showing perfect concordance with clinical RT-qPCR. The acknowledgment of uncertainty about the true lower limit (C74) is appropriately cautious given the available data. The small sample size (n=8) is a limitation but the concordance is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "COV-ID validation on 120 clinical NP swab samples showed good agreement with RT-qPCR, though with inferior sensitivity (10 false negatives). However, 7 of these false negatives had unreliable Ct values >36, and COV-ID demonstrated good specificity and sensitivity when samples with Ct <36 or <31 were considered true positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 present a balanced assessment supported by experimental data in Figure 2\u2014figure supplement 3. The acknowledgment of reduced sensitivity (C44) is honest, but the contextualization that most false negatives had unreliable Ct values (C45) and the ROC/precision-recall analysis (C46) provide appropriate nuance. The result is well-supported despite the limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C96",
+      "C97"
+    ],
+    "result": "COV-ID enables simultaneous detection of multiple amplicons (SARS-CoV-2, influenza A, STATHERIN, and synthetic calibration standard) in a single reaction. Multiplex detection showed good performance for single pathogens (7/8 for SARS-CoV-2, 6/8 for H1N1) but reduced sensitivity for dual infections (11/16), though at least one pathogen was detected in all dual-infection samples (16/16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C48-C51 are supported by experimental data in Figure 3. The multiplexing capability is clearly demonstrated (C96-C97), and the authors appropriately acknowledge reduced sensitivity in dual infections (C49) while noting that at least one pathogen is always detected (C50). The inference about interference (C51) is reasonable given the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C82"
+    ],
+    "result": "COV-ID can be performed directly on saliva absorbed on filter paper, with a limit of detection of 320 copies/\u03bcL. While this is higher than in-solution COV-ID, it remains within the useful range for detecting infections and simplifies sample collection logistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C53-C56, and C82 are supported by experimental data in Figure 4. The paper-based approach is clearly demonstrated (C53-C54), and the limit of detection (C55) is appropriately contextualized as higher than in-solution but still clinically useful (C56). This represents a practical innovation for sample collection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C83"
+    ],
+    "result": "COV-ID's two-dimensional barcoding strategy and isothermal amplification enable testing of thousands to tens of thousands of samples (9,216-36,864) in a single sequencing run with limited equipment. Theoretical sequencing cost could be as low as $0.04 per sample, with results potentially available within 16 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C62-C65, C68-C71, and C83 describe the scalability and throughput of COV-ID. The two-dimensional barcoding strategy is experimentally validated (C62, C65), and the throughput calculations (C64, C68) are based on sound mathematical reasoning given the experimental design. Cost estimates (C69) and turnaround time (C70) are reasonable projections. The claim about minimal equipment (C4, C83) is supported by the method design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C98",
+      "C99"
+    ],
+    "result": "STATHERIN (STATH) was selected as the human control for COV-ID because it is saliva-specific and its mRNA signal is RNase-sensitive, unlike ACTB which showed contributions from genomic DNA amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C98-C99 are supported by experimental data in Figure 2\u2014figure supplement 1B showing differential RNase sensitivity. The choice of STATH over ACTB is well-justified by the experimental evidence and the citation supporting STATH's saliva-specific expression (C98). This is an important methodological detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Out of 32 barcodes tested, 25 successfully amplified all three target RNAs (N2, ACTB, STATH). Some barcodes inhibited RT-LAMP, possibly due to internal micro-homology. Pooled samples showed no loss of sensitivity or specificity compared to individual PCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by experimental data in Figure 2\u2014figure supplement 1D and 1E. The barcode validation (C35) is clearly demonstrated, the explanation for failures (C36) is reasonable though speculative, and the pooling validation (C37) is experimentally confirmed. This validates a key technical component of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C86",
+      "C87"
+    ],
+    "result": "A synthetic N2 calibration standard with a 7-nt divergent sequence was developed and validated for COV-ID. Addition of this standard reduced variability in read numbers across samples and lowered false positive signals in negative samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C86-C87 are supported by experimental data in Figure 2\u2014figure supplement 2. The design of the synthetic standard (C86) is clear, its efficient amplification is demonstrated (C87), and the benefits for normalization (C41-C42) are experimentally validated. The rationale (C39-C40) is supported by citations and established practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C92"
+    ],
+    "result": "Saliva is used as the sample material for COV-ID, prepared using TCEP/EDTA treatment that inactivates SARS-CoV-2 virions, saliva-borne RNases, and LAMP inhibitors. Saliva has been validated as a viable template for various nucleic acid amplification methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C92 are well-supported by multiple citations to published research demonstrating saliva's utility for COVID-19 diagnostics and various amplification methods. The TCEP/EDTA treatment (C92) is supported by citation and shown in Figure 2A. This establishes the rationale for the sample type choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Published studies indicate that viral loads in saliva average ~380 copies/\u03bcL in infected individuals, with comparable levels between symptomatic and asymptomatic individuals and between saliva and NP swabs. This suggests COV-ID's limit of detection is sufficient for detecting infectious individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by citations to published research providing context for viral loads in clinical samples. The inference about COV-ID's adequacy (C78) is reasonable given the comparison between COV-ID's limit of detection and published viral loads. This provides important clinical context for the method's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C80",
+      "C81"
+    ],
+    "result": "COV-ID sequencing validation showed a single band of expected size in viral samples, with reads aligning uniformly to the N gene. After quality filtering, 76% of reads were informative, with negative controls consisting predominantly of adapter dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 and C80-C81 are supported by experimental data in Figures 2B, 2C, and Figure 2\u2014figure supplement 1C. These claims describe technical validation of the sequencing approach and data quality, which are important for establishing method reliability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C85"
+    ],
+    "result": "COV-ID could potentially be adapted for viral variant detection with carefully designed primers, as demonstrated by other RT-LAMP studies. However, optimization work remains including developing spike-targeting primers for genomic surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 describe potential future applications supported by citations, but C85 acknowledges this requires additional development work. The capability is plausible given precedent (C67) but has not been demonstrated in this study. This represents future work rather than a current result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Amplified COV-ID libraries could be shipped to remote facilities for sequencing in a cost-effective manner, as proposed for similar methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 is a proposal based on precedent from another method (LAMP-seq) but has not been experimentally validated in this study. While plausible, this represents a suggested application rather than a demonstrated capability. The feasibility would depend on factors not tested here (shipping stability, turnaround time impact, etc.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C79"
+    ],
+    "result": "The manuscript provides extensive background on the COVID-19 pandemic, testing challenges, and the need for population-level surveillance. This includes pandemic statistics, effectiveness of interventions, barriers to testing, and the ongoing importance of surveillance despite vaccination efforts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C16, C57-C61, and C79 provide context and motivation for the work. These are supported by citations to published research and represent established knowledge about the pandemic and testing landscape. While important for framing the study, these are background claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C47",
+      "C52",
+      "C88",
+      "C89",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The manuscript reviews existing sequencing-based and RT-LAMP-based diagnostic methods, their advantages and limitations, and established practices in diagnostic testing including the use of host controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C47, C52, C88-C89, and C93-C95 describe prior work and established methods. These are supported by citations to published research and represent accurate characterization of the field. This provides important context for positioning COV-ID relative to existing approaches.",
+    "result_type": "MINOR"
+  }
+]

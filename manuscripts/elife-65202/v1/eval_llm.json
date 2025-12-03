@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "TKIT is a novel CRISPR/Cas9-based genome editing method that uses two guide RNAs targeting non-coding regions (5'-UTR and introns) flanking the coding sequence. The donor DNA contains the coding sequence with a tag insertion and incorporates a 'switch-and-flip' design where guide sequences are reversed and flipped, promoting correct orientation insertion through iterative cutting cycles until proper integration or INDEL disruption occurs. This design protects coding regions from INDEL mutations and enables precise control over insertion site sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TKIT method design is well-documented with clear mechanistic descriptions (C27, C41-C49) and supported by experimental validation showing intact mRNA splicing (C53, C87) and proper protein localization (C51-C52, C70-C71, C84-C86). The switch-and-flip mechanism is logically sound and demonstrated through sequencing data. The protection from coding region INDELs is a direct consequence of targeting non-coding regions, though the actual frequency of INDEL events in non-coding regions is not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "TKIT achieves knock-in efficiencies ranging from 15.2% to 41.7% in mouse primary cultured neurons for various synaptic proteins. Specifically: GluA1 (21.9%), GluA2 (38.9%), GluA3 (20.5%), GFP-gephyrin (41.7%), Beta2 (27.2%), NR1 (15.2%), NR2A (16.7%), and NR2B (27.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Efficiency measurements are clearly quantified with specific percentages for each target protein (C72-C76, C78-C80), supported by microscopy data showing successful tagging (Figures 2-3). The methodology for calculating efficiency (percentage of GFP-positive cells among mCherry-positive transfected cells) is described (C55). Sample sizes and replication are mentioned but specific statistical details (error bars, n values per experiment) would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C70",
+      "C71",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "TKIT-mediated knock-in produces correctly localized and properly expressed tagged proteins in cultured neurons. SEP-tagged AMPAR subunits show punctate dendritic spine localization, co-localize with endogenous receptors and synaptic markers (PSD95), maintain intact mRNA splicing, and express at levels comparable to wild-type neurons. The method requires co-transfection of both donor and Cas9/guide constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence validate proper TKIT function: immunofluorescence co-localization (C52, C83-C86), sequencing confirmation of intact splicing (C53, C87), expression level comparisons (C54), and proper subcellular localization (C51, C70-C71, C84-C85). Control experiments demonstrate specificity (C55-C56). The correlation analyses provide quantitative support for co-localization claims. This comprehensive validation strengthens confidence in the method's fidelity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C92",
+      "C93",
+      "C94",
+      "C135",
+      "C136"
+    ],
+    "result": "TKIT enables in vivo visualization of endogenous AMPARs using in utero electroporation. SEP-GluA2 can be knocked in to layer 2/3 pyramidal neurons at E15, producing punctate dendritic signals visible by two-photon microscopy in adult mice. The tagged receptors remain stable for over one year, enabling longitudinal imaging of endogenous surface AMPARs in live animals for the first time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In vivo functionality is demonstrated through clear two-photon imaging data (C93, Figures 5C-D) following in utero electroporation (C92). Long-term stability is documented (C94), and the novelty of visualizing endogenous (not overexpressed) AMPARs in vivo is explicitly stated (C136). The imaging quality and dendritic spine localization patterns are consistent with expected AMPAR distribution. However, quantification of in vivo efficiency via this delivery method is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C127",
+      "C128"
+    ],
+    "result": "A dual-AAV system enables TKIT-mediated knock-in in wild-type adult mice with 16.1% efficiency. One AAV delivers HA-tagged SpCas9 while a second AAV delivers the TKIT donor and guide RNAs. This approach achieves higher efficiency than the original HITI method and produces detectable native SEP fluorescence in hippocampal neurons three weeks post-injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual-AAV approach is well-documented (C95-C97) with clear efficiency quantification (C99, C127) based on co-localization of HA-Cas9 and GFP signals (Figure 5G-H). The comparison to HITI efficiency is supported by citations (C128). Native fluorescence detection (C98) validates functional protein expression. However, the lower in vivo efficiency compared to in vitro (16.1% vs 38.9%) is noted but not fully explained, though potential AAV integration issues are discussed (C106, C137-C138).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "TKIT achieves cell-type-specific knock-in in vivo by combining AAV delivery with Cre-dependent Cas9 expression. In Camk2aCre:Cas9fl/wt mice, SEP-GluA1 localizes to dendritic spines of excitatory neurons, while in PvalbCre:Cas9fl/wt mice, it distributes along smooth dendrites of parvalbumin-positive interneurons. Tagged receptors are visible by two-photon microscopy in both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell-type specificity is demonstrated through genetic targeting (C100) with distinct morphological patterns matching expected cell types (C102-C103, Figure 6B,D). The approach combines established Cre-lox technology with TKIT, and the differential localization patterns (spines vs. smooth dendrites) provide internal validation of cell-type targeting. Two-photon imaging confirms in vivo visualization (C104, Figure 6F). This represents a significant advance for studying cell-type-specific protein regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "TKIT-tagged endogenous receptors enable functional studies including FRAP analysis and cross-species applications. SEP-GluA1 shows fluorescence recovery after photobleaching with \u03c4=3.057 min and 52.44% immobile fraction, comparable to some but not all overexpression studies. TKIT successfully tags AMPARs in rat neurons with efficiencies similar to mouse, demonstrating cross-species utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "FRAP experiments provide quantitative mobility data (C111-C113) from pooled measurements (46 spines, 3 cells). The comparison to previous studies (C114) acknowledges discrepancies and offers a reasonable explanation related to overexpression levels (C115). Cross-species validation in rat neurons (C107-C109) with comparable efficiencies strengthens the method's generalizability. However, the FRAP data would benefit from more extensive replication and statistical analysis of variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "TKIT can generate knockout alleles when donor DNA fails to integrate. Genomic PCR shows no detectable KO band, but immunofluorescence reveals 12.4% of transfected cells lack detectable GluA2, compared to 1.2% in untransfected controls. This indicates that approximately 11% of TKIT-treated cells become heterozygous or homozygous knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The KO issue is acknowledged and quantified through two complementary approaches: PCR (C89) and immunofluorescence (C90-C91). The control measurement (C91) provides important context, suggesting ~11% true KO rate. The discrepancy between PCR (no KO band) and immunofluorescence (12.4% GluA2-negative) likely reflects detection sensitivity differences. This is an important limitation that is honestly reported and appropriately discussed (C132-C134). The authors correctly note this should be considered when interpreting results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C81",
+      "C82"
+    ],
+    "result": "TKIT successfully tags multiple synaptic protein types with various fluorescent tags. The method works for AMPAR subunits (GluA1-3), NMDAR subunits (NR1, NR2A, NR2B), GABA receptor subunit (Beta2), and cytosolic proteins (gephyrin). Tags include SEP, GFP, tdTomato, and small epitope tags (Myc), with guide sites positioned in 5'-UTR and flanking introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The breadth of successful targets (C63-C67) demonstrates TKIT's versatility across protein types (membrane receptors and cytosolic proteins) and tag sizes. Multiple tag types are validated (C81-C82), showing the method is not limited to specific fluorophores. The guide positioning strategy (C69) is consistent across targets. This comprehensive demonstration of applicability is well-supported by imaging data across all targets, though efficiency varies considerably (15-42%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C30",
+      "C31",
+      "C122",
+      "C124",
+      "C125",
+      "C129"
+    ],
+    "result": "TKIT's targeting of non-coding regions provides resistance to INDEL mutations in coding sequences and increases flexibility in guide RNA selection. Even if INDELs occur at cut sites in non-coding regions, the mRNA and protein are likely to remain intact. This design is particularly advantageous for N-terminal tagging where coding sequence INDELs would be most damaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The logical basis for INDEL resistance is sound: cutting non-coding regions protects coding sequences (C28, C124). Experimental validation shows intact splicing (C53, C87) and proper protein expression (C54), supporting the claim that non-coding INDELs don't disrupt function (C125). The advantage for guide selection (C30-C31) is reasonable but not directly demonstrated. The N-terminal tagging advantage (C129) is validated through successful tagging of multiple proteins at this position. However, the actual frequency of non-coding INDELs and their effects could be more thoroughly characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Existing genome editing methods face significant limitations in post-mitotic cells. HDR-based approaches are inefficient in neurons, while NHEJ-based methods (including HITI) achieve higher efficiency but are sensitive to INDEL mutations, particularly problematic for N-terminal tagging. These methods also lack flexibility in insertion site selection due to PAM sequence requirements and guide availability constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about prior work are well-supported by appropriate citations (C18-C23, C36, C116-C121) and represent accurate characterization of the field. The limitations described (HDR inefficiency in neurons, NHEJ INDEL sensitivity, PAM constraints) are established knowledge. This contextualizes TKIT's advantages appropriately. However, these are primarily literature-based claims rather than experimental results from this study, serving to motivate the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C32",
+      "C33",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C139",
+      "C140"
+    ],
+    "result": "Endogenous protein tagging offers multiple advantages over antibody-based methods and overexpression approaches, including independence from antibody validation, circumventing steric occlusion issues, compatibility with live imaging, and preservation of natural expression levels and regulation. These advantages are particularly important for studying synaptic proteins like AMPARs and NMDARs, where overexpression may cause non-physiological regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established principles in the field (C9-C12, C139) supported by general knowledge and the authors' experimental validation of proper expression levels (C54). The specific concerns about AMPAR overexpression (C60-C61) are appropriately cited. The pH-sensitivity of SEP (C32) is established. These claims provide important context for why endogenous tagging methods like TKIT are valuable, though they are primarily background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "CRISPR/Cas9 technology revolutionized genome editing by making it easier, faster, and cheaper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is well-established historical fact supported by appropriate citations to foundational CRISPR papers (C13-C14). While accurate and important context, this represents general knowledge rather than a finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "TKIT provides an efficient, reliable, and readily scalable approach for endogenous protein tagging in vitro and in vivo, with demonstrated utility in mouse and rat neurons and potential applicability to all model organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim is supported by the comprehensive experimental validation across multiple targets, delivery methods, and species (C4-C8, C72-C80, C107-C109, C127). The efficiency, reliability, and scalability are demonstrated through the data. However, the claim of utility in \"all model organisms\" (C152) is speculative, extrapolating from mouse and rat data. The overall conclusion is justified by the presented evidence but represents interpretation rather than direct experimental finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C137",
+      "C138"
+    ],
+    "result": "AAV fragments may integrate into CRISPR/Cas9-induced double-strand breaks, potentially disrupting gene function and contributing to lower in vivo efficiency (16.1%) compared to in vitro (38.9%). The in vivo efficiency may also be underestimated due to incomplete co-transduction of both AAVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The AAV integration concern is based on cited literature (C105) but not directly tested in this study (C106). The efficiency difference between in vivo and in vitro is documented (C137) but the proposed explanations (AAV integration, incomplete co-transduction) are speculative (C106, C138). Without direct evidence of AAV integration or co-transduction rates, these remain plausible hypotheses rather than demonstrated findings. Additional experiments would be needed to confirm these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "TKIT could potentially be combined with proximity labeling techniques (APEX, BioID, TurboID) to improve subcellular targeting accuracy and signal-to-noise ratios. The flexibility in tag insertion sites would allow avoidance of protein interaction motifs, preventing mis-localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims about potential future applications (C141, C143-C144). While the logic is sound\u2014endogenous tagging should improve proximity labeling specificity\u2014no experimental data is provided to support this application. The authors appropriately acknowledge this remains to be tested (C144). The flexibility advantage (C145) is demonstrated for fluorescent tags but not for proximity labeling enzymes. This represents reasonable speculation about future directions rather than validated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "While faithful mRNA splicing was detected for TKIT-tagged GluA2, targeting non-coding regions could potentially affect mRNA processing. However, the high flexibility in guide RNA selection should allow identification of sites that leave splicing unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The detection of intact splicing (C146) is well-supported by sequencing data (C53, C87). However, the concern about potential effects on mRNA processing (C147) is speculative, and the proposed solution (C148-C149) is logical but not experimentally validated. The authors tested splicing for their specific guide positions but did not systematically evaluate how guide placement affects splicing. The claim that concerns will be \"easily overcome\" (C149) is optimistic without supporting data. More comprehensive analysis of splicing across different guide positions would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "While TKIT has only been used for protein tagging to date, it could potentially be applied to clinical therapy for correcting causative mutations in genetic disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly speculative (C154) with no supporting experimental data. The current limitation to protein tagging is acknowledged (C153). While TKIT's precision and efficiency might make it suitable for therapeutic applications, this would require extensive additional development including: demonstration of mutation correction (not just tagging), safety validation, delivery optimization, and efficacy testing in disease models. This represents a distant potential application rather than a supported result.",
+    "result_type": "MINOR"
+  }
+]

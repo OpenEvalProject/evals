@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C40",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study utilized single-cell RNA sequencing to profile sox10:GFP+ cells from posterior zebrafish tissues at 48-50 hpf and 68-70 hpf, yielding 1608 and 2410 cells respectively for a total of 4018 cells analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39, C40, C49-C56 collectively describe the experimental design and data acquisition. The methodology is clearly documented with specific cell counts, time points, and technical details. The approach is standard for scRNA-seq studies and the numbers are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C41",
+      "C42",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study identified eight major cell types (mesenchyme, NCC, neural, neuronal, glial, pigment, muscle, and otic) and resolved over 40 cellular subtypes across 42 clusters (19 at 48-50 hpf and 23 at 68-70 hpf).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C41, C42, C57-C59 describe the main clustering results. The identification of major cell types is supported by marker gene expression (C70, C87, C93, C74-C77) and validated by HCR (C84-C86, C92, C98). The quantitative findings are consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Cell cycle analysis revealed that 48% of cells at 48-50 hpf and 36% at 68-70 hpf were proliferative, indicating a general decrease in proliferation over developmental time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 present cell cycle analysis with specific percentages for G1, S, and G2/M phases. The calculations are internally consistent (52% G1 + 31% S + 17% G2/M = 100% at 48-50 hpf; 48% proliferative = 31% S + 17% G2/M). The interpretation (C68) is supported by citation to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Mesenchyme cells represented the largest proportion of the datasets (61% at 48-50 hpf and 53% at 68-70 hpf) and included nine chondrogenic clusters expressing barx1/dlx2a alongside general mesenchymal markers like twist1a/b and prrx1a/b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C92 describe mesenchyme characterization. The identification is based on established markers (C70, C87) supported by citations. HCR validation (C92) confirms co-expression of key markers. The presence of heterogeneous cell states (C90) is a reasonable interpretation of the transcriptomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study resolved distinct pigment cell populations including melanophores, xanthophores, iridophores, and pigment progenitors, with melanophores existing in different proliferative states at 68-70 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C86 describe pigment cell identification and characterization. Cell types are identified by well-established markers (mitfa, tfec, xdh) supported by citations. HCR validation (C84-C86) confirms the scRNA-seq findings. The identification of proliferative vs non-proliferative melanophores (C78-C79) is based on cell cycle marker expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "At 48-50 hpf, Cluster 5 contained neural crest cells expressing core NCC markers (sox10, foxd3, crestin, tfap2a) and enteric markers (phox2bb, ret, gfra1a, meis3, zeb2a), indicating the presence of enteric neural crest cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 describe NCC and ENCC identification at 48-50 hpf. The markers used are well-established and supported by citations (C95). HCR validation (C98) confirms co-expression of multiple ENCC markers in the foregut. The identification is consistent with known ENCC biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "At 68-70 hpf, differentiating enteric neurons were identified in Clusters 5 and 12 based on expression of elavl3, phox2bb, ret, and gfra1a, with Cluster 12 showing enrichment of enteric-specific markers including nos1, vipb, and vip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 describe enteric neuron identification at 68-70 hpf. The marker combinations are appropriate for identifying differentiating enteric neurons. HCR validation (C103) confirms co-expression of key markers in the foregut. The interpretation that these represent early differentiating enteric neurons with inhibitory signatures (C104) is supported by citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Sub-clustering of enteric neurons revealed a differentiated population (Sub-cluster 3) expressing IPAN markers (calb2a, pbx3b, slc18a3a, ache) alongside inhibitory markers (nos1, vipb), suggesting capture of an emerging IPAN population during transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C114 describe detailed enteric neuron sub-clustering. The identification of IPAN markers is supported by citations to mammalian studies (C110, C111). HCR validation (C112) confirms co-expression of IPAN and inhibitory markers. The interpretation of capturing a transitional state (C114) is reasonable given the co-expression pattern, though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Gene ontology analysis identified opioid signaling pathways among the top enriched pathways in differentiating enteric neurons, with oprl1 and oprd1b expression confirmed by HCR in enteric neuron progenitors at 68 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 describe opioid receptor expression in enteric neurons. The GO pathway analysis (C116) is a standard approach. HCR validation (C119) confirms expression of oprl1 with enteric markers. However, C120 is speculative about future research directions rather than a supported finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "UMAP analysis of autonomic neuron sub-clusters distinguished sympathetic neurons (Sub-cluster 2) from enteric neurons (Sub-cluster 3), with Sub-cluster 0 representing a common immature sympatho-enteric neuron pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 describe UMAP-based sub-clustering of autonomic neurons. The identification of sympathetic neurons is based on appropriate markers (th, dbh, lmo1, insm1a). The interpretation of Sub-cluster 0 as an immature common pool (C123, C125) is reasonable based on the lack of lineage-specific markers and the spatial arrangement in UMAP, though this remains somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Integration of the 48-50 hpf and 68-70 hpf datasets into a comprehensive atlas revealed temporal progression of cell types, with early clusters mapping proximally to later stage populations and clear differentiation trajectories for pigment, mesenchyme, and neural lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C137 describe the integrated atlas. The integration methodology (C126) is standard for Seurat. The observation that early clusters map to later clusters (C128) and specific examples (C129-C131) demonstrate temporal relationships. The description of neural differentiation trajectories (C132-C137) is supported by marker gene expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Differential expression analysis between time points identified both expected temporal changes (xdh in xanthophores, barx1/snai1b in mesenchyme, etv1/vipb in neurons) and novel differentially expressed genes (rgs16, SMIM18, abracl, id1, nova2, zgc:162730) with previously uncharacterized roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 describe differential expression analysis. The identification of expected temporal patterns provides validation of the approach. The identification of novel genes (C139, C141, C143) is a straightforward result from the analysis, though functional characterization would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Hox gene analysis detected 45 of 49 zebrafish hox genes across the atlas, with 85% of cells expressing at least one hox gene. A core hox signature (including hoxb1b, hoxc1a, hoxb2a, hoxb3a, hoxc3a, hoxd3a, hoxa4a, hoxd4a, hoxb5a, hoxb5b, hoxc5a, hoxb6a, hoxb6b, hoxb8a) was common to neural lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C149 describe hox gene expression patterns. The detection of 45/49 hox genes (C144) and 85% cell expression (C145) are quantitative findings from the data. The identification of a core neural hox signature (C147) and its ability to distinguish neural lineages (C149) are supported by the clustering analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "A distinct enteric hox signature was identified, characterized by increased expression of hoxb2a, hoxd4a, hoxa5a, hoxb5a, and hoxb5b, with decreased expression of hoxc3a, hoxc5a, hoxb6a, and hoxb8a. HCR validation confirmed co-expression of hoxb5a/hoxb5b and hoxd4a/hoxa5a in phox2bb+ enteric neurons at 70-72 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C154 describe the enteric hox signature. The identification of the signature (C150) is based on differential expression analysis. Pairwise analysis (C151-C152) demonstrates co-expression with specific percentages. HCR validation (C153) confirms the key predictions. This is a novel finding for zebrafish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Other cell types showed distinct hox expression patterns: mesenchyme expressed hoxa2b/hoxb2a/hoxb3a/hoxd4a, fin bud mesenchyme expressed hoxa9b/hoxa10b/hoxa11b/hoxa13b/hoxd9a/hoxd12a, while pigment populations showed generally low hox expression with some variation between subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C163 describe hox patterns in non-neural cell types. The mesenchyme patterns (C155-C156) are consistent with prior reports (supported by citations). The fin bud signature (C157) is consistent with known limb development patterns (supported by citations). The low hox expression in pigment cells (C158-C161) is a clear observation from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C164",
+      "C167",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The study demonstrates that distinct cell types express unique combinatorial hox codes during their delineation, with the most specific codes in fin bud mesenchyme, pigment populations, and neural fates, including a previously undescribed enteric neuron hox signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164, C167, C177-C179 summarize the hox findings. The conclusion that distinct cell types have unique hox codes (C164) is supported by the comprehensive analysis across all cell types. The identification of the enteric hox signature as previously undescribed (C179) is a major novel finding, though prior bulk studies showed some overlap (C180).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The zebrafish enteric neuron findings corroborate a mammalian model of IPAN formation, suggesting evolutionarily conserved mechanisms of ENS development across vertebrate species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172 discuss evolutionary conservation. The comparison to mouse studies (C169-C171) is supported by appropriate citations. The interpretation of evolutionary conservation (C172) is reasonable given the similar gene expression patterns, though direct functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The detection of opioid receptors (oprl1, oprd1b) in enteric neurons at 68-70 hpf represents the earliest reported stage of their expression in the developing ENS, highlighting an area for future investigation regarding opioid effects on fetal ENS development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C176 discuss opioid receptor expression in context. Prior work (C173-C174) is appropriately cited. The claim that 68-70 hpf is the earliest stage (C175) is supported by comparison to prior bulk RNA-seq at 7 dpf. However, C176 is largely speculative about future research directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "The conservation of the enteric hox signature between zebrafish and mammals suggests conserved function and supports a model where overlapping hox expression domains facilitate enteric neural subtype differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C180-C182 discuss functional implications of hox conservation. While C180 correctly notes prior bulk studies showed some conservation, the single-cell resolution is novel. However, C182 is speculative about functional mechanisms - the study demonstrates correlation but not causation. Functional validation would be needed to support the proposed model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C183",
+      "C184"
+    ],
+    "result": "This study represents the first single-cell transcriptomic analysis of early ENS development in zebrafish during the embryonic to larval transition, providing a comprehensive atlas resource for the developmental biology community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C166, C183-C184 describe the study's novelty and impact. The claim of being the first scRNA-seq study of early zebrafish ENS (C165) appears accurate based on the literature cited. The characterization of the developmental window (C166) is supported by citation. Claims about the atlas serving as a resource (C184) are reasonable expectations rather than demonstrated results.",
+    "result_type": "MAJOR"
+  }
+]

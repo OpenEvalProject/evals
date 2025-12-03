@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Bacterial microbiota stimulate IFN-\u03bb responses in the ileum at homeostasis. RNA-seq analysis revealed that ISGs are enriched in WT mice with conventional microbiota compared to ABX-treated mice and Ifnlr1-/- mice. A core set of 21 homeostatic ISGs was identified that are induced by IFN-\u03bb, decreased by ABX treatment, and dependent on Ifnlr1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C44 provide converging evidence from RNA-seq (GSEA showing INTERFERON_ALPHA_RESPONSE enrichment), qPCR validation, and genetic knockouts demonstrating that bacterial microbiota stimulate Ifnlr1-dependent ISG expression. The identification of 21 core homeostatic ISGs through Venn diagram analysis of DEGs is methodologically sound, and the observation that ABX does not further reduce ISGs in Ifnlr1-/- mice supports epistasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C135",
+      "C136"
+    ],
+    "result": "Homeostatic ISGs are predominantly expressed in intestinal tissues (ileum and colon) rather than systemic tissues. ISG expression is more abundant in ileum than colon, and ABX treatment does not reduce ISGs in mesenteric lymph nodes or spleen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are supported by qPCR data from multiple tissues showing tissue-specific ISG expression patterns. The observation that ISGs are reduced in intestinal tissues but not in MLN or spleen after ABX treatment (C49, C135) provides clear evidence for intestinal localization. However, the modest increase in Ifit1 in MLN after ABX (noted in text) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C66",
+      "C144"
+    ],
+    "result": "Homeostatic ISG expression in the ileum is partly dependent on MYD88 but independent of TRIF, IRF3, and IRF7. MYD88 is required for ileal ISG expression but not colonic ISG expression, suggesting tissue-specific signaling requirements and redundant PRR pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are supported by qPCR data from knockout mice showing tissue-specific requirements for MYD88 in the ileum but not colon. The observation that ABX further reduces ISGs in Irf7-/- mice (C59) appropriately demonstrates that IRF7 is not strictly required. The conclusion of redundant PRR pathways (C144) is reasonable given the differential requirements across tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C133"
+    ],
+    "result": "Homeostatic ISG expression is independent of type I IFN signaling but requires STAT1. Ifit1 expression is not reduced in Ifnar1-/- mice but is significantly reduced in Stat1-/- mice, and ABX does not further reduce ISGs in Stat1-/- mice. Double knockout experiments confirm that Ifnlr1 deficiency, not Ifnar1 deficiency, eliminates homeostatic ISGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 provide strong genetic evidence using single and double knockout mice. The epistasis analysis showing that ABX does not further reduce ISGs in Stat1-/- mice (C62) demonstrates STAT1 necessity. The double knockout experiments (C64-C65) appropriately control for potential compensatory signaling between type I and type III IFN pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C137"
+    ],
+    "result": "Homeostatic ISG expression is restricted to intestinal epithelial cells (IECs) and depends on IEC-intrinsic Ifnlr1 expression. Tissue fractionation shows ISGs are present in epithelial fractions but not lamina propria, and conditional deletion of Ifnlr1 in IECs reduces ISGs to the same extent as global Ifnlr1 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C67-C70 are supported by tissue fractionation experiments and conditional knockout data. The observation that Ifnlr1 IEC-cKO mice phenocopy global Ifnlr1-/- mice (C69) provides strong evidence for IEC-intrinsic signaling. However, the fractionation method could be better validated for purity, and the low expression in lamina propria could reflect contamination or genuine low-level expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C138",
+      "C140"
+    ],
+    "result": "Homeostatic IFN-\u03bb production is associated with CD45+ leukocytes in the intestinal epithelial fraction. CD45+ cells from the epithelial fraction express Ifnl2/3 in a microbiota-dependent manner, while Ifnb1 expression is not reduced by ABX treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 are supported by qPCR data from magnetically enriched cell populations. The differential response of Ifnl2/3 versus Ifnb1 to ABX treatment (C72, C77) strengthens the conclusion. However, the enrichment purity data (Figure 5\u2014figure supplement 1) shows incomplete separation, and the inability to detect IFN-\u03bb by RNAscope (C139) suggests very low or transient expression that limits mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Homeostatic ISGs are expressed in a highly localized manner within the intestinal epithelium, concentrated in pockets of individual villi and in mature enterocytes toward villus tips. RNAscope imaging reveals that Ifit1 and Usp18 co-localize in discrete regions, and this localization is ablated by ABX treatment or Ifnlr1 deletion in IECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 are strongly supported by RNAscope imaging data showing localized ISG expression. The co-localization of multiple ISGs (C81) and the loss of localization in ABX-treated and Ifnlr1 IEC-cKO mice (C85, C87) provide robust evidence. The observation that exogenous IFN-\u03bb induces uniform villus expression (C83) appropriately demonstrates that localization is not due to differential responsiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "A minority of mature enterocytes express homeostatic ISGs in public single-cell RNA-seq datasets from mice and humans. Analysis of the Haber et al. mouse dataset shows <20% of enterocytes express ISGs, with ~5% expressing Ifit1, consistent with imaging data. Similar patterns are observed in human ileal tissue from the Elmentaite et al. dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C98 are supported by reanalysis of published scRNA-seq datasets. The consistency between scRNA-seq (~5% Ifit1+ enterocytes, C93) and imaging data (1-4% Ifit1+ area, C93) strengthens the findings. However, the human data (C95-C97) are more limited and the claim that human ISGs \"may share the localization\" (C97) is appropriately cautious given the lack of spatial data in humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C145"
+    ],
+    "result": "Orally administered bacterial components (LPS, flagellin) and fecal transplant can partially restore localized ISG expression in ABX-treated mice. LPS and flagellin significantly increase the proportion of ISG-positive mice, while CpG DNA does not. The restoration is incomplete and depends on IEC expression of Ifnlr1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C111 are supported by imaging and qPCR data showing partial restoration of ISGs by bacterial components. The incomplete penetrance (4/12 for LPS, 4/8 for fecal transplant, C99-C100) is appropriately acknowledged (C106). The observation that LPS does not induce ISGs in Ifnlr1 IEC-cKO mice (C101-C102) demonstrates IEC-intrinsic signaling. However, the statistical analysis shows LPS effect is non-significant by imaging (p=0.1022, C103) but significant by qPCR stratification (C107), suggesting the binary stratification approach may be more sensitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C151"
+    ],
+    "result": "IECs lacking Ifnlr1 are hyper-susceptible to initiation of murine rotavirus (mRV) infection. Ifnlr1 IEC-cKO mice show 20-fold more viral genomes and 3-fold more infected IECs at 24 hr post-infection, but no difference at peak shedding (days 3-5). The equivalent MFI of mRV in infected cells suggests Ifnlr1 prevents infection rather than limiting replication within infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C123 are supported by viral shedding, qPCR, and flow cytometry data. The temporal pattern (early protection but not at peak, C112-C113) is consistent with viral IFN evasion (C114). The observation that MFI is equivalent between genotypes while percentage of infected cells differs (C119-C120) supports the interpretation that Ifnlr1 prevents infection initiation (C121). The correlation analysis (r\u00b2=0.0003, C120) appropriately demonstrates lack of relationship between viral load per cell and infection frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C152"
+    ],
+    "result": "Homeostatic ISGs provide prophylactic protection against mRV infection. At early timepoints (12-24 hr), most mRV-infected cells are Ifit1-negative (~70%), consistent with viral IFN evasion. mRV inoculation does not increase Ifit1 area at 12-24 hr, suggesting early Ifit1 expression is due to preexisting homeostatic responses rather than infection-induced responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 are supported by RNAscope co-staining data showing temporal changes in Ifit1 expression in infected cells. The observation that Ifit1 area does not increase at early timepoints (C127) but increases at 96 hr (C128) supports the interpretation that early protection is from preexisting ISGs (C129-C130). However, the claim that endogenous IFN-\u03bb \"does not reduce mRV burden in infected cells\" (C152) is based on equivalent MFI and should be stated more cautiously as the data show prevention of infection rather than direct evidence against intracellular antiviral activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C131",
+      "C132",
+      "C134",
+      "C153"
+    ],
+    "result": "Bacterial microbiota stimulate ISGs in localized regions of the intestinal epithelium at homeostasis, thereby preemptively activating antiviral defenses in vulnerable IECs to improve host defense against enteric viruses. This represents a form of anticipatory immunity where detection of bacterial microbiota in exposed areas preemptively activates homeostatic ISGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C131-C134, C153 represent the main conclusions integrating multiple lines of evidence. The conclusion is well-supported by the demonstration that: (1) bacteria induce Ifnlr1-dependent ISGs in IECs, (2) ISGs are localized to specific regions, (3) ISGs provide early protection against mRV, and (4) protection is prophylactic rather than therapeutic. The \"anticipatory immunity\" model (C153) is a reasonable interpretation, though the mechanism determining which regions express ISGs remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background knowledge claims about IFN biology, bacterial microbiota functions, and prior observations of steady-state ISG expression in the intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C28 represent established knowledge from prior literature, appropriately cited. These provide necessary context for the current study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "ABX treatment reduced bacterial 16S gene copies in stool to below the limit of detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by qPCR data (Figure 1\u2014figure supplement 3) demonstrating effective bacterial depletion. This is an important control validating the ABX treatment approach used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "INFLAMMATORY_RESPONSE and IL6_JAK_STAT3_SIGNALING hallmark gene sets were significantly decreased by ABX treatment in both WT and Ifnlr1-/- mice, indicating selective requirement for Ifnlr1 in ISG induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by GSEA data (Figure 1\u2014figure supplement 2) showing that other microbiota-dependent pathways are not affected by Ifnlr1 deletion. This control demonstrates specificity of the Ifnlr1 requirement for ISG expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Stimulation with small amounts of IFN-\u03bb rescued ISG expression in ABX-treated mice, indicating that reduction of homeostatic ISG expression upon ABX treatment is not due to inability of the intestine to respond to IFN-\u03bb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by qPCR data (Figure 2\u2014figure supplement 2) showing dose-dependent ISG induction by exogenous IFN-\u03bb in ABX-treated mice. This is an important control demonstrating that ABX treatment does not impair IFN-\u03bb responsiveness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C141",
+      "C142",
+      "C146",
+      "C150"
+    ],
+    "result": "Speculative claims about mechanisms underlying homeostatic IFN-\u03bb production and ISG localization, including suggestions about CD45+ cell surveillance, regional differences in bacterial MAMP access, and vulnerability of ISG-positive regions to viral infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139, C141-C142, C146, C150 are appropriately labeled as speculation or suggestions in the manuscript. While these are reasonable hypotheses based on the data, they lack direct experimental support. The inability to detect IFN-\u03bb by RNAscope (C139) limits mechanistic understanding of the cellular source and dynamics of IFN-\u03bb production.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Discussion claims about prior literature showing that homeostatic ISGs include antiviral genes, that mRV can evade IFN responses, and that prophylactic IFN-\u03bb protects against mRV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 appropriately cite and interpret prior literature to contextualize the current findings. These provide important background for understanding the functional significance of homeostatic ISGs.",
+    "result_type": "MINOR"
+  }
+]

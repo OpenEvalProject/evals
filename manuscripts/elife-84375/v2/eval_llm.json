@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The autofluorescence imaging system responds predictably to metabolic perturbations and remains stable over time. Treatment with mitochondrial inhibitors (rotenone and antimycin A) decreases the FAD/(NAD[P]H+FAD) ratio, while treatment with the uncoupler FCCP increases this ratio. The autofluorescence signal remains stable over 2 days of tracheal explant culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 provide strong validation of the imaging system. The pharmacological manipulations (C8, C9) produce expected metabolic changes consistent with prior literature, and the temporal stability (C10) demonstrates technical reliability. These controls are essential for establishing the method's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Common airway epithelial cell types (ciliated, secretory, and basal cells) can be distinguished by their autofluorescence ratios. Ciliated cells show robust FAD signal near the luminal surface, secretory cells show robust NADH signal, and these differences enable quantitative discrimination. However, metabolic perturbations reduce the separation between cell types, suggesting that physiologic or chemical perturbations may limit discrimination based on autofluorescence ratios alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 demonstrate that common cell types have distinct autofluorescence signatures validated by immunofluorescence (Figure 2). The caveat in C14-C15 about reduced discrimination after metabolic perturbation is appropriately acknowledged and supported by data, showing scientific rigor in recognizing method limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Rare airway epithelial cell types (hillocks, ionocytes, tuft cells, and neuroendocrine cells) can be identified by combining autofluorescence signatures with morphological measurements. While rare cells have similar autofluorescence ratios and cannot be distinguished by this criterion alone, the combination of autofluorescence and morphometric features enables separation into distinct clusters. Machine learning algorithms achieve 92-96% accuracy in cell type classification, with nuclear position, aspect YZ, NADH autofluorescence, ratio of deviation, and FAD autofluorescence being the most important features. Excluding autofluorescence dramatically reduces accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 demonstrate a sophisticated multiparametric approach to rare cell identification. The machine learning validation (C21-C22) with high accuracy and Matthews Correlation Coefficients (0.91-0.95) provides strong quantitative support. The ablation study (C24) showing reduced performance without autofluorescence confirms the importance of this feature. Sample sizes appear adequate (206 total cells with 75/25 train/test split).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Methacholine stimulation causes a 70% decrease in CCSP immunofluorescence staining, dramatically diminishing the ability to identify secretory cells using this conventional marker. However, autofluorescence intensity ratios continue to discriminate secretory cells after methacholine stimulation, demonstrating an advantage over traditional immunofluorescence markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 provide compelling evidence that autofluorescence-based identification is more robust than conventional markers under physiologic perturbation. The quantitative data (70% decrease in CCSP, Figure 4A-B) and the maintained discrimination by autofluorescence (Figure 4C-D) directly support the superiority claim. Statistical significance is reported (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Methacholine stimulation induces the formation of non-fluorescent spherical 'voids' within secretory cells, which are membrane-bound structures containing internalized luminal contents. The fraction of secretory cells with voids increases from 9% at baseline to 78% following methacholine stimulation. These structures contain FITC-dextran taken up from the apical surface and are membrane-encapsulated as demonstrated by membrane tdTomato labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C36-C38 provide strong evidence for SAP formation through multiple complementary approaches: autofluorescence imaging revealing voids (C30), quantification showing dramatic increase (C31-C32), FITC-dextran uptake demonstrating luminal origin (C36), and membrane tdTomato confirming membrane encapsulation (C37). The convergent evidence from different imaging modalities strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C39",
+      "C40"
+    ],
+    "result": "Airway SAPs are analogous to intestinal SAPs/GAPs. Airway secretory cells adopt goblet cell morphology within hours, suggesting airway SAPs and GAPs are equivalent. The increased SAP formation following methacholine stimulation recapitulates intestinal GAP induction by cholinergic stimulation. Live imaging demonstrates the dynamic process of FITC-dextran uptake from the apical surface, accumulation, and subsequent secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C39-C40 establish the connection between airway and intestinal phenomena through literature comparison and live imaging. The cholinergic stimulation parallel (C39) and morphological similarity (C34) are well-supported by citations. The live imaging data (C40, Figure 5D and videos) provides direct visualization of the dynamic process, strengthening the mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Airway secretory cells with SAPs containing FITC-dextran or FITC-ovalbumin closely associate with CD11c+ antigen-presenting cells (APCs) recruited to the airway epithelium following LPS challenge. Many APCs are intraepithelial with dendriform processes extending toward SAPs, suggesting SAPs play an important role in immunologic responses to airway luminal antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 provide imaging evidence of spatial association between SAPs and APCs (Figure 5E), which is well-documented. However, C43's inference about immunologic function is speculative. While the association is suggestive and parallels intestinal GAPs, no functional data (e.g., antigen transfer, immune cell activation, or functional blocking experiments) are provided to demonstrate that SAPs actually convey cargo to APCs or participate in immune responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors developed a label-free autofluorescence imaging methodology that enables simultaneous identification of all seven airway epithelial cell types in real time in mouse tracheal explants. This approach avoids pitfalls of conventional markers that are altered by physiologic stimuli and was used to identify dynamic secretory cell associated antigen passages (SAPs) forming in response to cholinergic stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 accurately summarize the major findings of the manuscript. The ability to distinguish all seven cell types (C54) is supported by the combined autofluorescence and morphometric data with machine learning validation. The advantage over conventional markers (C55) is demonstrated by the CCSP experiments. The SAP discovery (C56) is well-documented through multiple imaging approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Conventional cell type markers like CCSP can be misleading for cell enumeration in disease states including COPD, asthma, and in smokers, presumably because markers are secreted into the lumen. Additionally, infection and inflammation may alter autofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are appropriately supported by citations to prior literature. These claims provide important context for the method's potential clinical relevance (C44-C46) and acknowledge a limitation of the autofluorescence approach (C47). The authors appropriately cite existing literature rather than presenting these as novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The manuscript establishes the technical foundation for autofluorescence imaging, including that NADH and NADPH cannot be distinguished by autofluorescence, the use of FAD/(NAD[P]H+FAD) metabolic ratio to account for scattering and mitochondrial variation, and the application of two-photon microscopy for measuring this ratio in intact tissues. Prior work has demonstrated cell type discrimination in intestine and immune cell functional state identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7, C63-C65 appropriately cite established principles and prior applications of autofluorescence imaging. These provide necessary background and technical justification for the current work. The citations are appropriate and the technical details (e.g., wavelengths in C65) are clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C57"
+    ],
+    "result": "Prior work has documented luminal dextran uptake in murine airway goblet and secretory cells suggestive of GAPs, and intestinal GAPs have been well-documented to enable luminal antigen sampling and play roles in immune tolerance, dendritic cell imprinting, and inflammatory disease. Analogous phenomena occur in ocular goblet cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C57 appropriately cite and summarize prior literature on GAPs/SAPs in intestine and other tissues. These provide important context for interpreting the airway findings. The citations appear accurate and relevant, establishing that the phenomenon observed in airways has precedent in other mucosal tissues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Airway secretory cells with SAPs are frequently juxtaposed to antigen presenting cells, suggesting that airway SAPs, like intestinal counterparts, not only sample antigen but convey cargo for immune cell processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is supported by imaging data showing spatial association. However, C59's suggestion that SAPs convey cargo to immune cells is inferential and lacks direct functional evidence. While the comparison to intestinal GAPs is reasonable, the manuscript does not demonstrate cargo transfer, immune cell activation, or any functional consequence of the SAP-APC association. This requires additional experiments beyond spatial colocalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The authors developed technical methods including using second harmonic generation (SHG) imaging of collagen fibers to identify the basement membrane and a MATLAB algorithm to 'flatten' the epithelial surface for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe important methodological developments that enable the analysis. The SHG approach for identifying the basement membrane is well-established, and the code is made available (GitHub repository), supporting reproducibility. These technical innovations are necessary for the quantitative morphometric analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The airway epithelium contains many recently described distinct cell types. Current techniques using fluorescent genetic reporters are cumbersome and limited to studying three or four cell types simultaneously. Post-fixation identification is destructive and precludes studying long-term processes or serial stimuli. Markers can be non-specific or misleading after injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C60-C62 establish the motivation for the study by describing limitations of current approaches. C1 is well-supported by recent single-cell literature citations. C60-C62 accurately describe technical limitations of conventional approaches based on general knowledge and the authors' experimental demonstration of CCSP loss after stimulation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C93"
+    ],
+    "result": "The PVH shows higher c-fos expression during the active period compared to the inactive period, and the authors speculate it may represent a key arousal-controlling center. The PVH is predominantly composed of glutamatergic neurons expressing vglut2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C1 provides quantified immunohistochemistry data showing 306% higher c-fos expression during the active period. C2 is supported by multiple citations establishing that >90% of PVH neurons are glutamatergic. C93 is a reasonable speculation based on the c-fos data, though it requires further validation through the subsequent experiments presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C94"
+    ],
+    "result": "PVHvglut2 neurons receive direct monosynaptic inputs from wake-promoting nuclei PVT and PB, which are known to exhibit higher activity during wakefulness and induce rapid sleep-to-wake transitions. The authors speculate PVHvglut2 neurons might act as a crucial node for wakefulness control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C3 is supported by rabies virus retrograde tracing data (Figure 1E). C41 and C42 are supported by multiple citations establishing the wake-promoting properties of PVT and PB. C94 is a reasonable inference from the connectivity data, though it remains speculative until functional validation is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C73",
+      "C95",
+      "C96"
+    ],
+    "result": "PVHvglut2 neurons exhibit state-dependent activity patterns, with significantly higher activity during wakefulness compared to NREM sleep. Neuronal firing rates increase during transitions from sleep to wakefulness (from 4.83 Hz to 13.52 Hz) and decrease before sleep onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by converging evidence from fiber photometry (C4, Figure 2C-E) and multichannel electrophysiological recordings (C5, C6, Figure 2G-K). The data show consistent state-dependent activity patterns across multiple recording modalities. Statistical tests are appropriately reported with significant p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C74",
+      "C91"
+    ],
+    "result": "Chemogenetic activation of PVHvglut2 neurons induces prolonged wakefulness lasting approximately 9 hours with a 140% increase in total wakefulness, accompanied by changes in EEG power, heart rate, temperature, and hormone levels. No sleep rebound occurs following this extended wakefulness. The authors infer that neural circuits play a more important role than endocrine/autonomic changes in sustaining the 9-hour wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The wakefulness effects are well-documented with polysomnographic recordings (C7, C8, Figure 3C-D) and lack of rebound is shown (C9, Figure 3E). Physiological measurements (C43-C46, Figure 3F, Figure 3\u2014supplement 2) provide additional context. However, the inference in C91 about the relative importance of neural circuits versus endocrine changes is based on temporal mismatch and could benefit from more direct experimental dissection of these mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C97"
+    ],
+    "result": "Optogenetic activation of PVHvglut2 neurons induces frequency-dependent transitions from NREM sleep to wakefulness and significantly increases wakefulness during sustained stimulation (from 12.3\u00b11.8 min to 48.6\u00b11.5 min), demonstrating that these neurons enhance both initiation and maintenance of wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C10 is supported by optogenetic experiments showing frequency-dependent effects (Figure 4D). C11 provides quantified data from chronic stimulation experiments (Figure 4F, n=5). C97 is a reasonable inference from the combined acute and chronic stimulation data. Statistical tests show significant effects with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C75",
+      "C76",
+      "C98"
+    ],
+    "result": "PVHvglut2 neurons form functional excitatory connections with PB and LSv neurons. Optogenetic stimulation of PVHvglut2\u2192PB and PVHvglut2\u2192LSv pathways rapidly induces transitions from NREM sleep to wakefulness with latencies of approximately 1 second, demonstrating that these circuits mediate the wakefulness-controlling effects of PVHvglut2 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Functional connectivity is demonstrated by patch-clamp recordings showing EPSCs in PB (C12, n=6) and LSv (C13, n=8) neurons (Figure 5B, F). Pathway-specific optogenetic stimulation shows rapid sleep-to-wake transitions (C14, C15, Figure 5C, G). The inference in C98 is well-supported by the circuit manipulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Optogenetic activation of PVHvglut2\u2192NTS and PVHvglut2\u2192PVT pathways did not alter sleep-wake states, indicating pathway specificity in wakefulness control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by negative results from optogenetic circuit manipulation experiments (Figure 5\u2014supplement 2). These negative controls strengthen the specificity of the PB and LSv pathway findings. However, the manuscript should clarify whether these pathways lack functional connectivity or simply don't regulate sleep-wake states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C89"
+    ],
+    "result": "Chemogenetic activation of PVH neuronal subtypes (PVHOT, PVHPDYN, and PVHCRH) all induce increased wakefulness with varying durations (1-3 hours) and magnitudes (49.4-75.8% increases), demonstrating that these subtype neurons are critical for wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by polysomnographic recordings in cell-type-specific Cre mice (Figure 6C, F, I). Each subtype shows wake-promoting effects with appropriate statistical comparisons. The inference in C89 is reasonable given the convergent findings across subtypes. However, the manuscript could better address potential overlap between these populations given C38-C40 showing co-expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C78"
+    ],
+    "result": "Chemogenetic inhibition of PVHvglut2 neurons results in a 64% increase in NREM sleep during the 5-hour post-injection period, accompanied by a 26% decrease in wakefulness, demonstrating that these neurons are necessary for maintaining normal wakefulness levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by polysomnographic recordings following CNO administration in hM4Di-expressing mice (Figure 7C). The bidirectional manipulation (activation increases wake, inhibition increases sleep) provides strong evidence for necessity. Statistical tests show significant effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C77",
+      "C99",
+      "C100"
+    ],
+    "result": "Ablation of PVHvglut2 neurons induces hypersomnia-like behaviors with a 20.8% reduction in wakefulness and 30.6% increase in NREM sleep across the 24-hour cycle. The authors conclude that PVHvglut2 neurons are necessary for wakefulness regulation under physiological conditions and their dysfunction may induce hypersomnia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Ablation effects are documented with polysomnographic recordings (C24, C25, Figure 7F). The 30.6% increase in NREM sleep exceeds the 15% threshold cited as significant (C85). Combined with inhibition data (C22), this provides strong evidence for necessity (C99). The inference about hypersomnia (C100) is reasonable but somewhat speculative as it extrapolates from mouse models to human pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C88",
+      "C92"
+    ],
+    "result": "The authors conclude that PVH dysfunction is crucial for the pathogenesis of hypersomnolence disorder (HD) and may contribute to hypersomnia in MDD, BD, AD, and PD, based on clinical observations of reduced PVH neuron numbers in these patient populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C51 is supported by citations showing PVH neuron loss in patient populations. However, C88 and C92 are inferences that extend beyond the experimental data. The mouse studies demonstrate that PVH dysfunction causes hypersomnia-like behaviors, but direct evidence linking PVH dysfunction to human HD pathogenesis is lacking. This represents a reasonable hypothesis requiring clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C80",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "The authors establish the clinical and scientific context for HD, noting that while >16 wake-promoting nuclei have been identified, few have been linked to hypersomnia induction, and lesions of single or even dual wake-promoting nuclei do not produce serious HD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, C80, and C82 represent established clinical and scientific knowledge appropriately cited. C28, C81, and C84 are reasonable inferences from the literature review. This contextual framing appropriately motivates the study's focus on identifying key hypersomnia-controlling nuclei.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C52",
+      "C53",
+      "C83"
+    ],
+    "result": "The authors review prior work on wake-promoting systems, including historical observations by Von Economo, the ARAS system, and various wake-promoting nuclei (LH, PB, TMN, PVT, VTA, SUM), noting that ablation or inhibition of individual components produces limited effects on baseline sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate citations to published literature. This comprehensive review establishes that existing wake-promoting nuclei show limited effects when individually manipulated, motivating the search for additional key arousal centers. The citations appear accurate based on the provided references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors describe the anatomical and molecular composition of the PVH, including its location, total neuron count in humans (~56,000), and the distribution of neuropeptide-expressing populations (OT, PDYN, CRH) that co-express with vglut2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate citations. The co-expression data (C59) is particularly important for interpreting the functional results, as it suggests that manipulating vglut2 neurons affects multiple neuropeptide populations. However, the manuscript could better address the implications of this overlap for interpreting cell-type-specific manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "PVHvglut2 neurons send widespread projections to multiple brain structures, including the median eminence (ME), LSv, and PB. Prior work has shown these projections regulate feeding, emotional states, and satiety\u2014all wakefulness-required behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C47 is supported by anterograde tracing data (Figure 5\u2014supplement 1). C48-C50 are supported by appropriate citations. This anatomical context helps interpret the functional circuit manipulation experiments and connects PVH function to multiple behavioral domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors note that chemogenetic activation of wake-promoting neurons does not enhance homeostatic sleep drive (no rebound), and establish that a 15% reduction in baseline wakefulness is considered significant in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C54 is supported by multiple citations and is consistent with the current findings (C9). C85 provides an important benchmark for evaluating the magnitude of effects. C86 and C87 are supported by citations. These contextual claims help interpret the significance of the observed effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors review the functional roles of PVH neuropeptide populations, including PVHCRH neurons in stress/HPA axis regulation and circadian wakefulness, PVHOT neurons in reward and stress mitigation, and PVHPDYN neurons in satiety regulation. They also note that HD is a common symptom across multiple neurological and psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate citations to published literature. This functional context is important for interpreting the wake-promoting effects of these neuronal populations and for understanding the broader implications of PVH dysfunction. The citations appear accurate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The authors speculate that dysfunction of PVHPDYN neurons may represent one cause of sleep-related eating disorders, based on their finding that these neurons induce short-duration wakefulness and prior work showing they regulate satiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly speculative (C90). While the logic connecting satiety regulation and wakefulness control is reasonable, no direct experimental evidence for sleep-related eating disorders is provided. This represents a testable hypothesis for future work but should not be considered a supported result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The authors conclude that the PVH is critical for arousal promotion and maintenance based on the collective experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C79) is well-supported by the convergent evidence from multiple experimental approaches: state-dependent activity patterns, gain-of-function experiments (chemogenetic and optogenetic activation), loss-of-function experiments (inhibition and ablation), and circuit-specific manipulations. The bidirectional effects and magnitude of changes (exceeding established significance thresholds) provide strong support.",
+    "result_type": "MAJOR"
+  }
+]

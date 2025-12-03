@@ -1,0 +1,2037 @@
+{
+  "submission": {
+    "id": "598576fc-69d4-4d87-8c04-39f0642cacca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:10:35.973213Z",
+    "updated_at": "2025-12-03T13:10:35.973213Z"
+  },
+  "content": [
+    {
+      "id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "submission_id": "598576fc-69d4-4d87-8c04-39f0642cacca",
+      "content_type": "manuscript",
+      "content_text": "# A cellular and molecular analysis of SoxB-driven neurogenesis in a cnidarian\n\n## Authors\n\n- Eleni Chrysostomou<sup>1</sup> ([ORCID: 0000-0003-2455-6321](https://orcid.org/0000-0003-2455-6321))\n- Hakima Flici<sup>1</sup>\n- Sebastian G Gornik<sup>1</sup> ([ORCID: 0000-0002-8026-1336](https://orcid.org/0000-0002-8026-1336))\n- Miguel Salinas-Saavedra<sup>1</sup> ([ORCID: 0000-0002-1598-9881](https://orcid.org/0000-0002-1598-9881))\n- James M Gahan<sup>1</sup>\n- Emma T McMahon<sup>1</sup> ([ORCID: 0000-0003-3933-8853](https://orcid.org/0000-0003-3933-8853))\n- Kerry Thompson<sup>2</sup> ([ORCID: 0000-0003-2721-8977](https://orcid.org/0000-0003-2721-8977))\n- Shirley Hanley<sup>3</sup>\n- Michelle Kilcoyne<sup>4</sup>\n- Christine E Schnitzler<sup>5</sup> ([ORCID: 0000-0002-5001-6524](https://orcid.org/0000-0002-5001-6524))\n- Paul Gonzalez<sup>7</sup>\n- Andreas D Baxevanis<sup>7</sup> ([ORCID: 0000-0002-5370-0014](https://orcid.org/0000-0002-5370-0014))\n- Uri Frank<sup>1</sup> ([ORCID: 0000-0003-2094-6381](https://orcid.org/0000-0003-2094-6381)) \u2020\n\n### Affiliations\n\n1. Centre for Chromosome Biology, School of Natural Sciences, National University of Ireland Galway Galway Ireland ([ROR:03bea9k73](https://ror.org/03bea9k73))\n2. Centre for Microscopy and Imaging, Discipline of Anatomy, National University of Ireland, Galway Galway Ireland ([ROR:03bea9k73](https://ror.org/03bea9k73))\n3. National Centre for Biomedical Engineering Science, National University of Ireland, Galway Galway Ireland ([ROR:03bea9k73](https://ror.org/03bea9k73))\n4. Carbohydrate Signalling Group, Microbiology, School of Natural Sciences, National University of Ireland Galway Galway Ireland ([ROR:03bea9k73](https://ror.org/03bea9k73))\n5. Whitney Laboratory for Marine Bioscience, University of Florida St. Augustine, Florida United States ([ROR:02y3ad647](https://ror.org/02y3ad647))\n6. Department of Biology, University of Florida Gainesville, Florida United States ([ROR:02y3ad647](https://ror.org/02y3ad647))\n7. Computational and Statistical Genomics Branch, Division of Intramural Research, National Human Genome Research Institute, National Institutes of Health Bethesda, Maryland United States ([ROR:01cwqze88](https://ror.org/01cwqze88))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeurogenesis is the generation of neurons from stem cells, a process that is regulated by SoxB transcription factors (TFs) in many animals. Although the roles of these TFs are well understood in bilaterians, how their neural function evolved is unclear. Here, we use Hydractinia symbiolongicarpus, a member of the early-branching phylum Cnidaria, to provide insight into this question. Using a combination of mRNA in situ hybridization, transgenesis, gene knockdown, transcriptomics, and in vivo imaging, we provide a comprehensive molecular and cellular analysis of neurogenesis during embryogenesis, homeostasis, and regeneration in this animal. We show that SoxB genes act sequentially at least in some cases. Stem cells expressing Piwi1 and Soxb1, which have broad developmental potential, become neural progenitors that express Soxb2 before differentiating into mature neural cells. Knockdown of SoxB genes resulted in complex defects in embryonic neurogenesis. Hydractinia neural cells differentiate while migrating from the aboral to the oral end of the animal, but it is unclear whether migration per se or exposure to different microenvironments is the main driver of their fate determination. Our data constitute a rich resource for studies aiming at addressing this question, which is at the heart of understanding the origin and development of animal nervous systems.\n\n## Introduction\n\nNeurogenesis \u2212 the generation of neuronal cells \u2212 is thought to be a partially conserved process in metazoans (Bosch et al., 2017; Gahan et al., 2017; Kelava et al., 2015; Rentzsch et al., 2017; Tourni\u00e8re et al., 2020; Watanabe et al., 2014) but the early evolutionary history of this process remains unclear. SoxB transcription factors (TFs) are central players in neurogenesis across a broad range of animal taxa including vertebrates, insects, nematodes, planarians, and cnidarians (Alqadah et al., 2015; Meulemans and Bronner-Fraser, 2007; Richards and Rentzsch, 2015; Ross et al., 2018) but how and when these genes became co-opted into the process of neuron formation is unknown. Vertebrate SoxB TFs are commonly subdivided into the SoxB1 group (Sox1, Sox2, and Sox3) that maintain stemness in neural stem cells, while SoxB2 group members (Sox14 and Sox21) are involved in neural differentiation (Bylund et al., 2003; Holmberg et al., 2008). Hence, vertebrate SoxB genes act sequentially in neurogenesis, but it is unclear whether this feature is ancestral or derived in metazoan animals. Furthermore, SOX orthology has been notoriously hard to interpret and, therefore, a similar SoxB subdivision has not been observed in invertebrates (Flici et al., 2017; Jager et al., 2011; Richards and Rentzsch, 2015; Schnitzler et al., 2014). Finally, expression and functional data on SOX genes in the context of neurogenesis are still rare in non-bilaterians, making an evolutionary inference difficult to establish.\n\nCnidarians are the sister group to bilaterians (Kayal et al., 2018; Zapata et al., 2015) and, as such, they represent an interesting outgroup to study the evolution of neurogenesis. As in vertebrates, multiple SoxB genes are expressed in the developing nervous systems of representatives of the two main cnidarian clades, Anthozoa (corals and sea anemones) (Magie et al., 2005; Richards and Rentzsch, 2014; Richards and Rentzsch, 2015) and Medusozoa (hydroids and jellies) (Flici et al., 2017; Jager et al., 2006). While we know that some cnidarian SoxB genes are required for neurogenesis, their function is not well understood. Hydractinia symbiolongicarpus is a colonial hydrozoan cnidarian (Figure 1\u2014figure supplement 1; Frank et al., 2020) and, like other hydrozoans, this animal possesses a population of stem cells, known as i-cells. These i-cells self-renew and contribute to somatic lineages, including neurons, and to germ cells throughout life (DuBuc et al., 2020; Gahan et al., 2016). The colonial nature of the animal enable i-cells to migrate throughout the colony and populate individual polyps. Hence, i-cells constitute a single population for the entire colony. i-cells first appear in embryonic endoderm (Gahan et al., 2016) but migrate to the outer tissue layer of the body, the epidermis, during metamorphosis (Figure 1\u2014figure supplement 2), remaining there during adult life. In the mature animal, undifferentiated i-cells are found in interstitial spaces of the epidermis, primarily of the lower body column. They differentiate while migrating orally (Bradshaw et al., 2015), giving rise to various cell types including the two main neuronal lineages: neurons and nematocytes \u2212 the latter being specialized stinging cells that are used by cnidarians to capture prey or for defence from predators. The Hydractinia nervous system has a typical cnidarian nerve-net structure with a higher concentration of neurons at its oral end (Figure 1\u2014figure supplement 3 and Figure 1\u2014figure supplement 4). The Hydractinia genome encodes three SoxB-like genes (Soxb1, Soxb2, and Soxb3) whose orthologous relation to specific bilaterian homologs cannot be resolved due to low sequence conservation. Hence, their names do not implicate them as being part of any bilaterian SoxB subgroup (Flici et al., 2017). A previous study has shown that Hydractinia Soxb2 is expressed in proliferative, putative neural progenitors, and Soxb3 is expressed in neural cells, identified by their distinctive morphology. Both genes are essential for adult neurogenesis and nematogenesis (Flici and Frank, 2018; Flici et al., 2017). However, the functions of Soxb1, Soxb2, and Soxb3 in embryonic neurogenesis remain unknown.\n\nHere, we have studied the function of all three Hydractinia SoxB genes in embryogenesis. To observe the dynamic expression of these genes in adults, we have generated Soxb1 and Soxb2 transgenic reporter animals and tracked individual cells during differentiation using in vivo time lapse imaging. We also used fluorescence-activated cell sorting (FACS) and droplet microfluidics approaches (InDrop-seq) as a first step towards generating cell type-specific and single-cell transcriptomes, then analysed the cell cycle characteristics of Hydractinia cell fractions. Our data are consistent with SoxB genes acting sequentially in adults as i-cells differentiate into neurons and nematocytes. Knockdown experiments indicate a complex role for SoxB genes in the differentiation of embryonic neuronal cells. Under Soxb2 knockdown conditions, we have documented biased differentiation to specific neural cell types. Our study provides insight into the evolution of SoxB genes and their function in neurogenesis across Metazoa.\n\n## Results\n\n### Expression pattern of SoxB genes in Hydractinia\n\nWe studied the expression pattern of all three SoxB genes in Hydractinia using both traditional, tyramide amplification-based mRNA fluorescence in situ hybridization (FISH) and signal amplification by exchange reaction (SABER) single-molecule FISH (Kishi et al., 2019). In sexual polyps, Soxb1 was expressed in cells morphologically resembling i-cells and germ cells in males and females (Figure 1A\u2013D). In feeding polyps, Soxb1 was expressed in cells that resembled i-cells both with respect to their morphology and their anatomical location, being primarily distributed in the lower body column of the polyp and largely absent from the oral end of the animal (Bradshaw et al., 2015; Figure 1E\u2013G). To confirm the identity of Soxb1-expressing cells, we used double FISH with Piwi1, a known marker for Hydractinia i-cells and germ cells (DuBuc et al., 2020; Gahan et al., 2016). We found that all Soxb1+ cells also expressed Piwi1 and vice versa (Figure 1). Therefore, we conclude that Soxb1 is expressed in i-cells, that is, in stem cells that give rise to somatic cells (including neurons and nematocytes) and to germ cells. Soxb2 expression partially overlapped with Soxb1 in the mid-region of the polyp body column, being largely absent from the lower (aboral) area of the polyp that primarily included only Piwi1+/Soxb1+ cells (Figure 2A\u2013C). Soxb3 was expressed in the middle and upper (i.e., oral) parts of the polyp and partly overlapped with Soxb2 in the mid-region (Figure 2D\u2013F). These findings are consistent with a previous study that investigated Soxb2/Soxb3 expression (Flici et al., 2017). It is also in line with the known pattern of distribution of Hydractinia cells, with i-cells being restricted to the lower body column, and neural cells mainly concentrated in the oral pole.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig1-v3.jpg)\n\n**Figure 1.:** (A\u2013D) Analysis of sexual polyps\u2019 mid (A) and lower (B) body column, and early (C) and late (D) oocytes. (E\u2013G) Analysis of feeding polyps\u2019 head (E), mid-(F), and lower (G) body column. (A\u2013D) were tyramide-based fluorescence in situ hybridization (FISH); (E\u2013G) were single-molecule FISH. Scale bars = 40 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Simplified cladogram showing the position of various cnidarian clades relative to bilaterians. (B) The life cycle of Hydractinia. (B) Schematic representation of Hydractinia\u2019s body wall and the cell types composing it.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) During embryogenesis and in the larval stage, i-cells are exclusively present in the endoderm; they migrate to the epidermis during metamorphosis. (B) Schematic representation.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) GLWamide+ neurons. (B) RFamide+ neurons. (C) Nematocyst capsules, representing mature nematocytes, visualized by lectin staining. (D) Acetylated tubulin immunostaining. (E) Ncol3+ nematoblasts. (F) Piwi1+ i-cells. (G) S-phase cells. (H) Schematic representation showing 24 hr embryos, 2-day pre-panula, and 3-day planula larva that is metamorphosis competent. Scale bars = 40\u03bcm.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) GLWamide+ neurons. (B) RFamide+ neurons. (C) Ncol1+ and Ncol3+ nematoblasts in feeding polyps. (D) Ncol1+ and Ncol3+ nematoblasts in sexual polyps. (E) Acetylated tubulin immunostaining in sexual polyps. (F) Schematic representation. Scale bars = 40\u03bcm.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig2-v3.jpg)\n\n**Figure 2.:** (A\u2013C) Single-molecule fluorescence in situ hybridization (FISH) with probes against Soxb1 and Soxb2 showing upper-mid (A), lower-mid (B), and lower (C) body column. (D\u2013F) Single-molecule FISH with probes against Soxb2 and Soxb3 showing the head region (D), upper-mid (E), and lower-mid (F) body column. Arrowheads point to double-positive cells. Scale bars = 40 \u03bcm.\n\nWhile mRNA FISH experiments, described above, informed us about cells that expressed SoxB genes in space and time at cellular resolution, they did not provide direct information on the fate of these cells. To obtain these data, we generated transgenic reporter animals that expressed tdTomato or GFP, driven by the endogenous Soxb1 or Soxb2 genomic control elements, respectively (Figure 3A\u2013I). Attempts to generate a Soxb3 reporter were unsuccessful. Instead, we used an Rfamide reporter animal that expresses GFP in RFamide+ neurons (Figure 3J\u2013L). The rationale of this approach was that the long half-life of fluorescent proteins would enable tracking cells even after their fate is changed and the reporter gene shut down. Fluorescence of the Soxb1::tdTomato reporter was dim in vivo but the signal was enhanced in fixed animals through the use of anti-RFP antibodies (Figure 3A\u2013E). In contrast, the signal produced by the Soxb2 and Rfamide reporters, both expressing GFP, was sufficiently bright to be viewed in vivo using fluorescence stereomicroscopy (Figure 3F\u2013L).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig3-v3.jpg)\n\n**Figure 3.:** (A\u2013E) Soxb1::tdTomato reporter animal. Animals were fixed and stained with an anti-dsRed antibody. (A) Whole feeding polyp. (B) Lower polyp body column. (B\u2019) Higher magnification of tdTomato+ i-cells. (C) Head region including base of tentacles. (C\u2019) Close-up showing tdTomato+ neurites. (D) Male sexual polyp. (E) Female sexual polyp. (E\u2019) Higher magnification of tdTomato+ oocytes. (F\u2013I) Live imaging of a Soxb2::GFP reporter animal. (F) planula larva. (G) Oral pole of a polyp viewed from above. (G\u2019, G\u2019\u2019) Higher magnification of GFP+ cells with neural morphology. (H) GFP+ interconnected neurons in stolon. (I) Mid-body column region of polyp showing GFP+ cells. (I\u2019) GFP+ nematoblasts (based on the presence of a nematocyst capsule). (I\u2019\u2019) GFP+ neurons. (J\u2013L) Live imaging of Rfamide::GFP+ reporter feeding polyps. (J) Upper polyp region including head and tentacles. (K) Oral pole of feeding polyp viewed from above. (L) Higher magnification of the head region, showing GFP+ neural network. Asterisks point to oral ends. Scale bars = 40 \u03bcm.\n\nContrary to the mRNA FISH data (Figure 1), the Soxb1 promoter-driven tdTomato was not only observed in stem/progenitor cells but was present in neural cells as well, based on the distinct morphology of these cells (Figure 3A\u2013C). In sexual polyps, tdTomato was also observed in maturing germ cells (Figure 3D and E). This shows that Soxb1+ cells differentiated into neural cells and gametes as expected. The Soxb2 promoter-driven GFP was visible in neurons and nematocytes but not in i-cells (Figures 2 and 3F\u2013I), suggesting that Soxb2+ cells were more committed than i-cells (i.e., Soxb1+ cells). The spatial distribution of Soxb1+ and Soxb2+ cells was distinct from that of their respective progeny, consistent with migrating neural progenitors that differentiate during and following their migration away from the lower body column area where i-cells and their early progeny reside. The Rfamide reporter was only visible in sensory and ganglionic neurons (Figure 3J\u2013L), consistent with the expression pattern of this gene in neurons but not in neural progenitors (Gahan et al., 2017; Kanska and Frank, 2013).\n\nFISH expression patterns (Figure 2) showed partial overlap between Soxb1 and Soxb2, as well as between Soxb2 and Soxb3, the latter confirming previous reported observations (Flici et al., 2017). Furthermore, analysis of transgenic reporter animals indicated that Soxb1+ and Soxb2+ cells give rise to neural cells (Figures 2 and 3). To confirm within-lineage transitions between Soxb1 and Soxb2 expression, we generated double Soxb1::tdTomato/Soxb2::GFP reporter animals by crossing a Soxb1::tdTomato female with a Soxb2::GFP male. The Soxb1-driven tdTomato fluorescence that was too dim to be viewed live by stereomicroscopy was readily visible in vivo using a more sensitive spinning disk confocal microscope. Double transgenic animals were mounted in low-melt agarose and subjected to prolonged in vivo spinning disk confocal imaging. We observed tdTomato-positive (i.e., Soxb1+), GFP-low or negative (i.e., Soxb2-) cells transforming to double positive cells (Figure 4; Figure 4\u2014figure supplement 1). Collectively, our mRNA expression data and the ones obtained previously (Flici et al., 2017) together with the results of our live imaging of transgenic reporter animals are consistent with sequential expression of SoxB genes in the neural lineage.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig4-v3.jpg)\n\n**Figure 4.:** (A) Immunofluorescence of Soxb1::tdTomato and Soxb2::GFP double positive cells that resemble differentiating neurons by morphology. (B) In vivo time lapse imaging of a Soxb1::tdTomato+ cells (shown in red) with increasing levels of Soxb2::GFP (shown in green) over a time frame of 8 hr (T0=3 hr post decapitation (hpd); T1=4 hpd;...; T5=8 hpd). Green Soxb2::GFP cells that appear in the image probably migrated into the confocal plane during imaging. Scale bars = 40 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B) Two cases of gradual upregulation of the Soxb2 reporter in Soxb1-expressing cells over an 8 hr time frame.\n\n### Cellular and molecular characterization of Hydractinia neural cells\n\nWe used a recently developed flow cytometry/FACS protocol (DuBuc et al., 2020) to analyse and physically sort cells from dissociated transgenic reporter animals. The long half-life of the fluorescent reporter proteins resulted in the isolation of not only cells that expressed the reporter genes but also their progeny. To minimize the contribution of progeny to the sorted cellular fraction, we used a FACS gating strategy to select live, nucleated single cells and sorted populations that had low side scatter (SSC) characteristics and high levels of GFP (Figure 5A\u2013C and Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig5-v3.jpg)\n\n**Figure 5.:** (A) Gating strategy of i-cells, nematocytes, mixed progenitors, and GFP- cells from a Piwi1 reporter animal. (B) Gating of putative neural progenitors from a Soxb2 reporter animal. (C) Gating two distinct populations of Rfamide::GFP+ neurons. (D\u2013F) Imaging flow cytometric analysis of cells from the transgenic reporter animals. (G\u2013L) Cell cycle analysis of distinct, sorted cell populations. (G) i-Cells are mostly in S/G2/M. (H) i-Cell progeny are distributed along the cell cycle. (I) Nematocytes are mostly in G1. (J) SoxB+ (putative neural progenitors) are mostly in S/G2/M. (K) Low and (L) high Rfamide+ neurons. (M) Differential gene expression analysis of sorted cell populations. Genes expressed by Rfamide-high and Rfamide-low neurons are listed.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Characterization of feeding polyps, (D\u2013F) male and (G\u2013I) female sexual polyps. The nature of the reporter transgene is indicated above each density plot. (J) Imaging flow cytometric analysis of dissociated male sexual polyps of Piwi1::GFP reporter line, displaying the different stages of spermiogenesis including mature sperm cells. Scale bars = 10 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Density plot of cells stained with Hoechst 33342 cell permeant dye versus side scatter (SSC-A). The gated population represents Hoechst positive live, nucleated cells. Doublets are subsequently discriminated by Hoechst area verus Hoescht height (contour plot) and forward scatter area (FSC-A) versus side scatter width (SSC-W) density plot. (B) Histogram showing a typical cell cycle profile of Hoechst labelled cells disassociated from a wild type Hydractinia animal. Cell cycle profile of cell subpopulations identified in the male sexual polyps of Piwi1::GFP reporter line (C) and (D) cell cycle profile of post-meiotic sperm characterized by a haploid genome. (E) Cell cycle profile of epithelial cells isolated by fluorescence-activated cell sorting (FACS) from an epithelial reporter animal.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) UMAP dimensional reduction projection of 7071 Hydractinia symbiolongicarpus cells. (B) Heatmap showing the top 10 markers for each cell cluster across all clusters and within nematoblast (cluster 7) subclusters following Seurat analysis. (C) Heatmap showing the percentage overlap between single-cell RNA cluster markers and differentially upregulated genes in fluorescence-activated cell sorting (FACS)-sorted cells from transgenic reporter animals. The heatmap shows that the overlap between Soxb2+ sorted cells and clusters 13 and 14 is highest, that is, consistent with Soxb2 being most highly expressed in these clusters. (D) Dotplot depicting both the percentage proportion and average log-normalized expression of Soxb1, Soxb2, and Soxb3 genes in all cells across the main clusters as shown in (A). We find that both soxB1 and soxB2 are expressed in a subset of i-cells; presumably in transition to become soxB2-positive progenitor cells (clusters 13 and 14 in A), while soxB3 is only expressed in few cells in cluster 18 (see A and D). It also appears that subpopulations of neural cells in H. symbiolongicarpus transition from a soxB2/RFamide low state (cluster 14) that express a G-protein coupled receptor for glutamate (see E) to a soxB2/RFamide high state (cluster 13), of which some eventually become soxB2-negative while still expressing high levels of RFamide (cluster 11); presumably as terminally differentiated axonal neurons as determined by the markers Kaptin and Contactin2, which are important in synapse and axon formation, maintenance and function (see E). This is consistent with our model and bolsters the role of soxB2 as a marker for a neural progenitor cells. (E) UMAP dimensional reduction projections of relevant marker gene expression in representative cluster as annotated in panel (A). (F) Subclustering of nematoblasts (cluster 7 in panel A): UMAP dimensional reduction projection of 259 cells of H. symbiolongicarpus nematoblasts accompanied by projections showing the expression of nematogenesis marker genes (Dickkopf3, Notch and a proline-rich protein homologous to the nematoblast-specific protein nb039a-sv15 of Hydra vulgaris) across several subclusters.\n\nA previously established Piwi1::GFP reporter animal (Bradshaw et al., 2015) was used to selectively isolate i-cells by FACS rather than the Soxb1::tdTomato reporter animal. tdTomato fluorescent protein is optimally excited by a 561 nm yellow/green laser; the configuration of the BD FACS Aria cell sorter in the NUI Galway flow cytometry core facility does not include a 561 nm laser. The usage of Piwi1::GFP to isolate i-cells was possible given that the two genes have been shown to be co-expressed in i-cells (Figure 1). Piwi1+ (i.e., Soxb1+ i-cells) are known to represent a rare population, representing approximately 1.4% of the live single-cell population of the Soxb2::GFP transgenic animal (DuBuc et al., 2020). We found that Soxb2+ cells (i.e., putative neural progenitors) were an equally rare population (Figure 5A\u2013B). Rfamide+ neurons were distributed among two distinct populations that differed in levels of GFP expression, accounting for 1.6% and 1.8% of the live single cells, respectively (Figure 5C). Imaging flow cytometry of the Piwi1::GFP reporter animal (i.e., cells that also express Soxb1) revealed that the brightest cells were small with a high nuclear to cytoplasmic ratio, consistent with stem cell morphology (Figure 5D). The two Rfamide+ cell populations did not differ morphologically based on imaging flow cytometry except in their GFP expression (Figure 5E and F); their exact nature is yet unclear. Flow cytometric cell cycle analysis (Figure 5G\u2013L) revealed that the Piwi1+ cells were almost exclusively in S/G2/M phase (Figure 5G), similar to what has been observed in i-cells from the freshwater polyp Hydra (Buzgariu et al., 2014). However, i-cell progeny, defined by low GFP fluorescence and constituting a highly heterogeneous population, were found in all stages of the cell cycle (Figure 5H). Soxb2+ cells that include putative neural progenitors (Flici et al., 2017) had a cell cycle profile similar to i-cells, mostly found during the S/G2/M phases of the cell cycle (Figure 5J). Rfamidehigh and Rfamidelow neurons that are thought to be terminally differentiated were mostly in G0/G1, similar to what was observed in nematocytes (Figure 5I and K\u2013L). The robustness of the flow cytometric analysis was demonstrated by studying other cellular fractions including epithelial cells from an epithelial reporter (K\u00fcnzel et al., 2010), male germ cells (from the Piwi1 reporter), and cells from an Ef1a knock-in animal where GFP is expressed ubiquitously (Sanders et al., 2018; Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 2).\n\nWe used FACS to physically isolate the following cell fractions: Soxb2high, Rfamidehigh, and Rfamidelow neurons. We generated transcriptomes for each of these cell fractions and used a previously published i-cell transcriptome (DuBuc et al., 2020). We then compared gene expression between the combinations shown in Supplementary file 1. Given the long half-life of fluorescent proteins, the Soxb2+ cells\u2019 transcriptome we present (Supplementary file 2) probably includes also early stages of their differentiation. The two RFamide+ neuronal populations are probably different, as the RFamide neuropeptide is considered a marker for differentiated neurons. Indeed, typical neuronal genes were expressed by these cells (Figure 5M; Supplementary file 2). The RFamide+ neurons fraction also expressed minicollagen genes that are markers of nematogenesis. Co-expression of minicollagens and precursors of neuropeptides has been reported previously (Sunagar et al., 2018; Wolenski et al., 2013) so this observation in RFamide+ cells is not surprising given that nematocytes are neural cells.\n\nTo provide further insight into the composition of the neural cells population, we used a droplet microfluidic single-cell handling system (InDrop) (Klein et al., 2015) to generate a single-cell transcriptome dataset based on 7071 cells from Hydractinia wild type feeding polyps. This allowed us to identify 22 cell clusters (Figure 5\u2014figure supplement 3A) and their associated upregulated marker genes (Figure 5\u2014figure supplement 3B); this may be an underestimation of the cellular complexity of Hydractinia as compared to that of other cnidarians (Seb\u00e9-Pedr\u00f3s et al., 2018; Siebert et al., 2019). However, we were able to identify putative i-cells, nematoblasts, gland cells, neurons, and a group of mixed progenitors. Upregulated marker gene expressions generally recapitulated the expression profiles of the physically sorted cells from the transgenic reporter animals, with up to 15% of markers corresponding to DEG transcript of the sorted cell types (Figure 5\u2014figure supplement 3C; Supplementary file 3). Specifically analyzing the expression of Soxb1-3 (Figure 5\u2014figure supplement 3D), we find that both Soxb1 and Soxb2 are expressed in a subset of i-cells; these cells are presumably in transition to becoming Soxb2-only positive progenitor cells (clusters 13 and 14 in Figure 5\u2014figure supplement 3A). Finally, Soxb3 is only expressed in few cells in cluster 18 (Figure 5\u2014figure supplement 3A, D). It also appears that subpopulations of neural cells transition from a Soxb2 RFamide low state (cluster 14) that express a G-protein coupled receptor for glutamate (Figure 5\u2014figure supplement 3E) to a Soxb2 RFamide high state (cluster 13), of which some eventually become Soxb2-negative while still expressing high levels of RFamide (cluster 11). These are presumably terminally differentiated neurons as determined by the marker genes Kaptin and Contactin2 (Figure 5\u2014figure supplement 3E). This is consistent with the downregulation of Soxb2 resulting in near absence of RFamide+ neurons and bolsters the role of Soxb2 as a marker for neural progenitor cells. Combined, the bulk- and-single-cell analyses provide a valuable resource for further analyses of cnidarian cells, allowing for the extended analysis of nematoblasts as a way to characterize both known and novel marker genes (Figure 5\u2014figure supplement 3F).\n\n### Hydractinia head regeneration involves de novo neurogenesis\n\nHydractinia can regenerate a decapitated head that includes a fully functional nervous system within 2\u20133 days (Bradshaw et al., 2015). This predictable generation of many new neurons provides an opportunity to study neurogenesis in regeneration. To identify the cellular source of regenerative neurogenesis, we first characterized the dynamics of nervous system regeneration over 48 hr using Rfamide::GFP reporter transgenic animals (Figure 6). Animals were decapitated and allowed to regenerate their heads. Subsets of these animals were then fixed at 12, 24, 36, and 48 hr post decapitation (hpd). Prior to fixation, they were incubated for 30 min in EdU. Fixed samples were stained for EdU, GFP (reporting Rfamide), and Piwi2 (an i-cell marker; for anti-Piwi2 antibody validation; see Figure 6\u2014figure supplement 1). We also analysed intact animals that showed a well-developed head nervous system but had neither S-phase cells nor i-cells in their heads (Figure 6A), as expected (Bradshaw et al., 2015). At 12 hpd, there were many cycling cells in the stump area, few neurons (likely remnants of the amputated tissue), and few migrating Piwi2low cells that are probably i-cell progeny (Figure 6B). At 24 hpd, a clear proliferative blastema had been established at the oral most pole, with i-cells (Piwi2high) and their progeny being numerous in the area. However, only a few RFamide+ neurons were visible (Figure 6C). At 36 hpd, new neurons were visible in the regenerating head and proliferative i-cells and progeny were still present (Figure 6D). Finally, at 48 hpd, a nearly complete head nervous system had been established and the regenerating head contained lower numbers of i-cells and progeny (Figure 6E). Hence, Piwi2low cells, which are presumably i-cell progeny, were the first to migrate to the injury area, followed later on by Piwi2high cells, which are probably stem cells. This is similar to what has been observed in planarian head regeneration, where neoblast progeny arrive in the injury area before neoblasts (Abnave et al., 2017). Of note, none of the existing neurons incorporated EdU during regeneration, consistent with neurons being terminally differentiated. To study nervous system regeneration in vivo, we used the Rfamide::GFP transgenic reporter animals to track individual neurons over the course of regeneration. The animals were decapitated, mounted in low-melt agarose, and imaged every hour for either the first 24 hr, or from 24 to 72 hpd. In all cases, the neurons remained stationary and did not proliferate during the observation period while a new head nervous system regenerated (Figure 6\u2014figure supplement 2). Hence, similar to Hydra (Miljkovic-Licina et al., 2007), head nervous system regeneration in Hydractinia involves de novo neurogenesis rather than proliferation or migration of existing neurons.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig6-v3.jpg)\n\n**Figure 6.:** (A) Intact head, characterized by few S-phase cells, extensive RFamide+ neuronal network, and no Piwi1high i-cells or their putative Piwi1low progeny. (B) 12 hr post decapitation (hpd) showing many proliferative cells, only few remnant RFamide + neurons, and few immigrating i-cells and progeny. (C) 24 hpd. High numbers of EdU incorporating cells, few RFamide+ neurons, and increasing i-cells and putative progeny are seen at the oral regenerating end. (D) 36 hpd. High number of S-phase cells, increased number of RFamide+ neurons, and further increase in i-cell numbers are seen. (E) 48 hpd. Decreasing numbers of S-phase cells, increasing numbers of RFamide+ neurons, and decreasing numbers of i-cells are observed. Scale bars = 40\u03bcm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Zygotes were injected with an shRNA targeting Piwi2 (shPiwi2) or a control shRNA targeting the GFP sequence (shGFP). At 48 hr post fertilization, animals were fixed and stained with the anti-Piwi2 antibody. Fewer Piwi2+ i-cells are detectable in shPiwi2 than in the control. Scale bars = 40\u03bcm.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** No cell proliferation or migration of individual neurons (circled) was observed, indicating no role during this process. Images are single optical slices. Scale bars = 40 \u03bcm.\n\n### SoxB genes are required for embryonic neurogenesis\n\nIt has been shown previously that Soxb2 and Soxb3 are essential for neurogenesis in adult Hydractinia (Flici et al., 2017). However, the role of Soxb1 has not been studied, nor has the role of these TFs in other life stages. Hence, we set out to study the role of all three SoxB genes in embryogenesis. For this, we used short hairpin RNA (shRNA)-mediated knockdown by microinjection into zygotes as previously described (DuBuc et al., 2020). The specificity of the treatment was assessed qualitatively by FISH in at least three replicates per shRNA (Figure 7\u2014figure supplement 1A). The animals were fixed at 72 hpf; at this stage of development, Hydractinia normally reaches the metamorphosis-competent planula larva stage.\n\nSoxb1 knockdown affected many aspects of larval development. First, the animals were on average smaller and underdeveloped (Figure 7\u2014figure supplement 1B). Second, these animals had fewer Piwi1+ i-cells and numbers of neurons and nematoblasts was lower than normal. RFamide neuron numbers were low or absent altogether (Figure 7). Third, these larvae had defects in ciliation (Figure 7, Figure 7\u2014figure supplement 2) and, as a result, their movement was restricted (larvae swim by coordinated cilia beat). Finally, the larvae had lost their ability to metamorphose upon CsCl treatment (Figure 7), with the latter probably being the result of a loss of neurons expressing GLWamide, the internal regulator of metamorphosis in Hydractinia (Gajewski et al., 1996; M\u00fcller and Leitz, 2002; Schmich et al., 1998). However, the number of S-phase cells was upregulated compared with the control and proliferative cells were also detectable in the epidermis; normally, S-phase cells are restricted to the gastrodermis in larvae (Figure 7). The above defects could be explained by Soxb1 playing a role in maintaining stemness in i-cells, similar to the role of Sox2 in mammalian pluripotency (Boyer et al., 2005; Takahashi and Yamanaka, 2006). Loss of Soxb1 may have resulted i-cells exiting the stem cell program, as observed by Piwi1 staining (Figure 7). This would be expected to directly affect all i-cell derivatives that include neurons and nematocytes, as well as other cell types. The increased number of S-phase cells could reflect a compensatory response to loss of i-cells or be a response of i-cells to loss of stemness.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig7-v3.jpg)\n\n**Figure 7.:** (A) Short hairpin RNA (shRNA)-mediated knockdown of Soxb1, Soxb2, and Soxb3. (B) Higher magnification of Piwi1+ and S-phase cells showing reduced i-cell numbers following Soxb1 downregulation. Note proliferative cells in epidermis, not seen in untreated and following Soxb2 or Soxb3 downregulation. (C) Quantification of phenotypes. Scale bars = 40\u03bcm.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Validation of shSoxB1, shSoxB2, and shSoxB3 knockdowns by single-molecule fluorescence in situ hybridization (SABER FISH) on 3DPF larvae. Larvae injected with shSoxB1 showed lower expression levels of SoxB1 compared to the control animals. Larvae injected with shSoxB2 showed lower expression levels of SoxB2 compared to the control animals and SoxB1 levels remained unaffected. Larvae injected with shSoxB3 showed lower expression levels of SoxB3 compared to the control animals and SoxB2 levels remained unaffected. Images are single optical slices. Scale bars = 40 \u03bcm. (B) Morphology of control, shGFP-injected, shSoxB1-injected, shSoxB2-injected, and SoxB3-injected larvae. Scale bar = 498 \u03bcm. (C) Forced expression of SoxB1::GFP in a neuronal context was lethal. Remnants of GFP could be seen in the vacuoles of phagocytic cells. (1) Polyp head and body. (2) Part of stolonal tissue. GFP was identified by direct fluorescence; Ncol1 by IF. Images are z-stack maximum projections. Scale bars = 40 \u03bcm.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78793/elife-78793-fig7-figsupp2-v3.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (B) shSoxb1-injected animal. (C) Male sexual polyp. (D) Female sexual polyp.\n\nDownregulation of Soxb2 had no visible effect on i-cells or on GLWamide+ neurons (Figure 7) but RFamide+ neurons were nearly absent. Nematoblast numbers had increased and no significant difference was observed on cycling cells. These phenotypes are markedly distinct from what is seen after downregulation of Soxb2 in adult neurogenesis, where the numbers of neurons, nematocytes, and cycling cells are noticeably reduced (Flici et al., 2017). This could be explained by preferential differentiation of neural progenitors to GLWamide+ neurons over RFamide+ neurons if progenitors are limiting, given the essential role of the latter in metamorphosis. Alternatively, the SoxB2 protein might be maternally loaded or dispensable for embryonic GLWamide+ neurons. The increase in nematoblast numbers following Soxb2 downregulation could indicate a nematogenesis-inhibiting role for this gene. Surprisingly, downregulation of Soxb3 had no major effect on the animals, in contrast to the role of this gene in adult neurogenesis (Flici et al., 2017). The above data suggest an essential and complex role of Soxb2 for embryonic neurogenesis, but also highlight major differences between embryonic and adult neurogenesis.\n\n## Discussion\n\nMultiple SoxB proteins act to generate neurons across metazoans but orthologous relationships between individual SoxB members in different animal clades have been difficult to establish (Flici et al., 2017). This is either because multiple duplication events of an ancestral SoxB gene occurred within lineages, resulting in paralogous genes in any one clade, or that sequence drift over evolutionary time has blurred discernable orthologous relationships. However, the requirement for more than one SoxB gene to generate neurons in animals as distantly related as Hydractinia, Drosophila, and mice suggest that more than one SoxB gene had already been present before the cnidarian-bilaterian split to generate neurons in their last common ancestor; it does not exclude further lineage-specific diversification and gene losses thereafter. Finally, it indicates a highly conserved mechanism of subfunctionization following gene duplication at the base of animals.\n\nSoxb1 is an i-cell marker and probably fulfills a role in stemness. Its downregulation resulted in loss of i-cells and impacted other aspects of development including the ability to metamorphose, which was expected given that i-cells provide progenitors to multiple lineages. This function of Soxb1 is similar to the role of vertebrate Sox2. However, vertebrate Sox2 also acts in neural stem cells while in Hydractinia, there is no direct evidence so far to support a similar function. Furthermore, a population of long-term, self-renewing neural progenitors has yet to be identified in cnidarians. Our results from Hydractinia, along with data obtained from other cnidarians (reviewed by Rentzsch et al., 2017), are also consistent with continuous generation of neurons from multi- or pluripotent cells that also contribute to non-neural lineages, without the existence of a long-term, self-renewing neural stem cell.\n\nSoxb2 was expressed in a population of cells with uncommitted morphology that differentiated to neural cells, based on GFP retention in neurons and nematocytes in the Soxb2 reporter animal. Our in vivo analysis of Soxb1/Soxb2 double transgenic reporter animals has shown that Soxb1+ cells transform into Soxb2+ cells (Figure 4 and Figure 4\u2014figure supplement 1). Downregulation of Soxb2 resulted in neural-specific defects in embryos, consistent with this gene being expressed preferentially in the neural lineage (Figure 3). The latter is also supported by the neural transcriptional fingerprint (Figure 5M; Supplementary file 2) and single-cell transcriptomic profiles of Soxb2+ cells (Figure 5\u2014figure supplement 3C-E). Of note, deviation from normal development following Soxb2 perturbation was not a simple reduction in all neural cells, as seen in adults (Flici et al., 2017). Instead, Soxb2 downregulation caused a loss of RFamide+ neurons but not of GLWamide+ neurons. Because GLWamide+ neurons are essential for metamorphosis of Hydractinia larvae (Plickert et al., 2003), it is possible that the animals preferentially generate this type of neuron when progenitors are limited. Conversely, nematoblast numbers increased upon Soxb2 downregulation, suggesting that Soxb2 normally inhibits nematogenesis in embryos, in contrast to its function in adults (Flici et al., 2017).\n\nDespite being expressed in embryos and larvae (Flici et al., 2017), no visible phenotype was observed following Soxb3 downregulation, other than the effect of its downregulation in adults (Flici et al., 2017). Therefore, Soxb3 may not play a distinct role in embryonic neurogenesis, or that the effect of its downregulation in embryos is too subtle to be observed by our methods.\n\ni-Cells are concentrated in the lower body column (Bradshaw et al., 2015), neural progenitors are scattered in the mid-body column, while most neurons and nematocytes are found in the head. This implies that neural cells differentiate while migrating from the base of the polyp toward the head, reflected by the partly overlapping expression domains of SoxB genes that mark the stages of differentiation. A major question emanating from this work is whether migration is required for neurogenesis cell autonomously, or whether migrating stem cells become exposed to different microenvironments along the oral-aboral axis that drive their differentiation non-cell autonomously.\n\nThe poor conservation of SoxB gene sequences across animals make direct functional comparisons difficult. However, the requirement for multiple SoxB genes and migration seem to be common hallmarks of neurogenesis in all studied animals. Additional common features remain to be discovered. Hydractinia\u2019s continuous, predictable, and accessible neurogenesis across all life stages provides an excellent model to address these questions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Piwi1 (rabbit polyclonal)</td>\n      <td>https://doi.org/10.1126/science.aay6782</td>\n      <td>N/A</td>\n      <td>IF (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Piwi2 (Guinea pig polyclonal)</td>\n      <td>In-house</td>\n      <td>N/A</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-acetylated tubulin (mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Ca# T7451</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RFamide (mouse polyclonal)</td>\n      <td>https://doi.org/10.1007/s004270050181</td>\n      <td></td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GLWamide (rabbit polyclonal)</td>\n      <td>https://doi.org/10.1007/s004270050181</td>\n      <td></td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ncol1(rabbit polyclonal)</td>\n      <td>https://doi.org/10.1371/journal.pone.0022725.g001</td>\n      <td></td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ncol3 (guinea pig polyclonal)</td>\n      <td>https://doi.org/10.1371/journal.pone.0022725.g001</td>\n      <td></td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (rabbit polyclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Ca# 8334</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RFP (rat polyclonal)</td>\n      <td>Chromotek</td>\n      <td>Ca# 5F8</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Hydractinia symbiolongicarpus)</td>\n      <td>293-10 wild type animals</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Hydractinia symbiolongicarpus)</td>\n      <td>SoxB1::tdTomato line</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Hydractinia symbiolongicarpus)</td>\n      <td>SoxB2::GFP line</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Hydractinia symbiolongicarpus)</td>\n      <td>RFamide::GFP line</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Hydractinia symbiolongicarpus)</td>\n      <td>RFamide::SoxB1::GFP</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Materials and methods</td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental model and subject details\n\n#### Hydractinia culture\n\nStable clones were grown on glass microscope slides and cultured at 20\u201322\u00b0C in artificial seawater (ASW) under a 14:10 light:dark cycle regime. They were fed four times a week with freshly hatched Artemia nauplii and once a week with oysters (pureed when fresh and then stored frozen in aliquots).\n\nSpawning took place approximately one and a half hours after light induction by the release of gametes (sperm and oocytes) in a water column. Once collected, the embryos were stored in 4\u00b0C for up to 4 hr to halt their development and provide a wider time frame for injections.\n\n#### Stable transgenic reporter animals\n\nZygotes were injected with plasmid DNA at 3\u20134 \u03bcg/\u03bcl concentration. Plasmid was supplemented with 100 mM KCl which helped to reduce mosaic integration. Once the embryo reached the planula larval stage, metamorphosis was induced by a 3\u20134 hr incubation with 1:5 580 mM CsCl:ASW. Once metamorphosing larvae fully retracted, they were placed on glass slides to settle and form a new colony. Animals were then bred to produce stable, non-mosaic transgenic offspring. To generate double transgenics, stable second-generation SoxB1::tdTomato and SoxB2::GFP animals were crossed.\n\n### Method details\n\n#### Generation of transgenic animals\n\nCloning vectors were generated by inserting 5\u2019 upstream regulatory sequence (URS) and 3\u2019 downstream regulatory sequence of the desired gene (SoxB1, SoxB2, or RFamide) upstream and downstream of the coding sequence of the fluorescence protein (GFP or tdTomato), respectively. Cloning and ligation of the fragments was achieved by restriction enzyme-based approach. Chemically competent XL1 Blue Escherichia coli bacteria were transfected with the vector and once the plasmid was validated by sequencing, embryos were injected.\n\nFor the ectopic expression of SoxB1, the RFamide construct was used and the coding sequence of SoxB1 was inserted between URS and fluorescence protein.\n\n#### Cellular staining\n\nStandard immunofluorescence staining was done as previously described in (Flici et al., 2017): the tissue was fixed in 4% PFA in PBS for 60 min at room temperature (RT) or overnight (ON) at 4\u00b0C followed by three washes of 10 min each with PBS with 0.3% Triton X-100 (PBSTx). For storage, the tissue was dehydrated by incubation in increasing concentrations of ethanol diluted in PBSTx and stored in \u201320\u00b0C (25%, 50%, 75%, and 100%; 5 min each wash). Tissue was then slowly rehydrated by washing in decreasing concentrations of ethanol followed by three washes of 10 min each with PBSTx. The tissue was then blocked for 1 hr in 3% BSA in PBSTx and primary antibodies were added ON at 4\u00b0C. The following day, tissue was washed three times 10 min each with PBSTx and blocked again for 15 min with 5% serum in BSA/PBSTx (goat serum unless indicated otherwise). Secondary antibodies were added based on the host of the primary antibodies in 5% serum in BSA/PBSTx for 1 hr in RT and then the tissue was washed three times 10 min each with PBSTx. Nuclear staining was then carried out with Hoechst 33258 (use: 1 in 2000; stock: 20 mg/ml; Sigma-Aldrich; B2883) for 15 min at RT followed by three washes 10 min each with PBSTx. Tissue was then mounted in Fluoroshield (Sigma-Aldrich; F6182) on glass microscopic slides (Fisher Scientific; 11562203).\n\nFor the nematocyte capsule staining by FITC-coupled DSA lectin, all the steps described below were performed on the shaker and in RT unless otherwise stated. Fixation was carried out by incubating the tissue in TBS-T for 10\u201330 min. Following, the tissue was washed three times for 5 min each with TBST-T and blocked for 1 hr with 2% BSA in TBS. Three more washes of 5 min each were carried out with TBS, and then lectin was added in a 15 \u03bcg/ml final concentration diluted in TBS-T. Lectin incubation was for 1 hr and samples were protected from light. Three more washes of 5 min each with TBS were carried out, and Hoechst (1:1000) was added for 30 min. Samples were washed again for three times before mounting them in Fluoromount. Mounted samples were left ON at 4\u00b0C to cure before imaging. Samples could be imaged only within 2\u20133 days after curing and could be stored in 4\u00b0C \u2013 not 20\u00b0C.\n\nEdU staining was done as previously described in (Bradshaw et al., 2015): all the solutions were prepared according to the manufacturer\u2019s instructions. Prior fixation, the polyps were incubated in EdU solution for 30 min or more depending on the experiment (stock concentration 10 mM; 1 \u03bcl EdU/1 ml ASW), washed three times in ASW and incubated in MgCl2 before fixation. Polyps are then fixed in 4% PFA in PBS for 1 hr at RT and washed once with 3% BSA in PBSTx for 30 min. Next, two washes with PBSTx were carried out (first wash: 1 hr; second wash: 30 min), followed by two washes with 3% BSA in PBSTx for 5 min each. The tissue was then incubated in Click-iT cocktail for 30 min (~100 \u03bcl per 100 polyps; protect from light) followed by three washes of 3% BSA in PBSTx for 20 min each. Following, samples were stained with various antibodies as described above.\n\n#### In situ hybridization\n\n##### For conventional FISH\n\nFISH was done as previously described in (DuBuc et al., 2020): animals were first fixed for 90 s in ice-cold 0.2% glutaraldehyde (stock: 25%, Sigma-Aldrich; G5882) with 4% PFA (stock: 16%, Alfa Aesar; 43368) in filtered ASW and then in 4% PFA in PBS-0.1% Tween (PTW) for 1 hr at 4\u00b0C followed by three quick washes with PTW. Post-fixation washes were done in increasing concentrations of methanol in PTW and then the samples were either stored for future use or continued with the procedure. Next, the tissue was permeabilized by washes in increasing concentrations of methanol in acetone and rehydrated with washes in decreasing concentrations of methanol in PTW.\n\nThe next steps were done with reagents and buffers in RT. Following rehydration of the tissue, three PTW quick washes were done to remove any residual methanol and then the activity of PFA was quenched by two washes 5 min each with glycine (2 mg/ml; Fisher Scientific; BP381-1) in PTW followed by three PTW washes.\n\nThe tissue was then pre-hybridized by adding pre-heated hybridization buffer ON, and then hybridized for 2 days in pre-heated hybridization buffer containing the desired probes (1 ng/\u03bcl). The hybridization temperature depends on the probe with the range being 55\u201360\u00b0C.\n\nFollowing, all the post-hybridization washes were done at hybridization temperature. First, the tissue was washed twice with a simpler version of the hybridization buffer for 10 and 40 min. Then, washes for 30 min were carried out in decreasing concentrations of hybridization buffer in 2\u00d7 SSC followed by three washes of 15 min each in 2\u00d7 SSC.\n\nAt this point, all the washes/incubation steps were moved from hybridization temperature to RT. Quick washes in decreasing concentrations of 0.2\u00d7 SSC in PTW were done followed by five quick washes in PTW. Once the post-hybridization washes were done, the endogenous peroxidase activity was quenched by incubating the tissue in 3% hydrogen peroxide (Fisher; H/1800/15) in PTW for 1 hr at RT protected from light followed by three washes of PTW for 10 min each. The tissue was then incubated with the first antibody (anti-DIG POD, 1:1000; Roche 11207733910) in 1% blocking buffer (Roche; 11096176001) in maleic acid buffer ON at 4\u00b0C followed by three washes of 10 min each with PTW.\n\nThe developing process of the first antibody was done preferably with Rhodamine in developing buffer with three incubations of 1 hr each at RT followed by an ON incubation at 4\u00b0C.\n\nThe next day, at least five PTW washes were carried out, or until the tissue has no residual Rhodamine or Fluorescein, and then the tissue was either prepared for mounting or a second antibody incubation. If the tissue was prepared with a single probe, it was then stained with the nuclear marker Hoechst (1:2000) in PTW for 15 min and washed and mounted in 100 mM Tris-pH 8 in 50% TDE (Sigma; 166782).\n\nIn the case of a double FISH, after the ON incubation with the developing buffer, the tissue was washed thoroughly with PTW and then washed once for 10 min with 0.1 M glycine pH2 followed by three quick PTW washes. The tissue was then shortly blocked with 1% blocking buffer in maleic acid buffer and incubated with the second antibody (anti-Fluorescein POD, 1:1000, Roche; 11426346910) in 1% blocking buffer in maleic acid buffer ON at 4\u00b0C followed by three washes of 10 min each with PTW.\n\nThe developing, post-developing washes, nuclear staining, and mounting were done the same way as described above but instead of Rhodamine, Fluorescein was used. After the post-developing washes but before TDE washes and mounting, the tissue could be quickly washed with increasing concentrations of methanol in PBS and then with decreasing concentrations of the same solutions to remove background staining.\n\n##### For SABER FISH\n\nTissue was fixed and dehydrated the same way like in the conventional FISH as described above. Samples were then incubated in 1% H2O2 diluted in 100% MeOH (ice cold) for 45 min in RT, followed by two quick washes with ice-cold 100% MeOH. Then, tissues were permeabilized by quick washing in decreasing and then increasing concentrations of methanol diluted in, followed by rehydration with quick washes in decreasing concentrations of methanol in PTW.\n\nThe next steps are done with reagents and buffers in RT. Following rehydration of the tissue, three PTW quick washes are done followed by two washes 5 min each with glycine (2 mg/ml; Fisher Scientific; BP381-1) in PTW followed by three PTW washes.\n\nSamples were then washed once for 5 min in triethanolamine (TEA) pH 8, followed by another wash in TEA pH 8 with the addition of 6 \u03bcl of acetic anhydrite. Acetic anhydrite would form a drop-like appearance in the well and so the samples were left on the rocker until the drop was dissolved. Another wash with TEA followed but this time 12 \u03bcl of acidic anhydrite were added and placed on the rocker until drop was dissolved. A few washes with PTW followed.\n\nSamples were then placed in Whyb buffer (pre-warmed at 43\u00b0C) and incubated at 43\u00b0C for 10 min. Whyb buffer was then replaced with Hyb1 buffer (pre-warmed at 43\u00b0C) and placed in a 43\u00b0C incubator ON (pre-hybridization). The next day, the probes in Hybe buffer were added at a concentration of 1 \u03bcg/120 \u03bcl. Tissue was then incubated with the probes for 2 days at 43\u00b0C.\n\nAll the following steps were done at Hybe temperature and all the reagents were pre-warmed (43\u00b0C). Probes were removed and replaced with Whyb buffer for 10 min. Then, two washes with Whyb buffer for 30 min each were done, followed by a 10 min wash with 50% Whyb buffer in 2\u00d7 SSCTw. Two more washes with 2\u00d7 SSCTw were followed for 10 min each.\n\nThe steps followed were performed at 37\u00b0C. 2\u00d7 SSCTw was replaced with PTW (two quick washes). Once the samples were warmed up to 37\u00b0C, Hyb2/fluor solution was added and samples were incubated for 1 hr at 37\u00b0C. Hyb2/fluor solution was also pre-warmed at 37\u00b0C before it was added to the samples.\n\nAfter that, Hyb2/fluor solution was replaced with pre-warmed Whyb2 for a 10 min incubation at 37\u00b0C followed by two washes of 5 min each with PTW. Nuclear staining was then performed in RT by diluting Hoechst in PTW (1:2000) and incubating the samples for 45\u201360 min at RT. Samples were then quickly washed twice with PTW and mounted in 97% TDE. Samples were imaged within 4 days. Three to six animals were imaged per condition.\n\n### shRNA interference\n\nFor shRNA interference experiments, primers were designed to clone unique sites of the three SoxB genes. Stock primers (100 mM) containing a T7 site were directly used and incubated at 98\u00b0C for 2 min and then left in RT for 10 min to anneal; 2 \u03bcl of each primer were used and mixed with nuclease-free water to a final reaction volume of 20 \u03bcl. Following, T7 transcription was carried out by using the total reaction volume from the previous step (20 \u03bcl) as a DNA template along with 3.5 \u03bcl of each NTP (ATP, GTP, UTP, CTP; 100 mM stock concentration), 4 \u03bcl of 10\u00d7 reaction buffer and 3 \u03bcl of T7 RNA polymerase mix (HiScribe T7 High Yield RNA Synthesis kit, NEB; E2040). The mixture was then incubated ON at 37\u00b0C. The next day, the products were DNase treated for 1 hr at 37\u00b0C with 40 \u03bcl of DNase solution (5 \u03bcl DNaseI in 35 \u03bcl RDD buffer; Qiagen RNAse-free DNase set; 79254) and RNA was isolated by using Quick-RNA MiniPrep kit (Zymo Research; R1054) following the manufacturer\u2019s instructions. The eluted RNA was quantified using NanoDrop and the quality was checked by running a formaldehyde denature gel. Embryos were injected at a concentration of 250 ng/\u03bcl for all three SoxB genes.\n\n### In vivo imaging and analysis\n\nDecapitated polyps from transgenic colonies were transferred to 35 mm imaging dishes with a glass bottom (Ibidi; D 263) and 0.5% low-melt agarose in filtered ASW was placed dropwise on individual polyps in order to secure them as close to the bottom of the dish as possible. Once the polyps had stabilized, low-melt agarose was poured into the dish to cover the whole bottom. On polymerization the dish was transferred to an Andor spinning disc confocal microscope which was used to generate time lapse movies. Images were captured over the duration of the time course as z-stacks at 10 \u03bcm apart, using a 10\u00d7 objective lens. Prior to collecting the Z stack, exposure time and EM gain were set and recorded to the channel of illumination. This was maintained for all experiments. Each specimen was imaged using \u03bb488 nm and \u03bb564 nm lasers. Phase contrast images were also collected as an indication of animal location and viability pre, during, and post imaging. Animals were subjected to a 72 hr imaging with 1 hr imaging intervals. Every hour, a z-stack spanning the whole depth of each animal was obtained in GFP, RFP, and DIC channels. Data were then analysed using ImageJ/Fiji software (ImageJ 1.52i), and two to three focal planes covering the whole cell of interest were selected. In total, 16 animals were imaged.\n\n### Flow cytometry, FACS, and imaging flow cytometry\n\nTissue dissociation and flow cytometric analysis was done as previously described in DuBuc et al., 2020 using only feeding polyps. Cell suspensions were labelled with 37.5 \u03bcg/ml Hoechst 33342 (Sigma Cat#14533) for 20 min at 18\u00b0C. Flow cytometric analysis was performed using a BD FACSCanto II flow cytometer (BD Biosciences, San Jose, CA) which was calibrated according to the manufacturer\u2019s recommendations. Data were analysed using Diva v8.0.1 (BD Biosciences) or FlowJo v10 (TreeStar Inc, Olten, Switzerland). Typical gating strategies involved gating on live, nucleated cells (Hoechst 33342 positively stained population) measured using the 405 nm excitation laser line and 450/50 nm photomultiplier tube (PMT) fluorescence detector, followed by doublet exclusion based on forward scatter height versus forward scatter area. For cell cycle analysis an additional doublet exclusion gate was included based on plotting Hoechst 33342 height versus Hoechst area. Expression of the GFP reporter in transgenic animals was measured using the 488 nm excitation laser line in the 530/30 nm PMT fluorescence detector. Cells prepared from wild type animals were used as a gating control and to set the voltages in the cell cycle analysis. An example of a typical gating strategy used in cell cycle analysis as well as representative cell cycle profiles from wild type and transgenic animals\u2019 cell cycle profile of distinct cell populations is illustrated in Figure 5\u2014figure supplements 1 and 2.\n\nFor imaging flow cytometry cell suspensions were prepared, as previously described, from reporter animals: Piwi1::GFP and RFamide::GFP and analysed using INSPIRE software on an Imagestream X Mark II imaging flow cytometer (Luminex Corporation, Northbrook, IL). Analysis was performed using IDEAS software (Luminex Corporation, Northbrook, IL). Samples were gated on focused cells (brightfield gradient root mean squared), cells as measured by brightfied area versus aspect ratio followed by Hoechst 33342 positive population and GFP versus SSC. Hoechst and GFP fluorescence was measured using the 405 nm excitation laser line and 435\u2013505 nm bandpass filter and the 488 nm excitation laser line and 480\u2013560 nm bandpass filter, respectively. Cells isolated from a wild type Hydractinia animal were used as a gating control.\n\nFor FACS, 100 polyps from each reporter line were dissociated as described above Piwi1::GFP, SoxB2::GFP, and RFamide::GFP (n=3) and re-suspended in 1 ml of filtered ASW containing 0.5% Pronase and 0.1% BSA. FACS was performed on a BD FACSAriaII high-speed cell sorter using a 100 \u00b5m nozzle at 20 psi with filtered ASW as sheath. ASW was used as sheath fluid to eliminate osmotic stress to the cells during sorting. GFP-expressing and non-GFP-expressing cell populations were gated on live, nucleated single cells. Cells prepared from matched wild type animals were used as controls. Cell populations were sorted directly into Trizol (Life Technologies, Cat#15596026) for subsequent RNA extraction using the Direct-zol RNA MiniPrep kit. The purity of the sorted populations was checked by sorting directly into ASW followed by flow cytometric analysis on a BD FACSAriaII cell sorter.\n\n### InDrop single-cell transcriptomics\n\nTissue dissociation was done as described above. Cells were then transferred to 18.5% mannitol in H2O to replace sea-H2O, which otherwise interferes with critical downstream enzymatic reactions including droplet RT. After filtering of the cell suspension through 100 \u03bcm filters, cells were quickly subjected to in-house InDrop microfluidics to generate a single-cell transcriptome dataset as described in Klein et al., 2015. Following sequencing of the InDrop library, raw reads were processed using python scripts provided in Klein et al., 2015. The resulting genes-versus-cells UMI-filtered count matrix was then processed, analysed, and visualized in R using Seurat 3.0 following standard procedures (Stuart et al., 2019). Cluster markers were annotated using BLAST against uniprot KB. Bioinformatics worklflows and results are provided (Supplementary file 2). Raw sequencing reads are available under SRA accession number PRJNA777228.\n\n### Antibody generation\n\nFor Piwi2 antibody production, primers containing a 5\u2019 HIS-tag were designed to amplify a region of Piwi2. Fragments were cloned and expressed in pET3s expression vector using restriction sites (Nde1 and BamH1 \u2013 encoded in primer sequences) and expressed in Rosetta DE3 pLysS bacteria. Protein extract was then analysed and injected into two guinea pigs by Eurogentec. Antisera were analysed by western blots and antibody specificity was validated as shown in Figure 6\u2014figure supplement 1.\n\n### Cell type-specific transcriptomes\n\n#### Quantification and statistical analysis\n\n##### Transcriptome analysis\n\n###### Quantitation of shRNAi mutant animals\n\nAll cell counting analysis was performed using 3D Object Counter function in ImageJ/Fiji software. Counts were made relative to the total tissue area in the X/Y dimension. A z-stack covering the whole depth of each sample was obtained. Counting was performed on cells positive for the respective cell type marker based on antibody staining and numbers were compared between shControl and shSoxb1/2/3 animals. Three to seven animals were counted per condition. Uninjected animals and animals treated with shGFP were used as controls. Uninjected animals were only used for quantification purposes. Statistical analysis was performed in GraphPad Prism using unpaired t-test. Differences were considered not significant when p >0.05.\n\nThe shRNA knockdown was assessed qualitatively. At least three animals per shRNA treatment were assessed by SABER FISH.\n\n### Software and algorithms\n\n#### Cell type-specific transcriptomes\n\nAfter RNA isolation, samples were shipped to the NIH Intramural Sequencing Center (NISC) for further processing and sequencing. RNA was amplified with the Ovation RNA-Seq System V2 kit, and sequencing libraries were made with Illumina TruSeq Stranded mRNA Library Prep Kit. Libraries were sequenced on two lanes of Illumina NovaSeq 6000 (2 \u00d7 151 bp), generating between 27 and 69 million reads per sample (average 44 million reads).\n\n#### Transcriptome analysis\n\nRead quality control was performed using FastQC v0.11.6. Overrepresented sequences and low-quality bases were trimmed using Trimmomatic v0.36 (Bolger et al., 2014). After trimming, unpaired reads and reads shorter than 36 bp were discarded.\n\nReads were aligned to the reference transcriptome described in DuBuc et al., 2020 using HISAT2 (Kim et al., 2019), and gene-level read counts were generated with HTSeq-count v0.11.2 (Anders et al., 2015). Cell type-specific transcripts were identified by conducting a differential expression analysis between reporter-positive and reporter-negative cells using the R package DESeq2 (Love et al., 2014).\n",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "611819f8-eb41-4460-a39a-7d99e87ee9fa",
+      "submission_id": "598576fc-69d4-4d87-8c04-39f0642cacca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, https://ror.org/05dxps055 California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78793.sa0](https://doi.org/10.7554/eLife.78793.sa0)\n\nThis paper shows that SoxB genes act sequentially in neural stem cells before differentiating into mature neural cells and that loss of SoxB genes causes defects in embryonic neurogenesis. The manuscript provides molecular insights into neurogenesis during cnidarian embryogenesis, homeostasis, and regeneration.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, https://ror.org/05dxps055 California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78793.sa1](https://doi.org/10.7554/eLife.78793.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0dd3bf60-2daa-43f6-ad90-21b38e6265d3",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C1",
+      "claim": "Neurogenesis is the generation of neurons from stem cells, a process that is regulated by SoxB transcription factors (TFs) in many animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurogenesis is the generation of neurons from stem cells, a process that is regulated by SoxB transcription factors (TFs) in many animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to other scholarly work and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "91d81de3-4f59-429a-bc1e-b39684972f57",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C2",
+      "claim": "SoxB transcription factors are central players in neurogenesis across a broad range of animal taxa including vertebrates, insects, nematodes, planarians, and cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "SoxB transcription factors (TFs) are central players in neurogenesis across a broad range of animal taxa including vertebrates, insects, nematodes, planarians, and cnidarians (Alqadah et al., 2015; Meulemans and Bronner-Fraser, 2007; Richards and Rentzsch, 2015; Ross et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "b81976dd-e0b9-4faf-9f62-08453891b4ac",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C3",
+      "claim": "Vertebrate SoxB TFs are commonly subdivided into the SoxB1 group (Sox1, Sox2, and Sox3) that maintain stemness in neural stem cells, while SoxB2 group members (Sox14 and Sox21) are involved in neural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrate SoxB TFs are commonly subdivided into the SoxB1 group (Sox1, Sox2, and Sox3) that maintain stemness in neural stem cells, while SoxB2 group members (Sox14 and Sox21) are involved in neural differentiation (Bylund et al., 2003; Holmberg et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research on vertebrate SoxB genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "e419c5a0-02a3-4d62-9db3-00034e969f5b",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C4",
+      "claim": "Vertebrate SoxB genes act sequentially in neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, vertebrate SoxB genes act sequentially in neurogenesis, but it is unclear whether this feature is ancestral or derived in metazoan animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the previously cited literature about vertebrate SoxB function.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "d0bc5771-a40f-4985-b1de-748b37b85bac",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C5",
+      "claim": "A similar SoxB subdivision has not been observed in invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SOX orthology has been notoriously hard to interpret and, therefore, a similar SoxB subdivision has not been observed in invertebrates (Flici et al., 2017; Jager et al., 2011; Richards and Rentzsch, 2015; Schnitzler et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research on invertebrate SoxB genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "52a46dd6-4a5a-428f-94b4-4f80a8355d31",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C6",
+      "claim": "Cnidarians are the sister group to bilaterians.",
+      "claim_type": "EXPLICIT",
+      "source": "Cnidarians are the sister group to bilaterians (Kayal et al., 2018; Zapata et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to phylogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "bbc2b824-3d8c-491a-a8dc-9b21356139ae",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C7",
+      "claim": "Multiple SoxB genes are expressed in the developing nervous systems of representatives of the two main cnidarian clades, Anthozoa and Medusozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "As in vertebrates, multiple SoxB genes are expressed in the developing nervous systems of representatives of the two main cnidarian clades, Anthozoa (corals and sea anemones) (Magie et al., 2005; Richards and Rentzsch, 2014; Richards and Rentzsch, 2015) and Medusozoa (hydroids and jellies) (Flici et al., 2017; Jager et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research on cnidarian SoxB expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c5273c91-1fbc-406f-b92b-2cf14ccfafba",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C8",
+      "claim": "Hydractinia symbiolongicarpus is a colonial hydrozoan cnidarian.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydractinia symbiolongicarpus is a colonial hydrozoan cnidarian (Figure 1\u2014figure supplement 1; Frank et al., 2020)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and reference to a figure showing the organism.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "d05e9873-f07c-4578-b4ed-4782666544ad",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C9",
+      "claim": "Hydractinia possesses a population of stem cells, known as i-cells, that self-renew and contribute to somatic lineages, including neurons, and to germ cells throughout life.",
+      "claim_type": "EXPLICIT",
+      "source": "like other hydrozoans, this animal possesses a population of stem cells, known as i-cells. These i-cells self-renew and contribute to somatic lineages, including neurons, and to germ cells throughout life (DuBuc et al., 2020; Gahan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research on Hydractinia i-cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "f17ed0c4-d4f9-4dc6-8716-a71a4d79d6a6",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C10",
+      "claim": "i-cells first appear in embryonic endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "i-cells first appear in embryonic endoderm (Gahan et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "91f3124b-468e-450a-8f03-f742a51a0cdc",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C11",
+      "claim": "i-cells migrate to the outer tissue layer of the body, the epidermis, during metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "but migrate to the outer tissue layer of the body, the epidermis, during metamorphosis (Figure 1\u2014figure supplement 2), remaining there during adult life.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to a figure showing i-cell migration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "63b2a16d-7d61-40eb-bc43-4d35c26b9300",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C12",
+      "claim": "In the mature animal, undifferentiated i-cells are found in interstitial spaces of the epidermis, primarily of the lower body column.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature animal, undifferentiated i-cells are found in interstitial spaces of the epidermis, primarily of the lower body column.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive claim about the location of i-cells in adult animals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c1e983a6-c358-4efc-8101-05aba36f8520",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C13",
+      "claim": "i-cells differentiate while migrating orally.",
+      "claim_type": "EXPLICIT",
+      "source": "They differentiate while migrating orally (Bradshaw et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "6bab7f45-d853-4ecf-912d-5a3a88f4d7bb",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C14",
+      "claim": "i-cells give rise to various cell types including the two main neuronal lineages: neurons and nematocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "They differentiate while migrating orally (Bradshaw et al., 2015), giving rise to various cell types including the two main neuronal lineages: neurons and nematocytes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and describes the differentiation potential of i-cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "9385e722-c37e-4d9f-bc75-74719d5e8a83",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C15",
+      "claim": "Nematocytes are specialized stinging cells that are used by cnidarians to capture prey or for defence from predators.",
+      "claim_type": "EXPLICIT",
+      "source": "nematocytes \u2212 the latter being specialized stinging cells that are used by cnidarians to capture prey or for defence from predators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about nematocyte function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "f2b12395-53f5-4cef-8b78-e6f2fe80af63",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C16",
+      "claim": "The Hydractinia nervous system has a typical cnidarian nerve-net structure with a higher concentration of neurons at its oral end.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hydractinia nervous system has a typical cnidarian nerve-net structure with a higher concentration of neurons at its oral end (Figure 1\u2014figure supplement 3 and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to figures showing the nervous system structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "db104d7b-f011-4c46-b84e-66123da1dafc",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C17",
+      "claim": "The Hydractinia genome encodes three SoxB-like genes (Soxb1, Soxb2, and Soxb3).",
+      "claim_type": "EXPLICIT",
+      "source": "The Hydractinia genome encodes three SoxB-like genes (Soxb1, Soxb2, and Soxb3) whose orthologous relation to specific bilaterian homologs cannot be resolved due to low sequence conservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the genomic content of Hydractinia.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c0dc4da1-ab88-42ff-a918-f2ef5cbba4c7",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C18",
+      "claim": "The orthologous relation of Hydractinia SoxB genes to specific bilaterian homologs cannot be resolved due to low sequence conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hydractinia genome encodes three SoxB-like genes (Soxb1, Soxb2, and Soxb3) whose orthologous relation to specific bilaterian homologs cannot be resolved due to low sequence conservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on sequence analysis and phylogenetic inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "4bbdeb83-3133-44f1-841f-7c14b2b1d204",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C19",
+      "claim": "Hydractinia Soxb2 is expressed in proliferative, putative neural progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study has shown that Hydractinia Soxb2 is expressed in proliferative, putative neural progenitors, and Soxb3 is expressed in neural cells, identified by their distinctive morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a previous study cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "9a88fa45-a2dd-4750-8318-af5a29bfd41f",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C20",
+      "claim": "Hydractinia Soxb3 is expressed in neural cells, identified by their distinctive morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study has shown that Hydractinia Soxb2 is expressed in proliferative, putative neural progenitors, and Soxb3 is expressed in neural cells, identified by their distinctive morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a previous study cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "229ba6ba-49e8-4ae2-a668-e89a08f1b09a",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C21",
+      "claim": "Soxb2 and Soxb3 are essential for adult neurogenesis and nematogenesis in Hydractinia.",
+      "claim_type": "EXPLICIT",
+      "source": "Both genes are essential for adult neurogenesis and nematogenesis (Flici and Frank, 2018; Flici et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "1a5dbf3e-9f87-4ceb-a518-f6f1e3acb5b1",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C22",
+      "claim": "The functions of Soxb1, Soxb2, and Soxb3 in embryonic neurogenesis remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the functions of Soxb1, Soxb2, and Soxb3 in embryonic neurogenesis remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in knowledge that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "61923ba6-d69e-4e62-8ab7-636597273e61",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C23",
+      "claim": "In sexual polyps, Soxb1 was expressed in cells morphologically resembling i-cells and germ cells in males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "In sexual polyps, Soxb1 was expressed in cells morphologically resembling i-cells and germ cells in males and females (Figure 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FISH data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "dafe76c5-2a39-4bc8-83c5-e6edba24ec20",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C24",
+      "claim": "In feeding polyps, Soxb1 was expressed in cells that resembled i-cells both with respect to their morphology and their anatomical location, being primarily distributed in the lower body column of the polyp and largely absent from the oral end of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "In feeding polyps, Soxb1 was expressed in cells that resembled i-cells both with respect to their morphology and their anatomical location, being primarily distributed in the lower body column of the polyp and largely absent from the oral end of the animal (Bradshaw et al., 2015; Figure 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FISH data shown in Figure 1 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "5c0d3fbe-e7a0-48d8-b8c1-b93b37efaafa",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C25",
+      "claim": "All Soxb1+ cells also expressed Piwi1 and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all Soxb1+ cells also expressed Piwi1 and vice versa (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by double FISH data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "950bcf7f-a8a3-41ee-8e8d-0aa14b901cc1",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C26",
+      "claim": "Soxb1 is expressed in i-cells, that is, in stem cells that give rise to somatic cells (including neurons and nematocytes) and to germ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that Soxb1 is expressed in i-cells, that is, in stem cells that give rise to somatic cells (including neurons and nematocytes) and to germ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the FISH data showing co-expression of Soxb1 and Piwi1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "d6f39690-457e-4175-844e-eb772605e3f8",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C27",
+      "claim": "Soxb2 expression partially overlapped with Soxb1 in the mid-region of the polyp body column, being largely absent from the lower (aboral) area of the polyp that primarily included only Piwi1+/Soxb1+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Soxb2 expression partially overlapped with Soxb1 in the mid-region of the polyp body column, being largely absent from the lower (aboral) area of the polyp that primarily included only Piwi1+/Soxb1+ cells (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FISH data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "aabb4996-3470-4150-b7a0-c1e166fda3dd",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C28",
+      "claim": "Soxb3 was expressed in the middle and upper (i.e., oral) parts of the polyp and partly overlapped with Soxb2 in the mid-region.",
+      "claim_type": "EXPLICIT",
+      "source": "Soxb3 was expressed in the middle and upper (i.e., oral) parts of the polyp and partly overlapped with Soxb2 in the mid-region (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FISH data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "71a3bdc3-3260-459b-a14c-730137e8c511",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C29",
+      "claim": "The Soxb1 promoter-driven tdTomato was not only observed in stem/progenitor cells but was present in neural cells as well, based on the distinct morphology of these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the mRNA FISH data (Figure 1), the Soxb1 promoter-driven tdTomato was not only observed in stem/progenitor cells but was present in neural cells as well, based on the distinct morphology of these cells (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the Soxb1::tdTomato transgenic reporter shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "b2c78a8c-3768-4324-9b86-ef91453bfe35",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C30",
+      "claim": "In sexual polyps, tdTomato was also observed in maturing germ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In sexual polyps, tdTomato was also observed in maturing germ cells (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the Soxb1::tdTomato transgenic reporter shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c133841a-a1c4-4986-be8a-93d8f526c600",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C31",
+      "claim": "Soxb1+ cells differentiated into neural cells and gametes.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that Soxb1+ cells differentiated into neural cells and gametes as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of tdTomato in neural cells and gametes in the Soxb1 reporter.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "462521a6-6512-48a3-8ed8-318e570eea05",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C32",
+      "claim": "The Soxb2 promoter-driven GFP was visible in neurons and nematocytes but not in i-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Soxb2 promoter-driven GFP was visible in neurons and nematocytes but not in i-cells (Figures 2 and 3F\u2013I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the Soxb2::GFP transgenic reporter shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c2637b93-5784-43a0-bf9c-7827a651421b",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C33",
+      "claim": "Soxb2+ cells were more committed than i-cells (i.e., Soxb1+ cells).",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that Soxb2+ cells were more committed than i-cells (i.e., Soxb1+ cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that Soxb2 is not expressed in i-cells but in their progeny.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "2ae69875-55e7-410e-b99b-2500d1c7f22f",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C34",
+      "claim": "The spatial distribution of Soxb1+ and Soxb2+ cells was distinct from that of their respective progeny, consistent with migrating neural progenitors that differentiate during and following their migration away from the lower body column area where i-cells and their early progeny reside.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial distribution of Soxb1+ and Soxb2+ cells was distinct from that of their respective progeny, consistent with migrating neural progenitors that differentiate during and following their migration away from the lower body column area where i-cells and their early progeny reside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the spatial expression patterns observed in the transgenic reporters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "b29d46b4-c866-4a2b-a8f3-e4f1c314ba29",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C35",
+      "claim": "The Rfamide reporter was only visible in sensory and ganglionic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rfamide reporter was only visible in sensory and ganglionic neurons (Figure 3J\u2013L), consistent with the expression pattern of this gene in neurons but not in neural progenitors (Gahan et al., 2017; Kanska and Frank, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the Rfamide::GFP transgenic reporter shown in Figure 3 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c75c649b-0cf1-4afb-ac66-467b5b0a5fdf",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C36",
+      "claim": "tdTomato-positive (i.e., Soxb1+), GFP-low or negative (i.e., Soxb2-) cells transformed to double positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed tdTomato-positive (i.e., Soxb1+), GFP-low or negative (i.e., Soxb2-) cells transforming to double positive cells (Figure 4; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo time lapse imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "512b8df3-de5a-46cf-a073-b2242609ecbe",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C37",
+      "claim": "The mRNA expression data and live imaging of transgenic reporter animals are consistent with sequential expression of SoxB genes in the neural lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our mRNA expression data and the ones obtained previously (Flici et al., 2017) together with the results of our live imaging of transgenic reporter animals are consistent with sequential expression of SoxB genes in the neural lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple lines of evidence including FISH and live imaging.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "73e8c5d4-7932-4b61-94f8-bdbf2cee231d",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C38",
+      "claim": "Piwi1+ (i.e., Soxb1+ i-cells) represent approximately 1.4% of the live single-cell population of the Soxb2::GFP transgenic animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Piwi1+ (i.e., Soxb1+ i-cells) are known to represent a rare population, representing approximately 1.4% of the live single-cell population of the Soxb2::GFP transgenic animal (DuBuc et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "577ec7f0-dccd-4827-9634-a2adccb168b9",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C39",
+      "claim": "Soxb2+ cells (i.e., putative neural progenitors) were an equally rare population.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Soxb2+ cells (i.e., putative neural progenitors) were an equally rare population (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "6124f593-d33e-4891-a50c-53448c5c55d0",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C40",
+      "claim": "Rfamide+ neurons were distributed among two distinct populations that differed in levels of GFP expression, accounting for 1.6% and 1.8% of the live single cells, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Rfamide+ neurons were distributed among two distinct populations that differed in levels of GFP expression, accounting for 1.6% and 1.8% of the live single cells, respectively (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "d315e4a2-d3a3-4da8-8f41-726e86b4aee8",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C41",
+      "claim": "The brightest Piwi1::GFP cells were small with a high nuclear to cytoplasmic ratio, consistent with stem cell morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging flow cytometry of the Piwi1::GFP reporter animal (i.e., cells that also express Soxb1) revealed that the brightest cells were small with a high nuclear to cytoplasmic ratio, consistent with stem cell morphology (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging flow cytometry data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "8cdd4e86-36bc-40ac-a23f-92914abedcb8",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C42",
+      "claim": "The Piwi1+ cells were almost exclusively in S/G2/M phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometric cell cycle analysis (Figure 5G\u2013L) revealed that the Piwi1+ cells were almost exclusively in S/G2/M phase (Figure 5G), similar to what has been observed in i-cells from the freshwater polyp Hydra (Buzgariu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell cycle analysis data shown in Figure 5 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "b523ccde-2c2f-42fb-9004-fa17b658e32d",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C43",
+      "claim": "i-cell progeny, defined by low GFP fluorescence and constituting a highly heterogeneous population, were found in all stages of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "However, i-cell progeny, defined by low GFP fluorescence and constituting a highly heterogeneous population, were found in all stages of the cell cycle (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell cycle analysis data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "f9dba0b8-0830-4f42-aebf-510e16a3c18c",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C44",
+      "claim": "Soxb2+ cells that include putative neural progenitors had a cell cycle profile similar to i-cells, mostly found during the S/G2/M phases of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Soxb2+ cells that include putative neural progenitors (Flici et al., 2017) had a cell cycle profile similar to i-cells, mostly found during the S/G2/M phases of the cell cycle (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell cycle analysis data shown in Figure 5 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "5b335ec3-d303-4f6a-9adf-ba5057d7fa5c",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C45",
+      "claim": "Rfamidehigh and Rfamidelow neurons that are thought to be terminally differentiated were mostly in G0/G1, similar to what was observed in nematocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rfamidehigh and Rfamidelow neurons that are thought to be terminally differentiated were mostly in G0/G1, similar to what was observed in nematocytes (Figure 5I and K\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell cycle analysis data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "8def1217-0a96-4993-9e9a-0e68906c3d64",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C46",
+      "claim": "The two RFamide+ neuronal populations are probably different, as the RFamide neuropeptide is considered a marker for differentiated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The two RFamide+ neuronal populations are probably different, as the RFamide neuropeptide is considered a marker for differentiated neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of RFamide as a neuronal marker.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "17e9d1ac-02a9-4e60-8b15-249df1ae331c",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C47",
+      "claim": "Typical neuronal genes were expressed by RFamide+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, typical neuronal genes were expressed by these cells (Figure 5M; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transcriptomic data shown in Figure 5M and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "2598f55f-3199-4ba3-a4e2-e84003922b7a",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C48",
+      "claim": "The RFamide+ neurons fraction also expressed minicollagen genes that are markers of nematogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The RFamide+ neurons fraction also expressed minicollagen genes that are markers of nematogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on transcriptomic analysis of sorted RFamide+ cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "159df478-9ad7-42de-bacc-1991f1137516",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C49",
+      "claim": "Co-expression of minicollagens and precursors of neuropeptides has been reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of minicollagens and precursors of neuropeptides has been reported previously (Sunagar et al., 2018; Wolenski et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c6bd2305-42eb-4a38-8448-c7c5c3bdc4fc",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C50",
+      "claim": "A droplet microfluidic single-cell handling system (InDrop) was used to generate a single-cell transcriptome dataset based on 7071 cells from Hydractinia wild type feeding polyps.",
+      "claim_type": "EXPLICIT",
+      "source": "To provide further insight into the composition of the neural cells population, we used a droplet microfluidic single-cell handling system (InDrop) (Klein et al., 2015) to generate a single-cell transcriptome dataset based on 7071 cells from Hydractinia wild type feeding polyps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "12d8fb1f-5b13-439c-a404-d1757ba8af48",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C51",
+      "claim": "22 cell clusters were identified from the single-cell transcriptome dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed us to identify 22 cell clusters (Figure 5\u2014figure supplement 3A) and their associated upregulated marker genes (Figure 5\u2014figure supplement 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell transcriptomic analysis shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c7b24efd-ba27-46e2-9a5e-e683ba05d105",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C52",
+      "claim": "Putative i-cells, nematoblasts, gland cells, neurons, and a group of mixed progenitors were identified from the single-cell transcriptome dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were able to identify putative i-cells, nematoblasts, gland cells, neurons, and a group of mixed progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of the single-cell transcriptome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "a4ae93f8-a00a-4147-aebf-4018a18201ad",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C53",
+      "claim": "Both Soxb1 and Soxb2 are expressed in a subset of i-cells; presumably in transition to become Soxb2-positive progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that both soxB1 and soxB2 are expressed in a subset of i-cells; presumably in transition to become soxB2-positive progenitor cells (clusters 13 and 14 in A)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on single-cell transcriptomic analysis shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "438f48cb-9369-4b94-b8e5-62e99a3b3f26",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C54",
+      "claim": "Soxb3 is only expressed in few cells in cluster 18.",
+      "claim_type": "EXPLICIT",
+      "source": "while soxB3 is only expressed in few cells in cluster 18 (see A and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on single-cell transcriptomic analysis shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "f4dbb625-78f4-470b-ae2e-7efc96a4d7ec",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C55",
+      "claim": "Subpopulations of neural cells in H. symbiolongicarpus transition from a soxB2/RFamide low state (cluster 14) that express a G-protein coupled receptor for glutamate to a soxB2/RFamide high state (cluster 13), of which some eventually become soxB2-negative while still expressing high levels of RFamide (cluster 11).",
+      "claim_type": "EXPLICIT",
+      "source": "It also appears that subpopulations of neural cells in H. symbiolongicarpus transition from a soxB2/RFamide low state (cluster 14) that express a G-protein coupled receptor for glutamate (see E) to a soxB2/RFamide high state (cluster 13), of which some eventually become soxB2-negative while still expressing high levels of RFamide (cluster 11); presumably as terminally differentiated axonal neurons as determined by the markers Kaptin and Contactin2, which are important in synapse and axon formation, maintenance and function (see E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on single-cell transcriptomic analysis shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "6fddfe61-2e58-4f23-bc56-724fb2bc0b3f",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C56",
+      "claim": "Hydractinia can regenerate a decapitated head that includes a fully functional nervous system within 2\u20133 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydractinia can regenerate a decapitated head that includes a fully functional nervous system within 2\u20133 days (Bradshaw et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "748f0480-701f-4d5c-914e-a772272ee2d3",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C57",
+      "claim": "Intact animals showed a well-developed head nervous system but had neither S-phase cells nor i-cells in their heads.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analysed intact animals that showed a well-developed head nervous system but had neither S-phase cells nor i-cells in their heads (Figure 6A), as expected (Bradshaw et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "5896e4b7-bded-40a4-be57-6ead0c075e8a",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C58",
+      "claim": "At 12 hpd, there were many cycling cells in the stump area, few neurons (likely remnants of the amputated tissue), and few migrating Piwi2low cells that are probably i-cell progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "At 12 hpd, there were many cycling cells in the stump area, few neurons (likely remnants of the amputated tissue), and few migrating Piwi2low cells that are probably i-cell progeny (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "25728cf2-1ec0-4e5b-9754-001e998dd3e8",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C59",
+      "claim": "At 24 hpd, a clear proliferative blastema had been established at the oral most pole, with i-cells (Piwi2high) and their progeny being numerous in the area. However, only a few RFamide+ neurons were visible.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24 hpd, a clear proliferative blastema had been established at the oral most pole, with i-cells (Piwi2high) and their progeny being numerous in the area. However, only a few RFamide+ neurons were visible (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "101aa458-439a-4e5e-90d5-0b649eb88a5c",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C60",
+      "claim": "At 36 hpd, new neurons were visible in the regenerating head and proliferative i-cells and progeny were still present.",
+      "claim_type": "EXPLICIT",
+      "source": "At 36 hpd, new neurons were visible in the regenerating head and proliferative i-cells and progeny were still present (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "9cb735fa-37a3-438d-aa98-6e33e0c4cc3d",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C61",
+      "claim": "At 48 hpd, a nearly complete head nervous system had been established and the regenerating head contained lower numbers of i-cells and progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, at 48 hpd, a nearly complete head nervous system had been established and the regenerating head contained lower numbers of i-cells and progeny (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "1253bcf3-e63f-4b06-b079-19774af9f27d",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C62",
+      "claim": "Piwi2low cells, which are presumably i-cell progeny, were the first to migrate to the injury area, followed later on by Piwi2high cells, which are probably stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, Piwi2low cells, which are presumably i-cell progeny, were the first to migrate to the injury area, followed later on by Piwi2high cells, which are probably stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the temporal dynamics of cell populations during regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "6735f9e0-c94c-4320-9b67-e511c017c4c0",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C63",
+      "claim": "This is similar to what has been observed in planarian head regeneration, where neoblast progeny arrive in the injury area before neoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "This is similar to what has been observed in planarian head regeneration, where neoblast progeny arrive in the injury area before neoblasts (Abnave et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research on planarian regeneration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "927f6af7-da33-405d-b6ef-6843fdbb9a6e",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C64",
+      "claim": "None of the existing neurons incorporated EdU during regeneration, consistent with neurons being terminally differentiated.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, none of the existing neurons incorporated EdU during regeneration, consistent with neurons being terminally differentiated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on EdU incorporation data during regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "2b735ce3-2f17-4c51-b81a-9c7c7c0c14e6",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C65",
+      "claim": "In all cases, the neurons remained stationary and did not proliferate during the observation period while a new head nervous system regenerated.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the neurons remained stationary and did not proliferate during the observation period while a new head nervous system regenerated (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo time lapse imaging data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "927a422d-2ac5-4fc8-954d-88dab4b83959",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C66",
+      "claim": "Similar to Hydra, head nervous system regeneration in Hydractinia involves de novo neurogenesis rather than proliferation or migration of existing neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, similar to Hydra (Miljkovic-Licina et al., 2007), head nervous system regeneration in Hydractinia involves de novo neurogenesis rather than proliferation or migration of existing neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the regeneration data and comparison to Hydra.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "44b0b21a-1133-477c-9fa3-b2a314181b41",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C67",
+      "claim": "Soxb1 knockdown affected many aspects of larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "Soxb1 knockdown affected many aspects of larval development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the effects of Soxb1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "6c50b968-fd2a-4383-9e5a-519f1486e503",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C68",
+      "claim": "Animals with Soxb1 knockdown were on average smaller and underdeveloped.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the animals were on average smaller and underdeveloped (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "efe35fa5-b6c7-41db-a6af-0fea2c3bafd5",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C69",
+      "claim": "Animals with Soxb1 knockdown had fewer Piwi1+ i-cells and numbers of neurons and nematoblasts was lower than normal. RFamide neuron numbers were low or absent altogether.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, these animals had fewer Piwi1+ i-cells and numbers of neurons and nematoblasts was lower than normal. RFamide neuron numbers were low or absent altogether (Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "4064b2c6-2891-4293-82c2-293c92a3f0c9",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C70",
+      "claim": "Larvae with Soxb1 knockdown had defects in ciliation.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, these larvae had defects in ciliation (Figure 7, Figure 7\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7 and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "2eca1786-eff9-45b9-82bb-1e6729678942",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C71",
+      "claim": "As a result of ciliation defects, the movement of larvae with Soxb1 knockdown was restricted.",
+      "claim_type": "EXPLICIT",
+      "source": "and, as a result, their movement was restricted (larvae swim by coordinated cilia beat).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed ciliation defects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "82bbef12-9881-4a81-a825-524ccdeb8780",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C72",
+      "claim": "Larvae with Soxb1 knockdown had lost their ability to metamorphose upon CsCl treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the larvae had lost their ability to metamorphose upon CsCl treatment (Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "155a02a5-6ee6-4d1f-b47d-92e83f7fc455",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C73",
+      "claim": "The loss of metamorphosis ability in Soxb1 knockdown larvae is probably the result of a loss of neurons expressing GLWamide, the internal regulator of metamorphosis in Hydractinia.",
+      "claim_type": "EXPLICIT",
+      "source": "with the latter probably being the result of a loss of neurons expressing GLWamide, the internal regulator of metamorphosis in Hydractinia (Gajewski et al., 1996; M\u00fcller and Leitz, 2002; Schmich et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known role of GLWamide in metamorphosis and citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "02b930ce-3d36-408f-9e8c-11936856422e",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C74",
+      "claim": "The number of S-phase cells was upregulated in Soxb1 knockdown larvae compared with the control and proliferative cells were also detectable in the epidermis; normally, S-phase cells are restricted to the gastrodermis in larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of S-phase cells was upregulated compared with the control and proliferative cells were also detectable in the epidermis; normally, S-phase cells are restricted to the gastrodermis in larvae (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "2a127fd6-9ed5-437c-a96a-c7132874a1c8",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C75",
+      "claim": "Loss of Soxb1 may have resulted i-cells exiting the stem cell program, as observed by Piwi1 staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Soxb1 may have resulted i-cells exiting the stem cell program, as observed by Piwi1 staining (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observed reduction in Piwi1+ cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "d6ccb550-7471-41c3-96d9-a8069bcedc36",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C76",
+      "claim": "The increased number of S-phase cells in Soxb1 knockdown could reflect a compensatory response to loss of i-cells or be a response of i-cells to loss of stemness.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased number of S-phase cells could reflect a compensatory response to loss of i-cells or be a response of i-cells to loss of stemness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed increase in S-phase cells.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "22e1c088-f51a-4bd1-bc23-c239bf0a880d",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C77",
+      "claim": "Downregulation of Soxb2 had no visible effect on i-cells or on GLWamide+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of Soxb2 had no visible effect on i-cells or on GLWamide+ neurons (Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "de90fd9a-6124-46f5-bf36-f261f085f26a",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C78",
+      "claim": "RFamide+ neurons were nearly absent in Soxb2 knockdown embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "but RFamide+ neurons were nearly absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "b41b09ec-f9af-4c14-9c01-d3e6ba3d2f3b",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C79",
+      "claim": "Nematoblast numbers had increased in Soxb2 knockdown embryos and no significant difference was observed on cycling cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nematoblast numbers had increased and no significant difference was observed on cycling cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c9388725-e903-4528-b018-12cf7926108b",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C80",
+      "claim": "The phenotypes of Soxb2 knockdown in embryos are markedly distinct from what is seen after downregulation of Soxb2 in adult neurogenesis, where the numbers of neurons, nematocytes, and cycling cells are noticeably reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "These phenotypes are markedly distinct from what is seen after downregulation of Soxb2 in adult neurogenesis, where the numbers of neurons, nematocytes, and cycling cells are noticeably reduced (Flici et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between embryonic and adult phenotypes with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "7b03d8e9-d426-467a-aa9b-ee20b3335f0d",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C81",
+      "claim": "The preferential differentiation of neural progenitors to GLWamide+ neurons over RFamide+ neurons in Soxb2 knockdown could be explained by progenitors being limiting, given the essential role of GLWamide+ neurons in metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained by preferential differentiation of neural progenitors to GLWamide+ neurons over RFamide+ neurons if progenitors are limiting, given the essential role of the latter in metamorphosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "ea30d0de-ba61-4163-bace-6b9151b0fcab",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C82",
+      "claim": "Alternatively, the SoxB2 protein might be maternally loaded or dispensable for embryonic GLWamide+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the SoxB2 protein might be maternally loaded or dispensable for embryonic GLWamide+ neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "ec5df93d-7d7e-49f9-9274-cda60fb37f15",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C83",
+      "claim": "The increase in nematoblast numbers following Soxb2 downregulation could indicate a nematogenesis-inhibiting role for this gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in nematoblast numbers following Soxb2 downregulation could indicate a nematogenesis-inhibiting role for this gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed increase in nematoblasts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "179161b7-f87e-4fa9-994a-eaa9a528cac5",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C84",
+      "claim": "Downregulation of Soxb3 had no major effect on the animals, in contrast to the role of this gene in adult neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, downregulation of Soxb3 had no major effect on the animals, in contrast to the role of this gene in adult neurogenesis (Flici et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 7 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "a370a38d-090f-410d-bb8d-328296a718a8",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C85",
+      "claim": "The data suggest an essential and complex role of Soxb2 for embryonic neurogenesis, but also highlight major differences between embryonic and adult neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The above data suggest an essential and complex role of Soxb2 for embryonic neurogenesis, but also highlight major differences between embryonic and adult neurogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "4cc048f9-0369-479e-bb32-548590be2d5f",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C86",
+      "claim": "The requirement for more than one SoxB gene to generate neurons in animals as distantly related as Hydractinia, Drosophila, and mice suggest that more than one SoxB gene had already been present before the cnidarian-bilaterian split to generate neurons in their last common ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the requirement for more than one SoxB gene to generate neurons in animals as distantly related as Hydractinia, Drosophila, and mice suggest that more than one SoxB gene had already been present before the cnidarian-bilaterian split to generate neurons in their last common ancestor",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an evolutionary inference based on comparative data across taxa.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "1006fc79-55e4-4e47-a2ef-af97c2a5707c",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C88",
+      "claim": "Soxb1 is an i-cell marker and probably fulfills a role in stemness.",
+      "claim_type": "EXPLICIT",
+      "source": "Soxb1 is an i-cell marker and probably fulfills a role in stemness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the expression and knockdown data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "bf73a86d-f5cf-442d-b022-9a29f9411464",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C89",
+      "claim": "Soxb1 downregulation resulted in loss of i-cells and impacted other aspects of development including the ability to metamorphose.",
+      "claim_type": "EXPLICIT",
+      "source": "Its downregulation resulted in loss of i-cells and impacted other aspects of development including the ability to metamorphose, which was expected given that i-cells provide progenitors to multiple lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the Soxb1 knockdown phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "bb1f22bf-b59a-42a9-a3ab-ca5359e7984b",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C90",
+      "claim": "The function of Soxb1 is similar to the role of vertebrate Sox2.",
+      "claim_type": "EXPLICIT",
+      "source": "This function of Soxb1 is similar to the role of vertebrate Sox2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison drawn between Hydractinia Soxb1 and vertebrate Sox2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "e6e53ab4-867c-4afe-90ec-d32beecd3dfa",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C91",
+      "claim": "There is no direct evidence so far to support a similar function of Soxb1 in neural stem cells as vertebrate Sox2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, vertebrate Sox2 also acts in neural stem cells while in Hydractinia, there is no direct evidence so far to support a similar function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the lack of evidence for a specific function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "40aa1274-f3ea-4d6b-ad13-6b16380cd3da",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C92",
+      "claim": "A population of long-term, self-renewing neural progenitors has yet to be identified in cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a population of long-term, self-renewing neural progenitors has yet to be identified in cnidarians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "eb5de415-5db7-4c8a-a035-39b0f9b4f04d",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C93",
+      "claim": "Results from Hydractinia, along with data obtained from other cnidarians, are consistent with continuous generation of neurons from multi- or pluripotent cells that also contribute to non-neural lineages, without the existence of a long-term, self-renewing neural stem cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results from Hydractinia, along with data obtained from other cnidarians (reviewed by Rentzsch et al., 2017), are also consistent with continuous generation of neurons from multi- or pluripotent cells that also contribute to non-neural lineages, without the existence of a long-term, self-renewing neural stem cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data and comparison to other cnidarians with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "49cd14bf-e301-4d7f-936e-486aa92ed503",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C94",
+      "claim": "Soxb2 was expressed in a population of cells with uncommitted morphology that differentiated to neural cells, based on GFP retention in neurons and nematocytes in the Soxb2 reporter animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Soxb2 was expressed in a population of cells with uncommitted morphology that differentiated to neural cells, based on GFP retention in neurons and nematocytes in the Soxb2 reporter animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Soxb2 reporter data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "f753caaf-9eca-4257-9212-96ff9396a37b",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C95",
+      "claim": "In vivo analysis of Soxb1/Soxb2 double transgenic reporter animals has shown that Soxb1+ cells transform into Soxb2+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vivo analysis of Soxb1/Soxb2 double transgenic reporter animals has shown that Soxb1+ cells transform into Soxb2+ cells (Figure 4 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo time lapse imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "a1995bd7-4f2f-4a77-8269-c42eb2ba01f0",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C96",
+      "claim": "Downregulation of Soxb2 resulted in neural-specific defects in embryos, consistent with this gene being expressed preferentially in the neural lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of Soxb2 resulted in neural-specific defects in embryos, consistent with this gene being expressed preferentially in the neural lineage (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the Soxb2 knockdown data and expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "d327656d-6c02-44aa-a0a6-c86693f7d684",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C97",
+      "claim": "The neural transcriptional fingerprint and single-cell transcriptomic profiles of Soxb2+ cells support that Soxb2 is expressed preferentially in the neural lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is also supported by the neural transcriptional fingerprint (Figure 5M; Supplementary file 2) and single-cell transcriptomic profiles of Soxb2+ cells (Figure 5\u2014figure supplement 3C-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transcriptomic data shown in Figure 5M, Supplementary file 2, and Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "828ce899-a688-4446-b85a-774b96407703",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C98",
+      "claim": "Deviation from normal development following Soxb2 perturbation was not a simple reduction in all neural cells, as seen in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, deviation from normal development following Soxb2 perturbation was not a simple reduction in all neural cells, as seen in adults (Flici et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between embryonic and adult phenotypes with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "5fd24878-bcb6-413d-94ec-17211efcd751",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C99",
+      "claim": "Soxb2 downregulation caused a loss of RFamide+ neurons but not of GLWamide+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, Soxb2 downregulation caused a loss of RFamide+ neurons but not of GLWamide+ neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c81b5110-886f-4dbe-b16f-2a7b57bda225",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C100",
+      "claim": "It is possible that the animals preferentially generate GLWamide+ neurons when progenitors are limited because GLWamide+ neurons are essential for metamorphosis of Hydractinia larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Because GLWamide+ neurons are essential for metamorphosis of Hydractinia larvae (Plickert et al., 2003), it is possible that the animals preferentially generate this type of neuron when progenitors are limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed phenotype with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "eed1523d-5113-4b6d-bc2d-f8da63810ff5",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C101",
+      "claim": "Nematoblast numbers increased upon Soxb2 downregulation, suggesting that Soxb2 normally inhibits nematogenesis in embryos, in contrast to its function in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, nematoblast numbers increased upon Soxb2 downregulation, suggesting that Soxb2 normally inhibits nematogenesis in embryos, in contrast to its function in adults (Flici et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed increase in nematoblasts with a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "20e51220-c346-4a65-89ff-f4c78d69aa6d",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C102",
+      "claim": "Despite being expressed in embryos and larvae, no visible phenotype was observed following Soxb3 downregulation, other than the effect of its downregulation in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being expressed in embryos and larvae (Flici et al., 2017), no visible phenotype was observed following Soxb3 downregulation, other than the effect of its downregulation in adults (Flici et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 7 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "6b64abf6-1b51-4d5a-87cd-ca944b9e32b8",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C103",
+      "claim": "Soxb3 may not play a distinct role in embryonic neurogenesis, or that the effect of its downregulation in embryos is too subtle to be observed by our methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Soxb3 may not play a distinct role in embryonic neurogenesis, or that the effect of its downregulation in embryos is too subtle to be observed by our methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the lack of observed phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "316b8d7d-414f-44b0-9b11-df525184e7f1",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C104",
+      "claim": "i-Cells are concentrated in the lower body column.",
+      "claim_type": "EXPLICIT",
+      "source": "i-Cells are concentrated in the lower body column (Bradshaw et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "6f5ce64f-33f8-469c-999c-8bb61564bf4c",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C105",
+      "claim": "Neural progenitors are scattered in the mid-body column.",
+      "claim_type": "EXPLICIT",
+      "source": "neural progenitors are scattered in the mid-body column",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive claim based on the expression patterns observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "2b4f868d-cd74-477f-a2b3-5879658e2395",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C106",
+      "claim": "Most neurons and nematocytes are found in the head.",
+      "claim_type": "EXPLICIT",
+      "source": "while most neurons and nematocytes are found in the head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive claim based on the distribution of differentiated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "bb7dee8f-7d56-4820-bae1-a2f1632d63e3",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C107",
+      "claim": "Neural cells differentiate while migrating from the base of the polyp toward the head, reflected by the partly overlapping expression domains of SoxB genes that mark the stages of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that neural cells differentiate while migrating from the base of the polyp toward the head, reflected by the partly overlapping expression domains of SoxB genes that mark the stages of differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the spatial expression patterns of SoxB genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "5ae6e79a-5462-4dc8-bd28-1dc59f6548f7",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C108",
+      "claim": "A major question emanating from this work is whether migration is required for neurogenesis cell autonomously, or whether migrating stem cells become exposed to different microenvironments along the oral-aboral axis that drive their differentiation non-cell autonomously.",
+      "claim_type": "EXPLICIT",
+      "source": "A major question emanating from this work is whether migration is required for neurogenesis cell autonomously, or whether migrating stem cells become exposed to different microenvironments along the oral-aboral axis that drive their differentiation non-cell autonomously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of an open question arising from the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "cc4607e7-4d05-4718-8144-30d7992d62b5",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C109",
+      "claim": "The requirement for multiple SoxB genes and migration seem to be common hallmarks of neurogenesis in all studied animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the requirement for multiple SoxB genes and migration seem to be common hallmarks of neurogenesis in all studied animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on comparative analysis across taxa.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "172dca5b-01a5-4a65-9463-c9f36beae5f0",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "claim_id": "C110",
+      "claim": "Hydractinia's continuous, predictable, and accessible neurogenesis across all life stages provides an excellent model to address questions about the evolution and mechanisms of neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydractinia's continuous, predictable, and accessible neurogenesis across all life stages provides an excellent model to address these questions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of Hydractinia as a model system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "76c65963-45a2-4921-9850-69ebe30d550d",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Soxb1 is expressed in i-cells (stem cells) in Hydractinia. FISH analysis showed Soxb1 expression in cells morphologically resembling i-cells in both sexual and feeding polyps, with distribution primarily in the lower body column. Double FISH confirmed complete co-expression of Soxb1 with the i-cell marker Piwi1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are well-supported by FISH data (Figure 1) showing Soxb1 expression patterns and complete co-localization with Piwi1, a validated i-cell marker. The morphological and spatial distribution data converge to support the conclusion that Soxb1 marks i-cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "2b864702-32c0-4175-8e7a-b47e089025bb",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SoxB genes show spatially overlapping but distinct expression patterns consistent with sequential expression during neural differentiation. Soxb2 partially overlaps with Soxb1 in the mid-body column, while Soxb3 is expressed more orally and overlaps with Soxb2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by FISH data (Figure 2) showing spatial expression domains. C37 integrates these observations with live imaging data to conclude sequential expression, which is well-supported by multiple converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "75fca932-d2e8-4c45-b18f-dc455727cc6d",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Transgenic reporter analysis reveals that Soxb1+ cells differentiate into neural cells and gametes, while Soxb2+ cells represent a more committed progenitor state. The Soxb1::tdTomato reporter showed fluorescence in both stem cells and differentiated neural cells, while Soxb2::GFP was visible in neurons and nematocytes but not i-cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 are supported by transgenic reporter data (Figure 3). The long half-life of fluorescent proteins allows lineage tracing, and the observed patterns are consistent with differentiation from Soxb1+ to Soxb2+ cells. The spatial distributions support the migration and differentiation model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "51b7e493-f8a4-4396-82dd-1ee6dd4c01e9",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Live imaging of double transgenic animals directly demonstrates that Soxb1+ cells transform into Soxb2+ cells. Time-lapse confocal microscopy showed tdTomato-positive (Soxb1+), GFP-low/negative (Soxb2-) cells becoming double positive over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36 and C95 are strongly supported by in vivo time-lapse imaging data (Figure 4, Figure 4\u2014figure supplement 1). This provides direct evidence of cellular transitions from Soxb1 to Soxb2 expression, supporting the sequential expression model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "e7b0fe92-16d5-47fb-9534-a9c6fb8aa759",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Flow cytometry analysis reveals that i-cells (Piwi1+/Soxb1+), neural progenitors (Soxb2+), and RFamide+ neurons are rare cell populations, each representing approximately 1-2% of live single cells. Imaging flow cytometry confirmed that Piwi1+ cells have stem cell morphology with high nuclear-to-cytoplasmic ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by flow cytometry and imaging flow cytometry data (Figure 5). The quantification is consistent with known i-cell frequencies (C38 cites prior work), and the morphological characterization supports the stem cell identity of these populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "8f1b84d1-5d2e-4c58-9614-e57ecc7cb6e8",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell cycle analysis shows distinct profiles for different cell populations: Piwi1+ i-cells and Soxb2+ neural progenitors are predominantly in S/G2/M phases, while differentiated neurons and nematocytes are mostly in G0/G1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by flow cytometric cell cycle analysis (Figure 5G-L). The data are consistent with proliferative stem/progenitor cells being in active cell cycle phases and differentiated cells being quiescent. The comparison to Hydra i-cells (C42) provides additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "8b84dbc3-5763-46b7-94c7-67de47ba2fe5",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Transcriptomic analysis of FACS-sorted RFamide+ neurons shows expression of typical neuronal genes and minicollagen genes (nematogenesis markers). Co-expression of minicollagens and neuropeptide precursors has been previously reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by transcriptomic data (Figure 5M, Supplementary file 2) and citations to prior work. The co-expression pattern is consistent with the known relationship between neurons and nematocytes in cnidarians.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "399bbb2b-297f-461b-91e4-0c77b058ac1e",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Single-cell RNA-seq analysis identified 22 cell clusters including i-cells, neural progenitors, and neurons. Both Soxb1 and Soxb2 are expressed in a subset of i-cells presumably transitioning to Soxb2+ progenitors, while Soxb3 is expressed in few cells. Neural cells appear to transition from Soxb2/RFamide-low to Soxb2/RFamide-high states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are supported by InDrop single-cell transcriptomic analysis (Figure 5\u2014figure supplement 3). The data provide independent validation of the sequential SoxB expression model and identify specific cell clusters corresponding to different differentiation states. However, the authors note this may underestimate cellular complexity compared to other cnidarians.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "67775db0-415f-41bf-b856-c2c4dd83eaea",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Head regeneration in Hydractinia involves de novo neurogenesis from i-cells rather than proliferation or migration of existing neurons. Time-course analysis shows sequential migration of i-cell progeny (Piwi2-low) followed by i-cells (Piwi2-high) to the injury site, with new neurons appearing by 36 hpd. Existing neurons remain stationary and do not proliferate during regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C66 are well-supported by regeneration time-course data (Figure 6) and live imaging (Figure 6\u2014figure supplement 2). The EdU incorporation data (C64) and time-lapse imaging (C65) provide strong evidence that existing neurons do not contribute to regeneration. The comparison to Hydra and planarians (C63, C66) provides evolutionary context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "e3795817-91e5-4cf5-8f94-9074e7d58bec",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Soxb1 knockdown causes severe developmental defects including reduced size, loss of i-cells, reduced neurons and nematoblasts, ciliation defects, restricted movement, and loss of metamorphosis ability. Paradoxically, S-phase cells were increased and found in ectopic locations (epidermis).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C76 are supported by shRNA knockdown data (Figure 7, Figure 7\u2014figure supplements). The phenotypes are consistent with loss of stem cell function. However, C76 is speculative about the mechanism of increased S-phase cells. The knockdown specificity was validated by FISH (Figure 7\u2014figure supplement 1A).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "e2894111-39b8-4abe-af8b-a747d78502d6",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Soxb2 knockdown in embryos shows complex, cell-type-specific effects: no effect on i-cells or GLWamide+ neurons, near-complete loss of RFamide+ neurons, increased nematoblasts, and no change in cycling cells. These phenotypes differ markedly from adult Soxb2 knockdown effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 are supported by knockdown data (Figure 7) and comparison to published adult phenotypes. However, C81-C83 are speculative interpretations. The differential effects on GLWamide+ vs RFamide+ neurons suggest complex regulatory roles, but the mechanisms remain unclear. The increase in nematoblasts (C79, C83) suggests a nematogenesis-inhibiting role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "4abfef11-3f3e-4736-bb63-70778ab721c4",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Soxb3 knockdown showed no major phenotype in embryos, contrasting with its essential role in adult neurogenesis. This may indicate no distinct embryonic role or effects too subtle to detect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84, C102-C103 are supported by knockdown data (Figure 7) and comparison to published adult phenotypes. The lack of phenotype is clearly documented, though C103 appropriately notes alternative explanations. This represents a genuine difference between embryonic and adult neurogenesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "c206a667-789b-49ae-813c-5878a7b073de",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The requirement for multiple SoxB genes in neurogenesis across distantly related animals (Hydractinia, Drosophila, mice) suggests that multiple SoxB genes were present before the cnidarian-bilaterian split in their last common ancestor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is an evolutionary inference based on comparative data. While the requirement for multiple SoxB genes is documented in Hydractinia (current work) and cited for other taxa, the inference about ancestral state requires additional phylogenetic analysis. The claim is reasonable but not definitively proven by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "05635dce-4f73-416b-9df8-add16d8aaf25",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Soxb1 functions as an i-cell marker and likely maintains stemness, similar to vertebrate Sox2. However, there is no direct evidence for Soxb1 function in neural stem cells specifically, and long-term self-renewing neural progenitors have not been identified in cnidarians. The data are consistent with continuous neurogenesis from multipotent i-cells without dedicated neural stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C93 integrate expression data (C23-C26), knockdown data (C67-C76), and comparison to vertebrates. C88-C89 are well-supported. C90 is a reasonable comparison but C91 appropriately notes the lack of evidence for neural-specific stem cell function. C92-C93 accurately describe the current state of knowledge and are supported by the data and comparison to other cnidarians.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "304300d9-68f9-4e69-b288-c9892c3b2e1e",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Soxb2 is expressed in neural progenitors and is required for embryonic neurogenesis, but shows complex cell-type-specific effects. Knockdown causes loss of RFamide+ neurons but not GLWamide+ neurons, and increases nematoblasts. The neural-specific expression is supported by transcriptomic data. These embryonic phenotypes differ from adult phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94, C96-C99 are well-supported by reporter data (Figure 3), knockdown data (Figure 7), and transcriptomics (Figure 5M, Supplementary file 2). However, C100 is speculative about preferential differentiation, and C101 infers a nematogenesis-inhibiting role from increased nematoblasts. The comparison to adult phenotypes (C98, C101) is valid but the mechanistic explanations remain uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "98086748-fb1c-4bcc-aed6-9f4ad62d94ce",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The spatial distribution of cell types suggests that neural cells differentiate while migrating from the lower body column (i-cells) through the mid-body (progenitors) to the head (differentiated neurons). However, whether migration is cell-autonomously required or driven by microenvironmental cues remains an open question.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C107 are supported by the spatial expression data (Figures 1-3) and citations. The inference about migration-coupled differentiation (C107) is reasonable based on the overlapping expression domains. C108 appropriately identifies this as an unresolved question requiring future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    },
+    {
+      "id": "ecfa692e-7198-4e5b-b7b3-58ca99436b76",
+      "content_id": "3c0bcb8b-33dc-450f-a06a-b206e1b35308",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Multiple SoxB genes and migration appear to be common features of neurogenesis across animals. Hydractinia provides an excellent model system for studying neurogenesis evolution and mechanisms due to its continuous, predictable, and accessible neurogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C109 is a general comparative statement supported by the current work and literature. C110 is a reasonable assessment of Hydractinia's utility as a model system based on the features demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:35.973213Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "61923ba6-d69e-4e62-8ab7-636597273e61",
+      "result_id": "76c65963-45a2-4921-9850-69ebe30d550d"
+    },
+    {
+      "claim_id": "dafe76c5-2a39-4bc8-83c5-e6edba24ec20",
+      "result_id": "76c65963-45a2-4921-9850-69ebe30d550d"
+    },
+    {
+      "claim_id": "5c0d3fbe-e7a0-48d8-b8c1-b93b37efaafa",
+      "result_id": "76c65963-45a2-4921-9850-69ebe30d550d"
+    },
+    {
+      "claim_id": "950bcf7f-a8a3-41ee-8e8d-0aa14b901cc1",
+      "result_id": "76c65963-45a2-4921-9850-69ebe30d550d"
+    },
+    {
+      "claim_id": "d6f39690-457e-4175-844e-eb772605e3f8",
+      "result_id": "2b864702-32c0-4175-8e7a-b47e089025bb"
+    },
+    {
+      "claim_id": "aabb4996-3470-4150-b7a0-c1e166fda3dd",
+      "result_id": "2b864702-32c0-4175-8e7a-b47e089025bb"
+    },
+    {
+      "claim_id": "512b8df3-de5a-46cf-a073-b2242609ecbe",
+      "result_id": "2b864702-32c0-4175-8e7a-b47e089025bb"
+    },
+    {
+      "claim_id": "71a3bdc3-3260-459b-a14c-730137e8c511",
+      "result_id": "75fca932-d2e8-4c45-b18f-dc455727cc6d"
+    },
+    {
+      "claim_id": "b2c78a8c-3768-4324-9b86-ef91453bfe35",
+      "result_id": "75fca932-d2e8-4c45-b18f-dc455727cc6d"
+    },
+    {
+      "claim_id": "c133841a-a1c4-4986-be8a-93d8f526c600",
+      "result_id": "75fca932-d2e8-4c45-b18f-dc455727cc6d"
+    },
+    {
+      "claim_id": "462521a6-6512-48a3-8ed8-318e570eea05",
+      "result_id": "75fca932-d2e8-4c45-b18f-dc455727cc6d"
+    },
+    {
+      "claim_id": "c2637b93-5784-43a0-bf9c-7827a651421b",
+      "result_id": "75fca932-d2e8-4c45-b18f-dc455727cc6d"
+    },
+    {
+      "claim_id": "2ae69875-55e7-410e-b99b-2500d1c7f22f",
+      "result_id": "75fca932-d2e8-4c45-b18f-dc455727cc6d"
+    },
+    {
+      "claim_id": "c75c649b-0cf1-4afb-ac66-467b5b0a5fdf",
+      "result_id": "51b7e493-f8a4-4396-82dd-1ee6dd4c01e9"
+    },
+    {
+      "claim_id": "f753caaf-9eca-4257-9212-96ff9396a37b",
+      "result_id": "51b7e493-f8a4-4396-82dd-1ee6dd4c01e9"
+    },
+    {
+      "claim_id": "73e8c5d4-7932-4b61-94f8-bdbf2cee231d",
+      "result_id": "e7b0fe92-16d5-47fb-9534-a9c6fb8aa759"
+    },
+    {
+      "claim_id": "577ec7f0-dccd-4827-9634-a2adccb168b9",
+      "result_id": "e7b0fe92-16d5-47fb-9534-a9c6fb8aa759"
+    },
+    {
+      "claim_id": "6124f593-d33e-4891-a50c-53448c5c55d0",
+      "result_id": "e7b0fe92-16d5-47fb-9534-a9c6fb8aa759"
+    },
+    {
+      "claim_id": "d315e4a2-d3a3-4da8-8f41-726e86b4aee8",
+      "result_id": "e7b0fe92-16d5-47fb-9534-a9c6fb8aa759"
+    },
+    {
+      "claim_id": "8cdd4e86-36bc-40ac-a23f-92914abedcb8",
+      "result_id": "8f1b84d1-5d2e-4c58-9614-e57ecc7cb6e8"
+    },
+    {
+      "claim_id": "b523ccde-2c2f-42fb-9004-fa17b658e32d",
+      "result_id": "8f1b84d1-5d2e-4c58-9614-e57ecc7cb6e8"
+    },
+    {
+      "claim_id": "f9dba0b8-0830-4f42-aebf-510e16a3c18c",
+      "result_id": "8f1b84d1-5d2e-4c58-9614-e57ecc7cb6e8"
+    },
+    {
+      "claim_id": "5b335ec3-d303-4f6a-9adf-ba5057d7fa5c",
+      "result_id": "8f1b84d1-5d2e-4c58-9614-e57ecc7cb6e8"
+    },
+    {
+      "claim_id": "17e9d1ac-02a9-4e60-8b15-249df1ae331c",
+      "result_id": "8b84dbc3-5763-46b7-94c7-67de47ba2fe5"
+    },
+    {
+      "claim_id": "2598f55f-3199-4ba3-a4e2-e84003922b7a",
+      "result_id": "8b84dbc3-5763-46b7-94c7-67de47ba2fe5"
+    },
+    {
+      "claim_id": "159df478-9ad7-42de-bacc-1991f1137516",
+      "result_id": "8b84dbc3-5763-46b7-94c7-67de47ba2fe5"
+    },
+    {
+      "claim_id": "c6bd2305-42eb-4a38-8448-c7c5c3bdc4fc",
+      "result_id": "399bbb2b-297f-461b-91e4-0c77b058ac1e"
+    },
+    {
+      "claim_id": "12d8fb1f-5b13-439c-a404-d1757ba8af48",
+      "result_id": "399bbb2b-297f-461b-91e4-0c77b058ac1e"
+    },
+    {
+      "claim_id": "c7b24efd-ba27-46e2-9a5e-e683ba05d105",
+      "result_id": "399bbb2b-297f-461b-91e4-0c77b058ac1e"
+    },
+    {
+      "claim_id": "a4ae93f8-a00a-4147-aebf-4018a18201ad",
+      "result_id": "399bbb2b-297f-461b-91e4-0c77b058ac1e"
+    },
+    {
+      "claim_id": "438f48cb-9369-4b94-b8e5-62e99a3b3f26",
+      "result_id": "399bbb2b-297f-461b-91e4-0c77b058ac1e"
+    },
+    {
+      "claim_id": "f4dbb625-78f4-470b-ae2e-7efc96a4d7ec",
+      "result_id": "399bbb2b-297f-461b-91e4-0c77b058ac1e"
+    },
+    {
+      "claim_id": "6fddfe61-2e58-4f23-bc56-724fb2bc0b3f",
+      "result_id": "67775db0-415f-41bf-b856-c2c4dd83eaea"
+    },
+    {
+      "claim_id": "748f0480-701f-4d5c-914e-a772272ee2d3",
+      "result_id": "67775db0-415f-41bf-b856-c2c4dd83eaea"
+    },
+    {
+      "claim_id": "5896e4b7-bded-40a4-be57-6ead0c075e8a",
+      "result_id": "67775db0-415f-41bf-b856-c2c4dd83eaea"
+    },
+    {
+      "claim_id": "25728cf2-1ec0-4e5b-9754-001e998dd3e8",
+      "result_id": "67775db0-415f-41bf-b856-c2c4dd83eaea"
+    },
+    {
+      "claim_id": "101aa458-439a-4e5e-90d5-0b649eb88a5c",
+      "result_id": "67775db0-415f-41bf-b856-c2c4dd83eaea"
+    },
+    {
+      "claim_id": "9cb735fa-37a3-438d-aa98-6e33e0c4cc3d",
+      "result_id": "67775db0-415f-41bf-b856-c2c4dd83eaea"
+    },
+    {
+      "claim_id": "1253bcf3-e63f-4b06-b079-19774af9f27d",
+      "result_id": "67775db0-415f-41bf-b856-c2c4dd83eaea"
+    },
+    {
+      "claim_id": "927f6af7-da33-405d-b6ef-6843fdbb9a6e",
+      "result_id": "67775db0-415f-41bf-b856-c2c4dd83eaea"
+    },
+    {
+      "claim_id": "2b735ce3-2f17-4c51-b81a-9c7c7c0c14e6",
+      "result_id": "67775db0-415f-41bf-b856-c2c4dd83eaea"
+    },
+    {
+      "claim_id": "927a422d-2ac5-4fc8-954d-88dab4b83959",
+      "result_id": "67775db0-415f-41bf-b856-c2c4dd83eaea"
+    },
+    {
+      "claim_id": "44b0b21a-1133-477c-9fa3-b2a314181b41",
+      "result_id": "e3795817-91e5-4cf5-8f94-9074e7d58bec"
+    },
+    {
+      "claim_id": "6c50b968-fd2a-4383-9e5a-519f1486e503",
+      "result_id": "e3795817-91e5-4cf5-8f94-9074e7d58bec"
+    },
+    {
+      "claim_id": "efe35fa5-b6c7-41db-a6af-0fea2c3bafd5",
+      "result_id": "e3795817-91e5-4cf5-8f94-9074e7d58bec"
+    },
+    {
+      "claim_id": "4064b2c6-2891-4293-82c2-293c92a3f0c9",
+      "result_id": "e3795817-91e5-4cf5-8f94-9074e7d58bec"
+    },
+    {
+      "claim_id": "2eca1786-eff9-45b9-82bb-1e6729678942",
+      "result_id": "e3795817-91e5-4cf5-8f94-9074e7d58bec"
+    },
+    {
+      "claim_id": "82bbef12-9881-4a81-a825-524ccdeb8780",
+      "result_id": "e3795817-91e5-4cf5-8f94-9074e7d58bec"
+    },
+    {
+      "claim_id": "155a02a5-6ee6-4d1f-b47d-92e83f7fc455",
+      "result_id": "e3795817-91e5-4cf5-8f94-9074e7d58bec"
+    },
+    {
+      "claim_id": "02b930ce-3d36-408f-9e8c-11936856422e",
+      "result_id": "e3795817-91e5-4cf5-8f94-9074e7d58bec"
+    },
+    {
+      "claim_id": "2a127fd6-9ed5-437c-a96a-c7132874a1c8",
+      "result_id": "e3795817-91e5-4cf5-8f94-9074e7d58bec"
+    },
+    {
+      "claim_id": "d6ccb550-7471-41c3-96d9-a8069bcedc36",
+      "result_id": "e3795817-91e5-4cf5-8f94-9074e7d58bec"
+    },
+    {
+      "claim_id": "22e1c088-f51a-4bd1-bc23-c239bf0a880d",
+      "result_id": "e2894111-39b8-4abe-af8b-a747d78502d6"
+    },
+    {
+      "claim_id": "de90fd9a-6124-46f5-bf36-f261f085f26a",
+      "result_id": "e2894111-39b8-4abe-af8b-a747d78502d6"
+    },
+    {
+      "claim_id": "b41b09ec-f9af-4c14-9c01-d3e6ba3d2f3b",
+      "result_id": "e2894111-39b8-4abe-af8b-a747d78502d6"
+    },
+    {
+      "claim_id": "c9388725-e903-4528-b018-12cf7926108b",
+      "result_id": "e2894111-39b8-4abe-af8b-a747d78502d6"
+    },
+    {
+      "claim_id": "7b03d8e9-d426-467a-aa9b-ee20b3335f0d",
+      "result_id": "e2894111-39b8-4abe-af8b-a747d78502d6"
+    },
+    {
+      "claim_id": "ea30d0de-ba61-4163-bace-6b9151b0fcab",
+      "result_id": "e2894111-39b8-4abe-af8b-a747d78502d6"
+    },
+    {
+      "claim_id": "ec5df93d-7d7e-49f9-9274-cda60fb37f15",
+      "result_id": "e2894111-39b8-4abe-af8b-a747d78502d6"
+    },
+    {
+      "claim_id": "179161b7-f87e-4fa9-994a-eaa9a528cac5",
+      "result_id": "4abfef11-3f3e-4736-bb63-70778ab721c4"
+    },
+    {
+      "claim_id": "20e51220-c346-4a65-89ff-f4c78d69aa6d",
+      "result_id": "4abfef11-3f3e-4736-bb63-70778ab721c4"
+    },
+    {
+      "claim_id": "6b64abf6-1b51-4d5a-87cd-ca944b9e32b8",
+      "result_id": "4abfef11-3f3e-4736-bb63-70778ab721c4"
+    },
+    {
+      "claim_id": "4cc048f9-0369-479e-bb32-548590be2d5f",
+      "result_id": "c206a667-789b-49ae-813c-5878a7b073de"
+    },
+    {
+      "claim_id": "1006fc79-55e4-4e47-a2ef-af97c2a5707c",
+      "result_id": "05635dce-4f73-416b-9df8-add16d8aaf25"
+    },
+    {
+      "claim_id": "bf73a86d-f5cf-442d-b022-9a29f9411464",
+      "result_id": "05635dce-4f73-416b-9df8-add16d8aaf25"
+    },
+    {
+      "claim_id": "bb1f22bf-b59a-42a9-a3ab-ca5359e7984b",
+      "result_id": "05635dce-4f73-416b-9df8-add16d8aaf25"
+    },
+    {
+      "claim_id": "e6e53ab4-867c-4afe-90ec-d32beecd3dfa",
+      "result_id": "05635dce-4f73-416b-9df8-add16d8aaf25"
+    },
+    {
+      "claim_id": "40aa1274-f3ea-4d6b-ad13-6b16380cd3da",
+      "result_id": "05635dce-4f73-416b-9df8-add16d8aaf25"
+    },
+    {
+      "claim_id": "eb5de415-5db7-4c8a-a035-39b0f9b4f04d",
+      "result_id": "05635dce-4f73-416b-9df8-add16d8aaf25"
+    },
+    {
+      "claim_id": "49cd14bf-e301-4d7f-936e-486aa92ed503",
+      "result_id": "304300d9-68f9-4e69-b288-c9892c3b2e1e"
+    },
+    {
+      "claim_id": "a1995bd7-4f2f-4a77-8269-c42eb2ba01f0",
+      "result_id": "304300d9-68f9-4e69-b288-c9892c3b2e1e"
+    },
+    {
+      "claim_id": "d327656d-6c02-44aa-a0a6-c86693f7d684",
+      "result_id": "304300d9-68f9-4e69-b288-c9892c3b2e1e"
+    },
+    {
+      "claim_id": "828ce899-a688-4446-b85a-774b96407703",
+      "result_id": "304300d9-68f9-4e69-b288-c9892c3b2e1e"
+    },
+    {
+      "claim_id": "5fd24878-bcb6-413d-94ec-17211efcd751",
+      "result_id": "304300d9-68f9-4e69-b288-c9892c3b2e1e"
+    },
+    {
+      "claim_id": "c81b5110-886f-4dbe-b16f-2a7b57bda225",
+      "result_id": "304300d9-68f9-4e69-b288-c9892c3b2e1e"
+    },
+    {
+      "claim_id": "eed1523d-5113-4b6d-bc2d-f8da63810ff5",
+      "result_id": "304300d9-68f9-4e69-b288-c9892c3b2e1e"
+    },
+    {
+      "claim_id": "316b8d7d-414f-44b0-9b11-df525184e7f1",
+      "result_id": "98086748-fb1c-4bcc-aed6-9f4ad62d94ce"
+    },
+    {
+      "claim_id": "6f5ce64f-33f8-469c-999c-8bb61564bf4c",
+      "result_id": "98086748-fb1c-4bcc-aed6-9f4ad62d94ce"
+    },
+    {
+      "claim_id": "2b4f868d-cd74-477f-a2b3-5879658e2395",
+      "result_id": "98086748-fb1c-4bcc-aed6-9f4ad62d94ce"
+    },
+    {
+      "claim_id": "bb7dee8f-7d56-4820-bae1-a2f1632d63e3",
+      "result_id": "98086748-fb1c-4bcc-aed6-9f4ad62d94ce"
+    },
+    {
+      "claim_id": "5ae6e79a-5462-4dc8-bd28-1dc59f6548f7",
+      "result_id": "98086748-fb1c-4bcc-aed6-9f4ad62d94ce"
+    },
+    {
+      "claim_id": "cc4607e7-4d05-4718-8144-30d7992d62b5",
+      "result_id": "ecfa692e-7198-4e5b-b7b3-58ca99436b76"
+    },
+    {
+      "claim_id": "172dca5b-01a5-4a65-9463-c9f36beae5f0",
+      "result_id": "ecfa692e-7198-4e5b-b7b3-58ca99436b76"
+    }
+  ],
+  "comparisons": []
+}

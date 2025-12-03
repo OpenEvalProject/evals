@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "SDH inhibition impairs cell proliferation primarily through aspartate limitation, but unlike CI inhibition, electron acceptors (pyruvate/AKB) only modestly restore proliferation in SDH-impaired cells. Aspartate supplementation equivalently restores proliferation in both rotenone and AA5-treated cells, indicating distinct metabolic determinants of aspartate limitation between SDH and CI inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 collectively demonstrate through proliferation assays (Figure 1A) and metabolomics (Figure 1B) that SDH inhibition causes aspartate-dependent proliferation defects with distinct responses to electron acceptors compared to CI inhibition. Multiple orthogonal approaches (SLC1A3 expression, gpASNase1) confirm aspartate as the primary limitation. The data are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "AA5 treatment causes expected metabolic changes (succinate accumulation, fumarate depletion) and depletes aspartate levels. Unlike rotenone, AA5 does not suppress NAD+/NADH, and pyruvate only partially restores aspartate in AA5-treated cells. The data support a model where SDH inhibition directly blocks the oxidative TCA cycle, whereas CI impairment acts indirectly through NAD+/NADH suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 are well-supported by metabolomics data (Figures 1B, 1D, 1\u2014figure supplement 1H-J) showing distinct metabolic phenotypes between SDH and CI inhibition. The hyperbolic relationship between aspartate levels and proliferation rate (C16, Figure 1C) provides quantitative context. Isotope tracing (C21) confirms mechanistic differences in TCA cycle function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Re-expression of SDHB in UOK269 cells alleviates succinate accumulation, increases aspartate levels, and ameliorates dependence on pyruvate/aspartate for proliferation. Unlike acute AA5 treatment in 143B cells, pyruvate and aspartate are equally effective in UOK269 cells, suggesting metabolic adaptations to long-term SDH loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by metabolomics (Figure 1\u2014figure supplement 1M-N) and proliferation data (Figure 1G) in UOK269 cells. The observation that chronic SDH-null cells respond differently to electron acceptors than acutely inhibited cells (C26) is an inference supported by the data, though the specific adaptations are not fully characterized here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CI inhibition robustly restores proliferation and partially restores aspartate levels in SDH-impaired cells across diverse cell lines. This effect is generalizable and occurs despite AA5 only partially impairing respiration, contrasting with rotenone's severe respiratory impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are strongly supported by proliferation assays (Figure 2A, 2\u2014figure supplement 1B) and metabolomics (Figure 2B, 2\u2014figure supplement 1C) across multiple cell lines (143B, A549, HCT116, 293T, TF-1). The consistency across cell types strengthens the conclusion. Oxygen consumption data (Figure 2\u2014figure supplement 1A) supports the distinct respiratory effects of AA5 vs rotenone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "CI inhibition enables generation of SDHB KO clones that would otherwise be non-viable. SDHB KO cells show improved proliferation with CI inhibitors (rotenone/metformin) or aspartate supplementation. Rotenone decreases aspartate in WT cells but increases it in SDHB KO cells. This metabolic relationship is generalizable across cell lines and media conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 are well-supported by CRISPR/Cas9 knockout data (Figures 2D-E), proliferation assays (Figure 2F), and metabolomics (Figure 2G). The rescue of SDHB KO phenotype by SDHB re-expression (C38) provides strong validation. Testing in HPLM (C40) demonstrates physiological relevance. The collective evidence across multiple experimental approaches is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Multiple ETC inhibitors (antimycin, oligomycin) and severe hypoxia can substitute for CI inhibition to restore proliferation and aspartate in SDH-impaired cells, though less effectively than rotenone. The shared effect on mitochondrial NAD+/NADH is likely the primary mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by proliferation and metabolomics data (Figure 3\u2014figure supplement 1B-D) testing multiple ETC perturbations. The inference that mitochondrial NAD+/NADH is the primary mechanism (C45) is reasonable given the convergent effects of different inhibitors, though alternative explanations are not fully excluded. The hypoxia data (C44) is somewhat weaker as the effect is smaller.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Rotenone co-treatment reduces cellular NAD+/NADH in SDH-impaired cells to levels seen with rotenone alone, with effects predominantly in the mitochondrial compartment. The increased NAD+/NADH upon SDH impairment alone likely results from decreased NADH production coinciding with active CI-mediated NADH oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by whole-cell (Figure 3A) and compartmentalized (Figure 3B) NAD+/NADH measurements. The compartmentalized measurements are particularly valuable for localizing effects. The inference about mechanism (C48) is reasonable given the data. The explanation for lack of cytosolic changes (C51) is based on established LDH function and is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mitochondrial-targeted LbNOX (mitoLbNOX) impedes the restorative effects of rotenone on proliferation and aspartate levels in SDH-impaired cells, while cytosolic LbNOX does not. AZD7545 treatment slightly improves proliferation and aspartate in AA5-treated cells. These data indicate that compartment-specific mitochondrial redox alterations are both sufficient and required for alternative aspartate synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by proliferation (Figure 3E, 3\u2014figure supplement 2D) and metabolomics (Figure 3F, 3\u2014figure supplement 2E) data with compartmentalized LbNOX constructs and AZD7545. The differential effects of mitoLbNOX vs cytoLbNOX provide strong evidence for compartment-specific redox requirements. The AZD7545 data (C55) is weaker (described as 'slight' improvement) but supports the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "SDHB KO abolishes oxidative M+4 aspartate production and slightly increases RCQ-derived M+3 aspartate upon rotenone treatment. BMS-303141 (ACLY inhibitor) has anti-proliferative effects on SDH/CI inhibited cells that can be prevented by aspartate, indicating RCQ is partially responsible for increased aspartate synthesis in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by isotope tracing (Figure 4B) and proliferation/metabolomics data with BMS-303141 (Figures 4C-D). The isotope tracing clearly demonstrates pathway usage, and the BMS rescue by aspartate confirms the pathway's functional importance. The conclusion that RCQ is 'partially' responsible is appropriately cautious given the modest contribution shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Glucose-derived M+3 aspartate is the major contributor in SDHB KO cells, including aspartate induced by rotenone. PC KO cells are sensitive to SDH impairment but rotenone still provides benefit. BMS treatment blocks this residual benefit and aspartate increase in PC KO cells. Both RCQ and PC contribute to aspartate synthesis during SDH deficiency and are activated by CI impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by isotope tracing (Figure 4F) and genetic experiments with PC KO cells (Figures 4H-I). The combination of isotope tracing and genetic perturbations provides strong evidence for both pathways. The observation that BMS blocks the residual benefit in PC KO cells (C66-C67) elegantly demonstrates the complementary roles of RCQ and PC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "MPC1 KO completely ablates proliferation of SDH-impaired cells and prevents CI co-inhibition from restoring aspartate levels. Aspartate supplementation rescues proliferation, confirming aspartate depletion as the cause. MPC1 KO depletes AKG and alanine, suggesting mitochondrial pyruvate supports RCQ via GPT2-mediated AKG generation. A reduced mitochondrial environment promotes alternative aspartate synthesis through RCQ and PC, both requiring mitochondrial pyruvate import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 are well-supported by proliferation (Figures 5B, 5D) and metabolomics (Figures 5C, 5E, 5\u2014figure supplement 1B) data with MPC1 KO cells. The aspartate rescue (C71) confirms the mechanism. The inference about GPT2 (C74) is supported by metabolite patterns and consistent with cited literature. The overall model (C77) integrates the data coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "GOT2 KO cells cannot proliferate in pyruvate-free media but maintain benefits of CI co-inhibition in standard media. GOT2 KO cells show increased sensitivity to SDH inhibition alone, and aspartate supplementation phenocopies rotenone benefits. Residual aspartate production in SDH-impaired cells is primarily driven by GOT2, but GOT2 is dispensable for CI-induced aspartate production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by proliferation (Figures 6B, 6D, 6\u2014figure supplement 1A) and metabolomics (Figure 6C) data with GOT2 KO cells. The differential sensitivity to SDH inhibition vs SDH/CI co-inhibition clearly demonstrates GOT2's role in basal but not induced aspartate production. The aspartate rescue (C80) validates the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "GOT1 KO and MDH1 KO prevent CI inhibition from restoring proliferation and aspartate levels in SDH-impaired cells. CI inhibition still increases malate in GOT1 KO cells, suggesting upstream pathways (PC/RCQ) remain active but GOT1 is required for terminal aspartate generation. The data indicate reversal of the malate-aspartate shuttle to synthesize aspartate in SDH/CI impaired cells, with cytosolic OAA from PC and RCQ converted to aspartate by GOT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C91 are strongly supported by proliferation (Figures 6F, 6H, 6\u2014figure supplement 1E) and metabolomics (Figures 6G, 6\u2014figure supplement 1B, 1F) data with GOT1 and MDH1 KO cells. The observation that malate increases but aspartate does not in GOT1 KO cells (C85) provides key mechanistic insight. The model of reversed malate-aspartate shuttle (C89, C91) is well-supported by the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Late passage (LP) SDHB KO cells show progressively increased basal proliferation and loss of CI inhibition benefit compared to early passage (EP) cells. LP cells have increased aspartate levels and lowered NAD+/NADH that is unaffected by rotenone, suggesting redox adaptations. Continuous rotenone culture stalls this adaptive process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C100 are supported by proliferation (Figure 7B, 7\u2014figure supplement 1B, 1D) and metabolomics (Figures 7C-D) data comparing EP and LP SDHB KO cells. The progressive adaptation is clearly demonstrated. The 'stalled' experiment (C100) provides evidence that the adaptation is driven by selective pressure rather than inherent to passaging. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Proteomics analysis reveals that CI proteins are the most significantly altered pathway in LP SDHB KO cells after complex II. CI subunit levels progressively decrease from WT to EP to LP SDHB KO cells, resulting in decreased CI activity. Western blot confirms ~80% reduction in NDUFA8. The data suggest SDH-deficient cells adapt by suppressing CI activity to generate an ideal mitochondrial redox state for aspartate synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are strongly supported by TMT proteomics (Figures 7E-G), CI activity assays (Figure 7H), and western blots (Figure 7I). The proteomics provides unbiased evidence for CI suppression, and the activity assay confirms functional consequences. The inference about adaptive mechanism (C104, C106) is well-supported by the progressive changes and consistent with all prior data on redox requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "UOK269 cells (naturally SDH-null) have substantially decreased CI activity compared to WT 143B cells, with minimal NDUFA8 expression. SDHB restoration in UOK269 cells leads to loss of glucose-derived aspartate, restoration of oxidative TCA cycle-derived aspartate, increased NDUFA8 expression, and increased CI activity and oxygen consumption. The adaptations in CI status are reversible to achieve concordant activity with SDH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 are supported by CI activity assays (Figures 8C, 8\u2014figure supplement 1A), isotope tracing (Figure 8\u2014figure supplement 1B-C), western blots (Figure 8A), and oxygen consumption (Figure 8B). The reversibility of CI suppression upon SDHB restoration (C113) is a key finding that strengthens the adaptive model. The data from naturally occurring SDH-null cells validates findings from engineered knockouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Inducible NDI1 expression in UOK269 cells substantially increases oxygen consumption in a rotenone-resistant manner, confirming decreased CI activity is a bottleneck for ETC function. NDI1 expression decreases proliferation and aspartate levels in WT UOK269 cells but not SDHB-restored cells. DOX-mediated NDI1 expression impairs tumor growth in xenografts. Cells adapt to SDH loss by selecting for concordant CI loss, which is required to maximize aspartate production, proliferation, and tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 are strongly supported by oxygen consumption (Figure 8D), proliferation (Figure 8E), metabolomics (Figure 8F), and xenograft (Figure 8G) data. The NDI1 system elegantly bypasses CI to test its functional importance. The in vivo tumor data (C118) demonstrates physiological relevance. The overall conclusion (C119) integrates all findings into a coherent model of metabolic adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Background claims establishing that mitochondria have critical roles beyond ATP synthesis, that many proliferating cells require intact mitochondrial metabolism despite meeting ATP demands through glycolysis, that the TCA cycle is amphibolic, that ETC impairments cause aspartate depletion, and that SDH mutations lead to cancer. These claims provide context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C137 are background/context claims supported by appropriate citations to established literature. These are not novel findings of this study but provide necessary context. The citations appear appropriate for the claims made. These are primarily knowledge claims that frame the research questions.",
+    "result_type": "MINOR"
+  }
+]

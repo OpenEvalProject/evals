@@ -1,0 +1,190 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "FnCas9 is unable to bind or cleave DNA targets containing two mismatches at either the 2nd and 6th positions (PAM proximal) or the 16th and 19th positions (PAM distal) of the sgRNA. This mismatch specificity forms the mechanistic basis for the RAY variant detection strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide the fundamental mechanistic principle underlying RAY. C60 cites prior work establishing PAM-proximal specificity, while C61 presents new in vitro cleavage data extending this to PAM-distal positions. The experimental evidence with figure references supports this foundational result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Computational analysis of 48 unique SNVs across all reported VOCs and VOIs identified that 19 SNVs (12 VOC-associated and 7 VOI-associated) can be targeted by RAY design. Each VOC/VOI contains at least one targetable SNV, with N501Y present in 3/5 VOCs (B.1.1.7, P.1, and B.1.351).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe a systematic computational analysis with clear quantitative results and CDC citation. The finding that every VOC/VOI has at least one targetable SNV is important for establishing RAY's broad applicability. The data appears sound and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Catalytically active FnCas9 successfully cleaved dsDNA substrates containing the N501Y mutation while leaving wild-type sequences intact, enabling variant discrimination via electrophoresis with a turnaround time of approximately 1.5 hours from RNA to readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 demonstrate proof-of-concept for N501Y detection using electrophoresis. The experimental data with figure references shows clear discrimination between mutant and wild-type samples. However, C72 notes this approach has inherent low sensitivity, limiting its clinical utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Single amplicon RAY (580 bp) correctly identified N501Y variants in all 8 mutant patient samples and correctly classified all 8 wild-type and 12 COVID-19-negative samples. However, samples with low viral load (Ct >25) showed comparatively faint bands, indicating sensitivity limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 present initial patient sample validation with clear outcomes. The assay showed 100% accuracy in this small cohort but revealed sensitivity issues with low viral loads (C76), prompting further optimization. The sample sizes are small (n=8 per group) but results are clearly documented with figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Double amplicon RAY with double biotinylation and shorter amplicons (149 bp for N501Y, 287 bp for WT control) achieved 87% sensitivity and 97% specificity when validated on 59 patient samples (37 wild-type, 22 N501Y mutant) with turnaround time reduced to 55 minutes. The assay detected N501Y with signal 5.5-fold higher than wild-type up to Ct value 34.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 and C13-C16 describe systematic optimization and comprehensive validation. The sensitivity (19/22 mutants detected) and specificity (36/37 wild-types correctly identified) are clearly stated with sample sizes. The optimization steps (double biotinylation, shorter amplicons) are well-documented with quantitative improvements. This represents the main validated diagnostic result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C88",
+      "C110"
+    ],
+    "result": "RAY design was successfully adapted to detect E484K and T716I mutations in patient samples, with no cross-reactivity observed between N501Y and E484K sgRNAs, demonstrating the platform's adaptability to multiple clinically relevant mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C88 demonstrate adaptability with experimental validation on patient samples for E484K and T716I. C110 provides context for E484K's clinical significance. The specificity data (C88) showing no cross-reactivity strengthens confidence in the approach. However, the extent of validation for E484K and T716I appears more limited than for N501Y.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Synthetic sgRNA with phosphorothioate backbone modification showed higher stability and greater band intensity compared to in vitro synthesized sgRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 presents a technical optimization with experimental data and figure reference. This is consistent with prior work cited and represents a methodological improvement for assay performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C44",
+      "C50",
+      "C51",
+      "C90",
+      "C91",
+      "C92",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "Current diagnostic approaches have significant limitations: qRT-PCR cannot genotype point mutations (C5, C44), sequencing is expensive (C6, C100: several orders of magnitude more than RAY's ~$7/sample), has long turnaround times (C7, C101: minimum 36 hours), requires high viral loads (C8, C92), pooled sample processing (C102), and specialized computational expertise (C104-C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C44, C50-C51, C90-C92, C100-C102, C104-C105 establish the diagnostic gap that RAY addresses. These are well-supported by citations and represent established knowledge about current methods' limitations. The cost comparison (C100) includes specific data from supplementary files.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C103",
+      "C106",
+      "C107"
+    ],
+    "result": "RAY has several advantages over sequencing: reproducible across wide viral titre ranges (C93), scalable to any number of samples (C103), visual readout requiring minimal operator skill (C106-C107), and can rapidly exclude wild-type samples from sequencing (C96). However, RAY has limitations including inability to detect unknown variants (C95), multiplexing constraints in lateral flow format (C97), reduced sensitivity with longer amplicons (C98), and PAM sequence requirements limiting targetable mutations (C99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99, C103, C106-C107 provide balanced assessment of RAY's advantages and limitations. The advantages are supported by experimental data (C93) and logical inference from the assay design. The limitations are honestly acknowledged by the authors and represent important caveats for clinical implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study developed RAY, a lateral flow assay leveraging FnCas9's high specificity for mismatch detection, that can simultaneously detect SARS-CoV-2 infection and distinguish the N501Y mutation from wild-type virus, enabling its use as a primary surveillance method for VOC identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C56-C59 state the main conceptual advance and application. These are supported by the experimental validation data (C13-C16, C86-C87) showing the assay works as claimed. C59 represents a reasonable inference about potential application based on the demonstrated performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "N501Y mutation, present in 3/5 VOCs (B.1.1.7, P.1, B.1.351), affects the receptor-binding domain and can be detected within one hour using RAY lateral flow chemistry, making it a clinically relevant target for variant surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C66-C68 establish N501Y as the primary target with clear rationale. The one-hour detection time (C12) is supported by experimental data. The clinical significance (C67-C68) is well-cited, justifying the focus on this mutation.",
+    "result_type": "MAJOR"
+  }
+]

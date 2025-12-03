@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript identifies three major challenges in applying deep learning to cell tracking: (1) scarcity of annotated training data and the laborious nature of data preparation, (2) lack of unified user interfaces integrating annotation, training, prediction, and proofreading, and (3) limited accessibility to high-end GPU computing resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C13-C18 collectively establish the motivation for the work by describing known limitations in the field. These are general knowledge claims supported by citations and represent an accurate characterization of challenges in deep learning for bioimage analysis at the time of publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ELEPHANT is an interactive, web-friendly platform for 3D cell tracking that implements two deep learning algorithms (one for detection, one for linking) optimized for incremental learning from sparse annotations, built as an extension of Mastodon with a client-server architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C28 describe the core features and architecture of ELEPHANT. The software implementation is documented with appropriate technical details, figures (Figure 1), and references to the underlying Mastodon framework. The claims are consistent and well-supported by the manuscript's technical descriptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ELEPHANT's detection algorithm uses a U-Net CNN trained on sparse annotations of nuclei represented as ellipsoids, with voxels labeled as background, nucleus center, or nucleus periphery. Training and prediction cycles are rapid (seconds), enabling efficient incremental learning through near-simultaneous proofreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C43 describe the detection workflow with appropriate technical detail, supported by Figure 2 and supplementary materials. The use of ellipsoids is justified for efficiency, the U-Net architecture is documented (Figure 2\u2014figure supplement 1), and timing data is provided (Supplementary file 1). The workflow is internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ELEPHANT's detection performance was evaluated on five diverse datasets (CE1, PH, ORG1, ORG2, MDA231). A generic pre-trained model showed modest performance, but adding only 3-10 sparse annotations and re-training greatly improved detection. Sparsely trained models performed comparably to state-of-the-art software, while fully trained models outperformed most tracking software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by quantitative results shown in Figure 3 and Table 1. The evaluation includes precision/recall metrics, comparison with state-of-the-art methods (StarDist3D, KTH-SE, KIT-Sch-GE), and demonstrates the effectiveness of sparse annotation fine-tuning. The benchmarking on Cell Tracking Challenge datasets provides independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Training with sparse annotations did not cause overfitting in the detection model, as demonstrated by learning curves showing no signs of overfitting after extensive training. The trained model achieved high precision and recall on both partially-seen (CE1) and unseen (CE2) data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by Figure 3\u2014figure supplement 2, which shows training and validation loss curves without divergence, and detection results on both CE1 and CE2 datasets with high precision/recall scores. This addresses a key concern about sparse training and provides evidence of generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "A pre-trained detection model trained on diverse image datasets is provided to users as a starting point for tracking new data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 describes a practical resource provided with the software. The availability of pre-trained models is documented in Materials and methods, and the training datasets are listed in Supplementary file 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "ELEPHANT's linking algorithm addresses limitations of nearest-neighbor approaches by using a second U-Net CNN trained on sparse linking annotations to generate 3D optical flow maps. These flow predictions are combined with nearest-neighbor linking to predict links between detected nuclei, followed by user proofreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 describe the linking workflow with appropriate technical detail, supported by Figure 4 and Figure 4\u2014figure supplement 1. The rationale for using optical flow (poor performance of nearest-neighbor in challenging datasets) is stated and later demonstrated quantitatively. The architecture and workflow are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "ELEPHANT's linking performance was evaluated on C. elegans (CE) and P. hawaiensis (PH) datasets. Fewer than 10 annotated nuclei were sufficient to initiate effective cycles of training, prediction, and proofreading for both datasets. Interactive cycles reduced the time required for detection and validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by the evaluation results presented in Figures 2B and 4B. The CE datasets are established benchmarks (citations provided), and the PH dataset is characterized as more challenging. The claim about requiring fewer than 10 nuclei is demonstrated in the subsequent detailed analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "On the CE1 dataset, a complete cell lineage over 195 timepoints was built from scratch using ELEPHANT's semi-automated workflow, starting from sparse annotations (4 nuclei). A total of 23,829 nuclei were annotated in less than 8 hours, with only ~2% (483 nuclei) manually annotated and the remainder validated from predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 provide specific quantitative results for the CE1 dataset, supported by Figure 4B. The numbers are precise and internally consistent. The dramatic reduction in manual annotation effort (2% manual, 98% validation) demonstrates the efficiency of the incremental learning approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Cell tracking can be accelerated by starting from models trained on similar data. Using a pre-trained model from CE2 on CE1 enabled much faster and easier detection than training from scratch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 demonstrate transfer learning benefits, supported by Figure 2B showing the blue curve (pre-trained) substantially outperforming the orange curve (from scratch). This is a practical demonstration of how pre-training accelerates the workflow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "On the Cell Tracking Challenge, ELEPHANT models with flow-based interpolation outperformed state-of-the-art algorithms (KTH-SE, KIT-Sch-GE) in detection (DET) and tracking (TRA) metrics, but performed less well in segmentation (SEG), likely due to using ellipsoids to approximate nuclear shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by Table 1 showing quantitative comparisons. ELEPHANT achieved DET=0.979 and TRA=0.975 versus lower scores for competitors, but SEG=0.631 versus higher scores for competitors. The explanation for lower SEG (ellipsoid approximation) is reasonable and acknowledged as a trade-off for computational efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The PH dataset presented greater challenges (larger variations in nuclear properties, lower temporal resolution, more noise). ELEPHANT addressed these through continued model training with user feedback. Over 260,000 nuclei were annotated across 504 timepoints. Nearest-neighbor linking was inadequate, but training optical flow with 1,162 validated links from 10 timepoints significantly improved linking performance, reducing false positive links by ~57% and false negative links by ~32%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 describe the challenging PH dataset and ELEPHANT's performance on it. The challenges are documented in Figure 5\u2014figure supplement 1. The quantitative improvements from optical flow (57% reduction in FP, 32% reduction in FN) are specific and supported by Figure 4C and Supplementary file 2. The scale of annotation (260,000 nuclei, 504 timepoints) demonstrates the platform's capability for large-scale tracking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Using ELEPHANT's semi-automated workflow, 109 complete and fully validated cell lineage trees were reconstructed spanning the entire duration of leg regeneration in Parhyale (~1 week, 504 timepoints). Analysis modules enabled capturing the distribution of cell divisions and producing a fate map. This analysis, which would have required several months manually, was achieved in ~1 month without prior training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe the major biological application of ELEPHANT, supported by Figure 5 and Figure 5\u2014figure supplement 2. The reconstruction of 109 complete lineages over 504 timepoints represents a substantial achievement. The time comparison (months of manual work vs. 1 month with ELEPHANT) demonstrates practical impact, though the manual estimate is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Analysis of the PH dataset revealed that cell proliferation is concentrated at the distal part of the regenerating leg stump and peaks after a period of proliferative quiescence, consistent with prior findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 describe biological findings from the lineage analysis, supported by Figure 5A and citation to Alwes et al., 2016. These findings validate both the tracking results and the biological relevance of the analysis, showing consistency with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The PH dataset was obtained by imaging a regenerating T4 leg of transgenic Parhyale hawaiensis expressing nuclear-localized mRFPRuby after heat-shock. Continuous imaging was performed for 1 week on a confocal microscope, recording stacks of 11 optical sections every 20 minutes with voxel size 0.31 \u00d7 0.31 \u00d7 2.48 microns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 provide detailed experimental methods for the PH dataset, including transgenic construct, imaging parameters, and heat-shock protocol. These are standard methodological details appropriately documented with citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The CE1, CE2, MDA231, ORG1, and ORG2 datasets were obtained from the Cell Tracking Challenge and published sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 document the sources of evaluation datasets with appropriate citations. This ensures reproducibility and allows readers to access the same data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "ELEPHANT's client-server architecture can be deployed on the same computer or multiple computers. The client (Fiji plugin) handles annotation and visualization, while the server (Python-based) performs deep learning. The architecture uses HTTP/JSON communication, Redis for request prioritization, RabbitMQ for notifications, and is distributed as a Docker container. Google Colab setup is available for users without adequate hardware.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C113 provide comprehensive technical documentation of the software architecture, supported by Figure 1\u2014figure supplement 1. The implementation details are appropriate for a methods paper and enable reproducibility. The provision of Docker containers and Google Colab support addresses accessibility concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "On the Cell Tracking Challenge dataset, ELEPHANT outperformed KTH-SE and KIT-Sch-GE in detection (DET: 0.979 vs 0.959 vs 0.930) and tracking (TRA: 0.975 vs 0.945 vs 0.886), but performed less well in segmentation (SEG: 0.631 vs 0.662 vs 0.729).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 provide specific quantitative comparisons from Table 1. The results are clear and demonstrate ELEPHANT's strengths (detection and tracking) and acknowledged limitation (segmentation). The evaluation was performed by independent Cell Tracking Challenge organizers, adding credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Applying the best performing models to new data could improve tracking efficiency even further.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is speculative about future improvements. While reasonable based on the transfer learning results shown, this is a forward-looking statement without direct experimental support in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

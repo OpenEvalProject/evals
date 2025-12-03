@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Four new iDrugSnFRs were successfully developed for nicotinic partial agonists: iDianiSnFR (EC50 6.7 \u00b1 0.3 \u00b5M), iCytSnFR (EC50 9.4 \u00b1 0.8 \u00b5M), iCyt_F_SnFR (EC50 1.4 \u00b1 0.04 \u00b5M), and iCyt_BrEt_SnFR (EC50 5.7 \u00b1 0.1 \u00b5M). These sensors were generated through iterative site-saturation mutagenesis and characterized in bacterial lysates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C37-C40 provide consistent experimental data from dose-response experiments showing successful development and characterization of four new biosensors. The EC50 values, \u0394Fmax/F0, and S-slope measurements are reported with error estimates from replicate experiments (Table 1, Figure 2), supporting the successful generation of these tools.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The first atomic-scale structures of liganded periplasmic binding protein-based biosensors were obtained, revealing a 'candle snuffer' mechanism where Glu78 moves ~14 \u00c5 away from the fluorophore upon ligand binding. Crystal structures of iNicSnFR3adt with nicotine (2.95 \u00c5) and varenicline (3.2 \u00c5) show closed conformations with ligands forming cation-\u03c0 interactions with Tyr65 and Tyr357.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C29-C36 are supported by crystallographic data with PDB depositions (7S7U, 7S7T, 7S7V). The structural observations are internally consistent and provide mechanistic insight into sensor activation. The resolution is adequate for the conclusions drawn, and the proposed 'candle snuffer' mechanism is supported by structural evidence showing Glu78 proximity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The newly developed iDrugSnFRs show selectivity for their target drugs with at least 250-fold greater sensitivity (by S-slope) to their eponymous partners than to other tested molecules. iDianiSnFR showed the greatest fidelity, while iCytSnFR, iCyt_F_SnFR, and iCyt_BrEt_SnFR exhibited exceptionally low EC50 (60-90 nM) for varenicline and some cross-reactivity with dopamine and serotonin at high concentrations (316 \u00b5M-1 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 are supported by comprehensive specificity testing shown in Table 2 and Figures 3 and 3\u2014figure supplement 1. The data demonstrate both the utility and limitations of the sensors. The 250-fold selectivity calculation based on S-slope is appropriate for comparing sensitivity. The cross-reactivity with dopamine and serotonin is acknowledged but occurs at concentrations far above physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Isothermal titration calorimetry revealed that the experimentally determined KD values are within 1.5-fold of the EC50 values for fluorescence, indicating that EC50 is dominated by ligand binding rather than conformational changes. All iDrugSnFRs show exergonic reactions, but thermodynamic signatures vary: iCytSnFR, iCyt_F_SnFR, and iCyt_BrEt_SnFR binding is exothermic, while iDianiSnFR binding is endothermic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by ITC data in Table 3 and Figure 4. The close agreement between KD and EC50 values (within 1.5-fold) supports the inference that binding dominates the fluorescence response. The thermodynamic measurements are internally consistent with three independent runs reported. The varying thermodynamic signatures (exothermic vs. endothermic) are interesting but all reactions are exergonic as required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Stopped-flow kinetic analysis revealed that iDrugSnFRs do not exhibit pseudo-first-order kinetic behavior typical of simple two-state binding interactions. For iDianiSnFR, most fluorescence change occurs within 0.1 s of mixing, with additional minor increases continuing to 100 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by stopped-flow data in Figure 5 and Supplementary file 2. The departure from simple first-order kinetics is clearly demonstrated by the requirement for double exponential fits. This complexity is acknowledged by the authors and appropriately limits their kinetic interpretations. The observation is consistent across multiple sensors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Millisecond microperfusion experiments with iCytSnFR_PM in HEK293T cells revealed ligand-dependent decay kinetics: ACh shows monophasic decay (\u03c4off = 530 \u00b1 30 ms), cytisine shows biphasic decay (\u03c4foff = 1.8 \u00b1 0.1 s, \u03c4soff = 6.9 \u00b1 0.2 s), and varenicline shows much slower biphasic decay (\u03c4foff = 9 \u00b1 1 s, \u03c4soff = 150 \u00b1 10 s). The temporal resolution for varenicline detection is in the minute range, limiting its utility for subcellular experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by microperfusion data in Figure 6 with appropriate statistical analysis (ANOVA). The measurements provide important information about sensor temporal resolution. Sample sizes are adequate (n = 23-36 areas). The conclusion that varenicline's slow kinetics limit subcellular resolution is appropriately conservative and important for interpreting later cellular experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The iDrugSnFRs successfully detect their drug partners at both the plasma membrane and endoplasmic reticulum in HeLa cells and mouse hippocampal neurons. Dianicline shows rapid kinetics at both locations, while cytisine shows slower entry into and exit from the ER, with the ER signal being 25-50% of the PM signal and requiring much longer washout times than solution changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C62-C68 are supported by live-cell imaging data in Figures 7 and 8. The differential kinetics between PM and ER for cytisine versus dianicline are clearly demonstrated. The experiments include appropriate controls (buffer controls) and multiple cells per condition. The localization is confirmed by confocal microscopy (Figure 7\u2014figure supplement 3, Figure 8\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Extended washout experiments and control experiments with nicotine confirm that the slow kinetics observed for cytisine and 10-fluorocytisine in the ER reflect slow membrane crossing rather than sensor artifacts. Cytisine and 10-fluorocytisine require washout times of several minutes from the ER even at low concentrations (0.1-0.316 \u00b5M), while nicotine shows rapid kinetics resembling published results with iNicSnFR3a/3b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by control experiments in Figure 7\u2014figure supplement 1 and Figure 7\u2014figure supplement 2. The nicotine control experiments are critical for validating that the sensors function properly in the ER and that slow kinetics reflect drug properties rather than sensor artifacts. The comparison to published data (Shivange et al., 2019) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C73"
+    ],
+    "result": "At the plasma membrane, solution exchange speed limits fluorescence response kinetics in almost all cases. However, rates of membrane crossing into the ER differ dramatically among nicotinic drugs, with cytisine and 10-fluorocytisine crossing membranes more than 30-fold more slowly than other drugs tested (dianicline, varenicline, 9-bromo-10-ethylcytisine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C73 are supported by the cellular imaging experiments in Figures 7 and 8. The authors appropriately acknowledge experimental complexities (solution exchange limitations, diffusion, baseline drift) and restrict their quantitative comparison to a conservative >30-fold estimate. The qualitative differences in membrane crossing rates are clearly demonstrated across multiple experiments and cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "This study provides the first time-resolved measurements of membrane permeation for drugs with logDpH7.4 < -1. The nicotinic partial agonists studied have calculated logDpH7.4 values 3-6 orders of magnitude lower than most orally available drugs (which typically have logDpH7.4 between 2 and 4). Drugs with logDpH7.4 < ~-2 (cytisine: -2.64, 10-fluorocytisine: -2.70) cross membranes much more slowly than those with logDpH7.4 > ~-2 (dianicline: -1.29, varenicline: -1.27, 9-bromo-10-ethylcytisine: -1.13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 are supported by the membrane permeation measurements and logDpH7.4 calculations. The correlation between calculated logDpH7.4 values and measured membrane crossing rates is compelling, though the authors appropriately note that different algorithms give varying results (C23). The novelty claim (C74) appears justified given the extremely low partition coefficients. The comparison to typical orally available drugs (C75) is supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The iDrugSnFRs are sensitive enough for experiments near physiologically relevant concentrations in human blood and CSF, measure free aqueous ligand concentration as sensed by nAChRs, and provide methodological advantages over traditional approaches (no radiolabels, no live animal experiments, no mass spectrometry required).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by the demonstrated sensitivity of the sensors (EC50 values in the low micromolar range) and citations to relevant pharmacokinetic studies. The methodological advantages are self-evident from the experimental design. These claims appropriately position the technology's utility and advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The 'candle snuffer' mechanism, where Glu78 movement controls fluorescence, represents a general mechanism for OpuBC-cpGFP SnFRs. Supporting evidence includes: (1) F0 increases 10-fold per pH unit in the apo form, (2) EC50 decreases 10-fold per pH unit, (3) only glutamate functions at position 78 in iSeroSnFR, and (4) the mTurquoise variant with tryptophan chromophore requires different linkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 synthesize structural data from this study with functional data from prior work (citations to Shivange et al., 2019; Unger et al., 2020; Marvin et al., 2018). The pH-dependence observations (C90-C91) provide strong functional support for the proposed mechanism. The mutagenesis data (C92) and chromophore-dependence (C93) further support the generality of the mechanism. The inference is well-supported though additional direct testing could strengthen it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study discusses implications for smoking-cessation drug development: \u03b14\u03b22 agonists that enter the ER (nicotine, varenicline) upregulate nAChRs, which may be necessary and sufficient for addiction. However, ligands that do not enter the ER are unlikely to enter the brain and therefore unlikely to be useful for smoking cessation. Upregulation occurs at ER concentrations ~100-fold lower than extracellular concentrations that activate nAChRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C98 mix established knowledge (C97), cited findings (C94, C98), and speculative hypotheses (C95, C96). While C94 and C98 are supported by citations, C95 is explicitly speculative ('may be necessary and sufficient'). C96 is a logical inference but represents a hypothesis rather than demonstrated fact. These claims appropriately frame the translational implications but should be recognized as discussion points requiring further validation rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Structural analysis reveals that nicotinic ligands make equidistant cation-\u03c0 interactions with two tyrosine residues (Tyr65, Tyr357), and varenicline's protonated amine forms a hydrogen bond to a backbone carbonyl. These interaction motifs are conserved across nAChRs, acetylcholine-binding protein, PBPs, and muscarinic receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by the crystal structures presented (PDB 7S7U, 7S7T, 7S7X, SV1R, 7S7Z) and comparison to literature structures (citations to multiple PDB entries and papers). The cation-\u03c0 interactions and hydrogen bonding are clearly resolved in the structures. The conservation across protein families is well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Nicotinic partial agonists are an accepted aid for smoking cessation, but there has been no reductionist method to examine cellular and subcellular pharmacokinetic properties of these compounds in living cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 establish the context and motivation for the study. C1 reflects established medical practice (general knowledge), while C2 identifies a methodological gap that the study addresses. These claims are appropriately framed as background rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on smoking-cessation drugs: Varenicline is the only FDA-approved drug with ~18% quit rate at 12 months. Cytisine is an \u03b14\u03b22 nAChR partial agonist with low brain penetration. Dianicline (EC50 = 18 \u00b5M) was discontinued after Phase III trials. Effective smoking-cessation drugs must: (1) enter the brain, (2) activate \u03b14\u03b22 nAChRs with EC50 of 1-2 \u00b5M, and (3) block nicotine binding. Varenicline meets these criteria while cytisine and dianicline each fail one criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 provide well-cited background information establishing the pharmaceutical context. These are primarily literature-based claims supported by appropriate citations (Rose et al., 1994; Rollema et al., 2010; Coe et al., 2005; Mills et al., 2009; Cohen et al., 2003; Fagerstrom and Balfour, 2006). The three criteria for smoking-cessation drugs are established in the field and properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background on membrane permeability metrics: LogP measures octanol-water partition coefficient for uncharged molecules, while logDpH7.4 corrects for the fraction of deprotonated molecules at pH 7.4. The cytisine derivatives 10-fluorocytisine and 9-bromo-10-ethylcytisine have cytisine-like EC50 for \u03b14\u03b22 nAChRs but more positive calculated logDpH7.4 values suggesting greater membrane permeability. However, logDpH7.4 estimates are inexact and can differ by over 2 log units depending on the algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 provide essential background on physicochemical properties and their limitations. C19-C20 describe established concepts in pharmacology. C21-C22 are supported by citation (Blom et al., 2019). C23 appropriately acknowledges the limitations of computational predictions (Pie\u0144ko et al., 2016), which is important context for interpreting the experimental measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on nicotine and varenicline pharmacokinetics: Nicotine (logDpH7.4 0.99) enters the ER, binds nascent nAChRs, acts as a pharmacological chaperone, and causes receptor upregulation. Nicotine and varenicline enter and exit the ER within seconds. Nicotine crosses six plasma membranes to enter the brain within 20 seconds. Varenicline becomes trapped in acidic vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 provide background from prior work. C24-C26 are supported by citations including the authors' previous work (Henderson and Lester, 2015; Shivange et al., 2019). C27 reflects established knowledge about nicotine's rapid brain entry. C28 is supported by citations (Govind et al., 2017; Le Houezec, 2003). These claims establish the biological context for the current study.",
+    "result_type": "MINOR"
+  }
+]

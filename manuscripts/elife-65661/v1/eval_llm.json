@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors propose a computational model based on evidence accumulation (drift diffusion model, DDM) where choices are resolved by accumulating weighted attribute values until a threshold is reached. They propose that dlPFC activity reflects the evidence accumulation stage rather than direct modulation of attribute weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 establish the theoretical foundation of the evidence accumulation model. The model is grounded in prior literature (C14), clearly defines the accumulation process (C15-C16), and proposes a specific computational role for dlPFC (C17-C18). The theoretical framework is internally consistent and builds logically on established decision-making models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Computational simulations predict that normative choices produce greater dlPFC activity only when hedonic attributes are weighted more heavily than normative attributes and attributes conflict. When normative attributes receive higher weight, hedonistic choices should produce greater dlPFC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C35 describe simulation results shown in Figure 2 that generate specific, testable predictions. The simulations systematically vary attribute values and weights to demonstrate how neural activity patterns depend on both conflict and goal prioritization. The predictions are clearly derived from the computational model and are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Trial-by-trial simulated neural activity from the DDM correlates with activity in the dlPFC region associated with inhibition and self-control across different choice contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by empirical fMRI data from GLM 1a-c across three datasets (Figure 4a-c). The correlation between DDM predictions and dlPFC activity is demonstrated across both altruistic and dietary choice contexts, providing convergent evidence. The use of an independently-defined ROI (from meta-analysis) strengthens the claim by avoiding circularity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In Dataset 1 (natural altruistic choice), subjects weighted self-interest more than other-regarding attributes, generous choices elicited greater dlPFC activity than selfish choices, and individual differences in attribute weights negatively correlated with dlPFC response differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by statistical analyses of behavioral model fits and fMRI data. The fitted weights show significant prioritization of self-interest (C41, p<2.2\u00d710\u207b\u00b9\u2076), dlPFC shows greater response for generous choices (C42, p=0.04, d=0.32), and the predicted negative correlation with individual differences is confirmed (C43, r=-0.31, p=0.04). All results align with model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In Dataset 2 (altruistic choice with regulatory manipulation), instructing participants to focus on normative attributes (Ethics, Partner) shifted attribute weights away from self-interest and eliminated or reversed the pattern of greater dlPFC activity for generous choices observed in the Natural condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by statistical analyses showing the manipulation successfully altered attribute weights (C44-C46, all F>13.54, p<6.59\u00d710\u207b\u2076), produced a significant effect on dlPFC response (C47, F=5.91, p=0.004), replicated the Natural condition pattern (C48, p=0.04), and confirmed the key prediction that regulatory focus significantly reduced the generous>selfish dlPFC difference (C50, both p\u22640.01, d=0.36-0.45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In Dataset 3 (dietary choice with regulatory manipulation), instructing participants to focus on health shifted attribute weights toward healthiness and reduced dlPFC activity for healthy vs. unhealthy choices in conflict trials, while the Natural condition showed greater dlPFC activity for healthy choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by statistical analyses across three samples showing successful weight manipulation (C51-C53, all F>44.43, p<2.2\u00d710\u207b\u00b9\u2076), significant condition effects on dlPFC (C54, F=4.11, p=0.02), greater activity for healthy choices in Natural condition (C55, p=0.02, d=0.24), comparable responses in Health condition (C56, p=0.39), and significant reduction between conditions (C57, p=0.01, d=0.27). Results replicate the pattern from Dataset 2 in a different domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "In Dataset 3, when examining non-conflict trials (where healthiness and tastiness do not oppose), there was no significant effect of regulatory condition on dlPFC activity for healthy vs. unhealthy choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by statistical analysis showing no effect of condition in non-conflict trials (F=0.357, p=0.7). This result aligns with model predictions (Figure 2d) that regulatory effects should be specific to conflict trials, providing additional specificity to the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "result": "The evidence accumulation model successfully predicts trial-by-trial dlPFC response across three fMRI paradigms and two self-control contexts, and these results suggest dlPFC response depends more on evidence accumulation than inhibition of hedonistic impulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, and C5 represent the main conclusions of the manuscript. They are well-supported by the convergent evidence from computational modeling (C19-C35), empirical validation across datasets (C37, C41-C59), and the systematic pattern of results showing dlPFC activity depends on the relative weighting of attributes rather than simply tracking normative choice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The prepotent response corresponds to choices consistent with the currently higher-weighted attribute regardless of source, and higher weights on normative attributes reduce dlPFC activity during normative choices by reducing computational demands for evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide mechanistic interpretation of the empirical results. The interpretation is well-supported by the pattern of results across datasets showing that regulatory focus on normative attributes both increases normative behavior and reduces dlPFC activity (C61, supported by Datasets 2-3). The mechanistic explanation (C62) follows logically from the computational model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The model predicts that in intertemporal choice, making future outcomes more salient should promote patience while decreasing dlPFC activation, which matches empirical observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 extend the model to a different domain. The prediction (C64) follows logically from the model framework, and C65 cites empirical support from prior work (Magen et al., 2014). This demonstrates the model's generalizability beyond the tested domains, though it relies on external validation rather than data presented in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The dlPFC region correlated with the DDM is anatomically similar to areas associated with self-control in prior studies, but appears to reflect evidence accumulation rather than attribute weight modulation. This region is distinct from more anterior dlPFC areas that may modulate attribute weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 integrate current findings with prior literature. The anatomical correspondence is supported by comparison to prior studies (C66, C68-C69 with citations), and the functional interpretation (C67) is supported by the pattern of results showing dlPFC responds to conflict generally rather than specifically to normative choices. The distinction between dlPFC subregions (C68-C70) is supported by prior work from the same group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The dlPFC has been associated with many computational functions, and it is possible the region performs processes correlated with, but not identical to, the DDM computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 appropriately acknowledge limitations and alternative interpretations. The authors recognize that correlation does not prove the dlPFC performs DDM computations per se, and note some discrepancies between predictions and data (mentioned in Discussion). This represents appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior literature shows mixed evidence regarding dlPFC involvement in normative choice, with some studies showing increased activation during norm-consistent choices and others failing to observe this pattern or showing opposite effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C13 summarize prior literature to establish the motivation for the current study. All claims are supported by appropriate citations to published work. The summary accurately characterizes the inconsistencies in the literature that the current study aims to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "The model predicts that deliberate self-regulation focused on normative goals should decrease or reverse the typical pattern of greater dlPFC response for norm-consistent choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 states a key novel prediction that distinguishes this model from alternatives. This prediction is derived from the computational model simulations (C19-C35) and is subsequently tested and confirmed in Datasets 2 and 3 (C44-C57). The prediction is counterintuitive and represents a major contribution of the work.",
+    "result_type": "MAJOR"
+  }
+]

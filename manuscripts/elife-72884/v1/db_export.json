@@ -1,0 +1,1533 @@
+{
+  "submission": {
+    "id": "81651d17-726b-4bbc-8f34-0e77ec571f88",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:08:36.807779Z",
+    "updated_at": "2025-12-03T10:08:36.807779Z"
+  },
+  "content": [
+    {
+      "id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "submission_id": "81651d17-726b-4bbc-8f34-0e77ec571f88",
+      "content_type": "manuscript",
+      "content_text": "# Systematic investigation of the link between enzyme catalysis and cold adaptation\n\n## Authors\n\n- Catherine Stark<sup>1</sup> ([ORCID: 0000-0002-0848-3858](https://orcid.org/0000-0002-0848-3858))\n- Teanna Bautista-Leung<sup>2</sup>\n- Joanna Siegfried<sup>2</sup>\n- Daniel Herschlag<sup>1</sup> ([ORCID: 0000-0002-4685-1973](https://orcid.org/0000-0002-4685-1973)) \u2020\n\n### Affiliations\n\n1. ChEM-H, Stanford University Stanford United States\n2. Department of Biochemistry, Stanford University Stanford United States\n3. Department of Chemical Engineering, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCold temperature is prevalent across the biosphere and slows the rates of chemical reactions. Increased catalysis has been predicted to be a dominant adaptive trait of enzymes to reduced temperature, and this expectation has informed physical models for enzyme catalysis and influenced bioprospecting strategies. To systematically test rate enhancement as an adaptive trait to cold, we paired kinetic constants of 2223 enzyme reactions with their organism\u2019s optimal growth temperature (TGrowth) and analyzed trends of rate constants as a function of TGrowth. These data do not support a general increase in rate enhancement in cold adaptation. In the model enzyme ketosteroid isomerase (KSI), there is prior evidence for temperature adaptation from a change in an active site residue that results in a tradeoff between activity and stability. Nevertheless, we found that little of the rate constant variation for 20 KSI variants was accounted for by TGrowth. In contrast, and consistent with prior expectations, we observed a correlation between stability and TGrowth across 433 proteins. These results suggest that temperature exerts a weaker selection pressure on enzyme rate constants than stability and that evolutionary forces other than temperature are responsible for the majority of enzymatic rate constant variation.\n\n## Introduction\n\nTemperature is a ubiquitous environmental property and physical factor that affects the evolution of organisms and the properties and function of the molecules within them. As reaction rates are reduced at lower temperatures (Arrhenius, 1889; Wolfenden et al., 1999), the maintenance of enzyme rates has been suggested to be a universal challenge for organisms at colder temperatures that do not regulate their internal temperature (D\u2019Amico et al., 2003; Fields et al., 2015; Siddiqui and Cavicchioli, 2006; Zecchinon et al., 2001). According to what we term the rate compensation model of temperature adaptation, this challenge has been suggested to be met by cold-adapted enzyme variants providing more rate enhancement than the corresponding warm-adapted variants (Figure 1A). This model predicts that cold-adapted variants are generally faster than warm-adapted variants when assayed at a common temperature (Figure 1B). Indeed, this behavior has been reported for diverse enzymes, and these observations have been taken as support for this model (Figure 1C and D; Collins and Gerday, 2017; Feller and Gerday, 1997; Siddiqui and Cavicchioli, 2006; Smal\u00e5s et al., 2000).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig1-v1.jpg)\n\n**Figure 1.:** (A) According to the rate compensation model of cold adaptation, a cold-adapted variant (blue circle) has larger rate enhancement than a warm-adapted variant (red circle). The dashed line represents the uncatalyzed reaction, the solid line represents the catalyzed reaction, and the arrows represent the rate enhancement at the respective organism TGrowth. (B) When variants are assayed at a common temperature, rate compensation predicts a faster reaction for the enzyme from the cold-adapted organism, corresponding to a rate ratio (kcold/kwarm) of greater than one and a negative slope of rate vs. TGrowth (mrate). (C, D) Rate comparisons of warm-adapted and cold-adapted enzyme variants made at identical temperatures from cold adaptation literature spanning indicated reactions with substrate specified in parentheses (Collins and Gerday, 2017; Feller and Gerday, 1997; Siddiqui and Cavicchioli, 2006; Smal\u00e5s et al., 2000). The black vertical lines represent no rate enhancement change with temperature (i.e., rate ratio = 1).\n\nThe observed effects on enzymatic rate constants (Figure 1C and D) have also led to proposals of general physical models for cold adaptation linked to flexibility, as outlined in Feller and Gerday, 2003; Fields et al., 2015; \u00c5qvist et al., 2017; Arcus et al., 2016; Nguyen et al., 2017; Saavedra et al., 2018. Further, features identified in comparative structural analyses of cold- and warm-adapted enzymes, such as fewer surface hydrogen bonds and salt bridges (Cai et al., 2018), have been suggested to increase flexibility and thereby increase catalysis (Mandelman et al., 2019; Park et al., 2018a; Park et al., 2018b). Correspondingly, the study of cold adaptation may have the potential to provide generalizable insights into physical properties of enzymes that make them better catalysts, a longstanding challenge in the field (Blow, 2000; Hammes et al., 2011; Kraut et al., 2003; Ringe and Petsko, 2008). From a practical perspective, the prediction of enhanced catalysis by cold-adapted enzymes has motivated low-temperature bioprospecting for biocatalysts to use in industrial processes (Bhatia et al., 2021; Bruno et al., 2019; Kuddus, 2018; Santiago et al., 2016).\n\nGiven the theoretical and practical implications of the proposed relationship between enzyme rate enhancement and organism growth temperature, we sought to test the generality of the rate compensation model of temperature adaptation. We collated enzyme rate constant data (Chang et al., 2021) and organism optimal growth temperature (TGrowth) (Engqvist, 2018) for 2223 reactions using public databases. The results revealed no enrichment of faster reactions with colder growth temperatures, and thus did not support increased rate enhancement with decreasing environmental temperature as a prevalent adaptation in nature. Further, we found that most rate constant variation for the enzyme ketosteroid isomerase (KSI) is not accounted for by TGrowth despite strong evidence for temperature adaptation within its active site (Pinney et al., 2021). In contrast, a similar broad analysis revealed that stability correlates with TGrowth, as expected. Our results suggest that temperature exerts a weaker selection pressure on enzyme rate enhancement than stability and that other evolutionary forces are responsible for most variation in enzymatic rate enhancements.\n\n## Results\n\n### Systematically testing the rate compensation model\n\nTo investigate temperature adaptation of enzyme rate enhancement, we paired rate constant data from the BRENDA database (Chang et al., 2021) to organism growth temperatures. We simplified organism temperatures that may span changing conditions (Doblin and van Sebille, 2016) by matching the species name associated with the enzyme variant with the organism optimal growth temperature (TGrowth) (Engqvist, 2018). Of 76,083 kcat values in BRENDA, we found that 49,314 were for wild-type enzymes. Of these data, 16,543 values matched to microorganisms with known TGrowth values. We selected reactions in the database with variants from more than one organism, spanning 7086 kcat values for 2223 reactions across 815 organisms with at least two variants per reaction (Figure 2A). These reactions spanned a temperature range of 1\u201383\u00b0C (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig2-v1.jpg)\n\n**Figure 2.:** (A) Enzyme variants per reaction of wild-type enzyme kcat values (n = 11,480 reactions) matched to TGrowth. (B) Reactions with more than one enzyme variant (n = 2223 reactions). (C) Rate ratio distribution of the rate at the coldest TGrowth (kcold) divided by the rate of the variant from the warmest TGrowth (kwarm) (median = 1.1-fold, 95% CI [1.00, 1.22], n = 2223 reactions). Vertical line at rate ratio = 1. For clarity, only data with rate ratios between 10\u20133 and 103 are shown (>95% of the reactions). (D) Rate ratio (kcold/kwarm) data (solid line, n = 2223 from panel C) compared to fold change control distribution (same TGrowth; dashed line, median = 1.0-fold, 95% CI [0.89, 1.13], n = 615 reactions; p = 0.21, Mann\u2013Whitney U test, two-sided). The black vertical line represents no rate enhancement change with temperature (i.e., rate ratio = 1). (E, F) The significance and magnitude of the linear fit of reaction rate as a function of TGrowth for negative slopes (E, n = 487) and positive slopes (F, n = 464) in log space. Enzyme Commission (E.C.) number and (substrate) indicated for reactions significantly associated with temperature (Bonferroni correction; p-value < 5.3 \u00d7 10\u20135, n = 951). Dotted horizontal lines at p = \u2212log10(5.3 \u00d7 10\u20135). 5.3.1.1: triose-phosphate isomerase; G3P: glyceraldehyde 3-phosphate; 3.1.1.74: cutinase; 4-NPB: 4-nitrophenyl butyrate.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Distribution of kcat rate ratio values including only measurements made at 25\u00b0C and (B) 37\u00b0C. (C) Distribution of rate ratios with TGrowth range >\u220620\u00b0C and (D) TGrowth range >60\u00b0C. Reported p-values from two-sided Mann\u2013Whitney U test comparing filtered data (solid line) and the control data (dotted line, see Materials and methods).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Variants per reaction of wild-type enzyme kcat values (n = 5598 reactions) matched to TGrowth. (B) Number of reactions spanning the specified TGrowth range (n = 953 reactions with >1 variant). (C) kcat/KM rate ratio (kcold/kwarm) distribution (median = 0.93-fold, 95% CI [0.78, 1.12], n = 953 reactions). Gray vertical line at rate ratio = 1. (D) kcat/KM rate ratio (kcold/kwarm) data (black line, n = 953 reactions) with kcat/KM rate ratio control (gray line, median = 1.00-fold, 95% CI [0.82, 1.21], n = 307 reactions) determined in the same way as the kcat rate ratio control in the main text (see Materials and methods) (p = 0.80, Mann\u2013Whitney U test, two-sided). For clarity, only data with rate ratios between 10\u20133 and 103 are shown, representing >90% rate ratio data in (C) and >83% of rate ratio control values in (D). Black vertical line represents no rate change with temperature (i.e., rate ratio = 1).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Reactions with the rate constants of constituent variants in order of mrate p-value (for all reactions shown, p < 5.2 \u00d7 10\u20133). mrate is the slope of log10(kcat) vs. TGrowth. Note different scales for the axes. 5.3.1.1: triose-phosphate isomerase; 3.1.174: cutinase; 2.4.1.25: 4-alpha-glucanotransferase; 1.1.1.86: ketol-acid reductoisomerase; 3.5.1.19: nicotinamidase; 6.3.2.2: glutamate-cysteine ligase; 1.3.1.9: enoyl-[acyl-carrier-protein] reductase (NADH); 1.1.1.1: alcohol dehydrogenase; 2.3.1.57: diamine N-acetyltransferase.\n\nFor each enzyme reaction, we first calculated the rate ratio (kcold/kwarm) between the rate constant of the variant from the lowest growth temperature organism and the rate constant of the variant from the highest growth temperature organism. We observed rate ratios greater than one (1142 reactions) as predicted by rate compensation, but nearly the same number of rate ratios of less than one (1082 reactions) (Figure 2C, compare with Figure 1D), providing no support for widespread or predominant rate compensation.\n\nTo assess whether rate constant trends were obscured by mixed assay temperatures or narrow TGrowth ranges, we analyzed the distributions of rate ratios separated by assay temperature (25\u00b0C or 37\u00b0C; Figure 2\u2014figure supplement 1A and B) and the rate ratios for data representing wider TGrowth ranges (>\u220620\u00b0C or >\u220660\u00b0C; Figure 2\u2014figure supplement 1C and D). No temperature-dependent trends emerged, supporting the above conclusion of an absence of widespread rate compensation.\n\nTo derive a control distribution, we compared enzyme variant rate constants originating from different organisms with identical TGrowth values. We found 615 reactions with more than one variant assigned the same TGrowth, and we calculated the rate ratio and its reciprocal (kmax/kmin and kmin/kmax) for each reaction. This control distribution (dashed line, Figure 2D) was indistinguishable from the data distribution of rate ratios across TGrowth (solid line, Figure 2D; p = 0.21, Mann\u2013Whitney U test, two-sided). Analogous analyses of kcat/KM values lead to the same conclusions (Figure 2\u2014figure supplement 2).\n\nAs it is not possible to prove the absence of a relationship (Altman and Bland, 1995), we examined the slope (mrate) of kcat values vs. TGrowth for each of the 951 reactions with >2 variants (Figure 2D and E, Figure 2\u2014figure supplement 3) to address whether there might be a limited set of enzyme reactions exhibiting significant cold adaptation through a mechanism of enhanced rate. We found two reactions (triose-phosphate isomerase with glyceraldehyde 3-phosphate and cutinase with 4-nitrophenyl butyrate) significantly but positively associated with TGrowth (Bonferroni correction; p-value < 5.3 \u00d7 10\u20135, n = 951).\n\nIn summary, the data provide no indication of increased rate enhancements as a consequence of decreasing TGrowth. These results suggest that rate compensation is not a universal or prevalent consequence of temperature adaptation. The prior conclusion of widespread temperature adaptation may have arisen from the use of a small set of enzymes (n = 28; Figure 1C and D) or from inadvertent confirmation bias (Nickerson, 1998).\n\n### Testing the rate compensation model for the enzyme KSI\n\nTo probe rate compensation in greater depth, we turned to the enzyme KSI for which recent data has demonstrated rate compensation (Pinney et al., 2021). Specifically, the change of a single active site residue at position 103 from serine (S103, prevalently found in warm-adapted KSI variants) to protonated aspartic acid (D103, prevalently found in mesophilic KSI variants) provided improved activity from a stronger hydrogen bond while also sacrificing stability by introducing an unfavorable protonation coupled to folding. We therefore used KSI to more deeply investigate the potential for rate compensation by assaying 20 variants that vary in sequence and TGrowth (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig3-v1.jpg)\n\n**Figure 3.:** (A) Unrooted maximum likelihood phylogenetic tree of KSI variants. Closed circles represent bootstrap values of >70%; open circles represent bootstrap values of 40\u201370%. (B) The mechanism of isomerization of the steroid 5 (10)-estrene-3,17-dione by KSI. 5 (10)-EST was used to allow direct measurement of the rate-limiting chemical step kcat (Pollack et al., 1986). (C) Activity of KSI variants (kcat) at a common assay temperature of 25\u00b0C. Error bars represent standard deviation of at least two different experimental replicates varying [E] at least 5-fold. KSI variants with D103 are represented in blue, S103 in red, and E103 in gray (Pseudomonas putida numbering throughout). (D) Activity (log10(kcat)) of KSI variants at a common assay temperature (25\u00b0C) vs. organism growth temperature (TGrowth) (n = 20, mrate = \u20130.006, R2 = 0.01, p = 0.02).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The primary sequence variation of each KSI variant ranges from 20% to 75% amino acid identity.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Far ultraviolet CD spectra at 5\u00b0C (blue) and 25\u00b0C (red) are indistinguishable. Measurements for each variant were made at an enzyme concentration of 20 \u00b5M.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Rate of KSI variants (kcat/KM) at a common assay temperature (TAssay) of 25\u00b0C. KSI variants with D103 are represented in blue, S103 in red, and E103 in gray (Pseudomonas putida numbering). (B) Rates (kcat/KM) of KSI variants at 25\u00b0C assay temperature (TAssay) vs. organism growth temperature (TGrowth) (n = 20, mrate = 0.01, R2 = 0.01, p = 4 \u00d7 10\u20137). (C) Rates (kcat/KM) of KSI variants at 15\u00b0C assay temperature (TAssay) vs. organism growth temperature (TGrowth) (n = 20, mrate = 0.003, R2 = 0.001, p = 3 \u00d7 10\u20137). (D) Rates (kcat) of KSI variants at 15\u00b0C assay temperature (TAssay) vs. organism growth temperature (TGrowth) (n = 20, mrate = \u20130.01, R2 = 0.02, p = \u20130.11). Error bars represent standard deviation of at least two different experimental measurements varying [E] at least 5-fold (25\u00b0C) or 2-fold (15\u00b0C).\n\nKSI catalyzes the double bond isomerization of steroid substrates (Figure 3B) and is predicted to be part of a pathway that enables degradation of steroids for energy and carbon metabolism in bacteria (Horinouchi et al., 2010). KSI variants were identified by sequence relatedness to known KSIs. The 20 selected KSI variants ranged between 20% and 75% sequence identity to each other (Figure 3\u2014figure supplement 1) and were selected from bacteria originating from environments spanning glaciers, ocean floor, soil, and wastewater with reported TGrowth values from 15\u00b0C to 46\u00b0C (Figure 3\u2014source data 1). Each purified KSI demonstrated similar circular dichroism (CD) spectra at 5\u00b0C and 25\u00b0C, suggesting that variants were not unfolding at the 25\u00b0C assay temperature (Figure 3\u2014figure supplement 2). All putative KSI variants exhibited isomerase activity on the steroid substrate 5 (10)-estrene-3,17-dione (5 (10)-EST) (Figure 3C).\n\nWe observed that the KSIs with the prevalent cold-adapted residue (D103 and the similar residue E103, Pseudomonas putida numbering) were not uniformly faster than other KSIs in kcat (Figure 3C) or kcat/KM (Figure 3\u2014figure supplement 3). The observation that one of the fastest variants contained serine at this position indicates that there are additional factors that influence its rate enhancement (Figure 3C and see Discussion).\n\nFor KSI, the value of kcat decreased as a function of TGrowth, but the shallow slope (mrate = \u20130.006, p = 0.02) (Figure 3D) and the small coefficient of determination (R2 = 0.01) of this relationship indicate that TGrowth accounts for little of the observed 80-fold rate variation. Similar activity trends were observed at an assay temperature of 15\u00b0C (Figure 3\u2014figure supplement 3).\n\n### Testing stability compensation using literature data\n\nThe absence of evidence for rate compensation led us to reinvestigate the widely accepted relationship between stability and growth temperature. Prior work has shown that the mean temperature optimum of enzymes correlates well with organism TGrowth (r = 0.75, Engqvist, 2018), but enzyme temperature optima reflect a combination of rate and stability effects. To isolate stability, we surveyed the relationship between stability and TGrowth using the ProThermDB, a collection of experimental data of protein and mutant stability (Nikam et al., 2021). Across 433 wild-type variants present in this database, we observed a significant relationship between Tm and TGrowth (Figure 4A, R2 = 0.43, p = 2 \u00d7 10\u201354). For the 43 protein families with more than one reported variant, 39 had a higher melting temperature than their cold-adapted counterpart (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72884/elife-72884-fig4-v1.jpg)\n\n**Figure 4.:** (A) Wild-type Tm stability data from ProThermDB as a function of organism TGrowth. Dashed black line represents a linear fit (n = 433, R2 = 0.43). (B) Fold change (Tm cold/Tm warm) of wild-type protein variants (n = 43, median = 0.81, 95% [0.70, 0.85]). The black vertical line represents no change (i.e., fold change = 1).\n\n## Discussion\n\nEnzymes have been widely posited to adapt to reduced temperature by increasing rate enhancement (Figure 1A and B; Collins and Gerday, 2017; D\u2019Amico et al., 2003; Siddiqui and Cavicchioli, 2006; Zecchinon et al., 2001). Our results do not support this intuitive and common model as we found that cold-adapted enzyme variants are not generally faster than their warm-adapted counterparts. Even though there was prior evidence for temperature adaptation of the enzyme KSI that is accompanied by rate effects, we found that little of its overall rate variation was accounted for by organismal TGrowth, suggesting instead that stability is the dominant driving force underlying the previously identified changes. Our observations suggest that enzyme rate enhancement is unlikely to be the primary trait selected for during adaptation to colder environmental temperatures, broadly and in the model system KSI. It has been assumed throughout the literature that cold-adapted enzymes are faster than warm-adapted enzymes, based on the data presented in Figure 1C and D; however, our results do not support this model (Figure 2C and D).\n\nPerhaps implicit in the expectation that catalysis will increase in cold adaption is the perspective that faster enzymes are better enzymes, with enzymes reacting at the diffusional limit denoted as \u2018perfect\u2019 (Knowles and Albery, 1977). However, most enzymes operate well below the diffusional limit (Bar-Even et al., 2011), underscoring that an optimal reaction rate constant may be different than the maximal enzyme rate constant. There are multiple reasons why optimal or observed enzyme rate constants may differ from maximal rate constants. Rate optimization in vivo may be accomplished by altering gene expression (Somero, 2004), isoform expression (Somero, 1995), or cellular pH and osmolytes (Hochachka and Lewis, 1971; Yancey and Somero, 1979). Alternatively, the optimal enzyme rate may be lower than the maximal rate to channel metabolites and coordinate metabolism (Prentice et al., 2020; Wortel et al., 2018). Further, models of enzyme-metabolite pathway evolution predict that the subset of enzymes that govern pathway flux through rate-limiting steps are under strong rate selection (Noda-Garcia et al., 2018), and it is also possible that maximal enzyme rates are not evolutionarily accessible (Obolski et al., 2018). We speculate that rate compensation may be more probable for highly related species that live in similar environments, such as marine species that live at different latitudes or depths but otherwise experience little environmental difference (Dong and Somero, 2009).\n\nIn contrast to our findings with rate, we observed strong evidence for stability compensation. The temperature dependence of protein unfolding (Becktel and Schellman, 1987) may exert a larger driving force on adaptation than the temperature dependence of rate. There may be an additional strong selection pressure to avoid unfolded states, as misfolded protein has been demonstrated to have deleterious fitness effects (Geiler-Samerotte et al., 2011) and cells expend considerable energy to clear misfolded variants using chaperones and degradation pathways (Clague and Urb\u00e9, 2010; Hartl et al., 2011; Lund, 2001). Additionally, adaptive paths toward stability may be more abundant and more accessible than analogous paths toward rate enhancement, given that each protein may be stabilized individually through a wide variety of mechanisms (Hart et al., 2014) and less constrained by biological context than an enzyme evolving synergistically with complex metabolic networks. The recent discovery of 158,184 positions from 1005 enzyme families that vary with growth temperature may further expand our understanding of the molecular strategies that underlie protein stabilization (Pinney et al., 2021).\n\nThe observation that KSI variants from high temperature correlate with serine at position 103 may reflect selection for the stabilizing effects of S103 (Pinney et al., 2021). In contrast, the observation that one of the fastest KSI variants contains the stabilizing but slowing active site residue (the serine at position 103 in msKSI, Figure 3C) may illustrate some of the evolutionary complexity alluded to above. As observed with other KSI variants, the msKSI variant with the wild-type serine residue mutated to aspartic acid (S103D) has increased activity and decreased stability. However, in msKSI, the decreased stability from the S103D mutation renders it partially unfolded even in the absence of denaturants (Pinney et al., 2021). This result suggests a model where drift or other factors have led to an overall destabilized scaffold, such that msKSI cannot accommodate the activating S103D change (without unfolding) and has made other as yet unidentified amino acid changes to increase activity.\n\nFlexibility has been posited to mechanistically link rate and stability, with multiple underlying interconnections discussed (see Supplementary file 1; \u00c5qvist et al., 2017; Arcus et al., 2016; D\u2019Amico et al., 2003; Daniel and Danson, 2010; Nguyen et al., 2017; Saavedra et al., 2018). Nevertheless, there are many degrees of freedom in an enzyme and most motions are not expected to be coupled to the enzyme reaction coordinate. Our observation of the absence of widespread rate compensation to temperature in contrast to observed stability compensation is consistent with this perspective, as are prior examples of enzyme stabilization in the absence of detrimental rate effects (Minges et al., 2019; Miyazaki et al., 2000; Siddiqui, 2017; Wintrode and Arnold, 2000; Zhao and Feng, 2018). A more complex relationship between these traits seems likely and underscores the need to relate individual and coupled atomic motions to overall flexibility, catalysis, and stability to unravel their intricate interconnections.\n\nTo understand why enzyme properties such as rate and stability measured with purified enzymes vary across organisms, we will need to determine their effects on fitness across biological and environmental contexts, including environments that vary in temperature. Such studies may synergistically deepen our understanding of enzyme function, organismal evolution, and ecosystems.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3)</td>\n      <td>Sigma-Aldrich</td>\n      <td>CMC0016</td>\n      <td>Electrocompetent cells for protein expression</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>5 (10)-estrene-3,17-dione</td>\n      <td>Steraloids</td>\n      <td>E4500-000</td>\n      <td>Ketosteroid isomerase reaction substrate</td>\n    </tr>\n  </tbody>\n</table>\n\n### Literature enzyme rate analysis\n\nTo capture enzyme rates reported throughout the literature, the BRENDA database was accessed using SOAP July 2021 (Chang et al., 2021) (www.brenda-enzymes.org) and the kcat and kcat/KM database entries retrieved by Enzyme Commission (E.C.) number were parsed for measurement value, substrate, rate, assay temperature, and variant (wild-type or mutant) status (Source Code 1). Microbial optimum growth temperature (Engqvist, 2018) values from median organism optimal growth temperatures for microbes in culture (TGrowth) were matched by organism name to rate entries. (Natural temperatures in the wild may differ. The definition of TGrowth used herein is the same as that used in the studies leading to the rate compensation model.) Rate data were filtered for kcat and kcat/KM values of wild-type enzymes. Reactions are defined by E.C. number\u2013substrate pair. The median value was taken in the case of multiple measurements of the same enzyme variant with the same substrate.\n\nThe rate ratio kcold/kwarm per reaction was determined by dividing rate constant of the enzyme from the organism with the minimum TGrowth by the rate constant of the enzyme from organism with the maximum TGrowth. We use the term \u2018cold-adapted variant\u2019 to refer to an enzyme from an organism annotated with lower TGrowth values. If a maximum or minimum TGrowth was shared between enzyme variants, then the median rate of the two variants was used in the rate ratio calculation. To account for enzyme rate variation arising independently of temperature, a control distribution from reactions with variants of the same TGrowth was derived. The fold change of the maximum value over the minimum value kmax/kmin and its reciprocal kmin/kmax was calculated for each reaction from the same TGrowth with at least two variants. To compare the rate ratio distribution of the data to the rate ratio control, the nonparametric two-sided Mann\u2013Whitney U test was used with a significance threshold of p < 0.05. As no temperature-dependent trends emerged when data were restricted to measurements made at 25\u00b0C or 37\u00b0C or when the TGrowth range was limited to >\u220620\u00b0C and >\u220660\u00b0C, we used all data in the main analysis. We determined confidence intervals of the median parameters of the rate ratio distributions by bootstrap analysis (boot package in R, 10,000 replications) (Canty and Ripley, 2021; Davison and Hinkley, 1997). The mrate values (slopes) per reaction were calculated by performing a linear regression relating the log10(rate) vs. organism TGrowth. Significance threshold, corrected for multiple tests, was p < 5.33 \u00d7 10\u22125 (Bonferroni correction; p < 0.05/951).\n\n### KSI variant identification, cloning, expression, and purification\n\nPutative KSI variants were identified by sequence relatedness to known KSI variants. Selection of variants was guided by associating putative KSI sequences with TGrowth by species (Engqvist, 2018). Seventeen variants were synthesized (GenScript or Twist Biosciences) and cloned (Gibson Assembly Protocol, New England Biolabs or Twist Biosciences) into pET-21(+) vectors. KSI variants were aligned using default parameters of Clustal Omega (Madeira et al., 2019) and the maximum likelihood tree was constructed using IQ-TREE with default parameters (Hoang et al., 2018; Nguyen et al., 2015). The constructs were expressed in Escherichia coli BL21(DE3) cells and purified as previously described (Kraut et al., 2010).\n\n### KSI kinetic measurements\n\nThe KSI substrate 5 (10)-estrene-3,17-dione (5 (10)EST) was purchased from Steraloids (Newport, RI). Reactions of purified KSIs with 5 (10)EST were monitored continuously at 248 nm using a Perkin Elmer Lambda 25 UV/Vis spectrometer with an attached VWR digital temperature controlled circulating water bath (Pinney et al., 2021). Temperatures within the cuvettes were measured post-reaction using a platinum electrode thermistor (Omega Engineering) and the temperature of the circulating water bath was modified to maintain a constant internal cuvette temperature between reactions. Reactions were conducted in 40 mM potassium phosphate buffer, pH 7.2, 1 mM disodium EDTA, with 2% DMSO as a co-solvent to maintain substrate solubility. The kinetic parameters kcat and KM were determined by fitting the observed initial velocity of each reaction as a function of 5 (10)EST concentration (9\u2013600 \u00b5M; six to seven different substrate concentrations per experiment) to the Michaelis\u2013Menten equation. Reported values of kcat and KM are the average of three to nine independent experiments with at least two different enzyme concentrations varied by at least 5-fold. Reported errors are the standard deviations of these values.\n\n### KSI CD\n\nCD spectra were collected for each KSI variant in 40 mM potassium phosphate buffer, pH 7.2, 1 mM EDTA, at enzyme concentration 20 \u00b5M at 5\u00b0C and 25\u00b0C. Measurements were made on a J-815 Jasco Spectrophotometer between 190 and 250 nm at 1 nm bandwidth and 50 nm/min scanning speed in a 0.1 cm cuvette (Hellma Analytics).\n\n### Literature stability analysis\n\nWild-type mutation type stability data were downloaded from ProThermDB (Nikam et al., 2021) with the following fields: protein information (entry, source, mutation, E.C. number), experimental conditions (pH, T, measure, method), thermodynamic parameters (Tm, state, reversibility), and literature (PubMed ID, key words, reference, author). Wild-type protein data were matched by species name to microbial optimal growth temperatures TGrowth (Engqvist, 2018).\n",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "01804289-fd16-4659-ba2d-6b647075f869",
+      "submission_id": "81651d17-726b-4bbc-8f34-0e77ec571f88",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frank Raushel, Texas A&M University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72884.sa0](https://doi.org/10.7554/eLife.72884.sa0)\n\nAre enzymes found in organisms that optimally grow at colder temperature are more active than the same enzymes found in organisms that optimally grow at warmer temperatures? Here, an assessment of the catalytic constants for approximately 2200 enzymes (obtained from the BRENDA database) showed no correlation between the relative catalytic activity and the optimum growth temperature. Further support for this conclusion was obtained from the measurement of the catalytic constants from a selection of ketosteroid isomerases from organisms that optimally grow between 15 and 46 degrees centigrade. Therefore, additional factors must dominate the selection pressure used to evolve enzymes of the appropriate catalytic activity. In contrast, growth temperature exerts a significant selective pressure on protein stability.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Frank Raushel, Texas A&M University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72884.sa1](https://doi.org/10.7554/eLife.72884.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Systematic investigation of the link between enzyme catalysis and cold adaptation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Philip Cole as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Additional discussion regarding the apparent effect of optimal growth temperature and the kinetic constants is warranted for Figures 1C/D in contrast to the data presented in Figures 2C/D.\n\n2. For the data presented in Figure 2C the authors should comment on the apparent fact that the rate constants for catalytic activity for the cold and warm adapted enzyme were not conducted at the same temperature. This issue is further complicated by the issue raised by reviewer 3 with regard to the results for amylase conducted at 3 different temperatures.\n\n3. The revision should also address a supplementary issue raised by reviewer 2 with regard to the definition of optimal growth temperature: What does the optimal growth temperature for an organism tell us about an organisms response to evolutionary pressure in the wild? Organisms generally evolve to grow over a fairly wide range of temperatures, not at a single temperature. Optimal growth temperatures are determined for growth in a defined medium, generally one that favors growth; and, not the more rigorous conditions for growth in the wild.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Figure 1C appears to show that those enzymes from the cold adapted organisms are more catalytically active than those from warm adapted organisms. The authors should be required explain in more detail why the correlations that they observe from the data obtained from BRENDA are more appropriate than the correlations observed by others.\n\n2. The paragraph from lines 188 through 195 is confusing. When the authors write S103D to designate a mutation it is not so clear as to what residue now constitutes the \"wild-type\" and what is considered the \"mutation\" when they are discussing msKSI.\n\n3. I was surprised to find that the kcat values for KSI vary by approximately 100. Since the growth temperature apparently not contribute to this difference what other factors would lead to such large differences in these rate constants?\n\nReviewer #2 (Recommendations for the authors):\n\nThe manuscript lacks precision in the use of the term rate. For example:\n\n\"Prior work has shown that temperature optima for observed enzyme rates.\u2026. Rate has no meaning in this sentence. Temperature optima are determined for plots of temperature against some kinetic parameter, such as kcat.\n\n\"The observed rate effects (Figure 1C, Figure 1D).\" These Figures describe effects on the rate constant kcat.\n\n\"Testing the rate compensation model\u2026..\" What is meant by \"rate compensation model\"? Nothing came up in a Google search for this term.\n\nReviewer #3 (Recommendations for the authors):\n\nThe title of the paper is not appropriate. The data survey here is not a systematic investigation of the whole question of the relationship of enzyme catalysis to cold adaptation. For example, the focus here is on single enzymes only without consideration of pathway kinetics.\n\nThe discussion of existing proposals on temperature dependence of activity is limited and somewhat superficial, particularly with regard to proposals lumped together under the general headings of flexibility ('specific' and 'general'). Previous relevant work of Danson et al., showing that different conformational states can account for observed behavior, should be considered. SI: \"Flexibility has been posited to mechanistically link rate and stability, with multiple underlying interconnections discussed\" \u2013 yes, there have been many such proposals, but most of the references cited here do not do so. Rather, they discuss temperature dependence of rates independent of stability.\n\nAltogether, the presentation is not clear and is confusing. The hypothesis that the authors outline is clear, but the approach is too simplistic. If we take the classic amylase example from Feller and Gerday (cited by the authors), then the ratio of rates at a common temperature for the psychrophile and mesophile would give ratios of >1 for T<37, ~1 at T=37 and <1 for T>37. So it really depends on the common temperature that chosen for the comparison and cannot provide a general explanation.\n\nThe data presented are useful, but the accompanying discussion is significantly incomplete. As a whole, this work does not provide significant new insight.\n",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4a674c6b-c3ac-4393-8227-227e3a26c0d0",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C1",
+      "claim": "Cold temperature is prevalent across the biosphere and slows the rates of chemical reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cold temperature is prevalent across the biosphere and slows the rates of chemical reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the effect of temperature on reaction rates, supported by citations in the text (Arrhenius, 1889; Wolfenden et al., 1999).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "43d5ab9a-e30c-44f5-98e7-216ab71eb240",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C2",
+      "claim": "Increased catalysis has been predicted to be a dominant adaptive trait of enzymes to reduced temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased catalysis has been predicted to be a dominant adaptive trait of enzymes to reduced temperature, and this expectation has informed physical models for enzyme catalysis and influenced bioprospecting strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and represents a prevailing hypothesis in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "47251f08-6536-4a40-babe-9f8d7fb16c4b",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C3",
+      "claim": "The expectation of increased catalysis in cold adaptation has informed physical models for enzyme catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased catalysis has been predicted to be a dominant adaptive trait of enzymes to reduced temperature, and this expectation has informed physical models for enzyme catalysis and influenced bioprospecting strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the rate compensation model and is supported by citations to physical models (Feller and Gerday, 2003; Fields et al., 2015; \u00c5qvist et al., 2017; Arcus et al., 2016; Nguyen et al., 2017; Saavedra et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "faf0ab69-9ef2-4a2d-948e-5ee55298a307",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C4",
+      "claim": "The expectation of increased catalysis in cold adaptation has influenced bioprospecting strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased catalysis has been predicted to be a dominant adaptive trait of enzymes to reduced temperature, and this expectation has informed physical models for enzyme catalysis and influenced bioprospecting strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to bioprospecting literature (Bhatia et al., 2021; Bruno et al., 2019; Kuddus, 2018; Santiago et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "4a6444fb-e1c1-47a5-85e6-6b869fd536ea",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C5",
+      "claim": "2223 enzyme reactions were paired with their organism's optimal growth temperature for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To systematically test rate enhancement as an adaptive trait to cold, we paired kinetic constants of 2223 enzyme reactions with their organism's optimal growth temperature (TGrowth) and analyzed trends of rate constants as a function of TGrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental approach and dataset size used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "8abb0ad1-8d88-4815-b067-4464a4f849db",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C6",
+      "claim": "The data do not support a general increase in rate enhancement in cold adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data do not support a general increase in rate enhancement in cold adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary conclusion from the analysis of 2223 enzyme reactions, supported by the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "e63d6e59-49a8-4fc7-9917-d69bb1353129",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C7",
+      "claim": "In ketosteroid isomerase (KSI), there is prior evidence for temperature adaptation from a change in an active site residue that results in a tradeoff between activity and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model enzyme ketosteroid isomerase (KSI), there is prior evidence for temperature adaptation from a change in an active site residue that results in a tradeoff between activity and stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Pinney et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "790c9a3d-9d39-4e27-98b9-af14bda7487b",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C8",
+      "claim": "Little of the rate constant variation for 20 KSI variants was accounted for by TGrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we found that little of the rate constant variation for 20 KSI variants was accounted for by TGrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on 20 KSI variants presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "55e539c9-5341-4d57-a410-9ac0bff8bd2b",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C9",
+      "claim": "A correlation between stability and TGrowth was observed across 433 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, and consistent with prior expectations, we observed a correlation between stability and TGrowth across 433 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from ProThermDB presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "95083ebc-ee26-4d12-9441-ceefbaf6c101",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C10",
+      "claim": "Temperature exerts a weaker selection pressure on enzyme rate constants than stability.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that temperature exerts a weaker selection pressure on enzyme rate constants than stability and that evolutionary forces other than temperature are responsible for the majority of enzymatic rate constant variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of rate and stability data across the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "f9453857-f8f4-4d6c-be85-700d4c6a0f73",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C11",
+      "claim": "Evolutionary forces other than temperature are responsible for the majority of enzymatic rate constant variation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that temperature exerts a weaker selection pressure on enzyme rate constants than stability and that evolutionary forces other than temperature are responsible for the majority of enzymatic rate constant variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of correlation between rate constants and TGrowth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "aaa6e36a-dc1a-4b91-a1c8-39340f2c4b8e",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C12",
+      "claim": "The maintenance of enzyme rates has been suggested to be a universal challenge for organisms at colder temperatures that do not regulate their internal temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "As reaction rates are reduced at lower temperatures (Arrhenius, 1889; Wolfenden et al., 1999), the maintenance of enzyme rates has been suggested to be a universal challenge for organisms at colder temperatures that do not regulate their internal temperature (D'Amico et al., 2003; Fields et al., 2015; Siddiqui and Cavicchioli, 2006; Zecchinon et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "5c9260c2-9f45-482c-9952-762f1dea4a05",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C13",
+      "claim": "According to the rate compensation model, cold-adapted enzyme variants provide more rate enhancement than warm-adapted variants.",
+      "claim_type": "EXPLICIT",
+      "source": "According to what we term the rate compensation model of temperature adaptation, this challenge has been suggested to be met by cold-adapted enzyme variants providing more rate enhancement than the corresponding warm-adapted variants (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the rate compensation model, illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "e616a0dc-7de3-430d-9d28-02cba3d451a0",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C14",
+      "claim": "The rate compensation model predicts that cold-adapted variants are generally faster than warm-adapted variants when assayed at a common temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "This model predicts that cold-adapted variants are generally faster than warm-adapted variants when assayed at a common temperature (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction of the rate compensation model, illustrated in Figure 1B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "6e64d36b-1045-47a7-a42c-cb98c5817012",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C15",
+      "claim": "Rate compensation behavior has been reported for diverse enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this behavior has been reported for diverse enzymes, and these observations have been taken as support for this model (Figure 1C and D; Collins and Gerday, 2017; Feller and Gerday, 1997; Siddiqui and Cavicchioli, 2006; Smal\u00e5s et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior literature and data shown in Figure 1C and D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "6f458206-5a60-4ef3-a2a9-46748ba4c28e",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C16",
+      "claim": "The observed effects on enzymatic rate constants have led to proposals of general physical models for cold adaptation linked to flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed effects on enzymatic rate constants (Figure 1C and D) have also led to proposals of general physical models for cold adaptation linked to flexibility, as outlined in Feller and Gerday, 2003; Fields et al., 2015; \u00c5qvist et al., 2017; Arcus et al., 2016; Nguyen et al., 2017; Saavedra et al., 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to physical models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "6457b7f8-3fa9-485c-8229-74697a25507b",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C17",
+      "claim": "Features identified in comparative structural analyses of cold- and warm-adapted enzymes include fewer surface hydrogen bonds and salt bridges.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, features identified in comparative structural analyses of cold- and warm-adapted enzymes, such as fewer surface hydrogen bonds and salt bridges (Cai et al., 2018), have been suggested to increase flexibility and thereby increase catalysis (Mandelman et al., 2019; Park et al., 2018a; Park et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "17cd93a6-9408-4082-a4b3-bfb0a15ee003",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C18",
+      "claim": "Fewer surface hydrogen bonds and salt bridges have been suggested to increase flexibility and thereby increase catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, features identified in comparative structural analyses of cold- and warm-adapted enzymes, such as fewer surface hydrogen bonds and salt bridges (Cai et al., 2018), have been suggested to increase flexibility and thereby increase catalysis (Mandelman et al., 2019; Park et al., 2018a; Park et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "559ecb1e-cd87-4fa4-b570-abb432c06468",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C19",
+      "claim": "The study of cold adaptation may have the potential to provide generalizable insights into physical properties of enzymes that make them better catalysts.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, the study of cold adaptation may have the potential to provide generalizable insights into physical properties of enzymes that make them better catalysts, a longstanding challenge in the field (Blow, 2000; Hammes et al., 2011; Kraut et al., 2003; Ringe and Petsko, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential implications of cold adaptation studies, supported by citations to the challenge of understanding enzyme catalysis.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "1d9269c5-f2c6-411d-8e94-4669eae66ad8",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C20",
+      "claim": "The prediction of enhanced catalysis by cold-adapted enzymes has motivated low-temperature bioprospecting for biocatalysts to use in industrial processes.",
+      "claim_type": "EXPLICIT",
+      "source": "From a practical perspective, the prediction of enhanced catalysis by cold-adapted enzymes has motivated low-temperature bioprospecting for biocatalysts to use in industrial processes (Bhatia et al., 2021; Bruno et al., 2019; Kuddus, 2018; Santiago et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to bioprospecting literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "3fdc7f30-055d-48a8-af5a-3b8304486438",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C21",
+      "claim": "Of 76,083 kcat values in BRENDA, 49,314 were for wild-type enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 76,083 kcat values in BRENDA, we found that 49,314 were for wild-type enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of data filtering from the BRENDA database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "e86167f8-8f26-48c0-bf1d-450175c069f1",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C22",
+      "claim": "16,543 kcat values matched to microorganisms with known TGrowth values.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these data, 16,543 values matched to microorganisms with known TGrowth values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of data matching results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "79604a26-26b3-42f1-8330-ad3afa68f1f1",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C23",
+      "claim": "7086 kcat values for 2223 reactions across 815 organisms with at least two variants per reaction were selected.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected reactions in the database with variants from more than one organism, spanning 7086 kcat values for 2223 reactions across 815 organisms with at least two variants per reaction (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the dataset used for analysis, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "d27c2105-e5a6-4d84-8c95-2065ee0eb28d",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C24",
+      "claim": "The reactions spanned a temperature range of 1\u201383\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "These reactions spanned a temperature range of 1\u201383\u00b0C (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the temperature range in the dataset, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "25e9f7d0-de9e-4543-9bf7-f00b7d7f54b3",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C25",
+      "claim": "1142 reactions had rate ratios greater than one.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed rate ratios greater than one (1142 reactions) as predicted by rate compensation, but nearly the same number of rate ratios of less than one (1082 reactions) (Figure 2C, compare with Figure 1D), providing no support for widespread or predominant rate compensation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the data analysis results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "f4d71d6b-4845-4d94-8360-f6831034d68c",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C26",
+      "claim": "1082 reactions had rate ratios of less than one.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed rate ratios greater than one (1142 reactions) as predicted by rate compensation, but nearly the same number of rate ratios of less than one (1082 reactions) (Figure 2C, compare with Figure 1D), providing no support for widespread or predominant rate compensation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the data analysis results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "b5153ce9-42ff-4a15-89f8-fca4ac727853",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C27",
+      "claim": "615 reactions had more than one variant assigned the same TGrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 615 reactions with more than one variant assigned the same TGrowth, and we calculated the rate ratio and its reciprocal (kmax/kmin and kmin/kmax) for each reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the control dataset used for comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "e4dce4d2-1055-4613-8268-8633457033c9",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C28",
+      "claim": "The control distribution was indistinguishable from the data distribution of rate ratios across TGrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "This control distribution (dashed line, Figure 2D) was indistinguishable from the data distribution of rate ratios across TGrowth (solid line, Figure 2D; p = 0.21, Mann\u2013Whitney U test, two-sided).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis (Mann-Whitney U test) and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "d8b3ffe0-bee0-4511-92ad-727de7ef5c60",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C29",
+      "claim": "Two reactions (triose-phosphate isomerase with glyceraldehyde 3-phosphate and cutinase with 4-nitrophenyl butyrate) were significantly but positively associated with TGrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "We found two reactions (triose-phosphate isomerase with glyceraldehyde 3-phosphate and cutinase with 4-nitrophenyl butyrate) significantly but positively associated with TGrowth (Bonferroni correction; p-value < 5.3 \u00d7 10\u20135, n = 951).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis with Bonferroni correction and shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "5a967d2b-7d94-4a9c-9bf0-0da8f2dd6623",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C30",
+      "claim": "The change of a single active site residue at position 103 from serine to protonated aspartic acid in KSI provided improved activity from a stronger hydrogen bond while also sacrificing stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the change of a single active site residue at position 103 from serine (S103, prevalently found in warm-adapted KSI variants) to protonated aspartic acid (D103, prevalently found in mesophilic KSI variants) provided improved activity from a stronger hydrogen bond while also sacrificing stability by introducing an unfavorable protonation coupled to folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Pinney et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "2a8762b1-e753-4eb4-8eb5-664b43e040a2",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C31",
+      "claim": "20 KSI variants were assayed that vary in sequence and TGrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore used KSI to more deeply investigate the potential for rate compensation by assaying 20 variants that vary in sequence and TGrowth (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the experimental approach, shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "eb051d46-03c4-4deb-bfaa-8e47ff4b4ddf",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C32",
+      "claim": "The 20 selected KSI variants ranged between 20% and 75% sequence identity to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The 20 selected KSI variants ranged between 20% and 75% sequence identity to each other (Figure 3\u2014figure supplement 1) and were selected from bacteria originating from environments spanning glaciers, ocean floor, soil, and wastewater with reported TGrowth values from 15\u00b0C to 46\u00b0C (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the sequence diversity in the KSI variants, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "02d90758-e722-4d6c-875f-c9ba53226604",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C33",
+      "claim": "KSI variants were selected from bacteria with reported TGrowth values from 15\u00b0C to 46\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The 20 selected KSI variants ranged between 20% and 75% sequence identity to each other (Figure 3\u2014figure supplement 1) and were selected from bacteria originating from environments spanning glaciers, ocean floor, soil, and wastewater with reported TGrowth values from 15\u00b0C to 46\u00b0C (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the temperature range of the organisms from which KSI variants were selected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "8e73303f-6f99-4f20-82f9-d53c7e09ec43",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C34",
+      "claim": "Each purified KSI demonstrated similar circular dichroism (CD) spectra at 5\u00b0C and 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Each purified KSI demonstrated similar circular dichroism (CD) spectra at 5\u00b0C and 25\u00b0C, suggesting that variants were not unfolding at the 25\u00b0C assay temperature (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD spectroscopy data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "81df2e82-2616-48f3-87d5-a3d5945caae4",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C35",
+      "claim": "All putative KSI variants exhibited isomerase activity on the steroid substrate 5 (10)-estrene-3,17-dione (5 (10)-EST).",
+      "claim_type": "EXPLICIT",
+      "source": "All putative KSI variants exhibited isomerase activity on the steroid substrate 5 (10)-estrene-3,17-dione (5 (10)-EST) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental activity measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "58353728-b605-4071-8f9d-c8d2f9231e23",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C36",
+      "claim": "The KSIs with the prevalent cold-adapted residue (D103 and E103) were not uniformly faster than other KSIs in kcat.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the KSIs with the prevalent cold-adapted residue (D103 and the similar residue E103, Pseudomonas putida numbering) were not uniformly faster than other KSIs in kcat (Figure 3C) or kcat/KM (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "0f201423-519e-4360-9882-a2e240049d6a",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C37",
+      "claim": "One of the fastest KSI variants contained serine at position 103.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that one of the fastest variants contained serine at this position indicates that there are additional factors that influence its rate enhancement (Figure 3C and see Discussion).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "a70f747a-08d6-4520-a2f0-5ffb67bf5316",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C38",
+      "claim": "For KSI, the value of kcat decreased as a function of TGrowth with a shallow slope (mrate = \u20130.006, p = 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "For KSI, the value of kcat decreased as a function of TGrowth, but the shallow slope (mrate = \u20130.006, p = 0.02) (Figure 3D) and the small coefficient of determination (R2 = 0.01) of this relationship indicate that TGrowth accounts for little of the observed 80-fold rate variation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by linear regression analysis of experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "e60fae1c-031b-490a-9021-dabd2f7d6dec",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C39",
+      "claim": "TGrowth accounts for little of the observed 80-fold rate variation in KSI.",
+      "claim_type": "EXPLICIT",
+      "source": "For KSI, the value of kcat decreased as a function of TGrowth, but the shallow slope (mrate = \u20130.006, p = 0.02) (Figure 3D) and the small coefficient of determination (R2 = 0.01) of this relationship indicate that TGrowth accounts for little of the observed 80-fold rate variation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the low R2 value (0.01) of the linear regression shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "ef78839d-f5e6-4e6f-914b-11d7d14e9420",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C40",
+      "claim": "The mean temperature optimum of enzymes correlates well with organism TGrowth (r = 0.75).",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has shown that the mean temperature optimum of enzymes correlates well with organism TGrowth (r = 0.75, Engqvist, 2018), but enzyme temperature optima reflect a combination of rate and stability effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Engqvist, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "c1384643-c453-4722-bd83-f8766fb817dd",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C41",
+      "claim": "Enzyme temperature optima reflect a combination of rate and stability effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has shown that the mean temperature optimum of enzymes correlates well with organism TGrowth (r = 0.75, Engqvist, 2018), but enzyme temperature optima reflect a combination of rate and stability effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the interpretation of temperature optima.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "f6ee7a62-c332-49f4-89e4-4048959f905d",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C42",
+      "claim": "Across 433 wild-type variants in ProThermDB, a significant relationship between Tm and TGrowth was observed (R2 = 0.43, p = 2 \u00d7 10\u201354).",
+      "claim_type": "EXPLICIT",
+      "source": "Across 433 wild-type variants present in this database, we observed a significant relationship between Tm and TGrowth (Figure 4A, R2 = 0.43, p = 2 \u00d7 10\u201354).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of data from ProThermDB shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "07be9cc9-4287-4caf-b02c-32a3ca0f6ab8",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C43",
+      "claim": "For the 43 protein families with more than one reported variant, 39 had a higher melting temperature than their cold-adapted counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 43 protein families with more than one reported variant, 39 had a higher melting temperature than their cold-adapted counterpart (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data from ProThermDB shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "b57d4d98-f817-46a7-bb52-bba16cee8e17",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C44",
+      "claim": "Cold-adapted enzyme variants are not generally faster than their warm-adapted counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results do not support this intuitive and common model as we found that cold-adapted enzyme variants are not generally faster than their warm-adapted counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary conclusion from the analysis of 2223 enzyme reactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "54deeecc-9dd4-484f-99ae-1635505ec508",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C45",
+      "claim": "Stability is the dominant driving force underlying the previously identified changes in KSI.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though there was prior evidence for temperature adaptation of the enzyme KSI that is accompanied by rate effects, we found that little of its overall rate variation was accounted for by organismal TGrowth, suggesting instead that stability is the dominant driving force underlying the previously identified changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low correlation between KSI rate and TGrowth combined with the known stability effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "552e6536-ef23-4261-86fe-8c810ed8ce45",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C46",
+      "claim": "Enzyme rate enhancement is unlikely to be the primary trait selected for during adaptation to colder environmental temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations suggest that enzyme rate enhancement is unlikely to be the primary trait selected for during adaptation to colder environmental temperatures, broadly and in the model system KSI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of correlation between rate and TGrowth across multiple datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "8646464b-6362-4b28-8ec0-ec17b4fa6065",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C47",
+      "claim": "Most enzymes operate well below the diffusional limit.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most enzymes operate well below the diffusional limit (Bar-Even et al., 2011), underscoring that an optimal reaction rate constant may be different than the maximal enzyme rate constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Bar-Even et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "4d5c84d4-88c6-4e34-a0df-bc8b36444445",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C48",
+      "claim": "An optimal reaction rate constant may be different than the maximal enzyme rate constant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most enzymes operate well below the diffusional limit (Bar-Even et al., 2011), underscoring that an optimal reaction rate constant may be different than the maximal enzyme rate constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that most enzymes operate below the diffusional limit.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "bb81b54d-e9a2-44e3-b0f6-b257765abfc9",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C49",
+      "claim": "Rate optimization in vivo may be accomplished by altering gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Rate optimization in vivo may be accomplished by altering gene expression (Somero, 2004), isoform expression (Somero, 1995), or cellular pH and osmolytes (Hochachka and Lewis, 1971; Yancey and Somero, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "3b228388-a5b6-4405-8041-7a957e2f2693",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C50",
+      "claim": "Rate optimization in vivo may be accomplished by altering isoform expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Rate optimization in vivo may be accomplished by altering gene expression (Somero, 2004), isoform expression (Somero, 1995), or cellular pH and osmolytes (Hochachka and Lewis, 1971; Yancey and Somero, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "ffb05b3c-d05e-42fe-9a7e-46abef949e93",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C51",
+      "claim": "Rate optimization in vivo may be accomplished by altering cellular pH and osmolytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rate optimization in vivo may be accomplished by altering gene expression (Somero, 2004), isoform expression (Somero, 1995), or cellular pH and osmolytes (Hochachka and Lewis, 1971; Yancey and Somero, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "19127744-24ec-47c2-96c6-6cb33a53daa7",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C52",
+      "claim": "The optimal enzyme rate may be lower than the maximal rate to channel metabolites and coordinate metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the optimal enzyme rate may be lower than the maximal rate to channel metabolites and coordinate metabolism (Prentice et al., 2020; Wortel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "bf41d6c8-7247-46f9-817b-7fca71e22492",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C53",
+      "claim": "Models of enzyme-metabolite pathway evolution predict that the subset of enzymes that govern pathway flux through rate-limiting steps are under strong rate selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, models of enzyme-metabolite pathway evolution predict that the subset of enzymes that govern pathway flux through rate-limiting steps are under strong rate selection (Noda-Garcia et al., 2018), and it is also possible that maximal enzyme rates are not evolutionarily accessible (Obolski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Noda-Garcia et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "5dde6103-a600-4c15-9bad-72ed1c485265",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C54",
+      "claim": "Maximal enzyme rates may not be evolutionarily accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, models of enzyme-metabolite pathway evolution predict that the subset of enzymes that govern pathway flux through rate-limiting steps are under strong rate selection (Noda-Garcia et al., 2018), and it is also possible that maximal enzyme rates are not evolutionarily accessible (Obolski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Obolski et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "4fd7508d-43e8-43cc-87b0-909ccd692f55",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C55",
+      "claim": "Rate compensation may be more probable for highly related species that live in similar environments.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that rate compensation may be more probable for highly related species that live in similar environments, such as marine species that live at different latitudes or depths but otherwise experience little environmental difference (Dong and Somero, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about when rate compensation might occur, supported by citation to an example (Dong and Somero, 2009).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "9e88ce12-c6bd-4013-9235-a3ac0116cbce",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C56",
+      "claim": "The temperature dependence of protein unfolding may exert a larger driving force on adaptation than the temperature dependence of rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The temperature dependence of protein unfolding (Becktel and Schellman, 1987) may exert a larger driving force on adaptation than the temperature dependence of rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed correlation between stability and TGrowth but not rate and TGrowth, supported by citation to the temperature dependence of unfolding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "d01a5ac5-38df-4c99-85c8-a62c177feb56",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C57",
+      "claim": "Misfolded protein has been demonstrated to have deleterious fitness effects.",
+      "claim_type": "EXPLICIT",
+      "source": "There may be an additional strong selection pressure to avoid unfolded states, as misfolded protein has been demonstrated to have deleterious fitness effects (Geiler-Samerotte et al., 2011) and cells expend considerable energy to clear misfolded variants using chaperones and degradation pathways (Clague and Urb\u00e9, 2010; Hartl et al., 2011; Lund, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Geiler-Samerotte et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "fdd15f84-ce74-4180-a476-da5825d69f15",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C58",
+      "claim": "Cells expend considerable energy to clear misfolded variants using chaperones and degradation pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "There may be an additional strong selection pressure to avoid unfolded states, as misfolded protein has been demonstrated to have deleterious fitness effects (Geiler-Samerotte et al., 2011) and cells expend considerable energy to clear misfolded variants using chaperones and degradation pathways (Clague and Urb\u00e9, 2010; Hartl et al., 2011; Lund, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "629e4e14-c0ad-4b71-b259-eac0497cc262",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C59",
+      "claim": "Adaptive paths toward stability may be more abundant and more accessible than analogous paths toward rate enhancement.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, adaptive paths toward stability may be more abundant and more accessible than analogous paths toward rate enhancement, given that each protein may be stabilized individually through a wide variety of mechanisms (Hart et al., 2014) and less constrained by biological context than an enzyme evolving synergistically with complex metabolic networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement inferred from the variety of stabilization mechanisms and the complexity of metabolic networks, supported by citation (Hart et al., 2014).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "4b7950f7-e3f5-44e7-88de-999ee5787041",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C60",
+      "claim": "Each protein may be stabilized individually through a wide variety of mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, adaptive paths toward stability may be more abundant and more accessible than analogous paths toward rate enhancement, given that each protein may be stabilized individually through a wide variety of mechanisms (Hart et al., 2014) and less constrained by biological context than an enzyme evolving synergistically with complex metabolic networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Hart et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "1d0e1535-4827-4477-aeb2-15bdfd6a1c05",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C61",
+      "claim": "158,184 positions from 1005 enzyme families vary with growth temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent discovery of 158,184 positions from 1005 enzyme families that vary with growth temperature may further expand our understanding of the molecular strategies that underlie protein stabilization (Pinney et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Pinney et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "69ea7307-c609-4620-b895-5487e428a00f",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C62",
+      "claim": "The observation that KSI variants from high temperature correlate with serine at position 103 may reflect selection for the stabilizing effects of S103.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that KSI variants from high temperature correlate with serine at position 103 may reflect selection for the stabilizing effects of S103 (Pinney et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation and supported by citation to prior work (Pinney et al., 2021).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "f30dee06-6b4f-453a-9add-434cc721a75d",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C63",
+      "claim": "The msKSI variant with the wild-type serine residue mutated to aspartic acid (S103D) has increased activity and decreased stability.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed with other KSI variants, the msKSI variant with the wild-type serine residue mutated to aspartic acid (S103D) has increased activity and decreased stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Pinney et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "c5d90dc1-7d4d-468b-98d5-021d6334a6e7",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C64",
+      "claim": "In msKSI, the decreased stability from the S103D mutation renders it partially unfolded even in the absence of denaturants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in msKSI, the decreased stability from the S103D mutation renders it partially unfolded even in the absence of denaturants (Pinney et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Pinney et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "53bc5603-70ce-4df3-8d2c-b0764f6ec1db",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C65",
+      "claim": "Drift or other factors may have led to an overall destabilized scaffold in msKSI.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests a model where drift or other factors have led to an overall destabilized scaffold, such that msKSI cannot accommodate the activating S103D change (without unfolding) and has made other as yet unidentified amino acid changes to increase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model inferred from the observation that msKSI cannot accommodate the S103D mutation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "d542ee97-fe98-4a98-99c4-6c89823544cc",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C66",
+      "claim": "Flexibility has been posited to mechanistically link rate and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Flexibility has been posited to mechanistically link rate and stability, with multiple underlying interconnections discussed (see Supplementary file 1; \u00c5qvist et al., 2017; Arcus et al., 2016; D'Amico et al., 2003; Daniel and Danson, 2010; Nguyen et al., 2017; Saavedra et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "002d6edc-503a-4866-87f8-ecbebbb3b603",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C67",
+      "claim": "Most motions in an enzyme are not expected to be coupled to the enzyme reaction coordinate.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, there are many degrees of freedom in an enzyme and most motions are not expected to be coupled to the enzyme reaction coordinate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about enzyme dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "06716b55-6dad-404a-8c3d-d6d3dfaf5c11",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C68",
+      "claim": "The absence of widespread rate compensation to temperature in contrast to observed stability compensation is consistent with the perspective that most motions are not coupled to the reaction coordinate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation of the absence of widespread rate compensation to temperature in contrast to observed stability compensation is consistent with this perspective, as are prior examples of enzyme stabilization in the absence of detrimental rate effects (Minges et al., 2019; Miyazaki et al., 2000; Siddiqui, 2017; Wintrode and Arnold, 2000; Zhao and Feng, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by citations to prior examples.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "22044ad3-808a-48c5-b4fe-8fa3ca464505",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C69",
+      "claim": "Prior examples exist of enzyme stabilization in the absence of detrimental rate effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation of the absence of widespread rate compensation to temperature in contrast to observed stability compensation is consistent with this perspective, as are prior examples of enzyme stabilization in the absence of detrimental rate effects (Minges et al., 2019; Miyazaki et al., 2000; Siddiqui, 2017; Wintrode and Arnold, 2000; Zhao and Feng, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "39cc0503-4e0b-4024-979f-81d29ba3b368",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C70",
+      "claim": "KSI catalyzes the double bond isomerization of steroid substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "KSI catalyzes the double bond isomerization of steroid substrates (Figure 3B) and is predicted to be part of a pathway that enables degradation of steroids for energy and carbon metabolism in bacteria (Horinouchi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about KSI function, illustrated in Figure 3B and supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "e688e422-802e-4a34-9b4e-ec7b5dace2d9",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C71",
+      "claim": "KSI is predicted to be part of a pathway that enables degradation of steroids for energy and carbon metabolism in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "KSI catalyzes the double bond isomerization of steroid substrates (Figure 3B) and is predicted to be part of a pathway that enables degradation of steroids for energy and carbon metabolism in bacteria (Horinouchi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Horinouchi et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "aaae4979-e6a6-4f05-9aef-d53b61a0e489",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C72",
+      "claim": "The median rate ratio (kcold/kwarm) for 2223 reactions is 1.1-fold with 95% CI [1.00, 1.22].",
+      "claim_type": "EXPLICIT",
+      "source": "(C) Rate ratio distribution of the rate at the coldest TGrowth (kcold) divided by the rate of the variant from the warmest TGrowth (kwarm) (median = 1.1-fold, 95% CI [1.00, 1.22], n = 2223 reactions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the statistical summary of the data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "d7ec6e7b-e9f1-4891-9ef0-d4c9831094c7",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C73",
+      "claim": "The median rate ratio for the control distribution (same TGrowth) is 1.0-fold with 95% CI [0.89, 1.13] for 615 reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) Rate ratio (kcold/kwarm) data (solid line, n = 2223 from panel C) compared to fold change control distribution (same TGrowth; dashed line, median = 1.0-fold, 95% CI [0.89, 1.13], n = 615 reactions; p = 0.21, Mann\u2013Whitney U test, two-sided).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the statistical summary of the control data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "6cd28262-8690-43ae-8e40-165aca280d57",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C74",
+      "claim": "The median kcat/KM rate ratio (kcold/kwarm) is 0.93-fold with 95% CI [0.78, 1.12] for 953 reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) kcat/KM rate ratio (kcold/kwarm) distribution (median = 0.93-fold, 95% CI [0.78, 1.12], n = 953 reactions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the statistical summary of the kcat/KM data shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "19b526ca-2709-438d-987d-3b4123700245",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C75",
+      "claim": "The median kcat/KM rate ratio for the control is 1.00-fold with 95% CI [0.82, 1.21] for 307 reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) kcat/KM rate ratio (kcold/kwarm) data (black line, n = 953 reactions) with kcat/KM rate ratio control (gray line, median = 1.00-fold, 95% CI [0.82, 1.21], n = 307 reactions) determined in the same way as the kcat rate ratio control in the main text (see Materials and methods) (p = 0.80, Mann\u2013Whitney U test, two-sided).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the statistical summary of the kcat/KM control data shown in Figure 2\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "31b46708-4dd7-4b00-b5f2-e9e2464bf8ad",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C76",
+      "claim": "The median fold change (Tm cold/Tm warm) for 43 protein families is 0.81 with 95% CI [0.70, 0.85].",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Fold change (Tm cold/Tm warm) of wild-type protein variants (n = 43, median = 0.81, 95% [0.70, 0.85]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the statistical summary of the stability data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "c92ca87f-7b19-4569-8ca3-107524271c32",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C77",
+      "claim": "5 (10)-EST was used to allow direct measurement of the rate-limiting chemical step kcat.",
+      "claim_type": "EXPLICIT",
+      "source": "5 (10)-EST was used to allow direct measurement of the rate-limiting chemical step kcat (Pollack et al., 1986).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to prior work (Pollack et al., 1986) and shown in Figure 3B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "8dec1227-a89b-4e01-b0a2-0bd34fa23f15",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C78",
+      "claim": "The prior conclusion of widespread temperature adaptation may have arisen from the use of a small set of enzymes (n = 28).",
+      "claim_type": "EXPLICIT",
+      "source": "The prior conclusion of widespread temperature adaptation may have arisen from the use of a small set of enzymes (n = 28; Figure 1C and D) or from inadvertent confirmation bias (Nickerson, 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the comparison of the small prior dataset (Figure 1C and D) with the larger current dataset.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "bfbc1a26-f95b-49a5-ba86-a3cc490bfe82",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "claim_id": "C79",
+      "claim": "The prior conclusion of widespread temperature adaptation may have arisen from inadvertent confirmation bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The prior conclusion of widespread temperature adaptation may have arisen from the use of a small set of enzymes (n = 28; Figure 1C and D) or from inadvertent confirmation bias (Nickerson, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the discrepancy between prior conclusions and current findings, supported by citation to confirmation bias (Nickerson, 1998).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "97038187-ba7f-4535-a6e8-643c54afe96e",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The rate compensation model predicts that cold-adapted enzymes exhibit enhanced catalysis compared to warm-adapted enzymes when assayed at common temperatures. This model has informed physical models of enzyme catalysis, bioprospecting strategies, and structural interpretations linking flexibility to catalysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C12-C18 accurately describe the prevailing hypothesis in the field, supported by appropriate citations to prior literature. This represents a fair characterization of the existing paradigm that the authors seek to test. The claims are properly attributed to prior work rather than presented as the authors' findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Analysis of 2223 enzyme reactions (7086 kcat values from 815 organisms spanning 1-83\u00b0C) reveals no general enrichment of faster catalysis in cold-adapted enzymes. The distribution of rate ratios (kcold/kwarm) shows nearly equal numbers of reactions with ratios >1 (n=1142) and <1 (n=1082), with median 1.1-fold [95% CI: 1.00-1.22]. This distribution is statistically indistinguishable from a control of variants at identical TGrowth (p=0.21, Mann-Whitney U test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C21-C28, C44, C72-C73 provide strong evidence against widespread rate compensation through large sample size (n=2223 reactions), appropriate statistical testing (Mann-Whitney U), and a well-designed control (same TGrowth variants). The confidence intervals overlap 1.0, the p-value shows no significant difference from control, and supplementary analyses (different assay temperatures, TGrowth ranges) support the conclusion. The suggestion that prior conclusions arose from small sample size (C78, n=28) or confirmation bias (C79) is reasonable but speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "0486be55-0978-4289-bf99-29265d3c58f3",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Only two reactions (triose-phosphate isomerase with G3P and cutinase with 4-NPB) showed significant positive association with TGrowth after Bonferroni correction (p<5.3\u00d710\u207b\u2075, n=951 reactions). Analysis of kcat/KM yielded similar results with median rate ratio 0.93-fold [95% CI: 0.78-1.12] for 953 reactions, indistinguishable from control (p=0.80).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C74-C75 demonstrate appropriate multiple testing correction (Bonferroni) and consistent results across different kinetic parameters (kcat and kcat/KM). The finding that only 2/951 reactions show significant positive correlation (opposite to prediction) strengthens the conclusion against widespread rate compensation. Statistical methods are rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "f27b4e9f-ddd3-4770-825d-72132ac32a78",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Experimental analysis of 20 KSI variants (20-75% sequence identity, TGrowth 15-46\u00b0C) reveals that TGrowth accounts for minimal rate variation (R\u00b2=0.01, mrate=-0.006, p=0.02) despite an 80-fold range in kcat. KSI variants with the prevalent cold-adapted residue D103/E103 were not uniformly faster than S103 variants, and one of the fastest variants contained the stabilizing S103 residue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C30-C39, C62-C65, C70-C71, C77 provide experimental validation with appropriate controls (CD spectra showing proper folding at assay temperature, C34). The low R\u00b2 value (0.01) convincingly demonstrates that TGrowth explains little variance despite statistical significance (p=0.02), likely due to large sample size. The observation that S103 variants can be fast (C37) challenges simple interpretations. Multiple replicates and varied enzyme concentrations strengthen confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "6a5aa136-a0bf-4980-8f36-952ec30cbc33",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of 433 wild-type protein variants from ProThermDB reveals significant correlation between melting temperature (Tm) and TGrowth (R\u00b2=0.43, p=2\u00d710\u207b\u2075\u2074). Among 43 protein families with multiple variants, 39 showed higher Tm in warm-adapted variants (median fold change 0.81 [95% CI: 0.70-0.85]).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C40-C43, C76 demonstrate strong statistical evidence for stability compensation (R\u00b2=0.43 vs. R\u00b2=0.01 for rate), with highly significant p-value and appropriate use of existing database (ProThermDB). The contrast between stability and rate correlations with TGrowth is compelling. However, the analysis relies on literature data quality and may have publication bias toward well-studied, stable proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "8f4e108c-52b7-40e5-9ef2-97f28cb54dcb",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Temperature exerts weaker selection pressure on enzyme rate constants than stability, with evolutionary forces other than temperature responsible for the majority of enzymatic rate constant variation. In KSI specifically, stability rather than rate appears to be the dominant driving force underlying temperature adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C45-C46 represent reasonable inferences from the comparative analysis showing strong stability-TGrowth correlation (R\u00b2=0.43) versus weak rate-TGrowth correlation (R\u00b2=0.01). The conclusion is logically consistent with the data presented. However, this remains an inference about evolutionary selection pressure rather than direct measurement of fitness effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "1f213d2a-0850-4c1b-ab38-1f9afdff3bf5",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multiple mechanisms may explain why optimal enzyme rates differ from maximal rates, including: most enzymes operate below diffusional limits (C47), rate optimization via gene/isoform expression or cellular conditions (C49-C51), metabolic coordination requirements (C52), selective pressure on rate-limiting steps only (C53), and evolutionary accessibility constraints (C54). Rate compensation may be more probable in closely related species in similar environments (C55).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 provide well-cited alternative explanations for the absence of rate compensation. Each mechanism is supported by appropriate literature citations. These represent plausible hypotheses rather than tested conclusions from this study. The speculation about closely related species (C55) is reasonable but untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "90bb0e49-7dc5-4fee-9f71-20082854a52c",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Protein stability may be under stronger selection than rate because: (1) unfolding temperature dependence may exert larger driving force than rate temperature dependence (C56), (2) misfolded proteins have deleterious fitness effects requiring energetically costly clearance (C57-C58), and (3) adaptive paths toward stability may be more abundant and accessible than paths toward rate enhancement (C59-C60), with 158,184 temperature-varying positions identified across 1005 enzyme families (C61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 provide mechanistic rationale for stronger stability selection, supported by appropriate citations. The thermodynamic argument (C56) is logical given the data. Claims about misfolding costs (C57-C58) and pathway accessibility (C59-C60) are well-supported by literature. However, these remain inferences about evolutionary mechanisms rather than direct experimental tests.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "3c525c8c-6d6d-4b93-a7c1-0412c8e736fb",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While flexibility has been proposed to mechanistically link rate and stability, most enzyme motions are not coupled to the reaction coordinate (C67). The absence of widespread rate compensation despite observed stability compensation is consistent with this perspective and with prior examples of enzyme stabilization without detrimental rate effects (C68-C69).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 provide a mechanistic framework consistent with the data, supported by citations to prior examples (C69). The argument that uncoupled motions explain differential selection on stability vs. rate is logical. However, this remains an interpretive framework rather than direct experimental evidence for motion coupling in the studied enzymes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    },
+    {
+      "id": "cbf03d52-a1f2-461c-a2e5-de200c0674c3",
+      "content_id": "c1a2e666-a382-47ba-8c57-b35359bddeb1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cold temperature is prevalent across the biosphere and slows chemical reaction rates (C1). The study of cold adaptation has potential to provide insights into enzyme catalysis (C19) and has motivated bioprospecting for industrial biocatalysts (C20).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C19-C20 provide appropriate context and motivation for the study. C1 represents established physical chemistry knowledge. C19 is appropriately framed as potential rather than demonstrated. C20 accurately describes practical applications that motivated prior work. These are well-supported contextual claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:08:36.807779Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "43d5ab9a-e30c-44f5-98e7-216ab71eb240",
+      "result_id": "97038187-ba7f-4535-a6e8-643c54afe96e"
+    },
+    {
+      "claim_id": "47251f08-6536-4a40-babe-9f8d7fb16c4b",
+      "result_id": "97038187-ba7f-4535-a6e8-643c54afe96e"
+    },
+    {
+      "claim_id": "faf0ab69-9ef2-4a2d-948e-5ee55298a307",
+      "result_id": "97038187-ba7f-4535-a6e8-643c54afe96e"
+    },
+    {
+      "claim_id": "aaa6e36a-dc1a-4b91-a1c8-39340f2c4b8e",
+      "result_id": "97038187-ba7f-4535-a6e8-643c54afe96e"
+    },
+    {
+      "claim_id": "5c9260c2-9f45-482c-9952-762f1dea4a05",
+      "result_id": "97038187-ba7f-4535-a6e8-643c54afe96e"
+    },
+    {
+      "claim_id": "e616a0dc-7de3-430d-9d28-02cba3d451a0",
+      "result_id": "97038187-ba7f-4535-a6e8-643c54afe96e"
+    },
+    {
+      "claim_id": "6e64d36b-1045-47a7-a42c-cb98c5817012",
+      "result_id": "97038187-ba7f-4535-a6e8-643c54afe96e"
+    },
+    {
+      "claim_id": "6f458206-5a60-4ef3-a2a9-46748ba4c28e",
+      "result_id": "97038187-ba7f-4535-a6e8-643c54afe96e"
+    },
+    {
+      "claim_id": "6457b7f8-3fa9-485c-8229-74697a25507b",
+      "result_id": "97038187-ba7f-4535-a6e8-643c54afe96e"
+    },
+    {
+      "claim_id": "17cd93a6-9408-4082-a4b3-bfb0a15ee003",
+      "result_id": "97038187-ba7f-4535-a6e8-643c54afe96e"
+    },
+    {
+      "claim_id": "4a6444fb-e1c1-47a5-85e6-6b869fd536ea",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "3fdc7f30-055d-48a8-af5a-3b8304486438",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "e86167f8-8f26-48c0-bf1d-450175c069f1",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "79604a26-26b3-42f1-8330-ad3afa68f1f1",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "d27c2105-e5a6-4d84-8c95-2065ee0eb28d",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "25e9f7d0-de9e-4543-9bf7-f00b7d7f54b3",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "f4d71d6b-4845-4d94-8360-f6831034d68c",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "b5153ce9-42ff-4a15-89f8-fca4ac727853",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "e4dce4d2-1055-4613-8268-8633457033c9",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "aaae4979-e6a6-4f05-9aef-d53b61a0e489",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "d7ec6e7b-e9f1-4891-9ef0-d4c9831094c7",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "8abb0ad1-8d88-4815-b067-4464a4f849db",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "b57d4d98-f817-46a7-bb52-bba16cee8e17",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "8dec1227-a89b-4e01-b0a2-0bd34fa23f15",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "bfbc1a26-f95b-49a5-ba86-a3cc490bfe82",
+      "result_id": "64d3c66b-b187-42de-8ad5-f99cfaffe9f1"
+    },
+    {
+      "claim_id": "d8b3ffe0-bee0-4511-92ad-727de7ef5c60",
+      "result_id": "0486be55-0978-4289-bf99-29265d3c58f3"
+    },
+    {
+      "claim_id": "6cd28262-8690-43ae-8e40-165aca280d57",
+      "result_id": "0486be55-0978-4289-bf99-29265d3c58f3"
+    },
+    {
+      "claim_id": "19b526ca-2709-438d-987d-3b4123700245",
+      "result_id": "0486be55-0978-4289-bf99-29265d3c58f3"
+    },
+    {
+      "claim_id": "e63d6e59-49a8-4fc7-9917-d69bb1353129",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "5a967d2b-7d94-4a9c-9bf0-0da8f2dd6623",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "2a8762b1-e753-4eb4-8eb5-664b43e040a2",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "eb051d46-03c4-4deb-bfaa-8e47ff4b4ddf",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "02d90758-e722-4d6c-875f-c9ba53226604",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "8e73303f-6f99-4f20-82f9-d53c7e09ec43",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "81df2e82-2616-48f3-87d5-a3d5945caae4",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "58353728-b605-4071-8f9d-c8d2f9231e23",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "0f201423-519e-4360-9882-a2e240049d6a",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "a70f747a-08d6-4520-a2f0-5ffb67bf5316",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "e60fae1c-031b-490a-9021-dabd2f7d6dec",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "790c9a3d-9d39-4e27-98b9-af14bda7487b",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "69ea7307-c609-4620-b895-5487e428a00f",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "f30dee06-6b4f-453a-9add-434cc721a75d",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "c5d90dc1-7d4d-468b-98d5-021d6334a6e7",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "53bc5603-70ce-4df3-8d2c-b0764f6ec1db",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "39cc0503-4e0b-4024-979f-81d29ba3b368",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "e688e422-802e-4a34-9b4e-ec7b5dace2d9",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "c92ca87f-7b19-4569-8ca3-107524271c32",
+      "result_id": "f27b4e9f-ddd3-4770-825d-72132ac32a78"
+    },
+    {
+      "claim_id": "55e539c9-5341-4d57-a410-9ac0bff8bd2b",
+      "result_id": "6a5aa136-a0bf-4980-8f36-952ec30cbc33"
+    },
+    {
+      "claim_id": "ef78839d-f5e6-4e6f-914b-11d7d14e9420",
+      "result_id": "6a5aa136-a0bf-4980-8f36-952ec30cbc33"
+    },
+    {
+      "claim_id": "c1384643-c453-4722-bd83-f8766fb817dd",
+      "result_id": "6a5aa136-a0bf-4980-8f36-952ec30cbc33"
+    },
+    {
+      "claim_id": "f6ee7a62-c332-49f4-89e4-4048959f905d",
+      "result_id": "6a5aa136-a0bf-4980-8f36-952ec30cbc33"
+    },
+    {
+      "claim_id": "07be9cc9-4287-4caf-b02c-32a3ca0f6ab8",
+      "result_id": "6a5aa136-a0bf-4980-8f36-952ec30cbc33"
+    },
+    {
+      "claim_id": "31b46708-4dd7-4b00-b5f2-e9e2464bf8ad",
+      "result_id": "6a5aa136-a0bf-4980-8f36-952ec30cbc33"
+    },
+    {
+      "claim_id": "95083ebc-ee26-4d12-9441-ceefbaf6c101",
+      "result_id": "8f4e108c-52b7-40e5-9ef2-97f28cb54dcb"
+    },
+    {
+      "claim_id": "f9453857-f8f4-4d6c-be85-700d4c6a0f73",
+      "result_id": "8f4e108c-52b7-40e5-9ef2-97f28cb54dcb"
+    },
+    {
+      "claim_id": "54deeecc-9dd4-484f-99ae-1635505ec508",
+      "result_id": "8f4e108c-52b7-40e5-9ef2-97f28cb54dcb"
+    },
+    {
+      "claim_id": "552e6536-ef23-4261-86fe-8c810ed8ce45",
+      "result_id": "8f4e108c-52b7-40e5-9ef2-97f28cb54dcb"
+    },
+    {
+      "claim_id": "8646464b-6362-4b28-8ec0-ec17b4fa6065",
+      "result_id": "1f213d2a-0850-4c1b-ab38-1f9afdff3bf5"
+    },
+    {
+      "claim_id": "4d5c84d4-88c6-4e34-a0df-bc8b36444445",
+      "result_id": "1f213d2a-0850-4c1b-ab38-1f9afdff3bf5"
+    },
+    {
+      "claim_id": "bb81b54d-e9a2-44e3-b0f6-b257765abfc9",
+      "result_id": "1f213d2a-0850-4c1b-ab38-1f9afdff3bf5"
+    },
+    {
+      "claim_id": "3b228388-a5b6-4405-8041-7a957e2f2693",
+      "result_id": "1f213d2a-0850-4c1b-ab38-1f9afdff3bf5"
+    },
+    {
+      "claim_id": "ffb05b3c-d05e-42fe-9a7e-46abef949e93",
+      "result_id": "1f213d2a-0850-4c1b-ab38-1f9afdff3bf5"
+    },
+    {
+      "claim_id": "19127744-24ec-47c2-96c6-6cb33a53daa7",
+      "result_id": "1f213d2a-0850-4c1b-ab38-1f9afdff3bf5"
+    },
+    {
+      "claim_id": "bf41d6c8-7247-46f9-817b-7fca71e22492",
+      "result_id": "1f213d2a-0850-4c1b-ab38-1f9afdff3bf5"
+    },
+    {
+      "claim_id": "5dde6103-a600-4c15-9bad-72ed1c485265",
+      "result_id": "1f213d2a-0850-4c1b-ab38-1f9afdff3bf5"
+    },
+    {
+      "claim_id": "4fd7508d-43e8-43cc-87b0-909ccd692f55",
+      "result_id": "1f213d2a-0850-4c1b-ab38-1f9afdff3bf5"
+    },
+    {
+      "claim_id": "9e88ce12-c6bd-4013-9235-a3ac0116cbce",
+      "result_id": "90bb0e49-7dc5-4fee-9f71-20082854a52c"
+    },
+    {
+      "claim_id": "d01a5ac5-38df-4c99-85c8-a62c177feb56",
+      "result_id": "90bb0e49-7dc5-4fee-9f71-20082854a52c"
+    },
+    {
+      "claim_id": "fdd15f84-ce74-4180-a476-da5825d69f15",
+      "result_id": "90bb0e49-7dc5-4fee-9f71-20082854a52c"
+    },
+    {
+      "claim_id": "629e4e14-c0ad-4b71-b259-eac0497cc262",
+      "result_id": "90bb0e49-7dc5-4fee-9f71-20082854a52c"
+    },
+    {
+      "claim_id": "4b7950f7-e3f5-44e7-88de-999ee5787041",
+      "result_id": "90bb0e49-7dc5-4fee-9f71-20082854a52c"
+    },
+    {
+      "claim_id": "1d0e1535-4827-4477-aeb2-15bdfd6a1c05",
+      "result_id": "90bb0e49-7dc5-4fee-9f71-20082854a52c"
+    },
+    {
+      "claim_id": "d542ee97-fe98-4a98-99c4-6c89823544cc",
+      "result_id": "3c525c8c-6d6d-4b93-a7c1-0412c8e736fb"
+    },
+    {
+      "claim_id": "002d6edc-503a-4866-87f8-ecbebbb3b603",
+      "result_id": "3c525c8c-6d6d-4b93-a7c1-0412c8e736fb"
+    },
+    {
+      "claim_id": "06716b55-6dad-404a-8c3d-d6d3dfaf5c11",
+      "result_id": "3c525c8c-6d6d-4b93-a7c1-0412c8e736fb"
+    },
+    {
+      "claim_id": "22044ad3-808a-48c5-b4fe-8fa3ca464505",
+      "result_id": "3c525c8c-6d6d-4b93-a7c1-0412c8e736fb"
+    },
+    {
+      "claim_id": "4a674c6b-c3ac-4393-8227-227e3a26c0d0",
+      "result_id": "cbf03d52-a1f2-461c-a2e5-de200c0674c3"
+    },
+    {
+      "claim_id": "559ecb1e-cd87-4fa4-b570-abb432c06468",
+      "result_id": "cbf03d52-a1f2-461c-a2e5-de200c0674c3"
+    },
+    {
+      "claim_id": "1d9269c5-f2c6-411d-8e94-4669eae66ad8",
+      "result_id": "cbf03d52-a1f2-461c-a2e5-de200c0674c3"
+    }
+  ],
+  "comparisons": []
+}

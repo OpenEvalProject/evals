@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study sequenced IgH repertoires from 10 healthy adults, isolating B cells by magnetic sorting and then flow cytometry sorting into four subpopulations (na\u00efve, MZ, PC, switched), with bulk CD19+ cells also collected from 9 samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C97-C100 describe the experimental design and sample collection methodology. The approach is clearly documented with appropriate technical details (cell numbers, sorting methods, storage conditions), providing a solid foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Sorted B cell subpopulations exhibit distinct repertoire characteristics that can be identified through multiple analytical approaches (V/J gene usage, CDR3 physiochemical properties, global repertoire metrics), with three main clusters identified: na\u00efve, IgM memory (BMZ/BPC_MD), and class-switched populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 present convergent evidence from PCA and k-means clustering using different feature sets (Figure 1). All three analytical approaches (V/J usage, CDR3 properties, global metrics) consistently separate the same three clusters, providing robust support for distinct repertoire characteristics across B cell subpopulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C80"
+    ],
+    "result": "Physically sorted B cell subpopulations share similar repertoire characteristics with their corresponding in silico separated subsets from bulk B cells, validating bioinformatic grouping approaches for global repertoire analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29, and C80 demonstrate that sorted and computationally separated populations cluster together in the analyses (Figure 1). This validates the in silico approach, though the authors appropriately acknowledge limitations for specific applications (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C84",
+      "C85"
+    ],
+    "result": "Machine learning classifiers (random forest, decision tree, logistic regression) can predict B cell type from sequence-level features, with random forest performing best and mutation count being the most important feature for most cell pair comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 and C84-C85 describe machine learning classification results shown in Figure 2. The study used appropriate train/test splits (80/20) and balanced datasets. Performance metrics are clearly reported, with random forest achieving the highest accuracy and feature importance analysis identifying mutation count as the key discriminator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Within class-switched B cells, isotype subclass rather than cell type is the primary determinant of repertoire similarity, with sequences clustering by constant region (IgG1/IgG3 vs IgA1/IgA2/IgG2) regardless of whether they originate from bulk, switched, or plasma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 present evidence from isotype distribution analysis and clustering (Figure 3). The PCA and k-means clustering clearly show that samples group by isotype subclass rather than cell type, with statistical support (C40: p=0.01 for IgG3 differences). This is a key finding demonstrating isotype-based repertoire control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "IgH repertoire characteristics correlate with the genomic position of constant region genes on the IgH locus, with IgM-distal subclasses (IgG2, IgA2) showing higher selection pressure (R/S ratio), shorter junctions, and lower IGHV4-34 usage compared to IgM-proximal subclasses (IgG3, IgG1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 and C60-C62 present multiple converging lines of evidence (Figure 4B-F) showing systematic differences in repertoire metrics that correlate with genomic distance from IgM. The pattern is consistent across multiple independent metrics (mutations, R/S ratio, junction length, IGHV4-34 usage), strongly supporting the correlation with locus position.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Plasma cells show significantly lower diversity than all other B cell types, while switched memory B cells maintain diversity similar to na\u00efve cells, and within plasma cells, IgM-distal subclasses show lower diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe diversity patterns shown in Figure 4G. The finding that plasma cells have lower diversity is expected given their clonal expansion, while the observation that switched memory maintains na\u00efve-like diversity is interesting and well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Linear discriminant analysis of V family/J gene usage and CDR3 physiochemical properties distinguishes B cell subpopulations and isotype subclasses, with IgM-proximal subclasses (IgG3, IgG1) being more similar to na\u00efve cells and IgM-distal subclasses (IgG2, IgA2) being most distinct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 describe LDA results (Figure 4H-I) that provide dimensionality reduction and clear visualization of the relationships between subpopulations. The LDA complements the earlier clustering analyses and reinforces the gradient of similarity based on genomic position.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The constant region type (isotype subclass) is the main defining factor in repertoire similarity, with differences between subclasses conserved across both cell type and individual, suggesting an isotype-based mechanism for repertoire control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 represent a major interpretive conclusion from the study, particularly supported by the clustering analyses in Figure 3 showing isotype-driven grouping. However, C79 is an inference about mechanism that, while reasonable, goes beyond what the data directly demonstrate. The claim of conservation across individuals is supported but based on only 10 samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "IgM-distal subclasses do not accumulate more mutations than IgM-proximal subclasses, but show more efficient mutation with higher R/S ratios and selection pressure, suggesting sequential class switch recombination subjects B cells to selective forces leading to mature variable gene properties without necessarily accumulating more mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 address contradictions in prior literature (C90-C92) and present an alternative interpretation. The data support higher R/S ratios in distal subclasses (C49, C94) without increased mutation counts (C93). However, C96 is an inference about sequential CSR and selective forces that, while plausible, is not directly tested by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "V family/J gene usage, CDR3 physiochemical properties, and global repertoire characteristics distinguish between na\u00efve, IgM/IgD memory, and class-switched subsets at both repertoire and sequence levels, with alterations at the isotype subclass level correlating with constant gene position on the IgH locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are high-level summary statements of the main findings. They are well-supported by the comprehensive analyses presented throughout the results section, integrating multiple lines of evidence from clustering, classification, and correlation analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Distinct B cell subpopulations derive from different developmental mechanisms and selective processes leading to similar variable gene identity, and different subpopulations stimulated by diverse antigens may have distinct junction compositions and properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 are interpretive inferences from the observed repertoire differences. While the data show distinct patterns, these claims about developmental mechanisms and antigen-driven selection are speculative (C74 explicitly noted as speculation). The study does not directly test developmental mechanisms or track antigen-specific responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Bioinformatic grouping of bulk B cell transcripts may be limited for tasks sensitive to differential RNA levels per cell, such as identifying antigen-specific sequences from plasma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is an appropriate acknowledgment of a methodological limitation. Plasma cells produce much more RNA than other B cells, which could bias bulk sequencing approaches. This caveat is important for interpreting the validation of in silico methods (C80).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C45",
+      "C46"
+    ],
+    "result": "Background claims establishing the biological context of B cell development, maturation, class switch recombination, and prior AIRR-seq studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C21, C45-C46 provide established background knowledge supported by appropriate citations. These are standard immunological concepts and prior findings that contextualize the current study. No novel claims are made in this group.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Prior literature on B cell repertoire differences, machine learning applications, and class switch recombination patterns, establishing the context and gaps addressed by the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C92 summarize relevant prior work with appropriate citations. These establish what was previously known and identify gaps (e.g., C67: sparse studies combining bulk and sorted populations; C90: contradictory results on mutations). The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  }
+]

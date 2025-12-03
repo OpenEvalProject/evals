@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SARS-CoV-2 stability was experimentally measured on polypropylene surfaces at nine temperature-humidity conditions (10\u00b0C, 22\u00b0C, 27\u00b0C \u00d7 40%, 65%, 85% RH) using 50 \u03bcL droplets of virus suspended in supplemented DMEM, with viable virus quantified by end-point titration on Vero E6 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C84-C91 collectively describe a well-documented experimental protocol with appropriate controls (UV protection, temperature/humidity control, replicate sampling). The methods are standard for virology stability studies and are described with sufficient detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "SARS-CoV-2 half-life at quasi-equilibrium varies dramatically with temperature and humidity: from >24 hours (median 27 hr [20, 39]) at 10\u00b0C/40% RH to ~1.5 hours (median 1.5 hr [1.1, 2.1]) at 27\u00b0C/65% RH. Minimal decay occurred during the evaporation phase, with longer but highly uncertain half-lives (42 hr [11, 330] at 10\u00b0C to 5.8 hr [2.1, 130] at 27\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C19-C24 report direct experimental measurements with credible intervals from Bayesian analysis. The wide credible intervals for evaporation phase estimates (C21-C24) appropriately reflect the limited decay observed during this brief phase. The data are visualized in Figure 1 and Table 1, showing consistency between claims and evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Virus decay rate increases 5-10 fold from 10\u00b0C to 27\u00b0C across all humidities, and shows a U-shaped dependence on relative humidity with fastest decay at 65% RH and slower decay at 40% and 85% RH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are inferences directly supported by the experimental data shown in Figure 1b and Table 1. The temperature effect is consistent across all humidity conditions, and the U-shaped humidity dependence is evident in the data, though the mechanistic explanation requires the model (addressed separately).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Evaporation kinetics of the suspension medium were measured under the same nine temperature-humidity conditions as the virus stability experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 describes a parallel evaporation experiment that is essential for distinguishing evaporation phase from quasi-equilibrium phase decay. The methods are described and data shown in Figure 1\u2014figure supplement 3, providing necessary context for interpreting virus decay kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The mechanistic model is based on established principles: viruses exhibit exponential (first-order) decay, temperature dependence follows Arrhenius kinetics, relative humidity controls solute concentration via evaporation, and efflorescence at ~45% RH causes a regime shift explaining the U-shaped humidity dependence observed for coronaviruses and other enveloped viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 establish the theoretical foundation of the mechanistic model, each supported by appropriate citations to prior literature (C27, C29-C31, C33) or established physical chemistry principles (C32, C34). The ERH value of 45% (C34) is justified by citation to NaCl solution behavior. The U-shaped pattern (C33) is documented both in the current data and prior coronavirus studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C35",
+      "C36"
+    ],
+    "result": "A three-parameter mechanistic model (activation energy Ea, and asymptotic rates Aeff and Asol) explains virus inactivation across all nine experimental conditions nearly as well as independent regression for each condition, and predicts half-lives varying over three orders of magnitude (from <0.5 hr at 40\u00b0C/~45% RH to >1 month at 0\u00b0C/100% RH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C35-C36 describe the mechanistic model's performance. The model fit is shown in Figure 2 and is visually comparable to the simple regression (Figure 1\u2014figure supplement 2). The three-order-of-magnitude prediction range (C36) is shown in Figure 3a,c. The model successfully captures both temperature and humidity effects with only three parameters, which is a strong result given the complexity of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C42",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The mechanistic model accurately predicts half-lives for five human coronavirus species (SARS-CoV-2, SARS-CoV-1, MERS-CoV, HCoV-OC43, HCoV-229E) across conditions from 4\u00b0C to 95\u00b0C and 30% to 80% RH, with predictions matching observations across five orders of magnitude despite heterogeneities in experimental protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38-C39, C42, C96-C99 describe out-of-sample validation using meta-analysis of 11 published studies. Figure 3c-d and Figure 3\u2014figure supplement 1 show strong agreement between predictions and observations. The model's ability to predict across such a wide range of conditions and virus species, using parameters estimated only from SARS-CoV-2 data at 10-27\u00b0C, is impressive. Two outliers (high-heat closed vials) are appropriately explained (C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The mechanistic model suggests general principles govern virus inactivation across enveloped viruses: the U-shaped humidity dependence is observed across multiple virus families, a single activation energy works across effloresced and solution regimes, and the rate-limiting step may depend on virion properties rather than specific reactants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C40-C41, C75-C83 make broad generalizations about virus inactivation mechanisms. While the U-shaped pattern is well-documented across virus families (C76-C77, supported by citations), and the single activation energy finding is intriguing (C81), the mechanistic interpretation (C82-C83) is speculative. The model slightly overestimates MERS-CoV stability (C80) but captures patterns correctly, suggesting virus-specific parameters may be needed. The generalization requires more direct testing across diverse viruses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C54"
+    ],
+    "result": "The results explain observed SARS-CoV-2 superspreading events in cool indoor environments (food processing plants at ~10\u00b0C, hockey rinks) and dry indoor environments (flights), as these conditions favor prolonged virus stability and thus elevated transmission risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C48, C54 connect the experimental findings to epidemiological observations. The link between indoor clusters (C43, cited) and virus stability is a reasonable inference (C44). The mechanistic explanation for superspreading in cold/dry environments (C45, C48) follows logically from the measured half-lives showing longest stability at low temperature and extreme humidity. The inference is well-supported though not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The relative rarity of outdoor SARS-CoV-2 transmission is not explained by temperature/humidity effects alone, as winter outdoor conditions should favor the virus; instead, ventilation and UV inactivation are likely more important outdoors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 make a logical inference: if cold/humid conditions favor virus stability, winter outdoor conditions should promote transmission, yet outdoor transmission is rare. The conclusion that other factors (ventilation, UV) dominate outdoors is reasonable and supported by citations (C47). This demonstrates appropriate scientific reasoning about the limits of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The temperature and humidity effects on virus stability are relevant to both fomite and aerosol transmission, as prior work shows similar RH-dependent decay in droplets on surfaces and suspended aerosols, and surface-deposited virions can be resuspended and inhaled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 extend the findings' relevance beyond surface stability. The assertion is supported by citations showing similar patterns in aerosols (C50-C51) and evidence for resuspension (C52). The connection to food processing plant practices (C53) is stated as known fact. The reasoning is sound though the direct applicability to aerosol transmission could benefit from more direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Long-range fomite transmission via chilled or frozen foods is conceivable based on the demonstrated prolonged virus viability at very low temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 address a speculative scenario. While C55 appropriately cites speculation from prior literature, and C56 notes the finding is 'conceivable' based on low-temperature stability, the study did not test frozen conditions (extrapolation stopped at 0\u00b0C, noting different kinetics may apply when fluid freezes). This is appropriately cautious but remains speculative without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Environmental stability is not the only mechanism by which temperature and humidity affect transmission; other factors include behavioral changes (time spent indoors), immune function (airway drying at low humidity), and aerosol physics (settling rates). At low RH, these effects may compound to increase transmission risk, while at high RH the net effect is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 appropriately contextualize the findings within broader transmission mechanisms. The additional mechanisms are supported by citations (C59, C61) or stated as known principles (C58, C60). The inference about compounding effects at low RH (C62) is logical, and the uncertainty about high RH effects (C63) is appropriately cautious. This demonstrates good scientific practice in acknowledging study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Temperate zone winters promote respiratory virus transmission through multiple mechanisms including increased indoor time, poor ventilation, and dry air that both stabilizes viruses and impairs immunity. Winter surges in SARS-CoV-2 may reflect these seasonal factors, though population susceptibility and control measures dominated early pandemic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 synthesize the findings with epidemiological context. The winter seasonality of respiratory viruses (C64) and behavioral factors (C65-C66) are cited or stated as known. The inference about dry indoor air (C67) combines the study's findings with known conditions. The discussion of SARS-CoV-2 seasonality (C68-C71) appropriately balances projections with observed patterns and cites relevant literature. The speculation about winter surges (C71) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The mechanistic model resolves the debate about whether absolute or relative humidity is more important for virus stability by permitting principled separation of temperature and humidity effects, revealing a strong effect of relative humidity even after accounting for temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 address a methodological contribution. The debate about absolute vs. relative humidity (C72) is documented by citations. The model's ability to separate these effects (C73) is a valid methodological advance, and the finding of strong RH effects (C74) is supported by the model's performance across conditions. This represents an important conceptual contribution beyond the specific SARS-CoV-2 findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "All model parameters were estimated jointly using Bayesian inference implemented in Stan with a No-U-Turn Sampler via RStan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 describe the statistical methodology. Joint inference of all parameters (C95) is appropriate for this complex model with interdependencies between evaporation and decay kinetics. The use of Bayesian methods with MCMC sampling is well-suited to the hierarchical structure and provides proper uncertainty quantification. The methods are standard and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work establishes that temperature and humidity affect enveloped virus stability, SARS-CoV-2 emerged in 2019 causing a pandemic with winter surges and superspreading dynamics, but mechanistically motivated quantitative models for joint temperature-humidity effects on virus inactivation have been lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 establish the background and motivation. The effects of temperature/humidity on viruses (C8-C9, C13, C16) are supported by appropriate citations. The COVID-19 pandemic context (C10-C12, C14-C15) is established knowledge or cited. The gap in mechanistic models (C17-C18) is appropriately identified with citations to phenomenological alternatives. This provides solid justification for the study.",
+    "result_type": "MINOR"
+  }
+]

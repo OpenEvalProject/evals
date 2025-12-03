@@ -1,0 +1,454 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "MDA-MB-231 breast cancer cells were phenotypically sorted into highly migratory (MDA+) and weakly migratory (MDA-) subpopulations. These subpopulations formed orthotopic primary tumors that grew at comparable rates, but exhibited opposite metastatic behaviors: MDA+ was weakly metastatic while MDA- was highly metastatic in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by experimental data including transwell sorting methodology (C1), tumor growth measurements (C2), and BLI imaging of metastasis (C3). The findings are consistent with prior work (Hapach et al., 2021) and establish the paradoxical relationship between migration and metastasis that forms the foundation of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "MDA- tumors exhibited significantly higher stiffness and increased extracellular matrix (ECM) components compared to MDA+ tumors. This was demonstrated through AFM measurements showing increased stiffness, qPCR showing elevated mouse-derived matrix components (collagen I, fibronectin 1, collagen IV, tenascin-C, periostin), and immunohistochemical staining confirming increased collagen and fibronectin deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 are supported by multiple complementary techniques (AFM, qPCR, immunohistochemistry) that converge on the same conclusion. The use of mouse-derived matrix markers appropriately distinguishes stromal from tumor contributions. Statistical significance is reported for all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "MDA- tumors exhibited increased levels of cancer-associated fibroblast (CAF) markers and were enriched for a myCAF-like fibroblast population. This was evidenced by elevated mRNA expression of CAF markers (Acta2, Fap, Pdgfra, Pdgfrb) and increased \u03b1SMA+ tissue area in MDA- tumors compared to MDA+ tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are well-supported by qPCR and immunofluorescence data. The inference that MDA- tumors are enriched for myCAF-like fibroblasts (C10, C11) is appropriately based on established markers and cited literature on myCAF characteristics. The logic connecting \u03b1SMA expression to myCAF identity is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "RNA-seq analysis revealed that while overall Stroma-Activating Scores were similar between MDA+ and MDA-, the subpopulations differed in specific gene expression patterns. MDA+ scored higher on Matrix Ligands while MDA- scored higher on Cell-Cell Adhesion and Secreted genes, with TGFB2 and TGM2 significantly enriched in MDA-.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are supported by RNA-seq data with appropriate statistical analysis. The finding that overall scores are similar (C12) but subcategories differ (C13) is interesting and well-documented. The inference that MDA- activate fibroblasts through secreted factors (C15) is reasonable given the enrichment of secreted genes, though additional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "MDA- cells released significantly more microvesicles (MVs) than MDA+ cells, though both MV populations had similar size distributions within the expected 200 nm \u2013 1 \u03bcm range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by nanoparticle tracking analysis with appropriate quantification. The size distribution data confirms that isolated particles are within the expected MV range, validating the isolation methodology. Sample sizes appear adequate (N=19, 16 for C16).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "MV- potently activated fibroblasts in vitro, inducing FAK phosphorylation, increased \u03b1SMA expression, cell area, fibronectin deposition, proliferation, and traction force. In contrast, MV+ had minimal effects on fibroblast activation compared to control conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 are well-supported by multiple complementary assays (western blot, immunofluorescence, EdU incorporation, traction force microscopy) performed on 20 kPa polyacrylamide gels. The consistency across multiple activation markers strengthens the conclusion. Statistical significance is reported for all comparisons with appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "MV- enhanced fibroblast-led migration of weakly migratory MDA- cells in 3D spheroid assays. MDA- spheroids alone showed minimal outgrowth, but coculture with fibroblasts significantly enhanced migration, with MV- further increasing this effect. MDA+ spheroids exhibited robust migration independently of fibroblasts or MVs. The enhancement required physical fibroblast-cancer cell interactions rather than secreted factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 are supported by comprehensive spheroid outgrowth experiments with multiple conditions and controls. The time-lapse imaging (C29) provides direct evidence of fibroblast-led migration. The conditioned media experiments (C35) appropriately test the mechanism. The differential responses of MDA+ and MDA- to fibroblasts and MVs are well-documented with statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Proteomics analysis revealed distinct cargo differences between MV+ and MV-, with 26.8% of proteins enriched in MV+, 29.8% enriched in MV-, and 43.4% similarly expressed. MV+ were enriched for adhesion and motility-related proteins, while MV- were enriched for metabolic and vesicle-transport proteins. The majority (79%) of genes/proteins were expressed at similar levels between cells and their respective MVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by iTRAQ proteomics with appropriate bioinformatic analysis (PSEA). The comparison to Exocarta and Vesiclepedia databases validates the EV nature of isolated particles. The correlation between cellular and MV protein expression (C43-C44) is appropriately quantified and supports the biological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Tissue transglutaminase 2 (Tg2) was significantly enriched in MV- compared to MV+, as confirmed by both proteomics and western blot. While fibronectin dimers were present in both MV populations, they were more highly expressed in MV+, suggesting that MV- fibroblast activation does not solely rely on fibronectin dimer-mediated integrin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are well-supported by proteomics and western blot validation. The identification of Tg2 as a key differentially expressed protein is robust. The observation about fibronectin dimers (C51-C52) appropriately rules out one potential mechanism and is supported by data. The inference in C52 is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Knockdown of Tg2 in MDA- cells did not affect migration or MV release but slightly decreased invasion. MVs from Tg2 knockdown cells (MV-(shTg2)) had reduced Tg2 and S100A11 expression. Proteomics revealed that 50% of proteins were similarly expressed between MV-(scr) and MV-(shTg2), with the remainder showing differential expression affecting various cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C63 are supported by appropriate knockdown validation, functional assays, and proteomics. The observation that Tg2 knockdown affects MV cargo but not MV release (C53) is important for mechanistic understanding. The discussion of S100A11 (C59-C62) appropriately considers its dependence on Tg2 for function. The proteomics analysis is comprehensive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Fibroblasts cultured with MV-(shTg2) exhibited decreased activation markers (\u03b1SMA expression, cell area, fibronectin deposition, proliferation, traction force) compared to MV-(scr). Treatment of MV- with the Tg2 inhibitor T101 also decreased fibroblast \u03b1SMA expression, confirming the role of MV-Tg2 in fibroblast activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are well-supported by multiple complementary assays showing consistent reduction in fibroblast activation markers. The pharmacological inhibition experiment (C66) provides orthogonal validation of the genetic knockdown results. Statistical significance is reported for all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In spheroid coculture assays, MDA-(shTg2)+3T3 spheroids cultured with MV-(shTg2) showed no increase in outgrowth, while the same spheroids cultured with MV-(scr) exhibited significant outgrowth enhancement. This demonstrates that MV-Tg2 is required for MV-mediated fibroblast-induced cancer cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by well-controlled spheroid experiments that appropriately test the necessity of Tg2 for the MV-fibroblast-cancer cell migration axis. The rescue experiment (C69) is particularly strong evidence for the specific role of Tg2. Statistical analysis is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Overexpression of Tg2 in MDA+ or MCF7 cells increased the capacity of their MVs to activate fibroblasts and enhance cancer cell migration in spheroid assays. Tg2 overexpression did not affect MCF7 cell motility directly but enabled MV-mediated fibroblast activation that enhanced MCF7 dissemination from spheroids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by gain-of-function experiments in two different cell lines (MDA+ and MCF7), strengthening the generalizability of the findings. The observation that Tg2 overexpression affects MV function but not intrinsic cell motility (C72) is important for understanding the mechanism. The spheroid data with MCF7 (C75) provides visual evidence of enhanced dissemination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Purified recombinant Tg2 (1 \u03bcg/mL) significantly increased fibroblast cell area and traction force to levels comparable to those induced by MV-, demonstrating that Tg2 alone can induce fibroblast phenotype changes and that MV packaging is not essential for Tg2-mediated fibroblast activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by experiments with purified Tg2 that appropriately test whether MV packaging is required for Tg2 function. The comparison to MV- effects (C78) provides important context. This result clarifies the mechanism and suggests that Tg2 delivery, rather than MV-specific signaling, is the key factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In vivo, Tg2 knockdown in MDA- cells did not affect primary tumor growth but significantly reduced tumor stiffness, fibroblast activation (\u03b1SMA+ tissue), ECM deposition (collagen and fibronectin), and metastasis to lungs and liver compared to control tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 are well-supported by comprehensive in vivo experiments including tumor growth measurements, AFM, immunofluorescence, immunohistochemistry, and BLI imaging. The finding that Tg2 knockdown affects tumor microenvironment and metastasis but not primary tumor growth (C80) is important. Multiple metastasis readouts (BLI, macroscopic nodules, GFP+ area) provide robust evidence. Sample sizes appear adequate (N=4 mice per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Repeated injection of Tg2-rich wildtype MV- into MDA-(shTg2) tumors rescued the phenotype, resulting in increased tumor size, stiffness, fibroblast activation, ECM deposition, and metastasis to lungs (and to a lesser extent liver) compared to control tumors receiving serum-free media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 are supported by a well-designed rescue experiment that provides strong evidence for the sufficiency of MV-Tg2 to drive the observed phenotypes. The repeated injection protocol (every 3 days for 5 weeks) is appropriate. Multiple readouts confirm the rescue of tumor microenvironment and metastatic phenotypes. The observation that liver metastasis was only slightly increased (C95) is appropriately noted. Sample sizes are adequate (N=6-8 mice per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "In MCF7 tumors, injection of Tg2-rich MVs increased cancer cell dissemination into the tumor microenvironment (more GFP+ cells outside tumor periphery) but did not induce metastasis, demonstrating that Tg2 alone is not sufficient to confer full metastatic capability to weakly migratory cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by the MCF7 in vivo experiment showing increased local dissemination without distant metastasis. This important negative result (C99) appropriately limits the conclusions about Tg2's role and suggests that additional factors beyond local dissemination are required for metastasis. The experiment provides a useful boundary condition for the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The study reveals a novel mechanism by which weakly migratory cancer cells release Tg2-rich MVs to activate fibroblasts and remodel the primary tumor to facilitate weakly migratory cancer cell migration and metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is a summary statement that is well-supported by the collective evidence from in vitro and in vivo experiments. The mechanism is demonstrated through loss-of-function (Tg2 knockdown), gain-of-function (Tg2 overexpression), and rescue experiments. The claim appropriately synthesizes the major findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Clinical data analysis revealed that TGM2 expression increases from normal to tumor to metastatic tissue in breast cancer patients and correlates with decreased distant metastasis-free survival, particularly in triple-negative breast cancer (TNBC). Other MV- enriched proteins (COL12A1, PLOD1, PLOD3) did not significantly affect survival in TNBC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 are supported by analysis of publicly available patient databases (TNMplot, Kaplan-Meier Plotter) with appropriate citations. The progressive increase in TGM2 expression (C101-C102) and survival correlations (C103-C104) provide clinical relevance. The negative results for other proteins (C105) appropriately demonstrate specificity for TGM2. However, these are correlative analyses that do not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "TGM2 expression significantly correlates with CAF markers (ACTA2, FAP, PDGFRA, PDGFRB) in breast invasive carcinoma patients, suggesting that Tg2 expression correlates with fibroblast activation in breast cancer patients and identifying Tg2 as a potential therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by co-expression analysis from cBioPortal with appropriate citations. The correlation between TGM2 and CAF markers (C106-C107) provides clinical validation of the mechanistic findings. The therapeutic implication (C108) is reasonable but speculative, as it is based on correlative data and mechanistic studies rather than therapeutic intervention studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The introduction establishes the context that cancer cell migration is heterogeneous, that migratory capability has been considered an indicator of metastasis, but that weakly migratory cells can be highly metastatic. The mechanism by which weakly migratory cells escape the primary tumor was unclear, leading to the hypothesis that CAFs facilitate this escape through MV-mediated signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C121 appropriately cite relevant literature to establish the scientific context and rationale for the study. The citations appear appropriate for the claims made. The hypothesis (C121) logically follows from the established knowledge gaps. These are primarily literature review and hypothesis generation claims rather than experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The study identifies that weakly migratory cancer cells release Tg2-rich MVs to activate fibroblasts and enhance dissemination, while highly migratory cells release different MVs with little effect on fibroblasts and do not require fibroblast activation for migration. MVs and Tg2 are identified as potential therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 are summary statements of the main findings that are well-supported by the experimental data presented throughout the manuscript. These claims appropriately synthesize the key discoveries. The therapeutic implication (C127) is reasonable but speculative, as no therapeutic intervention studies were performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The discussion contextualizes the findings within existing literature on tumor stiffness, ECM deposition, CAF biology, and MV-mediated signaling. It proposes a feedback loop mechanism where MV-induced fibroblast activation leads to tumor stiffening, which may further prime fibroblasts for continued activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C138 appropriately cite relevant literature and integrate the current findings with prior work. The proposed feedback loop mechanism (C134) is speculative but reasonable given the data. The discussion appropriately connects the current findings to prior work on MV-mediated fibroblast transformation (C135) and Tg2 knockdown effects on metastasis (C137-C138).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The study reveals that differences in cancer cell phenotype within a single cell line correlate with differences in MV cargo, and that this heterogeneity in MV cargo based on migratory phenotype has downstream effects on fibroblast activation, tumor microenvironment remodeling, and metastasis. Specifically, Tg2 expression in MVs is dependent on the migratory phenotype of the releasing cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 appropriately position the findings within the context of prior work on MV heterogeneity and cargo. The key advance (C140, C142, C143) is well-supported by the proteomics and functional data. These claims highlight the novelty of the findings regarding phenotype-dependent MV cargo differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The discussion addresses the paradoxical expression of Tg2 (typically associated with EMT and migration) in weakly migratory cells that also express high E-cadherin. This is reconciled by citing recent work showing Tg2 as a marker of epithelial-mesenchymal plasticity, suggesting that MV cargo changes as cells undergo EMT transitions. The findings suggest that not all MVs communicate homogeneously and that targeting specific MV populations may be therapeutically important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C150 appropriately address a potential conceptual issue (Tg2 expression in weakly migratory cells) by citing relevant literature on EMT plasticity (C147). The inference about MV cargo changing with EMT phenotype (C148) is reasonable. The therapeutic implications (C150) are speculative but logically follow from the findings. These discussion points appropriately contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The discussion notes that exosomes affect later stages of metastasis (angiogenesis, pre-metastatic niche formation) and that MVs may have similar functions given their shared cargo. The study highlights MVs as potential targets for anti-metastatic therapies and emphasizes the importance of identifying specific MV populations and cargo that promote metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 appropriately cite literature on exosome functions and draw reasonable parallels to MVs. The speculation about MV functions in angiogenesis and pre-metastatic niche formation (C153) is appropriately qualified as speculative. The therapeutic implications (C155) logically follow from the findings but represent future directions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C156"
+    ],
+    "result": "The study identifies a population of weakly migratory, highly metastatic breast cancer cells that escape the primary tumor via MV-Tg2-mediated fibroblast activation, in contrast to highly migratory cells that are capable of independent migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 is a summary statement that appropriately synthesizes the main finding of the study. It is well-supported by the comprehensive experimental evidence from in vitro and in vivo studies. This claim captures the key conceptual advance of the work.",
+    "result_type": "MAJOR"
+  }
+]

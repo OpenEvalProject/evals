@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C51",
+      "C52",
+      "C98"
+    ],
+    "result": "The RNN-S model implements a biologically plausible learning rule with local information that successfully learns the successor representation. The learning rule consists of an STDP-like potentiation term and a decorrelative depotentiation term, both using only information local to each neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C11, C51, C52, and C98 collectively demonstrate that the RNN-S learning rule is biologically plausible (uses local information), mathematically grounded (similar to STDP and depotentiation), and functionally effective (learns SR for random walks). The simulation results in Figure 2B and the mathematical derivation provide strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "An adaptive learning rate mechanism allows the RNN-S model to capture both rapid one-shot place field formation and slow place field biasing over repeated experiences. This adaptive mechanism is consistent with experimental observations of metaplasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C53, C54, and C55 are well-supported by simulation results (Figure 2H) showing both fast and slow learning dynamics. The adaptive learning rate transitions from high to low values, enabling the model to match biological observations of rapid initial learning and gradual refinement. The connection to metaplasticity provides biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Systematic exploration of plasticity kernel parameters reveals that STDP-like kernels with time constants around a few hundred milliseconds are most effective for learning the SR, though multiple kernel configurations can produce similar results. This timescale is longer than standard STDP but shorter than behavioral timescale plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C59, C60, and C61 are supported by the grid search results in Figure 2J-K. The systematic parameter sweep provides strong evidence for the optimal kernel properties, and the comparison to known plasticity mechanisms (STDP and behavioral timescale plasticity) is appropriate. The acknowledgment that multiple solutions exist adds nuance to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C67"
+    ],
+    "result": "The RNN-S model requires stable network dynamics during learning for the update rule to correctly optimize the SR. Stability can be achieved through saturating nonlinearities or by separating learning and retrieval phases with different gain parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C65, and C67 are supported by analytical results and simulations shown in Figure 3. The stability analysis is mathematically grounded, and the proposed solutions (nonlinearity and phase separation) are both biologically plausible and empirically validated. The tradeoffs between these approaches are appropriately discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C42",
+      "C43",
+      "C80"
+    ],
+    "result": "The RNN-S architecture allows flexible modulation of predictive time horizons by adjusting the global gain parameter \u03b3, potentially through neuromodulatory mechanisms like acetylcholine. This flexibility could explain different timescales of prediction across hippocampal and entorhinal cortex anatomical axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40, C42, C43, and C80 present an interesting theoretical framework, but the evidence is primarily speculative. While C40 is a mathematical property of the model that is well-supported, C42, C43, and C80 are speculative hypotheses about biological implementation and function. The citations provide plausibility but not direct experimental validation of these specific mechanisms in the RNN-S context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C38",
+      "C70",
+      "C71"
+    ],
+    "result": "The decorrelative normalization term in the RNN-S learning rule is necessary for developing accurate spatial representations with complex, overlapping input features. This anti-Hebbian component prevents non-adjacent states from becoming spuriously associated and maintains spatially specific activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C38, C70, and C71 are well-supported by simulation results in Figure 4B-C. The comparison between decorrelative and independent normalization clearly demonstrates the necessity of the decorrelative term for maintaining spatial specificity. The theoretical justification for anti-Hebbian learning is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C72",
+      "C73"
+    ],
+    "result": "The RNN-S model with complex feature encodings exhibits backward shifts in place field peaks, consistent with experimental observations by Mehta et al., 2000. This phenomenon may arise from neurons receiving inputs at multiple states leading up to their preferred location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, C72, and C73 are supported by simulation results in Figure 4D and comparison to prior experimental work. The model reproduces an experimentally observed phenomenon that was not explicitly designed into the system, which strengthens the claim. The mechanistic explanation (C72) is speculative but reasonable given the model architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C28",
+      "C74"
+    ],
+    "result": "Both RNN-S and FF-TD models perform well across a range of input feature parameters in estimating successor features from naturalistic behavioral trajectories. Performance is best when input features have spatial correlation, consistent with the spatially local nature of behavioral transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C26, C28, and C74 are supported by parameter sweep results in Figure 5. The systematic exploration of input feature space and comparison to random networks provides strong evidence. The interpretation that spatial correlation aids prediction due to local transitions is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C77",
+      "C78"
+    ],
+    "result": "Place field statistics in the RNN-S model vary systematically with input feature properties. Field size increases with spatial correlation, while the number of fields per cell is maximal when features are densely encoded with low spatial correlation. Under most parameter ranges, all RNN-S neurons are classified as place cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C77, and C78 are well-supported by systematic parameter sweeps shown in Figure 6D-F. The relationships between input statistics and place field properties are clearly demonstrated and mechanistically interpretable. The explanations for these effects (C77, C78) are logical given the model architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C35",
+      "C37",
+      "C57",
+      "C58",
+      "C76"
+    ],
+    "result": "The RNN-S model fits hippocampal place cell data from foraging titmice better than the FF-TD model, with optimal fit at input feature sparsity ~0.15 and spatial correlation ~8.75 cm. This analysis provides predictions about the structure of hippocampal inputs and demonstrates that recurrent architecture is important for matching neural data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C35, C37, C57, C58, and C76 are strongly supported by KL divergence analysis in Figure 6G-I and comparison to the Payne et al. 2021 dataset. The systematic parameter sweep identifies a specific region of input parameter space that best matches neural data. The comparison to FF-TD and random networks strengthens the conclusion that the recurrent architecture is important. The cross-species comparison (C76) adds generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Recurrent network architectures for computing the SR face inherent limitations including instability due to recurrent activity buildup and error propagation in one-step transition estimates. These vulnerabilities have parallels in hippocampal biology, including the propensity for seizures in highly recurrent hippocampal subfields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C84-C86 appropriately identify limitations of the recurrent architecture and connect them to biological observations. The citations supporting the link between recurrency and seizures (C47, C85) are appropriate. The acknowledgment of open questions (C86) is scientifically honest. These are well-reasoned limitations grounded in both model properties and biological knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Prior work establishes that the hippocampus is critical for memory formation and recall, that hippocampal activity is predictive of future experience, and that the successor representation algorithm captures many observations of hippocampal activity. The hippocampus is highly recurrent, making it suitable for RNN-based models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C48-C50 accurately summarize prior work with appropriate citations. These claims establish the scientific context and motivation for the current work. The citations are to seminal papers in the field and the characterizations of prior work appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Hippocampal inputs are expected to be continuous and heterogeneous with overlapping neural representations. Transition statistics can be learned with minimal assumptions and may be encoded broadly across the brain. Recurrent networks support generative sequential sampling relevant to hippocampal replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C81-C83 are supported by appropriate citations to prior work. These claims establish biological constraints and theoretical context for the model. The characterizations of prior work appear accurate and the inferences drawn (C82, C83) are reasonable given the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Other recent theoretical works have proposed alternative biological mechanisms for learning successor representations, including feedforward networks using theta phase-precession or hippocampal replay. These mechanisms are not mutually exclusive with RNN-S, suggesting multiple viable biological implementations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 appropriately contextualize the current work within recent literature. The characterizations of other models (C88, C89) appear accurate based on the citations. The interpretation that multiple mechanisms may coexist (C90, C91) is reasonable and scientifically mature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C96",
+      "C99",
+      "C101"
+    ],
+    "result": "Methodological details specify simulation parameters (timestep = 1/3 second, spatial bins = 5 cm, movement speed = 15 cm/s), model definitions (FF-TD implements canonical SR algorithm), and analysis procedures (place cell definition, data downsampling to 3 FPS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C93, C96, C99, and C101 provide clear methodological specifications that enable reproducibility. These are straightforward factual statements about the methods used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The authors' citation practices were 62% male-male, 19% female-male, 9% male-female, and 10% female-female for first-last author pairs. The authors expressed disappointment at the low representation of female authors despite being a female-female team.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102 and C103 are self-reported statistics and reflections by the authors. These are factual statements about their citation practices and personal reactions. While this is an important discussion, it is not a scientific result of the study.",
+    "result_type": "MINOR"
+  }
+]

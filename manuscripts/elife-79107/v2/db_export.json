@@ -1,0 +1,1767 @@
+{
+  "submission": {
+    "id": "5575a710-8ce5-43d4-99f6-c63fd2009018",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:53:03.534549Z",
+    "updated_at": "2025-12-03T15:53:03.534549Z"
+  },
+  "content": [
+    {
+      "id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "submission_id": "5575a710-8ce5-43d4-99f6-c63fd2009018",
+      "content_type": "manuscript",
+      "content_text": "# Higher-order unimodal olfactory sensory preconditioning in Drosophila\n\n## Authors\n\n- Juan Martinez-Cervantes<sup>1</sup>\n- Prachi Shah<sup>1</sup>\n- Anna Phan<sup>2</sup>\n- Isaac Cervantes-Sandoval<sup>1</sup> ([ORCID: 0000-0002-6372-7288](https://orcid.org/0000-0002-6372-7288)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Georgetown University Washington, DC United States ([ROR:05vzafd60](https://ror.org/05vzafd60))\n2. Department of Biological Sciences and Neuroscience & Mental Health Institute, University of Alberta Edmonton Canada ([ROR:0160cpw27](https://ror.org/0160cpw27))\n3. Interdisciplinary Program in Neuroscience, Georgetown University Washington, DC United States ([ROR:05vzafd60](https://ror.org/05vzafd60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLearning and memory storage is a complex process that has proven challenging to tackle. It is likely that, in nature, the instructive value of reinforcing experiences is acquired rather than innate. The association between seemingly neutral stimuli increases the gamut of possibilities to create meaningful associations and the predictive power of moment-by-moment experiences. Here, we report physiological and behavioral evidence of olfactory unimodal sensory preconditioning in fruit flies. We show that the presentation of a pair of odors (S1 and S2) before one of them (S1) is associated with electric shocks elicits a conditional response not only to the trained odor (S1) but to the odor previously paired with it (S2). This occurs even if the S2 odor was never presented in contiguity with the aversive stimulus. In addition, we show that inhibition of the small G protein Rac1, a known forgetting regulator, facilitates the association between S1/S2 odors. These results indicate that flies can infer value to olfactory stimuli based on the previous associative structure between odors, and that inhibition of Rac1 lengthens the time window of the olfactory \u2018sensory buffer\u2019, allowing the establishment of associations between odors presented in sequence.\n\n## Introduction\n\nLearning and memory are fundamental for animal survival in dynamic and noisy environments and for the cognitive abilities of humans. A significant amount of what we know on the biological basis of learning and memory has come from studying classical conditioning, also known as Pavlovian conditioning (Heisenberg et al., 1985; Romanski et al., 1993; Uwano et al., 1995; LeDoux, 2000; Davis and Whalen, 2001; Dubnau et al., 2001; McGuire et al., 2001; Maren and Quirk, 2004; Fanselow and Poulos, 2005; Ehrlich et al., 2009; Johansen et al., 2010; Duvarci and Pare, 2014; Herry and Johansen, 2014). During classical conditioning, learning depends on the contiguity of conditioned and unconditioned stimuli. Studying classical conditioning has provided essential insights into the molecular, cellular, and circuit basis of how the brain transforms sensory information into memories and how it uses these memories to drive behavior. Nevertheless, in humans and other animals, the instructive value of naturally occurring reinforcing experiences is acquired rather than innately instructive and does not necessarily dependent on mere contiguity. For example, the value of money and its capacity to function as a reinforcer is learned rather than innate. Learning theory has postulated the idea that learned behavioral control uses two types of information. The first results from habits, policies, or cached values (e.g., Pavlovian conditioning \u2013 model-free learning) (Jones et al., 2012). This kind of information produces a rapid, efficient behavioral response but does not consider changes in the value of the expected outcome. The second type of information relies on the knowledge of the associative structure of the environment to infer value (model-based learning). In other words, acquiring new knowledge depends on creating an associative structure of external events, which is then used to create additional new meaningful associations (Daw et al., 2005; Jones et al., 2012; McDannald et al., 2012; Lucantonio et al., 2014; Sadacca et al., 2016). Several different types of higher-order conditioning are examples of this type of information. In higher-order conditioning procedures, neutral stimuli acquire the property to elicit conditional responses even though they have never been in contiguity with a reinforcer. Sensory preconditioning is one example of higher-order conditioning (Giurfa, 2013; Giurfa, 2015; Todd et al., 2016). In sensory preconditioning, two initially neutral stimuli (S1 and S2) are repeatedly presented in contiguity or in sequence (preconditioning phase); later, one of the stimuli (S1) is paired with a reinforcer (conditioning phase). After this, S2 will elicit a conditioned response even though it was never paired with the reinforcer, indicating that the preconditioning phase created an association between S1 and S2. The response to the preconditioned stimulus (S2) is different from the response to the reinforcer-paired S1 in that it is not based on a mere association; instead, it must infer value by virtue of knowledge of the associative structure of the task (Jones et al., 2012). Sensory preconditioning has been shown previously in bees and flies (M\u00fcller et al., 2000; Brembs and Heisenberg, 2001; Guo and Guo, 2005). Using a flight simulator (Guo and Guo, 2005), trained flies, using visual or olfactory cues to avoid certain flight directions. They reported sensory preconditioning using S1\u2013S2 cues of different modalities (olfactory and visual). Here, we provide evidence of olfactory unimodal sensory preconditioning in fruit flies. We show that the presentation of a pair of odors (S1 and S2) before one of them (S1) is associated with electric shocks elicits a conditioned response not only to the trained odor (S1) but also to the odor it was previously paired with (S2). This occurs even if the S2 odor was never presented in contiguity with the negative reinforcer. These data provide evidence for unimodal sensory preconditioning in Drosophila. These findings open the door to better understand how a simple brain achieves sensory preconditioning with limited neurons and synapses, providing meaningful insights into how a more complex mammalian brain may solve similar problems.\n\n## Results and discussion\n\nThe Drosophila mushroom bodies (MB) are brain structures made up by the axons of the Kenyon cells (KC), and are known to play a central role in the encoding of olfactory memories (Heisenberg et al., 1985; Dubnau and Tully, 2001; McGuire et al., 2001). During associative memory acquisition, positive or negative values are assigned to odors by associated reward and punishment, respectively. This reinforcement is achieved by the coincident activation of a sparse number of KC by an odorant and the activation of dopaminergic neurons (DAN), which innervate the MB, by the unconditioned stimulus. Different DAN synapse onto discrete zones of the MB, resulting in 15 tile-like compartments of the MB. Each of these 15 tiled areas in turn synapse onto the dendrites of distinct corresponding mushroom bodies output neurons (MBONs). Activation of different MBONs are then known to alter behavioral approach or avoidance (Aso et al., 2014; Owald and Waddell, 2015; Roselli et al., 2021). The memory of an odor associated with an electric shock (classical conditioning) is known to be partially encoded as a decreased response specifically to the trained odor (CS+) in a particular MBON known as MBON-\u03b31pedc>\u03b1/\u03b2 (Hige et al., 2015; Perisse et al., 2016; Cervantes-Sandoval et al., 2020). Conversely, odors that have not been associated with an electric shock do not normally demonstrate decreased responses in the MBON-\u03b31pedc>\u03b1/\u03b2 neuron (Hige et al., 2015; Perisse et al., 2016; Cervantes-Sandoval et al., 2020). Thus, we were extremely surprised to report in a previous publication that flies expressing the dominant-negative form of Rac1N17 (Rac1DN) in adult KC using the temperature-dependent tool gal80ts (TARGET) (McGuire et al., 2003), displayed a depression to a non-shock associated odor in MBON-\u03b31pedc>\u03b1/\u03b2 neurons (Cervantes-Sandoval et al., 2020). We decided to investigate the nature of this intriguing non-shock associated neural depression.\n\nIt has been reported that animals can link together neutral sensory cues presented in succession or simultaneously; if then one of these cues is associated with reinforcement, animals can display a response to the non-associated pre-linked cue; this is known as sensory preconditioning (Brogden, 1939; Jones et al., 2012). As mentioned above, this type of behavior is categorized as model-based learning where a value is inferred from the associative structure of the environment (Jones et al., 2012). It was also reported that expressing Rac1N17 in KC significantly enhances trace conditioning, in which an odor is associated with an electric shock presented many seconds after odor offset \u2013 suggesting that inhibition of Rac1 lengthens an olfactory \u2018sensory buffer\u2019 that later converges with the punishment signal (Shuai et al., 2011). Therefore, we reasoned that sensory preconditioning and Rac1 inhibition could explain the observed depression to the non-trained odor we previously reported (Cervantes-Sandoval et al., 2020) and replicated this finding in pilot experiments (Figure 1\u2014figure supplement 1).\n\nTo test for the possibility that we were observing sensory preconditioning in MBON-\u03b31pedc>\u03b1/\u03b2 neurons, we exposed animals to a single pairing of 5 s of 4-methylcyclohexanol (MCH) (S1) and 5 s of 3-octanol (OCT) (S2) odors, separated by an interstimulus interval (ISI) of 1 s, 30 s, or 5 min, before classical aversive olfactory conditioning occurred only to S1 by pairing MCH (S1) with an electric shock (20 s of odor with four 90 V, 1.25 s electric shocks). This is also known as forward conditioning. Post-training calcium responses to both MCH and OCT were then recorded 5 min after conditioning in MBON-\u03b31pedc>\u03b1/\u03b2 neurons using the R12G04-lexA driver to express GCaMP6f (Figure 1A, B). These calcium responses in MBON-\u03b31pedc>\u03b1/\u03b2 were compared with the odor responses in backwards conditioned animals which serve as our procedural control. Backwards conditioned animals receive all the same stimuli as forward conditioned animals, except that the electric shock occurs before the odor during what would be the \u2018conditioning phase\u2019, thus classical conditioning does not occur. Two naive odors, penthyl acetate (PA) and ethyl lactate (EL), were also given to the animals post-conditioning to ensure that the experimental methods did not result in generalized MBON-\u03b31pedc>\u03b1/\u03b2 changes to all odors (Figure 1A, B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79107/elife-79107-fig1-v2.jpg)\n\n**Figure 1.:** (A) Diagram of the in vivo, under the microscope training imaging setup, MBON-\u03b31pedc>\u03b1/\u03b2 diagram, and Rac1N17 expression induction. (B) Diagram of the experimental setup (odor schedule): preconditioning was induced by presentation of 4-methylcyclohexanol (MCH) and 3-octanol (OCT) (S1 and S2) with 1-s, 30-s, or 5-min ISI; then flies were aversively trained to MCH (S1) and 5 min later, post-conditioning responses were recorded. Responses were compared to flies trained using backwards conditioning. (C) S1 (MCH) responses were completely depressed 5 min after training in control flies preconditioned with 1-s, 30-s, or 5-min ISI. Non-parametric Mann\u2013Whitney test p \u2264 0.0044; n = 8\u201310. A significant inhibition of post-trained response to S2 (OCT) was observed in control flies preconditioned with 1-s ISI. Non-parametric Mann\u2013Whitney test p = 0.035; n = 10. In contrast, S2 (OCT) responses in control flies preconditioned with 30-s or 5-min ISI showed no significant change. Non-parametric Mann\u2013Whitney test p \u2265 0.0630, n = 8\u201310. Neither naive odor (penthyl acetate [PA] and ethyl lactate [EL]) responses showed any significant reduction in flies preconditioned with 1-s, 30-s, or 5-min ISI. Non-parametric Mann\u2013Whitney test p \u2265 0.0726, n = 8\u201310. (D) S1 (MCH) responses were completely depressed 5 min after training in flies expressing Rac1N17 preconditioned with 1-s, 30-s, or 5-min ISI. Non-parametric Mann\u2013Whitney test p \u2264 0.0009; n = 8\u201312. A significant inhibition of post-trained response to S2 (OCT) was observed in flies preconditioned using a 1- or 30-s ISI. Non-parametric Mann\u2013Whitney test p \u2264 0.0031; n = 8\u201312. In contrast, S2 (OCT) responses in flies preconditioned with 5-min ISI showed no significant change. Non-parametric Mann\u2013Whitney test p = 0.4234, n = 8\u20139. Neither naive odor (PA and EL) responses showed any significant reduction in flies preconditioned with 1-s, 30-s, or 5-min ISI. Non-parametric Mann\u2013Whitney test p \u2265 0.0726, n = 8\u201312. Boxplots represent distribution of %\u2206F/Fo responses across the 5 s of odor presentation. The thick black bar below each trace represents the time of odor presentation. The asterisk's number shows N digits after the decimal.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79107/elife-79107-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Diagram of experimental setup (odor schedule): preconditioning responses were obtained for 4-methylcyclohexanol (MCH) and 3-octanol (OCT) (S1 and S2); later flies were aversively trained to MCH (S1) and 5 min later post-conditioning responses were recorded. (B, C) S1 (MCH) responses were completely depressed 5 min after training in both control and flies expressing Rac1N17. Non-parametric Wilcoxon-paired test p \u2264 0.0003; n = 10\u201311. No significant changes were detected to S2 (OCT) for control animals. Non-parametric Wilcoxon-paired test p = 0.2783; n = 11. However, a significant inhibition in the post-trained response to S2 (OCT) was observed in flies expressing Rac1N17. Non-parametric Wilcoxon-paired test p \u2264 0.0098; n = 10. The asterisk's number shows N digits after the decimal.\n\nUsing the typical imaging protocol with a 25- to 30-s ISI between the preconditioned odors, we and others (Hige et al., 2015; Cervantes-Sandoval et al., 2020) have shown there is no evidence of sensory preconditioning in the MBON-\u03b31pedc>\u03b1/\u03b2 of control animals. That is, the MBON-\u03b31pedc>\u03b1/\u03b2 does not display a decreased response to the S2 odor (Figure 1C), but does demonstrate the expected near-complete depression in response to the conditioned S1 odor. Lengthening the ISI to 5 min has the same effect on control flies (Figure 1C). Interestingly however, when we shorten the sensory preconditioning interval to 1 s, the MBON-\u03b31pedc>\u03b1/\u03b2 neurons in control flies exhibit a decreased calcium response to the S2 odor, and to the S1 odor that is expected (Figure 1C). Throughout these experiments, MBON-\u03b31pedc>\u03b1/\u03b2 responses to naive odors remained unchanged, indicating the decrease in calcium response to the S2 odor is specific to the preconditioning phase, and not the result of a generalized depression to all odors (Figure 1C). This suggests that shortening the ISI window during sensory preconditioning allows control flies to form some association between the S1 and S2 odors, thus resulting in an inferred predictive value of the S2 odor after animals were aversively conditioned to the S1 odor. These results demonstrate that flies show, at least at the physiological level, sensory preconditioning.\n\nIn contrast to control animals, flies expressing dominant-negative Rac1N17 in the KC had previously been found to exhibit a decreased calcium response to the S2 odor when using an ISI of 30 s (Figure 1D, Figure 1\u2014figure supplement 1B). This was also true when the sensory preconditioning ISI was decreased to 1 s (Figure 1D). The data from our control flies led us to speculate that the timing of the S1/S2 ISI dictates whether an association between odors S1 and S2 (MCH and OCT) occurs during the sensory preconditioning stage. Secondly, from prior data on Rac1\u2019s role in trace conditioning and our sensory preconditioning data, we suspected that Rac1 inhibition in the KC extends the time period that allows for the S1/S2 association to occur. If this was true, we predicted that extending the ISI should eliminate sensory preconditioning in Rac1DN flies. When the ISI was increased to 5 min, no sensory preconditioning was observed in the Rac1DN animals (Figure 1D). Again, naive odor responses in these flies were unchanged. This widening of the ISI window to allow for an S1/S2 association is dependent on the inhibition of Rac1, since flies with the same genotype but raised at 18\u00b0C to prevent the expression of Rac1N17 (using the TARGET system) showed the normal conditioning-induced odor depression to the S1 but no change to S2 with a preconditioning ISI window of 30 s (Cervantes-Sandoval et al., 2020).\n\nWe tested whether this suspected sensory preconditioning-induced calcium depression might be the result of increased habituation of the non-associated S2 odor. We recorded olfactory responses in flies exposed to the same odor protocol except that the unconditioned stimulus was excluded. Results showed no depression to either S1 or S2 odor presented (Figure 2\u2014figure supplement 1A). Going even further, we confirmed this observation by recording and evaluating changes in calcium responses after 10 repeated presentations of both MCH and OCT. Data were analyzed as previously described (Hattori et al., 2017). The ratio between the mean of three initial responses and mean of three last responses in MBON-\u03b31pedc>\u03b1/\u03b2 was not significantly different between control and experimental genotypes (Figure 2\u2014figure supplement 1B). Thus, the reduced calcium response we see in MBON-\u03b31pedc>\u03b1/\u03b2 to the classically conditioned S1 odor and the sensory preconditioned S2 odor cannot be explained by a general habituation to the odors due to the experimental protocol.\n\nRac1 has been implicated in memory forgetting, and it has been theorized that forgetting is fundamental for memory generalization (Richards and Frankland, 2017). In addition, (Hige et al., 2015) showed that a similar depression to the non-trained odor could result from a partial overlap in the neural representation of odors such as MCH and OCT. For these reasons, we tested whether the expression of Rac1N17 in KC may somehow increase that generalization between MCH and OCT, and that this may lead to the sensory preconditioned neural response that we are observing. For this, we trained animals using orthogonal odors, PA and EL, that are known to have little overlap in their KC representations. Surprisingly, similar results to MCH/OCT were obtained; we observed a depression to the non-trained S2 odor (EL) when Rac1 function is inhibited in KC (Figure 2). Thus, this physiological response to sensory preconditioning can be observed for different odors and odor pairs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79107/elife-79107-fig2-v2.jpg)\n\n**Figure 2.:** (A) Diagram of experimental setup (odor schedule): preconditioning responses were obtained for penthyl acetate (PA) and ethyl lactate (EL) (S1 and S2, respectively); later flies were aversively trained to PA (S1) and 5 min after, post-conditioning responses were recorded. (B, C) S1 (PA) responses were completely depressed 5 min after training in both control flies and flies expressing Rac1N17. Non-parametric Wilcoxon-paired test p \u2264 0.0078; n = 8\u201311. No significant changes were detected to S2 (EL) for control animals. Non-parametric Wilcoxon-paired test p = 0.5771; n = 11. Nevertheless, a significant inhibition of post-trained response to S2 (EL) was observed in flies expressing Rac1N17. Non-parametric Wilcoxon-paired test p = 0.0391; n = 8. Boxplots represent distribution of %\u2206F/Fo responses across the 5 s of odor presentation. The thick black bar below each trace represents the time of odor presentation. The asterisk's number shows N digits after the decimal.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79107/elife-79107-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Upper part, diagram of experimental setup (odor schedule): preconditioning responses were obtained for 4-methylcyclohexanol (MCH) and 3-octanol (OCT) (S1 and S2); later flies were presented with 20 s of MCH (S1) and 5 min later post-conditioning responses were recorded. Electric shocks were excluded. Both S1 (MCH) and S2 (OCT) responses showed no significant changes for both control and flies expressing Rac1N17. (B) Similarly, flies expressing Rac1N17 did not show increased odor depression when repeatedly presented (10 times).\n\nTo further challenge the assertion that the reduced calcium response in MBON-\u03b31pedc>\u03b1/\u03b2 neurons to the S2 odor is a result of sensory preconditioning, we trained animals with forward or backwards conditioning but excluded the pre-training odor presentation of S1 and S2. When we eliminated the preconditioning association between the S1 and S2 odors, the results showed significant depression to the classically conditioned S1 odor that was associated with the shock, but no depression to any other odors (Figure 3). These results demonstrate that the depression to the non-trained S2 odor was not due to a general depression to odors or generalization of learned aversion. Instead, depression of the non-trained S2 odor is dependent on the animal learning the association between S1 and S2 during the preconditioning stage. These results further support the hypothesis that we are observing physiological sensory preconditioning.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79107/elife-79107-fig3-v2.jpg)\n\n**Figure 3.:** (A) Diagram of experimental procedure (odor schedule): Flies were aversively trained to 4-methylcyclohexanol (MCH) (S1) and 5 min later post-conditioning responses to four odors were recorded (preconditioning was excluded). Responses were compared to flies trained using backwards conditioning. (B, C) S1 (MCH) responses were completely depressed 5 min after training in both control and flies expressing Rac1N17. Non-parametric Mann\u2013Whitney test p \u2264 0.0147; n = 10\u201311. Neither 3-octanol (OCT), penthyl acetate (PA), nor ethyl lactate (EL) responses showed any significant reduction for both control and experimental flies. Non-parametric Mann\u2013Whitney test p \u2265 0.072, n = 10\u201311. Boxplots represent distribution of %\u2206F/Fo responses across the 5 s of odor presentation. The asterisk's number shows N digits after the decimal.\n\nWe then tested if sensory preconditioning could be observed at the behavioral level. For this, we trained the flies using an Arduino microcontroller for precise odor delivery by controlling solenoids automatically. Using this Arduino system, we trained animals as follows (Figure 4\u2014figure supplement 1A). Control flies were presented with a single pairing of the odors (5 s pulse each) with a 1-s ISI. Using the standard aversive olfactory conditioning paradigm, flies were then conditioned by the presentation of 1 min of S1 odor along with 12, 90 V shocks. Memory was tested right after training in a T-maze by presenting animals with either the S1 (shock-paired odor) and a novel odor (NO), or the S2 (non-shocked, pre-paired odor) and an NO. As in canonical aversive olfactory conditioning experiments, each behavioral experiment was conducted using the reciprocal odor as S1. The final performance index (PI) was calculated by averaging the PI for each odor used as S1. Results were compared to flies trained with backwards conditioning. Despite observing evidence of sensory preconditioning by functional imaging using a similar protocol, we could not observe a behavioral memory to the non-shocked pre-paired odor (S2) (Figure 4\u2014figure supplement 1B). At a behavioral level, sensory preconditioning has previously been observed in animals after repeated presentation of a pair of sensory cues. Thus, we preconditioned flies with 10 repeated presentations of odor pairings (S1/S2) before training (Figure 4A). Using an ISI of 1 s, this resulted in a significant behavioral aversive memory expression to the S2 odor in control flies (Figure 4B), consistent with our predictions based on the sensory preconditioning physiological data. Furthermore, control flies did not demonstrate an aversive memory to the S2 odor when an ISI of 30 s was used (Figure 4B), as would be predicted from our physiological imaging data. These results also suggest that while a single odor pairing is sufficient to induce sensory preconditioned-related plasticity in the MBON-\u03b31pedc>\u03b1/\u03b2 compartment, it is not enough for the S2 odor to drive the learned behavior. We suggest that the presentation of additional odor pairings recruits and induces sensory preconditioning-related plasticity in additional MB compartments, and it is the additive effect of multiple compartments that is necessary to drive the behavioral response. Similar phenomena have been observed before for classical conditioning where a short pairing of odor and shock \u2013 1-s odor paired with 4 DAN photostimulation pulses \u2013 is enough to induce plasticity in MBON-\u03b31pedc>\u03b1/\u03b2 compartment but not in MBON-\u03b12sc. Longer training protocols \u2013 1-min odor presentation paired with 120 DAN photostimulation pulses \u2013 induce plasticity in MBON-\u03b12sc (Hige et al., 2015). Physiologically, preconditioning flies with MCH/OCT pairs repeated 10 times before training resulted in a robust depression in MBON-\u03b31pedc>\u03b1/\u03b2 to the non-shocked pre-paired odor (CS2) in control flies (Figure 4\u2014figure supplement 2A). These results were similar when PA/EL were used as the preconditioned odors (Figure 4\u2014figure supplement 2B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79107/elife-79107-fig4-v2.jpg)\n\n**Figure 4.:** (A) Flies were trained using an Arduino microcontroller for precise odor delivery: Flies were preconditioned by 10 repeated presentations of S1/S2 odor pairs with 1-s interstimulus interval (ISI). Later flies were aversively trained to 4-methylcyclohexanol (MCH) (S1) by pairing 1-min odor presentation along 12 90 V, 1.25 s shocks. Right after training memory was tested in a T-maze by presenting either S1 vs. a novel odor (NO) or S2 vs. an NO. Performance index (PI) was compared to flies trained using backwards conditioning. (B) Memory to S1 was significantly different from flies trained with backwards conditioning, after 10\u00d7 preconditioning presentations using 1-s, 30-s, or 5-min ISI. Non-parametric Mann\u2013Whitney test p < 0.0001, n = 8\u201312. In contrast, memory to S2 was significantly different from flies trained with backwards conditioning, with 10\u00d7 preconditioning presentations only using 1-s ISI in control flies. Non-parametric Mann\u2013Whitney test p = 0.0019, n = 12. Memory to S2 was not significantly different from backwards conditioning, with 10\u00d7 preconditioning presentations using 30-s or 5-min ISI in control flies. Non-parametric Mann\u2013Whitney test p > 0.999, n = 8. (C) Memory to S1 in flies expressing Rac1N17 was significantly different from flies trained with backwards conditioning, after 10\u00d7 preconditioning presentations using 30-s or 5-min ISI. Non-parametric Mann\u2013Whitney test p = 0.0002, n = 8. Memory to S2 in flies expressing Rac1N17 was significantly different from flies trained with backwards conditioning, with 10\u00d7 preconditioning presentations when using a 30-s ISI. Non-parametric Mann\u2013Whitney test p = 0.0191, n = 8. Memory in flies expressing Rac1N17 to S2 was not significantly different from backwards conditioning, with 10\u00d7 preconditioning presentations when using 5-min ISI. Non-parametric Mann\u2013Whitney test p = 0.8981, n = 8. The asterisk's number shows N digits after the decimal. The following source data and figure supplements are available for Figure 4.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79107/elife-79107-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Control flies were trained using an Arduino microcontroller for precise odor delivery. Diagram of experimental setup (odor schedule): Flies were preconditioned by a single presentation of a S1/S2 odor pair with 1-s interstimulus interval (ISI). Later flies were aversively trained to 4-methylcyclohexanol (MCH) (S1) by pairing a 1-min odor presentation with 12 90 V, 1.25 s shocks. Right after training memory was tested in a T-maze by presenting either S1 vs. a novel odor (NO) or S2 vs. an NO. Performance index (PI) was compared to flies trained using backwards conditioning. (B) Memory to S1 was significantly different from flies trained with backwards conditioning. Non-parametric Mann\u2013Whitney test p < 0.0001, n = 9. Memory to S2 was not significantly different from flies trained with backwards conditioning with 1\u00d7 preconditioning presentations. Non-parametric Mann\u2013Whitney test p = 0.0923, n = 10. The asterisk's number shows N digits after the decimal.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79107/elife-79107-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Upper part, diagram of experimental setup (odor schedule): preconditioning was induced by 10 repeated presentations of 4-methylcyclohexanol (MCH) and 3-octanol (OCT) (S1 and S2) with a 1-s interstimulus interval (ISI); later flies were aversively trained to MCH (S1) and 5 min later post-conditioning responses were recorded for MCH, OCT, penthyl acetate (PA), and ethyl lactate (EL). Responses were compared to flies trained using backwards conditioning. S1 (MCH) responses were completely depressed 5 min after training. Non-parametric Mann\u2013Whitney test p \u2264 0.0043; n = 5\u20136. A significant inhibition of post-trained response to S2 (OCT) was also observed. Non-parametric Mann\u2013Whitney test p = 0.0087; n = 5\u20136. Neither PA nor EL responses showed any significant reduction. Non-parametric Mann\u2013Whitney test p \u2265 0.2468, n = 5\u20136. (B) Upper part, diagram of experimental setup (odor schedule): preconditioning was induced by 10 repeated presentations of PA and EL (S1 and S2) with 1-s ISI; later flies were aversively trained to PA (S1) and 5 min later post-conditioning responses were recorded for MCH, OCT, PA, and EL. Responses were compared to flies trained using backwards conditioning. S1 (PA) responses were completely depressed 5 min after training. Non-parametric Mann\u2013Whitney test p \u2264 0.0077; n = 8. A significant inhibition of post-trained response to S2 (EL) was also observed. Non-parametric Mann\u2013Whitney test p = 0.0019; n = 8. Neither MCH nor OCT responses showed any significant reduction. Non-parametric Mann\u2013Whitney test p \u2265 0.5054, n = 8. Boxplots represent distribution of %\u2206F/Fo responses across the 5 s of odor presentation. The thick black bar below each trace represents the time of odor presentation. The asterisk's number shows N digits after the decimal.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79107/elife-79107-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Diagram of experimental setup (odor schedule): Flies were kept at 18\u00b0C then transferred to 25\u00b0C before training. Flies were preconditioned by 10 repeated presentations of S1/S2 odor pairs with 30-s interstimulus interval (ISI). Later flies were aversively trained to 4-methylcyclohexanol (MCH) (S1) by pairing 1-min odor presentation with 12 90 V, 1.25 s shocks. Right after training memory was tested in a T-maze by presenting either S1 vs. a novel odor (NO) or S2 vs. an NO. Performance indices (PI) were compared with flies trained using backwards conditioning. (B) Memory to S1 was significantly different from flies trained with backwards conditioning, for both control and flies bearing Rac1N17. Non-parametric Mann\u2013Whitney test p < 0.0002, n = 8. In contrast, Memory to S2 was not significantly different in both genotypes. Non-parametric Mann\u2013Whitney test p \u2265 0.4873, n = 8. The asterisk's number shows N digits after the decimal.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/79107/elife-79107-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Top part, diagram of the in vivo, under the microscope imaging setup. Rac1N17 was expressed in KC using R13F02-gal4>uas-rac1N17 using the temperature conditional system Target (tub-gal80ts). At the same time the calcium reporter was expressed in KC using R13F02-lexA>lexAop-GCaMP6f. There is no significant difference in 4-methylcyclohexanol (MCH) responses in flies expressing Rac1N17. Non-parametric Mann\u2013Whitney test p = 0.616, n = 13\u201314. Similarly, no significant differences were detected in 3-octanol (OCT), non-parametric Mann\u2013Whitney test p = 0.1852, n = 13\u201314.\n\nWe next tested flies expressing Rac1N17 in KC for evidence of behavioral sensory preconditioning when using 30-s and 5-min ISI between S1 and S2. As would be predicted from our physiological data, while a 30-s ISI resulted in no aversive memory to S2 in control flies, a significant aversive memory was observed in flies expressing Rac1N17 (Figure 4B). This is consistent with our calcium imaging results in Figure 1B, in which a 30-s ISI results in a depression to S2 in Rac1N17 flies but not in control flies. Further lengthening the ISI to 5 min eliminated behavioral sensory preconditioning both in controls and in flies expressing Rac1N17 (Figure 4B), again mirroring the physiological results in the MBON-\u03b31pedc>\u03b1/\u03b2 neuron (Figure 1B). Flies kept at 18\u00b0C to prevent expression of Rac1N17 behaved as control flies and did not demonstrate behavioral evidence of sensory preconditioning when using an ISI of 30 min (Figure 4\u2014figure supplement 3). Finally, we tested if Rac1N17 expression in KC altered olfactory responses in the MB lobes. Interestingly, we could not find any change in the calcium response dynamics in KC \u03b3 lobes, even when recordings were performed at a higher speed (28 Hz) (Figure 4\u2014figure supplement 4).\n\nTaken together, these results indicate that flies can undergo unimodal sensory preconditioning and that the small G protein Rac1, previously implicated in memory forgetting, gates the windows for this S1\u2013S2 association.\n\n### Ideas and speculations\n\nOur results demonstrate that flies can infer value to non-reinforced odors based on the previous associative structure between odors. Memories are not discrete bits of events and associations that are added and accumulated in our brains. Rather, memories are dynamic; they undergo modifications and updates and are integrated into a coherent story that continuously incorporates new information to predict upcoming events better and to inform decision making. Within this complex associative structure, associations between seemingly valueless stimuli are fundamental. Here we present evidence that even the simple brain of a fly can form these associations.\n\nHow do these associations occur? Are S1\u2013S2 associations the result of forming new or strengthening connections between KC following a Hebbian-like delay of synaptic reinforcement? If this is true, one could suggest a role for dopamine in this reinforcement. We know that DAN are essential for many types of reinforcement and even for non-associative learning like novelty detection (Hattori et al., 2017). Furthermore, we know dopamine neurons receive substantial feedback from both KC and MBON. Alternatively, S1\u2013S2 associations could result from a shift in the stimulus representation during sensory preconditioning, probably by mechanisms similar to the hypothesis of excitability-dependent allocation of engram cells (or, in this case, neuronal representation) (Yiu et al., 2014; Josselyn and Frankland, 2018; Josselyn and Tonegawa, 2020).\n\nAnother interesting finding is that while a single odor pairing is sufficient to induce sensory preconditioned-related plasticity in the MBON-\u03b31pedc>\u03b1/\u03b2 compartment, it is not enough for the S2 odor to drive the learned behavior. As mentioned above, we suggest that the presentation of additional odor pairings recruits and induces sensory preconditioning-related plasticity in additional MB compartments, and it is the additive effect of multiple compartments that is necessary to drive the behavioral response. Follow-up studies should include looking for the rules of sensory preconditioning-related plasticity in additional MB compartments. This finding has important implications for how memory systems work. There is accumulating evidence that memorable experiences are encoded in parallel, relatively independent memory traces, and it is the integration of these different memory traces that drives the most adequate behavior. Examples include the additive effect of aversive memory traces (Aso et al., 2012); the additive effect of contextual memory to aversive olfactory memories (Zhao et al., 2019); or the integration of parallel opposite memories during memory extinction (Felsenberg et al., 2017; Felsenberg et al., 2018).\n\nOur data also demonstrate that inhibition of Rac1 by expressing its dominant-negative form in the KC lengthens the time for an olfactory \u2018sensory buffer\u2019, allowing the linking of odors presented in sequence even when separated by at least 30 s. Interestingly, calcium responses in KC are not altered by the inhibition of Rac1 (Figure 4\u2014figure supplement 4). While calcium is a good proxy of neuronal activity within the KC, it does not necessarily directly translate to a readout of the neurotransmission output of the KC and its communication with downstream neurons.\n\nA challenging question that remains for future study is on the nature of the circuit connections that link S1 and S2 during the sensory preconditioning phase. Once this S1\u2013S2 link is formed, the key process by which we experimentally detect that link is as an aversive response to S2 during the testing phase. Does this aversive response to S2 result during the associative learning phase, in which the S1 presentation summons an S2 representation during CS/US pairing, and therefore, S2 forms a direct association with the punishment? Conversely, is the aversive response to S2 dependent on the memory retrieval phase, during which exposing flies to the S2 odor somehow recalls the S1-punishment association to influence the aversive response? This second possibility would imply that S2 is not directly associated with punishment. Deciphering the neural circuit rules that support unimodal sensory preconditioning in the relatively simple fly brain will help us to unravel how other animals, including humans, use our nervous systems to build models of the world.\n\n## Materials and methods\n\n### Drosophila husbandry\n\nFlies were cultured on standard medium at room temperature. Crosses, unless otherwise stated, were kept at 25\u00b0C and 70% relative humidity with a 12-hr light\u2013dark cycle. The drivers used in this study include MB112C-splitgal4 (Aso et al., 2014) (RRID: BDSC_68263), R12G04-lexA (Jenett et al., 2012) (RRID: BDSC_52448), and R13F02-gal4 (Jenett et al., 2012) (RRID: BDSC_48571). Driver expression was verified by immunohistochemistry (Videos 1\u20133). Additional transgene stocks included uas-GCaMP6f (Chen et al., 2013) (RRID: BDSC_42747), lexAop-GCaMP6f (Chen et al., 2013) (RRID: BDSC_44277), uas-rac1N17 (Luo et al., 1994) (RRID: BDSC_6292), and tub-gal80ts (McGuire et al., 2003) (RRID: BDSC_7019).\n\n![Video 1.](https://cdn.elifesciences.org/articles/79107/elife-79107-video1.mp4.jpg)\n\n**Video 1.:** Brains where dissected and stained using anti-GFP and anti-nc82 as a counterstain.\n\n![Video 2.](https://cdn.elifesciences.org/articles/79107/elife-79107-video2.mp4.jpg)\n\n**Video 2.:** Brains where dissected and stained using anti-GFP and anti-nc82 as a counterstain.\n\n![Video 3.](https://cdn.elifesciences.org/articles/79107/elife-79107-video3.mp4.jpg)\n\n**Video 3.:** Brains where dissected and stained using anti-GFP and anti-nc82 as a counterstain.\n\nTo inhibit Rac1 activity in KC, the dominant-negative Rac1 (Rac1N17) was expressed in adult flies using the Target system. Briefly, to restrict expression of transgenes to adult animals, fly crosses were kept at 18\u00b0C during development. After eclosion, 1- to 2-day-old flies were transferred to 30\u00b0C for 3\u20134 days for the induction of expression. Flies were then transferred to 25\u00b0C 1 hr before imaging or behavior. The Target system was used because inhibiting Rac1 in KC during development results in lethality. Control flies were subjected to exactly the same protocol but they did not contain the UAS transgene. Additional controls were performed by keeping the crosses at 18\u00b0C during development and after eclosion; these flies were then transferred to 25\u00b0C 1 hr before imaging.\n\n### In vivo calcium imaging\n\nFor measuring calcium responses following conditioning, odor or shock delivery, we processed flies as previously described with some modifications (Cervantes-Sandoval et al., 2017; Cervantes-Sandoval et al., 2020). Briefly, a single fly was gently aspirated without anesthesia into a metal pipette to immobilize the head using proboscis aspiration. Once the head is immobilized, using a micromanipulator, the fly was inserted in a narrow slot the width of their body in a custom-designed recording chamber. The head was then fixed by gluing the eyes to the chamber using melted myristic acid. After this the fly was released from the metal pipette and the proboscis fixed with myristic acid to avoid brain movement during proboscis extension. Using a syringe needle, a small, square section of dorsal cuticle was removed from the head to allow optical access to the brain. Fresh saline (103 mM NaCl, 3 mM KCl, 5 mM HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid), 1.5 mM CaCl2, MgCl2, 26 mM NaHCO3, 1 mM NaH2PO4, 10 mM trehalose, 7 mM sucrose, and 10 mM glucose [pH 7.2]) was perfused immediately across the brain to prevent desiccation and ensure the health of the fly. Then the fat bodies and trachea above the brain was removed. Using a 20\u00d7 water-immersion objective and a Leica TCS SP8 II confocal microscope with a 488 nm argon laser, we imaged the MBON-\u03b31pedc>\u03b1/\u03b2 neuron for 2 min at 2 Hz, during which stimuli was delivered starting at 30 s after imaging initiation. We used one HyD channel (510\u2013550 nm) to detect GCaMP6f fluorescence. In order to detect small changes in the dynamics of odor responses in KC the recording speed was increased to 28 Hz.\n\n### Odor and shock presentation\n\nTo deliver odors to flies under the microscope, a stream of air (500 ml/min) was diverted (via solenoids) from flowing through a clean 20 ml glass vial to instead flow through a 20-ml glass vial containing a 0.5 \u00b5l drop of pure odorant. This air stream was then serially diluted into a larger air stream (1500 ml/min) before traveling through Teflon tubing (~2.5 mm diameter) to reach the fly. Odors presented to the fly were continuously clear by a funnel connected to high vacuum pressure positioned right behind the recording chamber. To deliver shocks to flies under the microscope, a custom shock platform was made from shock grids used in the standard olfactory memory assays that consist of alternating +/\u2212 charged copper strips attached to an epoxy sheet. To simulate shock exposure given during the standard olfactory memory assay, the surface of the shock platform was positioned so that all six legs are touching but the fly could temporarily break contact by moving its legs. Both solenoids that control odor delivery and the Grass stimulator that delivers shocks were controlled by an Arduino microcontroller (Arduino Uno) with custom-made programs.\n\n### Training under microscope programs\n\nThe regular training protocol followed for most experiments in the paper consisted of flies that were presented to preconditioning odors with 5 s of the first odor followed by variable ISI lengths (indicated in figures) during which clean air was presented, followed by 5 s of a second odor (non-associated odor) pre-training (MCH and OCT or PA and EL). The order of odor presentation was kept the same for all experiments and is indicated in each figure. Five minutes after these preconditioning recordings, flies were trained under the microscope by simultaneous presentation of a single 20-s odor pulse and four 90-V, 1.25-s electric shocks (5-s intershock interval). Five minutes after training, post-conditioning odor responses were recorded similarly to pre-responses. For control purposes, flies were trained with backwards training in which electric pulses were presented right before the onset of odor delivery.\n\n### Behavior\n\nTwo- to five-day-old flies were used for all behavior experiments. Standard aversive olfactory conditioning experiments were performed as described (Beck et al., 2000) with some modifications. Precise control of odor delivery was achieved automatically using an Arduino microcontroller with custom-made programs to control a pair of solenoids. Briefly, a group of ~60 flies were loaded into a training tube where they received a preconditioned stimuli as indicated in each experiment. After preconditioning, flies were trained by 1 min of an odor paired with 12 pulses of 90-V electric shock (S1). We used OCT, MCH, PA, and EL as standard odorants. To measure memory, we transferred the flies into a T-maze where they were allowed 2 min to choose between two odors, either S1 and an NO or S2 and an NO.\n\n### Immunostaining\n\nWhole brains were isolated and processed with minor modifications from those described (Jenett et al., 2012). Brains were first incubated with primary antibodies including: rabbit polyclonal anti-GFP (1:1,000, Life Technologies Cat. # A11122, RRID: AB_10073917) and mouse monoclonal anti-nc82 (1:50, University of Iowa, DSHB, RRID: AB_2314866). Secondary antibodies included: anti-rabbit IgG conjugated to Alexa Fluor 488 (1:800, Life Technologies Cat. # A11008, RRID: AB_143165) and anti-mouse IgG conjugated to Alexa Fluor 633 (1:1000, Life Technologies Cat. # A21052, RRID: AB_141459). Images were collected using a 20\u00d7 objective with a Leica TCS SP8 confocal microscope with 488 and 633 nm laser excitation.\n\n### Quantification and statistical analysis\n\nFluorescence was acquired from a region of interest (ROI) drawn around the axon tract of MBON-\u03b31pedc>\u03b1/\u03b2. Baseline was calculated using a Matlab program as the mean fluorescence across the 5 s before each odor presentation. This baseline was then used to calculate %\u2206F/Fo for the complete recording. Bar graphs represent distribution of %\u2206F/Fo responses across the 5 s of odor presentation. Solid lines in fluorescence traces represent mean %\u2206F/Fo \u00b1 standard error (SE) (shaded area) across the odor responses.\n\nSample size was estimated using G*Power3.1 using preliminary data. All replicates in the manuscript were biological replicates. Statistics were performed using Prism 5 (GraphPad). All tests were two tailed and significance levels were set at \u03b1 = 0.05. The figure legends present the p values and comparisons made for each experiment. Unless otherwise stated, non-parametric tests were used for all imaging data.\n",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "60987f62-7ae3-4642-a1bf-deed1be19042",
+      "submission_id": "5575a710-8ce5-43d4-99f6-c63fd2009018",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sonia Sen, https://ror.org/04xf4yw96 Tata Institute for Genetics and Society India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79107.sa0](https://doi.org/10.7554/eLife.79107.sa0)\n\nThis paper shows that Drosophila can perform olfactory unimodal sensory preconditioning, an example of higher-order conditioning that may guide behaviour through inferred value. This is of conceptual significance for the brain, behavioural, and to some extent, the social sciences, because it shows that a conditioned response to a stimulus can occur even when the stimulus itself was never paired with punishment, for example.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sonia Sen, https://ror.org/04xf4yw96 Tata Institute for Genetics and Society India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79107.sa1](https://doi.org/10.7554/eLife.79107.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Olfactory unimodal sensory preconditioning in Drosophila\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThese results are both interesting and important to the field. We have a few suggestions that we think will help this bring out and strengthen the claims made.\n\n1. The writing: In the current form, the writing makes the story accessible largely to a specialist audience. That flies can learn through inferred value will be of interest to a wider audience and so, we're suggesting that the authors revisit their writing to make the data more accessible to the reader. Specifically, we're requesting that they revisit the introduction and abstract to better equip the reader with the specifics of the paper. This would include a more accessible description of sensory preconditioning (SPC) and the paradigms that model it; its prior demonstration in other insects; and the MBONs. We're also recommending that the authors reorganise their text and figures according to the convention (matched order in text and figures), and fix the numerous typos. Finally, we're requesting them to expand on their methodology.\n\n2. Reorganisation of the story: We felt that a reorganisation of the data would greatly improve readability and make for a more convincing story. Our main suggestion is to focus on presenting all the data necessary to demonstrate that SPC is indeed occurring together. Specific suggestions on how to do this are in the detailed reviews below.\n\n3. Discrepancy between behavioural and physiological responses: We were unclear as to why the authors chose the novel odours and why they did not use wild-type flies (CS) for this. So, we're requesting that the authors present their rationale for using novel odours and for using before-after instead of between-group comparisons. We also recommend that they use CS to address some of the concerns that have been raised regarding the controls.\n\nReviewer #1 (Recommendations for the authors):\n\nPlease check the whole manuscript for typos. There are also many wrong labels in the figures.\n\nIt was a bit confusing that the authors start the result section with figure2B. Either the authors provide a better description for this unusual beginning or change the figure arrangement.\n\nAlso, the Materials and methods is quite short. I was wondering if the odors in the test were always presented in the same order. S1, then S2, then other odors? Is this order necessary to induce the S2 effect? Especially in the 30s gap experiment, flies might not show the memory if the authors would be present in the \"wrong order\" compared to preconditioning.\n\nTo show that Rac1 inhibition might affect the duration of odor representation, the authors might have performed functional imaging in KCs if feasible.\n\nAnother question that came up is why the authors use a novel odor as a control after conditioning in behavioral experiments. Maybe that is confusing for the animals? Might they perform better if the S1 and S2 would be tested against the solvent or an empty tube? This also might explain discrepancies between imaging data and behavioral data.\n\nReviewer #2 (Recommendations for the authors):\n\nIn this manuscript, the authors provide physiological and behavioral evidence to support that fruit flies can perform olfactory unimodal sensory preconditioning, an example of higher-order conditioning. Flies were first exposed to a pair of odors (S1 and S2) with a 1-s inter-stimulus interval (ISI) before conditioning. Then odor S1 was given a negative value through aversive olfactory conditioning. After conditioning, the non-reinforced odor S2 was also found to be linked to the negative value. When the ISI was changed from 1 s to 30 s, flies failed to link odor S2 with the negative value, unless Rac1 activity was inhibited. Such sensory preconditioning can be observed in an aversive memory trace in a pair of MBON-\u03b31pedc>\u03b1/\u03b2 neurons as well as behavioral performance. These results indicate that a simple brain may have the ability to guide behavior through inferred value and Rac1 may have a pivotal role in such behavior. The findings of sensory preconditioning are interesting and important, however, the behavioral data should be further strengthened by adding more controls. And calcium imaging results only partially explain the behavioral data, more discussion should be provided. More detailed information about methods is required. The writing needs to be improved.\n\n1) The writing of this manuscript needs to be greatly improved. The text does not match the figures in some places. There are many other errors throughout the text. It makes reading the manuscript very difficult and time-consuming.\n\na) In line 95, \"and vivo calcium imaging\" should be \"and in vivo calcium imaging\", and \"pairing and odor\" should be \"pairing an odor\".\n\nb) In line 105, the result description is inconsistent with Figure 2B.\n\nc) In line 124, Figure 2A should be Figure 1B.\n\nd) In line 129, Figure 1B should be Figure 1C.\n\ne) In line 148, there is no Figure 2C.\n\nf) In Figure 3A, \"Barwards\" should be \"Backwards\".\n\ng) The first time the abbreviation KC is mentioned, the full form should be provided.\n\n2) Is sensory preconditioning stable and significant at the behavioral level? The behavioral performance of the sensory preconditioning is weak and demonstrated by comparing forward and backward conditioning groups. As a new behavioral paradigm, more control groups such as na\u00efve, \"odor only\" and \"shock only\" groups should be tested using wild-type flies like Canton-S.\n\n3) Is one-second ISI sufficient to clear odor S1 and switch to odor S2? Is it possible that flies indeed sense mixed odors of S1 and S2? Is preconditioning effect can also be observed when S1-S2 mixed odors are exposed before conditioning? More evidence should be provided. It may affect the interpretation of the results.\n\n4) As the authors mentioned in lines 183-186, the preconditioning effect observed in physiological trace in MBON-\u03b31pedc>\u03b1/\u03b2 neurons (Figures 1 and 2) is not sufficient to explain the behavioral preconditioning in Figures 3 and 4. This point should be discussed more in the \"ideas and speculations\" section.\n\nReviewer #3 (Recommendations for the authors):\n\nA weakness is seen in the way the data and arguments are presented, because key data belonging together are not shown and analysed together (and are not shown in the same way), and because the final \"Ideas and Speculations\" section of the Results and Discussion section reads somewhat disjointed.\n\nAnother weakness is that a rationale should be presented under which circumstances before-after comparisons are used as arguments, and when between-group comparisons are used.\n\nLast but not least, the reviewer believes a better job could be done to make the manuscript more accessible for a non-expert audience, for example regarding the definition of wild-type animals, a plain-language rationale for the use of the transgenes, the logic of the Gal80ts/ target system including whether expressing the Rac transgene entails a gain or loss of Rac function, and what, thus, the colour code for presenting the genotypes means in terms of Rac function.\n\nI) My main recommendation is to present together what belongs together, focusing on the most important issue, namely whether the evidence for sensory pre-conditioning (SPC) is indeed convincing. I discuss this for the physiological data, but the same applies to the behavioural data as well.\n\nI think you could present together with the data from Figure 1, Figure 2-S1 (in between what are now Figure 1B and C), and Figure 2-S2 (after what is now Figure 1C). This would allow you to make your points for all the three mentioned requirements for a demonstration of SPC in one panel \u2013 plus: the broader time window for SPC upon Rac inhibition (?!) would be very nicely visible.\n\nTo simplify, you could present all the traces of recordings as supplements throughout.\n\nYou could then present a separate figure with all (sic) pre-post comparisons for that panel; \"all\" meaning for MCH and for OCT, and for both the forward and the backward cases.\n\nThere are a number of additional and rather unfortunate arrangements of the figures that make it hard to follow, almost creating 'stroop effects'. In addition to what was mentioned above, examples include:\n\nIf you deal with Figure 2 before Figure 1 in the Results section, you should also present these figures in that order. By the way, it might be a good idea to label the experiment in Figure 2 as a 'Pilot experiment' and present it as a supplement. This is because it is inconclusive with respect to all the three requirements for demonstrating SPC mentioned above.\n\nBe consistent in presenting eg the control genotype towards the top and the experimental genotype towards the bottom, as in Figure 1 (this is apparently swapped in Figure 2-S1 and Figure 2-S2, and rotated by 90 degrees in Figure 2).\n\nIn general, I find your arguments regarding the discrepancy in terms of how many trials of pre-conditioning are needed for SPC at the physiological and behavioural levels reasonable.\n\nAs mentioned before, the \"Ideas and Speculations\" section of the Results and Discussion section lacks clarity. I like the idea of the \"novelty\" activations of DANs by untrained odours as a signal to establish S1-S2 associations.\n\nAt the conceptual level, one of the main future questions, I think, would be whether in addition to the S1-S2 link being formed during the first training phase, the key process to experimentally detect that link as SPC takes place during the second training phase (i.e. S1 calls up an S2-representation during this second training phase, such that this S2-representation is associated with punishment; meaning conditioned responding is based on an S2-punishment association), or whether this happens at the moment of the final test (i.e. at the moment of testing S2 calls up S1, which in turn calls up the S1-punishment association; meaning there is no direct S2-punishment association). One could rephrase this as: does S1-S2 pattern completion take place during the second training phase, and/or at the moment of the final test?\n\nII) Further recommendations\n\nMore clarity is needed about the time intervals between the two training phases, and between the second training phase and the final test.\n\nIn a number of instances, articles or verbs appear to be missing. Some language polishing is advised.\n\nThe Introduction does not inform the reader that there have been earlier demonstrations of SPC in insects/ invertebrates. This may be read as a claim of primacy, although the authors, quite appropriately, do not explicitly make such a claim. In other words, not-citing the relevant literature unwittingly leads to an inappropriate, implicit claim of primacy.\n\nBetter do not introduce new terminology on the run, such as \"S-S associations\" line 205.\n\nBetter remove the money example from the Introduction as it refers to second-order conditioning, distracting from SPC as the subject of the study.\n\nLine 148 refers to Figure 2C, which does not appear to exist.\n",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "10d2f030-3bcd-4ec4-ac87-b1ed7a41a9f5",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C1",
+      "claim": "Learning and memory storage is a complex process that has proven challenging to tackle.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning and memory storage is a complex process that has proven challenging to tackle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field without specific supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "d7cbc3cc-45cf-4439-8845-cf747d51cd16",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C2",
+      "claim": "In nature, the instructive value of reinforcing experiences is likely acquired rather than innate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that, in nature, the instructive value of reinforcing experiences is acquired rather than innate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a theoretical position without specific experimental evidence in this manuscript.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "549133dd-5582-4514-98e1-f30dcee461f8",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C3",
+      "claim": "The association between seemingly neutral stimuli increases the gamut of possibilities to create meaningful associations and the predictive power of moment-by-moment experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between seemingly neutral stimuli increases the gamut of possibilities to create meaningful associations and the predictive power of moment-by-moment experiences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the function of associations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "b266346d-5e25-45e6-b633-11427ace562d",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C4",
+      "claim": "Flies show physiological evidence of olfactory unimodal sensory preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report physiological and behavioral evidence of olfactory unimodal sensory preconditioning in fruit flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by calcium imaging data showing depression to S2 odor in MBON neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "2f13ef06-6394-4b20-8602-0954e0ebc8ce",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C5",
+      "claim": "The presentation of a pair of odors (S1 and S2) before one of them (S1) is associated with electric shocks elicits a conditional response not only to the trained odor (S1) but to the odor previously paired with it (S2).",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the presentation of a pair of odors (S1 and S2) before one of them (S1) is associated with electric shocks elicits a conditional response not only to the trained odor (S1) but to the odor previously paired with it (S2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral and physiological data presented in Figures 1 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "529d6379-d58e-49df-b310-77636543a948",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C6",
+      "claim": "The S2 odor elicits a conditional response even if it was never presented in contiguity with the aversive stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs even if the S2 odor was never presented in contiguity with the aversive stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the defining characteristic of sensory preconditioning demonstrated in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "4a199601-e63e-4a4a-b7e2-9406a1e4e5a3",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C7",
+      "claim": "Inhibition of the small G protein Rac1 facilitates the association between S1/S2 odors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that inhibition of the small G protein Rac1, a known forgetting regulator, facilitates the association between S1/S2 odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing sensory preconditioning at longer ISIs in Rac1DN flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "3bd6db74-8f65-47fd-a1bc-079f1ec82564",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C8",
+      "claim": "Rac1 is a known forgetting regulator.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that inhibition of the small G protein Rac1, a known forgetting regulator, facilitates the association between S1/S2 odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about Rac1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "a76b57d6-60a9-434f-832a-2b08bb86a4c0",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C9",
+      "claim": "Flies can infer value to olfactory stimuli based on the previous associative structure between odors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that flies can infer value to olfactory stimuli based on the previous associative structure between odors, and that inhibition of Rac1 lengthens the time window of the olfactory 'sensory buffer', allowing the establishment of associations between odors presented in sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the sensory preconditioning results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "6bbca168-a567-4764-9bc4-4f060b281157",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C10",
+      "claim": "Inhibition of Rac1 lengthens the time window of the olfactory 'sensory buffer', allowing the establishment of associations between odors presented in sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that flies can infer value to olfactory stimuli based on the previous associative structure between odors, and that inhibition of Rac1 lengthens the time window of the olfactory 'sensory buffer', allowing the establishment of associations between odors presented in sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing sensory preconditioning at 30s ISI in Rac1DN flies but not controls.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "ec7141f5-116e-4ede-ae20-41bc39c4e4e8",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C11",
+      "claim": "A significant amount of what we know on the biological basis of learning and memory has come from studying classical conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant amount of what we know on the biological basis of learning and memory has come from studying classical conditioning, also known as Pavlovian conditioning (Heisenberg et al., 1985; Romanski et al., 1993; Uwano et al., 1995; LeDoux, 2000; Davis and Whalen, 2001; Dubnau et al., 2001; McGuire et al., 2001; Maren and Quirk, 2004; Fanselow and Poulos, 2005; Ehrlich et al., 2009; Johansen et al., 2010; Duvarci and Pare, 2014; Herry and Johansen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "ae1d2654-f412-4aea-9918-b9a8eadabeb0",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C12",
+      "claim": "During classical conditioning, learning depends on the contiguity of conditioned and unconditioned stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "During classical conditioning, learning depends on the contiguity of conditioned and unconditioned stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about classical conditioning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "371eced0-4daa-40e3-a55b-3cab206dec5b",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C13",
+      "claim": "In humans and other animals, the instructive value of naturally occurring reinforcing experiences is acquired rather than innately instructive and does not necessarily depend on mere contiguity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, in humans and other animals, the instructive value of naturally occurring reinforcing experiences is acquired rather than innately instructive and does not necessarily dependent on mere contiguity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about learning theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "2c192b4b-d76a-4e62-b3e9-d57b4d47913a",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C14",
+      "claim": "The value of money and its capacity to function as a reinforcer is learned rather than innate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the value of money and its capacity to function as a reinforcer is learned rather than innate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an example of acquired reinforcement value.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "513762bc-aeb4-4fcb-a8f9-4ef0e71e4263",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C15",
+      "claim": "Learned behavioral control uses two types of information: habits/policies/cached values (model-free learning) and knowledge of the associative structure of the environment (model-based learning).",
+      "claim_type": "EXPLICIT",
+      "source": "Learning theory has postulated the idea that learned behavioral control uses two types of information. The first results from habits, policies, or cached values (e.g., Pavlovian conditioning \u2013 model-free learning) (Jones et al., 2012). This kind of information produces a rapid, efficient behavioral response but does not consider changes in the value of the expected outcome. The second type of information relies on the knowledge of the associative structure of the environment to infer value (model-based learning).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to learning theory literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "d92c7033-0716-428d-a4f1-814c09c715bc",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C16",
+      "claim": "Model-free learning produces a rapid, efficient behavioral response but does not consider changes in the value of the expected outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "This kind of information produces a rapid, efficient behavioral response but does not consider changes in the value of the expected outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characteristic of model-free learning from learning theory.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "a2358c37-822c-4744-9d67-8ad97be6a49d",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C17",
+      "claim": "Acquiring new knowledge depends on creating an associative structure of external events, which is then used to create additional new meaningful associations.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, acquiring new knowledge depends on creating an associative structure of external events, which is then used to create additional new meaningful associations (Daw et al., 2005; Jones et al., 2012; McDannald et al., 2012; Lucantonio et al., 2014; Sadacca et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to learning theory literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "3a373d28-3cba-4f45-b882-dc97a0e8baf8",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C18",
+      "claim": "In higher-order conditioning procedures, neutral stimuli acquire the property to elicit conditional responses even though they have never been in contiguity with a reinforcer.",
+      "claim_type": "EXPLICIT",
+      "source": "In higher-order conditioning procedures, neutral stimuli acquire the property to elicit conditional responses even though they have never been in contiguity with a reinforcer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of higher-order conditioning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "dc99bcf0-ff66-4098-8480-0cee7a73a26e",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C19",
+      "claim": "Sensory preconditioning is one example of higher-order conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory preconditioning is one example of higher-order conditioning (Giurfa, 2013; Giurfa, 2015; Todd et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "a4f51f31-9273-426e-947e-ba8a195d5aa6",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C20",
+      "claim": "In sensory preconditioning, two initially neutral stimuli (S1 and S2) are repeatedly presented in contiguity or in sequence (preconditioning phase); later, one of the stimuli (S1) is paired with a reinforcer (conditioning phase).",
+      "claim_type": "EXPLICIT",
+      "source": "In sensory preconditioning, two initially neutral stimuli (S1 and S2) are repeatedly presented in contiguity or in sequence (preconditioning phase); later, one of the stimuli (S1) is paired with a reinforcer (conditioning phase).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sensory preconditioning procedure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "8f9a3c05-e513-46f6-a557-a8fa832a4862",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C21",
+      "claim": "After sensory preconditioning, S2 will elicit a conditioned response even though it was never paired with the reinforcer, indicating that the preconditioning phase created an association between S1 and S2.",
+      "claim_type": "EXPLICIT",
+      "source": "After this, S2 will elicit a conditioned response even though it was never paired with the reinforcer, indicating that the preconditioning phase created an association between S1 and S2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the expected outcome of sensory preconditioning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "ea357bc2-af5a-40df-ae20-362b7ab51172",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C22",
+      "claim": "The response to the preconditioned stimulus (S2) is not based on a mere association; instead, it must infer value by virtue of knowledge of the associative structure of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "The response to the preconditioned stimulus (S2) is different from the response to the reinforcer-paired S1 in that it is not based on a mere association; instead, it must infer value by virtue of knowledge of the associative structure of the task (Jones et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to learning theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "f866e9d1-14fc-4bf0-8fc5-bb1040b49ba0",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C23",
+      "claim": "Sensory preconditioning has been shown previously in bees and flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory preconditioning has been shown previously in bees and flies (M\u00fcller et al., 2000; Brembs and Heisenberg, 2001; Guo and Guo, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "dd7e3934-bd6a-45a0-8976-9a2e3d09c09f",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C24",
+      "claim": "Guo and Guo (2005) trained flies using a flight simulator, using visual or olfactory cues to avoid certain flight directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a flight simulator (Guo and Guo, 2005), trained flies, using visual or olfactory cues to avoid certain flight directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "991f1187-dbd1-4197-8054-fbaf841fe5f8",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C25",
+      "claim": "Guo and Guo (2005) reported sensory preconditioning using S1\u2013S2 cues of different modalities (olfactory and visual).",
+      "claim_type": "EXPLICIT",
+      "source": "They reported sensory preconditioning using S1\u2013S2 cues of different modalities (olfactory and visual).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "1d78ef3b-a5b9-4e7e-bb48-82138162f50f",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C26",
+      "claim": "The Drosophila mushroom bodies (MB) are brain structures made up by the axons of the Kenyon cells (KC).",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila mushroom bodies (MB) are brain structures made up by the axons of the Kenyon cells (KC), and are known to play a central role in the encoding of olfactory memories (Heisenberg et al., 1985; Dubnau and Tully, 2001; McGuire et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "5732068e-b5c4-4541-b7be-3838a207bf22",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C27",
+      "claim": "The mushroom bodies are known to play a central role in the encoding of olfactory memories.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila mushroom bodies (MB) are brain structures made up by the axons of the Kenyon cells (KC), and are known to play a central role in the encoding of olfactory memories (Heisenberg et al., 1985; Dubnau and Tully, 2001; McGuire et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "57029cb5-9aab-4dba-b708-64855deeb6f8",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C28",
+      "claim": "During associative memory acquisition, positive or negative values are assigned to odors by associated reward and punishment, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "During associative memory acquisition, positive or negative values are assigned to odors by associated reward and punishment, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about olfactory learning in Drosophila.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "85160999-464e-423d-a2e2-50e72b1edac2",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C29",
+      "claim": "Reinforcement is achieved by the coincident activation of a sparse number of KC by an odorant and the activation of dopaminergic neurons (DAN), which innervate the MB, by the unconditioned stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "This reinforcement is achieved by the coincident activation of a sparse number of KC by an odorant and the activation of dopaminergic neurons (DAN), which innervate the MB, by the unconditioned stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of olfactory learning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "ccf5df13-a280-45e7-8588-9b16900f74c8",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C30",
+      "claim": "Different DAN synapse onto discrete zones of the MB, resulting in 15 tile-like compartments of the MB.",
+      "claim_type": "EXPLICIT",
+      "source": "Different DAN synapse onto discrete zones of the MB, resulting in 15 tile-like compartments of the MB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about the mushroom body.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "a358bd7c-aa6a-4fe1-a22c-f1a33214d433",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C31",
+      "claim": "Each of the 15 tiled areas in the MB synapse onto the dendrites of distinct corresponding mushroom bodies output neurons (MBONs).",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these 15 tiled areas in turn synapse onto the dendrites of distinct corresponding mushroom bodies output neurons (MBONs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "83a6a6ec-2a7d-447b-8ae5-de5f955ebc46",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C32",
+      "claim": "Activation of different MBONs are known to alter behavioral approach or avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of different MBONs are then known to alter behavioral approach or avoidance (Aso et al., 2014; Owald and Waddell, 2015; Roselli et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "860ce948-adbd-4dfd-b4bc-4a5aec0058ba",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C33",
+      "claim": "The memory of an odor associated with an electric shock (classical conditioning) is known to be partially encoded as a decreased response specifically to the trained odor (CS+) in MBON-\u03b31pedc>\u03b1/\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The memory of an odor associated with an electric shock (classical conditioning) is known to be partially encoded as a decreased response specifically to the trained odor (CS+) in a particular MBON known as MBON-\u03b31pedc>\u03b1/\u03b2 (Hige et al., 2015; Perisse et al., 2016; Cervantes-Sandoval et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "66804f01-ce08-4429-ad32-ddb488ccb349",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C34",
+      "claim": "Odors that have not been associated with an electric shock do not normally demonstrate decreased responses in the MBON-\u03b31pedc>\u03b1/\u03b2 neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, odors that have not been associated with an electric shock do not normally demonstrate decreased responses in the MBON-\u03b31pedc>\u03b1/\u03b2 neuron (Hige et al., 2015; Perisse et al., 2016; Cervantes-Sandoval et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "f17512a7-64b7-4764-968b-1106ab18dc6c",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C35",
+      "claim": "Flies expressing the dominant-negative form of Rac1N17 (Rac1DN) in adult KC displayed a depression to a non-shock associated odor in MBON-\u03b31pedc>\u03b1/\u03b2 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we were extremely surprised to report in a previous publication that flies expressing the dominant-negative form of Rac1N17 (Rac1DN) in adult KC using the temperature-dependent tool gal80ts (TARGET) (McGuire et al., 2003), displayed a depression to a non-shock associated odor in MBON-\u03b31pedc>\u03b1/\u03b2 neurons (Cervantes-Sandoval et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to a prior observation from the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "1713d83a-cb07-44ab-b106-f81277ff9c11",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C36",
+      "claim": "Expressing Rac1N17 in KC significantly enhances trace conditioning, in which an odor is associated with an electric shock presented many seconds after odor offset.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also reported that expressing Rac1N17 in KC significantly enhances trace conditioning, in which an odor is associated with an electric shock presented many seconds after odor offset \u2013 suggesting that inhibition of Rac1 lengthens an olfactory 'sensory buffer' that later converges with the punishment signal (Shuai et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "c4bc9ed8-5854-4171-8990-9c622db91430",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C37",
+      "claim": "Inhibition of Rac1 lengthens an olfactory 'sensory buffer' that later converges with the punishment signal.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also reported that expressing Rac1N17 in KC significantly enhances trace conditioning, in which an odor is associated with an electric shock presented many seconds after odor offset \u2013 suggesting that inhibition of Rac1 lengthens an olfactory 'sensory buffer' that later converges with the punishment signal (Shuai et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation from a prior study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "bc88d016-a2c3-47cc-ade5-81df85bc5483",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C38",
+      "claim": "Control flies with a 1-s ISI during sensory preconditioning exhibit a decreased calcium response to the S2 odor in MBON-\u03b31pedc>\u03b1/\u03b2 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly however, when we shorten the sensory preconditioning interval to 1 s, the MBON-\u03b31pedc>\u03b1/\u03b2 neurons in control flies exhibit a decreased calcium response to the S2 odor, and to the S1 odor that is expected (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "d9cb41d4-9e4c-4cee-bbc7-b5b9fb213da3",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C39",
+      "claim": "With a 25- to 30-s ISI between preconditioned odors, there is no evidence of sensory preconditioning in the MBON-\u03b31pedc>\u03b1/\u03b2 of control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the typical imaging protocol with a 25- to 30-s ISI between the preconditioned odors, we and others (Hige et al., 2015; Cervantes-Sandoval et al., 2020) have shown there is no evidence of sensory preconditioning in the MBON-\u03b31pedc>\u03b1/\u03b2 of control animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by current data and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "b88e1b11-b5c4-4620-9f50-aca146e2059f",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C40",
+      "claim": "MBON-\u03b31pedc>\u03b1/\u03b2 responses to naive odors remained unchanged during sensory preconditioning experiments, indicating the decrease in calcium response to the S2 odor is specific to the preconditioning phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout these experiments, MBON-\u03b31pedc>\u03b1/\u03b2 responses to naive odors remained unchanged, indicating the decrease in calcium response to the S2 odor is specific to the preconditioning phase, and not the result of a generalized depression to all odors (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 1C showing no change in naive odor responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "c9957584-f45c-4a3e-9535-4f2b60be92bb",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C41",
+      "claim": "Shortening the ISI window during sensory preconditioning allows control flies to form some association between the S1 and S2 odors.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that shortening the ISI window during sensory preconditioning allows control flies to form some association between the S1 and S2 odors, thus resulting in an inferred predictive value of the S2 odor after animals were aversively conditioned to the S1 odor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data showing depression to S2 at 1s ISI.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "3a5f39fa-5070-42f4-b710-5a333ed0a50e",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C42",
+      "claim": "Flies expressing dominant-negative Rac1N17 in the KC exhibit a decreased calcium response to the S2 odor when using an ISI of 30 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to control animals, flies expressing dominant-negative Rac1N17 in the KC had previously been found to exhibit a decreased calcium response to the S2 odor when using an ISI of 30 s (Figure 1D, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data in Figure 1D and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "b42c7143-6262-46fd-b931-47ea88b3b2ba",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C43",
+      "claim": "When the ISI was increased to 5 min, no sensory preconditioning was observed in the Rac1DN animals.",
+      "claim_type": "EXPLICIT",
+      "source": "When the ISI was increased to 5 min, no sensory preconditioning was observed in the Rac1DN animals (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "5923a594-044e-4665-b799-7f2425c452b7",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C44",
+      "claim": "Flies with the same genotype but raised at 18\u00b0C to prevent the expression of Rac1N17 showed the normal conditioning-induced odor depression to the S1 but no change to S2 with a preconditioning ISI window of 30 s.",
+      "claim_type": "EXPLICIT",
+      "source": "This widening of the ISI window to allow for an S1/S2 association is dependent on the inhibition of Rac1, since flies with the same genotype but raised at 18\u00b0C to prevent the expression of Rac1N17 (using the TARGET system) showed the normal conditioning-induced odor depression to the S1 but no change to S2 with a preconditioning ISI window of 30 s (Cervantes-Sandoval et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "b8a4aeda-56a4-452d-9dd0-c3babdaf848a",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C45",
+      "claim": "Flies exposed to the same odor protocol except that the unconditioned stimulus was excluded showed no depression to either S1 or S2 odor.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded olfactory responses in flies exposed to the same odor protocol except that the unconditioned stimulus was excluded. Results showed no depression to either S1 or S2 odor presented (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "2ef08d80-006f-43a1-9a93-b18a556c0d91",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C46",
+      "claim": "The ratio between the mean of three initial responses and mean of three last responses in MBON-\u03b31pedc>\u03b1/\u03b2 after 10 repeated presentations of both MCH and OCT was not significantly different between control and experimental genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Going even further, we confirmed this observation by recording and evaluating changes in calcium responses after 10 repeated presentations of both MCH and OCT. Data were analyzed as previously described (Hattori et al., 2017). The ratio between the mean of three initial responses and mean of three last responses in MBON-\u03b31pedc>\u03b1/\u03b2 was not significantly different between control and experimental genotypes (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "82e665c0-852b-42d4-b445-abcd19869222",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C47",
+      "claim": "The reduced calcium response in MBON-\u03b31pedc>\u03b1/\u03b2 to the classically conditioned S1 odor and the sensory preconditioned S2 odor cannot be explained by a general habituation to the odors due to the experimental protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the reduced calcium response we see in MBON-\u03b31pedc>\u03b1/\u03b2 to the classically conditioned S1 odor and the sensory preconditioned S2 odor cannot be explained by a general habituation to the odors due to the experimental protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the habituation control experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "712c1f5e-ff5e-42b4-b45c-e0f36e735565",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C48",
+      "claim": "Rac1 has been implicated in memory forgetting.",
+      "claim_type": "EXPLICIT",
+      "source": "Rac1 has been implicated in memory forgetting, and it has been theorized that forgetting is fundamental for memory generalization (Richards and Frankland, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "955acf50-04d8-4ebc-88b1-0e53d17263ef",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C49",
+      "claim": "Forgetting is fundamental for memory generalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Rac1 has been implicated in memory forgetting, and it has been theorized that forgetting is fundamental for memory generalization (Richards and Frankland, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "744befc3-5e23-46ae-b2b9-8162727bd9d5",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C50",
+      "claim": "Hige et al. (2015) showed that a similar depression to the non-trained odor could result from a partial overlap in the neural representation of odors such as MCH and OCT.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, (Hige et al., 2015) showed that a similar depression to the non-trained odor could result from a partial overlap in the neural representation of odors such as MCH and OCT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "80b24bc6-59db-47ab-939e-dab52fac925e",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C51",
+      "claim": "Similar sensory preconditioning results to MCH/OCT were obtained when using orthogonal odors PA and EL that are known to have little overlap in their KC representations.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we trained animals using orthogonal odors, PA and EL, that are known to have little overlap in their KC representations. Surprisingly, similar results to MCH/OCT were obtained; we observed a depression to the non-trained S2 odor (EL) when Rac1 function is inhibited in KC (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "bcfa2df4-c981-49f4-9a92-bf80472eb57b",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C52",
+      "claim": "The physiological response to sensory preconditioning can be observed for different odors and odor pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this physiological response to sensory preconditioning can be observed for different odors and odor pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on data from multiple odor pairs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "ddcda57a-edaf-4600-adc3-8adfbd99ed03",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C53",
+      "claim": "When the preconditioning association between the S1 and S2 odors was eliminated, results showed significant depression to the classically conditioned S1 odor but no depression to any other odors.",
+      "claim_type": "EXPLICIT",
+      "source": "When we eliminated the preconditioning association between the S1 and S2 odors, the results showed significant depression to the classically conditioned S1 odor that was associated with the shock, but no depression to any other odors (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "9cf8bc05-5b20-43e4-9189-dd290154ea59",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C54",
+      "claim": "The depression to the non-trained S2 odor is dependent on the animal learning the association between S1 and S2 during the preconditioning stage.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the depression to the non-trained S2 odor was not due to a general depression to odors or generalization of learned aversion. Instead, depression of the non-trained S2 odor is dependent on the animal learning the association between S1 and S2 during the preconditioning stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the control experiment without preconditioning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "36f66cd7-dd73-4350-9ff2-6823b8274359",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C55",
+      "claim": "Control flies preconditioned with a single pairing of odors with a 1-s ISI did not demonstrate behavioral aversive memory to the S2 odor.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite observing evidence of sensory preconditioning by functional imaging using a similar protocol, we could not observe a behavioral memory to the non-shocked pre-paired odor (S2) (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "691d0b09-2954-4bb2-9ae7-4b8443ada560",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C56",
+      "claim": "Control flies preconditioned with 10 repeated presentations of odor pairings with an ISI of 1 s demonstrated a significant behavioral aversive memory expression to the S2 odor.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we preconditioned flies with 10 repeated presentations of odor pairings (S1/S2) before training (Figure 4A). Using an ISI of 1 s, this resulted in a significant behavioral aversive memory expression to the S2 odor in control flies (Figure 4B), consistent with our predictions based on the sensory preconditioning physiological data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "58618835-ae81-4d67-9f39-d45f16605f9b",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C57",
+      "claim": "Control flies did not demonstrate an aversive memory to the S2 odor when an ISI of 30 s was used with 10 repeated presentations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, control flies did not demonstrate an aversive memory to the S2 odor when an ISI of 30 s was used (Figure 4B), as would be predicted from our physiological imaging data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "8a7fb06f-26da-4dea-b1f1-30edf69256b7",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C58",
+      "claim": "While a single odor pairing is sufficient to induce sensory preconditioned-related plasticity in the MBON-\u03b31pedc>\u03b1/\u03b2 compartment, it is not enough for the S2 odor to drive the learned behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also suggest that while a single odor pairing is sufficient to induce sensory preconditioned-related plasticity in the MBON-\u03b31pedc>\u03b1/\u03b2 compartment, it is not enough for the S2 odor to drive the learned behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation comparing physiological and behavioral results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "10bd436a-88dc-403c-8aba-b78d5ffc8ce1",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C59",
+      "claim": "The presentation of additional odor pairings recruits and induces sensory preconditioning-related plasticity in additional MB compartments, and it is the additive effect of multiple compartments that is necessary to drive the behavioral response.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the presentation of additional odor pairings recruits and induces sensory preconditioning-related plasticity in additional MB compartments, and it is the additive effect of multiple compartments that is necessary to drive the behavioral response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "e63a8542-a415-4ff5-84ab-6172f76e8fe3",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C60",
+      "claim": "A short pairing of odor and shock (1-s odor paired with 4 DAN photostimulation pulses) is enough to induce plasticity in MBON-\u03b31pedc>\u03b1/\u03b2 compartment but not in MBON-\u03b12sc.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar phenomena have been observed before for classical conditioning where a short pairing of odor and shock \u2013 1-s odor paired with 4 DAN photostimulation pulses \u2013 is enough to induce plasticity in MBON-\u03b31pedc>\u03b1/\u03b2 compartment but not in MBON-\u03b12sc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior observations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "db35e2d6-c5a2-40f3-8f13-3e34042b3151",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C61",
+      "claim": "Longer training protocols (1-min odor presentation paired with 120 DAN photostimulation pulses) induce plasticity in MBON-\u03b12sc.",
+      "claim_type": "EXPLICIT",
+      "source": "Longer training protocols \u2013 1-min odor presentation paired with 120 DAN photostimulation pulses \u2013 induce plasticity in MBON-\u03b12sc (Hige et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "a8ba1c04-cc5d-4ede-9f94-a53deee9b8c0",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C62",
+      "claim": "Preconditioning flies with MCH/OCT pairs repeated 10 times before training resulted in a robust depression in MBON-\u03b31pedc>\u03b1/\u03b2 to the non-shocked pre-paired odor (CS2) in control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically, preconditioning flies with MCH/OCT pairs repeated 10 times before training resulted in a robust depression in MBON-\u03b31pedc>\u03b1/\u03b2 to the non-shocked pre-paired odor (CS2) in control flies (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "47283827-5d65-41fa-9cef-8c94d2791b19",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C63",
+      "claim": "Similar physiological results were obtained when PA/EL were used as the preconditioned odors with 10 repeated presentations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were similar when PA/EL were used as the preconditioned odors (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "bfbac4e5-a6ea-4fce-a11a-9764d3723818",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C64",
+      "claim": "A 30-s ISI resulted in no aversive memory to S2 in control flies, but a significant aversive memory was observed in flies expressing Rac1N17.",
+      "claim_type": "EXPLICIT",
+      "source": "As would be predicted from our physiological data, while a 30-s ISI resulted in no aversive memory to S2 in control flies, a significant aversive memory was observed in flies expressing Rac1N17 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "4ddd1ab1-7aff-4125-b8c1-bba3e30d3641",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C65",
+      "claim": "Lengthening the ISI to 5 min eliminated behavioral sensory preconditioning both in controls and in flies expressing Rac1N17.",
+      "claim_type": "EXPLICIT",
+      "source": "Further lengthening the ISI to 5 min eliminated behavioral sensory preconditioning both in controls and in flies expressing Rac1N17 (Figure 4B), again mirroring the physiological results in the MBON-\u03b31pedc>\u03b1/\u03b2 neuron (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "ffb424a3-d4a4-4c22-af67-767fa3774a7d",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C66",
+      "claim": "Flies kept at 18\u00b0C to prevent expression of Rac1N17 behaved as control flies and did not demonstrate behavioral evidence of sensory preconditioning when using an ISI of 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies kept at 18\u00b0C to prevent expression of Rac1N17 behaved as control flies and did not demonstrate behavioral evidence of sensory preconditioning when using an ISI of 30 min (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "3a071e6f-ade7-4189-affc-e95626117c38",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C67",
+      "claim": "Rac1N17 expression in KC did not alter olfactory responses in the MB lobes, even when recordings were performed at a higher speed (28 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested if Rac1N17 expression in KC altered olfactory responses in the MB lobes. Interestingly, we could not find any change in the calcium response dynamics in KC \u03b3 lobes, even when recordings were performed at a higher speed (28 Hz) (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "3b16cdff-c839-42f9-a703-edd7fd7a214c",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C68",
+      "claim": "Memories are not discrete bits of events and associations that are added and accumulated in our brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Memories are not discrete bits of events and associations that are added and accumulated in our brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the nature of memory.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "2dd725ab-08b0-453e-a6ab-3dd5cdb8b965",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C69",
+      "claim": "Memories are dynamic; they undergo modifications and updates and are integrated into a coherent story that continuously incorporates new information to predict upcoming events better and to inform decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, memories are dynamic; they undergo modifications and updates and are integrated into a coherent story that continuously incorporates new information to predict upcoming events better and to inform decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about memory function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "2ea60ac8-b79a-46ee-9585-09036bf7dd5d",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C70",
+      "claim": "Within the complex associative structure of memories, associations between seemingly valueless stimuli are fundamental.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this complex associative structure, associations between seemingly valueless stimuli are fundamental.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement supported by the sensory preconditioning findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "5febb73a-3d6e-42ef-a2fe-b60849a3b788",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C71",
+      "claim": "Even the simple brain of a fly can form associations between seemingly valueless stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present evidence that even the simple brain of a fly can form these associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the sensory preconditioning data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "391d6422-7e17-4dee-a837-f7f287ede73a",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C72",
+      "claim": "DAN are essential for many types of reinforcement and even for non-associative learning like novelty detection.",
+      "claim_type": "EXPLICIT",
+      "source": "We know that DAN are essential for many types of reinforcement and even for non-associative learning like novelty detection (Hattori et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "f1bf8244-2567-4f1d-8187-15129a58f362",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C73",
+      "claim": "Dopamine neurons receive substantial feedback from both KC and MBON.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we know dopamine neurons receive substantial feedback from both KC and MBON.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "eb931c38-13fc-4e18-89e4-04f55d5da437",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C74",
+      "claim": "While a single odor pairing is sufficient to induce sensory preconditioned-related plasticity in the MBON-\u03b31pedc>\u03b1/\u03b2 compartment, it is not enough for the S2 odor to drive the learned behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Another interesting finding is that while a single odor pairing is sufficient to induce sensory preconditioned-related plasticity in the MBON-\u03b31pedc>\u03b1/\u03b2 compartment, it is not enough for the S2 odor to drive the learned behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparing physiological and behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "f2f23c8c-bda6-4d20-bfb6-f839cf44a7bc",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C75",
+      "claim": "There is accumulating evidence that memorable experiences are encoded in parallel, relatively independent memory traces, and it is the integration of these different memory traces that drives the most adequate behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "There is accumulating evidence that memorable experiences are encoded in parallel, relatively independent memory traces, and it is the integration of these different memory traces that drives the most adequate behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about memory systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "1a412291-446a-46ea-a53c-1db03a75a191",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C76",
+      "claim": "Examples of parallel memory traces include the additive effect of aversive memory traces.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include the additive effect of aversive memory traces (Aso et al., 2012); the additive effect of contextual memory to aversive olfactory memories (Zhao et al., 2019); or the integration of parallel opposite memories during memory extinction (Felsenberg et al., 2017; Felsenberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "556f022f-e4e8-4b87-b37e-a68c948a19b9",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C77",
+      "claim": "Calcium is a good proxy of neuronal activity within the KC.",
+      "claim_type": "EXPLICIT",
+      "source": "While calcium is a good proxy of neuronal activity within the KC, it does not necessarily directly translate to a readout of the neurotransmission output of the KC and its communication with downstream neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the interpretation of calcium imaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "8a19f9bc-dafc-4b50-8b8e-8c3860a7f078",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C78",
+      "claim": "Calcium does not necessarily directly translate to a readout of the neurotransmission output of the KC and its communication with downstream neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While calcium is a good proxy of neuronal activity within the KC, it does not necessarily directly translate to a readout of the neurotransmission output of the KC and its communication with downstream neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about interpreting calcium imaging data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "0c1eefa2-1f20-4464-88db-68b5acc2a322",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C79",
+      "claim": "Inhibiting Rac1 in KC during development results in lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "The Target system was used because inhibiting Rac1 in KC during development results in lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the experimental design choice.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "bba32a4e-75cd-455d-8763-a3b201e830c3",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C80",
+      "claim": "S1 (MCH) responses were completely depressed 5 min after training in control flies preconditioned with 1-s, 30-s, or 5-min ISI.",
+      "claim_type": "EXPLICIT",
+      "source": "S1 (MCH) responses were completely depressed 5 min after training in control flies preconditioned with 1-s, 30-s, or 5-min ISI. Non-parametric Mann\u2013Whitney test p \u2264 0.0044; n = 8\u201310.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "40a4fbf9-eae6-475e-8c47-3d39683bd387",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C81",
+      "claim": "A significant inhibition of post-trained response to S2 (OCT) was observed in control flies preconditioned with 1-s ISI.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant inhibition of post-trained response to S2 (OCT) was observed in control flies preconditioned with 1-s ISI. Non-parametric Mann\u2013Whitney test p = 0.035; n = 10.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "7dc09b9e-6c24-4608-af45-92be2202d6a7",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C82",
+      "claim": "S2 (OCT) responses in control flies preconditioned with 30-s or 5-min ISI showed no significant change.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, S2 (OCT) responses in control flies preconditioned with 30-s or 5-min ISI showed no significant change. Non-parametric Mann\u2013Whitney test p \u2265 0.0630, n = 8\u201310.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "d8e1c275-4c11-4377-b54c-5fd64c5e1399",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C83",
+      "claim": "Neither naive odor (PA and EL) responses showed any significant reduction in control flies preconditioned with 1-s, 30-s, or 5-min ISI.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither naive odor (penthyl acetate [PA] and ethyl lactate [EL]) responses showed any significant reduction in flies preconditioned with 1-s, 30-s, or 5-min ISI. Non-parametric Mann\u2013Whitney test p \u2265 0.0726, n = 8\u201310.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "b7a8e46f-eee7-4ce9-9fa1-ae629438a6e9",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C84",
+      "claim": "S1 (MCH) responses were completely depressed 5 min after training in flies expressing Rac1N17 preconditioned with 1-s, 30-s, or 5-min ISI.",
+      "claim_type": "EXPLICIT",
+      "source": "S1 (MCH) responses were completely depressed 5 min after training in flies expressing Rac1N17 preconditioned with 1-s, 30-s, or 5-min ISI. Non-parametric Mann\u2013Whitney test p \u2264 0.0009; n = 8\u201312.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "117a16ee-61a7-4a37-820d-f908bd57b933",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C85",
+      "claim": "A significant inhibition of post-trained response to S2 (OCT) was observed in flies expressing Rac1N17 preconditioned using a 1- or 30-s ISI.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant inhibition of post-trained response to S2 (OCT) was observed in flies preconditioned using a 1- or 30-s ISI. Non-parametric Mann\u2013Whitney test p \u2264 0.0031; n = 8\u201312.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "67b4b763-14cf-47da-b376-59874674c5e7",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C86",
+      "claim": "S2 (OCT) responses in flies expressing Rac1N17 preconditioned with 5-min ISI showed no significant change.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, S2 (OCT) responses in flies preconditioned with 5-min ISI showed no significant change. Non-parametric Mann\u2013Whitney test p = 0.4234, n = 8\u20139.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "a5b4d20d-096a-4d32-b709-97defa5cea81",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "claim_id": "C87",
+      "claim": "Neither naive odor (PA and EL) responses showed any significant reduction in flies expressing Rac1N17 preconditioned with 1-s, 30-s, or 5-min ISI.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither naive odor (PA and EL) responses showed any significant reduction in flies preconditioned with 1-s, 30-s, or 5-min ISI. Non-parametric Mann\u2013Whitney test p \u2265 0.0726, n = 8\u201312.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "629f700f-8d5c-4c39-a895-4e17502a90a4",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Control flies demonstrate physiological sensory preconditioning at short (1-s) but not long (30-s or 5-min) interstimulus intervals (ISI). When S1 and S2 odors are paired with a 1-s ISI before S1 is paired with shock, MBON-\u03b31pedc>\u03b1/\u03b2 neurons show decreased calcium responses to both S1 and S2, but not to naive odors. At 30-s or 5-min ISI, only S1 shows depression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C80-C83 provide converging statistical evidence (p=0.035 for S2 at 1-s ISI; p\u22650.063 for S2 at longer ISIs) from calcium imaging that control flies show sensory preconditioning only at short ISI. The specificity to preconditioned odors (C40, C83) rules out generalized depression. The experimental design includes appropriate backwards conditioning controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "d8201ab9-c11a-42b5-b107-80b34924b80a",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Inhibition of Rac1 in Kenyon cells extends the temporal window for sensory preconditioning. Rac1DN flies show decreased calcium responses to S2 at both 1-s and 30-s ISI (but not 5-min ISI), whereas control flies only show this at 1-s ISI. This effect is dependent on Rac1 inhibition, as flies kept at 18\u00b0C (preventing Rac1DN expression) behave like controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C85 show significant S2 depression at 30-s ISI in Rac1DN flies (p\u22640.0031) but not at 5-min ISI (C43, C86, p=0.4234). The temperature control (C44) confirms dependence on Rac1 inhibition. Statistical evidence is robust with appropriate sample sizes (n=8-12) and controls including naive odors (C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "c79445ba-87a8-4fb8-8548-161a6b5634fd",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sensory preconditioning occurs with multiple odor pairs, including orthogonal odors with minimal neural representation overlap. Similar physiological depression to S2 was observed using both MCH/OCT and PA/EL odor pairs in Rac1DN flies, and with 10 repeated presentations in control flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 demonstrates sensory preconditioning with PA/EL odors known to have little KC overlap, ruling out generalization as an explanation. Claims C62-C63 show robust effects with repeated presentations across different odor pairs. This addresses a key alternative explanation (C50) and strengthens the sensory preconditioning interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "e3926697-000b-42f8-9760-02668ee6efcc",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The depression to S2 is specific to sensory preconditioning and not due to habituation or generalized depression. Control experiments without shock presentation or without preconditioning show no S2 depression, and repeated odor presentations do not cause habituation in MBON-\u03b31pedc>\u03b1/\u03b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 provide critical controls showing no habituation with repeated odor presentations (no significant difference in response ratios). Claim C53 shows that eliminating preconditioning eliminates S2 depression while S1 depression remains. These controls effectively rule out alternative explanations for the observed S2 depression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "7e7c6818-1149-42d0-a8c6-1c72c68dfa4b",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Behavioral sensory preconditioning in control flies requires multiple (10\u00d7) odor pairings at short ISI. Single odor pairing produces physiological plasticity in MBON-\u03b31pedc>\u03b1/\u03b2 but not behavioral avoidance to S2. Ten repeated pairings at 1-s ISI produce significant behavioral memory to S2 (p=0.0019), but not at 30-s ISI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 provide clear behavioral data showing the requirement for repeated presentations. However, claim C59 is speculative about recruitment of additional MB compartments. The dissociation between physiological and behavioral effects (C58) is well-documented but the mechanistic explanation remains uncertain. The core behavioral findings are supported but the interpretation is partially speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "0e6c7a1f-4c0a-4174-b887-88ebcba29e1e",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rac1 inhibition extends the temporal window for behavioral sensory preconditioning. Rac1DN flies show significant behavioral memory to S2 at 30-s ISI (p=0.0191) where controls do not, but not at 5-min ISI. This effect requires Rac1DN expression (temperature-dependent control).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 provide converging behavioral evidence that mirrors the physiological findings. The 30-s ISI produces behavioral memory in Rac1DN but not controls, and the 5-min ISI eliminates the effect in both genotypes. The temperature control (C66) confirms the effect depends on Rac1DN expression. Statistical evidence is appropriate (n=8).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "3cadb9f2-51bd-4245-b3f6-6e5c2ce772ca",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Rac1DN expression in Kenyon cells does not alter odor-evoked calcium responses in KC \u03b3 lobes, even at high temporal resolution (28 Hz). The authors note that calcium imaging may not fully reflect neurotransmitter output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 provides data showing no significant difference in KC calcium responses between Rac1DN and control flies (p=0.616 for MCH, p=0.1852 for OCT). Claims C77-C78 appropriately acknowledge limitations of calcium imaging as a proxy for synaptic output. This control is important for localizing the Rac1 effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "41bca0f8-a022-406c-b7ed-550737850bf2",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Flies can infer value to olfactory stimuli based on the associative structure between odors, demonstrating that even simple brains can form associations between neutral stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C71 are interpretations well-supported by the collective experimental evidence of sensory preconditioning (C4-C6, C38-C43, C56-C57, C64). The data clearly show that flies respond to S2 based on its prior association with S1, which is the operational definition of inferring value from associative structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "ef2167ee-716d-4e86-9753-aac6693344f4",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Drosophila mushroom body circuit architecture and its role in olfactory memory encoding is well-established. MBONs receive input from KC compartments innervated by different DANs, and MBON-\u03b31pedc>\u03b1/\u03b2 specifically encodes aversive memory as decreased responses to shock-paired odors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C34 describe established neuroanatomical and functional knowledge supported by multiple citations to prior work (Heisenberg et al., 1985; Dubnau and Tully, 2001; McGuire et al., 2001; Aso et al., 2014; Hige et al., 2015; Perisse et al., 2016; Cervantes-Sandoval et al., 2020). This background is accurately presented and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "221fd6ca-5944-4467-a41a-b120c2d0374b",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work showed that Rac1DN flies display depression to non-shock associated odors in MBON-\u03b31pedc>\u03b1/\u03b2 and enhanced trace conditioning, suggesting Rac1 inhibition lengthens an olfactory sensory buffer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 accurately cite prior findings (Cervantes-Sandoval et al., 2020; Shuai et al., 2011) that motivated the current study. These observations from prior work are appropriately presented as established findings that led to the sensory preconditioning hypothesis tested in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "8a683e7e-e910-405b-a61e-2b76aacbd397",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Classical conditioning has provided fundamental insights into learning and memory, but naturally occurring reinforcement often involves acquired rather than innate value. Sensory preconditioning is a form of higher-order conditioning where neutral stimuli acquire conditioned responses through prior association, representing model-based learning. Prior studies demonstrated sensory preconditioning in bees and flies using cross-modal cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C25 provide accurate background on learning theory and prior sensory preconditioning work, supported by appropriate citations (Jones et al., 2012; Giurfa, 2013, 2015; Todd et al., 2016; M\u00fcller et al., 2000; Brembs and Heisenberg, 2001; Guo and Guo, 2005). This contextualizes the novelty of demonstrating unimodal olfactory sensory preconditioning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "e740da31-2684-427e-b628-0c31e7ac5225",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Training intensity affects which MB compartments show plasticity, and behavioral responses may require integration across multiple compartments. Similar phenomena occur in classical conditioning where short training induces plasticity in MBON-\u03b31pedc>\u03b1/\u03b2 but longer training recruits MBON-\u03b12sc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 cite prior work (Hige et al., 2015) showing training-dependent recruitment of MB compartments. Claims C74-C76 extend this to sensory preconditioning, supported by the dissociation between single-pairing physiological effects and the requirement for multiple pairings for behavior. The parallel memory trace framework is supported by appropriate citations (Aso et al., 2012; Zhao et al., 2019; Felsenberg et al., 2017, 2018).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "59bc9f6f-94b0-4a63-bef1-5e92266220f7",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Rac1 is an established regulator of memory forgetting, and forgetting has been theorized to be fundamental for memory generalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C48, and C49 accurately represent established knowledge about Rac1's role in forgetting, supported by citation to Richards and Frankland, 2017. This provides important context for interpreting how Rac1 inhibition might extend the temporal window for sensory preconditioning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "cf6df5d8-f208-4fc5-b608-2652d4da297f",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Inhibiting Rac1 in Kenyon cells during development results in lethality, necessitating use of the TARGET system for adult-specific expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 explains the experimental design rationale. This is presented as an empirical observation that justified the temperature-inducible expression system, which is a standard approach in Drosophila genetics for genes with developmental requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "3605b055-59e5-4383-9a6e-4323805b1eae",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Learning and memory are complex processes. Memories are dynamic and integrated rather than discrete, and associations between neutral stimuli are fundamental to building predictive models of the environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C1-C3 and C68-C70 are broad theoretical statements about memory that provide conceptual framing. While generally consistent with memory research, these are philosophical positions rather than testable claims from this study. They provide context but are not directly evaluated by the experimental data presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "572e731b-6e26-4e5f-a9d8-f2cbf2e92e28",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work by Hige et al. (2015) showed that depression to non-trained odors could result from partial overlap in neural representations of odors like MCH and OCT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 accurately cites prior work that identified an alternative explanation for S2 depression. This motivated the authors to test orthogonal odors (PA/EL) to rule out this explanation, which is appropriate scientific reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    },
+    {
+      "id": "2d705ee3-4c7d-44a5-851a-f15d3ba4db88",
+      "content_id": "c3d954d5-ceeb-4cb4-8281-1f62574a06b2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Dopaminergic neurons (DANs) are essential for reinforcement and novelty detection, and receive feedback from both Kenyon cells and MBONs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 present established knowledge about DAN function (Hattori et al., 2017) and circuit connectivity. This is accurately stated background information relevant to speculating about mechanisms of sensory preconditioning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:53:03.534549Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b266346d-5e25-45e6-b633-11427ace562d",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "2f13ef06-6394-4b20-8602-0954e0ebc8ce",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "529d6379-d58e-49df-b310-77636543a948",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "bc88d016-a2c3-47cc-ade5-81df85bc5483",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "d9cb41d4-9e4c-4cee-bbc7-b5b9fb213da3",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "b88e1b11-b5c4-4620-9f50-aca146e2059f",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "c9957584-f45c-4a3e-9535-4f2b60be92bb",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "bba32a4e-75cd-455d-8763-a3b201e830c3",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "40a4fbf9-eae6-475e-8c47-3d39683bd387",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "7dc09b9e-6c24-4608-af45-92be2202d6a7",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "d8e1c275-4c11-4377-b54c-5fd64c5e1399",
+      "result_id": "629f700f-8d5c-4c39-a895-4e17502a90a4"
+    },
+    {
+      "claim_id": "4a199601-e63e-4a4a-b7e2-9406a1e4e5a3",
+      "result_id": "d8201ab9-c11a-42b5-b107-80b34924b80a"
+    },
+    {
+      "claim_id": "6bbca168-a567-4764-9bc4-4f060b281157",
+      "result_id": "d8201ab9-c11a-42b5-b107-80b34924b80a"
+    },
+    {
+      "claim_id": "3a5f39fa-5070-42f4-b710-5a333ed0a50e",
+      "result_id": "d8201ab9-c11a-42b5-b107-80b34924b80a"
+    },
+    {
+      "claim_id": "b42c7143-6262-46fd-b931-47ea88b3b2ba",
+      "result_id": "d8201ab9-c11a-42b5-b107-80b34924b80a"
+    },
+    {
+      "claim_id": "5923a594-044e-4665-b799-7f2425c452b7",
+      "result_id": "d8201ab9-c11a-42b5-b107-80b34924b80a"
+    },
+    {
+      "claim_id": "b7a8e46f-eee7-4ce9-9fa1-ae629438a6e9",
+      "result_id": "d8201ab9-c11a-42b5-b107-80b34924b80a"
+    },
+    {
+      "claim_id": "117a16ee-61a7-4a37-820d-f908bd57b933",
+      "result_id": "d8201ab9-c11a-42b5-b107-80b34924b80a"
+    },
+    {
+      "claim_id": "67b4b763-14cf-47da-b376-59874674c5e7",
+      "result_id": "d8201ab9-c11a-42b5-b107-80b34924b80a"
+    },
+    {
+      "claim_id": "a5b4d20d-096a-4d32-b709-97defa5cea81",
+      "result_id": "d8201ab9-c11a-42b5-b107-80b34924b80a"
+    },
+    {
+      "claim_id": "80b24bc6-59db-47ab-939e-dab52fac925e",
+      "result_id": "c79445ba-87a8-4fb8-8548-161a6b5634fd"
+    },
+    {
+      "claim_id": "bcfa2df4-c981-49f4-9a92-bf80472eb57b",
+      "result_id": "c79445ba-87a8-4fb8-8548-161a6b5634fd"
+    },
+    {
+      "claim_id": "a8ba1c04-cc5d-4ede-9f94-a53deee9b8c0",
+      "result_id": "c79445ba-87a8-4fb8-8548-161a6b5634fd"
+    },
+    {
+      "claim_id": "47283827-5d65-41fa-9cef-8c94d2791b19",
+      "result_id": "c79445ba-87a8-4fb8-8548-161a6b5634fd"
+    },
+    {
+      "claim_id": "b8a4aeda-56a4-452d-9dd0-c3babdaf848a",
+      "result_id": "e3926697-000b-42f8-9760-02668ee6efcc"
+    },
+    {
+      "claim_id": "2ef08d80-006f-43a1-9a93-b18a556c0d91",
+      "result_id": "e3926697-000b-42f8-9760-02668ee6efcc"
+    },
+    {
+      "claim_id": "82e665c0-852b-42d4-b445-abcd19869222",
+      "result_id": "e3926697-000b-42f8-9760-02668ee6efcc"
+    },
+    {
+      "claim_id": "ddcda57a-edaf-4600-adc3-8adfbd99ed03",
+      "result_id": "e3926697-000b-42f8-9760-02668ee6efcc"
+    },
+    {
+      "claim_id": "9cf8bc05-5b20-43e4-9189-dd290154ea59",
+      "result_id": "e3926697-000b-42f8-9760-02668ee6efcc"
+    },
+    {
+      "claim_id": "36f66cd7-dd73-4350-9ff2-6823b8274359",
+      "result_id": "7e7c6818-1149-42d0-a8c6-1c72c68dfa4b"
+    },
+    {
+      "claim_id": "691d0b09-2954-4bb2-9ae7-4b8443ada560",
+      "result_id": "7e7c6818-1149-42d0-a8c6-1c72c68dfa4b"
+    },
+    {
+      "claim_id": "58618835-ae81-4d67-9f39-d45f16605f9b",
+      "result_id": "7e7c6818-1149-42d0-a8c6-1c72c68dfa4b"
+    },
+    {
+      "claim_id": "8a7fb06f-26da-4dea-b1f1-30edf69256b7",
+      "result_id": "7e7c6818-1149-42d0-a8c6-1c72c68dfa4b"
+    },
+    {
+      "claim_id": "10bd436a-88dc-403c-8aba-b78d5ffc8ce1",
+      "result_id": "7e7c6818-1149-42d0-a8c6-1c72c68dfa4b"
+    },
+    {
+      "claim_id": "bfbac4e5-a6ea-4fce-a11a-9764d3723818",
+      "result_id": "0e6c7a1f-4c0a-4174-b887-88ebcba29e1e"
+    },
+    {
+      "claim_id": "4ddd1ab1-7aff-4125-b8c1-bba3e30d3641",
+      "result_id": "0e6c7a1f-4c0a-4174-b887-88ebcba29e1e"
+    },
+    {
+      "claim_id": "ffb424a3-d4a4-4c22-af67-767fa3774a7d",
+      "result_id": "0e6c7a1f-4c0a-4174-b887-88ebcba29e1e"
+    },
+    {
+      "claim_id": "3a071e6f-ade7-4189-affc-e95626117c38",
+      "result_id": "3cadb9f2-51bd-4245-b3f6-6e5c2ce772ca"
+    },
+    {
+      "claim_id": "556f022f-e4e8-4b87-b37e-a68c948a19b9",
+      "result_id": "3cadb9f2-51bd-4245-b3f6-6e5c2ce772ca"
+    },
+    {
+      "claim_id": "8a19f9bc-dafc-4b50-8b8e-8c3860a7f078",
+      "result_id": "3cadb9f2-51bd-4245-b3f6-6e5c2ce772ca"
+    },
+    {
+      "claim_id": "a76b57d6-60a9-434f-832a-2b08bb86a4c0",
+      "result_id": "41bca0f8-a022-406c-b7ed-550737850bf2"
+    },
+    {
+      "claim_id": "5febb73a-3d6e-42ef-a2fe-b60849a3b788",
+      "result_id": "41bca0f8-a022-406c-b7ed-550737850bf2"
+    },
+    {
+      "claim_id": "1d78ef3b-a5b9-4e7e-bb48-82138162f50f",
+      "result_id": "ef2167ee-716d-4e86-9753-aac6693344f4"
+    },
+    {
+      "claim_id": "5732068e-b5c4-4541-b7be-3838a207bf22",
+      "result_id": "ef2167ee-716d-4e86-9753-aac6693344f4"
+    },
+    {
+      "claim_id": "57029cb5-9aab-4dba-b708-64855deeb6f8",
+      "result_id": "ef2167ee-716d-4e86-9753-aac6693344f4"
+    },
+    {
+      "claim_id": "85160999-464e-423d-a2e2-50e72b1edac2",
+      "result_id": "ef2167ee-716d-4e86-9753-aac6693344f4"
+    },
+    {
+      "claim_id": "ccf5df13-a280-45e7-8588-9b16900f74c8",
+      "result_id": "ef2167ee-716d-4e86-9753-aac6693344f4"
+    },
+    {
+      "claim_id": "a358bd7c-aa6a-4fe1-a22c-f1a33214d433",
+      "result_id": "ef2167ee-716d-4e86-9753-aac6693344f4"
+    },
+    {
+      "claim_id": "83a6a6ec-2a7d-447b-8ae5-de5f955ebc46",
+      "result_id": "ef2167ee-716d-4e86-9753-aac6693344f4"
+    },
+    {
+      "claim_id": "860ce948-adbd-4dfd-b4bc-4a5aec0058ba",
+      "result_id": "ef2167ee-716d-4e86-9753-aac6693344f4"
+    },
+    {
+      "claim_id": "66804f01-ce08-4429-ad32-ddb488ccb349",
+      "result_id": "ef2167ee-716d-4e86-9753-aac6693344f4"
+    },
+    {
+      "claim_id": "f17512a7-64b7-4764-968b-1106ab18dc6c",
+      "result_id": "221fd6ca-5944-4467-a41a-b120c2d0374b"
+    },
+    {
+      "claim_id": "1713d83a-cb07-44ab-b106-f81277ff9c11",
+      "result_id": "221fd6ca-5944-4467-a41a-b120c2d0374b"
+    },
+    {
+      "claim_id": "c4bc9ed8-5854-4171-8990-9c622db91430",
+      "result_id": "221fd6ca-5944-4467-a41a-b120c2d0374b"
+    },
+    {
+      "claim_id": "ec7141f5-116e-4ede-ae20-41bc39c4e4e8",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "ae1d2654-f412-4aea-9918-b9a8eadabeb0",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "371eced0-4daa-40e3-a55b-3cab206dec5b",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "2c192b4b-d76a-4e62-b3e9-d57b4d47913a",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "513762bc-aeb4-4fcb-a8f9-4ef0e71e4263",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "d92c7033-0716-428d-a4f1-814c09c715bc",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "a2358c37-822c-4744-9d67-8ad97be6a49d",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "3a373d28-3cba-4f45-b882-dc97a0e8baf8",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "dc99bcf0-ff66-4098-8480-0cee7a73a26e",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "a4f51f31-9273-426e-947e-ba8a195d5aa6",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "8f9a3c05-e513-46f6-a557-a8fa832a4862",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "ea357bc2-af5a-40df-ae20-362b7ab51172",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "f866e9d1-14fc-4bf0-8fc5-bb1040b49ba0",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "dd7e3934-bd6a-45a0-8976-9a2e3d09c09f",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "991f1187-dbd1-4197-8054-fbaf841fe5f8",
+      "result_id": "8a683e7e-e910-405b-a61e-2b76aacbd397"
+    },
+    {
+      "claim_id": "e63a8542-a415-4ff5-84ab-6172f76e8fe3",
+      "result_id": "e740da31-2684-427e-b628-0c31e7ac5225"
+    },
+    {
+      "claim_id": "db35e2d6-c5a2-40f3-8f13-3e34042b3151",
+      "result_id": "e740da31-2684-427e-b628-0c31e7ac5225"
+    },
+    {
+      "claim_id": "eb931c38-13fc-4e18-89e4-04f55d5da437",
+      "result_id": "e740da31-2684-427e-b628-0c31e7ac5225"
+    },
+    {
+      "claim_id": "f2f23c8c-bda6-4d20-bfb6-f839cf44a7bc",
+      "result_id": "e740da31-2684-427e-b628-0c31e7ac5225"
+    },
+    {
+      "claim_id": "1a412291-446a-46ea-a53c-1db03a75a191",
+      "result_id": "e740da31-2684-427e-b628-0c31e7ac5225"
+    },
+    {
+      "claim_id": "3bd6db74-8f65-47fd-a1bc-079f1ec82564",
+      "result_id": "59bc9f6f-94b0-4a63-bef1-5e92266220f7"
+    },
+    {
+      "claim_id": "712c1f5e-ff5e-42b4-b45c-e0f36e735565",
+      "result_id": "59bc9f6f-94b0-4a63-bef1-5e92266220f7"
+    },
+    {
+      "claim_id": "955acf50-04d8-4ebc-88b1-0e53d17263ef",
+      "result_id": "59bc9f6f-94b0-4a63-bef1-5e92266220f7"
+    },
+    {
+      "claim_id": "0c1eefa2-1f20-4464-88db-68b5acc2a322",
+      "result_id": "cf6df5d8-f208-4fc5-b608-2652d4da297f"
+    },
+    {
+      "claim_id": "10d2f030-3bcd-4ec4-ac87-b1ed7a41a9f5",
+      "result_id": "3605b055-59e5-4383-9a6e-4323805b1eae"
+    },
+    {
+      "claim_id": "d7cbc3cc-45cf-4439-8845-cf747d51cd16",
+      "result_id": "3605b055-59e5-4383-9a6e-4323805b1eae"
+    },
+    {
+      "claim_id": "549133dd-5582-4514-98e1-f30dcee461f8",
+      "result_id": "3605b055-59e5-4383-9a6e-4323805b1eae"
+    },
+    {
+      "claim_id": "3b16cdff-c839-42f9-a703-edd7fd7a214c",
+      "result_id": "3605b055-59e5-4383-9a6e-4323805b1eae"
+    },
+    {
+      "claim_id": "2dd725ab-08b0-453e-a6ab-3dd5cdb8b965",
+      "result_id": "3605b055-59e5-4383-9a6e-4323805b1eae"
+    },
+    {
+      "claim_id": "2ea60ac8-b79a-46ee-9585-09036bf7dd5d",
+      "result_id": "3605b055-59e5-4383-9a6e-4323805b1eae"
+    },
+    {
+      "claim_id": "744befc3-5e23-46ae-b2b9-8162727bd9d5",
+      "result_id": "572e731b-6e26-4e5f-a9d8-f2cbf2e92e28"
+    },
+    {
+      "claim_id": "391d6422-7e17-4dee-a837-f7f287ede73a",
+      "result_id": "2d705ee3-4c7d-44a5-851a-f15d3ba4db88"
+    },
+    {
+      "claim_id": "f1bf8244-2567-4f1d-8187-15129a58f362",
+      "result_id": "2d705ee3-4c7d-44a5-851a-f15d3ba4db88"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior genomic and transcriptomic studies of melanoma demonstrate that metastatic progression is not driven by recurrent genetic mutations but rather by common transcriptional states associated with invasion and drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C18-C23 collectively establish the background context from prior literature showing limited genetic drivers of metastasis and the importance of transcriptional states. These claims are well-supported by multiple citations to published studies and represent an accurate summary of the field's current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Previous RNA-seq and scRNA-seq studies have identified specific recurrent transcriptional states in metastatic melanoma that correlate with invasion, drug resistance, and immunotherapy response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe well-established transcriptional states (mesenchymal, MITFlow/AXLhigh, MITFlow/NGFR1high/AQP1high, NGFR1high) from prior literature. These are appropriately cited and accurately represent published findings that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The zebrafish mitfa:BRAFV600E;tp53-/- melanoma model exhibits minimal genetic evolution during malignant progression, with tumor development marked by re-expression of neural crest markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C30 describe the zebrafish model system used in this study, supported by prior publications from the authors' group (Kaufman et al., 2016; McConnell et al., 2019; Yen et al., 2013). This establishes the rationale for using this model to study transcriptional rather than genetic drivers of progression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C5"
+    ],
+    "result": "An overexpression screen of 80 epigenetic/transcriptional regulators in zebrafish melanoma identified SATB2 as a potent accelerator of melanoma development, reducing median tumor onset from 21.4 weeks to 12 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46, C47, and C5 describe the screening approach and identification of SATB2. The data show statistically significant acceleration (p<0.0001) with clear Kaplan-Meier survival curves (Figure 1B-C). The experimental design is sound with appropriate controls and sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "MCR:SATB2 tumors display an aggressive phenotype with invasive histology, frequent internal organ involvement, and spreading along the spinal cord, which is rarely observed in control tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe the gross and histopathological phenotype of SATB2-overexpressing tumors. These are well-supported by multiple figures (Figure 1D-G, supplementary figures) showing both macroscopic and microscopic evidence of invasion and organ involvement with quantitative data provided in Figure 1G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C60",
+      "C61"
+    ],
+    "result": "SATB2's effect on melanoma development requires BRAFV600E and tp53-/- mutations, and SATB2 is likely dispensable for melanoma initiation based on CRISPR knockout experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C60-C61 establish that SATB2 acts in a specific genetic context and is not required for initiation. The genetic dependency is clearly shown (Figure 1\u2014supplement 3A), and CRISPR knockout data (Figure 1\u2014supplement 3C) support dispensability for initiation, though the authors appropriately note they did not verify satb2 expression in transgenic tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "SATB2 overexpression accelerates melanoma progression without affecting cellular proliferation in either zebrafish tumors or human melanoma cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 demonstrate that SATB2's effects are not mediated through proliferation. This is supported by PH3 immunohistochemistry in zebrafish (Figure 1\u2014supplement 4A) and CellTiterGlo assays in human cell lines (Figure 1\u2014supplement 4B-C), with appropriate statistical tests showing no significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C67",
+      "C68"
+    ],
+    "result": "SATB2 overexpression induces formation of invadopodia in zebrafish melanoma cells, as evidenced by F-actin-positive foci that co-localize with Cortactin and are abundant in primary tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C67-C68 describe invadopodia formation in zebrafish cells. The evidence includes scratch assays (Figure 2\u2014supplement 1A), phalloidin staining (Figure 2A), Cortactin co-localization (Figure 2A, Figure 2\u2014supplement 1B), and immunohistochemistry of primary tumors (Figure 2B), providing multiple lines of converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "SATB2 overexpression induces functional invadopodia with matrix-degrading capacity in both zebrafish and human melanoma cell lines, with 49-58% of zebrafish cells and up to 58% of human SKMEL2 cells showing gelatin degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 demonstrate functional invadopodia through gelatin degradation assays. Quantitative data are provided for multiple cell lines (Figure 2C-E, Figure 2\u2014supplement 1C-D) with clear statistical significance and appropriate controls. The 10-fold induction in SKMEL2 is particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In zebrafish allotransplantation experiments, MCR:SATB2 tumors show significantly increased metastatic capacity compared to controls, with 59.4% forming distant metastases versus 21.8% for controls, and more frequent bilateral, internal, and neural tube metastases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 describe in vivo metastasis experiments with robust quantitative data from multiple donor tumors (n=76 recipients from 7 donors for SATB2; n=37 from 5 donors for EGFP). Statistical significance is clearly demonstrated (p<0.0001), and detailed metastasis patterns are quantified (Figure 2F-J).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SATB2 is endogenously expressed in human melanoma at both RNA and protein levels, is amplified in 4-8% of metastatic melanoma patients, and high SATB2 expression correlates with poor survival in patient datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 establish clinical relevance through analysis of patient data. Expression is shown by RNA-seq and Western blot (Figure 2\u2014supplement 3A-B), amplification frequency from cBio portal analysis (Figure 2\u2014supplement 3C), and survival correlation from TIDE portal datasets (Figure 2\u2014supplement 3D). The data appropriately acknowledge the relatively low frequency of amplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "ChIP-seq analysis reveals that SATB2 binds to and increases chromatin activation at neural crest development and EMT-associated loci, with ~38.8% of known neural crest genes bound by SATB2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85, C87 describe ChIP-seq results showing SATB2 binding patterns. GREAT analysis (Figure 3A), specific gene binding data (Supplementary file 2), H3K27Ac enrichment (Figure 3B, Figure 3\u2014supplement 1C), and HOMER motif analysis (Figure 3\u2014supplement 1D) provide comprehensive chromatin-level evidence. The 38.8% figure is clearly stated and referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C44"
+    ],
+    "result": "SATB2 binds to and transcriptionally activates neural crest regulators including pdgfab and snai2, as demonstrated by integrated ChIP-seq and RNA-seq analysis of primary zebrafish tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C44 describe the mechanistic link between SATB2 binding and transcriptional activation. This is supported by integrated ChIP-seq and RNA-seq data (Figure 3C-D), with qPCR validation on multiple primary tumors showing significant upregulation of target genes. The pdgfab locus is shown in detail (Figure 3\u2014supplement 1G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "satb2 is highly expressed in migrating neural crest cells during zebrafish development, and morpholino knockdown causes craniofacial abnormalities but does not affect melanocyte development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 provide developmental context for SATB2 function. Expression in crestin:EGFP+ cells is shown from published data (Figure 3\u2014supplement 1E), and morpholino experiments demonstrate neural crest-specific effects (Figure 3\u2014supplement 1F). The distinction between craniofacial and melanocyte effects is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "MCR:SATB2 tumors display an EMT-like phenotype with mislocalized E-cadherin and increased expression of Vimentin, Fibronectin 1, and Collagen 1 compared to control tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 demonstrate EMT-like changes at the protein level through whole-mount immunofluorescence (Figure 3E). Multiple EMT markers are examined with clear visual evidence of altered expression patterns, supporting the transcriptional changes observed by RNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Overexpression of SNAI2, a direct SATB2 target, accelerates melanoma onset (median 18 weeks vs 12 weeks for SATB2) and produces multiple invasive tumors, partially recapitulating the SATB2 phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 demonstrate that SNAI2 is a functional downstream effector of SATB2. Kaplan-Meier data (Figure 3F) show significant acceleration (p<0.0001), and histology (Figure 3G-H) shows invasive morphology. The partial phenotype (18 vs 12 weeks) appropriately suggests SNAI2 is one of multiple effectors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "SATB2 overexpression induces similar transcriptional changes in human melanoma cell lines and primary melanocytes as in zebrafish tumors, with conserved activation of neural crest, EMT, and invadopodia-related pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 establish cross-species conservation through qPCR (Figure 4A) and RNA-seq (Figure 4B-C) in human cells. GSEA and IPA analyses show strong pathway overlaps between human and zebrafish despite species differences and in vitro vs in vivo conditions. This is critical for translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C45",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The SATB2-induced transcriptional program significantly overlaps with known drug-resistant melanoma states (MITFlow/AXLhigh and MITFlow/NGFR1high/AQP1high), with significant enrichment scores and induction of key resistance markers including AQP1, RXRG, NGFR, AXL, SRC, and PDGF pathway members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C45, C103-C107 link SATB2 to clinically relevant drug-resistant states through GSEA analysis (Figure 4D) showing significant overlaps (NES=1.54 and 1.64, p=0.000). Key marker genes are shown to be induced (Figure 4C), and the connection to published resistance mechanisms is well-documented through citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C16",
+      "C112"
+    ],
+    "result": "SATB2 significantly enhances tumor propagating potential in vivo, with MCR:SATB2 tumors engrafting at 30 cells (44% engraftment) while MCR:EGFP requires >3000 cells, yielding an estimated 500-fold difference in tumor-initiating cell frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110, C16, C112 demonstrate enhanced tumor propagation through limiting dilution transplantation (Figure 5A-C). ELDA analysis shows a highly significant difference (p=0.0159) with median estimates of 1/21.6 vs 1/10,879 cells. The experimental design with multiple donors and appropriate sample sizes supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C17",
+      "C113"
+    ],
+    "result": "MCR:SATB2 tumors are completely resistant to Vemurafenib treatment in vivo, showing continued growth while MCR:EGFP tumors respond with ~50% reduction in tumor area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C17, C113 demonstrate functional drug resistance through in vivo treatment experiments (Figure 5D-F). Quantitative tumor area measurements show MCR:EGFP tumors shrink by ~50% while MCR:SATB2 tumors grow by ~22% (p<0.0001). The experimental design with daily oral gavage and appropriate controls is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "SATB2 is a chromatin remodeler with conserved developmental roles in neural crest and neuronal development, and its mutations in humans cause SATB2-associated syndrome with craniofacial and neurological defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 provide background on SATB2 function from established literature. These are appropriately cited and accurately represent the known biology of SATB2 in development and disease, providing important context for understanding its role in melanoma.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "SATB2 overexpression drives enhanced invasion via invadopodia formation and an EMT-like phenotype in both zebrafish tumors and human melanoma cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C40-C43 summarize the invasion phenotype across model systems. These summary claims are well-supported by the detailed experimental evidence described in other claim groups (invadopodia formation, gelatin degradation, metastasis assays, EMT markers).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C86"
+    ],
+    "result": "Invadopodia are specialized cellular structures involved in metastasis through ECM degradation, regulated by PDGF-SRC and EMT pathways, and physiologically used by neural crest cells during migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C86 provide background on invadopodia biology and neural crest development from established literature. These are appropriately cited and provide important biological context for interpreting the SATB2 phenotype.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "A computational model incorporating calcium entry proportional to flagellar length and CDPK1-mediated kinesin-2 regulation can produce stable length control with decelerating growth kinetics and increasing kinesin phosphorylation during regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C38 demonstrate that the computational model produces expected behaviors (stable length control, decelerating kinetics, increasing phosphorylation) consistent with experimental observations. The model serves as a theoretical proof-of-concept that the ion-current mechanism could work in principle, providing context for the experimental tests that follow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "DRC4-GCaMP fusion protein localizes uniformly along flagella, rescues the pf2-4 mutant phenotype, and provides quantitative Ca2+ measurements with a sigmoidal response curve (approximately linear from 0.05 to 1 \u00b5M free Ca2+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 establish the validity of the DRC4-GCaMP biosensor system. The localization (C39), functional rescue (C40), structural basis for uniform distribution (C41-C42), and calibration curve (C43) provide converging evidence that this tool can quantitatively measure flagellar Ca2+. The calibration data in Figure 2C directly supports the quantitative claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Flagellar Ca2+ influx shows fluctuations in live cells that are abolished by EGTA treatment, and the amount of Ca2+ influx is significantly but weakly correlated with flagellar length (\u03c1=0.33, r\u00b2=0.11) with high variability, particularly in longer flagella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 establish the first key finding regarding Ca2+ and length. The EGTA control (C45-C46) confirms the Ca2+ source, while the correlation analysis (C47-C48) shows the relationship is weak and highly variable. The statistical measures (\u03c1=0.33, r\u00b2=0.11) indicate that while there is a correlation, it explains only 11% of variance, which is important for evaluating the ion-current model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The frequency of Ca2+ influx events is not correlated with flagellar length, the pattern of Ca2+ events does not match a Poisson distribution, and there is no correlation in Ca2+ influx between the two flagella of the same cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 characterize the temporal and spatial properties of Ca2+ influx. The lack of frequency correlation with length (C49), non-Poisson distribution (C50), and lack of correlation between flagella (C51) are all supported by the data in Figure 3C and supplementary figures. These findings challenge the assumption of stable, length-dependent Ca2+ influx required by the ion-current model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the ppr2 mutant (CAV2 calcium channel mutant), Ca2+ influx is still observed but is no longer correlated with flagellar length (\u03c1=0.09, r\u00b2=0.02), with the strongest reduction at the distal region of flagella where CAV2 localizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 demonstrate the role of CAV2 in flagellar Ca2+ influx. The loss of length correlation in ppr2 (C52), spatial pattern of reduction (C53), and mechanistic explanation based on CAV2 localization (C54) are supported by Figure 3A-D. The inference in C54 is reasonable given the known localization of CAV2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Addition of 1 mM CaCl2 to the media increases the amount of flagellar Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is directly supported by Figure 3 and Video 4, demonstrating that flagellar Ca2+ can be experimentally manipulated by altering extracellular Ca2+ concentration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "IFT injection is reduced (not increased) in calcium-deficient conditions (ppr2 mutant and EGTA treatment) and increased by CaCl2 treatment, opposite to the predictions of the ion-current model, indicating that flagellar Ca2+ does not function as a negative regulator of IFT injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 present the central experimental finding that contradicts the ion-current model. The data in Figure 4B-C clearly show that reducing Ca2+ (ppr2, EGTA) decreases IFT injection while increasing Ca2+ (CaCl2) increases it\u2014the opposite of what the model predicts. The conclusion (C60-C61) logically follows from these observations. This is the key result that refutes the ion-current model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "EGTA-treated cells show slower flagellar regeneration than controls but eventually reach normal length, contrary to ion-current model predictions, suggesting that cytoplasmic Ca2+ concentration is sufficient for regeneration without additional flagellar Ca2+ influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by Figure 5A and are consistent with previous studies (C63 cites Liang and Pan, 2013). The observation that EGTA slows but does not prevent regeneration contradicts the ion-current model's prediction of faster regeneration with reduced Ca2+. The inference in C64 is reasonable given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The ppr2 mutant shows slower regeneration and shorter final length than EGTA-treated cells despite having some Ca2+ influx, suggesting CAV2 may have additional roles beyond Ca2+ influx in flagellar assembly or maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by Figure 5A. The observation that ppr2 is more severe than EGTA treatment is interesting and suggests complexity beyond simple Ca2+ levels. However, C66 is speculative about CAV2's additional roles, which is appropriately cautious given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Addition of 1 mM CaCl2 does not change flagellar regeneration kinetics relative to normal media, suggesting extra extracellular Ca2+ does not promote assembly, possibly because IFT trains carry less cargo despite increased injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by Figure 5A showing no change in regeneration with CaCl2. The speculation in C69 about reduced cargo loading is reasonable given the disconnect between increased IFT injection (Figure 4) and unchanged assembly rate, though it remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In flagellar disassembly experiments using the fla10 mutant, the ppr2 mutation has no clear effect on disassembly rates, EGTA treatment accelerates disassembly, and mutations in putative calcium pumps have no effect on flagellar length, collectively suggesting flagellar Ca2+ does not promote disassembly or inhibit assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by Figure 5B and Figure 5\u2014figure supplement 1. The disassembly experiments provide additional evidence against Ca2+ as a negative regulator. The observation that EGTA accelerates (rather than slows) disassembly is opposite to what would be expected if Ca2+ promoted disassembly. The summary conclusion in C74 is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Dual-channel imaging reveals no correlation between Ca2+ influx and IFT injection at short timescales, though Ca2+ bursts restart paused retrograde IFT trains and increase their return to the base without triggering immediate increases in IFT injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are supported by Figures 6F and 7. The lack of correlation between Ca2+ and IFT injection (C75-C76) is clearly shown. The observation that Ca2+ restarts paused trains (C77-C79) is consistent with previous reports (cited in C78). The key finding that returning trains don't trigger immediate IFT injection (C80-C81) is supported by Figure 7B and argues against rapid Ca2+-mediated feedback control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CDPK1's requirement for Ca2+ has not been directly demonstrated in Chlamydomonas, IFT can turn around without Ca2+, and the phosphorylation could be regulated by cytoplasmic rather than flagellar Ca2+, suggesting CDPK1 may not be part of a length-sensing feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C87 raise important caveats about the mechanistic basis of the ion-current model. C82 identifies a gap in direct evidence, C83-C84 cite contradictory findings about Ca2+ requirement, and C85-C87 propose alternative interpretations. These are reasonable concerns but remain speculative (C85-C87 are explicitly speculative). The uncertainty is appropriate given the indirect nature of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The lf4 null mutant maintains length regulation despite having double-length flagella, indicating LF4/CDPK1 is not essential for the core feedback loop but may modulate the length set-point in response to cellular states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by citation to Bauer et al., 2021 (C88). The logical inference that LF4 cannot be essential for length control if regulation persists in its absence (C89) is sound. The speculation about set-point modulation (C90-C91) is reasonable but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C104"
+    ],
+    "result": "Flagellar Ca2+ shows high variability around the length correlation trend line due to random Ca2+ influx events that don't follow a Poisson distribution and may be triggered by mechanical stimuli, making Ca2+ an unreliable length indicator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97, C100, and C104 characterize the variability in Ca2+ influx and its implications. The high dispersion (C95), attribution to event randomness (C96), non-Poisson distribution (C97), and mechanical triggering (C100) are supported by the data. The conclusion that this variability makes Ca2+ unsuitable as a stable length indicator (C104) is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The slow regeneration kinetics in EGTA-treated cells resemble rapamycin-treated cells, and since rapamycin inhibits the mTOR pathway which requires intracellular Ca2+, the EGTA effect may be mediated through cytoplasmic mTOR pathway inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C109 draw parallels between EGTA and rapamycin effects. The similarity in phenotypes (C105-C106) and the known relationships between rapamycin, mTOR, and Ca2+ (C107-C108) are well-supported by citations. However, the mechanistic connection proposed in C109 is speculative and not directly tested. This remains an interesting hypothesis but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "If Ca2+ regulated cargo loading onto IFT particles, it would need to inhibit binding to explain length-dependent cargo loading, which would predict faster/longer growth with Ca2+ reduction, but measurements show the opposite.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 present a logical argument testing whether Ca2+ could regulate cargo loading. The background on cargo loading (C111-C112) is well-cited. The logical chain (C113-C114) correctly identifies what would be required and predicted. The experimental refutation (C115, referencing Figure 5A) is clear. This effectively rules out Ca2+-mediated cargo loading as a length control mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The experimental tests rule out the Ca2+-based ion-current model for flagellar length control, and combined with previous work ruling out other models, the diffusion-based model remains the only length control model without opposing experimental evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 present the main conclusion and place it in context. The conclusion that the ion-current model is ruled out (C116) is well-supported by the experimental data. The acknowledgment that other ions could theoretically work (C117) is appropriately cautious. The references to previous work (C118-C119) and identification of the remaining viable model (C120-C121) provide important context. This is a well-supported synthesis of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Ca2+ bursts reactivate paused retrograde IFT trains, but returning particles are not immediately re-injected, suggesting either that IFT remodeling requires more time or that injection timing is controlled by other processes independent of retrograde train arrival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 describe the dynamics of IFT train reactivation and recycling. The reactivation by Ca2+ (C125) is supported by data and previous reports. The observation that particles aren't immediately re-injected (C128) is supported by Figure 7. The alternative explanations (C129-C130) are appropriately speculative. This provides insight into IFT dynamics even though it doesn't directly test the ion-current model.",
+    "result_type": "MINOR"
+  }
+]

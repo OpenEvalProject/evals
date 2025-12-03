@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors identify a hydrophobic export signal at the extreme N-terminus of flagellar rod and hook subunits. Deletion of FlgD residues 2-5 severely attenuates export, and suppressor mutations restore function by reintroducing small non-polar residues near the N-terminus or by repositioning existing hydrophobic residues (e.g., V15) relative to the GRM. All rod/hook subunits contain small non-polar residues upstream of the GRM, and hydrophobicity is key to signal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C28-C41, and C82-C85 collectively demonstrate the existence and importance of the N-terminal hydrophobic signal through deletion analysis (C28, C29), suppressor screens showing restoration by small non-polar residues (C31-C33, C39), sequence conservation analysis (C35, C82, C83), and functional validation with FliK (C37, C38). The data from Figures 1A-D and supplementary figures provide strong experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The position of the N-terminal hydrophobic signal relative to the GRM is critical for export. Suppressor insertions in FlgD\u03942-5 reposition V15 to function as the hydrophobic signal. Systematic spacing experiments show that a minimum separation of ~24 residues (19 for low-level export) between the N-terminal signal and GRM is required for efficient export, with export efficiency increasing incrementally as separation approaches the optimum. This spacing requirement is conserved across all rod/hook subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C42-C59 are strongly supported by multiple lines of evidence: V15A mutation abolishes export in suppressor backgrounds (C44, C45), systematic GSTNAS repeat insertion experiments define the minimum spacing requirement (C52-C56), incremental addition experiments show dose-dependent effects (C54), and FlgDshort suppressor analysis confirms the importance of spacing (C57-C59). Data from Figures 2A-D provide comprehensive experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71"
+    ],
+    "result": "The two export signals (N-terminal hydrophobic signal and GRM) are recognized sequentially by the export machinery. FlgD\u03942-5 (lacking the N-terminal signal but retaining the GRM) stalls at the export machinery after docking via the GRM and blocks export of other subunits. Deletion of both signals (FlgD\u03942-5\u0394GRM) relieves this block, indicating that the GRM mediates initial docking at FlhBC, which then positions the N-terminal signal for subsequent recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C63-C68, and C71 are well-supported by dominant-negative experiments showing that FlgD\u03942-5 blocks export of FliK, FlgK, and FlgL (C63), while FlgD\u0394GRM does not (C64), and that deletion of both signals relieves the block (C67, C68). This logic is extended to FlgDshort and FlgEshort variants (C69-C71). The data from Figures 4 and 5 provide strong evidence for sequential recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The minimum spacing requirement between the N-terminal hydrophobic signal and GRM is a general feature of rod and hook subunits. FlgEshort and FlgGshort variants with reduced spacing show severely attenuated export, which is restored to wild-type levels by insertion of four GSTNAS repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by experiments with FlgE and FlgG showing that shortened variants have export defects (C60) that are rescued by spacer insertion (C61), demonstrating generality of the spacing requirement (C62). Data from Figure 3 provide clear experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C100"
+    ],
+    "result": "The hydrophobic N-terminal signal may trigger opening of the export gate. Mutations that destabilize the closed conformation of the FlhAB-FliPQR export gate (FliP-M210A) partially suppress the motility defect of FlgDshort, suggesting that the N-terminal signal normally triggers gate opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C76-C79, and C100 are supported by experiments showing that the FliP-M210A mutation, which promotes gate opening (C77), increases motility of FlgDshort-expressing strains by 50% (C78, C79). While the mechanism is speculative (C11, C76, C100), the suppression data provide strong indirect evidence. Data from Figure 6C-D support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C99"
+    ],
+    "result": "Structural modeling suggests that when subunits dock at FlhBC via the GRM, the N-terminal hydrophobic signal is positioned within reach of either FlhA or the FliPQR-FlhBN export gate complex. The distance between the FlgD N-terminal signal and GRM ranges from ~45 \u00c5 (\u03b1-helix) to ~105 \u00c5 (unfolded), while FlhBC and the export gate are separated by ~78 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C75 and C99 are based on structural modeling that combines crystal structures, AlphaFold predictions, and tomographic reconstructions. While the distance estimates are reasonable (C72-C74), the precise positioning of FlhBC is uncertain (C99), and the feasibility of the N-terminal signal contacting the gate (C75) remains speculative. The modeling provides plausible but not definitive structural context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The sequence between the N-terminal export signal and GRM is likely unfolded. FlgD variants with additional sequence separating the signals far above the minimum threshold do not impede export, suggesting the intervening region is unstructured. If unfolded, this would correspond to ~72-105 \u00c5; if \u03b1-helical, ~30-36 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by the observation that excess spacing does not impede export (C95), which argues against a structured region (C96). The distance calculations (C97, C98) are based on standard structural parameters and are mathematically sound. Data from Figure 2 support the inference that the region is unfolded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C86"
+    ],
+    "result": "Loss of the N-terminal hydrophobic signal has a stronger effect on export than loss of the GRM, suggesting it may trigger an essential export step. The unique properties of FlgD (having few small non-polar residues) may explain why previous deletion studies failed to identify this signal in other subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C81, and C86 are supported by comparative export data (C80, Figure 1A) and sequence analysis showing FlgD's unique composition (C83-C85). The inference that the N-terminal signal triggers an essential step (C81) is reasonable given the strong export defect. The explanation for why previous studies missed this signal (C86) is speculative but well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The dual signal mechanism (N-terminal hydrophobic signal and GRM) is likely conserved across all T3SS pathways. The GRM-binding pocket on FlhBC is conserved in the SctU family, and injectisome early subunits contain both the GRM and small hydrophobic residues at least 30 residues upstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by sequence conservation analysis showing that the GRM-binding pocket is conserved (C106) and that injectisome subunits have the same dual signal architecture (C107). The inference that this mechanism operates in all T3SS pathways (C108) is speculative but well-supported by the conservation data from Figure 6\u2014figure supplement 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30"
+    ],
+    "result": "Background on T3SS structure and function: T3SS deliver subunits to flagella; early subunits are unchaperoned and contain export signals including the GRM that docks at FlhBC. The export machinery comprises the FliHIJ ATPase, FlhAC docking platform, and the FlhAB-FliPQR export gate. Subunits must be unfolded to pass through the narrow channel, and the gate adopts a closed conformation that must be opened for export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C27, and C30 represent established knowledge about T3SS structure and function, supported by extensive citations to prior work. These provide essential context for the current study and are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Discussion of analogous mechanisms in other systems: Other export systems (Sec, TAT, chitin transporter) use substrate-triggered channel opening mechanisms. The N-terminal regions of flagellar subunits are often unstructured, similar to signal peptides in other bacterial export systems. The authors propose that the hydrophobic N-terminal signal triggers gate opening in a manner comparable to these other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C94 and C109-C114 draw analogies to other transport systems and discuss the potential role of disorder in export signals. While the comparisons to other systems are well-supported by citations (C87-C93, C109-C112), the speculation that the flagellar N-terminal signal functions analogously (C114) and that disorder is intrinsic to flagellar signals (C90, C94) remains uncertain without direct structural evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The FlhAB-FliPQR export gate contains three gating regions (R-plug, M-gasket, Q-latch) that stabilize the closed conformation. The gate opens and closes in response to substrate availability, indicating that substrate docking must trigger gate opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 are supported by prior work from the authors and others showing the gate structure (C102), its closed conformation (C101, C103), and dynamic behavior (C104). The inference that substrate docking triggers opening (C105) is well-supported by the cited work.",
+    "result_type": "MINOR"
+  }
+]

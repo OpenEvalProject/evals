@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C41",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Lytic machinery components (CD107a+ vesicles, perforin, and granzyme B) unevenly segregate in 10-27% of human CD8+ T cells during telophase, as measured by imaging flow cytometry and confocal microscopy. This asymmetric distribution is independent of total protein distribution (CTV), with linear regression slopes near 0.1 for lytic components versus ~1.0 for total proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C10-C16 provide converging evidence from multiple imaging modalities (imaging flow cytometry n=908, confocal microscopy n=61) showing consistent percentages (15-27%) of asymmetric lytic granule distribution across different cell types (peripheral blood CD8+, memory CD8+, clonal CTL). The quantitative measurements of linear regression slopes (C12) and the methodological controls using CTV as a reference (C64, C65) strengthen the findings. The data are internally consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The uneven distribution of lytic machinery in telophase is not associated with classical asymmetric cell division (ACD). Fate-determining transcription factors T-bet and c-Myc segregate symmetrically (slope ~1.0 relative to CTV), and asymmetric lytic granule distribution does not require polarity cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 provide direct experimental evidence that T-bet and c-Myc distribute symmetrically (slope ~1.0), contrasting with the asymmetric distribution of lytic components (slope ~0.1). Claim C19 demonstrates that both polarized and unpolarized stimuli produce comparable asymmetric distributions, ruling out polarity cue dependence. These findings are internally consistent and appropriately distinguish the observed phenomenon from classical ACD mechanisms described in prior literature (C46-C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Polarity cues are not required for uneven distribution of lytic molecules, as comparable CD107a+ vesicle segregation was observed with both immobilized (anti-CD3/anti-CD28/ICAM-1) and soluble (PMA/ionomycin) stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by comparative data in Figure 4A,B showing no statistical difference between polarized and unpolarized stimulation conditions. This control experiment appropriately tests whether the asymmetric distribution requires directional cues, which is a key feature distinguishing this mechanism from classical ACD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C28",
+      "C50"
+    ],
+    "result": "Asymmetric distribution of CD107a+ vesicles occurs at a constant frequency (~20%) across multiple division rounds and is stationary but not hereditary. Cells undergoing asymmetric division are randomly distributed across CD107a expression levels, as determined by \u03c7\u00b2 statistical testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by data across division rounds (Figure 5A,B) and statistical analysis (\u03c7\u00b2 test, Table 1) showing independence between asymmetric division and CD107a expression level. The statistical approach is appropriate for testing independence, and the consistency across division rounds (C22) supports the stationarity claim. The conclusion that the process is not hereditary (C24) follows logically from the independence testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Kolmogorov-Smirnov and \u03c7\u00b2 tests revealed non-stationary variability in CD107a+ vesicle content during early division events, with variability distributed across all CD107a expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by appropriate statistical testing (Table 2) showing that CD107a distributions differ between division rounds during early divisions. The Kolmogorov-Smirnov test is appropriate for comparing distributions, and the \u03c7\u00b2 test appropriately identifies where variability is located. However, the biological interpretation of 'non-stationary variability' could be clarified, as it appears to refer to changes in the overall distribution rather than the frequency of asymmetric divisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "Live-cell imaging and mathematical modeling support a stochastic mechanism of lytic granule distribution. Lytic granules appear randomly distributed in cytosol during mitosis, and binomial modeling shows high probability of asymmetric distribution for n<100 granules. STED microscopy estimated 14-65 (mean=37) granules per CTL, and Monte-Carlo simulation indicates low particle correlation (4% for 37 particles at 20% asymmetry probability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 integrate live-cell imaging observations with mathematical modeling. The binomial model (C30) is appropriate for independent particle distribution, and the STED measurements (C31-C32) provide empirical granule counts that align with the model predictions. The Monte-Carlo simulation (C33) appropriately estimates correlation levels. However, claim C52 is somewhat speculative, and claim C53 acknowledges that some granules may not segregate completely independently, suggesting the model may be an approximation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The mechanism of heterogeneity generation is predominantly stochastic, though some active mechanisms may contribute to a minor extent in limited division events. This may represent a general mechanism for generating heterogeneity in dividing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C54 are partially speculative. While the bulk of evidence supports stochastic distribution, claim C53 acknowledges that videos suggest some granules may not segregate completely independently, implying potential active mechanisms. Claim C54 extrapolates to a 'general mechanism' without testing in other cell types. The evidence supports the stochastic model as the predominant mechanism, but the extent of active contributions and generalizability remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43"
+    ],
+    "result": "CTL with higher lytic granule content (LysoTrackerHigh) exhibit greater killing capacity than LysoTrackerLow CTL across multiple E:T ratios, with higher CD107a degranulation but comparable TCR engagement (CD8 internalization). This demonstrates that lytic granule cargo, not activation properties, dictates killing capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide a logical chain of evidence: sorted populations maintain their differences (C35), show differential killing (C36), exhibit differential degranulation (C37), but similar TCR engagement (C38). This appropriately controls for activation differences and supports the conclusion that lytic granule content determines killing capacity (C39). However, claim C40 makes a causal inference ('determine') that is strongly suggested but not definitively proven, as the sorting is based on LysoTracker staining (which labels acidic compartments broadly) rather than direct lytic granule quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "Stochastic organelle partitioning during cell division has been observed in other systems (MDCK cells, Dictyostelium), but this study is the first to relate random organelle segregation to functional heterogeneity of immune cells. This mechanism may ensure variability in both humoral and cellular adaptive immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 appropriately cite prior work showing stochastic organelle partitioning in other systems. Claim C58 asserts novelty in linking this to immune cell function, which appears justified based on the presented evidence. Claim C62 extends the conclusion to both humoral and cellular immunity by citing work on B cells (C61), which is reasonable but relies on analogy rather than direct evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The stationary but non-hereditary asymmetric distribution mechanism may generate short-lived CTL cohorts with functional heterogeneity while ensuring reproducible population-level responses, potentially conferring robustness through population averaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C60 are speculative functional interpretations not directly tested in the study. While the mechanism described is consistent with the data, the proposed benefits (reproducible responses, robustness through averaging) are hypotheses that would require additional experiments to validate. The citations (C60) support the general concept but do not directly validate this specific mechanism's functional role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background context establishing that cytotoxic immune cells exhibit heterogeneity in lytic function, and that asymmetric cell division (ACD) has been proposed as a mechanism for generating T cell heterogeneity in mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C9 provide appropriate background context supported by citations to prior literature. These establish the research question and relevant prior work on CTL heterogeneity and ACD mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Imaging flow cytometry combines advantages of flow cytometry and microscopy, allowing detection and analysis of rare cells based on morphological and staining characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 accurately describes the imaging flow cytometry technique and is supported by appropriate citations. This methodological description is accurate and relevant to the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Mathematical modeling posits that unequal lytic molecule inheritance results from random distribution of lytic granules on the two sides of the cleavage furrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is supported by the mathematical modeling presented in the manuscript (binomial model, Monte-Carlo simulations). The modeling appropriately tests the hypothesis that random distribution can account for the observed asymmetry frequencies. However, the model makes simplifying assumptions (e.g., independence of granules) that may not fully capture biological complexity, as acknowledged in C53.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "The level of lytic compartment in individual CTL dictates CTL killing capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by the functional experiments in Figure 7 showing that LysoTrackerHigh CTL kill more efficiently than LysoTrackerLow CTL. However, the causal language ('dictates') is strong given that the sorting is based on LysoTracker staining rather than direct lytic granule quantification, and other factors could potentially contribute to the observed differences.",
+    "result_type": "MAJOR"
+  }
+]

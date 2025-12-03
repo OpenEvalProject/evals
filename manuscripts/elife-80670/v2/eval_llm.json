@@ -1,0 +1,461 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C227",
+      "C228"
+    ],
+    "result": "A reference transcriptome was generated for L. vulgaris and used for single-cell RNA sequencing analysis, resulting in identification of 34 cell clusters representing diverse cell types. The transcriptome had a BUSCO score of 54.4% and mapping rates of ~29%, indicating incomplete gene coverage that may impact downstream analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C47 and C227-C228 describe the transcriptome generation, quality assessment, and clustering analysis with specific quantitative metrics. The authors acknowledge limitations (low BUSCO score, missing genes) that could affect results. The methodology is clearly described with appropriate computational tools (Seurat, Cell Ranger), though the incomplete transcriptome is a significant limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Multiple muscle and connective tissue cell types were identified based on expression of contractile fiber genes (myosin, troponin, paramyosin) and collagens. Some connective tissue clusters co-express cephalopod-specific uncharacterized genes, suggesting evolutionary divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 identify muscle and connective tissue types using well-established marker genes. The observation of cephalopod-specific gene co-expression (C54) is data-driven. The hypothesis about smooth muscle-like cells being part of the circulatory system (C51) is appropriately presented as speculation based on marker expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Epidermal cell types were characterized, including chromatophores expressing melanin synthesis pathway genes (tyrosinase, tryptophan 2,3-dioxygenase). Multiple epithelial markers (egf-like, esrp) were validated by HCR ISH showing expression across the epidermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C174-C180 identify epidermal cells using appropriate markers validated by both scRNAseq and HCR ISH. The chromatophore identification is supported by known melanin synthesis genes and previous work in related species (C56). Spatial validation strengthens cell type assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Three clusters highly express papilin, forming characteristic rings around larger epidermal cells throughout the epidermis except the olfactory organ. These cells also express glutathione S-transferase, suggesting a role in metabolizing reactive oxygen species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C181-C187 describe papilin-expressing cells with distinctive spatial organization validated by HCR ISH. The absence from olfactory organs (C186) and interpretation about different cell types (C187) is appropriately cautious. The functional speculation about reactive oxygen species (C184) is reasonable given marker expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "Sucker cells were identified expressing suckerin genes and myeloperoxidase-like, suggesting both structural and antimicrobial functions. HCR ISH showed suckerin-6 expression in cup-shaped cells likely producing sucker ring teeth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C201-C207 identify sucker cells using established markers (suckerin genes) with spatial validation. The antimicrobial function hypothesis (C204-C206) is supported by previous work in O. vulgaris and expression of relevant genes. The specialized nature of these cells is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Neurons were identified using ELAV family genes (elav-like 1 and elav-like 2) and synaptic markers. The two ELAV genes show distinct but overlapping expression patterns across brain regions, with elav-like 2 uniquely expressed in photoreceptors. Pan-neuronal markers tetraspanin-8 and amyloid beta-binding-like were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C94 describe neuronal identification using established markers validated by both scRNAseq and extensive HCR ISH. The differential expression of elav-like 1 vs. elav-like 2 (C83-C86) is well-documented with spatial data. The speculation about functional differences (C87) is appropriately cautious. Pan-neuronal markers are validated across multiple brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Specific neuronal subpopulations were identified by expression of scratch-2, fmrf, LIM homeobox, and serotonin transporter, each showing distinct spatial patterns in the nervous system. Scratch-2 is expressed in medulla and specific brain domains, while serotonin transporter is highly expressed in the cornea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C105 identify neuronal subsets using transcription factors and neurotransmitter-related genes with detailed spatial validation by HCR ISH. The expression patterns are clearly documented with anatomical specificity. The observation that scratch-2-expressing cells are transcriptionally distinct (C97) is data-driven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Glutamate receptor 3 (glutr3) is broadly expressed across neurons and non-neuronal tissues, while GABA receptor (gaba-r) shows restricted expression in specific brain regions. The broad expression of glutr3 suggests functions beyond neuronal communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 describe neurotransmitter receptor expression patterns validated by HCR ISH. The interpretation that glutr3 has non-neuronal functions (C111) is reasonable given its expression in epithelial and muscular tissues. The authors acknowledge that neurotransmitter-related genes were poorly detected in scRNAseq (C112), likely due to transcriptome incompleteness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Stem cell clusters were identified expressing e2f3 and proliferation markers (pcna, histone H3, mcm genes) but lacking differentiated cell markers. HCR ISH showed e2f3 expression specifically in lateral lips, suggesting these are neurogenic regions containing proliferating stem cells or progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 identify putative stem cells using conserved proliferation markers with spatial validation. The e2f3 expression in lateral lips (C117) is clearly demonstrated by HCR ISH. The interpretation as stem cells (C116, C118) is appropriately presented as a hypothesis based on marker expression and consistency with O. vulgaris neurogenic regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Neural progenitor clusters express achaete-scute (asc) and soxB1 together with proliferation markers. HCR ISH showed asc and soxB1 expression in lateral lips overlapping with e2f3, suggesting co-localization of stem cells and neuronal progenitors that likely migrate to the nervous system during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 and C119-C127 identify neural progenitors using conserved developmental genes with extensive spatial validation. The overlapping expression patterns in lateral lips (C120-C121, C125) are well-documented. The migration hypothesis (C126) is appropriately speculative. The lack of differentiated neuron markers (C127) supports the progenitor identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "SoxB1 expression was found in the developing eye and olfactory organ of L. vulgaris pre-hatchlings, consistent with previous findings in D. pealeii and suggesting a broader role in sensory organ development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 describe soxB1 expression in sensory organs with appropriate citation to previous work and HCR ISH validation. The interpretation of a broader role in sensory development (C130) is reasonable given the expression pattern, though appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "FoxD1-expressing clusters were identified in the cortex of optic lobes and basal lobes. Cluster 30 co-expresses gata-2 and blood-related markers. Expression patterns show foxD1 and gata-2 in nervous tissue but not lateral lips, while soxB1 is present in both locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C140 identify foxD1+ cells with detailed spatial characterization by HCR ISH. The co-expression patterns (C136-C137) are data-driven. The spatial distinction between foxD1/gata-2 (in nervous tissue) versus e2f3/asc (in lateral lips) with soxB1 in both (C139-C140) is clearly demonstrated and important for understanding cell states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Trajectory analysis using Monocle3 and Slingshot suggests a developmental progression from e2f3/asc-expressing proliferative cells through a foxD1/gata-2-expressing intermediate stage to differentiated neurons expressing amyloid beta-binding-like and higher levels of ELAV genes. SoxB1 is expressed in early and late stages but shows low expression in the foxD1 stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C153 describe trajectory analysis results from two methods showing consistent patterns. However, the authors acknowledge limitations including poor cluster resolution and lack of cells along trajectory axes. The foxD1+ intermediate stage is a computational inference that requires experimental validation. The analysis provides hypotheses for neurogenesis but cannot definitively establish developmental relationships without lineage tracing or temporal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Photoreceptors were identified based on expression of canonical phototransduction cascade components (trp-like, arrestin, phospholipase C, rhodopsin). HCR ISH confirmed specific expression of trp-like and rhodopsin in retinal photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C156-C159 identify photoreceptors using well-established markers of the conserved phototransduction cascade. Both scRNAseq and HCR ISH validation support the identification. The markers are appropriate and the spatial localization is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "A cluster expressing cilia/flagella-related markers together with neuronal markers (rab3, synaptogyrin-1) was identified at the surface of arms. These cells are proposed to be mechanoreceptors based on marker co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C168-C171 identify putative mechanosensory cells based on co-expression of cilia-related and neuronal markers with spatial validation by HCR ISH. The mechanosensory function (C63, C170) is appropriately presented as a hypothesis based on marker expression. The co-expression analysis (C171) supports the sensory identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The olfactory organ strongly expresses FMRF-related neuropeptides with a pattern similar to reflectin-8. Elav-like 1 expression was observed in epidermal lines, consistent with their proposed mechanosensory function in other cephalopods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C167 identify sensory markers in olfactory organs and epidermal lines with HCR ISH validation. The similarity between fmrf and reflectin-8 patterns (C163) is documented. The interpretation of epidermal line function (C167) is appropriately based on previous work in related species and consistent marker expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Reflectin-expressing clusters were identified, with reflectin-8 showing broad expression in epidermis, nervous system (optic lobes, basal lobes), and olfactory organ. Co-expression with neuronal markers (scratch-2, ELAV genes) suggests reflectins may have roles beyond light reflection, potentially in nervous system modulation of chromatophores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 and C193-C195 identify reflectin+ cells with extensive spatial characterization. The unexpected nervous system expression (C193-C194) is well-documented by HCR ISH. The hypothesis about nervous system function (C194) is appropriately speculative but supported by co-expression data (C195) and previous literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "A lens cluster was identified based on expression of s-crystallin, a structural component of lens tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 identifies lens cells using an established marker (s-crystallin) with appropriate citation. This is a straightforward cell type identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "A connective tissue cluster expressing zinc metalloproteinase nas-14-like was identified. HCR ISH showed expression in large branched cells throughout the body, particularly in ventral epidermis and funnel surface, with morphology similar to fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C192 identify a connective tissue type using co-expression of collagens, myosins, and actins with spatial validation. The fibroblast-like morphology (C191) is based on observed cell shape. The spatial distribution (C192) is clearly documented by HCR ISH.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "Mesencephalic astrocyte-derived neurotrophic factor (madnf) is expressed in multiple clusters and shows widespread nervous system expression similar to reflectin-8. The expression pattern suggests these may be non-neuronal cells of the nervous system, possibly glial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C196-C200 describe madnf expression with HCR ISH validation showing nervous system localization. However, the discrepancy between cluster assignments (connective tissue, mechanosensory, epidermis) and observed nervous system expression creates uncertainty. The glial cell hypothesis (C200) is speculative and requires additional markers or functional validation to support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "The study combined single-cell transcriptomics with HCR ISH to characterize cell type diversity in L. vulgaris heads, identifying both conserved cell types (neurons, muscles, connective tissues) and cephalopod-specific cells (chromatophores, sucker cells). Some conserved cell types express cephalopod-specific genes, suggesting evolutionary divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C27-C31, C33-C34, and C208-C211 describe the overall study approach and major findings. The combination of methods is appropriate and well-executed. The identification of both conserved and novel cell types is supported by the data. The observation of cephalopod-specific gene expression in conserved cell types (C30-C31) is an important finding suggesting lineage-specific evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background context establishes that cephalopods have complex nervous systems and behaviors that evolved independently from vertebrates, with specialized cells and tissues. Despite genomic resources, molecular identities of cephalopod cell types remain largely unknown, motivating this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 provide background context supported by appropriate citations to established literature. These claims set up the rationale for the study and are well-supported by previous work. The knowledge gap (C4, C22) appropriately motivates the current research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "The study provides a significant step in understanding convergent evolution of brains and a valuable resource for future cephalopod research. Further studies could help understand nervous system evolution and identify what confers cephalopods their unique capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C212-C214 are appropriate concluding statements about the study's significance and future directions. The characterization of cell types does provide a resource for future work, and the potential for comparative studies to understand brain evolution is reasonable, though these are forward-looking statements rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

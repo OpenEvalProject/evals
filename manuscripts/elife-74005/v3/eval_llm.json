@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C64"
+    ],
+    "result": "The study identified 519 proteins in trophallactic fluid across 113 samples, with 27 core proteins present in all samples and 57% of proteins present in less than half of samples. Protein identification correlated with sample volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C64 provide consistent quantitative data on protein identification. The manuscript reports clear numbers with statistical support (correlation tests with p-values), and the filtering methodology is described. The results are internally consistent and appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C70",
+      "C71"
+    ],
+    "result": "Field-collected samples showed more variable proteomes than lab samples, and proteome variability decreased with time in laboratory conditions. However, proteome variability did not differ significantly between young/mature colonies or nurse/forager castes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 report significant differences with appropriate statistical tests (gamma GLM with p-values), while C70-C71 report non-significant results. The combination of positive and negative findings with proper statistical support strengthens confidence in the analytical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C24",
+      "C28",
+      "C37",
+      "C38"
+    ],
+    "result": "Nurses and foragers showed differential protein abundance, with foragers having fewer total proteins but 19 proteins differing significantly between castes. These proteins were enriched for carbohydrate processing, oxidation-reduction, and malate metabolic processes, with stronger protein-protein interaction networks than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C24, C28 provide convergent quantitative evidence from multiple statistical methods. Claims C37-C38 add functional enrichment analysis with appropriate FDR corrections. The multi-method approach (frequentist, Bayesian, machine learning) strengthens the findings despite inherent biological variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C23",
+      "C27",
+      "C30",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Young and mature colonies circulate different protein types: young colonies prioritize direct carbohydrate processing enzymes while mature colonies prioritize nutrient storage proteins. Twelve proteins differed significantly between young and mature colonies, with the most abundant proteins enriched for carbohydrate metabolism, lipid transport, and sterol transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 state the main finding, supported by quantitative data in C23, C27. Claims C30, C41-C43 provide functional enrichment analysis with significant FDR values. The convergence of differential abundance data and functional annotation supports the biological interpretation, though the functional claims involve some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C44",
+      "C45",
+      "C39",
+      "C80"
+    ],
+    "result": "Trophallactic fluid contains proteins implicated in oxidative stress, aging, and caste determination, with nurses showing elevated levels of oxidative stress-related proteins. Specific proteins with 'determination of adult lifespan' GO terms were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C44-C45 report identification of aging-related proteins with differential abundance between castes. Claims C39 and C80 provide specific examples with GO term annotations. The identification is data-supported, though the functional implications involve inference from orthology and GO annotations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C29",
+      "C81",
+      "C82"
+    ],
+    "result": "When young colonies were moved from field to laboratory and resampled after six months, 20 proteins differed significantly, indicating declining trophallactic fluid complexity over time in laboratory conditions. This may reflect dietary, microbiome, or environmental complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C29, C81 provide quantitative data from multiple statistical methods showing significant changes. Claim C82 offers speculative interpretation. The temporal comparison is well-controlled (same colonies over time), though the mechanistic explanation remains uncertain and appropriately qualified as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C40"
+    ],
+    "result": "Random forest classifiers achieved high accuracy (87-93%) for Young vs. Mature, Nurse vs. Forager, and Field vs. Lab comparisons. Laboratory colonies received intermediate maturity scores (42%), consistent with their transitional status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C40 report machine learning classification results with clear accuracy metrics. The intermediate classification of lab colonies (C40) provides validation of the model. However, the manuscript lacks details on cross-validation procedures and potential overfitting, which is a minor concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "No clear spatial signature was found between East and West sampling areas, with frequentist analysis finding no significant proteins and random forest achieving only 58% accuracy. Only empirical Bayes identified 8 differentially abundant proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 consistently report negative or weak results for spatial effects. The low classification accuracy (58%) and lack of convergence across methods appropriately indicate no robust spatial signal. This negative result is valuable and honestly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C78",
+      "C79"
+    ],
+    "result": "The 60 most abundant proteins are enriched for carbohydrate metabolism, lipid/sterol transport, immune system, and lysosomal processes. Multiple protein families (cathepsins, maltases) show expansions, with 16 proteins overlapping between abundant and differentially expressed sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C35 report functional enrichment with appropriate FDR corrections. Claims C78-C79 describe overlap between protein sets. The enrichment analysis is properly conducted with multiple testing corrections, though interpretation relies on Drosophila orthologs which may not perfectly represent ant protein functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C90"
+    ],
+    "result": "Gene-set enrichment showed immunity-related proteins characteristic of hemocytes in trophallactic fluid, suggesting hemocytes may be transmitted mouth-to-mouth. However, clear caste differentiation in immune protein abundance was not observed, unlike in honey bees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 reports significant enrichment with proper statistics. However, C48's inference that hemocytes are transmitted is highly speculative without direct evidence (microscopy, cell counts). C90 provides important negative control by comparison to honey bees. The hemocyte transmission hypothesis requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C94",
+      "C95",
+      "C50"
+    ],
+    "result": "Lysosomal pathways are enriched in abundant and differentially expressed proteins. This may indicate secretion mechanisms or evolutionary adaptation to acidified trophallactic fluid through gene duplication and neofunctionalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 reports significant enrichment (data-supported). Claims C94-C95 propose mechanistic interpretations that are speculative. Claim C50 suggests evolutionary scenarios without phylogenetic or experimental support. The enrichment finding is solid, but mechanistic and evolutionary interpretations require additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C46",
+      "C66",
+      "C67",
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "Trophallaxis may provide a mechanism for distributed metabolism in social insect societies, where metabolic costs and benefits are shared across individuals. This could explain how social insects escape the longevity-fecundity tradeoff and suggests protein distribution studies are necessary beyond gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12, C46, C88 propose distributed metabolism as a mechanism, which is speculative inference from protein distribution data. Claims C66-C67 summarize variation findings (supported). Claims C86, C89 make conceptual arguments. While the protein distribution data is solid, the functional consequences and mechanistic claims require experimental validation (e.g., protein transfer experiments, functional assays).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Individual trophallactic fluid proteomes are affected by both colony of origin and behavioral role, with 60 proteins showing significant interaction between these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 reports two-way ANOVA results showing significant interactions. This demonstrates that individual variation is structured by both colony identity and behavioral role, which is important for understanding the biological system. The statistical approach is appropriate for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C76",
+      "C77",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Specific proteins of interest include vitellogenin (93rd most abundant), CREG1 (most abundant, also in mammalian milk), and orthologs to Drosophila seminal fluid proteins. These molecular parallels across social fluids suggest common adaptive requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C76-C77, C91-C92 report specific protein identifications with rankings and orthology. Claim C93 offers evolutionary interpretation. The protein identifications are data-supported, and the comparative biology observations are interesting, though the evolutionary interpretation is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Similar protein composition shifts occur in multicellular organism tissues during life-stage transitions (e.g., Drosophila midgut after mating, larval hemolymph during development). This suggests larval development regulation may occur over the ant social network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 cite published literature on other systems showing similar patterns. Claim C85 proposes that larval development is regulated through the social network. While the comparative biology is interesting and properly cited, the mechanistic claim about larval development regulation requires experimental validation beyond protein identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Protein family expansions (cathepsins, guanine deaminases, maltases) in trophallactic fluid suggest adaptive evolution of proteins arriving in this fluid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 infers adaptive evolution from observed gene family expansions. While the observation of multiple related proteins is data-supported, the inference of adaptive evolution would be strengthened by phylogenetic analysis, selection tests, or functional divergence studies. The claim is reasonable but involves inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C87"
+    ],
+    "result": "Background knowledge claims about social insect biology, superorganisms, caste systems, and C. floridanus natural history are established from cited literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22, C51-C54, C87 present established knowledge from the literature with appropriate citations. These provide necessary context for the study. The citations appear appropriate and the knowledge claims are standard in social insect biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Methodological details for colony classification, sample collection, laboratory rearing, and proteomic analysis are described, including validation of collection methods from prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63, C65, C97-C100 describe experimental methods with appropriate detail. The methods are generally well-described, though some details (e.g., random seeds for machine learning, complete parameter settings) could be more explicit. The validation of collection methods by citation (C59) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C36",
+      "C68",
+      "C69"
+    ],
+    "result": "Protein-protein interaction networks for differentially abundant proteins showed increased interaction beyond chance expectation. Overall protein abundance was higher in colony samples than individual samples, but abundance did not correlate with protein prevalence across the dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C68-C69 report network analysis and abundance patterns. The PPI enrichment analysis includes appropriate statistical tests (p-values). The lack of correlation between abundance and prevalence (C69) is an interesting observation that suggests biological complexity beyond simple detection limits.",
+    "result_type": "MINOR"
+  }
+]

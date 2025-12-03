@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors successfully reconstituted cytochrome c biogenesis in vitro using purified human HCCS. HCCS co-purifies with heme liganded to His154, and a heme-loading protocol increases occupancy to ~30%. In vitro reactions with apocytochrome c and DTT produce cytochrome c with stereochemical heme attachment, proper folding (His19 and Met81 axial ligands), correct redox potential (+253 mV), and at least 62% release from HCCS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C55, C77-C79 provide comprehensive experimental evidence including UV-vis spectroscopy, heme staining, HPLC, pyridine hemochrome assays, redox titrations, and CD spectroscopy. Multiple independent methods confirm proper heme attachment, folding, and release. The data are internally consistent and supported by appropriate controls (H154A variant).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors successfully reconstituted cytochrome c biogenesis in vitro using purified bacterial CcsBA. Both GST-CcsBA and CcsBA:His attach heme to apocytochrome c, producing a 550 nm peak characteristic of c-type cytochromes within 1-3 hours. The P-His variant does not attach heme, confirming heme attachment occurs from the P-His/WWD domain. The product is released and properly folded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 provide experimental evidence from UV-vis spectroscopy, heme staining, time courses, and HPLC showing CcsBA activity. The P-His variant serves as an appropriate negative control (C63), and HPLC data confirm product release (C67). Multiple lines of evidence support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C90",
+      "C92"
+    ],
+    "result": "For HCCS, a minimal 16-mer peptide containing CXXCH and adjacent alpha helix 1 is necessary and sufficient for recognition and heme attachment. The 16-mer and 20-mer are recognized and show heme attachment (552-553 nm peaks), while the 11-mer and 9-mer lacking alpha helix 1 are not recognized. The 56-mer is also recognized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56-C60, C90, C92 are supported by consistent experimental data from heme staining (Figure 3b) and UV-vis spectroscopy (Figure 3c, Figure 3\u2014figure supplement 1). The pattern is clear: peptides with alpha helix 1 are recognized, those without are not. This establishes alpha helix 1 as necessary and sufficient for HCCS recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C69",
+      "C70",
+      "C71",
+      "C90",
+      "C99"
+    ],
+    "result": "For bacterial CcsBA, the CXXCH motif alone is necessary and sufficient for recognition, and alpha helix 1 is not required. CcsBA attaches heme to all tested peptides including the 11-mer, 9-mer, 16-mer, 20-mer, and 56-mer, showing 550 nm peaks characteristic of c-type heme attachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C69-C71, C90, C99 are supported by experimental data showing CcsBA recognizes peptides lacking alpha helix 1 (Figure 7, Figure 7\u2014figure supplement 1). This contrasts directly with HCCS requirements and is internally consistent across multiple peptide lengths. The conclusion that CXXCH alone is sufficient is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C72",
+      "C73",
+      "C102",
+      "C103"
+    ],
+    "result": "For HCCS, neither cysteine thiol is critical for recognition. All 20-mer cysteine variants except SXXSH showed at least one thioether attachment. The d-cysteine at position 15 formed thioethers, but homocysteine at position 15 did not, suggesting rotational but not vertical flexibility at the first cysteine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C72, C73, C102, C103 are supported by systematic cysteine substitution experiments (Figure 3\u2014figure supplement 2, Table 1) including non-natural amino acids. Pyridine hemochrome spectra confirm thioether bond numbers. The data consistently show HCCS tolerates single cysteine substitutions, supporting the conclusion that neither thiol is critical for recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C74",
+      "C75",
+      "C76",
+      "C100",
+      "C104"
+    ],
+    "result": "For CcsBA, both cysteines and histidine are required for recognition, showing more stringent CXXCH motif requirements than HCCS. Only the homocysteine substitution at position 15 showed heme attachment (two thioethers), suggesting vertical but less rotational flexibility. No histidine substitutions were recognized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C74-C76, C100, C104 are supported by systematic substitution experiments (Figure 7\u2014figure supplement 3, Table 1). The contrast with HCCS is striking: CcsBA tolerates only one non-natural amino acid substitution (HoCys15), and no histidine variants. This supports the conclusion of more stringent CXXCH recognition requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C49",
+      "C61",
+      "C80",
+      "C83",
+      "C84"
+    ],
+    "result": "Heme-attached peptides are not efficiently released from HCCS, with only 14\u00b13% of 20-mer released compared to 62\u00b15% of full-length cytochrome c. Peptides with two thioethers release more than single thioether variants. This suggests folding of cytochrome c is required for optimal release from the HCCS active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C49, C61, C80, C83, C84 are supported by release assay data (Figure 4, Figure 3\u2014figure supplement 3) and HPLC showing peptides remain complexed with HCCS (553 nm peak). The quantitative release data and comparison between full-length cyt c and peptides provide strong evidence that folding drives release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C107",
+      "C108"
+    ],
+    "result": "Peptides containing CXXCH and alpha helix 1 act as inhibitors of cytochrome c biogenesis by HCCS. When 16-mer or 20-mer peptides are pre-incubated with HCCS, subsequent addition of apocytochrome c does not result in cytochrome c formation, while the 11-mer does not inhibit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C107, C108 are supported by inhibition assay data (Figure 4e) showing that peptides recognized by HCCS prevent subsequent apocyt c maturation. The 11-mer control (not recognized) does not inhibit, providing specificity. The mechanism (C108) is proposed as substrate analog inhibition, which is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C105",
+      "C106"
+    ],
+    "result": "The substrate recognition requirements for HCCS and CcsBA are fundamentally different despite both recognizing the CXXCH motif. HCCS requires alpha helix 1 and tolerates cysteine substitutions, while CcsBA requires only CXXCH with both cysteines and histidine but not alpha helix 1. This likely reflects evolutionary adaptation to different substrate repertoires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C105, C106 synthesize the comparative findings from peptide experiments. The contrasting recognition requirements are well-documented experimentally. The evolutionary interpretation (C106) is speculative but reasonable given that mitochondria have limited c-type cytochromes while bacteria have hundreds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "A Gremlin/Rosetta computational model of HCCS structure shows an acidic active site surface that could interact electrostatically with the basic alpha helix 1. His19 of the CXXCH motif forms the second axial ligand to heme in peptide complexes. Substituting lysines to aspartates in alpha helix 1 abolishes heme attachment, supporting the electrostatic interaction model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 combine computational modeling with experimental validation. The acidic surface prediction (C94) is supported by the lysine-to-aspartate substitution experiment (C98) showing loss of activity. Spectral data confirm His19 as axial ligand (C96). The model is consistent with experimental observations, though the structure itself is computational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "For CcsBA, heme trafficking from the TM-His site to the WWD/P-His site is proposed, with subsequent stereochemical attachment to apocytochrome c. Preliminary data suggest peptides with heme attached by CcsBA may be released, unlike HCCS, possibly mediated by the WWD domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81, C82, C85-C88 include prior work (C81, C85, C86 with citations) and new preliminary observations (C87). The heme trafficking model is based on previous studies. The peptide release observation (C87) is explicitly described as preliminary and the WWD domain role (C88) is speculative. More data are needed to confirm these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background claims establish that cytochromes c are ubiquitous heme proteins with covalently attached heme via the CXXCH motif, that three biogenesis systems (I, II, III) exist with different distributions, and that the detailed biogenesis mechanism remains largely unknown. In vivo studies have limitations that necessitate in vitro approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C32 are background knowledge claims supported by extensive citations to established literature. These provide context for the study but are not novel findings. The claims about knowledge gaps (C25-C27) appropriately motivate the in vitro reconstitution approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The alpha helix 1 sequence is predicted by PEP-FOLD to form an alpha helix, consistent with the experimental structure of cytochrome c.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is a computational prediction supported by citation to the PEP-FOLD method and consistency with known cytochrome c structure. This is a minor supporting observation for the structural interpretation of recognition requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C109"
+    ],
+    "result": "Because bacteria recognize hundreds of CXXCH motifs while mitochondria recognize few, it makes evolutionary sense for bacterial synthases to recognize only the CXXCH motif. The different recognition requirements could enable development of specific inhibitors as targeted antimicrobials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101 and C109 are speculative interpretations and future applications. The evolutionary logic (C101) is reasonable but not directly tested. The antimicrobial application (C109) is a potential future direction based on the different recognition requirements, but no inhibitor development or testing is presented.",
+    "result_type": "MINOR"
+  }
+]

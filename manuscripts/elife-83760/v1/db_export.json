@@ -1,0 +1,1764 @@
+{
+  "submission": {
+    "id": "4d684563-f70a-45cd-b743-014540e0bc2c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:49:51.946172Z",
+    "updated_at": "2025-12-03T19:49:51.946172Z"
+  },
+  "content": [
+    {
+      "id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "submission_id": "4d684563-f70a-45cd-b743-014540e0bc2c",
+      "content_type": "manuscript",
+      "content_text": "# Netrin-1 regulates the balance of synaptic glutamate signaling in the adult ventral tegmental area\n\n## Authors\n\n- Marcella M Cline<sup>1</sup> ([ORCID: 0000-0002-9590-3725](https://orcid.org/0000-0002-9590-3725))\n- Barbara Juarez<sup>1</sup>\n- Avery Hunker<sup>3</sup>\n- Ernesto G Regiarto<sup>3</sup>\n- Bryan Hariadi<sup>3</sup>\n- Marta E Soden<sup>3</sup>\n- Larry S Zweifel<sup>1</sup> ([ORCID: 0000-0003-3465-5331](https://orcid.org/0000-0003-3465-5331)) \u2020\n\n### Affiliations\n\n1. Department of Psychiatry and Behavioral Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n2. Molecular and Cellular Biology Program, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n3. Department of Pharmacology, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe axonal guidance cue netrin-1 serves a critical role in neural circuit development by promoting growth cone motility, axonal branching, and synaptogenesis. Within the adult mouse brain, expression of the gene encoding (Ntn1) is highly enriched in the ventral midbrain where it is expressed in both GABAergic and dopaminergic neurons, but its function in these cell types in the adult system remains largely unknown. To address this, we performed viral-mediated, cell-type specific CRISPR-Cas9 mutagenesis of Ntn1 in the ventral tegmental area (VTA) of adult mice. Ntn1 loss-of-function in either cell type resulted in a significant reduction in excitatory postsynaptic connectivity. In dopamine neurons, the reduced excitatory tone had a minimal phenotypic behavioral outcome; however, reduced glutamatergic tone on VTA GABA neurons induced behaviors associated with a hyperdopaminergic phenotype. Simultaneous loss of Ntn1 function in both cell types largely rescued the phenotype observed in the GABA-only mutagenesis. These findings demonstrate an important role for Ntn1 in maintaining excitatory connectivity in the adult midbrain and that a balance in this connectivity within two of the major cell types of the VTA is critical for the proper functioning of the mesolimbic system.\n\n## Introduction\n\nProper regulation of the midbrain dopamine system is essential for numerous brain functions and behavior (Bissonette and Roesch, 2016). Disruption in the balance of midbrain dopamine neuron activity has been linked to several neurological and psychiatric conditions, including autism (Pav\u0103l, 2017), schizophrenia (Hietala and Syv\u00e4lahti, 1996), and substance use disorders (Ostroumov and Dani, 2018). Within the VTA, the activity of dopamine neurons is regulated in part by inhibitory (GABAergic) and excitatory (glutamatergic) synaptic input. The molecular mechanisms that maintain the balance of inhibitory and excitatory connectivity in the adult midbrain, however, remain poorly resolved.\n\nGenome-wide association studies and analysis of de novo mutations have strongly implicated genes regulating neuronal axon guidance in neurodevelopmental disorders (Gilman et al., 2012; Gulsuner et al., 2013). Although the impact of mutations in these genes early in development is likely critical for their role in neurodevelopmental disorders, many of the genes maintain high levels of expression in the adult brain, and their functions in this context are less understood. We previously demonstrated that the axonal guidance receptor Robo2 is necessary for the maintenance of inhibitory synaptic connectivity in the adult VTA (Gore et al., 2017), suggesting that axonal guidance proteins have a critical function in maintaining synaptic connectivity in the adult midbrain.\n\nNetrin-1 is predominately recognized for its role in neurodevelopmental processes (Gore et al., 2017; Manitt et al., 2010; Winberg et al., 1998; Glasgow et al., 2018; Yetnikoff et al., 2010). During development, the gene encoding netrin-1 (Ntn1) is highly expressed throughout the central nervous system (CNS). Following this critical period global expression decreases (Manitt et al., 2010), but expression within the limbic system, particularly in the ventral midbrain, persists. Consistent with the continued function of Ntn1 following early development, genetic inactivation of either Ntn1 (Winberg et al., 1998) or its receptor Dcc Glasgow et al., 2018 from forebrain glutamatergic neurons in late postnatal development results in significantly impaired spatial memory in adult mice that corresponds to a loss of hippocampal plasticity. Within the VTA, Dcc expression levels in adult mice are significantly upregulated following amphetamine exposure (Yetnikoff et al., 2010), and Dcc haploinsufficient mice display blunted locomotor response to amphetamine (Flores et al., 2005), consistent with increased excitatory synaptic strength in the VTA following amphetamine treatment (Saal et al., 2003). These results suggest a potential role for Ntn1 signaling through Dcc in regulating excitatory tone in the adult dopamine system.\n\nTo determine whether Ntn1 regulates excitatory synaptic connectivity in the VTA of adult mice, we used viral-mediated, Cre-inducible CRISPR/Cas9 (Hunker et al., 2020) to selectively mutate Ntn1 in midbrain dopamine and GABA neurons. We find that Ntn1 loss of function significantly reduces postsynaptic glutamate receptor-mediated currents in a cell-autonomous manner similar to what has been reported previously in the adult hippocampus (Glasgow et al., 2018). We further show that Ntn1 loss of function in VTA GABA neurons has a more profound effect on behavior than the loss of function in VTA dopamine neurons. Intriguingly, the simultaneous loss of function of Ntn1 in both cell types of the VTA largely rescues the behavioral phenotypes observed following mutagenesis in VTA GABA neurons alone. These data support a model in which the balance of excitatory synaptic connectivity between dopamine and GABA neurons within the VTA is maintained by the persistent expression of the developmental gene Ntn1. This continued function of Ntn1 in adulthood sustains the excitatory/inhibitory equilibrium onto dopamine neurons that is critical to the function of the mesolimbic dopamine system.\n\n## Results\n\n### Ntn1 expression and mutagenesis in the VTA\n\nIn situ hybridization analysis of Ntn1 from the Allen Institute mouse brain expression atlas (Lein et al., 2007) shows diffuse and low levels of expression throughout the adult mouse brain, with moderate expression levels in the cerebellum and hippocampus (Figure 1A), and the highest level of expression in the ventral midbrain (substantia nigra and ventral tegmental area). The VTA is comprised of multiple cell types Morales and Margolis, 2017; to determine the cell type-specific expression of Ntn1 within the heterogeneous VTA, we performed RNAscope in situ hybridization on midbrain slices from adult wild-type mice (>8 weeks of age) and probed for Ntn1, Th (tyrosine hydroxylase, a marker of dopamine neurons), and Slc32a1 (vesicular GABA transporter [Vgat], a marker of GABA neurons). We found Ntn1 expression to be present throughout the VTA, largely localized to Th-positive neurons but also present in GABA neurons (Figure 1C\u2013F). Of the identified Ntn1 positive cells, Ntn1 expression co-localized with Th expression (dopamine producing neurons; 72.2% co-localization) and Slc32a1-expressing GABA neurons (18.1% co-localization) (Figure 1E). The remaining Ntn1 expressing cells that do not co-localize with Th or Slc32a1 are likely glutamatergic neurons (Morales and Margolis, 2017), or possibly glial cells (Phillips et al., 2022). Immunohistochemistry for Ntn1 and Th (Figure 1G) confirmed the presence of Ntn1 in dopamine and non-dopamine producing (Th-negative) cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig1-v1.jpg)\n\n**Figure 1.:** 3D display of Ntn1 (A) and Slc6a3 (B, dopamine marker) from the Allen Brain Atlas. (C\u2013D) 20 X magnification images of in situ hybridization (RNAScope) for Ntn1 (green) and Slc32a1 (GABA marker; red, C) and Th (dopamine marker; red; D). Arrows indicate co-labeling of Ntn1 with Slc32a1 (C) or Th (D). Scale bar indicates 20 \u03bcm. (E\u2013F) Quantification of cell type expression. Of the cells expressing Ntn1, 72.2% were dopaminergic (Th+) and 18.1% were GABAergic (Slc32a1+; E). (F) Of the total of Th+ identified cells, 64.5% co-expressed Ntn1 (35.6% did not express Ntn1), and 30.4% of Slc32a1 identified cells co-expressed Ntn1 (69.5% did not express Ntn1). (G) Immunohistochemistry confirms the presence of Ntn1 protein (red) in both Th+ (cyan) and non-dopamine cells (Th- cells, indicated by yellow arrows).\n\nTo selectively mutate Ntn1 in specific cell types in the VTA, we designed a single guide RNA (sgRNA) targeting exon 2 in mice (sgNtn1; Figure 2A) and cloned it into an AAV packaging plasmid containing a Cre-recombinase dependent expression cassette for SaCas9 (Hunker et al., 2020). To determine the efficiency of Ntn1 mutagenesis, we injected DAT-Cre (Slc6a3Cre/+) mice (aged 8\u201310 weeks) bilaterally into the VTA with either AAV-FLEX-SaCas9-HA-sgNtn1 and AAV-FLEX-YFP (DAT-Cre Ntn1-cKO mice) or AAV-FLEX-SaCas9-sgRosa26 (a gene locus with no known function; control mice). Four to five weeks following injection, we performed immunohistochemistry for Ntn1 and Th. Ntn1 conditional knockout (cKO) resulted in a significant reduction in the proportion of VTA Th-positive cells co-labeled with Ntn1 in DAT-Cre Ntn1 cKO mice compared to controls (Figure 2D\u2013E). In contrast to previous findings following Ntn1 deletion in the substantia nigra (Jasmin et al., 2021), the average number of Th + cells per slice was not statistically different in DAT-Cre Ntn1 cKO mice compared to controls (control: 178.2 \u00b1 12.68 and Ntn1 cKO 173.3 \u00b1 10.75). Although, this result is consistent with Ntn1 inactivation not compromising cell viability, without a complete stereological analysis of every neuron within the VTA, we cannot definitively conclude that some cell loss did not occur.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013B) Schematics summarizing cell type-specific knockout procedure. (A) Adult mice were injected bilaterally into the VTA with AAV-FLEX-SaCas9-HA-sgNtn1 and AAV-FLEX-YFP. Control mice received an equivalent volume of -sgRosa26 and/or AAV-FLEX-YFP. SaCas9 is virally delivered into the genome in the inactive orientation and returned to the active orientation only in the presence of Cre recombinase, limiting Cas9 expression to target cells. (B) Schematic of the VTA (left) showing VTA GABA neurons project to and inhibit VTA dopamine neurons. By using transgenic Cre-driver mouse lines (right) viral delivery of SaCas9 results in gene disruption in specifically VTA dopamine neurons (DAT-Cre mice, top panel), or VTA GABA neurons (Vgat-Cre mice, bottom panel). (D) Example images for Th (cyan) and Ntn1 (red) immunostaining in the ventral tegmental area (VTA) of mice injected with control or sgNtn1 CRISPR virus. (E) Quantification of the percentage of Th + cells co-labled with Ntn1 (Students t-test; t=8.179, df = 10, 62.25 \u00b1 5.796 vs 9.586 \u00b1 2.807, ****p<0.0001).\n\n### Netrin-1 regulates excitatory connectivity within the adult VTA\n\nPrevious research has shown that Ntn1 regulates excitatory synaptic connectivity in the adult hippocampus (Glasgow et al., 2018). To determine the impact of Ntn1 loss of function on synaptic connectivity, DAT-Cre or Vgat-Cre (Slc32a1Cre/+) mice were injected with AAV1-FLEX-SaCas9-U6-sgNtn1 and AAV1-FLEX\u2013YFP (Figure 3A and E). After at least four weeks, miniature excitatory postsynaptic currents (mEPSCs) were recorded from fluorescently identified dopamine or GABA neurons of the VTA. Ntn1 mutagenesis in dopamine neurons resulted in significantly reduced mEPSC amplitude and frequency (Figure 3B\u2013D). Similarly, Ntn1 mutagenesis in VTA GABA neurons also resulted in significantly reduced mEPSC amplitude and frequency (Figure 3F\u2013H). We did not detect significant effects on miniature inhibitory postsynaptic currents (mIPSCs) in VTA dopamine or GABA neurons following Ntn1 mutagenesis in these cells (Figure 3\u2014figure supplement 1), suggesting Ntn1 does not play a role in regulating inhibitory connectivity in these cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of DAT-Cre dopamine specific Ntn1cKO. (B) Sample traces from control (top panel) and DAT Ntn1 cKO mice (bottom panel). (C\u2013D) mEPSC amplitude (C) and frequency (D) measured from fluorescently identified dopamine neurons (n=35 controls, n=33 cKO, t=3.744, df = 66, ***p<0.001 and t=5.259, df = 66, ****p<0.0001). (E) Schematic of Vgat-Cre GABA specific Ntn1cKO. (F) Sample traces from control (top panel) and Vgat Ntn1 cKO mice (bottom panel). (G\u2013H) mEPSC amplitude (G) and frequency (H) measured from fluorescently identified GABA neurons (n=30 controls, n=32 cKO, t=2.048, df = 60, *p<0.05, and t=3.966, df = 60, ***p<0.001). (I) Schematic of stimulating electrode placement in horizontal midbrain slice and example EPSCs. (J\u2013K) Paired pulse ratio in dopamine (J, n=18 controls, n=21 cKO, t=1.271, df = 37, p>0.05), or GABA neurons (K, n=14 controls, n=21 cKO, t=1.105, df = 33, p>0.05).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) mIPSC amplitude and frequency of DAT-Cre fluorescently identified dopamine neurons (n=20 controls, n=27 cKO, t=0.8283, df = 45 p>0.05 and t=0.6668, df = 45 p>0.05). (B) mIPSC amplitude and frequency of Vgat-Cre fluorescently identified GABA neurons (n=20 controls, n=10 cKO, t=0.3183, df = 28 and t=1.106, df = 29 p>0.05).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Miniature excitatory postsynaptic current (mEPSC) amplitude and frequency recorded from non-fluorescent cells in DAT-Cre mice (presumptively non-dopamine neurons) (n=16 controls, n=11 cKO, t=0.2985, df = 25, and t=1.678, df = 25 p>0.05). (B) Miniature inhibitory postsynaptic current (mIPSC) amplitude and frequency recorded from non-fluorescent cells in DAT-Cre mice (n=10 controls, n=15 cKO, t=1.134, df = 23 and t=1.546, df = 23 p>0.05). (C) mEPSC amplitude and frequency recorded from non-fluorescent cells in Vgat-Cre mice (presumptively non-GABA neurons) (n=18 controls, n=20 cKO, t=0.2333, df = 33 and t=1.028, df = 33 p>0.05). (D) mIPSC amplitude and frequency recorded non-fluorescent cells in Vgat-Cre mice (n=27 controls, n=21 cKO, t=0.4650, df = 46 and t=0.8771, df = 46 p>0.05).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Analysis of 1/CV2 from miniature excitatory postsynaptic current (mEPSC) data in (A) DAT-Cre mice measured from fluorescently identified dopamine neurons (n=35 controls, n=33 cKO, t=1.252, df = 66. p>0.05) and (B) Vgat-Cre mice measured from fluorescently identified GABA neurons (n=30 controls, n=32 cKO, t=0.8932, df = 60, p>0.05). (C) Bath application of 1 uM AMPA peak amplitude holding current (n=8 controls, n=17 sgNtn1, t=2.906, df = 23, p=0.008) and (D) voltage-clamped (\u201360 mV) holding current following 30 s bath application of 1 uM AMPA in 10 s averaged increments. (E) 50 uM NMDA evoked peak holding current (t=0.6421, df = 23, p=0.5271) and (F) voltage-clamped (+40 mV) holding current following 30 s bath application of 50 uM NMDA in 10 s averaged increments.\n\nBecause Ntn1 is a secreted protein, it is also possible that Ntn1 loss of function in one cell type could affect synaptic connectivity in adjacent neurons in which the gene was not inactivated, inducing a non-cell autonomous effect. To address this, we recorded mEPSCs from non-YFP-expressing (presumptively non-dopamine) neurons in DAT-Cre mice injected with Ntn1 CRISPR or control virus, and from non-YFP-expressing (presumptively non-GABA) neurons in Vgat-Cre injected mice. We did not observe significant non-cell autonomous effects on mEPSCs from non-targeted cells (Figure 3\u2014figure supplement 2). Similarly, we also did not observe non-cell autonomous effects on mIPSCs from non-targeted cells (Figure 3\u2014figure supplement 2).\n\nThe observed reduction in mEPSC frequency suggests that loss of Ntn1 function could act presynaptically, potentially through postsynaptic Ntn1 secretion (Glasgow et al., 2018). To test potential presynaptic changes in vesicle release probability, we analyzed the paired-pulse ratio (PPR) of electrically evoked EPSCs delivered 50 ms apart. Ntn1 mutagenesis in either dopamine or GABA neurons did not result in a significant change in PPR compared to controls, suggesting no measurable change in presynaptic release (Figure 3J\u2013K). To further resolve this question, we analyzed potential changes in quantal size by performing a 1/CV2 analysis of the coefficient of variation in the mEPSC amplitude. We did not detect a statistically significant change in 1/CV2 associated with Ntn1 loss in either dopamine or GABA cells, further suggesting netrin manipulation is altering either the number of or the function of postsynaptic AMPA receptors (Figure 3\u2014figure supplement 3A, B).\n\nOur data suggest that the observed changes in mEPSCs are likely a reflection of reduced AMPA-type or NMDA-type glutamate receptor levels in postsynaptic cells. To address this, fluorescently identified dopamine neurons from DAT-Cre Ntn1 cKO mice held at \u201360 mV, and AMPA-evoked current was measured following bath application of 1 uM AMPA. For NMDA currents, neurons were held at +40 mV and NMDA-evoked current was measured following bath application of 50 \u03bcM NMDA. Ntn1 mutagenesis in DAT-Cre mice resulted in significantly reduced AMPA-evoked current compared to controls (Figure 3\u2014figure supplement 3C, D). In contrast, NMDA-evoked responses were similar between the groups (Figure 3\u2014figure supplement 3E, F). These results suggest that Ntn1 regulates AMPA receptor availability in adult VTA.\n\n### Ntn1 loss of function in VTA-dopamine neurons has little effect on behavior\n\nDopamine producing neurons of the VTA regulate multiple aspects of locomotor activity, motivated behavior, and psychomotor activation. To determine whether conditional mutagenesis of Ntn1 in dopamine neurons, and subsequent reduction in excitatory synaptic connectivity impacts these behaviors, we injected DAT-Cre mice with AAV1-FLEX-SaCas9-sgNtn1 or AAV1-FLEX-SaCas9-sgRosa26 (control) and assayed them in multiple behavioral paradigms. First, we monitored day-night locomotion in control and AAV1-FLEX-SaCas9-sgNtn1 injected DAT-Cre mice. No significant differences were detected (Figure 4B and Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic summarizing cell type-specific knockout procedure. (B) Distance traveled in 15 min bins over the course of three nights and two days (n=21 control; n=15 cKO, Two-way ANOVA, Group F(1, 34)=1.169, p=0.2872, Time F(18.25, 620.6)=21.97 p<0.0001, Interaction F(251, 8534)=1.063 p=0.2380). (C) Earned reinforcers during three days of FR1 or FR5 operant conditioning (n=19 control; n=15, FR1; Group F(1, 96)=0.9761 p=0.3257, Time F(2, 96)=9.999 p=0.0001, Interaction F(2, 96)=0.006622 p=0.9934; FR5 Group F(1, 32)=0.6140, p=0.9808, Time F (2, 96)=2.786 p=0.0667, Interaction F(2, 96)=0.008669 p=0.9914). (D) Breakpoint (maximum presses per reinforcer) on a progressive ratio task (t=0.9434, df = 32, p=0.3525). (E) Lever presses per session during five days of extinction training (Group F(1, 32)=1.336, p=0.2562, Time F(4, 128)=87.55 p<0.0001, Interaction F(4, 128)=2.017 p=0.0959). (F) Acoustic startle response to varying intensity white noise stimuli (Group F(1, 31)=3.176 p=0.0845, Intensity F(1.737, 53.83)=37.74 p<0.0001, Interaction F(6, 186)=2.124 p=0.0525) (G) Percent inhibition of startle response following pre-pulse at indicated intensities (Group F(1, 96)=0.05032 p=0.8230, Intensity F(2, 96)=5.638 p=0.0048, Interaction F(2, 96)=0.2402 p=0.7870). (H) Time on edge or in center of an open field arena during a 10 min test session (Edge: t=2.897, df = 32, **p<0.01, Center: t=2.750, df = 32, **p<0.01).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Average ambulatory activity (beam breaks) averaged across three nights and two days (n=21 control; n=18 cKO, Night: t=0.3938, df = 37, p=0.6960, Day: t=1.271, df = 37, p=0.2117). (B) Distance traveled during the open field task (t=0.2275, df = 32, p>0.05). (C) Initial mouse weight prior to instrumental conditioning (n=22 control, n=22 cKO, t=2.053, df = 42, *p<0.05) (D) FR1 reinstatement (t=0.1192, df = 32 p=0.9058).\n\nTo determine whether appetitive conditioning behaviors are disrupted by the loss of Ntn1 function in VTA dopamine neurons, we assayed mice in a simple instrumental conditioning paradigm using a fixed-ratio 1 (FR1) followed by a fixed ratio 5 (FR5) schedule of reinforcement in which one or five lever presses are required to obtain a food reward, respectively. We did not observe significant differences in either of these behavioral tasks (Figure 4C). Next, we monitored motivated behavior using a progressive ratio schedule of reinforcement in which the number of lever presses required for reinforcement increases non-arithmetically (1, 2, 4, 7, 13, 19, 25, 34, 43, 52, 61, 73\u2026), and again did not observe significant differences between control and experimental mice (Figure 4D). Following PR, we reinstated FR1 responding for three days followed by extinction training, and again did not detect any differences between the two groups (Figure 4E and Figure 4\u2014figure supplement 1), indicating Ntn1 loss of function in VTA dopamine neurons did not alter appetitive conditioning behaviors. Although appetitive conditioning was not affected by Ntn1 loss of function in dopamine neurons, we did observe a slight but significant reduction in body weight in these mice relative to controls prior to calorie restriction (Figure 4\u2014figure supplement 1).\n\nTo determine whether sensory-motor gating is altered in mice with loss of Ntn1 function in VTA dopamine neurons, we assayed them in acoustic startle and pre-pulse inhibition (PPI) paradigms. Although acoustic startle responses were reduced in AAV1-FLEX-SaCas9-sgNtn1 injected mice, this did not reach significance (Figure 4F). Moreover, we did not observe differences in PPI percentage inhibition (Figure 4G). These results indicate that loss of Ntn1 function in VTA dopamine neurons does not appear to affect psychomotor activation.\n\nIn addition to reinforcement and motivation, dopamine regulates other dimensions of affective behavior. To test whether anxiety-related behavior is affected in experimental mice relative to control mice, we assayed them in an open-field test. AAV1-FLEX-SaCas9-sgNtn1 injected DAT-Cre mice spent significantly more time on the edge of the open field arena and significantly less time in the center of the arena, consistent with an elevation in anxiety-like behavior (Figure 4H). There were no significant locomotor differences associated with the loss of Ntn1 function in the open field arena (Figure 4\u2014figure supplement 1).\n\n### Ntn1 loss of function in VTA-GABA neurons affects multiple behaviors\n\nTo determine whether reducing excitatory synaptic connectivity onto VTA GABA neurons through the loss of Ntn1 function in these cells impacts behavior, we injected Vgat-Cre mice with AAV1-FLEX-SaCas9-sgNtn1 or AAV1-FLEX-SaCas9-sgRosa26 (control) into the VTA as described previously and tested these mice using the same behavioral paradigms described above. In contrast to Ntn1 mutagenesis in dopamine neurons, this manipulation in VTA GABA neurons resulted in a significant increase in locomotor activity (Figure 5B and Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic summarizing cell type-specific knockout procedure. (B) Distance traveled in 15 min bins over the course of three nights and two days (n=26 controls, n=23 cKO, Two-way ANOVA Group F(1, 11797)=527.4, ****p<0.0001, Time F(250, 11797)=14.61 p<0.0001. Interaction F(250, 11797)=1.342, p=0.0003). (C) Earned reinforcers during three days of FR1 or FR5 operant conditioning (n=18 control; n=15 cKO; FR1: Group F(1, 31)=0.08647 p=0.7707, Time F(2, 62)=30.46 p<0.0001, Interaction F(2, 62)=3.186 p=0.0482; FR5: Group F(1, 31)=4.261, *p<0.05, Time F (1.992, 61.74)=0.3131 p=0.7314, Interaction F(2, 62)=1.448 p=0.2428). (D) Breakpoint (maximum presses per reinforcer) on a progressive ratio task (t=2.577, df = 31, *p<0.05). (E) Lever presses per session during five days of extinction training (Group F(1, 31)=10.23, **p<0.01, Time F(1.491, 46.23)=83.84 p<0.0001, Interaction F(4, 124)=3.546 p=0.0089). (F) Acoustic startle response to varying intensity white noise stimuli (Group F(1, 31)=7.891, **p<0.0085, Intensity F(1.790, 55.49)=24.94 p<0.0001, Interaction F(6, 186)=2.186, p=0.0462). (G) Percent inhibition of startle response following pre-pulse at indicated intensities (Group F(1, 93)=9.181, **p<0.01, Intensity F(2, 93)=5.101 p=0.0079, Interaction F(2, 93)=0.002227 p=0.9978). (H) Time on edge or in center of open field arena during a 10 min test session (edge: t=2.248, df = 31, *p<0.05, center t=1.366, df = 33, p>0.05).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Average ambulatory activity (beam breaks) averaged across three nights and two days (n=26 control; n=26 cKO, t=3.109, df = 50 **p=0.01 and t=3.227, df = 50 **p=0.01). (B) Distance traveled during open field test (t=2.064, df = 33, p<0.05*) (C) Initial mouse weight prior to instrumental conditioning (n=24 control, n=17 cKO, t=0.5342, df = 39 p>0,05). (D) FR1 reinstatement (t=0.4193, df = 31, p=0.6779). (E) Extinction Day 1 lever presses per 10 min time bins (Two-way ANOVA Group F(1, 31)=8.715 **p<0.01, Time F (1.961, 60.79)=35.65 p<0.0001, Interaction F(5, 155)=0.7968 p=0.5535). (F) Extinction Day 2 lever presses per 10 min time bins (Group F(1, 31)=6.932, *p<0.05, Time F(3.894, 120.7)=11.61 p<0.0001, Interaction F(5, 155)=0.9574 p=0.4459).\n\nIn the FR1 schedule of reinforcement, we did not observe a significant difference between the groups; however, we observed an increase in the number of earned reinforcements in the FR5 schedule in mice with Ntn1 loss of function in VTA GABA neurons (Figure 5C). We also observed an increase in the PR schedule of reinforcement in these mice relative to controls (Figure 5D). In contrast to DAT-Cre Ntn1 cKO mice, pre-calorie restriction body weights in Vgat-Cre Ntn1 cKO mice did not differ from controls (Figure 5\u2014figure supplement 1).\n\nReinstatement of FR1 responding in Vgat-Cre Ntn1 cKO following PR was not different than controls (Figure 5\u2014figure supplement 1). However, during extinction training, Vgat-Cre Ntn1 cKO mice displayed high extinction bursts (elevated pressing following reward omission) compared to controls that remained elevated on the second day of extinction training (Figure 5E). While these data likely reflect an altered motivational state with loss of Ntn1, it is also possible that the hyperactivity observed in Vgat-Cre Ntn1 cKO mice contributes to the elevated lever press rates during FR5, PR, and extinction.\n\nAnalysis of sensory-motor gating in these mice revealed that Vgat-Cre mice injected with AAV1-FLEX-SaCas9-sgNtn1 had a significant reduction in the acoustic startle relative to control mice (Figure 5F) that was accompanied by a reduction in PPI (Figure 5G). Similar to mutagenesis of Ntn1 in dopamine neurons, this manipulation in GABA neurons resulted in an increase in anxiety-like behavior as demonstrated by an increased time on edge; though we only observed a trend towards a reduction in time spent in the center of the open field arena (Figure 5H). The lack of observed significance in the time in center in the context of increased edge time may reflect the hyperactivity observed following Ntn1 mutagenesis in VTA GABA neurons, consistent with this possibility, we did observe increased distance traveled during the open field test in these mice relative to controls (Figure 5\u2014figure supplement 1).\n\n### Loss of netrin-1 in dopamine neurons largely reverses the effects of Ntn1 mutagenesis in GABA neurons\n\nA loss of Ntn1 in VTA-dopamine neurons resulted in decreased excitatory synaptic input to those cells (theoretically reducing dopamine activity) (Figure 6A), and loss of Ntn1 in VTA-GABA neurons resulted in decreased excitatory tone onto GABA neurons, which would be predicted to increase dopamine activity through disinhibition (Tan et al., 2012; Figure 6A). Based on these observations, we asked whether a loss of Ntn1 in both cell types would restore the balance of activity in the midbrain, or whether there is a hierarchical effect of Ntn1 loss of function in GABA neurons. To address this, we crossed DAT-Cre with Vgat-Cre mice to develop a DAT-Cre::Vgat-Cre transgenic line, injected these mice with AAV1-FLEX-SaCas9-sgNtn1 or AAV1-FLEX-SaCas9-sgRosa26 (control) (Figure 6B), and assayed them using the previous behavioral battery.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig6-v1.jpg)\n\n**Figure 6.:** (A) Model of Ntn1 loss of function in the ventral tegmental area (VTA) on excitatory and inhibitory balance. (B) Schematic of GABA and Dopamine Ntn1 cKO. (C) Distance traveled in 15 min bins over the course of three nights and two days (Two-Way ANOVA Group F(1, 45)=0.004273, p>0.05, Time F(17.16, 772.1)=23.36, p<0.0001, Interaction F (247, 11115)=1.492, p<0.0001). (D) Earned reinforcers during three days of FR1 or FR5 operant conditioning (n=21 controls, n=20 Ntn1 cKO, FR1: Group F(1, 40)=0.04247 p=0.8378, Time F(2, 80)=25.70 p<0.0001, Interaction F(2, 80)=1.402 p=0.2522; FR5: Group F(1, 40)=0.2244 p=0.6383, Time F(1.499, 59.95)=2.226 Pp0.1295, Interaction F(2, 80)=0.1385 p=0.8708) (E) Breakpoint (maximum presses per reinforcer) on a progressive ratio task (t=2.502, df = 39, *p<0.05) (F) Lever presses per session during five days of extinction training (Group F(1, 39)=6.990, *p=0.0117, Time F(2.381, 92.87)=42.95 p<0.0001, Interaction F(4, 156)=0.1470 p=0.9641). (G) Acoustic startle response to varying intensity white noise stimuli (Group F(1, 40)=0.1207 p=0.7301, Intensity F(1.775, 70.99)=36.77 p<0.0001, Interaction F(6, 240)=0.6127 p=0.7201). (G) Percent inhibition of startle response following pre-pulse at indicated intensities (Group F(1, 120)=0.9661 p=0.3276, Intensity F(2, 120)=7.067 p=0.0013, Interaction F(2, 120)=0.8861 p=0.4150). (H) Time on edge or in center of open field arena during a 10 min test session (edge: t=0.3584, df = 45 p>0,05, center: t=0.4233, df = 45, p>0.05).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83760/elife-83760-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Ambulatory activity (beam breaks) averaged across three nights and two days (n=26 controls n=21 cKO, Night: t=1.010, df = 45, p=0.3178 and Day: t=2.091, df = 45 *p<0.05). (B) Distance traveled during open field test (t=1.414, df = 45, p>0.05). (C) Initial mouse weight prior to instrumental conditioning (n=10 control, n=13 cKO, t=0.08465, df = 21 p>0.05). (D) FR1 reinstatement (t=1.127, df = 39 p>0.05) (E) Extinction Day 4 lever presses per 10 min time bins (Two-way ANOVA Group F (1, 39)=5.428 *p<0.0.5, Time F (3.691, 144.0)=4.539 p=0.0023, Interaction F (5, 195)=0.6146 9=0.6888) (F) Extinction Day 5 lever presses per 10 min time bins (Group F (1, 39)=5.232 *p<0.05, Time F F (3.524, 137.4)=3.115 p=0.0218, Interaction F (5, 195)=2.802 p=0.0181).\n\nSimultaneous Ntn1 loss of function in VTA GABA and dopamine neurons largely reversed the hyperlocomotor phenotype (Figure 6C) observed with Ntn1 mutagenesis in VTA GABA neurons alone, though a modest, increase in daytime locomotion remained (Figure 6\u2014figure supplement 1). Similarly, loss of Ntn1 in both VTA GABA and dopamine neurons resulted in operant responding during FR1 and FR5 that was similar to controls (Figure 6D) and pre-calorie restriction body weights did not differ between the groups. Motivation, as measured in the PR task, was elevated in the double transgenic Cre line following Ntn1 mutagenesis (Figure 6E) and extinction was impaired (Figure 6F), though these phenotypes were less robust than those observed in the VTA GABA-only mice. Further analysis of extinction training days four and five revealed significant differences in both the number of lever presses and the rate of lever presses between groups (Figure 6\u2014figure supplement 1). Finally, loss of Ntn1 in both cell types resulted in acoustic startle and PPI responses (Figure 6G\u2013H), and open field activity (Figure 6I) that was similar to control mice.\n\n## Discussion\n\nHere, we show that Ntn1 is present in both dopamine and GABA-producing neurons of the adult VTA, and loss of Ntn1 function via genetic inactivation in either cell type results in a significant disruption of excitatory synaptic connectivity. The exact mechanisms by which Ntn1 regulates glutamatergic connectivity remain to be resolved. Likely mechanisms include Ntn1 regulation of the actin cytoskeleton and receptor transport vesicles through its activation of the cognate receptor DCC (Yetnikoff et al., 2010; Rajasekharan and Kennedy, 2009). The latter is consistent with our observed decrease in the amplitude of mEPSCs and reduced AMPA-evoked currents and with previous reports of Ntn1 regulating the delivery of GluA1-containing AMPA receptors to the postsynaptic density (Jasmin et al., 2021). Our finding that mEPSC frequency, but not paired-pulse ratio, was affected by Ntn1 loss further suggests netrin\u2019s role in modulating excitatory synaptic connectivity is likely confined to postsynaptic mechanisms.\n\nLoss of Ntn1 in dopamine neurons had little effect on behavior; however, we did observe an increase in anxiety-like behavior as measured by the open field assay consistent with the proposed role of dopamine in the modulation of anxiety-related behavior (Zarrindast and Khakpai, 2015). The general lack of effect of reduced glutamatergic synaptic connectivity on appetitive behavior, locomotion, and sensory-motor gating is consistent with previous observations that reduced glutamatergic signaling in dopamine neurons largely does not affect these behaviors (Zweifel et al., 2009; Hutchison et al., 2018). However, this does not discount the importance of glutamatergic inputs to the VTA (see additional discussion below). In contrast, loss of Ntn1 in VTA GABA neurons had a significant effect on multiple behaviors including locomotion, motivation, and acoustic pre-pulse inhibition, all of which are consistent with a hyperdopaminergic phenotype and with previous reports that disrupting GABA neuron function in the VTA induces similar phenotypes (Gore et al., 2017; Soden et al., 2020).\n\nGiven the robust nature of the behavioral effects observed following Ntn1 mutagenesis in VTA GABA neurons, we were initially surprised that simultaneous loss of Ntn1 in both GABA and dopamine neurons largely rescued the observed hyperdopaminergic phenotype. These results suggest that a balance of glutamatergic signaling in these two cell types is essential for the normal functioning of the mesolimbic dopamine system (Figure 6A). This finding is similar to what has been reported previously in the striatum.(Beutler et al., 2011) , demonstrated that loss of NMDA receptor signaling in dopamine D1 receptor-expressing neurons prevented the development of amphetamine sensitization; however, inactivation of NMDA receptors in D1R and D2R-expressing medium spiny neurons reversed this phenotype (Beutler et al., 2011). We have previously shown that blocking all synaptic transmission from GABA neurons in the VTA (Gore et al., 2017), or blocking selectively GABA release from VTA GABA neurons (Hutchison et al., 2018) results in hyperactivity and increased operant responding, though to a much greater degree than the effects observed here. We and others have also shown that loss of glutamate signaling in dopamine neurons has only a modest behavioral effect (Zweifel et al., 2009; Hutchison et al., 2018) so it is not surprising that reducing mEPSCs onto VTA dopamine neurons has little effect. The partial rescue of the GABA-Ntn1 knockout experiment suggests that reducing glutamatergic input onto dopamine neurons can abrogate effects associated with reduced inhibitory tone; thus, restoring the excitatory and inhibitory balance. Future research directly measuring the amount of inhibitory and excitatory current from the same cell (for example, by recording mIPSC at the reversal potential for EPSCs and mEPSCs at the reversal potential for mIPSCs) would be helpful in supporting this hypothesis, but was not performed in the current paper.\n\nThere are numerous disinhibitory projections to the VTA (Soden et al., 2020), and it is hypothesized that activation of GABAergic inputs onto VTA GABA neurons during behavior suppresses the activity of these neurons releasing the inhibitory brake onto dopamine neurons. Simultaneously, excitatory inputs onto VTA dopamine neurons, such as those from the pedunculopontine tegmental nucleus (Soden et al., 2020; Lodge and Grace, 2006), or dorsal raphe nucleus (Qi et al., 2014) would drive the glutamate-dependent burst activation of dopamine neurons (Zweifel et al., 2009; Lodge and Grace, 2006). Loss of excitatory drive onto dopamine neurons can likely be compensated for through the many disinhibitory circuits of the VTA. Indeed, inhibitory synaptic connectivity is not altered by the loss of Ntn1, and suppression of inhibition onto dopamine neurons is a potent means to drive the burst activation of these cells (Paladini and Tepper, 1999). The loss of glutamatergic inputs onto VTA GABA neurons is less likely to be bypassed at the circuit level, and we do not observe compensatory changes in excitatory or inhibitory synapses onto dopamine neurons following Ntn1 mutagenesis in VTA GABA neurons or compensatory changes in inhibitory synaptic connectivity onto VTA GABA neurons. The effects of Ntn1 loss of function in VTA GABA neurons can be abrogated if the excitatory drive onto dopamine neurons is also reduced by Ntn1 mutagenesis. Excitatory inputs onto GABA neurons within the VTA proper, as well as the caudal tail of the VTA, or RMTg, arise from multiple locations including the lateral habenula and ventral pallidum (Omelchenko et al., 2009; Brinschwitz et al., 2010; Tooley et al., 2018). Activation of these circuits is aversive, likely through the activation of GABAergic inputs onto dopamine neurons (Tooley et al., 2018; Wulff et al., 2019; Faget et al., 2018; Stamatakis and Stuber, 2012). Thus, reduced glutamatergic inputs onto VTA GABA neurons would suppress the inhibition of dopamine neurons allowing excitatory drive onto these cells to go unchecked, resulting in the phenotypes observed here. When excitatory inputs onto dopamine neurons are also reduced the combined driving forces of disinhibition and excitation of the dopamine neurons are re-equilibrated, restoring balance to the system.\n\nWhile our findings shed light on the role of Ntn1 in adult VTA neurons, the question remains as to which netrin-1 receptors may be involved. Indeed, though Dcc is considered to be its canonical receptor, Ntn1 is a known ligand for several additional receptors, including DSCAM, Neogenin, and Unc5 homologs A-D (Rajasekharan and Kennedy, 2009; Lai Wing Sun et al., 2011). Previous work has identified the presence of both Dcc and Unc5c receptors in the adult VTA (often in the same cells) (Manitt et al., 2010). It is also interesting to note that during the development of the spinal cord, Ntn1 expression in the floor plate attracts commissural axons to the midline, but following the arrival of these axons at the floor plate, Unc5 expression increases to suppress the attractive actions of DCC signaling (Lai Wing Sun et al., 2011). Whether a similar relationship exists for the formation of nascent synapses and the maintenance of excitatory synapses occurs in the VTA will be important to resolve. Of further note, in addition to the role of Ntn1/Dcc/Unc5 signaling in the regulation of commissural axons crossing the midline, Slit/Robo signaling repels axons away from the floor plate (Kidd et al., 1998; Kidd et al., 1999) setting up a push-pull relationship between these pathways. We previously demonstrated that Robo2 maintains inhibitory synaptic connectivity in the adult VTA (Gore et al., 2017), suggesting the existence of another \u2018push/pull\u2019 relationship between these two pathways in which netrin/Dcc/Unc5 regulates excitation and Slit/Robo signaling regulates inhibition.\n\nWe find that Ntn1 is expressed in both Vgat- and Th-expressing neurons which is consistent with single nuclear RNA sequencing data recently obtained in rats from Phillips et al., 2022, though the levels of nuclear Ntn1 mRNA levels in this study were relatively low. This may reflect differences between rat and mouse, or the increased sensitivity of in situ hybridization in detecting cytosolic mRNA compared to nuclear mRNA levels observed with snRNA seq. Interestingly, (Phillips et al., 2022) also observed the expression of Ntn1 in glial cells. Thus, the identity and potential role of the roughly 10% of Ntn1 expressing neurons that do not co-label with markers of dopamine or GABA neurons in the VTA, potentially glutamatergic neurons or glial cells, warrants further investigation.\n\nIn our proposed model, reduced excitatory input onto GABA neurons results in a reduced inhibition of dopamine neurons causing the observed phenotypes, consistent with previous observations that reducing VTA GABA neuron function causes hyperactivity (Gore et al., 2017; Soden et al., 2020). However, it is also likely that GABA neurons projecting outside the VTA (for example, to the NAc Brown et al., 2012) are also affected and could contribute to the observed behavioral phenotypes.\n\nMutations in NTN1 (netrin-1) and DCC in humans have been associated with several dopamine-associated psychiatric conditions, including neurodevelopmental disorders such as schizophrenia (Wang et al., 2018; Tang et al., 2019; Grant et al., 2012) and major depressive disorder (Tang et al., 2019; Zeng et al., 2017; Vosberg et al., 2020; Torres-Berr\u00edo et al., 2020), as well as multiple neurodegenerative disorders (Lesnick et al., 2007; Lesnick et al., 2008; Lin et al., 2009). Our findings that Ntn1 plays a key role in maintaining excitatory connectivity in the adult midbrain and controlling the inhibitory/excitatory balance in this region highlights the importance of understanding these critical developmental signaling pathways in the adult nervous system that are likely important for therapeutic considerations in targeting these pathways.\n\n## Methods\n\n### Mice\n\nAll procedures were approved and conducted in accordance with the guidelines of the University of Washington\u2019s Institutional Animal Care and Use Committee (protocol number: 4249\u201301). Mice were housed on a 12:12 light:dark cycle with ad libitium access to food and water, except when undergoing food restriction for operant behavioral conditioning. Approximately equal numbers of male and female mice were used for each experiment. Post-hoc analysis to test for sex-specific differences was performed for each experiment and no differences were observed so mice from each sex were pooled within experimental and control groups. Mice were group housed (2\u20135 mice per cage, separated based on sex at the time of weaning). Mice injected with CRISPR/YFP were allowed 4\u20135 weeks of recovery after surgery to allow for viral expression, mutagenesis, and protein turnover before any testing. Dat-Cre (Slc6a3Cre/+) mice and Vgat-Cre (Slc32a1Cre/+) mice were obtained from Jackson Laboratories (Strain # 006660 and 028862).\n\n### Viruses\n\nAll adeno-associated viruses (AAV) for CRISPR/SaCas9 mutagenesis were produced in-house, as previously described (Hunker et al., 2020). CRISPR viruses employed for this research: AAV1-FLEX-SaCas9-U6-sgNtn1 (Addgene: #159907) and AAV1-FLEX-SaCas9-U6-sgRosa26 (Addgene: #159914) are available through Addgene or upon request to the corresponding author.\n\n### Surgeries\n\nAll mice used were 8\u201310 weeks of age at the time of surgery. Mice were inducted using isoflurane at 5.0% and held at 2% throughout the procedure. Mice were stereotaxically injected bilaterally into the VTA using the following coordinates in mm, relative to bregma: A/P: \u20133.25; M/L\u00b10.5; D/V: (\u20134.9) \u2013 (\u20134.4), total volume 0.5 \u00b5L into each side. A/P coordinates were adjusted for Bregma/Lambda distances using a correction factor of 4.2 mm.\n\n### In situ hybridization\n\nMale and female mice (n=2 each sex, 8\u201312 weeks old) were used to verify mRNA expression in the VTA using RNAscope. Brains were flash-frozen in 2-methylbutane and representative coronal sections that spanned the VTA were sliced at 20 \u00b5m and slide mounted for hybridization. Sections were prepared for hybridization per the manufacturer\u2019s (Advanced Cell Diagnostics, Inc) instructions using probes for Th (Mm-Th), Ntn1 (Mm-Ntn1-C2), and Slc32a1 (Vgat; Mm-Slc32a1-C3). Slides were coverslipped with Fluoromount with DAPI (Southern Biotech) and imaged using a confocal fluorescent microscope (the University of Washington Keck Center Leica SP8X confocal) and Keyence Fluorescence Microscope (Keyence). Quantification of co-labeled cells was performed using CellProfiler, with thresholding and cell identification/overlap for each channel verified for each image manually prior to quantification.\n\n### Immunohistochemistry\n\nMice were anesthetized with pentobarbital and transcardially perfused with PBS followed by 4% PFA. Brains were post-fixed for 24 hr in PFA at 4\u00b0C, followed by 48 hr in 30% sucrose. The VTA was coronally sectioned at 30 \u00b5m. Sections were kept in PBS with 0.3% Sodium Azide. Free-floating sections were treated with 0.3% TBS-Triton-X 100 3x10 min, blocked in 3% Normal Donkey Serum for 1 hr and treated overnight in primary antibody. Following 1\u20133 hr in secondary antibody (JacksonImmuno), sections were slide mounted and coverslipped with Fluoromount with DAPI. Images were collected on a Keyence Fluorescence Microscope (Keyence). For CRISPR validation, male and female DAT-Cre mice (8\u201312 weeks old) received AAV1-FLEX-SaCas9-U6-sgNtn1/AAV1-FLEX-YFP (Ntn1-cKO) or AAV1-FLEX-SaCas9-U6-sgROSA26/AAV1-FLEX-YFP (controls) injections as described above, and quantification of co-labeled cells for immunohistochemistry were performed using ImageJ 1.53 Cell Counter/Multi-point tool. Total Th-positive cells were recorded for all images and averaged across all slices for each mouse to give a total number of Th-positive cells. Primary antibodies used: mouse anti-TH (1:1500, Millipore), chicken anti-Netrin-1 (1:1000, Abcam), and rabbit anti-HA (1:1500, Sigma).\n\n### Slice electrophysiology\n\nMice injected with CRISPR/YFP were allowed 4\u20135 weeks of recovery after surgery to allow for viral expression, mutagenesis, and protein turnover. All solutions were continuously bubbled with O2/CO2. Horizontal (200 \u00b5m) brain slices were prepared from 12 to 20 week-old mice in a slush NMDG cutting solution (Lin et al., 2009) (in mM: 92 NMDG, 2.5 KCl, 1.25 NaH2PO4, 30 NaHCO3, 20 HEPES, 25 glucose, 2 thiourea, 5 Na-ascorbate, 3 Na-pyruvate, 0.5 CaCl2, 10 MgSO4, pH 7.3\u20137.4). Slices recovered for ~12 min in the same solution warmed in a 32 \u00b0C water bath, then transferred to room temperature HEPES-aCSF solution (in mM: 92 NaCl, 2.5 KCl, 1.25 NaH2PO4, 30 NaHCO3, 20 HEPES, 25 glucose, 2 thiouria, 5 Na-ascorbate, 3 Na-pyruvate, 2 CaCl2, 2 MgSO4). Slices recovered for an additional 30\u201360 min in HEPES solution at room temp. Whole-cell patch-clamp recordings were made using an Axopatch 700B amplifier (Molecular Devices) using 3\u20135 M\u03a9 electrodes. Recordings were made in aCSF (in mM: 126 NaCl, 2.5 KCl, 1.2 NaH2PO4, 1.2 MgCl2, 11 D-glucose, 18 NaHCO3, 2.4 CaCl2) at 32 \u00b0C continually perfused over slices at a rate of ~1 ml/min. VTA dopamine and non-dopamine neurons were identified by fluorescence.\n\n#### mE/IPSC\n\nFor miniature excitatory postsynaptic currents (mEPSCs), the internal solution contained: 130 mM K-gluconate, 10 mM HEPES, 5 mM NaCl, 1 mM EGTA, 5 mM Mg-ATP, 0.5 mM Na-GTP. Picrotoxin (200\u2009\u03bcM) was added to ACSF to block GABAA receptor-mediated events. For miniature inhibitory postsynaptic currents (mIPSCs), the internal solution contained: 135 mM KCl, 12 mM NaCl, 0.05 mM EGTA, 100 mM HEPES, 0.2 mM Mg-ATP, 0.02, and Na-GTP mM. To block glutamatergic events, 2\u2009mM kynurenic acid was bath applied in the ACSF. All mIPSCs and mEPSCs cells were recorded in the presence of 1 mM tetrodotoxin (TTX) to block action potentials. Cells were held at \u221260 mV for a minimum of 5 minprior to data acquisition. Data were analyzed using Clampfit 10.3 (pCLAMP 11 Software Suite, Molecular Instruments).\n\n#### Paired pulse ratio\n\nFor PPR, the internal solution contained: 130 mM K-gluconate, 10 mM HEPES, 5 mM NaCl, 1 mM EGTA, 5 mM Mg-ATP, 0.5 mM Na-GTP. Picrotoxin (200 \u03bcM) was added to ACSF to block GABAA receptor-mediated events. Electrical stimulation was delivered using a concentric bipolar electrode placed rostral to the VTA. Data were analyzed using Clampfit 10.3 (pCLAMP 11 Software Suite, Molecular Instruments).\n\n#### Bath AMPA and NMDA application\n\nFor AMPA currents, neurons were held at \u221260 mV and 50 \u03bcM cyclothiazide was perfused onto the slice for 30 s, followed by 1 \u03bcM AMPA (with cyclothiazide) for 30 s. For NMDA currents, neurons were held at + 40 mV and 50 \u03bcM NMDA was perfused onto the slice for 30 s. Picrotoxin (100 \u03bcM) and tetrodotoxin (500 nM) were included in the bath.\n\n### Behavior\n\n#### Locomotor activity\n\nFour weeks after surgery, baseline locomotion was measured using locomotion chambers (Columbus instruments) that use infrared beam breaks to calculate ambulatory activity. Mice were singly housed in Allentown cages with reduced corncob bedding and provided with ad libitum access to food and water. Locomotion was monitored continuously for three nights two days.\n\n#### Open field testing\n\nMice were placed in a large circular arena (120 cm diameter) and activity was recorded for a period of 10 min using Ethovision software. Zones signifying arena edge and center were generated for each video using Ethovision and kept consistent in size and placement across all trials. Time in center, time on edge, and total distance were calculated. Thigmotaxis, the tendency of mice to remain in close proximity to the walls of an enclosure, has been validated as a measure of anxiogenic behavior (Simon et al., 1994; Seibenhener and Wooten, 2015), with increased time on edge signifying increased anxiety-like behavior.\n\n#### Operant conditioning\n\nPrior to testing, all mice were food restricted to 85% body weight and maintained at this level throughout operant conditioning. Mouse weights are included in Figure 4\u2014figure supplement 1, Figure 5\u2014figure supplement 1, Figure 6\u2014figure supplement 1. Mice were tested on an operant conditioning paradigm in Med Associates boxes in the following order: FR1, FR5, Progressive Ratio, Reinstatement, and Extinction. Each fixed ratio 1 (FR1) session lasted for 60 min. Levers were extended and remained extended until a lever press. Upon a lever press, levers were retracted and a sucrose pellet was immediately delivered into the food hopper. The levers did not extend again until the mouse made a head entry into the food hopper to retrieve the pellet. Reinforced FR1 sessions lasted for three days, followed by three days of FR5 (five lever presses required to obtain sucrose pellet), and a single day of a progressive ratio where the number of lever presses necessary for sucrose pellet delivery increases non-arithmetically (i.e. 1, 2, 4, 6, 9, 13\u2026) over the course of the session. The progressive ratio session ended after three consecutive min of no lever presses or after 3 hr. After progressive ratio, mice again underwent FR1 reinforced training, followed by extinction for 60 min each session for five days. Here, levers extend and retract similarly to the FR1 reinforced paradigm, yet a sucrose pellet reward is omitted.\n\n#### Acoustic startle and prepulse inhibition\n\nAcoustic startle responses were measured using acoustic startle chambers (San Diego Instruments). Prior to testing mice received a 10 min habituation period. Background noise was maintained at 65 dB throughout testing. After habituation, mice were presented with 5, 40 ms duration 120 dB, pulse-alone trials to obtain baseline startle responses, followed by 50 trials of either a startle pulse-alone, 1 of 3 prepulse trials, or a null trial, in which no acoustic stimulus is presented. Startle trials consisted of a 40 ms, 120 dB pulse of white noise. The three prepulse trials consisted of a 20 ms prepulse of 70-, 75-, or 80 dB intensity (5, 10, and 15 dB above background) that preceded 120 dB startle pulse by 100 ms. Peak amplitude of the startle response (65 ms after pulse onset) was used as the measure of startle response magnitude.\n\n### Sex differences\n\nNo sex differences were observed in any of the behavioral or electrophysiological results.\n\n### Statistics\n\nData were analyzed for statistical significance using GraphPad Prism. All statistical tests were two-sided and corrected for multiple comparisons where appropriate. All experiments were repeated at least twice using a double-blind design.\n\n### Materials availability\n\nAll newly created reagents are freely available upon request to the corresponding author.\n",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "d2ab4223-a426-4453-9bb0-28d49fad1c7f",
+      "submission_id": "4d684563-f70a-45cd-b743-014540e0bc2c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kate M Wassum, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83760.sa0](https://doi.org/10.7554/eLife.83760.sa0)\n\nThis manuscript reports an important, previously unappreciated, non-developmental role for the guidance cue netrin-1 in midbrain physiology and related behavior in adult animals. Using multiple experimental tools in adult mice, the study convincingly shows that netrin-1 within midbrain dopamine and GABA neurons is necessary to maintain dopamine excitatory tone and plays a role in motivated and anxiety-like behavior. This paper will be of interest to neuroscientists studying dopamine function and/or motivated behavior and those interested in ways that neurodevelopmental genes can continue to play a role in neuronal function and behavior into adulthood.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kate M Wassum, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83760.sa1](https://doi.org/10.7554/eLife.83760.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Netrin-1 regulates the balance of glutamatergic connectivity in the adult ventral tegmental area\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers opted to remain anonymous.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nWe agreed that the work addresses an interesting question and that the manipulation to knockdown netrin-1 in adult VTA was elegant. However, we noted several concerns. These include unaddressed issues related to the precise role of netrin function in DA neurons leading to challenges in interpreting the behavioral results, the lack of mechanistic insight into the observed effects of glutamate, and contextualization in prior literature examining netrin's effects in the VTA. Addressing the concerns is likely to be well beyond the scope of an eLife revision (which under normal circumstances is limited to 2 months).\n\nReviewer #1 (Recommendations for the authors):\n\nThe study seeks to investigate whether the guidance cue netrin-1 in the VTA is involved in the regulation of glutamatergic synaptic connectivity of dopamine and GABA neurons and influences behaviors known to be mediated by mesolimbic dopamine systems.\n\nThe study involves multiple approaches: viral mediated inactivation of NTn1 in VTA GABA or dopamine neurons, using Cre inducible CRISPR/Cas9; in situ hybridization to confirm colocalization of Ntn1 and tyrosine hydroxylase or Ntn1 and SlC31a1; electrophysiological recordings to evaluate changes in neural excitability of dopamine or GABA neurons, a battery of behavioral tests to evaluate whether loss of Ntn1 in either cell type alters sensorimotor gating function and motivated and anxiety-like behaviors.\n\nMajor strengths of the paper include (i) the novelty of the question addressed and the multidisciplinary approach, (ii) most of the experiments address functional questions, (iii) the careful characterization of functional and behavioral phenotypes for the majority of the experiments, (iv) the generation of a mechanistic model potentially explaining how netrin-1 in the adult VTA, by regulating the excitatory tone of dopamine and GABA neurons, regulates overall dopamine excitability and behavior.\n\nWeaknesses of the study are mainly related to the interpretation of their results and the conclusions made: (i) Regarding the results from the in situ hybridization experiment, the authors do not compare their findings with results from a recent single-cell RNA seq study (PMID: 35385745). There is a discrepancy between the findings, particularly in the proportion of GABA neurons expressing NTn1 (as well as in the expression of NTn1 in other cell types, such as astrocytes). The authors do not mention this issue in their results or discussion. (ii) The authors conclude that their findings demonstrate that netrin-1 regulates the balance of glutamatergic connectivity in the VTA (title, last paragraph introduction, results, and conclusion). Indeed they find that downregulation of Ntn1 in VTA dopamine or GABA cells reduces the frequency and amplitude of their miniature excitatory postsynaptic currents (mEPSCs), without altering miniature inhibitory postsynaptic currents (mIPSCs) or leading to statistically reliable changes in frequency or amplitude in other (non-specified) cell types. They also show that reduced mEPSCs is not mediated by changes in presynaptic release, as revealed by paired-pulse ratio measures. However, these findings are not directly linking electrophysiological changes to alterations in glutamatergic synaptic connectivity (iii) Whether NTn1 deletion leads to dopamine or GABA neuronal loss remains unknown. This is important considering previous studies linking (or not) changes in the netrin-1 system in VTA neurons and cell loss. (iv) The study shows that downregulation of Ntn1 in dopamine neurons has no significant effect on reward but influences anxiety-like behaviors. In contrast, downregulation of Ntn1 in GABA neurons produces changes in most of the behaviors tested. It is not clear, however, whether increased locomotor activity in mice with Ntn1 deletion in GABA neurons could influence changes in lever pressing in the operant behaviors. (v) Regarding the changes in extinction training in the mice with reduced Ntn1 in GABA neurons, it seems that they are lever pressing at a higher rate from the beginning but they extinguish their behavior at a similar rate (similar for the animals with reduced Ntn1 in GABA and in dopamine neurons). (vi) the model and hypothesis put forward and tested in the experiments shown in Figure 6 are very interesting. However, the results obtained do not justify the conclusion that Loss of Ntn1 function in both cell types simultaneously largely rescues the consequences induced by GABA- only Ntn1 deletion.\n\nTo be able to link the electrophysiological changes to glutamatergic synaptic connectivity, other experiments are required, including assessing structural changes (e.g. PMID: 24174661) in dopamine and GABA neurons as well as the proportion of AMPA/NMDA receptors and AMPA/NMDA ratios. In this regard, there is a previous study relating the netrin-1 guidance cue system in adult VTA synaptic plasticity (PMID: 20345916).\n\nWhether NTn1 deletion leads to dopamine or GABA neuronal loss could be addressed using stereology.\n\nTo be able to conclude that the loss of Ntn1 function in both cell types simultaneously largely rescues the consequences induced by GABA- only Ntn1 deletion, the electrophysiological properties of dopamine (and also GABA) neurons could be assessed. This experiment will also test more directly the model the authors are proposing.\n\nIn the discussion, evidence showing the role of glutamatergic inputs of VTA dopamine neurons on behavior needs to be revised more carefully (e.g. PMID 25388237, PMID 26631475, and PMID 30699344).\n\nReviewer #2 (Recommendations for the authors):\n\nThis manuscript by Cline et al. sought to define the role of the axonal guidance cue netrin-1 in synaptic signaling in the ventral tegmental area (VTA). The authors used CRISPR-Cas9 mutagenesis to reduce netrin-1 expression/function in the two predominant neuronal types in the VTA, dopaminergic and GABAergic neurons. This work builds on previous work from this group showing a role for the axon guidance receptor ROBO2 in inhibitory connectivity in adult VTA. Netrin-1 is examined here because of its persistent expression in the VTA into adulthood, despite its established role as a developmental protein. A strong combination of techniques is used, including selective knockdown of the netrin-1 gene in multiple neuron types in the VTA, patch clamp electrophysiology, and several behavioral assays. The results clearly indicate that knockdown of netrin-1 specifically in either GABA or dopamine neurons reduces miniature glutamatergic synaptic currents specifically in that cell type. Interestingly, inhibitory input was not significantly affected. This is consistent with previous reports of effects on excitatory synapses in the hippocampus. Robust behavioral consequences were only reported in the GABA neuron knockdown and were not evident when netrin-1 was knocked down in both cell types. The authors conclude that netrin-1 is important for maintaining the balance of excitatory input onto the two main neuronal subtypes in the VTA. This conclusion is largely supported by the results from the experiments, which were performed rigorously. The manuscript itself was easy to follow and well written, save for some minor omissions.\n\nOperant responding for food was used as one of the dependent measures in Figures 4 and 5, with differences observed in the GABA neuron knockdown, however, one omission of the study was that body weights of the mice before and especially after treatment were not reported. It may be that viral knockdown of netrin-1 in one cell type has effects for instance on satiety, producing effects on behavior along with energy balance. The addition of body weight data would help round out the data set and, if different, might help with interpretation. Details were also not provided for the food restriction procedure that was used during operant conditioning for food pellet responding, which could have further interacted with the netrin-1 manipulation in the mouse lines to affect physiology, behavior, or both.\n\nAs discussed above, most of this study is strong, with interpretations supported by largely convincing results. However, the manuscript could be improved with additions and clarifications.\n\nWhile both cell types showed increased mEPSC frequency and amplitude after netrin-1 knockdown, only the GABA neuron knockdowns showed robust behavioral effects, including increased locomotion (day and night), and increased operant responding for food, and decreased acoustic startle and pre-pulse inhibition. As some of the behavioral tasks involve responding for food pellets, interpretation of the results would benefit from reporting the weights of the mice before and after treatment. Additionally, details about the food restriction procedure that was used for operant conditioning should be provided. Several reports have identified the effects of the feeding state on dopamine neuron excitability and synaptic input to the area. Was the food restriction controlled to a percent loss of body weight, applied acutely or chronically, done throughout the operant study or just during FR1, etc.? Did the mice always eat the pellets when performing the operant task? It's interesting that responding in all of the dopamine mice stayed at the same values when they switched from FR1 to FR5, but in the GABA mice, the control animals fell while the netrin-1 knockdowns stayed the same. Full disclosure of these details would help the reader interpret small observations in the data and later assist in reproducing the results, should they wish to do so.\n\nThe evidence for the anxiety behavioral phenotype in the dopamine neuron-specific netrin-1 knockdown is pretty thin, as a time-in-center measure in an open field could be affected by other factors, and other supporting data for instance from elevated mazes were not used. Admittedly, anxiety can be difficult to show in mice. However, Reference 20 which was used to support the \"proposed role of dopamine in the modulation of anxiety-related behavior\" was a dead-end non-citation. If the authors wish to keep this part of their interpretation they should bolster the explanation of the link between dopamine and anxiety with further evidence (experimental or literature). Also, details about the meaning of \"time in center\" and \"time on edge\" should be provided in the Methods.\n\nThe extinction result in the GABA mice is presented as \"a significant delay in the rate of extinction following reinstatement of FR1.\" This is hard to interpret because responding immediately before extinction is not given and the data are presented only as raw numbers instead of percent of baseline. If the netrin-1 knockdowns were responding more at FR1 when they were returned to that condition, the shape of the curve would actually indicate no difference in extinction. The same could be true in Figure 6 with the double cell knockdowns. Depending on what the data look like, these graphs may be more accurately presented as normalized numbers. This is a minor issue in the scheme of this paper but it should nonetheless be clarified.\n\nThe schematics in Figure 6A show that the effects on the GABA neurons proceed through the dopamine neurons. While this is entirely plausible, the authors never actually show this experimentally, for instance by locally manipulating GABA input in virus-injected mice. It may be at least as likely that the important interactions occur in the nucleus accumbens, or some other area to which both cell types project. As a minimum, the authors should point out this caveat in the Discussion, or point out any other possibility that could also explain the somewhat surprising data in Figure 6.\n\nThere's some confusion about the Ntn1 co-localization in Figure 1. The language in the caption and Figure 1 itself seem clear. However, the text on page 3 seems to contradict the language in the figure caption. The way it is worded, instead of 64, 30, and 6% shouldn't these numbers be 72, 18, and 10%? Please clarify with the correct information, or point out where the confusion lies.\n\nIn the abstract, \"simultaneously\" is placed confusingly in the sentence about rescuing the GABA phenotype. This would be more clear if the sentence started \"Simultaneous loss\u2026 in both cell types.\"\n\nFigure 1D has two (identical) scale bars.\n\nReviewer #3 (Recommendations for the authors):\n\nIn this study, they used genetic strategies to decrease Netrin-1 expression in either dopamine or GABA neurons of the VTA. Reduction of Netrin-1 expression in VTA dopamine neurons decreased excitatory, but not inhibitory postsynaptic currents onto TH+ or GABA VTA neurons. While the loss of netrin-1 in dopamine neurons did not significantly influence behaviour, loss of netrin-1 in GABAergic neurons increased locomotor activity, effort for rewards, extinction delay, and decreased prepulse inhibition. Finally, effects on locomotor activity, reward seeking, and prepulse inhibition observed in GABA-netrin mice were not present when there was the loss of netrin-1 in both dopamine and GABA neurons, suggesting that loss of netrin-1 in both could restore the behavioural effects of loss of netrin-1 in GABA neurons.\n\nMajor strengths:\n\nThis is a nicely written, clearly illustrated study describing the loss of netrin-1 in VTA dopamine neurons and GABA neurons. The authors use an elegant genetic methodology to knock down netrin-1 in select populations of neurons within the VTA. They use a battery of behavioural assays to examine the effects of this knockdown.\n\nMajor weaknesses:\n\nWhile this study provides a potential physiological mechanism underlying the changed behavioural effects, it doesn't connect these changes to the behaviour or identify the mechanism by which adult netrin-1 influences these changes in synaptic transmission. While netrin-1 is involved in synapse formation during development, it is not clear how netrin-1 is influencing synapses in adulthood. For example, is it necessary for the stabilization of synapses?\n\nAuthor suggestions:\n\nThe authors propose that loss of netrin-1 in dopamine neurons leads to enhanced excitation and decreased inhibition, whereas loss in GABA neurons would lead to enhanced inhibition and decreased excitation, and the E:I ratio would be balanced when netrin is lost from both cell population. However, they do not test this assertion by measuring excitatory:inhibitory ratio in each model. This would support their hypotheses in figure 6.\n\nSome of the discussion focuses on the role of netrin-1 in development. However, the manipulations done in this paper were to remove netrin-1 in adulthood after axon migration and synapse formation occur. They do not discuss what the 'adult function' of netrin-1 is. While it seems to play a role in excitatory synaptic transmission, given its effects on mEPSCs, the authors did not provide sufficient information to conclude if this was a reduction in the number of synapses, a silencing of synapses, or a decrease in release probability with compensatory postsynaptic changes. Experiments addressing how adult netrin-1 signaling in the VTA specifically influences synaptic transmission onto dopamine or GABA neurons of the VTA may highlight how netrin-1 might be contributing to associated behavioral changes.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Netrin-1 regulates the balance of glutamatergic connectivity in the adult ventral tegmental area\" for further consideration by eLife. Your revised article has been evaluated by Kate Wassum (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nEssential revisions:\n\nWe have a few remaining concerns that can be addressed with an additional analysis of existing data (see R3 point #1) and edits to the text to add clarity, change language, temper conclusions, discuss alternatives, etc.\n\nPlease provide a point x point response to each reviewer point along with your revision.\n\nReviewer #1 (Recommendations for the authors):\n\nThis resubmitted manuscript is substantially improved from the previous version. Additions and clarification to methods and interpretations have largely addressed my previous concerns, which were minor. Additional discussion has bolstered the notion that netrin-1 is impotant for maintaining the balance of excitatory and inhibitory inputs to dopamine neurons. The addition of maze data would have bolstered conclusions about the anxiety phenotype, but \"time on edge\" and locomotor data was added and this was always a minor point that did not detract substantially from the rest of the manuscript.\n\nOne item does need to be clarified. The experiment represented in Figure 3 Supplement 3 was performed to address a concern of Reviewer 1, however the text describing this is very confusing. The Results describe these data as evoked EPSCs following bath perfusion of AMPA or NMDA. The data themselves seem to be showing changes in holding current in a voltage clamp experiment, although the axis labels and the lack of sample traces leave this in doubt. If it is holding current, more details should to be provided in the figure (including better axis labels and a description of how long the drug went on and the holding voltage, both of which are currently only in the Methods). If instead it is evoked EPSCs in the presence of bath perfused agonists, then other details also need to be provided to make this result make sense (such as sample traces and an explanation of what they were after).\n\nThe addition of body weight data and food restriction information is appreciated. However in the Response to Reviewers the level of restriction was listed as 85% of initial body weight, whereas in the manuscript this is given as 80%. Please make sure the correct number appears in the manuscript.\n\nReviewer #2 (Recommendations for the authors):\n\nThe revised version improved the interpretation of the results, and I am pleased that the authors replied to most of my comments on the previous version. They added needed citations, clarification on their manipulation, and additional experiments to understand the changes in synaptic connectivity better and clarify the electrophysiological changes that occur with Ntn1 mutagenesis, as well as their proposed model.\n\nThe following issues remain unresolved:\n\n\u2013 Since the study does not assess alterations in neuronal structure and connectivity, we suggest the word \"connectivity\" to be dropped or modified.\n\n\u2013 It appears that stereology was not performed to calculate the number of neurons expressing netrin-1 in TH+ or GABA+ cells in the mice with conditional netrin-1 KO. The statement \"Total Th-positive cells were recorded for all images and averaged across all slices for each mouse to give a total number of Th-positive cells\" needs to be revised, because total number of cells can only be assessed using stereological analysis. It remains unknown whether NTn1 deletion leads to dopamine or GABA neuronal loss. This is an important issue that needs to be acknowledged in the manuscript. Please see\n\nhttps://www.embopress.org/doi/full/10.15252/embj.2020105537\n\n\u2013 Regarding the increase in locomotor activity observed after the downregulation of Ntn1 in GABA neurons, the authors argue that the level of responding in the FR1 task is not altered in GABA-Ntn1 mutant mice, suggesting that elevated responding in the FR5 and PR assays is not likely a reflection of hyperactivity. Yet, increasing the response rate in the FR1 protocol is no possible. Once the animals respond to the reward in the FR1, the lever retracts, and no more lever-pressing is possible until a reward is collected. The statement added by the authors \"however, we did not observe differences in operant responding during FR1 training or reinstatement indicating that the observed effects are likely a reflection of altered motivational states rather than general hyperactivity\" needs to be modified because hyperactivity may be influencing the findings reported\n\n\u2013 Regarding the lever pressing extinction data, (1) the authors acknowledge that mice with Ntn1 cKO in GABA VTA neurons have similar extinction rates than WT. They now need to mention that this finding suggests that the increase in the number of lever-pressing during the extinction phase in Ntn1 cKO in GABA mice is most likely associated with an increase in baseline responding rather than with extinction deficits. This same point needs to be highlighted for the Ntn1 cKO in DATIRES::Vgat-Cre mice too. (2) the rate of extinction is not analyzed nor discussed. (3) it is unclear how plotting the extinction bin data for day1 and day 2 and for day 4 and day 5, for suppl Figures5 and 6 respectively, addresses this issue. The authors need to consider removing these data because they do not seem to provide relevant information.\n\nReviewer #3 (Recommendations for the authors):\n\nI appreciate the addition of the bath application of AMPA or NMDA experiments. While these add support to the effect of netrin being postsynaptic, it should be indicated that these experiments do not distinguish between synaptic responses and extrasynaptic responses. Further a change in holding current after bath application of AMPA could be due to reduced synapse number that is associated with a reduced postsynaptic AMPA receptor complement. Further, while they show no change in PPR consistent with no effect on release probability (Pr), their decrease in mEPSC amplitude and frequency could be consistent with a reduction in synapse number (number of release sites N) or a change in number or function of postsynaptic AMPA receptors. To distinguish this, you can measure 1/CV2 which depends on N and Pr but is independent of quantal size. Given that there is no change in Pr, if you see a change in 1/CV2 it might be consistent with a decrease in release sites as opposed to a change in postsynaptic receptor number or function. Alternatively, if there is no change in 1/CV2, you can make a stronger conclusion that the netrin manipulation is altering number or function of postsynaptic AMPA receptors.\n\nRegarding the shift in the E:I balance, while I do not disagree with their model, I was proposing that they could test their model directly by recording mIPSCs at the reversal potential for EPSCs (0 to 10mV) and mEPSCs at the reversal potential for GABA mIPSCs (~-60 to -70mV) and converting the average peak current amplitude into conductance. This way, you can directly measure the amount of inhibitory current and amount of excitatory current the same cell is receiving. Perhaps this experiment is beyond the scope of the current manuscript, but when discussing their model, they could indicate that they could test the validity of this hypothesis in future experiments.\n",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "54b64024-a235-4402-a7cc-051659249fec",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C1",
+      "claim": "Ntn1 expression in the adult mouse brain is diffuse and low throughout most regions, with moderate expression in the cerebellum and hippocampus, and highest expression in the ventral midbrain (substantia nigra and ventral tegmental area).",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization analysis of Ntn1 from the Allen Institute mouse brain expression atlas (Lein et al., 2007) shows diffuse and low levels of expression throughout the adult mouse brain, with moderate expression levels in the cerebellum and hippocampus (Figure 1A), and the highest level of expression in the ventral midbrain (substantia nigra and ventral tegmental area).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on in situ hybridization data from the Allen Institute atlas shown in Figure 1A",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "5e17baa7-cf44-4660-a665-940ed159caee",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C2",
+      "claim": "Of Ntn1-expressing cells in the VTA, 72.2% co-localize with Th (dopamine neurons) and 18.1% co-localize with Slc32a1 (GABA neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the identified Ntn1 positive cells, Ntn1 expression co-localized with Th expression (dopamine producing neurons; 72.2% co-localization) and Slc32a1-expressing GABA neurons (18.1% co-localization) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantification from RNAscope in situ hybridization shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "c7ad27ec-2a87-4c6f-bc6e-1373af98f00d",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C3",
+      "claim": "64.5% of Th-positive cells in the VTA co-express Ntn1.",
+      "claim_type": "EXPLICIT",
+      "source": "(F) Of the total of Th+ identified cells, 64.5% co-expressed Ntn1 (35.6% did not express Ntn1), and 30.4% of Slc32a1 identified cells co-expressed Ntn1 (69.5% did not express Ntn1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantification from RNAscope in situ hybridization shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "57a84be9-ad99-45c5-bac9-0db41f21e81c",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C4",
+      "claim": "30.4% of Slc32a1-positive (GABA) cells in the VTA co-express Ntn1.",
+      "claim_type": "EXPLICIT",
+      "source": "(F) Of the total of Th+ identified cells, 64.5% co-expressed Ntn1 (35.6% did not express Ntn1), and 30.4% of Slc32a1 identified cells co-expressed Ntn1 (69.5% did not express Ntn1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantification from RNAscope in situ hybridization shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "76ed434f-14f1-4faf-9b76-de58a0b80382",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C5",
+      "claim": "Ntn1 protein is present in both Th-positive and Th-negative cells in the VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemistry for Ntn1 and Th (Figure 1G) confirmed the presence of Ntn1 in dopamine and non-dopamine producing (Th-negative) cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunohistochemistry data shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "85f3f18e-1fda-463b-8620-f803cc960e87",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C6",
+      "claim": "Ntn1 conditional knockout in VTA dopamine neurons results in a significant reduction in the proportion of Th-positive cells co-labeled with Ntn1.",
+      "claim_type": "EXPLICIT",
+      "source": "Ntn1 conditional knockout (cKO) resulted in a significant reduction in the proportion of VTA Th-positive cells co-labeled with Ntn1 in DAT-Cre Ntn1 cKO mice compared to controls (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunohistochemistry quantification shown in Figure 2D-E with statistical significance (p<0.0001)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "22357a63-81eb-4f1f-b5ec-fff39bee74e2",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C7",
+      "claim": "The average number of Th-positive cells per slice in the VTA was not statistically different between DAT-Cre Ntn1 cKO mice and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous findings following Ntn1 deletion in the substantia nigra (Jasmin et al., 2021), the average number of Th + cells per slice was not statistically different in DAT-Cre Ntn1 cKO mice compared to controls (control: 178.2 \u00b1 12.68 and Ntn1 cKO 173.3 \u00b1 10.75).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of cell counts between control and Ntn1 cKO groups, with reference to prior work by Jasmin et al., 2021",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "76c37f61-e36c-4723-a477-70bc2b1972b7",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C8",
+      "claim": "Ntn1 mutagenesis in VTA dopamine neurons results in significantly reduced mEPSC amplitude and frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Ntn1 mutagenesis in dopamine neurons resulted in significantly reduced mEPSC amplitude and frequency (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiology data shown in Figure 3B-D with statistical significance (p<0.001 for amplitude, p<0.0001 for frequency)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "e7f40325-fcaf-4582-8a16-58666e3f300b",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C9",
+      "claim": "Ntn1 mutagenesis in VTA GABA neurons results in significantly reduced mEPSC amplitude and frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Ntn1 mutagenesis in VTA GABA neurons also resulted in significantly reduced mEPSC amplitude and frequency (Figure 3F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiology data shown in Figure 3F-H with statistical significance (p<0.05 for amplitude, p<0.001 for frequency)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "bd5aecdf-bff8-4706-abf9-cecc1a1308ad",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C10",
+      "claim": "Ntn1 mutagenesis does not significantly affect mIPSCs in VTA dopamine or GABA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect significant effects on miniature inhibitory postsynaptic currents (mIPSCs) in VTA dopamine or GABA neurons following Ntn1 mutagenesis in these cells (Figure 3\u2014figure supplement 1), suggesting Ntn1 does not play a role in regulating inhibitory connectivity in these cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiology data shown in Figure 3\u2014figure supplement 1 with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "2f2bb03e-5e47-41d2-a793-aa7bb4cb35b0",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C11",
+      "claim": "Ntn1 mutagenesis in either dopamine or GABA neurons does not result in a significant change in paired-pulse ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Ntn1 mutagenesis in either dopamine or GABA neurons did not result in a significant change in PPR compared to controls, suggesting no measurable change in presynaptic release (Figure 3J\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Paired-pulse ratio electrophysiology data shown in Figure 3J-K with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "e70c4caa-624a-4d37-b30a-2353e3f792fe",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C12",
+      "claim": "Ntn1 mutagenesis in DAT-Cre mice results in significantly reduced AMPA-evoked current in VTA dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Ntn1 mutagenesis in DAT-Cre mice resulted in significantly reduced AMPA-evoked current compared to controls (Figure 3\u2014figure supplement 3C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Bath application of AMPA electrophysiology data shown in Figure 3\u2014figure supplement 3C, D with statistical significance (p=0.008)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "9e3e2484-6f12-4561-aadb-d9db4b981586",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C13",
+      "claim": "NMDA-evoked responses in VTA dopamine neurons are similar between Ntn1 cKO and control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NMDA-evoked responses were similar between the groups (Figure 3\u2014figure supplement 3E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Bath application of NMDA electrophysiology data shown in Figure 3\u2014figure supplement 3E, F with no statistical significance (p=0.5271)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "4d752a0c-7b67-430f-9d57-cfc21918e254",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C14",
+      "claim": "Ntn1 loss of function in VTA dopamine neurons does not significantly affect day-night locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we monitored day-night locomotion in control and AAV1-FLEX-SaCas9-sgNtn1 injected DAT-Cre mice. No significant differences were detected (Figure 4B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Locomotor activity data shown in Figure 4B and Figure 4\u2014figure supplement 1 with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "43696b54-857a-41be-890e-5c90fa001ce5",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C15",
+      "claim": "Ntn1 loss of function in VTA dopamine neurons does not significantly affect FR1 or FR5 operant conditioning performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe significant differences in either of these behavioral tasks (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Operant conditioning data shown in Figure 4C with no statistical significance for FR1 or FR5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "d17da3dc-6513-4316-8c48-99053b2662b6",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C16",
+      "claim": "Ntn1 loss of function in VTA dopamine neurons does not significantly affect progressive ratio performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we monitored motivated behavior using a progressive ratio schedule of reinforcement in which the number of lever presses required for reinforcement increases non-arithmetically (1, 2, 4, 7, 13, 19, 25, 34, 43, 52, 61, 73\u2026), and again did not observe significant differences between control and experimental mice (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Progressive ratio data shown in Figure 4D with no statistical significance (p=0.3525)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "22614b20-088d-493a-88e6-3d72c4b5f4f4",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C17",
+      "claim": "Ntn1 loss of function in VTA dopamine neurons does not significantly affect extinction training.",
+      "claim_type": "EXPLICIT",
+      "source": "Following PR, we reinstated FR1 responding for three days followed by extinction training, and again did not detect any differences between the two groups (Figure 4E and Figure 4\u2014figure supplement 1), indicating Ntn1 loss of function in VTA dopamine neurons did not alter appetitive conditioning behaviors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Extinction training data shown in Figure 4E and Figure 4\u2014figure supplement 1 with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "d96ff133-3461-4fa0-aca3-0aad5c81aa21",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C18",
+      "claim": "Ntn1 loss of function in VTA dopamine neurons results in a slight but significant reduction in body weight prior to calorie restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although appetitive conditioning was not affected by Ntn1 loss of function in dopamine neurons, we did observe a slight but significant reduction in body weight in these mice relative to controls prior to calorie restriction (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Body weight data shown in Figure 4\u2014figure supplement 1 with statistical significance (p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "64088fec-3f29-4163-bde0-8852051b1245",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C19",
+      "claim": "Ntn1 loss of function in VTA dopamine neurons does not significantly affect pre-pulse inhibition percentage.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we did not observe differences in PPI percentage inhibition (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Pre-pulse inhibition data shown in Figure 4G with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "2edda20a-2a3e-4d18-a7af-e79809751968",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C20",
+      "claim": "Ntn1 loss of function in VTA dopamine neurons results in increased time on edge and decreased time in center of open field arena, consistent with elevated anxiety-like behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "AAV1-FLEX-SaCas9-sgNtn1 injected DAT-Cre mice spent significantly more time on the edge of the open field arena and significantly less time in the center of the arena, consistent with an elevation in anxiety-like behavior (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Open field test data shown in Figure 4H with statistical significance (p<0.01 for both edge and center)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "0556eb0d-3cb0-4e65-bc0d-b8297d5bf379",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C21",
+      "claim": "Ntn1 loss of function in VTA GABA neurons results in a significant increase in locomotor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Ntn1 mutagenesis in dopamine neurons, this manipulation in VTA GABA neurons resulted in a significant increase in locomotor activity (Figure 5B and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Locomotor activity data shown in Figure 5B and Figure 5\u2014figure supplement 1 with statistical significance (p<0.0001)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "b7a73081-f536-439d-93d5-f65b4b6f38cd",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C22",
+      "claim": "Ntn1 loss of function in VTA GABA neurons results in increased earned reinforcements in the FR5 schedule.",
+      "claim_type": "EXPLICIT",
+      "source": "In the FR1 schedule of reinforcement, we did not observe a significant difference between the groups; however, we observed an increase in the number of earned reinforcements in the FR5 schedule in mice with Ntn1 loss of function in VTA GABA neurons (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Operant conditioning data shown in Figure 5C with statistical significance for FR5 (p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "550134e8-c9eb-4ade-95f5-7105ba36a42d",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C23",
+      "claim": "Ntn1 loss of function in VTA GABA neurons results in increased breakpoint in the progressive ratio schedule.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed an increase in the PR schedule of reinforcement in these mice relative to controls (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Progressive ratio data shown in Figure 5D with statistical significance (p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "1c4e4efa-3fd1-4cc4-90f8-c68348bfcda7",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C24",
+      "claim": "Vgat-Cre Ntn1 cKO mice display elevated extinction bursts during extinction training compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during extinction training, Vgat-Cre Ntn1 cKO mice displayed high extinction bursts (elevated pressing following reward omission) compared to controls that remained elevated on the second day of extinction training (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Extinction training data shown in Figure 5E with statistical significance (p<0.01)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "c019f1f3-7468-4251-9723-1d0950130d6c",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C25",
+      "claim": "Ntn1 loss of function in VTA GABA neurons results in a significant reduction in acoustic startle response.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of sensory-motor gating in these mice revealed that Vgat-Cre mice injected with AAV1-FLEX-SaCas9-sgNtn1 had a significant reduction in the acoustic startle relative to control mice (Figure 5F) that was accompanied by a reduction in PPI (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Acoustic startle data shown in Figure 5F with statistical significance (p<0.0085)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "4e917141-2f13-4619-b836-59203abe45d1",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C26",
+      "claim": "Ntn1 loss of function in VTA GABA neurons results in a reduction in pre-pulse inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of sensory-motor gating in these mice revealed that Vgat-Cre mice injected with AAV1-FLEX-SaCas9-sgNtn1 had a significant reduction in the acoustic startle relative to control mice (Figure 5F) that was accompanied by a reduction in PPI (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Pre-pulse inhibition data shown in Figure 5G with statistical significance (p<0.01)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "01353858-1434-4190-9dfe-717b89336a45",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C27",
+      "claim": "Ntn1 loss of function in VTA GABA neurons results in increased time on edge in the open field test.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to mutagenesis of Ntn1 in dopamine neurons, this manipulation in GABA neurons resulted in an increase in anxiety-like behavior as demonstrated by an increased time on edge; though we only observed a trend towards a reduction in time spent in the center of the open field arena (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Open field test data shown in Figure 5H with statistical significance for edge time (p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "1b9947e8-0d7b-4a33-a7fc-b3a07765b4f5",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C28",
+      "claim": "Simultaneous Ntn1 loss of function in VTA GABA and dopamine neurons largely reverses the hyperlocomotor phenotype observed with Ntn1 mutagenesis in VTA GABA neurons alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous Ntn1 loss of function in VTA GABA and dopamine neurons largely reversed the hyperlocomotor phenotype (Figure 6C) observed with Ntn1 mutagenesis in VTA GABA neurons alone, though a modest, increase in daytime locomotion remained (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Locomotor activity data shown in Figure 6C and Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "20919763-841c-4c73-b75b-872e988920b7",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C29",
+      "claim": "Loss of Ntn1 in both VTA GABA and dopamine neurons results in operant responding during FR1 and FR5 that is similar to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, loss of Ntn1 in both VTA GABA and dopamine neurons resulted in operant responding during FR1 and FR5 that was similar to controls (Figure 6D) and pre-calorie restriction body weights did not differ between the groups.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Operant conditioning data shown in Figure 6D with no statistical significance for FR1 or FR5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "26ccf623-b49c-4c0d-ab89-3caee8381d46",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C30",
+      "claim": "Loss of Ntn1 in both VTA GABA and dopamine neurons results in elevated motivation in the progressive ratio task.",
+      "claim_type": "EXPLICIT",
+      "source": "Motivation, as measured in the PR task, was elevated in the double transgenic Cre line following Ntn1 mutagenesis (Figure 6E) and extinction was impaired (Figure 6F), though these phenotypes were less robust than those observed in the VTA GABA-only mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Progressive ratio data shown in Figure 6E with statistical significance (p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "b3543ab7-2d13-4168-bd0d-e286492e9e21",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C31",
+      "claim": "Loss of Ntn1 in both VTA GABA and dopamine neurons results in impaired extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Motivation, as measured in the PR task, was elevated in the double transgenic Cre line following Ntn1 mutagenesis (Figure 6E) and extinction was impaired (Figure 6F), though these phenotypes were less robust than those observed in the VTA GABA-only mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Extinction data shown in Figure 6F with statistical significance (p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "9dc3bc09-f052-4435-b245-fd136a2af58e",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C32",
+      "claim": "Loss of Ntn1 in both VTA GABA and dopamine neurons results in acoustic startle and PPI responses similar to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, loss of Ntn1 in both cell types resulted in acoustic startle and PPI responses (Figure 6G\u2013H), and open field activity (Figure 6I) that was similar to control mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Acoustic startle and PPI data shown in Figure 6G-H with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "225b24ca-cccb-4a2c-a9b2-977cc0300845",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C33",
+      "claim": "Loss of Ntn1 in both VTA GABA and dopamine neurons results in open field activity similar to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, loss of Ntn1 in both cell types resulted in acoustic startle and PPI responses (Figure 6G\u2013H), and open field activity (Figure 6I) that was similar to control mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Open field data shown in Figure 6I with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "7c0f41b1-c4af-4fe0-b178-1e4211bd3557",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C34",
+      "claim": "Proper regulation of the midbrain dopamine system is essential for numerous brain functions and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Proper regulation of the midbrain dopamine system is essential for numerous brain functions and behavior (Bissonette and Roesch, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Bissonette and Roesch, 2016",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "970bb78f-c998-4f13-ba1d-bf8c8766c256",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C35",
+      "claim": "Disruption in the balance of midbrain dopamine neuron activity has been linked to autism.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption in the balance of midbrain dopamine neuron activity has been linked to several neurological and psychiatric conditions, including autism (Pav\u0103l, 2017), schizophrenia (Hietala and Syv\u00e4lahti, 1996), and substance use disorders (Ostroumov and Dani, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Pav\u0103l, 2017",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "aaf4f9f4-78e2-4ada-93bf-66f2c9337180",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C36",
+      "claim": "Disruption in the balance of midbrain dopamine neuron activity has been linked to schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption in the balance of midbrain dopamine neuron activity has been linked to several neurological and psychiatric conditions, including autism (Pav\u0103l, 2017), schizophrenia (Hietala and Syv\u00e4lahti, 1996), and substance use disorders (Ostroumov and Dani, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Hietala and Syv\u00e4lahti, 1996",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "11686b43-5447-419b-a65f-20475e236db8",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C37",
+      "claim": "Disruption in the balance of midbrain dopamine neuron activity has been linked to substance use disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption in the balance of midbrain dopamine neuron activity has been linked to several neurological and psychiatric conditions, including autism (Pav\u0103l, 2017), schizophrenia (Hietala and Syv\u00e4lahti, 1996), and substance use disorders (Ostroumov and Dani, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Ostroumov and Dani, 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "f31640d5-d992-47a3-b571-bc2e2faee0fe",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C38",
+      "claim": "Within the VTA, the activity of dopamine neurons is regulated in part by inhibitory (GABAergic) and excitatory (glutamatergic) synaptic input.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the VTA, the activity of dopamine neurons is regulated in part by inhibitory (GABAergic) and excitatory (glutamatergic) synaptic input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about VTA circuitry",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "d2523a3b-42c1-4a67-8b09-86656c93643d",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C39",
+      "claim": "Genome-wide association studies and analysis of de novo mutations have strongly implicated genes regulating neuronal axon guidance in neurodevelopmental disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies and analysis of de novo mutations have strongly implicated genes regulating neuronal axon guidance in neurodevelopmental disorders (Gilman et al., 2012; Gulsuner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Gilman et al., 2012 and Gulsuner et al., 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "4076ff7f-9c24-4ff0-99ed-02b07faf8545",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C40",
+      "claim": "The axonal guidance receptor Robo2 is necessary for the maintenance of inhibitory synaptic connectivity in the adult VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that the axonal guidance receptor Robo2 is necessary for the maintenance of inhibitory synaptic connectivity in the adult VTA (Gore et al., 2017), suggesting that axonal guidance proteins have a critical function in maintaining synaptic connectivity in the adult midbrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Gore et al., 2017, referring to prior work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "107aa35e-2da7-4e2c-9dcb-69fe6e52a456",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C41",
+      "claim": "During development, Ntn1 is highly expressed throughout the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, the gene encoding netrin-1 (Ntn1) is highly expressed throughout the central nervous system (CNS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about Ntn1 expression during development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "7a7cf30d-8685-4558-9955-1fd29b44aad6",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C42",
+      "claim": "Following the critical developmental period, global Ntn1 expression decreases, but expression within the limbic system, particularly in the ventral midbrain, persists.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this critical period global expression decreases (Manitt et al., 2010), but expression within the limbic system, particularly in the ventral midbrain, persists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Manitt et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "7a78909b-fab7-4300-9293-92280cf22339",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C43",
+      "claim": "Genetic inactivation of Ntn1 from forebrain glutamatergic neurons in late postnatal development results in significantly impaired spatial memory in adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the continued function of Ntn1 following early development, genetic inactivation of either Ntn1 (Winberg et al., 1998) or its receptor Dcc Glasgow et al., 2018 from forebrain glutamatergic neurons in late postnatal development results in significantly impaired spatial memory in adult mice that corresponds to a loss of hippocampal plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Winberg et al., 1998 and Glasgow et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "9af550a2-bbfc-4ff7-86b8-3f7119b79f9a",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C44",
+      "claim": "Genetic inactivation of Dcc from forebrain glutamatergic neurons in late postnatal development results in significantly impaired spatial memory in adult mice that corresponds to a loss of hippocampal plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the continued function of Ntn1 following early development, genetic inactivation of either Ntn1 (Winberg et al., 1998) or its receptor Dcc Glasgow et al., 2018 from forebrain glutamatergic neurons in late postnatal development results in significantly impaired spatial memory in adult mice that corresponds to a loss of hippocampal plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Glasgow et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "6bdd3837-df67-4bb0-9a4a-7785ce97bea3",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C45",
+      "claim": "Dcc expression levels in adult VTA mice are significantly upregulated following amphetamine exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the VTA, Dcc expression levels in adult mice are significantly upregulated following amphetamine exposure (Yetnikoff et al., 2010), and Dcc haploinsufficient mice display blunted locomotor response to amphetamine (Flores et al., 2005), consistent with increased excitatory synaptic strength in the VTA following amphetamine treatment (Saal et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Yetnikoff et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "8c850433-e538-4e26-bef7-9908237df3db",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C46",
+      "claim": "Dcc haploinsufficient mice display blunted locomotor response to amphetamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the VTA, Dcc expression levels in adult mice are significantly upregulated following amphetamine exposure (Yetnikoff et al., 2010), and Dcc haploinsufficient mice display blunted locomotor response to amphetamine (Flores et al., 2005), consistent with increased excitatory synaptic strength in the VTA following amphetamine treatment (Saal et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Flores et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "d73bc21c-6de2-4106-928c-1f3da28924cf",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C47",
+      "claim": "Excitatory synaptic strength in the VTA increases following amphetamine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the VTA, Dcc expression levels in adult mice are significantly upregulated following amphetamine exposure (Yetnikoff et al., 2010), and Dcc haploinsufficient mice display blunted locomotor response to amphetamine (Flores et al., 2005), consistent with increased excitatory synaptic strength in the VTA following amphetamine treatment (Saal et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Saal et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "04ab521a-a58f-44be-ae05-4d5615b343fb",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C48",
+      "claim": "Ntn1 regulates excitatory synaptic connectivity in the adult hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has shown that Ntn1 regulates excitatory synaptic connectivity in the adult hippocampus (Glasgow et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Glasgow et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "1618bdde-1398-4e48-89be-329cf0d75dd9",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C49",
+      "claim": "Ntn1 loss of function significantly reduces postsynaptic glutamate receptor-mediated currents in a cell-autonomous manner in the adult hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Ntn1 loss of function significantly reduces postsynaptic glutamate receptor-mediated currents in a cell-autonomous manner similar to what has been reported previously in the adult hippocampus (Glasgow et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Glasgow et al., 2018 and supported by the current study's electrophysiology data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "9922ffcf-9ad7-4ed7-adf6-295a2e9a3dd5",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C50",
+      "claim": "Ntn1 regulates the delivery of GluA1-containing AMPA receptors to the postsynaptic density.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is consistent with our observed decrease in the amplitude of mEPSCs and reduced AMPA-evoked currents and with previous reports of Ntn1 regulating the delivery of GluA1-containing AMPA receptors to the postsynaptic density (Jasmin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Jasmin et al., 2021 and consistent with current study's findings",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "82aa28ae-6744-48fa-839a-55fa9b0bdf69",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C51",
+      "claim": "Reduced glutamatergic signaling in dopamine neurons largely does not affect appetitive behavior, locomotion, and sensory-motor gating.",
+      "claim_type": "EXPLICIT",
+      "source": "The general lack of effect of reduced glutamatergic synaptic connectivity on appetitive behavior, locomotion, and sensory-motor gating is consistent with previous observations that reduced glutamatergic signaling in dopamine neurons largely does not affect these behaviors (Zweifel et al., 2009; Hutchison et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Zweifel et al., 2009 and Hutchison et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "d63988a0-b6c7-48bb-872d-c9b4cbfd4970",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C52",
+      "claim": "Disrupting GABA neuron function in the VTA induces a hyperdopaminergic phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, loss of Ntn1 in VTA GABA neurons had a significant effect on multiple behaviors including locomotion, motivation, and acoustic pre-pulse inhibition, all of which are consistent with a hyperdopaminergic phenotype and with previous reports that disrupting GABA neuron function in the VTA induces similar phenotypes (Gore et al., 2017; Soden et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Gore et al., 2017 and Soden et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "fc5450ba-2ee2-44b6-89b7-ba88bc87f5c9",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C53",
+      "claim": "Loss of NMDA receptor signaling in dopamine D1 receptor-expressing neurons prevents the development of amphetamine sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is similar to what has been reported previously in the striatum.(Beutler et al., 2011) , demonstrated that loss of NMDA receptor signaling in dopamine D1 receptor-expressing neurons prevented the development of amphetamine sensitization; however, inactivation of NMDA receptors in D1R and D2R-expressing medium spiny neurons reversed this phenotype (Beutler et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Beutler et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "5e3a4c53-ead2-4ea0-a3ea-96b5bbf15a76",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C54",
+      "claim": "Inactivation of NMDA receptors in D1R and D2R-expressing medium spiny neurons reverses the prevention of amphetamine sensitization caused by loss of NMDA receptor signaling in D1R neurons alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is similar to what has been reported previously in the striatum.(Beutler et al., 2011) , demonstrated that loss of NMDA receptor signaling in dopamine D1 receptor-expressing neurons prevented the development of amphetamine sensitization; however, inactivation of NMDA receptors in D1R and D2R-expressing medium spiny neurons reversed this phenotype (Beutler et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Beutler et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "712657e4-3885-4562-a179-2211f8711d9e",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C55",
+      "claim": "Blocking all synaptic transmission from GABA neurons in the VTA results in hyperactivity and increased operant responding.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that blocking all synaptic transmission from GABA neurons in the VTA (Gore et al., 2017), or blocking selectively GABA release from VTA GABA neurons (Hutchison et al., 2018) results in hyperactivity and increased operant responding, though to a much greater degree than the effects observed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Gore et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "c050a3ab-44e3-46e9-91e7-23e8298a05b7",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C56",
+      "claim": "Blocking selectively GABA release from VTA GABA neurons results in hyperactivity and increased operant responding.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that blocking all synaptic transmission from GABA neurons in the VTA (Gore et al., 2017), or blocking selectively GABA release from VTA GABA neurons (Hutchison et al., 2018) results in hyperactivity and increased operant responding, though to a much greater degree than the effects observed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Hutchison et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "c165ee93-e30f-4489-9a5b-5cb19c566bf7",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C57",
+      "claim": "Loss of glutamate signaling in dopamine neurons has only a modest behavioral effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have also shown that loss of glutamate signaling in dopamine neurons has only a modest behavioral effect (Zweifel et al., 2009; Hutchison et al., 2018) so it is not surprising that reducing mEPSCs onto VTA dopamine neurons has little effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Zweifel et al., 2009 and Hutchison et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "820cfe4a-e9db-4637-b287-87b40b750ef1",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C58",
+      "claim": "Excitatory inputs onto VTA dopamine neurons arise from the pedunculopontine tegmental nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, excitatory inputs onto VTA dopamine neurons, such as those from the pedunculopontine tegmental nucleus (Soden et al., 2020; Lodge and Grace, 2006), or dorsal raphe nucleus (Qi et al., 2014) would drive the glutamate-dependent burst activation of dopamine neurons (Zweifel et al., 2009; Lodge and Grace, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Soden et al., 2020 and Lodge and Grace, 2006",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "e13de643-cf7a-4449-a57a-f0e3b9a7a1b3",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C59",
+      "claim": "Excitatory inputs onto VTA dopamine neurons arise from the dorsal raphe nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, excitatory inputs onto VTA dopamine neurons, such as those from the pedunculopontine tegmental nucleus (Soden et al., 2020; Lodge and Grace, 2006), or dorsal raphe nucleus (Qi et al., 2014) would drive the glutamate-dependent burst activation of dopamine neurons (Zweifel et al., 2009; Lodge and Grace, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Qi et al., 2014",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "0dc47769-af9f-4d08-9aa2-8f4d58c4d867",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C60",
+      "claim": "Glutamate-dependent burst activation of dopamine neurons is driven by excitatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, excitatory inputs onto VTA dopamine neurons, such as those from the pedunculopontine tegmental nucleus (Soden et al., 2020; Lodge and Grace, 2006), or dorsal raphe nucleus (Qi et al., 2014) would drive the glutamate-dependent burst activation of dopamine neurons (Zweifel et al., 2009; Lodge and Grace, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Zweifel et al., 2009 and Lodge and Grace, 2006",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "fe18dd99-66f8-400a-bea2-942406ce5d1c",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C61",
+      "claim": "Suppression of inhibition onto dopamine neurons is a potent means to drive burst activation of these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, inhibitory synaptic connectivity is not altered by the loss of Ntn1, and suppression of inhibition onto dopamine neurons is a potent means to drive the burst activation of these cells (Paladini and Tepper, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Paladini and Tepper, 1999",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "1f33690b-91f2-45b6-ac18-dfa1e4ccc33d",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C62",
+      "claim": "Excitatory inputs onto GABA neurons within the VTA arise from the lateral habenula.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory inputs onto GABA neurons within the VTA proper, as well as the caudal tail of the VTA, or RMTg, arise from multiple locations including the lateral habenula and ventral pallidum (Omelchenko et al., 2009; Brinschwitz et al., 2010; Tooley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Omelchenko et al., 2009, Brinschwitz et al., 2010, and Tooley et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "fad36404-0f2d-48e9-aec5-ea3cea99d483",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C63",
+      "claim": "Excitatory inputs onto GABA neurons within the VTA arise from the ventral pallidum.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory inputs onto GABA neurons within the VTA proper, as well as the caudal tail of the VTA, or RMTg, arise from multiple locations including the lateral habenula and ventral pallidum (Omelchenko et al., 2009; Brinschwitz et al., 2010; Tooley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Omelchenko et al., 2009, Brinschwitz et al., 2010, and Tooley et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "0a928ad2-88af-49d9-b9e5-2a99ae99741e",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C64",
+      "claim": "Activation of glutamatergic circuits onto VTA GABA neurons is aversive, likely through the activation of GABAergic inputs onto dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of these circuits is aversive, likely through the activation of GABAergic inputs onto dopamine neurons (Tooley et al., 2018; Wulff et al., 2019; Faget et al., 2018; Stamatakis and Stuber, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Tooley et al., 2018, Wulff et al., 2019, Faget et al., 2018, and Stamatakis and Stuber, 2012",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "1db3ba66-40d9-4601-a697-50f9374a640e",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C65",
+      "claim": "Ntn1 is a known ligand for Dcc, DSCAM, Neogenin, and Unc5 homologs A-D.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, though Dcc is considered to be its canonical receptor, Ntn1 is a known ligand for several additional receptors, including DSCAM, Neogenin, and Unc5 homologs A-D (Rajasekharan and Kennedy, 2009; Lai Wing Sun et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Rajasekharan and Kennedy, 2009 and Lai Wing Sun et al., 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "bdec9888-39b5-46df-8ba1-e35fed8661a6",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C66",
+      "claim": "Both Dcc and Unc5c receptors are present in the adult VTA, often in the same cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has identified the presence of both Dcc and Unc5c receptors in the adult VTA (often in the same cells) (Manitt et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Manitt et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "9d616039-7060-4f6a-be87-ce404c7fd873",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C67",
+      "claim": "During spinal cord development, Ntn1 expression in the floor plate attracts commissural axons to the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also interesting to note that during the development of the spinal cord, Ntn1 expression in the floor plate attracts commissural axons to the midline, but following the arrival of these axons at the floor plate, Unc5 expression increases to suppress the attractive actions of DCC signaling (Lai Wing Sun et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Lai Wing Sun et al., 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "4f050ff5-6e3b-494c-8606-21a10908e08e",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C68",
+      "claim": "Following the arrival of commissural axons at the floor plate, Unc5 expression increases to suppress the attractive actions of DCC signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also interesting to note that during the development of the spinal cord, Ntn1 expression in the floor plate attracts commissural axons to the midline, but following the arrival of these axons at the floor plate, Unc5 expression increases to suppress the attractive actions of DCC signaling (Lai Wing Sun et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Lai Wing Sun et al., 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "805d8a5c-cf6b-43bc-a47b-8cac06437414",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C69",
+      "claim": "Slit/Robo signaling repels axons away from the floor plate during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Of further note, in addition to the role of Ntn1/Dcc/Unc5 signaling in the regulation of commissural axons crossing the midline, Slit/Robo signaling repels axons away from the floor plate (Kidd et al., 1998; Kidd et al., 1999) setting up a push-pull relationship between these pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Kidd et al., 1998 and Kidd et al., 1999",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "e2cbf8dd-ce0a-45f7-9bcc-4676dde4a102",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C70",
+      "claim": "Ntn1 is expressed in glial cells in the VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, (Phillips et al., 2022) also observed the expression of Ntn1 in glial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Phillips et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "513b71a2-6eb5-483b-ac19-62e8191c705f",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C71",
+      "claim": "VTA GABA neurons project to the nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is also likely that GABA neurons projecting outside the VTA (for example, to the NAc Brown et al., 2012) are also affected and could contribute to the observed behavioral phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Brown et al., 2012",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "dbfd791a-1606-44af-8cf3-cf8de8ad49b0",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C72",
+      "claim": "Mutations in NTN1 and DCC in humans have been associated with schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in NTN1 (netrin-1) and DCC in humans have been associated with several dopamine-associated psychiatric conditions, including neurodevelopmental disorders such as schizophrenia (Wang et al., 2018; Tang et al., 2019; Grant et al., 2012) and major depressive disorder (Tang et al., 2019; Zeng et al., 2017; Vosberg et al., 2020; Torres-Berr\u00edo et al., 2020), as well as multiple neurodegenerative disorders (Lesnick et al., 2007; Lesnick et al., 2008; Lin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Wang et al., 2018, Tang et al., 2019, and Grant et al., 2012",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "f0958e3c-c27e-4ce5-8c01-7a43b18b33bd",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C73",
+      "claim": "Mutations in NTN1 and DCC in humans have been associated with major depressive disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in NTN1 (netrin-1) and DCC in humans have been associated with several dopamine-associated psychiatric conditions, including neurodevelopmental disorders such as schizophrenia (Wang et al., 2018; Tang et al., 2019; Grant et al., 2012) and major depressive disorder (Tang et al., 2019; Zeng et al., 2017; Vosberg et al., 2020; Torres-Berr\u00edo et al., 2020), as well as multiple neurodegenerative disorders (Lesnick et al., 2007; Lesnick et al., 2008; Lin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Tang et al., 2019, Zeng et al., 2017, Vosberg et al., 2020, and Torres-Berr\u00edo et al., 2020",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "9c4b5c47-54d7-408f-a705-c6b332cdb6f9",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C74",
+      "claim": "Mutations in NTN1 and DCC in humans have been associated with multiple neurodegenerative disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in NTN1 (netrin-1) and DCC in humans have been associated with several dopamine-associated psychiatric conditions, including neurodevelopmental disorders such as schizophrenia (Wang et al., 2018; Tang et al., 2019; Grant et al., 2012) and major depressive disorder (Tang et al., 2019; Zeng et al., 2017; Vosberg et al., 2020; Torres-Berr\u00edo et al., 2020), as well as multiple neurodegenerative disorders (Lesnick et al., 2007; Lesnick et al., 2008; Lin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Lesnick et al., 2007, Lesnick et al., 2008, and Lin et al., 2009",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "83633572-4dd7-42d7-bc0f-04325430e3d0",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C75",
+      "claim": "A balance of glutamatergic signaling in VTA dopamine and GABA neurons is essential for the normal functioning of the mesolimbic dopamine system.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that a balance of glutamatergic signaling in these two cell types is essential for the normal functioning of the mesolimbic dopamine system (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the rescue of behavioral phenotypes when Ntn1 is knocked out in both cell types simultaneously, as shown in Figure 6A model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "6839f596-f7e7-4694-bc09-7df4d60d0f2c",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C78",
+      "claim": "Ntn1 regulates the actin cytoskeleton through its activation of the cognate receptor DCC.",
+      "claim_type": "IMPLICIT",
+      "source": "Likely mechanisms include Ntn1 regulation of the actin cytoskeleton and receptor transport vesicles through its activation of the cognate receptor DCC (Yetnikoff et al., 2010; Rajasekharan and Kennedy, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Yetnikoff et al., 2010 and Rajasekharan and Kennedy, 2009 as a proposed mechanism",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "6f7ac859-b686-4602-99ed-2008005c5a13",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C79",
+      "claim": "Ntn1 regulates receptor transport vesicles through its activation of the cognate receptor DCC.",
+      "claim_type": "IMPLICIT",
+      "source": "Likely mechanisms include Ntn1 regulation of the actin cytoskeleton and receptor transport vesicles through its activation of the cognate receptor DCC (Yetnikoff et al., 2010; Rajasekharan and Kennedy, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Yetnikoff et al., 2010 and Rajasekharan and Kennedy, 2009 as a proposed mechanism",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "e6b8bff5-386a-4950-81d7-05c6b761a488",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C80",
+      "claim": "Netrin's role in modulating excitatory synaptic connectivity is likely confined to postsynaptic mechanisms.",
+      "claim_type": "IMPLICIT",
+      "source": "Our finding that mEPSC frequency, but not paired-pulse ratio, was affected by Ntn1 loss further suggests netrin's role in modulating excitatory synaptic connectivity is likely confined to postsynaptic mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the electrophysiology data showing changes in mEPSC frequency but not PPR",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "fb9e8a46-a83d-4fbc-aa8e-e543cc28c5e4",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C81",
+      "claim": "Reduced excitatory tone on VTA GABA neurons induces behaviors associated with a hyperdopaminergic phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In dopamine neurons, the reduced excitatory tone had a minimal phenotypic behavioral outcome; however, reduced glutamatergic tone on VTA GABA neurons induced behaviors associated with a hyperdopaminergic phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of behavioral findings from Vgat-Cre Ntn1 cKO experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "e3925305-1c37-4754-ad6f-304012600c64",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C82",
+      "claim": "Simultaneous loss of Ntn1 function in both VTA dopamine and GABA neurons largely rescues the phenotype observed in GABA-only mutagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous loss of Ntn1 function in both cell types largely rescued the phenotype observed in the GABA-only mutagenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of behavioral findings from DAT-Cre::Vgat-Cre double knockout experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "97f73a1a-fa54-4918-8ad4-c33eb9305710",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C83",
+      "claim": "Ntn1 loss of function reduces excitatory postsynaptic connectivity in VTA dopamine and GABA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Ntn1 loss-of-function in either cell type resulted in a significant reduction in excitatory postsynaptic connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of electrophysiology findings from both DAT-Cre and Vgat-Cre experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "1c55dffb-c83b-4435-93f4-08a882b81b0e",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C84",
+      "claim": "Reduced excitatory tone on VTA dopamine neurons had minimal phenotypic behavioral outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "In dopamine neurons, the reduced excitatory tone had a minimal phenotypic behavioral outcome; however, reduced glutamatergic tone on VTA GABA neurons induced behaviors associated with a hyperdopaminergic phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of behavioral findings from DAT-Cre Ntn1 cKO experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "1e3df7ce-0f56-4c79-9847-90ff88e670cc",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C85",
+      "claim": "Ntn1 does not regulate inhibitory connectivity in VTA dopamine or GABA neurons.",
+      "claim_type": "IMPLICIT",
+      "source": "We did not detect significant effects on miniature inhibitory postsynaptic currents (mIPSCs) in VTA dopamine or GABA neurons following Ntn1 mutagenesis in these cells (Figure 3\u2014figure supplement 1), suggesting Ntn1 does not play a role in regulating inhibitory connectivity in these cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from lack of significant effects on mIPSCs shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "7fa53ce1-160d-4ce3-bb19-9ffdd63e9184",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C86",
+      "claim": "Ntn1 regulates AMPA receptor availability in adult VTA.",
+      "claim_type": "IMPLICIT",
+      "source": "These results suggest that Ntn1 regulates AMPA receptor availability in adult VTA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the reduced AMPA-evoked currents but not NMDA-evoked currents following Ntn1 mutagenesis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "91379689-8a7e-4ada-aaab-ee0928d619ee",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C87",
+      "claim": "Loss of excitatory drive onto dopamine neurons can be compensated for through disinhibitory circuits of the VTA.",
+      "claim_type": "IMPLICIT",
+      "source": "Loss of excitatory drive onto dopamine neurons can likely be compensated for through the many disinhibitory circuits of the VTA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism to explain why DAT-Cre Ntn1 cKO has minimal behavioral effects",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "d9ca5eab-8af3-44ff-8f00-9d26cf4feb08",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C88",
+      "claim": "Reduced glutamatergic inputs onto VTA GABA neurons would suppress the inhibition of dopamine neurons allowing excitatory drive onto these cells to go unchecked.",
+      "claim_type": "IMPLICIT",
+      "source": "Thus, reduced glutamatergic inputs onto VTA GABA neurons would suppress the inhibition of dopamine neurons allowing excitatory drive onto these cells to go unchecked, resulting in the phenotypes observed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism to explain the hyperdopaminergic phenotype in Vgat-Cre Ntn1 cKO mice",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "96f28680-d26b-4151-aa46-2bea30cc1622",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C89",
+      "claim": "When excitatory inputs onto dopamine neurons are reduced along with reduced excitatory inputs onto GABA neurons, the combined driving forces of disinhibition and excitation of dopamine neurons are re-equilibrated.",
+      "claim_type": "IMPLICIT",
+      "source": "When excitatory inputs onto dopamine neurons are also reduced the combined driving forces of disinhibition and excitation of the dopamine neurons are re-equilibrated, restoring balance to the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism to explain the rescue of phenotypes in double knockout mice",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "aa34f1dd-821e-42a3-a73d-3ab8eab24856",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C90",
+      "claim": "There is a push-pull relationship between netrin/Dcc/Unc5 and Slit/Robo signaling pathways in which netrin/Dcc/Unc5 regulates excitation and Slit/Robo signaling regulates inhibition.",
+      "claim_type": "IMPLICIT",
+      "source": "We previously demonstrated that Robo2 maintains inhibitory synaptic connectivity in the adult VTA (Gore et al., 2017), suggesting the existence of another 'push/pull' relationship between these two pathways in which netrin/Dcc/Unc5 regulates excitation and Slit/Robo signaling regulates inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the current findings on Ntn1 regulating excitation and prior work on Robo2 regulating inhibition (Gore et al., 2017)",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "5f86e71b-bf9b-494b-b36c-4137e572668f",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C91",
+      "claim": "The remaining Ntn1 expressing cells that do not co-localize with Th or Slc32a1 are likely glutamatergic neurons or possibly glial cells.",
+      "claim_type": "IMPLICIT",
+      "source": "The remaining Ntn1 expressing cells that do not co-localize with Th or Slc32a1 are likely glutamatergic neurons (Morales and Margolis, 2017), or possibly glial cells (Phillips et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the cell type composition of the VTA and cited from Morales and Margolis, 2017 and Phillips et al., 2022",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "2dd5ff83-68fa-4e6b-acdb-56fc52a7ae9e",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C92",
+      "claim": "Ntn1 loss of function does not result in non-cell autonomous effects on mEPSCs from non-targeted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we recorded mEPSCs from non-YFP-expressing (presumptively non-dopamine) neurons in DAT-Cre mice injected with Ntn1 CRISPR or control virus, and from non-YFP-expressing (presumptively non-GABA) neurons in Vgat-Cre injected mice. We did not observe significant non-cell autonomous effects on mEPSCs from non-targeted cells (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiology data from non-targeted cells shown in Figure 3\u2014figure supplement 2 with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "8d6722f0-c6c7-420e-9f5a-a72c7025d9ec",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C93",
+      "claim": "Ntn1 loss of function does not result in non-cell autonomous effects on mIPSCs from non-targeted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we also did not observe non-cell autonomous effects on mIPSCs from non-targeted cells (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electrophysiology data from non-targeted cells shown in Figure 3\u2014figure supplement 2 with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "2a772493-398c-4bdb-9a84-52791ae248fb",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C94",
+      "claim": "Ntn1 loss of function in VTA dopamine neurons does not significantly affect locomotor differences in the open field arena.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant locomotor differences associated with the loss of Ntn1 function in the open field arena (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Open field locomotor data shown in Figure 4\u2014figure supplement 1 with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "71ba6bc2-5490-4cff-bb91-82f1c4a377a6",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C95",
+      "claim": "Pre-calorie restriction body weights in Vgat-Cre Ntn1 cKO mice do not differ from controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to DAT-Cre Ntn1 cKO mice, pre-calorie restriction body weights in Vgat-Cre Ntn1 cKO mice did not differ from controls (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Body weight data shown in Figure 5\u2014figure supplement 1 with no statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "2e23051b-f24f-49b5-b447-f5b3ff892eb4",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C96",
+      "claim": "Vgat-Cre Ntn1 cKO mice show increased distance traveled during the open field test relative to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of observed significance in the time in center in the context of increased edge time may reflect the hyperactivity observed following Ntn1 mutagenesis in VTA GABA neurons, consistent with this possibility, we did observe increased distance traveled during the open field test in these mice relative to controls (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Open field locomotor data shown in Figure 5\u2014figure supplement 1 with statistical significance (p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "e924eeba-d437-477b-a393-f99e2790cb07",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C97",
+      "claim": "Pre-calorie restriction body weights in DAT-Cre::Vgat-Cre double knockout mice do not differ from controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, loss of Ntn1 in both VTA GABA and dopamine neurons resulted in operant responding during FR1 and FR5 that was similar to controls (Figure 6D) and pre-calorie restriction body weights did not differ between the groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Body weight data mentioned in text, presumably shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "cfe0738a-5166-46d7-a6b8-a47778798e7b",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C98",
+      "claim": "DAT-Cre::Vgat-Cre double knockout mice show a modest increase in daytime locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous Ntn1 loss of function in VTA GABA and dopamine neurons largely reversed the hyperlocomotor phenotype (Figure 6C) observed with Ntn1 mutagenesis in VTA GABA neurons alone, though a modest, increase in daytime locomotion remained (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Locomotor activity data shown in Figure 6C and Figure 6\u2014figure supplement 1 with statistical significance for daytime activity (p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "371d9002-227d-4db5-8309-27f118b47c5e",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C99",
+      "claim": "No sex differences were observed in any of the behavioral or electrophysiological results.",
+      "claim_type": "EXPLICIT",
+      "source": "No sex differences were observed in any of the behavioral or electrophysiological results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement in Methods section indicating post-hoc analysis found no sex differences",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "bb6285b3-8e23-4797-bc40-4c45a0aeae3d",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "claim_id": "C100",
+      "claim": "Thigmotaxis (increased time on edge) has been validated as a measure of anxiogenic behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Thigmotaxis, the tendency of mice to remain in close proximity to the walls of an enclosure, has been validated as a measure of anxiogenic behavior (Simon et al., 1994; Seibenhener and Wooten, 2015), with increased time on edge signifying increased anxiety-like behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Simon et al., 1994 and Seibenhener and Wooten, 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "10c22426-0c4d-419c-a8a1-b1390c8f2fbe",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ntn1 is expressed in both dopamine and GABA neurons in the adult VTA, with 72.2% of Ntn1+ cells being dopaminergic and 18.1% GABAergic, while 64.5% of dopamine neurons and 30.4% of GABA neurons express Ntn1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide converging evidence from multiple techniques (Allen Brain Atlas in situ hybridization, RNAscope, and immunohistochemistry) demonstrating Ntn1 expression patterns in the VTA. The quantification is specific and supported by Figure 1 data, establishing the cellular distribution of Ntn1 in adult VTA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "1adb47d7-9f11-45ce-ab3c-f8051341c4ce",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CRISPR-mediated Ntn1 knockout in VTA dopamine neurons significantly reduces Ntn1 protein expression without affecting dopamine neuron number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 demonstrate successful genetic manipulation with immunohistochemistry validation (p<0.0001) and show no significant cell loss, though the authors appropriately note that complete stereological analysis was not performed. The validation is adequate for confirming knockout efficiency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "057ec659-cb30-424c-8a24-0c857375833e",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ntn1 loss of function in either VTA dopamine or GABA neurons reduces excitatory synaptic connectivity (mEPSC amplitude and frequency) without affecting inhibitory connectivity or presynaptic release probability, specifically reducing AMPA but not NMDA receptor-mediated currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 provide comprehensive electrophysiological characterization showing consistent effects on excitatory transmission across both cell types. The data include mEPSCs, mIPSCs, paired-pulse ratio, and receptor-specific pharmacology, all with appropriate statistical analysis. The postsynaptic mechanism is well-supported by the combination of reduced mEPSC amplitude, unchanged PPR, and selective AMPA receptor effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "e6df989a-da87-47b6-a6ee-0aa55ac9146b",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ntn1 loss of function does not produce non-cell autonomous effects on synaptic connectivity in non-targeted VTA neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 demonstrate cell-autonomous effects by showing no changes in mEPSCs or mIPSCs in non-fluorescent (non-targeted) cells. This control experiment is important for ruling out paracrine effects of the secreted protein Ntn1 and strengthens the interpretation of cell-specific mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "4dcfad99-d422-4a4b-9939-dba162b3331a",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ntn1 loss of function in VTA dopamine neurons does not significantly affect locomotion, operant conditioning (FR1, FR5, progressive ratio), extinction training, or pre-pulse inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17, C19, and C94 consistently show lack of behavioral effects across multiple domains. The comprehensive behavioral battery with appropriate statistical analyses supports the conclusion that reduced excitatory tone on dopamine neurons has minimal behavioral impact, consistent with prior literature cited (C51, C57).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "b907dc92-dfc0-4367-8441-518a18fab719",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ntn1 loss of function in VTA dopamine neurons causes a slight but significant reduction in body weight prior to calorie restriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 reports a statistically significant effect (p<0.05) on body weight. While the effect is modest and the mechanism unclear, the finding is adequately documented in supplementary data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "415d63b2-88d0-4075-8b07-31020df01309",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ntn1 loss of function in VTA dopamine neurons increases anxiety-like behavior as measured by increased time on edge and decreased time in center of open field arena.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 shows statistically significant effects (p<0.01) on both measures of thigmotaxis, a validated measure of anxiety-like behavior (C100). The bidirectional changes in edge vs. center time strengthen the interpretation of increased anxiety.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "ef2cf41c-1e2d-4975-ad17-2bd1d1d63b12",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ntn1 loss of function in VTA GABA neurons produces a hyperdopaminergic behavioral phenotype including hyperlocomotion, increased motivation (FR5, progressive ratio), impaired extinction, reduced acoustic startle and PPI, and increased anxiety-like behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 and C96 demonstrate robust behavioral effects across multiple domains with appropriate statistical significance. The constellation of behaviors is consistent with a hyperdopaminergic state and aligns with prior work on VTA GABA neuron disruption (C52, C55, C56). The comprehensive behavioral characterization strongly supports this major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "640f3e53-d9ae-4e2a-b127-1d1ebe23dffc",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pre-calorie restriction body weights in Vgat-Cre Ntn1 cKO mice do not differ from controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 provides an important control showing that unlike DAT-Cre mice (C18), GABA-specific knockout does not affect body weight, ruling out this potential confound for the behavioral effects observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "7b4fa26a-1d87-437a-8acb-10de983bf8a0",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Simultaneous Ntn1 loss of function in both VTA dopamine and GABA neurons largely rescues the hyperdopaminergic phenotype observed with GABA-only knockout, restoring locomotion, acoustic startle, PPI, and open field behavior to control levels, though modest effects on progressive ratio and extinction remain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 and C98 demonstrate a striking rescue effect when both cell types are manipulated simultaneously. The partial rescue (with some residual effects on motivation and extinction) is well-documented and supports the balance hypothesis. This is a key finding demonstrating that the ratio of excitatory drive between cell types is critical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "df9c78fa-7c49-4a92-935e-122c9b0d2b7e",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A balance of glutamatergic signaling between VTA dopamine and GABA neurons is essential for normal mesolimbic dopamine system function, with simultaneous reduction in both cell types re-equilibrating the system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C82-C84, and C89 synthesize the major findings into a coherent model. The rescue experiment (double knockout) provides strong support for this balance hypothesis. The model is well-supported by the data showing minimal effects of dopamine neuron knockout alone, robust effects of GABA neuron knockout, and rescue with combined knockout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "1b29899f-6ef9-48aa-a054-6808245f60f3",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Ntn1 regulates excitatory synaptic connectivity through postsynaptic mechanisms, specifically affecting AMPA receptor availability without regulating inhibitory connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C85, and C86 are well-supported by the electrophysiology data showing changes in mEPSC frequency without PPR changes, no effects on mIPSCs, and selective reduction in AMPA-evoked currents. The inference of postsynaptic mechanisms is reasonable given the data, though direct receptor trafficking studies would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "3ad9d5ff-7f44-400a-a4ba-8a0a894134c8",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Loss of excitatory drive onto dopamine neurons can be compensated through disinhibitory circuits, while reduced excitatory input onto GABA neurons suppresses inhibition of dopamine neurons, allowing unchecked excitatory drive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C88 propose mechanistic explanations for the behavioral findings but are largely speculative (marked as SPECULATION in evidence_type). While the proposed mechanisms are plausible and consistent with known VTA circuitry, they lack direct experimental support such as measurements of dopamine neuron activity or inhibitory tone in the different conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "604795f0-5fb5-459f-ba98-c97a7d1f2636",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Ntn1 likely regulates excitatory synaptic connectivity through DCC receptor-mediated effects on actin cytoskeleton and AMPA receptor trafficking to the postsynaptic density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79 and C50 propose molecular mechanisms based on prior literature, but the current study does not directly test these mechanisms. While the reduced AMPA currents are consistent with receptor trafficking defects (C50), and the cited literature supports DCC-mediated cytoskeletal regulation, these remain hypotheses requiring direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "c68f3ae3-0cb0-404e-a262-9794ac6bde3c",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "There is a push-pull relationship between netrin/Dcc/Unc5 and Slit/Robo signaling pathways in the VTA, with netrin/Dcc/Unc5 regulating excitation and Slit/Robo regulating inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 proposes an interesting parallel between developmental axon guidance mechanisms and adult synaptic maintenance, drawing on prior work showing Robo2 regulates inhibitory connectivity (C40). However, this remains speculative as the current study does not directly test interactions between these pathways or examine Robo2 function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    },
+    {
+      "id": "ad909052-dd61-495c-a435-04c5833afdd6",
+      "content_id": "5ef681c3-193b-40db-93cd-9bb6b4a4e326",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "No sex differences were observed in behavioral or electrophysiological results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 reports post-hoc analysis finding no sex differences, allowing pooling of male and female data. This is an important methodological detail, though the manuscript does not provide the actual statistical comparisons or power analysis for detecting sex differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:49:51.946172Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "54b64024-a235-4402-a7cc-051659249fec",
+      "result_id": "10c22426-0c4d-419c-a8a1-b1390c8f2fbe"
+    },
+    {
+      "claim_id": "5e17baa7-cf44-4660-a665-940ed159caee",
+      "result_id": "10c22426-0c4d-419c-a8a1-b1390c8f2fbe"
+    },
+    {
+      "claim_id": "c7ad27ec-2a87-4c6f-bc6e-1373af98f00d",
+      "result_id": "10c22426-0c4d-419c-a8a1-b1390c8f2fbe"
+    },
+    {
+      "claim_id": "57a84be9-ad99-45c5-bac9-0db41f21e81c",
+      "result_id": "10c22426-0c4d-419c-a8a1-b1390c8f2fbe"
+    },
+    {
+      "claim_id": "76ed434f-14f1-4faf-9b76-de58a0b80382",
+      "result_id": "10c22426-0c4d-419c-a8a1-b1390c8f2fbe"
+    },
+    {
+      "claim_id": "85f3f18e-1fda-463b-8620-f803cc960e87",
+      "result_id": "1adb47d7-9f11-45ce-ab3c-f8051341c4ce"
+    },
+    {
+      "claim_id": "22357a63-81eb-4f1f-b5ec-fff39bee74e2",
+      "result_id": "1adb47d7-9f11-45ce-ab3c-f8051341c4ce"
+    },
+    {
+      "claim_id": "76c37f61-e36c-4723-a477-70bc2b1972b7",
+      "result_id": "057ec659-cb30-424c-8a24-0c857375833e"
+    },
+    {
+      "claim_id": "e7f40325-fcaf-4582-8a16-58666e3f300b",
+      "result_id": "057ec659-cb30-424c-8a24-0c857375833e"
+    },
+    {
+      "claim_id": "bd5aecdf-bff8-4706-abf9-cecc1a1308ad",
+      "result_id": "057ec659-cb30-424c-8a24-0c857375833e"
+    },
+    {
+      "claim_id": "2f2bb03e-5e47-41d2-a793-aa7bb4cb35b0",
+      "result_id": "057ec659-cb30-424c-8a24-0c857375833e"
+    },
+    {
+      "claim_id": "e70c4caa-624a-4d37-b30a-2353e3f792fe",
+      "result_id": "057ec659-cb30-424c-8a24-0c857375833e"
+    },
+    {
+      "claim_id": "9e3e2484-6f12-4561-aadb-d9db4b981586",
+      "result_id": "057ec659-cb30-424c-8a24-0c857375833e"
+    },
+    {
+      "claim_id": "2dd5ff83-68fa-4e6b-acdb-56fc52a7ae9e",
+      "result_id": "e6df989a-da87-47b6-a6ee-0aa55ac9146b"
+    },
+    {
+      "claim_id": "8d6722f0-c6c7-420e-9f5a-a72c7025d9ec",
+      "result_id": "e6df989a-da87-47b6-a6ee-0aa55ac9146b"
+    },
+    {
+      "claim_id": "4d752a0c-7b67-430f-9d57-cfc21918e254",
+      "result_id": "4dcfad99-d422-4a4b-9939-dba162b3331a"
+    },
+    {
+      "claim_id": "43696b54-857a-41be-890e-5c90fa001ce5",
+      "result_id": "4dcfad99-d422-4a4b-9939-dba162b3331a"
+    },
+    {
+      "claim_id": "d17da3dc-6513-4316-8c48-99053b2662b6",
+      "result_id": "4dcfad99-d422-4a4b-9939-dba162b3331a"
+    },
+    {
+      "claim_id": "22614b20-088d-493a-88e6-3d72c4b5f4f4",
+      "result_id": "4dcfad99-d422-4a4b-9939-dba162b3331a"
+    },
+    {
+      "claim_id": "64088fec-3f29-4163-bde0-8852051b1245",
+      "result_id": "4dcfad99-d422-4a4b-9939-dba162b3331a"
+    },
+    {
+      "claim_id": "2a772493-398c-4bdb-9a84-52791ae248fb",
+      "result_id": "4dcfad99-d422-4a4b-9939-dba162b3331a"
+    },
+    {
+      "claim_id": "d96ff133-3461-4fa0-aca3-0aad5c81aa21",
+      "result_id": "b907dc92-dfc0-4367-8441-518a18fab719"
+    },
+    {
+      "claim_id": "2edda20a-2a3e-4d18-a7af-e79809751968",
+      "result_id": "415d63b2-88d0-4075-8b07-31020df01309"
+    },
+    {
+      "claim_id": "0556eb0d-3cb0-4e65-bc0d-b8297d5bf379",
+      "result_id": "ef2cf41c-1e2d-4975-ad17-2bd1d1d63b12"
+    },
+    {
+      "claim_id": "b7a73081-f536-439d-93d5-f65b4b6f38cd",
+      "result_id": "ef2cf41c-1e2d-4975-ad17-2bd1d1d63b12"
+    },
+    {
+      "claim_id": "550134e8-c9eb-4ade-95f5-7105ba36a42d",
+      "result_id": "ef2cf41c-1e2d-4975-ad17-2bd1d1d63b12"
+    },
+    {
+      "claim_id": "1c4e4efa-3fd1-4cc4-90f8-c68348bfcda7",
+      "result_id": "ef2cf41c-1e2d-4975-ad17-2bd1d1d63b12"
+    },
+    {
+      "claim_id": "c019f1f3-7468-4251-9723-1d0950130d6c",
+      "result_id": "ef2cf41c-1e2d-4975-ad17-2bd1d1d63b12"
+    },
+    {
+      "claim_id": "4e917141-2f13-4619-b836-59203abe45d1",
+      "result_id": "ef2cf41c-1e2d-4975-ad17-2bd1d1d63b12"
+    },
+    {
+      "claim_id": "01353858-1434-4190-9dfe-717b89336a45",
+      "result_id": "ef2cf41c-1e2d-4975-ad17-2bd1d1d63b12"
+    },
+    {
+      "claim_id": "2e23051b-f24f-49b5-b447-f5b3ff892eb4",
+      "result_id": "ef2cf41c-1e2d-4975-ad17-2bd1d1d63b12"
+    },
+    {
+      "claim_id": "71ba6bc2-5490-4cff-bb91-82f1c4a377a6",
+      "result_id": "640f3e53-d9ae-4e2a-b127-1d1ebe23dffc"
+    },
+    {
+      "claim_id": "1b9947e8-0d7b-4a33-a7fc-b3a07765b4f5",
+      "result_id": "7b4fa26a-1d87-437a-8acb-10de983bf8a0"
+    },
+    {
+      "claim_id": "20919763-841c-4c73-b75b-872e988920b7",
+      "result_id": "7b4fa26a-1d87-437a-8acb-10de983bf8a0"
+    },
+    {
+      "claim_id": "26ccf623-b49c-4c0d-ab89-3caee8381d46",
+      "result_id": "7b4fa26a-1d87-437a-8acb-10de983bf8a0"
+    },
+    {
+      "claim_id": "b3543ab7-2d13-4168-bd0d-e286492e9e21",
+      "result_id": "7b4fa26a-1d87-437a-8acb-10de983bf8a0"
+    },
+    {
+      "claim_id": "9dc3bc09-f052-4435-b245-fd136a2af58e",
+      "result_id": "7b4fa26a-1d87-437a-8acb-10de983bf8a0"
+    },
+    {
+      "claim_id": "225b24ca-cccb-4a2c-a9b2-977cc0300845",
+      "result_id": "7b4fa26a-1d87-437a-8acb-10de983bf8a0"
+    },
+    {
+      "claim_id": "cfe0738a-5166-46d7-a6b8-a47778798e7b",
+      "result_id": "7b4fa26a-1d87-437a-8acb-10de983bf8a0"
+    },
+    {
+      "claim_id": "83633572-4dd7-42d7-bc0f-04325430e3d0",
+      "result_id": "df9c78fa-7c49-4a92-935e-122c9b0d2b7e"
+    },
+    {
+      "claim_id": "e3925305-1c37-4754-ad6f-304012600c64",
+      "result_id": "df9c78fa-7c49-4a92-935e-122c9b0d2b7e"
+    },
+    {
+      "claim_id": "97f73a1a-fa54-4918-8ad4-c33eb9305710",
+      "result_id": "df9c78fa-7c49-4a92-935e-122c9b0d2b7e"
+    },
+    {
+      "claim_id": "1c55dffb-c83b-4435-93f4-08a882b81b0e",
+      "result_id": "df9c78fa-7c49-4a92-935e-122c9b0d2b7e"
+    },
+    {
+      "claim_id": "96f28680-d26b-4151-aa46-2bea30cc1622",
+      "result_id": "df9c78fa-7c49-4a92-935e-122c9b0d2b7e"
+    },
+    {
+      "claim_id": "e6b8bff5-386a-4950-81d7-05c6b761a488",
+      "result_id": "1b29899f-6ef9-48aa-a054-6808245f60f3"
+    },
+    {
+      "claim_id": "1e3df7ce-0f56-4c79-9847-90ff88e670cc",
+      "result_id": "1b29899f-6ef9-48aa-a054-6808245f60f3"
+    },
+    {
+      "claim_id": "7fa53ce1-160d-4ce3-bb19-9ffdd63e9184",
+      "result_id": "1b29899f-6ef9-48aa-a054-6808245f60f3"
+    },
+    {
+      "claim_id": "91379689-8a7e-4ada-aaab-ee0928d619ee",
+      "result_id": "3ad9d5ff-7f44-400a-a4ba-8a0a894134c8"
+    },
+    {
+      "claim_id": "d9ca5eab-8af3-44ff-8f00-9d26cf4feb08",
+      "result_id": "3ad9d5ff-7f44-400a-a4ba-8a0a894134c8"
+    },
+    {
+      "claim_id": "6839f596-f7e7-4694-bc09-7df4d60d0f2c",
+      "result_id": "604795f0-5fb5-459f-ba98-c97a7d1f2636"
+    },
+    {
+      "claim_id": "6f7ac859-b686-4602-99ed-2008005c5a13",
+      "result_id": "604795f0-5fb5-459f-ba98-c97a7d1f2636"
+    },
+    {
+      "claim_id": "9922ffcf-9ad7-4ed7-adf6-295a2e9a3dd5",
+      "result_id": "604795f0-5fb5-459f-ba98-c97a7d1f2636"
+    },
+    {
+      "claim_id": "aa34f1dd-821e-42a3-a73d-3ab8eab24856",
+      "result_id": "c68f3ae3-0cb0-404e-a262-9794ac6bde3c"
+    },
+    {
+      "claim_id": "371d9002-227d-4db5-8309-27f118b47c5e",
+      "result_id": "ad909052-dd61-495c-a435-04c5833afdd6"
+    }
+  ],
+  "comparisons": []
+}

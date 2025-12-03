@@ -1,0 +1,1588 @@
+{
+  "submission": {
+    "id": "b64e54af-fa69-4819-b72a-0ecc2da621c3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:04:53.060788Z",
+    "updated_at": "2025-12-03T11:04:53.060788Z"
+  },
+  "content": [
+    {
+      "id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "submission_id": "b64e54af-fa69-4819-b72a-0ecc2da621c3",
+      "content_type": "manuscript",
+      "content_text": "# Mosaic cis-regulatory evolution drives transcriptional partitioning of HERVH endogenous retrovirus in the human embryo\n\n## Authors\n\n- Thomas A Carter<sup>1</sup> ([ORCID: 0000-0001-7081-3259](https://orcid.org/0000-0001-7081-3259))\n- Manvendra Singh<sup>1</sup> ([ORCID: 0000-0002-8626-5418](https://orcid.org/0000-0002-8626-5418))\n- Gabrijela Dumbovi\u0107<sup>2</sup>\n- Jason D Chobirko<sup>1</sup> ([ORCID: 0000-0001-8495-9152](https://orcid.org/0000-0001-8495-9152))\n- John L Rinn<sup>2</sup> ([ORCID: 0000-0002-7231-7539](https://orcid.org/0000-0002-7231-7539))\n- C\u00e9dric Feschotte<sup>1</sup> ([ORCID: 0000-0002-8772-6976](https://orcid.org/0000-0002-8772-6976)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology and Genetics, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))\n2. BioFrontiers Institute, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))\n3. Institute for Cardiovascular Regeneration, Goethe University Frankfurt Frankfurt am Main Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))\n4. Department of Biochemistry, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe human endogenous retrovirus type-H (HERVH) family is expressed in the preimplantation embryo. A subset of these elements are specifically transcribed in pluripotent stem cells where they appear to exert regulatory activities promoting self-renewal and pluripotency. How HERVH elements achieve such transcriptional specificity remains poorly understood. To uncover the sequence features underlying HERVH transcriptional activity, we performed a phyloregulatory analysis of the long terminal repeats (LTR7) of the HERVH family, which harbor its promoter, using a wealth of regulatory genomics data. We found that the family includes at least eight previously unrecognized subfamilies that have been active at different timepoints in primate evolution and display distinct expression patterns during human embryonic development. Notably, nearly all HERVH elements transcribed in ESCs belong to one of the youngest subfamilies we dubbed LTR7up. LTR7 sequence evolution was driven by a mixture of mutational processes, including point mutations, duplications, and multiple recombination events between subfamilies, that led to transcription factor binding motif modules characteristic of each subfamily. Using a reporter assay, we show that one such motif, a predicted SOX2/3 binding site unique to LTR7up, is essential for robust promoter activity in induced pluripotent stem cells. Together these findings illuminate the mechanisms by which HERVH diversified its expression pattern during evolution to colonize distinct cellular niches within the human embryo.\n\n## Introduction\n\nTransposable elements (TEs) are genomic parasites that use the host cell machinery for their own propagation. To propagate in the host genome, they must generate new insertions in germ cells or their embryonic precursors, as to be passed on to the next generation (Charlesworth and Langley, 1986; Cosby et al., 2019; Haig, 2016). To this end, many TEs have evolved stage-specific expression in germ cells or early embryonic development (Faulkner et al., 2009; Fort et al., 2014; G\u00f6ke et al., 2015; Miao et al., 2020; Urusov et al., 2011). But how does this precise control of TE expression evolve?\n\nMany endogenous retroviruses (ERVs) are known to exhibit highly stage-specific expression during early embryonic development (Chang et al., 2021; G\u00f6ke et al., 2015; Hermant and Torres-Padilla, 2021; Peaston et al., 2004; Svoboda et al., 2004). ERVs are derived from exogenous retroviruses with which they share the same prototypical structure with two long terminal repeats (LTRs) flanking an internal region encoding products promoting their replication (Eickbush and Malik, 2002). There are hundreds of ERV families and subfamilies in the human genome, each associated to unique LTR sequences (Kojima, 2018; Vargiu et al., 2016). Each family has infiltrated the germline at different evolutionary timepoints and have achieved various levels of genomic amplification (Bannert and Kurth, 2004; Vargiu et al., 2016). One of the most abundant families is HERVH, a family derived from a gamma retrovirus that first entered the genome of the common ancestor of apes, Old World monkeys (OWMs), and New World monkeys more than 40 million years ago (mya) (Goodchild et al., 1993; Izsv\u00e1k et al., 2016; Mager and Freeman, 1995). To date, no polymorphic HERVH insertions have been found in the human genome (Thomas et al., 2018).\n\nThere are four subfamilies of HERVH elements currently recognized in the Dfam (Storer et al., 2021) and Repbase (Bao et al., 2015; Kojima, 2018) databases and annotated in the reference human genome based on distinct LTR consensus sequences: LTR7 (formerly known as Type I), 7b (Type II), 7c, and 7y (Type Ia) (Bao et al., 2015; Goodchild et al., 1993; Jern et al., 2005; Jern et al., 2004). Additional subdivisions of HERVH elements were also proposed based on phylogenetic analysis and structural variation of their internal gene sequences (Gemmell et al., 2019; Jern et al., 2005; Jern et al., 2004). However, all HERVH elements are currently annotated in the human genome using a single consensus sequence for the internal region (HERVH_int) and the aforementioned four LTR subfamilies.\n\nHERVH has been the focus of extensive genomic investigation for its high level of RNA expression in human embryonic stem cells (ESCs) and induced pluripotent stem cells (iPSCs) (Fort et al., 2014; Gemmell et al., 2015; Izsv\u00e1k et al., 2016; Kelley and Rinn, 2012; Loewer et al., 2010; R\u00f6mer et al., 2017; Santoni et al., 2012; Zhang et al., 2019). Several studies showed that family-wide HERVH knockdown results in the loss of pluripotency of human ESC and reduced reprogramming efficiency of somatic cells to iPSC (Lu et al., 2014; Ohnuki et al., 2014; Wang et al., 2014). Others reported similar phenotypes with the knockdown of individual HERVH-derived RNAs such as those produced from the lincRNA-RoR and ESRG loci (Loewer et al., 2010; Wang et al., 2014) or the deletion of individual HERVH loci acting as boundaries for topological associated domains (Zhang et al., 2019). These results converge on the notion that HERVH products (RNA or proteins) exert some modulatory effect on the cellular homeostasis of pluripotent stem cells. However, it is important to emphasize that different HERVH knockdown constructs produced variable results and inconsistent phenotypes (Lu et al., 2014; Wang et al., 2014; Zhang et al., 2019), and a recent knockout experiment of the most highly transcribed locus (ESRG) failed to recapitulate its previous knockdown phenotype (Takahashi et al., 2021). These inconsistent results have failed to clarify which expressed HERVH loci, if any, are necessary for the maintenance of pluripotency.\n\nThe mechanisms regulating the transcription of HERVH also remain poorly understood. RNA-seq analyses have established that HERVH expression in human ESCs, iPSCs, and the pluripotent epiblast can be attributed to a relatively small subset of loci (estimated between 83 and 209) driven by LTR7 (sensu stricto) sequences (G\u00f6ke et al., 2015; Wang et al., 2014; Zhang et al., 2019). The related 7y sequences are known to be expressed in the pluripotent epiblast of human embryos (G\u00f6ke et al., 2015) and a distinct subset of elements associated with 7b and 7y sequences are expressed even earlier in development at the onset of embryonic genome activation (G\u00f6ke et al., 2015). These observations suggest that the HERVH family is composed of subsets of elements expressed at different timepoints during embryonic development and that these expression patterns reflect, at least in part, the unique cis-regulatory activities of their LTRs. While it has been reported that several transcription factors (TFs) bind and activate HERVH LTRs, including the pluripotency factors OCT4, NANOG, SP1, and SOX2 (G\u00f6ke et al., 2015; Ito et al., 2017; Kelley and Rinn, 2012; Kunarso et al., 2010; Ohnuki et al., 2014; Pontis et al., 2019; Santoni et al., 2012), it remains unclear how TF binding contributes to the differential expression of HERVH subfamilies and why only a minority of HERVH are robustly transcribed in pluripotent stem cells and embryonic development.\n\nTo shed light on these questions, we focused this study on the cis-regulatory evolution of LTR7 elements. We use a \u2018phyloregulatory\u2019 approach combining phylogenetic analyses and regulatory genomics to investigate the sequence determinants underlying the partitioning of expression of HERVH/LTR7 subfamilies during early embryonic development.\n\n## Results\n\n### LTR7 consists of eight previously undefined subfamilies\n\nWe began our investigation by examining the sequence relationships of the four LTR7 subfamilies currently recognized in the human genome: LTR7 sensu stricto (748 proviral copies; 711 solo LTRs), 7b (113; 524), 7c (24; 223), and 7y (77; 77). We built a maximum likelihood phylogenetic tree from a multiple sequence alignment of a total of 781 5\u2019 LTR and 1073 solo LTR sequences of near-complete length (>350 bp) representing all intact LTR subfamilies extracted from the RepeatMasker output of the hg38 human reference assembly. While 7b and 7y sequences cluster, as expected, into clear monophyletic clades with relatively short internode distances and little subclade structure, sequences from the 7c and LTR7 subfamilies were much more heterogeneous and formed many subclades (Figure 1A). Notably, sequences annotated as LTR7 were split into distinct monophyletic clades indicative of previously unrecognized subfamilies within that group. The branch length separating some of these LTR7 subclades were longer from one another than they were from those falling within the 7b, 7c, and 7y clades, indicating that they represent subfamilies as different from each other as those previously recognized (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig1-v2.jpg)\n\n**Figure 1.:** (A) Unrooted phylogeny of all solo and 5\u2019 LTR7 subfamilies from LTR7, 7b, 7c, and 7y. Colors denote clades consisting of previously annotated 7b, 7c, and 7y with >95% concordance. (B) Unrooted phylogeny of all solo and 5\u2019 LTR7 sequences. All nodes with ultrafast bootstraps (UFbootstraps) > 0.95, >10 member insertions, and >1.5 substitutions/100 bp (~6 base pairs) are grouped and colored (see Materials and methods). Previously listed consensus sequences from 7b/c/y were included in the alignment and are shown in black. (C) Median-joining network analysis of all LTR7 and related majority rule consensus sequences. Ticks indicate the number of SNPs at non-gaps between consensus sequences. The size of circles is proportional to the number of members in each subfamily. Only LTR7 insertions that met filtering requirements (see Materials and methods) are included while 7b/c/y counts are from dfam.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The consensus RVT domain was used to extract RT from individual LTR7 insertions. Relative node ages are shown at the end of the terminal branch lengths and are colored corresponding to their subfamily of origin. Only nodes with ultrafast bootstrap support >0.95 are shown. All displayed nodes are considered high confidence.\n\nWe next sought to classify LTR7 elements more finely by performing a phylogenetic analysis using a multiple sequence alignment of all intact LTR7 sequences (>350 bp) along with the consensus sequences for the other LTR7 subfamilies for reference. We defined high-confidence subfamilies as those forming a clade supported by >95% ultrafast bootstrap (UFbootstrap) and internal branches > 0.015 (1.5 nucleotide substitutions per 100 bp) separating subgroup nodes. Based on these criteria, LTR7 elements could be divided into eight subfamilies (Figure 1B).\n\nWhile long internal branches with high UFbootstrap support separate LTR7 subfamilies, intra-subfamily internal branches with >95% UFbootstrap support were shorter (<0.015), suggesting that each subfamily was the product of a rapid burst of amplification of a common ancestor. To approximate the sequence of these ancestral elements, we generated majority rule consensus sequence for each of the eight newly defined LTR7 subfamilies (7o, 7bc, 7up, etc.). The consensus sequences were deposited at https://www.dfam.org.\n\nTo investigate the evolutionary relationships among the newly defined and previously known LTR7 subfamilies, we conducted a median-joining network analysis (Leigh and Bryant, 2015) of their consensus sequences (Figure 1C). The network analysis provides additional information on the relationships between subfamilies and approximates the shortest and most parsimonious paths between them (Bandelt et al., 1999; Cordaux et al., 2004; Posada and Crandall, 2001). The results place 7o in a central position from which two major lineages are derived. One lineage led to two sub-lineages, formed by 7up1, 7up2, and 7u1 (with 7up1 and 7up2 being most closely related) and by 7d1 and 7d2. The other lineage emanating from 7o rapidly split into two sub-lineages; one gave rise to 7u2 and then to 7y and the other gave rise to 7bc which is connected to the two more diverged subfamilies 7b and 7c (Figure 1C). Together these results indicate that the LTRs of HERVH elements can be divided into additional subfamilies than those previously recognized.\n\n### The age of LTR7 subfamilies suggests three major waves of HERVH propagation\n\nThe genetic differences between LTR7 subfamilies suggest that they may have been active at different evolutionary timepoints. To examine this, we used reciprocal liftover analysis to infer the presence/absence of each human LTR7 locus across five other primate genomes. Insertions shared at orthologous genomic position across a set of species are deemed to be ancestral to these species and thus can be inferred to be at least as old as the divergence time of these species and likely fixed within each species (Johnson, 2019).\n\nThe results of this cross-species analysis indicate that LTR7 subfamilies have been transpositionally active at different timepoints in the primate lineage (Figure 2A). The subfamilies 7o, 7bc, and 7c are the oldest since the majority of their insertions are found at orthologous position in rhesus macaque, an OWM. These three subfamilies share similar evolutionary trajectories, with most of their proliferation occurring prior to the split of OWM and hominoids, ~25 mya (Figure 2A). Members of the 7b subfamily (the most numerous, 637 solo and full-length insertions) appear to be overall younger, since only 22% of the human 7b elements could be lifted over to rhesus macaque and the vast majority appeared to have inserted between 10 and 20 mya (Figure 2A, Figure 2\u2014figure supplement 1). Only 5 of the 550 elements in the 7d1 and 7d2 subfamilies could be retrieved in rhesus macaque, but ~30% were shared with gibbon and ~75% were shared with orangutan. Thus, these two subfamilies are largely hominoid-specific and achieved most of their proliferation prior to the split of African and Asian great apes ~14 mya (Figure 2A). Members of the 7u1 subfamily also emerged in the hominoid ancestor, but the majority (55%) of 7u1 elements present in the human genome inserted after the split of gibbons in the great ape ancestor, between 14 and 20 mya. Thus, the 7b, 7d1/2, and 7u1 subfamilies primarily amplified during the same evolutionary window, 14\u201320 mya.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig2-v2.jpg)\n\n**Figure 2.:** (A) Proportion of a given subfamily that have 1:1 orthologous insertions between human and other primate species. LTR7 subfamilies are from the tree in Figure 1B; 7b/c/y subfamilies are from RepeatMasker annotations. Non-human primates are spaced out on the X axis in accordance with their approximate divergence times to the human lineage. (B) Terminal branch lengths of all LTR7 insertions from Figure 1B. Groups with similar liftover profiles were merged for statistical testing (see Materials and methods). Differences with padj <1e-15 are denoted with * (Wilcoxon rank-sum test with Bonferroni correction).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The absolute number of human endogenous retrovirus type-H (HERVH) long terminal repeats (LTRs) that are in human is listed at MYA 0. Those that reciprocally liftover to chimpanzee, gorilla, orangutan, gibbon, and rhesus macaque are plotted as dots left to right with their relative divergence ages plotted as MYA (bottom). Points are connected with lines, where the slope approximates the rate of propagation of each subfamily between speciation events. This is a sister plot to main text Figure 2A; the only difference is instead of proportion of reciprocal liftover, this is the gross number.\n\nThe 7up1/2, 7y, and 7u2 subfamilies represent the youngest in the human genome, with most of their proliferation occurring between ~10 and ~ 14 mya, in the ancestor of African great apes (Figure 2A). Based on these results, these subfamilies seem to have experienced a burst of transposition after the divergence of African and Asian great apes but before the split of the pan/homo and gorilla lineages. For example, only 14 of the 208 (6.7%) human 7up1 elements can be retrieved in orangutan, but 178 (85.6%) can be found in gorilla. These data indicate that the three youngest LTR7 subfamilies mostly expanded in the ancestor of African great apes (Figure 2A).\n\nAs an independent dating method, we used the terminal branch length separating each insertion from its nearest node in Figure 1B (Figure 2). Here, the terminal branch lengths are proportional to nucleotide divergence accumulated after insertion and can thus approximate each insertion\u2019s relative age. This method largely corroborated the results of the liftover analysis and revealed three age groups among LTR7 subfamilies characterized by statistically different mean branch lengths (p(adj) < 1e-15; Wilcoxon rank-sum test). By contrast, we found no statistical difference between the mean branch length of the subfamilies within these three age groups, suggesting that they were concomitantly active. Taken together, our dating analyses distinguish three major waves of HERV propagation: an older wave 25\u201340 mya involving 7c, 7o, and 7bc elements, an intermediate wave 9\u201320 mya involving 7b, 7d1/2, and 7u1, and a most recent wave 4\u201310 mya implicating primarily 7up1/2, 7u2, and 7y elements.\n\n### Only LTR7up shows robust transcription in human ESC and iPSC\n\nOur data thus far indicate that LTR7 is composed of genetically and evolutionarily distinct subfamilies. Because a subset of HERVH elements linked to LTR7 were previously reported to be transcribed in pluripotent stem cells (human ESCs and iPSCs), we wondered whether this activity was restricted to one or several of the LTR7 subfamilies newly defined herein. To investigate this, we performed a \u2018phyloregulatory\u2019 analysis, where we layered locus-specific regulatory data obtained from publicly available genome-wide assays in ESCs (mostly from the H1 cell line, see Materials and methods) for each LTR insertion on top of a phylogenetic tree depicting their evolutionary relationship. We called an individual LTR7 insertion as positive for a given feature if there is overlap between the coordinates of the LTR and that of a peak called for this mark (see Materials and methods). We predicted that if transcriptional activity was an ancestral property of a given subfamily, evidence of transcription and \u2018activation\u2019 marks should be clustered within the cognate clade. Alternatively, if transcription and activation marks were to be distributed throughout the tree, it would indicate that LTR7 transcriptional activity in pluripotent cells was primarily driven by post-insertional sequence divergence or context-specific effects such as local chromatin or cis-regulatory environments. Differences in the proportion of positive insertions for a given mark between LTR7 subfamilies were tested using a chi-square test with Bonferroni correction. Unless otherwise noted, all proportions compared thereafter were significantly different (padj < 0.05).\n\nThe results (Figure 3A) show that HERVH elements inferred to be \u2018highly expressed\u2019 (fpkm > 2) based on RNA-seq analysis (Wang et al., 2014) were largely confined to two closely related subfamilies, 7up1 and 7up2, together referred to as 7up hereafter. Indeed, we estimated that 33% of 7up elements (88 loci) are highly expressed according to RNA-seq compared with only 2% of highly expressed elements from all other subfamilies combined (17 loci). Nascent RNA mapping using GRO-seq data (Estar\u00e1s et al., 2015) recapitulated this trend with 22% of 7up loci with visible signal (Figure 3\u2014figure supplement 1), compared with only 4% of other LTR7 loci (Figure 3D, Figure 3\u2014figure supplement 1). Half of the loci displaying GRO-seq signal (53/96) also showed evidence of mature RNA product (Supplementary file 1). Thus, HERVH transcriptional activity in H1 ESCs is largely limited to loci driven by 7up sequences.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig3-v2.jpg)\n\n**Figure 3.:** (A) '\u201cPhyloregulatory\u2019 map of LTR7. The phylogenetic analysis to derive the circular tree is the same as for the tree in Figure 1B but rooted on the 7b consensus. Subfamilies defined in Figure 1 are denoted with dotted colored tips. Positive regulatory calls for each insertion are shown as tick marks of different colors and no tick mark indicates a negative call. All marks are derived from embryonic stem cell (ESC) except for ZNF90 and ZNF534, which are derived from ChIP-exo data after overexpression of these factors in HEK293 cells (see Materials and methods). (B) Heatmap of major activation and repression profiles. Proportions indicate the proportion of each group positive for a given characteristic. Trees group LTR7 subfamilies on regulatory signature, not sequence similarity. Asterisks denote statistical differences between given group and 7up1 (padj < 0.05 Wilcoxon rank-sum with Bonferroni correction). (C) Heatmap done in similar fashion to B but for repression marks. (D) Heatmap of transcribed (>2 fpkm) and untranscribed 7up1/2 (<2 fpkm) and all 7d1/2. Red asterisks denote statistical differences between 7d1/2 and 7up1 (padj < 0.05 chi-square Bonferroni correction). White asterisks denote differences between transcribed and untranscribed LTR7up.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Visible window is 500 bp upstream of the start of 5\u2019 (or solo) long terminal repeats (LTR) and extends to 8 kb after this point (~3 kb past 3\u2019 LTR or ~7.5 kb past solo into genomic DNA). Loci are sorted on GRO-seq data in the visible window.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Y axis is (log TPM [transcripts per million]).\n\nAs previously noted from ChIP-seq data (Ohnuki et al., 2014), we found that KLF4 binding is a strong predictor of transcriptional activity: KLF4 ChIP-seq peaks overlap 91% of 7up loci and KLF4 binding is strongly enriched for the 7up subfamilies relative to other subfamilies (Figure 3A, B, and D). NANOG binding is also enriched for 7up (97.7% of loci overlap ChIP-seq peaks) but is observed to varying degrees at other LTR7 loci that do not show evidence of active transcription based on GRO-seq and/or RNA-seq (85% of 7u1 loci, 32% 7d1, 45% 7d2, 13% 7o, 8.7% 7bc, and 0% of 7u2). While KLF4 and NANOG binding is pervasive across the 7up subfamily, OCT4 binds merely 12% of 7up loci. Other TFs with known roles in pluripotency are also enriched at 7up loci, such as SOX2 (32% LTR7up, 1\u20133% all other LTR7), FOXP1(49%, 0\u20134.3%), and FOXA1(28%, 0\u20131.4%). In fact, FOXA1 binds only a single non-7up insertion in our dataset, making it the most exclusive feature of 7up loci among the TFs examined in this analysis (see Supplementary file 8 for full statistical analysis of all marks).\n\nCongruent with having generally more TF binding and transcriptional activity, 7up loci also have a propensity to be decorated by H3K4me3, a mark of active promoters (76% LTR7up vs. 19% all others) and the broader activity mark H3K27ac (89% vs. 48%) (Figure 3A, B). By contrast, H3K4me1, a mark typically associated with low POLII loading as seen at enhancers as opposed to promoters, is spread rather evenly throughout the tree of LTR7 sequences (26% vs. 18%) (Figure 3A, B). Thus, promoter marks are primarily restricted to 7up loci, but a broader range of LTR7 loci display putative enhancer marks.\n\nTaken together, our phyloregulatory analysis suggests that strong promoter activity in ESCs is restricted to 7up elements.\n\n### Differential activation, rather than repression, explain the differential transcriptional activity of LTR7 subfamilies in ESCs\n\nThe pattern described above could be explained by two non-mutually exclusive hypotheses: (i) 7up elements (most likely their progenitor) have acquired unique sequences (TF binding sites, TFBS) that promote Pol II recruitment and active transcription, and/or (ii) they somehow escape repressive mechanisms that actively target the other subfamilies, preventing their transcription. For instance, 7up elements may lack sequences targeted by transcriptional repressors such as KRAB-zinc finger proteins (KZFPs) that silence the other subfamilies in ESCs. KZFPs are well known for binding TEs in a subfamily-specific manner where they nucleate inheritable epigenetic silencing (Ecco et al., 2017; Jacobs et al., 2014; Wolf et al., 2020; Yang et al., 2017) and several KZFPs are known to be capable of binding LTR7 loci (Imbeault et al., 2017). To examine whether KZFPs may differentially bind to LTR7 subfamilies, we analyzed the loading of the corepressor KAP1 and the repressive histone mark H3K9me3 typically deposited through the KZFP/KAP1 complex, across the LTR7 phylogeny using ChIP-seq data previously generated for ESCs (Imbeault et al., 2017; Theunissen et al., 2016). We found that KAP1 and H3K9me3 loading were neither enriched nor depleted for 7up elements relative to other subfamilies (Figure 3A, C). Overall, there were no significant differences in the level of H3K9me3 marking across subfamilies and the only difference in KAP1 binding was a slight but significant depletion for 7bc and 7o compared to all other subfamilies including 7up (14% vs. 35% \u2013 padj < 0.05 chi-square Bonferroni correction). Furthermore, KAP1 and H3K9me3 loading were found in similar proportions in expressed and unexpressed 7up elements (padj > 0.05) (Figure 3C). This was also the case for CpG methylation, whose presence was not differential between subfamilies (padj > 0.05 Wilcoxon rank-sum with Bonferroni correction) (Figure 3\u2014figure supplement 1). Thus, KAP1 binding and repressive marks at LTR7 in ESCs poorly correlate with their transcriptional activity and differential repression is unlikely to explain the differential promoter activity of LTR7 subfamilies in ESCs.\n\nWe also examined the binding profile of ZNF534 and ZNF90, two KZFPs previously reported to be enriched for binding LTR7 elements using ChIP-exo data in human embryonic kidney 293 cells (Imbeault et al., 2017), in order to examine whether they bind a particular subset of elements in our LTR7 phylogeny. We found that while ZNF90 bound all LTR7 subfamilies to a similar extent, ZNF534 preferentially bound members of the 7up subfamily (72% of LTR7up vs. 34\u201353% of non-LTR7up). However, ZNF534 binding in 293 cells did not correlate with transcriptional activity of 7up elements in ESCs nor with KAP1 binding or H3K9me3 deposition in these cells (Figure 3A, D). In other words, there was no significant enrichment for ZNF534 binding within untranscribed 7up elements nor depletion within the 7up elements we inferred to be highly transcribed in ESCs. These observations could simply reflect the fact that ZNF534 itself is not highly expressed in ESCs (Figure 3\u2014figure supplement 2) and do not preclude that ZNF534 represses 7up in other cellular contexts or cell types. Collectively, these data suggest that differential LTR binding of KZFP/KAP1 across subfamilies cannot readily explain their differential regulatory activities in ESCs. Thus, differential activation is the most likely driver for the promoter activity of 7up elements in ESCs.\n\nTo determine which factors are associated and potentially determinant for 7up promoter activity, we compared the set of \u2018highly expressed\u2019 7up loci to 7up loci which are apparently poorly expressed, using 7d1/d2 as outgroups (Figure 3D). While known regulators of LTR7 transcription, KLF4 and NANOG, are enriched for binding to 7up elements, their occupancy alone cannot distinguish transcribed from untranscribed 7up loci (Figure 3D). Thus, other factors must contribute to the transcriptional activation of 7up elements. Our analysis of pluripotent transcriptional activators SOX2, FOXA1, FOXP1, OCT4, TCF4, and SMAD1 (Boyer et al., 2005; Chambers and Smith, 2004; Niwa, 2007) binding profiles show that all of these TFs are enriched in robustly transcribed 7up loci compared to non-transcribed loci (Figure 3D). Intriguingly, when overexpressed in HEK293 cells, the potential KZFP repressor ZNF534 preferably binds ESC-transcribed 7up over untranscribed 7up, suggesting that ZNF534 may suppress transcription-competent 7up in cellular contexts where this factor is expressed.\n\nTogether these data suggest that differential repression cannot explain the differential promoter activity of LTR7 subfamilies in ESCs but rather that highly expressed LTR7up loci are preferentially bound by a cocktail of transcriptional activators that are less prevalent on poorly expressed loci.\n\n### Inter-element recombination and intra-element duplication drove LTR7 sequence evolution\n\nThe data presented above suggest that the transcriptional activity of 7up in ESCs emerged from the gain of a unique combination of TFBS. To identify sequences unique to 7up relative to its closely related subfamilies, we aligned the consensus sequences of the newly defined LTR7 subfamilies and those of 7b/c/y consensus sequences. This multiple sequence alignment revealed blocks of sequences that tend to be highly conserved across subfamilies, only diverging by a few SNPs, while other regions showed insertion/deletion (indel) segments specific to one or a few subfamilies (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig4-v2.jpg)\n\n**Figure 4.:** (A) A multiple sequence alignment of LTR7 subfamily consensus sequences. The phylogenetic topology from Figure 1 is shown on the left. The MSA is broken down into sequence blocks (red lines) with differential patterns of relationships. (B) Parsimony trees from A sequence blocks. Subfamilies whose blocks do not match the overall phylogeny are highlighted in red. Bootstrap values > 0 are shown. (C) Blastn alignment of LTR7up1 block 2a and 2b. (D) A multiple sequence alignment of majority rule consensus sequences from each LTR7 subfamily detailing shared structure. Blocks show aligned sequence; gaps represent absent sequence. Colored sections identify putative phylogeny-breaking events. Recombination events whose directionality can be inferred (via aging) are shown with blocks and arrows on the cladogram. Recombination events with multiple possible routes are denoted with \u2018?\u2019. The deletion of 2b is denoted on the cladogram with a red \u2018X\u2019; the duplication of 2a is denoted with two red rectangles.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Sequence blocks 2a and 2b for all subfamilies were aligned using MUSCLE and the output was used to generate a parsimony tree in SEAVIEW (see Materials and methods).\n\nUpon closer scrutiny, we noticed that the indels characterizing some of the subfamilies were at odds with the evolutionary relationship of the subfamilies defined by overall phylogenetic and network analyses. This was particularly obvious in segments we termed block 2b (where 7y and 7u2 share a large insertion with 7b and 7c) and block 3 (where 7y and 7b share a large insertion). This led us to carefully examine the multiple sequence alignment of the LTR7 consensus sequences to identify indels with different patterns of inter-subfamily relationships. Based on this analysis, we defined seven sequence blocks shared by a different subset of subfamilies, pointing at relationships that were at odds with the overall phylogeny of the LTR7 subfamilies (Figure 4A\u2013B). These observations suggested that some of the blocks have been exchanged between LTR7 subfamilies through recombination events.\n\nTo systematically test if recombination events between elements drove the evolution of LTR7 subfamilies, we generated parsimony trees for each block of consensus sequences and looked for incongruences with the overall consensus phylogeny. We found a minimum of six instances of clades supported in the block parsimony trees that were incongruent with those supported by the overall phylogeny (Figure 4B and D).\n\nWe also found some blocks evolved via tandem duplication. Notably, block 2b was absent from 7d1/2 and 7bc/o but present in all other subfamilies. However, block 2b from 7b, 7c, 7u2, and 7y aligned poorly with block 2b from 7up and 7u1. Instead, block 2b from 7up/u1 2b was closely related (~81% nucleotide similarity) to block 2a from the same subfamilies (Figure 4C, Figure 4\u2014figure supplement 1), suggestive that it arose via tandem duplication in the common ancestor of these subfamilies.\n\nThe results above suggest that the evolution of HERVH was characterized by extensive diversification of LTR sequences through a mixture of point mutations, indels, and recombination events.\n\n### HERVH subfamilies show distinct expression profiles in the preimplantation embryo\n\nWe hypothesized that the mosaic pattern of LTR sequence evolution, which represents a mixture of point mutations, duplications, and inter-element recombination, gave rise to TFBS combinations unique to each family that drove shifts in HERVH expression during early embryogenesis. To test this, we aimed to reanalyze the expression profiles of newly defined LTR7 subfamilies during early human embryogenesis and correlate these patterns with the acquisition of embryonic TF binding motifs within each of the subfamilies.\n\nTo perform this analysis, we first reannotated the hg38 reference genome assembly using RepeatMasker with a custom library consisting of the consensus sequences for the eight newly defined LTR7 subfamilies plus newly generated consensus sequences for 7b, 7c, and 7y subfamilies redefined from the phylogenetic analysis presented in Figure 1B (Figure 5\u2014figure supplement 1) (see Materials and methods). Our newly generated RepeatMasker annotations (Supplementary file 2) did not drastically differ from previous annotations of LTR7 and 7c, where 90% and 86% of insertions, respectively, were concordant with the old RepeatMasker annotations (though LTR7 insertions were now assigned to one of the eight newly defined subfamilies). 7y and 7b annotations, however, shifted significantly. Only 33% of previously annotated 7y reannotated concordantly with 53% now being annotated as 7u2 and only 52% of 7b reannotated concordantly, with 22% now annotated as 7y. These shifts can be largely explained by the fact that 7u2 and 7y are closely related (Figure 1A\u2013C) and 7y and 7b share a great deal of sequence through recombination events (Figure 4B\u2013C).\n\nNext we used the newly generated RepeatMasker annotations to examine the RNA expression profiles of the different LTR7 subfamilies using scRNA-seq data from human preimplantation embryos and RNA-seq data from human ESCs (Blakeley et al., 2015; Tang et al., 2010) (see Materials and methods).\n\nAs expected, we found that the 7up subfamilies were highly expressed in the pluripotent epiblast and in ESCs (Figure 5). 7up expression was highly specific to these pluripotent cell types, with little to no transcription at earlier developmental timepoints. As previously observed (G\u00f6ke et al., 2015), the 7b subfamily exhibited expression at the 8 cell and morula stages, coinciding with EGA (Figure 5). Another remarkable expression pattern was that of 7u2 which was restricted to the pluripotent epiblast (Figure 5). Interestingly, the 7y subfamily combined the expression of 7b and 7u2 (8 cell and morula plus epiblast), perhaps reflecting the acquisition of sequence blocks from both subfamilies (Figure 4B\u2013C). Despite very similar sequence and age (Figures 1, 2 and 4A), 7bc and 7o elements show stark contrast in their expression profiles. 7o elements show no significant transcription at any timepoint in early development, while 7bc elements display RNA expression throughout the blastocyst, including trophectoderm and inner cell mass, primitive endoderm, and pluripotent epiblast (Figure 5). Previous expression analysis of the oldest LTR7 subfamily, 7c, did not find robust stage-specific expression (G\u00f6ke et al., 2015). Our analysis revealed that some 7c elements display moderate RNA expression at various developmental stages (Figure 5). This pattern may reflect the relatively high level of sequence heterogeneity within this subfamily (Figure 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig5-v2.jpg)\n\n**Figure 5.:** The solid dots and lines encompassing the violins represent the median and quartiles of single cellular RNA expression. The color scheme is based on embryonic stages, defined as maternal control of early embryos (oocytes, zygote, 2 cell and 4 cell stage), EGA (8 cell and morula), inner cell mass (ICM), trophectoderm (TE), epiblast (EPI), and primitive endoderm (PE) from the blastocyst, and ESCs at passages 0 and 10.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Consensus sequences for LTR7 subfamilies were generated from Figure 1 (main text \u2013 see Materials and methods). Here, we show which sequences were included for the LTR7B, LTR7Y, and LTR7C (LTR7C1+ LTR7C2) consensus sequence generations (purple circles, black labels) using the tree from Figure 1A. Previously annotated LTR7B/C/Y and LTR7 subfamily subdivision annotations from Figure 1 (main text) are shown with colored node ages. The LTR7u2 sister clade was not included in the LTR7Y consensus generation.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (Upper panel) Jittered boxplot representing the relative average expression difference (log2 FC) of LTR7 subgroups in na\u00efve and primed cells. Every dot is the log2 FC of one replicate of na\u00efve cells relative to primed cells of the corresponding subfamily. (Middle panel) Heatmap showing the differential expression of distinctive LTR7 subgroups (log2 FC) in individual na\u00efve cells compared with their respective primed cells. (Lower panel) Bar plot showing the average expression across samples of each LTR7 subgroup.\n\nIn summary, our analysis indicates that LTR7 subfamilies have distinct but partially overlapping expression profiles during human early embryonic development that appear to mirror their complex history of sequence diversification.\n\n### A predicted SOX2/3 motif unique to 7up is required for transcriptional activity in pluripotent stem cells\n\nWe hypothesized that differences in embryonic transcription among LTR7 subfamilies were driven by the gain and loss of TF binding motifs, and that one or more of these mutations led to 7up\u2019s pluripotent-specific transcription. To find TF motifs enriched within each LTR7 subfamily relative to the others, we performed an unbiased motif enrichment analysis using the program HOMER to calculate enrichment scores of known TF motifs within each segmental block defined in Figure 4A in a pairwise comparison of each subfamily against each of the other subfamilies (see Materials and methods). The results yielded a slew of TF motifs enriched for each subfamily relative to the others (see Figure 6A for 7up1 and enrichment for all HERVH subfamilies in filesSupplementary files 3 and 4 3,4Supplementary files 3 and 4). These results suggested that each LTR7 subfamily possesses a unique repertoire of TF binding motifs, which could explain their differential expression during embryonic development.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig6-v2.jpg)\n\n**Figure 6.:** (A) (log) p-values > 500 for HOMER motifs enriched in 7up1 insertion\u2019s sequence blocks vs. the same blocks from other insertions from other human endogenous retrovirus type-H (HERVH) subfamilies are shown. (B) Line plots show SOX2 ChIP-seq signal at LTR7 subfamily loci in human embryonic stem cells (ESCs). Signal from genomic loci was compiled relative to position 0. The 7up/u1 8 bp insertion position is shown with a dotted line. Region 2b harboring SOX2/3 transcription factor binding site (TFBS) is detailed below. (C) Scheme of DNA fragments cloned into pGL3-basic vector driving luciferase gene expression (LUC) with identified SOX2/3 motifs. Three constructs were analyzed: Entire LTR7up (7up1), 7d1/2 consensus sequence (approximate ancestral sequence for all LTR7d) and LTR7up with eight nucleotides deleted (LTR7up (\u03948bp \u2013 AAAAGAAG)) (see panel B). (D) Normalized relative luciferase activity of tested fragments compared to LTR7 down; n = 4 measurements; bars, means across replicates; error bars, standard deviation of the mean, dots, individual replicates.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Heatmap showing averaged and scaled expression (log of normalized CPM values) of human TFs with enriched motifs in LTR7-up1 subgroup and those are expressed ([log TPM (transcripts per million)] > 1) at least in one cell of early human embryos (A-C). Color scheme is based on z-score distribution, from \u20134 (light blue) to 4 (dark red). (B) The merged dotplot and heatmap demonstrates overrepresentation analysis of pluripotency TFs binding in distinctive LTR7 subgroups. Color intensity corresponds to log scaled enrichment of the analyzed ChIP-seq peaks within LTR7 subgroups compared to randomized 500 bps bins of human genome. Dots represent the significance (\u2212log10 [FDR]) of ChIP-seq enrichment within a given LTR7 subgroup (see Materials and methods). (C) Violin plots detail the spread of expression of SOX2/3 in the preimplantation embryo. Y axis is log2 TPM.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Insertions are ranked from highest to lowest in SOX3 motif (HOMER \u2013 see Materials and methods) strength. Visible window is -500 bp to +8kb from start of 5' or solo LTR. SOX2 signal intensity over long terminal repeats (LTRs - not entire visible window) with this SOX3 motif and those without was not significantly different (Wilcoxon rank-sum test with Bonferroni correction).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig6-figsupp3-v2.jpg)\n\nNext, we sought to pinpoint mutational events responsible for the gain of TF motifs responsible for the unique expression of 7up in ESC. The single most striking motif distinguishing the 7up clade from the others was a SOX2/3 motif which coincided with an 8 bp insertion in block 2b (Figure 6A, B). Note this motif (and insertion) was also present in 7u1, the closest relative to 7up (Figure 1), but absent in all other subfamilies (Figure 6B).\n\nWe hypothesized that the 8 bp insertion provided a binding motif for SOX2 and/or SOX3 contributing to 7up promoter activity in ESCs. Indeed, SOX2 and SOX3 bind a highly similar motif (Bergsland et al., 2011; Heinz et al., 2010), activate an overlapping set of genes, and play a redundant function in pluripotency (Corsinotti et al., 2017; Niwa et al., 2016; Wang et al., 2012). In addition, we observed that both SOX2 and SOX3 are expressed in human ESCs but SOX3 was more specifically expressed in ESCs (Figure 6\u2014figure supplement 1A, C). While SOX3 binding has not been profiled in human ESCs, ChIP-seq data available for SOX2 indicated that it binds preferentially 7up in a region coinciding with the 8 bp motif (Figure 6B). Together these observations suggest that 7up promoter activity in ESCs might be conferred in part by the gain of a SOX2/3 motif in block 2b.\n\nTo experimentally test this prediction, we used a luciferase reporter to assay promoter activity of three different LTR7 sequences in iPSCs (see Materials and methods). The first consisted of the full-length 7d consensus sequence (predicted to be inactive in iPSCs), the second contained the full-length 7up1 consensus (predicted to be active), and the third used the same 7up1 consensus sequence but lacking the 8 bp motif unique to 7up1/2 and 7u1 elements overlapping the SOX2/3 motif (Figure 6B, C). The results of the assays revealed that the 7d construct exhibited, as predicted, only weak promoter activity in iPSC compared to the empty vector (Figure 6D), while the 7up1 construct had much stronger promoter activity, driving on average 7.8-fold more luciferase expression than 7d and 100-fold more than the empty vector (Figure 6D). Strikingly, the promoter activity was essentially abolished in the 7up1 construct lacking the 8 bp motif, which drove minimal luciferase expression (on average, 3-fold less than LTR7d and 20-fold less than the intact LTR7up sequence). These results demonstrate that the 8 bp motif in 7up1 is necessary for robust promoter activity in iPSCs, likely by providing a SOX2/3 binding site essential for this activity.\n\n## Discussion\n\nThe HERVH family has been the subject of intense investigation for its transcriptional and regulatory activities in human pluripotent stem cells. These studies often have treated the entire family as one homogenous, monophyletic entity and it has remained generally unclear which loci are transcribed and potentially important for pluripotency. This is in part because HERVH/LTR7 is an abundant and young family which poses technical challenges to interrogate the activity of individual loci and design experiments targeting specific members of the family (Chuong et al., 2017; Lanciano and Cristofari, 2020). Here, we applied a \u2018phyloregulatory\u2019 approach that integrates regulatory genomics data to a phylogenetic analysis of LTR7 sequences to reveal several new insights into the origin, evolution, and transcription of HERVH elements. In brief, our results show that: (i) LTR7 is a polyphyletic group composed of at least eight monophyletic subfamilies; (ii) these subfamilies have distinct evolutionary histories and transcriptional profiles in human embryos and a single and relatively small subgroup (~264 loci), LTR7up, exhibits robust promoter activity in ESC; (iii) LTR7 evolution is characterized by the gain, loss, and exchange of cis-regulatory modules likely underlying their transcriptional partitioning during early embryonic development.\n\n### Phyloregulatory analysis of LTR7 disentangles the cis-regulatory evolution of HERVH\n\nPrevious studies have treated LTR7 sensu stricto insertions as equivalent representatives of their subfamilies (Bao et al., 2015; Gemmell et al., 2019; G\u00f6ke et al., 2015; Izsv\u00e1k et al., 2016; Storer et al., 2021; Wang et al., 2014; Zhang et al., 2019). While some of these studies were able to detect differential transcriptional partitioning between LTR7, LTR7y, and LTR7b (G\u00f6ke et al., 2015), the amalgamating of LTR7 loci limited the ability to detect transcriptional variations among LTR7 and to identify key sequence differences responsible for divergent transcription patterns. Our granular parsing of LTR7 elements and their phyloregulatory profiling has revealed striking genetic, regulatory, and evolutionary differences among these sequences. Importantly, a phylogeny based on the coding sequence (reverse transcriptase [RVT] domain) of HERVH provided less granularity to separate the subfamilies than the LTR sequences (Figure 1\u2014figure supplement 1). The classification of new subfamilies within LTR7 enabled us to discover that they have distinct expression profiles during early embryonic development (Figure 5) that were previously obscured by their aggregation into a single group of elements. For example, the 7u2 subfamily is, to our knowledge, the first subfamily of human TEs reported to have preimplantation expression exclusively in the epiblast.\n\nIt has been observed for some time that only a small subset of HERVH elements are expressed in ESCs (Gemmell et al., 2019; G\u00f6ke et al., 2015; Ohnuki et al., 2014; Santoni et al., 2012; Sch\u00f6n et al., 2001; Wang et al., 2014; Zhang et al., 2019). Some have attributed this property to variation in the internal region of HERVH, context-dependent effects (local chromatin or cis-regulatory environment) and/or age (Gemmell et al., 2019; Zhang et al., 2019). Our results provide an additional, perhaps simpler explanation: we found that HERVH elements expressed in ESCs are almost exclusively driven by two closely related subfamilies of LTR7 (7up) that emerged most recently in hominoid evolution. We identified one 8 bp sequence motif overlaps a predicted SOX2/3 binding site unique to the 7up lineage that is required for promoter activity in pluripotent stem cells. This exact motif is also present in the untranscribed 7u1 subfamily. More distantly related subfamilies also have SOX2/3 binding sites elsewhere on their sequence (Supplementary file 4), indicating that the presence of a SOX2/3 site is not sufficient to confer transcriptional activity in ESC. Additionally, the strength of the motif match does not correlate with SOX2 binding or transcription within 7up (Figure 6\u2014figure supplement 2). Perhaps SOX2/3 cooperatively bind with other TF to uniquely activate 7up. These results highlight that the primary sequence of the LTR plays an important role in differentiating and diversifying HERVH expression during human embryonic development.\n\nThe phyloregulatory approach outlined in this study could be applied to illuminate the regulatory activities of LTR elements in other cellular contexts. In addition to embryogenesis, subsets of LTR7 and LTR7y elements are known to be upregulated in oncogenic states (Babaian and Mager, 2016; Glinsky, 2015; Kong et al., 2019; Yu et al., 2013). It would be interesting to explore whether these activities can be linked to the gain of specific TFBS using the new LTR7 annotations and regulatory information presented herein. Other human LTR families, such as MER41, LTR12C, or LTR13, have been previously identified as enriched for particular TF binding and cis-regulatory activities in specific cellular contexts (Chuong et al., 2016; Deniz et al., 2020; Ito et al., 2017; Kr\u00f6nung et al., 2016; Sundaram et al., 2014). In each case, TF binding enrichment was driven by a relatively small subset of loci within each family. We suspect that some of the intrafamilial differences in TF binding and cis-regulatory activity may be caused by unrecognized subfamily structure and subfamily-specific combinations of TFBS, much like we observe for LTR7.\n\n### Recombination as a driver of LTR cis-regulatory evolution\n\nRecombination is a common and important force in the evolution of exogenous RNA viruses (Jetzt et al., 2000; P\u00e9rez-Losada et al., 2015; Simon-Loriere and Holmes, 2011) and ERVs (Vargiu et al., 2016). Traditional models of recombination describe recombination occurring due to template switching during reverse transcription, a process that requires the co-packaging of RNA genomes, a feature of retroviruses and some retrotransposons (Lai, 1992; Matsuda and Garfinkel, 2009). Previous studies proposed that the HERVH family had undergone inter-element recombination events of both its coding genes (Mager and Freeman, 1987; Vargiu et al., 2016) and LTR (Goodchild et al., 1993). Specifically, it was inferred that recombination event between Type I LTR (i.e., LTR7) and Type II LTR (LTR7b) led to the emergence of Type Ia (LTR7y).\n\nOur findings of extensive sequence block exchange between 7y and 7b (Figure 4D) are consistent with these inferences. Furthermore, our division of HERVH into at least 11 subfamilies, rather than the original trio (Type I, II, Ia), and systematic analysis of recombination events (Figure 4) suggest that recombination has occurred between multiple lineages of elements and has been a pervasive force underlying LTR diversification. We identified a minimum of six recombination events spanning 20 my of primate evolution (see Figure 4D and summary model in Figure 7). The coincidence of recombination events with changes in expression profiles (Figure 7) suggests that these events were instrumental to the diversification of HERVH embryonic expression. The hybrid origin and subsequent burst of amplification of LTR7 subfamilies (Figures 1 and 2) suggest they expanded rapidly after shifting their transcriptional profiles. The coincidence of niche colonization with a burst in transposition leads us to speculate that these shifts in expression were foundational to the formation and successful expansion of new HERVH subfamilies. It would be interesting to explore whether inter-element recombination has also contributed to the evolution of other LTR subfamilies and the diversification of their expression patterns.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76257/elife-76257-fig7-v2.jpg)\n\n**Figure 7.:** Estimated LTR7 subfamily transpositional activity in million years ago (mya) is listed with corresponding approximate primate divergence times (bottom). The positioning and duration of transpositional activity are based on analysis from Figure 3B. The gray connections between subfamilies indicate average tree topology which is driven by overall pairwise sequence similarity. Dashed lines indicate likely recombination events which led to the founding of new subfamilies. Stage-specific expression profiles from Figure 5A are detailed to the right of each corresponding branch.\n\nPrevious work has highlighted the role of TEs, and LTRs in particular, in donating built-in cis-regulatory sequences promoting the evolutionary rewiring of mammalian transcriptional networks (Chuong et al., 2017; Feschotte, 2008; Hermant and Torres-Padilla, 2021; Jacques et al., 2013; Rebollo et al., 2012; Sundaram and Wysocka, 2020; Thompson et al., 2016). We show that recombination provides another layer to this idea, where combinations of TFBS can be mixed-and-matched, then mobilized and propagated, further accelerating the diversification of these regulatory DNA elements. As HERVH expanded and diversified, its newly evolved cis-regulatory modules became confined to specific host lineages (Figure 2). Thus, it is possible that the formation of new LTR via recombination and their subsequent amplification catalyzed cis-regulatory divergence across primate species.\n\n### LTR evolution enabled HERVH\u2019s colonization of different niches in the human embryo\n\nOur evolutionary analysis reveals that multiple HERVH subfamilies were transpositionally active in parallel during the past ~25 my of primate evolution (Figures 2 and 7). This is in stark contrast to the pattern of LINE1 evolution in primates, which is characterized by a single subfamily being predominantly active at any given time (Khan et al., 2006). We hypothesize that the ability of HERVH to colonize multiple cellular niches underlie this difference. Indeed, we observe that concurrently active HERVH subfamilies are transcribed at different developmental stages, such as 7up and 7u2 being transcribed in the pluripotent epiblast at the same time that 7y and the youngest 7b were transcribed at the 8 cell and morula stages (Figure 7). We posit that this partitioning allowed multiple HERVH subfamilies to amplify in parallel without causing overt genome instability and cell death during embryonic development.\n\nNiche diversification may have also enabled HERVH to evade cell-type-specific repression by host-encoded factors such as KZFPs. KZFPs are thought to emerge and adapt during evolution to silence specific TE subfamilies in a cell-type-specific manner (Bruno et al., 2019; Cosby et al., 2019; Ecco et al., 2017; Imbeault et al., 2017). For example, there is evidence that the progenitors of the currently active L1HS subfamily became silenced in human ESCs via KZFP targeting, but evaded that repression and persisted in that niche through the deletion of the KZFP binding site (Jacobs et al., 2014). HERVH may have persisted through another evasive strategy: changing their TFBS repertoire to colonize niches lacking their repressors. To silence all LTR7, any potential HERVH-targeting KZFP would need to gain expression in multiple cellular contexts. For example, one potential repressor, ZNF534, binds a wide range of LTR7 sequences, but is particularly enriched at 7up in HEK293 cells (Figure 3A, D). Our analysis shows that ZNF534 is most highly expressed in the morula, but dips in human ESC (Figure 3\u2014figure supplement 2). Thus, ZNF534 may repress 7up at earlier stages of development but is apparently unable to suppress 7up transcription in pluripotent stem cells. If true, this scenario would illustrate how LTR diversification facilitated HERVH persistence in the face of KZFP coevolution. Further investigation is needed to explore the interplay between KZFPs and HERVH subfamilies during primate evolution.\n\n### Implications for stem cell and regenerative biology\n\nLastly, our findings may provide new opportunities for stem cell research and regenerative medicine. Our data on 7up reinforces previous findings (Corsinotti et al., 2017; Wang et al., 2012) that place SOX2/3 as central players in pluripotency. Furthermore, our analysis identified a set of TFs whose motifs are uniquely enriched in different LTR7 subfamilies with distinct expression patterns in early embryonic cells, which may enable a functional discriminatory analysis of the role of these TFs in each cell type. HERVH/LTR7 has been used as a marker for human pluripotency (Ohnuki et al., 2014; Santoni et al., 2012; Wang et al., 2014), and recent work has revealed that HERVH/LTR7-positive cells may be more amenable to differentiation, and are therefore referred to as \u2018primed\u2019 cells (G\u00f6ke et al., 2015; Theunissen et al., 2016). However, primed cells are not as promising for regenerative medicine as so-called \u2018na\u00efve\u2019 cells (Nichols and Smith, 2009), which are less differentiated and resemble cells from late morula to epiblast, or so-called \u2018formative\u2019 cells, which most closely resemble cells from the early post-implantation epiblast (Kalkan and Smith, 2014; Kinoshita et al., 2021; Rossant and Tam, 2017). Previous pan-LTR7 knockdown experiments have focused on highly transcribed LTR7 in primed ESCs (Lu et al., 2014; Ohnuki et al., 2014; Wang et al., 2012). As such, these experiments have primarily, if not exclusively, targeted 7up elements. While the role of individual 7up copies in the maintenance of pluripotency of primed cells remains to be clarified (Takahashi et al., 2021), our work highlights potential additional roles of other LTR7 subfamilies in na\u00efve, formative ESCs. Of relevance to this issue is our finding that elements of the 7u2 subfamily are highly and exclusively expressed in the pluripotent epiblast in vivo (Figure 5), but weakly so in H1 ESC, which consists of a majority of primed cells and a minority of na\u00efve or formative cells (Gafni et al., 2013). Indeed, while 7up shows expression preference in primed cell lines, 7u2 shows preference for na\u00efve lines (Figure 5\u2014figure supplement 2). Thus, it might be possible to develop an LTR7u2-driven reporter system to mark and purify na\u00efve or formative cells from an heterogenous ESC population. Similarly, a MERVL LTR-GFP transgene has been used in mouse to purify rare 2-cell-like totipotent cells where this LTR is specifically expressed amidst mouse ESCs in culture (Hermant and Torres-Padilla, 2021; Macfarlan et al., 2012).\n\nIn conclusion, our study highlights the modular cis-regulatory evolution of an ERV which has facilitated its transcriptional partitioning in early embryogenesis. We believe that phyloregulatory dissection of endogenous retroviral LTRs has the potential to further our understanding of the evolution, impact, and applications of these elements in a broad range of biomedical areas.\n\n## Materials and methods\n\n### HERVH LTR sequence identification\n\nAll HERVH-int and accompanying LTRs (LTR7, 7b, 7c, and 7y) were extracted from masked (RepeatMasker version 4.0.5 repeat Library 20140131 \u2013 Smit et al., 2013) GRCh38/hg38 (alt chromosomes removed). All annotated HERVH-int and HERVH LTR were run through OneCodeToFindThemAll.pl (Bailly-Bechet et al., 2014) followed by rename_mergedLTRelements.pl (Thomas et al., 2018) to identify solo and full-length HERVH insertions. 5\u2019 LTRs from full-length insertions >4 kb were combined with and solo LTRs. LTRs > 350 bp were considered for future analysis.\n\n### Multiple sequence alignment, phylogenetic tree generation, and LTR7 subdivision\n\nAll HERVH LTRs (Figure 1A \u2013 Supplementary file 5) or only LTR7s (Figure 1B \u2013 Supplementary file 6) were aligned with mafft -auto (Nakamura et al., 2018) strategy: FFT-NS-2/Progressive method followed by PRANK (L\u00f6ytynoja and Goldman, 2010) with options -showanc -support -njtree -uselogs -prunetree -prunedata -F -showevents. Uninformative structural variations were removed with Trimal (Capella-Guti\u00e9rrez et al., 2009) with option -gt 0.01.\n\nTo visualize inter-insertion relationships, the MSA was input into IQtree with options -nt AUTO -m MFP -bb 6000 -asr -minsup.95 (Chernomor et al., 2016). This only displays nodes with UFbootstrap support >0.95.\n\nClusters of >10 insertions sharing a node with UFbootstrap support that were separated from other insertions by internal branch lengths >0.015 (1.5 subs/100 bp) were defined as belonging to a new bona fide LTR7 subfamily (Figure 1B).\n\n### LTR7 consensus generation and network analysis\n\nMajority rule (51%) was used to generate each LTR7 subfamily at nodes described in Figure 1. Positions without majority consensus are listed as \u2018N\u2019. Majority rule consensus sequences were aligned with MUSCLE in SEAVIEW (Supplementary file 7; Edgar, 2004; Gouy et al., 2010). Alignment was visualized with Jalview2 (Waterhouse et al., 2009; Figure 4A) and ggplot2 (Figure 4).\n\nNon-gap SNPs from the muscle alignment were used to construct a median-joining network (Bandelt et al., 1999) with POPART (Leigh and Bryant, 2015).\n\n### RVT domain extraction, alignment, and tree generation\n\nThe RVT domain was extracted from HERVH-int consensus via repbrowser (Fernandes et al., 2020):\n\nCACCCTTACCCCGCTCAATGCCAATATCCCATCCCACAGCATGCTTTAAAAGGATTAAAGCCTGTTATCACTCGCCTGCTACAGCATGGCCTTTTAAAGCCTATAAACTCTCCTTACAATTCCCCCATTTTACCTGTCCTAAAACCAGACAAGCCTTACAAGTTAGTTCAGGATCTGTGCCTTATCAACCAAATTGTTTTGCCTATCCACCCCATGGTGCCAAACCCATATACTCTCCTATCCTCAATACCTCCCTCCACAACCCATTATTCTGTTCTGGATCTCAAACATGCTTTCTTTACTATTCCTTTGCACCCTTCATCCCAGCCTCTCTTCGCTTTCACTTGGA.\n\nThis sequence was blated (best hit) against all annotated HERVH-int in the human genome and matches were extracted. Corresponding LTR7 subdivision annotations from Figure 1 were matched with these HERVH-int RT domains. Mafft alignment and IQTree generation were done identically to the Mafft and IQTree run for the LTRs (see corresponding Materials and methods section).\n\n### Peak calling\n\nChIP-seq datasets representing TFs, histone modifications, and regulatory complexes in human ESCs and differentiated cells were retrieved from GSE61475 (38 distinct TFs and histone modifications), GSE69647 (H3K27Ac, POU5F1, MED1, and CTCF), GSE117395 (H3K27Ac, H3K9Me3, KLF4, and KLF17), and GSE78099 (an array of KRAB-ZNFs and TRIM28) (Imbeault et al., 2017). ZNFs enriched in LTR7 binding (ZNF90, ZNF534, ZNF75, ZNF69B, ZNF257, ZNF57, and ZNF101) from HEK293 peaks were all evaluated, but only ZNF90 and ZNF534 bound >100 LTR7 insertions (data not shown). The others were dropped from the analysis.\n\nChIP-seq reads were aligned to the hg19 human reference genome using the Bowtie2. All reads with phred score <33 and PCR duplicates were removed using bowtie2 and Picard tools, respectively. ChIP-seq peaks were called by MACS2 with the parameters in \u2018narrow\u2019 mode for TFs and \u2018broad\u2019 mode for histone modifications, keeping false discovery rate (FDR) < 1%. ENCODE-defined blacklisted regions were excluded from called peaks. For phyloregulatory analysis (Figure 2), we then converted hg19 to hg38 (no alt) coordinates via UCSC liftover (100% of coordinates lifted) and intersected these peak with the loci from LTR7 subfamilies using bedtools with any overlap. For ChIP-seq binding enrichment on a subset of marks following motif analysis (Figure 5), 70% overlap of peak and LTR was required. Enrichment of a given TF within LTR7 subfamilies was calculated using enrichR package in R, using the customized in-house codes (see the codes on GitHub for the detailed analysis pipelines and calculation of enrichment score).\n\n### Phyloregulatory analysis\n\nPeaks from external ChIP-seq datasets were intersected with LTR7 insertions (Quinlan and Hall, 2010). LTR7 insertions that intersected with >1 bp of peaks were counted as positive for the respective mark. We repeated this analysis with a range of overlap requirements from extending the LTR 500 bp into unique DNA to 70% overlap and found few differential calls (data not shown). The phylogenetic tree rooted on 7b (ggtree) was combined with these binary data (ggheat).\n\n\u2018Highly transcribed\u2019 (fpkm >2) and \u2018chimeric\u2019 HERVH from H1 cells (GSE54726) (Wang et al., 2014) were intersected with LTR7 similarly to ChIP-seq data. Those which intersected LTR7 were marked as \u2018RNA-seq\u2019 or \u2018chimeric\u2019, respectively. GRO-seq profiles from H1 cells (Estar\u00e1s et al., 2015) (GSE64758) were created for windows 10 bp upstream and 8 kb downstream of 5\u2019 and solo LTR7 (Ram\u00edrez et al., 2016). The most visible signal was confined to the top 7th of insertions (Figure 3\u2014figure supplement 1). All LTR7 were subdivided into septiles, due to visible signal being confined to the top 7th of insertions; those of the top septile were labeled \u2018GRO-seq\u2019.\n\n### Peak proportion heatmap generation and statistical analysis\n\nTables with the proportion of solo and 5\u2019 LTRs from a given subfamily positive for select marks (phyloregulatory analysis) were used to generate heatmaps with the R package ggplot (ggheat) (Ginestet, 2011). Those with padj < 0.05 (chi-square Bonferroni correction n = 147 tests for a total of 21 marks examined) were considered significantly enriched in 7up1. Enrichment for non-LTR7up subfamilies was not tested. While not all tested marks are displayed in the main text, statistical analysis was performed with all tested marks (n = 147) (Supplementary file 8). For comparing transcribed 7up to untranscribed 7up, 18 pairwise comparisons were made (Supplementary file 9).\n\n### Aggregate signal heatmap generation\n\nGRO-seq (H1 cells \u2013 GSE64758), whole-genome bisulfite sequencing (WGBS-seq \u2013 H1 cells), SOX2 GEO ID GSE125553 (Bayerl et al., 2021), and H3K9me3 ChIP-seq (H1 \u2013 primed \u2013 GSE78099) bams were retrieved from Estar\u00e1s et al., 2015, ENCODE Project Consortium, 2012, and Theunissen et al., 2016, respectively. Deeptools (Ram\u00edrez et al., 2016) was used to visualize these marks by LTR7 subfamily division in windows 500 bp upstream and 8 kb downstream of the most 5\u2019 position in the LTR (Figure 3\u2014figure supplement 1, Figure 6\u2014figure supplement 2).\n\n### Orthologous insertion aging\n\nHuman coordinates for 7b, 7c, and 7y and LTR7 used in alignments and tree generation were lifted over (Kent et al., 2002; Raney et al., 2014) from GRCh38/hg38 (Miga et al., 2014) to Clint_PTRv2/panTro6 (Waterson et al., 2005), Kamilah_GGO_v0/gorGor6 (Scally et al., 2012), Susie_PABv2/ponAbe3 (Locke et al., 2011), GGSC Nleu3.0/nomLeu3 (Carbone et al., 2014), or Mmul_10/rheMac10 (Gibbs et al., 2007). Those that were successfully lifted over from human to non-human primates (syntenic regions) were then lifted over back to human. Only those that survived both liftovers (1:1 orthologous) were counted as present in non-human primates. The proportion of those orthologous to human and total number of orthologous was plotted with ggplot2.\n\n### Terminal branch length aging\n\nTerminal branch lengths from the LTR7 phylogenetic tree (Figure 1B) were extracted and plotted with ggplot2. Similarly aged subfamilies were inferred from means here and from orthologous insertion aging for statistical testing. Three total groups were tested for differences in means (7up1/7up2/7u2 vs. 7d1/7d2/7u1 vs. 7bc/o) via Wilcoxon rank-sum test with Bonferroni multiple testing correction.\n\n### Identification of recombination breakpoints and consensus parsimony tree generation\n\nMajor recombination breakpoints were identified by eye from the consensus sequence MSA, where SNPs and structural rearrangements seemed to have different relationships between blocks. Putative block recombination events were identified by looking for shared shapes in the block consensus MSA (Figure 4A). To test if these were truly recombination events and could not be explained by evolution by common descent, inter-block sequence relationship differences were tested by generating parsimony trees and comparing these to the overall phylogenetic structure from Figure 1A. Parsimony trees were generated in SEAVIEW, treating all gaps as unknown states (except in the case of 2b, where the entire sequence is gaps and gaps were not treated differently than other sequence), bootstrapped 5000 times with the option \u2018more thorough tree search\u2019. Differences in block parsimony trees and the overall phylogeny that had bootstrap support were marked in red and included in Figures 4D and 7.\n\n### 7up consensus block 2a and 2b alignment and parsimony tree\n\nLTR7up blocks 2a and 2b (Figure 4) appeared to share sequence. To determine if block 2b was the result of a duplication of 2a, we extracted these sequences from the LTR7up1 consensus and aligned them with blastn (NCBI web version) with default settings. To determine the relationship of all HERVH LTR 2a and 2b blocks, we performed a muscle alignment (default settings) of all 2a and 2b from all HERVH LTR consensus sequences and then generated a parsimony tree with 5000 bootstraps with SEAVIEW with the option \u2018more thorough tree search\u2019.\n\n### New LTR7B/C/Y consensus generation and remasking of human genome\n\nConsensus sequences for LTR7 subfamilies were generated using the tree from Figure 1b (see above). For LTR7b/c/y, we used the alignment and tree comprising all HERVH LTR (Figure 5\u2014figure supplement 1). To do this, we identified nodes with >0.95 UFbootstrap support that were comprised of predominately (>90%) of previously annotated LTR7b, LTR7c, or LTR7y. These sequences were used to generate majority rule consensus sequences for their respective subfamily. We generated two mutually exclusive LTR7c consensus sequences (LTR7C1 and LTR7C2) due to the high sequence divergence of LTR7C. Both of these subfamilies were merged into \u2018LTR7C\u2019 after remasking.\n\nParsing previously annotated LTR7 into eight subfamilies and evidence of recurrent recombination events caused concern that HERVH LTRs may be misannotated in the RepeatMasker annotations. To compensate, we remasked (Smit et al., 2013) GRCh38/hg38 (excluding alt chromosomes) with a custom library consisting of the new consensus sequences for LTR7 subfamilies, new consensus sequences for 7b, 7y, and 7c (see above) based on the HERVH LTR tree from Figure 4, and HERVH-int (dfam). We also included annotated consensus sequences from dfam for MER48, MER39, AluYk3, and MST1N2, who we found an HERVH-only library also masked to a limited degree (data not shown). With this library, we ran RepeatMasker with crossmatch and \u2018sensitive\u2019 settings: -e crossmatch -a -s -no_is. Changes in annotations can be found in (HERVH_LTRremasking.xlsx).\n\n### Embryonic HERVH subfamily expression analysis\n\nWe downloaded the raw single-cell RNA-seq datasets from early human embryos and ESCs (GSE36552) and the EPI, PE, TE cells (GSE66507) in sra format. Following the conversion of raw files into fastq format, the quality was determined by using the FastQC. We removed two nucleotides from the ends as their quality scores were highly variable compared with the rest of the sequences in RNA-seq reads. Prior to aligning the resulting reads, we first curated the reference genome annotations using the LTR7 classification, as shown in the manuscript. We extracted the genes (genecode V19) and LTR7 subfamilies (see Figure 5) genomic sequences and combined them to generate a reference transcriptome. These sequences were then appended, comprising the coding sequences plus UTRs of genes and locus-level LTR7 subfamilies sequences in fasta format. We then annotated every fasta sequences with their respective genes or LTR7 subfamilies IDs. To guide the transcriptome assembly, we also appended the each of the resulting contigs and modelled them in gtf format that we utilized for the expression quantification. Next, we indexed the concatenated genes and LTR7 subfamilies transcriptome and genome reference sequences using \u2018salmon\u2019 (Patro et al., 2017). Finally, we aligned the trimmed sequencing reads against the curated reference genome. The \u2018salmon\u2019 tool quantified the counts and normalized expression (transcripts per million [TPM]) for each single-cell RNA-seq sample. Overall, this approach enabled us to simultaneously calculate LTR7 subfamilies and protein-coding gene expression using expected maximization algorithms. Data integration of obtained count matrix, normalization at logarithmic scale, and scaling were performed as per the \u2018Seurat V.3.7\u2019 (http://satijalab.org/seurat/) guidelines. The annotations of cell types were taken as it was classified in original studies. We calculated differential expression and tested their significance level using Kruskal-Wallis test by comparing cell types of interest with the rest of the cells. The obtained p-values were further adjusted by the Benjamini-Hochberg method to calculate the FDR. All the statistics and visualization of RNA-seq were performed on R (https://www.r-project.org/).\n\n### Motif enrichment\n\nFor each subfamily of LTR7 elements, all re-annotated elements were aligned against the subfamily consensus sequence using MUSCLE (Edgar, 2004). These multiple sequence alignments were then split based on the recombination block positions in the consensus sequence. The consensus sequence was then removed. Binding motif position-weight matrices were downloaded from HOMER (Heinz et al., 2010) and were used to perform pairwise motif enrichment using the command \u2018homer2 find\u2019. For LTR7up1 enrichment (Figure 6A \u2013 testing which motifs were enriched in LTR7up1 compared to other subfamilies), enrichment was only calculated for LTR7up1 and the motifs with a -log(p-value) cutoff of 1 \u00d7 10\u20135 were kept. For enrichment in all subfamilies (Supplementary files 3 and 4) \u2013 testing all subfamilies against all others, every pairwise subfamily combination within each block was tested and all results are displayed.\n\n### SOX2 ChIP-seq signal on LTR7\n\nSOX2 ChIP-seq and whole-cell extract datasets from primed human ESCs were downloaded in fastq format from GEO ID GSE125553 (Bayerl et al., 2021). Fastq reads were mapped against the hg19 reference genome with the bowtie2 parameters: -very-sensitive-local. All unmapped reads with Phred score <33 and putative PCR duplicates were removed using Picard and samtools. This analysis was repeated with exclusively uniquely mapping reads which did not affect the outcome of analysis (data not shown). All the ChIP-seq narrow peaks were called by MACS2 (FDR < 0.01). To generate a set of unique peaks, we merged ChIP-seq peaks within 50 bp of one another using the mergeBed function from bedtools. We then intersected these peak sets with LTR7 subgroups from hg19 repeat-masked coordinates using bedtools intersectBed with 50% overlap. LTR7up1 and LTR7up2 were harboring the highest number of peaks compared with the rest of the subgroups. To illustrate the enrichment over the LTR7 subgroups, we first extended 500 basepairs from upstream and downstream coordinates from the left boundary of each LTR7subgroups. These 1 kb windows were further divided into 10 bps bins. The normalized ChIP-seq signal over the local lambda (piled up bedGraph outputs from MACS2) was counted in each bin. These counts were then normalized by the total number of mappable reads per million in given samples and presented as signal per million per 10 bps. Finally, these values were averaged across the loci for each bin to illustrate the subfamilies\u2019 level of ChIP-seq enrichment. Replicates were merged prior to plotting. Note: Pearson\u2019s correlation coefficient between replicates across the bins was found to be r > 0.90.\n\n### SOX3 motif strength correlation with SOX2 binding\n\nAll 7up1, 7up2, and 7u1 loci used in other analyses were ranked based on the strength/presence of the SOX3 motif in block 2b. GRO-seq and SOX2 (see above data sources) reads were layered onto these loci in windows 500 bp upstream and 8 kb downstream.\n\n### Luciferase reporter assay\n\nThe inserts (LTR7 variants or EF1a promoter) with restriction enzyme overhangs were ordered from Genewiz and cloned into pGL3-basic plasmid upstream of the firefly reporter gene (Promega, #E1751). Minipreps were prepared with QIAprep Spin Miniprep kit (Qiagen, #27104). Plasmids were sequenced to ensure the correct sequence and directionality of the insert. Twenty-four hours before transfection, human iPSC WTC-11 (Coriell Institute, GM25256) cells were plated on Vitronectin (Thermo Fisher Scientific, #A14700) coated 12-well plates in Essential 8 Flex medium (Thermo Fisher Scientific, #A2858501) with E8 supplement, Rock inhibitor (STEMCELL Technologies, #72304) and 2.5% penicillin-streptomycin. Cells were co-transfected with 800 ng of plasmid of interest and 150 ng plasmid containing EF1a upstream of GFP for normalization with Lipofectamine Stem transfection reagent (Thermo Fisher Scientific, #STEM00008) according to manufacturer\u2019s instructions. Forty-eight hours after transfection, cell pellet was harvested and luciferase activity was measured with Luciferase Reporter Assay kit (Promega, #E1910) on Glomax (Promega) according to instructions. Transfection efficiency and cell count was normalized with GFP.\n",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "1151b479-efd4-44d4-98d6-8cca76d810e7",
+      "submission_id": "b64e54af-fa69-4819-b72a-0ecc2da621c3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mia T Levine, https://ror.org/00b30xv10 University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76257.sa0](https://doi.org/10.7554/eLife.76257.sa0)\n\nTransposons achieve evolutionary success only upon self-replication in the germline, where novel genomic insertions are passed to the next generation. To define the genetic determinants of transposon specialization to the germline and specifically, specialization to pluripotent embryonic stem cells, this article applies evolutionary analysis, cell type-specific transcriptomics, and expression reporter assays to the human endogenous retrovirus type-H, HERV. Previous links between HERV and the maintenance of pluripotency make the discoveries consequential for the mobile element and genome evolution communities along with those engaged in stem cell biology and regenerative medicine.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Mia T Levine, https://ror.org/00b30xv10 University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76257.sa1](https://doi.org/10.7554/eLife.76257.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "05191336-39c9-4a31-bbe2-261640ef5d2e",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C1",
+      "claim": "The human endogenous retrovirus type-H (HERVH) family is expressed in the preimplantation embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "The human endogenous retrovirus type-H (HERVH) family is expressed in the preimplantation embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about HERVH expression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "f878a613-240b-4cfa-9852-a0df2458cf80",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C2",
+      "claim": "A subset of HERVH elements are specifically transcribed in pluripotent stem cells where they appear to exert regulatory activities promoting self-renewal and pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of these elements are specifically transcribed in pluripotent stem cells where they appear to exert regulatory activities promoting self-renewal and pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract and is supported by citations to previous literature throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "e137b35b-09e2-47b1-92bb-eae325ca243a",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C3",
+      "claim": "The LTR7 family includes at least eight previously unrecognized subfamilies that have been active at different timepoints in primate evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the family includes at least eight previously unrecognized subfamilies that have been active at different timepoints in primate evolution and display distinct expression patterns during human embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by phylogenetic analysis shown in Figure 1B and dating analysis in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "797e2b68-3c85-4ecc-9b4b-ca5d1ae9f204",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C4",
+      "claim": "Nearly all HERVH elements transcribed in ESCs belong to the LTR7up subfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, nearly all HERVH elements transcribed in ESCs belong to one of the youngest subfamilies we dubbed LTR7up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by RNA-seq and GRO-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5173bfc7-c74d-4624-a839-3ba21defd266",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C5",
+      "claim": "LTR7 sequence evolution was driven by a mixture of mutational processes, including point mutations, duplications, and multiple recombination events between subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "LTR7 sequence evolution was driven by a mixture of mutational processes, including point mutations, duplications, and multiple recombination events between subfamilies, that led to transcription factor binding motif modules characteristic of each subfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment and parsimony tree analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "4d403750-af45-45f4-95ce-656b8b20f556",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C6",
+      "claim": "A predicted SOX2/3 binding site unique to LTR7up is essential for robust promoter activity in induced pluripotent stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a reporter assay, we show that one such motif, a predicted SOX2/3 binding site unique to LTR7up, is essential for robust promoter activity in induced pluripotent stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding supported by luciferase reporter assay data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "e4fb5c6c-a36c-4f96-9e26-bc7a38cdaf75",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C7",
+      "claim": "Many TEs have evolved stage-specific expression in germ cells or early embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, many TEs have evolved stage-specific expression in germ cells or early embryonic development (Faulkner et al., 2009; Fort et al., 2014; G\u00f6ke et al., 2015; Miao et al., 2020; Urusov et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "b9fb05a5-39bf-4b2f-8c68-2ee7c186af7d",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C8",
+      "claim": "Many endogenous retroviruses (ERVs) exhibit highly stage-specific expression during early embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Many endogenous retroviruses (ERVs) are known to exhibit highly stage-specific expression during early embryonic development (Chang et al., 2021; G\u00f6ke et al., 2015; Hermant and Torres-Padilla, 2021; Peaston et al., 2004; Svoboda et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "d6aa23a1-1a1d-4d83-80f4-6d4c70b54036",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C9",
+      "claim": "HERVH is a family derived from a gamma retrovirus that first entered the genome of the common ancestor of apes, Old World monkeys (OWMs), and New World monkeys more than 40 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most abundant families is HERVH, a family derived from a gamma retrovirus that first entered the genome of the common ancestor of apes, Old World monkeys (OWMs), and New World monkeys more than 40 million years ago (mya) (Goodchild et al., 1993; Izsv\u00e1k et al., 2016; Mager and Freeman, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "d721641c-7baa-4f91-acb3-10789fee2bdf",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C10",
+      "claim": "No polymorphic HERVH insertions have been found in the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, no polymorphic HERVH insertions have been found in the human genome (Thomas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "435864d8-015b-4f05-811c-315a7b96bfe2",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C11",
+      "claim": "There are four subfamilies of HERVH elements currently recognized in the Dfam and Repbase databases: LTR7, 7b, 7c, and 7y.",
+      "claim_type": "EXPLICIT",
+      "source": "There are four subfamilies of HERVH elements currently recognized in the Dfam (Storer et al., 2021) and Repbase (Bao et al., 2015; Kojima, 2018) databases and annotated in the reference human genome based on distinct LTR consensus sequences: LTR7 (formerly known as Type I), 7b (Type II), 7c, and 7y (Type Ia) (Bao et al., 2015; Goodchild et al., 1993; Jern et al., 2005; Jern et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to databases and previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "a6874e84-4387-43dc-a878-159ca4f38f23",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C12",
+      "claim": "Family-wide HERVH knockdown results in the loss of pluripotency of human ESC and reduced reprogramming efficiency of somatic cells to iPSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies showed that family-wide HERVH knockdown results in the loss of pluripotency of human ESC and reduced reprogramming efficiency of somatic cells to iPSC (Lu et al., 2014; Ohnuki et al., 2014; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "d73bd6cd-58db-465a-9205-a1c6d4d49384",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C13",
+      "claim": "Different HERVH knockdown constructs produced variable results and inconsistent phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to emphasize that different HERVH knockdown constructs produced variable results and inconsistent phenotypes (Lu et al., 2014; Wang et al., 2014; Zhang et al., 2019), and a recent knockout experiment of the most highly transcribed locus (ESRG) failed to recapitulate its previous knockdown phenotype (Takahashi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "c5b44317-fa94-4415-9788-eea7bd221b99",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C14",
+      "claim": "HERVH expression in human ESCs, iPSCs, and the pluripotent epiblast can be attributed to a relatively small subset of loci (estimated between 83 and 209) driven by LTR7 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq analyses have established that HERVH expression in human ESCs, iPSCs, and the pluripotent epiblast can be attributed to a relatively small subset of loci (estimated between 83 and 209) driven by LTR7 (sensu stricto) sequences (G\u00f6ke et al., 2015; Wang et al., 2014; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous RNA-seq studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "236b740a-aebe-41af-a7ac-9a301860c0b8",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C15",
+      "claim": "LTR7 elements can be divided into eight subfamilies based on phylogenetic criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these criteria, LTR7 elements could be divided into eight subfamilies (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by phylogenetic analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "ce704571-e9b8-44f3-9bb5-41e0c6c88b52",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C16",
+      "claim": "The subfamilies 7o, 7bc, and 7c are the oldest LTR7 subfamilies since the majority of their insertions are found at orthologous position in rhesus macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "The subfamilies 7o, 7bc, and 7c are the oldest since the majority of their insertions are found at orthologous position in rhesus macaque, an OWM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reciprocal liftover analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "cfd6f05c-146b-44c9-931d-9c6131d060b0",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C17",
+      "claim": "Most of the proliferation of 7o, 7bc, and 7c occurred prior to the split of OWM and hominoids, ~25 mya.",
+      "claim_type": "EXPLICIT",
+      "source": "These three subfamilies share similar evolutionary trajectories, with most of their proliferation occurring prior to the split of OWM and hominoids, ~25 mya (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reciprocal liftover analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "b78ac060-42fe-417d-9462-f62cdf1c7f4e",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C18",
+      "claim": "Only 22% of human 7b elements could be lifted over to rhesus macaque and the vast majority appeared to have inserted between 10 and 20 mya.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the 7b subfamily (the most numerous, 637 solo and full-length insertions) appear to be overall younger, since only 22% of the human 7b elements could be lifted over to rhesus macaque and the vast majority appeared to have inserted between 10 and 20 mya (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reciprocal liftover analysis shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "1115e8cf-e1b5-4a7d-ad18-fc58d1b84e5c",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C19",
+      "claim": "The 7d1 and 7d2 subfamilies are largely hominoid-specific and achieved most of their proliferation prior to the split of African and Asian great apes ~14 mya.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 5 of the 550 elements in the 7d1 and 7d2 subfamilies could be retrieved in rhesus macaque, but ~30% were shared with gibbon and ~75% were shared with orangutan. Thus, these two subfamilies are largely hominoid-specific and achieved most of their proliferation prior to the split of African and Asian great apes ~14 mya (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reciprocal liftover analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "6aaffcbd-6821-4a5d-9807-e10d5f67e222",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C20",
+      "claim": "The 7up1/2, 7y, and 7u2 subfamilies represent the youngest in the human genome, with most of their proliferation occurring between ~10 and ~ 14 mya, in the ancestor of African great apes.",
+      "claim_type": "EXPLICIT",
+      "source": "The 7up1/2, 7y, and 7u2 subfamilies represent the youngest in the human genome, with most of their proliferation occurring between ~10 and ~ 14 mya, in the ancestor of African great apes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reciprocal liftover analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "d542bd36-940c-409a-9e0a-9d6ca2884a5b",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C21",
+      "claim": "Only 14 of the 208 (6.7%) human 7up1 elements can be retrieved in orangutan, but 178 (85.6%) can be found in gorilla.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, only 14 of the 208 (6.7%) human 7up1 elements can be retrieved in orangutan, but 178 (85.6%) can be found in gorilla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reciprocal liftover analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "a24701dd-cc05-431b-b23e-7f91e03fcdb0",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C22",
+      "claim": "Three major waves of HERVH propagation can be distinguished: an older wave 25\u201340 mya involving 7c, 7o, and 7bc elements, an intermediate wave 9\u201320 mya involving 7b, 7d1/2, and 7u1, and a most recent wave 4\u201310 mya implicating primarily 7up1/2, 7u2, and 7y elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our dating analyses distinguish three major waves of HERV propagation: an older wave 25\u201340 mya involving 7c, 7o, and 7bc elements, an intermediate wave 9\u201320 mya involving 7b, 7d1/2, and 7u1, and a most recent wave 4\u201310 mya implicating primarily 7up1/2, 7u2, and 7y elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by both liftover analysis (Figure 2A) and terminal branch length analysis (Figure 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "6d0ff256-03b6-44fc-8579-d8a225e3f393",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C23",
+      "claim": "33% of 7up elements (88 loci) are highly expressed according to RNA-seq compared with only 2% of highly expressed elements from all other subfamilies combined (17 loci).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we estimated that 33% of 7up elements (88 loci) are highly expressed according to RNA-seq compared with only 2% of highly expressed elements from all other subfamilies combined (17 loci).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data analysis from Wang et al., 2014.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "7a1660a3-74e8-450e-bb3b-8725852c5460",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C25",
+      "claim": "HERVH transcriptional activity in H1 ESCs is largely limited to loci driven by 7up sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, HERVH transcriptional activity in H1 ESCs is largely limited to loci driven by 7up sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq and GRO-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "a001bfa7-77d0-4588-83e7-50cef9141231",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C26",
+      "claim": "KLF4 binding is a strong predictor of transcriptional activity: KLF4 ChIP-seq peaks overlap 91% of 7up loci.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously noted from ChIP-seq data (Ohnuki et al., 2014), we found that KLF4 binding is a strong predictor of transcriptional activity: KLF4 ChIP-seq peaks overlap 91% of 7up loci and KLF4 binding is strongly enriched for the 7up subfamilies relative to other subfamilies (Figure 3A, B, and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "36515a5f-5658-4f4f-a72f-16b670ef2346",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C27",
+      "claim": "NANOG binding is enriched for 7up (97.7% of loci overlap ChIP-seq peaks) but is observed to varying degrees at other LTR7 loci that do not show evidence of active transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "NANOG binding is also enriched for 7up (97.7% of loci overlap ChIP-seq peaks) but is observed to varying degrees at other LTR7 loci that do not show evidence of active transcription based on GRO-seq and/or RNA-seq (85% of 7u1 loci, 32% 7d1, 45% 7d2, 13% 7o, 8.7% 7bc, and 0% of 7u2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5f54f107-bda7-4f7e-b9e1-07f23955f236",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C28",
+      "claim": "OCT4 binds merely 12% of 7up loci.",
+      "claim_type": "EXPLICIT",
+      "source": "While KLF4 and NANOG binding is pervasive across the 7up subfamily, OCT4 binds merely 12% of 7up loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "4a28c214-7ae5-4320-9b4a-88887657f815",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C29",
+      "claim": "SOX2 binds 32% of LTR7up loci and 1\u20133% of all other LTR7 loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Other TFs with known roles in pluripotency are also enriched at 7up loci, such as SOX2 (32% LTR7up, 1\u20133% all other LTR7), FOXP1(49%, 0\u20134.3%), and FOXA1(28%, 0\u20131.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "8fbf5173-d527-496c-95b7-26778dfad9c0",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C30",
+      "claim": "FOXA1 binds only a single non-7up insertion in the dataset, making it the most exclusive feature of 7up loci among the TFs examined.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, FOXA1 binds only a single non-7up insertion in our dataset, making it the most exclusive feature of 7up loci among the TFs examined in this analysis (see Supplementary file 8 for full statistical analysis of all marks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "0275e84a-4c9d-4642-b8cf-5f2877ea9a1d",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C31",
+      "claim": "76% of LTR7up loci are decorated by H3K4me3, a mark of active promoters, compared to 19% of all other LTR7 loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Congruent with having generally more TF binding and transcriptional activity, 7up loci also have a propensity to be decorated by H3K4me3, a mark of active promoters (76% LTR7up vs. 19% all others) and the broader activity mark H3K27ac (89% vs. 48%) (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "a701bb67-88ef-4726-9942-e86b68df270f",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C32",
+      "claim": "89% of LTR7up loci are decorated by H3K27ac compared to 48% of all other LTR7 loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Congruent with having generally more TF binding and transcriptional activity, 7up loci also have a propensity to be decorated by H3K4me3, a mark of active promoters (76% LTR7up vs. 19% all others) and the broader activity mark H3K27ac (89% vs. 48%) (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "827651df-e5cb-4068-bca4-8e7c2db3e50e",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C33",
+      "claim": "H3K4me1, a mark typically associated with low POLII loading as seen at enhancers, is spread rather evenly throughout the tree of LTR7 sequences (26% vs. 18%).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, H3K4me1, a mark typically associated with low POLII loading as seen at enhancers as opposed to promoters, is spread rather evenly throughout the tree of LTR7 sequences (26% vs. 18%) (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "ade9cc03-0397-42b2-af78-54ab077e5f60",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C34",
+      "claim": "KAP1 and H3K9me3 loading were neither enriched nor depleted for 7up elements relative to other subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that KAP1 and H3K9me3 loading were neither enriched nor depleted for 7up elements relative to other subfamilies (Figure 3A, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "d103299e-43d6-465a-9e93-e969cb16ef07",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C35",
+      "claim": "There were no significant differences in the level of H3K9me3 marking across subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, there were no significant differences in the level of H3K9me3 marking across subfamilies and the only difference in KAP1 binding was a slight but significant depletion for 7bc and 7o compared to all other subfamilies including 7up (14% vs. 35% \u2013 padj < 0.05 chi-square Bonferroni correction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5c0f1784-a484-4de6-960e-fabc8f19be69",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C36",
+      "claim": "KAP1 and H3K9me3 loading were found in similar proportions in expressed and unexpressed 7up elements (padj > 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, KAP1 and H3K9me3 loading were found in similar proportions in expressed and unexpressed 7up elements (padj > 0.05) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of ChIP-seq data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "24ee5162-3a15-40f8-9923-39d81dfe9fe8",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C37",
+      "claim": "CpG methylation was not differential between subfamilies (padj > 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "This was also the case for CpG methylation, whose presence was not differential between subfamilies (padj > 0.05 Wilcoxon rank-sum with Bonferroni correction) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of WGBS-seq data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "252ffcb6-665d-4c14-bfe6-5d7cc24d1717",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C38",
+      "claim": "ZNF534 preferentially bound members of the 7up subfamily (72% of LTR7up vs. 34\u201353% of non-LTR7up).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while ZNF90 bound all LTR7 subfamilies to a similar extent, ZNF534 preferentially bound members of the 7up subfamily (72% of LTR7up vs. 34\u201353% of non-LTR7up).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-exo data analysis from Imbeault et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "601a7fe9-b88f-49f4-aa45-29d7674b368b",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C39",
+      "claim": "ZNF534 binding in 293 cells did not correlate with transcriptional activity of 7up elements in ESCs nor with KAP1 binding or H3K9me3 deposition in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ZNF534 binding in 293 cells did not correlate with transcriptional activity of 7up elements in ESCs nor with KAP1 binding or H3K9me3 deposition in these cells (Figure 3A, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative analysis of ChIP-exo and ChIP-seq data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "ab33be16-7e0d-4193-8b5b-17f266eff850",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C40",
+      "claim": "A minimum of six recombination events occurred between LTR7 subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a minimum of six instances of clades supported in the block parsimony trees that were incongruent with those supported by the overall phylogeny (Figure 4B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by parsimony tree analysis of sequence blocks shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "206a552e-31c7-45fc-821c-62ed19457754",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C42",
+      "claim": "The 7b subfamily exhibited expression at the 8 cell and morula stages, coinciding with EGA.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously observed (G\u00f6ke et al., 2015), the 7b subfamily exhibited expression at the 8 cell and morula stages, coinciding with EGA (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by scRNA-seq data analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "6cc499af-f358-4c87-9129-4c0e2d46de56",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C43",
+      "claim": "The 7u2 subfamily expression was restricted to the pluripotent epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "Another remarkable expression pattern was that of 7u2 which was restricted to the pluripotent epiblast (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by scRNA-seq data analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "dd5ca6d3-f3ce-4b5b-939c-5b0d185b0acf",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C44",
+      "claim": "The 7y subfamily combined the expression of 7b and 7u2 (8 cell and morula plus epiblast).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 7y subfamily combined the expression of 7b and 7u2 (8 cell and morula plus epiblast), perhaps reflecting the acquisition of sequence blocks from both subfamilies (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by scRNA-seq data analysis shown in Figure 5 and sequence analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "2e3e8192-8278-451c-ae1d-0c51148f8d38",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C45",
+      "claim": "7o elements show no significant transcription at any timepoint in early development, while 7bc elements display RNA expression throughout the blastocyst.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite very similar sequence and age (Figures 1, 2 and 4A), 7bc and 7o elements show stark contrast in their expression profiles. 7o elements show no significant transcription at any timepoint in early development, while 7bc elements display RNA expression throughout the blastocyst, including trophectoderm and inner cell mass, primitive endoderm, and pluripotent epiblast (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by scRNA-seq data analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5b21dec2-3a58-4808-91b2-76341f5fee2b",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C46",
+      "claim": "The single most striking motif distinguishing the 7up clade from the others was a SOX2/3 motif which coincided with an 8 bp insertion in block 2b.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we sought to pinpoint mutational events responsible for the gain of TF motifs responsible for the unique expression of 7up in ESC. The single most striking motif distinguishing the 7up clade from the others was a SOX2/3 motif which coincided with an 8 bp insertion in block 2b (Figure 6A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by motif enrichment analysis shown in Figure 6A and sequence alignment shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "0cfe485b-92f5-4bca-8df3-7f83872c772b",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C47",
+      "claim": "The 8 bp motif is present in 7u1, the closest relative to 7up, but absent in all other subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "Note this motif (and insertion) was also present in 7u1, the closest relative to 7up (Figure 1), but absent in all other subfamilies (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment shown in Figure 6B and phylogenetic analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "ff4eb197-c834-439b-b0a9-ca1a821a8f3e",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C48",
+      "claim": "SOX2 and SOX3 bind a highly similar motif, activate an overlapping set of genes, and play a redundant function in pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, SOX2 and SOX3 bind a highly similar motif (Bergsland et al., 2011; Heinz et al., 2010), activate an overlapping set of genes, and play a redundant function in pluripotency (Corsinotti et al., 2017; Niwa et al., 2016; Wang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "894c7a16-fff0-4abb-a202-635a2a80ac0e",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C49",
+      "claim": "Both SOX2 and SOX3 are expressed in human ESCs but SOX3 was more specifically expressed in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed that both SOX2 and SOX3 are expressed in human ESCs but SOX3 was more specifically expressed in ESCs (Figure 6\u2014figure supplement 1A, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression data analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "9dd04f1d-05f3-4e9b-8931-e474c06b24be",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C50",
+      "claim": "SOX2 binds preferentially 7up in a region coinciding with the 8 bp motif.",
+      "claim_type": "EXPLICIT",
+      "source": "While SOX3 binding has not been profiled in human ESCs, ChIP-seq data available for SOX2 indicated that it binds preferentially 7up in a region coinciding with the 8 bp motif (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "173ea93a-783d-47b0-bf8a-2a298c62f4c6",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C51",
+      "claim": "The 7d construct exhibited only weak promoter activity in iPSC compared to the empty vector.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the assays revealed that the 7d construct exhibited, as predicted, only weak promoter activity in iPSC compared to the empty vector (Figure 6D), while the 7up1 construct had much stronger promoter activity, driving on average 7.8-fold more luciferase expression than 7d and 100-fold more than the empty vector (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "dce803b8-393b-4974-9a6c-94c6d916ab6e",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C52",
+      "claim": "The 7up1 construct had much stronger promoter activity, driving on average 7.8-fold more luciferase expression than 7d and 100-fold more than the empty vector.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the assays revealed that the 7d construct exhibited, as predicted, only weak promoter activity in iPSC compared to the empty vector (Figure 6D), while the 7up1 construct had much stronger promoter activity, driving on average 7.8-fold more luciferase expression than 7d and 100-fold more than the empty vector (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "6745a6ce-6e68-41dd-a2ed-3c22eff1334e",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C53",
+      "claim": "The promoter activity was essentially abolished in the 7up1 construct lacking the 8 bp motif, which drove minimal luciferase expression (on average, 3-fold less than LTR7d and 20-fold less than the intact LTR7up sequence).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the promoter activity was essentially abolished in the 7up1 construct lacking the 8 bp motif, which drove minimal luciferase expression (on average, 3-fold less than LTR7d and 20-fold less than the intact LTR7up sequence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "fc198d1d-fdc8-40fe-90c1-8c785af35d3a",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C54",
+      "claim": "The 8 bp motif in 7up1 is necessary for robust promoter activity in iPSCs, likely by providing a SOX2/3 binding site essential for this activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the 8 bp motif in 7up1 is necessary for robust promoter activity in iPSCs, likely by providing a SOX2/3 binding site essential for this activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 6D and motif analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "099b862d-eb4b-425b-a424-b2c1ced52291",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C55",
+      "claim": "LTR7 is a polyphyletic group composed of at least eight monophyletic subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, our results show that: (i) LTR7 is a polyphyletic group composed of at least eight monophyletic subfamilies;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of primary findings supported by phylogenetic analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "851e39bb-488d-454e-9392-840a5cfda310",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C56",
+      "claim": "LTR7 subfamilies have distinct evolutionary histories and transcriptional profiles in human embryos and a single and relatively small subgroup (~264 loci), LTR7up, exhibits robust promoter activity in ESC.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) these subfamilies have distinct evolutionary histories and transcriptional profiles in human embryos and a single and relatively small subgroup (~264 loci), LTR7up, exhibits robust promoter activity in ESC;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of primary findings supported by dating analysis (Figure 2), expression analysis (Figure 5), and regulatory analysis (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "265fb457-4723-4817-b452-d5e51080ec5d",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C57",
+      "claim": "LTR7 evolution is characterized by the gain, loss, and exchange of cis-regulatory modules likely underlying their transcriptional partitioning during early embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) LTR7 evolution is characterized by the gain, loss, and exchange of cis-regulatory modules likely underlying their transcriptional partitioning during early embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of primary findings supported by sequence analysis (Figure 4), motif analysis (Figure 6), and expression analysis (Figure 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "eb204104-7a50-4b15-ac65-007df3d22fea",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C58",
+      "claim": "A phylogeny based on the coding sequence (reverse transcriptase [RVT] domain) of HERVH provided less granularity to separate the subfamilies than the LTR sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, a phylogeny based on the coding sequence (reverse transcriptase [RVT] domain) of HERVH provided less granularity to separate the subfamilies than the LTR sequences (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "a5437805-aa6e-4d4e-a3ea-7469353f6dfa",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C59",
+      "claim": "The 7u2 subfamily is the first subfamily of human TEs reported to have preimplantation expression exclusively in the epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 7u2 subfamily is, to our knowledge, the first subfamily of human TEs reported to have preimplantation expression exclusively in the epiblast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by scRNA-seq data analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "0d79b063-9302-4d56-a3e8-587e7d6ba8fd",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C60",
+      "claim": "HERVH elements expressed in ESCs are almost exclusively driven by two closely related subfamilies of LTR7 (7up) that emerged most recently in hominoid evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide an additional, perhaps simpler explanation: we found that HERVH elements expressed in ESCs are almost exclusively driven by two closely related subfamilies of LTR7 (7up) that emerged most recently in hominoid evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis (Figure 3) and dating analysis (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "fddfa398-20e6-4737-8df5-7b6f4bc6dd64",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C61",
+      "claim": "The presence of a SOX2/3 site is not sufficient to confer transcriptional activity in ESC.",
+      "claim_type": "EXPLICIT",
+      "source": "This exact motif is also present in the untranscribed 7u1 subfamily. More distantly related subfamilies also have SOX2/3 binding sites elsewhere on their sequence (Supplementary file 4), indicating that the presence of a SOX2/3 site is not sufficient to confer transcriptional activity in ESC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif analysis and expression data comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "600a446f-9775-4dd7-b51d-272543d8f959",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C62",
+      "claim": "The strength of the SOX2/3 motif match does not correlate with SOX2 binding or transcription within 7up.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the strength of the motif match does not correlate with SOX2 binding or transcription within 7up (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "46198351-73ff-4eee-881b-0331b4a39c0e",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C63",
+      "claim": "Recombination is a common and important force in the evolution of exogenous RNA viruses and ERVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination is a common and important force in the evolution of exogenous RNA viruses (Jetzt et al., 2000; P\u00e9rez-Losada et al., 2015; Simon-Loriere and Holmes, 2011) and ERVs (Vargiu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "b9739890-e8ed-4402-8945-1a58ee22f96d",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C64",
+      "claim": "Previous studies proposed that the HERVH family had undergone inter-element recombination events of both its coding genes and LTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies proposed that the HERVH family had undergone inter-element recombination events of both its coding genes (Mager and Freeman, 1987; Vargiu et al., 2016) and LTR (Goodchild et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "3ed7c416-bbc6-4b8a-9b84-90baeac1429d",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C65",
+      "claim": "It was inferred that recombination event between Type I LTR (i.e., LTR7) and Type II LTR (LTR7b) led to the emergence of Type Ia (LTR7y).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it was inferred that recombination event between Type I LTR (i.e., LTR7) and Type II LTR (LTR7b) led to the emergence of Type Ia (LTR7y).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "dc697edf-174c-411d-a422-868f8700575e",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C66",
+      "claim": "The coincidence of recombination events with changes in expression profiles suggests that these events were instrumental to the diversification of HERVH embryonic expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The coincidence of recombination events with changes in expression profiles (Figure 7) suggests that these events were instrumental to the diversification of HERVH embryonic expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the correlation between recombination events (Figure 4) and expression patterns (Figure 5) shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "4ff45b63-4570-44e8-b290-db7ecb9b854a",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C67",
+      "claim": "The hybrid origin and subsequent burst of amplification of LTR7 subfamilies suggest they expanded rapidly after shifting their transcriptional profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "The hybrid origin and subsequent burst of amplification of LTR7 subfamilies (Figures 1 and 2) suggest they expanded rapidly after shifting their transcriptional profiles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on phylogenetic analysis (Figure 1) and dating analysis (Figure 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "ace945e6-98ca-4bfa-8adb-e28bbdea5195",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C68",
+      "claim": "Multiple HERVH subfamilies were transpositionally active in parallel during the past ~25 my of primate evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our evolutionary analysis reveals that multiple HERVH subfamilies were transpositionally active in parallel during the past ~25 my of primate evolution (Figures 2 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dating analysis shown in Figures 2 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "c0fa1338-07d4-4cfb-b749-5ec0fe875b2c",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C69",
+      "claim": "The pattern of HERVH evolution is in stark contrast to the pattern of LINE1 evolution in primates, which is characterized by a single subfamily being predominantly active at any given time.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in stark contrast to the pattern of LINE1 evolution in primates, which is characterized by a single subfamily being predominantly active at any given time (Khan et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature on LINE1 evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "e9ec9b6e-2559-4362-a864-2f75d78616d8",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C70",
+      "claim": "Concurrently active HERVH subfamilies are transcribed at different developmental stages, such as 7up and 7u2 being transcribed in the pluripotent epiblast at the same time that 7y and the youngest 7b were transcribed at the 8 cell and morula stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observe that concurrently active HERVH subfamilies are transcribed at different developmental stages, such as 7up and 7u2 being transcribed in the pluripotent epiblast at the same time that 7y and the youngest 7b were transcribed at the 8 cell and morula stages (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression analysis shown in Figure 5 and summarized in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "a9b84983-3322-4b59-a2e5-57c33e847fce",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C71",
+      "claim": "ZNF534 may repress 7up at earlier stages of development but is apparently unable to suppress 7up transcription in pluripotent stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that ZNF534 is most highly expressed in the morula, but dips in human ESC (Figure 3\u2014figure supplement 2). Thus, ZNF534 may repress 7up at earlier stages of development but is apparently unable to suppress 7up transcription in pluripotent stem cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on ZNF534 expression data shown in Figure 3\u2014figure supplement 2 and its binding profile.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "32af686c-df32-4467-bd1b-6ebc5155fedc",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C72",
+      "claim": "HERVH/LTR7 has been used as a marker for human pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "HERVH/LTR7 has been used as a marker for human pluripotency (Ohnuki et al., 2014; Santoni et al., 2012; Wang et al., 2014), and recent work has revealed that HERVH/LTR7-positive cells may be more amenable to differentiation, and are therefore referred to as 'primed' cells (G\u00f6ke et al., 2015; Theunissen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "b0c418c1-3e71-43f1-9f9c-007b7f8ac1e2",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C73",
+      "claim": "HERVH/LTR7-positive cells may be more amenable to differentiation, and are therefore referred to as 'primed' cells.",
+      "claim_type": "EXPLICIT",
+      "source": "HERVH/LTR7 has been used as a marker for human pluripotency (Ohnuki et al., 2014; Santoni et al., 2012; Wang et al., 2014), and recent work has revealed that HERVH/LTR7-positive cells may be more amenable to differentiation, and are therefore referred to as 'primed' cells (G\u00f6ke et al., 2015; Theunissen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5a47d904-b330-461d-9ce4-885ec9e69642",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C74",
+      "claim": "Previous pan-LTR7 knockdown experiments have focused on highly transcribed LTR7 in primed ESCs and have primarily, if not exclusively, targeted 7up elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous pan-LTR7 knockdown experiments have focused on highly transcribed LTR7 in primed ESCs (Lu et al., 2014; Ohnuki et al., 2014; Wang et al., 2012). As such, these experiments have primarily, if not exclusively, targeted 7up elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding that 7up elements are the primary transcribed LTR7 in ESCs and citations to previous knockdown studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "4a5a5c7b-8117-4317-be18-8b7c8e15a703",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C75",
+      "claim": "While 7up shows expression preference in primed cell lines, 7u2 shows preference for na\u00efve lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while 7up shows expression preference in primed cell lines, 7u2 shows preference for na\u00efve lines (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression analysis shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5dfa74e7-79f8-4230-8442-d0d3d2b45f16",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "claim_id": "C76",
+      "claim": "Elements of the 7u2 subfamily are highly and exclusively expressed in the pluripotent epiblast in vivo but weakly so in H1 ESC, which consists of a majority of primed cells and a minority of na\u00efve or formative cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of relevance to this issue is our finding that elements of the 7u2 subfamily are highly and exclusively expressed in the pluripotent epiblast in vivo (Figure 5), but weakly so in H1 ESC, which consists of a majority of primed cells and a minority of na\u00efve or formative cells (Gafni et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression analysis shown in Figure 5 and a citation to previous literature on H1 ESC composition.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d4f021c6-232f-447a-aea3-3bbef23a5e16",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identified eight previously unrecognized LTR7 subfamilies within the HERVH family based on phylogenetic analysis. These subfamilies were defined using criteria of >95% ultrafast bootstrap support and internal branch lengths >0.015 substitutions per 100 bp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C15, and C55 are well-supported by phylogenetic analysis shown in Figure 1B. The methodology for subfamily definition is clearly described with explicit statistical criteria, and the phylogenetic tree provides visual evidence of distinct monophyletic clades.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "0177c4c7-8560-47bb-895f-15f5c6fffa37",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors dated LTR7 subfamilies using reciprocal liftover analysis across primate genomes and terminal branch length analysis, identifying three major waves of HERVH propagation: 25-40 mya (7c, 7o, 7bc), 9-20 mya (7b, 7d1/2, 7u1), and 4-10 mya (7up1/2, 7u2, 7y).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 and C68 are supported by convergent evidence from two independent dating methods (liftover analysis in Figure 2A and terminal branch length in Figure 2B). The statistical analysis includes appropriate corrections (Wilcoxon rank-sum with Bonferroni), and the results from both methods corroborate each other.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "d1cfcba5-c227-4092-895f-5a2734e422fc",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nearly all HERVH elements transcribed in ESCs belong to the LTR7up subfamily, with 33% of 7up elements (88 loci) highly expressed compared to only 2% of other subfamilies combined (17 loci).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C23, C25, and C60 are supported by RNA-seq and GRO-seq data analysis shown in Figure 3. The quantitative differences between 7up and other subfamilies are substantial (33% vs 2%), and the finding is corroborated by multiple transcriptional assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5f926dc8-21f2-43d3-81fc-623d3b20eb06",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "LTR7up elements show enrichment for binding of pluripotency transcription factors (KLF4: 91%, NANOG: 97.7%, SOX2: 32%, FOXA1: 28%) and active histone marks (H3K4me3: 76%, H3K27ac: 89%) compared to other LTR7 subfamilies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 are supported by ChIP-seq data analysis shown in Figure 3 with appropriate statistical testing (chi-square with Bonferroni correction, padj < 0.05). The enrichment patterns are consistent across multiple marks and show clear quantitative differences between 7up and other subfamilies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "4cab573f-9497-47f3-a1e6-30dd18fb7559",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "KAP1, H3K9me3, and CpG methylation levels do not differ significantly between LTR7up and other subfamilies, suggesting differential repression does not explain 7up-specific transcription in ESCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 are supported by statistical analysis of ChIP-seq and WGBS-seq data with appropriate corrections (padj > 0.05). The negative results are important for ruling out differential repression as the mechanism and are properly reported with statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "4899f936-0079-450b-a98f-4897afc487ba",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ZNF534 preferentially binds 7up elements (72% vs 34-53% of non-7up), but this binding does not correlate with transcriptional activity or repressive marks in ESCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C39 are supported by ChIP-exo data analysis from Imbeault et al., 2017. The lack of correlation between ZNF534 binding and transcriptional activity is appropriately demonstrated through comparative analysis shown in Figure 3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "dc9450cd-fd65-413f-b3c1-90ac667e50b2",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LTR7 sequence evolution was driven by point mutations, duplications, and at least six recombination events between subfamilies, which coincided with changes in expression profiles and likely drove diversification of HERVH embryonic expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C40, C64-C66 are supported by parsimony tree analysis of sequence blocks shown in Figure 4. The identification of recombination events is based on incongruence between block-specific and overall phylogenies with bootstrap support. However, C66 includes inferential language ('suggests') appropriately acknowledging the correlative nature of the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "47c1bc58-2470-4b57-b78c-671aae6b5f61",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LTR7 subfamilies display distinct expression patterns during human embryonic development: 7b at 8-cell/morula (EGA), 7u2 exclusively in pluripotent epiblast, 7y combining both patterns, and 7bc throughout blastocyst while 7o shows no transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 and C70 are supported by scRNA-seq data analysis shown in Figure 5. The expression patterns are clearly distinct across developmental stages, though C44 appropriately includes inferential language ('perhaps reflecting') when connecting expression to sequence evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5b64ec56-c4d7-453e-9f65-813a229145e6",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A SOX2/3 binding motif coinciding with an 8 bp insertion in block 2b distinguishes the 7up clade from other subfamilies. This motif is present in 7u1 but absent in all other subfamilies, and SOX2 ChIP-seq shows preferential binding to 7up at this region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C47, and C50 are supported by motif enrichment analysis (Figure 6A), sequence alignment (Figure 6B), and SOX2 ChIP-seq data. The convergent evidence from computational motif prediction and experimental ChIP-seq binding provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5f178355-835b-449f-b9fc-0f842a054068",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 8 bp SOX2/3 motif in LTR7up1 is necessary for robust promoter activity in iPSCs. Luciferase assays show 7up1 drives 7.8-fold more expression than 7d and 100-fold more than empty vector, while deletion of the 8 bp motif abolishes this activity (3-fold less than 7d, 20-fold less than intact 7up).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C51-C54 are supported by luciferase reporter assay data shown in Figure 6D. The experimental design appropriately tests the necessity of the motif through deletion analysis, and the quantitative differences are substantial. However, the number of replicates (n=4) is modest, and no statistical tests are reported for the fold-change comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "7e4910fd-d5d6-4bca-8319-e2971df05aaf",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The presence of a SOX2/3 binding site is not sufficient to confer transcriptional activity in ESCs, as the motif is present in untranscribed 7u1 and other subfamilies, and motif strength does not correlate with SOX2 binding or transcription within 7up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C62 are supported by motif analysis and expression data comparison. The negative correlation shown in Figure 6\u2014figure supplement 2 appropriately demonstrates that motif presence/strength alone cannot explain transcriptional activity, suggesting additional factors are required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "e67bedf0-b8d0-4760-8a83-c68c20be9f56",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LTR7up shows expression preference in primed ESC lines while 7u2 shows preference for na\u00efve lines. Elements of 7u2 are highly expressed in pluripotent epiblast in vivo but weakly in H1 ESCs (which are predominantly primed).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C76 are supported by expression analysis shown in Figure 5\u2014figure supplement 2 and Figure 5, with additional citation support for H1 ESC composition. The differential expression between na\u00efve and primed states is clearly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "046aa432-c645-435e-926a-7359e9f1ee6e",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis based on the reverse transcriptase (RVT) coding sequence provided less granularity to separate LTR7 subfamilies than LTR sequence-based phylogeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by phylogenetic analysis shown in Figure 1\u2014figure supplement 1. This comparison validates the choice to use LTR sequences for subfamily classification and demonstrates that LTR evolution has been more dynamic than internal coding sequence evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5a4fbea9-e2a3-43e6-814d-893c4031c8a4",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The 7u2 subfamily is the first subfamily of human TEs reported to have preimplantation expression exclusively in the epiblast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C59 is supported by scRNA-seq data showing 7u2 expression restricted to epiblast (Figure 5). However, the claim of being 'the first' requires comprehensive knowledge of all human TE expression patterns, which is difficult to verify. The authors appropriately qualify this with 'to our knowledge.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "79bdb3e1-fbf1-4fab-b826-e594a7288907",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The hybrid origin and subsequent burst of amplification of LTR7 subfamilies suggest they expanded rapidly after shifting their transcriptional profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is an inference based on phylogenetic (Figure 1) and dating analysis (Figure 2). While the temporal correlation between recombination events and amplification bursts is demonstrated, the causal relationship ('expanded rapidly after shifting') is speculative. The authors appropriately use 'suggest' to indicate this is inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "5ff6c192-f38e-4c07-8d1e-ef546443a2b4",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "ZNF534 may repress 7up at earlier stages of development but is apparently unable to suppress 7up transcription in pluripotent stem cells, based on its high expression in morula but low expression in ESCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is speculative, appropriately indicated by 'may' and 'apparently.' While ZNF534 expression data (Figure 3\u2014figure supplement 2) and binding profiles are provided, the functional repression at different developmental stages is not directly tested. This remains a hypothesis requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "9cca0c02-b064-4b69-89e4-6f264aae52b6",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims about HERVH expression, evolution, and previous functional studies establish the context for the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C14 are background knowledge supported by citations to previous literature. These establish the known properties of HERVH and TEs, including their expression in preimplantation embryos, pluripotent stem cells, evolutionary origin, and previous functional studies with variable results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "7bfe8199-52a9-4427-99e4-c45334800777",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Additional background claims about SOX2/3 function, recombination in viral evolution, LINE1 evolution patterns, and HERVH as a pluripotency marker provide context for interpreting the results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49, C63, C69, C72-C73 are supported by citations to previous literature and/or expression data (C49). These provide necessary context for understanding the significance of the SOX2/3 motif, the evolutionary mechanisms, and the biological relevance of HERVH expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "fe1829c6-56a2-49ab-8039-a885d1fa5483",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Summary claims stating that LTR7 subfamilies have distinct evolutionary histories and transcriptional profiles, with LTR7up showing robust ESC promoter activity, and that LTR7 evolution involved gain, loss, and exchange of cis-regulatory modules underlying transcriptional partitioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C57 are summary statements supported by the collective evidence from dating analysis (Figure 2), expression analysis (Figure 5), regulatory analysis (Figure 3), sequence analysis (Figure 4), and motif analysis (Figure 6). These appropriately synthesize the major findings of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    },
+    {
+      "id": "9764fc36-d04f-41d9-ab37-ed8f87ca6a68",
+      "content_id": "3ccfc1f2-6d96-41d5-ae3a-0b7e20c845da",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Previous pan-LTR7 knockdown experiments have primarily, if not exclusively, targeted 7up elements because they focused on highly transcribed LTR7 in primed ESCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is an inference based on the finding that 7up elements are the primary transcribed LTR7 in ESCs (supported by this study's data) and citations to previous knockdown studies. The inference is logical and appropriately qualified with 'primarily, if not exclusively.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:04:53.060788Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e137b35b-09e2-47b1-92bb-eae325ca243a",
+      "result_id": "d4f021c6-232f-447a-aea3-3bbef23a5e16"
+    },
+    {
+      "claim_id": "236b740a-aebe-41af-a7ac-9a301860c0b8",
+      "result_id": "d4f021c6-232f-447a-aea3-3bbef23a5e16"
+    },
+    {
+      "claim_id": "099b862d-eb4b-425b-a424-b2c1ced52291",
+      "result_id": "d4f021c6-232f-447a-aea3-3bbef23a5e16"
+    },
+    {
+      "claim_id": "ce704571-e9b8-44f3-9bb5-41e0c6c88b52",
+      "result_id": "0177c4c7-8560-47bb-895f-15f5c6fffa37"
+    },
+    {
+      "claim_id": "cfd6f05c-146b-44c9-931d-9c6131d060b0",
+      "result_id": "0177c4c7-8560-47bb-895f-15f5c6fffa37"
+    },
+    {
+      "claim_id": "b78ac060-42fe-417d-9462-f62cdf1c7f4e",
+      "result_id": "0177c4c7-8560-47bb-895f-15f5c6fffa37"
+    },
+    {
+      "claim_id": "1115e8cf-e1b5-4a7d-ad18-fc58d1b84e5c",
+      "result_id": "0177c4c7-8560-47bb-895f-15f5c6fffa37"
+    },
+    {
+      "claim_id": "6aaffcbd-6821-4a5d-9807-e10d5f67e222",
+      "result_id": "0177c4c7-8560-47bb-895f-15f5c6fffa37"
+    },
+    {
+      "claim_id": "d542bd36-940c-409a-9e0a-9d6ca2884a5b",
+      "result_id": "0177c4c7-8560-47bb-895f-15f5c6fffa37"
+    },
+    {
+      "claim_id": "a24701dd-cc05-431b-b23e-7f91e03fcdb0",
+      "result_id": "0177c4c7-8560-47bb-895f-15f5c6fffa37"
+    },
+    {
+      "claim_id": "ace945e6-98ca-4bfa-8adb-e28bbdea5195",
+      "result_id": "0177c4c7-8560-47bb-895f-15f5c6fffa37"
+    },
+    {
+      "claim_id": "797e2b68-3c85-4ecc-9b4b-ca5d1ae9f204",
+      "result_id": "d1cfcba5-c227-4092-895f-5a2734e422fc"
+    },
+    {
+      "claim_id": "6d0ff256-03b6-44fc-8579-d8a225e3f393",
+      "result_id": "d1cfcba5-c227-4092-895f-5a2734e422fc"
+    },
+    {
+      "claim_id": "7a1660a3-74e8-450e-bb3b-8725852c5460",
+      "result_id": "d1cfcba5-c227-4092-895f-5a2734e422fc"
+    },
+    {
+      "claim_id": "0d79b063-9302-4d56-a3e8-587e7d6ba8fd",
+      "result_id": "d1cfcba5-c227-4092-895f-5a2734e422fc"
+    },
+    {
+      "claim_id": "a001bfa7-77d0-4588-83e7-50cef9141231",
+      "result_id": "5f926dc8-21f2-43d3-81fc-623d3b20eb06"
+    },
+    {
+      "claim_id": "36515a5f-5658-4f4f-a72f-16b670ef2346",
+      "result_id": "5f926dc8-21f2-43d3-81fc-623d3b20eb06"
+    },
+    {
+      "claim_id": "5f54f107-bda7-4f7e-b9e1-07f23955f236",
+      "result_id": "5f926dc8-21f2-43d3-81fc-623d3b20eb06"
+    },
+    {
+      "claim_id": "4a28c214-7ae5-4320-9b4a-88887657f815",
+      "result_id": "5f926dc8-21f2-43d3-81fc-623d3b20eb06"
+    },
+    {
+      "claim_id": "8fbf5173-d527-496c-95b7-26778dfad9c0",
+      "result_id": "5f926dc8-21f2-43d3-81fc-623d3b20eb06"
+    },
+    {
+      "claim_id": "0275e84a-4c9d-4642-b8cf-5f2877ea9a1d",
+      "result_id": "5f926dc8-21f2-43d3-81fc-623d3b20eb06"
+    },
+    {
+      "claim_id": "a701bb67-88ef-4726-9942-e86b68df270f",
+      "result_id": "5f926dc8-21f2-43d3-81fc-623d3b20eb06"
+    },
+    {
+      "claim_id": "827651df-e5cb-4068-bca4-8e7c2db3e50e",
+      "result_id": "5f926dc8-21f2-43d3-81fc-623d3b20eb06"
+    },
+    {
+      "claim_id": "ade9cc03-0397-42b2-af78-54ab077e5f60",
+      "result_id": "4cab573f-9497-47f3-a1e6-30dd18fb7559"
+    },
+    {
+      "claim_id": "d103299e-43d6-465a-9e93-e969cb16ef07",
+      "result_id": "4cab573f-9497-47f3-a1e6-30dd18fb7559"
+    },
+    {
+      "claim_id": "5c0f1784-a484-4de6-960e-fabc8f19be69",
+      "result_id": "4cab573f-9497-47f3-a1e6-30dd18fb7559"
+    },
+    {
+      "claim_id": "24ee5162-3a15-40f8-9923-39d81dfe9fe8",
+      "result_id": "4cab573f-9497-47f3-a1e6-30dd18fb7559"
+    },
+    {
+      "claim_id": "252ffcb6-665d-4c14-bfe6-5d7cc24d1717",
+      "result_id": "4899f936-0079-450b-a98f-4897afc487ba"
+    },
+    {
+      "claim_id": "601a7fe9-b88f-49f4-aa45-29d7674b368b",
+      "result_id": "4899f936-0079-450b-a98f-4897afc487ba"
+    },
+    {
+      "claim_id": "5173bfc7-c74d-4624-a839-3ba21defd266",
+      "result_id": "dc9450cd-fd65-413f-b3c1-90ac667e50b2"
+    },
+    {
+      "claim_id": "ab33be16-7e0d-4193-8b5b-17f266eff850",
+      "result_id": "dc9450cd-fd65-413f-b3c1-90ac667e50b2"
+    },
+    {
+      "claim_id": "b9739890-e8ed-4402-8945-1a58ee22f96d",
+      "result_id": "dc9450cd-fd65-413f-b3c1-90ac667e50b2"
+    },
+    {
+      "claim_id": "3ed7c416-bbc6-4b8a-9b84-90baeac1429d",
+      "result_id": "dc9450cd-fd65-413f-b3c1-90ac667e50b2"
+    },
+    {
+      "claim_id": "dc697edf-174c-411d-a422-868f8700575e",
+      "result_id": "dc9450cd-fd65-413f-b3c1-90ac667e50b2"
+    },
+    {
+      "claim_id": "206a552e-31c7-45fc-821c-62ed19457754",
+      "result_id": "47c1bc58-2470-4b57-b78c-671aae6b5f61"
+    },
+    {
+      "claim_id": "6cc499af-f358-4c87-9129-4c0e2d46de56",
+      "result_id": "47c1bc58-2470-4b57-b78c-671aae6b5f61"
+    },
+    {
+      "claim_id": "dd5ca6d3-f3ce-4b5b-939c-5b0d185b0acf",
+      "result_id": "47c1bc58-2470-4b57-b78c-671aae6b5f61"
+    },
+    {
+      "claim_id": "2e3e8192-8278-451c-ae1d-0c51148f8d38",
+      "result_id": "47c1bc58-2470-4b57-b78c-671aae6b5f61"
+    },
+    {
+      "claim_id": "e9ec9b6e-2559-4362-a864-2f75d78616d8",
+      "result_id": "47c1bc58-2470-4b57-b78c-671aae6b5f61"
+    },
+    {
+      "claim_id": "5b21dec2-3a58-4808-91b2-76341f5fee2b",
+      "result_id": "5b64ec56-c4d7-453e-9f65-813a229145e6"
+    },
+    {
+      "claim_id": "0cfe485b-92f5-4bca-8df3-7f83872c772b",
+      "result_id": "5b64ec56-c4d7-453e-9f65-813a229145e6"
+    },
+    {
+      "claim_id": "9dd04f1d-05f3-4e9b-8931-e474c06b24be",
+      "result_id": "5b64ec56-c4d7-453e-9f65-813a229145e6"
+    },
+    {
+      "claim_id": "4d403750-af45-45f4-95ce-656b8b20f556",
+      "result_id": "5f178355-835b-449f-b9fc-0f842a054068"
+    },
+    {
+      "claim_id": "173ea93a-783d-47b0-bf8a-2a298c62f4c6",
+      "result_id": "5f178355-835b-449f-b9fc-0f842a054068"
+    },
+    {
+      "claim_id": "dce803b8-393b-4974-9a6c-94c6d916ab6e",
+      "result_id": "5f178355-835b-449f-b9fc-0f842a054068"
+    },
+    {
+      "claim_id": "6745a6ce-6e68-41dd-a2ed-3c22eff1334e",
+      "result_id": "5f178355-835b-449f-b9fc-0f842a054068"
+    },
+    {
+      "claim_id": "fc198d1d-fdc8-40fe-90c1-8c785af35d3a",
+      "result_id": "5f178355-835b-449f-b9fc-0f842a054068"
+    },
+    {
+      "claim_id": "fddfa398-20e6-4737-8df5-7b6f4bc6dd64",
+      "result_id": "7e4910fd-d5d6-4bca-8319-e2971df05aaf"
+    },
+    {
+      "claim_id": "600a446f-9775-4dd7-b51d-272543d8f959",
+      "result_id": "7e4910fd-d5d6-4bca-8319-e2971df05aaf"
+    },
+    {
+      "claim_id": "4a5a5c7b-8117-4317-be18-8b7c8e15a703",
+      "result_id": "e67bedf0-b8d0-4760-8a83-c68c20be9f56"
+    },
+    {
+      "claim_id": "5dfa74e7-79f8-4230-8442-d0d3d2b45f16",
+      "result_id": "e67bedf0-b8d0-4760-8a83-c68c20be9f56"
+    },
+    {
+      "claim_id": "eb204104-7a50-4b15-ac65-007df3d22fea",
+      "result_id": "046aa432-c645-435e-926a-7359e9f1ee6e"
+    },
+    {
+      "claim_id": "a5437805-aa6e-4d4e-a3ea-7469353f6dfa",
+      "result_id": "5a4fbea9-e2a3-43e6-814d-893c4031c8a4"
+    },
+    {
+      "claim_id": "4ff45b63-4570-44e8-b290-db7ecb9b854a",
+      "result_id": "79bdb3e1-fbf1-4fab-b826-e594a7288907"
+    },
+    {
+      "claim_id": "a9b84983-3322-4b59-a2e5-57c33e847fce",
+      "result_id": "5ff6c192-f38e-4c07-8d1e-ef546443a2b4"
+    },
+    {
+      "claim_id": "05191336-39c9-4a31-bbe2-261640ef5d2e",
+      "result_id": "9cca0c02-b064-4b69-89e4-6f264aae52b6"
+    },
+    {
+      "claim_id": "f878a613-240b-4cfa-9852-a0df2458cf80",
+      "result_id": "9cca0c02-b064-4b69-89e4-6f264aae52b6"
+    },
+    {
+      "claim_id": "e4fb5c6c-a36c-4f96-9e26-bc7a38cdaf75",
+      "result_id": "9cca0c02-b064-4b69-89e4-6f264aae52b6"
+    },
+    {
+      "claim_id": "b9fb05a5-39bf-4b2f-8c68-2ee7c186af7d",
+      "result_id": "9cca0c02-b064-4b69-89e4-6f264aae52b6"
+    },
+    {
+      "claim_id": "d6aa23a1-1a1d-4d83-80f4-6d4c70b54036",
+      "result_id": "9cca0c02-b064-4b69-89e4-6f264aae52b6"
+    },
+    {
+      "claim_id": "d721641c-7baa-4f91-acb3-10789fee2bdf",
+      "result_id": "9cca0c02-b064-4b69-89e4-6f264aae52b6"
+    },
+    {
+      "claim_id": "435864d8-015b-4f05-811c-315a7b96bfe2",
+      "result_id": "9cca0c02-b064-4b69-89e4-6f264aae52b6"
+    },
+    {
+      "claim_id": "a6874e84-4387-43dc-a878-159ca4f38f23",
+      "result_id": "9cca0c02-b064-4b69-89e4-6f264aae52b6"
+    },
+    {
+      "claim_id": "d73bd6cd-58db-465a-9205-a1c6d4d49384",
+      "result_id": "9cca0c02-b064-4b69-89e4-6f264aae52b6"
+    },
+    {
+      "claim_id": "c5b44317-fa94-4415-9788-eea7bd221b99",
+      "result_id": "9cca0c02-b064-4b69-89e4-6f264aae52b6"
+    },
+    {
+      "claim_id": "ff4eb197-c834-439b-b0a9-ca1a821a8f3e",
+      "result_id": "7bfe8199-52a9-4427-99e4-c45334800777"
+    },
+    {
+      "claim_id": "894c7a16-fff0-4abb-a202-635a2a80ac0e",
+      "result_id": "7bfe8199-52a9-4427-99e4-c45334800777"
+    },
+    {
+      "claim_id": "46198351-73ff-4eee-881b-0331b4a39c0e",
+      "result_id": "7bfe8199-52a9-4427-99e4-c45334800777"
+    },
+    {
+      "claim_id": "c0fa1338-07d4-4cfb-b749-5ec0fe875b2c",
+      "result_id": "7bfe8199-52a9-4427-99e4-c45334800777"
+    },
+    {
+      "claim_id": "32af686c-df32-4467-bd1b-6ebc5155fedc",
+      "result_id": "7bfe8199-52a9-4427-99e4-c45334800777"
+    },
+    {
+      "claim_id": "b0c418c1-3e71-43f1-9f9c-007b7f8ac1e2",
+      "result_id": "7bfe8199-52a9-4427-99e4-c45334800777"
+    },
+    {
+      "claim_id": "851e39bb-488d-454e-9392-840a5cfda310",
+      "result_id": "fe1829c6-56a2-49ab-8039-a885d1fa5483"
+    },
+    {
+      "claim_id": "265fb457-4723-4817-b452-d5e51080ec5d",
+      "result_id": "fe1829c6-56a2-49ab-8039-a885d1fa5483"
+    },
+    {
+      "claim_id": "5a47d904-b330-461d-9ce4-885ec9e69642",
+      "result_id": "9764fc36-d04f-41d9-ab37-ed8f87ca6a68"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C87",
+      "C88",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Transient CHE-1 depletion using auxin-induced degradation demonstrates that ASE fate is controlled by a reversible bistable switch. CHE-1::GFP::AID is rapidly depleted within 1.5-3 hours of auxin treatment and causes chemotaxis defects. Animals recover CHE-1 expression and chemotaxis function after 24-48 hr depletion, but prolonged depletion (\u226596 hr) causes permanent loss of ASE fate without neuronal death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34, C87-C102 provide converging experimental evidence from fluorescence microscopy (C26-C27, C31-C34), chemotaxis assays (C28-C30, C94, C96-C100), and cell viability measurements (C34, C101) demonstrating reversible bistability. The rapid depletion kinetics (C32, C93), recovery dynamics (C96-C97), and age-independence (C99-C100) are well-documented with appropriate controls and statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C104",
+      "C105"
+    ],
+    "result": "che-1 expression is biphasic with high levels (26\u00b16 mRNAs/cell) during embryonic ASE specification at the bean stage, followed by low maintenance levels (5-7 mRNAs/cell) throughout larval development. che-1 mRNA levels remain consistently lower than CHE-1 target genes like gcy-22, gcy-14, and del-2 during the maintenance phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43, C104-C105 are supported by quantitative smFISH measurements across developmental stages (Figure 2A-E). The biphasic expression pattern is clearly demonstrated with appropriate sample sizes (n\u226510) and statistical comparisons showing che-1 is significantly lower than target genes during maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C106",
+      "C107"
+    ],
+    "result": "CHE-1 protein levels are 600-900 molecules/cell in post-embryonic ASE neurons, comparable to the estimated 500-1000 CHE-1 binding sites across target gene promoters. This indicates CHE-1 targets compete for a limited pool of CHE-1 protein, with protein concentration decreasing with animal age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46, C106-C107 are supported by calibrated two-photon microscopy measurements (Figure 2F) and bioinformatic analysis of binding sites. The comparison between protein levels and binding site numbers is quantitatively sound, though the binding site estimate relies on computational predictions that could benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "che-1 mRNA and CHE-1 protein have rapid turnover with half-lives of 17\u00b14 min and 83\u00b120 min respectively, comparable to typical mammalian transcription factors. This rapid turnover relative to the 2-3 week C. elegans lifespan indicates that long CHE-1 lifetime is not the strategy for ensuring ASE fate stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51, C109-C111 are supported by direct experimental measurements using heat shock-induced overexpression for mRNA (Figure 3B) and FRAP for protein (Figure 3C-D). The comparison to mammalian systems (C49) is appropriately cited, and the inference about stability strategy (C50) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C89",
+      "C90",
+      "C118",
+      "C136"
+    ],
+    "result": "Stochastic simulations reveal that measured che-1 mRNA and protein copy numbers and lifetimes alone are insufficient for stable fate maintenance. However, a 'target reservoir buffering' mechanism where CHE-1 preferentially binds its own promoter dramatically increases stability, with parameter combinations achieving lifetimes of many years independent of cooperativity or target gene number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C57-C58, C60-C61, C89-C90, C118, C136 are supported by Gillespie simulations and Forward Flux Sampling analysis (Figure 4). The simulations use experimentally measured parameters and identify a novel mechanism. However, the model makes several assumptions about binding kinetics (dissociation rates varied 0.1-100 s\u207b\u00b9) that lack direct experimental validation, and the preferential binding hypothesis requires further experimental testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C108",
+      "C124"
+    ],
+    "result": "Upon CHE-1 depletion, che-1 mRNA levels remain near wild-type while gcy-22 target gene mRNA levels drop dramatically, with recovery of gcy-22 expression after 24 hr off auxin. This differential response is not due to ethanol vehicle effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C108, C124 are supported by smFISH measurements (Figure 5A-B) with appropriate controls for ethanol effects. The striking contrast between che-1 and gcy-22 expression during CHE-1 depletion provides key experimental validation of the target reservoir buffering mechanism predicted by simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A 130 bp che-1 promoter fragment surrounding the ASE motif, but not the ASE motif sequence itself, is responsible for resilience to CHE-1 depletion. Promoter swap experiments show this fragment is required for maintenance but not initiation of che-1 expression, and can transfer resilience to other target genes like gcy-22.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C76 are supported by CRISPR/Cas9 promoter engineering experiments (Figure 6) with multiple complementary approaches: ASE motif swaps (C66-C69), ASE motif plus flanking region swaps (C70-C73), and reciprocal transfers (C74-C76). The experiments include appropriate functional assays (chemotaxis, smFISH) and demonstrate both necessity and sufficiency of the 130 bp region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A homeodomain transcription factor (HD-TF) binding site within the 130 bp che-1 promoter fragment is essential for long-term ASE fate maintenance. Deletion of this site causes progressive, stochastic loss of CHE-1 expression during larval development, with reduced che-1 mRNA (1\u00b11 molecules/cell) and protein (190\u00b170 molecules/cell) levels, particularly affecting ASEL neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C86 are supported by bioinformatic identification (C77-C78), CRISPR deletion experiments (C79-C85), and time-lapse microscopy (C82). The stochastic loss phenotype (C82) and correlation with lower copy numbers (C83-C85) provide strong evidence for the HD-TF site's role in stability. However, the specific HD-TF identity remains uncertain (see C126-C130).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "CEH-36, an Otx-related homeodomain transcription factor with highest predicted affinity for the HD-TF binding site, shows chemotaxis defects when mutated but does not reproduce the CHE-1 expression loss phenotype of the HD-TF binding site deletion, suggesting potential redundancy with other HD-TFs expressed in ASE neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C130 present conflicting evidence: CEH-36 has the highest predicted affinity (C126) and prior work shows it affects ASE function (C127-C128), but the ceh-36 deletion does not phenocopy the HD-TF binding site deletion (C129). The redundancy hypothesis (C130) is reasonable but speculative. Additional experiments testing other HD-TFs or combinatorial deletions are needed to resolve this uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Simulations comparing two models of HD-TF action suggest that HD-TFs function as co-factors that increase CHE-1 residence time at the che-1 promoter, rather than inducing che-1 expression independently. The co-factor model reproduces three key experimental observations while the independent induction model fails to explain ASE motif mutant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by computational modeling (Figure 7\u2014figure supplement 2) that tests alternative mechanisms against multiple experimental constraints. The co-factor model is consistent with all observations while the alternative model fails a key test (C132). However, this remains a computational inference requiring direct experimental validation of the proposed cooperative binding mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The target reservoir buffering mechanism depends on the single-input module network topology where a terminal selector induces both its own expression and many target genes. This architecture is conserved across neuron type determination in C. elegans and higher organisms, and in cell differentiation generally, suggesting the mechanism may explain stable cell fate maintenance broadly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2-C4, C137-C140 make broad extrapolations from the C. elegans ASE system to other biological systems. While the network architecture is indeed conserved (C138, supported by citations), the claim that target reservoir buffering operates in other systems (C140) is speculative. The mechanism has only been demonstrated in one system, and other cell types may use different stability mechanisms (e.g., chromatin modifications).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C112",
+      "C113",
+      "C114",
+      "C117",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Two bistable mathematical models (cooperative and non-cooperative CHE-1 binding) were developed and parameterized with experimental measurements. Both models can achieve high stability through preferential CHE-1 binding to its own promoter, with spontaneous transitions occurring as Poisson processes requiring ON state lifetimes of years to maintain stability below mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C112-C114, C117, C120-C123 describe the theoretical framework and modeling approach. The models are appropriately constructed based on known biology (C113, C114 with citations) and use reasonable parameter ranges (C117). The Poisson process analysis (C120-C121) is mathematically sound. However, the models make simplifying assumptions about binding kinetics and cooperativity that may not fully capture in vivo complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background context establishing that neuronal cell fate must be maintained over long timescales despite molecular fluctuations, and that terminal selector transcription factors acting through single-input modules are an evolutionarily conserved mechanism for neuron type determination across species including C. elegans, Drosophila, and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C22 provide well-established background knowledge supported by appropriate citations. These claims frame the research problem and establish the biological context. The conservation of terminal selector networks (C18-C21) is well-documented in the literature, and the specific properties of the che-1 system (C22) are supported by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C95",
+      "C103"
+    ],
+    "result": "Control experiments demonstrate that ethanol vehicle (0.25%) does not affect chemotaxis, chemotaxis quality does not deteriorate with age up to 168 hr, older animals can recover from CHE-1 depletion, and prior RNAi studies showed permanent che-1 inhibition reduces target gene expression. Theoretical studies predict stability increases with transcription factor copy number and lifetime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C95, C103 provide important controls and context. The ethanol control (C35) validates the auxin treatment approach, age controls (C36-C37) rule out aging effects, and the RNAi comparison (C95) provides historical context. The theoretical prediction (C103) is appropriately cited. These supporting claims strengthen the main experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Discussion claims synthesizing findings: prior work showed che-1 autoregulation is necessary for maintenance; transient CHE-1 depletion demonstrates reversible bistability; chromatin remodeling likely prevents ectopic induction in most cells; cell-specific HD-TF expression may prevent inappropriate terminal selector induction; and bistability through autoregulation alone is sufficient for life-long neuron identity maintenance despite molecular fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C148 synthesize the study's findings and place them in broader context. The main conclusion (C148) is well-supported by the experimental and computational evidence presented. The mechanistic proposals about chromatin remodeling (C141) and HD-TF specificity (C143-C145) are reasonable inferences supported by citations, though they remain hypotheses requiring further testing. The discussion appropriately distinguishes established findings from speculative extensions.",
+    "result_type": "MAJOR"
+  }
+]

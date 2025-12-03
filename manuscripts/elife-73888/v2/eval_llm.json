@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C73"
+    ],
+    "result": "MAPT exon 10 is alternatively spliced at an approximately 1:1 ratio (3R:4R) across tissues and individuals, with 75% of samples within one standard deviation of the median PSI of 0.54.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C73 collectively establish that MAPT shows brain-specific expression and maintains a consistent 1:1 3R:4R isoform ratio across tissues and individuals. The GTEx data analysis (C2, C3) provides quantitative support with median PSI of 0.54 and 75% of samples within one SD, consistent with the cited 1:1 ratio (C4). The observed variability (C73) is acknowledged but does not contradict the overall pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C77",
+      "C78"
+    ],
+    "result": "Disease-causing mutations at the MAPT exon 10-intron 10 junction are clinically significant, with 20 of 29 validated mutations affecting splicing regulation rather than protein sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 establish the clinical significance of mutations at this junction, supported by appropriate citations. Claims C77-C78 provide context about the lack of therapeutics. The claims are internally consistent and well-supported by prior literature, establishing the clinical motivation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Mature MAPT mRNA isoforms (3R and 4R) are relatively unstructured compared to ribosomal RNA, with approximately 89% of base pairs being intra-exon, suggesting that exons fold as independent structural units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 provide quantitative DMS-MaP data showing mature MAPT isoforms have higher median reactivity (0.22) than SSU (0.008), indicating less structure. The intra-exon base-pairing analysis (C9-C10) supports independent exon folding (C11). Claims C43-C46 provide additional context from in-cell probing and comparison to prior work. The experimental data and computational analysis are consistent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C43"
+    ],
+    "result": "MAPT pre-mRNA is more structured than mature mRNA in the exon 10 region, with median in-cell DMS reactivity of 0.08 for pre-mRNA versus 0.22 for the 4R isoform, independent of protein protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 establish that pre-mRNA exon 10 is significantly more structured than in mature mRNA, supported by quantitative DMS-MaP data. The comparison of in-cell and cell-free conditions (C13) strengthens the conclusion that this is an intrinsic property of the RNA. Claim C43 confirms the hairpin structure previously proposed. The data are internally consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Disease-causing mutations shift the structural ensemble of the MAPT exon 10-intron 10 junction, with mutations favoring 3R showing >55% of structures with fully paired splice sites and mutations favoring 4R showing >50% with lower unfolding energy, demonstrating that structural ensembles regulate splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C49-C50 provide quantitative evidence from structural ensemble analysis showing distinct shifts correlating with splicing outcomes. Claims C47-C48 provide the mechanistic logic connecting structure to splicing. The t-SNE clustering analysis and experimental validation from cited work (Tan et al., 2019) support the conclusions. The ensemble approach is well-justified and the correlations are strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The spliceosome Bact complex footprint (43 nucleotides around the 5' splice site) provides the best prediction of exon 10 splicing (R\u00b2=0.89), suggesting that mRNA unfolding and accommodation into the Bact complex is a key rate-limiting step in splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 and C52-C53 establish that modeling unfolding within the Bact complex footprint yields the best predictions, supported by systematic comparison across spliceosome stages. Claims C54-C56 provide mechanistic interpretation. The cryo-EM structure analysis is appropriate, and the comparison to translation initiation (C56) provides useful context. The R\u00b2 values demonstrate strong predictive power, though the mechanistic interpretation (C55) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The structure-only model performs well for synonymous and intronic mutations (median R\u00b2=0.76 for compensatory) but poorly for non-synonymous mutations (median R\u00b2=-0.21), with synonymous mutations affecting structure at a mean distance of 54 nucleotides from the junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 establish the differential performance of the structure-only model across mutation types, with appropriate quantitative metrics from bootstrapping analysis. The negative R\u00b2 for non-synonymous mutations (C23) clearly indicates model failure for this category, motivating the need for incorporating SRE features. The distance analysis (C20-C21) provides insight into the spatial range of structural effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C60",
+      "C61"
+    ],
+    "result": "Incorporating SRE motif strengths improves prediction accuracy (R\u00b2=0.51 overall, R\u00b2=0.75 for non-synonymous mutations) compared to splice site strength alone (R\u00b2=0.29), with significant negative correlation between PSI and silencer strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 demonstrate that SRE features improve predictions, particularly for non-synonymous mutations where the structure-only model failed. The quantitative improvements are substantial and well-documented. Claims C60-C61 provide context from prior work. The correlation analyses (C25-C26) support the mechanistic role of SREs. The model comparisons are appropriate and the improvements are meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A combined interactive model incorporating both RNA structure and SRE features achieves the best prediction accuracy (R\u00b2=0.89), outperforming an additive model (R\u00b2=0.80), with structure and SREs showing cooperative effects where 51% of mutations alter both features in the same direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 and C57-C59 establish that the interactive model outperforms both structure-only and SRE-only models, with detailed clustering analysis showing the relative contributions of each feature type. The superiority of the interactive over additive model (C30) supports the cooperative relationship (C57). The mutation-type-specific effects (C58-C59) are well-supported by the clustering analysis. The R\u00b2 values demonstrate strong overall performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In silico mutagenesis reveals that most mutations favor exon 10 inclusion, consistent with 75% of disease mutations inducing inclusion, and that disease mutations more frequently alter both structure and SREs (76.4%) compared to uncategorized mutations (36.0%), with SREs acting to buffer structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 establish the bias toward exon 10 inclusion in both predicted and disease mutations, with appropriate statistical comparison (C36). Claims C38-C39 and C62-C63 reveal the compensatory relationship between structure and SREs, supported by systematic mutagenesis analysis. Claim C64 confirms synergistic effects in disease variants. The statistical significance is properly assessed and the mechanistic interpretation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The model accurately predicts splicing outcomes for six variants of unknown significance (VUSs), including three with the lowest predicted PSI (<0.25) that map to a predicted hotspot 25-30 nucleotides downstream of the exon-intron junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 establish successful experimental validation of model predictions for six VUSs, with 100% accuracy. Claims C65-C69 provide additional detail on the low-PSI predictions and their mapping to the predicted hotspot region. The experimental validation is appropriate and the concordance between predictions and experiments is strong. This represents important prospective validation of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "The model has limitations including unknown RBP binding contexts at other junctions, lack of consideration of 3' splice site features, and uncertainty about whether PSI alone predicts disease severity, though it successfully predicts the direction of isoform ratio changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 and C75-C76 appropriately acknowledge model limitations and scope. These are honest assessments of what the model can and cannot do. Claim C79 provides the appropriate conclusion about considering structural context and SRE interplay. The limitations are reasonable and do not undermine the main findings, but appropriately constrain the interpretation and generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Exon 10 PSI varies across brain tissues even in individuals with progressive supranuclear palsy, a tauopathy associated with MAPT variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by citation to Majounie et al., 2013 and provides important context about PSI variability in disease states. This supports the discussion of model limitations regarding disease severity prediction.",
+    "result_type": "MINOR"
+  }
+]

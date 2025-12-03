@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "KIF21B knockout Jurkat T cell lines were successfully generated using CRISPR/Cas9, showing complete loss of KIF21B expression, and rescue lines were created with KIF21B-GFP expression slightly exceeding endogenous levels. CD3\u03b5 expression remained unchanged across all cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by Western blot data (Figure 1C) showing KIF21B expression in control cells, absence in knockout clones, and restoration in rescue lines. CD3\u03b5 expression is confirmed across all conditions, validating the cell lines for functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "KIF21B knockout does not affect T cell activation response as measured by IL-2 upregulation following PMA and ionomycin stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by qRT-PCR data showing comparable IL-2 expression levels between control and KIF21B-KO cells after stimulation, indicating that basic T cell activation signaling remains intact in knockout cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "KIF21B-KO cells form smaller immunological synapses (28.4% and 27.3% reduction) and exhibit slower synapse formation compared to control cells, defects that are not due to reduced overall cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by quantitative phalloidin staining data (Figure 1E), cell volume measurements showing no size difference (Figure 1\u2014figure supplement 2C,D), and DIC time-lapse imaging showing increased spreading time. The phenotype is partially rescued by KIF21B-GFP re-expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C11"
+    ],
+    "result": "KIF21B knockout impairs centrosome and lysosome cluster polarization to the immunological synapse, with only 45.5-43.6% of KIF21B-KO cells showing centrosome polarization compared to 76% of control cells, and only 50.4-52.4% showing polarized lysosome clusters compared to 71% of controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C11 are strongly supported by TIRF microscopy quantification of MT organization (Figure 1G) and 3D confocal analysis of Lamtor4 cluster positioning (Figure 1J,K). Both phenotypes are partially rescued by KIF21B-GFP re-expression, establishing causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "KIF21B knockout does not affect lysosome clustering around the centrosome after T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by immunostaining showing Lamtor4-positive lysosome clusters present in both control and KO cells after activation (Figure 1H,I), indicating that minus-end-directed transport of lysosomes is not affected by KIF21B loss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "KIF21B-KO cells exhibit increased non-radially oriented microtubules organized into peripheral MT bundles at the immunological synapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by STED microscopy images analyzed with a custom ImageJ plugin showing significantly increased non-radial MT intensity in KO cells (Figure 2A-C). This represents a clear alteration in MT network organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "KIF21B-KO cells contain fewer microtubules nucleated from the centrosome (reduced by ~20%) but these MTs are longer on average, resulting in higher overall microtubule mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by expansion microscopy quantification showing reduced MT number at the centrosome (Figure 2F), increased estimated MT length (Figure 2G), and higher total MT mass (Figure 2\u2014figure supplement 1A,B). The methodology for estimating MT length from fluorescence intensity is reasonable though indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "KIF21B-GFP in T cells is diffusely distributed or associated with microtubules, moves processively at 0.77 \u00b1 0.14 \u00b5m/s, and most motile puncta correspond to single kinesin dimers based on single-molecule fluorescence intensity analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by live-cell imaging showing KIF21B-GFP localization and movement (Figure 3A), kymograph analysis of velocities (Figure 3B), and single-molecule intensity comparison to monomeric GFP showing ~2x intensity after distance correction (Figure 3C). The distance correction methodology is reasonable given TIRF imaging constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "When KIF21B-GFP reaches a microtubule plus end, 56.7% of molecules transition to a paused state, and 55.7% of these pausing events result in MT catastrophe. KIF21B-GFP pauses for an average of 3.0 \u00b1 2.7 s at MT plus ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are well-supported by quantitative live-cell imaging of KIF21B-GFP with EB3-mCherry showing motor behavior at MT plus ends (Figure 3D-I). The data clearly demonstrate that KIF21B induces transient pausing typically followed by catastrophe, consistent with the authors' previous in vitro work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Microtubule growth rate is increased by 15-18% and catastrophe rate is decreased in KIF21B-KO cells compared to control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by EB3-GFP live imaging showing increased MT growth rates (Figure 4A,B) and reduced catastrophe frequency (Figure 4C) in KO cells. These findings are consistent with cited neuronal studies and support KIF21B's role as a negative regulator of MT growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "In control cells, 44.2% of MTs pause and 40.9% buckle when reaching the cell periphery, with pause durations of 8.3 \u00b1 5.6 s. In KIF21B-KO cells, pausing is reduced while buckling increases, and pause durations are significantly shorter (4.1-4.3 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by live-cell imaging of \u03b2-tubulin-GFP showing quantified MT plus-end fates at the cell periphery (Figure 4D-F). The data clearly demonstrate that KIF21B loss reduces MT pausing and shortens pause duration, consistent with its role in inducing MT pausing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Treatment with 0.5 nM vinblastine rescues MT overgrowth and centrosome polarization defects in KIF21B-KO cells by reducing MT growth rates and increasing catastrophe frequency, demonstrating that polarization defects are due to altered MT dynamics rather than transport or signaling perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are strongly supported by STED microscopy showing restored MT organization (Figure 4\u2014figure supplement 1B), EB3-GFP imaging showing reduced growth rates (Figure 4A-C), and 3D analysis showing improved centrosome polarization (Figure 4H,I) after vinblastine treatment. This pharmacological rescue provides strong evidence that MT dynamics are the primary defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A small number of KIF21B molecules (4-10 motors) is sufficient to restrict microtubule length in computational simulations by inducing MT pausing and catastrophe. Biophysical simulations demonstrate that KIF21B-mediated MT length restriction promotes force imbalance necessary for centrosome polarization, and proper control of MT length is important for efficient T cell polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C36-C39 are supported by Cytosim modeling showing MT length decreases with increasing KIF21B numbers (Figure 5F), and that MT length restriction promotes force imbalance enabling centrosome translocation (Figure 6). The computational results are consistent with experimental vinblastine rescue data, providing mechanistic insight into how MT length control affects polarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Computational simulations show that cells with longer microtubules require more time to polarize, some KIF21B-KO-like cells fail to polarize within 800 s, dynein forces are more balanced with fewer KIF21B molecules, and increasing KIF21B reduces total MT-dynein binding while increasing asymmetry between left and right sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by Cytosim simulation results showing correlation between MT length and polarization time (Figures 5D,F and 6C,D), unpolarized cells at simulation end (Figure 6C,D), force imbalance quantification (Figure 6F), and MT binding asymmetry analysis (Figure 6G). These computational findings provide mechanistic explanation for experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C57"
+    ],
+    "result": "KIF21B is linked to autoimmune and neurodevelopmental disorders, is expressed in brain, eyes, and spleen, and has been reported to function in neuronal transport and as a microtubule growth regulator, though previous studies reported conflicting results regarding its mechanism of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 and C57 are supported by multiple cited studies establishing genetic associations with disorders, tissue expression patterns, and previous functional characterization. The authors appropriately acknowledge controversies in the literature regarding KIF21B's mechanism of action at different concentrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58"
+    ],
+    "result": "Background information on T cell biology, centrosome repositioning mechanisms, and kinesin-4 family members is established through cited literature, including the role of dynein in centrosome translocation, involvement of MAP4 and other MT regulators, and structural/functional properties of KIF21A and KIF21B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 and C58 accurately represent established knowledge from cited literature regarding T cell immunological synapse formation, centrosome polarization mechanisms, and kinesin-4 family properties. These provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Comparisons to previous studies show KIF21B-GFP velocity in T cells is faster than in other cell types, overexpression in COS-7 cells reduced MT growth rates, neuronal studies showed conflicting results on MT growth effects, low-dose vinblastine mildly perturbs MT dynamics, and previous computational modeling suggested centrosome trapping behind the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 appropriately cite and compare current findings to previous studies, acknowledging both consistencies and discrepancies in the literature. The comparisons provide context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In T cells, KIF21B acts at concentrations insufficient to induce prolonged pausing and effectively functions as a catastrophe inducer, likely by blocking individual protofilaments leading to GTP cap loss. As a processive motor, KIF21B would target longer MTs more effectively, and these findings agree with neuronal studies showing reduced MT growth processivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 represent reasonable interpretations integrating current live-cell imaging data with previous mechanistic studies on protofilament dynamics and kinesin-8 length-dependent targeting. The inferences are well-supported by the experimental observations and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The immunological synapse facilitates T-cell signaling and polarized secretion, lysosomes cluster around the centrosome during activation, and poly-D-lysine-coated coverslips did not trigger centrosome polarization or lysosome clustering in the authors' experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 represent established knowledge about T cell biology. Claim C70 is supported by experimental data (Figure 1H, Figure 1\u2014figure supplement 2H,I) and appropriately notes a discrepancy with a previous report, demonstrating scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "When the nucleus is located between the centrosome and synapse, the centrosome must pass along one side, and asymmetric MT organization likely originates from fluctuations in MT numbers contacting the synapse that occur more readily when MT numbers are low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 represent reasonable geometric and mechanistic inferences based on cell structure, cited migration studies, and simulation results showing the relationship between MT number and force asymmetry. These interpretations are logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Overly long MTs could slow centrosome translocation through multiple potential mechanisms including affecting dynein force generation, reducing MT depolymerization-driven 'reeling in' efficiency, creating pushing forces and friction, or perturbing synapse formation through MT-actin cross-talk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C75 represent speculative mechanisms that are not directly tested in the study. While these are reasonable hypotheses based on the data and cited literature, they remain speculative and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The typical features of MT network organization in T cells, with relatively short and sparse MTs, is functionally important and depends on KIF21B for maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 represents the main conclusion integrating all experimental and computational findings. It is well-supported by the demonstration that KIF21B loss causes MT overgrowth and polarization defects, and that these defects can be rescued by restoring MT length control with vinblastine.",
+    "result_type": "MAJOR"
+  }
+]

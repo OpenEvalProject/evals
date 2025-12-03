@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Participants' memory recall accuracy and gameplay ability (measured by Elo rating) both improved significantly across six training sessions. Recall accuracy increased from 61.6% in session 1 to 69.5% in session 6 (\u03b2=0.015, p=0.003), while Elo ratings also showed significant improvement (\u03b2=24.92, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide converging statistical evidence from mixed-effects models demonstrating significant improvements in both memory and gameplay over sessions. The data are appropriately analyzed with random slopes for participants, and the reported statistics support the conclusion of improvement over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Memory improvement was driven by enhanced recall of schema-consistent moves. Initially (session 1), there was no relationship between move probability and recall (\u03b2=-0.031, p=0.07), but in sessions 2-6, schema-consistent moves were significantly more likely to be remembered (all p<0.001), with a significant interaction between move probability and session (\u03b2=0.035, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 provide robust statistical evidence from mixed-effects logistic regression showing the emergence of schema-based memory benefits. The progression from no effect in session 1 to significant effects in later sessions, combined with the significant interaction term, strongly supports the interpretation that schema development drives selective memory improvement for schema-consistent information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Higher Elo ratings were correlated with better memory performance in the following session (r=0.298, p<0.001), but this relationship was driven by individual differences rather than within-participant improvements, as the within-participant effect was not significant (\u03b2=0.012, p=0.242).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 appropriately distinguish between-participant and within-participant effects using mixed-effects modeling with per-participant slopes. The statistical evidence clearly shows that the Elo-memory relationship reflects stable individual differences in schema quality rather than dynamic within-person changes, which is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Reaction times during recall showed a similar pattern to accuracy: initially no relationship with move probability (\u03b2=-30.5, p=0.329), but faster responses for schema-consistent moves in sessions 2-6 (all p<0.001), with a significant interaction between move probability and session (\u03b2=-71.06, p=0.010).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide converging evidence from reaction time data that parallels the accuracy findings. The mixed-effects linear regression appropriately models the data, and the significant interaction term demonstrates that schema development affects both the accuracy and speed of memory retrieval for schema-consistent information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The proportion of schema-consistent mistakes increased significantly over the first 4 sessions (\u03b2=0.032, p<0.001), but this effect weakened in sessions 5-6, with significantly weaker effects at session 5 for both schema-consistent mistakes (t=-2.51, p=0.02) and the relationship between recall accuracy and move probability (t=-3.24, p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 document an interesting non-monotonic pattern where schema-based biases in errors increase initially but then plateau or decrease. The statistical evidence supports this pattern, though the interpretation (C90-C91) that participants may develop compensatory strategies for schema-inconsistent moves remains speculative and would benefit from additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Memory for sequences ending in a win state was significantly better in sessions 2-6 (t=6.67, p<0.001), but in session 1 (before learning game rules), memory for winning sequences was marginally worse (t=-2.01, p=0.052).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 provide evidence that schema-related features (winning states) affect memory only after schema acquisition. The reversal from session 1 to later sessions supports the interpretation that this is a schema-driven effect rather than a low-level perceptual effect, though the session 1 effect is only marginally significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Exact move sequence repetition between gameplay and memory tasks was very rare (mean=1.0 repeats, SD=1.67 out of >1000 moves), and purely schema-based guessing achieved only 13.39% accuracy compared to participants' 65.91% average accuracy, ruling out simple episodic repetition or pure guessing strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide important control analyses demonstrating that the observed effects cannot be explained by simple repetition priming or schema-based guessing alone. The simulation showing that schema-based guessing achieves much lower accuracy than participants effectively rules out this alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C55",
+      "C56"
+    ],
+    "result": "Predictive eye movements (measured by the prediction coefficient) increased significantly across training sessions (\u03b2=0.009, p<0.001), indicating that participants' eye movements became more aligned with schema-based predictions of upcoming moves as their schema developed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide clear statistical evidence from mixed-effects modeling that predictive eye movements increase with training. The eye movement regression model (described in methods and Figure 4) appropriately decomposes fixations into different strategic components, and the prediction coefficient specifically captures schema-based anticipatory looking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C57"
+    ],
+    "result": "Better players (higher Elo) exhibited more predictive eye movements in the subsequent memory session (r=0.33, p=0.002), demonstrating that expertise is associated with increased schema-based prediction during encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 provides clear correlational evidence linking gameplay expertise to predictive eye movements. The session-by-session analysis appropriately accounts for temporal structure, and the significant correlation supports the interpretation that better schemas enable more sophisticated predictive processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Memory sessions with higher levels of predictive eye movements showed better reconstruction accuracy (r=0.40, p<0.001), despite no explicit instruction to make predictions during encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 establishes a key link between spontaneous predictive eye movements and memory performance. The correlation is robust and the observation that predictions occur without explicit instruction strengthens the interpretation that schema-based prediction is an automatic encoding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C84"
+    ],
+    "result": "Mediation analysis revealed that the effect of expertise (Elo) on memory accuracy is partially mediated by predictive eye movements during encoding (indirect effect=0.10, 95% CI=[0.03, 0.19], p=0.006). The direct effect of Elo on memory remained significant after including prediction (\u03b2=0.24, p=0.03), indicating additional mechanisms. This mediation effect was driven by individual differences rather than within-subject changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 provide a complete mediation analysis with appropriate bootstrapping procedures. The partial mediation (significant indirect and direct effects) is appropriately interpreted as indicating that prediction is one mechanism among others. Claim C84's finding that effects are driven by individual differences rather than within-subject changes is supported by Bayesian mixed-effects modeling, though this limits causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Move-level analysis showed that both move probability (\u03b2=0.083, p<0.001) and prediction coefficient before the move (\u03b2=0.508, p=0.001) independently predicted subsequent memory, with no interaction (\u03b2=0.024, p=0.693), indicating that making schema-consistent predictions benefits memory independent of the move's schema-consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 provide fine-grained move-level evidence that prediction during encoding benefits memory beyond the schema-consistency of the material itself. The logistic regression appropriately models binary memory outcomes, and the lack of interaction supports the interpretation that prediction and schema-consistency have independent effects on memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Model-free measures showed that making confident predictions (focused fixations on specific empty squares) was associated with better memory (\u03b2=0.375, p<0.001), while unexpected/surprising moves (where the actual move appeared in a location with little fixation) were more poorly remembered (\u03b2=-0.015, p=0.014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 provide converging evidence using model-free measures that do not depend on the gameplay model. The prediction confidence and surprise measures are well-defined and the statistical evidence supports both effects, strengthening the overall conclusion about the role of prediction in memory encoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The linear feature-based gameplay model successfully captured near-optimal play, with all participants playing moves with relatively high probability under the model (M=0.213, range=0.143-0.297 vs. random baseline=0.040), and stronger players showing greater alignment with the model (r=0.40, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 validate the gameplay model by showing that participants' actual moves align with model predictions, and this alignment increases with expertise. This is crucial for justifying the use of model-derived move probabilities as measures of schema-consistency throughout the paper. The validation is appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C76"
+    ],
+    "result": "The experimental design successfully ensured participants started without a schema, as confirmed by post-task questionnaires showing most participants did not suspect the stimuli were from a game in session 1 (14/19 online, 13/16 in-person), and participants acquired the schema over several hours of practice as evidenced by gameplay improvements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C76 establish the critical baseline condition for studying schema development. The questionnaire data support that participants lacked initial schema knowledge, and the observed improvements in gameplay (C29-C31) demonstrate schema acquisition. This design feature is essential for the longitudinal interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C82",
+      "C83"
+    ],
+    "result": "The study employed a longitudinal design with 35 participants (19 online, 16 in-lab with eye-tracking) completing six sessions over ~2 weeks (mean interval=2.15 days). Eye-tracking data were collected at 1000 Hz using EyeLink 1000 plus for the in-lab subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 and C82-C83 describe the methodological details of the study. The sample size is adequate for the analyses performed, the longitudinal design is appropriate for studying schema development, and the eye-tracking methodology is standard and well-described. The combination of online and in-lab samples strengthens generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C23",
+      "C77",
+      "C78"
+    ],
+    "result": "Four-in-a-row is a two-player game (generalization of tic-tac-toe) on a 4\u00d79 board where players compete to connect four pieces in a row. The game's spatial structure allows eye movements to index predictions, and stimuli were generated using an AI agent with Elo similar to participants' initial playing strength, with 10/30 sequences per session ending in wins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C23, C77-C78 describe the task and stimulus properties. The game choice is well-justified for studying schema development (complex enough to require learning, simple enough to model), and the stimulus generation procedure is appropriate. The spatial structure enabling eye-tracking of predictions is a key methodological advantage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C24"
+    ],
+    "result": "The introduction establishes theoretical background from prior literature: prediction is a top-down process generating expectations based on prior experience; schemas are knowledge structures abstracted from multiple episodes; schemas improve memory through both encoding and retrieval processes; and domain experts automatically engage predictive processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 and C24 accurately summarize established findings from prior literature with appropriate citations. These background claims provide the theoretical foundation for the current study's hypotheses and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study tested three main hypotheses: (1) schema quality should relate to memory performance, (2) eye movements should become more anticipatory with experience, and (3) predictive eye movements should mediate the relationship between schema quality and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 state the study's a priori hypotheses, all of which were subsequently supported by the data (as documented in other result groups). The hypotheses are clearly stated, theoretically motivated, and appropriately tested with the experimental design and analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C98"
+    ],
+    "result": "The discussion contextualizes findings relative to prior work, noting apparent inconsistencies with Sherman & Turk-Browne (2020) who found prediction impairs encoding, and proposing that different neural mechanisms (hippocampus vs. mPFC) may underlie implicit statistical learning versus explicit schema-based prediction. The discussion also addresses expertise effects extending to non-schematic situations and potential compensatory strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C91, C93, and C98 provide theoretical interpretations and comparisons to prior work. While the citations are accurate and the proposed mechanistic distinctions are plausible, these remain speculative explanations for observed discrepancies. The neural mechanism proposals (C86, C98) are reasonable hypotheses but lack direct empirical support in the current study. The compensatory strategy explanation (C90-C91) for the session 5-6 attenuation is plausible but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study demonstrates that participants spontaneously exhibited schema-consistent predictive eye movements without explicit instruction, and these predictions provide a mechanism linking schema quality to memory performance. The effects were primarily driven by individual differences, with the largest prediction increase occurring between sessions 1-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 summarize key findings and their interpretation. The evidence for spontaneous predictive eye movements (C92) is well-documented in the eye-tracking data. The mechanistic interpretation (C94-C95) is supported by the mediation analysis. The observation about individual differences (C96-C97) appropriately acknowledges limitations in detecting within-subject effects while emphasizing the novel insight about expertise-related differences in encoding strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The authors conclude that four-in-a-row is a valuable paradigm for future studies of schema development and episodic memory, offering complexity beyond typical artificial schemas while remaining tractable for laboratory study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is a reasonable conclusion given the successful demonstration of schema development effects, the ability to model the schema quantitatively, and the integration of behavioral and eye-tracking measures. The paradigm successfully bridges the gap between overly simple artificial sequences and intractably complex real-world schemas.",
+    "result_type": "MINOR"
+  }
+]

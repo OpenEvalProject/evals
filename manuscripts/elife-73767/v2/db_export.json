@@ -1,0 +1,1962 @@
+{
+  "submission": {
+    "id": "e55ce23f-d8a8-47c3-bda4-098cc80459c1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:02:30.549576Z",
+    "updated_at": "2025-12-03T18:02:30.549576Z"
+  },
+  "content": [
+    {
+      "id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "submission_id": "e55ce23f-d8a8-47c3-bda4-098cc80459c1",
+      "content_type": "manuscript",
+      "content_text": "# Modeling the spatiotemporal spread of beneficial alleles using ancient genomes\n\n## Authors\n\n- Rasa A Muktupavela<sup>1</sup> ([ORCID: 0000-0001-5590-5948](https://orcid.org/0000-0001-5590-5948)) \u2020\n- Martin Petr<sup>1</sup> ([ORCID: 0000-0003-4879-8421](https://orcid.org/0000-0003-4879-8421))\n- Laure S\u00e9gurel<sup>2</sup> ([ORCID: 0000-0001-7339-0976](https://orcid.org/0000-0001-7339-0976))\n- Thorfinn Korneliussen<sup>1</sup>\n- John Novembre<sup>3</sup> ([ORCID: 0000-0001-5345-0214](https://orcid.org/0000-0001-5345-0214))\n- Fernando Racimo<sup>1</sup> ([ORCID: 0000-0002-5025-2607](https://orcid.org/0000-0002-5025-2607))\n\n### Affiliations\n\n1. Lundbeck GeoGenetics Centre, GLOBE Institute, Faculty of Health Copenhagen Denmark ([ROR:03hz8wd80](https://ror.org/03hz8wd80))\n2. UMR5558 Biom\u00e9trie et Biologie Evolutive, CNRS - Universit\u00e9 Lyon 1 Villeurbanne France ([ROR:029brtt94](https://ror.org/029brtt94))\n3. Department of Human Genetics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAncient genome sequencing technologies now provide the opportunity to study natural selection in unprecedented detail. Rather than making inferences from indirect footprints left by selection in present-day genomes, we can directly observe whether a given allele was present or absent in a particular region of the world at almost any period of human history within the last 10,000 years. Methods for studying selection using ancient genomes often rely on partitioning individuals into discrete time periods or regions of the world. However, a complete understanding of natural selection requires more nuanced statistical methods which can explicitly model allele frequency changes in a continuum across space and time. Here we introduce a method for inferring the spread of a beneficial allele across a landscape using two-dimensional partial differential equations. Unlike previous approaches, our framework can handle time-stamped ancient samples, as well as genotype likelihoods and pseudohaploid sequences from low-coverage genomes. We apply the method to a panel of published ancient West Eurasian genomes to produce dynamic maps showcasing the inferred spread of candidate beneficial alleles over time and space. We also provide estimates for the strength of selection and diffusion rate for each of these alleles. Finally, we highlight possible avenues of improvement for accurately tracing the spread of beneficial alleles in more complex scenarios.\n\n## Introduction\n\nUnderstanding the dynamics of the spread of a beneficial allele through a population is one of the fundamental problems in population genetics (Ewens, 2012). We are often interested in knowing the location where an allele first arose and the way in which it spread through a population, but this is often unknown, particularly in natural, non-experimental settings where genetic sampling is scarce and uneven.\n\nPatterns of genetic variation can be used to estimate how strongly natural selection has affected the trajectory of an allele and to fit the parameters of the selection process. The problem of estimating the age of a beneficial allele, for example, has yielded a rich methodological literature (Slatkin and Rannala, 2000), and recent methods have exploited fine-scale haplotype information to produce highly accurate age estimates (Mathieson and McVean, 2014; Platt et al., 2019; Albers and McVean, 2020). In contrast, efforts to infer the geographic origins of beneficial mutations are scarcer. These include Novembre et al., 2005, who developed a maximum likelihood method to model the origin and spread of a beneficial mutation and applied it to the CCR5-\u039432 allele, which was, at the time, considered to have been under positive selection (Stephens et al., 1998; Sabeti et al., 2005; Novembre and Han, 2012). Similarly, Itan et al., 2009 developed an approximate Bayesian computation (ABC) approach using demic simulations, in order to find the geographic and temporal origins of a beneficial allele, based on present-day allele frequency patterns.\n\nAs ancient genome sequences become more readily available, they are increasingly being used to understand the process of natural selection (see reviews in Malaspinas et al., 2012; Dehasque et al., 2020). However, few studies have used ancient genomes to fit spatial dynamic models of the spread of an allele over a landscape. Most spatiotemporal analyses that included ancient genomes have used descriptive modeling in order to learn the spatiotemporal covariance structure of allele frequencies (Segurel et al., 2020) or hidden ancestry clusters (Racimo et al., 2020b), and then used that structure to hindcast these patterns onto a continuous temporally evolving landscape. In contrast to descriptive approaches, dynamic models have the power to infer interpretable parameters from genomic data and perhaps reveal the ultimate causes for these patterns (Wikle et al., 2019).\n\nDynamic models can also contribute to ongoing debates about the past trajectories of phenotypically important loci. For example, the geographic origin of the rs4988235(T) allele\u2014upstream of the LCT gene and associated with adult lactase persistence in most of Western Eurasia (Enattah et al., 2002)\u2014remains elusive, as is the way in which it spread (an extensive review can be found in S\u00e9gurel and Bon, 2017). The allele has been found in different populations, with frequencies ranging from 5% up to almost 100%, and its selection coefficient has been estimated to be among the highest in human populations (Bersaglieri et al., 2004; Enattah et al., 2008; Tishkoff et al., 2007). However, the exact causes for its adaptive advantage are contested (Szpak et al., 2019), and it has been suggested that the selection pressures acting on the allele may have been different in different parts of the continent (Gerbault et al., 2009). Ancient DNA evidence shows that the allele was rare in Europe during the Neolithic (Burger et al., 2007; Gamba et al., 2014; Allentoft et al., 2015; Mathieson et al., 2015) and only became common in Northern Europe after the Iron Age, suggesting a rise in frequency during this period, perhaps mediated by gene flow from regions east of the Baltic where this allele was more common during the onset of the Bronze Age (Kr\u00fcttli et al., 2014; Margaryan et al., 2020). Itan et al., 2009 deployed their ABC approach to model the spatial spread of the rs4988235(T) allele and estimated that it was first under selection among farmers around 7500 years ago possibly between the Central Balkans and Central Europe. Others have postulated a steppe origin for the allele (Allentoft et al., 2015), given that the rise in frequency appears to have occurred during and after the Bronze Age migration of steppe peoples into Western Eurasia (Haak et al., 2015; Allentoft et al., 2015). However, the allele is at low frequency in genomes of Bronze Age individuals associated with Corded Ware and Bell Beaker assemblages in Central Europe who have high steppe ancestry (Mathieson et al., 2015; Margaryan et al., 2020), complicating the story further (S\u00e9gurel and Bon, 2017).\n\nThe origins and spread dynamics of large-effect pigmentation-associated SNPs in ancient Eurasians have also been intensely studied (Ju and Mathieson, 2020). Major loci of large effect on skin, eye, and hair pigmentation have been documented as having been under recent positive selection in Western Eurasian history (Voight et al., 2006; Sabeti et al., 2007; Pickrell et al., 2009; Lao et al., 2007; Mathieson et al., 2015; Alonso et al., 2008; Hudjashov et al., 2013). These include genes SLC45A2, OCA2, HERC2, SLC24A5, and TYR. While there is extensive evidence supporting the adaptive significance of these alleles, debates around their exact origins and spread are largely driven by comparisons of allele frequency estimates in population groups, which are almost always discretized in time and/or space. Among these, selection at the TYR locus is thought to have occurred particularly recently, over the last 5000 years (Stern et al., 2019), driven by a recent mutation (Albers and McVean, 2020) that may have spread rapidly in Western Eurasia.\n\nHere, we develop a method to model the spread of a recently selected allele across both space and time, avoiding artificial discretization schemes to more rigorously assess the evidence for or against a particular dispersal process. We begin with the model proposed by Novembre et al., 2005 and adapt it in order to handle ancient low-coverage genomic data and explore more complex models that allow for both diffusion and advection (i.e., directional transport) in the distribution of allele frequencies over space, as well as for a change in these parameters at different periods of time. We apply the method to alleles in two of the aforementioned loci in the human genome, which have been reported to have strong evidence for recent positive selection: LCT/MCM6 and TYR. We focus on Western Eurasia during the Holocene, where ancient genomes are most densely sampled, and infer parameters relevant to the spread of these alleles, including selection, diffusion and advection coefficients.\n\n## Results\n\n### Summary of model\n\nWe based our statistical inference framework on a model proposed by Novembre et al., 2005 to fit allele frequencies in two dimensions to present-day genotype data spread over a densely sampled map. We extend this model in several ways:\n\nWe explored the performance of two different spread models, which are extensions of the original model by Novembre et al., 2005, hereby called model A. This is a diffusion model containing a selection coefficient $s$ (determining the rate of local allele frequency growth) and a single diffusion term ($\\sigma$). A more general diffusion model\u2014hereby model B\u2014allows for two distinct diffusion parameters for latitudinal ($\\sigma_{y}$) and longitudinal ($\\sigma_{x}$) spread. Finally, model C is even more general and includes two advection terms (vx and vy), allowing the center of mass of the allele\u2019s frequency to diverge from its origin over time. The incorporation of advection is meant to account for the fact that population displacements and expansions could have led to allele frequency dynamics that are poorly explained by diffusion alone.\n\nIn order to establish a starting time point for our diffusion process, we used previously published allele age estimates obtained from a nonparametric approach leveraging the patterns of haplotype concordance and discordance around the mutation of interest (Albers and McVean, 2020). In the case of the allele in the LCT/MCM6 region, we also used age estimates based on an approximate Bayesian computation approach (Itan et al., 2009).\n\n### Performance on deterministic simulations\n\nTo characterize the accuracy of our inference method under different parameter choices, we first generated deterministic simulations from several types of diffusion models. First, we produced an allele frequency surface map with a specified set of parameters from which we drew 1040 samples matching the ages, locations, and genotype calling format (diploid vs. pseudohaploid) of the 1040 genomes that we analyze below when studying the rs1042602(A) allele.\n\nWe generated six different simulations with different diffusion coefficients and afterward ran our method assuming model B. The results (simulations B1\u2212B6) are summarized in Figure 1, Figure 1\u2014figure supplements 1\u20135, and Appendix 2\u2014table 1. Overall, the model is more accurate at correctly inferring the parameters for the time period before 5000 years BP (Figure 1b), with decreased performance when longitudinal diffusion is high (Figure 1\u2014figure supplement 5).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-v2.jpg)\n\n**Figure 1.:** (a) Comparison of true and inferred allele frequency dynamics for a simulation with diffusion and no advection (B5). The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2\u2014table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Comparison of true and inferred allele frequency dynamics for simulation B1. The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2\u2014table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Comparison of true and inferred allele frequency dynamics for simulation B2. The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2\u2014table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Comparison of true and inferred allele frequency dynamics for simulation B3. The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2\u2014table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Comparison of true and inferred allele frequency dynamics for simulation B4. The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2\u2014table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) Comparison of true and inferred allele frequency dynamics for simulation B6. The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2\u2014table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (a) Comparison of true allele frequency dynamics for simulation B1 and those inferred by the model C. The green dot shows the origin of the derived allele and the cross represents the location of the first individual that carried it. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (a) Comparison of true allele frequency dynamics for simulation B4 and those inferred by the model C. The green dot corresponds to the origin of the allele, and the cross represents the first sample having the derived variant. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\nNext, we investigated the performance of model C, which includes advection coefficients. We generated four different simulations including advection (simulations C1\u2212C4: Figure 2, Figure 1\u2014figure supplements 1\u20133, and Appendix 2\u2014table 2). We found that our method is generally able to estimate the selection coefficient accurately. However, in some of the simulations, we found discrepancies between the estimated and true diffusion and advection coefficients, often occurring because of a misestimated origin forcing the other parameters to adjust in order to better fit the allele frequency distribution in later stages of the allele\u2019s spread (Figure 2). Despite the disparities between the true and inferred parameter values, the resulting surface plots become very similar as we approach the present, suggesting that different combinations of parameters can produce similar present-day allele frequency distributions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig2-v2.jpg)\n\n**Figure 2.:** (a) Comparison of true and inferred allele frequency dynamics for one of the simulations including advection (C4). The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2\u2014table 2. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Comparison of true and inferred allele frequency dynamics for one of the simulations including advection (C1). The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2\u2014table 2. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Comparison of true and inferred allele frequency dynamics for one of the simulations including advection (C2). The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2\u2014table 2. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Comparison of true and inferred allele frequency dynamics for one of the simulations including advection (C3). The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2\u2014table 2. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.\n\n### Advection model applied to non-advection simulations\n\nWe assessed model performance when we apply model C, which includes advection coefficient estimates, to simulations generated without advection (see Figure 1\u2014figure supplements 6 and 7). We can observe that the advection coefficients are inferred to be non-zero (Figure 1\u2014figure supplements 6b and 7b); however, the inferred allele frequency dynamic plots closely resemble the ones obtained with true parameter values (Figure 1\u2014figure supplements 6a and 7a). This shows that complex interactions between the diffusion and advection coefficients can result in similar outcomes even when only diffusion is considered in the model.\n\nThe inference of the origin of the allele also differs when we compare results when using models B and C. In order to understand better how the model estimates the allele origin, we highlighted the first individual in simulations B1 and B4 that contains the derived allele. We can see that in the case of simulation B1 the inferred origin of the allele is close to the first observance of the derived allele in the model that includes advection. In contrast when the advection is not included, the origin of the allele is inferred to be closer to where it is initially rising in frequency (Figure 1\u2014figure supplements 1a and 4a). However, this is not always the case. For instance, if we look at the results from the advection model on simulation B4, we can see that the origin of the allele is inferred relatively far from the sample known to have carried the first instance of the derived allele. Therefore, if there is a relatively large interval between the time when the allele originated and when the first ancient genomes are available, the beneficial allele can spread widely, but as this spread is not captured by any of the data points, inference of the precise origin of the selected allele is nearly impossible.\n\n### Impact of sample clustering on parameter estimates\n\nWe evaluated the impact of different sampling and clustering schemes on our inferences that could potentially arise by aggregating aDNA data from studies with different sampling schemes. We used a deterministic simulation to create three different degrees of clustering, which we will refer to as \u2018homogeneous,\u2019 \u2018intermediate,\u2019 or \u2018extreme\u2019 by varying the area from which we sample individuals to be used in our inferences (Figure 3\u2014figure supplement 1). Additionally, we also tested the impact of biased temporal sampling in the periods before and after 5000 years BP by oversampling in the ancient period (75%/25%), equally sampling in the two periods (50%/50%), and oversampling in the recent period (25%/75%). Because we evaluated this temporal bias for each of the three spatial clustering sampling scenarios, this resulted in a total of nine different sampling scenarios. We note that the third \u2018extreme\u2019 spatial clustering scenario is completely unrealistic and one would not expect inferences of any degree of accuracy from it, but we believe it gives a good idea of the behavior of our method in the limiting case of extremely restricted spatial sampling.\n\nA comparison of allele frequency maps generated using true parameter values and using parameter estimates from the different sampling schemes is shown in Figure 3\u2014figure supplements 2\u20139. In Figure 3 we show the allele frequency map generated using the \u2018intermediate 75%/25%\u2019 clustering scheme. Parameter estimates used to generate all these figures are summarized in Appendix 2\u2014table 3. Overall we can see that the allele frequency maps inferred from these scenarios closely resemble the maps generated using the true parameter values, despite the challenges in finding accurate values for the individual point estimates of some of the parameters, highlighting that various combinations of diffusion and advection coefficients can produce similar underlying frequency maps (as discussed in the section \u2018Performance on deterministic simulations\u2019). This suggests that the joint spatiotemporal information encoded in the inferred maps (not just the individual parameters estimates) should be used in interpreting model outputs, particularly when it comes to the advection and diffusion parameters. The selection coefficient estimates are inferred highly accurately, regardless of the sampling scheme chosen, and lie close to the true value, with only a slight underestimation in the time period after 5000 years BP (with the exception of the \u2018extreme 25%/75%\u2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-v2.jpg)\n\n**Figure 3.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for \u2018intermediate 75%/25%\u2019 clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2\u2014table 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We chose five locations and increasingly restricted the area where we allowed the individuals to be sampled. (a) Map showing homogeneous sampling scheme in which we did not impose any spatial restrictions of individuals sampled. (b) Intermediate sampling scheme with the region restricted to 7\u00b0 in each cardinal direction from each of the chosen locations. (c) Extreme sampling scheme with the sampling region restricted to 2\u00b0 in each cardinal direction from the chosen locations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for \u2018homogeneous 75%/25%\u2019 clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2\u2014table 3.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for \u2018homogeneous 50%/50%\u2019 clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2\u2014table 3.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for \u2018homogeneous 25%/75%\u2019 clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2\u2014table 3.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for \u2018intermediate 50%/50%\u2019 clustering scheme. Parameter values used to generate the maps are summarzsed in Appendix 2\u2014table 3.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for \u2018intermediate 25%/75%\u2019 clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2\u2014table 3.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for \u2018extreme 75%/25%\u2019 clustering scheme. Parameter values used to generate the maps are summarzsed in Appendix 2\u2014table 3.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp8-v2.jpg)\n\n**Figure 3\u2014figure supplement 8.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for \u2018extreme 50%/50%\u2019 clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2\u2014table 3.\n\n![Figure 3\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp9-v2.jpg)\n\n**Figure 3\u2014figure supplement 9.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for \u2018extreme 25%/75%\u2019 clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2\u2014table 3.\n\n### Spatially explicit forward simulations\n\nIn addition to drawing simulated samples from a diffusion model, we used SLiM (Haller and Messer, 2019) to perform spatially explicit individual-based forward-in-time simulations of selection acting on a beneficial allele by leveraging an R interface for spatial population genetics now implemented in the R package slendr (Petr, 2021).\n\nWe introduced a single beneficial additive mutation in a single individual and let it evolve across the European landscape. Before applying our method on the simulated data, we sampled 1040 individuals whose ages were log-uniformly distributed to ensure that there were more samples closer to the present, as in the real data. We transformed the diploid genotypes to pseudohaploid genotypes by assigning a heterozygous individual an equal probability of carrying the ancestral or the derived genotype. The parameter values estimated by our model to the simulations described in this section are summarized in Appendix 2\u2014table 4.\n\nWe can see that the origin of the allele inferred by the model closely corresponds to the first observation of the derived allele in the simulation (Figure 4). The inferred selection coefficient is only slightly higher than the true value from the simulation (0.0366 vs. 0.030). In general, the model accurately captures the spread of the allele centered in Central Europe, though we observe some discrepancies due to differences between the model assumed in the simulation (which, e.g., accounts for local clustering of individuals, Figure 4\u2014figure supplement 1), and that assumed by our diffusion-based inference.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig4-v2.jpg)\n\n**Figure 4.:** (A) Individual-based simulation of an allele that arose in Central Europe 15,000 years ago with a selection coefficient of 0.03. Each dot represents a genotype from a simulated genome. To avoid overplotting, only 1000 out of the total 20,000 individuals in the simulation in each time point are shown for each genotype category. (B) Allele frequency dynamics inferred by the diffusion model on the individual-based simulation to the left, after randomly sampling 1040 individuals from the simulation and performing pseudohaploid genotype sampling on them. The ages of sampled individuals were log-uniformly distributed. The estimated parameter values of the fitted model are shown in Appendix 2\u2014table 4.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig4-figsupp1-v2.jpg)\n\n### Dynamics of the rs4988235(T) allele\n\nHaving tested the performance of our method on simulated data, we set out to infer the allele frequency dynamics of the rs4988235(T) allele (associated with adult lactase persistence) in ancient Western Eurasia. For our analysis, we used a genotype dataset compiled by Segurel et al., 2020, which amounts to 1434 genotypes from ancient Eurasian genomes individuals, and a set of 36,659 genotypes from present-day Western and Central Eurasian genomes (S\u00e9gurel and Bon, 2017; Heyer et al., 2011; Marchi et al., 2018; Liebert et al., 2017; Gallego Romero et al., 2012; Itan et al., 2010; Charati et al., 2019). After filtering out individuals falling outside of the range of the geographic boundaries considered in this study, we retained 1332 ancient individuals. The locations of ancient and present-day individuals used in the analysis to trace the spread of rs4988235(T) are shown in Figure 5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig5-v2.jpg)\n\n**Figure 5.:** The upper panel shows the spatiotemporal locations of ancient individuals, and the bottom panel represents the locations of present-day individuals.\n\nWe used a two-period scheme by allowing the model to have two sets of estimates for the selection coefficient and the diffusion and advection coefficients in two different periods of time: before and after 5000 years ago, reflecting the change in population dynamics and mobility before and after the Bronze Age transition (Loog et al., 2017; Racimo et al., 2020a). We used two allele age estimates as input: a relatively young one (7441 years ago) obtained by using the estimated start of selection onset from Itan et al., 2009 (though we note this is necessarily a lower bound of the age of mutation origin), and a relatively old one (20,106 years ago) obtained from the age estimate from Albers and McVean, 2020. The results obtained for fitting the model on rs4988235(T) are summarized in Appendix 2\u2014table 5 and Appendix 2\u2014table 6, and in Figure 6b (younger age) and Figure 6\u2014figure supplement 1 (older age).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-v2.jpg)\n\n**Figure 6.:** (a) Top: pseudohaploid genotypes of ancient samples at the rs4988235 SNP in different periods. Yellow corresponds to the rs4988235(T) allele. Bottom: allele frequencies of present-day samples represented as pie charts. The size of the pie charts corresponds to the number of available sequences in each region. (b) Inferred allele frequency dynamics of rs4988235(T). The green dot indicates the inferred geographic origin of the allele.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp1-v2.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp2-v2.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp3-v2.jpg)\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp4-v2.jpg)\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp5-v2.jpg)\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp6-v2.jpg)\n\n![Figure 6\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp7-v2.jpg)\n\n![Figure 6\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp8-v2.jpg)\n\n![Figure 6\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp9-v2.jpg)\n\nAssuming the mutation age estimate is equivalent to the start of selection onset from Itan et al., 2009, the origin of the allele is estimated to be north of the Caucasus, around what is now southwestern Russia and eastern Ukraine (Figure 6b). Given that this age is relatively young, our method fits a very strong selection coefficient ($\u22480.1$) during the first period in order to accommodate the early presence of the allele in various points throughout Eastern Europe, and a weaker (but still strong) selection coefficient ($\u22480.03$) in the second period. We also estimate stronger diffusion in the second period than in the first, to accommodate the rapid expansion of the allele throughout Western Europe, and a net westward advection parameter, indicating movement of the allele frequency\u2019s center of mass to the west as we approach the present.\n\nAssuming the older age estimate from Albers and McVean, 2020, the origin of the allele is estimated to be in the northeast of Europe (Figure 6\u2014figure supplement 1), which is at a much higher latitude than the first occurrence of the allele, in Ukraine. Due to the deterministic nature of the model, the frequency is implicitly imposed to expand in a region where there are no actual observed instances of the allele. The model compensates for this by placing the origin in an area with a lower density of available aDNA data and thus avoiding an overlap of the increasing allele frequencies with individuals who do not carry the derived rs4988235(T) allele (see Figure 6a). As the model expands rapidly in the southern direction (Appendix 2\u2014table 6) it eventually reaches the sample carrying the derived variant in Ukraine.\n\n### Dynamics of the rs1042602(A) allele\n\nNext, we investigated the spatiotemporal dynamics of the spread of an allele at a pigmentation-associated SNP in the TYR locus (rs1042602(A)), which has been reported to be under recent selection in Western Eurasian history (Stern et al., 2019). For this purpose, we applied our method to the Allen Ancient DNA Resource data (Reich and Mallick, 2019), which contains randomly sampled pseudohaploid genotypes from 1513 published ancient Eurasian genomes (listed in Supplementary file 1), from which we extracted those that had genotype information at this locus in Western Eurasia. We merged this dataset with diploid genotype information from high-coverage present-day West Eurasian genomes from the Human Genome Diversity Panel (HGDP) (Bergstr\u00f6m et al., 2020), which resulted in a total of 1040 individuals with genotype information at rs1042602, which were used as input to our analysis. Geographic locations of individuals in the final dataset are shown in Figure 7.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig7-v2.jpg)\n\n**Figure 7.:** Upper panel: ancient individuals dated as older than 10,000 years ago. Middle panel: ancient individuals dated as younger than 10,000 years ago. Bottom panel: present-day individuals from the Human Genome Diversity Panel (HGDP).\n\nSimilarly to our analysis of the spread of the allele in rs4988235(T), we inferred the dynamics of the rs1042602(A) allele separately for the time periods before and after 5000 years BP and assuming the age of the allele to be 26,361 years (Albers and McVean, 2020). The inferred parameters for both time periods are summarized in Appendix 2\u2014table 7, and the allele frequency surface maps generated using these parameters are shown in Figure 8b. The origin of the rs1042602(A) corresponds closely to the region where the allele initially starts to segregate in the time period between 7500 and 10,000 years BP as seen in Figure 8a. Estimates of the selection coefficient for both time periods (0.0221 and 0.0102 for the period before and after 5000 years BP, respectively) suggest that selection acting on the allele has decreased after 5000 years BP.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-v2.jpg)\n\n**Figure 8.:** (a) Top: pseudohaploid genotypes of ancient samples of the rs1042602 in different periods. Yellow corresponds to the A allele. Bottom: diploid genotypes of present-day samples. (b) Inferred allele frequency dynamics of rs1042602(A). The green dot corresponds to the inferred geographic origin of the allele.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp1-v2.jpg)\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp2-v2.jpg)\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp3-v2.jpg)\n\n![Figure 8\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp4-v2.jpg)\n\n![Figure 8\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp5-v2.jpg)\n\n![Figure 8\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp6-v2.jpg)\n\n### Robustness of parameters to the inferred geographic origin of allele\n\nWe carried out an analysis to characterize how sensitive the selection, diffusion, and advection parameters are to changes in the assumed geographic origin of the allele. For the rs4988235(T) allele, we forced the origin of the allele to be 10\u00b0 away from our inferred origin in each cardinal direction, while assuming the allele age is equal to the inferred start of selection onset from Itan et al., 2009 (Appendix 2\u2014table 8). In Figure 6\u2014figure supplements 2\u20135, we can see the allele frequency dynamics of these four scenarios, respectively. We also forced the allele origin to be at the geographic origin estimated in Itan et al., 2009 (Figure 6\u2014figure supplement 6, Appendix 2\u2014table 9), which is westward of our estimate. In all five cases during the period prior 5000 years BP, the allele is inferred to expand in the direction of the first sample that is observed to carry the rs4988235(T) allele and is located in Ukraine. During the time period after 5000 years BP, the patterns produced by the model are rather similar, although the parameters associated with diffusion and advection differ, in order to account for the different starting conditions.\n\nWe also investigated how the results are affected when the estimated geographic origin of the rs1042602(A) allele is moved with respect to the initial estimate. We set the allele to be 10\u00b0 east, 10\u00b0 north, and 10\u00b0 south of the original estimate as shown in Figure 8\u2014figure supplements 1\u20133, respectively (for parameter estimates see Appendix 2\u2014table 10). We did not look at a scenario in which the origin of the allele is moved to the west since it would either end up in the Black Sea or more westward than 10\u00b0. The selection coefficient remains similar to the original estimate throughout all three scenarios. The way the allele spreads across the landscape is also similar in all cases and, as in the case of rs4988235(T), the model accounts for the different origins of the allele by adjusting the diffusion and advection coefficients in the time period after 5000 years BP.\n\n### Robustness of parameters to the assumed age of the allele\n\nIn order to investigate how sensitive our inferences are to the point estimates of allele ages we obtained from the literature (Albers and McVean, 2020; Itan et al., 2009), we also fitted our model using the upper and lower ends of the 95% confidence intervals or credible intervals for each age estimate (depending on whether the inference procedure in the literature was via a maximum likelihood or a Bayesian approach). For the rs4988235(T) allele, the reported credible intervals for the (Itan et al., 2009) age are 8683 and 6256 years BP. For the rs1042602(A) allele, the reported confidence intervals for the age are 27,315 and 25,424 years BP (Albers and McVean, 2020).\n\nWhen refitting the model for the rs4988235(T) allele, we found that the inferred selection coefficient is slightly lower when the allele age is assumed to be at the lower bound of the 95% credible interval (0.0867 vs. 0.0993 before 5000 years BP and 0.0321 vs. 0.0328 after 5000 years BP) and slightly higher when assumed to be at the upper bound (0.0994 vs. 0.0993 before 5000 years BP and 0.0572 vs. 0.0328 after 5000 years BP) (Appendix 2\u2014table 5 and Figure 6\u2014figure supplements 7 and 8). This occurs because the selection intensity must be higher or lower when there is more or less time, respectively, for the allele to reach the allele frequencies observed in the data. In the case of the rs1042602(A) allele, this only affects the earlier time period (Appendix 2\u2014table 7). The rs4988235(T) allele\u2019s geographic distribution in the more recent time periods is also less extended geographically when the age is assumed to be young. The inferred geographic origin of both alleles slightly differs under different assumed ages (Figure 8\u2014figure supplements 4 and 5).\n\nIn addition, we assessed the likelihood of the best-fitted models with varying the ages of the rs4988235(T) and rs1042602(A) alleles (Figure 6\u2014figure supplement 9 and Figure 8\u2014figure supplement 6, respectively). We can see that in the case of rs4988235(T) allele the allele age used in this study (7441 years) gives the most likely solution among the explored ages. In case of the rs1042602(A) allele, we found that there are multiple nearly equally likely ages when looking at ages at least as old as 15,000 years.\n\n## Discussion\n\nA spatially explicit framework for allele frequency diffusion can provide new insights into the dynamics of selected variants across a landscape. We have shown that under the conditions of strong, recent selection, our method can infer selection and dispersal parameters using a combination of ancient and present-day human genomic data. However, when allowing for advection, the inferred location tends to become less accurate. This suggests that migration events early in the dispersal of the selected allele could create difficulties in finding the true allele origin if net directional movement (i.e., via major migratory processes) had a large effect in this dispersal. This issue could be alleviated with the inclusion of more ancient genomes around the time of the origin of the mutation, perhaps in combination with a more fine-scaled division into periods where advection may have occurred in different directions.\n\nThe inferred geographic origin of the rs4988235(T) allele reflects the best guess of our framework given the constraints provided by its input, namely, the previously inferred age of the allele and the observed instances of this allele throughout Western Eurasia. We are also assuming that the allele must have arisen somewhere within the bounding box of our studied map. When assuming a relatively young allele age (7441 years ago, equal to the start of selection onset in Itan et al., 2009), the origin of the allele is placed north of the Caucasus, perhaps among steppe populations that inhabited the area at this time (Haak et al., 2015; Allentoft et al., 2015). This origin is further east than the geographic origin estimate from Itan et al., 2009, likely reflecting additional ancient DNA information that is available to us, and indicates an early presence of the allele in Eastern Europe. When assuming a relatively old allele age (20,106 years ago, Albers and McVean, 2020), the age is placed in Northeast Europe, perhaps among Eastern hunter-gatherer groups that inhabited the region in the early Holocene. We note that the number of available genomes for Eastern and Northeastern Europe during the early Holocene is scarce, so the uncertainty of the exact location of this origin is relatively high. Regardless of the assumed age, we estimate a net westward displacement of the allele frequency\u2019s center of mass, and a rapid diffusion, particularly in the period after 5000 years ago.\n\nVarious studies have estimated the selection coefficient for the rs4988235(T) allele, and these range from as low as 0.014 to as high as 0.19 (Enattah et al., 2008; Mathieson and Mathieson, 2018; Mathieson, 2020; Stern et al., 2019; Burger et al., 2020; Peter et al., 2012; Gerbault et al., 2009; Itan et al., 2009; Bersaglieri et al., 2004). Recent papers incorporating ancient DNA estimate the selection coefficient to be as low as 0 (in certain regions of Southern Europe) and as high as 0.06 (Mathieson and Mathieson, 2018; Mathieson, 2020; Burger et al., 2020). It is also likely that the selection coefficient was different for different regions of Europe, perhaps due to varying cultural practices (Mathieson, 2020). In our case, the estimated selection coefficient during the first period\u2014before 5000 years ago\u2014depends strongly on the assumed allele age (s = 0.0993 vs. s = 0.0285). As in the case of the geographic origin, these estimates should be taken with caution as the number of available allele observations in the early Holocene is fairly low. The estimates for the second period\u2014after 5000 years ago\u2014are more robust to the assumed age: s = 0.0328 (95% CI: 0.0327\u20130.0329) if we assume the younger allele age (7441 years ago) and s = 0.0255 (95% CI: 0.0252\u20130.0258) if we assume the older allele age (20,106 years ago). These estimates are also within the range of previous estimates.\n\nIn the case of the rs1042602(A) allele, our estimated selection coefficients of 0.0221 (95% CI: 0.0216\u20130.0227) and 0.0102 (95% CI: 0.0083\u20130.0120) for the time periods before and after 5000 years BP, respectively, are generally in agreement with previous results. Wilde et al., 2014 used a forward simulation approach to infer a point estimate of 0.026. Another study using an approximate Bayesian computation framework (Nakagome et al., 2019) estimated the strength of selection acting on rs1042602 to be 0.013 (0.002\u20130.029). Although both studies utilized ancient DNA data, the estimates were obtained without explicitly modeling the spatial dimension of the selection process.\n\nOur estimates of the longitudinal advection parameter are negative for both the SNPs in the TYR and LCT loci: the mutation origins are always to the east of the center of mass of the allele frequency distribution seen in present-day data. This perhaps reflects common migratory processes, like the large-scale Neolithic and Bronze Age population movements from east to west, affecting the allele frequencies at these loci across the Eurasian landscape (Allentoft et al., 2015; Haak et al., 2015). As a form of regularization, we kept the range of explored values for the advection parameters to be small (\u22122.5\u20132.5 km per generation), while allowing the diffusion parameters to be explored over a much wider range of values. In certain cases, like the second period of the rs4988235(T) spread when the allele age is assumed to be young (Appendix 2\u2014table 5), we find that the advection parameters are fitted at the boundary of the explored range, because the allele needs to spread very fast across the landscape to fit the data.\n\nA future improvement to our method could include other forms of regularization that better account for the joint behavior of the advection and diffusion processes, or the use of priors for these parameters under a Bayesian setting, which could be informed by realistic assumptions about the movement of individuals on a landscape. Bayesian parameter fitting would likely provide a more robust understanding of the uncertainty of the estimates as well as an opportunity to formally compare different models using Bayes factors, although at the cost of an increase of computational intensity.\n\nWhen investigating the robustness of the geographic origin of both rs4988235(T) and rs1042602(A), we found that parameters related to the beneficial allele\u2019s expansion change in response to different assumed origins of the allele. The resulting allele frequency surface plots, however, appear very similar throughout the later stages of the process, showing that the model tends to adjust the diffusion and advection coefficients in a way such that the allele will end up expanding into the same areas regardless of the origin.\n\nAs we apply these methods to longer time scales and broader geographic areas, the assumptions of spatiotemporal homogeneity of the parameters seem less plausible. There may be cases where the allele may have been distributed over a wide geographic area but remained at low frequencies for an extended period of time, complicating the attempts to pinpoint the allele\u2019s origin. In our study, we estimated diffusion and selection coefficients separately for two time periods before and after 5000 years ago to account for changes in mobility during the Bronze Age, but this approach may still be hindered by uneven sampling, especially when the allele in question exists at very low frequencies. Notably, our results for the spread of the rs4988235(T) allele during the older time period should be interpreted with caution, since they may be affected by sparse sampling in the early Holocene.\n\nPotential future extensions of our method could incorporate geographic features and historical migration events that create spatially or temporally varying moderators of gene flow. An example of this type of processes is the retreat of glaciers after the last Glacial maximum, which allowed migration of humans into Scandinavia (G\u00fcnther et al., 2018). These changing geographic features could lead to changes in the rate of advection or diffusion across time or space. They could also serve to put more environmentally aware constraints on the geographic origin of the allele, given that it cannot have existed in regions uninhabitable by humans, and to extend our analyses beyond the narrow confines of the Western Eurasian map chosen for this study. One could also envision incorporating variation in population densities over time or known migration processes in the time frames and regions of interest. These might have facilitated rapid, long-range dispersal of beneficial alleles (Bradburd et al., 2016; Hallatschek and Fisher, 2014) or caused allelic surfing on the wave of range expansions (Klopfstein et al., 2006). Additional information like this could come, for example, from previously inferred spatiotemporal demographic processes (e.g. Racimo et al., 2020b).\n\nAs described above, our model only accounts for diffusion in two directions. Further extension of our model could therefore incorporate anisotropic diffusion (Othmer et al., 1988; Painter and Hillen, 2018). Another possibility could be the introduction of stochastic process components in order to convert the partial differential equations into stochastic differential equations (Brown et al., 2000). Stochastic components could serve to induce spatial autocorrelation and capture local patterns of allele frequency covariance in space that might not be well modeled by the deterministic partial differential equations (PDEs) (Cressie and Wikle, 2015). They could also serve to induce stochasticity in allele frequency changes over time as a consequence of genetic drift (Crow and Kimura, 1970), allowing one to model the dynamics of more weakly selected variants, where drift plays an important role. Eventually, one could perhaps combine information across loci to jointly model the spatiotemporal frequency surfaces at multiple loci associated with the same trait. This could help clarify the dynamics of polygenic adaptation and negative selection on complex traits (Irving-Pease et al., 2021), and perhaps hindcast the genetic value of traits across a landscape.\n\nThe availability of hundreds of ancient genomes (Marciniak and Perry, 2017) and the increasing interest in spatiotemporal method development (Bradburd and Ralph, 2019), such as the one described in this article, will likely lead researchers to posit new questions and hypotheses about the behavior of natural selection. In the case of a beneficial allele spreading on a landscape, new ontologies and vocabulary for describing positive selection in time and space will be needed. Abundant terms exist to classify the initial conditions and dynamics of a selective sweep in a single population (hard sweep, multiple-origin soft sweep, single-origin soft sweep, partial sweep) (Hermisson and Pennings, 2005; Pritchard and Di Rienzo, 2010; Hermisson et al., 2017). In contrast, there is a lack of vocabulary for distinguishing between a scenario of strong selection that is locally constrained in space from a scenario of widespread selection extended over a landscape, or a model of neutral diffusion in space followed by parallel non-neutral increases in frequency at multiple locations. For example, Ralph and Coop, 2010 showed how multiple localized hard sweeps may be seen as a soft sweep at a larger population-wide scale. Existing vocabulary for spatiotemporal genetic processes is clearly not enough, limiting the types of questions or hypotheses we can pose about them.\n\nPopulation genetic models that explicitly account for space and time are an important area of future methodological development (Bradburd and Ralph, 2019). We believe that methods such as the one described in this study show great promise at broadening the horizon of our understanding of natural selection across space and time in humans and other species. As in the case of demographic reconstruction (Ray and Excoffier, 2009), spatiotemporal information can greatly help improve our knowledge of how natural selection operated in the past.\n\n## Methods\n\n### The model\n\nTo describe the allele frequency dynamics in time and space, we first begin by using a deterministic model based on a two-dimensional PDE (Fisher, 1937; Kolmogorov et al., 1937; Novembre et al., 2005). This PDE represents the distribution $p\u2062(x,y,t)$ of the allele frequency across a two-dimensional ($x,y$) landscape at time $t$:\n\n$$\n\\frac{\u2202p}{\u2202t}=\\frac{1}{2}\\sigma^{2}\\frac{\u2202^{2}p}{\u2202x^{2}}+\\frac{1}{2}\\sigma^{2}\\frac{\u2202^{2}p}{\u2202y^{2}}+\\gamma(p,s,d)\n$$\n\nwhere\n\n$$\n\\gamma\u2062(p,s,d)=p\u2062(1-p)\u2062(p\u2062d+s\u2062(1-2\u2062p)).\n$$\n\nHere, $\\sigma$ is the diffusion coefficient, $s$ is the selection coefficient, and $d$ is the dominance coefficient (Novembre et al., 2005). We assumed an additive model and fixed $d=2\u2062s$ in all analyses below. We call this \u2018model A,\u2019 but we also evaluated the fit of our data under more complex models that are more flexible, and are described below.\n\nModel B is a more general diffusion-reaction model, which incorporates distinct diffusion terms in the longitudinal and latitudinal directions ($\\sigma_{x}$ and $\\sigma_{y}$, respectively):\n\n$$\n\\frac{\\partial\u2061p}{\\partial\u2061t}=\\frac{1}{2}\u2062\\sigma_{x}^{2}\u2062\\frac{\\partial^{2}\u2061p}{\\partial\u2061x^{2}}+\\frac{1}{2}\u2062\\sigma_{y}^{2}\u2062\\frac{\\partial^{2}\u2061p}{\\partial\u2061y^{2}}+\\gamma\u2062(p,s,d)\n$$\n\nModel C is a generalization of model B that incorporates advection terms in the longitudinal and latitudinal directions (see, e.g. Cantrell and Cosner, 2004 for a motivation of this type of model in the context of spatial ecology):\n\n$$\n\\frac{\\partial\u2061p}{\\partial\u2061t}=\\frac{1}{2}\u2062\\sigma_{x}^{2}\u2062\\frac{\\partial^{2}\u2061p}{\\partial\u2061x^{2}}+\\frac{1}{2}\u2062\\sigma_{y}^{2}\u2062\\frac{\\partial^{2}\u2061p}{\\partial\u2061y^{2}}+v_{x}\u2062\\frac{\\partial\u2061p}{\\partial\u2061x}+v_{y}\u2062\\frac{\\partial\u2061p}{\\partial\u2061y}+\\gamma\u2062(p,s,d)\n$$\n\nHere, vx and vy represent the coefficients for advective velocity along the longitude and latitude respectively.\n\nIn Appendix 1, we motivate the construction of these equations using model C as an example and show that Equation 4 can be obtained by taking an infinitesimal limit of a random walk on a two-dimensional lattice, after including a reaction term due to selection. Models A and B are then shown to be special cases of model C.\n\nFor evaluating the likelihood of the observed data, we use a binomial genotype sampling model. Let $g_{i}\\in0,1,2$ be the genotype of individual $i$ at the locus of interest, let ai be the number of reads carrying ancestral alleles, and let di be the number of reads carry derived reads. Let $(x_{i},y_{i})$ be the coordinates of the location from which individual $i$ was sampled, and ti its estimated age (e.g., from radiocarbon dating). Then, the likelihood for individual $i$ can be computed as follows:\n\n$$\nL\u2062(d_{i},a_{i})=\\sumh=02P\u2062[d_{i},a_{i}|g_{i}=h]\u2062P\u2062[g_{i}=h|p\u2062(x_{i},y_{i},t_{i})]\n$$\n\nHere, $p\u2062(x_{i},y_{i},t_{i})$ is the solution to one of the partial differential equations described above (Equation 1, Equation 2, or Equation 4, depending on the process model chosen), evaluated at location $(x_{i},y_{i})$ and time ti. In turn, $P\u2062[d_{i},a_{i}|g_{i}=h]$ is the likelihood for genotype $i$. Furthermore, $P\u2062[g_{i}=h|p\u2062(x_{i},y_{i},t_{i})]$ is a binomial distribution, where $n$ represents the ploidy level, which in this case is 2:\n\n$$\nP\u2062[g_{i}=h|p\u2062(x_{i},y_{i},t_{i})]=(\\frac{n}{h})\u2062p\u2062(x_{i},y_{i},t_{i})^{h}\u2062(1-p\u2062(x_{i},y_{i},t_{i}))^{n-h}\n$$\n\nThen, the likelihood of the entire data can be computed as\n\n$$\nL(d,a)=\\prodi=1ML(x_{i},y_{i},t_{i})\n$$\n\nwhere M is the total number of individuals for which we have data, d is the vector containing the derived read count for each individual, and a is the vector containing the ancestral read count for each individual. We computed genotype likelihoods directly on the BAM file read data using the SAMtools genotype model (Li, 2011) implemented in the software ANGSD (Korneliussen et al., 2014).\n\nWhen only randomly sampled pseudohaploid allele counts are available, we used a Bernoulli sampling likelihood (conditional on the genotype gi) on the right-hand side of Equation 6 instead. Briefly, assuming that the probability of an individual having genotype $g$ at a particular locus given the underlying allele frequency $p$ follows a binomial distribution and that the probability of sampling a read given the genotype of an individual follows a Bernoulli distribution with probability of success $\\frac{1}{2}\u2062g$, then the probability of sampling a read given the genotype follows a Bernoulli distribution with probability of success $p$.\n\n### Map\n\nWe restricted the geographic area explored by our model fit to be between 30\u00b0N to 75\u00b0N, and between 10\u00b0W and 80\u00b0E. For numerical calculations, we used a grid constructed using a resolution of approximately one grid cell per latitude and longitude. We used Harvesine functions in order to transform the distance from degrees to kilometers between two geographic points. The diffusion of the allele frequency was disallowed in the map regions where the topology is negative (i.e., regions under water), based on ETOPO5 data (NOAA, National Geophysical Data Center, B. C, 1988). For this reason, we added land bridges between the European mainland and Sardinia, and between the mainland and Great Britain, in order to allow the allele to diffuse in these regions (see Appendix 2\u2014figure 1).\n\n### Parameter search\n\nParameter optimization was done via maximum likelihood estimation with a two-layer optimization set-up. The first layer consists of a simulated annealing approach (B\u00e9lisle, 1992) starting from 50 random points in the parameter space. The initial 50 points are sampled using Latin hypercube sampling to ensure an even spread across the parameter space. The output of this fit was then fed to the L-BFGS-B algorithm to refine the parameter estimates around the obtained maximum and obtain confidence intervals for the selection, diffusion and advection parameters (Byrd et al., 1995).\n\nThe parameters optimized were:\n\nWe chose to construct our method in a way that uses the age of the allele as an input parameter rather than estimating it. We do this since there are multiple equally possible solutions with various combinations of allele age and selection coefficient values as shown in Appendix 2\u2014figure 3. The latitude and longitude are discretized in our model in order to solve the differential equations numerically, thus the origin of a mutation is measured in terms of discrete units. For this reason, when using the L-BFGS-B algorithm, we fixed the previously estimated origin of the allele and did not explore it during this second optimization layer. For numerical calculations, we used the Livermore Solver for Ordinary Differential Equations (Hindmarsh, 1983) implemented in R package \u2018deSolve\u2019 (Soetaert et al., 2010), which is a general-purpose solver that can handle both stiff and nonstiff systems. In case of stiff problems, the solver uses a Jacobian matrix. Absorbing boundary conditions were used at the boundaries of the map. For visualization purposes, we masked the allele frequencies from areas with negative topology (i.e., areas covered by large bodies of water). Time was measured in generations, assuming 29 years per generation. During the optimization, we scaled the time and the parameters by a factor of 10, which allowed us to decrease the execution time of the model.\n\nWe initialized the grid by setting the initial allele frequency to be p0 in a grid cell where the allele originates and 0 elsewhere. p0 was calculated as $1/(2*D*A)$, where $D$ is the population density and is equal to 2.5 inhabitants per square kilometer, which is the estimated population density in Europe in 1000 BC (Colin McEvedy, 1978; Novembre et al., 2005). In the equation, $D$ is multiplied by 2 because we assume that the allele originated in a single chromosome in a diploid individual. $A$ is the area in square kilometers of the grid cell where the allele emerged.\n\nAsymptotic 95% confidence intervals for a given parameter $\\theta_{j}$ were calculated using equation\n\n$$\n\\theta_{j}^\\pm1.96\\sqrt{(F(\\theta)^{\u22121})_{jj}}\n$$\n\nwhere $F(\\theta)$ is an estimate of the observed Fisher information matrix (Fisher, 1922; Efron and Hastie, 2016; Casella and Berger, 2001).\n\n### Implementation\n\nThe above-described model was implemented in R version 3.6. To numerically solve the differential equations and obtain maximum likelihood estimates, we used the libraries deSolve (Soetaert et al., 2010), ReacTran (Soetaert and Meysman, 2012), and bbmle (Bolker, 2020). Scripts containing the code used in this article are available on GitHub: https://github.com/RasaMukti/stepadna, (copy archived at swh:1:rev:d024767648d873f329a8e17fcaf6034c99157120; Muktupavela, 2021).\n\n### Individual-based simulations\n\nFor the individual-based spatiotemporal forward simulations, we first defined a spatial boundary for a population spread across a broad geographic region of Europe. In order to ensure a reasonably uniform distribution of individuals across this spatial range throughout the course of the simulation, we set the maximum distance for spatial competition and mating choice between individuals to 250 km (translated, on a SLiM level, to the interaction parameter maxDistance), and the standard deviation of the normal distribution governing the spread of offspring from their parents at 25 km (leveraged in SLiM\u2019s modifyChild() callback function) (Haller and Messer, 2019). We note that we have chosen the values of these parameters merely to ensure a uniform spread of individuals across a simulated landscape. They are not intended to represent realistic estimates for these parameters at any time in human history.\n\nAfter defining the spatial context of the simulations and ensuring the uniform spread of individuals across their population boundary, we introduced a single beneficial additive mutation in a single individual. In order to test how accurately our model can infer the parameters of interest, we simulated a scenario in which the allele appeared in Central Europe 15,000 years ago with the selection coefficient of the beneficial mutation set to 0.03. Over the course of the simulation, we tracked the position of each individual that ever lived together with its location on a two-dimensional map, as well as its genotype (i.e., zero, one, or two copies of the beneficial allele). We then used this complete information about the spatial distribution of the beneficial allele in each time point to study the accuracy of our model in inferring the parameters of interest.\n",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "bf0ef3fd-07c3-43e1-97d7-5f716c461f0f",
+      "submission_id": "e55ce23f-d8a8-47c3-bda4-098cc80459c1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Aida M Andr\u00e9s, https://ror.org/02jx3x895 University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73767.sa0](https://doi.org/10.7554/eLife.73767.sa0)\n\nThis is an important manuscript that presents an elegant framework to infer the dynamics of beneficial alleles over time and space. The authors present a new method and show, convincingly, its utility and great potential to reconstruct the evolutionary history of beneficial alleles. The method is also applied to loci that likely mediated human genetic adaptations, contributing to our understanding of human recent evolution. The work will be of broad interest to evolutionary biologists who seek to understand the dynamics of beneficial mutations in populations.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Aida M Andr\u00e9s, https://ror.org/02jx3x895 University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73767.sa1](https://doi.org/10.7554/eLife.73767.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Modelling the spatiotemporal spread of beneficial alleles using ancient genomes\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and George Perry as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Isabel Alves (Reviewer #1); Anders Eriksson (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers and editor found the manuscript elegant and interesting and appreciate the novelty and promise of your new method. They also value your new inferences on two important targets of positive selection in humans. You will find the individual reviews below, to be addressed individually. Here we provide a summary of the desired revisions, to assist you in the revision process.\n\n1) We believe that the manuscript needs a more systematic test for the sensitivity of the method to 1) misspecification of the age of the aDNA samples, and 2) the geographic location/clustering of the samples. This could be done for example by exploring the effect of these factors on the accuracy of the parameter estimates.\n\n2) Related, we believe that further discussion is needed on the extent to which differences observed across time periods (e.g. before and after 5000 BP) reflect particularities of the alleles (e.g. selection), populations (e.g mobility) or the density of the samples across time and space.\n\n3) Where models are applied to specific loci, results are often reported in the text without enough quantitative information and we think that clearer and more detailed information about the inferences must be presented in the text. As an example, where the model is run for different allele age estimates the (approximate maximum) likelihoods of parameter estimates for the different scenarios should be clearly shown in the text.\n\n4) We believe that the authors should clarify some of their choices for the method. We would like to see a discussion of whether the method may be suitable for treating allele age as a free parameter, or whether it is possible (and superior) to report Bayesian posterior distributions for the parameters and Bayes factors to compare the fit of different models to the data.\n\n5) The loci studied represent unusual cases of very strong positive selection in particular geographic areas. We would welcome more discussion regarding the extent to which the current version of the method can be applied to other alleles, to other geographic regions and even to other species.\n\n6) Finally, the reviewers raised issues regarding the presentation of the numerical implementation that we hope that the authors can easily address.\n\nReviewer #1 (Recommendations for the authors):\n\nI very much appreciated reading this manuscript and the effort of the authors in developing such an exciting tool. However, I still have some concerns about the accuracy and the meaning of the estimates.\n\n1) We know that ancient DNA samples are clustered in time and space because they are an aggregate of samples coming from different studies often with different scopes in terms of time and geographical area covered. What's the impact of having clustered samples in the parameter estimates? The authors comment on that a little bit when comparing the accuracy tests performed with the deterministic vs forward in time simulations. However, I think a more systematic analysis of different sampling schemes would help clarifying the robustness of the parameter inference. Moreover, I think this would greatly help understanding the differences in behavior of the statistical method before and after 5000 BP. Indeed the authors allow the model parameters to differ across different time periods (before and after 5000 BP) but it is not clear whether differences in the estimates reflect any particularity of the populations (e.g mobility) or they just reflect differences in the density of the samples across time and space.\n\n2) How would the method perform if simulations would be performed without advection (numerical solution to equation 3) but parameter estimates would be inferred from a model C, which includes advection ?\n\n3) Finally and more of a general question: what's the point of estimating the geographical origin of an allele if there are no samples dated from around the same time as the assumed allele age? I have the feeling this can be easily misinterpreted but maybe I am missing something. The authors discuss this (lines 199-210) when discussing the results obtained for the dynamics of the rs4988235(T) for the two assumed allele ages but it is not clear to me if the estimate for the local of origin is actually meaningful under similar situations. I wonder if with simulation one could try to understand what the method is retrieving\u2026\n\nWith respect to the presentation of the work I found that the manuscript is globally well explained but there are some parts a bit difficult to follow:\n\n1) it should be clearly stated in the main that the age of the allele is provided as input and not inferred contrarily to the geographical origin of the allele and the value used to perform the inference should also be provided in the corresponding part of the main text.\n\n2) The comparison of the results for the two ages assumed for the rs4988235(T) mutation (Itan et al. 2009 and Albers and McVean 2020), mainly between lines 199-210, is very confusing. From Figure 5a it seems there is no information on the allele for the time period between the allele age inferred by Itan et al. 2009 and Albers and McVean 2020. However, from the text it is not clearly stated whether there is or not information. If there is no information at all how does the algorithm infer an origin in Northeastern Europe?\n\n3) It would also help to follow the results if the authors would clearly state in the main text (lines: 212-230) the age of the allele assumed for the rs1042602(A).\n\nReviewer #2 (Recommendations for the authors):\n\nGiven the ability to of the model to sample at any point in space and time, it would have been very interesting to test the model under actual geographical and temporal distributions of data, such as the Allen Ancient DNA Resource used for one of the empirical investigations, perhaps even taking the observed pattern of missingness in the data into account.\n\nI would recommend using latitude and longitude systematically throughout the manuscript instead of mixing x, y, latitude, longitude.\n\nIn the methods: Please fix the typo in Eq (9). Also please clarify which boundary conditions where used, and how the equations were solved numerically (using Eq. (8) or (9)?), including how boundary conditions were implemented.\n\nL437: \" the left-hand side of equation 5\". This doesn't look right, do you mean the right-hand side of Eq. (6)?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nReviewer #1 (Recommendations for the authors):\n\nIt is now the second time I review the manuscript \"Modelling the spatiotemporal spread of beneficial alleles using ancient genomes\" by Muktupavela et al. and I am glad to see that the authors addressed most of the reviewers' concerns. There is now a more systemic assessment of the advantages/limitations of the method which I truly believe to be crucial for future implementations. That being said, I would like to recommend this manuscript for publication.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have made substantial improvements to the manuscript, and is ready for acceptance except for one remaining point:\n\nContrary to what the authors claim in their rebuttal, Eqs (8) and (9) in Appendix 1 still contain errors.\n\nFirst, p(x+\\\u03b4 x,y,t) and p(x+\\\u03b4 x,y,t) appears twice on line 827.\n\nSecond, the coefficients of p(x,y,t) on both sides of Eq (9) sum to -1, which is correct. The term should therefore be absent (have coefficient zero) in Eq (8).\n",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b5315a2d-d6f1-470e-a100-73bc3eb3b5b6",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C1",
+      "claim": "Ancient genome sequencing technologies now provide the opportunity to study natural selection in unprecedented detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Ancient genome sequencing technologies now provide the opportunity to study natural selection in unprecedented detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the capabilities of ancient genome sequencing technologies, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "9ea2967c-cc52-42e6-9133-cbb14f64e445",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C2",
+      "claim": "Methods for studying selection using ancient genomes often rely on partitioning individuals into discrete time periods or regions of the world.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods for studying selection using ancient genomes often rely on partitioning individuals into discrete time periods or regions of the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes current methodological approaches in the field, representing established knowledge about existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "8ea39bc9-142c-4177-a10b-1d9a1c89a7cf",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C3",
+      "claim": "The method introduced can handle time-stamped ancient samples, as well as genotype likelihoods and pseudohaploid sequences from low-coverage genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike previous approaches, our framework can handle time-stamped ancient samples, as well as genotype likelihoods and pseudohaploid sequences from low-coverage genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the capabilities of the method developed in this study, supported by the methodological description in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "a4a7d46f-fced-4346-b834-8ddda7de38f0",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C4",
+      "claim": "The method was applied to a panel of published ancient West Eurasian genomes to produce dynamic maps showcasing the inferred spread of candidate beneficial alleles over time and space.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply the method to a panel of published ancient West Eurasian genomes to produce dynamic maps showcasing the inferred spread of candidate beneficial alleles over time and space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the application of the method to real data, as demonstrated in the Results section with figures showing allele frequency dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "12663c82-a582-45ce-8baa-25c94afbd4f5",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C5",
+      "claim": "The method provides estimates for the strength of selection and diffusion rate for each analyzed allele.",
+      "claim_type": "EXPLICIT",
+      "source": "We also provide estimates for the strength of selection and diffusion rate for each of these alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the parameter estimates presented in the Results section and appendix tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "abb2a001-9ab0-46bd-a235-8d58d3335fd2",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C6",
+      "claim": "The problem of estimating the age of a beneficial allele has yielded a rich methodological literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The problem of estimating the age of a beneficial allele, for example, has yielded a rich methodological literature (Slatkin and Rannala, 2000), and recent methods have exploited fine-scale haplotype information to produce highly accurate age estimates (Mathieson and McVean, 2014; Platt et al., 2019; Albers and McVean, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple published works on allele age estimation methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "92a298af-127d-4a30-a182-84e90acee3b8",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C7",
+      "claim": "Recent methods have exploited fine-scale haplotype information to produce highly accurate age estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "The problem of estimating the age of a beneficial allele, for example, has yielded a rich methodological literature (Slatkin and Rannala, 2000), and recent methods have exploited fine-scale haplotype information to produce highly accurate age estimates (Mathieson and McVean, 2014; Platt et al., 2019; Albers and McVean, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to specific methodological papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "157f5f53-5aac-4b26-a865-57df77c904bc",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C8",
+      "claim": "Efforts to infer the geographic origins of beneficial mutations are scarcer than efforts to estimate allele age.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, efforts to infer the geographic origins of beneficial mutations are scarcer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about the state of the field, based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "5fdfac44-ac42-4099-9737-2459442ecd21",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C9",
+      "claim": "Novembre et al., 2005 developed a maximum likelihood method to model the origin and spread of a beneficial mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "These include Novembre et al., 2005, who developed a maximum likelihood method to model the origin and spread of a beneficial mutation and applied it to the CCR5-\u039432 allele, which was, at the time, considered to have been under positive selection (Stephens et al., 1998; Sabeti et al., 2005; Novembre and Han, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the Novembre et al., 2005 paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "131eccc5-caae-4265-948c-167e4c8a962b",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C10",
+      "claim": "Itan et al., 2009 developed an approximate Bayesian computation (ABC) approach using demic simulations to find the geographic and temporal origins of a beneficial allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Itan et al., 2009 developed an approximate Bayesian computation (ABC) approach using demic simulations, in order to find the geographic and temporal origins of a beneficial allele, based on present-day allele frequency patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the Itan et al., 2009 paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "0b32e6db-1381-4230-b53a-5023e613e6b9",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C11",
+      "claim": "Ancient genomes are increasingly being used to understand the process of natural selection.",
+      "claim_type": "EXPLICIT",
+      "source": "As ancient genome sequences become more readily available, they are increasingly being used to understand the process of natural selection (see reviews in Malaspinas et al., 2012; Dehasque et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to review papers on the topic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "4c65db59-126a-4b2e-9e77-e94e61b7a650",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C12",
+      "claim": "Few studies have used ancient genomes to fit spatial dynamic models of the spread of an allele over a landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "However, few studies have used ancient genomes to fit spatial dynamic models of the spread of an allele over a landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "fae3d013-47d4-4a70-8917-f0ed252f0a80",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C13",
+      "claim": "Most spatiotemporal analyses that included ancient genomes have used descriptive modeling to learn the spatiotemporal covariance structure of allele frequencies or hidden ancestry clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Most spatiotemporal analyses that included ancient genomes have used descriptive modeling in order to learn the spatiotemporal covariance structure of allele frequencies (Segurel et al., 2020) or hidden ancestry clusters (Racimo et al., 2020b), and then used that structure to hindcast these patterns onto a continuous temporally evolving landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to specific studies using descriptive modeling approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "c7f664b9-605f-4d4c-a145-8f43977198c3",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C14",
+      "claim": "Dynamic models have the power to infer interpretable parameters from genomic data and perhaps reveal the ultimate causes for observed patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to descriptive approaches, dynamic models have the power to infer interpretable parameters from genomic data and perhaps reveal the ultimate causes for these patterns (Wikle et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the advantages of dynamic models, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "a4364fbe-9ecd-457c-ade3-684b56de6cc5",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C15",
+      "claim": "The geographic origin of the rs4988235(T) allele remains elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the geographic origin of the rs4988235(T) allele\u2014upstream of the LCT gene and associated with adult lactase persistence in most of Western Eurasia (Enattah et al., 2002)\u2014remains elusive, as is the way in which it spread (an extensive review can be found in S\u00e9gurel and Bon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review paper on the topic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "ca60a66e-d13c-4f8b-8225-d0ce784bb11e",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C16",
+      "claim": "The rs4988235(T) allele is upstream of the LCT gene and associated with adult lactase persistence in most of Western Eurasia.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the geographic origin of the rs4988235(T) allele\u2014upstream of the LCT gene and associated with adult lactase persistence in most of Western Eurasia (Enattah et al., 2002)\u2014remains elusive, as is the way in which it spread (an extensive review can be found in S\u00e9gurel and Bon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Enattah et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "7f0c958a-386d-493a-bb25-e948969d1464",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C17",
+      "claim": "The rs4988235(T) allele has been found in different populations with frequencies ranging from 5% up to almost 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "The allele has been found in different populations, with frequencies ranging from 5% up to almost 100%, and its selection coefficient has been estimated to be among the highest in human populations (Bersaglieri et al., 2004; Enattah et al., 2008; Tishkoff et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies documenting allele frequencies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "4fd76ced-7238-4563-8bbb-65215e5a9d11",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C18",
+      "claim": "The selection coefficient of the rs4988235(T) allele has been estimated to be among the highest in human populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The allele has been found in different populations, with frequencies ranging from 5% up to almost 100%, and its selection coefficient has been estimated to be among the highest in human populations (Bersaglieri et al., 2004; Enattah et al., 2008; Tishkoff et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies estimating selection coefficients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "12b5933c-dff0-4c55-bd84-d0718810d48a",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C19",
+      "claim": "The exact causes for the adaptive advantage of the rs4988235(T) allele are contested.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the exact causes for its adaptive advantage are contested (Szpak et al., 2019), and it has been suggested that the selection pressures acting on the allele may have been different in different parts of the continent (Gerbault et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to papers discussing the adaptive advantage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "3d43d91e-6406-4e91-bf50-86a80664955d",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C20",
+      "claim": "It has been suggested that the selection pressures acting on the rs4988235(T) allele may have been different in different parts of the continent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the exact causes for its adaptive advantage are contested (Szpak et al., 2019), and it has been suggested that the selection pressures acting on the allele may have been different in different parts of the continent (Gerbault et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gerbault et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "33a47504-5772-475c-b2b1-ee8ecbd7496c",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C21",
+      "claim": "Ancient DNA evidence shows that the rs4988235(T) allele was rare in Europe during the Neolithic.",
+      "claim_type": "EXPLICIT",
+      "source": "Ancient DNA evidence shows that the allele was rare in Europe during the Neolithic (Burger et al., 2007; Gamba et al., 2014; Allentoft et al., 2015; Mathieson et al., 2015) and only became common in Northern Europe after the Iron Age, suggesting a rise in frequency during this period, perhaps mediated by gene flow from regions east of the Baltic where this allele was more common during the onset of the Bronze Age (Kr\u00fcttli et al., 2014; Margaryan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple ancient DNA studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "b0579e87-f5f6-4993-a1b1-e4f177a5b2c8",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C22",
+      "claim": "The rs4988235(T) allele only became common in Northern Europe after the Iron Age.",
+      "claim_type": "EXPLICIT",
+      "source": "Ancient DNA evidence shows that the allele was rare in Europe during the Neolithic (Burger et al., 2007; Gamba et al., 2014; Allentoft et al., 2015; Mathieson et al., 2015) and only became common in Northern Europe after the Iron Age, suggesting a rise in frequency during this period, perhaps mediated by gene flow from regions east of the Baltic where this allele was more common during the onset of the Bronze Age (Kr\u00fcttli et al., 2014; Margaryan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to ancient DNA studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "180c128d-81e9-4b70-92cc-a95ee44bae18",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C23",
+      "claim": "Itan et al., 2009 estimated that the rs4988235(T) allele was first under selection among farmers around 7500 years ago possibly between the Central Balkans and Central Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "Itan et al., 2009 deployed their ABC approach to model the spatial spread of the rs4988235(T) allele and estimated that it was first under selection among farmers around 7500 years ago possibly between the Central Balkans and Central Europe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Itan et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "04283bcf-0181-40d2-965e-fee594bb636c",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C24",
+      "claim": "Others have postulated a steppe origin for the rs4988235(T) allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have postulated a steppe origin for the allele (Allentoft et al., 2015), given that the rise in frequency appears to have occurred during and after the Bronze Age migration of steppe peoples into Western Eurasia (Haak et al., 2015; Allentoft et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies proposing a steppe origin.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "ffe5f3f7-2f36-45d1-afb3-4f07926a381d",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C25",
+      "claim": "The rs4988235(T) allele is at low frequency in genomes of Bronze Age individuals associated with Corded Ware and Bell Beaker assemblages in Central Europe who have high steppe ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the allele is at low frequency in genomes of Bronze Age individuals associated with Corded Ware and Bell Beaker assemblages in Central Europe who have high steppe ancestry (Mathieson et al., 2015; Margaryan et al., 2020), complicating the story further (S\u00e9gurel and Bon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to ancient DNA studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "1cd1c646-7e73-4054-94ca-b9b7e93c1ac1",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C26",
+      "claim": "The origins and spread dynamics of large-effect pigmentation-associated SNPs in ancient Eurasians have been intensely studied.",
+      "claim_type": "EXPLICIT",
+      "source": "The origins and spread dynamics of large-effect pigmentation-associated SNPs in ancient Eurasians have also been intensely studied (Ju and Mathieson, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "77272907-e561-45f2-be4f-f1ee883c56cf",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C27",
+      "claim": "Major loci of large effect on skin, eye, and hair pigmentation have been documented as having been under recent positive selection in Western Eurasian history.",
+      "claim_type": "EXPLICIT",
+      "source": "Major loci of large effect on skin, eye, and hair pigmentation have been documented as having been under recent positive selection in Western Eurasian history (Voight et al., 2006; Sabeti et al., 2007; Pickrell et al., 2009; Lao et al., 2007; Mathieson et al., 2015; Alonso et al., 2008; Hudjashov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies documenting selection on pigmentation loci.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "a4f5736a-c110-4090-98b1-5fc23a6f6677",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C28",
+      "claim": "Genes SLC45A2, OCA2, HERC2, SLC24A5, and TYR include loci of large effect on pigmentation that have been under recent positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "These include genes SLC45A2, OCA2, HERC2, SLC24A5, and TYR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the previous statement about pigmentation loci under selection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "3555e535-73b6-4a14-b349-abef0929a175",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C29",
+      "claim": "Selection at the TYR locus is thought to have occurred particularly recently, over the last 5000 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, selection at the TYR locus is thought to have occurred particularly recently, over the last 5000 years (Stern et al., 2019), driven by a recent mutation (Albers and McVean, 2020) that may have spread rapidly in Western Eurasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on TYR selection timing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "72798f6c-a79d-41ce-8f1f-86d830c289c2",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C30",
+      "claim": "Selection at the TYR locus was driven by a recent mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, selection at the TYR locus is thought to have occurred particularly recently, over the last 5000 years (Stern et al., 2019), driven by a recent mutation (Albers and McVean, 2020) that may have spread rapidly in Western Eurasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Albers and McVean, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "c4eb7c66-cc3d-49b4-8085-1ae82f2c859b",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C31",
+      "claim": "The method is based on a model proposed by Novembre et al., 2005 to fit allele frequencies in two dimensions to present-day genotype data spread over a densely sampled map.",
+      "claim_type": "EXPLICIT",
+      "source": "We based our statistical inference framework on a model proposed by Novembre et al., 2005 to fit allele frequencies in two dimensions to present-day genotype data spread over a densely sampled map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Novembre et al., 2005 and describes the methodological foundation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "9c778336-a008-4b5f-b854-c91e1c4fd5cf",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C34",
+      "claim": "Model C includes two advection terms (vx and vy), allowing the center of mass of the allele's frequency to diverge from its origin over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, model C is even more general and includes two advection terms (vx and vy), allowing the center of mass of the allele's frequency to diverge from its origin over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameters of model C as presented in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "f307acb7-9fe2-48f0-93ae-b741bfa71fec",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C35",
+      "claim": "The incorporation of advection is meant to account for the fact that population displacements and expansions could have led to allele frequency dynamics that are poorly explained by diffusion alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The incorporation of advection is meant to account for the fact that population displacements and expansions could have led to allele frequency dynamics that are poorly explained by diffusion alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reasoning statement explaining the motivation for including advection terms in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "5463ff6e-ba9d-4de8-9015-0f60b74c7034",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C36",
+      "claim": "Previously published allele age estimates were used from a nonparametric approach leveraging patterns of haplotype concordance and discordance around the mutation of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to establish a starting time point for our diffusion process, we used previously published allele age estimates obtained from a nonparametric approach leveraging the patterns of haplotype concordance and discordance around the mutation of interest (Albers and McVean, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Albers and McVean, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "1ec9965b-c4ec-468f-a535-078fc5581c27",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C37",
+      "claim": "For the LCT/MCM6 region allele, age estimates based on an approximate Bayesian computation approach were also used.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the allele in the LCT/MCM6 region, we also used age estimates based on an approximate Bayesian computation approach (Itan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Itan et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "3d23842f-1220-4989-b8e0-ec8a6390d57a",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C38",
+      "claim": "The model is more accurate at correctly inferring the parameters for the time period before 5000 years BP.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the model is more accurate at correctly inferring the parameters for the time period before 5000 years BP (Figure 1b), with decreased performance when longitudinal diffusion is high (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the simulation results shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "1c21ae6a-a1f6-42ad-93ca-412344eadd31",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C39",
+      "claim": "The model has decreased performance when longitudinal diffusion is high.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the model is more accurate at correctly inferring the parameters for the time period before 5000 years BP (Figure 1b), with decreased performance when longitudinal diffusion is high (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the simulation results shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "c5ea5d21-68ba-4189-bdd8-75eaa6babaf3",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C40",
+      "claim": "The method is generally able to estimate the selection coefficient accurately in simulations including advection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that our method is generally able to estimate the selection coefficient accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation results for model C presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "9c300bf2-1167-4439-948d-1f5b6ef713de",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C41",
+      "claim": "In some simulations, discrepancies were found between the estimated and true diffusion and advection coefficients, often occurring because of a misestimated origin forcing the other parameters to adjust.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in some of the simulations, we found discrepancies between the estimated and true diffusion and advection coefficients, often occurring because of a misestimated origin forcing the other parameters to adjust in order to better fit the allele frequency distribution in later stages of the allele's spread (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the simulation results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "b9259900-7c44-4a06-b5d8-63f8de3bdbd0",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C42",
+      "claim": "Different combinations of parameters can produce similar present-day allele frequency distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the disparities between the true and inferred parameter values, the resulting surface plots become very similar as we approach the present, suggesting that different combinations of parameters can produce similar present-day allele frequency distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulation results comparing true and inferred allele frequency maps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "a0ba534d-7182-4e8a-bea1-f169b6cdf00b",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C43",
+      "claim": "When model C (including advection) is applied to simulations generated without advection, the advection coefficients are inferred to be non-zero.",
+      "claim_type": "EXPLICIT",
+      "source": "We can observe that the advection coefficients are inferred to be non-zero (Figure 1\u2014figure supplements 6b and 7b); however, the inferred allele frequency dynamic plots closely resemble the ones obtained with true parameter values (Figure 1\u2014figure supplements 6a and 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the simulation results shown in Figure 1\u2014figure supplements 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "c1bae557-d401-42d7-b5dc-ad5c6c1d53a2",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C44",
+      "claim": "Complex interactions between the diffusion and advection coefficients can result in similar outcomes even when only diffusion is considered in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that complex interactions between the diffusion and advection coefficients can result in similar outcomes even when only diffusion is considered in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulation results comparing models with and without advection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "32e4646b-9171-452f-8588-3861d84f0eab",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C45",
+      "claim": "The selection coefficient estimates are inferred highly accurately regardless of the sampling scheme chosen.",
+      "claim_type": "EXPLICIT",
+      "source": "The selection coefficient estimates are inferred highly accurately, regardless of the sampling scheme chosen, and lie close to the true value, with only a slight underestimation in the time period after 5000 years BP (with the exception of the 'extreme 25%/75%').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the sampling scheme simulation results summarized in Appendix 2\u2014table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "bc586474-bea1-4ecd-ade5-e22926befbbf",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C46",
+      "claim": "The origin of the allele inferred by the model closely corresponds to the first observation of the derived allele in the individual-based simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We can see that the origin of the allele inferred by the model closely corresponds to the first observation of the derived allele in the simulation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the individual-based simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "9c69df87-babf-4a28-bfb4-f3717f7968d8",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C47",
+      "claim": "The inferred selection coefficient from the individual-based simulation is only slightly higher than the true value (0.0366 vs. 0.030).",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred selection coefficient is only slightly higher than the true value from the simulation (0.0366 vs. 0.030).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the individual-based simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "999aa664-cbd2-4079-862d-e5dac572f805",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C48",
+      "claim": "A two-period scheme was used by allowing the model to have two sets of estimates for the selection coefficient and the diffusion and advection coefficients in two different periods of time: before and after 5000 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a two-period scheme by allowing the model to have two sets of estimates for the selection coefficient and the diffusion and advection coefficients in two different periods of time: before and after 5000 years ago, reflecting the change in population dynamics and mobility before and after the Bronze Age transition (Loog et al., 2017; Racimo et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the analysis, supported by citations explaining the rationale.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "abf26e2b-f6bc-4a50-9d04-3a9550ca89d3",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C49",
+      "claim": "The two-period scheme reflects the change in population dynamics and mobility before and after the Bronze Age transition.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a two-period scheme by allowing the model to have two sets of estimates for the selection coefficient and the diffusion and advection coefficients in two different periods of time: before and after 5000 years ago, reflecting the change in population dynamics and mobility before and after the Bronze Age transition (Loog et al., 2017; Racimo et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies documenting Bronze Age population changes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "a3830b92-c4b4-4881-980d-eb4acfbf213c",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C50",
+      "claim": "Assuming the mutation age estimate is equivalent to the start of selection onset from Itan et al., 2009, the origin of the rs4988235(T) allele is estimated to be north of the Caucasus, around what is now southwestern Russia and eastern Ukraine.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming the mutation age estimate is equivalent to the start of selection onset from Itan et al., 2009, the origin of the allele is estimated to be north of the Caucasus, around what is now southwestern Russia and eastern Ukraine (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis results shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "657c839b-0b22-4a1f-9404-8376713c792e",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C52",
+      "claim": "A net westward advection parameter is estimated for rs4988235(T), indicating movement of the allele frequency's center of mass to the west as we approach the present.",
+      "claim_type": "EXPLICIT",
+      "source": "We also estimate stronger diffusion in the second period than in the first, to accommodate the rapid expansion of the allele throughout Western Europe, and a net westward advection parameter, indicating movement of the allele frequency's center of mass to the west as we approach the present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the parameter estimates presented in Appendix 2\u2014table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "3dcfa9e9-81f3-4a67-9ea5-febbe811f62b",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C53",
+      "claim": "Assuming the older age estimate from Albers and McVean, 2020, the origin of the rs4988235(T) allele is estimated to be in the northeast of Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming the older age estimate from Albers and McVean, 2020, the origin of the allele is estimated to be in the northeast of Europe (Figure 6\u2014figure supplement 1), which is at a much higher latitude than the first occurrence of the allele, in Ukraine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis results shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "0fee7982-2376-4241-9822-124156832726",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C54",
+      "claim": "The estimated selection coefficients for rs1042602(A) are 0.0221 (95% CI: 0.0216\u20130.0227) and 0.0102 (95% CI: 0.0083\u20130.0120) for the time periods before and after 5000 years BP, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the rs1042602(A) allele, our estimated selection coefficients of 0.0221 (95% CI: 0.0216\u20130.0227) and 0.0102 (95% CI: 0.0083\u20130.0120) for the time periods before and after 5000 years BP, respectively, are generally in agreement with previous results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the parameter estimates presented in Appendix 2\u2014table 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "c580222f-1c8e-4303-8678-a39e109e9d7a",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C55",
+      "claim": "Wilde et al., 2014 used a forward simulation approach to infer a point estimate of 0.026 for the selection coefficient at rs1042602.",
+      "claim_type": "EXPLICIT",
+      "source": "Wilde et al., 2014 used a forward simulation approach to infer a point estimate of 0.026.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wilde et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "3363461b-44c5-451f-8c14-a2b771e8752a",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C56",
+      "claim": "Nakagome et al., 2019 estimated the strength of selection acting on rs1042602 to be 0.013 (0.002\u20130.029) using an approximate Bayesian computation framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study using an approximate Bayesian computation framework (Nakagome et al., 2019) estimated the strength of selection acting on rs1042602 to be 0.013 (0.002\u20130.029).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nakagome et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "d8cf7e1e-59f5-41a6-9070-0b9cf8e9ada9",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C57",
+      "claim": "The estimates of the longitudinal advection parameter are negative for both the SNPs in the TYR and LCT loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates of the longitudinal advection parameter are negative for both the SNPs in the TYR and LCT loci: the mutation origins are always to the east of the center of mass of the allele frequency distribution seen in present-day data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the parameter estimates presented in the appendix tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "1bb84744-2bae-443d-940b-e74496527383",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C58",
+      "claim": "The negative longitudinal advection parameter perhaps reflects common migratory processes, like the large-scale Neolithic and Bronze Age population movements from east to west.",
+      "claim_type": "EXPLICIT",
+      "source": "This perhaps reflects common migratory processes, like the large-scale Neolithic and Bronze Age population movements from east to west, affecting the allele frequencies at these loci across the Eurasian landscape (Allentoft et al., 2015; Haak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to studies documenting east-to-west migrations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "ddd4ce31-992d-488b-90ec-5c350a3d6908",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C59",
+      "claim": "When allowing for advection, the inferred location of the allele origin tends to become less accurate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when allowing for advection, the inferred location tends to become less accurate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulation results comparing models with and without advection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "15f57043-fa04-4374-8d62-7976a95dcec5",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C60",
+      "claim": "Migration events early in the dispersal of the selected allele could create difficulties in finding the true allele origin if net directional movement had a large effect in this dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that migration events early in the dispersal of the selected allele could create difficulties in finding the true allele origin if net directional movement (i.e., via major migratory processes) had a large effect in this dispersal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulation results and methodological limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "552dc622-fdd8-4a59-8fc6-7bdc456ce967",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C61",
+      "claim": "The issue of inaccurate origin inference could be alleviated with the inclusion of more ancient genomes around the time of the origin of the mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "This issue could be alleviated with the inclusion of more ancient genomes around the time of the origin of the mutation, perhaps in combination with a more fine-scaled division into periods where advection may have occurred in different directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "7addeca0-fa37-4ebe-b0bd-be50dd2735b7",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C62",
+      "claim": "Various studies have estimated the selection coefficient for the rs4988235(T) allele, ranging from as low as 0.014 to as high as 0.19.",
+      "claim_type": "EXPLICIT",
+      "source": "Various studies have estimated the selection coefficient for the rs4988235(T) allele, and these range from as low as 0.014 to as high as 0.19 (Enattah et al., 2008; Mathieson and Mathieson, 2018; Mathieson, 2020; Stern et al., 2019; Burger et al., 2020; Peter et al., 2012; Gerbault et al., 2009; Itan et al., 2009; Bersaglieri et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies estimating selection coefficients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "c0b2a272-b328-4e43-96af-687bfef0f3cb",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C63",
+      "claim": "Recent papers incorporating ancient DNA estimate the selection coefficient for rs4988235(T) to be as low as 0 (in certain regions of Southern Europe) and as high as 0.06.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent papers incorporating ancient DNA estimate the selection coefficient to be as low as 0 (in certain regions of Southern Europe) and as high as 0.06 (Mathieson and Mathieson, 2018; Mathieson, 2020; Burger et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent ancient DNA studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "50c3e9ca-3390-4e60-9f31-a95c6dbcac27",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C64",
+      "claim": "It is likely that the selection coefficient for rs4988235(T) was different for different regions of Europe, perhaps due to varying cultural practices.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also likely that the selection coefficient was different for different regions of Europe, perhaps due to varying cultural practices (Mathieson, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mathieson, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "d798ae57-c257-4811-9443-56e3c50e99b1",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C65",
+      "claim": "The estimated selection coefficient for rs4988235(T) during the first period depends strongly on the assumed allele age (s = 0.0993 vs. s = 0.0285).",
+      "claim_type": "EXPLICIT",
+      "source": "In our case, the estimated selection coefficient during the first period\u2014before 5000 years ago\u2014depends strongly on the assumed allele age (s = 0.0993 vs. s = 0.0285).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the parameter estimates presented in Appendix 2\u2014tables 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "9d7e5926-e08a-45da-8b25-d1e8f250fd2c",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C66",
+      "claim": "The estimates for the selection coefficient of rs4988235(T) in the second period are more robust to the assumed age: s = 0.0328 (95% CI: 0.0327\u20130.0329) if assuming the younger allele age and s = 0.0255 (95% CI: 0.0252\u20130.0258) if assuming the older allele age.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimates for the second period\u2014after 5000 years ago\u2014are more robust to the assumed age: s = 0.0328 (95% CI: 0.0327\u20130.0329) if we assume the younger allele age (7441 years ago) and s = 0.0255 (95% CI: 0.0252\u20130.0258) if we assume the older allele age (20,106 years ago).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the parameter estimates presented in Appendix 2\u2014tables 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "8cd74e7b-d472-448f-875e-a8682816514e",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C67",
+      "claim": "The selection coefficient estimates for rs4988235(T) in the second period are within the range of previous estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "These estimates are also within the range of previous estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference comparing the current results to previously published estimates.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "b05802b7-58d0-489d-b6e7-4582a6af9599",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C68",
+      "claim": "When investigating the robustness of the geographic origin of both rs4988235(T) and rs1042602(A), parameters related to the beneficial allele's expansion change in response to different assumed origins of the allele.",
+      "claim_type": "EXPLICIT",
+      "source": "When investigating the robustness of the geographic origin of both rs4988235(T) and rs1042602(A), we found that parameters related to the beneficial allele's expansion change in response to different assumed origins of the allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the robustness analysis results presented in the appendix tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "ed78c9c3-cc17-464e-a538-e9f1928e53c9",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C69",
+      "claim": "The resulting allele frequency surface plots appear very similar throughout the later stages of the process regardless of the assumed origin.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting allele frequency surface plots, however, appear very similar throughout the later stages of the process, showing that the model tends to adjust the diffusion and advection coefficients in a way such that the allele will end up expanding into the same areas regardless of the origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the robustness analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "cbfac93a-9a5b-4b8b-bae2-1c85c5fbe5c4",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C70",
+      "claim": "The assumptions of spatiotemporal homogeneity of the parameters seem less plausible when applying these methods to longer time scales and broader geographic areas.",
+      "claim_type": "EXPLICIT",
+      "source": "As we apply these methods to longer time scales and broader geographic areas, the assumptions of spatiotemporal homogeneity of the parameters seem less plausible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reasoning statement about the limitations of the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "a9900fa6-675a-4a0c-81c9-facb15522a87",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C71",
+      "claim": "The results for the spread of the rs4988235(T) allele during the older time period should be interpreted with caution, since they may be affected by sparse sampling in the early Holocene.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our results for the spread of the rs4988235(T) allele during the older time period should be interpreted with caution, since they may be affected by sparse sampling in the early Holocene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement about the limitations of the data and results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "313e0b41-d221-4ea3-bc91-6cebbee8422f",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C72",
+      "claim": "Potential future extensions of the method could incorporate geographic features and historical migration events that create spatially or temporally varying moderators of gene flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Potential future extensions of our method could incorporate geographic features and historical migration events that create spatially or temporally varying moderators of gene flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "a105bec9-338e-4362-8718-3db0693332ba",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C73",
+      "claim": "The retreat of glaciers after the last Glacial maximum allowed migration of humans into Scandinavia.",
+      "claim_type": "EXPLICIT",
+      "source": "An example of this type of processes is the retreat of glaciers after the last Glacial maximum, which allowed migration of humans into Scandinavia (G\u00fcnther et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to G\u00fcnther et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "9524de2c-a0a1-4ad8-aad3-ae167f400e33",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C74",
+      "claim": "The model only accounts for diffusion in two directions.",
+      "claim_type": "EXPLICIT",
+      "source": "As described above, our model only accounts for diffusion in two directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the current model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "3cc7123d-88a7-490b-8038-715e2dc35710",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C75",
+      "claim": "Further extension of the model could incorporate anisotropic diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Further extension of our model could therefore incorporate anisotropic diffusion (Othmer et al., 1988; Painter and Hillen, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential improvements, supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "94b14bfe-4b92-4883-aa4f-8746f1139d24",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C76",
+      "claim": "Another possibility could be the introduction of stochastic process components to convert the partial differential equations into stochastic differential equations.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility could be the introduction of stochastic process components in order to convert the partial differential equations into stochastic differential equations (Brown et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential improvements, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "a6c2b40f-45cd-484e-9f3d-7c683163d8c1",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C77",
+      "claim": "Stochastic components could serve to induce spatial autocorrelation and capture local patterns of allele frequency covariance in space.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic components could serve to induce spatial autocorrelation and capture local patterns of allele frequency covariance in space that might not be well modeled by the deterministic partial differential equations (PDEs) (Cressie and Wikle, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential improvements, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "8801932c-0684-4d55-aa14-d86bc761cd26",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C78",
+      "claim": "Stochastic components could serve to induce stochasticity in allele frequency changes over time as a consequence of genetic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "They could also serve to induce stochasticity in allele frequency changes over time as a consequence of genetic drift (Crow and Kimura, 1970), allowing one to model the dynamics of more weakly selected variants, where drift plays an important role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential improvements, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "2377651b-b007-496f-ba6e-170733d109de",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C79",
+      "claim": "One could perhaps combine information across loci to jointly model the spatiotemporal frequency surfaces at multiple loci associated with the same trait.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, one could perhaps combine information across loci to jointly model the spatiotemporal frequency surfaces at multiple loci associated with the same trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "7e196ecb-000d-432e-aa26-a65e9c49c91c",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C80",
+      "claim": "The availability of hundreds of ancient genomes and the increasing interest in spatiotemporal method development will likely lead researchers to posit new questions and hypotheses about the behavior of natural selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The availability of hundreds of ancient genomes (Marciniak and Perry, 2017) and the increasing interest in spatiotemporal method development (Bradburd and Ralph, 2019), such as the one described in this article, will likely lead researchers to posit new questions and hypotheses about the behavior of natural selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "8eaf6802-331e-4943-844e-aa12a4d3025a",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C81",
+      "claim": "There is a lack of vocabulary for distinguishing between different spatiotemporal scenarios of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there is a lack of vocabulary for distinguishing between a scenario of strong selection that is locally constrained in space from a scenario of widespread selection extended over a landscape, or a model of neutral diffusion in space followed by parallel non-neutral increases in frequency at multiple locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of terminology in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "191d3266-440f-4959-8915-d933d1e2d29c",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C82",
+      "claim": "Ralph and Coop, 2010 showed how multiple localized hard sweeps may be seen as a soft sweep at a larger population-wide scale.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Ralph and Coop, 2010 showed how multiple localized hard sweeps may be seen as a soft sweep at a larger population-wide scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ralph and Coop, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "7e369a13-e101-4c34-99f2-4e58fe0977f9",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C83",
+      "claim": "Population genetic models that explicitly account for space and time are an important area of future methodological development.",
+      "claim_type": "EXPLICIT",
+      "source": "Population genetic models that explicitly account for space and time are an important area of future methodological development (Bradburd and Ralph, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "cd390296-d8f7-4b2c-a57b-0d633b959b29",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C84",
+      "claim": "Spatiotemporal information can greatly help improve our knowledge of how natural selection operated in the past.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the case of demographic reconstruction (Ray and Excoffier, 2009), spatiotemporal information can greatly help improve our knowledge of how natural selection operated in the past.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the value of spatiotemporal approaches, supported by a citation to a demographic reconstruction study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "77b13b18-0002-49bd-b42f-58f50db5b803",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C85",
+      "claim": "The geographic area explored by the model fit was restricted to be between 30\u00b0N to 75\u00b0N, and between 10\u00b0W and 80\u00b0E.",
+      "claim_type": "EXPLICIT",
+      "source": "We restricted the geographic area explored by our model fit to be between 30\u00b0N to 75\u00b0N, and between 10\u00b0W and 80\u00b0E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the geographic boundaries used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "69f27a02-cc6a-4578-8792-b778fe4af7db",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C86",
+      "claim": "A grid was constructed using a resolution of approximately one grid cell per latitude and longitude for numerical calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "For numerical calculations, we used a grid constructed using a resolution of approximately one grid cell per latitude and longitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spatial resolution used in the numerical implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "f3f84e4e-e20b-4881-ac89-88723365319f",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C87",
+      "claim": "The diffusion of the allele frequency was disallowed in map regions where the topology is negative (regions under water), based on ETOPO5 data.",
+      "claim_type": "EXPLICIT",
+      "source": "The diffusion of the allele frequency was disallowed in the map regions where the topology is negative (i.e., regions under water), based on ETOPO5 data (NOAA, National Geophysical Data Center, B. C, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice in the model implementation, supported by a citation to the data source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "6b948667-2cc8-491a-9389-00a91b148bd0",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C88",
+      "claim": "Land bridges were added between the European mainland and Sardinia, and between the mainland and Great Britain, to allow the allele to diffuse in these regions.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, we added land bridges between the European mainland and Sardinia, and between the mainland and Great Britain, in order to allow the allele to diffuse in these regions (see Appendix 2\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a methodological choice in the model implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "1d224227-a93e-47ec-a5b6-62bb515c9ec5",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C89",
+      "claim": "Parameter optimization was done via maximum likelihood estimation with a two-layer optimization set-up.",
+      "claim_type": "EXPLICIT",
+      "source": "Parameter optimization was done via maximum likelihood estimation with a two-layer optimization set-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optimization approach used in the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "18850d43-f28b-47a8-9973-3adec32b7190",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C90",
+      "claim": "The first layer of optimization consists of a simulated annealing approach starting from 50 random points in the parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "The first layer consists of a simulated annealing approach (B\u00e9lisle, 1992) starting from 50 random points in the parameter space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the first optimization layer, supported by a citation to the simulated annealing method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "bde35d9d-c87d-4d3c-b4a9-c892ea1639d2",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C91",
+      "claim": "The initial 50 points are sampled using Latin hypercube sampling to ensure an even spread across the parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial 50 points are sampled using Latin hypercube sampling to ensure an even spread across the parameter space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling strategy used in the optimization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "07802976-2216-40a5-8d87-2478642dc3fd",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C92",
+      "claim": "The output of the simulated annealing fit was fed to the L-BFGS-B algorithm to refine the parameter estimates and obtain confidence intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "The output of this fit was then fed to the L-BFGS-B algorithm to refine the parameter estimates around the obtained maximum and obtain confidence intervals for the selection, diffusion and advection parameters (Byrd et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the second optimization layer, supported by a citation to the L-BFGS-B algorithm.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "4c323a07-58d4-4f34-9bee-eec7e9f7338c",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C93",
+      "claim": "The method uses the age of the allele as an input parameter rather than estimating it.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to construct our method in a way that uses the age of the allele as an input parameter rather than estimating it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice in the model design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "00e1b8c7-93b6-4926-852c-83dfa3e1494d",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C94",
+      "claim": "There are multiple equally possible solutions with various combinations of allele age and selection coefficient values.",
+      "claim_type": "EXPLICIT",
+      "source": "We do this since there are multiple equally possible solutions with various combinations of allele age and selection coefficient values as shown in Appendix 2\u2014figure 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the results shown in Appendix 2\u2014figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "e32f426e-876e-4d25-bddf-60ff8eee1d34",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C95",
+      "claim": "Time was measured in generations, assuming 29 years per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Time was measured in generations, assuming 29 years per generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a parameter choice in the model implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "69890ac8-8030-4607-8795-4c719d9a6861",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C98",
+      "claim": "For the individual-based spatiotemporal forward simulations, the maximum distance for spatial competition and mating choice between individuals was set to 250 km.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to ensure a reasonably uniform distribution of individuals across this spatial range throughout the course of the simulation, we set the maximum distance for spatial competition and mating choice between individuals to 250 km (translated, on a SLiM level, to the interaction parameter maxDistance), and the standard deviation of the normal distribution governing the spread of offspring from their parents at 25 km (leveraged in SLiM's modifyChild() callback function) (Haller and Messer, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters, supported by a citation to the SLiM software.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "abc35607-333b-4b9e-bc8e-a5f5ae342250",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C99",
+      "claim": "The standard deviation of the normal distribution governing the spread of offspring from their parents was set at 25 km in the individual-based simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to ensure a reasonably uniform distribution of individuals across this spatial range throughout the course of the simulation, we set the maximum distance for spatial competition and mating choice between individuals to 250 km (translated, on a SLiM level, to the interaction parameter maxDistance), and the standard deviation of the normal distribution governing the spread of offspring from their parents at 25 km (leveraged in SLiM's modifyChild() callback function) (Haller and Messer, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters, supported by a citation to the SLiM software.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "f85c84d8-108b-402f-8564-d7230d32d7b4",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C100",
+      "claim": "In the individual-based simulation, a single beneficial additive mutation was introduced in a single individual.",
+      "claim_type": "EXPLICIT",
+      "source": "After defining the spatial context of the simulations and ensuring the uniform spread of individuals across their population boundary, we introduced a single beneficial additive mutation in a single individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "ef97dfe2-b6fc-4c4a-8db6-15a7221ec4cb",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "claim_id": "C101",
+      "claim": "In the individual-based simulation, the allele appeared in Central Europe 15,000 years ago with a selection coefficient of 0.03.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test how accurately our model can infer the parameters of interest, we simulated a scenario in which the allele appeared in Central Europe 15,000 years ago with the selection coefficient of the beneficial mutation set to 0.03.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a4c459c5-0b69-4977-9e4a-fe6ea4358026",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a spatiotemporal method for inferring the spread of beneficial alleles that extends previous work by Novembre et al., 2005. The method handles time-stamped ancient samples, genotype likelihoods, and pseudohaploid sequences, and includes models with diffusion and advection parameters to estimate selection strength, diffusion rates, and directional movement of alleles across landscapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 describe the method's capabilities, which are substantiated by the detailed methodological descriptions (C31, C34, C35) and the application to real data (C4). The method is clearly implemented and applied to ancient West Eurasian genomes as demonstrated in the Results section with parameter estimates and dynamic maps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "01b8d691-e4b6-450d-8ed0-c82977f78cb7",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In deterministic simulations with diffusion (model B), the method accurately infers parameters for time periods before 5000 years BP but shows decreased performance with high longitudinal diffusion. The method generally estimates selection coefficients accurately, though discrepancies in diffusion and advection coefficients can occur due to misestimated origins, and different parameter combinations can produce similar present-day allele frequency distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are directly supported by simulation results shown in Figures 1 and 2 and summarized in Appendix tables. The authors demonstrate both the strengths and limitations of their method through systematic simulation testing, providing evidence for parameter estimation accuracy and identifying conditions where performance degrades.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "f5511c25-d69f-497f-b844-cf79899837f7",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "When model C (with advection) is applied to simulations generated without advection, non-zero advection coefficients are inferred, but the resulting allele frequency dynamics closely resemble those from true parameters. This indicates that complex interactions between diffusion and advection can produce similar outcomes, and that allowing for advection tends to decrease accuracy in inferring allele origins, particularly when early migration events had large directional effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 and C59-C60 are supported by simulation results in Figure 1 supplements 6-7 and discussed in the Results and Discussion sections. The authors identify a fundamental identifiability issue in their model where different parameter combinations can produce similar spatial patterns, which is an important limitation properly documented through simulation studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "5c5c4acc-0dab-46d8-93d9-fa886fbd9d02",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Selection coefficient estimates are inferred highly accurately regardless of the sampling scheme chosen, with only slight underestimation in the time period after 5000 years BP (except for the 'extreme 25%/75%' scheme).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is supported by sampling scheme simulation results summarized in Appendix 2\u2014table 3 and discussed in the Results section. The robustness of selection coefficient estimates across different sampling schemes is an important validation of the method's reliability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "647d213a-a108-473f-a0a3-515475f5d981",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In individual-based forward simulations, the inferred allele origin closely corresponds to the first observation of the derived allele, and the inferred selection coefficient (0.0366) is only slightly higher than the true value (0.030).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by individual-based simulation results shown in Figure 4 and Appendix 2\u2014table 4. This validation using a more realistic simulation framework (SLiM) that includes individual-level processes provides important evidence that the method performs well beyond the deterministic PDE framework it assumes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "38d1c663-91f2-48b7-af3b-fca245b88de6",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For the rs4988235(T) allele (lactase persistence), using a two-period scheme reflecting Bronze Age population changes, the inferred origin is north of the Caucasus (southwestern Russia/eastern Ukraine) when assuming the younger age estimate from Itan et al., 2009, with net westward advection. When assuming the older age estimate from Albers and McVean, 2020, the origin is estimated to be in northeast Europe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C53 describe the application results, which are supported by the analysis shown in Figure 6 and parameter estimates in Appendix tables. However, the authors themselves note substantial uncertainty due to sparse sampling in the early Holocene (C71) and acknowledge that the deterministic model may impose unrealistic frequency expansion in areas without observed alleles (Discussion). The strong dependence on assumed allele age and the discrepancy between the two age estimates raise concerns about the robustness of the geographic origin inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "02055d6a-a2a8-465d-83d9-424f141b5ec2",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For the rs1042602(A) allele (TYR locus), the estimated selection coefficients are 0.0221 (95% CI: 0.0216\u20130.0227) before 5000 years BP and 0.0102 (95% CI: 0.0083\u20130.0120) after 5000 years BP, which are generally in agreement with previous estimates from Wilde et al., 2014 (0.026) and Nakagome et al., 2019 (0.013, range 0.002\u20130.029).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 and C67 are supported by parameter estimates in Appendix 2\u2014table 7 and comparison with cited literature. The consistency with previous estimates from different methodological approaches provides validation for the method's selection coefficient inference, though the confidence intervals are notably narrow which may underestimate uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "f1247470-5afa-4cac-82d7-7aff4251c418",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The longitudinal advection parameter estimates are negative for both the TYR and LCT loci, with mutation origins to the east of the present-day center of mass, potentially reflecting large-scale Neolithic and Bronze Age east-to-west population movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by parameter estimates in the appendix tables and are consistent with well-documented Bronze Age migrations (citations to Allentoft et al., 2015; Haak et al., 2015). However, this is an inference about the biological interpretation of the advection parameters, and alternative explanations are not thoroughly explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "6d1f94e0-303e-4bdb-a6df-97a035245a23",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For rs4988235(T), the estimated selection coefficient in the first period (before 5000 years BP) depends strongly on assumed allele age (s = 0.0993 vs. s = 0.0285), while estimates for the second period are more robust (s = 0.0328 or s = 0.0255). Previous studies have estimated selection coefficients ranging from 0.014 to 0.19, with recent ancient DNA studies estimating 0 to 0.06, and selection likely varied across European regions due to varying cultural practices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 are supported by parameter estimates in Appendix 2\u2014tables 5-6 and extensive citations to previous literature. The authors appropriately acknowledge the wide range of previous estimates and the strong dependence of their early-period estimates on assumed allele age, which is an important limitation. The comparison with literature provides context but also highlights substantial uncertainty in selection coefficient estimation for this locus.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "2be71aa6-1ae9-40f7-868e-b4e2d69e1f5e",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "When investigating robustness to assumed geographic origin for both rs4988235(T) and rs1042602(A), diffusion and advection parameters change in response to different assumed origins, but the resulting allele frequency surface plots appear very similar in later stages, indicating the model adjusts parameters to produce similar spatial patterns regardless of origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are supported by robustness analysis results in appendix tables and figures. This finding reinforces the identifiability issue noted in the simulation studies (C42, C44) and is an important limitation for inferring geographic origins. The authors appropriately document this limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "7f0fb385-d70b-4732-93dd-4e0ca6c37c7d",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The assumptions of spatiotemporal homogeneity of parameters become less plausible when applying the method to longer time scales and broader geographic areas. Results for rs4988235(T) spread during the older time period should be interpreted with caution due to sparse sampling in the early Holocene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 represent appropriate acknowledgment of model limitations by the authors. These are reasoning statements about the plausibility of model assumptions given the data characteristics, and they appropriately caution against over-interpretation of results from poorly sampled time periods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "90443860-595e-4c2c-b0ae-0fc65efbf131",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The method uses a geographic area of 30\u00b0N to 75\u00b0N and 10\u00b0W to 80\u00b0E with approximately 1\u00b0 grid resolution, disallows diffusion in regions under water based on ETOPO5 data (with added land bridges for Sardinia and Great Britain), and employs a two-layer optimization approach (simulated annealing followed by L-BFGS-B). The allele age is used as an input parameter rather than estimated, because multiple equally possible solutions exist with various combinations of allele age and selection coefficient values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C95 describe methodological details that are clearly documented in the Methods section. The choice to fix allele age rather than estimate it is justified by the identifiability issue shown in Appendix 2\u2014figure 3 (C94). These methodological choices are appropriate and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "d852aa83-d0f9-4610-a57d-ad347e893821",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "For individual-based simulations using SLiM, the maximum distance for spatial competition and mating was set to 250 km, offspring dispersal standard deviation was 25 km, and a single beneficial additive mutation with selection coefficient 0.03 was introduced in Central Europe 15,000 years ago.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C101 describe simulation parameters that are clearly documented in the Methods section with appropriate citations to the SLiM software. The authors note these parameters were chosen to ensure uniform spatial distribution rather than to represent realistic historical values, which is an appropriate caveat.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "041b77c3-8f05-4e73-9026-314e8ff95e14",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The method uses previously published allele age estimates from Albers and McVean, 2020 (based on haplotype concordance/discordance patterns) and, for the LCT/MCM6 region, also from Itan et al., 2009 (based on approximate Bayesian computation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by citations to the relevant papers and describe the source of input parameters for the method. This is appropriate methodology, though it means the results inherit any uncertainty or bias in these age estimates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors suggest several potential improvements to the method: including more ancient genomes around the time of mutation origin, incorporating geographic features and historical migration events, implementing anisotropic diffusion, introducing stochastic components to model genetic drift and spatial autocorrelation, and potentially combining information across loci for polygenic traits. They note that the availability of hundreds of ancient genomes and increasing interest in spatiotemporal methods will likely lead to new questions about natural selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C72-C80 represent appropriate speculation about future methodological improvements and research directions. These are supported by relevant citations and represent reasonable extensions of the current work. However, these are proposals for future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "457ec653-8094-4a41-9d2c-9358f84ee4ab",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Ancient genome sequencing provides unprecedented opportunities to study natural selection, but current methods often rely on discrete time periods or regions. Few studies have used ancient genomes to fit spatial dynamic models of allele spread, with most using descriptive modeling. Dynamic models have the power to infer interpretable parameters and reveal ultimate causes for observed patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8, and C11-C14 represent background knowledge and motivation for the study, supported by appropriate citations to review papers and methodological literature. These claims accurately characterize the state of the field and the gap the current work addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "17067541-784d-41e9-9789-1247b3823a1b",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The rs4988235(T) allele upstream of LCT is associated with adult lactase persistence in Western Eurasia, with frequencies ranging from 5% to nearly 100% and selection coefficients among the highest in human populations. Its geographic origin remains elusive, with contested adaptive causes and potentially different selection pressures across Europe. Ancient DNA shows it was rare in Neolithic Europe and became common in Northern Europe only after the Iron Age. Previous estimates placed its origin between Central Balkans and Central Europe around 7500 years ago (Itan et al., 2009) or suggested a steppe origin, though it is at low frequency in Bronze Age Corded Ware and Bell Beaker individuals with high steppe ancestry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C25 represent well-documented prior knowledge about the rs4988235(T) allele, supported by extensive citations to the relevant literature. These claims accurately summarize the state of knowledge and ongoing debates about this locus, providing appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "b81d5a86-94a3-4fe5-9264-8124dd46b717",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Large-effect pigmentation-associated SNPs in ancient Eurasians have been intensely studied, with major loci in genes SLC45A2, OCA2, HERC2, SLC24A5, and TYR documented as under recent positive selection in Western Eurasian history. Selection at the TYR locus is thought to have occurred particularly recently (last 5000 years), driven by a recent mutation that may have spread rapidly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 represent well-documented prior knowledge about pigmentation loci, supported by appropriate citations to the relevant literature. These claims provide context for the analysis of the rs1042602(A) allele in the TYR locus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "87d06ffa-22e0-415c-9ed9-c7da1edf1ba1",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The problem of estimating beneficial allele age has yielded rich methodological literature, with recent methods using fine-scale haplotype information for highly accurate age estimates. Previous work on geographic origins includes Novembre et al., 2005 (maximum likelihood method applied to CCR5-\u039432) and Itan et al., 2009 (ABC approach using demic simulations).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C9-C10 accurately characterize prior methodological work with appropriate citations. These provide context for the current method's contributions and are supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    },
+    {
+      "id": "11344fdf-03f5-4292-82be-b425046f0d87",
+      "content_id": "4c6fdc3d-94c5-445b-98cb-c4750fad8cc0",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "There is a lack of vocabulary for distinguishing between different spatiotemporal scenarios of selection (e.g., locally constrained vs. widespread selection, or neutral diffusion followed by parallel selection). Ralph and Coop, 2010 showed how multiple localized hard sweeps may appear as a soft sweep at larger scales. Population genetic models explicitly accounting for space and time are an important area of future development, and spatiotemporal information can greatly improve knowledge of how natural selection operated in the past.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 represent appropriate discussion of conceptual issues in the field, supported by relevant citations. These highlight the need for better terminology and frameworks for spatiotemporal selection, which motivates the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:02:30.549576Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8ea39bc9-142c-4177-a10b-1d9a1c89a7cf",
+      "result_id": "a4c459c5-0b69-4977-9e4a-fe6ea4358026"
+    },
+    {
+      "claim_id": "a4a7d46f-fced-4346-b834-8ddda7de38f0",
+      "result_id": "a4c459c5-0b69-4977-9e4a-fe6ea4358026"
+    },
+    {
+      "claim_id": "12663c82-a582-45ce-8baa-25c94afbd4f5",
+      "result_id": "a4c459c5-0b69-4977-9e4a-fe6ea4358026"
+    },
+    {
+      "claim_id": "c4eb7c66-cc3d-49b4-8085-1ae82f2c859b",
+      "result_id": "a4c459c5-0b69-4977-9e4a-fe6ea4358026"
+    },
+    {
+      "claim_id": "9c778336-a008-4b5f-b854-c91e1c4fd5cf",
+      "result_id": "a4c459c5-0b69-4977-9e4a-fe6ea4358026"
+    },
+    {
+      "claim_id": "f307acb7-9fe2-48f0-93ae-b741bfa71fec",
+      "result_id": "a4c459c5-0b69-4977-9e4a-fe6ea4358026"
+    },
+    {
+      "claim_id": "3d23842f-1220-4989-b8e0-ec8a6390d57a",
+      "result_id": "01b8d691-e4b6-450d-8ed0-c82977f78cb7"
+    },
+    {
+      "claim_id": "1c21ae6a-a1f6-42ad-93ca-412344eadd31",
+      "result_id": "01b8d691-e4b6-450d-8ed0-c82977f78cb7"
+    },
+    {
+      "claim_id": "c5ea5d21-68ba-4189-bdd8-75eaa6babaf3",
+      "result_id": "01b8d691-e4b6-450d-8ed0-c82977f78cb7"
+    },
+    {
+      "claim_id": "9c300bf2-1167-4439-948d-1f5b6ef713de",
+      "result_id": "01b8d691-e4b6-450d-8ed0-c82977f78cb7"
+    },
+    {
+      "claim_id": "b9259900-7c44-4a06-b5d8-63f8de3bdbd0",
+      "result_id": "01b8d691-e4b6-450d-8ed0-c82977f78cb7"
+    },
+    {
+      "claim_id": "a0ba534d-7182-4e8a-bea1-f169b6cdf00b",
+      "result_id": "f5511c25-d69f-497f-b844-cf79899837f7"
+    },
+    {
+      "claim_id": "c1bae557-d401-42d7-b5dc-ad5c6c1d53a2",
+      "result_id": "f5511c25-d69f-497f-b844-cf79899837f7"
+    },
+    {
+      "claim_id": "ddd4ce31-992d-488b-90ec-5c350a3d6908",
+      "result_id": "f5511c25-d69f-497f-b844-cf79899837f7"
+    },
+    {
+      "claim_id": "15f57043-fa04-4374-8d62-7976a95dcec5",
+      "result_id": "f5511c25-d69f-497f-b844-cf79899837f7"
+    },
+    {
+      "claim_id": "32e4646b-9171-452f-8588-3861d84f0eab",
+      "result_id": "5c5c4acc-0dab-46d8-93d9-fa886fbd9d02"
+    },
+    {
+      "claim_id": "bc586474-bea1-4ecd-ade5-e22926befbbf",
+      "result_id": "647d213a-a108-473f-a0a3-515475f5d981"
+    },
+    {
+      "claim_id": "9c69df87-babf-4a28-bfb4-f3717f7968d8",
+      "result_id": "647d213a-a108-473f-a0a3-515475f5d981"
+    },
+    {
+      "claim_id": "999aa664-cbd2-4079-862d-e5dac572f805",
+      "result_id": "38d1c663-91f2-48b7-af3b-fca245b88de6"
+    },
+    {
+      "claim_id": "abf26e2b-f6bc-4a50-9d04-3a9550ca89d3",
+      "result_id": "38d1c663-91f2-48b7-af3b-fca245b88de6"
+    },
+    {
+      "claim_id": "a3830b92-c4b4-4881-980d-eb4acfbf213c",
+      "result_id": "38d1c663-91f2-48b7-af3b-fca245b88de6"
+    },
+    {
+      "claim_id": "657c839b-0b22-4a1f-9404-8376713c792e",
+      "result_id": "38d1c663-91f2-48b7-af3b-fca245b88de6"
+    },
+    {
+      "claim_id": "3dcfa9e9-81f3-4a67-9ea5-febbe811f62b",
+      "result_id": "38d1c663-91f2-48b7-af3b-fca245b88de6"
+    },
+    {
+      "claim_id": "0fee7982-2376-4241-9822-124156832726",
+      "result_id": "02055d6a-a2a8-465d-83d9-424f141b5ec2"
+    },
+    {
+      "claim_id": "c580222f-1c8e-4303-8678-a39e109e9d7a",
+      "result_id": "02055d6a-a2a8-465d-83d9-424f141b5ec2"
+    },
+    {
+      "claim_id": "3363461b-44c5-451f-8c14-a2b771e8752a",
+      "result_id": "02055d6a-a2a8-465d-83d9-424f141b5ec2"
+    },
+    {
+      "claim_id": "8cd74e7b-d472-448f-875e-a8682816514e",
+      "result_id": "02055d6a-a2a8-465d-83d9-424f141b5ec2"
+    },
+    {
+      "claim_id": "d8cf7e1e-59f5-41a6-9070-0b9cf8e9ada9",
+      "result_id": "f1247470-5afa-4cac-82d7-7aff4251c418"
+    },
+    {
+      "claim_id": "1bb84744-2bae-443d-940b-e74496527383",
+      "result_id": "f1247470-5afa-4cac-82d7-7aff4251c418"
+    },
+    {
+      "claim_id": "d798ae57-c257-4811-9443-56e3c50e99b1",
+      "result_id": "6d1f94e0-303e-4bdb-a6df-97a035245a23"
+    },
+    {
+      "claim_id": "9d7e5926-e08a-45da-8b25-d1e8f250fd2c",
+      "result_id": "6d1f94e0-303e-4bdb-a6df-97a035245a23"
+    },
+    {
+      "claim_id": "7addeca0-fa37-4ebe-b0bd-be50dd2735b7",
+      "result_id": "6d1f94e0-303e-4bdb-a6df-97a035245a23"
+    },
+    {
+      "claim_id": "c0b2a272-b328-4e43-96af-687bfef0f3cb",
+      "result_id": "6d1f94e0-303e-4bdb-a6df-97a035245a23"
+    },
+    {
+      "claim_id": "50c3e9ca-3390-4e60-9f31-a95c6dbcac27",
+      "result_id": "6d1f94e0-303e-4bdb-a6df-97a035245a23"
+    },
+    {
+      "claim_id": "b05802b7-58d0-489d-b6e7-4582a6af9599",
+      "result_id": "2be71aa6-1ae9-40f7-868e-b4e2d69e1f5e"
+    },
+    {
+      "claim_id": "ed78c9c3-cc17-464e-a538-e9f1928e53c9",
+      "result_id": "2be71aa6-1ae9-40f7-868e-b4e2d69e1f5e"
+    },
+    {
+      "claim_id": "cbfac93a-9a5b-4b8b-bae2-1c85c5fbe5c4",
+      "result_id": "7f0fb385-d70b-4732-93dd-4e0ca6c37c7d"
+    },
+    {
+      "claim_id": "a9900fa6-675a-4a0c-81c9-facb15522a87",
+      "result_id": "7f0fb385-d70b-4732-93dd-4e0ca6c37c7d"
+    },
+    {
+      "claim_id": "77b13b18-0002-49bd-b42f-58f50db5b803",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "69f27a02-cc6a-4578-8792-b778fe4af7db",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "f3f84e4e-e20b-4881-ac89-88723365319f",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "6b948667-2cc8-491a-9389-00a91b148bd0",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "1d224227-a93e-47ec-a5b6-62bb515c9ec5",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "18850d43-f28b-47a8-9973-3adec32b7190",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "bde35d9d-c87d-4d3c-b4a9-c892ea1639d2",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "07802976-2216-40a5-8d87-2478642dc3fd",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "4c323a07-58d4-4f34-9bee-eec7e9f7338c",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "00e1b8c7-93b6-4926-852c-83dfa3e1494d",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "e32f426e-876e-4d25-bddf-60ff8eee1d34",
+      "result_id": "90443860-595e-4c2c-b0ae-0fc65efbf131"
+    },
+    {
+      "claim_id": "69890ac8-8030-4607-8795-4c719d9a6861",
+      "result_id": "d852aa83-d0f9-4610-a57d-ad347e893821"
+    },
+    {
+      "claim_id": "abc35607-333b-4b9e-bc8e-a5f5ae342250",
+      "result_id": "d852aa83-d0f9-4610-a57d-ad347e893821"
+    },
+    {
+      "claim_id": "f85c84d8-108b-402f-8564-d7230d32d7b4",
+      "result_id": "d852aa83-d0f9-4610-a57d-ad347e893821"
+    },
+    {
+      "claim_id": "ef97dfe2-b6fc-4c4a-8db6-15a7221ec4cb",
+      "result_id": "d852aa83-d0f9-4610-a57d-ad347e893821"
+    },
+    {
+      "claim_id": "5463ff6e-ba9d-4de8-9015-0f60b74c7034",
+      "result_id": "041b77c3-8f05-4e73-9026-314e8ff95e14"
+    },
+    {
+      "claim_id": "1ec9965b-c4ec-468f-a535-078fc5581c27",
+      "result_id": "041b77c3-8f05-4e73-9026-314e8ff95e14"
+    },
+    {
+      "claim_id": "552dc622-fdd8-4a59-8fc6-7bdc456ce967",
+      "result_id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7"
+    },
+    {
+      "claim_id": "313e0b41-d221-4ea3-bc91-6cebbee8422f",
+      "result_id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7"
+    },
+    {
+      "claim_id": "a105bec9-338e-4362-8718-3db0693332ba",
+      "result_id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7"
+    },
+    {
+      "claim_id": "9524de2c-a0a1-4ad8-aad3-ae167f400e33",
+      "result_id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7"
+    },
+    {
+      "claim_id": "3cc7123d-88a7-490b-8038-715e2dc35710",
+      "result_id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7"
+    },
+    {
+      "claim_id": "94b14bfe-4b92-4883-aa4f-8746f1139d24",
+      "result_id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7"
+    },
+    {
+      "claim_id": "a6c2b40f-45cd-484e-9f3d-7c683163d8c1",
+      "result_id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7"
+    },
+    {
+      "claim_id": "8801932c-0684-4d55-aa14-d86bc761cd26",
+      "result_id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7"
+    },
+    {
+      "claim_id": "2377651b-b007-496f-ba6e-170733d109de",
+      "result_id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7"
+    },
+    {
+      "claim_id": "7e196ecb-000d-432e-aa26-a65e9c49c91c",
+      "result_id": "bb379ba3-314c-4404-bd10-d55cbf66d8b7"
+    },
+    {
+      "claim_id": "b5315a2d-d6f1-470e-a100-73bc3eb3b5b6",
+      "result_id": "457ec653-8094-4a41-9d2c-9358f84ee4ab"
+    },
+    {
+      "claim_id": "9ea2967c-cc52-42e6-9133-cbb14f64e445",
+      "result_id": "457ec653-8094-4a41-9d2c-9358f84ee4ab"
+    },
+    {
+      "claim_id": "157f5f53-5aac-4b26-a865-57df77c904bc",
+      "result_id": "457ec653-8094-4a41-9d2c-9358f84ee4ab"
+    },
+    {
+      "claim_id": "0b32e6db-1381-4230-b53a-5023e613e6b9",
+      "result_id": "457ec653-8094-4a41-9d2c-9358f84ee4ab"
+    },
+    {
+      "claim_id": "4c65db59-126a-4b2e-9e77-e94e61b7a650",
+      "result_id": "457ec653-8094-4a41-9d2c-9358f84ee4ab"
+    },
+    {
+      "claim_id": "fae3d013-47d4-4a70-8917-f0ed252f0a80",
+      "result_id": "457ec653-8094-4a41-9d2c-9358f84ee4ab"
+    },
+    {
+      "claim_id": "c7f664b9-605f-4d4c-a145-8f43977198c3",
+      "result_id": "457ec653-8094-4a41-9d2c-9358f84ee4ab"
+    },
+    {
+      "claim_id": "a4364fbe-9ecd-457c-ade3-684b56de6cc5",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "ca60a66e-d13c-4f8b-8225-d0ce784bb11e",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "7f0c958a-386d-493a-bb25-e948969d1464",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "4fd76ced-7238-4563-8bbb-65215e5a9d11",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "12b5933c-dff0-4c55-bd84-d0718810d48a",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "3d43d91e-6406-4e91-bf50-86a80664955d",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "33a47504-5772-475c-b2b1-ee8ecbd7496c",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "b0579e87-f5f6-4993-a1b1-e4f177a5b2c8",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "180c128d-81e9-4b70-92cc-a95ee44bae18",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "04283bcf-0181-40d2-965e-fee594bb636c",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "ffe5f3f7-2f36-45d1-afb3-4f07926a381d",
+      "result_id": "17067541-784d-41e9-9789-1247b3823a1b"
+    },
+    {
+      "claim_id": "1cd1c646-7e73-4054-94ca-b9b7e93c1ac1",
+      "result_id": "b81d5a86-94a3-4fe5-9264-8124dd46b717"
+    },
+    {
+      "claim_id": "77272907-e561-45f2-be4f-f1ee883c56cf",
+      "result_id": "b81d5a86-94a3-4fe5-9264-8124dd46b717"
+    },
+    {
+      "claim_id": "a4f5736a-c110-4090-98b1-5fc23a6f6677",
+      "result_id": "b81d5a86-94a3-4fe5-9264-8124dd46b717"
+    },
+    {
+      "claim_id": "3555e535-73b6-4a14-b349-abef0929a175",
+      "result_id": "b81d5a86-94a3-4fe5-9264-8124dd46b717"
+    },
+    {
+      "claim_id": "72798f6c-a79d-41ce-8f1f-86d830c289c2",
+      "result_id": "b81d5a86-94a3-4fe5-9264-8124dd46b717"
+    },
+    {
+      "claim_id": "abb2a001-9ab0-46bd-a235-8d58d3335fd2",
+      "result_id": "87d06ffa-22e0-415c-9ed9-c7da1edf1ba1"
+    },
+    {
+      "claim_id": "92a298af-127d-4a30-a182-84e90acee3b8",
+      "result_id": "87d06ffa-22e0-415c-9ed9-c7da1edf1ba1"
+    },
+    {
+      "claim_id": "5fdfac44-ac42-4099-9737-2459442ecd21",
+      "result_id": "87d06ffa-22e0-415c-9ed9-c7da1edf1ba1"
+    },
+    {
+      "claim_id": "131eccc5-caae-4265-948c-167e4c8a962b",
+      "result_id": "87d06ffa-22e0-415c-9ed9-c7da1edf1ba1"
+    },
+    {
+      "claim_id": "8eaf6802-331e-4943-844e-aa12a4d3025a",
+      "result_id": "11344fdf-03f5-4292-82be-b425046f0d87"
+    },
+    {
+      "claim_id": "191d3266-440f-4959-8915-d933d1e2d29c",
+      "result_id": "11344fdf-03f5-4292-82be-b425046f0d87"
+    },
+    {
+      "claim_id": "7e369a13-e101-4c34-99f2-4e58fe0977f9",
+      "result_id": "11344fdf-03f5-4292-82be-b425046f0d87"
+    },
+    {
+      "claim_id": "cd390296-d8f7-4b2c-a57b-0d633b959b29",
+      "result_id": "11344fdf-03f5-4292-82be-b425046f0d87"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1517 @@
+{
+  "submission": {
+    "id": "4424a0ae-b49b-43fb-8c37-c6f1cf616741",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:34:04.054259Z",
+    "updated_at": "2025-12-03T18:34:04.054259Z"
+  },
+  "content": [
+    {
+      "id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "submission_id": "4424a0ae-b49b-43fb-8c37-c6f1cf616741",
+      "content_type": "manuscript",
+      "content_text": "# Quantifying changes in the T cell receptor repertoire during thymic development\n\n## Authors\n\n- Francesco Camaglia<sup>1</sup> ([ORCID: 0000-0003-4810-2631](https://orcid.org/0000-0003-4810-2631))\n- Arie Ryvkin<sup>2</sup>\n- Erez Greenstein<sup>2</sup> ([ORCID: 0000-0002-6923-8469](https://orcid.org/0000-0002-6923-8469))\n- Shlomit Reich-Zeliger<sup>2</sup>\n- Benny Chain<sup>3</sup> ([ORCID: 0000-0002-7417-3970](https://orcid.org/0000-0002-7417-3970))\n- Thierry Mora<sup>1</sup> ([ORCID: 0000-0002-5456-9361](https://orcid.org/0000-0002-5456-9361)) \u2020\n- Aleksandra M Walczak<sup>1</sup> ([ORCID: 0000-0002-2686-5702](https://orcid.org/0000-0002-2686-5702)) \u2020\n- Nir Friedman<sup>2</sup>\n\n### Affiliations\n\n1. Laboratoire de physique de l\u2019\u00c9cole normale sup\u00e9rieure, CNRS, PSL University, Sorbonne Universit\u00e9, and Universit\u00e9 de Paris Paris France ([ROR:02feahw73](https://ror.org/02feahw73))\n2. Department of Immunology, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))\n3. Division of Infection and Immunity, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOne of the feats of adaptive immunity is its ability to recognize foreign pathogens while sparing the self. During maturation in the thymus, T cells are selected through the binding properties of their antigen-specific T-cell receptor (TCR), through the elimination of both weakly (positive selection) and strongly (negative selection) self-reactive receptors. However, the impact of thymic selection on the TCR repertoire is poorly understood. Here, we use transgenic Nur77-mice expressing a T-cell activation reporter to study the repertoires of thymic T cells at various stages of their development, including cells that do not pass selection. We combine high-throughput repertoire sequencing with statistical inference techniques to characterize the selection of the TCR in these distinct subsets. We find small but significant differences in the TCR repertoire parameters between the maturation stages, which recapitulate known differentiation pathways leading to the CD4+ and CD8+ subtypes. These differences can be simulated by simple models of selection acting linearly on the sequence features. We find no evidence of specific sequences or sequence motifs or features that are suppressed by negative selection. These results favour a collective or statistical model for T-cell self non-self discrimination, where negative selection biases the repertoire away from self recognition, rather than ensuring lack of self-reactivity at the single-cell level.\n\n## Introduction\n\nIn order to protect themselves against infection, jawed vertebrates have evolved an adaptive immune system. T lymphocytes play a leading role in this system. Each T lymphocyte expresses a unique T-cell receptor (TCR) capable of binding short protein fragments presented by the host\u2019s Major Histocompatibility Complexes (MHC), subsequently triggering clonal expansion and differentiation of immune effector function. The T cell system discriminates pathogen derived \u2018foreign\u2019 proteins from the body\u2019s own \u2018self\u2019 proteins, in such a way that an immune response is usually triggered only by peptides from exposure to a potentially harmful threat. We ask if we can identify specific TCR features which allow the system to discriminate foreign and self-peptides.\n\nTCRs are generated in a stochastic assembly process based on random recombinations of genomic templates and additional non-templated insertions and deletions (Hozumi and Tonegawa, 1976). The ability to discriminate between self and non-self targets cannot therefore be exclusively inherited, but must at least in part be learned afresh in each individual. This process is widely believed to occur during the development of haemopoetic precursors into mature T cells, which occurs in a specialized microenvironment within the thymus. This process has been studied in considerable detail. T cells precursors first produce a \u03b2 chain and if the generated chain is functional, the cell proliferates and an \u03b1 chain is generated. While the TCR chains are being assembled, CD4 and CD8 surface markers are expressed as precursor cells transit to the Double Positive state (DP). DP TCR are subject to thymic selection, a process that tests receptor binding by presenting them with the organism\u2019s own proteins, and eliminates very weak binders (positive selection), but also too strongly self-reactive receptors (negative selection) (Yates, 2014). During thymic selection, DP cells differentiate into CD4+ or CD8+ cells by keeping expression of only one of these molecules, which determines their function. While this picture is well-established and the maturation trajectory has a well established gene expression signature (Park et al., 2020), the TCR sequences removed during thymic selection, which should be manifested as \u2018holes\u2019 in the repertoire, have never been directly observed. The lack of quantifiable signatures of thymic selection, differentiation and proliferation hinders a dynamic description of TCR maturation (Robert et al., 2021).\n\nPositive and negative selection imposes upper and lower boundaries on the binding energy of the interaction between TCR and self peptide-MHC complexes (Kosmrlj et al., 2009). However, it remains unclear whether every thymocite is exposed to every self-antigen, or how efficient the process of selection is. Negative selection is known to be leaky (Yu et al., 2015), letting auto-reactive cells differentiate into regulatory cells (Bains et al., 2013; Wing and Sakaguchi, 2010). The efficiency of negative selection for the naive conventional (non-regulatory) effector T cell compartment remains unclear (Yu et al., 2015; Gallegos and Bevan, 2006). Partial or incomplete negative selection may limit its impact on the repertoire.\n\nThe difficulty of characterizing selection is partly due to survivor bias when sampling functional immune repertoires in the periphery (Madi et al., 2017; Madi et al., 2014; Izraelson et al., 2018; Sethna et al., 2017). To overcome this limitation, we sequenced the TCR repertoire of thymocyte subpopulations isolated from mice carrying a reporter transgene linked to Nur77, a marker of T cell activation both within the thymus and in the periphery. Nur77 expression, in combination with Annexin V, a marker of cell death, allows us to identify cells that are more likely to pass thymic selection, and those that are most likely not to pass selection. Although the CD4+CD8+Annexin V population may still contain some cells which will be negatively selected, but have not yet expressed Annexin V, the overall strategy provides us with a window into the repertoire at various stages of selection. By comparing the sequenced repertoires to statistical models of mouse TCR generation (Sethna et al., 2017), and subset-specific models of thymic selection, we searched for specific TCR sequence features that correlate with the different stages of intra-thymic T-cell developement.\n\n## Results\n\n### Tracking T cell development stages by flow cytometry\n\nTo identify specific sequence features of TCR during each step of thymic selection, we performed high-throughput sequencing of TCR repertoires from different subpopulations of thymocytes from transgenic Nur77 reporter expressing mice. These mice carry a fluorescent reporter gene which is co-expressed with Nur77, a marker of T cell activation (Liebmann et al., 2018). Three genetically identical Nur77 reporter mice were sacrificed at the age of 6 weeks, when thymus development is completed and its cell population is stable (Gray et al., 2006). All animals were handled according to Weizmann Institute\u2019s Animal Care guidelines, in compliance with national and international regulations. Thymus and spleen were removed, and stained for fluorescence-activated cell sorting (see Materials and Methods). The cells were sorted based on Nur77 reporter expression (to detect activation), Annexin V (to detect early apoptosis) in combination with CD3, CD4, and CD8 cell surface markers. We used the gating strategy illustrated in Figure 1A, B and C to isolate double positive DP cells preceding selection (CD4+CD8+, Nur77-, Annexin V-: DP pre), DP cells in the process of being positively selected (CD4+CD8+, Nur77+ Annexin V-: DP pos), DP cells dying by neglect or possibly by damage during the preparation (CD4+CD8+, Nur77 Annexin V+: DP dbn); and single positive (SP) cells: CD4+CD8-, Annexin V+ (CD4 apo), and CD4-CD8+, Annexin V+ cells (CD8 apo). The Annexin V staining was not very strong and did not give a very clear separation between positive and negative populations. In addition, Annexin V+ subsets may be contaminated by cells that are dying for other reasons than negative selection. Nevertheless, we may still assume that the two apo subsets are enriched in negatively selected cells. In addition, we sequenced the repertoires of mature (post-selection) single positive SP CD4+ and CD8+ cells from the spleen (CD4 spl and CD8 spl). The proposed differentiation pathway between these populations at different maturation stages are schematically represented in Figure 1D. Together, these seven repertoires should contain both the selected thymocytes and the pre-selection repertoires, as well as the thymocytes that fail either positive or negative selection and die in the thymus.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig1-v2.jpg)\n\n**Figure 1.:** (A) Flow cytometry scatterplots of T cell population from the thymus according to the markers CD4 and CD8. (B) The DP population is separated from DN according to CD3 expression (insert). Cells are then FACS sorted according to the expression of Nur77 and AnnexinV. (C) CD4 cells in the spleen (above) and CD8 (below) are FACS sorted according to the expression of CD3 and AnnexinV. (D) Schematic evolution of the sampled cell types during thymic maturation. (E) Analysis workflow: annotated reads in sampled repertoires are input for model inference (see Materials and Methods). Out-of-frame TCR sequences are pooled from all mice and stages to learn a generation model. In-frame sequences are used to learn maturation stage specific selection models with the generation model as background.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Number of reads for the alpha chain vs the number for the beta chain within the same dataset. In the box is shown the Pearson correlation coefficient. Distribution of iNKT clonotypes for the \u03b1 chain. (B) The relative amount of (TRAV11, TRAJ18) clonotypes is significantly higher for all CD4 stages in all mice. (C) Numbers of unique productive (in-frame and with no stopping codons) single chain obtained for the maturation stages in each mouse after annotation for the \u03b1 chain. (D) Numbers of unique productive for the \u03b2 chain.\n\n### TCR repertoire sequencing\n\nWe sequenced and annotated the TCR repertoires of each subset as described in Materials and Methods. The cDNA of individual \u03b1 and \u03b2 genes (TRA and TRB) were barcoded with unique molecular identifiers (UMI) in order to allow for correction of sequencing errors and PCR bias. However, in this analysis we focused on unique sequences (discarding count information) to avoid expression and amplification biases. As a quality control of the whole procedure, we showed that the number of \u03b1 and \u03b2 sequences within each population was highly correlated (Figure 1\u2014figure supplement 1A). We further verified that the relative fraction of TCR\u03b1 sequences associated with iNKT cells (identified by TRAV11 and TRAJ18 genes [Garner et al., 2018]) is higher in CD4 than in CD8 cells (see Figure 1\u2014figure supplement 1B).\n\nWe obtained seven datasets for both chains and for each of the three mice. A small fraction of sequences contain stop codons, usually because of a frameshift in the CDR3. These sequences likely come from transcription from a chromosome carrying a nonproductive chain, which is known to persist despite allelic exclusion acting on the TRB locus. The rest of the sequences are assumed to be productive. Since nonproductive TCR owe their survival to the productive gene on the other chromosome, they are not affected by selection. We combined all nonproductive sequences from all subsets to infer a generative mechanistic model of the V(D)J recombination process using IGoR (Marcou et al., 2018). Once trained, the model can be used to assign a generation probability $P_{gen}$ to any TCR sequence observed (Murugan et al., 2012; Marcou et al., 2018; see Materials and Methods and Figure 1E).\n\nThe datasets contain \u223c1000\u201350,000 unique productive sequences per subset (Figure 1\u2014figure supplement 1C for the \u03b1 chain and Figure 1\u2014figure supplement 1D for the \u03b2 chain). Since the 3 mice were isogenic and shared the same MHC haplotype, we expect their repertoires to be subject to the same processes of recombination and selection (Madi et al., 2014). Unless specified otherwise, all downstream analyses were therefore carried out on pooled productive TCR sequences from each population from the three individuals to increase statistical power.\n\n### Repertoires from different T cell populations have different statistical parameters\n\nTo assess how selection acts at the different maturation stages, we studied the distribution of sequence features in TCR\u03b1 repertoires. We compared TRAV and TRAJ gene usage at the different maturation stages with each other and with their excepted frequency from the generation model learned from nonproductive sequences, which we will refer to as the pre-selection model or $P_{gen}$. TRAV usage broadly follows the pattern of the pre-selection model (Figure 2A), although SP CD4+ repertoires have a lower proportion of TRAV12-2, and most populations have an increased proportion of TRAV7-2. TRAJ gene usage also broadly agrees with the pre-selection model predictions (Figure 2\u2014figure supplement 2A), although SP CD8+ repertoires have a lower proportion of TRAJ31, SP CD4+ repertoires have an increased proportion of TRAJ27 and TRAJ32 which is underrepresented in all cell types. For both V and J genes, we see little difference between the repertoires of spleen CD4 and CD8 cells, and their discarded counterparts in the thymus (apo). We also observe strong similarities between all the DP subsets. TRB gene usage follows similar trends, although there are some differences in J gene usage between selected and unselected SP CD4+ and CD8+ cells. Overall, the biases of the recombination process dominate any effects of selection on V and J region usage (Figure 2\u2014figure supplement 1A, Figure 2\u2014figure supplement 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig2-v2.jpg)\n\n**Figure 2.:** The color code is common to all subplots. (A) TRAV gene distribution at different maturation stages compared to the pre-selection model distribution $P_{gen}$ (see Figure 2\u2014figure supplement 2A for TRAJ). Only the most frequent according to the $P_{gen}$ model are reported. Errorbars correspond to the empirical standard deviation across the three different mice. (B) CDR3 length distribution of TCR\u03b1 sequences. The errors associated with mouse variability are minor and illustrated via the shaded curves. See Figure 2\u2014figure supplement 3A for individual curves. The dashed line is the average CDR3 length from the $P_{gen}$ model. Standard deviations of the average length distributions are shown at right. (C) Distribution of the most frequent amino acids at different maturation stages. The counts correspond to the number of observations within the CDR3 (i.e. excluding the first two and the last positions), summed for all the sequences in the subpopulation. Error bars represent the empirical standard deviation across mice. (D) Principal component analysis of the TRAV gene distribution at each maturation stage. Insert: projection on the principal axis of the five most abundant TRAV genes (see Materials and Methods). Analogous results for TRAJ are shown in Figure 2\u2014figure supplement 2C. Source code available at https://github.com/statbiophys/thymic_development_2022/blob/main/fig2.ipynb.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The distribution of TRBV genes at different maturation stages compared to the generation distribution. (B) Distribution of \u03b2 chain CDR3 amino acid sequence lengths. The CDR3 is defined between the typical cysteine and phenylalanine position. The dashed line represents the average length according to the $P_{gen}$ model. (C) The distribution of the most frequent amino acid within the CDR3 region for the TRBV sequences. (D) Principal component analysis according to the TRBV gene distribution at each maturation stage. Insert: projection on the principal axis of the five most representative TRBV genes. Analogous results for TRBJ are shown in Figure 2\u2014figure supplement 2D.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Statistics of the J gene usage and the $P_{gen}$ distributions.(A) The distribution of J genes at different maturation stages compared to the generation distribution for the \u03b1 chain. (B) The distribution of J genes for the \u03b2 chain. (C) Principal component analysis of \u03b1 chain J gene usage. Similarly as for the V genes (Figure 2C), DP, CD4 and CD8 maturation stages cluster by the cell types. (D) Principal component analysis of \u03b2 chain J gene usage. (E) $P_{gen}$ values distribution for the clonotypes at each maturation stage. Insert: blow up of the peak of the distribution (the dashed line) for the \u03b1 chain. (F) $P_{gen}$ values distribution the \u03b2 chain.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Amino acid CDR3 length for TCR\u03b1 sequences. The thick curve represent the average length across the three different mice, while the shaded part illustrates the mouse variability. On the left of each box, we report the empirical average and standard deviation of the distribution; on the right the coefficient of determination $R^{2}$ between each individual distribution and the average (see Materials and Methods). (B) Analogous for the TCR\u03b2 sequences.\n\nFor both chains, CDR3 amino acid length of SP CD4+ and CD8+ has a sharper distribution compared to earlier maturation stages (DP) (see Figure 2B, Figure 2\u2014figure supplement 1B and Figure 2\u2014figure supplement 3). This has previously been interpreted as a signature of selection due to structural constraints on the pMHC-TCR complex (Madi et al., 2017; Lu et al., 2019; Carter et al., 2019). We also compared the single amino acid usage (excluding the constant regions) across the different repertoires (Figure 2C for \u03b1 chain, Figure 2\u2014figure supplement 1C for \u03b2 chain). We observe similarities between the DP stages, the CD4 stages and the CD8 stages, as observed for the gene usage. The repertoires from different maturation stages cannot be distinguished by any one individual feature discussed above. However, Principal Component Analysis (PCA) on the TRAV gene usage distributions in individual mice at different stages identified clusters of related cell types (Figure 2D). The DP Nur77- populations cluster with the pre-selection model, the SP CD4+ and CD8+ populations form distinct clusters, and the DP pos Nur77+ cells, which we hypothesise are cells in the process of positive selection, occupy an intermediate position between these three clusters. This pattern is consistent with the known developmental trajectory as illustrated by the arrows in Figure 2D. PCA of TRAJ usage also shows similar clustering patterns (Figure 2\u2014figure supplement 2C). The PCA of TRBV and TRBJ usage also discriminates between SP CD4+ and CD8+ populations, and from the pre-selection populations, although the overall pattern is less clear (Figure 2\u2014figure supplement 1D and Figure 2\u2014figure supplement 2D). The overall distribution of TCR generation probabilities, $P_{gen}$, does not change from the pre-selection and post-selection thymic stages to the mature peripheral SP repertories (Figure 2\u2014figure supplement 2E, F), consistent with previous reports comparing thymic and peripheral repertoires (Sethna et al., 2017). In summary, the effects of selection impose subtle changes on the pattern of TCR variable gene usage, which cannot be adequately captured by looking at any single V or J gene, but only by a combination of features.\n\nV and J gene usage, and CDR3 length are coarse grained measures of a TCR repertoire. We therefore explored whether the repertoires of different maturation stages could be linked to more precise features of the TCR sequence, in particular incorporating the sequence of the CDR3. We encoded each TCR as a sparse {0,1} binary vector $\\sigma\u2192$ which captures V gene, J gene and CDR3 amino acid sequence (for details see Materials and Methods). We then trained a logistic regression model on the set of $\\sigma\u2192$ from repertoires of different subsets. We trained and tested the classifier to distinguish pairs of repertoires from different subsets. The classifier achieved only moderate Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC) scores (Figure 3A for TCR\u03b1, and Figure 3\u2014figure supplement 1A for TCR\u03b2), in agreement with previous studies (Emerson et al., 2013; Isacchini et al., 2021). We verify that this result is not an artifact introduced by pooling repertoires of different mice, by testing the same techniques on the individual with the largest datasets (mouse 3). The AUC scores for the \u03b1 and \u03b2 repertoires are shown respectively in Figure 3\u2014figure supplement 1C, D.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig3-v2.jpg)\n\n**Figure 3.:** (A) Area under the curves (AUC) values computed from Receiver Operating Characteristic (ROC) curves of linear classifiers of TCR\u03b1 between two subsets. The training/testing set is a random subsample containing 70%/30% of the full dataset at a given maturation stage. (B) ROC curves for classifying a group of $m$ sequences from the same maturation stage, between CD4 spl and CD4 apo (red frame in A), illustrating the improvement with increasing number of TCRs. See Figure 3\u2014figure supplement 1 and (B) for the analogous analysis on TCR\u03b2. Source code available at https://github.com/statbiophys/thymic_development_2022/blob/main/fig3.ipynb.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) AUC values computed from the ROC curves of the linear classifiers for TCR\u03b2 sequences between pairs of maturation stages. The training/testing set is a random subsample containing 70%/30% of the full dataset at a given maturation stage. (B) Illustration of the improvements of group discriminability between the stafes CD4 spl and CD4 apo. (C) AUC values computed from the ROC curves of the linear classifiers for TCR sequences for the unpooled largest dataset for an individual (mouse 3). We observe that the score is never higher than for the pooled case and in fact it\u2019s tipically worse for the \u03b1 chain. (D) Analogous for the \u03b2 chain.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Here we organize the different train/test datasets as in the main text (Figure 3) and we learn logistic regression classifiers as in Materials and Methods, of which we report the AUC score. Analogous results are obtained by usage of a random decision forest. (A) We randomly shuffle the labels for each pair of \u03b1 stages, observing that it is impossible to obtain two distinguishable repertoires through random mixing. The error for the last digit is expressed in brackets and is obtained from 20 realizations of the shuffling. (B) We randomly assign two labels to the TCR\u03b1 sequences of a single repertoire and split the repertoire in a test and a train group. Again, we show that it\u2019s not possible to obtain the scores of the main text by randomly pick chains from a defined stage. In all these controls we sub-sampled to the size of the smallest dataset available in order to check for issue size. As in the main text (see Materials and Methods), we test linear and decision forest classifiers, imposing the size of the larger class to not exceed of more then 25% the size of the smaller, with the test set corresponding to 30% of data. (C) Classifiers learnt on pair of \u03b2 stages with randomly shuffled labels. (D) Classifiers learnt on single \u03b2stages with randomly assigned labels.\n\nControls in which population labels were shuffled, resulted in AUC close to 0.5 (Figure 3\u2014figure supplement 2A, B for the \u03b1 chain, Figure 3\u2014figure supplement 2C, D for \u03b2). The results shown in Figure 3 indicate that the TCR populations differ at a statistical level (i.e. have different distributions of sequence features), but that each individual TCR is only a weak predictor of repertoire class. However, better classification efficiencies can be achieved by combining the predictions from sets of TCRs. For example, multiplying the predictions from 30 TCR sequences from the same repertoire (Figure 3B), we can distinguish CD4 spl and CD4 apo TCR\u03b1 with an AUC score of >0.85; see Figure 3\u2014figure supplement 1B for TCR\u03b2. Thus, statistical properties of a repertoire can distinguish it from another repertoire, even when the feature distributions of individual TCRs are largely overlapping.\n\n### Selection models and n-grams capture the relations between the stages of thymic development\n\nA number of studies have highlighted the importance of short amino acid motifs ($k$-mers or $n$-grams) within the CDR3 sequence in determining TCR specificity (Thomas et al., 2014; Sun et al., 2017; Cinelli et al., 2017) (see Figure 4A). Specifically, $n$-grams can be used to reduce the dimensionality of the TCR space, while capturing amino acid correlations or patterns which might play a role in antigen recognition. We therefore counted the frequency of $n$-grams in each repertoire. We excluded from the analysis the most conserved regions (the first two positions in the CDR3 that are usually a cysteine and alanine, and the last one, typically a phenylalanine). We then used these $n$-gram frequency distributions to calculate the diversity of the repertoire as quantified by the Shannon entropy $S$ (see Materials and Methods). In practice, the Shannon entropy is computationally too expensive to calculate exactly for very large data sets, and we therefore restricted our analysis to $n$-grams of length 4 or less, using the approximate Nemenman-Shafee-Bialek (NSB) entropy estimator (Nemenman et al., 2002) to correct for finite sampling bias (see Materials and Methods). This estimator outcompetes alternative entropy estimators on synthetic data (Figure 4\u2014figure supplement 1). Our analysis combines together CDR3 of different amino acid lengths which may influence the entropy measurements. However, detailed analysis of the entropy of DP repertoires, using different CDR3 lengths separately, demonstrated that the differences observed due to the lengths effects were small compared to error due to sequencing (Figure 4\u2014figure supplement 1). Another advantage of the Nemenman-Shafee-Bialek estimator is that it was shown to converge at the sizes of the smallest datasets (\u223c103-104 clonotypes), as reported in Figure 4\u2014figure supplement 2. Once computed the set of entropy measurements based on $n$-gram frequencies for each different repertoire, we compared the data-derived entropy measurements with the prediction of a simple generative model of each repertoire which treated each feature of each TCR (V gene, J gene and each CDR3 amino acid) as independent. Taking the set of TCR vectors $\\sigma\u2192$ we fitted a set of parameters $E_{stage}$ by maximising the posterior probability over all of the TCRs for each repertoire separately $P_{stage}\u2062(\\sigma\u2192)=(1/Z)\u2062e^{-E_{stage}\u2062(\\sigma\u2192)}\u2062P_{gen}\u2062(\\sigma\u2192)$, where $P_{gen}\u2062(\\sigma\u2192)$ are the pre-selection generative probabilities for all the TCRs, $E_{stage}\u2062(\\sigma\u2192)$ is a linear function of the features (Elhanati et al., 2014; Sethna et al., 2020), and $Z$ is a normalization factor (Figure 1E and Materials and Methods). The enrichment factors $E_{stage}\u2062(\\sigma\u2192)$ encode the intuition that due to selection, a given TCR in a given repertoire is seen with higher or lower frequency than expected by the pre-selection generation model. Once we had learnt the enrichment factors for each repertoire, we used the resulting model to generate in silico synthetic repertoires of 3 \u00d7 106 TCRs, and recalculated $n$-gram frequency distributions and entropy estimates for each synthetic repertoire.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig4-v2.jpg)\n\n**Figure 4.:** $n$-gram frequency discriminates between repertoires.(A) $n$-gram definition. We count how many times $n$-gram amino acid subsequences are seen in the CDR3 across a repertoire. (B) Shannon entropy $S$ of the $n$-gram distributions normalized by $n$ for the maturation stages. The entropy is estimated with the Nemenman et al., 2002 estimator and it is expressed in bits. The error on the estimated Shannon entropy from data is estimated from the sequencing error (see Materials and Methods). (C) Clustering according to Jensen-Shannon divergence between the 3-gram distributions computed from the selection model $P_{stage}$ on synthetic repertoires. Dendrogram are computed with the Ward method (see Materials and Methods). (D) Clustering based on Jensen-Shannon divergence for the full $P_{stage}$ selection model using $P_{stage}$. Source code available at https://github.com/statbiophys/thymic_development_2022/blob/main/fig4.ipynb.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Averages over different subsamples of the same size for productive DP pos pooled $\\alpha$ clonotypes. The estimators compared are: Nemenmann-Shafee-Bialek (see Materials and Methods) (Nemenman et al., 2002, Chao and Shen, 2003, Miller, 1955) and maximum likelihood (naive estimator). (B) Analogous for the \u03b2 chain. (C) Analysis of the length dependence of 3gram entropy associated to different choices of th CDR3 amino acid lengths for the clonotypes considered in the \u03b1 DP pre stage. The errorbars are estimated with the NSB method, while the shaded curve represent the sequencing error. We notice how the difference between the different choices is greatly covered by the sequencing error. We prefer then to use all CDR3 lengths for the higher statistics. (D) Analogous for the \u03b2 chain.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Convergence of the $n$-gram entropy estimations.(A) We subsample the unique clonotypes for the TCR\u03b1 sequences and we check that the 4-gram entropy estimations converge with increasing number of unique clonotypes. The synthetic sequences are produced with the generation model $P_{gen}$ (same for all plots), the different selection models $P_{stage}$ and a $P_{stage}$ selection model with synthetic nucleotide sequencing error. The estimation is performed using the Nemenman-Shafee-Bialek (NSB) estimator. The error bars for data are obtained with the NSB method, while for synthetic sequences are estimated as the empirical standard deviation over different realizations of the simulation. Due to the increased statistics, the convergence is faster for $n<4$ (the number of possible $n$-grams grows as 20n, thus we decided to show this analysis only for the case $n=4$). (B) Analogous analysis for TCR\u03b2 sequences.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Shannon entropy on \u03b2-grams and entropy dependency on $n$.(A) NSB estimation of the Shannon entropy $S$ normalized by $n$, associated to $n$-gram distributions within the CDR3 TCR\u03b2 chain of unique clonotypes from the different maturation stages. The error bars for the data are estimated from the sequencing error. (B) Decrease in entropy per symbol between $n$ and $n-1$ grams for the \u03b1 chain. The decreases are comparable. The errorbars associated to simulation are obtained as the same of the two standard deviations as returned by the NSB estimator. (C) For the \u03b2 chain the decreases get smaller with $n$.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Jensen-Shannon divergence between $n$-gram distributions.(A) Jensen-Shannon divergence (Equation 8) for different $n$-gram distributions (here $n=1$) estimated on synthetic TCR\u03b1 repertoires for different maturation stages. The dendrogram is computed with the Ward method (see Materials and Methods). (B) Divergence for TCR\u03b1 in the case $n=3$. We report here the same figure shown in the main text for the sake of comparison (Figure 4C). (C) Divergence for TCR\u03b1 in the case $n=4$. (D) Divergence for TCR\u03b2 in the case $n=1$. (F) Divergence for TCR\u03b2 in the case $n=3$. (G) Divergence for TCR\u03b2 in the case $n=4$.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) 1gram classifiers for the \u03b1 chain. In the case of 1-grams, the features are assigned according to the counts of appearance of a certain amino acid within the CDR3 region (20 features). (B) 1-gram classifiers for the \u03b2 chain. (C) 3-gram classifiers for the \u03b1 chain. In the case of 3-grams we choose a one-hot-encoding of the 8000 features. We observe the increased discrimination power of the 3-grams with respect to 1-gram as expected, the latter being generally worse than the models learnt on top of Sonia features. (D) 3-gram classifiers for the \u03b2 chain.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A) Shannon entropy estimation associated to the full $P_{stage}$ model for the \u03b1 chain (Equation. 7) for the different selection models and the $P_{gen}$ generation model. (B) We report here the same figure shown in the main text for the sake of comparison (Figure 4D). (C) Shannon entropy estimation associated to the full $P_{stage}$ model for the \u03b2 chain for the different selection models and the $P_{gen}$ generation model. (D) Jensen-Shannon divergence for the \u03b2 chain $P_{stage}$ models.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig4-figsupp7-v2.jpg)\n\n**Figure 4\u2014figure supplement 7.:** (A) Logo plots for the CDR3 amino acid usage inferred by the model, from the left (positive position indexes) and from the right (negative), omitting the first and the last one. Here the quantity $\u27e8\u03f5_{1}^{(a\u2062a)}-\u03f5_{2}^{(a\u2062a)}\u27e9$ represents the average difference between weights associated to amino acid $a\u2062a$ at the given position by $P_{stage}$ models (see Materials and Methods). Analogously with the energy difference, a negative difference implies the feature is favoured in stage 1, vice versa for stage 2. We follow the color scheme from Tubiana et al., 2019 to highlight the charge properties (red for positive charge, blue for negative charge). On the left is shown the weights difference between stages DP pos and DP dbn for the \u03b1 chain. For the \u03b2 chain (right) we see a reduction of positively charged amino acid in DP pos. (B) Stages CD4 spl and CD4 apo. Conversely, here the CD4 spl stage show enhancement in positively charged for the \u03b2 chain (right). (C) Stages CD8 spl and CD8 apo. We observe just a slight enhancement of positively charged amino acid in CD8 spl.\n\n![Figure 4\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig4-figsupp8-v2.jpg)\n\n**Figure 4\u2014figure supplement 8.:** (A) We measure the increase of hydrophobicity from the generation benchmark using a stage-wide score defined from the inferred $P_{stage}$ models (see Materials and Methods, Equation 4). As a control, we compute the same quantity over a set of models learnt on $P_{gen}$-generated repertoires of the same sizes (in blue). The error bars correspond to the standard deviation over 25 repetitions. The score is showed at the various stages for the \u03b1 chain. We observe a clear increase from DP pre to DP pos and a subsequent decrease for the single positive sets, in agreement with the role of positive and negative selection. (B) Analogous analysis for the \u03b2 chain. In this case we also observe AnnexinV+ sets with a higher score than the spleen sets. (C) AUC scores computed from the ROC curves of the logisitc regression classifiers learnt over an empirical hydrophobic index of the \u03b1 repertoires (see Materials and Methods, Equation 5). (D) AUC scores for the classifiers on on hydrophobic features for the \u03b2 chain.\n\nThe comparison of the estimated entropy for each $n$-gram length, and each subpopulation of T cells, using both directly data-derived and model-derived repertoires is illustrated for TCR\u03b1 (Figure 4B) and TCR\u03b2 (Figure 4\u2014figure supplement 3A) chains. An upper bound for the entropy is given by uniformly distributed amino acids, $S_{max}/n=log_{2}\u206120\u223c4.3$ bits, while amino acids distributed according to their frequency in the overall vertebrate proteome gives a slightly smaller value of \u223c4.2 bits per position (King and Jukes, 1969). Both the observed and model-derived entropies are less than this maximum even for single amino acids ($n$-grams of length $n=1$), and decrease further with $n$-gram length (see Figure 4\u2014figure supplement 3B, C). This reflects strong bias on the abundance of individual amino acids, and strong correlations between amino acids within the CDR3 which are observed in all CDR3 repertoires, and are captured by the frequency distribution of the longer $n$-grams. Two additional important points can be observed. First, the entropy of the repertoires after selection and lineage commitment (in the single positive populations) is less than the earlier pre-selection DP repertoires, which match closely the entropy of the pre-selection generative model (shown by the dotted line for each $n$-gram length). This decrease becomes more evident with longer $n$-gram length (the circles lie below the dotted lines). Thus, as predicted, selection does impose some decrease in repertoire diversity, although this is a much smaller effect than the decrease in diversity imposed by the generation process itself. The second key observation is that the entropy calculated directly from $n$-gram frequency in the data is very similar to that of the synthetic repertoires generated using the linear generative models in which individual TCR amino acids are treated as independent variables. Thus, at least at the level of diversity of $n$-grams, there is no evidence that selection at any step involves complex sequence motifs, or amino acid interactions, which would not be captured by the linear model. We looked in more detail at the $n$-gram ($n=3$) distributions derived by the linear selection models for the different maturation stages. A plot of the Jensen-Shannon divergences (JSD) between all pairwise comparisons largely recapitulated the expected relationships between the subsets, with DP pre and DP dbn clustering with the pre-selection generative model, while the single positive CD4 and CD8 populations clustered separately, and DP pos have an intermediate position (Figure 4C). A comparison for both TCR\u03b1 and \u03b2 for different $n$ is shown in Figure 4\u2014figure supplement 4. Since some differences between populations were seen even for amino acid usage ($n=1$), we compared the discriminatory power of models based on $n$-grams with $n=1$ and $n=3$ (Figure 4\u2014figure supplement 5). The 3-gram model outperformed the 1-gram model in almost all cases. We can go beyond $n$-grams and use the subset-specific $P_{stage}$ models to predict the entropy of the full sequence (Materials and Methods), shown in Figure 4\u2014figure supplement 6A for $\\alpha$ and Figure 4\u2014figure supplement 6C for \u03b2. This entropy is substantially reduced from generation to the DP stages, and further reduced in the single positive stages, especially in CD4+ subsets. We also computed the $JSD$ of the distributions $P_{stage}$ between subtypes (Figure 4C for TCR\u03b1 and Figure 4\u2014figure supplement 6D for TCR\u03b2). These JSD showed similar patterns as with $n$-grams, except for CD8+ spleen cells showing more similarity to the $P_{gen}$ distribution in TCR\u03b2. Note that the absolute values of the entropies and JSD are larger, since they include information about longer sequences, with additional V and J gene usage information. In summary, we fitted the data with a set of stage-specific generative models based on linear weighted combinations of TCR sequence features. The repertoires generated by this model accurately estimate the sequence and $n$-gram entropy derived directly from the data, and generate repertoires which differ in a small but reproducible manner from each other. The magnitude of these differences reflect the expected developmental relationships between the different populations.\n\n### Models capture modulations of hydrophobic residues in different subpopulations\n\nWe inspected single amino acid usage in terms of the model marginals to check for relative positional enrichments between pairs of repertoires (Equation 3), but we did not observe any striking signal for amino acid charge properties. The logo plots with a visualization of this results are shown in Figure 4\u2014figure supplement 7. Hydrophobic residues in the central positions of the CDR3 have been reported to be enriched in the TCRs of regulatory versus conventional T cells (Lagattuta et al., 2022). This suggests hydrophobicity may function as a proxy for auto-reactivity, and might be enriched in cells selected for negative selection (Stadinski et al., 2016; Daley et al., 2019). To test this idea, we defined a stage-specific hydrophobicity score $U$, obtained by summing the enrichment factors of hydrophobic residues CFILMWY at central positions of the CDR3 as learnt by our model at each stage (see Equation 4 in Materials and Methods).\n\nWe observe a clear increase of this score from DP pre to DP pos, suggesting that positive selection introduces a bias toward more hydrophobic TCRs (Figure 4\u2014figure supplement 7 and B). The score also decreases in the single positive sets (CD4 and CD8), in agreement with the known role of negative selection to prune too strongly self-reactive T cells (Butler et al., 2013). Finally, AnnexinV+ single positive sets (\u2018apo\u2019) show a slightly higher score than their respective spleen (\u2018spl\u2019) sets (with the exception of the CD8 \u03b1 chain scores). Overall, these changes in hydrophobicity are consistent with the hypothesised position of the different populations defined in our study in the stages of TCR selection.\n\nNote that this score (like other scores found in the literature Isacchini et al., 2021; Lagattuta et al., 2022) is statistical and can not be used to classify individual sequences. To assess how much of single-sequence discriminability is explained by the presence of hydrophobic residues, we then introduced an empirical \u2018hydrophobicity index\u2019 $u$, here defined as the number of hydrophobic residues (again CFILMWY) contained in the CDR3, normalized by its amino acid length (see Materials and Methods, Equation 5). The classifiers using this feature yielded poor performance (Figure 4\u2014figure supplement 8C, D), worse than the 1-gram models (Figure 4\u2014figure supplement 5A, B).\n\n### Discriminatory power of thymic selection\n\nThe stage-specific enrichment factors in the generative models described above can be considered as capturing the combination of features which drives a particular selection step. A prediction of this idea is that, at each selection point, the TCRs which are selected and those which are not would have a distribution of model probabilities ($P_{stage}$) which are anti-correlated. For example, a TCR that is present in the DP pos repertoire but \u201cforbidden\u201d from the CD4 repertoire (e.g. because of cross-reactivity to a Class II self pMHC) would be expected to have a large positive $P_{DP\u2062pos}$ and a $P_{CD4\u2062spl}\u22480$, reflecting the large enrichment factor between these two populations. A toy example illustrating this idea is illustrated in (Figure 5A). We consider a simple model in which TCRs are selected according to their CDR3 length into a \u2018long\u2019 population with probability $P\u2062(long|L)=L^{h}/(L^{h}+L_{0}^{h})$ and into a \u2018short\u2019 population otherwise. We apply this selection process in silico to $P_{gen}$-generated TCRs, and fit a separate $P_{population}$ model on the synthetic sequences found in each subset. We then calculate $E_{population}$ for each TCR according to both subset models, and plot these values against each other. The distribution of enrichment strengths according to the two models are clearly anti-correlated (Figure 5A). In other words, if a TCR is more likely to be classified as a \u2018long\u2019 sequence, it is in general less likely to be classified as a \u2018short\u2019 one. Interestingly, however, the enrichment strengths distributions from the two models are significantly overlapping. As a result, attempts to classify individual TCRs according to their enrichment strengths is poor, AUC\u223c 0.57. We then consider a different toy model where TCRs are selected according to the empirical hydrophobicity index $u$ (Equation 5). Similarly, we choose to generate a synthetic \u2018high hydrophobicity\u2019 ($HH$) population filtering $P_{gen}$-generated TCRs with a probability $P\u2062(HH|u)=u^{h}/(u^{h}+u_{0}^{h})$, otherwise \u2018low hydrophobicity\u2019. Repeating the analysis performed with the length example, we observe in the corresponding scatterplot that enrichment strengths are again anti-correlated (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig5-v2.jpg)\n\n**Figure 5.:** (A) Synthetic example of soft discrimination between \u2018short\u2019 and \u2018long\u2019 CDR3, where sequences are randomly assigned into either of the two populations with a bias that depends on their CDR3 length. The density scatter plot shows a clear anti-correlation between the selection energies learnt from these two populations. Yet, sequence classification is imprecise, as quantified by the low AUC = 0.57. The parameters chosen for the filter in this example are $L_{0}=13$ and $h=2$. (B) Synthetic example of soft discrimination between \u2018low\u2019 and \u2018high hydrophobic\u2019 CDR3 showing clear anti-correlation between these two populations. Sequence classification is again poor AUC = 0.60. The parameters chosen for the filter on the \u2018hydrophobic index\u2019 $u$ in this example are $u_{0}\u22430.2$ (the median value over a set of $P_{gen}$-distributed sequences) and $h=1$. (C) The differential enrichment parameter of each TCR calculated according to $P_{DP\u2062dbn}$ model is plotted against the energy calculated against the $P_{DP\u2062pos}$ model. To correct for bias imposed by the TCR\u03b1 generation process, the DP pre energy, which encodes background selection common to both stages, is subtracted. The black line is the direction of the major eigenvector of the dots moments matrix. The value $r$ reported in each plot is the Pearson\u2019s correlation coefficient (see Materials and Methods). (D) Differential enrichment parameter according to CD4 spl and CD8 spl models, relative to DP pos. (E) Differential enrichment parameter according to CD4 spl and CD4 apo models, relative to DP pos. (F) Differential enrichment parameter according to CD8 spl and CD8 apo models, relative to DP pos. Source code available at https://github.com/statbiophys/thymic_development_2022/blob/main/fig5.ipynb.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81622/elife-81622-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The differential enrichement parameters assigned by the stage specific selection models relative to the the preceding stage (i.e. energy differences from DP pre or DP pos). Each dot represents one of the 3.106 synthetic sequences generated according to the generation model $P_{gen}$, here shown according to a dot density plot. Each figure uses the same set of synthetic sequences. (A) Density scatterplots of the energy differences between the energies of the TCR\u03b1 models and the enregy of DP pre. (B) Density scatterplots for TCR\u03b1 where DP pos energy is subtracted instead. (C) Density scatterplots for TCR\u03b2 where DP pre energy is subtracted. (D) Density scatterplots for TCR\u03b2 where DP pos energy is subtracted.\n\nWe extended this approach to look for relationships between enrichment strengths for TCRs at different developmental stages. Since all cells pass through a preceding selection stage, we must consider it as a common background distribution for all the successive thymic stages. We therefore considered the differential enrichment parameter $E_{stage}-E_{pre-stage}$, a linear operator which predicts whether a sequence is more or less likely to be present in a particular developmental stage as compared to the previous stage. We generated a set of sequences using the generation model $P_{gen}$ (thus with no selection bias), and then computed differential enrichment parameters for each TCR according to all the stage specific models. The full set of pairwise correlations between enrichment values for the different populations relative to $P_{DP\u2062pre}$ are shown in (Figure 5\u2014figure supplement 1A for TCR\u03b1 and Figure 5\u2014figure supplement 1C for TCR\u03b2). The DP dbn repertoire showed a narrow distribution of values, which was uncorrelated to any other subset, in particular to DP pos (Figure 5C). This would be consistent with the DP dbn repertoire containing a random sample of the DP pre repertoire, unrelated to its TCR sequence. To check if the signal coming from DP pos stage is the principal cause of the high correlation between the single positive stages, we repeated the analysis for CD4 and CD8 using $P_{DP\u2062pos}$ as the common background distribution (the full set of scatterplots for TCR\u03b1 is shown in Figure 5\u2014figure supplement 1B, in Figure 5\u2014figure supplement 1D for TCR\u03b2). There was therefore no evidence of selection pressure operating on TCR sequence to distinguish these two populations. The correlation between the CD4+ and CD8+ subsets was negligible ($r\u223c0$), suggesting that the selection pressures operating on the two populations are distinct (Figure 5D). The spleen SP and the thymic apo populations were also highly correlated for both CD4+ and CD8+ cells ($r=0.79$ for CD4 spl vs CD4 apo, in Figure 5E; $r=0.66$ for CD8 spl vs CD8 apo, in Figure 5F). Similar results are obtained for the sequences of the \u03b2 chain (Figure 5\u2014figure supplement 1C D). In contrast to the examples illustrated above, most plots showed a positive correlation between enrichment values for two models. Thus a common dominant selection process is driving the repertoire shift between the DP pos and all subsequent stages, which dominates the impact of individual stage-specific selection processes. In summary, the TCR enrichment value distributions differ between different thymic populations, but do not show evidence of dominant exclusive sequence-based selection operating at any step of the selection process.\n\n## Discussion\n\nThymic selection is often portrayed as a simple discrimination process that eliminates TCRs capable of strongly binding any self-peptide, while promoting TCRs that bind them weakly. However, this simple picture has been challenged and the fidelity of the negative selection process and the proportion of the self-repertoire which can effectively be scanned by each individual thymocyte during the window of negative selection remains incompletely understood (Yu et al., 2015; Gallegos and Bevan, 2006). If significant number of T cells escape negative selection and enter the peripheral repertoire, no sequence feature will unambiguously distinguish TCRs from pre and post-selection repertoires. Many efforts have been made to connect TCR sequences to peptide recognition (Weber et al., 2021; Montemurro et al., 2021; Isacchini et al., 2021). However, these approaches cannot yet be used to define the target peptidome of entire repertoires. Here we take the complementary approach, by looking for TCR sequence features that are linked to thymic selection.\n\nAlthough there has been a lot of work on understanding and modeling thymic development (Yates, 2014; Robert et al., 2021) our study presents the first comprehensive analysis of TCR repertoire of different developmental stages of thymic maturation. By incorporating a reporter for the activation marker Nur77, which is activated during thymic selection, and an early marker of apoptosis, Annexin V, we were able to enrich for identifying subpopulations during the process of positive or negative selection. Although this more sophisticated strategy in principal allows the unbiased isolation of the major stages of thymic selection, some limitations remain. For example, the time interval during which negatively selected cells survive after they received their instruction to go into apoptosis may depend on signal strength. If strong TCR singal strength translates into short subsequent lifetime, then the AnnexinV+ cells sorted may be enriched for cells receiving a rather weaker negative signal. We examined the repertoires from two perspectives. In the first part of the paper, we compare statistical properties of the sequences of the repertoires using features of different dimensionalities, which include V gene, J gene and CDR3 length frequency distributions, and individual CDR3 sequences represented as sparse {0,1} binary vectors. The analysis incorporated both coarse-grained (V, J and CDR3 length) and fine-grained (individual CDR3 sequence) features, and the results were remarkably consistent. No single feature adequately discriminated between any pair of repertoires. Combination of features when averaged across a repertoire did show subtle but reproducible differences between repertoires, which could be used to discriminate between subpopulations using both unsupervised (PCA) and supervised (logistic regression) analysis. Furthermore, the difference between these statistical parameters captured the known developmental trajectory of thymic development, illustrated schematically in Figure 1D. Interestingly, the smallest distances observed were between mature CD4 or CD8 cells, and their thymic SP negatively selected (apo) counterparts. This suggests that negative selection of single positives is only weakly associated with the sequence properties of single TCRs, or at least single chains. It is in principle possible that larger differences exist in the paired \u03b1-\u03b2 repertoires, which would not be detectable in either the alpha or beta repertoires alone, but previous work on the functional alpha-beta repertoire has suggested that pairing was largely random, with weak associations between some germline genes (Grigaityte et al., 2017; Dupic et al., 2019).\n\nAn additional possibility which must be considered is that Annexin V staining does not exclusively capture the negatively selected population, but also identifies cells which were damaged during the preparation. Contamination of the AnnexinV+ population by these damaged or dying cells will weaken the selection signature observed, although the fact we do manage to discriminate between the apo and spleen subpopulations (Figure 3A) indicates that these differences, however small, do exist. Conversely, cells marked for deletion may not have the time to express Annexin V, so that the DPpos subset may contain cells that are being negatively selected against, in addition to cells that are being positively selected (Stritesky et al., 2013).\n\nA limitation of our sorting strategy is that we do not identify Treg from conventional CD4+ T cells. It has been suggested that regulatory T cells (Tregs), which are more auto-reactive and should thus bear the same marks as the cells that fail negative selection, have distinctive TCR features, notably the presence of hydrophobic residues at key positions (Stadinski et al., 2016; Daley et al., 2019). TCR scores based on more detailed features than hydrophobicity have been proposed (Isacchini et al., 2021; Lagattuta et al., 2022). We note that these scores are statistical and do not classify individual sequences. Consistent with these previous results, we can project our model parameters to build a single hydrophobicity index, which we observe to be significantly increased in positively selected cells (DP pos) versus DP pre, and decreased in single positive sets (Figure 4\u2014figure supplement 8A, B). Beyond hydrophobicity, it remains an open question whether the features that drive Treg fate are the same that drive negative selection.\n\nAlthough the statistical properties of the repertoires differed between subpopulations, it was not possible to classify individual TCRs at high accuracy. As discussed above, this may in part be due to the fact that the populations we define only imperfectly correlate with their fate and self-reactivity. However, the differences between CD4+ and CD8+repertoires, which are much less likely to be affected by issues of functional or physical cross-contamination, are also seen only at a statistical population level, and not an individual TCR sequence level. Learning the collective properties of at least a few dozen TCRs was required in order to achieve good discrimination between repertoires.\n\nThe statistical population-level differences between populations of thymocytes and mature T cells which we observe is reminiscent of previous models emphasising the importance of collective, rather than individual T cell behavior. Butler et al., 2013 proposed that a minimum number of T cells must collectively recognize a peptide to trigger a response, proposing quorum sensing as a mechanistic explanation of this collective decision making. Recent experiments have confirmed that quorum sensing between TCRs can occur, mediated via cytokine signaling (Polonsky et al., 2018), and estimating a minimum quorum size of activated T cells to be 30. Our results suggest that thymic selection imposes only a rather weak selective pressure on the repertoire, which is consistent with Butler et al., 2013 \u2019s hypothesis that most self-peptides are not screened by TCR during negative selection. Our results are consistent with their model, in which even a subtle depletion, rather than complete elimination of non-self TCRs, may still translate into robust self/non-self discrimination in populations of reactive TCRs. Self versus foreign peptide discrimination by TCR is somewhat the conjugate task of self-reactive versus a non self-reactive T cell discrimination during negative selection. While the performance of the two tasks cannot be directly compared at first sight, they are related in that both are impaired by a factor $(1-f)$ due to partial screening of self peptides, where $f$ is the fraction of self-peptides that are presented during thymic developement. The common point is that even when $f$ is small, the law of large numbers can rescue the discrimination task when there are multiple observations. In Materials and Methods, we argue using the model of Butler et al., 2013 how the idealized performance of repertoire discrimination using multiple ($m$) TCR (akin to the task of Figure 3B) may be compared to the task of telling self from foreign peptides in the periphery, when the number of T cells specific to one particular peptide and recruited to the site of infection is $m\\timesn\u00af$, where $n\u00af$ is the average number of self-peptides recognized by a random TCR. While those numbers cannot be applied directly to the results of Figure 3B, which are based on an imperfect classifier from a single chain, they give a sense of how the same principle of discrimination apply to both cases.\n\nIn the second part of the study we explore in more detail whether we can discover any evidence that thymic selection depends on specific sequence motifs (i.e. a strong correlative structure between CDR3 amino acids). For this purpose, we build on our previous work which have established a framework for the development of generative statistical models of repertoire generation, based firmly on a mechanistic understanding of TCR generation and selection. Specifically, we construct models which incorporate only linear combinations of CDR3 sequences to capture the selective process which can transform one repertoire into another. These models produce an \u2018enrichment factor\u2019 for each TCR which estimates its relative likelihood of being in a particular stage-specific population. Intuitively, one can consider these factors as capturing the probable enrichment or depletion of a TCR with a particular sequence when comparing two repertoires. We demonstrate that these linear models effectively capture the progressive decrease in repertoire diversity which we observe in the preselected DP to the SP transition. They also effectively capture the known developmental relationships between the thymic subpopulations. Thus we find no evidence that complex non-linear amino acid sequence interactions are required to explain the observed changes in repertoire observed in our data. We also compared the distributions of enrichment factors between populations. We demonstrate that, contrary to the predictions of a strong binary selection model, we do not observe any negative correlation between enrichment factor distributions between selected and non-selected repertoires. Instead, we observe a set of positive correlations, revealing a dominant conserved selection process spanning the developmental stages between pre-selection DP and mature SP. Consistent with the clustering data discussed above, we find strong correlation between the enrichment factor distributions of mature SP and thymic negatively selected population, and no evidence of binary selection between these two populations.\n\nIn conclusion, we report a comprehensive analysis of the TCR repertoire at various stages of thymic development. We then combine data-driven and model-based analysis of these repertoires. Our conclusions are incompatible with a model of thymic developments which involves a sequence of clear-cut binary selection processes, based on TCR sequence features. Rather, our data suggest a probabilistic fuzzy decision making process at each selection step. We propose that this model is compatible with robust self/non-self discrimination, if T cell responses to antigen are governed by collective quorum based decision making. Further experimental and theoretical work is required to test these hypotheses, which have fundamental implications for strategies to modulate the immune response for prophylaxis or therapy of human disease.\n\n## Materials and methods\n\n### Animals\n\nThe experiment was carried out using three 6-week-old male inbred Nur77-GFP/Foxp3-mCherry (C57BL/6 background) (Moran et al., 2011). The cross was bred and maintained at the Weizmann institute. This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved institutional animal care and use committee (IACUC) protocols (#21661115\u20132) of the Weizmann Institute of Science. The protocol was approved by the Committee on the Ethics of Animal Experiments of the Weizmann Institute of Science. Every effort was made to minimize suffering.\n\n### Sample preparation and T cell isolation\n\nThymocytes and splenocytes were isolated from Nur77-GFP/Foxp3-mCherry 6-week-old mice. Erythrocytes were removed by hypotonic lysis in ammonium chloride. Thymocytes were stained with fluorescent antibodies, and sorted using a flow cytometer as described below. Splenic CD4 and CD8 cells were purified in two steps: (1) CD4+ positive selection (CD4 (L3T4) MicroBeads, mouse, # 130-117-043, Miltenyi) to generate the \u2018CD4 spl\u2019 samples (2) the negative cells fraction were further selected for the CD8+ positive cells (CD8a (Ly-2) MicroBeads, mouse, # 130-117-044, Miltenyi Biotec) to generate \u2018CD8 spl\u2019 samples.\n\n### Flow cytometry analysis and cells sorting\n\nThe following fluorochrome-labeled mouse antibodies were used according to the manufacturers\u2019 protocols: PerCP/Cy5.5 anti-CD4, PB anti-CD8, PE/cy7 anti-CD3, APC annexinV (Biolegend). UV LIVE/DEAD (ThermoFisher Scientific, # L23105). Labelled cells were sorted on a SORP-FACS-AriaII using a 70 $\u00b5\u2062m$ nozzle to 5 populations (see Table 1). Cell counts are reported in Supplementary file 2. Cells were analyzed using FlowJo (Tree Star) software.\n\n**Table 1.**\n Cell sorting based on fluorochrome-labeled mouse antibodies.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample\\Marker</th>\n      <th>CD4</th>\n      <th>CD8</th>\n      <th>CD3</th>\n      <th>AnnexinV</th>\n      <th>Nur77</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DP pre</td>\n      <td>+</td>\n      <td>+</td>\n      <td>+</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>DP pos</td>\n      <td>+</td>\n      <td>+</td>\n      <td>+</td>\n      <td>-</td>\n      <td>+</td>\n    </tr>\n    <tr>\n      <td>DP dbn</td>\n      <td>+</td>\n      <td>+</td>\n      <td>+</td>\n      <td>+</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>CD4 apo</td>\n      <td>+</td>\n      <td>-</td>\n      <td>+</td>\n      <td>+</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CD8 apo</td>\n      <td>-</td>\n      <td>+</td>\n      <td>+</td>\n      <td>+</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Library preparation for TCR-seq\n\nAll libraries in this work were prepared according to the published method (Oakes et al., 2017), with minor adaptations as described below. Briefly, total RNA was extracted from each of the seven populations using RNeasy Micro Kit (# 74004, Qiagen) and cleaned from excess DNA with DNAse 1 enzyme (# M6101, Promega). RNA samples were reverse transcribed to cDNA (SuperScript III, # 12574026, Invitrogen) using primers for the mouse \u03b1 chain (mAlpha_RC2) and for the mouse \u03b2 chain (mBeta_RC2) (see Supplementary file 1). Following reverse transcription the samples were purified on minielute spin columns (# 28004, QIAGEN). The cDNA was ligated to an oligonucleotide containing a unique 12 basepair molecular identifier (UMI) (6 N_I8.1_6 N_I8.1_SP2, see Supplementary file 1) using T4 RNA ligase (M0204S, NEB). Ligation products were purified using Agencourt AMPure XP beads (# A63881, BeckmanCoulter). Next, three rounds of extension PCR were executed (using KAPA HiFi DNA Polymerase, KAPA Biosystems) to add illumina sequencing adaptors and Illumina sample indices for multiplex sequencing (see Supplementary file 2). The thermal cycler parameters are an initial denaturation step (3 min at 95 \u00b0C) followed by cycles of denaturation (98 \u00b0C for 20 s), annealing (61 \u00b0C for 15 s), and extension 72 \u00b0C for 30 s. The final extension step was at 72 \u00b0C for 5 min. The lid was maintained at 105 \u00b0C. After the first round PCR (5 cycles), PCR products were purified using Agencourt AMPure XP beads and split in two, and \u03b1 and \u03b2 TCR genes were processed separately in subsequent steps. After the second PCR (8 cycles), PCR products were again purified using Agencourt AMPure XP beads. The final amplification using the adapter sequences P5 and P7 were carried out on a real-time qPCR machine, and the amplification was tracked by the incorporation of SYBR green. The cycler was stopped manually when the fluorescent signal reached a predetermined threshold, thus preventing overamplification.\n\nThe final library concentration was measured using Qubit Fluorometric Quantification (ThermoFisher Scientific) and the presence of the correct 600\u2013700 bp product confirmed by electrophoresis on a High Sensitivity D1000 ScreenTape cassette using a 4200 TapeStation System (Agilent). Multiple samples were pooled in equal molarity, and then sequenced using NextSeq 550 (200 bp forward read, 100 bp reverse) (Illumina).\n\n### Pre-processing and error correction for raw reads\n\nData were processed using an in-house pipeline, coded in R. First, UMI sequences were transferred from read 2 to read 1. Trimmomatic was used to filter out the raw reads containing bases with Q-value \u2264 20 and trim reads containing adaptors sequences (Bolger et al., 2014). The remaining reads were separated according to their barcodes and reads containing the constant region for \u03b1 or \u03b2 chain primers sequences were filtered (CAGCAGGTTCTGGGTTCTGGATG / TGGGTGGAGTCACATTTCTCAGATCCT \u03b1 and \u03b2 chain, respectively), allowing up to three mismatches. To correct for possible sequence errors, we cluster the sequences UMIs\u2019 in two steps; (1) The UMIs with the highest frequency are grouped within a Levenshtein distance of 1 (Levenshtein, 1966). (2) Out of these sequences, CDR3AA sequences (starting from the most frequent sequence in a group) were clustered using a Hamming distance threshold of 4 (Hamming, 1950). Finally, the UMI of each CDR3 sequence was counted.\n\n### Annotation and generation model\n\nFrom the raw nucleotide reads, we performed a preliminary annotation using the python module PyIR (version 1.3.0) (Soto et al., 2020), which provides a wrapper and parser of the open source software IgBlast (Ye et al., 2013). We then separated the productive clonotypes from the out of frame reads and/or reads containing stop codons. We define a clonotype as TCRs sharing V genes, J genes, and the same CDR3 nucleotide sequence. If different reads are annotated as the same clonotype in the same dataset, only the read with highest UMI counts is considered.\n\nFor our models, we use a reduced set of genes from the IMGT free online repository (Lefranc et al., 2015) in order to have a single allele per gene, preferring functional alleles to open reading frame or pseudo genes. A further reduction is done for the V genes of the \u03b1 chain, clustering to a single representative all of the those genes that result indistinguishable in the region from the maximum observed V offset for the annotation to the conserved cysteine. Two genes are said to be indistinguishable if the Hamming distance (Hamming, 1950) between the considered regions is equal to 0. For each TRAV cluster, we choose as the representative the most frequent gene in the preliminary annotation. In this way, we obtain 76 V genes and 51 J genes for the \u03b1 chain, 26 V genes, 2 D genes and 14 J genes for the \u03b2 chain.\n\nIn order to infer a generation model, we use the open source software IGoR (Marcou et al., 2018) on all out-of-frame clonotypes pooled from all maturation stages of all mice. The generation model associates to each \u03b1 (\u03b2) read a probability $P_{gen}$ of being generated through the VJ (VDJ) recombination process. After learning a generation model, we annotate the reads using the most probable alignment scenario using the IGoR software, as the clonotype (V, J gene choice, CDR3 nucleotide sequence) with the highest $P_{gen}$ among all possible recombination scenarios.\n\nThe PCA was computed in R (version 3.6.0) using the function \"PCA\" from the FactoMineR package (version 2.4).\n\n### Statistical classification\n\nThe features are assigned to each \u03b1 chain as a binary vector $\\sigma\u2192$, where each entry is equal to 1 if the feature is observed, 0 otherwise. In this study the set of features is encoded using the \u2018SoniaLeftposRightpos\u2019 class (from the Python package Sonia version 0.0.45) which provides 5033 features: 30 for the CDR3 amino acid lengths, 25 left to right positions for each of the 20 amino acids (500 features), 25 right to left positions (500), the joint V/J gene usage (76\u00d751 = 3876) and the independent usage (76+51 = 127). Analogously for the \u03b2 we obtain 1434 features (without considering D genes).\n\nTo learn the models for the statistical classification of two stages, we first remove all sequences that share the same features between the two sets (i.e. same amino acid CDR3, V and J gene). Then, we balance the size of the sets sub-sampling the larger one so that its size does not exceed 25% of the size of the smaller. Each of the resulting sets is divided into a train and a test set by a ratio 70%/30% (\u2018StratifiedShuffleSplit\u2019, module \u2018model_selection\u2019 from the Python package scikit-learn, version 0.24.2). The classifiers are learned with linear models, defined by a single layer with binary cross entropy as a loss function, binary accuracy as metrics, a sigmoid as activation function, coded using the \u2018keras\u2019 module from the Python package tensorflow (version 2.4.1). We obtained similar performance for the classification task by learning with a random forest algorithm as provided by the function \u2018RandomForestModel\u2019 in the module \u2018keras\u2019 from the package tensorflow_decision_forests (version 0.2.4).\n\n### Selection model\n\nTo learn a $P_{stage}$ selection model for each maturation stage, we pooled together the annotated sequences from all mice for the given maturation stage, discarding all clonotypes annotated with non-functional and pseudo genes. We learn a selection model using the open source software Sonia for each maturation stage. Sonia performs a linear regression over the features of the sequences in the dataset to infer the enrichment ratio between the maturation specific dataset and the generation model. The feature choice for the enrichment model is similar, except for the fact that only independent gene usage is considered, reducing features to 1157 for \u03b1 chain (1070 for \u03b2 chain). The probability of observing a sequence in a stage is modeled as\n\n$$\nP_{stage}\u2062(\\sigma\u2192)=\\frac{1}{Z}\u2062e^{-E_{stage}\u2062(\\sigma\u2192)}\u2062P_{gen}\u2062(\\sigma\u2192)\n$$\n\nwhere $Z$ is a normalization factor and the energy $E_{stage}\u2062(\\sigma\u2192)$ for a sequence showing a set of features $\u2131\u2062(\\sigma\u2192)$ is defined as\n\n$$\nE_{stage}(\\sigma\u2192)=\\sumf\\inF(\\sigma\u2192)\u03f5_{stage}^{(f)}(\\sigma\u2192)\n$$\n\nHere $\u03f5^{(f)}$ is a weight associated to the feature $f$ and is learnt from data. To look at specific enhanced features between stages $a$ and $b$ one can obtain the average weights difference from the respective $P_{stage}$ models as\n\n$$\n\u27e8\u03f5_{a}^{(f)}-\u03f5_{b}^{(f)}\u27e9=\\frac{p_{a}^{(f)}+p_{b}^{(f)}}{2}\u22c5(\u03f5_{a}^{(f)}-\u03f5_{b}^{(f)})\n$$\n\nwhere $p_{stage}^{(f)}$ is the marginal associated by the model to the feature.\n\nThe limited amount of clonotypes for certain maturation stages precludes using deep neural network based selection models, although we do not expect the conclusions to change with the DNN SoNNia model Isacchini et al., 2021.\n\n### Hydrophobicity score\n\nTo study the hydrophobicity increase with respect to the generation, we define a stage-wide score as\n\n$$\nU=\\suma\\inhydrox\\inCDR3cr\u03f5^{(a|x)}\u22c5p_{gen}^{(a|x)}\n$$\n\nwhere $\u03f5^{(a|x)}$ is the weight associated by the model to the amino acid $a$ at position $x$; the marginal $p_{gen}^{(a|x)}$ is obtained by the generation model on the same feature (see previous sections). The sum runs over the hydrophobic amino acids CFILMWY, following the definition from Lagattuta et al., 2022, considering just the positions of our model which correspond to the central region p108-p114 of the CDR3 in IMGT convention (model positions (4:10) from the left, and, (\u201311:\u20135) from the right). We also define an index $u$ for hydrophobicity which can now be associated to each sequence as follow\n\n$$\nu=\\suma\\inhydrox\\inCDR3cr\\frac{1}{L}\n$$\n\nthat is the number of hydrophobic residues found in the central region (same choices as above), normalized by the CDR3 length $L$.\n\n### n-gram Shannon entropy estimation\n\nAs a diversity measure we consider the Shannon entropy defined as:\n\n$$\nS=-\\sumip\u2062(i)\u2062log_{2}\u2061p\u2062(i)\n$$\n\nwhere $p\u2062(i)$ is the probability of finding a clonotype in the data. Since $n$-grams are sampled from $20^{n}$ possible motifs, undersampling could bias a naive estimation of the entropy. We overcome this bias by estimating the Shannon entropy using the Nemenman-Shafee-Bialek (NSB) estimator (Nemenman et al., 2002). The NSB estimator is computationally tractable and calculates an estimation error. We implement the entropy and variance estimators as given in Archer et al., 2014. We verified the NSB estimators better performance for our datasets compared to other non-parametric estimators (Figure 4\u2014figure supplement 1A, B), consistently with previous reports (Archer et al., 2014). To check for convergence we subsample the clonotypes in the dataset at increasing sizes and estimate the entropy for each sub-sample (Figure 4\u2014figure supplement 2). Convergence sets a limit legnth of $n=4$ due to sample size constraints of the smallest dataset.\n\n### Full model Shannon entropy estimation\n\nThe Shannon entropy in Equation 6 associated to the full $p=P_{stage}(\\sigma\u2192)$ model requires summing over all possible clonotypes $i=\\sigma\u2192$. Practically we evaluate the entropy by producing synthetic sequences according to the selection model $P_{stage}$ and averaging the value of $log_{2}\u2061P_{stage}$.\n\n$$\nS(P_{stage})\u2243\\frac{1}{N}\\sumk=1Nlog_{2}\u2061P_{stage}(\\sigma\u2192_{k}^{\u2217})\n$$\n\nwith clonotypes $\\sigma\u2192_{k}^{*}$ sampled from the $P_{stage}$ distribution.\n\nBecause of sequencing errors, the entropy of $n$-grams is systematically overestimated in the data. To estimate and correct for this bias, we measured the error rate from the data, provided as a byproduct of the IGoR training procedure (Marcou et al., 2018). We used this rate to produce synthetic sequences with simulated sequencing errors. The difference in $n$-gram entropy between error-prone and error-free sequences was then applied as a subtractive correction factor to the data.\n\n### n-gram Jensen-Shannon divergence\n\nTo quantify the distance between two distributions pa and pb defined on the same support, we use the symmetric Jensen-Shannon divergence JSD:\n\n$$\nJSD(p_{a},p_{b})=\\frac{1}{2}\\sumip_{a}(i)log_{2}\u2061\\frac{2p_{a}(i)}{p_{a}(i)+p_{b}(i)}+(a\u2194b)\n$$\n\nwhere the sum runs over all possible observables $i$ and the term $(a\u2194b)$ corresponds to the same expression in the first one with $a$ and $b$ inverted. The Jensen-Shannon divergence is bounded between 0 and 1 bits, with $JSD=0$ bits if the distributions are identical and a maximal difference of $JSD=1$ bit. We use $JSD$ to asses the divergence between $n$-gram distributions and between selection models.\n\n### Full model Jensen-Shannon divergence\n\nTo compare selection models of complete clonotypes at two maturation stages, the divergence between the $P_{stage}$ distribution of model $a$ and the model $b$ is:\n\n$$\nJSD(P_{a},P_{b})\u2243\\frac{1}{2N}\\sumk=1Nlog_{2}\u2061\\frac{2e^{\u2212E_{a}(\\sigma\u2192_{k}^{a})}}{e^{\u2212E_{a}(\\sigma\u2192_{k}^{a})}+e^{\u2212E_{b}(\\sigma\u2192_{k}^{a})}}+(a\u2194b)\n$$\n\nwhere the clonotypes $\\sigma\u2192_{k}^{a}$ are sampled from the $P_{a}$ distribution. In Equation 9, we used the fact that a given sequence has the same background generation probability $P_{gen}$ in both selection models.\n\n### Discrimination in the thymus vs discrimination in the periphery\n\nHere we show a formal link between discrimation of negatively selected vs non-negatively selected TCR on the one hand, and foreign vs self-peptide recognition on the other.\n\nWe start by considering (negative) thymic selection. Following Butler et al., 2013, we assume that a random TCR will recognize any peptide with probability $p$. Then the number of recognized self-peptides $n$ by a random TCR is distributed according to a Poisson law of mean $n\u00af=p\u2062N$, where $N$ is the number of self-peptides, $P\u2062(n)=Poiss\u2062[p\u2062N]\u2062(n)\u2261e^{-p\u2062N}\u2062(p\u2062N)^{n}/n!$.\n\nIf each TCR only screens $M=f\u2062N$ self-peptides, with $f<1$, then the probability of passing selection (and ending up in spleen) is $P\u2062(spleen|n)=(1-n/N)^{M}\u2248e^{-n\u2062f}$, and $P\u2062(apo|n)=1-e^{-n\u2062f}$ for the probability of ending up in apo (as apostosis, i.e. single-positive cells expressing Annexin V as in our experiments).\n\nWe assume that the discriminator of apo vs spleen single positives is perfect, in the sense it can perfectly deduce $n$ from the TCR sequence. In this idealized case, discrimination errors are entirely attributable to the partial screening of self-peptides. Using Bayes\u2019 law, one can show that the distributions of $n$ in spleen and apo read:\n\n$$\nP(n|spleen)=\\frac{P(spleen|n)P(n)}{P(spleen)}=Poiss[pN(1\u2212f)](n),\n$$\n\n\n\n$$\nP\u2062(n|apo)=\\frac{P\u2062(apo|n)\u2062P\u2062(n)}{P\u2062(apo)}=\\frac{(1-e^{-n\u2062M/N})\u2062(p\u2062N)^{n}\u2062e^{-p\u2062N}}{n!\u2062(1-e^{-p\u2062M})}\u2248\\frac{n\u2062f}{p\u2062N\u2062f}\u2062\\frac{(p\u2062N)^{n}\u2062e^{-p\u2062N}}{n!}=Poiss\u2062[p\u2062N]\u2062(n-1),\n$$\n\nwhere the first equation results from direct algebra, and the second is obtained in the limit of small $f$. The AUC of the discrimination task is then given by the probability that drawing a random number from a Poisson of mean $n\u00af\u2062(1-f)$ yields a smaller number than drawing a random number from a Poisson of mean $n\u00af$, and adding 1 to it. If we now use the observation of $m$ TCRs from the same subset (apo or spleen) instead of a single one, the task becomes easier: We can form a collective score by adding up the $n$\u2019s of each TCR (since they are independent draws from either the apo or spleen ensembles) so that the two Poisson distributions, of respective means $m\u2062n\u00af\u2062(1-f)$ and $m\u2062n\u00af$, become better separated. This is qualitatively the result of Figure 3B, which is based on the learned score, rather than on an idealized one.\n\nWe now turn to the case of self vs foreign peptide discrimination by a group of $R$ T cells recruited to a site of infection. If the peptide is from the self, then the probability for a given circulating TCR to recognize it is $p\u2062(1-f)$ (Butler et al., 2013). Then the number of specific TCR is Poisson distributed with mean $p\u2062(1-f)\u2062R$. If the peptide is foreign, that number is also Poisson distributed, but with mean $p\u2062R$. Again, the AUC of the discrimination task is given by the probability of drawing a smaller number from the former distribution than from the latter. This task is expected to be at least as hard as that of apo vs spleen TCR discrimination when $p\u2062R\u2248m\u2062n\u00af$, where $p\u2062R$ is the expected number of TCR specific to the foreign antigen.\n\n### Other software for statistical analysis\n\nThe Jensen-Shannon dendrograms linkage is computed by the Ward method as provided by the function \u2018linkage\u2019, reordered according to the function \u2018optimal_leaf_ordering\u2019, both from the Python module \u2018cluster.hierarchy\u2019 in scipy package (version 1.7.3). The Pearson correlation coefficient is computed with the Python function \u2018pearsonr\u2019 as contained in the module \u2018stats\u2019 in the scipy package. The coefficient of determination $R^{2}$ is computed with the Python function \u2018r2_score\u2019 as contained in the module \u2018metrics\u2019 in the sklearn package.\n\n### Code availability\n\nAll code for reproducing the figures of this paper can be found at https://github.com/statbiophys/thymic_development_2022, (copy archived at swh:1:rev:ce4966eee8937544d8c97ff956a049fc32d279da; Camaglia, 2022).\n",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "2a74f952-aba7-4820-a7e6-2e039a648615",
+      "submission_id": "4424a0ae-b49b-43fb-8c37-c6f1cf616741",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frederik Graw, https://ror.org/038t36y30 Heidelberg University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81622.sa0](https://doi.org/10.7554/eLife.81622.sa0)\n\nThis paper addresses an important question within adaptive immunity, namely whether the T cell receptor (TCR) repertoire of negatively selected thymocytes shares common features. The authors analyze T cell receptor sequences from mice as they progress through positive selection, CD4/CD8 lineage commitment, and negative selection. Thereby they find small but consistent differences between the repertoires at these selection stages, providing arguments that their findings do not indicate any sequence-specific selection.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Frederik Graw, https://ror.org/038t36y30 Heidelberg University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81622.sa1](https://doi.org/10.7554/eLife.81622.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Population based selection shapes the T cell receptor repertoire during thymic development\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Tadatsugu Taniguchi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAll reviewers appreciated the combination of an interesting data set with sophisticated analytical methods to address the very relevant question of how T cell selection is regulated. However, there is the consensus impression that some of the claims and interpretations are not fully supported by the presented analyses. This also affects the main message of the manuscript put prominently within the title, which is one possible hypothesis, but not the only explanation for the presented observations.\n\nIn the light of the comments, we would be willing to consider a substantially revised version of the manuscript that addresses all the points mentioned by the reviewers, and which will be subject to a re-review. In particular, the revision should address the following main recommendations:\n\nEssential revisions:\n\n1) A careful revision of each of the claims and conclusions. You should discuss/re-consider for each of the analyses the limitations that are associated with the methods and the underlying data, affecting statistical evidence. In particular this relates to the analysis presented in Figure 3 and 5 (see comment reviewer 3), with especially the former being insufficient in supporting the performed interpretations.\n\n2) Replacement of the title and careful restructuring of the text to better match supported conclusions and to motivate the performed analyses (see specific comment reviewer 2).\n\n3) Discussion of the used experimental system (Nur77EGFP/Annexin V) and the possibility to detect possible differences within a data set of the presented size.\n\nPlease also see the detailed comments of the individual reviewers below. As these comments would require substantial changes to the manuscript, partly affecting its central message, please note that a revised manuscript will be subject to a re-review.\n\nReviewer #1 (Recommendations for the authors):\n\n1) The authors mention that they generally pool the read outs from three mice to perform the repertoire comparison, as e.g. based on the n-gram distributions, to increase the statistical power. Despite the reasonable expectation of mice similarity, the questions remains if there might be stronger signals for selection with development stage on an individual level, and the individual signal possibly being masked by the pooled analysis. Looking at Figure S3 with the statistics for the individual mice, there seem to be some (minor) differences in the number of readouts per differentiation step between mice that could affect the analysis. CDR3 length distribution (Figure 2B) and n-gram analysis could be performed on an individual mouse level to provide evidence for the comparability of readouts of individual mice. I assume that e.g. Figure 2B is based on the pooled mouse data. I think it would be helpful to perform some statistical analyses on the level of individual mice to corroborate their similarity and appropriateness for pooling.\n\n2) Another point concerns the fact that \u03b1- and \u03b2-chain are analyzed separately, and not in combination. This could also mask possible signatures as already indicated and discussed by the authors. To which extent do the acquired data allow a combined analysis of \u03b1- and \u03b2-chains with regard to a \"connected selectivity\"?\n\n3) The suitability of n-gram distributions and the specific selection of n for comparison might also be dependent on the actual CDR3 length, i.e. only sequences with a sufficient CDR3-length could contain information for appropriate n-gram comparisons. I assume that the n-gram comparison considered all sequences with a CDR3-length of at least n. I am not an expert and this might be an unreasonable suggestion, but would it make sense to compare the n-gram distribution for one particular CDR3-length (e.g. 12) to determine if there are differences between differentiation steps? I think such an approach would assume that there are differences in selection due to the CDR3-length and n-gram distribution, while the current approach neglects the CDR3-length.\n\nReviewer #2 (Recommendations for the authors):\n\nThe following points should be addressable with edits of the text:\n\n1. The sorting approach should be discussed with pros and cons. A critical question is the lifetime of negatively selected cells after they received their instruction to go into apoptosis. If strong TCR signal strength translates into short subsequent lifetime, then the annexin+ cells sorted may be enriched for cells receiving a rather weaker negative selection signal. This caveat should be discussed. The sorting approach as such is valid as thymocytes destined to die are identified.\n\n2. Kyewski and co-workers have found that 1-3% of thymic epithelial cells robustly present any given peptide they tested (using unrelated peptides from proteins encoded on different chromosomes), sometimes even a higher fraction, 5%; see Pinto et al. PNAS 2013 and references therein. Hence, a thymocyte encountering of the order of 100 mTECs could sample practically the entire self-peptidome. Le Borgne, M. et al. (Ref. 7 in the manuscript) give the actual number scanned as up to 500. Hence, the number of distinct peptides seen by a thymocyte could easily be much higher than the 1-5% of the self-peptidome given by the authors (Le Borgne et al., cited in evidence of this low percentage, do not give such a number, to my knowledge, while Ref. 6 proposes a very interesting theoretical scenario, i.e., if the fraction were so small, selection could still work by quorum sensing, but gives no experimental evidence). Of course, the actual fraction of peptides seen is not clear, as it will depend on the spatial distribution of peptides on mTECs, the path taken by thymocytes, and the sensitivity of recognition. However, the upper limits allowed by the available experimental data appears to be the majority, if not close to 100%, of self-peptides, and these data should be discussed with due balance. Hence my request to adapt this aspect in Introduction, Discussion and Title accordingly.\n\n3. All TCR \u03b1 results should be shown in parallel for \u03b2 (possibly using supplementary Figures, as the authors have done already to a large extent).\n\n4. A point in the Intro not related to the message of the manuscript: \"\u2026 imposes.\u2026 boundaries on the binding energy.\u2026\" The TCR senses also koff, a kinetic property. Beyond a host of indirect evidence, this was demonstrated directly by two optogenetics papers in eLife in 2019 (Yousefi et al.; Tischer and Weiner).\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 I would suggest making explicit which kind of changes to the repertoire this study is designed (or able) to detect, and which kind of changes it cannot detect.\n\n\u2013 Related to the above, the limitations of the study could be more clearly emphasized, and some of the conclusions might be somewhat toned down.\n\n\u2013 The data shown in Figure 3B is misleading, as explained above; the authors should consider removing this analysis entirely but at least the interpretation of these data as some sort of evidence for collective decision-making by T cells should be removed.\n\n\u2013 In Figure 4, is it truly necessary to consider 3-grams? Is the discriminatory power of 3-grams (or shorter k-grams) better than that of the Pstage models and if so, might this indicate overfitting/too high model complexity of the Pstage models?\n\n\u2013 The scenario simulated in Figure 5A might be too different from the one analyzed in Figure 5B to be a meaningful comparison. The general idea of the negative correlation is obviously valid but can be illustrated using a much simpler model (or even just the basic mathematical argument); alternatively, the model could also incorporate common causes of selection to be more useful.\n\n\u2013 Page 1: The ability to discriminate between self and non-self targets \"cannot therefore be inherited\" \u2013 it could be possible that V and J segments themselves evolved to make receptors that are biased towards recognizing non-self targets?\n\n\u2013 Page 2, left: \"cross-reactive to an overwhelming majority of self- peptides.\" \u2013 unclear what this means, surely a single TCR can't recognize a majority of self-peptides?\n\n\u2013 Page 2, left: discussion of the populations. Here it could already been mentioned that the DPpos population might contain cells that still get negatively selected later, as mentioned in the Discussion.\n\n\u2013 Page 2, bottom right: the pooling subtly but importantly changes the meaning of the performed inferential statistics. (What is the experiment repetition in the frequentist framework?)\n\n\u2013 Figure 1: Why was it necessary to learn a new generation model for these sequences rather than use an existing (mouse-based) one?\n\n\u2013 Figure 1: The Annexin V+ populations are small, and the gating looks somewhat arbitrary, which could be mentioned as a limitation.\n\n\u2013 Page 4, bottom left: What about the distribution of N nucleotides rather than the length of the entire sequence?\n\n\u2013 Page 5, left: \"even the smallest AUC are highly significant\" \u2013 this is just a consequence of the large number of sequences and a low p-value does not make a small AUC more important\n\n\u2013 Page 5, left: \"Thus statistical properties of a repertoire can distinguish it from another repertoire, even when the feature distributions of individual TCRs are largely overlapping.\" \u2013 you could mention that this is just the law of large numbers\n\n\u2013 Page 5, top right: NSB entropy estimator \u2013 did this matter for your results?\n\n\u2013 idem \"The maximum possible entropy if all 20 amino acids were used uniformly would be S/n = log2 20 \u223c 4.3 bits.\" \u2013 it is known that amino acid is non-uniform, this is the case for all proteins. A more meaningful baseline would be the entropy for the average frequencies of amino acids\n\n\u2013 Page 6, left: \"there is no evidence that selection at any step involves complex sequence motifs, or amino acid interactions, which would not be captured by the linear model\" \u2013 It is not clear why the presence of such \"motifs\" would be expected in the first place, but there could still be strong selection against TCRs that recognize peptides in certain (ubiquitous) proteins, and this would not necessarily translate to simple \"motifs\" that are readily detectable\n\n\u2013 idem \"validating the hypothesis of linear selection factors\" \u2013 I am not sure if this is meant to imply that such linear selection factors truly drive selection. It would seem more likely that the observed differences are population-level consequences of a selection process that operates in a (stochastic) sequence-specific manner\n\n\u2013 Discussion \"Consistent with these previous results, we can project our model parameters to build a single hydrophobicity index, which we observe to be significantly increased in positively selected cells (DP pos) versus DP pre, and decreased in single positive sets (Figure S21).\" \u2013 this raises the question whether the single hydrophobicity index might already be sufficient to explain the differences seen in the repertoire\n\n\u2013 \"This number is in agreement with our observations (Figure 5B) that \u223c 30 TCRs increases the AUC of correctly classifying these cells as CD4+ spleen vs CD4 apo from \u223c 0.59 to \u223c 0.87.\" \u2013 I think this is not a valid interpretation. First, as noted above, this phenomenon would be observed for any such classification. Second, there is nothing special to an AUC value of 0.87\n\n\u2013 Methods: The Adam optimizer was used for the linear classifiers. Was this necessary (e.g., were the models underspecified) or could a deterministic optimizer have been used?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Population based selection shapes the T cell receptor repertoire during thymic development\" for further consideration by eLife. Your revised article has been evaluated by Tadatsugu Taniguchi (Senior Editor) and a Reviewing Editor. In addition, the previous reviewers have also assessed the submission\n\nYou performed a substantial amount of work to address the previous comments and the manuscript has been substantially improved. However, there are some remaining issues that need to be addressed, as outlined below:\n\nIn particular, the previously identified misinterpretation of \"classification of T cells\" as \"quorum sensing by T cells\" is partly re-inforced by the added changes, especially within the Results section (see comment reviewer 3). We would therefore ask you to carefully revisit the corresponding paragraphs within the results and Discussion section and rephrase where necessary. See also the specific recommendations of the reviewer below.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have done an excellent job of revising the manuscript. I recommend publication as it is.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors have made many changes to the manuscript and added additional findings as well. I think the manuscript has been improved in many places. However, I suspect the revision is not complete. My main criticism had been the interpretation of imperfect classification as evidence for a quorum sensing mechanism. The authors state in their rebuttal letter that they agree with me and that they \"radically rewrote\" the corresponding text. However, the relevant paragraph in the discussion, the one starting with \"Overall, the statistical population-level differences between populations of thymocytes and mature T cells.\u2026\", is entirely unchanged from the previous version. There have been some additional explanations inserted in the Results section, but these are not really correct (i.e. it is said that T cells are \"weak learners\", but the \"learner\" in this context is the classification algorithm built by the authors, not the T cell, which is the instance being classified.) So the same interpretation mistakes are unfortunately still present in the revised version. Perhaps the authors overlooked something.\n",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f7a497e6-d0ef-4086-923f-5a8f82f0700f",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C1",
+      "claim": "Three genetically identical Nur77 reporter mice were sacrificed at the age of 6 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Three genetically identical Nur77 reporter mice were sacrificed at the age of 6 weeks, when thymus development is completed and its cell population is stable (Gray et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number, type, and age of mice used in the experiment, with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "8883e979-756e-41ac-ba02-c4d18f7d4b6f",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C2",
+      "claim": "At 6 weeks of age, thymus development is completed and its cell population is stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Three genetically identical Nur77 reporter mice were sacrificed at the age of 6 weeks, when thymus development is completed and its cell population is stable (Gray et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gray et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "8a93ed6e-3401-467d-b2ee-d23a10f2ad3f",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C3",
+      "claim": "Nur77 is a marker of T cell activation both within the thymus and in the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Nur77 expression, in combination with Annexin V, a marker of cell death, allows us to identify cells that are more likely to pass thymic selection, and those that are most likely not to pass selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that Nur77 is used as a marker of T cell activation, drawing on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "0d6488f0-0cba-4d54-b2b9-00fbe7e9e8ec",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C4",
+      "claim": "Annexin V is a marker of cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Nur77 expression, in combination with Annexin V, a marker of cell death, allows us to identify cells that are more likely to pass thymic selection, and those that are most likely not to pass selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies Annexin V as a marker of cell death.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "28d11141-03f0-43b9-9bc8-28e9267cc025",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C5",
+      "claim": "The CD4+CD8+Annexin V population may still contain some cells which will be negatively selected but have not yet expressed Annexin V.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the CD4+CD8+Annexin V population may still contain some cells which will be negatively selected, but have not yet expressed Annexin V, the overall strategy provides us with a window into the repertoire at various stages of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit acknowledgment of a limitation in the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "4680c99b-63a9-489d-af53-201dde1090b9",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C6",
+      "claim": "TCRs are generated in a stochastic assembly process based on random recombinations of genomic templates and additional non-templated insertions and deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "TCRs are generated in a stochastic assembly process based on random recombinations of genomic templates and additional non-templated insertions and deletions (Hozumi and Tonegawa, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hozumi and Tonegawa, 1976.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "65e27caa-6b6d-47e8-981b-8ab3d21744a8",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C7",
+      "claim": "The ability to discriminate between self and non-self targets cannot be exclusively inherited, but must at least in part be learned afresh in each individual.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to discriminate between self and non-self targets cannot therefore be exclusively inherited, but must at least in part be learned afresh in each individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the stochastic nature of TCR generation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "3e59c56f-8386-4d63-851b-05717227fc26",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C8",
+      "claim": "T cell precursors first produce a \u03b2 chain and if the generated chain is functional, the cell proliferates and an \u03b1 chain is generated.",
+      "claim_type": "EXPLICIT",
+      "source": "T cells precursors first produce a \u03b2 chain and if the generated chain is functional, the cell proliferates and an \u03b1 chain is generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known sequence of TCR chain generation during T cell development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "1b2cccdb-633b-4c9f-b78f-59965e18ad1a",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C9",
+      "claim": "DP TCR are subject to thymic selection, a process that tests receptor binding by presenting them with the organism's own proteins, and eliminates very weak binders (positive selection), but also too strongly self-reactive receptors (negative selection).",
+      "claim_type": "EXPLICIT",
+      "source": "DP TCR are subject to thymic selection, a process that tests receptor binding by presenting them with the organism's own proteins, and eliminates very weak binders (positive selection), but also too strongly self-reactive receptors (negative selection) (Yates, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yates, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "a8f56e0a-46e7-4a60-a2b4-5ddf609c3057",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C10",
+      "claim": "During thymic selection, DP cells differentiate into CD4+ or CD8+ cells by keeping expression of only one of these molecules, which determines their function.",
+      "claim_type": "EXPLICIT",
+      "source": "During thymic selection, DP cells differentiate into CD4+ or CD8+ cells by keeping expression of only one of these molecules, which determines their function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known process of CD4/CD8 lineage commitment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "28ceadaf-3113-4300-9ea0-3a13e8cf8fab",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C11",
+      "claim": "The TCR sequences removed during thymic selection have never been directly observed.",
+      "claim_type": "EXPLICIT",
+      "source": "While this picture is well-established and the maturation trajectory has a well established gene expression signature (Park et al., 2020), the TCR sequences removed during thymic selection, which should be manifested as 'holes' in the repertoire, have never been directly observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a gap in the existing literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "b3b3c71b-9d8c-4c8c-8a45-83920c1c2e2f",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C12",
+      "claim": "Positive and negative selection imposes upper and lower boundaries on the binding energy of the interaction between TCR and self peptide-MHC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive and negative selection imposes upper and lower boundaries on the binding energy of the interaction between TCR and self peptide-MHC complexes (Kosmrlj et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kosmrlj et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "5e6cc6bc-15f7-490b-aef6-9f0627e62e78",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C13",
+      "claim": "Negative selection is known to be leaky.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative selection is known to be leaky (Yu et al., 2015), letting auto-reactive cells differentiate into regulatory cells (Bains et al., 2013; Wing and Sakaguchi, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yu et al., 2015, Bains et al., 2013, and Wing and Sakaguchi, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "7d21ced4-1e25-40e9-8a66-e45004a37a0d",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C14",
+      "claim": "The number of \u03b1 and \u03b2 sequences within each population was highly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "As a quality control of the whole procedure, we showed that the number of \u03b1 and \u03b2 sequences within each population was highly correlated (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "77452eb7-872e-4d3a-83ab-b00d76773edc",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C15",
+      "claim": "The relative fraction of TCR\u03b1 sequences associated with iNKT cells (identified by TRAV11 and TRAJ18 genes) is higher in CD4 than in CD8 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We further verified that the relative fraction of TCR\u03b1 sequences associated with iNKT cells (identified by TRAV11 and TRAJ18 genes [Garner et al., 2018]) is higher in CD4 than in CD8 cells (see Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 1B and a citation to Garner et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "133baff7-17f0-43a5-9832-c1a9dd3e0b4e",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C16",
+      "claim": "Nonproductive TCR owe their survival to the productive gene on the other chromosome and are not affected by selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Since nonproductive TCR owe their survival to the productive gene on the other chromosome, they are not affected by selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanism of allelic exclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "601aa812-7e72-491f-92b8-bf69875f69a7",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C17",
+      "claim": "TRAV usage broadly follows the pattern of the pre-selection model.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAV usage broadly follows the pattern of the pre-selection model (Figure 2A), although SP CD4+ repertoires have a lower proportion of TRAV12-2, and most populations have an increased proportion of TRAV7-2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "1881e3df-a06c-46fb-b087-ff5c2136d957",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C18",
+      "claim": "SP CD4+ repertoires have a lower proportion of TRAV12-2.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAV usage broadly follows the pattern of the pre-selection model (Figure 2A), although SP CD4+ repertoires have a lower proportion of TRAV12-2, and most populations have an increased proportion of TRAV7-2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "28f2e763-f20c-4371-97dd-44499ac407b6",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C19",
+      "claim": "Most populations have an increased proportion of TRAV7-2.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAV usage broadly follows the pattern of the pre-selection model (Figure 2A), although SP CD4+ repertoires have a lower proportion of TRAV12-2, and most populations have an increased proportion of TRAV7-2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "a5f6f975-b947-48b4-a4ff-33d5712878c5",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C20",
+      "claim": "SP CD8+ repertoires have a lower proportion of TRAJ31.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAJ gene usage also broadly agrees with the pre-selection model predictions (Figure 2\u2014figure supplement 2A), although SP CD8+ repertoires have a lower proportion of TRAJ31, SP CD4+ repertoires have an increased proportion of TRAJ27 and TRAJ32 which is underrepresented in all cell types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "9ad74ef2-66b2-48aa-92eb-5be0f4be6755",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C21",
+      "claim": "SP CD4+ repertoires have an increased proportion of TRAJ27.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAJ gene usage also broadly agrees with the pre-selection model predictions (Figure 2\u2014figure supplement 2A), although SP CD8+ repertoires have a lower proportion of TRAJ31, SP CD4+ repertoires have an increased proportion of TRAJ27 and TRAJ32 which is underrepresented in all cell types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "dfa93077-c128-4068-b738-ca7ff4ecc229",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C22",
+      "claim": "TRAJ32 is underrepresented in all cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAJ gene usage also broadly agrees with the pre-selection model predictions (Figure 2\u2014figure supplement 2A), although SP CD8+ repertoires have a lower proportion of TRAJ31, SP CD4+ repertoires have an increased proportion of TRAJ27 and TRAJ32 which is underrepresented in all cell types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "bc8023b3-30fe-4e20-8949-6f41d3b3de38",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C23",
+      "claim": "The biases of the recombination process dominate any effects of selection on V and J region usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the biases of the recombination process dominate any effects of selection on V and J region usage (Figure 2\u2014figure supplement 1A, Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "61c35134-35c7-43a9-adec-3c96b681ad80",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C24",
+      "claim": "CDR3 amino acid length of SP CD4+ and CD8+ has a sharper distribution compared to earlier maturation stages (DP).",
+      "claim_type": "EXPLICIT",
+      "source": "For both chains, CDR3 amino acid length of SP CD4+ and CD8+ has a sharper distribution compared to earlier maturation stages (DP) (see Figure 2B, Figure 2\u2014figure supplement 1B and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "b75e466e-29f0-4b21-9945-770c6de2ad81",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C25",
+      "claim": "The sharper CDR3 length distribution in SP cells has previously been interpreted as a signature of selection due to structural constraints on the pMHC-TCR complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This has previously been interpreted as a signature of selection due to structural constraints on the pMHC-TCR complex (Madi et al., 2017; Lu et al., 2019; Carter et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "40985c76-ab9f-4a20-8080-2b344eb0d44f",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C26",
+      "claim": "PCA on the TRAV gene usage distributions in individual mice at different stages identified clusters of related cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal Component Analysis (PCA) on the TRAV gene usage distributions in individual mice at different stages identified clusters of related cell types (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "26683995-d6a0-49ed-b8ae-1ec5caf4b4aa",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C27",
+      "claim": "The DP Nur77- populations cluster with the pre-selection model.",
+      "claim_type": "EXPLICIT",
+      "source": "The DP Nur77- populations cluster with the pre-selection model, the SP CD4+ and CD8+ populations form distinct clusters, and the DP pos Nur77+ cells, which we hypothesise are cells in the process of positive selection, occupy an intermediate position between these three clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "38ee91d9-468b-45b1-9ca9-2ac309b05d86",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C28",
+      "claim": "The SP CD4+ and CD8+ populations form distinct clusters in PCA of TRAV usage.",
+      "claim_type": "EXPLICIT",
+      "source": "The DP Nur77- populations cluster with the pre-selection model, the SP CD4+ and CD8+ populations form distinct clusters, and the DP pos Nur77+ cells, which we hypothesise are cells in the process of positive selection, occupy an intermediate position between these three clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "50574c74-65d9-4af4-ba96-1b5750c6460b",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C29",
+      "claim": "The DP pos Nur77+ cells occupy an intermediate position between the pre-selection model and SP clusters in PCA.",
+      "claim_type": "EXPLICIT",
+      "source": "The DP Nur77- populations cluster with the pre-selection model, the SP CD4+ and CD8+ populations form distinct clusters, and the DP pos Nur77+ cells, which we hypothesise are cells in the process of positive selection, occupy an intermediate position between these three clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "f734377c-97c9-4f0d-b80a-0e02081dc5d8",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C31",
+      "claim": "The classifier achieved only moderate Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC) scores.",
+      "claim_type": "EXPLICIT",
+      "source": "The classifier achieved only moderate Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC) scores (Figure 3A for TCR\u03b1, and Figure 3\u2014figure supplement 1A for TCR\u03b2), in agreement with previous studies (Emerson et al., 2013; Isacchini et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A and Figure 3\u2014figure supplement 1A, and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "9d320e0b-c469-46fa-8e24-dfc69e573414",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C32",
+      "claim": "Better classification efficiencies can be achieved by combining the predictions from sets of TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, better classification efficiencies can be achieved by combining the predictions from sets of TCRs. For example, multiplying the predictions from 30 TCR sequences from the same repertoire (Figure 3B), we can distinguish CD4 spl and CD4 apo TCR\u03b1 with an AUC score of >0.85; see Figure 3\u2014figure supplement 1B for TCR\u03b2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "77142494-0cf9-4766-9a7b-4c16ba4e9a73",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C33",
+      "claim": "Multiplying the predictions from 30 TCR sequences from the same repertoire can distinguish CD4 spl and CD4 apo TCR\u03b1 with an AUC score of >0.85.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, multiplying the predictions from 30 TCR sequences from the same repertoire (Figure 3B), we can distinguish CD4 spl and CD4 apo TCR\u03b1 with an AUC score of >0.85; see Figure 3\u2014figure supplement 1B for TCR\u03b2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "50238c08-9174-4362-b59c-44e9156abcba",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C35",
+      "claim": "Selection imposes some decrease in repertoire diversity, although this is a much smaller effect than the decrease in diversity imposed by the generation process itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as predicted, selection does impose some decrease in repertoire diversity, although this is a much smaller effect than the decrease in diversity imposed by the generation process itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the entropy measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "08481094-166f-4856-bf6e-cf099e1135bf",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C38",
+      "claim": "A plot of the Jensen-Shannon divergences between all pairwise comparisons largely recapitulated the expected relationships between the subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of the Jensen-Shannon divergences (JSD) between all pairwise comparisons largely recapitulated the expected relationships between the subsets, with DP pre and DP dbn clustering with the pre-selection generative model, while the single positive CD4 and CD8 populations clustered separately, and DP pos have an intermediate position (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "b1eb9616-e7a0-4f35-a1d4-7adf4476bfa0",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C39",
+      "claim": "Hydrophobic residues in the central positions of the CDR3 have been reported to be enriched in the TCRs of regulatory versus conventional T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrophobic residues in the central positions of the CDR3 have been reported to be enriched in the TCRs of regulatory versus conventional T cells (Lagattuta et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lagattuta et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "0c9050ce-5b79-4a9d-ae46-37c3819239c8",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C40",
+      "claim": "Hydrophobicity may function as a proxy for auto-reactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests hydrophobicity may function as a proxy for auto-reactivity, and might be enriched in cells selected for negative selection (Stadinski et al., 2016; Daley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations to Stadinski et al., 2016 and Daley et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "f957287c-f9ef-449b-bd1d-3b90b1a5ef17",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C41",
+      "claim": "There is a clear increase of the hydrophobicity score from DP pre to DP pos.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a clear increase of this score from DP pre to DP pos, suggesting that positive selection introduces a bias toward more hydrophobic TCRs (Figure 4\u2014figure supplement 7 and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "c942a12d-51c3-4fc7-9fa4-d4d044d6f29a",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C42",
+      "claim": "Positive selection introduces a bias toward more hydrophobic TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a clear increase of this score from DP pre to DP pos, suggesting that positive selection introduces a bias toward more hydrophobic TCRs (Figure 4\u2014figure supplement 7 and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observed increase in hydrophobicity score.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "a59c7547-a31e-4580-9ae1-f863f5aaf393",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C43",
+      "claim": "The hydrophobicity score decreases in the single positive sets (CD4 and CD8).",
+      "claim_type": "EXPLICIT",
+      "source": "The score also decreases in the single positive sets (CD4 and CD8), in agreement with the known role of negative selection to prune too strongly self-reactive T cells (Butler et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 7 and a citation to Butler et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "7c3941ca-9c93-424e-b528-b919e14b1343",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C44",
+      "claim": "The DP dbn repertoire showed a narrow distribution of enrichment values, which was uncorrelated to any other subset, in particular to DP pos.",
+      "claim_type": "EXPLICIT",
+      "source": "The DP dbn repertoire showed a narrow distribution of values, which was uncorrelated to any other subset, in particular to DP pos (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "adebd07f-95bc-4525-9fa5-aafbd1796cc6",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C45",
+      "claim": "The DP dbn repertoire contains a random sample of the DP pre repertoire, unrelated to its TCR sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be consistent with the DP dbn repertoire containing a random sample of the DP pre repertoire, unrelated to its TCR sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of correlation observed in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "e90ce727-23c2-4c69-bfe3-42502746dffa",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C49",
+      "claim": "A common dominant selection process is driving the repertoire shift between the DP pos and all subsequent stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus a common dominant selection process is driving the repertoire shift between the DP pos and all subsequent stages, which dominates the impact of individual stage-specific selection processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the positive correlations observed between enrichment values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "f4a112e5-50d8-4a13-bd34-506ff6b262c3",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C50",
+      "claim": "The TCR enrichment value distributions differ between different thymic populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the TCR enrichment value distributions differ between different thymic populations, but do not show evidence of dominant exclusive sequence-based selection operating at any step of the selection process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the enrichment analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "6f1fe837-2334-487b-95bb-85365a552f81",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C51",
+      "claim": "There is no evidence of dominant exclusive sequence-based selection operating at any step of the selection process.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the TCR enrichment value distributions differ between different thymic populations, but do not show evidence of dominant exclusive sequence-based selection operating at any step of the selection process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the enrichment analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "63332ff4-8ccc-444e-8821-62f8f4aacc2c",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C52",
+      "claim": "No single feature adequately discriminated between any pair of repertoires.",
+      "claim_type": "EXPLICIT",
+      "source": "No single feature adequately discriminated between any pair of repertoires.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the statistical analyses performed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "0869826e-d121-447a-bcc7-8a5826b9071b",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C53",
+      "claim": "Combination of features when averaged across a repertoire did show subtle but reproducible differences between repertoires.",
+      "claim_type": "EXPLICIT",
+      "source": "Combination of features when averaged across a repertoire did show subtle but reproducible differences between repertoires, which could be used to discriminate between subpopulations using both unsupervised (PCA) and supervised (logistic regression) analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the PCA and classification analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "62897d4c-57ea-4cff-be79-580e1ae102df",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C54",
+      "claim": "The difference between statistical parameters captured the known developmental trajectory of thymic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the difference between these statistical parameters captured the known developmental trajectory of thymic development, illustrated schematically in Figure 1D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the consistency between the data and known biology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "6c4d28f2-24b4-4e33-b87e-05341f0a31d3",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C55",
+      "claim": "The smallest distances observed were between mature CD4 or CD8 cells, and their thymic SP negatively selected (apo) counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the smallest distances observed were between mature CD4 or CD8 cells, and their thymic SP negatively selected (apo) counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the distance measurements from the analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "82ad380b-1a83-4460-a350-5228d75ca57f",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C56",
+      "claim": "Negative selection of single positives is only weakly associated with the sequence properties of single TCRs, or at least single chains.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that negative selection of single positives is only weakly associated with the sequence properties of single TCRs, or at least single chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the small distances between mature and apo populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "3d4aa43d-6409-4190-8b3c-5acc337bb926",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C57",
+      "claim": "Previous work on the functional alpha-beta repertoire has suggested that pairing was largely random, with weak associations between some germline genes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is in principle possible that larger differences exist in the paired \u03b1-\u03b2 repertoires, which would not be detectable in either the alpha or beta repertoires alone, but previous work on the functional alpha-beta repertoire has suggested that pairing was largely random, with weak associations between some germline genes (Grigaityte et al., 2017; Dupic et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Grigaityte et al., 2017 and Dupic et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "a43e52ca-8550-4a26-922c-67b8177c7f62",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C58",
+      "claim": "Contamination of the AnnexinV+ population by damaged or dying cells will weaken the selection signature observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Contamination of the AnnexinV+ population by these damaged or dying cells will weaken the selection signature observed, although the fact we do manage to discriminate between the apo and spleen subpopulations (Figure 3A) indicates that these differences, however small, do exist.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about a potential limitation of the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "eb6a8e6c-c21d-4f33-9dbe-4bb5046b2d2a",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C59",
+      "claim": "The DPpos subset may contain cells that are being negatively selected against, in addition to cells that are being positively selected.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, cells marked for deletion may not have the time to express Annexin V, so that the DPpos subset may contain cells that are being negatively selected against, in addition to cells that are being positively selected (Stritesky et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a potential limitation, supported by a citation to Stritesky et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "e237ba6a-8229-4954-92bd-b4d64e77d3b3",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C60",
+      "claim": "The statistical population-level differences between populations of thymocytes and mature T cells is reminiscent of previous models emphasising the importance of collective, rather than individual T cell behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The statistical population-level differences between populations of thymocytes and mature T cells which we observe is reminiscent of previous models emphasising the importance of collective, rather than individual T cell behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the results to previous theoretical models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "9e7cffff-e80b-42c1-822a-8d2b8a7a821b",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C61",
+      "claim": "Butler et al., 2013 proposed that a minimum number of T cells must collectively recognize a peptide to trigger a response, proposing quorum sensing as a mechanistic explanation of this collective decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Butler et al., 2013 proposed that a minimum number of T cells must collectively recognize a peptide to trigger a response, proposing quorum sensing as a mechanistic explanation of this collective decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Butler et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "46498563-4a9a-490a-8dba-160348b721a1",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C62",
+      "claim": "Recent experiments have confirmed that quorum sensing between TCRs can occur, mediated via cytokine signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments have confirmed that quorum sensing between TCRs can occur, mediated via cytokine signaling (Polonsky et al., 2018), and estimating a minimum quorum size of activated T cells to be 30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Polonsky et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "759f1167-1e5b-4b8a-845f-1c19c029754e",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C63",
+      "claim": "The minimum quorum size of activated T cells is estimated to be 30.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments have confirmed that quorum sensing between TCRs can occur, mediated via cytokine signaling (Polonsky et al., 2018), and estimating a minimum quorum size of activated T cells to be 30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Polonsky et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "89bde48d-a4b5-4cd4-8f29-040bed5b6355",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C64",
+      "claim": "The results suggest that thymic selection imposes only a rather weak selective pressure on the repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that thymic selection imposes only a rather weak selective pressure on the repertoire, which is consistent with Butler et al., 2013 's hypothesis that most self-peptides are not screened by TCR during negative selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the weak selection signatures observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "98e8220d-1575-486f-9765-6352e6bcb3ec",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C65",
+      "claim": "The results are consistent with Butler et al., 2013's hypothesis that most self-peptides are not screened by TCR during negative selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that thymic selection imposes only a rather weak selective pressure on the repertoire, which is consistent with Butler et al., 2013 's hypothesis that most self-peptides are not screened by TCR during negative selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the results to a previous hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "73d3c99e-63be-453f-a2ca-9bed7a0c3e74",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C66",
+      "claim": "Even a subtle depletion, rather than complete elimination of non-self TCRs, may still translate into robust self/non-self discrimination in populations of reactive TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with their model, in which even a subtle depletion, rather than complete elimination of non-self TCRs, may still translate into robust self/non-self discrimination in populations of reactive TCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the implications of the results for immune function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "4d3adfbd-9c01-40b6-96ed-ede2dc05122d",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C67",
+      "claim": "The results favour a collective or statistical model for T-cell self non-self discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "These results favour a collective or statistical model for T-cell self non-self discrimination, where negative selection biases the repertoire away from self recognition, rather than ensuring lack of self-reactivity at the single-cell level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "dd3377e5-c9c3-4dd5-9c0c-aee657918e54",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C68",
+      "claim": "Negative selection biases the repertoire away from self recognition, rather than ensuring lack of self-reactivity at the single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "These results favour a collective or statistical model for T-cell self non-self discrimination, where negative selection biases the repertoire away from self recognition, rather than ensuring lack of self-reactivity at the single-cell level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "4e9d462b-6662-415c-a98f-2e67da6a9508",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C69",
+      "claim": "We find no evidence of specific sequences or sequence motifs or features that are suppressed by negative selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We find no evidence of specific sequences or sequence motifs or features that are suppressed by negative selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of a negative finding from the analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "c3159954-7dc5-4050-bbcd-b9704c555b53",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C70",
+      "claim": "We find small but significant differences in the TCR repertoire parameters between the maturation stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We find small but significant differences in the TCR repertoire parameters between the maturation stages, which recapitulate known differentiation pathways leading to the CD4+ and CD8+ subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "b5298b0f-e6a7-4746-9f94-1fca4fe46536",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C71",
+      "claim": "The differences in TCR repertoire parameters recapitulate known differentiation pathways leading to the CD4+ and CD8+ subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find small but significant differences in the TCR repertoire parameters between the maturation stages, which recapitulate known differentiation pathways leading to the CD4+ and CD8+ subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the observed differences to known biology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "1490bd8a-96ff-468b-82bd-7d9d79c025e8",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C72",
+      "claim": "These differences can be simulated by simple models of selection acting linearly on the sequence features.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences can be simulated by simple models of selection acting linearly on the sequence features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "d8119c44-21ac-4e25-a42d-dbfbe3f66b8f",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C73",
+      "claim": "The experiment was carried out using three 6-week-old male inbred Nur77-GFP/Foxp3-mCherry (C57BL/6 background) mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiment was carried out using three 6-week-old male inbred Nur77-GFP/Foxp3-mCherry (C57BL/6 background) (Moran et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit description of the experimental animals, with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "44fd4625-e2c2-48ba-9aa8-c728e87d4ae7",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C74",
+      "claim": "All animals were handled according to Weizmann Institute's Animal Care guidelines, in compliance with national and international regulations.",
+      "claim_type": "EXPLICIT",
+      "source": "All animals were handled according to Weizmann Institute's Animal Care guidelines, in compliance with national and international regulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement about ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "ba84de72-57f0-44bb-867a-c7e75b651897",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C75",
+      "claim": "The study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health.",
+      "claim_type": "EXPLICIT",
+      "source": "This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement about ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "a026f157-2806-4350-b974-391139a725ec",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "claim_id": "C76",
+      "claim": "The protocol was approved by the Committee on the Ethics of Animal Experiments of the Weizmann Institute of Science.",
+      "claim_type": "EXPLICIT",
+      "source": "The protocol was approved by the Committee on the Ethics of Animal Experiments of the Weizmann Institute of Science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "81d67ad8-c585-4ab0-a0f5-5cdca52ec716",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used three 6-week-old male inbred Nur77-GFP/Foxp3-mCherry mice (C57BL/6 background) with appropriate ethical approvals and animal care compliance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C73 provide explicit experimental details with citation support (Gray et al., 2006; Moran et al., 2011). Claims C74-C76 document ethical compliance and institutional approvals. These methodological claims are well-documented and verifiable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "b0a3df75-c1bb-4f22-a6be-4dfd52ad3502",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nur77 and Annexin V markers were used to identify T cells at different stages of thymic selection, though the CD4+CD8+Annexin V- population may contain some cells destined for negative selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 establish the use of established markers for T cell activation and apoptosis. Claim C5 explicitly acknowledges a limitation in the sorting strategy. This represents a reasonable experimental approach with appropriate caveats.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "3e060b07-5029-4f18-809d-0d8eb6544230",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context of TCR generation and thymic selection, noting that TCR sequences removed during selection have never been directly observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C13 provide well-cited background on TCR generation and thymic selection (Hozumi and Tonegawa, 1976; Yates, 2014; Kosmrlj et al., 2009; Yu et al., 2015). Claim C11 identifies a key gap in the literature that motivates the study. This background is appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "44cd6c86-5b15-41af-bf5f-c714b0476c20",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Quality control analyses showed high correlation between \u03b1 and \u03b2 chain sequences within populations and confirmed expected enrichment of iNKT cells in CD4 versus CD8 populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 are supported by data in Figure 1\u2014figure supplement 1A-B and citation to Garner et al., 2018. These quality control measures validate the experimental approach and sequencing quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "0d00729a-8635-4596-a336-0fb89b6f06de",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nonproductive TCR sequences are not affected by selection as they survive due to productive genes on the other chromosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C16 is a well-established inference based on allelic exclusion mechanisms. This provides the rationale for using nonproductive sequences to infer the pre-selection generative model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "785a33fc-e370-4f75-a280-93aa71d4ad16",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "V and J gene usage patterns broadly follow the pre-selection model with minor deviations in specific genes, and recombination biases dominate over selection effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 are supported by data in Figure 2A and Figure 2\u2014figure supplement 2A-B. The analysis shows that while some specific gene usage differences exist, the overall pattern is dominated by generation biases rather than selection. This is a key finding regarding the limited impact of selection on gene usage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "d833544e-47ae-428e-b5bf-6d08f422bd37",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CDR3 length distributions are sharper in SP cells compared to DP cells, consistent with previous interpretations of structural constraints from selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by data in Figure 2B and multiple supplementary figures, with citations to previous studies (Madi et al., 2017; Lu et al., 2019; Carter et al., 2019). This finding is consistent with established understanding of thymic selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "682a1f70-9ea1-4c6b-a3fb-af2c47787bb2",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PCA on TRAV gene usage identifies distinct clusters for different cell types, with DP pos Nur77+ cells occupying an intermediate position between pre-selection and SP populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 are supported by data in Figure 2D. The PCA analysis successfully captures the developmental trajectory and provides evidence that DP pos cells represent an intermediate selection state. This is a key result supporting the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "35d7547f-2414-43ef-b0b5-97ccb23bd6de",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Individual TCR classification between repertoires achieves only moderate AUC scores (~0.6-0.7), but combining predictions from 30 TCRs improves discrimination to AUC >0.85.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by data in Figure 3A-B and supplementary figures, with citations to previous studies (Emerson et al., 2013; Isacchini et al., 2021). The finding that collective TCR properties discriminate better than individual sequences is a central result of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "169311d6-cbb7-4e56-a374-ac3e779c1170",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Selection imposes a decrease in repertoire diversity, though this effect is smaller than the diversity decrease from the generation process itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by entropy measurements shown in Figure 4B and supplementary figures. This quantifies the relative impact of generation versus selection on repertoire diversity, a key finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "752c8d58-4d77-4b7d-969c-22cbdce3d6af",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Jensen-Shannon divergence analysis of n-gram distributions recapitulates expected developmental relationships between thymic subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is supported by data in Figure 4C. The JSD analysis provides an independent validation of the developmental trajectory and selection model, consistent with PCA results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "2cb31cef-29d9-452b-aa97-1b1def6d9c6f",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Hydrophobicity scores increase from DP pre to DP pos (positive selection) and decrease in single positive cells (negative selection), consistent with selection for intermediate self-reactivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by data in Figure 4\u2014figure supplement 7-8 and citations (Lagattuta et al., 2022; Stadinski et al., 2016; Daley et al., 2019; Butler et al., 2013). The hydrophobicity analysis provides mechanistic insight into selection pressures, though the effect is statistical rather than deterministic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "5ce02d06-9abd-4e93-9e9d-5fa751e5bb09",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The DP dbn repertoire shows no correlation with other subsets, consistent with it containing a random sample of DP pre cells unrelated to TCR sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by data in Figure 5C. This finding suggests that cells dying by neglect or damage (DP dbn) are not selected based on TCR sequence features, validating the experimental sorting strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "173f66c9-9304-4425-bfa6-1bf79294b423",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A common dominant selection process drives repertoire changes from DP pos to all subsequent stages, with no evidence of dominant exclusive sequence-based selection at any individual step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 are supported by enrichment correlation analyses in Figure 5 and supplementary figures. This is a central negative finding: the absence of strong sequence-specific selection signatures at individual developmental steps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "1d0cb338-4d31-474f-b6ff-05d893e5cf99",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "No single feature discriminates between repertoires, but combinations of features show subtle reproducible differences that capture the known developmental trajectory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 summarize findings from multiple analyses (PCA, classification, entropy). This synthesis is well-supported by the data and represents a key conclusion about the statistical nature of thymic selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "be67bfac-f81c-4966-82fd-1ad55cfb9176",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The smallest repertoire distances are between mature SP cells and their thymic apo counterparts, suggesting negative selection is only weakly associated with single TCR sequence properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by distance measurements from multiple analyses. This is a key finding suggesting that negative selection does not strongly discriminate based on individual TCR sequences, supporting a collective/statistical model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "6935f102-e3e9-49ee-94b0-fad620680b3d",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Previous work suggests TCR \u03b1-\u03b2 pairing is largely random with weak associations between germline genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by citations to Grigaityte et al., 2017 and Dupic et al., 2019. This contextualizes the limitation of analyzing single chains separately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "bfd055bd-6578-47cc-bc3f-f3a6bcbb6284",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Potential contamination of sorted populations (AnnexinV+ by damaged cells, DPpos by negatively selected cells) may weaken observed selection signatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 acknowledge important experimental limitations with citation support (Stritesky et al., 2013). The authors appropriately discuss how these limitations might affect their results, though they note that discrimination is still possible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "23a331be-a11a-4bd7-b251-713ba4df04f7",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The statistical population-level differences observed are reminiscent of collective T cell behavior models, including quorum sensing with an estimated minimum of 30 activated T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 connect the results to theoretical models with appropriate citations (Butler et al., 2013; Polonsky et al., 2018). This provides a mechanistic framework for interpreting the statistical nature of selection observed in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "16640a2d-1e77-4036-8f88-d49e4631ae29",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Thymic selection imposes weak selective pressure on the repertoire, consistent with incomplete screening of self-peptides, yet subtle depletion may still enable robust self/non-self discrimination at the population level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 synthesize the main findings with reference to Butler et al., 2013's hypothesis. This interpretation is well-supported by the weak selection signatures observed throughout the study and provides a coherent model for immune function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    },
+    {
+      "id": "c21ab960-2238-4931-9b0f-ce2723fc52e0",
+      "content_id": "02c40ff2-d2f6-4324-91a7-ff5419a539fb",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The results favor a collective/statistical model for T cell self/non-self discrimination where negative selection biases the repertoire away from self-recognition rather than ensuring single-cell level non-reactivity, with no evidence of specific suppressed sequences and small but significant differences between maturation stages that can be simulated by linear selection models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 represent the main conclusions of the paper, synthesizing findings from all analyses. The conclusions are well-supported by the data showing: (1) weak individual TCR discrimination, (2) strong collective discrimination, (3) absence of specific sequence motifs, (4) small but reproducible statistical differences, and (5) successful modeling with linear selection. This represents the paper's central contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:34:04.054259Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f7a497e6-d0ef-4086-923f-5a8f82f0700f",
+      "result_id": "81d67ad8-c585-4ab0-a0f5-5cdca52ec716"
+    },
+    {
+      "claim_id": "8883e979-756e-41ac-ba02-c4d18f7d4b6f",
+      "result_id": "81d67ad8-c585-4ab0-a0f5-5cdca52ec716"
+    },
+    {
+      "claim_id": "d8119c44-21ac-4e25-a42d-dbfbe3f66b8f",
+      "result_id": "81d67ad8-c585-4ab0-a0f5-5cdca52ec716"
+    },
+    {
+      "claim_id": "44fd4625-e2c2-48ba-9aa8-c728e87d4ae7",
+      "result_id": "81d67ad8-c585-4ab0-a0f5-5cdca52ec716"
+    },
+    {
+      "claim_id": "ba84de72-57f0-44bb-867a-c7e75b651897",
+      "result_id": "81d67ad8-c585-4ab0-a0f5-5cdca52ec716"
+    },
+    {
+      "claim_id": "a026f157-2806-4350-b974-391139a725ec",
+      "result_id": "81d67ad8-c585-4ab0-a0f5-5cdca52ec716"
+    },
+    {
+      "claim_id": "8a93ed6e-3401-467d-b2ee-d23a10f2ad3f",
+      "result_id": "b0a3df75-c1bb-4f22-a6be-4dfd52ad3502"
+    },
+    {
+      "claim_id": "0d6488f0-0cba-4d54-b2b9-00fbe7e9e8ec",
+      "result_id": "b0a3df75-c1bb-4f22-a6be-4dfd52ad3502"
+    },
+    {
+      "claim_id": "28d11141-03f0-43b9-9bc8-28e9267cc025",
+      "result_id": "b0a3df75-c1bb-4f22-a6be-4dfd52ad3502"
+    },
+    {
+      "claim_id": "4680c99b-63a9-489d-af53-201dde1090b9",
+      "result_id": "3e060b07-5029-4f18-809d-0d8eb6544230"
+    },
+    {
+      "claim_id": "65e27caa-6b6d-47e8-981b-8ab3d21744a8",
+      "result_id": "3e060b07-5029-4f18-809d-0d8eb6544230"
+    },
+    {
+      "claim_id": "3e59c56f-8386-4d63-851b-05717227fc26",
+      "result_id": "3e060b07-5029-4f18-809d-0d8eb6544230"
+    },
+    {
+      "claim_id": "1b2cccdb-633b-4c9f-b78f-59965e18ad1a",
+      "result_id": "3e060b07-5029-4f18-809d-0d8eb6544230"
+    },
+    {
+      "claim_id": "a8f56e0a-46e7-4a60-a2b4-5ddf609c3057",
+      "result_id": "3e060b07-5029-4f18-809d-0d8eb6544230"
+    },
+    {
+      "claim_id": "28ceadaf-3113-4300-9ea0-3a13e8cf8fab",
+      "result_id": "3e060b07-5029-4f18-809d-0d8eb6544230"
+    },
+    {
+      "claim_id": "b3b3c71b-9d8c-4c8c-8a45-83920c1c2e2f",
+      "result_id": "3e060b07-5029-4f18-809d-0d8eb6544230"
+    },
+    {
+      "claim_id": "5e6cc6bc-15f7-490b-aef6-9f0627e62e78",
+      "result_id": "3e060b07-5029-4f18-809d-0d8eb6544230"
+    },
+    {
+      "claim_id": "7d21ced4-1e25-40e9-8a66-e45004a37a0d",
+      "result_id": "44cd6c86-5b15-41af-bf5f-c714b0476c20"
+    },
+    {
+      "claim_id": "77452eb7-872e-4d3a-83ab-b00d76773edc",
+      "result_id": "44cd6c86-5b15-41af-bf5f-c714b0476c20"
+    },
+    {
+      "claim_id": "133baff7-17f0-43a5-9832-c1a9dd3e0b4e",
+      "result_id": "0d00729a-8635-4596-a336-0fb89b6f06de"
+    },
+    {
+      "claim_id": "601aa812-7e72-491f-92b8-bf69875f69a7",
+      "result_id": "785a33fc-e370-4f75-a280-93aa71d4ad16"
+    },
+    {
+      "claim_id": "1881e3df-a06c-46fb-b087-ff5c2136d957",
+      "result_id": "785a33fc-e370-4f75-a280-93aa71d4ad16"
+    },
+    {
+      "claim_id": "28f2e763-f20c-4371-97dd-44499ac407b6",
+      "result_id": "785a33fc-e370-4f75-a280-93aa71d4ad16"
+    },
+    {
+      "claim_id": "a5f6f975-b947-48b4-a4ff-33d5712878c5",
+      "result_id": "785a33fc-e370-4f75-a280-93aa71d4ad16"
+    },
+    {
+      "claim_id": "9ad74ef2-66b2-48aa-92eb-5be0f4be6755",
+      "result_id": "785a33fc-e370-4f75-a280-93aa71d4ad16"
+    },
+    {
+      "claim_id": "dfa93077-c128-4068-b738-ca7ff4ecc229",
+      "result_id": "785a33fc-e370-4f75-a280-93aa71d4ad16"
+    },
+    {
+      "claim_id": "bc8023b3-30fe-4e20-8949-6f41d3b3de38",
+      "result_id": "785a33fc-e370-4f75-a280-93aa71d4ad16"
+    },
+    {
+      "claim_id": "61c35134-35c7-43a9-adec-3c96b681ad80",
+      "result_id": "d833544e-47ae-428e-b5bf-6d08f422bd37"
+    },
+    {
+      "claim_id": "b75e466e-29f0-4b21-9945-770c6de2ad81",
+      "result_id": "d833544e-47ae-428e-b5bf-6d08f422bd37"
+    },
+    {
+      "claim_id": "40985c76-ab9f-4a20-8080-2b344eb0d44f",
+      "result_id": "682a1f70-9ea1-4c6b-a3fb-af2c47787bb2"
+    },
+    {
+      "claim_id": "26683995-d6a0-49ed-b8ae-1ec5caf4b4aa",
+      "result_id": "682a1f70-9ea1-4c6b-a3fb-af2c47787bb2"
+    },
+    {
+      "claim_id": "38ee91d9-468b-45b1-9ca9-2ac309b05d86",
+      "result_id": "682a1f70-9ea1-4c6b-a3fb-af2c47787bb2"
+    },
+    {
+      "claim_id": "50574c74-65d9-4af4-ba96-1b5750c6460b",
+      "result_id": "682a1f70-9ea1-4c6b-a3fb-af2c47787bb2"
+    },
+    {
+      "claim_id": "f734377c-97c9-4f0d-b80a-0e02081dc5d8",
+      "result_id": "35d7547f-2414-43ef-b0b5-97ccb23bd6de"
+    },
+    {
+      "claim_id": "9d320e0b-c469-46fa-8e24-dfc69e573414",
+      "result_id": "35d7547f-2414-43ef-b0b5-97ccb23bd6de"
+    },
+    {
+      "claim_id": "77142494-0cf9-4766-9a7b-4c16ba4e9a73",
+      "result_id": "35d7547f-2414-43ef-b0b5-97ccb23bd6de"
+    },
+    {
+      "claim_id": "50238c08-9174-4362-b59c-44e9156abcba",
+      "result_id": "169311d6-cbb7-4e56-a374-ac3e779c1170"
+    },
+    {
+      "claim_id": "08481094-166f-4856-bf6e-cf099e1135bf",
+      "result_id": "752c8d58-4d77-4b7d-969c-22cbdce3d6af"
+    },
+    {
+      "claim_id": "b1eb9616-e7a0-4f35-a1d4-7adf4476bfa0",
+      "result_id": "2cb31cef-29d9-452b-aa97-1b1def6d9c6f"
+    },
+    {
+      "claim_id": "0c9050ce-5b79-4a9d-ae46-37c3819239c8",
+      "result_id": "2cb31cef-29d9-452b-aa97-1b1def6d9c6f"
+    },
+    {
+      "claim_id": "f957287c-f9ef-449b-bd1d-3b90b1a5ef17",
+      "result_id": "2cb31cef-29d9-452b-aa97-1b1def6d9c6f"
+    },
+    {
+      "claim_id": "c942a12d-51c3-4fc7-9fa4-d4d044d6f29a",
+      "result_id": "2cb31cef-29d9-452b-aa97-1b1def6d9c6f"
+    },
+    {
+      "claim_id": "a59c7547-a31e-4580-9ae1-f863f5aaf393",
+      "result_id": "2cb31cef-29d9-452b-aa97-1b1def6d9c6f"
+    },
+    {
+      "claim_id": "7c3941ca-9c93-424e-b528-b919e14b1343",
+      "result_id": "5ce02d06-9abd-4e93-9e9d-5fa751e5bb09"
+    },
+    {
+      "claim_id": "adebd07f-95bc-4525-9fa5-aafbd1796cc6",
+      "result_id": "5ce02d06-9abd-4e93-9e9d-5fa751e5bb09"
+    },
+    {
+      "claim_id": "e90ce727-23c2-4c69-bfe3-42502746dffa",
+      "result_id": "173f66c9-9304-4425-bfa6-1bf79294b423"
+    },
+    {
+      "claim_id": "f4a112e5-50d8-4a13-bd34-506ff6b262c3",
+      "result_id": "173f66c9-9304-4425-bfa6-1bf79294b423"
+    },
+    {
+      "claim_id": "6f1fe837-2334-487b-95bb-85365a552f81",
+      "result_id": "173f66c9-9304-4425-bfa6-1bf79294b423"
+    },
+    {
+      "claim_id": "63332ff4-8ccc-444e-8821-62f8f4aacc2c",
+      "result_id": "1d0cb338-4d31-474f-b6ff-05d893e5cf99"
+    },
+    {
+      "claim_id": "0869826e-d121-447a-bcc7-8a5826b9071b",
+      "result_id": "1d0cb338-4d31-474f-b6ff-05d893e5cf99"
+    },
+    {
+      "claim_id": "62897d4c-57ea-4cff-be79-580e1ae102df",
+      "result_id": "1d0cb338-4d31-474f-b6ff-05d893e5cf99"
+    },
+    {
+      "claim_id": "6c4d28f2-24b4-4e33-b87e-05341f0a31d3",
+      "result_id": "be67bfac-f81c-4966-82fd-1ad55cfb9176"
+    },
+    {
+      "claim_id": "82ad380b-1a83-4460-a350-5228d75ca57f",
+      "result_id": "be67bfac-f81c-4966-82fd-1ad55cfb9176"
+    },
+    {
+      "claim_id": "3d4aa43d-6409-4190-8b3c-5acc337bb926",
+      "result_id": "6935f102-e3e9-49ee-94b0-fad620680b3d"
+    },
+    {
+      "claim_id": "a43e52ca-8550-4a26-922c-67b8177c7f62",
+      "result_id": "bfd055bd-6578-47cc-bc3f-f3a6bcbb6284"
+    },
+    {
+      "claim_id": "eb6a8e6c-c21d-4f33-9dbe-4bb5046b2d2a",
+      "result_id": "bfd055bd-6578-47cc-bc3f-f3a6bcbb6284"
+    },
+    {
+      "claim_id": "e237ba6a-8229-4954-92bd-b4d64e77d3b3",
+      "result_id": "23a331be-a11a-4bd7-b251-713ba4df04f7"
+    },
+    {
+      "claim_id": "9e7cffff-e80b-42c1-822a-8d2b8a7a821b",
+      "result_id": "23a331be-a11a-4bd7-b251-713ba4df04f7"
+    },
+    {
+      "claim_id": "46498563-4a9a-490a-8dba-160348b721a1",
+      "result_id": "23a331be-a11a-4bd7-b251-713ba4df04f7"
+    },
+    {
+      "claim_id": "759f1167-1e5b-4b8a-845f-1c19c029754e",
+      "result_id": "23a331be-a11a-4bd7-b251-713ba4df04f7"
+    },
+    {
+      "claim_id": "89bde48d-a4b5-4cd4-8f29-040bed5b6355",
+      "result_id": "16640a2d-1e77-4036-8f88-d49e4631ae29"
+    },
+    {
+      "claim_id": "98e8220d-1575-486f-9765-6352e6bcb3ec",
+      "result_id": "16640a2d-1e77-4036-8f88-d49e4631ae29"
+    },
+    {
+      "claim_id": "73d3c99e-63be-453f-a2ca-9bed7a0c3e74",
+      "result_id": "16640a2d-1e77-4036-8f88-d49e4631ae29"
+    },
+    {
+      "claim_id": "4d3adfbd-9c01-40b6-96ed-ede2dc05122d",
+      "result_id": "c21ab960-2238-4931-9b0f-ce2723fc52e0"
+    },
+    {
+      "claim_id": "dd3377e5-c9c3-4dd5-9c0c-aee657918e54",
+      "result_id": "c21ab960-2238-4931-9b0f-ce2723fc52e0"
+    },
+    {
+      "claim_id": "4e9d462b-6662-415c-a98f-2e67da6a9508",
+      "result_id": "c21ab960-2238-4931-9b0f-ce2723fc52e0"
+    },
+    {
+      "claim_id": "c3159954-7dc5-4050-bbcd-b9704c555b53",
+      "result_id": "c21ab960-2238-4931-9b0f-ce2723fc52e0"
+    },
+    {
+      "claim_id": "b5298b0f-e6a7-4746-9f94-1fca4fe46536",
+      "result_id": "c21ab960-2238-4931-9b0f-ce2723fc52e0"
+    },
+    {
+      "claim_id": "1490bd8a-96ff-468b-82bd-7d9d79c025e8",
+      "result_id": "c21ab960-2238-4931-9b0f-ce2723fc52e0"
+    }
+  ],
+  "comparisons": []
+}

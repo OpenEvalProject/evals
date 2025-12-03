@@ -1,0 +1,2088 @@
+{
+  "submission": {
+    "id": "e3bbe1e5-363e-4284-9398-2a77817b0ea5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:27:11.929732Z",
+    "updated_at": "2025-12-03T06:27:11.929732Z"
+  },
+  "content": [
+    {
+      "id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "submission_id": "e3bbe1e5-363e-4284-9398-2a77817b0ea5",
+      "content_type": "manuscript",
+      "content_text": "# Social fluidity mobilizes contagion in human and animal populations\n\n## Authors\n\n- Ewan Colman<sup>1</sup> ([ORCID: 0000-0003-2551-8589](https://orcid.org/0000-0003-2551-8589)) \u2020\n- Vittoria Colizza<sup>3</sup> ([ORCID: 0000-0002-2113-2374](https://orcid.org/0000-0002-2113-2374))\n- Ephraim M Hanks<sup>4</sup>\n- David P Hughes<sup>5</sup> ([ORCID: 0000-0002-9954-8919](https://orcid.org/0000-0002-9954-8919))\n- Shweta Bansal<sup>1</sup> ([ORCID: 0000-0002-1740-5421](https://orcid.org/0000-0002-1740-5421)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Georgetown University Washington United States\n2. Roslin Institute, University of Edinburgh Midlothian United Kingdom\n3. INSERM, Sorbonne Universit\u00e9, Institut Pierre Louis d\u2019\u00c9pid\u00e9miologie et de Sant\u00e9 Publique (IPLESP UMRS 1136), F75012 Paris France\n4. Department of Statistics, Eberly College of Science, Penn State University State College United States\n5. Department of Entomology, College of Agricultural Sciences, Penn State University State College United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHumans and other group-living animals tend to distribute their social effort disproportionately. Individuals predominantly interact with a small number of close companions while maintaining weaker social bonds with less familiar group members. By incorporating this behavior into a mathematical model, we find that a single parameter, which we refer to as social fluidity, controls the rate of social mixing within the group. Large values of social fluidity correspond to gregarious behavior, whereas small values signify the existence of persistent bonds between individuals. We compare the social fluidity of 13 species by applying the model to empirical human and animal social interaction data. To investigate how social behavior influences the likelihood of an epidemic outbreak, we derive an analytical expression of the relationship between social fluidity and the basic reproductive number of an infectious disease. For species that form more stable social bonds, the model describes frequency-dependent transmission that is sensitive to changes in social fluidity. As social fluidity increases, animal-disease systems become increasingly density-dependent. Finally, we demonstrate that social fluidity is a stronger predictor of disease outcomes than both group size and connectivity, and it provides an integrated framework for both density-dependent and frequency-dependent transmission.\n\n## Introduction\n\nSocial behavior is fundamental to the survival of many species. It allows the formation of social groups providing fitness advantages from greater access to resources and better protection from predators (Krause and Ruxton, 2002). Structure within these groups can be found in the way individuals communicate across space, cooperate in sexual or parental behavior, or clash in territorial or mating conflicts (Hinde, 1976). While animal societies are usually studied independently of each other, studying how they differ in these regards has potential to reveal new insights into the nature of social living (Sah et al., 2018; Dunbar and Shultz, 2010).\n\nWhen social interaction requires shared physical space it can also be a conduit for the transmission of infectious disease (Altizer et al., 2003). In a typical infectious disease model, if the disease spreads through the environment then the transmission rate is assumed to scale proportionally to the local population density (de Jong et al., 1995; Hopkins et al., 2020). Alternatively, if transmission requires close proximity encounters that only occur between bonded individuals then we expect social connectivity to determine the outcome. These two paradigms are known in the literature as density-dependence and frequency-dependence (Silk et al., 2017).\n\nThe problem, however, is that real diseases are not so easy to categorize (Patterson and Ruckstuhl, 2013). For example, as social groups grow in size, new bonds must be created to maintain cohesiveness (Lehmann et al., 2007). To manage the time and cognitive effort required to create these bonds, individuals tend to interact mostly with a small number of close companions while maintaining cohesion with the wider group through less frequent contact (Silk, 2007; Sueur et al., 2011; Dakin and Ryder, 2020). For an infectious disease, this creates fewer transmission opportunities than we would expect to see in a group with highly fluid social dynamics. The extent to which group size amplifies the transmission rate therefore depends on how individuals choose to distribute their social effort between strong and weak ties (Karsai et al., 2014).\n\nWhile transmission rate has been observed to scale non-linearly with group size for a number of disease systems (Cross et al., 2013; Smith et al., 2009; Silk et al., 2017), it remains unclear how much this dependency is related to the internal social structure of the group; few studies observe social dynamics at sufficient detail while simultaneously monitoring the disease status of each individual. In the absence of direct observations, our contribution to this discussion centers around modeling; incorporating empirical social data with computational simulations. We address two specific questions. Firstly, can we quantify the variability in how individuals choose to distribute their social effort within a group, and secondly, what will this tell us about the effect that population density has on disease transmission?\n\nIn the first part of this paper, we introduce a mathematical model founded on the concept of social fluidity which we define as variability in the amount of social effort the individual invests in each member of their social group. Using openly available data, we estimate the social fluidity of 57 human and animal social systems. In the second part, we derive an expression for the basic reproductive number of an infectious disease in the social fluidity model and demonstrate its accuracy in predicting simulated outcomes. Furthermore, social fluidity emerges as a coherent mathematical framework providing the smooth connection between density-dependent and frequency-dependent disease systems.\n\n### Characterizing social behavior\n\nOur first objective is to measure social behavior in a range of human and animal populations. We start by introducing a model that captures a hidden element of social dynamics: how individual group members distribute their social effort. We mathematically describe the relationships between social variables that are routinely found in studies of animal behavior, the number of social ties and the number of interactions observed, and apply the model to empirical data to reveal behavioral differences between several species.\n\n### Social behavior model\n\nConsider a closed system of $N$ individuals and a set of interactions between pairs of individuals that were recorded during some observation period. These observations can be represented as a network: each individual, $i$, is a node; an edge exists between two nodes $i$ and $j$ if at least one interaction was observed between them; the edge weight, $w_{i,j}$, denotes the number of times this interaction was observed. The total number of interactions of $i$ is denoted strength, $s_{i}=\\sum_{j}w_{i,j}$, and the number of nodes with whom $i$ is observed interacting is its degree, ki\u00a0(Barrat et al., 2004).\n\nWe define $x_{j|i}$ to be the probability that an interaction involving $i$ will also involve node $j$. Therefore, the probability that at least one of these interactions is with $j$ is $1-(1-x_{j|i})^{s_{i}}$. The main assumption of the model is that the values of $x_{j|i}$ over all $i,j$ pairs are distributed according to a probability distribution, $\u03c1\u2062(x)$. Thus, if a node interacts $s$ times, the marginal probability that an edge exists between that node and any other given node in the network is\n\n$$\n\u03a8\u2062(s)=1-\\int\u03c1\u2062(x)\u2062(1-x)^{s}\u2062\ud835\udc51x.\n$$\n\nTechnically, $\u03c1\u2062(x)$ is the distribution of marginal $x_{i|j}$ values of the joint probability distribution $\u03c1\u2062(x)$ where $X$ is a matrix whose $i,j$ entry is -1 if $i=j$ and $x_{j|i}$ otherwise. While the values of $x_{j|i}$ are subject to network interdependencies, specifically $A\u2062X=X^{T}\u2062A$ and $1=0$, where $A$ is any diagonal matrix with positive entries, and $1$ and $0$ are column vectors of length $N$ containing only 0 and 1, we do not take these constraints into account when\u00a0estimating $\u03c1$.\n\nOur goal is to find a form of \u03c1 that accurately reproduces network structure observed in real social systems. Motivated by our exploration of empirical interaction patterns from a variety of species, we propose that \u03c1 has a power-law form:\n\n$$\n\u03c1(x)=\\frac{\u03d5\u03f5^{\u03d5}}{1\u2212\u03f5^{\u03d5}}x^{\u2212(1+\u03d5)}for\u03f5<x<1,\n$$\n\nwhere $\u03d5$ controls the variability in the values of $x$, and $\u03f5$ simply truncates the distribution to avoid divergence. The form of $\u03c1\u2062(x)$ was chosen for its analytical tractability but other heavy-tailed distributions produce a similar result (Figure 1\u2014figure supplement 1 ). Combining (1) and (2) we find\n\n$$\n\u03a8\u2062(s,\u03d5,\u03f5)=1-\\frac{\u03d5\u2062\u03f5^{\u03d5}\u2062(1-\u03f5)^{s+1}}{(1-\u03f5^{\u03d5})\u2062(s+1)}\u2062F12\u2062(s+1,1+\u03d5,s+2,1-\u03f5)\n$$\n\nwhere the notation $F12$ refers to the Gauss hypergeometric function (Abramowitz and Stegun, 1975). It follows from $\\sum_{j}x_{j|i}=1$ that\n\n$$\nN=1+\\frac{(1-\u03d5)\u2062(1-\u03f5^{\u03d5})}{\u03d5\u2062\u03f5^{\u03d5}\u2062(1-\u03f5^{1-\u03d5})},\n$$\n\nwhich can be solved numerically to find $\u03f5$ for given values of $N$ and $\u03d5$. The expectation of the degree is $\u03ba\u2062(s,\u03d5,N)=(N-1)\u2062\u03a8\u2062(s,\u03d5,\u03f5)$.\n\nFigure 1 illustrates how the value of $\u03d5$ can produce different types of social behavior. As $\u03d5$ is the main determinant of social behavior in our model, we use the term social fluidity to refer to this quantity. Low social fluidity ($\u03d5\u226a1$) produces what we might describe as \u2018allegiant\u2019 behavior: interactions with the same partner are frequently repeated at the expense of interactions with unfamiliar individuals. As $\u03d5$ increases, the model produces more \u2018gregarious\u2019 behavior: interactions are repeated less frequently and the number of partners grows faster. While names like \u2018social strategy\u2019 and \u2018loyalty\u2019 have been applied to similar concepts (Valdano et al., 2015; Miritello et al., 2013), fluidity, as a property of matter, is a useful metaphor for communicating the main idea behind this model.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig1-v1.jpg)\n\n**Figure 1.:** Dashed lines mark the boundary of the region where data points can feasibly be found. The mean degree is plotted for two values of $\u03d5$ representing two possible types of social behavior; as the number of observed interactions grows, the set of social contacts increases; the rate at which it increases influences how we categorize their social behavior. Middle: The weight of the edges between $i$ and the other nodes represents the propensity of $i$ to interact with each of the other individuals in the group. Right: Probability distributions that correspond to the different levels of evenness in the contact propensities, both distributions are expressed by Equation (2).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Outcomes using different forms of $\u03c1\u2062(x)$.Node degree as a function of node strength produced using a range of distributions $\u03c1\u2062(x)$. For each distribution, contact probabilities $x_{j|i}$ were drawn for the focal individual $i$ and 100 other group members $j$. Contact was simulated by selecting the interaction partner, $j$, with probability $x_{j|i}$. This was repeated 100 times and the number of distinct interaction partners was counted at each iteration. This process was repeated 100 times to get a stable average. The parameter \u03c3 is the standard deviation of the normally distributed logarithm of the random variable $x_{j|i}$. Since the exponential has only one parameter, and the mean of $x_{j|i}$ is fixed at $1/N$, there is no way to vary the exponential distribution.\n\n### Estimating social fluidity in empirical networks\n\nTo understand the results of the model in the context of real systems, we estimate $\u03d5$ in 57 networks from 20 studies of human and animal social behavior (further details in the supplement) (Isella et al., 2011; Stehl\u00e9 et al., 2011a; Mastrandrea et al., 2015; Vanhems et al., 2013; Modlmeier et al., 2019; Blonder and Dornhaus, 2011; G\u00e9nois et al., 2015; Carter and Wilkinson, 2013; Grant, 1973; Levin et al., 2016; Sailer and Gaulin, 1984; Mourier et al., 2017; Massen and Sterck, 2013; Sade, 1972; Butovskaya et al., 1994; Takahata, 1991; Hass, 1991; Lott, 1979; Schein and Fohrman, 1955; Hobson and DeDeo, 2015; Gernat et al., 2018), focusing our attention to those interactions which are capable of disease transmission (i.e. those that, at the least, require close spatial proximity). The advantage of using this model over more detailed network descriptions is that we obtain a single parameter estimate, $\u03d5$ that is easily compared across animal species and environments.\n\nEach dataset provides the number of interactions that were observed between pairs of individuals. We assume that the system is closed, and that the total network size ($N$) is equal to the number of individuals observed in at least one interaction. To estimate social fluidity, we find the value of $\u03d5$ that minimizes $\\sum_{i}[k_{i}-\u03ba\u2062(s_{i},\u03d5,N)]^{2}$; the total squared squared error between the observed degrees and their expectation given by the model. Uncertainty is displayed using the 2.5th and 97.5th percentile of the distribution of $\u03d5$ computed on a set of 1000 \u2018bootstrap\u2019 samples, created by sampling $N$ data points, ${k_{i},s_{i}}$, with replacement, from the observed data. Being estimated from the relationship between strength and degree, and not their absolute values, social fluidity is a good candidate for comparing social behavior across different systems as it is independent of the distributions of si or ki, and of the timescale of interactions.\n\nFigure 2 shows the estimated values of $\u03d5$ for all networks in our study. We organize the measurements of social fluidity by interaction type. Aggressive interactions have the highest fluidity (which implies that most interactions are rarely repeated between the same individuals), while grooming and other forms of social bonding have the lowest (which implies frequent repeated interactions between the same individuals). Social fluidity also appears to be related to species: ant systems cluster around $\u03d5=1$, monkeys around $\u03d5=0.5$, humans take a range of values that depend on the social environment. Sociality type does not appear to affect $\u03d5$; sheep, bison, and cattle have different social fluidity compared to kangaroos and bats, although they are all categorized as fission-fusion species (Sah et al., 2018).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig2-v1.jpg)\n\n**Figure 2.:** Colors correspond to the species and the setting in the case of human networks. Different shapes are used as a visual aid. Lines represent the 95% bootstrap confidence interval. Results are organized by interaction type: aggression includes fighting and displays of dominance, food sharing refers to mouth-to-mouth passing of food, antennation is when the antenna of one insect touches any part of another, space sharing interactions occur with spatial proximity during foraging, face-to-face refers to close proximity interactions that require individuals to be facing each other, association is defined as co-membership of the same social group, and grooming is when one individual cleans another with their hand or other body part.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Raw data and least squares estimate for all networks used in this study. Each point represents one individual individual. Those who interacted more than 90 times are excluded from the figure but not from the inference of $\u03d5$. The curve shows the expected degree (according to the model) of an individual as a function of the number of interactions.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Sensitivity to length of time frame of sampling. Network properties were recalculated using only the first 50% of the interactions on all network data sets for which temporal information are provided. (A) Social fluidity as estimated in the main text is shown as blue triangles, and estimated using only the first 50% of interactions is shown as red circles. In one network (highschool 4), the process for computing $\u03d5$ did not converge to a solution, this is an issue that occurs when the number of interaction partners remains very low. (B and C), mean degree of the network and number of nodes (with degree $k>0$), respectively, calculated from the full data is shown as blue triangles, and using only the first 50% of interactions as red circles. (D) Social fluidity estimated using only the first 50% of interactions is shown as blue triangles. Red circles show the value of $\u03d5$ using the first 50% of the interactions but using the value of $N$ taken from observing all the interactions. Note that this value of $N$ will be larger as it contains nodes that will be isolates, i.e. have $k=0$ in the 50% subsample network.\n\nAcross the 57 networks, there is no evidence that social fluidity scales with the size of the network or the number of observations per individual. No correlation was found between the mean number of interactions per individual ($s\u00af$) and social fluidity when testing for a monotonic relationship between the variables (Spearman $r^{2}=0.02$, $p=0.36$), and in general no correlation across sets of networks taken from the same study (Supplementary file 1:\u00a0Table\u00a0S2). Similarly, network size ($N$) does not correlate with $\u03d5$ (Spearman $r^{2}=0.02$, $p=0.28$). To test for a non-monotonic relationship, we partition the set of networks into 10 equally sized groups according to each of the two measures being compared, and compute the adjusted mutual information (AMI) of the two groupings. We find AMI=0.15 for the relationship between $\u03d5$ and $N$, and AMI=0.2 between $\u03d5$ and $s\u00af$. While non-negative values of AMI typically indicate a non-random relationship, an inherent amount of clustering is to be expected in data aggregated from a diverse range of sources.\n\nLarger values of $\u03d5$ correspond to higher mean degrees (Spearman $r^{2}=0.21$, $p<0.001$) and lower variability in the distribution of edge weights (measured as the index of dispersion of $w_{i,j}$; Spearman $r^{2}=0.46$, $p<0.001$). Weight variability and mean degree are uncorrelated in these data (Spearman $r^{2}=0.01$, $p=0.54$, AMI=0.01) implying that $\u03d5$ combines these two entirely distinct features of social behavior. Finally, the modularity of the network (computed by the Louvain method on the unweighted network Blondel et al., 2008) is negatively correlated with $\u03d5$ ($r^{2}=0.52$, $p<0.001$). This is expected as individuals tend to be loyal to those within the same module while maintaining weaker connections with the remaining network - in all but one network the mean weight of edges within modules is higher than the mean weight of edges between modules (supplementary document).\n\nAs with any applied modeling, the validity of these results depends on the extent to which each study system conforms to the assumptions of the model. The value of $N$, for example, might not represent the true group size if some individuals in the group did not have their interactions recorded, or if there are individuals who did not interact during the time-frame of observation. While we found that variation in the value of $N$ did not have a large impact on the estimated value of $\u03d5$, as shown in Figure 2\u2014figure supplement 1, we warn that the amount of consistency between model assumptions and the conditions of each study will vary, and close consideration should be given to the way data were collected when interpreting these results.\n\n### Characterizing disease spread with social fluidity\n\nOur objective is to characterize how social behavior influences the exposure of the group to infectious disease in a range of human and animal social systems. Intuitively, we expect an infected individual in a group with low social fluidity to expose fewer susceptible group members to the pathogen than they would in a group with highly fluid social dynamics. We explore this idea by introducing a analytical transmission model that incorporates social fluidity. Using this model, we mathematically characterize the impact of social fluidity on density dependence, and apply the model to empirical networks to predict disease spread.\n\n### Disease transmission model\n\nWe consider the transmission of an infectious disease on the social behavior model introduced in the previous section. An infectious node $i$ interacting with a susceptible node $j$ will transmit the infection with probability \u03b2. The node will recover from infection with rate \u03b3, assuming an exponential distribution of the length of the infectious period. The probability that the infection is transmitted from $i$ to any given $j$ is\n\n$$\nT_{i\u2192j}\u2062(\\beta,\\gamma,s_{i},\\tau,x_{j|i})=1-exp\u2061(-s_{i}\u2062x_{j|i}\u2062\\beta/\\gamma\u2062\\tau),\n$$\n\nassuming that the interactions si of $i$ are distributed randomly across an observation period of duration \u03c4.\n\nBy integrating Equation (5) over all possible values $x_{j|i}$ and infectious period durations and multiplying by the number of susceptible individuals ($N-1$) we obtain the expected number of infections caused by individual $i$,\u00a0\n\n$$\nr\u2062(s_{i})=\\frac{1-\u03d5}{\u03d5\u2062(\u03f5^{\u03d5}-\u03f5)}[1-\u03f5^{\u03d5}+\u03f5^{\u03d5}F12(-\u03d5,1,1-\u03d5;-\\betas_{i}/\\gamma\\tau)-F12(-\u03d5,1,1-\u03d5;-\u03f5\\betas_{i}/\\gamma\\tau)].\n$$\n\nThe basic reproductive number (usually denoted R0) is defined as the mean number of secondary infections caused by a typical infectious individual in an otherwise susceptible population (Diekmann et al., 1990). We will use the notation $R_{0}^{\u03d5}$ to signify the social fluidity reproductive number, that is the analogue of R0 derived from our social behavior model.\n\nWe assess the relation of the reproductive number with the population density by focusing on a special case where every node has the same strength, that\u00a0is $s_{i}=s$ for all $i$, so that $R_{0}^{\u03d5}=r\u2062(s)$. Furthermore, we choose $\\beta=\\gamma\u2062\\tau\u2062R_{0}^{\u221e}/s$ where $R_{0}^{\u221e}$ is $R_{0}^{\u03d5}$ as $\u03d5\u2192\u221e$, that\u00a0is a constant that represents what the basic reproductive number would be if every new interaction occurred between a pair of individuals who have not previously interacted with each other.\n\nFigure 3 shows the effect of social fluidity on the density dependence of the disease. At small population sizes, $R_{0}^{\u03d5}$ increases with $N$ and converges as $N$ goes to \u221e (Figure 3A). The rate of this convergence increases with $\u03d5$, and the limit it converges to is higher, meaning that $\u03d5$ determines the extent to which density affects the spread of disease. As $N\u2192\u221e$, we find that $R_{0}^{\u03d5}\u2192R_{0}^{\u221e}$ for $\u03d5>1$. When $\u03d5<1$, $R_{0}^{\u03d5}\u2192[(1-\u03d5)/\u03d5]\u2062[F12\u2062(-\u03d5,1,1-\u03d5;-R_{0}^{\u221e})-1]$. At these values of $\u03d5$ the disease is constrained by individuals choosing to repeat interactions despite having the choice of infinitely many potential interaction partners (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig3-v1.jpg)\n\n**Figure 3.:** (A) For different values of social fluidity, $\u03d5$, we show $R_{0}^{\u03d5}$ (from Equation (6)) as a function of $N$ (from Equation (4)) through their parametric relation with $\u03f5$. Dashed lines show the limit for large $N$. (B) In large populations $R_{0}^{\u03d5}$ increases with $\u03d5$ up to $\u03d5=1$. Beyond this value, infections occur as frequently as they would if every new interaction occurs between a pair of individuals who have not previously interacted with each other.\n\n### Infection spread in empirical networks with heterogeneous connectivity\n\nTo apply this analogue of a reproductive number to an animal-disease system, we need to account for heterogeneous levels of social connectivity in the given population and thus the tendency for infected individuals to be those with a greater number of social partners (Anderson et al., 1986). For the basic reproductive number, this is often done using the mean excess degree, that\u00a0is the degree of an individual selected with probability proportional to their degree (Newman, 2018). Following a similar reasoning, we define $R_{0}^{Est}$, which incorporates the effect of social fluidity, as the expected number of infections ($r\u2062(s_{i})$) caused by an individual that has been selected with probability proportional to their degree (ki):\n\n$$\nR_{0}^{Est}\u2062({s_{i}},{k_{i}},\\tau,\\beta,\\gamma)=\\frac{\\sum_{i}k_{i}\u2062r\u2062(s_{i})}{\\sum_{i}k_{i}}.\n$$\n\nGiven the degree and strength of each individual in a network, the duration over which those interactions occurrred, and the transmission and recovery rates of the disease, we are able to estimate $\u03d5$, compute Equation (6) for each individual, and finally use Equation (7) to derive a statistic that provides a measure of the risk of the host population to disease outbreak.\n\n### Numerical validation using empirical networks\n\nWe simulated the spread of disease through the interactions that occurred in the empirical data (Materials and methods). We compute $R_{0}^{Sim}\u2062(g)$, defined as the ratio of the number of individuals infected at the $(g+1)$-th generation to the number infected at the $g$-th generation over 103 simulated outbreaks, for $g=0,1,2$ ($g=0$ refers to the initial seed of the outbreak).\n\nTable 1 shows the Pearson correlation coefficient and the adjusted mutual information between $R_{0}^{Sim}\u2062(g)$ and its corresponding value $R_{0}^{Est}$ obtained Equation (7) (Materials and methods). Equivalent results are also presented for other indicators and network statistics. The results correspond to one set of simulation conditions and are consistent across a wide range of parameter combinations (see Supplementary file 1). Note that a different value of \u03b2 was chosen for each network to control for the varying interaction rates between networks while keeping the upper bound ($R_{0}^{\u221e}$) constant (Materials and methods). While contact frequency is known to be one of the major contributors to disease risk, calibrating \u03b2 in this way eliminates its effect, allowing the contribution of other network characteristics to be compared. Thus, the mean strength does not have a significant effect on $R_{0}^{Sim}\u2062(g)$, and higher mean edge weight does not necessarily imply higher transmission probability over the edges of the network.\n\n**Table 1.**\n The Pearson correlation coefficient between quantities calculated on the network and the simulated disease outcomes (with $R_{0}^{\u221e}=3$).Results that are significant with $p<0.01$ are labeled with *.\u00a0Adjusted mutual information is calculated between the variables after partitioning the set of networks into 10 equally sized rank-order classes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Corr. with R0Sim(g=1)</th>\n      <th>Adjusted MI</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>R0Est</td>\n      <td>0.91*</td>\n      <td>0.35</td>\n    </tr>\n    <tr>\n      <td>Social fluidity</td>\n      <td>0.73*</td>\n      <td>0.24</td>\n    </tr>\n    <tr>\n      <td>Excess degree</td>\n      <td>0.64*</td>\n      <td>0.15</td>\n    </tr>\n    <tr>\n      <td>Mean degree</td>\n      <td>0.53*</td>\n      <td>0.14</td>\n    </tr>\n    <tr>\n      <td>Network size</td>\n      <td>0.47*</td>\n      <td>0.18</td>\n    </tr>\n    <tr>\n      <td>Mean strength</td>\n      <td>-0.07</td>\n      <td>-0.02</td>\n    </tr>\n    <tr>\n      <td>Mean clustering</td>\n      <td>-0.15</td>\n      <td>0.12</td>\n    </tr>\n    <tr>\n      <td>Mean edge weight</td>\n      <td>-0.45*</td>\n      <td>0.10</td>\n    </tr>\n    <tr>\n      <td>Edge weight heterogeneity</td>\n      <td>-0.48*</td>\n      <td>0.21</td>\n    </tr>\n    <tr>\n      <td>Modularity</td>\n      <td>-0.59*</td>\n      <td>0.12</td>\n    </tr>\n  </tbody>\n</table>\n\nThese correlations support a known result regarding repeat contacts in network models of disease spread: that indicators of disease risk that are derived solely from the degree distribution are unreliable and the role of edge weights should not be neglected (Smieszek et al., 2009; Stehl\u00e9 et al., 2011b). After transmission has occurred from one individual to another, repeating the same interaction serves no advantage for disease (most directly\u00a0transmitted microparasites are not dose-dependent). Since a large edge weight implies a high frequency of repeated interactions, networks with a higher mean weight tend to have lower basic reproductive numbers. Furthermore, variability in the distribution of weights concentrates a yet larger proportion of interactions onto a small number of edges, further increasing the number of repeat interactions and reducing the reproductive number.\n\nCorrelation between modularity and $R_{0}^{Sim}\u2062(g)$ is partly due to the strong correlation between modular networks and those with high social fluidity. Consistent with other evidence (Sah et al., 2017), this suggests that transmission events occur mostly within the module of the seed node, with weaker social ties facilitating transmission to other modules. The effect of clustering (a measure of the number of connected triples in network Watts and Strogatz, 1998) correlates with smaller $R_{0}^{Sim}\u2062(2)$, consistent with other theoretical work (Miller, 2009; Smieszek et al., 2009).\n\nFinally, we find the model estimate of the social fluidity reproductive number $R_{0}^{Est}$ to be, on average, within 10% of the simulated value, $R_{0}^{Sim}\u2062(g)$ at $g=1$. At $g=2$ the amount of error is larger (to up to 29% for some parameter choices). Prediction accuracy at this generation is negatively correlated with the mean clustering coefficient. This is not surprising as $R_{0}^{Est}$ does not account for the accelerated depletion of susceptible neighbors that is known to occur in clustered networks (Miller, 2009; Smieszek et al., 2009). No other properties of the network affect the accuracy of $R_{0}^{Est}$ consistently across all parameter combinations (see Supplementary file 1).\n\n## Results and discussion\n\nWe proposed a measure of fluidity in social behavior which quantifies how much mixing exists within the social relationships of a population. While social networks can be measured with a variety of metrics including size, connectivity, contact heterogeneity and frequency, our methodology reduces all such factors to a single quantity allowing comparisons across a range of human and animal social systems. Social fluidity correlates with both the density of social ties (mean degree) and the variability in the weight of those ties, although these quantities do not correlate with each other. Social fluidity is thus able to combine these two aspects seamlessly in one quantity.\n\nBy measuring social fluidity across a range of human and animal systems we are able to rank social behaviors. We identify aggressive interactions as the most socially fluid; this indicates a possible learning effect whereby each aggressive encounter is followed by a period during which individuals avoid further aggression with each other (Parker, 1974). At the opposite end of the scale, we find interactions that strengthen bonds (and thus require repeated interactions) such as grooming in monkeys (Seyfarth and Cheney, 1984) and food-sharing in bats (Carter and Wilkinson, 2013). The fact that food-sharing ants are far more fluid than bats, despite performing the same kind of interaction, reflects their eusocial nature and the absence of any need to consistently reinforce bonds with their kin (H\u00f6lldobler and Wilson, 2009).\n\nOur results contribute to a body of work examining the disproportionate distribution of social effort in both human and animal groups. This phenomena has been directly observed in human telecommunication (Mac Carron et al., 2016; Saram\u00e4ki et al., 2014; Gon\u00e7alves et al., 2011; Tamarit et al., 2018). Quantifying this aspect of sociality in animal systems, however, has been held back by the limitations of the data, such as the bias introduced by variation in activity levels across the social group (Di Bitetti, 2000). Additionally, while heterogeneous interaction frequencies and temporal dynamics have become common in epidemiological models (Rocha and Blondel, 2013; Colman et al., 2018), our results highlight the importance of including variability in how the individual chooses to expend their social effort.\n\nAs with most studies that aim to describe and quantify social structure, there are a number of concerns that ought to be mentioned. The degree of an individual, for example, is known to scale with the length of the observation period (Perra et al., 2012). This is also true of the networks used here (Figure 2\u2014figure supplement 1). Similarly, social fluidity can be affected by the length of the observation window. However, since our model focuses not on the absolute value of degree, but on how degree scales with the number of observations, the results we obtain are relatively robust against this variability (Figure 2\u2014figure supplement 1). Additionally, observed interactions are typically assumed to persist over time (Perreault, 2010). In our model this is not the case; only the distribution of edge weights remains constant, an assumption consistent with growing evidence (Miritello et al., 2013; Centellegher et al., 2017).\n\nWe therefore consider the model to be applicable to the data analysed in this study, but advise caution when applying this approach to other data sources. If the duration of a study allows for substantial developments in the group structure, for example, then a model of edge formation and dissolution may be preferred.\n\nFinally, we do not know the extent to which an interaction, as defined for each network, is capable of transmission which can depend on the pathogen\u2019s transmission mode and the infectious dose required. Furthermore, the transmission probability is unlikely to be the same for all interactions within the group since, for example, the duration of contact is known to be important for disease spread (Stehl\u00e9 et al., 2011b). We did not include explicitly the duration of each contact in our model as this information was only available in a fraction of the datasets (Barrat et al., 2014). There is therefore potential to improve the applicability of this model as more high resolution data becomes openly available.\n\nOur estimate of reproductive number derived from social fluidity provides a better predictor for the epidemic risk of a host population, going beyond predictors based on density or degree only. To illustrate this point, the social network of individuals at a conference ($R_{0}^{Est}=1.60$; conference_0, supplementary document) is predicted to be at higher risk compared to the social network at a school ($R_{0}^{Est}=1.39$; highschool_0), despite having a smaller size and lower connectivity ($N=93$ vs. $N=312$, and $k\u00af=5.63$ vs. $k\u00af=6.78$, respectively). The discrepancy in the risk prediction comes from the lower frequency of repeated contacts between individuals in the conference, compared to the school. Interactions between infectious individuals and those they have previously infected are redundant in terms of transmission. This dynamic is nicely captured by the social fluidity, with $\u03d5=0.66$ for the conference and $\u03d5=0.40$ for the high school.\n\nUnlike previous work that explores the disease consequences of population mixing (Volz and Meyers, 2007; Reluga and Shim, 2014), our analysis allows us to investigate this relation across a range of social systems. We see, for example, how the relationship between mixing and disease risk scales with group size. For social systems that have high values of social fluidity, $R_{0}^{\u03d5}$ is highly sensitive to changes in $N$, whereas this sensitivity is not present at low values of $\u03d5$. This corroborates past work on the scaling of transmission being associated to heterogeneity in contact (Begon et al., 2002; Ferrari et al., 2011). Going beyond previous work, our model captures in a coherent theoretical framework both density-dependence and frequency-dependence, and social fluidity is the measure to tune from one to the other in a continuous way. Since many empirical studies support a transmission function that is somewhere between these two modeling paradigms (Smith et al., 2009; Cross et al., 2013; Borremans et al., 2017; Hopkins et al., 2020), the modeling approaches applied in this paper can be carried forward to inform transmission relationships in future disease studies.\n\n## Materials and methods\n\n### Python libraries\n\nMean clustering coefficients were computed using the networkx Python library. To evaluate the hypergeometric function in (3) we used the hyp2f1 function from the scipy.special Python library. Numerical solutions to Equation (4) using the fsolve function from the scipy.optimize Python library. Adjusted mutual information was computed using adjusted mutual info score from the sklearn.metrics library. All scripts, data, and documentation used in this study are available through https://github.com/EwanColman/Social-Fluidity\u00a0(Colman, 2021, copy\u00a0archived\u00a0at\u00a0swh:1:rev:90b27e1b84ce4417633885cd260c89bbf1b07eac).\n\n### Data handling\n\nOnly freely available downloadable sources of data have been used for this study. Details of the experimentation and data collection, including how the interaction type is defined, can be found through their respective publications. Here, we note some additional processes we have applied for our study.\n\nEach human contact dataset lists the identities of the people in contact, as well as the 20 s interval of detection (Isella et al., 2011; Vanhems et al., 2013; Stehl\u00e9 et al., 2011a; Mastrandrea et al., 2015; G\u00e9nois et al., 2015). Any sequence of consecutive time intervals for which contact is detected between two individuals is considered to be one interaction. To exclude contacts detected while participants momentarily walked past one another, only contacts detected in at least two consecutive intervals are considered interactions. Data were then separated into 24 hr subsets.\n\nBee trophallaxis provided experimental data for five unrelated colonies under continuous observation. We use the first hour of recorded data for each colony (Gernat et al., 2018). The ant trophallaxis study provided six networks: three unrelated colonies continuously observed under two different experimental conditions (Modlmeier et al., 2019). Ant antennation study provided six networks: three colonies, each observed for 4 hr in two sessions separated by a 2-week period. The bat study collected individual data at different times and under different experimental conditions (Carter and Wilkinson, 2013). For bats that were studied on more than one occasion we use only the first day they were observed.\n\nSome data sets provided data for group membership collected through intermittent, rather than continuous, observation (Grant, 1973; Massen and Sterck, 2013; Levin et al., 2016; Sailer and Gaulin, 1984; Mourier et al., 2017) and typically recorded over multiple days or weeks. We construct networks from these data by recording an interaction when two individuals were seen to be in the same group during one round of observation. The shark data were divided into six datasets, each one constructed from 10 consecutive observation bouts, and spread out evenly through the 46-day period over which the data were collected.\n\nFor the grooming data (Butovskaya et al., 1994; Sade, 1972), if one animal was grooming another during one round of observations then this would be recorded as a directed interaction. Similarly for aggressive interactions (Parker, 1974; Takahata, 1991; Hass, 1991; Lott, 1979; Schein and Fohrman, 1955; Hobson and DeDeo, 2015). These data are typically collected over a period of days or weeks. When an animal was determined to be the winner of a dominance encounter then this would be recorded as a directed interaction between the winner and the loser. We consider interaction in either direction to be a contact in the network.\n\nWe considered including two rodent studies in which interaction is defined as being observed within the same territorial space (Smith et al., 2009; Borremans et al., 2017). We did not find this suitable for our analysis since the network we obtain, and the consequent results are sensitive to setting of arbitrary threshold values regarding what should, or should not, be considered sufficient contact for an interaction.\n\nFor data that did not contain the time of each interaction, contact time series were generated synthetically. For those networks, the interactions between each pair were given synthetic timestamps in three different ways, Poisson: the time of each interaction is chosen uniformly at random from {0, 1, ..., 104} seconds, Circadian: chosen uniformly at random from {0,1, ...,3333, 6666, ....,104}, and Bursty: interaction times occur with power-law distributed inter-event times adjusted to give an expected total duration of 104 seconds.\n\n### Disease simulation\n\nSimulations of disease spread were executed using the contacts provided by the datasets. The the bat network was omitted from this part since these data were collected over a series of independent experiments carried out at different times and under different experimental treatments.\n\nIn one run of the simulation, one seed node is randomly chosen from the network and, at a randomly selected point in time during the duration of the data, transitions to the infectious state. The duration for which they remain infectious is a random variable drawn from an exponential distribution with mean $1/\\gamma$. During this time, any contact they have with other individuals who have not previously been infected will cause an infection with probability \u03b2.\n\nThe simulation runs until all individuals who were infected at the second generation of the disease, that\u00a0is those infected by those infected by the seed, have recovered. The datasets are \u2018looped\u2019 to ensure that the timeframe of the data collection does not influence the outcome. In other words, immediately after the latest interaction, the interactions are repeated exactly as they were originally. This continues to happen until the termination criteria is met.\n\nWe set the parameters to normalise for the variation in contacts rates between networks. To achieve this, we consider a hypothetical counterpart to each network in which the strength of every node is the same, but each interaction occurs between a pair of individuals who have not previously interacted. This is equivalent to $\u03d5\u2192\u221e$. Under these conditions $x_{j|i}=1/(N-1)$ for all pairs $i,j$. It follows that Equation (5) becomes $T_{i\u2192j}\u2248s_{i}\u2062\\beta/\\gamma\u2062\\tau\u2062(N-1)$, then $r\u2062(s_{i})\u2248s_{i}\u2062\\beta/\\gamma\u2062\\tau$, and, since $k_{i}=s_{i}$ for all nodes $i$, Equation (7) gives\n\n$$\nR_{0}^{\u221e}=R_{0}^{Est}\u2062({s_{i}},{s_{i}},\\tau,\\beta,\\gamma)=\\frac{\\beta\u2062\\sum_{i}s_{i}^{2}}{\\gamma\u2062\\tau\u2062\\sum_{i}s_{i}}\n$$\n\nThe value of $R_{0}^{\u221e}$ can be chosen arbitrarily. Then, by setting $\\gamma=1/\\tau$ and $\\beta=R_{0}^{\u221e}\u2062\\sum_{i}s_{i}/\\sum_{i}s_{i}^{2}$ we guarantee that Equation (8) holds for every network. To test that our results hold over a range of disease scenarios, we repeat our analysis with $R_{0}^{\u221e}=2$, 3, and 4.\n",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "9ec510ef-943c-4243-b7c7-b959a4a81e7d",
+      "submission_id": "e3bbe1e5-363e-4284-9398-2a77817b0ea5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Niel Hens, Hasselt University & University of Antwerp Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62177.sa1](https://doi.org/10.7554/eLife.62177.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript makes an important point for studies of contagion in both human and animal populations. This paper provides a way of characterising heterogeneity in social systems. Furthermore, the proposed measure of social fluidity can be used to distinguish between different types of animal social systems. Hence, the measure is of relevance for studies of human and animal social networks.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Social fluidity mobilizes contagion in human and animal populations\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Niel Hens as the Reviewing Editor and Reviewer #3, and the evaluation has been overseen by Miles Davenport as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Jari Saramaki (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nPlease pay particular attention to the comments by Reviewer #1: items 1 and 2 and Reviewer #3: item 1 which focus on the relevance of this work. The other comments address punctual issues and/or clarifications; they should be looked at carefully and it would be good to organise your reply based on topics rather than a point-by-point reply.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nReviewer #1:\n\nThis is a well written paper on an interesting and important topic, characterizing the social contact frequency and network degree into a single measure, social fluidity. The concept is explained and mathematically derived, then applied to an analysis of 50 network data sets spanning 13 human and animal species. The authors then apply that parameter into a mathematical model for infectious disease dynamics to characterize its impact on transmission potential, via R. This is useful in developing understanding of the measure, and demonstrating its applicability in epidemiology. I have only relatively minor suggestions, mostly related to clarifying ideas and terms in the manuscript.\n\n1. The main concern is the treatment of time within the data and fluidity measure. The authors appropriate note this as a limitation in the Discussion section. Because the inputs to fluidity depend on degree and within-node contacts, the measurement time frame for both in each dataset is critical. The authors cite a paper to support the idea that degree scales with the observation length (citation 59), but that is a limited analysis of 3 human networks (2 of which were online convenience samples) that may not apply more broadly. It would be helpful to have more clarification on the range of time frames for data collection across the datasets to understand whether weighted cross-sectional networks are the best modeling approach here (versus modeling dynamic networks of edge formation and dissolution). This may be important in the comparative analysis of different contact types (aggression contacts versus grooming contacts).\n\n2. The authors establish the importance of the fluidity measure for comparative empirical research well, but It would also be helpful to have further clarity on its advantages for modeling over current approaches that might model network structure with two or more parameters. What are the broader benefits of this approach?\n\n3. It was not clear how the contact types (aggression versus grooming, eg) were defined. Were these a component of the secondary data, or did the current authors use a classification scheme? Some further details on the measurement of the data would be helpful.\n\n4. What are the implications of treating the system as closed and the network consisting only of non-isolates on the empirical comparisons and the epidemic modeling? These are assumptions required by the data, but not always realistic and could have a meaningful impact on the outcomes (e.g., non-differential misclassification for aggression contacts that may change the network structure, or include many isolates). The importance of these assumptions may depend on the measurement timeframe (i.e., less important if short observations).\n\nReviewer #2:\n\nThis manuscript makes an important point for studies of contagion in both human and animal populations: the heterogeneity of contact frequencies matters a lot. The individual-level heterogeneity of weights/contact frequencies in egocentric networks is nicely captured by the concept of social fluidity and the model parametrised by $\\phi$ whose fitted values clearly differ for datasets from different species (Figure 2). Finally, the spreading model shows that $\\phi$ has clear effects on R0 \u2013 the effect of ego-network weight heterogeneity on disease transmission is something that I have hypothesised myself as well, so I congratulate the authors for getting there first!\n\nIn my view, this paper makes several important contributions: in addition to the context of contagious disease, it provides a way of characterising heterogeneity in social systems and shows that it even works for distinguishing human contact networks under different circumstances (the Sociopatterns data sets). Furthermore, the proposed measure of social fluidity can be used to distinguish between different types of animal social systems. Hence, the measure is of relevance for studies of human and animal social networks.\n\nAs the science is solid, the results are important, and the manuscript is well and clearly written, I recommend publishing it, after some fairly straightforward clarifications/modifications.\n\n1) Would it be possible to justify the choice of the power-law form for Equation (2)? And would the results be sensitive to this choice \u2013 would using something like a log-normal or stretched exp yield similar results? (Intuitively, my expectation is that the exact form of the distribution should not matter too much as N is fairly low in all studied cases, so whatever is mathematically the most convenient distribution should be fine).\n\n2) page 3, bottom left column: \"There is no significant correlation between the mean number of interactions per individual (s) and social fluidity\u2026\" Has r^2 been calculated over all datasets or separately for one species over their respective data sets?\n\n\"\u2026which implies that sampling bias does not affect the estimation of social fluidity\". How this is to be interpreted depends on the answer to the above, but I am not certain if one can make this statement, at least if the correlation is over all species/datasets. I would think that it is difficult to escape some sampling bias (as for most network measures\u2026), unless one has several samples of different size for the same species under the same circumstances, and can show in those samples that $\\phi$ doesn't depend on N.\n\n\"Similarly, network size does not correlate with $\\phi$\u2026\" Again, is the correlation over all species?\n\n3) In the subsection \"Numerical validation using empirical networks\" it is stated that \"Since a large edge weight implies a high frequency of repeated interactions, networks with a higher mean weight tend to have lower basic reproductive number. Furthermore, variability in the distribution of weights\u2026\"\n\nWould the variability not be a requirement for a higher mean weight leading to lower R0, so that the cause of the lower R0 is the combination of higher weights and high variability? If one considers two networks with uniform weights that are otherwise identical but one has twice the mean weight, would that one not have a *higher* R0?\n\n4) Discussion: \"We see, for example, how the relationship between mixing and disease risk scales with population density. For social systems that have high values of social fluidity, $R_0^\\phi$ is highly sensitive to changes in N\u2026\" Is N conceptually the same as population density? Would, under the network paradigm, the average degree be a better proxy of population density?\n\nReviewer #3:\n\nThe authors define the concept of social fluidity to better define how social behaviour influences contagion process in human and animal populations. Whereas I believe the manuscript is well written, its current version requires a few clarifications.\n\n1. I think it's important to mention that the concept of social fluidity hasn't been tested in relation to infectious disease data. Does it provide a good/better fit to infectious disease data as compared to assumptions of frequency and density dependent mass action etc.\n\n2. In the social behavior model: the authors use frequency for the edge weight; should weighing not be done on the basis of risk assessment of these interactions?\n\n3. Please better motivate the use of the power-law form in equation (2). Have the authors considered alternatives?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Social fluidity mobilizes contagion in human and animal populations\" for further consideration by eLife. Your revised article has been evaluated by Miles Davenport (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n\u2013 In terms of the authors' reply on 'Was this relationship linear \u2026 ': Given that a Pearson correlation coefficient assumes linearity holds, one cannot measure strength of association in case of non-linearity. Please verify or use an alternative measure (see e.g. https://www.pnas.org/content/111/9/3354).\n\n\u2013 The authors use 100 bootstraps to quantify the uncertainty of phi; this seems small to me; why not use 1000 bootstraps (as well as assessing whether or not estimates of 5% and 95% percentiles are stable for that number)?\n",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "896290dd-a2dc-4d61-8c68-09af7e3ef1e6",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C1",
+      "claim": "Humans and other group-living animals tend to distribute their social effort disproportionately.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans and other group-living animals tend to distribute their social effort disproportionately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation in the abstract without specific data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "5b24fb40-449d-4729-bd4c-7b11f65faa41",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C2",
+      "claim": "Individuals predominantly interact with a small number of close companions while maintaining weaker social bonds with less familiar group members.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals predominantly interact with a small number of close companions while maintaining weaker social bonds with less familiar group members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established behavioral pattern in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "c1fc5ea7-4dc5-4b57-a1ae-afd30b56cefa",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C3",
+      "claim": "A single parameter, social fluidity, controls the rate of social mixing within the group.",
+      "claim_type": "EXPLICIT",
+      "source": "By incorporating this behavior into a mathematical model, we find that a single parameter, which we refer to as social fluidity, controls the rate of social mixing within the group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mathematical model developed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "a947bdf5-a1ea-4238-9c09-b1ac11225393",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C4",
+      "claim": "Large values of social fluidity correspond to gregarious behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Large values of social fluidity correspond to gregarious behavior, whereas small values signify the existence of persistent bonds between individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition derived from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "530d6fd2-ef42-4b73-9894-0bb182dd1a2b",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C5",
+      "claim": "Small values of social fluidity signify the existence of persistent bonds between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Large values of social fluidity correspond to gregarious behavior, whereas small values signify the existence of persistent bonds between individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition derived from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "28f3a1bc-53da-4b49-8528-172c96f028df",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C6",
+      "claim": "The social fluidity of 13 species was compared by applying the model to empirical human and animal social interaction data.",
+      "claim_type": "EXPLICIT",
+      "source": "We compare the social fluidity of 13 species by applying the model to empirical human and animal social interaction data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the empirical analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "7f4e3b49-1212-438f-9018-a9a94f6ba1ff",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C7",
+      "claim": "An analytical expression of the relationship between social fluidity and the basic reproductive number of an infectious disease was derived.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate how social behavior influences the likelihood of an epidemic outbreak, we derive an analytical expression of the relationship between social fluidity and the basic reproductive number of an infectious disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a mathematical derivation performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "306eafab-811b-4f94-bc28-22f0d30b2803",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C8",
+      "claim": "For species that form more stable social bonds, the model describes frequency-dependent transmission that is sensitive to changes in social fluidity.",
+      "claim_type": "EXPLICIT",
+      "source": "For species that form more stable social bonds, the model describes frequency-dependent transmission that is sensitive to changes in social fluidity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mathematical model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "309af804-a9a6-47b5-bab1-0d997950c09e",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C9",
+      "claim": "As social fluidity increases, animal-disease systems become increasingly density-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "As social fluidity increases, animal-disease systems become increasingly density-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mathematical model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "ba2f4d12-75e2-4cb5-83b6-5caaa09e1d8a",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C10",
+      "claim": "Social fluidity is a stronger predictor of disease outcomes than both group size and connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate that social fluidity is a stronger predictor of disease outcomes than both group size and connectivity, and it provides an integrated framework for both density-dependent and frequency-dependent transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through comparison of predictive power in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "455cdfde-35a0-46cf-9c98-2f80e2ad175e",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C11",
+      "claim": "Social fluidity provides an integrated framework for both density-dependent and frequency-dependent transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate that social fluidity is a stronger predictor of disease outcomes than both group size and connectivity, and it provides an integrated framework for both density-dependent and frequency-dependent transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "5f4b06a7-9ba3-401e-8d30-9bfc33305169",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C12",
+      "claim": "Social behavior allows the formation of social groups providing fitness advantages from greater access to resources and better protection from predators.",
+      "claim_type": "EXPLICIT",
+      "source": "It allows the formation of social groups providing fitness advantages from greater access to resources and better protection from predators (Krause and Ruxton, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Krause and Ruxton, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "b10da122-0592-4ba1-9075-a435203d7cd9",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C13",
+      "claim": "Structure within social groups can be found in the way individuals communicate across space, cooperate in sexual or parental behavior, or clash in territorial or mating conflicts.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure within these groups can be found in the way individuals communicate across space, cooperate in sexual or parental behavior, or clash in territorial or mating conflicts (Hinde, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hinde, 1976.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "109cc656-a30f-41a1-a19a-2e9d885a4fd8",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C14",
+      "claim": "Social interaction requiring shared physical space can be a conduit for the transmission of infectious disease.",
+      "claim_type": "EXPLICIT",
+      "source": "When social interaction requires shared physical space it can also be a conduit for the transmission of infectious disease (Altizer et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Altizer et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "131d6ad6-c6b7-4324-90ac-425b1505f005",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C15",
+      "claim": "In a typical infectious disease model, if the disease spreads through the environment then the transmission rate is assumed to scale proportionally to the local population density.",
+      "claim_type": "EXPLICIT",
+      "source": "In a typical infectious disease model, if the disease spreads through the environment then the transmission rate is assumed to scale proportionally to the local population density (de Jong et al., 1995; Hopkins et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to de Jong et al., 1995 and Hopkins et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "bf3f9910-cffc-4817-9b5f-ff4ea403beb9",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C16",
+      "claim": "If transmission requires close proximity encounters that only occur between bonded individuals then social connectivity is expected to determine the outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, if transmission requires close proximity encounters that only occur between bonded individuals then we expect social connectivity to determine the outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a theoretical expectation based on transmission mode.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "6e21e9e6-2ac1-4a3a-9958-5de0570f0008",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C17",
+      "claim": "Density-dependence and frequency-dependence are two paradigms known in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "These two paradigms are known in the literature as density-dependence and frequency-dependence (Silk et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Silk et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "941b0110-17e5-43cc-a0d7-e09960e208d9",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C18",
+      "claim": "Real diseases are not easy to categorize into density-dependence or frequency-dependence paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "The problem, however, is that real diseases are not so easy to categorize (Patterson and Ruckstuhl, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Patterson and Ruckstuhl, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "aec68166-d4ad-42c9-90e6-f8dda450d893",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C19",
+      "claim": "As social groups grow in size, new bonds must be created to maintain cohesiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, as social groups grow in size, new bonds must be created to maintain cohesiveness (Lehmann et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lehmann et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "2962ee24-b315-4dc7-86fa-23bc95adcfdd",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C20",
+      "claim": "To manage the time and cognitive effort required to create bonds, individuals tend to interact mostly with a small number of close companions while maintaining cohesion with the wider group through less frequent contact.",
+      "claim_type": "EXPLICIT",
+      "source": "To manage the time and cognitive effort required to create these bonds, individuals tend to interact mostly with a small number of close companions while maintaining cohesion with the wider group through less frequent contact (Silk, 2007; Sueur et al., 2011; Dakin and Ryder, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Silk, 2007; Sueur et al., 2011; and Dakin and Ryder, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "8f29de69-3039-457b-b5e3-61ddef0d9e23",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C21",
+      "claim": "For an infectious disease, disproportionate social effort creates fewer transmission opportunities than would be expected in a group with highly fluid social dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "For an infectious disease, this creates fewer transmission opportunities than we would expect to see in a group with highly fluid social dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the social behavior patterns described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "29320d48-d2bc-4162-90d2-86a133484e2a",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C22",
+      "claim": "The extent to which group size amplifies the transmission rate depends on how individuals choose to distribute their social effort between strong and weak ties.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent to which group size amplifies the transmission rate therefore depends on how individuals choose to distribute their social effort between strong and weak ties (Karsai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Karsai et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "e806db86-1a07-45dd-870a-677744b1af3a",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C23",
+      "claim": "Transmission rate has been observed to scale non-linearly with group size for a number of disease systems.",
+      "claim_type": "EXPLICIT",
+      "source": "While transmission rate has been observed to scale non-linearly with group size for a number of disease systems (Cross et al., 2013; Smith et al., 2009; Silk et al., 2017), it remains unclear how much this dependency is related to the internal social structure of the group",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cross et al., 2013; Smith et al., 2009; and Silk et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "178e047c-b158-4c5d-9b71-2f74decb36d8",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C24",
+      "claim": "It remains unclear how much the non-linear scaling of transmission rate with group size is related to the internal social structure of the group.",
+      "claim_type": "EXPLICIT",
+      "source": "While transmission rate has been observed to scale non-linearly with group size for a number of disease systems (Cross et al., 2013; Smith et al., 2009; Silk et al., 2017), it remains unclear how much this dependency is related to the internal social structure of the group",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "b89dd266-bc55-4408-b62b-a614efbcee93",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C25",
+      "claim": "Few studies observe social dynamics at sufficient detail while simultaneously monitoring the disease status of each individual.",
+      "claim_type": "EXPLICIT",
+      "source": "few studies observe social dynamics at sufficient detail while simultaneously monitoring the disease status of each individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a limitation in existing empirical studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "bfa8d468-057d-4451-bf96-62aefd85eedf",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C26",
+      "claim": "The social fluidity of 57 human and animal social systems was estimated using openly available data.",
+      "claim_type": "EXPLICIT",
+      "source": "Using openly available data, we estimate the social fluidity of 57 human and animal social systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the empirical analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "8c4d4ed4-eb55-4758-8837-03c5b79373ee",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C37",
+      "claim": "Social fluidity is independent of the distributions of strength (si) or degree (ki), and of the timescale of interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Being estimated from the relationship between strength and degree, and not their absolute values, social fluidity is a good candidate for comparing social behavior across different systems as it is independent of the distributions of si or ki, and of the timescale of interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the social fluidity measure derived from how it is estimated.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "f157bf9d-378d-425c-a1be-2930a5cf600f",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C38",
+      "claim": "Aggressive interactions have the highest social fluidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggressive interactions have the highest fluidity (which implies that most interactions are rarely repeated between the same individuals)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 2 showing estimated social fluidity values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "89a8f5e9-5641-43f1-98f6-f354d50223eb",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C39",
+      "claim": "High social fluidity in aggressive interactions implies that most interactions are rarely repeated between the same individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggressive interactions have the highest fluidity (which implies that most interactions are rarely repeated between the same individuals)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of what high fluidity means for aggressive interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "e3884182-42ee-4e8f-9445-9659ac9118f5",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C40",
+      "claim": "Grooming and other forms of social bonding have the lowest social fluidity.",
+      "claim_type": "EXPLICIT",
+      "source": "while grooming and other forms of social bonding have the lowest (which implies frequent repeated interactions between the same individuals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 2 showing estimated social fluidity values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "9ce9b6b7-9a3e-4a96-9fab-82ce37d6edd1",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C41",
+      "claim": "Low social fluidity in grooming and social bonding implies frequent repeated interactions between the same individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "while grooming and other forms of social bonding have the lowest (which implies frequent repeated interactions between the same individuals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of what low fluidity means for grooming interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "642a0611-846f-452c-ad1e-1ef9d9c2a1b7",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C45",
+      "claim": "Humans take a range of social fluidity values that depend on the social environment.",
+      "claim_type": "EXPLICIT",
+      "source": "humans take a range of values that depend on the social environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "5359765d-9107-4e69-9128-18e1b59ff3a7",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C47",
+      "claim": "Sheep, bison, and cattle have different social fluidity compared to kangaroos and bats, although they are all categorized as fission-fusion species.",
+      "claim_type": "EXPLICIT",
+      "source": "sheep, bison, and cattle have different social fluidity compared to kangaroos and bats, although they are all categorized as fission-fusion species (Sah et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the data with citation to Sah et al., 2018 for the fission-fusion categorization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "d963351d-ee23-4b29-8d1d-1a252a66e125",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C48",
+      "claim": "There is no evidence that social fluidity scales with the size of the network across the 57 networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the 57 networks, there is no evidence that social fluidity scales with the size of the network or the number of observations per individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "4d1f4cdf-5780-4023-8a2e-07a773088504",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C49",
+      "claim": "There is no evidence that social fluidity scales with the number of observations per individual across the 57 networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the 57 networks, there is no evidence that social fluidity scales with the size of the network or the number of observations per individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "1c8d7d32-61dd-414d-9498-9accc04ba1d4",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C59",
+      "claim": "The negative correlation between modularity and \u03d5 is expected because individuals tend to be loyal to those within the same module while maintaining weaker connections with the remaining network.",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected as individuals tend to be loyal to those within the same module while maintaining weaker connections with the remaining network",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the observed correlation based on network structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "e92e64cf-04e6-4e0a-a09c-c6e2abb5fb94",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C60",
+      "claim": "In all but one network the mean weight of edges within modules is higher than the mean weight of edges between modules.",
+      "claim_type": "EXPLICIT",
+      "source": "in all but one network the mean weight of edges within modules is higher than the mean weight of edges between modules (supplementary document).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "0685b838-a676-4e8f-bd19-2b95f25f7ab5",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C63",
+      "claim": "The node will recover from infection with rate \u03b3, assuming an exponential distribution of the length of the infectious period.",
+      "claim_type": "EXPLICIT",
+      "source": "The node will recover from infection with rate \u03b3, assuming an exponential distribution of the length of the infectious period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption for disease recovery.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "63e6d9a1-7153-4b6b-a289-3a1ec2ff7f58",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C71",
+      "claim": "Infected individuals tend to be those with a greater number of social partners due to heterogeneous levels of social connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "To apply this analogue of a reproductive number to an animal-disease system, we need to account for heterogeneous levels of social connectivity in the given population and thus the tendency for infected individuals to be those with a greater number of social partners (Anderson et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Anderson et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "06b664f9-2399-4585-accc-5872e2007c8a",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C72",
+      "claim": "Disease was simulated through the interactions that occurred in the empirical data.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated the spread of disease through the interactions that occurred in the empirical data (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "942d6b8d-d3a6-4bc9-9231-3cd4ad05db16",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C75",
+      "claim": "Excess degree has a Pearson correlation coefficient of 0.64 with R\u2080^Sim(g=1).",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Table 1 from simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "ff5bc256-1dec-4906-be00-3f0c0014dc30",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C76",
+      "claim": "Mean degree has a Pearson correlation coefficient of 0.53 with R\u2080^Sim(g=1).",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Table 1 from simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "5845957a-f8cf-4509-a423-9e766cbc6ad2",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C77",
+      "claim": "Network size has a Pearson correlation coefficient of 0.47 with R\u2080^Sim(g=1).",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Table 1 from simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "43a49ee5-ccf7-4eb3-94a8-73e3398c7304",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C78",
+      "claim": "Mean strength has a Pearson correlation coefficient of -0.07 with R\u2080^Sim(g=1) and is not significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Table 1 from simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "6feff926-c514-42fa-8a79-b17ef97f35b4",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C80",
+      "claim": "Calibrating \u03b2 to keep R\u2080^\u221e constant eliminates the effect of contact frequency, allowing the contribution of other network characteristics to be compared.",
+      "claim_type": "EXPLICIT",
+      "source": "While contact frequency is known to be one of the major contributors to disease risk, calibrating \u03b2 in this way eliminates its effect, allowing the contribution of other network characteristics to be compared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for the calibration approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "299e2cc1-abe1-44a5-b57c-c74781c375ec",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C82",
+      "claim": "Higher mean edge weight does not necessarily imply higher transmission probability over the edges of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "and higher mean edge weight does not necessarily imply higher transmission probability over the edges of the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the parameter calibration method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "cb69c861-962d-4b56-b97d-9d13b803d3e3",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C83",
+      "claim": "Indicators of disease risk derived solely from the degree distribution are unreliable and the role of edge weights should not be neglected.",
+      "claim_type": "EXPLICIT",
+      "source": "These correlations support a known result regarding repeat contacts in network models of disease spread: that indicators of disease risk that are derived solely from the degree distribution are unreliable and the role of edge weights should not be neglected (Smieszek et al., 2009; Stehl\u00e9 et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Smieszek et al., 2009 and Stehl\u00e9 et al., 2011b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "9eda486d-17ba-40d7-92c9-96621323053d",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C84",
+      "claim": "After transmission has occurred from one individual to another, repeating the same interaction serves no advantage for disease.",
+      "claim_type": "EXPLICIT",
+      "source": "After transmission has occurred from one individual to another, repeating the same interaction serves no advantage for disease (most directly transmitted microparasites are not dose-dependent).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle with a parenthetical note about microparasites.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "c4562e10-0c55-4a29-9bc9-4b19de27e0a7",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C85",
+      "claim": "Most directly transmitted microparasites are not dose-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "(most directly transmitted microparasites are not dose-dependent)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "ce75e63c-6c49-4979-8443-3f08d1cddb28",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C86",
+      "claim": "A large edge weight implies a high frequency of repeated interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since a large edge weight implies a high frequency of repeated interactions, networks with a higher mean weight tend to have lower basic reproductive numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the definition of edge weight.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "56fef701-fe7e-4fe5-a0d7-efe8253bc875",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C87",
+      "claim": "Networks with a higher mean weight tend to have lower basic reproductive numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Since a large edge weight implies a high frequency of repeated interactions, networks with a higher mean weight tend to have lower basic reproductive numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between repeated interactions and transmission.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "fe45f019-42a3-46bc-8d9e-ce035cfcf8d3",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C88",
+      "claim": "Variability in the distribution of weights concentrates a larger proportion of interactions onto a small number of edges, further increasing the number of repeat interactions and reducing the reproductive number.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, variability in the distribution of weights concentrates a yet larger proportion of interactions onto a small number of edges, further increasing the number of repeat interactions and reducing the reproductive number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the effect of weight heterogeneity on interaction patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "a2a9aeac-4b72-48bb-a470-e04a1a81efea",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C90",
+      "claim": "Transmission events occur mostly within the module of the seed node, with weaker social ties facilitating transmission to other modules.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with other evidence (Sah et al., 2017), this suggests that transmission events occur mostly within the module of the seed node, with weaker social ties facilitating transmission to other modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sah et al., 2017 and is consistent with the data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "e71cfcc8-9304-4384-8510-e3e558d09a4f",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C94",
+      "claim": "Prediction accuracy at generation g=2 is negatively correlated with the mean clustering coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction accuracy at this generation is negatively correlated with the mean clustering coefficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "72515df8-80a0-474c-8893-cd44a2b7fc48",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C97",
+      "claim": "Social fluidity quantifies how much mixing exists within the social relationships of a population.",
+      "claim_type": "EXPLICIT",
+      "source": "We proposed a measure of fluidity in social behavior which quantifies how much mixing exists within the social relationships of a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the main contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "351bbc61-8fe8-4f07-9790-9ccf9d0c7814",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C98",
+      "claim": "The methodology reduces all social network factors to a single quantity allowing comparisons across a range of human and animal social systems.",
+      "claim_type": "EXPLICIT",
+      "source": "While social networks can be measured with a variety of metrics including size, connectivity, contact heterogeneity and frequency, our methodology reduces all such factors to a single quantity allowing comparisons across a range of human and animal social systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological contribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "98e0773f-a43a-4c2a-826f-cee21714e471",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C99",
+      "claim": "Social fluidity correlates with both the density of social ties (mean degree) and the variability in the weight of those ties.",
+      "claim_type": "EXPLICIT",
+      "source": "Social fluidity correlates with both the density of social ties (mean degree) and the variability in the weight of those ties, although these quantities do not correlate with each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "dcd7467a-2b5b-4b0d-a719-1ba20a63751b",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C100",
+      "claim": "Mean degree and weight variability do not correlate with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Social fluidity correlates with both the density of social ties (mean degree) and the variability in the weight of those ties, although these quantities do not correlate with each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "51d6b2d3-802f-40f0-9418-9d8bb08f5c26",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C101",
+      "claim": "Social fluidity is able to combine mean degree and weight variability seamlessly in one quantity.",
+      "claim_type": "EXPLICIT",
+      "source": "Social fluidity is thus able to combine these two aspects seamlessly in one quantity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlations found.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "b053c3e5-c5d3-496b-9284-efa597117ae1",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C102",
+      "claim": "Aggressive interactions indicate a possible learning effect whereby each aggressive encounter is followed by a period during which individuals avoid further aggression with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify aggressive interactions as the most socially fluid; this indicates a possible learning effect whereby each aggressive encounter is followed by a period during which individuals avoid further aggression with each other (Parker, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by citation to Parker, 1974.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "6a325c4c-06a4-4e1f-a230-626768fb643c",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C103",
+      "claim": "Interactions that strengthen bonds such as grooming in monkeys and food-sharing in bats are at the opposite end of the social fluidity scale from aggressive interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "At the opposite end of the scale, we find interactions that strengthen bonds (and thus require repeated interactions) such as grooming in monkeys (Seyfarth and Cheney, 1984) and food-sharing in bats (Carter and Wilkinson, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Seyfarth and Cheney, 1984 and Carter and Wilkinson, 2013.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "314a364d-6ddb-4991-aa7c-e211798c2eef",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C104",
+      "claim": "Food-sharing ants are far more fluid than bats, despite performing the same kind of interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that food-sharing ants are far more fluid than bats, despite performing the same kind of interaction, reflects their eusocial nature and the absence of any need to consistently reinforce bonds with their kin (H\u00f6lldobler and Wilson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data with interpretation supported by citation to H\u00f6lldobler and Wilson, 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "babb5743-bf8b-4198-a22f-608093be39e2",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C105",
+      "claim": "The difference in social fluidity between food-sharing ants and bats reflects their eusocial nature and the absence of any need to consistently reinforce bonds with their kin.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that food-sharing ants are far more fluid than bats, despite performing the same kind of interaction, reflects their eusocial nature and the absence of any need to consistently reinforce bonds with their kin (H\u00f6lldobler and Wilson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by citation to H\u00f6lldobler and Wilson, 2009.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "6db73c0d-dfc5-4feb-a0e8-2096a75307c8",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C106",
+      "claim": "The disproportionate distribution of social effort has been directly observed in human telecommunication.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomena has been directly observed in human telecommunication (Mac Carron et al., 2016; Saram\u00e4ki et al., 2014; Gon\u00e7alves et al., 2011; Tamarit et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mac Carron et al., 2016; Saram\u00e4ki et al., 2014; Gon\u00e7alves et al., 2011; and Tamarit et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "9d1a6dbb-97cb-4478-bc07-1cf59ec3275f",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C107",
+      "claim": "Quantifying the disproportionate distribution of social effort in animal systems has been held back by the limitations of the data, such as the bias introduced by variation in activity levels across the social group.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying this aspect of sociality in animal systems, however, has been held back by the limitations of the data, such as the bias introduced by variation in activity levels across the social group (Di Bitetti, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Di Bitetti, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "675540d1-ac50-4f44-9fef-15d34b7c2ae1",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C108",
+      "claim": "Heterogeneous interaction frequencies and temporal dynamics have become common in epidemiological models.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while heterogeneous interaction frequencies and temporal dynamics have become common in epidemiological models (Rocha and Blondel, 2013; Colman et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rocha and Blondel, 2013 and Colman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "9531c40c-df9f-46e9-b2a1-0151ffd4ed1b",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C109",
+      "claim": "The results highlight the importance of including variability in how the individual chooses to expend their social effort in epidemiological models.",
+      "claim_type": "EXPLICIT",
+      "source": "our results highlight the importance of including variability in how the individual chooses to expend their social effort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "98c63729-5e0b-4a75-8c3e-9777f50180af",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C110",
+      "claim": "The degree of an individual is known to scale with the length of the observation period.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of an individual, for example, is known to scale with the length of the observation period (Perra et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Perra et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "162f42c0-7cf8-442b-ad71-dcde2385f7f1",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C111",
+      "claim": "Social fluidity can be affected by the length of the observation window.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, social fluidity can be affected by the length of the observation window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the measure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "2f6ceca6-fa8a-4d95-a832-df476fd48c6a",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C112",
+      "claim": "The model focuses on how degree scales with the number of observations, making the results relatively robust against variability in observation window length.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since our model focuses not on the absolute value of degree, but on how degree scales with the number of observations, the results we obtain are relatively robust against this variability (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by results shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "6b1dba8e-3bc7-4a7e-a5f9-9b7e395955e7",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C113",
+      "claim": "Observed interactions are typically assumed to persist over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, observed interactions are typically assumed to persist over time (Perreault, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Perreault, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "01614466-8f1b-43d1-b2f4-5e05bf1487a8",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C114",
+      "claim": "In the social fluidity model, individual interactions do not persist over time; only the distribution of edge weights remains constant.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model this is not the case; only the distribution of edge weights remains constant, an assumption consistent with growing evidence (Miritello et al., 2013; Centellegher et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Miritello et al., 2013 and Centellegher et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "ce72dbef-c1d3-4e07-8c68-e0d6224f998e",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C115",
+      "claim": "If the duration of a study allows for substantial developments in the group structure, then a model of edge formation and dissolution may be preferred.",
+      "claim_type": "EXPLICIT",
+      "source": "If the duration of a study allows for substantial developments in the group structure, for example, then a model of edge formation and dissolution may be preferred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is advice on when alternative models might be more appropriate.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "5c0ace48-cf88-4a7d-9e28-533c068df8d1",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C116",
+      "claim": "The extent to which an interaction is capable of transmission can depend on the pathogen's transmission mode and the infectious dose required.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we do not know the extent to which an interaction, as defined for each network, is capable of transmission which can depend on the pathogen's transmission mode and the infectious dose required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "1701823d-866b-41b2-818a-812b73298128",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C117",
+      "claim": "The transmission probability is unlikely to be the same for all interactions within the group since the duration of contact is known to be important for disease spread.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the transmission probability is unlikely to be the same for all interactions within the group since, for example, the duration of contact is known to be important for disease spread (Stehl\u00e9 et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Stehl\u00e9 et al., 2011b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "1fd89ad3-b7ab-4026-86bd-230d632a3db7",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C118",
+      "claim": "The duration of each contact was not included explicitly in the model as this information was only available in a fraction of the datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not include explicitly the duration of each contact in our model as this information was only available in a fraction of the datasets (Barrat et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a modeling choice with citation to Barrat et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "76f7bceb-7c25-48fb-8098-b1b44678dc85",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C119",
+      "claim": "There is potential to improve the applicability of this model as more high resolution data becomes openly available.",
+      "claim_type": "EXPLICIT",
+      "source": "There is therefore potential to improve the applicability of this model as more high resolution data becomes openly available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "18bf472c-c673-4ed8-bea5-5b94cd4063d9",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C120",
+      "claim": "The estimate of reproductive number derived from social fluidity provides a better predictor for the epidemic risk of a host population than predictors based on density or degree only.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimate of reproductive number derived from social fluidity provides a better predictor for the epidemic risk of a host population, going beyond predictors based on density or degree only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the comparative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "e121a716-5b46-4ff2-a48b-8c1c776ecb56",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C122",
+      "claim": "The discrepancy in the risk prediction between conference and school comes from the lower frequency of repeated contacts between individuals in the conference, compared to the school.",
+      "claim_type": "EXPLICIT",
+      "source": "The discrepancy in the risk prediction comes from the lower frequency of repeated contacts between individuals in the conference, compared to the school.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the observed difference.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "06d8e02c-26b2-4669-a516-9abcb71441dc",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C123",
+      "claim": "Interactions between infectious individuals and those they have previously infected are redundant in terms of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between infectious individuals and those they have previously infected are redundant in terms of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a principle of disease transmission.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "b70d6ce5-051a-4fc1-8052-08d7f3fbd688",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C127",
+      "claim": "The relationship between mixing and disease risk scaling with group size corroborates past work on the scaling of transmission being associated to heterogeneity in contact.",
+      "claim_type": "EXPLICIT",
+      "source": "This corroborates past work on the scaling of transmission being associated to heterogeneity in contact (Begon et al., 2002; Ferrari et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Begon et al., 2002 and Ferrari et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "d2cb3791-aa77-4e6f-a017-5ec241b19c8c",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C128",
+      "claim": "The model captures in a coherent theoretical framework both density-dependence and frequency-dependence, with social fluidity as the measure to tune from one to the other in a continuous way.",
+      "claim_type": "EXPLICIT",
+      "source": "Going beyond previous work, our model captures in a coherent theoretical framework both density-dependence and frequency-dependence, and social fluidity is the measure to tune from one to the other in a continuous way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the theoretical contribution of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "58c56f69-c8ae-45e6-b8bc-95c4c08bdcb0",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C129",
+      "claim": "Many empirical studies support a transmission function that is somewhere between density-dependence and frequency-dependence modeling paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "Since many empirical studies support a transmission function that is somewhere between these two modeling paradigms (Smith et al., 2009; Cross et al., 2013; Borremans et al., 2017; Hopkins et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Smith et al., 2009; Cross et al., 2013; Borremans et al., 2017; and Hopkins et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "e778f928-efbb-4a07-9554-145f90c8cb46",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C130",
+      "claim": "The modeling approaches applied in this paper can be carried forward to inform transmission relationships in future disease studies.",
+      "claim_type": "EXPLICIT",
+      "source": "the modeling approaches applied in this paper can be carried forward to inform transmission relationships in future disease studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential application of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "f8a4b4e1-303f-42ba-917a-321e28650c78",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C131",
+      "claim": "Mean clustering coefficients were computed using the networkx Python library.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean clustering coefficients were computed using the networkx Python library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a computational method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "3cf17759-2927-44db-9f8e-01e0e80c62c9",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C132",
+      "claim": "The hypergeometric function in equation (3) was evaluated using the hyp2f1 function from the scipy.special Python library.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate the hypergeometric function in (3) we used the hyp2f1 function from the scipy.special Python library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a computational method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "1e55e005-926a-40b4-a6c6-ae66e7ad00d1",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C133",
+      "claim": "Numerical solutions to Equation (4) were obtained using the fsolve function from the scipy.optimize Python library.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerical solutions to Equation (4) using the fsolve function from the scipy.optimize Python library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a computational method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "460cd87a-1a93-4325-b7cd-628df4313600",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C134",
+      "claim": "Adjusted mutual information was computed using adjusted mutual info score from the sklearn.metrics library.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjusted mutual information was computed using adjusted mutual info score from the sklearn.metrics library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a computational method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "68f2ee59-e240-4241-a90b-cac2182dddab",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C135",
+      "claim": "All scripts, data, and documentation used in this study are available through https://github.com/EwanColman/Social-Fluidity.",
+      "claim_type": "EXPLICIT",
+      "source": "All scripts, data, and documentation used in this study are available through https://github.com/EwanColman/Social-Fluidity (Colman, 2021, copy archived at swh:1:rev:90b27e1b84ce4417633885cd260c89bbf1b07eac).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about data and code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "dff21391-706c-439b-b460-a026558ba43b",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C136",
+      "claim": "Only freely available downloadable sources of data have been used for this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Only freely available downloadable sources of data have been used for this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "fef4289a-19c7-432d-91b4-0a3e4f957ef5",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C137",
+      "claim": "For human contact datasets, any sequence of consecutive time intervals for which contact is detected between two individuals is considered to be one interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Any sequence of consecutive time intervals for which contact is detected between two individuals is considered to be one interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "f801efb1-4931-4363-bfc6-b4d6b2e70f4d",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C138",
+      "claim": "To exclude contacts detected while participants momentarily walked past one another, only contacts detected in at least two consecutive intervals are considered interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude contacts detected while participants momentarily walked past one another, only contacts detected in at least two consecutive intervals are considered interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "40c28de8-4006-42b9-bee0-57fe1841dead",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C139",
+      "claim": "The first hour of recorded data was used for each bee colony.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the first hour of recorded data for each colony (Gernat et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection with citation to Gernat et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "d54778ff-dfa9-476c-b262-b338dfb23440",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C140",
+      "claim": "For bats that were studied on more than one occasion, only the first day they were observed was used.",
+      "claim_type": "EXPLICIT",
+      "source": "For bats that were studied on more than one occasion we use only the first day they were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "f0f8f0ae-471f-4dae-8660-df4c9721b325",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C141",
+      "claim": "The shark data were divided into six datasets, each one constructed from 10 consecutive observation bouts, spread out evenly through the 46-day period over which the data were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "The shark data were divided into six datasets, each one constructed from 10 consecutive observation bouts, and spread out evenly through the 46-day period over which the data were collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "559c0506-505b-41c6-85a3-3c5a57f0c5c2",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C142",
+      "claim": "The bat network was omitted from the disease simulation part since these data were collected over a series of independent experiments carried out at different times and under different experimental treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "The the bat network was omitted from this part since these data were collected over a series of independent experiments carried out at different times and under different experimental treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why certain data were excluded from analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "cbe11d59-f9bc-40b2-8fe4-2891322347de",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C143",
+      "claim": "In one run of the simulation, one seed node is randomly chosen from the network and transitions to the infectious state at a randomly selected point in time during the duration of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "In one run of the simulation, one seed node is randomly chosen from the network and, at a randomly selected point in time during the duration of the data, transitions to the infectious state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation initialization method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "15fe2941-0c2d-4f07-a0fc-bc8ca504e0cb",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C145",
+      "claim": "During the infectious period, any contact an infectious individual has with other individuals who have not previously been infected will cause an infection with probability \u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "During this time, any contact they have with other individuals who have not previously been infected will cause an infection with probability \u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the transmission mechanism in the simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "2fac8a1b-f049-45c7-87b1-ba3ad42bbaa9",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C146",
+      "claim": "The simulation runs until all individuals who were infected at the second generation of the disease have recovered.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation runs until all individuals who were infected at the second generation of the disease, that is those infected by those infected by the seed, have recovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation termination criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "8d257da6-c65d-40ad-bc55-3f39523f4cef",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C147",
+      "claim": "The datasets are 'looped' to ensure that the timeframe of the data collection does not influence the outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "The datasets are 'looped' to ensure that the timeframe of the data collection does not influence the outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a simulation design choice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "8efef284-0d1a-4838-9af1-3d6b6fb8a795",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C148",
+      "claim": "Immediately after the latest interaction, the interactions are repeated exactly as they were originally, continuing until the termination criteria is met.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, immediately after the latest interaction, the interactions are repeated exactly as they were originally. This continues to happen until the termination criteria is met.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the looping mechanism in the simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "663d078e-b1f6-43f7-bd87-dc89bd6b12e6",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "claim_id": "C149",
+      "claim": "The parameters were set to normalise for the variation in contacts rates between networks.",
+      "claim_type": "EXPLICIT",
+      "source": "We set the parameters to normalise for the variation in contacts rates between networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameter calibration approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d7c26e97-f3e4-4470-b3be-afd115562dd6",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors introduce a mathematical model where a single parameter called social fluidity (\u03c6) controls the rate of social mixing within groups. Large values of \u03c6 correspond to gregarious behavior with evenly distributed social effort, while small values signify persistent bonds with disproportionate social effort. Social fluidity is independent of the distributions of strength or degree and the timescale of interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C37 collectively establish the social fluidity parameter and its interpretation. The mathematical model (Equations 1-4) provides a rigorous foundation, and the independence from absolute values (C37) is demonstrated through the model's construction based on relationships rather than absolute values. The conceptual framework is internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "585016d2-805c-47b8-8edb-69a587fef566",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Social fluidity was estimated for 57 human and animal social systems using empirical data. Aggressive interactions showed the highest social fluidity (rarely repeated interactions), while grooming and social bonding showed the lowest (frequent repeated interactions). Humans showed variable social fluidity depending on environment. Social fluidity did not scale with network size or number of observations per individual.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C38-C41, C45, C47-C49 are supported by Figure 2 and Figure 2\u2014figure supplement 2, which show empirical estimates across diverse systems. Statistical tests (Spearman correlations, p-values) support the lack of scaling with network size and observations. The bootstrap confidence intervals provide uncertainty quantification. The data processing methods are described in Materials and Methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "23fbb863-fce8-428e-98d9-16c79e435994",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Social fluidity correlates with both mean degree (density of social ties) and variability in edge weights, although these two quantities do not correlate with each other. Social fluidity seamlessly combines these two independent aspects of social behavior into one quantity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C101 are supported by reported Spearman correlations (r\u00b2=0.21 for mean degree, r\u00b2=0.46 for weight variability, both p<0.001) and the lack of correlation between mean degree and weight variability (r\u00b2=0.01, p=0.54). This demonstrates that \u03c6 captures two orthogonal dimensions of social structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "0b14b2fc-7900-4246-a22d-4d76faaabef1",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors derived an analytical expression relating social fluidity to the basic reproductive number (R\u2080) of infectious disease. For species with stable social bonds (low \u03c6), the model describes frequency-dependent transmission sensitive to social fluidity changes. As social fluidity increases, systems become increasingly density-dependent. The model provides an integrated framework unifying density-dependent and frequency-dependent transmission paradigms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C11, and C128 are supported by the mathematical derivation (Equations 5-6) and Figure 3, which shows how R\u2080^\u03c6 varies with population size N for different \u03c6 values. The theoretical framework demonstrates the continuous transition from frequency-dependence (low \u03c6) to density-dependence (high \u03c6), providing mathematical rigor to the unification claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "24ee777c-ab0a-4d6c-9d53-096c51dd7895",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Social fluidity is a stronger predictor of disease outcomes than group size and connectivity. The social fluidity-derived reproductive number (R\u2080^Est) showed the highest correlation with simulated disease outcomes (r=0.91), outperforming excess degree (r=0.64), mean degree (r=0.53), and network size (r=0.47).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C72, C75-C78, and C120 are supported by Table 1 showing Pearson correlations between network metrics and simulated R\u2080^Sim(g=1). The disease simulations (C72) provide empirical validation. Statistical significance (p<0.01) is reported for key correlations. The calibration approach (controlling for contact frequency) strengthens the comparative analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "34cc464a-3fa5-4e88-8e23-524aeef84ae0",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Indicators of disease risk derived solely from degree distribution are unreliable; edge weights must be considered. Networks with higher mean edge weight have lower basic reproductive numbers because repeated interactions between the same individuals do not provide additional transmission opportunities for most directly transmitted microparasites (which are not dose-dependent).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 are supported by citations (Smieszek et al., 2009; Stehl\u00e9 et al., 2011b) and the simulation results showing negative correlation between mean edge weight and R\u2080 (Table 1). The logical reasoning about repeated interactions being redundant for transmission is sound for non-dose-dependent pathogens. However, the generalization about \"most\" microparasites (C85) could benefit from more specific evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "6f945d39-97f7-4667-9435-be8612439755",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Aggressive interactions show the highest social fluidity, possibly indicating a learning effect where individuals avoid further aggression after encounters. Bond-strengthening interactions (grooming in monkeys, food-sharing in bats) show the lowest fluidity. Food-sharing ants are more fluid than bats despite similar interaction types, reflecting their eusocial nature and lack of need to reinforce kin bonds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 are supported by Figure 2 data and appropriate citations (Parker 1974; Seyfarth and Cheney 1984; Carter and Wilkinson 2013; H\u00f6lldobler and Wilson 2009). The interpretations are reasonable given the empirical patterns. The learning effect explanation (C102) is appropriately qualified as \"possible\" rather than definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "308a56d9-f2b8-4f26-9fc9-ea1bbe54e5b1",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Transmission events occur mostly within modules of the seed node, with weaker social ties facilitating transmission to other modules. Prediction accuracy at generation g=2 is negatively correlated with mean clustering coefficient, consistent with accelerated susceptible depletion in clustered networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90 and C94 are supported by simulation results and citation to Sah et al. 2017. The negative correlation with clustering is explained by known network epidemic dynamics (Miller 2009; Smieszek et al. 2009). The model's reduced accuracy at g=2 in clustered networks is acknowledged as a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "809a6efa-2594-49fd-b184-6bfde1e8cbd9",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While social fluidity can be affected by observation window length (as degree scales with observation period), the model's focus on how degree scales with number of observations rather than absolute values makes results relatively robust against this variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C112 are supported by citation (Perra et al. 2012) and Figure 2\u2014figure supplement 1, which demonstrates robustness when using only 50% of interactions. The relative approach (scaling relationships) rather than absolute values provides methodological strength against temporal sampling bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "0093d002-ecc6-4562-94bb-0c4bf30d2294",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Unlike typical assumptions that observed interactions persist over time, the social fluidity model assumes only the distribution of edge weights remains constant, not individual interactions. This assumption is consistent with growing evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C114 are supported by citations (Perreault 2010 for typical assumptions; Miritello et al. 2013 and Centellegher et al. 2017 for supporting evidence). This represents a departure from standard network modeling assumptions with empirical justification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "1f5e75af-177c-468d-b66a-b5d8639cc42a",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model does not account for variation in transmission capability across interaction types (which depends on pathogen transmission mode and infectious dose) or heterogeneous transmission probabilities within groups (e.g., contact duration effects). Contact duration was not explicitly included because this information was only available for a fraction of datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C116-C118 appropriately acknowledge model limitations. The citation to Stehl\u00e9 et al. 2011b supports the importance of contact duration. The data availability constraint (Barrat et al. 2014) justifies the modeling choice. These are honest limitations that do not undermine the main results but indicate areas for future improvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "0b39f9fa-1b92-4f74-91e6-69f801cb5fc0",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Computational methods used standard Python libraries (networkx, scipy, sklearn). All scripts, data, and documentation are available on GitHub. Only freely available downloadable data sources were used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C131-C136 describe computational methods and data availability. The use of standard libraries and public data repositories supports reproducibility. The GitHub repository (with archived version) provides transparency. These are methodological details that support the overall work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Data processing methods included defining interactions as consecutive contact intervals (\u22652 intervals for humans to exclude transient contacts), selecting specific time windows for different species, and excluding certain datasets from disease simulations when inappropriate. Disease simulations used random seed selection, exponential infectious periods, probability-based transmission, and dataset looping to avoid temporal bias. Parameters were calibrated to normalize for contact rate variation between networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C137-C149 describe data processing and simulation methods in detail. The methods are clearly specified with appropriate citations (e.g., Gernat et al. 2018). The exclusion criteria (C142) and calibration approach (C149) are justified. The looping mechanism (C147-C148) addresses temporal boundary effects. These methodological choices are reasonable and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establish that group-living animals distribute social effort disproportionately, interacting more with close companions while maintaining weaker bonds with others. Social interaction can transmit disease, with transmission traditionally modeled as either density-dependent or frequency-dependent. However, real diseases are difficult to categorize, and the relationship between group social structure and disease transmission scaling remains unclear due to limited empirical studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C12-C25 provide background context supported by appropriate citations (Krause and Ruxton 2002; Hinde 1976; Altizer et al. 2003; de Jong et al. 1995; Hopkins et al. 2020; Silk et al. 2017; Patterson and Ruckstuhl 2013; Lehmann et al. 2007; Silk 2007; Sueur et al. 2011; Dakin and Ryder 2020; Karsai et al. 2014; Cross et al. 2013; Smith et al. 2009). These establish the motivation and knowledge gaps addressed by the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "8a924c07-b15a-4307-b689-6c102f94010a",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The disease model assumes exponential recovery with rate \u03b3 and accounts for heterogeneous social connectivity, recognizing that infected individuals tend to be those with more social partners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63 and C71 describe standard epidemiological modeling assumptions. The exponential recovery assumption is common in SIR-type models. The heterogeneity consideration (C71) is supported by citation to Anderson et al. 1986 and is addressed through the excess degree formulation in Equation 7.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "a70464d3-1c11-4a0e-8fa3-1e522f0aaa35",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Calibrating \u03b2 to keep R\u2080^\u221e constant eliminates the effect of contact frequency, allowing comparison of other network characteristics. Under this calibration, higher mean edge weight does not necessarily imply higher transmission probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80 and C82 describe the parameter calibration strategy (Equation 8) that normalizes for contact rate variation. This methodological choice is justified and allows isolation of structural effects from frequency effects. The consequence (C82) logically follows from the calibration approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "54dfc2ec-2cb4-4ffe-8f46-255a5ca2fa16",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose social fluidity as a measure quantifying social mixing within populations, reducing multiple social network factors (size, connectivity, contact heterogeneity, frequency) to a single quantity enabling cross-system comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 summarize the main methodological contribution. The reduction to a single parameter is achieved through the mathematical model (Equations 1-4) and validated through empirical application to 57 networks. This represents a significant conceptual and methodological advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "b59d21a6-3fc9-4358-94ff-5db1582a1d7c",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Disproportionate distribution of social effort has been observed in human telecommunication but quantification in animal systems has been limited by data constraints. While heterogeneous interaction frequencies are common in epidemiological models, the results highlight the importance of including variability in individual social effort allocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C109 contextualize the work within existing literature. Citations support observations in human systems (Mac Carron et al. 2016; Saram\u00e4ki et al. 2014; Gon\u00e7alves et al. 2011; Tamarit et al. 2018), limitations in animal studies (Di Bitetti 2000), and current modeling approaches (Rocha and Blondel 2013; Colman et al. 2018). The conclusion (C109) appropriately follows from the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "6e065337-a297-4eb9-b385-191a6df4e2b9",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The discrepancy in epidemic risk between conference and school settings (despite similar size and connectivity) comes from lower frequency of repeated contacts in conferences. Interactions between infectious individuals and previously infected individuals are redundant for transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C122-C123 provide a concrete example illustrating the model's predictive power. The conference (R\u2080^Est=1.60, \u03c6=0.66) vs. school (R\u2080^Est=1.39, \u03c6=0.40) comparison demonstrates how social fluidity captures transmission risk beyond simple network metrics. The redundancy principle (C123) is fundamental to the model's logic.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "67376509-afff-43b4-a0b0-a11c9f5a9356",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The relationship between mixing and disease risk scaling with group size corroborates past work on transmission scaling with contact heterogeneity. Many empirical studies support transmission functions between density-dependence and frequency-dependence paradigms. The modeling approaches can inform transmission relationships in future disease studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C127, C129-C130 contextualize findings within existing literature (Begon et al. 2002; Ferrari et al. 2011; Smith et al. 2009; Cross et al. 2013; Borremans et al. 2017; Hopkins et al. 2020). The claim about future applicability (C130) is appropriately qualified as potential rather than demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "e8ca9e73-2292-4280-b541-b4e5b6d34f2b",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The negative correlation between modularity and \u03c6 is expected because individuals are loyal to those within modules while maintaining weaker connections with the remaining network. In all but one network, mean edge weight within modules exceeds that between modules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 describe the relationship between social fluidity and network modularity. The empirical observation (C60) supports the interpretation (C59). This is consistent with the model's framework where low fluidity corresponds to persistent bonds, which naturally creates modular structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    },
+    {
+      "id": "332bc87d-0281-4ca8-89cf-5b4de7e59866",
+      "content_id": "bcf6676e-9ccc-4d23-9272-efedf37b4d95",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "If study duration allows substantial group structure development, edge formation/dissolution models may be preferred. There is potential to improve model applicability as more high-resolution data becomes available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115 and C119 appropriately discuss model limitations and future directions. These are reasonable caveats about model applicability and honest acknowledgments of data constraints. They do not undermine the current results but provide guidance for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:27:11.929732Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c1fc5ea7-4dc5-4b57-a1ae-afd30b56cefa",
+      "result_id": "d7c26e97-f3e4-4470-b3be-afd115562dd6"
+    },
+    {
+      "claim_id": "a947bdf5-a1ea-4238-9c09-b1ac11225393",
+      "result_id": "d7c26e97-f3e4-4470-b3be-afd115562dd6"
+    },
+    {
+      "claim_id": "530d6fd2-ef42-4b73-9894-0bb182dd1a2b",
+      "result_id": "d7c26e97-f3e4-4470-b3be-afd115562dd6"
+    },
+    {
+      "claim_id": "8c4d4ed4-eb55-4758-8837-03c5b79373ee",
+      "result_id": "d7c26e97-f3e4-4470-b3be-afd115562dd6"
+    },
+    {
+      "claim_id": "bfa8d468-057d-4451-bf96-62aefd85eedf",
+      "result_id": "585016d2-805c-47b8-8edb-69a587fef566"
+    },
+    {
+      "claim_id": "f157bf9d-378d-425c-a1be-2930a5cf600f",
+      "result_id": "585016d2-805c-47b8-8edb-69a587fef566"
+    },
+    {
+      "claim_id": "89a8f5e9-5641-43f1-98f6-f354d50223eb",
+      "result_id": "585016d2-805c-47b8-8edb-69a587fef566"
+    },
+    {
+      "claim_id": "e3884182-42ee-4e8f-9445-9659ac9118f5",
+      "result_id": "585016d2-805c-47b8-8edb-69a587fef566"
+    },
+    {
+      "claim_id": "9ce9b6b7-9a3e-4a96-9fab-82ce37d6edd1",
+      "result_id": "585016d2-805c-47b8-8edb-69a587fef566"
+    },
+    {
+      "claim_id": "642a0611-846f-452c-ad1e-1ef9d9c2a1b7",
+      "result_id": "585016d2-805c-47b8-8edb-69a587fef566"
+    },
+    {
+      "claim_id": "5359765d-9107-4e69-9128-18e1b59ff3a7",
+      "result_id": "585016d2-805c-47b8-8edb-69a587fef566"
+    },
+    {
+      "claim_id": "d963351d-ee23-4b29-8d1d-1a252a66e125",
+      "result_id": "585016d2-805c-47b8-8edb-69a587fef566"
+    },
+    {
+      "claim_id": "4d1f4cdf-5780-4023-8a2e-07a773088504",
+      "result_id": "585016d2-805c-47b8-8edb-69a587fef566"
+    },
+    {
+      "claim_id": "98e0773f-a43a-4c2a-826f-cee21714e471",
+      "result_id": "23fbb863-fce8-428e-98d9-16c79e435994"
+    },
+    {
+      "claim_id": "dcd7467a-2b5b-4b0d-a719-1ba20a63751b",
+      "result_id": "23fbb863-fce8-428e-98d9-16c79e435994"
+    },
+    {
+      "claim_id": "51d6b2d3-802f-40f0-9418-9d8bb08f5c26",
+      "result_id": "23fbb863-fce8-428e-98d9-16c79e435994"
+    },
+    {
+      "claim_id": "7f4e3b49-1212-438f-9018-a9a94f6ba1ff",
+      "result_id": "0b14b2fc-7900-4246-a22d-4d76faaabef1"
+    },
+    {
+      "claim_id": "306eafab-811b-4f94-bc28-22f0d30b2803",
+      "result_id": "0b14b2fc-7900-4246-a22d-4d76faaabef1"
+    },
+    {
+      "claim_id": "309af804-a9a6-47b5-bab1-0d997950c09e",
+      "result_id": "0b14b2fc-7900-4246-a22d-4d76faaabef1"
+    },
+    {
+      "claim_id": "455cdfde-35a0-46cf-9c98-2f80e2ad175e",
+      "result_id": "0b14b2fc-7900-4246-a22d-4d76faaabef1"
+    },
+    {
+      "claim_id": "d2cb3791-aa77-4e6f-a017-5ec241b19c8c",
+      "result_id": "0b14b2fc-7900-4246-a22d-4d76faaabef1"
+    },
+    {
+      "claim_id": "ba2f4d12-75e2-4cb5-83b6-5caaa09e1d8a",
+      "result_id": "24ee777c-ab0a-4d6c-9d53-096c51dd7895"
+    },
+    {
+      "claim_id": "06b664f9-2399-4585-accc-5872e2007c8a",
+      "result_id": "24ee777c-ab0a-4d6c-9d53-096c51dd7895"
+    },
+    {
+      "claim_id": "942d6b8d-d3a6-4bc9-9231-3cd4ad05db16",
+      "result_id": "24ee777c-ab0a-4d6c-9d53-096c51dd7895"
+    },
+    {
+      "claim_id": "ff5bc256-1dec-4906-be00-3f0c0014dc30",
+      "result_id": "24ee777c-ab0a-4d6c-9d53-096c51dd7895"
+    },
+    {
+      "claim_id": "5845957a-f8cf-4509-a423-9e766cbc6ad2",
+      "result_id": "24ee777c-ab0a-4d6c-9d53-096c51dd7895"
+    },
+    {
+      "claim_id": "43a49ee5-ccf7-4eb3-94a8-73e3398c7304",
+      "result_id": "24ee777c-ab0a-4d6c-9d53-096c51dd7895"
+    },
+    {
+      "claim_id": "18bf472c-c673-4ed8-bea5-5b94cd4063d9",
+      "result_id": "24ee777c-ab0a-4d6c-9d53-096c51dd7895"
+    },
+    {
+      "claim_id": "cb69c861-962d-4b56-b97d-9d13b803d3e3",
+      "result_id": "34cc464a-3fa5-4e88-8e23-524aeef84ae0"
+    },
+    {
+      "claim_id": "9eda486d-17ba-40d7-92c9-96621323053d",
+      "result_id": "34cc464a-3fa5-4e88-8e23-524aeef84ae0"
+    },
+    {
+      "claim_id": "c4562e10-0c55-4a29-9bc9-4b19de27e0a7",
+      "result_id": "34cc464a-3fa5-4e88-8e23-524aeef84ae0"
+    },
+    {
+      "claim_id": "ce75e63c-6c49-4979-8443-3f08d1cddb28",
+      "result_id": "34cc464a-3fa5-4e88-8e23-524aeef84ae0"
+    },
+    {
+      "claim_id": "56fef701-fe7e-4fe5-a0d7-efe8253bc875",
+      "result_id": "34cc464a-3fa5-4e88-8e23-524aeef84ae0"
+    },
+    {
+      "claim_id": "fe45f019-42a3-46bc-8d9e-ce035cfcf8d3",
+      "result_id": "34cc464a-3fa5-4e88-8e23-524aeef84ae0"
+    },
+    {
+      "claim_id": "b053c3e5-c5d3-496b-9284-efa597117ae1",
+      "result_id": "6f945d39-97f7-4667-9435-be8612439755"
+    },
+    {
+      "claim_id": "6a325c4c-06a4-4e1f-a230-626768fb643c",
+      "result_id": "6f945d39-97f7-4667-9435-be8612439755"
+    },
+    {
+      "claim_id": "314a364d-6ddb-4991-aa7c-e211798c2eef",
+      "result_id": "6f945d39-97f7-4667-9435-be8612439755"
+    },
+    {
+      "claim_id": "babb5743-bf8b-4198-a22f-608093be39e2",
+      "result_id": "6f945d39-97f7-4667-9435-be8612439755"
+    },
+    {
+      "claim_id": "a2a9aeac-4b72-48bb-a470-e04a1a81efea",
+      "result_id": "308a56d9-f2b8-4f26-9fc9-ea1bbe54e5b1"
+    },
+    {
+      "claim_id": "e71cfcc8-9304-4384-8510-e3e558d09a4f",
+      "result_id": "308a56d9-f2b8-4f26-9fc9-ea1bbe54e5b1"
+    },
+    {
+      "claim_id": "98c63729-5e0b-4a75-8c3e-9777f50180af",
+      "result_id": "809a6efa-2594-49fd-b184-6bfde1e8cbd9"
+    },
+    {
+      "claim_id": "162f42c0-7cf8-442b-ad71-dcde2385f7f1",
+      "result_id": "809a6efa-2594-49fd-b184-6bfde1e8cbd9"
+    },
+    {
+      "claim_id": "2f6ceca6-fa8a-4d95-a832-df476fd48c6a",
+      "result_id": "809a6efa-2594-49fd-b184-6bfde1e8cbd9"
+    },
+    {
+      "claim_id": "6b1dba8e-3bc7-4a7e-a5f9-9b7e395955e7",
+      "result_id": "0093d002-ecc6-4562-94bb-0c4bf30d2294"
+    },
+    {
+      "claim_id": "01614466-8f1b-43d1-b2f4-5e05bf1487a8",
+      "result_id": "0093d002-ecc6-4562-94bb-0c4bf30d2294"
+    },
+    {
+      "claim_id": "5c0ace48-cf88-4a7d-9e28-533c068df8d1",
+      "result_id": "1f5e75af-177c-468d-b66a-b5d8639cc42a"
+    },
+    {
+      "claim_id": "1701823d-866b-41b2-818a-812b73298128",
+      "result_id": "1f5e75af-177c-468d-b66a-b5d8639cc42a"
+    },
+    {
+      "claim_id": "1fd89ad3-b7ab-4026-86bd-230d632a3db7",
+      "result_id": "1f5e75af-177c-468d-b66a-b5d8639cc42a"
+    },
+    {
+      "claim_id": "f8a4b4e1-303f-42ba-917a-321e28650c78",
+      "result_id": "0b39f9fa-1b92-4f74-91e6-69f801cb5fc0"
+    },
+    {
+      "claim_id": "3cf17759-2927-44db-9f8e-01e0e80c62c9",
+      "result_id": "0b39f9fa-1b92-4f74-91e6-69f801cb5fc0"
+    },
+    {
+      "claim_id": "1e55e005-926a-40b4-a6c6-ae66e7ad00d1",
+      "result_id": "0b39f9fa-1b92-4f74-91e6-69f801cb5fc0"
+    },
+    {
+      "claim_id": "460cd87a-1a93-4325-b7cd-628df4313600",
+      "result_id": "0b39f9fa-1b92-4f74-91e6-69f801cb5fc0"
+    },
+    {
+      "claim_id": "68f2ee59-e240-4241-a90b-cac2182dddab",
+      "result_id": "0b39f9fa-1b92-4f74-91e6-69f801cb5fc0"
+    },
+    {
+      "claim_id": "dff21391-706c-439b-b460-a026558ba43b",
+      "result_id": "0b39f9fa-1b92-4f74-91e6-69f801cb5fc0"
+    },
+    {
+      "claim_id": "fef4289a-19c7-432d-91b4-0a3e4f957ef5",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "f801efb1-4931-4363-bfc6-b4d6b2e70f4d",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "40c28de8-4006-42b9-bee0-57fe1841dead",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "d54778ff-dfa9-476c-b262-b338dfb23440",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "f0f8f0ae-471f-4dae-8660-df4c9721b325",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "559c0506-505b-41c6-85a3-3c5a57f0c5c2",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "cbe11d59-f9bc-40b2-8fe4-2891322347de",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "15fe2941-0c2d-4f07-a0fc-bc8ca504e0cb",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "2fac8a1b-f049-45c7-87b1-ba3ad42bbaa9",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "8d257da6-c65d-40ad-bc55-3f39523f4cef",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "8efef284-0d1a-4838-9af1-3d6b6fb8a795",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "663d078e-b1f6-43f7-bd87-dc89bd6b12e6",
+      "result_id": "9f926665-0f1b-4d43-be58-aa31aa90ce9a"
+    },
+    {
+      "claim_id": "896290dd-a2dc-4d61-8c68-09af7e3ef1e6",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "5b24fb40-449d-4729-bd4c-7b11f65faa41",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "5f4b06a7-9ba3-401e-8d30-9bfc33305169",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "b10da122-0592-4ba1-9075-a435203d7cd9",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "109cc656-a30f-41a1-a19a-2e9d885a4fd8",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "131d6ad6-c6b7-4324-90ac-425b1505f005",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "bf3f9910-cffc-4817-9b5f-ff4ea403beb9",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "6e21e9e6-2ac1-4a3a-9958-5de0570f0008",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "941b0110-17e5-43cc-a0d7-e09960e208d9",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "aec68166-d4ad-42c9-90e6-f8dda450d893",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "2962ee24-b315-4dc7-86fa-23bc95adcfdd",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "8f29de69-3039-457b-b5e3-61ddef0d9e23",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "29320d48-d2bc-4162-90d2-86a133484e2a",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "e806db86-1a07-45dd-870a-677744b1af3a",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "178e047c-b158-4c5d-9b71-2f74decb36d8",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "b89dd266-bc55-4408-b62b-a614efbcee93",
+      "result_id": "683ead1e-2a72-43b7-a879-1f49fb5ba2d4"
+    },
+    {
+      "claim_id": "0685b838-a676-4e8f-bd19-2b95f25f7ab5",
+      "result_id": "8a924c07-b15a-4307-b689-6c102f94010a"
+    },
+    {
+      "claim_id": "63e6d9a1-7153-4b6b-a289-3a1ec2ff7f58",
+      "result_id": "8a924c07-b15a-4307-b689-6c102f94010a"
+    },
+    {
+      "claim_id": "6feff926-c514-42fa-8a79-b17ef97f35b4",
+      "result_id": "a70464d3-1c11-4a0e-8fa3-1e522f0aaa35"
+    },
+    {
+      "claim_id": "299e2cc1-abe1-44a5-b57c-c74781c375ec",
+      "result_id": "a70464d3-1c11-4a0e-8fa3-1e522f0aaa35"
+    },
+    {
+      "claim_id": "72515df8-80a0-474c-8893-cd44a2b7fc48",
+      "result_id": "54dfc2ec-2cb4-4ffe-8f46-255a5ca2fa16"
+    },
+    {
+      "claim_id": "351bbc61-8fe8-4f07-9790-9ccf9d0c7814",
+      "result_id": "54dfc2ec-2cb4-4ffe-8f46-255a5ca2fa16"
+    },
+    {
+      "claim_id": "6db73c0d-dfc5-4feb-a0e8-2096a75307c8",
+      "result_id": "b59d21a6-3fc9-4358-94ff-5db1582a1d7c"
+    },
+    {
+      "claim_id": "9d1a6dbb-97cb-4478-bc07-1cf59ec3275f",
+      "result_id": "b59d21a6-3fc9-4358-94ff-5db1582a1d7c"
+    },
+    {
+      "claim_id": "675540d1-ac50-4f44-9fef-15d34b7c2ae1",
+      "result_id": "b59d21a6-3fc9-4358-94ff-5db1582a1d7c"
+    },
+    {
+      "claim_id": "9531c40c-df9f-46e9-b2a1-0151ffd4ed1b",
+      "result_id": "b59d21a6-3fc9-4358-94ff-5db1582a1d7c"
+    },
+    {
+      "claim_id": "e121a716-5b46-4ff2-a48b-8c1c776ecb56",
+      "result_id": "6e065337-a297-4eb9-b385-191a6df4e2b9"
+    },
+    {
+      "claim_id": "06d8e02c-26b2-4669-a516-9abcb71441dc",
+      "result_id": "6e065337-a297-4eb9-b385-191a6df4e2b9"
+    },
+    {
+      "claim_id": "b70d6ce5-051a-4fc1-8052-08d7f3fbd688",
+      "result_id": "67376509-afff-43b4-a0b0-a11c9f5a9356"
+    },
+    {
+      "claim_id": "58c56f69-c8ae-45e6-b8bc-95c4c08bdcb0",
+      "result_id": "67376509-afff-43b4-a0b0-a11c9f5a9356"
+    },
+    {
+      "claim_id": "e778f928-efbb-4a07-9554-145f90c8cb46",
+      "result_id": "67376509-afff-43b4-a0b0-a11c9f5a9356"
+    },
+    {
+      "claim_id": "1c8d7d32-61dd-414d-9498-9accc04ba1d4",
+      "result_id": "e8ca9e73-2292-4280-b541-b4e5b6d34f2b"
+    },
+    {
+      "claim_id": "e92e64cf-04e6-4e0a-a09c-c6e2abb5fb94",
+      "result_id": "e8ca9e73-2292-4280-b541-b4e5b6d34f2b"
+    },
+    {
+      "claim_id": "ce72dbef-c1d3-4e07-8c68-e0d6224f998e",
+      "result_id": "332bc87d-0281-4ca8-89cf-5b4de7e59866"
+    },
+    {
+      "claim_id": "76f7bceb-7c25-48fb-8098-b1b44678dc85",
+      "result_id": "332bc87d-0281-4ca8-89cf-5b4de7e59866"
+    }
+  ],
+  "comparisons": []
+}

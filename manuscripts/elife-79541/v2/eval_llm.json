@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C29",
+      "C33",
+      "C34",
+      "C84"
+    ],
+    "result": "Water temperature controls both the ARTR neural persistence time scale and behavioral turn direction persistence in zebrafish larvae, with both decreasing as temperature increases from 18-33\u00b0C. The neural alternation frequency \u03bd and behavioral flipping rate k_flip both increase with temperature, and these measures are quantitatively correlated (R=0.99, slope=0.81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C29, C33-C34, and C84 collectively establish a robust relationship between temperature, neural dynamics, and behavior. The data show systematic temperature-dependent changes in both neural (Figure 1C-D) and behavioral (Figure 1G-H) persistence times, with strong quantitative agreement between the two measures (Figure 1H inset). The experimental design with controlled temperature manipulation and parallel neural/behavioral recordings provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C92"
+    ],
+    "result": "An Ising model trained only on low-order statistics (mean activities and pairwise correlations) at short time scales quantitatively reproduces the ARTR's long-term persistent dynamics, including slow left-right alternation and temperature-dependent persistence times. The model's success crucially depends on inter-neuronal couplings, as an independent model fails to capture the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C23-C24, C46-C48, C50, and C92 demonstrate a key finding: despite being trained only on instantaneous statistics, the model captures emergent long-term dynamics. The KL divergence analysis (Figure 3A) shows the model quantitatively reproduces activity distributions, and persistence times are strongly correlated between data and model (R=0.84, Figure 3B). The comparison with the independent model (C48) establishes the necessity of couplings. This is a surprising and important result that challenges conventional expectations about graphical models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C67",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Mean-field analysis of the Ising model reveals a low-dimensional energy landscape with metastable states separated by barriers that scale linearly with system size. The slow dynamics reflects Arrhenius-like barrier crossings, with barrier heights modulated by temperature: at high temperature, only the low-low activity state is accessible, while at low temperature, barriers weaken allowing access to high-activity states, explaining the longer persistence times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C67, C74-C77, and C98-C101 provide a mechanistic interpretation of the model through mean-field theory. The free energy landscapes (Figure 4C) show clear metastable states, and the barrier height analysis (Figure 4E) demonstrates systematic temperature dependence. The Arrhenius-like relationship (Equation 5) provides a theoretical framework linking barrier heights to persistence times. The mean-field predictions for persistence times correlate well with data (Figure 4F), validating the theoretical interpretation. However, the mean-field approximation involves simplifications (averaging over parameter distributions) that may miss important heterogeneity effects (C104).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C105",
+      "C111",
+      "C116"
+    ],
+    "result": "The inferred Ising model parameters reveal spatial organization consistent with known ARTR anatomy: ipsilateral couplings are predominantly positive (mean=0.062, std=0.12) and decay with distance, while contralateral couplings are distributed around zero (mean=-0.001, std=0.10) with a significant fraction being strongly negative. Biases are widely distributed (mean=-4.1, std=1.1) without apparent spatial structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55, C57-C59, C105, C111, and C116 characterize the inferred model parameters and their spatial organization. The quantitative statistics are clearly reported, and the spatial decay of ipsilateral couplings (Appendix 2-figure 4F) and spatial structure in contralateral couplings (Appendix 2-figure 4G) are demonstrated. The consistency with known ARTR anatomy (C116, citing Dunn et al., 2016; Kinkhabwala et al., 2011) provides biological validation. However, the functional couplings are not expected to directly reflect structural connectivity, and the interpretation remains at the level of functional organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "The Ising model with modified biases captures ARTR dynamics under visual stimulation. Unilateral visual stimulation produces strong ipsilateral excitability increases and smaller contralateral increases, tilting the energy landscape to favor ipsilateral activation and reduce barrier heights, thereby accelerating transitions to high-activity states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C78-C80, and C82-C83 demonstrate the model's capacity to capture stimulus-driven dynamics. The experimental data (Figure 5B) show clear visually-driven activation, the inferred additional biases (Figure 5D) quantify the stimulation effect, and the model simulations (Figure 5E) qualitatively reproduce the experimental traces. The mean-field analysis (Figure 5F-G) provides mechanistic insight into how stimulation modifies the energy landscape. However, the agreement is described as 'qualitative' (C80), suggesting some quantitative limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Light-sheet functional imaging was used to record ARTR activity from 145\u00b165 left and 165\u00b169 right neurons (mean\u00b1SD across 13 fish) at temperatures ranging from 18-33\u00b0C. Neurons were identified using morphological and functional criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe the experimental methodology. The temperature range, imaging approach, and neuron counts are clearly stated with appropriate statistics. The neuron selection methodology references prior work (Wolf et al., 2017), providing methodological continuity. These are straightforward methodological claims supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C40",
+      "C41"
+    ],
+    "result": "At lower temperatures, ARTR activity is characterized by long periods of bilateral activation and shorter periods of inactivity. While average pairwise correlations show no clear temperature dependence, there is a strong positive correlation between persistence time and mean activity across animals and trials at a given temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C40-C41 describe temperature-dependent changes in activity patterns. The observation about low-temperature activity (C37) is supported by the probability maps in Figure 2A. The negative result for correlation vs. temperature (C40, Appendix 2-figure 2C) is appropriately reported. The positive correlation between persistence time and mean activity (C41, Appendix 2-figure 2D) suggests a mechanistic link, though the causal relationship is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The Ising model cannot reproduce short-term (100ms scale) temporal correlations because it is trained on instantaneous statistics and uses an abstract Monte Carlo sampling procedure. However, this limitation does not prevent the model from predicting long-term (1-20s scale) network dynamics due to the separation of time scales between individual neuronal processes and network-scale modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C93-C96 acknowledge and explain a key limitation of the modeling approach. The distinction between short-term and long-term dynamics (C96) provides a conceptual framework for understanding why the model succeeds at long time scales despite failing at short time scales. This is an important methodological insight supported by theoretical reasoning, though it would benefit from explicit quantitative demonstration of the short-term correlation mismatch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "The mean-field approximation simplifies the Ising model by replacing parameter distributions with average values, revealing fundamental network features controlling coarse-grained dynamics. However, this ignores heterogeneities that may be important, including frustrated loops arising from the broad distribution of ipsilateral couplings, which create dynamical instabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104, C106-C107 describe the mean-field approach and its limitations. The utility of the approximation (C102) is demonstrated by the successful predictions. The acknowledgment of limitations (C104) is appropriate, and the discussion of frustrated loops (C106-C107) identifies a specific consequence of parameter heterogeneity. However, the actual impact of these heterogeneities on the dynamics is not quantitatively assessed, remaining somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The model captures thermal modulation of ARTR activity through progressive changes in both couplings and biases that deform the energy landscape and modulate barriers between metastable states. The inferred parameters vary substantially across datasets, and the functional connectivity shows complex temperature dependence consistent with different membrane currents having different temperature sensitivities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 address how the model captures temperature effects. The model's success in reproducing thermal modulation (C118) is demonstrated in Figure 3B and Figure 4F. The mechanistic explanation (C119) follows from the mean-field analysis. The complex temperature dependence (C120) and parameter variability (C121) are acknowledged with appropriate citations and data references (Appendix 2-table 2). However, the lack of simple temperature dependence in parameters makes mechanistic interpretation challenging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Machine-learning models can decode or predict neural activity and behavior, but their black-box nature often obscures biological interpretation. Energy-based models have been successfully applied to explain correlation structures in various neural systems including retina, cortex, hippocampus, and C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C17-C20 provide context from prior work. These are well-supported by appropriate citations to the literature. They establish the motivation for the current work by identifying both the promise of data-driven approaches (C8) and their limitations (C9), as well as precedent for the energy-based modeling approach (C17-C20).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The ARTR drives saccadic dynamics and orchestrates swim bout chaining in zebrafish. Its spontaneous activity exhibits temporal persistence over ~10s time scales, a feature ubiquitous in vertebrate brains that plays essential roles in motor control, action selection, and short-term memory. Neural persistence is thought to emerge from recurrent circuit architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 establish the biological context and significance of the ARTR system. The functional characterization of ARTR (C10-C11) is supported by multiple citations and the authors' own data. The broader statements about temporal persistence (C12-C16) are well-supported by appropriate citations to the neuroscience literature. These claims provide important context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Cold-blooded animals' brains must operate across their natural temperature range (18-33\u00b0C for zebrafish). Temperature generally increases oscillatory process frequencies, and the observed ARTR acceleration could result from temperature-dependent cellular mechanisms or indirect modulation via neuromodulatory inputs. The thermal dependence of swimming kinematics provides thermophobic capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 discuss the functional significance of temperature dependence. The general principles (C85-C86, C89) are supported by appropriate citations. The mechanistic interpretations (C87-C88) are appropriately presented as possibilities rather than established facts. The functional interpretation (C90) is supported by citation to the authors' prior work (Le Goc et al., 2021). These claims provide important discussion context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Zebrafish larvae exhibit behavioral transitions between different regimes associated with specific brain states, which can be spontaneous or induced by external/internal cues and are often triggered by neuromodulatory centers. Training Ising models in various conditions may help decipher how neuromodulation impacts functional couplings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 discuss broader context and future directions. The statements about behavioral transitions (C124-C126) are supported by appropriate citations. The prospective statement (C127) is appropriately speculative, suggesting a potential application of the modeling approach. These are discussion points rather than results of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The ARTR's slow alternating activity and simple architecture make it ideal for testing Ising models' capacity to capture network-driven dynamics. The ability to modulate persistence time scales experimentally enabled model evaluation. The ARTR is part of a broader oculomotor network, and the modeling approach could be extended to other circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 discuss the rationale for the experimental system and future extensions. The justification for using ARTR (C128-C129) is logical and supported by the results. The broader context (C130) is supported by citations. The prospective statements (C131-C132) are appropriately speculative about future work. These are discussion points about experimental design and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Metastable states in cortical activity have been proposed as a basis for sequence-based computation. The model suggests these states are shaped by network connectivity and naturally explored during spontaneous activity. The visual stimulation effects resemble acceleration of sensory coding reported previously, and the approach could assess generality of metastable-state-based computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 relate the findings to broader neuroscience concepts. The prior work on metastable states (C133) is appropriately cited. The interpretation from the model (C134) follows from the results. The connection to prior work on sensory coding (C135) is supported by citation. The prospective statement (C136) is appropriately speculative. These claims provide important context for interpreting the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C114",
+      "C117"
+    ],
+    "result": "Local spatial organization in couplings can have important functional consequences and is the basis of ring-like attractor models. An avalanche mechanism involving spatially organized excitation could explain fast activity rises. Contralateral couplings, though nearly zero on average, drive subtle interplay between left and right ARTR regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112, C114, and C117 provide mechanistic interpretations of the spatial organization findings. While C112 appropriately relates findings to known concepts with citation, C114 is explicitly speculative ('could explain') without direct evidence for the avalanche mechanism. C117 interprets the role of contralateral couplings but the 'subtle interplay' is not quantitatively characterized. These interpretations are plausible but would benefit from additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "The ARTR is a circuit that controls zebrafish swimming statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a basic characterization of the ARTR supported by the cited literature and the authors' own work. This is an established fact that provides context for the study.",
+    "result_type": "MINOR"
+  }
+]

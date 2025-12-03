@@ -1,0 +1,2076 @@
+{
+  "submission": {
+    "id": "e8c365cd-5435-4e0b-866e-9bec77991dc9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:49:38.449008Z",
+    "updated_at": "2025-12-03T06:49:38.449008Z"
+  },
+  "content": [
+    {
+      "id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "submission_id": "e8c365cd-5435-4e0b-866e-9bec77991dc9",
+      "content_type": "manuscript",
+      "content_text": "# Spatially patterned excitatory neuron subtypes and projections of the claustrum\n\n## Authors\n\n- Sarah R Erwin<sup>1</sup> ([ORCID: 0000-0001-8710-1848](https://orcid.org/0000-0001-8710-1848))\n- Brianna N Bristow<sup>1</sup> ([ORCID: 0000-0002-0411-916X](https://orcid.org/0000-0002-0411-916X))\n- Kaitlin E Sullivan<sup>1</sup> ([ORCID: 0000-0001-8043-7111](https://orcid.org/0000-0001-8043-7111))\n- Rennie M Kendrick<sup>1</sup>\n- Brian Marriott<sup>2</sup>\n- Lihua Wang<sup>3</sup>\n- Jody Clements<sup>3</sup>\n- Andrew L Lemire<sup>3</sup> ([ORCID: 0000-0002-0624-3789](https://orcid.org/0000-0002-0624-3789))\n- Jesse Jackson<sup>2</sup>\n- Mark S Cembrowski<sup>1</sup> ([ORCID: 0000-0001-8275-7362](https://orcid.org/0000-0001-8275-7362)) \u2020\n\n### Affiliations\n\n1. Department of Cellular and Physiological Sciences, Life Sciences Institute, University of British Columbia Vancouver Canada\n2. Neuroscience and Mental Health Institute, University of Alberta Edmonton Canada\n3. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n4. Department of Physiology, University of Alberta Edmonton Canada\n5. Djavad Mowafaghian Centre for Brain Health, University of British Columbia Vancouver Canada\n6. School of Biomedical Engineering, University of British Columbia Vancouver Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe claustrum is a functionally and structurally complex brain region, whose very spatial extent remains debated. Histochemical-based approaches typically treat the claustrum as a relatively narrow anatomical region that primarily projects to the neocortex, whereas circuit-based approaches can suggest a broader claustrum region containing projections to the neocortex and other regions. Here, in the mouse, we took a bottom-up and cell-type-specific approach to complement and possibly unite these seemingly disparate conclusions. Using single-cell RNA-sequencing, we found that the claustrum comprises two excitatory neuron subtypes that are differentiable from the surrounding cortex. Multicolor retrograde tracing in conjunction with 12-channel multiplexed in situ hybridization revealed a core-shell spatial arrangement of these subtypes, as well as differential downstream targets. Thus, the claustrum comprises excitatory neuron subtypes with distinct molecular and projection properties, whose spatial patterns reflect the narrower and broader claustral extents debated in previous research. This subtype-specific heterogeneity likely shapes the functional complexity of the claustrum.\n\n## Introduction\n\nThe claustrum has been implicated in a variety of functions and behaviors, including attention (Atlan et al., 2018; Goll et al., 2015; Smith et al., 2019), impulsivity (Liu et al., 2019), sleep (Narikiyo et al., 2020; Norimoto et al., 2020; Renouard et al., 2015), and the integration of information to support consciousness (Crick and Koch, 2005; Smythies et al., 2012). To determine the mechanistic contributions of the claustrum to these putative functions, it is essential to understand both the intrinsic organization of claustrum neurons, as well as how this organization relates to connectivity and function (Edelstein and Denaro, 2004). However, such an interpretation is challenged by the fact that even the precise anatomical boundaries of the claustrum are a matter of debate (Dillingham et al., 2019; Smith et al., 2019).\n\nHere, utilizing a multimodal cell typing approach, we sought to understand the extent of heterogeneity within the excitatory claustrum neuron population and relate this to local boundaries and long-range projections. Beginning with single-cell RNA sequencing, we identified two discrete populations of excitatory claustral neurons. To map the topography of these populations, we used multiplexed single-molecule fluorescent in situ hybridization, revealing core and shell claustral neuron subtypes that were transcriptionally distinguishable relative to surrounding cortical neurons. Combining this with multicolor retrograde tracing, we revealed a spatial organization of distinct cortical-projecting claustral populations that mapped onto the identified core and shell subtypes. This work demonstrates that the claustrum consists of heterogeneous populations of excitatory neurons that are topographically organized and project to functionally dissociable cortical regions, suggesting subtype-specific functionality of excitatory claustral neurons. To facilitate future research analyzing claustral cell-type-specific structure and function, data and analysis tools from this study are available via our interactive web portal (http://scrnaseq.janelia.org/claustrum).\n\n## Results\n\n### scRNA-seq reveals discrete excitatory neuron subtypes within the claustrum\n\nWe began by using single-cell RNA sequencing (scRNA-seq) to understand the transcriptomic organization of the claustrum. From claustral microdissections from four mice, we manually harvested 1112 cells based on a combination of unbiased blind selection of cells and selection of specific labeled projections (to either the lateral entorhinal cortex [LEC] or retrosplenial cortex [RSC]; see Materials and methods). After library preparation, sequencing, and filtering, we retained a total of 1011 excitatory neurons for analysis (n = 478 cells blindly selected; n = 286 and 247 cells projecting to the LEC and RSC, respectively).\n\nWe initially examined this dataset agnostic to any projection-specific information. Combining UMAP nonlinear dimensionality reduction (McInnes et al., 2018) with Louvain graph-based clustering (Stuart et al., 2019) revealed that cells broadly conformed to three transcriptomically separated clusters (Figure 1A; also seen in t-SNE: Figure 1\u2014figure supplement 1A). These clusters were all associated with expression of excitatory neuronal markers (Figure 1B) and were found across the anterior-posterior axis and across animals (Figure 1\u2014figure supplement 1B,C). In seeking to assign transcriptomic phenotypes to these cells, we noted one cluster (\u2018Cluster 1\u2019) was enriched for the claustrum marker gene Synpr (Binks et al., 2019; Wang et al., 2017). This cluster and a second cluster (\u2018Cluster 2\u2019) exhibited enriched expression of other claustrum marker genes (e.g., Gnb4) relative to the third cluster (\u2018Cluster 3\u2019) (Figure 1C), with Cluster 2 also showing uniquely expressed marker genes (e.g., Slc30a3; Figure 1D). Conversely, Cluster 3 was enriched for markers of excitatory cortical populations (e.g., the layer 6b marker Ctgf and the layer 6a marker Sla) (Tasic et al., 2016; Tasic et al., 2018), suggesting a cortical phenotype (Figure 1C). Each cluster also exhibited enriched expression of many other genes associated with neuronal function (Figure 1E), suggesting structural and functional heterogeneity between these three clusters (for full lists of differentially expressed genes, see Supplementary files 1\u20133).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig1-v1.jpg)\n\n**Figure 1.:** (A) UMAP dimensionality reduction of single-cell transcriptomes. Points denote individual cells, with coloring denoting cluster identity obtained by graph-based clustering. (B) Violin plots illustrating expression of control marker genes, with accompanying values denoting normalized and log-transformed count value associated with right tick mark. (C) As in (B), but for known marker genes of claustrum neurons and layer 6 cortical neurons. (D) As in (B), but for the novel Cluster 2 marker gene Slc30a3. (E) Heatmap illustrating expression of genes associated with neuronal functionality that are enriched or depleted in a cell-type-specific fashion.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) t-SNE dimensionality reduction of scRNA-seq dataset, illustrating separation of clusters. Cells are colored according to cluster identity as in Figure 1. (B) Cells colored according to location of slice (anterior vs. posterior), depicted in UMAP space. Anterior and posterior cells occupy identical clusters. (C) Cells colored according to animal, depicted in UMAP space, illustrating clustering of cells across animals.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) scRNA-seq analysis, integrating the new (\u2018Erwin\u2019) dataset with published data from Zeisel et al., 2018 and Saunders et al., 2018 (\u2018Zeisel\u2019 and \u2018Saunders,\u2019 respectively). Cells in the integrated dataset are depicted in UMAP embedding and colored according to source dataset. Insets provide expansion of cell types enriched in the Erwin dataset. (B) Expression of Synpr in the integrated dataset, helping to illustrate cells associated with Cluster 1 in Erwin dataset. Color map and units reflects scaled expression across integrated datasets (dimensionless). (C) As in (B), but for Nnat, illustrating cells associated with Cluster 2 in Erwin dataset.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Clusters of neurons obtained at a relatively fine clustering resolution, encompassing Nnat-expressing claustrum shell neurons from Erwin dataset, as well as similar neurons from published Saunders and Zeisel datasets. (B) As in (A), but colored according to dataset of origin. Inset illustrates the number of cells from each dataset on a per-cluster basis. Expression presented in scaled (dimensionless) units. (C) Expression of Nnat across the clusters in (A). (D) As in (C), but expression illustrated by dataset of origin rather than cluster. (E, F) As in (C, D), but for Pcp4.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Chromogenic in situ hybridization showing Pcp4 expression in a coronal section of the mouse brain. Scale bar: 500 \u00b5m. (B, C) Expansion of the regions highlighted in (A). Note that Pcp4 exhibits near-ubiquitous expression across the deep cortical layers (e.g., S1), which sharply decreases upon emergence of the claustrum. Data in (A\u2013C) from Allen Mouse Brain Atlas (Lein et al., 2007). Scale bars: 100 \u00b5m. (D) Single-cell RNA sequencing data from V1 further supporting strong, ubiquitous expression of Pcp4 across deep cortical layers. Data from Tasic et al., 2016 with cluster identities and associated analysis conducted via the Broad Institute Single Cell Portal (https://singlecell.broadinstitute.org/single_cell), with results presented in reads per kilobase per million mapped reads (RPKM). (E\u2013H) As in (A\u2013D), but for Nnat.\n\n### Comparison to other scRNA-seq data\n\nTo understand our results in the context of other published scRNA-seq data, we next integrated our dataset with existing large-scale datasets that potentially included the claustrum (Saunders et al., 2018; Zeisel et al., 2018). Consistent with the three clusters identified within our dataset, our dataset largely conformed to three distinct locations within the broader cell-type landscape when incorporating published data (Figure 1\u2014figure supplement 2A,B). In particular, Cluster 1 cells occupied an isolated group of Synpr-expressing cells, whereas Cluster 2 cells coarsely occupied a distinct location nearby other datasets, but were also enriched for specific marker genes like Nnat (Figure 1\u2014figure supplement 2C). In agreement with Cluster 2 being non-cortical, these Nnat-expressing Cluster 2 cells were also depleted in Pcp4 expression (Figure 1\u2014figure supplement 3), a gene strongly expressed in deep cortical layers (but with exception of layer 6 intratelencephalic excitatory neurons: Watakabe et al., 2012; Figure 1\u2014figure supplement 4). In collection, this work shows that our scRNA-seq data recapitulates previously described cell types and further suggests new marker genes and specializations that may have been underresolved in previous studies.\n\n### Two types of excitatory claustral neurons exist in a core-shell arrangement\n\nAs the spatial cell-type-specific organization of the claustrum remains uncertain, we next sought to map our scRNA-seq-identified cell types in a spatial context. To do this, we used multiplexed fluorescent in situ hybridization (mFISH) (Wang et al., 2012), allowing us to map 12 RNA targets at a single-molecule and single-cell resolution (Sullivan et al., 2020). We selected genes that allowed us to grossly identify excitatory neurons (Slc17a7, Slc17a6), cortical markers (Ctgf, Pcp4), classical claustrum markers (Synpr, Lxn, Gnb4), and putative subtype-specific markers from our scRNA-seq dataset (Cdh9, Slc30a3, Gfra1, Nnat, Spon1) (overview of genes in scRNA-seq: Figure 2\u2014figure supplement 1).\n\nWe used mFISH to spatially register expression of these 12 genes across anterior, intermediate, and posterior sections of the claustrum (Figure 2A; expansions: Figure 2\u2014figure supplement 2; Video 1; n = 18,957 excitatory neurons from n = 5 animals analyzed). In doing so, we identified a claustrum population with a relatively central core-like location that exhibited expression of Synpr, and a surrounding shell-like population exhibiting expression of Nnat (Figure 2B\u2013D). This organization was present across the anterior-posterior axis (Figure 2\u2014figure supplement 3) as well as across animals (Figure 2\u2014figure supplement 4), and recapitulated gene-expression properties predicted from scRNA-seq (Figure 2\u2014figure supplement 5). Adjacent to these populations were other neuronal subtypes enriched for markers of cortical cells, including a cluster with spatial and transcriptional properties of deep layer 6 cells (i.e., a Ctgf-expressing cluster in the deepest cortical layer). Collectively, these results illustrated that claustrum excitatory neuron subtypes are transcriptionally distinct from neighboring cortical neurons and form a core-shell spatial organization.\n\n![Video 1.](https://cdn.elifesciences.org/articles/68967/elife-68967-video1.mp4.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-v1.jpg)\n\n**Figure 2.:** (A) Overview of anterior (left), intermediate (middle), and posterior (right) sections of the claustrum. Inset shows expansion of anterior section. Probe list provided at bottom middle, with atlas schematics denoting coronal section locations at bottom right, as well as imaged regions and claustrum definition of atlas (brown). Scale bars: overview: 200 \u00b5m; expansion: 20 \u00b5m. Atlas schematic adapted from Franklin and Paxinos, 2013. (B) UMAP-based nonlinear dimensionality reduction for Slc17a7-expressing cells (putative excitatory neurons) segmented from (A) and colored according to Leiden cluster identity. (C) Expression of example marker genes for core claustrum (Synpr), shell claustrum (Nnat), and layer 6 neurons (Ctgf). (D) Excitatory neurons from (B) plotted in spatial coordinates. Purple and green clusters respectively occupy the claustrum core and shell. Red neurons occupy deep layer 6 cortex, whereas yellow and pink clusters occupy other cortical regions. Scale bar: 200 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) scRNA-seq expression profiles of excitatory neuronal markers Slc17a7 and Slc17a6. Expression depicted in UMAP embedding, plotted as counts per million with color scale provided. (B) As in (A), but for previously known claustral marker genes. (C) As in (A), but for cortical marker genes. (D) As in (A), but for genes identified in this study that were enriched or depleted in a cluster-specific manner.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Overview of signals associated with the 12 genes targeted by mFISH. Scale bar: 500 \u03bcm. (B) For each gene, expansions of the areas shown in (A). Scale bar: 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Expression of Synpr (green), Nnat (red), and Ctgf (blue) in anterior sections, as well as three-color overlay. Scale bar: 500 \u03bcm. (B, C) As in (A), but for intermediate (B) and posterior (C) sections. (D) Expression of Synpr, Nnat, and Ctgf in UMAP embedding pooling across all shown sections. Scale bars, illustrating percent area covered (PAC), are provided at bottom for each column.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Cellular phenotyping across relatively anterior (left), intermediate (middle), and posterior (right) sections for a replicate animal, with cells colored according to cluster identity as in Figure 2. (B\u2013D) As in (A), but for other replicate animals. Scale bar: 500 \u00b5m.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Top row: box plots illustrating expression of core-associated marker genes in scRNA-seq and mFISH datasets for core and shell clusters. Middle row: as in top row, but for shell-associated marker genes. Bottom row: as in top row, but for genes similarly expressed in scRNA-seq core and shell datasets.\n\n### Claustrum excitatory subpopulations co-vary with projection target\n\nDoes this differential marker gene expression and spatial patterning correspond to distinct claustral projections? To answer this question, we next considered projections to the RSC and LEC, two claustral projections that exhibit minimal overlap (two-color retrograde viral injections: Figure 3A; see also Marriott et al., 2020). We first examined our scRNA-seq dataset with respect to projection targets, where a subset of RSC- and LEC-projecting cells were specifically targeted by retrograde labeling and manual harvesting (Figure 3B). Strikingly, 85% (204/241) of RSC-projecting claustrum cells mapped onto the Synpr-expressing class, whereas 84% (238/282) of LEC-projecting claustrum cells mapped onto the Nnat-expressing class (Figure 3C). Similarly, applying mFISH to retrograde-labeled cells provided complementary evidence that Synpr and Nnat were respectively enriched in RSC-projecting and LEC-projecting cells (representative section: Figure 3D\u2013H; all projection cells: Figure 3I, Figure 3\u2014figure supplement 1), and illustrated that RSC- and LEC-projecting cells were enriched in distinct claustral subtypes (216/259 = 83% of RSC-projecting claustral cells were found in core cluster and 276/324 = 85% of LEC-projecting claustral cells were found in shell cluster, n = 4 and n = 2 animals, respectively, Figure 3J). Thus, distinct excitatory claustrum projection neurons were coherently separable by marker genes, local spatial organization, and long-range projection targets.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig3-v1.jpg)\n\n**Figure 3.:** (A) Projections to the retrosplenial cortex (RSC; magenta) and lateral entorhinal cortex (LEC; green) emanate from different spatial locations. Atlas schematic denotes coronal section location, adapted from Franklin and Paxinos, 2013. Scale bar: 200 \u00b5m. (B) Left: UMAP visualization of scRNA-seq claustrum transcriptomes, with coloring of individual cells corresponding to their associated projection. Labels denote cluster phenotypes and example marker genes. (C) Counts of RSC-projecting and LEC-projecting cells according to scRNA-seq core and shell phenotypes. (D) Representative multiplexed fluorescent in situ hybridization (mFISH) of intermediate claustrum section, including circuit mapping of long-range projections to the RSC (magenta) and LEC (green). Scale bars: overview: 200 \u00b5m; expansion: 20 \u00b5m. (E) Cellular segmentation and cluster identification based upon gene expression detected via mFISH, for section shown in (D). (F) UMAP dimensionality reduction of mFISH-characterized cells in (D), colored according to cluster identity as in (E). Putative phenotypes of clusters, based upon marker gene expression, are provided in inset. (G) Locations of neurons projecting to the RSC (magenta), LEC (green), or both (yellow), for section shown in (D). Scale bar: 200 \u00b5m. (H) As in (G), but with projections shown in UMAP embedding. (I) mFISH-derived expression of Synpr and Nnat in cells that project to either the RSC (magenta) or LEC (green). Results depict all projection-labeled cells across all sections and animals. (J) As in (C), but for mFISH core and shell phenotypes across all sections and animals.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68967/elife-68967-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Box plots illustrating expression of genes in mFISH dataset according to projections to either the RSC or LEC. Plots grouped according to scRNA-seq-derived expression profiles.\n\n## Discussion\n\nA variety of different approaches have previously been used to establish the anatomical definitions of the claustrum. Marker-based approaches using individual genes such as Lxn, Gnb4, and Slc17a6 coarsely demarcate the boundaries of the adult mouse claustrum (Fodoulian et al., 2020; Kitanishi and Matsuo, 2017; Mathur et al., 2009; Peng et al., 2020; Wang et al., 2017; Watakabe et al., 2012), but it is unclear if these different genes all converge upon a monolithic cellular population or embody different claustrum subtypes (and potentially include phenotypically cortical cells: Bruguier et al., 2020; Moln\u00e1r et al., 2020; Puelles et al., 2016). Retrograde tracing from the cortex has been useful for identifying claustrum projection neurons (Marriott et al., 2020; Minciacchi et al., 1985; Watson et al., 2017; Zingg et al., 2018), but similarly it remains unknown whether projection-labeled claustrum cells are intrinsically homogeneous.\n\nOur approach here, integrating transcriptomic and circuit-level approaches, identified two claustrum cell subtypes that are molecularly distinguishable from surrounding cortex (Figures 1 and 2) and associated with different long-range projection patterns (Figure 3). In previous projection mapping, it has been shown that the RSC and LEC reflect the two most spatially distinct core vs. shell projections (Marriott et al., 2020), and thus it is likely that other claustral projections comprise more of a mosaicism of core and shell transcriptomic phenotypes. Ultimately, this suggests a claustral organizational scheme wherein discretely separate transcriptomic subtypes are biased \u2013 but not wholly separable \u2013 according to long-range projection targets (Cembrowski and Menon, 2018a).\n\nAs the relationship between the claustrum and the nearby deep insular cortex and dorsal endopiriform cortex is often debated (Bruguier et al., 2020; Marriott et al., 2020; Mathur, 2014; Mathur et al., 2009; Smith et al., 2019; Watakabe et al., 2012; Watson et al., 2017; Zingg et al., 2020), it is important to discuss our work in the context of these adjacent regions. Relative to the deep insular cortex, our work here shows a general lack of deep cortical markers for two distinct neuron types, as well as enrichment of genes in these types that are not typically associated with deep cortex (Figure 1C, Figure 1\u2014figure supplements 3 and 4). In conjunction with both of these neuron types showing enrichment of some claustrum marker genes relative to cortical neurons (e.g., Gnb4: Figure 1C), we interpret these transcriptomic cell types as claustrum core and shell neuron subtypes. Relative to the dorsal endopiriform cortex, our scRNA-seq and smFISH validation focused on the atlas-defined spatial extent of the claustrum; thus, future work targeting the dorsal endopiriform cortex will be needed to examine the transcriptomic relationship between these two regions.\n\nCollectively, our results will allow subtype-specific claustral function to be assayed in future experiments by leveraging either marker genes or projection pathways (Cembrowski, 2019). Thus, our findings here will help to guide and inform observational and interventional experiments, and bridge claustrum cell-type identity, structure, and function. To facilitate such experiments and interpretations, we have hosted our scRNA-seq data online in conjunction with analysis and visualization tools (http://scrnaseq.janelia.org/claustrum). This web portal will help to identify how specific genes, cells, and circuits mechanistically drive claustral function and behavior.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cdh9 ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>443221-T1</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ctgf ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>314541-T2</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc17a6 ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>319171-T3</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Lxn ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>585801-T4</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc30a3 ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>496291-T5</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Gfra1 ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>431781-T6</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Spon1 ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>492671-T7</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Gnb4 ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>460951-T8</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Nnat ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>432631-T9</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Synpr ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>500961-T10</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Pcp4 ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>402311-T11</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc17a7 ISH probe</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>416631-T12</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R</td>\n      <td>https://www.r-project.org</td>\n      <td>SCR_001905</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Seurat</td>\n      <td>https://satijalab.org/seurat/</td>\n      <td>SCR_007322</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>https://imagej.net/Fiji</td>\n      <td>RRID:SCR_002285</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>rAAV2-retro-CAG-GFP</td>\n      <td>Janelia Viral Core</td>\n      <td>-</td>\n      <td>scRNA-seq</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>pAAV-CAG-GFP</td>\n      <td>Addgene</td>\n      <td>RRID:Addgene_37825</td>\n      <td>mFISH</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>pAAV-CAG-tdTomato</td>\n      <td>Addgene</td>\n      <td>RRID:Addgene_59462</td>\n      <td>mFISH</td>\n    </tr>\n  </tbody>\n</table>\n\nAll procedures were approved by the University of British Columbia Animal Care Committee (protocol A18-0267), the University of Alberta Health Science Laboratory Animal Services Animal Care and Use Committee (protocol AUP2711), and the Janelia Institutional Animal Care and Use Committee (protocol 17-159).\n\n### Retrograde tracer injections\n\nMature C57BL/6 mice of either sex were used for injections, and randomly assigned retrograde injection locations and tracers. Mice were administered carprofen via ad libitum water 24 hr prior to surgery and for 72 hr after surgery to achieve a dose of 5 mg/kg. For surgery, mice were initially anesthetized using 4% isoflurane and maintained with 1.0\u20132.5% isoflurane. Mice were secured in a stereotaxic frame, with body temperature maintained through an electric heating pad set at 37\u00b0C, and lubricant was applied to eyes to prevent drying. Local anesthetic (bupivacaine) was applied locally under the scalp, and an incision along midline was made to access bregma and all injection sites. Craniotomies were marked and manually drilled using a 400 \u00b5m dental drill bit according to stereotaxic coordinates. Pulled pipettes (10\u201320 \u00b5m in diameter) were back filled with mineral oil and loaded with virus or tracers. All injections were made using pressure injection, with 200 nL of retrograde tracer (Tervo et al., 2016) being injected. The skin was sutured after completing all injections and sealed. After allowing for sufficient time for retrograde labeling, mice were subsequently sacrificed for either histology, RNA sequencing, or mFISH processing, as described below.\n\n### Single-cell RNA sequencing data acquisition and analysis\n\nWe used a manual capture approach to harvest cells from n = 4 mature male C57BL/6 mice. To facilitate microdissection of the claustrum, fluorescent tracers were used to delineate and grossly microdissect the claustrum from horizontal sections. In one animal, retrograde rAAV2-retro-CAG-GFP (Tervo et al., 2016) was injected into the anterior cingulate cortex to facilitate gross microdissection of the claustrum (Jackson et al., 2018), but not used to select for individual cells (i.e., GFP expression was used to microdissect the claustrum but cells were picked blind relative to GFP expression). In this animal, cells from separate anterior and posterior sections were obtained, allowing analysis of potential anterior vs. posterior differences in claustrum gene expression (Figure 1\u2014figure supplement 1B). To build the projection-specific dataset, for the remaining three mice, green and red retrobeads were respectively injected into the LEC and RSC, with this labeling used for gross microdissection as well as to select a subset of projection-specific cells for RNA-seq.\n\nIn all cases, manual purification (Hempel et al., 2007) was used to capture cells in capillary needles in approximately 0.1\u20130.5 mL ACSF cocktail, placed into 8-well strips containing 3 \u00b5L of cell collection buffer (0.1% Triton X-100, 0.2 U/\u00b5L RNAse inhibitor; Lucigen, Middleton, WI), and generally processed according to published methodology (Cembrowski et al., 2018b; Schretter et al., 2020). Specifically, each strip of cells was flash frozen on dry ice, then stored at \u201380\u00b0C until cDNA synthesis. Cells were lysed by adding 1 \u00b5L lysis mix (50 mM Tris pH 8.0, 5 mM EDTA pH 8.0, 10 mM DTT, 1% Tween-20, 1% Triton X-100, 0.1 g/L Proteinase K [Roche], 2.5 mM dNTPs [Takara], and ERCC Mix 1 [Thermo Fisher] diluted to 1e-6) and 1 \u00b5L 10 \u00b5M barcoded RT primer (E3V6NEXT primer from Soumillon et al., 2014, modified to add a 1 bp spacer before the barcode, extending the barcode length from 6 bp to 8 bp, and designing the 384 barcodes to tolerate one mismatch error correction). The samples were incubated for 5 min at 50\u00b0C to lyse the cells, followed by 20 min at 80\u00b0C to inactivate the Proteinase K. Reverse transcription master mix (2 \u00b5L 5 X buffer; Thermo Fisher Scientific), 2 \u00b5L 5 M betaine (Sigma-Aldrich, St. Louis, MO), 0.2 \u00b5L 50 \u00b5M E5V6NEXT template switch oligo (Integrated DNA Technologies, Coralville, IA) (Soumillon et al., 2014), 0.1 \u00b5L 200 U/\u00b5L Maxima H- RT (Thermo Fisher Scientific), 0.1 \u00b5L 40 U/\u00b5L RNasin (Lucigen), and 0.6 \u00b5L nuclease-free water (Thermo Fisher Scientific) were added to the approximately 5.5 \u00b5L lysis reaction and incubated at 42\u00b0C for 1.5 hr, followed by 10 min at 75\u00b0C to inactivate reverse transcriptase. PCR was performed by adding 10 \u00b5L 2X HiFi PCR mix (Kapa Biosystems) and 0.5 \u00b5l 60 \u00b5M SINGV6 primer with the following conditions: 98\u00b0C for 3 min, 20 cycles of 98\u00b0C for 20 s, 64\u00b0C for 15 s, 72\u00b0C for 4 min, with a final extension step of 5 min at 72\u00b0C. Samples were pooled across the plate to yield approximately 2 mL pooled PCR reaction. From this, 500 \u00b5L was purified with 300 \u00b5L Ampure XP beads (0.6\u00d7 ratio; Beckman Coulter, Brea, CA), washed twice with 75% ethanol, and eluted in 20 \u00b5L nuclease-free water. The cDNA concentration was determined using Qubit High-Sensitivity DNA kit (Thermo Fisher Scientific).\n\n13 plates were analyzed in total, with 600 pg cDNA from each plate of cells used in a modified Nextera XT (Illumina, San Diego, CA) library preparation with 5 \u00b5M P5NEXTPT5 primer (Soumillon et al., 2014). The resulting libraries were purified according to the Nextera XT protocol (0.6\u00d7 ratio) and quantified by qPCR using Kapa Library Quantification (Kapa Biosystems). Three plates were pooled on a NextSeq 550 mid-output flowcell with 26 bases in read 1, 8 bases for the i7 index, and 125 bases in read 2, and the remaining 10 plates were pooled on a NextSeq 550 high-output flowcell with 26 bases in read 1, 8 bases for the i7 index, and 50 bases for read 2. Alignment and count-based quantification of single-cell data was performed by removing adapters, tagging transcript reads to barcodes and UMIs, and aligned to the mouse genome via STAR (Dobin et al., 2013).\n\nIn total, 1112 cells were manually harvested and underwent sequencing. Of these initial 1112 cells, 27 putative non-neuronal cells were excluded due to low expression of Snap25 (CPM < 0.001) and 74 additional cells were excluded due to low Slc17a7 (CPM < 1e-10). The remaining 1011 cells exhibit 5.2 \u00b1 1.1 thousand expressed genes/cell from 142 \u00b1 98 thousand reads/cell, mean \u00b1 SD. The relatively high abundance of excitatory neurons sampled owed both to the targeted approach for harvesting circuit-labeled cells, as well as the fact that excitatory neurons are relatively abundant relative to interneurons in the claustrum. No blinding or randomization was used for the construction or analysis of this dataset. No a priori sample size was determined for the number of animals or cells to use; note that previous methods have indicated that several hundred cells from a single animal are sufficient to resolve heterogeneity within excitatory neuronal cell types (Cembrowski et al., 2018b; Cembrowski et al., 2018c).\n\nComputational analysis was performed in R (RRID:SCR_001905; R Development Core Team, 2008) using a combination of Seurat v3 (RRID:SCR_007322; Satija et al., 2015; Stuart et al., 2019) and custom scripts (Cembrowski et al., 2018b). To analyze our data, a Seurat object was created via CreateSeuratObject(min.cells = 3, min.features = 200), variable features identified via FindVariableFeatures(selection.method='vst',nfeatures = 2000) and scaled via ScaleData(). Data was processed via RunPCA(), JackStraw(num.replicate = 100), RunTSNE(), FindNeighbors(), FindClusters(resolution = 0.1), and RunUMAP(reduction='pca'), with 30 dimensions used throughout the analysis. This processed Seurat object was then used for downstream analysis. Subpopulation-specific enriched genes obeying pADJ < 0.05 were obtained with Seurat via FindMarkers(), where pADJ is the adjusted p-value from Seurat based on Bonferroni correction. Functionally relevant differentially expressed genes were obtained using FindMarkers(), allowing for both cluster-specific enriched and depleted genes obeying pADJ < 0.05, and manually identified for functional relevance. Raw and processed scRNA-seq datasets have been deposited in the National Center for Biotechnology Information (NCBI) Gene Expression Omnibus under GEO: GSE149495.\n\nTo integrate and compare our scRNA-seq data to previously published data, we downloaded data from two previous studies that broadly sampled cortical cells in the mouse brain (Saunders et al., 2018; Zeisel et al., 2018). From Saunders et al., 2018, we downloaded frontal cortex data from F_GRCm38.81.P60Cortex_noRep5_FRONTALonly.raw.dge.txt.gz (from http://dropviz.org) and used a threshold of 16,000 transcripts/cell to extract 2877 total cells. After screening against cells that lacked Snap25 and/or Slc17a7 expression, 2842 putative excitatory neurons were retained for analysis (genes expressed/cell: 4.8 \u00b1 0.6 thousand, mean \u00b1 SD; transcripts/cell: 16.5 \u00b1 5.0 thousand, mean \u00b1 SD). We used a similar number of cells from Zeisel et al., 2018, obtained from l6_r4_telencephalon_projecting_excitatory_neurons.loom (from http://mousebrain.org/loomfiles_level_L6.html): 3151 cells were obtained using a threshold for 7500 transcripts/cell, with 3141 cells retained after requiring Snap25 and Slc17a7 expression (genes expressed/cell: 3.7 \u00b1 0.4 thousand, mean \u00b1 SD; transcripts/cell: 9.6 \u00b1 2.0 thousand, mean \u00b1 SD). Integration of these published datasets with our dataset was done in Seurat v3 (Stuart et al., 2019) by creating a Seurat object incorporating all datasets, and then using SplitObject() to split according to original dataset, allowing each dataset to independently undergo normalization and variable feature selection (handled identically to our data). Integration anchors were subsequently identified (via FindIntegrationAnchors()) and used for integration (via IntegrateData()), using 30 dimensions. From here, integrated data underwent scaling, dimensionality reduction, and clustering identically to the method used for our data, with clustering resolution = 2.5 to facilitate comparison between fine clusters associated with the claustrum shell. Statistical significance for adjusted p-values is denoted as follows: ns: p\u22650.05; *p<0.05, **p<0.01, ***p<0.001.\n\n### mFISH data acquisition and analysis\n\nCustom probes for mFISH were purchased from Advanced Cell Diagnostics and were as follows: Cdh9 (443221-T1), Ctgf (314541-T2), Slc17a6 (319171-T3), Lxn (585801-T4), Slc30a3 (496291-T5), Gfra1 (431781-T6), Spon1 (492671-T7), Gnb4 (460951-T8), Nnat (432631-T9), Synpr (500961-T10), Pcp4 (402311-T11), and Slc17a7 (416631-T12). mFISH was generally performed as previously implemented (Sullivan et al., 2020). Briefly, mature male mice were randomly selected for mFISH and were deeply anesthetized with isoflurane and perfused with phosphate buffered saline (PBS) followed by 4% paraformaldehyde (PFA) in PBS. Brains were dissected and post-fixed in 4% PFA for 2\u20134 hr. Brain sections (20 \u00b5m) were made using a cryostat tissue slicer and mounted on glass slides. Slides were subsequently stored at \u201380\u00b0C until use. For use, the tissue underwent pretreatment and antigen retrieval per the User Manual for Fixed Frozen Tissue (Advanced Cell Diagnostics). All 12 probes with unique tails (T1\u2013T12) were hybridized to the tissue, amplified, and the tissue counterstained with DAPI. Using cleavable fluorophores with unique tails (T1\u2013T12), probes were visualized four at a time via an iterative process of imaging, decoverslipping, fluorophore cleaving, and adding the next four targeted fluorophores. mFISH performed on tissue with viral tracing was first counterstained with DAPI, coverslipped with ProLongGold antifade mounting medium, then imaged. The tissue was decoverslipped by soaking in 4\u00d7 SSC. Following this, standard mFISH protocol was followed, with the antigen retrieval step quenching all endogenous viral fluorescent protein signal and DAPI signal.\n\nmFISH images were acquired with a 63\u00d7 objective on a SP8 Leica white light laser confocal microscope (Leica Microsystems, Concord, Ontario, Canada). Z-stacks were acquired with a step size of 0.45 \u00b5m for each imaging round. Final composite images are pseudocolored maximum intensity projections, including brightness adjustments applied to individual channels uniformly across the entire image, with channels opaquely overlaying one another ordered from highest to lowest expression.\n\nProcessing of mFISH images generally followed our previously published analysis pipeline (Sullivan et al., 2020) using Fiji (RRID:SCR_002285; Schindelin et al., 2012). Briefly, the DAPI signal from each round was used to rigidly register probe signals across rounds, followed by nonlinear elastic registration via bUnwarpJ (Arganda-Carreras et al., 2010) to accommodate any nonlinear tissue warping due to decoverslipping. The individual nuclei were then segmented and dilated by a factor of 5 \u00b5m to include the surrounding cytosol. The signal from each probe was then binarized by thresholding at the last 0.2\u20131% of the histogram tail, and then the number of pixels within regions of interest (ROIs) selected from segmentation was summed and normalized to the pixel area of the cell and multiplied by 100. This in effect corresponded to percent area covered (PAC) of the optical space of a cell.\n\nA total of five mature male C57BL/6 mice, each with a relatively anterior, intermediate, and posterior section, were used for mFISH. Four mice had 200 nL retrograde viral injections into the RSC, two of which had additional retrograde viral injections into the LEC. For these injections, retrograde pAAV-CAG-GFP was a gift from Edward Boyden (Addgene viral prep # 37825-AAVrg; http://n2t.net/addgene:37825; RRID:Addgene_37825) and retrograde pAAV-CAG-tdTomato (codon diversified) was a gift from Edward Boyden (Addgene viral prep # 59462-AAVrg; http://n2t.net/addgene:59462; RRID:Addgene_59462). The last remaining mouse had no viral injections. Across these five animals, 33,155 cells in total were imaged. To facilitate analysis of excitatory neurons specifically, a threshold of one PAC of Slc17a7 was required for each cell to be included in analysis, resulting in 18,957 total putative excitatory neurons being used for subsequent analysis. Slc17a7 expression levels were used only for cellular phenotyping, and thus excluded from further analysis.\n\nFor analysis, UMAP dimensionality reduction (McInnes et al., 2018) was performed on within-cell normalized PAC values using the umap package (15 nearest neighbors, all other parameters default), and cells were clustered on a per-animal level using a Leiden community detection algorithm (Levine et al., 2015; Traag et al., 2019) via the Monocle package (Cao et al., 2019; Qiu et al., 2017; Trapnell et al., 2014). In general, setting the resolution parameter to a value that produced five clusters yielded strong agreement between UMAP dimensionality reduction and cluster assignments. Marker gene expression was used to assign phenotypes to cells comprising each cluster. For correlating projection targets with mFISH results, cells labeled with fluorescent retrograde tracers were manually identified (n = 739 total across n = 4 animals), done in a blinded fashion relative to mFISH analysis. A small minority of cells that projected to both the LEC and RSC (1.9%: n = 14/739, consistent with Marriott et al., 2020) were excluded when comparing properties of LEC- vs. RSC-projecting neurons. In general, box plots show distribution of gene expression contingent on cluster identity or projection target (hinges denote first and third quartiles, whiskers denote remaining data points up to at most 1.5 * interquartile range, outlier values beyond whiskers are not shown). Mann\u2013Whitney U tests with a Bonferroni correction were used to identify differentially expressed genes, for either a given cluster relative to all other clusters, or in pairwise comparisons, as shown. Statistical significance for adjusted p-values is denoted as follows: ns: p\u22650.05; *p<0.05, **p<0.01, ***p<0.001.\n",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "1ad1548c-2049-43e4-bff0-0a0a7b20f518",
+      "submission_id": "e8c365cd-5435-4e0b-866e-9bec77991dc9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tianyi Mao, Oregon Health and Science University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68967.sa1](https://doi.org/10.7554/eLife.68967.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors used single-cell RNA sequencing to examine the molecular properties and axonal-projection targets of cell populations in the claustrum. The observed clusters of single cell RNA profiles reflect excitatory neuronal subtypes and their core-shell arrangements within the claustrum.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Spatially patterned excitatory neuron subtypes and circuits within the claustrum\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Arpiar Saunders (Reviewer #1).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nSummary\n\nThe discussion among reviewers and the editors reached a clear consensus regarding the necessary experiments/analyses to strength the main claims regarding the relationship of the potential new cell types and the anatomical features relevant to claustrum function. We view the current interpretation of the results as limited by technical issues and the depth of the analysis. Closing that gap would require softening the claims of cell type discovery along with a more much thorough informatic analyses and likely follow up experiments (based on those re-analyses). eLife policy is not to consider a revision decision if we think that substantial additional experiments or analysis would be necessary to judge the acceptability of the manuscript and/or would require more than several months to complete.\n\nReviewer #1:\n\nErwin et al. address the relationship between molecular identity and projection anatomy of neurons in the mouse claustrum using single-cell RNAseq, in situ hybridizations and retrograde labeling. Such \"mappings\" are of interest to circuit neuroscience for both practical and theoretical reasons. In what ways does a neuron's molecular makeup determine its adult connectivity?\n\n1. The molecular identity(ies) of the \"Unknown\" yellow cluster (Figures 1 and 3) still remain unknown. The Erwin manuscript implies that these cells make up a distinct cell type of claustrum shell, but the data presented supporting this conclusion are currently weak. The authors state that the \"unknown\" population is molecularly distinct from both (1) canonical claustrum neurons (Synpr+) and (2) other cortical neuron populations.\n\nDue to the small number of cells sampled and the restriction of that sampling to the area of the claustrum, the first claim requires only that the canonical claustral neuron type be molecularly distinct to be supported. That there is a specialized claustrum neuron type (at the level of the entire cortical mantle or most likely the whole brain) is already quite clear: previous scRNAseq studies (Zeisel et al; Tasic et al; Saunders et al.) have demonstrated such a specialized RNA expression signature, which includes highly selective gene markers that are localized to the claustrum anatomically. The Erwin et al. data also support the claustrum-specific neuronal profile (as judged by heavy overlap of the selective markers from these other studies).\n\nUsing in situs, Erwin et al. refine the location of the Synpr+ cell type to claustrum \"core\". This is the major result of the paper.\n\nThe second claim \u2013 that the \"unknown\" cluster represents a 2nd distinct claustrum neuron type specific to the shell \u2013 is not well supported given the data at hand. The authors claim that because only 9.1% of Slc30a3+ cells are Pcp4+, the \"unknown\" cluster is not related to other excitatory cortical neuron types. However, Pcp4+ is not ubiquitously expressed in all Slc17a7+ neuron types (http://dropviz.org/?_state_id_=80467b8fc3286f0b). Moreover, quantitative variation in Pcp4 expression level could also lead to somewhat arbitrary thresholds for counting cells as positive, even with highly sensitive ACD RNA probes. By my eye, the expanded image in Figure 2D looks as if more than 10% of Slc30a3+ cells are Pcp4+ (if counting those cells with low Pcp4 expression; the authors should describe how the in situ data were quantified in the methods and if the representative images are Z-stack projections or single image planes).\n\nMore concerning is that when one considers the expression patterns of marker genes from the \"unknown\" cluster (Idb2, Mef2c, Necab1, Nnat, Nrn1, Olfm1, Spon1, Ramp1, Slc30a3, Syn2) across all of cortical cell types, those markers show very little cell-type-specific enrichment (http://dropviz.org/?_state_id_=4bb18bcc4f50d3cb). These data suggest to me that the \"unknown\" cluster could be a somewhat heterogenous collection that molecularly resemble other cortical excitatory neuron types. That their RNA profiles clustered together could be a property of their simply being dissimilar to the other more distinct cell types included in the analysis.\n\nThe authors can test their claim that \"\u2026the core-shell arrangement identified here was consistent with distinct subtypes claustral neurons, rather than reflecting spatial displacement of a cortical cell type\" by jointly analyzing their own single cell libraries with much larger datasets describing molecular diversity of glutamatergic neurons across the cortical mantle (Zeisel et al; Tasic et al; Saunders et al). This type of analysis is not computationally prohibitive and could be performed on a decent laptop computer.\n\nFor example, if the Erwin and Saunders/Tasic/Zeisel data are co-clustered, and the authors find the cells from the \"unknown\" split into distinct excitatory clusters, that might suggest the \"unknown\" cluster is molecularly heterogenous and offer clues as to which cortical cell types functionally form the claustrum shell. Alternatively, the \"unknown\" cells might cluster together. This would allow an opportunity for cortex-wide differential expression testing to reveal selective markers for the \"shell\" subtype. (Importantly, the authors should pursue analytical methods (such as LIGER (Welch et al) or CCA (Butler et al.)) that allow their data to be integrated into other datasets without being burdened by platform/experiment specific clustering artifacts).\n\nNon-clustering methods could also be used to attain similar insight.\n\nTo be clear, it would be an important observation and not diminish the study if the claustrum \"shell\" \u2013 a region defined anatomically by retrograde labeling \u2013 consists of a displaced cortical cell type or types.\n\nMore experiments are needed to address the issue of the molecular identity of the \"shell\" glutamatergic neurons; as it stands now, the claims in the paper are not strongly supported by the data presented.\n\n2. Standard methods for single-cell 3' mRNA counting (e.g. Drop-seq, 10x, InDrop) routinely allow tens or hundreds of thousands of single cell RNA profiles to be sampled. It's unclear why the authors choose to pursue a more low-throughput method of whole-RNA sequencing but then not take advantage of mRNA isoform variation which their data uniquely enable? Single-cell RNAseq datasets describing the canonical claustrum neuron type (Synpr+/Nr4a2+) have been published with similar numbers of cells and transcripts/cell (Saunders et al. and Tasic et al; Tasic et al. also perform whole-RNA sequencing). Thus the Erwin et al. datasets is unlikely to reveal previously unappreciated heterogeneity with the canonical claustrum class.\n\n3. Why were no interneurons sampled in the 274 cell dataset presented in Figure 1? If the authors were selecting particular dissociated cells by eye, they should describe by which criterion they choose individual cells. Could a claustrum excitatory neuron type with a small, irregular or interneuron like somato-dendritic morphology remain unsampled because of selection bias?\n\n4. The authors should report more details for their molecular and sequencing methods. To identify how the single-cell RNA was processed, I had to track back through two publications (Cembrowski et al. 2018 -> Cembrowski et al. 2016) to find only \"Total RNA was isolated from each sample, ERCC spike-in controls were added, and cDNA libraries were amplified from this material.\" Please provide detailed methods of library preparation.\n\n5. The number of mice contributing to the presented experiments are sometimes very low, with some experiments n=2. The exact number of animals should be reported in the text of the results and bolstered where necessary.\n\nThe instance where I find this most concerning regards the data describing the relationship between molecular identities and LEC/RSC projection mapping; perhaps the most critical part of the manuscript.\n\nI appreciate that the sequencing-based read out of projection anatomy is laborious and expensive. Why not simply combine two color retrograde labeling from LEC/RSC with in situs for shell/core markers? That would allow Erwin et al. to address variance in molecular identity/projection mapping across many mice. For experiments in which understanding biological variance is critical, the authors should also present their current (and any future) data, grouped by individual mouse (at least in the Supplement).\n\nIt's still very early days for circuit neuroscience to engender an understanding of how molecular and axonal anatomy of particular cell types \"map\". Critical in making strides in this effort are datasets that allow the across-animal variance of such mappings be accurately described so as to facilitate more nuanced conversations about such mappings. Erwin et all have an opportunity to make an important contribution if animal numbers are increased.\n\n6. In Figure 3, do the ~15% of cells in each molecular cluster which do not obey the projection pattern of the majority other co-clustered cells exhibit a unique transcriptional signature? Again, this should be evaluated both within each mouse as well as across the projection-based cell populations as a whole\n\nReviewer #2:\n\nMy impression is that they may have a real finding regarding \"shell\" and \"core\" gene expression, but they don't do a convincing job showing it, especially with the FISH data. The study is kind of narrow in its scope for ELife, and should be further extended.\n\n1. The core vs shell arrangement of gene expression is not so obvious in the FISH data provided in Figure 2D, yet this is a major claim made in the paper. In the given example, Slc30a3 appears medial to, and somewhat intermingled with Synpr, rather than forming a clear ring-like pattern as seen with the retrograde labeling example from LEC/RSC in Figure 3A. In fact, the experiment shown in Figure 3E provides another opportunity to convincingly present the core vs shell arrangement of Slc30a3 and Synpr as they relate to the projection-defined RSC population, however the provided images are cropped too closely to get a sense of the pattern. Perhaps provide an example cropped to the dimensions shown in Figure 3A.\n\n2. The FISH signal for the CLA shell genes (Slc30a3 and Nnat) appears much weaker than that of Synpr and Pcp4 and some of the other examples provided. This hinders appreciation of the spatial arrangement of these genes around the CLA core and calls into question how reliable co-localization with other FISH probes could be identified. Perhaps potentially more robust probes or genes could be explored to strengthen the presentation of this data? For example, perhaps Spon1 (identified as a Cluster 2 gene in Figure 1F) or other unexplored genes, such as Sdk2 or Crym, that show striking shell-like patterns around the CLA might perform better in the FISH experiments? How well do they spatially colocalize with Slc30a3, which shows biased expression along the medial edge of CLA, but not as much around the lateral edge as seen with Nnat, Spon1, Sdk2, and Crym expression in Allen Institute's Mouse Brain ISH database (http://mouse.brain-map.org/)?\n\n3. Pcp4 is used as a marker for L5/L6a/L6b cortical excitatory neurons and is claimed to be expressed ubiquitously among this population. However, it has been shown that in L6a, Pcp4 specifically labels corticothalamic-projecting neurons, but not L6 IT excitatory neurons, which are marked by a non-overlapping VGluT1+/CcK+ population (see Figure 8 in Watakabe et al., 2012; doi: 10.1002/cne.23160). Pcp4 is still a very good choice in these experiments for distinguishing between L6a CT and L6b cortical neurons and claustrum-related cells in the shell and core regions, perhaps just include the citation and modify the language in the text.\n\n4. In Figure 3E, FISH is used to examine the colocalization of Synpr or Slc30a3 with retrogradely labeled RSC-projecting neurons in the CLA, however the same experiment is not performed with LEC-projecting cells and should be presented here. Injections of retrograde tracer in LEC indeed label cell bodies largely below and around the margins of the CLA \"core,\" as shown in Figure 3A, however they may also label cortical neurons in the overlying insula, so it is unclear where the proposed boundaries of the CLA shell might be when looking at the LEC retrolabeling in Figure 3A. Demonstrating this retrograde labeling in conjunction with Slc30a3 and Pcp4 expression will help clear this up. Lastly, while difficult to address here, it will be important in the future to determine what fraction of the LEC retrolabeling shown below the CLA \"core\" in Figure 3A might actually comprise neurons belonging to the dorsal endopiriform nucleus (see Figure 8 of Watson et al., 2017; doi: 10.1002/cne.23981), which appears to also express genes for CLA \"core\" (Synpr), \"shell\" (Slc30a3, Nnat), and L6b (Ctgf) in ways that may complement or complicate the story unfolding for the CLA here. How the genes identified in this study potentially relate to the endopiriform complex (and even the dorsal aspect of CLA, thought to interact with motor cortex) may be worth mentioning in the discussion.\n\nReviewer #3:\n\nThe authors present a transcriptomic survey of cell type diversity in the mouse claustrum. They reveal that markers currently used to visualize cells in the core region of the claustrum may not target a second, potentially novel cell type in the claustrum shell. The authors additionally show that these two molecularly divergent cell types have distinct axonal projection targets in the cortex. While this is a potentially interesting finding, the data presented in the manuscript may not be sufficient to adequately describe the transcriptomic organization of the claustrum.\n\n1) A large body of work, including the accompanying manuscript by the same authors, have described the claustrum as a topologically heterogeneous structure. The description of claustral cell types presented in the manuscript would be strengthened substantially if it addressed if and how gene expression and cell types vary spatially across the claustrum, as the authors have done in previous work with the subiculum, for example, and as the authors did anatomically in the related manuscript of Marriott et al. At a minimum, more detailed anatomical coordinates should be presented throughout for in situ/anatomical/sequencing data. It is unclear which parts of the claustrum are sampled and presented in the manuscript, making it difficult to discern if the results presented herein generalize across this structure or represent a snapshot of a single subregion, whose location is not specified\n\n2) A major conclusion of the manuscript is that the claustrum contains two transcriptomically distinct cell types. However, the claustrum clearly contains other cell types that appear to be missing from scRNA-seq data. For example, 1) PV neurons are visible in the accompanying Marriott et al. and 2) PCP4+/CTGF- cells are present throughout (Figure 2, supplement 1). Presumably glia were also excluded, although there did not appear to be any mention of this. It is unclear why these types do not appear in scRNA-seq data, raising concerns about sampling biases and coverage.\n\n3) This major finding of this study and that of Marriott et al., appear to overlap considerably \u2013 namely that the claustrum includes a 'shell' of cells with properties distinct from those in the 'core'. At the same time, the study appears to conflict in some ways with results in the accompanying Marriott et al. study. In particular, Marriott et al. show that only 'shell' neurons in the caudal aspect of the claustrum project to the EC, while this study implies that EC projections are a general feature of shell neurons, again raising questions about topology. This discrepancy makes one wonder if the rostral claustrum contains the same cell types transcriptomically.\n\n4) A recent study (Wang, Xie, Gong, et al., bioRxiv) has described a large amount of heterogeneity in the projection patterns of Gnb4+ cells that presumably correspond to the authors' SYNPR population using single-neuron axonal reconstruction. These neurons appear to include projections to both the LEC and RSP. In addition, that study argued that the same transcriptomic population included cells both within and outside of the claustrum, further complicating the argument that a transcriptomic approach is the 'correct' method for defining its spatial borders. Those results should at least be discussed in the context of the present study.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Spatially patterned excitatory neuron subtypes and circuits within the claustrum\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Li I Zhang (Reviewer #3). The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nPlease address the points raised by the reviewers, focusing on these issues:\n\n1) Accurate articulation of the comparison between Erwin dataset and Saunders/Zeisel datasets, as requested by Reviewer #1.\n\n2) Explain the apparent differences of Slc30a3 expression data across RNA-seq and different mFISH plots including Figure 2\u2014figure supplement 2 and Figure 2\u2014figure supplement 5.\n\n3) Writing and presentation: Reviewers #1 and #2 have a number of suggestions for improving the readability, accuracy, figure labeling, and figure color scheme of the documentation. The reviewers and editors agree that addressing these concerns will improve the manuscript. In particular, Figure 2 is an important figure. The authors should include a better explanation of the data, including clusters displayed and the relationship with anatomical information. The delineation of 'core 'and 'shell' is the foundation of the work and Reviewer #2's concern concerning core/shell needs to be addressed. This critique also applies to Figure 3\u2014figure supplement 2.\n\nReviewer #1:\n\nErwin et al's resubmission is improved by clarifying the methods and details of the experiments; inclusion of new, mFISH analyses with automated transcript quantification (including cells identified from retrograde labeling); and integration of their scRNA-seq datasets with those from larger, published studies. Their data make clear that there is a biased relationship between molecular identity and major axonal projection patterns for neurons in and around the claustrum which the authors describe as a \"core\" and \"shell\".\n\nThere are number of issues that could be addressed to strengthen the experiments, analyses and presentation of the manuscript.\n\n1. The RNA profiles which make up the \"unknown\" cluster \u2013 which the authors name then analyze as the \"shell\" \u2013 have been sampled and described in other studies and appear, transcriptionally, to be more of a quantitative specialization within a larger neuron population rather than a qualitatively distinct cell type. I draw this inference from their integrated analysis (Figure 1\u2014figure supplement 2). Contrast this to the cells from clusters 1 (canonical claustrum) and clusters 3 (Cortex L6) which appear to be distinct and discrete populations. Yet the way the manuscript is written suggests that the \"shell\" neurons are a categorically new and different population. I would suggest the authors change their description to better match the results presented in their integrated analysis.\n\n2. The analysis in Figure 1\u2014supplement 3 suffers from technical limitations and appears to be somewhat forcing the case that \"shell\" neurons they describe are distinct from those RNA profiles sampled in Saunders/Zeisel. Such comparisons of highly-granularized clusters can tend to identify expression \"noise\" rather than robust biological differences in RNA expression. Moreover, because each of the three studies used different chemistries and sequencing strategies to make scRNAseq libraries \u2013 and such chemistries have different DNA sequence-based biases in amplification and, moreover, were sequenced on different Illumina instruments \u2013 it seems in appropriate to compare expression levels of normalized RNAs across datasets in this manner. (I.e. that Nnat has higher expression in the Erwin dataset may simply reflect that Nnat cDNA was more likely to be present on the after Erwin-style library vs Dropseq or 10x V2 preparations).\n\n3. Of the markers presented for Cluster 2, Slc30a3 appears to have the most selective expression. Yet the data in Figure 2\u2014figure supplement 2 suggest no signal. Somewhat puzzlingly, the mFISH data for the same gene in Figure 2\u2014figure supplement 5 suggest near equivalent levels of mRNA counts in \"core\" vs \"shell\" clusters. For many \"shell\" marker genes, the mFISH data does not appear to vary in \"core\" neurons to the degree that the scRNA-seq data suggest.\n\n4. As a more general statement from 3 above, the violin plots used throughout the paper to show expression differences are hard to interpret, especially when severely flattened. The authors should perhaps consider a different plot type (maybe boxplots?) and to give the spacing to each plot so the differences they allude to can be evaluated. Are the violin plots on a log scale?\n\n5. I find the mFISH analysis presented in Figure 2 confusing. Shouldn't panel C (the clustering results based on the mRNA counts of the 12 genes) be presented before panel B (the locations of cells in the cluster-categories). And critically, what are we to make of the yellow and pink cells in C? Their cell bodies appear to be located within the claustrum yet do they lack a homolog in the scRNAseq data?\n\n6. The writing of the manuscript could be tightened to more carefully reflect what the authors intend. For example, the use of \"circuit\" \u2013 which I find somewhat ambiguous \u2013 might be better replaced by the words \"cellular anatomy\" or \"axonal projection.\"\n\n7. \"Claustrum\" is misspelled as \"clautrum\" in two instances.\n\nReviewer #2:\n\nThe revised manuscript of Erwin et al. has been improved though the addition of new experimental data and, as a result, my major comments have largely been addressed. While the results presented are better supported, the revised manuscript could be improved considerably by refinement in the way the data are presented and discussed, as detailed below.\n\nReviewer #3:\n\nThe manuscript is largely improved with additional data, especially the mFISH data. All my previous comments are addressed. I support its publication with eLife.\n",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "34c677d4-0def-47c3-9960-7d52eee94ba4",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C1",
+      "claim": "The claustrum has been implicated in attention.",
+      "claim_type": "EXPLICIT",
+      "source": "The claustrum has been implicated in a variety of functions and behaviors, including attention (Atlan et al., 2018; Goll et al., 2015; Smith et al., 2019), impulsivity (Liu et al., 2019), sleep (Narikiyo et al., 2020; Norimoto et al., 2020; Renouard et al., 2015), and the integration of information to support consciousness (Crick and Koch, 2005; Smythies et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Atlan et al., 2018; Goll et al., 2015; Smith et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "b9d70a17-b9cc-4046-aca9-cf392fedd2d6",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C2",
+      "claim": "The claustrum has been implicated in impulsivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The claustrum has been implicated in a variety of functions and behaviors, including attention (Atlan et al., 2018; Goll et al., 2015; Smith et al., 2019), impulsivity (Liu et al., 2019), sleep (Narikiyo et al., 2020; Norimoto et al., 2020; Renouard et al., 2015), and the integration of information to support consciousness (Crick and Koch, 2005; Smythies et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "542785cb-e99b-4360-bce5-7a4138e7180b",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C3",
+      "claim": "The claustrum has been implicated in sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "The claustrum has been implicated in a variety of functions and behaviors, including attention (Atlan et al., 2018; Goll et al., 2015; Smith et al., 2019), impulsivity (Liu et al., 2019), sleep (Narikiyo et al., 2020; Norimoto et al., 2020; Renouard et al., 2015), and the integration of information to support consciousness (Crick and Koch, 2005; Smythies et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Narikiyo et al., 2020; Norimoto et al., 2020; Renouard et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "5c4285ea-46d6-402d-93eb-a685773e4ff0",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C4",
+      "claim": "The claustrum has been implicated in the integration of information to support consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "The claustrum has been implicated in a variety of functions and behaviors, including attention (Atlan et al., 2018; Goll et al., 2015; Smith et al., 2019), impulsivity (Liu et al., 2019), sleep (Narikiyo et al., 2020; Norimoto et al., 2020; Renouard et al., 2015), and the integration of information to support consciousness (Crick and Koch, 2005; Smythies et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Crick and Koch, 2005; Smythies et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "30abb4fe-9647-49be-9e29-c831ed293d3f",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C5",
+      "claim": "The precise anatomical boundaries of the claustrum are a matter of debate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such an interpretation is challenged by the fact that even the precise anatomical boundaries of the claustrum are a matter of debate (Dillingham et al., 2019; Smith et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dillingham et al., 2019; Smith et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "aa06f037-8bac-4c97-a246-31b2559edf1e",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C6",
+      "claim": "Single-cell RNA sequencing identified two discrete populations of excitatory claustral neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Beginning with single-cell RNA sequencing, we identified two discrete populations of excitatory claustral neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by scRNA-seq data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "476540a3-07e1-4901-9610-65c19eb8c0d6",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C7",
+      "claim": "Multiplexed single-molecule fluorescent in situ hybridization revealed core and shell claustral neuron subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "To map the topography of these populations, we used multiplexed single-molecule fluorescent in situ hybridization, revealing core and shell claustral neuron subtypes that were transcriptionally distinguishable relative to surrounding cortical neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mFISH data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "e4343c52-a943-483d-b425-20c2ecc895b3",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C8",
+      "claim": "Core and shell claustral neuron subtypes are transcriptionally distinguishable relative to surrounding cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To map the topography of these populations, we used multiplexed single-molecule fluorescent in situ hybridization, revealing core and shell claustral neuron subtypes that were transcriptionally distinguishable relative to surrounding cortical neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mFISH and scRNA-seq data showing differential gene expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "b4cf3e04-ae51-40f3-9904-8f75437b5824",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C9",
+      "claim": "Multicolor retrograde tracing revealed a spatial organization of distinct cortical-projecting claustral populations that mapped onto the identified core and shell subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining this with multicolor retrograde tracing, we revealed a spatial organization of distinct cortical-projecting claustral populations that mapped onto the identified core and shell subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by retrograde tracing data combined with mFISH",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "8545b1a0-899f-4977-89f0-263eb14246c7",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C10",
+      "claim": "The claustrum consists of heterogeneous populations of excitatory neurons that are topographically organized.",
+      "claim_type": "EXPLICIT",
+      "source": "This work demonstrates that the claustrum consists of heterogeneous populations of excitatory neurons that are topographically organized and project to functionally dissociable cortical regions, suggesting subtype-specific functionality of excitatory claustral neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by scRNA-seq, mFISH, and retrograde tracing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "807b8825-102f-4831-8714-1fea4d4fd947",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C11",
+      "claim": "Claustral excitatory neurons project to functionally dissociable cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This work demonstrates that the claustrum consists of heterogeneous populations of excitatory neurons that are topographically organized and project to functionally dissociable cortical regions, suggesting subtype-specific functionality of excitatory claustral neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by retrograde tracing data showing projections to RSC and LEC",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "07ddd530-6994-4bca-8934-c88a0085a316",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C12",
+      "claim": "1112 cells were manually harvested based on a combination of unbiased blind selection and selection of specific labeled projections.",
+      "claim_type": "EXPLICIT",
+      "source": "From claustral microdissections from four mice, we manually harvested 1112 cells based on a combination of unbiased blind selection of cells and selection of specific labeled projections (to either the lateral entorhinal cortex [LEC] or retrosplenial cortex [RSC]; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental procedure for cell collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "076eeef8-9057-485f-9ed2-e28edec25844",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C13",
+      "claim": "After library preparation, sequencing, and filtering, 1011 excitatory neurons were retained for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "After library preparation, sequencing, and filtering, we retained a total of 1011 excitatory neurons for analysis (n = 478 cells blindly selected; n = 286 and 247 cells projecting to the LEC and RSC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the data processing and filtering steps",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "fef28966-663c-4f55-824a-d1168f33d96a",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C14",
+      "claim": "UMAP nonlinear dimensionality reduction combined with Louvain graph-based clustering revealed that cells broadly conformed to three transcriptomically separated clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining UMAP nonlinear dimensionality reduction (McInnes et al., 2018) with Louvain graph-based clustering (Stuart et al., 2019) revealed that cells broadly conformed to three transcriptomically separated clusters (Figure 1A; also seen in t-SNE: Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis and visualization in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "24a363d2-a20e-4467-ae3b-d625d098890b",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C15",
+      "claim": "All three clusters were associated with expression of excitatory neuronal markers.",
+      "claim_type": "EXPLICIT",
+      "source": "These clusters were all associated with expression of excitatory neuronal markers (Figure 1B) and were found across the anterior-posterior axis and across animals (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "9f3ee116-2d61-4b76-a822-bec02ed055da",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C16",
+      "claim": "The three clusters were found across the anterior-posterior axis and across animals.",
+      "claim_type": "EXPLICIT",
+      "source": "These clusters were all associated with expression of excitatory neuronal markers (Figure 1B) and were found across the anterior-posterior axis and across animals (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 1B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "0e8e9de9-bb4a-4a57-a44d-0f8746655757",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C17",
+      "claim": "Cluster 1 was enriched for the claustrum marker gene Synpr.",
+      "claim_type": "EXPLICIT",
+      "source": "In seeking to assign transcriptomic phenotypes to these cells, we noted one cluster ('Cluster 1') was enriched for the claustrum marker gene Synpr (Binks et al., 2019; Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression data and citations to Binks et al., 2019; Wang et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "8f0b6e35-0f61-4d22-8ef3-9089b7063702",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C18",
+      "claim": "Cluster 1 and Cluster 2 exhibited enriched expression of claustrum marker genes (e.g., Gnb4) relative to Cluster 3.",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster and a second cluster ('Cluster 2') exhibited enriched expression of other claustrum marker genes (e.g., Gnb4) relative to the third cluster ('Cluster 3') (Figure 1C), with Cluster 2 also showing uniquely expressed marker genes (e.g., Slc30a3; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "a58b5c68-82f7-4fb7-9ca1-6069f81bffc9",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C19",
+      "claim": "Cluster 2 showed uniquely expressed marker genes including Slc30a3.",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster and a second cluster ('Cluster 2') exhibited enriched expression of other claustrum marker genes (e.g., Gnb4) relative to the third cluster ('Cluster 3') (Figure 1C), with Cluster 2 also showing uniquely expressed marker genes (e.g., Slc30a3; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "33dd3388-f1e2-4f07-b1b9-e40a917ae8ef",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C20",
+      "claim": "Cluster 3 was enriched for markers of excitatory cortical populations including the layer 6b marker Ctgf and the layer 6a marker Sla.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Cluster 3 was enriched for markers of excitatory cortical populations (e.g., the layer 6b marker Ctgf and the layer 6a marker Sla) (Tasic et al., 2016; Tasic et al., 2018), suggesting a cortical phenotype (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data and citations to Tasic et al., 2016; Tasic et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "7f6d899a-15c4-4163-ad5c-c9b78adc2422",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C21",
+      "claim": "Cluster 3 has a cortical phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Cluster 3 was enriched for markers of excitatory cortical populations (e.g., the layer 6b marker Ctgf and the layer 6a marker Sla) (Tasic et al., 2016; Tasic et al., 2018), suggesting a cortical phenotype (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from enrichment of cortical marker genes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "141719a3-672d-48f3-ab20-9b9cbd8139cf",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C22",
+      "claim": "Each cluster exhibited enriched expression of many genes associated with neuronal function, suggesting structural and functional heterogeneity between the three clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Each cluster also exhibited enriched expression of many other genes associated with neuronal function (Figure 1E), suggesting structural and functional heterogeneity between these three clusters (for full lists of differentially expressed genes, see Supplementary files 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "50314a72-15f0-4908-bf4b-b43b2d73c810",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C23",
+      "claim": "The scRNA-seq dataset largely conformed to three distinct locations within the broader cell-type landscape when incorporating published data.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the three clusters identified within our dataset, our dataset largely conformed to three distinct locations within the broader cell-type landscape when incorporating published data (Figure 1\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by integrated analysis with published datasets shown in Figure 1\u2014figure supplement 2A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "ddaad96c-9925-49bd-a27c-7de16ad458e7",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C24",
+      "claim": "Cluster 1 cells occupied an isolated group of Synpr-expressing cells in the integrated dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Cluster 1 cells occupied an isolated group of Synpr-expressing cells, whereas Cluster 2 cells coarsely occupied a distinct location nearby other datasets, but were also enriched for specific marker genes like Nnat (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by integrated analysis shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "929d08f4-4e24-4d52-890b-14b7baa7b548",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C25",
+      "claim": "Cluster 2 cells were enriched for specific marker genes like Nnat.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Cluster 1 cells occupied an isolated group of Synpr-expressing cells, whereas Cluster 2 cells coarsely occupied a distinct location nearby other datasets, but were also enriched for specific marker genes like Nnat (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "ebaf4b39-23de-4026-bc7f-9a4d5a52a359",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C26",
+      "claim": "Nnat-expressing Cluster 2 cells were depleted in Pcp4 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with Cluster 2 being non-cortical, these Nnat-expressing Cluster 2 cells were also depleted in Pcp4 expression (Figure 1\u2014figure supplement 3), a gene strongly expressed in deep cortical layers (but with exception of layer 6 intratelencephalic excitatory neurons: Watakabe et al., 2012; Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "812fc77f-10c0-4647-97c5-37102b19098b",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C27",
+      "claim": "Pcp4 is a gene strongly expressed in deep cortical layers (with exception of layer 6 intratelencephalic excitatory neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with Cluster 2 being non-cortical, these Nnat-expressing Cluster 2 cells were also depleted in Pcp4 expression (Figure 1\u2014figure supplement 3), a gene strongly expressed in deep cortical layers (but with exception of layer 6 intratelencephalic excitatory neurons: Watakabe et al., 2012; Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Watakabe et al., 2012 and data shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "25e0da7a-ff2a-4787-b10f-1210df2fa279",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C28",
+      "claim": "The scRNA-seq data recapitulates previously described cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "In collection, this work shows that our scRNA-seq data recapitulates previously described cell types and further suggests new marker genes and specializations that may have been underresolved in previous studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with published datasets",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "603765bb-1b6b-4d7c-8a3d-0fbe11e3f045",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C29",
+      "claim": "The scRNA-seq data suggests new marker genes and specializations that may have been underresolved in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In collection, this work shows that our scRNA-seq data recapitulates previously described cell types and further suggests new marker genes and specializations that may have been underresolved in previous studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by identification of novel marker genes like Slc30a3 and Nnat",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "731903c8-e46a-4f09-b4b6-dfa408a02c92",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C30",
+      "claim": "Multiplexed fluorescent in situ hybridization allows mapping of 12 RNA targets at single-molecule and single-cell resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we used multiplexed fluorescent in situ hybridization (mFISH) (Wang et al., 2012), allowing us to map 12 RNA targets at a single-molecule and single-cell resolution (Sullivan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2012 and Sullivan et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "d67e1677-a4b7-417b-98a8-283d78c80473",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C31",
+      "claim": "18,957 excitatory neurons from 5 animals were analyzed using mFISH.",
+      "claim_type": "EXPLICIT",
+      "source": "We used mFISH to spatially register expression of these 12 genes across anterior, intermediate, and posterior sections of the claustrum (Figure 2A; expansions: Figure 2\u2014figure supplement 2; Video 1; n = 18,957 excitatory neurons from n = 5 animals analyzed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the sample size for mFISH analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "9c4e4985-3afe-492e-a3ae-6bb2e91812fa",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C32",
+      "claim": "A claustrum population with a relatively central core-like location exhibited expression of Synpr.",
+      "claim_type": "EXPLICIT",
+      "source": "In doing so, we identified a claustrum population with a relatively central core-like location that exhibited expression of Synpr, and a surrounding shell-like population exhibiting expression of Nnat (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mFISH data shown in Figure 2B\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "51562376-88c8-481e-b31a-15a9c050651a",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C33",
+      "claim": "A surrounding shell-like population exhibited expression of Nnat.",
+      "claim_type": "EXPLICIT",
+      "source": "In doing so, we identified a claustrum population with a relatively central core-like location that exhibited expression of Synpr, and a surrounding shell-like population exhibiting expression of Nnat (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mFISH data shown in Figure 2B\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "dfa2dde2-f6fb-46f6-90c6-607febf4ac3d",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C34",
+      "claim": "The core-shell organization was present across the anterior-posterior axis.",
+      "claim_type": "EXPLICIT",
+      "source": "This organization was present across the anterior-posterior axis (Figure 2\u2014figure supplement 3) as well as across animals (Figure 2\u2014figure supplement 4), and recapitulated gene-expression properties predicted from scRNA-seq (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mFISH data shown in Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "2e1bae60-ccdc-4941-8c7e-b76d09ccd925",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C35",
+      "claim": "The core-shell organization was present across animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This organization was present across the anterior-posterior axis (Figure 2\u2014figure supplement 3) as well as across animals (Figure 2\u2014figure supplement 4), and recapitulated gene-expression properties predicted from scRNA-seq (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mFISH data shown in Figure 2\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "2a88b80c-a60d-461c-8c7e-78f48abf0de7",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C36",
+      "claim": "The mFISH data recapitulated gene-expression properties predicted from scRNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "This organization was present across the anterior-posterior axis (Figure 2\u2014figure supplement 3) as well as across animals (Figure 2\u2014figure supplement 4), and recapitulated gene-expression properties predicted from scRNA-seq (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison shown in Figure 2\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "0e93ccf8-ccb5-4288-abab-83da4aef4952",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C37",
+      "claim": "Adjacent to the claustrum populations were other neuronal subtypes enriched for markers of cortical cells, including a cluster with spatial and transcriptional properties of deep layer 6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjacent to these populations were other neuronal subtypes enriched for markers of cortical cells, including a cluster with spatial and transcriptional properties of deep layer 6 cells (i.e., a Ctgf-expressing cluster in the deepest cortical layer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mFISH data showing Ctgf expression in deep cortical layers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "e26e4185-f90a-40a8-8a54-fb45f7be3e8e",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C38",
+      "claim": "Claustrum excitatory neuron subtypes are transcriptionally distinct from neighboring cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results illustrated that claustrum excitatory neuron subtypes are transcriptionally distinct from neighboring cortical neurons and form a core-shell spatial organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by scRNA-seq and mFISH data showing differential gene expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "16e19d1a-d8d3-427b-98e8-258ea8721ab7",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C39",
+      "claim": "Claustrum excitatory neuron subtypes form a core-shell spatial organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results illustrated that claustrum excitatory neuron subtypes are transcriptionally distinct from neighboring cortical neurons and form a core-shell spatial organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mFISH data showing spatial arrangement of Synpr and Nnat expressing cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "f8c0514c-4c65-4d7a-8d74-a14d222118ed",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C40",
+      "claim": "Projections to the RSC and LEC exhibit minimal overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "To answer this question, we next considered projections to the RSC and LEC, two claustral projections that exhibit minimal overlap (two-color retrograde viral injections: Figure 3A; see also Marriott et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by retrograde tracing data shown in Figure 3A and citation to Marriott et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "8d5eb9bd-0bfe-4b29-9342-077fe42481e8",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C41",
+      "claim": "85% (204/241) of RSC-projecting claustrum cells mapped onto the Synpr-expressing class.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 85% (204/241) of RSC-projecting claustrum cells mapped onto the Synpr-expressing class, whereas 84% (238/282) of LEC-projecting claustrum cells mapped onto the Nnat-expressing class (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scRNA-seq data with projection labeling shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "4d6034f0-4cad-491b-b7cc-393012bde59e",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C42",
+      "claim": "84% (238/282) of LEC-projecting claustrum cells mapped onto the Nnat-expressing class.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 85% (204/241) of RSC-projecting claustrum cells mapped onto the Synpr-expressing class, whereas 84% (238/282) of LEC-projecting claustrum cells mapped onto the Nnat-expressing class (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scRNA-seq data with projection labeling shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "2a799c4c-daec-4e6c-9e20-e47c448bc6e3",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C43",
+      "claim": "mFISH applied to retrograde-labeled cells provided evidence that Synpr and Nnat were respectively enriched in RSC-projecting and LEC-projecting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, applying mFISH to retrograde-labeled cells provided complementary evidence that Synpr and Nnat were respectively enriched in RSC-projecting and LEC-projecting cells (representative section: Figure 3D\u2013H; all projection cells: Figure 3I, Figure 3\u2014figure supplement 1), and illustrated that RSC- and LEC-projecting cells were enriched in distinct claustral subtypes (216/259 = 83% of RSC-projecting claustral cells were found in core cluster and 276/324 = 85% of LEC-projecting claustral cells were found in shell cluster, n = 4 and n = 2 animals, respectively, Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mFISH data with retrograde labeling shown in Figure 3D\u2013I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "7f6dc884-e6e9-4df2-a810-a86ffbbd3768",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C44",
+      "claim": "83% (216/259) of RSC-projecting claustral cells were found in the core cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, applying mFISH to retrograde-labeled cells provided complementary evidence that Synpr and Nnat were respectively enriched in RSC-projecting and LEC-projecting cells (representative section: Figure 3D\u2013H; all projection cells: Figure 3I, Figure 3\u2014figure supplement 1), and illustrated that RSC- and LEC-projecting cells were enriched in distinct claustral subtypes (216/259 = 83% of RSC-projecting claustral cells were found in core cluster and 276/324 = 85% of LEC-projecting claustral cells were found in shell cluster, n = 4 and n = 2 animals, respectively, Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mFISH data with retrograde labeling shown in Figure 3J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "094880a1-47c3-489e-9a94-95e3efd26208",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C45",
+      "claim": "85% (276/324) of LEC-projecting claustral cells were found in the shell cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, applying mFISH to retrograde-labeled cells provided complementary evidence that Synpr and Nnat were respectively enriched in RSC-projecting and LEC-projecting cells (representative section: Figure 3D\u2013H; all projection cells: Figure 3I, Figure 3\u2014figure supplement 1), and illustrated that RSC- and LEC-projecting cells were enriched in distinct claustral subtypes (216/259 = 83% of RSC-projecting claustral cells were found in core cluster and 276/324 = 85% of LEC-projecting claustral cells were found in shell cluster, n = 4 and n = 2 animals, respectively, Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mFISH data with retrograde labeling shown in Figure 3J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "299a383e-d875-46c2-a732-9c58ac4dd10f",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C46",
+      "claim": "Distinct excitatory claustrum projection neurons are coherently separable by marker genes, local spatial organization, and long-range projection targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, distinct excitatory claustrum projection neurons were coherently separable by marker genes, local spatial organization, and long-range projection targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by combined scRNA-seq, mFISH, and retrograde tracing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "43a2b9fe-e497-4e49-bd64-1fb8befc5c05",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C47",
+      "claim": "Marker-based approaches using individual genes such as Lxn, Gnb4, and Slc17a6 coarsely demarcate the boundaries of the adult mouse claustrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Marker-based approaches using individual genes such as Lxn, Gnb4, and Slc17a6 coarsely demarcate the boundaries of the adult mouse claustrum (Fodoulian et al., 2020; Kitanishi and Matsuo, 2017; Mathur et al., 2009; Peng et al., 2020; Wang et al., 2017; Watakabe et al., 2012), but it is unclear if these different genes all converge upon a monolithic cellular population or embody different claustrum subtypes (and potentially include phenotypically cortical cells: Bruguier et al., 2020; Moln\u00e1r et al., 2020; Puelles et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "af0a916c-c8a2-4dd2-bf96-9dfb817046b4",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C48",
+      "claim": "It is unclear if different marker genes all converge upon a monolithic cellular population or embody different claustrum subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Marker-based approaches using individual genes such as Lxn, Gnb4, and Slc17a6 coarsely demarcate the boundaries of the adult mouse claustrum (Fodoulian et al., 2020; Kitanishi and Matsuo, 2017; Mathur et al., 2009; Peng et al., 2020; Wang et al., 2017; Watakabe et al., 2012), but it is unclear if these different genes all converge upon a monolithic cellular population or embody different claustrum subtypes (and potentially include phenotypically cortical cells: Bruguier et al., 2020; Moln\u00e1r et al., 2020; Puelles et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents a gap in knowledge addressed by this study",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "f361dbf7-cbe6-4d04-9099-ab2c106cb962",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C49",
+      "claim": "Retrograde tracing from the cortex has been useful for identifying claustrum projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrograde tracing from the cortex has been useful for identifying claustrum projection neurons (Marriott et al., 2020; Minciacchi et al., 1985; Watson et al., 2017; Zingg et al., 2018), but similarly it remains unknown whether projection-labeled claustrum cells are intrinsically homogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "9a54e015-e7eb-43de-8dad-c84a04bc871c",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C50",
+      "claim": "It remains unknown whether projection-labeled claustrum cells are intrinsically homogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrograde tracing from the cortex has been useful for identifying claustrum projection neurons (Marriott et al., 2020; Minciacchi et al., 1985; Watson et al., 2017; Zingg et al., 2018), but similarly it remains unknown whether projection-labeled claustrum cells are intrinsically homogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents a gap in knowledge addressed by this study",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "35dd3224-0688-4a31-8a8c-5477e7ce7f24",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C51",
+      "claim": "The approach integrating transcriptomic and circuit-level approaches identified two claustrum cell subtypes that are molecularly distinguishable from surrounding cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach here, integrating transcriptomic and circuit-level approaches, identified two claustrum cell subtypes that are molecularly distinguishable from surrounding cortex (Figures 1 and 2) and associated with different long-range projection patterns (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data presented in Figures 1, 2, and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "69bf06bc-b9b3-423c-8c43-50e623adabe3",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C52",
+      "claim": "The two claustrum cell subtypes are associated with different long-range projection patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach here, integrating transcriptomic and circuit-level approaches, identified two claustrum cell subtypes that are molecularly distinguishable from surrounding cortex (Figures 1 and 2) and associated with different long-range projection patterns (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data presented in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "d6aaf811-47b2-4732-a597-4e58cb20ce22",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C53",
+      "claim": "The RSC and LEC reflect the two most spatially distinct core vs. shell projections.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous projection mapping, it has been shown that the RSC and LEC reflect the two most spatially distinct core vs. shell projections (Marriott et al., 2020), and thus it is likely that other claustral projections comprise more of a mosaicism of core and shell transcriptomic phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marriott et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "c9db6305-259e-48cc-b767-749ce04024f3",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C54",
+      "claim": "Other claustral projections likely comprise more of a mosaicism of core and shell transcriptomic phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous projection mapping, it has been shown that the RSC and LEC reflect the two most spatially distinct core vs. shell projections (Marriott et al., 2020), and thus it is likely that other claustral projections comprise more of a mosaicism of core and shell transcriptomic phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that RSC and LEC are the most distinct projections",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "0de284b6-8270-4a7f-907e-1e4a4f1fef1a",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C55",
+      "claim": "The claustral organizational scheme involves discretely separate transcriptomic subtypes that are biased \u2013 but not wholly separable \u2013 according to long-range projection targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, this suggests a claustral organizational scheme wherein discretely separate transcriptomic subtypes are biased \u2013 but not wholly separable \u2013 according to long-range projection targets (Cembrowski and Menon, 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the data showing 83-85% correspondence between subtypes and projections",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "fc5b3862-e9c6-4c32-ad2a-be27daeb4c57",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C56",
+      "claim": "The relationship between the claustrum and the nearby deep insular cortex and dorsal endopiriform cortex is often debated.",
+      "claim_type": "EXPLICIT",
+      "source": "As the relationship between the claustrum and the nearby deep insular cortex and dorsal endopiriform cortex is often debated (Bruguier et al., 2020; Marriott et al., 2020; Mathur, 2014; Mathur et al., 2009; Smith et al., 2019; Watakabe et al., 2012; Watson et al., 2017; Zingg et al., 2020), it is important to discuss our work in the context of these adjacent regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "6fb6d9cc-81c1-4e8e-a3a2-b93dfff3a043",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C57",
+      "claim": "Relative to the deep insular cortex, the work shows a general lack of deep cortical markers for two distinct neuron types.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the deep insular cortex, our work here shows a general lack of deep cortical markers for two distinct neuron types, as well as enrichment of genes in these types that are not typically associated with deep cortex (Figure 1C, Figure 1\u2014figure supplements 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1C and supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "ef9cf73a-9d27-44d4-8772-c1d9ccf4e0d8",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C58",
+      "claim": "The two neuron types show enrichment of genes that are not typically associated with deep cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the deep insular cortex, our work here shows a general lack of deep cortical markers for two distinct neuron types, as well as enrichment of genes in these types that are not typically associated with deep cortex (Figure 1C, Figure 1\u2014figure supplements 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1C and supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "5b299414-1c65-4889-923c-af7263977ef9",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C59",
+      "claim": "Both neuron types show enrichment of some claustrum marker genes relative to cortical neurons (e.g., Gnb4).",
+      "claim_type": "EXPLICIT",
+      "source": "In conjunction with both of these neuron types showing enrichment of some claustrum marker genes relative to cortical neurons (e.g., Gnb4: Figure 1C), we interpret these transcriptomic cell types as claustrum core and shell neuron subtypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "84569c8a-09cd-4891-bb83-7dee92a9e61f",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C60",
+      "claim": "The transcriptomic cell types are interpreted as claustrum core and shell neuron subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In conjunction with both of these neuron types showing enrichment of some claustrum marker genes relative to cortical neurons (e.g., Gnb4: Figure 1C), we interpret these transcriptomic cell types as claustrum core and shell neuron subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of marker gene expression and spatial location",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "c2ed15e5-d7a5-4420-b8e1-931fb3e6268b",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C61",
+      "claim": "The scRNA-seq and smFISH validation focused on the atlas-defined spatial extent of the claustrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the dorsal endopiriform cortex, our scRNA-seq and smFISH validation focused on the atlas-defined spatial extent of the claustrum; thus, future work targeting the dorsal endopiriform cortex will be needed to examine the transcriptomic relationship between these two regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the spatial scope of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "0fcc7271-599b-4a95-b57b-e810b4e06916",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C62",
+      "claim": "Future work targeting the dorsal endopiriform cortex will be needed to examine the transcriptomic relationship between the claustrum and dorsal endopiriform cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the dorsal endopiriform cortex, our scRNA-seq and smFISH validation focused on the atlas-defined spatial extent of the claustrum; thus, future work targeting the dorsal endopiriform cortex will be needed to examine the transcriptomic relationship between these two regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents a limitation and future direction",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "33c1a14f-5dd2-4b7c-b3ba-2cbc68c3ac85",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C63",
+      "claim": "The findings will allow subtype-specific claustral function to be assayed in future experiments by leveraging either marker genes or projection pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our results will allow subtype-specific claustral function to be assayed in future experiments by leveraging either marker genes or projection pathways (Cembrowski, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents a potential application of the findings",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "7d53b172-e9f7-42cb-9399-0eb60699d9a2",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C64",
+      "claim": "The findings will help to guide and inform observational and interventional experiments, and bridge claustrum cell-type identity, structure, and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings here will help to guide and inform observational and interventional experiments, and bridge claustrum cell-type identity, structure, and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents a potential application of the findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "e27f791c-9860-4b61-a495-2ed82364855a",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C65",
+      "claim": "The scRNA-seq data has been hosted online in conjunction with analysis and visualization tools at http://scrnaseq.janelia.org/claustrum.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate such experiments and interpretations, we have hosted our scRNA-seq data online in conjunction with analysis and visualization tools (http://scrnaseq.janelia.org/claustrum).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data availability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "9bb9bb29-a155-42b3-9555-967749ebd4ba",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C66",
+      "claim": "The web portal will help to identify how specific genes, cells, and circuits mechanistically drive claustral function and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This web portal will help to identify how specific genes, cells, and circuits mechanistically drive claustral function and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents a potential application of the resource",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "b0c232cd-fd57-48a1-8fc5-05bb1cd39b9e",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C67",
+      "claim": "All procedures were approved by the University of British Columbia Animal Care Committee (protocol A18-0267).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the University of British Columbia Animal Care Committee (protocol A18-0267), the University of Alberta Health Science Laboratory Animal Services Animal Care and Use Committee (protocol AUP2711), and the Janelia Institutional Animal Care and Use Committee (protocol 17-159).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "035af1ec-65da-402d-8f9a-2719b3201889",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C68",
+      "claim": "All procedures were approved by the University of Alberta Health Science Laboratory Animal Services Animal Care and Use Committee (protocol AUP2711).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the University of British Columbia Animal Care Committee (protocol A18-0267), the University of Alberta Health Science Laboratory Animal Services Animal Care and Use Committee (protocol AUP2711), and the Janelia Institutional Animal Care and Use Committee (protocol 17-159).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "62f6bfa6-6604-4d12-8ea9-01eb77ca1f1e",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C69",
+      "claim": "All procedures were approved by the Janelia Institutional Animal Care and Use Committee (protocol 17-159).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the University of British Columbia Animal Care Committee (protocol A18-0267), the University of Alberta Health Science Laboratory Animal Services Animal Care and Use Committee (protocol AUP2711), and the Janelia Institutional Animal Care and Use Committee (protocol 17-159).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "36ca495b-5d32-4d7d-8b0d-8735f76c8072",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C70",
+      "claim": "Mature C57BL/6 mice of either sex were used for retrograde tracer injections.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature C57BL/6 mice of either sex were used for injections, and randomly assigned retrograde injection locations and tracers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental subjects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "b469ee78-62f3-4bc9-aa0c-d79ca781068b",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C71",
+      "claim": "Mice were randomly assigned retrograde injection locations and tracers.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature C57BL/6 mice of either sex were used for injections, and randomly assigned retrograde injection locations and tracers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "ba9a3233-db0c-4889-93bd-16ac44b266ac",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C72",
+      "claim": "200 nL of retrograde tracer was injected for all retrograde tracing experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "All injections were made using pressure injection, with 200 nL of retrograde tracer (Tervo et al., 2016) being injected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "faecbc02-19de-45e2-8a0d-fa362fdabf0f",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C73",
+      "claim": "Manual capture approach was used to harvest cells from 4 mature male C57BL/6 mice for scRNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a manual capture approach to harvest cells from n = 4 mature male C57BL/6 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "1de492ba-dfe6-4def-8667-27456c99d073",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C74",
+      "claim": "Fluorescent tracers were used to delineate and grossly microdissect the claustrum from horizontal sections.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate microdissection of the claustrum, fluorescent tracers were used to delineate and grossly microdissect the claustrum from horizontal sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "904e75a0-d128-419f-b61e-4adb07afb104",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C75",
+      "claim": "In one animal, retrograde rAAV2-retro-CAG-GFP was injected into the anterior cingulate cortex to facilitate gross microdissection of the claustrum.",
+      "claim_type": "EXPLICIT",
+      "source": "In one animal, retrograde rAAV2-retro-CAG-GFP (Tervo et al., 2016) was injected into the anterior cingulate cortex to facilitate gross microdissection of the claustrum (Jackson et al., 2018), but not used to select for individual cells (i.e., GFP expression was used to microdissect the claustrum but cells were picked blind relative to GFP expression).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "22e3b3d8-e790-4257-9b5a-b2b926fe0707",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C76",
+      "claim": "In one animal, cells from separate anterior and posterior sections were obtained, allowing analysis of potential anterior vs. posterior differences in claustrum gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In this animal, cells from separate anterior and posterior sections were obtained, allowing analysis of potential anterior vs. posterior differences in claustrum gene expression (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Describes experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "268cb6b3-7655-4ac9-b1e1-55ebeb63f737",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C77",
+      "claim": "For three mice, green and red retrobeads were respectively injected into the LEC and RSC.",
+      "claim_type": "EXPLICIT",
+      "source": "To build the projection-specific dataset, for the remaining three mice, green and red retrobeads were respectively injected into the LEC and RSC, with this labeling used for gross microdissection as well as to select a subset of projection-specific cells for RNA-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "5018bb37-153f-493d-88a7-ec4d0a21fbb7",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C78",
+      "claim": "Manual purification was used to capture cells in capillary needles in approximately 0.1\u20130.5 mL ACSF cocktail.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, manual purification (Hempel et al., 2007) was used to capture cells in capillary needles in approximately 0.1\u20130.5 mL ACSF cocktail, placed into 8-well strips containing 3 \u00b5L of cell collection buffer (0.1% Triton X-100, 0.2 U/\u00b5L RNAse inhibitor; Lucigen, Middleton, WI), and generally processed according to published methodology (Cembrowski et al., 2018b; Schretter et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental procedure with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "277f4012-b843-4903-8a21-55107ab81a63",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C79",
+      "claim": "Of the initial 1112 cells, 27 putative non-neuronal cells were excluded due to low expression of Snap25 (CPM < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Of these initial 1112 cells, 27 putative non-neuronal cells were excluded due to low expression of Snap25 (CPM < 0.001) and 74 additional cells were excluded due to low Slc17a7 (CPM < 1e-10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data filtering procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "1e5ac25d-8ab1-47fa-8677-f8f5b5a35e6c",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C80",
+      "claim": "74 additional cells were excluded due to low Slc17a7 (CPM < 1e-10).",
+      "claim_type": "EXPLICIT",
+      "source": "Of these initial 1112 cells, 27 putative non-neuronal cells were excluded due to low expression of Snap25 (CPM < 0.001) and 74 additional cells were excluded due to low Slc17a7 (CPM < 1e-10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data filtering procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "6b98e8cd-33f5-4484-b478-cbe57473eec8",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C81",
+      "claim": "The remaining 1011 cells exhibit 5.2 \u00b1 1.1 thousand expressed genes/cell from 142 \u00b1 98 thousand reads/cell, mean \u00b1 SD.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 1011 cells exhibit 5.2 \u00b1 1.1 thousand expressed genes/cell from 142 \u00b1 98 thousand reads/cell, mean \u00b1 SD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data quality metrics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "28ee52b3-24e2-4133-a5bd-1447dd83fd16",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C82",
+      "claim": "The relatively high abundance of excitatory neurons sampled owed both to the targeted approach for harvesting circuit-labeled cells and the fact that excitatory neurons are relatively abundant relative to interneurons in the claustrum.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively high abundance of excitatory neurons sampled owed both to the targeted approach for harvesting circuit-labeled cells, as well as the fact that excitatory neurons are relatively abundant relative to interneurons in the claustrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explains the composition of the dataset",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "96906a1a-3b70-4e1b-aa15-da0bdeaa991e",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C83",
+      "claim": "No blinding or randomization was used for the construction or analysis of the scRNA-seq dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "No blinding or randomization was used for the construction or analysis of this dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "6395351e-025c-4981-924f-e1f984e0c186",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C84",
+      "claim": "No a priori sample size was determined for the number of animals or cells to use for scRNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "No a priori sample size was determined for the number of animals or cells to use; note that previous methods have indicated that several hundred cells from a single animal are sufficient to resolve heterogeneity within excitatory neuronal cell types (Cembrowski et al., 2018b; Cembrowski et al., 2018c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental design with citation to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "56c62230-ab5b-4254-be9b-7ad4fd243d41",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C85",
+      "claim": "Previous methods have indicated that several hundred cells from a single animal are sufficient to resolve heterogeneity within excitatory neuronal cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "No a priori sample size was determined for the number of animals or cells to use; note that previous methods have indicated that several hundred cells from a single animal are sufficient to resolve heterogeneity within excitatory neuronal cell types (Cembrowski et al., 2018b; Cembrowski et al., 2018c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cembrowski et al., 2018b; Cembrowski et al., 2018c",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "1650f53d-e038-4af3-be28-d6d503edbffa",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C86",
+      "claim": "Computational analysis was performed in R using a combination of Seurat v3 and custom scripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational analysis was performed in R (RRID:SCR_001905; R Development Core Team, 2008) using a combination of Seurat v3 (RRID:SCR_007322; Satija et al., 2015; Stuart et al., 2019) and custom scripts (Cembrowski et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes computational methods with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "88786ee9-3ba2-466d-8323-ec08ff1fe161",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C87",
+      "claim": "Raw and processed scRNA-seq datasets have been deposited in the National Center for Biotechnology Information (NCBI) Gene Expression Omnibus under GEO: GSE149495.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw and processed scRNA-seq datasets have been deposited in the National Center for Biotechnology Information (NCBI) Gene Expression Omnibus under GEO: GSE149495.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data availability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "48c7558a-f3bf-48fc-a488-06985d8ebaed",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C88",
+      "claim": "From Saunders et al., 2018, 2877 total cells were extracted using a threshold of 16,000 transcripts/cell.",
+      "claim_type": "EXPLICIT",
+      "source": "From Saunders et al., 2018, we downloaded frontal cortex data from F_GRCm38.81.P60Cortex_noRep5_FRONTALonly.raw.dge.txt.gz (from http://dropviz.org) and used a threshold of 16,000 transcripts/cell to extract 2877 total cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data processing for integration analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "a6343d81-14fc-454a-a120-5f47d790c15f",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C89",
+      "claim": "After screening against cells that lacked Snap25 and/or Slc17a7 expression, 2842 putative excitatory neurons were retained from Saunders et al., 2018 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "After screening against cells that lacked Snap25 and/or Slc17a7 expression, 2842 putative excitatory neurons were retained for analysis (genes expressed/cell: 4.8 \u00b1 0.6 thousand, mean \u00b1 SD; transcripts/cell: 16.5 \u00b1 5.0 thousand, mean \u00b1 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data processing for integration analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "ff81862f-67c3-41df-98fc-a2c3c74fd503",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C90",
+      "claim": "From Zeisel et al., 2018, 3151 cells were obtained using a threshold for 7500 transcripts/cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a similar number of cells from Zeisel et al., 2018, obtained from l6_r4_telencephalon_projecting_excitatory_neurons.loom (from http://mousebrain.org/loomfiles_level_L6.html): 3151 cells were obtained using a threshold for 7500 transcripts/cell, with 3141 cells retained after requiring Snap25 and Slc17a7 expression (genes expressed/cell: 3.7 \u00b1 0.4 thousand, mean \u00b1 SD; transcripts/cell: 9.6 \u00b1 2.0 thousand, mean \u00b1 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data processing for integration analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "c19f88be-aa45-49e9-b3c0-525849900fc2",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C91",
+      "claim": "3141 cells were retained from Zeisel et al., 2018 after requiring Snap25 and Slc17a7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a similar number of cells from Zeisel et al., 2018, obtained from l6_r4_telencephalon_projecting_excitatory_neurons.loom (from http://mousebrain.org/loomfiles_level_L6.html): 3151 cells were obtained using a threshold for 7500 transcripts/cell, with 3141 cells retained after requiring Snap25 and Slc17a7 expression (genes expressed/cell: 3.7 \u00b1 0.4 thousand, mean \u00b1 SD; transcripts/cell: 9.6 \u00b1 2.0 thousand, mean \u00b1 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data processing for integration analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "a70a5a4c-ce3f-4b99-bc76-0cf583e19b9f",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C92",
+      "claim": "Integration of published datasets with the current dataset was done in Seurat v3.",
+      "claim_type": "EXPLICIT",
+      "source": "Integration of these published datasets with our dataset was done in Seurat v3 (Stuart et al., 2019) by creating a Seurat object incorporating all datasets, and then using SplitObject() to split according to original dataset, allowing each dataset to independently undergo normalization and variable feature selection (handled identically to our data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes computational methods with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "22cf4c4a-64bf-4a7a-a798-a9b9b55f5461",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C93",
+      "claim": "Custom probes for mFISH were purchased from Advanced Cell Diagnostics.",
+      "claim_type": "EXPLICIT",
+      "source": "Custom probes for mFISH were purchased from Advanced Cell Diagnostics and were as follows: Cdh9 (443221-T1), Ctgf (314541-T2), Slc17a6 (319171-T3), Lxn (585801-T4), Slc30a3 (496291-T5), Gfra1 (431781-T6), Spon1 (492671-T7), Gnb4 (460951-T8), Nnat (432631-T9), Synpr (500961-T10), Pcp4 (402311-T11), and Slc17a7 (416631-T12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes materials used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "93a47582-f8e3-4b13-99ed-2b9b8f02a0d6",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C94",
+      "claim": "mFISH was generally performed as previously implemented by Sullivan et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "mFISH was generally performed as previously implemented (Sullivan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes methods with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "ddb8e1ad-2975-4c56-907a-b07c40e72ca0",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C95",
+      "claim": "Brain sections (20 \u00b5m) were made using a cryostat tissue slicer and mounted on glass slides.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain sections (20 \u00b5m) were made using a cryostat tissue slicer and mounted on glass slides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "45043ee5-8ca2-4f8f-a4e7-490d3b4d0d4d",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C96",
+      "claim": "mFISH images were acquired with a 63\u00d7 objective on a SP8 Leica white light laser confocal microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "mFISH images were acquired with a 63\u00d7 objective on a SP8 Leica white light laser confocal microscope (Leica Microsystems, Concord, Ontario, Canada).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes imaging equipment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "73c440b1-f2fe-4c44-89f8-1164e4298f62",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C97",
+      "claim": "Z-stacks were acquired with a step size of 0.45 \u00b5m for each imaging round.",
+      "claim_type": "EXPLICIT",
+      "source": "Z-stacks were acquired with a step size of 0.45 \u00b5m for each imaging round.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes imaging parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "c6d8df0b-8ae7-40e9-b995-dc8689fee551",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C98",
+      "claim": "Processing of mFISH images generally followed the previously published analysis pipeline by Sullivan et al., 2020 using Fiji.",
+      "claim_type": "EXPLICIT",
+      "source": "Processing of mFISH images generally followed our previously published analysis pipeline (Sullivan et al., 2020) using Fiji (RRID:SCR_002285; Schindelin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes image analysis methods with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "93ab1f9f-909e-4f76-9cfa-ac52f51be09b",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C99",
+      "claim": "A total of five mature male C57BL/6 mice, each with a relatively anterior, intermediate, and posterior section, were used for mFISH.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of five mature male C57BL/6 mice, each with a relatively anterior, intermediate, and posterior section, were used for mFISH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental subjects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "6b2860bf-b1ac-4ec7-b0d6-1d573587501e",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C100",
+      "claim": "Four mice had 200 nL retrograde viral injections into the RSC, two of which had additional retrograde viral injections into the LEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Four mice had 200 nL retrograde viral injections into the RSC, two of which had additional retrograde viral injections into the LEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "e61300be-7785-470e-8571-8ed755d7055b",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C101",
+      "claim": "Across five animals, 33,155 cells in total were imaged using mFISH.",
+      "claim_type": "EXPLICIT",
+      "source": "Across these five animals, 33,155 cells in total were imaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "434ddf81-25ac-485b-ba15-093b4d02c5fc",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C102",
+      "claim": "A threshold of one PAC of Slc17a7 was required for each cell to be included in mFISH analysis, resulting in 18,957 total putative excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate analysis of excitatory neurons specifically, a threshold of one PAC of Slc17a7 was required for each cell to be included in analysis, resulting in 18,957 total putative excitatory neurons being used for subsequent analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data filtering procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "7fa648bb-f771-4d74-8135-cfe648f5d63c",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C103",
+      "claim": "UMAP dimensionality reduction was performed on within-cell normalized PAC values using the umap package with 15 nearest neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "For analysis, UMAP dimensionality reduction (McInnes et al., 2018) was performed on within-cell normalized PAC values using the umap package (15 nearest neighbors, all other parameters default), and cells were clustered on a per-animal level using a Leiden community detection algorithm (Levine et al., 2015; Traag et al., 2019) via the Monocle package (Cao et al., 2019; Qiu et al., 2017; Trapnell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes computational methods with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "69bf2980-c025-4292-8124-b7638badd25e",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C104",
+      "claim": "Cells were clustered on a per-animal level using a Leiden community detection algorithm via the Monocle package.",
+      "claim_type": "EXPLICIT",
+      "source": "For analysis, UMAP dimensionality reduction (McInnes et al., 2018) was performed on within-cell normalized PAC values using the umap package (15 nearest neighbors, all other parameters default), and cells were clustered on a per-animal level using a Leiden community detection algorithm (Levine et al., 2015; Traag et al., 2019) via the Monocle package (Cao et al., 2019; Qiu et al., 2017; Trapnell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes computational methods with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "26ddc6c1-2b63-4f53-be37-79da61ecf186",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C105",
+      "claim": "Setting the resolution parameter to a value that produced five clusters yielded strong agreement between UMAP dimensionality reduction and cluster assignments.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, setting the resolution parameter to a value that produced five clusters yielded strong agreement between UMAP dimensionality reduction and cluster assignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes computational analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "b852bcf8-0fb9-4120-a259-abbd6344994f",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C106",
+      "claim": "Cells labeled with fluorescent retrograde tracers were manually identified (n = 739 total across n = 4 animals), done in a blinded fashion relative to mFISH analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For correlating projection targets with mFISH results, cells labeled with fluorescent retrograde tracers were manually identified (n = 739 total across n = 4 animals), done in a blinded fashion relative to mFISH analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "66524785-570e-42fa-806a-96469f1890ee",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C107",
+      "claim": "A small minority of cells that projected to both the LEC and RSC (1.9%: n = 14/739) were excluded when comparing properties of LEC- vs. RSC-projecting neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A small minority of cells that projected to both the LEC and RSC (1.9%: n = 14/739, consistent with Marriott et al., 2020) were excluded when comparing properties of LEC- vs. RSC-projecting neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data filtering with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "26c98b04-6215-4f2d-96f0-eb2ae6144bbd",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "claim_id": "C108",
+      "claim": "Mann\u2013Whitney U tests with a Bonferroni correction were used to identify differentially expressed genes in mFISH data.",
+      "claim_type": "EXPLICIT",
+      "source": "Mann\u2013Whitney U tests with a Bonferroni correction were used to identify differentially expressed genes, for either a given cluster relative to all other clusters, or in pairwise comparisons, as shown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes statistical methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "11cefff2-ac06-4578-9572-5635b13381ba",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The claustrum has been implicated in various functions including attention, impulsivity, sleep, and consciousness, but its precise anatomical boundaries remain debated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-supported by multiple citations to prior work establishing functional roles of the claustrum. Claim C5 is also supported by citations documenting ongoing debate about claustral boundaries. These claims appropriately establish the context and motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "337e7d12-5bf2-4c27-a551-d0afaf801fff",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of 1011 excitatory neurons from the claustrum region identified three transcriptomically distinct clusters: two claustral populations (Cluster 1 enriched for Synpr, Cluster 2 enriched for Gnb4 and uniquely expressing Slc30a3) and one cortical population (Cluster 3 enriched for layer 6 markers Ctgf and Sla).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The scRNA-seq data (C12-C13) with appropriate filtering (C79-C80) and computational analysis (C14, C86) clearly identifies three clusters with distinct marker gene expression patterns (C17-C21). The clusters are consistent across animals and anterior-posterior axis (C16). The interpretation of Cluster 3 as cortical is well-supported by enrichment of known cortical markers (C20-C21).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "0036f330-61b7-4b41-b1f5-7677e68f32f2",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Integration with published scRNA-seq datasets confirmed the three-cluster organization and revealed that Cluster 2 cells express Nnat and are depleted in the cortical marker Pcp4, supporting their non-cortical identity and suggesting novel marker genes underresolved in previous studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The integration analysis (C23, C88-C92) appropriately combines datasets and shows consistency with the authors' clustering. The Nnat/Pcp4 expression pattern (C25-C27) provides additional evidence for the non-cortical identity of Cluster 2. The claim of novel markers (C29) is supported by identification of genes like Slc30a3 and Nnat not previously emphasized in claustrum studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "d0839423-6608-4701-8202-9d087ceb8b35",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multiplexed fluorescent in situ hybridization (mFISH) of 18,957 excitatory neurons across 5 animals revealed a core-shell spatial organization of claustral neurons, with Synpr-expressing cells in the core and Nnat-expressing cells in the shell, both transcriptionally distinct from adjacent cortical neurons including deep layer 6 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mFISH methodology (C30, C93-C98) is well-established and appropriately applied. The sample size is substantial (C31, C99-C102). The core-shell organization (C32-C33) is demonstrated across the anterior-posterior axis (C34) and across animals (C35), with consistency between mFISH and scRNA-seq predictions (C36). The spatial and transcriptional distinction from cortical neurons (C37-C38) is clearly shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "9637c891-83e4-4cec-a0d9-713501eb00a4",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Retrograde tracing combined with scRNA-seq and mFISH revealed that RSC-projecting neurons predominantly map to the Synpr-expressing core (85% in scRNA-seq, 83% in mFISH), while LEC-projecting neurons predominantly map to the Nnat-expressing shell (84% in scRNA-seq, 85% in mFISH), demonstrating coherent separation by marker genes, spatial organization, and projection targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The retrograde tracing experiments (C40, C70-C77, C100) are appropriately designed with proper controls. The correspondence between projection targets and transcriptomic subtypes is strong and consistent across both scRNA-seq (C41-C42) and mFISH (C43-C45) approaches. The 83-85% correspondence indicates a strong but not absolute relationship, which is appropriately acknowledged. The blinded analysis of mFISH projection data (C106) strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "8c7a661b-5895-4044-99ff-4519a2a4d3bd",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The integrated transcriptomic and circuit-level approach addresses previous uncertainties about whether marker genes and projection-based definitions identify homogeneous or heterogeneous claustral populations, revealing two molecularly distinct claustral subtypes associated with different projection patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 appropriately cite prior work establishing the knowledge gap. The current study (C51-C52) directly addresses this gap by combining multiple approaches to demonstrate heterogeneity. The integration of transcriptomics, spatial mapping, and circuit tracing provides converging evidence for the main conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "21a9cc34-1293-4e9a-9af5-d3e13e056eeb",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The RSC and LEC represent the most spatially distinct core versus shell projections, suggesting other claustral projections likely comprise a mosaicism of core and shell phenotypes, supporting an organizational scheme where transcriptomic subtypes are biased but not wholly separable by projection targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by citation to prior work. The inference about other projections (C54) is reasonable given the 83-85% correspondence observed for RSC/LEC. The organizational model (C55) appropriately reflects the data showing strong but incomplete correspondence between subtypes and projections, avoiding overinterpretation of the 15-17% overlap.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "74e364e5-c13a-4307-85a6-b98b963efbd5",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The identified core and shell neuron types show a general lack of deep cortical markers and enrichment of claustrum markers (e.g., Gnb4) relative to cortical neurons, supporting their interpretation as claustral rather than deep insular cortical subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to deep insular cortex is important given ongoing debates (C56). The gene expression data (C57-C59) showing depletion of cortical markers and enrichment of claustral markers provides evidence for the claustral identity. However, the interpretation (C60) is somewhat circular, relying on the same marker genes used to define the populations. Additional functional or developmental criteria would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "e2530823-9692-4202-8a4f-d61f28de569a",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study focused on the atlas-defined spatial extent of the claustrum, leaving the transcriptomic relationship with the dorsal endopiriform cortex for future investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This appropriately acknowledges a limitation of the study (C61) and identifies needed future work (C62). The authors are transparent about the spatial scope of their analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "37e6d20d-8b31-4280-910a-93b52868d457",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The findings enable future subtype-specific functional studies by providing marker genes and projection pathways for targeting, with data and tools made available through an online portal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims appropriately describe potential applications of the work (C63-C64) and document data availability (C65). The web portal (C66) facilitates future research. These are reasonable forward-looking statements based on the established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "fcb96381-455d-4fc0-8639-faf8f2f91055",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The experimental procedures for retrograde tracing and scRNA-seq were approved by appropriate institutional committees and followed established protocols, with appropriate randomization for tracer injections and a combination of unbiased and projection-targeted cell selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ethical approvals (C67-C69) and methodological details (C70-C78) are appropriately documented. The combination of blind selection and projection-targeted selection (C12, C75-C77) is reasonable for the study goals, though the lack of blinding in scRNA-seq analysis (C83) is a minor limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "27f2de0a-c04a-4da3-9d20-7435037db3f9",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Quality control filtering removed 101 cells (27 non-neuronal, 74 low Slc17a7), retaining 1011 excitatory neurons with good quality metrics (5.2\u00b11.1 thousand genes/cell, 142\u00b198 thousand reads/cell). No blinding or a priori sample size determination was used, justified by prior work showing several hundred cells suffice for resolving excitatory neuron heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The filtering criteria (C79-C80) are reasonable and clearly documented. The quality metrics (C81) indicate good data quality. The lack of blinding (C83) and a priori power analysis (C84) are limitations, though the justification based on prior work (C85) is reasonable. The enrichment for excitatory neurons (C82) is explained by the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "6c84d50c-1b27-4be0-a284-5d63d9353cca",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Computational analysis used standard tools (Seurat v3, R) with appropriate parameters, and data were deposited in GEO (GSE149495). Integration with published datasets used appropriate thresholds and methods to extract comparable cell populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The computational methods (C86, C92) use established tools with documented parameters. Data availability (C87) follows best practices. The integration analysis (C88-C91) uses reasonable thresholds to extract comparable populations from published datasets, though differences in sequencing depth across datasets could affect comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "mFISH experiments used custom probes for 12 genes, followed established protocols, and analyzed 18,957 excitatory neurons (from 33,155 total cells) across 5 animals using confocal microscopy with appropriate imaging parameters and image processing pipelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mFISH methodology is well-documented with appropriate probe design (C93), established protocols (C94), proper imaging parameters (C96-C97), and validated analysis pipelines (C98). The sample sizes (C99-C102) are substantial. The filtering for excitatory neurons (C102) is appropriate for the study goals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    },
+    {
+      "id": "c7980ee8-5567-44a3-9258-6dac343e58e0",
+      "content_id": "06a13e98-15e9-4a48-978e-68b5beadf235",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "mFISH data analysis used UMAP dimensionality reduction and Leiden clustering with appropriate parameters, yielding five clusters with strong agreement. Projection-labeled cells were identified in a blinded fashion, with doubly-labeled cells (1.9%) appropriately excluded. Statistical testing used Mann-Whitney U tests with Bonferroni correction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The computational methods for mFISH (C103-C105) use appropriate algorithms with documented parameters. The blinded identification of projection-labeled cells (C106) strengthens the analysis. The exclusion of doubly-labeled cells (C107) is appropriate and consistent with prior work. The statistical methods (C108) are appropriate for the data type, though the choice of five clusters (C105) appears somewhat arbitrary and could benefit from more justification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:49:38.449008Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "34c677d4-0def-47c3-9960-7d52eee94ba4",
+      "result_id": "11cefff2-ac06-4578-9572-5635b13381ba"
+    },
+    {
+      "claim_id": "b9d70a17-b9cc-4046-aca9-cf392fedd2d6",
+      "result_id": "11cefff2-ac06-4578-9572-5635b13381ba"
+    },
+    {
+      "claim_id": "542785cb-e99b-4360-bce5-7a4138e7180b",
+      "result_id": "11cefff2-ac06-4578-9572-5635b13381ba"
+    },
+    {
+      "claim_id": "5c4285ea-46d6-402d-93eb-a685773e4ff0",
+      "result_id": "11cefff2-ac06-4578-9572-5635b13381ba"
+    },
+    {
+      "claim_id": "30abb4fe-9647-49be-9e29-c831ed293d3f",
+      "result_id": "11cefff2-ac06-4578-9572-5635b13381ba"
+    },
+    {
+      "claim_id": "aa06f037-8bac-4c97-a246-31b2559edf1e",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "07ddd530-6994-4bca-8934-c88a0085a316",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "076eeef8-9057-485f-9ed2-e28edec25844",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "fef28966-663c-4f55-824a-d1168f33d96a",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "24a363d2-a20e-4467-ae3b-d625d098890b",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "9f3ee116-2d61-4b76-a822-bec02ed055da",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "0e8e9de9-bb4a-4a57-a44d-0f8746655757",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "8f0b6e35-0f61-4d22-8ef3-9089b7063702",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "a58b5c68-82f7-4fb7-9ca1-6069f81bffc9",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "33dd3388-f1e2-4f07-b1b9-e40a917ae8ef",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "7f6d899a-15c4-4163-ad5c-c9b78adc2422",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "141719a3-672d-48f3-ab20-9b9cbd8139cf",
+      "result_id": "337e7d12-5bf2-4c27-a551-d0afaf801fff"
+    },
+    {
+      "claim_id": "50314a72-15f0-4908-bf4b-b43b2d73c810",
+      "result_id": "0036f330-61b7-4b41-b1f5-7677e68f32f2"
+    },
+    {
+      "claim_id": "ddaad96c-9925-49bd-a27c-7de16ad458e7",
+      "result_id": "0036f330-61b7-4b41-b1f5-7677e68f32f2"
+    },
+    {
+      "claim_id": "929d08f4-4e24-4d52-890b-14b7baa7b548",
+      "result_id": "0036f330-61b7-4b41-b1f5-7677e68f32f2"
+    },
+    {
+      "claim_id": "ebaf4b39-23de-4026-bc7f-9a4d5a52a359",
+      "result_id": "0036f330-61b7-4b41-b1f5-7677e68f32f2"
+    },
+    {
+      "claim_id": "812fc77f-10c0-4647-97c5-37102b19098b",
+      "result_id": "0036f330-61b7-4b41-b1f5-7677e68f32f2"
+    },
+    {
+      "claim_id": "25e0da7a-ff2a-4787-b10f-1210df2fa279",
+      "result_id": "0036f330-61b7-4b41-b1f5-7677e68f32f2"
+    },
+    {
+      "claim_id": "603765bb-1b6b-4d7c-8a3d-0fbe11e3f045",
+      "result_id": "0036f330-61b7-4b41-b1f5-7677e68f32f2"
+    },
+    {
+      "claim_id": "731903c8-e46a-4f09-b4b6-dfa408a02c92",
+      "result_id": "d0839423-6608-4701-8202-9d087ceb8b35"
+    },
+    {
+      "claim_id": "d67e1677-a4b7-417b-98a8-283d78c80473",
+      "result_id": "d0839423-6608-4701-8202-9d087ceb8b35"
+    },
+    {
+      "claim_id": "9c4e4985-3afe-492e-a3ae-6bb2e91812fa",
+      "result_id": "d0839423-6608-4701-8202-9d087ceb8b35"
+    },
+    {
+      "claim_id": "51562376-88c8-481e-b31a-15a9c050651a",
+      "result_id": "d0839423-6608-4701-8202-9d087ceb8b35"
+    },
+    {
+      "claim_id": "dfa2dde2-f6fb-46f6-90c6-607febf4ac3d",
+      "result_id": "d0839423-6608-4701-8202-9d087ceb8b35"
+    },
+    {
+      "claim_id": "2e1bae60-ccdc-4941-8c7e-b76d09ccd925",
+      "result_id": "d0839423-6608-4701-8202-9d087ceb8b35"
+    },
+    {
+      "claim_id": "2a88b80c-a60d-461c-8c7e-78f48abf0de7",
+      "result_id": "d0839423-6608-4701-8202-9d087ceb8b35"
+    },
+    {
+      "claim_id": "0e93ccf8-ccb5-4288-abab-83da4aef4952",
+      "result_id": "d0839423-6608-4701-8202-9d087ceb8b35"
+    },
+    {
+      "claim_id": "e26e4185-f90a-40a8-8a54-fb45f7be3e8e",
+      "result_id": "d0839423-6608-4701-8202-9d087ceb8b35"
+    },
+    {
+      "claim_id": "16e19d1a-d8d3-427b-98e8-258ea8721ab7",
+      "result_id": "d0839423-6608-4701-8202-9d087ceb8b35"
+    },
+    {
+      "claim_id": "f8c0514c-4c65-4d7a-8d74-a14d222118ed",
+      "result_id": "9637c891-83e4-4cec-a0d9-713501eb00a4"
+    },
+    {
+      "claim_id": "8d5eb9bd-0bfe-4b29-9342-077fe42481e8",
+      "result_id": "9637c891-83e4-4cec-a0d9-713501eb00a4"
+    },
+    {
+      "claim_id": "4d6034f0-4cad-491b-b7cc-393012bde59e",
+      "result_id": "9637c891-83e4-4cec-a0d9-713501eb00a4"
+    },
+    {
+      "claim_id": "2a799c4c-daec-4e6c-9e20-e47c448bc6e3",
+      "result_id": "9637c891-83e4-4cec-a0d9-713501eb00a4"
+    },
+    {
+      "claim_id": "7f6dc884-e6e9-4df2-a810-a86ffbbd3768",
+      "result_id": "9637c891-83e4-4cec-a0d9-713501eb00a4"
+    },
+    {
+      "claim_id": "094880a1-47c3-489e-9a94-95e3efd26208",
+      "result_id": "9637c891-83e4-4cec-a0d9-713501eb00a4"
+    },
+    {
+      "claim_id": "299a383e-d875-46c2-a732-9c58ac4dd10f",
+      "result_id": "9637c891-83e4-4cec-a0d9-713501eb00a4"
+    },
+    {
+      "claim_id": "43a2b9fe-e497-4e49-bd64-1fb8befc5c05",
+      "result_id": "8c7a661b-5895-4044-99ff-4519a2a4d3bd"
+    },
+    {
+      "claim_id": "af0a916c-c8a2-4dd2-bf96-9dfb817046b4",
+      "result_id": "8c7a661b-5895-4044-99ff-4519a2a4d3bd"
+    },
+    {
+      "claim_id": "f361dbf7-cbe6-4d04-9099-ab2c106cb962",
+      "result_id": "8c7a661b-5895-4044-99ff-4519a2a4d3bd"
+    },
+    {
+      "claim_id": "9a54e015-e7eb-43de-8dad-c84a04bc871c",
+      "result_id": "8c7a661b-5895-4044-99ff-4519a2a4d3bd"
+    },
+    {
+      "claim_id": "35dd3224-0688-4a31-8a8c-5477e7ce7f24",
+      "result_id": "8c7a661b-5895-4044-99ff-4519a2a4d3bd"
+    },
+    {
+      "claim_id": "69bf06bc-b9b3-423c-8c43-50e623adabe3",
+      "result_id": "8c7a661b-5895-4044-99ff-4519a2a4d3bd"
+    },
+    {
+      "claim_id": "d6aaf811-47b2-4732-a597-4e58cb20ce22",
+      "result_id": "21a9cc34-1293-4e9a-9af5-d3e13e056eeb"
+    },
+    {
+      "claim_id": "c9db6305-259e-48cc-b767-749ce04024f3",
+      "result_id": "21a9cc34-1293-4e9a-9af5-d3e13e056eeb"
+    },
+    {
+      "claim_id": "0de284b6-8270-4a7f-907e-1e4a4f1fef1a",
+      "result_id": "21a9cc34-1293-4e9a-9af5-d3e13e056eeb"
+    },
+    {
+      "claim_id": "fc5b3862-e9c6-4c32-ad2a-be27daeb4c57",
+      "result_id": "74e364e5-c13a-4307-85a6-b98b963efbd5"
+    },
+    {
+      "claim_id": "6fb6d9cc-81c1-4e8e-a3a2-b93dfff3a043",
+      "result_id": "74e364e5-c13a-4307-85a6-b98b963efbd5"
+    },
+    {
+      "claim_id": "ef9cf73a-9d27-44d4-8772-c1d9ccf4e0d8",
+      "result_id": "74e364e5-c13a-4307-85a6-b98b963efbd5"
+    },
+    {
+      "claim_id": "5b299414-1c65-4889-923c-af7263977ef9",
+      "result_id": "74e364e5-c13a-4307-85a6-b98b963efbd5"
+    },
+    {
+      "claim_id": "84569c8a-09cd-4891-bb83-7dee92a9e61f",
+      "result_id": "74e364e5-c13a-4307-85a6-b98b963efbd5"
+    },
+    {
+      "claim_id": "c2ed15e5-d7a5-4420-b8e1-931fb3e6268b",
+      "result_id": "e2530823-9692-4202-8a4f-d61f28de569a"
+    },
+    {
+      "claim_id": "0fcc7271-599b-4a95-b57b-e810b4e06916",
+      "result_id": "e2530823-9692-4202-8a4f-d61f28de569a"
+    },
+    {
+      "claim_id": "33c1a14f-5dd2-4b7c-b3ba-2cbc68c3ac85",
+      "result_id": "37e6d20d-8b31-4280-910a-93b52868d457"
+    },
+    {
+      "claim_id": "7d53b172-e9f7-42cb-9399-0eb60699d9a2",
+      "result_id": "37e6d20d-8b31-4280-910a-93b52868d457"
+    },
+    {
+      "claim_id": "e27f791c-9860-4b61-a495-2ed82364855a",
+      "result_id": "37e6d20d-8b31-4280-910a-93b52868d457"
+    },
+    {
+      "claim_id": "9bb9bb29-a155-42b3-9555-967749ebd4ba",
+      "result_id": "37e6d20d-8b31-4280-910a-93b52868d457"
+    },
+    {
+      "claim_id": "b0c232cd-fd57-48a1-8fc5-05bb1cd39b9e",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "035af1ec-65da-402d-8f9a-2719b3201889",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "62f6bfa6-6604-4d12-8ea9-01eb77ca1f1e",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "36ca495b-5d32-4d7d-8b0d-8735f76c8072",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "b469ee78-62f3-4bc9-aa0c-d79ca781068b",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "ba9a3233-db0c-4889-93bd-16ac44b266ac",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "faecbc02-19de-45e2-8a0d-fa362fdabf0f",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "1de492ba-dfe6-4def-8667-27456c99d073",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "904e75a0-d128-419f-b61e-4adb07afb104",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "22e3b3d8-e790-4257-9b5a-b2b926fe0707",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "268cb6b3-7655-4ac9-b1e1-55ebeb63f737",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "5018bb37-153f-493d-88a7-ec4d0a21fbb7",
+      "result_id": "fcb96381-455d-4fc0-8639-faf8f2f91055"
+    },
+    {
+      "claim_id": "277f4012-b843-4903-8a21-55107ab81a63",
+      "result_id": "27f2de0a-c04a-4da3-9d20-7435037db3f9"
+    },
+    {
+      "claim_id": "1e5ac25d-8ab1-47fa-8677-f8f5b5a35e6c",
+      "result_id": "27f2de0a-c04a-4da3-9d20-7435037db3f9"
+    },
+    {
+      "claim_id": "6b98e8cd-33f5-4484-b478-cbe57473eec8",
+      "result_id": "27f2de0a-c04a-4da3-9d20-7435037db3f9"
+    },
+    {
+      "claim_id": "28ee52b3-24e2-4133-a5bd-1447dd83fd16",
+      "result_id": "27f2de0a-c04a-4da3-9d20-7435037db3f9"
+    },
+    {
+      "claim_id": "96906a1a-3b70-4e1b-aa15-da0bdeaa991e",
+      "result_id": "27f2de0a-c04a-4da3-9d20-7435037db3f9"
+    },
+    {
+      "claim_id": "6395351e-025c-4981-924f-e1f984e0c186",
+      "result_id": "27f2de0a-c04a-4da3-9d20-7435037db3f9"
+    },
+    {
+      "claim_id": "56c62230-ab5b-4254-be9b-7ad4fd243d41",
+      "result_id": "27f2de0a-c04a-4da3-9d20-7435037db3f9"
+    },
+    {
+      "claim_id": "1650f53d-e038-4af3-be28-d6d503edbffa",
+      "result_id": "6c84d50c-1b27-4be0-a284-5d63d9353cca"
+    },
+    {
+      "claim_id": "88786ee9-3ba2-466d-8323-ec08ff1fe161",
+      "result_id": "6c84d50c-1b27-4be0-a284-5d63d9353cca"
+    },
+    {
+      "claim_id": "48c7558a-f3bf-48fc-a488-06985d8ebaed",
+      "result_id": "6c84d50c-1b27-4be0-a284-5d63d9353cca"
+    },
+    {
+      "claim_id": "a6343d81-14fc-454a-a120-5f47d790c15f",
+      "result_id": "6c84d50c-1b27-4be0-a284-5d63d9353cca"
+    },
+    {
+      "claim_id": "ff81862f-67c3-41df-98fc-a2c3c74fd503",
+      "result_id": "6c84d50c-1b27-4be0-a284-5d63d9353cca"
+    },
+    {
+      "claim_id": "c19f88be-aa45-49e9-b3c0-525849900fc2",
+      "result_id": "6c84d50c-1b27-4be0-a284-5d63d9353cca"
+    },
+    {
+      "claim_id": "a70a5a4c-ce3f-4b99-bc76-0cf583e19b9f",
+      "result_id": "6c84d50c-1b27-4be0-a284-5d63d9353cca"
+    },
+    {
+      "claim_id": "22cf4c4a-64bf-4a7a-a798-a9b9b55f5461",
+      "result_id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0"
+    },
+    {
+      "claim_id": "93a47582-f8e3-4b13-99ed-2b9b8f02a0d6",
+      "result_id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0"
+    },
+    {
+      "claim_id": "ddb8e1ad-2975-4c56-907a-b07c40e72ca0",
+      "result_id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0"
+    },
+    {
+      "claim_id": "45043ee5-8ca2-4f8f-a4e7-490d3b4d0d4d",
+      "result_id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0"
+    },
+    {
+      "claim_id": "73c440b1-f2fe-4c44-89f8-1164e4298f62",
+      "result_id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0"
+    },
+    {
+      "claim_id": "c6d8df0b-8ae7-40e9-b995-dc8689fee551",
+      "result_id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0"
+    },
+    {
+      "claim_id": "93ab1f9f-909e-4f76-9cfa-ac52f51be09b",
+      "result_id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0"
+    },
+    {
+      "claim_id": "6b2860bf-b1ac-4ec7-b0d6-1d573587501e",
+      "result_id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0"
+    },
+    {
+      "claim_id": "e61300be-7785-470e-8571-8ed755d7055b",
+      "result_id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0"
+    },
+    {
+      "claim_id": "434ddf81-25ac-485b-ba15-093b4d02c5fc",
+      "result_id": "0dc9f0d5-b5a3-4687-b3ee-248076a9cce0"
+    },
+    {
+      "claim_id": "7fa648bb-f771-4d74-8135-cfe648f5d63c",
+      "result_id": "c7980ee8-5567-44a3-9258-6dac343e58e0"
+    },
+    {
+      "claim_id": "69bf2980-c025-4292-8124-b7638badd25e",
+      "result_id": "c7980ee8-5567-44a3-9258-6dac343e58e0"
+    },
+    {
+      "claim_id": "26ddc6c1-2b63-4f53-be37-79da61ecf186",
+      "result_id": "c7980ee8-5567-44a3-9258-6dac343e58e0"
+    },
+    {
+      "claim_id": "b852bcf8-0fb9-4120-a259-abbd6344994f",
+      "result_id": "c7980ee8-5567-44a3-9258-6dac343e58e0"
+    },
+    {
+      "claim_id": "66524785-570e-42fa-806a-96469f1890ee",
+      "result_id": "c7980ee8-5567-44a3-9258-6dac343e58e0"
+    },
+    {
+      "claim_id": "26c98b04-6215-4f2d-96f0-eb2ae6144bbd",
+      "result_id": "c7980ee8-5567-44a3-9258-6dac343e58e0"
+    }
+  ],
+  "comparisons": []
+}

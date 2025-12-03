@@ -1,0 +1,1886 @@
+{
+  "submission": {
+    "id": "96a5009a-80e6-424d-90ea-3010d907805e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:19:34.706699Z",
+    "updated_at": "2025-12-03T20:19:34.706699Z"
+  },
+  "content": [
+    {
+      "id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "submission_id": "96a5009a-80e6-424d-90ea-3010d907805e",
+      "content_type": "manuscript",
+      "content_text": "# Differential ripple propagation along the hippocampal longitudinal axis\n\n## Authors\n\n- Roberto De Filippo<sup>1</sup> ([ORCID: 0000-0002-4085-9114](https://orcid.org/0000-0002-4085-9114)) \u2020\n- Dietmar Schmitz<sup>1</sup> ([ORCID: 0000-0003-2741-5241](https://orcid.org/0000-0003-2741-5241)) \u2020\n\n### Affiliations\n\n1. Charit\u00e9 Universit\u00e4tsmedizin Berlin, corporate member of Freie Universit\u00e4t Berlin, Humboldt-Universit\u00e4t zu Berlin, and Berlin Institute of Health; Neuroscience Research Center Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))\n2. German Center for Neurodegenerative Diseases (DZNE) Berlin Berlin Germany ([ROR:043j0f473](https://ror.org/043j0f473))\n3. Charit\u00e9-Universit\u00e4tsmedizin Berlin, corporate member of Freie Universit\u00e4t Berlin, Humboldt-Universit\u00e4t Berlin, and Berlin Institute of Health, Einstein Center for Neuroscience Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n4. Charit\u00e9-Universit\u00e4tsmedizin Berlin, corporate member of Freie Universit\u00e4t Berlin, Humboldt-Universit\u00e4t Berlin, and Berlin Institute of Health, NeuroCure Cluster of Excellence Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n5. Humboldt-Universit\u00e4t zu Berlin, Bernstein Center for Computational Neuroscience Berlin Germany ([ROR:04bz45c46](https://ror.org/04bz45c46))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHippocampal ripples are highly synchronous neural events critical for memory consolidation and retrieval. A minority of strong ripples has been shown to be of particular importance in situations of increased memory demands. The propagation dynamics of strong ripples inside the hippocampal formation are, however, still opaque. We analyzed ripple propagation within the hippocampal formation in a large open-access dataset comprising 267 Neuropixel recordings in 49 awake, head-fixed mice. Surprisingly, strong ripples (top 10% in ripple strength) propagate differentially depending on their generation point along the hippocampal longitudinal axis. The septal hippocampal pole is able to generate longer ripples that engage more neurons and elicit spiking activity for an extended time even at considerable distances. Accordingly, a substantial portion of the variance in strong ripple duration (R\u00b2 = 0.463) is explained by the ripple generation location on the longitudinal axis, in agreement with a possible distinctive role of the hippocampal septal pole in conditions of high-memory demand. Moreover, we observed that the location of the ripple generation has a significant impact on the spiking rate modulation of different hippocampal subfields, even before the onset of the ripple. This finding suggests that ripple generation location plays a crucial role in shaping the neural activity across the hippocampus.\n\n## Introduction\n\nHippocampal ripples are brief oscillatory events detected in the local field potential (LFP) of the hippocampal formation, these events correspond to the synchronized depolarization of a substantial number of neurons in various hippocampal subregions (Hulse et al., 2016; Ylinen et al., 1995). An higher ripple incidence during memory encoding is associated with superior recall performance (Norman et al., 2019), furthermore, ripple incidence is increased during successful memory retrieval (Carr et al., 2011; Vaz et al., 2019). Ripples are also involved in memory consolidation both in awake and sleep conditions (Girardeau et al., 2009; Jadhav et al., 2012; Roux et al., 2017; Sirota et al., 2003), disrupting awake ripples during learning causes a persisting performance degradation, the same effect can be achieved by silencing ripples during post-learning sleep. Accordingly, ripples are considered to play a crucial role in memory processes and reorganization of memory engrams (Buzs\u00e1ki, 2015; Davidson et al., 2009; Diba and Buzs\u00e1ki, 2007; Dragoi and Tonegawa, 2011; Foster and Wilson, 2006; Girardeau et al., 2009; Girardeau and Zugaro, 2011; Pfeiffer and Foster, 2015; Takahashi, 2015; Xu et al., 2019). Ripples duration exhibits a skewed distribution with only a minority of long-duration ripples (>100 ms). The fraction of long-duration ripples, ripple amplitude, and within-ripple firing rate of both excitatory and inhibitory neurons are increased in both novel contexts and memory-demanding tasks (Fern\u00e1ndez-Ruiz et al., 2019). Reducing ripple duration artificially causes a degraded working memory performance (Fern\u00e1ndez-Ruiz et al., 2019; Jadhav et al., 2012) and, on the contrary, prolongation induced by optogenetic activation has a beneficial effect (Fern\u00e1ndez-Ruiz et al., 2019). Importantly, the artificial recruitment of additional neurons seems to be constrained by pre-existing resting potential dynamics (Noguchi et al., 2022). Hippocampal\u2013neocortical interactions, suggested to be important for memory consolidation (Gais et al., 2007; Klinzing et al., 2019; Tukker et al., 2020), are increased specifically during long-duration compared to short-duration ripples (Ngo et al., 2020).\n\nRipple amplitude and duration are significantly correlated (Patel et al., 2013; Tong et al., 2021), moreover, they are both related to the amount of underlying spiking activity (Khodagholy et al., 2017; Tong et al., 2021). It is possible to combine ripple strength and amplitude by considering the area of the high-pass filtered envelope (ripple strength).\n\nThese results point at a specific role of strong ripples (ripples with high strength) in situations of high mnemonic demand and are consistent with a possible power law distribution where a minority of ripples is responsible for a substantial part of memory requirements. For this reason, it is of interest to identify the possible electrophysiological peculiarities of this subgroup of ripples. Do strong ripples propagate differently compared to common ripples? Are strong ripples generated homogeneously along the hippocampal longitudinal axis? Do ripples have a preferred longitudinal directionality? In this study, we focused our attention on ripples generation and propagation within the hippocampal formation. Hippocampal connectivity with cortical and subcortical areas varies considerably along the longitudinal axis (Fanselow and Dong, 2010; Moser and Moser, 1998) and gene expression, as well, exhibits both gradual and discrete transitions along the same axis (Strange et al., 2014; Vogel et al., 2020). Consequently, the hippocampus is considered to be functionally segmented along its long axis. The different connectivity contributes to explain the functional organization gradient between a predominantly spatio-visual (septal pole) and emotional (temporal pole) processing. Ripples generated in the septal and temporal hippocampal pole have already been shown to be temporally independent and able to engage different neuron subpopulations, even in the same downstream brain area (Sosa et al., 2020). Consequentially, a heterogeneous ripple generation chance along the longitudinal axis most probably has an impact on the frequency with which different brain areas and neurons subgroups are activated by ripples. Our work is based on a dataset provided by the Allen Institute (Siegle et al., 2021), this dataset enabled us to study comprehensively ripples features across the septal half of the hippocampus. Previous studies have looked at ripple propagation along the longitudinal axes of the hippocampus (Kumar and Deshmukh, 2020; Patel et al., 2013), however, the size of this dataset made it possible to unveil propagation details previously overlooked.\n\n## Results\n\n### Distance explains most of the ripple strength correlation variability\n\nWe studied ripple propagation along the hippocampal longitudinal axis in an open-access dataset provided by the Allen Institute. We analyzed the LFP signals across the visual cortex, hippocampal formation, and brain stem (Figure 1\u2014figure supplement 1) simultaneous to ripples detected in the CA1 of 49 animals (average session duration = 9877.4 \u00b1 43.1 s, average ripple incidence during non-running epochs = 2.49 \u00b1 0.12 per 10 s). Ripples (n ripples = 120,462) were detected on the CA1 channel with the strongest ripple activity. Ripple strength (\u222bRipple) was calculated as the integral of the filtered LFP envelope between the start and end points for every detected ripple. Ripple strength and duration are highly correlated in each session (mean r = 0.87 \u00b1 0.005, Figure 1\u2014figure supplement 2). Notably ripple strength correlates significantly better with the hippocampal population spiking rate on a ripple-to-ripple basis compared to ripple duration alone (p-value = 4.31e\u221211, Figure 1\u2014figure supplement 3). Clear ripples were observed uniquely in the hippocampal formation (CA1, CA2, CA3, DG, SUB, and ProS). Likewise, ripple-induced voltage deflections (RIVD, integral of the unfiltered LFP envelope) were also noticeably stronger in hippocampal areas (Figure 1\u2014figure supplement 4B\u2013F). Ripple strength was noticeably irregular in single sessions both across time and space, even within the CA1 region (Figure 1\u2014figure supplement 4C). We focused on the variability in ripple strength across pairs of CA1 recording locations with clear ripple activity (n CA1 pairs = 303, n sessions = 46). Correlation of ripple strength across different CA1 regions was highly variable (Figure 1A\u2013C) with a lower and upper quartiles of 0.66 and 0.87 (mean = 0.76, standard error of the mean = 0.01). Distance between recording location could explain the majority (57.6%) of this variability (Figure 1B) with the top and bottom quartiles of ripple strength correlation showing significantly different average distances (Figure 1C, D). Given the correlation variability we asked how reliably a ripple can travel along the hippocampal longitudinal axis. To answer this question, we looked at ripples lag in sessions that included both long-distance (>2126.66 \u00b5m) and short-distance (<857.29 \u00b5m) CA1 recording pairs (n sessions = 32, n CA1 pairs = 64, Figure 1E). Reference for the lag analysis was always the most medial recording location in each pair. Almost half of the ripples in long-distance pairs (49.3 \u00b1 2.2%) were detected in both locations (inside a 120-ms window centered on ripple start at the reference location). Unsurprisingly short-distance pairs showed a more reliable propagation (69.59 \u00b1 3.51%). Moreover, lag between long-distance pairs had a much broader distribution (Figure 1F) and a significantly bigger absolute lag (Figure 1G). Neither high nor short-distance pairs showed clear directionality (lag long distance = \u22121.14 \u00b1 0.64 ms, lag short distance = \u22120.5 \u00b1 0.41 ms). Looking at the relationship between lag and ripple strength in long-distance pairs, however, an asymmetric distribution was apparent (Figure 1F top), suggestive of a possible interaction between these two variables: stronger ripples appear to be predominantly associated with positive lags (i.e. ripples moving medial\u2192lateral). To further investigate this relationship we divided ripples into two groups: strong (top 10% ripple strength per session at the reference location) and common (remaining ripples). The vast majority of the variance in 3D distance between recording locations was explained by the distance on the medio-lateral (M-L) axis alone (R\u00b2 = 0.899). To simplify our analysis we therefore focused only on this spatial dimension. The septal half of the hippocampus was therefore divided along the M-L axis in three sections with equal number of recordings: medial, central, and lateral (Figure 1\u2014figure supplement 5). Strong ripples identified in the medial section, in opposition to common ripples, showed a markedly positive lag (lag = 17.83 \u00b1 1.02 ms) indicative of a preferred medial\u2192lateral traveling direction (Figure 1H top). Surprisingly, the same was not true for strong ripples identified in the lateral section (lag = 3.62 \u00b1 1.05 ms, Figure 1I). Strong and common ripples lags were significantly different between medial and lateral locations both in common and strong ripples. A biased direction of propagation can be explained by an unequal chance of ripple generation across space. We can assume that selecting strong ripples we are biasing our focus toward ripples whose generation point (seed) is situated nearby our reference location, this would contribute to explain the unbalanced lag. This notion would, however, fail to explain the different directionality we observed between strong ripples in medial and lateral locations. This hints at a more complex situation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig1-v2.jpg)\n\n**Figure 1.:** (A) Correlation matrices showing the variabilty of ripple strength correlation between pairs of recording sites located in different CA1 locations in four example sessions. The number on the x- and y-axis labels indicates the probe number. Probes are numbered according to the position on the hippocampal longitudinal axis (0 is the most medial probe). (B) Scatter plot and linear regression showing the relationship between distance and correlation strength. Distance between recording sites explains 0.576% of the variability in correlation of ripple strength. (C) Ripple strength correlation distribution. Pink represents bottom 25% (<Q1) and blue top 25% (>Q4). (D) Violin plots showing that the top and bottom correlation quartiles show significantly different distance distributions (Q1: 2077.57 \u00b1 68.68 \u00b5m, Q4: 633.56 \u00b1 44.02 \u00b5m, p-value = 4.00e\u221223, Mann\u2013Whitney U test). (E) Top: Rendering of the long-distance (top) and short-distance (bottom) CA1 pairs, dark circles are the reference locations in each pair. (F) Top and middle: scatter plots showing the relationship between ripple strength (at the reference location) and lag for long-distance (top, n ripples = 31,855) and short-distance (middle, n ripples = 52,858) pairs. Bottom: Kernel density estimate of the lags of long-distance (pink) and short-distance (turquoise) pairs. (G) Lag (top) and absolute lag (bottom) comparison between long- and short-distance pairs (top: long distance = \u22121.47 \u00b1 0.63 ms, short distance = \u22120.51 \u00b1 0.4 ms, p-value = 2.03e\u221201, Student\u2019s t-test; bottom: long distance = 17.69 \u00b1 0.38 ms, short distance = 8.69 \u00b1 0.56 ms, p-value = 6.58e\u221220, Student\u2019s t-test, asterisks mean p-value < 0.05). (H) Lag comparison in long-distance pairs between common and strong ripples with reference located inthe medial (top) or lateral hippocampal section (bottom) (top: strong ripples = 17.83 \u00b1 1.02 ms, common ripples = \u22123.27 \u00b1 0.68 ms, p-value = 2.28e\u221225, Student\u2019s t-test, bottom: strong ripples = 3.62 \u00b1 1.05 ms, common ripples = 0.88 \u00b1 0.66 ms, p-value = 3.00e\u221202, Student\u2019s t-test, asterisks mean p-value < 0.05). (I) Lag comparison in long-distance pairs between ripples with reference located in the medial and lateral sections in common (top) or strong ripples (bottom) (top: medial reference = \u22123.27 \u00b1 0.68 ms, lateral reference = 0.88 \u00b1 0.66 ms, p-value = 4.30e\u221205, Student\u2019s t-test, bottom: strong ripples = 17.83 \u00b1 1.02 ms, common ripples = 3.62 \u00b1 1.05 ms, p-value = 4.30e\u221205, Student\u2019s t-test, asterisks mean p-value < 0.05).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** 2D histograms (upper diagonal), scatter plots (lower diagonal), and kernel density estimate plots (diagonal) of all the recorded regions color coded according to the Allen Institute color scheme. HPF = hippocampus, TH = thalamus, HY = hypothalamus, and MB = midbrain. Medio-lateral (M-L) axis is zeroed at the midline.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Red line represents linear regression with confidence interval of 95% estimated via bootstrap. *** means p < 0.0005.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Ripple strength correlates significantly better with the underlying ripple spiking activity. * means p < 0.0005.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Rendering of probe locatiosn for session 791319847. (B) First column: Raw LFP traces color coded according to probe identity, superimposed in black the trace after high-pass filtering to show the presence of a ripple. Scale bar: 250 \u00b5V. Middle column: Ripple envelope and associated \u222bRipple in red. Last column: Raw LFP trace and associated ripple-induced voltage deflection (RIVD) in blue. (C) Heatmaps of \u222bRipple (left) and RIVD (right) for the entirety of session 791319847 and for each recorded area. To note the variability in \u222bRipple over time and cross different CA1 locations. (D) Kernel density estimate plot showing the relationship between \u222bRipple and RIVD. Bar plot shows the sum of the z-scored \u222bRipple and RIVD per area.for the areas showing the strongest responses in session 791319847. (E) Summary scatter plot showing the relationship between \u222bRipple and RIVD for all sessions. Bar plot shows the sum of the z-scored \u222bRipple and RIVD per area averaged across animals. Most of the activity is confined to the hippocampal formation (DG, CA1, CA2, CA3, SUB, and ProS) (n = 49). (F) Violin plots showing the distribution of \u222bRipple and RIVD z-scored per session, hippocampal regions (text in green) show the biggest responses.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Variance explained between 3D distances and distance on each spatial axis across CA1 recording locations. (B) Histogram showing the three sections across the medio-lateral (M-L) axis, the hippocampus was divided in order to have an equal number of recordings in each section. (C) Rendering of the three sections and associated recording locations (black dots).\n\n### Ripples propagates differentially along the hippocampal longitudinal axis\n\nTo analyze the propagation of ripples along the hippocampal longitudinal axis we focused on sessions from which ripples were clearly detected in at least two different hippocampal sections at the same time (n = 41). We followed the propagation of strong and common ripples detected in the reference location across the hippocampus (Figure 2A, B) and built an average spatio-temporal propagation map per session (Figure 2C). Strong and common ripples in the medial section showed a divergent propagation pattern: strong ripples traveling medio\u2192laterally and common ripples traveling in the opposite direction (Figure 2D, E). Ripples detected in the lateral section did not show such strikingly divergent propagation (Figure 2F, G) whereas, in the central section, the propagation was divergent only laterally and not medially (Figure 2H, I). This peculiar propagation profile suggests a not previously described underlying directionality along the hippocampal longitudinal axis and can be possibly explained by a spatial bias in strong ripples generation. To understand the mechanism underlying such difference in propagation we examined the location of the seed for each ripple in sessions in which ripples were clearly detected in every hippocampal section (n sessions = 25). While we found no differences in the number of ripples detected in each hippocampal section (p-value = 0.55, Kruskal\u2013Wallis test), we observed differences regarding ripple generation. In common ripples, regardless of the reference location, most ripples started from the lateral section (Figure 3A left). On the other hand, strong ripples displayed a more heterogeneous picture (Figure 3A right). We identified two principles relative to strong ripples generation: In all hippocampal sections, the majority of strong ripples are locally generated, and a greater number of strong ripples is generated medially than laterally. Looking at the central section we can appreciate the difference between the number of strong ripples generated medially and laterally (Figure 3A right, mean medial = 36.83 \u00b1 2.66%, mean lateral = 20.55 \u00b1 2.04%, p-value = 3e\u221205, pairwise Tukey test). Strong and common ripples had significantly different seed location profiles only in the medial and central section, not in the lateral section (Figure 3B). These seed location profiles contribute to explain the propagation idiosyncrasies: major unbalances in seeds location cause propagation patterns with clear directionality, on the contrary, lag measurements hovering around zero are the result of averaging between two similarly numbered groups of ripples with opposite direction of propagation. Notably, propagation speed did not change depending on the seed location (Figure 3\u2014figure supplement 1) and the antero-posterior (A-P) axis did not explain a considerable amount of variability in lag (R\u00b2 medial = 0.0037, p-value = 4.48e\u221201, R\u00b2 lateral = 0.0698, p-value = 1.74e\u221203), in contrast with the M-L axis (R\u00b2 medial = 0.6648, p-value = 2.20e\u221238, R\u00b2 lateral = 0.4989, p-value = 3.75e\u221222). The reason why strong ripples are only in a minority of cases generated in the lateral section remains nevertheless unclear. Using a \u2018strength conservation index\u2019 (SCI), we measured the ability of a ripple to retain its strength during propagation (a ripple with SCI = 1 is in the top 10% in all hippocampal sections). We observed that ripples generated laterally were effectively less able to retain their strength propagating toward the medial pole (Figure 3\u2014figure supplement 2). This result is not simply explained by differences in ripple strength along the M-L axis, as no such gradient was observed (R\u00b2=0.0012, Figure 3\u2014figure supplement 3). Curiously, ripple amplitude showed a weak trend in the opposite direction (r = 0.27, p-value = 1.62e\u221204), with higher amplitude ripples in the lateral section (Figure 3\u2014figure supplement 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig2-v2.jpg)\n\n**Figure 2.:** (A) Recording locations for session 768515987. Circles colors represent medio-lateral location. Bigger circle represents the reference location. (B) Example propagation of a strong (left column) and common (right column) ripple across the different recording location from session 768515987, each filtered ripple is color coded according to A. Gray traces represent raw local field potential (LFP) signal. Dashed vertical line represents the start of the ripple. In the top row the ripple envelope across all locations. Black scale bars: 50 ms, 0.5 mV. Red scale bars: 0.1 mV. (C) Average propagation map of strong and common ripples in session 768515987 across the medio-lateral axis. (D) Recording locations relative to E. Red circles represent the reference locations across all sessions (n sessions = 41), black circles represent the remaining recording locations. (E) Left: Medio-lateral propagation of strong ripples, each line represents the average of one session. Middle: Medio-lateral propagation of common ripples, each line represents the average of one session. Right: Average propagation map across sessions of strong and common ripples. Reference locations are the most lateral per session. (F) Same as D. (G) Same as E. Reference locations are the most lateral per session. (H) Same as D. (I) Same as E. Reference locations are the most central per session.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig3-v2.jpg)\n\n**Figure 3.:** (A) Ripple seed location comparison between the three reference locations in common ripples (left) and strong ripples (right). Majority of common ripples seeds are located in the lateral hippocampal section regardless of the reference location (medial reference/lateral seed = 42.43 \u00b1 2.45%, central reference/lateral seed = 43.77 \u00b1 2.9%, lateral reference/lateral seed = 42.83 \u00b1 2.75%). Strong ripples are mainly local (medial reference/medial seed = 56.78 \u00b1 2.48%, central reference/central seed = 41.74 \u00b1 2.58%, lateral reference/lateral seed = 46.76 \u00b1 2.89%). (B) Ripple seed location comparison between strong and common ripples using a medial (left), central (center), or lateral reference (right). Asterisks mean p < 0.05, Kruskal\u2013Wallis test with pairwise Mann\u2013Whitney post hoc test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Spatio-temporal profiles are symmetrical, strong indication of similar propagation speed regardless of seed position. (A) Recording locations relative to (B). Red circles represent the reference locations across all sessions (n sessions = 41), black circles represent the remaining recording locations. (B) Left: Medio-lateral propagation of locally generated ripples (generated in the reference section), each line represents the average of one session. Middle: Medio-lateral propagation of non-locally generated ripples, each line represents the average of one session. Right: Average propagation map across sessions of strong and common ripples. Reference locations are the most lateral per session. (C) Same as A. (D) Same as B. Reference locations are the most lateral per session. (E) Same as A. (F) Same as B. Reference locations are the most central per session.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Strength conservation index in strong ripples grouped by reference location. Ripples generated in the lateral section show significantly lower strength conservation (p-value = 7e\u221209, Student\u2019s t-test, asterisks mean p-value < 0.05). (B) Strength conservation index in common ripples grouped by reference location (Student\u2019s t-test, asterisks mean p-value < 0.05).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Relationship between z-scored \u222bRipple (top row) or \u222bRipple (bottom row) and each spatial axis (M-L, A-P, or D-V). Spatial location has a negligible effect on \u222bRipple.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Relationship between z-scored amplitude (top row) or amplitude (bottom row) and each spatial axis (M-L, A-P, or D-V). Spatial location has a negligible effect on ripple amplitude.\n\n### The hippocampal medial pole can generate longer ripples able to better engage neural networks\n\nTo understand the reason behind the differential propagation we focused uniquely on the central section, here it was possible to distinguish between ripples generated laterally or medially (\u2018lateral ripples\u2019 and \u2018medial ripples\u2019). We focused solely on ripples generated in the lateral and medial section, discarding the ones generated in the central section.We included in the analysis sessions in which ripples were clearly detected in each hippocampal section and with at least 100 ripples of each kind (n sessions = 24). We looked at spiking activity associated with these two classes of ripples in the hippocampal formation across the M-L axis (n clusters per session = 650.42 \u00b1 33.16, Figure 4A\u2013C). To compare sessions, we created interpolated maps of the difference between spiking induced by medial and lateral ripples (Figure 4D). Immediately following ripple start (0\u201350 ms, \u2018early phase\u2019) spiking was predictably influenced by ripple seed proximity: in the lateral section lateral ripples induced more spiking (indicated by the blue color), whereas in the medial section medial ripples dominated (indicated by the red color). Surprisingly, in the 50- to 120-ms window post-ripple start (late phase), medial ripples could elicit significantly higher spiking activity than lateral ripples along the entire M-L axis (Figure 4E). Dividing clusters in putative excitatory and inhibitory using the waveform duration we observed the same effect in both types of neurons (Figure 4\u2014figure supplement 1). In accordance with this result, we found that the medial hippocampal section is able to generate longer ripples (Figure 4F). An important portion of the variance in ripple duration is indeed explained by location on the M-L axis both in common (R\u00b2 = 0.133) and especially in strong ripples (R\u00b2 = 0.463). The observed extended spiking could be due to a increased number of neurons participating in the ripple, to a higher spiking rate per neuron or a combination of these two elements. Fraction of active neurons and spiking rate were both significantly higher in medial ripples (Figure 4\u2014figure supplement 2). Focusing only on the late phase the difference in fraction of active neurons per ripples between medial and lateral ripples was even more striking (Cohen\u2019s d = 1.7, Figure 4G). Inversely, in the early phase, lateral ripples could engage more neurons, although, the effect size was much smaller (Cohen\u2019s d=0.39). The same result was found in relation to the spiking rate, medial ripples caused a significant and considerable increase in spiking rate in the late phase (Cohen\u2019s d = 1.75, Figure 4H). Dividing again the clusters into putative excitatory and inhibitory, significant differences between medial and lateral ripples were present only in the late phase. Spiking frequency and number of engaged neurons were significantly higher in medial ripples both in putative excitatory and inhibitory clusters (Figure 4\u2014figure supplement 3). In summary, the prolonged spiking observed in medial ripples was caused both by an increased number of engaged neurons and a higher spiking rate per cell, both in putative excitatory and inhibitory neurons. The disparity in network engagement can possibly be in part explained by electrophysiological differences across hippocampal sections (e.g. higher firing rate). We did not find differences in the number of firing neurons across the CA1 subfield (medial = 74.16, lateral = 69.66, p-value = 9.48e\u221201, Mann\u2013Whitney U test), we did, however, found differences in firing rate, waveform duration, and waveform shape (recovery slope and peak-trough ratio, Figure 4\u2014figure supplement 4) in putative excitatory neurons. Firing rate and waveform duration in putative excitatory neurons exhibited, respectively, a left- and right-shifted distribution in the lateral section, reflecting lower firing rate and slower action potentials. Putative inhibitory interneurons in the lateral section showed a higher firing rate.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig4-v2.jpg)\n\n**Figure 4.:** (A) Recording location for session 771990200. Circles colors indicate medio-lateral (M-L) location. Bigger circle represents the reference location. (B) Spiking activity across the hippocampal M-L axis associated with a ripple generated medially (left column) or lateraly (right column) across the different recording location from session 771990200. Spike raster plot and normalized density are plotted at each M-L location. In the top row filtered ripple, gray traces represent raw local field potential (LFP) signal. All plots are color coded according to A. Scale bar: 0.5 mV. (C) Kernel density estimates of the average spiking activity across different M-L locations and between seed type. Scale bar: 5 spikes per 10 ms. (D) Interpolated heatmap of the difference between medially and laterally generated ripple-induced spiking activity in session 771990200. Vertical dashed lines represent borders between early and late post-ripple start phases. Horizontal dashed lines represent the spatial limits of the hippocampal sections. (E) Grand average of the differences between medially and laterally initiated ripple-induced spiking activity across 24 sessions. Vertical dashed lines represent borders between early and late post-ripple start phases. Horizontal dashed lines represent the spatial limits of the hippocampal sections. (F) Regression plot between M-L location and ripple duration in common and strong ripples. Horizontal dashed lines represent the spatial limits of the hippocampal sections. (G) Average fraction of active neurons in medial (pink) and lateral (purple) ripples. Early/medial seed = 0.3 \u00b1 0.69, early/lateral seed: 31.72 \u00b1 0.84, p-value = 3.23e\u221205, Student\u2019s t-test; late/medial seed = 24.57 \u00b1 0.64, late/lateral seed = 19.44 \u00b1 0.58, p-value = 4.09e\u221207, Student\u2019s t-test. Asterisks mean p-value < 0.05. (H) Average spiking rate medial (pink) and lateral (purple) ripples. Early/medial seed = 0.12 \u00b1 0.004, early/lateral seed = 0.13 \u00b1 0.005, p-value = 1.35e\u221204, Student\u2019s t-test; late/medial seed = 0.07 \u00b1 0.002, late/lateral seed = 0.05 \u00b1 0.002, p-value = 1.24e\u221212, Student\u2019s t-test. Asterisks mean p-value < 0.05.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Grand average of the differences between medial and lateral ripple-induced spiking activity in putative excitatory (left) and inhibitory neurons (right). Putative excitatory and inhibitory neurons show similiar spiking patterns in lateral and medial ripples. (B) Grand average of the differences between common and strong ripple-induced spiking activity in medial (left) and lateral ripples (right). Strong ripples are not associated with more spiking activity in the early phase post-ripple start (0\u201350 ms). (C) Grand average of the differences between medial and lateral ripple-induced spiking activity in common (left) and strong ripples (right). Strong ripples are associated with considerable differences between medial and lateral ripples.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Fraction of active neurons per ripple grouped by ripple seed location (medial seed = 40.0 \u00b1 1.0%, lateral seed = 39.0 \u00b1 1.0%, p-value = 9.52e\u221205, Student\u2019s t-test). (B) Average spiking rate grouped per ripple grouped by ripple seed location (medial seed = 9.0 \u00b1 0.0%, lateral seed = 8.0 \u00b1 0.0%, p-value = 5.20e\u221210, Student\u2019s t-test). Asterisks mean p<0.05, Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Average spiking rate in early (left) and late (right) phase post-ripple start grouped by ripple seed location and putative neuron identity. Asterisks mean p < 0.05, analysis of variance (ANOVA) with pairwise Tukey post hoc test. (B) Fraction of active neurons per ripple in early (left) and late (right) phase post-ripple start grouped by ripple seed location and putative neuron identity. Asterisks mean p < 0.05, ANOVA with pairwise Tukey post hoc test.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Top: Average spike waveform of putative inhibitory neurons in medial or lateral sections. Bottom, left column: Kernel density estimate plot of waveform duration (p-value = 5.50e\u221205), firing rate (p-value = 6.17e\u221218), waveform amplitude (p-value = 1.69e\u221202), waveform repolarization slope (p-value = 6.71e\u221202), waveform recovery slope (p-value = 1.77e\u221202), and waveform peak-through ratio (p-value = 1.89e\u221201) grouped by hippocampal section. Asterisks mean p < 0.05, Mann\u2013Whitney U test. Bottom, right column: Cumulative distribution plot of waveform duration (p-value = 4.37e\u221204), firing rate (p-value = 5.25e\u221214), waveform amplitude (p-value = 1.26e\u221201), waveform repolarization slope (p-value = 1.27e\u221201), waveform recovery slope (p-value = 1.73e\u221202), and waveform peak-through ratio (p-value = 1.66e\u221201) grouped by hippocampal section. Asterisks mean p-value < 0.05, Kolgomorov\u2013Smirnov test. (B) Top: Average spike waveform of putative excitatory neurons in medial or lateral sections. Bottom, left column: Kernel density estimate plot of waveform duration (p-value = 8.18e\u221278), firing rate (p-value = 1.29e\u221209), waveform amplitude (p-value = 2.91e\u221202), waveform repolarization slope (p-value = 1.95e\u221201), waveform recovery slope (p-value = 1.51e\u221216), and waveform peak-through ratio (p-value = 1.18e\u221208) grouped by hippocampal section. Asterisks mean p < 0.05, Mann\u2013Whitney U test. Bottom, right column: Cumulative distribution plot of waveform duration (p-value = 5.92e\u2212100), firing rate (p-value = 1.74e\u221206), waveform amplitude (p-value = 1.61e\u221203), waveform repolarization slope (p-value = 1.44e\u221202), waveform recovery slope (p-value = 1.19e\u221214), and waveform peak-through ratio (p-value = 2.10e\u221208) grouped by hippocampal section. Asterisks mean p-value < 0.05, Kolgomorov\u2013Smirnov test.\n\n### Location of ripple seed is associated with different pattern of modulation across brain regions\n\nTo investigate how medial and lateral ripples affect various brain regions, we examined the modulation of spiking rate during ripples in individual clusters. A cluster was deemed modulated if it exhibited at least a 50% increase in spiking rate during either medial or lateral ripples. We found that clusters located in the thalamus (TH) and midbrain (MB) were hardly modulated (MB: 0.85 \u00b1 0.71%, TH: 0.0 \u00b1 0.0%), with baseline spiking rate explaining nearly all the variance in spiking rate during ripples (Figure 5A). Only a small fraction of cortical clusters were modulated (Isocortex: 5.26 \u00b1 0.97%), in contrast, the majority of hippocampal (HPF) clusters showed ripple modulation (HPF: 88.57 \u00b1 1.03%). The relationship between baseline spiking and spiking during ripples was similar in medial and lateral ripples, accounting for most of the observed variability (Figure 5\u2014figure supplement 1). We found a modest difference in modulation of hippocampal clusters by medial and lateral ripples within a 120-ms window after the start of the ripple event (Figure 5B). A stronger effect was observed when isolating early and late phase. For example, in the 50- to 120-ms window medial ripples showed a notably stronger modulatory effect (Figure 5\u2014figure supplement 2A). Significant differences were also observed in cortical clusters and in TH, with medial ripples inducing stronger modulation (Figure 5\u2014figure supplement 2B). It is worth noting that the magnitude of this modulation is much smaller compared to the modulation observed in HPF. Clusters in the cortex that were modulated (by at least 25%, n = 123/1240) by medial and lateral ripples were generally found in deeper layers (Figure 5\u2014video 1), 32 clusters were modulated only by medial ripples and 25 only by lateral ripples. To understand the mechanism underlying the differences in modulation between medial and lateral ripples we focused on the early (0\u201350 ms) and late ripple phase (50\u2013120 ms) in various hippocampal subfield (Figure 5C). In the early phase, we found a significantly stronger engagement of the dentate gyrus (DG), CA1 and CA3 areas and weaker engagement of the subiculum (SUB) by lateral ripples. The late phase analysis revealed further differences, as CA1, CA3, DG, prosubiculum (ProS), and SUB all displayed stronger modulation in response to medial ripples (Figure 5D). The clusters recorded across these various brain regions were not uniformly distributed along the M-L axis, which may have influenced the observed ripple modulation. For instance, it is conceivable that neurons located in closer proximity to the medial section may be more susceptible to the effects of medial ripples. To examine this hypothesis, we evaluated the degree to which variance in modulation could be attributed to the M-L axis position. We observed that during the early and late phases, the M-L position explained a substantial proportion of the variance in modulation in CA1 (early: 15.91%, late: 20.77%), but only a small proportion in CA3 (early: 0.48%, late: 0.34%), ProS (late: 4.03%), and SUB (early: 2.55%, late: 0.54%). In the DG subfield, the situation was mixed, with a notably greater impact of M-L position observed during the late phase (early: 0.76%, late: 10.93%). Additionally, we found that prior to the onset of ripples (20-ms window), medial ripple-induced stronger modulation in ProS and SUB, weaker modulation in DG and substantially weaker modulation in CA3 when compared to lateral ripples (Figure 5E). In this window, the M-L position explained only a minimal proportion of the variance in ProS (0.14%), SUB (2.65%), and CA3 (0.81%) but a more substantial proportion in DG (8.68%). In both the early and late ripple phases, medial ripples elicited significantly more modulation across multiple cortical regions (Figure 5\u2014figure supplement 3). This effect was also observed before the onset of ripples (Figure 5\u2014figure supplement 4). Furthermore, we investigated whether neurons exhibit a preference for medial or lateral ripples. To address this question, we identified clusters that exhibited at least a twofold modulation difference for either medial or lateral ripples (with absolute modulation of at least 50%). Our analysis revealed that the majority of clusters did not display a strong preference (84.29%), whereas 10.4% of clusters responded preferentially to lateral ripples and 5.31% to medial ripples (Figure 5F). Interestingly, our analysis also revealed that these preferences for lateral or medial ripples varied considerably across hippocampal subfields, with striking differences observed between the different subfields. Specifically, DG exhibited the highest proportion (28.15%) of neurons responsive to lateral ripples. In contrast, SUB displayed the highest proportion (11.68%) of neurons responsive to medial ripples (Figure 5\u2014figure supplement 5). These results suggest a fundamental difference between medial and lateral ripples in terms of their engagement of brain regions, highlighting that these differences exist even before the ripples are detected. Notably, most of these differences are not explained by the location of the neuron along the M-L axis. This suggests that there are more fundamental differences at play beyond just spatial distance.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig5-v2.jpg)\n\n**Figure 5.:** (A) Relationship between baseline (120 ms before ripple start) and ripple (0\u2013120 ms) firing rate for clusters recorded in Isocortex, hippocampal formation (HPF), thalamus (TH), and midbrain (MB). Spiking rates were calculated as the mean between responses to lateral and medial ripples. Dashed black line represents absence of any influence, dashed red line represents a 50% increased spiking rate. (B) Ripple modulation of hippocampal clusters in response to lateral and medial ripples. Dashed black line represents absence of any influence, dashed red line represents a 50% increased spiking rate. CLES = commn-language effect size. Wilcoxon signed-rank test. Asterisk mean p-value < 0.05. (C) Top: Rendering of all clusters recorded in the hippocampal formation color coded by subfield. Middle: Kernel density plot showing distribution of clusters along the medio-lateral (M-L) axis. Dashed lines represent medial and lateral limits. Bottom: Stacked kernel density plot showing distribution of clusters along the M-L axis. (D) Ripple modulation in response to lateral and medial ripples during the early (left) and late (right) ripple phase. Errorbar represents the standard error of the mean. Wilcoxon signed-rank test or Student\u2019s t-test (if normality established). Asterisks mean p-value < 0.05. (E) Ripple modulation in response to lateral and medial ripples before ripple start (20 ms). Errorbar represents the standard error of the mean. Wilcoxon signed-rank test or Student\u2019s t-test (if normality established). Asterisks mean p-value < 0.05. (F) Left: Relationship between modulation by lateral and medial ripples in hippocampal clusters. Dashed black line represents absence of difference and twofold differences in both directions. Right: Pie chart representing hippocampal clusters preference in ripple engagement.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Relationship between baseline (120 ms before ripple start) and medial ripple (0\u201350 ms) firing rate for clusters recorded in hippocampal formation (HPF), Isocortex, midbrain (MB), and thalamus (TH). In the Isocortex and MB plot, we excluded the minority of clusters showing modulation >50% in response to either lateral or medial ripples (gray dots). Dashed black line represents absence of any influence, dashed red line represents a 50% increased spiking rate. (B) Relationship between baseline (120 ms before ripple start) and lateral ripple (0\u201350 ms) firing rate for clusters recorded in HPF, Isocortex, MB, and TH. In the Isocortex and MB plot, we excluded the minority of clusters showing modulation >50% in response to either lateral or medial ripples (gray dots). Dashed black line represents absence of any influence, dashed red line represents a 50% increased spiking rate.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Left: Early (0\u201350 ms) ripple modulation of hippocampal clusters in response to lateral and medial ripples. Dashed black line represents absence of any influence, dashed red line represents a 50% increased spiking rate. Wilcoxon signed-rank test. Right: Late (50\u2013120 ms) ripple modulation of hippocampal clusters in response to lateral and medial ripples. Dashed black line represents absence of any influence, dashed red line represents a 50% increased spiking rate. Wilcoxon signed-rank test. Asterisks mean p-value < 0.05. (B) Ripple modulation of cortical (left), midbrain (MB; middle), and thalamus (TH; right) clusters in response to lateral and medial ripples. Dashed black line represents absence of any influence, dashed red line represents a 50% increased spiking rate. Wilcoxon signed-rank test. Asterisks mean p-value < 0.05.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Ripple modulation in response to lateral and medial ripples during the early ripple phase in cortical (top), MB (middle), and TH (bottom) clusters. Wilcoxon signed-rank test or Student\u2019s t-test (if normality established). Asterisks mean p-value < 0.05. (B) Ripple modulation in response to lateral and medial ripples during the late ripple phase in cortical (top), MB (middle), and TH (bottom) clusters. Wilcoxon signed-rank test or Student\u2019s t-test (if normality established). Asterisks mean p-value < 0.05.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Pre-ripple modulation in response to lateral and medial ripples during the early ripple phase in cortical clusters. Wilcoxon signed-rank test or Student\u2019s t-test (if normality established). Asterisks mean p-value < 0.05. (B) Ripple modulation in response to lateral and medial ripples during the late ripple phase in MB clusters. Wilcoxon signed-rank test or Student\u2019s t-test (if normality established). Asterisks mean p-value < 0.05. (C) Ripple modulation in response to lateral and medial ripples during the late ripple phase in TH clusters. Wilcoxon signed-rank test or Student\u2019s t-test (if normality established).\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/85488/elife-85488-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** Preference in ripple engagement in CA1, CA3, DG, ProS, and SUB.\n\n## Discussion\n\nOur results show for the first time that strong ripples propagate differentially along the hippocampal longitudinal axis. This propagation idiosyncrasy can be explained by a specific ability of the hippocampal septal pole (medial section in our analysis) to produce longer ripples that better entrain the hippocampal network and spread across the longitudinal axis. It was previously observed that ripples located at the septal and temporal pole are generated independently from each other, in addition, despite the presence of connections within the hippocampal longitudinal axis (van Strien et al., 2009; Witter, 2007), in the vast majority of cases ripples do not propagate to the opposite pole (Sosa et al., 2020). In accordance with these results, we observed a strong effect of spatial distance on ripple strength correlation confirming a previous study (Nitzan et al., 2022): the strength correlation, predictably, was higher in CA1 pairs closer to each other. The effect of distance was also apparent on the ripple chance of propagation, only half of the ripples generated in the septal pole were detected additionally in the intermediate hippocampus (lateral section in our analysis). This chance is much higher compared to the ~3.7% reported regarding propagation between opposite poles (Sosa et al., 2020), it would be interesting to understand whether the temporal pole is also able to entrain the intermediate hippocampus in similar fashion or it is a peculiarity of the septal pole. A limitation of our work derives from the dataset being limited to the septal and intermediate hippocampus.\n\nRipples can arise at any location along the hippocampal longitudinal axis (Patel et al., 2013). Our analysis shows that ripples are, however, not homogeneously generated across space. We observed important differences between strong ripples and common ripples generation. Common ripples followed a gradient with higher generation probability in the intermediate section and lowest in the septal pole. Strong ripples, on the other hand, were mostly generated locally (i.e. a strong ripple detected in the medial section is most likely generated in the medial section itself). Furthermore, only rarely a strong ripple generated in the intermediate hippocampus is able to propagate toward the septal pole retaining its strong status (top 10%). Conversely strong ripples generated in the septal pole have a significantly higher chance of propagate longitudinally and still be in the top 10% in terms of ripple strength. Notably, this is not consequence of a simple longitudinal gradient in ripple strength, indeed, we did not observe any difference in ripple strength along the longitudinal axis. Additionally, we show that ripples generated in the septal pole and in the intermediate hippocampus have a significantly different ability to engage hippocampal networks in the 50- to 120-ms window post-ripple start. Ripples generated in the septal pole activate more neurons, both excitatory and inhibitory, and, moreover, elicit an higher spiking rate per neuron. This prolonged network activation is reflected by the fact that the position on the longitudinal axis explains 13.3% and 46.3% of the variability in ripple duration in common and strong ripples, respectively. Consistent with a duration gradient along the longitudinal axis, the temporal hippocampus has been shown to produce shorter ripples both in awake and sleep conditions (Sosa et al., 2020).\n\nWhat is the reason that enables the septal pole to generate longer ripples? There might be for example underlying electrophysiological differences between the septal and intermediate hippocampus. Upon closer examination of the electrophysiological features of the neurons, we were able to discern significant differences in the shape and duration of their waveform. We can hypothesize that slower action potentials and, consequentially, longer refractory periods hinder the ability to sustain protracted high frequency spiking. Accordingly, we found an increased firing rate and a smaller waveform duration in putative excitatory neurons of the septal pole. Moreover, putative inhibitory neurons in the septal pole showed reduced firing. These differences might contribute to explain the prolonged ripples observed in the septal pole. We can also speculate that the neuromodulatory inputs gradient, monoamine fibers have been shown to be stronger in the ventral part (Strange et al., 2014), might influence neurons responses. Serotonin (ul Haq et al., 2016; Wang et al., 2015), noradrenaline (Novitskaya et al., 2016; Ul Haq et al., 2012), and acetylcholine Zhang et al., 2021 have all been shown to suppress ripples. In accordance with this, some ripples are coupled with a reduced activation of the locus coeruleus and the dorsal raphe nucleus in vivo (Ramirez-Villegas et al., 2015).\n\nRipples can be subdivided in different types according to the relationship between the hippocampal LFP and the ripple itself (Ramirez-Villegas et al., 2015). Intriguingly, these subtypes are associated with two different brain-wide networks, the first communicating preferentially with the associative neocortex and a second one biased toward subcortical structures. Moreover, these different types of ripples have been proposed to possibly fulfill different functional roles. Given the different input/output connectivity between septal, intermediate, and temporal hippocampus (Fanselow and Dong, 2010) we hypothesize that ripple generated at different points of the hippocampal longitudinal axis might as well have functional differences, with the longer ripples generated septally possibly able to combine the different kind of information processed in the distinct hippocampal sections and additionally relaying the integrated information back to the neocortex in accordance with the two-stage memory hypothesis (Buzs\u00e1ki, 1989; Diekelmann and Born, 2010; Marr, 1971; McClelland et al., 1995; Rasch and Born, 2007).\n\nLong-duration ripples have been shown to be of particular importance in situations of high-memory demand (Fern\u00e1ndez-Ruiz et al., 2019), at the same time, previous studies highlighted the role of septal hippocampus in memory tasks and information processing (Bradfield et al., 2020; Fanselow and Dong, 2010; Hock and Bunsey, 1998; Kheirbek et al., 2013; Maras et al., 2014; McGlinchey and Aston-Jones, 2018; Moser et al., 1993; Moser et al., 1995; Qin et al., 2021; Steffenach et al., 2005). Our results can contribute to explain the specific role of septal hippocampus in memory-demanding tasks with its ability of generating particularly long ripples that are able to strongly engage networks in the entire top half of the hippocampal formation for an extended time.\n\nFunctional differences between ripples are supported by our finding that the ripple origination point has an influence on the engagement of various hippocampal subfields. Interestingly, these functional differences can be observed even before the onset of ripples. Our analysis revealed that DG, CA1, and CA3 subfields of the hippocampus were more strongly engaged during the early phase in response to medial ripples, the opposite was true for SUB. In the late phase, all subfields, including ProS, showed stronger modulation in response to medial ripples. Moreover, the analysis of pre-ripple activity showed that ProS and SUB exhibited stronger modulation in response to medial ripples, while DG and, especially, CA3 displayed weaker modulation compared to lateral ripples. These results indicate that CA3 may play a more critical role in initiating lateral ripples, in accordance with the traditional view that CA3 is the primary generator of ripples (Buzs\u00e1ki, 1986; Buzs\u00e1ki, 1989; Csicsvari et al., 2000). On the other hand, medial ripples demonstrate stronger engagement of ProS and SUB subfields before ripple start, supporting the more recent hypothesis that output structures in the hippocampus are also capable of generating ripples (Imbrosci et al., 2021). The subicular complex has been suggested to play a role in the transfer of information from the hippocampus to other brain regions, such as the cortex (Aggleton and Christiansen, 2015; Naber and Witter, 1998). It is possible that the weaker engagement of the subiculum during lateral ripples may reflect a more localized processing of information within the hippocampus, while the stronger engagement of the subiculum during medial ripples may reflect a more global transfer of information to other brain regions. Differences in ripple initiation and engagement patterns can provide valuable insights into the mechanisms that underlie the dynamics of the hippocampal network. Gaining a better understanding of these differences may shed light on the functional significance of ripples in the brain and their role in memory consolidation and retrieval.\n\n## Materials and methods\n\n### Dataset\n\nOur analysis was based on the Visual Coding \u2013 Neuropixels dataset of head-fixed recordings in awake mice provided by the Allen Institute and available at https://allensdk.readthedocs.io/en/latest/visual_coding_neuropixels.html. We excluded six sessions because of absence of recording electrodes in CA1 (session ids = 732592105, 737581020, 739448407, 742951821, 760693773, 762120172). Furthermore, one session was excluded (session id = 743475441) because of an artifact in the LFP time series (time was not monotonically increasing) and two other sessions (session ids = 746083955, 756029989) because of duplicated LFP traces (see https://github.com/RobertoDF/Allen_visual_dataset_artifacts). Our analysis was therefore focused on 49 sessions, average animal age = 119.22 \u00b1 1.81. Sex: males n = 38, females n = 11. Genotypes: wt/wt n = 26, Sst-IRES-Cre/wt;Ai32(RCL-ChR2(H134R)_EYFP)/wt n = 10, Vip-IRES-Cre/wt;Ai32(RCL-ChR2(H134R)_EYFP)/wt n = 7, and Pvalb-IRES-Cre/wt;Ai32(RCL-ChR2(H134R)_EYFP)/wt n = 6. Average probe count per session = 5.73 \u00b1 0.08. Average number of recording channels per session = 2129.45 \u00b1 29.46. Probes in each session were numbered according to the position on the M-L axis, with probe number 0 being the most medial. Channels with ambiguous area annotations were discarded (e.g. HPF instead of CA1). We found a number of of small artifacts in a variety of sessions, all this timepoints were excluded from the analysis (for more information: https://github.com/RobertoDF/Allen_visual_dataset_artifacts). Each recording session had a length of ~3 hr. In each experiment, a series of visual stimuli were presented in front of the animal (gabors, drifting gratings, static gratings, natural images, movies, flashes). Mice did not undergo any training associated with these stimuli. Further details about data acquisition can be found at https://brainmapportal-live-4cc80a57cd6e400d854-f7fdcae.divio-media.net/filer_public/80/75/8075a100-ca64-429a-b39a-569121b612b2/neuropixels_visual_coding_-_white_paper_v10.pdf. Visualization of recording locations was performed with brainrender (Claudi et al., 2021).\n\n### Ripples detection\n\nThe LFP traces sampled at 1250 Hz were filtered using a sixth-order Butterworth bandpass filter between 120.0 and 250.0. Ripples were detected on CA1 LFP traces, the best channel (higher ripple strength) was selected by looking at the SD of the envelope of the filtered trace, if multiple SD peaks were present across space (possibly caused by sharp waves in stratum radiatum and ripple activity in stratum pyramidale) we subsequently looked at the channel with higher skewness, in this way we could reliably identify the best ripple channel. The envelope of the filtered trace was calculated using the Hilbert transform (scipy.signal.hilbert). Ripple threshold was set at 5 SDs. Start and stop times were calculated using a 2 SDs threshold on the smoothed envelope with window = 5 (pandas.DataFrame.rolling) to account for ripple phase distortions. Ripple amplitude was calculated as the 90th percentile of the envelope.Ripple duration was limited at >0.015 and <0.25 s. Candidate ripples with starting times closer than 0.05 s were joined in a single ripple with peak amplitude being the highest between the candidates. We estimated power density of each candidate using a periodogram with constant detrending (scipy.signal.periodogram) on the raw LFP trace, we checked the presence of a peak >100 Hz, candidates not fulfilling this condition were discarded, this condition was meant to reduce the number of detected false positives. Ripple candidates detected during running epochs were discarded, an animal was considered to be running if his standardized speed was higher than the 10th percentile plus 0.06. Candidates were also discarded if no behavioral data was available. Code for the detection of ripples resides in \u2018Calculate_ripples.py\u2019.\n\n### Correlation and lag analysis\n\nIn each session, we uniquely used ripples from the CA1 channel with the strongest ripple activity, we looked at the LFP activity in all brain areas recorded in a window of 100.0-ms pre-ripple start and 200.0-ms post-ripple start, this broad windows account for possible traveling delays due to distance. For each brain area, we picked the channel with higher SD of the envelope of the filtered trace. For each ripple considered we calculated integral of the envelope of the filtered trace (\u222bRipple) and the integral of the raw LFP (RIVD). After discarding channels with weak ripple activity (envelope variance <5), we computed the pairwise pearson correlation of the envelope traces of CA1 channels (pandas.DataFrame.corr). For the lag analysis, we first identified pairs of CA1 that satisfied a distance requirements. Distance threshold were set at 25% (857.29 \u00b5m) and 75% (2126.66 \u00b5m) of the totality of distances. For each ripple detected in the reference channel we identifired the nearest neighbor in the other channel. The analysis was repeated after dividing ripples in strong (top 10% \u222bRipple) and common ripples (all remaining ripples) per session. Code for the correlation and lag analysis resides in \u2018Calculations_Figure_1.py\u2019.\n\n### Ripple spatio-temporal propagation maps and ripple seed analysis\n\nThe hippocampus was divided in three section with equal number of recordings. Channels with weak ripple activity (envelope variance <5) were discarded. Sessions with recording locations only in one hippocampal sections or with less than 1000 ripples in the channel with strongest ripple activity were discarded as well. For each ripple detected on the reference CA1 channel we identified ripples in other CA1 channels happening in a window of \u00b160.0 ms, this events were grouped together in a \u2018cluster\u2019. If more than one event was detected on the same probe we kept only the first event. \u2018Clusters\u2019 were subsequently divided according to \u222bRipple on the reference electrode in strong and common ripples. Lag maps were result of averaging lags for each probe. Code for the calculations of propagation maps resides in \u2018Calculate_trajectories.py\u2019.\n\n### Ripple-associated spiking activity\n\nWe focused on sessions with clear ripple activity (envelope variance >5) in all three hippocampal sections and at least 100 ripples generated both medially and laterally. The reference was always placed in the central section, here it was possible. to identify ripples generated medially and laterally. We only considered ripples that were detected in at least half of the recording electrodes (in the code: \"spatial engagment\" >0.5). For each ripple we computed a histogram of spiking activity of regions belonging to the hippocampal formation (HPF) in a window of 0.5 s centered on the ripple start in each probe. We averaged all the computed histograms to create a spatial profile of spiking activity. To compare spiking activity between sessions we interpolated (xarray.DataArray.interp) the difference between medial and lateral ripple-induced spiking over space (this was necessary because probes in each session have different M-L coordinates) and time. We calculated the number of active cells (at least one spike) and spiking rate of each cluster per ripple in a window of 0.12 s starting from ripple start. We repeated the analysis separating the 0- to 50-ms and 50- to 120-ms post-ripple start windows. The degree of association between ripple lags and M-L or A-P axis was calculated using partial correlation (https://pingouin-stats.org/build/html/generated/pingouin.partial_corr.html), in this way we could remove the effect of the other axis.\n\n### Units selection, electrophysiological features calculations, and ripple modulation\n\nClusters were filtered according to the following parameters: waveform peak-through ratio <5, ISI violations <0.5, amplitude cutoff <0.1, and presence ratio >0.1. For an explanation of the parameters see https://github.com/AllenInstitute/ecephys_spike_sorting/blob/master/ecephys_spike_sorting/modules/quality_metrics/README.md and https://brainmapportal-live-4cc80a57cd6e400d854-f7fdcae.divio-media.net/filer_public/80/75/8075a100-ca64-429a-b39a-569121b612b2/neuropixels_visual_coding_-_white_paper_v10.pdf. Firing rate was calculated on all clusters with presence ratio >0.1. Ripple modulation was calculated only for sessions with at least one recording in both the lateral and medial section (n = 24) and only in clusters with firing rate >0.1 spikes/s. Ripple modulation was calculated as (ripple spiking rate \u2212 baseline spiking rate)/baseline spiking rate.\n",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "cfb9dd14-a226-4eb5-b640-63ec3ed391e0",
+      "submission_id": "96a5009a-80e6-424d-90ea-3010d907805e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Liset M de la Prida, https://ror.org/012gwbh42 Instituto Cajal Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85488.sa0](https://doi.org/10.7554/eLife.85488.sa0)\n\nThe findings of this manuscript were considered valuable, with theoretical or practical implications for a subfield. The strength of the evidence was convincing, in line with current state-of-the-art, with good support for the claims.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Liset M de la Prida, https://ror.org/012gwbh42 Instituto Cajal Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85488.sa1](https://doi.org/10.7554/eLife.85488.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Differential ripple propagation along the hippocampal longitudinal axis\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Liset M de la Prida as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Laura Colgin as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Manuel Valero (Reviewer #2); Kazumasa Tanaka (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWe all agree there is value in the paper, but we need to clarify what is new as compared to previous papers in the field targeting similar questions. We also need to see further analysis and clarifications of results to improve the strength of evidence. In particular:\n\n1) Further analysis and clarification should be provided on the proximodistal and longitudinal axes and how they relate to results on mediolateral effects. Please, consider rephrasing the title accordingly.\n\n2) Separation of cell types to reinforce results on potential mechanisms.\n\n3) To discuss how these data compare to previous reports.\n\nPlease, go through all the reviewers' comments to address these three main points carefully.\n\nHippocampal sectors should be more thoroughly addressed in support of mechanisms.\n\nReviewer #1 (Recommendations for the authors):\n\nSpecific comments:\n\n\u2013 The definition of the longitudinal and transversal axis is a bit unclear. While the title refers to the longitudinal axis the overall focus in the manuscript is the M-L coordinates. It is unclear what is the relationship between M-L and the longitudinal (dorsoventral) and transverse axes (proximodistal). Are ripples generated laterally or medially reflecting longitudinal or traverse trends of hippocampal anatomy and physiology?\n\n\u2013 The study remains a bit descriptive, except for the analysis of neuronal dynamics which aims at providing some mechanism. Yet, the level of insights remains poor and the analysis is confined to basic properties of unit waverfoms and rates. The paper will benefit from addressing some additional potential factors. For example, what microcircuit factors can account for the M-L organization of ripple propagation? Is CA3-CA1 coordination (and possible SUB-CA1 coordination) differently involved? Are ripples generated laterally or medially involving different coordination between different CA1 cell types and neurons in these regions? In addition, the interaction between pyr and interneurons, and/or the contribution of interneurons from different layers, may entail different subcircuits for ripples generated laterally or medially. This should be more thoroughly addressed in a separate figure to reinforce a touch on the mechanisms.\n\n\u2013 One interesting finding is the different waveform duration and shapes of neurons along the M-L coordinates but it is unclear whether it refers to putative pyramidal cells or interneurons, whether all cells belong to the CA1 region or they rather refer to different hippocampal sectors (sup.Figure 13; no anatomical information, no raw examples provided). It is unclear how this observation relates to ripples of different origins.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 For better clarification of the nature of the collected data, the behavioral states of the animals (passive presentation of visual stimuli, head-fixed, etc) should be mentioned in the Dataset section in the Materials and methods.\n\n\u2013 As described in the public review, the authors can provide more thoughts on the physiological impacts and or a particular role of the directional propagation of the ripples. However, this suggestion is optional.\n\n\u2013 Kumar and Deshmukh report stronger ripple propagation along the proximodistal axis. I am wondering how much of the present finding is explained by the difference between the proximal vs distal CA1 because I see the Neurapixels data from the intermediate CA1 is dominated by the proximal part (Figure 1E). Additional analysis of differentially characterizing the ripple propagation along the proximodistal axis would strengthen the conclusion.\n",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ebc7723b-8d41-4201-a7a7-cf02c4b7a9d5",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C1",
+      "claim": "Hippocampal ripples are highly synchronous neural events critical for memory consolidation and retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal ripples are highly synchronous neural events critical for memory consolidation and retrieval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge in the field of hippocampal research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "26f6c559-79ef-4d80-98b5-09d2824c778d",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C2",
+      "claim": "A minority of strong ripples has been shown to be of particular importance in situations of increased memory demands.",
+      "claim_type": "EXPLICIT",
+      "source": "A minority of strong ripples has been shown to be of particular importance in situations of increased memory demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established findings in the literature about strong ripples and memory demands.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "4c585d91-a434-408a-b14e-b5c05ae0d3ba",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C3",
+      "claim": "Strong ripples (top 10% in ripple strength) propagate differentially depending on their generation point along the hippocampal longitudinal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, strong ripples (top 10% in ripple strength) propagate differentially depending on their generation point along the hippocampal longitudinal axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "090bf5ab-3cae-4d6b-9af0-2f6ab586ae26",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C4",
+      "claim": "The septal hippocampal pole is able to generate longer ripples that engage more neurons and elicit spiking activity for an extended time even at considerable distances.",
+      "claim_type": "EXPLICIT",
+      "source": "The septal hippocampal pole is able to generate longer ripples that engage more neurons and elicit spiking activity for an extended time even at considerable distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "10d5773d-94cf-4fe5-82cb-8172bca3950a",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C5",
+      "claim": "A substantial portion of the variance in strong ripple duration (R\u00b2 = 0.463) is explained by the ripple generation location on the longitudinal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, a substantial portion of the variance in strong ripple duration (R\u00b2 = 0.463) is explained by the ripple generation location on the longitudinal axis, in agreement with a possible distinctive role of the hippocampal septal pole in conditions of high-memory demand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "eb4577c6-6d10-4b94-9168-2c39e18ea079",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C6",
+      "claim": "The location of the ripple generation has a significant impact on the spiking rate modulation of different hippocampal subfields, even before the onset of the ripple.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed that the location of the ripple generation has a significant impact on the spiking rate modulation of different hippocampal subfields, even before the onset of the ripple.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "e2f960c7-d592-4a2d-87c8-c56040b9145d",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C7",
+      "claim": "Hippocampal ripples are brief oscillatory events detected in the local field potential (LFP) of the hippocampal formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal ripples are brief oscillatory events detected in the local field potential (LFP) of the hippocampal formation, these events correspond to the synchronized depolarization of a substantial number of neurons in various hippocampal subregions (Hulse et al., 2016; Ylinen et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "e6e8a8cd-08a1-427e-8937-a08858cd1604",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C8",
+      "claim": "Higher ripple incidence during memory encoding is associated with superior recall performance.",
+      "claim_type": "EXPLICIT",
+      "source": "An higher ripple incidence during memory encoding is associated with superior recall performance (Norman et al., 2019), furthermore, ripple incidence is increased during successful memory retrieval (Carr et al., 2011; Vaz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "282e7de7-ac0b-40fe-b2a8-e883e2f4fcc3",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C9",
+      "claim": "Ripple incidence is increased during successful memory retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "An higher ripple incidence during memory encoding is associated with superior recall performance (Norman et al., 2019), furthermore, ripple incidence is increased during successful memory retrieval (Carr et al., 2011; Vaz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "0179211f-e572-42ad-b681-74288f86420b",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C10",
+      "claim": "Ripples are involved in memory consolidation both in awake and sleep conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripples are also involved in memory consolidation both in awake and sleep conditions (Girardeau et al., 2009; Jadhav et al., 2012; Roux et al., 2017; Sirota et al., 2003), disrupting awake ripples during learning causes a persisting performance degradation, the same effect can be achieved by silencing ripples during post-learning sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "24b55fd1-b7f1-41d5-8cd6-f0c62688ad8b",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C11",
+      "claim": "Disrupting awake ripples during learning causes a persisting performance degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripples are also involved in memory consolidation both in awake and sleep conditions (Girardeau et al., 2009; Jadhav et al., 2012; Roux et al., 2017; Sirota et al., 2003), disrupting awake ripples during learning causes a persisting performance degradation, the same effect can be achieved by silencing ripples during post-learning sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "2f1ae2ff-e605-488a-9a39-ce7080265a68",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C12",
+      "claim": "Silencing ripples during post-learning sleep causes performance degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripples are also involved in memory consolidation both in awake and sleep conditions (Girardeau et al., 2009; Jadhav et al., 2012; Roux et al., 2017; Sirota et al., 2003), disrupting awake ripples during learning causes a persisting performance degradation, the same effect can be achieved by silencing ripples during post-learning sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "ca9bfff0-dd11-44ee-a021-81cb2e8eba45",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C13",
+      "claim": "Ripples are considered to play a crucial role in memory processes and reorganization of memory engrams.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, ripples are considered to play a crucial role in memory processes and reorganization of memory engrams (Buzs\u00e1ki, 2015; Davidson et al., 2009; Diba and Buzs\u00e1ki, 2007; Dragoi and Tonegawa, 2011; Foster and Wilson, 2006; Girardeau et al., 2009; Girardeau and Zugaro, 2011; Pfeiffer and Foster, 2015; Takahashi, 2015; Xu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "8b078239-8c61-4b71-af0e-d7ff5945d98f",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C14",
+      "claim": "Ripple duration exhibits a skewed distribution with only a minority of long-duration ripples (>100 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Ripples duration exhibits a skewed distribution with only a minority of long-duration ripples (>100 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about ripple characteristics based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "671af180-6d54-4330-8a9d-fdc4d34d9780",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C15",
+      "claim": "The fraction of long-duration ripples, ripple amplitude, and within-ripple firing rate of both excitatory and inhibitory neurons are increased in both novel contexts and memory-demanding tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of long-duration ripples, ripple amplitude, and within-ripple firing rate of both excitatory and inhibitory neurons are increased in both novel contexts and memory-demanding tasks (Fern\u00e1ndez-Ruiz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "25b71e82-dd3e-4d7e-a46c-b22ca3f14a90",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C16",
+      "claim": "Reducing ripple duration artificially causes a degraded working memory performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing ripple duration artificially causes a degraded working memory performance (Fern\u00e1ndez-Ruiz et al., 2019; Jadhav et al., 2012) and, on the contrary, prolongation induced by optogenetic activation has a beneficial effect (Fern\u00e1ndez-Ruiz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "b3884929-7f43-4907-b121-6582aec89217",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C17",
+      "claim": "Prolongation of ripple duration induced by optogenetic activation has a beneficial effect on memory performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing ripple duration artificially causes a degraded working memory performance (Fern\u00e1ndez-Ruiz et al., 2019; Jadhav et al., 2012) and, on the contrary, prolongation induced by optogenetic activation has a beneficial effect (Fern\u00e1ndez-Ruiz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "50b2b474-ea72-4485-b6de-874ba8034df1",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C18",
+      "claim": "The artificial recruitment of additional neurons seems to be constrained by pre-existing resting potential dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the artificial recruitment of additional neurons seems to be constrained by pre-existing resting potential dynamics (Noguchi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "32e83d88-7696-4c23-8336-a8a05aa858e7",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C19",
+      "claim": "Hippocampal\u2013neocortical interactions are increased specifically during long-duration compared to short-duration ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal\u2013neocortical interactions, suggested to be important for memory consolidation (Gais et al., 2007; Klinzing et al., 2019; Tukker et al., 2020), are increased specifically during long-duration compared to short-duration ripples (Ngo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "4710feb8-b265-4b01-8e55-97d2b8f8cb0e",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C20",
+      "claim": "Ripple amplitude and duration are significantly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripple amplitude and duration are significantly correlated (Patel et al., 2013; Tong et al., 2021), moreover, they are both related to the amount of underlying spiking activity (Khodagholy et al., 2017; Tong et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "e24ce276-cff8-444b-ae5d-f04394c1ddf0",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C21",
+      "claim": "Ripple amplitude and duration are both related to the amount of underlying spiking activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripple amplitude and duration are significantly correlated (Patel et al., 2013; Tong et al., 2021), moreover, they are both related to the amount of underlying spiking activity (Khodagholy et al., 2017; Tong et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "ceb9b52e-57c1-4d74-8bc8-f854417a9454",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C22",
+      "claim": "It is possible to combine ripple strength and amplitude by considering the area of the high-pass filtered envelope (ripple strength).",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible to combine ripple strength and amplitude by considering the area of the high-pass filtered envelope (ripple strength).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing how ripple strength is calculated.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "e7b3d6dd-8285-46b7-b249-66ead6a2ed05",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C23",
+      "claim": "Hippocampal connectivity with cortical and subcortical areas varies considerably along the longitudinal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal connectivity with cortical and subcortical areas varies considerably along the longitudinal axis (Fanselow and Dong, 2010; Moser and Moser, 1998) and gene expression, as well, exhibits both gradual and discrete transitions along the same axis (Strange et al., 2014; Vogel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "0c7f0d56-c067-4a94-9cce-fe9129dc429e",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C24",
+      "claim": "Gene expression exhibits both gradual and discrete transitions along the hippocampal longitudinal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal connectivity with cortical and subcortical areas varies considerably along the longitudinal axis (Fanselow and Dong, 2010; Moser and Moser, 1998) and gene expression, as well, exhibits both gradual and discrete transitions along the same axis (Strange et al., 2014; Vogel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "42921964-e0ee-4863-9607-f2df74c9a7bc",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C25",
+      "claim": "The hippocampus is considered to be functionally segmented along its long axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the hippocampus is considered to be functionally segmented along its long axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "9779520f-7385-4982-af77-8fe5a01cbd3e",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C26",
+      "claim": "The different connectivity contributes to explain the functional organization gradient between a predominantly spatio-visual (septal pole) and emotional (temporal pole) processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The different connectivity contributes to explain the functional organization gradient between a predominantly spatio-visual (septal pole) and emotional (temporal pole) processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about hippocampal functional organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "36822bbf-6581-4478-a4e9-a902f68941a1",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C27",
+      "claim": "Ripples generated in the septal and temporal hippocampal pole have been shown to be temporally independent and able to engage different neuron subpopulations, even in the same downstream brain area.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripples generated in the septal and temporal hippocampal pole have already been shown to be temporally independent and able to engage different neuron subpopulations, even in the same downstream brain area (Sosa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "b7365287-3087-43c7-85cd-5aa2038c4625",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C28",
+      "claim": "A heterogeneous ripple generation chance along the longitudinal axis most probably has an impact on the frequency with which different brain areas and neurons subgroups are activated by ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequentially, a heterogeneous ripple generation chance along the longitudinal axis most probably has an impact on the frequency with which different brain areas and neurons subgroups are activated by ripples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the previous statement about ripple generation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "64294be8-d9d9-4d89-b25b-04bd0bf34392",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C29",
+      "claim": "The dataset analyzed comprises 267 Neuropixel recordings in 49 awake, head-fixed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed ripple propagation within the hippocampal formation in a large open-access dataset comprising 267 Neuropixel recordings in 49 awake, head-fixed mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "2cbc075e-a3d5-4fcd-a23a-0806519324f4",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C30",
+      "claim": "Distance between recording locations explains 57.6% of the variability in ripple strength correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Distance between recording location could explain the majority (57.6%) of this variability (Figure 1B) with the top and bottom quartiles of ripple strength correlation showing significantly different average distances (Figure 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from statistical analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "540593d6-c685-43bc-9143-b58538498554",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C31",
+      "claim": "Almost half of the ripples in long-distance pairs (49.3 \u00b1 2.2%) were detected in both locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost half of the ripples in long-distance pairs (49.3 \u00b1 2.2%) were detected in both locations (inside a 120-ms window centered on ripple start at the reference location).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "85e8f07d-8732-4bc7-b2f6-459e18e3d460",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C32",
+      "claim": "Short-distance pairs showed a more reliable propagation (69.59 \u00b1 3.51%) compared to long-distance pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly short-distance pairs showed a more reliable propagation (69.59 \u00b1 3.51%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "46b9a13e-5f8f-4c31-9c56-bf055ad0ea5d",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C33",
+      "claim": "Strong ripples identified in the medial section showed a markedly positive lag (lag = 17.83 \u00b1 1.02 ms) indicative of a preferred medial\u2192lateral traveling direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong ripples identified in the medial section, in opposition to common ripples, showed a markedly positive lag (lag = 17.83 \u00b1 1.02 ms) indicative of a preferred medial\u2192lateral traveling direction (Figure 1H top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "08e74f96-84ce-4a0d-8c67-d99d5ef06f4a",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C34",
+      "claim": "Strong ripples identified in the lateral section did not show a markedly positive lag (lag = 3.62 \u00b1 1.05 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the same was not true for strong ripples identified in the lateral section (lag = 3.62 \u00b1 1.05 ms, Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "5d9cd2a9-8efb-4af4-a005-03024216e2d6",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C35",
+      "claim": "Ripple strength correlates significantly better with the hippocampal population spiking rate on a ripple-to-ripple basis compared to ripple duration alone (p-value = 4.31e\u221211).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably ripple strength correlates significantly better with the hippocampal population spiking rate on a ripple-to-ripple basis compared to ripple duration alone (p-value = 4.31e\u221211, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the data analysis shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "def1fbe5-45d1-4d8e-993c-d9a9045ed3f8",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C36",
+      "claim": "Clear ripples were observed uniquely in the hippocampal formation (CA1, CA2, CA3, DG, SUB, and ProS).",
+      "claim_type": "EXPLICIT",
+      "source": "Clear ripples were observed uniquely in the hippocampal formation (CA1, CA2, CA3, DG, SUB, and ProS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "1d47e58e-76e8-46dc-8803-26980adc5f09",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C37",
+      "claim": "The vast majority of the variance in 3D distance between recording locations was explained by the distance on the medio-lateral (M-L) axis alone (R\u00b2 = 0.899).",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of the variance in 3D distance between recording locations was explained by the distance on the medio-lateral (M-L) axis alone (R\u00b2 = 0.899).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "fd0c5716-e169-4b1e-822c-288f0d369f05",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C38",
+      "claim": "In common ripples, regardless of the reference location, most ripples started from the lateral section.",
+      "claim_type": "EXPLICIT",
+      "source": "In common ripples, regardless of the reference location, most ripples started from the lateral section (Figure 3A left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "4ae47a8c-2823-4773-bce2-13899b7b07d1",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C39",
+      "claim": "In all hippocampal sections, the majority of strong ripples are locally generated.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified two principles relative to strong ripples generation: In all hippocampal sections, the majority of strong ripples are locally generated, and a greater number of strong ripples is generated medially than laterally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "6589bbd9-de36-4ff1-91a7-df5da806da06",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C40",
+      "claim": "A greater number of strong ripples is generated medially than laterally.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified two principles relative to strong ripples generation: In all hippocampal sections, the majority of strong ripples are locally generated, and a greater number of strong ripples is generated medially than laterally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "f7119083-fac6-4dbd-9224-46413441f121",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C41",
+      "claim": "Ripples generated laterally were effectively less able to retain their strength propagating toward the medial pole.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that ripples generated laterally were effectively less able to retain their strength propagating toward the medial pole (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "5a4efbd5-53a2-407f-9ffe-4e71c6d4418c",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C42",
+      "claim": "No gradient in ripple strength was observed along the M-L axis (R\u00b2=0.0012).",
+      "claim_type": "EXPLICIT",
+      "source": "This result is not simply explained by differences in ripple strength along the M-L axis, as no such gradient was observed (R\u00b2=0.0012, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from statistical analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "31871fbe-f787-4acb-99fd-e306123e0360",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C43",
+      "claim": "Ripple amplitude showed a weak trend with higher amplitude ripples in the lateral section (r = 0.27, p-value = 1.62e\u221204).",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, ripple amplitude showed a weak trend in the opposite direction (r = 0.27, p-value = 1.62e\u221204), with higher amplitude ripples in the lateral section (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from statistical analysis shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "54ea87fc-1e9d-4f66-a046-b3b38529a349",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C44",
+      "claim": "In the 50- to 120-ms window post-ripple start (late phase), medial ripples could elicit significantly higher spiking activity than lateral ripples along the entire M-L axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in the 50- to 120-ms window post-ripple start (late phase), medial ripples could elicit significantly higher spiking activity than lateral ripples along the entire M-L axis (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "9690da70-9efa-4634-97a1-2f0f813ded8b",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C45",
+      "claim": "The medial hippocampal section is able to generate longer ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with this result, we found that the medial hippocampal section is able to generate longer ripples (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "73bf42a4-fa62-45c1-a376-8fcbbeb5c5a5",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C46",
+      "claim": "An important portion of the variance in ripple duration is explained by location on the M-L axis both in common (R\u00b2 = 0.133) and especially in strong ripples (R\u00b2 = 0.463).",
+      "claim_type": "EXPLICIT",
+      "source": "An important portion of the variance in ripple duration is indeed explained by location on the M-L axis both in common (R\u00b2 = 0.133) and especially in strong ripples (R\u00b2 = 0.463).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "0f88db02-50e2-48a1-9a3c-2f78870dc631",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C47",
+      "claim": "Fraction of active neurons and spiking rate were both significantly higher in medial ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Fraction of active neurons and spiking rate were both significantly higher in medial ripples (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "f218290a-8bab-40ea-b611-7e7818bf4e18",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C48",
+      "claim": "In the late phase, the difference in fraction of active neurons per ripples between medial and lateral ripples was striking (Cohen's d = 1.7).",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing only on the late phase the difference in fraction of active neurons per ripples between medial and lateral ripples was even more striking (Cohen's d = 1.7, Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from statistical analysis shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "4a8574dc-8dff-4355-87d7-f34f242084c4",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C49",
+      "claim": "In the early phase, lateral ripples could engage more neurons, although the effect size was much smaller (Cohen's d=0.39).",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely, in the early phase, lateral ripples could engage more neurons, although, the effect size was much smaller (Cohen's d=0.39).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "1441c626-41f1-4202-a7a4-6df021c9d436",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C50",
+      "claim": "Medial ripples caused a significant and considerable increase in spiking rate in the late phase (Cohen's d = 1.75).",
+      "claim_type": "EXPLICIT",
+      "source": "The same result was found in relation to the spiking rate, medial ripples caused a significant and considerable increase in spiking rate in the late phase (Cohen's d = 1.75, Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from statistical analysis shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "39c3dfbb-f355-4d6c-a22e-b35c9efe02a0",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C51",
+      "claim": "Differences in firing rate, waveform duration, and waveform shape (recovery slope and peak-trough ratio) were found in putative excitatory neurons across hippocampal sections.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find differences in the number of firing neurons across the CA1 subfield (medial = 74.16, lateral = 69.66, p-value = 9.48e\u221201, Mann\u2013Whitney U test), we did, however, found differences in firing rate, waveform duration, and waveform shape (recovery slope and peak-trough ratio, Figure 4\u2014figure supplement 4) in putative excitatory neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "89f4e153-cf53-442d-bc95-fcb478b40f7e",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C52",
+      "claim": "Firing rate and waveform duration in putative excitatory neurons exhibited, respectively, a left- and right-shifted distribution in the lateral section, reflecting lower firing rate and slower action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Firing rate and waveform duration in putative excitatory neurons exhibited, respectively, a left- and right-shifted distribution in the lateral section, reflecting lower firing rate and slower action potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "c2c326db-f181-45df-8cb7-3a8c4cececc3",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C53",
+      "claim": "Putative inhibitory interneurons in the lateral section showed a higher firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Putative inhibitory interneurons in the lateral section showed a higher firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "df446c4e-9865-4978-89ba-b0f1dd8196ff",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C54",
+      "claim": "Clusters located in the thalamus (TH) and midbrain (MB) were hardly modulated (MB: 0.85 \u00b1 0.71%, TH: 0.0 \u00b1 0.0%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that clusters located in the thalamus (TH) and midbrain (MB) were hardly modulated (MB: 0.85 \u00b1 0.71%, TH: 0.0 \u00b1 0.0%), with baseline spiking rate explaining nearly all the variance in spiking rate during ripples (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "8598cafb-6ee2-46fb-8980-a093e3c93114",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C55",
+      "claim": "Only a small fraction of cortical clusters were modulated (Isocortex: 5.26 \u00b1 0.97%).",
+      "claim_type": "EXPLICIT",
+      "source": "Only a small fraction of cortical clusters were modulated (Isocortex: 5.26 \u00b1 0.97%), in contrast, the majority of hippocampal (HPF) clusters showed ripple modulation (HPF: 88.57 \u00b1 1.03%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "00d0100d-8c0e-46ee-88f7-9567f2c72aac",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C56",
+      "claim": "The majority of hippocampal (HPF) clusters showed ripple modulation (HPF: 88.57 \u00b1 1.03%).",
+      "claim_type": "EXPLICIT",
+      "source": "Only a small fraction of cortical clusters were modulated (Isocortex: 5.26 \u00b1 0.97%), in contrast, the majority of hippocampal (HPF) clusters showed ripple modulation (HPF: 88.57 \u00b1 1.03%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "482bab7e-5721-4775-8cc1-1ec4beed0e68",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C57",
+      "claim": "In the 50- to 120-ms window, medial ripples showed a notably stronger modulatory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "A stronger effect was observed when isolating early and late phase. For example, in the 50- to 120-ms window medial ripples showed a notably stronger modulatory effect (Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "27453a86-d466-4110-9251-bb34f29580a9",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C58",
+      "claim": "Significant differences were observed in cortical clusters and in TH, with medial ripples inducing stronger modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant differences were also observed in cortical clusters and in TH, with medial ripples inducing stronger modulation (Figure 5\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 5\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "cf02e9ad-b56d-412a-a3ed-1e9a026622c4",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C59",
+      "claim": "In the early phase, lateral ripples showed significantly stronger engagement of the dentate gyrus (DG), CA1 and CA3 areas and weaker engagement of the subiculum (SUB).",
+      "claim_type": "EXPLICIT",
+      "source": "In the early phase, we found a significantly stronger engagement of the dentate gyrus (DG), CA1 and CA3 areas and weaker engagement of the subiculum (SUB) by lateral ripples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "e34f10b7-94b3-48b8-9e3e-ea02b5185fcc",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C60",
+      "claim": "In the late phase, CA1, CA3, DG, prosubiculum (ProS), and SUB all displayed stronger modulation in response to medial ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "The late phase analysis revealed further differences, as CA1, CA3, DG, prosubiculum (ProS), and SUB all displayed stronger modulation in response to medial ripples (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "23961b14-72ff-4bfe-9a76-a90a8600ebcb",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C61",
+      "claim": "Prior to the onset of ripples (20-ms window), medial ripples induced stronger modulation in ProS and SUB, weaker modulation in DG and substantially weaker modulation in CA3 when compared to lateral ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that prior to the onset of ripples (20-ms window), medial ripple-induced stronger modulation in ProS and SUB, weaker modulation in DG and substantially weaker modulation in CA3 when compared to lateral ripples (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "c7d43053-4edd-4d13-a60e-108d6288bac0",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C62",
+      "claim": "The majority of clusters did not display a strong preference for medial or lateral ripples (84.29%).",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed that the majority of clusters did not display a strong preference (84.29%), whereas 10.4% of clusters responded preferentially to lateral ripples and 5.31% to medial ripples (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "243a22ec-c0aa-4bbe-988a-48b52651bd54",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C63",
+      "claim": "10.4% of clusters responded preferentially to lateral ripples and 5.31% to medial ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed that the majority of clusters did not display a strong preference (84.29%), whereas 10.4% of clusters responded preferentially to lateral ripples and 5.31% to medial ripples (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "82395a40-dd1b-485e-8352-1483f59c75e5",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C64",
+      "claim": "DG exhibited the highest proportion (28.15%) of neurons responsive to lateral ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, DG exhibited the highest proportion (28.15%) of neurons responsive to lateral ripples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "f20dd46b-b25a-43ed-b85c-562e8af70346",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C65",
+      "claim": "SUB displayed the highest proportion (11.68%) of neurons responsive to medial ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SUB displayed the highest proportion (11.68%) of neurons responsive to medial ripples (Figure 5\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis shown in Figure 5\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "0728a921-39d9-4266-b8e7-b69c756ca97b",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C66",
+      "claim": "Strong ripples propagate differentially along the hippocampal longitudinal axis for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show for the first time that strong ripples propagate differentially along the hippocampal longitudinal axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "0dbbba06-d340-4ac4-b8da-19131044da43",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C67",
+      "claim": "It was previously observed that ripples located at the septal and temporal pole are generated independently from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously observed that ripples located at the septal and temporal pole are generated independently from each other, in addition, despite the presence of connections within the hippocampal longitudinal axis (van Strien et al., 2009; Witter, 2007), in the vast majority of cases ripples do not propagate to the opposite pole (Sosa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "fbb1e3f4-608e-4e5f-b8a4-3ac2ee1af592",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C68",
+      "claim": "In the vast majority of cases ripples do not propagate to the opposite pole.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously observed that ripples located at the septal and temporal pole are generated independently from each other, in addition, despite the presence of connections within the hippocampal longitudinal axis (van Strien et al., 2009; Witter, 2007), in the vast majority of cases ripples do not propagate to the opposite pole (Sosa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "9e687518-24b6-42f7-a19d-d3c511f182f9",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C69",
+      "claim": "Only half of the ripples generated in the septal pole were detected additionally in the intermediate hippocampus (lateral section).",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of distance was also apparent on the ripple chance of propagation, only half of the ripples generated in the septal pole were detected additionally in the intermediate hippocampus (lateral section in our analysis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "e2a6632f-c0cb-42da-9588-4d12175ee56e",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C70",
+      "claim": "This chance is much higher compared to the ~3.7% reported regarding propagation between opposite poles.",
+      "claim_type": "EXPLICIT",
+      "source": "This chance is much higher compared to the ~3.7% reported regarding propagation between opposite poles (Sosa et al., 2020), it would be interesting to understand whether the temporal pole is also able to entrain the intermediate hippocampus in similar fashion or it is a peculiarity of the septal pole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement compares the current findings with previous research cited.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "763f817b-b803-4b61-90f8-b92b0c477221",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C71",
+      "claim": "Ripples can arise at any location along the hippocampal longitudinal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripples can arise at any location along the hippocampal longitudinal axis (Patel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "74bf58d5-0ee7-47ca-b5b2-62500903f19c",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C72",
+      "claim": "Ripples are not homogeneously generated across space.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that ripples are, however, not homogeneously generated across space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "7315e681-d66e-4e68-8fbe-34a26e517301",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C73",
+      "claim": "Common ripples followed a gradient with higher generation probability in the intermediate section and lowest in the septal pole.",
+      "claim_type": "EXPLICIT",
+      "source": "Common ripples followed a gradient with higher generation probability in the intermediate section and lowest in the septal pole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "5ef4af18-abb5-4d1a-9da9-5df9d7c6af20",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C74",
+      "claim": "Only rarely a strong ripple generated in the intermediate hippocampus is able to propagate toward the septal pole retaining its strong status (top 10%).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, only rarely a strong ripple generated in the intermediate hippocampus is able to propagate toward the septal pole retaining its strong status (top 10%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "56835431-2ac6-40b9-ae23-812fc858254b",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C75",
+      "claim": "Strong ripples generated in the septal pole have a significantly higher chance of propagate longitudinally and still be in the top 10% in terms of ripple strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely strong ripples generated in the septal pole have a significantly higher chance of propagate longitudinally and still be in the top 10% in terms of ripple strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "78c41a23-098e-481c-b9a4-3020d82cb59e",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C76",
+      "claim": "No difference in ripple strength was observed along the longitudinal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this is not consequence of a simple longitudinal gradient in ripple strength, indeed, we did not observe any difference in ripple strength along the longitudinal axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "8779308a-e09d-433f-b77d-db4cd765a072",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C77",
+      "claim": "The temporal hippocampus has been shown to produce shorter ripples both in awake and sleep conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a duration gradient along the longitudinal axis, the temporal hippocampus has been shown to produce shorter ripples both in awake and sleep conditions (Sosa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "e7da4bbf-3a86-489b-91b8-265b824cc146",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C78",
+      "claim": "Slower action potentials and longer refractory periods may hinder the ability to sustain protracted high frequency spiking.",
+      "claim_type": "IMPLICIT",
+      "source": "We can hypothesize that slower action potentials and, consequentially, longer refractory periods hinder the ability to sustain protracted high frequency spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference from the observed electrophysiological differences.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "ce5c1bea-5bcc-4503-ae82-34101400d655",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C79",
+      "claim": "The neuromodulatory inputs gradient might influence neurons responses.",
+      "claim_type": "IMPLICIT",
+      "source": "We can also speculate that the neuromodulatory inputs gradient, monoamine fibers have been shown to be stronger in the ventral part (Strange et al., 2014), might influence neurons responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known neuromodulatory gradients.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "16eae96b-3d94-4869-8070-c41e92af6d20",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C80",
+      "claim": "Serotonin, noradrenaline, and acetylcholine have all been shown to suppress ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Serotonin (ul Haq et al., 2016; Wang et al., 2015), noradrenaline (Novitskaya et al., 2016; Ul Haq et al., 2012), and acetylcholine Zhang et al., 2021 have all been shown to suppress ripples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "4b937db0-3039-4240-ae7f-69f50da71c39",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C81",
+      "claim": "Some ripples are coupled with a reduced activation of the locus coeruleus and the dorsal raphe nucleus in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with this, some ripples are coupled with a reduced activation of the locus coeruleus and the dorsal raphe nucleus in vivo (Ramirez-Villegas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "3b229389-2b62-4253-b0bd-fd9f9d921b24",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C82",
+      "claim": "Ripples can be subdivided in different types according to the relationship between the hippocampal LFP and the ripple itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripple amplitude and duration are significantly correlated (Patel et al., 2013; Tong et al., 2021), moreover, they are both related to the amount of underlying spiking activity (Khodagholy et al., 2017; Tong et al., 2021). It is possible to combine ripple strength and amplitude by considering the area of the high-pass filtered envelope (ripple strength).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "2e76b9a9-08b7-4da3-bbc7-49a670b516c5",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C83",
+      "claim": "Different ripple subtypes are associated with two different brain-wide networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, these subtypes are associated with two different brain-wide networks, the first communicating preferentially with the associative neocortex and a second one biased toward subcortical structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established knowledge about ripple subtypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "7d954640-8fc5-4ae9-834c-19ab1118206d",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C84",
+      "claim": "Different types of ripples have been proposed to possibly fulfill different functional roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these different types of ripples have been proposed to possibly fulfill different functional roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established knowledge about ripple subtypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "81d6fdfc-072a-447e-83a3-f771e8f98f9f",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C85",
+      "claim": "Ripple generated at different points of the hippocampal longitudinal axis might have functional differences.",
+      "claim_type": "IMPLICIT",
+      "source": "Given the different input/output connectivity between septal, intermediate, and temporal hippocampus (Fanselow and Dong, 2010) we hypothesize that ripple generated at different points of the hippocampal longitudinal axis might as well have functional differences, with the longer ripples generated septally possibly able to combine the different kind of information processed in the distinct hippocampal sections and additionally relaying the integrated information back to the neocortex in accordance with the two-stage memory hypothesis (Buzs\u00e1ki, 1989; Diekelmann and Born, 2010; Marr, 1971; McClelland et al., 1995; Rasch and Born, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference from known connectivity patterns and memory theories.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "bf887ae1-3fbc-48d9-bf78-98d838bc695b",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C86",
+      "claim": "Long-duration ripples have been shown to be of particular importance in situations of high-memory demand.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-duration ripples have been shown to be of particular importance in situations of high-memory demand (Fern\u00e1ndez-Ruiz et al., 2019), at the same time, previous studies highlighted the role of septal hippocampus in memory tasks and information processing (Bradfield et al., 2020; Fanselow and Dong, 2010; Hock and Bunsey, 1998; Kheirbek et al., 2013; Maras et al., 2014; McGlinchey and Aston-Jones, 2018; Moser et al., 1993; Moser et al., 1995; Qin et al., 2021; Steffenach et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "92ca7408-56e3-4351-b1d8-abcee9a0ae79",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C87",
+      "claim": "Previous studies highlighted the role of septal hippocampus in memory tasks and information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-duration ripples have been shown to be of particular importance in situations of high-memory demand (Fern\u00e1ndez-Ruiz et al., 2019), at the same time, previous studies highlighted the role of septal hippocampus in memory tasks and information processing (Bradfield et al., 2020; Fanselow and Dong, 2010; Hock and Bunsey, 1998; Kheirbek et al., 2013; Maras et al., 2014; McGlinchey and Aston-Jones, 2018; Moser et al., 1993; Moser et al., 1995; Qin et al., 2021; Steffenach et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "555f8e34-8a4f-4eaf-985e-82b46e32794d",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C88",
+      "claim": "The results can contribute to explain the specific role of septal hippocampus in memory-demanding tasks with its ability of generating particularly long ripples.",
+      "claim_type": "IMPLICIT",
+      "source": "Our results can contribute to explain the specific role of septal hippocampus in memory-demanding tasks with its ability of generating particularly long ripples that are able to strongly engage networks in the entire top half of the hippocampal formation for an extended time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the study's findings to the known role of the septal hippocampus.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "9eae8514-5ee2-4f6d-8b16-672a7fa05243",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C89",
+      "claim": "CA3 may play a more critical role in initiating lateral ripples, in accordance with the traditional view that CA3 is the primary generator of ripples.",
+      "claim_type": "IMPLICIT",
+      "source": "These results indicate that CA3 may play a more critical role in initiating lateral ripples, in accordance with the traditional view that CA3 is the primary generator of ripples (Buzs\u00e1ki, 1986; Buzs\u00e1ki, 1989; Csicsvari et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data analysis, supported by citations to previous research.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "90e662f5-21b1-4e36-a4df-801b038427ed",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C90",
+      "claim": "Medial ripples demonstrate stronger engagement of ProS and SUB subfields before ripple start, supporting the hypothesis that output structures in the hippocampus are also capable of generating ripples.",
+      "claim_type": "IMPLICIT",
+      "source": "On the other hand, medial ripples demonstrate stronger engagement of ProS and SUB subfields before ripple start, supporting the more recent hypothesis that output structures in the hippocampus are also capable of generating ripples (Imbrosci et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data analysis, supported by a citation to previous research.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "039b4a1a-8b1b-4320-9a63-06b387a4e43d",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C91",
+      "claim": "The weaker engagement of the subiculum during lateral ripples may reflect a more localized processing of information within the hippocampus.",
+      "claim_type": "IMPLICIT",
+      "source": "It is possible that the weaker engagement of the subiculum during lateral ripples may reflect a more localized processing of information within the hippocampus, while the stronger engagement of the subiculum during medial ripples may reflect a more global transfer of information to other brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed differences in subiculum engagement.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "61138828-4204-471d-95ad-2d653b2b37d4",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C92",
+      "claim": "The stronger engagement of the subiculum during medial ripples may reflect a more global transfer of information to other brain regions.",
+      "claim_type": "IMPLICIT",
+      "source": "It is possible that the weaker engagement of the subiculum during lateral ripples may reflect a more localized processing of information within the hippocampus, while the stronger engagement of the subiculum during medial ripples may reflect a more global transfer of information to other brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed differences in subiculum engagement.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "3bf7c597-df59-450a-855c-7eb777e139ec",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C93",
+      "claim": "The analysis was based on the Visual Coding \u2013 Neuropixels dataset of head-fixed recordings in awake mice provided by the Allen Institute.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis was based on the Visual Coding \u2013 Neuropixels dataset of head-fixed recordings in awake mice provided by the Allen Institute and available at https://allensdk.readthedocs.io/en/latest/visual_coding_neuropixels.html.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "10280735-6478-4337-a4b4-3a3955f77ebe",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C94",
+      "claim": "Six sessions were excluded because of absence of recording electrodes in CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded six sessions because of absence of recording electrodes in CA1 (session ids = 732592105, 737581020, 739448407, 742951821, 760693773, 762120172).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "4b76a23b-c2da-411f-9a92-7209db5b631c",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C95",
+      "claim": "One session was excluded because of an artifact in the LFP time series.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, one session was excluded (session id = 743475441) because of an artifact in the LFP time series (time was not monotonically increasing) and two other sessions (session ids = 746083955, 756029989) because of duplicated LFP traces (see https://github.com/RobertoDF/Allen_visual_dataset_artifacts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "b5a2858f-17bd-460c-bc9c-b391a607c836",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C96",
+      "claim": "The analysis was focused on 49 sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis was therefore focused on 49 sessions, average animal age = 119.22 \u00b1 1.81.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the final dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "28b4f9c3-5fb9-4a01-9b85-1fc7cc679ea5",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C97",
+      "claim": "Ripples were detected on CA1 LFP traces using a sixth-order Butterworth bandpass filter between 120.0 and 250.0 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The LFP traces sampled at 1250 Hz were filtered using a sixth-order Butterworth bandpass filter between 120.0 and 250.0. Ripples were detected on CA1 LFP traces, the best channel (higher ripple strength) was selected by looking at the SD of the envelope of the filtered trace, if multiple SD peaks were present across space (possibly caused by sharp waves in stratum radiatum and ripple activity in stratum pyramidale) we subsequently looked at the channel with higher skewness, in this way we could reliably identify the best ripple channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the ripple detection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "1f1736d1-88e0-49d3-a743-1914cfe15240",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C98",
+      "claim": "Ripple threshold was set at 5 SDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripple threshold was set at 5 SDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the ripple detection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "f1d80230-89d0-47f1-b20c-e472a6a53496",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C99",
+      "claim": "Ripple duration was limited at >0.015 and <0.25 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripple duration was limited at >0.015 and <0.25 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the ripple detection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "85c0f587-3df4-4047-9cc6-bb00bec656db",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "claim_id": "C100",
+      "claim": "Ripple candidates detected during running epochs were discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripple candidates detected during running epochs were discarded, an animal was considered to be running if his standardized speed was higher than the 10th percentile plus 0.06.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the ripple detection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0bfa8e07-f820-4156-bf5e-165b524ae909",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Distance between recording locations explains 57.6% of the variability in ripple strength correlation, with short-distance pairs showing more reliable propagation (69.59\u00b13.51%) compared to long-distance pairs (49.3\u00b12.2%). The medio-lateral (M-L) axis alone explains 89.9% of the variance in 3D distance between recording locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 and C37 provide converging quantitative evidence from statistical analysis showing that spatial distance is a major determinant of ripple propagation reliability. The R\u00b2 values and propagation percentages are clearly stated with error estimates, and the dominance of the M-L axis is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "55d6cae7-26b9-4818-8ef4-85ab0774cdb3",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Strong ripples propagate differentially along the hippocampal longitudinal axis depending on their generation point. Strong ripples from the medial section show a markedly positive lag (17.83\u00b11.02 ms) indicating medial\u2192lateral directionality, while strong ripples from the lateral section show minimal lag (3.62\u00b11.05 ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C33, C34, and C66 collectively demonstrate the novel finding of differential propagation. The quantitative lag measurements with error estimates and statistical significance provide strong evidence for directional asymmetry in strong ripple propagation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "e60cc5b2-4ef7-431c-b731-b8b246ebd095",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Strong ripples are predominantly locally generated in all hippocampal sections, with more strong ripples generated medially than laterally. Common ripples show a gradient with higher generation probability in the intermediate section. Strong ripples from the septal pole retain their strength during longitudinal propagation better than those from the intermediate hippocampus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 and C72-C75 provide consistent evidence about ripple generation patterns. The findings are supported by data analysis across multiple sessions showing differential generation probabilities and propagation characteristics between medial and lateral regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "e3e82a06-8968-43e6-958e-338b28824db1",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The medial hippocampal section generates longer ripples, with ripple generation location explaining 46.3% of variance in strong ripple duration (R\u00b2=0.463) and 13.3% in common ripples (R\u00b2=0.133). These longer medial ripples engage more neurons and elicit extended spiking activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C45, and C46 provide strong quantitative evidence linking medial location to ripple duration. The R\u00b2 values indicate substantial explanatory power, particularly for strong ripples, and are supported by data shown in Figure 4F.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "a1ab9e20-a027-40a2-be27-54bd1a0dc562",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the late phase (50-120 ms post-ripple start), medial ripples elicit significantly higher spiking activity than lateral ripples along the entire M-L axis, with large effect sizes for both fraction of active neurons (Cohen's d=1.7) and spiking rate (Cohen's d=1.75). In the early phase, lateral ripples engage slightly more neurons (Cohen's d=0.39).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C47-C50 provide converging evidence with large effect sizes demonstrating differential network engagement. The temporal specificity (early vs. late phase) and quantitative measures with Cohen's d values provide robust support for the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "e5953d4b-3dd0-40fc-b3d2-b7556d2fe390",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ripple generation location significantly impacts spiking rate modulation of hippocampal subfields even before ripple onset. In the early phase, lateral ripples show stronger engagement of DG, CA1, and CA3, while medial ripples engage SUB more strongly. In the late phase, all subfields show stronger modulation to medial ripples. Prior to ripple onset, medial ripples induce stronger modulation in ProS and SUB but weaker modulation in CA3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C59-C61 demonstrate subfield-specific differential modulation patterns that are temporally resolved. The findings are supported by data analysis shown in Figures 5D and 5E, with statistical significance indicated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "8b916151-1a19-4bea-990e-b15d6988573a",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Electrophysiological differences exist between medial and lateral hippocampal sections. Putative excitatory neurons in the lateral section show lower firing rates and slower action potentials (right-shifted waveform duration distribution), while putative inhibitory interneurons show higher firing rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by data analysis shown in Figure 4\u2014figure supplement 4, demonstrating measurable electrophysiological differences that may contribute to the observed functional differences in ripple generation and propagation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "ae11e897-a2ef-411a-ba0a-d28268d81952",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ripple modulation varies across brain regions, with minimal modulation in thalamus (0%) and midbrain (0.85\u00b10.71%), small cortical modulation (5.26\u00b10.97%), and strong hippocampal modulation (88.57\u00b11.03%). In the late phase, medial ripples show notably stronger modulatory effects in hippocampus, cortex, and thalamus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 provide quantitative evidence of region-specific modulation patterns with clear percentages and error estimates. The findings are supported by data shown in Figure 5A and supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "97f4d4fa-836f-4d27-a852-82862c37a21c",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Most hippocampal clusters (84.29%) show no strong preference for medial or lateral ripples, while 10.4% prefer lateral ripples and 5.31% prefer medial ripples. DG shows the highest proportion of lateral-preferring neurons (28.15%), while SUB shows the highest proportion of medial-preferring neurons (11.68%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 provide clear quantitative evidence of neuronal preferences with specific percentages. The subfield-specific patterns are supported by data shown in Figure 5F and supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "7e7c2cfc-cccb-4f0f-af20-e00d43f50197",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ripple strength correlates significantly better with hippocampal population spiking rate on a ripple-to-ripple basis compared to ripple duration alone (p-value=4.31e-11).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 provides statistical evidence with a highly significant p-value supporting the superiority of ripple strength as a measure. This is shown in Figure 1\u2014figure supplement 3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "24ff306b-c313-49f2-8ea3-57cc5c0cfb12",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ripples generated laterally are less able to retain their strength when propagating toward the medial pole. This is not explained by a gradient in ripple strength along the M-L axis (R\u00b2=0.0012), though ripple amplitude shows a weak opposite trend with higher amplitudes laterally (r=0.27, p=1.62e-04).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 provide evidence that differential propagation is not due to simple spatial gradients in ripple properties. The low R\u00b2 value and weak amplitude correlation support this interpretation, shown in supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "70a211ce-03fc-4846-a82c-6456fca8c0e1",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study analyzed 267 Neuropixel recordings from 49 awake, head-fixed mice using the Allen Institute Visual Coding dataset, with specific exclusion criteria applied for data quality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C93-C96 provide clear documentation of the dataset, sample size, and exclusion criteria. This methodological information is essential for reproducibility and is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "ccb93883-173d-4a03-97b2-daaadef69205",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Ripples were detected using a sixth-order Butterworth bandpass filter (120-250 Hz) with a 5 SD threshold, duration limits of 0.015-0.25 s, and exclusion of ripples during running epochs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C100 provide detailed methodological information about ripple detection. The parameters are clearly specified and standard for the field, supporting reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "a4bfbff1-a32e-482e-b6a8-d517741d9516",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Clear ripples were observed uniquely in the hippocampal formation (CA1, CA2, CA3, DG, SUB, and ProS).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by observation from the data analysis and is consistent with established knowledge about ripple localization. This validates the recording locations and data quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "4f53d6ba-3041-4695-bd54-830cf8274db1",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In common ripples, most ripples started from the lateral section regardless of reference location.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is supported by data shown in Figure 3A, demonstrating a consistent pattern of lateral generation for common ripples across different reference locations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "5c7f59ee-108b-48b4-a3e8-4514e440667b",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Only half of the ripples generated in the septal pole were detected in the intermediate hippocampus, which is much higher than the ~3.7% propagation rate between opposite poles reported previously.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 provide quantitative comparison with prior work, showing intermediate propagation rates between adjacent and distant hippocampal regions. The comparison with cited work (Sosa et al., 2020) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "a4e07c0d-77a0-4c73-9e92-ad4a542e09a9",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors hypothesize that slower action potentials and longer refractory periods may hinder sustained high-frequency spiking, and that neuromodulatory input gradients might influence neuronal responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79 are explicitly stated as hypotheses and speculation. While they are reasonable interpretations based on the observed electrophysiological differences, they require direct experimental testing to be confirmed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "43187f63-44ee-4812-ab3a-cd4cec1ce844",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors hypothesize that ripples generated at different points along the longitudinal axis may have functional differences, with septal ripples potentially able to integrate information and relay it to neocortex. The results may explain the specific role of septal hippocampus in memory-demanding tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85 and C88 represent interpretive hypotheses connecting the findings to functional roles. While the data support differential properties of medial vs. lateral ripples, the functional implications require additional behavioral and causal experiments to be definitively established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "21b021e0-2929-4149-b6e4-595e88e82089",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors infer that CA3 may play a more critical role in initiating lateral ripples (consistent with traditional views), while medial ripples show stronger engagement of ProS and SUB before ripple start, supporting the hypothesis that output structures can also generate ripples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C90 are inferences from the pre-ripple modulation data. While the differential engagement patterns are supported by data (C61), the causal role of specific subfields in ripple initiation requires additional experimental validation such as targeted inactivation studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    },
+    {
+      "id": "6b84dbf0-dd34-4392-9669-cfdf3ba12c80",
+      "content_id": "58f4410f-8cae-459f-8caa-41aa57046255",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors speculate that weaker subiculum engagement during lateral ripples may reflect localized hippocampal processing, while stronger engagement during medial ripples may reflect global information transfer to other brain regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C92 are explicitly speculative interpretations of the subiculum engagement differences. While the differential engagement is supported by data, the functional interpretation regarding information processing requires additional experiments to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:19:34.706699Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2cbc075e-a3d5-4fcd-a23a-0806519324f4",
+      "result_id": "0bfa8e07-f820-4156-bf5e-165b524ae909"
+    },
+    {
+      "claim_id": "540593d6-c685-43bc-9143-b58538498554",
+      "result_id": "0bfa8e07-f820-4156-bf5e-165b524ae909"
+    },
+    {
+      "claim_id": "85e8f07d-8732-4bc7-b2f6-459e18e3d460",
+      "result_id": "0bfa8e07-f820-4156-bf5e-165b524ae909"
+    },
+    {
+      "claim_id": "1d47e58e-76e8-46dc-8803-26980adc5f09",
+      "result_id": "0bfa8e07-f820-4156-bf5e-165b524ae909"
+    },
+    {
+      "claim_id": "4c585d91-a434-408a-b14e-b5c05ae0d3ba",
+      "result_id": "55d6cae7-26b9-4818-8ef4-85ab0774cdb3"
+    },
+    {
+      "claim_id": "46b9a13e-5f8f-4c31-9c56-bf055ad0ea5d",
+      "result_id": "55d6cae7-26b9-4818-8ef4-85ab0774cdb3"
+    },
+    {
+      "claim_id": "08e74f96-84ce-4a0d-8c67-d99d5ef06f4a",
+      "result_id": "55d6cae7-26b9-4818-8ef4-85ab0774cdb3"
+    },
+    {
+      "claim_id": "0728a921-39d9-4266-b8e7-b69c756ca97b",
+      "result_id": "55d6cae7-26b9-4818-8ef4-85ab0774cdb3"
+    },
+    {
+      "claim_id": "4ae47a8c-2823-4773-bce2-13899b7b07d1",
+      "result_id": "e60cc5b2-4ef7-431c-b731-b8b246ebd095"
+    },
+    {
+      "claim_id": "6589bbd9-de36-4ff1-91a7-df5da806da06",
+      "result_id": "e60cc5b2-4ef7-431c-b731-b8b246ebd095"
+    },
+    {
+      "claim_id": "74bf58d5-0ee7-47ca-b5b2-62500903f19c",
+      "result_id": "e60cc5b2-4ef7-431c-b731-b8b246ebd095"
+    },
+    {
+      "claim_id": "7315e681-d66e-4e68-8fbe-34a26e517301",
+      "result_id": "e60cc5b2-4ef7-431c-b731-b8b246ebd095"
+    },
+    {
+      "claim_id": "5ef4af18-abb5-4d1a-9da9-5df9d7c6af20",
+      "result_id": "e60cc5b2-4ef7-431c-b731-b8b246ebd095"
+    },
+    {
+      "claim_id": "56835431-2ac6-40b9-ae23-812fc858254b",
+      "result_id": "e60cc5b2-4ef7-431c-b731-b8b246ebd095"
+    },
+    {
+      "claim_id": "090bf5ab-3cae-4d6b-9af0-2f6ab586ae26",
+      "result_id": "e3e82a06-8968-43e6-958e-338b28824db1"
+    },
+    {
+      "claim_id": "10d5773d-94cf-4fe5-82cb-8172bca3950a",
+      "result_id": "e3e82a06-8968-43e6-958e-338b28824db1"
+    },
+    {
+      "claim_id": "9690da70-9efa-4634-97a1-2f0f813ded8b",
+      "result_id": "e3e82a06-8968-43e6-958e-338b28824db1"
+    },
+    {
+      "claim_id": "73bf42a4-fa62-45c1-a376-8fcbbeb5c5a5",
+      "result_id": "e3e82a06-8968-43e6-958e-338b28824db1"
+    },
+    {
+      "claim_id": "54ea87fc-1e9d-4f66-a046-b3b38529a349",
+      "result_id": "a1ab9e20-a027-40a2-be27-54bd1a0dc562"
+    },
+    {
+      "claim_id": "0f88db02-50e2-48a1-9a3c-2f78870dc631",
+      "result_id": "a1ab9e20-a027-40a2-be27-54bd1a0dc562"
+    },
+    {
+      "claim_id": "f218290a-8bab-40ea-b611-7e7818bf4e18",
+      "result_id": "a1ab9e20-a027-40a2-be27-54bd1a0dc562"
+    },
+    {
+      "claim_id": "4a8574dc-8dff-4355-87d7-f34f242084c4",
+      "result_id": "a1ab9e20-a027-40a2-be27-54bd1a0dc562"
+    },
+    {
+      "claim_id": "1441c626-41f1-4202-a7a4-6df021c9d436",
+      "result_id": "a1ab9e20-a027-40a2-be27-54bd1a0dc562"
+    },
+    {
+      "claim_id": "eb4577c6-6d10-4b94-9168-2c39e18ea079",
+      "result_id": "e5953d4b-3dd0-40fc-b3d2-b7556d2fe390"
+    },
+    {
+      "claim_id": "cf02e9ad-b56d-412a-a3ed-1e9a026622c4",
+      "result_id": "e5953d4b-3dd0-40fc-b3d2-b7556d2fe390"
+    },
+    {
+      "claim_id": "e34f10b7-94b3-48b8-9e3e-ea02b5185fcc",
+      "result_id": "e5953d4b-3dd0-40fc-b3d2-b7556d2fe390"
+    },
+    {
+      "claim_id": "23961b14-72ff-4bfe-9a76-a90a8600ebcb",
+      "result_id": "e5953d4b-3dd0-40fc-b3d2-b7556d2fe390"
+    },
+    {
+      "claim_id": "39c3dfbb-f355-4d6c-a22e-b35c9efe02a0",
+      "result_id": "8b916151-1a19-4bea-990e-b15d6988573a"
+    },
+    {
+      "claim_id": "89f4e153-cf53-442d-bc95-fcb478b40f7e",
+      "result_id": "8b916151-1a19-4bea-990e-b15d6988573a"
+    },
+    {
+      "claim_id": "c2c326db-f181-45df-8cb7-3a8c4cececc3",
+      "result_id": "8b916151-1a19-4bea-990e-b15d6988573a"
+    },
+    {
+      "claim_id": "df446c4e-9865-4978-89ba-b0f1dd8196ff",
+      "result_id": "ae11e897-a2ef-411a-ba0a-d28268d81952"
+    },
+    {
+      "claim_id": "8598cafb-6ee2-46fb-8980-a093e3c93114",
+      "result_id": "ae11e897-a2ef-411a-ba0a-d28268d81952"
+    },
+    {
+      "claim_id": "00d0100d-8c0e-46ee-88f7-9567f2c72aac",
+      "result_id": "ae11e897-a2ef-411a-ba0a-d28268d81952"
+    },
+    {
+      "claim_id": "482bab7e-5721-4775-8cc1-1ec4beed0e68",
+      "result_id": "ae11e897-a2ef-411a-ba0a-d28268d81952"
+    },
+    {
+      "claim_id": "27453a86-d466-4110-9251-bb34f29580a9",
+      "result_id": "ae11e897-a2ef-411a-ba0a-d28268d81952"
+    },
+    {
+      "claim_id": "c7d43053-4edd-4d13-a60e-108d6288bac0",
+      "result_id": "97f4d4fa-836f-4d27-a852-82862c37a21c"
+    },
+    {
+      "claim_id": "243a22ec-c0aa-4bbe-988a-48b52651bd54",
+      "result_id": "97f4d4fa-836f-4d27-a852-82862c37a21c"
+    },
+    {
+      "claim_id": "82395a40-dd1b-485e-8352-1483f59c75e5",
+      "result_id": "97f4d4fa-836f-4d27-a852-82862c37a21c"
+    },
+    {
+      "claim_id": "f20dd46b-b25a-43ed-b85c-562e8af70346",
+      "result_id": "97f4d4fa-836f-4d27-a852-82862c37a21c"
+    },
+    {
+      "claim_id": "5d9cd2a9-8efb-4af4-a005-03024216e2d6",
+      "result_id": "7e7c2cfc-cccb-4f0f-af20-e00d43f50197"
+    },
+    {
+      "claim_id": "f7119083-fac6-4dbd-9224-46413441f121",
+      "result_id": "24ff306b-c313-49f2-8ea3-57cc5c0cfb12"
+    },
+    {
+      "claim_id": "5a4efbd5-53a2-407f-9ffe-4e71c6d4418c",
+      "result_id": "24ff306b-c313-49f2-8ea3-57cc5c0cfb12"
+    },
+    {
+      "claim_id": "31871fbe-f787-4acb-99fd-e306123e0360",
+      "result_id": "24ff306b-c313-49f2-8ea3-57cc5c0cfb12"
+    },
+    {
+      "claim_id": "64294be8-d9d9-4d89-b25b-04bd0bf34392",
+      "result_id": "70a211ce-03fc-4846-a82c-6456fca8c0e1"
+    },
+    {
+      "claim_id": "3bf7c597-df59-450a-855c-7eb777e139ec",
+      "result_id": "70a211ce-03fc-4846-a82c-6456fca8c0e1"
+    },
+    {
+      "claim_id": "10280735-6478-4337-a4b4-3a3955f77ebe",
+      "result_id": "70a211ce-03fc-4846-a82c-6456fca8c0e1"
+    },
+    {
+      "claim_id": "4b76a23b-c2da-411f-9a92-7209db5b631c",
+      "result_id": "70a211ce-03fc-4846-a82c-6456fca8c0e1"
+    },
+    {
+      "claim_id": "b5a2858f-17bd-460c-bc9c-b391a607c836",
+      "result_id": "70a211ce-03fc-4846-a82c-6456fca8c0e1"
+    },
+    {
+      "claim_id": "28b4f9c3-5fb9-4a01-9b85-1fc7cc679ea5",
+      "result_id": "ccb93883-173d-4a03-97b2-daaadef69205"
+    },
+    {
+      "claim_id": "1f1736d1-88e0-49d3-a743-1914cfe15240",
+      "result_id": "ccb93883-173d-4a03-97b2-daaadef69205"
+    },
+    {
+      "claim_id": "f1d80230-89d0-47f1-b20c-e472a6a53496",
+      "result_id": "ccb93883-173d-4a03-97b2-daaadef69205"
+    },
+    {
+      "claim_id": "85c0f587-3df4-4047-9cc6-bb00bec656db",
+      "result_id": "ccb93883-173d-4a03-97b2-daaadef69205"
+    },
+    {
+      "claim_id": "def1fbe5-45d1-4d8e-993c-d9a9045ed3f8",
+      "result_id": "a4bfbff1-a32e-482e-b6a8-d517741d9516"
+    },
+    {
+      "claim_id": "fd0c5716-e169-4b1e-822c-288f0d369f05",
+      "result_id": "4f53d6ba-3041-4695-bd54-830cf8274db1"
+    },
+    {
+      "claim_id": "9e687518-24b6-42f7-a19d-d3c511f182f9",
+      "result_id": "5c7f59ee-108b-48b4-a3e8-4514e440667b"
+    },
+    {
+      "claim_id": "e2a6632f-c0cb-42da-9588-4d12175ee56e",
+      "result_id": "5c7f59ee-108b-48b4-a3e8-4514e440667b"
+    },
+    {
+      "claim_id": "e7da4bbf-3a86-489b-91b8-265b824cc146",
+      "result_id": "a4e07c0d-77a0-4c73-9e92-ad4a542e09a9"
+    },
+    {
+      "claim_id": "ce5c1bea-5bcc-4503-ae82-34101400d655",
+      "result_id": "a4e07c0d-77a0-4c73-9e92-ad4a542e09a9"
+    },
+    {
+      "claim_id": "81d6fdfc-072a-447e-83a3-f771e8f98f9f",
+      "result_id": "43187f63-44ee-4812-ab3a-cd4cec1ce844"
+    },
+    {
+      "claim_id": "555f8e34-8a4f-4eaf-985e-82b46e32794d",
+      "result_id": "43187f63-44ee-4812-ab3a-cd4cec1ce844"
+    },
+    {
+      "claim_id": "9eae8514-5ee2-4f6d-8b16-672a7fa05243",
+      "result_id": "21b021e0-2929-4149-b6e4-595e88e82089"
+    },
+    {
+      "claim_id": "90e662f5-21b1-4e36-a4df-801b038427ed",
+      "result_id": "21b021e0-2929-4149-b6e4-595e88e82089"
+    },
+    {
+      "claim_id": "039b4a1a-8b1b-4320-9a63-06b387a4e43d",
+      "result_id": "6b84dbf0-dd34-4392-9669-cfdf3ba12c80"
+    },
+    {
+      "claim_id": "61138828-4204-471d-95ad-2d653b2b37d4",
+      "result_id": "6b84dbf0-dd34-4392-9669-cfdf3ba12c80"
+    }
+  ],
+  "comparisons": []
+}

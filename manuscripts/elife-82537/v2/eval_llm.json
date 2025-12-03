@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Single-cell RNA sequencing of alveolar bone from healthy and AP mice identified 15 distinct cell populations with significant changes in cellular composition during AP. T cells, B cells, NK cells, macrophages, epithelial cells, and MSCs increased in frequency, while neutrophils, myeloid progenitors, monocytes, megakaryocytes, mast cells, HSCs, and dendritic cells decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are well-supported by the scRNA-seq data showing 15,148 cells analyzed (C12), 15 distinct clusters identified (C13), and statistically significant frequency changes between AP and control samples (C14-C15) as shown in Figures 1 and 2A. The computational methods are appropriate and the results are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Differential gene expression analysis revealed cell-type-specific inflammatory signatures during AP, including upregulation of pro-inflammatory genes (Cxcl2, Il1b, Tnf) in neutrophils, monocytes, and macrophages, alongside anti-inflammatory genes (Ifitm1, Ifitm2, Fcgr2b, Apoe) in monocytes and macrophages, and inflammatory-responsive genes in T and B lymphocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C40 are supported by single-cell differential expression analysis shown in Figures 2B-G. The data demonstrate cell-type-specific expression patterns with appropriate visualization. However, the functional significance of some genes (e.g., Ccrl2, Lars2) is inferred from literature rather than directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Pseudotime trajectory analysis revealed that monocytes differentiate into macrophages with progressive upregulation of osteoclastic genes (Ctsk, Acp5, Mmp9, Atp6v0d2, Dcstamp), leading to mature osteoclasts that contribute to inflammatory bone resorption during AP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by pseudotime analysis (Figure 3D-H) and bulk RNA-seq validation (Figure 3I). The trajectory analysis appropriately uses Monocle 2, and the findings are consistent with known osteoclast biology. GO enrichment analysis (C43) provides additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cell-cell interaction analysis revealed that AP is associated with an overall decrease in cellular interactions, but MSCs establish an enhanced self-supporting network and increased communication with mast cells and monocytes, mediated by ligands including Sele, Fn1, inflammatory proteins (Lgals9, Tnf, Ccl4), and growth factors (Tgfb1, Vegfb, Vegfa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 are supported by CellphoneDB and CrossTalkeR analyses (Figure 4A-G). The computational approaches are appropriate for inferring cell-cell interactions from scRNA-seq data. However, these are predicted interactions based on ligand-receptor expression patterns and lack experimental validation of functional communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The MSC population (1.76% of total cells) comprises four functionally distinct subclusters: MSC_OLCs (osteogenic), MSC_endothelial, MSC_neurological, and MSC_inflammatory. During AP, the MSC_inflammatory subcluster expands while the MSC_neurological subcluster is reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 are supported by clustering analysis (Figure 5A-C) and GO enrichment analysis (Figure 5\u2014figure supplement 2A). The identification of four MSC subclusters with distinct marker genes and functional enrichments is well-documented. The frequency changes during AP are statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Lineage tracing experiments in transgenic mouse models (Prrx1Cre, Sp7Cre, Gli1CreER, LeprCre) confirmed increased numbers of MSC_OLCs and PDLSCs in AP lesions, with upregulated expression of osteogenic markers (Sparc, Col1a1, Col1a2, Runx2) validated by qPCR, bulk RNA-seq, and immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C68-C72 are supported by multiple complementary approaches: lineage tracing (Figure 5E-H, Figure 5\u2014figure supplement 1A), qPCR (Figure 5\u2014figure supplement 3A), bulk RNA-seq (Figure 5\u2014figure supplement 3B), and immunofluorescence (Figure 5E-H). The convergence of evidence from different methodologies strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Pseudotime analysis of MSCs revealed a differentiation trajectory from MSC_endothelial cells toward MSC_OLCs and MSC_neurological cells, with MSC_inflammatory cells as an intermediate state. MSC_OLCs in state 3 exhibited the highest osteoblastic differentiation potential with upregulated osteogenic genes (Col1a1, Col1a2, Bglap, Spp1, Postn, Sparc), and this population significantly increased during AP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76, C105-C108 are supported by pseudotime analysis using Monocle 2 (Figure 6A-E). The trajectory analysis appropriately identifies differentiation states and gene expression dynamics. Statistical significance of frequency changes is demonstrated (Figure 6D). The findings are internally consistent with earlier expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C109"
+    ],
+    "result": "Human validation in alveolar bone samples from AP patients showed significantly enhanced expression of osteogenic markers (SPARC, COL3A1, RUNX2) by qPCR and more extensive distribution of SPARC, BGLAP, and RUNX2 by immunostaining, confirming higher osteogenic potential under AP conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78, C109 are supported by human sample analysis using qPCR (Figure 7A, n=4 control, n=10 AP) and immunofluorescence (Figure 7B-D, n=4). The translation from mouse to human strengthens the clinical relevance. However, the control sample size is small (n=4), and patient selection criteria could affect generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background claims establish that apical periodontitis is a common bacterial infectious disease affecting periapical alveolar bone, where MSCs play a primary protective role alongside inflammatory tissue destruction, with MSC markers observed in human periapical inflammatory tissues and MSC mobilization affecting lesion outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 are primarily background knowledge supported by appropriate citations (C3-C9, C11) or established facts (C1-C2, C10). These provide context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C19",
+      "C21",
+      "C25",
+      "C27",
+      "C29",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C41",
+      "C57",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Literature-based functional annotations describe the roles of identified genes and proteins, including neutrophil function (C16, C19, C82-C83), cytokine functions (C21, C25, C27, C29, C36), receptor functions (C33-C34), cell adhesion molecules (C57), Ifitm proteins (C84-C85), S100a8/a9 in MSCs (C86), and Sparc in bone biology and inflammation (C88-C94).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C94 (selected) are supported by appropriate citations to prior literature. These provide functional context for the genes identified in the study but are not novel findings. The citations appear accurate and relevant, though the authors acknowledge some functions (e.g., Ifitm in AP context) have not been directly assessed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C95"
+    ],
+    "result": "Integrative conclusions state that immune cells dominate the mandibular microenvironment, MSCs have the most interactions with themselves and immune cells under inflammatory conditions, MSCs differentiate toward osteogenic lineage cells to protect alveolar bone, and MSCs undergo osteogenesis with functions in bone matrix assembly and mineralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C95 are integrative conclusions supported by the collective data from cell composition analysis (C79), CellphoneDB/CrossTalkeR analysis (C80), and pseudotime/expression analysis (C81). C95 includes speculative language ('we believe') acknowledging it is an inference. These conclusions are reasonable given the data but represent interpretations rather than direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C103",
+      "C104"
+    ],
+    "result": "Clinical context claims describe MSC presence and function in periapical tissues, including MSC influx during revascularization procedures (C96-C97), MSC survival in inflammatory environments (C98), MSC marker expression (C99), CFU-F formation (C100), and correlation between MSC osteogenic potential and AP lesion healing (C103-C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100, C103-C104 are supported by appropriate citations to prior clinical and translational studies. These provide important clinical context for the study's findings but are not novel results. The citations appear relevant and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C110"
+    ],
+    "result": "Specific inferences highlight S100a8/a9 as a candidate marker for inflammatory-associated MSC state in AP (C87) and identify Sparc as the most upregulated marker in the MSC population from AP samples (C110).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C87 is a reasonable inference based on expression data (C101) and literature (C86), though explicitly acknowledged as speculative. C110 is supported by differential expression analysis of the MSC cluster. Both represent data-driven interpretations that could guide future research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The MSC_inflammatory subcluster showed higher proportion in AP with significantly increased S100a8/a9 expression, which is involved in Ca2+ binding during inflammatory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C101 is supported by frequency and expression analysis of MSC subclusters (Figure 5C). C102 is supported by citation to Wang et al., 2018. The functional significance of S100a8/a9 upregulation in this context is inferred from literature rather than directly tested.",
+    "result_type": "MAJOR"
+  }
+]

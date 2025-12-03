@@ -1,0 +1,1636 @@
+{
+  "submission": {
+    "id": "4a02f382-49d3-4248-ac85-58ac5a55c363",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:21:03.820872Z",
+    "updated_at": "2025-12-03T10:21:03.820872Z"
+  },
+  "content": [
+    {
+      "id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "submission_id": "4a02f382-49d3-4248-ac85-58ac5a55c363",
+      "content_type": "manuscript",
+      "content_text": "# Human interictal epileptiform discharges are bidirectional traveling waves echoing ictal discharges\n\n## Authors\n\n- Elliot H Smith<sup>1</sup> ([ORCID: 0000-0003-4323-4643](https://orcid.org/0000-0003-4323-4643)) \u2020\n- Jyun-you Liou<sup>3</sup> ([ORCID: 0000-0003-4851-3676](https://orcid.org/0000-0003-4851-3676))\n- Edward M Merricks<sup>2</sup> ([ORCID: 0000-0001-8172-3152](https://orcid.org/0000-0001-8172-3152))\n- Tyler Davis<sup>1</sup>\n- Kyle Thomson<sup>4</sup>\n- Bradley Greger<sup>5</sup>\n- Paul House<sup>6</sup>\n- Ronald G Emerson<sup>7</sup>\n- Robert Goodman<sup>8</sup>\n- Guy M McKhann<sup>9</sup>\n- Sameer Sheth<sup>10</sup>\n- Catherine Schevon<sup>2</sup> ([ORCID: 0000-0002-4485-7933](https://orcid.org/0000-0002-4485-7933))\n- John D Rolston<sup>1</sup> ([ORCID: 0000-0002-8843-5468](https://orcid.org/0000-0002-8843-5468)) \u2020\n\n### Affiliations\n\n1. Departments of Neurosurgery and Biomedical Engineering, University of Utah Salt Lake City United States\n2. Department of Neurology, Columbia University New York United States\n3. Department of Anesthesiology, Weill Cornell Medicine New York CIty United States\n4. Department of Pharmacology & Toxicology, University of Utah Salt Lake City United States\n5. Department of Bioengineering, Arizona State University Tempe United States\n6. Neurosurgical Associates, LLC Murray United States\n7. Hospital for Special Surgery New York United States\n8. Lenox Hill Hospital New York United States\n9. Department of Neurological Surgery, Columbia University Medical Center New York United States\n10. Department of Neurological Surgery, Baylor College of Medicine Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nInterictal epileptiform discharges (IEDs), also known as interictal spikes, are large intermittent electrophysiological events observed between seizures in patients with epilepsy. Although they occur far more often than seizures, IEDs are less studied, and their relationship to seizures remains unclear. To better understand this relationship, we examined multi-day recordings of microelectrode arrays implanted in human epilepsy patients, allowing us to precisely observe the spatiotemporal propagation of IEDs, spontaneous seizures, and how they relate. These recordings showed that the majority of IEDs are traveling waves, traversing the same path as ictal discharges during seizures, and with a fixed direction relative to seizure propagation. Moreover, the majority of IEDs, like ictal discharges, were bidirectional, with one predominant and a second, less frequent antipodal direction. These results reveal a fundamental spatiotemporal similarity between IEDs and ictal discharges. These results also imply that most IEDs arise in brain tissue outside the site of seizure onset and propagate toward it, indicating that the propagation of IEDs provides useful information for localizing the seizure focus.\n\n## Introduction\n\nWhile seizures are mostly unpredictable and rare, electrical recordings from people with epilepsy often show isolated epileptiform discharges between seizures (Alarcon et al., 1997; Jefferys and Avoli, 2012; Tatum et al., 2016). These IEDs are far more frequent, occurring up to several times per minute, and exhibit multidien variation in their frequency that correlates with seizure likelihood, making IEDs an attractive personalized biomarker for seizure risk (Baud et al., 2018). Beyond such temporal information about seizure occurrence, there is some evidence for overlap between cortical areas where seizures originate and those with more IEDs (Alarcon et al., 1997; Conrad et al., 2020; Marsh et al., 2010). Furthermore, some retrospective studies showed that removing brain areas with more IEDs improved surgical outcomes in patients with medically refractory epilepsy (Kim et al., 2010; Smart et al., 2012). Despite these findings, the long-debated relationship between IEDs and seizure generating tissue remains unresolved (Jefferys and Avoli, 2012; Paolicchi et al., 2000; Tonini et al., 2004; Vakharia et al., 2018).\n\nMicroelectrode array recordings in epilepsy patients have revealed the spatiotemporal features of ictal self-organization (Eissa et al., 2017; Martinet et al., 2017; Smith et al., 2020; Schevon et al., 2012; Smith et al., 2016). These studies reported two classes of recordings, one in which neuronal firing is recruited into the ongoing seizure, and another in which neuronal firing is relatively unaffected, despite seizure-like field potentials appearing on the same microelectrodes. These classes correspond to two dynamically evolving regions known as the ictal core and penumbra, respectively (Schevon et al., 2012). A slowly-propagating, narrow band of tonic action potential firing, the ictal wavefront (IW), delineates the transition between the core and penumbra (Martinet et al., 2015; Schevon et al., 2012; Trevelyan et al., 2006; Trevelyan et al., 2007). These dynamic seizure regions exhibit distinct spatial features. The slowly traveling IW repetitively emits rapidly traveling ictal discharges backwards, toward the seizure core (Figure 1\u2014figure supplement 1, Figure 1\u2014video 1). These discharges occur following the passage of the ictal wavefront and have thus been termed \u2018post-recruitment\u2019 discharges (Smith et al., 2016). In some patients, earlier ictal discharges, termed \u2018pre-recruitment\u2019, are also emitted outward, toward the penumbra (Martinet et al., 2017; Smith et al., 2020; Smith et al., 2016). To avoid confusion between ictal discharges and interictal discharges, we will from here on refer to ictal discharges as seizure discharges (SDs).\n\nThe discovery of these spatiotemporal features of human seizure activity inspired a computational model designed to explain the neuronal underpinnings of seizure dynamics from biophysical principles (Liou et al., 2020). After several induced seizures in this model, the network produces spontaneous seizures and IEDs with spatiotemporal dynamics. One prediction of the model is that the repeated barrages of traveling synaptic activity during SDs eventually coopt mechanisms of synaptic plasticity, biasing local tissue to propagate IEDs in similar directions as SDs, that is in the opposite direction of the slow propagation of seizure expansion. In this study we test the resultant hypothesis that IEDs have a predominant direction of propagation, towards the site of seizure onset; opposite the direction of seizure expansion. We found that the data supported this hypothesis, and further, that in the majority of participants, IEDs traveled bimodally on a linear axis with predominant and auxiliary sub-distributions whose directions, speeds, and proportions echoing those of SDs. Finally, we directly quantified the extent to which IED directions could be used to predict SD directions.\n\n## Results\n\n### IED detection in human microelectrode array recordings\n\nTo examine the spatiotemporal propagation of IEDs, we used a multi-institutional dataset of Utah-style microelectrode array (UEA; 10 \u00d7 10 microelectrodes in 4 \u00d7 4 mm grid, penetrating 1 mm) recordings from 10 epilepsy patients (two female, \u00b5 \u00b1\u03c3 age: 29 \u00b1 5.24 years) undergoing monitoring for neurosurgical treatment of medically refractory epilepsy (clinical details in Appendix 1\u2014table 1). In order to capture seizures (2.2 \u00b1 1.6 seizures recorded per participant; 22 total), we recorded data continuously throughout the patients\u2019 monitoring periods (Figure 1A; 4.3 \u00b1 2.4 days per participant; 43 total). Searching through weeks\u2019 worth of microelectrode data, we detected 45,623 candidate IEDs across the 10 participants (4562.3 \u00b1 5171.7 per participant) using an IED detection algorithm designed for microelectrode recordings, that operated on features of IEDs based on the American Clinical Neurophysiological Society\u2019s definition, namely high-amplitude bursts of beta-range (20\u201340 Hz) local field potential (LFP) power occurring across multiple microelectrodes (Figure 1\u2014figure supplement 2; Appendix1 - algorithm 1) (Tatum et al., 2016). We evaluated the positive predictive value of the algorithm against the ratings of two clinician experts yielding a \u00b5 \u00b1\u03c3 precision of 0.86 \u00b1 0.04. Interrater reliability (Cohen\u2019s Kappa) was 44.9%, which is similar to that reported across a large multicenter study of IED ratings (Jing et al., 2020). Interrater reliability between the algorithm and board-certified neurologist was 61.1%. Using this algorithm, we detected an average of 0.43 \u00b1 0.51 IEDs per minute. The UEA enabled us to record both LFP data and multiunit action potential firing (MUA) across high-density spatial grid during each IED. These features of an example IED are shown in Figure 1C\u2013G.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig1-v3.jpg)\n\n**Figure 1.:** (A) A electron micrograph of an UEA and a picture of an UEA implanted next to an ECoG electrode. (B) A raster plot showing an example time course of semi-chronic microelectrode recording during an epilepsy patient\u2019s hospital stay. Each gray dot represents the time of one IED (y-axis is arbitrary). (C) An example IED recorded across microelectrodes. Each gray line is the same IED recorded on a different microelectrode. The mean IED waveform is overlaid in white. (D) Mean spectrogram of the IED shown in (C) across microelectrodes. (E) A temporally expanded view of the IED shown in (C) color coded by when the IED occurs. Black dots indicate the location of the IED negative peaks for each microelectrode. (F) A raster plot of IED-associated MUA firing for the same IED as in (C) and the same timescale shown in (F). (G) IED voltage minima timings, color-coded as in (E), superimposed across the footprint of the UEA. A white velocity vector derived from the multilinear regression model is also shown on the UEA footprint. (H) A polar histogram showing the distribution of all IED traveling waves from which the IED in (C) was taken. See Figure 2\u2014figure supplement 1 and Appendix 1-Algorithm 1 for IED detection and traveling wave classification details.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The schematic shows hypothesized dynamics for a two-dimensional brain area from which seizures originate in the ictal (A) and interictal (B) periods. (A) in the ictal period, the slowly outward propagating IW (thick dark blue line) is preceded by pre-recruitment discharges that propagate outwards from the IW (green lines) and post-recruitment discharges that propagate inwards from the IW (blue lines). (B) In the interictal period, periodic discharges propagate across the brain area, biased in directions established by the expansion of the seizure core.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Raster plot of IED detection times across UEA channels during a segment of data (approximately half an hour duration). (B) Mean IED waveforms for the retained detections shown in (A). These appear as rasters occurring across more than 10 channels in (A). (C) Recordings of a single IED across all microelectrodes. (D) Raster plot of IED-associated MUA firing. (E) Mean spectrogram across microelectrodes for the IED shown in (C). Prominent Beta power, upon which the detection algorithm operated, is clearly visible. (F) A scatter plot of the mean IED negative peak versus the median range of recorded voltages for each IED in one participant after rejecting outliers. (G) Mean IED waveform before amplitude rejection. (H) Mean IED waveform after IED rejection. (G) and (H) show that many large amplitude detections were also highly noisy.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Example IED recorded across microelectrodes. Each colored line represents the voltages recorded form a single microelectrode. (B) Scatter plot of IED extrema over time. Black dots show local minima and green dots show absolute minima. The weighted histogram of these points that was used to define the time window used for extrema detection is shown in gray. (C) Three-dimensional scatter plot of voltage minima timings plotted across the spatial footprint of the UEA. The plane from the multilinear regression model, regularized via least absolute deviation, is shown as a grid in spacetime colored by time of occurrence (earlier: black; intermediate: orange; later: yellow). (D) Scatter plot of IED extrema and slope line of the linear regression model projected into two dimensions. (E) Visual representation of the permutation test that was used to operationally define IED traveling waves. The true residual absolute deviation is shown in red and residual absolute deviations from spatially shuffled data are shown in black.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Example mean waveforms for traveling (orange) and non-traveling (blue) waves for a representative participant. (B) Scatter plots of betas for traveling wave regression models color coded as in (A).\n\n### IEDs propagate in predominant and auxiliary directions\n\nIn order to determine whether the detected IEDs were traveling waves, and to measure wave speeds and directions, we fit a plane to the timings of both IED voltage extrema and MUA event times measured on each microelectrode using multi-linear regression (Liou et al., 2017). IEDs with regression slopes that were significantly different from zero were classified as traveling waves (permutation test against a distribution of 1000 spatially permuted timings; Figure 1H, Figure 1\u2014figure supplement 3). Traveling wave speeds and directions were then derived from each significant model\u2019s slope. Based on this operational definition, 30,278 IEDs (3027.8 \u00b1 3190.0 per participant) were classified as traveling waves (66.4%). Example non-traveling IEDs and regression model betas are shown in Figure 1\u2014figure supplement 4.\n\nSummary statistics for the spatiotemporal features of IEDs are shown in Table 1. Mean IED speeds were on the same order as SDs before the passage of the ictal wavefront (Liou et al., 2017; Smith et al., 2016). Traveling waves were also detected from MUA, independent of LFP recordings, though at a slightly reduced rate (2215.7 \u00b1 3237.6 per participant; 22,157 total; 48.6%; $\u03c7^{2}$ = 2957, p < 0.05). This result was expected, as LFP is a more reliable signal to record, and action potential firing during IEDs has previously been shown to be remarkably heterogeneous, particularly in areas further from the seizure onset zone (Keller et al., 2010). That there were significantly more IED traveling waves in UEA recordings that were eventually recruited into the seizure core, further supports the idea that more firing, closer to the seizure onset zone improves reliability of traveling wave detection with MUA (McNemar Test, $\u03c7^{2}1=2957,$ p < $10^{-6}$). We therefore focus our analysis on IED traveling waves measured from LFP minima in order to understand IED propagation across participants.\n\n**Table 1.**\n Summary statistics for spatiotemporal features of the dataset.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Participant</th>\n      <th>Seizure class</th>\n      <th>N detected IEDs</th>\n      <th>N (%) traveling waves (LFP)</th>\n      <th>N traveling waves (MUA)</th>\n      <th>Median speed (cm/s)</th>\n      <th>Bimodal?</th>\n      <th>N seizures</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>recruited</td>\n      <td>1,761</td>\n      <td>1,567 (89.0)</td>\n      <td>640</td>\n      <td>20.9</td>\n      <td>yes</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>recruited</td>\n      <td>1,532</td>\n      <td>1,217 (79.4)</td>\n      <td>131</td>\n      <td>59.2</td>\n      <td>no</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>recruited</td>\n      <td>17,988</td>\n      <td>10,220 (56.8)</td>\n      <td>10,380</td>\n      <td>25.3</td>\n      <td>yes</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>recruited</td>\n      <td>2,806</td>\n      <td>1,429 (50.9)</td>\n      <td>284</td>\n      <td>63.7</td>\n      <td>yes</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>recruited</td>\n      <td>2,148</td>\n      <td>1,538 (71.6)</td>\n      <td>1,131</td>\n      <td>108.3</td>\n      <td>yes</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>recruited</td>\n      <td>3,502</td>\n      <td>3,143 (89.7)</td>\n      <td>2006</td>\n      <td>69</td>\n      <td>yes</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>penumbral</td>\n      <td>4,348</td>\n      <td>2,132 (49.0)</td>\n      <td>2,236</td>\n      <td>76.8</td>\n      <td>yes</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>penumbral</td>\n      <td>8,369</td>\n      <td>7,351 (87.8)</td>\n      <td>4,977</td>\n      <td>134.7</td>\n      <td>no</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>penumbral</td>\n      <td>834</td>\n      <td>296(35.5)</td>\n      <td>50</td>\n      <td>80.5</td>\n      <td>yes</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>penumbral</td>\n      <td>2,335</td>\n      <td>1,385 (59.3)</td>\n      <td>322</td>\n      <td>70.7</td>\n      <td>yes</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Totals</td>\n      <td></td>\n      <td>45,623</td>\n      <td>30,278</td>\n      <td>22,157</td>\n      <td></td>\n      <td></td>\n      <td>22</td>\n    </tr>\n  </tbody>\n</table>\n\nHaving determined the majority of IEDs met the criteria to be classified as traveling waves, we next sought to understand whether IEDs from each participant exhibited a predominant propagation direction. We therefore tested whether distributions of IED traveling wave directions deviated from a uniform circular distribution (Fisher, 1953), we found that each participant\u2019s IED traveling wave distribution exhibited a dominant direction (Figure 2A; Hermans-Rasson Tests, 1000 permutations, all p < 10\u20133). These results show that many IEDs are traveling waves with predominant, consistent directions of travel in each participant.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig2-v3.jpg)\n\n**Figure 2.:** (A) Polar histograms of IED traveling wave directions for all 10 participants. Each participant number is indicated in bold above and to the right of each histogram. (B) Classification index for bimodality of IED distributions across subjects. Criterion is indicated with a dashed line. (C) Difference in median angles of sub-distributions for bimodal IED distributions, with non-bimodal subjects omitted. See Figure 3 for bimodality classification details.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) An example IED distribution for one participant. (B) A distribution of the same number of directions sampled from the circular normal distribution with the same mean direction, and concentration parameter as the distribution in (A). (C) The first clustered distribution of angles from (A). (D) A distribution of the same number of directions sampled from the circular normal distribution with the same mean direction, and concentration parameter as the distribution in (C). (E) The second clustered distribution of angles from (A). (F) A distribution of the same number of directions sampled from the circular normal distribution with the same mean direction, and concentration parameter as the distribution in (C). (G) The permutation distribution of Kuiper test statistics comparing subsamples of angles from real IED distributions and circular normal distributions with the same parameters. The black line shows a gaussian fit to the distribution and colored lines represent the test statistics from the true data distributions. (H) A description of the classification rule for unimodal vs bimodal IED distributions.\n\nIn addition to a predominant direction common to all participants, many participants appeared to have a second, auxiliary, distribution of IED directions. We therefore fit each participant\u2019s IED distribution into a mixture of two circular normal sub-distributions (von Mises distribution). The mixture model was compared to a single von Mises distribution model by using permutation-based Kuiper tests (Figure 2\u2014figure supplement 1; see Materials and methods). IED traveling wave distributions were thus classified as bimodal in 8 of the 10 participants (Figure 2B). The mean and \u00b1s.d. angles between the two IED sub-distributions was 177.9 and 10.7 degrees, respectively (Figure 2C). These results show that IEDs also frequently propagate antipodally to their predominant direction, suggesting that IEDs may travel both directions on a linear track through a fixed recording site.\n\n### Spatial features of IED distributions echo ictal self-organization\n\nWe next sought to understand whether IED speed and direction related to the spatial self-organization of seizures. We hypothesize that spatial features of IED traveling waves would correlate with seizure propagation direction and those of seizure discharges. We therefore measured the spatial features of seizures first. Fast and slow spatial features of focal seizures were measured in both ictal LFP and MUA bands as in previous reports (Liou et al., 2017; Schevon et al., 2012; Smith et al., 2016). Both of these features were measured using the same multilinear regression framework used to measure IED speed and direction.\n\nFollowing previous reports with microelectrode arrays, we confirmed that seizures could be divided into two classes based on ictal recruitment: \u2018recruited\u2019 and \u2018penumbral\u2019 (see Materials and methods; Khodagholy et al., 2015; Martinet et al., 2017; Merricks et al., 2021). Recruited tissue exhibited a slow expansion of tonic neuronal firing, the ictal wavefront (Figure 3D\u2013E; Figure 3\u2014figure supplement 1A-D), followed by rapidly traveling SDs. Penumbral tissue showed neither an IW nor repetitive SDs associated with phase-locked firing (Figure 3\u2014figure supplement 1E-H). Six participants\u2019 microelectrode arrays were recruited into the ictal core (10 seizures; Figure 3A\u2013C), while the four remaining participants were penumbral (12 seizures).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig3-v3.jpg)\n\n**Figure 3.:** (A) Mean voltage recorded across the UEA at the start of a seizure. (B) Mean MUA firing rate across microelectrodes. (C) A raster plot ordered by time of recruitment and color coded to show the IW (blue) and ictal core (\u201crecruited\u201d, pink). (D) Slow firing rate dynamics on each microelectrode colored by time of maximum firing rate. (E) Times of maximum firing rate on each microelectrode superimposed on the footprint of the UEA, color-coded as in (D). (F) A polar histogram of IEDs and the direction of the IW. (G) Polar histograms showing probability densities of IEDs and SDs, and the direction of the IW. See Figure 4 for examples of classes of microelectrode array recorded ictal self-organization.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Mean LFP around the time of UEA recruitment for the \u2018recruited\u2019 category. Scale bar shows 10 s. (B) Mean MUA firing rate across the microelectrodes for the same time period shown in (A). (C) Raster plot of MUA event times for each microelectrode on the UEA sorted by recruitment time. (D) MUA firing rates on each microelectrode colored by order of recruitment from black to copper. (E) Mean LFP for a seizure in the \u2018penumbral\u2019 category. Scale bar shows 10 s. (F) Mean MUA firing rate across microelectrodes for the same time period shown in (E). (G) Raster plot of multiunit event times for each microelectrode. (H) Multiunit firing rates for each microelectrode colored by the timing of maximal firing during the seizure window. Note the lack of spatiotemporal organization in the \u2018penumbral\u2019 example.\n\nAs predicted by our theoretical work (Liou et al., 2020), similar patterns of IED and SD propagation were apparent in the majority of seizures in participants with \u2018recruited\u2019 seizures. The majority of IEDs travelled opposite the direction of seizure expansion (i.e. the IW; direction difference from IEDs = 148.9 \u00b1 17.2 degrees; median tests between IW and IED distributions, all p < 0.05; Figure 3F). Moreover, IEDs traveled in similar directions as SDs in these participants (example in Figure 3G; mean \u00b1 s.d. angle difference across participants = 23.7 \u00b1 33.7 degrees). Direction distributions for IEDs, SDs, relative to the direction of the ictal wavefront are shown for all \u2018recruited\u2019 participants in Figure 4A\u2013F, and direction summaries for these participants are shown in Figure 4G\u2013H (raw directions shown in Figure 4\u2014figure supplement 1). In the \u2018penumbral\u2019 category, where the tissue under the UEAs were not obviously recruited from adjacent cortex as in the \u2018recruited\u2019 category, we could not reliably detect or measure the direction of seizure expansion.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig4-v3.jpg)\n\n**Figure 4.:** (A\u2013F) Each lettered subpanel corresponds to one participant. Each polar histogram corresponds to one seizure. IED distributions are shown in gray and SD distributions are shown in black. Both IED and SD distributions are plotted relative to the direction of the IW (blue line). See Figure 5 for raw IED, SD, and IW directions. (G) Direction difference summaries for each seizure ordered and color coded as in (A\u2013F). Dots indicate median directions and lines indicate standard deviations. (H) Median and standard deviation IED direction summaries relative to median SD directions. See Figure 5 for raw IW, IED, and SD directions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013F) Each lettered subpanel corresponds to one participant. Each polar histogram corresponds to one seizure. Gray histograms show IED distributions. Black histograms show SD distributions, and blue lines show the directions of IWs. (G) Direction summaries for each seizure ordered and color coded as in (A\u2013F). Dots indicate median directions and lines indicate standard deviations.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** For each patient, a schematic of the implanted grid (in a green rectangle) and MEA (gold; omitted for mesial temporal onset seizures) is shown with the IED distribution rotated to roughly match the orientation of the MEA derived from the intraoperative photos. The epileptogenic zone is indicated with pink ECoG electrodes in the schematics. An implant map is also shown for neocortical onset seizures.\n\nIn order to directly quantify information about the full distribution of SDs that is gained from observing IEDs, we measured the Kullback-Leibler Divergence (KLD) between IED and SD distributions for each participant. The \u00b5 \u00b1 \u03c3 KLD across these 10 seizures was 0.66 \u00b1 0.56, and are shown next to each pair of distributions in orange in Figure 4. The KLD values between IED and SD distributions were all significantly greater than would be expected to occur by chance in each patient (permutation tests, all p < 0.01). These results indicate that less than one extra bit of information is needed to encode the direction of SDs with IEDs on average, suggesting that IED directions could be used to accurately predict SD directions.\n\n### Spatial features of IED sub-distributions predict those of SD sub-distributions\n\nFinally, we sought to further understand geometric features of bimodal IED distributions and how they related to patterns of SD propagation. Such an understanding was only relevant for the \u2018recruited\u2019 participants with bimodal IED distributions (five participants, seven seizures). Using the same bimodality classification strategy as for IEDs, we found that five of the seven these seizures in these participants exhibited bimodal SD distributions, with similarly antipodal sub-distribution directions (Figure 5A\u2013B; \u00b5 \u00b1 \u03c3 angle difference = 135.2 \u00b1 24.6). Only participants with bimodal IED distributions had bimodal SD distributions, and only one participant, who had the least bimodal IED distribution, did not have clearly bimodal SDs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig5-v3.jpg)\n\n**Figure 5.:** (A) Example IED sub-distributions from one participant. (B) Example SD sub-distributions from the same participant as in (A). Numbers of IEDs in each sub-distribution are displayed in the color of each sub-distribution. (C) Mean IED waveforms from each sub-distribution, color coded as in (A). (D) Mean firing rates from each IED sub-distribution, color coded as in (A). (E) Scatter and box plots for IED and SD propagation speeds, separated by sub-distribution across subjects, and color coded as in (A-B). Boxes indicate median, quartiles, and whiskers indicate 1.5 times the interquartile range. Speeds greater than 350 cm/s are not shown for display purposes. Asterisks indicate significant differences (p < 0.05). (F) Distribution summaries for IED and SD traveling wave directions, separated by sub-distribution across subjects, and color coded as in (A-B). For the two participants with more than one seizure (P4, P6), each seizure is shown separately in (E) and (F).\n\nIn order to determine whether IEDs in each sub-distribution came from neurophysiologically distinct IED populations, we tested for differences between IED waveforms and firing rates between IED sub-distributions. Such differences might indicate that each IED sub-distribution reflected a separate population of IEDs propagating across the footprint of the UEA. However, neither firing rates nor IED waveforms differed between IED sub-distributions (Figure 5C\u2013D; cluster-based permutation tests, all p > 0.05), indicating that neither IED waveforms nor firing rates between the two sub-distributions could be statistically distinguished.\n\nDifferences between speeds and proportions of IED sub-distributions, corresponding to those we previously showed in SD sub-distributions (Smith et al., 2016), would support a learned relationship between IEDs and SDs, as predicted by the centripetal pattern of learning in the theoretical model (Liou et al., 2020). To address this question, we tested for differences in speed and relative size of SD and IED sub-distributions. Speeds were significantly different between IED sub-distributions within each participant (Figure 5E; Mann-Whitney U, all p < 10\u20134). Speeds were also significant between SD sub-distributions in five of the seven seizures (Figure 5E; Mann-Whitney U, p < 0.04 in five seizures; p > 0.62 in two seizures). Finally, the proportion of IED directions in each sub-distribution predicted the direction of each SD sub-distribution in four of the five participants (two sample proportion tests, \u03c72 > 347.6, p < 10\u20136). More pre-recruitment discharges occurred in a fifth patient with nearly equivalent proportions of IEDs across sub-distributions. Importantly, the directions of significant differences in these spatial features corresponded across IED and SD sub-distributions. These results show that when IED and SD distributions were bimodal, their spatial features were similar, underscoring the extent to which IEDs mimic spatiotemporal features of ictal self-organization.\n\n## Discussion\n\nOur results, using microelectrode array recordings in patients with epilepsy, show that IEDs are traveling waves that echo \u2013 and are predictive of \u2013 the propagation patterns of SDs, along a parallel axis to the direction of expansion of the seizure core. It is likely that the frequent barrages of coordinated activity seen during seizures\u2014SDs\u2014potentiate propagation pathways through neocortex that are revisited during IEDs. This conclusion is corroborated by the predictions of our theoretical work, where a computational model incorporating spike-timing dependent plasticity and realistic connectivity between inhibitory and excitatory cells self-organized to produce IWs, SDs, and IEDs that echo through the pathways potentiated by the strong, repeated barrages of SD activity, antipodal to the IW direction (Figure 6; Liou et al., 2020; Nguyen et al., 2020). Therefore, these results suggest that IEDs originate from tissue immediately eccentric to the seizure core and propagate inwardly across the seizure onset zone, indicating their potential use for localizing the seizure source (Liou et al., 2020; Liou et al., 2019).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig6-v3.jpg)\n\n**Figure 6.:** A schematic of spatial features of ictal self-organization is shown on the left. Schematics illustrating the correspondence between spatial features (speed, directions, and proportion) of IEDs and SDs is shown on the right.\n\nThe empirical results reported here extend our understanding of the geometric properties of epileptic tissue, beyond the model predictions, in showing that IEDs travel largely bidirectionally on a linear axis. The bidirectional propagation of IEDs is similar to the bidirectional traveling waves we have previously observed during seizures (Liou et al., 2017; Smith et al., 2016). The bidirectional pattern of traveling waves during seizures emanated from a slowly expanding, motile source of ictal activity\u2014the IW\u2014passing through a fixed recording site (Smith et al., 2016). The data presented here show that IEDs travel in similarly oriented, bimodal distributions, even in the absence of an IW or ictal self-organization.\n\nThe IED directions we report are not perfectly antipodal to the IW. These differences in mean angles may be due in part to error when fitting a plane to the IW, which discounts the propagating wave\u2019s curvature, or biological variability, such as changes in brain state and arousal. Furthermore, much of the deviation in the summary statistics is driven by one participant (P3). Rigorous statistical analysis of cluster bimodality, the resulting mean angles from that analysis, and KLD between IEDs and SDs all support the major result of the paper, that IEDs and SDs travel bidirectionally along a similar path. The dominant direction of travel is largely in the opposite direction of seizure expansion.\n\nThe theoretical model predicted that the directional preferences of IEDs were learned from SDs via spike-timing dependent plasticity (Bi and Poo, 1998). While we cannot address the specific learning mechanism with this dataset, in participants whose UEAs were recruited into the seizure core from adjacent cortical tissue, we showed correspondences between several spatial properties of IEDs and SDs. The speeds, directions, and relative sizes of IED sub-distributions echoed those of SDs. Moreover, predominant IED and SD directions opposed the directions of the ictal wavefronts in \u2018recruited\u2019 UEAs. These relationships were unable to be determined from UEAs that were not recruited into the seizure core (\u2018penumbral\u2019 recordings). Together, these results suggest that spatiotemporal biases exist in epileptic tissue. Whether spatiotemporal biases in IEDs arise from learning during SDs or vice versa remains to be determined. While the theoretical model indicates that several seizures must occur before IEDs begin to form, electrographic discharges, similar to IEDs, often appear before seizures in animal models of epilepsy (Staley et al., 2011).\n\nWhile we show that the majority of IEDs are traveling waves whose directions overlap with those of SDs, it is important to recognize the small spatial scale of the recordings analyzed here. Beyond the small area of brain we recorded from, there is some sampling bias inherent in these recordings, as we sought to place the microelectrode arrays as close to the site of seizure onset as possible, and within the area of resection. Additional, more eccentric populations of IEDs could be propagating from distant areas that are connected to the seizure onset zone, though not necessarily from adjacent tissue on the cortical surface (Gelinas et al., 2016). Higher density ECoG that spans a larger cortical territory than the UEA would be useful in gaining more context on where IEDs arise, and how IEDs propagate across the cortical surface. On the other hand, there is currently no evidence that the ictal wavefront can be detected without action potential recordings, though the time of seizure recruitment can be roughly estimated on each ECoG electrode from high-frequency LFP (Smith et al., 2020; Weiss et al., 2013). Precise IED propagation patterns are also difficult to measure with the relatively low sampling density of ECoG, and minor shifts in the relative orientation of the ECoG grid and microelectrode array could impugn the accuracy of comparing traveling wave directions between the two modalities. Animal studies using calcium indicators capable of imaging neuronal activity across large cortical territories may overcome these limitations (Liou et al., 2019; Wenzel et al., 2017). Such animal studies are also poised to understand how learning and plasticity contributes to the geometric relationships reported here.\n\nWhile these MEA recordings inform fundamental geometric relationships between IED propagation and ictal self-organization, several MEAs flanking the seizure onset zone may be required to accurately triangulate the SOZ from traveling wave directions. Additional spatial context may also inform our understanding of \u2018penumbral\u2019 tissue and its relevant spatial biases (Smith et al., 2020). Future work will therefore focus on translating these microelectrode array results to a more clinically relevant spatial scale. For example, using ECoG (Khodagholy et al., 2015Khodagholy et al., 2015; Viventi et al., 2011) with vector field or convolutional methods (Muller et al., 2016), or examining propagation of source-localized IEDs in stereo-EEG along white matter tracts. Such approaches will be useful for linking the micro results reported in this paper to the coarser spatial resolutions and broader coverages encountered with typical intracranial recordings. Recordings with a broader spatial scale could also inform how IEDs propagate in a larger epileptic network, including patients whose seizures have a common onset site: the mesial temporal lobe (MTL). Three of the participants in this study (P1, P2, and P3) were classified as having MTL seizure onsets from their clinical reports, yet still exhibited similar IED and SD traveling wave dynamics. Despite MTL onsets, these patients\u2019 seizures spread to the lateral temporal cortex, and eventually to the microelectrode array site in all three cases. We would speculate that this lateral seizure spread in neocortex could establish similar spatiotemporal biases to those in the other patients, yet a more widespread recording technology with higher resolution than ECoG may be required to full reveal the dynamics of MTL to neocortex seizure spread. It is noteworthy that two of these patients had larger differences between median IED and SD direction distributions than the others. Integrating these multi-scale geometrical understandings of how IEDs relate to the seizure onset zone could then provide an additional piece of information to inform diagnosis and treatment of medically refractory epilepsy, and potentially enable localizing the seizure source without having to directly observe seizures.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>https://www.mathworks.com/products/matlab.html</td>\n      <td>SCR:001662</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NPMK</td>\n      <td>https://github.com/BlackrockNeurotech/NPMK (Torab, 2014)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IED analysis code</td>\n      <td>https://github.com/elliothsmith/IEDs (Smith, 2022)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Circular statistics toollbox</td>\n      <td>https://github.com/circstat/circstat-matlab (Berens et al., 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>fitmvmdist</td>\n      <td>https://github.com/chrschy/mvmdist</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>hrtest</td>\n      <td>https://github.com/cnuahs/hermans-rasson (Cloherty, 2020)</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Participants, ethics statement, and data\n\nThe data for this study were acquired from Utah-style microelectrode arrays (UEAs) that were implanted in 10 human patients across two surgical sites who were undergoing neurophysiological monitoring for surgical treatment for medically refractory seizures. Clinical details for all participants are shown in Appendix 1\u2014table 1. The Institutional Review Boards at the University of Utah (IRB_00114691) and Columbia University Medical Center (IRB-AAAB6324) approved these studies. All participants provided informed consent prior to surgery for implantation of the clinical electrocorticography (ECoG) electrodes and UEA (10 \u00d7 10 electrodes in 4 \u00d7 4 mm, penetrating 1 mm). Methodological details of surgical implantation of UEAs into human epilepsy patients area described in detail in House et al., 2006. During implantation of ECoG electrodes, UEAs were pneumatically inserted into areas that were most likely to be in the seizure onset zone, and therefore most likely to be resected. Electrophysiological data were pseudodifferentially amplified by 10 and acquired at 30 kilosamples per second using a neural signal processing system (Blackrock Microsystems, Salt Lake City, UT) semi-chronically, that is throughout the duration of the participants\u2019 hospital stays. Patients were weaned off their antiepileptic medication during that time, as dictated by their individual clinical courses. Throughout the manuscript, numerical quantities are presented as mean \u00b1 standard deviation (\u00b5 \u00b1\u03c3).\n\n### IED detection and signal processing\n\nIn order to detect IEDs from continuous data recorded on each UEA channel, we developed a simple algorithm for detecting IEDs across a microelectrode array (Appendix 1 - Algorithm S1). For each channel on each UEA, we first resampled the data at 400 samples per second and zero-phase filtered the data between 20 and 40 Hz using a fourth-order Butterworth filter. We then detected any peaks in the absolute amplitude of this signal that were greater than eight times the standard deviation of the remainder of the recording segment (2-hr median duration; Figure 1\u2014figure supplement 3A). In order to remove redundant detections, those following any other detection by less than 250ms were discarded. Only detections that occurred within the same 250ms window across at least 10 electrodes on the UEA were retained for further analysis (Figure 1\u2014figure supplement 3B). Spectrograms of IEDs were generated via the continuous wavelet transform following the methods used in Schevon et al., 2012; Smith et al., 2020, and colored with the turbo color map (Mikhailov, 2021).\n\nMultiunit action potentials (MUA) were detected on each microelectrode by filtering each channel between 0.3 and 3 kilohertz and detecting peaks in the filtered signal less than \u20134 times its root mean square. The times of these peaks were retained for further analysis. Example retained detections are shown in Figure 1\u2014figure supplement 3C,E.\n\nWe employed several post-detection processing steps to ensure the quality of this expansive data set and reject artifacts. First, temporally outlying voltage extrema were removed in order to constrain extrema detection into a temporally focused window (approximately 50 ms duration) around the time of IED detection and to exclude broken microelectrodes or those without IED signal. Next, we excluded any discharges with outlying amplitudes, defined as double the interquartile range of the distribution of IED voltage ranges (Figure 1\u2014figure supplement 3F,G).\n\nIn order to validate the detection algorithm\u2019s ability to detect real IEDs, we calculated the algorithm\u2019s positive predictive value (precision) against ratings of experienced clinicians (C.A.S. and J.D.R.) on a dataset of 78 random IED detections, including 9 of those that did not pass our post-detection quality assurance steps described in the previous paragraph. Algorithmic positive predictive value (precision) was defined as the ratio of the number of true positive detections to the number of total positive detections. Cohen\u2019s Kappa was also calculated to evaluate inter-rater reliability against chance.\n\n### Traveling wave measurement\n\nIn order to measure IED traveling wave speed and direction, we fit a plane to the timings of IED voltage minima, and MUA event times, using ordinary multilinear regression, regularized via the absolute deviation of the signal (Figure 1\u2014figure supplement 4). This methodology is described in detail and validated for measuring traveling waves during ictal discharges in Liou et al., 2017. Briefly, the regression model for each IED yielded three coefficients, describing the best-fit plane to the timing of IEDs across the UEA in spacetime. Traveling wave direction was determined by the gradient direction of the plane and speed was defined as the inverse of that gradient norm. Each IED was operationally defined as a traveling wave if its model significantly deviated from a plane with zero slope. Statistical significance for this measure was determined by a permutation test in which the model was reevaluated 1,000 times with the microelectrode spatial locations randomly permuted. Differences in IED speed across and within participants were tested using a two-way Kruskal-Wallis Test with a participant factor (10 levels; one for each participant) and a signal factor in which the two levels were the speed measurements derived from LFP and MUA. Only MUA times from 50ms before and after the median time of the LFP negative peak were included in the regression model (Liou et al., 2017). Post-hoc pairwise comparisons were carried out using Dunn\u2019s test (Dunn, 1964). The significance criterion was chosen as 0.05 for all of these tests.\n\n### Directional statistics\n\nPolar histograms were plotted using 18 bins. Circular normal distributions were fit using the circular statistics toolbox (Berens, 2009). These distributions defined by two parameters, \u03bc and \u03ba, which describe the central angle and concentration of the distribution, respectively. \u03bc and 1/\u03ba are analogous to the mean and variance parameters that define a standard normal distribution. Directional statistics were carried out using modified functions from the circular statistics toolbox (Berens, 2009). These modifications were such that statistical significance was evaluated using permutation tests from which p-values were derived by comparing the circular test statistic with a distribution of circular test statistics from 1000 permuted datasets. As an example, testing for differences between IED and SD means would involve comparing the test statistic from the true data to a distribution of 1000 test statistics in which the measurement categories were permuted. The significance criterion was chosen to be 0.05. Hypotheses that within-participant IED propagation directions were non-uniform, were tested with Hermans-Rasson tests of circular non-uniformity, again with 1000 permutations (Landler et al., 2018).\n\n### Bimodality and sub-distributions\n\nIn order to determine whether two, unimodal distributions better fit the ostensibly bimodal IED and SD distributions we observed, we first fit von Mises Mixture (vMM) Models to overall distributions of IED and SD directions using the Matlab function fitmvmdist (https://github.com/chrschy/mvmdist; Schymura, 2016). Overall IED direction distributions were then clustered into two component vMM distributions using the Matlab function cluster. We did not observe distributions that appeared to have more than two modes and therefore set an upper limit on the number of hypothesized clusters, $h$, at two. These vMMs yielded three parameters for each sub-distribution, $h\\inN$, such that $h\\leq2$: the sub-distribution means, $\\mu_{h}$ , concentration parameters, $\u03ba_{h}$ , and probability densities, $\\theta_{h}$ .\n\nRather than assuming these vMM models better fit overall IED and SD distributions, we assessed whether the overall distribution or each vMM sub-distribution better fit the distributions defined by $\\mu_{h}$ and $\u03ba_{h}$ . The permutation-based Kuiper tests used to assess goodness-of-fit were carried out as follows. We first estimated $\\mu_{h}$ , $\u03ba_{h}$ , and $\\theta_{h}$ for both the overall and vMM sub-distributions. We then carried out permutation-based Kuiper tests, to compare empirical distributions of 60 randomly sampled IED directions to theoretical circular normal distributions derived from $\\mu_{h}$ and $\u03ba_{h}$ from both the original and vMM sub-distributions. We repeated this procedure 1,000 times in order to create a permutation distribution. In this way, we were able to measure the extent to which randomly sampled IED angles deviated from theoretical circular distributions defined by the overall and vMM parameters. This is akin to cross-validating vM parameters and choosing $h$ corresponding to the highest log-likelihood, yet in a model-free way. Comparing Kuiper test statistics to a permutation distribution, rather than zero (the null hypothesis of a uniform distribution), makes the tests more conservative and allows us to determine whether the distribution cannot be determined to be non-normal (Louter and Koerts, 1970). We then defined our circular bimodality index as the minimum difference between the Kuiper test statistic for the overall distribution and each vMM sub-distribution. Positive bimodality indices thus indicated that overall traveling wave distributions were better modeled as two vMM sub-distributions, and negative bimodality indices indicated that overall traveling distributions were better modeled as a single von Mises distribution. The Matlab functions for implementing these classifications are highlighted in the online code repository.\n\n### Seizure characterization\n\nIn order to study the propagation patterns of IEDs relative to seizures, it was necessary to quantify spatial features of SDs and seizure expansion for each recorded seizure. These measures have also been described in previous publications (Smith et al., 2020; Schevon et al., 2012; Smith et al., 2020; Smith et al., 2016). The ictal wavefront (IW) is the slowly expanding edge of the seizure representing the spatial signature of failure of feedforward inhibition, and therefore defines recruitment of the tissue surrounding an electrode into the ictal core (Schevon et al., 2012). This biomarker of seizure recruitment and expansion has thus far only been detected with recordings of multiunit firing rates (Smith et al., 2016), although can also be detected on single microelectrodes by observing widening of action potential waveforms (Smith et al., 2020; Merricks et al., 2015). We followed methods from our previous manuscripts to generate multiunit firing rates, that is filtering the broadband data between 300 and 3000 Hz and detecting any peaks larger than the median absolute value of the signal divided by 0.6745 (Quiroga et al., 2004).\n\nTo find seizures, we examined time periods in the microelectrode array recordings that corresponded to the seizure times reported in the clinical monitoring reports and confirmed that the microelectrode array LFP exhibited the characteristic high amplitude, rhythmic discharging associated with seizures. We then looked for tonic multiunit firing spreading across the array that would suggest the presence of an ictal wavefront, and phase locked multiunit bursting associated with ictal discharges. We detected the ictal wavefront feature of seizures by smoothing the firing rates on each microelectrode with a 250 ms Gaussian kernel and fitting a multilinear regression model to the peaks of these slow firing rate estimates across the UEA (Liou et al., 2017; Smith et al., 2016). We detected ictal discharges by detecting peaks in multiunit firing rates, calculated with a 25 ms Gaussian kernel, as we have previously (Liou et al., 2017; Smith et al., 2016). We quantified the propagation direction and speed of ictal discharges using the same methods used to determine IED traveling wave speeds and directions, as in Liou et al., 2017. IED speeds and directions were measured in a manner that was blinded to each microelectrode array\u2019s recruitment classification. We defined the presence of ictal phase-locked firing with a Hermans-Rasson test of circular uniformity on MUA action potential times across microelectrodes relative to the phase of the mean LFP recorded across the UEA, similarly to Schevon et al., 2012. Using these measures, we operationally defined two patterns of ictal self-organization, based on observed patterns in these fast and slow spatial features of seizures: \u2018recruited\u2019 seizures were operationally defined as those with a significant ictal wavefront multilinear regression model and significant phase-locked multiunit firing (Figure 3\u2014figure supplement 1A-D). \u2018Penumbral\u2019 seizures were operationally defined as those seizures in which we were unable to detect an ictal wavefront on the microelectrode array (Fig Figure 3\u2014figure supplement 1E-H). Similar classifications of adjacent and non-adjacent recruitment have been reported by other groups (Martinet et al., 2015; Schevon et al., 2012). For seizures that were associated with secondary generalization, we only included discharges up to the clinically defined point of secondary generalization in order to constrain our study to the dynamics of focal seizure onset and spread.\n\n### Comparing IED and SD sub-distributions\n\nMean firing rates were estimated by binning MUA event times into one-hundred 10 ms bins across microelectrodes. For distributions that were determined to be bimodal, we used cluster-based permutation tests to test for differences between median IED waveforms and firing rates between IEDs from the two component vMM distributions for each participant. Permutation tests consisted of carrying out t-tests on each sample in the IED waveforms and each bin in the IED firing rates. The t-statistics for each sample or bin were then compared to permutation distributions of t-statistics for each sample or bin in which the sub-distribution labels were shuffled. If any of these p-values exceeded the specified alpha value of 0.05, we considered that sample significant, and included it with adjacent significant samples in a temporal cluster. In order to control for multiple hypothesis testing, we used cluster-based correction over temporal clusters. This procedure involved finding the largest temporal clusters of significant samples or bins in the permutation distributions and comparing those clusters to the largest temporal clusters of significant samples or bins in the real data.\n\nIn order to test for different directions of overall distributions and sub-distributions of IEDs and SDs, we used Watson-Williams multi-sample tests for equal means. To test for differences in IED speed between different sub-distributions, we used within-participant Mann-Whitney U tests. In order to test differences in the proportion of IEDs from predominant and auxiliary sub-distributions we used two-sample proportion tests. We employed a significance criterion of 0.05 for all of these tests.\n\nFinally, in order to directly quantify the reduction in uncertainty about the direction of SD travel that can be estimated from observing IED directions, we calculated the Kullback-Leibler Divergence (KLD) between distributions of IED and SD directions (Kullback and Leibler, 1951). We estimated the KLD as the expectation of the logarithmic difference between discrete distributions of IED and SD directions on the half-closed interval between 0 and 2\u03c0. We interpret the KLD as measuring the information that can be gained about SD directions from observing IED directions. We also tested for whether these KLD values were significantly greater than would be expected by chance by comparing the true KLD values against a distribution of 1000 KLD values generated from directions drawn at random from both IED and SD distributions.\n\n### Acknowledgements\n\nThanks to the Schevon and Rolston labs.\n",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "8333f68a-5252-4bba-91fb-baa268a704ef",
+      "submission_id": "4a02f382-49d3-4248-ac85-58ac5a55c363",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthew Shtrahman, University of California, San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73541.sa0](https://doi.org/10.7554/eLife.73541.sa0)\n\nThis manuscript describes the propagation patterns of electrical activity in the brains of patients with drug-resistant epilepsy. Specifically, the authors demonstrate that interictal spikes, commonly observed electrical events in epileptic patients, propagate in a similar manner to seizures, which are relatively uncommon and more difficult to capture. This suggests that interictal spikes could be used in surgical planning, improving the localization and treatment of epileptic networks.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Matthew Shtrahman, University of California, San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73541.sa1](https://doi.org/10.7554/eLife.73541.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Human interictal epileptiform discharges are bidirectional traveling waves echoing ictal discharges\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Huguenard as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Brian Litt (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nIf possible, please address all of the reviewer concerns discussed below. A summary of the essential revisions are listed here.\n\nEssential revisions:\n\n1)Please describe how you validated automated IED detections. If possible, please quantify the positive predictive value for this method for a random subset of IEDs.\n\n2) The angle between the SDs (ictal wavefronts) and IEDs was not identical (exactly opposed). In addition, the SD distributions were not exactly antipodal. Please address your interpretation of the data and whether SDs and IEDs follow the same path and what might account for the sizable angle between their observed paths.\n\n3)Please discuss the sizable proportion of IEDs (~35%) that were not classified as traveling waves.\n\n4)Please describe how seizures were defined.\n\n5)Please elaborate on the implications of antipodal IED distributions.\n\n6)Please provide more detail about how you quantified differences in the IED waveforms for the cluster-based permutation test.\n\n7) Please comment on whether the \"mixture\" von Mises distribution has more adjustable parameters than the single von Mises distribution model. If so, does this bias your quality of fit towards the bimodal distribution for IEDs?\n\n8) Please further clarify the terms used for the different discharges examined and\n\ndiscussed in the manuscript.\n\n9) Please compare IED propagation measured from the ECoG array to the IED propagation vector produced from the UEA.\n\n10) Please address whether the resulting surgical resections in recorded patients agreed with the axis predicted by the IED propagation measured by the UEA. If possible, please discuss whether the success of the surgery correlated with the UEA-predicted focus.\n\n11) Please comment on the relationship between the neocortical propagation measured by the UEA on the cortical surface and the ability to accurately localize deep foci such as in MTLE. How well does the bidirectional IED hypothesis apply to mesial temporal lobe seizures where the ictal onset is far from the neocortex?\n\n12) Please include whether patients were weaned from their AEDs during these recordings.\n\n13) Please discuss how the IED distributions for subjects with multiple seizures were calculated.\n\nReviewer #1 (Recommendations for the authors):\n\n1)How did you validate automated IED detections? Could you report on positive predictive values for a random subset of detections?\n\n2)You write in the abstract and discussion that IEDs traverse the same path as ictal discharges, but the angle between the SDs and IEDs was 24 degrees, and the IEDs weren't exactly opposite the ictal wavefront (150 degrees). Do you think the SDs and IEDs really follow the same path, and if so, what accounts for the sizable angle between their observed paths?\n\nReviewer #2 (Recommendations for the authors):\n\n1. The terminology used to describe the various types of epileptiform activity described in this paper should be laid out in a clear way from the beginning. Although many of the features are defined in prior work, they are critical to understanding the results. Specifically, the introduction of SDs focuses on their propagation following the IW, but \"pre-recruitment\" SDs are a prominently analyzed group in Figure 5. It would be helpful to include a schematic figure like that at the top left of 6A earlier in the paper. It may also be useful to define two types of SDs (anterograde and retrograde?), and include them on the schematic figure. Perhaps \"recruited\" and \"penumbral\" could be illustrated here as well (or in a separate subpanel).\n\n2. The prominent clinical relevance of the analysis presented in this manuscript is that IEDs could be used to locate the seizure focus in pre-surgical planning. As briefly indicated in the discussion, the UEA is likely too small to localize a seizure focus \u2013 it produces one vector, which at best could define the line along which the focus falls. To identify the seizure focus, greater spatial sampling is needed. The authors point out that the simultaneously recorded ECOG is insufficient to measure IW propagation as it cannot detect MUAs and its poor spatial sampling make estimation of IED propagation low-fidelity. Nevertheless, since LFP was used to record IED propagation in the UEA, it would be useful to analyze IED propagation from the ECoG array to compare the vector produced, particularly by neighboring electrodes.\n\n3. If the ECoG analysis fails to produce a vector that match the UEA vectors, it may be necessary to implant two UEAs. The intersection of the IED propagation vectors would hypothetically localize the seizure focus (in 2D). Obviously this experiment is outside the scope of this study, but worth mentioning in the discussion.\n\n4. Did the resulting surgical resections in recorded patients align with the axis predicted by the IED propagation at the UEA? Did the success of the surgery relate to the removal (or not) of the UEA-predicted focus?\n\n5. Synaptic connectivity is probably important determinant of whether vector points to focus. Furthermore, UEA recordings are performed on the cortical surface. In the most straightforward application of the proposed strategy, seizures would start on cortical surface and propagate locally. However, many seizures begin in deep structures. Some discussion of the relationship between neocortical propagation and localization of a deep focus (e.g. MTLE) is warranted.\n\n6. Were patients weaned from their AEDs during these recordings. One important advantage of analyzing IEDs vs seizures for surgical planning is that they are very common. Thus, it might be possible to perform the mapping in patients without having them in withdrawal from their AEDs, which might improve predictive value.\n\n7. In Figure 4A-F, for the subjects with multiple seizures, the IED distribution appears to be different for each seizure. What IED distributions are plotted \u2013 only those that had occurred up to the time of that seizure? Maybe I missed it, but I couldn't find this info in the results or figure caption\u2026\n\nReviewer #3 (Recommendations for the authors):\n\nThe Utah array is an excellent tool to study spatiotemporal dynamics in and around a seizure core. The strength of such a technique is unfortunately also the weakness. Since it is implanted on the cortex, the modeling of IED and seizure discharges has a potential for bias due to the location of the implant. The model can be strengthened by comparing the MUA and LFP of the model with their single-unit data of IEDs from hybrid electrodes of mesial temporal lobe implants. The authors do mention the limitation of their study, but it would help if they discuss this some more, especially since only two patients in Table S1 had mesial temporal onset and the rest were lateral or neocortical onsets. They should not generalize that this model is applicable to all seizure types.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Human interictal epileptiform discharges are bidirectional traveling waves echoing ictal discharges\" for further consideration by eLife. Your revised article has been evaluated by John Huguenard as the Senior Editor, and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe majority of reviewer concerns have been adequately addressed. However, there remain a few points that require clarification or additional submission materials. The Reviewing Editor has drafted this concise list to facilitate your revision.\n\nEssential revisions:\n\n1) Multiple reviewers raised the question regarding \"the sizable angle between\u2026 SDs and IEDs\" and the fact that the \"IEDs weren't exactly opposite the ictal wavefront\". You state that \"the angle discrepancies to which the reviewer refers are statistically insignificant and can be explained by expected biological variability\". On the other hand you state that based on Smith et al. 2016, you don't expect the IED to be strictly antipodal to IW. Finally, while the KLD analysis is useful it does not seem to fully address the reviewers' questions regarding what appears to be a (statistically) significant deviation (almost 2 standard deviations) of the IED/IW angle from 180 degrees. A single paragraph in the discussion summarizing and clarifying the various points of why SD, IEDs, and IWs may not be strictly aligned or antipodal would improve the manuscript.\n\n2) Regarding Reviewer 2, major point #7 \"In Figure 4A-F, for the subjects with multiple seizures, the IED distribution appears to be different for each seizure. What IED distributions are plotted \u2013 only those that had occurred up to the time of that seizure?\" The reviewer is asking why the shape of the distribution, and not just the rotation, of IED distribution varies for different seizures in the same patient. Are you analyzing/including a different subset of IEDs for each seizure? If so, why? If not, why does the distribution change?\n\n3) Regarding Reviewer 2, major point #2, we strongly suggest including the figure showing the \"qualitative information about the location of grids, arrays, and IED vectors\". We realize that there are a number of caveats and limitations in the interpretation of this qualitative figure that require further explanation, but including the figure would greatly enhance the clarity of the manuscript\n\n4) Please refer to https://submit.elifesciences.org/html/eLife_author_instructions.html#revised for instructions on how to submit source data for each figure. There do not seem to be source data included for the majority of figure plots. Also the data repository on OSF would greatly benefit from a description of the different data file types, the different variable types within the structures, and the sampling rate for the IED traces.\n",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7e4fb6cb-2964-4ef7-961d-ce8db47442c0",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C1",
+      "claim": "Interictal epileptiform discharges (IEDs) are large intermittent electrophysiological events observed between seizures in patients with epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Interictal epileptiform discharges (IEDs), also known as interictal spikes, are large intermittent electrophysiological events observed between seizures in patients with epilepsy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement presented in the abstract that characterizes IEDs based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "e9b3cc79-51d0-4674-b03d-12f87b26467c",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C2",
+      "claim": "IEDs occur far more often than seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Although they occur far more often than seizures, IEDs are less studied, and their relationship to seizures remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about the frequency of IEDs versus seizures, based on established clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "37b55849-8488-4d77-a8f6-dcf00de71add",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C3",
+      "claim": "The relationship between IEDs and seizures remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Although they occur far more often than seizures, IEDs are less studied, and their relationship to seizures remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of knowledge in the field prior to the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "5410c050-d511-405d-a7d7-bd82ea8ac9b0",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C4",
+      "claim": "The majority of IEDs are traveling waves.",
+      "claim_type": "EXPLICIT",
+      "source": "These recordings showed that the majority of IEDs are traveling waves, traversing the same path as ictal discharges during seizures, and with a fixed direction relative to seizure propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis of microelectrode array recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "84acd80a-1c9c-4028-b604-c0a7bd6ca1a5",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C5",
+      "claim": "IEDs traverse the same path as ictal discharges during seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "These recordings showed that the majority of IEDs are traveling waves, traversing the same path as ictal discharges during seizures, and with a fixed direction relative to seizure propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from comparing IED and seizure discharge propagation patterns in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "7785d3b5-6a12-4eee-a6b7-e923e2ba133e",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C6",
+      "claim": "IEDs have a fixed direction relative to seizure propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "These recordings showed that the majority of IEDs are traveling waves, traversing the same path as ictal discharges during seizures, and with a fixed direction relative to seizure propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the directional analysis of IEDs relative to seizure propagation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "98257e4c-5f4c-482b-9025-a4e22cb69941",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C7",
+      "claim": "The majority of IEDs are bidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the majority of IEDs, like ictal discharges, were bidirectional, with one predominant and a second, less frequent antipodal direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the bimodality analysis of IED direction distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "6ee840c4-a7c4-411b-9083-a7db8ecefc9c",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C8",
+      "claim": "Most IEDs arise in brain tissue outside the site of seizure onset and propagate toward it.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also imply that most IEDs arise in brain tissue outside the site of seizure onset and propagate toward it, indicating that the propagation of IEDs provides useful information for localizing the seizure focus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed directional relationship between IEDs and seizure expansion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "2f425f00-5a56-4c55-9adf-56d2700c4aaa",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C9",
+      "claim": "The propagation of IEDs provides useful information for localizing the seizure focus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also imply that most IEDs arise in brain tissue outside the site of seizure onset and propagate toward it, indicating that the propagation of IEDs provides useful information for localizing the seizure focus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clinical implication inferred from the study's findings about IED propagation patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "fd56c58f-26b3-4a35-961a-0a36fab47069",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C10",
+      "claim": "IEDs occur up to several times per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "These IEDs are far more frequent, occurring up to several times per minute, and exhibit multidien variation in their frequency that correlates with seizure likelihood, making IEDs an attractive personalized biomarker for seizure risk (Baud et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about IED frequency supported by established knowledge and citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "a98fb8ab-a6ee-45b7-93a2-a8af2c9d7e1d",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C11",
+      "claim": "IEDs exhibit multidien variation in their frequency that correlates with seizure likelihood.",
+      "claim_type": "EXPLICIT",
+      "source": "These IEDs are far more frequent, occurring up to several times per minute, and exhibit multidien variation in their frequency that correlates with seizure likelihood, making IEDs an attractive personalized biomarker for seizure risk (Baud et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "fe487a3b-181f-4c14-9d34-48d40608e84a",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C12",
+      "claim": "There is some evidence for overlap between cortical areas where seizures originate and those with more IEDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond such temporal information about seizure occurrence, there is some evidence for overlap between cortical areas where seizures originate and those with more IEDs (Alarcon et al., 1997; Conrad et al., 2020; Marsh et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "9483e140-56f7-472d-93a3-601c88d4a6ea",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C13",
+      "claim": "Some retrospective studies showed that removing brain areas with more IEDs improved surgical outcomes in patients with medically refractory epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, some retrospective studies showed that removing brain areas with more IEDs improved surgical outcomes in patients with medically refractory epilepsy (Kim et al., 2010; Smart et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous retrospective studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "3e559193-2a35-41c4-9579-87bdae8f1a59",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C14",
+      "claim": "The long-debated relationship between IEDs and seizure generating tissue remains unresolved.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these findings, the long-debated relationship between IEDs and seizure generating tissue remains unresolved (Jefferys and Avoli, 2012; Paolicchi et al., 2000; Tonini et al., 2004; Vakharia et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about the state of the field is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "5d0f170c-6f42-4f93-a285-7555615c7533",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C15",
+      "claim": "Microelectrode array recordings in epilepsy patients have revealed the spatiotemporal features of ictal self-organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Microelectrode array recordings in epilepsy patients have revealed the spatiotemporal features of ictal self-organization (Eissa et al., 2017; Martinet et al., 2017; Smith et al., 2020; Schevon et al., 2012; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous microelectrode array studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "dbcedcf5-c0e4-42a5-9643-ae6674f77d5e",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C16",
+      "claim": "Seizures exhibit two classes of recordings: one in which neuronal firing is recruited into the ongoing seizure, and another in which neuronal firing is relatively unaffected despite seizure-like field potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies reported two classes of recordings, one in which neuronal firing is recruited into the ongoing seizure, and another in which neuronal firing is relatively unaffected, despite seizure-like field potentials appearing on the same microelectrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on previous microelectrode array studies cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "de4b01a5-a688-4634-bd5a-e0a9fdbcd555",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C17",
+      "claim": "The two classes of seizure recordings correspond to two dynamically evolving regions known as the ictal core and penumbra.",
+      "claim_type": "EXPLICIT",
+      "source": "These classes correspond to two dynamically evolving regions known as the ictal core and penumbra, respectively (Schevon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research defining these regions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "2091f927-f16b-45d5-896b-3a4e0c7887d1",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C18",
+      "claim": "A slowly-propagating, narrow band of tonic action potential firing, the ictal wavefront (IW), delineates the transition between the core and penumbra.",
+      "claim_type": "EXPLICIT",
+      "source": "A slowly-propagating, narrow band of tonic action potential firing, the ictal wavefront (IW), delineates the transition between the core and penumbra (Martinet et al., 2015; Schevon et al., 2012; Trevelyan et al., 2006; Trevelyan et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "aa61e099-2892-46ea-b829-87be1e3bac4b",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C19",
+      "claim": "The slowly traveling ictal wavefront repetitively emits rapidly traveling ictal discharges backwards, toward the seizure core.",
+      "claim_type": "EXPLICIT",
+      "source": "The slowly traveling IW repetitively emits rapidly traveling ictal discharges backwards, toward the seizure core (Figure 1\u2014figure supplement 1, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by reference to figures showing this phenomenon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "d3e82816-169e-4222-b9fb-5c077c728f6c",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C20",
+      "claim": "Post-recruitment discharges occur following the passage of the ictal wavefront.",
+      "claim_type": "EXPLICIT",
+      "source": "These discharges occur following the passage of the ictal wavefront and have thus been termed 'post-recruitment' discharges (Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "8860a9b9-79d2-405b-bcf9-6233e81555e4",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C21",
+      "claim": "In some patients, earlier ictal discharges, termed 'pre-recruitment', are also emitted outward, toward the penumbra.",
+      "claim_type": "EXPLICIT",
+      "source": "In some patients, earlier ictal discharges, termed 'pre-recruitment', are also emitted outward, toward the penumbra (Martinet et al., 2017; Smith et al., 2020; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "e38e19f3-1fc6-43f5-ba49-2ce459edb2f8",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C22",
+      "claim": "A computational model was designed to explain the neuronal underpinnings of seizure dynamics from biophysical principles.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of these spatiotemporal features of human seizure activity inspired a computational model designed to explain the neuronal underpinnings of seizure dynamics from biophysical principles (Liou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to the computational modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "d6fc7ad3-47c8-445a-877d-4b6442dcb00c",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C23",
+      "claim": "After several induced seizures in the computational model, the network produces spontaneous seizures and IEDs with spatiotemporal dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "After several induced seizures in this model, the network produces spontaneous seizures and IEDs with spatiotemporal dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes results from the computational model cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "d8955c71-e724-4e59-98ed-13198cd19f2d",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C24",
+      "claim": "The computational model predicts that repeated barrages of traveling synaptic activity during seizure discharges eventually coopt mechanisms of synaptic plasticity, biasing local tissue to propagate IEDs in similar directions as seizure discharges.",
+      "claim_type": "EXPLICIT",
+      "source": "One prediction of the model is that the repeated barrages of traveling synaptic activity during SDs eventually coopt mechanisms of synaptic plasticity, biasing local tissue to propagate IEDs in similar directions as SDs, that is in the opposite direction of the slow propagation of seizure expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model that forms the hypothesis tested in this study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "efd510ff-520a-45a9-8caf-5449d41a04ce",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C25",
+      "claim": "The study tested the hypothesis that IEDs have a predominant direction of propagation, towards the site of seizure onset; opposite the direction of seizure expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we test the resultant hypothesis that IEDs have a predominant direction of propagation, towards the site of seizure onset; opposite the direction of seizure expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary hypothesis of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "365f629c-c783-494c-83fb-2320dc96c875",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C26",
+      "claim": "The data supported the hypothesis that IEDs have a predominant direction of propagation towards the site of seizure onset.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the data supported this hypothesis, and further, that in the majority of participants, IEDs traveled bimodally on a linear axis with predominant and auxiliary sub-distributions whose directions, speeds, and proportions echoing those of SDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "01988ff4-44c9-472c-b6e4-2f9db7c7a401",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C27",
+      "claim": "In the majority of participants, IEDs traveled bimodally on a linear axis with predominant and auxiliary sub-distributions whose directions, speeds, and proportions echo those of seizure discharges.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the data supported this hypothesis, and further, that in the majority of participants, IEDs traveled bimodally on a linear axis with predominant and auxiliary sub-distributions whose directions, speeds, and proportions echoing those of SDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "1d9db95e-ecf1-4cfa-a157-4e2198394e3d",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C28",
+      "claim": "The study used a multi-institutional dataset of Utah-style microelectrode array recordings from 10 epilepsy patients.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the spatiotemporal propagation of IEDs, we used a multi-institutional dataset of Utah-style microelectrode array (UEA; 10 \u00d7 10 microelectrodes in 4 \u00d7 4 mm grid, penetrating 1 mm) recordings from 10 epilepsy patients (two female, \u00b5 \u00b1\u03c3 age: 29 \u00b1 5.24 years) undergoing monitoring for neurosurgical treatment of medically refractory epilepsy (clinical details in Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "3c6fea5a-db1e-432b-ad6f-ed9e02d70ed2",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C29",
+      "claim": "The study recorded 2.2 \u00b1 1.6 seizures per participant (22 total).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to capture seizures (2.2 \u00b1 1.6 seizures recorded per participant; 22 total), we recorded data continuously throughout the patients' monitoring periods (Figure 1A; 4.3 \u00b1 2.4 days per participant; 43 total).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of the data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "ee526282-3cf5-4923-9d9d-408b8beea5b0",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C30",
+      "claim": "Data were recorded continuously for 4.3 \u00b1 2.4 days per participant (43 total).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to capture seizures (2.2 \u00b1 1.6 seizures recorded per participant; 22 total), we recorded data continuously throughout the patients' monitoring periods (Figure 1A; 4.3 \u00b1 2.4 days per participant; 43 total).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of the data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "c5276d9d-b2f7-4294-9b6e-a60fb9c92edc",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C31",
+      "claim": "The study detected 45,623 candidate IEDs across the 10 participants (4562.3 \u00b1 5171.7 per participant).",
+      "claim_type": "EXPLICIT",
+      "source": "Searching through weeks' worth of microelectrode data, we detected 45,623 candidate IEDs across the 10 participants (4562.3 \u00b1 5171.7 per participant) using an IED detection algorithm designed for microelectrode recordings, that operated on features of IEDs based on the American Clinical Neurophysiological Society's definition, namely high-amplitude bursts of beta-range (20\u201340 Hz) local field potential (LFP) power occurring across multiple microelectrodes (Figure 1\u2014figure supplement 2; Appendix1 - algorithm 1) (Tatum et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the IED detection algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "eda7f9f8-9185-42e0-92b1-926f159d0e25",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C32",
+      "claim": "The IED detection algorithm operated on features based on the American Clinical Neurophysiological Society's definition: high-amplitude bursts of beta-range (20\u201340 Hz) local field potential power occurring across multiple microelectrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Searching through weeks' worth of microelectrode data, we detected 45,623 candidate IEDs across the 10 participants (4562.3 \u00b1 5171.7 per participant) using an IED detection algorithm designed for microelectrode recordings, that operated on features of IEDs based on the American Clinical Neurophysiological Society's definition, namely high-amplitude bursts of beta-range (20\u201340 Hz) local field potential (LFP) power occurring across multiple microelectrodes (Figure 1\u2014figure supplement 2; Appendix1 - algorithm 1) (Tatum et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the algorithm design based on established clinical definitions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "d393af04-d5e7-4f20-8218-2775b43f9f9a",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C33",
+      "claim": "The positive predictive value of the IED detection algorithm against expert ratings was 0.86 \u00b1 0.04.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the positive predictive value of the algorithm against the ratings of two clinician experts yielding a \u00b5 \u00b1\u03c3 precision of 0.86 \u00b1 0.04.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative validation result for the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "2a74259e-2b92-46de-ab60-98606670eb14",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C34",
+      "claim": "Interrater reliability (Cohen's Kappa) between human experts was 44.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "Interrater reliability (Cohen's Kappa) was 44.9%, which is similar to that reported across a large multicenter study of IED ratings (Jing et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of interrater reliability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "959fda47-35a4-4b40-a55d-56b5d1b1a1c3",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C35",
+      "claim": "Interrater reliability between the algorithm and board-certified neurologist was 61.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Interrater reliability between the algorithm and board-certified neurologist was 61.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of algorithm-human agreement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "c0d69ab1-898f-4805-9cce-a98b40f5580b",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C36",
+      "claim": "The study detected an average of 0.43 \u00b1 0.51 IEDs per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this algorithm, we detected an average of 0.43 \u00b1 0.51 IEDs per minute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the IED detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "cae04202-8b81-4ad8-a6fc-57f67e03ab39",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C37",
+      "claim": "30,278 IEDs (3027.8 \u00b1 3190.0 per participant) were classified as traveling waves (66.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this operational definition, 30,278 IEDs (3027.8 \u00b1 3190.0 per participant) were classified as traveling waves (66.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the traveling wave classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "97f2c60f-bc4e-42c8-8867-c27bf059351e",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C38",
+      "claim": "Mean IED speeds were on the same order as seizure discharges before the passage of the ictal wavefront.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean IED speeds were on the same order as SDs before the passage of the ictal wavefront (Liou et al., 2017; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "084c6329-2f35-40ea-a5dd-830acf126a50",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C40",
+      "claim": "Action potential firing during IEDs has been shown to be remarkably heterogeneous, particularly in areas further from the seizure onset zone.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was expected, as LFP is a more reliable signal to record, and action potential firing during IEDs has previously been shown to be remarkably heterogeneous, particularly in areas further from the seizure onset zone (Keller et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "1e3da021-a081-4bf0-9aa1-9ec4fa1ebde9",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C42",
+      "claim": "Each participant's IED traveling wave distribution exhibited a dominant direction.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore tested whether distributions of IED traveling wave directions deviated from a uniform circular distribution (Fisher, 1953), we found that each participant's IED traveling wave distribution exhibited a dominant direction (Figure 2A; Hermans-Rasson Tests, 1000 permutations, all p < 10\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from circular statistics tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "47a1172f-e9b3-4ff1-a091-ee7713fb7cb2",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C43",
+      "claim": "IED traveling wave distributions were classified as bimodal in 8 of the 10 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "IED traveling wave distributions were thus classified as bimodal in 8 of the 10 participants (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the bimodality classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "ad8204b1-18ab-4726-a7a4-cdd6fe6c7a87",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C44",
+      "claim": "The mean and \u00b1s.d. angles between the two IED sub-distributions was 177.9 and 10.7 degrees, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean and \u00b1s.d. angles between the two IED sub-distributions was 177.9 and 10.7 degrees, respectively (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the bimodal distribution analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "3b1137a1-15ec-4e90-b76f-176f18b5b451",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C45",
+      "claim": "Six participants' microelectrode arrays were recruited into the ictal core (10 seizures).",
+      "claim_type": "EXPLICIT",
+      "source": "Six participants' microelectrode arrays were recruited into the ictal core (10 seizures; Figure 3A\u2013C), while the four remaining participants were penumbral (12 seizures).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a classification result from the seizure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "46992842-2753-41f0-9bde-880e92c7ce6e",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C46",
+      "claim": "Four participants' microelectrode arrays were penumbral (12 seizures).",
+      "claim_type": "EXPLICIT",
+      "source": "Six participants' microelectrode arrays were recruited into the ictal core (10 seizures; Figure 3A\u2013C), while the four remaining participants were penumbral (12 seizures).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a classification result from the seizure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "ed5d227e-767b-4dcb-8afc-199e651aad09",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C47",
+      "claim": "The majority of IEDs travelled opposite the direction of seizure expansion (direction difference from IEDs = 148.9 \u00b1 17.2 degrees).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of IEDs travelled opposite the direction of seizure expansion (i.e. the IW; direction difference from IEDs = 148.9 \u00b1 17.2 degrees; median tests between IW and IED distributions, all p < 0.05; Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the directional analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "d9ddcac9-b7b5-4ba4-adf1-c6064695422d",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C48",
+      "claim": "IEDs traveled in similar directions as seizure discharges in recruited participants (mean \u00b1 s.d. angle difference across participants = 23.7 \u00b1 33.7 degrees).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, IEDs traveled in similar directions as SDs in these participants (example in Figure 3G; mean \u00b1 s.d. angle difference across participants = 23.7 \u00b1 33.7 degrees).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the directional comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "6b245cda-e20a-4244-b55a-a59265fc9c3a",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C49",
+      "claim": "The mean Kullback-Leibler Divergence between IED and seizure discharge distributions was 0.66 \u00b1 0.56.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u00b5 \u00b1 \u03c3 KLD across these 10 seizures was 0.66 \u00b1 0.56, and are shown next to each pair of distributions in orange in Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the information-theoretic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "f47fc612-f773-4774-8434-4e7038c9a45f",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C50",
+      "claim": "The KLD values between IED and seizure discharge distributions were all significantly greater than would be expected to occur by chance in each patient.",
+      "claim_type": "EXPLICIT",
+      "source": "The KLD values between IED and SD distributions were all significantly greater than would be expected to occur by chance in each patient (permutation tests, all p < 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from permutation tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "22594c43-4195-4bad-b63a-b55e920432e0",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C51",
+      "claim": "Less than one extra bit of information is needed to encode the direction of seizure discharges with IEDs on average.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that less than one extra bit of information is needed to encode the direction of SDs with IEDs on average, suggesting that IED directions could be used to accurately predict SD directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the KLD results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "2327e848-65b1-4f4e-b29a-564d8846efa6",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C52",
+      "claim": "Five of the seven seizures in recruited participants with bimodal IED distributions exhibited bimodal seizure discharge distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same bimodality classification strategy as for IEDs, we found that five of the seven these seizures in these participants exhibited bimodal SD distributions, with similarly antipodal sub-distribution directions (Figure 5A\u2013B; \u00b5 \u00b1 \u03c3 angle difference = 135.2 \u00b1 24.6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the bimodality analysis of seizure discharges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "55eaeb3e-7c5a-4fcd-bf5c-6f627d4d2b9d",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C53",
+      "claim": "Only participants with bimodal IED distributions had bimodal seizure discharge distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Only participants with bimodal IED distributions had bimodal SD distributions, and only one participant, who had the least bimodal IED distribution, did not have clearly bimodal SDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the relationship between IED and SD bimodality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "265e91b1-9a4f-4dec-9e42-c63a0e2758eb",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C54",
+      "claim": "Neither firing rates nor IED waveforms differed between IED sub-distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither firing rates nor IED waveforms differed between IED sub-distributions (Figure 5C\u2013D; cluster-based permutation tests, all p > 0.05), indicating that neither IED waveforms nor firing rates between the two sub-distributions could be statistically distinguished.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from cluster-based permutation tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "801ff18e-d65c-4104-ab40-0d869d8a8869",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C55",
+      "claim": "Speeds were significantly different between IED sub-distributions within each participant.",
+      "claim_type": "EXPLICIT",
+      "source": "Speeds were significantly different between IED sub-distributions within each participant (Figure 5E; Mann-Whitney U, all p < 10\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from Mann-Whitney U tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "9aa305a5-9331-477d-bf9c-d636b4cd177e",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C56",
+      "claim": "Speeds were significant between seizure discharge sub-distributions in five of the seven seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Speeds were also significant between SD sub-distributions in five of the seven seizures (Figure 5E; Mann-Whitney U, p < 0.04 in five seizures; p > 0.62 in two seizures).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from Mann-Whitney U tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "252225cf-5dc0-46b4-a17b-022a573b1ae3",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C57",
+      "claim": "The proportion of IED directions in each sub-distribution predicted the direction of each seizure discharge sub-distribution in four of the five participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the proportion of IED directions in each sub-distribution predicted the direction of each SD sub-distribution in four of the five participants (two sample proportion tests, \u03c72 > 347.6, p < 10\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from proportion tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "c32f7383-8b25-47cd-bda0-83861283abc2",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C58",
+      "claim": "It is likely that the frequent barrages of coordinated activity seen during seizures\u2014seizure discharges\u2014potentiate propagation pathways through neocortex that are revisited during IEDs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the frequent barrages of coordinated activity seen during seizures\u2014SDs\u2014potentiate propagation pathways through neocortex that are revisited during IEDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings based on the observed correlations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "fad06c18-755d-4cb8-9ce5-c905d338ef96",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C59",
+      "claim": "The conclusion that seizure discharges potentiate propagation pathways is corroborated by predictions of computational modeling work.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is corroborated by the predictions of our theoretical work, where a computational model incorporating spike-timing dependent plasticity and realistic connectivity between inhibitory and excitatory cells self-organized to produce IWs, SDs, and IEDs that echo through the pathways potentiated by the strong, repeated barrages of SD activity, antipodal to the IW direction (Figure 6; Liou et al., 2020; Nguyen et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement connects the empirical findings to computational model predictions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "31ba5a3e-dbf5-4478-8855-32ec3b2cb8de",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C60",
+      "claim": "IEDs originate from tissue immediately eccentric to the seizure core and propagate inwardly across the seizure onset zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results suggest that IEDs originate from tissue immediately eccentric to the seizure core and propagate inwardly across the seizure onset zone, indicating their potential use for localizing the seizure source (Liou et al., 2020; Liou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed directional relationships.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "51513d2e-1a5c-4ad8-85f6-cb4dcd0cc85c",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C61",
+      "claim": "The empirical results extend understanding of epileptic tissue geometry by showing that IEDs travel largely bidirectionally on a linear axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The empirical results reported here extend our understanding of the geometric properties of epileptic tissue, beyond the model predictions, in showing that IEDs travel largely bidirectionally on a linear axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of a key finding that extends beyond model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "4d103180-419d-4417-8a3a-cbfdf561a085",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C62",
+      "claim": "The bidirectional propagation of IEDs is similar to the bidirectional traveling waves observed during seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "The bidirectional propagation of IEDs is similar to the bidirectional traveling waves we have previously observed during seizures (Liou et al., 2017; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "35eca9f6-d5d7-447f-b61d-940cabab76a8",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C63",
+      "claim": "The bidirectional pattern of traveling waves during seizures emanated from a slowly expanding, motile source of ictal activity\u2014the ictal wavefront\u2014passing through a fixed recording site.",
+      "claim_type": "EXPLICIT",
+      "source": "The bidirectional pattern of traveling waves during seizures emanated from a slowly expanding, motile source of ictal activity\u2014the IW\u2014passing through a fixed recording site (Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "a721c945-f439-489d-9693-7bfac37aac48",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C64",
+      "claim": "IEDs travel in similarly oriented, bimodal distributions, even in the absence of an ictal wavefront or ictal self-organization.",
+      "claim_type": "EXPLICIT",
+      "source": "The data presented here show that IEDs travel in similarly oriented, bimodal distributions, even in the absence of an IW or ictal self-organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "cb398ccc-ae78-41e1-b65f-5d92beaeb64c",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C65",
+      "claim": "The IED directions reported are not perfectly antipodal to the ictal wavefront.",
+      "claim_type": "EXPLICIT",
+      "source": "The IED directions we report are not perfectly antipodal to the IW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of variability in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "1f10d97a-3a92-4fae-998d-d6f8e212cd56",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C66",
+      "claim": "Differences in mean angles between IED and ictal wavefront directions may be due in part to error when fitting a plane to the ictal wavefront, which discounts the propagating wave's curvature, or biological variability.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences in mean angles may be due in part to error when fitting a plane to the IW, which discounts the propagating wave's curvature, or biological variability, such as changes in brain state and arousal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about sources of variability in the measurements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "bc1c7675-f0d4-46f5-acd2-b083007c4ce7",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C67",
+      "claim": "The theoretical model predicted that the directional preferences of IEDs were learned from seizure discharges via spike-timing dependent plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretical model predicted that the directional preferences of IEDs were learned from SDs via spike-timing dependent plasticity (Bi and Poo, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about model predictions supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "a1f79c41-8fba-41c8-817f-a7cff2bc4717",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C68",
+      "claim": "In participants whose microelectrode arrays were recruited into the seizure core, there were correspondences between several spatial properties of IEDs and seizure discharges.",
+      "claim_type": "EXPLICIT",
+      "source": "While we cannot address the specific learning mechanism with this dataset, in participants whose UEAs were recruited into the seizure core from adjacent cortical tissue, we showed correspondences between several spatial properties of IEDs and SDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the recruited participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "ad68a56a-df36-43d5-b96d-224708a4575d",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C69",
+      "claim": "The speeds, directions, and relative sizes of IED sub-distributions echoed those of seizure discharges.",
+      "claim_type": "EXPLICIT",
+      "source": "The speeds, directions, and relative sizes of IED sub-distributions echoed those of SDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the correspondence findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "8781ac90-0b9d-451e-b358-a212111ccfc9",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C70",
+      "claim": "Predominant IED and seizure discharge directions opposed the directions of the ictal wavefronts in 'recruited' microelectrode arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, predominant IED and SD directions opposed the directions of the ictal wavefronts in 'recruited' UEAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the directional analysis in recruited recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "28d2bef2-4f6a-43e8-a862-17fb4bf83067",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C71",
+      "claim": "These relationships were unable to be determined from microelectrode arrays that were not recruited into the seizure core ('penumbral' recordings).",
+      "claim_type": "EXPLICIT",
+      "source": "These relationships were unable to be determined from UEAs that were not recruited into the seizure core ('penumbral' recordings).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about limitations in the penumbral recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "5bb83d97-2671-400a-8654-af6a9ac15cdc",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C72",
+      "claim": "Spatiotemporal biases exist in epileptic tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that spatiotemporal biases exist in epileptic tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "b3616f06-93f5-47c9-b2a3-7b060858d579",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C73",
+      "claim": "Whether spatiotemporal biases in IEDs arise from learning during seizure discharges or vice versa remains to be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether spatiotemporal biases in IEDs arise from learning during SDs or vice versa remains to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation in determining causality.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "852ec2bd-dc2b-4672-875a-ab56899feeb3",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C74",
+      "claim": "The theoretical model indicates that several seizures must occur before IEDs begin to form.",
+      "claim_type": "EXPLICIT",
+      "source": "While the theoretical model indicates that several seizures must occur before IEDs begin to form, electrographic discharges, similar to IEDs, often appear before seizures in animal models of epilepsy (Staley et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to the model and animal studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "3ca35d67-79bc-45f5-a1e8-527343f07b7a",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C75",
+      "claim": "The majority of IEDs are traveling waves whose directions overlap with those of seizure discharges.",
+      "claim_type": "EXPLICIT",
+      "source": "While we show that the majority of IEDs are traveling waves whose directions overlap with those of SDs, it is important to recognize the small spatial scale of the recordings analyzed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding with acknowledgment of limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "d4f3a642-6946-4cbb-b58f-371abf7006ea",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C76",
+      "claim": "There is some sampling bias inherent in these recordings, as microelectrode arrays were placed as close to the site of seizure onset as possible, and within the area of resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the small area of brain we recorded from, there is some sampling bias inherent in these recordings, as we sought to place the microelectrode arrays as close to the site of seizure onset as possible, and within the area of resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a potential bias in the study design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "ef210b1b-d5cf-4eab-9165-5fef01701872",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C77",
+      "claim": "Additional, more eccentric populations of IEDs could be propagating from distant areas that are connected to the seizure onset zone, though not necessarily from adjacent tissue on the cortical surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional, more eccentric populations of IEDs could be propagating from distant areas that are connected to the seizure onset zone, though not necessarily from adjacent tissue on the cortical surface (Gelinas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about IED sources beyond the recording area, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "69fc5e3e-4e0d-4ced-a3d7-73563596e4a2",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C78",
+      "claim": "There is currently no evidence that the ictal wavefront can be detected without action potential recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, there is currently no evidence that the ictal wavefront can be detected without action potential recordings, though the time of seizure recruitment can be roughly estimated on each ECoG electrode from high-frequency LFP (Smith et al., 2020; Weiss et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "168daaa4-4827-45eb-ad14-3443050b337d",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C79",
+      "claim": "Precise IED propagation patterns are difficult to measure with the relatively low sampling density of ECoG.",
+      "claim_type": "EXPLICIT",
+      "source": "Precise IED propagation patterns are also difficult to measure with the relatively low sampling density of ECoG, and minor shifts in the relative orientation of the ECoG grid and microelectrode array could impugn the accuracy of comparing traveling wave directions between the two modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about technical limitations of ECoG recordings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "b8d96619-4202-438e-b082-aad1cb4c5d40",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C80",
+      "claim": "Animal studies using calcium indicators capable of imaging neuronal activity across large cortical territories may overcome limitations of current recording methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal studies using calcium indicators capable of imaging neuronal activity across large cortical territories may overcome these limitations (Liou et al., 2019; Wenzel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "f2691635-ff15-448b-ae64-bb0a55031f8e",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C81",
+      "claim": "Several microelectrode arrays flanking the seizure onset zone may be required to accurately triangulate the seizure onset zone from traveling wave directions.",
+      "claim_type": "EXPLICIT",
+      "source": "While these MEA recordings inform fundamental geometric relationships between IED propagation and ictal self-organization, several MEAs flanking the seizure onset zone may be required to accurately triangulate the SOZ from traveling wave directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about requirements for clinical application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "3c70eab3-36db-493e-be7c-d751b81ed0b4",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C82",
+      "claim": "Three of the participants (P1, P2, and P3) were classified as having mesial temporal lobe seizure onsets from their clinical reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the participants in this study (P1, P2, and P3) were classified as having MTL seizure onsets from their clinical reports, yet still exhibited similar IED and SD traveling wave dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of participant classifications from clinical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "dbc4f642-915f-4047-9357-128780bbd954",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C83",
+      "claim": "Despite mesial temporal lobe onsets, seizures in participants P1, P2, and P3 spread to the lateral temporal cortex, and eventually to the microelectrode array site in all three cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite MTL onsets, these patients' seizures spread to the lateral temporal cortex, and eventually to the microelectrode array site in all three cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about seizure propagation patterns in these participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "fadd4cb4-e255-4087-97f4-7fdda88bc9f9",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "claim_id": "C84",
+      "claim": "Two of the mesial temporal lobe onset patients had larger differences between median IED and seizure discharge direction distributions than the others.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that two of these patients had larger differences between median IED and SD direction distributions than the others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about variability in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "144762cd-b978-4f7a-a6dd-8e329efb8887",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study collected continuous microelectrode array recordings from 10 epilepsy patients over 4.3\u00b12.4 days, capturing 22 seizures and detecting 45,623 candidate IEDs using an algorithm with 0.86\u00b10.04 positive predictive value and 61.1% agreement with expert raters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C36 provide comprehensive methodological details about data collection and IED detection. The algorithm validation (C33-C35) shows reasonable performance, with interrater reliability (C34) comparable to published multicenter studies. The quantitative metrics are clearly stated and the detection rate (C36: 0.43\u00b10.51 IEDs/min) is consistent with clinical expectations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "d5e5334d-d45e-4c99-873d-5637a54d8268",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "66.4% of detected IEDs (30,278 total) were classified as traveling waves, with each participant showing a statistically significant dominant direction (p<10\u207b\u00b3). In 8 of 10 participants, IED distributions were bimodal with sub-distributions separated by 177.9\u00b110.7 degrees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C42-C44 present the core finding about IED directionality with appropriate statistical testing (Hermans-Rasson tests with permutations). The bimodality classification (C43) is supported by a rigorous permutation-based approach detailed in methods. The near-antipodal angle (C44: ~178\u00b0) strongly supports the linear axis interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "dc64288c-fd2a-4404-b55f-7f95419d770c",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In 6 participants with recruited microelectrode arrays (10 seizures), IEDs traveled opposite to seizure expansion (148.9\u00b117.2\u00b0 from ictal wavefront, p<0.05) and in similar directions to seizure discharges (23.7\u00b133.7\u00b0 difference).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 establish the key directional relationship between IEDs and seizure propagation in recruited tissue. The statistical significance (C47: median tests p<0.05) and quantitative angular measurements support the conclusion. However, the relatively large standard deviations (C47: \u00b117.2\u00b0, C48: \u00b133.7\u00b0) indicate substantial variability that the authors acknowledge in C65-C66.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "4eeab3fc-577f-4092-92e3-1c484dbe4fcd",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Kullback-Leibler Divergence between IED and seizure discharge distributions was 0.66\u00b10.56 (significantly greater than chance, p<0.01), indicating less than one bit of additional information is needed to encode seizure discharge directions from IED directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 provide information-theoretic quantification of the IED-SD relationship. The KLD analysis (C49-C50) is appropriately tested against permutation distributions. The interpretation (C51) correctly translates KLD values into predictive utility, though the relatively high standard deviation (\u00b10.56) suggests variable predictive power across participants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "ca85387e-479b-42ea-a622-6948225e41de",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In participants with bimodal IED distributions, 5 of 7 seizures showed bimodal seizure discharge distributions with antipodal sub-distributions (135.2\u00b124.6\u00b0 separation). IED and SD sub-distributions showed matching speed differences (p<10\u207b\u2074 for IEDs; p<0.04 in 5/7 seizures for SDs) and proportions (p<10\u207b\u2076 in 4/5 participants), but no differences in waveforms or firing rates (p>0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 demonstrate detailed correspondence between IED and SD spatial properties. The statistical tests are appropriate (Mann-Whitney U for speeds, cluster-based permutation for waveforms/firing rates, proportion tests). The lack of waveform/firing rate differences (C54) suggests the bimodality reflects directional rather than physiological distinctions. The correspondence in speeds and proportions (C55-C57) strongly supports the learned pathway hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "d4e11798-b4b5-4b15-91a7-777101862d87",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The majority of IEDs are traveling waves that traverse the same path as seizure discharges with fixed, predominantly bidirectional propagation patterns, with predominant and auxiliary sub-distributions whose directions, speeds, and proportions echo those of seizure discharges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 and C26-C27 state the primary findings supported by the detailed analyses in other claim groups. The traveling wave classification (66.4%, C37), directional consistency (C42), bimodality (C43-C44), and correspondence with seizure discharges (C47-C48, C52-C57) collectively support these summary claims. The data-driven approach with appropriate statistical validation strengthens these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "ed1304fe-b38c-4ee8-b570-3362788c14fd",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "IEDs originate from tissue immediately eccentric to the seizure core and propagate inwardly toward the seizure onset zone, providing useful information for localizing the seizure focus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8-C9 and C60 are inferences from the directional data (C47-C48) rather than direct observations. While the antipodal relationship to seizure expansion supports this interpretation, the study does not directly demonstrate IED origins or validate seizure focus localization. The authors acknowledge limitations (C76, C81) requiring multiple arrays for accurate triangulation. Clinical validation of localization utility is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "895775ae-614e-4d32-a1d8-02986a9df68c",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Seizure discharges likely potentiate propagation pathways through neocortex that are revisited during IEDs, corroborated by computational model predictions of spike-timing dependent plasticity. Spatiotemporal biases exist in epileptic tissue with correspondences between IED and SD spatial properties in recruited recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C59, C67-C70, C72 propose a mechanistic interpretation linking observations to synaptic plasticity. While the correspondence between IED and SD properties (C68-C70) is well-supported by data, the causal mechanism (C58, C67) remains speculative. The computational model (C59) provides theoretical support but does not constitute experimental validation. Claim C73 explicitly acknowledges that causality cannot be determined from this dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "857a2e1a-c3be-43e1-88ea-dfceef130cc3",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "IED speeds are comparable to seizure discharge speeds before ictal wavefront passage, and action potential firing during IEDs is heterogeneous, particularly in areas distant from the seizure onset zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C40 are supported by citations to previous work and are consistent with the observation that LFP-based traveling wave detection (66.4%, C37) was more reliable than MUA-based detection (48.6%). The heterogeneity explanation (C40) is well-established in the literature and explains the methodological choice to focus on LFP measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "7f190ba4-fc19-446a-b909-f434a80fe2e0",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IEDs travel bidirectionally on a linear axis even without an ictal wavefront, extending beyond previous observations of bidirectional seizure discharges emanating from the slowly expanding ictal wavefront. IED directions are not perfectly antipodal to the ictal wavefront.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 contextualize findings relative to prior work. The bidirectional pattern in the absence of an ictal wavefront (C64) is a novel observation supported by the bimodality analysis (C43-C44). The acknowledgment of imperfect antipodality (C65) and potential sources of error (C66) demonstrates appropriate scientific caution. The comparison to previous seizure observations (C62-C63) is well-cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study has several limitations: relationships could not be determined in penumbral recordings; causality between IEDs and seizure discharges cannot be established; recordings cover small spatial scales with sampling bias toward seizure onset zones; and clinical application would require multiple arrays or alternative recording technologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C73-C81 appropriately acknowledge study limitations. The inability to analyze penumbral recordings (C71) is a data limitation. The small spatial scale (C75-C76) and sampling bias (C76) are inherent to the microelectrode array approach. The suggestions for future work (C80-C81) are reasonable. These limitations do not invalidate the main findings but appropriately constrain their interpretation and generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "165b71e5-1c60-4d47-b905-4d7c1864b3a9",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Three participants with mesial temporal lobe seizure onsets exhibited similar IED and seizure discharge dynamics after seizures spread to lateral temporal cortex, though two showed larger differences between IED and SD direction distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 describe a subgroup analysis showing that the main findings extend to cases with mesial temporal lobe onsets after lateral spread. The observation of larger directional differences in two cases (C84) is noted but not fully explained. This supports generalizability while acknowledging heterogeneity in the patient population.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "9c0ef614-c4e7-4083-a8c9-aafae4a5f192",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "IEDs are frequent electrophysiological events in epilepsy patients that occur far more often than seizures, exhibit temporal correlations with seizure likelihood, and show some spatial overlap with seizure onset zones. However, their relationship to seizure-generating tissue remains debated despite evidence that removing IED-rich areas may improve surgical outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C14 establish the clinical and scientific context from prior literature. These are well-supported by multiple citations and represent established knowledge in the field. The statement that the IED-seizure relationship remains unclear (C3, C14) appropriately motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    },
+    {
+      "id": "eb67b433-e26c-4e55-b941-3292e1d3b372",
+      "content_id": "c8e32c3a-19f5-4b20-9713-7ecd0f5d2965",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior microelectrode array studies revealed spatiotemporal features of seizures including ictal core/penumbra regions, the ictal wavefront, and bidirectional seizure discharges. A computational model incorporating synaptic plasticity predicted that IEDs would propagate in similar directions to seizure discharges, opposite to seizure expansion, which this study tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C25 provide essential background from prior work and establish the study hypothesis. The citations to previous microelectrode array studies (C15-C21) and computational modeling (C22-C24) are appropriate. The hypothesis (C25) logically follows from the model predictions and is clearly testable with the methods employed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:21:03.820872Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1d9db95e-ecf1-4cfa-a157-4e2198394e3d",
+      "result_id": "144762cd-b978-4f7a-a6dd-8e329efb8887"
+    },
+    {
+      "claim_id": "3c6fea5a-db1e-432b-ad6f-ed9e02d70ed2",
+      "result_id": "144762cd-b978-4f7a-a6dd-8e329efb8887"
+    },
+    {
+      "claim_id": "ee526282-3cf5-4923-9d9d-408b8beea5b0",
+      "result_id": "144762cd-b978-4f7a-a6dd-8e329efb8887"
+    },
+    {
+      "claim_id": "c5276d9d-b2f7-4294-9b6e-a60fb9c92edc",
+      "result_id": "144762cd-b978-4f7a-a6dd-8e329efb8887"
+    },
+    {
+      "claim_id": "eda7f9f8-9185-42e0-92b1-926f159d0e25",
+      "result_id": "144762cd-b978-4f7a-a6dd-8e329efb8887"
+    },
+    {
+      "claim_id": "d393af04-d5e7-4f20-8218-2775b43f9f9a",
+      "result_id": "144762cd-b978-4f7a-a6dd-8e329efb8887"
+    },
+    {
+      "claim_id": "2a74259e-2b92-46de-ab60-98606670eb14",
+      "result_id": "144762cd-b978-4f7a-a6dd-8e329efb8887"
+    },
+    {
+      "claim_id": "959fda47-35a4-4b40-a55d-56b5d1b1a1c3",
+      "result_id": "144762cd-b978-4f7a-a6dd-8e329efb8887"
+    },
+    {
+      "claim_id": "c0d69ab1-898f-4805-9cce-a98b40f5580b",
+      "result_id": "144762cd-b978-4f7a-a6dd-8e329efb8887"
+    },
+    {
+      "claim_id": "cae04202-8b81-4ad8-a6fc-57f67e03ab39",
+      "result_id": "d5e5334d-d45e-4c99-873d-5637a54d8268"
+    },
+    {
+      "claim_id": "1e3da021-a081-4bf0-9aa1-9ec4fa1ebde9",
+      "result_id": "d5e5334d-d45e-4c99-873d-5637a54d8268"
+    },
+    {
+      "claim_id": "47a1172f-e9b3-4ff1-a091-ee7713fb7cb2",
+      "result_id": "d5e5334d-d45e-4c99-873d-5637a54d8268"
+    },
+    {
+      "claim_id": "ad8204b1-18ab-4726-a7a4-cdd6fe6c7a87",
+      "result_id": "d5e5334d-d45e-4c99-873d-5637a54d8268"
+    },
+    {
+      "claim_id": "3b1137a1-15ec-4e90-b76f-176f18b5b451",
+      "result_id": "dc64288c-fd2a-4404-b55f-7f95419d770c"
+    },
+    {
+      "claim_id": "46992842-2753-41f0-9bde-880e92c7ce6e",
+      "result_id": "dc64288c-fd2a-4404-b55f-7f95419d770c"
+    },
+    {
+      "claim_id": "ed5d227e-767b-4dcb-8afc-199e651aad09",
+      "result_id": "dc64288c-fd2a-4404-b55f-7f95419d770c"
+    },
+    {
+      "claim_id": "d9ddcac9-b7b5-4ba4-adf1-c6064695422d",
+      "result_id": "dc64288c-fd2a-4404-b55f-7f95419d770c"
+    },
+    {
+      "claim_id": "6b245cda-e20a-4244-b55a-a59265fc9c3a",
+      "result_id": "4eeab3fc-577f-4092-92e3-1c484dbe4fcd"
+    },
+    {
+      "claim_id": "f47fc612-f773-4774-8434-4e7038c9a45f",
+      "result_id": "4eeab3fc-577f-4092-92e3-1c484dbe4fcd"
+    },
+    {
+      "claim_id": "22594c43-4195-4bad-b63a-b55e920432e0",
+      "result_id": "4eeab3fc-577f-4092-92e3-1c484dbe4fcd"
+    },
+    {
+      "claim_id": "2327e848-65b1-4f4e-b29a-564d8846efa6",
+      "result_id": "ca85387e-479b-42ea-a622-6948225e41de"
+    },
+    {
+      "claim_id": "55eaeb3e-7c5a-4fcd-bf5c-6f627d4d2b9d",
+      "result_id": "ca85387e-479b-42ea-a622-6948225e41de"
+    },
+    {
+      "claim_id": "265e91b1-9a4f-4dec-9e42-c63a0e2758eb",
+      "result_id": "ca85387e-479b-42ea-a622-6948225e41de"
+    },
+    {
+      "claim_id": "801ff18e-d65c-4104-ab40-0d869d8a8869",
+      "result_id": "ca85387e-479b-42ea-a622-6948225e41de"
+    },
+    {
+      "claim_id": "9aa305a5-9331-477d-bf9c-d636b4cd177e",
+      "result_id": "ca85387e-479b-42ea-a622-6948225e41de"
+    },
+    {
+      "claim_id": "252225cf-5dc0-46b4-a17b-022a573b1ae3",
+      "result_id": "ca85387e-479b-42ea-a622-6948225e41de"
+    },
+    {
+      "claim_id": "5410c050-d511-405d-a7d7-bd82ea8ac9b0",
+      "result_id": "d4e11798-b4b5-4b15-91a7-777101862d87"
+    },
+    {
+      "claim_id": "84acd80a-1c9c-4028-b604-c0a7bd6ca1a5",
+      "result_id": "d4e11798-b4b5-4b15-91a7-777101862d87"
+    },
+    {
+      "claim_id": "7785d3b5-6a12-4eee-a6b7-e923e2ba133e",
+      "result_id": "d4e11798-b4b5-4b15-91a7-777101862d87"
+    },
+    {
+      "claim_id": "98257e4c-5f4c-482b-9025-a4e22cb69941",
+      "result_id": "d4e11798-b4b5-4b15-91a7-777101862d87"
+    },
+    {
+      "claim_id": "365f629c-c783-494c-83fb-2320dc96c875",
+      "result_id": "d4e11798-b4b5-4b15-91a7-777101862d87"
+    },
+    {
+      "claim_id": "01988ff4-44c9-472c-b6e4-2f9db7c7a401",
+      "result_id": "d4e11798-b4b5-4b15-91a7-777101862d87"
+    },
+    {
+      "claim_id": "6ee840c4-a7c4-411b-9083-a7db8ecefc9c",
+      "result_id": "ed1304fe-b38c-4ee8-b570-3362788c14fd"
+    },
+    {
+      "claim_id": "2f425f00-5a56-4c55-9adf-56d2700c4aaa",
+      "result_id": "ed1304fe-b38c-4ee8-b570-3362788c14fd"
+    },
+    {
+      "claim_id": "31ba5a3e-dbf5-4478-8855-32ec3b2cb8de",
+      "result_id": "ed1304fe-b38c-4ee8-b570-3362788c14fd"
+    },
+    {
+      "claim_id": "c32f7383-8b25-47cd-bda0-83861283abc2",
+      "result_id": "895775ae-614e-4d32-a1d8-02986a9df68c"
+    },
+    {
+      "claim_id": "fad06c18-755d-4cb8-9ce5-c905d338ef96",
+      "result_id": "895775ae-614e-4d32-a1d8-02986a9df68c"
+    },
+    {
+      "claim_id": "bc1c7675-f0d4-46f5-acd2-b083007c4ce7",
+      "result_id": "895775ae-614e-4d32-a1d8-02986a9df68c"
+    },
+    {
+      "claim_id": "a1f79c41-8fba-41c8-817f-a7cff2bc4717",
+      "result_id": "895775ae-614e-4d32-a1d8-02986a9df68c"
+    },
+    {
+      "claim_id": "ad68a56a-df36-43d5-b96d-224708a4575d",
+      "result_id": "895775ae-614e-4d32-a1d8-02986a9df68c"
+    },
+    {
+      "claim_id": "8781ac90-0b9d-451e-b358-a212111ccfc9",
+      "result_id": "895775ae-614e-4d32-a1d8-02986a9df68c"
+    },
+    {
+      "claim_id": "5bb83d97-2671-400a-8654-af6a9ac15cdc",
+      "result_id": "895775ae-614e-4d32-a1d8-02986a9df68c"
+    },
+    {
+      "claim_id": "97f2c60f-bc4e-42c8-8867-c27bf059351e",
+      "result_id": "857a2e1a-c3be-43e1-88ea-dfceef130cc3"
+    },
+    {
+      "claim_id": "084c6329-2f35-40ea-a5dd-830acf126a50",
+      "result_id": "857a2e1a-c3be-43e1-88ea-dfceef130cc3"
+    },
+    {
+      "claim_id": "51513d2e-1a5c-4ad8-85f6-cb4dcd0cc85c",
+      "result_id": "7f190ba4-fc19-446a-b909-f434a80fe2e0"
+    },
+    {
+      "claim_id": "4d103180-419d-4417-8a3a-cbfdf561a085",
+      "result_id": "7f190ba4-fc19-446a-b909-f434a80fe2e0"
+    },
+    {
+      "claim_id": "35eca9f6-d5d7-447f-b61d-940cabab76a8",
+      "result_id": "7f190ba4-fc19-446a-b909-f434a80fe2e0"
+    },
+    {
+      "claim_id": "a721c945-f439-489d-9693-7bfac37aac48",
+      "result_id": "7f190ba4-fc19-446a-b909-f434a80fe2e0"
+    },
+    {
+      "claim_id": "cb398ccc-ae78-41e1-b65f-5d92beaeb64c",
+      "result_id": "7f190ba4-fc19-446a-b909-f434a80fe2e0"
+    },
+    {
+      "claim_id": "28d2bef2-4f6a-43e8-a862-17fb4bf83067",
+      "result_id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2"
+    },
+    {
+      "claim_id": "b3616f06-93f5-47c9-b2a3-7b060858d579",
+      "result_id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2"
+    },
+    {
+      "claim_id": "852ec2bd-dc2b-4672-875a-ab56899feeb3",
+      "result_id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2"
+    },
+    {
+      "claim_id": "3ca35d67-79bc-45f5-a1e8-527343f07b7a",
+      "result_id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2"
+    },
+    {
+      "claim_id": "d4f3a642-6946-4cbb-b58f-371abf7006ea",
+      "result_id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2"
+    },
+    {
+      "claim_id": "ef210b1b-d5cf-4eab-9165-5fef01701872",
+      "result_id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2"
+    },
+    {
+      "claim_id": "69fc5e3e-4e0d-4ced-a3d7-73563596e4a2",
+      "result_id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2"
+    },
+    {
+      "claim_id": "168daaa4-4827-45eb-ad14-3443050b337d",
+      "result_id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2"
+    },
+    {
+      "claim_id": "b8d96619-4202-438e-b082-aad1cb4c5d40",
+      "result_id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2"
+    },
+    {
+      "claim_id": "f2691635-ff15-448b-ae64-bb0a55031f8e",
+      "result_id": "0f64bb25-3734-4d57-8ddb-0729eedef0b2"
+    },
+    {
+      "claim_id": "3c70eab3-36db-493e-be7c-d751b81ed0b4",
+      "result_id": "165b71e5-1c60-4d47-b905-4d7c1864b3a9"
+    },
+    {
+      "claim_id": "dbc4f642-915f-4047-9357-128780bbd954",
+      "result_id": "165b71e5-1c60-4d47-b905-4d7c1864b3a9"
+    },
+    {
+      "claim_id": "fadd4cb4-e255-4087-97f4-7fdda88bc9f9",
+      "result_id": "165b71e5-1c60-4d47-b905-4d7c1864b3a9"
+    },
+    {
+      "claim_id": "7e4fb6cb-2964-4ef7-961d-ce8db47442c0",
+      "result_id": "9c0ef614-c4e7-4083-a8c9-aafae4a5f192"
+    },
+    {
+      "claim_id": "e9b3cc79-51d0-4674-b03d-12f87b26467c",
+      "result_id": "9c0ef614-c4e7-4083-a8c9-aafae4a5f192"
+    },
+    {
+      "claim_id": "37b55849-8488-4d77-a8f6-dcf00de71add",
+      "result_id": "9c0ef614-c4e7-4083-a8c9-aafae4a5f192"
+    },
+    {
+      "claim_id": "fd56c58f-26b3-4a35-961a-0a36fab47069",
+      "result_id": "9c0ef614-c4e7-4083-a8c9-aafae4a5f192"
+    },
+    {
+      "claim_id": "a98fb8ab-a6ee-45b7-93a2-a8af2c9d7e1d",
+      "result_id": "9c0ef614-c4e7-4083-a8c9-aafae4a5f192"
+    },
+    {
+      "claim_id": "fe487a3b-181f-4c14-9d34-48d40608e84a",
+      "result_id": "9c0ef614-c4e7-4083-a8c9-aafae4a5f192"
+    },
+    {
+      "claim_id": "9483e140-56f7-472d-93a3-601c88d4a6ea",
+      "result_id": "9c0ef614-c4e7-4083-a8c9-aafae4a5f192"
+    },
+    {
+      "claim_id": "3e559193-2a35-41c4-9579-87bdae8f1a59",
+      "result_id": "9c0ef614-c4e7-4083-a8c9-aafae4a5f192"
+    },
+    {
+      "claim_id": "5d0f170c-6f42-4f93-a285-7555615c7533",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    },
+    {
+      "claim_id": "dbcedcf5-c0e4-42a5-9643-ae6674f77d5e",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    },
+    {
+      "claim_id": "de4b01a5-a688-4634-bd5a-e0a9fdbcd555",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    },
+    {
+      "claim_id": "2091f927-f16b-45d5-896b-3a4e0c7887d1",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    },
+    {
+      "claim_id": "aa61e099-2892-46ea-b829-87be1e3bac4b",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    },
+    {
+      "claim_id": "d3e82816-169e-4222-b9fb-5c077c728f6c",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    },
+    {
+      "claim_id": "8860a9b9-79d2-405b-bcf9-6233e81555e4",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    },
+    {
+      "claim_id": "e38e19f3-1fc6-43f5-ba49-2ce459edb2f8",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    },
+    {
+      "claim_id": "d6fc7ad3-47c8-445a-877d-4b6442dcb00c",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    },
+    {
+      "claim_id": "d8955c71-e724-4e59-98ed-13198cd19f2d",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    },
+    {
+      "claim_id": "efd510ff-520a-45a9-8caf-5449d41a04ce",
+      "result_id": "eb67b433-e26c-4e55-b941-3292e1d3b372"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C58",
+      "C59"
+    ],
+    "result": "The study enrolled 227 critically ill COVID-19 patients with ARDS from a single ICU between March and December 2020. The IFIH1 rs1990760 genotype distribution (53 CC, 110 CT, 64 TT) met Hardy-Weinberg equilibrium (p=0.19). The study was approved by ethics committee, informed consent was obtained, and biochemical analyses were performed blinded to genotype and outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C48-C52, C58-C59 provide comprehensive methodological details including patient enrollment, genotyping validation, ethical approval, and blinding procedures. The Hardy-Weinberg equilibrium test confirms appropriate population genetics, and the study design includes appropriate controls for bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C60",
+      "C61",
+      "C31"
+    ],
+    "result": "Patients with the IFIH1 rs1990760 TT variant showed lower PaO2/FiO2 ratio at admission (p=0.007), significantly lower IFIH1 expression (p=0.019), and differential expression of 179 genes compared to CC/CT variants. Pathway analysis revealed these genes are involved in inflammatory response regulation, with differences being quantitative rather than qualitative. In-silico predictions suggest IFIH1 downregulation decreases pro-inflammatory pathway expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C60-C61, C31 are supported by statistical tests with significant p-values, RNAseq data, and pathway analysis. The lower PaO2/FiO2 ratio in TT patients is a baseline difference that could confound outcome analyses, though the authors note no other baseline differences. The quantitative vs qualitative distinction (C61) is interpretive but reasonable from heatmap inspection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C30"
+    ],
+    "result": "Patients with the TT genotype showed increased proportions of hematopoietic precursors and myeloid dendritic cells based on deconvolution of RNAseq data. The deconvolution method showed moderate correlation (r=0.61) with measured lymphocyte percentages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 relies on computational deconvolution rather than direct measurement. The moderate correlation (C30, r=0.61) between estimated and measured lymphocytes raises concerns about accuracy. The authors acknowledge that deconvolution estimates transcriptionally active cells, which may differ from actual cell counts. Direct flow cytometry validation would strengthen these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Patients with the TT genotype showed lower serum levels of IL-6, CXCL10, CXCL16, and CCL7 at ICU admission (n=28 patients total). Interferons were below detection limits in most patients with no differences between genotypes. No significant differences were observed between CC and CT variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C54-C56 are supported by multiplex assay data with appropriate statistical corrections (FDR 0.05). The small sample size (n=28, with only 8 TT patients) limits power but the p-values are significant. The lack of interferon detection (C55) is a limitation but honestly reported. The grouping of CC/CT vs TT is justified by C56 showing no differences between CC and CT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C8",
+      "C57"
+    ],
+    "result": "In-silico analysis predicted dexamethasone could disrupt IFIH1 downregulation effects by altering STAT1, STAT3, and FOXO3 expression. Ex-vivo experiments with PBMCs from healthy volunteers (n=5-7 per genotype) exposed to poly I:C and dexamethasone showed no effect on STAT1 or STAT3, but increased FOXO3 and IL6 expression only in TT variant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C8, C57 combine in-silico predictions with experimental validation. The ex-vivo experiments used appropriate controls (poly I:C alone vs with dexamethasone), adequate sample sizes, and mixed-effects statistical models. The selective effect on FOXO3 and IL6 in TT variants (C8) is statistically significant (p<0.01) and biologically plausible, though the mechanism remains incompletely understood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C36",
+      "C37",
+      "C35"
+    ],
+    "result": "For ICU survival, all 14 TT patients not receiving steroids were discharged alive (HR: 2.49, 95% CI: 1.29-4.79, p=0.012). Dexamethasone was not associated with better outcome in CC/CT patients (HR: 1.20, p=0.41) but was associated with loss of survival benefit in TT patients (HR: 1.03, p=0.91). Median follow-up was 25 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C36-C37, C35 present survival analyses using competing risks models. The 100% survival in untreated TT patients (C9, n=14) is striking but based on small sample size. The loss of benefit with steroids in TT patients (C37) shows non-significant HR near 1.0, suggesting neutralization rather than harm for ICU survival. The authors acknowledge the small sample size limitation. The non-randomized treatment assignment (C71) is a major confounding concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "For hospital mortality, all 14 TT patients not receiving steroids survived (0 deaths). TT patients treated with steroids showed increased mortality (19/50 deaths, HR: 2.19, 95% CI: 1.01-4.87, p=0.05). In CC/CT patients, steroids did not significantly affect mortality (9/35 deaths without steroids vs 27/128 with steroids, HR: 1.11, p=0.80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C38-C40 show differential steroid effects by genotype for hospital mortality. The 100% survival in untreated TT patients (C38, n=14) is remarkable but small sample. The increased mortality with steroids in TT patients (C10) has borderline significance (p=0.05) and wide confidence interval (1.01-4.87). The lack of randomization (C71) and potential confounding by indication are critical limitations, though C72 notes no baseline severity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "There were no differences in viral load at diagnosis (p=0.888) or viral clearance after peak value (p=0.056) among IFIH1 variants or treatment groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by quantitative RT-PCR data with non-significant p-values. The viral clearance p-value (0.056) approaches but does not reach significance. These findings suggest that outcome differences are not driven by differential viral control, supporting the immunomodulatory hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C13"
+    ],
+    "result": "At ICU admission, IL-6 levels were lower in CC/CT patients receiving dexamethasone and in TT patients not receiving steroids compared to untreated CC/CT patients (p<0.001). After 1 week, IL-6 remained lower in these groups (p=0.014), but was higher in TT patients treated with steroids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C13 show temporal IL-6 dynamics with significant p-values. The paradoxical increase in IL-6 at day 7 in steroid-treated TT patients (C13) aligns with ex-vivo findings (C8) and supports the hypothesis of disrupted immunoregulation. The statistical significance and consistency across time points strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "At ICU day 4, IFIH1 expression decreased with steroids in CC/CT patients but not TT patients. Steroids increased FOXO3 expression only in TT patients (p=0.02). Genome-wide, steroids changed expression of 58 genes in CC/CT patients and 23 genes in TT patients, with only 3 genes in common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 demonstrate genotype-specific transcriptional responses to steroids using RNAseq data. The FOXO3 finding (C15) replicates the ex-vivo result (C8), strengthening validity. The minimal overlap (3 genes, C17) between genotypes indicates qualitatively different steroid responses. Sample sizes for day 4 RNAseq are small (n=4-7 per group) but findings are statistically significant and biologically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C45",
+      "C46",
+      "C47",
+      "C77",
+      "C79"
+    ],
+    "result": "In-silico analysis of RECOVERY trial data showed T-allele frequency of 0.13 in Black/Asian populations (RR for dexamethasone: 0.7, 95% CI: 0.51-0.95) versus 0.61 in White populations (RR: 0.9, 95% CI: 0.8-1.2). Mechanically ventilated patients (29% Black/Asian) had HR of 0.64 versus 0.83 in overall population (18% Black/Asian). Simulations suggest populations with low TT variant frequency show better dexamethasone response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18-C20, C45-C47, C77, C79 present post-hoc analysis of RECOVERY trial data stratified by inferred genotype frequencies. The approach is creative but relies on population-level allele frequencies rather than individual genotyping. The correlation between racial composition and treatment effect is suggestive but indirect. Individual-level genotype data from RECOVERY would be needed to confirm this hypothesis. The in-silico simulations (C77, C79) support the hypothesis but require prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establish that IFIH1 encodes MDA5, a cytoplasmic viral RNA receptor that triggers interferon responses. The rs1990760 polymorphism (c.2836G>A, p.Ala946Thr) has been associated with differential susceptibility to viral infections. In Coxsackie virus models, TT variants show lower cytokines without impaired clearance. Steroids and IL-6 blockade are the only treatments reducing COVID-19 mortality, though mortality remains 27-32%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 provide established background knowledge with appropriate citations. These claims contextualize the study rationale and are well-supported by prior literature. The pangolin observation (C27-C28) is interesting but speculative regarding COVID-19 relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors interpret that worse outcomes in steroid-treated TT patients relate to disrupted immunoregulation rather than impaired viral clearance. They acknowledge ex-vivo experiments don't fully elucidate mechanisms but suggest therapeutic potential for MDA5 modulation. Prior work shows MDA5-triggered interferon cannot control SARS-CoV-2 replication, but complete IFIH1 ablation increases viral loads, suggesting caution is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 represent interpretations and mechanistic hypotheses. The interpretation linking outcomes to immunoregulation (C62) is reasonable given the viral clearance data (C11-C12). The acknowledgment of mechanistic uncertainty (C63) is appropriate. The therapeutic speculation (C64-C65) is clearly framed as hypothesis-generating. Citations to prior work (C66-C70) appropriately contextualize the complexity of MDA5 modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C80"
+    ],
+    "result": "The authors acknowledge key limitations: non-randomized steroid treatment, limited racial diversity in the European cohort, and small sample size for untreated TT patients. They note no prior genetic markers have been associated with COVID-19 mortality (vs susceptibility) and conclude that genetic factors modulate response to infection and therapy, enabling personalized treatment approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75, C76, C78, C80 appropriately acknowledge limitations and contextualize findings. The non-randomized design (C71) is a critical limitation, though C72 notes no baseline severity differences. The limited generalizability (C73) is honestly stated. The distinction between susceptibility and outcome genetics (C74-C75) is important. The conclusions about personalized medicine (C76, C78) are reasonable but require prospective validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Gene expression profiling was performed on 42 patients (11 TT, 19 CT, 12 CC) who did not receive steroids on ICU day 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 clearly states sample sizes for the RNAseq analysis. The restriction to steroid-naive patients is appropriate to avoid confounding. Sample sizes are modest but adequate for differential expression analysis with the observed effect sizes.",
+    "result_type": "MINOR"
+  }
+]

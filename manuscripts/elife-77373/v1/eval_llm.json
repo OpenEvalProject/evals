@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "IFN\u03b3-M1 and IL-4-M2 macrophages exhibit distinct cytokine and gene expression profiles. IFN\u03b3-M1 macrophages show slightly higher TNF\u03b1 production and significantly increased CXCL9 and CXCL10 expression, while IL-4-M2 macrophages demonstrate statistically higher IL-10 production and increased MRC1 and CCL13 expression compared to untreated and IFN\u03b3-M1 macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are supported by experimental data from ELISA and RT-PCR measurements (Figure 2A-F) with appropriate statistical testing. The cytokine and gene expression patterns are consistent with established M1/M2 polarization phenotypes and validate the polarization protocol used in the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "IFN\u03b3-M1 and IL-4-M2 macrophages display distinct metabolic profiles measured by extracellular flux analysis. IFN\u03b3-M1 macrophages exhibit higher ECAR and lower OCR with statistically significant increases in basal and maximal glycolysis. IL-4-M2 macrophages show lower ECAR and higher OCR with statistically significant increases in maximal respiration, while all macrophage types have similar basal respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 are supported by Seahorse extracellular flux data (Figure 2G-L) with statistical significance demonstrated. The metabolic profiles align with established knowledge that M1 macrophages rely on glycolysis while M2 macrophages depend on oxidative phosphorylation. The use of repeated-measures ANOVA appropriately accounts for donor variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "2P-FLIM measurements reveal distinct fluorescence lifetime parameters between IFN\u03b3-M1 and IL-4-M2 macrophages in response to metabolic inhibitors. IFN\u03b3-M1 macrophages show lower \u03c41, \u03c42, \u03c4avg, and ORR values compared to IL-4-M2 macrophages. The average fluorescence lifetime (\u03c4avg) increases with metabolic inhibitors except 2-DG, and ORR patterns differ between the two phenotypes, with IL-4-M2 showing lower ORR consistent with higher OxPhos dependency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C57-C65 are supported by 2P-FLIM data (Figures 3B-D) showing differential responses to metabolic perturbations. The interpretations linking reduced \u03c4avg to free NAD(P)H/glycolysis and higher \u03c4avg to protein-bound NAD(P)H/OxPhos are supported by citations. However, the ORR interpretation (C62) acknowledges varying definitions in literature, which introduces some uncertainty in the specific metabolic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C40",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "FCCP treatment provides the best separation between IFN\u03b3-M1 and IL-4-M2 macrophages across multiple visualization methods. UMAP and PCA analysis show clear clustering patterns during FCCP treatment, while t-SNE analysis does not show separation. Phasor analysis also demonstrates higher segregation with FCCP treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C40, C68-C70 are supported by visualization data (Figures 3E-F, Figure 3\u2014figure supplement 3-4). The consistent finding across UMAP, PCA, and phasor analysis that FCCP treatment provides optimal separation strengthens the conclusion. The failure of t-SNE to show separation is appropriately reported and does not undermine the overall finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C41"
+    ],
+    "result": "Random forests classification achieves outstanding performance in distinguishing IFN\u03b3-M1 from IL-4-M2 macrophages using full field-of-view 2P-FLIM data during FCCP treatment. The model achieved ROC-AUC of 0.944 with 16.67% OOB error. Feature importance analysis identified \u03c41, \u03c42, and \u03c4avg as the most important variables, and using only these three predictors still achieved high accuracy (ROC-AUC = 0.934).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C41 are supported by machine learning analysis (Figure 3G-H, Table 1). The ROC-AUC value >0.9 is considered outstanding by established criteria (C54). The feature importance analysis provides biological insight into which FLIM parameters are most discriminative. The removal of \u03b11 due to collinearity with \u03b12 (C50) is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Single-cell classification performance is affected by donor variability during FCCP treatment. Donors D and E achieved the highest ROC-AUC values and lowest OOB errors. At the single-cell level, \u03c41, \u03c42, \u03c4avg, and \u03b12 are the most important variables for classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by donor-specific analysis (Figure 4C, Table 2). The variation in performance across donors (ROC-AUC ranging from 0.650 to 0.968) is appropriately reported and discussed. The identification of important features at single-cell level is consistent with full FoV analysis, with the addition of \u03b12 as an important variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "FCCP treatment differentially affects IFN\u03b3-M1 and IL-4-M2 macrophages through its mechanism as a mitochondrial uncoupler. FCCP causes proton flux leading to reduced mitochondrial pH and increased NAD(P)H fluorescence lifetime. In IL-4-M2 macrophages, FCCP increases ETC activity and demand for NADH/FADH2, resulting in reduced FAD+ pool and decreased ORR. The impact is less pronounced in IFN\u03b3-M1 macrophages due to their lower dependence on mitochondrial metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 provide a mechanistic explanation for the observed FLIM differences, supported by citations and consistent with the experimental data. The reasoning linking FCCP's mechanism to the observed changes in fluorescence lifetimes and ORR is logical and well-supported by literature. However, these are largely inferential claims based on known mechanisms rather than direct measurements in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C55",
+      "C56"
+    ],
+    "result": "This study demonstrates the feasibility of using 2P-FLIM combined with machine learning to distinguish and classify opposing human macrophage polarization states based on cellular metabolism and fluorescence lifetime variables. The discrimination is most pronounced during FCCP treatment, and this represents the first application of random forests classification to human macrophages using real-time metabolic perturbations during 2P-FLIM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C55-C56 are overarching conclusions supported by the collective experimental data and analyses. The novelty claim (C56) regarding first-time application of this specific combination of methods appears reasonable given the literature context provided. The feasibility is demonstrated through the high classification accuracy achieved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43"
+    ],
+    "result": "2P-FLIM offers several advantages over traditional metabolic assays including spatial and temporal resolution, non-invasive imaging without fixation or staining, real-time analysis with small cell numbers, and single-cell heterogeneity assessment. The workflow can potentially be adapted to in vivo models and organoid systems for various applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C38 describe established advantages of 2P-FLIM that are demonstrated in this study. However, claims C42-C43 regarding future applications to in vivo models, organoids, and clinical applications are speculative and not validated in this work. While the methodology shows promise, these extensions would require additional validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study employed rigorous methodological approaches including high-purity macrophage isolation (>95% CD14+CD11b+), appropriate 2P-FLIM imaging parameters, quality control criteria (\u03c7\u00b2 < 1.3 for good fits), and justified machine learning model selection. Random forests was chosen over SVM and logistic regression due to its suitability for small datasets and ability to provide feature importance without requiring independent validation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 describe methodological details that are appropriately documented. The quality control criteria, imaging parameters, and machine learning model selection are well-justified. The comparison of different ML approaches (C51) and rationale for choosing random forests (C52-C53) demonstrate methodological rigor. The ROC-AUC interpretation criteria (C54) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Cell-to-cell variability in single-cell classification may stem from differential uptake capacity of FCCP and other treatments, as well as unknown donor health status. Future improvements could include analyzing more cells and incorporating phenotypic surface marker observation during imaging to improve classification efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C75 acknowledge limitations and propose future improvements. The speculation about sources of variability (C73) is reasonable but not directly tested. The proposed improvements (C74-C75) are logical suggestions but remain speculative without implementation and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "2P-FLIM is an established technique capable of imaging various cell types and biological samples with high spatial and temporal resolution, allowing quantification of NAD(P)H and FAD+ to assess cellular metabolism. NAD(P)H exhibits distinct fluorescence lifetimes when enzyme-bound (long) versus free (short), and NADH and NADPH have identical fluorescence properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe established knowledge about 2P-FLIM methodology and NAD(P)H fluorescence properties, supported by appropriate citations. These provide necessary background context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "M1 and M2 macrophages represent opposing polarization states with distinct characteristics. M1 macrophages are characterized by pro-inflammatory cytokine secretion and enhanced glycolysis, while M2 macrophages exhibit downregulated pro-inflammatory cytokines, altered surface markers, and dependence on oxidative phosphorylation with intact TCA cycle and enhanced fatty acid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 describe established knowledge about macrophage polarization phenotypes, supported by appropriate citations. These provide necessary biological context but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C72"
+    ],
+    "result": "Prior studies have demonstrated that metabolic inhibitors like oligomycin A affect NAD(P)H fluorescence lifetimes during cellular differentiation, and that NAD(P)H fluorescence lifetimes are influenced by NADPH concentrations and microenvironmental shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C72 cite relevant prior work that supports the interpretation of FLIM data in this study. These provide important context from the literature but do not represent findings from the current work.",
+    "result_type": "MINOR"
+  }
+]

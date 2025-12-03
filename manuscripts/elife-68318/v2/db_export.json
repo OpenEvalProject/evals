@@ -1,0 +1,1671 @@
+{
+  "submission": {
+    "id": "a41a12d4-cdb7-4b78-b617-335eddbadda6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:25:34.987940Z",
+    "updated_at": "2025-12-03T05:25:34.987940Z"
+  },
+  "content": [
+    {
+      "id": "151784cf-859e-4634-8033-e36096889e76",
+      "submission_id": "a41a12d4-cdb7-4b78-b617-335eddbadda6",
+      "content_type": "manuscript",
+      "content_text": "# Evaluating distributional regression strategies for modelling self-reported sexual age-mixing\n\n## Authors\n\n- Timothy M Wolock<sup>1</sup> ([ORCID: 0000-0001-5898-1014](https://orcid.org/0000-0001-5898-1014)) \u2020\n- Seth Flaxman<sup>1</sup> ([ORCID: 0000-0002-2477-4217](https://orcid.org/0000-0002-2477-4217))\n- Kathryn A Risher<sup>2</sup> ([ORCID: 0000-0002-9588-1693](https://orcid.org/0000-0002-9588-1693))\n- Tawanda Dadirai<sup>4</sup>\n- Simon Gregson<sup>2</sup> ([ORCID: 0000-0003-2707-0714](https://orcid.org/0000-0003-2707-0714))\n- Jeffrey W Eaton<sup>2</sup> ([ORCID: 0000-0001-7728-728X](https://orcid.org/0000-0001-7728-728X))\n\n### Affiliations\n\n1. Department of Mathematics, Imperial College London London United Kingdom\n2. MRC Centre for Global Infectious Disease Analysis, School of Public Health, Imperial College London London United Kingdom\n3. London School of Hygiene & Tropical Medicine London United Kingdom\n4. Manicaland Centre for Public Health Research, Biomedical Research and Training Institute Harare Zimbabwe\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe age dynamics of sexual partnership formation determine patterns of sexually transmitted disease transmission and have long been a focus of researchers studying human immunodeficiency virus. Data on self-reported sexual partner age distributions are available from a variety of sources. We sought to explore statistical models that accurately predict the distribution of sexual partner ages over age and sex. We identified which probability distributions and outcome specifications best captured variation in partner age and quantified the benefits of modelling these data using distributional regression. We found that distributional regression with a sinh-arcsinh distribution replicated observed partner age distributions most accurately across three geographically diverse data sets. This framework can be extended with well-known hierarchical modelling tools and can help improve estimates of sexual age-mixing dynamics.\n\n## Introduction\n\nPatterns in sexual mixing across ages determine patterns of transmission of sexually transmitted infections (STIs). Consequently, sexual age-mixing has been of great interest to researchers studying the human immunodeficiency virus (HIV) since the beginning of the global epidemic. Anderson et al., 1992 used a model of partnership formation to predict that mixing between young women and older men would amplify the already-substantial effect of HIV on population growth. Garnett and Anderson, 1994 used a mathematical model to show that patterns of age-mixing could substantially influence the magnitude and timing of hypothetical epidemic trajectories, whereas Hallett et al., 2007 demonstrated that delaying sexual debut and increasing age-similar partnerships could reduce an individual\u2019s risk of HIV infection in a highly endemic setting.\n\nThese modelling studies have been complemented by analyses of survey and population cohort data on age-mixing patterns. Gregson et al., 2002 and Schaefer et al., 2017 observed that individuals with older partners were at greater risk of HIV infection in a general-population cohort in Zimbabwe. Ritchwood et al., 2016 and Maughan-Brown et al., 2016 found that larger age differences were associated with more risky sexual behaviour in surveys of young South African people. Similarly, Akullian et al., 2017 found that partner age was an important risk factor for HIV infection in a cohort study in rural South Africa. On the other hand, Harling et al., 2014 found that age-disparate relationships were not associated greater risk of HIV acquisition in young women in South Africa.\n\nThese results underscore the importance of considering age-mixing dynamics when designing and evaluating HIV prevention strategies, and, consequently, the importance of measuring them accurately. For example, an intervention aiming to prevent new HIV infections among young women could be attenuated by high prevalence among older men. Identifying changes in sexual partner age distributions and attributing them to interventions might even be a valuable end by itself, in which case accurate measurement must be complemented by an effective modelling strategy.\n\nData about sexual partner age-mixing are routinely collected by long-term cohort studies (such as those that comprise the Analysing Longitudinal Population-based HIV/AIDS data on Africa, or ALPHA, Network) and large-scale household surveys (such as the Demographic and Health Surveys) (The DHS program, 2021; Reniers et al., 2016). Typically, these data consist of the respondent\u2019s age and sex and the ages of their sexual partners in the last 12 months. These data are highly variable, skewed, and often deviate substantially from conventional parametric distributions, such as the normal distribution or the gamma distribution (Beauclair et al., 2018).\n\nOne may consider statistical modelling approaches for the distribution of partner age as a function of respondent age and sex. Some notable previous approaches to modelling partner age distributions include (Morris, 1991), who developed a log-linear modelling framework to quantify selective mixing from contingency tables, and applied the model to ordinal categorical data on husbands\u2019 and wives\u2019 ages in the United States. Hallett et al. used a log-logistic distribution to continuously model partner age differences for women aged 15\u201345 years, assuming that the partner age difference distributions did not vary over respondent age. More recently, as an input to a model of Chlamydia trachomatis, Smid et al., 2018 fit skew normal distributions to each age-/sex-specific partner age distribution and used a secondary regression model to smooth the estimated skew normal parameters across respondent age. They observed substantial changes in the estimated skew normal parameters with respect to respondent age. Although this method allows for non-linear variation across respondent age, their two-stage estimation process makes uncertainty propagation complex. Replacing this process with a single \u2018distributional\u2019 regression model, in which all distributional parameters (e.g. the location, scale, skewness, etc.) are modelled as functions of data (Kneib and Umlauf, 2017), allows for complex variation across respondent age while still robustly incorporating uncertainty. Another elegant approach has been the development of exponential-family random graph models (ERGMs) to infer full partnership networks from individuals reports of the partnerships (\u2019ego-centric\u2019 observations of the network) (Krivitsky and Morris, 2017). These stochastic methods, along with the broader suite of ERGMs (Hunter et al., 2008a; Hunter et al., 2008b; Krivitsky et al., 2011; Krivitsky and Handcock, 2014), can model social network data accurately with robust incorporation of covariates, and tools exist to incorporate their estimates into epidemic models (Jenness et al., 2018; Morris, 1993).\n\nWe focused on evaluating parametric models for continuously representing the distribution of sexual partner ages conditional on the respondent\u2019s age. We were specifically interested in distributions that introduce parameters to control tail weight, which may capture intergenerational mixing that could sustain endemic HIV and STI transmission (Akullian et al., 2017; Schaefer et al., 2017; Harling et al., 2014). This led us to test the ability of the four-parameter \u2018sinh-arcsinh\u2019 distribution originally proposed by Jones and Pewsey, 2009 to fit to these data.\n\nWe hypothesised that integrating the sinh-arcsinh distribution into a distributional modelling framework would allow us to replicate observed partner age distributions more accurately than prior modelling strategies. We tested this theory by comparing a variety of candidate strategies, which varied along three dimensions: the parametrisation of the dependent variable, the choice of distribution, and the method for incorporating variability across respondent age and sex.\n\n## Materials and methods\n\n### Data\n\nIn this work, we compared a set of probability distributions and regression specifications to identify a modelling strategy that produced stable and accurate estimates of sexual partner age distributions with well-quantified uncertainty. We conducted two model comparison experiments to identify which of a set of strategies best replicated partner age distributions. First, in our probability distribution comparison, we identified which of a set of distribution-dependent variable combinations fit best to age-/sex-specific data subsets, and then, in our distributional regression evaluation, we tested whether distributional regression methods could be used to estimate age-/sex-specific partner age distributions by sharing strength across observations. In distributional regression, all parameters of a distribution can vary with respect to data, so it allowed us to smooth and interpolate even higher order moments of observed partner ages. We divided the model comparison into two separate experiments to make the probability distribution comparison as fair as possible (accounting for the possibility that certain distributions would perform particularly well under certain regression specifications).\n\nWe analysed data on sexual partner age distributions from three sources: the Africa Centre Demographic Information System, a health and demographic surveillance site in uMkhanyakude district, South Africa collected by the African Health Research Institute (AHRI) (Gareta et al., 2021; Gareta et al., 2020a;\u00a0Gareta et al., 2020b), the Manicaland General Population Cohort in Zimbabwe (Gregson et al., 2017), and the 2016\u20132017 Demographic and Health Survey (DHS) in Haiti (Institut Ha\u00eftien de l\u2019Enfance, 2018).\n\nThe AHRI and Manicaland studies are multi-round, open, general population cohort studies designed to measure the dynamics of HIV, sexual risk behaviour, and demographic change in sub-Saharan African settings. We used rounds one through six of the Manicaland study, collected between 1998 and 2013. The AHRI data we used were collected annually between 2004 and 2018. The 2016\u201317 Haiti DHS was a large, nationally representative household survey conducted in 2016 and 2017. We did not incorporate the weights associated with the survey into this analysis because our primary interest was in statistical modelling of partner age distribution as a function of respondent age, not producing population representative statistics for the Haitian population.\n\nThese data sets consisted of individuals\u2019 reports of their own age and sex and the ages of each of their sexual partners from the last year. Let $i\\in(1,\u2026,N)$ index reported partnerships, $a_{i}\\in[15,64]$ and $s_{i}\\in{0,1}$ be the age and sex of the respondent in partnership $i$ with $s=1$ indicating female, and pi be the age of non-respondent partner in partnership $i$. These questionnaires do not ask specifically about partner sex, but self-reporting of non-heterosexual partnerships in these populations is thought to be low (Arias Garcia et al., 2020; World Health Organization and UNAIDS, 2020).\n\nRespondents in each of these data sets are disproportionately likely to report that their partners\u2019 ages are multiples of five or multiples of five away from their own age, leading to distinct \u2018heaping\u2019 in the empirical partner age (or age difference) distributions at multiples of five. For example, if a questionnaire asks \u2018how many years older or younger is your partner than you?', respondents might be disproportionately likely to report a multiple of five, leading to age differences that are heaped on multiples of five. We tested the sensitivity of our results to heaping by developing a simple \u2018deheaping\u2019 algorithm, applying it to the AHRI data, and running each analysis on the deheaped AHRI data. We present these results in Appendix section \u2018Age heaping'.\n\n### Probability distribution comparison\n\nTo identify the best probability distribution for modelling sexual partner age distributions, we split all three data sets into 12 subsets by sex and five-year age bin ranging from 20 to 50, resulting in 36 subsets, and fit a number of distribution-dependent variable combinations to each subset.\n\n#### Distributions\n\nWe tested five candidate probability distributions: normal, skew normal, beta, gamma, and sinh-arcsinh. Table 1 summarises the domains, parameters, and probability density functions (PDFs) of these distributions. Because the gamma distribution is always right-skewed and men typically partner with women who are younger than them, we transformed data among male respondents to be right-skewed when using the gamma distribution. Specifically, we multiplied the men\u2019s partners\u2019 ages by \u22121 to reflect the distribution horizontally across the y-axis, and added 150 to the reflected ages to ensure that all resulting values were positive. Similarly, the beta distribution is only defined on the interval (0,\u00a01), so, only when using a beta distribution, we scaled all partner ages to be between zero and one using upper and lower bounds of 0 and 150.\n\n**Table 1.**\n Details of the five distributions tested in this analysis.We define $x_{z}=(x-\\mu)/\\sigma$, $p\u2062(x)$ to be the standard normal PDF, $\u03a6\u2062(x)$ to be the standard normal cumulative density function, $S_{\u03f5,\\delta}\u2062(x)=sinh\u2061(\u03f5+\\delta\u2062asinh(x))$, and $C_{\u03f5,\\delta}\u2062(x)=cosh\u2061(\u03f5+\\delta\u2062asinh(x))$.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Distribution</th>\n      <th>Parameters</th>\n      <th>Domain</th>\n      <th>PDF</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Normal</td>\n      <td>\u03bc\u2062(location)\u03c3&gt;0\u2062(scale)</td>\n      <td>\u211d</td>\n      <td>1\u03c3\u20622\u2062\u03c0\u2062exp\u2061[-xz2]</td>\n    </tr>\n    <tr>\n      <td>Skew normal</td>\n      <td>\u03bc\u2062(location)\u03c3&gt;0\u2062(scale)\u03f5\u2062(skewness)</td>\n      <td>\u211d</td>\n      <td>2\u03c3\u2062p\u2062(xz)\u2062\u03a6\u2062(\u03f5\u2062xz)</td>\n    </tr>\n    <tr>\n      <td>Gamma</td>\n      <td>k&gt;0\u2062(shape)\u03b8&gt;0\u2062(scale)</td>\n      <td>\u211d+</td>\n      <td>1\u0393\u2062(k)\u2062\u03b8k\u2062xk-1\u2062exp\u2061[-x\u03b8]</td>\n    </tr>\n    <tr>\n      <td>Beta</td>\n      <td>\u03b1&gt;0\u2062(left)\u03b2&gt;0\u2062(right)</td>\n      <td>\u211d(0,1)</td>\n      <td>x\u03b1-1\u2062(1-x)\u03b2-1B\u2062(\u03b1,\u03b2)</td>\n    </tr>\n    <tr>\n      <td>Sinh-arcinh</td>\n      <td>\u03bc\u2062(location)\u03c3&gt;0\u2062(scale)\u03f5\u2062(skewness)\u03b4&gt;0\u2062(tail weight)</td>\n      <td>\u211d</td>\n      <td>1\u03c3\u20622\u2062\u03c0\u2062\u03b4\u2062C\u03f5,\u03b4\u2062(xz)1+xz2\u2062exp\u2061[-S\u03f5,\u03b4\u2062(xz)22]</td>\n    </tr>\n  </tbody>\n</table>\n\nThe sinh-arcsinh distribution, presented by Jones and Pewsey, 2009, is an extension of Johnson\u2019s distribution (Johnson, 1949). It has four parameters: location, scale, skewness, and tail weight (denoted, \u03bc, \u03c3, $\u03f5$, and \u03b4, respectively), and it can deviate substantially from the normal distribution. Figure 1 plots the density of this distribution with $\\mu=0$ and $\\sigma=1$ for a variety of values of skewness and tail weight.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68318/elife-68318-fig1-v2.jpg)\n\n**Figure 1.:** The sinh-arcsinh density with $\\mu=0$, $\\sigma=1$, and a variety of assumptions about $\u03f5$ and \u03b4.\n\n#### Dependent variable transformations\n\nWe considered the possibility that certain distributions could fit better to particular transformations of the dependent variable (partner age) by testing a set of four potential outcome parametrisations. For example, if $X$ is a positive-valued, right-skewed random variable, then assuming $log\u2061X$ is normally distributed might be more effective than assuming that $X$ itself is normal.\n\nLet yi be the dependent variable value for partnership $i$, and let ai and pi be the respondent age and partner age of partnership $i$, respectively. We tested the following dependent variables:\n\nBecause the gamma and beta distributions are not defined on the entire real line, we only fit them with the linear age dependent variable with the previously discussed transformations.\n\nTo identify which distribution-dependent variable combination best modelled the characteristics of sexual partner age distributions, we stratified each of our three data sets by sex and 5-year age bin from 20 to 24 through 45\u201349. We omitted ages 15\u201319 from the probability distribution comparison because relatively small sample sizes in that group would make reliable comparison difficult. We fit every viable distribution-dependent variable combination to all 36 data set-/sex-/age bin-specific subsets independently. Given that we fit only the linear age dependent variable to the gamma and beta distributions, comprising a total of 504 models (14 per data subset). We fit each model using the brms R package (B\u00fcrkner, 2018), defining custom families as necessary.\n\n### Distributional regression evaluation\n\nGiven a probability distribution that accurately replicated the non-Gaussian characteristics of partner age distributions, we tested whether or not distributional regression would allow us to pool data across age and sex without sacrificing fit. In distributional regression, we make all of our distributional parameters, not just the mean, functions of data (Kneib and Umlauf, 2017). Taking conventional Bayesian regression as an example, we have\n\n$$\ny_{i}\u223cN\u2062(\\mu_{i},\\sigma)\\mu_{i}=\\beta\u2062\ud835\udc17_{i},\n$$\n\nwhere \u03b2 and $log\u2061\\sigma$ are free parameters. There is an explicit assumption in this model that the standard deviation of the generating distribution is constant across all observations. We can use distributional regression to relax this assumption, making \u03c3 a function of data:\n\n$$\ny_{i}\u223cN\u2062(\\mu_{i},\\sigma_{i})\\mu_{i}=\\beta^{\\mu}\u2062\ud835\udc17_{i}^{\\mu}log\u2061\\sigma_{i}=\\beta^{\\sigma}\u2062\ud835\udc17_{i}^{\\sigma},\n$$\n\nwhere $\\beta^{\\mu}$ and $\\beta^{\\sigma}$ are now our free parameters. Note that we have not assumed that $\ud835\udc17^{\\mu}=\ud835\udc17^{\\sigma}$. If $\ud835\udc17^{\\sigma}$ is a column of ones, this model is identical to the conventional case. This approach increases the complexity of the model and requires more data, but, based on previously described characteristics of how the distribution of partnership age distribution changes with age, even a simple model for our distributional parameters could yield large improvements.\n\nIn this application, we modelled the log-ratio dependent variable with the sinh-arcsinh distribution, specifying a model for all four distributional parameters:\n\n$$\nlog\u2061(p_{i}/a_{i})\u223csinh\u2061(\\mu_{i},\\sigma_{i},\u03f5_{i},\\delta_{i})\\mu_{i}=\\beta^{\\mu}\u2062\ud835\udc17_{i}^{\\mu}log\u2061\\sigma_{i}^{\u22c6}=\\beta^{\\sigma}\u2062\ud835\udc17_{i}^{\\sigma}\u03f5_{i}=\\beta^{\u03f5}\u2062\ud835\udc17_{i}^{\u03f5}log\u2061\\delta_{i}=\\beta^{\\delta}\u2062\ud835\udc17_{i}^{\\delta}\\sigma_{i}=\\sigma_{i}^{\u22c6}\u2062\\delta_{i},\n$$\n\nwhere $\\beta^{\\mu}$, $\\beta^{\\sigma}$, $\\beta^{\u03f5}$, and $\\beta^{\\delta}$ are free parameters. We placed essentially arbitrary shrinkage priors on all coefficients:\n\n$$\n\\beta^{\\mu},\u00a0\\beta^{\\sigma},\u00a0\\beta^{\u03f5},\u00a0\\beta^{\\delta}\u223cN(0,5).\n$$\n\nBy varying the specifications of the four design matrices, $\ud835\udc17^{\\mu}$, $\ud835\udc17^{\\sigma}$, $\ud835\udc17^{\u03f5}$, and $\ud835\udc17^{\\delta}$, we tested how well a series of increasingly complex distributional regression models fit to each data set. We fit the following models, which varied in the definitions of their four design matrices:\n\nTable 2 describes all five models. By fitting a wide set of specifications, we hoped to assess whether the additional complexity incurred by distributional regression was valuable. We fit each of the five models to all three data sets, including all respondents aged 15\u201364 years. We implemented these analyses with brms (B\u00fcrkner, 2018), which has deep support for distributional regression. More detailed descriptions of each model are available in the \u2018Model specification details\u2019 section of the Appendix. We tested the effect of age heaping on this analysis by fitting to the deheaped AHRI data and report results in the \u2018Age heaping\u2019 section of the Appendix.\n\n**Table 2.**\n Summary of five models fit in this analysis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>Distributional?</th>\n      <th>Location</th>\n      <th>Other parameters</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Conventional</td>\n      <td>No</td>\n      <td>Age-sex interaction</td>\n      <td>Constant</td>\n    </tr>\n    <tr>\n      <td>Distributional 1</td>\n      <td>Yes</td>\n      <td>Age-sex interaction</td>\n      <td>Age and sex effects</td>\n    </tr>\n    <tr>\n      <td>Distributional 2</td>\n      <td>Yes</td>\n      <td>Age-sex interaction</td>\n      <td>Age-sex interaction</td>\n    </tr>\n    <tr>\n      <td>Distributional 3</td>\n      <td>Yes</td>\n      <td>Sex-specific splines</td>\n      <td>Age-sex interaction</td>\n    </tr>\n    <tr>\n      <td>Distributional 4</td>\n      <td>Yes</td>\n      <td>Sex-specific splines</td>\n      <td>Sex-specific splines</td>\n    </tr>\n  </tbody>\n</table>\n\n### Model comparison\n\nAcross both analyses, we used two metrics to measure model fit. First, we calculated the expected log posterior density (ELPD), which estimates the density of the model at a new, unobserved data point (Vehtari et al., 2017). In cases where we wanted to compare across dependent variables, we multiplied the posterior densities of any variables resulting from non-linear transformations of observed partner ages by the Jacobians of the transformations. For example, if our observation model was defined on the log-age dependent variable $y_{i}=log\u2061p_{i}$, we divided the posterior density by pi. We used the loo R package (Vehtari et al., 2020) to calculate ELPD values.\n\nTo measure the ability of our models to replicate partner age distributions in an objective and interpretable way, we found the root mean squared error (RMSE) between the observed and posterior predictive quantiles. We calculated quantiles from 10 to 90 in increments of 10 by age bin and sex in the data and in the posterior predictions, and found the error in model prediction of each quantile. This measure tells how well our model predicts the entire distribution in the same units as our predictions. It is equivalent to finding the root mean squared distance from the line of equality in a quantile-quantile (QQ) plot.\n\n### Software\n\nWe conducted all of these analysis using the R programming language (R Development Core Team, 2020) and the brms library (B\u00fcrkner, 2018). We used the loo library to estimate all ELPDs (Vehtari et al., 2020), and produced all plots in this paper with the ggplot2 library (Wickham, 2016). We cannot provide the data we used for this analysis, but we do provide code and data for a simulated case on GitHub (https://github.com/twolock/distreg-illustration; Wolock, 2021, copy archived at swh:1:rev:a7f808f2cde2bb16edde8fdcbfa6e208df7952f9).\n\n## Results\n\nThe AHRI data included 77,619 partnerships, Manicaland had 58,676, and the Haiti DHS had 12,447. There were 36,033 respondents reporting at least one partnership in the AHRI data, 25,024 in the Manicaland data, and 12,143 in the Haiti DHS, resulting in averages of 2.2, 2.3, and 1.0 partners per respondent, respectively. As an illustrative example of the distribution of partner ages, Figure 2 presents histograms of reported partner ages among women aged 34 years for each of our three data sets. Figure 3 shows the sex- and age bin-specific empirical moments for the three data sets. Mean partner age increased with respondent age consistently for both sexes across all three data sets: among women, mean partner age increased by 26.0, 22.7, and 23.7 years in the AHRI data, Haiti DHS data, and Manicaland data, respectively, between age bins 20\u201324 and 45\u201349. However, higher order moments were less consistent: the standard deviation of women\u2019s partners\u2019 ages changed by 2.3, 0.5, and 3.5 years in the AHRI data, Haiti DHS data, and Manicaland data, respectively, between age bins 20\u201324 and 45\u201349.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68318/elife-68318-fig2-v2.jpg)\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68318/elife-68318-fig3-v2.jpg)\n\nWithin each data set, there is systematic variation across sex. For example, the standard deviation of partner ages in the Haiti DHS increased by 2.5 years among men and only by 0.5 years among women. These summary statistics illustrate the heterogeneity of partner age distributions across age and sex.\n\n### Probability distribution comparison\n\nTo identify the probability distribution that most accurately described the variation in sexual partner age distributions, we first determined the dependent variable with the highest ELPD for each distribution-dependent variable combination. Figure 4 illustrates each probability distribution\u2019s best fit to AHRI data among women aged 35\u201339 with each of the best distribution-specific dependent variables. Results for all 36 data subsets and the 12 deheaped subsets are presented\u00a0in\u00a0Appendix 1\u2014table 2\u20139.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68318/elife-68318-fig4-v2.jpg)\n\n**Figure 4.:** Posterior predictive distributions come from fitting each age bin/sex combination independently.\n\nThe best dependent variable varied across data subset and probability distribution. Table 3 provides the share of data sets for which each dependent variable has the highest ELPD given each distribution. The log-ratiodependent variable was best in 50.0% of subsets with a normal distribution, but it was best in only 27.8% of subsets with a skew normal distribution. The dependent variable that was best in a plurality of subsets in each probability distribution (i.e. the variable with the highest percentage in each column of Table 3) used a $log$ link function. We restricted all remaining comparisons to each distribution-subset combination\u2019s best dependent variable.\n\n**Table 3.**\n Share of subsets in which each dependent variable yields the highest ELPD given each probability distribution (excluding deheaped AHRI data).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable</th>\n      <th>Normal</th>\n      <th>Skew normal</th>\n      <th>Sinh-arcsinh</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age difference</td>\n      <td>22.2%</td>\n      <td>25.0%</td>\n      <td>16.7%</td>\n    </tr>\n    <tr>\n      <td>Linear age</td>\n      <td>8.3%</td>\n      <td>5.6%</td>\n      <td>16.7%</td>\n    </tr>\n    <tr>\n      <td>Log-age</td>\n      <td>19.4%</td>\n      <td>41.7%</td>\n      <td>30.6%</td>\n    </tr>\n    <tr>\n      <td>Log-ratio</td>\n      <td>50.0%</td>\n      <td>27.8%</td>\n      <td>36.1%</td>\n    </tr>\n  </tbody>\n</table>\n\nThe sinh-arcsinh distribution had the highest ELPD in 35 of 36 data subsets (98%). In 29 of the 35 (83%) cases in which the sinh-arcsinh provided the highest ELPD, the absolute value of the ratio of the difference between the two best ELPDs and the estimated standard error of the difference was greater than 2, indicating that the sinh-arcsinh distribution was significantly better than the alternatives in the majority of cases. In one case, men aged 20\u201324 in the Haiti DHS, the skew normal distribution resulted in a slightly higher ELPD than the sinh-arcsinh distribution, but the standard error of the difference was greater than the difference. These results were not affected by deheaping the data (Appendix section \u2018Age heaping\u2019).\n\nTo summarise each distribution\u2019s performance, we calculated the average ELPD and QQ RMSE across the three data sets (Table 4). The sinh-arcsinh distribution had the highest average ELPD and lowest average QQ RMSE in all three data sets. The sinh-arcsinh distribution was, on average, able to predict the empirical quantiles of each data set within half a year of accuracy (0.36, 0.37, and 0.44 years for the AHRI, Haiti DHS, and Manicaland data, respectively). Overlaid QQ plots are\u00a0presented\u00a0in\u00a0Appendix 1\u2014figure 3.\n\n**Table 4.**\n Model comparison metrics averaged across all data subsets for all three data sets.Higher ELPD values indicate better fit. Lower QQ RMSE values indicate more accurate prediction of empirical quantiles. Bolded rows are best across all three data sets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Distribution</th>\n      <th>AHRI</th>\n      <th>Haiti 2016\u201317 DHS</th>\n      <th>Manicaland</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">ELPD</td>\n    </tr>\n    <tr>\n      <td>Gamma</td>\n      <td>\u221214847.2</td>\n      <td>\u22122917.9</td>\n      <td>\u221213152.8</td>\n    </tr>\n    <tr>\n      <td>Beta</td>\n      <td>\u221214748.0</td>\n      <td>\u22122896.5</td>\n      <td>\u221213003.5</td>\n    </tr>\n    <tr>\n      <td>Normal</td>\n      <td>\u221214593.7</td>\n      <td>\u22122868.4</td>\n      <td>\u221212856.8</td>\n    </tr>\n    <tr>\n      <td>Skew normal</td>\n      <td>\u221214505.1</td>\n      <td>\u22122854.0</td>\n      <td>\u221212778.5</td>\n    </tr>\n    <tr>\n      <td>Sinh-arcsinh</td>\n      <td>\u221214312.5</td>\n      <td>\u22122839.5</td>\n      <td>\u221212625.8</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">QQ RMSE</td>\n    </tr>\n    <tr>\n      <td>Gamma</td>\n      <td>0.83</td>\n      <td>0.82</td>\n      <td>0.95</td>\n    </tr>\n    <tr>\n      <td>Beta</td>\n      <td>0.99</td>\n      <td>0.82</td>\n      <td>1.11</td>\n    </tr>\n    <tr>\n      <td>Normal</td>\n      <td>0.82</td>\n      <td>0.68</td>\n      <td>0.97</td>\n    </tr>\n    <tr>\n      <td>Skew normal</td>\n      <td>0.77</td>\n      <td>0.65</td>\n      <td>0.85</td>\n    </tr>\n    <tr>\n      <td>Sinh-arcsinh</td>\n      <td>0.36</td>\n      <td>0.37</td>\n      <td>0.44</td>\n    </tr>\n  </tbody>\n</table>\n\n### Distributional regression evaluation\n\nWe fit all five distributional regression specifications to all three of our data sets with sinh-arcsinh distributions and log-ratio-dependent variables and compared the ELPDs and QQ RMSEs as before (provided in Table 5). Across all three data sets, the most complex distributional model (Distributional 4) had the highest ELPD and lowest QQ RMSE. When fit to the AHRI and Manicaland data sets (but not for the Haiti DHS), the most complex distributional model was at least two standard errors better than the next best model. Notably, the largest ELPD improvements came from moving from conventional regression (Conventional) to the simplest distributional model (improvements of 1646.0 units, 361.0 units, and 2181.2 units in the AHRI, Haiti DHS, and Manicaland data, respectively). Full results are presented in Appendix 1\u2014table 10.\n\n**Table 5.**\n ELPD and QQ RMSE values for all five distributional regression models fit to each data set.The models increase in complexity from Conventional Regression to Distributional Model 4. Bolded ELPD values are more than two standard errors higher than the next best value in the column. Bolded QQ RMSE values are lowest in their column.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>AHRI</th>\n      <th>Haiti 2016\u201317 DHS</th>\n      <th>Manicaland</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">ELPD</td>\n    </tr>\n    <tr>\n      <td>Conventional</td>\n      <td>52689.2</td>\n      <td>4777.8</td>\n      <td>21011.3</td>\n    </tr>\n    <tr>\n      <td>Distributional 1</td>\n      <td>54335.2</td>\n      <td>5140.8</td>\n      <td>23192.5</td>\n    </tr>\n    <tr>\n      <td>Distributional 2</td>\n      <td>54794.8</td>\n      <td>5138.7</td>\n      <td>23472.1</td>\n    </tr>\n    <tr>\n      <td>Distributional 3</td>\n      <td>55534.2</td>\n      <td>5196.7</td>\n      <td>24313.7</td>\n    </tr>\n    <tr>\n      <td>Distributional 4</td>\n      <td>55841.9</td>\n      <td>5207.6</td>\n      <td>24516.1</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">QQ RMSE</td>\n    </tr>\n    <tr>\n      <td>Conventional</td>\n      <td>1.30</td>\n      <td>1.33</td>\n      <td>2.05</td>\n    </tr>\n    <tr>\n      <td>Distributional 1</td>\n      <td>1.15</td>\n      <td>0.98</td>\n      <td>1.89</td>\n    </tr>\n    <tr>\n      <td>Distributional 2</td>\n      <td>1.21</td>\n      <td>0.99</td>\n      <td>1.80</td>\n    </tr>\n    <tr>\n      <td>Distributional 3</td>\n      <td>0.93</td>\n      <td>0.91</td>\n      <td>1.34</td>\n    </tr>\n    <tr>\n      <td>Distributional 4</td>\n      <td>0.66</td>\n      <td>0.84</td>\n      <td>1.04</td>\n    </tr>\n  </tbody>\n</table>\n\nFigure 5 shows the posterior predictive distributions from the conventional regression model and the most complex distributional model among men aged 16 years, 24 years, and 37 years in the AHRI data to illustrate the effect of distributional regression. Not only does the distributional model capture the high peak in the youngest age more accurately, but it also allows the variance of the distributions to change appropriately (beyond the change that naturally results from the log link function).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68318/elife-68318-fig5-v2.jpg)\n\n**Figure 5.:** Posterior predictive distributions come from regression models fit to the entire AHRI data set.\n\nFigure 6 illustrates posterior summaries among men and women in the AHRI data for all four distributional parameters for the conventional regression model, the simplest distributional model, and the most complex distributional model. The red estimates (Conventional Regression) of the three higher order parameters were constant across age and sex, whereas the blue estimates (Distributional Model 1) included independent, linear age and sex effects. The orange estimates (Distributional Model 4) were generated sex-specific splines with respect to age, allowing for flexible variation across age and sex.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68318/elife-68318-fig6-v2.jpg)\n\n**Figure 6.:** \u2018Conventional\u2019 assumes no variation across age and sex, \u2018Distributional 1\u2019 allows for independent age and sex effects, and \u2018Distributional 4\u2019 includes sex-specific splines with respect to age.\n\nThe third row of plots in Figure 6, which corresponds to the skewness parameter, illustrates the impact of incorporating sex and age effects into the model. The conventional regression model estimated that neither the distrbution for men nor women exhibited much skewness; the estimated parameter value was \u22120.05 (95% UI: \u22120.06 to \u22120.05) regardless of age, with 0.0 corresponding to perfect symmetry. However, when we allowed independent age and sex effects in Distributional Model 1, we estimated that at age 15, women\u2019s skewness was \u22120.26 (95% UI: \u22120.27 to \u22120.25) and men\u2019s was 0.11 (95% UI: 0.10 to 0.12).\n\nThe most complex model (Distributional Model 4) inferred sex-specific, non-linear variation with respect to age in all four distributional parameters. The non-linearity was particularly dramatic in the scale parameter among men. The scale value began at 0.05 (95% UI: 0.05\u20130.06) among 15-year-olds, peaked among 37-year-olds at 0.11 (95% UI: 0.10\u20130.11), and decreased back down to 0.05 (95% UI: 0.04\u20130.06) at age 64.\n\nFinally, Figure 7 presents inferred distributional parameters from Distributional Model 4 for both men and women for all three data sets. Based on those plots, the flexible model was justified for most distributional parameters in all three data sets. Were we to continue developing these models, this plot suggests that skewness might only need linear, sex-specific effects with respect to age. Interestingly, the 2016\u20132017 Haiti DHS and Manicaland estimates exhibit similar patterns across all four parameters, despite the different socio-cultural contexts surrounding partnerships in the two populations. We also note that the DHS does not collect data on adults aged 50 years and older, so our estimates in Haiti from age 50 to age 64 are purely extrapolated.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68318/elife-68318-fig7-v2.jpg)\n\n## Discussion\n\nWe found that the sinh-arcsinh distribution reproduced observed sexual partner age distributions better than a number of other possible distributional assumptions across age and sex in three distinct data sets. We integrated this finding into a distributional regression framework using existing statistical modelling software. Even the simplest distributional regression in our set of candidate models far outperformed conventional regression, in which all moments except the first are estimated as constants. Our most complex distributional model fit better than all other models in all three data sets, suggesting that modelling these data benefits from the additional complexity.\n\nThese results indicate that distributional regression models with sinh-arcsinh distributions can accurately replicate age-/sex-specific sexual partner age distributions. This approach presents a number of advantages over previous methods. First, like Smid et al., it allows a unique distribution for every age-sex combination. As Figure 3 illustrates, partner age distributions can exhibit substantial, systematic variation across age and sex in any of the first four moments, so we must consider modelling strategies that allow for such variation. Second, distributional regression offers a principled method to propagate uncertainty through this estimation process.\n\nFinally, distributional regression implemented through brms provides access to a deep set of hierarchical modelling tools that could enable estimation in a variety of low-data settings. We evaluated a small set of relatively simple distributional models in this work, but, theoretically, each distributional parameter could have its own, arbitrarily complex hierarchical regression model. Using these tools, one could estimate unique partner age distributions across levels of stratification that are substantively interesting but do not provide sufficient sample size for independent estimation (e.g. study sites or geographic areas).\n\nWe have identified several limitations in this approach. First, the amount of data required to produce usefully precise estimates is not tested. Each additional distributional parameter introduces model parameters, so this method is more complex than conventional regression. The sinh-arcsinh distribution did fail to produce the highest ELPD in our smallest data subset (N = 170), but it was not significantly worse than the best distribution. More importantly, by integrating these data into a distributional modelling framework, we gain the ability to impose structure on these parameters, which could easily offset the cost of any additional model parameters.\n\nInterpreting the inferred model parameters in sinh-arcsinh regression can also be difficult. Although conventional regression estimates the effects of covariates on expected values, the sinh-arcsinh distribution is parametrised in terms of a location parameter. This parameter correlates closely with the central tendency of the distribution, but it is not strictly equal to the mean. We can reparametrise the distribution so that we estimate a mean (and therefore effects of covariates on the expected value), but it is not currently possible in the probabilistic programming software that underlies brms.\n\nThird, our analysis assumed that we were operating at a level of stratification at which partnerships are basically comparable, but any number of factors could lead to fundamentally different partner age distributions. For example, we did not control for whether the partnership was same-sex or the type of the partnership (married, casual, etc.). That said, our distributional framework would allow us to incorporate data on any of those factors directly into the model.\n\nThere are two sources of possible non-independence in our data sets that were not modelled. First, in the two cohort studies, participants are eligible to participate in multiple survey rounds, in which case the same partnership could be reported multiple times in our data set. Second, many individuals report multiple partners in the same survey, and the age of one partner may be correlated ages of other partners, for example due to individual preferences for partnerships. Because we modelled multiple observations of the same individual as conditionally independent, we anticipate that these correlations may artificially increase the precision of our estimates.\n\nFinally, our model does not address any reporting biases in self-reported partnership data. If certain relationship types are perceived as less socially acceptable, respondents might be less likely to report them, resulting in systematic missingness. Our method could still be appropriate to model the age distribution from the data reported about an under-reported partnership type, but it cannot predict whether or not a given partnership exists. However, if under-reporting correlates with partner age (or age difference), then the empirical distributions will be biased and our method will only smooth and interpolate the biased data.\n\nDespite these limitations, we believe that the strategy we present will work well in future projects that require estimates of partner age distributions. We plan to use these methods to produce age-mixing matrices to inform epidemic models of HIV, but there are a number of additional directions that could be explored. We are specifically interested in leveraging the spatio-temporal structure of the survey data used here. Hierarchical mapping exercises with household survey data are increasingly common in epidemiology, but estimating spatially varying partner age distributions would require an evaluation of how best to model higher order moments over space. We would, for example, need to consider how the variance of partner age distributions varies by urbanicity.\n\nSimilarly, population-based studies typically collect far more detailed information on partnerships than we took advantage of here. Relationship type is a key confounder of the association between respondent age and partner age (that we ignored for the purposes of our experiments). We might expect the age distributions of casual partners to vary substantially from those of long-term cohabiting partners. Because we have built our model in an existing regression framework, incorporating new covariates into any of the distributional regression specifications is straightforward. The distribution regression framework with the sinh-arcsinh may also be a useful parametric model for continuous representation of marginal distributions within sexual mixing models or network models, such as the ERGM framework.\n\nWe believe that our framework offers a flexible, accurate, and robust method for smoothing and interpolating sexual partner age distributions, but these methods are not specific to partner age distributions. The sinh-arcsinh distribution is relatively easy to implement without incurring high computational cost, so it could be applied in many settings. Even without the distributional regression framework, we have used here, allowing the third and fourth moments of the distribution to vary from the \u2018default\u2019 normal values could be valuable across a variety of applications.\n\nDistributional regression is also underutilised in social science applications. We often work with large surveys that would comfortably support models for higher order parameters. Data requirements will vary by application and model, but, as we have shown here, even a simple distributional model can improve fit and avoid biasing estimates.\n",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "85e0764a-ff14-4d59-853d-52394cf189de",
+      "submission_id": "a41a12d4-cdb7-4b78-b617-335eddbadda6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tal\u00eda Malag\u00f3n, McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68318.sa1](https://doi.org/10.7554/eLife.68318.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper demonstrates the use of a sinh-arcsinh distribution to fit sex partner age distributions across different settings, and shows a superior fit compared to other more conventional distributions and regression methods. The methods outlined in this study will be of particular interest to social science researchers examining age mixing patterns, and for infectious disease modelers wishing to model sexual partner age mixing into their frameworks.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Evaluating distributional regression strategies for modelling self-reported sexual age-mixing\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Adam Akullian (Reviewer #2).\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another. What follows below is the Reviewing Editor's edited compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review. Please submit a revised version that addresses these concerns directly.\n\nEssential revisions:\n\n1) Include more discussion about biases in self-reported data, including misreporting of partnership characteristics, selection bias, and missing data; also, discuss how these biases may affect the modelling of age mixing patterns.\n\n2) Some methods could be further clarified by including text from the appendix into the main text.\n\n3) Discuss how your results compare with and add to previous statistical frameworks for age mixing, notably log-linear models for mixing and Exponential-family Random Graph Models\n\nReviewer #1:\n\nIn this study, Wolock et al. compare the ability of different distributions to fit sexual age mixing patterns in a variety of settings, and provide a modeling framework for fitting these distributions across all ages without having to partition the data into separate datasets. They convincingly demonstrate that a sinh-arcsinh distribution will better fit the data than many other commonly used distributions, and also explore various ways of parameterizing age differences between partners. In general, the sinh-arcsinh produced both better fit statistics and more visually pleasing fits to the data. Moreover, the results confirm that more complex distributional assumptions with more parameters are in many cases warranted to fit age mixing patterns.\n\nParticular strengths of this study are the exhaustive examination of multiple distributional assumptions, the use of multiple datasets to test the generalizability of results across regions, and use of objective fit statistics to discriminate between models and distributions. I do not see any major weaknesses, apart from maybe the issue of how possible it would be to fit these more complex distributions and models to smaller datasets, where there is less data to inform parameters.\n\nAs the authors point out, the methods outlined in this paper could be extended by including further stratification factors predicting age mixing, or potentially also mixing by some other continuous characteristics that are not expected to follow a normal distribution. The authors provided some sample code for fitting these distributions to the data, which should help others implement their proposed methods.\n\nComments for the authors:\n\n\u2022 I had a lot of difficulty following the methods for the second aim, the regression component. I was very unclear on what was the outcome (dependent variables) being modeled and what were the parameters of the model. The appendix on model specifications helped to explain this a bit more. I think the manuscript would benefit from putting the model specification details from the appendix in the main text, as I could not understand what was being done without this further information.\n\n\u2022 I find the heaping of ages surprising. This might have occurred due to the way the question about partner age was framed to participants. It might be useful to comment on the wording of this question across the different studies, and if there was a particular way of wording the question that led to more heaping in one study than in others.\n\n\u2022 P. 8 I was initially confused as to why there are 36 subsets, given that there are only 2 sexes and 6 age groups between 20 and 50. It was not clear that there was a third stratification (survey). You should mention there are also 3 surveys (2*6*3=36).\n\n\u2022 Table 1: the definition in the legend for Ce,d should probably read Ce,d(x).\n\nReviewer #2:\n\nIn \"Evaluating distributional regression strategies for modelling self-reported sexual age-mixing\" Wolock and colleagues present a statistical modeling framework to estimate the age-distribution of sexual partners from self-reported data. The authors use data from three population-level surveys where respondents report the ages of their most recent sexual partners. The authors use a Bayesian distributional regression approach to fit probability distribution parameters to the data and assess model performance. In this way, the authors demonstrate that a unique distribution of partnership ages can be reconstructed for each age and sex combination. The best fitting distributions and parameterizations are presented in the paper and the authors found that the sinh-arcsinh distribution most accurately reconstructed the distribution of partnership ages for each of the three geographies. Results from this analysis will be highly useful as a component of HIV (or other STI) risk prediction or to reconstruct sexual networks for mathematical models of STI transmission.\n\nThe main strength of this analysis is the simplicity of their modeling approach, which uses probability distributions with few parameters to capture the age distribution of sexual partnerships. This approach will allow researchers to easily simulate age- and sex-specific partnership probabilities and inherent uncertainty in those estimates without the need for complex empirical distributions.\n\nWeaknesses of the analysis center around the inherent limitations of self-reported data on sexual partnership age. The authors use data on self-reported age(s) of a respondent's partnership(s) in the last 12 months. The authors don't consider potential reporting biases and missing data associated with self-report that may be differential by age, gender, and relationship type. For example, some individuals may selectively report certain types of partners over others \u2013 perhaps stable partnerships versus transient ones. Missing data is quite common for sensitive questions on sexual histories and thus the results presented here should be interpreted with that in mind. It is important to consider that some relationship types may be under-represented and may lead to biased age distributions.\n\nNonetheless, the results support the conclusions made by the authors. This paper makes an important methodological contribution to the literature on sexual networks and has broad application to understanding the transmission of STI's, especially HIV in diverse settings.\n\nOverall this paper has a sound methodological approach and is clearly written.\n\n1.Page 12, line 241, the number of partnerships is indicated for each geography but not the number of respondents. Would be good to understand how many individuals reported just one partner versus more than one. Also, I assume the same partner could be reported multiple times at different survey rounds for the two longitudinal datasets, which could create pseudo replication. Could the authors discuss how this type of correlated data might influence the uncertainty estimates?\n\nReviewer #3:\n\nThe primary weakness with this manuscript is that the authors appear to be unaware of two robust statistical frameworks that have been used to estimate age mixing (and other forms of heterogeneous mixing) for many years.\n\nThe first is the use of log-linear models for mixing matrices (Morris, 1991, 1993). These models can be used to fit a wide array of mixing patterns, both discrete and continuous, and are also quite general. They offer everything from parsimonious summary parameterization (with assessments of goodness of fit) to dummy parameterization for each cell in the matrix to get exact fits. They benefit from the well developed statistical theory and methods that support generalized linear models. While they can be generalized to include random effects for persons, the limitations of these models is that they can not be used to represent \"edge dependence\" (think monogamy bias \u2013 the presence of one spouse (\"edge\") has a profound effect on the probabilty of another spouse for the same individual). The papers above integrate the resulting estimates into a standard deterministic compartmental model for epidemic simulation.\n\nThe second is the more recent Exponential-family Random Graph Models (ERGMs, and their temporal cousins TERGMs \u2013 references provided below). These models are also a form of GLM, but extend the log-linear framework with the capability to represent dependent edges. They are designed primarily for use with stochastic network epidemic models, and are sufficiently well established that they serve as the foundation for the EpiModel (Jenness et al. 2018) software package.\n\nIn both cases, the benefit of these models is that they are a general, principled statistical framework, with well understood properties and established methods for model testing and evaluation. This enables the analyst to model not only age mixing, but other forms of heterogeneous mixing (e.g., by sex, or geographic location, or race/ethnicity), and, in the case of TERGMs, degree distributions and higher order network configurations, along with heterogeneous edge duration. All of these terms can be estimated jointly, from sampled network data, and simulations from the estimated model will reproduce the sufficient statistics in expectation. This latter property makes these models a natural foundation for epidemic simulation.\n\nAs a result, the added value of this distributional regression strategy is unclear. And this statement: \"More broadly, no previous work has systematically evaluated the wide variety of distributions potentially available to model partner age distributions\" is simply untrue. Both frameworks above provide general methods for fitting and assessing a wide variety of distributions.\n\nReferences:\n\nMorris, M. (1991). \"A log-linear modeling framework for selective mixing.\" Math Biosc 107: 349-377.\n\nMorris, M. (1993). \"Epidemiology and Social Networks: Modeling Structured Diffusion.\" Soc. Meth. Res. 22(1): 99-126.\n\nJenness, S. M., S. M. Goodreau and M. Morris (2018). \"EpiModel: An R Package for Mathematical Modeling of Infectious Disease over Networks.\" Journal of Statistical Software 84(8).\n\nSelected refs for ERGMs and TERGMs\n\nHunter, D. R., M. S. Handcock, C. T. Butts, S. M. Goodreau and M. Morris (2008). \"ergm: A Package to Fit, Simulate and Diagnose Exponential-Family Models for Networks.\" Journal of Statistical Software 42(i03).\n\nHunter, D. R., S. M. Goodreau and M. S. Handcock (2008). \"Goodness of fit of social network models.\" Journal of the American Statistical Association 103(481): 248-258.\n\nKrivitsky, P. N. and M. S. Handcock (2014). \"A separable model for dynamic networks.\" Journal of the Royal Statistical Society, Series B 76(1): 29-46.\n\nKrivitsky, P. N., M. S. Handcock and M. Morris (2011). \"Adjusting for Network Size and Composition Effects in Exponential-Family Random Graph Models.\" Statistical Methodology 8(4): 319\u2013339.\n\nKrivitsky, P. N. and M. Morris (2017). \"Inference for social network models from egocentrically sampled data, with application to understanding persistent racial disparities in HIV prevalence in the US.\" Annals of Applied Statistics 11(1): 427-455.\n",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "46f39391-58e9-4e15-a962-c65259e8852b",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C1",
+      "claim": "The age dynamics of sexual partnership formation determine patterns of sexually transmitted disease transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The age dynamics of sexual partnership formation determine patterns of sexually transmitted disease transmission and have long been a focus of researchers studying human immunodeficiency virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract and introduction, representing scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "b82dc1cf-22db-4c35-ab84-2c0932682a31",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C2",
+      "claim": "Data on self-reported sexual partner age distributions are available from a variety of sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Data on self-reported sexual partner age distributions are available from a variety of sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact and is supported by the subsequent description of data sources used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "e3106ef3-bf93-4713-816c-626a30276220",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C3",
+      "claim": "Distributional regression with a sinh-arcsinh distribution replicated observed partner age distributions most accurately across three geographically diverse data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that distributional regression with a sinh-arcsinh distribution replicated observed partner age distributions most accurately across three geographically diverse data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by ELPD and QQ RMSE comparisons presented in Tables 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "41120495-db89-4cb9-b61b-a90e3f5f49dd",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C4",
+      "claim": "Anderson et al., 1992 used a model of partnership formation to predict that mixing between young women and older men would amplify the already-substantial effect of HIV on population growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Anderson et al., 1992 used a model of partnership formation to predict that mixing between young women and older men would amplify the already-substantial effect of HIV on population growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Anderson et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "9d3c2a87-9120-491f-8793-6cb5849af667",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C5",
+      "claim": "Garnett and Anderson, 1994 used a mathematical model to show that patterns of age-mixing could substantially influence the magnitude and timing of hypothetical epidemic trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Garnett and Anderson, 1994 used a mathematical model to show that patterns of age-mixing could substantially influence the magnitude and timing of hypothetical epidemic trajectories",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Garnett and Anderson, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "ffb89440-8c3a-459a-836c-e8317456c5ce",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C6",
+      "claim": "Hallett et al., 2007 demonstrated that delaying sexual debut and increasing age-similar partnerships could reduce an individual's risk of HIV infection in a highly endemic setting.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Hallett et al., 2007 demonstrated that delaying sexual debut and increasing age-similar partnerships could reduce an individual's risk of HIV infection in a highly endemic setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hallett et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "e241b9e7-ce1f-45db-b508-50a0d3f84ff5",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C7",
+      "claim": "Gregson et al., 2002 and Schaefer et al., 2017 observed that individuals with older partners were at greater risk of HIV infection in a general-population cohort in Zimbabwe.",
+      "claim_type": "EXPLICIT",
+      "source": "Gregson et al., 2002 and Schaefer et al., 2017 observed that individuals with older partners were at greater risk of HIV infection in a general-population cohort in Zimbabwe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gregson et al., 2002 and Schaefer et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "d1efe9b2-18d9-4573-83c9-182575226b41",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C8",
+      "claim": "Ritchwood et al., 2016 and Maughan-Brown et al., 2016 found that larger age differences were associated with more risky sexual behaviour in surveys of young South African people.",
+      "claim_type": "EXPLICIT",
+      "source": "Ritchwood et al., 2016 and Maughan-Brown et al., 2016 found that larger age differences were associated with more risky sexual behaviour in surveys of young South African people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ritchwood et al., 2016 and Maughan-Brown et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "96a22e93-f76f-4917-b27a-5e2f9265bdba",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C9",
+      "claim": "Akullian et al., 2017 found that partner age was an important risk factor for HIV infection in a cohort study in rural South Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Akullian et al., 2017 found that partner age was an important risk factor for HIV infection in a cohort study in rural South Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Akullian et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "aa3918ff-ab4c-4a31-9dee-336e13e006e4",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C10",
+      "claim": "Harling et al., 2014 found that age-disparate relationships were not associated greater risk of HIV acquisition in young women in South Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, Harling et al., 2014 found that age-disparate relationships were not associated greater risk of HIV acquisition in young women in South Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Harling et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "8b3bee67-fe1d-4ce5-bc5e-62eece686955",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C11",
+      "claim": "Data about sexual partner age-mixing are routinely collected by long-term cohort studies and large-scale household surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "Data about sexual partner age-mixing are routinely collected by long-term cohort studies (such as those that comprise the Analysing Longitudinal Population-based HIV/AIDS data on Africa, or ALPHA, Network) and large-scale household surveys (such as the Demographic and Health Surveys) (The DHS program, 2021; Reniers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to The DHS program, 2021 and Reniers et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "d3823941-d5b1-4eb3-b54e-66607b9cdeb2",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C12",
+      "claim": "Sexual partner age data are highly variable, skewed, and often deviate substantially from conventional parametric distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are highly variable, skewed, and often deviate substantially from conventional parametric distributions, such as the normal distribution or the gamma distribution (Beauclair et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Beauclair et al., 2018 and is also demonstrated by the empirical data presented in the study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "26ec9172-02b1-481d-83aa-9930c1e38063",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C13",
+      "claim": "Morris, 1991 developed a log-linear modelling framework to quantify selective mixing from contingency tables and applied the model to ordinal categorical data on husbands' and wives' ages in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Some notable previous approaches to modelling partner age distributions include (Morris, 1991), who developed a log-linear modelling framework to quantify selective mixing from contingency tables, and applied the model to ordinal categorical data on husbands' and wives' ages in the United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Morris, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "06d9e123-1a32-46de-b52b-2d8b888c0d44",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C14",
+      "claim": "Hallett et al. used a log-logistic distribution to continuously model partner age differences for women aged 15\u201345 years, assuming that the partner age difference distributions did not vary over respondent age.",
+      "claim_type": "EXPLICIT",
+      "source": "Hallett et al. used a log-logistic distribution to continuously model partner age differences for women aged 15\u201345 years, assuming that the partner age difference distributions did not vary over respondent age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by an implicit citation to Hallett et al. (the year is not provided in this sentence but is referenced earlier).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "32f3c8dc-9930-43cb-bcd4-530ff7837f49",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C15",
+      "claim": "Smid et al., 2018 fit skew normal distributions to each age-/sex-specific partner age distribution and used a secondary regression model to smooth the estimated skew normal parameters across respondent age.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, as an input to a model of Chlamydia trachomatis, Smid et al., 2018 fit skew normal distributions to each age-/sex-specific partner age distribution and used a secondary regression model to smooth the estimated skew normal parameters across respondent age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Smid et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "d08f0e0a-9384-4ed9-807f-24afe135844b",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C16",
+      "claim": "Smid et al. observed substantial changes in the estimated skew normal parameters with respect to respondent age.",
+      "claim_type": "EXPLICIT",
+      "source": "They observed substantial changes in the estimated skew normal parameters with respect to respondent age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Smid et al. (referenced in the previous sentence).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "ad9c9c12-2f09-4db3-9ba8-461c82f8dfd6",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C17",
+      "claim": "The AHRI data included 77,619 partnerships.",
+      "claim_type": "EXPLICIT",
+      "source": "The AHRI data included 77,619 partnerships",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "deee7f2a-5b2d-420f-89aa-0a2d2c32e594",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C18",
+      "claim": "Manicaland had 58,676 partnerships.",
+      "claim_type": "EXPLICIT",
+      "source": "Manicaland had 58,676",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "7a540dc1-16df-4ce9-a3dd-d5a6dd283a66",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C19",
+      "claim": "The Haiti DHS had 12,447 partnerships.",
+      "claim_type": "EXPLICIT",
+      "source": "and the Haiti DHS had 12,447.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "ca349192-ebc1-4e3d-9191-90b10802fa90",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C20",
+      "claim": "There were 36,033 respondents reporting at least one partnership in the AHRI data.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 36,033 respondents reporting at least one partnership in the AHRI data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "321d5e10-d516-4c90-8dbe-8dbfcd32ff59",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C21",
+      "claim": "There were 25,024 respondents reporting at least one partnership in the Manicaland data.",
+      "claim_type": "EXPLICIT",
+      "source": "25,024 in the Manicaland data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "6a2ed172-31f2-481f-8128-c8be10302435",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C22",
+      "claim": "There were 12,143 respondents reporting at least one partnership in the Haiti DHS.",
+      "claim_type": "EXPLICIT",
+      "source": "and 12,143 in the Haiti DHS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "dabd9978-721e-43c5-98de-53d7a3a0f276",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C23",
+      "claim": "The AHRI data had an average of 2.2 partners per respondent.",
+      "claim_type": "EXPLICIT",
+      "source": "resulting in averages of 2.2, 2.3, and 1.0 partners per respondent, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "72ba63cc-e776-47a2-9f8e-2ff52d574d23",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C24",
+      "claim": "The Manicaland data had an average of 2.3 partners per respondent.",
+      "claim_type": "EXPLICIT",
+      "source": "resulting in averages of 2.2, 2.3, and 1.0 partners per respondent, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "f78e6636-21d0-4a4d-837e-0bfc8c33dfe0",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C25",
+      "claim": "The Haiti DHS had an average of 1.0 partners per respondent.",
+      "claim_type": "EXPLICIT",
+      "source": "resulting in averages of 2.2, 2.3, and 1.0 partners per respondent, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "6ac32844-e38a-4467-ab80-e117539b744d",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C26",
+      "claim": "Mean partner age increased with respondent age consistently for both sexes across all three data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean partner age increased with respondent age consistently for both sexes across all three data sets",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data presented in Figure 3 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "7562d2c5-8f90-4452-ac8c-0d2359895863",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C27",
+      "claim": "Among women, mean partner age increased by 26.0 years in the AHRI data between age bins 20\u201324 and 45\u201349.",
+      "claim_type": "EXPLICIT",
+      "source": "among women, mean partner age increased by 26.0, 22.7, and 23.7 years in the AHRI data, Haiti DHS data, and Manicaland data, respectively, between age bins 20\u201324 and 45\u201349.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "8466d331-a72c-4238-9839-868425295bf5",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C28",
+      "claim": "Among women, mean partner age increased by 22.7 years in the Haiti DHS data between age bins 20\u201324 and 45\u201349.",
+      "claim_type": "EXPLICIT",
+      "source": "among women, mean partner age increased by 26.0, 22.7, and 23.7 years in the AHRI data, Haiti DHS data, and Manicaland data, respectively, between age bins 20\u201324 and 45\u201349.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "370722cc-27a1-40f1-868f-800b13dc1c2f",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C29",
+      "claim": "Among women, mean partner age increased by 23.7 years in the Manicaland data between age bins 20\u201324 and 45\u201349.",
+      "claim_type": "EXPLICIT",
+      "source": "among women, mean partner age increased by 26.0, 22.7, and 23.7 years in the AHRI data, Haiti DHS data, and Manicaland data, respectively, between age bins 20\u201324 and 45\u201349.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "180e77fb-6065-4dac-8f8e-0630f627d107",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C30",
+      "claim": "The standard deviation of women's partners' ages changed by 2.3 years in the AHRI data between age bins 20\u201324 and 45\u201349.",
+      "claim_type": "EXPLICIT",
+      "source": "the standard deviation of women's partners' ages changed by 2.3, 0.5, and 3.5 years in the AHRI data, Haiti DHS data, and Manicaland data, respectively, between age bins 20\u201324 and 45\u201349.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "7e6f92ef-6d03-4f92-ac22-21f3f9145b91",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C31",
+      "claim": "The standard deviation of women's partners' ages changed by 0.5 years in the Haiti DHS data between age bins 20\u201324 and 45\u201349.",
+      "claim_type": "EXPLICIT",
+      "source": "the standard deviation of women's partners' ages changed by 2.3, 0.5, and 3.5 years in the AHRI data, Haiti DHS data, and Manicaland data, respectively, between age bins 20\u201324 and 45\u201349.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "046a9990-0fa2-4885-8ddb-24ddda7d34cf",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C32",
+      "claim": "The standard deviation of women's partners' ages changed by 3.5 years in the Manicaland data between age bins 20\u201324 and 45\u201349.",
+      "claim_type": "EXPLICIT",
+      "source": "the standard deviation of women's partners' ages changed by 2.3, 0.5, and 3.5 years in the AHRI data, Haiti DHS data, and Manicaland data, respectively, between age bins 20\u201324 and 45\u201349.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "86bfc88b-0648-4bc6-a579-36ac512be267",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C33",
+      "claim": "The sinh-arcsinh distribution has four parameters: location, scale, skewness, and tail weight.",
+      "claim_type": "EXPLICIT",
+      "source": "It has four parameters: location, scale, skewness, and tail weight (denoted, \u03bc, \u03c3, \u03f5, and \u03b4, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mathematical properties of the sinh-arcsinh distribution as presented by Jones and Pewsey, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "a0ec3093-13f7-446f-8e86-d8f329c7bb56",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C34",
+      "claim": "The sinh-arcsinh distribution was originally proposed by Jones and Pewsey, 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "The sinh-arcsinh distribution, presented by Jones and Pewsey, 2009",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jones and Pewsey, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "d6325d35-6206-49b0-a5d8-448f4d8304ee",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C35",
+      "claim": "The sinh-arcsinh distribution is an extension of Johnson's distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The sinh-arcsinh distribution, presented by Jones and Pewsey, 2009, is an extension of Johnson's distribution (Johnson, 1949).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Jones and Pewsey, 2009 and Johnson, 1949.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "312a39a1-2f97-4ee1-a27a-85b3c0372488",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C36",
+      "claim": "The sinh-arcsinh distribution had the highest ELPD in 35 of 36 data subsets (98%).",
+      "claim_type": "EXPLICIT",
+      "source": "The sinh-arcsinh distribution had the highest ELPD in 35 of 36 data subsets (98%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model comparison results from the probability distribution comparison experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "8bfba3c3-4e65-48de-b4e0-aa624c55a084",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C37",
+      "claim": "In 29 of the 35 cases in which the sinh-arcsinh provided the highest ELPD, the absolute value of the ratio of the difference between the two best ELPDs and the estimated standard error of the difference was greater than 2.",
+      "claim_type": "EXPLICIT",
+      "source": "In 29 of the 35 (83%) cases in which the sinh-arcsinh provided the highest ELPD, the absolute value of the ratio of the difference between the two best ELPDs and the estimated standard error of the difference was greater than 2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis of the model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "f42e30ea-b671-4d4d-84c5-721d448d5c87",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C38",
+      "claim": "The sinh-arcsinh distribution was significantly better than the alternatives in the majority of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that the sinh-arcsinh distribution was significantly better than the alternatives in the majority of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the statistical analysis showing that the difference was greater than 2 standard errors in most cases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "05dbdbf6-d1f3-4be1-ad72-8b65426e9b04",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C39",
+      "claim": "The sinh-arcsinh distribution was able to predict the empirical quantiles of the AHRI data set within 0.36 years of accuracy on average.",
+      "claim_type": "EXPLICIT",
+      "source": "The sinh-arcsinh distribution was, on average, able to predict the empirical quantiles of each data set within half a year of accuracy (0.36, 0.37, and 0.44 years for the AHRI, Haiti DHS, and Manicaland data, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the QQ RMSE analysis presented in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "0714ad2f-098b-42cb-bc9a-05197f0f26cb",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C40",
+      "claim": "The sinh-arcsinh distribution was able to predict the empirical quantiles of the Haiti DHS data set within 0.37 years of accuracy on average.",
+      "claim_type": "EXPLICIT",
+      "source": "The sinh-arcsinh distribution was, on average, able to predict the empirical quantiles of each data set within half a year of accuracy (0.36, 0.37, and 0.44 years for the AHRI, Haiti DHS, and Manicaland data, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the QQ RMSE analysis presented in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "cc2f7b98-97af-4607-9815-5176c770ddd3",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C41",
+      "claim": "The sinh-arcsinh distribution was able to predict the empirical quantiles of the Manicaland data set within 0.44 years of accuracy on average.",
+      "claim_type": "EXPLICIT",
+      "source": "The sinh-arcsinh distribution was, on average, able to predict the empirical quantiles of each data set within half a year of accuracy (0.36, 0.37, and 0.44 years for the AHRI, Haiti DHS, and Manicaland data, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the QQ RMSE analysis presented in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "5cba0556-45ae-4ca7-b053-4acd73e1ba25",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C42",
+      "claim": "The most complex distributional model (Distributional 4) had the highest ELPD and lowest QQ RMSE across all three data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all three data sets, the most complex distributional model (Distributional 4) had the highest ELPD and lowest QQ RMSE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the distributional regression evaluation results presented in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "7acf7687-bed1-4103-b702-5200e54c2fb2",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C43",
+      "claim": "When fit to the AHRI and Manicaland data sets, the most complex distributional model was at least two standard errors better than the next best model.",
+      "claim_type": "EXPLICIT",
+      "source": "When fit to the AHRI and Manicaland data sets (but not for the Haiti DHS), the most complex distributional model was at least two standard errors better than the next best model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the distributional regression evaluation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "3d8f3148-8b1e-4392-8f96-0c502fce4ae4",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C44",
+      "claim": "The largest ELPD improvements came from moving from conventional regression to the simplest distributional model, with improvements of 1646.0 units in the AHRI data.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the largest ELPD improvements came from moving from conventional regression (Conventional) to the simplest distributional model (improvements of 1646.0 units, 361.0 units, and 2181.2 units in the AHRI, Haiti DHS, and Manicaland data, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the ELPD values presented in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "1f67104b-9bfa-4f17-a43a-1aaeda6f55a1",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C45",
+      "claim": "The largest ELPD improvements came from moving from conventional regression to the simplest distributional model, with improvements of 361.0 units in the Haiti DHS data.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the largest ELPD improvements came from moving from conventional regression (Conventional) to the simplest distributional model (improvements of 1646.0 units, 361.0 units, and 2181.2 units in the AHRI, Haiti DHS, and Manicaland data, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the ELPD values presented in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "d130d890-2a54-4f2d-8983-c1758985deac",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C46",
+      "claim": "The largest ELPD improvements came from moving from conventional regression to the simplest distributional model, with improvements of 2181.2 units in the Manicaland data.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the largest ELPD improvements came from moving from conventional regression (Conventional) to the simplest distributional model (improvements of 1646.0 units, 361.0 units, and 2181.2 units in the AHRI, Haiti DHS, and Manicaland data, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the ELPD values presented in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "7c9e896a-f454-480d-93cf-9b4ab7c07d25",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C47",
+      "claim": "The conventional regression model estimated that the skewness parameter was \u22120.05 (95% UI: \u22120.06 to \u22120.05) regardless of age.",
+      "claim_type": "EXPLICIT",
+      "source": "The conventional regression model estimated that neither the distrbution for men nor women exhibited much skewness; the estimated parameter value was \u22120.05 (95% UI: \u22120.06 to \u22120.05) regardless of age, with 0.0 corresponding to perfect symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the model fitting results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "4ab6996d-a239-4df4-b863-f5ed5b6aa085",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C48",
+      "claim": "When independent age and sex effects were allowed in Distributional Model 1, women's skewness at age 15 was estimated to be \u22120.26 (95% UI: \u22120.27 to \u22120.25).",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we allowed independent age and sex effects in Distributional Model 1, we estimated that at age 15, women's skewness was \u22120.26 (95% UI: \u22120.27 to \u22120.25)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the model fitting results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "30eda32f-1407-4b16-9e44-95e297ccc1e4",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C49",
+      "claim": "When independent age and sex effects were allowed in Distributional Model 1, men's skewness at age 15 was estimated to be 0.11 (95% UI: 0.10 to 0.12).",
+      "claim_type": "EXPLICIT",
+      "source": "and men's was 0.11 (95% UI: 0.10 to 0.12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the model fitting results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "b9be1c36-1898-41a7-b71a-7bdb35b06db2",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C50",
+      "claim": "In Distributional Model 4, the scale value among men began at 0.05 (95% UI: 0.05\u20130.06) among 15-year-olds.",
+      "claim_type": "EXPLICIT",
+      "source": "The scale value began at 0.05 (95% UI: 0.05\u20130.06) among 15-year-olds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the model fitting results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "49a5f5cc-3e46-4960-a42d-63f9a9fad851",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C51",
+      "claim": "In Distributional Model 4, the scale value among men peaked among 37-year-olds at 0.11 (95% UI: 0.10\u20130.11).",
+      "claim_type": "EXPLICIT",
+      "source": "peaked among 37-year-olds at 0.11 (95% UI: 0.10\u20130.11)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the model fitting results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "4561cb5a-c852-40f0-9c12-0c735806a572",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C52",
+      "claim": "In Distributional Model 4, the scale value among men decreased back down to 0.05 (95% UI: 0.04\u20130.06) at age 64.",
+      "claim_type": "EXPLICIT",
+      "source": "and decreased back down to 0.05 (95% UI: 0.04\u20130.06) at age 64.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the model fitting results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "4c2c4ad2-77d7-4b1a-90e0-1659cdff1aaf",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C53",
+      "claim": "The 2016\u20132017 Haiti DHS and Manicaland estimates exhibit similar patterns across all four distributional parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 2016\u20132017 Haiti DHS and Manicaland estimates exhibit similar patterns across all four parameters",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the comparison of estimates shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "05f64c15-4e37-4a06-a537-9932a106aaf1",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C54",
+      "claim": "The DHS does not collect data on adults aged 50 years and older.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the DHS does not collect data on adults aged 50 years and older",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of the DHS data collection methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "adc403f5-6580-4f8e-81e3-bf311b3815d5",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C55",
+      "claim": "Estimates in Haiti from age 50 to age 64 are purely extrapolated.",
+      "claim_type": "EXPLICIT",
+      "source": "so our estimates in Haiti from age 50 to age 64 are purely extrapolated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the fact that DHS does not collect data on adults aged 50 years and older.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "d81fdc25-d575-4ebb-975d-816d1be32933",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C56",
+      "claim": "Even the simplest distributional regression far outperformed conventional regression, in which all moments except the first are estimated as constants.",
+      "claim_type": "EXPLICIT",
+      "source": "Even the simplest distributional regression in our set of candidate models far outperformed conventional regression, in which all moments except the first are estimated as constants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ELPD improvements shown in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "7008e7f6-dae2-4295-bd41-1d6f02def5fb",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C57",
+      "claim": "Distributional regression offers a principled method to propagate uncertainty through the estimation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, distributional regression offers a principled method to propagate uncertainty through this estimation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the distributional regression approach based on statistical theory.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "4f13e464-d653-4ac7-8a51-70c57e368a49",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C58",
+      "claim": "Distributional regression implemented through brms provides access to a deep set of hierarchical modelling tools.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, distributional regression implemented through brms provides access to a deep set of hierarchical modelling tools that could enable estimation in a variety of low-data settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the brms software package.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "7b65bd45-31b4-42cc-ba7a-65f652cfc054",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C59",
+      "claim": "The sinh-arcsinh distribution failed to produce the highest ELPD in the smallest data subset (N = 170).",
+      "claim_type": "EXPLICIT",
+      "source": "The sinh-arcsinh distribution did fail to produce the highest ELPD in our smallest data subset (N = 170)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "45bb950c-e1cb-456a-9d46-aa1ad3f1ec24",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C60",
+      "claim": "The sinh-arcsinh distribution was not significantly worse than the best distribution in the smallest data subset.",
+      "claim_type": "EXPLICIT",
+      "source": "but it was not significantly worse than the best distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the statistical comparison of model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "68476b85-b921-4abc-bfb1-17ce36dc3bf8",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C61",
+      "claim": "In the two cohort studies, participants are eligible to participate in multiple survey rounds, in which case the same partnership could be reported multiple times in the data set.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in the two cohort studies, participants are eligible to participate in multiple survey rounds, in which case the same partnership could be reported multiple times in our data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the cohort study design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "db222fe7-6afa-4fc2-8b2e-2c9e7adac177",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C62",
+      "claim": "Many individuals report multiple partners in the same survey, and the age of one partner may be correlated with ages of other partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, many individuals report multiple partners in the same survey, and the age of one partner may be correlated ages of other partners, for example due to individual preferences for partnerships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential source of non-independence in the data, based on logical reasoning about partnership formation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "97baad93-54ee-40c1-94c8-dc19bfb71929",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C63",
+      "claim": "Multiple observations of the same individual were modelled as conditionally independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we modelled multiple observations of the same individual as conditionally independent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a modeling assumption made in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "a06e8a14-d6da-4b26-b56a-53328660800c",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C64",
+      "claim": "Correlations from non-independence may artificially increase the precision of the estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "we anticipate that these correlations may artificially increase the precision of our estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential impact of the modeling assumption.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "6b0e51c5-878c-43dc-aec8-bcc51e16a6e2",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C65",
+      "claim": "Respondents in each of these data sets are disproportionately likely to report that their partners' ages are multiples of five or multiples of five away from their own age.",
+      "claim_type": "EXPLICIT",
+      "source": "Respondents in each of these data sets are disproportionately likely to report that their partners' ages are multiples of five or multiples of five away from their own age, leading to distinct 'heaping' in the empirical partner age (or age difference) distributions at multiples of five.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "942729fd-d9ac-47c5-ab7f-d76288a51c90",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C66",
+      "claim": "All analyses were conducted using the R programming language.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted all of these analysis using the R programming language (R Development Core Team, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citation to R Development Core Team, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "1a66c66c-39c1-4e19-9833-e823e7b10c8f",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C67",
+      "claim": "The brms library was used for model fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "and the brms library (B\u00fcrkner, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citation to B\u00fcrkner, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "089aea86-5068-433d-8fd7-a2a2da93d658",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C68",
+      "claim": "The loo library was used to estimate all ELPDs.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the loo library to estimate all ELPDs (Vehtari et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citation to Vehtari et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "b3d36fa7-fe0d-4fd6-8d95-e2e504481aa4",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C69",
+      "claim": "All plots were produced with the ggplot2 library.",
+      "claim_type": "EXPLICIT",
+      "source": "and produced all plots in this paper with the ggplot2 library (Wickham, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citation to Wickham, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "5454c709-6c23-4059-a45d-944cf19de243",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C70",
+      "claim": "The AHRI and Manicaland studies are multi-round, open, general population cohort studies designed to measure the dynamics of HIV, sexual risk behaviour, and demographic change in sub-Saharan African settings.",
+      "claim_type": "EXPLICIT",
+      "source": "The AHRI and Manicaland studies are multi-round, open, general population cohort studies designed to measure the dynamics of HIV, sexual risk behaviour, and demographic change in sub-Saharan African settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study designs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "cb1fe08a-e57b-430b-a177-8d20bc5d3036",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C71",
+      "claim": "Rounds one through six of the Manicaland study were collected between 1998 and 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "We used rounds one through six of the Manicaland study, collected between 1998 and 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the data used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "dbf3ddf2-566a-4d57-bb00-750387cff55a",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C72",
+      "claim": "The AHRI data were collected annually between 2004 and 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "The AHRI data we used were collected annually between 2004 and 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the data used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "b9caee2f-d139-4d5e-9fd1-3bacfb651438",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C73",
+      "claim": "The 2016\u201317 Haiti DHS was a large, nationally representative household survey conducted in 2016 and 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2016\u201317 Haiti DHS was a large, nationally representative household survey conducted in 2016 and 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the survey design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "63a79e5b-896c-49e1-8b0c-89196daa5d94",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C74",
+      "claim": "The weights associated with the Haiti DHS survey were not incorporated into the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not incorporate the weights associated with the survey into this analysis because our primary interest was in statistical modelling of partner age distribution as a function of respondent age, not producing population representative statistics for the Haitian population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological decision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "f3975625-0947-4e97-a984-f623b44601c9",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C75",
+      "claim": "Self-reporting of non-heterosexual partnerships in these populations is thought to be low.",
+      "claim_type": "EXPLICIT",
+      "source": "These questionnaires do not ask specifically about partner sex, but self-reporting of non-heterosexual partnerships in these populations is thought to be low (Arias Garcia et al., 2020; World Health Organization and UNAIDS, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Arias Garcia et al., 2020 and World Health Organization and UNAIDS, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "f424b9f5-0285-494e-99b4-442d4df16c4e",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C76",
+      "claim": "In distributional regression, all parameters of a distribution can vary with respect to data.",
+      "claim_type": "EXPLICIT",
+      "source": "In distributional regression, all parameters of a distribution can vary with respect to data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the distributional regression methodology, based on established statistical theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "1135c48e-37ca-4a9f-b3bd-46326c692be6",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C77",
+      "claim": "Distributional regression allowed smoothing and interpolation of even higher order moments of observed partner ages.",
+      "claim_type": "EXPLICIT",
+      "source": "so it allowed us to smooth and interpolate even higher order moments of observed partner ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the distributional regression approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "26e52891-6a6c-4440-8889-c9450f645ba0",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C78",
+      "claim": "The log-ratio dependent variable was best in 50.0% of subsets with a normal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The log-ratiodependent variable was best in 50.0% of subsets with a normal distribution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the analysis summarized in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "bb8aff12-85ef-4a72-bf7e-e6104b209a21",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C79",
+      "claim": "The log-ratio dependent variable was best in only 27.8% of subsets with a skew normal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "but it was best in only 27.8% of subsets with a skew normal distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the analysis summarized in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "0c2a3228-1789-4020-8f28-1402608c74dc",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C81",
+      "claim": "In one case, men aged 20\u201324 in the Haiti DHS, the skew normal distribution resulted in a slightly higher ELPD than the sinh-arcsinh distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In one case, men aged 20\u201324 in the Haiti DHS, the skew normal distribution resulted in a slightly higher ELPD than the sinh-arcsinh distribution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "2ead53ba-46f9-4064-8178-e9a1737b951f",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C82",
+      "claim": "In the case of men aged 20\u201324 in the Haiti DHS, the standard error of the difference between the skew normal and sinh-arcsinh ELPDs was greater than the difference.",
+      "claim_type": "EXPLICIT",
+      "source": "but the standard error of the difference was greater than the difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the statistical comparison of model performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "e71579cc-65b2-43e1-9b5c-fbafcb061390",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C83",
+      "claim": "The sinh-arcsinh distribution had the highest average ELPD in all three data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The sinh-arcsinh distribution had the highest average ELPD and lowest average QQ RMSE in all three data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the summary statistics in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "c7595a92-538a-40dd-b4f7-777e9e1c5b52",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "claim_id": "C84",
+      "claim": "The sinh-arcsinh distribution had the lowest average QQ RMSE in all three data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The sinh-arcsinh distribution had the highest average ELPD and lowest average QQ RMSE in all three data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the summary statistics in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8aeaee25-0d19-4870-87f2-15c96e2ca960",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the scientific context and prior work on sexual age-mixing patterns and their relationship to HIV transmission, including various modeling approaches and empirical findings from previous studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C16 accurately summarize established knowledge and prior work in the field, supported by appropriate citations. The claims about prior studies (C4-C10, C13-C16) are properly attributed and the general knowledge claims (C1, C2, C11, C12) are well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study analyzed three datasets: AHRI (77,619 partnerships from 36,033 respondents), Manicaland (58,676 partnerships from 25,024 respondents), and Haiti DHS (12,447 partnerships from 12,143 respondents), with detailed descriptions of data collection methods and study designs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C25 and C70-C75 provide clear descriptions of the data sources with specific sample sizes and methodological details. These are straightforward descriptive statistics and study design characteristics that are internally consistent and appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "be0b048d-ec48-4e69-8b33-dc1f8fb024de",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Empirical analysis showed that mean partner age increased consistently with respondent age across all datasets and both sexes, with increases of 22.7-26.0 years for women between age bins 20-24 and 45-49, while standard deviations showed more variable patterns (0.5-3.5 year changes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 report descriptive statistics directly from the data analysis, supported by Figure 3. The values are specific and internally consistent, representing straightforward empirical observations from the datasets.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "6a9b8941-89d3-41f4-a33a-4243b6dc5ccc",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The sinh-arcsinh distribution is a four-parameter distribution (location, scale, skewness, tail weight) originally proposed by Jones and Pewsey (2009) as an extension of Johnson's distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 accurately describe the mathematical properties and provenance of the sinh-arcsinh distribution, properly citing the original work. This is established mathematical knowledge correctly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "f2182eee-05f2-4627-a1e4-ce78f7b6b991",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the probability distribution comparison, the sinh-arcsinh distribution had the highest ELPD in 35 of 36 data subsets (98%), with 29 cases showing statistically significant superiority (>2 standard errors), and achieved the lowest average QQ RMSE across all three datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 and C78-C84 report model comparison results with specific statistics from Tables 3 and 4. The statistical significance criterion (>2 standard errors) is appropriate, and the results are consistently reported across multiple metrics (ELPD and QQ RMSE).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "acbf33fa-89dd-4666-a059-953869f2d14f",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The sinh-arcsinh distribution predicted empirical quantiles with high accuracy: within 0.36 years for AHRI, 0.37 years for Haiti DHS, and 0.44 years for Manicaland data on average.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 report QQ RMSE values from Table 4, providing interpretable measures of model accuracy. These values are specific, consistent with the broader results, and represent meaningful predictive performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "301d6eb5-6b44-41fe-8d60-e0eb632368cd",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The most complex distributional model (Distributional 4) achieved the highest ELPD and lowest QQ RMSE across all datasets, with the largest improvements coming from moving from conventional to distributional regression (1646.0, 361.0, and 2181.2 ELPD units for AHRI, Haiti DHS, and Manicaland respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 and C56 report results from Table 5 showing clear performance improvements. The ELPD differences are substantial and the statistical significance is noted for AHRI and Manicaland datasets. The comparison demonstrates the value of distributional regression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "349cd595-8c9c-4bcd-af31-31a1a58e0dae",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Distributional models revealed substantial variation in skewness and scale parameters across age and sex that conventional regression missed, with women's skewness at age 15 estimated at -0.26 (vs. -0.05 in conventional model) and men's scale parameter showing non-linear variation peaking at age 37.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 report parameter estimates from Figure 6 with specific values and uncertainty intervals. These demonstrate the key advantage of distributional regression in capturing variation that conventional models constrain to be constant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "94f3224f-e7a5-4cdf-9963-690e95973ce3",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Haiti DHS and Manicaland estimates showed similar patterns across all four distributional parameters, though Haiti estimates for ages 50-64 are extrapolated since DHS does not collect data on adults aged 50 and older.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 make observations from Figure 7 and note an important limitation of the DHS data. The extrapolation caveat (C55) is appropriately acknowledged as a limitation of the analysis for older ages in Haiti.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "7a8fc23a-323c-4f60-ae19-fa3ed0be3570",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Distributional regression offers methodological advantages including principled uncertainty propagation and access to hierarchical modeling tools through the brms package, enabling estimation in low-data settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 and C76-C77 describe established advantages of distributional regression methodology and capabilities of the brms software. These are accurate characterizations of the statistical framework and software capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "f83ca372-aeb6-40c4-a011-0bf47ed3f613",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The sinh-arcsinh distribution failed to produce the highest ELPD in the smallest data subset (N=170) but was not significantly worse than the best distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 acknowledge a limitation in the smallest dataset while noting the difference was not statistically significant. This is an honest reporting of results that doesn't undermine the overall findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "3871d093-d025-41f2-a601-000a9236173a",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The analysis has potential limitations from non-independence: repeated partnerships across survey rounds and multiple partners per individual may be correlated, which could artificially increase precision since observations were modeled as conditionally independent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 identify legitimate sources of non-independence in the data and acknowledge the modeling assumption of conditional independence. The speculation about inflated precision (C64) is appropriately cautious and represents good scientific practice in acknowledging limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "011c1b4a-fab8-40df-8141-cd0b678e31cf",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Age heaping was observed in the data, with respondents disproportionately reporting partners' ages as multiples of five.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 describes a common data quality issue in self-reported age data. The observation is consistent with known reporting biases and the authors tested sensitivity to this issue (mentioned in methods).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "e96e4edb-3be5-4462-8554-7455076b66bc",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "All analyses were conducted using R with the brms library for model fitting, loo library for ELPD estimation, and ggplot2 for visualization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 provide standard methodological details about software and packages used, with appropriate citations. These are straightforward statements about computational implementation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    },
+    {
+      "id": "7a695834-70fa-43d6-b18c-21d7a31db7c7",
+      "content_id": "151784cf-859e-4634-8033-e36096889e76",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The main finding is that distributional regression with a sinh-arcsinh distribution replicated observed partner age distributions most accurately across three geographically diverse datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 summarizes the primary conclusion, which is well-supported by the comprehensive model comparison results (C36-C46, C83-C84) showing consistent superiority across multiple metrics and datasets. The evidence from both probability distribution comparison and distributional regression evaluation converges on this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:25:34.987940Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "46f39391-58e9-4e15-a962-c65259e8852b",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "b82dc1cf-22db-4c35-ab84-2c0932682a31",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "41120495-db89-4cb9-b61b-a90e3f5f49dd",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "9d3c2a87-9120-491f-8793-6cb5849af667",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "ffb89440-8c3a-459a-836c-e8317456c5ce",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "e241b9e7-ce1f-45db-b508-50a0d3f84ff5",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "d1efe9b2-18d9-4573-83c9-182575226b41",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "96a22e93-f76f-4917-b27a-5e2f9265bdba",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "aa3918ff-ab4c-4a31-9dee-336e13e006e4",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "8b3bee67-fe1d-4ce5-bc5e-62eece686955",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "d3823941-d5b1-4eb3-b54e-66607b9cdeb2",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "26ec9172-02b1-481d-83aa-9930c1e38063",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "06d9e123-1a32-46de-b52b-2d8b888c0d44",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "32f3c8dc-9930-43cb-bcd4-530ff7837f49",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "d08f0e0a-9384-4ed9-807f-24afe135844b",
+      "result_id": "8aeaee25-0d19-4870-87f2-15c96e2ca960"
+    },
+    {
+      "claim_id": "ad9c9c12-2f09-4db3-9ba8-461c82f8dfd6",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "deee7f2a-5b2d-420f-89aa-0a2d2c32e594",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "7a540dc1-16df-4ce9-a3dd-d5a6dd283a66",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "ca349192-ebc1-4e3d-9191-90b10802fa90",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "321d5e10-d516-4c90-8dbe-8dbfcd32ff59",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "6a2ed172-31f2-481f-8128-c8be10302435",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "dabd9978-721e-43c5-98de-53d7a3a0f276",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "72ba63cc-e776-47a2-9f8e-2ff52d574d23",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "f78e6636-21d0-4a4d-837e-0bfc8c33dfe0",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "5454c709-6c23-4059-a45d-944cf19de243",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "cb1fe08a-e57b-430b-a177-8d20bc5d3036",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "dbf3ddf2-566a-4d57-bb00-750387cff55a",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "b9caee2f-d139-4d5e-9fd1-3bacfb651438",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "63a79e5b-896c-49e1-8b0c-89196daa5d94",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "f3975625-0947-4e97-a984-f623b44601c9",
+      "result_id": "bcf4f5ca-c521-4873-abfc-162ea03a67fe"
+    },
+    {
+      "claim_id": "6ac32844-e38a-4467-ab80-e117539b744d",
+      "result_id": "be0b048d-ec48-4e69-8b33-dc1f8fb024de"
+    },
+    {
+      "claim_id": "7562d2c5-8f90-4452-ac8c-0d2359895863",
+      "result_id": "be0b048d-ec48-4e69-8b33-dc1f8fb024de"
+    },
+    {
+      "claim_id": "8466d331-a72c-4238-9839-868425295bf5",
+      "result_id": "be0b048d-ec48-4e69-8b33-dc1f8fb024de"
+    },
+    {
+      "claim_id": "370722cc-27a1-40f1-868f-800b13dc1c2f",
+      "result_id": "be0b048d-ec48-4e69-8b33-dc1f8fb024de"
+    },
+    {
+      "claim_id": "180e77fb-6065-4dac-8f8e-0630f627d107",
+      "result_id": "be0b048d-ec48-4e69-8b33-dc1f8fb024de"
+    },
+    {
+      "claim_id": "7e6f92ef-6d03-4f92-ac22-21f3f9145b91",
+      "result_id": "be0b048d-ec48-4e69-8b33-dc1f8fb024de"
+    },
+    {
+      "claim_id": "046a9990-0fa2-4885-8ddb-24ddda7d34cf",
+      "result_id": "be0b048d-ec48-4e69-8b33-dc1f8fb024de"
+    },
+    {
+      "claim_id": "86bfc88b-0648-4bc6-a579-36ac512be267",
+      "result_id": "6a9b8941-89d3-41f4-a33a-4243b6dc5ccc"
+    },
+    {
+      "claim_id": "a0ec3093-13f7-446f-8e86-d8f329c7bb56",
+      "result_id": "6a9b8941-89d3-41f4-a33a-4243b6dc5ccc"
+    },
+    {
+      "claim_id": "d6325d35-6206-49b0-a5d8-448f4d8304ee",
+      "result_id": "6a9b8941-89d3-41f4-a33a-4243b6dc5ccc"
+    },
+    {
+      "claim_id": "312a39a1-2f97-4ee1-a27a-85b3c0372488",
+      "result_id": "f2182eee-05f2-4627-a1e4-ce78f7b6b991"
+    },
+    {
+      "claim_id": "8bfba3c3-4e65-48de-b4e0-aa624c55a084",
+      "result_id": "f2182eee-05f2-4627-a1e4-ce78f7b6b991"
+    },
+    {
+      "claim_id": "f42e30ea-b671-4d4d-84c5-721d448d5c87",
+      "result_id": "f2182eee-05f2-4627-a1e4-ce78f7b6b991"
+    },
+    {
+      "claim_id": "26e52891-6a6c-4440-8889-c9450f645ba0",
+      "result_id": "f2182eee-05f2-4627-a1e4-ce78f7b6b991"
+    },
+    {
+      "claim_id": "bb8aff12-85ef-4a72-bf7e-e6104b209a21",
+      "result_id": "f2182eee-05f2-4627-a1e4-ce78f7b6b991"
+    },
+    {
+      "claim_id": "0c2a3228-1789-4020-8f28-1402608c74dc",
+      "result_id": "f2182eee-05f2-4627-a1e4-ce78f7b6b991"
+    },
+    {
+      "claim_id": "2ead53ba-46f9-4064-8178-e9a1737b951f",
+      "result_id": "f2182eee-05f2-4627-a1e4-ce78f7b6b991"
+    },
+    {
+      "claim_id": "e71579cc-65b2-43e1-9b5c-fbafcb061390",
+      "result_id": "f2182eee-05f2-4627-a1e4-ce78f7b6b991"
+    },
+    {
+      "claim_id": "c7595a92-538a-40dd-b4f7-777e9e1c5b52",
+      "result_id": "f2182eee-05f2-4627-a1e4-ce78f7b6b991"
+    },
+    {
+      "claim_id": "05dbdbf6-d1f3-4be1-ad72-8b65426e9b04",
+      "result_id": "acbf33fa-89dd-4666-a059-953869f2d14f"
+    },
+    {
+      "claim_id": "0714ad2f-098b-42cb-bc9a-05197f0f26cb",
+      "result_id": "acbf33fa-89dd-4666-a059-953869f2d14f"
+    },
+    {
+      "claim_id": "cc2f7b98-97af-4607-9815-5176c770ddd3",
+      "result_id": "acbf33fa-89dd-4666-a059-953869f2d14f"
+    },
+    {
+      "claim_id": "5cba0556-45ae-4ca7-b053-4acd73e1ba25",
+      "result_id": "301d6eb5-6b44-41fe-8d60-e0eb632368cd"
+    },
+    {
+      "claim_id": "7acf7687-bed1-4103-b702-5200e54c2fb2",
+      "result_id": "301d6eb5-6b44-41fe-8d60-e0eb632368cd"
+    },
+    {
+      "claim_id": "3d8f3148-8b1e-4392-8f96-0c502fce4ae4",
+      "result_id": "301d6eb5-6b44-41fe-8d60-e0eb632368cd"
+    },
+    {
+      "claim_id": "1f67104b-9bfa-4f17-a43a-1aaeda6f55a1",
+      "result_id": "301d6eb5-6b44-41fe-8d60-e0eb632368cd"
+    },
+    {
+      "claim_id": "d130d890-2a54-4f2d-8983-c1758985deac",
+      "result_id": "301d6eb5-6b44-41fe-8d60-e0eb632368cd"
+    },
+    {
+      "claim_id": "d81fdc25-d575-4ebb-975d-816d1be32933",
+      "result_id": "301d6eb5-6b44-41fe-8d60-e0eb632368cd"
+    },
+    {
+      "claim_id": "7c9e896a-f454-480d-93cf-9b4ab7c07d25",
+      "result_id": "349cd595-8c9c-4bcd-af31-31a1a58e0dae"
+    },
+    {
+      "claim_id": "4ab6996d-a239-4df4-b863-f5ed5b6aa085",
+      "result_id": "349cd595-8c9c-4bcd-af31-31a1a58e0dae"
+    },
+    {
+      "claim_id": "30eda32f-1407-4b16-9e44-95e297ccc1e4",
+      "result_id": "349cd595-8c9c-4bcd-af31-31a1a58e0dae"
+    },
+    {
+      "claim_id": "b9be1c36-1898-41a7-b71a-7bdb35b06db2",
+      "result_id": "349cd595-8c9c-4bcd-af31-31a1a58e0dae"
+    },
+    {
+      "claim_id": "49a5f5cc-3e46-4960-a42d-63f9a9fad851",
+      "result_id": "349cd595-8c9c-4bcd-af31-31a1a58e0dae"
+    },
+    {
+      "claim_id": "4561cb5a-c852-40f0-9c12-0c735806a572",
+      "result_id": "349cd595-8c9c-4bcd-af31-31a1a58e0dae"
+    },
+    {
+      "claim_id": "4c2c4ad2-77d7-4b1a-90e0-1659cdff1aaf",
+      "result_id": "94f3224f-e7a5-4cdf-9963-690e95973ce3"
+    },
+    {
+      "claim_id": "05f64c15-4e37-4a06-a537-9932a106aaf1",
+      "result_id": "94f3224f-e7a5-4cdf-9963-690e95973ce3"
+    },
+    {
+      "claim_id": "adc403f5-6580-4f8e-81e3-bf311b3815d5",
+      "result_id": "94f3224f-e7a5-4cdf-9963-690e95973ce3"
+    },
+    {
+      "claim_id": "7008e7f6-dae2-4295-bd41-1d6f02def5fb",
+      "result_id": "7a8fc23a-323c-4f60-ae19-fa3ed0be3570"
+    },
+    {
+      "claim_id": "4f13e464-d653-4ac7-8a51-70c57e368a49",
+      "result_id": "7a8fc23a-323c-4f60-ae19-fa3ed0be3570"
+    },
+    {
+      "claim_id": "f424b9f5-0285-494e-99b4-442d4df16c4e",
+      "result_id": "7a8fc23a-323c-4f60-ae19-fa3ed0be3570"
+    },
+    {
+      "claim_id": "1135c48e-37ca-4a9f-b3bd-46326c692be6",
+      "result_id": "7a8fc23a-323c-4f60-ae19-fa3ed0be3570"
+    },
+    {
+      "claim_id": "7b65bd45-31b4-42cc-ba7a-65f652cfc054",
+      "result_id": "f83ca372-aeb6-40c4-a011-0bf47ed3f613"
+    },
+    {
+      "claim_id": "45bb950c-e1cb-456a-9d46-aa1ad3f1ec24",
+      "result_id": "f83ca372-aeb6-40c4-a011-0bf47ed3f613"
+    },
+    {
+      "claim_id": "68476b85-b921-4abc-bfb1-17ce36dc3bf8",
+      "result_id": "3871d093-d025-41f2-a601-000a9236173a"
+    },
+    {
+      "claim_id": "db222fe7-6afa-4fc2-8b2e-2c9e7adac177",
+      "result_id": "3871d093-d025-41f2-a601-000a9236173a"
+    },
+    {
+      "claim_id": "97baad93-54ee-40c1-94c8-dc19bfb71929",
+      "result_id": "3871d093-d025-41f2-a601-000a9236173a"
+    },
+    {
+      "claim_id": "a06e8a14-d6da-4b26-b56a-53328660800c",
+      "result_id": "3871d093-d025-41f2-a601-000a9236173a"
+    },
+    {
+      "claim_id": "6b0e51c5-878c-43dc-aec8-bcc51e16a6e2",
+      "result_id": "011c1b4a-fab8-40df-8141-cd0b678e31cf"
+    },
+    {
+      "claim_id": "942729fd-d9ac-47c5-ab7f-d76288a51c90",
+      "result_id": "e96e4edb-3be5-4462-8554-7455076b66bc"
+    },
+    {
+      "claim_id": "1a66c66c-39c1-4e19-9833-e823e7b10c8f",
+      "result_id": "e96e4edb-3be5-4462-8554-7455076b66bc"
+    },
+    {
+      "claim_id": "089aea86-5068-433d-8fd7-a2a2da93d658",
+      "result_id": "e96e4edb-3be5-4462-8554-7455076b66bc"
+    },
+    {
+      "claim_id": "b3d36fa7-fe0d-4fd6-8d95-e2e504481aa4",
+      "result_id": "e96e4edb-3be5-4462-8554-7455076b66bc"
+    },
+    {
+      "claim_id": "e3106ef3-bf93-4713-816c-626a30276220",
+      "result_id": "7a695834-70fa-43d6-b18c-21d7a31db7c7"
+    }
+  ],
+  "comparisons": []
+}

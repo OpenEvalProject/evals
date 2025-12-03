@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C9",
+      "C37",
+      "C47",
+      "C48",
+      "C50",
+      "C53"
+    ],
+    "result": "Prior to this study, there was no biophysical characterization of the SARS-CoV-2 Spike protein conformational transition from prefusion to postfusion states, and the role of glycans during the fusion step of infection was unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C9, C37, C47, C48, C50, and C53 consistently describe gaps in knowledge regarding the Spike protein conformational mechanism and glycan function during fusion. These are statements about the state of the literature at the time of writing, supported by the absence of contradicting citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C95",
+      "C203",
+      "C204"
+    ],
+    "result": "The authors performed thousands of all-atom structure-based molecular dynamics simulations of the SARS-CoV-2 Spike protein transitioning from prefusion to postfusion conformations, with simulations initiated after S2' cleavage and S1 dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C64, C65, C66, C67, C71, C95, C203, and C204 describe the computational methodology. The study performed 7000 simulations (1000 for each of 7 systems) using an all-atom structure-based model, which is clearly documented in the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The structure-based model was constructed with energetics favoring the postfusion conformation, with TM region interactions stabilizing the prefusion state to serve as a membrane anchor, and an implicit membrane potential to restrain the TM region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C82 describe the structure-based modeling approach, which is well-documented in the methods and results sections. The approach is justified by citations to theoretical work on minimal frustration and previous applications of structure-based models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Frustration analysis of the Spike protein structures supports the use of a structure-based model, showing low frustration in most of the postfusion structure (HR1, HG, L, most of HR2) while FP, CR, and C-terminal HR2 show elevated frustration consistent with membrane binding roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C94 describe frustration analysis results with references to figures. The analysis supports the modeling approach and provides mechanistic insights. The interpretation that frustrated regions engage in membrane interactions is supported by citations (C88, C89).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Simulations reveal an ordered sequence of conformational events: the head group (HG) moves toward the viral membrane and becomes enclosed by HR2 strands in a 'caged' ensemble, then rotates away by passing between HR2 strands while fusion peptides extend toward the host membrane. This ordering is robust to glycan presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C107 describe the simulated conformational pathway with references to figures and videos. The probability distributions (Figure 2E) and trajectory analysis support the ordered sequence of events. The robustness to glycan presence is demonstrated by comparing simulations with and without glycans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C68",
+      "C108",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Glycans induce a steric cage that extends the lifetime of a critical intermediate where the head group is confined near the viral membrane, with the glycan-associated increase in excluded volume of the head group being the dominant factor controlling transition kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C68, C108, C112, C113, and C114 describe the glycan caging effect. The result is supported by quantitative data showing ~5-fold increase in cage lifetime (Figure 3) and partial glycosylation experiments demonstrating that HG glycans, not HR2 glycans, are responsible for the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The glycan-dependent kinetics are entirely attributable to steric excluded volume effects, not energetic stabilization, as glycans were modeled with purely repulsive interactions without energetically-preferred conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 describe the mechanistic interpretation of the glycan effect. The modeling approach explicitly excluded attractive glycan interactions, allowing attribution of the effect solely to sterics. The inference that this effect will be robust across different models (C122, C123) is reasonable given the steric basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C69",
+      "C124",
+      "C125",
+      "C126",
+      "C129",
+      "C130"
+    ],
+    "result": "The glycan-induced caging provides a critical delay that allows HR1, FP, and CR regions to sample extended configurations while maintaining the HR1 helical coil directed toward the host membrane, facilitating host membrane capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C69, C124, C125, C126, C129, and C130 describe the functional consequence of glycan caging. The result is supported by simulation data showing rapid initial HG relaxation followed by a pause during which HR1 forms (Figure 3B, Figure 4), with the head orientation maintained perpendicular to the membrane.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C135",
+      "C137",
+      "C138",
+      "C146"
+    ],
+    "result": "Glycosylation significantly increases the probability that fusion peptides extend to the host membrane, with the effect being robust to the precise description of the TM bundle and not attributable to TM tilting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C138 and C146 describe quantitative differences in FP extension probabilities. Figure 5 shows clear differences in capture probabilities for 1, 2, and 3 FPs across a range of host-membrane distances. Control simulations with modified TM interactions (C146) demonstrate robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Based on experimental virus-host inter-membrane distance of ~30 nm during infection, simulations predict that without glycosylation, the Spike protein would most likely fail to capture the host, substantially reducing infection probability. This is consistent with experimental observations that inhibiting glycan production decreases host cell entry efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 connect simulation predictions to experimental context. The virus-host distance is supported by cryotomography (C140, citation to Turo\u0148ov\u00e1 et al., 2020). The simulation prediction (C141, C144) is consistent with experimental data showing glycan inhibition reduces entry efficiency (C145, citation to Yang et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C70",
+      "C151",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The glycosylation state is a critical factor regulating SARS-CoV-2 infectivity by introducing a steric delay necessary for fusion peptides to reach the host membrane before the conformational change completes. Without glycans, the protein bypasses the caged intermediate, leading to failed host capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C70, C151, C158-C163 present the main conclusion. The result is supported by the convergence of multiple lines of evidence: glycan-induced caging (C13, C68, C108), increased FP extension probability (C131), consistency with experimental data (C145), and the proposed mechanism (C158-C160).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "When glycans are absent, fusion likely proceeds via a 'cooperative' mechanism with only 1-2 FPs reaching the host. With glycans present, there is non-negligible probability of all three FPs reaching the host, consistent with a 'sequential' mechanism. Simulations with an effective host membrane potential show that anchoring the first FP increases the probability of subsequent FP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C156 describe mechanistic implications for fusion. The distinction between cooperative and sequential mechanisms is supported by citations to previous work on fusion proteins (C148, C150, Lin et al., 2014). Simulations with host membrane potential (C153-C155) provide additional support for cooperative binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Complete experimental structures of full-length SARS-CoV-2 Spike protein were not available, requiring homology modeling of missing regions (TM, HR2, FP, CR) and glycans using templates from SARS-CoV-1 and other structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C192 describe structural modeling procedures. The methods are clearly documented with appropriate citations to modeling tools (SWISS-MODEL, Modeller, Glycan Reader) and template structures. The limitations of available experimental structures are acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The authors acknowledge limitations including potential influence of non-specific stabilizing interactions not captured in the model, short-range description of membrane interactions that may miss long-range electrostatic effects, and suggest multi-basin structure-based models as future extensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C170 describe acknowledged limitations and future directions. These are appropriately speculative statements about model limitations and potential extensions, with citation to multi-basin models (C168, Whitford et al., 2007).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The authors propose experimental validation through site-specific mutations to inhibit glycan binding at individual residues, integration into pseudovirus particles, and prediction that mutations to HG glycan sites should significantly reduce membrane capture probability if sterics dominate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C174 propose testable predictions and experimental approaches. These are reasonable suggestions based on the simulation results, with citation to pseudovirus methodology (C173, Yang et al., 2020). The prediction (C174) follows logically from the steric mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Under cellular conditions, glycans likely exhibit attractive interactions leading to slower intramolecular diffusion, suggesting the predicted glycan-induced kinetic reduction represents a lower bound on glycosylation influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115 and C116 are speculative statements about glycan behavior under physiological conditions. While the reasoning is plausible, there is no direct evidence provided for glycan attraction under cellular conditions or validation that the model represents a lower bound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Disrupting HR1-HR2 six-helical bundle formation with inhibitor peptides can halt viral expression in biological samples, suggesting potential for targeting Spike protein conformational intermediates for therapeutic applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe prior experimental work and its implications. C33 is supported by citation to Xia et al., 2020. C34 and C35 are reasonable inferences about therapeutic potential based on the cited work.",
+    "result_type": "MINOR"
+  }
+]

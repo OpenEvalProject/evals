@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript provides background on pTyr signaling networks, describing their role in cellular processes, their occurrence in disordered protein regions, and their involvement in diseases and phase separation phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 establish well-documented background knowledge about pTyr signaling, supported by appropriate citations to prior literature and general knowledge in the field. These claims provide context for the experimental work but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The Vaccinia virus signaling cascade involves A36 protein with two pTyr motifs (Y112 and Y132) that recruit Nck and Grb2 adaptors, leading to N-WASP activation and Arp2/3-mediated actin polymerization that drives viral motility and spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C31 describe the established Vaccinia virus signaling network, supported by multiple citations to prior work. This provides the foundation for the experimental manipulations performed in this study. The claims accurately represent prior knowledge about this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A truncated A36 variant (A36 N-G) terminating after residue 139 retains kinesin-1 binding motifs and shows Nck-dependent actin tail formation with shorter tails in the absence of Grb2 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 describe the construction and validation of the minimal A36 N-G system, supported by experimental data in Figure 2\u2014figure supplement 1A. This establishes a simplified system for studying pTyr motif positioning by removing confounding interactions with intersectin, Cdc42, and clathrin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Swapping the positions of Nck and Grb2 binding motifs in A36 (A36 G-N) significantly reduces actin tail length, virus motility, and viral spread compared to the native configuration (A36 N-G), while the number of viruses inducing actin polymerization remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 present the core finding that motif positioning matters for signaling output. The data in Figure 2 show statistically significant differences in actin tail length, virus speed, and plaque size between A36 N-G and G-N configurations. Controls demonstrate that the effect is specific to relative positioning rather than individual motif function (C37-C39), supporting the conclusion in C40 and C43.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The Orthoreovirus p14 protein can functionally replace A36 in the Vaccinia system, using Nck-binding site Y96 and Grb2-binding site Y116 to induce N-WASP-dependent actin polymerization, demonstrating the generalizability of the Vaccinia platform for studying synthetic signaling networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C57 establish p14 as a heterologous system for testing motif positioning principles. The data in Figure 3 demonstrate that p14 N-G induces robust actin tails dependent on Y96 (Nck-binding) and enhanced by Y116 (Grb2-binding), with biochemical validation of adaptor binding specificity. This provides an independent system to test the positioning hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Swapping Nck and Grb2 binding motifs in p14 (p14 G-N) reproduces the phenotype observed with A36, resulting in shorter actin tails, slower virus speed, and reduced viral spread compared to the native p14 N-G configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 demonstrate that the motif positioning effect is reproducible in a heterologous protein system. Figure 4 shows statistically significant reductions in actin tail length, virus speed, and plaque size for p14 G-N versus p14 N-G, paralleling the A36 results and strengthening the conclusion that motif positioning is a general principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The impaired signaling output of A36 G-N is not due to differences in A36 protein levels but rather to reduced recruitment of Grb2, N-WASP, and WIP, with Nck recruitment remaining constant. Repositioning motifs causes more severe impairment than loss of the Grb2 site alone, suggesting a dominant negative effect of mispositioned Grb2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 provide mechanistic insight into how motif positioning affects signaling. Figure 5 data show that A36 levels are comparable between N-G and G-N (C63), Nck recruitment is unchanged (C64, C67, C68), but Grb2 and N-WASP are significantly reduced in G-N (C65, C67). The comparison with A36 N-X (C68-C69) demonstrates that motif swapping is worse than Grb2 site loss, supporting the dominant negative interpretation (C70-C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The reduced signaling output of A36 G-N is not due to impaired phosphorylation of either Y112 or Y132, as both sites remain phosphorylated and recruit similar levels of Src kinase. The higher pY132 antibody signal on G-N likely reflects increased epitope accessibility due to reduced Grb2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 rule out phosphorylation defects as the mechanism. Figure 6 data show comparable Src recruitment and activation (C73-C74), equal GFP-Nck SH2 recruitment (C75-C76), and phosphorylation of Y132 on both viruses (C77-C78). The interpretation that higher pY132 signal reflects epitope accessibility (C79) is supported by the Grb2 knockdown experiment (C80), strengthening the conclusion in C81.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Adding a second Grb2 site C-terminal to Nck (A36 G-N-G) rescues the defect of the swapped configuration, restoring N-WASP recruitment and actin tail length to near-native levels, while adding a second Grb2 site N-terminal to Nck (A36 G-G-N) does not rescue the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 demonstrate that the position of Grb2 relative to Nck, rather than the number of Grb2 sites, determines signaling output. Figure 7 shows that G-N-G rescues actin tail length, virus speed, spread, and N-WASP/Grb2 recruitment (C84-C87), while G-G-N does not (C83), despite all viruses recruiting similar Nck levels (C82). This strongly supports the positional specificity hypothesis (C88-C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Nck and Grb2 are multivalent adaptors with multiple SH3 domains that bind N-WASP and WIP, which themselves contain limited numbers of Nck-binding sites with preferences for specific SH3 domains, suggesting preferred configurations of SH3-PxxP interactions for optimal signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C98 provide mechanistic context for understanding why motif positioning matters. The structural information about adaptor domains (C90-C93) is supported by citations, the bioinformatic predictions about PxxP motifs (C94-C95) are data-based, and the experimental observation that N-terminal Grb2 reduces recruitment (C96) supports the inference about preferred configurations (C97-C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Some cellular condensates have underlying organizational principles, and membrane-associated signaling networks may have a degree of defined spatial organization within their interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 place the findings in broader context. C99 is supported by citations to prior literature on condensate organization. C100 is an inference from the experimental observations that is reasonable given the data showing position-dependent effects, though it remains somewhat speculative about the general principle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Src/Abl kinases are constitutively associated with Vaccinia viruses, and repositioning A36 tyrosine motifs does not impair their phosphorylation or affect kinase recruitment/activation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 establish that kinase activity is not the limiting factor. C101 is supported by prior knowledge, while C102-C103 are supported by experimental data in Figure 6. This rules out an alternative explanation for the observed phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The ~20 amino acid spacing between SH2-binding sites observed in A36 and p14 is also found in LAT, nephrin, and EGFR. Structural data suggest that SH2 domains have relatively small footprints, and Grb2's SH2 domain is unique in inducing a \u03b2-turn conformation in its pTyr motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 provide structural context for interpreting the spacing observations. C104 is supported by citations and Figure 1\u2014figure supplement 1, while C105-C107 are supported by citations to structural studies. These observations suggest potential structural constraints but do not definitively explain the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "In viral proteins analyzed by the authors, Grb2 binding is consistently C-terminal to Nck, and there is no functional evidence for N-terminal Grb2 sites in any integral membrane protein. The configuration of SH2-binding pTyr motifs is critical for optimizing downstream SH3 domain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 synthesize observations and draw mechanistic conclusions. C108 is supported by the authors' data and citations, C109 is based on literature knowledge, C110 is supported by citation, and C111-C113 are reasonable inferences from the experimental data showing position-dependent effects on N-WASP recruitment and actin polymerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Disordered proteins constitute 40% of the human proteome and are rich in SLiMs. Recent work shows that motif positioning affects CAR T-cell phenotypes, and viral proteins enriched in disordered regions offer tools to explore SLiM positioning. The Vaccinia platform is excellent for dissecting signaling networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 place the work in broader context and discuss implications. C114-C116 are supported by citations to prior literature, while C117 is a reasonable conclusion from the successful use of the Vaccinia system in this study. These claims appropriately contextualize the significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

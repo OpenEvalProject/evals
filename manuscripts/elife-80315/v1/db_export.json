@@ -1,0 +1,1892 @@
+{
+  "submission": {
+    "id": "c36cd2e6-092d-4002-ac2f-6caa2395c9c6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:50:10.075455Z",
+    "updated_at": "2025-12-03T15:50:10.075455Z"
+  },
+  "content": [
+    {
+      "id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "submission_id": "c36cd2e6-092d-4002-ac2f-6caa2395c9c6",
+      "content_type": "manuscript",
+      "content_text": "# Transient cell-in-cell formation underlies tumor relapse and resistance to immunotherapy\n\n## Authors\n\n- Amit Gutwillig<sup>1</sup>\n- Nadine Santana-Magal<sup>1</sup>\n- Leen Farhat-Younis<sup>1</sup>\n- Diana Rasoulouniriana<sup>1</sup>\n- Asaf Madi<sup>1</sup> ([ORCID: 0000-0003-3441-3228](https://orcid.org/0000-0003-3441-3228))\n- Chen Luxenburg<sup>2</sup>\n- Jonathan Cohen<sup>2</sup>\n- Krishnanand Padmanabhan<sup>2</sup>\n- Noam Shomron<sup>2</sup>\n- Guy Shapira<sup>2</sup> ([ORCID: 0000-0001-9376-4955](https://orcid.org/0000-0001-9376-4955))\n- Annette Gleiberman<sup>1</sup> ([ORCID: 0000-0002-4155-4224](https://orcid.org/0000-0002-4155-4224))\n- Roma Parikh<sup>3</sup>\n- Carmit Levy<sup>3</sup>\n- Meora Feinmesser<sup>1</sup>\n- Dov Hershkovitz<sup>1</sup>\n- Valentina Zemser-Werner<sup>5</sup>\n- Oran Zlotnik<sup>6</sup>\n- Sanne Kroon<sup>7</sup> ([ORCID: 0000-0002-5722-0763](https://orcid.org/0000-0002-5722-0763))\n- Wolf-Dietrich Hardt<sup>7</sup> ([ORCID: 0000-0002-9892-6420](https://orcid.org/0000-0002-9892-6420))\n- Reno Debets<sup>8</sup> ([ORCID: 0000-0002-3649-807X](https://orcid.org/0000-0002-3649-807X))\n- Nathan Edward Reticker-Flynn<sup>9</sup>\n- Peleg Rider<sup>1</sup>\n- Yaron Carmi<sup>1</sup> ([ORCID: 0000-0002-0972-0616](https://orcid.org/0000-0002-0972-0616)) \u2020\n\n### Affiliations\n\n1. Department of Pathology, Sackler School of Medicine, Tel Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))\n2. Cell and Developmental Biology, Sackler School of Medicine, Tel Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))\n3. Human Molecular Genetics and Biochemistry, Sackler School of Medicine, Tel Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))\n4. Institute of Pathology, Rabin Medical Center- Beilinson Hospital Petach Tikva Israel ([ROR:01vjtf564](https://ror.org/01vjtf564))\n5. Institute of Pathology, Tel Aviv Sourasky Medical Center Tel Aviv Israel ([ROR:04nd58p63](https://ror.org/04nd58p63))\n6. Department of General Surgery, Rabin Medical Center- Beilinson Campus Petach Tikva Israel ([ROR:01vjtf564](https://ror.org/01vjtf564))\n7. Department of Biology, Institute of Microbiology Zurich Switzerland ([ROR:02p1jz666](https://ror.org/02p1jz666))\n8. Department of Medical Oncology, Erasmus MC Cancer Institute Rotterdam Netherlands ([ROR:03r4m3349](https://ror.org/03r4m3349))\n9. School of Medicine, Department of Pathology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDespite the remarkable successes of cancer immunotherapies, the majority of patients will experience only partial response followed by relapse of resistant tumors. While treatment resistance has frequently been attributed to clonal selection and immunoediting, comparisons of paired primary and relapsed tumors in melanoma and breast cancers indicate that they share the majority of clones. Here, we demonstrate in both mouse models and clinical human samples that tumor cells evade immunotherapy by generating unique transient cell-in-cell structures, which are resistant to killing by T cells and chemotherapies. While the outer cells in this cell-in-cell formation are often killed by reactive T cells, the inner cells remain intact and disseminate into single tumor cells once T cells are no longer present. This formation is mediated predominantly by IFN\u03b3-activated T cells, which subsequently induce phosphorylation of the transcription factors signal transducer and activator of transcription 3 (STAT3) and early growth response-1 (EGR-1) in tumor cells. Indeed, inhibiting these factors prior to immunotherapy significantly improves its therapeutic efficacy. Overall, this work highlights a currently insurmountable limitation of immunotherapy and reveals a previously unknown resistance mechanism which enables tumor cells to survive immune-mediated killing without altering their immunogenicity.\n\n## Introduction\n\nGiven the direct correlation between the prevalence of cytotoxic T-cell immunity and improved clinical outcomes (Pag\u00e8s et al., 2005; Galon et al., 2006; Fridman et al., 2012), most therapeutic strategies are aimed at harnessing T-cell immunity to fight cancer. These attempts include de novo expansion of tumor-infiltrating cytotoxic T cells (Restifo et al., 2012; Rosenberg, 2014), engineered T cells (Gross et al., 1989; Kalos et al., 2011), or blocking antibodies directed against suppressive receptors (Pardoll, 2012; Hodi et al., 2010). However, long-term follow-up indicates that while patients will experience tumor regression, it is frequently followed by recurrence of tumors that are largely resistant to subsequent treatments (Salati et al., 2018; Gide et al., 2018; Gauci et al., 2019). As tumor cells often express mutated proteins or neo-antigens (Vogelstein et al., 2013; Schumacher and Schreiber, 2015), it remains unclear why eliciting the full spectrum of T-cell immunity to these antigens is not sufficient to eradicate tumors.\n\nSeveral theoretical frameworks have been widely employed to understand how tumors escape T-cell-based therapies. The main conceptual paradigm suggests that in order to avoid killing by T cells, tumor cells edit or lose their targeted antigens, or downregulate HLA molecules (Khong and Restifo, 2002; Dunn et al., 2002; Gajewski et al., 2013). However, the presence of immunogenic clones expressing neoantigens and HLA molecules, despite having infiltrated reactive T cells, has been well-documented (Straetemans et al., 2015). Accordingly, tumor resistance to immunotherapy was also shown to be acquired through tumor cell-intrinsic mechanisms, including loss-of-function of JNK and PTEN, MYC overexpression, and constitutive WNT signaling (Zaretsky et al., 2016; Sade-Feldman et al., 2017; Peng et al., 2016). Alternative explanation regarding how immunogenic clones can survive T-cell pressure is attributed to the capacity of relapsed tumors to promote a suppressive microenvironment (Sharma et al., 2017; Topalian et al., 2015). Along these lines, the discovery that tumor cells, as well as tumor-infiltrating cells, actively express receptors that negatively regulate T cells (i.e. PD-L1, PD-L2, and etc) activity highlighted novel mechanisms by which tumors escape immunosurveillance (Dong et al., 2002; Iwai et al., 2002). Nonetheless, only about 30% of the patients achieve durable objective response following treatment with checkpoint blockade (Topalian et al., 2015; Egen et al., 2020; Haslam and Prasad, 2019). Moreover, combination therapies of tumor-reactive T cells with immunomodulators such as regulatory receptors blockades are still not sufficient to profoundly improve response rates (Rohaan et al., 2018; Swart et al., 2016), which strongly suggests that additional escape mechanisms are involved.\n\nWhile these frameworks provide important insights into the complex interactions between reactive T cells and tumor cells, why tumors recur in patients undergoing complete response following immunotherapy remains largely unknown. Most of our knowledge on this process comes from experiments comparing individuals who respond or do not respond to immunotherapy, and not from experimental settings that measure the cell-intrinsic changes, neoantigen landscape, and immune parameters within the same individual. Surprisingly, whole exome and genome sequencing comparisons of paired primary and relapsed tumors indicate that most clones in relapsed tumors are shared with the primary tumors, suggesting relatively low rates of clonal deletion (Yates et al., 2017; Hao et al., 2016; Gundem et al., 2015).\n\nTherefore, to study this process in melanoma and breast cancer, we developed several mouse models in which resistant tumors relapse following immunotherapies. In both mice and humans, we found that the tumor cells remaining after immunotherapy form unique cell-in-cell structures and generate membrane architecture that is impenetrable by immune-derived lytic granules, cytotoxic compounds, and chemotherapies. While the outer cells in this formation are often killed by reactive T cells, the inner cells maintain their integrity and viability and can survive for weeks in culture containing reactive T cells. Once T cells are removed, the inner tumor cells disseminate back into their parental single cells. Overall, this work suggests that this biological process is a central mechanism through which tumor cells escape T-cell immunity and give rise to relapsed tumors.\n\n## Results\n\n### Relapsed tumor cells share neoantigens with primary tumors\n\nTo study tumor relapse, we initially looked for a mouse model in which tumors recur following their complete regression. Since the effect of classic checkpoint blockade therapies are limited in most mouse models, we used a combination of dendritic cell adjuvant with tumor-binding antibodies to elicit highly potent T-cell immunity (Spitzer et al., 2017; Carmi et al., 2015). A version of this therapy is now tested in a multi-center phase-I trial (Ackerman et al., 2021). While this treatment does not recapitulate the exact effect of checkpoint blockade therapy, it induces T cell-dependant immunity that completely eradicates established tumors across multiple models. Therefore, when palpable melanoma tumors were injected with a combination of TNF\u03b1, CD40L, and an antibody against the melanoma antigen TRP1, tumors were almost completely eradicated in all mice. Nonetheless, after about 10 days, half the mice developed recurrent tumors that were resistant to subsequent treatments (Figure 1A, Figure 2\u2014video 1; Figure 1\u2014figure supplement 1). Similar patterns of tumor relapse and resistance were also observed upon treating BALB/c mice bearing breast tumors with allogeneic antibodies and DC adjuvant (Figure 1A). To test if this occurrence represents a broader phenomenon, we also treated melanoma-bearing mice with splenic CD8+ T cells expressing TCR against gp100 or TRP2 melanoma antigens. Both treatments induced significant tumor regression, followed by tumor recurrence in all treated mice (Figure 1B, Figure 1\u2014figure supplement 1B). As observed with the previous immunotherapy, recurrent tumors were resistant to subsequent treatment with gp100- or TRP2-reactive T cells (Figure 1B). In all cases, immune composition analysis of tumors following the second immunotherapy indicated treated mice across all immunotherapies show massive immune-cell and T-cell infiltration (Figure 1C) with a dominant representation of T-cell clones against the melanoma antigens TRP2 and gp100 (Figure 1D). To test if these tumor-infiltrating T cells (TIL) are active, we adoptively transferred them to naive mice and challenged them with tumor inoculation. In two different tumor models, TIL transfer prevented tumor growth, further indicating that their overall activity favours immunity (Figure 1E-F). Next, we assessed changes in immunogenicity of tumors following immunotherapy. Analysis of melanoma cells showed they maintain expression of MHC-I (Figure 1\u2014source data 1), as well as TRP2 and gp100 antigens (Figure 1G, Figure 1\u2014figure supplement 1). To assess changes in immunogenicity of resistant cell lines, beyond TRP2 and gp100 expression, we analysed their neoantigen landscape in comparison to that of B16F10 from untreated mice. To this end, we established four lines of B16F10 that relapsed following immunotherapy and were resistant to subsequent treatments (Figure 1H). Whole exome analysis (WES) indicated comparable neoantigen burden across all samples (Figure 1I) with the same 25 germline mutations with the highest MHCI affinity (Figure 1J). RNAseq analyses further demonstrated similar patterns of gene expression (Figure 1\u2014figure supplement 1H) as well as known B16F10 neoantigens in cell lines established from relapsed tumors sorted following effective immunotherapy (Figure 1K, Figure 1\u2014source data 1). To assess the human relevance of these findings, we next plotted the neoantigen burden identified in relapsed melanoma (Zaretsky et al., 2016) and in non-small cell carcinoma patients Anagnostou et al., 2017 following treatment with checkpoint blockade. Consistent with our finding in mice, the majority of neoantigens were shared between relapsed tumors and their corresponding primary tumor (Figure 1L\u2013M).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig1-v1.jpg)\n\n**Figure 1.:** (A) Tumor size (in mm2) following treatments with anti-CD40, TNF\u03b1(i.e. (DC) adjuvant) and tumor-binding antibodies (n=5). Arrowheads indicate treatment. (B) Tumor size (in mm2) following adoptive transfer of gp100-reactive or TRP2-reactive CD8+ T cells (n=5). Arrowheads indicate treatment (C) Mean percentages of T cells out of CD45+ cells in B16F10 tumors treated with DC adjuvant and tumor-binding antibodies (n=3). (D) Mean percentage of TRP2- and gp100-reactive T-cell clones in tumors treated with DC adjuvant and tumor-binding antibodies (n=3). (E) Percentage of tumor-free mice injected with CD8+ T cells from immunotherapy-treated B16 tumors (ACT), and subsequently challenged with B16F10 cells (n=5). (F) Percentage of tumor-free mice injected with CD8+ T cells from immunotherapy-treated 4T1 tumors (ACT), and subsequently challenged with 4T1 cells (n=5). (G) Representative staining of TRP2 and gp100 in immunotherapy- relapsed B16F10 cells. (H) Illustration of neoantigen discovery pipeline. (I) Neoantigen burden in B16F10 cells isolated from untreated tumors, or following immunotherapy-treated B16F10 tumors (IT). (J) Allele frequency comparison of 25 neoantigens with the highest MHC-I affinity. (K) RNAseq expression level of B16F10-known neoantigens. (L) Primary and relapsed tumors non-synonymous mutation load in melanoma patients (n=4). (M) Somatic sequence alterations in NSCLC Patients (n=4). Experiments were repeated independently at least three times. Statistical significance was calculated using ANOVA with Tukey\u2019s correction for multiple comparisons (** denotes p<0.01, **** denotes p<0.0001). Error bars represent standard error. Scale bars = 20 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Individual mice tumor growth curves from Figure 1. (B) Individual mice tumor growth curves from Figure 1B. (C) Gating strategy and MHC expression on immune and tumor cells following a second treatment with tumor-binding antibodies, TNF\u03b1, and anti-CD40 agonist. (D) Immunofluorescence of total single cells obtained from tumors treated twice with tumor-binding antibodies, TNF\u03b1, and anti-CD40 agonist. (E) Mean fluorescence intensity of MHCI, TRP2 and gp100 antigens on B16F10 tumor cells isolated from treated or untreated tumors. (F) Immunostaining of untreated B16F10 for melanoma antigen TRP2. (G) Immunostaining of untreated B16F10 for melanoma antigen gp-100. (H) Volcano plots comparing gene expression in B16F10 tumor cells sorted from relapsed tumors in vivo and B16F10 cell lines established from relapsed tumors following immunotherapy. Scale bar = 20 \u03bcm.\n\n### Tumor cells surviving immunotherapy organize in a transient cell-in-cell formation\n\nTo assess whether tumors acquire resistance through inherent mechanisms, we next tested the susceptibility of cell lines established from treated mice to subsequent immunotherapy. Initially, cell lines established from tumors relapsed following TNF\u03b1, CD40L and anti-TRP1 were injected to na\u00efve mice and allowed to reach a palpable size. Consistent with their patterns of gene and neoantigens expression, these tumors were equally susceptible to the same immunotherapy as the parental B16F10 cells, albeit relapsed more rapidly (Figure 2A, Figure 2\u2014figure supplement 1A). Interestingly, these cell lines maintained their baseline levels of MHC-I, TRP2 and gp100 proteins albeit encountered with gp100 and TRP2 reactive T cells (Figure 2\u2014figure supplement 1). Indeed, overnight incubation of these cell lines with gp100-reactive T cells indicated they are equally susceptible to killing as the parental cell line (Figure 2B). To further corroborate that, we established cell lines from relapsed tumors following treatment with gp100-reactive T cells and assessed their responsiveness to treatment with gp100-reactive T cells. Indeed, these cell lines responded similarly to the parental cells to this treatment (Figure 2C). Next, we tested if tumor cell lines established following killing with TRP2- and gp100-reactive T cells would be less sensitive to killing by the same reactive T cells. First, we established melanoma cell lines that survived killing by either gp100 or TRP2-reactive T cells. These lines were then incubated with gp100 and TRP2-reactive T cells, and their rates of killing were compared to that of the parental cell line (illustrated in Figure 2D). We found that both B16F10 parental cells and the cell lines established following killing by reactive T cells were equally susceptible to T cell killing, (Figure 2E). Taken jointly, these results suggest that transient in vivo mechanisms rather than inherited ones govern resistance of relapsed tumors. In support of this hypothesis, RNAseq analysis indicated that all the established cell lines cluster within the same principal components, whereas the expression profile of freshly sorted tumor cells from immunotherapy-treated mice is markedly distinct (Figure 2F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig2-v1.jpg)\n\n**Figure 2.:** (A) Tumor size (in mm2) of B16F10 control (WT) and cell-lines established from relapsed B16F10 tumors following re-treatments with DC adjuvant and anti-TRP1 tumor-binding antibodies (n=5). (B) Mean percentages of apoptotic tumor cells after incubation overnight with gp100-reactive CD8+ T cells (n=4). (C) Tumor size (in mm2) of B16F10 control (WT) and cell-lines established from relapsed B16 tumors following additional treatment with gp100-reactive T cell (n=4). Arrowheads indicate treatment. (D) Illustration of experimental design. (E) Confluence percentage of B16F10 following one or two incubations with gp100-reactive or TRP2-reactive CD8+ T cells. (F) Principal Component Analysis (PCA) of B16F10 tumor cell lines freshly isolated from treated mice. (G) Representative images of B16F10 tumor cells sorted from tumors relapsed after immunotherapy. (H) Transmitting electron microscopy images of immunotherapy-relapsed B16F10 tumor cells. (I) Representative histological sections of untreated B16F10 tumors, and 5 days following immunotherapy. Arrowheads indicate cell-in-cell formation. (J) Mean percentage of cell-in-cell and single cells in B16F10 tumor-bearing mice, left untreated, treated with DC adjuvant and anti-TRP1 (Ab-IT), and treated with gp100-reactive T cells (gp100 ACT) (n=4). (K) Representative images of B16F10 labeled with H2B-tdTomato and H2B-GFP immediately after isolation from tumor-bearing mice treated with DC adjuvant and anti-TRP1, and after 4 days in culture. Experiments were repeated independently at least three times. Statistical significance was calculated using ANOVA with Tukey\u2019s correction for multiple comparisons (* denotes p<0.05, *** denotes p<0.001, and **** denotes p<0.0001). Error bars represent standard error. Scale bars = 20 \u03bcm (G, I), 5 \u03bcm (H left), 500 nm (H right).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Relates to Figure 2. (A). Individual mice tumor growth curves from Figure 2A (n=5). (B) Mean fluorescence intensity of MHCI, TRP2 antigen and gp100 antigen on B16F10 and cell-lines established from relapsed B16 tumors. (C) Extended confocal section and 3D projection of histological sections of B16F10 tumors 5 days after immunotherapy.\n\nTo better characterize the tumor cells that survive in mice following immunotherapy, we enzymatically digested treated tumors and sorted the live melanoma cells. Confocal analyses indicated that most of the tumor cells organize in clusters of several nuclei surrounded by a single membrane and cortical actin (Figure 2G). Transmission electron microscopy (TEM) of freshly sorted cells further corroborated a distinct segregation of the membranes and cytosols of the two cells. The inner cell was dense and seemed to have been compacted within another cell (Figure 2H). To ensure that these structures do not result from the isolation procedure, we also analysed histological sections of tumors, whose nuclei and cell membranes are fluorescently labeled. Indeed, immunotherapy-treated tumors showed increase prevalence of cell structures where one or more nuclei were surrounded by multiple membranes, especially in sites associated with tumor cell death (Figure 2I, Figure 2\u2014figure supplement 1C). ImageStream FACS analysis as well as double blind count under confocal microscopy by pathologists indicated that about half the cells that survived immunotherapy are organized in such structures where multiple membrane layers surround the cell nuclei (Figure 2J).\n\nTo test if this formation was merely the result of incomplete cell division, we injected mice with tumor cells whose nuclei are labeled with GFP or tdTomato, and treated the mice with immunotherapy. About one third of the tumor cells were a mixture of both GFP and tdTomato nuclei (Figure 2K). Furthermore, monitoring the dynamics of single cells sorted from treated mice indicated that they spontaneously clustered in a cell-in-cell formation during their in vitro culture (Figure 2\u2014video 1). Over time, all cells disseminated into single cells bearing morphological features similar to those of the parental cell line with no observed cells concomitantly expressing the two fluorophores (Figure 2\u2014video 2).\n\n### Tumor-reactive T cells induce transient cell-in-cell structure\n\nTo test whether a specific immune cell type mediates these cell-in-cell formations, we isolated the main effector cells from tumor-bearing mice and incubated them overnight with B16F10 tumor cells. We found that only T cells\u2014mainly CD8+, and with slower kinetics also CD4+\u2014induce a cell-in-cell formation with the same special characteristics as the ones observed in vivo following immunotherapy (Figure 3A, B, Figure 3\u2014figure supplement 1, Figure 3\u2014video 1). Consistently, no cell-in-cell structures were observed in Nude SCID- gamma-/- (NSG) mice treated with immunotherapy (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig3-v1.jpg)\n\n**Figure 3.:** (A) Mean percentage of cell-in-cell tumor formations following incubation of B16F10 cells with immune cells (n=4). (B) Representative 3D projection and horizontal sections (Z-stack) of B16F10 cells incubated with gp100-reactive CD8+ T cells. (C) Mean percentage of cell-in-cell tumor formations and single cells in tumor-bearing NSG-/- mice treated with DC adjuvant and anti-TRP1 antibodies (n=4). (D) Mean counts of cell-in-cell tumor formations in mouse cancer cell lines cultured overnight with activated CD8+ T cells (n=4). (E) Mean counts of cell-in-cell tumor formations in human cancer cell lines cultured overnight with activated allogeneic CD8+ T cells (n=4). (F\u2013G) Representative images of freshly-isolated human melanoma cells incubated overnight with autologous tumor-reactive T cells. (H) Mean percentage of cell-in-cell tumor formations following incubation of tumor cells isolated from melanoma patient with autologous tumor-reactive T cells (four technical replicates). (I) Histological section of human melanoma in NSG-/- mice 7 days after treatment with patient autologous TIL and high-dose IL-2. (J) H&E staining of histological sections of involved lymph node from metastatic melanoma patient. (K) Immunostaining of involved lymph nodes from metastatic melanoma patient. (L) H&E staining of histological sections of primary and sentinel lymph nodes from untreated stage IV melanoma patients. (M) H&E staining of histological sections of untreated primary and relapsed melanoma patient. Statistical significance was calculated using ANOVA with Tukey\u2019s correction for multiple comparisons (* denotes p<0.05, ** denotes p<0.01 *** denotes p<0.001, and **** denotes p<0.0001). Error bars represent standard error. Scale bars = 20 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative images of B16F10 cells following incubation with different immune cell subsets from na\u00efve mice. (B) Mean percentage over time of cell-in-cell and simple cells from B16F10 tumor incubated with gp100-reactive CD8+ or TRP1-reactive CD4+ T cells (n=4). (C) Representative images of breast epithelial cancer cells (4T1) incubated with allogeneic T cells (D). Representative images of breast epithelial non-transformed cells (EPH4) incubated with allogeneic T cells. (E) Representative confocal images of B16F10 and 4T1 incubated overnight with gp100-reactive or allogenic CD8+ T cells, respectively. (E-H). Representative images of murine cancer cell lines incubated overnight with activated allogeneic splenic CD8+ T cells. All experiments were repeated at least three times. Scale bars = 20 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A-G) Representative images of human cancer cell lines incubated overnight with allogeneic T cells from healthy donors. (H) H&E staining of involved lymph nodes from metastatic melanoma patients. All experiments were repeated at least three times. Scale bars = 20 \u03bcm.\n\nWe next tested whether this phenomenon occurs in other tumor cell types. Indeed, the same structures were also observed in 4T1 mammary carcinoma incubated with allogeneic T cells, but not in immortalized mammary epithelial cells (Figure 3\u2014figure supplement 1). In contrast, immortalized mammary epithelial cells were completely killed by allogeneic T cells and did not form cell-in-cell structure (Figure 3\u2014figure supplement 1) suggesting this phenomenon is restricted to tumor cells. We also tested whether tumor cells from different tissue origins can organize in cell-in-cell formation. To this end, we incubated tumor cell lines with allogeneic T cells and quantified the number of cell-in-cell structures after 24 hr. We found significant differences between tumor cell lines; on one end are pancreatic tumors and B cell lymphoma, which do not generate cell-in-cell structures, while on the other end, almost all the colon and ovarian carcinoma tumor cells that survive T cell killing, were organized in such structures (Figure 3D, Figure 3\u2014figure supplement 1E\u2013H).\n\nWe then tested whether similar structures are also formed by human cancer. To this end, we incubated tumor cell lines with pre-activated allogeneic T cells from healthy donors. Similar to our finding in mouse cells, the vast majority of breast, colon and melanoma tumors that survived killing had organized in transient cell-in-cell structures (Figure 3E and Figure 3\u2014figure supplement 2). Moreover, a 3-day recording of the interactions between colorectal adenocarcinoma and activated T cells highlighted the dynamic nature of these cell-in-cell structures, as tumor cells constantly form and disseminate from it. These results further stress that most single cells will undergo cell death (Figure 3\u2014video 2). In contrast, T cell and myeloid lymphomas as well as glioblastomas did not form such structures (Figure 3E and Figure 3\u2014figure supplement 2A\u2013G). We also assessed that in a more clinically relevant model. To this end, we isolated melanoma cells and their autologous reactive T infiltrating lymphocytes (TIL) from freshly resected primary melanoma tumors. Overnight incubation of patient-derived melanoma and their corresponding reactive TIL, resulted in vast tumor cell killing. Approximately half of the tumor cells that survived in culture were organized in a cell-in-cell formation (Figure 3F\u2013H). To further corroborate these observations, melanoma cells from human patients were also injected into NSG-/- mice and tumors were allowed to grow. Once tumors reached approximately 40 mm2, mice were injected i.v. with 1 \u00d7 107 autologous TIL and with high-dose IL-2. Tumor sizes regressed drastically for several days until reaching a minimum size of 9 mm2, but regrew afterwards. Histological sections of tumors at this point indicated high prevalence of tumor cells organized in cell-in-cell formation (Figure 3I). We also analysed histological sections of multiple organs from four stage IV melanoma patients undergoing surgical resection of their primary, and metastatic draining lymph nodes. In all patients, cell-in-cell tumor formations were highly abundant in the T cell zone of the draining lymph nodes, but not in the primary tumors (Figure 3J\u2013L and Figure 3\u2014figure supplement 2H). In another patient with untreated recurrent melanoma, we observed that the vast majority of cells in the primary tumors were single cells, while recurrent tumors were highly enriched with cell-in-cell formations (Figure 3M).\n\n### IFN\u03b3 induces membrane-bound proteins on T cells that mediate tumor cell-in-cell formations\n\nTo elucidate the process by which T cells induce a cell-in-cell formation, we initially compared their interactions with tumor cells to that of other immune cells using high-resolution SEM. Interestingly, tumor-reactive T cells, but not PMA plus ionomycin-activated NK cells or LPS-activated macrophages, express the intact granules on their cell membrane (Figure 4A, Figure 4\u2014figure supplement 1). To test if these T cell-secreted granules can mediate cell-in-cell structures, we incubated splenic T cells with immobilized anti-CD3 and anti-CD28 and isolated intact granules on iodixanol gradient by ultracentrifugation (Casey et al., 2007). Secreted granules were washed and added to a culture of tumor cells. Similar to activated T cells, secreted granules were sufficient to induce cell-in-cell formation. Next, we tested if this formation can be induced by extracellular vesicles secreted by other cells. Hence, B16F10 cells were cultured overnight with extracellular vesicles from activated NK, macrophages, immortalized melanocytes (Melan A), B16F10-derived granules, or commercial 1 \u03bcM latex beads. However, none of these extracellular vesicles induced a cell-in-cell formation, suggesting this it is mediated by molecules that are highly enriched in activated T cells (Figure 4B, C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig4-v1.jpg)\n\n**Figure 4.:** (A) SEM analysis of B16F10 incubated overnight with gp100-reactive CD8+ T cells. (B) Mean percentage of cell-in-cell formation of B16F10 incubated overnight with latex beads, B16F10 and Melan A melanosomes, NK- and T cell-derived granules (n=3). (C) Representative images of B16F10 incubated overnight with latex beads, B16F10 and Melan A melanosomes, NK- and T cell-derived granules. (D) Overlap of the total genes, detected by mass-spectrometry of T cell secreted granules and genes related to primary human T cell granules (left diagram) or granules-membrane related genes (right diagram). (E) Mean percentages of apoptotic tumor cells following overnight incubation with T cell-derived granules. (F) Mean percentage of cell-in-cell formation following overnight incubation with granules-blocking antibodies (n=3). (G) Mean percentage of B16F10 cell-in-cell formations following overnight incubation with T cells compartments (n=6). (H) Mean percentage of 4T1 cell-in-cell formations following overnight incubation with T cells compartments (n=6). (I) Mean percentage of cell-in-cell formation following incubation with T cells pre-activated with different stimulators (n=3). (J) PCA of expression profiles of na\u00efve and activated CD8+ T cells (K) Mean percentage of cell-in-cell formations following overnight incubation with IFN\u03b3-activated immune cells. (n=4). (L) Mean percentage of human cell-in-cell formations following overnight incubation with IFN\u03b3-activated CD8+ T cells from healthy donors. (n=3). Experiments were repeated independently at least three times. Statistical significance was calculated using ANOVA with Tukey\u2019s correction for multiple comparisons (**denotes p<0.001, *** denotes p<0.0001, **** denotes p<0.0001). Error bars represent standard. Scale bars = 5 \u03bcm (A top), 500 nm (A bottom), 20 \u03bcm (C).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) SEM analysis of B16F10 incubated with macrophages (left square) or NK cells (right square). (B) Transmission electron microscopy of T cells secreted granules, collected 48 hours after activation with immobilized aCD3/aCD28 antibodies. (C) Representative image of a single-layer transmitting electron microscopy of T cells incubated overnight with B16F10 cells. (D) Representative image of B16F10 incubated overnight with T cell-derived secreted granules containing media. (E) Representative images of B16F10 incubated overnight with activated T cells. (F) Heatmap of gene expression patterns of na\u00efve and activated CD8+ T cells. (G) Confocal microscopy images of human melanoma incubated overnight with allogeneic T cells from healthy donors. Scale bars = 5 \u03bcm (A top), 500 nm (A bottom, B), 20 \u03bcm (D, E, G).\n\nTo shed light on the nature of these granules, we initially analysed them under TEM. The vast majority of isolated granules had a dark center due to high absorbance of uranyl acetate, rang at about 500 nm in diameter, and their luminal matrix was bounded by a bilayer membrane (Figure 4\u2014figure supplement 1). Similar characteristics were also observed in granules on the membranes of activated CD8+ T cells incubated with tumor cells (Figure 4\u2014figure supplement 1). We next analysed the protein content of the purified granules by mass spectrometry. Overall, we identified approximately 400 proteins and out of those 273 were shared primary T cell secreted granules. (Figure 4D). Consistently, incubation of these granules with tumor cells induced significant cell death (Figure 4E, Figure 4\u2014figure supplement 1). Whether these granules are indeed lysosomes, or other intact lytic granules, such as super macromolecules attack particles (B\u00e1lint et al., 2020), remain beyond the scope of this work. Along these lines, whether these granules are released from dying T cells or through the active mechanism of exocytosis currently remains unknown. Most importantly, however, incubation of tumor cells with gp100-reactive T cells in the presence of antibodies that block the interactions with lysosomes/secreted granules (i.e. LAMP1, CD95, or CD63) did not alter T cells capacity to induce a cell-in-cell formation, suggesting that these molecules are also expressed on T cell membranes (Figure 4F). Indeed, incubation of tumor cells with extraction of membrane-associated proteins, but not cytosolic or secreted proteins from activated T cells, induce tumor cell-in-cell formation (Figure 4G\u2013H). To elucidate the type of activations that predominantly induce these molecules, we incubated na\u00efve splenic T cells overnight with various stimulators, washed them extensively, and incubated them with tumor cells. We found that T cells activated with IFN\u03b3, and to a lesser extent anti-CD3 plus high-dose IL-2, induce the most cell-in-cell formation (Figure 4I, Figure 4\u2014figure supplement 1). RNAseq analyses indicated that the expression profile of IFN\u03b3 activated T cells differ markedly than that induced by anti-CD3 or LPS, which do not induce cell-in-cell formation in tumor cells (Figure 4J, Figure 4\u2014figure supplement 1). We next tested if other IFN\u03b3 -activated cells can induce a cell-in-cell formation, or whether it is restricted to activated T cells. We found that IFN\u03b3 -stimulated NK cells and macrophages, but not B cells, could induce a tumor cell-in-cell formation, albeit at a lower percentage compared to activated T cells (Figure 4K). Similarly, human T cells from healthy donors that were pre-activated with IFN\u03b3 efficiently induced cell-in-cell formation in allogeneic tumor cells (Figure 4L and Figure 4\u2014figure supplement 1). Overall, these results suggest that proteins that are predominantly, but not exclusively, expressed on both the membrane of IFN\u03b3-activated T cells and on secreted granules mediate cell-in-cell formation.\n\n### Cell-in-cell formation spatially prevents the penetration of T cell-derived lytic granules to the inner tumor cells\n\nNext, we assessed if cell-in-cell formation protects tumor cells from T cell-mediated killing. To this end, we compared the viability and apoptosis rates of single tumor cells to that of cell-in-cell. Initially, cell-in-cell formation was induced by overnight incubation of melanoma cells with T cells-secreted granules. Next, we added different ratios of gp100-reactive CD8+ T cells and measured caspase 3/7 activity in the tumor cells after 6 hr and overnight. In all assays, we found that single tumor cells were significantly more susceptible to killing by reactive T cells, compared to that of cell-in-cell tumors (Figure 5A). Pre-incubation of tumor cells with granules isolated from activated B cells and macrophages (which do not induce cell-in-cell formation) provided no protection to tumor cells from gp100-reactive T cells (Figure 5\u2014figure supplement 1). We next tested if cell-in-cell formation also endows protection from immunotherapy in vivo. To this end, cell-in-cell tumors were induced in vitro, before injection to animals, by overnight incubation with T cell secreted granules, or in vivo by injection of T cell-derived secreted granules. Cell-in-cell tumors that were induced in vitro have grown slower compared to single tumor cells, but experienced only minor regression following administration of immunotherapy. Similarly, cell-in-cell formation induced in vivo showed only benign response to immunotherapy. In sharp contrast, single melanoma cells were almost completely abrogated following therapy (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig5-v1.jpg)\n\n**Figure 5.:** (A) Mean percentages of apoptotic tumor cells following overnight incubation with gp100-reactive CD8+ T cells. (B) B16F10 tumor size following treatment with DC adjuvant and anti-TRP1 antibodies (IT). B16F10 were injected as single cells, with or without injection of T cell-secreted granules (Granules), or as cell-in-cell. Black arrowheads indicate IT, yellow arrowhead indicates granules injection. (C\u2013D) SEM analysis of B16F10 incubated with TRP2-reactive CD8+ T cells from WT (C) or Prf1-/- mice (D). (E) Confocal plane image of B16F10 incubated with tumor-reactive CD8+ T cells. (F) Normalized intensity of T cell\u2019s cortical actin (Cy5) over time at immunological synapses (n=5). (G) Immunological synapse length between B16F10 and tumor-reactive CD8+ T cells (n=18). (H) Confocal plane image of B16F10 incubated with tumor-reactive CD8+ T cells. (I) 3D rendering and surface detection and 3D sections (XY and ZY planes) of B16F10 cells incubated with tumor-reactive CD8+ T cells. (J) Mean fluorescence intensity of cleaved caspase 3/7 in B16F10 tumor cells following incubation with gp100-reactive CD8+ T cells (n=3). (K) Relative confluence over time of B16F10 single cell or cell-in-cell, cultured following incubation with H2O2 (n=3). Experiments were repeated independently at least three times. Statistical significance was calculated using ANOVA with Tukey\u2019s correction for multiple comparisons (* denotes p<0.05, ** denotes p<0.01, *** denotes p<0.001, **** denotes p<0.0001). Error bars represent standard error. Scale bars = 5 \u03bcm (C, D), 20 \u03bcm (E, H, I).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Mean percentage of apoptotic B16F10, pre-incubated with secreted granules from activated immune cells, and following overnight incubation with gp100-reactive T cells (n=3). (B) Mean percentage of apoptotic B16F10 following overnight incubation with gp100-reactive T cells (n=4). (C) Representative images of B16 single cells or cell-in-cell culture gp100-reactive T cells. Dashed lines indicate immunological synapses. (D) 3D rendering of B16F10 following incubation with tumor-reactive T cells. (Relates to Figure 5E). (E) Confocal plane image of B16F10 incubated with tumor-reactive CD8+ T cells. (F) 3D rendering of B16F10 following incubation with tumor-reactive T cells. (Relates to Figure S6E). (G). Granzyme B molecules prevalence inside B16F10 cells following incubation with tumor reactive T cells. (H) Relative confluence over time of B16 single cells or cell-in-cell (CiC) culture following incubation with doxorubicin (doxo) or cycloheximide (CH). Experiments were repeated at least three times. Statistical significance was calculated using ANOVA with Tukey\u2019s correction for multiple comparisons (*denotes p<0.05, **denotes p<0.01, *** denotes p<0.001, **** denotes p<0.0001). Error bars represent standard error. Scale bars = 20 \u03bcm.\n\nTo assess the type of protection cell-in-cell formation provides to tumor cells, we examined their interactions with T cells under scanning electron microscope (SEM). We found that multiple T cells were attached to cell-in-cell tumors and many large pores were observed on the outer cell membrane (Figure 5C). These pores were almost completely absent upon co-culture with reactive CD8+ T cells from perforin-/- mice (Figure 5D), which have impaired tumor cell killing abilities (Figure 5\u2014figure supplement 1). Furthermore, measuring the length and the duration of the immunological synapse under super-resolution microscopy showed that no reduction compared to single tumor cells (Figure 5E\u2013G, Figure 5\u2014figure supplement 1). Taken jointly, these results strongly suggest that cell-in-cell structures do not evade killing by escaping CD8+ T cell recognition. Alternatively, we considered the possibility that lytic enzymes derived from T cell do not penetrate these cellular structures. Immunostaining of T cells attacking cell-in-cell tumors, indicated that the distribution of granzyme B and perforin is almost limited to the outer cell (Figure 5H\u2013I, Figure 5\u2014figure supplement 1). While these interactions were sufficient to kill single tumor cells, they were insufficient to induce caspase 3/7 activity in the inner cell, leaving it intact and alive (Figure 5G\u2013J, and Figure 5\u2014video 1).\n\nLastly, we compared the sensitivity of single-tumor cells to that of cell-in-cell tumors to additional antibiotics including free radicals and chemotherapies. Similar to our results with T cells, in all the tested compounds, cell-in-cell formation tumors survived longer and at higher concentrations compared to their parental cell lines (Figure 5K and Figure 5\u2014figure supplement 1).\n\n### T-cell-mediated cell-in-cell formation is governed by STAT3 and EGR1 signaling\n\nWe then set out to understand what signaling cascade governs cell-in-cell structures. Initially, we sought to test if the observed results were cell fusion. Thus, we incubated tumor cells whose cytosols were labeled with either Wasabi or tdTomato with tumor-reactive T cells. Confocal analysis indicated that each cell type in the cell-in-cell formation maintained its cytoplasm, and no mix between colors was detected (Figure 6\u2014figure supplement 1). Furthermore, long-term follow-up of cell dissemination from this structure indicated that each cell maintains its initial single labelling color (Figure 6\u2014video 1 and Figure 6\u2014figure supplement 1). To corroborate this, we also incubated tumor cells whose membrane, nucleus, and F-actin were labeled with different fluorophores. Similarly, each cell in this formation was separated and maintained the integrity of its original cell components (Figure 6A). Given the similarity of this formation to entosis, we used ROCK inhibitor, which is the key regulator of this process. Indeed, blocking ROCK almost completely prevented T cell-mediated cell-in-cell formation (Figure 6B, C). We then tested whether the molecular machinery reported to mediate tumor spontaneous entosis applies to govern the current cell-in-cell structure. However, we observed no increase or changes in the cellular localization of phosphorylated \u03b2 catenin, E-cadherin, and phosphorylated integrin \u03b21 (26) (Figure 6\u2014figure supplement 1) suggesting other mediators promote this entosis. Furthermore, there was no reduction in cell-in-cell formation upon blocking of E- and N- cadherins, or inhibition of Wnt signaling (Figure 6D\u2013E). In sharp contrast, disruption of actin filaments, blocking of mRNA synthesis or protein production completely abrogated tumor cells\u2019 capacity to form a cell-in-cell formation, suggesting that the structure requires de novo synthesis of genes (Figure 6D\u2013E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig6-v1.jpg)\n\n**Figure 6.:** (A) Representative images of B16F10, co-expressing Lifeact-GFP and H2b-tdTomato or MyrPalm-tdTomato and H2b-GFP, following incubation with gp100-reactive T cells. (B) Mean percentage of cell-in-cell tumor formations in B16F10 following overnight incubation with gp100-reactive CD8+ T cells with or without ROCK inhibitor (n=3). (C) Representative images of cell-in-cell tumor formations in B16F10 following overnight incubation with gp100-reactive CD8+ T cells with or without ROCK inhibitor. (D) Mean percentage of cell-in-cell tumor formations in B16F10 cells following overnight incubation with specific inhibitors and reactive CD8+ T cells (n=4). (E) Representative images of B16F10 cells treated with inhibitors and incubated overnight with gp100-reactive CD8+ T cells. (F) Significantly increased genes in B16F10 cells incubated with T cell-derived granules (Lyso) or isolated directly from relapsed tumors (Tumor), compared to B16F10 control cells (WT) (Bottom) and relative expression of the top 25 genes (Top) (n=3). (G) STAT3 and EGR1 expression levels in B16F10 cells isolated directly from relapsed tumors (Tumor) and after incubation with T-cell-derived granules (Lyso) compared to B16F10 control cells (WT) (n=3) (H) Mean percentage and representative images of cell-in-cell tumor formations in B16F10 48 hours after transfection with STAT3-T2A-iRFP670, EGR1-T2A-GFP or both (n=3). (I) Mean percentage of apoptotic B16F10, transfected with STAT3-T2A-iRFP670, EGR1-T2A-GFP or both, following incubation with tumor reactive T cells (n=3). (J) Mean percentage of cell-in-cell tumor formations in B16F10, transfected with siRNA, following incubation with tumor reactive T cells or T cells secreted granules. (K\u2013L) B16F10 tumor size in mice treated with gp100-reactive T cells (ACT) (K) or Dc adjuvant and anti-TRP1 antibodies (L) with or without Stattic (n=4). Orange arrowheads indicate Stattic treatments and black arrowheads indicate injection of immunotherapies. All experiments were repeated independently at least three times. Statistical significance was calculated using ANOVA with Tukey\u2019s correction for multiple comparisons (**denotes p<0.01, *** denotes p<0.001, **** denotes p<0.0001). Error bars represent standard error. Scale bars = 20 \u03bcm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80315/elife-80315-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Representative images of B16F10 cell lines, which their cytosol is fluorescently labeled with either wasabi or with tdTomato, following overnight incubation with gp100-reactive T cells. (B) Representative images of B16F10 cells dissemination overtime following removal of gp100-reactive T cells (C-E). Representative images of untreated and cell-in-cell B16F10 cells of \u03b2-catenin (C), E-cadherin (D) and phosphorylated integrin 1\u03b2 (E). (F) KEGG pathway enrichment plot of B16F10 tumor cells sorted from relapsed tumors in vivo following immunotherapy compared to B16F10 cells. (G) Representative images of phospho-STAT3 in B16F10 incubated overnight with gp100-reactive T cells. (H) Representative images of phospho-STAT3 in human breast cancer (MDA-MB-231) incubated overnight with allogenic T cells. (I) Relative quantification of STAT3, MAPK, and EGR1 protein levels in B16F10 cells, following treatment with siRNA. HeLa cells were used as positive control for the EGR1 protein levels. (J) Mean percentage of cell-in-cell of B16F10 cells incubated overnight with reactive T cells in the presence of STAT3 and EGFR inhibitors. Experiments were repeated at least three times. Statistical significance was calculated using ANOVA with Tukey\u2019s correction for multiple comparisons (**** denotes p<0.0001). Error bars represent standard error. Scale bars = 20 mm.\n\nTo assess what genes govern this formation, we compared the gene signature of untreated B16F10 cells, to cell-in cell formation induced following incubation with T-cell-derived secreted granules and to that of tumor cells sorted from in vivo five days after immunotherapy. Over 400 genes were increased in cell-in-cell formation induced by T cell secreted granules compared to untreated B16F10 cells, 215 of which were also upregulated by the tumor cells sorted from treated animals (Figure 6F, ). KEGG analysis further indicated that multiple signaling cascades, including the JAK/STAT3 axis and FGF-receptors downstream pathways, are enriched in cell-in-cell formation generated in vivo, with approximately 80 significantly elevated genes relating to these pathways (Figure 6\u2014figure supplement 1, ). Indeed, EGR1 and STAT3 expression was significantly elevated in cell-in-cell tumors (Figure 6G). Both mice and human tumors incubated with reactive T cells had elevated their p-STAT3 levels, in comparison to untreated tumor cells (Figure 6\u2014figure supplement 1), suggesting this mechanism is conserved across species. Since these results may also reflect adaptation to the tumor microenvironments, we next corroborate the necessity of these factors to cell-in-cell formation ex vivo. Overexpression of either STAT3 or EGR1 was sufficient to induce cell-in-cell formation without additional stimulation (Figure 6H). Furthermore, these cells were significantly more resistant to killing by CD8+ T cell, compared to sham transfected cells (Figure 6I). We also tested if inhibiting these genes would reduce cell-in-cell tumor formation. Inhibition of STAT3 and EGR1, but not MAPK3 and EGR2, significantly abrogated the capacity of tumor cells to form cell-in-cell structures upon incubation with IFN\u03b3-stimulated T cells and with T cell secreted granules (Figure 6J and Figure 6\u2014figure supplement 1). In order to integrate cell-in-cell inhibition to an in vivo therapy, we first tested the effect of small molecule inhibitors on tumor cell formation. We found that inhibition of STAT3, or EGR pathway, completely prevented cell-in-cell formation upon incubation with reactive T cells or T cell-secreted granules (Figure 6\u2014figure supplement 1). Since blocking EGR1 also reduced T cell viability, we then set out to establish a treatment protocol that combines STAT3 inhibition (which also inhibits T cell activity) and immunotherapy. To this end, mice bearing palpable tumors were injected with Stattic or with PBS for two consecutive days. On the second day, we sub-lethally irradiated the mice and injected them with 5 \u00d7 106 gp100-reactive T cells and IL-2. In another model, we treated mice for two days with Stattic, followed by treatments with anti-CD40, TNF\u03b1, and anti-TRP1. Recurrent tumors were treated with the same regimen. In both models, injection of Stattic alone had no effect on tumor growth. We found, however, that injection of Stattic prior to administration of immunotherapy partially restored the responsiveness of tumors that re-occur following immunotherapies (Figure 6K\u2013L). While tumor cell sensitization may be a result from multiple mechanisms, these results stress the benefit of combining immunotherapy with STAT3 inhibition.\n\n## Discussion\n\nCancer immunoediting has been the primary paradigm for explaining how tumors escape T-cell immunity and the framework for most recent immunotherapies (Dunn et al., 2002; Mittal et al., 2014). In support of this view, fibrosarcoma clones emerged in T-cell-deficient mice and were deleted upon injection to immunocompetent mice (Matsushita et al., 2012; DuPage et al., 2012). Immunoediting is further supported by clinical observations in which tumors relapse by omitting their expressed antigen (Verdegaal et al., 2016; von Boehmer et al., 2013; Tran et al., 2016). While it is clear that immunogenic clones can be eliminated by T cells, the presence of immunogenic clones that express neoantigens, despite having infiltrated reactive T cells, has been well documented (Straetemans et al., 2015). Given the complexity of such a procedure, only a handful of clinical studies analysed changes in the tumor neoantigen landscape during immunotherapy. Zaretsky JM. et al. found that relapsed melanoma following treatment with pembrolizumab shares the majority of neoantigen with their corresponding primary tumors (Zaretsky et al., 2016). Consistently, Anagnostou V. et al. found that non-small cells carcinoma (NSCC) relapsed following treatment with anti-PD1 and CTLA-4 checkpoint blockade bear similar neoantigen load, with only a relatively small number of putative deleted clones (Anagnostou et al., 2017). In a recent study, Yost et al. demonstrated replenishment of T cell clones in basal cell carcinomas patients treated with pembrolizumab. Interestingly, three out of four analysed patients exhibited similar neoantigen burden (Yost et al., 2019). These studies therefore suggest that immunotherapy-resistant tumors are composite also of immunogenic clones, which can be recognized by the host T cell, and that non-genetic mechanisms underly their persistence.\n\nAlternative explanation regarding how immunogenic clones can survive T-cell pressure is attributed to the capacity of relapsed tumors to promote a suppressive microenvironment (Sharma et al., 2017; Topalian et al., 2015). Indeed, over the past decade multiple parameters have been suggested to predict patient\u2019s response to immunotherapy (Thorsson et al., 2018; Petitprez et al., 2020). However, why tumors reoccur in patients undergoing complete response remains unknown. Here, we found that tumor cells escape T-cell-based immunotherapies by forming a transient cell-in-cell structure, and not by immunoediting. These structures generate multiple membrane layers, thus reducing the probability of compounds\u2019 internalization leading to increased tumor-cell survival. It should be taken under consideration that most of our results were achieved using immunotherapy of DC adjuvant in combination with tumor-binding antibodies. Albeit reproduced with adoptive cell transfer, whether cell-in-cell tumor-formations form as an escape mechanism for immunotherapy following checkpoint blockade is still not clear. Given the limited efficacy of classical checkpoint blockade therapy in animal models, it is challenging to employ it as a model for tumor relapse.\n\nMany cell-in-cell formations have been described before including phagocytosis, cell cannibalism, and entosis (Krishna and Overholtzer, 2016). Recently, some of these structures have been shown to enable tumor-cell survival after chemotherapy treatment by engulfing and digesting neighboring cells (Tonnessen-Murray et al., 2019). Although the present cell-in-cell structural falls within the definition entosis, it differs in several key elements: First, it is triggered predominantly by reactive T cells, rather than glucose and nutrient starvation (Hamann et al., 2017), mitosis (Durgan et al., 2017), or loss of adherence (Overholtzer et al., 2007). Additionally, it requires de novo synthesis of genes regulated by STAT3, and not through \u03b2-catenin signaling (Overholtzer et al., 2007). Most importantly, the structure described here is reversible and only rarely leads to cell cannibalism and apoptosis.\n\nWe found that only tumor cells that are capable to undergo \u2018spontaneous\u2019 entosis due to loss of cell adhesion, can form cell-in-cell structure following interactions with reactive T cells. Why hematopoietic cells do not undergo \u2018spontaneous\u2019 or T-cell-mediated entosis is an intriguing question that is not yet not clear. In general, hematopoietic cells do no undergo entosis but rather emperipolesis (Krishna and Overholtzer, 2016). It may be that since these cells are equipped with different sets of integrins compared to epithelial cells, they may lack the relevant integrins and cadherins that facilitate cell-in-cell tumor formation (Gupta et al., 2017). Instead, emperipolesis is thought to governed by hematopoietic-specific integrins, such as ICAM-1 and LFA1 (Wang et al., 2019). It might be interesting, however, to assess if lymphoma patients that developed refractory tumors following administration of CAR T cells have increased cell-in-cell formation.\n\nThis work also highlights a theoretical limitation of anti-tumor immunity, as even in a model system where all the \u2018breaks\u2019 on T cell activity are removed, tumor cells may activate a STAT3 transcriptional program, which promotes spatial architecture impenetrable to cytotoxic mediators. Indeed, over the past decade clinical studies tested various combinations of chemotherapies or tumor-inhibiting drugs with immunotherapy, especially in melanoma and NSCLC (Apetoh et al., 2015; Shafique and Tanvetyanon, 2019). However, since most tumor-inhibiting drugs also affect T cell activity, what is the optimal combination and sequence has been difficult to determine (Karachaliou et al., 2017). As a result, many of these trials have been using immunotherapy followed by chemotherapy. Here, we suggest that immune-mediated entosis should be inhibited prior to immunotherapy in order to reduce tumor resistance to subsequent drugs.\n\nOverall, the ability of tumor cells to transiently enter and disseminate from each other in response to T-cell killing is a biological process that has never been described heretofore. It better explains how immunogenic tumors can survive in the host and provides a novel framework for immunotherapies.\n\n## Materials and methods\n\n### Mice\n\nWT C57BL/6 and BALB/cOlaHsd mice were purchased from Envigo Israel. NSG (NOD/SCID-gamma KO mice) mice were a kind gift from Professor Michael Milyavsky at Tel Aviv University. Splenocytes Perforin KO mice (C57BL/6-Prf1tm1Sdz/J) were a kind gift from Professor Wolf-Dietrich Hardt at Institute of Microbiology, ETH Zurich. All mice were housed in an American Association for the Accreditation of Laboratory Animal Care\u2013accredited animal facility and maintained under specific pathogen-free conditions. Animal experiments were approved and conducted in accordance with Tel-Aviv University Laboratory Accreditation #01-16-095, #01-21-011, and #01-19-034. Male and female 8- to 12-week-old mice were used in all experiments.\n\n### Tumor models\n\nFor melanoma tumor studies, 2.5\u00d7105 B16F10 cells in 50 \u03bcL DMEM were injected s.c. into C57BL/6 mice above the right flank. For a triple-negative breast cancer model, 2\u00d7105 4T1 cells in 30 \u03bcL DMEM were injected into mammary fat pad number five. Tumor size was measured twice a week using calipers. For immunotherapy, tumor-bearing mice were injected intratumorally twice, 2 days apart, with 100 \u03bcg anti-CD40 (FGK4.5; BioXCell), 0.2 \u03bcg TNF\u03b1 (BioLegend), and 200 \u03bcg/mouse anti-TRP1 antibody (TA99; BioXCell). For adoptive cell transfer, splenic T cells were infected with pMIGII encoding TCR recognizing MHCI-gp10025-33(von Boehmer et al., 2013), or MHCI-TRP2180-188(Tran et al., 2016), or MHCII-TRP1113-126(Yost et al., 2019). Recipient mice were sub-lethally irradiated at a single dose of 600 rad, and injected i.v. twice, 3 days apart, with 1 \u00d7 106 transduced T cells followed by i.p. injections of 300,000 IU of IL2 (PeproTech) for 4 consecutive days.\n\n### Cell lines\n\nB16F10 cells (CRL-6475) and 4T1 (CRL-2539) cells were purchased directly from ATCC in January 2017 and used no later than passage four. A375 and MDA-MB-231 cell lines were a kind gift from Professor Tamar Geiger from Tel Aviv University. Both authentications were performed at the Genomics Core Facility of BioRap Technologies and the Rappaport Research Institute in Technion, Israel. Short tandem repeat profiles were determined using the Promega PowerPlex 16 HS Kit. HEK-293FT were purchased from Thermo Fisher Scientific in January 2017. EPH4 cells were a kind gift from professor Neta Erez from Tel Aviv University. Cells were cultured in DMEM (Gibco, Thermo Fisher Scientific) or RPMI1640 (Biological Industries) supplemented with 10% heat-inactivated FBS (Biological Industries), 2 mM l-glutamine, and 100 \u03bcg/mL penicillin/streptomycin (Gibco, Thermo Fisher Scientific) under standard conditions. Melan-A cells were purchased from Welcome Trust Functional Genomics Cell Bank in February 2019 and were supplemented with 200 nmol/L of phorbol 12-myristate 13-acetate (Santa Cruz Biotechnology). Cells were routinely tested for mycoplasma using a EZ-PCR Mycoplasma Test Kit (Biological Industries, Israel) according to the manufacturer\u2019s instructions.\n\n### Antibody-mediated immunotherapy\n\nTumor-bearing mice were injected intratumorally twice, 2 days apart, with 100 \u03bcg anti-CD40 (clone FGK4.5; BioXCell), 0.2 \u03bcg TNF\u03b1 (BioLegend), and 200 \u03bcg/mouse anti-TRP1 antibody (clone TA99; BioXCell).\n\n### Primary immune cell isolation\n\nAll tissue preparations were performed simultaneously from each individual mouse (after euthanasia by CO2 inhalation). Spleen was homogenized in 2% FBS and 5 \u03bcmol/L EDTA supplemented HBSS through 70 \u03bcm strainer (Thermo Fisher Scientific). Tumors were digested in RPMI 1640 with 2 mg/mL collagenase IV, 2000 U/mL DNase I (both from Sigma-Aldrich) for 40 min at 37 \u00b0C with magnetic stirrers (200 rpm). Cells were then washed by centrifugation at 600 rcf for 5 min at 4\u20138\u00b0C. Single-cell suspension from tumor and spleens was applied of a Histopaque-1077 Hybri-Max (Sigma-Aldrich) gradient and centrifuge for 15 min at 600 rcf.\n\nFor T-cell isolation, splenic mononuclear cells were incubated with anti-CD4 or anti-CD8 magnetic beads (MojoSort Nanobeads, BioLegend) according to the manufacturer\u2019s instruction.\n\nFor NK isolation, splenic mononuclear cells were incubated with anti-CD4, anti-CD8, anti-B220, anti-CD19 and anti-CD115 magnetic beads (MojoSort Nanobeads, BioLegend) according to the manufacturer\u2019s instruction, and collected through negative selection.\n\nMacrophages were isolated from peritoneal cavity of euthanized mice by washing and recollecting 5 ml of HBSS twice, followed by centrifugation at 600 rcf.\n\nSerum was acquired by pulling blood from venae cava of euthanized mice. Blood was incubated on ice for 30 min and centrifugation of at 400 rcf for 10 min. Serum was collected and recentrifuged at 21,000 rfc for 10 additional minutes.\n\n### Patients\u2019 samples\n\nParaffin block of primary and involved lymph nodes from six stage IV melanoma patients, who has gotten no treatment, were sectioned at 4 \u03bcM and stained with H&E according to established protocol. Additionally, paraffin block of primary and recurrent from untreated stage-I melanoma patient were sectioned at 4 \u03bcM and stained with H&E. In addition, we have isolated the tumor cells and T cells from freshly resected tumors obtained from two stage IIb melanoma patients.\n\n### T-cell culture and expansion\n\nT cells were cultured in RPMI 1640 supplemented with 1% Pen-Strep, 10% heat-inactivated FBS, 1% Sodium pyruvate, 1% MEM-Eagle non-essential amino acids, 1% Insulin-Transferrin-Selenium (PeproTech, Rocky Hill, NJ), 50 \u00b5M \u03b2-mercaptoethanol (Sigma-Aldrich, Merck, Israel) and, unless mentioned otherwise, were supplemented with 1000 IU/mL recombinant murine IL-2 (PeproTech, Rocky Hill, NJ) on tissue culture plates pre-coated with 0.5 \u03bcg/mL anti-CD3 antibodies (clone 17A2, Biolegend).\n\n### Tumor cell lentiviral transduction\n\nFor preparation of lentivirus, 1.3\u00d7106 HEK-293FT cells were plated on a six-well plate precoated with 200 \u03bcg/mL poly-l-lysine and let to adhere overnight. pLVX plasmids containing H2B-GFP, H2B-tdTomato, MyrPalm-tdTomato (Zacharias et al., 2002), LifeAct-GFP, Wasabi or tdTomato under EF1 promoter together were mixed with psPAX2 (a gift from Didier Trono, Ecole Polytechnique T\u00e9d\u00e9rale de Lausanne, Lausanne, Switzerland; Addgene plasmid 12260) and pCMV-VSV-G (a gift from Bob Weinberg, Massachusetts Institute of Technology, Cambridge, Massachusetts, USA; Addgene plasmid 8454) at a molar ratio of 3:2:1, and cells were transfected using Polyplus jetPRIME reagent (Polyplus Transfection). After 24 hr, medium was replaced with complete DMEM supplemented with 0.075% sodium bicarbonate. Medium-containing viruses were collected after 24 hr and 48 hr.\n\nFor tumor cell infection, virus-containing media were mixed with 100 \u03bcg/mL polybrene (Sigma-Aldrich) and added to B16F10 cells (1 \u00d7 106 cells on 35 mm tissue culture) for 30 min at 37 \u00b0C 5% CO2. Cells were centrifuged for 30 min at 37 \u00b0C and 450 g. Then, 80% of the medium was replaced with complete DMEM supplemented with 0.075% sodium bicarbonate. After 3 days in culture, cells were sorted by FACSAriaIII. Cells were tested for mycoplasma, endotoxins, and bacterial contamination.\n\n### T cells retrovirus Infection\n\nHEK-293FT (Invitrogen) were plated on 10 cm culture plates and co-transfected with a 2:1 molar ratio of pMIGII and PCL-Eco plasmids (both were provided by Dario A.A. Vignali, University of Pittsburgh) using Polyplus jetPRIME reagent (Polyplus Transfection). After 24 hr, the medium was replaced with complete DMEM supplemented with 0.075% sodium bicarbonate. Media-containing viruses were collected after 24 hours and 48 hr and centrifuged for 1 hr at 100,000 g. The pellet was resuspended gently in 1 mL media and let to recover overnight at 4 \u00b0C.\n\nPrior to infection, splenic T cells were incubated on a plate precoated with anti-CD3 (0.5 \u03bcg/mL) in T cell medium containing high-dose IL-2 (1000 IU/mL). Next, 0.3 mL concentrated retroviruses were added to every group of 2\u00d7106 cells with 10 \u03bcg/mL polybrene. Cells were incubated for 30 min at 37 \u00b0C in 5% CO2 and centrifuged at 37 \u00b0C, 600 g, for 1 hr. Afterwards, 80% of medium was replaced and T cells were cultured for an additional 3 days in T cell media containing 1000 IU IL-2. Transduction efficacy was assessed by FACS as the percentages of GFP-expressing cells.\n\n### Adoptive T-cells Transfer\n\nT cells were isolated from spleens of na\u00efve mice as specified above and infected with pMIGII encoding TCR recognizing MHCI-gp10025-33 (Overwijk et al., 1998), or MHCI-TRP2180-188 (Bendle et al., 2010), or MHCII-TRP1113-126 (61). Recipient tumo-bearing mice were sub-lethally irradiated at a single dose of 600 rad using cobalt source. After 24 hr, mice were injected i.v. twice, 3 days apart, with 1 \u00d7 106 transduced T cells followed by i.p. injections of 300,000 IU of IL2 (PeproTech) for 4 consecutive days.\n\n### Flow cytometry\n\nFor cell surface staining, monoclonal antibodies conjugated to FITC, PE, PE-Cy7, PE-Cy5.5, APC-Cy7, eFluor 650, or Pacific Blue and specific for the following antigens were used: CD11b (M1/70), Gr-1 (RB6-8C5), F4/80 (BM8), B220 (RA3-6B2), CD45 (A20), CD3 (17A2), CD4 (RM4-4), CD8 (53.6.7), MHCKb/Kd (28-8-6), CD115 (AFS98), I-Ab (M5/114.15.2), from BioLegend (San Diego, CA). Flow cytometry was performed on CytoFLEX (Beckman Coulter) and datasets were analyzed using FlowJo software (Tree Star, Inc). All in vivo experiments to characterize tumor-infiltrating leukocytes were independently repeated at least three times with three to five mice per group. iTAg APC-labeled H-2Kb-Trp-2(SVYDFFVWL) and iTAg PE-labeled H-2Db-gp100(EGSRNQDWL) tetramers were purchased from MBL international (Woburn, MA) and were used according to manufacturer\u2019s instruction. Tetramers-staining experiments were repeated twice with 5 mice in each group.\n\n### Measuring caspase 3/7 activity in tumor cells\n\nFor apoptotic cells measurements, 1 \u00d7 104 fluorescently-labeled tumor cells were seeded on 96-well round bottom plates and let adhere for several hours. T cells were then added to the culture in ratios of 1:1, 1:2, 1:5, and 1:10 for additional 3, 6, or 18 hr before adding CellEvent Caspase-3/7 Green Detection Reagent (Invitrogen). Fluorescent intensity was measured by Flow cytometry, using CytoFLEX (Beckman Coulter) and datasets were analysed using FlowJo software (Tree Star, Inc).\n\n### Confocal microscopy\n\nFor confocal microscopy imaging, cells were cultured on glass-bottom confocal plates (Cellvis). Cells were live-imaged or fixed and permeabilized with 2% PFA for 20 min. Fixed cultures were washed twice with PBS and stained for membranes with DiD membrane dye (Invitrogen), F-actin with Alexa Fluor 594 Phalloidin (Invitrogen) and nuclei with Hoechst 33,342 (Fluka). For immunofluorescence, fixed cultures were blocked overnight with 5% BSA and stained with 1:100 or 1:200 diluted primary antibodies. Cells were then washed with PBS containing 1% BSA and stained with secondary antibody, diluted 1:100 or 1:200. We used the primary antibodies: anti-CD44 (clone IM7), anti-MHC class I (clone 28-8-6)(both from BioLegend), anti-\u03b2-catenin (clone D2U8Y), anti-phosphorylated STAT3 (clone D3A7), anti-active integrin 1\u03b2 (polyclonal), anti-Granzyme B (clone 5A1E)(all from Cell Signaling Technology), anti-integrin 1\u03b2 (clone 9EG7), anti-E-cadherin (clone 36)(both from BD Biosciences), anti-TRP2 (clone C-9, Santa Cruz Biotechnology), anti-gp100 (clone EP4863 Galon et al., 2006) and anti-phosphorylated EGFR (clone EP38Y)(both from Abcam).\n\nFor frozen sections, tumor tissues were fixed in 4% paraformaldehyde for two hours and equilibrated in a 20% sucrose solution overnight. Tissues were then embedded in frozen tissue matrix (Scigen O.C.T. Compound Cryostat Embedding Medium, Thermo Fisher Scientific) and frizzed at \u2013 80 \u00b0C. All specimens were imaged by ZEISS LSM800 (ZEISS) and analysed by ZEN 2.3 (ZEISS) and Imagej.\n\n### Image analysis\n\nMulti-Z-stack images were taken using ZEISS LSM800 (ZEISS) confocal microscope.\n\nMean fluorescence intensity (MFI) was calculated in regions of interest (ROI) using ZEN 2.3 software (ZEISS) out of a set of images taken under the same conditions. For time-lapse quantification, MFI was normalized using MIN/MAX normalization: $norm X=\\frac{X-min\u2061(X) }{maxX -min\u2061(X)}$.\n\nThree-dimensional projection and rendering and surface detection were done using IMARIS software 9.5 (Bitplan, RRID: SCR_007370), using the software\u2019s default parameters.\n\n### Electron microscopy\n\nScanning Electron Microscopy preparation was done as described by Fischer et al, with minor modifications (Fischer et al., 2012). Briefly, cells were fixed with warm 2.5% glutaraldehyde (GA) (EMS) in PBS for 60 min. Cells were then washed twice for 5 min in PBS, and twice with cacodylate buffer (0.1MCaCO, 5mMCaCl pH7.3) (Merck), post-fixed with 1% OsO4 for 60 minutes, washed three times in cacodylate buffer and then twice with H2O; Dehydration was done with increasing concentrations of reagents grade ethanol (2\u00d75 minutes for 25%, 50%, 70%, 95% and 2\u00d710 min for 100%), and was followed by coating with gold nanoparticles. Images were captured using GeminiSEM 300 (Carl Zeiss Microscopy, Jena, Thuringia, Germany).\n\nFor Transmitting Electron Microscopy cells were fixed in 2.5% Glutaraldehyde in PBS over night at 4 \u00b0C. After several washings in PBS cells were post fixed in 1% OsO4 in PBS for 2 hr at 4 \u00b0C. Dehydration was carried out in graded ethanol followed by embedding in Glycid ether. Thin sections were mounted on Formvar/Carbon coated grids, stained with uranyl acetate and lead citrate and examined in Jeol 1400 \u2013 Plus transmission electron microscope (Jeol, Japan). Images were captured using SIS Megaview III and iTEM the Tem imaging platform (Olympus).\n\n### Incucyte assays\n\nFor long-term live cell imaging, B16F10 expressing H2B- TdTomato, H2B-GFP, and a mixture of both were sorted from immunotherapy-treated mice and plated in flat-bottom 96-well tissue culture (Corning) and placed in IncuCyte S3 Live Cell Analysis System (Essen BioScience).\n\nFor viability assays, 1 \u00d7 104 B16F10 cells expressing H2B-TdTomato were plated in flat-bottom 96-well tissue culture (10 \u00d7 103 per well, Corning) and were let to adhere for several hours. Splenic CD8+ T cells infected with TCR against gp100, or TRP2 were added to culture at several ratios ranging from 1:1 to 10:1 E:T and placed in IncuCyte S3 Live Cell Analysis System (Essen BioScience). In other experiments, 1 \u00d7 104 B16 cells expressing H2B-TdTomato were plated in flat-bottom 96-well tissue culture (Corning) and incubated in full DMEM medium containing either 1.5 mM doxorubicin, 3 \u00d7 10\u20135% H2O2 or 50 mg/ml cycloheximide for 92 hr. Confluence percentage and images were acquired and analyzed using IncuCyte Base Analysis Software (Essen BioScience).\n\nRelative confluence was calculated by normalizing to confluence on T1:\n\n$$\nrelative con Tn=\\frac{con Tn}{con T1}\n$$\n\n### Neoantigen predication\n\nGenomic DNA was extracted from 5 \u00d7 106 B16F10 tumor cell lines using NucleoSpin Tissue (MACHEREY-NAGEL), according to manufacturer instructions. Whole exome sequencing was performed by NovoGene. Sequencing libraries were constructed using the Agilent SureSelect kit and sequence on an Illumina Novaseq 6,000 sequencer. Sequencing reads were filtered using the AGeNT SureCall Trimmer (Agilent, v4.0.1) and quality was evaluated using FastQC v0.11.3. Alignment to the mouse genome (mm10, GRCm38.87) was performed using the Burrows-Wheeler Aligner (bwa v 0.7.12) using the bwa mem command with the following parameters: -M \u2013t 4 \u2013T 30. SAMtools was used to remove alignments with a MAPQ score less than 5, and Picard was used to remove duplicate reads. Sorting and indexing were performed using SAMtools. Variants were called using MuTect2 (GATK v 4.0.0.0) and filtered using FilterMutectCalls. Variants were annotated with SnpEff. Neoantigens were identified using MuPeXI v1.2.0 (Bjerregaard et al., 2017) with the following parameters: -s mouse -a H-2-Db, H-2-Kb -l 9\u201311. MuPeXI was used in conjunction with NetMHCpan v.4.0 and Variant Effect Predictor (VEP) v.87.27. Heatmaps were generated in R using the \u2018pheatmap\u2019 package (v1.0.12).\n\n### mRNA extraction and RNAseq analyses\n\nTo extract mRNA from tumor cells, 5 \u00d7 106 B16F10 sorted from in vivo relapsed tumors, or from cell B16F10 cell lines established from relapsed tumors were collected. For preparation cell-in-cell culture induced by T cells-derived secreted granules, 1 \u00d7 106 B16F10 cells were seeded on a low-adherence 10 cm plastic plate pre-coated with 200 \u03bcg/mL poly-l-lysine and were let to adhere for 3 hr. Concentrated T cell\u2013derived secreted granules in DMEM were added to the culture, in 1:10 ratio for 4 hr. Cells were collected by washing with fresh media followed by 5 min centrifugation at 250 g. RNA was extracted from cells using NucleoSpin RNA (MACHEREY-NAGEL), according to manufacturer instructions. Sequencing Libraries were prepared using INCPM mRNA Seq. NextSeq 75 cycles reads were sequenced on 8 lanes of an Illumina nextseq. The output was ~18 million reads per sample.\n\nFor B16 RNAseq, sequencing adaptors were trimmed using fastp 0.19.6 (Chen et al., 2018) and aligned to the GRCm38 mouse assembly using STAR 2.7.1 a (Dobin et al., 2013). Gene count matrix was analyzed for differential expression using DESeq2 1.24.0 (66). Enrichment analysis was performed on differentially expressed genes (adjusted p-value < 0.05) using clusterProfiler 3.12.0. (Yu et al., 2012).\n\nFor T cells RNAseq, reads were aligned using Kallisto (Bray et al., 2016) to mouse genome version mm10, followed by further processing using the Bioconductor package DESeq2 1.24.0 (Love et al., 2014). The data was normalized using TMM normalization, and differentially expressed genes were defined using the differential expression pipeline on the raw counts with a single call to the function DESeq (FDR- adjusted p-value < 0.05). Heatmap figures were generated using pheatmap package (Kolde and Vilo, 2015) and clustered using Euclidian distance. Boxplots were generated using BoxPlotR. Sequencing data was deposited in GEO under accession codes GSE164076, GSE164075 and GSE164077.\n\n### Cell-derived secreted granules and melanosomes isolation\n\nFor isolation of T-cell\u2013derived secreted granules, 2\u00d7107 CD8+ T cells were isolated from spleen and plated in 10 cm plate precoated with anti-CD3 and anti-CD28 antibodies and high-dose IL-2 (1,000 IU/mL) for 48 hours in T cell media containing 10% FBS pre-centrifuged at 140,000 rpm for one hour to deplete bovine-derived exosomes. Supernatants were collected and concentrated using Amicon Ultra (Merk) with 100kD filter. For isolation of NK cells-derived secreted granules, splenic 3\u00d7106 NK cells isolated from na\u00efve mice were plated in 12-well plate incubated with high-dose IL-2 for 48 hr. Supernatants were collected and concentrated using Amicon Ultra (Merk) with 100kD filter. Secreted granules were added to B16F10 cultures for 24\u201348 hr incubation and the numbers of cell-in-cell structures out of total 200 cells were counted under fluorescent microscope.\n\nFor isolation of secreted melanosomes from B16F10, Melan A, 8 \u00d7 106 cell were cultured in 10 cm tissue culture plates and let to adhere overnight. Cells were incubated 48 hr in DMEM supplemented with 10% exosome-free FBS. Supernatants was collected and centrifuged for 1 hr on glucose gradient, as previously described (Santana-Magal et al., 2020).\n\n### Cell-in-cell inhibition assays\n\nFor inhibition assays, B16F10 were plated in 4 Chamber glass-bottom confocal plates (Cellvis) 3000 cells/chamber and let adhere for several hours. Cells were incubated for 24\u201348 hr in complete DMEM, with or without 50 \u03bcg/mL cycloheximide, 120 mM 5,6-dichloro-1-beta-D-ribofuranosylbenzimidazole (DRB) (Sigma-Aldrich), 200 nM Latrunculin B (Lat-B, Sigma-Aldrich), 2 \u03bcM Stattic (Sigma-Aldrich), 4 \u03bcM Gefitinib, 5 \u03bcM XAV-939 (Sigma-Aldrich) or the blocking antibodies anti-E-cadherin (clone 36) and anti-N-cadherin (clone 13A9). In addition, gp100-reactive T cells (E:T ratio of 5:1), or T cells-derived secreted granules (10\u201350 \u03bcL of concentrated secreted granules per well) were added to the culture. Cell-in-cell structures were counted under fluorescent microscope for cell-in-cell per 200 cells, three times for each chamber.\n\n### Cell-in-cell counts\n\nFor cell-in-cell count, 3000\u201310,000 tumor cells per one cm2 were plated in a 4 Chamber glass-bottom confocal plates (Cellvis) or 96-well flat bottom (Corning) and let adhere for several hours. Cells were then incubated overnight with immune cells or exosomes. Cells were then washed with PBS, trypsinized and moved to coverslip for counting under fluorescent microscope. Percentages of cell-in-cells structures were calculated by counting 200 cells in three independent samples, three fields for each sample.\n\n### Study approval\n\nAll animal protocols were approved by the Tel-Aviv University Institutional Animal Care and Use Committee under protocol: #01-16-095, #01-21-011, and #01-19-034. The Rabin Medical Center and Tel Aviv University Institutional Review Board approved the human subject protocols 0460\u201319-RMC and 16\u2013660-TLV-7 respectively, and informed consent was obtained from all subjects prior to participation in the study.\n\n### Statistics\n\nFor time course experiments, significance was calculated using the nonparametric two-way ANOVA with Tukey\u2019s correction for multiple hypotheses. In some cases, Bonferroni-Sidak post-test was performed after two-way ANOVA. For two groups analysis, one-way ANOVA with Dunn\u2019s test was performed. The results were analyzed by Prism (GraphPad Software, Inc). All statistical analyses were performed in Prism (GraphPad Software, Inc). All experiments were performed at least three times with at least three replications.\n",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "a8bc97f4-3bc2-4cd2-8cc3-bd65105255cf",
+      "submission_id": "c36cd2e6-092d-4002-ac2f-6caa2395c9c6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kellie N Smith, https://ror.org/00za53h95 The Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80315.sa0](https://doi.org/10.7554/eLife.80315.sa0)\n\nThis is a timely and important study that describes a new potential mechanism of resistance to immune checkpoint blockade. Not only does this have significant implications for cancer immunotherapy, but could extend to other immunological malignancies as well.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kellie N Smith, https://ror.org/00za53h95 The Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80315.sa1](https://doi.org/10.7554/eLife.80315.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Transient cell-in-cell formation underlies tumor relapse and resistance to immunotherapy\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by W Kimryn Rathmell as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Clarification of the treatments used and relevance to current immunotherapy practices. If the therapy used is just a \"means to an end\", this is ok but should be clearly stated as such.\n\n2) More clarity in figures and legends.\n\n3) Analysis of treated tumors for Figure 2I.\n\nReviewer #1 (Recommendations for the authors):\n\n1. It is unclear what the tumor-binding antibody is and what is its mechanism. Is this a T cell engager? Meant to induce ADCC?\n\n2. The treatment studied (anti-CD40+TNFa+tumor-binding antibodies) is largely irrelevant to most cancer therapies used today. Broadly linking observations with this therapeutic regimen to what is seen with conventional immunotherapy (i.e. checkpoint blockade) should be met with caution and should be more extensively discussed. The impact and relevance to translational cancer research would be much improved if this was studied during PD-1 blockade.\n\n3. The figure legends are inadequate to fully understand what was done and what the figures are showing. For example, in Figure 2I, what is the difference between the left and right figures? What is the red stain vs. the green stain?\n\n4. If Figure 2I is untreated tumors, this same analysis should be shown for treated tumors.\n\n5. These structures don't look like cells inside of other cells, therefore the term cell-in-cell is misleading.\n",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cdbb2118-34ce-4e65-9d10-7c65443deb77",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C1",
+      "claim": "The majority of patients receiving cancer immunotherapies will experience only partial response followed by relapse of resistant tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the remarkable successes of cancer immunotherapies, the majority of patients will experience only partial response followed by relapse of resistant tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general observation about immunotherapy outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "efe0a581-696b-4652-8663-9addfd520ed2",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C2",
+      "claim": "Comparisons of paired primary and relapsed tumors in melanoma and breast cancers indicate that they share the majority of clones.",
+      "claim_type": "EXPLICIT",
+      "source": "While treatment resistance has frequently been attributed to clonal selection and immunoediting, comparisons of paired primary and relapsed tumors in melanoma and breast cancers indicate that they share the majority of clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature and is presented as an established finding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "370f8a59-48de-4f19-ae20-357b31b40a1d",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C3",
+      "claim": "Tumor cells evade immunotherapy by generating unique transient cell-in-cell structures that are resistant to killing by T cells and chemotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate in both mouse models and clinical human samples that tumor cells evade immunotherapy by generating unique transient cell-in-cell structures, which are resistant to killing by T cells and chemotherapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data from both mouse models and human samples described throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "78c1d0ec-42e9-489e-bad2-39f2eba6ed07",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C4",
+      "claim": "The outer cells in cell-in-cell formation are often killed by reactive T cells while the inner cells remain intact.",
+      "claim_type": "EXPLICIT",
+      "source": "While the outer cells in this cell-in-cell formation are often killed by reactive T cells, the inner cells remain intact and disseminate into single tumor cells once T cells are no longer present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations and imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "46ca234f-27fc-4417-b93a-d705caec8eb1",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C5",
+      "claim": "Inner cells in cell-in-cell formation disseminate into single tumor cells once T cells are no longer present.",
+      "claim_type": "EXPLICIT",
+      "source": "While the outer cells in this cell-in-cell formation are often killed by reactive T cells, the inner cells remain intact and disseminate into single tumor cells once T cells are no longer present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through time-lapse imaging and culture experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "a3dea8a9-9457-4e6c-b0d1-5e52b95ea574",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C6",
+      "claim": "Cell-in-cell formation is mediated predominantly by IFN\u03b3-activated T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This formation is mediated predominantly by IFN\u03b3-activated T cells, which subsequently induce phosphorylation of the transcription factors signal transducer and activator of transcription 3 (STAT3) and early growth response-1 (EGR-1) in tumor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that IFN\u03b3-activated T cells induce cell-in-cell formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "625e2d98-e5be-43a4-9959-986a715313a4",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C7",
+      "claim": "IFN\u03b3-activated T cells induce phosphorylation of STAT3 and EGR-1 in tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This formation is mediated predominantly by IFN\u03b3-activated T cells, which subsequently induce phosphorylation of the transcription factors signal transducer and activator of transcription 3 (STAT3) and early growth response-1 (EGR-1) in tumor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining and gene expression data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "148eca9f-8087-4e29-92a8-14e4da28fe4e",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C8",
+      "claim": "Inhibiting STAT3 and EGR-1 prior to immunotherapy significantly improves its therapeutic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, inhibiting these factors prior to immunotherapy significantly improves its therapeutic efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in vivo experiments using Stattic inhibitor combined with immunotherapy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "95df5f9c-74e9-4c3f-a5c6-a0408f5cc868",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C9",
+      "claim": "There is a direct correlation between the prevalence of cytotoxic T-cell immunity and improved clinical outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the direct correlation between the prevalence of cytotoxic T-cell immunity and improved clinical outcomes (Pag\u00e8s et al., 2005; Galon et al., 2006; Fridman et al., 2012), most therapeutic strategies are aimed at harnessing T-cell immunity to fight cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "9c7f87a3-6f7e-4d5e-82c3-19ad8e897c01",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C10",
+      "claim": "Patients experiencing tumor regression following immunotherapy frequently experience recurrence of tumors that are largely resistant to subsequent treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, long-term follow-up indicates that while patients will experience tumor regression, it is frequently followed by recurrence of tumors that are largely resistant to subsequent treatments (Salati et al., 2018; Gide et al., 2018; Gauci et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "4c74662f-637b-4d87-bc99-0cf8a754fc5c",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C11",
+      "claim": "Tumor cells often express mutated proteins or neo-antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "As tumor cells often express mutated proteins or neo-antigens (Vogelstein et al., 2013; Schumacher and Schreiber, 2015), it remains unclear why eliciting the full spectrum of T-cell immunity to these antigens is not sufficient to eradicate tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "ab65810b-fd4d-4f6f-9da5-048db6853af4",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C12",
+      "claim": "Tumor cells can edit or lose their targeted antigens, or downregulate HLA molecules to avoid killing by T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The main conceptual paradigm suggests that in order to avoid killing by T cells, tumor cells edit or lose their targeted antigens, or downregulate HLA molecules (Khong and Restifo, 2002; Dunn et al., 2002; Gajewski et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical framework supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "cf997f19-71ab-4ba3-9c89-ecce72560aa6",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C13",
+      "claim": "The presence of immunogenic clones expressing neoantigens and HLA molecules, despite having infiltrated reactive T cells, has been well-documented.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of immunogenic clones expressing neoantigens and HLA molecules, despite having infiltrated reactive T cells, has been well-documented (Straetemans et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "ffffbf96-f7e8-494f-85c6-59f38e90a64a",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C14",
+      "claim": "Tumor resistance to immunotherapy can be acquired through tumor cell-intrinsic mechanisms, including loss-of-function of JNK and PTEN, MYC overexpression, and constitutive WNT signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, tumor resistance to immunotherapy was also shown to be acquired through tumor cell-intrinsic mechanisms, including loss-of-function of JNK and PTEN, MYC overexpression, and constitutive WNT signaling (Zaretsky et al., 2016; Sade-Feldman et al., 2017; Peng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "05eaca44-9345-4080-9653-0eaa8a75d4dd",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C15",
+      "claim": "Only about 30% of patients achieve durable objective response following treatment with checkpoint blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, only about 30% of the patients achieve durable objective response following treatment with checkpoint blockade (Topalian et al., 2015; Egen et al., 2020; Haslam and Prasad, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "d1b05bf4-7d26-4d00-a394-69f75bc895fd",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C16",
+      "claim": "Combination therapies of tumor-reactive T cells with immunomodulators such as regulatory receptors blockades are still not sufficient to profoundly improve response rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, combination therapies of tumor-reactive T cells with immunomodulators such as regulatory receptors blockades are still not sufficient to profoundly improve response rates (Rohaan et al., 2018; Swart et al., 2016), which strongly suggests that additional escape mechanisms are involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical studies and leads to an inference about additional mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "10a02661-09bc-4cb6-9c66-b712b1d70aeb",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C17",
+      "claim": "Whole exome and genome sequencing comparisons of paired primary and relapsed tumors indicate that most clones in relapsed tumors are shared with the primary tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, whole exome and genome sequencing comparisons of paired primary and relapsed tumors indicate that most clones in relapsed tumors are shared with the primary tumors, suggesting relatively low rates of clonal deletion (Yates et al., 2017; Hao et al., 2016; Gundem et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to genomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "9e8fd680-9017-41af-b7cf-bad6faf8f870",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C18",
+      "claim": "Treatment with TNF\u03b1, CD40L, and an antibody against the melanoma antigen TRP1 almost completely eradicated established tumors in all mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, when palpable melanoma tumors were injected with a combination of TNF\u03b1, CD40L, and an antibody against the melanoma antigen TRP1, tumors were almost completely eradicated in all mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "bb9036e0-42a5-4d05-a50e-5237decd1c0c",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C19",
+      "claim": "After about 10 days following immunotherapy, half the mice developed recurrent tumors that were resistant to subsequent treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, after about 10 days, half the mice developed recurrent tumors that were resistant to subsequent treatments (Figure 1A, Figure 2\u2014video 1; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A and supplementary materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "b60379ef-0977-49a4-a885-d7409fd977e8",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C20",
+      "claim": "Treatment of melanoma-bearing mice with splenic CD8+ T cells expressing TCR against gp100 or TRP2 melanoma antigens induced significant tumor regression, followed by tumor recurrence in all treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if this occurrence represents a broader phenomenon, we also treated melanoma-bearing mice with splenic CD8+ T cells expressing TCR against gp100 or TRP2 melanoma antigens. Both treatments induced significant tumor regression, followed by tumor recurrence in all treated mice (Figure 1B, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "81016e22-ad92-4070-bead-731e55a919a9",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C21",
+      "claim": "Recurrent tumors were resistant to subsequent treatment with gp100- or TRP2-reactive T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed with the previous immunotherapy, recurrent tumors were resistant to subsequent treatment with gp100- or TRP2-reactive T cells (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "940c8653-cbf0-4311-a811-7ea88acb6136",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C22",
+      "claim": "Treated mice across all immunotherapies show massive immune-cell and T-cell infiltration.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, immune composition analysis of tumors following the second immunotherapy indicated treated mice across all immunotherapies show massive immune-cell and T-cell infiltration (Figure 1C) with a dominant representation of T-cell clones against the melanoma antigens TRP2 and gp100 (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "51c8d18a-e6a9-4164-af8b-e52f201f11ed",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C23",
+      "claim": "Tumor-infiltrating T cells (TIL) transferred to naive mice prevented tumor growth, indicating their overall activity favours immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if these tumor-infiltrating T cells (TIL) are active, we adoptively transferred them to naive mice and challenged them with tumor inoculation. In two different tumor models, TIL transfer prevented tumor growth, further indicating that their overall activity favours immunity (Figure 1E-F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "0e5cf368-3e82-497b-8e19-a4dbffb0bc0f",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C24",
+      "claim": "Melanoma cells following immunotherapy maintain expression of MHC-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we assessed changes in immunogenicity of tumors following immunotherapy. Analysis of melanoma cells showed they maintain expression of MHC-I (Figure 1\u2014source data 1), as well as TRP2 and gp100 antigens (Figure 1G, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry and immunostaining data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "c20fe267-0539-458d-9f2a-b71139da5717",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C25",
+      "claim": "Melanoma cells following immunotherapy maintain expression of TRP2 and gp100 antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of melanoma cells showed they maintain expression of MHC-I (Figure 1\u2014source data 1), as well as TRP2 and gp100 antigens (Figure 1G, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "93bba791-295d-4543-9c1b-383a25d4a8ee",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C26",
+      "claim": "Whole exome analysis indicated comparable neoantigen burden across all B16F10 samples from untreated and relapsed tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole exome analysis (WES) indicated comparable neoantigen burden across all samples (Figure 1I) with the same 25 germline mutations with the highest MHCI affinity (Figure 1J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by whole exome sequencing data shown in Figure 1I and 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "bcc9900e-fa69-48b9-a0b8-5582d12edf3a",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C27",
+      "claim": "RNAseq analyses demonstrated similar patterns of gene expression in cell lines established from relapsed tumors compared to parental B16F10.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAseq analyses further demonstrated similar patterns of gene expression (Figure 1\u2014figure supplement 1H) as well as known B16F10 neoantigens in cell lines established from relapsed tumors sorted following effective immunotherapy (Figure 1K, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "54b0b1f3-e49f-421d-8b97-3ee9b8cad362",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C28",
+      "claim": "The majority of neoantigens were shared between relapsed melanoma tumors and their corresponding primary tumor in patients following treatment with checkpoint blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the human relevance of these findings, we next plotted the neoantigen burden identified in relapsed melanoma (Zaretsky et al., 2016) and in non-small cell carcinoma patients Anagnostou et al., 2017 following treatment with checkpoint blockade. Consistent with our finding in mice, the majority of neoantigens were shared between relapsed tumors and their corresponding primary tumor (Figure 1L\u2013M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of published patient data shown in Figure 1L-M.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "24480955-53f6-429a-8caa-2bdf514368bd",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C29",
+      "claim": "Cell lines established from tumors relapsed following immunotherapy were equally susceptible to the same immunotherapy as the parental B16F10 cells, albeit relapsed more rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, cell lines established from tumors relapsed following TNF\u03b1, CD40L and anti-TRP1 were injected to na\u00efve mice and allowed to reach a palpable size. Consistent with their patterns of gene and neoantigens expression, these tumors were equally susceptible to the same immunotherapy as the parental B16F10 cells, albeit relapsed more rapidly (Figure 2A, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "1503014e-dfce-4d76-b3c1-3ec7096521be",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C30",
+      "claim": "Cell lines established from relapsed tumors were equally susceptible to killing by gp100-reactive T cells as the parental cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, overnight incubation of these cell lines with gp100-reactive T cells indicated they are equally susceptible to killing as the parental cell line (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by apoptosis assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "cd252cf4-c1b1-47c7-b47e-a3340ccf738d",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C31",
+      "claim": "B16F10 parental cells and cell lines established following killing by reactive T cells were equally susceptible to T cell killing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both B16F10 parental cells and the cell lines established following killing by reactive T cells were equally susceptible to T cell killing, (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "76a8217f-3c83-4c9f-9371-2b49c99abae2",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C32",
+      "claim": "Transient in vivo mechanisms rather than inherited ones govern resistance of relapsed tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken jointly, these results suggest that transient in vivo mechanisms rather than inherited ones govern resistance of relapsed tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing that established cell lines lose resistance.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "d2ce5851-4de8-4ce6-aee5-d2cc99f8bfdf",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C33",
+      "claim": "All established cell lines cluster within the same principal components, whereas the expression profile of freshly sorted tumor cells from immunotherapy-treated mice is markedly distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this hypothesis, RNAseq analysis indicated that all the established cell lines cluster within the same principal components, whereas the expression profile of freshly sorted tumor cells from immunotherapy-treated mice is markedly distinct (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PCA analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "6b32907a-1429-4ae3-b269-58857fd741d5",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C34",
+      "claim": "Most tumor cells that survived immunotherapy organize in clusters of several nuclei surrounded by a single membrane and cortical actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal analyses indicated that most of the tumor cells organize in clusters of several nuclei surrounded by a single membrane and cortical actin (Figure 2G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "0a3e7526-341a-42e2-9da4-f52b8934ba59",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C35",
+      "claim": "Transmission electron microscopy of freshly sorted cells showed a distinct segregation of the membranes and cytosols of the two cells, with the inner cell appearing dense and compacted within another cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission electron microscopy (TEM) of freshly sorted cells further corroborated a distinct segregation of the membranes and cytosols of the two cells. The inner cell was dense and seemed to have been compacted within another cell (Figure 2H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TEM data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "eb51d7ec-c3a1-47e7-9c42-002e364e86d9",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C36",
+      "claim": "Immunotherapy-treated tumors showed increased prevalence of cell structures where one or more nuclei were surrounded by multiple membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, immunotherapy-treated tumors showed increase prevalence of cell structures where one or more nuclei were surrounded by multiple membranes, especially in sites associated with tumor cell death (Figure 2I, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "dd8a06d0-7624-40e0-ad12-ee4c6611f851",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C37",
+      "claim": "About half the cells that survived immunotherapy are organized in structures where multiple membrane layers surround the cell nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "ImageStream FACS analysis as well as double blind count under confocal microscopy by pathologists indicated that about half the cells that survived immunotherapy are organized in such structures where multiple membrane layers surround the cell nuclei (Figure 2J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "8a303f4a-a976-48da-8ebc-9d4af0ad86cd",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C38",
+      "claim": "About one third of tumor cells sorted from treated mice were a mixture of both GFP and tdTomato nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if this formation was merely the result of incomplete cell division, we injected mice with tumor cells whose nuclei are labeled with GFP or tdTomato, and treated the mice with immunotherapy. About one third of the tumor cells were a mixture of both GFP and tdTomato nuclei (Figure 2K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "b31e1c99-5cf1-4bf2-a070-801110eb3e88",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C39",
+      "claim": "Single cells sorted from treated mice spontaneously clustered in a cell-in-cell formation during their in vitro culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, monitoring the dynamics of single cells sorted from treated mice indicated that they spontaneously clustered in a cell-in-cell formation during their in vitro culture (Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-lapse video microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "ec6d5927-cf3d-4e4f-8cfe-578a7f224ab3",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C40",
+      "claim": "Over time, all cells disseminated into single cells bearing morphological features similar to those of the parental cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, all cells disseminated into single cells bearing morphological features similar to those of the parental cell line with no observed cells concomitantly expressing the two fluorophores (Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-lapse video microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "cb58f0cd-59f2-448e-96df-25019bed4885",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C41",
+      "claim": "Only T cells\u2014mainly CD8+, and with slower kinetics also CD4+\u2014induce a cell-in-cell formation with the same special characteristics as the ones observed in vivo following immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that only T cells\u2014mainly CD8+, and with slower kinetics also CD4+\u2014induce a cell-in-cell formation with the same special characteristics as the ones observed in vivo following immunotherapy (Figure 3A, B, Figure 3\u2014figure supplement 1, Figure 3\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "0ad9cb9e-749b-4717-9b73-1894cce118e8",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C42",
+      "claim": "No cell-in-cell structures were observed in Nude SCID-gamma-/- (NSG) mice treated with immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, no cell-in-cell structures were observed in Nude SCID- gamma-/- (NSG) mice treated with immunotherapy (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "23a5b1b0-79ff-4709-918f-e4d46a65d507",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C43",
+      "claim": "The same cell-in-cell structures were observed in 4T1 mammary carcinoma incubated with allogeneic T cells, but not in immortalized mammary epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested whether this phenomenon occurs in other tumor cell types. Indeed, the same structures were also observed in 4T1 mammary carcinoma incubated with allogeneic T cells, but not in immortalized mammary epithelial cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "43288ad2-3551-424e-a6df-e3b2982e4daa",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C44",
+      "claim": "Immortalized mammary epithelial cells were completely killed by allogeneic T cells and did not form cell-in-cell structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, immortalized mammary epithelial cells were completely killed by allogeneic T cells and did not form cell-in-cell structure (Figure 3\u2014figure supplement 1) suggesting this phenomenon is restricted to tumor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "dd247d97-1d98-432e-9ed4-0271a6be7d97",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C45",
+      "claim": "There are significant differences between tumor cell lines in their capacity to form cell-in-cell structures, with pancreatic tumors and B cell lymphoma not generating such structures, while almost all colon and ovarian carcinoma tumor cells that survive T cell killing were organized in such structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant differences between tumor cell lines; on one end are pancreatic tumors and B cell lymphoma, which do not generate cell-in-cell structures, while on the other end, almost all the colon and ovarian carcinoma tumor cells that survive T cell killing, were organized in such structures (Figure 3D, Figure 3\u2014figure supplement 1E\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "d189c19b-d93f-4977-96bf-39c9ef0445c8",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C46",
+      "claim": "The vast majority of human breast, colon and melanoma tumors that survived killing by pre-activated allogeneic T cells had organized in transient cell-in-cell structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested whether similar structures are also formed by human cancer. To this end, we incubated tumor cell lines with pre-activated allogeneic T cells from healthy donors. Similar to our finding in mouse cells, the vast majority of breast, colon and melanoma tumors that survived killing had organized in transient cell-in-cell structures (Figure 3E and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "a8038741-a625-4d00-916c-5d7bb8661104",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C47",
+      "claim": "T cell and myeloid lymphomas as well as glioblastomas did not form cell-in-cell structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, T cell and myeloid lymphomas as well as glioblastomas did not form such structures (Figure 3E and Figure 3\u2014figure supplement 2A\u2013G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "66a86d55-3a13-4f43-ae88-b13041fbd9fe",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C48",
+      "claim": "Approximately half of patient-derived melanoma cells that survived in culture with their autologous reactive TIL were organized in a cell-in-cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overnight incubation of patient-derived melanoma and their corresponding reactive TIL, resulted in vast tumor cell killing. Approximately half of the tumor cells that survived in culture were organized in a cell-in-cell formation (Figure 3F\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from patient samples shown in Figure 3F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "a4f3dfa7-f374-45d8-b3a7-b64678e0bd0d",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C49",
+      "claim": "Histological sections of human melanoma xenografts in NSG mice treated with autologous TIL and high-dose IL-2 indicated high prevalence of tumor cells organized in cell-in-cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Histological sections of tumors at this point indicated high prevalence of tumor cells organized in cell-in-cell formation (Figure 3I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histological data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "bb49cf38-c910-43fc-87cd-017213c0fd04",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C50",
+      "claim": "In all stage IV melanoma patients analyzed, cell-in-cell tumor formations were highly abundant in the T cell zone of the draining lymph nodes, but not in the primary tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analysed histological sections of multiple organs from four stage IV melanoma patients undergoing surgical resection of their primary, and metastatic draining lymph nodes. In all patients, cell-in-cell tumor formations were highly abundant in the T cell zone of the draining lymph nodes, but not in the primary tumors (Figure 3J\u2013L and Figure 3\u2014figure supplement 2H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histological analysis of patient samples shown in Figure 3J-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "9a1b57e3-af66-44bd-92db-43d0ebc7ba5a",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C51",
+      "claim": "In a patient with untreated recurrent melanoma, the vast majority of cells in the primary tumors were single cells, while recurrent tumors were highly enriched with cell-in-cell formations.",
+      "claim_type": "EXPLICIT",
+      "source": "In another patient with untreated recurrent melanoma, we observed that the vast majority of cells in the primary tumors were single cells, while recurrent tumors were highly enriched with cell-in-cell formations (Figure 3M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histological data shown in Figure 3M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "76680d83-6d8c-4f29-8c33-f8ab65af76b8",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C52",
+      "claim": "Tumor-reactive T cells, but not PMA plus ionomycin-activated NK cells or LPS-activated macrophages, express intact granules on their cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, tumor-reactive T cells, but not PMA plus ionomycin-activated NK cells or LPS-activated macrophages, express the intact granules on their cell membrane (Figure 4A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEM analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "97b9333e-41ee-45ce-81df-23a6df1f69c5",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C53",
+      "claim": "Secreted granules from activated T cells were sufficient to induce cell-in-cell formation in tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreted granules were washed and added to a culture of tumor cells. Similar to activated T cells, secreted granules were sufficient to induce cell-in-cell formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "a73d7b27-10d4-4990-9edb-7c7a21ca5ea2",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C54",
+      "claim": "Extracellular vesicles from activated NK cells, macrophages, immortalized melanocytes, B16F10-derived granules, or commercial latex beads did not induce a cell-in-cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, B16F10 cells were cultured overnight with extracellular vesicles from activated NK, macrophages, immortalized melanocytes (Melan A), B16F10-derived granules, or commercial 1 \u03bcM latex beads. However, none of these extracellular vesicles induced a cell-in-cell formation, suggesting this it is mediated by molecules that are highly enriched in activated T cells (Figure 4B, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "e47b1a30-46c8-4872-8f79-003d5083d085",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C55",
+      "claim": "Mass spectrometry identified approximately 400 proteins in purified T cell secreted granules, of which 273 were shared with primary T cell secreted granules.",
+      "claim_type": "EXPLICIT",
+      "source": "We next analysed the protein content of the purified granules by mass spectrometry. Overall, we identified approximately 400 proteins and out of those 273 were shared primary T cell secreted granules. (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "8863e969-ab0a-4bac-ae8c-b64a932a45da",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C56",
+      "claim": "Incubation of T cell secreted granules with tumor cells induced significant cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, incubation of these granules with tumor cells induced significant cell death (Figure 4E, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by apoptosis assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "b71ee04c-8a76-4c26-9ef1-8ae88856a6df",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C57",
+      "claim": "Incubation of tumor cells with gp100-reactive T cells in the presence of antibodies that block the interactions with lysosomes/secreted granules (LAMP1, CD95, or CD63) did not alter T cells capacity to induce a cell-in-cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, however, incubation of tumor cells with gp100-reactive T cells in the presence of antibodies that block the interactions with lysosomes/secreted granules (i.e. LAMP1, CD95, or CD63) did not alter T cells capacity to induce a cell-in-cell formation, suggesting that these molecules are also expressed on T cell membranes (Figure 4F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "09f63335-d924-4f80-837f-c35a2dfe6bad",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C58",
+      "claim": "Incubation of tumor cells with extraction of membrane-associated proteins, but not cytosolic or secreted proteins from activated T cells, induce tumor cell-in-cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, incubation of tumor cells with extraction of membrane-associated proteins, but not cytosolic or secreted proteins from activated T cells, induce tumor cell-in-cell formation (Figure 4G\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "ca83e28f-de74-4db7-ac63-545deafc1e02",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C59",
+      "claim": "T cells activated with IFN\u03b3, and to a lesser extent anti-CD3 plus high-dose IL-2, induce the most cell-in-cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that T cells activated with IFN\u03b3, and to a lesser extent anti-CD3 plus high-dose IL-2, induce the most cell-in-cell formation (Figure 4I, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "88af8c12-6886-488d-973d-9cb1062b04f3",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C60",
+      "claim": "The expression profile of IFN\u03b3 activated T cells differ markedly than that induced by anti-CD3 or LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAseq analyses indicated that the expression profile of IFN\u03b3 activated T cells differ markedly than that induced by anti-CD3 or LPS, which do not induce cell-in-cell formation in tumor cells (Figure 4J, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "19fb10b7-f2e5-47b4-862b-c5f96f524249",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C61",
+      "claim": "IFN\u03b3-stimulated NK cells and macrophages, but not B cells, could induce a tumor cell-in-cell formation, albeit at a lower percentage compared to activated T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that IFN\u03b3 -stimulated NK cells and macrophages, but not B cells, could induce a tumor cell-in-cell formation, albeit at a lower percentage compared to activated T cells (Figure 4K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "c8e8d57e-2dc2-4655-b3c6-6f22bb66d76d",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C62",
+      "claim": "Human T cells from healthy donors that were pre-activated with IFN\u03b3 efficiently induced cell-in-cell formation in allogeneic tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, human T cells from healthy donors that were pre-activated with IFN\u03b3 efficiently induced cell-in-cell formation in allogeneic tumor cells (Figure 4L and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "d87b1791-df59-4be4-a46a-8b9fca647181",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C63",
+      "claim": "Single tumor cells were significantly more susceptible to killing by reactive T cells, compared to that of cell-in-cell tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In all assays, we found that single tumor cells were significantly more susceptible to killing by reactive T cells, compared to that of cell-in-cell tumors (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by caspase 3/7 activity assay data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "ea7bc803-ad74-463e-aea1-98dcd8784c20",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C64",
+      "claim": "Pre-incubation of tumor cells with granules isolated from activated B cells and macrophages provided no protection to tumor cells from gp100-reactive T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-incubation of tumor cells with granules isolated from activated B cells and macrophages (which do not induce cell-in-cell formation) provided no protection to tumor cells from gp100-reactive T cells (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "9b1edfba-5679-4ea5-b169-5135ef83233e",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C65",
+      "claim": "Cell-in-cell tumors induced in vitro or in vivo showed only minor regression following administration of immunotherapy, while single melanoma cells were almost completely abrogated following therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-in-cell tumors that were induced in vitro have grown slower compared to single tumor cells, but experienced only minor regression following administration of immunotherapy. Similarly, cell-in-cell formation induced in vivo showed only benign response to immunotherapy. In sharp contrast, single melanoma cells were almost completely abrogated following therapy (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo tumor growth data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "e11165e9-c92f-4bff-9204-dca3021848b2",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C66",
+      "claim": "Multiple T cells were attached to cell-in-cell tumors and many large pores were observed on the outer cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that multiple T cells were attached to cell-in-cell tumors and many large pores were observed on the outer cell membrane (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEM analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "b3d745a0-a71c-4c8d-9b12-233b8631643f",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C67",
+      "claim": "Pores on the outer cell membrane were almost completely absent upon co-culture with reactive CD8+ T cells from perforin-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These pores were almost completely absent upon co-culture with reactive CD8+ T cells from perforin-/- mice (Figure 5D), which have impaired tumor cell killing abilities (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEM analysis shown in Figure 5D and functional data in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "273ee019-0cc6-4139-856d-d8bff2bf1313",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C68",
+      "claim": "The length and duration of the immunological synapse between T cells and cell-in-cell structures showed no reduction compared to single tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, measuring the length and the duration of the immunological synapse under super-resolution microscopy showed that no reduction compared to single tumor cells (Figure 5E\u2013G, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by super-resolution microscopy data shown in Figure 5E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "d9f3f9a4-54bd-47c8-b6ee-5ddba3d6613b",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C69",
+      "claim": "The distribution of granzyme B and perforin is almost limited to the outer cell in cell-in-cell tumors attacked by T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining of T cells attacking cell-in-cell tumors, indicated that the distribution of granzyme B and perforin is almost limited to the outer cell (Figure 5H\u2013I, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 5H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "3ce1d9c5-57a9-4d0a-8168-32a95ec78374",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C70",
+      "claim": "T cell interactions with cell-in-cell tumors were insufficient to induce caspase 3/7 activity in the inner cell, leaving it intact and alive.",
+      "claim_type": "EXPLICIT",
+      "source": "While these interactions were sufficient to kill single tumor cells, they were insufficient to induce caspase 3/7 activity in the inner cell, leaving it intact and alive (Figure 5G\u2013J, and Figure 5\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by caspase 3/7 activity assay data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "7a7991d3-cd1f-4563-9e3e-91d7ad63794f",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C71",
+      "claim": "Cell-in-cell formation tumors survived longer and at higher concentrations of free radicals and chemotherapies compared to their parental cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we compared the sensitivity of single-tumor cells to that of cell-in-cell tumors to additional antibiotics including free radicals and chemotherapies. Similar to our results with T cells, in all the tested compounds, cell-in-cell formation tumors survived longer and at higher concentrations compared to their parental cell lines (Figure 5K and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by viability assay data shown in Figure 5K and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "2be32a2d-868f-4183-a540-a0163f95f234",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C72",
+      "claim": "Each cell type in the cell-in-cell formation maintained its cytoplasm, and no mix between fluorescent colors was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we incubated tumor cells whose cytosols were labeled with either Wasabi or tdTomato with tumor-reactive T cells. Confocal analysis indicated that each cell type in the cell-in-cell formation maintained its cytoplasm, and no mix between colors was detected (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by confocal microscopy data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "fab6166f-e316-4b61-bee6-c681e76daf5e",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C73",
+      "claim": "Long-term follow-up of cell dissemination from cell-in-cell structures indicated that each cell maintains its initial single labelling color.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, long-term follow-up of cell dissemination from this structure indicated that each cell maintains its initial single labelling color (Figure 6\u2014video 1 and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-lapse video microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "f9ff3b74-45f7-496c-81d2-ac861332ff31",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C74",
+      "claim": "Blocking ROCK almost completely prevented T cell-mediated cell-in-cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the similarity of this formation to entosis, we used ROCK inhibitor, which is the key regulator of this process. Indeed, blocking ROCK almost completely prevented T cell-mediated cell-in-cell formation (Figure 6B, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "2537eef1-2667-47cf-97fc-68224079b63c",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C75",
+      "claim": "There was no increase or changes in the cellular localization of phosphorylated \u03b2 catenin, E-cadherin, and phosphorylated integrin \u03b21 in cell-in-cell structures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed no increase or changes in the cellular localization of phosphorylated \u03b2 catenin, E-cadherin, and phosphorylated integrin \u03b21 (26) (Figure 6\u2014figure supplement 1) suggesting other mediators promote this entosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "95f231db-e27f-4843-a803-9c009b83f0bf",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C76",
+      "claim": "There was no reduction in cell-in-cell formation upon blocking of E- and N- cadherins, or inhibition of Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there was no reduction in cell-in-cell formation upon blocking of E- and N- cadherins, or inhibition of Wnt signaling (Figure 6D\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "36661521-5b1a-4ebf-a4ad-e63559e5b842",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C77",
+      "claim": "Disruption of actin filaments, blocking of mRNA synthesis or protein production completely abrogated tumor cells' capacity to form a cell-in-cell formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, disruption of actin filaments, blocking of mRNA synthesis or protein production completely abrogated tumor cells' capacity to form a cell-in-cell formation, suggesting that the structure requires de novo synthesis of genes (Figure 6D\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D-E using various inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "bc2429fa-7545-47a9-9c1f-4126e4bfaeb4",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C79",
+      "claim": "KEGG analysis indicated that multiple signaling cascades, including the JAK/STAT3 axis and FGF-receptors downstream pathways, are enriched in cell-in-cell formation generated in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "KEGG analysis further indicated that multiple signaling cascades, including the JAK/STAT3 axis and FGF-receptors downstream pathways, are enriched in cell-in-cell formation generated in vivo, with approximately 80 significantly elevated genes relating to these pathways (Figure 6\u2014figure supplement 1, ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by KEGG pathway analysis shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "cc1d86db-9ae3-4fe6-9d75-3fd83740262c",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C80",
+      "claim": "EGR1 and STAT3 expression was significantly elevated in cell-in-cell tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, EGR1 and STAT3 expression was significantly elevated in cell-in-cell tumors (Figure 6G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "293a13c2-d27c-464c-9b2b-5674759ffabb",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C81",
+      "claim": "Both mice and human tumors incubated with reactive T cells had elevated their p-STAT3 levels, in comparison to untreated tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mice and human tumors incubated with reactive T cells had elevated their p-STAT3 levels, in comparison to untreated tumor cells (Figure 6\u2014figure supplement 1), suggesting this mechanism is conserved across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "cccc5a3b-36c4-4073-9601-42585e2bd96e",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C82",
+      "claim": "Overexpression of either STAT3 or EGR1 was sufficient to induce cell-in-cell formation without additional stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of either STAT3 or EGR1 was sufficient to induce cell-in-cell formation without additional stimulation (Figure 6H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "a3d9a43e-580a-4490-a499-c20fde03d4b1",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C83",
+      "claim": "Cells overexpressing STAT3 or EGR1 were significantly more resistant to killing by CD8+ T cell, compared to sham transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these cells were significantly more resistant to killing by CD8+ T cell, compared to sham transfected cells (Figure 6I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by apoptosis assay data shown in Figure 6I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "69d12e8f-c381-4536-8446-8b63f3fb0d5c",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C84",
+      "claim": "Inhibition of STAT3 and EGR1, but not MAPK3 and EGR2, significantly abrogated the capacity of tumor cells to form cell-in-cell structures upon incubation with IFN\u03b3-stimulated T cells and with T cell secreted granules.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of STAT3 and EGR1, but not MAPK3 and EGR2, significantly abrogated the capacity of tumor cells to form cell-in-cell structures upon incubation with IFN\u03b3-stimulated T cells and with T cell secreted granules (Figure 6J and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by siRNA knockdown experiments shown in Figure 6J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "7ab87460-2c77-48e7-9b77-b603fcafc25f",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C85",
+      "claim": "Inhibition of STAT3, or EGR pathway, completely prevented cell-in-cell formation upon incubation with reactive T cells or T cell-secreted granules.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inhibition of STAT3, or EGR pathway, completely prevented cell-in-cell formation upon incubation with reactive T cells or T cell-secreted granules (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data using small molecule inhibitors shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "9cf18848-cca5-4f02-88b1-acbdf026a73f",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C86",
+      "claim": "Injection of Stattic prior to administration of immunotherapy partially restored the responsiveness of tumors that re-occur following immunotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found, however, that injection of Stattic prior to administration of immunotherapy partially restored the responsiveness of tumors that re-occur following immunotherapies (Figure 6K\u2013L).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo tumor growth data shown in Figure 6K-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "dcaf2755-c9f6-4998-8671-f7596d63fb8e",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C87",
+      "claim": "Relapsed melanoma following treatment with pembrolizumab shares the majority of neoantigen with their corresponding primary tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Zaretsky JM. et al. found that relapsed melanoma following treatment with pembrolizumab shares the majority of neoantigen with their corresponding primary tumors (Zaretsky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "c533e3d9-1996-4848-bce1-7b4f9b4902ca",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C88",
+      "claim": "Non-small cells carcinoma (NSCC) relapsed following treatment with anti-PD1 and CTLA-4 checkpoint blockade bear similar neoantigen load, with only a relatively small number of putative deleted clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Anagnostou V. et al. found that non-small cells carcinoma (NSCC) relapsed following treatment with anti-PD1 and CTLA-4 checkpoint blockade bear similar neoantigen load, with only a relatively small number of putative deleted clones (Anagnostou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "8cf7e9c7-6cbc-4839-9592-f6f9c7378c97",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C89",
+      "claim": "Three out of four basal cell carcinomas patients treated with pembrolizumab exhibited similar neoantigen burden.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study, Yost et al. demonstrated replenishment of T cell clones in basal cell carcinomas patients treated with pembrolizumab. Interestingly, three out of four analysed patients exhibited similar neoantigen burden (Yost et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "a5d0a90a-978c-4061-bd70-cfda14e456b1",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C90",
+      "claim": "Cell-in-cell structures generate multiple membrane layers, thus reducing the probability of compounds' internalization leading to increased tumor-cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that tumor cells escape T-cell-based immunotherapies by forming a transient cell-in-cell structure, and not by immunoediting. These structures generate multiple membrane layers, thus reducing the probability of compounds' internalization leading to increased tumor-cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "a34c994e-52cd-4b26-bcc0-f9e40c74f94c",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C91",
+      "claim": "The present cell-in-cell structure is triggered predominantly by reactive T cells, rather than glucose and nutrient starvation, mitosis, or loss of adherence.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the present cell-in-cell structural falls within the definition entosis, it differs in several key elements: First, it is triggered predominantly by reactive T cells, rather than glucose and nutrient starvation (Hamann et al., 2017), mitosis (Durgan et al., 2017), or loss of adherence (Overholtzer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to published literature on entosis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "cbd8610b-9a1d-429e-8d1f-6f22c9555c39",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C92",
+      "claim": "The cell-in-cell structure requires de novo synthesis of genes regulated by STAT3, and not through \u03b2-catenin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it requires de novo synthesis of genes regulated by STAT3, and not through \u03b2-catenin signaling (Overholtzer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data using inhibitors and gene expression analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "310425cd-3078-4206-ba48-e56b35e37d72",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C93",
+      "claim": "The cell-in-cell structure described is reversible and only rarely leads to cell cannibalism and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the structure described here is reversible and only rarely leads to cell cannibalism and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-lapse imaging showing dissemination of cells from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "03ccb3c4-5e01-49f3-937e-3aeeaa20214f",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C94",
+      "claim": "Only tumor cells that are capable to undergo 'spontaneous' entosis due to loss of cell adhesion can form cell-in-cell structure following interactions with reactive T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that only tumor cells that are capable to undergo 'spontaneous' entosis due to loss of cell adhesion, can form cell-in-cell structure following interactions with reactive T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observation that hematopoietic cells do not form these structures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "5459a05a-28d6-4591-8fb1-4d08efe34632",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C95",
+      "claim": "Hematopoietic cells do not undergo 'spontaneous' or T-cell-mediated entosis but rather emperipolesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, hematopoietic cells do no undergo entosis but rather emperipolesis (Krishna and Overholtzer, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "e944240f-c8df-4fb1-b6b9-3f44dacb6864",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C96",
+      "claim": "Even in a model system where all the 'breaks' on T cell activity are removed, tumor cells may activate a STAT3 transcriptional program, which promotes spatial architecture impenetrable to cytotoxic mediators.",
+      "claim_type": "EXPLICIT",
+      "source": "This work also highlights a theoretical limitation of anti-tumor immunity, as even in a model system where all the 'breaks' on T cell activity are removed, tumor cells may activate a STAT3 transcriptional program, which promotes spatial architecture impenetrable to cytotoxic mediators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "9c2b9a4e-526f-4e96-908b-661aa0f6df6c",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "claim_id": "C97",
+      "claim": "Immune-mediated entosis should be inhibited prior to immunotherapy in order to reduce tumor resistance to subsequent drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we suggest that immune-mediated entosis should be inhibited prior to immunotherapy in order to reduce tumor resistance to subsequent drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experimental findings with Stattic treatment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a1c3fb86-b91f-4144-82cb-50febfcf6665",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Multiple immunotherapy approaches in mouse models induce initial tumor regression followed by relapse with resistant tumors. Treatment with TNF\u03b1/CD40L/anti-TRP1 or adoptive transfer of gp100- or TRP2-reactive T cells led to tumor regression in all mice, but approximately half developed recurrent tumors resistant to subsequent treatments within 10 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 are well-supported by experimental data in Figure 1A-B showing tumor growth curves with initial regression followed by relapse. The data demonstrate reproducibility across different immunotherapy modalities and include appropriate controls and sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "ead29e98-c304-4419-a61c-5c03937f3419",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Relapsed tumors maintain high levels of T cell infiltration with functional tumor-reactive T cells. Flow cytometry shows massive immune infiltration with dominant TRP2 and gp100-reactive T cell clones, and adoptive transfer of tumor-infiltrating T cells prevented tumor growth in naive mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by flow cytometry data (Figure 1C-D) and functional adoptive transfer experiments (Figure 1E-F). The data demonstrate that relapsed tumors are not escaping through lack of T cell infiltration or T cell dysfunction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "9b719c75-a9b7-4979-a8ee-8660b38b20bd",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Relapsed tumors maintain expression of MHC-I, tumor antigens (TRP2, gp100), and comparable neoantigen burden to parental tumors. Whole exome sequencing and RNAseq analyses show similar neoantigen landscapes and gene expression patterns between relapsed and untreated B16F10 cells, with this pattern also observed in human melanoma and NSCLC patients following checkpoint blockade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 are well-supported by multiple orthogonal approaches including flow cytometry, immunostaining, WES, and RNAseq (Figure 1G-M). The human relevance is supported by analysis of published patient data, though this relies on external datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "ba81db5d-b8ec-4c7c-aa90-d33f883c122e",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Resistance to immunotherapy is mediated by transient in vivo mechanisms rather than inherited genetic changes. Cell lines established from relapsed tumors regain susceptibility to immunotherapy when re-injected into mice and show similar killing susceptibility to parental cells in vitro, with RNAseq showing that established cell lines cluster together while freshly sorted cells from treated mice have distinct expression profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 are supported by in vivo tumor growth experiments (Figure 2A, C) and in vitro killing assays (Figure 2B, E), with PCA analysis (Figure 2F) supporting the transient nature of resistance. The experimental design appropriately tests the hypothesis that resistance is not genetically inherited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "e58388a1-3b0b-4205-a518-c02e04ce14e9",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Tumor cells surviving immunotherapy organize into transient cell-in-cell structures where multiple nuclei are surrounded by multiple membrane layers. Approximately half of surviving cells show this organization, with evidence from confocal microscopy, TEM, and histological sections. Dual-labeled tumor cells show mixing of GFP and tdTomato nuclei, and time-lapse imaging demonstrates spontaneous formation and dissemination of these structures in culture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40 are strongly supported by multiple imaging modalities including confocal microscopy (Figure 2G), TEM (Figure 2H), histology (Figure 2I), and quantitative analysis (Figure 2J). The dual-labeling experiments (Figure 2K) and time-lapse videos provide strong evidence against incomplete cell division as an explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "79196d3b-b1ea-4554-9961-f0b75fab8e01",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "T cells, particularly CD8+ T cells, specifically induce cell-in-cell formation in tumor cells but not in normal epithelial cells. This phenomenon is T cell-dependent (absent in NSG mice), occurs across multiple mouse tumor types (with variation by tumor type), and is observed in human breast, colon, and melanoma tumors but not in lymphomas or glioblastomas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 are supported by systematic testing across immune cell types (Figure 3A-B), NSG mouse experiments (Figure 3C), and screening of multiple tumor types in both mouse (Figure 3D) and human systems (Figure 3E). The specificity for T cells and tumor cells is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "7a348af6-ccf7-42eb-a8bd-dc29c20555f5",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cell-in-cell formations occur in human melanoma patients and are enriched in sites of T cell activity. Patient-derived melanoma cells form these structures when cultured with autologous TIL, xenografts treated with TIL show high prevalence of cell-in-cell structures, and in stage IV melanoma patients, these formations are abundant in T cell zones of draining lymph nodes but not primary tumors, with enrichment in recurrent versus primary tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by patient-derived cell experiments (Figure 3F-H), xenograft studies (Figure 3I), and histological analysis of patient samples (Figure 3J-M). The clinical relevance is well-established, though sample sizes are limited (n=4-6 patients).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "031e1cd8-c26e-4c5d-8934-710eba8e8e97",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "T cell membrane-associated proteins, particularly those on secreted granules, mediate cell-in-cell formation. SEM shows intact granules on T cell membranes, isolated T cell granules are sufficient to induce cell-in-cell formation, and this is specific to T cells (not NK cells, macrophages, or other vesicles). Mass spectrometry identified ~400 proteins in T cell granules, and membrane-associated but not cytosolic or secreted proteins induce the formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 are supported by SEM analysis (Figure 4A), functional assays with isolated granules (Figure 4B-C), mass spectrometry (Figure 4D), and cell fractionation experiments (Figure 4G-H). The specificity is well-demonstrated through negative controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "018e15f4-489e-476a-9016-f6fbe82f6f73",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "IFN\u03b3-activated T cells are the primary mediators of cell-in-cell formation. T cells activated with IFN\u03b3 induce the most cell-in-cell formation compared to other activation methods, with distinct gene expression profiles. IFN\u03b3-stimulated NK cells and macrophages can also induce formation at lower levels, and this mechanism is conserved in human T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C59-C62 are supported by systematic testing of different T cell activation conditions (Figure 4I), RNAseq analysis (Figure 4J), testing of other IFN\u03b3-activated immune cells (Figure 4K), and human T cell experiments (Figure 4L). The data clearly establish IFN\u03b3 as the key activating signal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "8a2910f9-dcf4-4009-ba62-41232e2747f1",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cell-in-cell structures protect tumor cells from T cell-mediated killing and chemotherapy by preventing penetration of cytotoxic molecules to inner cells. Single tumor cells are significantly more susceptible to killing than cell-in-cell tumors, with T cells forming normal immunological synapses and creating pores in outer cells, but granzyme B and perforin distribution is limited to outer cells, leaving inner cells intact. This protection extends to chemotherapies and free radicals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C71 are comprehensively supported by caspase 3/7 assays (Figure 5A, J), in vivo tumor growth studies (Figure 5B), SEM analysis (Figure 5C-D), super-resolution microscopy of immunological synapses (Figure 5E-G), immunostaining for granzyme B and perforin (Figure 5H-I), and viability assays with various compounds (Figure 5K). The mechanism of protection is well-characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "4daa736d-4b72-46de-89c6-1c95b7298c37",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cell-in-cell formation is a ROCK-dependent entosis-like process requiring de novo gene synthesis but distinct from classical entosis. Cells maintain separate cytoplasms without fusion, ROCK inhibition prevents formation, but unlike classical entosis, it does not require \u03b2-catenin, E-cadherin, N-cadherin, or Wnt signaling. Disruption of actin filaments or blocking mRNA/protein synthesis prevents formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C77 are supported by dual-labeling experiments (Figure 6A, supplementary), ROCK inhibitor studies (Figure 6B-C), and systematic testing of various inhibitors (Figure 6D-E). The data clearly distinguish this process from classical entosis while establishing its mechanistic requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "3304a178-9742-445d-a18c-0ccdc966be05",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "STAT3 and EGR1 signaling pathways govern cell-in-cell formation. KEGG analysis shows enrichment of JAK/STAT3 and FGF-receptor pathways, with elevated EGR1 and STAT3 expression and phospho-STAT3 levels in cell-in-cell tumors (conserved in human cells). Overexpression of either STAT3 or EGR1 is sufficient to induce formation and confer resistance to T cell killing, while inhibition of STAT3 or EGR1 (but not MAPK3 or EGR2) prevents formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C79-C85 are well-supported by KEGG pathway analysis, gene expression data (Figure 6G), immunostaining (supplementary), overexpression experiments (Figure 6H-I), and siRNA/inhibitor studies (Figure 6J, supplementary). The specificity of STAT3/EGR1 versus other related factors strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "4142f85f-f347-4952-8572-963ea8ff2e60",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Inhibiting STAT3 prior to immunotherapy improves therapeutic efficacy in relapsed tumors. Treatment with Stattic (STAT3 inhibitor) before immunotherapy partially restored responsiveness in tumors that recurred following initial immunotherapy in two different treatment models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C86 are supported by in vivo tumor growth experiments (Figure 6K-L) showing that Stattic pretreatment improves response to both adoptive T cell transfer and antibody-based immunotherapy. However, the improvement is described as 'partial,' and the mechanism could involve effects beyond cell-in-cell inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "762c1a99-7833-4889-940a-a9057d7565c8",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context on immunotherapy resistance and neoantigen retention in relapsed tumors. The manuscript establishes that most patients experience partial response and relapse, that relapsed tumors share neoantigens with primary tumors (contrary to immunoediting predictions), and that current combination therapies remain insufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C17, C87-C89 provide literature context supported by appropriate citations. These claims establish the rationale for the study but are not novel findings of this work. The citations appear appropriate and the general knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    },
+    {
+      "id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6",
+      "content_id": "b53ae0b9-acb8-4dd1-b2a8-98119a732be4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Interpretive framework and implications of the cell-in-cell mechanism. The authors propose that tumor cells escape immunotherapy through transient cell-in-cell structures that generate multiple membrane layers preventing compound internalization, that this differs from classical entosis in key mechanistic features, and that this represents a fundamental limitation of immunotherapy that should be targeted prophylactically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C90-C97 represent interpretations and implications of the experimental findings. While these are largely supported by the data presented, some claims (particularly C96-C97 about theoretical limitations and therapeutic recommendations) extend beyond what the data directly demonstrate. The distinction from classical entosis (C91-C93) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:50:10.075455Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9e8fd680-9017-41af-b7cf-bad6faf8f870",
+      "result_id": "a1c3fb86-b91f-4144-82cb-50febfcf6665"
+    },
+    {
+      "claim_id": "bb9036e0-42a5-4d05-a50e-5237decd1c0c",
+      "result_id": "a1c3fb86-b91f-4144-82cb-50febfcf6665"
+    },
+    {
+      "claim_id": "b60379ef-0977-49a4-a885-d7409fd977e8",
+      "result_id": "a1c3fb86-b91f-4144-82cb-50febfcf6665"
+    },
+    {
+      "claim_id": "81016e22-ad92-4070-bead-731e55a919a9",
+      "result_id": "a1c3fb86-b91f-4144-82cb-50febfcf6665"
+    },
+    {
+      "claim_id": "940c8653-cbf0-4311-a811-7ea88acb6136",
+      "result_id": "ead29e98-c304-4419-a61c-5c03937f3419"
+    },
+    {
+      "claim_id": "51c8d18a-e6a9-4164-af8b-e52f201f11ed",
+      "result_id": "ead29e98-c304-4419-a61c-5c03937f3419"
+    },
+    {
+      "claim_id": "0e5cf368-3e82-497b-8e19-a4dbffb0bc0f",
+      "result_id": "9b719c75-a9b7-4979-a8ee-8660b38b20bd"
+    },
+    {
+      "claim_id": "c20fe267-0539-458d-9f2a-b71139da5717",
+      "result_id": "9b719c75-a9b7-4979-a8ee-8660b38b20bd"
+    },
+    {
+      "claim_id": "93bba791-295d-4543-9c1b-383a25d4a8ee",
+      "result_id": "9b719c75-a9b7-4979-a8ee-8660b38b20bd"
+    },
+    {
+      "claim_id": "bcc9900e-fa69-48b9-a0b8-5582d12edf3a",
+      "result_id": "9b719c75-a9b7-4979-a8ee-8660b38b20bd"
+    },
+    {
+      "claim_id": "54b0b1f3-e49f-421d-8b97-3ee9b8cad362",
+      "result_id": "9b719c75-a9b7-4979-a8ee-8660b38b20bd"
+    },
+    {
+      "claim_id": "24480955-53f6-429a-8caa-2bdf514368bd",
+      "result_id": "ba81db5d-b8ec-4c7c-aa90-d33f883c122e"
+    },
+    {
+      "claim_id": "1503014e-dfce-4d76-b3c1-3ec7096521be",
+      "result_id": "ba81db5d-b8ec-4c7c-aa90-d33f883c122e"
+    },
+    {
+      "claim_id": "cd252cf4-c1b1-47c7-b47e-a3340ccf738d",
+      "result_id": "ba81db5d-b8ec-4c7c-aa90-d33f883c122e"
+    },
+    {
+      "claim_id": "76a8217f-3c83-4c9f-9371-2b49c99abae2",
+      "result_id": "ba81db5d-b8ec-4c7c-aa90-d33f883c122e"
+    },
+    {
+      "claim_id": "d2ce5851-4de8-4ce6-aee5-d2cc99f8bfdf",
+      "result_id": "ba81db5d-b8ec-4c7c-aa90-d33f883c122e"
+    },
+    {
+      "claim_id": "6b32907a-1429-4ae3-b269-58857fd741d5",
+      "result_id": "e58388a1-3b0b-4205-a518-c02e04ce14e9"
+    },
+    {
+      "claim_id": "0a3e7526-341a-42e2-9da4-f52b8934ba59",
+      "result_id": "e58388a1-3b0b-4205-a518-c02e04ce14e9"
+    },
+    {
+      "claim_id": "eb51d7ec-c3a1-47e7-9c42-002e364e86d9",
+      "result_id": "e58388a1-3b0b-4205-a518-c02e04ce14e9"
+    },
+    {
+      "claim_id": "dd8a06d0-7624-40e0-ad12-ee4c6611f851",
+      "result_id": "e58388a1-3b0b-4205-a518-c02e04ce14e9"
+    },
+    {
+      "claim_id": "8a303f4a-a976-48da-8ebc-9d4af0ad86cd",
+      "result_id": "e58388a1-3b0b-4205-a518-c02e04ce14e9"
+    },
+    {
+      "claim_id": "b31e1c99-5cf1-4bf2-a070-801110eb3e88",
+      "result_id": "e58388a1-3b0b-4205-a518-c02e04ce14e9"
+    },
+    {
+      "claim_id": "ec6d5927-cf3d-4e4f-8cfe-578a7f224ab3",
+      "result_id": "e58388a1-3b0b-4205-a518-c02e04ce14e9"
+    },
+    {
+      "claim_id": "cb58f0cd-59f2-448e-96df-25019bed4885",
+      "result_id": "79196d3b-b1ea-4554-9961-f0b75fab8e01"
+    },
+    {
+      "claim_id": "0ad9cb9e-749b-4717-9b73-1894cce118e8",
+      "result_id": "79196d3b-b1ea-4554-9961-f0b75fab8e01"
+    },
+    {
+      "claim_id": "23a5b1b0-79ff-4709-918f-e4d46a65d507",
+      "result_id": "79196d3b-b1ea-4554-9961-f0b75fab8e01"
+    },
+    {
+      "claim_id": "43288ad2-3551-424e-a6df-e3b2982e4daa",
+      "result_id": "79196d3b-b1ea-4554-9961-f0b75fab8e01"
+    },
+    {
+      "claim_id": "dd247d97-1d98-432e-9ed4-0271a6be7d97",
+      "result_id": "79196d3b-b1ea-4554-9961-f0b75fab8e01"
+    },
+    {
+      "claim_id": "d189c19b-d93f-4977-96bf-39c9ef0445c8",
+      "result_id": "79196d3b-b1ea-4554-9961-f0b75fab8e01"
+    },
+    {
+      "claim_id": "a8038741-a625-4d00-916c-5d7bb8661104",
+      "result_id": "79196d3b-b1ea-4554-9961-f0b75fab8e01"
+    },
+    {
+      "claim_id": "66a86d55-3a13-4f43-ae88-b13041fbd9fe",
+      "result_id": "7a348af6-ccf7-42eb-a8bd-dc29c20555f5"
+    },
+    {
+      "claim_id": "a4f3dfa7-f374-45d8-b3a7-b64678e0bd0d",
+      "result_id": "7a348af6-ccf7-42eb-a8bd-dc29c20555f5"
+    },
+    {
+      "claim_id": "bb49cf38-c910-43fc-87cd-017213c0fd04",
+      "result_id": "7a348af6-ccf7-42eb-a8bd-dc29c20555f5"
+    },
+    {
+      "claim_id": "9a1b57e3-af66-44bd-92db-43d0ebc7ba5a",
+      "result_id": "7a348af6-ccf7-42eb-a8bd-dc29c20555f5"
+    },
+    {
+      "claim_id": "76680d83-6d8c-4f29-8c33-f8ab65af76b8",
+      "result_id": "031e1cd8-c26e-4c5d-8934-710eba8e8e97"
+    },
+    {
+      "claim_id": "97b9333e-41ee-45ce-81df-23a6df1f69c5",
+      "result_id": "031e1cd8-c26e-4c5d-8934-710eba8e8e97"
+    },
+    {
+      "claim_id": "a73d7b27-10d4-4990-9edb-7c7a21ca5ea2",
+      "result_id": "031e1cd8-c26e-4c5d-8934-710eba8e8e97"
+    },
+    {
+      "claim_id": "e47b1a30-46c8-4872-8f79-003d5083d085",
+      "result_id": "031e1cd8-c26e-4c5d-8934-710eba8e8e97"
+    },
+    {
+      "claim_id": "8863e969-ab0a-4bac-ae8c-b64a932a45da",
+      "result_id": "031e1cd8-c26e-4c5d-8934-710eba8e8e97"
+    },
+    {
+      "claim_id": "b71ee04c-8a76-4c26-9ef1-8ae88856a6df",
+      "result_id": "031e1cd8-c26e-4c5d-8934-710eba8e8e97"
+    },
+    {
+      "claim_id": "09f63335-d924-4f80-837f-c35a2dfe6bad",
+      "result_id": "031e1cd8-c26e-4c5d-8934-710eba8e8e97"
+    },
+    {
+      "claim_id": "ca83e28f-de74-4db7-ac63-545deafc1e02",
+      "result_id": "018e15f4-489e-476a-9016-f6fbe82f6f73"
+    },
+    {
+      "claim_id": "88af8c12-6886-488d-973d-9cb1062b04f3",
+      "result_id": "018e15f4-489e-476a-9016-f6fbe82f6f73"
+    },
+    {
+      "claim_id": "19fb10b7-f2e5-47b4-862b-c5f96f524249",
+      "result_id": "018e15f4-489e-476a-9016-f6fbe82f6f73"
+    },
+    {
+      "claim_id": "c8e8d57e-2dc2-4655-b3c6-6f22bb66d76d",
+      "result_id": "018e15f4-489e-476a-9016-f6fbe82f6f73"
+    },
+    {
+      "claim_id": "a3dea8a9-9457-4e6c-b0d1-5e52b95ea574",
+      "result_id": "018e15f4-489e-476a-9016-f6fbe82f6f73"
+    },
+    {
+      "claim_id": "d87b1791-df59-4be4-a46a-8b9fca647181",
+      "result_id": "8a2910f9-dcf4-4009-ba62-41232e2747f1"
+    },
+    {
+      "claim_id": "ea7bc803-ad74-463e-aea1-98dcd8784c20",
+      "result_id": "8a2910f9-dcf4-4009-ba62-41232e2747f1"
+    },
+    {
+      "claim_id": "9b1edfba-5679-4ea5-b169-5135ef83233e",
+      "result_id": "8a2910f9-dcf4-4009-ba62-41232e2747f1"
+    },
+    {
+      "claim_id": "e11165e9-c92f-4bff-9204-dca3021848b2",
+      "result_id": "8a2910f9-dcf4-4009-ba62-41232e2747f1"
+    },
+    {
+      "claim_id": "b3d745a0-a71c-4c8d-9b12-233b8631643f",
+      "result_id": "8a2910f9-dcf4-4009-ba62-41232e2747f1"
+    },
+    {
+      "claim_id": "273ee019-0cc6-4139-856d-d8bff2bf1313",
+      "result_id": "8a2910f9-dcf4-4009-ba62-41232e2747f1"
+    },
+    {
+      "claim_id": "d9f3f9a4-54bd-47c8-b6ee-5ddba3d6613b",
+      "result_id": "8a2910f9-dcf4-4009-ba62-41232e2747f1"
+    },
+    {
+      "claim_id": "3ce1d9c5-57a9-4d0a-8168-32a95ec78374",
+      "result_id": "8a2910f9-dcf4-4009-ba62-41232e2747f1"
+    },
+    {
+      "claim_id": "7a7991d3-cd1f-4563-9e3e-91d7ad63794f",
+      "result_id": "8a2910f9-dcf4-4009-ba62-41232e2747f1"
+    },
+    {
+      "claim_id": "2be32a2d-868f-4183-a540-a0163f95f234",
+      "result_id": "4daa736d-4b72-46de-89c6-1c95b7298c37"
+    },
+    {
+      "claim_id": "fab6166f-e316-4b61-bee6-c681e76daf5e",
+      "result_id": "4daa736d-4b72-46de-89c6-1c95b7298c37"
+    },
+    {
+      "claim_id": "f9ff3b74-45f7-496c-81d2-ac861332ff31",
+      "result_id": "4daa736d-4b72-46de-89c6-1c95b7298c37"
+    },
+    {
+      "claim_id": "2537eef1-2667-47cf-97fc-68224079b63c",
+      "result_id": "4daa736d-4b72-46de-89c6-1c95b7298c37"
+    },
+    {
+      "claim_id": "95f231db-e27f-4843-a803-9c009b83f0bf",
+      "result_id": "4daa736d-4b72-46de-89c6-1c95b7298c37"
+    },
+    {
+      "claim_id": "36661521-5b1a-4ebf-a4ad-e63559e5b842",
+      "result_id": "4daa736d-4b72-46de-89c6-1c95b7298c37"
+    },
+    {
+      "claim_id": "bc2429fa-7545-47a9-9c1f-4126e4bfaeb4",
+      "result_id": "3304a178-9742-445d-a18c-0ccdc966be05"
+    },
+    {
+      "claim_id": "cc1d86db-9ae3-4fe6-9d75-3fd83740262c",
+      "result_id": "3304a178-9742-445d-a18c-0ccdc966be05"
+    },
+    {
+      "claim_id": "293a13c2-d27c-464c-9b2b-5674759ffabb",
+      "result_id": "3304a178-9742-445d-a18c-0ccdc966be05"
+    },
+    {
+      "claim_id": "cccc5a3b-36c4-4073-9601-42585e2bd96e",
+      "result_id": "3304a178-9742-445d-a18c-0ccdc966be05"
+    },
+    {
+      "claim_id": "a3d9a43e-580a-4490-a499-c20fde03d4b1",
+      "result_id": "3304a178-9742-445d-a18c-0ccdc966be05"
+    },
+    {
+      "claim_id": "69d12e8f-c381-4536-8446-8b63f3fb0d5c",
+      "result_id": "3304a178-9742-445d-a18c-0ccdc966be05"
+    },
+    {
+      "claim_id": "7ab87460-2c77-48e7-9b77-b603fcafc25f",
+      "result_id": "3304a178-9742-445d-a18c-0ccdc966be05"
+    },
+    {
+      "claim_id": "625e2d98-e5be-43a4-9959-986a715313a4",
+      "result_id": "3304a178-9742-445d-a18c-0ccdc966be05"
+    },
+    {
+      "claim_id": "9cf18848-cca5-4f02-88b1-acbdf026a73f",
+      "result_id": "4142f85f-f347-4952-8572-963ea8ff2e60"
+    },
+    {
+      "claim_id": "148eca9f-8087-4e29-92a8-14e4da28fe4e",
+      "result_id": "4142f85f-f347-4952-8572-963ea8ff2e60"
+    },
+    {
+      "claim_id": "cdbb2118-34ce-4e65-9d10-7c65443deb77",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "efe0a581-696b-4652-8663-9addfd520ed2",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "95df5f9c-74e9-4c3f-a5c6-a0408f5cc868",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "9c7f87a3-6f7e-4d5e-82c3-19ad8e897c01",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "4c74662f-637b-4d87-bc99-0cf8a754fc5c",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "ab65810b-fd4d-4f6f-9da5-048db6853af4",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "cf997f19-71ab-4ba3-9c89-ecce72560aa6",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "ffffbf96-f7e8-494f-85c6-59f38e90a64a",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "05eaca44-9345-4080-9653-0eaa8a75d4dd",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "d1b05bf4-7d26-4d00-a394-69f75bc895fd",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "10a02661-09bc-4cb6-9c66-b712b1d70aeb",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "dcaf2755-c9f6-4998-8671-f7596d63fb8e",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "c533e3d9-1996-4848-bce1-7b4f9b4902ca",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "8cf7e9c7-6cbc-4839-9592-f6f9c7378c97",
+      "result_id": "762c1a99-7833-4889-940a-a9057d7565c8"
+    },
+    {
+      "claim_id": "370f8a59-48de-4f19-ae20-357b31b40a1d",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    },
+    {
+      "claim_id": "78c1d0ec-42e9-489e-bad2-39f2eba6ed07",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    },
+    {
+      "claim_id": "46ca234f-27fc-4417-b93a-d705caec8eb1",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    },
+    {
+      "claim_id": "a5d0a90a-978c-4061-bd70-cfda14e456b1",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    },
+    {
+      "claim_id": "a34c994e-52cd-4b26-bcc0-f9e40c74f94c",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    },
+    {
+      "claim_id": "cbd8610b-9a1d-429e-8d1f-6f22c9555c39",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    },
+    {
+      "claim_id": "310425cd-3078-4206-ba48-e56b35e37d72",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    },
+    {
+      "claim_id": "03ccb3c4-5e01-49f3-937e-3aeeaa20214f",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    },
+    {
+      "claim_id": "5459a05a-28d6-4591-8fb1-4d08efe34632",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    },
+    {
+      "claim_id": "e944240f-c8df-4fb1-b6b9-3f44dacb6864",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    },
+    {
+      "claim_id": "9c2b9a4e-526f-4e96-908b-661aa0f6df6c",
+      "result_id": "51b8be6f-fc06-42c8-a5f1-ca00d62f2fb6"
+    }
+  ],
+  "comparisons": []
+}

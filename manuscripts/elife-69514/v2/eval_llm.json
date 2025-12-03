@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "GCaMP expression in ChAT-Cre-\u0394neo \u00d7 Ai148 mice was highly selective for cholinergic neurons in HDB and GP/SI, with only 5.5% and 6.3% of GCaMP+ cells being ChAT-negative in these regions, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 provide immunohistochemical validation showing that >94% of GCaMP-expressing neurons in both HDB and GP/SI are cholinergic. The quantification from 4 mice with specific cell counts provides strong evidence for the specificity of the transgenic approach in these target regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C6"
+    ],
+    "result": "HDB BFCNs show stronger coherence with pupil-indexed arousal than GP/SI BFCNs, with HDB activity accounting for up to 80% of variability in slow pupil changes and leading pupil dilations by ~0.7s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 and C6 demonstrate through coherence analysis (Figure 1F) and cross-correlation (Figure 1G) that HDB activity is more strongly coupled to pupil dynamics than GP/SI. Statistical support is provided (F=12.58, p=0.01), and the temporal relationship is quantified. This establishes a key functional difference between the two regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "ACh3.0 sensor fluorescence in auditory cortex shows similar coherence with pupil fluctuations as GP/SI GCaMP signals, with ACh release leading pupil dilations by ~0.6s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 validate the relationship between GP/SI BFCN activity and cortical ACh release using an independent measurement approach (ACh3.0 sensor). The similar temporal dynamics (0.6s vs 0.7s lead time) and coherence patterns support the interpretation that fiber photometry reflects functionally relevant cholinergic activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C7"
+    ],
+    "result": "GP/SI BFCNs show markedly stronger responses to unconditioned auditory stimuli compared to HDB, while both regions show equivalently weak responses to visual stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C26, and C7 demonstrate a clear sensory modality difference between regions. Statistical analysis (three-way ANOVA with significant modality \u00d7 structure \u00d7 level interaction, F=9.1, p=0.002) supports that GP/SI responds more strongly to auditory stimuli at all intensities tested, while visual responses are equivalent. This is a key finding establishing functional specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "BFCN responses to novel auditory stimuli habituate rapidly in both HDB and GP/SI, with responses decreasing to ~60% of initial amplitude after 1-2 presentations, while spontaneous activity remains stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 demonstrate habituation to stimulus novelty with appropriate controls. The parallel decay of pupil and BFCN responses (C27-C28), equivalent proportional habituation across regions (C29), and stable spontaneous activity (C30) rule out technical artifacts and support the interpretation that responses reflect novelty detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "BFCN responses to reward-predicting tones did not significantly change over the course of appetitive learning in either HDB or GP/SI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 show that while mice learned the task (C31), cue-evoked BFCN responses remained stable across training (C32-C33). Statistical analysis (Figure 3H) confirms no significant learning-related changes. However, the authors acknowledge this could reflect enhancement during the unmonitored shaping period, which is an important caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Pre-cue baseline BFCN activity was significantly elevated on miss trials compared to hit trials, with the difference being greater in HDB than GP/SI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 identify a relationship between baseline activity state and behavioral performance. Statistical support is provided (two-way ANOVA with significant trial type \u00d7 structure interaction, F=7.89, p=0.02). However, C34 notes the post-cue difference is confounded by licking activity, making the pre-cue analysis particularly important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C5"
+    ],
+    "result": "HDB activity more accurately classified behavioral trial outcomes (hit vs miss) than GP/SI for both pre-cue and post-cue periods, with HDB classification accuracy not significantly different from using both fibers combined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C5 demonstrate through SVM classification that HDB activity is more informative about behavioral outcomes. Statistical support is provided (main effect for structure, F=11.64, p=0.0004 for pre-cue; similar for post-cue). The finding that HDB alone performs as well as both fibers combined is particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C8"
+    ],
+    "result": "BFCN responses to licking increased monotonically with lick bout duration and were significantly greater in GP/SI than HDB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C8 demonstrate movement-related activity differences between regions. Statistical support is provided (two-way ANOVA with main effect for structure, F=6.33, p=0.03). The monotonic increase with bout duration suggests the response scales with movement intensity or duration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Elevated pre-cue BFCN activity observed before miss trials was not present before false alarm events, suggesting baseline activity relates more to perceptual accuracy than behavioral action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide an important control distinguishing perceptual from motor contributions to baseline activity. The comparison between miss trials (elevated baseline) and false alarms (no elevation) supports the interpretation that baseline activity reflects perceptual state rather than motor preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "HDB showed selective responses at the offset of lick bouts only when \u22657 licks were produced (false alarm threshold), potentially reflecting reward omission responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 demonstrate a specific pattern of lick offset responses in HDB. Statistical support is provided (pairwise contrast: 7+ vs 5-6, p=0.01). C47 proposes this reflects reward omission, which is speculative but reasonable given the behavioral context and is tested more directly in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "After reinforcement reversal, Go responses to neutral outcome tones decreased to ~40% and to punishment-predicting tones to ~25% within a few behavioral sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 demonstrate behavioral learning in the reversal task. The data in Figure 6C clearly show the described behavioral changes, establishing that mice learned the new contingencies and providing the context for analyzing BFCN responses to different reinforcement outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C4"
+    ],
+    "result": "BFCN responses to anticipated rewards were very weak in both regions, but reward omission elicited moderate responses in HDB that were significantly greater than both reward delivery and GP/SI omission responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50-C51, and C4 demonstrate differential encoding of reinforcement outcomes. Statistical support is provided (two-way ANOVA with significant reinforcement type \u00d7 structure interaction, F=8.01, p=0.003). The finding that HDB preferentially encodes reward omission over delivery is a key functional specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C52",
+      "C53"
+    ],
+    "result": "Aversive stimuli (tongue shock) elicited the strongest BFCN responses in both regions, with significantly greater responses in GP/SI than HDB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C52-C53 demonstrate that both regions respond to aversive stimuli but with different magnitudes. Statistical support is provided in Figure 6E. This establishes that while both regions encode punishment, GP/SI shows stronger responses, consistent with its anatomical inputs from nociceptive thalamic regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Reward omission responses had significantly slower latencies (~1.04s) than other reinforcement types (~0.63s) and were more precisely locked to lick bout offset than expected reward timing, with greater activity on omission than reward trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 characterize the temporal dynamics of omission responses. Statistical support is provided for latency differences (Figure 6F), and the control in Figure 6\u2014figure supplement 1 rules out a simple motor explanation. The slower, ramping nature is consistent with prediction error encoding described in prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C10"
+    ],
+    "result": "GP/SI showed robust learning-related enhancement (~150% increase) of responses to punishment-predicting cues within a few sessions, while HDB responses remained stable across all cue types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 and C10 demonstrate selective associative plasticity in GP/SI for punishment-predicting cues. Statistical support is provided (three-way ANOVA with significant training time \u00d7 reinforcement type \u00d7 structure interaction, F=2.2, p=0.04). This is a major finding showing functional specialization for aversive learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "GP/SI showed greater initial habituation to pure tones than HDB, which decreased with task familiarity but was rekindled specifically for punishment-remapped tones, suggesting these responses reflect evaluation of potentially threatening stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 demonstrate a complex pattern of habituation that differs between regions and depends on reinforcement history. Statistical support is provided (Figure 7E-G). C64 proposes an interpretation linking habituation patterns to threat evaluation, which is reasonable but somewhat speculative. The pattern is consistent with the overall functional specialization of GP/SI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Single-trial tone-evoked responses showed very weak correlation between HDB and GP/SI (R\u00b2=0.16, n=21,099 trials), demonstrating that activity in the two regions can be measured independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 provide important validation that the dual fiber approach measures independent signals. The weak correlation across >21,000 trials strongly supports that optical or functional cross-talk is minimal. This is critical for interpreting regional differences as reflecting distinct functional properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Rostral and caudal BFCNs share similarities in arousal and reinforcement-related responses, but regional connectivity differences support specializations for encoding sensory salience and associative plasticity during aversive learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 provide the main synthesis of findings. This conclusion is well-supported by the collective evidence showing both shared features (weak visual responses, weak reward responses) and clear regional specializations (HDB for arousal/omission, GP/SI for auditory/punishment). The interpretation linking function to anatomical connectivity is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Fiber-based imaging was the optimal methodology for simultaneous long-term recordings from HDB and GP/SI, despite limitations in temporal/spatial resolution, given the anatomical constraints and experimental requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 provide methodological justification. The reasoning is sound: GP/SI anatomy precludes endoscopic imaging (C88-C89), two-photon imaging has photobleaching concerns for extended recordings (C90), and single-unit approaches have very low yield (C92). The acknowledged limitations (C93) are appropriate caveats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C1"
+    ],
+    "result": "HDB and GP/SI have distinct anatomical connectivity patterns, with HDB projecting to prefrontal cortex and lateral hypothalamus, while GP/SI receives inputs from striatum and auditory thalamus and is the primary cholinergic source to auditory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 and C1 describe established anatomical knowledge supported by multiple citations. This provides the critical context for interpreting functional differences. The citations appear appropriate and the anatomical descriptions are consistent with the literature. This is background knowledge rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "The caudal basal forebrain (GP/SI) functions as a hub for encoding and associating sounds with aversive stimuli and regulating cortical plasticity for threat-predicting sounds, potentially coordinating with dopaminergic systems for threat avoidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C71 synthesize the experimental findings with prior work to propose a functional role for GP/SI. While the data support enhanced responses to auditory stimuli and punishment-related plasticity, the broader claims about 'hub' function and regulation of cortical microcircuits (C71) extend beyond what is directly demonstrated. C73 is explicitly speculative about coordination with dopamine systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Auditory stimuli should elicit ACh release in auditory cortex even without behavioral relevance, and cholinergic regulation of plasticity operates through a threshold mechanism rather than all-or-none gating, requiring reevaluation of models emphasizing only reward/punishment-evoked release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C74 proposes a testable prediction based on the findings but is not directly demonstrated. C75-C76 cite prior work on ACh function. C77 proposes a threshold model based on the learning-related enhancement data, which is reasonable but not definitively proven. C78 calls for reevaluation of existing models, which is justified by the unconditioned auditory responses but somewhat overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Prior work has identified bursting and regular-firing BFCN subtypes with distinct coupling patterns to cortex and behavioral outcomes, and pre-cue cholinergic levels can predict behavioral performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 accurately summarize prior findings from cited studies. These provide important context for interpreting the current bulk imaging results, particularly regarding the relationship between pre-cue activity and behavioral outcomes. The citations appear appropriate and the descriptions are consistent with the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Pre-cue cortical network synchrony predicts behavioral outcomes, and ongoing cholinergic dynamics regulate cortical network state, which impacts sensory encoding and action selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C99 cites the authors' prior work on cortical synchrony predicting behavior. C100 cites classical work on cholinergic regulation of cortical synchrony. C101-C102 synthesize these with the current findings to propose that pre-cue cholinergic activity regulates cortical state to influence behavior. This is a reasonable inference but extends somewhat beyond direct demonstration.",
+    "result_type": "MINOR"
+  }
+]

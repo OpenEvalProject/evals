@@ -1,0 +1,405 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C38",
+      "C39",
+      "C31",
+      "C32",
+      "C2",
+      "C3",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study performed scRNA-seq on 48,813 murine iNKT cells from spleen and adipose tissue at multiple time points after \u03b1GalCer stimulation, revealing that activation induces rapid and extensive transcriptional remodeling. This transcriptional framework is conserved across diverse iNKT cell populations including NKT1, NKT2, and NKT17 subsets, as well as human iNKT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C2-C3 are well-supported by the scRNA-seq data presented in Figures 1 and 2, showing minimal overlap between steady-state and activated cells on UMAP and conserved activation signatures across subsets and species. The large dataset (48,813 cells) and multiple time points provide robust evidence for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Following \u03b1GalCer activation, iNKT cells rapidly downregulate steady-state markers (Il2rb, Klrb1c, Rorc, Il7r) within 4 hours and upregulate activation markers and cytokines (Il2ra, Irf4, Nr4a1, Pdcd1, Ifng, Il4, Il17a), along with PLZF and metabolic genes. By 72 hours, activation and cytokine genes are reduced while proliferation, stem-like, and memory-like markers (Mki67, Slamf6, Tcf7, Ccr7, Klrg1, Itga4) are enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by gene expression data shown in Figure 1C and supplementary figures, with clear temporal patterns of gene expression changes. The data demonstrate a biphasic response with early activation followed by proliferation and memory marker expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Activated iNKT cells undergo metabolic remodeling, with 4-hour activated cells upregulating glycolysis, amino acid metabolism, polyamine synthesis, and fatty acid synthesis while downregulating oxidative signatures. By 72 hours, cells engage oxidative signatures while maintaining glycolytic gene expression, suggesting changing metabolic requirements across activation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 are supported by module scoring data in Figure 1D showing temporal changes in metabolic gene signatures. The interpretation that metabolic requirements change across activation states (C64, C66, C67) is reasonably inferred from the data, though direct metabolic measurements would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "All iNKT cell subsets (NKT1, NKT2, NKT17) upregulate Zbtb16 after activation and demonstrate conserved upregulation of activation, cytokine, and metabolic gene signatures, indicating a common transcriptional framework. However, NKT2 and NKT17 cells share expression of many genes and show increased transcriptional correlation compared to NKT1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 are well-supported by gene expression data in Figure 2B-D and supplementary figures. The data clearly show conserved activation signatures across subsets while also identifying subset-specific differences, particularly the similarity between NKT2 and NKT17 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "NKT2 and NKT17 cells show enrichment of oxidative phosphorylation compared to NKT1 cells, have significantly increased mitochondrial mass and membrane potential, and production of their cytokines (IL-4, IL-13, IL-17A) is more dependent on oxidative metabolism than NKT1 cytokines (IFN\u03b3), as demonstrated by oligomycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are well-supported by GSEA results (Figure 2E), flow cytometry measurements of mitochondrial mass and potential (Figure 2F-G), and functional assays with oligomycin (Figure 2H). The data provide converging evidence for differential metabolic dependencies across subsets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Adipose iNKT cells display constitutive transcriptional differences from splenic iNKT cells and undergo blunted activation in response to \u03b1GalCer, characterized by reduced upregulation of activation markers (Il2ra, Nr4a1) and reduced metabolic remodeling at 4 hours post-activation. Adipose iNKT cells retain expression of 971 conserved genes during activation compared to only 65 genes in splenic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33, C86-C94 are supported by UMAP visualization (Figure 3A), differential gene expression analysis, and module scoring data (Figure 3C-D). The large difference in conserved genes (971 vs 65) provides strong evidence for distinct transcriptional programs in adipose versus splenic iNKT cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C98",
+      "C99",
+      "C100",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Regulatory adipose iNKT cells display constitutive enrichment of memory-like cMAF+ and KLRG1+ populations and express Tr1 cell markers (Il10, Lag3, Ctla4, Il21, Ccr5, Hif1a, Maf, Gzmb). At steady state, adipose iNKT cells show enrichment of activation and metabolic gene signatures and express chronic activation markers (Il2, Cd69, Myc, Nr4a genes, Nfat genes) and antigen experience markers (Klrg1, Itga4), suggesting chronic endogenous activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C34-C35, C98-C112 are well-supported by gene expression data (Figures 3C, 3E, 6D-E) and flow cytometry showing enrichment of cMAF+ and KLRG1+ cells in adipose tissue. The interpretation of chronic activation (C110) is reasonably inferred from the expression of multiple chronic activation markers, though direct evidence of chronic antigen exposure is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Adipose NKT10 cells are a transcriptionally distinct population that only expresses Il10 among NKT1 cells. These cells express 207 enriched genes including Tr1 cell markers (Lag3, Ctla4, Pdcd1, Gzmb, Il21, Hif1a, Maf, Ccr5), suggesting functional similarity to Tr1 cells. Adipose iNKT cells primarily segregate by function after \u03b1GalCer activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C133 are supported by fine clustering analysis (Figure 4D), differential gene expression analysis identifying 207 enriched genes, and gene expression data (Figure 4E). The similarity to Tr1 cells (C131, C133) is reasonably inferred from shared marker expression, though functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Repeated activation of splenic iNKT cells induces a regulatory phenotype similar to adipose iNKT cells. Resting iNKT cells (4 weeks post-\u03b1GalCer) display reduced response to restimulation and express Tr1 cell markers (Gzmb, Il10, Maf, Il21, Ctla4, Hif1a, Ccr5, Lag3). However, prior antigen exposure does not completely reproduce the adipose phenotype, as resting cells lack some chronic activation markers like Nr4a1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C142 are supported by module scoring data (Figure 5B), gene expression analysis (Figure 5C), and reanalysis of published microarray data (Figure 5\u2014figure supplement 1). The distinction between resting splenic and adipose cells (C141) is appropriately noted based on differential expression of chronic activation markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Reactivated splenic iNKT cells segregate into two populations, with only ~50% (cluster B) demonstrating significant activation. Functional stratification reveals populations of NKT1, NKT17, NKT10 (co-expressing Il10 and Maf), and Granzyme A+ KLRG1+ cells. Flow cytometry confirms enrichment of Granzyme A+ KLRG1+ cells and increased cMAF expression at 4 weeks post-\u03b1GalCer, with cMAF+ cells producing more IL-10 than cMAF- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C150 are well-supported by clustering analysis (Figure 5D-E), gene expression data, and flow cytometry validation (Figure 5F-G). The identification of two functionally distinct populations expressing cMAF or KLRG1 is supported by both scRNA-seq and protein-level data showing mutual exclusivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Two new clusters expressing Maf or Klrg1 emerge among resting iNKT cells at 4 weeks post-\u03b1GalCer, with mutually exclusive gene-level expression. Flow cytometry confirms significant enrichment of mutually exclusive cMAF+ and KLRG1+ populations in resting versus steady-state cells. The frequency of cMAF+ cells is positively correlated with antigen load, suggesting TCR signal strength may regulate cMAF expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156 are well-supported by clustering and gene expression data (Figure 6A-C) and flow cytometry validation (Figure 6D-E). The correlation with antigen dose (C156) is supported by data in Figure 6\u2014figure supplement 2. The speculation about TCR signal strength (C157) is reasonable but would require additional mechanistic studies for confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "cMAF+ cells express memory and exhaustion markers (Cd4, Slamf6, Tcf7, Ctla4, Lag3, Cxcr3, Tox) and Tr1 markers (Il27ra, Maf, Hif1a), while KLRG1+ cells express cytotoxic and effector memory markers (Gzmb, Gzma, Klrg1, Ncr1, Klrd1, S1pr5, Klre1) and the transcription factor Zeb2. Both populations express the antigen experience marker Itga4 and are more similar to NKT1 cells than NKT2/NKT17 cells, with production of Granzyme A and IL-10 associated with IFN\u03b3 co-production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C170 are well-supported by gene expression data (Figure 6B), correlation analysis (Figure 6\u2014figure supplement 1), and flow cytometry (Figure 6\u2014figure supplement 3). The characterization of these two distinct memory-like populations is comprehensive, though the speculation about differentiation from NKT1 cells (C170) requires lineage tracing for confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "KLRG1+ iNKT cells are enriched in lung, liver, adipose tissue, and inguinal lymph nodes at 4 weeks post-\u03b1GalCer, while cMAF+ cells are enriched in liver, adipose tissue, and inguinal lymph nodes. Minor populations of cMAF+ and KLRG1+ cells are constitutively present in adipose tissue at steady state, with scRNA-seq revealing distinct subpopulations among steady-state adipose NK1.1- iNKT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C177 are supported by flow cytometry data across multiple tissues (Figure 6D-E) and scRNA-seq analysis of adipose iNKT cells (Figure 6\u2014figure supplement 5). The data demonstrate that these memory-like populations are induced across multiple organs and constitutively present in adipose tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "A conserved cMAF-associated transcriptional network exists among NKT10 cells from spleen and adipose tissue, with 39 conserved genes including Tr1 markers, Tgfb1, and tolerogenic factors (Slfn2, Vsir). Gene regulatory network analysis reveals that Maf demonstrates the greatest correlation with Il10 in NKT10 cells, suggesting Maf is a major candidate regulator of NKT10 cells. cMAF+ iNKT cells are enriched for NKT10 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C36, C178-C186 are supported by differential gene expression analysis, Venn diagram analysis (Figure 7B), GENIE3 network analysis (Figure 7C), and flow cytometry showing IL-10 production by cMAF+ cells (Figure 5G). The identification of Maf as a candidate regulator is well-supported by correlation analysis and known function in other cell types, though functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "NKT10/cMAF+ cells show enrichment for NKTFH cell gene signatures and express markers similar to NKTFH cells (Maf, Cd4, Tox, Izumo1r, Slamf6, Hif1a, Lag3). However, most cMAF+ cells (~93%) do not co-express NKTFH markers CXCR5 and PD-1, and BCL6 is not enriched in cMAF+ cells, indicating that NKT10/cMAF+ cells represent a distinct lineage of memory-like iNKT cells rather than bona fide NKTFH cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C187-C194 are well-supported by module scoring (Figure 7D), reanalysis of published RNA-seq data (Figure 7E), and flow cytometry (Figure 7F-G, Figure 7\u2014figure supplement 1). The data clearly distinguish NKT10/cMAF+ cells from NKTFH cells despite transcriptional similarities, with only ~7% overlap based on surface marker expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establishing the context of iNKT cell biology, including their effector-memory-like phenotype, rapid activation, proliferation kinetics, memory formation, subset heterogeneity, tissue residency, and the regulatory phenotype of adipose iNKT cells. These claims provide the scientific rationale for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C29 are primarily supported by citations to published literature and represent established knowledge in the field. These background claims appropriately contextualize the study and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44",
+      "C46",
+      "C48",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "Supporting claims about the roles of specific genes and pathways in iNKT cell biology, including PLZF requirement for activation, Id2's role in activation, KLF2's role in migration, and glucose as fuel for effector function. These claims provide mechanistic context for the observed gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C46, C48, C55-C58, C62 are supported by citations to published literature. These claims appropriately contextualize the observed gene expression changes with known functional roles, though C57 is speculative about migration of activated iNKT cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C103",
+      "C104",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Adipose iNKT cells display enrichment of pathways related to endocytosis, adhesion, cytotoxicity, and signaling, continue to express cytokine transcripts at 72 hours (a 'smoldering' phenotype), and may experience chronic endogenous activation that dampens their response to \u03b1GalCer and explains their regulatory phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by over-representation analysis (Figure 3B). Claims C103-C104, C113-C114 are supported by gene expression data. Claims C115-C116 represent reasonable speculation based on the observed chronic activation markers and blunted response, though direct evidence of chronic antigen exposure is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Adipose iNKT cells are comprised of NK1.1+ NKT1, NK1.1- NKT1, and NKT17 cells at steady state, with transcriptional differences between NKT1 and NKT17 accounting for most variance. All adipose subsets respond to \u03b1GalCer with reduced activation compared to splenic subsets, and adipose NKT17 cells show increased oxidative gene expression versus adipose NKT1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 are supported by UMAP visualization (Figure 4A), gene expression data (Figure 4B), and module scoring (Figure 4C). The data demonstrate that all adipose subsets show blunted responses rather than a single hyporesponsive subset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "iNKT cell subset diversity is preserved after antigen challenge, with distinct NKT1, NKT2, NKT17, and cycling cell populations identifiable in resting iNKT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C151 is supported by clustering analysis showing distinct subset populations in resting cells (Figure 6A-B). This demonstrates that antigen challenge does not eliminate subset diversity.",
+    "result_type": "MINOR"
+  }
+]

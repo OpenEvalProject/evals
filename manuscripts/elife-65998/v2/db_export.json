@@ -1,0 +1,1645 @@
+{
+  "submission": {
+    "id": "813d20f4-f9e3-497f-ac28-164390b6708a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:33:07.351927Z",
+    "updated_at": "2025-12-03T03:33:07.351927Z"
+  },
+  "content": [
+    {
+      "id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "submission_id": "813d20f4-f9e3-497f-ac28-164390b6708a",
+      "content_type": "manuscript",
+      "content_text": "# Impaired spatial learning and suppression of sharp wave ripples by cholinergic activation at the goal location\n\n## Authors\n\n- Przemyslaw Jarzebowski<sup>1</sup> ([ORCID: 0000-0001-6333-222X](https://orcid.org/0000-0001-6333-222X))\n- Clara S Tang<sup>1</sup>\n- Ole Paulsen<sup>1</sup> ([ORCID: 0000-0002-2258-5455](https://orcid.org/0000-0002-2258-5455))\n- Y Audrey Hay<sup>1</sup> ([ORCID: 0000-0001-7765-5222](https://orcid.org/0000-0001-7765-5222)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Development and Neuroscience, Physiological Laboratory Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe hippocampus plays a central role in long-term memory formation, and different hippocampal network states are thought to have different functions in this process. These network states are controlled by neuromodulatory inputs, including the cholinergic input from the medial septum. Here, we used optogenetic stimulation of septal cholinergic neurons to understand how cholinergic activity affects different stages of spatial memory formation in a reward-based navigation task in mice. We found that optogenetic stimulation of septal cholinergic neurons (1) impaired memory formation when activated at goal location but not during navigation, (2) reduced sharp wave ripple (SWR) incidence at goal location, and (3) reduced SWR incidence and enhanced theta-gamma oscillations during sleep. These results underscore the importance of appropriate timing of cholinergic input in long-term memory formation, which might help explain the limited success of cholinesterase inhibitor drugs in treating memory impairment in Alzheimer\u2019s disease.\n\n## Introduction\n\nThe role of the neuromodulator acetylcholine (ACh) in learning and memory is debated. On one hand, degeneration of cholinergic neurons and a low tone of ACh correlate with memory impairment in humans and rodents (Bartus, 2000; Berger-Sweeney et al., 2001; Hasselmo and Sarter, 2011) and drugs blocking ACh degradation ameliorate memory impairment in Alzheimer\u2019s disease\u00a0(AD) (Ehret and Chamberlin, 2015). Moreover, extensive lesions of the medial septum (MS), where the cholinergic neurons projecting to the hippocampus are located, produce learning deficits (Hepler et al., 1985). On the other hand, selective lesions of MS cholinergic neurons, which account for\u00a0~5% of neurons in the MS, have relatively little impact on learning and memory (for review, see Hasselmo and Sarter, 2011; Solari and Hangya, 2018). A reason for these apparently conflicting results may lie in the fact that memory formation is a dynamic process during which ACh levels vary (Fadda et al., 2000), a property lesioning or pharmacological studies cannot directly address.\n\nIn an influential model, Buzs\u00e1ki, 1989 suggested that long-term memory forms in two stages: first, neuronal activity produces a labile trace, then a delayed potentiation of the same synapses forms a long-lasting memory trace. He suggested that the two stages are associated with different network states of the hippocampus. In rodents, phase-amplitude-coupled theta (5\u201312 Hz)-gamma (30\u2013100 Hz) oscillations (Csicsvari et al., 2003) occur during exploratory behaviors, while large-amplitude sharp waves combined with high-frequency ripples (sharp wave\u00a0ripples\u00a0[SWRs]) (O\u2019Keefe and Nadel, 1978; Csicsvari et al., 2000) occur during immobility and slow-wave sleep. These two network states are mutually exclusive (O\u2019Keefe and Nadel, 1978; Buzs\u00e1ki, 1986; Csicsvari et al., 2000), and it was suggested that memory encoding is associated with theta/gamma oscillations while memory consolidation relies on SWR activity (O'Neill et al., 2010; Colgin, 2013).\n\nThe local release of ACh controls hippocampal network states. In hippocampal CA3, cholinergic activation ex vivo induces a slow gamma rhythm primarily by activating M1 muscarinic receptors (Fisahn et al., 1998; Betterton et al., 2017), while in the CA1, cholinergic activation in vivo promotes theta/gamma oscillations and suppresses ripple oscillations through the activation of M2/M4 muscarinic receptors (Vandecasteele et al., 2014; Zhou et al., 2019; Ma et al., 2020). This suggests that regulation of cholinergic tone allows the switching between online attentive processing (theta/gamma oscillations) and offline memory consolidation (SWRs) as described in the two-stage model of memory trace formation (Buzs\u00e1ki, 1989). Evidence from microdialysis and electrophysiology experiments shows a high cholinergic tone during exploration, promoting theta activity, and a lower cholinergic tone during subsequent rest, permitting SWRs (Fadda et al., 2000; Giovannini et al., 2001; Fadel, 2011). Disruption of cholinergic activity at different stages of learning and memory impairs performance in memory tasks (for review, see Hasselmo and Sarter, 2011; Solari and Hangya, 2018). However, the differential effects of ACh in distinct phases of memory formation are not well understood.\n\nTo clarify the function of the MS cholinergic system during hippocampus-dependent learning and memory, we investigated the behavioral phase-specific effects of optogenetic cholinergic stimulation in the appetitive Y-maze long-term memory task, a simple reward-based spatial memory task with two distinct behavioral phases: one of navigation toward a reward and another after arriving in the goal area (Bannerman et al., 2012). We show that stimulation of cholinergic neurons does not affect learning when applied during navigation toward a reward but impairs learning when applied at the goal location. Our simultaneous recordings of hippocampal local field potential (LFP) indicate that impaired memory was related to disruption of awake SWRs, supporting the two-stage model of memory trace formation (Buzs\u00e1ki, 1989). We also show that activation of MS cholinergic neurons promotes a switch from ripple activity to enhanced theta/gamma oscillations in the hippocampus of naturally sleeping mice.\n\n## Results\n\n### Functional expression of ChR2 in cholinergic neurons\n\nWe aimed to investigate the effects of cholinergic modulation on hippocampal oscillations and performance in a spatial navigation task. To this end, we optogenetically controlled the activity of cholinergic neurons using ChAT-Ai32 crossbred mice that expressed enhanced YFP-tagged channelrhodopsin-2 (ChR2-eYFP) under the control of the choline-acetyl transferase\u00a0(ChAT) promoter. We first confirmed the expression of ChR2 in MS cholinergic neurons by performing double immunostaining for ChAT and YFP (Figure 1A). In sections sampled from two mice, 98 out of 150 ChAT+\u00a0cells counted were YFP+ (YFP+/ChAT+=65%). In independently sampled sections, 111 out of 111 YFP+\u00a0cells counted were ChAT+ (ChAT+/YFP+=100%).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig1-v2.jpg)\n\n**Figure 1.:** (Ai) Overlay of DAPI, ChAT, and eYFP-positive immunostaining in a coronal section of the medial septum (MS) in a ChAT-Ai32 mouse. Scale bar\u00a0500 \u03bcm. VDB, ventral diagonal band. (Aii-v) Higher magnification of the MS (rectangle in Ai), triple immunostaining of DAPI (blue, ii), ChAT (red, iii), and eYFP (green, iv), showing their colocalization (overlay, v). Scale bar 50 \u03bcm. (B) Sample trace of multi-unit recording from the MS in a ChAT-Ai32 mouse. Top: the stimulation protocol (blue) beginning at 15 s. Inset shows a section of the 50-ms-long square stimulation pulses at 10 Hz. Middle: an example recording trace; inset shows an example unit recorded. Bottom: mean spike frequency (n\u00a0=\u00a06). *p=0.03, two-tailed paired Wilcoxon signed-rank test. Gray lines represent mean\u00a0\u00b1\u00a0SEM.\n\nWe probed the functional expression of ChR2 in MS neurons by recording multi-unit activity in the MS of urethane-anesthetized mice; 473 nm light was delivered through an optic fiber implanted just above the MS while multi-unit activity was recorded from a co-assembled electrode the tip of which protruded\u00a0~200 \u00b5m further than the optic fiber tip. Local light delivery (50 ms pulses at 10 Hz) resulted in an increase in multi-unit activity (baseline spike frequency: 7.9\u00a0\u00b1\u00a02.8 Hz vs. spike frequency during light delivery: 22.7\u00a0\u00b1\u00a07.3 Hz, two-tailed Wilcoxon matched pair signed-rank test: p=0.03; n\u00a0=\u00a06 recordings from two mice; Figure 1B), confirming our ability to increase neuronal activity in the MS using optogenetics.\n\n### Activation of septal cholinergic neurons in the goal zone slows place learning\n\nWe investigated the effect of cholinergic activation during different phases of the appetitively\u00a0motivated Y-maze task, a hippocampus-dependent task commonly used to study long-term spatial memory (Bannerman et al., 2012; Shipton et al., 2014). Mice had to learn to find a food reward on an elevated three-arm maze that remained at a fixed location in relation to visual cues in the room, while the mice pseudo-randomly started from one of the other two arms. Because short-term memory errors caused by re-entry during a single trial have previously been shown to interfere with the acquisition of this spatial long-term memory task (Schmitt et al., 2003), mice were only allowed to make a\u00a0single choice of\u00a0arm\u00a0in each trial (Figure 2A). Previous studies have reported sharp wave ripples at the reward location of different spatial navigation tasks (O'Neill et al., 2006; Dupret et al., 2010). Based on these studies, we defined a navigation phase corresponding to the arms of the maze except for the distal ends (20 cm from the edge), which we considered as goal zones. Cholinergic activation was achieved by light stimulation (473 nm, 25 mW, 50-ms-long pulses at 10 Hz) delivered via an optic fiber implanted in the MS of ChAT-Ai32 mice. ChAT-Ai32 mice were split into four groups to test four experimental conditions: (i) no stimulation (n\u00a0=\u00a013), (ii) optogenetic stimulation during navigation \u2013 from the start of the trial until they reached the goal zone (n\u00a0=\u00a09), (iii) optogenetic stimulation throughout the maze (n\u00a0=\u00a09), and (iv) optogenetic stimulation in the goal zone only \u2013 from the entry of the goal zone until the mice were removed from the maze either after they had eaten the food or they had reached the empty food well (n\u00a0=\u00a015; Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig2-v2.jpg)\n\n**Figure 2.:** (A) Mice were trained on an elevated three-arm maze to find a food reward (red dot) in an arm that remained at a fixed location relative to visual cues in the room. Mice were allowed to consume the reward if they chose the correct arm but were removed from the maze if they chose the incorrect arm. (B) Mice were pseudo-randomly split into four groups to test four optogenetic stimulation conditions. Blue indicates stimulation for the four conditions: (i) no stimulation, (ii) stimulation only until the goal zone was reached (gray line), (iii) stimulation throughout the maze, and (iv) stimulation only in goal zone. (C) Choline acetyl transferase (ChAT)-Ai32 mice received blocks of 10 trials each day for 7 consecutive days and the number of entries to the rewarded arm was recorded. The performance of all four groups of mice improved with time but at different rates. (D) As in (C) but for wild-type\u00a0(WT) mice. (E) The number of days required for each group of the ChAT-Ai32 mice to reach the learning criterion of\u00a0\u226580%. Horizontal bars indicate the median within each group. The p-values for differences between groups were calculated using post hoc Dunn tests. (F) As in (E) but for WT mice.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Learning curves of individual mice that were aggregated to show group differences.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Implant placement did not vary between experimental groups. After behavioral testing, brains were fixed and sliced, and the placement of the deepest point of the implant was recorded for each mouse. (A) Representative bright-field image of the optical implant site over the medial septum. Scale bar 500 \u00b5m. (B) The approximate locations of the optic fibre\u00a0implant tip for each mouse.\n\nEach mouse received 10 trials per day for 6\u201310 consecutive days, and we set a learning criterion of\u00a0\u226580% rewarded trials in a day. Mice from all four groups of ChAT-Ai32 mice learned the task (Figure 2C, Figure 2\u2014figure supplement 1) but comparison between the groups revealed differences in the number of days taken to reach this criterion (one-way ANOVA on ranks \u03c72(3)=14, p=0.003, BF10\u00a0=\u00a020; Figure 2E). Post hoc tests indicated that the ChAT-Ai32 \u2018goal\u2019 group was delayed at learning the task compared to the ChAT-Ai32 \u2018no stimulation\u2019 group (4.5\u00a0\u00b1\u00a00.3 vs. 2.9\u00a0\u00b1\u00a00.3 days, Dunn test with Holm-Bonferroni correction for multiple comparisons: p=0.002, BF10\u00a0=\u00a045). Similarly, the ChAT-Ai32 \u2018goal\u2019 group was delayed compared to the ChAT-Ai32 \u2018navigation\u2019 group (4.5\u00a0\u00b1\u00a00.3 vs. 3.1\u00a0\u00b1\u00a00.4 days, p=0.05, BF10\u00a0=\u00a04.4). Whilst the stimulation for the \u2018goal\u2019 group lasted longer (34\u00a0\u00b1\u00a01 vs. 8\u00a0\u00b1\u00a01 s), the duration alone cannot explain the different effects of the optogenetic stimulation. The \u2018throughout\u2019 group received the longest stimulation (42\u00a0\u00b1\u00a01 s) but presented an intermediate learning curve. Using Bayes Factor\u00a0(BF) analysis, we found inconclusive evidence for the \u2018throughout\u2019 group to learn more slowly than the \u2018no stimulation\u2019 group (post hoc test for difference in means: p=0.28, test for higher mean days-to-criterion in the \u2018throughout\u2019 group: BF10\u00a0=\u00a01.6) and learn faster than the \u2018goal\u2019 group (post hoc test for difference in means: p=0.54, test for lower mean days-to-criterion in the \u2018throughout\u2019 group: BF10\u00a0=\u00a02.0). Therefore, the spatial location in the maze where the optogenetic stimulation took place was most likely the factor that decided the behavioral outcome. However, the MS neurons sustained an increased level of firing after the optogenetic stimulation ceased (Figure 1B). Therefore, we cannot exclude the possibility that this sustained activity contributes to the learning deficit in the \u2018goal\u2019 group.\n\nTo control for possible aversive or other non-specific effects of the illumination, we performed an additional experiment with MS-implanted wild-type (WT) mice split into two groups: no stimulation (n\u00a0=\u00a07) and light delivery in the goal zone (n\u00a0=\u00a09; Figure 2D). We did not observe any learning difference between the \u2018goal\u2019 and \u2018no stimulation\u2019 groups of this control WT mice cohort (goal: 3.0\u00a0\u00b1\u00a00.37 days; no stimulation: 3.4\u00a0\u00b1\u00a00.37 days; one-way ANOVA F(1,\u00a014) = 0.34, p=0.57; Figure 2F).\n\nWe confirmed that the memory of the rewarded arm was retained by retesting the mice on the Y-maze task 1 week after the end of the acquisition period for each group of the ChAT-Ai32 mice (no stimulation: 100 \u00b1 0%; navigation: 99 \u00b1 1%; throughout: 100 \u00b1 0%; goal: 94 \u00b1 3%). After behavioral testing, implant placement and the level of eYFP expression were verified by immunohistochemistry, confirming that there were no significant differences in implant placement between the behavioral groups (Figure 2\u2014figure supplement 2).\n\nOur results show that cholinergic activation in the goal zone for as short as 50 s (95% percentile of stimulation duration) slows learning of the appetitive Y-maze task. In contrast, optogenetic stimulation during navigation or throughout the maze had no significant effect on task acquisition.\n\n### Activation of MS cholinergic neurons in the goal zone does not significantly affect theta-gamma power but reduces the incidence of SWRs\n\nTo understand why stimulating MS cholinergic neurons in the goal zone impairs task acquisition, we performed LFP recordings from the hippocampus during task performance. We recorded CA1 field potentials during the Y-maze task in five ChAT-ChR2 and two control ChAT-GFP mice implanted with recording electrodes and an optic fiber. We used staggered wire electrodes to record the field potentials and subtracted the signal in one electrode from that in the other. This subtraction procedure cancels out synchronous changes on both electrodes, like those caused by movement artifacts, and enhances locally generated phase-reversed signals, such as theta, gamma, and ripple events. Optogenetic stimulation was applied on alternating trials when the mouse reached the goal zone, comparing the CA1 activity between the stimulated and non-stimulated trials (111 non-stimulated and 109 stimulated at the goal location rewarded trials and 56 non-stimulated and 36 stimulated at the goal location unrewarded trials). To evaluate the effects of laser (on vs. off), mouse group (ChAT-ChR2 vs. ChAT-GFP), and their interaction, while accounting for correlations between the trials for the same mouse, we used a linear mixed-effects model (see 'Materials\u00a0and\u00a0methods'). The cholinergic activation did not overtly affect the behavior once the mice were at the goal location: we did not detect any effect of the laser on the time the mice spent at the goal location (linear mixed-effects model, mouse group\u2013laser interaction: F(1, 78)=0.01, p=0.94, laser effect: F(1, 78)=0.1, p=0.73).\n\nThe theta power (5\u201312 Hz) peaked in the central section of the maze where the mice ran the fastest (Figure 3A,B) and was reduced at the goal location in rewarded trials (Figure 3B, right panel). Power spectral density (PSD) from electrophysiological recordings measures the summation of periodic activity and aperiodic activity. The intensity of the aperiodic component of the PSD has a pink\u00a0noise distribution (1/f) (Donoghue et al., 2020). Therefore, to quantify the power of theta and gamma oscillations, we measured relative peaks above the estimated aperiodic component (Donoghue et al., 2020, see 'Materials\u00a0and\u00a0methods', Figure 3C,D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic showing the maze zones. (B) Spectrogram of the local field potential (LFP) recorded in a single non-stimulated trial. The values were z-scored to show relative changes in frequency. Note transient increases in high-frequency power throughout the recording and high theta power at Center. Right: mean z-score value at Center and Goal as a function of frequency. (C) Left: power spectral density (PSD) of the LFP recorded from a representative animal on non-stimulated and stimulated-at-Goal rewarded trials. The dashed lines show the fitted aperiodic component. Right: difference in PSD between day-averaged trials with stimulation off and on. Ribbons extend\u00a0\u00b11 SEM of log power. Gray background marks the frequency range of theta and slow gamma bands. (D) PSD parameters that were assessed for the stimulation effect: relative theta power (E), spectral peak frequency in the theta band (F), slow gamma power (G), and the aperiodic component (H). The aperiodic component was fitted for two frequency ranges, 3\u201315 and 15\u2013150 Hz, and compared using the area under curve (AUC). (E\u2013H) Values plotted for individual trials. Lines connect means for individual animals. p-values were calculated with linear mixed-effects models for the interaction of mouse group\u2013laser effects.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** For each mouse, the left panel shows mean PSD\u00a0\u00b1\u00a01 SEM in rewarded trials with the stimulation off and on. Dashed lines show fitted aperiodic component. The right panel shows difference between log power calculated on day-averaged trials with the stimulation off and on as a function of frequency. Gray background marks the frequency range of theta and slow gamma bands.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Change in theta power as the result of optogenetic stimulation compared to change in surrounding frequency bands. (B) As in (A) but for slow gamma power. Values are shown for log power differences in day-averaged trials with stimulation off and on. p-values were calculated with linear mixed-effects models for the effect of the mouse group (ChAT-ChR2 vs. ChAT-GFP).\n\nBoth theta and slow gamma (25\u201380 Hz) oscillations were present at the goal location in the rewarded non-stimulated trials (theta peak present in 98 \u00b1 2% of trials; slow gamma peak present in 86 \u00b1 7% trials, Figure 3C and Figure 3\u2014figure supplement 1). Light did not affect the relative theta power differently in the ChAT-GFP and ChAT-ChR2 mice (linear mixed-effects model, mouse group\u2013laser interaction: F(1, 5)=0.01, p=0.94, Figure 3E). However, theta power increased by 16 \u00b1 3% in both mouse groups indiscriminately (laser effect: F(1, 5)=6.9, p=0.05), suggesting another, non-specific effect of the laser on theta power. Spectral peak frequency in the theta band was not significantly affected by the stimulation (linear mixed-effects model, mouse group\u2013laser interaction: F(1, 5)=1.3, p=0.31, laser effect: F(1, 5)=3.5, p=0.12, Figure 3F).\n\nTo independently confirm that the stimulation did not differentially affect relative theta power in ChAT-GFP and ChAT-ChR2 mice, we looked at the difference in the PSD between day-averaged trials with the stimulation off and on (Figure 3C right panel, Figure 3\u2014figure supplement 1). Differences for a given frequency can be caused by a change in oscillatory power, change in the aperiodic component, or by a shift of the spectral peak frequency or change of the peak\u2019s width (bandwidth). To minimize the impact of the peak frequency shift and change in bandwidth, we compared maximum changes within frequency bands that were wider than the bandwidth of the theta peak and shift in theta peak frequency. In the ChAT-ChR2 mice, the difference between the negative power change in the theta band and in the surrounding bands was not significantly different than in the ChAT-GFP mice (Figure 3\u2014figure supplement 2). Hence, our results indicate that the stimulation did not affect the theta power significantly differently between the mouse groups.\n\nSimilarly, quantification of the relative slow gamma power indicated no effect of the stimulation (linear mixed-effects model, mouse group\u2013laser interaction: F(1, 6)=1.7, p=0.24, laser effect: F(1, 6)=0.1, p=0.77, Figure 3G). This result was independently confirmed by looking at the difference in the PSD between day-averaged trials with the stimulation off and on (Figure 3\u2014figure supplement 2).\n\nThe only effect of the laser that affected PSD of the ChAT-GFP and ChAT-ChR2 mice differently was a reduced aperiodic component of the PSD in the 3\u201315 Hz range (linear mixed-effects model, mouse group\u2013laser interaction: F(1, 135)=29, p=10\u22127, Figure 3H).\n\nPrevious studies have shown that activation of septal cholinergic neurons suppresses CA1 SWRs (Vandecasteele et al., 2014; Ma et al., 2020), and we investigated whether impaired place learning was associated with changes in SWRs. To identify the SWRs, we detected ripple events in the LFP and excluded any candidate ripples that co-occurred with electromyography (EMG)-detected muscle activity. Only ripples with spectral peak frequency\u00a0\u2265140 Hz were identified as SWRs (Sullivan et al., 2011; Figure 4A, Figure 4\u2014figure supplements 1 and 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example SWRs recorded at the Goal location: local field potential (LFP) traces (top), the same traces after 100\u2013250 Hz bandpass filtering (middle), and simultaneously recorded electromyography (EMG) (bottom). (B) Time of SWRs recorded from a representative mouse over multiple trials the same day. Time measured relative to the trial start and arrival at Goal. Stimulated and non-stimulated trials are grouped for clarity. (C) Percentage of trials with SWRs at Goal compared between unrewarded and rewarded non-stimulated trials. One line per animal shown. p-value calculated with paired t-test. (D) SWR incidence as a function of trial day. Data shown for choline acetyl transferase\u00a0(ChAT)-GFP and ChAT-ChR2 mice together, values plotted for individual non-stimulated rewarded trials. Dashed vertical line separates early and late trials. p-value calculated with linear mixed-effects model for the effects of early vs. late trials. (E) Effect of cholinergic stimulation on SWR incidence at Goal location in rewarded trials. Data shown for ChAT-GFP and ChAT-ChR2 mice, values plotted for individual trials. Lines connect means per animal. p-values calculated with linear mixed-effects model for the interaction of mouse group\u2013laser effects; groups were compared with post hoc test on least-square means.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Location of the recording electrodes in the DAPI-stained image of the CA1. Red Dil stains mark the electrode tracks. Scale bar: 500 \u00b5m. (B) Local field potential\u00a0(LFP) signal showing an SWR from wire electrodes placed in the CA1. The top two traces show LFP recorded on two channels, the trace below shows the differential signal by subtraction of Channel 2 from Channel 1. For SWR detection, the subtracted trace was 100\u2013250 Hz bandpass filtered. The bottom trace shows electromyography (EMG) signal with no muscle activity at the time of the SWR. (C) Example traces from four mice with LFP signal centered around the time of SWR. Trace order as in (B).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Histogram showing spectral peak frequency for all ripples at Goal location compared between stimulated and non-stimulated rewarded trials. (B) Histogram showing duration of SWRs (\u2265140 Hz) at Goal compared between stimulated and non-stimulated rewarded trials.\n\nThe SWRs occurred at the start and the goal locations (Figure 4B). Mice learned over 6 days and on day 5 reached 80 \u00b1 10% rewarded trials. We detected SWRs in significantly more rewarded than unrewarded trials (82 \u00b1 7% of rewarded non-stimulated trials vs. 32 \u00b1 13% of unrewarded non-stimulated trials, paired t-test on percentages per animal: p=0.02, n\u00a0=\u00a07 animals, Figure 4C). The difference could be due to the shorter immobility when the mice visited the non-rewarded arms: on unrewarded trials, mice spent 6.5\u00a0\u00b1\u00a00.5 s in the goal zone before leaving compared to 34.0\u00a0\u00b1\u00a01.0 s on rewarded trials. Because we detected few SWRs in the unrewarded trials, we restricted the further analysis to the rewarded trials.\n\nWe first assessed whether SWR incidence changed during learning by quantifying the incidence of SWRs in the non-stimulated rewarded trials during early and late learning (Figure 4D). We did not observe any significant difference between early (before day 5) and late learning (linear mixed-effects model, effect of early vs. late learning: F(1, 110)=0.3, p=0.58, Figure 4D). However, optogenetic stimulation had a significantly different effect in the ChAT-GFP and the ChAT-ChR2 mice (log-linear mixed-effects model, mouse group\u2013laser interaction, F(1,\u00a042) = 4.5, p=0.04, Figure 4E), whose SWR incidence at the goal location was reduced by 52 \u00b1 7% from 0.06\u00a0\u00b1\u00a00.01 to 0.03\u00a0\u00b1\u00a00.01 Hz (post hoc test: t(44) = 4.2, p=0.001, Figure 4E). Spectral peak frequency of SWRs was not affected by the stimulation (frequency: 168\u00a0\u00b1\u00a02 Hz; linear mixed-effects model for non-stimulated trials, mouse group\u2013laser interaction: F(1, 3.6)=0.02, p=0.88, Figure 4\u2014figure supplement 2A), nor was the SWR duration (duration: 37\u00a0\u00b1\u00a01 ms; log-linear mixed-effects model for non-stimulated trials, mouse group\u2013laser interaction: F(1, 148)=0.1, p=0.76, Figure 4\u2014figure supplement 2B).\n\nOverall, these results show that optogenetic stimulation of MS cholinergic neurons reduced ripple incidence in the CA1 in rewarded trials but did not cause a detectable change in theta-gamma power. Hence, this result suggests that the reduced SWR incidence is a mechanism relevant for the memory impairment induced by cholinergic stimulation in this task.\n\n### MS cholinergic neuron stimulation reduces SWRs and increases theta and slow gamma activity in sleeping animals\n\nBecause cholinergic input has been implicated in theta activity in the hippocampus (Buzs\u00e1ki, 2002), we were surprised that we could not detect any effect on theta-gamma oscillations by cholinergic stimulation at the goal location. However, there are at least two distinct forms of theta oscillations in the hippocampus, only one of which is dependent on cholinergic receptors and can be observed during sleep (Kramis et al., 1975). Also, the reduction of SWR incidence of 52 \u00b1 7% at the goal location was smaller than the 92% median suppression reported during free behavior (Vandecasteele et al., 2014), which could be due to a smaller effect of ACh at the reward location or an already high level occluding the effect of the optogenetic stimulation. We therefore compared the effects of cholinergic stimulation during task performance with the effects of cholinergic stimulation during sleep when cholinergic tone is at the lowest.\n\nWe recorded LFP signal while the mice slept in a cage, to which they had been familiarized over the 2 previous days and alternated periods without optogenetic stimulation (60\u2013120 s) and periods with optogenetic stimulation (30 s). We compared the signal in the 30-s-long epochs preceding the stimulation with the 30-s-long epochs during the stimulation without a distinction between SWS and REM sleep. Only epochs during which the mouse was asleep for their full duration were used for the analysis (n\u00a0=\u00a0369 epochs from 10 animals, IQR of 5\u201316 epochs in succession without interrupted sleep).\n\nOptogenetic stimulation reduced the SWR incidence throughout the stimulation in ChAT-ChR2 mice but not in ChAT-GFP mice (Figure 5A\u2013C). SWR incidence in ChAT-ChR2 mice was reduced from 0.21\u00a0\u00b1\u00a00.01 to 0.03\u00a0\u00b1\u00a00.01 Hz (85 \u00b1 3% reduction, linear mixed-effects model, mouse group\u2013laser interaction: F(1, 22)=47, p=10\u22126, n\u00a0=\u00a0369 epochs from 10 animals; post hoc test for laser effect in ChAT-ChR2: t(86) = 9.7, p=10\u221214, Figure 5C). The stimulation did not change the spectral peak frequency of the SWRs of 168\u00a0\u00b1\u00a01 Hz (mouse group\u2013laser interaction: F(1, 262)=0.51, p=0.48, Figure 5\u2014figure supplement 1A), nor ripple duration of 38\u00a0\u00b1\u00a00.3 ms (log-linear mixed-effects model, mouse group\u2013laser interaction: F(1, 28)=0.9, p=0.35, Figure 5\u2014figure supplement 1B). Hence, our results confirm that optogenetic activation of MS cholinergic neurons almost completely suppresses SWRs during sleep in the CA1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig5-v2.jpg)\n\n**Figure 5.:** (A) Local field potential\u00a0(LFP) from the CA1 of a sleeping mouse recorded before, during, and after optogenetic stimulation with 100\u2013250 Hz bandpass filtered trace for ripple detection shown below. The detected SWRs are marked with arrows. The inset (lower left) shows two example SWRs at greater time resolution. (B) Histogram of SWR incidence before, during, and after 30 s of stimulation with 50-ms-long pulses at 10 Hz (n\u00a0=\u00a0103 epochs from eight ChAT-ChR2 mice). (C) Comparison of SWR incidence during the stimulated and non-stimulated epochs for ChAT-GFP and ChAT-ChR2 mice. Lines connect mean incidence in individual mice. p-values were calculated with linear mixed-effects model for the interaction of mouse group\u2013laser effects; groups were compared with post hoc test on least-square means.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Histogram showing spectral peak frequency for all sleep ripples in stimulated and non-stimulated epochs. (B) Histogram showing duration of SWRs (\u2265140 Hz) in stimulated and non-stimulated epochs.\n\nWe next investigated the effect of optogenetic stimulation of MS cholinergic neurons on theta-gamma activity in the sleeping mouse (Figure 6A). We determined the PSD for frequencies ranging between 1 and 200 Hz in control condition and during stimulation. We observed a reduction of the PSD across the full frequency range upon light stimulation (Figure 6B\u2013D, Figure 6\u2014figure supplement 1), as reported previously in freely behaving mice (Vandecasteele et al., 2014).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig6-v2.jpg)\n\n**Figure 6.:** (A) Local field potential (LFP) recording from the CA1 of a sleeping mouse recorded without (left) and with (right) optogenetic stimulation. (B) Power spectral density (PSD) of the LFP recorded from a single animal during the epochs without and with optogenetic stimulation. Ribbons extend\u00a0\u00b11 SEM of PSD. Gray background marks the frequency range of theta and slow gamma bands. The dashed lines show the fitted aperiodic component. (C) Difference in PSD between subsequent epochs with stimulation off and on. Data shown for the animal in (B). Ribbons extend\u00a0\u00b11 SEM of log power. (D) Optogenetic stimulation in the choline acetyl transferase\u00a0(ChAT)-ChR2 mice reduced the power of the aperiodic component in 15\u2013150 Hz frequency range. (E) Optogenetic stimulation in the ChAT-ChR2 mice, but not in the ChAT-GFP mice, increased relative theta power, (F) decreased spectral peak frequency in the theta band, and (G) increased relative slow gamma power. Values were calculated on individual epochs, lines connect means for individual animals. p-values were calculated with linear mixed-effects model for the interaction of mouse group\u2013laser effects; groups were compared with post hoc test on least\u00a0square\u00a0means.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** PSD of the LFP and its change during sleep epochs without and with optogenetic stimulation shown in each animal. The left panel shows PSD\u00a0\u00b1\u00a01 SEM and the dashed lines show fitted aperiodic component; the right panel shows difference between log power calculated on subsequent epochs with stimulation off and on as a function of frequency. Ribbons extend\u00a0\u00b11 SEM. Gray background marks the frequency range of theta and slow gamma bands.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65998/elife-65998-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Change in theta power as the result of optogenetic stimulation compared to change in surrounding frequency bands. (B) As in (A) but for slow gamma power. Values are shown for log power differences in subsequent epochs with stimulation off and on. p vValues were calculated with linear mixed-effects models for the effect of the mouse group (ChAT-ChR2 vs. ChAT-GFP).\n\nBroadband power of the aperiodic component decreased with light stimulation in the ChAT-ChR2 but not in the ChAT-GFP mice (linear mixed-effects model on area under curve [AUC] of estimated aperiodic component on PSD log-log plot, significant mouse group\u2013laser interaction: F(1, 4.6)=22, p=0.006, n\u00a0=\u00a0369 epochs from 10 mice; AUC significantly decreased from \u22125.96\u00a0\u00b1\u00a00.04 to \u22126.23\u00a0\u00b1\u00a00.04, post hoc test for laser effect in ChAT-ChR2: t(7.1)\u00a0=\u00a010.1, p=10\u22124, Figure 6D). Even though theta power was low during sleep outside of REM sleep, 99 \u00b1 0.1% of the control and 100 \u00b1 0% of the stimulated epochs had a relative theta peak. Optogenetic stimulation had a significantly different effect in the ChAT-GFP and the ChAT-ChR2 animals on the relative theta power (log-linear mixed-effects model, mouse group\u2013laser interaction: F(1, 4.8)=7.3, p=0.04, n\u00a0=\u00a0368 epochs with theta peak from 10 animals, Figure 6E). In the ChAT-ChR2 mice, the power increased by 51 \u00b1 9% (post hoc test: t(9) = 4.8, p=0.01) and the spectral peak frequency in the theta band decreased from 7.7\u00a0\u00b1\u00a00.2 to 7.2\u00a0\u00b1\u00a00.1 Hz (log-linear mixed-effects model, mouse group\u2013laser interaction: F(1, 4.8)=7.3, p=0.04, Figure 6F, post hoc test: t(30) = 4.5, p=0.001). To independently confirm that the stimulation increased relative theta power, we looked at the difference in the PSD between subsequent epochs with the stimulation off and on (Figure 6C, Figure 6\u2014figure supplement 1). In the ChAT-ChR2 mice, the negative change in the theta band was significantly smaller than in the 12\u201315 Hz band (linear mixed-effects model: F(1, 10)=21, p=0.001, Figure 6\u2014figure supplement 2A). We conclude that the stimulation reduced the power in the theta frequency\u00a0band significantly less than\u00a0in higher frequency\u00a0bands.\n\nThe stimulation also increased by 30 \u00b1 4% oscillations in the slow gamma band (25\u201345 Hz) (log-linear mixed-effects model: mouse group\u2013laser interaction: F(1, 232)=26, p=10\u22126, n\u00a0=\u00a0338 epochs with slow gamma peak from 10 animals, post hoc test for laser effect in ChAT-ChR2: t(295) = \u22128.2, p=10\u221214, Figure 6G), while the spectral peak frequency in the slow gamma of 38\u00a0\u00b1\u00a01 Hz did not significantly change (linear mixed-effects model, mouse group\u2013laser interaction: F(1,10) = 0.4, p=0.57). We independently confirmed the increase in relative slow gamma power by looking at the PSD change between subsequent epochs with the stimulation off and on. In the ChAT-ChR2 mice, the negative change of power in the slow gamma band was significantly smaller than in the 12\u201315 Hz band (mouse group effect in the linear mixed-effects model: compared to the 12\u201315 Hz band: F(1, 8)=35, p=10\u22124; compared to the 90\u2013110 Hz band: F(1, 10)=3.7, p=0.08, Figure 6\u2014figure supplement 2B).\n\nOur results demonstrate that in sleeping mice, optogenetic stimulation of MS cholinergic neurons promotes theta-gamma oscillations in the CA1, an effect that was not seen in awake mice. This suggests a difference between the effect of cholinergic stimulation in the sleeping and awake behaving animal.\n\n## Discussion\n\nUsing optogenetics, we investigated the effects of stimulating MS cholinergic neurons on learning and hippocampal LFPs when delivered at different phases of an appetitively\u00a0motivated spatial memory task. We found that: (1) MS cholinergic activation at the goal location, but not during navigation, impairs spatial memory formation; (2) MS cholinergic stimulation at the reward location reduces SWR incidence; and (3) cholinergic stimulation reduces SWR incidence and promotes theta-gamma rhythm in the sleeping mouse. These results show that timely control of cholinergic modulation is important for spatial learning on a time scale of seconds.\n\nOur results indicate that cholinergic stimulation almost completely suppresses SWRs in sleeping animals and suppresses SWRs by about one half in awake, behaving animals. SWRs at the rewarded locations are thought to be crucial for learning (Dupret et al., 2010). Their suppression at the goal location in the experiments with the same stimulation protocol as that used in mice during learning suggests a possible explanation for the learning deficit induced by inappropriately timed cholinergic activity. Moreover, the effect of cholinergic stimulation on theta-gamma oscillations, which was prominent during sleep, was not observed when we applied the same stimulation at the goal location during learning, suggesting that learning was impaired through a mechanism independent of theta-gamma oscillations.\n\n### Importance of timely regulation of cholinergic tone for memory formation\n\nWe found that temporally controlled optogenetic stimulation of MS cholinergic neurons could affect learning of the appetitive Y-maze task. Stimulation of cholinergic neurons during navigation did not affect the performance, while, strikingly, cholinergic stimulation in the goal zone significantly impaired task acquisition (Figure 2). The stimulation duration differed between the groups: it was longest in the \u2018throughout\u2019 group, followed by \u2018goal\u2019 and by \u2018navigation\u2019 group. The only significant impairment of task acquisition was seen in the \u2018goal\u2019 group, indicating that it was cholinergic activation at the goal location that interfered with memory (Figure 2C,E). It may appear surprising that we did not also see a significant impairment with cholinergic stimulation throughout the task. However, the task performance in the \u2018throughout\u2019 group was not significantly different from the \u2018goal\u2019 group. We cannot exclude the possibility that prolonged optogenetic stimulation becomes less effective over time, either because the MS neurons become less activated or because vesicular ACh might be depleted with prolonged stimulation.\n\nThe lack of behavioral effect of the stimulation during the navigation phase, when the cholinergic tone is naturally high (Fadda et al., 2000; Giovannini et al., 2001; Fadel, 2011), may suggest that release of ACh in the hippocampus is already optimal or maximal, or that ACh receptors are saturated. MS cholinergic neurons are slow spiking neurons with a maximal rate of\u00a0~10 Hz during active exploration (Ma et al., 2020), the stimulation frequency used here. Thus, it is plausible that ACh receptor activation in the hippocampus had already reached a plateau, which our stimulation protocol would not increase further. The lack of behavioral effect of the stimulation during the navigation phase suggests that the effect of optogenetic stimulation was short-lived and restricted to the stimulation period, albeit with a short period of sustained activity following the stimulation (Figure 1B). This observation supports the idea that cholinergic modulation is timely controlled, but further experiments, for instance using ACh sensors in the hippocampus (Jing et al., 2020), will be necessary to confirm this hypothesis.\n\nThe impairment of memory formation by cholinergic stimulation in the goal zone, where the cholinergic tone is naturally lower (Fadda et al., 2000; Giovannini et al., 2001; Fadel, 2011), suggests that any potential beneficial effect of increased excitability or synaptic plasticity is outweighed by a requirement of reduced cholinergic activity. An interesting complementary experiment would be to silence cholinergic inputs during navigation or at the goal location to further explore the role of cholinergic tone during memory formation. There is evidence to suggest that CA1 SWRs, which occur during low cholinergic activity, play a crucial role in memory formation: disruption of SWRs in the first 15\u201360 min following training impairs learning of spatial navigation tasks (Girardeau et al., 2009; Ego-Stengel and Wilson, 2010), while their disruption or prolongation during the continuous alternation task impairs or improves learning respectively (Jadhav et al., 2012; Fern\u00e1ndez-Ruiz et al., 2019). In exploring animals, SWRs occur during transient immobility periods, including periods at goal locations (O'Neill et al., 2006; Dupret et al., 2010; Roux et al., 2017). These SWRs stabilize spatial representations of the CA1 place cells supporting navigation toward the newly learned goals (Roux et al., 2017) and are predictive of performance in a spatial memory task (O'Neill et al., 2006; Dupret et al., 2010). During these SWRs, sequences of neuronal activation are replayed in both forward and reverse order (Foster and Wilson, 2006; Csicsvari et al., 2007; Diba and Buzs\u00e1ki, 2007; Karlsson and Frank, 2009; Ambrose et al., 2016). We found that MS cholinergic activation for the brief time the mice spent in the reward zone, shorter than 50 s (95% percentile of stimulation duration), is sufficient to significantly impair memory formation in the Y-maze task (Figure 2). Therefore, we speculate that disruption of the normally occurring replay events in the reward zone is sufficient to impair long-term memory formation (Figure 5). However, selective disruption of SWRs at the reward zone did not affect rats\u2019 performance in the inbound phase of the W-maze task (Jadhav et al., 2012), which is comparable to the Y-maze task. In both of these tasks, animals could use either an allocentric place strategy or an egocentric rule-based strategy, or a combination thereof, and the relative importance of each could lead to differences in their reliance on SWRs. Alternatively, additional effects of MS cholinergic activation on intracellular signaling cascades and synaptic plasticity (Brzosko et al., 2019), synaptic inhibition (Hasselmo and Sarter, 2011; Haam and Yakel, 2017), or interference with extra-hippocampal reward-related signaling cannot be ruled out at this stage.\n\nBecause learning can be affected by the interruption of SWRs during post-learning sleep (Girardeau et al., 2009), and because our cholinergic activation during sleep achieves a similar effect on the SWRs (Figure 3; Ma et al., 2020), it would be of interest to see if the cholinergic activation during post-learning sleep would also impair spatial learning. This would show whether low\u00a0cholinergic states are important also for memory consolidation during sleep and provide further evidence for a role of SWRs in memory.\n\n### Cholinergic influence on hippocampal network activity\n\nHippocampal network activity varies with cholinergic tone and MS cholinergic neuron activity. MS cholinergic neurons discharge at a maximal rate when the animal is running (Ma et al., 2020), which corresponds to the highest theta power intensity in the CA1 and highest cholinergic tone measured in the pyramidal cell layer of CA1 (Fadda et al., 2000; Fadel, 2011). Conversely, cholinergic tone and MS cholinergic neuron discharge are at their lowest during slow-wave sleep and wake immobility, which are associated with the highest ripple incidence (Fadda et al., 2000; Ma et al., 2020). In accordance with these observations, we found that stimulation of MS cholinergic neurons reduces SWR incidence in both awake behaving animals and naturally sleeping animals, consistent with previous reports (Figures 4 and 5; Vandecasteele et al., 2014; Zhou et al., 2019; Ma et al., 2020).\n\nWe observed that stimulation of MS cholinergic neurons of sleeping mice causes an apparent decrease of the PSD across the entire frequency spectrum (Figure 6). A similar effect was reported previously for anesthetized and freely behaving animals (Vandecasteele et al., 2014). Signal decomposition into aperiodic and periodic components (Donoghue et al., 2020) showed that the optogenetic stimulation enhanced the periodic components with peaks in the theta and slow gamma bands and decreased the aperiodic component of the signal (1/f background). Our observation of the enhanced theta-gamma activity might appear at odds with previous reports that such manipulation does not change theta-gamma power during sleep (Ma et al., 2020) and quiet wakefulness (Zhou et al., 2019). The combined effect of the cholinergic stimulation on the periodic and aperiodic signal sums to near-zero values, which could explain the different conclusions, showing the advantage of PSD decomposition (Donoghue et al., 2020) when assessing the power of periodic signals.\n\nPharmacological evidence in vivo indicates that there are two distinct mechanisms of theta oscillations in the hippocampus, an atropine-sensitive and an atropine-resistant component (Petsche et al., 1962; Buzs\u00e1ki, 2002; Colgin, 2013). The atropine-sensitive component is mediated by the combination of cholinergic and GABAergic neurons in the MS (Buzs\u00e1ki, 2002; Manseau et al., 2008) and is slower than the atropine-insensitive theta rhythm, which is generated primarily by the entorhinal cortex (Buzs\u00e1ki, 2002; Colgin, 2013). Moreover, atropine-sensitive theta was best detected in the anesthetized animal, while atropine-insensitive theta was shown to predominate in the running animal (Kramis et al., 1975; Newman et al., 2013). Consistent with this division, MS cholinergic stimulation in sleeping mice, in addition to increasing theta power, shifted the spectral peak in the theta band to a lower frequency (Figure 6F). Both effects were limited to the ChAT-ChR2 animals. The stimulation frequency of 10 Hz provided faster activation than the kinetics of metabotropic muscarinic receptors. Therefore, we did not expect to observe indirect effects on the network activity mirroring the stimulation frequency. Indeed, the spectral peak frequency in the theta band was lower than the stimulation frequency, and PSD did not show a spectral peak at 10 Hz (Figure 6F, Figure 6\u2014figure supplement 1). In behaving mice, the MS cholinergic stimulation at the goal location did not have a significantly different effect on theta power and spectral peak in ChAT-GFP and ChAT-ChR2 mice (Figure 3E,F) and we observed in both groups of animals an increase of theta power. The lack of effect on theta-gamma rhythm during the memory task could be explained by the prominence of an atropine-resistant entorhinal-driven theta that would override any atropine-sensitive theta. It is also possible that the small sample of control animals (n\u00a0=\u00a02) has prevented us from detecting a subtle theta power change. Alternatively, a diminishing efficacy with the prolonged optogenetic stimulation could have prevented us from detecting a change in the theta-gamma oscillations. However, we did observe a reduction of SWR incidence at the goal location for the entire duration of the stimulation, suggesting that any decrease in the stimulation efficacy would be biologically minor.\n\n### Possible implications for neurodegenerative disorders\n\nLoss of cholinergic neurons in the basal forebrain is one of the hallmarks of AD (Whitehouse et al., 1982; Bowen et al., 1982), which is also associated with a reduction of ACh transporter expression in most cortical and subcortical areas (Davies and Maloney, 1976). These observations have led to the cholinergic hypothesis of AD, which suggests that loss of cholinergic inputs plays a role in the cognitive impairment of AD patients. However, the association between the loss of basal forebrain cholinergic neurons and AD is not completely clear (Mesulam, 2004), and a growing body of anatomical and functional studies suggests that MS cholinergic neuronal loss occurs in both healthy aging and AD brain (Schliebs and Arendt, 2011; Hampel et al., 2018). Drugs compensating for the decline of cholinergic tone are seen as a rational treatment of aging-related memory loss and AD. However, so far, drugs targeting the cholinergic systems have shown limited beneficial effects on cognitive deficits of aging and AD, but the reasons why are not entirely clear (Farlow et al., 2010; Ehret and Chamberlin, 2015). Our results shed some light on one possible reason why cholinergic drugs have largely failed to improve the cognitive impairments in AD. Cholinesterase inhibitors prolong cholinergic activity by\u00a0~100 times and increase the basal cholinergic tone in the absence of spontaneous activity (Hay et al., 2016). In rodents, the cholinergic tone is high during exploration, which maintains the \u2018online\u2019 hippocampal state dominated by theta and gamma oscillations (Buzs\u00e1ki, 1989; Fadda et al., 2000; Giovannini et al., 2001). Cholinesterase inhibitors may maintain a high cholinergic tone, preventing the network from transitioning into an SWR-dominant state. This could impair memory formation as our results suggest that artificially increasing ACh release for as short a time as 50 s during a low\u00a0cholinergic state is sufficient to impair task acquisition (Figure 2). Moreover, enhancing cholinergic activity during the \u2018online\u2019 state did not bring beneficial effects to memory formation. Thus, our results suggest that suboptimal timing of cholinergic activity impairs long-term memory formation and supports the idea that appropriate timing of cholinergic modulation is crucial in learning and memory (Micheau and Marighetto, 2011).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>ChAT-Cre</td>\n      <td>The Jackson Laboratory</td>\n      <td>Cat. #: 006410; RRID:MGI:3689420</td>\n      <td>Dr Bradford Lowell</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Ai32</td>\n      <td>The Jackson Laboratory</td>\n      <td>Cat. #: 012569; RRID:MGI:104735</td>\n      <td>Hongkui Zeng, Allen Institute for Brain Science</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (chicken polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat. #: AB13970; RRID:AB_300798</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ChAT (goat polyclonal)</td>\n      <td>Millipore</td>\n      <td>Cat. #: AB144; RRID:AB_90650</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-chicken Alexafluor488</td>\n      <td>Life Technologies</td>\n      <td>Cat. #: A11039; RRID:AB_142924</td>\n      <td>IHC (1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-goat Alexafluor594</td>\n      <td>Abcam</td>\n      <td>Cat. #: AB150132; RRID:AB_2810222</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R</td>\n      <td>R Project for Statistical Computing</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MATLAB</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IGOR Pro</td>\n      <td>IGOR Pro</td>\n      <td>RRID:SCR_000325</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nA total of 16 adult male WT (C57Bl/6), 51 adult male ChAT-Ai32 mice, and 5 ChAT-Cre mice were used in this study. ChAT-Ai32 mice were bred from ChAT-Cre mice that express Cre-recombinase under the control of the ChAT promoter (ChAT-Cre, Jackson Labs strain #006410; RRID:MGI:3689420) and mice of the Cre-reporter Ai32 line (Jackson Labs strain #012569; RRID:MGI:104735), which carries a Cre-dependent, enhanced YFP-tagged channelrhodopsin-2 (ChR2-eYFP)-containing expression cassette (Madisen et al., 2012). All animal experiments were performed under the Animals (Scientific Procedures) Act 1986 Amendment Regulations 2012 following ethical review by the University of Cambridge Animal Welfare and Ethical Review Body (AWERB) under personal and project licenses held by the authors.\n\n### In vivo electrophysiology in anesthetized mice\n\nMice were anesthetized with intraperitoneal injection of 1.2 g\u00a0kg\u22121 urethane and their head was secured in a stereotaxic frame. Body temperature was maintained at 35 \u00b1 1\u00b0C with a heating pad. The head was shaved, and the skin opened; Bregma and Lambda were aligned horizontally, and craniotomies were made above the MS and CA3. Simultaneous optical activation in the MS (AP\u00a0+1 mm, ML 0 mm, DV \u22123.6 mm, coordinates from Bregma) with a stripped optic fiber (200 \u00b5m, 0.22 NA; Doric Lenses) and electrical recordings in the MS or in the hippocampus (ML\u00a0+2.4 mm, AP \u22122.46 mm, DV \u22122.5 mm) using an extracellular parylene-C insulated tungsten microelectrode (127 \u00b5m diameter, 1 M\u03a9; A-M Systems) were performed.\n\n### Surgery\n\nSurgeries were carried out following minimal standard for aseptic surgery. Meloxicam (2 mg\u00a0kg\u22121 intraperitoneal) was administered as analgesic 30 min prior to surgery initiation. Mice were anesthetized with isoflurane (5% induction, 1\u20132% maintenance, Abbott Ltd, Maidenhead, UK) mixed with oxygen as carrier gas (flow rate 1.0\u20132.0 L\u00a0min\u22121) and placed in a stereotaxic frame (David Kopf Instruments, Tujunga, CA). The skull was exposed after skin incision and Bregma and Lambda were aligned horizontally. A hole was drilled above the MS at coordinates AP\u00a0+1 mm and ML 0 mm, and an optic fiber (200 \u00b5m, 0.22 NA; Doric Lenses) was lowered toward the MS (DV \u22123.6 mm) at low speed (1 mm\u00a0min\u22121). Once positioned just above the MS, the optic fiber was secured to the skull using dental cement (Prestige Dental).\n\nFive ChAT-Cre mice underwent viral transduction of MS cholinergic neurons upon injection of viral particles. Two mice were injected with 0.5 \u00b5L of AAV5/9-EF1a-dio-EGFP-WPRE and three with 0.5 \u00b5L of AAV5/9-EF1a-dio-ChR2(H134R)-EYFP-WPRE (titers ranging 1.2\u201313.1012 vg\u00a0mL\u22121; UNC Vector Core, Chapel Hill, NC), which were delivered through a metal cannula fixed to a 5 \u00b5L Hamilton syringe.\n\nTo perform recordings in freely moving animals, we implanted 10 mice with paired wire LFP electrodes, each consisting of two twisted 75 \u03bcm Teflon-coated silver wires (AGT0510, World Precision Instruments, Hitchin, UK) with tips spaced 150\u2013300 \u00b5m and with one tip in the pyramidal cell layer. Mice were implanted bilaterally in CA1 (AP \u22121.7, ML\u00a0\u00b11.2, DV 1 and 1.35, DV being taken from the surface of the brain). Ground and reference silver wires were connected to a stainless microscrew implanted over the cerebellum: AP \u22125.3, ML\u00a0\u00b11.5. To record the electromyogram activity, a 75 \u03bcm Teflon-coated silver wire was implanted in the neck muscle. All wires were connected to a 32 pins Omnetics connector (Genalog, Cranbrook, UK). The exposed brain was covered with a protective dura gel (Cambridge NeuroTech, Cambridge,\u00a0UK) to prevent damage upon cementing of the electrodes. LFP electrodes were individually glued to the skull using UV-cured glue (Tetric EvoFlow) and the implant was secured to the skull using dental cement (Super-Bond C and B; Prestige Dental, Bradford, UK). At the end of the implantation, 300\u2013500 \u00b5L saline was injected subcutaneously for hydration and animals were placed in a post-surgery chamber\u00a0at\u00a034\u00b0C until full recovery from anesthesia. The mice were allowed to recover for 5 days before habituation started and during these 5 days were daily monitored and given oral Meloxicam as analgesic.\n\n### Appetitive Y-maze task\n\nLong-term spatial memory was assessed using the appetitive Y-maze task, as described in full by Shipton et al., 2014. Mice had to learn to find a food reward (condensed milk) on a three-arm maze that remained at a fixed location in relation to visual cues in the room. The three-arm maze, elevated 82 cm from the floor, consisted of gray-painted 50\u00a0\u00d7\u00a013 cm arms bordered by 1 cm high white plastic walls, which extended from a central triangular platform. Plastic food wells (1.5 cm high) were positioned 5 cm from the distal end of the arms. Mice were kept on a restricted feeding schedule, allowing them to maintain at least 85% of their free food body weight. Before testing, the mice were habituated to the food reward and the maze in a different room to where behavioral testing would occur. During testing, mice were only allowed to make one\u00a0arm-choice each trial and were only allowed to consume the reward if the correct arm was chosen, otherwise mice were removed from the maze and the trial was ended. Target arm assignments were counterbalanced such that at least one mouse of each experimental group was designated to each arm. Each mouse received 10 trials per day for 6\u201310 consecutive days, five starts from the left of the target arm and five starts from the right in a pseudo-random order with no more than three consecutive starts from the left or right. The interval between the within-day trials averaged 10 min. The maze was rotated either clockwise or anticlockwise after each trial to discourage the use of intra-maze cues to help solve the task. Optogenetic stimulation started either from the beginning of the trial (navigation and throughout cohorts) or when the mouse reached the goal zone (goal cohort). Light stimulation ceased when the mouse reached the goal zone for the navigation cohort. Light stimulation was performed using a blue laser at 473 nm (Ciel, Laser Quantum, Cheshire, UK), powered at 25\u00a0\u00b1\u00a01 mW with 50-ms-long pulses at 10 Hz. Stimulation was controlled using custom-made procedures in Igor Pro (WaveMetrics, Lake Oswego,\u00a0OR; RRID:SCR_000325).\n\n### Optogenetic stimulation and electrophysiological recordings\n\nData were acquired from five ChAT-Ai32 male mice, three ChAT-Cre mice expressing ChR2 (both referred to as ChAT-ChR2) and two ChAT-Cre mice expressing GFP in the MS (ChAT-GFP). The mice were implanted with LFP electrodes for electrophysiological recordings and optic fiber for optogenetic stimulation. These mice were recorded during sleep and while performing the appetitive Y-maze task.\n\nFor recordings during sleep, after connecting the electrodes to the Whisper acquisition system (Neural Circuits, LLC, Ashburn,\u00a0VA) and optic fiber to the laser, the animals were placed in a cage (different to their home cage), to which the animal was habituated over a period of 2 days. The floor of the cage was covered with standard bedding. The recordings started after the mice visibly stopped moving and consisted of 30-s-long laser stimulation at 473 nm, power 25\u00a0\u00b1\u00a01 mW using 50-ms-long pulses at 10 Hz alternating with 60\u2013120 s interval without the stimulation. An overhead webcam camera tracked the movement and position of the animal. The videos were manually reviewed together with the recorded EMG signal to exclude trials that were interrupted by the mice moving.\n\nFor Y-maze task, the mice underwent the same habituation and learning protocol as described above in the appetitive Y-maze task section. During learning, mice were connected to the laser and to the Whisper acquisition system and placed at the starting arm of the maze. The laser was activated in the goal zone on alternating trials to allow within-subject comparison. Data from these five mice were not used in the behavioral analysis as the stimulation protocol (50% of the trials) was different from that used in behavior only (stimulation performed for all trials).\n\nThe position of the animal was tracked with an overhead webcam and automatically extracted using custom procedures in MATLAB, 2019. All recordings were performed using the Whisper acquisition system sampling at 25 kHz, laser stimulation was triggered using custom-made procedures in Igor Pro and synchronized with the electrophysiological and webcam recordings.\n\n### Electrophysiology data analysis\n\nData analysis was performed in MATLAB, 2019; RRID:SCR_001622 and R version 3.4.4 (R Development Core Team, 2018; RRID:SCR_001905). To reduce contamination by volume conducted signal, we used staggered wire electrodes targeting the CA1 with one electrode in the pyramidal cell layer, and the differential signal was used to enhance signal differences between the hippocampal layers. To remove noise artifacts caused by wire movement and muscle contractions, changes in the consecutive samples of the EMG signal were detected. If the change exceeded a threshold set to two standard deviations, a 500-ms-long window of the signal centered on the noise timestamp was removed. We conducted the analysis on one of the bilaterally implanted CA1 LFP electrodes, selected based on the quality of signals for both theta oscillations and ripples.\n\nFor ripple detection, we adapted the method from Vandecasteele et al., 2014. The signal was down-sampled to 1.25 kHz and 100\u2013250 Hz bandpass filtered with Type II Chebyshev phase-preserving filter (filter order\u00a0=\u00a04, stopband attenuation\u00a0=\u00a020 dB). Next, the filtered signal was squared, mean-subtracted, and smoothed by applying a moving average with 10-ms-long window. Ripples were detected when the squared signal crossed two standard deviations for 20\u2013300 ms duration and its peak crossed seven standard deviations. Spectral peak frequency of a ripple was estimated as the frequency with maximum value in the PSD estimated with multitaper method on the signal from the ripple start to end. Ripple incidence was calculated as the number of detected ripples divided by the duration of the recording.\n\nPSD was estimated using Welch\u2019s method (MATLAB built-in pwelch function with 0.5 s window and 0.25 s overlap) for frequencies spanning the range from 1 to 200 Hz. To visualize instantaneous changes in PSD during Y-maze trials, spectrogram was created with continuous wavelet transform using Morlet wavelets (MATLAB built-in cwt function with default parameters). Throughout the study, we defined theta band as 5\u201312 Hz and slow gamma as 25\u201345 Hz. The slow gamma frequency upper bound was chosen to exclude any line noise contamination at 50 Hz.\n\nTo estimate relative theta and slow gamma power, we used the FOOOF tool (Donoghue et al., 2020;\u00a0https://github.com/fooof-tools/fooof). It models the estimated PSD as the sum of an aperiodic component and Gaussian peaks in narrowband frequencies. The aperiodic component was fitted on the PSD log-log plot with a straight line, which corresponds to a pink noise-like (1/f) background. To minimize the model error \u2013 the difference between the actual and the modeled PSD \u2013 the aperiodic component was estimated in two frequency ranges separately (3\u201315 and 15\u2013150 Hz). Relative theta and slow gamma peaks and their spectral peak frequencies were taken from the Gaussian peaks fitted above the aperiodic component.\n\n### Statistical analysis\n\nStatistical analysis was performed in R version 3.4.4 (R Development Core Team, 2018). Data are reported as mean\u00a0\u00b1\u00a0SEM unless otherwise stated. For significance testing, the normality of the data was assessed by Shapiro-Wilk test and by inspection of the quantile-quantile plot. If the normality criterion was satisfied (p>0.05), a parametric test (one-way ANOVA or t-test) was used, otherwise a non-parametric test (one-way ANOVA on ranks or Wilcoxon test) was used, as described in the Results section. Following a significant one-way ANOVA on ranks, differences between groups were tested using a Dunn post hoc test with Holm-Bonferroni correction. To distinguish between the absence of effects and inconclusive results, we calculated BFs for the behavioral results (Keysers et al., 2020). Bayesian ANOVA was conducted using JASP software with default priors. BFs were calculated as the ratio between the likelihood of the data given the model with the effect of mouse group vs. the intercept only model. The post hoc pairwise comparisons were conducted using Bayes t-test in JASP with Cauchy priors without correcting for multiple comparisons.\n\nOnly mice with SWRs at the goal location were included in the analysis of the optogenetic stimulation effects during the Y-maze task (n\u00a0=\u00a05 ChAT-ChR2 and n\u00a0=\u00a02 ChAT-GFP mice). The statistical analysis of the effects in sleeping mice was performed using all CA1-implanted mice (n\u00a0=\u00a08 ChAT-ChR2 and n\u00a0=\u00a02 ChAT-GFP mice).\n\nThe effects of the optogenetic stimulation were assessed with linear mixed-effects models. This method allows for correlated samples from trials repeated in the same mouse and allows for an unbalanced number of samples between mice. Laser stimulation (L \u2208 {0 for inactive, one for active}) and effect of the mice group (G \u2208 {0 for ChAT-GFP, one for ChAT-ChR2}) were fixed effects in the models; the random variable representing the animal (a) was treated as a random effect in the intercept and slope estimation. The quantity Y in the trial i for animal a was modeled as:\n\n$$\nY_{i}=\\beta_{0}+R_{0a}+(\\beta_{1}+R_{1a})^{\u2217}L+\\beta_{2}^{\u2217}G+\u03f5_{i},\n$$\n\nwhere\n\nThe residual errors were checked for the assumptions of the linear models: mean of zero, no correlation with the predicted values and homoscedasticity. To satisfy these assumptions, in some models, a log-linear model of variable Y was created instead, otherwise as described above. The significant interactions were reported and the post hoc tests were performed on differences in least-square means of the paired groups. The tests used Satterthwaite estimation of degrees of freedom and adjusted p-values using Holm-Bonferroni correction.\n\nThe linear mixed-effects models were built in R with package \u2018lme4\u2019 and p-values for the fixed effects were obtained using Satterthwaite estimation of degrees of freedom implemented in the \u2018lmerTest\u2019 R package. Least\u00a0square means were calculated and tested with \u2018lsmeansLT\u2019 function from the same package.\n\n### Histological processing\n\nAnimals were terminally anesthetized by intra-peritoneal injection of pentobarbital (533 mg\u00a0kg\u22121) and then transcardially perfused with phosphate-buffered saline (PBS) followed by 4% paraformaldehyde. Brains were removed and post-fixed for 24\u201348 hr, then rinsed and subsequently cryoprotected overnight in 30% (w/v) sucrose dissolved in PBS. Coronal sections of 30\u201340 \u03bcm thickness of the MS and hippocampus were cut using a microtome (Spencer Lens Co., Buffalo, NY).\n\nTo verify the expression of ChR2 fused with the eYFP tag or ArchT fused with the eGFP tag and visualize the location of cholinergic neurons, sections were immunostained for eYFP/eGFP and ChAT. After rinsing in PBS, sections were incubated for 1 hr in a blocking solution comprising PBS with 0.3% (w/v) Triton X-100% and 5% (w/v) donkey serum (Abcam) containing 1% (w/v) bovine serum (Sigma). Sections were then incubated for\u00a0\u226515 hr at 4\u00b0C with chicken anti-GFP (1:1000, Abcam AB13970; RRID:AB_300798) and goat anti-ChAT (1:500, Millipore AB144; RRID:AB_90650) antibodies. The sections were then washed, followed by 2 hr of incubation in blocking solution containing anti-chicken Alexafluor488 (1:400; Life Technologies A11039; RRID:AB_142924) and anti-goat Alexafluor594 (1:1000, Abcam AB150132; RRID:AB_2810222) at room temperature. Finally, the sections were rinsed and mounted in Fluoroshield with DAPI (Sigma).\n\nTo identify the placement of the electrodes (aided by Dil application on electrodes prior their insertion in the brain) and optic fiber tracks for each mouse, sections containing evidence of the implants were selected and mounted in Fluoroshield (Sigma).\n\nSections were examined with a Leica Microsystems SP8 confocal microscope using the 10\u00d7\u00a0and 20\u00d7\u00a0magnification objectives. The eYFP+/GFP+ and ChAT+ cells were quantified manually using the ImageJ software. The location at which the implant appeared the deepest was determined and used to plot the implant location on the corresponding section in a mouse brain atlas (Franklin and Paxinos, 2007).\n\n### Data and code availability\n\nCode used for the analysis and to generate the figures can be accessed on the authors\u2019 GitHub site: https://github.com/przemyslawj/ach-effect-on-hpc\u00a0(Jarzebowski et al., 2021; copy archived at swh:1:rev:3d4f5f8cecf7e6cc1b4bee7713bc582d5797674b).\n",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "b0df091b-ce05-4c86-988d-654716c65013",
+      "submission_id": "813d20f4-f9e3-497f-ac28-164390b6708a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Laura L Colgin, University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65998.sa1](https://doi.org/10.7554/eLife.65998.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis paper is of interest for those interested in the roles of cholinergic projections from the medial septum and sharp wave-ripples on reward learning. The work provides compelling evidence showing that activation of septal cholinergic cells at reward zones suppresses sharp wave-ripples and impairs behavioral performance in freely behaving animals. The work extends our knowledge of the effect of medial septum cholinergic projections on spatial memory.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Cholinergic suppression of sharp wave-ripples impairs hippocampus-dependent spatial memory\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Stefan Remy (Reviewer #2); Jiamin Xu (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nReviewers were enthusiastic about the question and the system that was studied. However, major concerns were raised about the paper in its current form. Reviewers were not convinced that the conclusions of the paper are robustly supported by the results. Specifically, reviewers raised concerns about the low sample size and other methodological aspects of the study. Reviewers felt that, for the results to fully support the conclusions, additional experimentation and additional control experiments would be required. Concerns were also raised about the novelty of some of the results. Some of the results provide insights that are similar to those reported in previous studies (e.g., Vandecasteele et al., 2014 and Ma et al., 2020), specifically regarding cholinergic suppression of hippocampal ripple oscillations and the involvement of muscarinic receptors in this effect.\n\nWe would be willing to consider a majorly revised version of this study in the future, should you choose to go that route.\n\nReviewer #1:\n\nThis paper attempts to address the interesting question of how activating septal cholinergic neurons affects learning and memory. Unfortunately, however, the conclusions are not strongly supported by the results.\n\n1. Proper controls for the ontogenetic experiments are missing. For example, a light only control is only included for the goal vs. no stimulation comparison in the first part of the paper. No control for light artifacts is included in the last part of the paper in which theta and gamma are examined. 10 Hz stimulation is. used, yet there is no discussion of effects of light artifacts on spectral measurements within this range.\n\n2. A major problem is that the duration of the light stimulation protocol differs across groups. The authors did not consider the possibility that effects were due to the circuitry being perturbed differently by different durations of stimulation (longer cholinergic stimulation vs. shorter cholinergic stimulation).\n\n3. It is difficult to interpret the data from the \"stimulation throughout\" group. The authors did not statistically compare \"goal stimulation\" and \"stimulation throughout\" groups. If the interpretation is correct that activating MS cholinergic neurons around the goal impairs learning, then one would expect \"stimulation throughout\" to also impair learning since it also includes stimulation at the goal.\n\n4. The authors do not provide convincing causal evidence that suppression of sharp waves around the goal causes impaired learning, although they seem to imply this throughout the paper.\n\n5. Some of the main results in the paper have been reported previously. The SWR suppression due to cholinergic stimulation is not novel, as the authors acknowledge. Vandecasteele et al. (2014) showed this effect in behaving and urethane anesthetized animals, and Ma et al. (2020) showed it in sleep. Ma et al. also reported muscarinic receptor involvement in SWR suppression.\n\n6. Are these methods able to reliably detect sharp wave ripples? Some muscle artifacts can look like sharp wave ripples. In the absence of depth profiles from a linear probe or detection of populations bursts from single units, it is difficult to evaluate the extent to which the authors' sharp wave-ripple detection methods are reliable.\n\nReviewer #2:\n\nIn this manuscript Jarzebowski et al. investigate the dynamical aspect of cholinergic modulation. The authors report phase-specific effect of optogenetic cholinergic modulation in the appetitive Y-maze long-term memory task, as well as the switches of the CA3 and CA1 activity from ripple activity to theta/gamma oscillations. This work builds on the previously published studies (Vandecasteele et al., 2014; Ma et al., 2020) that have already reported reduction in ripple incidence upon MS cholinergic stimulation. The novelty of this study lies in reporting the differences on learning dependent on the time (and location) of the simulation and apparent differences on the CA1 and CA3 ripples incidence. However, the conclusions in some cases are not strongly enough supported by the data. In my view several points need clarification and in particular the statistical underpowering resulting from very low number of animals in the results presented in Figure 5 speak against publication of the manuscript in the current form.\n\n1. The results showing decrease in learning following the MS cholinergic stimulation (2C-E) in the goal zones are convincing. However, it is known that SWRs may differ substantially in length, frequency and amplitude dependent on the behavioural state of the animal (ex. Joo and Frank, Nat Neuro Review 2019), which may have specific relevance for memory. Thus, by stimulating both the rewarded and the non-rewarded goal zones the effects of the stimulation on SWR may have differential effects on SWRs in rewarded and non-rewarded locations. The authors should compare SWRs and the effects of stimulation in rewarded and non-rewarded goal zones. A question is whether effects on SWRs in the non-rewarded goal zone are similar or substantially different, in which case the interpretation of how stimulation may have mechanistically contributed to memory formation could be fundamentally different.\n\n2. The authors show the reduction of ripples incidence in CA1 and CA3 upon MS cholinergic stimulation in both in sleeping and anesthetized animals. However, they also claim that \"\u2026MS cholinergic stimulation enhanced a scopolamine-sensitive theta oscillation in both anesthetized and sleeping mice (supplementary Figure 3)\". To substantiate this claim by data, they need to block muscarinic receptors in sleeping animals to assure that it holds in both conditions. I did not find these data in the manuscript. Scopolamine sensitivity is a classical criterion for differentiation of types of theta oscillations so that this information would be highly relevant for the interpretation of the results with respect to effects of stimulation on theta oscillations. If the authors did not perform these experiments, they should not extend the interpretation to the sleep condition.\n\n3. Figure 4: Using the method presented in Haller et al., 2018, the authors show an increase in theta power and gamma power in both CA1 and CA3, following MS cholinergic stimulation. While these results are interesting, it would be much more convincing if the authors showed the grouped data of all animals, including the error bars in the Figure 4B, instead of only the data obtained from an individual animal. More importantly the statistical analysis depends on a linear fit of the background spectrum intensity, which from inspecting the data seems moderately imprecise. Since the differences reported are rather small, the authors should use a 1/f polynomial fit (as also used in Haller et al., 2018) of the background spectrum intensity which would confirm the robustness of the described differences.\n\n4. Related to Figure 4: The authors state: \"The increase in the power was associated with significantly lower frequency of the theta peak in the CA1, but not in the CA3.\" It would be helpful for the reader to also show these results in the Figure.\n\n5. The authors are reporting: \"Slow gamma (25-45 Hz) increased in CA1 by 54 {plus minus} 6 % and in CA3 by 8 {plus minus} 8 % \". It has been previously shown that slow gamma is driven by CA3 and propagates to CA1 (Colgin et al., 2014, 2016, Schomburg et al., 2014). To my understanding, this would imply that the low gamma activity should reach CA1 with a smaller amplitude than measured in CA3. As the opposite is observed here, does that imply that the local CA1 network activity lead to amplification of the gamma power in CA1? This should be discussed.\n\n6. In the Figure 5, the authors report decreases in CA1, but not in CA3 ripples incidence in the goal zone following the MS cholinergic stimulation. I have several difficulties with the interpretation of the results presented in this Figure. First, the authors state that only successful trials were analysed. As mentioned above already, given that the stimulation was performed also during the unsuccessful trials, the results obtained in the unrewarded goal zones should be presented. Furthermore, it is stated: \"\u2026n=3 mice included in the analysis with the ripple incidence at goal {greater than or equal to} 0.03\". I think that \"{less than or equal to} 0.03\" is meant here. In any case, looking carefully at the Figure 5D, a decrease of the ripple incidence at goal can be observed in 2 of the 3 animals while the increase observed in one single animal accounts for no difference which underlies the conclusion that the effects are specific for CA1. This experiment is strongly underpowered and the conclusions are not convincingly supported by the data.\n\n7. Furthermore, no difference in theta and gamma power in CA1, but increase in slow gamma in CA3 (5E-5G) are reported. Looking carefully at 5I, a trend in increase could be also observed in CA1. Also here, the number of animals must be increased.\n\n8. The title of the paper is: \"Cholinergic suppression of sharp wave-ripples impairs hippocampus dependent spatial memory\" The authors are also showing the effect of MS cholinergic stimulation on the SWRs during sleep, but the link between this effect and spatial memory is not explored. It is known that supressing SWRs specifically during the post-learning sleep impairs spatial memory (Girardeau et al., Nature Neuroscience 2009). Thus, it would be interesting to see whether the MS cholinergic stimulation and SWRs suppression during sleep impairs spatial memory. This should be at least discussed.\n\nReviewer #3:\n\nThe study focused on the effect of MS cholinergic activity on hippocampal oscillations and extended our knowledge of cholinergic function in hippocampus-dependent spatial learning. Impairment of hippocampal ripple oscillations during awake immobility leads to significant performance deficit in the Y-maze task, highlighting the importance of precise timing of cholinergic input in memory formation.\n\n1. The conclusion points 1/2/3 in the abstract maybe more coherent if rearranged to 3/1/2. But this might lead to structural re-organization of the article and the figures (suggested figure order: Figure 1-3-4-2-5). The logic behind this order is:\n\na. Optogenetic stimulation of MS cholinergic neurons impair hippocampal ripples during SWS (Figure 3/4).\n\nb. What about ripples during awake immobility?\n\nc. Optogenetic stimulation during goal period of the Y-maze impairs learning (Figure 2).\n\nd. Such impairment was due to reduced CA1 ripple incidence (Figure 5).\n\n2. In the introduction: \"activation of MS cholinergic neurons switches the CA3 and CA1 network states from ripple activity to theta/gamma oscillations\". The phrasing might be questionable\n\n3. Page 18, first paragraph, the description seems a little bit redundant.\n\n4. Figure 3A, it seems that theta oscillations emerge with the optogenetic stimulation, was the stimulation strictly delivered during SWS or was this particular theta represents REM states? It would be better if the authors also show the LFP and ripple trace after the light stimulation.\n\n5. Page 22, last sentence of the first paragraph, \"\u2026while the peak frequency did not significantly change from 39 {plus minus} 1 Hz in the CA1 and 38 {plus minus} 2 Hz in the CA3\u2026\", is a little bit confusing, needs further explanation.\n\n6. Page 22, second paragraph, relative theta and gamma power change was reported in CA3, how about CA1?\n\n7. In previous reports (Vandecasteele, 2014 and Ma, 2020), MS cholinergic stimulation can completely inhibit hippocampal ripple oscillations. But in this study, there are still a lot of ripples not suppressed. Please explain the difference.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Impaired spatial learning and suppression of sharp wave ripples by cholinergic activation at the goal location\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Laura Colgin as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jiamin Xu (Reviewer #2); Fabian Kloosterman (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\nSome conclusions that are strongly stated in the current version will need supporting data in the future or will need to be toned down with caveats discussed. Please refer to the individual reviews below for specific details.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors satisfactorily addressed my prior major concerns. I have no major concerns remaining. I only have a few concerns remaining that can be easily addressed by the authors without affecting the major conclusions of the paper.\n\nPage 5: \"In hippocampal CA3, cholinergic activation induces a slow gamma rhythm primarily by activating M1 muscarinic receptors\": It should be noted that these are in vitro studies. As this sentence is written currently, the comparisons between CA3 and CA1 are potentially misleading.\n\nPage 10: \"We did not detect an effect of the laser on the duration the mice spent at the goal location (linear mixed-effects model, mouse group \u2013 laser interaction: F(1, 78) = 0.01, p = 0.94, laser effect: F(1, 78) = 0.1, p = 0.73).\" I am confused by this passage. If optogenetic stimulation at the reward location affects memory, as the authors claim, one would expect a differential effect of laser stimulation on the ChR2 mice compared to the GFP-only control mice (and a significant effect of the laser in the ChR2 group). Yet, a non-significant interaction effect is reported.\n\nPage 13: \"Because we detected few SWRs in the unrewarded trials, we restricted the statistical analysis of the effects of optogenetic stimulation to rewarded trials. The SWR incidence in the non-stimulated trials was not significantly different between early (before day 5) and late learning (linear mixed-effects model, effect of early vs late learning: F(1, 110) = 0.3, p = 0.58, Figure 4D).\": The authors state that they restricted analysis of effects of optogenetic stimulation to rewarded trials but then analyze SWR incidence in the very next sentence and paragraph. Is there a typo here?\n\nReviewer #2 (Recommendations for the authors):\n\nThis submitted work is clearly better structured and well-controlled version of the previously submitted manuscript. The authors addressed most of the comments. I only have two concerns.\n\n1. The optogenetic stimulation induced ripple inhibition effect at the goal location and during sleep seems a little bit inconsistent (Figure 4E and Figure 5C). The authors stated in the text the ripple inhibition statistics under the two conditions: ripple incidence was reduced from 0.11 {plus minus} 0.01 Hz to 0.05 {plus minus} 0.01 Hz when stimulated at the goal location, and from 0.21 {plus minus} 0.01 Hz to 0.03 {plus minus} 0.01 Hz during sleep. Also, from the authors' response to the review comments (Reviewer #3, major comment 7), \"We report that SWR incidence in 4 ChAT-ChR2 decreased by 100% and for another 4 reduced by a median of 88 {plus minus} 2%.\". I assume that the authors were referring to the situation during sleep (based on the statistics and the number of animals used in each condition), which means that the ripple inhibition effect would be somewhere around 50% during stimulation at the goal location. Please elaborate on this.\n\n2. Although the analyses of the effect of optogenetic stimulation on hippocampal theta and gamma oscillations during sleep reveal some very interesting results, it seems that the relevance of these analyses with the key claim of the submitted work (as indicated by the title) is a little bit farfetched.\n\nReviewer #3 (Recommendations for the authors):\n\n1. Figure 3B: the spectrogram shows high relative (z-scored) power for the high frequencies in start and center, but not goal. I would have expected to see at least some high power in the ripple band in the goal. Could the authors clarify how exactly the z-scoring was performed? If the spectrogram is an average across multiple trials, then this will tend to obscure transient, non-time locked oscillations like SWRs.\n\n2. What is the effect of optical stimulation of cholinergic neurons on theta/gamma/SWRs in the \"throughout\" and \"navigation\" conditions? Are these effects consistent with the hypothesis that the learning deficit is caused by a reduction of SWRs at the goal location? Could additional insights be obtained into possible changes induced by stimulation (e.g. theta oscillations during navigation) that do *not* correlate with the learning deficit?\n\n3. Page 19: the authors cite Jadhav et al. 2012 when stating \"disruption of SWRs in the first 15 to 60 minutes following training impairs learning of spatial navigation tasks\". However, Jadhav et al. disrupted SWRs during the training and not following the training.\n\n4. Page 20: Both reverse and forward replay are observed during brief pauses or reward consumption in the awake state when animals explore a maze or learn a task. So, it is likely that in the reward zone in the Y-maze task one will observe both forward and reverse replay. While it is fine to speculate that disruption of reverse replay mediates the behavioral deficit, it cannot be based on the assumption that replay at the goal location is only of the reverse kind.\n\n5. What is the time in between individual trials?\n\n6. To characterize the learning in the Y-maze, the authors determine the day at which criterion is reached. This metric is rather coarse. Instead, the authors could fit a learning curve (e.g. sigmoid function) to the trial responses and estimate the learning rate for each animal. Furthermore, it would be informative to show individual learning curves for all animals, in addition to the average learning curves that are shown now.\n\n7. To assess the effect of stimulation at the goal on hippocampal activity, the authors look at average SWR rate and average theta/gamma power. However, when the animals are in the goal region, they likely show a mixture of behavioral states that is associated with periods of theta and non-theta (incl. SWRs). Is more (or less) time spent in theta state during stimulation? Could it be that time spent in non-theta states is lower, but SWR rate within this state has not changed? Judging from the example in figure 4B, it may be the case that with stimulation the first SWR after arriving at the goal is delayed compared to no stimulation condition \u2013 is this consistent across all subjects?\n",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e6f13b0f-07cc-4b6d-88a9-2e88b6c7b193",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C1",
+      "claim": "Degeneration of cholinergic neurons and a low tone of ACh correlate with memory impairment in humans and rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "On one hand, degeneration of cholinergic neurons and a low tone of ACh correlate with memory impairment in humans and rodents (Bartus, 2000; Berger-Sweeney et al., 2001; Hasselmo and Sarter, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bartus, 2000; Berger-Sweeney et al., 2001; Hasselmo and Sarter, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "9b57f35d-f1d1-4a61-b72b-64674fea2584",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C2",
+      "claim": "Drugs blocking ACh degradation ameliorate memory impairment in Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "drugs blocking ACh degradation ameliorate memory impairment in Alzheimer's disease (AD) (Ehret and Chamberlin, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ehret and Chamberlin, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "5796ed7d-e718-4a4b-949d-6b202502c5aa",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C3",
+      "claim": "Extensive lesions of the medial septum produce learning deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, extensive lesions of the medial septum (MS), where the cholinergic neurons projecting to the hippocampus are located, produce learning deficits (Hepler et al., 1985)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hepler et al., 1985",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "afd3c4b9-8761-44a3-a0e8-4a8069545ccd",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C4",
+      "claim": "Selective lesions of MS cholinergic neurons have relatively little impact on learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, selective lesions of MS cholinergic neurons, which account for ~5% of neurons in the MS, have relatively little impact on learning and memory (for review, see Hasselmo and Sarter, 2011; Solari and Hangya, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review articles by Hasselmo and Sarter, 2011; Solari and Hangya, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "1c5ea3f8-f33a-47ae-a9a7-2bf525132d71",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C5",
+      "claim": "ACh levels vary during memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "A reason for these apparently conflicting results may lie in the fact that memory formation is a dynamic process during which ACh levels vary (Fadda et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fadda et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "d3aa0c86-a8f9-4bec-b28b-826e28ee44e8",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C6",
+      "claim": "Long-term memory forms in two stages: first, neuronal activity produces a labile trace, then a delayed potentiation of the same synapses forms a long-lasting memory trace.",
+      "claim_type": "EXPLICIT",
+      "source": "In an influential model, Buzs\u00e1ki, 1989 suggested that long-term memory forms in two stages: first, neuronal activity produces a labile trace, then a delayed potentiation of the same synapses forms a long-lasting memory trace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buzs\u00e1ki, 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "16182ad8-b2dc-4938-bc01-8bfb5d3dc6d9",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C7",
+      "claim": "Phase-amplitude-coupled theta (5\u201312 Hz)-gamma (30\u2013100 Hz) oscillations occur during exploratory behaviors in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, phase-amplitude-coupled theta (5\u201312 Hz)-gamma (30\u2013100 Hz) oscillations (Csicsvari et al., 2003) occur during exploratory behaviors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Csicsvari et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "64151315-072d-41f3-934b-355886889979",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C8",
+      "claim": "Large-amplitude sharp waves combined with high-frequency ripples (sharp wave ripples [SWRs]) occur during immobility and slow-wave sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "while large-amplitude sharp waves combined with high-frequency ripples (sharp wave ripples [SWRs]) (O'Keefe and Nadel, 1978; Csicsvari et al., 2000) occur during immobility and slow-wave sleep",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to O'Keefe and Nadel, 1978; Csicsvari et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "3c7694ca-7572-4e65-b0fe-23b455620bb7",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C9",
+      "claim": "Theta/gamma oscillations and SWRs are mutually exclusive network states.",
+      "claim_type": "EXPLICIT",
+      "source": "These two network states are mutually exclusive (O'Keefe and Nadel, 1978; Buzs\u00e1ki, 1986; Csicsvari et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to O'Keefe and Nadel, 1978; Buzs\u00e1ki, 1986; Csicsvari et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "dc323449-57a9-426c-a8af-98f708a0ffc7",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C10",
+      "claim": "Memory encoding is associated with theta/gamma oscillations while memory consolidation relies on SWR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "it was suggested that memory encoding is associated with theta/gamma oscillations while memory consolidation relies on SWR activity (O'Neill et al., 2010; Colgin, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to O'Neill et al., 2010; Colgin, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "c7e4ecf9-1286-4c11-9e8f-89ae59b4c9ec",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C11",
+      "claim": "Cholinergic activation ex vivo induces a slow gamma rhythm in hippocampal CA3 primarily by activating M1 muscarinic receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In hippocampal CA3, cholinergic activation ex vivo induces a slow gamma rhythm primarily by activating M1 muscarinic receptors (Fisahn et al., 1998; Betterton et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fisahn et al., 1998; Betterton et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "6045eaef-8c21-48e1-8486-e6f126435c88",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C12",
+      "claim": "Cholinergic activation in vivo promotes theta/gamma oscillations and suppresses ripple oscillations in CA1 through the activation of M2/M4 muscarinic receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "while in the CA1, cholinergic activation in vivo promotes theta/gamma oscillations and suppresses ripple oscillations through the activation of M2/M4 muscarinic receptors (Vandecasteele et al., 2014; Zhou et al., 2019; Ma et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vandecasteele et al., 2014; Zhou et al., 2019; Ma et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "5204ea7d-626f-42ee-95a8-a484af6f39ac",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C13",
+      "claim": "There is a high cholinergic tone during exploration, promoting theta activity, and a lower cholinergic tone during subsequent rest, permitting SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence from microdialysis and electrophysiology experiments shows a high cholinergic tone during exploration, promoting theta activity, and a lower cholinergic tone during subsequent rest, permitting SWRs (Fadda et al., 2000; Giovannini et al., 2001; Fadel, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fadda et al., 2000; Giovannini et al., 2001; Fadel, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "3e15600c-572b-44ef-ba94-0f3d219e1cde",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C14",
+      "claim": "Disruption of cholinergic activity at different stages of learning and memory impairs performance in memory tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of cholinergic activity at different stages of learning and memory impairs performance in memory tasks (for review, see Hasselmo and Sarter, 2011; Solari and Hangya, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review articles by Hasselmo and Sarter, 2011; Solari and Hangya, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "98a537d1-59d6-491f-8f13-dbf4bed83869",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C15",
+      "claim": "65% of ChAT+ cells in the medial septum of ChAT-Ai32 mice are YFP+.",
+      "claim_type": "EXPLICIT",
+      "source": "In sections sampled from two mice, 98 out of 150 ChAT+ cells counted were YFP+ (YFP+/ChAT+=65%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from immunostaining quantification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "dbe79f51-69a9-4ea4-92eb-1519ea0e9b92",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C16",
+      "claim": "100% of YFP+ cells in the medial septum of ChAT-Ai32 mice are ChAT+.",
+      "claim_type": "EXPLICIT",
+      "source": "In independently sampled sections, 111 out of 111 YFP+ cells counted were ChAT+ (ChAT+/YFP+=100%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from immunostaining quantification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "017527ae-3ab9-42d6-8416-2c2e282ec728",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C17",
+      "claim": "Local light delivery (50 ms pulses at 10 Hz) in the MS resulted in an increase in multi-unit activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Local light delivery (50 ms pulses at 10 Hz) resulted in an increase in multi-unit activity (baseline spike frequency: 7.9 \u00b1 2.8 Hz vs. spike frequency during light delivery: 22.7 \u00b1 7.3 Hz, two-tailed Wilcoxon matched pair signed-rank test: p=0.03; n = 6 recordings from two mice; Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from multi-unit recordings and statistical analysis, shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "f14e5769-63ca-46ae-a401-684e88cbc6fc",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C18",
+      "claim": "Sharp wave ripples have been reported at the reward location of different spatial navigation tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have reported sharp wave ripples at the reward location of different spatial navigation tasks (O'Neill et al., 2006; Dupret et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to O'Neill et al., 2006; Dupret et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "83591940-18f1-4fdc-80d6-b01d1e73b524",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C19",
+      "claim": "ChAT-Ai32 mice in the 'goal' group took significantly longer to reach learning criterion compared to the 'no stimulation' group.",
+      "claim_type": "EXPLICIT",
+      "source": "Post hoc tests indicated that the ChAT-Ai32 'goal' group was delayed at learning the task compared to the ChAT-Ai32 'no stimulation' group (4.5 \u00b1 0.3 vs. 2.9 \u00b1 0.3 days, Dunn test with Holm-Bonferroni correction for multiple comparisons: p=0.002, BF10 = 45)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from behavioral testing and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "6f70da6e-50ba-41f5-80dd-0b431d9065b6",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C20",
+      "claim": "ChAT-Ai32 mice in the 'goal' group took significantly longer to reach learning criterion compared to the 'navigation' group.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the ChAT-Ai32 'goal' group was delayed compared to the ChAT-Ai32 'navigation' group (4.5 \u00b1 0.3 vs. 3.1 \u00b1 0.4 days, p=0.05, BF10 = 4.4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from behavioral testing and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "4fc0b721-387a-4b67-bdda-1dea0d801b40",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C21",
+      "claim": "There was no learning difference between the 'goal' and 'no stimulation' groups of wild-type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any learning difference between the 'goal' and 'no stimulation' groups of this control WT mice cohort (goal: 3.0 \u00b1 0.37 days; no stimulation: 3.4 \u00b1 0.37 days; one-way ANOVA F(1, 14) = 0.34, p=0.57; Figure 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from behavioral testing and statistical analysis, shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "53a072de-86f2-46bc-be16-2faea00496d1",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C22",
+      "claim": "Cholinergic activation in the goal zone for as short as 50 s slows learning of the appetitive Y-maze task.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that cholinergic activation in the goal zone for as short as 50 s (95% percentile of stimulation duration) slows learning of the appetitive Y-maze task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from behavioral testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "03ce3ab3-98a7-40f7-99c1-403c7fab79d5",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C23",
+      "claim": "Optogenetic stimulation during navigation or throughout the maze had no significant effect on task acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, optogenetic stimulation during navigation or throughout the maze had no significant effect on task acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from behavioral testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "968ee70f-4537-49e8-8fe5-c6eb18310844",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C24",
+      "claim": "Cholinergic activation did not affect the time mice spent at the goal location.",
+      "claim_type": "EXPLICIT",
+      "source": "The cholinergic activation did not overtly affect the behavior once the mice were at the goal location: we did not detect any effect of the laser on the time the mice spent at the goal location (linear mixed-effects model, mouse group\u2013laser interaction: F(1, 78)=0.01, p=0.94, laser effect: F(1, 78)=0.1, p=0.73)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from behavioral observations and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "0b12081a-f8ca-4a9f-961d-99b5ff892e02",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C25",
+      "claim": "Theta power peaked in the central section of the maze where the mice ran the fastest.",
+      "claim_type": "EXPLICIT",
+      "source": "The theta power (5\u201312 Hz) peaked in the central section of the maze where the mice ran the fastest (Figure 3A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings, shown in Figure 3A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "da2309d0-2355-49da-bd6b-cd300cebac8d",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C26",
+      "claim": "Theta power was reduced at the goal location in rewarded trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Theta power (5\u201312 Hz) peaked in the central section of the maze where the mice ran the fastest (Figure 3A,B) and was reduced at the goal location in rewarded trials (Figure 3B, right panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings, shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "e40c7361-9de9-49fc-b349-6a132db4995e",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C27",
+      "claim": "Light did not affect the relative theta power differently in the ChAT-GFP and ChAT-ChR2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Light did not affect the relative theta power differently in the ChAT-GFP and ChAT-ChR2 mice (linear mixed-effects model, mouse group\u2013laser interaction: F(1, 5)=0.01, p=0.94, Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings and statistical analysis, shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "a689b484-cd1e-4ab1-adf5-4c7e04b8eb37",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C28",
+      "claim": "Theta power increased by 16 \u00b1 3% in both ChAT-GFP and ChAT-ChR2 mouse groups during laser stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, theta power increased by 16 \u00b1 3% in both mouse groups indiscriminately (laser effect: F(1, 5)=6.9, p=0.05), suggesting another, non-specific effect of the laser on theta power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from LFP recordings and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "35c58e07-2aa5-4eff-9767-315625f27339",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C29",
+      "claim": "Spectral peak frequency in the theta band was not significantly affected by the stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectral peak frequency in the theta band was not significantly affected by the stimulation (linear mixed-effects model, mouse group\u2013laser interaction: F(1, 5)=1.3, p=0.31, laser effect: F(1, 5)=3.5, p=0.12, Figure 3F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings and statistical analysis, shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "9bcbbc21-fed7-4299-bb0a-5f9ea199f18d",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C30",
+      "claim": "Optogenetic stimulation did not affect relative slow gamma power.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, quantification of the relative slow gamma power indicated no effect of the stimulation (linear mixed-effects model, mouse group\u2013laser interaction: F(1, 6)=1.7, p=0.24, laser effect: F(1, 6)=0.1, p=0.77, Figure 3G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings and statistical analysis, shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "118a286f-9351-4002-99b3-55e7b083e0da",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C31",
+      "claim": "The laser reduced the aperiodic component of the PSD in the 3\u201315 Hz range differently in ChAT-GFP and ChAT-ChR2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The only effect of the laser that affected PSD of the ChAT-GFP and ChAT-ChR2 mice differently was a reduced aperiodic component of the PSD in the 3\u201315 Hz range (linear mixed-effects model, mouse group\u2013laser interaction: F(1, 135)=29, p=10\u22127, Figure 3H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings and statistical analysis, shown in Figure 3H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "6df3b36a-013c-49f4-825e-72c6559141af",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C32",
+      "claim": "Activation of septal cholinergic neurons suppresses CA1 SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that activation of septal cholinergic neurons suppresses CA1 SWRs (Vandecasteele et al., 2014; Ma et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vandecasteele et al., 2014; Ma et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "eb98df6d-d1ce-43fe-83d1-1c9ad548343b",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C33",
+      "claim": "SWRs occurred at the start and the goal locations during the Y-maze task.",
+      "claim_type": "EXPLICIT",
+      "source": "The SWRs occurred at the start and the goal locations (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings, shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "af82e984-6f96-43a5-bb87-b374de1c2ee3",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C34",
+      "claim": "SWRs were detected in significantly more rewarded than unrewarded trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected SWRs in significantly more rewarded than unrewarded trials (82 \u00b1 7% of rewarded non-stimulated trials vs. 32 \u00b1 13% of unrewarded non-stimulated trials, paired t-test on percentages per animal: p=0.02, n = 7 animals, Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings and statistical analysis, shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "680ad671-80a5-44df-a4f4-3385498343b1",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C35",
+      "claim": "SWR incidence did not change significantly between early and late learning.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any significant difference between early (before day 5) and late learning (linear mixed-effects model, effect of early vs. late learning: F(1, 110)=0.3, p=0.58, Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings and statistical analysis, shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "cd9ab94f-69cf-463b-8946-3f9fecdba545",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C36",
+      "claim": "Optogenetic stimulation reduced SWR incidence at the goal location in ChAT-ChR2 mice by 52 \u00b1 7%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, optogenetic stimulation had a significantly different effect in the ChAT-GFP and the ChAT-ChR2 mice (log-linear mixed-effects model, mouse group\u2013laser interaction, F(1, 42) = 4.5, p=0.04, Figure 4E), whose SWR incidence at the goal location was reduced by 52 \u00b1 7% from 0.06 \u00b1 0.01 to 0.03 \u00b1 0.01 Hz (post hoc test: t(44) = 4.2, p=0.001, Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings and statistical analysis, shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "13a2eab8-66a3-446b-8026-69d83e39244f",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C37",
+      "claim": "Spectral peak frequency of SWRs was not affected by the stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectral peak frequency of SWRs was not affected by the stimulation (frequency: 168 \u00b1 2 Hz; linear mixed-effects model for non-stimulated trials, mouse group\u2013laser interaction: F(1, 3.6)=0.02, p=0.88, Figure 4\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings and statistical analysis, shown in Figure 4\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "0855ccb1-8768-405d-b719-66e7fa41cf71",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C38",
+      "claim": "SWR duration was not affected by the stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "nor was the SWR duration (duration: 37 \u00b1 1 ms; log-linear mixed-effects model for non-stimulated trials, mouse group\u2013laser interaction: F(1, 148)=0.1, p=0.76, Figure 4\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings and statistical analysis, shown in Figure 4\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "df401846-c79e-4873-b67a-1bd7b67c2c86",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C39",
+      "claim": "There are at least two distinct forms of theta oscillations in the hippocampus, only one of which is dependent on cholinergic receptors and can be observed during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are at least two distinct forms of theta oscillations in the hippocampus, only one of which is dependent on cholinergic receptors and can be observed during sleep (Kramis et al., 1975)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kramis et al., 1975",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "ba4b78db-54e5-4a77-bfc5-b59ab37266b3",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C40",
+      "claim": "Optogenetic stimulation of MS cholinergic neurons reduced SWR incidence throughout the stimulation in ChAT-ChR2 mice but not in ChAT-GFP mice during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimulation reduced the SWR incidence throughout the stimulation in ChAT-ChR2 mice but not in ChAT-GFP mice (Figure 5A\u2013C). SWR incidence in ChAT-ChR2 mice was reduced from 0.21 \u00b1 0.01 to 0.03 \u00b1 0.01 Hz (85 \u00b1 3% reduction, linear mixed-effects model, mouse group\u2013laser interaction: F(1, 22)=47, p=10\u22126, n = 369 epochs from 10 animals; post hoc test for laser effect in ChAT-ChR2: t(86) = 9.7, p=10\u221214, Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and statistical analysis, shown in Figure 5A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "d636690e-8006-402c-9f79-de2be7426b88",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C41",
+      "claim": "Optogenetic stimulation during sleep did not change the spectral peak frequency of SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation did not change the spectral peak frequency of the SWRs of 168 \u00b1 1 Hz (mouse group\u2013laser interaction: F(1, 262)=0.51, p=0.48, Figure 5\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and statistical analysis, shown in Figure 5\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "319c66aa-13bf-403c-ad7d-3d0747ecac7d",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C42",
+      "claim": "Optogenetic stimulation during sleep did not change ripple duration.",
+      "claim_type": "EXPLICIT",
+      "source": "nor ripple duration of 38 \u00b1 0.3 ms (log-linear mixed-effects model, mouse group\u2013laser interaction: F(1, 28)=0.9, p=0.35, Figure 5\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and statistical analysis, shown in Figure 5\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "5dbd08e7-6192-4d5b-be82-7c5c6d43b0b3",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C43",
+      "claim": "Optogenetic activation of MS cholinergic neurons almost completely suppresses SWRs during sleep in the CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our results confirm that optogenetic activation of MS cholinergic neurons almost completely suppresses SWRs during sleep in the CA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "f2034164-f408-4330-ac84-70dc235701e0",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C44",
+      "claim": "Optogenetic stimulation of MS cholinergic neurons causes a reduction of the PSD across the full frequency range in sleeping mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a reduction of the PSD across the full frequency range upon light stimulation (Figure 6B\u2013D, Figure 6\u2014figure supplement 1), as reported previously in freely behaving mice (Vandecasteele et al., 2014)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and citation to Vandecasteele et al., 2014, shown in Figure 6B\u2013D, Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "ef8406be-1f4b-4357-aecb-4a83a8a1e0c9",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C45",
+      "claim": "Broadband power of the aperiodic component decreased with light stimulation in the ChAT-ChR2 but not in the ChAT-GFP mice during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadband power of the aperiodic component decreased with light stimulation in the ChAT-ChR2 but not in the ChAT-GFP mice (linear mixed-effects model on area under curve [AUC] of estimated aperiodic component on PSD log-log plot, significant mouse group\u2013laser interaction: F(1, 4.6)=22, p=0.006, n = 369 epochs from 10 mice; AUC significantly decreased from \u22125.96 \u00b1 0.04 to \u22126.23 \u00b1 0.04, post hoc test for laser effect in ChAT-ChR2: t(7.1) = 10.1, p=10\u22124, Figure 6D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and statistical analysis, shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "0e5dae59-1761-463f-8fe8-07499b5c7cf6",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C46",
+      "claim": "Optogenetic stimulation increased relative theta power by 51 \u00b1 9% in ChAT-ChR2 mice during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimulation had a significantly different effect in the ChAT-GFP and the ChAT-ChR2 animals on the relative theta power (log-linear mixed-effects model, mouse group\u2013laser interaction: F(1, 4.8)=7.3, p=0.04, n = 368 epochs with theta peak from 10 animals, Figure 6E). In the ChAT-ChR2 mice, the power increased by 51 \u00b1 9% (post hoc test: t(9) = 4.8, p=0.01)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and statistical analysis, shown in Figure 6E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "adbfd0cf-cf38-49db-9b7f-88d79c45373e",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C47",
+      "claim": "Optogenetic stimulation decreased the spectral peak frequency in the theta band from 7.7 \u00b1 0.2 to 7.2 \u00b1 0.1 Hz in ChAT-ChR2 mice during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "and the spectral peak frequency in the theta band decreased from 7.7 \u00b1 0.2 to 7.2 \u00b1 0.1 Hz (log-linear mixed-effects model, mouse group\u2013laser interaction: F(1, 4.8)=7.3, p=0.04, Figure 6F, post hoc test: t(30) = 4.5, p=0.001)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and statistical analysis, shown in Figure 6F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "019d6378-bbf7-4835-b78d-7ff3bbe831c0",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C48",
+      "claim": "Optogenetic stimulation increased oscillations in the slow gamma band (25\u201345 Hz) by 30 \u00b1 4% in ChAT-ChR2 mice during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation also increased by 30 \u00b1 4% oscillations in the slow gamma band (25\u201345 Hz) (log-linear mixed-effects model: mouse group\u2013laser interaction: F(1, 232)=26, p=10\u22126, n = 338 epochs with slow gamma peak from 10 animals, post hoc test for laser effect in ChAT-ChR2: t(295) = \u22128.2, p=10\u221214, Figure 6G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and statistical analysis, shown in Figure 6G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "28b7f520-def4-4ec0-b760-bde5553d7be4",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C49",
+      "claim": "The spectral peak frequency in the slow gamma did not significantly change during optogenetic stimulation in sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "while the spectral peak frequency in the slow gamma of 38 \u00b1 1 Hz did not significantly change (linear mixed-effects model, mouse group\u2013laser interaction: F(1,10) = 0.4, p=0.57)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "d963c3ed-43ab-4263-b4f5-d5bd05068c3c",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C50",
+      "claim": "Optogenetic stimulation of MS cholinergic neurons promotes theta-gamma oscillations in the CA1 of sleeping mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that in sleeping mice, optogenetic stimulation of MS cholinergic neurons promotes theta-gamma oscillations in the CA1, an effect that was not seen in awake mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "20e730bb-ea0a-49c1-817d-e0d119c95f03",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C51",
+      "claim": "MS cholinergic activation at the goal location, but not during navigation, impairs spatial memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that: (1) MS cholinergic activation at the goal location, but not during navigation, impairs spatial memory formation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from behavioral testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "6b638930-e78c-46cc-a885-a444e18a4062",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C52",
+      "claim": "MS cholinergic stimulation at the reward location reduces SWR incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) MS cholinergic stimulation at the reward location reduces SWR incidence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from LFP recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "c545f34a-f95c-4b58-a650-2668ac8653a6",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C54",
+      "claim": "Cholinergic stimulation almost completely suppresses SWRs in sleeping animals and suppresses SWRs by about one half in awake, behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that cholinergic stimulation almost completely suppresses SWRs in sleeping animals and suppresses SWRs by about one half in awake, behaving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and awake behavior",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "df305053-35fe-440e-b5a2-b009cfd10621",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C55",
+      "claim": "SWRs at the rewarded locations are thought to be crucial for learning.",
+      "claim_type": "EXPLICIT",
+      "source": "SWRs at the rewarded locations are thought to be crucial for learning (Dupret et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dupret et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "d61b21e4-2742-4864-8425-7d2b824e4fbd",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C56",
+      "claim": "Disruption of SWRs in the first 15\u201360 min following training impairs learning of spatial navigation tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence to suggest that CA1 SWRs, which occur during low cholinergic activity, play a crucial role in memory formation: disruption of SWRs in the first 15\u201360 min following training impairs learning of spatial navigation tasks (Girardeau et al., 2009; Ego-Stengel and Wilson, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Girardeau et al., 2009; Ego-Stengel and Wilson, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "8b9239e2-a5bb-4a2d-a171-0822666b76e4",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C57",
+      "claim": "Disruption or prolongation of SWRs during the continuous alternation task impairs or improves learning respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "while their disruption or prolongation during the continuous alternation task impairs or improves learning respectively (Jadhav et al., 2012; Fern\u00e1ndez-Ruiz et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jadhav et al., 2012; Fern\u00e1ndez-Ruiz et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "c779a960-575f-4511-8604-a44e6b18eabb",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C58",
+      "claim": "SWRs stabilize spatial representations of the CA1 place cells supporting navigation toward the newly learned goals.",
+      "claim_type": "EXPLICIT",
+      "source": "These SWRs stabilize spatial representations of the CA1 place cells supporting navigation toward the newly learned goals (Roux et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Roux et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "f63704ed-5f51-4666-a950-e7c7d4d42ebe",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C59",
+      "claim": "SWRs are predictive of performance in a spatial memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "and are predictive of performance in a spatial memory task (O'Neill et al., 2006; Dupret et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to O'Neill et al., 2006; Dupret et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "f594bc0f-456d-4038-ab80-91daa82c98e4",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C60",
+      "claim": "During SWRs, sequences of neuronal activation are replayed in both forward and reverse order.",
+      "claim_type": "EXPLICIT",
+      "source": "During these SWRs, sequences of neuronal activation are replayed in both forward and reverse order (Foster and Wilson, 2006; Csicsvari et al., 2007; Diba and Buzs\u00e1ki, 2007; Karlsson and Frank, 2009; Ambrose et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Foster and Wilson, 2006; Csicsvari et al., 2007; Diba and Buzs\u00e1ki, 2007; Karlsson and Frank, 2009; Ambrose et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "c9932303-9d22-4bdd-806e-940f3d39aaa1",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C61",
+      "claim": "Selective disruption of SWRs at the reward zone did not affect rats' performance in the inbound phase of the W-maze task.",
+      "claim_type": "EXPLICIT",
+      "source": "However, selective disruption of SWRs at the reward zone did not affect rats' performance in the inbound phase of the W-maze task (Jadhav et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jadhav et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "89891eea-ebc7-48ef-aea3-e2c621421830",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C62",
+      "claim": "Learning can be affected by the interruption of SWRs during post-learning sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Because learning can be affected by the interruption of SWRs during post-learning sleep (Girardeau et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Girardeau et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "bf0af330-a04c-4f4c-802e-29ee413bd857",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C63",
+      "claim": "MS cholinergic neurons discharge at a maximal rate when the animal is running.",
+      "claim_type": "EXPLICIT",
+      "source": "MS cholinergic neurons discharge at a maximal rate when the animal is running (Ma et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ma et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "a0424dd5-9872-4181-bf6f-91d9a5fa1c26",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C64",
+      "claim": "Cholinergic tone and MS cholinergic neuron discharge are at their lowest during slow-wave sleep and wake immobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, cholinergic tone and MS cholinergic neuron discharge are at their lowest during slow-wave sleep and wake immobility, which are associated with the highest ripple incidence (Fadda et al., 2000; Ma et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fadda et al., 2000; Ma et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "145dd90d-13b4-441f-be83-e1d52617169a",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C65",
+      "claim": "Stimulation of MS cholinergic neurons reduces SWR incidence in both awake behaving animals and naturally sleeping animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with these observations, we found that stimulation of MS cholinergic neurons reduces SWR incidence in both awake behaving animals and naturally sleeping animals, consistent with previous reports (Figures 4 and 5; Vandecasteele et al., 2014; Zhou et al., 2019; Ma et al., 2020)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings and citations to Vandecasteele et al., 2014; Zhou et al., 2019; Ma et al., 2020, shown in Figures 4 and 5",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "917783fd-ee62-4fd7-b629-0cef180e6bc3",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C66",
+      "claim": "Stimulation of MS cholinergic neurons of sleeping mice causes an apparent decrease of the PSD across the entire frequency spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that stimulation of MS cholinergic neurons of sleeping mice causes an apparent decrease of the PSD across the entire frequency spectrum (Figure 6). A similar effect was reported previously for anesthetized and freely behaving animals (Vandecasteele et al., 2014)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep and citation to Vandecasteele et al., 2014, shown in Figure 6",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "73374c7b-c5c6-4176-9abc-2d28c8f432fe",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C67",
+      "claim": "There are two distinct mechanisms of theta oscillations in the hippocampus, an atropine-sensitive and an atropine-resistant component.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological evidence in vivo indicates that there are two distinct mechanisms of theta oscillations in the hippocampus, an atropine-sensitive and an atropine-resistant component (Petsche et al., 1962; Buzs\u00e1ki, 2002; Colgin, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Petsche et al., 1962; Buzs\u00e1ki, 2002; Colgin, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "8a560d71-a6d8-42af-8c15-6794e11caf81",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C68",
+      "claim": "The atropine-sensitive component is mediated by the combination of cholinergic and GABAergic neurons in the MS.",
+      "claim_type": "EXPLICIT",
+      "source": "The atropine-sensitive component is mediated by the combination of cholinergic and GABAergic neurons in the MS (Buzs\u00e1ki, 2002; Manseau et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Buzs\u00e1ki, 2002; Manseau et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "e334113f-74c9-466c-8a3e-0acc816cce64",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C69",
+      "claim": "Atropine-sensitive theta is slower than the atropine-insensitive theta rhythm, which is generated primarily by the entorhinal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "and is slower than the atropine-insensitive theta rhythm, which is generated primarily by the entorhinal cortex (Buzs\u00e1ki, 2002; Colgin, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Buzs\u00e1ki, 2002; Colgin, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "0e6056e4-dceb-41c9-bbe7-9444244e113c",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C70",
+      "claim": "Atropine-sensitive theta was best detected in the anesthetized animal, while atropine-insensitive theta was shown to predominate in the running animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, atropine-sensitive theta was best detected in the anesthetized animal, while atropine-insensitive theta was shown to predominate in the running animal (Kramis et al., 1975; Newman et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kramis et al., 1975; Newman et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "fcbdca11-bccf-4463-aad4-2cdcd76dd2e5",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C71",
+      "claim": "MS cholinergic stimulation in sleeping mice shifted the spectral peak in the theta band to a lower frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this division, MS cholinergic stimulation in sleeping mice, in addition to increasing theta power, shifted the spectral peak in the theta band to a lower frequency (Figure 6F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from LFP recordings during sleep, shown in Figure 6F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "fb482ad1-1d4d-4d83-955e-4dc24f98e089",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C72",
+      "claim": "Loss of cholinergic neurons in the basal forebrain is one of the hallmarks of AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of cholinergic neurons in the basal forebrain is one of the hallmarks of AD (Whitehouse et al., 1982; Bowen et al., 1982)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Whitehouse et al., 1982; Bowen et al., 1982",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "8d8bb27b-8d6e-4ce7-b1d0-bce5c7ce562b",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C73",
+      "claim": "AD is associated with a reduction of ACh transporter expression in most cortical and subcortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "which is also associated with a reduction of ACh transporter expression in most cortical and subcortical areas (Davies and Maloney, 1976)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Davies and Maloney, 1976",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "2f938c9b-84e2-485a-875c-2b12c2075b00",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C74",
+      "claim": "MS cholinergic neuronal loss occurs in both healthy aging and AD brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the association between the loss of basal forebrain cholinergic neurons and AD is not completely clear (Mesulam, 2004), and a growing body of anatomical and functional studies suggests that MS cholinergic neuronal loss occurs in both healthy aging and AD brain (Schliebs and Arendt, 2011; Hampel et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mesulam, 2004; Schliebs and Arendt, 2011; Hampel et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "38129660-df8c-424f-bafa-a16fb0e2bdda",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C75",
+      "claim": "Drugs targeting the cholinergic systems have shown limited beneficial effects on cognitive deficits of aging and AD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, so far, drugs targeting the cholinergic systems have shown limited beneficial effects on cognitive deficits of aging and AD, but the reasons why are not entirely clear (Farlow et al., 2010; Ehret and Chamberlin, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Farlow et al., 2010; Ehret and Chamberlin, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "bd41e5d5-125f-4c4c-aef2-0073258212c3",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C76",
+      "claim": "Cholinesterase inhibitors prolong cholinergic activity by ~100 times and increase the basal cholinergic tone in the absence of spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholinesterase inhibitors prolong cholinergic activity by ~100 times and increase the basal cholinergic tone in the absence of spontaneous activity (Hay et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hay et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "03a929e4-091d-479e-a772-16aaa7b2e7f4",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C77",
+      "claim": "The cholinergic tone is high during exploration, which maintains the 'online' hippocampal state dominated by theta and gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, the cholinergic tone is high during exploration, which maintains the 'online' hippocampal state dominated by theta and gamma oscillations (Buzs\u00e1ki, 1989; Fadda et al., 2000; Giovannini et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Buzs\u00e1ki, 1989; Fadda et al., 2000; Giovannini et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "f06c00e0-0df0-4307-8bd5-a5cc66f096fb",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C78",
+      "claim": "Artificially increasing ACh release for as short a time as 50 s during a low cholinergic state is sufficient to impair task acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "This could impair memory formation as our results suggest that artificially increasing ACh release for as short a time as 50 s during a low cholinergic state is sufficient to impair task acquisition (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from behavioral testing, shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "406882c0-0613-4f20-b29e-a047cfa24b9a",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C79",
+      "claim": "Enhancing cholinergic activity during the 'online' state did not bring beneficial effects to memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, enhancing cholinergic activity during the 'online' state did not bring beneficial effects to memory formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from behavioral testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "f4237a42-d47a-4dd6-ad33-799847b93d2e",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "claim_id": "C80",
+      "claim": "Appropriate timing of cholinergic modulation is crucial in learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest that suboptimal timing of cholinergic activity impairs long-term memory formation and supports the idea that appropriate timing of cholinergic modulation is crucial in learning and memory (Micheau and Marighetto, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to Micheau and Marighetto, 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5674d36f-91aa-4666-a3a7-3bd72d18d0ef",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ChAT-Ai32 mice express ChR2-eYFP in medial septal cholinergic neurons with 65% of ChAT+ cells being YFP+ and 100% of YFP+ cells being ChAT+. Optogenetic stimulation (50 ms pulses at 10 Hz) significantly increased multi-unit activity in the MS from 7.9\u00b12.8 Hz to 22.7\u00b17.3 Hz (p=0.03).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 provide converging evidence for functional ChR2 expression in MS cholinergic neurons. The immunostaining data (C15, C16) demonstrate specificity of expression, and the electrophysiological recordings (C17) confirm functional activation with appropriate statistical support (n=6 recordings, p=0.03).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "784626d8-ddc9-4b5d-8974-841b20eb0249",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of MS cholinergic neurons at the goal location, but not during navigation, impairs spatial learning in the Y-maze task. ChAT-Ai32 mice in the 'goal' group took significantly longer to reach learning criterion (4.5\u00b10.3 days) compared to 'no stimulation' (2.9\u00b10.3 days, p=0.002) and 'navigation' groups (3.1\u00b10.4 days, p=0.05). Wild-type control mice showed no learning difference between goal and no stimulation groups (p=0.57).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 collectively demonstrate a spatially-specific effect of cholinergic stimulation on learning. The behavioral data are well-controlled with appropriate statistics (Dunn test with Holm-Bonferroni correction), adequate sample sizes (n=9-15 per group), and wild-type controls ruling out non-specific laser effects. The Bayes Factor analysis (BF10=45 for goal vs. no stim) provides strong evidence for the effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "856929d3-78ec-42f7-b863-7edbdcd3a532",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cholinergic activation did not affect the time mice spent at the goal location during the Y-maze task.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is supported by appropriate statistical analysis (linear mixed-effects model) showing no significant interaction (F(1,78)=0.01, p=0.94) or main effect (F(1,78)=0.1, p=0.73). This control analysis rules out confounding behavioral effects of the stimulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "d9883697-16cc-41b7-8ddb-aff5b4de4b33",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During the Y-maze task, theta power peaked in the central maze section and was reduced at the goal location. Optogenetic stimulation at the goal location did not differentially affect relative theta power (p=0.94) or slow gamma power (p=0.24) between ChAT-GFP and ChAT-ChR2 mice, though theta power increased by 16\u00b13% in both groups (p=0.05). The only differential effect was a reduction in the aperiodic component of the PSD in the 3-15 Hz range (p=10\u207b\u2077).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 are supported by appropriate LFP analysis using linear mixed-effects models accounting for repeated measures. The use of FOOOF decomposition to separate periodic and aperiodic components is methodologically sound. However, the small control group (n=2 ChAT-GFP mice) limits statistical power, which the authors acknowledge. The non-specific theta increase in both groups suggests a laser artifact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "c026cda6-9deb-4dbd-b05b-f149e483ce8c",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SWRs occurred at start and goal locations during the Y-maze task, with significantly more rewarded (82\u00b17%) than unrewarded trials (32\u00b113%) containing SWRs (p=0.02). Optogenetic stimulation reduced SWR incidence at the goal location in ChAT-ChR2 mice by 52\u00b17% (from 0.06\u00b10.01 to 0.03\u00b10.01 Hz, p=0.001) without affecting SWR spectral peak frequency (168\u00b12 Hz) or duration (37\u00b11 ms). SWR incidence did not change between early and late learning (p=0.58).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 provide strong evidence for cholinergic suppression of SWRs at the goal location. The statistical analysis is appropriate (log-linear mixed-effects models), and the finding that SWR properties (frequency, duration) are unchanged suggests suppression rather than alteration of SWR characteristics. The correlation with rewarded trials supports the behavioral relevance of goal-location SWRs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "ca5201fe-377d-4a31-8803-5b3c81a217bb",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of MS cholinergic neurons during sleep reduced SWR incidence in ChAT-ChR2 mice by 85\u00b13% (from 0.21\u00b10.01 to 0.03\u00b10.01 Hz, p=10\u207b\u00b9\u2074) but not in ChAT-GFP mice (p=10\u207b\u2076 for interaction). The stimulation did not change SWR spectral peak frequency (168\u00b11 Hz, p=0.48) or duration (38\u00b10.3 ms, p=0.35).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 demonstrate robust suppression of SWRs during sleep with strong statistical support (n=369 epochs from 10 animals, highly significant p-values). The preservation of SWR characteristics (frequency, duration) indicates suppression of incidence rather than alteration of individual events. This replicates prior findings and provides a comparison condition for the awake behavioral experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "e603917b-8747-41c3-8e3c-40262ac1d151",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "During sleep, optogenetic stimulation of MS cholinergic neurons caused a reduction in PSD across the full frequency range. Decomposition revealed that in ChAT-ChR2 mice, stimulation decreased the aperiodic component (p=0.006), increased relative theta power by 51\u00b19% (p=0.01), decreased theta peak frequency from 7.7\u00b10.2 to 7.2\u00b10.1 Hz (p=0.001), and increased slow gamma power by 30\u00b14% (p=10\u207b\u00b9\u2074) without changing gamma peak frequency (38\u00b11 Hz, p=0.57).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 are well-supported by appropriate spectral analysis methods (FOOOF decomposition) and statistical testing (linear mixed-effects models with n=338-369 epochs from 10 animals). The decomposition into periodic and aperiodic components resolves apparent contradictions with prior literature. The shift to lower theta frequency is consistent with atropine-sensitive theta. However, the authors note this effect was not observed during awake behavior, suggesting state-dependent differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "68c3658e-7354-4324-a2cd-8b3d832ee5b6",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MS cholinergic activation at the goal location, but not during navigation, impairs spatial memory formation. This stimulation reduces SWR incidence at the reward location. Cholinergic stimulation suppresses SWRs by approximately 85% in sleeping animals and by approximately 50% in awake, behaving animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C52, and C54 summarize the main findings and are supported by the experimental data from behavioral testing and LFP recordings. The differential suppression of SWRs between sleep (85%) and awake behavior (52%) is an important observation, though the mechanisms underlying this difference are not fully explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "7605eda8-dca2-4779-b033-532554321ca7",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior literature presents conflicting evidence regarding the role of cholinergic neurons in memory: degeneration correlates with memory impairment and cholinesterase inhibitors ameliorate Alzheimer's symptoms, yet selective lesions of MS cholinergic neurons have little impact on learning and memory. ACh levels vary dynamically during memory formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 accurately summarize prior literature with appropriate citations. These claims establish the rationale for the current study by highlighting the paradox that motivated the research. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "ce4c4199-26bd-4ad9-8233-b5a8be1cc2fc",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "According to Buzs\u00e1ki's two-stage model, long-term memory forms through initial labile trace formation followed by delayed synaptic potentiation. These stages are associated with distinct hippocampal network states: theta-gamma oscillations during exploration (encoding) and sharp wave ripples during immobility/sleep (consolidation), which are mutually exclusive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 accurately describe the theoretical framework underlying the study with appropriate citations. This establishes the conceptual basis for investigating cholinergic modulation of different network states during memory formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "506545be-6b79-4b6b-b405-69fd4946f74b",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cholinergic activation induces slow gamma in CA3 via M1 receptors and promotes theta-gamma while suppressing ripples in CA1 via M2/M4 receptors. Cholinergic tone is high during exploration (promoting theta) and low during rest (permitting SWRs). Disruption of cholinergic activity at different learning stages impairs memory task performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 accurately summarize prior literature on cholinergic modulation of hippocampal oscillations with appropriate citations. These claims establish the mechanistic basis for the experimental hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "e06c4cb8-0669-4ebe-806e-42b486381c26",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior studies indicate that SWRs at rewarded locations are crucial for learning. Disruption of SWRs in the 15-60 min following training impairs spatial learning, while disruption or prolongation during continuous alternation tasks impairs or improves learning respectively. During SWRs, neuronal sequences are replayed in forward and reverse order. However, selective SWR disruption at the reward zone did not affect W-maze performance, and learning can be affected by SWR interruption during post-learning sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C62 accurately summarize prior literature on the role of SWRs in memory with appropriate citations. The authors appropriately note the conflicting finding from Jadhav et al. (2012) regarding reward zone SWR disruption, which adds nuance to the interpretation of their results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "d25d8e66-146c-4d08-a896-775712e8cfd3",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MS cholinergic neurons discharge maximally during running and minimally during slow-wave sleep and wake immobility, corresponding to highest and lowest ripple incidence respectively. The current study confirms that stimulation of MS cholinergic neurons reduces SWR incidence in both awake behaving and naturally sleeping animals, consistent with previous reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 appropriately contextualize the current findings within prior literature. The replication of previous findings (Vandecasteele et al., 2014; Zhou et al., 2019; Ma et al., 2020) strengthens confidence in the experimental approach and extends these findings to the specific behavioral context of the Y-maze task.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "ce46b755-ae8a-42d6-9233-5dc08ca8f062",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Stimulation of MS cholinergic neurons in sleeping mice causes an apparent decrease in PSD across the entire frequency spectrum, similar to previous reports. There are two distinct theta mechanisms: atropine-sensitive (mediated by MS cholinergic and GABAergic neurons, slower, predominant in anesthetized animals) and atropine-resistant (generated by entorhinal cortex, faster, predominant in running animals). Consistent with this, MS cholinergic stimulation in sleeping mice shifted theta peak frequency to a lower frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 appropriately integrate the current findings with prior literature on theta oscillation mechanisms. The interpretation that the frequency shift reflects atropine-sensitive theta is reasonable and supported by the cited literature. However, the lack of this effect during awake behavior requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "d05bf9eb-d03f-47f6-a29d-36a3a5d1b787",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Loss of basal forebrain cholinergic neurons is a hallmark of Alzheimer's disease, though the association is not completely clear as cholinergic loss occurs in both healthy aging and AD. Cholinesterase inhibitors have shown limited beneficial effects on cognitive deficits. These drugs prolong cholinergic activity ~100-fold and increase basal tone. The current results suggest that artificially increasing ACh release for as short as 50 s during low cholinergic states impairs task acquisition, and enhancing cholinergic activity during the 'online' state provides no benefit. This supports the importance of appropriate timing of cholinergic modulation in learning and memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C80 present a reasonable interpretation of the current findings in the context of Alzheimer's disease therapeutics. The hypothesis that mistimed cholinergic enhancement could explain the limited efficacy of cholinesterase inhibitors is plausible and supported by the experimental data. However, this remains speculative as the study did not directly test cholinesterase inhibitors or AD models. The extrapolation from optogenetic stimulation in healthy mice to drug effects in AD patients requires caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "2ea1cee7-fea1-4a02-95f5-22864e8cc078",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Previous studies have reported sharp wave ripples at the reward location of different spatial navigation tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 accurately cites prior literature (O'Neill et al., 2006; Dupret et al., 2010) establishing the rationale for defining goal zones in the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "6093b7b8-177c-4b8c-bcbb-f5f0be28eb45",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Previous studies have shown that activation of septal cholinergic neurons suppresses CA1 SWRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 accurately cites prior literature (Vandecasteele et al., 2014; Ma et al., 2020) establishing the expected effect of cholinergic stimulation on SWRs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    },
+    {
+      "id": "0c1495ff-e5d1-400f-833d-ecb03b45a44b",
+      "content_id": "12bb7f56-cc76-4ceb-86b6-6e65a3badee0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "There are at least two distinct forms of theta oscillations in the hippocampus, only one of which is dependent on cholinergic receptors and can be observed during sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 accurately cites prior literature (Kramis et al., 1975) explaining why theta effects might differ between sleep and awake states.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:33:07.351927Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "98a537d1-59d6-491f-8f13-dbf4bed83869",
+      "result_id": "5674d36f-91aa-4666-a3a7-3bd72d18d0ef"
+    },
+    {
+      "claim_id": "dbe79f51-69a9-4ea4-92eb-1519ea0e9b92",
+      "result_id": "5674d36f-91aa-4666-a3a7-3bd72d18d0ef"
+    },
+    {
+      "claim_id": "017527ae-3ab9-42d6-8416-2c2e282ec728",
+      "result_id": "5674d36f-91aa-4666-a3a7-3bd72d18d0ef"
+    },
+    {
+      "claim_id": "83591940-18f1-4fdc-80d6-b01d1e73b524",
+      "result_id": "784626d8-ddc9-4b5d-8974-841b20eb0249"
+    },
+    {
+      "claim_id": "6f70da6e-50ba-41f5-80dd-0b431d9065b6",
+      "result_id": "784626d8-ddc9-4b5d-8974-841b20eb0249"
+    },
+    {
+      "claim_id": "4fc0b721-387a-4b67-bdda-1dea0d801b40",
+      "result_id": "784626d8-ddc9-4b5d-8974-841b20eb0249"
+    },
+    {
+      "claim_id": "53a072de-86f2-46bc-be16-2faea00496d1",
+      "result_id": "784626d8-ddc9-4b5d-8974-841b20eb0249"
+    },
+    {
+      "claim_id": "03ce3ab3-98a7-40f7-99c1-403c7fab79d5",
+      "result_id": "784626d8-ddc9-4b5d-8974-841b20eb0249"
+    },
+    {
+      "claim_id": "968ee70f-4537-49e8-8fe5-c6eb18310844",
+      "result_id": "856929d3-78ec-42f7-b863-7edbdcd3a532"
+    },
+    {
+      "claim_id": "0b12081a-f8ca-4a9f-961d-99b5ff892e02",
+      "result_id": "d9883697-16cc-41b7-8ddb-aff5b4de4b33"
+    },
+    {
+      "claim_id": "da2309d0-2355-49da-bd6b-cd300cebac8d",
+      "result_id": "d9883697-16cc-41b7-8ddb-aff5b4de4b33"
+    },
+    {
+      "claim_id": "e40c7361-9de9-49fc-b349-6a132db4995e",
+      "result_id": "d9883697-16cc-41b7-8ddb-aff5b4de4b33"
+    },
+    {
+      "claim_id": "a689b484-cd1e-4ab1-adf5-4c7e04b8eb37",
+      "result_id": "d9883697-16cc-41b7-8ddb-aff5b4de4b33"
+    },
+    {
+      "claim_id": "35c58e07-2aa5-4eff-9767-315625f27339",
+      "result_id": "d9883697-16cc-41b7-8ddb-aff5b4de4b33"
+    },
+    {
+      "claim_id": "9bcbbc21-fed7-4299-bb0a-5f9ea199f18d",
+      "result_id": "d9883697-16cc-41b7-8ddb-aff5b4de4b33"
+    },
+    {
+      "claim_id": "118a286f-9351-4002-99b3-55e7b083e0da",
+      "result_id": "d9883697-16cc-41b7-8ddb-aff5b4de4b33"
+    },
+    {
+      "claim_id": "eb98df6d-d1ce-43fe-83d1-1c9ad548343b",
+      "result_id": "c026cda6-9deb-4dbd-b05b-f149e483ce8c"
+    },
+    {
+      "claim_id": "af82e984-6f96-43a5-bb87-b374de1c2ee3",
+      "result_id": "c026cda6-9deb-4dbd-b05b-f149e483ce8c"
+    },
+    {
+      "claim_id": "680ad671-80a5-44df-a4f4-3385498343b1",
+      "result_id": "c026cda6-9deb-4dbd-b05b-f149e483ce8c"
+    },
+    {
+      "claim_id": "cd9ab94f-69cf-463b-8946-3f9fecdba545",
+      "result_id": "c026cda6-9deb-4dbd-b05b-f149e483ce8c"
+    },
+    {
+      "claim_id": "13a2eab8-66a3-446b-8026-69d83e39244f",
+      "result_id": "c026cda6-9deb-4dbd-b05b-f149e483ce8c"
+    },
+    {
+      "claim_id": "0855ccb1-8768-405d-b719-66e7fa41cf71",
+      "result_id": "c026cda6-9deb-4dbd-b05b-f149e483ce8c"
+    },
+    {
+      "claim_id": "ba4b78db-54e5-4a77-bfc5-b59ab37266b3",
+      "result_id": "ca5201fe-377d-4a31-8803-5b3c81a217bb"
+    },
+    {
+      "claim_id": "d636690e-8006-402c-9f79-de2be7426b88",
+      "result_id": "ca5201fe-377d-4a31-8803-5b3c81a217bb"
+    },
+    {
+      "claim_id": "319c66aa-13bf-403c-ad7d-3d0747ecac7d",
+      "result_id": "ca5201fe-377d-4a31-8803-5b3c81a217bb"
+    },
+    {
+      "claim_id": "5dbd08e7-6192-4d5b-be82-7c5c6d43b0b3",
+      "result_id": "ca5201fe-377d-4a31-8803-5b3c81a217bb"
+    },
+    {
+      "claim_id": "f2034164-f408-4330-ac84-70dc235701e0",
+      "result_id": "e603917b-8747-41c3-8e3c-40262ac1d151"
+    },
+    {
+      "claim_id": "ef8406be-1f4b-4357-aecb-4a83a8a1e0c9",
+      "result_id": "e603917b-8747-41c3-8e3c-40262ac1d151"
+    },
+    {
+      "claim_id": "0e5dae59-1761-463f-8fe8-07499b5c7cf6",
+      "result_id": "e603917b-8747-41c3-8e3c-40262ac1d151"
+    },
+    {
+      "claim_id": "adbfd0cf-cf38-49db-9b7f-88d79c45373e",
+      "result_id": "e603917b-8747-41c3-8e3c-40262ac1d151"
+    },
+    {
+      "claim_id": "019d6378-bbf7-4835-b78d-7ff3bbe831c0",
+      "result_id": "e603917b-8747-41c3-8e3c-40262ac1d151"
+    },
+    {
+      "claim_id": "28b7f520-def4-4ec0-b760-bde5553d7be4",
+      "result_id": "e603917b-8747-41c3-8e3c-40262ac1d151"
+    },
+    {
+      "claim_id": "d963c3ed-43ab-4263-b4f5-d5bd05068c3c",
+      "result_id": "e603917b-8747-41c3-8e3c-40262ac1d151"
+    },
+    {
+      "claim_id": "20e730bb-ea0a-49c1-817d-e0d119c95f03",
+      "result_id": "68c3658e-7354-4324-a2cd-8b3d832ee5b6"
+    },
+    {
+      "claim_id": "6b638930-e78c-46cc-a885-a444e18a4062",
+      "result_id": "68c3658e-7354-4324-a2cd-8b3d832ee5b6"
+    },
+    {
+      "claim_id": "c545f34a-f95c-4b58-a650-2668ac8653a6",
+      "result_id": "68c3658e-7354-4324-a2cd-8b3d832ee5b6"
+    },
+    {
+      "claim_id": "e6f13b0f-07cc-4b6d-88a9-2e88b6c7b193",
+      "result_id": "7605eda8-dca2-4779-b033-532554321ca7"
+    },
+    {
+      "claim_id": "9b57f35d-f1d1-4a61-b72b-64674fea2584",
+      "result_id": "7605eda8-dca2-4779-b033-532554321ca7"
+    },
+    {
+      "claim_id": "5796ed7d-e718-4a4b-949d-6b202502c5aa",
+      "result_id": "7605eda8-dca2-4779-b033-532554321ca7"
+    },
+    {
+      "claim_id": "afd3c4b9-8761-44a3-a0e8-4a8069545ccd",
+      "result_id": "7605eda8-dca2-4779-b033-532554321ca7"
+    },
+    {
+      "claim_id": "1c5ea3f8-f33a-47ae-a9a7-2bf525132d71",
+      "result_id": "7605eda8-dca2-4779-b033-532554321ca7"
+    },
+    {
+      "claim_id": "d3aa0c86-a8f9-4bec-b28b-826e28ee44e8",
+      "result_id": "ce4c4199-26bd-4ad9-8233-b5a8be1cc2fc"
+    },
+    {
+      "claim_id": "16182ad8-b2dc-4938-bc01-8bfb5d3dc6d9",
+      "result_id": "ce4c4199-26bd-4ad9-8233-b5a8be1cc2fc"
+    },
+    {
+      "claim_id": "64151315-072d-41f3-934b-355886889979",
+      "result_id": "ce4c4199-26bd-4ad9-8233-b5a8be1cc2fc"
+    },
+    {
+      "claim_id": "3c7694ca-7572-4e65-b0fe-23b455620bb7",
+      "result_id": "ce4c4199-26bd-4ad9-8233-b5a8be1cc2fc"
+    },
+    {
+      "claim_id": "dc323449-57a9-426c-a8af-98f708a0ffc7",
+      "result_id": "ce4c4199-26bd-4ad9-8233-b5a8be1cc2fc"
+    },
+    {
+      "claim_id": "c7e4ecf9-1286-4c11-9e8f-89ae59b4c9ec",
+      "result_id": "506545be-6b79-4b6b-b405-69fd4946f74b"
+    },
+    {
+      "claim_id": "6045eaef-8c21-48e1-8486-e6f126435c88",
+      "result_id": "506545be-6b79-4b6b-b405-69fd4946f74b"
+    },
+    {
+      "claim_id": "5204ea7d-626f-42ee-95a8-a484af6f39ac",
+      "result_id": "506545be-6b79-4b6b-b405-69fd4946f74b"
+    },
+    {
+      "claim_id": "3e15600c-572b-44ef-ba94-0f3d219e1cde",
+      "result_id": "506545be-6b79-4b6b-b405-69fd4946f74b"
+    },
+    {
+      "claim_id": "df305053-35fe-440e-b5a2-b009cfd10621",
+      "result_id": "e06c4cb8-0669-4ebe-806e-42b486381c26"
+    },
+    {
+      "claim_id": "d61b21e4-2742-4864-8425-7d2b824e4fbd",
+      "result_id": "e06c4cb8-0669-4ebe-806e-42b486381c26"
+    },
+    {
+      "claim_id": "8b9239e2-a5bb-4a2d-a171-0822666b76e4",
+      "result_id": "e06c4cb8-0669-4ebe-806e-42b486381c26"
+    },
+    {
+      "claim_id": "c779a960-575f-4511-8604-a44e6b18eabb",
+      "result_id": "e06c4cb8-0669-4ebe-806e-42b486381c26"
+    },
+    {
+      "claim_id": "f63704ed-5f51-4666-a950-e7c7d4d42ebe",
+      "result_id": "e06c4cb8-0669-4ebe-806e-42b486381c26"
+    },
+    {
+      "claim_id": "f594bc0f-456d-4038-ab80-91daa82c98e4",
+      "result_id": "e06c4cb8-0669-4ebe-806e-42b486381c26"
+    },
+    {
+      "claim_id": "c9932303-9d22-4bdd-806e-940f3d39aaa1",
+      "result_id": "e06c4cb8-0669-4ebe-806e-42b486381c26"
+    },
+    {
+      "claim_id": "89891eea-ebc7-48ef-aea3-e2c621421830",
+      "result_id": "e06c4cb8-0669-4ebe-806e-42b486381c26"
+    },
+    {
+      "claim_id": "bf0af330-a04c-4f4c-802e-29ee413bd857",
+      "result_id": "d25d8e66-146c-4d08-a896-775712e8cfd3"
+    },
+    {
+      "claim_id": "a0424dd5-9872-4181-bf6f-91d9a5fa1c26",
+      "result_id": "d25d8e66-146c-4d08-a896-775712e8cfd3"
+    },
+    {
+      "claim_id": "145dd90d-13b4-441f-be83-e1d52617169a",
+      "result_id": "d25d8e66-146c-4d08-a896-775712e8cfd3"
+    },
+    {
+      "claim_id": "917783fd-ee62-4fd7-b629-0cef180e6bc3",
+      "result_id": "ce46b755-ae8a-42d6-9233-5dc08ca8f062"
+    },
+    {
+      "claim_id": "73374c7b-c5c6-4176-9abc-2d28c8f432fe",
+      "result_id": "ce46b755-ae8a-42d6-9233-5dc08ca8f062"
+    },
+    {
+      "claim_id": "8a560d71-a6d8-42af-8c15-6794e11caf81",
+      "result_id": "ce46b755-ae8a-42d6-9233-5dc08ca8f062"
+    },
+    {
+      "claim_id": "e334113f-74c9-466c-8a3e-0acc816cce64",
+      "result_id": "ce46b755-ae8a-42d6-9233-5dc08ca8f062"
+    },
+    {
+      "claim_id": "0e6056e4-dceb-41c9-bbe7-9444244e113c",
+      "result_id": "ce46b755-ae8a-42d6-9233-5dc08ca8f062"
+    },
+    {
+      "claim_id": "fcbdca11-bccf-4463-aad4-2cdcd76dd2e5",
+      "result_id": "ce46b755-ae8a-42d6-9233-5dc08ca8f062"
+    },
+    {
+      "claim_id": "fb482ad1-1d4d-4d83-955e-4dc24f98e089",
+      "result_id": "d05bf9eb-d03f-47f6-a29d-36a3a5d1b787"
+    },
+    {
+      "claim_id": "8d8bb27b-8d6e-4ce7-b1d0-bce5c7ce562b",
+      "result_id": "d05bf9eb-d03f-47f6-a29d-36a3a5d1b787"
+    },
+    {
+      "claim_id": "2f938c9b-84e2-485a-875c-2b12c2075b00",
+      "result_id": "d05bf9eb-d03f-47f6-a29d-36a3a5d1b787"
+    },
+    {
+      "claim_id": "38129660-df8c-424f-bafa-a16fb0e2bdda",
+      "result_id": "d05bf9eb-d03f-47f6-a29d-36a3a5d1b787"
+    },
+    {
+      "claim_id": "bd41e5d5-125f-4c4c-aef2-0073258212c3",
+      "result_id": "d05bf9eb-d03f-47f6-a29d-36a3a5d1b787"
+    },
+    {
+      "claim_id": "03a929e4-091d-479e-a772-16aaa7b2e7f4",
+      "result_id": "d05bf9eb-d03f-47f6-a29d-36a3a5d1b787"
+    },
+    {
+      "claim_id": "f06c00e0-0df0-4307-8bd5-a5cc66f096fb",
+      "result_id": "d05bf9eb-d03f-47f6-a29d-36a3a5d1b787"
+    },
+    {
+      "claim_id": "406882c0-0613-4f20-b29e-a047cfa24b9a",
+      "result_id": "d05bf9eb-d03f-47f6-a29d-36a3a5d1b787"
+    },
+    {
+      "claim_id": "f4237a42-d47a-4dd6-ad33-799847b93d2e",
+      "result_id": "d05bf9eb-d03f-47f6-a29d-36a3a5d1b787"
+    },
+    {
+      "claim_id": "f14e5769-63ca-46ae-a401-684e88cbc6fc",
+      "result_id": "2ea1cee7-fea1-4a02-95f5-22864e8cc078"
+    },
+    {
+      "claim_id": "6df3b36a-013c-49f4-825e-72c6559141af",
+      "result_id": "6093b7b8-177c-4b8c-bcbb-f5f0be28eb45"
+    },
+    {
+      "claim_id": "df401846-c79e-4873-b67a-1bd7b67c2c86",
+      "result_id": "0c1495ff-e5d1-400f-833d-ecb03b45a44b"
+    }
+  ],
+  "comparisons": []
+}

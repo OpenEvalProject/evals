@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Sepsis represents a substantial global health burden with high mortality and economic costs. Early intervention has improved survival from ~50% to ~20% mortality, but survivors remain at increased risk for late mortality due to immunoparalysis characterized by increased susceptibility to infections and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C20 establish the clinical significance of sepsis through cited epidemiological data (CDC, Rudd et al., Dombrovskiy et al.) and describe the immunoparalysis state. These are well-established background claims supported by appropriate citations to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Septic patients show increased Ki67 expression in CD8 T cells, particularly in TCM and TSCM subsets, with TCM being the most prominent proliferating population. A cohort of septic patients exhibited lymphopenia, though the frequency of CD8 T cells among lymphocytes was not significantly different from healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are supported by flow cytometry data in Figure 1 showing Ki67 expression patterns across CD8 T cell subsets in septic patients versus healthy controls. The data demonstrate differential proliferation with statistical significance for TCM and TSCM. Claims C84-C86 appropriately acknowledge limitations in patient sampling timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C6",
+      "C7"
+    ],
+    "result": "In a murine CLP model, memory P14 CD8 T cells are similarly susceptible to sepsis-induced lymphopenia as endogenous antigen-experienced cells, show increased Ki67 expression after sepsis, and undergo numerical recovery over time, demonstrating that TCM proliferation is associated with numerical recovery of pathogen-specific memory CD8 T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by data in Figure 2 showing equivalent lymphopenia susceptibility (C36-C37), Ki67 induction (C38), and numerical recovery (C39) in the P14 adoptive transfer model. This validates the model system and links to the human observations (C6-C7). The experimental design is appropriate with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C8"
+    ],
+    "result": "FlowSOM analysis revealed differential representation of memory CD8 T cell phenotypes between Sham and CLP hosts, with cluster 6 (TEM phenotype: CD62L-KLRG1+CD127-CX3CR1+) enriched in Sham mice and cluster 8 (TCM phenotype: CD62L+KLRG1-CD127+CX3CR1-) enriched in CLP mice, demonstrating that sepsis leads to compositional changes favoring TCM over TEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by unbiased FlowSOM clustering and phenotypic analysis in Figure 3. The phenotypic markers used to define TEM and TCM are consistent with established definitions (C43 references prior knowledge appropriately). The data clearly show enrichment of TCM-like cells in CLP hosts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C78"
+    ],
+    "result": "Both TCM and TEM proliferate more in CLP hosts than Sham controls, but TCM proliferate more robustly than TEM in both groups, consistent with their known higher homeostatic proliferation capacity. This differential proliferation, measured by both Ki67 and BrdU incorporation, leads to increased TCM frequency by day 16 post-surgery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by proliferation data in Figure 4b-e using two independent methods (Ki67 and BrdU). The findings are consistent with established biology (C78, cited to Wherry et al., 2003). Statistical significance is shown for key comparisons. The use of two proliferation markers strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C79"
+    ],
+    "result": "Memory P14 CD8 T cells from CLP hosts show altered tissue localization with trending reduction in liver and peripheral blood relative to spleen, and significant increases in mediastinal and mesenteric lymph nodes, consistent with the shift toward TCM which preferentially localize to lymphatic tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by tissue distribution data in Figure 4g. The pattern is consistent with known TCM/TEM localization biology (C79, appropriately cited). However, the liver and PBL differences are described as \"trending\" without statistical significance, which is appropriately acknowledged. The lymph node enrichment is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C9"
+    ],
+    "result": "RNA-seq analysis revealed 269 differentially expressed genes at D31 post-surgery between Sham and CLP memory CD8 T cells. These changes include: (1) 99 genes associated with accelerated time-dependent memory changes, (2) 113 genes representing a persistent sepsis-induced transcriptional 'scar', and (3) 57 genes representing novel changes arising in the post-septic environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by RNA-seq data in Figure 5b-e with appropriate statistical thresholds (fold change >1.5, p<0.05). The clustering approach to categorize gene changes is logical and well-described. PCA analysis (C54) shows clear separation between groups. The three-cluster classification provides mechanistic insight into the nature of transcriptional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "ATAC-seq identified 1646 differentially accessible chromatin regions, predominantly showing increased accessibility in CLP hosts. Concordant changes in chromatin accessibility and gene expression were observed for genes involved in CD8 T cell survival, DNA damage repair, and cell cycling (P2rx7, Rad51, Bub1b), as well as the Sell locus (CD62L), which showed increased accessibility and expression in CLP cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are supported by ATAC-seq data in Figure 5f-j. The concordance analysis between chromatin accessibility and gene expression is appropriate and strengthens the mechanistic interpretation. The functional relevance of identified genes is supported by citations (C62). The Sell locus example (C64) provides direct validation linking chromatin, transcription, and protein expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "GSEA revealed enrichment of cell cycle-related pathways (Ribosome, DNA Replication, Nucleotide Excision Repair, Proteasome, Cell Cycle) in CLP CD8 T cells, including substantial enrichment of ribosomal proteins. Conversely, pathways related to cell adhesion molecules and integrin expression were negatively enriched in CLP cells. Comparison with published datasets confirmed that CLP P14s are biased toward memory CD8 T cells while Sham P14s are biased toward effector CD8 T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by GSEA data in Figure 6 and Figure 6\u2014figure supplement 1. The pathway enrichments are consistent with the observed proliferation and phenotypic changes. The comparison with published datasets (C71, KAECH_DAY15_EFF_VS_MEMORY_CD8_TCELL) provides independent validation of the effector-to-memory shift. The reduced integrin expression has functional implications explored in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "P14 CD8 T cells from CLP hosts show impaired TCR-dependent adhesion under limiting stimulation conditions and reduced AKT clustering at the cell membrane following TCR stimulation, even when adhesion capacity is normalized by high stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by adhesion assay and TIRF microscopy data in Figure 7\u2014figure supplement 1. The experimental design appropriately tests adhesion at different stimulation levels to distinguish between adhesion capacity and signaling defects. The AKT clustering deficit despite equivalent adhesion at high stimulation suggests intrinsic signaling impairments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Memory P14 CD8 T cells from CLP hosts show no deficiency in IFN\u03b3 production but have increased capacity to produce IL-2 compared to Sham controls following peptide stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by intracellular cytokine staining data in Figure 7b-d using a mixed CFSE-labeled splenocyte system that controls for APC differences. The increased IL-2 production is consistent with the TCM phenotype shift. Statistical significance is shown for IL-2 (C75). Similar results in endogenous cells (Figure 7\u2014figure supplement 2) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C10",
+      "C11"
+    ],
+    "result": "Memory P14 CD8 T cells from both Sham and CLP hosts control L. monocytogenes infection better than naive hosts, but Sham-derived cells show significantly better control than CLP-derived cells (77-fold difference in liver, 20-fold in spleen). This demonstrates that sepsis-induced changes in memory CD8 T cell composition and function culminate in reduced capacity to control bacterial infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by adoptive transfer and bacterial challenge data in Figure 7e-g. The experimental design appropriately isolates T cell-intrinsic effects by transferring cells into naive recipients. The magnitude of differences (77-fold liver, 20-fold spleen) is substantial and statistically significant. This integrates the phenotypic, transcriptional, and functional data to demonstrate biological consequences (C10-C11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C87",
+      "C88"
+    ],
+    "result": "The shift toward TCM may pose problems for tissue-resident memory (TRM) cells because TRM are seeded from circulating TEM, and the reduced TEM pool may lead to more rapid waning of lung TRM and increased susceptibility to previously encountered infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C82 appropriately cite prior work establishing TRM biology. However, claims C87-C88 are speculative inferences not directly tested in this study. While the logic is sound based on known TRM biology, no data on TRM numbers, seeding, or waning are presented. This represents an important hypothesis for future work but cannot be considered supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C98"
+    ],
+    "result": "The authors speculate that sepsis-induced changes may be relevant to other inflammatory conditions (e.g., SARS-CoV-2), that infections controlled by TCM may be unimpaired or enhanced post-sepsis, that different T cell populations may respond differently based on antigen specificity, and that understanding these mechanisms could inform vaccination strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C93, C95-C96, and C98 are explicitly speculative statements about potential implications and future directions. While these are reasonable hypotheses based on the presented data, they are not tested in the current study. These represent appropriate discussion points but should not be considered supported results. They are clearly presented as speculation in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Proliferation by naive CD8 T cells in septic hosts suggests that CD8 T cells are proliferating in response to the lymphopenic environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by the Ki67 data in Figure 1e showing proliferation in naive CD8 T cells from septic patients. The inference that this represents lymphopenia-driven proliferation is reasonable given the context and is consistent with cited literature on homeostatic proliferation (C83). However, the manuscript does not deeply investigate naive cell proliferation mechanisms.",
+    "result_type": "MINOR"
+  }
+]

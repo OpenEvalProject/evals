@@ -1,0 +1,884 @@
+{
+  "submission": {
+    "id": "0968177e-cd2e-4098-beac-6c6dcf7b82b3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:33:11.027464Z",
+    "updated_at": "2025-12-03T06:33:11.027464Z"
+  },
+  "content": [
+    {
+      "id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "submission_id": "0968177e-cd2e-4098-beac-6c6dcf7b82b3",
+      "content_type": "manuscript",
+      "content_text": "# Evolution of diversity in metabolic strategies\n\n## Authors\n\n- Rodrigo Caetano<sup>1</sup> ([ORCID: 0000-0003-2837-113X](https://orcid.org/0000-0003-2837-113X)) \u2020\n- Yaroslav Ispolatov<sup>2</sup> ([ORCID: 0000-0002-0201-3396](https://orcid.org/0000-0002-0201-3396))\n- Michael Doebeli<sup>3</sup> ([ORCID: 0000-0002-5975-5710](https://orcid.org/0000-0002-5975-5710))\n\n### Affiliations\n\n1. Departamento de F\u00edsica, Universidade Federal do Paran\u00e1 Curitiba Brazil\n2. Department of Physics, University of Santiago of Chile (USACH) Santiago Chile\n3. Department of Mathematics and Department of Zoology, University of British Columbia Vancouver Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding the origin and maintenance of biodiversity is a fundamental problem. Many theoretical approaches have been investigating ecological interactions, such as competition, as potential drivers of diversification. Classical consumer-resource models predict that the number of coexisting species should not exceed the number of distinct resources, a phenomenon known as the competitive exclusion principle. It has recently been argued that including physiological tradeoffs in consumer-resource models can lead to violations of this principle and to ecological coexistence of very high numbers of species. Here, we show that these results crucially depend on the functional form of the tradeoff. We investigate the evolutionary dynamics of resource use constrained by tradeoffs and show that if the tradeoffs are non-linear, the system either does not diversify or diversifies into a number of coexisting species that do not exceed the number of resources. In particular, very high diversity can only be observed for linear tradeoffs.\n\n## Introduction\n\nLife on Earth is spectacularly diverse (May, 1988). For example, one study in the early 2000s found that the number of species of fungi is, by a conservative estimate, ca. 1.5 million (Hawksworth, 2001), which was subsequently revised to be between 2.2 and 3.8 million species (Hawksworth and L\u00fccking, 2017). Microbes are by far the most diverse form of life. They constitute approximately 70\u201390% of all species (Larsen et al., 2017). Perhaps even more astonishing than the number of species is the fact that all of them came from a single common ancestor (Darwin, 1859; Steel and Penny, 2010; Theobald, 2010). To understand the fundamental mechanisms behind such diversification is one of the most relevant problems addressed by the scientific community (Mayr and Mayr, 1963; Coyne, 1992; Rice and Hostert, 1993; Higashi et al., 1999; Dieckmann and Doebeli, 1999; Gavrilets and Waxman, 2002; de Aguiar et al., 2009; Doebeli, 2011).\n\nRecently, ecological interactions, such as competition, have received a lot of attention as potentially very strong drivers of diversification and speciation. A widely used class of models in which this phenomenon can be observed is based on classical Lotka-Volterra competition models, which are augmented by assuming that the carrying capacity is a (typically unimodal) function of a continuous phenotype, and that the strength of competition between two phenotypes is measured by a competition kernel, which is typically assumed to be a (symmetric) function of the distance between the competing phenotypes, with a maximum at distance 0 (so that the strength of competition decreases with increasing phenotypic distance).\n\nThese assumptions are biologically plausible, and such models have been widely used to provide insights into evolutionary diversification due to competition (Dieckmann and Doebeli, 1999; Doebeli and Ispolatov, 2010; Doebeli and Ispolatov, 2017). However, these models are not derived mechanistically from underlying resource dynamics, and in fact it is known that the commonly used Gaussian functions for the carrying capacity and the competition kernel are not compatible with resource-consumer models (Abrams, 1986; Ackermann and Doebeli, 2004). A more mechanistic approach is desirable.\n\nRecently, a MacArthur consumer-resource model (Macarthur and Levins, 1967) was studied in an ecological context with a view toward explaining the existence of very high levels of diversity (Posfai et al., 2017; Erez et al., 2020). The authors consider different species competing for $p$ interchangeable resources, each supplied at a constant rate (Posfai et al., 2017) or periodically repleted after being used (Erez et al., 2020). A consumer species is characterized by an uptake strategy, $\\alpha=(\\alpha_{1},\u2026,\\alpha_{p})$, where the $j$\u00a0th component $\\alpha_{j}\\geq0$ represents the amount of cellular metabolism allocated to the uptake of the $j$\u00a0th resource. The rate of consumption of the $j$\u00a0th resource and thus its contribution to the growth rate is assumed to be proportional to $\\alpha_{j}$. The total amount of cellular metabolism available for resource uptake is limited, and hence it is natural to assume a tradeoff between the uptake rates of different resources. In general mathematical terms, a tradeoff is typically given by a function $T\u2062(\\alpha)=T\u2062(\\alpha_{1},\u2026,\\alpha_{p})$ that is increasing in each of the arguments $\\alpha_{j}$, and such that the only permissible allocation strategies \u03b1 are those satisfying $T\u2062(\\alpha)\\leqE$, where $E$ is a constant. The analysis is then typically restricted to the subspace of strategies defined by $T\u2062(\\alpha)=E$ (because $T$ is increasing in each $\\alpha_{j}$). It was shown in Posfai et al., 2017; Erez et al., 2020 that, under the assumption of a linear tradeoff, $\\sum_{j}^{p}\\alpha_{j}=E$, very high levels of diversity, that\u00a0is, many different species with different \u03b1-strategies, can coexist. This is a very interesting finding because it violates the competitive exclusion principle (Hardin, 1960), according to which at most $p$ different species should be able to stably coexist on $p$ different resources. Such high levels of diversity emerging from simple consumer-resource models could help solve the paradox of the plankton (Hutchinson, 1961) from an ecological perspective.\n\nHowever, metabolic tradeoffs are not necessarily linear, and in fact there is reason to believe that they almost never are. Nature owes its complexity and diversity to the non-linearity of the underlying physical and chemical processes. In particular, the non-linearity of tradeoffs is an essentially inevitable consequence of the general non-linearity of chemical kinetics. The rate and mass\u00a0action equilibrium of even a simple bimolecular reaction are in general non-linear functions of the concentrations of reactants. Linear approximations are commonly used when the concentrations of certain reactants are vastly exceeding the concentrations of others, or when the binding is so strong that the dissociation constant of a complex is much less than typical concentrations of its constituents. However, while the concentrations of enzymes in bacteria (which are probably the most realistic prototype for models\u00a0of Posfai et al., 2017; Erez et al., 2020) are generally below those of their substrates, the difference is often only few- or 10-fold, which is insufficient to approximate the enzymatic kinetics by functions that are linear in enzymatic concentrations. For example, a detailed study (Bennett et al., 2009) of the model microbe Escherichia coli revealed that out of 103 metabolites, 35 have concentrations above 1 mM, but the concentrations of 46 metabolites are in tens or single micromole digits, including two metabolites with concentrations below 1 \u03bcM. Supporting this, BIONUMBERS (Milo et al., 2010) estimate the typical metabolite concentration in an E. coli bacterium as 32 \u03bcM. At the same time, BIONUMBERS provide the evidence for concentrations of important E. coli glycolysis enzymes in tens and even hundreds of \u03bcM, and hence the difference between metabolite and enzyme concentrations generally does not seem to be large enough to justify linear approximations.\n\nAnother argument for the prevalence of non-linearity in tradeoffs is based on the oligomerization of more than half of all metabolic enzymes (Marianayagam et al., 2004). The dissociation constants of dimer or oligomer enzymes is often comparable to the concentrations of its monomer units to make the dimerization sensitive to environmental conditions and use it as a regulator of enzymatic activity (Ali and Imperiali, 2005 Traut, 1994). Thus, doubling the concentration of an oligomer requires more (in case of hetero-oligomer) or less (in case of homo-oligomer) than doubling the concentrations of its monomers, and hence the metabolic costs of the former in terms of the metabolic costs of the latter are non-linear.\n\nSince metabolic tradeoffs can often be expected to be non-linear, here we generalize the models of Posfai et al., 2017; Erez et al., 2020 by incorporating non-linear tradeoffs in resource use. Specifically, we consider energy budgets of the form\n\n$$\n\\sumj=1p\\alpha_{j}^{\\gamma}=E,\n$$\n\nwhere \u03b3 and $E$ are positive constants.\n\nIn addition, we incorporate evolutionary dynamics into the ecological models of Posfai et al., 2017; Erez et al., 2020, which allows us to investigate not only the conditions under which diversity can be maintained, but also the evolution of diversity from a single ancestral species. We show that in the resulting evolutionary model, coexistence of more than $p$ species only emerges for the (structurally unstable) linear case $\\gamma=1$. Using adaptive dynamics and numerical simulations, we show that regardless of the value of \u03b3, an initially monomorphic population always evolves to an attractive fixed point (also called \u2018singular point\u2019), after which two generic scenarios are possible: (i) if $\\gamma<1$, the population branches and diversifies, with the maximal number of coexisting species equal to the number of resources $p$, a state in which each species is a complete specialist on exactly one of the resources; (ii) if $\\gamma>1$, an initially monomorphic population also evolves to a singular point, but subsequently does not diversify and instead remains a monomorphic generalist.\n\nTo make the argument for the relevance of non-linear tradeoffs even more solid, we prove that an omnipresent non-linearity in the dependence of nutrient uptake rates on \u03b1 can be transformed into the non-linearity of tradeoff (Equation 1), and vice versa. Thus, a non-linearity in either the tradeoff or the metabolic rates is sufficient to bring the diversity down to the competitive exclusion limit. We also show that the two scenarios (of either a generalist or $p$ specialists) emerge as a result of purely ecological dynamics in a system initially populated with multiple species with different uptake strategies \u03b1 that satisfy (Equation 1).\n\nOverall, our results show that very high levels of diversity do not evolve in the consumer-resource model considered here in a realistic scenario where tradeoffs in resource preference or the resource uptake rates are non-linear.\n\n### Model and results\n\nWe consider a population competing for $p$ substitutable resources in well-mixed environments. A phenotypic species \u03b1 is characterized by its metabolic allocation strategy $\\alpha=(\\alpha_{1},\u2026,\\alpha_{p})$, where $\\alpha_{j}$ is the per capita rate at which individuals of species \u03b1 take up the $j$\u00a0th nutrient. Various coexisting species are distinguished by their specific \u03b1\u2019s. From a physiological perspective, $\\alpha_{j}$ is proportional to the amount of metabolic effort allocated by the individuals of species \u03b1 to capture nutrient $j$. Intrinsic limitations on metabolic activities impose a restriction on the total amount of nutrient uptake. For simplicity, we assume that this intrinsic limitation leads to a tradeoff in the components $\\alpha_{j}$ of the form (Equation 1). (Note that we also assume $\\alpha_{j}\\geq0$ for all $j$.) Throughout, we will set the scaling parameter $E=1$. (See Appendix 1 for a more general treatment, in which the exponent \u03b3 can differ for different directions $\\alpha_{j}$ in phenotype space.)\n\nFollowing Posfai et al., 2017, we denote by $c_{j}\u2062(t)$ the concentration of resource $j$ at time $t$, and we assume that the amount of resource $j$ available for uptake per individual (e.g., the amount of resource bound to the outer membrane of a microbial cell) is given by a monotonously increasing function $r_{j}\u2062(c_{j})$. Specifically, we assume this function to be of Monod type, $r_{j}\u2062(c_{j})=c_{j}/(K_{j}+c_{j})$. Thus, the rate of uptake of resource $j$ by an individual consumer with uptake strategy \u03b1 is $\\alpha_{j}\u2062r_{j}\u2062(c_{j})$.\n\n### Chemostat conditions\n\nWe assume that resources are supplied to the system at a constant rate defined by the supply vector $s=(s_{1},\u2026,s_{p})$, so that resource $j$ is supplied at a constant total rate sj and decays at a rate $\\mu_{j}$\u00a0(Posfai et al., 2017). This generates the following system of equations for the ecological dynamics of the concentrations cj, $j=1,\u2026,p$:\n\n$$\n\\frac{d\u2062c_{j}}{d\u2062t}=s_{j}-(\\sum\\alphan_{\\alpha}\u2062(t)\u2062\\alpha_{j})\u2062r_{j}\u2062(c_{j})-\\mu_{j}\u2062c_{j}.\n$$\n\nHere, $n_{\\alpha}\u2062(t)$ is the population density of species \u03b1 at time $t$, so that $\\sum_{\\alpha}n_{\\alpha}\u2062(t)\u2062\\alpha_{j}$ is the total amount of metabolic activity invested into uptake of resource $j$ (the sum runs over all species \u03b1 present in the community). We further assume that the cellular per capita birth rate of species \u03b1 is equal to the amount of nutrient absorbed by each individual. The dynamics of the population density $n_{\\alpha}$ then becomes\n\n$$\n\\frac{d\u2062n_{\\alpha}}{d\u2062t}=(\\sumj=1p\\alpha_{j}\u2062r_{j}\u2062(c_{j})-\\delta)\u2062n_{\\alpha},\n$$\n\nwhere \u03b4 is the per capita death rate, which is assumed to be the same for all consumers.\n\nThe evolutionary dynamics of the the traits $\\alpha_{j}$ can be solved analytically only for a simplified system in which the resource decay (dilution) rates $\\mu_{j}$ are set to 0. This assumption, also made in Posfai et al., 2017, corresponds to rapid consumption of almost all resource. In Appendix 1, we derive the adaptive dynamics for the allocation strategies, that\u00a0is, for the traits $\\alpha_{j}$ (Metz et al., 1992; Dieckmann and Law, 1996; Dieckmann and Doebeli, 1999; ; Hui et al., 2018; Doebeli, 2011; Geritz et al., 1997). We show that with vanishing decay rates, there is a unique singular point\n\n$$\n\\alpha_{j}^{*}=(\\frac{s_{j}}{\\sum_{k=1}^{p}s_{k}})^{\\frac{1}{\\gamma}}.\n$$\n\nCalculations of the Jacobian of the adaptive dynamics (an indicator of convergence stability of a fixed point) and of the Hessian of the invasion fitness function (which distinguishes whether the fixed point is an evolutionary endpoint or a branching point) yield the following conclusions: Regardless of the value of \u03b3, the singular point $\\alpha^{*}$ is always convergent stable, so that the system approaches $\\alpha^{*}$ from any initial condition. If $\\gamma>1$, the singular point $\\alpha^{*}$ is also evolutionarily stable and hence represents the evolutionary endpoint. In particular, no diversification takes place. On the other hand, if $\\gamma<1$, the singular point is evolutionarily unstable and hence is an evolutionary branching point. In particular, if $\\gamma<1$, the system will diversify into a number of coexisting consumer species. If $\\gamma=1$ (linear tradeoff), the fitness Hessian is 0, representing evolutionary neutrality.\n\nTo check our analytical approximations and to investigate the details of diversification after convergence to the evolutionary branching point, we performed numerical simulations of evolving populations consisting of multiple phenotypic strains. The simulations were performed without the simplifying assumption of zero resource degradation (dilution) rates; further details of the numerical simulations are presented in Appendix 1.\n\nIn the figures below we show evolving populations as circles with radii proportional to the square root of population size $n_{\\alpha}$ in three-dimensional strategy space $(\\alpha_{1},\\alpha_{2},\\alpha_{3})$, viewed orthogonally to the simplex plane $\\sum_{i=1}^{3}\\alpha_{i}=1$. With the constraint $\\sum_{i=1}^{3}\\alpha_{i}^{\\gamma}=1$, the coordinates of each population are $(\\alpha_{1}^{\\gamma},\\alpha_{2}^{\\gamma},\\alpha_{3}^{\\gamma})$. In the following numerical examples, we considered a symmetric supply of resources $s_{i}=1$ and a slow resource degradation, $\\mu_{i}\u2062K_{i}=0.1$.\n\nWe first consider scenarios with linear tradeoffs, $\\gamma=1$. Figure 1 shows the evolution of a population (shown in blue circles) whose individuals die at constant rate $\\delta=1$ (corresponding videos of the simulations can be accessed through the links provided in the figure legends). The black circle represents the singular point that is calculated in the limit of low degradation of nutrients, given by Equation 4. Figure 1(a) shows the initial monomorphic population far from the singular point. An intermediate time of the evolutionary process is shown in Figure 1(b), in which the population remains monomorphic and is approaching the singular point $\\alpha^{*}$. For $\\gamma=1$, the singular point is neutral evolutionarily (all eigenvalues of the Hessian of the invasion fitness function are 0 due to the linearity of the tradeoff), and once the population converges to the singular point, it starts to diversify \u2018diffusively\u2019, as anticipated in Posfai et al., 2017: neutrality of selection results in communities consisting of a large number of species. Thus, the high diversity observed in this case is an evolutionary consequence of the selective neutrality caused by a linear enzymatic tradeoff.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67764/elife-67764-fig1-v2.jpg)\n\n**Figure 1.:** Snapshots illustrating the beginning, intermediate, and advanced stages of evolution under a linear constraint, $\\gamma=1$ .A video of the entire evolutionary process can be found here, frames are recorded every 200 time units until t=30,000 and then, to better illustrate slow neutral evolution, the frame recording times ti were defined as a geometric progression $t_{i+1}=1.006\u2062t_{i}$. Other parameter values were $s_{j}=1$,\u00a0$\\mu_{j}\u2062K_{j}=0.1$ for $j=1,2,3$, and $\\delta=1$.\n\nThe situation changes for non-linear tradeoffs, $\\gamma\\neq1$, which generates two very different evolutionary regimes depending on whether $\\gamma>1$ or $\\gamma<1$ (even when the deviation of \u03b3 from one is small). Figure 2(a\u2013c) shows an example of the evolutionary dynamics for $\\gamma=1.1$.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67764/elife-67764-fig2-v2.jpg)\n\n**Figure 2.:** Example of evolutionary dynamics for $\\gamma=1.1$, showing convergence to the singular point given by Equation 4 (and indicated by the black dot), but no subsequent diversification.The corresponding video can be found here\u00a0, each frame in the video is separated by 1,000 time steps. Other parameter values were $s_{j}=1$, $\\mu_{j}\u2062K_{j}=0.1$ for $j=1,2,3$, and $\\delta=0.25$.\n\nThe dynamics starts with an initial monomorphic population far from the singular point, as shown in Figure 2(a). As in the linear case, and as predicted by the analytical theory, the monomorphic population converges toward the singular point Figure 2(b). However, because $\\gamma>1$ the singular point is evolutionarily stable, and no diversification occurs (apart from mutation-selection balance around the singular point). Instead, when the population reaches the singular point, evolution comes to a halt, and all individuals are generalists, that\u00a0is, use all resources to some extent (as determined by the location of the singular point), as depicted in Figure 2(c).\n\nOn the other hand, Figure 3(a\u2013c) shows the evolutionary process for a community with $\\gamma=0.9$. The initial configuration is shown in Figure 3(a). As in the previous examples, the initial phase of evolution ends with the population converging to the singular point $\\alpha^{*}$. However, in this case, the singular point is an evolutionary branching point giving rise to the emergence of distinct and diverging phenotypic clusters (Figure 3(b)). The final state of the evolutionary process is shown in Figure 3(c): there are three coexisting phenotypic clusters, each being a specialist in exactly one of the resources. Our numerical simulations indicate that the results shown in Figures 1\u20133 are general and robust: non-neutral diversification occurs only for $\\gamma<1$ and typically leads to coexistence of $p$ specialists. In fact, the results easily generalize to situations in which the exponent \u03b3 in the tradeoff function may be different for different directions in phenotype space, that is, for different $\\alpha_{j}$. As we show in Appendix 1, evolutionary branching along a direction $\\alpha_{j}$ in phenotype space can occur if the corresponding exponent $\\gamma_{j}<1$. Appendix 1\u2014figure 2 and Appendix 1\u2014figure 3 in Appendix 1 illustrate scenarios in which only a subset of the phenotypic directions $\\alpha_{j}$ are branching directions along which evolutionary diversification occurs. In such a case, the number of distinct species resulting from the evolutionary process is less than $p$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67764/elife-67764-fig3-v2.jpg)\n\n**Figure 3.:** Example of evolutionary dynamics for $\\gamma=0.9$, showing initial convergence to the singular point (indicated by the black dot) and subsequent diversification into three specialists, each consuming exclusively one of the three resources.The corresponding video can be found here, each frame in the video is separated by 1,000 time steps. Other parameter values were $s_{j}=1$, $\\mu_{j}\u2062K_{j}=0.1$ for $j=1,2,3$, and $\\delta=0.25$.\n\nFinally, we note that our results for the effects of non-linear tradeoffs on evolutionary dynamics have corresponding results in purely ecological scenarios, such as those studied in Posfai et al., 2017. We simulated ecological time scales by seeding the system with a set of for\u00a0example randomly chosen phenotypes throughout phenotype space and running the population dynamics with the mutational process turned off. Again, as shown in Appendix 1\u2014figure 4, non-linear tradeoffs have a profound effect on the number of surviving species in such ecological simulations, with many species coexisting when $\\gamma=1$, as reported in Posfai et al., 2017, but with typically only $p$ species surviving when $\\gamma<1$ and only very few species surviving in the close vicinity of the singular point when $\\gamma>1$.\n\n### Serial dilution conditions\n\nSerial dilution conditions are defined as a sequence of explicitly non-stationary inoculation and growth events (Erez et al., 2020), which mimics seasonality or batch culture experiments (e.g., Lenski and Travisano, 1994). Each growth phase starts with the introduction of a diluted collection of species from a previous batch\n\n$$\nn_{\\alpha}\u2062(0)=\u03c1_{0}\u2062\\frac{n_{\\alpha}\u2062(t_{f\u2062i\u2062n})}{\\sum_{\\alpha},n_{\\alpha},(t_{f\u2062i\u2062n})},\n$$\n\ninto a fresh batch of resources with a given composition $c_{j}\u2062(0)$. In each batch, the species densities $n_{\\alpha}\u2062(0)$ increase with time as\u00a0\n\n$$\n\\frac{d\u2062n_{\\alpha}}{d\u2062t}=(\\sumj=1p\\alpha_{j}\u2062r_{j}\u2062(c_{j}\u2062(t)))\u2062n_{\\alpha},\n$$\n\nwhile resources are depleted:\n\n$$\n\\frac{d\u2062c_{j}}{d\u2062t}=-(\\sum\\alphan_{\\alpha}\u2062(t)\u2062\\alpha_{j})\u2062r_{j}\u2062(c_{j}).\n$$\n\nUnlike in the chemostat model, the death of individuals and the decay of resources are ignored ($\\delta=0$ and $\\mu=0$). Each event ends at time $t_{f\u2062i\u2062n}$ when all resources are almost completely depleted,\n\n$$\n\\sumj=1pc_{j}\u2062(t_{f\u2062i\u2062n})=c_{f\u2062i\u2062n}\u22480,\n$$\n\nand the process is repeated.\n\nDue to the explicit non-stationarity of such serial dilution processes, one of the main assumptions of our adaptive dynamics analysis, the stationarity of resident populations, is not satisfied. Nevertheless, our numerical simulations show that the conclusions drawn for the chemostat case also hold for the serial dilution conditions, to the point that the simulation snapshots are visually indistinguishable from those shown in\u00a0Figure 2\u00a0and Figure 3.\u00a0However, in the videos, which can be found here\u00a0, it is possible to see the oscillating population density, caused by the serial dilution protocol.\n\nSpecifically, we simulated the serial dilution for three limits considered in Erez et al., 2020, $c_{j}\u2062(0)=10\u2062K$, $c_{j}\u2062(0)=K$, and $c_{j}\u2062(0)=0.1\u2062K$ for $\u03c1_{0}=10^{-3}$ and $c_{f\u2062i\u2062n}=10^{-8}$. All other parameters were the same as used in\u00a0Figure 1,\u00a0Figure 2,\u00a0Figure 3 and\u00a0corresponding videos.\n\nIn all three cases $c_{j}\u2062(0)\u226bK$, $c_{j}\u2062(0)\u223cK$, and $c_{j}\u2062(0)\u226aK$, we observed that for $\\gamma>1$, the monomorphic population converges toward the singular point $\\alpha^{*}$ (Figure 2(b)) and video files here\u00a0. The singular point is evolutionarily stable, hence, as shown in Figure 2(c), no subsequent diversification occurs (apart from narrow mutation-selection spreading around the singular point).\n\nOn the contrary, Figure 3(a\u2013c) and videos accessible here show the evolutionary process for a community with $\\gamma<1$. The initial configuration is shown in Figure 3(a). As in the previous examples, in the initial phase the monomorphic population evolves close to the singular point $\\alpha^{*}$. However, in this case, the singular point is again\u00a0an evolutionary branching point giving rise to the emergence of distinct and diverging phenotypic clusters (Figure 3(b)). The final state of the evolutionary process is shown in Figure 3(c): there are three coexisting phenotypic clusters, each being a specialist on one of the resources.\n\nIn addition, purely ecological (i.e., mutationless) simulations performed similarly to what is described above and in Erez et al., 2020 resulted in similar outcomes as in the chemostat model. In a system initially filled with many (200) species, only a few species survive after a fairly short transitory time. When $\\gamma>1$, one or a few species remain very close to the singular point $\\alpha^{*}$, while for $\\gamma<1$, typically $p$ specialist species remain in the system. The videos of pure ecological simulations can be seen here.\n\nOnce evolution has come to its steady state, resulting in a single generalist species when $\\gamma>1$ or $p$ specialist species when $\\gamma<1$, each species is represented by a \u2018cloud\u2019 of phenotypes \u03b1 (Panel C in\u00a0Figure 2\u00a0and\u00a0Figure 3). Such a cloud is formed by a competition between the deterministic selection gradient that acts toward the center of the cloud, making the survival of peripheral species less likely, and the stochastic mutational process that broadens the distribution of strains in all directions, \u2018reseeding\u2019 new strains everywhere in the cloud, including its periphery. This is analogous to the classical mutation-selection balance occurring with stabilizing selection. When stabilizing selection is relatively weak, which occurs when the tradeoff is only weakly non-linear (with \u03b3 close to 1), the dispersion of phenotypes around the centers of clouds is larger. Technically, this can be concluded from the factor $1-\\gamma$ in Equation A20. Thus, we make a potentially testable predictions that a weaker non-linearity in tradeoffs or uptake rates should result in broader distributions of corresponding phenotypes within specialist or generalist species. At the same time, the perspective of mutation-selection balance makes it easier to see the difference between the neutral evolutionary scenario of linear tradeoffs and the weakly non-linear case: While in the former case the distribution of strains will be uniform across the simplex (constrained only by the \u2018convex envelope\u2019 condition; Posfai et al., 2017), the non-linear tradeoffs lead to distinct species with well-localized distributions of phenotypes for any $\\gamma\\neq1$. In an analogy with critical phenomena in physics, correlations typically decay exponentially, except at critical points, where they are exceptionally long-ranged. Such an \u2018anomalous\u2019 behavior requires careful tuning of parameters to get exactly to the critical point, unless the system is \u2018self-organized critical\u2019. A similar situation appears to be the case with linear tradeoffs. It could be possible in principle that a system possesses carefully adjusted metabolic parameters so that for a range of uptake rates, the tradeoffs in enzyme concentrations are linear. Yet there appears to be no evolutionary reason for \u2018self-organization\u2019 to such a state, and the accidental cancelation of all non-linearities is very unlikely.\n\n## Discussion\n\nTo understand the origin and maintenance of diversity is a fundamental question in science. In particular, the mechanisms of diversification due to ecological interactions still generate lively debates.\n\nRecently, tradeoffs in the rates of uptake of different resources were suggested as a mechanism to generate large amounts of diversity (Posfai et al., 2017; Erez et al., 2020), possibly solving the \u2018paradox of the plankton\u2019 (Hutchinson, 1961), and violating the competitive exclusion principle (Hardin, 1960), which states that the number of coexisting species should not exceed the number of resources. It has been shown that enzymatic allocation strategies that are plastic instead of fixed, so that individuals can change their allocation (while maintaining a linear tradeoff under a fixed allocation budget) in response to resource availability during their lifetime, tend to reduce the amount of diversity maintained in the ecological communities (Pacciani-Mori et al., 2020). Perhaps this is not surprising, since more plastic strategies tend to be able to be more generalist as well. As in Posfai et al., 2017; Erez et al., 2020, here, we consider the case of non-plastic strategies, in which each individual is defined by its allocation vector \u03b1, but assuming a more general, non-linear form of tradeoffs. Moreover, we investigate evolutionary rather than just ecological dynamics to determine the conditions under which evolutionary diversification can occur. There are no true jacks-of-all trades in biology and tradeoffs are a ubiquitous assumption in evolutionary thinking and modeling. However, the cellular and physiological mechanisms that underly such tradeoffs are typically very complicated and the result of biochemical interactions between many different metabolic pathways. Attempts have been made to understand tradeoffs more mechanistically, particularly in microbes (Litchman et al., 2015), but higher-level modeling efforts most often still require a mostly phenomenological approach to incorporating tradeoffs. In this paper we assumed that each of $p$ resources is available to each microbial organism at a certain rate that depends on the resource concentration in the system. The microbe in turn is described phenotypically by the metabolic allocation strategy that defines its uptake of the available resources.\n\nWithout tradeoffs, and everything else being equal, the best strategy would be to allocate an infinite amount (or at least the maximal amount possible) of metabolic activity to every resource, a scenario that is generally unrealistic biologically. Rather, tradeoffs inherent to cell metabolism prevent such strategies. Formally, tradeoffs are given by one or more equations (or more generally inequalities) that the phenotypes of individuals have to satisfy.\n\nIn our simplistic models, tradeoffs are determined by the parameter \u03b3, which essentially describes the curvature of the tradeoff function, with the linear tradeoff $\\gamma=1$ being the threshold between concave ($\\gamma<1$) and convex ($\\gamma>1$) tradeoffs. Formally, linear tradeoffs are the simplest case, but there is no a priori general reason why tradeoffs should be linear. Our results show that generically, diversity only evolves with concave tradeoffs, and the number of coexisting species never exceeds the number of resources. Only in the structurally unstable linear case ($\\gamma=1$), it is\u00a0possible for very high levels of diversity to evolve due to the cessation of selection at the evolutionary equilibrium. Any value of $\\gamma\\neq1$ precludes high amounts of diversity. Extensive numerical explorations revealed that these results are robust and qualitatively independent of particular parameter choices, such as the number of resources or the dynamics of resource input.\n\nFurthermore, in Appendix 1 we show that the originally non-linear tradeoffs can be made linear by re-defining uptake rates $\\alpha_{i}$\u00a0(Equation A8), thus \u2018transferring\u2019 the non-linearity to the nutrient uptake and the birth rate functions\u00a0(Equation A8). But a metabolic and nutrient uptake rate is itself a linear function in the enzyme concentration only when the concentration of the substrate vastly exceeds the enzyme concentration. A good example is the well-known Michaelis-Menten approximation, which is identical to the formula used in Posfai et al., 2017; Erez et al., 2020 for the dependence of nutrient uptake on enzyme allocation \u03b1. While such linear approximations have been successfully applied in chemical kinetics for over a century, often without questioning their formal validity, the effect of linearization on ecological and evolutionary properties turns out to be very significant. The Michaelis-Menten kinetics is valid when the formation of enzyme-substrate complexes does not reduce the concentration of free substrate. Yet the intracellular concentration of enzymes in bacteria are often comparable to or are just few- or 10-fold smaller than those of their substrates (Bennett et al., 2009; Milo et al., 2010). In Appendix 1 we sketch a derivation of kinetics of an enzymatic reaction in the general case assuming the steadiness of the concentration of the enzyme-substrate complex, but without the assumption that the enzyme concentration is negligible compared to that of the substrate. It follows that enzymatic reaction rates are generally sublinear in the concentrations of enzymes, which is intuitively clear from considering the rate saturation in the limit of infinite enzyme concentrations. However, sublinear rates are not the only possible deviation from linearity: the formation of enzyme oligomers (Marianayagam et al., 2004, Traut, 1994; Ali and Imperiali, 2005; Traut, 1994)\u00a0and spatially organized complexes (Schmitt and An, 2017) are controlled by intrinsically non-linear (superlinear in case of homo-oligomers) mass\u00a0action equilibria, thus making the enzymatic rates generally sigmoid functions (Ricard and Noat, 1986) of the amount of enzyme. Again, it follows that the physiological costs of the production of individual enzymes are typically non-linear.\n\nThere are also more direct ways to demonstrate the ubiquity of non-linear dependences of metabolic rates or fluxes $f$ on enzyme concentrations \u03b1, for which quantities known as reaction elasticities or flux control coefficients are normally defined as double-logarithmic derivative, $dln\u2061[(f(\\alpha))]/dln\u2061(\\alpha)$. For example, for a general power law $f\u2062(\\alpha)\u2261C\u2062\\alpha^{\\gamma}$ that we used to define metabolic tradeoffs (or uptake rates, see Appendix 1), the log-log derivative is equal to \u03b3, the non-linearity parameter. For the tradeoffs used in Posfai et al., 2017; Erez et al., 2020, this derivate is always 1. However, it is not surprising that realistic assessments of such coefficients (e.g. Loder et al., 2016; Giersch, 1995; Sun and Qian, 2002; Saavedra et al., 2005; Rohwer et al., 2000; Rutkis et al., 2013; Schmidt et al., 2016; van der Vlag et al., 1995; and many other references) produce values that rarely come close to 1, and hence that the measured dependencies of metabolic fluxes on enzyme concentrations are significantly non-linear. For an easier parametrization of these non-linearities, it was suggested to express rates of complex enzymatic reactions as products of power-law functions of concentrations of enzymes and substrates (Savageau, 1969). This idea, originally suggested more than 50 years ago, has since developed a substantial following, which once again indicates the necessity to account for non-linearity in the kinetics of enzymatic pathways. All this indicates that reaction elasticities and flux control coefficients are typically distinct from one, which is essentially the main raison d\u2019\u00eatre for those quantities and for the science of metabolic engineering itself.\n\nWhether sub- or super-linear, any deviation of the growth rates from the linear form (Equation 3) and Equation A3 results in a revalidation of the competitive exclusion limit, similarly to non-linearity in tradeoffs. This serves as another indication that linear tradeoffs in metabolic rates is a biologically unrealistic and exceptional case, while generic non-linearities do not generate high levels of diversity, and instead the outcomes are in line with classical results about the evolution of resource generalists vs. resource specialists (Ma and Levin, 2006).\n\nIt is well\u00a0known that the shape of tradeoff curves is, in general, an important component in adaptive dynamics models (Kisdi, 2006; Kisdi, 2015). In particular, studies of evolution of cooperation (e.g. Damore and Gore, 2012; Archetti and Scheuring, 2012) have stressed that the outcome of evolution is conditional on the curvature of the public good and cost functions and provided numerous biochemical reasons for non-linearity of metabolic rates in enzyme concentrations. Here, we have shown the importance of the tradeoff curvature for the evolution and maintenance of diversity in a general consumer-resource model. Of course, many potentially important ingredients that could yet lead to high or low diversity in these models were not considered in the present work. For example, dynamic and optimal metabolic strategies (Pacciani-Mori et al., 2020) and cross-feeding have recently been suggested as factors that could potentially enable such diversity (Goyal and Maslov, 2018), while \u2018soft constraints\u2019 that allow random deviations of metabolic strategies from the exact tradeoff constraint were reported in Cui et al., 2020 to reduce the diversity even below the competitive exclusion limit. It will be interesting to consider these model extensions with non-linear tradeoffs.\n\nFurthermore, it is possible that non-equilibrium ecological dynamics can allow for the maintenance of excess diversity. While this is not the case for externally imposed batch culture dynamics, as reported in the present paper, we have recently shown, using a different ecological model (Doebeli et al., 2021), that endogenous non-stationary \u2018boom-bust\u2019 population dynamics can lead to a significant increase in diversity above the saturation limit expected with equilibrium population dynamics. Together with many experimental results reporting non-stationarity and apparent chaoticity of the population dynamics of actual plankton species, this leads to the conjecture that rather than the neutral evolutionary regime predicted in Posfai et al., 2017, non-stationary population dynamics induced by competition and predation (and perhaps external factors) may be more important in explaining high levels of diversity in natural systems.\n",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "52039f5a-1ab1-4c2a-bf48-59487418dbcc",
+      "submission_id": "0968177e-cd2e-4098-beac-6c6dcf7b82b3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67764.sa1](https://doi.org/10.7554/eLife.67764.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript generalizes a recently-published framework by the Wingreen group which considers adaptation/evolutionary dynamics in a consumer resource model when a tradeoff on metabolic rates is imposed. The original model involved a linear tradeoff: e.g. the faster a microbe can eat nutrient 1, the slower it can eat nutrient 2, so that a sum-rule is imposed on the maximal rates. This paper considers the mathematics of the effect of nonlinear tradeoffs, in the form of a sum of rates raised to a power \u03b3, with \u03b3 not just equaling 1 (\u03b3=1 represents the regime of linear tradeoff). The authors find that, keeping all other model features the same, diversity is lost when \u03b3 is not 1. That is, nonlinear tradeoff destroys diversity.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Evolution of diversity in metabolic strategies\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor .\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that your work will not be considered further for publication by eLife.\n\nAlthough one reviewer was positive, the overwhelming sentiment was that the work does not sufficiently advance the field.Reviewer #1:\n\nPrevious theoretical work argued that among species that compete for resources, physiological tradeoff (e.g. consuming more of food 1 leads to consuming less of food 2) can give rise to species diversity that greatly exceeds the number of resources, even in a well-mixed environment not conducive for species diversity. If previous work were to be general, it would be exciting because this offers a clue to the puzzle scientists have been trying to solve for a long time: what supports high species diversity? Caetano et al show that the finding from previous work only holds under a very restrictive condition (tradeoff function being linear). When that condition is violated (which can frequently occur in biology), we end up with either a single generalist species, or specialists each specializing on a single resource. Thus, in general, the total number of species cannot be larger than the total number of limiting resources in a well-mixed environment, as posited by the competitive exclusion principle. In short, we are back at where we were.\n\nThe authors started by introducing the adaptive dynamics framework which has been used to study evolutionary diversification due to frequency-dependent selection. The introduction is not adequate in giving nonspecialists an intuitive feeling about how evolutionary branching point from fitness minimum works. Of course, making theoretical conclusions accessible is not trivial, and may not be achievable. However, authors can try harder by including supplementary figures.\n\nThe authors then introduced work from the Wingreen group: R number of resources in a well-mixed environment, and each consumer species has an uptake strategy for each of the R resources. The total uptake for each species is fixed, creating a trade-off: more uptake of one resource reduces the uptake of another. Previous work showed that when the tradeoff function is linear (e.g. the sum of [uptake of each resource)\u03b3] = a constant where the exponent \u03b3=1, then many species with different uptake strategies can coexist.\n\nThe authors showed that the conclusion from previous work is rather restricted in its scope: large diversity only exists when the exponent \u03b3 in the tradeoff function is 1 (i.e. linear). When that exponent is greater than 1, no diversification occurs (saving for mutation-selection balance) and all individuals are phenotypically similar generalists. When the exponent is less than 1 (i.e. concave), the initial convergence to an unstable steady state later evolutionarily diverges into specialists, each specializing on a resource.\n\nAuthors also tested their conclusions within the ecological framework of the Wingreen group, and in different scenarios (chemostat versus serial dilutions), and reached the same conclusions.\n\nThe paper is relatively easy to read (in the realm of theoretical papers). This work reminds me of the work that has been done in the field of the evolution of cooperation. For example, public goods games often assume that the effect of the public good is a linear function of the number of contributions, an assumption that is often violated in biology. Depending on whether this function is linear or nonlinear, one can get very different outcomes in cooperator/non-cooperator coexistence (e.g. Archetti and Scheuring, JTB 299:9-20; Damore and Gore, JTB, https://doi.org/10.1016/j.jtbi.2011.03.008). Authors may want to add a discussion on that.\n\nI wonder whether this paper should be added as a Research Advance to the original paper from the Wingreen paper published in eLife.\n\nReviewer #2:\n\nThis paper deals with the diversification of metabolic strategies in an evolving population. The authors consider a consumer-resource model under different metabolic trade-offs (sublinear, linear, and superlinear). They show that the linear case is a marginal scenario that corresponds to high diversity as a consequence of neutral evolution. Both the sub- and superlinear cases lead to the coexistence of fewer species than resources, as expected by the competitive exclusion principle.\n\nThe manuscript is well written and easy to follow. The derivation using adaptive dynamics is interesting and the results are robust. I am mainly concerned by the premises of the work.\n\nl 70 \"This is a very interesting finding because it violates the competitive exclusion principle\". This is not strictly correct (and I think this is a central point). To violate the competitive exclusion principle, more species than resources should *stably* coexist. The stability requirement is essential. Otherwise, the principle can be easily falsified by a neutral model: in presence of even 1 single resource, an arbitrary number of ecologically equivalent species coexist (neutrally). Neutral coexistence is, as well known, structurally unstable: arbitrary small differences (which break the ecological equivalence) drive many species to extinction (restoring the bound on diversity given by the number of resources).\n\nIn the model by Posfai et al. (2017) coexistence is in fact only neutral. There is a manifold of fixed points and stability is marginal (several eigenvalues of the community matrix are equal to zero, e.g. see https://arxiv.org/pdf/2002.04358 ). The fixed point of their dynamics (abundance of different species) depends on the initial conditions. The high levels of diversity are, as a consequence, structurally unstable. This can be shown in multiple ways: introducing an (arbitrarily small) species variability in the trade-off (E depends on species identity), introducing variability in the dilution rate d (appearing in eq 3), or, as done in the paper, by altering the functional form of the trade-off.\n\nThis is a central point. It explains why many species are observed in the model by Posfai et al. And it explains why the result is extremely (infinitely) sensitive to the parameterization. These ecological considerations are mirrored in the fact that for gamma = 1 the evolutionary dynamics are neutral.\n\nMy main concern about this work is whether it has a sufficient degree of novelty and interest. As mentioned in the public review, the results are robust. But, after a close analysis of the model by Posfai et al., they are not unexpected. The manuscript, as it stands, mostly demonstrates the weaknesses of the paper by Posfai et al.: fixed points with more species than resources exist, but they are only marginally stable (https://arxiv.org/pdf/2002.04358 ). Structural instability is a direct consequence of this fact. Non-linear tradeoffs are just one (among many) ways to show that the results are infinitely sensitive to the parameter choices.\n\nReviewer #3:\n\nThere has been considerable recent interest in understanding the high degree of diversity observed in microbial communities. From a theoretical perspective, this has led to a resurgence of interest in resource-competition models. Several recent papers have studied the effects of trade-offs on total enzyme budgets within these models. An interesting observation is that with exact trade-offs, communities can self-organize to a state with an arbitrarily large number of species coexisting. One assumption of these models is that the total \"cost\" of enzymes is a linear function. The current work relaxes this assumption, and shows that this state of arbitrarily high coexistence relies on the linearity of the cost function.\n\nStrengths: This study is rigorous, clearly presented, and the conclusions are mathematically sound. The authors analyze both chemostat and serial dilution systems.\n\nWeaknesses: The results are qualitatively as expected from previous studies of the role of inexact trade-offs, and are more limited. The nonlinear trade-offs explored here are essentially equivalent to the unequal enzyme budgets explored in prior work. Indeed, these nonlinearities can be directly mapped to unequal budgets: for example, a nonlinearity that favors expression of a single enzyme is directly equivalent to a larger enzyme budget for species that produce only a single enzyme. Previous studies showed that unequal enzyme budgets lead to a loss of diversity, as is found in this work. Moreover, these prior studies found that even if trade-offs are not exact, the slow loss of diversity due to inexact trade-offs can be offset by invasion of new strategies and can therefore still lead to a large number of coexisting species.\n\nThe likely impact of this work on the field is modest, given that those who are already experts in the field will recognize that nonlinear trade-offs are equivalent to unequal enzyme budgets. Moreover, the current study does not actually provide any specific support for nonlinear trade-offs other than a few remarks in the Introduction.\n\nThe work would be of greater general interest if the biological evidence for nonlinearities in enzyme costs were carefully examined; mechanistic insights on how enzyme budget nonlinearities may arise in nature would be of significant utility to the field. However, this would require a substantial additional undertaking and would shift the focus of the work from the specific implications of nonlinearities in resource-competition models. An alternative would be to publish the current study in a more specialized journal, with a more theoretical focus.\n\nIt would also be helpful to provide a quantitative assessment of the sensitivity of diversity to the degree of nonlinearity. It is clear that any nonlinearity (or inexactness of trade-offs) leads to loss of diversity at long times. However, a small rate of invasion by new strategies can still lead to a diverse stationary state of the population. Given a certain degree of nonlinearity, how much invasion is required to maintain diversity? The adaptive dynamics calculations performed by the authors do not address this point because new strategies are only introduced if these are more fit than the residents. The question of diversity requires introducing invaders that may be slightly less fit, but still manage to survive due to demographic noise.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Evolution of diversity in metabolic strategies\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\nPlease consult the Reviewers' comments and address these in your revision.\n\nReviewer #1:\n\nI remain supportive, especially if authors can discuss empirical measurements of biological tradeoffs and whether in the natural environment the linearity assumption might break down.\n\nReviewer #3:\n\nThe authors have made several cosmetic changes which have improved the clarity of their manuscript. However, the revised version does not substantially address my main concerns. The real question is whether the current manuscript makes a substantial contribution to the topic of microbial diversity. The focus of the paper is a critique of a model of resource competition with trade-offs. It is certainly legitimate to be critical of existing models. However, I believe the readers of eLife already appreciate the adage \"all models are wrong, but some are useful\". The authors have focused their attention on the first part of the adage, arguing that because growth functions will not be exactly linear the model is \"wrong\". But it's not news that the model is \"wrong\" (see above), the question is whether the model might still be a useful starting point for understanding diversity? What seems to me to be missing in the discussion, both in the original studies of Ref. 3 and 5 and the current manuscript, is quantification of how \"wrong\" the initial model is, and whether this undermines its utility. This is why I suggested that the authors carefully examine the \"biological evidence for nonlinearities in enzyme costs\". Their revised manuscript adds some sentences on this point, but in a non-quantitative way: the authors continue to make the mathematical point that the model is \"wrong\", but have not taken up the challenge of addressing whether it is or is not \"useful\". Yes, it is mathematically correct as the authors state that bimolecular reactions are strictly nonlinear in the reactants. But for typical enzyme concentrations in the \u03bcM range and typical metabolites in the 0.1-1 millimolar range, these nonlinearities are in the 0.1-1% range. From a biological perspective, a linear function might therefore still be a useful starting point. I've also read the references the authors cite on other sources of nonlinearity \u2013 they are equally non-quantitative. For example, the review by Marianayagam et al. states (without citations) \"In its simplest form, oligomerization functions as a general mechanism for sensing protein concentration. An increase in protein concentration above the oligomerization threshold can be the stimulus for enzyme activation; similarly, enzyme deactivation will apply when cellular levels of the enzyme fall.\" I absolutely agree that for enzymes that need to oligomerize to function, this implies a mathematically nonlinear processing rate as a function of enzyme concentration. However, again for enzyme levels in the \u03bcM range and oligomerization dissociation constants in the commonly observed 1-10 picomolar range, the nonlinearities are again ~0.1-1%. Despite the revisions on this and other points in the reviews, in the end I am left still wondering whether the original model is \"useful\". My conclusion is that the current manuscript will be primarily of interest to researchers whose focus is on the mathematics of resource-competition models, and would therefore be appropriate for a more mathematically focused journal.\n\nReviewer #4:\n\nThis is a well-reasoned and well-presented paper, which considers adaptation/evolutionary dynamics in a consumer resource model when a tradeoff on metabolic rates is imposed. This finding will be of interest to the ecology community, and is well presented. Moreover, these consumer-resource models have relevance beyond the microbial ecology scenarios outlined here with applications in biology and beyond. Though the mathematics of their specific suggested model is well-analyzed, it stands to reason that when considering realistic systems, other timescales can be involved. As a result, the interplay between those timescales and other model parameters could quite possibly lead again to stable coexistence, as in the case of gamma=1.\n\nThe main caveat of this paper is that one does not need to resort to nonlinear tradeoffs to destroy diversity in the original Wingreen models, since simply giving different organisms different enzyme budgets would suffice - a plausible enough scenario. In the case of unequal enzyme budgets, by adding other (plausible) diversity stabilizing mechanisms it is possible to retain the coexistence state. Similarly, for values gamma sufficiently close to 1, I would expect that other realistic effects could again lead to a state resembling gamma=1. I would have liked to see this paper attempt to understand how diversity is maintained away from gamma=1, rather than just show us a way to break it.\n\nThe reality of the field (if I may) is that none of us have the answer to the so-called Paradox of the Plankton. There are several competing theories out there, and each of them has its merits and imperfections. Simply outlining an expected and obvious lack of generalizability of a particular aspect of an otherwise solid and informative theory is less constructive than this paper could be. Especially considering it is well known that consumer-resource models (e.g. Wingreen) support coexistence only on equal enzyme budgets unless other diversity stabilizing mechanisms are included.\n\nWhat I think that the authors should focus on, is that neither the Wingreen papers nor recent papers from other groups claim that their particular framework captures all features of diversity maintenance. Instead, we are all trying, as a community, to piece together a coherent theory, stumbling along as we inevitably do. For example, the Wingreen papers consider violation of the linear constraint (i.e. unequal enzyme budgets) in several stochastic and deterministic cases, outlining their relevance. There are several timescales at play here and one can think how their interplay with particular model parameters influences the resulting steady state. This is likely the case with regards to this manuscript. Already, if one considers small deviations from \u03b3 = 1, one introduces a new timescale, to compete with other model timescales. Moreover, the \"mutation\" dynamics (Eq. 14) introduce one or more timescales, which are conveniently swept under the rug with a \"without loss of generality\" (l463), a statement without actual backing as far as I understood. Furthermore, the authors do not sufficiently acknowledge that their suggested \"mutation\" dynamics are a very specific simplification of true dynamics. Let us agree that true dynamics again include many timescales and confounding factors and that therefore this manuscript is no less fine-tuned than the theory it challenges. What the authors essentially do is, impose specific dynamics and then demonstrate that these specific dynamics fail to maintain diversity at . It seems likely that their \"mutation\" dynamics can be plausibly modified so that diversity is regained. After all, natural ecosystems do involve resource competition and the plankton are diverse.\n\nReading the other referee reports, it appears that some referees do not consider this paper sufficiently surprising to be published in eLife. However, one referee suggested that it be published as a Research Advance, to the original Wingreen paper published in eLife. I think that if the authors sufficiently improve this manuscript, the Research Advance track might make sense. Specifically, what I suggest, is for the authors to re-adjust their focus. Their results are well argued but simply show a known weakness in the theory \u2013 a weakness that can overcome. Why not argue them in a way that seeks to expand the field? The authors raise an interesting question, what needs to be added to the plain-vanilla version of consumer-resource models so that diversity is regained despite (slightly) nonlinear tradeoffs and a specific form of \"mutation\" dynamics? More elaborate model variants already incorporate other diversity stabilizing mechanisms which might well maintain diversity at non-unity values of \u03b3, e.g. a recent preprint by Huang group in Stanford https://www.biorxiv.org/content/10.1101/2021.05.13.444061v1. Should the authors answer this question, and salvage diversity from nonlinear tradeoffs, I think this manuscript will be much improved. Exploring an example whereby diversity is re-instated in the consumer-resource framework (despite nonlinear tradeoffs) would demonstrate how in fact, suitably adjusted, consumer-resource models can be used to capture such competing ecological forces. I believe that by steering their manuscript to open new avenues of thought rather than closing avenues of thought, it would promote future inquiries in the field, hopefully ultimately leading to a deeper understanding. With this suitable addition and adjustment of the manuscript, I hope that the Editor and other referees would then agree that it would pass the threshold of contribution to be included as a Research Advance.\n\n2. If indeed this paper is to be considered to be published in eLife as a Research Advance following the Wingreen eLife paper, it is a good idea that the authors change their notation to match precisely that parent paper's notations. I understand this is an unusual request but I do believe that it would serve future readers best \u2013 to smoothly carry over notations from one paper to its immediate follow-up in the same journal. As it is, the notation differences between the two papers are small and this is not a big request. Future readers will thank you.\n",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "34e3169a-492d-437a-9553-a0dd287a9cf0",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C1",
+      "claim": "Life on Earth is spectacularly diverse.",
+      "claim_type": "EXPLICIT",
+      "source": "Life on Earth is spectacularly diverse (May, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to May, 1988",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "10cc6001-9094-473d-b998-6ed71e74863a",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C2",
+      "claim": "The number of species of fungi is, by a conservative estimate, ca. 1.5 million.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, one study in the early 2000s found that the number of species of fungi is, by a conservative estimate, ca. 1.5 million (Hawksworth, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hawksworth, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "492d3708-ac91-4582-b708-6d1ab8840c8e",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C3",
+      "claim": "The number of fungal species was subsequently revised to be between 2.2 and 3.8 million species.",
+      "claim_type": "EXPLICIT",
+      "source": "which was subsequently revised to be between 2.2 and 3.8 million species (Hawksworth and L\u00fccking, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hawksworth and L\u00fccking, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "bfa89ca5-15b6-4fcb-9dca-5ba89e986418",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C4",
+      "claim": "Microbes are by far the most diverse form of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbes are by far the most diverse form of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by subsequent statement about percentage of species",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "3a1bc6c7-243f-4137-a3fe-c8b557f33c0e",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C5",
+      "claim": "Microbes constitute approximately 70\u201390% of all species.",
+      "claim_type": "EXPLICIT",
+      "source": "They constitute approximately 70\u201390% of all species (Larsen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Larsen et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "18ec59b4-c92f-4050-bd33-2bb68c560124",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C6",
+      "claim": "All species came from a single common ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps even more astonishing than the number of species is the fact that all of them came from a single common ancestor (Darwin, 1859; Steel and Penny, 2010; Theobald, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Darwin, 1859; Steel and Penny, 2010; Theobald, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "0a5e9e19-789e-4547-9819-1a9cd0c09761",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C7",
+      "claim": "Understanding the fundamental mechanisms behind diversification is one of the most relevant problems addressed by the scientific community.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the fundamental mechanisms behind such diversification is one of the most relevant problems addressed by the scientific community (Mayr and Mayr, 1963; Coyne, 1992; Rice and Hostert, 1993; Higashi et al., 1999; Dieckmann and Doebeli, 1999; Gavrilets and Waxman, 2002; de Aguiar et al., 2009; Doebeli, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "e666f191-3de8-48bd-84a4-56b168cfbe80",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C8",
+      "claim": "Ecological interactions, such as competition, have received attention as potentially very strong drivers of diversification and speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, ecological interactions, such as competition, have received a lot of attention as potentially very strong drivers of diversification and speciation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by context and subsequent discussion of models",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "8844a93f-5dd4-41bf-97ab-ded6a6efd598",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C9",
+      "claim": "Lotka-Volterra competition models augmented with carrying capacity as a function of continuous phenotype and competition kernels have been widely used to provide insights into evolutionary diversification due to competition.",
+      "claim_type": "EXPLICIT",
+      "source": "These assumptions are biologically plausible, and such models have been widely used to provide insights into evolutionary diversification due to competition (Dieckmann and Doebeli, 1999; Doebeli and Ispolatov, 2010; Doebeli and Ispolatov, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dieckmann and Doebeli, 1999; Doebeli and Ispolatov, 2010; Doebeli and Ispolatov, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "ba922a54-0559-4f05-9d4e-beff31b18abf",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C10",
+      "claim": "Commonly used Gaussian functions for carrying capacity and competition kernel are not compatible with resource-consumer models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these models are not derived mechanistically from underlying resource dynamics, and in fact it is known that the commonly used Gaussian functions for the carrying capacity and the competition kernel are not compatible with resource-consumer models (Abrams, 1986; Ackermann and Doebeli, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abrams, 1986; Ackermann and Doebeli, 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "e6872575-08c0-425d-a198-13c9a86c6ca9",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C13",
+      "claim": "Metabolic tradeoffs are not necessarily linear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, metabolic tradeoffs are not necessarily linear, and in fact there is reason to believe that they almost never are.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by subsequent biochemical arguments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "5c915b22-6107-4242-b472-160f057e9385",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C14",
+      "claim": "The non-linearity of tradeoffs is an essentially inevitable consequence of the general non-linearity of chemical kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the non-linearity of tradeoffs is an essentially inevitable consequence of the general non-linearity of chemical kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established chemical kinetics knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "625b13b4-f975-40e2-b1f8-d630c363d849",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C15",
+      "claim": "The rate and mass action equilibrium of even a simple bimolecular reaction are in general non-linear functions of the concentrations of reactants.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate and mass action equilibrium of even a simple bimolecular reaction are in general non-linear functions of the concentrations of reactants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established chemical kinetics knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "19e7a4ff-6f45-487d-9bc6-a8ce187b1702",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C16",
+      "claim": "The difference between enzyme and metabolite concentrations in E. coli is often only few- or 10-fold, which is insufficient to approximate enzymatic kinetics by functions that are linear in enzymatic concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the concentrations of enzymes in bacteria (which are probably the most realistic prototype for models of Posfai et al., 2017; Erez et al., 2020) are generally below those of their substrates, the difference is often only few- or 10-fold, which is insufficient to approximate the enzymatic kinetics by functions that are linear in enzymatic concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by inference from biochemical data and subsequent citations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "b16ce1b4-ea4f-4f88-84ae-8df4816f2ddf",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C17",
+      "claim": "Out of 103 metabolites in E. coli, 35 have concentrations above 1 mM, while 46 metabolites are in tens or single micromole digits, including two metabolites with concentrations below 1 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a detailed study (Bennett et al., 2009) of the model microbe Escherichia coli revealed that out of 103 metabolites, 35 have concentrations above 1 mM, but the concentrations of 46 metabolites are in tens or single micromole digits, including two metabolites with concentrations below 1 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bennett et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "13c4ce74-a5cd-4d91-9da6-2f8c673f0b19",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C18",
+      "claim": "The typical metabolite concentration in an E. coli bacterium is 32 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this, BIONUMBERS (Milo et al., 2010) estimate the typical metabolite concentration in an E. coli bacterium as 32 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Milo et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "d4057a4a-a4f1-4bfc-bf31-36e9d45fb76d",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C19",
+      "claim": "Concentrations of important E. coli glycolysis enzymes are in tens and even hundreds of \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, BIONUMBERS provide the evidence for concentrations of important E. coli glycolysis enzymes in tens and even hundreds of \u03bcM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to BIONUMBERS database",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "ea75a965-3acc-4e37-aa81-458bd22f5771",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C20",
+      "claim": "More than half of all metabolic enzymes undergo oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Another argument for the prevalence of non-linearity in tradeoffs is based on the oligomerization of more than half of all metabolic enzymes (Marianayagam et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marianayagam et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "ed658b5a-0019-456e-a1d7-48b87fe728a6",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C21",
+      "claim": "The dissociation constants of dimer or oligomer enzymes is often comparable to the concentrations of its monomer units.",
+      "claim_type": "EXPLICIT",
+      "source": "The dissociation constants of dimer or oligomer enzymes is often comparable to the concentrations of its monomer units to make the dimerization sensitive to environmental conditions and use it as a regulator of enzymatic activity (Ali and Imperiali, 2005 Traut, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ali and Imperiali, 2005 and Traut, 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "20580770-8d7d-4b9a-b185-62dfe419d46a",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C25",
+      "claim": "An omnipresent non-linearity in the dependence of nutrient uptake rates on \u03b1 can be transformed into the non-linearity of tradeoff, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "To make the argument for the relevance of non-linear tradeoffs even more solid, we prove that an omnipresent non-linearity in the dependence of nutrient uptake rates on \u03b1 can be transformed into the non-linearity of tradeoff (Equation 1), and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mathematical proof in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "6b060d91-8bc1-43f6-a4c1-b5c44d343cc1",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C26",
+      "claim": "Very high levels of diversity do not evolve in the consumer-resource model in a realistic scenario where tradeoffs in resource preference or the resource uptake rates are non-linear.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results show that very high levels of diversity do not evolve in the consumer-resource model considered here in a realistic scenario where tradeoffs in resource preference or the resource uptake rates are non-linear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical and numerical results presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "43a7cdae-2558-4026-8b01-2c3bea06ca2b",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C34",
+      "claim": "The high diversity observed for linear tradeoffs is an evolutionary consequence of the selective neutrality caused by a linear enzymatic tradeoff.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the high diversity observed in this case is an evolutionary consequence of the selective neutrality caused by a linear enzymatic tradeoff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from analytical and numerical results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "d6318960-99e6-43b5-8af1-d711eef345f5",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C36",
+      "claim": "For \u03b3=0.9, the singular point is an evolutionary branching point giving rise to distinct and diverging phenotypic clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in this case, the singular point is again an evolutionary branching point giving rise to the emergence of distinct and diverging phenotypic clusters (Figure 3(b)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by numerical simulations shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "7b41ef64-4abd-4032-a274-759ae32360a6",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C37",
+      "claim": "For \u03b3=0.9, the final state of evolution consists of three coexisting phenotypic clusters, each being a specialist in exactly one of the resources.",
+      "claim_type": "EXPLICIT",
+      "source": "The final state of the evolutionary process is shown in Figure 3(c): there are three coexisting phenotypic clusters, each being a specialist in exactly one of the resources.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by numerical simulations shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "07cef9f9-1c1d-4ab4-afaf-5a55555f1d71",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C41",
+      "claim": "The conclusions drawn for the chemostat case also hold for serial dilution conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our numerical simulations show that the conclusions drawn for the chemostat case also hold for the serial dilution conditions, to the point that the simulation snapshots are visually indistinguishable from those shown in Figure 2 and Figure 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by numerical simulations under serial dilution conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "d3fe5486-8d80-4b91-ba47-a435a87d3413",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C45",
+      "claim": "A weaker non-linearity in tradeoffs or uptake rates should result in broader distributions of corresponding phenotypes within specialist or generalist species.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we make a potentially testable predictions that a weaker non-linearity in tradeoffs or uptake rates should result in broader distributions of corresponding phenotypes within specialist or generalist species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from mutation-selection balance analysis",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "5afd165f-b2bf-4d26-9202-b49e2f0e41ed",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C47",
+      "claim": "Enzymatic allocation strategies that are plastic tend to reduce the amount of diversity maintained in ecological communities.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that enzymatic allocation strategies that are plastic instead of fixed, so that individuals can change their allocation (while maintaining a linear tradeoff under a fixed allocation budget) in response to resource availability during their lifetime, tend to reduce the amount of diversity maintained in the ecological communities (Pacciani-Mori et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pacciani-Mori et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "aebd24d3-84cc-46f9-8fd2-310970ea1d03",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C48",
+      "claim": "The intracellular concentration of enzymes in bacteria are often comparable to or are just few- or 10-fold smaller than those of their substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet the intracellular concentration of enzymes in bacteria are often comparable to or are just few- or 10-fold smaller than those of their substrates (Bennett et al., 2009; Milo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bennett et al., 2009; Milo et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "433e881d-3625-44b6-9926-fbed29a86fe6",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C49",
+      "claim": "Enzymatic reaction rates are generally sublinear in the concentrations of enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "It follows that enzymatic reaction rates are generally sublinear in the concentrations of enzymes, which is intuitively clear from considering the rate saturation in the limit of infinite enzyme concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from enzymatic kinetics analysis in Appendix 1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "0b2a47b4-6ed9-4bf1-8e8b-793da1818128",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C50",
+      "claim": "The formation of enzyme oligomers and spatially organized complexes are controlled by intrinsically non-linear mass action equilibria, making enzymatic rates generally sigmoid functions of the amount of enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sublinear rates are not the only possible deviation from linearity: the formation of enzyme oligomers (Marianayagam et al., 2004, Traut, 1994; Ali and Imperiali, 2005; Traut, 1994) and spatially organized complexes (Schmitt and An, 2017) are controlled by intrinsically non-linear (superlinear in case of homo-oligomers) mass action equilibria, thus making the enzymatic rates generally sigmoid functions (Ricard and Noat, 1986) of the amount of enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple sources on enzyme oligomerization and kinetics",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "2319d7d6-8003-404a-9ff5-bac10bc5fba9",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C51",
+      "claim": "The physiological costs of the production of individual enzymes are typically non-linear.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, it follows that the physiological costs of the production of individual enzymes are typically non-linear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from non-linear mass action equilibria",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "7f7df887-b094-4dac-9900-2041c8d9f29d",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C52",
+      "claim": "Realistic assessments of reaction elasticities or flux control coefficients produce values that rarely come close to 1, indicating that measured dependencies of metabolic fluxes on enzyme concentrations are significantly non-linear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is not surprising that realistic assessments of such coefficients (e.g. Loder et al., 2016; Giersch, 1995; Sun and Qian, 2002; Saavedra et al., 2005; Rohwer et al., 2000; Rutkis et al., 2013; Schmidt et al., 2016; van der Vlag et al., 1995; and many other references) produce values that rarely come close to 1, and hence that the measured dependencies of metabolic fluxes on enzyme concentrations are significantly non-linear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple experimental studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "2dac3aa6-6786-4a37-8a93-1d6ffe04d23f",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C53",
+      "claim": "Any deviation of the growth rates from the linear form results in a revalidation of the competitive exclusion limit.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether sub- or super-linear, any deviation of the growth rates from the linear form (Equation 3) and Equation A3 results in a revalidation of the competitive exclusion limit, similarly to non-linearity in tradeoffs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the analysis presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "1a85c3e8-541a-4cce-9060-10fbeba09e49",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C54",
+      "claim": "Linear tradeoffs in metabolic rates is a biologically unrealistic and exceptional case.",
+      "claim_type": "EXPLICIT",
+      "source": "This serves as another indication that linear tradeoffs in metabolic rates is a biologically unrealistic and exceptional case, while generic non-linearities do not generate high levels of diversity, and instead the outcomes are in line with classical results about the evolution of resource generalists vs. resource specialists (Ma and Levin, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from biochemical arguments and citation to Ma and Levin, 2006",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "08594bfe-4457-443f-8c8d-1d4d3635311b",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C55",
+      "claim": "The shape of tradeoff curves is an important component in adaptive dynamics models.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that the shape of tradeoff curves is, in general, an important component in adaptive dynamics models (Kisdi, 2006; Kisdi, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kisdi, 2006; Kisdi, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "73951dd4-523f-4860-af7d-2874dd70d505",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C56",
+      "claim": "Studies of evolution of cooperation have stressed that the outcome of evolution is conditional on the curvature of the public good and cost functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, studies of evolution of cooperation (e.g. Damore and Gore, 2012; Archetti and Scheuring, 2012) have stressed that the outcome of evolution is conditional on the curvature of the public good and cost functions and provided numerous biochemical reasons for non-linearity of metabolic rates in enzyme concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Damore and Gore, 2012; Archetti and Scheuring, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "d4abe147-0257-4529-a35e-19cb727f3b4b",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C57",
+      "claim": "Dynamic and optimal metabolic strategies and cross-feeding have been suggested as factors that could potentially enable high diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, dynamic and optimal metabolic strategies (Pacciani-Mori et al., 2020) and cross-feeding have recently been suggested as factors that could potentially enable such diversity (Goyal and Maslov, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pacciani-Mori et al., 2020 and Goyal and Maslov, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "84859103-aaf5-4ac6-84ab-c05dfc6902a6",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C58",
+      "claim": "'Soft constraints' that allow random deviations of metabolic strategies from the exact tradeoff constraint were reported to reduce the diversity even below the competitive exclusion limit.",
+      "claim_type": "EXPLICIT",
+      "source": "while 'soft constraints' that allow random deviations of metabolic strategies from the exact tradeoff constraint were reported in Cui et al., 2020 to reduce the diversity even below the competitive exclusion limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cui et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "e2038ab1-1ce2-4ddd-90e2-3c409ded0a96",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C59",
+      "claim": "Endogenous non-stationary 'boom-bust' population dynamics can lead to a significant increase in diversity above the saturation limit expected with equilibrium population dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "While this is not the case for externally imposed batch culture dynamics, as reported in the present paper, we have recently shown, using a different ecological model (Doebeli et al., 2021), that endogenous non-stationary 'boom-bust' population dynamics can lead to a significant increase in diversity above the saturation limit expected with equilibrium population dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Doebeli et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "360b85eb-63c1-4d59-ba1e-b126ddb14a69",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "claim_id": "C60",
+      "claim": "Non-stationary population dynamics induced by competition and predation may be more important than neutral evolutionary regimes in explaining high levels of diversity in natural systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with many experimental results reporting non-stationarity and apparent chaoticity of the population dynamics of actual plankton species, this leads to the conjecture that rather than the neutral evolutionary regime predicted in Posfai et al., 2017, non-stationary population dynamics induced by competition and predation (and perhaps external factors) may be more important in explaining high levels of diversity in natural systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative conjecture based on inference from results and citation to Posfai et al., 2017",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d6baa8e6-08d7-4c55-ae73-57436db31a5e",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background context on biodiversity, stating that life on Earth is spectacularly diverse, with microbes constituting 70-90% of all species, all descended from a single common ancestor. Understanding diversification mechanisms is identified as a fundamental scientific problem.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are well-supported by appropriate citations to established literature (May 1988, Hawksworth 2001, Larsen et al. 2017, Darwin 1859, etc.). These claims provide standard background knowledge and context for the study, with each claim backed by peer-reviewed sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "a03ef67f-559f-4828-aa51-93a351668f33",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior modeling approaches, noting that Lotka-Volterra competition models with phenotype-dependent carrying capacity have been widely used to study diversification, but that commonly used Gaussian functions are not compatible with mechanistic resource-consumer models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 accurately summarize prior work with appropriate citations (Dieckmann and Doebeli 1999, Abrams 1986, Ackermann and Doebeli 2004). The limitation of Gaussian functions in resource-consumer models is a known issue in the field, properly attributed to prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "d964435c-4ef4-4e1f-8b1b-e36720931d56",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript argues that metabolic tradeoffs are not necessarily linear due to the non-linearity of chemical kinetics. Evidence from E. coli shows that enzyme and metabolite concentrations differ by only few- to 10-fold, insufficient for linear approximations. Additionally, more than half of metabolic enzymes undergo oligomerization with dissociation constants comparable to monomer concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C21 provide a well-reasoned biochemical argument supported by empirical data from Bennett et al. 2009 and Milo et al. 2010 (C17-C19) and literature on enzyme oligomerization (Marianayagam et al. 2004, C20-C21). The logical chain from chemical kinetics principles to the inadequacy of linear approximations in bacterial systems is sound and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "18553b3e-3728-42b3-89d6-7d4c7ed3e0db",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript proves that non-linearity in nutrient uptake rates can be mathematically transformed into non-linearity of tradeoffs, and vice versa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by mathematical proof presented in the manuscript (referenced as Equation 1 and detailed in Appendix 1). This mathematical equivalence strengthens the argument that either form of non-linearity has similar consequences for diversity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "45eaed67-98c9-46b7-9d32-77088787d39b",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The manuscript's main finding is that very high diversity does not evolve with non-linear tradeoffs. For linear tradeoffs (\u03b3=1), high diversity emerges due to selective neutrality. For \u03b3<1 (concave tradeoffs), the system diversifies into p specialist species, with each specializing on one resource.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C34, C36-C37 are supported by both analytical adaptive dynamics theory and numerical simulations shown in Figures 1-3. The analytical derivation identifies singular points and their stability properties, while simulations demonstrate the evolutionary trajectories. The combination of theory and simulation provides strong converging evidence for these core findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "2a7bb988-0ba7-42be-a311-6f867eb47ed5",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The conclusions from chemostat conditions also hold under serial dilution conditions, despite the explicit non-stationarity of the latter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by numerical simulations under serial dilution conditions that reproduce the qualitative outcomes observed in chemostat simulations. The authors acknowledge that adaptive dynamics assumptions are violated but demonstrate empirically that conclusions remain robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "63534515-b608-48e3-9269-6f1dde7e7611",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The manuscript predicts that weaker non-linearity in tradeoffs should result in broader phenotype distributions within species due to mutation-selection balance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is supported by theoretical analysis of mutation-selection balance (referencing Equation A20 with factor 1-\u03b3). This is a testable prediction derived from the model, though it remains to be empirically validated. The logic connecting weak selection (near \u03b3=1) to broader distributions is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "c9b21e9f-ead9-48ab-b62f-95dc342e83b9",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive biochemical justification for non-linear tradeoffs, including: enzyme concentrations comparable to substrate concentrations, sublinear enzymatic reaction rates, non-linear oligomerization kinetics, and empirical measurements of flux control coefficients that deviate from 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are well-supported by multiple lines of biochemical evidence and extensive citations to experimental literature (Bennett et al. 2009, Milo et al. 2010, Marianayagam et al. 2004, Loder et al. 2016, and many others). The argument that linear tradeoffs are biochemically unrealistic is compelling and thoroughly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "21940d63-b172-4b11-9110-0b1494ebc1a6",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript concludes that any deviation from linear growth rates revalidates the competitive exclusion limit, and that linear tradeoffs are biologically unrealistic and exceptional.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by the mathematical analysis and biochemical arguments presented throughout the manuscript. The conclusion that linear tradeoffs are exceptional is well-justified by the extensive evidence for non-linearity in metabolic systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "f7d8e0e0-fc00-4308-8e69-b58bd64e81a7",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript discusses prior work showing that: plastic allocation strategies reduce diversity, tradeoff curvature is important in adaptive dynamics, and other factors like cross-feeding or soft constraints may affect diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C55-C58 accurately cite and summarize relevant prior work (Pacciani-Mori et al. 2020, Kisdi 2006/2015, Damore and Gore 2012, Goyal and Maslov 2018, Cui et al. 2020). These claims provide appropriate context for the current study's contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    },
+    {
+      "id": "a0f25c86-c09c-41b4-a480-4991d1811466",
+      "content_id": "5ee99211-9965-4b80-a724-3858b0f81237",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript speculates that non-stationary 'boom-bust' population dynamics may be more important than neutral evolutionary regimes in explaining high diversity in natural systems, based on recent work by the authors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C60 are explicitly speculative conjectures about natural systems. While C59 cites supporting work (Doebeli et al. 2021), C60 is a hypothesis that requires further empirical validation. The authors appropriately frame this as a conjecture rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:33:11.027464Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "34e3169a-492d-437a-9553-a0dd287a9cf0",
+      "result_id": "d6baa8e6-08d7-4c55-ae73-57436db31a5e"
+    },
+    {
+      "claim_id": "10cc6001-9094-473d-b998-6ed71e74863a",
+      "result_id": "d6baa8e6-08d7-4c55-ae73-57436db31a5e"
+    },
+    {
+      "claim_id": "492d3708-ac91-4582-b708-6d1ab8840c8e",
+      "result_id": "d6baa8e6-08d7-4c55-ae73-57436db31a5e"
+    },
+    {
+      "claim_id": "bfa89ca5-15b6-4fcb-9dca-5ba89e986418",
+      "result_id": "d6baa8e6-08d7-4c55-ae73-57436db31a5e"
+    },
+    {
+      "claim_id": "3a1bc6c7-243f-4137-a3fe-c8b557f33c0e",
+      "result_id": "d6baa8e6-08d7-4c55-ae73-57436db31a5e"
+    },
+    {
+      "claim_id": "18ec59b4-c92f-4050-bd33-2bb68c560124",
+      "result_id": "d6baa8e6-08d7-4c55-ae73-57436db31a5e"
+    },
+    {
+      "claim_id": "0a5e9e19-789e-4547-9819-1a9cd0c09761",
+      "result_id": "d6baa8e6-08d7-4c55-ae73-57436db31a5e"
+    },
+    {
+      "claim_id": "e666f191-3de8-48bd-84a4-56b168cfbe80",
+      "result_id": "a03ef67f-559f-4828-aa51-93a351668f33"
+    },
+    {
+      "claim_id": "8844a93f-5dd4-41bf-97ab-ded6a6efd598",
+      "result_id": "a03ef67f-559f-4828-aa51-93a351668f33"
+    },
+    {
+      "claim_id": "ba922a54-0559-4f05-9d4e-beff31b18abf",
+      "result_id": "a03ef67f-559f-4828-aa51-93a351668f33"
+    },
+    {
+      "claim_id": "e6872575-08c0-425d-a198-13c9a86c6ca9",
+      "result_id": "d964435c-4ef4-4e1f-8b1b-e36720931d56"
+    },
+    {
+      "claim_id": "5c915b22-6107-4242-b472-160f057e9385",
+      "result_id": "d964435c-4ef4-4e1f-8b1b-e36720931d56"
+    },
+    {
+      "claim_id": "625b13b4-f975-40e2-b1f8-d630c363d849",
+      "result_id": "d964435c-4ef4-4e1f-8b1b-e36720931d56"
+    },
+    {
+      "claim_id": "19e7a4ff-6f45-487d-9bc6-a8ce187b1702",
+      "result_id": "d964435c-4ef4-4e1f-8b1b-e36720931d56"
+    },
+    {
+      "claim_id": "b16ce1b4-ea4f-4f88-84ae-8df4816f2ddf",
+      "result_id": "d964435c-4ef4-4e1f-8b1b-e36720931d56"
+    },
+    {
+      "claim_id": "13c4ce74-a5cd-4d91-9da6-2f8c673f0b19",
+      "result_id": "d964435c-4ef4-4e1f-8b1b-e36720931d56"
+    },
+    {
+      "claim_id": "d4057a4a-a4f1-4bfc-bf31-36e9d45fb76d",
+      "result_id": "d964435c-4ef4-4e1f-8b1b-e36720931d56"
+    },
+    {
+      "claim_id": "ea75a965-3acc-4e37-aa81-458bd22f5771",
+      "result_id": "d964435c-4ef4-4e1f-8b1b-e36720931d56"
+    },
+    {
+      "claim_id": "ed658b5a-0019-456e-a1d7-48b87fe728a6",
+      "result_id": "d964435c-4ef4-4e1f-8b1b-e36720931d56"
+    },
+    {
+      "claim_id": "20580770-8d7d-4b9a-b185-62dfe419d46a",
+      "result_id": "18553b3e-3728-42b3-89d6-7d4c7ed3e0db"
+    },
+    {
+      "claim_id": "6b060d91-8bc1-43f6-a4c1-b5c44d343cc1",
+      "result_id": "45eaed67-98c9-46b7-9d32-77088787d39b"
+    },
+    {
+      "claim_id": "43a7cdae-2558-4026-8b01-2c3bea06ca2b",
+      "result_id": "45eaed67-98c9-46b7-9d32-77088787d39b"
+    },
+    {
+      "claim_id": "d6318960-99e6-43b5-8af1-d711eef345f5",
+      "result_id": "45eaed67-98c9-46b7-9d32-77088787d39b"
+    },
+    {
+      "claim_id": "7b41ef64-4abd-4032-a274-759ae32360a6",
+      "result_id": "45eaed67-98c9-46b7-9d32-77088787d39b"
+    },
+    {
+      "claim_id": "07cef9f9-1c1d-4ab4-afaf-5a55555f1d71",
+      "result_id": "2a7bb988-0ba7-42be-a311-6f867eb47ed5"
+    },
+    {
+      "claim_id": "d3fe5486-8d80-4b91-ba47-a435a87d3413",
+      "result_id": "63534515-b608-48e3-9269-6f1dde7e7611"
+    },
+    {
+      "claim_id": "aebd24d3-84cc-46f9-8fd2-310970ea1d03",
+      "result_id": "c9b21e9f-ead9-48ab-b62f-95dc342e83b9"
+    },
+    {
+      "claim_id": "433e881d-3625-44b6-9926-fbed29a86fe6",
+      "result_id": "c9b21e9f-ead9-48ab-b62f-95dc342e83b9"
+    },
+    {
+      "claim_id": "0b2a47b4-6ed9-4bf1-8e8b-793da1818128",
+      "result_id": "c9b21e9f-ead9-48ab-b62f-95dc342e83b9"
+    },
+    {
+      "claim_id": "2319d7d6-8003-404a-9ff5-bac10bc5fba9",
+      "result_id": "c9b21e9f-ead9-48ab-b62f-95dc342e83b9"
+    },
+    {
+      "claim_id": "7f7df887-b094-4dac-9900-2041c8d9f29d",
+      "result_id": "c9b21e9f-ead9-48ab-b62f-95dc342e83b9"
+    },
+    {
+      "claim_id": "2dac3aa6-6786-4a37-8a93-1d6ffe04d23f",
+      "result_id": "21940d63-b172-4b11-9110-0b1494ebc1a6"
+    },
+    {
+      "claim_id": "1a85c3e8-541a-4cce-9060-10fbeba09e49",
+      "result_id": "21940d63-b172-4b11-9110-0b1494ebc1a6"
+    },
+    {
+      "claim_id": "5afd165f-b2bf-4d26-9202-b49e2f0e41ed",
+      "result_id": "f7d8e0e0-fc00-4308-8e69-b58bd64e81a7"
+    },
+    {
+      "claim_id": "08594bfe-4457-443f-8c8d-1d4d3635311b",
+      "result_id": "f7d8e0e0-fc00-4308-8e69-b58bd64e81a7"
+    },
+    {
+      "claim_id": "73951dd4-523f-4860-af7d-2874dd70d505",
+      "result_id": "f7d8e0e0-fc00-4308-8e69-b58bd64e81a7"
+    },
+    {
+      "claim_id": "d4abe147-0257-4529-a35e-19cb727f3b4b",
+      "result_id": "f7d8e0e0-fc00-4308-8e69-b58bd64e81a7"
+    },
+    {
+      "claim_id": "84859103-aaf5-4ac6-84ab-c05dfc6902a6",
+      "result_id": "f7d8e0e0-fc00-4308-8e69-b58bd64e81a7"
+    },
+    {
+      "claim_id": "e2038ab1-1ce2-4ddd-90e2-3c409ded0a96",
+      "result_id": "a0f25c86-c09c-41b4-a480-4991d1811466"
+    },
+    {
+      "claim_id": "360b85eb-63c1-4d59-ba1e-b126ddb14a69",
+      "result_id": "a0f25c86-c09c-41b4-a480-4991d1811466"
+    }
+  ],
+  "comparisons": []
+}

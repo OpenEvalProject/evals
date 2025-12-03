@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C72",
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "The study developed a brain-age prediction model using XGBoost trained on UK Biobank data (N=22,661) and validated it on four independent cohorts (ALFA+, ADNI, EPAD, OASIS) with a total of 2,314 participants. The model used cortical thickness, cortical volume, and subcortical volume features, with separate models trained for males and females, and included age-bias correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C72-C74, C76 describe a well-documented methodology with appropriate model selection (XGBoost), justification from prior literature, and validation across multiple independent cohorts. The approach is standard for brain-age prediction studies and the multi-cohort validation strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C69",
+      "C70"
+    ],
+    "result": "The brain-age prediction model achieved MAE=4.19 and R=0.71 on UK Biobank with 10-fold cross-validation. Performance was consistent across independent cohorts with no significant differences in correlation coefficients between cohorts (P>0.05) or between sexes (P>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C69, C70 report model performance metrics with appropriate statistical testing. The consistency across cohorts and sexes supports model robustness. Performance is comparable to similar studies as acknowledged by the authors (C89), though not state-of-the-art.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Brain-age delta was significantly higher in MCI compared to CU individuals and was associated with abnormal A\u03b2 status and progressive AT stages in both CU and MCI groups. The effect showed a progressive pattern across AT stages (A-T- < A+T- < A+T+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 present consistent associations with AD biomarkers across multiple cohorts with appropriate statistical corrections (FDR). The progressive relationship across AT stages provides biological plausibility. Results are supported by Table 4 and Figure 3a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Brain-age delta was significantly associated with APOE-\u03b54 carrier status in both CU and MCI individuals, with APOE-\u03b54 carriers showing larger brain-age deltas compared to APOE-\u03b533 individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 report statistically significant associations with appropriate effect sizes and p-values. The findings are consistent with prior literature on APOE-\u03b54 effects on brain aging (C79-C81) and are supported by data in Table 4 and Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Brain-age delta was significantly associated with plasma NfL in both CU and MCI individuals but not with CSF NfL or longitudinal aging signature change in CU individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 report differential associations between plasma and CSF NfL with brain-age delta. The lack of association with CSF NfL and longitudinal aging signature is appropriately reported with non-significant p-values. The authors provide reasonable interpretations for these null findings (C82-C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "A significant interaction between age and brain-age delta on CSF NfL was found in CU individuals, with this effect present in females but not males when stratified by sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 report a significant interaction effect with appropriate statistical testing and FDR correction. The sex-specific finding is supported by Figure 5a and is consistent with the broader pattern of sex differences observed in the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Brain-age delta was significantly associated with white matter hyperintensities (WMH) in both CU and MCI individuals. When stratified by sex, the association was significant in both CU females and males, but only in MCI males and not MCI females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 report associations with WMH supported by statistical analysis with appropriate corrections. The sex-specific patterns in MCI are interesting but lack significant interaction terms, suggesting caution in interpretation. Results are supported by Tables 4-5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Plasma NfL was significantly associated with brain-age delta in CU and MCI females but not in males, though the sex interaction was not significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 reports sex-stratified associations with plasma NfL. While the associations are significant in females but not males, the authors appropriately note that the interaction term was not significant, indicating limitations in concluding definitive sex differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C71"
+    ],
+    "result": "SHAP analysis identified brain regions contributing most to brain-age prediction, with some regions common to both sexes (amygdala, nucleus accumbens, cerebellar white matter, lateral ventricles, insula, superior-temporal cortex) and some showing sex-specific contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C71 describe SHAP analysis results identifying important brain regions. The methodology is appropriate and the authors acknowledge limitations of SHAP with correlated features (C91). Results are visualized in Figure 2 and provide biological interpretability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C57"
+    ],
+    "result": "Sex-specific patterns of brain aging were identified, with males showing greater age-related decreases in superior frontal volumes and isthmus cingulate thickness, while females showed reductions in inferior-parietal, pars triangularis, and paracentral regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C57 report sex-by-age interactions with significant p-values. The findings are consistent with prior literature (C58) and provide evidence for sex-specific brain aging patterns. Results are supported by statistical analysis and Figure 2d.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Sex-stratified analyses revealed that the association between brain-age delta and A+T+ stage was significant only in CU females, and the association with APOE status was significant only in CU males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C44 report sex-specific associations, but the authors note that interaction terms were not significant (C86). This suggests the sex differences may not be robust. The findings require replication and should be interpreted cautiously given multiple comparisons and lack of significant interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study validates brain-age delta as a non-invasive marker of biological brain aging associated with AD pathology, risk factors, and neurodegeneration in non-demented individuals, with evidence for sex-related differences in brain aging pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C92-C94 represent the main conclusions of the study. These are well-supported by the comprehensive analyses across multiple biomarkers and cohorts. The validation is strengthened by multi-cohort replication and associations with established AD biomarkers, though the cross-sectional nature limits causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study demonstrated methodological robustness by training on UK Biobank and independently validating on four cohorts, achieving performance comparable to similar studies, which enabled large-sample analyses stratified by sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 describe methodological strengths appropriately. The multi-cohort validation is a clear strength, and the authors appropriately contextualize their performance relative to similar studies. The acknowledgment of limitations compared to state-of-the-art models is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The use of a restricted feature set (183 ROIs) enabled visualization and interpretation of regional contributions via SHAP values, though this approach has limitations with correlated features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 appropriately describe both advantages and limitations of the methodological approach. The authors acknowledge the trade-off between interpretability and performance, and note the limitation of SHAP with correlated features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The study applied an established age-bias correction procedure to address proportional bias in brain-age estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 describe a standard methodological correction for known bias in brain-age prediction, supported by multiple citations. This is appropriate methodology for brain-age studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The brain regions with highest impact on prediction were consistent with prior literature and showed overlap with the established aging signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide validation of the model by showing consistency with established aging-related brain regions. This supports the biological validity of the predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The aging signature meta-ROI was defined as the surface-area weighted average of cortical thickness in specific regions (calcarine, caudal fusiform, caudal insula, cuneus, inferior frontal gyrus, medial superior frontal, precentral cortices).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 describes a methodological detail based on established literature (Bakkour et al., 2013). This is a standard approach for defining the aging signature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "The results suggest that APOE-\u03b54 affects physiological brain aging (though less than with AD pathology), that morphological aging effects are not fully driven by neurodegeneration, and that cerebrovascular disease contributes to physiological brain aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C84 represent interpretations of the data that are reasonable given the pattern of associations observed. The authors appropriately qualify these as suggestions and acknowledge the complexity of disentangling aging from pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors suggest that brain-age delta might reflect early life factors rather than accelerated aging, and that different pathological pathways (amyloid aggregation vs. axonal injury) may drive brain aging differently in males versus females, though they acknowledge limitations in the evidence for sex differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83, C85-C86 represent speculative interpretations. The authors appropriately acknowledge these as suggestions and note the lack of significant interactions. These hypotheses require further testing and should be considered preliminary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction establishes the background on aging and AD, brain-age prediction methods, prior associations with biomarkers, and sex differences in AD and brain aging, all supported by appropriate citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 represent background knowledge from prior literature, all appropriately cited. These establish the rationale for the current study and are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C79",
+      "C80"
+    ],
+    "result": "The discussion contextualizes findings within prior literature on NfL as a neurodegeneration marker, cortical thinning mechanisms, WMH associations, sex differences in brain structure, hormonal influences, and APOE effects, all supported by appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C64, C79-C80 represent contextualization of the current findings within prior literature. All are appropriately cited and help interpret the study results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2002 @@
+{
+  "submission": {
+    "id": "567b933e-b0c8-4f86-be26-a6a0e1a2fb67",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:31:44.879235Z",
+    "updated_at": "2025-12-03T07:31:44.879235Z"
+  },
+  "content": [
+    {
+      "id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "submission_id": "567b933e-b0c8-4f86-be26-a6a0e1a2fb67",
+      "content_type": "manuscript",
+      "content_text": "# A novel bivalent chromatin associates with rapid induction of camalexin biosynthesis genes in response to a pathogen signal in Arabidopsis\n\n## Authors\n\n- Kangmei Zhao<sup>1</sup> ([ORCID: 0000-0003-1472-4993](https://orcid.org/0000-0003-1472-4993))\n- Deze Kong<sup>2</sup> ([ORCID: 0000-0003-4334-5888](https://orcid.org/0000-0003-4334-5888))\n- Benjamin Jin<sup>1</sup>\n- Christina D Smolke<sup>2</sup> ([ORCID: 0000-0002-5449-8495](https://orcid.org/0000-0002-5449-8495))\n- Seung Yon Rhee<sup>1</sup> ([ORCID: 0000-0002-7572-4762](https://orcid.org/0000-0002-7572-4762)) \u2020\n\n### Affiliations\n\n1. Carnegie Institution for Science, Department of Plant Biology Stanford United States\n2. Department of Bioengineering, Stanford University Stanford United States\n3. Chan Zuckerberg Biohub San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTemporal dynamics of gene expression underpin responses to internal and environmental stimuli. In eukaryotes, regulation of gene induction includes changing chromatin states at target genes and recruiting the transcriptional machinery that includes transcription factors. As one of the most potent defense compounds in Arabidopsis thaliana, camalexin can be rapidly induced by bacterial and fungal infections. Though several transcription factors controlling camalexin biosynthesis genes have been characterized, how the rapid activation of genes in this pathway upon a pathogen signal is enabled remains unknown. By combining publicly available epigenomic data with in vivo chromatin modification mapping, we found that camalexin biosynthesis genes are marked with two epigenetic modifications with opposite effects on gene expression, trimethylation of lysine 27 of histone 3 (H3K27me3) (repression) and acetylation of lysine 18 of histone 3 (H3K18ac) (activation), to form a previously uncharacterized type of bivalent chromatin. Mutants with reduced H3K27me3 or H3K18ac suggested that both modifications were required to determine the timing of gene expression and metabolite accumulation at an early stage of the stress response. Our study indicates that the H3K27me3-H3K18ac bivalent chromatin, which we name as kairostat, plays an important role in controlling the timely induction of gene expression upon stress stimuli in plants.\n\n## Introduction\n\nPlants produce many metabolites that are essential for responding to environmental cues, the expression of which requires tight temporal control (Barco and Clay, 2019; Grotewold, 2005; Martin et al., 2010). One of the most prominent defense metabolites from Arabidopsis thaliana is camalexin. Camalexin is an indole alkaloid derived from tryptophan and can be induced rapidly by various biotic and abiotic stimuli in Arabidopsis (Stotz et al., 2011). Essential biosynthetic enzymes belong to the cytochrome P450 family, including CYP79B2/3, CYP71A12/13, and PHYTOALEXIN DEFICIENT 3 (PAD3) (Klein et al., 2013; Schuhegger et al., 2006). The expression of these enzymatic genes can be rapidly induced by various abiotic and biotic stresses, and pathogen-derived substances such as flagellin 22 (FLG22) and oligogalacturonides (Denoux et al., 2008). Previous studies revealed complex transcriptional and translational control of camalexin biosynthesis genes (Frerigmann et al., 2016; Stahl et al., 2016; Zhou et al., 2020; Birkenbihl et al., 2012; Frerigmann et al., 2015; Mao et al., 2011). At the transcriptional regulation level, transcription factors from the MYB family, including MYB34, MYB51, and MYB122, promote camalexin biosynthesis in response to Pseudomonas syringae infection (Stahl et al., 2016; Frerigmann et al., 2015). WRKY33 functions as an activator and directly binds to the promoters of camalexin biosynthesis genes (Birkenbihl et al., 2012). Besides transcription factors, CALCIUM-DEPENDENT PROTEIN KINASE (CPK)5/6 and MAPK3/6 can phosphorylate WRKY33 to enhance promoter binding and transactivation (Zhou et al., 2020; Mao et al., 2011). At the translational level, ribosome footprinting showed that genes involved in camalexin biosynthesis, CYP79B2 and CYP79B3, also increased translational efficiency under pattern triggered immunity (Xu et al., 2017; Yoo et al., 2020). Despite the rich knowledge of these upstream regulators of the camalexin biosynthetic pathway, it remains unknown how the rapid induction upon a pathogen signal is enabled.\n\nThe accessibility of target gene regions to transcription factors is determined by the dynamics of chromatin states in eukaryotic cells (Stricker et al., 2017). Chromatin states are controlled by epigenetic modifications that influence nucleosome accessibility (Vihervaara et al., 2018). Epigenetic modifications constitute various covalent decoration of chemical groups to histones and DNA, which are associated with promoting or repressing gene expression by altering chromatin accessibility to transcription factors (Stricker et al., 2017; Henikoff and Greally, 2016; Venkatesh and Workman, 2015). For example, trimethylation of lysine 27 of histone 3 (H3K27me3), established by the polycomb repressive complex 2, is associated with repressing gene expression (Carter et al., 2018). H3K27me3 represses gene expression by increasing chromatin condensation and limiting the recruitment of transcription factors and other components of the transcriptional machinery (Aranda et al., 2015). Trimethylation of lysine 4 of histone 3 (H3K4me3) is marked at actively transcribed genes (Zhang et al., 2009), which activates gene expression by promoting the recruitment of transcription initiation factors to promoters of target genes (Lauberth et al., 2013).\n\nEpigenetic marks that play opposite roles on gene expression can co-localize at the same gene regions to form bivalent chromatins (Bernstein et al., 2006; Voigt et al., 2013). Bivalent chromatins were initially observed to be associated with genes involved in cell differentiation in human embryonic stem cells and the most reported variant is formed by H3K27me3 and H3K4me3 (Bernstein et al., 2006; Dattani et al., 2018; Sachs et al., 2013). Bivalent chromatins also exist in other mammalian cell types and can be formed by other epigenetic marks, including additional activating (H3K4me1, H3K4me2, H3K36me3, H3K9ac, H3K27ac, H3K14ac, H4K18ac) and repressive (H3K9me2, H3K9me3, H4K20me3, 5Mc) marks (van der Velde et al., 2021; Xu and Kidder, 2018; Charlet et al., 2016; Matsumura et al., 2015; Roy and Sridharan, 2017). In plants, the H3K27m3-H3K4me3 bivalent chromatin has been observed at FLOWERING LOCUS C (FLC) (Jiang et al., 2008) in A. thaliana and genes associated with cold stress in potato tuber (Zeng et al., 2019). Recently, a novel bivalent chromatin formed by H3K27me3 and H3K4me1 was identified in Brassica napus (Zhang et al., 2021). Therefore, bivalent chromatins can be formed by different pairs of epigenetic marks.\n\nDespite many reports on the existence of bivalent chromatins, much less is known about their biological roles. The only function that has been proposed for a bivalent chromatin is to poise the expression of developmental genes in stem cells for rapid activation into differentiation (Bernstein et al., 2006). This hypothesis has been tested and supported by studies only on mammalian embryonic stem cells or cancer cells (Deng et al., 2013; Lima-Fernandes et al., 2019; Jia et al., 2012). The \u2018poise genes for transcriptional activation\u2019 role of bivalent chromatin has not yet been tested on a whole organism. And, to our knowledge, no other role has been implicated for bivalent chromatins.\n\nHere, by integrating epigenomic profiles with a genome-wide metabolic network in Arabidopsis, we found that two epigenetic marks playing opposite roles on gene expression, H3K27me3 and H3K18ac, were enriched at camalexin biosynthesis and several other specialized metabolic pathways. Focusing on the camalexin biosynthesis pathway in this study, sequential chromatin immunoprecipitation (SeqChIP)-PCR confirmed that these two marks were co-localized in vivo and formed a previously uncharacterized type of bivalent chromatin. Mutants defective in H3K27m3 and H3K18ac suggested that both modifications were required to determine the timely induction of camalexin biosynthetic gene expression and camalexin accumulation under FLG22 treatment. This study revealed a new type of bivalent chromatin whose function may be to determine the timely induction of defense-compound biosynthesis in response to a pathogen signal.\n\n## Results\n\nCamalexin biosynthesis pathway is one of the best characterized pathways associated with specialized metabolism in Arabidopsis (Stotz et al., 2011; Frerigmann et al., 2016). We identified epigenetic marks enriched in the camalexin biosynthesis pathway using an omics data-driven approach by integrating 16 publicly available epigenomic profiles with Arabidopsis genome-scale metabolic network annotation. High-resolution epigenomic profiles including histone variants, DNA methylation and histone modifications were obtained from seedlings grown under similar conditions (Wang et al., 2015; Luo et al., 2013; Roudier et al., 2011). To map these epigenetic marks on metabolic domains, pathways, and genes, we used genome-wide functional annotations of metabolism (Schl\u00e4pfer et al., 2017). Enrichment analysis at the metabolic domain level revealed distinct patterns, including specialized metabolism being enriched with both a repression mark H3K27me3 and an activation mark H3K18ac (Figure 1A). Correlation of H3K27me3 and H3K18ac marks on the Arabidopsis genome had been reported previously (Luo et al., 2013), which we also observed using total metabolic genes (Pearson\u2019s correlation coefficient 0.36, t-test p-value 4.6E-11) (Figure 1\u2014figure supplement 1A). To determine if specialized metabolic genes drove the correlation of these two marks on metabolic genes, we removed specialized metabolic genes from the total metabolic genes and reanalyzed the correlation patterns. We observed decreased correlation between H3K27me3 and H3K18ac, indicating that specialized metabolic genes substantially contributed to the correlation of these two marks on metabolic genes (Pearson\u2019s correlation coefficient 0.11, t-test p-value 3.5E-02) (Figure 1\u2014figure supplement 1B). To determine how prevalent the H3K27me3-H3K18ac association was for specialized metabolic genes, we counted the number of genes marked by both modifications. We found that 37% (324 out of 887) of specialized metabolic genes were marked by both H3K27me3 and H3K81ac (Figure 1B). We then asked in which specialized metabolic pathways these two marks were significantly enriched by selecting the pathways that were annotated to specialized metabolism based on the Plant Metabolic Network database. To increase the statistical power, we only included the specialized metabolic pathways containing at least 10 genes, which resulted in 42 pathways. Among them, we found several pathways, including camalexin and glucosinolate biosynthesis pathways, to be significantly enriched with both epigenetic marks (Figure 1\u2014figure supplement 2, Supplementary file 1). To decipher the nature and function of the H3K27me3-H3K18ac dual association on controlling gene expression, we focused our investigation on the camalexin biosynthetic genes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69508/elife-69508-fig1-v2.jpg)\n\n**Figure 1.:** (A) Enrichment analysis shows different epigenetic modification patterns across metabolic domains. The heatmap represents log2 fold change (Log2FC) of enrichment or depletion of an epigenetic mark associated with each domain relative to total metabolic genes. Epigenetic modifications are color-coded based on their effect on gene expression; red represents activating mark and blue represents repressive mark. Genes only mapped to unique metabolic domains were included in this analysis. Significant enrichment or depletion is based on Fisher\u2019s exact test, p-value < 0.05 and fold change >1.5. Gray cells represent no significant change. Black arrows indicate the patterns for trimethylation of lysine 27 of histone 3 (H3K27me3) and H3K18ac. (B) The co-occurrence of H3K27me3 and H3K18ac on total enzymatic genes in the genome and specialized metabolic genes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69508/elife-69508-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Epigenetic modifications are color-coded based on their effect on gene expression; red represents activating mark and blue represents repressing mark. r represents Pearson\u2019s correlation coefficient. The box highlighted by red represents Pearson\u2019s correlation coefficient between H3K18ac and H3K27me3 . Gray cells represent insignificant correlation determined by the R package Hmisc.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69508/elife-69508-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The heatmap represents log2 fold change (Log2FC) of enrichment or depletion of a mark associated with each pathway relative to total metabolic genes based on Fisher\u2019s exact test followed by a post hoc adjustment using false discovery rate (FDR). Gray cells represent no-significant enrichment or depletion at FDR of 0.01 and fold change of 1.5. The heatmap was generated using hierarchical clustering using the ggplot2 package version 3.1 in RStudio. Epigenetic modifications are color-coded based on their effect on gene expression; red represents activating marks and blue represents repressive marks.\n\nWe developed two mutually non-exclusive hypotheses about the role of H3K27me3 and H3K18ac on the expression of camalexin biosynthesis genes: (1) H3K27me3 and H3K18ac are co-localized on the same genes in the same cell and control their gene expression induction; or (2) H3K27me3 and H3K18ac are associated with the same genes but in different cells, which may contribute to determining cell-type specificity of this pathway. To distinguish between the two possibilities, we examined in vivo co-localization of the two modifications using SeqChIP-qPCR, which requires a two-step, serial chromatin pull-down with antibodies against these two modifications. Though more than 10 genes were annotated to camalexin biosynthesis pathway in the Plant Metabolic Network database, we focused on the three experimentally validated genes that are essential in synthesizing camalexin, CYP79B2, CYP71A13, and Phytoalexin Deficient 3 (PAD3) (Klein et al., 2013; Schuhegger et al., 2006Figure 2A). To assess the antibodies\u2019 specificity and efficiency, we included several negative and positive controls, including a transcription factor-encoding gene called Golden-2-Like 1 (GLK) that was previously observed to be associated with both H3K27me3 and H3K18ac (Luo et al., 2013). All three camalexin biosynthesis genes showed significantly higher signals when pulled down with both antibodies against H3K27me3 and H3K18ac than without any antibody in the second pull-down (Figure 2B). We observed comparable pull-down efficiency for GLK between this study and the previous publication (Zeng et al., 2019). Altering the order of the two antibodies for H3K27me3 and H3K18ac in the pull-down showed similar patterns (Figure 2C). These results indicated that H3K27me3 and H3K18ac are co-localized at the camalexin biosynthesis genes in planta to form a bivalent chromatin.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69508/elife-69508-fig2-v2.jpg)\n\n**Figure 2.:** (A) Camalexin biosynthesis pathway map and the essential genes that can produce camalexin. (B-C) Sequential chromatin immunoprecipitation (ChIP)-qPCR confirms the co-localization of H3K27me3 and H3K18ac. Altering the order of antibodies against H3K27me3 or H3K18ac in two rounds of pull-downs shows similar results in sequential ChIP-qPCR. Negative control represents a genomic region that has low abundance of both H3K27me3 and H3K18ac. H3K27me3_only represents a genomic region that has high abundance of H3K27me3 and low abundance of H3K18ac. H3K18ac_only represents a genomic region that has high abundance of H3K18ac and low abundance of H3K27me3. NoAb represents no antibody in the second pull-down. Error bars represent standard deviation of data from six biological replicates. The experiments were performed twice with different plant samples and data were combined in this analysis.\n\nThe biological function of bivalent chromatins has long been hypothesized to poise gene expression for rapid activation upon signal perception. To date, this model has been tested only in mammalian stem cells and cancer cells (Zeng et al., 2019; Zhang et al., 2021; Deng et al., 2013), and no direct evidence is available in a whole organism context. As a first step to understand the role of the H3K27me3-H3K18ac bivalent chromatin on camalexin genes, we examined the transcriptional kinetics of camalexin biosynthesis genes under FLG22 induction in wild type and mutant lines with defective deposition of H3K27me3 or H3K18ac. We selected chromatin remodeler pickle (pkl-1) (Carter et al., 2018) and histone methyltransferase curly leaf 28 (clf28) (Doyle and Amasino, 2009) to study the function of H3K27me3 on gene expression. The protein complex involved in establishing H3K18ac has not been well characterized in Arabidopsis, which limits the genetic resources that can be utilized to study the function of this epigenetic modification. The available mutant lines associated with establishing H3K18ac are increased DNA methylation 1 and 2 (idm1 and idm2) (Qian et al., 2014; Qian et al., 2012). IDM1 is a histone acetyltransferase and IDM2 is a heat shock protein that functions in the same protein complex as IDM1 (Qian et al., 2014; Qian et al., 2012).\n\nIn wild-type plants, CYP71A13 and PAD3 were significantly induced within 30 min after FLG22 treatment and CYP79B2 was significantly induced within 1 hr after the treatment (Figure 3A-C, Supplementary file 3 to 5). In mutants with reduced deposition of H3K27me3 or H3K18ac, the induction patterns of the camalexin biosynthetic genes were disrupted. For pkl-1 and clf28 (reduced H3K27me3 marks), all three camalexin biosynthesis genes showed a significant induction of expression much faster than the wild type, within 5 min of FLG22 treatment, and the degree of induction was much higher than that in wild-type plants at 6 hr of the treatment (Figure 3A to C, Supplementary file 3 to 5). In contrast, in the lines with reduced H3K18ac marks, idm1 and idm2, genes were induced much later than the wild type. CYP71A13 and PAD3 were significantly induced within 1 hr after the treatment and CYP79B2 was induced within 3 hr after the treatment (Figure 3A to C, Supplementary file 3 to 5). To better understand the effect of genotype, FLG22 treatment, and duration of treatment on gene expression, we conducted a three-way ANOVA using raw transcripts of camalexin genes. Genotype, treatment, duration of treatment, and their interactions significantly contribute to the expression changes of CYP71A13 and PAD3 (Supplementary file 5). For CYP79B2, all experimental variables contributed significantly to its expression patterns except the genotype \u00d7 treatment \u00d7 duration of treatment (Supplementary file 5). These data generally support the idea that disrupting H3K27me3 and H3K18ac affects the temporal induction patterns of camalexin genes in response to FLG22 treatment.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69508/elife-69508-fig3-v2.jpg)\n\n**Figure 3.:** (A-C) Expression of the three essential genes in camalexin biosynthesis in response to flagellin 22 (FLG22) in the wild type (Col-0), H3K27me3-defective mutants clf28 and pkl-1, and H3K18ac-defective mutants idm1 and idm2. ACT2 was used as a reference gene. Relative gene expression at each time point was reported in Supplementary file 3 to 5. Fold change represents the induction level of camalexin biosynthesis genes in each genotype under FLG22 treatment relative to their corresponding untreated controls at each time point. (D) Camalexin accumulation in the wild type and mutants in response to FLG22. Camalexin content at each time point was reported in Supplementary file 6. Error bars represent standard deviation of data from six biological replicates of two experiments. (E-F) Abundance of epigenetic modifications at the genomic regions of camalexin biosynthesis genes with or without FLG22 treatment. Con-H3K18ac = chromatin was extracted from water-treated samples (Col-0) and pulled down by the antibody against H3K18ac. FLG-H3K18ac = chromatin was extracted from FLG22-treated samples (Col-0) and pulled down by the antibody against H3K18ac. Con-H3K27me3 = chromatin was extracted from water-treated samples (Col-0) and pulled down by the antibody against H3K27me3. FLG-H3K27me3 = chromatin was extracted from FLG22-treated samples (Col-0) and pulled down by the antibody against H3K27me3. Relative abundance of each modification was calculated by normalizing first to input, then to control plants with mock treatment. Two-week-old Arabidopsis seedlings of Col-0 were treated with 1 \u00b5M FLG22 or deionized water in these experiments. Stressed and control samples were collected 30 min after the treatment. Error bars represent standard deviation of data from six biological replicates of two experiments. * and ** represent p-values < 0.05 and 0.01, respectively, from Student\u2019s two-tailed t-test. (G) A model of the H3K27me3-H3K18ac bivalent chromatin that acts as a kairostat to regulate the temporal pattern of gene expression in response to external stimuli. Upon a pathogen signal, bivalent chromatin controls the timing of induction for camalexin biosynthetic genes, with H3K18ac expediting and H3K27me3 attenuating expression to hit the presumed temporal \u2018sweet spot\u2019. Dashed lines represent the time of significant gene induction.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69508/elife-69508-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Significance was tested via two-way ANOVA followed by post hoc Dunnett\u2019s test (*p < 0.05, **p < 0.01, ***p < 0.0001) relative to mock-treated plants at each time point. Results represent the mean of two independent experiments with three technical replicates per sample per experiment.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69508/elife-69508-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Significance was tested via two-way ANOVA followed by post hoc Dunnett\u2019s test (*p < 0.05, **p < 0.01, ***p < 0.0001) relative to mock-treated plants at each time point. Results represent the mean of two independent experiments with three technical replicates per sample per experiment.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69508/elife-69508-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Significance was tested via two-way ANOVA followed by post hoc Dunnett\u2019s test (*p < 0.05, **p < 0.01, ***p < 0.0001) relative to mock-treated plants at each time point. Results represent the mean of two independent experiments with three technical replicates per sample per experiment.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69508/elife-69508-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Significance was tested via two-way ANOVA by post hoc Dunnett\u2019s test (*p < 0.05, **p < 0.01, ***p < 0.0001) relative to mock-treated plants at each time point. Results represent the mean of two independent experiments with three technical replicates per sample per experiment.\n\nTo test whether the changes in gene expression would lead to changes in metabolite accumulation, we measured camalexin content using liquid chromatography\u2013tandem mass spectrometry (LC-MS/MS). For wild-type plants, camalexin accumulation significantly increased 3 hr after FLG22 treatment and continued to increase 6 hr after the treatment (Figure 3D, Supplementary file 6). Plants with reduced H3K27me3 marks, clf28 and pkl-1, started to accumulate more camalexin earlier, 1 and 3 hr after FLG22 treatment, and continued to increase at later time points. On the other hand, for mutants with reduced H3K18ac marks, idm1 and idm2, camalexin accumulated much later, at 6 hr after the treatment (Figure 3D, Supplementary file 6). We examined the effect of genotype, FLG22 treatment, and duration of the treatment on camalexin accumulation using three-way ANOVA (Supplementary file 6). Each of the three factors affected camalexin content significantly (p-values = 1.57E-05, 7.71E-09, 2.00E-16). However, the interaction between genotype and treatment and the three-way interaction, genotype \u00d7 FLG22 \u00d7 duration of treatment, were not significant (p-values = 6.20E-02 and 9.50E-01). One possibility is that the kinetics of metabolite changes might be different from transcripts since significant accumulation of camalexin was detected at later time points. Another possibility is metabolite data being noisier than gene expression data. In summary, the transcriptional kinetics analysis suggests that H3K27me3-H3K18ac bivalent chromatin might control the timing of camalexin production in response to FLG22, which is partially corroborated with metabolite accumulation patterns.\n\nWe next asked whether FLG22 treatment changed the relative amount of H3K27me3 and H3K18ac marks on the camalexin biosynthetic genes. To address this question, we quantified the abundance of H3K27me3 and H3K18ac on the camalexin biosynthetic genes with or without FLG22 treatment using ChIP-qPCR. For each gene tested, primers were designed to cover a genomic region that included 1 kb upstream and the entire transcribed region (Supplementary file 2). In plants treated with FLG22, the abundance of H3K18ac was significantly higher in the gene regions of CYP71A13, CYP79B2, and PAD3 compared to the mock-treated plants (Figure 3E). Moreover, the abundance of H3K27me3 modification was significantly lower in the regions of these genes in response to FLG22 (Figure 3F). These results suggest that the FLG22-induced changes of camalexin biosynthetic gene expression involve remodeling of the H3K27me3-H3K18ac bivalent chromatin. Taken together, this study demonstrates that a novel bivalent chromatin formed by H3K27me3 and H3K18ac controls the timing of induction of camalexin biosynthesis genes upon stress, with H3K18ac expediting and H3K27me3 attenuating expression to hit the presumed \u2018sweet spot\u2019 (Figure 3G). We have named this type of bivalent chromatin regulator a kairostat, inspired by the ancient Greek word \u2018kairos\u2019 meaning the right moment and \u2018stat\u2019 meaning regulating device.\n\n## Discussion\n\nPlant specialized metabolites are integral for plant-environmental interactions and defense against herbivores and pathogens. Camalexin is a prominent phytoalexin in Arabidopsis and genes associated with its biosynthesis are induced rapidly upon pathogen signals such as FLG22 (Denoux et al., 2008; Stahl et al., 2016; Zipfel et al., 2004). In this study, we found that H3K27me3 and H3K18ac co-localized on camalexin biosynthesis genes forming a previously uncharacterized form of bivalent chromatin. We examined the role of H3K27me3-H3K18ac bivalent chromatin on the induction of camalexin biosynthesis genes by combining publicly available epigenomics data with genetics, molecular biology, and biochemistry. In wild-type (Col-0) plants, camalexin biosynthesis genes were activated at 30 min to 1 hr of FLG22 treatment and continued to increase their expression at later time points of the treatment. This is consistent with the previous study on induction kinetics of defense pathways, including camalexin, under FLG22 treatment (Denoux et al., 2008). In mutants with defective deposition of H3K27me3 or H3K18ac, the induction kinetics of camalexin biosynthesis genes and metabolite accumulation was accelerated or delayed, respectively.\n\nOur results provide new evidence for how chemical defense mediated by camalexin may be regulated at the epigenetic level. However, we cannot rule out the possibility that other known mechanisms regulating camalexin genes may also affect transcriptional kinetics and metabolite accumulation. For example, H3K27me3 affects gene expression by altering chromatin accessibility to transcription factors (Aranda et al., 2015). Removing this repression mark may create a permissive environment and facilitate transcription factors, such as WRKY33, to bind to promoters of camalexin genes. At the translational level, camalexin biosynthesis genes can alter translational efficiency controlled by a highly enriched messenger RNA consensus sequence, R-motif, during pattern triggered immunity (Xu et al., 2017; Yoo et al., 2020). Additional studies are needed to unravel how different regulatory machineries work together to enable the rapid induction of camalexin genes upon stress signals.\n\nIn this study, we attempted to reveal the biological function of bivalent chromatin, which has long been hypothesized to poise developmental genes in embryonic stem cells for rapid activation upon a cell differentiation signal (Zhang et al., 2009). Only few studies directly tested this hypothesis and all of them focused on mammalian stem cells or cancer cells (Deng et al., 2013; Lima-Fernandes et al., 2019; Jia et al., 2012). For example, in embryonic stem cells, H3K27me3-H3K4me3 bivalent chromatin was associated with HoxB4, one of the key regulators controlling development. Inhibition of H3K4 methyltransferase, hSET1A, repressed the expression of HoxB4 and blocked the differentiation of blood cells (Deng et al., 2013). In addition, H3K27me3-H3K4me3 bivalent chromatin was observed in cancer-initiating cells. Disruption of the bivalent state through inhibition of the H3K27 methyltransferase EZH2 inhibited the self-renewal of cancer cells through de-repression of a key canonical marker of normal colonocyte differentiation, named Indian Hedgehog (Lima-Fernandes et al., 2019). Despite this knowledge, the role of bivalent chromatin on regulating metabolism remains unknown. In this study, we reported the co-localization of H3K27me3 and H3K18ac on camalexin biosynthesis genes and functionally examined the role of H3K27me3-H3K18ac bivalent chromatin in Arabidopsis. The results suggest that H3K27me3-H3K18ac bivalent chromatin maintains the proper timing of camalexin gene induction upon a pathogen signal.\n\nTo fully elucidate how bivalent chromatin integrates environmental cues to regulate gene expression, it would be critical to understand how bivalent chromatin is established and maintained and how different epigenetic marks function cooperatively to control gene expression. To achieve these goals, it is required to characterize all the proteins involved in establishing different epigenetic marks. Mechanisms that enable histone modification protein complexes to alter the abundance of each mark upon stress signals also remains to be elucidated. A recent study showed that NF-Y transcription factors can interact with histone modification protein REF6 to reduce H3K27me3 at the SOC1 locus (Hou et al., 2014). It would be interesting to examine whether transcription factors that directly bind to promoters of camalexin biosynthesis genes interact with proteins that can deposit or remove both epigenetic marks forming bivalent chromatin upon stress signals. The H3K27me3-H3K18ac bivalent chromatin and its role on the camalexin biosynthesis genes described here provide the molecular handle with which to open these lines of investigations in the future. With these knowledge gaps filled, kairostats can be engineered to function as a regulatory cassette to control the expression of target genes under specific tissues and conditions. This capability will provide novel routes to re-program biological processes involved in development and stress response, which have far-reaching implications in agriculture, engineering, and medicine.\n\n## Materials and methods\n\n### Annotation of metabolic genes, pathways, and domains\n\nArabidopsis metabolic enzymes and pathways were extracted from Plant Metabolic Network (http://www.plantcyc.org/). Enzymes were annotated based on the Ensemble Enzyme Prediction Pipeline (E2P2) v.3.0 (Schl\u00e4pfer et al., 2017; Chae et al., 2014), metabolic pathways were predicted by Pathway Tools software v.18.5 (Karp et al., 2011), which were further validated by a process called Semi-Automated Validation and Integration (SAVI) v.3.02 (Zhang et al., 2010). In A. thaliana, 5451 genes were predicted to encode enzymes that catalyze 3585 reactions in small molecule metabolism, which were assigned to 627 pathways based on prediction and manual curation in the release of PMN 13.0 (Schl\u00e4pfer et al., 2017). These pathways were further grouped into 13 metabolic domains based on the types of metabolites that they potentially synthesize (Schl\u00e4pfer et al., 2017). The metabolic domain(s) assigned to a given pathway were transferred to the reactions, EC numbers, and proteins/genes associated with that pathway. To improve the statistical power, we included only those pathways that contained more than 10 genes when we performed epigenetic modification enrichment analysis on individual pathways in specialized metabolism (Sham and Purcell, 2014).\n\n### Epigenomic enrichment analysis\n\nThe 16 epigenomic profiles were downloaded from Wang et al., 2015, where previously published ChIP-seq and ChIP-chip data for all epigenetic marks were re-mapped to A. thaliana genome TAIR v.10 (Wang et al., 2015). Briefly, for each ChIP-seq profile, the signals were binned and ranked in the genome (Wang et al., 2015). We used the ranked epigenetic modification signals in the following analyses.\n\nTo identify the predominant epigenetic modifications associated with metabolic domains and pathways, we first mapped the ranked epigenetic modification signals to each gene, including the transcribed region, 1 kb upstream, and 500 bp downstream regions. Then, we calculated the average epigenetic modification density for each domain or pathway by taking the sum of the ranked modification signals observed within all the genes in that domain or pathway and normalizing it to the total length of all genes. To identify enriched marks within metabolic domains or pathways, we compared the density of each epigenetic modification within that domain or pathway to the background signal. We defined the background signal as the average density of each epigenetic modification by taking the sum of the epigenetic modification signals observed within total metabolic gene regions and normalizing it to the length of these genes.\n\nThe statistical significance of enrichment or depletion of epigenetic marks per domain or pathway was determined by fold change of at least 1.5 and Fisher\u2019s exact test p-value, followed by a post hoc adjustment using false discovery rate (FDR) with the threshold of 0.01. The heatmaps were generated with gplots v.3 (Warnes, 2009) and ggplot2 v.3.1 (Wickham, 2016) packages in RStudio.\n\n### Plant materials and growth conditions\n\nSeeds of A. thaliana accession Columbia (Col-0) (wild type) and previously characterized mutant lines clf28 (SALK_139371), pkl-1 (SALK_010693), idm1 (SALK_062999), and idm2 (SALK_138229) were used in this study. Seeds of these mutants were obtained from the Arabidopsis Biological Resource Center. In all the experiments described in this study, seeds were stratified at 4\u00b0C for 3 days before germination and grown in 0.5\u00d7 Murashige and Skoog (MS) medium containing 1% sucrose and 0.8% agar at 23\u00b0C under long days (16 hr light/8 hr dark) with controlled light at 100 \u00b5mol photosynthetic photons/m2 s (PPFD). Two-week-old seedlings were harvested for the ChIP-qPCR, SeqChIP-PCR, transcriptional kinetics, and camalexin content measurement experiments.\n\n### ChIP-qPCR and SeqChIP-PCR\n\nTwo-week-old Arabidopsis seedlings (Col-0) were used in ChIP and SeqChIP (sequential ChIP) experiments. To obtain sufficient chromatin for immunoprecipitation, 200 seedlings (about 2 g) were pooled for each ChIP reaction. Plant tissues were fixed with crosslinking buffer containing 1% formaldehyde for 20 min by vacuum infiltration at room temperature and quenched with glycine (final concentration 100 mM) for 5 min. After grinding, the cross-linked chromatin was isolated using ice-cold nuclear lysis buffer (50 mM HEPES at pH 7.5, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% Na deoxycholate, 0.1% SDS, and protease inhibitor) and disrupted by sonication to yield DNA fragments of 200\u2013600 bp (Zhu et al., 2016; Saleh et al., 2008).\n\nTo examine the abundance of H3K27me3 and H3K18ac 30 min after 1 \u00b5M FLG22 treatment, ChIP-qPCR was used to quantify their abundance throughout the genomic region and 1 kb upstream of the three essential camalexin biosynthesis genes. After chromatin crosslinking and shearing, DNA/protein complexes were equally divided and immunoprecipitated with antibodies against H3K27me3 (Millipore, Cat No 07\u2013449), H3K18ac (Abcam, Cat No ab1191), or IgG as antibody control (Millipore, Cat No 12\u2013370) by referring the ChIP protocol established using Arabidopsis tissues (Zhu et al., 2016; Saleh et al., 2008). DNA was purified using QIAquick PCR Purification Kit (Qiagen, Cat No 28104). Quantitative real-time PCR was performed using LightCycler 480 System (Roche) with the SensiFAST Sybr No-Rox mix (Bioline, Cat No BIO98020) from Bioline. Three biological replicates were used in each experiment. The ChIP experiments were performed twice with different Arabidopsis tissues and revealed similar results. Primers were designed to cover the 1 kb upstream of the transcription start site and the entire transcribed region (Supplementary file 2).\n\nSeqChIP experiments were performed to examine in planta co-localization of H3K27me3 and H3K18ac on camalexin biosynthesis genes. Chromatin crosslinking and shearing followed the protocol described above for ChIP-qPCR. For each ChIP/re-ChIP assay, 20 \u00b5g DNA/protein complexes were immunoprecipitated with anti-H3K27me3 (Millipore, Cat No 07\u2013449) and anti-H3K18ac (Abcam, Cat No ab1191) antibodies using the Re-ChIP-IT kit (Active Motif, Cat No 53016). Quantitative real-time PCR was performed using LightCycler 480 System (Roche) with the SensiFAST Sybr No-Rox mix (Bioline, Cat No BIO98020) from Bioline. To represent final results after two-step chromatin immunoprecipitation, the pull-down efficiency was calculated as the percent of first ChIP using the equation: 1st ChIP = 2^(Cq_2nd ChIP \u2013 Cq_1st ChIP). Three biological replicates were used in each experiment. The SeqChIP was performed twice using different Arabidopsis tissues and altering the order of antibodies in two rounds of pull-down showed similar results. Primer sequences used in this assay are provided in Supplementary file 3.\n\n### Transcriptional kinetics analysis\n\nTwo-week-old seedlings grown in MS agar media as described in the Plant materials and growth conditions section were used to study transcriptional kinetics. FLG22, a short peptide of 22 amino acids (sequence: QRLSTGSRINSAKDDAAGLQIA), was synthesized at Stanford Protein and Nucleic Acid (PAN) Facility. To induce the expression of camalexin biosynthesis genes, seedlings were sprayed with 1 \u00b5M FLG22 dissolved in deionized (DI) water. Control samples were sprayed with the same volume of DI water. FLG22 and water-treated tissues were sampled at 5 min, 30 min, 1 hr, 3 hr, and 6 hr after treatment and frozen immediately in liquid nitrogen.\n\nAfter grinding in liquid nitrogen, RNA was extracted using RNeasy Plant Mini Kit (Qiagen, Cat No 74904) and 2 \u00b5g RNA was used for cDNA synthesis using SuperScript First-Strand Synthesis System (Thermo Fisher, Cat No 18080051). Quantitative real-time PCR was performed using LightCycler 480 System (Roche) with the SensiFAST Sybr No-Rox mix (Bioline, Cat No BIO98020) from Bioline. Primers used in this experiment are summarized in Supplementary file 4. A housekeeping gene, Actin 2 (AT3G18780), was used as the reference gene in the qPCR experiments. Three biological replicates were used in each experiment by polling 10 seedlings per replicate. The transcriptional kinetics assays were performed twice and showed similar results.\n\n### Camalexin content quantification using LC-MS\n\nTwo-week-old seedlings of Col-0, pkl-1, clf28, idm1, and idm2 plants were used to measure camalexin accumulation. Tissues were treated with FLG22 or DI water as described in the \"Transcriptional kinetics analysis\" section. Metabolites were extracted using a 75% methanol solution with 0.1% formic acid. For each sample, 150 mg of ground plant tissue was dissolved in 200 \u00b5L extraction solution. The extracted samples were vortexed at room temperature for 40 min and centrifuged at 32,000 g for 10 min to pellet plant debris. The supernatant was analyzed by an Agilent 1260 Infinity Binary HPLC paired with an Agilent 6420 Triple Quadrupole LC-MS/MS, with a reversed-phase column (Agilent EclipsePlus C18, 2.1 \u00d7 50 mm, 1.8 \u03bcm), water with 0.1% formic acid as solvent A and acetonitrile with 0.1% formic acid as solvent B, at a constant flow rate of 0.4 mL/min and an injection volume of 10 \u00b5L. The following gradient was used for metabolite separation: 0\u20130.5 min, 10\u201350% B; 0.5\u20135.5 min, 50\u201398% B; 5.5\u20136 min, 98% B; 6.00\u20136.01 min, 98\u201310% B; 2 min post-time equilibration with 10% B. The LC eluent was subjected to MS for 0.01\u20136.01 min with the ESI source in positive mode, gas temperature at 350\u00b0C, gas flow rate at 11 L/min, and nebulizer pressure at 40 psi. To detect camalexin, we set the multiple reaction monitoring (MRM) ion transition to be 201.26 \u2192 59.2, fragmentor at 135 V, and collision energy at 40 V. The MRM ion transitions in this work were derived from product ion scan with precursor ion set at 201.26 and the most abundant product ion was chosen for MRM transition quantification. LC-MS/MS data files were analyzed using Agilent MassHunter Workstation software v.B.06.00. Metabolite content was quantified by integrating peak area under the ion count curve. The ion counts were calibrated to camalexin chemical standard (Cat Num Sigma SML1016) and converted to measurements of titer in molar concentrations (nM). Three biological replicates were used in each experiment by polling 50 seedlings per replicate. The experiments were conducted twice with different plant samples and showed similar results.\n",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "1b9ce806-b9b4-461c-8fc6-99d517d84d80",
+      "submission_id": "567b933e-b0c8-4f86-be26-a6a0e1a2fb67",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicola J Patron, The Earlham Institute United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69508.sa1](https://doi.org/10.7554/eLife.69508.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis manuscript provides evidence that chromatin with activating and repressing histone modifications at the same location enables the rapid activation of genes required for the biosynthesis of camalexin, a plant defence compound, upon detection of a pathogen signal. The data show that both H3K27me3 and H3K18ac are required to determine the timing of gene expression.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"A Bivalent Chromatin Controls Timing of Expression of Camalexin Biosynthesis Genes in Response to a Pathogen Signal in Arabidopsis\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that your work will not be considered further for publication by eLife.\n\nIn this manuscript, the authors present data showing that changes to H3K27me3/H3K18ac marks help regulate the main Arabidopsis phytoalexin. While the chromatin states of these specific genes have not previously been reported on directly, this form of regulation is known to occur in plants and H3K27me3 and H3K18ac have previously been shown to colocalize in a large number of genes in the Arabidopsis genome. Further, H3K27me3 marked genes are known to be targets of Polycomb Repressive Complex 2 (PRC2) and, therefore, the changes in the regulation of such genes in H3K27me3 defective mutants are as expected. The term bivalent chromatin has been misused in this manuscript to describe overlapping chromatin marks, which has led to the formation of confusing and incorrect hypotheses. In addition, concerns were raised about the pathway enrichment analysis and if this allows extension to specialized metabolism pathways in general. There is a potential for over-counting pathways when a metabolic pathway is inaccurately described by hierarchical database design. The phenomenon appears limited to fewer pathways than suggested and some statistical analysis are needed to support the broader claims. Finally, the changes to metabolite levels should be interpreted with reference to previously published data showing that post-translational mechanisms play a role in their regulation.\n\nReviewer #1 (Recommendations for the authors):\n\nThe focus of the manuscript is to investigate changes in chromatin state. The series of experiments to identify and examine changes in chromatin marks in response to flgg22 treatments investigate clearly defined hypotheses and the results are clear and accurately interpreted. Where the manuscript needs to be improved is the wider interpretation of the results in relation to changes in overall metabolite levels. The finding of bivalent chromatin and its role in gene regulation in response to biotic stress is interesting. However, the data is presented within a very narrow focus and interpretation of the findings within the wider background of literature about plant metabolic responses to pathogen infection is too limited. The manuscript would be improved by the inclusion of introductory sentences and a Discussion section focussing on how these new discoveries fit into the wider understanding of camalexin expression in response to pathogen infection. Though clearly chromatin state plays a role, it is one part of a multi-layered response that also includes changes in the rate of translation calcium-dependent phosphorylation of WRKY33 to enable to initiate transcription.\n\nReviewer #2 (Recommendations for the authors):\n\nTechnical suggestions.\n\nIn a number of cases, the pathway enrichment analysis gives the impression that there are a number of different pathways being linked to bivalent chromatin. However, it isn't clear if these are really different pathways or a construct of the categorization system. For example, in Figure 4B, Quercetin and Rutin biosynthesis each have two genes but Rutin is simply a Quercetin glycoside and so it is likely that these two genes are the same and this isn't two different pathways. There are other groupings like (Simple coumarins, Scopolin and phenylpropanoid; and Glucosinolate, indole glucosinolate and camalexin) where the separate genes are not really finding multiple different pathways but simply the same genes are finding different hierarchical categorizations. There is a similar complexity with at least six glucosinolate from Xmethionine treated as independent pathways as well as aliphatic glucosinolate, an overarching category encompassing these other terms. Yet these pathways are an artifact of glucosinolates involving a cyclic step that is determined by one enzyme (MAM1/2) adding a carbon and a second enzyme (CYP79F1/F2) having specificity for the chain length. Other than those two steps the rest of genes in these pathways. The complexity is that this cyclic structure can't be shown in a hierarchical construction. Thus to make the programming work they are broken into different \"pathways\". In general this makes it unclear if the specialized pathway enrichment analysis is being driven by an actual enrichment for all of specialized metabolism or did the identified genes just happen to track with these artificial pathways that can create the impression of all specialized metabolism. The key to this is to dissect how much the enrichment is driven by the same gene driving the identification of multiple pathways. Right now, it seems that this is not an enrichment with 23 independent specialized metabolism pathways but instead being driven by the issues of hierarchical programming and non-linear pathways in the original databases.\n\nI should be clear that the above concern does not affect the specific camalexin molecular analysis, it simply suggests that the generalizations to all of specialized metabolism might be unsupported.\n\nThere are some missing statistical analysis. In Figure 3A-C, there should be some statistical analysis of the transcsript data as camalexin transcripts can easily have 3-4x biological variation so simply showing the fold-change doesn't provide information about what differences are meaningful in this pathway. Similarly, in Figure 3D, there should be some statistical analysis of the camalexin to test if there are time x genotype dependent effects on the metabolite. The standard error is not a statistical test. Similarly, the other replicates of this experiment should be combined into this analysis. Camalexin metabolites are fairly noisy and all the data should be combined and analyzed to show how reproducible the effects are.\n\nI don't think the literature provides sufficient resolution to say that only CYP79B2 is involved in camalexin as is proposed in Figure 2. CYP79B2 KOs an induce camalexin suggesting that CYP79B3 is also involved. Similarly they CYP71A12/A13 specificity is still unresolved. I understand the focus when doing the CHIP but the genomic data should have information about these other genes and could be provided in the supplemental.\n\nThe metabolomics in response to FLG22 was intended to show that the gene expression changes were indicative of metabolite changes. Unfortunately, the MS finds largely unknown compounds which could be all related to camalexin synthesis or other CYP79B2 dependent metabolites. As such, it doesn't really support the broader argument about all specialized metabolites. There is also the chance that the enhanced response in clf28 could be due to lower basal levels. Right now with FC levels shown it isn't clear if this is an enhanced response or enhanced repression. It would help to show absolute levels and to conduct factorial analysis testing for genotype and genotype x treatment effects. This is a similar concern for the microarray analysis as well.\n\nEditorial Suggestions\n\nI'm not totally sure what the main point of the second paragraph of the discussion is conveying. This paragraph starts with ideas about bivalent chromatin in development and then ends with specific details about bivalent chromatin in camalexin. I feel there is a big point in this paragraph but as written I can't quite grasp it. eLife allows more space then is used and it would help the general reader to expand this section to let the big point come through clearer. I think it is about bivalent chromatin being a trigger switch when something must go from absolute off to absolute on and do so very quickly.\n\nRelated to the general idea of bivalent chromatin and camalexin, there are some complications around this pathway that aren't being integrated into the discussion. It doesn't change the results of this work but it does lay out a more complicated view then is being proposed. For example, the PAD mutants from Jane Glazebrook were isolated based on the accumulation of camalexin. A result of this work was the fact that the regulatory mutants (e.g. PAD4, etc) were highly specific to the stimulus being applied and often did not affect camalexin regulation in response to other stimuli. There is also work showing that the camalexin pathway has post-transcriptional regulation where the transcripts can accumulate to a high level with no metabolite accumulation. Finally, the FLG22 ability to induce camalexin is age dependent and is not seen in older soil grown plants based on the MAPK studies. Thus, the upstream and downstream regulatory processes around camalexin are significantly more complicated than the intro and discussion lays out by describing a couple of TFs. It would help to expand the discussion and introduction to convey this full complexity that is present in the established literature as it is critical to place the bivalent chromatin into the full context of camalexin regulation.\n\nReviewer #3 (Recommendations for the authors):\n\nThe genes being studied are targeted by the PRC2 complex and this is why they have H3K27me3. Past studies have discovered that H3K18ac and H2A.Z colocalize with H3K27me3 (Luo C, 2012). Yet, there is no mention of H2A.Z throughout this study? Would this now make this chromatin state 'trivalent' chromatin? This issue specifically highlights the incorrect premise of this study, that there is a \"bivalent chromatin\" at these metabolic genes. They, like many other H3K27me3 marked genes, are targets of PRC2 and silenced until proper environmental/development cues are perceived. This fits with the highly specialized need for these metabolic genes in unique environments.\n\nThere is no evidence presented that H3K18ac is an 'activating\" mark. This should not be confused with other histone acetylation marks. Based on what was previously described by Luo C et al., 2012, it is a repressive mark given it's colocalization with H3K27me3.\n\nHow do you distinguish direct versus indirect effects when using pkl/clf/idm1 mutants? These genes are required for general gene regulation. For example, without clf, no H3K27me3 occurs leading to up-regulation of all PRC2 targeted genes?\n\nI have major concerns that IDM1 is the HAT that acetylates H3K18 in gene bodies. IDM1 specifically binds to methylated DNA, which does not colocalize with H3K27me3 in Arabidopsis (see also Figure 1a). This would also explain the seemingly weak signals from all experiments using idm1. ChIP-seq data for IDM1 exists (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3575687/) and should be used to show it colocalizes specifically to the genes that have H3K27me3 versus other types of genes.\n\nThe term bivalent chromatin should be more carefully used in this study. Bivalent chromatin specifically refers to H3K4me3/H3K27me3. It should not be used to described H3K27me3/H3K18ac. There are numerous examples where bivalent chromatin is referring to the classic definition (H3K4me3/H3K27me3) to set up rationale for proposed experiments on H3K27me3/H3K18ac. This leads to incorrect hypotheses and is confusing to the reader.\n",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ea23d32e-c4ff-4b0f-9713-2baf4303348f",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C1",
+      "claim": "Camalexin is one of the most potent defense compounds in Arabidopsis thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "As one of the most potent defense compounds in Arabidopsis thaliana, camalexin can be rapidly induced by bacterial and fungal infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about camalexin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "09d9eb6d-cf32-4f3f-a700-c4b4dc7d3d5a",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C2",
+      "claim": "Camalexin can be rapidly induced by bacterial and fungal infections.",
+      "claim_type": "EXPLICIT",
+      "source": "As one of the most potent defense compounds in Arabidopsis thaliana, camalexin can be rapidly induced by bacterial and fungal infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "cc6d0482-450b-4d1f-904e-b7dbfde5d7f4",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C3",
+      "claim": "Camalexin biosynthesis genes are marked with H3K27me3 (repression) and H3K18ac (activation) to form a previously uncharacterized type of bivalent chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining publicly available epigenomic data with in vivo chromatin modification mapping, we found that camalexin biosynthesis genes are marked with two epigenetic modifications with opposite effects on gene expression, trimethylation of lysine 27 of histone 3 (H3K27me3) (repression) and acetylation of lysine 18 of histone 3 (H3K18ac) (activation), to form a previously uncharacterized type of bivalent chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by epigenomic data analysis and experimental validation through ChIP-qPCR and SeqChIP-PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "a33fb6d0-fa6f-4ec4-97da-2fbbc303d0c5",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C4",
+      "claim": "Both H3K27me3 and H3K18ac modifications are required to determine the timing of gene expression and metabolite accumulation at an early stage of the stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants with reduced H3K27me3 or H3K18ac suggested that both modifications were required to determine the timing of gene expression and metabolite accumulation at an early stage of the stress response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from mutant analysis showing altered timing of gene expression and metabolite accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "878cbcba-0c81-4101-af44-481851a94e3f",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C5",
+      "claim": "The H3K27me3-H3K18ac bivalent chromatin plays an important role in controlling the timely induction of gene expression upon stress stimuli in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study indicates that the H3K27me3-H3K18ac bivalent chromatin, which we name as kairostat, plays an important role in controlling the timely induction of gene expression upon stress stimuli in plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data on mutants and gene expression kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "282c33ea-1a54-4dd3-a021-35e87d029e9f",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C6",
+      "claim": "Camalexin is an indole alkaloid derived from tryptophan.",
+      "claim_type": "EXPLICIT",
+      "source": "Camalexin is an indole alkaloid derived from tryptophan and can be induced rapidly by various biotic and abiotic stimuli in Arabidopsis (Stotz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "9116ea74-0224-4b5d-8c03-31b1c1992868",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C7",
+      "claim": "Essential biosynthetic enzymes for camalexin belong to the cytochrome P450 family, including CYP79B2/3, CYP71A12/13, and PHYTOALEXIN DEFICIENT 3 (PAD3).",
+      "claim_type": "EXPLICIT",
+      "source": "Essential biosynthetic enzymes belong to the cytochrome P450 family, including CYP79B2/3, CYP71A12/13, and PHYTOALEXIN DEFICIENT 3 (PAD3) (Klein et al., 2013; Schuhegger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies that identified these enzymes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "8f372fa1-aaf8-4bc5-8555-efeddd4f6701",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C8",
+      "claim": "The expression of camalexin biosynthetic genes can be rapidly induced by various abiotic and biotic stresses, and pathogen-derived substances such as flagellin 22 (FLG22) and oligogalacturonides.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of these enzymatic genes can be rapidly induced by various abiotic and biotic stresses, and pathogen-derived substances such as flagellin 22 (FLG22) and oligogalacturonides (Denoux et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "c32a147c-5c3f-4dfa-8e47-aaf9f6ea64cf",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C9",
+      "claim": "Transcription factors from the MYB family, including MYB34, MYB51, and MYB122, promote camalexin biosynthesis in response to Pseudomonas syringae infection.",
+      "claim_type": "EXPLICIT",
+      "source": "At the transcriptional regulation level, transcription factors from the MYB family, including MYB34, MYB51, and MYB122, promote camalexin biosynthesis in response to Pseudomonas syringae infection (Stahl et al., 2016; Frerigmann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "5e1ea7e7-a89c-43db-a5e7-42c34e7326c6",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C10",
+      "claim": "WRKY33 functions as an activator and directly binds to the promoters of camalexin biosynthesis genes.",
+      "claim_type": "EXPLICIT",
+      "source": "WRKY33 functions as an activator and directly binds to the promoters of camalexin biosynthesis genes (Birkenbihl et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "653d425c-64ad-4095-afe0-132543688f92",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C11",
+      "claim": "CALCIUM-DEPENDENT PROTEIN KINASE (CPK)5/6 and MAPK3/6 can phosphorylate WRKY33 to enhance promoter binding and transactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides transcription factors, CALCIUM-DEPENDENT PROTEIN KINASE (CPK)5/6 and MAPK3/6 can phosphorylate WRKY33 to enhance promoter binding and transactivation (Zhou et al., 2020; Mao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "f111e5f3-a912-464d-85bd-3272be8e64aa",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C12",
+      "claim": "Genes involved in camalexin biosynthesis, CYP79B2 and CYP79B3, increased translational efficiency under pattern triggered immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "At the translational level, ribosome footprinting showed that genes involved in camalexin biosynthesis, CYP79B2 and CYP79B3, also increased translational efficiency under pattern triggered immunity (Xu et al., 2017; Yoo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies using ribosome footprinting.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "1c178e06-b8cc-45ea-9bcc-f1092e36d626",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C13",
+      "claim": "It remains unknown how the rapid induction of camalexin biosynthesis genes upon a pathogen signal is enabled.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the rich knowledge of these upstream regulators of the camalexin biosynthetic pathway, it remains unknown how the rapid induction upon a pathogen signal is enabled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap that motivates the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "7448acd0-3cf2-4dd6-9dbb-ec4d0dd1de2b",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C14",
+      "claim": "The accessibility of target gene regions to transcription factors is determined by the dynamics of chromatin states in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The accessibility of target gene regions to transcription factors is determined by the dynamics of chromatin states in eukaryotic cells (Stricker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the general principle.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "0aafd66b-b8bd-40bb-b976-fef1c7dc95cc",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C15",
+      "claim": "Chromatin states are controlled by epigenetic modifications that influence nucleosome accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin states are controlled by epigenetic modifications that influence nucleosome accessibility (Vihervaara et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the general principle.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "14750ee9-ac85-408d-b813-e0dd4906d8c6",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C16",
+      "claim": "H3K27me3, established by the polycomb repressive complex 2, is associated with repressing gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, trimethylation of lysine 27 of histone 3 (H3K27me3), established by the polycomb repressive complex 2, is associated with repressing gene expression (Carter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "20c4c228-0f15-4ba5-b611-ea9cc54328aa",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C17",
+      "claim": "H3K27me3 represses gene expression by increasing chromatin condensation and limiting the recruitment of transcription factors and other components of the transcriptional machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K27me3 represses gene expression by increasing chromatin condensation and limiting the recruitment of transcription factors and other components of the transcriptional machinery (Aranda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "212b200d-80e3-4cc6-8604-98233d0c075c",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C18",
+      "claim": "H3K4me3 is marked at actively transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Trimethylation of lysine 4 of histone 3 (H3K4me3) is marked at actively transcribed genes (Zhang et al., 2009), which activates gene expression by promoting the recruitment of transcription initiation factors to promoters of target genes (Lauberth et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "bcdd3631-20e3-4b71-b74a-e9408018e5b0",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C19",
+      "claim": "H3K4me3 activates gene expression by promoting the recruitment of transcription initiation factors to promoters of target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Trimethylation of lysine 4 of histone 3 (H3K4me3) is marked at actively transcribed genes (Zhang et al., 2009), which activates gene expression by promoting the recruitment of transcription initiation factors to promoters of target genes (Lauberth et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "ebd18750-2729-4884-9d9b-1fb196262420",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C20",
+      "claim": "Bivalent chromatins were initially observed to be associated with genes involved in cell differentiation in human embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Bivalent chromatins were initially observed to be associated with genes involved in cell differentiation in human embryonic stem cells and the most reported variant is formed by H3K27me3 and H3K4me3 (Bernstein et al., 2006; Dattani et al., 2018; Sachs et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "f72fb605-8560-4c1f-9bbf-a15caa5fefb2",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C21",
+      "claim": "The most reported variant of bivalent chromatin is formed by H3K27me3 and H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Bivalent chromatins were initially observed to be associated with genes involved in cell differentiation in human embryonic stem cells and the most reported variant is formed by H3K27me3 and H3K4me3 (Bernstein et al., 2006; Dattani et al., 2018; Sachs et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "179750dc-537c-4bca-b8b8-3cc5dd3bc8c7",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C22",
+      "claim": "Bivalent chromatins exist in other mammalian cell types and can be formed by other epigenetic marks, including additional activating (H3K4me1, H3K4me2, H3K36me3, H3K9ac, H3K27ac, H3K14ac, H4K18ac) and repressive (H3K9me2, H3K9me3, H4K20me3, 5Mc) marks.",
+      "claim_type": "EXPLICIT",
+      "source": "Bivalent chromatins also exist in other mammalian cell types and can be formed by other epigenetic marks, including additional activating (H3K4me1, H3K4me2, H3K36me3, H3K9ac, H3K27ac, H3K14ac, H4K18ac) and repressive (H3K9me2, H3K9me3, H4K20me3, 5Mc) marks (van der Velde et al., 2021; Xu and Kidder, 2018; Charlet et al., 2016; Matsumura et al., 2015; Roy and Sridharan, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "de3f6f30-e008-4315-a016-e3e66657d89c",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C23",
+      "claim": "The H3K27m3-H3K4me3 bivalent chromatin has been observed at FLOWERING LOCUS C (FLC) in A. thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, the H3K27m3-H3K4me3 bivalent chromatin has been observed at FLOWERING LOCUS C (FLC) (Jiang et al., 2008) in A. thaliana and genes associated with cold stress in potato tuber (Zeng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "a4bbdb19-7155-477b-a267-95ce132ef37a",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C24",
+      "claim": "The H3K27m3-H3K4me3 bivalent chromatin has been observed at genes associated with cold stress in potato tuber.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, the H3K27m3-H3K4me3 bivalent chromatin has been observed at FLOWERING LOCUS C (FLC) (Jiang et al., 2008) in A. thaliana and genes associated with cold stress in potato tuber (Zeng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "232c1e1c-14d0-488f-9d6e-23c1a886c3b9",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C25",
+      "claim": "A novel bivalent chromatin formed by H3K27me3 and H3K4me1 was identified in Brassica napus.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a novel bivalent chromatin formed by H3K27me3 and H3K4me1 was identified in Brassica napus (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "e7433aff-d70f-49e3-92d9-d0055acefc9b",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C26",
+      "claim": "The only function that has been proposed for a bivalent chromatin is to poise the expression of developmental genes in stem cells for rapid activation into differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The only function that has been proposed for a bivalent chromatin is to poise the expression of developmental genes in stem cells for rapid activation into differentiation (Bernstein et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to the original hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "11feb597-858e-42fe-a61c-610ddf3a7c9b",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C27",
+      "claim": "The 'poise genes for transcriptional activation' role of bivalent chromatin has been tested and supported by studies only on mammalian embryonic stem cells or cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis has been tested and supported by studies only on mammalian embryonic stem cells or cancer cells (Deng et al., 2013; Lima-Fernandes et al., 2019; Jia et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "286e1c84-2821-41bf-830e-2d24ee83167d",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C28",
+      "claim": "The 'poise genes for transcriptional activation' role of bivalent chromatin has not yet been tested on a whole organism.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'poise genes for transcriptional activation' role of bivalent chromatin has not yet been tested on a whole organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "f462bd08-6064-4992-8563-7d8ab7910ed3",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C29",
+      "claim": "No other role has been implicated for bivalent chromatins besides poising genes for transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "And, to our knowledge, no other role has been implicated for bivalent chromatins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "8cc6e7bf-7138-4b5c-ad79-fc800b0ccb75",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C30",
+      "claim": "Specialized metabolism is enriched with both H3K27me3 and H3K18ac.",
+      "claim_type": "EXPLICIT",
+      "source": "Enrichment analysis at the metabolic domain level revealed distinct patterns, including specialized metabolism being enriched with both a repression mark H3K27me3 and an activation mark H3K18ac (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the enrichment analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "406cafa4-7fd2-41da-ad4c-429e10d12cb3",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C31",
+      "claim": "Correlation of H3K27me3 and H3K18ac marks on the Arabidopsis genome had been reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation of H3K27me3 and H3K18ac marks on the Arabidopsis genome had been reported previously (Luo et al., 2013), which we also observed using total metabolic genes (Pearson's correlation coefficient 0.36, t-test p-value 4.6E-11) (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with a citation and confirmed by data analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "5789eb4a-64b9-45f6-8a9e-6086333a3d45",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C32",
+      "claim": "The correlation between H3K27me3 and H3K18ac on total metabolic genes has a Pearson's correlation coefficient of 0.36 with a t-test p-value of 4.6E-11.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation of H3K27me3 and H3K18ac marks on the Arabidopsis genome had been reported previously (Luo et al., 2013), which we also observed using total metabolic genes (Pearson's correlation coefficient 0.36, t-test p-value 4.6E-11) (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "23e20df4-74c5-4dcd-a6e2-4517990d7b31",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C33",
+      "claim": "Removing specialized metabolic genes from total metabolic genes decreased the correlation between H3K27me3 and H3K18ac to a Pearson's correlation coefficient of 0.11 with a t-test p-value of 3.5E-02.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed decreased correlation between H3K27me3 and H3K18ac, indicating that specialized metabolic genes substantially contributed to the correlation of these two marks on metabolic genes (Pearson's correlation coefficient 0.11, t-test p-value 3.5E-02) (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "f335f3c1-79b0-4abc-811c-1b640af472fb",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C34",
+      "claim": "Specialized metabolic genes substantially contributed to the correlation of H3K27me3 and H3K18ac on metabolic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed decreased correlation between H3K27me3 and H3K18ac, indicating that specialized metabolic genes substantially contributed to the correlation of these two marks on metabolic genes (Pearson's correlation coefficient 0.11, t-test p-value 3.5E-02) (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the decreased correlation after removing specialized metabolic genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "892b407f-86b6-4817-8e55-4184f62c5d99",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C35",
+      "claim": "37% (324 out of 887) of specialized metabolic genes were marked by both H3K27me3 and H3K81ac.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 37% (324 out of 887) of specialized metabolic genes were marked by both H3K27me3 and H3K81ac (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "676ea55b-6b10-469f-abce-04cd38c12409",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C36",
+      "claim": "Several specialized metabolic pathways, including camalexin and glucosinolate biosynthesis pathways, are significantly enriched with both H3K27me3 and H3K18ac.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, we found several pathways, including camalexin and glucosinolate biosynthesis pathways, to be significantly enriched with both epigenetic marks (Figure 1\u2014figure supplement 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "c2d6094a-5acc-46ac-a0cf-510d98560c1c",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C37",
+      "claim": "H3K27me3 and H3K18ac are co-localized at the camalexin biosynthesis genes in planta to form a bivalent chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that H3K27me3 and H3K18ac are co-localized at the camalexin biosynthesis genes in planta to form a bivalent chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from SeqChIP-qPCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "8970db94-3c81-44cb-81a3-9c40388c3dbd",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C38",
+      "claim": "All three camalexin biosynthesis genes showed significantly higher signals when pulled down with both antibodies against H3K27me3 and H3K18ac than without any antibody in the second pull-down.",
+      "claim_type": "EXPLICIT",
+      "source": "All three camalexin biosynthesis genes showed significantly higher signals when pulled down with both antibodies against H3K27me3 and H3K18ac than without any antibody in the second pull-down (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from SeqChIP-qPCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "726e9012-221f-4042-aae3-92c2a8329301",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C39",
+      "claim": "Altering the order of the two antibodies for H3K27me3 and H3K18ac in the pull-down showed similar patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Altering the order of the two antibodies for H3K27me3 and H3K18ac in the pull-down showed similar patterns (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from SeqChIP-qPCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "038491ad-297e-46c7-b945-3aaf0c1b1633",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C40",
+      "claim": "In wild-type plants, CYP71A13 and PAD3 were significantly induced within 30 min after FLG22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type plants, CYP71A13 and PAD3 were significantly induced within 30 min after FLG22 treatment and CYP79B2 was significantly induced within 1 hr after the treatment (Figure 3A-C, Supplementary file 3 to 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from transcriptional kinetics experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "3b2afea4-7a1f-4cdd-bd96-fc877c07178d",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C41",
+      "claim": "In wild-type plants, CYP79B2 was significantly induced within 1 hr after FLG22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type plants, CYP71A13 and PAD3 were significantly induced within 30 min after FLG22 treatment and CYP79B2 was significantly induced within 1 hr after the treatment (Figure 3A-C, Supplementary file 3 to 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from transcriptional kinetics experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "00bd6b5a-679f-4c6d-b2be-b53d16fc9515",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C42",
+      "claim": "In pkl-1 and clf28 mutants (reduced H3K27me3 marks), all three camalexin biosynthesis genes showed a significant induction of expression within 5 min of FLG22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "For pkl-1 and clf28 (reduced H3K27me3 marks), all three camalexin biosynthesis genes showed a significant induction of expression much faster than the wild type, within 5 min of FLG22 treatment, and the degree of induction was much higher than that in wild-type plants at 6 hr of the treatment (Figure 3A to C, Supplementary file 3 to 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from transcriptional kinetics experiments with mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "e5271d4a-6b43-4678-aa8a-df03c900d8b3",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C43",
+      "claim": "In pkl-1 and clf28 mutants, the degree of induction of camalexin biosynthesis genes was much higher than that in wild-type plants at 6 hr of FLG22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "For pkl-1 and clf28 (reduced H3K27me3 marks), all three camalexin biosynthesis genes showed a significant induction of expression much faster than the wild type, within 5 min of FLG22 treatment, and the degree of induction was much higher than that in wild-type plants at 6 hr of the treatment (Figure 3A to C, Supplementary file 3 to 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from transcriptional kinetics experiments with mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "2444cbf4-9120-41aa-a239-a78bcce26373",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C44",
+      "claim": "In idm1 and idm2 mutants (reduced H3K18ac marks), CYP71A13 and PAD3 were significantly induced within 1 hr after FLG22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the lines with reduced H3K18ac marks, idm1 and idm2, genes were induced much later than the wild type. CYP71A13 and PAD3 were significantly induced within 1 hr after the treatment and CYP79B2 was induced within 3 hr after the treatment (Figure 3A to C, Supplementary file 3 to 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from transcriptional kinetics experiments with mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "dd265044-4773-4be9-b740-8bbe75cf76ed",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C45",
+      "claim": "In idm1 and idm2 mutants, CYP79B2 was induced within 3 hr after FLG22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the lines with reduced H3K18ac marks, idm1 and idm2, genes were induced much later than the wild type. CYP71A13 and PAD3 were significantly induced within 1 hr after the treatment and CYP79B2 was induced within 3 hr after the treatment (Figure 3A to C, Supplementary file 3 to 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from transcriptional kinetics experiments with mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "a134db46-6365-433c-b188-d07f00cf0613",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C46",
+      "claim": "Genotype, treatment, duration of treatment, and their interactions significantly contribute to the expression changes of CYP71A13 and PAD3.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotype, treatment, duration of treatment, and their interactions significantly contribute to the expression changes of CYP71A13 and PAD3 (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from three-way ANOVA statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "53ca26e3-fe2e-479f-93bd-f1619f02fafd",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C47",
+      "claim": "For CYP79B2, all experimental variables contributed significantly to its expression patterns except the genotype \u00d7 treatment \u00d7 duration of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "For CYP79B2, all experimental variables contributed significantly to its expression patterns except the genotype \u00d7 treatment \u00d7 duration of treatment (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from three-way ANOVA statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "a3037a8e-e6e2-4a22-8cb5-d74d8d88dcca",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C48",
+      "claim": "Disrupting H3K27me3 and H3K18ac affects the temporal induction patterns of camalexin genes in response to FLG22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "These data generally support the idea that disrupting H3K27me3 and H3K18ac affects the temporal induction patterns of camalexin genes in response to FLG22 treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the gene expression data in mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "1e8f6f40-6b99-4e15-9b19-408e1ca7bff9",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C49",
+      "claim": "For wild-type plants, camalexin accumulation significantly increased 3 hr after FLG22 treatment and continued to increase 6 hr after the treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "For wild-type plants, camalexin accumulation significantly increased 3 hr after FLG22 treatment and continued to increase 6 hr after the treatment (Figure 3D, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from LC-MS/MS metabolite measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "d0086d4f-1760-4746-bc4e-aa4cdf9a9de2",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C50",
+      "claim": "Plants with reduced H3K27me3 marks, clf28 and pkl-1, started to accumulate more camalexin earlier, 1 and 3 hr after FLG22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants with reduced H3K27me3 marks, clf28 and pkl-1, started to accumulate more camalexin earlier, 1 and 3 hr after FLG22 treatment, and continued to increase at later time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from LC-MS/MS metabolite measurements in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "652d5c8e-c09e-47dc-90fc-d0380feac307",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C51",
+      "claim": "For mutants with reduced H3K18ac marks, idm1 and idm2, camalexin accumulated much later, at 6 hr after FLG22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, for mutants with reduced H3K18ac marks, idm1 and idm2, camalexin accumulated much later, at 6 hr after the treatment (Figure 3D, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from LC-MS/MS metabolite measurements in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "08d59666-cc5c-4cb7-a8b9-8afda2a85c7c",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C52",
+      "claim": "Genotype, FLG22 treatment, and duration of treatment each significantly affected camalexin content.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the three factors affected camalexin content significantly (p-values = 1.57E-05, 7.71E-09, 2.00E-16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from three-way ANOVA statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "bc6812b5-60f4-4a90-8201-906d11724757",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C53",
+      "claim": "The interaction between genotype and treatment and the three-way interaction (genotype \u00d7 FLG22 \u00d7 duration of treatment) were not significant for camalexin content.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the interaction between genotype and treatment and the three-way interaction, genotype \u00d7 FLG22 \u00d7 duration of treatment, were not significant (p-values = 6.20E-02 and 9.50E-01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from three-way ANOVA statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "a9fb9985-fbdc-428a-8875-86272b0e0ada",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C54",
+      "claim": "The transcriptional kinetics analysis suggests that H3K27me3-H3K18ac bivalent chromatin might control the timing of camalexin production in response to FLG22.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the transcriptional kinetics analysis suggests that H3K27me3-H3K18ac bivalent chromatin might control the timing of camalexin production in response to FLG22, which is partially corroborated with metabolite accumulation patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined gene expression and metabolite data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "fa67a7ab-afa1-4347-8491-86cb513ae4fb",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C55",
+      "claim": "In plants treated with FLG22, the abundance of H3K18ac was significantly higher in the gene regions of CYP71A13, CYP79B2, and PAD3 compared to the mock-treated plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants treated with FLG22, the abundance of H3K18ac was significantly higher in the gene regions of CYP71A13, CYP79B2, and PAD3 compared to the mock-treated plants (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from ChIP-qPCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "05bbd7c7-e619-4a00-9cb3-c64a2e4ca474",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C56",
+      "claim": "The abundance of H3K27me3 modification was significantly lower in the regions of CYP71A13, CYP79B2, and PAD3 in response to FLG22.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the abundance of H3K27me3 modification was significantly lower in the regions of these genes in response to FLG22 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from ChIP-qPCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "95b2d054-6b56-4052-9e75-a33b148841ac",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C57",
+      "claim": "FLG22-induced changes of camalexin biosynthetic gene expression involve remodeling of the H3K27me3-H3K18ac bivalent chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the FLG22-induced changes of camalexin biosynthetic gene expression involve remodeling of the H3K27me3-H3K18ac bivalent chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the changes in H3K27me3 and H3K18ac abundance upon FLG22 treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "60206dc7-df0f-4109-b94c-35c2d18cf508",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C58",
+      "claim": "A novel bivalent chromatin formed by H3K27me3 and H3K18ac controls the timing of induction of camalexin biosynthesis genes upon stress, with H3K18ac expediting and H3K27me3 attenuating expression to hit the presumed 'sweet spot'.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this study demonstrates that a novel bivalent chromatin formed by H3K27me3 and H3K18ac controls the timing of induction of camalexin biosynthesis genes upon stress, with H3K18ac expediting and H3K27me3 attenuating expression to hit the presumed 'sweet spot' (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion drawn from all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "07f2407c-71ab-4549-bb5b-56f0bb42b5ac",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C59",
+      "claim": "The H3K27me3-H3K18ac bivalent chromatin regulator has been named a kairostat.",
+      "claim_type": "EXPLICIT",
+      "source": "We have named this type of bivalent chromatin regulator a kairostat, inspired by the ancient Greek word 'kairos' meaning the right moment and 'stat' meaning regulating device.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a naming decision made by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "c3b51396-e428-49bb-a17d-1a9bf2fe579a",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C60",
+      "claim": "H3K27me3 and H3K18ac co-localized on camalexin biosynthesis genes forming a previously uncharacterized form of bivalent chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found that H3K27me3 and H3K18ac co-localized on camalexin biosynthesis genes forming a previously uncharacterized form of bivalent chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "eeeaae36-da54-447f-bc26-3f1048cd8d31",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C61",
+      "claim": "In wild-type (Col-0) plants, camalexin biosynthesis genes were activated at 30 min to 1 hr of FLG22 treatment and continued to increase their expression at later time points of the treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type (Col-0) plants, camalexin biosynthesis genes were activated at 30 min to 1 hr of FLG22 treatment and continued to increase their expression at later time points of the treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from transcriptional kinetics experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "b3137645-fd09-443d-a190-1f9be927454b",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C62",
+      "claim": "The induction kinetics of camalexin biosynthesis genes under FLG22 treatment in wild-type plants is consistent with a previous study.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the previous study on induction kinetics of defense pathways, including camalexin, under FLG22 treatment (Denoux et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "1aa0c15a-a96f-4a4d-959c-fa376a1ad915",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C63",
+      "claim": "In mutants with defective deposition of H3K27me3 or H3K18ac, the induction kinetics of camalexin biosynthesis genes and metabolite accumulation was accelerated or delayed, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In mutants with defective deposition of H3K27me3 or H3K18ac, the induction kinetics of camalexin biosynthesis genes and metabolite accumulation was accelerated or delayed, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of results from mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "fc4ae02b-3df4-49ff-a6ad-29742f8f5772",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C64",
+      "claim": "H3K27me3 affects gene expression by altering chromatin accessibility to transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, H3K27me3 affects gene expression by altering chromatin accessibility to transcription factors (Aranda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "a77c57f4-7621-4718-a9ec-372cf18c2178",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C65",
+      "claim": "Removing H3K27me3 repression mark may create a permissive environment and facilitate transcription factors, such as WRKY33, to bind to promoters of camalexin genes.",
+      "claim_type": "IMPLICIT",
+      "source": "Removing this repression mark may create a permissive environment and facilitate transcription factors, such as WRKY33, to bind to promoters of camalexin genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism based on known functions of H3K27me3.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "5069ea21-8ae2-43c6-8647-99c6bb7112e3",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C66",
+      "claim": "Camalexin biosynthesis genes can alter translational efficiency controlled by a highly enriched messenger RNA consensus sequence, R-motif, during pattern triggered immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "At the translational level, camalexin biosynthesis genes can alter translational efficiency controlled by a highly enriched messenger RNA consensus sequence, R-motif, during pattern triggered immunity (Xu et al., 2017; Yoo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "df8ca3e6-7c86-4710-a23d-59b498eec6ff",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C67",
+      "claim": "The biological function of bivalent chromatin has long been hypothesized to poise developmental genes in embryonic stem cells for rapid activation upon a cell differentiation signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we attempted to reveal the biological function of bivalent chromatin, which has long been hypothesized to poise developmental genes in embryonic stem cells for rapid activation upon a cell differentiation signal (Zhang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to the hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "00cef3ac-7f8e-4cfe-9398-694ba1342380",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C68",
+      "claim": "In embryonic stem cells, H3K27me3-H3K4me3 bivalent chromatin was associated with HoxB4, one of the key regulators controlling development.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in embryonic stem cells, H3K27me3-H3K4me3 bivalent chromatin was associated with HoxB4, one of the key regulators controlling development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "b83c53e3-4ae9-41e6-98be-b3a485b2d8ce",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C69",
+      "claim": "Inhibition of H3K4 methyltransferase, hSET1A, repressed the expression of HoxB4 and blocked the differentiation of blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of H3K4 methyltransferase, hSET1A, repressed the expression of HoxB4 and blocked the differentiation of blood cells (Deng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "0d6be0a9-dac4-4e16-8276-0d1899998c95",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C70",
+      "claim": "H3K27me3-H3K4me3 bivalent chromatin was observed in cancer-initiating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, H3K27me3-H3K4me3 bivalent chromatin was observed in cancer-initiating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "666b3501-ffba-4373-9387-da7e1b30e77b",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C71",
+      "claim": "Disruption of the bivalent state through inhibition of the H3K27 methyltransferase EZH2 inhibited the self-renewal of cancer cells through de-repression of Indian Hedgehog.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of the bivalent state through inhibition of the H3K27 methyltransferase EZH2 inhibited the self-renewal of cancer cells through de-repression of a key canonical marker of normal colonocyte differentiation, named Indian Hedgehog (Lima-Fernandes et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "4d0d6b40-8c28-4223-8982-762df8e8d83d",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C72",
+      "claim": "The role of bivalent chromatin on regulating metabolism remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this knowledge, the role of bivalent chromatin on regulating metabolism remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "2a55e4f9-8d3b-42d4-871b-6027f6c241b1",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C73",
+      "claim": "The results suggest that H3K27me3-H3K18ac bivalent chromatin maintains the proper timing of camalexin gene induction upon a pathogen signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that H3K27me3-H3K18ac bivalent chromatin maintains the proper timing of camalexin gene induction upon a pathogen signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "38e5950e-b8b5-4089-a4f2-6b7f871bcbb4",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C74",
+      "claim": "It would be critical to understand how bivalent chromatin is established and maintained and how different epigenetic marks function cooperatively to control gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To fully elucidate how bivalent chromatin integrates environmental cues to regulate gene expression, it would be critical to understand how bivalent chromatin is established and maintained and how different epigenetic marks function cooperatively to control gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future research direction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "a2f8f09d-6f90-40d8-82c5-5a74775d5604",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C75",
+      "claim": "It is required to characterize all the proteins involved in establishing different epigenetic marks.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve these goals, it is required to characterize all the proteins involved in establishing different epigenetic marks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future research need.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "c0412d3f-ade0-421c-98e0-c20538611fdb",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C76",
+      "claim": "Mechanisms that enable histone modification protein complexes to alter the abundance of each mark upon stress signals remains to be elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanisms that enable histone modification protein complexes to alter the abundance of each mark upon stress signals also remains to be elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "8a08918e-a4e7-42f6-a85e-addec8c32290",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C77",
+      "claim": "NF-Y transcription factors can interact with histone modification protein REF6 to reduce H3K27me3 at the SOC1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that NF-Y transcription factors can interact with histone modification protein REF6 to reduce H3K27me3 at the SOC1 locus (Hou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "152e1be6-acd9-4ba6-8cf0-4c492813a6c4",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C78",
+      "claim": "It would be interesting to examine whether transcription factors that directly bind to promoters of camalexin biosynthesis genes interact with proteins that can deposit or remove both epigenetic marks forming bivalent chromatin upon stress signals.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be interesting to examine whether transcription factors that directly bind to promoters of camalexin biosynthesis genes interact with proteins that can deposit or remove both epigenetic marks forming bivalent chromatin upon stress signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future research direction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "a3b2aafa-51c9-4e88-9f94-30961cbc201a",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C79",
+      "claim": "Kairostats can be engineered to function as a regulatory cassette to control the expression of target genes under specific tissues and conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "With these knowledge gaps filled, kairostats can be engineered to function as a regulatory cassette to control the expression of target genes under specific tissues and conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "a6cab760-8a8a-4ce0-9be2-123acf5f7350",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C80",
+      "claim": "Engineering kairostats will provide novel routes to re-program biological processes involved in development and stress response, which have far-reaching implications in agriculture, engineering, and medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "This capability will provide novel routes to re-program biological processes involved in development and stress response, which have far-reaching implications in agriculture, engineering, and medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "74baf97a-c089-4709-af92-f599222b6d0b",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C81",
+      "claim": "5451 genes were predicted to encode enzymes that catalyze 3585 reactions in small molecule metabolism in A. thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "In A. thaliana, 5451 genes were predicted to encode enzymes that catalyze 3585 reactions in small molecule metabolism, which were assigned to 627 pathways based on prediction and manual curation in the release of PMN 13.0 (Schl\u00e4pfer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to the database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "d462d039-de1e-426b-9bd3-671215026de7",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C82",
+      "claim": "These metabolic reactions were assigned to 627 pathways based on prediction and manual curation in the release of PMN 13.0.",
+      "claim_type": "EXPLICIT",
+      "source": "In A. thaliana, 5451 genes were predicted to encode enzymes that catalyze 3585 reactions in small molecule metabolism, which were assigned to 627 pathways based on prediction and manual curation in the release of PMN 13.0 (Schl\u00e4pfer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to the database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "4b6e2dc7-1c85-4399-8ae6-b49876c4b722",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C83",
+      "claim": "These pathways were further grouped into 13 metabolic domains based on the types of metabolites that they potentially synthesize.",
+      "claim_type": "EXPLICIT",
+      "source": "These pathways were further grouped into 13 metabolic domains based on the types of metabolites that they potentially synthesize (Schl\u00e4pfer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to the database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "0d7b4cbf-8b49-4380-925f-fc6e3e4f6b2e",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C84",
+      "claim": "The 16 epigenomic profiles were downloaded from Wang et al., 2015, where previously published ChIP-seq and ChIP-chip data for all epigenetic marks were re-mapped to A. thaliana genome TAIR v.10.",
+      "claim_type": "EXPLICIT",
+      "source": "The 16 epigenomic profiles were downloaded from Wang et al., 2015, where previously published ChIP-seq and ChIP-chip data for all epigenetic marks were re-mapped to A. thaliana genome TAIR v.10 (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "8a027a96-470f-4c5c-be59-7edd0021002a",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C85",
+      "claim": "Seeds of A. thaliana accession Columbia (Col-0) (wild type) and previously characterized mutant lines clf28 (SALK_139371), pkl-1 (SALK_010693), idm1 (SALK_062999), and idm2 (SALK_138229) were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Seeds of A. thaliana accession Columbia (Col-0) (wild type) and previously characterized mutant lines clf28 (SALK_139371), pkl-1 (SALK_010693), idm1 (SALK_062999), and idm2 (SALK_138229) were used in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the plant materials used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "b611e580-a822-48e1-a2d6-b785d3fcb141",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C86",
+      "claim": "Seeds were stratified at 4\u00b0C for 3 days before germination and grown in 0.5\u00d7 Murashige and Skoog (MS) medium containing 1% sucrose and 0.8% agar at 23\u00b0C under long days (16 hr light/8 hr dark) with controlled light at 100 \u00b5mol photosynthetic photons/m2 s (PPFD).",
+      "claim_type": "EXPLICIT",
+      "source": "Seeds were stratified at 4\u00b0C for 3 days before germination and grown in 0.5\u00d7 Murashige and Skoog (MS) medium containing 1% sucrose and 0.8% agar at 23\u00b0C under long days (16 hr light/8 hr dark) with controlled light at 100 \u00b5mol photosynthetic photons/m2 s (PPFD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the growth conditions used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "fe38b0c5-4e89-4dc9-a19a-9995897c36b4",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C87",
+      "claim": "Two-week-old seedlings were harvested for the ChIP-qPCR, SeqChIP-PCR, transcriptional kinetics, and camalexin content measurement experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-week-old seedlings were harvested for the ChIP-qPCR, SeqChIP-PCR, transcriptional kinetics, and camalexin content measurement experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "34849511-ecb3-4384-bccc-c7849937b116",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C88",
+      "claim": "200 seedlings (about 2 g) were pooled for each ChIP reaction to obtain sufficient chromatin for immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain sufficient chromatin for immunoprecipitation, 200 seedlings (about 2 g) were pooled for each ChIP reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "bf380b32-7167-494d-9531-83aece094906",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C89",
+      "claim": "Plant tissues were fixed with crosslinking buffer containing 1% formaldehyde for 20 min by vacuum infiltration at room temperature and quenched with glycine (final concentration 100 mM) for 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Plant tissues were fixed with crosslinking buffer containing 1% formaldehyde for 20 min by vacuum infiltration at room temperature and quenched with glycine (final concentration 100 mM) for 5 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "c45dbc7d-4271-43ec-8680-256507465f8a",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C90",
+      "claim": "The cross-linked chromatin was disrupted by sonication to yield DNA fragments of 200\u2013600 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "After grinding, the cross-linked chromatin was isolated using ice-cold nuclear lysis buffer (50 mM HEPES at pH 7.5, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% Na deoxycholate, 0.1% SDS, and protease inhibitor) and disrupted by sonication to yield DNA fragments of 200\u2013600 bp (Zhu et al., 2016; Saleh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "9ccdffaf-f9d7-4d4b-b7d3-1ff154796c94",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C91",
+      "claim": "FLG22 is a short peptide of 22 amino acids with the sequence QRLSTGSRINSAKDDAAGLQIA.",
+      "claim_type": "EXPLICIT",
+      "source": "FLG22, a short peptide of 22 amino acids (sequence: QRLSTGSRINSAKDDAAGLQIA), was synthesized at Stanford Protein and Nucleic Acid (PAN) Facility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the material used in experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "c3ba9a68-785f-40d0-b986-f75ebdc590ed",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C92",
+      "claim": "Seedlings were sprayed with 1 \u00b5M FLG22 dissolved in deionized (DI) water to induce the expression of camalexin biosynthesis genes.",
+      "claim_type": "EXPLICIT",
+      "source": "To induce the expression of camalexin biosynthesis genes, seedlings were sprayed with 1 \u00b5M FLG22 dissolved in deionized (DI) water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "886f99f3-767a-4855-a84b-affb21f00d84",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C93",
+      "claim": "FLG22 and water-treated tissues were sampled at 5 min, 30 min, 1 hr, 3 hr, and 6 hr after treatment and frozen immediately in liquid nitrogen.",
+      "claim_type": "EXPLICIT",
+      "source": "FLG22 and water-treated tissues were sampled at 5 min, 30 min, 1 hr, 3 hr, and 6 hr after treatment and frozen immediately in liquid nitrogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "af504771-9eb6-4351-990c-9c1bc8fed0b0",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C94",
+      "claim": "Actin 2 (AT3G18780) was used as the reference gene in the qPCR experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "A housekeeping gene, Actin 2 (AT3G18780), was used as the reference gene in the qPCR experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "64c84d30-1c2c-41a6-81d6-52331f7df962",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C95",
+      "claim": "Three biological replicates were used in each experiment by pooling 10 seedlings per replicate.",
+      "claim_type": "EXPLICIT",
+      "source": "Three biological replicates were used in each experiment by polling 10 seedlings per replicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "83c12fc0-0385-44e5-95f0-eb9a405d2c54",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C96",
+      "claim": "The transcriptional kinetics assays were performed twice and showed similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptional kinetics assays were performed twice and showed similar results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reproducibility of the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "611c3fd4-5224-4ad5-bd91-21ff479fce6b",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C97",
+      "claim": "For each sample, 150 mg of ground plant tissue was dissolved in 200 \u00b5L extraction solution for metabolite extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "For each sample, 150 mg of ground plant tissue was dissolved in 200 \u00b5L extraction solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "7e985fcc-005b-4713-8b12-759a0a46d0d3",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C98",
+      "claim": "The extracted samples were vortexed at room temperature for 40 min and centrifuged at 32,000 g for 10 min to pellet plant debris.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracted samples were vortexed at room temperature for 40 min and centrifuged at 32,000 g for 10 min to pellet plant debris.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "cd630eaf-0063-40f7-b8a1-86d3e63e6021",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C99",
+      "claim": "Three biological replicates were used in each metabolite measurement experiment by pooling 50 seedlings per replicate.",
+      "claim_type": "EXPLICIT",
+      "source": "Three biological replicates were used in each experiment by polling 50 seedlings per replicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "2ce53a36-f008-47b1-ba35-d249f2053f35",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "claim_id": "C100",
+      "claim": "The metabolite measurement experiments were conducted twice with different plant samples and showed similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments were conducted twice with different plant samples and showed similar results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reproducibility of the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ce84699e-54c2-4192-853c-756483f36066",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Specialized metabolism genes in Arabidopsis are enriched with both H3K27me3 and H3K18ac epigenetic marks. Analysis of publicly available epigenomic data revealed that 37% of specialized metabolic genes are marked by both modifications, and specialized metabolic genes substantially contribute to the correlation between these marks (Pearson's r=0.36 for total metabolic genes vs r=0.11 when specialized genes are removed). Several specialized metabolic pathways including camalexin biosynthesis are significantly enriched with both marks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 provide converging computational evidence from epigenomic enrichment analysis. The statistical analysis is appropriate (Fisher's exact test with FDR correction, Pearson correlation with t-tests), sample sizes are adequate (887 specialized metabolic genes), and the decrease in correlation when specialized genes are removed (C33-C34) provides strong support that these genes drive the H3K27me3-H3K18ac association. The quantitative finding that 37% of specialized metabolic genes carry both marks (C35) is clearly stated and visualized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "63338fa5-ddbf-4875-a759-f9528755edc9",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "H3K27me3 and H3K18ac co-localize at camalexin biosynthesis genes in planta to form a bivalent chromatin. Sequential ChIP-qPCR (SeqChIP) experiments demonstrated that all three essential camalexin biosynthesis genes (CYP79B2, CYP71A13, PAD3) showed significantly higher signals when pulled down with both antibodies against H3K27me3 and H3K18ac compared to controls, and this pattern was consistent regardless of antibody order.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 demonstrate in vivo co-localization through appropriate methodology (SeqChIP-qPCR with proper controls including negative control, H3K27me3-only, and H3K18ac-only regions). The experiment was performed twice with different plant samples, antibody order was reversed to control for technical artifacts (C39), and six biological replicates were used. The controls are appropriate and the reproducibility strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "d9f3bdaa-cd02-4e6a-8419-e84b635b79b5",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Disrupting H3K27me3 or H3K18ac affects the temporal induction patterns of camalexin biosynthesis genes in response to FLG22 treatment. In wild-type plants, camalexin genes were induced within 30 min to 1 hr. Mutants with reduced H3K27me3 (pkl-1, clf28) showed accelerated induction within 5 min with higher expression levels, while mutants with reduced H3K18ac (idm1, idm2) showed delayed induction (1-3 hr). Three-way ANOVA confirmed that genotype, treatment, duration, and their interactions significantly contribute to expression changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C48 provide comprehensive temporal gene expression data with appropriate statistical analysis (three-way ANOVA). The experiments used three biological replicates pooling 10 seedlings each, were performed twice with similar results (C96), and included proper controls (water treatment). The opposing effects of H3K27me3 vs H3K18ac mutants on timing provide strong support for the bivalent chromatin model. Statistical significance is properly reported with p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "ea6a7559-757d-455d-a532-af287deaaea0",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The H3K27me3-H3K18ac bivalent chromatin controls the timing of camalexin metabolite accumulation in response to FLG22. Wild-type plants showed significant camalexin accumulation at 3 hr post-treatment. Mutants with reduced H3K27me3 accumulated camalexin earlier (1-3 hr), while mutants with reduced H3K18ac accumulated camalexin later (6 hr). Three-way ANOVA showed that genotype, treatment, and duration each significantly affected camalexin content, though some interactions were not significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C54 show metabolite data that partially support the gene expression findings, but with important caveats. While individual factors (genotype, treatment, duration) significantly affect camalexin content (C52), the non-significant genotype\u00d7treatment interaction and three-way interaction (C53, p=0.062 and 0.95) weaken the conclusion. The authors acknowledge the metabolite data are noisier and only 'partially corroborate' gene expression patterns (C54). The experiments used appropriate methods (LC-MS/MS with chemical standards) and replication (three biological replicates, 50 seedlings each, performed twice), but the statistical evidence for the proposed mechanism at the metabolite level is incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "068461be-667d-4984-b2b2-b1f36f872a85",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FLG22 treatment induces remodeling of the H3K27me3-H3K18ac bivalent chromatin at camalexin biosynthesis genes. ChIP-qPCR experiments showed that FLG22 treatment significantly increased H3K18ac abundance and significantly decreased H3K27me3 abundance at the gene regions of CYP71A13, CYP79B2, and PAD3 compared to mock-treated plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 demonstrate chromatin remodeling in response to FLG22 using appropriate ChIP-qPCR methodology. The experiments used six biological replicates from two independent experiments, proper controls (mock treatment), and primers covering 1 kb upstream and the entire transcribed region. The opposing changes in H3K18ac (increased) and H3K27me3 (decreased) are consistent with the proposed model and statistically significant. This provides mechanistic support for how the bivalent chromatin responds to pathogen signals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "042a7291-b262-4eeb-92ef-923549a2a8de",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A novel H3K27me3-H3K18ac bivalent chromatin, termed 'kairostat', controls the timely induction of camalexin biosynthesis genes upon stress. This previously uncharacterized bivalent chromatin uses H3K18ac to expedite and H3K27me3 to attenuate gene expression to achieve proper temporal control, with both modifications required to determine the timing of gene expression and metabolite accumulation at early stages of stress response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C58-C60, C73 represent the main conclusions synthesizing all experimental evidence. The conclusion is well-supported by: (1) computational identification of co-enrichment (C30-C36), (2) experimental validation of co-localization via SeqChIP (C37-C39), (3) functional demonstration through mutant analysis showing opposing temporal effects (C40-C48), and (4) evidence of chromatin remodeling upon FLG22 treatment (C55-C57). The metabolite data provide partial support (C49-C54). The naming as 'kairostat' (C59) is appropriate given the demonstrated role in temporal control. This represents a novel finding as H3K27me3-H3K18ac bivalent chromatin has not been previously characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "ee1d05f0-eddd-4ba3-9dda-9f1bcd3be9d1",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Camalexin is a potent defense compound in Arabidopsis thaliana that is an indole alkaloid derived from tryptophan, synthesized by cytochrome P450 enzymes (CYP79B2/3, CYP71A12/13, PAD3), and can be rapidly induced by bacterial and fungal infections and pathogen-derived substances like FLG22.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C8 provide established background knowledge about camalexin, all supported by appropriate citations to prior literature. These are well-established facts in the field and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "2fa3a57d-2967-4c50-ad04-0e78cb920357",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Camalexin biosynthesis is regulated at transcriptional and translational levels by MYB transcription factors (MYB34, MYB51, MYB122), WRKY33 transcription factor, protein kinases (CPK5/6, MAPK3/6) that phosphorylate WRKY33, and increased translational efficiency of CYP79B2/3 under pattern triggered immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 summarize prior work on camalexin regulation, all supported by appropriate citations. This background establishes what was known before the current study and motivates the investigation of chromatin-level regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "46a13cf6-4b38-4a21-b80b-68ecf15952da",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior to this study, it remained unknown how rapid induction of camalexin biosynthesis genes upon pathogen signals is enabled, the role of bivalent chromatin has not been tested in whole organisms, no other role besides poising genes for transcriptional activation has been implicated for bivalent chromatins, and the role of bivalent chromatin on regulating metabolism was unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C28-C29, C72 identify knowledge gaps that motivate the current study. These are reasonable statements about what was unknown in the field and provide clear justification for the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "8dcb33b5-acc5-45d8-a867-228e26948e10",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Chromatin states controlled by epigenetic modifications determine accessibility of target gene regions to transcription factors. H3K27me3 represses gene expression by increasing chromatin condensation and limiting transcription factor recruitment, while H3K4me3 activates gene expression by promoting recruitment of transcription initiation factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 provide established background on chromatin biology and epigenetic modifications, all supported by appropriate citations. This background is necessary to understand the significance of the bivalent chromatin findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "98b38e89-2e67-421d-932c-008f03d406a1",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Bivalent chromatins have been observed in various cell types and organisms. The most reported variant is H3K27me3-H3K4me3 in human embryonic stem cells and developmental genes. Bivalent chromatins can be formed by various activating and repressive marks in mammalian cells, and H3K27me3-H3K4me3 has been observed at FLC in Arabidopsis and cold stress genes in potato. A novel H3K27me3-H3K4me1 bivalent chromatin was recently identified in Brassica napus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 provide comprehensive background on bivalent chromatin in the literature, all supported by appropriate citations. This establishes that while bivalent chromatins are known, the H3K27me3-H3K18ac variant studied here is novel.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "25676701-8652-4bf4-ae92-77b8a8d34a27",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The proposed function of bivalent chromatin is to poise developmental genes in stem cells for rapid activation upon differentiation signals. This hypothesis has been tested and supported only in mammalian embryonic stem cells and cancer cells, including studies on HoxB4 in blood cell differentiation and Indian Hedgehog in cancer cell self-renewal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27, C67-C71 accurately summarize prior work on bivalent chromatin function with appropriate citations. This establishes that the 'poising' function has only been tested in specific cell types, not whole organisms, motivating the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "5c554608-fa33-473a-92a3-5fdb42b7642a",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In wild-type Arabidopsis plants, camalexin biosynthesis genes are activated at 30 min to 1 hr of FLG22 treatment, consistent with previous studies. In mutants with defective H3K27me3 or H3K18ac deposition, the induction kinetics and metabolite accumulation were accelerated or delayed, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 summarize key findings from the transcriptional kinetics and metabolite experiments. These are well-supported by the data presented in C40-C54 and provide appropriate context in the Discussion section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "14ba6417-007a-457a-af0b-af3b4d999174",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "H3K27me3 affects gene expression by altering chromatin accessibility to transcription factors. Removing H3K27me3 may create a permissive environment facilitating transcription factors like WRKY33 to bind camalexin gene promoters. Camalexin biosynthesis genes can also alter translational efficiency via R-motif during pattern triggered immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64 and C66 cite established mechanisms with appropriate references. Claim C65 is explicitly speculative ('may create') and represents reasonable mechanistic interpretation based on known H3K27me3 function. The speculation is appropriately qualified and does not overstate the evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "ce195640-c34b-437b-9771-c6e8f93933da",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Future work should elucidate how bivalent chromatin is established and maintained, characterize proteins involved in establishing epigenetic marks, and determine mechanisms enabling histone modification complexes to alter mark abundance upon stress. It would be interesting to examine whether transcription factors binding camalexin gene promoters interact with proteins that deposit or remove epigenetic marks forming bivalent chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 appropriately identify future research directions based on the current findings. Claim C77 cites relevant precedent (NF-Y/REF6 interaction). These represent reasonable next steps that follow logically from the presented work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "de028c1b-65e9-4248-8391-7ce33f2d689d",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "With knowledge gaps filled, kairostats could be engineered as regulatory cassettes to control target gene expression under specific conditions, providing novel routes to re-program biological processes in development and stress response with implications for agriculture, engineering, and medicine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 represent speculative future applications explicitly conditioned on filling knowledge gaps ('With these knowledge gaps filled'). The speculation is appropriately qualified and represents reasonable long-term implications of the work without overstating current capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "39eb8019-bf80-4013-9fa3-36f91c79944c",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study used metabolic gene annotations from Plant Metabolic Network (PMN 13.0) predicting 5451 genes encoding enzymes catalyzing 3585 reactions assigned to 627 pathways grouped into 13 metabolic domains. Epigenomic profiles were obtained from Wang et al. 2015 where ChIP-seq and ChIP-chip data were re-mapped to TAIR v.10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 describe the data sources and computational resources used in the study with appropriate citations. These are methodological details that are verifiable and properly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    },
+    {
+      "id": "a0ff87e8-4642-4f2c-a294-11b27e59b041",
+      "content_id": "c18bbb67-bcf0-42ab-97a5-7b25db9b84dc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study used appropriate plant materials (Col-0 wild-type and characterized mutant lines), growth conditions (stratification, MS medium, controlled light), experimental protocols (ChIP with formaldehyde crosslinking and sonication, FLG22 treatment at 1 \u00b5M, qPCR with Actin2 reference gene, LC-MS/MS for metabolites), sample sizes (3 biological replicates with 10-50 seedlings pooled per replicate), and reproducibility (experiments performed twice with similar results).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C100 provide comprehensive methodological details. The experimental design is appropriate with adequate replication, proper controls, and reproducibility demonstrated. The mutant lines are previously characterized (cited), growth conditions are standard for Arabidopsis, and analytical methods (ChIP-qPCR, LC-MS/MS) are appropriate for the questions asked. Sample sizes are adequate for the statistical tests performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:31:44.879235Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8cc6e7bf-7138-4b5c-ad79-fc800b0ccb75",
+      "result_id": "ce84699e-54c2-4192-853c-756483f36066"
+    },
+    {
+      "claim_id": "406cafa4-7fd2-41da-ad4c-429e10d12cb3",
+      "result_id": "ce84699e-54c2-4192-853c-756483f36066"
+    },
+    {
+      "claim_id": "5789eb4a-64b9-45f6-8a9e-6086333a3d45",
+      "result_id": "ce84699e-54c2-4192-853c-756483f36066"
+    },
+    {
+      "claim_id": "23e20df4-74c5-4dcd-a6e2-4517990d7b31",
+      "result_id": "ce84699e-54c2-4192-853c-756483f36066"
+    },
+    {
+      "claim_id": "f335f3c1-79b0-4abc-811c-1b640af472fb",
+      "result_id": "ce84699e-54c2-4192-853c-756483f36066"
+    },
+    {
+      "claim_id": "892b407f-86b6-4817-8e55-4184f62c5d99",
+      "result_id": "ce84699e-54c2-4192-853c-756483f36066"
+    },
+    {
+      "claim_id": "676ea55b-6b10-469f-abce-04cd38c12409",
+      "result_id": "ce84699e-54c2-4192-853c-756483f36066"
+    },
+    {
+      "claim_id": "c2d6094a-5acc-46ac-a0cf-510d98560c1c",
+      "result_id": "63338fa5-ddbf-4875-a759-f9528755edc9"
+    },
+    {
+      "claim_id": "8970db94-3c81-44cb-81a3-9c40388c3dbd",
+      "result_id": "63338fa5-ddbf-4875-a759-f9528755edc9"
+    },
+    {
+      "claim_id": "726e9012-221f-4042-aae3-92c2a8329301",
+      "result_id": "63338fa5-ddbf-4875-a759-f9528755edc9"
+    },
+    {
+      "claim_id": "038491ad-297e-46c7-b945-3aaf0c1b1633",
+      "result_id": "d9f3bdaa-cd02-4e6a-8419-e84b635b79b5"
+    },
+    {
+      "claim_id": "3b2afea4-7a1f-4cdd-bd96-fc877c07178d",
+      "result_id": "d9f3bdaa-cd02-4e6a-8419-e84b635b79b5"
+    },
+    {
+      "claim_id": "00bd6b5a-679f-4c6d-b2be-b53d16fc9515",
+      "result_id": "d9f3bdaa-cd02-4e6a-8419-e84b635b79b5"
+    },
+    {
+      "claim_id": "e5271d4a-6b43-4678-aa8a-df03c900d8b3",
+      "result_id": "d9f3bdaa-cd02-4e6a-8419-e84b635b79b5"
+    },
+    {
+      "claim_id": "2444cbf4-9120-41aa-a239-a78bcce26373",
+      "result_id": "d9f3bdaa-cd02-4e6a-8419-e84b635b79b5"
+    },
+    {
+      "claim_id": "dd265044-4773-4be9-b740-8bbe75cf76ed",
+      "result_id": "d9f3bdaa-cd02-4e6a-8419-e84b635b79b5"
+    },
+    {
+      "claim_id": "a134db46-6365-433c-b188-d07f00cf0613",
+      "result_id": "d9f3bdaa-cd02-4e6a-8419-e84b635b79b5"
+    },
+    {
+      "claim_id": "53ca26e3-fe2e-479f-93bd-f1619f02fafd",
+      "result_id": "d9f3bdaa-cd02-4e6a-8419-e84b635b79b5"
+    },
+    {
+      "claim_id": "a3037a8e-e6e2-4a22-8cb5-d74d8d88dcca",
+      "result_id": "d9f3bdaa-cd02-4e6a-8419-e84b635b79b5"
+    },
+    {
+      "claim_id": "1e8f6f40-6b99-4e15-9b19-408e1ca7bff9",
+      "result_id": "ea6a7559-757d-455d-a532-af287deaaea0"
+    },
+    {
+      "claim_id": "d0086d4f-1760-4746-bc4e-aa4cdf9a9de2",
+      "result_id": "ea6a7559-757d-455d-a532-af287deaaea0"
+    },
+    {
+      "claim_id": "652d5c8e-c09e-47dc-90fc-d0380feac307",
+      "result_id": "ea6a7559-757d-455d-a532-af287deaaea0"
+    },
+    {
+      "claim_id": "08d59666-cc5c-4cb7-a8b9-8afda2a85c7c",
+      "result_id": "ea6a7559-757d-455d-a532-af287deaaea0"
+    },
+    {
+      "claim_id": "bc6812b5-60f4-4a90-8201-906d11724757",
+      "result_id": "ea6a7559-757d-455d-a532-af287deaaea0"
+    },
+    {
+      "claim_id": "a9fb9985-fbdc-428a-8875-86272b0e0ada",
+      "result_id": "ea6a7559-757d-455d-a532-af287deaaea0"
+    },
+    {
+      "claim_id": "fa67a7ab-afa1-4347-8491-86cb513ae4fb",
+      "result_id": "068461be-667d-4984-b2b2-b1f36f872a85"
+    },
+    {
+      "claim_id": "05bbd7c7-e619-4a00-9cb3-c64a2e4ca474",
+      "result_id": "068461be-667d-4984-b2b2-b1f36f872a85"
+    },
+    {
+      "claim_id": "95b2d054-6b56-4052-9e75-a33b148841ac",
+      "result_id": "068461be-667d-4984-b2b2-b1f36f872a85"
+    },
+    {
+      "claim_id": "cc6d0482-450b-4d1f-904e-b7dbfde5d7f4",
+      "result_id": "042a7291-b262-4eeb-92ef-923549a2a8de"
+    },
+    {
+      "claim_id": "a33fb6d0-fa6f-4ec4-97da-2fbbc303d0c5",
+      "result_id": "042a7291-b262-4eeb-92ef-923549a2a8de"
+    },
+    {
+      "claim_id": "878cbcba-0c81-4101-af44-481851a94e3f",
+      "result_id": "042a7291-b262-4eeb-92ef-923549a2a8de"
+    },
+    {
+      "claim_id": "60206dc7-df0f-4109-b94c-35c2d18cf508",
+      "result_id": "042a7291-b262-4eeb-92ef-923549a2a8de"
+    },
+    {
+      "claim_id": "07f2407c-71ab-4549-bb5b-56f0bb42b5ac",
+      "result_id": "042a7291-b262-4eeb-92ef-923549a2a8de"
+    },
+    {
+      "claim_id": "c3b51396-e428-49bb-a17d-1a9bf2fe579a",
+      "result_id": "042a7291-b262-4eeb-92ef-923549a2a8de"
+    },
+    {
+      "claim_id": "2a55e4f9-8d3b-42d4-871b-6027f6c241b1",
+      "result_id": "042a7291-b262-4eeb-92ef-923549a2a8de"
+    },
+    {
+      "claim_id": "ea23d32e-c4ff-4b0f-9713-2baf4303348f",
+      "result_id": "ee1d05f0-eddd-4ba3-9dda-9f1bcd3be9d1"
+    },
+    {
+      "claim_id": "09d9eb6d-cf32-4f3f-a700-c4b4dc7d3d5a",
+      "result_id": "ee1d05f0-eddd-4ba3-9dda-9f1bcd3be9d1"
+    },
+    {
+      "claim_id": "282c33ea-1a54-4dd3-a021-35e87d029e9f",
+      "result_id": "ee1d05f0-eddd-4ba3-9dda-9f1bcd3be9d1"
+    },
+    {
+      "claim_id": "9116ea74-0224-4b5d-8c03-31b1c1992868",
+      "result_id": "ee1d05f0-eddd-4ba3-9dda-9f1bcd3be9d1"
+    },
+    {
+      "claim_id": "8f372fa1-aaf8-4bc5-8555-efeddd4f6701",
+      "result_id": "ee1d05f0-eddd-4ba3-9dda-9f1bcd3be9d1"
+    },
+    {
+      "claim_id": "c32a147c-5c3f-4dfa-8e47-aaf9f6ea64cf",
+      "result_id": "2fa3a57d-2967-4c50-ad04-0e78cb920357"
+    },
+    {
+      "claim_id": "5e1ea7e7-a89c-43db-a5e7-42c34e7326c6",
+      "result_id": "2fa3a57d-2967-4c50-ad04-0e78cb920357"
+    },
+    {
+      "claim_id": "653d425c-64ad-4095-afe0-132543688f92",
+      "result_id": "2fa3a57d-2967-4c50-ad04-0e78cb920357"
+    },
+    {
+      "claim_id": "f111e5f3-a912-464d-85bd-3272be8e64aa",
+      "result_id": "2fa3a57d-2967-4c50-ad04-0e78cb920357"
+    },
+    {
+      "claim_id": "1c178e06-b8cc-45ea-9bcc-f1092e36d626",
+      "result_id": "46a13cf6-4b38-4a21-b80b-68ecf15952da"
+    },
+    {
+      "claim_id": "286e1c84-2821-41bf-830e-2d24ee83167d",
+      "result_id": "46a13cf6-4b38-4a21-b80b-68ecf15952da"
+    },
+    {
+      "claim_id": "f462bd08-6064-4992-8563-7d8ab7910ed3",
+      "result_id": "46a13cf6-4b38-4a21-b80b-68ecf15952da"
+    },
+    {
+      "claim_id": "4d0d6b40-8c28-4223-8982-762df8e8d83d",
+      "result_id": "46a13cf6-4b38-4a21-b80b-68ecf15952da"
+    },
+    {
+      "claim_id": "7448acd0-3cf2-4dd6-9dbb-ec4d0dd1de2b",
+      "result_id": "8dcb33b5-acc5-45d8-a867-228e26948e10"
+    },
+    {
+      "claim_id": "0aafd66b-b8bd-40bb-b976-fef1c7dc95cc",
+      "result_id": "8dcb33b5-acc5-45d8-a867-228e26948e10"
+    },
+    {
+      "claim_id": "14750ee9-ac85-408d-b813-e0dd4906d8c6",
+      "result_id": "8dcb33b5-acc5-45d8-a867-228e26948e10"
+    },
+    {
+      "claim_id": "20c4c228-0f15-4ba5-b611-ea9cc54328aa",
+      "result_id": "8dcb33b5-acc5-45d8-a867-228e26948e10"
+    },
+    {
+      "claim_id": "212b200d-80e3-4cc6-8604-98233d0c075c",
+      "result_id": "8dcb33b5-acc5-45d8-a867-228e26948e10"
+    },
+    {
+      "claim_id": "bcdd3631-20e3-4b71-b74a-e9408018e5b0",
+      "result_id": "8dcb33b5-acc5-45d8-a867-228e26948e10"
+    },
+    {
+      "claim_id": "ebd18750-2729-4884-9d9b-1fb196262420",
+      "result_id": "98b38e89-2e67-421d-932c-008f03d406a1"
+    },
+    {
+      "claim_id": "f72fb605-8560-4c1f-9bbf-a15caa5fefb2",
+      "result_id": "98b38e89-2e67-421d-932c-008f03d406a1"
+    },
+    {
+      "claim_id": "179750dc-537c-4bca-b8b8-3cc5dd3bc8c7",
+      "result_id": "98b38e89-2e67-421d-932c-008f03d406a1"
+    },
+    {
+      "claim_id": "de3f6f30-e008-4315-a016-e3e66657d89c",
+      "result_id": "98b38e89-2e67-421d-932c-008f03d406a1"
+    },
+    {
+      "claim_id": "a4bbdb19-7155-477b-a267-95ce132ef37a",
+      "result_id": "98b38e89-2e67-421d-932c-008f03d406a1"
+    },
+    {
+      "claim_id": "232c1e1c-14d0-488f-9d6e-23c1a886c3b9",
+      "result_id": "98b38e89-2e67-421d-932c-008f03d406a1"
+    },
+    {
+      "claim_id": "e7433aff-d70f-49e3-92d9-d0055acefc9b",
+      "result_id": "25676701-8652-4bf4-ae92-77b8a8d34a27"
+    },
+    {
+      "claim_id": "11feb597-858e-42fe-a61c-610ddf3a7c9b",
+      "result_id": "25676701-8652-4bf4-ae92-77b8a8d34a27"
+    },
+    {
+      "claim_id": "df8ca3e6-7c86-4710-a23d-59b498eec6ff",
+      "result_id": "25676701-8652-4bf4-ae92-77b8a8d34a27"
+    },
+    {
+      "claim_id": "00cef3ac-7f8e-4cfe-9398-694ba1342380",
+      "result_id": "25676701-8652-4bf4-ae92-77b8a8d34a27"
+    },
+    {
+      "claim_id": "b83c53e3-4ae9-41e6-98be-b3a485b2d8ce",
+      "result_id": "25676701-8652-4bf4-ae92-77b8a8d34a27"
+    },
+    {
+      "claim_id": "0d6be0a9-dac4-4e16-8276-0d1899998c95",
+      "result_id": "25676701-8652-4bf4-ae92-77b8a8d34a27"
+    },
+    {
+      "claim_id": "666b3501-ffba-4373-9387-da7e1b30e77b",
+      "result_id": "25676701-8652-4bf4-ae92-77b8a8d34a27"
+    },
+    {
+      "claim_id": "eeeaae36-da54-447f-bc26-3f1048cd8d31",
+      "result_id": "5c554608-fa33-473a-92a3-5fdb42b7642a"
+    },
+    {
+      "claim_id": "b3137645-fd09-443d-a190-1f9be927454b",
+      "result_id": "5c554608-fa33-473a-92a3-5fdb42b7642a"
+    },
+    {
+      "claim_id": "1aa0c15a-a96f-4a4d-959c-fa376a1ad915",
+      "result_id": "5c554608-fa33-473a-92a3-5fdb42b7642a"
+    },
+    {
+      "claim_id": "fc4ae02b-3df4-49ff-a6ad-29742f8f5772",
+      "result_id": "14ba6417-007a-457a-af0b-af3b4d999174"
+    },
+    {
+      "claim_id": "a77c57f4-7621-4718-a9ec-372cf18c2178",
+      "result_id": "14ba6417-007a-457a-af0b-af3b4d999174"
+    },
+    {
+      "claim_id": "5069ea21-8ae2-43c6-8647-99c6bb7112e3",
+      "result_id": "14ba6417-007a-457a-af0b-af3b4d999174"
+    },
+    {
+      "claim_id": "38e5950e-b8b5-4089-a4f2-6b7f871bcbb4",
+      "result_id": "ce195640-c34b-437b-9771-c6e8f93933da"
+    },
+    {
+      "claim_id": "a2f8f09d-6f90-40d8-82c5-5a74775d5604",
+      "result_id": "ce195640-c34b-437b-9771-c6e8f93933da"
+    },
+    {
+      "claim_id": "c0412d3f-ade0-421c-98e0-c20538611fdb",
+      "result_id": "ce195640-c34b-437b-9771-c6e8f93933da"
+    },
+    {
+      "claim_id": "8a08918e-a4e7-42f6-a85e-addec8c32290",
+      "result_id": "ce195640-c34b-437b-9771-c6e8f93933da"
+    },
+    {
+      "claim_id": "152e1be6-acd9-4ba6-8cf0-4c492813a6c4",
+      "result_id": "ce195640-c34b-437b-9771-c6e8f93933da"
+    },
+    {
+      "claim_id": "a3b2aafa-51c9-4e88-9f94-30961cbc201a",
+      "result_id": "de028c1b-65e9-4248-8391-7ce33f2d689d"
+    },
+    {
+      "claim_id": "a6cab760-8a8a-4ce0-9be2-123acf5f7350",
+      "result_id": "de028c1b-65e9-4248-8391-7ce33f2d689d"
+    },
+    {
+      "claim_id": "74baf97a-c089-4709-af92-f599222b6d0b",
+      "result_id": "39eb8019-bf80-4013-9fa3-36f91c79944c"
+    },
+    {
+      "claim_id": "d462d039-de1e-426b-9bd3-671215026de7",
+      "result_id": "39eb8019-bf80-4013-9fa3-36f91c79944c"
+    },
+    {
+      "claim_id": "4b6e2dc7-1c85-4399-8ae6-b49876c4b722",
+      "result_id": "39eb8019-bf80-4013-9fa3-36f91c79944c"
+    },
+    {
+      "claim_id": "0d7b4cbf-8b49-4380-925f-fc6e3e4f6b2e",
+      "result_id": "39eb8019-bf80-4013-9fa3-36f91c79944c"
+    },
+    {
+      "claim_id": "8a027a96-470f-4c5c-be59-7edd0021002a",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "b611e580-a822-48e1-a2d6-b785d3fcb141",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "fe38b0c5-4e89-4dc9-a19a-9995897c36b4",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "34849511-ecb3-4384-bccc-c7849937b116",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "bf380b32-7167-494d-9531-83aece094906",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "c45dbc7d-4271-43ec-8680-256507465f8a",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "9ccdffaf-f9d7-4d4b-b7d3-1ff154796c94",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "c3ba9a68-785f-40d0-b986-f75ebdc590ed",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "886f99f3-767a-4855-a84b-affb21f00d84",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "af504771-9eb6-4351-990c-9c1bc8fed0b0",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "64c84d30-1c2c-41a6-81d6-52331f7df962",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "83c12fc0-0385-44e5-95f0-eb9a405d2c54",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "611c3fd4-5224-4ad5-bd91-21ff479fce6b",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "7e985fcc-005b-4713-8b12-759a0a46d0d3",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "cd630eaf-0063-40f7-b8a1-86d3e63e6021",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    },
+    {
+      "claim_id": "2ce53a36-f008-47b1-ba35-d249f2053f35",
+      "result_id": "a0ff87e8-4642-4f2c-a294-11b27e59b041"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed a novel Y-maze assay that enables repeated measurements of individual larval Drosophila olfactory preferences and allows for in situ training without handling animals between training and testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, C41, and C42 collectively describe the development and capabilities of the Y-maze assay. The technical description (C41, C42) and functional capabilities (C26, C27) are directly stated and supported by experimental data and figures showing the apparatus in use.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C43"
+    ],
+    "result": "The Y-maze assay successfully measures innate CO2 avoidance behavior in larvae, with wild-type larvae choosing CO2-containing channels approximately 25% of the time at 18% CO2 concentration, while larvae lacking functional CO2 receptors show indifference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C28-C29 establish baseline CO2 avoidance behavior with appropriate genetic controls. The data in Figure 1B and Table 2 show statistically significant differences between wild-type and receptor-deficient larvae, validating the assay's ability to measure innate olfactory preferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C56"
+    ],
+    "result": "Pairing optogenetic activation of DAN-i1 reward neurons with CO2 presentation for 20 cycles causes larvae to become indifferent to CO2, while appropriate controls (reverse-paired, no ATR, no training) show no preference change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 and C56 describe the core associative learning result with comprehensive controls. Figure 1D and Table 2 show statistically significant changes (p<0.001) in paired training groups but not in control groups, demonstrating that the effect requires both DAN-i1 activation and proper temporal pairing with CO2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C33"
+    ],
+    "result": "Learning requires that CO2 predicts reward presentation, not merely coincidence between CO2 and reward. Reward prediction is both necessary and sufficient for learning in this assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are supported by experiments in Figures 1D-E showing that only temporal arrangements where CO2 predicts reward (offset after, forward paired) produce learning, while arrangements lacking this predictive relationship do not. The experimental design systematically tests coincidence versus prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C45",
+      "C75"
+    ],
+    "result": "Learning is quantized and all-or-none rather than graded. Individual larvae transition between two discrete behavioral states (untrained and trained), with the fraction of untrained larvae decreasing exponentially with training cycles. The all-or-none model best fits the data according to BIC and AIC criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 and C45 are supported by model fitting analysis in Figure 2 and Table 4. The quantized/all-or-none models significantly outperform the graded learning model (\u0394AIC and \u0394BIC values strongly favor exponential fraction model). The bimodal distributions in Figure 2B-C clearly show two discrete populations rather than a continuum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C46",
+      "C57",
+      "C58"
+    ],
+    "result": "Unrewarded CO2 presentations following training cause memory extinction, with larvae reverting to their untrained state rather than an intermediate state. Habituation (unrewarded CO2 before training) has no effect. Repeated training cycles stabilize memories against extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C46 are supported by extinction experiments in Figure 3. The data show that extinction reverses training effects (especially for 2-3 training cycles), while habituation does not affect subsequent learning. Figure 3C demonstrates bimodal distributions without intermediate states, supporting the claim of reversion to untrained state rather than partial extinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Larvae can still learn if they receive additional training directly following extinction, with performance comparable to larvae trained without extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by data in Figure 3\u2014figure supplement 1B-C showing that training-extinction-training protocols produce similar outcomes to training alone, demonstrating that extinction does not permanently impair learning capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C34",
+      "C35",
+      "C39",
+      "C40"
+    ],
+    "result": "Larvae retain memories overnight (16-20 hours) following training. Two cycles of training are sufficient for overnight memory when larvae are not tested immediately after training. Overnight consolidation makes memories more resistant to extinction. This represents the first demonstration of overnight memory retention in larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C34-C35 are supported by overnight memory experiments in Figure 4B. The data show significant memory retention after 16-20 hours for various training amounts (2, 5, 20 cycles). The comparison between immediate testing and delayed testing for 2-cycle training (C20) and extinction timing experiments (C21) provide strong evidence for consolidation effects. Claims C39-C40 about novelty are supported by the literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C48",
+      "C49",
+      "C59",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Massed training (20 cycles without rest) produces cycloheximide-resistant anesthesia-resistant memory (ARM), while spaced training (with rest intervals) produces cycloheximide-sensitive long-term memory (LTM) requiring protein synthesis. This pattern matches observations in adult Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are strongly supported by cycloheximide experiments in Figure 4C showing differential effects on massed versus spaced training. The 95% vs 45% pupation rates (C50) validate CXM ingestion. Claims C48-C49 and C64-C66 provide appropriate context from adult fly literature. The results demonstrate both ARM and LTM formation in larvae for the first time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C51"
+    ],
+    "result": "Heat-shock induced dCREB2-b expression disrupts memory retention following spaced but not massed training, with memory impairment occurring on a relatively short timescale (within 80 minutes of training initiation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by experiments in Figure 4D showing that heat-shocked larvae fail to retain memory after spaced training but retain memory after massed training. This provides independent confirmation of the ARM/LTM distinction using a genetic manipulation rather than pharmacological inhibition. Claim C51 adds temporal resolution to the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C74"
+    ],
+    "result": "Following training, larvae become indifferent to CO2 but do not show statistically significant attraction at any concentration tested. Activation of multiple DANs (58E02 line) does not produce stronger learning than DAN-i1 alone. The learned appetitive drive appears to exactly cancel but not overcome innate aversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by data in Figures 1D and 1F showing that post-training preferences plateau around 50% (indifference) rather than exceeding it (attraction). Claim C74 acknowledges this observation requires further study, appropriately noting it as speculation about mechanism while accurately describing the empirical observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C47",
+      "C67"
+    ],
+    "result": "Previous work in larvae showed memory retention for 5-8 hours, and in adults up to one week. The current results showing overnight retention in larvae are congruent with adult fly observations regarding ARM and LTM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C67 accurately cite prior literature on memory duration in larvae and adults. Claim C47 appropriately contextualizes the current findings within the existing literature. The citations are verifiable and the comparison to adult work is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Quantized learning has been observed in pigeons, rats, and rabbits, suggesting it may be a generalized phenomenon across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by citation to Gallistel et al., 2004. This provides appropriate context for the quantized learning findings in larvae, though the claim relies entirely on the cited work rather than new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Cycloheximide ingestion was verified by differential pupation rates: 95% of control larvae pupated while only 45% of CXM-treated larvae pupated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 provides a critical control for the CXM experiments, demonstrating that larvae actually ingested the drug. This is directly stated in the text and provides essential validation for interpreting the protein synthesis dependence experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C60",
+      "C61",
+      "C77",
+      "C78"
+    ],
+    "result": "The experimental system has well-characterized neural circuits: CO2 is sensed by a single pair of identified sensory neurons, reward is provided by a single pair of identified neurons (DAN-i1) with reconstructed connectivity, and larval brain connectivity can be reconstructed via electron microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C60-C61 describe the advantages of the larval system, supported by appropriate citations. Claims C77-C78 note that navigation and decision-making circuits have been previously characterized. These claims accurately represent the state of knowledge and are properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C62",
+      "C63"
+    ],
+    "result": "Existing larval learning assays do not address individual animals and it has been difficult to form long-lasting memories in larvae. While individual preference assays exist for adult flies, no comparable assay existed for larvae prior to this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 and C62-C63 accurately describe limitations of prior methods and the gap this work addresses. The claims are supported by the literature review and appropriately motivate the development of the new assay.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "According to the current model of Drosophila learning, different MBONs promote approach or avoidance, receiving input from Kenyon Cells. Learning modifies KC-MBON connections: appetitive learning weakens KC connections to avoidance MBONs while aversive learning weakens connections to approach MBONs. In this context, CO2 paired with DAN-i1 activation likely reduces CO2's ability to excite aversive MBONs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 describe the established model of learning in Drosophila with appropriate citations and apply it to interpret the current results. Claim C73 appropriately uses cautious language ('likely') when extending the model to explain the observed behavior. The interpretation is reasonable given the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The demonstration of long-term protein synthesis dependent memory implies that memories are encoded in synaptic change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 draws a reasonable inference from the LTM results. Protein synthesis-dependent memory is widely understood to involve synaptic structural changes, making this a well-supported inference, though the study does not directly measure synaptic changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Out of 443 larvae placed on agar plates for overnight testing, 439 were recovered and retested, with 4 lost larvae excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 provides important methodological detail about data handling and demonstrates high recovery rate (99.1%) for overnight experiments, supporting the reliability of the overnight memory data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "After choosing a CO2-containing channel, both naive and trained larvae are less likely to choose CO2 the next time, indicating that choices are not independent. This necessitates adjustment of variance calculations in the statistical models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 identify an important statistical consideration in the data analysis. The observation of non-independent choices is stated as an empirical finding and appropriately incorporated into the modeling approach (adjustment of \u03c3 parameter in equations 7-8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Larval Drosophila has approximately 10,000 neurons in its brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a well-established fact about larval Drosophila neuroanatomy, supported by multiple citations. This provides context for why larvae are a tractable model system.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1676 @@
+{
+  "submission": {
+    "id": "e67fa2c9-be13-49eb-9171-4283602adb65",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:23:37.031771Z",
+    "updated_at": "2025-12-03T02:23:37.031771Z"
+  },
+  "content": [
+    {
+      "id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "submission_id": "e67fa2c9-be13-49eb-9171-4283602adb65",
+      "content_type": "manuscript",
+      "content_text": "# A spinoparabrachial circuit defined by Tacr1 expression drives pain\n\n## Authors\n\n- Arnab Barik<sup>1</sup> ([ORCID: 0000-0001-6850-0894](https://orcid.org/0000-0001-6850-0894)) \u2020\n- Anupama Sathyamurthy<sup>2</sup>\n- James Thompson<sup>1</sup>\n- Mathew Seltzer<sup>1</sup>\n- Ariel Levine<sup>2</sup> ([ORCID: 0000-0002-0335-0730](https://orcid.org/0000-0002-0335-0730))\n- Alexander Chesler<sup>1</sup> ([ORCID: 0000-0002-3131-0728](https://orcid.org/0000-0002-3131-0728)) \u2020\n\n### Affiliations\n\n1. National Center for Complementary and Integrative Health, National Institutes of Health Bethesda United States\n2. National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPainful stimuli evoke a mixture of sensations, negative emotions and behaviors. These myriad effects are thought to be produced by parallel ascending circuits working in combination. Here, we describe a pathway from spinal cord to brain for ongoing pain. Activation of a subset of spinal neurons expressing Tacr1 evokes a full repertoire of somatotopically directed pain-related behaviors in the absence of noxious input. Tacr1 projection neurons (expressing NKR1) target a tiny cluster of neurons in the superior lateral parabrachial nucleus (PBN-SL). We show that these neurons, which also express Tacr1 (PBN-SLTacr1), are responsive to sustained but not acute noxious stimuli. Activation of PBN-SLTacr1 neurons alone did not trigger pain responses but instead served to dramatically heighten nocifensive behaviors and suppress itch. Remarkably, mice with silenced PBN-SLTacr1 neurons ignored long-lasting noxious stimuli. Together, these data reveal new details about this spinoparabrachial pathway and its key role in the sensation of ongoing pain.\n\n## Introduction\n\nSomatosensory input to the spinal cord provides information about both the external environment and internal state, driving reflex responses and complex perceptual experiences including the sensation of pain. Nociception provides animals with crucial protection from mechanical, thermal, and chemical threats, but many other types of sensory input can become painful after injury, during inflammation, or in\u00a0disease. An extensive body of work has explored how networks of cells in the dorsal spinal cord process noxious versus innocuous sensory input and the context-dependent plasticity in these circuits that results in pain. Many different classes of excitatory and inhibitory interneurons have been shown to be required for processing nociceptive input and the transformation of normally innocuous signals into pain. These include cells expressing select combinations of neuropeptides and their receptors, including Substance P (encoded by Tac1) and its receptor NKR1 (encoded by Tacr1). Ultimately, these spinal circuits activate projection neurons that transmit the highly processed input to the brain.\n\nSpinal projection neurons are sparse and heterogenous in their gene expression and their anatomical location (Koch et al., 2018; Peirs and Seal, 2016; Todd, 2010) but again include cells expressing both Substance P and NKR1 (Huang et al., 2019; Chiang et al., 2020 and Choi et al., 2020). For example, one group resides in the most superficial part of the dorsal horn (Lamina I) and is thought to receive input from peripheral nociceptors, itch neurons, and thermoreceptors (Bester et al., 2000; Wercberger et al., 2020; Wercberger and Basbaum, 2019). A second set of projection neurons is located in the deep dorsal horn (Laminae II-VI) where they integrate noxious and low-threshold sensory inputs (Wall, 1967; Wercberger and Basbaum, 2019; Willis, 1983). Both groups of spinal projection neurons target multiple sites in the brainstem and thalamus, with each site proposed to have unique roles in driving different aspects of sensation, learning and behavior (Choi et al., 2020, Huang et al., 2019; Rpc, 1986; Todd, 2010). The prevailing view is that these parallel outputs combine to elicit the full pain experience. If true, then direct activation of the correct ensemble of projection neurons should produce behaviors indistinguishable from those evoked by actual noxious stimuli. By contrast, activating or silencing individual central targets might be expected to selectively affect particular aspects of pain and potentially reveal substrates that encode specific attributes of this complex state.\n\nThe lateral parabrachial nucleus (lPBN), a brainstem nucleus of a few thousand neurons\u00a0in mice, receives nociceptive inputs from the projection neurons in the dorsal spinal cord (Todd, 2010) and plays a central role in pain. Two subregions of the lPBN have been defined by their distinctive gene expression patterns as well as their forebrain projections. Neurons in the dorsal PBN (dPBN) expressing dynorphin (PDyn) project predominantly to the periaqueductal gray (PAG) and ventromedial hypothalamus (VMH), while external lateral parabrachial neurons (elPBN) expressing the neuropeptides CGRP or Substance P project to the central amygdala (CeA), bed nucleus stria terminalis (BNST), insular cortex (INS), and the medullary formation (MdD) (Rodriguez et al., 2017;\u00a0Palmiter, 2018; Barik et al., 2018). Recent evidence suggests that these different output pathways have differing functional specifications. For example, CGRP projections to the amygdala appear particularly important for\u00a0somatic and visceral distress (Carter et al., 2013; Han et al., 2015; Campos et al., 2018;\u00a0Bowen et al., 2020) and also play a role in affective touch (Choi et al., 2020). By contrast, Tac1-positive neurons projecting to the MdD (Barik et al., 2018) participate in nocifensive responses, whereas the Pdyn neurons in the dPBN are important for sensing gut stretch (Kim et al., 2020) and forming aversive memories (Chiang et al., 2020).\n\nHere, we studied projections from the spinal cord to the PBN and discovered a population of lPBN neurons expressing Tacr1 that receive input from Tacr1-expressing spinal projection neurons. We demonstrate that this circuit is both necessary and sufficient for the heightened behavioral responses observed during ongoing noxious stimulation. Direct activation of the spinal Tacr1 neurons causes striking behaviors that closely match pain responses. Interestingly, activation of their parabrachial Tacr1 targets demonstrates that this branch of the ascending pathway is responsible for controlling the magnitude of the behavioral response and appears to be required for affective aspects of pain sensation. Our data complement and extend recent reports highlighting the roles of both spinal (Choi et al., 2020) and parabrachial (Deng et al., 2020) Tacr1 neurons as important drivers of pain behavior.\n\n## Results\n\nTacr1 has been widely used as a marker for projection neurons in the spinal cord (Todd, 2010); however, not all projection neurons are marked by Tacr1 (Choi et al., 2020) and interneurons also express this gene (Sathyamurthy et al., 2020;\u00a0Sathyamurthy et al., 2018) Nonetheless, the spinalTacr1 neurons are well known to play a crucial role in normal nociceptive behaviors (Mantyh et al., 1997). We initially characterized mice where Tacr1Cre was used to drive GFP-expression to assess the proportions of projection neurons and interneurons targeted (Figure 1\u2014figure supplement 2A, B). Our results confirmed that Tacr1Cre mediates recombination both in the superficial and deep dorsal horn with about 40% of targeted neurons having soma diameters of projection neurons (Al Ghamdi et al., 2009). Next, we examined how activation of spinalTacr1 neurons contributes to pain sensation by directly stimulating a small circumscribed group of these cells using chemogenetics. Tacr1Cre mice were transduced with an AAV encoding the excitatory DREADD receptor hM3Dq fused to an mCherry reporter (Barik et al., 2018; Krashes et al., 2011) on the right side of superficial lumbar dorsal horn (Figure 1A). As expected, immunohistochemical analysis confirmed expression by neurons in Lamina I and Laminae III-V on the side ipsilateral to the injection location (L4; Figure 1B). Importantly, administration of the hM3Dq ligand clozapine-N-oxide (CNO) resulted in widespread Fos expression on the injected side (Figure 1B), validating this stimulation paradigm (see Figure 1\u2014figure supplement 1A, B for quantitation). Our results showed that both hM3Dq-mCherry positive and negative neurons express Fos after CNO delivery. A likely explanation is that CNO activates Tacr1+ neurons, and that Tacr1+ neurons in turn activate other non-Tacr1 neurons.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig1-v2.jpg)\n\n**Figure 1.:** (A) A cartoon depicting the strategy to stimulate Tacr1-positive spinal neurons. An AAV viral vector encoding a Cre-dependent stimulating DREADD receptor (AAV-DIO-hM3Dq-mCherry) was injected into the lumbar spinal cord of Tacr1-Cre mice to transduce a localized subset of Tacr1-neurons. (B) A confocal image of a coronal section of lumbar spinal cord from an injected Tacr1-Cre mouse shows that the hM3Dq expression (red) is limited to neurons in the ipsilateral superficial and deep dorsal horn. CNO administration results in induction of the activity-dependent gene Fos (green). Scale\u00a0=\u00a0100 \u03bcm (C\u2013H) Bar graphs showing quantified CNO-induced behavioral responses; saline control, black; CNO, red; n\u00a0=\u00a07 mice/group; ****p\u22640.0001, unpaired two-tailed t test. CNO-induced typical pain responses: ipsilateral hindpaw shaking (C; p<0.0001) and licking (D; p=<0.0001), suppressed normal grooming (E; p=<0.0001) and itch responses to chloroquine injection in a different somatotopic site (F; p=<0.0001). As expected, behavioral changes were fully reversible after 24 hr (G\u2013H): shown are threshold responses to punctate touch (von Frey in grams; G; p=0.4245) and latencies to respond to radiant heat (Hargreaves test; H; p=0.7640). (I) A cartoon depicting the strategy to label the ascending projections of a small, circumscribed group of Tacr1+ projection neurons. An AAV viral vector encoding a Cre-dependent GFP marker (AAV-DIO-GFP) was injected into the L4 region of the lumbar spinal cord of Tacr1-Cre mice. (J\u2013L) Coronal sections showing major targets of SpinalTacr1 neurons. In the brainstem, dense GFP-labeled projections were detected in (J) the gracile nucleus (Gr), reticular formation (MdD) and (K) two regions of the parabrachial nucleus (PBN-EL and PBN-SL). GFP-positive SpinalTacr1 projections are also observed in midline brain regions: the paraventricular thalamus (PVT) and posterior thalamus (PTh). (M) A cartoon summarizing the ascending pathway of spinal Tacr1-expressing projection neurons. Green = GFP; Blue = DAPI. Scales\u00a0=\u00a0500 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A higher magnification view of the confocal image shown in Figure 1B highlighting cells expressing hM3Dq-mCherry (red) that have nuclear localized Fos protein (green) after CNO application. (B) Quantification of the total\u00a0number of Fos positive cells in the dorsal horn after CNO application on the side ipsilateral to the AAV injection as compared to the contralateral side. Individual points are total number of positive cells per section. (C) In these sections, Fos is detected in a mixture of mCherry positive and negative cells. Note there are less cells in this quantification than in (B) because Fos positive cells with unclear mCherry labelling were not included in this quantification (n\u00a0=\u00a07 section; n\u00a0=\u00a03 mice).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) A representative confocal image of a spinal cord section from a Tacr1Cre mouse with an AAV-flex-GFP injected into the dorsal horn showing numerous GFP-labeled neurons (green). (B) Quantification of the diameters of GFP+ neurons show 41% of labeled cells are presumptive projection neurons based on their soma area\u00a0size (\u2265200 \u00b5m2; grey shaded region; Al Ghamdi et al., 2009). n\u00a0=\u00a09 sections; n\u00a0=\u00a02 mice.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Representative confocal images of Fos staining and (B) quantification from the cervical spinal cord in control (left) and chloroquine injected (right). Note that in both cases, spinalTacr1 neurons expressing hM3Dq were stimulated with CNO showing that type of stimulation does not repress Fos induction to this puritogen even though it does suppress scratching behavior (see Figure 1F). n\u00a0=\u00a07 sections; n\u00a0=\u00a03 mice.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) A confocal image of a coronal spinal cord section showing the detection of mRNA for Tac1 (red) and Tacr1 (green) using two-color fluorescent in situ hybridization. Filled arrowheads indicate cells co-expressing both genes, open arrowheads are Tacr1-only cells. Note that there are many red cells that are not green (stars) below the superficial part of the dorsal horn (Lamina I) consistent with Tac1 also being expressed in excitatory interneurons. Lower panel is a higher magnification of the superficial dorsal horn region highlighting doubly positive cells (arrowheads). Scale\u00a0=\u00a0100 \u03bcm. (B) Quantification of the number of Tacr1+ cells expressing Tac1 (left) and Tac1+ cells expressing Tacr1 (right). n\u00a0=\u00a05 sections; n\u00a0=\u00a02 mice. (C) An AAV viral strategy analogous to the one used (Figure 1) to activate SpinalTacr1 neurons was used to express the excitatory DREADD (hM3Dq-mCherry) in lumbar SpinalTac1 neurons. Confocal images of coronal spinal cord sections from infected mice after CNO administration and stained with DAPI (blue) revealed mCherry-positive neurons (red) and widespread induction of Fos (green). Inset shows a higher magnification view. Scale\u00a0=\u00a0100 \u03bcm. (C\u2013G) Stimulation of SpinalTac1 neurons results in \u2018fictive pain\u2019 behaviors. Bar plots show the behaviors of mice (n\u00a0=\u00a07) treated with saline (black) and CNO (red) show that hM3Dq-mediated activation of SpinalTac1 neurons results in shaking (C; p=0.0086) and licking (D; p=<0.0001) of the ipsilateral hindlimb, suppression of normal grooming behaviors (E; p=0.0003), and inhibition of responses to the pruritogen chloroquine applied to the nape of the neck (F; p=<0.0001). Unpaired two-tailed t test; ****p\u22640.0001. (H) Spinal injection of AAV-DIO-hM3Dq-mCherry in Tac1Cre mice retrogradely labeled nociceptors in the dorsal root ganglia (red). Scale\u00a0=\u00a0100 \u03bcm. (I) SpinalTac1 neurons labeled with hM3Dq-mCherry project to the PBN-SL (red). CNO activation of these cells results in Fos induction (green) in this brain region. Scale\u00a0=\u00a0500 \u03bcm.\n\nEach side of a lumbar spinal cord segment receives sensory inputs from the ipsilateral hindlimb (Basbaum et al., 2009). Within minutes of CNO application, animals with spinalTacr1 neurons expressing hM3Dq began spontaneously lifting, shaking and licking the hindlimb ipsilateral to the AAV injection (Figure 1C and D; Videos 1 and 2). These responses were highly reminiscent of those caused by extremely noxious and persistent stimuli such as chemical irritants (Kwan et al., 2006), lasted for over an hour and suppressed normal homecage behaviors (e.g. grooming; Figure 1E). Remarkably, animals on CNO became so focused on the DREADD-induced \u2018fictive\u2019 pain associated with the ipsilateral hindlimb that they ignored other highly salient stimuli. In particular, they were completely unresponsive to chloroquine, a potent puritogen (Han et al., 2013; Mishra and Hoon, 2013) that normally causes robust and long-lasting scratching (Figure 1F). Notably, chloroquine was applied to the nape of the neck, a completely different body area, and still induced Fos expression in the cervical spinal cord (Figure 1\u2014figure supplement 3). Thus, in addition to directing nocifensive behavior to a somatotopically\u00a0conscribed area, the activation of a small group of lumbar spinalTacr1 neurons produced the well-known phenomenon of itch suppression by pain (Ikoma et al., 2006). Moreover, our data strongly suggest that itch suppression by pain must involve a central mechanism since peripheral signaling persists. Finally, as expected, the effects of CNO were fully reversible and did not cause any long-lasting sensitization (Figure 1G and H).\n\n![Video 1.](https://cdn.elifesciences.org/articles/61135/elife-61135-video1.mp4.jpg)\n\n**Video 1.:** One minute of video recording of two mice showing normal baseline behaviors in testing chambers after habituation and saline injection.\n\n![Video 2.](https://cdn.elifesciences.org/articles/61135/elife-61135-video2.mp4.jpg)\n\n**Video 2.:** One minute of video recording of two mice showing pronounced nocifensive behaviors directed to the ipsilateral hindlimb in testing chambers approximately 30 min after CNO administration.\n\nWe were surprised that artificial stimulation of the spinalTacr1 neurons so accurately phenocopied behaviors caused by genuine noxious stimulation since various types of dorsal horn projection neurons are considered necessary for pain behavior (Koch et al., 2018; Todd, 2010). Interestingly, a recent study showed that ablating spinal neurons expressing Tac1, the gene encoding the neuropeptide Substance P, significantly impaired licking responses to sustained noxious stimuli (Huang et al., 2019). In the spinal cord, Tac1 is also broadly expressed both in projection neurons and interneurons (Gutierrez-Mecinas et al., 2017; Huang et al., 2019). Our in-situ hybridization data (Figure 1\u2014figure supplement 4A, B) revealed cells with high levels of Tacr1 transcripts in the superficial dorsal horn almost always co-express Tac1. We reasoned that activation of spinalTac1 neurons might produce similar behavioral effects as above (Figure 1). As predicted, chemogenetic stimulation of lumbar spinalTac1 neurons (Figure 1\u2014figure supplement 4C, E) resulted in robust nocifensive behaviors directed to the ipsilateral hindlimb while at the same time suppressing grooming (Figure 1\u2014figure supplement 4F) and itch responses (Figure 1\u2014figure supplement 4G). There were minor differences in the behaviors with stimulation of Tac1Cre animals being more robust than Tacr1Cre mice (compare Videos 2 and 3), perhaps in part due to activation of Tac1 (Substance P but not NKR1) expressing sensory neurons in the dorsal horn and dorsal root ganglion (Figure 1\u2014figure supplement 4H). These data support the existence of key populations of dorsal horn neurons mediating pain responses that can be defined by the expression of Tac1 and Tacr1. Importantly, our results demonstrate that activity of the spinal cells expressing these genes carries the information needed to elicit a pain sensation localized to a specific body area.\n\n![Video 3.](https://cdn.elifesciences.org/articles/61135/elife-61135-video3.mp4.jpg)\n\n**Video 3.:** One minute of video recording of two mice showing pronounced nocifensive behaviors directed to the ipsilateral hindlimb ipsilateral in testing chambers approximately 30 min after CNO administration (approximately 20 min post-injection).\n\nPain has many dimensions including location, quality, intensity, and duration. It also affects physiology, emotion, attention, and memory (Bushnell et al., 2013). Output from the dorsal horn of the spinal cord targets multiple brain areas that work in concert to generate this complex state (Basbaum et al., 2009; Todd, 2010). We transduced lumbar spinalTacr1 neurons with an AAV-DIO-GFP to visualize their supraspinal projections (Figure 1I). Consistent with their ability to coordinate a full-blown pain response, anterograde tracing revealed GFP+ axons in many regions of the brain (Figure 1J-M). We focused on the PBN because of its importance in pain behavior (Barik et al., 2018; Chiang et al., 2020; Huang et al., 2019). Outputs from two PBN areas, the lateral external and dorsal region, are known to have diverse impacts on pain responses, threat learning and escape behaviors (Bowen et al., 2020;\u00a0Campos et al., 2018; Chiang et al., 2020; Han et al., 2015). Although GFP+ axons targeted both these regions, the highest density of spinalTacr1 projections was at the very top of the superior lateral PBN (PBN-SL; Figure 1K), a small and anatomically distinct area with unknown function and is sometimes referred to as the internal lateral PBN (Choi et al., 2020). As expected, chemogenetic activation of spinalTacr1 (Figure 2A) and spinalTac1 (Figure 1\u2014figure supplement 4I) neurons induced robust Fos expression in the PBN-SL.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig2-v2.jpg)\n\n**Figure 2.:** (A) SpinalTacr1 neurons were transduced to express hM3Dq-mCherry (cartoon, left); typical confocal image of a coronal section of the PBN showing mCherry-positive SpinalTacr1 projections (right panel, red) in two regions of the PBN (PBN-EL and PBN-SL). Application of CNO resulted in Fos induction throughout the PBN (green). The nuclear stain DAPI (blue) highlights the overall anatomy of the region. Scale\u00a0=\u00a0100 \u03bcm. (B) Multichannel in situ hybridization shows Tacr1 transcript (red) is localized to the PBN-SL. Co-staining for the glutamate vesicular transporter Slc17a6\u00a0(Vglut2; cyan) and GABA vesicular transporter SLC32A1 (Vgat; green) reveals most Tacr1-positive PBN-SL neurons are glutamatergic and hence excitatory. (C) Quantification of the percentage of Tacr1-positive cells co-expressing Tac1 (left plot) and Vglut2 (right plot). (D) A cartoon depicting the strategy used to label spinalTacr1 presynaptic specializations and PBN-SLTacr1 postsynaptic specializations in the same animal. Cre-dependent viral vectors were injected in the lumbar spinal cord (AAV-DIO-SypYFP to label presynaptic termini) and PBN (AAV-PSD95tagRFP to label postsynaptic densities) in Tacr1Cre mice. (E) Example confocal image of a coronal section from the PBN showing a low-magnification view of the organization of SpinalTacr1 presynaptic specializations (green) and PBN-SLTacr1 postsynaptic specializations (red). Scale\u00a0=\u00a0100 \u03bcm.(F) Super-resolution imaging (Airyscan) of sections from three different mice showing close apposition of SypYFP and PSD95tagRFP puncta indicative of synaptic connections. Scale\u00a0=\u00a01 \u03bcm. (G) Quantification of number of SypYFP puncta with PSD95tagRFP puncta in close apposition (left graph) and vice versa (right graph) demonstrate that the majority of spinal projection neurons target PBN-SLTacr1 neurons; n\u00a0=\u00a07 sections from n\u00a0=\u00a03 mice. (H) A cartoon depicting the viral strategy for anterograde tracing of PBN-SLTacr1 neuron projections using injection of AAV-DIO-tdTomato into the PBN of Tacr1Cre mice. (I) Confocal image of coronal section showing tdTomato labeling (red) of cell bodies of PBN-SLTacr1 neurons. (J) Dense projections were found in two major brain regions, (left image; boxed regions): the medial thalamus (MTh) and a region encompassing part of the lateral hypothalamus (LH) and the parasubthalamic nucleus (PSTN). Right images show larger magnification views of boxed regions. Scale\u00a0=\u00a01 mm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Typical confocal image of two color in situ hybridization showing Tacr1 expression (red) is enriched in the PBN-SL and is largely non-overlapping with Tac1 (green). Right side is an enlargement of the PBN-SL showing densely clustered Tacr1 neurons. Scale\u00a0=\u00a0100 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The presynaptic terminals of PBN-SLTacr1 neurons were labeled by transducing Tacr1cre mice with a viral vector encoding a Cre-dependent synaptophysin-GFP fusion construct (AAV-DIO-SypYFP). Confocal imaging of coronal sections of the Medial Thalamus (MTh) and Lateral Hypothalamus/Parasubthalamic nucleus (LH/PSTN) reveal densities of GFP-positive puncta in both regions indicating that PBN-SLTacr1 neurons make presynaptic terminals in both regions. Scale\u00a0=\u00a0100 \u03bcm.\n\nWhich cells in the PBN-SL receive the major input from the spinal dorsal horn and how do they contribute to pain sensation? To answer these questions, we sought molecular markers that could be used to genetically manipulate PBN-SL neurons so we could study their anatomy and function. Since both the neuropeptide (Tac1) and one of its receptors (Tacr1) were expressed by the spinal projection neurons, (Figure 1\u2014figure supplement 4A) we predicted that tachykinin signaling molecules might mark this sensory circuit. Indeed, multiplex fluorescent in-situ hybridization revealed Tacr1 to be highly expressed in a tight cluster of excitatory cells in the PBN-SL (Figure 2B,C and Figure 2\u2014figure supplement 1A). The expression of Tacr1 in both the spinal and PBN-SL neurons meant their anatomical connectivity could be probed by differentially transducing each region with AAVs in the same Tacr1Cre animal (Figure 2D). We labeled the presynaptic specializations of spinalTacr1 axons with Synaptophysin-GFP and the postsynaptic specializations of the PBN-SLTacr1 dendrites and soma using PSD95-tagRFP (Figure 2E). Near super-resolution imaging of single Z planes from stained tissue sections from the PBN-SL showed very close apposition of red and green varicosities indicative of functional synapses (Figure 2F,G).\n\nDespite its compact structure, the PBN appears central to many different sensory pathways with the various anatomic regions selectively targeting distinct higher centers and controlling different aspects of visceral sensation (Bernard et al., 1994), thermoregulation (Yahiro et al., 2017; Yang et al., 2020), itch (Campos et al., 2018; Mu et al., 2017), and pain (Bernard and Besson, 1990; Campos et al., 2018; Menendez et al., 1996). Therefore, we next used anterograde tracing to determine the projections of PBN-SLTacr1 neurons by targeting the PBN of Tacr1Cre animals with an AAV-DIO-tdTomato (Figure 2H,I). Two forebrain regions were prominently innervated by PBN-SLTacr1 neurons (Figure 2J): (1) the midline thalamus (MTh) and (2) the lateral hypothalamus/ parasubthalamic nucleus (LH/PSTN). Both these regions appear to be selective targets of PBN-SL excitatory projections that are not innervated by other lateral PBN subnuclei (Barik et al., 2018). Moreover, expression of synaptophysin-GFP in PBN-SLTacr1 neurons provided evidence for presynaptic terminal specializations in both areas (Figure 2\u2014figure supplement 2).\n\nDo the same neurons target both MTh and LH/PSTN? Or are there two distinct types of PBN-SLTacr1 neurons with different higher brain targets and potential roles? To answer these questions, we adopted an intersectional strategy where we labeled PBN-SLTacr1 neurons projecting to the LH/PSTh. Our approach used a Cre-dependent mCherry to label the cell bodies of Tacr1-expressing neurons in the PBN. We also injected the PSTN with retroAAV-FlpO and used a PBN injected Flp-dependent synaptophysin-GFP (Sathyamurthy et al., 2020) to label the synaptic termini of these cells (Figure 3A,B; see Materials\u00a0and\u00a0methods for details). We confirmed that the PBN-SL neurons expressed both labels (Figure 3A) meaning that PBN-SLTacr1 neurons project to the LH/PSTN, validating our approach. Importantly, Synaptophysin-GFP puncta were also abundant in the MTh (Figure 3B) demonstrating collateralization of PBN cells\u00a0that we presume express Tacr1. Together, these anatomical experiments reveal two previously unappreciated targets of PBN-SLTacr1 neurons in the forebrain. Therefore, we anticipated that these neurons may play a specialized role related to pain and next set out to record their responses as well as determine their function.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig3-v2.jpg)\n\n**Figure 3.:** (A) A complex intersectional genetic strategy was devised to label PBN-SL neurons that project to LH/PSTN and examine if they project to other brain areas (cartoon left side). The terminals of PBN neurons in the LH/PSTN were transduced with retrograde viral vector encoding Flp recombinase in a Tacr1cre mouse. In the same animal, two viral additional vectors were co-injected into the PBN. The first encoded a Flp-dependent presynaptic marker (SypGFP) and the second encoded a Cre-dependent cellular marker (mCherry). Under these conditions, the cells bodies and axons of PBN neurons that project to LH/PSTN (and were transduced by the retrograde Flp-virus) are labeled in green and PBN-SLTacr1 neurons are labeled in red. Confocal images of coronal sections of the PBN (right panels) show a high degree of overlap between red (mCherry) and green (SypGFP) confirming the PBN-SLTacr1 neurons project to LH/PSTN (arrowheads). Note that not every cell is co-labelled, as expected when examining the intersecting expression of three different AAVs injected at two distinct sites (stars). Blue = DAPI stain; Scale\u00a0=\u00a0100 \u03bcm. (B) PBN-SL neurons that project to LH/PSTN have collaterals that make presynaptic terminal specializations in the MTh. Confocal image of a coronal section of a mouse where PBN neurons that project to the LH/PSTN were labeled with SypGFP. As expected, many GFP-positive puncta are seen in the LH/PSTN (boxed region, lower right). Notably, a high density of GFP-positive puncta is also found in the MTh in the same section (boxed region, center). High magnifications of each boxed area are shown on the right side. Blue = DAPI stain; Scale\u00a0=\u00a01 mm.\n\nTacr1 expression marks a small group of neurons restricted to the PBN-SL. Fiber photometry provides a simple yet sensitive approach for measuring the population responses of genetically defined and anatomically restricted neurons (Gunaydin et al., 2014). Therefore, to study how PBN-SLTacr1 neurons are tuned to respond to sensory stimuli, we engineered mice expressing the calcium sensor GCaMP6f (Chen et al., 2013) in these neurons and implanted optical fibers to record population-level activity (Figure 4A,B). Consistent with our anatomical studies (Figure 2), fiber-photometry recordings demonstrated that many types of noxious stimulus strongly activate PBN-SLTacr1 neurons. An example recording (Figure 4C) highlights the typical type of long-lasting calcium transient that was elicited by a single pinch of the hindpaw of a lightly anesthetized mouse. Activation of these neurons was observed irrespective of the pinch location (Figure 4\u2014figure supplement 1A). Next, we recorded activity in non-anesthetized mice using two types of noxious but non-damaging sustained mechanical stimulation: pinch with blunt forceps (Figure 4D) and pinch with the clip assay (Figure 4E). Again, PBN-SLTacr1 neurons exhibited robust population calcium responses to this type of stimulation (Figure 4D,E). By contrast, punctate mechanical stimuli did not evoke calcium responses in PBN-SLTacr1 neurons (Figure 4F). This was surprising since we used stiff von Frey filaments (0.6 g) that reliably cause nocifensive reflexes (Abdus-Saboor et al., 2019). Additionally, pinprick also failed to evoke a calcium response (Figure 4\u2014figure supplement 1B). Together, these data\u00a0may indicate that PBN-SLTacr1 neurons preferentially respond to sustained stimuli.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cartoon depicting the approach for recording population activity in PBN-SLTacr1 neurons: a Cre-dependent viral vector encoding the genetically encoded calcium indicator GCaMP6f was injected into the PBN of Tacr1Cre mice and an optical fiber was placed over the injection site. Fiber photometry recording was used to monitor population calcium responses to different somatosensory stimuli. (B) After recording, posthoc staining and confocal imaging of PBN sections confirmed GCaMP6f expression (green) and fiber placement (dotted line). (C) An example photometry trace from a lightly anesthetized mouse showing a robust, time-locked calcium response to tail pinch with blunt forceps (stimulus onset at 0 s; dotted line). Note the response lasts the duration of the stimulation (shaded region) before returning to baseline. As a control for movement artifacts, 405 fluorescence (Blue trace; Isosbestic) was also monitored and showed no changes. (D\u2013H) Average population calcium responses in awake mice to sustained (D, E, and G) and acute (F, H) noxious stimuli. Dark lines are means of responses from multiple animals aligned to the start of stimulation (time 0) with the standard error shown in light grey. X-axis shows time in seconds aligned to the start of stimulation; F indicates \u0394F/F scaling (D) Pinching (hindpaw) with a blunt forcep (n\u00a0=\u00a06 mice). (E) Clip assay applied to hindpaw (n\u00a0=\u00a05 mice). (F) von Frey stimulation (0.6 g) aligned to paw withdrawal (n\u00a0=\u00a04 mice) (G) 55\u00b0C Hot plate test aligned to when mice are placed in a chamber and lasting 25 s (n\u00a0=\u00a03 mice). (H) Radiant heat test (Hargeaves) aligned to paw withdrawal (n\u00a0=\u00a07 mice). For all traces, time is in seconds, 0 is the start of the trial, change in fluorescence/total fluorescence is shown (black line; F).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Example traces from two separate lightly anesthetized mice showing robust responses to a series of sustained pinches with blunt forceps (blue arrowheads) of different body parts (tail, left hindpaw, right hindpaw, belly, cheek, whisker pad, ear, and neck). (B) Noxious pinprick does not evoke a population calcium response although does cause a rapid nocifensive withdrawal behavior (red dashed line = stimulation). For all traces, time is in seconds, 0 is the start of the trail, change in fluorescence/total fluorescence is shown (black line; F).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Example traces from an awake mouse to topical application of saline (A; black traces) and AITC (B; blue traces) on the hindpaw. AITC evokes a very robust response followed by long-lasting increases in spontaneous calcium transients. Note that despite the increased baseline activity and behavioral hyperalgesia after application, AITC pre-treatment (>5 min) does not change the sensitivity of these neurons to acute noxious stimulation. Both acute noxious mechanical (C, D) or thermal (E, F) stimuli fail to activate PBN-SLTacr1 neurons either in control or AITC treated conditions. Red arrows indicate behavioral responses (paw withdrawals). Time is in seconds, 0 is the start of the trail, change in fluorescence/total fluorescence is shown (black line; F).\n\nPainful mechanical, thermal, and chemical stimuli are detected by separate nociceptive channels (Basbaum et al., 2009; Gatto et al., 2019; Le Pichon and Chesler, 2014). We next asked whether these pathways converged on PBN-SLTacr1 neurons by recording evoked activity in this population to high temperatures and chemical irritants. In keeping with these neurons playing a general role in pain sensation they exhibited robust activity to hot-plate exposure (Figure 4G) and topical application of the pungent component of mustard oil, allyl isothiocyanate (AITC; Figure 4\u2014figure supplement 2A\u00a0and\u00a0B). Like pinch, both of these are long-lasting painful stimuli that activate distinct sets of peripheral nociceptors (Basbaum et al., 2009). However, PBN-SLTacr1 neurons were not activated by short-term noxious heat (Hargreaves test; Figure 4H). Interestingly, although AITC is known to cause allodynia and hyperalgesia (Albin et al., 2008), this type of skin irritation did not sensitize PBN-SLTacr1 responses to acute touch or heat stimuli (Figure 4\u2014figure supplement 2C-F). In combination, the photometry data strongly support PBN-SLTacr1 neurons as playing a major role in an ascending pathway from spinal dorsal horn that is activated by sustained noxious inputs.\n\nWe next set out to determine how this circuit influences pain behaviors by generating mice where PBN-SLTacr1 neurons could be chemogenetically activated (Figure 5A,B). Although activation of PBN-SLTacr1 neurons did not induce spontaneous directed pain responses, CNO delivery transformed behavior: mice became skittish, avoided handling and repeatedly attempted to escape from the test chambers (possibly a general pain state). This heightened arousal and anxiety were quantified using an open-field arena as increased movement and avoidance of the center (Figure 5\u2014figure supplement 1A). Mice now withdrew from the slightest touch with thin von Frey filaments (0.07 g; Figure 5\u2014figure supplement 1C), something not seen in saline controls. Moreover, in a sustained pinch assay using a clip applied to the paw, activation of PBN-SLTacr1 neurons increased nocifensive behavior and almost doubled the time a mouse spent shaking the clipped paw (Figure 5C,D). Even more strikingly, behavioral changes persisted after the clip was removed\u00a0(Figure 5E). Although saline -treated\u00a0mice quickly returned to normal resting behaviors, after CNO the same animals continued to lick and investigate the hindpaw for many minutes after the pinch was terminated (Figure 5E). Equally robust effects of stimulating PBN-SLTacr1 neurons were observed in responses to AITC, a chemical irritant which normally causes licking and attending to the affected area (Figure 5F). The time a CNO-treated mouse spent licking the injected site more than doubled. CNO-injected mice also exhibited heightened escape responses when exposed to heat in a hotplate assay (Figure 5G). Therefore, this circuit plays a role in controlling the magnitude of behavioral responses to a range of noxious stimuli that activate different peripheral sensory neurons. Interestingly, the latency in a mouse\u2019s response to heat, thought to involve simple spinal reflexes, was not influenced indicating that peripheral sensitization is not involved (Figure 5\u2014figure supplement 1D). Thus, activation of PBN-SLTacr1 neurons induces a \u2018hyper-vigilant\u2019 state resembling the effects of long-term noxious stimulation (e.g. inflammation)\u00a0as seen in assays like the formalin test (Figure 5\u2014figure supplement 1B). Interestingly, activating the PBN-SLTacr1 neurons using CNO did not enhance responses to formalin, presumably reflecting the potency of this inflammatory stimulus. In a related study, the Sun lab has\u00a0demonstrated\u00a0that inhibiting PBN-SLTacr1 neurons reduces behavioral responses to peripheral inflammation (Deng et al., 2020).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013H) Chemogenetic activation of PBN-SLTacr1 neurons results in hyperalgesia. (A) A cartoon depicting the strategy for stimulation of PBN-SLTacr1 neurons. The PBN of a Tacr1Cre mouse was injected with a Cre-dependent viral vector encoding an excitatory DREADD receptor (AAV-DIO-hM3Dq-mCherry) to allow chemogenetic activation. (B) Typical confocal images showing coronal sections of the PBN region from transduced Tacr1Cre mice treated with saline (top image) or CNO (bottom image). The expression of mCherry in both animals is restricted to select neurons in the PBN-SL (red). CNO application but not saline injection results in induction of the activity-dependent gene Fos (green) validating the approach. Scale\u00a0=\u00a0100 \u03bcm. (C\u2013G) Chemogenetic stimulation of PBN-SLTacr1 neurons heightens behavioral responses sustained by noxious mechanical (C\u2013E), chemical (F), and thermal (G) stimulation (n\u00a0=\u00a07 mice tested with saline, black points and then with CNO, red points on different days). Mice treated with CNO spend significantly more time shaking (C; p=0.0003) and as a result exhibited less licking events (D; p=0.0044) directed to the hindpaw during the Clip assay. Notably, CNO-treated mice continued to lick the hindpaw for several minutes after the clip was removed (E; p=<0.0001). CNO treatment also increased the number of times mice licked their paws after topical AITC treatment (F; p=0.0009) and jumped to escape from a 55\u00b0C hotplate (G; p=<0.0001). CNO treatment did not increase result in licking behaviors in the absence of noxious stimulation (H; 0.3370). (I\u2013O) Silencing of PBN-SLTacr1 neurons inhibits normal pain responses to sustained noxious stimuli. (I) A cartoon depicting the strategy for silence the output of PBN-SLTacr1 neurons. Bilateral injection of a Cre-dependent viral vector encoding Tetanus Toxin Light C GFP fusion (AAV-DIO-GFP-2A-TeNT) in Tacr1Cre mice was used to silence PBN-SLTacr1 neurons; AAV-DIO-GFP served as a control. (J) Typical confocal image of a coronal section through the PBN region showing the restricted expression of GFP-2A-TeNT in the PBN-SL (green). Scale\u00a0=\u00a0100 \u03bcm. (K\u2013O) Silencing of PBN-SLTacr1 neuronal output significantly dampened behavioral responses to sustained noxious mechanical (K\u2013M), chemical (N) and thermal (O) stimulation (n\u00a0=\u00a08 GFP, black points; n\u00a0=\u00a07 TeNT-GFP, green points). In the Clip (sustained pinch assay, K\u2013M), expression of GFP-2A-TeNT in PBN-SLTacr1 neurons decreases the time spent shaking (K; p=0.0003) and the number of licking events (L; p=<0.0001). Similarly, silencing PBN-SLTacr1 neurons significantly decreased the number of times mice licked their paws after topical AITC treatment (N; p=0.0001); since control animals did not make escape attempts from a 55\u00b0C hot plate (O; p=>0.9999) no effect of neuronal silencing was observed in this assay. Unpaired two-tailed t test; ns\u00a0>\u00a00.05, ***p\u22640.001, ****p\u22640.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Chemogenetic activation of PBN-SLTacr1 neurons expressing hM3Dq with CNO (red points) decreased the amount of time mice spent in the center of an open-field arena. p=0.0009. (B) Number of licks due to intraplantar formalin injection were not altered due to CNO administration in PBN-SLTacr1 mice.\u00a0(C) Mice treated with CNO also display hypersensitivity to gentle punctate touch as measured by a decreased von Frey threshold. p=<0.0001. CNO treatment did not alter the latency to first response in two thermal assays, Hargreaves (D; p=0.6422) or Hotplate (E; 0.5853). n\u00a0=\u00a010 mice. (F\u2013G) Silencing the output from PBN-SLTacr1 neurons with GFP-2A-TeNT (green points) did not alter von Frey thresholds (E; p=0.5078) or latency to respond to heat (F; p=0.0007). n\u00a0=\u00a08 GFP; n\u00a0=\u00a07 GFP-2A-TeNT. Unpaired two-tailed t test; ns\u00a0>\u00a00.05, ***p\u22640.001, ****p\u22640.0001.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61135/elife-61135-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Injection of the puritogen chloroquine into the nape of the neck induces robust scratch responses in controls (saline injected mice, black points) that are completely suppressed by chemogenetic activation of PBN-SLTacr1 neurons expressing hM3Dq (CNO, red points). p=<0.0001 (B) Similarly, activation of these neurons also reduced grooming behavior. p=0.0078. n\u00a0=\u00a010 mice (C) Silencing PBN-SLTacr1 neuronal output with GFP-2A-TeNT had no effect on scratching responses. n\u00a0=\u00a08 GFP; n\u00a0=\u00a07 GFP-2A-TeNT. p=0.4800. Unpaired two-tailed t test; ns\u00a0>\u00a00.05, **p\u22640.01, ****p\u22640.0001.\n\nRecent work from other groups has suggested that inhibiting PBN activity suppresses scratching (Campos et al., 2018; Mu et al., 2017); however, our data show that stimulating the Tacr1-expressing spinal neurons strongly suppressed itch-related behaviors. Therefore, we next investigated how activation of PBN-SLTacr1 neurons affected behavioral responses to pruritogens. To induce itch, we injected chloroquine, a potent non-histaminergic puritogen that activates a select type of peripheral itch neuron and evokes vigorous scratching (Han et al., 2013). Injecting this compound into the nape of the neck of control mice reliably induced localized bouts of scratching starting a few minutes after injection and lasting for about 30 min. Remarkably, chemogenetic stimulation of the small group of PBN-SLTacr1 neurons completely suppressed scratching (Figure 5\u2014figure supplement 2A and B), mimicking the effects both of painful stimuli and the fictive pain induced by activating Tacr1-expressing spinal projection neurons. Therefore, the PBN-SLTacr1 neurons serve as a central substrate that is sufficient to suppress itch.\n\nChemogenetic activation and functional recordings demonstrate that PBN-SLTacr1 neurons respond to painful stimuli and can induce hypervigilance and increased behavioral responses to sustained types of pain. However, it is well known that the central pathways controlling pain sensation and responses involve many regions of the brain (Bushnell et al., 2013). Therefore, we next used directed expression of tetanus toxin (TeNT-GFP) (Han et al., 2015; Li et al., 2019) to silence synaptic output and determine the role of this PBN-SLTacr1 circuit in pain behaviors (Figure 5I,J). We again examined responses to different types of sustained stimuli that in control animals induce robust behaviors: the clip assay of extended pinch, and topical application of AITC. Remarkably, in both cases, silencing PBN-SLTacr1 neurons almost completely eliminated shaking and licking normally induced by these stimuli (Figure 5K\u2013O). Moreover, at a qualitative level, mice with silenced PBN-SLTacr1 neurons effectively ignored these normally painful stimuli. Thus, this small and localized cluster of PBN-SLTacr1 neurons appears to play a profound role in pain and is necessary for normal behavioral responses.\n\n## Discussion\n\nTogether our results identify a circuit involving Tacr1-expressing neurons in the spinal cord and the PBN-SL that controls how mice respond to a wide range of persistently painful stimuli. Interestingly, more than 30 years ago McMahon and Wall described a loop from lamina I dorsal horn to the parabrachial nucleus that influences the activity of lamina I cells (McMahon and Wall, 1988). Our results here show that PBN-SL neurons expressing Tacr1 are important for responses to persistent noxious stimuli, exactly as predicted (Wall et al., 1988). Importantly, activating the lumbar spinalTacr1 neurons closely mimics persistent pain by inducing pronounced, somatotopically directed behaviors. Very recently\u00a0and\u00a0in keeping with our data, other groups have demonstrated that spinalTacr1 neurons are quite diverse (Sheahan et al., 2020; Choi et al., 2020) and include a population of neurons that selectively innervate the PBN-SL to cause strong nocifensive responses (Choi et al., 2020). Interestingly, chemogenetic activation of spinalTacr1 neurons using a different genetic strategy induced itch-related behavior (Sheahan et al., 2020). In combination, these data highlight the role of spinalTacr1 neurons in nociception but suggest that the different mouse\u00a0lines and approaches likely targeted slightly different subsets or numbers of neurons to elicit distinct sensations. Nonetheless our results are entirely concordant with results from the Ginty lab (Choi et al., 2020) that implicate projections of spinalTacr1 neurons to a small subnucleus of the PBN as crucial for affective aspects of pain.\n\nWe show that a primary target of spinalTacr1 projection neurons are PBN-SL neurons that also express the NKR1-receptor. These PBN-SLTacr1 neurons are both necessary and sufficient to drive a subset of pain-related behaviors. PBN-SLTacr1 neurons are tuned to long-lasting noxious input regardless of location and are selectively important for behaviors that only occur when pain is persistent. When activated, PBN-SLTacr1 neurons dramatically potentiate complex behavioral responses but not simple reflexes. Interestingly, when this group of neurons is stimulated in the absence of noxious peripheral input, mice become \u2018jumpy\u2019 and hypervigilant, now recoiling vigorously from the gentlest of touches that normally would be ignored in the absence of stimulation. For example, response to a first von Frey filament often evoked locomotion and escape from further attempts at stimulation even prior to touch. Comorbidities such as anhedonia and suppression of feeding have been reported to occur during ongoing pain and involve other nuclei in the PBN and their connections with the central amygdala (Carter et al., 2013; Chiang et al., 2020). Therefore, in the future it will be interesting to determine if PBN-SLTacr1 neurons are also crucial for these types of behavioral changes since PBN-SLTacr1 neurons do not directly target the amygdala but project to distinct regions of the forebrain.\n\nThe stimuli that we showed PBN-SLTacr1 neurons respond to are all persistent types of pain. Since both substance P (Tac1) and its receptor NKR1 (Tacr1) are present both in the spinal projection neurons and in the PBN, it seems likely that neuropeptide signaling may modulate aspects of pain through this pathway. However, given that NKR1-antagonists have limited efficacy in human subjects, we suspect that painful stimulation must normally activate additional pathways that elicit negative valence. Finally, unlike spinal projection neurons, PBN-SLTacr1 neurons do not themselves evoke pain responses or provide positional information but instead appear to drive affective aspects of pain. This is particularly apparent in the clip assay where mice with silenced PBN-SLTacr1 neurons almost completely ignore this type of sustained, and normally painful, pinch. In the future, determining how other central targets of the spinalTacr1 projection neurons control behavior should help reveal if pain responses are simply the sum of distinct parallel circuits or require interactions between distributed regions of the brain.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>B6;129S-Tac1tm1.1(cre)Hze/J</td>\n      <td>Jax Mice</td>\n      <td>Stock number 021877</td>\n      <td>Tac1Cre</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Tacr1-T2A-Cre-Neo</td>\n      <td>Allen Brain Institute</td>\n      <td>Donated by Dr. Hongkui Zheng</td>\n      <td>Tacr1Cre</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AAV9-CAG-FLEX-tdTomato</td>\n      <td>UPenn; donated by Allen Institute</td>\n      <td>Addgene 28306-AAV9</td>\n      <td>200 nl of viral particles (1:1 in saline) at 100 nl/min</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AAV9-CAG-FLEX-GFP</td>\n      <td>UPenn; donated by Allen Institute</td>\n      <td>Addgene 51502-AAV9</td>\n      <td>200 nl of viral particles (1:1 in saline) at 100 nl/min DRSC.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AAV5-hSyn-FLEX-GCaMP6f</td>\n      <td>Addgene; donated by Allen Institute</td>\n      <td>Addgene 100837-AAV5</td>\n      <td>200 nl of viral particles (1:1 in saline) at 100 nl/min</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AAV5-hSyn-DIO-mCherry</td>\n      <td>UNC</td>\n      <td>Addgene 50459-AAV9</td>\n      <td>200 nl of viral particles (1:1 in saline) at 100 nl/min</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AAV5-hSyn-DIO-hM3Dq</td>\n      <td>UNC; donated by Bryan Roth</td>\n      <td>Addgene 50474-AAV9</td>\n      <td>200 nl of viral particles (1:1 in saline) at 100 nl/min</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AAV8-Flex-hSyn-Synaptophysin-YFP</td>\n      <td>MGH GDT Core</td>\n      <td></td>\n      <td>200 nl of viral particles (1:1 in saline) at 100 nl/min</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AAV9-Flex-hSyn-PSD95-TagRFP</td>\n      <td>Chesler Lab, NCCIH</td>\n      <td>Construct donated by Mark Hoon</td>\n      <td>200 nl of viral particles (1:1 in saline) at 100 nl/min</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AAVDJ-CMV-eGFP-2A-TeNT</td>\n      <td>Stanford Viral Core GVVCAAV-71e</td>\n      <td>GVVCAAV-71e</td>\n      <td>200 nl of viral particles (1:1 in saline) at 100 nl/min</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AAVRetro-hSyn-FLPo</td>\n      <td>Levine Lab, NINDS Sathyamurthy et al., 2020</td>\n      <td></td>\n      <td>200 nl of viral particles (1:1 in saline) at 100 nl/min</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>AAV1-hSyn-FSF-Syp-EGFP</td>\n      <td>Levine Lab, NINDS Sathyamurthy et al., 2020</td>\n      <td></td>\n      <td>200 nl of viral particles (1:1 in saline) at 100 nl/min</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mouse lines\n\nAnimal care and experimental procedures were performed in accordance with a protocol approved by the National Institute for Neurological Diseases and Stroke (NINDS) Animal Care and Use Committee. Tac1Cre mice (Tac1-IRES2-Cre-D or B6;129S-Tac1tm1.1(cre)Hze/J; Stock number 021877) (Barik et al., 2018; Harris et al., 2014) were purchased from Jackson Laboratories. Tacr1Cre mice (Tacr1-T2A-Cre-Neo) was kindly donated by Dr Hongkui Zheng, Allen Brain Institute. Genotyping for the mentioned strains was performed according to protocols provided by the Jackson Laboratories.\n\n### Viral vectors and stereotaxic injections\n\nMice were administered 1 ml saline mixed with 25 mg/kg of ketoprofen 30 min prior to and for 2 days daily post-surgery. Mice were anesthetized with 2% isoflurane/oxygen prior and during the surgery. Craniotomy was performed at the marked point using a hand-held micro-drill (Roboz). A Hamilton syringe (5 or 10 \u00b5l) with a glass-pulled needle was used to infuse 200 nl of viral particles (1:1 in saline) at 100 nl/min. The following coordinates were used to introduce the virus: PBN-SL- AP:\u22125, ML:\u00b11.36; DV:3.30; LH/PSTN- -AP:\u22121.72, ML:\u00b10.2; DV:3.5. The stereotaxic surgeries to deliver AAVs in the lumbar spinal cord were performed as described before (Sathyamurthy et al., 2020). Vectors used and sources: AAV9-CAG-FLEX-tdTomato (UPenn; donated by Allen Institute); AAV9-CAG-FLEX-GFP (UPenn; donated by Allen Institute); AAV5-hSyn-DIO-mCherry (UNC); AAV5-hSyn-DIO-hM3Dq (UNC; donated by Bryan Roth); AAV5-hSyn-FLEX-GCaMP6f\u00a0(Addgene, donated by Allen Institute); AAV8-Flex-hSyn-Synaptophysin-YFP (MGH GDT Core); AAV9-Flex-hSyn-PSD95-TagRFP (this paper; donated by Mark Hoon); AAVDJ-CMV-eGFP-2A-TeNT (Stanford Viral Core GVVCAAV-71); AAVRetro-hSyn-FLPo (Sathyamurthy et al., 2020); AAV1-hSyn-FSF-Syp-EGFP (Sathyamurthy et al., 2020). Post hoc histological examination of each injected mouse was used to confirm viral-mediated expression was restricted to target nuclei.\n\n### Behavioral assays\n\nOne experimenter carried out all the behavioral assays for the same cohort and was blinded to the treatments (J.T. or M.S.). Experiments throughout all the intraplantar and intraperitoneal administrations were performed by one experimenter (A.B.). All experiments were done in the same room, which was specifically designated for behavior and under red light. Mice were habituated in their home-cages for at least 30 min in the behavior room before experiments. For the Hargreaves test, mice were habituated in transparent plexiglass chambers for 30 min. Clozapine-N-Oxide (1 mg/kg) dissolved in DMSO and diluted in saline was injected i.p. 60\u201390 min before behavioral experiments or histochemical analysis (Krashes et al., 2011). In the assays where spontaneous behaviors were scored, the behaviors were recorded with a digital camera and scored with a stopwatch and a hand-held cell-counter or using the CleverSys software. In the itch assay an individual scratching bout was calculated as a single event. Similarly, for calculating the no. of licks and no. of grooming bouts, each bout was counted as an event. This is because each lick or each scratch by itself\u00a0is too fast to be reliably scored. Rather, the bout lasting from the start to stop of the behavior was counted as a single event. The shaking behavior did not occur in bouts and thus individual shakes were accounted for during scoring. Hot-plate and Hargreaves tests were scored as described in Barik et al., 2018.\n\nThe clip assay was performed as described in Huang et al., 2019. The experimental mice were extensively handled to be acquainted with the experimenter and before the clip was applied on the hind-paw the mice were physically restrained in hand while the GCaMP signals were being recorded. The mice were restrained on a foam-filter paper bed in a way the hind paw stuck out to enable clip application. While one experimenter restrained the animal, another experimenter applied the clip and took it off. The clip was never kept on the experimental animals for more than 60\u201370 s. For the AITC test, 10% AITC (Sigma) in saline was injected intradermally in the paw as described in, (McNamara et al., 2007). For the formalin test, 2% formalin in saline was injected under the dorsal skin of the right hindpaw with an insulin syringe until a swelling was observed (20ul) (Barik et al., 2018).\u00a0All the experiments were videotaped with an over-head video camera or a panasonic digital camera and scored offline post-hoc using TopScan by CleverSys. The Hargreaves apparatus, and the programmable hotplate were purchased from IITC and used according to the manufacturer's instructions. Von Frey test was done by manually applying the following filaments: 0.008, 0.02, 0.04, 0.07, 0.16, 0.4, 0.6, 1, 1.4 g. Animals received 10 stimulations on the left paw. Inter trial interval was at least 15 s. Open field was from CleverSys. Mice were always habituated in their respective chambers for 30 min prior to\u00a0experimentation.\n\n### Fiber photometry\n\nA three-channel fiber photometry system from Neurophotometrics was used to collect data. Light from two LEDs (470 nm and 405 nm) were bandpass filtered and passed through a 20 x Nikon Objective focussed on a fiber optic cable coupled to the cannula implanted on mouse PBN-SL. Fluorescence emission was collected through the same patch cord and filtered on a CMOS sensor. Data was acquired through Bonsai. Photometry data was analyzed using a MATLAB code provided by Neurophotometrics. To correct for photobleaching and heat mediated LED decay, the isosbestic signal was fit with a biexponential that was then linearly-scaled to the calcium-dependent fluorescence signal F. The \u0394F/F was calculated by dividing the signal by the scaled fit. The start and end of the stimuli (where applicable) were timestamped. Where possible, simultaneous video recording with a Microsoft webcam was performed.\n\n### Immunostaining, multiplex in situ hybridization, and confocal microscopy\n\nMice were anesthetized with isoflurane and perfused intracardially with PBS and 4% PFA (Electron Microscopy Sciences) consecutively for immunostaining experiments. Fresh brains were harvested for in situ hybridization experiments. Tissue sections were rinsed in PBS and incubated in a blocking buffer (5% goat serum; 0.1% Triton X-100; PBS) for 3 hr at room temperature. Sections were incubated in primary antibodies in the blocking buffer at 4\u00b0C overnight. Sections were rinsed 1\u20132 times with PBS and incubated for 2 hr in Alexa Fluor conjugated goat anti-rabbit/ rat/ chicken secondary antibodies (Thermo Fisher Scientific), washed in PBS, and mounted in ProLong gold mounting media (Thermo Fisher Scientific) onto charged glass slides (Daigger Scientific). Multiplex ISH was done with a manual RNAscope assay (Advanced Cell Diagnostics). Probes were ordered from the ACD online catalog. Z stack images were collected using a \u00d720 and \u00d740 oil objective on a laser scanning confocal system (Olympus Fluoview FV1000) and processed using ImageJ/FIJI software (National Institutes of Health). The AiryScan images of synapses were acquired with 60X oil objective on a Zeiss LSM 880 AiryScan Confocal microscope.\n\n### Statistical analyses\n\nAll statistical analyses were performed using GraphPad PRISM seven software. ns\u00a0>0.05, *p\u22640.05, **p\u22640.01, ***p\u22640.001, ****p\u22640.0001.\n",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "ecb325a6-6488-4ec7-b6db-9c97b2b287f4",
+      "submission_id": "e67fa2c9-be13-49eb-9171-4283602adb65",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Allan Basbaum, University of California San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61135.sa1](https://doi.org/10.7554/eLife.61135.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors of this paper show that chemogenetic activation of spinal cord neurons that expression the Tacr1 receptor, which responds to substance P, evokes many nocifensive behaviors that correlate with the experience of pain. The effects are exerted via connections with the parabrachial nucleus of the brainstem, which in turns connects with brain circuits that underlie emotional components of the pain experience.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A spinoparabrachial circuit defined by Tacr1 expression drives pain\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Richard D Palmiter (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis is a concise paper describing a projection from spinal cord to Tacr1-expressing neurons in the PBN. The authors conclude that activation of this spinal cord > PBN Tacr1 circuit \"does not trigger pain responses but instead serves to dramatically heighten nocifensive behaviors and suppress itch\" and that mice with \"silenced Tacr1 neurons ignore long-lasting noxious stimuli\u201d. These are interesting and important findings that complement a recent paper (Deng et al., 2020). The conclusions reached by the authors are generally substantiated, but considerable revision is required, but some additional experiments are essential. These experiments will not only strengthen the authors' conclusions, but may provide some insight as to underlying mechanism as to the very interesting finding relating pain to itch inhibition.\n\nEssential revisions:\n\nMajor concerns several requiring additional experimental information:\n\n1) This paper appears to have been written for a different journal. As the authors have more space in eLife they should move some of the more interesting supplementary figures to main figures. They should also expand on the Discussion and take advantage of the Deng/Sun paper to compare results of the two studies to create an integrated picture.\n\n2) The Fos induction after activating Tacr1 neurons in spinal cord is not impressive and does not appear to be colocalized with red cells expressing the DREADD (Figure 1\u2014figure supplement 4C). Quantification Fos overlap with Tacr1 and Fos in non-Tacr1 cells is needed. Likewise, quantification of overlap of Tacr1 and Tac1 in lamina 1 of spinal cord is needed.\n\n3) A poke (von Frey) and a pinch (squeeze) are different, so the conclusion that the PBN Tacr1 neurons only respond to sustained stimuli needs better validation. A revision should definitely include a different painful stimulus; foot shocks that may be easier to precisely time. Alternatively a dry ice application test could be used.\n\n4) The authors say that \"PBN-Tacr1 neurons induces a \"hyper-vigilant\" state resembling the effects of long-term noxious stimulation (e.g. inflammation).\" Which raises the question of how the mice respond to an inflammatory stimulus (e.g. carrageenan or formalin)?\n\n5) Most importantly, what percentage of spinal Tacr1-expressing neurons are projection neurons? The authors gave the impression that Tacr1-expressing cells in spinal cord are all projection neurons, but as Todd has reported some are undoubtedly interneurons. This should be quantified.\n\n6) The question of the nature of the NK1R neurons is particularly relevant given the recent contribution of the NK1R neurons from the Sarah Ross lab, which has a Biorxiv paper indicating NK1R(Tacr1)-expressing spinal interneurons are involved in itch (https://www.biorxiv.org/content/10.1101/2020.07.14.199471v1.full). Of course, this paper indicated that activating Tacr1-neurons suppresses itch. This should be discussed.\n\n7) Here also is where an additional experiment could not only focus on the difference in the results from the Ross lab, but also provide some insight into mechanism:\n\n8) The inhibition of nape of the neck chloroquine-induced scratching is perhaps the most remarkable and exciting finding. Does the mechanism involve inhibition at the level of the spinal cord (via an ascending-descending loop), or is it an effect that occurs supraspinally? If the latter, then one would predict that nape of the neck chloroquine-evoked cervical cord Fos expression would persist after lumbar cord DREADD stimulation. This is an easy experiment, somewhat complicated perhaps by the fact that the loss of scratching would inevitably reduce Fos in the cervical cord. But any Fos attributed to the chloroquine activation of pruritoceptors should either persist, if the inhibition occurs supraspinally, or disappear, if the inhibition occurs at the level of the cord. This is an experiment that should absolutely be included in a revision.\n\n9) Lastly, it would great if the authors could provide videos of activating Tacr1 neurons showing pain like behaviors.\n",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d1052a08-6025-4d4e-97b1-0df2545f37fe",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C1",
+      "claim": "Tacr1 has been widely used as a marker for projection neurons in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Tacr1 has been widely used as a marker for projection neurons in the spinal cord (Todd, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Todd, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4a0cd6b1-c8a5-4c32-b3d7-af375d5d47c5",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C2",
+      "claim": "Not all projection neurons are marked by Tacr1.",
+      "claim_type": "EXPLICIT",
+      "source": "however, not all projection neurons are marked by Tacr1 (Choi et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Choi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "ac29e12b-1a3f-444f-9519-83a9edc19943",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C3",
+      "claim": "Interneurons also express Tacr1.",
+      "claim_type": "EXPLICIT",
+      "source": "and interneurons also express this gene (Sathyamurthy et al., 2020; Sathyamurthy et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sathyamurthy et al., 2020 and 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "308f6e63-16d7-46ac-adaf-6db08b521c41",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C4",
+      "claim": "Spinal Tacr1 neurons play a crucial role in normal nociceptive behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the spinalTacr1 neurons are well known to play a crucial role in normal nociceptive behaviors (Mantyh et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mantyh et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "daf32a64-f027-4577-b161-793762f7854c",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C5",
+      "claim": "About 40% of Tacr1Cre-targeted neurons have soma diameters characteristic of projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results confirmed that Tacr1Cre mediates recombination both in the superficial and deep dorsal horn with about 40% of targeted neurons having soma diameters of projection neurons (Al Ghamdi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 1\u2014figure supplement 2B and citation to Al Ghamdi et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "d9433cc9-e605-4cc9-83c9-e6e9716b5d3b",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C6",
+      "claim": "Tacr1Cre mediates recombination in both superficial and deep dorsal horn.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results confirmed that Tacr1Cre mediates recombination both in the superficial and deep dorsal horn with about 40% of targeted neurons having soma diameters of projection neurons (Al Ghamdi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 1\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "a458004c-5832-4650-9c0f-39d1f9bf92a7",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C7",
+      "claim": "Administration of CNO to mice with hM3Dq-expressing spinal Tacr1 neurons results in widespread Fos expression on the injected side.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, administration of the hM3Dq ligand clozapine-N-oxide (CNO) resulted in widespread Fos expression on the injected side (Figure 1B), validating this stimulation paradigm (see Figure 1\u2014figure supplement 1A, B for quantitation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemical data shown in Figure 1B and quantified in Figure 1\u2014figure supplement 1A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "f6ff6164-5f30-4d9d-aad7-e894ef6ea4bd",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C8",
+      "claim": "Both hM3Dq-mCherry positive and negative neurons express Fos after CNO delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that both hM3Dq-mCherry positive and negative neurons express Fos after CNO delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 1\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4ae1e179-7383-4dd4-8674-cce75f3a4c6a",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C9",
+      "claim": "CNO activates Tacr1+ neurons, which in turn activate other non-Tacr1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A likely explanation is that CNO activates Tacr1+ neurons, and that Tacr1+ neurons in turn activate other non-Tacr1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observation that both mCherry+ and mCherry- neurons express Fos",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "9834fefd-6144-495f-98c8-04059da5e0fb",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C10",
+      "claim": "Each side of a lumbar spinal cord segment receives sensory inputs from the ipsilateral hindlimb.",
+      "claim_type": "EXPLICIT",
+      "source": "Each side of a lumbar spinal cord segment receives sensory inputs from the ipsilateral hindlimb (Basbaum et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Basbaum et al., 2009",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "210dede8-652b-42f4-840d-f81bdf772f3d",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C11",
+      "claim": "Within minutes of CNO application, animals with spinal Tacr1 neurons expressing hM3Dq began spontaneously lifting, shaking and licking the hindlimb ipsilateral to the AAV injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Within minutes of CNO application, animals with spinalTacr1 neurons expressing hM3Dq began spontaneously lifting, shaking and licking the hindlimb ipsilateral to the AAV injection (Figure 1C and D; Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 1C, D and Videos 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "5c232ac6-f20b-45f0-89ca-bb692e933fe9",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C12",
+      "claim": "The responses evoked by CNO activation of spinal Tacr1 neurons were highly reminiscent of those caused by extremely noxious and persistent stimuli such as chemical irritants.",
+      "claim_type": "EXPLICIT",
+      "source": "These responses were highly reminiscent of those caused by extremely noxious and persistent stimuli such as chemical irritants (Kwan et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to known responses from literature, supported by citation to Kwan et al., 2006",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "3e559c1f-424e-47e2-a75f-270e8734d769",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C13",
+      "claim": "CNO-induced behaviors in mice with hM3Dq-expressing spinal Tacr1 neurons lasted for over an hour.",
+      "claim_type": "EXPLICIT",
+      "source": "These responses were highly reminiscent of those caused by extremely noxious and persistent stimuli such as chemical irritants (Kwan et al., 2006), lasted for over an hour and suppressed normal homecage behaviors (e.g. grooming; Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral observation and data in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "2578486e-3f70-4f31-a0aa-ecfde1730a11",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C14",
+      "claim": "CNO-induced activation of spinal Tacr1 neurons suppressed normal grooming behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "These responses were highly reminiscent of those caused by extremely noxious and persistent stimuli such as chemical irritants (Kwan et al., 2006), lasted for over an hour and suppressed normal homecage behaviors (e.g. grooming; Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "f00d7086-25e3-4ea0-af88-f27a197d38e7",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C15",
+      "claim": "Animals with CNO-activated spinal Tacr1 neurons were completely unresponsive to chloroquine, a potent puritogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, animals on CNO became so focused on the DREADD-induced 'fictive' pain associated with the ipsilateral hindlimb that they ignored other highly salient stimuli. In particular, they were completely unresponsive to chloroquine, a potent puritogen (Han et al., 2013; Mishra and Hoon, 2013) that normally causes robust and long-lasting scratching (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 1F and citations to Han et al., 2013 and Mishra and Hoon, 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "aa7123b7-9fc6-4a2d-99b4-09080c2ddd34",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C16",
+      "claim": "Chloroquine was applied to the nape of the neck, a completely different body area from the hindlimb.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, chloroquine was applied to the nape of the neck, a completely different body area, and still induced Fos expression in the cervical spinal cord (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental description and data in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "149869c5-b502-4e4e-b9b5-fd30c149dc5a",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C17",
+      "claim": "Chloroquine application to the nape of the neck induced Fos expression in the cervical spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, chloroquine was applied to the nape of the neck, a completely different body area, and still induced Fos expression in the cervical spinal cord (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "55bf21cc-c28e-4ae9-939b-d143a1f50688",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C18",
+      "claim": "Activation of a small group of lumbar spinal Tacr1 neurons produced the phenomenon of itch suppression by pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to directing nocifensive behavior to a somatotopically conscribed area, the activation of a small group of lumbar spinalTacr1 neurons produced the well-known phenomenon of itch suppression by pain (Ikoma et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from behavioral data and supported by citation to Ikoma et al., 2006",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "7d6f442f-e62c-4f66-ba7f-712038ea4609",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C19",
+      "claim": "Itch suppression by pain involves a central mechanism since peripheral signaling persists.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our data strongly suggest that itch suppression by pain must involve a central mechanism since peripheral signaling persists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that chloroquine still induces Fos in cervical spinal cord despite suppressed scratching",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "12252a46-02cd-415f-a55a-52876e0e59a7",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C20",
+      "claim": "The effects of CNO on spinal Tacr1 neuron activation were fully reversible and did not cause any long-lasting sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as expected, the effects of CNO were fully reversible and did not cause any long-lasting sensitization (Figure 1G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 1G and H showing normal thresholds 24 hours post-CNO",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "b33773ca-fe51-4b3d-8af0-866fc5b7847f",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C21",
+      "claim": "Ablating spinal neurons expressing Tac1 significantly impaired licking responses to sustained noxious stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent study showed that ablating spinal neurons expressing Tac1, the gene encoding the neuropeptide Substance P, significantly impaired licking responses to sustained noxious stimuli (Huang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Huang et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "0ce16826-77b3-44c3-b6b2-9af1a03df918",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C22",
+      "claim": "In the spinal cord, Tac1 is broadly expressed both in projection neurons and interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the spinal cord, Tac1 is also broadly expressed both in projection neurons and interneurons (Gutierrez-Mecinas et al., 2017; Huang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gutierrez-Mecinas et al., 2017 and Huang et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4ad9dce3-73a3-4ef6-a3f7-57bbe215775b",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C23",
+      "claim": "Cells with high levels of Tacr1 transcripts in the superficial dorsal horn almost always co-express Tac1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in-situ hybridization data (Figure 1\u2014figure supplement 4A, B) revealed cells with high levels of Tacr1 transcripts in the superficial dorsal horn almost always co-express Tac1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data in Figure 1\u2014figure supplement 4A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "607e71ce-903f-4519-ba05-e7799f8ca31b",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C24",
+      "claim": "Chemogenetic stimulation of lumbar spinal Tac1 neurons resulted in robust nocifensive behaviors directed to the ipsilateral hindlimb.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, chemogenetic stimulation of lumbar spinalTac1 neurons (Figure 1\u2014figure supplement 4C, E) resulted in robust nocifensive behaviors directed to the ipsilateral hindlimb while at the same time suppressing grooming (Figure 1\u2014figure supplement 4F) and itch responses (Figure 1\u2014figure supplement 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 1\u2014figure supplement 4C, E, F, G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4dc19958-1166-4d93-87a5-8c5253e852e5",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C25",
+      "claim": "Chemogenetic stimulation of lumbar spinal Tac1 neurons suppressed grooming behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, chemogenetic stimulation of lumbar spinalTac1 neurons (Figure 1\u2014figure supplement 4C, E) resulted in robust nocifensive behaviors directed to the ipsilateral hindlimb while at the same time suppressing grooming (Figure 1\u2014figure supplement 4F) and itch responses (Figure 1\u2014figure supplement 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 1\u2014figure supplement 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "1238b1de-fcdc-4886-80a9-f8272b1b46c7",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C26",
+      "claim": "Chemogenetic stimulation of lumbar spinal Tac1 neurons suppressed itch responses.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, chemogenetic stimulation of lumbar spinalTac1 neurons (Figure 1\u2014figure supplement 4C, E) resulted in robust nocifensive behaviors directed to the ipsilateral hindlimb while at the same time suppressing grooming (Figure 1\u2014figure supplement 4F) and itch responses (Figure 1\u2014figure supplement 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 1\u2014figure supplement 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "348638d9-cf3b-4db5-b588-ac8f76e3b273",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C27",
+      "claim": "Stimulation of Tac1Cre animals produced more robust behaviors than stimulation of Tacr1Cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "There were minor differences in the behaviors with stimulation of Tac1Cre animals being more robust than Tacr1Cre mice (compare Videos 2 and 3), perhaps in part due to activation of Tac1 (Substance P but not NKR1) expressing sensory neurons in the dorsal horn and dorsal root ganglion (Figure 1\u2014figure supplement 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of Videos 2 and 3 and data in Figure 1\u2014figure supplement 4H",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "a023d28d-e389-4975-a0e7-afb1e76dd297",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C28",
+      "claim": "Activity of spinal cells expressing Tac1 and Tacr1 carries the information needed to elicit a pain sensation localized to a specific body area.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our results demonstrate that activity of the spinal cells expressing these genes carries the information needed to elicit a pain sensation localized to a specific body area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the somatotopic behavioral responses observed with chemogenetic activation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "c8869a78-da3f-43b3-9072-e9e7d368cbf6",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C29",
+      "claim": "Pain has many dimensions including location, quality, intensity, and duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Pain has many dimensions including location, quality, intensity, and duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about pain",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4e14cfde-5bb3-4bbb-81a4-abee27862091",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C30",
+      "claim": "Pain affects physiology, emotion, attention, and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "It also affects physiology, emotion, attention, and memory (Bushnell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bushnell et al., 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "701e78a8-f8fe-4871-8d50-5ec8ef8f8317",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C31",
+      "claim": "Output from the dorsal horn of the spinal cord targets multiple brain areas that work in concert to generate pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Output from the dorsal horn of the spinal cord targets multiple brain areas that work in concert to generate this complex state (Basbaum et al., 2009; Todd, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Basbaum et al., 2009 and Todd, 2010",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "b17dcb6d-beb0-44d0-afde-d8abcab8d0b7",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C32",
+      "claim": "Anterograde tracing of spinal Tacr1 neurons revealed GFP+ axons in many regions of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with their ability to coordinate a full-blown pain response, anterograde tracing revealed GFP+ axons in many regions of the brain (Figure 1J-M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by anatomical tracing data in Figure 1J-M",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "191f7350-3794-4288-b776-c7d1ab8e59a4",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C33",
+      "claim": "The highest density of spinal Tacr1 projections was at the very top of the superior lateral PBN (PBN-SL).",
+      "claim_type": "EXPLICIT",
+      "source": "Although GFP+ axons targeted both these regions, the highest density of spinalTacr1 projections was at the very top of the superior lateral PBN (PBN-SL; Figure 1K), a small and anatomically distinct area with unknown function and is sometimes referred to as the internal lateral PBN (Choi et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by anatomical data in Figure 1K and citation to Choi et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "ac83fbc4-6c53-477b-9de8-5061ae85740e",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C34",
+      "claim": "Chemogenetic activation of spinal Tacr1 neurons induced robust Fos expression in the PBN-SL.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, chemogenetic activation of spinalTacr1 (Figure 2A) and spinalTac1 (Figure 1\u2014figure supplement 4I) neurons induced robust Fos expression in the PBN-SL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2A and Figure 1\u2014figure supplement 4I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "140d47be-f60f-4604-aec3-5d06aec4ba92",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C35",
+      "claim": "Tacr1 is highly expressed in a tight cluster of excitatory cells in the PBN-SL.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, multiplex fluorescent in-situ hybridization revealed Tacr1 to be highly expressed in a tight cluster of excitatory cells in the PBN-SL (Figure 2B,C and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data in Figure 2B, C and Figure 2\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "8193a4a6-4b31-442c-af1f-cd76f2f617dd",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C36",
+      "claim": "Most Tacr1-positive PBN-SL neurons are glutamatergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-staining for the glutamate vesicular transporter Slc17a6 (Vglut2; cyan) and GABA vesicular transporter SLC32A1 (Vgat; green) reveals most Tacr1-positive PBN-SL neurons are glutamatergic and hence excitatory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data in Figure 2B, C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "89c3e779-2bd1-4f84-882b-c8b521ce5e8b",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C37",
+      "claim": "Near super-resolution imaging showed very close apposition of spinal Tacr1 presynaptic specializations and PBN-SL Tacr1 postsynaptic specializations indicative of functional synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Near super-resolution imaging of single Z planes from stained tissue sections from the PBN-SL showed very close apposition of red and green varicosities indicative of functional synapses (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Airyscan imaging data in Figure 2F, G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "0b6282d9-9817-4458-adb8-5ec4c3be5518",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C38",
+      "claim": "The majority of spinal Tacr1 projection neurons target PBN-SL Tacr1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of number of SypYFP puncta with PSD95tagRFP puncta in close apposition (left graph) and vice versa (right graph) demonstrate that the majority of spinal projection neurons target PBN-SLTacr1 neurons; n = 7 sections from n = 3 mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "60971f63-0cb2-4479-9558-9282551ebeb2",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C39",
+      "claim": "Two forebrain regions were prominently innervated by PBN-SL Tacr1 neurons: the midline thalamus (MTh) and the lateral hypothalamus/parasubthalamic nucleus (LH/PSTN).",
+      "claim_type": "EXPLICIT",
+      "source": "Two forebrain regions were prominently innervated by PBN-SLTacr1 neurons (Figure 2J): (1) the midline thalamus (MTh) and (2) the lateral hypothalamus/ parasubthalamic nucleus (LH/PSTN).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by anterograde tracing data in Figure 2J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "e5291bd1-2cb5-472a-854d-76d8e819bbbd",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C40",
+      "claim": "MTh and LH/PSTN appear to be selective targets of PBN-SL excitatory projections that are not innervated by other lateral PBN subnuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Both these regions appear to be selective targets of PBN-SL excitatory projections that are not innervated by other lateral PBN subnuclei (Barik et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barik et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "50ffc145-da71-4f7b-8e28-5c2f7e401d27",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C41",
+      "claim": "PBN-SL Tacr1 neurons that project to LH/PSTN also have collaterals that make presynaptic terminal specializations in the MTh.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Synaptophysin-GFP puncta were also abundant in the MTh (Figure 3B) demonstrating collateralization of PBN cells that we presume express Tacr1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by intersectional tracing data in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "60b951e8-a71d-4f15-9568-833f3d5c871b",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C42",
+      "claim": "PBN-SL Tacr1 neurons exhibited robust population calcium responses to sustained mechanical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, PBN-SLTacr1 neurons exhibited robust population calcium responses to this type of stimulation (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fiber photometry data in Figure 4D, E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "34b7d3f3-d902-4c54-b26a-61d2bb91827c",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C43",
+      "claim": "Punctate mechanical stimuli did not evoke calcium responses in PBN-SL Tacr1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, punctate mechanical stimuli did not evoke calcium responses in PBN-SLTacr1 neurons (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fiber photometry data in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "537dc7a7-d90e-4ff4-aace-c3489adc4067",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C44",
+      "claim": "Pinprick failed to evoke a calcium response in PBN-SL Tacr1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, pinprick also failed to evoke a calcium response (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fiber photometry data in Figure 4\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "2da54941-e9d4-436e-808b-9811a5143a81",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C45",
+      "claim": "PBN-SL Tacr1 neurons preferentially respond to sustained stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data may indicate that PBN-SLTacr1 neurons preferentially respond to sustained stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential responses to sustained vs. acute stimuli",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "f86a21a8-9267-4555-8eb8-24c49dba9b9b",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C46",
+      "claim": "PBN-SL Tacr1 neurons exhibited robust activity to hot-plate exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with these neurons playing a general role in pain sensation they exhibited robust activity to hot-plate exposure (Figure 4G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fiber photometry data in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "f7acacce-1e4c-4292-b7f3-479754967057",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C47",
+      "claim": "PBN-SL Tacr1 neurons exhibited robust activity to topical application of AITC.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with these neurons playing a general role in pain sensation they exhibited robust activity to hot-plate exposure (Figure 4G) and topical application of the pungent component of mustard oil, allyl isothiocyanate (AITC; Figure 4\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fiber photometry data in Figure 4\u2014figure supplement 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "8ece2d9f-0d74-4dc3-a460-41bf0164b506",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C48",
+      "claim": "PBN-SL Tacr1 neurons were not activated by short-term noxious heat (Hargreaves test).",
+      "claim_type": "EXPLICIT",
+      "source": "However, PBN-SLTacr1 neurons were not activated by short-term noxious heat (Hargreaves test; Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fiber photometry data in Figure 4H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "3c3353e5-dc11-469f-8f7a-0b46c784687d",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C49",
+      "claim": "AITC-induced skin irritation did not sensitize PBN-SL Tacr1 responses to acute touch or heat stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although AITC is known to cause allodynia and hyperalgesia (Albin et al., 2008), this type of skin irritation did not sensitize PBN-SLTacr1 responses to acute touch or heat stimuli (Figure 4\u2014figure supplement 2C-F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fiber photometry data in Figure 4\u2014figure supplement 2C-F and citation to Albin et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "a188ab9c-5c3f-4534-aab1-891c8e576822",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C50",
+      "claim": "Activation of PBN-SL Tacr1 neurons did not induce spontaneous directed pain responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although activation of PBN-SLTacr1 neurons did not induce spontaneous directed pain responses, CNO delivery transformed behavior: mice became skittish, avoided handling and repeatedly attempted to escape from the test chambers (possibly a general pain state).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "a273acca-544c-4b10-bbc3-a302e3c009e3",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C51",
+      "claim": "CNO delivery to mice with hM3Dq-expressing PBN-SL Tacr1 neurons caused mice to become skittish, avoid handling and repeatedly attempt to escape from test chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although activation of PBN-SLTacr1 neurons did not induce spontaneous directed pain responses, CNO delivery transformed behavior: mice became skittish, avoided handling and repeatedly attempted to escape from the test chambers (possibly a general pain state).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "d07ae15a-5d68-461e-abc6-06337b3706bf",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C52",
+      "claim": "Activation of PBN-SL Tacr1 neurons resulted in heightened arousal and anxiety quantified as increased movement and avoidance of the center in an open-field arena.",
+      "claim_type": "EXPLICIT",
+      "source": "This heightened arousal and anxiety were quantified using an open-field arena as increased movement and avoidance of the center (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 5\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "1ce80e5f-be13-4e0c-8e3e-e273a3546fd2",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C53",
+      "claim": "Mice with activated PBN-SL Tacr1 neurons withdrew from the slightest touch with thin von Frey filaments (0.07 g).",
+      "claim_type": "EXPLICIT",
+      "source": "Mice now withdrew from the slightest touch with thin von Frey filaments (0.07 g; Figure 5\u2014figure supplement 1C), something not seen in saline controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 5\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "a09858eb-7702-4451-a894-6db97601e432",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C54",
+      "claim": "Activation of PBN-SL Tacr1 neurons increased nocifensive behavior and almost doubled the time a mouse spent shaking the clipped paw in the clip assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in a sustained pinch assay using a clip applied to the paw, activation of PBN-SLTacr1 neurons increased nocifensive behavior and almost doubled the time a mouse spent shaking the clipped paw (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 5C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "9f701efd-9313-4fb8-b525-2f3a8c002715",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C55",
+      "claim": "After clip removal, CNO-treated mice with activated PBN-SL Tacr1 neurons continued to lick and investigate the hindpaw for many minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although saline -treated mice quickly returned to normal resting behaviors, after CNO the same animals continued to lick and investigate the hindpaw for many minutes after the pinch was terminated (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "1c0f8db7-3a0b-4b08-9c8b-41cf71f3c30b",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C56",
+      "claim": "Stimulating PBN-SL Tacr1 neurons more than doubled the time a CNO-treated mouse spent licking the AITC-injected site.",
+      "claim_type": "EXPLICIT",
+      "source": "Equally robust effects of stimulating PBN-SLTacr1 neurons were observed in responses to AITC, a chemical irritant which normally causes licking and attending to the affected area (Figure 5F). The time a CNO-treated mouse spent licking the injected site more than doubled.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4525c63e-e72b-4bd3-b1e3-39e40d503f7c",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C57",
+      "claim": "CNO-injected mice with activated PBN-SL Tacr1 neurons exhibited heightened escape responses when exposed to heat in a hotplate assay.",
+      "claim_type": "EXPLICIT",
+      "source": "CNO-injected mice also exhibited heightened escape responses when exposed to heat in a hotplate assay (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "093ebc39-3904-44d1-8ac8-0d75d7ec74f7",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C58",
+      "claim": "The latency in a mouse's response to heat was not influenced by activation of PBN-SL Tacr1 neurons, indicating that peripheral sensitization is not involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the latency in a mouse's response to heat, thought to involve simple spinal reflexes, was not influenced indicating that peripheral sensitization is not involved (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 5\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "700cb30e-b729-4ee0-a540-ecc4d338aebf",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C59",
+      "claim": "Activation of PBN-SL Tacr1 neurons induces a 'hyper-vigilant' state resembling the effects of long-term noxious stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, activation of PBN-SLTacr1 neurons induces a 'hyper-vigilant' state resembling the effects of long-term noxious stimulation (e.g. inflammation) as seen in assays like the formalin test (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from behavioral observations and comparison to formalin test data in Figure 5\u2014figure supplement 1B",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "decbf73a-7bf0-43d1-9f82-3da821d316b1",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C60",
+      "claim": "Activating PBN-SL Tacr1 neurons using CNO did not enhance responses to formalin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, activating the PBN-SLTacr1 neurons using CNO did not enhance responses to formalin, presumably reflecting the potency of this inflammatory stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data in Figure 5\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "5177a828-2a1d-4a2e-9830-e86b08725fe5",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C61",
+      "claim": "Inhibiting PBN-SL Tacr1 neurons reduces behavioral responses to peripheral inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a related study, the Sun lab has demonstrated that inhibiting PBN-SLTacr1 neurons reduces behavioral responses to peripheral inflammation (Deng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Deng et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4d57aa72-5c60-4370-b04b-81ebe490b046",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C62",
+      "claim": "Chemogenetic stimulation of PBN-SL Tacr1 neurons completely suppressed scratching induced by chloroquine.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, chemogenetic stimulation of the small group of PBN-SLTacr1 neurons completely suppressed scratching (Figure 5\u2014figure supplement 2A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 5\u2014figure supplement 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "18b73df2-616f-462f-80ae-e26e5f7df806",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C63",
+      "claim": "PBN-SL Tacr1 neurons serve as a central substrate that is sufficient to suppress itch.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the PBN-SLTacr1 neurons serve as a central substrate that is sufficient to suppress itch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that activating these neurons suppresses scratching",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4c1e4dab-89b7-454b-873c-199f810686e1",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C64",
+      "claim": "Silencing PBN-SL Tacr1 neurons almost completely eliminated shaking and licking normally induced by the clip assay and topical application of AITC.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in both cases, silencing PBN-SLTacr1 neurons almost completely eliminated shaking and licking normally induced by these stimuli (Figure 5K\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 5K-O",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "13687d81-230d-4156-8191-4c6121b10c9e",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C65",
+      "claim": "Mice with silenced PBN-SL Tacr1 neurons effectively ignored normally painful stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, at a qualitative level, mice with silenced PBN-SLTacr1 neurons effectively ignored these normally painful stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Qualitative behavioral observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4bd17fbf-286b-44df-b5cf-01e82e5e43c3",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C66",
+      "claim": "PBN-SL Tacr1 neurons play a profound role in pain and are necessary for normal behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this small and localized cluster of PBN-SLTacr1 neurons appears to play a profound role in pain and is necessary for normal behavioral responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the silencing experiments showing loss of pain behaviors",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "d3307d8e-283c-4d05-9ec9-63876fbca2ef",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C67",
+      "claim": "A circuit involving Tacr1-expressing neurons in the spinal cord and the PBN-SL controls how mice respond to a wide range of persistently painful stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Together our results identify a circuit involving Tacr1-expressing neurons in the spinal cord and the PBN-SL that controls how mice respond to a wide range of persistently painful stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "ebbf4491-ffa4-4a43-aa1e-715103012eb9",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C68",
+      "claim": "More than 30 years ago McMahon and Wall described a loop from lamina I dorsal horn to the parabrachial nucleus that influences the activity of lamina I cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, more than 30 years ago McMahon and Wall described a loop from lamina I dorsal horn to the parabrachial nucleus that influences the activity of lamina I cells (McMahon and Wall, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McMahon and Wall, 1988",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "a6a945b6-7383-47e3-866e-687d37569ece",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C69",
+      "claim": "PBN-SL neurons expressing Tacr1 are important for responses to persistent noxious stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results here show that PBN-SL neurons expressing Tacr1 are important for responses to persistent noxious stimuli, exactly as predicted (Wall et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental findings and citation to Wall et al., 1988",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "0bb17165-1e2a-4d06-9583-b970a82526e0",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C70",
+      "claim": "Spinal Tacr1 neurons are quite diverse.",
+      "claim_type": "EXPLICIT",
+      "source": "Very recently and in keeping with our data, other groups have demonstrated that spinalTacr1 neurons are quite diverse (Sheahan et al., 2020; Choi et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sheahan et al., 2020 and Choi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "ab5a885b-a5c2-4867-a338-ad6c57bca94d",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C71",
+      "claim": "Spinal Tacr1 neurons include a population that selectively innervates the PBN-SL to cause strong nocifensive responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Very recently and in keeping with our data, other groups have demonstrated that spinalTacr1 neurons are quite diverse (Sheahan et al., 2020; Choi et al., 2020) and include a population of neurons that selectively innervate the PBN-SL to cause strong nocifensive responses (Choi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Choi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "73a6555c-41a9-4751-98f0-b74462166c38",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C72",
+      "claim": "Chemogenetic activation of spinal Tacr1 neurons using a different genetic strategy induced itch-related behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, chemogenetic activation of spinalTacr1 neurons using a different genetic strategy induced itch-related behavior (Sheahan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sheahan et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "9d418689-7fc1-422b-8476-f3ccc4a15c43",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C73",
+      "claim": "Different mouse lines and approaches likely targeted slightly different subsets or numbers of neurons to elicit distinct sensations.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination, these data highlight the role of spinalTacr1 neurons in nociception but suggest that the different mouse lines and approaches likely targeted slightly different subsets or numbers of neurons to elicit distinct sensations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of results across different studies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4e46aea6-5131-4ccb-b38f-4d38c8da99a5",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C74",
+      "claim": "A primary target of spinal Tacr1 projection neurons are PBN-SL neurons that also express the NKR1-receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a primary target of spinalTacr1 projection neurons are PBN-SL neurons that also express the NKR1-receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by anatomical and molecular data in Figures 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "3d810173-8313-4da3-a57a-3b05e5b3dba2",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C75",
+      "claim": "PBN-SL Tacr1 neurons are both necessary and sufficient to drive a subset of pain-related behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "These PBN-SLTacr1 neurons are both necessary and sufficient to drive a subset of pain-related behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by chemogenetic activation and silencing experiments in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "762d7206-d79b-4f9c-a9c0-fca40b0943c1",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C76",
+      "claim": "PBN-SL Tacr1 neurons are tuned to long-lasting noxious input regardless of location.",
+      "claim_type": "EXPLICIT",
+      "source": "PBN-SLTacr1 neurons are tuned to long-lasting noxious input regardless of location and are selectively important for behaviors that only occur when pain is persistent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fiber photometry data in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "7410af50-84e2-4194-bf9d-54871182088e",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C77",
+      "claim": "When activated, PBN-SL Tacr1 neurons dramatically potentiate complex behavioral responses but not simple reflexes.",
+      "claim_type": "EXPLICIT",
+      "source": "When activated, PBN-SLTacr1 neurons dramatically potentiate complex behavioral responses but not simple reflexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data in Figure 5 showing enhanced complex behaviors but no change in reflex latencies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "68cd34d3-5f9d-478c-947f-2f6f1bace9d5",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C78",
+      "claim": "When PBN-SL Tacr1 neurons are stimulated in the absence of noxious peripheral input, mice become 'jumpy' and hypervigilant.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when this group of neurons is stimulated in the absence of noxious peripheral input, mice become 'jumpy' and hypervigilant, now recoiling vigorously from the gentlest of touches that normally would be ignored in the absence of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "3b26b317-4d93-4603-a74f-1817005d8c67",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C79",
+      "claim": "Unlike spinal projection neurons, PBN-SL Tacr1 neurons do not themselves evoke pain responses or provide positional information but instead appear to drive affective aspects of pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, unlike spinal projection neurons, PBN-SLTacr1 neurons do not themselves evoke pain responses or provide positional information but instead appear to drive affective aspects of pain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that activating these neurons alone doesn't cause directed pain behaviors but enhances responses to noxious stimuli",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "b02f7acd-97a7-48a9-b66d-90fd3cfc1bf4",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "claim_id": "C80",
+      "claim": "Mice with silenced PBN-SL Tacr1 neurons almost completely ignore sustained, normally painful pinch in the clip assay.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly apparent in the clip assay where mice with silenced PBN-SLTacr1 neurons almost completely ignore this type of sustained, and normally painful, pinch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data in Figure 5K-M",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b834cffa-8c42-4088-b984-0c3997413bc6",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Tacr1 is expressed in both projection neurons and interneurons in the spinal cord and plays a crucial role in nociceptive behaviors. While widely used as a marker for projection neurons, Tacr1 does not mark all projection neurons and is also expressed by interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-supported by citations to established literature (Todd 2010, Choi et al. 2020, Sathyamurthy et al. 2018/2020, Mantyh et al. 1997). These claims establish the known background about Tacr1 expression patterns and functional importance in pain processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "73828ae9-57e6-4d09-bd3f-c8876393304b",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Tacr1Cre mediates recombination in both superficial and deep dorsal horn, with approximately 40% of targeted neurons having soma diameters characteristic of projection neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 are supported by anatomical data in Figure 1\u2014figure supplement 2A,B showing GFP labeling patterns and quantification of soma sizes. The 40% proportion is consistent with cited literature (Al Ghamdi et al. 2009) and provides validation of the genetic targeting approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "694043e9-2450-4014-86fe-1ec27e3ef5d2",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CNO administration to mice with hM3Dq-expressing spinal Tacr1 neurons induces widespread Fos expression in both directly targeted (mCherry+) and non-targeted (mCherry-) neurons, suggesting that activated Tacr1+ neurons recruit additional non-Tacr1 neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 are supported by immunohistochemical data in Figure 1B and Figure 1\u2014figure supplement 1A-C. The observation of Fos in both mCherry+ and mCherry- cells provides evidence for circuit activation beyond directly transduced neurons, though the inference in C9 is reasonable given known circuit connectivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "62d392af-0ae7-4d2e-8e37-a61e72f18e52",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chemogenetic activation of spinal Tacr1 neurons induces spontaneous pain-like behaviors (lifting, shaking, licking) directed to the ipsilateral hindlimb that last over an hour and suppress normal grooming behaviors, resembling responses to persistent noxious chemical irritants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 are well-supported by behavioral data in Figure 1C-E and Videos 1-2. The behaviors are quantified, somatotopically appropriate, and the comparison to chemical irritant responses (C12) is supported by citation to Kwan et al. 2006. This demonstrates that spinal Tacr1 neuron activation is sufficient to drive pain-like behaviors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "3940e89e-b7b1-45d6-a6ca-ac3ac3b770ba",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Activation of lumbar spinal Tacr1 neurons completely suppresses scratching responses to chloroquine applied to the neck, despite persistent Fos expression in cervical spinal cord, demonstrating itch suppression by pain through a central mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are supported by behavioral data (Figure 1F) and Fos expression data (Figure 1\u2014figure supplement 3). The key observation that peripheral signaling persists (C17) while behavior is suppressed (C15) strongly supports the inference of a central mechanism (C19). This is a well-established phenomenon (Ikoma et al. 2006) now demonstrated with circuit-specific manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "43f0034c-ec98-4b84-aef4-65ddcaf4320a",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The effects of CNO-mediated activation of spinal Tacr1 neurons are fully reversible without long-lasting sensitization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is supported by data in Figure 1G-H showing normal von Frey and Hargreaves thresholds 24 hours post-CNO. This demonstrates the acute and reversible nature of the chemogenetic manipulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "a8ae9266-3a8f-406f-99e3-e28568862231",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spinal Tac1 neurons, which broadly overlap with Tacr1 expression in the superficial dorsal horn, also drive pain-like behaviors when chemogenetically activated, producing similar but slightly more robust effects than Tacr1 neuron activation, likely due to additional recruitment of Tac1+ sensory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 are supported by in situ hybridization data (Figure 1\u2014figure supplement 4A,B) showing Tac1/Tacr1 co-expression and behavioral data (Figure 1\u2014figure supplement 4C-G) demonstrating similar pain-like behaviors and itch suppression. The comparison between Tac1Cre and Tacr1Cre mice (C27) is supported by Videos 2-3 and anatomical data showing DRG labeling (Figure 1\u2014figure supplement 4H).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "2283cda7-bb99-4653-b4e0-4b33bd6f81be",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Spinal Tacr1 projection neurons target multiple brain regions with the highest density of projections to the superior lateral parabrachial nucleus (PBN-SL), where chemogenetic activation of spinal Tacr1 neurons induces robust Fos expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by anterograde tracing data (Figure 1J-M, Figure 2A) and Fos expression data (Figure 2A, Figure 1\u2014figure supplement 4I). The anatomical specificity of projections to PBN-SL is well-documented and consistent with recent literature (Choi et al. 2020).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "690a602e-7373-4c2b-8d8b-b5aa907b57f2",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PBN-SL contains a tight cluster of glutamatergic neurons expressing Tacr1 that receive direct synaptic input from spinal Tacr1 projection neurons, as demonstrated by close apposition of pre- and postsynaptic markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by in situ hybridization data (Figure 2B-C, Figure 2\u2014figure supplement 1A) and super-resolution imaging (Figure 2F-G) showing synaptic connectivity. The quantification in Figure 2G demonstrates that the majority of spinal projections target PBN-SL Tacr1 neurons, establishing this as a primary circuit connection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "b35d0d3a-7cd4-4eda-a85d-f0a0af3e9d56",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PBN-SL Tacr1 neurons project to two main forebrain targets\u2014the midline thalamus (MTh) and lateral hypothalamus/parasubthalamic nucleus (LH/PSTN)\u2014with individual neurons collateralizing to both regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by anterograde tracing (Figure 2J, Figure 2\u2014figure supplement 2) and intersectional genetic tracing (Figure 3A-B) demonstrating collateralization. The selectivity of these targets (C40) is supported by citation to Barik et al. 2018. This anatomical organization suggests coordinated signaling to multiple forebrain regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "2aa403e1-7536-43e7-8757-a10d7d758d6b",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PBN-SL Tacr1 neurons preferentially respond to sustained noxious stimuli (pinch, clip, hot plate, AITC) but not to acute punctate stimuli (von Frey, pinprick, brief heat), and this selectivity is not altered by inflammatory sensitization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 are supported by comprehensive fiber photometry data (Figure 4C-H, Figure 4\u2014figure supplements 1-2). The differential responses to sustained vs. acute stimuli are clearly demonstrated across multiple modalities. The lack of sensitization after AITC (C49) is particularly notable and well-documented. This establishes a functional tuning property of these neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "a21ff484-52df-4699-b0ad-8677122ef8ac",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Chemogenetic activation of PBN-SL Tacr1 neurons does not induce spontaneous directed pain behaviors but creates a hypervigilant state characterized by anxiety, hypersensitivity to touch, and dramatically enhanced responses to sustained noxious stimuli without affecting spinal reflex latencies or peripheral sensitization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C60 are extensively supported by behavioral data across multiple assays (Figure 5A-G, Figure 5\u2014figure supplement 1A-D). The dissociation between enhanced complex behaviors and unchanged reflex latencies (C58) is particularly important for demonstrating central rather than peripheral effects. The lack of enhancement of formalin responses (C60) suggests a ceiling effect with maximal inflammatory stimulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "747e14bf-bb6c-4016-9e72-cf978e54423e",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Chemogenetic activation of PBN-SL Tacr1 neurons completely suppresses chloroquine-induced scratching, establishing these neurons as a central substrate sufficient for itch suppression by pain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are supported by behavioral data in Figure 5\u2014figure supplement 2A-B showing complete suppression of scratching. This parallels the findings with spinal Tacr1 neuron activation and identifies the PBN-SL as a critical node in the pain-itch interaction circuit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "66fcc1bc-6681-4714-93d0-73e79263380e",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Silencing PBN-SL Tacr1 neurons using tetanus toxin almost completely eliminates normal behavioral responses to sustained painful stimuli (clip assay, AITC), with mice effectively ignoring these normally salient noxious inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are strongly supported by behavioral data in Figure 5K-O showing dramatic reduction in pain behaviors with TeNT-mediated silencing. The qualitative observation that mice ignore painful stimuli (C65) is particularly striking and supports the necessity of this circuit for pain perception. This is a critical loss-of-function experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "e056bf33-6e6e-407e-9973-c477ece0fc88",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "A spinoparabrachial circuit involving Tacr1-expressing neurons controls responses to persistent pain, with spinal Tacr1 neurons providing somatotopic information and PBN-SL Tacr1 neurons driving affective aspects and modulating the magnitude of behavioral responses without encoding location.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C79 represent the main conclusions synthesizing the anatomical, functional, and behavioral data. The circuit is well-characterized through multiple complementary approaches. The distinction between spinal neurons encoding location (C28) and PBN neurons driving affect (C79) is supported by the differential behavioral phenotypes. The connection to historical predictions (C68-C69) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "fc58ef4a-b973-44f4-b955-6c186150f2d3",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Recent studies confirm that spinal Tacr1 neurons are diverse, with different genetic strategies and mouse lines targeting distinct subsets that can elicit different sensations (pain vs. itch), though all implicate PBN-SL projections in nocifensive responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are supported by citations to concurrent studies (Sheahan et al. 2020, Choi et al. 2020). The interpretation that different approaches target different subsets (C73) is reasonable given the divergent behavioral outcomes. This contextualizes the current findings within the broader literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "9278bbcb-0d70-4f01-87ea-3e20ed51b432",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Activation of PBN-SL Tacr1 neurons in the absence of peripheral input induces hypervigilance with exaggerated responses to gentle touch, while silencing these neurons causes mice to ignore sustained painful stimuli like the clip assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78 and C80 highlight key behavioral observations from the gain- and loss-of-function experiments. C78 is supported by behavioral observations of heightened reactivity, and C80 is supported by data in Figure 5K-M. These observations are critical for understanding the role of PBN-SL neurons in pain perception.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "fb0047e4-9656-4766-9b57-efb41e81c895",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background knowledge claims about somatosensory organization and pain dimensions are established in the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C29-C31 represent established knowledge supported by appropriate citations (Basbaum et al. 2009, Bushnell et al. 2013, Todd 2010). These provide necessary context for interpreting the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    },
+    {
+      "id": "4a9062cc-c033-448a-9241-f17c97628a26",
+      "content_id": "f4ed5fda-fa94-4c7e-b94a-7095f3d7d905",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "A concurrent study by the Sun lab demonstrated that inhibiting PBN-SL Tacr1 neurons reduces behavioral responses to peripheral inflammation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by citation to Deng et al. 2020. This independent confirmation strengthens the conclusions about the role of PBN-SL Tacr1 neurons in pain processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:37.031771Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d1052a08-6025-4d4e-97b1-0df2545f37fe",
+      "result_id": "b834cffa-8c42-4088-b984-0c3997413bc6"
+    },
+    {
+      "claim_id": "4a0cd6b1-c8a5-4c32-b3d7-af375d5d47c5",
+      "result_id": "b834cffa-8c42-4088-b984-0c3997413bc6"
+    },
+    {
+      "claim_id": "ac29e12b-1a3f-444f-9519-83a9edc19943",
+      "result_id": "b834cffa-8c42-4088-b984-0c3997413bc6"
+    },
+    {
+      "claim_id": "308f6e63-16d7-46ac-adaf-6db08b521c41",
+      "result_id": "b834cffa-8c42-4088-b984-0c3997413bc6"
+    },
+    {
+      "claim_id": "daf32a64-f027-4577-b161-793762f7854c",
+      "result_id": "73828ae9-57e6-4d09-bd3f-c8876393304b"
+    },
+    {
+      "claim_id": "d9433cc9-e605-4cc9-83c9-e6e9716b5d3b",
+      "result_id": "73828ae9-57e6-4d09-bd3f-c8876393304b"
+    },
+    {
+      "claim_id": "a458004c-5832-4650-9c0f-39d1f9bf92a7",
+      "result_id": "694043e9-2450-4014-86fe-1ec27e3ef5d2"
+    },
+    {
+      "claim_id": "f6ff6164-5f30-4d9d-aad7-e894ef6ea4bd",
+      "result_id": "694043e9-2450-4014-86fe-1ec27e3ef5d2"
+    },
+    {
+      "claim_id": "4ae1e179-7383-4dd4-8674-cce75f3a4c6a",
+      "result_id": "694043e9-2450-4014-86fe-1ec27e3ef5d2"
+    },
+    {
+      "claim_id": "210dede8-652b-42f4-840d-f81bdf772f3d",
+      "result_id": "62d392af-0ae7-4d2e-8e37-a61e72f18e52"
+    },
+    {
+      "claim_id": "5c232ac6-f20b-45f0-89ca-bb692e933fe9",
+      "result_id": "62d392af-0ae7-4d2e-8e37-a61e72f18e52"
+    },
+    {
+      "claim_id": "3e559c1f-424e-47e2-a75f-270e8734d769",
+      "result_id": "62d392af-0ae7-4d2e-8e37-a61e72f18e52"
+    },
+    {
+      "claim_id": "2578486e-3f70-4f31-a0aa-ecfde1730a11",
+      "result_id": "62d392af-0ae7-4d2e-8e37-a61e72f18e52"
+    },
+    {
+      "claim_id": "f00d7086-25e3-4ea0-af88-f27a197d38e7",
+      "result_id": "3940e89e-b7b1-45d6-a6ca-ac3ac3b770ba"
+    },
+    {
+      "claim_id": "aa7123b7-9fc6-4a2d-99b4-09080c2ddd34",
+      "result_id": "3940e89e-b7b1-45d6-a6ca-ac3ac3b770ba"
+    },
+    {
+      "claim_id": "149869c5-b502-4e4e-b9b5-fd30c149dc5a",
+      "result_id": "3940e89e-b7b1-45d6-a6ca-ac3ac3b770ba"
+    },
+    {
+      "claim_id": "55bf21cc-c28e-4ae9-939b-d143a1f50688",
+      "result_id": "3940e89e-b7b1-45d6-a6ca-ac3ac3b770ba"
+    },
+    {
+      "claim_id": "7d6f442f-e62c-4f66-ba7f-712038ea4609",
+      "result_id": "3940e89e-b7b1-45d6-a6ca-ac3ac3b770ba"
+    },
+    {
+      "claim_id": "12252a46-02cd-415f-a55a-52876e0e59a7",
+      "result_id": "43f0034c-ec98-4b84-aef4-65ddcaf4320a"
+    },
+    {
+      "claim_id": "b33773ca-fe51-4b3d-8af0-866fc5b7847f",
+      "result_id": "a8ae9266-3a8f-406f-99e3-e28568862231"
+    },
+    {
+      "claim_id": "0ce16826-77b3-44c3-b6b2-9af1a03df918",
+      "result_id": "a8ae9266-3a8f-406f-99e3-e28568862231"
+    },
+    {
+      "claim_id": "4ad9dce3-73a3-4ef6-a3f7-57bbe215775b",
+      "result_id": "a8ae9266-3a8f-406f-99e3-e28568862231"
+    },
+    {
+      "claim_id": "607e71ce-903f-4519-ba05-e7799f8ca31b",
+      "result_id": "a8ae9266-3a8f-406f-99e3-e28568862231"
+    },
+    {
+      "claim_id": "4dc19958-1166-4d93-87a5-8c5253e852e5",
+      "result_id": "a8ae9266-3a8f-406f-99e3-e28568862231"
+    },
+    {
+      "claim_id": "1238b1de-fcdc-4886-80a9-f8272b1b46c7",
+      "result_id": "a8ae9266-3a8f-406f-99e3-e28568862231"
+    },
+    {
+      "claim_id": "348638d9-cf3b-4db5-b588-ac8f76e3b273",
+      "result_id": "a8ae9266-3a8f-406f-99e3-e28568862231"
+    },
+    {
+      "claim_id": "a023d28d-e389-4975-a0e7-afb1e76dd297",
+      "result_id": "a8ae9266-3a8f-406f-99e3-e28568862231"
+    },
+    {
+      "claim_id": "b17dcb6d-beb0-44d0-afde-d8abcab8d0b7",
+      "result_id": "2283cda7-bb99-4653-b4e0-4b33bd6f81be"
+    },
+    {
+      "claim_id": "191f7350-3794-4288-b776-c7d1ab8e59a4",
+      "result_id": "2283cda7-bb99-4653-b4e0-4b33bd6f81be"
+    },
+    {
+      "claim_id": "ac83fbc4-6c53-477b-9de8-5061ae85740e",
+      "result_id": "2283cda7-bb99-4653-b4e0-4b33bd6f81be"
+    },
+    {
+      "claim_id": "140d47be-f60f-4604-aec3-5d06aec4ba92",
+      "result_id": "690a602e-7373-4c2b-8d8b-b5aa907b57f2"
+    },
+    {
+      "claim_id": "8193a4a6-4b31-442c-af1f-cd76f2f617dd",
+      "result_id": "690a602e-7373-4c2b-8d8b-b5aa907b57f2"
+    },
+    {
+      "claim_id": "89c3e779-2bd1-4f84-882b-c8b521ce5e8b",
+      "result_id": "690a602e-7373-4c2b-8d8b-b5aa907b57f2"
+    },
+    {
+      "claim_id": "0b6282d9-9817-4458-adb8-5ec4c3be5518",
+      "result_id": "690a602e-7373-4c2b-8d8b-b5aa907b57f2"
+    },
+    {
+      "claim_id": "60971f63-0cb2-4479-9558-9282551ebeb2",
+      "result_id": "b35d0d3a-7cd4-4eda-a85d-f0a0af3e9d56"
+    },
+    {
+      "claim_id": "e5291bd1-2cb5-472a-854d-76d8e819bbbd",
+      "result_id": "b35d0d3a-7cd4-4eda-a85d-f0a0af3e9d56"
+    },
+    {
+      "claim_id": "50ffc145-da71-4f7b-8e28-5c2f7e401d27",
+      "result_id": "b35d0d3a-7cd4-4eda-a85d-f0a0af3e9d56"
+    },
+    {
+      "claim_id": "60b951e8-a71d-4f15-9568-833f3d5c871b",
+      "result_id": "2aa403e1-7536-43e7-8757-a10d7d758d6b"
+    },
+    {
+      "claim_id": "34b7d3f3-d902-4c54-b26a-61d2bb91827c",
+      "result_id": "2aa403e1-7536-43e7-8757-a10d7d758d6b"
+    },
+    {
+      "claim_id": "537dc7a7-d90e-4ff4-aace-c3489adc4067",
+      "result_id": "2aa403e1-7536-43e7-8757-a10d7d758d6b"
+    },
+    {
+      "claim_id": "2da54941-e9d4-436e-808b-9811a5143a81",
+      "result_id": "2aa403e1-7536-43e7-8757-a10d7d758d6b"
+    },
+    {
+      "claim_id": "f86a21a8-9267-4555-8eb8-24c49dba9b9b",
+      "result_id": "2aa403e1-7536-43e7-8757-a10d7d758d6b"
+    },
+    {
+      "claim_id": "f7acacce-1e4c-4292-b7f3-479754967057",
+      "result_id": "2aa403e1-7536-43e7-8757-a10d7d758d6b"
+    },
+    {
+      "claim_id": "8ece2d9f-0d74-4dc3-a460-41bf0164b506",
+      "result_id": "2aa403e1-7536-43e7-8757-a10d7d758d6b"
+    },
+    {
+      "claim_id": "3c3353e5-dc11-469f-8f7a-0b46c784687d",
+      "result_id": "2aa403e1-7536-43e7-8757-a10d7d758d6b"
+    },
+    {
+      "claim_id": "a188ab9c-5c3f-4534-aab1-891c8e576822",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "a273acca-544c-4b10-bbc3-a302e3c009e3",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "d07ae15a-5d68-461e-abc6-06337b3706bf",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "1ce80e5f-be13-4e0c-8e3e-e273a3546fd2",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "a09858eb-7702-4451-a894-6db97601e432",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "9f701efd-9313-4fb8-b525-2f3a8c002715",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "1c0f8db7-3a0b-4b08-9c8b-41cf71f3c30b",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "4525c63e-e72b-4bd3-b1e3-39e40d503f7c",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "093ebc39-3904-44d1-8ac8-0d75d7ec74f7",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "700cb30e-b729-4ee0-a540-ecc4d338aebf",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "decbf73a-7bf0-43d1-9f82-3da821d316b1",
+      "result_id": "a21ff484-52df-4699-b0ad-8677122ef8ac"
+    },
+    {
+      "claim_id": "4d57aa72-5c60-4370-b04b-81ebe490b046",
+      "result_id": "747e14bf-bb6c-4016-9e72-cf978e54423e"
+    },
+    {
+      "claim_id": "18b73df2-616f-462f-80ae-e26e5f7df806",
+      "result_id": "747e14bf-bb6c-4016-9e72-cf978e54423e"
+    },
+    {
+      "claim_id": "4c1e4dab-89b7-454b-873c-199f810686e1",
+      "result_id": "66fcc1bc-6681-4714-93d0-73e79263380e"
+    },
+    {
+      "claim_id": "13687d81-230d-4156-8191-4c6121b10c9e",
+      "result_id": "66fcc1bc-6681-4714-93d0-73e79263380e"
+    },
+    {
+      "claim_id": "4bd17fbf-286b-44df-b5cf-01e82e5e43c3",
+      "result_id": "66fcc1bc-6681-4714-93d0-73e79263380e"
+    },
+    {
+      "claim_id": "d3307d8e-283c-4d05-9ec9-63876fbca2ef",
+      "result_id": "e056bf33-6e6e-407e-9973-c477ece0fc88"
+    },
+    {
+      "claim_id": "ebbf4491-ffa4-4a43-aa1e-715103012eb9",
+      "result_id": "e056bf33-6e6e-407e-9973-c477ece0fc88"
+    },
+    {
+      "claim_id": "a6a945b6-7383-47e3-866e-687d37569ece",
+      "result_id": "e056bf33-6e6e-407e-9973-c477ece0fc88"
+    },
+    {
+      "claim_id": "4e46aea6-5131-4ccb-b38f-4d38c8da99a5",
+      "result_id": "e056bf33-6e6e-407e-9973-c477ece0fc88"
+    },
+    {
+      "claim_id": "3d810173-8313-4da3-a57a-3b05e5b3dba2",
+      "result_id": "e056bf33-6e6e-407e-9973-c477ece0fc88"
+    },
+    {
+      "claim_id": "762d7206-d79b-4f9c-a9c0-fca40b0943c1",
+      "result_id": "e056bf33-6e6e-407e-9973-c477ece0fc88"
+    },
+    {
+      "claim_id": "7410af50-84e2-4194-bf9d-54871182088e",
+      "result_id": "e056bf33-6e6e-407e-9973-c477ece0fc88"
+    },
+    {
+      "claim_id": "3b26b317-4d93-4603-a74f-1817005d8c67",
+      "result_id": "e056bf33-6e6e-407e-9973-c477ece0fc88"
+    },
+    {
+      "claim_id": "0bb17165-1e2a-4d06-9583-b970a82526e0",
+      "result_id": "fc58ef4a-b973-44f4-b955-6c186150f2d3"
+    },
+    {
+      "claim_id": "ab5a885b-a5c2-4867-a338-ad6c57bca94d",
+      "result_id": "fc58ef4a-b973-44f4-b955-6c186150f2d3"
+    },
+    {
+      "claim_id": "73a6555c-41a9-4751-98f0-b74462166c38",
+      "result_id": "fc58ef4a-b973-44f4-b955-6c186150f2d3"
+    },
+    {
+      "claim_id": "9d418689-7fc1-422b-8476-f3ccc4a15c43",
+      "result_id": "fc58ef4a-b973-44f4-b955-6c186150f2d3"
+    },
+    {
+      "claim_id": "68cd34d3-5f9d-478c-947f-2f6f1bace9d5",
+      "result_id": "9278bbcb-0d70-4f01-87ea-3e20ed51b432"
+    },
+    {
+      "claim_id": "b02f7acd-97a7-48a9-b66d-90fd3cfc1bf4",
+      "result_id": "9278bbcb-0d70-4f01-87ea-3e20ed51b432"
+    },
+    {
+      "claim_id": "9834fefd-6144-495f-98c8-04059da5e0fb",
+      "result_id": "fb0047e4-9656-4766-9b57-efb41e81c895"
+    },
+    {
+      "claim_id": "c8869a78-da3f-43b3-9072-e9e7d368cbf6",
+      "result_id": "fb0047e4-9656-4766-9b57-efb41e81c895"
+    },
+    {
+      "claim_id": "4e14cfde-5bb3-4bbb-81a4-abee27862091",
+      "result_id": "fb0047e4-9656-4766-9b57-efb41e81c895"
+    },
+    {
+      "claim_id": "701e78a8-f8fe-4871-8d50-5ec8ef8f8317",
+      "result_id": "fb0047e4-9656-4766-9b57-efb41e81c895"
+    },
+    {
+      "claim_id": "5177a828-2a1d-4a2e-9830-e86b08725fe5",
+      "result_id": "4a9062cc-c033-448a-9241-f17c97628a26"
+    }
+  ],
+  "comparisons": []
+}

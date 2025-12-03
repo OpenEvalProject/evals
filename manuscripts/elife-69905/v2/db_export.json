@@ -1,0 +1,1754 @@
+{
+  "submission": {
+    "id": "6330fa74-9312-407b-8607-322b6bde4a5a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:44:43.799811Z",
+    "updated_at": "2025-12-03T07:44:43.799811Z"
+  },
+  "content": [
+    {
+      "id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "submission_id": "6330fa74-9312-407b-8607-322b6bde4a5a",
+      "content_type": "manuscript",
+      "content_text": "# Phase response analyses support a relaxation oscillator model of locomotor rhythm generation in Caenorhabditis elegans\n\n## Authors\n\n- Hongfei Ji<sup>1</sup> ([ORCID: 0000-0001-9617-6411](https://orcid.org/0000-0001-9617-6411))\n- Anthony D Fouad<sup>1</sup> ([ORCID: 0000-0002-4677-2968](https://orcid.org/0000-0002-4677-2968))\n- Shelly Teng<sup>1</sup>\n- Alice Liu<sup>1</sup>\n- Pilar Alvarez-Illera<sup>1</sup>\n- Bowen Yao<sup>1</sup>\n- Zihao Li<sup>1</sup> ([ORCID: 0000-0003-4304-8322](https://orcid.org/0000-0003-4304-8322))\n- Christopher Fang-Yen<sup>1</sup> ([ORCID: 0000-0002-4568-3218](https://orcid.org/0000-0002-4568-3218)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering, School of Engineering and Applied Science, University of Pennsylvania Philadelphia United States\n2. Department of Neuroscience, Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeural circuits coordinate with muscles and sensory feedback to generate motor behaviors appropriate to an animal\u2019s environment. In C. elegans, the mechanisms by which the motor circuit generates undulations and modulates them based on the environment are largely unclear. We quantitatively analyzed C. elegans locomotion during free movement and during transient optogenetic muscle inhibition. Undulatory movements were highly asymmetrical with respect to the duration of bending and unbending during each cycle. Phase response curves induced by brief optogenetic inhibition of head muscles showed gradual increases and rapid decreases as a function of phase at which the perturbation was applied. A relaxation oscillator model based on proprioceptive thresholds that switch the active muscle moment was developed and is shown to quantitatively agree with data from free movement, phase responses, and previous results for gait adaptation to mechanical loadings. Our results suggest a neuromuscular mechanism underlying C. elegans motor pattern generation within a compact circuit.\n\n## Introduction\n\nAnimal display locomotor behaviors such as crawling, walking, swimming, or flying via rhythmic patterns of muscle contractions and relaxations. In many animals, motor rhythms originate from networks of central pattern generators (CPGs), neuronal circuits capable of generating rhythmic outputs without rhythmic input (Cohen and Wallen, 1980; Grillner, 2003; Kiehn, 2011; Kristan and Calabrese, 1976; Marder and Calabrese, 1996; Pearce and Friesen, 1984; Yu et al., 1999). CPGs typically generate rhythms through reciprocal inhibitory synaptic interactions between two populations. In vertebrates, motor rhythms arise from half-center oscillator modules in the spinal cord (Marder and Calabrese, 1996).\n\nAlthough isolated CPGs can produce outputs in the absence of sensory input, in the intact animal sensory feedback plays a critical role in coordinating motor rhythms across the body and modulating their characteristics (Friesen, 2009; Grillner and Wall\u00e9n, 2002; Mullins et al., 2011; Pearson, 2004; Wen et al., 2012). Sensory feedback allows animals to adapt locomotor patterns to their surroundings (Andersson et al., 1981; Brodfuehrer and Friesen, 1986) and adapt to unexpected perturbations (Ekeberg and Grillner, 1999). In leeches (Cang et al., 2001; Cang and Friesen, 2000) and Drosophila (Akitake et al., 2015; Mendes et al., 2013), specialized proprioceptive neurons and sensory receptors in body muscles detect sensory inputs to regulate and coordinate the centrally generated motor patterns. In limbed vertebrates, proprioceptors located in muscles, joints, and/or skin detect body movements and interact with premotor interneurons to coordinate limb movements (Pearson, 2004). Sensory inputs induced by electric stimulation of receptor cells (Yu and Friesen, 2004) or by mechanical perturbation of body segments (Grillner et al., 1981) can entrain an animal\u2019s motor behavior to imposed patterns, demonstrating the flexibility of motor systems in responding to feedback.\n\nAnimal movements are driven not only by active muscle contractions but also by passive mechanical forces including elastic recoil of muscles and other body structures, internal damping forces, and forces from the interaction with the external environment. Efficient locomotion in vertebrates depends on storage of elastic energy in tendons and muscles (Roberts and Azizi, 2011). In insects, elasticity in the leg joint plays an important role in generating forces for walking and jumping (Ache and Matheson, 2013). A comprehensive understanding of animal locomotion should therefore encompass not only neural activity, muscle activity, and sensory feedback, but also biomechanical forces within the animal\u2019s body and between the animal and its environment (Figure 1A; Borgmann et al., 2009; Grillner and Wall\u00e9n, 2002; Kiehn, 1998).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig1-v2.jpg)\n\n**Figure 1.:** (A) Motor neurons generate neuronal signals to control the activation of body wall muscles (BWM), which generates movement subject to internal and external environmental constraints. Sensory input provides feedback about body position and the environment. (B,C) Two possible models for locomotory rhythm generation in C. elegans. (B) In a reflex loop model, sensory neurons (SN) detect body postures and excite motor neurons (MN) to activate body wall muscles. (C) In a central pattern generator (CPG) model, network of motor neurons generates basic rhythmic patterns that are transmitted to body wall muscles while sensory feedback modulates the CPG rhythm. Diagrams (B-C)\u00a0are adapted from Figure 1 in Marder and Bucher, 2001.\n\nHere, we study mechanisms of locomotor rhythm generation and its modulation by sensory feedback in the nematode Caenorhabditis elegans. With its easily quantifiable behavior (Croll, 1971), well-mapped nervous system (Cook et al., 2019; White et al., 1986), genetic manipulability (Bargmann, 1998; Brenner, 1974; Hobert, 2003), and optical transparency, this worm is a unique model for obtaining an integrative understanding of locomotion.\n\nC. elegans forward locomotion consists of anterior-to-posterior dorsoventral undulations (Croll, 1971). These movements are mediated by a neuromuscular circuit consisting of interneurons, excitatory cholinergic motor neurons, inhibitory GABAergic motor neurons, and body wall muscles. Laser ablation studies have shown that the cholinergic B-type motor neurons are required for forward locomotion (Chalfie et al., 1985). The GABAergic D-type motor neurons provide dorsoventral cross-inhibition to the body wall muscles and are essential for maintaining normal wave shape and frequency during forward locomotion (Deng et al., 2021; McIntire et al., 1993). A set of premotor interneurons (AVB, PVC, AVA, AVD, and AVE) regulate forward and reverse movements (Chalfie et al., 1988; Driscoll and Kaplan, 1997; Von Stetina et al., 2006). Ablation of all premotor interneurons or the D-type motor neurons does not deprive C. elegans of the ability to move forward (Chalfie et al., 1985; Gao et al., 2018; Kawano et al., 2011), suggesting that a network consisting of excitatory motor neurons and muscles may be sufficient to generate rhythmicity. Optogenetic and lesion experiments have shown that multiple oscillators exist in the ventral nerve cord (Fouad et al., 2018). However, the mechanisms that give rise to these oscillators are still poorly understood.\n\nProprioceptive feedback is crucial for C. elegans motor behavior. Studies have identified several neuron classes that have proprioceptive roles. The B-type motor neurons mediate proprioceptive coupling between anterior to posterior bending during forward locomotion (Wen et al., 2012). The SMDD motor neurons, localized at the head, have been identified as proprioceptive regulators of head steering during locomotion (Yeon et al., 2018). Both the B-type motor neurons and the SMDD head motor neurons have long asynaptic processes hypothesized to have proprioceptive function (White et al., 1986) and have been suggested as candidate locomotor CPG elements (Kaplan et al., 2020). In addition, two types of neurons, the DVA and PVD interneurons, have also been described as having proprioceptive roles in the regulation of worm\u2019s body bend movement. The cell DVA has been shown to exhibit proprioceptive properties with a dependence on a mechanosensitive channel, TRP-4, which acts as a stretch receptor to regulate the body bend amplitude during locomotion (Li et al., 2006). In another study, body bending was shown to induce local dendritic calcium transients in PVD and dendritic release of a neuropeptide encoded by nlp-12, which appears to regulate the amplitude of body movements (Tao et al., 2019).\n\nTo experimentally probe mechanisms of rhythmic motor generation, including the role of proprioceptive feedback, we measured the phase response curve (PRC) upon transient optogenetic inhibition of the head muscles. We found that the worms displayed a biphasic, sawtooth-shaped PRC with sharp transitions from phase delay to advance.\n\nWe used these findings to develop a computational model of rhythm generation in the C. elegans motor circuit in which a relaxation-oscillation process, with switching based on proprioceptive feedback, underlies the worm\u2019s rhythmic dorsal-ventral alternation. Computational models for C. elegans motor behavior have long been an important complement to experimental approaches, since an integrative understanding of locomotion requires consideration of neural, muscular, and mechanical degrees of freedom, and are often tractable only by modeling (Boyle et al., 2012; Bryden and Cohen, 2008; Denham et al., 2018; Izquierdo and Beer, 2018; Johnson et al., 2021; Karbowski et al., 2008; Kunert et al., 2017; Olivares et al., 2021). We sought to develop a phenomenological model to describe an overall mechanism of rhythm generation but not the detailed dynamics of specific circuit elements. We aimed to incorporate biomechanical constraints of the worm\u2019s body and its environment (Fang-Yen et al., 2010; Gray and Lissmann, 1964; Wallace, 1968), as well as account for how sensory feedback is incorporated. To improve predictive power, we aimed to minimize the number of free parameters used in the model. Finally, we sought to optimize and test this model with new experiments as well as with published findings.\n\nOur model reproduces the observed PRC and describes the locomotory dynamics around optogenetic inhibitions in a manner that closely fits our experimental observations. Our model also agrees with results on gait adaptation to external load and the asymmetry in time-dependent curvature patterns of undulating worms. Our experimental findings and computational model together yield insights into how C. elegans generates rhythmic locomotion and modulates them depending on the environment.\n\n## Results\n\n### C. elegans forward locomotion exhibits a stable and nonsinusoidal limit cycle\n\nTo gain insight into wave generation, we first sought to examine the quantitative behavioral characteristics of worms during forward locomotion. First, we measured the undulatory dynamics of body bending by computing the time-varying curvature along the centerline of the body (Fang-Yen et al., 2010; Leifer et al., 2011; Pierce-Shimomura et al., 2008; Wen et al., 2012) from analysis of dark field image sequences of worms exhibiting forward locomotion. In order to quantitatively treat the drag between the body and its environment, we examined locomotion of worms in dextran solutions of known viscosity (see Appendix; Fang-Yen et al., 2010). The normalized body coordinate is defined by the distance along the body centerline divided by the body length (Figure 2A). The curvature $\u03ba$ at each point along the centerline of the body is the reciprocal of local radius of curvature (Figure 2A), with a positive (negative) curvature representing ventral (dorsal) bending. We further define the dimensionless or scaled curvature $K=\u03ba\u00b7L$, where $L$ is the length of the worm. Using this metric, we quantified the worm\u2019s forward movement by calculating scaled curvature as a function of body coordinate and time (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig2-v2.jpg)\n\n**Figure 2.:** (A) Worm undulatory dynamics are quantified by the time-varying curvature along the body. The normalized body coordinate is defined by the fractional distance along the centerline (head = 0, tail = 1). The curvature $\u03ba$ is the reciprocal of the local radius of curvature with positive and negative values representing dorsal and ventral curvature, respectively. (B) Curvature as a function of time and body coordinate during forward movement in a viscous liquid. Body bending curvature $K$ is represented using the nondimensional product of $\u03ba$ and body length $L$. (C) Curvature (black) in the anterior region (average over body coordinate 0.1-0.3) and the time derivative of curvature (dashed purple). Red circles mark four representative phases (0, $\\pi/2$, $\\pi$, and $3\\pi/2$). The curve is an average of 5041 locomotory cycles from 116 worms. (D) Phase portrait representation of the oscillatory dynamics of the anterior region, showing the curvature and the time derivative of the curvature parameterized by time. Images of worm correspond to the phases marked in (C). Arrow indicates clockwise movement over time. Dash-boxed region of the worm body indicates the 0.1\u20130.3 body coordinates. h: head; t: tail; v: ventral side; d: dorsal side. Gray curves are individual locomotory cycles from freely moving worms (10 randomly selected cycles are shown). (Inset) waveform of the scaled active muscle moment, estimated by equation $M_{a}=K+\\tau_{u}K\u02d9$. Both curves were computed from the data used in\u00a0(C).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig2-figsupp1-v2.jpg)\n\nWe used this behavioral data to generate phase portraits, geometric representations of a dynamical system\u2019s trajectories over time (Izhikevich, 2007), in which the time derivative of the curvature is plotted against the curvature. If the curvature were sinusoidal over time, as it is often modeled in slender swimmers (Fang-Yen et al., 2010; Gray, 1933; Guo and Mahadevan, 2008; Niebur and Erd\u00f6s, 1991), the time derivative of curvature would also be sinusoidal, with a phase shift of $\\pi/4$ radians relative to the curvature, and the resulting phase portrait would be symmetric about both the $K$ and $dK/dt$ axes. Instead, we found that the phase portrait of the bending movement in the worm\u2019s head region (0.1\u20130.3 body coordinate) during forward locomotion is in fact non-ellipsoidal and strongly asymmetric with respect to reflection across the $K$ or $dK/dt$ axes (Figure 2D). Plots of both the phase portrait (Figure 2D) and the time dependence (Figure 2C) show that $K$ and $dK/dt$ are strongly non-sinusoidal.\n\nIn addition to the head, other parts of the worm\u2019s body also display nonsinusoidal bending movements (Figure 2\u2014figure supplement 1). In this paper, we focus on curvature dynamics of the worm\u2019s head region (0.1\u20130.3 body coordinate) where the bending amplitude is largest and the nonsinusoidal features are most prominent (Figure 2\u2014figure supplement 1).\n\nWe asked whether the phase portrait represents a stable cycle, that\u00a0is whether the system tends to return to the cycle after fluctuations or perturbations away from it. To this end, we analyzed the recovery after brief optogenetic muscle inhibition. We used a closed-loop system for optically targeting specific parts of the worm (Fouad et al., 2018; Leifer et al., 2011) to apply brief pulses of laser illumination (0.1 s duration, 532 nm wavelength) to the heads of worms expressing the inhibitory opsin NpHR in body wall muscles (via the transgene Pmyo-3::NpHR). Simultaneous muscle inhibition on both sides causes C. elegans to straighten due to internal elastic forces (Fang-Yen et al., 2010). Brief inhibition of the head muscles during forward locomotion was followed by a maximum degree of paralysis approximately 0.3 s after the end of the pulse, then a resumption of undulation (Figure 3A,B; Video 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig3-v2.jpg)\n\n**Figure 3.:** (A) Images of a transgenic worm (Pmyo-3::NpHR) perturbed by a transient optogenetic muscle inhibition in the head during forward locomotion. Green shaded region indicates the 0.1 s laser illumination interval. h: head; t: tail; v: ventral side; d: dorsal side. (B) Effect of muscle inhibition on mean absolute curvature of the head. Black curve represents control ATR+ (no light) group (3523 measurements using 337 worms). Brown curve represents control ATR- group (2072 measurements using 116 worms). Red curve represents ATR+ group (1910 measurements using 337 worms). Green bar indicates 0.1 s light illumination interval starting at $t=0$. (C-E) Perturbed dynamics around light pulses occurring in the phase range $[0,\\pi/6]$. (C) Kymogram of time-varying curvature $K$ around a 0.1 s inhibition (green dashed box). (D) Mean curvature dynamics around the inhibitions (green bar, aligned at $t=0$) from ATR+ group (red curve, 11 trials using 4 worms) and control ATR+ (no light) group (black curve, eight trials using three worms). Gray curves are individual trials from ATR+ group (10 randomly selected trials are shown). (E) Mean phase portrait graphs around the inhibitions (green line) from ATR+ group (same trials as in D) and control group (ATR+, no light, 3998 trials using 337 worms). Gray curves are individual trials from ATR+ group. (F-H) Similar to\u00a0(C-E), for phase range $[\\pi/3,\\pi/2]$. (I-K) Similar to (C-E), for phase range $[2\\pi/3,5\\pi/6]$. (L) PRC from optogenetic inhibition experiments (ATR+ group, 991 trials using 337 worms, each point indicating a single illumination of one worm). The curve was obtained via a moving average along the x-axis with $0.16\\pi$ in bin width and the filled area represents 95% confidence interval within the bin. (M) A 2-dimensional histogram representation of the PRC using the same data. The histogram uses 25 bins for both dimensions, and the color indicates the number of data points within each rectangular bin.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Individual dynamics were grouped into different bins by binning their initial amplitude at $t=0$. In the figure, each trace represents the collective amplitude dynamics of the corresponding group. Distance $d$ is defined such that $d=-1$ at the origin and $d=0$ on the limit cycle. The legend indicates initial amplitude range of each bin and the corresponding number of individual traces within the bin.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** On the isochron map, a point on the normal cycle (black trajectory) and all other points off the normal cycle that share the same color form a manifold representing states having an equal phase (indicated by the color bar). On the vector field, an arrow represents the phase state $(dK/dt,d(\u03beK\u02d9)/dt)$ which determines the time derivative of the state of a trajectory. Both maps were computed from the results of experiments with Pmyo-3::NpHR worms.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Curve was obtained from 414 trials of transient illuminations on head using 116 worms. Each point represents a single illumination (0.1 s duration, 532 nm wavelength) of one worm. Filled area represents 95% confidence interval.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Curve was obtained from 150 trials of transient inhibitions of head muscles using 115 worms. Each point represents a single illumination (0.055 s duration, 532 nm wavelength) of one worm. Filled area represents 95% confidence interval.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Anterior = 0.1-0.3; middle = 0.4-0.6; posterior = 0.6-0.8 along the worm body. (Upper) Schematics illustrating the selected spatial regions for optogenetic inhibition (Green shaded area) and phase response analysis (dashed box). (A\u2013C) PRCs induced by muscle inhibition of the anterior region (991 trials using 337 worms), measured from (A) anterior, (B) middle, and (C) posterior regions, respectively. (D\u2013F) PRCs induced by muscle inhibition of the middle region (687 trials using 276 worms), measured from (D) anterior, (E) middle, and (F) posterior regions, respectively. (G\u2013I) PRCs induced by muscle inhibition of the posterior region (235 trials using 76 worms), measured from (G) anterior, (H) middle, and (I) posterior regions, respectively. For all the above plots, each point indicates a single illumination (0.1 s duration, 532 nm wavelength) of one worm. Experimental curves were obtained using a moving average along the x-axis with 0.16\u03c0 in bin width. Filled area of each curve represents 95% confidence interval with respect to each bin of data points.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Curve was obtained from 270 trials of transient inhibitions of cholinergic neurons in the head region using 135 worms. Each point represents a single illumination (0.055 s duration, 532 nm wavelength) of one worm. Filled area represents 95% confidence interval.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Curve was obtained from 551 trials of transient inhibitions of the B-type motor neurons in the head region using 160 worms. Each point represents a single illumination (0.055 s duration, 532 nm wavelength) of one worm. Filled area represents 95% confidence interval.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig3-figsupp8-v2.jpg)\n\n**Figure 3\u2014figure supplement 8.:** Curve was obtained from 259 trials of transient inhibitions of head muscles using 192 worms. Each point represents a single illumination (0.1 s duration, 532 nm wavelength) of one worm. Filled area represents 95% confidence interval.\n\n![Video 1.](https://cdn.elifesciences.org/articles/69905/elife-69905-video1.mp4.jpg)\n\n**Video 1.:** Green-shaded region indicates timing and location of illumination.\n\nTo quantify the recovery dynamics, we defined a normalized deviation $d$ describing the state of the system relative to the phase portrait of normal oscillation (see Appendix), such that $d=\u22121$\u00a0at the origin,\u00a0$d=0$ at the limit cycle, and $d>0$ outside the limit cycle. We found that the deviation following optogenetic perturbation (Figure 3\u2014figure supplement 1) decays toward zero regardless of the initial deviation from the normal cycle, indicating that the worm tends to return to its normal oscillation after a perturbation. These results show that C. elegans head oscillation during forward locomotion is stable under optogenetic perturbation. The dynamics of these perturbed worms also allow us to reconstruct the phase isochrons and vector flow fields (Figure 3\u2014figure supplement 2) of the worm\u2019s head oscillation, two other important aspects of an oscillator (see Appendix).\n\nTaken together, these results show that during forward locomotion, head oscillation of a worm constitutes a stable oscillator containing a nonsinusoidal limit cycle.\n\n### Transient optogenetic inhibition of head muscles yields a slowly rising, rapidly falling phase response curve\n\nThe phase response curve (PRC) describes the change in phase of an oscillation induced by a perturbation as a function of the phase at which the perturbation is applied, and is often used to characterize biological and nonbiological oscillators (Izhikevich, 2007; Pietras and Daffertshofer, 2019; Schultheiss et al., 2011). We performed a phase response analysis of the worm\u2019s locomotion upon transient optogenetic inhibitions.\n\nUsing data from 991 illuminations (each 0.1 s in duration) in 337 worms, we analyzed the animals\u2019 recovery from transient paralysis as a function of the phase at which the illumination occurred. We define the phase such that it equals to zero at the point of maximum ventral bending (Figure 3D). When inhibition occurred with phase in the interval $[0,\\pi/6]$, the head typically straightened briefly and then continued the previous bend, resulting in a phase delay for the oscillation (Figure 3C\u2013E). When inhibition occurred with phase in the interval $[\\pi/3,\\pi/2]$, the head usually appeared to discontinue the previous bend movement, which resulted in a small phase advance (Figure 3F\u2013H). When inhibition occurred with phase in the interval $[2\\pi/3,5\\pi/6]$, the head response was similar to that within the interval $[0,\\pi/6]$, and also resulted in a phase delay (Figure 3I\u2013K).\n\nCombining the data from all phases of inhibition yielded a sawtooth-shaped PRC with two sharp transitions from phase delay to advance as well as two relatively slow ascending transitions from phase advance to delay (Figure 3L,M). In control worms, which do not express NpHR in the body wall muscles (see Materials\u00a0and\u00a0methods), the resulting PRC shows no significant phase shift over any phases of illumination (Figure 3\u2014figure supplement 3). In worms perturbed with shorter pulses (0.055 s duration), we observed a similar sawtooth-shaped PRC (Figure 3\u2014figure supplement 4).\n\nIn addition to phase response analyses with perturbations to the worm\u2019s anterior\u00a0region, we conducted similar analyses for the dynamics across the body by optogenetically inhibiting body wall muscles of other regions (Figure 3\u2014figure supplement 5). We found that the sawtooth feature of PRC tends to decrease monotonically as the perturbation occurs further away from the head (Figure 3\u2014figure supplement 5A,E,I).\n\nNext, we asked whether the sharp downward transitions in the PRC represent a continuous decrease or instead result from averaging data from a bimodal distribution. When we plotted the distribution of the same data in a 2-D representation we found that the phase shifts display a piecewise, linear increasing dependence on the phase of inhibition with two abrupt jumps occurring at $\u03d5\u2248\\pi/3$ and $4\\pi/3$, respectively (Figure 3M). This result shows that the sharp decreasing transitions in PRC reflect bimodality in the data rather than continuous transitions.\n\nIn addition to examining PRCs induced by muscle inhibition, we also calculated PRCs with respect to inhibitions of cholinergic motor neurons. We performed similar experiments on transgenic worms in which the inhibitory opsin NpHR is expressed in either all cholinergic neurons (Punc-17::NpHR::ECFP) or B-type motor neurons (Pacr-5::Arch-mCherry). In both strains, we again observed sawtooth-shaped PRCs (Figure 3\u2014figure supplements 6 and 7), with variations only in the magnitudes of phase shifts. These experiments show that the sawtooth-shaped feature of PRC is maintained for motor neuron inhibition, suggesting that the transient muscle and neuron inhibition interrupt the motor circuit dynamics in a similar manner.\n\nThe GABAergic D-type motor neurons provide a dorsoventral reciprocal inhibition of opposing muscles during locomotion. We asked whether the D-type motor neurons are required for the observed sawtooth shape of the PRC. We examined transgenic worms that express NpHR in the body wall muscles but have mutations unc-49(e407), a loss-of-function mutant of GABAA receptor that is required by the D-type motor neurons (Bamber et al., 1999). After performing optogenetic inhibition experiments, we found that the PRC also displays a sawtooth feature (Figure 3\u2014figure supplement 8). This result shows that D-type motor neurons are not necessary for the motor rhythm generator to show the sawtooth-shaped PRC.\n\nSawtooth-shaped PRCs are observed in a number of systems with oscillatory dynamics, including the van der Pol oscillator (Cestnik and Rosenblum, 2018), and may reflect a phase resetting property of an oscillator with respect to a perturbation (Izhikevich, 2007; Schultheiss et al., 2011). Further interpretation of the PRC results is given below.\n\n### Worm muscles display a rapid switch-like alternation during locomotion\n\nAs a first step in interpreting and modeling our findings, we estimated the patterns of muscle activity in freely moving worms, in part by drawing on previous biomechanical analyses of nematode movement (Fang-Yen et al., 2010; Gray and Lissmann, 1964; Wallace, 1968).\n\nIn mechanics, a moment is a measure of the ability of forces to produce bending about an axis. Body wall muscles create local dorsal or ventral bending by generating active moments across the body. In addition to the active moments from muscles, there are also passive moments generated by the worm\u2019s internal viscoelasticity and by the forces due to the interaction of the worm with its external environment.\n\nWe estimated the output patterns of the active muscle moment that drives the head oscillations of freely moving worms immersed in viscous solutions. Following previous analyses of C. elegans locomotor biomechanics under similar external conditions (Fang-Yen et al., 2010), the scaled active muscle moment can be described as a linear combination of the curvature and the time derivative of the curvature (Equation 1; also see Methods and Appendix). We observed that in the phase portrait graph (Figure 2D), there are two nearly linear portions of the curve. We hypothesized that these linear portions correspond to two bouts during which the active muscle moment is nearly constant.\n\nUsing fits to the phase plot trajectory (see Materials\u00a0and\u00a0methods and Appendix) we estimated the waveform of the active muscle moment as a function of time (Figure 2D Inset). We found that the net active muscle moment alternates between two plateau regions during forward locomotion. From the slope of the steep portions on this curve, we estimated the time constant for transitions between active moments to be $\\tau_{m}\u2248100ms$. This time constant is much smaller than the duration of each muscle moment plateau period ($\u22480.5s$), suggesting that the system undergoes rapid switches of muscle contractions between two saturation states.\n\n### A relaxation oscillator model explains nonsinusoidal dynamics\n\nWe reasoned that the rapid transitions of the active muscle moment might reflect a switching mechanism in the locomotory rhythm generation system. We hypothesized that the motor system generates locomotory rhythms by switching the active moment of the muscles based on proprioceptive thresholds.\n\nTo expand further upon these ideas, we developed a quantitative model of locomotory rhythm generation. We consider the worm as a viscoelastic rod where the scaled curvature K(t) varies according to:\n\n$$\nK(t)+\\tau_{u}\\frac{dK(t)}{dt}=M_{a}(t),\n$$\n\nwhere $\\tau_{u}$ describes the time scale of bending relaxation and $M_{a}(t)$ is the time-varying active muscle moment scaled by the bending modulus and the body length (see detailed derivations in Appendix). We note that in a stationary state ($dK/dt=0$), the curvature would be equal to the scaled active muscle moment. That is, the scaled active moment represents the static curvature that would result from a constant muscle moment.\n\nWe define a proprioceptive feedback variable $P$ as a linear combination of the current curvature value and the rate of change of curvature. In our model, once this variable reaches either of two thresholds $P_{th}$ and $-P_{th}$ (Figure 4D), the active muscle moment undergoes a change of sign (Figure 4E), causing the head to bend toward the opposite direction (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic diagram of the relaxation oscillator model. In this model, sensory neurons (SN) detect the total curvature of the body segment as well as the time derivative of the curvature. The linear combination of the two values, $P=K+bK\u02d9$, is modeled as the proprioceptive signal which is transmitted to motor neurons (MN). The motor neurons alternatingly activate dorsal or ventral body wall muscles (BWM) based on a thresholding rule: (1) if $P<\u2212P_{th}$, the ventral body wall muscles get activated and contract while the dorsal side of muscles relax; (2) if $P>P_{th}$, vice versa. Hence, locomotion rhythms are generated from this threshold-switch process. (B) Time-varying curvature $K$ of the model oscillator. The time axis is normalized with respect to oscillatory period (same for D, E, and F). (C) Phase portrait graph of the model oscillator. Proprioceptive threshold lines (gray dashed lines) intersect with the phase portrait graph at two switch points (red circles) at which the active moment of body wall muscles is switched. (D) Time-varying proprioceptive feedback $P$ received by the motor neurons. Horizontal lines denote the proprioceptive thresholds (gray dashed lines) that switch the active muscle moment at switch points (red circles, intersections between the proprioceptive feedback curve and the threshold lines). (E) Time-varying active muscle moment. Blue-dashed square wave denotes target moment ($M_{t}$) that instantly switches directions at switch points. Black curve denotes the active muscle moment ($M_{a}$) which follows the target moment in a delayed manner. (F) Time varying curvature in the worm\u2019s head region from experiments (red, 5047 cycles using 116 worms) and model (black). Model curvature matches experimental curvature with an MSE \u2248 0.18. (Inset) Bar graph of $U$ (time period of bending toward the ventral or dorsal directions) and $D$ (time period of straightening toward a straight posture). Vertical bars are averages of fractions with respect to undulatory period $T_{0}$ of $U$ and $T$ (*** indicates p<0.0005 using Student\u2019s t test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The curve models the degree of paralysis due to the optogenetic muscle inhibition as a function of time. Referring to\u00a0Equation A14, the fractional variable $H$ describes the reduced proportion of muscle moment when a worm reaches maximal paralysis after illumination. $r$ describes the time of maximal paralysis with respect to the occurrence of illumination. $p$ determines the time interval during which the paralyzing degree exceeds $H/2$. $q$ and $p$ together determine the paralyzing rate.\n\nOur model has 5 parameters: (1) $\\tau_{u}$, the bending relaxation time scale, (2) $\\tau_{m}$, the muscle switching time scale, (3) $M_{0}$, the amplitude of the scaled active muscle moment, (4-5) $b$ and $P_{th}$, which determine the switch threshold. The first three parameters were directly estimated from our experimental results from freely moving worms (see Appendix). Parameters $b$ and $P_{th}$ were obtained using a two-round fitting procedure by fitting the model first to the freely moving dynamics (first round) and then to the experimental phase response curve (second round) (see Appendix).\n\nWith this set of parameters, we calculated the model dynamics as represented by the phase portrait (Figure 4C) as well as curvature waveform in one cycle period (Figure 4F). We found that in both cases the model result agreed with our experimental observations. Our model captures the asymmetric phase portrait trajectory shape found from our experiments (Figure 2D). It also describes the asymmetry of head bending during locomotion: bending toward the ventral or dorsal directions occurs slower than straightening toward a straight posture during the locomotory cycle (Figure 4F Inset).\n\nConsidering the hypothesized mechanism under the biomechanical background (Equation 1), our model provides a simple explanation for the observed bending asymmetry during locomotion. According to the model, the active muscle moment is nearly constant during each period between transitions of the muscle moment. Biomechanical analysis under this condition predicts an approximately exponential decay in curvature, which gives rise to an asymmetric feature during each half period (Figure 4F).\n\n### Relaxation oscillator model reproduces responses to transient optogenetic inhibition\n\nWe performed simulations of optogenetic inhibitions in our model. To model the transient muscle paralysis, the muscle moment is modulated by a bell-shaped function of time (Figure 4\u2014figure supplement 1; also see Appendix) such that, upon inhibition, it decays toward zero and then recovers to its normal value, consistent with our behavioral observations (Figure 3B).\n\nFrom simulations with different sets of model parameters, we found that the model PRCs consistently exhibited the sawtooth shape found in experiments, although differing in height and timing of the downward transitions. In addition to the model parameters $\\tau_{u}$, $M_{0}$, and $\\tau_{m}$ that had been explicitly estimated from free-moving experiments, we performed a two-round fitting procedure (see Appendix) to determine the other parameters (including $b$, $P_{th}$, and parameters for describing the optogenetically induced muscle inhibitions (see Figure 4\u2014figure supplement 1)) to best fit the freely moving dynamics and the experimental PRC, respectively, with a minimum mean squared error (MSE) (Figures 4F and 5A; also see Appendix). For the parameters $b$ and $P_{th}$, the optimization estimated their values to be $b=0.046s$ and $P_{th}=2.33$, as shown on the phase portraits (gray dashed lines in Figures 4C, 5B and D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig5-v2.jpg)\n\n**Figure 5.:** (A) Phase response curves measured from experiments (blue, same as in Figure 3L) and model (orange). Model PRC matches experimental PRC with an MSE \u2248 0.12. (B,C) Simulated dynamics of locomotion showing inhibition-induced phase delays in the model oscillator. (B) Simulated phase portrait graphs around inhibition occurring at $\\pi/6$ phase of cycle for perturbed (red) and unperturbed (black) dynamics. Green bar indicates the phase during which the inhibition occurs. (C) Same dynamics as in (B), represented by time-varying curvatures. The time axis is normalized with respect to oscillatory period (same for E). (D,E) Simulated dynamics of locomotion showing inhibition-induced phase advances in the model oscillator. (D) Simulated phase portrait graphs around inhibition occurring at $\\pi/2$ phase of cycle for perturbed (red) and unperturbed (black) dynamics. (E) Same dynamics as in (D), represented by time-varying curvatures.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A-D) Time-varying curvatures of the worm\u2019s head region, measured from experiments (red, 5047 cycles using 116 worms) or produced by models (black). The four models match the experimental curvature with MSEs \u2248 0.18, 0.44, 0.18, and 0.39, respectively. (Inset table) $U/T_{0}$ (fraction of period of bending toward the ventral or dorsal directions) and $D/T_{0}$ (fraction of period of straightening toward a straight posture), for experiments or models, respectively. (E-H) Phase portrait graphs of the free-running dynamics shown in (A-D), measured from experiments (red) or produced by models (black). Arrow indicates clockwise movement. (I-L) Phase plots showing each model perturbed (indicated by purple arrow) away from the stable limit cycle and then recovering toward the equilibrium. (M-P) Phase response curves with respect to both-side muscle inhibition, measured from experiments (blue, 991 trials using 337 worms) or produced by models (orange). Four models match the experimental PRC with MSE \u2248 0.12, 0.21, 0.37, and 0.72, respectively.\n\nThe threshold-switch mechanism model provides an explanation for the observed sawtooth-shaped PRC. By comparing model phase portrait graphs around inhibitions occurring at different phases (Figure 5B\u2013E), we found that the phase shift depends on the relative position of the inhibition with respect to the switch points on the phase plane. (1) If the effect of the inhibition occurs before the system reaches its switch point (Figure 5B), the system will recover by continuing the previous bend and the next switch in the muscle moment will be postponed, thereby leading to a phase delay (Figure 5C). (2) As the inhibition progressively approaches the switch point, one would expect that the next switch in the muscle moment will also be progressively postponed; this explains the increasing portions of the PRC. (3) If the inhibition coincides with the switch point (Figure 5D), the muscle moment will be switched at this point and the system will recover by aborting the previous bend tendency, resulting in a small phase advance (Figure 5E). This switching behavior explains the two sharp downward transitions in the PRC.\n\n### Relaxation oscillator model predicts phase response curves for single-side muscle inhibition\n\nAs a further test of the model, we asked what PRCs would be produced with only the ventral or dorsal head muscles being transiently inhibited. In the model, the muscle activity is represented using the scaled active moment of muscles. We conducted model simulations (see Appendix) to predict the PRCs for transient inhibitions of muscles on the dorsal side (Figure 6A, Upper) and ventral side (Figure 6B, Upper), respectively.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig6-v2.jpg)\n\n**Figure 6.:** (A) (Upper) a schematic indicating a transient inhibition of body wall muscles of the head on the dorsal side. (Lower) the corresponding PRC measured from experiments (blue, 576 trials using 242 worms) and model (orange). (B) (Upper) a schematic indicating a transient inhibition of body wall muscles of the head on the ventral side. (Lower) the corresponding PRC measured from experiments (blue, 373 trials using 176 worms) and model (orange). For the two experiments, each point indicates a single illumination (0.1 s duration, 532 nm wavelength) of one worm. Experimental curves were obtained using a moving average along the x-axis with $0.16\\pi$ in bin width. Filled area of each experimental curve represents 95% confidence interval with respect to each bin of data points.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Spectra of paralyzing effects across all phases of illuminations, represented by absolute curvature $|K|$ of the head region. $|K|$ shown on y-axis is the value obtained $0.53\\pi$ later in phase (or 0.3 s in time with respect to locomotion period 1.13 s) after the illumination phase $\u03d5$. The specific phase difference $0.53\\pi$ (or 0.3 s time difference) was chosen for computing the paralyzing effects because a max paralysis is achieved at ~0.3 s after illumination as shown in Figure 3B. Gray curve represents control ATR+ (no light) group (414 trials using 116 worms). Red curve represents ATR+ group with only ventral side being illuminated (373 trials using 176 worms). Blue curve represents ATR+ group with only dorsal side being illuminated (576 trials using 242 worms). Black curve represents ATR+ group with both sides being illuminated (991 trials using 337 worms). All curves were obtained using a moving average along the x-axis with $0.4\\pi$ in bin width and filled areas represent 95% confidence interval. (B) Average paralyzing effects during dorsal bend and ventral bend, represented by mean absolute curvature $K$ averaged across range $[0,\\pi]$ (dorsal bend) and $[\\pi,2\\pi]$ (ventral bend), respectively. Colors indicate different conditions of experiment in the same way as in (A). (***) indicates p<0.0005 using paired t test.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A-D) PRCs with respect to dorsal-side muscle inhibition, measured from experiments (blue, 576 trials using 242 worms) or produced by models (orange). (E-H) PRCs with respect to ventral-side muscle inhibition, measured from experiments (blue, 373 trials using 176 worms) or produced by models (orange). Filled areas of all experimental PRCs represent 95% confidence interval with respect to each bin of data points.\n\nTo experimentally perform phase response analysis of single-side muscle inhibitions, we visually distinguished each worm\u2019s dorsoventral orientation (via vulval location) and targeted light to either the ventral or dorsal side of the animal. Transiently illuminating (0.1 s duration) dorsal or ventral muscles in the head region of the transgenic worms (Pmyo-3::NpHR) induced a brief paralyzing effect when the segment was bending toward the illuminated side but did not induce a significant paralyzing effect when the segment was bending away from the illuminated side (Figure 6\u2014figure supplement 1).\n\nCombining the experimental data from all phases of dorsal-side or ventral-side inhibition yielded the corresponding PRCs (Figure 6A,B, respectively), from which we found that both PRCs show a peak in the phase range during which the bending side is illuminated but shows no significant phase shift in the other phase range. The experimental observations are qualitatively consistent with model predictions.\n\nWe found that the PRC of dorsal-side illumination shows a smaller paralytic response than that of ventral-side illumination. This discrepancy may be due to different degrees of paralysis achieved during ventral vs. dorsal illumination (Figure 6\u2014figure supplement 1), possibly due to differences in levels of opsin expression and/or membrane localization. We therefore modulated the parameter for describing degree of paralysis when simulating the PRC of the dorsal-side illumination to qualitatively account for this discrepancy (see Appendix).\n\n### Our model is consistent with the dependence of wave amplitude and frequency on external load\n\nC. elegans can swim in water and crawl on moist surfaces, exhibiting different undulatory gaits characterized by different frequency, amplitude, and wavelength (Figure 7A). Previous studies Berri et al., 2009; Fang-Yen et al., 2010 have shown that increasing viscosity of the medium induces a continuous transition from a swimming gait to a crawling gait, characterized by a decreasing undulatory frequency (Figure 7C) and an increasing curvature amplitude (Figure 7D). We asked whether our model is consistent with this load-dependent gait adaptation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/69905/elife-69905-fig7-v2.jpg)\n\n**Figure 7.:** (A) Dark field images and the corresponding undulatory frequencies and amplitudes of adult worms (left) swimming in NGM buffer of viscosity 1 mPa\u00b7s, (right) crawling on agar gel surface. The worm head is to the right in both images. (B) Phase portrait graphs measured from worm forward movements in fluids of viscosity 10 mPa\u00b7s (blue, 3528 cycles using 50 worms), 120 mPa\u00b7s (red, 5050 cycles using 116 worms), and 5400 mPa\u00b7s (yellow, 1364 cycles using 70 worms). (C,D) The model predicts the dependence of undulatory frequency (C) and curvature amplitude (D) on external viscosity (black) that closely fit the corresponding experimental observations (red). (E) Phase portrait graphs predicted from the model in three different viscosities (same values as in B). Gray dashed lines indicate threshold lines for dorsoventral bending. The intersections (red circles 1, 2, 3) between the threshold line and phase portrait graphs are switch points for undulations in low, medium, high viscosity, respectively. (F) Theoretically predicted PRCs in fluids of the three different viscosities show that PRC will be shifted to the right as the viscosity of environment increases. (G) PRCs measured from optogenetic inhibition experiments in the three viscosities. Experimental PRCs were obtained using a moving average along the x-axis with $0.16\\pi$ in bin width and filled areas are 95% confidence interval. The tendency of shift observed in experimental PRCs verified the model prediction.\n\nWe incorporated the effect of external viscosity into our model through the bending relaxation time constant $\\tau_{u}$ (see Appendix). We ran our model to determine the dependence of model output on viscosity with varying viscosity $\u03b7$. We found that model results for frequency and amplitude dependence on viscosity of the external medium are in quantitative agreement with previous experimental results (Fang-Yen et al., 2010; Figure 7C,D).\n\nWe sought to develop an intuitive understanding of how the model output changes with increasing viscosity. We recall that the model generates a proprioceptive feedback variable in the form $P=K+bK\u02d9$ (Figure 4A), and that the active muscle moment in our model undergoes a change of sign upon the proprioceptive feedback reaching either of two thresholds, $P_{th}$ and $-P_{th}$. As the viscosity increases, one expects that a worm will perform a slower undulation due to the increase in external load. That is, the term $bK\u02d9$ becomes smaller. To compensate for this effect, the worm needs to undulate with a larger curvature amplitude to maintain the same level of proprioceptive feedback.\n\nNext, we asked how the PRC depends on external viscosity. Model simulations with three different viscosities produced PRCs with similar sawtooth shape but with sharp transitions delayed in phase as the external viscosity increases (Figure 7F). We also measured PRCs from optogenetic inhibition experiments in solutions of three different viscosities (Figure 7G). Comparing the relative locations of the transitions in PRCs between the model and the data, our prediction also quantitatively agrees with the experimental results.\n\nThese results further support the model\u2019s description of how undulatory dynamics are modulated by the external environment.\n\n### Evaluation of alternative oscillator models\n\nAlthough our computational model agrees well with our experimental results, we asked whether other models could also explain our findings. We examined three alternative models based on well-known mathematical descriptions of oscillators (van der Pol, Rayleigh, and Stuart-Landau oscillators) and compared them with our original threshold-switch model and with our experimental data.\n\nFirst, we tested the van der Pol oscillator, the first relaxation oscillator model (Van der Pol, 1926) which has long been applied in modeling neuronal dynamics (Fitzhugh, 1961; Nagumo et al., 1962). It is based on a second-order differential equation for a harmonic oscillator with a nonlinear, displacement-dependent damping term (see Appendix). By choosing a set of appropriate parameters, we found that the free-running waveform and phase plot of the van der Pol oscillator are highly asymmetric, but in an inverted manner (Figure 5\u2014figure supplement 1B,F), compared with the experimental observations (Figure 2C,D). Transiently perturbing the system with the bell-shaped modulatory function over all phases within a cycle produced a similar sawtooth-shaped PRC as that observed experimentally (Figure 5\u2014figure supplement 1N). However, the perturbed system was found to recover toward its limit cycle with a much slower rate than that of the experiments (Figure 5\u2014figure supplement 1J). Simulations of single-side muscle inhibitions to the system produced single-sawtooth-shaped PRCs similar to those found experimentally (Figure 6\u2014figure supplement 2B,F).\n\nNext, we examined the Rayleigh oscillator, another relaxation oscillator model which was originally proposed to describe self-sustained acoustic vibrations such as vibrating clarinet reeds (Rayleigh, 1896). It is based on a second-order differential equation with a nonlinear, velocity-dependent damping term and it can be obtained from the van der Pol oscillator via a variable differentiation and substitution (see Appendix). From its free-running dynamics, we observed that the system exhibits a highly asymmetric waveform and phase plot that are similar to the experimental observations (Figure 5\u2014figure supplement 1C,G). Additionally, the Rayleigh oscillator also produces similar sawtooth-shaped PRCs with respect to transient muscle inhibitions of both sides (Figure 5\u2014figure supplement 1O), dorsal side (Figure 6\u2014figure supplement 2C), and ventral side (Figure 6\u2014figure supplement 2G), respectively, and system\u2019s recovery rate after the perturbation was shown to be similar to that of the experiments (Figure 5\u2014figure supplement 1K).\n\nFinally, we considered the Stuart-Landau oscillator, a commonly used model for the analysis of neuronal synchrony (Acebr\u00f3n et al., 2005). Its nonlinearity is based on a negative damping term which depends on the magnitude of the state variable defined in a complex domain (see Appendix). The negative damping of the system constantly neutralize the positive damping on a limit cycle, making its free-running dynamics a harmonic oscillation which shows a sinusoidal waveform (Figure 5\u2014figure supplement 1D,H). Moreover, PRCs with respect to transient muscle inhibitions are constant with respect to phase (Figure 5\u2014figure supplement 1P), contrary to the experiments.\n\nWe compared the results of our models with the experimental results. In the van der Pol oscillator, the free-running waveform displays a different asymmetry (Figure 5\u2014figure supplement 1B,F) compared with the experimental observations and the perturbed system was shown to recover toward its limit cycle with a much slower rate than that of the experiments (Figure 5\u2014figure supplement 1J). The Rayleigh oscillator reproduces a free-running waveform similar to experimental ones (Figure 5\u2014figure supplement 1C,G) and its recovery rate toward limit cycle upon perturbation was close to that of the experiments (Figure 5\u2014figure supplement 1K). However, its PRC (Figure 5\u2014figure supplement 1O) showed weaker agreement with the experimental PRC compared with the threshold-switch model (Figure 5\u2014figure supplement 1M) or the van der Pol model (Figure 5\u2014figure supplement 1N). Of all the models tested, the threshold-switch model showed the least mean-square error with the PRC data (Figure 5\u2014figure supplement 1M\u2013P). We conclude that of these models, our threshold-switch model produced the best overall agreement with experiments.\n\nWe also found that two important experimental findings, the nonsinusoidal free-moving dynamics and the sawtooth-shaped PRCs can be achieved in our original model, the van der Pol and Rayleigh oscillators, which are all relaxation oscillators, but not in the Stuart-Landau oscillator, which is not a relaxation oscillator. Taken together, these results are consistent with the idea that a relaxation oscillation mechanism may underlie C. elegans motor rhythm generation.\n\n## Discussion\n\nIn this study, we used a combination of experimental and modeling approaches to probe the mechanisms underlying the C. elegans motor rhythm generation.\n\nOur model can be compared to those previously described for C. elegans locomotion. An early model (Niebur and Erd\u00f6s, 1991) assumes that a CPG located in the head initiates dorsoventral bends and that a combination of neuronal and sensory feedback mechanisms propagates the waves in the posteriorward direction. In this model, sensory feedback plays a modulatory role in producing smoother curvature waves but is not explicitly required for rhythm generation itself. Other computational models have aimed to describe how the motor circuit generates rhythmicity. Several neural models for the forward-moving circuit (Karbowski et al., 2008; Olivares et al., 2021) incorporating of all major neural components and connectivity have been developed. These models included a CPG in the head based on effective cross-inhibition between ventral and dorsal groups of interneurons. In contrast, Bryden and Cohen, 2008 developed a neural model in which each segment along the body is capable of generating oscillations. In this model, a circuit of AVB interneurons and B-type motor neurons suffices to generate robust locomotory rhythms without cross-inhibition.\n\nOther models have examined how C. elegans adapts its undulatory wavelength, frequency, and amplitude as a gait adaptation to external load (Boyle et al., 2012; Denham et al., 2018; Izquierdo and Beer, 2018; Johnson et al., 2021). To account for these changes, these models combined the motor circuit model with additional assumptions of stretch sensitivity in motor neurons, and worm body biomechanical constraints, to create a model that reproduced the changes in undulatory wave patterns under a range of external conditions.\n\nPrevious detailed models of C. elegans locomotion have employed a relatively large number of free parameters (up to 40; Boyle et al., 2012; Karbowski et al., 2008). In our work, we sought to develop a compact phenomenological model to describe an overall mechanism of rhythm generation but not the detailed dynamics of specific circuit elements. To improve predictive power, we aimed to minimize the number of free parameters used in the model. Our model has only five free parameters, yet accurately describes a wide range of experimental findings including the nonsinusoidal dynamics of free locomotion, phase response curves to transient paralysis, and dependence of frequency and amplitude on external viscosity.\n\nOur phase portrait analysis of worm\u2019s free locomotory dynamics has described a previously undescribed methods for measuring the bending relaxation time scale $\\tau_{u}$ and the muscle moment transition time scale $\\tau_{m}$ (see Appendix for details), which may be compared with previous studies of worm biomechanics (Fang-Yen et al., 2010; Berri et al., 2009) and neurophysiology (Milligan et al., 1997). Fang-Yen et al., 2010 measured out a linear relationship between the bending relaxation time scale and the external viscosity by deforming the worm body in Newtonian fluids with varied viscosities in the range 1\u201325 mPa\u00b7s. Through an extrapolation based on that linear relationship, the relaxation time scale in 17% dextran NGM fluid (approximately 120 mPa\u00b7s in viscosity) is estimated to be $\u2248282ms$, which is quite close to our measured result, $\\tau_{u}\u2248260ms$. Furthermore, our measurement of the muscle moment transition time scale ($\\tau_{m}\u2248100ms$) is consistent with a previously measured value for muscle time scale (Milligan et al., 1997) that has been widely adopted for other detailed models of nematode locomotion (Boyle et al., 2012; Bryden and Cohen, 2008; Butler et al., 2015; Chen et al., 2011; Denham et al., 2018; Izquierdo and Beer, 2018; Johnson et al., 2021; Karbowski et al., 2008; Olivares et al., 2021; Wen et al., 2012).\n\nIn our model, the mechanism for generating rhythmic patterns can be characterized by a \u2018relaxation oscillation\u2019 process which contains two alternating sub-processes on different time scales: a long relaxation process during which the motor system varies toward an intended state due to its biomechanics under a constant active muscle moment, alternating with a rapid period during which the active muscle moment switches to an opposite state due to a proprioceptive thresholding mechanism.\n\nThe term \u2018relaxation oscillation\u2019, as first employed by van der Pol, describes a general form of self-sustained oscillatory system with intrinsic periodic relaxation/decay features (Van der Pol, 1926).\u00a0The\u00a0Fitzhugh-Nagumo\u00a0model (Fitzhugh, 1961; Nagumo et al., 1962), a prototypical model of excitable neural systems, was originally derived by modifying the van der Pol relaxation oscillator equations. These and similar relaxation oscillators have been characterized in various dynamical systems in biology and neuroscience (Izhikevich, 2007). For example, the dynamics exhibited from the action potentials of barnacle muscles in their oscillatory modes were found to yield \u2018push-pull\u2019 relaxation oscillation characteristics (Morris and Lecar, 1981). The beating human heart was found to behave as a relaxation oscillator (Der pol b, 1940). Several studies of walking behavior in stick insects (B\u00e4ssler, 1977; Cruse, 1976; Graham, 1985; Wendler, 1968) proposed that the control system for rhythmic step movements constitutes a relaxation oscillator in which the transitions between leg movements is determined by proprioceptive thresholds.\n\nKey properties shared by these relaxation oscillators are that their oscillations greatly differ from sinusoidal oscillations and that they all consist of a certain feedback loop with a \u2018discharging property\u2019. They contain a switch component that charges an integrating component until it reaches a threshold, then discharges it again (Nave, 2007), then repeats. Many relaxation oscillators, including the van der Pol and Rayleigh models, exhibit sawtooth-shaped phase response curves (Der pol b, 1940; also see Figure 5\u2014figure supplement 1). As shown in our experimental and model results, all the above properties have been revealed in the dynamics of C. elegans locomotive behavior, consistent with the idea that the worm\u2019s rhythmic locomotion also results from a type of relaxation oscillator.\n\nIn our computational model, a proprioceptive component sensing the organism\u2019s changes in posture is required to generate adaptive locomotory rhythms. What elements in the motor system could be providing this feedback? Previous studies have suggested that head and body motor neurons, including the SMDD head motor neurons and the B-type motor neurons, have proprioceptive capabilities (Wen et al., 2012; Yeon et al., 2018) and may also be involved in locomotory rhythm generation (Fouad et al., 2018; Gao et al., 2018; Kaplan et al., 2020; Xu et al., 2018). This possibility is consistent with earlier hypothesis that the long undifferentiated processes of these cholinergic neurons may function as proprioceptive sensors (White et al., 1986). In particular, recent findings (Yeon et al., 2018)\u00a0have revealed that SMDD neurons directly sense head muscle stretch and regulate muscle contractions during oscillatory head bending movements.\n\nIn our model, the proprioceptive feedback variable depends on both the curvature and the rate of change of curvature. Many mechanoreceptors are sensitive primarily to time derivatives of mechanical strain rather than strain itself; for example, the C. elegans touch receptor cells exhibit such a dependence (Eastwood et al., 2015; O'Hagan et al., 2005). The ability of mechanosensors to sense the rate of change in C. elegans curvature has been proposed in an earlier study (Butler et al., 2015) in which it was hypothesized that the B-type motor neurons might function as a proprioceptive component in this manner. Mechanosensors encoding a simultaneous combination of deformation and velocity have been observed in mammalian systems including rapidly-adapting (RA) and intermediate-adapting (IA) sensors in the rat dorsal root ganglia (Rugiero et al., 2010). Proprioceptive feedback that involves a linear combination of muscle length and velocity was also suggested by a study of C. elegans muscle dynamics during swimming, crawling, and intermediate forms of locomotion (Butler et al., 2015). In our phenomenological model, the motor neuron constituent may represent a collection of neurons involved in motor rhythm generation. Therefore, the proprioceptive function posited by our model might also arise as a collective behavior of curvature-sensing and curvature-rate-sensing neurons.\n\nFurther identification of the neuronal substrates for proprioceptive feedback may be possible through physiological studies of neuron and muscle activity using calcium or voltage indicators. Studies of the effect of targeted lesions and genetic mutations on the phase response curves will also help elucidate roles of specific neuromuscular components within locomotor rhythm generation.\n\nIn summary, our work describes the dynamics of the C. elegans locomotor system as a relaxation oscillation mechanism. Our model of rhythm generation mechanism followed from a quantitative characterization of free behavior and response to external disturbance, information closely linked to the structure of the animal\u2019s motor system (Gutkin et al., 2005; Nadim et al., 2012; Schultheiss et al., 2011; Smeal et al., 2010). Our findings represent an important step toward an integrative understanding of how neural and muscle activity, sensory feedback control, and biomechanical constraints generate locomotion.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>OP50</td>\n      <td>CGC</td>\n      <td>Fang-Yen Lab Strain Collection: OP50 RRID:WB-STRAIN:WBStrain00041971</td>\n      <td>OP50</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>YX148</td>\n      <td>Fouad et al., 2018</td>\n      <td>Fang-Yen Lab Strain Collection: YX148</td>\n      <td>qhIs1[Pmyo-3::NpHR::eCFP; lin-15(+)]; qhIs4[Pacr-2::wCherry]</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>YX119</td>\n      <td>Fouad et al., 2018</td>\n      <td>Fang-Yen Lab Strain Collection: YX119</td>\n      <td>qhIs1[Pmyo-3::NpHR::eCFP; lin-15(+)]; unc-49(e407)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>YX205</td>\n      <td>Leifer et al., 2011</td>\n      <td>Fang-Yen Lab Strain Collection: YX205</td>\n      <td>hpIs178[Punc-17::NpHR::eCFP; lin-15(+)]</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>WEN001</td>\n      <td>Fouad et al., 2018</td>\n      <td>Fang-Yen Lab Strain Collection: WEN001</td>\n      <td>wenIs001[Pacr-5::Arch::mCherry; lin-15(+)]</td>\n    </tr>\n  </tbody>\n</table>\n\n### Worm strains and cultivation\n\nC. elegans were cultivated on NGM plates with Escherichia coli strain OP50 at 20\u00b0C using standard methods (Sulston and Hodgkin, 1988). Strains used and the procedures for optogenetic experiments are described in the Key resources table and Appendix. Preparation of OP50 and OP50-ATR plates were as previously described (Fouad et al., 2018). All experiments were performed with young adult (< 1 day) hermaphrodites synchronized by hypochlorite bleaching.\n\n### Locomotion and phase response analyses\n\nTo perform quantitative recordings of worm behavior, we used a custom-built optogenetic targeting system as previously described (Fouad et al., 2018; Leifer et al., 2011). Analysis of images for worm\u2019s body posture was performed using a previously developed custom software (Fouad et al., 2018). The anterior curvature is defined as the average of the curvature over body coordinate 0.1\u20130.3; excluding the range from 0 to 0.1 avoided measurement of high-frequency movements of the worm\u2019s anterior tip. Descriptions of the apparatus and image analyses are available in Appendix.\n\nFor phase response experiments, opsin-expressing worms were illuminated using a brief laser pulse (532 nm wavelength, 0.1\u00a0or\u00a00.055 s duration, irradiance 16 mW/mm2) in the head region (0\u20130.25 body coordinate). A total of 10 trials with 6 s interval between successive pulses were performed for each animal. Trials in which the worms did not maintain forward locomotion were censored. To generate the phase response curve (PRC), we calculated the phase of inhibition of each trial and the resulting phase shift. Details of calculations for the averaged PRC are given in Appendix.\n\nAll the data and image analysis codes used in the manuscript are available at Dryad (archived at https://doi.org/10.5061/dryad.wwpzgmsk2).\n\n### Computational modeling\n\nOur primary model is based on a novel neural control mechanism incorporated with a previously described biomechanical framework (Fang-Yen et al., 2010; Gray and Lissmann, 1964; Wallace, 1968). A proprioceptive signal is defined by a linear combination of bending curvature and rate of change of curvature. When the signal reaches a threshold, a switching command is initiated to reverse the direction of muscle moment. The worm\u2019s curvature relaxes toward the opposite direction, and the process repeats, creating a dorsoventral alternation. Detailed descriptions of implementation and fitting procedure of this model and alternative models are available in Appendix. All codes for modeling analyses are available at Dryad (https://doi.org/10.5061/dryad.wwpzgmsk2).\n",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "83f99397-7f37-4f95-894d-f8536200eff9",
+      "submission_id": "6330fa74-9312-407b-8607-322b6bde4a5a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Manuel Zimmer, University of Vienna Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69905.sa1](https://doi.org/10.7554/eLife.69905.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper combines behaviour quantification, optogenetic perturbation, and modelling to study C. elegans locomotion. It will be of interest to neuroscientists studying lcomotion and gait adaptation. The quantitative agreement between the model and experiments-importantly including the perturbation experiments-suggests forward locomotion in worms can be understood as being driven by a relaxation oscillator. This conclusion provides intuition for how worms move and should provide useful constraints on more detailed models that include neural anatomy and physiology.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Phase response analyses support a relaxation oscillator model of locomotor rhythm generation in Caenorhabditis elegans\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Manuel Zimmer as a Reviewing Editor and Ronald Calabrese as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Carter Johnson (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. As you can see below, the reviewers provide an extensive list of detailed comments, however the overall result of the reviews and subsequent discussions is that we are very excited about your work, and we would like to support publication in eLife of a revised manuscripts that addresses all comments. The comments below are partially concerned with similar issues but to retain each reviewers' details, we provide you here with the full list. Please submit with your revision a point-by-point response to the comments.\n\nEssential revisions:Reviewer #1:\n\n(R1.1) The authors set out to better understand the dynamics of C. elegans locomotion characterizing the rhythmic pattern of the worm's head during locomotion and by generating the phase response curve in that region. The authors then illustrate how well the relaxation-oscillator phenomenological model, with only a handful of free parameters optimized to match the data, is consistent with the observations, including observations under different mechanical loads.\n\n(R1.2) The authors provide a characterization of the curvature dynamics in the worm's head region (0.1-0.3 body coordinate). The reasoning for focusing on this area in particular is not discussed or justified in the manuscript. Also, no comment is made whether the characteristics observed for the limit cycle in that region is consistent across the rest of the regions. From the experimental description and data shown (i.e., Figure 2B), it would appear that the authors had access to a characterization of the limit cycle across any region of the body of the worm, from head to tail. To avoid the appearance of cherry-picking a region, authors are encouraged to include the full characterization of the limit cycle for all the data available to them. In addition to that, authors are encouraged to clarify explicitly whether the characteristics observed in one region (e.g., nonsinusoidal limit cycle) hold true across the rest of the worm's body. How sinusoidal or nonsinusoidal, non-ellipsoidal, asymmetric is the limit cycle as a function of the body region of the worm, from head to tail? Crucially, if the characterization observed in the selected region is not equally pronounced across the rest of body, it seems crucial to discuss it in the interpretation of the results. This is particularly important given that throughout the manuscript, the authors interpret the results as applicable to the rhythmic generation across the whole body, not just that limited region (see first sentence of the Discussion, for example; and it is also relevant given that they discuss equally proprioceptive feedback in the head as well as in the rest of the body). These points apply to the characterization of the limit cycle given that the data is there but not shown; this is not the case for the phase response analysis, because understanding it for the full body would require further experimentation. However, this should be a point of discussion: is the expectation that the phase response curve through transient ontogenetic inhibition will look similar throughout the body? Is the same sawtooth-shape with the sharp transitions in the same part of the phase expected? What is the implication of the expected results if they are consistent or not consistent with the ones shown for the region focused on here?\n\n(R1.2) The model assumes proprioceptive feedback from the curvature of the same region that is bending. However, the undifferentiated processes that are used as inspiration for this assumption extend posteriorly in the case of SMD and anteriorly in the case of B-class motor neurons. So the assumption that the curvature in one region can affect the bending in that same region should be discussed.\n\n(R1.3) The model also assumes that the stretch receptors sense both the curvature and the rate of curvature. However, the authors provide no evidence of other C. elegans neurons where both of those can be sensed simultaneously. It seems feasible that a neuron might be sensitive to either the curvature or the rate of curvature, but it seems less feasible that the neuron would be sensitive to a linear combination of both. This seems to be a central assumption of the model, with little or no justification.\n\n(R1.4) I commend the authors for comparing their selected model with other similar ones. I would highly encourage that the authors include a comparison of the models into the main manuscript. In particular, given the similarities between the results, I would highly encourage the authors to place the results of their chosen model next to the alternatives (it can be a figure like S10 but including the preferred model). As it is, with the alternatives in S10 and the rest of the figures from the best model in the main text, the comparison is significantly harder.\n\n(R1.5) Finally, the discussion of previous relevant computational models of C. elegans locomotion is rather limited. There are at least four particularly relevant contributions that the authors do not discuss in relation to their own contribution:\n\n(a) Johnson, Lewis, and Guy (2020) Neuromechanical Mechanisms of Gait Adaptation in C. elegans: Relative Roles of Neural and Mechanical Coupling.\n\n(b) Izquierdo and Beer (2018) From head to tail: a neuromechanical model of forward locomotion in Caenorhabditis elegans.\n\n(c) Kunert, Proctor, Brunton, Kutz (2017) Spatiotemporal feedback and network structure drive and encode Caenorhabditis elegans locomotion\n\n(d) Denham, Ranner, Cohen (2018) Signatures of proprioceptive control in Caenorhabditis elegans locomotion.\n\nReviewer #2:\n\n(R2.1) The paper's conclusions are supported by the data and the experiments and model results are clearly presented. In some cases there could be more analysis of uncertainty. For example, how consistent is the phase portrait? This could be illustrated by including some individual traces and/or by estimating a confidence interval (using resampling if necessary). A different kind of uncertainty that should be explained is that arising from fitting the model. Was the optimisation sensitive to the choice of starting parameters? Are there several local minima that explain the data reasonably well or did the optimisation always converge to the same parameter values?\n\n(R2.2) The authors have focused on forward locomotion bouts and have also eliminated cycles with a period that deviated more than 20% from the average across worms within a session. How many of the bouts were eliminated with this threshold? Are any of the conclusions of the paper sensitive to this threshold?\n\n(R2.3) The authors have convincingly ruled out the van der Pol and Stuart-Landau oscillators but the Rayleigh oscillator fits the data quite well with three parameters. Some quantification of the relative fit quality of the threshold-switch model and the Rayleigh might help guide future work.\n\n(R2.4) Finally, the discussion does a good job of putting the results of the phenomenological threshold-switch model in the context of previously published detailed models but it might be strengthened with more quantitative comparisons. For example, do the observed muscle switching time scales or the nature of the proprioceptive threshold rule out or usefully constrain any of the detailed models?\n\n(R2.5) The schematic figures (1 and 4) would be improved by leaving out the abbreviations. At a minimum, include (BWM) after 'body wall muscles' in the caption of figure 1.\n\n(R2.6) Would a different colour map make Figure S2 clearer? Jet makes some regions stand out more than is warranted. For example, the purple patch in the lower right corner and red patch in the upper left corder are visually very salient but are probably just normal fluctuations within the noise.\n\n(R2.7) In Figure 3, grey is used to indicate the control data in B but is used for individual trials in subsequent panels. Use a different colour for controls in B? Also add the grey curves to the legend next to D rather than only describing them in the caption.\n\n(R2.8) Line 299, state the gene name of the GABA receptor.\n\n(R2.9) In the Appendix there are a few cases of missing articles (for example line 812, \"worm's head\" should be \"the worm's head\" and on line 886 \"animal's\" should be \"the animal's\").\n\n(R2.10) Starting on line 817, D^C is used to denote the distance from the origin over the normal cycle. To avoid confusion with the scaling constant c, perhaps choose a different symbol for the scaling constant or to indicate the normal cycle?Reviewer #3:\n\n(R3.1) The main suggestion I have is to change the framing of the section \"The Analysis of Alternative Models Supports a Relaxation Oscillation Mechanism'. In the first paragraph, the authors state that the purpose of this section is to \"[ask] whether other models could also explain our findings.\" However, the section title and final paragraph suggest that the purpose of the section is to support the idea that the underlying oscillatory mechanism is a relaxation-oscillation. If my understanding of the authors' purpose here is correct, then I don't think the analysis of these three specific phenomenological models provides evidence of this. Specifically, the last paragraph of this section (Lines 586-590), suggests that because the non-relaxation oscillator (Stuart-Landau) was not able to capture your results (non-sinusoidal limit cycle and sawtooth PRCs), the underlying mechanism is a relaxation-oscillation. I don't think these models support that claim, because a different non-relaxation oscillator tuned precisely may be able to capture these results. I think a much more thorough analysis of general oscillator dynamics would be needed to make such a claim. To be clear, I think the paper is strong enough without this analysis, I would just be more cautious about the claims here.\n\n(R3.2) The strength of the author's original computational model is that it is based on specific mechanisms thought to underlie C. elegans neurolocomotion (specifically motor neurons, muscles, and proprioception). The authors discuss how this model functions as a relaxation-oscillator in the discussion, but I think it would be stronger in this section.\n\n(R3.3) Intro or discussion \u2013 In addition to Cohen's group's models, two recent modeling papers from other modeling groups have investigated the C. elegans neurolocomotion system explicitly as a chain of coupled neuromechanical oscillators (Olivares et al., 2021 doi:10.3389/fncom.2021.572339 and Johnson et al., 2021 doi:10.1137/20M1346122). In particular, Johnson et al., 2021 show how phase-response properties influence coordination of the neuromechanical oscillators. Describing how your computational model compares with or supports these other recent models would help give context to the modeling contribution of this work.\n\n(R3.14) Lines 311-313: The authors mention that sawtooth PRCS \"may reflect a phase-resetting property of an oscillator with respect to a perturbation\". I think more detail would be helpful here. To my knowledge, this is referring to the idea that if an oscillator gets a really strong perturbation, the phase-response curve turns into a \"phase-resetting curve\", where the large perturbation essentially resets the phase of the oscillator, and then it just marches forward linearly through time. Are you suggesting that this sawtooth shape is indicative of your perturbation being large? This would be an important detail to include.\n\n(R3.5) Section \"Analysis of Alternative Models Supports a Relaxation Oscillation Mechanism\":\n\nThe strength of the author's original computational model is that it is based on specific mechanisms thought to underlie C. elegans neurolocomotion (specifically motor neurons, muscles, and proprioception). To support the idea that the underlying mechanism is a relaxation-oscillation, I would suggest that the authors instead analyze their own computational model and show or point out how it functions structurally as a relaxation-oscillation. This is mentioned briefly in the discussion, but I think it would be stronger in this section. Furthermore, I think the authors could give the reader a clearer reason why exactly showing that the mechanism is a relaxation-oscillation is important. To my understanding, the open question in the C. elegans locomotion-modeling literature is whether the oscillations are fundamentally neurally-driven (like a CPG or HCO) or reflex-driven (like the proprioceptive mechanism here). Perhaps evidence for the relaxation-oscillation mechanism could be made by considering an alternative mechanistic model with neurally-driven oscillations and whether it can capture the new phase response data.\n\n(R3.6) The authors have not given adequate description of the model fitting process in the main text. In line 548, you only mention that appropriate parameters were chosen, and reference the supplement. I don't think too much detail is needed here, but explaining that the models were fit to match both the limit cycles and PRCs would be helpful here. My first impression of this section was that the limit cycles were matched and the PRCs were emergent. After looking at the supplementary details I saw that you explicitly attempted to match both results. This would be helpful to put up front.\n\n(R3.7) Lines 61-64: Sentence grammar/structure. The \"but also \u2026\" is missing a \"not only\" earlier in the sentence (e.g. \"A comprehensive understanding of animal locomotion should therefore encompass not only neural activity, muscle activity, and sensory feedback, but also biomechanical forces within the animal's body and between the animal and its environment (Figure 1A; 1-3).\").\n\n(R3.8) Lines 152-153 and Figure 2D caption: I think it would help to clarify in either or both of these places that the boxed portion of the nematode bodies corresponds to the curvature region (0.1-0.3 body coordinates).\n\n(R3.9) Lines 940-951: The mechanics here depend on the assumption of a traveling wave of fixed wavelength \u03bb down the body. I would mention explicitly that both the wavelength \u03bb and normal drag coefficient CN will be varied with fluid viscosity.\n",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0d20628c-1bdd-4916-b734-84dd20405a6a",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C1",
+      "claim": "Motor rhythms in many animals originate from networks of central pattern generators (CPGs), neuronal circuits capable of generating rhythmic outputs without rhythmic input.",
+      "claim_type": "EXPLICIT",
+      "source": "In many animals, motor rhythms originate from networks of central pattern generators (CPGs), neuronal circuits capable of generating rhythmic outputs without rhythmic input (Cohen and Wallen, 1980; Grillner, 2003; Kiehn, 2011; Kristan and Calabrese, 1976; Marder and Calabrese, 1996; Pearce and Friesen, 1984; Yu et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research on CPGs in various animal systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "6c8c1270-4c0f-442a-b3e4-8ba6080f8e41",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C2",
+      "claim": "CPGs typically generate rhythms through reciprocal inhibitory synaptic interactions between two populations.",
+      "claim_type": "EXPLICIT",
+      "source": "CPGs typically generate rhythms through reciprocal inhibitory synaptic interactions between two populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established mechanisms of CPG function, drawing on general scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "86d2f25e-b6af-49e5-b095-9d64d0d6b801",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C3",
+      "claim": "In vertebrates, motor rhythms arise from half-center oscillator modules in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "In vertebrates, motor rhythms arise from half-center oscillator modules in the spinal cord (Marder and Calabrese, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Marder and Calabrese, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "f971464f-c5ee-4a72-a080-112b0fe334a9",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C4",
+      "claim": "In the intact animal, sensory feedback plays a critical role in coordinating motor rhythms across the body and modulating their characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Although isolated CPGs can produce outputs in the absence of sensory input, in the intact animal sensory feedback plays a critical role in coordinating motor rhythms across the body and modulating their characteristics (Friesen, 2009; Grillner and Wall\u00e9n, 2002; Mullins et al., 2011; Pearson, 2004; Wen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "66937ef0-b1d8-4518-a46a-4519003b9bd4",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C5",
+      "claim": "Sensory feedback allows animals to adapt locomotor patterns to their surroundings.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory feedback allows animals to adapt locomotor patterns to their surroundings (Andersson et al., 1981; Brodfuehrer and Friesen, 1986) and adapt to unexpected perturbations (Ekeberg and Grillner, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "fa2d4c47-9a92-4ece-94fa-4b482f144e69",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C6",
+      "claim": "In leeches and Drosophila, specialized proprioceptive neurons and sensory receptors in body muscles detect sensory inputs to regulate and coordinate the centrally generated motor patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In leeches (Cang et al., 2001; Cang and Friesen, 2000) and Drosophila (Akitake et al., 2015; Mendes et al., 2013), specialized proprioceptive neurons and sensory receptors in body muscles detect sensory inputs to regulate and coordinate the centrally generated motor patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on leeches and Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "ad8f05e0-2b55-4e9d-bc45-e46566dcf94a",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C7",
+      "claim": "In limbed vertebrates, proprioceptors located in muscles, joints, and/or skin detect body movements and interact with premotor interneurons to coordinate limb movements.",
+      "claim_type": "EXPLICIT",
+      "source": "In limbed vertebrates, proprioceptors located in muscles, joints, and/or skin detect body movements and interact with premotor interneurons to coordinate limb movements (Pearson, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pearson, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "ac5598dd-4a69-4ac5-a91d-bf2da5f3c1e5",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C8",
+      "claim": "Sensory inputs induced by electric stimulation of receptor cells or by mechanical perturbation of body segments can entrain an animal's motor behavior to imposed patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory inputs induced by electric stimulation of receptor cells (Yu and Friesen, 2004) or by mechanical perturbation of body segments (Grillner et al., 1981) can entrain an animal's motor behavior to imposed patterns, demonstrating the flexibility of motor systems in responding to feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "fcb74c81-f67e-4934-8ec8-a0337764db4a",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C9",
+      "claim": "Efficient locomotion in vertebrates depends on storage of elastic energy in tendons and muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficient locomotion in vertebrates depends on storage of elastic energy in tendons and muscles (Roberts and Azizi, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Roberts and Azizi, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "1ad1b459-718a-4fb0-8550-b3386270b95a",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C10",
+      "claim": "In insects, elasticity in the leg joint plays an important role in generating forces for walking and jumping.",
+      "claim_type": "EXPLICIT",
+      "source": "In insects, elasticity in the leg joint plays an important role in generating forces for walking and jumping (Ache and Matheson, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ache and Matheson, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "653640b4-030d-4294-ba29-808447300655",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C11",
+      "claim": "C. elegans forward locomotion consists of anterior-to-posterior dorsoventral undulations.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans forward locomotion consists of anterior-to-posterior dorsoventral undulations (Croll, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Croll, 1971.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "3db75b4d-8489-403c-b9d5-ef22cc15b431",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C12",
+      "claim": "C. elegans forward locomotion movements are mediated by a neuromuscular circuit consisting of interneurons, excitatory cholinergic motor neurons, inhibitory GABAergic motor neurons, and body wall muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "These movements are mediated by a neuromuscular circuit consisting of interneurons, excitatory cholinergic motor neurons, inhibitory GABAergic motor neurons, and body wall muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the known components of the C. elegans motor circuit, drawing on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "18287330-c721-4bcc-9e1a-eb40f5011a34",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C13",
+      "claim": "The cholinergic B-type motor neurons are required for forward locomotion in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Laser ablation studies have shown that the cholinergic B-type motor neurons are required for forward locomotion (Chalfie et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to laser ablation studies by Chalfie et al., 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "63cf9828-6ff3-4366-a12b-131f13516aa7",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C14",
+      "claim": "The GABAergic D-type motor neurons provide dorsoventral cross-inhibition to the body wall muscles and are essential for maintaining normal wave shape and frequency during forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The GABAergic D-type motor neurons provide dorsoventral cross-inhibition to the body wall muscles and are essential for maintaining normal wave shape and frequency during forward locomotion (Deng et al., 2021; McIntire et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Deng et al., 2021 and McIntire et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "367717f3-e482-448c-96b8-71223c3991b5",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C15",
+      "claim": "A set of premotor interneurons (AVB, PVC, AVA, AVD, and AVE) regulate forward and reverse movements in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "A set of premotor interneurons (AVB, PVC, AVA, AVD, and AVE) regulate forward and reverse movements (Chalfie et al., 1988; Driscoll and Kaplan, 1997; Von Stetina et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "eddbf998-a96a-45a7-8464-923052ddd9c5",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C16",
+      "claim": "Ablation of all premotor interneurons or the D-type motor neurons does not deprive C. elegans of the ability to move forward.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of all premotor interneurons or the D-type motor neurons does not deprive C. elegans of the ability to move forward (Chalfie et al., 1985; Gao et al., 2018; Kawano et al., 2011), suggesting that a network consisting of excitatory motor neurons and muscles may be sufficient to generate rhythmicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to ablation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "a1a04bb8-54bb-4cf2-a9fd-64b0984bad3e",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C17",
+      "claim": "A network consisting of excitatory motor neurons and muscles may be sufficient to generate rhythmicity in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of all premotor interneurons or the D-type motor neurons does not deprive C. elegans of the ability to move forward (Chalfie et al., 1985; Gao et al., 2018; Kawano et al., 2011), suggesting that a network consisting of excitatory motor neurons and muscles may be sufficient to generate rhythmicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from ablation studies cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "c03e464d-93ae-4bee-91d4-f95cdb0268d9",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C18",
+      "claim": "Multiple oscillators exist in the C. elegans ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic and lesion experiments have shown that multiple oscillators exist in the ventral nerve cord (Fouad et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fouad et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "093289b8-8275-47fd-934a-fae4d979c210",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C19",
+      "claim": "The mechanisms that give rise to oscillators in the C. elegans ventral nerve cord are still poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mechanisms that give rise to these oscillators are still poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "3d90e1b6-f9f1-40ee-80c9-411dbf068b82",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C20",
+      "claim": "The B-type motor neurons mediate proprioceptive coupling between anterior to posterior bending during forward locomotion in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The B-type motor neurons mediate proprioceptive coupling between anterior to posterior bending during forward locomotion (Wen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wen et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "9e9a3769-50e8-4b20-924a-f60618f845e2",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C21",
+      "claim": "The SMDD motor neurons, localized at the head, have been identified as proprioceptive regulators of head steering during locomotion in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The SMDD motor neurons, localized at the head, have been identified as proprioceptive regulators of head steering during locomotion (Yeon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yeon et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "6d780fe6-9b48-48b8-a0c3-7dc046a802bc",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C22",
+      "claim": "Both the B-type motor neurons and the SMDD head motor neurons have long asynaptic processes hypothesized to have proprioceptive function.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the B-type motor neurons and the SMDD head motor neurons have long asynaptic processes hypothesized to have proprioceptive function (White et al., 1986) and have been suggested as candidate locomotor CPG elements (Kaplan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to White et al., 1986 and Kaplan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "d6704f21-3e05-4c35-9f92-6259efdfcd31",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C23",
+      "claim": "The B-type motor neurons and SMDD head motor neurons have been suggested as candidate locomotor CPG elements in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the B-type motor neurons and the SMDD head motor neurons have long asynaptic processes hypothesized to have proprioceptive function (White et al., 1986) and have been suggested as candidate locomotor CPG elements (Kaplan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kaplan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "4fb68fa7-3e65-47cc-84d8-8aa1507378a2",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C24",
+      "claim": "The cell DVA has been shown to exhibit proprioceptive properties with a dependence on a mechanosensitive channel, TRP-4, which acts as a stretch receptor to regulate the body bend amplitude during locomotion in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell DVA has been shown to exhibit proprioceptive properties with a dependence on a mechanosensitive channel, TRP-4, which acts as a stretch receptor to regulate the body bend amplitude during locomotion (Li et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Li et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "e1c510d1-3c5b-4fe8-b3af-8f6edd5f180f",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C25",
+      "claim": "Body bending induces local dendritic calcium transients in PVD and dendritic release of a neuropeptide encoded by nlp-12, which appears to regulate the amplitude of body movements in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In another study, body bending was shown to induce local dendritic calcium transients in PVD and dendritic release of a neuropeptide encoded by nlp-12, which appears to regulate the amplitude of body movements (Tao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tao et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "7d4425a6-6c23-47a5-a3e1-ec0e0248753a",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C26",
+      "claim": "C. elegans worms displayed a biphasic, sawtooth-shaped phase response curve (PRC) with sharp transitions from phase delay to advance upon transient optogenetic inhibition of the head muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the worms displayed a biphasic, sawtooth-shaped PRC with sharp transitions from phase delay to advance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experiments described in the manuscript, supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "85810bb8-8c2f-48e2-9b97-8ba52f1a4515",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C29",
+      "claim": "Brief optogenetic inhibition of the head muscles during forward locomotion was followed by a maximum degree of paralysis approximately 0.3 s after the end of the pulse, then a resumption of undulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Brief inhibition of the head muscles during forward locomotion was followed by a maximum degree of paralysis approximately 0.3 s after the end of the pulse, then a resumption of undulation (Figure 3A,B; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experiments, supported by data shown in Figure 3A,B and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "52bfad32-de2f-4913-bc3e-61f2f6b578ee",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C30",
+      "claim": "The deviation following optogenetic perturbation decays toward zero regardless of the initial deviation from the normal cycle, indicating that the worm tends to return to its normal oscillation after a perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the deviation following optogenetic perturbation (Figure 3\u2014figure supplement 1) decays toward zero regardless of the initial deviation from the normal cycle, indicating that the worm tends to return to its normal oscillation after a perturbation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experiments, supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "326f5259-b353-4b81-929d-e43aef7d20af",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C31",
+      "claim": "C. elegans head oscillation during forward locomotion is stable under optogenetic perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that C. elegans head oscillation during forward locomotion is stable under optogenetic perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on recovery dynamics after optogenetic perturbation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "95f8c772-11d5-4824-bdb7-84b4404f16cf",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C32",
+      "claim": "During forward locomotion, head oscillation of a worm constitutes a stable oscillator containing a nonsinusoidal limit cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that during forward locomotion, head oscillation of a worm constitutes a stable oscillator containing a nonsinusoidal limit cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on phase portraits and recovery dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "4179b1bf-861c-41c7-a066-5c74451e9561",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C36",
+      "claim": "Combining the data from all phases of inhibition yielded a sawtooth-shaped PRC with two sharp transitions from phase delay to advance as well as two relatively slow ascending transitions from phase advance to delay.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the data from all phases of inhibition yielded a sawtooth-shaped PRC with two sharp transitions from phase delay to advance as well as two relatively slow ascending transitions from phase advance to delay (Figure 3L,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the phase response experiments, supported by data shown in Figure 3L,M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "602247a1-ec2f-4c13-bb33-6d9d11cfdbaa",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C37",
+      "claim": "In control worms which do not express NpHR in the body wall muscles, the resulting PRC shows no significant phase shift over any phases of illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "In control worms, which do not express NpHR in the body wall muscles (see Materials and methods), the resulting PRC shows no significant phase shift over any phases of illumination (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from control experiments, supported by data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "3439588f-41c6-419e-9723-73bbed1e9b05",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C38",
+      "claim": "In worms perturbed with shorter pulses (0.055 s duration), a similar sawtooth-shaped PRC was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In worms perturbed with shorter pulses (0.055 s duration), we observed a similar sawtooth-shaped PRC (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from experiments with shorter pulse durations, supported by data shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "6f475733-16ca-4c34-9244-2bdeb2ea1196",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C39",
+      "claim": "The sawtooth feature of PRC tends to decrease monotonically as the perturbation occurs further away from the head.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the sawtooth feature of PRC tends to decrease monotonically as the perturbation occurs further away from the head (Figure 3\u2014figure supplement 5A,E,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from experiments with perturbations at different body locations, supported by data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "e8b1ae2f-33d0-489c-984a-e6fa8c506205",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C41",
+      "claim": "The sharp decreasing transitions in PRC reflect bimodality in the data rather than continuous transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that the sharp decreasing transitions in PRC reflect bimodality in the data rather than continuous transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the 2-D representation of phase response data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "27a477db-5447-4697-9dc0-85b0f6e28fce",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C42",
+      "claim": "In transgenic worms expressing NpHR in all cholinergic neurons (Punc-17::NpHR::ECFP), sawtooth-shaped PRCs were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In both strains, we again observed sawtooth-shaped PRCs (Figure 3\u2014figure supplements 6 and 7), with variations only in the magnitudes of phase shifts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from experiments with cholinergic neuron inhibition, supported by data shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "a956a82b-6863-45b9-ba19-d1a4dd90caf2",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C43",
+      "claim": "In transgenic worms expressing NpHR in B-type motor neurons (Pacr-5::Arch-mCherry), sawtooth-shaped PRCs were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In both strains, we again observed sawtooth-shaped PRCs (Figure 3\u2014figure supplements 6 and 7), with variations only in the magnitudes of phase shifts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from experiments with B-type motor neuron inhibition, supported by data shown in Figure 3\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "6fe42512-05c9-405e-a3d4-de169695c274",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C44",
+      "claim": "The transient muscle and neuron inhibition interrupt the motor circuit dynamics in a similar manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments show that the sawtooth-shaped feature of PRC is maintained for motor neuron inhibition, suggesting that the transient muscle and neuron inhibition interrupt the motor circuit dynamics in a similar manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that sawtooth-shaped PRCs are observed for both muscle and neuron inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "c257c941-87d7-4023-a903-30a0c2d6c515",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C45",
+      "claim": "D-type motor neurons are not necessary for the motor rhythm generator to show the sawtooth-shaped PRC.",
+      "claim_type": "EXPLICIT",
+      "source": "After performing optogenetic inhibition experiments, we found that the PRC also displays a sawtooth feature (Figure 3\u2014figure supplement 8). This result shows that D-type motor neurons are not necessary for the motor rhythm generator to show the sawtooth-shaped PRC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from experiments with unc-49(e407) mutants, supported by data shown in Figure 3\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "8d54ffd7-6b9b-44cf-9d5a-bb5b9bab7b0f",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C46",
+      "claim": "Sawtooth-shaped PRCs are observed in a number of systems with oscillatory dynamics, including the van der Pol oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "Sawtooth-shaped PRCs are observed in a number of systems with oscillatory dynamics, including the van der Pol oscillator (Cestnik and Rosenblum, 2018), and may reflect a phase resetting property of an oscillator with respect to a perturbation (Izhikevich, 2007; Schultheiss et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on oscillatory systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "3b038458-cf1c-432b-8015-6a562da529ba",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C47",
+      "claim": "The net active muscle moment alternates between two plateau regions during forward locomotion in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the net active muscle moment alternates between two plateau regions during forward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of muscle moment patterns, supported by data shown in Figure 2D Inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "d54b33a1-2b36-45a6-bcae-0c130679a44e",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C51",
+      "claim": "The relaxation oscillator model reproduces the observed PRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model reproduces the observed PRC and describes the locomotory dynamics around optogenetic inhibitions in a manner that closely fits our experimental observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational modeling, supported by comparison with experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "b9241332-c55a-4247-b172-00355bd3d2fa",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C52",
+      "claim": "The relaxation oscillator model describes the locomotory dynamics around optogenetic inhibitions in a manner that closely fits experimental observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model reproduces the observed PRC and describes the locomotory dynamics around optogenetic inhibitions in a manner that closely fits our experimental observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational modeling, supported by comparison with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "d80c0adc-ee55-46a6-b284-c4362aed876c",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C53",
+      "claim": "The relaxation oscillator model agrees with results on gait adaptation to external load.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also agrees with results on gait adaptation to external load and the asymmetry in time-dependent curvature patterns of undulating worms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational modeling, supported by comparison with experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "8ca197ef-06d9-47f2-8689-5966118cc794",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C54",
+      "claim": "The relaxation oscillator model agrees with the asymmetry in time-dependent curvature patterns of undulating worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also agrees with results on gait adaptation to external load and the asymmetry in time-dependent curvature patterns of undulating worms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational modeling, supported by comparison with experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "e770bd83-2700-4b8f-a79b-ac30f64b3d11",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C55",
+      "claim": "The model captures the asymmetric phase portrait trajectory shape found from experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in both cases the model result agreed with our experimental observations. Our model captures the asymmetric phase portrait trajectory shape found from our experiments (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling, supported by comparison with experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "57c93cf8-667f-46bd-ac5a-f99552ad9c62",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C56",
+      "claim": "The model describes the asymmetry of head bending during locomotion: bending toward the ventral or dorsal directions occurs slower than straightening toward a straight posture during the locomotory cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "It also describes the asymmetry of head bending during locomotion: bending toward the ventral or dorsal directions occurs slower than straightening toward a straight posture during the locomotory cycle (Figure 4F Inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling, supported by comparison with experimental data shown in Figure 4F Inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "4ded461e-409c-43fd-ac69-57359629b46e",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C57",
+      "claim": "The model provides a simple explanation for the observed bending asymmetry during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the hypothesized mechanism under the biomechanical background (Equation 1), our model provides a simple explanation for the observed bending asymmetry during locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the explanatory power of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "527c4a6b-a96a-46c9-8f30-e9f7e92540ec",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C58",
+      "claim": "The model PRCs consistently exhibited the sawtooth shape found in experiments, although differing in height and timing of the downward transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "From simulations with different sets of model parameters, we found that the model PRCs consistently exhibited the sawtooth shape found in experiments, although differing in height and timing of the downward transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational modeling simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "9fbb5234-c378-4d0e-891c-57a0a82a0e6d",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C59",
+      "claim": "The threshold-switch mechanism model provides an explanation for the observed sawtooth-shaped PRC.",
+      "claim_type": "EXPLICIT",
+      "source": "The threshold-switch mechanism model provides an explanation for the observed sawtooth-shaped PRC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the explanatory power of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "1fd6b7c7-c4a5-42b7-98a4-f0d308f9ae45",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C60",
+      "claim": "If the effect of the inhibition occurs before the system reaches its switch point, the system will recover by continuing the previous bend and the next switch in the muscle moment will be postponed, thereby leading to a phase delay.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) If the effect of the inhibition occurs before the system reaches its switch point (Figure 5B), the system will recover by continuing the previous bend and the next switch in the muscle moment will be postponed, thereby leading to a phase delay (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of model behavior based on simulations shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "bcc10214-21db-4669-8cc0-f712aeec6450",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C61",
+      "claim": "As the inhibition progressively approaches the switch point, the next switch in the muscle moment will be progressively postponed; this explains the increasing portions of the PRC.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) As the inhibition progressively approaches the switch point, one would expect that the next switch in the muscle moment will also be progressively postponed; this explains the increasing portions of the PRC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of model behavior based on the threshold-switch mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "82a479af-6494-4a43-85da-2763d7df2b88",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C62",
+      "claim": "If the inhibition coincides with the switch point, the muscle moment will be switched at this point and the system will recover by aborting the previous bend tendency, resulting in a small phase advance.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) If the inhibition coincides with the switch point (Figure 5D), the muscle moment will be switched at this point and the system will recover by aborting the previous bend tendency, resulting in a small phase advance (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of model behavior based on simulations shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "5d524019-0e93-4fa8-a559-762fbd312f36",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C63",
+      "claim": "The switching behavior explains the two sharp downward transitions in the PRC.",
+      "claim_type": "EXPLICIT",
+      "source": "This switching behavior explains the two sharp downward transitions in the PRC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of model behavior based on the threshold-switch mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "526a64a7-789d-44f3-adc8-3104477e51c7",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C64",
+      "claim": "Model results for frequency and amplitude dependence on viscosity of the external medium are in quantitative agreement with previous experimental results.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that model results for frequency and amplitude dependence on viscosity of the external medium are in quantitative agreement with previous experimental results (Fang-Yen et al., 2010; Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling, supported by comparison with experimental data shown in Figure 7C,D and cited prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "53555958-11b0-4370-b792-68179259a5c4",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C65",
+      "claim": "Model simulations with three different viscosities produced PRCs with similar sawtooth shape but with sharp transitions delayed in phase as the external viscosity increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Model simulations with three different viscosities produced PRCs with similar sawtooth shape but with sharp transitions delayed in phase as the external viscosity increases (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling simulations, supported by data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "35b37a73-0934-4591-bb3d-3f40b51236a8",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C66",
+      "claim": "The model prediction for how the PRC depends on external viscosity quantitatively agrees with the experimental results.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the relative locations of the transitions in PRCs between the model and the data, our prediction also quantitatively agrees with the experimental results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing model predictions with experimental data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "338017cc-a965-4a8b-9cf0-09b1e3b19346",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C67",
+      "claim": "The van der Pol oscillator's free-running waveform and phase plot are highly asymmetric, but in an inverted manner compared with the experimental observations.",
+      "claim_type": "EXPLICIT",
+      "source": "By choosing a set of appropriate parameters, we found that the free-running waveform and phase plot of the van der Pol oscillator are highly asymmetric, but in an inverted manner (Figure 5\u2014figure supplement 1B,F), compared with the experimental observations (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling of the van der Pol oscillator, supported by data shown in Figure 5\u2014figure supplement 1B,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "4ab803e1-5c8f-44e0-8e25-fa8a1b011057",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C68",
+      "claim": "Transiently perturbing the van der Pol oscillator with the bell-shaped modulatory function over all phases within a cycle produced a similar sawtooth-shaped PRC as that observed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Transiently perturbing the system with the bell-shaped modulatory function over all phases within a cycle produced a similar sawtooth-shaped PRC as that observed experimentally (Figure 5\u2014figure supplement 1N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling of the van der Pol oscillator, supported by data shown in Figure 5\u2014figure supplement 1N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "4427e054-2918-446a-821d-7a57a61b26ad",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C69",
+      "claim": "The perturbed van der Pol oscillator was found to recover toward its limit cycle with a much slower rate than that of the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the perturbed system was found to recover toward its limit cycle with a much slower rate than that of the experiments (Figure 5\u2014figure supplement 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling of the van der Pol oscillator, supported by data shown in Figure 5\u2014figure supplement 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "c306e110-0eb8-4862-9241-8cfbe0da1ac1",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C70",
+      "claim": "The Rayleigh oscillator exhibits a highly asymmetric waveform and phase plot that are similar to the experimental observations.",
+      "claim_type": "EXPLICIT",
+      "source": "From its free-running dynamics, we observed that the system exhibits a highly asymmetric waveform and phase plot that are similar to the experimental observations (Figure 5\u2014figure supplement 1C,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling of the Rayleigh oscillator, supported by data shown in Figure 5\u2014figure supplement 1C,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "514733e2-b146-4465-ac96-d71769a068fc",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C71",
+      "claim": "The Rayleigh oscillator produces similar sawtooth-shaped PRCs with respect to transient muscle inhibitions of both sides.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the Rayleigh oscillator also produces similar sawtooth-shaped PRCs with respect to transient muscle inhibitions of both sides (Figure 5\u2014figure supplement 1O), dorsal side (Figure 6\u2014figure supplement 2C), and ventral side (Figure 6\u2014figure supplement 2G), respectively, and system's recovery rate after the perturbation was shown to be similar to that of the experiments (Figure 5\u2014figure supplement 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling of the Rayleigh oscillator, supported by data shown in Figure 5\u2014figure supplement 1O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "e7fa62d3-1308-4b4a-b226-f8b716c81b68",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C72",
+      "claim": "The Rayleigh oscillator's recovery rate after the perturbation was shown to be similar to that of the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the Rayleigh oscillator also produces similar sawtooth-shaped PRCs with respect to transient muscle inhibitions of both sides (Figure 5\u2014figure supplement 1O), dorsal side (Figure 6\u2014figure supplement 2C), and ventral side (Figure 6\u2014figure supplement 2G), respectively, and system's recovery rate after the perturbation was shown to be similar to that of the experiments (Figure 5\u2014figure supplement 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling of the Rayleigh oscillator, supported by data shown in Figure 5\u2014figure supplement 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "35737ae6-73c9-4620-a77f-e6af7f9b7929",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C73",
+      "claim": "The Stuart-Landau oscillator's free-running dynamics show a harmonic oscillation with a sinusoidal waveform.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative damping of the system constantly neutralize the positive damping on a limit cycle, making its free-running dynamics a harmonic oscillation which shows a sinusoidal waveform (Figure 5\u2014figure supplement 1D,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling of the Stuart-Landau oscillator, supported by data shown in Figure 5\u2014figure supplement 1D,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "71a35bdd-144b-43d2-abac-437244f49fa4",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C74",
+      "claim": "PRCs with respect to transient muscle inhibitions in the Stuart-Landau oscillator are constant with respect to phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, PRCs with respect to transient muscle inhibitions are constant with respect to phase (Figure 5\u2014figure supplement 1P), contrary to the experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational modeling of the Stuart-Landau oscillator, supported by data shown in Figure 5\u2014figure supplement 1P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "c4922619-c1f4-4756-976c-d58acc9e13a5",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C75",
+      "claim": "Of all the models tested, the threshold-switch model showed the least mean-square error with the PRC data.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all the models tested, the threshold-switch model showed the least mean-square error with the PRC data (Figure 5\u2014figure supplement 1M\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing different models, supported by data shown in Figure 5\u2014figure supplement 1M\u2013P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "b251b819-cc13-45a0-ad33-792785a54cfc",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C76",
+      "claim": "Of the models tested, the threshold-switch model produced the best overall agreement with experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that of these models, our threshold-switch model produced the best overall agreement with experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing different models with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "3c9b5355-f99e-4154-beaa-739f472d701d",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C77",
+      "claim": "Two important experimental findings, the nonsinusoidal free-moving dynamics and the sawtooth-shaped PRCs can be achieved in the threshold-switch model, the van der Pol and Rayleigh oscillators, which are all relaxation oscillators, but not in the Stuart-Landau oscillator, which is not a relaxation oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that two important experimental findings, the nonsinusoidal free-moving dynamics and the sawtooth-shaped PRCs can be achieved in our original model, the van der Pol and Rayleigh oscillators, which are all relaxation oscillators, but not in the Stuart-Landau oscillator, which is not a relaxation oscillator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing different models with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "48ec80e5-6d58-40eb-a503-f95d76d29e8c",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C78",
+      "claim": "A relaxation oscillation mechanism may underlie C. elegans motor rhythm generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results are consistent with the idea that a relaxation oscillation mechanism may underlie C. elegans motor rhythm generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "60f55b57-dfe1-473a-879a-27fcd619d031",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C82",
+      "claim": "In the model, the mechanism for generating rhythmic patterns can be characterized by a 'relaxation oscillation' process which contains two alternating sub-processes on different time scales: a long relaxation process during which the motor system varies toward an intended state due to its biomechanics under a constant active muscle moment, alternating with a rapid period during which the active muscle moment switches to an opposite state due to a proprioceptive thresholding mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the mechanism for generating rhythmic patterns can be characterized by a 'relaxation oscillation' process which contains two alternating sub-processes on different time scales: a long relaxation process during which the motor system varies toward an intended state due to its biomechanics under a constant active muscle moment, alternating with a rapid period during which the active muscle moment switches to an opposite state due to a proprioceptive thresholding mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "1d347045-14f7-453d-bca8-d3c504367b21",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C83",
+      "claim": "The Fitzhugh-Nagumo model, a prototypical model of excitable neural systems, was originally derived by modifying the van der Pol relaxation oscillator equations.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fitzhugh-Nagumo model (Fitzhugh, 1961; Nagumo et al., 1962), a prototypical model of excitable neural systems, was originally derived by modifying the van der Pol relaxation oscillator equations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fitzhugh, 1961 and Nagumo et al., 1962.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "4fb3c58c-c5e5-4ac6-bc30-f4358f2ab486",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C84",
+      "claim": "The dynamics exhibited from the action potentials of barnacle muscles in their oscillatory modes were found to yield 'push-pull' relaxation oscillation characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the dynamics exhibited from the action potentials of barnacle muscles in their oscillatory modes were found to yield 'push-pull' relaxation oscillation characteristics (Morris and Lecar, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Morris and Lecar, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "13960edd-a687-4998-9eb9-b3a94831ae37",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C85",
+      "claim": "The beating human heart was found to behave as a relaxation oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "The beating human heart was found to behave as a relaxation oscillator (Der pol b, 1940).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Der pol b, 1940.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "0258d167-3914-4b7b-b6e2-348438d3e122",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C86",
+      "claim": "Several studies of walking behavior in stick insects proposed that the control system for rhythmic step movements constitutes a relaxation oscillator in which the transitions between leg movements is determined by proprioceptive thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies of walking behavior in stick insects (B\u00e4ssler, 1977; Cruse, 1976; Graham, 1985; Wendler, 1968) proposed that the control system for rhythmic step movements constitutes a relaxation oscillator in which the transitions between leg movements is determined by proprioceptive thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on stick insects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "73227954-cc1d-469f-95f9-d2fe087265a5",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C87",
+      "claim": "Head and body motor neurons, including the SMDD head motor neurons and the B-type motor neurons, have proprioceptive capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have suggested that head and body motor neurons, including the SMDD head motor neurons and the B-type motor neurons, have proprioceptive capabilities (Wen et al., 2012; Yeon et al., 2018) and may also be involved in locomotory rhythm generation (Fouad et al., 2018; Gao et al., 2018; Kaplan et al., 2020; Xu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "96531c65-e1a6-419d-9ff9-80140ec8c1f2",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C88",
+      "claim": "Head and body motor neurons, including the SMDD head motor neurons and the B-type motor neurons, may be involved in locomotory rhythm generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have suggested that head and body motor neurons, including the SMDD head motor neurons and the B-type motor neurons, have proprioceptive capabilities (Wen et al., 2012; Yeon et al., 2018) and may also be involved in locomotory rhythm generation (Fouad et al., 2018; Gao et al., 2018; Kaplan et al., 2020; Xu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "7198c419-9a73-4e0a-8aa9-4b029979d884",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C89",
+      "claim": "The long undifferentiated processes of cholinergic neurons may function as proprioceptive sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "This possibility is consistent with earlier hypothesis that the long undifferentiated processes of these cholinergic neurons may function as proprioceptive sensors (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to White et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "b7042f79-6ae9-4110-8ccf-0db6f11e4399",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C90",
+      "claim": "SMDD neurons directly sense head muscle stretch and regulate muscle contractions during oscillatory head bending movements.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, recent findings (Yeon et al., 2018) have revealed that SMDD neurons directly sense head muscle stretch and regulate muscle contractions during oscillatory head bending movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yeon et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "9cf09cfc-da54-4770-bffb-c5360697a27c",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C91",
+      "claim": "Many mechanoreceptors are sensitive primarily to time derivatives of mechanical strain rather than strain itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Many mechanoreceptors are sensitive primarily to time derivatives of mechanical strain rather than strain itself; for example, the C. elegans touch receptor cells exhibit such a dependence (Eastwood et al., 2015; O'Hagan et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "0971f626-f942-4aa3-974e-dab4d194f035",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C92",
+      "claim": "The C. elegans touch receptor cells are sensitive primarily to time derivatives of mechanical strain rather than strain itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Many mechanoreceptors are sensitive primarily to time derivatives of mechanical strain rather than strain itself; for example, the C. elegans touch receptor cells exhibit such a dependence (Eastwood et al., 2015; O'Hagan et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Eastwood et al., 2015 and O'Hagan et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "1d11776a-9957-4e6c-b169-344a1994fc9d",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C93",
+      "claim": "The ability of mechanosensors to sense the rate of change in C. elegans curvature has been proposed in an earlier study.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of mechanosensors to sense the rate of change in C. elegans curvature has been proposed in an earlier study (Butler et al., 2015) in which it was hypothesized that the B-type motor neurons might function as a proprioceptive component in this manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Butler et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "452738cb-c7e0-4b8b-b537-bc79b4bd9fbf",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C94",
+      "claim": "It was hypothesized that the B-type motor neurons might function as a proprioceptive component that senses the rate of change in C. elegans curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of mechanosensors to sense the rate of change in C. elegans curvature has been proposed in an earlier study (Butler et al., 2015) in which it was hypothesized that the B-type motor neurons might function as a proprioceptive component in this manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Butler et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "01f899e6-aa04-4efb-b2f9-9c49885a8959",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C95",
+      "claim": "Mechanosensors encoding a simultaneous combination of deformation and velocity have been observed in mammalian systems including rapidly-adapting (RA) and intermediate-adapting (IA) sensors in the rat dorsal root ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanosensors encoding a simultaneous combination of deformation and velocity have been observed in mammalian systems including rapidly-adapting (RA) and intermediate-adapting (IA) sensors in the rat dorsal root ganglia (Rugiero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Rugiero et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "321a2761-1899-4ebc-a91d-5a163e31ea58",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C96",
+      "claim": "Proprioceptive feedback that involves a linear combination of muscle length and velocity was suggested by a study of C. elegans muscle dynamics during swimming, crawling, and intermediate forms of locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Proprioceptive feedback that involves a linear combination of muscle length and velocity was also suggested by a study of C. elegans muscle dynamics during swimming, crawling, and intermediate forms of locomotion (Butler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Butler et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "e45e3638-da1d-4998-9e07-8ffa8c0bdb03",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C97",
+      "claim": "Transiently illuminating dorsal or ventral muscles in the head region of the transgenic worms (Pmyo-3::NpHR) induced a brief paralyzing effect when the segment was bending toward the illuminated side but did not induce a significant paralyzing effect when the segment was bending away from the illuminated side.",
+      "claim_type": "EXPLICIT",
+      "source": "Transiently illuminating (0.1 s duration) dorsal or ventral muscles in the head region of the transgenic worms (Pmyo-3::NpHR) induced a brief paralyzing effect when the segment was bending toward the illuminated side but did not induce a significant paralyzing effect when the segment was bending away from the illuminated side (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from single-side muscle inhibition experiments, supported by data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "acdd2256-69ee-4462-b2bf-4e0e83e08078",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C98",
+      "claim": "Both PRCs (dorsal-side and ventral-side illumination) show a peak in the phase range during which the bending side is illuminated but shows no significant phase shift in the other phase range.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the experimental data from all phases of dorsal-side or ventral-side inhibition yielded the corresponding PRCs (Figure 6A,B, respectively), from which we found that both PRCs show a peak in the phase range during which the bending side is illuminated but shows no significant phase shift in the other phase range.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from single-side muscle inhibition experiments, supported by data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "24255908-c2f5-4e46-a843-eba1ff914ae7",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C99",
+      "claim": "The experimental observations for single-side muscle inhibition are qualitatively consistent with model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental observations are qualitatively consistent with model predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing model predictions with experimental data for single-side muscle inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "2167c6ba-12d5-4089-93fe-9b969a989218",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C100",
+      "claim": "The PRC of dorsal-side illumination shows a smaller paralytic response than that of ventral-side illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the PRC of dorsal-side illumination shows a smaller paralytic response than that of ventral-side illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from comparing PRCs of dorsal-side and ventral-side illumination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "dba266e8-95a2-451b-bd88-3ab512d8a11d",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C101",
+      "claim": "The discrepancy in paralytic response between dorsal-side and ventral-side illumination may be due to different degrees of paralysis achieved during ventral vs. dorsal illumination, possibly due to differences in levels of opsin expression and/or membrane localization.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy may be due to different degrees of paralysis achieved during ventral vs. dorsal illumination (Figure 6\u2014figure supplement 1), possibly due to differences in levels of opsin expression and/or membrane localization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation about the cause of the observed discrepancy, supported by data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "4f09c03b-a49d-4825-815d-9ad57dd641a3",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C102",
+      "claim": "C. elegans can swim in water and crawl on moist surfaces, exhibiting different undulatory gaits characterized by different frequency, amplitude, and wavelength.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans can swim in water and crawl on moist surfaces, exhibiting different undulatory gaits characterized by different frequency, amplitude, and wavelength (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about known C. elegans behavior, supported by data shown in Figure 7A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "3838584c-e55c-4411-a3b0-41948a6877dc",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C103",
+      "claim": "Increasing viscosity of the medium induces a continuous transition from a swimming gait to a crawling gait, characterized by a decreasing undulatory frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies Berri et al., 2009; Fang-Yen et al., 2010 have shown that increasing viscosity of the medium induces a continuous transition from a swimming gait to a crawling gait, characterized by a decreasing undulatory frequency (Figure 7C) and an increasing curvature amplitude (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior research and data shown in Figure 7C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "4ad2d8fd-d04d-4fe2-9173-4c37451d29fa",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "claim_id": "C104",
+      "claim": "Increasing viscosity of the medium induces a continuous transition from a swimming gait to a crawling gait, characterized by an increasing curvature amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies Berri et al., 2009; Fang-Yen et al., 2010 have shown that increasing viscosity of the medium induces a continuous transition from a swimming gait to a crawling gait, characterized by a decreasing undulatory frequency (Figure 7C) and an increasing curvature amplitude (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior research and data shown in Figure 7D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "826c0a5e-c2dc-453e-897c-6370c28859e1",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C. elegans head oscillation during forward locomotion constitutes a stable, nonsinusoidal limit cycle. Transient optogenetic inhibition of head muscles produces a biphasic, sawtooth-shaped phase response curve (PRC) with sharp transitions from phase delay to advance. The system returns to its normal oscillation after perturbation regardless of initial deviation, demonstrating stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C41 collectively demonstrate the stable oscillator properties through multiple lines of evidence: experimental PRCs showing sawtooth shape (C26, C36), recovery dynamics after perturbation (C29, C30), control experiments (C37), robustness across different pulse durations and body locations (C38, C39), and bimodality analysis (C41). The data from Figure 3 and supplements provide strong quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "407647bf-c64c-4c0e-8677-d407a0de0a2f",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The sawtooth-shaped PRC is maintained when inhibiting cholinergic neurons or B-type motor neurons instead of muscles, and persists in unc-49(e407) mutants lacking functional D-type motor neurons. This suggests that transient muscle and neuron inhibition interrupt motor circuit dynamics similarly, and that D-type motor neurons are not necessary for the sawtooth PRC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by experimental data from multiple transgenic strains (Figure 3 supplements 6-8). The consistency of sawtooth PRCs across different perturbation targets (muscles, all cholinergic neurons, B-type neurons) and genetic backgrounds (unc-49 mutants) provides strong evidence for the robustness of the underlying mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A relaxation oscillator model based on proprioceptive thresholds that switch active muscle moment reproduces experimental observations including the sawtooth PRC, nonsinusoidal phase portraits, asymmetric bending dynamics, and gait adaptation to external load. The model explains PRC features through a threshold-switch mechanism where perturbation timing relative to switch points determines phase shifts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C63 describe the model and its agreement with experiments. The model successfully reproduces multiple independent experimental observations (Figures 4-5): free-moving dynamics (C55-C56), PRCs (C51, C58), and load adaptation (C53). The mechanistic explanations (C59-C63) are logically consistent with the model structure. However, the model has 5 parameters fitted to data, which somewhat limits its predictive power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "58d25032-1ae1-4710-9cb4-32fccf9b41f1",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The relaxation oscillator model quantitatively predicts how undulatory frequency and amplitude depend on external viscosity, matching previous experimental results. Model simulations predict that PRCs shift to later phases as viscosity increases, which is confirmed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 and C102-C104 demonstrate the model's ability to predict gait adaptation to environmental changes. The quantitative agreement between model predictions and experimental data for both frequency/amplitude dependence (Figure 7C,D) and PRC shifts (Figure 7F,G) across three viscosities provides strong validation. The model successfully accounts for prior published findings (C103-C104).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "6c472490-d7fb-47c1-8a59-fe21eec6948a",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Comparison of four oscillator models (threshold-switch, van der Pol, Rayleigh, Stuart-Landau) shows that relaxation oscillators (threshold-switch, van der Pol, Rayleigh) can reproduce nonsinusoidal dynamics and sawtooth PRCs, while the Stuart-Landau oscillator cannot. The threshold-switch model shows the best overall agreement with experiments, supporting a relaxation oscillation mechanism for C. elegans motor rhythm generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C78 systematically compare alternative models (Figure 5 supplement 1). The analysis shows that relaxation oscillator properties (nonsinusoidal waveforms, sawtooth PRCs) are necessary but not sufficient - the threshold-switch model has the lowest MSE (C75). The conclusion that relaxation oscillation underlies rhythm generation (C78) is well-supported by the comparative analysis, though it remains a model-based inference rather than direct experimental proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "33ba202f-e08e-4ac4-9c60-dda28a359f07",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Single-side optogenetic inhibition (dorsal or ventral muscles only) produces PRCs with peaks during the phase when the illuminated side is bending, consistent with model predictions. Dorsal-side illumination shows smaller paralytic response than ventral-side, possibly due to differences in opsin expression or localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C101 describe single-side perturbation experiments (Figure 6). The qualitative agreement with model predictions (C99) supports the model framework. However, the quantitative discrepancy between dorsal and ventral responses (C100) is explained speculatively (C101) rather than definitively. The experiments provide additional validation of the model but with some unexplained asymmetry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "7b87b16a-cf45-40d2-bee1-c146237822bf",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model mechanism involves a relaxation oscillation process with proprioceptive feedback based on curvature and its time derivative. Previous studies suggest that B-type and SMDD motor neurons have proprioceptive capabilities and may be involved in rhythm generation. Mechanosensors sensitive to strain rate have been observed in C. elegans and other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 describes the model mechanism, while C87-C96 cite prior work suggesting biological substrates for proprioception. However, these claims do not provide direct experimental evidence linking specific neurons to the threshold-switch mechanism proposed in the model. The biological implementation remains speculative, though plausible based on prior literature. Further experiments are needed to identify the actual neural substrates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background claims about motor rhythms in animals: CPGs generate rhythms through reciprocal inhibition, sensory feedback modulates motor patterns, and biomechanical properties (elasticity) contribute to locomotion efficiency across various animal systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 are well-established background knowledge supported by extensive prior literature citations. These provide context for the C. elegans work but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "a491065e-e32c-45f8-a67e-97cc19f1b536",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims about C. elegans locomotion: forward movement involves dorsoventral undulations mediated by a neuromuscular circuit including B-type cholinergic and D-type GABAergic motor neurons. Multiple oscillators exist in the ventral nerve cord. Various neurons (B-type, SMDD, DVA, PVD) have been implicated in proprioception and rhythm generation, though mechanisms remain poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C25 summarize established knowledge about C. elegans motor circuits from prior literature. These are well-supported by citations but represent background rather than novel findings. Claim C19 acknowledges that mechanisms are poorly understood, motivating the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    },
+    {
+      "id": "0df0408d-3c6b-4487-a9f1-23a53370267d",
+      "content_id": "d93bbb03-625d-4876-b75d-8ed8f53d76db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sawtooth-shaped PRCs are observed in various oscillatory systems including the van der Pol oscillator. Relaxation oscillators have been described in multiple biological systems including barnacle muscles, human heart, and stick insect locomotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C83-C86 provide context from prior literature on relaxation oscillators in other systems. These are well-supported by citations and help interpret the C. elegans findings but are not novel results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:43.799811Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7d4425a6-6c23-47a5-a3e1-ec0e0248753a",
+      "result_id": "826c0a5e-c2dc-453e-897c-6370c28859e1"
+    },
+    {
+      "claim_id": "85810bb8-8c2f-48e2-9b97-8ba52f1a4515",
+      "result_id": "826c0a5e-c2dc-453e-897c-6370c28859e1"
+    },
+    {
+      "claim_id": "52bfad32-de2f-4913-bc3e-61f2f6b578ee",
+      "result_id": "826c0a5e-c2dc-453e-897c-6370c28859e1"
+    },
+    {
+      "claim_id": "326f5259-b353-4b81-929d-e43aef7d20af",
+      "result_id": "826c0a5e-c2dc-453e-897c-6370c28859e1"
+    },
+    {
+      "claim_id": "95f8c772-11d5-4824-bdb7-84b4404f16cf",
+      "result_id": "826c0a5e-c2dc-453e-897c-6370c28859e1"
+    },
+    {
+      "claim_id": "4179b1bf-861c-41c7-a066-5c74451e9561",
+      "result_id": "826c0a5e-c2dc-453e-897c-6370c28859e1"
+    },
+    {
+      "claim_id": "602247a1-ec2f-4c13-bb33-6d9d11cfdbaa",
+      "result_id": "826c0a5e-c2dc-453e-897c-6370c28859e1"
+    },
+    {
+      "claim_id": "3439588f-41c6-419e-9723-73bbed1e9b05",
+      "result_id": "826c0a5e-c2dc-453e-897c-6370c28859e1"
+    },
+    {
+      "claim_id": "6f475733-16ca-4c34-9244-2bdeb2ea1196",
+      "result_id": "826c0a5e-c2dc-453e-897c-6370c28859e1"
+    },
+    {
+      "claim_id": "e8b1ae2f-33d0-489c-984a-e6fa8c506205",
+      "result_id": "826c0a5e-c2dc-453e-897c-6370c28859e1"
+    },
+    {
+      "claim_id": "27a477db-5447-4697-9dc0-85b0f6e28fce",
+      "result_id": "407647bf-c64c-4c0e-8677-d407a0de0a2f"
+    },
+    {
+      "claim_id": "a956a82b-6863-45b9-ba19-d1a4dd90caf2",
+      "result_id": "407647bf-c64c-4c0e-8677-d407a0de0a2f"
+    },
+    {
+      "claim_id": "6fe42512-05c9-405e-a3d4-de169695c274",
+      "result_id": "407647bf-c64c-4c0e-8677-d407a0de0a2f"
+    },
+    {
+      "claim_id": "c257c941-87d7-4023-a903-30a0c2d6c515",
+      "result_id": "407647bf-c64c-4c0e-8677-d407a0de0a2f"
+    },
+    {
+      "claim_id": "3b038458-cf1c-432b-8015-6a562da529ba",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "d54b33a1-2b36-45a6-bcae-0c130679a44e",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "b9241332-c55a-4247-b172-00355bd3d2fa",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "d80c0adc-ee55-46a6-b284-c4362aed876c",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "8ca197ef-06d9-47f2-8689-5966118cc794",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "e770bd83-2700-4b8f-a79b-ac30f64b3d11",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "57c93cf8-667f-46bd-ac5a-f99552ad9c62",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "4ded461e-409c-43fd-ac69-57359629b46e",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "527c4a6b-a96a-46c9-8f30-e9f7e92540ec",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "9fbb5234-c378-4d0e-891c-57a0a82a0e6d",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "1fd6b7c7-c4a5-42b7-98a4-f0d308f9ae45",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "bcc10214-21db-4669-8cc0-f712aeec6450",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "82a479af-6494-4a43-85da-2763d7df2b88",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "5d524019-0e93-4fa8-a559-762fbd312f36",
+      "result_id": "9adf37bd-8cfe-4e6b-ba23-210f1047018a"
+    },
+    {
+      "claim_id": "526a64a7-789d-44f3-adc8-3104477e51c7",
+      "result_id": "58d25032-1ae1-4710-9cb4-32fccf9b41f1"
+    },
+    {
+      "claim_id": "53555958-11b0-4370-b792-68179259a5c4",
+      "result_id": "58d25032-1ae1-4710-9cb4-32fccf9b41f1"
+    },
+    {
+      "claim_id": "35b37a73-0934-4591-bb3d-3f40b51236a8",
+      "result_id": "58d25032-1ae1-4710-9cb4-32fccf9b41f1"
+    },
+    {
+      "claim_id": "4f09c03b-a49d-4825-815d-9ad57dd641a3",
+      "result_id": "58d25032-1ae1-4710-9cb4-32fccf9b41f1"
+    },
+    {
+      "claim_id": "3838584c-e55c-4411-a3b0-41948a6877dc",
+      "result_id": "58d25032-1ae1-4710-9cb4-32fccf9b41f1"
+    },
+    {
+      "claim_id": "4ad2d8fd-d04d-4fe2-9173-4c37451d29fa",
+      "result_id": "58d25032-1ae1-4710-9cb4-32fccf9b41f1"
+    },
+    {
+      "claim_id": "338017cc-a965-4a8b-9cf0-09b1e3b19346",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "4ab803e1-5c8f-44e0-8e25-fa8a1b011057",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "4427e054-2918-446a-821d-7a57a61b26ad",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "c306e110-0eb8-4862-9241-8cfbe0da1ac1",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "514733e2-b146-4465-ac96-d71769a068fc",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "e7fa62d3-1308-4b4a-b226-f8b716c81b68",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "35737ae6-73c9-4620-a77f-e6af7f9b7929",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "71a35bdd-144b-43d2-abac-437244f49fa4",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "c4922619-c1f4-4756-976c-d58acc9e13a5",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "b251b819-cc13-45a0-ad33-792785a54cfc",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "3c9b5355-f99e-4154-beaa-739f472d701d",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "48ec80e5-6d58-40eb-a503-f95d76d29e8c",
+      "result_id": "6c472490-d7fb-47c1-8a59-fe21eec6948a"
+    },
+    {
+      "claim_id": "e45e3638-da1d-4998-9e07-8ffa8c0bdb03",
+      "result_id": "33ba202f-e08e-4ac4-9c60-dda28a359f07"
+    },
+    {
+      "claim_id": "acdd2256-69ee-4462-b2bf-4e0e83e08078",
+      "result_id": "33ba202f-e08e-4ac4-9c60-dda28a359f07"
+    },
+    {
+      "claim_id": "24255908-c2f5-4e46-a843-eba1ff914ae7",
+      "result_id": "33ba202f-e08e-4ac4-9c60-dda28a359f07"
+    },
+    {
+      "claim_id": "2167c6ba-12d5-4089-93fe-9b969a989218",
+      "result_id": "33ba202f-e08e-4ac4-9c60-dda28a359f07"
+    },
+    {
+      "claim_id": "dba266e8-95a2-451b-bd88-3ab512d8a11d",
+      "result_id": "33ba202f-e08e-4ac4-9c60-dda28a359f07"
+    },
+    {
+      "claim_id": "60f55b57-dfe1-473a-879a-27fcd619d031",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "73227954-cc1d-469f-95f9-d2fe087265a5",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "96531c65-e1a6-419d-9ff9-80140ec8c1f2",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "7198c419-9a73-4e0a-8aa9-4b029979d884",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "b7042f79-6ae9-4110-8ccf-0db6f11e4399",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "9cf09cfc-da54-4770-bffb-c5360697a27c",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "0971f626-f942-4aa3-974e-dab4d194f035",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "1d11776a-9957-4e6c-b169-344a1994fc9d",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "452738cb-c7e0-4b8b-b537-bc79b4bd9fbf",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "01f899e6-aa04-4efb-b2f9-9c49885a8959",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "321a2761-1899-4ebc-a91d-5a163e31ea58",
+      "result_id": "7b87b16a-cf45-40d2-bee1-c146237822bf"
+    },
+    {
+      "claim_id": "0d20628c-1bdd-4916-b734-84dd20405a6a",
+      "result_id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f"
+    },
+    {
+      "claim_id": "6c8c1270-4c0f-442a-b3e4-8ba6080f8e41",
+      "result_id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f"
+    },
+    {
+      "claim_id": "86d2f25e-b6af-49e5-b095-9d64d0d6b801",
+      "result_id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f"
+    },
+    {
+      "claim_id": "f971464f-c5ee-4a72-a080-112b0fe334a9",
+      "result_id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f"
+    },
+    {
+      "claim_id": "66937ef0-b1d8-4518-a46a-4519003b9bd4",
+      "result_id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f"
+    },
+    {
+      "claim_id": "fa2d4c47-9a92-4ece-94fa-4b482f144e69",
+      "result_id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f"
+    },
+    {
+      "claim_id": "ad8f05e0-2b55-4e9d-bc45-e46566dcf94a",
+      "result_id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f"
+    },
+    {
+      "claim_id": "ac5598dd-4a69-4ac5-a91d-bf2da5f3c1e5",
+      "result_id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f"
+    },
+    {
+      "claim_id": "fcb74c81-f67e-4934-8ec8-a0337764db4a",
+      "result_id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f"
+    },
+    {
+      "claim_id": "1ad1b459-718a-4fb0-8550-b3386270b95a",
+      "result_id": "39f18d04-e3f0-4689-9c99-59a8ddf82c4f"
+    },
+    {
+      "claim_id": "653640b4-030d-4294-ba29-808447300655",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "3db75b4d-8489-403c-b9d5-ef22cc15b431",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "18287330-c721-4bcc-9e1a-eb40f5011a34",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "63cf9828-6ff3-4366-a12b-131f13516aa7",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "367717f3-e482-448c-96b8-71223c3991b5",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "eddbf998-a96a-45a7-8464-923052ddd9c5",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "a1a04bb8-54bb-4cf2-a9fd-64b0984bad3e",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "c03e464d-93ae-4bee-91d4-f95cdb0268d9",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "093289b8-8275-47fd-934a-fae4d979c210",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "3d90e1b6-f9f1-40ee-80c9-411dbf068b82",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "9e9a3769-50e8-4b20-924a-f60618f845e2",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "6d780fe6-9b48-48b8-a0c3-7dc046a802bc",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "d6704f21-3e05-4c35-9f92-6259efdfcd31",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "4fb68fa7-3e65-47cc-84d8-8aa1507378a2",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "e1c510d1-3c5b-4fe8-b3af-8f6edd5f180f",
+      "result_id": "a491065e-e32c-45f8-a67e-97cc19f1b536"
+    },
+    {
+      "claim_id": "8d54ffd7-6b9b-44cf-9d5a-bb5b9bab7b0f",
+      "result_id": "0df0408d-3c6b-4487-a9f1-23a53370267d"
+    },
+    {
+      "claim_id": "1d347045-14f7-453d-bca8-d3c504367b21",
+      "result_id": "0df0408d-3c6b-4487-a9f1-23a53370267d"
+    },
+    {
+      "claim_id": "4fb3c58c-c5e5-4ac6-bc30-f4358f2ab486",
+      "result_id": "0df0408d-3c6b-4487-a9f1-23a53370267d"
+    },
+    {
+      "claim_id": "13960edd-a687-4998-9eb9-b3a94831ae37",
+      "result_id": "0df0408d-3c6b-4487-a9f1-23a53370267d"
+    },
+    {
+      "claim_id": "0258d167-3914-4b7b-b6e2-348438d3e122",
+      "result_id": "0df0408d-3c6b-4487-a9f1-23a53370267d"
+    }
+  ],
+  "comparisons": []
+}

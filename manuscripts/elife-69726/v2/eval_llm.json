@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47"
+    ],
+    "result": "Rad53 directly phosphorylates DDK (Dbf4) and Sld3/7 in vitro, and this phosphorylation blocks replication initiation in reconstituted reactions. Pre-phosphorylation of either factor prevents replication, while kinase-dead Rad53 or ATP omission has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro data (Figures 1A-D) clearly demonstrate Rad53-dependent phosphorylation of DDK and Sld3/7 with corresponding inhibition of replication initiation. Multiple controls (kinase-dead mutant, ATP omission, separate incubations) support the specificity of the effect. This confirms and extends prior in vivo work (C39, C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Rad53 phosphorylates elongation factors Mrc1 and Csm3 (but not Tof1) in vitro, reducing replication fork rate from ~0.7 kb/min to ~0.4 kb/min. Phosphorylation of Mrc1 alone is sufficient to slow replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 2 provides clear evidence that Rad53 phosphorylates Mrc1/Csm3 (mobility shifts in C51-C52) and that this slows fork progression (C48-C49). The dissection showing Mrc1 phosphorylation alone is sufficient (C54-C55) is well-controlled. The quantification of fork rates is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C63"
+    ],
+    "result": "Rad53 phosphorylation of Mrc1 is both necessary and sufficient to slow replication forks in complete reactions. Addition of unphosphorylated Mrc1 completely rescues Rad53-induced fork slowing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiment in Figure 3A (C62) provides strong evidence for necessity, while the earlier data (C54-C55) established sufficiency. Together with C6, these claims converge on the conclusion that Mrc1 is the primary target for Rad53-mediated fork slowing in complete reactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Rad53 phosphorylates Mcm10 and can slow replication forks through this target, but only in the absence of unphosphorylated Mrc1. Mcm10 phosphorylation affects elongation but not initiation, suggesting separable functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figures 3B-E demonstrate that Mcm10 phosphorylation slows forks only when Mrc1 is absent or phosphorylated (C70-C72), establishing a hierarchical relationship. The observation that Mcm10 phosphorylation doesn't block initiation (C73) is interesting but based on inference rather than direct measurement. The overall conclusion about Mcm10 as a secondary target is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Mrc1 directly stimulates CMG helicase unwinding rate from ~79 bp/min to ~135 bp/min, and Rad53 phosphorylation of Mrc1 prevents this stimulation. A novel qPCR-based helicase assay reveals that CMG unwinding is asynchronous without Mrc1 but becomes more synchronous with Mrc1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novel CMG helicase assay (Figure 4D-G) provides direct evidence that Mrc1 stimulates helicase activity and that Rad53 blocks this stimulation. The quantification includes confidence intervals (C85-C86). The observations about synchrony (C135-C137) are interpretive but reasonable. This is a key mechanistic advance showing Mrc1 acts on the helicase itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Mrc1 stimulates replication regardless of which DNA polymerase (Pol\u03b5, Pol\u03b1, or Pol\u03b4) synthesizes the leading strand, and Rad53 inhibits Mrc1 function in all three conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figures 4A-C systematically test different polymerase configurations and show consistent Mrc1 stimulation and Rad53 inhibition. This argues against a polymerase-specific mechanism and supports the conclusion that Mrc1 acts primarily on the helicase (C83-C84). The experimental design is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The Rad53 phosphorylation sites regulating Mrc1 fork rate function do not overlap with Mec1 phosphorylation sites (17AQ mutant still inhibited by Rad53). The C-terminal region of Mrc1 is important for fork rate regulation and contains key Rad53 phosphorylation sites, as shown by fragment analysis, peptide arrays, and mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal approaches (C98-C100) converge on the C-terminus as the key region. The 17AQ mutant experiment (C90-C93) cleanly separates checkpoint signaling from fork regulation functions. The C-terminal truncation data (C94-C97) support the importance of this region. The mapping is not complete but the overall conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Alanine substitution mutants (Mrc114A, Mrc119A, Mrc141A) show partial resistance to Rad53 inhibition but are not fully functional, indicating the identified sites contribute to but do not fully account for Rad53 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 5E and supplements show that the alanine mutants have intermediate phenotypes - faster than phosphorylated wild-type but slower than unphosphorylated wild-type (C101-C103). The residual inhibition (C104-C105) suggests additional sites exist. This is an honest assessment of incomplete site identification. The conclusion that these sites are relevant but not sufficient is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "A phosphomimetic Mrc1 mutant (Mrc18D) with eight serine/threonine residues changed to aspartate cannot stimulate replication in vitro. Three of these sites (S911, S918, S920) were identified in phosphoproteomics screens of MMS-treated cells, suggesting physiological relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 6A clearly shows Mrc18D cannot stimulate replication (C108). The comparison with Mrc114A (C109) argues this is not simply due to mutating essential residues (C110). The phosphoproteomics validation (C111-C113) provides some evidence for in vivo relevance, though this is correlative. The in vitro phenotype is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The Mrc18D mutant retains checkpoint signaling function, activating Rad53 normally after HU treatment even in rad9\u0394 background. The mutant is viable in rad9\u0394 background (unlike mrc1\u0394 rad9\u0394), indicating the protein is stable and maintains replisome interactions in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figures 6B-C demonstrate that Mrc18D supports Rad53 activation as well as wild-type (C114, C116), clearly separating the checkpoint signaling function from the fork rate function. The viability of Mrc18D rad9\u0394 (C119) versus lethality of mrc1\u0394 rad9\u0394 (C118) is strong genetic evidence that the mutant protein is functional for checkpoint signaling. The inferences about stability and replisome association (C120-C122) are reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The Mrc18D mutant shows ~25% slower replication fork rate than wild-type MRC1 in vivo, as measured by BrdU pulse-chase analysis. This demonstrates that the phosphomimetic mutations slow forks in vivo as well as in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 6D-E provides direct in vivo evidence that Mrc18D slows fork progression (C123-C124). The quantification is appropriate and the caveat about growth conditions (C125) is noted. This validates the in vitro findings in a cellular context (C126). The ~25% reduction is modest but consistent and measurable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Mrc18D partially rescues the sensitivity of rad53\u0394 sml1\u0394 cells to low doses of HU (2 mM) and MMS (0.006% chronic, 0.02% acute), but not to higher doses. This suggests that slowing replication forks may be part of Rad53's role in protecting replication forks during checkpoint activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 7 shows clear partial rescue at low doses (C127, C129) but not high doses (C128). The partial nature of the rescue is important - it indicates fork slowing contributes to but is not the sole mechanism of fork protection. The conclusion (C130-C131) is appropriately cautious, stating fork slowing \"may be part of\" Rad53's protective role. This is a key result linking the biochemistry to cellular function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C34",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Mrc1 functions both upstream of Rad53 (as a checkpoint mediator) and downstream (as a substrate). This dual role could allow Rad53 to slow replication specifically at stressed forks (local response) or globally under severe stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conceptual conclusion of the paper. The dual role is clearly demonstrated by the separation of checkpoint signaling (C114-C116) from fork regulation (C6, C63) functions. The model about local versus global responses (C133-C134) is speculative but reasonable given the data. The overall conclusion (C12, C132) is well-supported by the combined results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Rad53 does not stably bind Mrc1 under replication buffer conditions, and neither DDK nor CDK can inhibit Mrc1 function in replication elongation, suggesting phosphorylation rather than binding is the primary mechanism of Mrc1 inhibition by Rad53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-IP experiment (Figure 2-supplement 1A, C57) shows no stable Rad53-Mrc1 interaction despite Mrc1-Csm3/Tof1 interaction. Combined with the requirement for kinase activity, this supports phosphorylation as the mechanism (C58). The negative results with DDK and CDK (C60-C61) rule out alternative kinases. The conclusion is sound though the negative co-IP result should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "CMG helicase pauses and backtracks during unwinding, potentially entering a non-productive duplex-engaged state. Mrc1 may stimulate unwinding by preventing or reversing this state, and Rad53 inhibition of Mrc1 could contribute to fork repair or restart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C138-C142) are largely speculative, drawing on prior single-molecule work (C138-C139) to interpret the current data. The model about duplex-engaged states (C140-C141) is plausible but not directly tested. The idea about fork repair/restart (C142) is interesting speculation. While the speculation is reasonable, it lacks direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Structural and biochemical data suggest Mrc1's C-terminus may contact Cdc45/Mcm2 and Pol\u03b5. The Mrc18D mutant retains checkpoint function, suggesting it remains fork-associated, but Rad53 may target additional sites beyond the eight mutated residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural context (C143-C144) is from cited work and provides a framework for interpretation. The inference that Mrc18D remains fork-associated (C145) is reasonable given the checkpoint data. The acknowledgment of additional sites (C146-C147) is appropriate given the incomplete inhibition of Mrc119A. This is honest assessment of the limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Previous ChIP data showing CMG moves further from origins in mrc1\u0394 cells can be explained by delayed Rad53 activation allowing unphosphorylated Mcm10 to continue driving CMG progression. In wild-type cells, rapid Rad53 activation would inactivate both Mrc1 and Mcm10, slowing CMG more quickly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This reconciles an apparent contradiction between prior ChIP data (C148-C149) and the current results. The model (C151-C152) is logical given the hierarchical relationship between Mrc1 and Mcm10 and the delayed checkpoint activation in mrc1\u0394 (C150). The explanation for why Mrc18D only weakly suppresses rad53\u0394 (C153) is also reasonable. This is good scientific reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C154",
+      "C155"
+    ],
+    "result": "The importance of fork slowing in Rad53's role in maintaining fork stability remains unclear, as does the reason for having two targets (Mrc1 and Mcm10) to regulate fork progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are honest acknowledgments of limitations (C154-C155). The partial rescue by Mrc18D (Figure 7) indicates fork slowing is not the whole story. The redundancy between Mrc1 and Mcm10 is demonstrated but not explained. These are appropriate statements of what remains unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "Studies in mammalian cells show global fork slowing during checkpoint activation. It would be interesting to explore whether Claspin (mammalian Mrc1 homolog) or Mcm10 are involved in this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This appropriately places the yeast findings in a broader context (C156) and suggests future directions (C157). The suggestion is reasonable given the conservation of checkpoint pathways. This is appropriate discussion of translational relevance.",
+    "result_type": "MINOR"
+  }
+]

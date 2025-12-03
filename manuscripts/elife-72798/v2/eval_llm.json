@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "UCH37 preferentially hydrolyzes branched Ub3 chains (10-100 fold faster than linear chains), with strongest preference for K6/K48 over K11/K48 or K48/K63 branched chains. RPN13C enhances hydrolysis of branched substrates but inhibits linear K48 Ub3 hydrolysis. UCH37 exclusively cleaves the K48 linkage at branch points, producing Ub2 and Ub1 in a 2:1 mass ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are well-supported by quantitative deubiquitination assays (Figure 1C) and linkage-specific antibody data (Figure 1\u2014figure supplement 1B). The data clearly demonstrate substrate preference, product stoichiometry, and K48-specific cleavage at branch points, consistent with prior work (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C82",
+      "C83"
+    ],
+    "result": "RPN13C contacts with the UCH37 active site crossover loop (ASCL) enhance substrate specificity for branched polyUb by restricting linear chain access to the active site. The ASCL functions as a gate and RPN13 as a gatekeeper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C82, C83 are supported by mutagenesis data (Figure 1D, E) showing that ASCL mutations (M148A F149A or M148D F149D) abolish RPN13C's ability to suppress linear K48 Ub3 hydrolysis while maintaining branched chain activity. This demonstrates a gating mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "UCH37\u2013RPN13C binds K6/K48-branched Ub3 with highest affinity (KD = 4.9 \u03bcM) and exhibits differential kinetics for different branched substrates. K6/K48 and K11/K48 have similar catalytic efficiencies (kcat/KM), while K48/K63 cleavage is 12-16 times less efficient. Substrate binding only partially accounts for specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by microscale thermophoresis binding data (Figure 2A) and Michaelis-Menten kinetics using a free Ub sensor assay (Figure 2C). The data show that binding affinity (KM) and catalytic rate (kcat) both contribute to substrate preference, with binding alone insufficient to explain specificity (C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C34",
+      "C59",
+      "C60"
+    ],
+    "result": "UCH37\u2013RPN13C contacts the hydrophobic patches (L8, I44, V70) of both distal Ub units in K6/K48-branched Ub3. NMR analysis reveals additional perturbations in the Ub \u03b1-helix not seen in crystal structures with monoUb. Both distal Ub hydrophobic patches are required for debranching activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C34, C59-C60 are supported by NMR chemical shift perturbation data (Figure 3A-C, Figure 3\u2014figure supplement 1) and mutagenesis experiments (Figure 3E, Figure 4). The convergence of NMR and biochemical data demonstrates engagement of both distal Ub hydrophobic patches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C93",
+      "C94"
+    ],
+    "result": "The hydrophobic patch of the proximal Ub is not required for debranching. A K6/K48 Ub3 substrate with L8A,I44A mutations in the proximal Ub is debranched as efficiently as wild-type. The proximal Ub primarily positions the distal Ub units rather than directly contacting the enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C93-C94 are supported by deubiquitination assays (Figure 3E) and NMR data showing smaller perturbations in the proximal Ub. The mutagenesis data directly demonstrate that proximal Ub hydrophobic patch residues are dispensable for catalysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Mutations in the K6-linked distal Ub hydrophobic patch (L8C, L8Cmc, or L8A/I44A in crosslinked mimics) significantly inhibit or abolish debranching by UCH37\u2013RPN13C, confirming the requirement for this hydrophobic patch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by deubiquitination assays using chemically modified substrates (Figure 4A, C, D). The progressive inhibition with L8C < L8Cmc and complete loss of activity with L8A/I44A mutations provide strong evidence for hydrophobic patch engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "UCH37 localizes to proteasome foci containing K48-linked polyUb under osmotic stress. UCH37 KO cells accumulate significantly more proteasome foci (including K11/K48-branched polyUb) than parental cells. WT UCH37 overexpression suppresses foci, while C88A or EWI mutants increase foci. UCH37 DUB activity counteracts stress-induced proteasome foci formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 are supported by quantitative immunofluorescence microscopy (Figure 5A-D, Figure 5\u2014figure supplement 1C-D). The data show statistically significant differences (p < 0.001) in foci accumulation across genotypes, with appropriate controls demonstrating the requirement for catalytic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "UCH37 KO cells accumulate proteasome foci even without stress treatment and show increased K48 and K11/K48 polyUb in whole-cell lysates both with and without osmotic stress. WT UCH37 overexpression partially rescues this phenotype. Loss of UCH37 negatively impacts proteasome degradation capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by immunofluorescence (Figure 5D) and immunoblotting data (Figure 5E, F). The accumulation of polyUb under basal conditions and partial rescue by WT UCH37 demonstrate a constitutive role for UCH37 in proteasome function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "C88A proteasomes accumulate polyUb conjugates (4-fold higher than WT) and RAD23B, while EWI proteasomes behave similarly to WT. Although neither C88A nor EWI can catalyze deubiquitination, only C88A proteasomes fail to clear Ub species efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by immunoprecipitation (Figure 6B, D), quantitative tUI-based assays (Figure 6C), and mass spectrometry (Figure 6F). The differential behavior of C88A versus EWI mutants demonstrates that substrate binding without catalysis causes retention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "C88A proteasomes in stress-induced condensates are significantly more static than WT or EWI proteasomes (FRAP t1/2: C88A 27.4s vs WT 10.7s). C88A/C88S proteasomes show enrichment of dynamic proteasome-interacting proteins including Ub, RAD23B, PA28, USP14, and 19S assembly chaperones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by FRAP analysis (Figure 6E) and TMT mass spectrometry (Figure 6F). The slower dynamics and accumulation of PIPs on catalytically inactive proteasomes demonstrate impaired recycling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "RAD23B does not differentiate between linear and branched Ub3 chains provided a K48 linkage is present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by microscale thermophoresis binding data (Figure 6\u2014figure supplement 1E) showing similar KD values for RAD23B binding to different Ub3 topologies containing K48 linkages. This explains why RAD23B accumulates on C88A proteasomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Upon encountering branched chains, UCH37 engages both distal Ub hydrophobic patches, enhancing affinity and displacing the ASCL. The geometry of branched polyUb plays a key role in substrate binding and K48 specificity. The configuration of distal Ubs at the branch point directs K48 cleavage specificity, with efficiency ordered K6/K48 > K11/K48 >> K63/K48.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 represent a mechanistic model supported by NMR data (C50-C52), mutagenesis (C55-C58), kinetics (C45-C49), and structural considerations. The model is consistent with all experimental observations and explains the substrate preference hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "UCH37 has at least two Ub-binding sites engaging the hydrophobic patches of distal Ubs in branched chains. One site (presumably S1) is occupied in monoUb crystal structures. Additional \u03b1-helix perturbations (K29, D32, E34) may represent new S1 interactions promoted by branched chain binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by NMR data (Figure 3A, C51) showing perturbations in both distal Ubs and additional contacts not seen in crystal structures. However, C92 is somewhat speculative about the nature of these new interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The proximal Ub may displace the ASCL in concert with positioning distal Ubs. Binding affinities between branched Ub3 and UCH37\u2013RPN13C are generally weak (micromolar KD/KM), suggesting efficient debranching in vivo requires additional interactions. Longer polyUb chains may engage the RPN13 PRU domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 are speculative (C95, C97, C98) or descriptive (C96). While C96 is supported by binding/kinetic data, the functional implications (C97) and potential PRU engagement (C98) lack direct experimental evidence. These represent reasonable hypotheses requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Stress-induced inclusions contain proteins modified with branched polyUb chains (K11/K48). Debranching by UCH37 promotes dissolution of proteasome degradation centers. Without debranching activity, UCH37 interactions with polyUb lead to retention at the proteasome, abnormally retaining PIPs like RAD23B and USP14. UCH37 functions to clear branched polyUb chains from the proteasome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 synthesize cellular observations (C61-C80) into a coherent model. The inference that inclusions contain branched chains (C99) is supported by K11/K48 antibody staining. The model (C100-C102) is well-supported by the differential behavior of WT, C88A, and EWI mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "UCH37 could disassemble branched Ub chains by severing K48 linkages at branch points, shortening chains and promoting release. With kcat \u2264 3.2 min\u207b\u00b9, UCH37 is slow enough to not cause premature substrate release (unlike USP14). Debranching may also alleviate stalling caused by binding multiple Ub receptor sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 present a functional model integrating kinetic data (C45-C46) with proteasome biology. The comparison to substrate processing rates (C106, citing Bard et al., 2019) supports the timing argument. C107 correctly contrasts with USP14. C108 is speculative but reasonable. The model is well-reasoned though some aspects require further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background knowledge about the ubiquitin-proteasome system, proteasome-associated DUBs (RPN11, USP14, UCH37), UCH37 structure and regulation, and branched polyubiquitin chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C33 represent established knowledge and prior work cited appropriately. These provide essential context for the current study. C2, C13, and C33 specifically cite the recent discovery of UCH37's branched chain specificity (Deol et al., 2020) that motivated this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Summary of main findings: UCH37 is activated by contacts with hydrophobic patches of both distal Ubs in branched chains; RPN13 enhances specificity by restricting linear chain access; UCH37 promotes substrate clearance under proteolytic stress; catalytically inactive UCH37(C88A) causes aberrant retention of polyUb and RAD23B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 are abstract-level summaries of the major findings, each supported by multiple lines of evidence detailed in other result groups. These accurately represent the key conclusions of the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C111"
+    ],
+    "result": "The R445C substitution disrupts a conserved intracellular (IC) gate network in DAT. Using the bacterial homolog LeuT, the authors show through Rosetta modeling and X-ray crystallography that substitutions at the equivalent position (R375) disrupt the E6-R375 salt bridge and alter multiple IC interactions, causing more complex molecular rearrangements than previously hypothesized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 provide convergent evidence from both computational modeling and experimental crystallography showing disruption of the IC gate network. The Rosetta models are validated by crystal structures (C111), and multiple interaction changes are documented with specific distance measurements. The structural data is rigorous and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "EPR spectroscopy reveals that R375 substitutions in LeuT alter conformational dynamics of the IC gate. R375A and R375D increase the probability of inward-facing (IF) conformations in specific ligand states, with R375D showing increased probability of open conformations on both sides of the transporter, suggesting a channel-like state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 present systematic EPR DEER measurements across multiple ligand states (Apo, Na+, Na+/Leu) for both R375A and R375D variants. The data show consistent conformational shifts toward IF states. However, C71 is speculative about the channel-like state connection to MD simulations. The EPR data itself is well-supported but the mechanistic interpretation requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Molecular dynamics simulations demonstrate that the R445C mutation in hDAT disrupts the IC network and promotes a water-filled channel-like intermediate. The mutation breaks the R445-E428 salt bridge, disrupts R60-D436, and induces formation of a new E428-R60 salt bridge, creating a hydrated channel-like conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 describe MD simulation results showing specific salt bridge rearrangements and water penetration. The simulations are detailed with specific structural changes documented. However, MD simulations are computational predictions that would benefit from experimental validation. The channel-like intermediate is inferred from water occupancy patterns but not directly demonstrated experimentally in hDAT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In HEK293 cells, hDAT R445C shows severely reduced surface expression (6% of WT) and mature protein (20% of WT), with significantly impaired DA uptake (reduced Vmax, increased Km) but partially preserved DA efflux. Similar impairments are observed for R445A and R445D substitutions, though R445A uniquely shows constitutive DA leak blocked by amphetamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 provide comprehensive functional characterization using biotinylation assays, radiotracer uptake, and patch-clamp amperometry. Multiple independent measurements converge on reduced expression and impaired function. Statistical significance is reported (p<0.0001 for expression, p<0.0001 for uptake). The differential effects of R445A vs R445C/R445D are well-documented. Sample sizes appear adequate (n=4-7 across experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The Drosophila model system is validated for studying hDAT function. Expression of hDAT WT in DA neurons of DAT-null flies rescues amphetamine-induced DA efflux and locomotion to levels comparable with endogenous dDAT, and cocaine blocks this effect, demonstrating that the system recapitulates DAT-dependent behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 establish the validity of the Drosophila model through multiple control experiments: hDAT WT performs comparably to dDAT in DA efflux (C38), uptake (C40), and AMPH-induced locomotion (C41, C44). The cocaine block (C39) and loss of AMPH response in DAT-null flies (C42) provide appropriate pharmacological and genetic controls. This is essential validation for subsequent behavioral studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "hDAT R445C flies display reduced spontaneous locomotor activity characterized specifically by decreased movement vigor (reduced fast movement) rather than difficulty initiating movement. Anxiety-like behavior (center time) is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 present detailed locomotion analysis with velocity profiling. The data show significant reduction in total distance (p=0.008, C46) and fast movement (p=0.0098, C48) but no change in movement initiation (p>0.05, C47) or center time (p>0.05, C45). The velocity analysis distinguishes bradykinesia from hypokinesia, providing mechanistic insight. Sample size is adequate (n=35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "hDAT R445C flies show impaired flight coordination with significantly delayed flight initiation (60.9 vs 36.6 ms, p=0.03) but normal grooming behavior, indicating selective impairment of specific coordinated movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 demonstrate selective motor coordination deficits using high-speed video analysis. Flight initiation is significantly delayed (C50) while grooming is unaffected (C51, p>0.05). This phenotypic heterogeneity (C52) is consistent with DTDS/PD. However, sample sizes are smaller (n=10-11 for flight, n=35 for grooming) and only two behaviors are tested, limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C110"
+    ],
+    "result": "hDAT R445C flies exhibit dopamine deficiency with 16.9% reduction in DA content (p=0.02), 21% reduction in TH-positive PPL1 neurons (p<0.0001), and 56% reduction in AMPH-induced DA efflux (p=0.04). Serotonin content is unchanged, indicating specificity to the dopaminergic system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide convergent neurochemical evidence from HPLC (C53), immunohistochemistry (C55), and amperometry (C56). All three independent measures show DA system deficits with statistical significance. The unchanged 5-HT (C54) serves as an important specificity control. However, the interpretation of neuron loss (C55) is complicated by the possibility of reduced TH expression rather than actual neurodegeneration (acknowledged in C147).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Chloroquine treatment rescues flight coordination deficits in hDAT R445C flies and increases the ratio of mature to immature DAT in both WT and R445C cells. CQ significantly improved flight initiation time in R445C flies (p=0.04) but had no effect on WT flies, suggesting a threshold effect for DAT expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 show CQ increases mature/immature DAT ratio in cells (p=0.003 for R445C) and improves flight in R445C flies (p=0.04). The lack of effect in WT flies (C95) supports a threshold model (C96). However, the connection between cellular DAT expression and fly behavior is correlative, not directly demonstrated. The therapeutic effect is modest and CQ's mechanism (lysosomal inhibition) may have pleiotropic effects beyond DAT expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Different amino acid substitutions at R445 have distinct functional consequences, with the IC gate differentially regulating inward versus outward DA transport. R445C impairs uptake more than efflux, and substitutions are differentially tolerated in LeuT versus hDAT, suggesting species-specific redundancy in the IC network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C122 synthesize observations about differential effects of R445A, R445C, and R445D. The data show R445C supports reduced efflux (C85, C116) while severely impairing uptake (C83), supporting differential regulation (C118). The LeuT vs hDAT comparison (C119-C122) is based on EPR and functional data. However, C122 about redundancy is speculative. The overall conclusion about IC gate complexity is well-supported by the totality of structural and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C27",
+      "C28"
+    ],
+    "result": "DTDS is a distinct infantile parkinsonism-dystonia caused by mutations in SLC6A3 (encoding DAT) that shares clinical features with PD including motor deficits and altered DA neurotransmission. The R445C mutation studied here was identified in a DTDS patient and causes devastating effects on DAT activity and expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C17, C27-C28 establish the clinical context through cited literature. These are well-established facts from prior publications (Kurian et al., Ng et al.) describing DTDS clinical features, genetic basis, and the specific R445C mutation. The claims accurately represent the cited literature and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C149"
+    ],
+    "result": "The authors propose a mechanistic model where reduced DAT-mediated reuptake in R445C leads to excessive extracellular DA, overstimulation of presynaptic D2 autoreceptors, suppression of DA release, and downregulation of tyrosine hydroxylase, ultimately decreasing DA synthesis and depleting presynaptic stores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C133, C149 present a speculative mechanistic model based on cited previous work (Ford 2014, DAT knockout studies). While the model is plausible and consistent with observations in other DAT-deficient models (C133), the authors did not measure extracellular DA levels, D2 receptor activity, or TH expression/activity directly. The model is an inference from reduced DA content and neuron counts, but alternative explanations are not excluded. This requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C107",
+      "C108",
+      "C109",
+      "C143"
+    ],
+    "result": "Drosophila melanogaster is established as a valid model system for studying PD and DTDS mechanisms. Drosophila PD models recapitulate essential phenotypes including neurodegeneration and motor deficits, with conserved DA neurotransmission mechanisms and PPL1 neurons functionally analogous to mammalian substantia nigra projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C107-C109, C143 cite extensive literature establishing Drosophila as a PD model. The conservation of DA mechanisms (C36), behavioral responses to DAT dysfunction (C37), and PPL1 neuron function (C107-C109) are well-documented in cited literature. The authors' own validation experiments (C38-C44) further support this. C143 is a reasonable conclusion based on the successful recapitulation of DTDS-relevant phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C113",
+      "C114"
+    ],
+    "result": "The R445A substitution produces constitutive DA leak blocked by amphetamine, while R445C and R445D do not show this phenotype. The authors conclude that the channel-like intermediate observed in simulations may be associated with a channel-like mode supporting ion fluxes, and that anomalous DA efflux may increase risk for psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is supported by amperometry data showing AMPH-blocked efflux in R445A. C81 correctly notes this is not observed in R445C/R445D. However, C113 and C114 are speculative. The connection between MD simulation channel-like intermediates and the functional channel mode is not directly demonstrated. The link to psychiatric disorder risk (C114) is based on cited associations but is not tested in this study. The differential effects of substitutions are interesting but mechanistic understanding is incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "Previous therapeutic approaches using pharmacological chaperones that stabilize DAT in an IF conformation did not consistently rescue R445C function, which the authors interpret as consistent with their EPR and computational data showing R445C can isomerize and is biased toward the IF conformer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 cite previous failed rescue attempts and provide a mechanistic explanation based on the current study's structural data. The logic is sound: if R445C is already biased toward IF, IF-stabilizing chaperones would not be expected to help. This represents appropriate integration of prior work with current findings, though the explanation remains somewhat speculative without direct testing of chaperones in the current system.",
+    "result_type": "MINOR"
+  }
+]

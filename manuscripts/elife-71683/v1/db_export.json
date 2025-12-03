@@ -1,0 +1,1804 @@
+{
+  "submission": {
+    "id": "109a6bf3-7e77-4995-aff9-a32b86fccfe9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:47:00.168832Z",
+    "updated_at": "2025-12-03T08:47:00.168832Z"
+  },
+  "content": [
+    {
+      "id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "submission_id": "109a6bf3-7e77-4995-aff9-a32b86fccfe9",
+      "content_type": "manuscript",
+      "content_text": "# Structural insight into the dual function of LbpB in mediating Neisserial pathogenesis\n\n## Authors\n\n- Ravi Yadav<sup>1</sup> ([ORCID: 0000-0003-2879-0465](https://orcid.org/0000-0003-2879-0465))\n- Srinivas Govindan<sup>3</sup> ([ORCID: 0000-0002-0414-7822](https://orcid.org/0000-0002-0414-7822))\n- Courtney Daczkowski<sup>4</sup>\n- Andrew Mesecar<sup>2</sup>\n- Srinivas Chakravarthy<sup>5</sup>\n- Nicholas Noinaj<sup>2</sup> ([ORCID: 0000-0001-6361-2336](https://orcid.org/0000-0001-6361-2336)) \u2020\n\n### Affiliations\n\n1. Purdue University Interdisciplinary Life Sciences Program West Lafayette United States\n2. Department of Biological Sciences,Purdue University West Lafayette United States\n3. Weldon School of BiomedicalEngineering, Purdue University West Lafayette United States\n4. Department of Biochemistry, Purdue University West Lafayette United States\n5. BIO-CAT, Illinois12 Institute of Technology Lemont United States\n6. Purdue Institute for Inflammation, Immunology and Infectious Disease, Purdue University West Lafayette United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLactoferrin-binding protein B (LbpB) is a lipoprotein present on the surface of Neisseria that has been postulated to serve dual functions during pathogenesis in both iron acquisition from lactoferrin (Lf), and in providing protection against the cationic antimicrobial peptide lactoferricin (Lfcn). While previous studies support a dual role for LbpB, exactly how these ligands interact with LbpB has remained unknown. Here, we present the structures of LbpB from N. meningitidis and N. gonorrhoeae in complex with human holo-Lf, forming a 1:1 complex and confirmed by size-exclusion chromatography small-angle X-ray scattering. LbpB consists of N- and C-lobes with the N-lobe interacting extensively with the C-lobe of Lf. Our structures provide insight into LbpB\u2019s preference towards holo-Lf, and our mutagenesis and binding studies show that Lf and Lfcn bind independently. Our studies provide the molecular details for how LbpB serves to capture and preserve Lf in an iron-bound state for delivery to the membrane transporter LbpA for iron piracy, and as an antimicrobial peptide sink to evade host immune defenses.\n\n## Introduction\n\nThere are 17 species of Neisseria that colonize humans with only two being pathogenic, N. meningitidis and N. gonorrhoeae (Seifert, 2019; Tone T\u00f8njum, 2017). N. meningitidis asymptomatically colonizes ~10% of the world\u2019s population, however, once pathogenic can lead to meningitidis and sepsis and lead to high fatality rates in the absence of immediate treatment (Caugant and Brynildsrud, 2020; Read, 2019; Siddiqui et al., 2021). N. gonorrhoeae causes the sexually transmitted disease gonorrhoea (Boyajian et al., 2016). The Centers for Disease Control and Prevention (CDC) have categorized N. gonorrhoeae as an urgent threat to public health, which requires immediate and aggressive actions to combat the emerging antibiotic-resistant strains recently discovered (Aitolo et al., 2021; Prevention (CDC), 2011). Although vaccines are now available against all pathogenic serogroups of N. meningitidis, there are well-documented drawbacks and limitations of these vaccines (Deasy and Read, 2011; Pizza et al., 2020). And despite decades of research, there is still no vaccine against gonococcal infections. Therefore, there is an urgent need for the development of new and improved therapeutics for protection against these human pathogens, particularly against N. gonorrhoeae.\n\nAcquisition of nutrients is an essential step during Neisserial pathogenesis (Stork et al., 2013; Zackular et al., 2015). Iron is an essential nutrient for survival, growth, and virulence (Grifantini et al., 2003). Given that free iron is essentially non-existent in the human host, Neisseria have evolved specialized surface receptors to hijack iron from host iron-binding proteins such as transferrin (Tf) and lactoferrin (Lf) (Lee and Schryvers, 1988; Schryvers and Lee, 1989; Schryvers and Morris, 1988; Yadav et al., 2019). One of the more well-studied metal acquisition systems in Neisseria is the transferrin-binding protein (Tbp) system, which consists of an a TonB-dependent transporter called TbpA and a lipoprotein co-receptor called TbpB (Cornelissen et al., 1992; Irwin et al., 1993; Noinaj et al., 2012a; Noinaj et al., 2012b; Noinaj et al., 2010; Pintor et al., 1998). Here, TbpB serves to capture and deliver iron-loaded Tf to TbpA for iron extraction and import across the outer membrane in a process that requires energy from the Ton complex at the inner membrane (Cornelissen et al., 1992; Cornelissen and Hollander, 2011; Noinaj et al., 2010).\n\nA second analogous system is called the lactoferrin-binding protein (Lbp) system, which is composed of LbpA and LbpB, targets Lf as an iron source (Figure 1A; Biswas and Sparling, 1995; Gray-Owen and Schryvers, 1996; Lee and Schryvers, 1988; Noinaj et al., 2013; Schryvers et al., 1998; Schryvers and Morris, 1988). However, less is known structurally and functionally about the Lbp system as no structures of Lbp proteins in complex with Lf have been reported. While all strains of N. meningitidis contain a functional Lbp system, it is only observed in roughly half of the N. gonorrhoeae strains (Anderson et al., 2003; Biswas et al., 1999). Studies hint that the Lbp system may serve as a backup option to the Tbp system to assist in mediating pathogenesis within diverse host environments, as a Neisserial strain lacking the Tbp proteins were still able to use the Lbp proteins to cause infection (Anderson et al., 2003). Further, it was also shown that a strain expressing both systems was more competitive than a strain expressing just the Tbp system alone (Anderson et al., 2003). Moreover, anti-sera raised against the Lbp proteins displays bactericidal activity, exemplifying the promise of this system as a target for therapeutic intervention (Pettersson et al., 2006).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71683/elife-71683-fig1-v1.jpg)\n\n**Figure 1.:** (A) The proposed role of Lbp system in iron acquisition from lactoferrin and protection from lactoferricin (Biorender). (B) Summary of LbpB constructs used in this study. (C) Solid-phase-binding assay of holo-lactoferrin (Lf) binding to N. meningitidis LbpB (NmLbpB; anti-Lf) and N. gonorrhoeae LbpB (NgLbpB; Lf-horse radish peroxidase [HRP]). (D) Formation of the NmLbpB\u2013Lf complex over size-exclusion chromatography (SEC) from purified components. A leftward shift is observed for the complex compared to the individual components indicating the formation of the complex. (E) Sodium dodecyl sulphate-polyacrylamide gel electrophoresis (SDS\u2013PAGE) analysis of the NmLbpB\u2013Lf complex formed from panel D, indicating the formation of the complex at a 1:1 ratio (lane 4). Similarly, the NgLbpB\u2013Lf complex was formed by SEC from purified components which also formed a 1:1 complex as shown by SDS\u2013PAGE analysis.\n\nGiven its sequence homology to TbpB, LbpB is predicted to have a similar domain organization consisting of an N- and C-lobes, with each lobe composed of an eight-stranded \u03b2-barrel sitting adjacent to a handle domain (Beddek and Schryvers, 2010; Brooks et al., 2014; Ekins et al., 2004; Lee and Schryvers, 1988; Noinaj et al., 2013; Ostan et al., 2017; Schryvers and Lee, 1989). This was partially confirmed when the structure of the N-lobe of LbpB was reported, showing conservation with the N-lobe of TbpB (Brooks et al., 2014). However, reports have varied on the mode of interaction between LbpB and Lf. Docking studies predicted that N-lobe of Lf interacts with LbpB (Arutyunova et al., 2012; Brooks et al., 2014), while hydrogen-deuterium exchange studies, combined with site-directed mutagenesis, showed that the C-lobe of Lf interacts with LbpB (Ostan et al., 2017). Homology modelling studies predicted that binding would align with that observed in TbpB\u2013Tf (Noinaj et al., 2013), however, no structure of LbpB in complex with Lf has been reported.\n\nIn addition to its role in iron acquisition, LbpB has been shown to provide protection against the host cationic antimicrobial peptide lactoferricin (Lfcn), an 11-residue metabolized fragment from the N-lobe of Lf (Figure 1A; Morgenthau et al., 2014a; Morgenthau et al., 2012; Morgenthau et al., 2014b). Studies have been conflicting on exactly where LbpB interacts with Lfcn to neutralize this threat. One model proposes that it binds along the N-lobe (Brooks et al., 2014), while another model points to several anionic regions along the C-lobe (Morgenthau et al., 2014a; Morgenthau et al., 2014b). In addition to protecting the surface of Neisseria directly, LbpB has been shown to also be proteolytically cleaved by NalP, which enables it to diffuse into the host environment to pre-emptively neutralize Lfcn (Roussel-Jaz\u00e9d\u00e9 et al., 2010). This additional role for LbpB serving as an antimicrobial peptide sink during Neisserial pathogenesis, in conjunction with its absence in many Neisserial strains despite LbpA being present, has cast some doubt onto its importance in iron import (Morgenthau et al., 2014a).\n\nTo further characterize the role of LbpB in Neisserial pathogenesis, here we report the crystal structure of N. meningitidis LbpB (NmLbpB) in complex with Lf and the cryoEM structure of N. gonorrhoeae LbpB (NgLbpB) in complex with Lf. Our structures were further confirmed by size-exclusion chromatography small-angle X-ray scattering (SEC-SAXS) studies which also indicated that Lf and Lfcn have non-overlapping binding sites on LbpB with a 1:1 binding ratio for each. Structure-guided mutagenesis studies then probed the binding interfaces between NmLbpB and both Lf and Lfcn using biophysical and biochemical techniques. Our results support the model where LbpB serves dual functions, both in iron piracy from holo-Lf and as an antimicrobial peptide sink, during Neisserial pathogenesis.\n\n## Results\n\n### Complex formation of Neisserial LbpB with human Lf\n\nFor complex formation and structural studies, we recombinantly expressed and purified the soluble construct of LbpB from N. meningitidis (NmLbpB) (residues 20\u2013737) and N. gonorrhoeae (NgLbpB) (residues 20\u2013728) (Figure 1B). Solid-phase-binding assays showed that these purified LbpB constructs were sufficient for binding holo-Lf (Figure 1C and Figure 1\u2014source data 1). For large-scale studies, Lf was purchased and further purified using SEC. Complexes of LbpB with Lf were formed upon incubation of purified LbpB with an excess of Lf and separated using SEC, with the complex eluting as a left-shifted peak (Figure 1D). Sodium dodecyl sulphate-polyacrylamide gel electrophoresis (SDS\u2013PAGE) analysis confirmed the peak contained both components and suggested a 1:1 stoichiometric complex for both the NmLbpB and NgLbpB complexes with Lf (Figure 1E and Figure 1\u2014source data 1).\n\n### Solution studies of LbpB complexes with Lf\n\nIt has been previously reported that NmLbpB may have multiple Lf-binding sites and may form higher-order complexes (Ostan et al., 2017). However, in our studies with complex formation by SEC, we observed that NmLbpB appears to form a stable 1:1 complex with Lf. To further confirm this, we studied the stoichiometry of LbpB (Nm and Ng) in complex with Lf in solution using inline SEC-SAXS. The SAXS curve provides information about the shape, molecular weight, and maximum length of a protein or protein complex. It is a great tool for comparing the structural effects of different ligands bound LbpB and for comparing the structures of LbpB from Nm and Ng to determine how closely they match. Further, SAXS allows us to compare how closely our structures match what is observed in solution by seeing how well the simulated SAXS curve from our structure fits the experimental SAXS curve. For our experiments here, our SEC-SAXS studies showed that the individual LbpB and Lf proteins existed as monomers in solution, while the NmLbpB\u2013Lf complex had an experimental molecular weight of 159.6 kDa corresponding to 1:1 stoichiometry complex of NmLbpB and Lf (calculated molecular weight is 156.6 kDa) (Figure 2A and B and Supplementary file 1a). The calculated radius of gyration (Rg) and maximal intramolecular dimension (Dmax) are both consistent with a 1:1 stoichiometric complex. Further, we used SEC-SAXS analysis to show that in solution, NgLbpB alone and a complex with Lf match closely to those with NmLbpB (Figure 2A and B, and SI Supplementary file 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71683/elife-71683-fig2-v1.jpg)\n\n**Figure 2.:** To compare the overall structures between the two species, SEC-SAXS analysis for both N. meningitidis LbpB (NmLbpB) (green) and NgLbpB (orange) was performed with resulting scattering profiles (top), Guinier plots (middle, offset for clarity), and P(r) plots (bottom) with closely matching Rg and Dmax values alone (A), in complex with lactoferrin (Lf) (B), and in complex with lactoferricin (Lfcn) (C). Since minimal differences were observed between the Nm and Ng samples, this supports the conclusion that LbpB has a conserved overall structure. (D) A superposition of scattering profiles for NmLbpB alone (green), in complex with Lf (olive), and in complex with Lfcn (grey). The bottom panel shows a zoomed view at lower q values to highlight the large change for the Lf complex and the small, but reproducible change observed for the Lfcn complex (green vs grey). Here, a significant difference in the shape of the curve was observed with Lf binding (green vs olive) confirming complex formation. And while small, a change upon Lfcn binding (green vs grey) could also be observed to confirm an overall structure change, albeit, much smaller given that the ligand is a peptide. (E) A zoomed view at lower q values comparing the NmLbpB\u2013Lf complex in the absence (olive) and presence (blue) of Lfcn. Again, a reproducible small change is observed in the presence of Lfcn, confirming binding of the peptide. (F) P(r) plots for NmLbpB in the absence (green) and presence of Lfcn (grey) show that small structural changes occur upon Lfcn binding. (G) P(r) plots for NmLbpB\u2013Lf in the absence (olive) and presence of Lfcn (blue), similarly showing that small structural changes occur upon Lfcn binding even in the presence of Lf. (H) A Crysol plot of the calculated scattering curve for the NmLbpB structure (red line) with the experimental scattering profile (green). (I) A Crysol plot of the calculated scattering curve for the NmLbpB\u2013Lf complex structure (red line) with the experimental scattering profile (olive). Panels H and I provide confirmation that our X-ray crystal structure of NmLbpB\u2013Lf agrees well with the \u2018in-solution\u2019 structures of NmLbpB alone and in complex Lf.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71683/elife-71683-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) A comparison of the static SAXS plots (log\u2013log) of N. meningitidis LbpB (NmLbpB) at three different concentrations (0.85 mg/ml [blue], 1.7 mg/ml [orange], and 3.41 mg/ml [green]; blank is shown in grey). The inset shows respective Guinier plots at low q values (linear fits are shown as solid black lines); plots have been offset for clarity. (B) A comparison of the static SAXS plots (log\u2013log) of NmLbpB in complex with lactoferrin (Lf) at three different concentrations (0.59 mg/ml [blue], 1.19 mg/ml [orange], and 2.38 mg/ml [green]; blank is shown in grey). The inset shows respective Guinier plots at low q values (linear fits are show as solid black lines); plots have been offset for clarity. For both panels, the magenta arrows highlight the intersection of the plots at the y-intercept, where LbpB with Lf is perpendicular, indicating a more stable sample; while LbpB only is not perpendicular, indicating a less stable sample. This is further confirmed when comparing the brown arrows showing the presence of Lf stabilizes the sample for SAXS analysis, whereas aggregation is observed at low q for the LbpB only sample.\n\n### The crystal structure of NmLbpB in complex with human Lf\n\nStatic small-angle X-ray scattering (SAXS) analysis showed that NmLbpB alone tends to aggregate in solution, while the NmLbpB\u2013Lf complex forms a monodisperse stable complex (Figure 2\u2014figure supplement 1). Therefore, crystallization screening focussed on both Nm and NgLbpB\u2013Lf complexes using commercial broad-matrix screens. Initial lead conditions were optimized, however, diffraction quality crystals could only be grown of the NmLbpB\u2013Lf complex. Data were collected at the GM/CA ID-D beamline at the Advanced Photon Source and the structure of the NmLbpB\u2013Lf complex solved to 2.85 \u00c5 resolution using molecular replacement in space group P43212. Model building was performed in COOT and the structure refined using phenix.refine to final Rwork/Rfree values of 0.20/0.25 (Figure 3A and Supplementary file 1b). One complex was observed in the structure containing one molecule of Lf (consisting of ordered N- and C-lobes) and one molecule of NmLbpB (consisting of an ordered N-lobe, but partially ordered C-lobe).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71683/elife-71683-fig3-v1.jpg)\n\n**Figure 3.:** (A) Zoomed view at the interface between NmLbpB and lactoferrin (Lf) depicting the quality of the electron density shown as a grey isosurface (2FO\u2013FC, 1.0\u03c3). (B) Orthogonal views of the complex with NmLbpB in green, Lf in violet, and the iron atoms as red spheres. The N-lobe of NmLbpB interacts with only the C-lobe of Lf along an extended interface. (C) The C-lobe of NmLbpB has high B-factors with the large loops of this lobe not observed in our structure; the black arrow indicates the putative location of these loops. (D) An alignment of Lf from the complex with the structure of uncomplexed Lf (PDB ID 2BJJ) shows very little conformational changes upon binding NmLbpB (root-mean-square deviation (RMSD) of 1.3 \u00c5). (E) A zoomed view of the binding interface shows extensive interactions along an elongated surface covering both the C1 and C2 domains of Lf (buried surface area 1760.8 \u00c52). (F) Solid-phase-binding assays show Lf binds both full-length and N-lobe NmLbpB, but not C-lobe only, supporting the observations in the complex structure. (G) Much like what has been proposed for the role of transferrin-binding protein (Tbp) B in the Tbp system, here we propose that lactoferrin-binding protein B (LbpB) also serves to bind and lock Lf in an iron-bound state for delivery to LbpA for iron import.\n\nThe overall structure of the NmLbpB\u2013Lf complex has an overall L-shape (Figure 3B). The N-lobe of NmLbpB is composed of residues 1\u2013342 forming two domains, an N-terminal handle domain (residues 45\u2013173) and an eight-stranded \u03b2-barrel domain (residues 174\u2013342). The handle domain contains four anti-parallel \u03b2-strands and an \u03b1-helix between \u03b2-strand 1 and 2. The \u03b2-barrel domain is packed against the \u03b2-sheet of handle domain. The C-lobe of NmLbpB is composed of residues 359\u2013718 and found largely disordered in the crystal structure as evident from higher B-factors for this region compared to the rest of the structure (Figure 3C). The C-lobe also contains a handle domain (residues 359\u2013540) and an eight-stranded \u03b2-barrel domain (residues 541\u2013718). While the C-lobe \u03b2-barrel domain shares homology with the N-lobe \u03b2-barrel domain, the C-lobe handle domain is different as it is composed of a six-stranded \u03b2-sheet packed against the \u03b2-barrel domain and flanked by two antiparallel \u03b2-strands. Importantly, the C-lobe of LbpB contains several long anionic loops, however, none of these were observed in the electron density likely due to their flexibility.\n\nThe Lf structure also consists of N- and C-lobes with each lobe further divided into two subdomains termed N1 and N2 (N-lobe) and C1 and C2 (C-lobe). In the presence of iron, the subdomains of each lobe are bridged together forming the closed state (Baker and Baker, 2005; Sill et al., 2016). However, in absence of iron, these lobes are known to undergo conformational changes to adopt an open conformation (Baker and Baker, 2005; Sill et al., 2016). Structural alignment of Lf alone (PDB ID 2BJJ) with Lf in our complex (RMSD 1.3 \u00c5) shows that both lobes are in closed conformations, as expected since we observe an iron in each lobe, and that Lf undergoes minimal changes upon binding NmLbpB (Figure 3D). Further, the calculated SAXS scattering curve from our crystal structure agrees well with our experimental SAXS scattering curve in solution (Figure 2H1).\n\nThe interaction of NmLbpB with Lf is mediated exclusively through the N-lobe of NmLbpB with the C-lobe of Lf (Figure 3B). This interface consists of regions along both the C1 and C2 domains of Lf including residues D630, S637, T639, K640 (C1 domain) and E512, R525, E538, N539, D561 (C2 domain) (Figure 3B and E). Interacting simultaneously with the C1 and C2 domains of Lf, the N-lobe of NmLbpB has an extended interaction interface that includes residues N154, R193, S201, D204, N213, R223, K230, Y253, Q255, and S258 (Figure 3B and E). Given our crystal structure indicated that binding to Lf was exclusively along the N-lobe of NmLbpB, we used solid-phase-binding assays to show that indeed Lf could only interact with the full length and N-lobe only constructs, but not with the C-lobe only (Figure 3F and Figure 3\u2014source data 1f).\n\n### The cryoEM structure of NgLbpB in complex with human Lf\n\nCrystallization with NgLbpB was unsuccessful, therefore, we used cryoEM to determine the structure of NgLbpB in complex with Lf to 3.65 \u00c5 resolution (Supplementary file 1c). Very good density was observed for side chains of both lobes of Lf and for the N-lobe of NgLbpB allowing unambiguous model building and refinement, however, almost no density was observed for the C-lobe of NgLbpB, unless map contours were reduced drastically (Figure 4A and B and Figure 4\u2014figure supplement 1). An alignment of the Nm and NgLbpB complexes with Lf had an overall RMSD of 3.7 \u00c5, however, an improved RMSD of 1.4 \u00c5 when aligning just along the interacting domains (C-lobe of Lf and N-lobe of LbpB), indicating a conserved binding interface between Nm and Ng (Figure 4C and D). Additionally, the N-lobe of Lf in the NgLbpB\u2013Lf cryoEM structure is positioned ~12\u00b0 relatively to the NmLbpB\u2013Lf crystal structure. Whether this structural difference in the N-lobe of Lf is just an artifact of crystal packing or if it is truly important for function in LbpB remains to be determined.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71683/elife-71683-fig4-v1.jpg)\n\n**Figure 4.:** (A) Zoomed view at the interface between NgLbpB and lactoferrin (Lf) depicting the quality of the density shown as a grey isosurface. (B) Orthogonal views of the full cryoEM map with NgLbpB in green and Lf in violet. (C) Orthogonal view of an alignment of the NgLbpB\u2013Lf cryoEM structure (green/violet) with the N. meningitidis LbpB (NmLbpB)\u2013Lf crystal structure (grey) (RMSD 1.4 \u00c5 along the interacting domains). (D) A zoomed view of the binding interface shows extensive interactions along an elongated surface covering both the C1 and C2 domains of Lf (buried surface area 1604 \u00c52).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71683/elife-71683-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative cryoEM micrograph from a total of 4966. Picked particles were subjected to iterative rounds of 2D classification. (B) Representative 2D class averages show different orientations of the particles. Two rounds of ab initio reconstruction followed by heterogeneous refinement produced 10 initial models in round 1 (C) and 3 initial models in rounds 2 (D). Boxed classes were selected for further processing. (E) Final 3D reconstruction map upon non-uniform refinement was obtained at 3.65 \u00c5. (F) Local resolution of final cryoEM map. (G) Gold-standard Fourier shell correlation (GSFSC) curve of NgLbpB\u2013Lf map. The horizontal blue line indicates 0.143 cutoff for resolution estimation.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71683/elife-71683-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Solid-phase-binding assays of dilutions of NgLbpB and mutants with horse radish peroxidase (HRP)-conjugated lactoferrin probe. (B) Enzyme-linked immunosorbent assays (ELISAs) of NgLbpB and mutants showing normalized absorbance. All experiments were done at least in triplicate.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71683/elife-71683-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) A superposition of the NmLbpB (green) and NmTbpB (grey) (PDB ID 3V8U) structures (RMSD of 2.0 \u00c5). (B) Orthogonal views of a superposition of the NmLbpB\u2013lactoferrin (Lf) (green/violet) and NmTbpB\u2013transferrin (Tf) (grey) (PDB ID 3VE1) structures (overall RMSD of 4.0 \u00c5; an RMSD of 1.4 \u00c5 was calculated for alignment of the interacting domains only). (C) A zoomed view from panel B of the dashed box along the binding interfaces.\n\n### Mutagenesis studies targeting the binding interface between LbpB and Lf\n\nIn the Nm/NgLbpB\u2013Lf complex structures, LbpB interacts with both the C1 and C2 subdomains within the C-lobe of Lf in an extended interface (Figures 3B, E ,, 4C and D). In the NmLbpB\u2013Lf complex, the interaction interface is stabilized by extensive hydrogen bonding and salt bridge interactions encompassing a buried surface area of ~1760.8 \u00c52 (Supplementary file 1d). Based on analysis of our crystal structure, we performed mutagenesis of interface residues in NmLbpB important for mediating Lf binding (Figure 5). Those included K71, Q73, R135, K140, K143, R193, D204, T209, Y210, R223, and D227, most of which are conserved in NgLbpB (Figure 4D and Supplementary file 1e). These mutants all expressed similar to wild type and could be purified using the same method, indicating they were stably folded. The effect of these mutations on Lf binding was first tested with solid-phasing binding assays (Figure 4\u2014figure supplement 2 and Figure 4\u2014figure supplement 2; Source data 1) and with enzyme-linked immunosorbent assays (ELISAs) and compared to wild type (Figure 5B). The results showed that all of the mutations had a significant effect on Lf binding with most resulting in more than ~50% reduction in binding except for mutations Q73E, K143E, and R223E. Those having at least a ~75% reduction in binding included R135E, D140K, R193E, D204K, D227K, R135E/R223E, and T209N/Y210K. To further characterize Lf binding to the mutants, we performed isothermal titration calorimetry (ITC) analysis using a MicroCal iTC200 to determine thermodynamics parameters of binding, including Kd values, and compared the results of the mutants to wild type (Figure 5C and Supplementary file 1f). Representative ITC plots show a Kd value of 0.14 \u03bcM for Lf binding to wild-type NmLbpB with a \u0394H of \u221215.8 kcal/mol and an n value of ~1. Agreeing well with the ELISA analysis, \u0394H values for the all the mutants except for K143E were significantly reduced ranging from \u22125.4 to \u221211.8 kcal/mol (R135E, D140K, R193E, and D227K) and accompanied by increases in Kd values ranging from 9- to 115-fold over wild type.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71683/elife-71683-fig5-v1.jpg)\n\n**Figure 5.:** (A) A zoomed view of the N-lobe of NmLbpB along the lactoferrin (Lf) interaction interface, highlighting primary residues involved in binding. (B) Enzyme-linked immunosorbent assays (ELISAs) to test the effects of structure-guided mutations of NmLbpB on Lf binding along the interaction interface. (C) Analysis of the binding parameters using isothermal titration calorimetry analysis of wild type and mutants of NmLbpB measuring the effects on Lf binding.\n\n### Mutagenesis studies targeting the putative binding interface between LbpB and Lfcn\n\nTo gain more insight into the binding of Lfcn with LbpB, we performed SEC-SAXS experiments with and without Lfcn, finding that the presence of Lfcn produced a small, but reproducible, change in the scattering profile at lower q values in the range of 0.04\u20130.08 (Figure 2C and D). A similar change along lower q values in the range of 0.05\u20130.07 was also observed for the NmLbpB\u2013Lf complex when Lfcn was added (Figure 2E). Together, these data support the hypothesis that Lfcn binding is distinct from Lf binding, further supporting that Lfcn binding is along the C-lobe of LbpB. While we were able to co-crystallize Lfcn with NmLbpB\u2013Lf and solve the structure, the C-lobe of LbpB remained highly disordered and therefore, we were unable to determine the binding interactions. Therefore, to probe the putative binding site of Lfcn, we analyzed the NmLbpB\u2013Lf structure to determine the boundaries of the C-lobe loops (Figure 6A). An electrostatic surface representation of this region shows it to be highly charged with at least one large strongly electronegative region along loops consisting of residues 372\u2013383, 416\u2013418, and 445\u2013526; a more accurate analysis of the electrostatics here is not possible given the lack of order in the loops (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/71683/elife-71683-fig6-v1.jpg)\n\n**Figure 6.:** (A) A zoomed view of the C-lobe of NmLbpB with the loops indicated in orange. (B) An electrostatic surface potential representation along the C-lobe of NmLbpB depicting the charged surfaces, including a strongly electronegative region (red). (C) Analysis of the binding parameters using isothermal titration calorimetry (ITC) analysis of wild type and loop-deletion mutants of NmLbpB measuring the effects on lactoferricin (Lfcn) binding. (D) ITC analysis of the NmLbpB\u2013Lfcn complex titrated with lactoferrin (Lf), showing comparable binding to NmLbpB alone. (E) ITC analysis of the NmLbpB\u2013(Lf) complex titrated with Lfcn, showing comparable binding to NmLbpB alone. (F) Model for the dual function of LbpB in mediating Neisserial pathogenesis by serving in both iron piracy and as an antimicrobial peptide (AMP) sink. While not shown, processing by NalP produces a soluble version of LbpB which can diffuse into the host environment to actively locate and neutralize AMP threats.\n\nBased on these loop boundaries, we made deletion mutants with each lacking one of the loops of the C-lobe of NmLbpB. Albeit to varying levels, these mutants all expressed and could be purified using the same method as for wild type, indicating they were stably folded. We then analyzed the effects of these deletions on Lfcn binding in comparison to wild type using ITC analysis on a Nano ITC instrument (Figure 6C and SI Table S7). Our results show that Lfcn binds to wild-type NmLbpB with a Kd of 3.7 \u03bcM, a \u0394H of \u221211.4 kcal/mol, and an n value of ~1. The loop deletions \u0394372\u2013383, \u0394416\u2013418, \u0394561\u2013565, \u0394594\u2013599, and \u0394665\u2013698, however, showed only minimal differences in \u0394H and no significant change in Kd, except for \u0394445\u2013526 (\u0394H of \u22129.6 kcal/mol and a ~2.5-fold increase in Kd). All n values here are larger than 1 and roughly twofold higher than that observed with Lf (n value slightly below 1), an observation we attribute to inaccuracies in using absorbance measurements at \u03bb280 for determining protein and peptide concentrations. Loops containing residues 445\u2013526 and 665\u2013698 contain charged patches that have been shown to affect Lfcn binding (Morgenthau et al., 2014a; Ostan et al., 2017), however, individually removing them did not appear to abrogate binding in our study. However, a double loop-deletion mutant \u0394445\u2013526_\u0394665\u2013698 showed a significantly reduced \u0394H with only barely detectable binding. This confirms that these two loops together contribute to Lfcn binding in LbpB, which is likely mediated by the charged residues they contain. Exactly how Lfcn binding is mediated though by these loops will require additional structural studies.\n\nOur SEC-SAXS experiments suggested that Lf and Lfcn had distinct, non-competing, binding sites on LbpB. Therefore, we next performed ITC experiments using a Nano ITC instrument to determine the binding properties of Lf to NmLbpB in the absence or presence of Lfcn. Our results show that Lf binds to NmLbpB alone with a Kd of 0.45 \u03bcM and a \u0394H of \u221215.1 kcal/mol (SI Table S8). Nearly identical binding parameters are observed for Lf binding to the preformed NmLbpB\u2013Lfcn complex, indicating that the presence of Lfcn has no effect on Lf binding (Figure 6D and SI Table S8). We next tested the effect of the presence of Lf on Lfcn binding. Our earlier results showed that Lfcn binds to NmLbpB alone with a Kd of 3.7 \u03bcM and a \u0394H of \u221211.4 kcal/mol, while here we found that Lfcn binds to the NmLbpB\u2013Lf complex with a Kd of 7.3 \u03bcM and a \u0394H of \u221210.6 kcal/mol (Figure 6E and SI Table S8). Only ~ twofold difference in Kd was observed here, however, no change in \u0394H indicating that binding of Lfcn to NmLbpB is not disrupted in the presence of Lf.\n\n## Discussion\n\nThe role of LbpB in Neisserial pathogenesis has been debated over the years given that it appears to share many properties with TbpB, which is involved in iron scavenging from Tf, but has also been shown to be important in protecting against the host antimicrobial peptide Lfcn (Morgenthau et al., 2014a; Morgenthau et al., 2014b; Roussel-Jaz\u00e9d\u00e9 et al., 2010). For its iron import role, studies have indicated that LbpB may bind multiple copies of Lf (Ostan et al., 2017). However, our studies here strongly support that LbpB binds Lf in a 1:1 complex, which is demonstrated by our SEC, SAXS, X-ray crystal structure, and cryoEM structure. Further, our ITC experiments also demonstrate 1:1 binding properties with an n value (molar ratio) of ~1.\n\nOur structures align well with the previously reported N-lobe only structure of LbpB (PDB ID 4U9C) with an RMSD of 0.34 \u00c5 (for 261 C\u03b1 atoms) compared to our NmLbpB crystal structure. Additionally, NmLbpB aligns well with NmTbpB (PDB ID 3V8U) with an overall RMSD of 1.8 \u00c5. The interacting lobes from LbpB\u2013Lf and TbpB\u2013Tf (PDB ID 3VE1) have an overall RMSD of 1.4 \u00c5, further evidence that the Lbp and Tbp systems likely share a common mechanism in iron acquisition from their respective host iron-binding proteins (Figure 4\u2014figure supplement 3; Gray-Owen and Schryvers, 1996; Noinaj et al., 2013; Schryvers and Lee, 1989). Here, surface anchored LbpB would selectively accumulate iron-bound Lf, preserving the bound iron for eventual import by LbpA (Figures 3G and 6F; Calmettes et al., 2012). This would ensure efficiency in iron scavenging for survival during pathogenesis since TbpA (and likely LbpA) can also bind with high affinity apo-Tf/Lf which lacks iron (Krell et al., 2003; Noinaj et al., 2012b; Powell et al., 1998).\n\nUnlike TbpB, LbpB has also been implicated in mediating evasion of the host immune responses during infection by specifically neutralizing the antimicrobial peptide Lfcn (Morgenthau et al., 2014b; Ostan et al., 2017). This may occur at the surface of the pathogen or in solution following cleavage and release by NalP (Morgenthau et al., 2014a; Roussel-Jaz\u00e9d\u00e9 et al., 2010). Exactly how LbpB interacts with Lfcn has not been fully resolved, however, studies have pointed to several charged patches on the C-lobe as mediating this interaction (Morgenthau et al., 2014a; Ostan et al., 2017). Further, we report here that the loop containing the smaller charged region (residues 665\u2013698) alone has little effect on Lfcn binding compared to wild type, yet does appear to synergize binding with the loop consisting of 445\u2013526. Together, our structural studies, mutagenesis, and binding studies agree with the earlier reports and allow us to conclude that Lfcn specifically interacts with the C-lobe only of LbpB through primarily two loops consisting of residues 445\u2013526 and 665\u2013698. It has been shown that LbpB can protect against other peptides as well, however, whether binding of these other peptides involves the same loops or charged interfaces remains to be determined. The presence of Lf had little effect on the binding of Lfcn and vice versa, demonstrating that each have non-overlapping and non-competing binding sites, refuting the previous notion that both may share a common binding site (Brooks et al., 2014). While we were able to grow crystals in the presence of Lfcn, the loops along the putative binding interface lacked sufficient density to observe the peptide itself or its interactions with LbpB. Therefore, further studies will need to be done here in order to fully understand the atomic details of this interaction. Together, our studies support a model where LbpB serves a dual function in Neisserial pathogenesis, in both iron import under iron-limiting conditions and as an antimicrobial peptide sink for the evasion of host immune responses (Figure 6F).\n\n## Materials and methods\n\n### Cloning, expression, and purification\n\nThe codon optimized LbpB from N. meningitidis strain MC58 (NmLbpB) was purchased from Bio Basic. For expression, a gene fragment encoding residues 20\u2013737 was subcloned in expression vector pHIS-Parallel2 with N-terminal 6\u00d7 His-tag and Tobacco Etch Virus (TEV) protease cleavage site. For large-scale expression, the expression vector was transformed into BL21(DE3) cells and protein expression performed at 24\u00b0C upon induction with 0.5 mM isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) for 9\u201312 hr. Cells were harvested by centrifugation at 6000 rpm and stored at \u221280\u00b0C until further use.\n\nFor purification, frozen pellets were thawed and resuspended in lysis buffer (20 mM Tris\u2013HCl, pH 7.5, 150 mM NaCl, 5 mM \u03b2-mercaptoethanol [BME], 25 mM imidazole) supplemented with 10 \u00b5g/ml DNaseI and 0.5 mM phenylmethylsulfonyl fluoride. Cells were lysed by three passages through Emulsiflex C3 high pressure homogenizer (Avestin). The cellular debris were removed by centrifugation at 18,000 rpm for 30 min at 4\u00b0C. The supernatant was collected and subjected to affinity purification using 5 mL Hi-Trap column containing Ni-NTA resin (Qiagen) on an AKTA Pure 25 L protein purification system (GE Healthcare). The column was washed with 10 column volume (CV) lysis buffer and protein was eluted using elution buffer (20 mM Tris\u2013HCl pH 7.5, 150 mM NaCl, 5 mM BME, 250 mM imidazole). The eluted protein was subjected to TEV protease digestion to remove the 6\u00d7 His-tag. The digested protein was cleaned up using a Ni-NTA affinity column and the flowthrough collected. The concentrated flowthrough was further purified using SEC on a Superdex 200 10/300 GL Increase (GE Healthcare) column using 20 mM Tris\u2013HCl pH 7.5, 150 mM NaCl. The elution fractions were run on an SDS\u2013PAGE gel to examine purity. The fractions containing NmLbpB were pooled and concentrated for further experiments.\n\nThe DNA sequences for the individual lobes (N- and C-lobes) encoding residues 20\u2013362 and 381\u2013737, respectively, were amplified using full-length NmLbpB as template. These fragments were ligated into pHIS-Parallel2 with N-terminal 6\u00d7 His-tag and TEV protease cleavage site. Also, point mutants were created using wild-type NmLbpB plasmid using standard site-directed mutagenesis methods. These constructs were expressed and purified using the similar approach as full-length NmLbpB as described above.\n\nThe NgLbpB gene fragment encoding residues 20\u2013728 was amplified from the genomic DNA of N. gonorrhoeae strain FA19 with primers containing restriction sites for NcoI and XhoI. The gene fragment was cloned into pHIS-Parallel2 plasmid for expression. The construct was confirmed by DNA sequencing. The expression and purification of NgLbpB were performed using the same approach as for full-length NmLbpB as described above.\n\nFor complex formation, purified Nm/NgLbpB was incubated with twofold molar excess of human holo-Lf (RayBiotech, Inc) at 4\u00b0C for 1 hr. The complex was separated from excess Lf using SEC on a Superdex 200 10/300 GL Increase column (GE Healthcare). Complex formation was confirmed using SDS\u2013PAGE gel. The fractions containing Nm/NgLbpB\u2013Lf were pooled and concentrated for further experiments.\n\n### Dot blots\n\nFor dot blot assays with NmLbpB wild type and mutants, 10 \u00b5l of each sample was spotted on polyvinylidene difluoride (PVDF) membrane and air dried. The membrane was then blocked by incubation of the membrane in 5% bovine serum albumin (BSA) for 1 hr followed by three washes with 1\u00d7 PBST (1\u00d7 phosphate buffered saline [PBS] + 0.005% Tween-20) 5 min each. Potential ligand binding was performed by incubating the blots in 20 \u00b5g/ml holo-Lf in PBST +0.5% BSA for 1 hr. Unbound ligand was removed by three washes with PBST. The blots were probed using horse radish peroxidase (HRP) enzyme-conjugated rabbit anti-human Lf antibody (RayBiotech, Inc) for 1 hr. Excess antibody was removed by washing using three washes of 1\u00d7 PBST and 1\u00d7 PBS each. Finally, enhanced chemiluminescence (ECL) substrate was used for the detection of HRP\u2019s enzymatic activity.\n\nFor dot blot assays with NgLbpB wild type and mutants, 10 \u00b5l of each sample was spotted on activated PVDF membrane and air dried. 1\u00d7 PBS with BSA (5%) was used for blocking unoccupied sites followed by three washes with 1\u00d7 PBST. The HRP-conjugated holo-Lf (Lf-HRP) probe was used to monitor Lf binding. Excess probe was removed by washes with 1\u00d7 PBST and 1\u00d7 PBS. Finally, ECL substrate was used for the detection of HRP activity.\n\nAll dot blot assays were performed at least in triplicate with representative data shown.\n\n### Size-exclusion chromatography small-angle X-ray scattering\n\nPurified samples were subjected to inline SEC-SAXS. The scattering data were collected at beamline 18-ID of Biophysics Collaborative Access Team (BioCAT) of the Advanced Photon Source, Argonne National Laboratory. The data were analyzed and final plots made using BioXTAS RAW (Hopkins et al., 2017) and ATSAS (Manalastas-Cantos et al., 2021). First, the data were reduced and the data range for scattering curves were selected. Upon averaging of the data, the q-range and molecular weight information were obtained by analyzing Guinier plot. The pair-distance distribution curves were calculated using GNOM. Theoretical scattering for the X-ray and cryoEM structures was calculated and compared with experimental scattering curves using Crysol.\n\n### Crystallization, data collection, and structure determination using X-ray crystallography\n\nFor crystallization, NmLbpB\u2013Lf was concentrated to 7.4 mg/ml. Initial crystallization trials were performed using commercial screens using hanging-drop vapour-diffusion method at 20\u00b0C. Crystal hits identified from these screens were optimized. Diffraction quality crystals of NmLbpB\u2013Lf were obtained in 2.0 M ammonium sulphate, 20 mM Tris, pH 8.5 at 20\u00b0C. Crystals were harvested and diffraction data were collected at the GM/CA 23ID-D beamline at the Advanced Photon Source, Argonne National Laboratory using Pilatus 6 M detector at 100 K. The data were processed using HKL2000 (Otwinowski and Minor, 1997) in space group P43212 with unit cell parameters a = b = 120.39, c = 207.38, \u03b1 = \u03b2 = \u03b3 = 90.0.\n\nInitial phases were calculated by molecular replacement within PHASER (Phenix) (Liebschner et al., 2019; McCoy et al., 2007) using the structure of diferric human Lf (PDB ID: 2BJJ) and structure of the N-lobe of NmLbpB (PDB ID: 4U9C). Furthermore, the model was build using Coot (Emsley et al., 2010) and refined using phenix.refine (Phenix) (Liebschner et al., 2019). The final model was refined to Rwork and Rfree values 0.20 and 0.25, respectively, at 2.85 \u00c5 resolution. The geometric analysis was performed using Molprobity (Phenix) (Chen et al., 2010; Liebschner et al., 2019). Structural analysis and figure preparation were performed using PyMol (Schr\u00f6dinger). Final figures were assembled using Adobe Photoshop and Illustrator.\n\n### Grid preparation, data collection, and structure determination using cryoEM\n\nPurified NgLbpB\u2013Lf complex was applied to Quantifoil R 3.5/1 Cu 200 grids, that were first glow discharged using a Pelco EasiGlow instrument, and plunge-frozen using Vitrobot Mark IV (Thermo Fisher Scientific). Grids were screened and the grid with optimal particle distribution and ice-thickness was used for data collection using a Titan Krios G1 microscope equipped with a Gatan K3 direct electron detector and a Gatan Quantum energy filter. Movies were collected in super-resolution counting mode (pixel size 0.54 \u00c5) with a total dose of 53.68 e\u2212/\u00c52. A total 4966 movies were collected and subjected to motion correction using MotionCor2 (Zheng et al., 2017). The subsequent data processing was performed using cryoSPARC (Punjani et al., 2017). CTF parameters were obtained using \u2018Patch CTF estimation (multi)\u2019. An initial set of templates were made by first using \u2018Blob picker\u2019 followed by \u20182D Classification\u2019. The best 2D classes were then fed into \u2018Template picker\u2019 and subjected to multiple rounds of 2D classification to remove junk particles. The best classes representing different particle orientation were then used for \u2018Ab-initio Reconstruction\u2019. After two rounds of \u2018Ab-initio Reconstruction\u2019 followed by \u2018Heterogeneous refinement\u2019, the best-looking class was subjected to \u2018Non-uniform Refinement\u2019, which yielded a final reconstruction to 3.65 \u00c5 resolution. A model of the NgLbpB\u2013Lf structure was prepared based on the NmLbpB\u2013Lf crystal structure and placed and fit within the map using ChimeraX (Pettersen et al., 2021). The cryoEM map contained well-resolved density at the protein\u2013protein interface, however, the C-lobe of NgLbpB could only be placed as a rigid body given only minimal density even when map contours were reduced. The structure was refined using \u2018Real-space refinement\u2019 within Phenix (Liebschner et al., 2019) and figures and analysis performed using ChimeraX (Pettersen et al., 2021) and PyMOL (Schr\u00f6dinger). Final figures were assembled using Adobe Photoshop and Illustrator.\n\n### Enzyme-linked immunosorbent assays\n\nFor binding analysis with Lf, we performed sandwich ELISAs. The NmLbpB variants were coated on hydrophobic plates by first incubating the plates with 0.1 mg/ml of each protein at 4\u00b0C overnight. Acinetobacter baumannii BamB (a kind gift from Robert Stephenson) was included as a negative control. After incubation, wells were washed three times with 1\u00d7 PBST and blocked with 5% BSA for 30 min. Subsequently, BSA was removed and the wells were washed three times with 1\u00d7 PBST. For ligand binding, the wells were incubated with the Lf for 30 min. Following that, plates were washed three times with 1\u00d7 PBST and probed with HRP-conjugated rabbit anti-human Lf antibody (RayBiotech, Inc) for 30 min. The antibody was washed away with three washes of 1\u00d7 PBST and 1\u00d7 PBS. The assay was then developed using 1-Step Ultra TMB-ELISA substrate solution (Thermo Scientific). Finally, the assay was stopped upon addition of 0.18 M sulfuric acid. For quantitative data, the absorbance at 450 nm was measured using a Spectramax M2e microplate reader (Molecular Devices). All the experiments were performed in triplicate and repeated at least twice. Similarly, to study Lf binding of the NgLbpB wild type and mutants, ELISAs were performed using HRP-conjugated holo-Lf (Lf-HRP) as a probe for Lf binding. Pisum sativum Toc75 POTRA (a kind gift from Karthik Srinivasan) was included as a negative control.\n\nAll ELISA experiments were performed in triplicate with standard errors shown.\n\n### Isothermal titration calorimetry\n\nTo monitor the properties of Lf binding to the NmLbpB variants, ITC experiments were performed using a MicroCal iTC200 ITC calorimeter (Malvern Panalytical). The NmLbpB variants and Lf proteins were buffer exchanged into 1\u00d7 PBS (PBS: 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4, pH 7.5) by SEC. The NmLbpB variants and Lf were concentrated to 30 and 300 \u00b5M concentration, respectively. Lf was titrated into ITC sample cell containing the NmLbpB variants at 25\u00b0C. Data analysis was performed using Origin 7.0 (OriginLab).\n\nLfcn binding to wild type and loop-deletion mutants of NmLbpB was measured using a Nano ITC instrument (TA instruments). The sample cell contained 30 \u00b5M of protein with 600 \u00b5M of Lfcn injected over 20 injections with stirring at 300 RPM at a temperature of 10\u00b0C. The ITC data were analyzed using minimized independent binding model with the instrument NanoAnalyze software.\n\nITC experiments to study the effect of presence of Lfcn on Lf binding to NmLbpB and vice versa, were performed using a Nano ITC instrument (TA instruments). The protein in the sample cell was loaded at 30 \u00b5M concentration with stirring at 300 rpm at 25\u00b0C for Lf and at 10\u00b0C for Lfcn titrations at concentrations of 300 and 600 \u00b5M, respectively. The ITC data were analyzed using a minimized independent binding model using the instrument NanoAnalyze software.\n\nAll ITC experiments were performed with at least two replicates with representative data shown.\n",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "1b01bd23-37e1-40c5-a285-6e9a8e8c948b",
+      "submission_id": "109a6bf3-7e77-4995-aff9-a32b86fccfe9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Olga Boudker, Weill Cornell Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71683.sa1](https://doi.org/10.7554/eLife.71683.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nNeisseria infection in humans can lead to serious illnesses, including meningitis and gonorrhea. The study provides important structural details on the molecular interaction between LbpB, a receptor from pathogenic Neisseria bacteria, and the human iron-binding protein lactoferrin. An elegant combination of structural biology and biochemical techniques establishes the binding interaction between these proteins and hints at details of interactions between LbpB and lactoferricin, an antimicrobial peptide derived from lactoferrin itself. This work is especially important for the field of antimicrobial resistance.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural insight into the dual function of LbpB in mediating Neisserial pathogenesis\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Olga Boudker as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Matthew F. Barber (Reviewer #1); John Young (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\n1. Solving the LbpB-lactoferrin structure(s) provides an important advancement for the field that has been sorely missed \u2013 congrats to the authors on this great achievement!\n\n2. Morgenthau et al., (PLOS One, 2014) previously demonstrated that removal of negatively charged sites in the LbpB C-lobe impairs protection against lactoferricin, and other previous studies had implicated the C-lobe of LbpB in lactoferricin recognition. In light of these past studies, it is unclear how our understanding of the LbpB-lactoferricin interaction is significantly advanced. From the title of the paper as well as the abstract, understanding the \"dual\" functions of LbpB seems to be a key goal of the work. Few of the loop mutations appear to have any effect on lactoferricin binding, and it is unclear how the double loop mutant affects the overall structure of the LbpB C-lobe. Any additional insights that could be gleaned regarding the LbpB-lactoferricin interaction would greatly strengthen the paper and support the general conclusions regarding the dual functions of LbpB.\n\n3. All experiments need to have biological repeats to ensure reproducibility. It was not clear from the paper whether all experiments, particularly ITC experiments, have been repeated. Please, clarify and perform replicates as needed.\n\n4. ITC experiments produced stoichiometry n-values that are about twofold higher for lactoferricin than lactoferrin. This surprising observation begs the question: is it possible that two lactoferricin peptides bind to LbpB?\n\n5. Figure 2 is somewhat difficult to interpret. There are many individual panels, and it is difficult for a non-expert to understand what specific information is being conveyed in each figure panel. Please add more details in the figure legend and in the main text to guide the reader. The authors may also want to consider including this as supporting information rather than as the main figure.\n\n6. Lines 145-148: The authors state: \"the NmLbpB-Lf complex forms a monodisperse stable complex (data not shown)\". It seems this is a rather important point in the context of this manuscript \u2013 the authors may want to include this data.\n\n7. Figure 5: The (\u03b4) H vs. Molar ratio plots for the D227K and R135E mutants look almost linear. It seems difficult to derive a kD value from such a plot. The authors should mention this as a caveat in the Results section.Reviewer #1:\n\nPathogenic Neisseria cause bacterial meningitis and gonorrhea in humans and are a major public health concern. The acquisition of essential nutrient iron and resistance to host-derived antimicrobial peptides are key factors in the ability of bacterial pathogens to colonize and cause disease. Previous work has demonstrated that lactoferrin binding protein B (LbpB) is a conserved surface lipoprotein in Neisseria that binds the abundant host iron-binding protein, lactoferrin. While a role for LbpB has been demonstrated in bacterial iron acquisition, the molecular details of this interaction have remained unclear for decades. Moreover, LbpB has previously been reported to mediate bacterial protection against lactoferricin, an antimicrobial peptide cleaved from lactoferrin itself. The details of the LbpB-lactoferricin interaction have been even more contentious over the years.\n\nIn this study, Yadav et al., use a combination of structural and biochemical approaches to determine the structure of the LbpB-lactoferrin complex. Mutagenesis experiments further support the molecular basis for this binding interface between the LbpB N-lobe and the lactoferrin C-lobe. These finding provide an important advancement in our understanding of the LbpB-lactoferrin interaction and will greatly aid in further studies to combat pathogenic Neisseria. The combination of structural approaches (crystallography and cryo-EM) along with other supporting experiments strongly support the authors conclusions regarding LbpB-lactoferrin interactions.\n\nThe authors also perform a series of experiments to probe the LbpB-lactoferricin interaction, providing some evidence supporting the existing model that lactoferricin interacts with the C-lobe of LbpB, at a distinct surface from lactoferrin. While the findings are consistent with previous work, much still remains to be determined regarding this second reported function of LbpB and its importance during Nesseria pathogenesis.Reviewer #2:\n\nYadav et al., utilize X-ray crystallography and cryogenic electron microscopy to determine high-resolution structures of the iron-scavenging lipoprotein LbpB from two different species of pathogenic bacteria (N. meningitidis and N. gonorrhoeae) bound to the human iron-binding protein Lactoferrin. Their data reveal the structures of LbpB are very similar between the two species and show that LbpB consists of two distinct lobes: a well-ordered N-terminal lobe which binds Lactoferrin, and a partially disordered C-terminal lobe. Using site-directed mutagenesis, the authors identify several charged residues on LbpB at the interaction interface which appear especially critical for mediating lactoferrin binding. They quantify the effects of these mutations on LbpB-lactoferrin binding using Isothermal Titration Calorimetry (ITC).\n\nThe authors also investigate the role of LbpB in protecting Neisseria against the cationic antimicrobial peptide lactoferricin. They show that the C-terminal lobe of LbpB interacts with lactoferricin and identify several flexible loop regions of LbpB which mediate this interaction. Furthermore, they quantify the effects of mutating these loop regions on lactoferricin binding using ITC. Since these loop regions were not well-resolved in their structures, the authors were unable to identify specific residue(s) which may mediate the LbpB-lactoferricin interaction. The authors state that obtaining high-resolution structural data in this C-terminal region will be the subject of future work.\n\nThe manuscript is well written, and the experiments are performed to a high technical standard. The experimental data fully support the authors' conclusions. Furthermore, this work has relevance for human health; Neisseria infection is a growing public health concern, particularly in light of the recent rise of antibiotic-resistant strains. As the authors point out, the Lbp system appears to be a promising target for new therapeutics.\n",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8400c0da-ec0d-402a-8eb9-fd052011d271",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C1",
+      "claim": "Lactoferrin-binding protein B (LbpB) is a lipoprotein present on the surface of Neisseria.",
+      "claim_type": "EXPLICIT",
+      "source": "Lactoferrin-binding protein B (LbpB) is a lipoprotein present on the surface of Neisseria that has been postulated to serve dual functions during pathogenesis in both iron acquisition from lactoferrin (Lf), and in providing protection against the cationic antimicrobial peptide lactoferricin (Lfcn).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about LbpB.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "293ab54d-78cf-466f-9698-bc72dc7d2b93",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C2",
+      "claim": "LbpB has been postulated to serve dual functions during pathogenesis in both iron acquisition from lactoferrin and in providing protection against the cationic antimicrobial peptide lactoferricin.",
+      "claim_type": "EXPLICIT",
+      "source": "Lactoferrin-binding protein B (LbpB) is a lipoprotein present on the surface of Neisseria that has been postulated to serve dual functions during pathogenesis in both iron acquisition from lactoferrin (Lf), and in providing protection against the cationic antimicrobial peptide lactoferricin (Lfcn).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to previous studies and the current work's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "c6da134e-1ece-4e8b-9f18-6769241fd3fd",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C3",
+      "claim": "LbpB from N. meningitidis and N. gonorrhoeae forms a 1:1 complex with human holo-Lf.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the structures of LbpB from N. meningitidis and N. gonorrhoeae in complex with human holo-Lf, forming a 1:1 complex and confirmed by size-exclusion chromatography small-angle X-ray scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from SEC, SAXS, crystal structure, and cryoEM structure as described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "1be926da-cf96-4b43-8018-c215cd77e7ac",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C4",
+      "claim": "LbpB consists of N- and C-lobes with the N-lobe interacting extensively with the C-lobe of Lf.",
+      "claim_type": "EXPLICIT",
+      "source": "LbpB consists of N- and C-lobes with the N-lobe interacting extensively with the C-lobe of Lf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal and cryoEM structures presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "722efab1-cff0-47ae-b0ac-fe99f2abfcb6",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C5",
+      "claim": "Lf and Lfcn bind independently to LbpB.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structures provide insight into LbpB's preference towards holo-Lf, and our mutagenesis and binding studies show that Lf and Lfcn bind independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mutagenesis studies and ITC binding experiments showing non-overlapping binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "f7cf965b-c8b3-4114-b79f-5abcc9ed3c2a",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C6",
+      "claim": "LbpB serves to capture and preserve Lf in an iron-bound state for delivery to the membrane transporter LbpA for iron piracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies provide the molecular details for how LbpB serves to capture and preserve Lf in an iron-bound state for delivery to the membrane transporter LbpA for iron piracy, and as an antimicrobial peptide sink to evade host immune defenses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data showing LbpB's interaction with holo-Lf and comparison with the Tbp system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "8276a984-9ccf-4840-8933-2759b753ca46",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C7",
+      "claim": "LbpB serves as an antimicrobial peptide sink to evade host immune defenses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies provide the molecular details for how LbpB serves to capture and preserve Lf in an iron-bound state for delivery to the membrane transporter LbpA for iron piracy, and as an antimicrobial peptide sink to evade host immune defenses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by binding studies with Lfcn and previous literature on LbpB's role in neutralizing antimicrobial peptides.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "ab1591fc-13ba-4f5b-b82c-5d1a84becf50",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C8",
+      "claim": "There are 17 species of Neisseria that colonize humans with only two being pathogenic, N. meningitidis and N. gonorrhoeae.",
+      "claim_type": "EXPLICIT",
+      "source": "There are 17 species of Neisseria that colonize humans with only two being pathogenic, N. meningitidis and N. gonorrhoeae (Seifert, 2019; Tone T\u00f8njum, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "e40ad434-c10e-4c07-af06-ec4d335f5240",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C9",
+      "claim": "N. meningitidis asymptomatically colonizes ~10% of the world's population.",
+      "claim_type": "EXPLICIT",
+      "source": "N. meningitidis asymptomatically colonizes ~10% of the world's population, however, once pathogenic can lead to meningitidis and sepsis and lead to high fatality rates in the absence of immediate treatment (Caugant and Brynildsrud, 2020; Read, 2019; Siddiqui et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to epidemiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "62a1ac26-96f4-4738-9d08-f7ed0486965a",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C10",
+      "claim": "N. meningitidis can lead to meningitidis and sepsis with high fatality rates in the absence of immediate treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "N. meningitidis asymptomatically colonizes ~10% of the world's population, however, once pathogenic can lead to meningitidis and sepsis and lead to high fatality rates in the absence of immediate treatment (Caugant and Brynildsrud, 2020; Read, 2019; Siddiqui et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "e25776d1-2a8f-46da-aa9e-6a76e24f7785",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C11",
+      "claim": "N. gonorrhoeae causes the sexually transmitted disease gonorrhoea.",
+      "claim_type": "EXPLICIT",
+      "source": "N. gonorrhoeae causes the sexually transmitted disease gonorrhoea (Boyajian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "d32c1dcc-9d9c-413c-8c71-62d5769486ad",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C12",
+      "claim": "The CDC has categorized N. gonorrhoeae as an urgent threat to public health.",
+      "claim_type": "EXPLICIT",
+      "source": "The Centers for Disease Control and Prevention (CDC) have categorized N. gonorrhoeae as an urgent threat to public health, which requires immediate and aggressive actions to combat the emerging antibiotic-resistant strains recently discovered (Aitolo et al., 2021; Prevention (CDC), 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to CDC reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "e8905e1d-2085-473a-a2d3-574de7bad86a",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C13",
+      "claim": "Vaccines are now available against all pathogenic serogroups of N. meningitidis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although vaccines are now available against all pathogenic serogroups of N. meningitidis, there are well-documented drawbacks and limitations of these vaccines (Deasy and Read, 2011; Pizza et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to vaccine literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "2d63a2dc-662d-4d6c-bda0-f5cb844459ef",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C14",
+      "claim": "There are well-documented drawbacks and limitations of vaccines against N. meningitidis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although vaccines are now available against all pathogenic serogroups of N. meningitidis, there are well-documented drawbacks and limitations of these vaccines (Deasy and Read, 2011; Pizza et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to vaccine literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "8a96f3b3-a7ac-4e69-b00f-7667213fe7ee",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C15",
+      "claim": "There is no vaccine against gonococcal infections despite decades of research.",
+      "claim_type": "EXPLICIT",
+      "source": "And despite decades of research, there is still no vaccine against gonococcal infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "6d20f946-0b48-430c-a2d1-4ba5562a85b6",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C16",
+      "claim": "Iron is an essential nutrient for survival, growth, and virulence of Neisseria.",
+      "claim_type": "EXPLICIT",
+      "source": "Iron is an essential nutrient for survival, growth, and virulence (Grifantini et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "b2591e09-098c-42fd-91a8-ab712b49de77",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C17",
+      "claim": "Free iron is essentially non-existent in the human host.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that free iron is essentially non-existent in the human host, Neisseria have evolved specialized surface receptors to hijack iron from host iron-binding proteins such as transferrin (Tf) and lactoferrin (Lf) (Lee and Schryvers, 1988; Schryvers and Lee, 1989; Schryvers and Morris, 1988; Yadav et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about iron availability in the human host.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "d1a04a11-b596-46dc-bfee-92a6a07a1638",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C18",
+      "claim": "Neisseria have evolved specialized surface receptors to hijack iron from host iron-binding proteins such as transferrin and lactoferrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that free iron is essentially non-existent in the human host, Neisseria have evolved specialized surface receptors to hijack iron from host iron-binding proteins such as transferrin (Tf) and lactoferrin (Lf) (Lee and Schryvers, 1988; Schryvers and Lee, 1989; Schryvers and Morris, 1988; Yadav et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "85f83c7b-7a9d-41f3-b3e8-a8fae2093fba",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C19",
+      "claim": "The transferrin-binding protein (Tbp) system consists of a TonB-dependent transporter called TbpA and a lipoprotein co-receptor called TbpB.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the more well-studied metal acquisition systems in Neisseria is the transferrin-binding protein (Tbp) system, which consists of an a TonB-dependent transporter called TbpA and a lipoprotein co-receptor called TbpB (Cornelissen et al., 1992; Irwin et al., 1993; Noinaj et al., 2012a; Noinaj et al., 2012b; Noinaj et al., 2010; Pintor et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "483b5b28-2da8-4ee7-a476-c114099ea633",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C20",
+      "claim": "TbpB serves to capture and deliver iron-loaded Tf to TbpA for iron extraction and import across the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, TbpB serves to capture and deliver iron-loaded Tf to TbpA for iron extraction and import across the outer membrane in a process that requires energy from the Ton complex at the inner membrane (Cornelissen et al., 1992; Cornelissen and Hollander, 2011; Noinaj et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "94424e98-1955-4f9d-8a55-8ba1086f67ca",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C21",
+      "claim": "The lactoferrin-binding protein (Lbp) system is composed of LbpA and LbpB and targets Lf as an iron source.",
+      "claim_type": "EXPLICIT",
+      "source": "A second analogous system is called the lactoferrin-binding protein (Lbp) system, which is composed of LbpA and LbpB, targets Lf as an iron source (Figure 1A; Biswas and Sparling, 1995; Gray-Owen and Schryvers, 1996; Lee and Schryvers, 1988; Noinaj et al., 2013; Schryvers et al., 1998; Schryvers and Morris, 1988).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous literature and Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "450799c4-efb1-46ea-9885-572404063415",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C22",
+      "claim": "No structures of Lbp proteins in complex with Lf have been reported prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, less is known structurally and functionally about the Lbp system as no structures of Lbp proteins in complex with Lf have been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the literature that this study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "a085fff3-eece-4a45-acc2-8c068d0792a2",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C23",
+      "claim": "All strains of N. meningitidis contain a functional Lbp system.",
+      "claim_type": "EXPLICIT",
+      "source": "While all strains of N. meningitidis contain a functional Lbp system, it is only observed in roughly half of the N. gonorrhoeae strains (Anderson et al., 2003; Biswas et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "12c9408c-bddd-4f5c-bd3a-36fe09d7782e",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C24",
+      "claim": "The Lbp system is only observed in roughly half of the N. gonorrhoeae strains.",
+      "claim_type": "EXPLICIT",
+      "source": "While all strains of N. meningitidis contain a functional Lbp system, it is only observed in roughly half of the N. gonorrhoeae strains (Anderson et al., 2003; Biswas et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "b48136b3-015d-423f-9a07-2507cd93b22c",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C25",
+      "claim": "The Lbp system may serve as a backup option to the Tbp system to assist in mediating pathogenesis within diverse host environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies hint that the Lbp system may serve as a backup option to the Tbp system to assist in mediating pathogenesis within diverse host environments, as a Neisserial strain lacking the Tbp proteins were still able to use the Lbp proteins to cause infection (Anderson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study showing functional redundancy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "edcbd39e-494b-430b-9fba-a13658b6d16b",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C26",
+      "claim": "A Neisserial strain lacking the Tbp proteins was still able to use the Lbp proteins to cause infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies hint that the Lbp system may serve as a backup option to the Tbp system to assist in mediating pathogenesis within diverse host environments, as a Neisserial strain lacking the Tbp proteins were still able to use the Lbp proteins to cause infection (Anderson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "8a65cb0c-e350-451c-babe-bf9085491668",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C27",
+      "claim": "A strain expressing both Tbp and Lbp systems was more competitive than a strain expressing just the Tbp system alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, it was also shown that a strain expressing both systems was more competitive than a strain expressing just the Tbp system alone (Anderson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "c18a92d0-c525-4b07-8150-ce5e99ebcb3f",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C28",
+      "claim": "Anti-sera raised against the Lbp proteins displays bactericidal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, anti-sera raised against the Lbp proteins displays bactericidal activity, exemplifying the promise of this system as a target for therapeutic intervention (Pettersson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "f41cbae4-e336-40c0-904f-f688714f7f4e",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C29",
+      "claim": "LbpB is predicted to have a similar domain organization to TbpB consisting of N- and C-lobes, with each lobe composed of an eight-stranded \u03b2-barrel sitting adjacent to a handle domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its sequence homology to TbpB, LbpB is predicted to have a similar domain organization consisting of an N- and C-lobes, with each lobe composed of an eight-stranded \u03b2-barrel sitting adjacent to a handle domain (Beddek and Schryvers, 2010; Brooks et al., 2014; Ekins et al., 2004; Lee and Schryvers, 1988; Noinaj et al., 2013; Ostan et al., 2017; Schryvers and Lee, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence homology and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "2bb9cdf5-f33a-4df9-a1b3-3c4984ac9590",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C30",
+      "claim": "The structure of the N-lobe of LbpB has been reported, showing conservation with the N-lobe of TbpB.",
+      "claim_type": "EXPLICIT",
+      "source": "This was partially confirmed when the structure of the N-lobe of LbpB was reported, showing conservation with the N-lobe of TbpB (Brooks et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "d2693fbb-08f6-4913-8207-a098b965beab",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C31",
+      "claim": "Docking studies predicted that N-lobe of Lf interacts with LbpB.",
+      "claim_type": "EXPLICIT",
+      "source": "Docking studies predicted that N-lobe of Lf interacts with LbpB (Arutyunova et al., 2012; Brooks et al., 2014), while hydrogen-deuterium exchange studies, combined with site-directed mutagenesis, showed that the C-lobe of Lf interacts with LbpB (Ostan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous computational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "40a23772-7569-4a6a-9fce-d7c5754516b0",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C32",
+      "claim": "Hydrogen-deuterium exchange studies, combined with site-directed mutagenesis, showed that the C-lobe of Lf interacts with LbpB.",
+      "claim_type": "EXPLICIT",
+      "source": "Docking studies predicted that N-lobe of Lf interacts with LbpB (Arutyunova et al., 2012; Brooks et al., 2014), while hydrogen-deuterium exchange studies, combined with site-directed mutagenesis, showed that the C-lobe of Lf interacts with LbpB (Ostan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "edf6f16b-b790-486d-868c-d9b208de2a3d",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C33",
+      "claim": "LbpB has been shown to provide protection against the host cationic antimicrobial peptide lactoferricin (Lfcn), an 11-residue metabolized fragment from the N-lobe of Lf.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its role in iron acquisition, LbpB has been shown to provide protection against the host cationic antimicrobial peptide lactoferricin (Lfcn), an 11-residue metabolized fragment from the N-lobe of Lf (Figure 1A; Morgenthau et al., 2014a; Morgenthau et al., 2012; Morgenthau et al., 2014b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous literature and Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "579603a0-0c76-45f5-82b6-fd76ce922966",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C34",
+      "claim": "One model proposes that Lfcn binds along the N-lobe of LbpB.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have been conflicting on exactly where LbpB interacts with Lfcn to neutralize this threat. One model proposes that it binds along the N-lobe (Brooks et al., 2014), while another model points to several anionic regions along the C-lobe (Morgenthau et al., 2014a; Morgenthau et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "8f788ec7-dbef-4205-944e-fe6cb95755b0",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C35",
+      "claim": "Another model points to several anionic regions along the C-lobe of LbpB as the Lfcn binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have been conflicting on exactly where LbpB interacts with Lfcn to neutralize this threat. One model proposes that it binds along the N-lobe (Brooks et al., 2014), while another model points to several anionic regions along the C-lobe (Morgenthau et al., 2014a; Morgenthau et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "1e811e7d-64de-41ab-bb24-1444d4770818",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C36",
+      "claim": "LbpB can be proteolytically cleaved by NalP, which enables it to diffuse into the host environment to pre-emptively neutralize Lfcn.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to protecting the surface of Neisseria directly, LbpB has been shown to also be proteolytically cleaved by NalP, which enables it to diffuse into the host environment to pre-emptively neutralize Lfcn (Roussel-Jaz\u00e9d\u00e9 et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "1897eef2-0fce-4617-80c6-499b3205f431",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C37",
+      "claim": "Purified LbpB constructs (NmLbpB residues 20-737 and NgLbpB residues 20-728) were sufficient for binding holo-Lf.",
+      "claim_type": "EXPLICIT",
+      "source": "Solid-phase-binding assays showed that these purified LbpB constructs were sufficient for binding holo-Lf (Figure 1C and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "ab9fd3c9-05b2-41fc-9d9e-a4ea035dda16",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C38",
+      "claim": "SDS-PAGE analysis confirmed that NmLbpB and NgLbpB form 1:1 stoichiometric complexes with Lf.",
+      "claim_type": "EXPLICIT",
+      "source": "Sodium dodecyl sulphate-polyacrylamide gel electrophoresis (SDS\u2013PAGE) analysis confirmed the peak contained both components and suggested a 1:1 stoichiometric complex for both the NmLbpB and NgLbpB complexes with Lf (Figure 1E and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "d6d8c323-c5a3-4fa1-848a-1c5783b8f1b9",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C39",
+      "claim": "NmLbpB appears to form a stable 1:1 complex with Lf as observed by SEC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in our studies with complex formation by SEC, we observed that NmLbpB appears to form a stable 1:1 complex with Lf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental SEC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "20a1bebd-3880-4076-a3d0-7175556a3aea",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C40",
+      "claim": "SEC-SAXS studies showed that individual LbpB and Lf proteins existed as monomers in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "For our experiments here, our SEC-SAXS studies showed that the individual LbpB and Lf proteins existed as monomers in solution, while the NmLbpB\u2013Lf complex had an experimental molecular weight of 159.6 kDa corresponding to 1:1 stoichiometry complex of NmLbpB and Lf (calculated molecular weight is 156.6 kDa) (Figure 2A and B and Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC-SAXS experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "b5ca3f06-1cfb-4df5-8a0e-e76f7c7b6aa3",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C41",
+      "claim": "The NmLbpB\u2013Lf complex had an experimental molecular weight of 159.6 kDa corresponding to 1:1 stoichiometry (calculated molecular weight is 156.6 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "For our experiments here, our SEC-SAXS studies showed that the individual LbpB and Lf proteins existed as monomers in solution, while the NmLbpB\u2013Lf complex had an experimental molecular weight of 159.6 kDa corresponding to 1:1 stoichiometry complex of NmLbpB and Lf (calculated molecular weight is 156.6 kDa) (Figure 2A and B and Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC-SAXS experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "8aeddbc4-b817-4e15-9d16-a1a5a53ff551",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C42",
+      "claim": "NgLbpB alone and in complex with Lf match closely to NmLbpB in solution as shown by SEC-SAXS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we used SEC-SAXS analysis to show that in solution, NgLbpB alone and a complex with Lf match closely to those with NmLbpB (Figure 2A and B, and SI Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC-SAXS experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "22eea3cf-6593-409d-a087-4e1e1f660fef",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C43",
+      "claim": "The crystal structure of NmLbpB in complex with Lf was solved to 2.85 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were collected at the GM/CA ID-D beamline at the Advanced Photon Source and the structure of the NmLbpB\u2013Lf complex solved to 2.85 \u00c5 resolution using molecular replacement in space group P43212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data collection and structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "6ec0c5ae-7d2c-4e0d-8139-614720c2a422",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C44",
+      "claim": "The NmLbpB\u2013Lf crystal structure was refined to final Rwork/Rfree values of 0.20/0.25.",
+      "claim_type": "EXPLICIT",
+      "source": "Model building was performed in COOT and the structure refined using phenix.refine to final Rwork/Rfree values of 0.20/0.25 (Figure 3A and Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic refinement statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "43e622f1-4b58-4c49-be32-a5c39839441b",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C45",
+      "claim": "The NmLbpB\u2013Lf complex structure contains one molecule of Lf (consisting of ordered N- and C-lobes) and one molecule of NmLbpB (consisting of an ordered N-lobe, but partially ordered C-lobe).",
+      "claim_type": "EXPLICIT",
+      "source": "One complex was observed in the structure containing one molecule of Lf (consisting of ordered N- and C-lobes) and one molecule of NmLbpB (consisting of an ordered N-lobe, but partially ordered C-lobe).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "e83ea8b7-dfaf-4e0f-8db5-073ff4331e6f",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C46",
+      "claim": "The overall structure of the NmLbpB\u2013Lf complex has an overall L-shape.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structure of the NmLbpB\u2013Lf complex has an overall L-shape (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "f48dce50-bb03-4107-87c5-cbb0fb3d2af9",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C47",
+      "claim": "The N-lobe of NmLbpB is composed of residues 1\u2013342 forming two domains, an N-terminal handle domain (residues 45\u2013173) and an eight-stranded \u03b2-barrel domain (residues 174\u2013342).",
+      "claim_type": "EXPLICIT",
+      "source": "The N-lobe of NmLbpB is composed of residues 1\u2013342 forming two domains, an N-terminal handle domain (residues 45\u2013173) and an eight-stranded \u03b2-barrel domain (residues 174\u2013342).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "00b141a5-dedc-4cdb-b0fd-942a282d0c3e",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C48",
+      "claim": "The C-lobe of NmLbpB is composed of residues 359\u2013718 and found largely disordered in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-lobe of NmLbpB is composed of residues 359\u2013718 and found largely disordered in the crystal structure as evident from higher B-factors for this region compared to the rest of the structure (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure as shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "af39b3ea-ea35-4280-999f-3b36e40e7567",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C49",
+      "claim": "Structural alignment of Lf alone (PDB ID 2BJJ) with Lf in the NmLbpB\u2013Lf complex shows minimal conformational changes upon binding NmLbpB (RMSD 1.3 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Structural alignment of Lf alone (PDB ID 2BJJ) with Lf in our complex (RMSD 1.3 \u00c5) shows that both lobes are in closed conformations, as expected since we observe an iron in each lobe, and that Lf undergoes minimal changes upon binding NmLbpB (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "4edfba40-c944-4e75-a26b-cd5a5e74d408",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C50",
+      "claim": "Both lobes of Lf are in closed conformations in the NmLbpB\u2013Lf complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural alignment of Lf alone (PDB ID 2BJJ) with Lf in our complex (RMSD 1.3 \u00c5) shows that both lobes are in closed conformations, as expected since we observe an iron in each lobe, and that Lf undergoes minimal changes upon binding NmLbpB (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "bf9fe457-fb96-4d9e-b54e-529868ee8726",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C51",
+      "claim": "The interaction of NmLbpB with Lf is mediated exclusively through the N-lobe of NmLbpB with the C-lobe of Lf.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction of NmLbpB with Lf is mediated exclusively through the N-lobe of NmLbpB with the C-lobe of Lf (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "036fcc9d-cc3f-49bc-8343-c9f2545d3c53",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C52",
+      "claim": "The NmLbpB\u2013Lf interface consists of regions along both the C1 and C2 domains of Lf including residues D630, S637, T639, K640 (C1 domain) and E512, R525, E538, N539, D561 (C2 domain).",
+      "claim_type": "EXPLICIT",
+      "source": "This interface consists of regions along both the C1 and C2 domains of Lf including residues D630, S637, T639, K640 (C1 domain) and E512, R525, E538, N539, D561 (C2 domain) (Figure 3B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure shown in Figure 3B and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "1f9ef148-9fe6-403d-a25b-eb79b7635731",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C53",
+      "claim": "The N-lobe of NmLbpB has an extended interaction interface with Lf that includes residues N154, R193, S201, D204, N213, R223, K230, Y253, Q255, and S258.",
+      "claim_type": "EXPLICIT",
+      "source": "Interacting simultaneously with the C1 and C2 domains of Lf, the N-lobe of NmLbpB has an extended interaction interface that includes residues N154, R193, S201, D204, N213, R223, K230, Y253, Q255, and S258 (Figure 3B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure shown in Figure 3B and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "d3a9bdc1-ae64-4e2b-830e-d7680222e571",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C54",
+      "claim": "Solid-phase-binding assays showed that Lf could only interact with the full length and N-lobe only constructs of NmLbpB, but not with the C-lobe only.",
+      "claim_type": "EXPLICIT",
+      "source": "Given our crystal structure indicated that binding to Lf was exclusively along the N-lobe of NmLbpB, we used solid-phase-binding assays to show that indeed Lf could only interact with the full length and N-lobe only constructs, but not with the C-lobe only (Figure 3F and Figure 3\u2014source data 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental binding assay data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "96e8d848-053c-43f5-a39c-05ab281dd65c",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C55",
+      "claim": "The cryoEM structure of NgLbpB in complex with Lf was determined to 3.65 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallization with NgLbpB was unsuccessful, therefore, we used cryoEM to determine the structure of NgLbpB in complex with Lf to 3.65 \u00c5 resolution (Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryoEM data collection and structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "3812d7da-c612-4cd0-a7b6-0e87009e0ae0",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C56",
+      "claim": "Very good density was observed for side chains of both lobes of Lf and for the N-lobe of NgLbpB in the cryoEM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Very good density was observed for side chains of both lobes of Lf and for the N-lobe of NgLbpB allowing unambiguous model building and refinement, however, almost no density was observed for the C-lobe of NgLbpB, unless map contours were reduced drastically (Figure 4A and B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryoEM density map shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "876beb28-d6fd-464e-8714-d6f62cbe64e1",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C57",
+      "claim": "Almost no density was observed for the C-lobe of NgLbpB in the cryoEM structure, unless map contours were reduced drastically.",
+      "claim_type": "EXPLICIT",
+      "source": "Very good density was observed for side chains of both lobes of Lf and for the N-lobe of NgLbpB allowing unambiguous model building and refinement, however, almost no density was observed for the C-lobe of NgLbpB, unless map contours were reduced drastically (Figure 4A and B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryoEM density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "5af16a30-4f1f-40d1-b2ca-b461a3c3dc67",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C58",
+      "claim": "An alignment of the Nm and NgLbpB complexes with Lf had an overall RMSD of 3.7 \u00c5, but an improved RMSD of 1.4 \u00c5 when aligning just along the interacting domains (C-lobe of Lf and N-lobe of LbpB).",
+      "claim_type": "EXPLICIT",
+      "source": "An alignment of the Nm and NgLbpB complexes with Lf had an overall RMSD of 3.7 \u00c5, however, an improved RMSD of 1.4 \u00c5 when aligning just along the interacting domains (C-lobe of Lf and N-lobe of LbpB), indicating a conserved binding interface between Nm and Ng (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural alignment shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "bcde8a36-d3f5-439c-9fb8-9582bfb01f91",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C59",
+      "claim": "The conserved binding interface between Nm and Ng LbpB is indicated by the RMSD of 1.4 \u00c5 when aligning the interacting domains.",
+      "claim_type": "EXPLICIT",
+      "source": "An alignment of the Nm and NgLbpB complexes with Lf had an overall RMSD of 3.7 \u00c5, however, an improved RMSD of 1.4 \u00c5 when aligning just along the interacting domains (C-lobe of Lf and N-lobe of LbpB), indicating a conserved binding interface between Nm and Ng (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural alignment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "7877cdad-d179-44d4-8d23-c339ccf391bf",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C60",
+      "claim": "The N-lobe of Lf in the NgLbpB\u2013Lf cryoEM structure is positioned ~12\u00b0 relatively to the NmLbpB\u2013Lf crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the N-lobe of Lf in the NgLbpB\u2013Lf cryoEM structure is positioned ~12\u00b0 relatively to the NmLbpB\u2013Lf crystal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing the two structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "83dd9dca-8ad8-46ce-9047-1e21a625022d",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C61",
+      "claim": "In the NmLbpB\u2013Lf complex, the interaction interface is stabilized by extensive hydrogen bonding and salt bridge interactions encompassing a buried surface area of ~1760.8 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "In the NmLbpB\u2013Lf complex, the interaction interface is stabilized by extensive hydrogen bonding and salt bridge interactions encompassing a buried surface area of ~1760.8 \u00c52 (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "53ed871d-78fe-485b-89ad-68a5c97a3724",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C62",
+      "claim": "All of the mutations tested (K71, Q73, R135, K140, K143, R193, D204, T209, Y210, R223, and D227) had a significant effect on Lf binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that all of the mutations had a significant effect on Lf binding with most resulting in more than ~50% reduction in binding except for mutations Q73E, K143E, and R223E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ELISA and ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "6df1236b-1d84-413a-a369-6ae09998cd2d",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C63",
+      "claim": "Mutations R135E, D140K, R193E, D204K, D227K, R135E/R223E, and T209N/Y210K resulted in at least a ~75% reduction in Lf binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Those having at least a ~75% reduction in binding included R135E, D140K, R193E, D204K, D227K, R135E/R223E, and T209N/Y210K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ELISA experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "e04c5cb4-6f39-417d-946d-14645b733be0",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C64",
+      "claim": "Wild-type NmLbpB binds Lf with a Kd value of 0.14 \u03bcM, a \u0394H of \u221215.8 kcal/mol, and an n value of ~1.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative ITC plots show a Kd value of 0.14 \u03bcM for Lf binding to wild-type NmLbpB with a \u0394H of \u221215.8 kcal/mol and an n value of ~1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "c2d5c7d7-b9c4-4a8d-bd0c-67cf7728f480",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C65",
+      "claim": "\u0394H values for all the mutants except for K143E were significantly reduced ranging from \u22125.4 to \u221211.8 kcal/mol (R135E, D140K, R193E, and D227K) and accompanied by increases in Kd values ranging from 9- to 115-fold over wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Agreeing well with the ELISA analysis, \u0394H values for the all the mutants except for K143E were significantly reduced ranging from \u22125.4 to \u221211.8 kcal/mol (R135E, D140K, R193E, and D227K) and accompanied by increases in Kd values ranging from 9- to 115-fold over wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "434e8de3-0e9a-4c52-a9a2-47aaf8d57e01",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C66",
+      "claim": "The presence of Lfcn produced a small, but reproducible, change in the scattering profile at lower q values in the range of 0.04\u20130.08 for NmLbpB.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain more insight into the binding of Lfcn with LbpB, we performed SEC-SAXS experiments with and without Lfcn, finding that the presence of Lfcn produced a small, but reproducible, change in the scattering profile at lower q values in the range of 0.04\u20130.08 (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC-SAXS experimental data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "d7d89b4e-67d1-4255-9156-dfa7f29809c6",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C67",
+      "claim": "A similar change along lower q values in the range of 0.05\u20130.07 was observed for the NmLbpB\u2013Lf complex when Lfcn was added.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar change along lower q values in the range of 0.05\u20130.07 was also observed for the NmLbpB\u2013Lf complex when Lfcn was added (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC-SAXS experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "e0cb2a38-2e36-480c-896e-1c91bb923033",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C68",
+      "claim": "The SEC-SAXS data support the hypothesis that Lfcn binding is distinct from Lf binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support the hypothesis that Lfcn binding is distinct from Lf binding, further supporting that Lfcn binding is along the C-lobe of LbpB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the SEC-SAXS experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "adf37aa0-5ae9-4b59-99ce-6e67f6f14d0d",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C69",
+      "claim": "Lfcn binding is along the C-lobe of LbpB.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support the hypothesis that Lfcn binding is distinct from Lf binding, further supporting that Lfcn binding is along the C-lobe of LbpB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the SEC-SAXS data and previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "861aecb8-cc8d-4b82-bfe3-36c3830d146b",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C70",
+      "claim": "The C-lobe of NmLbpB contains at least one large strongly electronegative region along loops consisting of residues 372\u2013383, 416\u2013418, and 445\u2013526.",
+      "claim_type": "EXPLICIT",
+      "source": "An electrostatic surface representation of this region shows it to be highly charged with at least one large strongly electronegative region along loops consisting of residues 372\u2013383, 416\u2013418, and 445\u2013526; a more accurate analysis of the electrostatics here is not possible given the lack of order in the loops (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the electrostatic surface representation shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "d13c4045-7c69-4039-b9ec-1736acfd5940",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C71",
+      "claim": "Lfcn binds to wild-type NmLbpB with a Kd of 3.7 \u03bcM, a \u0394H of \u221211.4 kcal/mol, and an n value of ~1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that Lfcn binds to wild-type NmLbpB with a Kd of 3.7 \u03bcM, a \u0394H of \u221211.4 kcal/mol, and an n value of ~1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "daa4210e-99ba-4e45-adac-306a182960f2",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C72",
+      "claim": "The loop deletions \u0394372\u2013383, \u0394416\u2013418, \u0394561\u2013565, \u0394594\u2013599, and \u0394665\u2013698 showed only minimal differences in \u0394H and no significant change in Kd for Lfcn binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The loop deletions \u0394372\u2013383, \u0394416\u2013418, \u0394561\u2013565, \u0394594\u2013599, and \u0394665\u2013698, however, showed only minimal differences in \u0394H and no significant change in Kd, except for \u0394445\u2013526 (\u0394H of \u22129.6 kcal/mol and a ~2.5-fold increase in Kd).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "4fc49564-6faf-4905-8c67-f23a1a1f0241",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C73",
+      "claim": "The loop deletion \u0394445\u2013526 showed a \u0394H of \u22129.6 kcal/mol and a ~2.5-fold increase in Kd for Lfcn binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The loop deletions \u0394372\u2013383, \u0394416\u2013418, \u0394561\u2013565, \u0394594\u2013599, and \u0394665\u2013698, however, showed only minimal differences in \u0394H and no significant change in Kd, except for \u0394445\u2013526 (\u0394H of \u22129.6 kcal/mol and a ~2.5-fold increase in Kd).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "51d1096a-9888-413a-9f3f-8ef934c2aee1",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C74",
+      "claim": "A double loop-deletion mutant \u0394445\u2013526_\u0394665\u2013698 showed a significantly reduced \u0394H with only barely detectable binding to Lfcn.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a double loop-deletion mutant \u0394445\u2013526_\u0394665\u2013698 showed a significantly reduced \u0394H with only barely detectable binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "7e8d1d10-3591-44af-bf49-57a88431d744",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C75",
+      "claim": "Two loops (residues 445\u2013526 and 665\u2013698) together contribute to Lfcn binding in LbpB.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that these two loops together contribute to Lfcn binding in LbpB, which is likely mediated by the charged residues they contain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ITC experimental data with loop deletion mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "e98615e5-2793-4bba-b0b1-dd7bed5a8cb0",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C76",
+      "claim": "Lf binds to NmLbpB alone with a Kd of 0.45 \u03bcM and a \u0394H of \u221215.1 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that Lf binds to NmLbpB alone with a Kd of 0.45 \u03bcM and a \u0394H of \u221215.1 kcal/mol (SI Table S8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "f94ede27-19be-4fcb-a26c-4707c7c194e3",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C77",
+      "claim": "Nearly identical binding parameters are observed for Lf binding to the preformed NmLbpB\u2013Lfcn complex, indicating that the presence of Lfcn has no effect on Lf binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly identical binding parameters are observed for Lf binding to the preformed NmLbpB\u2013Lfcn complex, indicating that the presence of Lfcn has no effect on Lf binding (Figure 6D and SI Table S8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "e6881052-a815-4e11-829f-a9a8f947570e",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C78",
+      "claim": "Lfcn binds to the NmLbpB\u2013Lf complex with a Kd of 7.3 \u03bcM and a \u0394H of \u221210.6 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "Our earlier results showed that Lfcn binds to NmLbpB alone with a Kd of 3.7 \u03bcM and a \u0394H of \u221211.4 kcal/mol, while here we found that Lfcn binds to the NmLbpB\u2013Lf complex with a Kd of 7.3 \u03bcM and a \u0394H of \u221210.6 kcal/mol (Figure 6E and SI Table S8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "19da6730-f5ba-4434-8e56-d41487f54ed8",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C79",
+      "claim": "Only ~twofold difference in Kd was observed for Lfcn binding to NmLbpB in the presence versus absence of Lf, with no change in \u0394H, indicating that binding of Lfcn to NmLbpB is not disrupted in the presence of Lf.",
+      "claim_type": "EXPLICIT",
+      "source": "Only ~ twofold difference in Kd was observed here, however, no change in \u0394H indicating that binding of Lfcn to NmLbpB is not disrupted in the presence of Lf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ITC experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "73b73816-fded-4bee-8a4e-a856f1ea654a",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C80",
+      "claim": "The current studies strongly support that LbpB binds Lf in a 1:1 complex, which is demonstrated by SEC, SAXS, X-ray crystal structure, and cryoEM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our studies here strongly support that LbpB binds Lf in a 1:1 complex, which is demonstrated by our SEC, SAXS, X-ray crystal structure, and cryoEM structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental techniques.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "09dad98f-e33a-44de-8d01-48e46a1fb158",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C81",
+      "claim": "ITC experiments demonstrate 1:1 binding properties between LbpB and Lf with an n value (molar ratio) of ~1.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our ITC experiments also demonstrate 1:1 binding properties with an n value (molar ratio) of ~1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "41cb6e37-070c-4a6e-a463-4b0250bb4df2",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C82",
+      "claim": "The current structures align well with the previously reported N-lobe only structure of LbpB (PDB ID 4U9C) with an RMSD of 0.34 \u00c5 (for 261 C\u03b1 atoms).",
+      "claim_type": "EXPLICIT",
+      "source": "Our structures align well with the previously reported N-lobe only structure of LbpB (PDB ID 4U9C) with an RMSD of 0.34 \u00c5 (for 261 C\u03b1 atoms) compared to our NmLbpB crystal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural alignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "b058731d-d418-431e-bdc5-6d06ed0bf07d",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C83",
+      "claim": "NmLbpB aligns well with NmTbpB (PDB ID 3V8U) with an overall RMSD of 1.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, NmLbpB aligns well with NmTbpB (PDB ID 3V8U) with an overall RMSD of 1.8 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural alignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "bf7409db-ab04-4cdb-99e0-4e8a70eda399",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C84",
+      "claim": "The interacting lobes from LbpB\u2013Lf and TbpB\u2013Tf (PDB ID 3VE1) have an overall RMSD of 1.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The interacting lobes from LbpB\u2013Lf and TbpB\u2013Tf (PDB ID 3VE1) have an overall RMSD of 1.4 \u00c5, further evidence that the Lbp and Tbp systems likely share a common mechanism in iron acquisition from their respective host iron-binding proteins (Figure 4\u2014figure supplement 3; Gray-Owen and Schryvers, 1996; Noinaj et al., 2013; Schryvers and Lee, 1989).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural alignment shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "c8909709-d945-4b4a-aaa5-f6a39804a63c",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C85",
+      "claim": "The Lbp and Tbp systems likely share a common mechanism in iron acquisition from their respective host iron-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The interacting lobes from LbpB\u2013Lf and TbpB\u2013Tf (PDB ID 3VE1) have an overall RMSD of 1.4 \u00c5, further evidence that the Lbp and Tbp systems likely share a common mechanism in iron acquisition from their respective host iron-binding proteins (Figure 4\u2014figure supplement 3; Gray-Owen and Schryvers, 1996; Noinaj et al., 2013; Schryvers and Lee, 1989).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural similarity and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "4cd7dfa3-e978-4453-9ce4-376a21603c1e",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C86",
+      "claim": "Surface anchored LbpB would selectively accumulate iron-bound Lf, preserving the bound iron for eventual import by LbpA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, surface anchored LbpB would selectively accumulate iron-bound Lf, preserving the bound iron for eventual import by LbpA (Figures 3G and 6F; Calmettes et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural data and supported by citation and Figures 3G and 6F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "16c07d2d-825e-4a86-9e06-30fe0dfe807a",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C87",
+      "claim": "TbpA (and likely LbpA) can also bind with high affinity apo-Tf/Lf which lacks iron.",
+      "claim_type": "EXPLICIT",
+      "source": "This would ensure efficiency in iron scavenging for survival during pathogenesis since TbpA (and likely LbpA) can also bind with high affinity apo-Tf/Lf which lacks iron (Krell et al., 2003; Noinaj et al., 2012b; Powell et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "c832d020-bd37-4ffb-9681-756898421618",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C88",
+      "claim": "Lfcn specifically interacts with the C-lobe only of LbpB through primarily two loops consisting of residues 445\u2013526 and 665\u2013698.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our structural studies, mutagenesis, and binding studies agree with the earlier reports and allow us to conclude that Lfcn specifically interacts with the C-lobe only of LbpB through primarily two loops consisting of residues 445\u2013526 and 665\u2013698.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mutagenesis and ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "475b459d-5063-4e30-8706-1b066b82f737",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C89",
+      "claim": "The presence of Lf had little effect on the binding of Lfcn and vice versa, demonstrating that each have non-overlapping and non-competing binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of Lf had little effect on the binding of Lfcn and vice versa, demonstrating that each have non-overlapping and non-competing binding sites, refuting the previous notion that both may share a common binding site (Brooks et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "534851ac-bb7f-451b-baca-ee12a3dcd779",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C90",
+      "claim": "The current findings refute the previous notion that Lf and Lfcn may share a common binding site on LbpB.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of Lf had little effect on the binding of Lfcn and vice versa, demonstrating that each have non-overlapping and non-competing binding sites, refuting the previous notion that both may share a common binding site (Brooks et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and contradicts a previous study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "4faf13b6-316a-4616-bf8e-815d78cd754f",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C91",
+      "claim": "The current studies support a model where LbpB serves a dual function in Neisserial pathogenesis, in both iron import under iron-limiting conditions and as an antimicrobial peptide sink for the evasion of host immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our studies support a model where LbpB serves a dual function in Neisserial pathogenesis, in both iron import under iron-limiting conditions and as an antimicrobial peptide sink for the evasion of host immune responses (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural and binding data presented in the manuscript and shown in Figure 6F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "58684171-9298-4476-9e17-6083fad4a6b3",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C92",
+      "claim": "NmLbpB alone tends to aggregate in solution as shown by static SAXS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Static small-angle X-ray scattering (SAXS) analysis showed that NmLbpB alone tends to aggregate in solution, while the NmLbpB\u2013Lf complex forms a monodisperse stable complex (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by static SAXS experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "7182dc00-0c45-45fa-9d9b-dbb78061739f",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C93",
+      "claim": "The NmLbpB\u2013Lf complex forms a monodisperse stable complex as shown by static SAXS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Static small-angle X-ray scattering (SAXS) analysis showed that NmLbpB alone tends to aggregate in solution, while the NmLbpB\u2013Lf complex forms a monodisperse stable complex (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by static SAXS experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "75f2b145-7b7a-49e1-9251-bda87cd7fdcc",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C94",
+      "claim": "The calculated SAXS scattering curve from the NmLbpB crystal structure agrees well with the experimental SAXS scattering curve in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the calculated SAXS scattering curve from our crystal structure agrees well with our experimental SAXS scattering curve in solution (Figure 2H1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Crysol analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "6ebb448a-289e-4f6e-8b4c-3caac48b3796",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C95",
+      "claim": "The NmLbpB\u2013Lf interface is stabilized by extensive hydrogen bonding and salt bridge interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the NmLbpB\u2013Lf complex, the interaction interface is stabilized by extensive hydrogen bonding and salt bridge interactions encompassing a buried surface area of ~1760.8 \u00c52 (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "f072dbf8-eaeb-4c04-89ee-3c884157eff4",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "claim_id": "C96",
+      "claim": "The NgLbpB\u2013Lf interface has a buried surface area of 1604 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "A zoomed view of the binding interface shows extensive interactions along an elongated surface covering both the C1 and C2 domains of Lf (buried surface area 1604 \u00c52).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is calculated from the cryoEM structure as shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8edb7b7a-ee81-4203-9283-808742acf559",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LbpB from both N. meningitidis and N. gonorrhoeae forms a stable 1:1 complex with human holo-lactoferrin (Lf), as demonstrated by multiple complementary techniques including SEC, SDS-PAGE, SEC-SAXS, X-ray crystallography, cryoEM, and ITC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent experimental techniques (SEC, SAXS, crystallography, cryoEM, ITC) converge on the same stoichiometry with consistent molecular weight measurements (159.6 kDa experimental vs 156.6 kDa calculated) and n values of ~1 from ITC. The agreement between solution studies and structural data strongly supports the 1:1 binding stoichiometry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "0892350e-cdb0-48dd-9261-2a4f525fb804",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The crystal structure of NmLbpB in complex with Lf was solved to 2.85 \u00c5 resolution, revealing that the N-lobe of NmLbpB interacts exclusively with the C-lobe of Lf through an extended interface involving both C1 and C2 domains of Lf, while the C-lobe of NmLbpB is largely disordered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The crystal structure provides high-resolution structural data with good refinement statistics (Rwork/Rfree = 0.20/0.25). The binding interface is well-characterized with specific residues identified, and the calculated SAXS curve from the structure agrees well with experimental solution data, validating the structural model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "78e5163e-4104-4b58-825c-49037e410ee5",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The cryoEM structure of NgLbpB in complex with Lf was determined to 3.65 \u00c5 resolution, showing a conserved binding interface with NmLbpB (RMSD 1.4 \u00c5 for interacting domains) despite the C-lobe of NgLbpB being largely disordered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cryoEM structure provides independent validation of the binding mode observed in the crystal structure. The good density for the N-lobe and Lf, combined with the low RMSD between Nm and Ng species at the binding interface, supports conservation of the interaction mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "f48ecfaa-7f48-4a1b-9c61-e7c704877372",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Structure-guided mutagenesis combined with ELISA and ITC experiments identified key residues in the N-lobe of NmLbpB critical for Lf binding, with mutations R135E, D140K, R193E, D204K, and D227K showing >75% reduction in binding and 9- to 115-fold increases in Kd values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mutagenesis study is well-designed based on structural data, and the results from two independent techniques (ELISA and ITC) are concordant. The quantitative binding parameters provide strong evidence for the functional importance of the identified interface residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lfcn binds to the C-lobe of LbpB through two loops (residues 445-526 and 665-698) as demonstrated by SEC-SAXS showing distinct binding from Lf and ITC experiments with loop deletion mutants showing that the double deletion \u0394445-526_\u0394665-698 abolishes Lfcn binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The SEC-SAXS data show reproducible changes upon Lfcn binding distinct from Lf binding. The systematic loop deletion mutagenesis with ITC provides strong evidence that two specific loops mediate Lfcn binding, with the double deletion showing synergistic loss of binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "6efc2fe4-489e-402e-84b5-e319fd3bce2e",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Lf and Lfcn bind independently to LbpB at non-overlapping sites, as demonstrated by ITC experiments showing that the presence of one ligand has minimal effect on binding of the other (only ~2-fold change in Kd with no change in \u0394H).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ITC experiments directly test the independence of binding by measuring binding parameters in the presence and absence of the other ligand. The minimal changes in binding parameters provide strong quantitative evidence for non-competing binding sites, refuting previous models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "b8a97b61-01ab-4da0-a926-f011ba5f2e01",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LbpB serves a dual function in Neisserial pathogenesis: capturing and preserving Lf in an iron-bound state for delivery to LbpA for iron import, and serving as an antimicrobial peptide sink to evade host immune defenses, with structural similarity to the TbpB-Tf system suggesting a common mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural data showing preferential binding to holo-Lf, combined with independent binding of Lfcn at a separate site, directly support the dual function model. The structural similarity to TbpB (RMSD 1.4 \u00c5 for interacting lobes) provides additional support for the proposed iron acquisition mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "ce51689b-7dc3-49ef-82d5-a50734f913c8",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background information on Neisseria pathogenesis, iron acquisition systems, and the clinical significance of N. meningitidis and N. gonorrhoeae infections, establishing the context and importance of studying the Lbp system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide established background knowledge supported by appropriate citations to the literature. They establish the scientific context and rationale for the study but do not represent novel findings from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    },
+    {
+      "id": "f5c78165-b02c-4259-8fa7-fb03a440ac64",
+      "content_id": "32fb445b-503a-4e50-ae6f-805c1fdab50b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work on LbpB structure and function, including conflicting models for Lf and Lfcn binding sites, establishing gaps in knowledge that the current study addresses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize prior work based on appropriate citations. They establish the conflicting models in the literature that motivated the current structural and functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:47:00.168832Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c6da134e-1ece-4e8b-9f18-6769241fd3fd",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "1897eef2-0fce-4617-80c6-499b3205f431",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "ab9fd3c9-05b2-41fc-9d9e-a4ea035dda16",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "d6d8c323-c5a3-4fa1-848a-1c5783b8f1b9",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "20a1bebd-3880-4076-a3d0-7175556a3aea",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "b5ca3f06-1cfb-4df5-8a0e-e76f7c7b6aa3",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "8aeddbc4-b817-4e15-9d16-a1a5a53ff551",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "73b73816-fded-4bee-8a4e-a856f1ea654a",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "09dad98f-e33a-44de-8d01-48e46a1fb158",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "58684171-9298-4476-9e17-6083fad4a6b3",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "7182dc00-0c45-45fa-9d9b-dbb78061739f",
+      "result_id": "8edb7b7a-ee81-4203-9283-808742acf559"
+    },
+    {
+      "claim_id": "22eea3cf-6593-409d-a087-4e1e1f660fef",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "6ec0c5ae-7d2c-4e0d-8139-614720c2a422",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "43e622f1-4b58-4c49-be32-a5c39839441b",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "e83ea8b7-dfaf-4e0f-8db5-073ff4331e6f",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "f48dce50-bb03-4107-87c5-cbb0fb3d2af9",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "00b141a5-dedc-4cdb-b0fd-942a282d0c3e",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "af39b3ea-ea35-4280-999f-3b36e40e7567",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "4edfba40-c944-4e75-a26b-cd5a5e74d408",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "bf9fe457-fb96-4d9e-b54e-529868ee8726",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "036fcc9d-cc3f-49bc-8343-c9f2545d3c53",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "1f9ef148-9fe6-403d-a25b-eb79b7635731",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "83dd9dca-8ad8-46ce-9047-1e21a625022d",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "41cb6e37-070c-4a6e-a463-4b0250bb4df2",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "75f2b145-7b7a-49e1-9251-bda87cd7fdcc",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "6ebb448a-289e-4f6e-8b4c-3caac48b3796",
+      "result_id": "0892350e-cdb0-48dd-9261-2a4f525fb804"
+    },
+    {
+      "claim_id": "96e8d848-053c-43f5-a39c-05ab281dd65c",
+      "result_id": "78e5163e-4104-4b58-825c-49037e410ee5"
+    },
+    {
+      "claim_id": "3812d7da-c612-4cd0-a7b6-0e87009e0ae0",
+      "result_id": "78e5163e-4104-4b58-825c-49037e410ee5"
+    },
+    {
+      "claim_id": "876beb28-d6fd-464e-8714-d6f62cbe64e1",
+      "result_id": "78e5163e-4104-4b58-825c-49037e410ee5"
+    },
+    {
+      "claim_id": "5af16a30-4f1f-40d1-b2ca-b461a3c3dc67",
+      "result_id": "78e5163e-4104-4b58-825c-49037e410ee5"
+    },
+    {
+      "claim_id": "bcde8a36-d3f5-439c-9fb8-9582bfb01f91",
+      "result_id": "78e5163e-4104-4b58-825c-49037e410ee5"
+    },
+    {
+      "claim_id": "7877cdad-d179-44d4-8d23-c339ccf391bf",
+      "result_id": "78e5163e-4104-4b58-825c-49037e410ee5"
+    },
+    {
+      "claim_id": "f072dbf8-eaeb-4c04-89ee-3c884157eff4",
+      "result_id": "78e5163e-4104-4b58-825c-49037e410ee5"
+    },
+    {
+      "claim_id": "d3a9bdc1-ae64-4e2b-830e-d7680222e571",
+      "result_id": "f48ecfaa-7f48-4a1b-9c61-e7c704877372"
+    },
+    {
+      "claim_id": "53ed871d-78fe-485b-89ad-68a5c97a3724",
+      "result_id": "f48ecfaa-7f48-4a1b-9c61-e7c704877372"
+    },
+    {
+      "claim_id": "6df1236b-1d84-413a-a369-6ae09998cd2d",
+      "result_id": "f48ecfaa-7f48-4a1b-9c61-e7c704877372"
+    },
+    {
+      "claim_id": "e04c5cb4-6f39-417d-946d-14645b733be0",
+      "result_id": "f48ecfaa-7f48-4a1b-9c61-e7c704877372"
+    },
+    {
+      "claim_id": "c2d5c7d7-b9c4-4a8d-bd0c-67cf7728f480",
+      "result_id": "f48ecfaa-7f48-4a1b-9c61-e7c704877372"
+    },
+    {
+      "claim_id": "434e8de3-0e9a-4c52-a9a2-47aaf8d57e01",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "d7d89b4e-67d1-4255-9156-dfa7f29809c6",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "e0cb2a38-2e36-480c-896e-1c91bb923033",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "adf37aa0-5ae9-4b59-99ce-6e67f6f14d0d",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "861aecb8-cc8d-4b82-bfe3-36c3830d146b",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "d13c4045-7c69-4039-b9ec-1736acfd5940",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "daa4210e-99ba-4e45-adac-306a182960f2",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "4fc49564-6faf-4905-8c67-f23a1a1f0241",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "51d1096a-9888-413a-9f3f-8ef934c2aee1",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "7e8d1d10-3591-44af-bf49-57a88431d744",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "c832d020-bd37-4ffb-9681-756898421618",
+      "result_id": "0756508e-0a01-4fbf-aa4f-ddfcd69cd0ff"
+    },
+    {
+      "claim_id": "722efab1-cff0-47ae-b0ac-fe99f2abfcb6",
+      "result_id": "6efc2fe4-489e-402e-84b5-e319fd3bce2e"
+    },
+    {
+      "claim_id": "e98615e5-2793-4bba-b0b1-dd7bed5a8cb0",
+      "result_id": "6efc2fe4-489e-402e-84b5-e319fd3bce2e"
+    },
+    {
+      "claim_id": "f94ede27-19be-4fcb-a26c-4707c7c194e3",
+      "result_id": "6efc2fe4-489e-402e-84b5-e319fd3bce2e"
+    },
+    {
+      "claim_id": "e6881052-a815-4e11-829f-a9a8f947570e",
+      "result_id": "6efc2fe4-489e-402e-84b5-e319fd3bce2e"
+    },
+    {
+      "claim_id": "19da6730-f5ba-4434-8e56-d41487f54ed8",
+      "result_id": "6efc2fe4-489e-402e-84b5-e319fd3bce2e"
+    },
+    {
+      "claim_id": "475b459d-5063-4e30-8706-1b066b82f737",
+      "result_id": "6efc2fe4-489e-402e-84b5-e319fd3bce2e"
+    },
+    {
+      "claim_id": "534851ac-bb7f-451b-baca-ee12a3dcd779",
+      "result_id": "6efc2fe4-489e-402e-84b5-e319fd3bce2e"
+    },
+    {
+      "claim_id": "f7cf965b-c8b3-4114-b79f-5abcc9ed3c2a",
+      "result_id": "b8a97b61-01ab-4da0-a926-f011ba5f2e01"
+    },
+    {
+      "claim_id": "8276a984-9ccf-4840-8933-2759b753ca46",
+      "result_id": "b8a97b61-01ab-4da0-a926-f011ba5f2e01"
+    },
+    {
+      "claim_id": "b058731d-d418-431e-bdc5-6d06ed0bf07d",
+      "result_id": "b8a97b61-01ab-4da0-a926-f011ba5f2e01"
+    },
+    {
+      "claim_id": "bf7409db-ab04-4cdb-99e0-4e8a70eda399",
+      "result_id": "b8a97b61-01ab-4da0-a926-f011ba5f2e01"
+    },
+    {
+      "claim_id": "c8909709-d945-4b4a-aaa5-f6a39804a63c",
+      "result_id": "b8a97b61-01ab-4da0-a926-f011ba5f2e01"
+    },
+    {
+      "claim_id": "4cd7dfa3-e978-4453-9ce4-376a21603c1e",
+      "result_id": "b8a97b61-01ab-4da0-a926-f011ba5f2e01"
+    },
+    {
+      "claim_id": "16c07d2d-825e-4a86-9e06-30fe0dfe807a",
+      "result_id": "b8a97b61-01ab-4da0-a926-f011ba5f2e01"
+    },
+    {
+      "claim_id": "4faf13b6-316a-4616-bf8e-815d78cd754f",
+      "result_id": "b8a97b61-01ab-4da0-a926-f011ba5f2e01"
+    },
+    {
+      "claim_id": "8400c0da-ec0d-402a-8eb9-fd052011d271",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "293ab54d-78cf-466f-9698-bc72dc7d2b93",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "ab1591fc-13ba-4f5b-b82c-5d1a84becf50",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "e40ad434-c10e-4c07-af06-ec4d335f5240",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "62a1ac26-96f4-4738-9d08-f7ed0486965a",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "e25776d1-2a8f-46da-aa9e-6a76e24f7785",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "d32c1dcc-9d9c-413c-8c71-62d5769486ad",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "e8905e1d-2085-473a-a2d3-574de7bad86a",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "2d63a2dc-662d-4d6c-bda0-f5cb844459ef",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "8a96f3b3-a7ac-4e69-b00f-7667213fe7ee",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "6d20f946-0b48-430c-a2d1-4ba5562a85b6",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "b2591e09-098c-42fd-91a8-ab712b49de77",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "d1a04a11-b596-46dc-bfee-92a6a07a1638",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "85f83c7b-7a9d-41f3-b3e8-a8fae2093fba",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "483b5b28-2da8-4ee7-a476-c114099ea633",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "94424e98-1955-4f9d-8a55-8ba1086f67ca",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "450799c4-efb1-46ea-9885-572404063415",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "a085fff3-eece-4a45-acc2-8c068d0792a2",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "12c9408c-bddd-4f5c-bd3a-36fe09d7782e",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "b48136b3-015d-423f-9a07-2507cd93b22c",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "edcbd39e-494b-430b-9fba-a13658b6d16b",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "8a65cb0c-e350-451c-babe-bf9085491668",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "c18a92d0-c525-4b07-8150-ce5e99ebcb3f",
+      "result_id": "ce51689b-7dc3-49ef-82d5-a50734f913c8"
+    },
+    {
+      "claim_id": "f41cbae4-e336-40c0-904f-f688714f7f4e",
+      "result_id": "f5c78165-b02c-4259-8fa7-fb03a440ac64"
+    },
+    {
+      "claim_id": "2bb9cdf5-f33a-4df9-a1b3-3c4984ac9590",
+      "result_id": "f5c78165-b02c-4259-8fa7-fb03a440ac64"
+    },
+    {
+      "claim_id": "d2693fbb-08f6-4913-8207-a098b965beab",
+      "result_id": "f5c78165-b02c-4259-8fa7-fb03a440ac64"
+    },
+    {
+      "claim_id": "40a23772-7569-4a6a-9fce-d7c5754516b0",
+      "result_id": "f5c78165-b02c-4259-8fa7-fb03a440ac64"
+    },
+    {
+      "claim_id": "edf6f16b-b790-486d-868c-d9b208de2a3d",
+      "result_id": "f5c78165-b02c-4259-8fa7-fb03a440ac64"
+    },
+    {
+      "claim_id": "579603a0-0c76-45f5-82b6-fd76ce922966",
+      "result_id": "f5c78165-b02c-4259-8fa7-fb03a440ac64"
+    },
+    {
+      "claim_id": "8f788ec7-dbef-4205-944e-fe6cb95755b0",
+      "result_id": "f5c78165-b02c-4259-8fa7-fb03a440ac64"
+    },
+    {
+      "claim_id": "1e811e7d-64de-41ab-bb24-1444d4770818",
+      "result_id": "f5c78165-b02c-4259-8fa7-fb03a440ac64"
+    }
+  ],
+  "comparisons": []
+}

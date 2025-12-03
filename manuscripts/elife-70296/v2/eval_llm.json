@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript reviews established knowledge about hippocampal place cells, theta phase precession, and theta sequences, including their role in representing past, present, and future positions, and their involvement in cognitive functions such as learning, prediction, and planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are well-supported by extensive citations to prior literature. These claims establish the foundational knowledge about hippocampal theta phase coding that motivates the current study. All claims are appropriately attributed to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript identifies a paradox in the literature: theta sweep length increases with running speed (supporting temporal sweeps), while individual place field parameters remain speed-independent (supporting spatial sweeps). The relationship between theta phase, represented position, and true location has not been explicitly formalized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 accurately characterize the conflicting findings in prior literature, with C12 and C13 supported by appropriate citations. C11 represents the authors' assessment of a gap in the literature, which is reasonable given the subsequent analysis. This paradox motivates the study's central question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "The manuscript formalizes two existing models: the spatial sweep model (where theta phases represent fixed spatial distances) predicts speed-independent place field parameters but fails to predict proportional increases in theta trajectory length with speed; the temporal sweep model (where theta phases represent fixed time intervals) predicts proportional increases in trajectory length but incorrectly predicts speed-dependent place field parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C21, C22, and C24 present theoretical predictions from formalized models with mathematical derivations provided in the Materials and Methods. The predictions are logically derived from the model equations and are compared against cited experimental observations. The mathematical framework is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The manuscript proposes a novel behavior-dependent sweep model where theta phases represent positions that would be reached at fixed time intervals assuming the animal runs at the characteristic (average) speed for each location, rather than instantaneous speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 introduces the key theoretical innovation of the paper. The model is clearly defined mathematically (Equation 21) and represents a logical synthesis that could potentially resolve the paradox identified in C11-C13. The theoretical framework is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The study re-analyzed publicly available CA1 recordings from 6 rats running on linear tracks, excluding the first 5 minutes of novel track recordings to ensure stable spatial representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe the experimental dataset and preprocessing. The use of publicly available data is appropriate, and the exclusion of the first 5 minutes is justified by citations showing that place fields stabilize after this period. The methodological choices are reasonable and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Analysis of the experimental data confirmed that theta trajectory lengths increase roughly proportionally with running speed, consistent with prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by Bayesian decoding analysis shown in Figure 3B. The result replicates prior findings (Maurer et al., 2012; Gupta et al., 2012) in the current dataset, providing a consistent baseline for subsequent analyses. The high variability noted in the text is visible in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "Individual place fields maintain similar sizes regardless of instantaneous running speed, but when combining data across fields, average place field size increases significantly with running speed (p<0.02 for 5/6 animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C37, and C38 present the key paradoxical finding at the single-cell level. The within-field analysis (C35, Figure 4A-B) shows no systematic speed dependence, while the across-field analysis (C37-C38, Figure 4C) shows significant increases. Statistical tests support the significance claims. This reproduces the literature paradox in a single dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Phase precession slopes of individual fields showed no significant relationship with running speed in single-pass analysis for any of the three animals with sufficient data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by the single-pass analysis shown in Figure 5E. The analysis appropriately controls for potential confounds from acceleration/deceleration by analyzing passes at approximately constant speed. The lack of within-field changes parallels the place field size findings and is consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The study demonstrates three prerequisites for the behavior-dependent sweep model: (1) characteristic running speed varies systematically along the track with an inverted U-shape, (2) running speeds cluster around characteristic speeds at each position, and (3) theta trajectory lengths, place field sizes, and inverse phase precession slopes increase proportionally with characteristic speed up to ~60 cm/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 establish the empirical foundation for the behavior-dependent sweep model through systematic analysis shown in Figure 6. The inverted U-shape distribution of characteristic speed (C43), clustering of instantaneous speeds (C44), and proportional relationships (C46) are clearly demonstrated. These findings directly support the model's key assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Theta trajectory lengths, place field sizes, and inverse phase precession slopes display strikingly linear relationships to one another, with theta trajectory length correlating slightly better with characteristic speed (R=0.35) than with place field parameters (R=0.29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 are supported by correlation analyses shown in Figure 6\u2014figure supplement 3. The linear relationships among the three measures underscore their systematic interdependence. The slightly stronger correlation with characteristic speed (C48) is consistent with the behavior-dependent sweep model's predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "In a combined model, characteristic running speed uniquely accounted for 13% and 11% of variance in place field sizes and inverse phase precession slopes respectively, while distance to border uniquely accounted for 3% and 7%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 presents results from a likelihood ratio test that partitions variance between characteristic speed and distance to border. The analysis appropriately addresses the confound that these variables are correlated. The finding that characteristic speed explains more variance supports its primary role, though the modest R\u00b2 values indicate substantial unexplained variance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Computational modeling shows that the temporal sweep model qualitatively fits population averages but incorrectly predicts within-field changes; the spatial sweep model accounts for within-field stability but severely underestimates trajectory length increases; only the behavior-dependent sweep model captures both population and within-field effects, producing the lowest mean squared deviation for 4/5 variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 present systematic model comparisons shown in Figure 7. The generative modeling approach appropriately tests each model's ability to reproduce multiple experimental observations simultaneously. The behavior-dependent sweep model's superior performance across both qualitative patterns and quantitative fits provides strong support for the model. The parameter fitting approach (\u03c4\u03b8 estimated from phase precession slopes, then validated against other measures) is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The behavior-dependent sweep model replicates the experimentally observed increase in firing rates with running speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by analysis shown in Figure 7\u2014figure supplement 2. This represents an additional validation of the model beyond the primary variables analyzed, demonstrating that the model captures multiple aspects of place cell activity. The result strengthens confidence in the model's biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "The study's main findings are that place fields are larger and have shallower phase precession slopes at locations where animals typically run faster, and that the behavior-dependent sweep model uniquely accounts for the combination of experimental findings at population and single-cell levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 summarize the paper's central empirical and theoretical contributions. C14 is supported by the analyses in Figure 6 showing systematic relationships between characteristic speed and place field parameters. C15 is supported by the comprehensive model comparison in Figure 7. Together, these claims represent the resolution of the paradox identified in the introduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The discussion contextualizes the findings with respect to reaction times, place field size gradients along the hippocampal axis, theta sequence development in novel environments, theta frequency modulation by acceleration, and potential extensions to 2D environments and grid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are appropriately supported by citations to relevant literature. These claims place the findings in broader context and discuss implications. C58-C60 relate sweep timescales to behavioral timescales; C61-C63 discuss potential mechanisms and confounds; C64 discusses generalization. All are reasonable interpretations supported by cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The behavior-dependent sweep model predicts that for grid cells, individual firing field sizes will vary with characteristic running speed while the distance between field peaks remains constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 presents a testable prediction derived logically from the behavior-dependent sweep model. The prediction follows from the model's assumption that true place fields (or grid fields) remain fixed in space while measured fields expand due to behavior-dependent sweeps. This represents a clear, falsifiable prediction for future work.",
+    "result_type": "MINOR"
+  }
+]

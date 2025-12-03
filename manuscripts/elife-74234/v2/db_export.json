@@ -1,0 +1,2003 @@
+{
+  "submission": {
+    "id": "6a93d633-4df8-4b19-929b-17258d51aa68",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:31:16.963227Z",
+    "updated_at": "2025-12-03T09:31:16.963227Z"
+  },
+  "content": [
+    {
+      "id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "submission_id": "6a93d633-4df8-4b19-929b-17258d51aa68",
+      "content_type": "manuscript",
+      "content_text": "# ZAF, the first open source fully automated feeder for aquatic facilities\n\n## Authors\n\n- Merlin Lange<sup>1</sup> ([ORCID: 0000-0003-0534-4374](https://orcid.org/0000-0003-0534-4374)) \u2020\n- AhmetCan Solak<sup>1</sup>\n- Shruthi Vijay Kumar<sup>1</sup>\n- Hirofumi Kobayashi<sup>1</sup>\n- Bin Yang<sup>1</sup>\n- Lo\u00efc Alain Royer<sup>1</sup> ([ORCID: 0000-0002-9991-9724](https://orcid.org/0000-0002-9991-9724)) \u2020\n\n### Affiliations\n\n1. Chan Zuckerberg Biohub San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the past few decades, aquatic animals have become popular model organisms in biology, spurring a growing need for establishing aquatic facilities. Zebrafish are widely studied and relatively easy to culture using commercial systems. However, a challenging aspect of maintaining aquatic facilities is animal feeding, which is both time- and resource-consuming. We have developed an open-source fully automatic daily feeding system, Zebrafish Automatic Feeder (ZAF). ZAF is reliable, provides a standardized amount of food to every tank, is cost-efficient and easy to build. The advanced version, ZAF+, allows for the precise control of food distribution as a function of fish density per tank, and has a user-friendly interface. Both ZAF and ZAF+ are adaptable to any laboratory environment and facilitate the implementation of aquatic colonies. Here, we provide all blueprints and instructions for building the mechanics, electronics, fluidics, as well as to setup the control software and its user-friendly graphical interface. Importantly, the design is modular and can be scaled to meet different user needs. Furthermore, our results show that ZAF and ZAF+ do not adversely affect zebrafish culture, enabling fully automatic feeding for any aquatic facility.\n\n## Introduction\n\nThe zebrafish (Danio rerio) is a well-established animal model in biology, with increasing use in different fields (Kinth et al., 2013; Lidster et al., 2017), including developmental biology (Lawson and Wolfe, 2011), neuroscience (Wyatt et al., 2015) and genetics (Lieschke and Currie, 2007). Among their advantages, zebrafish are vertebrates and have excellent optical properties as well as accessible genetics. Another essential feature of zebrafish is their low maintenance and husbandry cost (Westerfield, 2000). The development of commercial systems for zebrafish culture has helped advance zebrafish research (Lawrence, 2007). However, implementing a zebrafish facility remains a challenge for many small to medium sized laboratories due to cost and infrastructure issues. The most important aspect of zebrafish husbandry is the feeding, usually done manually at least two times a day by dedicated staff, using dry or living food like Artemia nauplii (Lawrence, 2011). Overall, manual feeding is not sufficiently accurate and can be time and resource prohibitive for labs without dedicated staff (Candelier et al., 2019). Very few technologies have been developed to automate zebrafish feeding and husbandry to help offset the challenges associated with implementing an aquatic facility. Some vendors propose fully automated solutions, but these are typically expensive, proprietary, incompatible with other systems, and require manual food filling before each feeding session. Other groups have recently published semi-automatic solutions that require human supervision (Candelier et al., 2019; Tangara et al., 2019). However, there is no open access and fully automated solution currently available. Ideally, all blueprints and instructions for building a flexible and scalable fully automated feeding system should be available to the zebrafish community. Importantly, such a design should be optimised for simplicity to facilitate adoption, avoiding complex 3D printing, mechanical assembly, or complex circuit board manufacturing. It should be easily assembled from inexpensive and commercially available parts, making it maximally accessible for non-experts. Here, we present ZAF (Zebrafish Automated Feeding) which satisfies all these requirements for automatic feeding of zebrafish as well as for any similar aquatic model organism.\n\n## Results\n\n### Automating aquatic husbandry\n\nEstablishing and maintaining an aquatic colony in research labs is not trivial. The colony requires a dedicated room with specific characteristics (e.g. temperature, water source, drain access, etc.) and regular monitoring by committed staff. To facilitate access to zebrafish research, and to reduce the amount of work needed to rear these animals, we developed a small semi-automated aquatic facility system that can be built within a regular wet lab. The only requirement being access to a sink and deionized water. To construct our facility, we used a stand-alone zebrafish rack, commercially available from different suppliers, that requires only minimum maintenance because these systems typically monitor water quality and automatically adjust water pH and conductivity. We then enclosed this system inside of a large indoor tent (Figure 1\u2014figure supplement 1), and equipped this tent with a smart heating system to control the temperature, a carbon purifier to regulate humidity and odors, cameras for remote monitoring, and water sensor ropes to detect leaks. Once this basic life-support is provided the only missing feature to attain full automation is automatic feeding which is important to reduce staff workload (mainly during weekends and holidays) and standardize feeding. We introduce two affordable and easy to build automatic feeding systems: ZAF and ZAF+ (Video 1). Parts list, building instructions, and detailed blueprints to build your own ZAFs are provided in the Supplementary file 1 and the latest version of this material can be found in the in the accompanying wiki (github.com/royerlab/ZAF/wiki). ZAFs are affordable and leveraging only commercially available parts (Supplementary files 2 and 3) We also provide the open-source python-based software to run the device, with command line interface (CLI) for ZAF and a stand-alone graphic user interface (GUI) for ZAF+.\n\n![Video 1.](https://cdn.elifesciences.org/articles/74234/elife-74234-video1.mp4.jpg)\n\n### ZAF basic workflow\n\nZAF\u2019s design relies on mixing water with dry zebrafish food and then distributing this mix to all fish tanks. The basic operating principle of ZAF is simple: a servo motor rotates a food canister to dispense food into a container directly filled with water. This food-water mixture is then distributed to the tanks using pumps and a manifold tubing system. ZAF consists of three main modules: (i) electronics, (ii) tubing and pumps, and (iii) food preparation (Figure 1a and b). The electronics module is comprised of a credit card-sized computer (Raspberry Pi 3 B+) augmented with an extension board (\u2018servo hat\u2019) that sends signals to various motor controllers to trigger pumping and valve opening (detailed description of the electronic circuit in Figure 1\u2014figure supplement 2 and more construction details in the Supplementary file 1). The Raspberry Pi 3 B + is connected to a touch screen and keyboard for easy user interfacing with the command-line interface. Several feeding programs can be added, modified and deleted. The amount of food delivered is constant across all tanks and can be modified by adjusting the food container opening as well as the degree of servo rotation. The tubing and pumps module is the central element in the food distribution system. The pumps mix food and water and distribute the mixture to the tanks. In ZAF, an air pump is used to stir and mix the food and water (Figure 1a). A splitter panel directs the liquid flow through the tubes leading to the individual tanks (Figure 1\u2014figure supplement 3). A valve was added downstream of the water-in pump to prevent overflow or water leak in the device. Finally, for the food preparation module, we repurposed a commercially available aquatic food container and attached it to a servomotor for precise rotation control. For the mixing flask, we used a simple 200 ml plastic lab flask equipped with a funnel. To prevent water leaks, the food preparation container is placed in a water containment box. Additionally, we added a water sensor connected to a safety pump that, when activated, will remove any spilled water from this containment box. Once all parts have been delivered (see detailed list on Supplementary file 2), building ZAF in a few hours is feasible by following the instructions on our publicly available wiki. Both ZAF systems are highly modular and scalable: the number of tanks can be easily increased to meet the needs of larger aquatic facilities. For example, the system described in Figure 1a is designed for eight tanks but can be scaled up by adding extra pumps and by extending the splitter panels.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic representation of ZAF\u2019s three main modules with their key components. Basic electronic wiring is also shown. ZAF is designed to distribute the same food quantity to all (fish) tanks. (b) 3D visualization of the different ZAF modules: electronics, tubing, pumps, and food preparation. (c) Variation of the fish mean weight over 8 weeks during ZAF feeding (n = 7) versus manually-fed fish (n = 6). (d) Spawning success for ZAF fed fish versus a manually-fed fish (spawning evaluated at weeks 2 and 6). All bars indicate s.e.m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Schematic representation of the standalone single rack zebrafish facility where we tested ZAFs. The facility is semi automatic and does not require constant human supervision. (b) Outside picture of the semi-automatic zebrafish facility. (c) ZAF+ inside the zebrafish facility.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The design is based on a Raspberry computer, a Servo Hat Board to drive Pulse Width Modulation outputs and motor controller to control the pumps and valve. All the pumps and valves connected to the motor drivers are plugged on a 12V and 10A power supply converter. The Raspberry Pi, the servo hat and all the electronic connected to the servo hat are running with 5V through the Raspberry Pi power.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** In this schematic graph, we indicate how to connect the different pumps and valves together and where to the different types of tubing.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig1-figsupp4-v2.jpg)\n\n### ZAF structure and performance\n\nThe three modules that constitute ZAF are housed in a metal frame built with the versatile Makerbeam prototyping system. We provide all the detailed instructions for the hardware construction in the Supp. Information and in our wiki. The size of the automatic feeder can be adjusted from the baseline, which has a width of 15 inches, depth of 9 inches, and height of 9 inches (Figure 1b). Our prototype for the automatic feeding was sized for 16 zebrafish tanks. Distribution of complete nutrition dry food (Gemma-300 - Skretting Zebrafish) was calibrated according to the amounts recommended by the manufacturer. It was important to evaluate the impact of ZAF feeding versus manual feeding on fish health and fecundity. For this, we measured the weight of adult fish fed with the two techniques over 8 weeks and found no statistical difference (Figure 1c). Additionally, we found no excess mortality over the 8-week period for fish fed with the automatic device (zero fish died out of 92) versus manual feeding (one fish died out of 33). During the same period, we evaluated the fecundity of the fish and observed no difference between the two populations (Figure 1d). Additionally, the automatic feeding does not affect the water quality of our facility over a period of three months (Figure 1\u2014figure supplement 4). Taken together, ZAF is appropriate for the feeding of a homogeneous fish population (i.e. tanks with a relatively equivalent number of animals) and it does not affect fish health nor fecundity.\n\n### ZAF+ enables flexible, tank-specific feeding\n\nWhile ZAF is an effective system for feeding multiple tanks with similar numbers of animals, it lacks precise control of food distribution to individual tanks. This can be problematic for aquatic facilities that have either disparate tank sizes or varying fish densities. To overcome this problem, ZAF+ was created to control food flow both spatially and temporally by adding valves upstream of each tank (Figure 2a and b). The ZAF+ software allows users to configure feeding parameters such as feeding frequency, timing, and quantity, as well as which tanks need feeding. With this system users can individually control and distribute a precise amount of food for each tank. For a more detailed explanation of ZAF+ feeding sequence compared to the simpler ZAF version see Box 1 (Box 1\u2014figure 1). ZAF+ was built by reusing several ZAF modules. However, most modules (i.e. electronics, tubing and valves, food preparation) were improved. We list all necessary components to build ZAF in the Supplementary file 3. Our design can be easily adapted to other needs by scaling up or down the various components. ZAF+ is larger (21\u201d w x 12\u201d d x 9\u201d h) than the base ZAF version but still fits in a fish facility. To control the additional valves we added a micro-controller (Arduino Mega) for all pumps and valves, which permits limitless scalability by daisy-chaining multiple such controllers (Figure 2\u2014figure supplement 1). The tubing and pumps module is extended to use a manifold to split the flow (Figure 1\u2014figure supplement 2). Because of the more complex electronics and numerous wires in ZAF+, we enclosed all electrical components in a water-proof safety box. We used a touch screen for interfacing with the software, allowing the user to adjust settings such as the amount and timing of food delivery (Box 2\u2014figure 1). ZAF+ can operate 7 days a week all year long, only requiring regular dry-food reloading as well as tube replacement. Tube replacement frequency varies on users usage and on facility environmental parameters (i.e. light and temperature). In our hands, we found that replacing tubing every 12 weeks takes one hour and is sufficient to keep tubes reasonably clean (Figure 1\u2014figure supplement 3). We evaluated ZAF+ performance on both high- and low-density tanks, which is easily done through the user-friendly user interface. The fish were assessed for mean weight over 8 weeks. Overall, we observed no difference in the mean weights compared to the manually fed control group (Figure 2c). We then evaluated the reproduction of fish fed with ZAF+ and found no significant differences with fish fed manually. Finally, ZAF+ does not affect the water quality during a three months period (Figure 1\u2014figure supplement 4) nor fish mortality. Thus, ZAF+ is a viable solution for full feeding automation in aquatic facilities.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig2-v2.jpg)\n\n**Figure 2.:** (a) Diagram of ZAF+. Electronics consist of: a Raspberry Pi 3, Arduino Mega, 16 relay module, an motor controllers. The water and food mix is pumped and sent via tubes to a manifold and valves that distribute it to specific tanks. (b) 3D representation of ZAF+ with extra space for the valves and a electronics box compared to the base ZAF version. (c) Evolution of the mean fish weight over 8 weeks of ZAF feeding (n = 6) versus the control group (n = 6). (d) Spawning success for fish fed by ZAF+ versus the control group. All bars indicate standard error mean.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** ZAF+ main electronics components are a Raspberry Pi 3B+ to run the software and control the electronics, Arduino Megas Arduino 2560 microcontrollers for the digital devices, motor controllers to control the various pumps and 16 Relay Module interface board to drive current and control the valves. The Raspberry Pi is connected directly to one Arduino Mega using a USB cable. The two Arduinos are daisy-chained via a serial connection (the whole design can be extended by daisy-chaining more arduinos). The Arduinos are connected to the motor controllers through digital pins. The Arduinos control the opening of each individual valve through the 16 relay module. A 12V power supply provides power to the electronics, except for the Raspberry Pi and the two Arduino Megas powered by the Raspberry Pi 5V.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The following schematic diagram represents the tubing connections between the different ZAF+ components. In order to connect the pump to multiple valves (30, in our case), we used manifolds that split the water flow into several tubes.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** In our fish facility conditions we observed that the tubes should be replaced every 12 weeks .\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig2-figsupp4-v2.jpg)\n\n## Discussion\n\nIn the present report, we introduced two aquatic feeding devices, ZAF (Figure 1) and ZAF+ (Figure 2) and evaluated their applicability for zebrafish feeding and husbandry over 8 weeks. ZAFs are effective and cheap solutions to overcome staffing issues on weekends and holidays and we hope will help disseminating aquatic animal models in research institutes. Interestingly, our devices can be easily adapted to behavioral studies (i.e. food conditioning) as well as any type of experimental design that requires pellets or liquid delivery, illustrating the versatility of our system. Both designs are fully open access (hardware and software), modular, scalable and highly adaptable. We also include instructions on installing a graphical user interface to run the automatic feeders. Both designs are relatively easy to build and do not require specialized training in electronics nor engineering. Importantly, ZAFs can easily be adapted to all commercially available aquatic facilities. ZAF+ is more robust than ZAF due to conceptual and technical improvements. While ZAF is easy to build, it does not offer control over food distribution per tank. ZAF+ construction is more complex but is amenable to feeding variable numbers of fish per tank, or different tank sizes (Box 2). To maintain the tubes clean and unclogged after each feeding sequence, we programmed a cleaning step as described and illustrated in Box 1 with water and then air. Additionally, we run a cleaning program (no food, water, and air only) to wash the system and prevent clogging (Box 2). Both devices can run 7 days a week all year long. For optimal performance, we do recommend manual cleaning or replacing of the tubes every 10 weeks. We tested both ZAF systems in our fish facility for a total of 19 months (9 months for ZAF and 10 months for ZAF+) and never suffered from major malfunctions, nor observed adverse health effects to our fish. To help with potential malfunctions, we provide a troubleshooting guide to common minor issues we encountered while building or operating ZAFs (Supplementary file 4). We invite all ZAFs developers and users to report any issues on the ZAF Github repository (github.com/royerlab/ZAF/issues). Lab automation is likely to be increasingly critical to improve productivity, efficiency and research reproducibility (Check Hayden, 2014; Boyd, 2002; Almada et al., 2019). However, the field of animal husbandry has not yet made enough progress toward full automation and this holds particularly true for aquatic facilities, which have not been modernized for decades. For these reasons, and given constraints on personnel, we developed our own fully automatic fish feeding system. We used inexpensive hardware such as the micro-computer Raspberry-Pi (Gay, 2014), the Arduino micro-controller, and the Python programming language (Van Van Rossum, 1995). Making your own design is not easy and requires time and fine-tuning (May, 2019; Blow, 2008) therefore to help others in the community we decided to document in our wiki (github.com/royerlab/ZAF/wiki) all the steps we took in creating our stand-alone solution (see also the Supp. Information for a snapshot of the wiki). The wiki also offers solutions and advices on how to scale up ZAFs to different fish facility specifications. In this work we have used dry food (Gemma from Skretting Zebrafish) because of its complete nutritional profile and positive effect on fish health (Lawrence, 2011; Lawrence et al., 2012; Barton et al., 2016). Automated feeding is most easily performed with dry food; however, the food container can be adapted to live food if required (data not shown). For example, in the case of Artemia nauplii, a popular zebrafish diet, fresh live food is prepared every day. We tested ZAF and ZAF+ with Artemia nauplii and the feeding works well.\n\nAnother important aspect of aquatic husbandry is breeding of fish fry. While we did not directly test breeding, our automatic feeders can be easily adapted to deliver different types of food specific to different ages by adding several servos and food containers. Another solution could be to build two devices, one for adult and another one for small fry. With the advent of new aquatic model organisms with similar breeding requirements as zebrafish (Lawrence, 2011; Lawrence et al., 2012; Barton et al., 2016), it is conceivable that both ZAF systems could be adapted to others species. Finally, we hope that by releasing ZAF as an open access project we will empower a large community of users to build their own ZAFs, adapt them to their needs, help each other, and, perhaps, develop the next generation system.\n\n## Materials and methods\n\n### Animals and husbandry\n\nThis research was done under a protocol reviewed and approved by the institutional animal care and use committee (IACUC) of University of California San Francisco (UCSF). The fish were kept in a standalone aquatic system (Techniplast, Italy) with water maintained at 28\u00b0 and a diurnal cycle of 10 hr of dark and 14 hr of light (Alestr\u00f6m et al., 2020). The study was conducted on the wild-type EKW strain, casper mutant (White et al., 2008) and h2afva:h2afva-mCherry transgenic line (Knopf et al., 2011) (gift from Jan Huisken, Morgridge Institute for Research, Madison, USA). We only housed and used fish between 4 months and 18 months old. Manual feeding is done once a day, at the same time of the day, according to the manufacturer recommendations and fish density.\n\n### ZAFs equipment\n\nZAFs are designed to be built with only commercially-available parts. The Supplementary files 2 and 3 list the necessary parts used to build ZAF, and ZAF+, respectively. Most of the parts used are generic and can be replaced by similar parts with similar specifications. The only component that cannot be easily exchanged is the Raspberry PI computer, but this is not an issue as these are very easily sourced.\n\n### ZAFs construction manual\n\nIn the Supplementary file 1 we provide detailed instructions on how to easily build the system with tools present in most labs and easy to source components (github.com/royerlab/ZAF/wiki). There are also instructions on how to run the software and operate the graphical user interface. To build the ZAFs frame we use the versatile and easy to use Makerbeam consruction system. For both ZAFs we use two different tubing sizes, for the pump tubing we use 3/8\u201d outside diameter tubes, for the valves tubing we use 1/4\u201d outside diameter tubes. We use either silicone or PVC based tubing because they have good specifications and are safe for food delivery (PVC based are more cost effective).\n\n### ZAF electronics\n\nThe electronic core of ZAF is based on (i) A Raspberry a credit card size computer, (ii) A Servo Hat Board to drive Pulse Width Modulation outputs, like the pumps and valve, (iii) Motor Controller to control the DC motors (pumps and valve). All the pumps and valves connected to the motor drivers are plugged on a 12V and 10A power supply converter. The Raspberry Pi, the servo hat and all the electronic connected to the servo hat are running with 5V through the Raspberry Pi power.\n\n### ZAF+ electronics\n\nZAF+ electronics are comprised of four different components i. A Raspberry Pi 3 B + to run the software and control the electronics, ii. two Arduino Megas Arduino 2,560 microcontrollers for the digital devices, iii. several motor controllers to control the various pumps, iv. 16 Relay Module interface board to drive current and control the valves. The two Arduinos are daisy-chained via a serial connection (the whole design can be extended by daisy-chaining more arduinos). A 12V power supply provides power to the electronics, except for the Raspberry Pi and the two Arduino Megas powered by the Raspberry Pi 5V.\n\n### Code availability\n\nThe control software for both ZAFs as well as the corresponding graphical user interfaces are available as open-source code. We also provide instructions and a step-by-step guide on how to run the software (github.com/royerlab/ZAF/wiki/Software).\n\n### Automatic feeding calibration - ZAF\n\nWe use the Gemma micro 300 (Skretting Zebrafish) food diet. Feeding is calibrated so that ZAF distributes 5% of the fish body weight per feeding. This follows the producers\u2019 recommendations. We feed the fish in our facility twice a day. Based on the number of fish, we calibrate the automatic device to distribute 5 g of food homogeneously to all tanks per run. This calibration is done by manually by adjusting the food container opening, and the amount of servo rotation.\n\n### Automatic feeding calibration - ZAF+\n\nSimilarly to ZAF, we use the Gemma micro 300 (Skretting Zebrafish) diet and run the program twice a day. Food distribution is done per tank according to a \u2018food quantity selection\u2019 parameter that can be set on the user interface: \u20181\u2019 for low fish density, to \u20184\u2019 for high fish densities. Calibration is done in same way as for ZAF. The amount of food distributed per fish density is detailed in Box 2. The approximate amount of food required for different fish densities is as follows: Very low - 100 mg for to 2\u20134 fish, low - 200 mg for 5\u20138 fish, medium - 350 mg for 9\u201314 fish, large - 500 mg for 15 up to 20 fish.\n\n### Fish weight and spawning measurements\n\nTo weigh the fish, we first took a clean petri dish and tared it on a weighing scale. Each fish was then dabbed on a tissue paper to remove excess water and then placed in the petri dish to weigh it. This was repeated for all fish individually. To demonstrate the feeding efficiency of ZAF+, we documented the weight of the fish over a period of 7 weeks. The fish were weighed every Monday from week 1 to week 8. Since ZAF+ has the potential to customize the amount of food given per tank based on the number of fish present, we chose two tanks - one with over 12 fish and the second with only four fish to ensure each tank receives the designated amount of food. These two tanks were kept with the same fish population during the whole evaluation. We used tanks from different rows (top and bottom) to verify that tube layout and length do not affect the feeding quality nor quantity. Similarly we tracked the breeding of the fish over 2 weeks. Three random fish were selected and two to three crosses were bred for each of them. Next day, we documented the number of crosses which bred for each of the lines and calculated the average of all the positive crosses.\n",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "b0ce0c21-39da-4bbe-b273-fd6ae571f782",
+      "submission_id": "6a93d633-4df8-4b19-929b-17258d51aa68",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Ekker, Mayo Clinic United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74234.sa0](https://doi.org/10.7554/eLife.74234.sa0)\n\nThis is a nice example of an accessible tool for aquatic science, which will be valuable to an array of different researchers.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Stephen C Ekker, Mayo Clinic United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74234.sa1](https://doi.org/10.7554/eLife.74234.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n\nDecision letter after peer review:\n\nThank you for submitting your article \"ZAF \u2013 The First Open Source Fully Automated Feeder for Aquatic Facilities\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers at Review Commons, and the evaluation at eLife has been overseen by a Reviewing Editor and Richard White as the Senior Editor.\n\nBased on the previous reviews and the revisions, the manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThis is a nice paper and a great start. However, key information should be fully contained in the written document and not shifted to the wiki. For example, the component list etc should be found in a revised paper, not as a link to a wiki. The authors should carefully check that the manuscript is self-contained for all key points.\n",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a503f083-4388-4df5-8bbd-1b05f7347d80",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C1",
+      "claim": "Zebrafish are widely studied and relatively easy to culture using commercial systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish are widely studied and relatively easy to culture using commercial systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about zebrafish in the abstract, drawing from established scientific knowledge about zebrafish as model organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "635e1543-f5b4-4a2b-80f3-77a77f6c9f57",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C2",
+      "claim": "A challenging aspect of maintaining aquatic facilities is animal feeding, which is both time- and resource-consuming.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a challenging aspect of maintaining aquatic facilities is animal feeding, which is both time- and resource-consuming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about the challenges of aquatic facility maintenance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "7f7e79f2-35a7-4a37-a367-f4d0e5150628",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C3",
+      "claim": "ZAF is reliable, provides a standardized amount of food to every tank, is cost-efficient and easy to build.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAF is reliable, provides a standardized amount of food to every tank, is cost-efficient and easy to build.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct assertion by the authors about the properties of their device, supported by the design and testing described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "d7256bb4-c535-460a-b585-8d45c1673845",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C4",
+      "claim": "ZAF+ allows for the precise control of food distribution as a function of fish density per tank.",
+      "claim_type": "EXPLICIT",
+      "source": "The advanced version, ZAF+, allows for the precise control of food distribution as a function of fish density per tank, and has a user-friendly interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the design features described in the manuscript and demonstrated in the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "a8638f01-1b86-4068-9e4a-2050482668d6",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C5",
+      "claim": "Both ZAF and ZAF+ are adaptable to any laboratory environment and facilitate the implementation of aquatic colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ZAF and ZAF+ are adaptable to any laboratory environment and facilitate the implementation of aquatic colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion by the authors based on the modular design of the systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "32640365-ae28-429d-beba-3385c740c3dd",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C6",
+      "claim": "The design is modular and can be scaled to meet different user needs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the design is modular and can be scaled to meet different user needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the description of the system architecture and the authors' design choices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "07d22d01-4a35-47be-934b-7e815a019399",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C7",
+      "claim": "ZAF and ZAF+ do not adversely affect zebrafish culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results show that ZAF and ZAF+ do not adversely affect zebrafish culture, enabling fully automatic feeding for any aquatic facility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data on fish weight, mortality, and spawning success.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "65a1335d-e095-48c2-83c1-703b76998788",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C8",
+      "claim": "Zebrafish are vertebrates and have excellent optical properties as well as accessible genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Among their advantages, zebrafish are vertebrates and have excellent optical properties as well as accessible genetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about zebrafish as a model organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "ed6a9641-2177-4845-9f9a-99ac93e2b262",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C9",
+      "claim": "Zebrafish have low maintenance and husbandry cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Another essential feature of zebrafish is their low maintenance and husbandry cost (Westerfield, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Westerfield, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "3954726e-e760-4c7b-a74b-e515611011f8",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C10",
+      "claim": "The development of commercial systems for zebrafish culture has helped advance zebrafish research.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of commercial systems for zebrafish culture has helped advance zebrafish research (Lawrence, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lawrence, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "d18c1050-25d7-4975-9120-cf9ec2646e1e",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C11",
+      "claim": "Implementing a zebrafish facility remains a challenge for many small to medium sized laboratories due to cost and infrastructure issues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, implementing a zebrafish facility remains a challenge for many small to medium sized laboratories due to cost and infrastructure issues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on general knowledge of laboratory constraints.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "1905fe02-e544-424a-a3ca-3089722e3b35",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C12",
+      "claim": "The most important aspect of zebrafish husbandry is the feeding, usually done manually at least two times a day by dedicated staff.",
+      "claim_type": "EXPLICIT",
+      "source": "The most important aspect of zebrafish husbandry is the feeding, usually done manually at least two times a day by dedicated staff, using dry or living food like Artemia nauplii (Lawrence, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lawrence, 2011, and reflects standard practice in zebrafish husbandry.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "1c29618b-b798-42a2-992e-d9a45a342c85",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C13",
+      "claim": "Manual feeding is not sufficiently accurate and can be time and resource prohibitive for labs without dedicated staff.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, manual feeding is not sufficiently accurate and can be time and resource prohibitive for labs without dedicated staff (Candelier et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Candelier et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "b1371c41-f403-4b55-923e-5f518fbe9367",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C14",
+      "claim": "Very few technologies have been developed to automate zebrafish feeding and husbandry.",
+      "claim_type": "EXPLICIT",
+      "source": "Very few technologies have been developed to automate zebrafish feeding and husbandry to help offset the challenges associated with implementing an aquatic facility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on the authors' review of existing technologies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "bb2779ba-7135-4727-be60-35dce75d91c2",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C15",
+      "claim": "Some vendors propose fully automated solutions, but these are typically expensive, proprietary, incompatible with other systems, and require manual food filling before each feeding session.",
+      "claim_type": "EXPLICIT",
+      "source": "Some vendors propose fully automated solutions, but these are typically expensive, proprietary, incompatible with other systems, and require manual food filling before each feeding session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on the authors' knowledge of commercial products.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "81c04f84-ac96-4031-8cd9-ff3c1c14a86f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C16",
+      "claim": "Other groups have recently published semi-automatic solutions that require human supervision.",
+      "claim_type": "EXPLICIT",
+      "source": "Other groups have recently published semi-automatic solutions that require human supervision (Candelier et al., 2019; Tangara et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Candelier et al., 2019 and Tangara et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "2ec17874-ada3-4293-9bc9-e12aa9cda7e1",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C17",
+      "claim": "There is no open access and fully automated solution currently available.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is no open access and fully automated solution currently available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on the authors' review of existing technologies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "1e778c07-9d3b-4113-81ef-128656d50825",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C18",
+      "claim": "ZAF is optimised for simplicity to facilitate adoption, avoiding complex 3D printing, mechanical assembly, or complex circuit board manufacturing.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, such a design should be optimised for simplicity to facilitate adoption, avoiding complex 3D printing, mechanical assembly, or complex circuit board manufacturing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the design choices described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "de5f1f37-e627-4b9a-a1e0-d799c8ca406f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C19",
+      "claim": "ZAF is easily assembled from inexpensive and commercially available parts.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be easily assembled from inexpensive and commercially available parts, making it maximally accessible for non-experts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the parts list and construction instructions provided.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "733e3295-6ac1-4f72-b5b1-c44d719a31bb",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C20",
+      "claim": "ZAF can be used for automatic feeding of zebrafish as well as for any similar aquatic model organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present ZAF (Zebrafish Automated Feeding) which satisfies all these requirements for automatic feeding of zebrafish as well as for any similar aquatic model organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion by the authors based on the design of the system.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "021ef592-c278-45c9-96ea-f034b570eb00",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C21",
+      "claim": "The colony requires a dedicated room with specific characteristics (e.g. temperature, water source, drain access, etc.) and regular monitoring by committed staff.",
+      "claim_type": "EXPLICIT",
+      "source": "The colony requires a dedicated room with specific characteristics (e.g. temperature, water source, drain access, etc.) and regular monitoring by committed staff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects standard requirements for zebrafish facilities based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "cfd7ed1e-9225-4d2b-91aa-64264b72d2fd",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C22",
+      "claim": "The facility was enclosed inside of a large indoor tent and equipped with a smart heating system to control the temperature, a carbon purifier to regulate humidity and odors, cameras for remote monitoring, and water sensor ropes to detect leaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We then enclosed this system inside of a large indoor tent (Figure 1\u2014figure supplement 1), and equipped this tent with a smart heating system to control the temperature, a carbon purifier to regulate humidity and odors, cameras for remote monitoring, and water sensor ropes to detect leaks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the authors' facility setup, supported by Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "48962005-c8cf-4235-ac1d-b98a55268914",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C23",
+      "claim": "ZAFs are affordable and leveraging only commercially available parts.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAFs are affordable and leveraging only commercially available parts (Supplementary files 2 and 3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the parts lists provided in the supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "00ee098e-743b-4d01-9358-491fa07fcab9",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C24",
+      "claim": "ZAF's design relies on mixing water with dry zebrafish food and then distributing this mix to all fish tanks.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAF's design relies on mixing water with dry zebrafish food and then distributing this mix to all fish tanks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the basic operating principle of ZAF.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "49f27d79-3f75-456f-b757-b000a417edab",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C25",
+      "claim": "A servo motor rotates a food canister to dispense food into a container directly filled with water.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic operating principle of ZAF is simple: a servo motor rotates a food canister to dispense food into a container directly filled with water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mechanism, supported by the design schematics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "992a90f9-5759-46e4-873f-fdf1d13be378",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C26",
+      "claim": "ZAF consists of three main modules: (i) electronics, (ii) tubing and pumps, and (iii) food preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAF consists of three main modules: (i) electronics, (ii) tubing and pumps, and (iii) food preparation (Figure 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the description and Figure 1a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "f34bd1b0-11aa-4f49-9489-c31ba1a89971",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C27",
+      "claim": "The electronics module is comprised of a credit card-sized computer (Raspberry Pi 3 B+) augmented with an extension board ('servo hat') that sends signals to various motor controllers.",
+      "claim_type": "EXPLICIT",
+      "source": "The electronics module is comprised of a credit card-sized computer (Raspberry Pi 3 B+) augmented with an extension board ('servo hat') that sends signals to various motor controllers to trigger pumping and valve opening (detailed description of the electronic circuit in Figure 1\u2014figure supplement 2 and more construction details in the Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the description and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "620a8588-6970-4dcc-8582-2aef4da357d2",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C28",
+      "claim": "The Raspberry Pi 3 B + is connected to a touch screen and keyboard for easy user interfacing with the command-line interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The Raspberry Pi 3 B + is connected to a touch screen and keyboard for easy user interfacing with the command-line interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the user interface setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "b6bd019d-bbbb-44c2-a7d0-d39322c13aa1",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C29",
+      "claim": "The amount of food delivered is constant across all tanks and can be modified by adjusting the food container opening as well as the degree of servo rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of food delivered is constant across all tanks and can be modified by adjusting the food container opening as well as the degree of servo rotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration mechanism of ZAF.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "3806a2eb-f93c-429e-8c9c-0e770878ad53",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C30",
+      "claim": "In ZAF, an air pump is used to stir and mix the food and water.",
+      "claim_type": "EXPLICIT",
+      "source": "In ZAF, an air pump is used to stir and mix the food and water (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the description and Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "25449600-f804-4ae9-9f3b-ad4f56057c2a",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C31",
+      "claim": "Building ZAF in a few hours is feasible by following the instructions on the publicly available wiki.",
+      "claim_type": "EXPLICIT",
+      "source": "Once all parts have been delivered (see detailed list on Supplementary file 2), building ZAF in a few hours is feasible by following the instructions on our publicly available wiki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion by the authors based on their experience building the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "8611d256-e4a6-427a-ba97-b619b1499af2",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C32",
+      "claim": "Both ZAF systems are highly modular and scalable: the number of tanks can be easily increased to meet the needs of larger aquatic facilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ZAF systems are highly modular and scalable: the number of tanks can be easily increased to meet the needs of larger aquatic facilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the modular design described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "ef0ee6f6-4873-45dd-9107-3fe9d280beba",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C33",
+      "claim": "There was no statistical difference in mean weight of adult fish fed with ZAF versus manual feeding over 8 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we measured the weight of adult fish fed with the two techniques over 8 weeks and found no statistical difference (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "5370dd3b-c09c-4635-9f14-6f8d6d6c0ba9",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C34",
+      "claim": "There was no excess mortality over the 8-week period for fish fed with the automatic device (zero fish died out of 92) versus manual feeding (one fish died out of 33).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found no excess mortality over the 8-week period for fish fed with the automatic device (zero fish died out of 92) versus manual feeding (one fish died out of 33).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mortality data collected during the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "4b673d87-126f-4006-b6a5-9d1a0a50752b",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C35",
+      "claim": "There was no difference in fecundity between fish fed with ZAF and those fed manually.",
+      "claim_type": "EXPLICIT",
+      "source": "During the same period, we evaluated the fecundity of the fish and observed no difference between the two populations (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spawning success data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "4cdd8909-8421-44c3-97da-b20fa9f285dd",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C36",
+      "claim": "The automatic feeding does not affect the water quality of the facility over a period of three months.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the automatic feeding does not affect the water quality of our facility over a period of three months (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by water quality data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "02674116-bd43-4b3e-b58a-6238ed138414",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C37",
+      "claim": "ZAF is appropriate for the feeding of a homogeneous fish population (i.e. tanks with a relatively equivalent number of animals).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, ZAF is appropriate for the feeding of a homogeneous fish population (i.e. tanks with a relatively equivalent number of animals) and it does not affect fish health nor fecundity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the design limitations of ZAF and the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "c8432cdd-091f-42f1-9dd9-d96d75a52f6a",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C38",
+      "claim": "ZAF lacks precise control of food distribution to individual tanks.",
+      "claim_type": "EXPLICIT",
+      "source": "While ZAF is an effective system for feeding multiple tanks with similar numbers of animals, it lacks precise control of food distribution to individual tanks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors based on the design of ZAF.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "5dbb6c76-bfb6-42fd-a416-6bc51b72c395",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C39",
+      "claim": "ZAF+ was created to control food flow both spatially and temporally by adding valves upstream of each tank.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this problem, ZAF+ was created to control food flow both spatially and temporally by adding valves upstream of each tank (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the description and Figure 2a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "f5b6b05e-771a-40e7-bb40-805e61077b8c",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C40",
+      "claim": "The ZAF+ software allows users to configure feeding parameters such as feeding frequency, timing, and quantity, as well as which tanks need feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "The ZAF+ software allows users to configure feeding parameters such as feeding frequency, timing, and quantity, as well as which tanks need feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the software capabilities of ZAF+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "29f4d844-5414-4eb4-96d2-6f17c776421e",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C41",
+      "claim": "ZAF+ allows users to individually control and distribute a precise amount of food for each tank.",
+      "claim_type": "EXPLICIT",
+      "source": "With this system users can individually control and distribute a precise amount of food for each tank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the design features of ZAF+.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "6e7c90f7-db07-41ac-ac1a-d8f93879c63f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C42",
+      "claim": "ZAF+ was built by reusing several ZAF modules.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAF+ was built by reusing several ZAF modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship between ZAF and ZAF+ designs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "945c88c9-96c1-48e2-85bf-098e50e4e8d7",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C43",
+      "claim": "ZAF+ is larger (21\" w x 12\" d x 9\" h) than the base ZAF version but still fits in a fish facility.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAF+ is larger (21\" w x 12\" d x 9\" h) than the base ZAF version but still fits in a fish facility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides dimensional specifications of ZAF+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "5b39febe-efa3-4211-b3d9-6156db440819",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C44",
+      "claim": "A micro-controller (Arduino Mega) was added to control the additional valves in ZAF+.",
+      "claim_type": "EXPLICIT",
+      "source": "To control the additional valves we added a micro-controller (Arduino Mega) for all pumps and valves, which permits limitless scalability by daisy-chaining multiple such controllers (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the description and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "0a261917-765d-428b-bc53-48767f5b45a7",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C45",
+      "claim": "ZAF+ can operate 7 days a week all year long, only requiring regular dry-food reloading as well as tube replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAF+ can operate 7 days a week all year long, only requiring regular dry-food reloading as well as tube replacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on the authors' experience operating ZAF+.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "91c5d73c-2726-4bc7-9670-dd31f3b0a77e",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C46",
+      "claim": "Replacing tubing every 12 weeks takes one hour and is sufficient to keep tubes reasonably clean.",
+      "claim_type": "EXPLICIT",
+      "source": "In our hands, we found that replacing tubing every 12 weeks takes one hour and is sufficient to keep tubes reasonably clean (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' experience and supported by Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "dbd823c2-8bb6-4caf-8b4f-9c53218a1086",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C47",
+      "claim": "There was no difference in the mean weights of fish fed with ZAF+ compared to the manually fed control group over 8 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "The fish were assessed for mean weight over 8 weeks. Overall, we observed no difference in the mean weights compared to the manually fed control group (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "dba67caf-aab9-48c8-9e57-7170a758f588",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C48",
+      "claim": "There were no significant differences in reproduction between fish fed with ZAF+ and fish fed manually.",
+      "claim_type": "EXPLICIT",
+      "source": "We then evaluated the reproduction of fish fed with ZAF+ and found no significant differences with fish fed manually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by spawning success data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "2c4d0fb8-eb6c-41fd-b7c4-4bdc87c2282e",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C49",
+      "claim": "ZAF+ does not affect the water quality during a three months period.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, ZAF+ does not affect the water quality during a three months period (Figure 1\u2014figure supplement 4) nor fish mortality.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by water quality data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "d045a042-f9da-425d-8f6c-052dce3a5d95",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C50",
+      "claim": "ZAF+ is a viable solution for full feeding automation in aquatic facilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ZAF+ is a viable solution for full feeding automation in aquatic facilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results showing no adverse effects on fish health, reproduction, or water quality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "e7fce2ee-5dcb-45f7-88cc-d6bda71ea6b0",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C51",
+      "claim": "ZAFs can help disseminate aquatic animal models in research institutes.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAFs are effective and cheap solutions to overcome staffing issues on weekends and holidays and we hope will help disseminating aquatic animal models in research institutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential impact of ZAFs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "ac7a744b-c89f-401a-97dc-1b64313935a1",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C52",
+      "claim": "ZAF devices can be easily adapted to behavioral studies (i.e. food conditioning) as well as any type of experimental design that requires pellets or liquid delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our devices can be easily adapted to behavioral studies (i.e. food conditioning) as well as any type of experimental design that requires pellets or liquid delivery, illustrating the versatility of our system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications of the system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "2bbbdfa3-da75-4113-971e-d6eb58a9136c",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C53",
+      "claim": "Both ZAF designs are fully open access (hardware and software), modular, scalable and highly adaptable.",
+      "claim_type": "EXPLICIT",
+      "source": "Both designs are fully open access (hardware and software), modular, scalable and highly adaptable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the availability of all blueprints, parts lists, and software on the public repository.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "76d77db9-7a29-4438-96fe-1375e83f8e3f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C54",
+      "claim": "ZAFs can easily be adapted to all commercially available aquatic facilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ZAFs can easily be adapted to all commercially available aquatic facilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on the modular design of the systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "ba2ba94d-fd78-4b86-8825-f2b523006284",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C55",
+      "claim": "ZAF+ is more robust than ZAF due to conceptual and technical improvements.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAF+ is more robust than ZAF due to conceptual and technical improvements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion by the authors based on the design improvements in ZAF+.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "2f630491-5fbe-4f7a-98ed-224ef6a12c0c",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C56",
+      "claim": "ZAF is easy to build but does not offer control over food distribution per tank.",
+      "claim_type": "EXPLICIT",
+      "source": "While ZAF is easy to build, it does not offer control over food distribution per tank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors based on the design of ZAF.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "388b8075-1f0b-47d6-a5f5-70ba7c130071",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C57",
+      "claim": "ZAF+ construction is more complex but is amenable to feeding variable numbers of fish per tank, or different tank sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAF+ construction is more complex but is amenable to feeding variable numbers of fish per tank, or different tank sizes (Box 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the design features of ZAF+ described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "35ffab09-5e11-4fb3-8ac9-e8e8568ef826",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C58",
+      "claim": "Both ZAF devices can run 7 days a week all year long.",
+      "claim_type": "EXPLICIT",
+      "source": "Both devices can run 7 days a week all year long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on the authors' experience operating the devices.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "9ade6a8d-e5da-42fa-af67-6179bb2f1587",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C59",
+      "claim": "Manual cleaning or replacing of the tubes every 10 weeks is recommended for optimal performance.",
+      "claim_type": "EXPLICIT",
+      "source": "For optimal performance, we do recommend manual cleaning or replacing of the tubes every 10 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' experience.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "9145a01d-acaf-4adc-9598-9eebdd80c950",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C60",
+      "claim": "The authors tested both ZAF systems in their fish facility for a total of 19 months (9 months for ZAF and 10 months for ZAF+) and never suffered from major malfunctions.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested both ZAF systems in our fish facility for a total of 19 months (9 months for ZAF and 10 months for ZAF+) and never suffered from major malfunctions, nor observed adverse health effects to our fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' long-term testing experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "9a3e7d9b-f309-4e02-bfad-88048a94e9e5",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C61",
+      "claim": "The authors never observed adverse health effects to their fish during 19 months of testing ZAF systems.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested both ZAF systems in our fish facility for a total of 19 months (9 months for ZAF and 10 months for ZAF+) and never suffered from major malfunctions, nor observed adverse health effects to our fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' long-term testing experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "e32f4026-d6ff-474a-ad41-659cbe5169a6",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C62",
+      "claim": "Lab automation is likely to be increasingly critical to improve productivity, efficiency and research reproducibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Lab automation is likely to be increasingly critical to improve productivity, efficiency and research reproducibility (Check Hayden, 2014; Boyd, 2002; Almada et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Check Hayden, 2014; Boyd, 2002; and Almada et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "5792b77e-7eb0-4b8a-ab23-b51da3b36d1f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C63",
+      "claim": "The field of animal husbandry has not yet made enough progress toward full automation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the field of animal husbandry has not yet made enough progress toward full automation and this holds particularly true for aquatic facilities, which have not been modernized for decades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on the authors' assessment of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "eb84967f-0c2f-4566-8a72-a6344cb8b7b4",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C64",
+      "claim": "Aquatic facilities have not been modernized for decades.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the field of animal husbandry has not yet made enough progress toward full automation and this holds particularly true for aquatic facilities, which have not been modernized for decades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on the authors' assessment of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "678106c6-7488-4f42-aa05-4013f8f7dd1c",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C65",
+      "claim": "The authors used inexpensive hardware such as the micro-computer Raspberry-Pi, the Arduino micro-controller, and the Python programming language.",
+      "claim_type": "EXPLICIT",
+      "source": "We used inexpensive hardware such as the micro-computer Raspberry-Pi (Gay, 2014), the Arduino micro-controller, and the Python programming language (Van Van Rossum, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the description of the hardware components and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "75138dfd-fff9-4906-9691-8b2fa61a4544",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C66",
+      "claim": "Dry food (Gemma from Skretting Zebrafish) has a complete nutritional profile and positive effect on fish health.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work we have used dry food (Gemma from Skretting Zebrafish) because of its complete nutritional profile and positive effect on fish health (Lawrence, 2011; Lawrence et al., 2012; Barton et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lawrence, 2011; Lawrence et al., 2012; and Barton et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "7b920992-95a8-4c0a-a4da-83249fa985a7",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C67",
+      "claim": "Automated feeding is most easily performed with dry food.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated feeding is most easily performed with dry food; however, the food container can be adapted to live food if required (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion based on practical considerations of the feeding system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "2a2e8c0f-4431-40b2-b2d5-1a80212fdb2b",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C68",
+      "claim": "The authors tested ZAF and ZAF+ with Artemia nauplii and the feeding works well.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested ZAF and ZAF+ with Artemia nauplii and the feeding works well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' testing experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "94bc5f53-57ff-4f43-8b48-c94a979d742c",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C69",
+      "claim": "The automatic feeders can be easily adapted to deliver different types of food specific to different ages by adding several servos and food containers.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not directly test breeding, our automatic feeders can be easily adapted to deliver different types of food specific to different ages by adding several servos and food containers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential adaptations of the system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "852d0c6e-474b-4f7f-b272-b722f9018424",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C70",
+      "claim": "Both ZAF systems could be adapted to other aquatic species with similar breeding requirements as zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "With the advent of new aquatic model organisms with similar breeding requirements as zebrafish (Lawrence, 2011; Lawrence et al., 2012; Barton et al., 2016), it is conceivable that both ZAF systems could be adapted to others species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations about aquatic model organisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "ed1a037f-0d21-457e-bb17-14a6edd327fe",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C71",
+      "claim": "The research was done under a protocol reviewed and approved by the institutional animal care and use committee (IACUC) of University of California San Francisco (UCSF).",
+      "claim_type": "EXPLICIT",
+      "source": "This research was done under a protocol reviewed and approved by the institutional animal care and use committee (IACUC) of University of California San Francisco (UCSF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "9847b68b-4137-47e0-ae4e-b376f018614f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C72",
+      "claim": "The fish were kept in a standalone aquatic system (Techniplast, Italy) with water maintained at 28\u00b0 and a diurnal cycle of 10 hr of dark and 14 hr of light.",
+      "claim_type": "EXPLICIT",
+      "source": "The fish were kept in a standalone aquatic system (Techniplast, Italy) with water maintained at 28\u00b0 and a diurnal cycle of 10 hr of dark and 14 hr of light (Alestr\u00f6m et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the husbandry conditions, supported by a citation to Alestr\u00f6m et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "8eb585cd-fffd-40fa-b4b0-774c93e20fa2",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C73",
+      "claim": "The study was conducted on the wild-type EKW strain, casper mutant, and h2afva:h2afva-mCherry transgenic line.",
+      "claim_type": "EXPLICIT",
+      "source": "The study was conducted on the wild-type EKW strain, casper mutant (White et al., 2008) and h2afva:h2afva-mCherry transgenic line (Knopf et al., 2011) (gift from Jan Huisken, Morgridge Institute for Research, Madison, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the fish strains used, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "13435360-c75a-4e4f-95e4-33fb11dcdd80",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C74",
+      "claim": "Only fish between 4 months and 18 months old were housed and used.",
+      "claim_type": "EXPLICIT",
+      "source": "We only housed and used fish between 4 months and 18 months old.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the age range of fish used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "fe61b9a8-be63-4a5d-8430-51269b1af101",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C75",
+      "claim": "Manual feeding is done once a day, at the same time of the day, according to the manufacturer recommendations and fish density.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual feeding is done once a day, at the same time of the day, according to the manufacturer recommendations and fish density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the manual feeding protocol used as a control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "5497cd45-7384-437e-8114-7713da3a84a9",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C76",
+      "claim": "ZAFs are designed to be built with only commercially-available parts.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAFs are designed to be built with only commercially-available parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the parts lists provided in the supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "70e0bf27-3fe2-4ed6-8ed8-021a138f9f93",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C77",
+      "claim": "Most of the parts used are generic and can be replaced by similar parts with similar specifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the parts used are generic and can be replaced by similar parts with similar specifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the flexibility of the parts selection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "642432fa-76c7-4e02-b6fd-2bfafa84f169",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C78",
+      "claim": "The only component that cannot be easily exchanged is the Raspberry PI computer.",
+      "claim_type": "EXPLICIT",
+      "source": "The only component that cannot be easily exchanged is the Raspberry PI computer, but this is not an issue as these are very easily sourced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the specificity of components.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "2f4fdae6-de1b-4c5b-9a56-5b141d4ad57f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C79",
+      "claim": "The ZAFs frame is built using the versatile and easy to use Makerbeam construction system.",
+      "claim_type": "EXPLICIT",
+      "source": "To build the ZAFs frame we use the versatile and easy to use Makerbeam consruction system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the construction method for the frame.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "2dbd1117-b24e-4c97-9023-ffb7823ad5f6",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C80",
+      "claim": "For both ZAFs, two different tubing sizes are used: 3/8\" outside diameter tubes for the pump tubing and 1/4\" outside diameter tubes for the valves tubing.",
+      "claim_type": "EXPLICIT",
+      "source": "For both ZAFs we use two different tubing sizes, for the pump tubing we use 3/8\" outside diameter tubes, for the valves tubing we use 1/4\" outside diameter tubes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tubing specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "a8caff31-ee44-40e4-ab0f-b42b52d22073",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C81",
+      "claim": "Either silicone or PVC based tubing is used because they have good specifications and are safe for food delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "We use either silicone or PVC based tubing because they have good specifications and are safe for food delivery (PVC based are more cost effective).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tubing material choices and their rationale.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "7d63b1fd-738e-46d6-9668-405b7fbc4306",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C82",
+      "claim": "The electronic core of ZAF is based on a Raspberry Pi computer, a Servo Hat Board, and Motor Controllers.",
+      "claim_type": "EXPLICIT",
+      "source": "The electronic core of ZAF is based on (i) A Raspberry a credit card size computer, (ii) A Servo Hat Board to drive Pulse Width Modulation outputs, like the pumps and valve, (iii) Motor Controller to control the DC motors (pumps and valve).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electronic components of ZAF.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "35fbf3fc-7c04-4e59-a24b-d42f718edd8f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C83",
+      "claim": "All the pumps and valves connected to the motor drivers are plugged on a 12V and 10A power supply converter.",
+      "claim_type": "EXPLICIT",
+      "source": "All the pumps and valves connected to the motor drivers are plugged on a 12V and 10A power supply converter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the power supply specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "f11721b2-fd40-4bd1-84dc-6ecd25081c67",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C84",
+      "claim": "The Raspberry Pi, the servo hat and all the electronics connected to the servo hat are running with 5V through the Raspberry Pi power.",
+      "claim_type": "EXPLICIT",
+      "source": "The Raspberry Pi, the servo hat and all the electronic connected to the servo hat are running with 5V through the Raspberry Pi power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the power specifications for certain components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "181e1ace-6be0-428d-b9ba-963343e7eaad",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C85",
+      "claim": "ZAF+ electronics are comprised of a Raspberry Pi 3 B+, two Arduino Megas, several motor controllers, and 16 Relay Module interface boards.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAF+ electronics are comprised of four different components i. A Raspberry Pi 3 B + to run the software and control the electronics, ii. two Arduino Megas Arduino 2,560 microcontrollers for the digital devices, iii. several motor controllers to control the various pumps, iv. 16 Relay Module interface board to drive current and control the valves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electronic components of ZAF+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "11e13f78-9b86-49e8-ac07-acff197e430c",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C86",
+      "claim": "The two Arduinos in ZAF+ are daisy-chained via a serial connection.",
+      "claim_type": "EXPLICIT",
+      "source": "The two Arduinos are daisy-chained via a serial connection (the whole design can be extended by daisy-chaining more arduinos).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the connection method for the Arduino controllers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "d5b1f194-3311-455d-a8aa-4a221c7b7252",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C87",
+      "claim": "A 12V power supply provides power to the electronics in ZAF+, except for the Raspberry Pi and the two Arduino Megas powered by the Raspberry Pi 5V.",
+      "claim_type": "EXPLICIT",
+      "source": "A 12V power supply provides power to the electronics, except for the Raspberry Pi and the two Arduino Megas powered by the Raspberry Pi 5V.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the power supply configuration for ZAF+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "cd792411-75be-4c2b-ae42-576132782590",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C88",
+      "claim": "The control software for both ZAFs as well as the corresponding graphical user interfaces are available as open-source code.",
+      "claim_type": "EXPLICIT",
+      "source": "The control software for both ZAFs as well as the corresponding graphical user interfaces are available as open-source code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the availability of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "801d4f20-d6d2-4d52-b915-8af270c490f1",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C89",
+      "claim": "Gemma micro 300 (Skretting Zebrafish) food diet is used for feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the Gemma micro 300 (Skretting Zebrafish) food diet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the food type used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "7f451dbd-5b98-42e3-8793-4a89969b1b33",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C90",
+      "claim": "Feeding is calibrated so that ZAF distributes 5% of the fish body weight per feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding is calibrated so that ZAF distributes 5% of the fish body weight per feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the feeding calibration method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "f540162c-1b1e-41ef-a08e-0af87c2425db",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C91",
+      "claim": "The fish in the facility are fed twice a day.",
+      "claim_type": "EXPLICIT",
+      "source": "We feed the fish in our facility twice a day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the feeding frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "1ad0416e-a7ab-4837-aa66-c948663fd35f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C92",
+      "claim": "ZAF is calibrated to distribute 5 g of food homogeneously to all tanks per run.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the number of fish, we calibrate the automatic device to distribute 5 g of food homogeneously to all tanks per run.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration for ZAF.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "63c045cd-41fa-4424-a15d-13969c696da5",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C93",
+      "claim": "Calibration is done manually by adjusting the food container opening and the amount of servo rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "This calibration is done by manually by adjusting the food container opening, and the amount of servo rotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "ab923247-457f-4e30-b3e0-60ba819d1681",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C94",
+      "claim": "ZAF+ runs the feeding program twice a day.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to ZAF, we use the Gemma micro 300 (Skretting Zebrafish) diet and run the program twice a day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the feeding frequency for ZAF+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "5bc469a9-5b65-40ef-9f60-1c9bc9be07cf",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C95",
+      "claim": "Food distribution in ZAF+ is done per tank according to a 'food quantity selection' parameter that can be set on the user interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Food distribution is done per tank according to a 'food quantity selection' parameter that can be set on the user interface: '1' for low fish density, to '4' for high fish densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the food distribution control in ZAF+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "648f13d4-90b4-4066-bd23-d28d0921ad1b",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C96",
+      "claim": "The approximate amount of food required for different fish densities is: Very low - 100 mg for 2\u20134 fish, low - 200 mg for 5\u20138 fish, medium - 350 mg for 9\u201314 fish, large - 500 mg for 15 up to 20 fish.",
+      "claim_type": "EXPLICIT",
+      "source": "The approximate amount of food required for different fish densities is as follows: Very low - 100 mg for to 2\u20134 fish, low - 200 mg for 5\u20138 fish, medium - 350 mg for 9\u201314 fish, large - 500 mg for 15 up to 20 fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific calibration values for different fish densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "f4b3a77f-1ca3-41c4-b161-b0b163a9ebd2",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C97",
+      "claim": "To weigh the fish, each fish was dabbed on a tissue paper to remove excess water and then placed in a tared petri dish.",
+      "claim_type": "EXPLICIT",
+      "source": "To weigh the fish, we first took a clean petri dish and tared it on a weighing scale. Each fish was then dabbed on a tissue paper to remove excess water and then placed in the petri dish to weigh it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for weighing fish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "e58c148f-2017-43fb-887f-40379ba7a309",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C98",
+      "claim": "The weight of the fish was documented over a period of 7 weeks to demonstrate the feeding efficiency of ZAF+.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate the feeding efficiency of ZAF+, we documented the weight of the fish over a period of 7 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for evaluating ZAF+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "a0f992d1-224b-4bfd-8dad-2c902221025e",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C99",
+      "claim": "The fish were weighed every Monday from week 1 to week 8.",
+      "claim_type": "EXPLICIT",
+      "source": "The fish were weighed every Monday from week 1 to week 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the weighing schedule.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "79216550-d333-4e22-8c62-4c129a4bbcd0",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C100",
+      "claim": "Two tanks were chosen for evaluation - one with over 12 fish and the second with only four fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ZAF+ has the potential to customize the amount of food given per tank based on the number of fish present, we chose two tanks - one with over 12 fish and the second with only four fish to ensure each tank receives the designated amount of food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for testing ZAF+ with different fish densities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "95ad3062-6c17-4eb7-8132-5be4f08d23f2",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C101",
+      "claim": "These two tanks were kept with the same fish population during the whole evaluation.",
+      "claim_type": "EXPLICIT",
+      "source": "These two tanks were kept with the same fish population during the whole evaluation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "5942bc90-0735-460b-b06e-3eecfe39d6c6",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C102",
+      "claim": "Tanks from different rows (top and bottom) were used to verify that tube layout and length do not affect the feeding quality nor quantity.",
+      "claim_type": "EXPLICIT",
+      "source": "We used tanks from different rows (top and bottom) to verify that tube layout and length do not affect the feeding quality nor quantity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design to test for potential confounding factors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "0c83369b-9241-42d0-80e7-02cddf952b47",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C103",
+      "claim": "The breeding of the fish was tracked over 2 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly we tracked the breeding of the fish over 2 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for evaluating breeding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "7378f82f-4f37-43b1-8dba-ffae0fbb0351",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C104",
+      "claim": "Three random fish were selected and two to three crosses were bred for each of them.",
+      "claim_type": "EXPLICIT",
+      "source": "Three random fish were selected and two to three crosses were bred for each of them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the breeding experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "617c8198-a30b-4fdd-947e-0484a2071276",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "claim_id": "C105",
+      "claim": "The number of crosses which bred for each of the lines was documented and the average of all the positive crosses was calculated.",
+      "claim_type": "EXPLICIT",
+      "source": "Next day, we documented the number of crosses which bred for each of the lines and calculated the average of all the positive crosses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for evaluating breeding success.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed ZAF, a basic automated zebrafish feeding system that is cost-efficient, easy to build from commercially available parts, and uses a simple design with three main modules (electronics, tubing/pumps, and food preparation). The system mixes dry food with water and distributes it uniformly to all tanks using a Raspberry Pi-controlled servo motor and pump system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18-C31, and C76-C88 collectively describe the design, construction, and accessibility of ZAF. The system architecture is well-documented with parts lists (C23, C76), construction details (C79-C84), and design schematics (C26-C27). The assertion of ease of construction (C31) is reasonable given the detailed documentation provided, though this remains somewhat subjective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ZAF does not adversely affect zebrafish health when compared to manual feeding. Over 8 weeks, fish fed with ZAF showed no statistical difference in mean weight (C33), had comparable or lower mortality (0/92 vs 1/33), equivalent fecundity (C35), and maintained stable water quality over 3 months (C36).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 provide converging evidence from multiple health metrics (weight, mortality, reproduction, water quality) supported by experimental data in Figures 1c-d and Figure 1\u2014figure supplement 4. The experimental design is adequately described (C89-C93, C97, C99) with appropriate controls. However, statistical details (p-values, sample sizes, error bars) are not fully specified in the claims, and the mortality comparison has unequal sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "682b1c1c-7cda-422c-b931-5cac078d67f8",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ZAF+ was developed to overcome ZAF's limitation of uniform food distribution by adding individually controlled valves upstream of each tank, allowing precise, tank-specific food delivery based on fish density. The system uses Arduino microcontrollers in addition to the Raspberry Pi to control the valves and can be scaled by daisy-chaining multiple controllers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 and C85-C87 describe the design rationale and implementation of ZAF+. The limitation of ZAF (C38) motivates the development of ZAF+ (C39), and the technical implementation is well-documented with electronic schematics (C85-C87) and operational parameters (C94-C96). The modular, scalable design is supported by the daisy-chain architecture (C44, C86).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "9ba436f8-e093-4219-be78-71fd1daa29dd",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ZAF+ does not adversely affect zebrafish health and successfully delivers variable amounts of food to tanks with different fish densities. Over 8 weeks, fish fed with ZAF+ showed no difference in mean weight compared to manual feeding (C47), no significant differences in reproduction (C48), maintained water quality (C49), and had no excess mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 provide experimental validation of ZAF+ performance supported by Figure 2c and Figure 1\u2014figure supplement 4. The experimental design (C98, C100-C102) appropriately tests the key feature of ZAF+ by using tanks with different fish densities (12 vs 4 fish) and controlling for potential confounders like tube length (C102). The breeding evaluation (C103-C105) adds additional evidence of normal fish health.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "8f59e9d8-52cf-4bff-9fac-aa96401b5467",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both ZAF systems are modular, scalable, and adaptable to different laboratory environments and commercially available aquatic facilities. The designs are fully open access with all hardware and software publicly available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C32, C53-C54, and C57 describe the flexibility and accessibility of the systems. The modular design is evidenced by the component-based architecture (C26, C42), scalability is supported by the ability to add tanks and daisy-chain controllers (C32, C44), and open access is demonstrated by the availability of all materials on GitHub (C53, C88). However, the claim of easy adaptation to \"all\" commercial facilities (C54) is somewhat overstated without empirical testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "cea4131d-1ec2-4cfb-8d26-904e7c2b2b1b",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Both ZAF systems can operate continuously (7 days/week, year-round) with minimal maintenance, requiring only periodic food reloading and tube replacement every 10-12 weeks. The authors tested both systems for 19 months total without major malfunctions or adverse health effects to fish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 and C58-C61 describe the operational reliability of the systems. The long-term testing data (19 months, C60) provides strong evidence for reliability claims. The maintenance requirements are reasonable and documented (C46, C59), though the optimal tube replacement interval shows slight inconsistency (10 weeks in C59 vs 12 weeks in C46). The absence of major malfunctions and adverse health effects (C60-C61) supports the viability claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "c27c244e-db9d-4a9e-a67d-ad3574b0ef2f",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors developed a semi-automated zebrafish facility by enclosing a standalone rack system in an indoor tent equipped with environmental controls (heating, air purification, cameras, leak detection).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 describe the facility setup supported by Figure 1\u2014figure supplement 1. This provides context for testing the feeding systems but represents infrastructure rather than a novel contribution. The setup is adequately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "4a854e17-2267-4615-9fbd-54f8642eb747",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ZAF+ is more robust than ZAF due to conceptual and technical improvements, though ZAF is easier to build but lacks per-tank food distribution control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 provide a comparative assessment of the two systems. The trade-off between simplicity (ZAF) and functionality (ZAF+) is well-established through the design descriptions. The assertion of greater robustness for ZAF+ (C55) is supported by the additional features and more sophisticated control system, though quantitative reliability metrics are not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "74932a8c-f1e3-4e94-8c9f-7645fa596b77",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The systems use inexpensive, accessible hardware (Raspberry Pi, Arduino) and are compatible with both dry food (Gemma) and live food (Artemia nauplii), though dry food is easier for automated feeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 describe hardware choices and food compatibility. The use of common, inexpensive components (C65) supports accessibility claims. The dry food choice is justified by citations (C66) and practical considerations (C67). Testing with Artemia (C68) demonstrates versatility, though this is noted as working \"well\" without quantitative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "2c3d9d45-bf8a-4a2f-a7e5-4dca3504d664",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The research was conducted under IACUC approval using standard zebrafish husbandry conditions (28\u00b0C, 10hr dark/14hr light cycle) with fish aged 4-18 months from three different strains (EKW, casper, h2afva:h2afva-mCherry).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 describe the ethical approval and experimental conditions. These are standard methodological details appropriately documented with citations (C72-C73). The information is sufficient for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors establish the context and motivation for developing automated feeding systems by reviewing the advantages of zebrafish as model organisms, the challenges of manual feeding, and the limitations of existing commercial and published solutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C17, C21, and C62-C64 provide background and motivation supported by appropriate citations. These claims establish the need for the work but represent literature review rather than novel findings. The assessment of existing solutions (C14-C17) appears reasonable though somewhat subjective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    },
+    {
+      "id": "131eae96-cb33-4473-850c-6c133dcad5bc",
+      "content_id": "466c9e3d-6339-4315-aa03-caddc6f1e3b7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that ZAF systems could be adapted to other aquatic model organisms, behavioral studies, and experimental designs requiring pellet or liquid delivery, potentially helping disseminate aquatic animal models in research institutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C20, C51-C52, C69-C70 make speculative statements about potential applications and impact. While the modular design suggests adaptability, these claims lack empirical validation. The assertion that systems are adaptable to \"any similar aquatic model organism\" (C20) and \"any laboratory environment\" (C5) are overly broad without testing. These represent reasonable hypotheses for future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:31:16.963227Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7f7e79f2-35a7-4a37-a367-f4d0e5150628",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "1e778c07-9d3b-4113-81ef-128656d50825",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "de5f1f37-e627-4b9a-a1e0-d799c8ca406f",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "48962005-c8cf-4235-ac1d-b98a55268914",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "00ee098e-743b-4d01-9358-491fa07fcab9",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "49f27d79-3f75-456f-b757-b000a417edab",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "992a90f9-5759-46e4-873f-fdf1d13be378",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "f34bd1b0-11aa-4f49-9489-c31ba1a89971",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "620a8588-6970-4dcc-8582-2aef4da357d2",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "b6bd019d-bbbb-44c2-a7d0-d39322c13aa1",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "3806a2eb-f93c-429e-8c9c-0e770878ad53",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "25449600-f804-4ae9-9f3b-ad4f56057c2a",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "5497cd45-7384-437e-8114-7713da3a84a9",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "70e0bf27-3fe2-4ed6-8ed8-021a138f9f93",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "642432fa-76c7-4e02-b6fd-2bfafa84f169",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "2f4fdae6-de1b-4c5b-9a56-5b141d4ad57f",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "2dbd1117-b24e-4c97-9023-ffb7823ad5f6",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "a8caff31-ee44-40e4-ab0f-b42b52d22073",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "7d63b1fd-738e-46d6-9668-405b7fbc4306",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "35fbf3fc-7c04-4e59-a24b-d42f718edd8f",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "f11721b2-fd40-4bd1-84dc-6ecd25081c67",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "cd792411-75be-4c2b-ae42-576132782590",
+      "result_id": "aa4e61eb-a92d-41d4-b7b9-d793aab00cf6"
+    },
+    {
+      "claim_id": "ef0ee6f6-4873-45dd-9107-3fe9d280beba",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "5370dd3b-c09c-4635-9f14-6f8d6d6c0ba9",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "4b673d87-126f-4006-b6a5-9d1a0a50752b",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "4cdd8909-8421-44c3-97da-b20fa9f285dd",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "02674116-bd43-4b3e-b58a-6238ed138414",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "801d4f20-d6d2-4d52-b915-8af270c490f1",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "7f451dbd-5b98-42e3-8793-4a89969b1b33",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "f540162c-1b1e-41ef-a08e-0af87c2425db",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "1ad0416e-a7ab-4837-aa66-c948663fd35f",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "63c045cd-41fa-4424-a15d-13969c696da5",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "f4b3a77f-1ca3-41c4-b161-b0b163a9ebd2",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "a0f992d1-224b-4bfd-8dad-2c902221025e",
+      "result_id": "570ced54-4da1-49b1-a1f3-8a8aeb87014f"
+    },
+    {
+      "claim_id": "d7256bb4-c535-460a-b585-8d45c1673845",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "c8432cdd-091f-42f1-9dd9-d96d75a52f6a",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "5dbb6c76-bfb6-42fd-a416-6bc51b72c395",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "f5b6b05e-771a-40e7-bb40-805e61077b8c",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "29f4d844-5414-4eb4-96d2-6f17c776421e",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "6e7c90f7-db07-41ac-ac1a-d8f93879c63f",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "945c88c9-96c1-48e2-85bf-098e50e4e8d7",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "5b39febe-efa3-4211-b3d9-6156db440819",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "181e1ace-6be0-428d-b9ba-963343e7eaad",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "11e13f78-9b86-49e8-ac07-acff197e430c",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "d5b1f194-3311-455d-a8aa-4a221c7b7252",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "ab923247-457f-4e30-b3e0-60ba819d1681",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "5bc469a9-5b65-40ef-9f60-1c9bc9be07cf",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "648f13d4-90b4-4066-bd23-d28d0921ad1b",
+      "result_id": "682b1c1c-7cda-422c-b931-5cac078d67f8"
+    },
+    {
+      "claim_id": "dbd823c2-8bb6-4caf-8b4f-9c53218a1086",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "dba67caf-aab9-48c8-9e57-7170a758f588",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "2c4d0fb8-eb6c-41fd-b7c4-4bdc87c2282e",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "d045a042-f9da-425d-8f6c-052dce3a5d95",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "e58c148f-2017-43fb-887f-40379ba7a309",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "79216550-d333-4e22-8c62-4c129a4bbcd0",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "95ad3062-6c17-4eb7-8132-5be4f08d23f2",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "5942bc90-0735-460b-b06e-3eecfe39d6c6",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "0c83369b-9241-42d0-80e7-02cddf952b47",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "7378f82f-4f37-43b1-8dba-ffae0fbb0351",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "617c8198-a30b-4fdd-947e-0484a2071276",
+      "result_id": "9ba436f8-e093-4219-be78-71fd1daa29dd"
+    },
+    {
+      "claim_id": "32640365-ae28-429d-beba-3385c740c3dd",
+      "result_id": "8f59e9d8-52cf-4bff-9fac-aa96401b5467"
+    },
+    {
+      "claim_id": "8611d256-e4a6-427a-ba97-b619b1499af2",
+      "result_id": "8f59e9d8-52cf-4bff-9fac-aa96401b5467"
+    },
+    {
+      "claim_id": "2bbbdfa3-da75-4113-971e-d6eb58a9136c",
+      "result_id": "8f59e9d8-52cf-4bff-9fac-aa96401b5467"
+    },
+    {
+      "claim_id": "76d77db9-7a29-4438-96fe-1375e83f8e3f",
+      "result_id": "8f59e9d8-52cf-4bff-9fac-aa96401b5467"
+    },
+    {
+      "claim_id": "388b8075-1f0b-47d6-a5f5-70ba7c130071",
+      "result_id": "8f59e9d8-52cf-4bff-9fac-aa96401b5467"
+    },
+    {
+      "claim_id": "0a261917-765d-428b-bc53-48767f5b45a7",
+      "result_id": "cea4131d-1ec2-4cfb-8d26-904e7c2b2b1b"
+    },
+    {
+      "claim_id": "91c5d73c-2726-4bc7-9670-dd31f3b0a77e",
+      "result_id": "cea4131d-1ec2-4cfb-8d26-904e7c2b2b1b"
+    },
+    {
+      "claim_id": "35ffab09-5e11-4fb3-8ac9-e8e8568ef826",
+      "result_id": "cea4131d-1ec2-4cfb-8d26-904e7c2b2b1b"
+    },
+    {
+      "claim_id": "9ade6a8d-e5da-42fa-af67-6179bb2f1587",
+      "result_id": "cea4131d-1ec2-4cfb-8d26-904e7c2b2b1b"
+    },
+    {
+      "claim_id": "9145a01d-acaf-4adc-9598-9eebdd80c950",
+      "result_id": "cea4131d-1ec2-4cfb-8d26-904e7c2b2b1b"
+    },
+    {
+      "claim_id": "9a3e7d9b-f309-4e02-bfad-88048a94e9e5",
+      "result_id": "cea4131d-1ec2-4cfb-8d26-904e7c2b2b1b"
+    },
+    {
+      "claim_id": "cfd7ed1e-9225-4d2b-91aa-64264b72d2fd",
+      "result_id": "c27c244e-db9d-4a9e-a67d-ad3574b0ef2f"
+    },
+    {
+      "claim_id": "021ef592-c278-45c9-96ea-f034b570eb00",
+      "result_id": "c27c244e-db9d-4a9e-a67d-ad3574b0ef2f"
+    },
+    {
+      "claim_id": "ba2ba94d-fd78-4b86-8825-f2b523006284",
+      "result_id": "4a854e17-2267-4615-9fbd-54f8642eb747"
+    },
+    {
+      "claim_id": "2f630491-5fbe-4f7a-98ed-224ef6a12c0c",
+      "result_id": "4a854e17-2267-4615-9fbd-54f8642eb747"
+    },
+    {
+      "claim_id": "678106c6-7488-4f42-aa05-4013f8f7dd1c",
+      "result_id": "74932a8c-f1e3-4e94-8c9f-7645fa596b77"
+    },
+    {
+      "claim_id": "75138dfd-fff9-4906-9691-8b2fa61a4544",
+      "result_id": "74932a8c-f1e3-4e94-8c9f-7645fa596b77"
+    },
+    {
+      "claim_id": "7b920992-95a8-4c0a-a4da-83249fa985a7",
+      "result_id": "74932a8c-f1e3-4e94-8c9f-7645fa596b77"
+    },
+    {
+      "claim_id": "2a2e8c0f-4431-40b2-b2d5-1a80212fdb2b",
+      "result_id": "74932a8c-f1e3-4e94-8c9f-7645fa596b77"
+    },
+    {
+      "claim_id": "ed1a037f-0d21-457e-bb17-14a6edd327fe",
+      "result_id": "2c3d9d45-bf8a-4a2f-a7e5-4dca3504d664"
+    },
+    {
+      "claim_id": "9847b68b-4137-47e0-ae4e-b376f018614f",
+      "result_id": "2c3d9d45-bf8a-4a2f-a7e5-4dca3504d664"
+    },
+    {
+      "claim_id": "8eb585cd-fffd-40fa-b4b0-774c93e20fa2",
+      "result_id": "2c3d9d45-bf8a-4a2f-a7e5-4dca3504d664"
+    },
+    {
+      "claim_id": "13435360-c75a-4e4f-95e4-33fb11dcdd80",
+      "result_id": "2c3d9d45-bf8a-4a2f-a7e5-4dca3504d664"
+    },
+    {
+      "claim_id": "fe61b9a8-be63-4a5d-8430-51269b1af101",
+      "result_id": "2c3d9d45-bf8a-4a2f-a7e5-4dca3504d664"
+    },
+    {
+      "claim_id": "a503f083-4388-4df5-8bbd-1b05f7347d80",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "635e1543-f5b4-4a2b-80f3-77a77f6c9f57",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "65a1335d-e095-48c2-83c1-703b76998788",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "ed6a9641-2177-4845-9f9a-99ac93e2b262",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "3954726e-e760-4c7b-a74b-e515611011f8",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "d18c1050-25d7-4975-9120-cf9ec2646e1e",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "1905fe02-e544-424a-a3ca-3089722e3b35",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "1c29618b-b798-42a2-992e-d9a45a342c85",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "b1371c41-f403-4b55-923e-5f518fbe9367",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "bb2779ba-7135-4727-be60-35dce75d91c2",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "81c04f84-ac96-4031-8cd9-ff3c1c14a86f",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "2ec17874-ada3-4293-9bc9-e12aa9cda7e1",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "021ef592-c278-45c9-96ea-f034b570eb00",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "e32f4026-d6ff-474a-ad41-659cbe5169a6",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "5792b77e-7eb0-4b8a-ab23-b51da3b36d1f",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "eb84967f-0c2f-4566-8a72-a6344cb8b7b4",
+      "result_id": "b7126aa6-2616-48b8-b0ea-b2a3c251a6c2"
+    },
+    {
+      "claim_id": "a8638f01-1b86-4068-9e4a-2050482668d6",
+      "result_id": "131eae96-cb33-4473-850c-6c133dcad5bc"
+    },
+    {
+      "claim_id": "733e3295-6ac1-4f72-b5b1-c44d719a31bb",
+      "result_id": "131eae96-cb33-4473-850c-6c133dcad5bc"
+    },
+    {
+      "claim_id": "e7fce2ee-5dcb-45f7-88cc-d6bda71ea6b0",
+      "result_id": "131eae96-cb33-4473-850c-6c133dcad5bc"
+    },
+    {
+      "claim_id": "ac7a744b-c89f-401a-97dc-1b64313935a1",
+      "result_id": "131eae96-cb33-4473-850c-6c133dcad5bc"
+    },
+    {
+      "claim_id": "94bc5f53-57ff-4f43-8b48-c94a979d742c",
+      "result_id": "131eae96-cb33-4473-850c-6c133dcad5bc"
+    },
+    {
+      "claim_id": "852d0c6e-474b-4f7f-b272-b722f9018424",
+      "result_id": "131eae96-cb33-4473-850c-6c133dcad5bc"
+    }
+  ],
+  "comparisons": []
+}

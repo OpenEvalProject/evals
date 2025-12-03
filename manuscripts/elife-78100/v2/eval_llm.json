@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors observe diverse vein dynamics in P. polycephalum networks, including shrinking veins with monotonic or non-monotonic shear rate changes (25%, 40%, and 15% respectively out of 80 shrinking veins) and stable veins showing clockwise looping trajectories (80% of 100 stable veins). Veins with similar initial shear rates and radii can have different fates (stable vs. vanishing), and the relationship between shear rate magnitude and vein fate is ambiguous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C53 provide quantitative experimental observations from both close-up and full network imaging showing diverse vein dynamics. The data includes specific percentages of different vein behaviors and is illustrated in Figure 1. The observations are reproducible across multiple specimens and imaging techniques, establishing that shear rate alone cannot predict vein fate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "The hypothesis that veins with low shear rate should vanish cannot be reconciled with the experimental data. Geometrical vein characteristics like radius alone do not determine vein fate, indicating that additional feedback parameters must play a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 present a logical conclusion from the experimental observations (C50-C53) showing contradictions with the simple shear rate hypothesis. The data shows dangling ends with low shear rate growing, and veins with high shear rate vanishing, directly contradicting the low-shear-vanishing hypothesis. This establishes the need for additional parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C78",
+      "C79",
+      "C81",
+      "C83",
+      "C84",
+      "C208"
+    ],
+    "result": "Shear rate feeds back on vein radius with a time delay of 1-3 minutes, established through cross-correlation analysis. The analysis found 15 times more veins with positive time delays than negative delays, establishing causality between shear rate changes and radius adaptation. The time delay is close to the contraction period and is reproducible across specimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C69-C84 describe a systematic cross-correlation analysis with clear methodology (threshold of 0.5, robustness checks) and quantitative results (15:1 ratio of positive to negative delays, average ~2 min). The analysis is illustrated in Figure 2 and validated across multiple specimens. The causality interpretation from positive delays is statistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C85",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose a mechanistic basis for the time delay involving the cross-linked actin fiber cortex responding to shear stress. They cite experimental data showing quadratic dependence of fiber thickness changes on applied shear, with time delays of 1-30s in vitro, and note that actin turnover times (10-30s) and viscoelastic relaxation times (100s) in living cells are close to the measured delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C88 provide a plausible mechanistic interpretation supported by citations to relevant literature. However, the connection between in vitro gel response times (1-30s) and the observed in vivo delay (~2 min) requires additional explanation. The authors acknowledge this is speculative ('hints that') and note that delays could 'accumulate' in vivo, but direct experimental validation of the proposed mechanism is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C94",
+      "C96",
+      "C98",
+      "C101",
+      "C102",
+      "C105"
+    ],
+    "result": "A mathematical model incorporating time-delayed shear rate sensing (Equations 1-2) quantitatively reproduces experimental vein dynamics with physiologically reasonable parameters. Fitting 12 close-up and 15 full network veins yields small relative errors (0.001-0.17), with adaptation times of 10-100 min. The model performs better over intermediate time frames (15-40 min) than longer ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C105 describe systematic model fitting with clear methodology and quantitative goodness-of-fit metrics. The fitted parameters (t_adapt ~10-100 min) match observed adaptation timescales. Figure 2D shows good agreement between model and data. The model with time delay consistently outperforms the model without delay. The observation that fits degrade over longer timescales is explained by parameter evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C108",
+      "C113",
+      "C123",
+      "C124",
+      "C209",
+      "C223"
+    ],
+    "result": "The authors develop a network model showing that vein fate is determined not only by local shear rate but also by network-integrating parameters: relative resistance (R/R_net) and local pressure. These parameters arise from global fluid volume conservation via Kirchhoff's laws. The model predicts three fixed points (two stable, one unstable) consistent with previous theoretical work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C108-C124, C209, C223 present a theoretical framework (Equations 1-3) grounded in established physics (Kirchhoff's laws, Norton's theorem). The model's predictions of fixed points and trajectory types match experimental observations (Figure 3B). The connection to previous work (Hacking et al., 1996) supports the universality claim. The derivation is mathematically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C133",
+      "C153",
+      "C155",
+      "C156",
+      "C159",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "For dangling ends (veins connected at only one node), the model predicts they can only shrink or grow, never showing stable oscillations. Local pressure determines the threshold for growth vs. shrinkage, with higher pressure facilitating growth by lowering the shear rate threshold. This explains why dangling ends with similar initial conditions can have opposite fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C165 provide a specific prediction from the model for dangling end topology, supported by experimental observations in Figures 1B and 5A. The mechanism is clearly explained: high local pressure lowers \u03c4\u2080, making growth easier even at low shear rates. The topological constraint (single connection) is correctly identified as preventing stable oscillations. The explanation reconciles the apparent contradiction with shear-rate-only models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "Initially similar and spatially close parallel veins may suffer opposite fates, with one vanishing while the other remains stable. The model predicts that the vein with higher relative resistance (R/R_net) vanishes first.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 describe observations illustrated in Figure 5B and provide a model-based explanation. The prediction is consistent with the general framework that R/R_net > 1 leads to vein shrinkage. The experimental data shows veins with R/R_net > 1 vanishing while nearby veins with R/R_net \u2248 1 remain stable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Loops (veins connected at both ends to the network) shrink first in their middle despite homogeneous diameter and shear rate along the loop. The model explains this through mass redistribution: when the center shrinks, shear rate increases in outer segments, preventing their disappearance. After the center vanishes, outer segments behave as dangling ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C178 describe a surprising experimental observation (Figure 5C) and provide a mechanistic explanation based on the network model. The explanation is physically sound: mass conservation requires flow redistribution when a segment shrinks. The prediction that outer segments then follow dangling end dynamics is consistent with the topological change. The observation is reproduced in multiple specimens (Appendix figures).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C185",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C203",
+      "C204",
+      "C205",
+      "C217"
+    ],
+    "result": "The authors observe avalanches of vein disappearance where individual vanishing veins cause neighboring veins to become unstable through changes in network architecture. Veins vanish sequentially over ~15 minutes, with initially stable veins (R/R_net < 1) becoming unstable (R/R_net > 1) as the network evolves. A simplified model demonstrates this avalanche principle through sequential increases in vein length and resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C180-C205, C217 describe experimental observations of sequential vein disappearance (Figure 6A,B) and provide both empirical tracking of R/R_net changes and a simplified mechanistic model (Figure 6C). The model correctly predicts that vein disappearance increases neighboring vein resistance by creating longer veins, triggering further instability. The avalanche pattern is reproduced in multiple specimens. The rare stabilization events (C189) add nuance without contradicting the main finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C218",
+      "C219",
+      "C220",
+      "C224",
+      "C225",
+      "C226",
+      "C228",
+      "C229"
+    ],
+    "result": "The authors speculate that their findings on time-delayed shear feedback and network architecture integration may apply to other vascular networks where laminar flow and Murray's law hold. They suggest that relative resistance and pressure could explain discrepancies in other systems, though acknowledge that whole-network imaging is currently rare and future work is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C218-C229 are explicitly speculative ('expect', 'may', 'likely', 'hopeful'). While the speculation is reasonable given the universality of Kirchhoff's laws and laminar flow physics, and the authors cite relevant timescales in other systems (C220), direct experimental validation in other organisms is lacking. The suggestions for future work (C225, C228) acknowledge these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction establishes the biological context and prior work: vascular networks continuously reorganize to minimize energy dissipation, Murray's law predicts constant shear stress at steady state and agrees well with static network morphologies across organisms, but shear stress alone cannot explain dynamic reorganization patterns, and experimental data on network-scale dynamics is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 provide appropriate background and motivation, citing relevant literature. The statements about Murray's law and its validation across organisms (C12-C15) are well-established. The identification of gaps in understanding (C3, C9, C17, C18) appropriately motivates the current work. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "P. polycephalum's approximately two-dimensional body structure enables simultaneous quantification of vein dynamics and fluid flows across entire networks. Flows arise from rhythmic contractions with period ~1-2 min, but time-averaged flows dominate long-term adaptation dynamics on timescales \u226510 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 describe the experimental system's advantages and justify the focus on time-averaged quantities. The two-dimensional nature is well-established in cited literature. The separation of timescales (fast oscillations vs. slow adaptation) is clearly demonstrated in Figure 1iii and is a standard approach in dynamical systems analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C227"
+    ],
+    "result": "The authors report highly resolved data of spontaneous network reorganization in P. polycephalum with simultaneous quantification of individual vein dynamics and fluid flows. They note that whole-network imaging is currently a rare capability that enabled their findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C206-C207, C227 accurately summarize the experimental contribution. The data quality and scope (close-up and full network imaging, flow measurements, long time series) are demonstrated throughout the figures. The statement about the rarity of whole-network imaging (C227) is supported by the limited prior work cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C230",
+      "C231",
+      "C232"
+    ],
+    "result": "The authors discuss that Kirchhoff's laws govern not only flow networks but also electrical, mechanical, thermal, and neural networks. They speculate that understanding Kirchhoff-driven self-organization could enable autonomous artificial designs with specific material or learning properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C230-C232 correctly identify the universality of Kirchhoff's laws across different physical systems with appropriate citations. However, the speculation about applications to artificial designs (C232) is highly preliminary and would require substantial additional work to validate. The connection between the biological findings and artificial system design is not developed beyond citing relevant literature.",
+    "result_type": "MINOR"
+  }
+]

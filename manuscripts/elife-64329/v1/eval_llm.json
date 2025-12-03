@@ -1,0 +1,436 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study design involved 960 female diversity outbred (DO) mice from 8 founder strains, enrolled in 12 cohorts across generations 22-28 from March 2016 to November 2017. At 6 months of age, mice were randomly assigned to five dietary interventions (AL, 20% CR, 40% CR, 1D, 2D) with N=192 per group, with specific feeding protocols for each diet group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design is well-documented with explicit details about sample size, randomization, housing conditions, and dietary interventions (C1-C15, C98-C102). The experimental design appears sound with appropriate controls (AL group) and multiple intervention groups. However, the study acknowledges important limitations: food was distributed per cage rather than per mouse (C11, C86), CR was based on population averages rather than individual baselines (C85), and food distribution equality was based on observation rather than measurement (C12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C19",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C88"
+    ],
+    "result": "Body weight was measured weekly throughout each mouse's life, with measurements collated on February 1, 2020. Data were smoothed using \u21131 trend filtering with the smoothing parameter optimized by cross-validation. Mice also underwent extensive phenotypic assays including metabolic cage runs, blood draws, and challenge-based tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The body weight measurement protocol is clearly described (C16, C17, C107) with appropriate data processing methods (C19). The manuscript acknowledges that additional phenotypic assays (C88, C103-C106) contributed to study-specific variation in body weight, which is an important consideration for interpretation. The \u21131 trend filtering approach is appropriate for handling measurement noise, though the manuscript does not provide details on the magnitude of smoothing applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "DNA was extracted from 954 animals and genotyped using the 143,259-probe GigaMUGA array. After quality control (filtering for probe mapping, genotype quality, missingness, and removing mislabeled samples), the final dataset contained 946 mice with 110,807 markers. Founder-of-origin was inferred using qtl2, and 34.5 million untyped variants were imputed, enabling fine-mapping to 1-10 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genotyping and quality control procedures are well-documented (C21-C27, C108-C112) with appropriate methods for identifying and removing problematic samples. The use of founder-of-origin inference and imputation is standard for DO populations. The claim of fine-mapping resolution to 1-10 genes (C113) is supported by the results but depends on the specific locus and the strength of linkage disequilibrium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Analysis of kinship-stratified covariances in body weight at 500 days revealed that genetic contributions differ between dietary environments. In the AL treatment, high- and low-kinship pairs showed similar covariances, while in 40% CR, low-kinship pairs showed significantly lower covariance than high-kinship pairs. This observation motivated the use of generalized linear mixed models (G\u00d7EMM) that account for environment-dependent genetic variances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinship analysis (C28, C29) provides empirical evidence for diet-dependent genetic effects, which appropriately motivates the use of G\u00d7EMM (C30). The manuscript correctly identifies limitations of standard linear mixed models (C114-C116) and cites appropriate literature supporting the use of generalized models (C117, C118). However, the analysis is based on a single time point (500 days) and a single kinship threshold (>0.2), which may not fully capture the complexity of environment-dependent genetic architecture across all ages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C35"
+    ],
+    "result": "Simulation studies demonstrated that EMMA substantially underestimated total PVE compared to G\u00d7EMM when samples were equally distributed between environments with substantial differences in PVE or noise. Overall, G\u00d7EMM outperformed EMMA in estimating total PVE with little bias in estimating environment-specific PVE across a broad range of scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation results (C32, C35) are supported by Figure 3, which shows systematic underestimation by EMMA under specific conditions. The simulations appear comprehensive, covering a range of parameter values relevant to the study. However, the manuscript does not provide details on the number of simulation replicates or the specific parameter ranges tested, which limits full evaluation of the robustness of these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C40",
+      "C41",
+      "C92",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The PVE of body weight increased during early adulthood up to 180 days (dietary intervention), then declined with age in all diets except 40% CR, which maintained high PVE (~0.8). The AL group had the lowest PVE and greatest phenotypic variance from 180-660 days. The decline in PVE in less restrictive diets was due to increased environmental variance rather than decreased genetic variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PVE trends are clearly documented (C36, C38, C40, C41, C92) and supported by Figure 4A. The interpretation that 40% CR maintains high PVE due to low environmental variance (C144) is consistent with the data. The claim that genetic variance remains constant across diets (C145) is supported by supplementary figures. However, the manuscript acknowledges that various study-specific factors (phenotyping procedures, social hierarchy) contribute to environmental variance, which complicates interpretation of the absolute PVE values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C142"
+    ],
+    "result": "The G\u00d7EMM model was applied to body weight data every 10 days, accounting for both diet and generation as environmental factors. Genome-wide QTL mapping tested for additive associations at all ages and genotype-diet interactions from 180-660 days. P-values were computed using sequential permutation procedures, and significant loci were fine-mapped to identify putative causal variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analytical approach is well-described (C131-C142) with appropriate statistical methods. The use of generation as a proxy for shared environment (C139) is reasonable given the study design. The sequential permutation procedure (C136) is computationally efficient and appropriate for controlling false positives. However, the manuscript does not provide details on the convergence criteria for variance component estimation or the number of permutations performed for each variant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C93",
+      "C94",
+      "C148"
+    ],
+    "result": "Using a Bonferroni-corrected threshold of p\u226410^-4 (based on LD blocks), fine-mapping confirmed 24 candidate loci: 5 diet-independent only, 10 diet-dependent only, and 9 significant in both models. Four diet-independent loci were associated exclusively during early adulthood (60-160 days), three exclusively during adulthood (200-660 days), and the majority of diet-dependent loci (12 of 19) had detectable effects at least 240 days after dietary intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The QTL mapping results are clearly summarized (C45-C48, C93, C94) with appropriate multiple testing correction (C43, C148). The use of LD blocks to determine the effective number of tests is more appropriate than using the total number of markers. The temporal patterns of associations (C46, C47, C48) are interesting and well-documented in Table 1. However, the manuscript does not provide power calculations or discuss the potential for false negatives, particularly for loci with small effect sizes or age-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Fine-mapping using imputed variants and founder allele patterns (FAPs) identified lead variants at diet-independent and diet-dependent loci on chromosome 6. For the diet-independent locus, 79 of 87 significant variants belonged to the AJ/NOD FAP group, all located in Creb5. For the diet-dependent locus, 507 of 617 variants belonged to the B6/CAST/PWK FAP group. The results support distinct alleles from different founders being responsible for diet-dependent and diet-independent associations, rather than a single pleiotropic allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fine-mapping approach using FAPs (C151-C155) is innovative and appropriate for DO populations, effectively reducing the number of candidate variants while maintaining biological interpretability. The evidence against pleiotropy (C55, C56) is compelling, with distinct FAPs and genomic locations for diet-dependent and diet-independent effects. However, the assumption that all functional variants are captured in the founder genome sequences (C157) may not hold if de novo mutations have occurred, though this is likely a minor concern given the relatively recent derivation of the DO population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C176"
+    ],
+    "result": "At the chromosome 6 loci, the minor allele of the diet-independent lead variant was associated with increased body weight at young ages, while the diet-dependent variant had diet-specific effects (positive under 20% CR, neutral under 40% CR, negative under AL). The AJ and NOD alleles had large positive effects at young ages for the diet-independent association, while B6, CAST, and PWK alleles showed opposite effects in AL versus 20% CR diets for the diet-dependent association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The allelic effects are clearly documented (C57-C60) and supported by Figure 7. The observation that LOD scores follow similar age trajectories for different FAPs (C176) is interesting and suggests that the statistical power to detect associations varies similarly with age across different genetic backgrounds. However, the manuscript does not provide confidence intervals for the effect size estimates, which would help assess the precision of these estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Age-dependent nonlinearity in allelic effects was predominant, with all 14 diet-independent loci exhibiting nonlinear trends with at least one founder allele, while only 4 of 19 diet-dependent loci showed such trends. Diet-dependent nonlinearity was also common, with 9 of 19 interaction loci showing nonlinear effects across diets. Nonlinearity was often specific to particular founder strains, highlighting the importance of genetic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nonlinearity analyses (C63-C66, C177) are well-documented with appropriate statistical tests. The observation that age-dependent nonlinearity is more common than diet-dependent nonlinearity is interesting and biologically plausible. The definition of diet-dependent nonlinearity (C179) is reasonable, though somewhat arbitrary. The claim that such nonlinearity cannot be discerned in cross-sectional GWAS (C178) is valid but somewhat overstated, as longitudinal human studies do exist, though they are less common.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C52"
+    ],
+    "result": "Functional annotation of significant variants using ATAC-seq and DNase-seq data identified 2 variants in open chromatin regions for the diet-independent locus and 101 for the diet-dependent locus on chromosome 6. Both diet-independent variants were located in the same muscle-specific regulatory element within Creb5, suggesting they affect body weight by regulating gene expression in muscle cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional annotation approach (C160-C162) is appropriate and leverages external chromatin accessibility data effectively. The inference that variants in muscle-specific regulatory elements affect body weight through muscle gene expression (C163, C52) is reasonable but remains speculative without direct experimental validation. The manuscript does not discuss whether the chromatin accessibility data were generated in the same mouse strains or under similar dietary conditions, which could affect the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Fine-mapping of the chromosome 12 locus identified 77 significant variants partitioning into two distinct FAP groups (AJ/B6 and WSB) with different diet-specific effects. The AJ/B6 minor allele increased body weight in the 2D fasting diet, while the WSB minor allele had positive effects in AL and 1D diets but negative effects in 40% CR. This striking difference suggests allelic heterogeneity with multiple functional variants at this locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evidence for allelic heterogeneity at the chromosome 12 locus (C164-C174) is compelling, with distinct FAPs showing markedly different diet-specific effects. The identification of variants in adipose-specific regulatory elements (C172, C174) provides functional context. However, the inference of allelic heterogeneity (C170) is based on the pattern of effects rather than direct functional validation, and alternative explanations (e.g., complex LD patterns) cannot be completely ruled out without additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C95"
+    ],
+    "result": "Of 24 significant loci, 14 had lead FAP groups spanning 1-3 genes. Many diet-dependent loci were previously linked to neurological function and behavior (Negr1, Gphn, Trmt1l), consistent with human BMI/obesity GWAS showing enrichment of CNS-active genes. Other candidates affect metabolic processes (Creb5, Pik3c2g) or growth/development (Edem3, Adam12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The candidate gene identification (C67-C81) is well-supported by the fine-mapping results and appropriately contextualized with literature citations. The connection to human GWAS findings (C77, C95) strengthens the translational relevance. However, the functional inferences are largely based on literature and knockout phenotypes rather than direct experimental validation in this study. The manuscript appropriately presents these as candidate genes rather than definitively causal genes, but additional functional studies would be needed to confirm their roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C185"
+    ],
+    "result": "The effects of age and diet on body weight differ substantially with respect to genetic background and dietary intervention type. With knowledge of these environment-dependent effects, more accurate predictions of body weight trajectories can be generated than from genotype, age, or diet alone. Specific candidate genes and variants can be identified as targets for genetic or pharmacological manipulation to improve organismal health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C82, C83, C185) are well-supported by the comprehensive results presented throughout the manuscript. The study successfully demonstrates complex interactions between genetics, age, and diet in determining body weight trajectories. However, the claim about prediction accuracy (C83) is not directly validated with prediction models or cross-validation analyses. The suggestion of therapeutic targets (C185) is reasonable but speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C186"
+    ],
+    "result": "Important study limitations include lack of direct measurements of individual food consumption and feeding behaviors, CR imposed based on population averages rather than individual baselines, per-cage rather than per-mouse CR implementation, and potential effects of social hierarchy within cages. Accounting for these sources of variation is identified as a promising avenue for future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The manuscript appropriately acknowledges important limitations (C84-C87) that could affect the interpretation of results. These limitations are inherent to the study design and would be difficult to address without substantially increasing complexity and cost. The suggestion for future research (C186) is reasonable. However, the manuscript does not quantify the potential magnitude of these effects or discuss how they might bias the results (e.g., whether they would inflate or deflate heritability estimates).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C187"
+    ],
+    "result": "Survival bias has very little effect on the results, as PVE values computed for animals surviving to 660 days were similar to those from the full dataset. By 660 days, nearly all surviving animals have reached maximum adult body weight without appreciable late-age decline. However, genetic analyses at ages beyond 660 days will need to explicitly account for survival bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The survival bias analysis (C89) is appropriate and reassuring, showing that results are robust to this potential confound at the ages studied. The characterization of the 660-day endpoint (C90) provides important context for interpreting the results. The acknowledgment that survival bias will become more important at later ages (C187) is appropriate. However, the analysis only examines survivors to 660 days (75% of animals), and the manuscript does not discuss whether the 25% mortality is differential across diet groups or genotypes, which could still introduce bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C188"
+    ],
+    "result": "Under AL diet, reduced body weight has been associated with greater longevity, whereas under 40% CR, greater longevity is associated with maintenance of high body weight. Future research will assess whether alleles at body weight loci are predictive of lifespan in a diet-dependent manner in this DO population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The citation of prior work on body weight and longevity relationships (C91) is appropriate and provides important context for interpreting the body weight results. The proposed future research (C188) is a logical extension of the current work. However, this is a statement of future intent rather than a current result, and the manuscript does not provide preliminary data or power calculations to support the feasibility of such analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Prior studies in mice found that heritability of body weight increased with age during development (from 29.3% to 76.1% between 1-10 weeks, 6% to 24% between 1-16 weeks, 9% to 32% between 5-13 weeks), while growth rate heritability peaked at 3 weeks then declined. QTL effects were age-specific rather than pleiotropic. Previous studies also identified genotype-dependent responses to 40% CR and diet-dependent genetic variance for body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The review of prior literature (C119-C127) is appropriate and accurately represents the cited studies. The citations support the motivation for the current study and provide context for interpreting the results. However, the manuscript does not critically evaluate potential differences in study design, populations, or methods that might affect comparability with the current work. The cited heritability estimates vary substantially across studies, which could reflect true biological differences or methodological variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Dietary intervention contributes the most to variation in body weight in this mouse population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation (C20) is clearly supported by Figure 1B, which shows substantial divergence in body weight trajectories across diet groups following intervention at 180 days. However, the claim is somewhat qualitative and the manuscript does not provide a formal variance decomposition to quantify the relative contributions of diet, genetics, and their interaction to total phenotypic variance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C175"
+    ],
+    "result": "For all loci where diet-dependent and diet-independent associations colocalized to the same genomic region, distinct FAPs rather than a single pleiotropic allele were responsible for the different effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim (C175) is supported by the detailed analyses of individual loci (C55, C56) showing distinct FAPs for colocalized associations. The evidence against pleiotropy is consistent across multiple loci. However, the resolution of fine-mapping may not be sufficient to completely rule out very tightly linked variants with pleiotropic effects, particularly in regions of high LD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "A locus on chromosome 5 showed the strongest diet-dependent association in the genome, with the NOD-specific lead FAP associated with large positive effects on body weight in 20% CR, small positive effects in 1D fasting, and nearly neutral effects in 40% CR, 2D fasting, and AL diets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chromosome 5 locus results (C180-C182) are clearly documented and supported by Figure 7\u2014figure supplement 1. The pattern of diet-specific effects is striking and represents an example of diet-dependent nonlinearity. However, the manuscript does not provide candidate genes for this locus or discuss potential mechanisms, which limits biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C183",
+      "C184"
+    ],
+    "result": "The association at the Trmt1l locus is possibly mediated through modulating exploratory behavior, based on knockout mouse phenotypes. Gephyrin suggests two plausible pathways for influencing body weight: through its role at neuronal synapses and through its interaction with mTOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These mechanistic inferences (C183, C184) are reasonable hypotheses based on known gene functions and knockout phenotypes, but they remain speculative without direct experimental validation in the context of this study. The manuscript appropriately uses cautious language (\"possibly,\" \"suggesting\"), but readers should be aware that these are proposed mechanisms rather than demonstrated ones. Additional experiments (e.g., gene expression analysis, pathway analysis) would be needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "A locus identified as significant at a specific age indicates its cumulative contribution to body weight at that age, as body weight measurements at different ages are not independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation (C146) is appropriate and important for understanding the results. The manuscript correctly notes that body weight is a cumulative trait and that associations detected at a given age could reflect effects acting over different time periods. However, the manuscript does not attempt to decompose cumulative effects into age-specific contributions, which would require more sophisticated modeling approaches.",
+    "result_type": "MINOR"
+  }
+]

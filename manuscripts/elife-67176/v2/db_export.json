@@ -1,0 +1,1562 @@
+{
+  "submission": {
+    "id": "b1cf43ec-eb40-4eda-b77e-a96b9a8739b8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:48:34.305555Z",
+    "updated_at": "2025-12-03T05:48:34.305555Z"
+  },
+  "content": [
+    {
+      "id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "submission_id": "b1cf43ec-eb40-4eda-b77e-a96b9a8739b8",
+      "content_type": "manuscript",
+      "content_text": "# The solubility product extends the buffering concept to heterotypic biomolecular condensates\n\n## Authors\n\n- Aniruddha Chattaraj<sup>1</sup> ([ORCID: 0000-0002-7105-6621](https://orcid.org/0000-0002-7105-6621))\n- Michael L Blinov<sup>1</sup> ([ORCID: 0000-0002-9363-9705](https://orcid.org/0000-0002-9363-9705))\n- Leslie M Loew<sup>1</sup> ([ORCID: 0000-0002-1851-4646](https://orcid.org/0000-0002-1851-4646)) \u2020\n\n### Affiliations\n\n1. R. D. Berlin Center for Cell Analysis and Modeling, University of Connecticut School of Medicine Farmington United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBiomolecular condensates are formed by liquid-liquid phase separation (LLPS) of multivalent molecules. LLPS from a single (\"homotypic\") constituent is governed by buffering: above a threshold, free monomer concentration is clamped, with all added molecules entering the condensed phase. However, both experiment and theory demonstrate that buffering fails for the concentration dependence of multicomponent (\"heterotypic\") LLPS. Using network-free stochastic modeling, we demonstrate that LLPS can be described by the solubility product constant (Ksp): the product of free monomer concentrations, accounting for the ideal stoichiometries governed by the valencies, displays a threshold above which additional monomers are funneled into large clusters; this reduces to simple buffering for homotypic systems. The Ksp regulates the composition of the dilute phase for a wide range of valencies and stoichiometries. The role of Ksp is further supported by coarse-grained spatial particle simulations. Thus, the solubility product offers a general formulation for the concentration dependence of LLPS.\n\n## Introduction\n\nBiomolecular condensates comprise a novel class of intracellular structures formed by a biophysical phenomenon called liquid-liquid phase separation (LLPS) (Banani et al., 2017; Hyman et al., 2014; Shin and Brangwynne, 2017). These structures serve as membraneless compartments where complex biochemistry can be organized and facilitated (Holehouse and Pappu, 2018); for example, T cell receptor-mediated actin nucleation efficacy spikes up multifold when all the associated signaling molecules concentrate into a condensate (Su et al., 2016) near the plasma membrane. These structures are also implicated in many age-related or neurological diseases (Shin and Brangwynne, 2017; Alberti et al., 2019; Mathieu et al., 2020).\n\nNumerous theoretical and experimental studies have illuminated many of the biophysical requirements for condensate formation (Li et al., 2012; Shin et al., 2017; Wang et al., 2018). In particular, it is firmly established that clustering of weakly interacting multivalent proteins or nucleic acids is a prerequisite for the phase separation. Even a sufficiently concentrated solution of a single self-interacting protein (homotypic interaction) with multiple binding sites in its sequence can partition into protein-dense and dilute phases. Such homotypic systems display a strict threshold concentration above which phase separation occurs. This phase separation serves as a buffering mechanism for the protein in the dilute phase (Holehouse and Pappu, 2018; Klosin et al., 2020), which remains at the threshold concentration; thus, as more protein is added to the system, the dense phase droplets grow in size and number, keeping the concentration clamped in the dilute phase. Although a homotypic system closely conforms to a single fixed threshold concentration, the picture gets much more complex with multicomponent (heterotypic interactions) systems, which underlie all the biomolecular condensates found in living cells and contain complex mixtures of multivalent proteins and/or nucleic acid. Detailed theoretical analysis of lattice-based simulations explained why the dilute phase concentrations of specific components need not stay fixed when phase separation is driven by heterotypic interactions (Choi et al., 2019). This was recently followed by a thorough experimental study of the thermodynamics of the liquid-liquid phase transitions in heterotypic systems, showing clearly that concentration thresholds for phase separation no longer remain fixed and vary with relative compositions of interacting binding partners (Riback et al., 2020). But a theoretical framework for quantitatively predicting such complex varying concentration thresholds is still lacking.\n\nWe have previously distinguished between strong multivalent interactions, which can produce molecular machines, and weak multivalent interactions, which can produce what we termed \u2018pleomorphic ensembles\u2019 (Mayer et al., 2009; Falkenberg et al., 2013). The strong binding affinities in molecular machines (e.g., ribosomes, flagella) enforce a specific parts list with a fixed stoichiometry. Pleomorphic ensembles (e.g., cytoskeletal polymers and their associated binding proteins, neuronal post-synaptic densities, etc.) are much more plastic in their composition than molecular machines. Biomolecular condensates are a subclass of pleomorphic ensembles in that their molecular components simultaneously coexist within both a distinct phase and as solutes in the surrounding solution. In trying to quantitatively understand the relationships governing condensate formation from heterotypic components, we asked if there may be lessons to learn from ionic solution chemistry, where salts in solution are in equilibrium with a solid crystalline phase composed of a lattice of counter\u00a0ions. We realized that the liquid phase separation at threshold concentrations of heterotypic biological molecules might resemble the precipitation of anions and cations from solution.\n\nConsider a salt (let\u2019s say silver chloride, AgCl) in water; dissolution takes place until the solution becomes saturated; further addition of salt results in precipitation. In the simplest case of pure AgCl, this seems to be similar to the behavior of a homotypic (single component) condensate; that is, above a threshold total concentration of dissolved AgCl, the salt will not dissolve further, maintaining a clamped concentration of Ag+ and Cl- in the solution above, whatever amount of AgCl is added. However, the key concept is that the saturation threshold is governed by the solubility product (SP)\u00a0\u2013 the product of the individual concentrations of Ag+ and Cl-, [Ag+] * [Cl-]. Precipitation starts when this product reaches the thermodynamic parameter called the solubility productconstant, Ksp. For AgCl Ksp = 1.7 \u00d7 10\u221210\u00a0M2 at 25\u00b0C. Importantly, if we add any Cl- in the form of a highly soluble salt (e.g., KCl) into the solution, some AgCl will precipitate to maintain the solubility product at Ksp. Of course, the crystal lattice in an ionic solid is very different from the set of weak multivalent interactions inside a biomolecular condensate. But we wondered whether the Ksp might at least approximately be used to understand heterotypic LLPS.\n\nWe explore how well Ksp may apply to biomolecular condensates using two stochastic modeling approaches. With a non-spatial network-free simulator (NFsim; Sneddon et al., 2011), we show how Ksp can approximately predict the phase separation threshold for a two-component system by systematically changing the concentration of individual components with a variety of valencies. We simulate the dynamics of cluster formation, demonstrating a dramatic transition from a stable distribution of small oligomers below Ksp to an unstable bimodal distribution of small oligomers and explosively growing large polymers at or above Ksp. We will also show how a more complex mixed-valent three-component system also conforms to a Ksp. Moreover, these simulation results help explain experiments (Riback et al., 2020), where individual components of heterotypic biomolecular condensates are not effectively buffered in the dilute phase. We then expand on prior work on the structural features governing multivalent clustering (Chattaraj et al., 2019) with a spatial kinetic simulator (SpringSaLaD; Michalski and Loew, 2016) to support these conclusions and also point to some limitations.\n\n## Results\n\n### Phase boundary of a two-component system with molecules of the same valency\n\nOur baseline model system consists of a pair of tetravalent molecules (A4 and B4), each having four binding sites that can interact with an affinity (Kd) of 350 \u00b5M. We start the NFsim simulation with the same concentrations of monomers of each type and measure the free monomer concentrations when the system reaches the steady state (Figure 1A). The product of both free concentrations is called solubility product (SP). As we increase the total concentration (synchronously of both A4 and B4), the concentration of monomeric molecules initially goes up (Figure 1A, inset) and of course SP also goes up; upon reaching a concentration threshold (total concentration ~120 \u00b5M in this case), SP plateaus to a constant value (169 \u00b5M2). This is the solubility product constant or Ksp for this pair of tetravalent molecules.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig1-v2.jpg)\n\n**Figure 1.:** These simulation results correspond to equal total concentrations of a heterotypic tetravalent pair of molecules with Kd for individual binding of 350 \u03bcM. (A) Product of the free monomer concentrations (solubility product) as a function of the total molecular concentrations. The black dashed line indicates the plateau, corresponding to the solubility product constant (Ksp), 169 \u00b5M2. Inset plot shows the change of free molecular concentrations of both tetravalent molecules with their respective total concentrations. Each data point is an average of steady-state values from 200 trajectories. In these simulations, we titrate up the molecular counts (200, 400, 600, ...., 2000 molecules, respectively), keeping the system\u2019s volume fixed. (B, C) Distribution of cluster sizes with varying system sizes at two different total concentrations, 80 \u00b5M and 160 \u00b5M, respectively below and above the plateau in (A). The histograms show how the molecules are distributed across different ranges of cluster sizes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) System shows similar cluster size distributions with varying volume and monomer counts as long as the total concentration (80 \u00b5M in this case) is below the threshold concentration (~ 120 \u00b5M for our A4 \u2013 B4 system). We term the mean of the distribution as average cluster occupancy (ACO) (Chattaraj et al., 2019), which is shown with dotted line in each case. (B) Above the threshold, the fraction of monomer is clamped at the Ksp, and larger clusters are formed as more molecules become available.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Solubility product profile and (B) cluster size distributions when we use A4 and B4 in equal stoichiometric amount. In all these cases, 5000 A4 and 5000 B4 molecules are kept fixed and we vary the volume to change the concentrations.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Total molecules = 10,000 (5000 A4 and 5000 B4). Fixed total concentration\u00a0(FTC) = 200 \u00b5M, which is above the phase transition threshold (~120 \u00b5M).\n\nNext, we ask how the system might behave differently below and above the Ksp. Similar to an analysis we employed in previous work using spatial simulations (Chattaraj et al., 2019), we probed for how the number of available molecules (i.e., the system volume) affects the cluster size distribution below and above the threshold, 80 \u00b5M and 160 \u00b5M (Figure 1B, C). If the system shows no tendency to condense into large clusters, the size distribution will be insensitive to the number of molecules at a given total concentration. Figure 1B shows this to be the case for the 80 \u00b5M total concentration (SP = 154 \u00b5M2 < Ksp). The shape of the cluster size distribution displays an exponential decline from monomers to higher oligomers, and this shape is insensitive to increasing the number of molecules (i.e., volume) in the system (unbinned histograms are in Figure 1\u2014figure supplement 1A). Even in the presence of 800 molecules, there are hardly any clusters greater than 40 molecules (lowest panel of Figure 1B). Approximately 80% of the total molecules are in clusters containing less than 10 molecules, no matter how many molecules are available in the system. Extrapolating to a macroscopic system, this would be equivalent to a single soluble phase consisting of mainly monomers and small oligomers.\n\nFigure 1C and Figure 1\u2014figure supplement 1B illustrate the cluster distribution for total concentration = 160 \u00b5M, above the threshold for constant SP (SP = 169 \u00b5M2 = Ksp). The histogram does change shape, extending the tail to larger clusters eventually to become a bimodal distribution as we feed more molecules into the system (i.e., as we increase the volume). With 1600 molecules in the system, more than 20% of the total molecules are in clusters larger than 100 molecules. Figure 1\u2014figure supplement 2 shows simulations with 10,000 molecules, averaged over 100 trajectories, systematically varying the total concentrations by changing the simulation volume (as opposed to changing the number of molecules within a fixed volume in Figure 1A); the Ksp is still 169 \u00b5M2 and bimodal distributions clearly develop above Ksp. We note that the long tail in these histograms (unbinned distribution in Figure 1\u2014figure supplement 1B) is an average of 100 stochastic trajectories; examination of individual histograms in Figure 1\u2014figure supplement 3 (note the logarithmic scale on the abscissa) shows almost all of them individually containing just one huge cluster along with small oligomers. Thus, Figure 1C, Figure 1\u2014figure supplement 2B, and Figure 1\u2014figure supplement 3 demonstrate that if the system is above Ksp, molecules are funneled into macroclusters.\n\nWe hypothesize that this tendency to form increasingly larger clusters with more available molecules is a hallmark of phase separation behavior, as previously established (Chattaraj et al., 2019), and that a constant solubility product (Ksp) is a quantitative indicator to mark the threshold that underlies biomolecular condensates. Here, we use the percolation boundary, the threshold for forming large clusters, as a proxy for phase separation, realizing that they may not be completely coincident (Choi et al., 2020a; Choi et al., 2020b). Below a threshold total concentration, when SP has\u00a0not reached the constant level of Ksp, the tendency to form large clusters is low and the system would exist as a single phase (e.g., Figure 1B). Above the threshold where SP converges to the Ksp, the system tends to form very large clusters, yielding two different phases, manifest as bimodal cluster size histograms (Figure 1C, Figure 1\u2014figure supplement 2B, and Figure 1\u2014figure supplement 3). The dense phase containing the larger clusters grows in size and the dilute phase concentration remains constant. Importantly, this behavior is precisely that of a buffering system, which has been proposed as one of the important biophysical functions of biomolecular condensates. The generality of this hypothesis will now be further explored through additional modeling scenarios.\n\n### Simulations with monomeric A4 and B4 maintained at fixed concentrations\n\nWe now further demonstrate that Ksp marks the phase transition threshold using an alternative modeling approach. In the\u00a0first\u00a0approach, we used a fixed total concentration (FTC) of molecules and measure the free monomer concentrations as the system reaches the steady state. In this second approach, we clamp the monomer concentrations to a constant value (clamped monomer concentration\u00a0[\u2018CMC,], Figure 2A) and allow the total concentration (free plus bound) to change over time. This is achieved by creating reactions that rapidly create and destroy monomers, such that the concentration is clamped at the ratio of these rate constants \u2013 as long as these rates are much faster than the rates of the binding reactions. The SP, in this case, is simply the product of CMC_A4 and CMC_B4.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig2-v2.jpg)\n\n**Figure 2.:** (A) Illustration of the clamped monomer concentration (CMC) approach. Both the molecules (A4 in magenta and B4 in green) can enter the simulation box with a rate constant kcreate (molecules/s) and exit with a rate constant kdecay (s-1). The ratio of these two parameters clamps the monomer concentration to (kcreate/kdecay). (B) Average time course (over 100 trajectories) of total molecular concentrations as a function of different CMCs. Error bars show the standard deviations across 100 trajectories. (C) Eight sample trajectories for different CMCs.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig2-figsupp3-v2.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Below the phase boundary, if we clamp the free concentrations from the FTC approach\u00a0(A), we recover the identical total concentrations at steady state in CMC approach\u00a0(B). Above the concentration threshold (example of FTC = 70 \u00b5M), clamping the free concentrations from FTC method no longer yields the same steady-state level (CMC = 13.01 \u00b5M).\n\nFor CMC_A4 = CMC_B4 = 12.9 \u00b5M (SP = 166.4 \u00b5M2, below Ksp), total molecular concentrations rise up initially and then converge to a steady state (~56 \u00b5M) (Figure 2B). However, going to CMC = 13 \u00b5M (SP = 169 \u00b5M2 = Ksp), the total concentrations never reach a steady state. This phenomenon is more pronounced for a higher CMC (13.1 \u00b5M). Clearly the system is undergoing a fundamental change around SP = 169 \u00b5M2, identical to the threshold determined for FTC (Figure 1). Both these modeling paradigms indicate that there is a solubility product constant (Ksp = 169 \u00b5M2) beyond which the system has a much higher propensity to form larger molecular clusters, the prerequisite for phase-separated droplet formation. Another striking feature is the variability of the total concentrations at CMC = 13 \u00b5M as illustrated by the error bars around the mean counts (second panel, Figure 2B). When we look at the individual trajectories (Figure 2C\u00a0and Figure 2\u2014figure supplements 1\u20133), the system shows large fluctuations and variable lag times before irreversible growth near the phase boundary (Figure 2C, CMC = 13 \u00b5M); the total concentration explodes in some runs or fluctuates around a metastable state within the given time\u00a0frame. The behavior is less stochastic away from the Ksp (Figure 2B, C, CMC = 12.9 \u00b5M and 13.1 \u00b5M) as quantified by the relatively narrower error bars. The behavior at Ksp represents stochastic nucleation of clusters containing enough crosslinking that disassembly becomes unlikely; such larger clusters are sufficiently stable only at or above Ksp.\n\nWhen we compare the outcomes from FTC and CMC methods, we see that the results are consistent with each other (Figure 1A, Figure 2B, and Figure 2\u2014figure supplement 4). Below the phase boundary, if we clamp the monomer concentrations to the value of free concentrations obtained from the FTC method, we recover the same steady-state total molecular concentrations (top six panels in Figure 2\u2014figure supplement 4). However, at even slightly above the Ksp, the CMC total concentration increases with time, rather than leveling off to a higher steady value (bottom panels in Figure 2\u2014figure supplement 4).\n\n### Phase transition depends on Ksp even when individual monomer concentrations are unequal\n\nFrom ionic solution chemistry, we know that irrespective of the individual ionic concentrations, if the product of ion concentrations exceeds the Ksp of the salt (i.e., supersaturation), we always get precipitation to restore the solution concentrations to Ksp, even if one ion is present at a different concentration than the other (\u2018common ion effect\u2019). We wanted to test whether that simple chemical principle works for our relatively complex multivalent molecular clustering system. In Figure 3, we analyze two cases when the\u00a0product of reactant\u2019s concentrations (SPs) is above (SP = 172 \u00b5M2) and below (160 \u00b5M2) the Ksp (169 \u00b5M2, derived from Figure 1). For each of those SPs, we vary the CMCs of A4 and B4 in such a way that the products of the CMCs are always equal to the assigned SP. Satisfyingly, we find that for SP < Ksp (Figure 3B), the systems converge to stable steady states (no phase transition); but for SP > Ksp (Figure 3A), irrespective of individual clamped concentrations, systems always show unbounded growth (phase transition). We also titrated unequal FTCs, maintained at a ratio of 3:2 (Figure 3\u2014figure supplement 1). Interestingly, in this computational experiment the free monomer concentration of the lower abundant component (B4) gets exhausted disproportionately as the threshold is approached, so that SP cannot quite reach Ksp (169 \u00b5M2) and actually begins to diminish somewhat at still higher FTC. However, cluster size distribution (Figure 3\u2014figure supplement 1B) still becomes increasingly bimodal with higher concentrations suggesting a phase separating behavior. Thus, even when monomer supply becomes depleted, the Ksp still serves as an upper limit for free monomer concentrations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig3-v2.jpg)\n\n**Figure 3.:** With Ksp determined from Figures 1 and 2 at ~169 \u03bcM2, solubility product\u00a0(SP) was clamped above in (A) at 172 \u03bcM2 and below in (B) at 160 \u03bcM2. The solid lines (magenta and green) and error bars represent the mean and standard deviations across 100 trajectories.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Solubility product profile and (B) cluster size distributions with unequal stoichiometric ratio. In all these simulations, we maintain a fixed number of 6000 A4 and 4000 B4 molecules and change the volume to alter the concentrations.\n\n### Higher valency promotes phase transition by reducing the Ksp\n\nIncreasing valency is known to increase the propensity for phase separation (Holehouse and Pappu, 2018; Mathieu et al., 2020). Therefore, we ask how the valency of the interacting heterotypic monomers affects the Ksp. We altered the molecular valencies (number of binding sites per molecule) from 3 to 5 and compute the SP profiles as a function of total concentrations (Figure 4). The total concentration needed to reach the Ksp goes down with higher valency, consistent with experiment. Going from 3v,3v pair to 4v,4v pair, Ksp changes over fivefold (852 \u00b5M2 to\u00a0169 \u00b5M2), whereas approximately threefold change (169 \u00b5M2 to 55 \u00b5M2) can be observed for transitioning into 5v,5v pair from 4v,4v.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig4-v2.jpg)\n\n**Figure 4.:** For 3,3 case (blue stars), molecular counts of each type = [500, 1000, 1500, ..., 3000]. For 4,4 case (red stars), molecular counts of each type = [100, 200, 300, ..., 1000]. For 5,5 case (cyan stars), molecular counts of each type = [50, 100, 150, ..., 500]. Kd is set to 3500 molecules in all these cases. Horizontal dashed lines indicate the Ksp of the corresponding system.\n\n### Ksp for a mixed-valent system\n\nWe next explore what happens when we mix molecules with different valencies. Consider a penta- and trivalent (A5\u2013B3) molecular pair (Figure 5). To optimize the clustering such that all sites could potentially be bound would require a stoichiometry of 3A5:5B3. Maintaining this concentration ratio, as we titrate up the total concentrations, we see an interesting pattern (Figure 5A, inset): the free monomer concentration of B3, which is present in excess, goes up steadily; but the free A5 goes up first and then starts to go down. When we take the product of free monomer concentrations (Figure 5\u2014figure supplement 1), we do\u00a0not see an SP profile that plateaus to a constant Ksp (as in Figure 1A). However, when we correct the SP expression by taking the ideal stoichiometry into account, SP = (free A5)3(free B3)5, we get an SP profile that does plateau to a fixed Ksp beyond the total concentration threshold of ~128 \u03bcM (Figure 5A). The Ksp expression for this mixed-valent binary system is analogous to a mixed-valent salt like Al2(SO4)3. Indeed, examining the cluster size distribution confirms that this mixed-valent system has a concentration threshold at the same total concentration 128 \u00b5M (48 \u00b5M A5 + 80 \u00b5M B3) where this stoichiometry-adjusted SP becomes constant; beyond that point the cluster size distribution becomes bimodal and more and more molecules populate the larger clusters (Figure 5B). Importantly, the free monomer concentrations do not display buffering above this threshold (Figure 5A, inset), with the concentration of the pentavalent monomer actually decreasing. Thus, the Ksp analogy between ionic solution chemistry and biomolecular condensates seems to hold for even these more complex stoichiometries.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig5-v2.jpg)\n\n**Figure 5.:** (A) Logarithm of solubility product\u00a0(SP) as a function of total concentrations (A5 + B3). Inset shows the variation of free molecular concentrations w.r.t. their initial total concentrations. Molecules are added at a fixed volume to vary the total concentrations. (B) Cluster size distributions become more bimodal as we go beyond the critical concentration (128 \u00b5M in this case).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Here, solubility product = Free A5 * Free B3.\n\n### A ternary heterotypic system lacks dilute phase buffering while still being governed by Ksp\n\nIn some elegant recent experiments, Riback et al., 2020 titrated up the concentration of one component of several cellular multicomponent biomolecular condensates and showed that the expected buffering behavior did not pertain to heterotypic systems. We decided to see if our simple non-spatial simulations, which only consider binding and valency, could recapitulate these experimental observations.\n\nTo do this, we consider a mixed-valent three-component system. Component A3 has three sites that can bind to a single domain of component B1,3; six sites in component C6 interact with three different sites on component B1,3. In our simulations, all these bindings are assumed to have the same weak affinities (Kd = 350 \u00b5M). We started by establishing conditions where B1,3 and C6 alone could form a bimodal cluster distribution (Figure 6\u2014figure supplement 1), corresponding to a phase separation. We found that this binary system has a Ksp of ~2700 \u00b5M3 (the units correspond to the ideal stoichiometry of 2 B1,3:1 C6). We then chose total concentrations of 120 \u00b5M B1,3 and 60 \u00b5M C6 (well above the phase transition in Figure 6\u2014figure supplement 1B) and performed a series of simulations with increasing levels of A3 (Figure 6). Figure 6A\u2013C shows three ways to analyze these data, which we chose to match the way experimental data for titration of NPM1, a key component of the nucleolus, was analyzed in Riback et al., 2020 (shown in the corresponding insets in the panels of Figure 6A\u2013C). We do not know the valencies and affinities for the components that make up the nucleolus, an archetypal biomolecular condensate, so we made no attempt to match the data quantitatively. However, we are gratified with the obvious qualitative match to the experimental patterns, especially the ability of our simple binding model to show how A3\u00a0does not display simple buffering in this scenario. Specifically, buffering, as observed in homotypic biomolecular condensates, would result in a plateau level of monomeric A3 (or NPM1) as a function of total A3 (the illustrative \u2018expected\u2019 behavior is shown for NPM1 in red in Figure 6A, inset). Instead, our simulations and the corresponding data on the levels of NPM1 in the nucleoplasm (dilute phase) show an increasing concentration of the titrant. Because the dilute phase would contain small oligomers, not just monomer, we confirmed that the patterns in Figure 6A, B for the monomeric A3 are also present for small oligomers of A3 (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig6-v2.jpg)\n\n**Figure 6.:** We begin with 120 \u00b5M B1,3 and 60 \u00b5M C6,\u00a0which displays a bimodal cluster distribution (condensate formation; Supp. Fig. S6); we then titrate up A3 concentration from 1 \u00b5M to 200 \u00b5M. (A\u2013C) Free A3 (monomeric) concentration, bound A3 (total A3 \u2013 free A3) concentration and their ratio as a function of total A3 concentrations. Inset figures are replotted from the data reported in Riback et al., 2020. To guide the eye, we fit their experimental data to a generic function, y = a\u00a0*\u00a0xn where a and n are pre-exponent and exponent factors, respectively. The red lines in the inset plots demonstrate the 'expected' trend if the condensation is purely driven by homotypic interactions. (D) Blue triangles correspond to the solubility product (SP) of the three-component system when A3 is being titrated up gradually, with fixed total [B1,3]\u00a0=\u00a0120 \u00b5M and [C6]\u00a0=\u00a060 \u00b5M. Red stars indicate the scenario when we simultaneously change concentrations of all three components, keeping a concentration ratio of 2:6:3.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Change of solubility product (SP) as a function of total concentration; Ksp ~ 2700 \u00b5M3 for this binary system. Inset shows the change of individual components. (B) Cluster size distributions as a function of total concentration. The distribution starts to become bimodal beyond 120 \u00b5M (80 \u00b5M B1,3,\u00a040 \u00b5M C6), which is the threshold concentration when SP converges to the Ksp.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** In a pre-formed condensate (120 \u00b5M B1,3 + 60 \u00b5M C6), we gradually titrate up the A3 and calculate concentrations both in the free and clustered state. (A) Blue points represent the free (monomeric) A3 concentrations where cyan points correspond to the total A3 present in clusters, which is less than 10 molecules in size. (B) Green points represent the bound A3 (total A3 \u2013 free A3) concentrations while magenta points indicate total A3 present in the clusters greater than 10 molecules.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) With a fixed number of molecules (A3 = 200, B1,3 = 600, C6 = 300 molecules), we change the volume of the system to alter the molecular concentrations. Inset plots show the concentration changes of individual components. (B) Cluster size distributions at different total concentrations, which starts to become bimodal after 165 \u00b5M (30,\u00a090,\u00a045 \u00b5M) marked by the Ksp (sixth point in SP plot).\n\nImportantly, Figure 6D demonstrates how this complex ternary system obeys the Ksp just as well as the previously analyzed binary systems. The SP for this system is calculated based on the ideal valency matching stoichiometry: SP = [A3]2[B1,3]6[C6]3. The blue triangles show this analysis for the same simulations that generated Figure 6A\u2013C, where the total concentrations of B1,3 and C6 are kept fixed sufficiently high to be phase separated without any A3 (Figure 6\u2014figure supplement 1B) at 120 \u00b5M and 60 \u00b5M, respectively, while the total concentration of A3 is titrated from 1 \u00b5M up to 200 \u00b5M. The red stars show a computational experiment where the total concentrations of the three components are varied concertedly, maintaining the ideal stoichiometric ratios of 2 A3:6 B1,3:3 C6. Both of these titrations plateau to the same value of Ksp of ~1012 \u00b5M11, even though they reach this Ksp at different values of the total concentration. The red star simulations display the characteristic bimodal cluster size distributions at a total concentration of [A3] + [B1,3] + [C6] = (30\u00a0+\u00a090\u00a0+\u00a045) \u00b5M = 165 \u00b5M, that\u00a0is, just when SP plateaus to the Ksp (Figure 6\u2014figure supplement 3). Thus, even for this more complex mixed-valent ternary system, a threshold for monomer concentrations is set by a Ksp, and it determines the point for formation of the large cluster phase. Figure 6\u2014figure supplement 3A also shows how the individual monomer concentrations (insets) continue to change dramatically even after the Ksp is reached. Taken together, these results demonstrate the usefulness of the Ksp concept in explaining the concentrations of individual components of complex heterotypic multivalent binding systems and how they lead to LLPS.\n\n### Spatial simulations\n\nBecause of the efficiency of the NFSim non-spatial stochastic simulator, we were able to rapidly explore many scenarios using large numbers of molecules and demonstrate that the solubility product constant (Ksp) may generally serve as a quantitative indicator for phase transitions of multivalent heterotypic binders. These simulations also allowed us to focus on only the effects of binding valency and stoichiometry. We now apply a spatial simulation framework, SpringSaLaD (Michalski and Loew, 2016), where the roles of spatial features, such as steric hindrance, molecular flexibility and proximity, may also impact Ksp. A biomolecule is modeled as a collection of spherical sites connected by spring-like linkers. The spheres may be designated as binding sites within a rule-based modeling interface, assigning them macroscopic on and off rates that the software translates to reaction probabilities as the spheres penetrate a computed reaction radius dependent on the on-rate constant. Thus, the software is amenable to computational experiments where the geometric and reaction parameters of the system can be systematically varied.\n\nOur spatial system consists of a pair of matched tetravalent molecules (A4a and B4b) where each molecule contains four binding sites, with interspersed pairs of linker sites (Figure 7A). These linker sites impart flexibility to the molecules mimicking the intrinsically disordered linker sequences that are found in many phase-separating multivalent proteins (Posey et al., 2018). Each of the magenta sites can bind to each of the green sites with an affinity of 350 \u00b5M. We begin with 100 A4a and 100 B4b molecules, randomly distributed in a three-dimensional rectangular volume. As the system relaxes to the steady state, we quantify the monomer concentrations and plot their product (SP) as a function of the initial total concentration \u2013 the FTC approach we described above for NFsim. We generate an SP profile by systematically varying the FTC by changing the volume of the compartment, keeping the total molecular numbers same (Figure 7B). The SP converges to a constant value (Ksp = 318 \u00b5M2) at a threshold FTC (~138 \u00b5M in this case). When we look at the detailed cluster size distributions at steady state (Figure 7\u2014figure supplement 1A), the dimer emerges as a preferred configuration both below and above the Ksp. This dimer preference arises from the matching valency and spatial arrangement of the binding sites in the two partner molecules; such an effect, which we term a \u2018dimer trap,\u2019 cannot be realized in non-spatial methods, such as NFsim. Above Ksp, however, most of the individual trajectories, much like NFsim, produce discontinuous distributions with small oligomers along with one or two very larger clusters (Figure 7\u2014figure supplement 2). This obvious bifurcation is obscured when averaging over multiple individual histograms (Figure 7\u2014figure supplement 1A) because the consistent population of small oligomers is reinforced while individual large clusters will become smeared out.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig7-v2.jpg)\n\n**Figure 7.:** (A) SpringSaLaD representations of a pair of tetravalent binders. A4a and B4b consist of four magenta and green spherical binding sites (radius = 1.5 nm) and six orange and pink linker sites (radius = 0.75 nm). Diffusion constants for all the sites are set to 2 \u00b5m2/s. For individual binding, dissociation constant, Kd = 350 \u00b5M (Kon = 20 \u00b5M\u22121.s\u22121, Koff = 7000 s\u22121). Simulation time constants, dt (step size) = 10\u22128 s\u22121 , dt_spring (spring relaxation constant) = 10\u22129 s\u22121 .\u00a0(B) Solubility product (SP) profile of the spatial system. We place a total of 200 molecules (100 A4a + 100 B4b) in 3D boxes with varying volumes and quantify the monomer concentrations (free A4a and free B4b) at steady states. Each data point is an average over 100 trajectories. Solubility product constant (Ksp) = 318 \u00b5M2, the horizontal dashed line. (C) Total molecular concentration profiles for three clamped monomer concentrations (CMCs). The solid lines and error bars represent the mean and standard deviation over 50 trajectories. (D) Cluster size distributions at the last time point of CMC trajectories, that is, 1000 ms for CMC = 16.7 \u00b5M, 400 ms for CMC = 17.85 \u00b5M and 18 \u00b5M. More detailed histograms without binning are shown in Figure 7\u2014figure supplement 1. (E, F) Irrespective of individual monomer concentrations, total molecular concentrations converge to steady states as long as the solubility product (SP = 280 \u00b5M2) < Ksp (E) and diverge with time when SP (= 330 \u00b5M2) > Ksp (F). The solid lines and error bars represent the mean and standard deviation over 50 trajectories.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig7-figsupp1-v2.jpg)\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Total molecules = 200 (100 A4a and 100 B4b). Molecular concentrations = 332 \u00b5M, which is above the phase transition threshold (~276 \u00b5M). Clusters containing more than 50 molecules are shown with a single bar.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67176/elife-67176-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Magenta and green traces correspond to total A4 and total B4 concentration, respectively.\n\nHaving established the Ksp with the FTC spatial simulations, we turned to the CMC approach, again using high values for kcreate and kdecay (as in Figure 2A). One can think of the CMC approach as being equivalent to having a large external reservoir of monomers that can rapidly diffuse into a volume where clustering is enabled. As we titrate up the CMCs (Figure 7C), the system undergoes a fundamental change at 17.85 \u00b5M, corresponding to SP = 318.6 \u00b5M2, which is approximately at the Ksp we derived from the FTC calculations. Below that boundary (CMC = 16.7 \u00b5M), total concentrations converge to a steady state (Figure 7C, top panel); at (CMC = 17.85 \u00b5M) or above the boundary (CMC = 18 \u00b5M), the total concentration of molecules keeps on going up with time (Figure 7C, second and third panels). When we look at the individual total concentration trajectories for CMC = 17.85 \u00b5M (Figure 7\u2014figure supplement 3), much like our NFsim results, some trajectories fluctuate around a lower steady state (dilute phase) for the given time\u00a0frame while some trajectories shoot up (dense phase) after a variable lag. This stochastic behavior is also present for CMC = 18 \u00b5M, although the rate of growth is much faster in this case. As quantified by the error bars (Figure 7C, second and third panels), stochastic fluctuations are somewhat greater in spatial simulations than the non-spatial scenario. This stochasticity can be attributed to the variable lag before the nucleation of a sufficiently large cluster for irreversible and accelerating growth; higher variability in spatial simulations is expected due to a larger number of contributing factors like steric crowding and optimal geometric conformations of binding sites.\n\nCertain features of these results are better appreciated via Figure 7\u2014videos 1\u20133, each corresponding to a typical single trajectory at the three CMCs. Interactive 3D visualizations of these three simulations are available on the \u2018Simularium\u2019 website hosted by the Allen Institute for Cell Science; readers may access them here:\u00a0Below\u00a0Ksp;\u00a0At\u00a0Ksp;\u00a0Above\u00a0Ksp. The videos each show the actual dynamics of cluster formation and diffusion within the 3D volume, synchronized with the time course of total molecular concentration and a dynamic histogram of cluster size distribution. Figure 7\u2014video 1, where monomer concentration is clamped at 16.7 \u00b5M (SP = 279 \u00b5M2, below Ksp), shows that the total molecular concentration fluctuates around ~80 \u00b5M, matching the third data point in Figure 7B. While this single trajectory is noisy, it corresponds well to the average of 50 trajectories in the top panel of Figure 7C. Importantly, the dynamic histogram in Figure 7\u2014video 1 shows that the system rarely samples a cluster size greater than 15 molecules, which we associate with a single dilute phase. Figure 7\u2014video 2 displays a typical trajectory with CMC at the Ksp (monomer concentration 17.85 \u00b5M, SP = Ksp = 318.6 \u00b5M2). Instead of the steady state attained below Ksp (Figure 7\u2014video 1), Figure 7\u2014video 2 displays a noisy but accelerating increase in total concentration to a maximum of 500 \u00b5M at 400 ms and a corresponding filling of the simulation volume; the dynamic histogram (note the logarithmic scale of the x-axis compared to Figure 7\u2014video 1) shows primarily small clusters until about 200 ms, followed by a steady siphoning of newly appearing monomers into a single large cluster, which we associate with phase separation. Figure 7\u2014video 3, with CMC set just above Ksp at 18 \u00b5M, illustrates how one trajectory reaches a metastable steady state that lasts until ~180 ms, but ultimately explodes to almost 800 \u00b5M total concentration, virtually filling the available volume (as also noted for the corresponding averaged trajectories in the lowest panel of Figure 7C). This corresponds to a nucleation step, which lasts until the formation of a sufficiently large cluster to capture most newly appearing monomers. Motions and spatial locations of individual clusters can be visualized through Figure 7\u2014video 4, which is based on the same simulations used to produce Figure 7\u2014video 1 and Figure 7\u2014video 3 (i.e., below and above Ksp, respectively). Figure 7\u2014video 4 displays the individual clusters in a given time\u00a0frame by computing their centroids and a radius of gyration around that center. For visual clarity, the cluster sizes are scaled down proportionately (by a factor of 4); for example, the largest cluster in the last time frame of the above Ksp (right panel) has a radius of gyration of ~48 nm. The dimension of the simulation volume is 100\u00a0*\u00a0100\u00a0*\u00a0120 nm3. Through Figure 7\u2014video 4, we can better appreciate the dramatically different spatial distributions of clusters below and above Ksp. The left panel, below Ksp, corresponds to a collection of small clusters homogeneously distributed across the simulation volume (single dilute phase), while the right panel illustrates the evolution of a large cluster (dense phase) coexisting with a pool of randomly distributed small clusters (dilute phase).\n\nLike our non-spatial simulations, both FTC and CMC approaches yield self-consistent results for the spatial system: as the monomer SP remains below the Ksp threshold (318 \u00b5M2), the system exhibits only one phase; but above that threshold boundary, the molecules get partitioned into two different phases \u2013 a dilute phase with monomers and small oligomers and a highly clustered phase (Figure 7D\u00a0and Figure 7\u2014figure supplement 1B). The validity of the Ksp is preserved even when the CMCs are unequal. We illustrate this by choosing two SPs, 280 \u00b5M2 and 330 \u00b5M2, respectively below and above the Ksp, and varying the individual CMCs (Figure 7E, F). Both the cases with SP = 280 \u00b5M2 converge to a steady state, while SP = 330 \u00b5M2 combinations explode in both cases. It should be noted that as the total concentration explodes in these simulations, the volume can become filled with newly created molecules; this puts a brake on the total concentration in long duration simulations.\n\n## Discussion\n\nIt has been widely understood that for single component, self-interacting (homotypic) multivalent systems undergoing liquid-liquid phase separation (LLPS), the concentration of monomer in the dilute phase remains fixed above the phase transition, no matter how much of the monomer is added to the system; this feature of biomolecular condensates underlies buffering and noise reduction (Holehouse and Pappu, 2018; Klosin et al., 2020). Of course, the maintenance of a fixed concentration in a saturated solution of a solute in equilibrium with its solid phase is an elementary thermodynamic rule. Recognizing this, we set out to see how far the analogy to solution chemistry could take us in considering heterotypic interactions between different multivalent binders. Somewhat more complex than the saturated solution of a single solute is the precipitation of solid salts from saturated solutions of their ions. Chemists well know that ionic solutions of weakly soluble salts are governed by the solubility product constant, Ksp = [Cm+]n[An-]m, where m and n are the valencies, respectively, of the cation Cm+ and anion An-; importantly, n and m are the stoichiometries, respectively, of the cation and the anion in the solid phase to balance the positive to the negative charges. The solubility product constant derives from a fundamental thermodynamic principle \u2013 equality of chemical potential between coexisting phases (ions in solution and solid). We wondered whether similar expressions could define the thresholds for LLPS in multicomponent (heterotypic) multivalent interaction systems.\n\nOne limitation in the analogy is that the composition of the ionic solid phase, and therefore the activity, is invariant, making the system-free energy dependent on only the activities of the ions in solution. However, the ideal stoichiometry, which absolutely constrains the composition of an ionic solid, is not so strictly enforced in the condensed phase of a multivalent condensate because of the weak binding affinities that underlie these systems. Therefore, to explore how well the Ksp might apply to LLPS, we used a non-spatial stochastic network fee simulator, NFsim (Sneddon et al., 2011); it isolates only the effect of valency and binding on the concentration dependence of clustering. We used a single weak binding affinity (Kd = 350 \u03bcM) for all our simulations. The efficiency of this computational method also made it possible to screen many scenarios with a sufficient number of molecules and trajectories to assure statistically that we were\u00a0not missing any interesting effects. We used two approaches to assess the threshold behavior. First, we titrated up the total concentration of pairs of multivalent binders. We found that there was a threshold above which the concentration of free monomers obeyed a Ksp expression \u2013 that is, [A]n[B]m, where m and n are the ideal stoichiometries for an oligomer with all binding sites occupied. Below the Ksp threshold, the histogram of cluster size distributions tails off exponentially from monomers to small oligomers and its shape is independent of the number of molecules available (e.g., Figure 1B and Figure 1\u2014figure supplement 1A). However, for total concentrations above the Ksp threshold, the histogram of cluster size distributions becomes bimodal, with an increasing population of huge clusters as more molecules are added to the system (e.g., Figure 1C and Figure 1\u2014figure supplement 1B); we consider this bimodal cluster size distribution to be a hallmark of phase separation. The individual trajectories show a separation between small oligomers and a single large cluster (Figure 1\u2014figure supplement 3). This bifurcation between one large cluster and small oligomers has been used to define a percolation boundary, generally considered a proxy for phase separation (Choi et al., 2019; Choi et al., 2020a). To further relate the behavior of these stochastic systems to the macroscopic phase transition, we used a second modeling approach where we clamped the monomer concentrations (CMC) while allowing the clusters to grow. When monomer concentrations were clamped below the Ksp, the system reached a steady state identical to that of the corresponding closed fixed total concentration simulations (Figure 2\u2014figure supplement 4), with identical cluster distributions containing a single decaying histogram of cluster sizes. However, when the CMC was set to the Ksp or slightly above it, the plot of total concentration vs. time exploded following an initial lag (e.g., Figure 2), indicating that as new monomers enter the system they were funneled into large clusters without attaining a steady state. Together, we feel that the behavior of these two different modeling approaches shows that the Ksp defines a threshold of monomer concentrations above which a phase separation occurs.\n\nThe generality of the Ksp as an indicator of threshold was then further tested using different scenarios. We tested a situation where the total concentrations of each molecule in the binary tetravalent heterotypic system were unequal; while these simulations showed that the Ksp determined in the analysis of the equal concentration system was obeyed for a range of unequal concentrations (Figure 3), there will be deviations if the range is extended too far (Figure 3\u2014figure supplement 1). This deviation is not surprising considering that the binding affinities are weak, leaving an excess of binding sites empty within a cluster, when the free concentration of one binding partner is too highly depleted. We tested cases where the valencies were not identical for a binary (Figure 5) and even a ternary system of mixed valency interactors (Figure 6D). In these systems, a more complex Ksp formulation was required to account for the appropriate ideal stoichiometry of the cluster. In both of these cases, the Ksp was successful in defining a threshold for phase separation.\n\nThe ternary system of Figure 6 also allowed us to explore how well the simple multivalent binding simulations could reproduce some recent experiments demonstrating how the components of heterotypic biomolecular condensates are not effectively buffered in the dilute phase (Riback et al., 2020). For several prototypical cellular LLPS systems, this study elegantly showed that titration of a single component produced a free concentration of that component that increased even more rapidly than its total concentration (Figure 6A inset is an example). The simulation results in Figure 6 show that our simple multivalent binding system is able to reproduce these experimental titration patterns; importantly, it also further demonstrates, despite this failure of simple buffering, that the concentrations of individual components in the dilute phase are still constrained by Ksp.\n\nRecent computational (Choi et al., 2019) and theoretical (Deviri and Safran, 2021) studies demonstrated that buffering of dilute phase concentrations in multicomponent systems has a complex relationship with the interplay of homotypic and heterotypic interactions. For a two-component heterotypic system, plotting the total concentrations of one component against the other produces a phase diagram with an elliptical region corresponding to the coexistence of the dilute and condensed phases; the system has a single phase anywhere outside that ellipse. In fact, the dilute and condensed phase concentrations remain constant (i.e., buffered) along tie\u00a0lines that are approximately parallel to the major axis of the ellipse; buffering fails perpendicular to tie lines (Deviri and Safran, 2021). The derivation of approximate order parameters, such as a percolation boundary (Choi et al., 2019; Choi et al., 2020b), to estimate the shape of phase diagrams, could be possible with our approach, but it is beyond the scope of this work. However, the SP should be approximately constant (Ksp) within the two-phase elliptic region. That is, the SP may be used to predict concentrations in the dilute phase even for short traversals perpendicular to tie lines in the phase diagram.\n\nWe turned to coarse-grained spatial simulations of clustering to determine if the Ksp might still be generally applicable when the shape and flexibility of multivalent molecules is explicitly considered. We used SpringSaLaD (Michalski and Loew, 2016) software; it models molecules as a series of linked spheres to represent domains within macromolecules. We had previously used this software to address the structural features that control clustering of multivalent molecules and showed that above a concentration threshold, the system display unlimited growth characteristic of LLPS (Chattaraj et al., 2019). In the present study, we examined a heterotypic pair of tetravalent binders (Figure 7), similar to the non-spatial model used in Figures 1 and 2. The SpringSaLaD structures included four binding spheres, each separated by a pair of linker spheres; the distances between sites were identical within each binding partner. The results (Figure 7) show that this model displays the same behavior noted for the non-spatial model. The product of concentrations of monomer becomes independent of the total concentration above a threshold (Figure 7B). When monomer concentrations are clamped at or above this Ksp threshold, the total concentration explodes after a lag time (Figure 7C, F) and the histogram of cluster sizes becomes bimodal (Figure 7E). These results are dramatically displayed in Figure 7\u2014videos 1\u20133, corresponding to typical single trajectories for the clamped monomer concentrations below, at, and above Ksp, respectively; Figure 7\u2014video 4 offers a view directly comparing cluster sizes as a function of time below and above Ksp. Thus, the Ksp concept remains valid for the spatial system shown in Figure 7A.\n\nManipulation of computational models thus allowed us to systematically determine how well the Ksp concept, familiar from ionic solution chemistry, might apply to the very different situation of weak interactions between multivalent macromolecules. We found that for most scenarios, if not all, the Ksp does define a threshold for the unbounded growth of large clusters and a quantitative metric for the tendency of a system to phase separate. Additionally, for those cases where there are deviations from the stereotypical behavior, insights may be gleaned into the underlying molecular factors inhibiting cluster growth. But it is important to appreciate that experimental systems may introduce additional levels of complexity, such as nonspecific low-affinity binding interactions and long-range electrostatic forces. For real biomolecular condensates, the valency and stoichiometry of the components may be unknown, and they may have multiple binding interaction of differing affinities. However, it should be possible to measure Ksp experimentally using fluorescently labeled binding partners and determining their concentrations in the dilute and condensed phase via quantitative confocal microscopy (Fink et al., 1998). Titration experiments can readily be performed in vitro and have been among the earliest studies of biomolecular condensates (Li et al., 2012). More recently, methods have been developed to perform titrations in cells (Riback et al., 2020). Such experiments could serve, initially, to validate the Ksp concept. Beyond validation, enough such data may make it possible to find optimal fits to a Ksp expression, providing an indication of the effective valency of the interactions in complex multivalent biomolecular condensates.\n\n## Materials and methods\n\n### Non-spatial simulations (NFsim)\n\nTo develop models that probe for the effects of valency and concentrations but do not account for spatial effects, we employ the NFsim (Sneddon et al., 2011) \u2013 a non-spatial rule-based stochastic simulation framework where each biomolecule represents a molecular object that may have multiple binding sites. These sites can bind with other sites depending on a set of rules defined in the model. The simulations have units of molecular counts, but these can be readily converted to equivalent concentrations, which is how we present our results.\n\nThe NFsim model file is specified in BioNetGen Language\u00a0(BNGL;\u00a0http://bionetgen.org/). Let\u00a0us take the example of tetravalent binders \u2013 A4 (a1, a2, a3, a4) and B4 (b1, b2, b3, b4). We need 16 binding rules to define all the bimolecular interactions, each having an affinity (Kd) of 350 \u00b5M. Now 1000 molecules of A4 and B4 with an affinity of 3500 molecules would translate to 100 \u00b5M molecular concentrations with 350 \u00b5M binding affinity. There are two equivalent ways to change the molecular concentrations: (1) change the Kd, keeping the molecular counts same, which is mathematically equivalent to changing the volume of the system; (2) change the molecular counts, keeping the Kd same. We utilize both approaches for our simulations and specify which is used in our descriptions of the results. We chose binding rules to only allow inter-molecular binding; we felt this was appropriate because NFsim cannot account for spatial proximity of binding sites or steric crowding within clusters. Once the BNGL file is defined, we then generate the corresponding XML file, which serves as the NFsim input file. We run multiple stochastic simulations in parallel using the high-performance computing facility at UConn Health (https://health.uconn.edu/high-performance-computing/). A single NFsim run (500 ms, FTC approach), containing 1000 A4 and B4 molecules each, took ~1 min with 100 trajectories run in parallel. A Python script is then used to perform statistical analysis across all the trajectories.\n\n### Spatial simulations (SpringSaLaD)\n\nTo account for realistic spatial geometry, we employ SringSaLaD (Michalski and Loew, 2016) \u2013 a particle-based spatial simulation platform where each biomolecule is modeled as a collection of hard spheres connected by stiff spring-like linkers. The simulation algorithms are fully described (Michalski and Loew, 2016), and we previously studied various spatial biophysical factors in the context of multivalent biomolecular cluster formation (Chattaraj et al., 2019) with this software. SpringSaLaD also uses a rule-based method to define binding reactions between multivalent binders.\n\nThe SpringSaLaD model files are generated using the graphical user interface (GUI) of the software (https://vcell.org/ssalad). We define the size of binding sites, distance between the binding sites and the overall shape of the molecule inside the GUI. To build a spatial version of the reference system (A4a and B4b), two linear tetravalent molecules are constructed first, each having four binding sites and six linker sites. Unlike NFsim, in SpringSaLaD, one binding rule between \u2018A_type\u2019 and \u2018B_type\u2019 sites can take care of all the possible binding interactions. Also, we can define the binding affinity in concentration units (350 \u00b5M) directly inside the GUI. We initialize our system in a 3D rectangular geometry; for example, 100 molecules in a 106 nm3 cubic volume (X = Y = Z = 100 nm) would correspond to 166 \u00b5M. We change the volume of our system to alter the molecular concentrations. Once the model is specified, as before, we run multiple stochastic simulations in parallel using our high-performance computing facility. Execution time is very much sensitive to the number of total sites due to the computational overhead of tracking individual site locations. A typical run (50 ms, FTC approach), containing 100 molecules each of A4a and B4b (total sites = 2000), took ~6 hr.\n\n### Data analysis and visualization\n\nPython scripts are used to analyze and visualize the data. All the scripts are written with Spyder IDE (version 4.0.0) (https://www.spyder-ide.org/). Frequently used Python libraries are numpy 1.17.3, pandas 0.25.3,\u00a0and matplotlib 3.1.2. All the packages are managed by anaconda package distributions (https://www.anaconda.com/).\n\nAll the model files, Python scripts, and a \u2018Readme\u2019 description of all the contents are available in a public GitHub repository: https://github.com/achattaraj/Ksp_phase_separation, (copy archived at swh:1:rev:22643ca2ed21b527ccdedbe6a99c2cfc29780df8),\u00a0Chattaraj, 2021\u00a0.\n",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "96459acb-c640-4627-9e71-ecdb2e5792c4",
+      "submission_id": "b1cf43ec-eb40-4eda-b77e-a96b9a8739b8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rohit V Pappu, Washington University in St Louis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67176.sa1](https://doi.org/10.7554/eLife.67176.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThe concept of solubility products will likely be useful as a tool for experimentalists studying the prospect of buffering via condensate formation in systems driven by heterotypic interactions.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Solubility product governs the concentration threshold for formation of biomolecular condensates\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jos\u00e9 Faraldo-G\u00f3mez as the Senior Editor. All reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions (for the authors):\n\n1. Please refocus the title, abstract and scope to highlight the proposal/finding that the solubility product \"rescues\" the concept of buffering even in systems where heterotypic interactions drive phase transitions. The consensus is that the solubility product might be rather useful, if it can be readily calculated, to set expectations regarding thresholding/buffering in systems with heterotypic interactions, i.e., all biomolecular condensates.\n\n2. Please improve the overall scholarship to place the work in the appropriate context. Please note that Choi et al., previously explained why the dilute phase concentrations of specific components need not stay fixed when phase separation is driven by heterotypic interactions. Please see Figure 12 and the accompanying discussion in https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007028.\n\nPlease also note that Deviri and Safran have introduced a physical theory for how buffering can be achieved when phase separation is driven by heterotypic interactions. Please see, please cite, and please include a suitable discussion of:\n\nhttps://www.biorxiv.org/content/10.1101/2021.01.05.425486v1.\n\n3. Please eliminate all remarks about freshman chemistry or high school chemistry.\n\n4. Please provide a mechanistic explanation for the implications of solubility products setting thresholds.\n\n5. The consensus is that the section on the effects of linkers detracts from the focus of the manuscript. A detailed and rigorous treatment of this subject has been published in eLife by Harmon et al.,. We recommend that the revised manuscript exclude all results beyond Figure 7. This, we believe, will sharpen the focus, highlight novel aspects, and avoid overlap with work that has come before.\n\n6. The reviewers have raised specific concerns and weaknesses regarding the solubility product. It is a useful concept that touches base with percolation transitions, but not necessarily with the rigor of concepts underlying phase transitions. Specifically, the connections between solubility products and slopes of tie lines needs to be established. We believe that this is beyond the scope of the current manuscript, but it will be very helpful to discuss this issue in a revised Discussion section. Please also note that formal order parameters are not being used in either simulation paradigm for defining phase separation.\n\n7. Please provide a synthesis to explain how either simulation paradigm and the calculation of solubility products can be used to analyze experimental data. In doing so, please spell out the type of experimental data that will come in handy in testing the hypothesis that the solubility product sets an upper limit in systems with heterotypic interactions, thereby enabling the field to assess where the buffering capacity lies in distinct multicomponent systems.\n\n8. And please consider presenting analyses in terms of amplitudes of fluctuations. These will likely help in paring down the number of panels that one presents for each system.\n\nReviewer #1 (Recommendations for the authors):There, unfortunately, are far too many concerns to be raised with regard to the technical and theoretical aspects of this work. A lot of new jargon terms are introduced without connecting to established terminology. The work on linkers is a minimalist redux of that of Harmon et al. The \"dimer trap\", also explained by Harmon et al., is a redux of the work of Wingreen and colleagues. The unique insight here has to do with the finding / proposal that the solubility product sets an upper limit on the joint concentrations, and hence appears to rescue the concept of buffering in systems with heterotypic interactions. Recent work from Deviri and Safran and from at least one other lab have introduced the concept of heterotypic buffering and provided rigorous thermodynamic descriptions, in the language and formalism of slopes of tie lines, focusing on chemical and mechanical equilibria to explain the full range of buffering capacities realizable as a consequence of the interplay between homotypic and heterotypic interactions. If we remove all the parts of the current manuscript that are best described as redux, then we are left with the solubility product and the rescue of buffering as the novel insight. What is lacking is a rigorous connection to the concepts of phase separation and percolation, achievable only through the calculation of full phase diagrams or at least coexisting curves and the demonstration that the solubility product is invariant along tie lines, and it should be true for all tie lines.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 The resolution of the cluster sizes is quite low for the non-spatial simulations, showing only 4 bins, whereas it is much higher for the spatial ones. Why so low?\n\n\u2013 The movies are helpful in observing the dynamics, but what are the Spring constants?\n\n\u2013 Does Ksp still hold in Figure 5 when the Stoichiometry of components is not 5:3?\n\n\u2013 In Figure 6, what is the fit function to the dots?\n\n\u2013 Do all sites retain excluded volume, even when they are bound to other sites?\n\n\u2013 What rate constants were used? What was the integration time-step? Are the results sensitive to these choices?\n\n\u2013 I think mentioning freshman/high school chemistry once in the paper is enough. The repeated references in the discussion to the age at which we all should have learned this start to sound like a failure of the field. A text book reference could instead emphasize that the concept is old and well established.\n\nReviewer #3 (Recommendations for the authors):The authors claim that the solubility product is a simple yet useful concept to study the phase boundary, but in fact, the solubility product is a specific realization of a much more general concept of the reaction quotient (Q) and the equilibrium constant (K), which is also from freshman chemistry. Hence, their simulation data just show that at low concentrations Q is smaller than K, and after Q reaches K, it remains constant. What is the benefit of using Ksp instead of more general K?\n\nUnfortunately, it seems to me that there are almost no new findings relevant to the field of phase separation biology. Importance of the linker flexibility and the sticker spacing in phase separation have been known for a while, and the valency effect as well. However, the technical advancement (or applications) might be useful to the computational field, so I strongly recommend this paper for publication in a more technical journal for computational work. I don't think that this manuscript meets the eLife criteria.\n",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d4a39d61-21d1-49f2-b31a-51b82d05edde",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C1",
+      "claim": "Biomolecular condensates are formed by liquid-liquid phase separation (LLPS) of multivalent molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomolecular condensates are formed by liquid-liquid phase separation (LLPS) of multivalent molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement in the abstract that is supported by the established scientific literature cited throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "df70b237-1140-44bd-9cf0-0d377df376b7",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C2",
+      "claim": "LLPS from a single (homotypic) constituent is governed by buffering: above a threshold, free monomer concentration is clamped, with all added molecules entering the condensed phase.",
+      "claim_type": "EXPLICIT",
+      "source": "LLPS from a single (\"homotypic\") constituent is governed by buffering: above a threshold, free monomer concentration is clamped, with all added molecules entering the condensed phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction and is a well-established principle in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "60b80ad8-d963-40b1-b896-9532320543df",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C3",
+      "claim": "Buffering fails for the concentration dependence of multicomponent (heterotypic) LLPS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both experiment and theory demonstrate that buffering fails for the concentration dependence of multicomponent (\"heterotypic\") LLPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental and theoretical studies cited in the manuscript, particularly Riback et al., 2020 and Choi et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "eb2bc7af-12dd-4a86-a132-185083284464",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C4",
+      "claim": "The product of free monomer concentrations, accounting for ideal stoichiometries governed by valencies, displays a threshold above which additional monomers are funneled into large clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Using network-free stochastic modeling, we demonstrate that LLPS can be described by the solubility product constant (Ksp): the product of free monomer concentrations, accounting for the ideal stoichiometries governed by the valencies, displays a threshold above which additional monomers are funneled into large clusters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation data presented in the manuscript, particularly Figures 1-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "be003bf1-34a1-45b5-ad58-4ffcdee1b529",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C5",
+      "claim": "The Ksp concept reduces to simple buffering for homotypic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "this reduces to simple buffering for homotypic systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the modeling results and is consistent with established knowledge about homotypic systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "008a6b96-52a1-40f5-9bb0-d1242c1db176",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C6",
+      "claim": "The Ksp regulates the composition of the dilute phase for a wide range of valencies and stoichiometries.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ksp regulates the composition of the dilute phase for a wide range of valencies and stoichiometries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data across multiple scenarios with varying valencies and stoichiometries presented in Figures 3-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "49692046-b0af-4b5f-949f-b94fe92d9e66",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C7",
+      "claim": "Coarse-grained spatial particle simulations support the role of Ksp.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of Ksp is further supported by coarse-grained spatial particle simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the SpringSaLaD simulation results presented in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "aed02454-0e56-4559-8a45-10822eca4573",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C8",
+      "claim": "Biomolecular condensates serve as membraneless compartments where complex biochemistry can be organized and facilitated.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures serve as membraneless compartments where complex biochemistry can be organized and facilitated (Holehouse and Pappu, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Holehouse and Pappu, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "639f0999-866d-4770-8473-e75ec346df0f",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C9",
+      "claim": "T cell receptor-mediated actin nucleation efficacy increases multifold when associated signaling molecules concentrate into a condensate near the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "for example, T cell receptor-mediated actin nucleation efficacy spikes up multifold when all the associated signaling molecules concentrate into a condensate (Su et al., 2016) near the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Su et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "0932f573-e93f-43f1-8fd8-97720ca7f2ed",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C10",
+      "claim": "Biomolecular condensates are implicated in many age-related or neurological diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures are also implicated in many age-related or neurological diseases (Shin and Brangwynne, 2017; Alberti et al., 2019; Mathieu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shin and Brangwynne, 2017; Alberti et al., 2019; Mathieu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "afea6fb1-48d8-4e07-973d-66944ec2c6a9",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C11",
+      "claim": "Clustering of weakly interacting multivalent proteins or nucleic acids is a prerequisite for phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it is firmly established that clustering of weakly interacting multivalent proteins or nucleic acids is a prerequisite for the phase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Li et al., 2012; Shin et al., 2017; Wang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "22f69e2d-3ede-4d6e-9b8c-4a96ffae4191",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C12",
+      "claim": "A sufficiently concentrated solution of a single self-interacting protein with multiple binding sites can partition into protein-dense and dilute phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Even a sufficiently concentrated solution of a single self-interacting protein (homotypic interaction) with multiple binding sites in its sequence can partition into protein-dense and dilute phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by the cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "297bd4ec-1bb4-4955-b5eb-dc2221b9df23",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C13",
+      "claim": "Homotypic phase separation serves as a buffering mechanism for the protein in the dilute phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Such homotypic systems display a strict threshold concentration above which phase separation occurs. This phase separation serves as a buffering mechanism for the protein in the dilute phase (Holehouse and Pappu, 2018; Klosin et al., 2020), which remains at the threshold concentration",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Holehouse and Pappu, 2018; Klosin et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "6a6d417a-8203-4bca-b61a-995ba9196f86",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C14",
+      "claim": "In homotypic systems, as more protein is added, the dense phase droplets grow in size and number, keeping the concentration clamped in the dilute phase.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, as more protein is added to the system, the dense phase droplets grow in size and number, keeping the concentration clamped in the dilute phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about homotypic systems supported by the cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "d09b556e-8655-46d0-abce-a3f2ff852ff4",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C15",
+      "claim": "Dilute phase concentrations of specific components in heterotypic systems need not stay fixed when phase separation is driven by heterotypic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed theoretical analysis of lattice-based simulations explained why the dilute phase concentrations of specific components need not stay fixed when phase separation is driven by heterotypic interactions (Choi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Choi et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "790e4527-7bae-41f9-b1ee-fa8f03c032a3",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C16",
+      "claim": "Concentration thresholds for phase separation in heterotypic systems vary with relative compositions of interacting binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "This was recently followed by a thorough experimental study of the thermodynamics of the liquid-liquid phase transitions in heterotypic systems, showing clearly that concentration thresholds for phase separation no longer remain fixed and vary with relative compositions of interacting binding partners (Riback et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Riback et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "1aa76ddb-40a2-4272-b0f7-59b018f7dfce",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C17",
+      "claim": "A theoretical framework for quantitatively predicting complex varying concentration thresholds in heterotypic systems is lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "But a theoretical framework for quantitatively predicting such complex varying concentration thresholds is still lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in the literature that the current work aims to address.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "78abda74-86a0-4587-9839-ed7068538632",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C18",
+      "claim": "Strong multivalent interactions can produce molecular machines with fixed stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously distinguished between strong multivalent interactions, which can produce molecular machines, and weak multivalent interactions, which can produce what we termed 'pleomorphic ensembles' (Mayer et al., 2009; Falkenberg et al., 2013). The strong binding affinities in molecular machines (e.g., ribosomes, flagella) enforce a specific parts list with a fixed stoichiometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mayer et al., 2009; Falkenberg et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "2e97b13e-a963-4a75-b54e-2f5d4d73cc1c",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C19",
+      "claim": "Pleomorphic ensembles are more plastic in their composition than molecular machines.",
+      "claim_type": "EXPLICIT",
+      "source": "Pleomorphic ensembles (e.g., cytoskeletal polymers and their associated binding proteins, neuronal post-synaptic densities, etc.) are much more plastic in their composition than molecular machines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mayer et al., 2009; Falkenberg et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "23316afa-b012-49f8-a440-c45c0a0762d4",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C20",
+      "claim": "Biomolecular condensates are a subclass of pleomorphic ensembles.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomolecular condensates are a subclass of pleomorphic ensembles in that their molecular components simultaneously coexist within both a distinct phase and as solutes in the surrounding solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual classification based on the properties of biomolecular condensates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "79f19bbe-595e-438b-98da-6d63f4b8bb47",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C21",
+      "claim": "For AgCl, Ksp = 1.7 \u00d7 10\u221210 M2 at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "For AgCl Ksp = 1.7 \u00d7 10\u221210 M2 at 25\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from solution chemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "bfbf906d-b380-4540-a424-92e667f93d73",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C22",
+      "claim": "Adding Cl- in the form of a highly soluble salt into an AgCl solution will cause some AgCl to precipitate to maintain the solubility product at Ksp.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, if we add any Cl- in the form of a highly soluble salt (e.g., KCl) into the solution, some AgCl will precipitate to maintain the solubility product at Ksp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from solution chemistry (common ion effect).",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "579ed274-bfb9-4363-b241-fde078fbe303",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C23",
+      "claim": "For a tetravalent heterotypic pair (A4 and B4) with Kd of 350 \u00b5M, the Ksp is 169 \u00b5M2.",
+      "claim_type": "EXPLICIT",
+      "source": "upon reaching a concentration threshold (total concentration ~120 \u00b5M in this case), SP plateaus to a constant value (169 \u00b5M2). This is the solubility product constant or Ksp for this pair of tetravalent molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from the simulation data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "0a621145-f487-41d3-8129-f7fd15b0fdf8",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C24",
+      "claim": "Below the Ksp threshold, the cluster size distribution is insensitive to the number of molecules at a given total concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "If the system shows no tendency to condense into large clusters, the size distribution will be insensitive to the number of molecules at a given total concentration. Figure 1B shows this to be the case for the 80 \u00b5M total concentration (SP = 154 \u00b5M2 < Ksp).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "c168fde5-ec71-47c4-a6b6-f37cfb678797",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C25",
+      "claim": "Below Ksp, approximately 80% of total molecules are in clusters containing less than 10 molecules, regardless of the number of molecules in the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 80% of the total molecules are in clusters containing less than 10 molecules, no matter how many molecules are available in the system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from the simulation data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "1aa46f77-cd2f-44f4-b8df-c841de3f1a1e",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C26",
+      "claim": "Above the Ksp threshold, the cluster size distribution becomes bimodal and extends to larger clusters as more molecules are added.",
+      "claim_type": "EXPLICIT",
+      "source": "The histogram does change shape, extending the tail to larger clusters eventually to become a bimodal distribution as we feed more molecules into the system (i.e., as we increase the volume).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "fc930e76-9907-467d-828b-992682b0bb77",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C27",
+      "claim": "With 1600 molecules at 160 \u00b5M total concentration (above Ksp), more than 20% of total molecules are in clusters larger than 100 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "With 1600 molecules in the system, more than 20% of the total molecules are in clusters larger than 100 molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from the simulation data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "21d249de-ac01-4838-b188-885d9fa7146a",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C28",
+      "claim": "Individual trajectories above Ksp show almost all molecules in one huge cluster along with small oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "examination of individual histograms in Figure 1\u2014figure supplement 3 (note the logarithmic scale on the abscissa) shows almost all of them individually containing just one huge cluster along with small oligomers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the individual trajectory data in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "270e7954-cb06-456a-8123-4ddd507b655b",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C29",
+      "claim": "A constant solubility product (Ksp) is a quantitative indicator to mark the threshold that underlies biomolecular condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that this tendency to form increasingly larger clusters with more available molecules is a hallmark of phase separation behavior, as previously established (Chattaraj et al., 2019), and that a constant solubility product (Ksp) is a quantitative indicator to mark the threshold that underlies biomolecular condensates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central hypothesis of the paper, supported by the simulation data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "a3d9ec7d-2484-4433-b321-315df2b18cec",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C30",
+      "claim": "Below the threshold where SP has not reached Ksp, the system exists as a single phase with low tendency to form large clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Below a threshold total concentration, when SP has not reached the constant level of Ksp, the tendency to form large clusters is low and the system would exist as a single phase (e.g., Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "016378e7-2fae-40ca-93cc-9dac384e0386",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C31",
+      "claim": "Above the threshold where SP converges to Ksp, the system forms very large clusters yielding two different phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Above the threshold where SP converges to the Ksp, the system tends to form very large clusters, yielding two different phases, manifest as bimodal cluster size histograms (Figure 1C, Figure 1\u2014figure supplement 2B, and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 1C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "561176f9-11a2-4a78-b733-cf7d0d51f940",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C32",
+      "claim": "For CMC at 12.9 \u00b5M (SP = 166.4 \u00b5M2, below Ksp), total molecular concentrations converge to a steady state of approximately 56 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "For CMC_A4 = CMC_B4 = 12.9 \u00b5M (SP = 166.4 \u00b5M2, below Ksp), total molecular concentrations rise up initially and then converge to a steady state (~56 \u00b5M) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the CMC simulation data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "2904bffe-656b-4d63-914d-e5a8af291718",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C33",
+      "claim": "At CMC = 13 \u00b5M (SP = 169 \u00b5M2 = Ksp), the total concentrations never reach a steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, going to CMC = 13 \u00b5M (SP = 169 \u00b5M2 = Ksp), the total concentrations never reach a steady state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the CMC simulation data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "d76f932d-8ad5-44b3-acfb-3248881014c5",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C34",
+      "claim": "At CMC = 13 \u00b5M (at Ksp), the system shows large fluctuations and variable lag times before irreversible growth.",
+      "claim_type": "EXPLICIT",
+      "source": "When we look at the individual trajectories (Figure 2C and Figure 2\u2014figure supplements 1\u20133), the system shows large fluctuations and variable lag times before irreversible growth near the phase boundary (Figure 2C, CMC = 13 \u00b5M)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the individual trajectory data in Figure 2C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "4d6ac8e6-364a-4d40-8ac5-85c09690898a",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C35",
+      "claim": "The behavior at Ksp represents stochastic nucleation of clusters containing enough crosslinking that disassembly becomes unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavior at Ksp represents stochastic nucleation of clusters containing enough crosslinking that disassembly becomes unlikely; such larger clusters are sufficiently stable only at or above Ksp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation data showing stochastic behavior at Ksp.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "a0339e7f-6795-4bb0-a8f7-658ffed1b85e",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C36",
+      "claim": "Below the phase boundary, clamping monomer concentrations to values from the FTC method recovers the same steady-state total molecular concentrations in the CMC method.",
+      "claim_type": "EXPLICIT",
+      "source": "Below the phase boundary, if we clamp the monomer concentrations to the value of free concentrations obtained from the FTC method, we recover the same steady-state total molecular concentrations (top six panels in Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the comparison data in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "93977a25-1f16-49fd-988e-d71eda5ec4cb",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C37",
+      "claim": "Above Ksp, the CMC total concentration increases with time rather than leveling off to a steady value.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at even slightly above the Ksp, the CMC total concentration increases with time, rather than leveling off to a higher steady value (bottom panels in Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the comparison data in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "ae775659-8839-40ea-a847-cce445d2e8a6",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C38",
+      "claim": "For SP < Ksp, systems with varying individual CMCs converge to stable steady states regardless of individual monomer concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Satisfyingly, we find that for SP < Ksp (Figure 3B), the systems converge to stable steady states (no phase transition)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "f5df0b8e-60f8-4c43-a13d-48af32406e85",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C39",
+      "claim": "For SP > Ksp, systems always show unbounded growth (phase transition) irrespective of individual clamped concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "but for SP > Ksp (Figure 3A), irrespective of individual clamped concentrations, systems always show unbounded growth (phase transition).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "9763019c-dda2-436b-9f43-4ac88cf850bd",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C40",
+      "claim": "When A4 and B4 are titrated at a 3:2 ratio, the free monomer concentration of the lower abundant component (B4) gets exhausted disproportionately as the threshold is approached.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in this computational experiment the free monomer concentration of the lower abundant component (B4) gets exhausted disproportionately as the threshold is approached, so that SP cannot quite reach Ksp (169 \u00b5M2) and actually begins to diminish somewhat at still higher FTC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "2b0b850e-12f4-48e8-b389-a5f923378905",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C41",
+      "claim": "Even when monomer supply becomes depleted, the Ksp still serves as an upper limit for free monomer concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, even when monomer supply becomes depleted, the Ksp still serves as an upper limit for free monomer concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "885c4f0c-fdd3-4b4e-8b11-885cfe366b87",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C42",
+      "claim": "Increasing valency increases the propensity for phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing valency is known to increase the propensity for phase separation (Holehouse and Pappu, 2018; Mathieu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Holehouse and Pappu, 2018; Mathieu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "a57570cc-cd94-4e7e-b8ce-5eecae625ec1",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C43",
+      "claim": "The total concentration needed to reach Ksp decreases with higher valency.",
+      "claim_type": "EXPLICIT",
+      "source": "The total concentration needed to reach the Ksp goes down with higher valency, consistent with experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "9f1b37de-e212-4bdb-ab4e-5b5519851c4b",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C44",
+      "claim": "Going from a 3v,3v pair to a 4v,4v pair, Ksp changes over fivefold (852 \u00b5M2 to 169 \u00b5M2).",
+      "claim_type": "EXPLICIT",
+      "source": "Going from 3v,3v pair to 4v,4v pair, Ksp changes over fivefold (852 \u00b5M2 to 169 \u00b5M2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from the simulation data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "bfc93c2d-91e4-47b4-a13b-08304dd83798",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C45",
+      "claim": "Going from a 4v,4v pair to a 5v,5v pair, Ksp changes approximately threefold (169 \u00b5M2 to 55 \u00b5M2).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas approximately threefold change (169 \u00b5M2 to 55 \u00b5M2) can be observed for transitioning into 5v,5v pair from 4v,4v.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from the simulation data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "6c836a80-bbc0-401a-9b0a-c18305e42d9d",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C46",
+      "claim": "For a mixed-valent A5-B3 system at 3A5:5B3 stoichiometry, the free monomer concentration of B3 goes up steadily while free A5 goes up first and then starts to go down.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintaining this concentration ratio, as we titrate up the total concentrations, we see an interesting pattern (Figure 5A, inset): the free monomer concentration of B3, which is present in excess, goes up steadily; but the free A5 goes up first and then starts to go down.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 5A inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "4087b6ca-365d-4004-a4c6-049c7b6846ef",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C47",
+      "claim": "For the A5-B3 mixed-valent system, the simple product of free monomer concentrations does not plateau to a constant Ksp.",
+      "claim_type": "EXPLICIT",
+      "source": "When we take the product of free monomer concentrations (Figure 5\u2014figure supplement 1), we do not see an SP profile that plateaus to a constant Ksp (as in Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "f4c39290-0bf6-450d-a4a5-23847949f2ae",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C48",
+      "claim": "For the A5-B3 system, when SP is corrected by ideal stoichiometry as SP = (free A5)3(free B3)5, the SP profile plateaus to a fixed Ksp beyond the total concentration threshold of ~128 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we correct the SP expression by taking the ideal stoichiometry into account, SP = (free A5)3(free B3)5, we get an SP profile that does plateau to a fixed Ksp beyond the total concentration threshold of ~128 \u03bcM (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "e92e8390-377f-4aa8-ac6a-25ce63cae0bb",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C49",
+      "claim": "For the A5-B3 mixed-valent system, the free monomer concentrations do not display buffering above the threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the free monomer concentrations do not display buffering above this threshold (Figure 5A, inset), with the concentration of the pentavalent monomer actually decreasing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 5A inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "2b47deca-e732-4739-b5c3-d13c3bac6ab0",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C50",
+      "claim": "The Ksp analogy between ionic solution chemistry and biomolecular condensates holds for complex stoichiometries.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Ksp analogy between ionic solution chemistry and biomolecular condensates seems to hold for even these more complex stoichiometries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results for mixed-valent systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "9fa5290d-8055-42ab-b642-a1f14257b9d2",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C51",
+      "claim": "Simple multivalent binding simulations can reproduce experimental titration patterns showing that components of heterotypic biomolecular condensates are not effectively buffered in the dilute phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation results in Figure 6 show that our simple multivalent binding system is able to reproduce these experimental titration patterns",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing simulation data in Figure 6 with experimental data from Riback et al., 2020.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "0d184aca-3357-454e-ac1f-65adcd829993",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C52",
+      "claim": "Despite failure of simple buffering in heterotypic systems, concentrations of individual components in the dilute phase are still constrained by Ksp.",
+      "claim_type": "EXPLICIT",
+      "source": "importantly, it also further demonstrates, despite this failure of simple buffering, that the concentrations of individual components in the dilute phase are still constrained by Ksp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "4e444fc6-1c87-447b-b61b-fb8b7699a42c",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C53",
+      "claim": "For the ternary A3-B1,3-C6 system, the Ksp is approximately 1012 \u00b5M11.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these titrations plateau to the same value of Ksp of ~1012 \u00b5M11",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from the simulation data in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "0b0e7d39-e8f3-40d8-a9eb-811c50261329",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C54",
+      "claim": "For the ternary system, individual monomer concentrations continue to change dramatically even after the Ksp is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6\u2014figure supplement 3A also shows how the individual monomer concentrations (insets) continue to change dramatically even after the Ksp is reached.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation data in Figure 6\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "88f6011f-2db8-407a-bb7f-a637dc7469ab",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C55",
+      "claim": "For the spatial tetravalent A4a-B4b system, the SP converges to a constant value (Ksp = 318 \u00b5M2) at a threshold FTC of approximately 138 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "The SP converges to a constant value (Ksp = 318 \u00b5M2) at a threshold FTC (~138 \u00b5M in this case).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the SpringSaLaD simulation data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "c6cc8aba-42fd-4527-85a7-3164c26fbbbf",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C56",
+      "claim": "In spatial simulations of the A4a-B4b system, the dimer emerges as a preferred configuration both below and above Ksp.",
+      "claim_type": "EXPLICIT",
+      "source": "When we look at the detailed cluster size distributions at steady state (Figure 7\u2014figure supplement 1A), the dimer emerges as a preferred configuration both below and above the Ksp.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the SpringSaLaD simulation data in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "467fe5e6-eb7c-4f13-879f-68dbd2f3f4ed",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C57",
+      "claim": "The dimer preference in spatial simulations arises from the matching valency and spatial arrangement of binding sites, an effect termed 'dimer trap' that cannot be realized in non-spatial methods.",
+      "claim_type": "EXPLICIT",
+      "source": "This dimer preference arises from the matching valency and spatial arrangement of the binding sites in the two partner molecules; such an effect, which we term a 'dimer trap,' cannot be realized in non-spatial methods, such as NFsim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the spatial simulation results explaining the difference from non-spatial simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "44c08854-f829-4fe6-bab1-91416dc17c11",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C58",
+      "claim": "In spatial simulations above Ksp, most individual trajectories produce discontinuous distributions with small oligomers along with one or two very large clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Above Ksp, however, most of the individual trajectories, much like NFsim, produce discontinuous distributions with small oligomers along with one or two very larger clusters (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the SpringSaLaD simulation data in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "fcacd4fd-f2df-40a5-a52b-1978d1c090e3",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C59",
+      "claim": "For spatial simulations with CMC below Ksp (16.7 \u00b5M), total concentrations converge to a steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "Below that boundary (CMC = 16.7 \u00b5M), total concentrations converge to a steady state (Figure 7C, top panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the SpringSaLaD CMC simulation data in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "3696bc7f-fced-456d-8b2d-99c12667521a",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C60",
+      "claim": "For spatial simulations with CMC at or above Ksp (17.85 \u00b5M or 18 \u00b5M), the total concentration of molecules keeps increasing with time.",
+      "claim_type": "EXPLICIT",
+      "source": "at (CMC = 17.85 \u00b5M) or above the boundary (CMC = 18 \u00b5M), the total concentration of molecules keeps on going up with time (Figure 7C, second and third panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the SpringSaLaD CMC simulation data in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "ec52592c-7a74-4748-9916-68b699be1747",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C61",
+      "claim": "Stochastic fluctuations are somewhat greater in spatial simulations than in non-spatial scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "As quantified by the error bars (Figure 7C, second and third panels), stochastic fluctuations are somewhat greater in spatial simulations than the non-spatial scenario.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing error bars in spatial vs. non-spatial simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "d462859e-e8a9-4110-b2f9-32efc76f309d",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C62",
+      "claim": "Higher variability in spatial simulations is expected due to a larger number of contributing factors like steric crowding and optimal geometric conformations of binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This stochasticity can be attributed to the variable lag before the nucleation of a sufficiently large cluster for irreversible and accelerating growth; higher variability in spatial simulations is expected due to a larger number of contributing factors like steric crowding and optimal geometric conformations of binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation explaining the observed differences between spatial and non-spatial simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "a6c6d06a-a964-4617-aa67-94ff4b3d5fe9",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C63",
+      "claim": "The Ksp concept remains valid for the spatial system shown in Figure 7A.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Ksp concept remains valid for the spatial system shown in Figure 7A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the SpringSaLaD simulation results in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "50136869-8f13-41d0-b820-403d8dc5581b",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C64",
+      "claim": "For most scenarios, the Ksp defines a threshold for unbounded growth of large clusters and a quantitative metric for the tendency of a system to phase separate.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for most scenarios, if not all, the Ksp does define a threshold for the unbounded growth of large clusters and a quantitative metric for the tendency of a system to phase separate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "248895c1-a2f0-44a2-a7c4-25fd883f6ab3",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C65",
+      "claim": "Experimental systems may introduce additional levels of complexity such as nonspecific low-affinity binding interactions and long-range electrostatic forces.",
+      "claim_type": "EXPLICIT",
+      "source": "But it is important to appreciate that experimental systems may introduce additional levels of complexity, such as nonspecific low-affinity binding interactions and long-range electrostatic forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat acknowledging limitations of the simplified models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "06bc2618-f2e8-4bd8-bac1-ae56c08b168f",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C66",
+      "claim": "For real biomolecular condensates, the valency and stoichiometry of components may be unknown, and they may have multiple binding interactions of differing affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "For real biomolecular condensates, the valency and stoichiometry of the components may be unknown, and they may have multiple binding interaction of differing affinities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges the complexity of real biological systems compared to the simplified models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "c8012b4e-7b82-4090-a0c0-be28c5c8e953",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C67",
+      "claim": "It should be possible to measure Ksp experimentally using fluorescently labeled binding partners and determining their concentrations in dilute and condensed phases via quantitative confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be possible to measure Ksp experimentally using fluorescently labeled binding partners and determining their concentrations in the dilute and condensed phase via quantitative confocal microscopy (Fink et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed experimental approach supported by citation to Fink et al., 1998.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "dde2144d-a151-4a4d-99ce-4dbfb7f56f89",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C68",
+      "claim": "Titration experiments can readily be performed in vitro and have been among the earliest studies of biomolecular condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "Titration experiments can readily be performed in vitro and have been among the earliest studies of biomolecular condensates (Li et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Li et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "3bf725f0-587a-489b-a659-2200fb6e1b65",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C69",
+      "claim": "Methods have been developed to perform titrations in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, methods have been developed to perform titrations in cells (Riback et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Riback et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "aca40fd6-7a9f-4fc3-be70-53fd8d96502b",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C70",
+      "claim": "Experimental data on Ksp could provide an indication of the effective valency of interactions in complex multivalent biomolecular condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond validation, enough such data may make it possible to find optimal fits to a Ksp expression, providing an indication of the effective valency of the interactions in complex multivalent biomolecular condensates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of the Ksp concept to experimental data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "fb382a76-7954-4a53-b8fe-154c092ef850",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C71",
+      "claim": "NFsim is a non-spatial rule-based stochastic simulation framework where each biomolecule represents a molecular object that may have multiple binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "To develop models that probe for the effects of valency and concentrations but do not account for spatial effects, we employ the NFsim (Sneddon et al., 2011) \u2013 a non-spatial rule-based stochastic simulation framework where each biomolecule represents a molecular object that may have multiple binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used, supported by citation to Sneddon et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "f3e8aa7f-727b-4f35-8c02-397a8615194d",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C72",
+      "claim": "SpringSaLaD is a particle-based spatial simulation platform where each biomolecule is modeled as a collection of hard spheres connected by stiff spring-like linkers.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for realistic spatial geometry, we employ SringSaLaD (Michalski and Loew, 2016) \u2013 a particle-based spatial simulation platform where each biomolecule is modeled as a collection of hard spheres connected by stiff spring-like linkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used, supported by citation to Michalski and Loew, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "8e23c73c-7d2b-48ba-a9d1-093d9b5d6e51",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C73",
+      "claim": "The percolation boundary is generally considered a proxy for phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "This bifurcation between one large cluster and small oligomers has been used to define a percolation boundary, generally considered a proxy for phase separation (Choi et al., 2019; Choi et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Choi et al., 2019; Choi et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "3bef72de-0b91-40c6-896c-92d59c987585",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C74",
+      "claim": "The percolation boundary and phase separation may not be completely coincident.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use the percolation boundary, the threshold for forming large clusters, as a proxy for phase separation, realizing that they may not be completely coincident (Choi et al., 2020a; Choi et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat supported by citations to Choi et al., 2020a; Choi et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "8ca61669-d6f2-45e5-8ac4-ff5d3424f16a",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C75",
+      "claim": "Buffering of dilute phase concentrations in multicomponent systems has a complex relationship with the interplay of homotypic and heterotypic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent computational (Choi et al., 2019) and theoretical (Deviri and Safran, 2021) studies demonstrated that buffering of dilute phase concentrations in multicomponent systems has a complex relationship with the interplay of homotypic and heterotypic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Choi et al., 2019 and Deviri and Safran, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "c0935dd3-beea-4136-ab9f-e9a86ce3d2f1",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C76",
+      "claim": "For a two-component heterotypic system, the phase diagram has an elliptical region corresponding to coexistence of dilute and condensed phases.",
+      "claim_type": "EXPLICIT",
+      "source": "For a two-component heterotypic system, plotting the total concentrations of one component against the other produces a phase diagram with an elliptical region corresponding to the coexistence of the dilute and condensed phases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "0139f681-2590-4225-9204-ca5c8db7dec5",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C77",
+      "claim": "In two-component systems, dilute and condensed phase concentrations remain constant (buffered) along tie lines approximately parallel to the major axis of the phase diagram ellipse.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the dilute and condensed phase concentrations remain constant (i.e., buffered) along tie lines that are approximately parallel to the major axis of the ellipse",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical work by Deviri and Safran, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "de7be518-1970-4f47-886b-5cd3609b6986",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C78",
+      "claim": "Buffering fails perpendicular to tie lines in the phase diagram.",
+      "claim_type": "EXPLICIT",
+      "source": "buffering fails perpendicular to tie lines (Deviri and Safran, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Deviri and Safran, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "80734e4c-2e07-4968-87f2-2c218b29b6d5",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C79",
+      "claim": "The SP should be approximately constant (Ksp) within the two-phase elliptic region of the phase diagram.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the SP should be approximately constant (Ksp) within the two-phase elliptic region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the Ksp concept applied to phase diagrams.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "187a36b0-84bb-4d20-a1de-06ad5f882cef",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "claim_id": "C80",
+      "claim": "The SP may be used to predict concentrations in the dilute phase even for short traversals perpendicular to tie lines in the phase diagram.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the SP may be used to predict concentrations in the dilute phase even for short traversals perpendicular to tie lines in the phase diagram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of the Ksp concept to phase diagrams.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "04476170-8396-4123-a163-f2b7f3265014",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological and biophysical context for biomolecular condensates, including their formation via LLPS, their functional roles, and the known differences between homotypic and heterotypic systems. Homotypic systems exhibit buffering behavior, while heterotypic systems do not, and a theoretical framework for predicting concentration thresholds in heterotypic systems is lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20 provide well-established background knowledge supported by appropriate citations. These claims accurately describe the current understanding of biomolecular condensates and identify the gap (C17) that motivates the current work. The citations are appropriate and the characterization of prior work appears accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "89a7aee5-3ca4-431b-9ba6-9bc2fd308fee",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript draws an analogy between biomolecular condensates and ionic solution chemistry, specifically the solubility product constant (Ksp) for salts like AgCl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 present established chemistry knowledge correctly. The Ksp value for AgCl and the common ion effect are well-documented principles. This analogy serves as the conceptual foundation for the computational modeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "fdaf100c-6e1c-49bc-94b6-148b20011afa",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For a tetravalent heterotypic pair (A4-B4) with Kd = 350 \u00b5M, the Ksp is 169 \u00b5M\u00b2. Below this threshold, the system exists as a single phase with small clusters; above it, the system forms large clusters yielding two phases with bimodal distributions. The Ksp serves as a quantitative indicator for the phase separation threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C31 are well-supported by the NFsim simulation data in Figure 1 and supplements. The characterization of cluster size distributions below and above Ksp is quantitative and consistent across multiple simulation conditions. The bimodal distribution above Ksp and the insensitivity to system size below Ksp are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "48ccd67d-4e68-4abc-9520-535fb638539d",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using the clamped monomer concentration (CMC) approach, systems below Ksp converge to steady states, while at or above Ksp they show unbounded growth with stochastic nucleation behavior. The CMC and FTC methods yield consistent results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 are supported by Figure 2 and supplements showing CMC simulations. The stochastic behavior at Ksp (C34) and the consistency between FTC and CMC methods (C36-C37) are well-documented. The interpretation of stochastic nucleation (C35) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "352fb69d-7a36-41f6-a1e8-76a2c27de033",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Phase transition depends on whether the solubility product exceeds Ksp, regardless of individual monomer concentrations. Even when monomer supply becomes depleted in unequal stoichiometry, Ksp serves as an upper limit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by Figure 3 showing that the phase transition is determined by SP relative to Ksp, not individual concentrations. The depletion scenario (C40-C41) in Figure 3 supplement 1 demonstrates a limitation but confirms Ksp as an upper bound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "4fb671e1-f48c-4506-91d2-835cf79a86d3",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Higher valency increases phase separation propensity by reducing the Ksp. Going from 3v,3v to 4v,4v reduces Ksp fivefold (852 to 169 \u00b5M\u00b2), and from 4v,4v to 5v,5v reduces it threefold (169 to 55 \u00b5M\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by Figure 4 showing systematic variation of valency. The quantitative Ksp values are clearly measured from simulations. The trend is consistent with established knowledge (C42) and the specific fold-changes are directly quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "7208e162-8f9e-4968-8996-bbd431b95c6c",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For mixed-valent A5-B3 systems, the simple product of free monomer concentrations does not plateau, but when corrected for ideal stoichiometry as SP = (free A5)\u00b3(free B3)\u2075, the Ksp concept holds. Individual monomer concentrations do not display buffering above threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are supported by Figure 5 showing that stoichiometry-corrected Ksp applies to mixed-valent systems. The failure of simple buffering (C49) and the need for stoichiometric correction (C48) are clearly demonstrated. This extends the Ksp concept beyond equal-valency systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "0bb2536e-0547-441a-8aef-ad67a4eb0b86",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Simple multivalent binding simulations reproduce experimental patterns showing lack of buffering in heterotypic systems. For the ternary A3-B1,3-C6 system, despite failure of simple buffering, concentrations are constrained by Ksp \u2248 10\u00b9\u00b2 \u00b5M\u00b9\u00b9, and individual monomer concentrations continue changing after Ksp is reached.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by Figure 6 comparing simulations to experimental data from Riback et al. 2020. The qualitative match to experimental patterns (C51) is evident, and the Ksp constraint (C52-C53) is demonstrated for both titration scenarios. The continued change in individual concentrations (C54) is clearly shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "78329768-ba87-4544-8fbb-780a4c84c215",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spatial simulations using SpringSaLaD confirm the Ksp concept for a tetravalent A4a-B4b system (Ksp = 318 \u00b5M\u00b2). Spatial effects introduce a 'dimer trap' and greater stochastic fluctuations, but the fundamental Ksp threshold behavior is preserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C63 are supported by Figure 7 and supplements showing SpringSaLaD spatial simulations. The Ksp determination (C55), dimer preference (C56-C57), and phase transition behavior (C59-C60) are well-documented. The increased stochasticity (C61-C62) is quantified and reasonably explained. The validation of Ksp in spatial simulations (C63) is a key finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "9d14ad45-4253-4c0b-91f4-807e5cb9ee02",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Ksp defines a threshold for unbounded growth of large clusters and serves as a quantitative metric for phase separation tendency across most scenarios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is the main conclusion, supported by the comprehensive simulation results across multiple systems (Figures 1-7). The qualification 'for most scenarios, if not all' appropriately acknowledges limitations observed in some edge cases (e.g., extreme stoichiometric imbalances).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "ed39740e-2e24-4a64-bfa9-e4e847710caf",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations of their simplified models and propose experimental approaches to measure Ksp and validate the concept in real biological systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 appropriately acknowledge model limitations and propose reasonable experimental validation strategies. The proposed fluorescence microscopy approach (C67) is supported by appropriate citation. These are speculative but well-reasoned proposals for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    },
+    {
+      "id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899",
+      "content_id": "c0093ae6-806a-4013-9255-742ed4d7c1db",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript describes the computational methods (NFsim and SpringSaLaD) and relates the percolation boundary to phase separation, acknowledging they may not be completely coincident. The relationship between Ksp and phase diagrams is discussed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C80 provide methodological details and theoretical context supported by appropriate citations. The caveat about percolation vs. phase separation (C74) is important. The predictions about Ksp in phase diagrams (C79-C80) are reasonable inferences but remain to be validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:48:34.305555Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d4a39d61-21d1-49f2-b31a-51b82d05edde",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "df70b237-1140-44bd-9cf0-0d377df376b7",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "60b80ad8-d963-40b1-b896-9532320543df",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "aed02454-0e56-4559-8a45-10822eca4573",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "639f0999-866d-4770-8473-e75ec346df0f",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "0932f573-e93f-43f1-8fd8-97720ca7f2ed",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "afea6fb1-48d8-4e07-973d-66944ec2c6a9",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "22f69e2d-3ede-4d6e-9b8c-4a96ffae4191",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "297bd4ec-1bb4-4955-b5eb-dc2221b9df23",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "6a6d417a-8203-4bca-b61a-995ba9196f86",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "d09b556e-8655-46d0-abce-a3f2ff852ff4",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "790e4527-7bae-41f9-b1ee-fa8f03c032a3",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "1aa76ddb-40a2-4272-b0f7-59b018f7dfce",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "78abda74-86a0-4587-9839-ed7068538632",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "2e97b13e-a963-4a75-b54e-2f5d4d73cc1c",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "23316afa-b012-49f8-a440-c45c0a0762d4",
+      "result_id": "04476170-8396-4123-a163-f2b7f3265014"
+    },
+    {
+      "claim_id": "79f19bbe-595e-438b-98da-6d63f4b8bb47",
+      "result_id": "89a7aee5-3ca4-431b-9ba6-9bc2fd308fee"
+    },
+    {
+      "claim_id": "bfbf906d-b380-4540-a424-92e667f93d73",
+      "result_id": "89a7aee5-3ca4-431b-9ba6-9bc2fd308fee"
+    },
+    {
+      "claim_id": "579ed274-bfb9-4363-b241-fde078fbe303",
+      "result_id": "fdaf100c-6e1c-49bc-94b6-148b20011afa"
+    },
+    {
+      "claim_id": "0a621145-f487-41d3-8129-f7fd15b0fdf8",
+      "result_id": "fdaf100c-6e1c-49bc-94b6-148b20011afa"
+    },
+    {
+      "claim_id": "c168fde5-ec71-47c4-a6b6-f37cfb678797",
+      "result_id": "fdaf100c-6e1c-49bc-94b6-148b20011afa"
+    },
+    {
+      "claim_id": "1aa46f77-cd2f-44f4-b8df-c841de3f1a1e",
+      "result_id": "fdaf100c-6e1c-49bc-94b6-148b20011afa"
+    },
+    {
+      "claim_id": "fc930e76-9907-467d-828b-992682b0bb77",
+      "result_id": "fdaf100c-6e1c-49bc-94b6-148b20011afa"
+    },
+    {
+      "claim_id": "21d249de-ac01-4838-b188-885d9fa7146a",
+      "result_id": "fdaf100c-6e1c-49bc-94b6-148b20011afa"
+    },
+    {
+      "claim_id": "270e7954-cb06-456a-8123-4ddd507b655b",
+      "result_id": "fdaf100c-6e1c-49bc-94b6-148b20011afa"
+    },
+    {
+      "claim_id": "a3d9ec7d-2484-4433-b321-315df2b18cec",
+      "result_id": "fdaf100c-6e1c-49bc-94b6-148b20011afa"
+    },
+    {
+      "claim_id": "016378e7-2fae-40ca-93cc-9dac384e0386",
+      "result_id": "fdaf100c-6e1c-49bc-94b6-148b20011afa"
+    },
+    {
+      "claim_id": "561176f9-11a2-4a78-b733-cf7d0d51f940",
+      "result_id": "48ccd67d-4e68-4abc-9520-535fb638539d"
+    },
+    {
+      "claim_id": "2904bffe-656b-4d63-914d-e5a8af291718",
+      "result_id": "48ccd67d-4e68-4abc-9520-535fb638539d"
+    },
+    {
+      "claim_id": "d76f932d-8ad5-44b3-acfb-3248881014c5",
+      "result_id": "48ccd67d-4e68-4abc-9520-535fb638539d"
+    },
+    {
+      "claim_id": "4d6ac8e6-364a-4d40-8ac5-85c09690898a",
+      "result_id": "48ccd67d-4e68-4abc-9520-535fb638539d"
+    },
+    {
+      "claim_id": "a0339e7f-6795-4bb0-a8f7-658ffed1b85e",
+      "result_id": "48ccd67d-4e68-4abc-9520-535fb638539d"
+    },
+    {
+      "claim_id": "93977a25-1f16-49fd-988e-d71eda5ec4cb",
+      "result_id": "48ccd67d-4e68-4abc-9520-535fb638539d"
+    },
+    {
+      "claim_id": "ae775659-8839-40ea-a847-cce445d2e8a6",
+      "result_id": "352fb69d-7a36-41f6-a1e8-76a2c27de033"
+    },
+    {
+      "claim_id": "f5df0b8e-60f8-4c43-a13d-48af32406e85",
+      "result_id": "352fb69d-7a36-41f6-a1e8-76a2c27de033"
+    },
+    {
+      "claim_id": "9763019c-dda2-436b-9f43-4ac88cf850bd",
+      "result_id": "352fb69d-7a36-41f6-a1e8-76a2c27de033"
+    },
+    {
+      "claim_id": "2b0b850e-12f4-48e8-b389-a5f923378905",
+      "result_id": "352fb69d-7a36-41f6-a1e8-76a2c27de033"
+    },
+    {
+      "claim_id": "885c4f0c-fdd3-4b4e-8b11-885cfe366b87",
+      "result_id": "4fb671e1-f48c-4506-91d2-835cf79a86d3"
+    },
+    {
+      "claim_id": "a57570cc-cd94-4e7e-b8ce-5eecae625ec1",
+      "result_id": "4fb671e1-f48c-4506-91d2-835cf79a86d3"
+    },
+    {
+      "claim_id": "9f1b37de-e212-4bdb-ab4e-5b5519851c4b",
+      "result_id": "4fb671e1-f48c-4506-91d2-835cf79a86d3"
+    },
+    {
+      "claim_id": "bfc93c2d-91e4-47b4-a13b-08304dd83798",
+      "result_id": "4fb671e1-f48c-4506-91d2-835cf79a86d3"
+    },
+    {
+      "claim_id": "6c836a80-bbc0-401a-9b0a-c18305e42d9d",
+      "result_id": "7208e162-8f9e-4968-8996-bbd431b95c6c"
+    },
+    {
+      "claim_id": "4087b6ca-365d-4004-a4c6-049c7b6846ef",
+      "result_id": "7208e162-8f9e-4968-8996-bbd431b95c6c"
+    },
+    {
+      "claim_id": "f4c39290-0bf6-450d-a4a5-23847949f2ae",
+      "result_id": "7208e162-8f9e-4968-8996-bbd431b95c6c"
+    },
+    {
+      "claim_id": "e92e8390-377f-4aa8-ac6a-25ce63cae0bb",
+      "result_id": "7208e162-8f9e-4968-8996-bbd431b95c6c"
+    },
+    {
+      "claim_id": "2b47deca-e732-4739-b5c3-d13c3bac6ab0",
+      "result_id": "7208e162-8f9e-4968-8996-bbd431b95c6c"
+    },
+    {
+      "claim_id": "9fa5290d-8055-42ab-b642-a1f14257b9d2",
+      "result_id": "0bb2536e-0547-441a-8aef-ad67a4eb0b86"
+    },
+    {
+      "claim_id": "0d184aca-3357-454e-ac1f-65adcd829993",
+      "result_id": "0bb2536e-0547-441a-8aef-ad67a4eb0b86"
+    },
+    {
+      "claim_id": "4e444fc6-1c87-447b-b61b-fb8b7699a42c",
+      "result_id": "0bb2536e-0547-441a-8aef-ad67a4eb0b86"
+    },
+    {
+      "claim_id": "0b0e7d39-e8f3-40d8-a9eb-811c50261329",
+      "result_id": "0bb2536e-0547-441a-8aef-ad67a4eb0b86"
+    },
+    {
+      "claim_id": "88f6011f-2db8-407a-bb7f-a637dc7469ab",
+      "result_id": "78329768-ba87-4544-8fbb-780a4c84c215"
+    },
+    {
+      "claim_id": "c6cc8aba-42fd-4527-85a7-3164c26fbbbf",
+      "result_id": "78329768-ba87-4544-8fbb-780a4c84c215"
+    },
+    {
+      "claim_id": "467fe5e6-eb7c-4f13-879f-68dbd2f3f4ed",
+      "result_id": "78329768-ba87-4544-8fbb-780a4c84c215"
+    },
+    {
+      "claim_id": "44c08854-f829-4fe6-bab1-91416dc17c11",
+      "result_id": "78329768-ba87-4544-8fbb-780a4c84c215"
+    },
+    {
+      "claim_id": "fcacd4fd-f2df-40a5-a52b-1978d1c090e3",
+      "result_id": "78329768-ba87-4544-8fbb-780a4c84c215"
+    },
+    {
+      "claim_id": "3696bc7f-fced-456d-8b2d-99c12667521a",
+      "result_id": "78329768-ba87-4544-8fbb-780a4c84c215"
+    },
+    {
+      "claim_id": "ec52592c-7a74-4748-9916-68b699be1747",
+      "result_id": "78329768-ba87-4544-8fbb-780a4c84c215"
+    },
+    {
+      "claim_id": "d462859e-e8a9-4110-b2f9-32efc76f309d",
+      "result_id": "78329768-ba87-4544-8fbb-780a4c84c215"
+    },
+    {
+      "claim_id": "a6c6d06a-a964-4617-aa67-94ff4b3d5fe9",
+      "result_id": "78329768-ba87-4544-8fbb-780a4c84c215"
+    },
+    {
+      "claim_id": "50136869-8f13-41d0-b820-403d8dc5581b",
+      "result_id": "9d14ad45-4253-4c0b-91f4-807e5cb9ee02"
+    },
+    {
+      "claim_id": "248895c1-a2f0-44a2-a7c4-25fd883f6ab3",
+      "result_id": "ed39740e-2e24-4a64-bfa9-e4e847710caf"
+    },
+    {
+      "claim_id": "06bc2618-f2e8-4bd8-bac1-ae56c08b168f",
+      "result_id": "ed39740e-2e24-4a64-bfa9-e4e847710caf"
+    },
+    {
+      "claim_id": "c8012b4e-7b82-4090-a0c0-be28c5c8e953",
+      "result_id": "ed39740e-2e24-4a64-bfa9-e4e847710caf"
+    },
+    {
+      "claim_id": "dde2144d-a151-4a4d-99ce-4dbfb7f56f89",
+      "result_id": "ed39740e-2e24-4a64-bfa9-e4e847710caf"
+    },
+    {
+      "claim_id": "3bf725f0-587a-489b-a659-2200fb6e1b65",
+      "result_id": "ed39740e-2e24-4a64-bfa9-e4e847710caf"
+    },
+    {
+      "claim_id": "aca40fd6-7a9f-4fc3-be70-53fd8d96502b",
+      "result_id": "ed39740e-2e24-4a64-bfa9-e4e847710caf"
+    },
+    {
+      "claim_id": "fb382a76-7954-4a53-b8fe-154c092ef850",
+      "result_id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899"
+    },
+    {
+      "claim_id": "f3e8aa7f-727b-4f35-8c02-397a8615194d",
+      "result_id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899"
+    },
+    {
+      "claim_id": "8e23c73c-7d2b-48ba-a9d1-093d9b5d6e51",
+      "result_id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899"
+    },
+    {
+      "claim_id": "3bef72de-0b91-40c6-896c-92d59c987585",
+      "result_id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899"
+    },
+    {
+      "claim_id": "8ca61669-d6f2-45e5-8ac4-ff5d3424f16a",
+      "result_id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899"
+    },
+    {
+      "claim_id": "c0935dd3-beea-4136-ab9f-e9a86ce3d2f1",
+      "result_id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899"
+    },
+    {
+      "claim_id": "0139f681-2590-4225-9204-ca5c8db7dec5",
+      "result_id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899"
+    },
+    {
+      "claim_id": "de7be518-1970-4f47-886b-5cd3609b6986",
+      "result_id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899"
+    },
+    {
+      "claim_id": "80734e4c-2e07-4968-87f2-2c218b29b6d5",
+      "result_id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899"
+    },
+    {
+      "claim_id": "187a36b0-84bb-4d20-a1de-06ad5f882cef",
+      "result_id": "8ab37156-8b60-4b72-a5c4-4b5f72eec899"
+    }
+  ],
+  "comparisons": []
+}

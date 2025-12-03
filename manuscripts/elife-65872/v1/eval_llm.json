@@ -1,0 +1,442 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C54"
+    ],
+    "result": "MLL fusion proteins associate with the HBO1 histone acetyltransferase complex through the THD2 domain. Mass spectrometry identified HBO1 complex components (HBO1, PHF16, MEAF6, ING5) in purified THD2-containing proteins. IP-WB confirmed that MTMT fusion proteins (containing THD2) associated with HBO1 and PHF16, while MTM proteins (lacking THD2) did not. Domain mapping showed residues 869/1124 of MLL contain major HBO1 binding domains, and this interaction is not DNA-mediated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C43-C48, and C54 provide converging evidence from multiple experimental approaches (mass spectrometry, IP-WB, domain mapping, DNase treatment) demonstrating THD2-mediated MLL-HBO1 interaction. The data are internally consistent and supported by appropriate controls (MTM vs MTMT constructs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The MLL-HBO1 complex association is mediated through multiple contacts involving primarily PHF16 and ING4/5 subunits in a chromatin-bound context requiring H3K4me3 marks. Individual HBO1 components showed weak binding to MLL, but strong association occurred when all components were co-expressed. Omission experiments identified PHF16 and ING5 as most influential. Point mutations in the ING5 PHD finger that binds H3K4me3 abolished MLL-HBO1 association, which could be rescued by ING4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C149-C158 are supported by systematic IP-WB experiments testing individual and combined HBO1 components, plus mutational analysis of ING5. The requirement for H3K4me3 marks is demonstrated through PHD finger mutations. The experimental design appropriately tests the hypothesis through component omission and rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C41",
+      "C42"
+    ],
+    "result": "Among MLL fusions tested, MLL-ELL shows the strongest dependency on THD2 for leukemic transformation. MLL-ELL transformed HPCs with vigorous colony-forming capacity and elevated Hoxa9 expression, but deletion of THD2 completely abolished transformation. Inclusion of THD2 in minimalistic MTM-ELL constructs (MTMT-ELL) restored transformation capacity, while MTM-ELL without THD2 failed to transform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C29, C41-C42 are supported by transformation assays showing complete loss of function with THD2 deletion and gain of function with THD2 inclusion. The comparison across multiple MLL fusions (C41) provides context showing MLL-ELL's unique dependency. Data include both Hoxa9 expression and colony-forming assays across multiple passages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Other MLL fusions (MLL-AF6, MLL-AF10, MLL-ENL) show varying degrees of THD2 dependency for transformation. MLL-AF6 and MLL-AF10 require THD2 for full transforming potential, with deletion reducing but not completely abolishing transformation. MLL-ENL transformation is less affected by THD2 loss in terms of colony-forming capacity, though THD2 is required to block differentiation. In vivo leukemogenesis was compromised by THD2 deletion for all three fusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C40 are supported by transformation assays and in vivo experiments showing differential THD2 requirements. The data demonstrate a spectrum of dependency from strong (MLL-ELL) to moderate (MLL-AF6, MLL-AF10) to weak (MLL-ENL). Colony morphology analysis (C38) provides additional functional evidence. In vivo data (C40) confirm ex vivo findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Endogenous MLL proteins interact with HBO1 in leukemia cell lines, and HBO1 is required for proliferation of MLL fusion-transformed cells. Interaction between endogenous MLL and HBO1 was confirmed in HB1119 and REH cell lines. ChIP-seq showed HBO1 complex components colocalize with MLL-ENL at target genes genome-wide. CRISPR/Cas9 sgRNA competition assays demonstrated that Kat7/KAT7 is required for proliferation of various MLL fusion-ICs and human leukemia cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by IP experiments in endogenous cell lines, genome-wide ChIP-seq data, and functional sgRNA competition assays. The convergence of interaction data (C50), genomic colocalization (C51), and functional requirement (C52) provides strong evidence for the biological relevance of the MLL-HBO1 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C62",
+      "C63",
+      "C68",
+      "C69"
+    ],
+    "result": "MLL recruits HBO1, AEP, and SL1 complexes to target promoters via H3K4 methylation. ChIP-seq in HEK293T cells showed MLL localizes at TSSs of CpG-rich genes, with HBO1 complex enriched at promoter-proximal transcribed regions. MLL ChIP signals correlated highly with HBO1, MOZ, and RNAP2 non-P. Depletion of MLL reduced expression of MYC and CDKN2C and caused marked reduction in ChIP signals for HBO1 complex components (PHF16, MEAF6) and AEP/SL1 components (ENL, CCNT1, AF4, TAF1C) at these loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C60, C62-C63, C68-C69 are supported by genome-wide ChIP-seq data and MLL knockout experiments. The correlation analysis (C60) and knockout experiments (C62-C63, C68) provide complementary evidence. However, the claim that recruitment is \"via H3K4 methylation\" (C69) is somewhat inferential, as direct measurement of H3K4me3 changes is mentioned but the causal link could be more directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C71",
+      "C72",
+      "C73",
+      "C79"
+    ],
+    "result": "The C-terminal OHD of ELL provides a binding platform for AF4 and EAF1, and is required for MLL-ELL transformation. Transformation assays showed intact OHD is required for transformation. ChIP-qPCR confirmed OHD is responsible for recruitment of both AF4 and EAF1. Deletion of OHD resulted in loss of interaction with both AF4 and EAF1 family proteins, correlating with loss of transforming properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C71-C73, C79 are supported by transformation assays, ChIP-qPCR, and IP-WB experiments. The correlation between OHD deletion, loss of AF4/EAF1 binding, and loss of transformation provides strong evidence. Multiple experimental approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ELL-AF4 and ELL-EAF1 interactions occur sequentially but not simultaneously, with ELL-AF4 interaction preceding ELL-EAF1 interaction. Co-expression experiments showed that ELL-AF4 interaction was attenuated by EAF1 co-expression, whereas ELL-EAF1 interaction was augmented by AF4 co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by co-expression IP experiments showing reciprocal effects. However, the inference of sequential binding (C78) is based on competition data rather than direct temporal measurements. Alternative explanations (e.g., conformational changes, allosteric effects) are not fully excluded. The data support the conclusion but additional kinetic or structural studies would strengthen it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C95"
+    ],
+    "result": "EAF1 and AF4 both associate with SL1 and MED26 through their C-terminal domains containing SDE and DLXLS motifs, but ELL-bound EAF1/AF4 cannot interact with SL1/MED26 and must dissociate from ELL. ELL forms two different stable complexes: one with AF4 family proteins leading to AEP/SL1/MED26 complex formation, and another as an EAF1/ELL homodimer complex leading to EAF1/SL1/MED26 complex formation. The AF4/ELL/EAF1 trimer complex is unstable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88, C95 are supported by IP-WB and ChIP-qPCR experiments showing differential recruitment patterns. The inability of GAL4-ELL to recruit SL1/MED26 (C84) while EAF1-C can (C82-C83) supports the dissociation model. The failure to detect stable trimeric complexes (C86-C87) supports mutual exclusivity. However, the model is somewhat inferential and could benefit from additional structural or kinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C110"
+    ],
+    "result": "MLL-ELL transforms HPCs through recruitment of AEP complex, while MLL-EAF1 transforms via EHD-mediated homodimerization. MTM-AF4 constructs with SDE and NKW motifs transformed HPCs, while those lacking NKW failed. MTM-EAF1-C (lacking NKW) failed to transform, but MTMT-EAF1 constructs with EHD fully transformed HPCs, suggesting homodimerization-mediated transformation similar to MLL-AF6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105, C107, C110 are supported by systematic structure-function analysis using artificial fusion constructs. The requirement for NKW motif in AF4-mediated transformation (C101-C102) versus EHD-mediated transformation by EAF1 (C105) provides clear mechanistic distinction. The comparison to MLL-AF6 homodimerization (C106-C107) strengthens the interpretation. However, C110 is somewhat speculative as it represents a conclusion rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C126",
+      "C129"
+    ],
+    "result": "MLL-ELL transforms HPCs via interaction with AF4 family proteins, which is promoted by HBO1 but hindered by EAF1 and p53. The S600A/K606T (SA/KT) mutation severely attenuated ELL-AF4 interaction and completely abolished ELL-EAF1 and ELL-p53 interactions, but retained some AF4 binding through a secondary contact. The SA/KT mutant remained competent for AEP loading and transformation. Remarkably, MTMh-ELL SA/KT (lacking THD2) could immortalize HPCs, suggesting the SA/KT mutation partially compensates for loss of HBO1 interaction. THD2 presence enhanced AF4/ENL association in the SA/KT mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C123, C126, C129 are supported by extensive IP-WB, ChIP-qPCR, transformation assays, and in vivo leukemogenesis experiments. The SA/KT mutation provides a powerful tool to dissect ELL interactions. The ability of SA/KT to maintain transformation (C119, C122) while abolishing EAF1/p53 binding (C112, C117) supports the conclusion that AF4 interaction is critical. The partial rescue of THD2 deletion by SA/KT (C120-C121) is particularly interesting but somewhat surprising and could benefit from additional mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "AEP loading factor-type MLL fusions (MLL-ELL, MLL-AF10, MLL-AF6) show susceptibility to ENL knockdown and strong THD2 dependency, suggesting HBO1 complex promotes AEP loading onto target chromatin. Knockdown of Mllt1 (ENL) in MLL-ELL-ICs perturbed colony formation and Hoxa9 expression, while effects on MLL-ENL-ICs were limited. All presumed AEP loading factor-type MLL fusions showed susceptibility to Mllt1 knockdown and exhibited relatively strong THD2 dependency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109, C163-C165 are supported by knockdown experiments and comparison of THD2 requirements across MLL fusions. The differential sensitivity to ENL knockdown between MLL-ELL (loading factor) and MLL-ENL (nucleating factor) provides functional validation of the classification. However, the mechanistic link between HBO1 and AEP loading (C165) is somewhat inferential, based on correlation of THD2 dependency with ENL requirement rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C131",
+      "C135",
+      "C136",
+      "C137",
+      "C141",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C175"
+    ],
+    "result": "NUP98-HBO1 transforms HPCs via interaction with MLL but not through its intrinsic HAT activity. NUP98-HBO1 transformed HPCs with high Hoxa9 expression. Artificial NUP98 fusions with HBO1 complex components (NUP98-MENIN, NUP98-MEAF6, NUP98-ING5) also transformed HPCs and associated with MLL. NUP98-HBO1-ICs depended on MLL for proliferation but were only mildly sensitive to MENIN-MLL inhibitor. The HAT-dead E508Q mutant retained transforming ability and MLL binding, and WM1119 HAT inhibitor did not induce complete differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131, C135-C137, C141, C143-C148, C175 are supported by transformation assays, IP experiments, sgRNA competition assays, and pharmacological inhibitor studies. The separation of HAT activity from transforming ability (C145-C148) is well-demonstrated through multiple approaches (mutation, inhibitor treatment). The requirement for MLL (C141) combined with mild MENIN inhibitor sensitivity (C143-C144) suggests MENIN-independent MLL recruitment. However, the mechanism of MENIN-independent recruitment could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "EAF1 has marginal inhibitory effect while p53 has inhibitory role in MLL-ELL-mediated transformation. sgRNA competition assays showed loss of Eaf1 had marginal inhibitory effect on MLL-ELL-IC proliferation ex vivo, while loss of Trp53 accelerated proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are supported by sgRNA competition assays. However, the interpretation that EAF1 is \"non-essential\" and p53 is \"inhibitory\" (from source text) goes somewhat beyond the data shown, which demonstrate marginal and accelerating effects respectively. The functional significance of these effects for transformation is not fully established. Additional experiments (e.g., in vivo validation) would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "MLL-ELL leukemia cells are particularly sensitive to WM1119 MYST HAT inhibitor, suggesting HBO1-mediated protein acetylation may enhance ELL-AF4 association. Leukemia cells of MLL-ELL showed greater sensitivity to WM1119 compared to other MLL fusion-leukemia cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 is supported by experimental data showing differential sensitivity to WM1119. However, claim C128 is highly speculative. The inference that HBO1-mediated acetylation enhances ELL-AF4 association is not directly tested. Alternative explanations (e.g., differential dependency on HBO1 HAT activity for other reasons) are not excluded. Direct measurement of acetylation effects on ELL-AF4 binding would be needed to support C128.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C166",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The HBO1-MLL interaction is proposed as a therapeutic target for drug development. The authors conclude that HBO1-MLL interaction is an important nexus in leukemic transformation and propose that binding modules in this interaction can be molecular targets for drug development. They suggest HBO1-MLL interaction inhibitors would complement MENIN-MLL interaction inhibitors for treating leukemia with MLL and NUP98 fusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C166, C176-C178 represent conclusions and proposals rather than experimental results. While the experimental data support the importance of HBO1-MLL interaction in transformation (C176), the therapeutic potential (C177-C178) is speculative. No drug development, inhibitor screening, or proof-of-concept therapeutic studies are presented. The proposal is reasonable based on the biological findings but requires substantial additional work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C53",
+      "C58",
+      "C59",
+      "C64",
+      "C70",
+      "C80",
+      "C81",
+      "C90",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C106",
+      "C130",
+      "C132",
+      "C139",
+      "C140",
+      "C142",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Background claims about MLL biology, fusion partners, associated complexes, and prior findings from the literature. These claims establish the scientific context including: MLL as a transcriptional maintenance factor, chromosomal translocations generating MLL fusions, mechanisms of MLL fusion-mediated transformation, properties of AF4/ENL/AEP complexes, HBO1 complex composition and functions, and prior findings about various NUP98 fusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C8-C24, C53, C58-C59, C64, C70, C80-C81, C90, C96-C98, C100, C106, C130, C132, C139-C140, C142, C159-C162, C167-C173) are background information supported by citations to published literature. They provide necessary context for the current work. The accuracy of these claims depends on the cited references, which are appropriate and well-established in the field. These are not novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Observations about AF4 processing and EAF1 dimerization. Several processed forms of AF4 were observed in co-precipitates, with amounts increased in chromatin fraction of cells expressing GAL4-ELL with intact OHD. EAF1 forms homodimers through EHD. Both N- and C-terminal halves of EAF1 co-precipitated with endogenous ELL, but C-terminal binding was lost when EAF1 was overexpressed. GAL4-ELL co-precipitated with endogenous ELL, presumably mediated by EAF1 dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C89, C91-C94 are supported by IP-WB experiments. The observation of AF4 processing (C74) is interesting but the functional significance is unclear. The inference that ELL induces AF4 processing (C75) is speculative. EAF1 homodimerization (C89) is well-supported. The competition experiments with overexpression (C92-C94) support the model of EAF1 dimer-mediated ELL-ELL interaction, though alternative interpretations exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The authors presume that AEP/SL1/MED26 complex is competent for transactivation whereas EAF1/SL1/MED26 complex is not, based on structural and functional differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is an inference based on the presence of NKW motif, P-TEFb, and ENL in AEP complex versus their absence in EAF1 complex. While reasonable, this presumption is not directly tested through transactivation assays comparing the two complexes. The transformation data (C101-C105) provide indirect support, but direct measurement of transcriptional activity would be needed to confirm this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C61",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Interpretations about indirect recruitment and H3K4me3 requirement. The authors suggest that weak correlation of AEP/SL1 ChIP signals with MLL is because they are indirectly recruited in a context-dependent manner. They infer that decreased HBO1 complex presence may be due to reduced H3K4me3 marks, which were presumably provided by MLL in part. Transient expression of THD2-containing MLL did not rescue HBO1 recruitment, suggesting H3K4 methylation is a prerequisite.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C65-C67 are supported by ChIP-seq correlation analysis and rescue experiments. However, these are somewhat inferential. The correlation data (C61) support indirect recruitment but don't prove it. The H3K4me3 requirement (C65-C67) is supported by the failure of THD2 alone to rescue HBO1 recruitment (C67) and the known H3K4me3-binding activity of ING5 PHD finger, but direct measurement of H3K4me3 changes and their causal relationship to HBO1 recruitment could be more thoroughly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "A small amount of HBO1 co-precipitated with MLL proteins lacking THD2, suggesting a secondary binding domain outside of THD2 that may account for moderate effects of THD2 deletion from full-length MLL fusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by IP-WB data showing residual HBO1 binding in THD2 deletion mutants. This observation helps explain why full-length MLL fusions show less severe effects of THD2 deletion compared to minimal constructs. However, the secondary binding domain is not mapped or characterized, limiting the mechanistic insight. This is an important observation that warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "NUP98-HOXA9 binds to HOXA9-binding site within HOXA7 locus, whereas NUP98-HBO1 does not, suggesting HBO1 provides alternative chromatin targeting function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by ChIP-qPCR data showing differential binding. The inference that HBO1 provides \"alternative\" targeting (C134) is reasonable given that both fusions transform HPCs but use different targeting mechanisms. However, the actual targeting mechanism of NUP98-HBO1 (via MLL interaction) is demonstrated elsewhere (C137), making this more of a negative result confirming that HBO1 doesn't use HOXA9-like DNA binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "The NUP98 portion did not co-precipitate MLL in the experimental setting used, consistent with a previous report.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C138 is supported by IP-WB data and citation. However, the authors note (C139-C140) that NUP98 was shown to localize near MLL and promote NUP98-HOXA9/MLL interaction in other studies. This apparent contradiction is not fully resolved but may reflect different experimental conditions or indirect versus direct interactions. The claim is accurate for the specific experimental conditions used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C174"
+    ],
+    "result": "The authors infer that a MENIN-less MLL complex may sufficiently recruit NUP98-HBO1 possibly through association with H3K4me3 marks via PHD finger 3 of MLL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C174 is an inference based on mild sensitivity to MENIN inhibitor (C143) and prior knowledge about MLL PHD finger 3 binding to H3K4me3 (C170). While plausible, this mechanism is not directly tested. ChIP experiments showing NUP98-HBO1 localization in presence of MENIN inhibitor, or experiments with MLL PHD finger 3 mutants, would be needed to support this claim more directly.",
+    "result_type": "MINOR"
+  }
+]

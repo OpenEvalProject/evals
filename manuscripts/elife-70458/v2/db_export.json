@@ -1,0 +1,1988 @@
+{
+  "submission": {
+    "id": "d52a3941-93a4-47b7-b8ef-b91f5b448a82",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:55:50.837728Z",
+    "updated_at": "2025-12-03T06:55:50.837728Z"
+  },
+  "content": [
+    {
+      "id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "submission_id": "d52a3941-93a4-47b7-b8ef-b91f5b448a82",
+      "content_type": "manuscript",
+      "content_text": "# SARS-CoV-2 shedding dynamics across the respiratory tract, sex, and disease severity for adult and pediatric COVID-19\n\n## Authors\n\n- Paul Z Chen<sup>1</sup> ([ORCID: 0000-0001-5261-1610](https://orcid.org/0000-0001-5261-1610))\n- Niklas Bobrovitz<sup>2</sup> ([ORCID: 0000-0001-7883-4484](https://orcid.org/0000-0001-7883-4484))\n- Zahra A Premji<sup>5</sup> ([ORCID: 0000-0002-6899-0528](https://orcid.org/0000-0002-6899-0528))\n- Marion Koopmans<sup>6</sup> ([ORCID: 0000-0002-5204-2312](https://orcid.org/0000-0002-5204-2312))\n- David N Fisman<sup>7</sup> ([ORCID: 0000-0001-5009-6926](https://orcid.org/0000-0001-5009-6926))\n- Frank X Gu<sup>1</sup> ([ORCID: 0000-0001-8749-9075](https://orcid.org/0000-0001-8749-9075)) \u2020\n\n### Affiliations\n\n1. Department of Chemical Engineering & Applied Chemistry, University of Toronto Toronto Canada\n2. Temerty Faculty of Medicine, University of Toronto Toronto Canada\n3. Department of Critical Care Medicine, Cumming School of Medicine, University of Calgary Calgary Canada\n4. O'Brien Institute of Public Health, University of Calgary Calgary Canada\n5. Libraries, University of Victoria Victoria Canada\n6. Department of Viroscience, Erasmus University Medical Center Rotterdam Netherlands\n7. Division of Epidemiology, Dalla Lana School of Public Health, University of Toronto Toronto Canada\n8. Institute of Biomedical Engineering, University of Toronto Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Previously, we conducted a systematic review and analyzed the respiratory kinetics of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Chen et al., 2021). How age, sex, and coronavirus disease 2019 (COVID-19) severity interplay to influence the shedding dynamics of SARS-CoV-2, however, remains poorly understood.Methods:We updated our systematic dataset, collected individual case characteristics, and conducted stratified analyses of SARS-CoV-2 shedding dynamics in the upper (URT) and lower respiratory tract (LRT) across COVID-19 severity, sex, and age groups (aged 0\u201317 years, 18\u201359 years, and 60 years or older).Results:The systematic dataset included 1266 adults and 136 children with COVID-19. Our analyses indicated that high, persistent LRT shedding of SARS-CoV-2 characterized severe COVID-19 in adults. Severe cases tended to show slightly higher URT shedding post-symptom onset, but similar rates of viral clearance, when compared to nonsevere infections. After stratifying for disease severity, sex and age (including child vs. adult) were not predictive of respiratory shedding. The estimated accuracy for using LRT shedding as a prognostic indicator for COVID-19 severity was up to 81%, whereas it was up to 65% for URT shedding.Conclusions:Virological factors, especially in the LRT, facilitate the pathogenesis of severe COVID-19. Disease severity, rather than sex or age, predicts SARS-CoV-2 kinetics. LRT viral load may prognosticate COVID-19 severity in patients before the timing of deterioration and should do so more accurately than URT viral load.Funding:Natural Sciences and Engineering Research Council of Canada (NSERC) Discovery Grant, NSERC Senior Industrial Research Chair, and the Toronto COVID-19 Action Fund.\n\n## Introduction\n\nAs of August 8, 2021, the coronavirus disease 2019 (COVID-19) pandemic has caused more than 202.6 million infections and 4.2 million deaths globally (Dong et al., 2020). The clinical spectrum of COVID-19, caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), is wide, ranging from asymptomatic infection to fatal disease. For cases that deteriorate into severe COVID-19, deterioration occurs, on median, 10 days after symptom onset (Solomon et al., 2020; Zhou et al., 2020). Risk factors for severe illness and death include age, sex, smoking, and comorbidities, such as obesity, hypertension, diabetes, and cardiovascular disease (Onder et al., 2020; Tartof et al., 2020; Zhou et al., 2020). Emerging evidence indicates that age and sex differences in innate, cross-reactive, and adaptive immunity facilitate the higher risks observed in older and male cases (Rydyznski Moderbacher et al., 2020; Ng et al., 2020; Pierce et al., 2020; Takahashi et al., 2020). Conversely, robust immune responses putatively mediate nonsevere illness, in part, by controlling the replication of SARS-CoV-2 (Lucas et al., 2021; Lucas et al., 2020).\n\nAs a respiratory virus, the shedding dynamics of SARS-CoV-2 in the upper (URT) and lower respiratory tract (LRT) provide insight into the clinical and epidemiological characteristics of COVID-19. URT viral load has been associated with transmission risk, duration of infectiousness, disease severity, and mortality (Chen et al., 2021b; Fu et al., 2021; Magleby et al., 2020; Marks et al., 2021; Pujadas et al., 2020; van Kampen et al., 2021; Westblade et al., 2020; W\u00f6lfel et al., 2020). Key questions, however, remain. While chest computed tomography (CT) evidence of viral pneumonitis suggests pulmonary replication in most symptomatic cases (Bernheim et al., 2020), the LRT kinetics of SARS-CoV-2, especially as related to disease severity, remain unclear. How age, sex, and disease severity influence shedding dynamics is poorly understood, especially for children. Moreover, it is unclear whether respiratory viral load can accurately predict COVID-19 severity, with conflicting results from analyses of low sample numbers (Argyropoulos et al., 2020; Lucas et al., 2020; Pujadas et al., 2020; Silva et al., 2021; Walsh et al., 2020; Westblade et al., 2020).\n\nFor insight into these questions, we conducted a systematic review on SARS-CoV-2 quantitation from respiratory specimens and developed a large, diverse dataset of viral loads and individual case characteristics. Stratified analyses then assessed SARS-CoV-2 shedding dynamics across the respiratory tract, age, sex, and COVID-19 severity.\n\n## Materials and methods\n\n### Data sources and searches\n\nOur systematic review identified studies reporting SARS-CoV-2 quantitation in respiratory specimens taken during the estimated infectious period (\u22123 to 10 days from symptom onset [DFSO]) (He et al., 2020; W\u00f6lfel et al., 2020). The systematic review protocol was based on our previous study (Chen et al., 2021a) and was prospectively registered on PROSPERO (registration number, CRD42020204637). The systematic review was conducted according to Cochrane methods guidance (Higgins et al., 2019). PRISMA reporting guidelines were followed (Moher et al., 2009).\n\nUp to November 20, 2020, we searched, without the use of filters or language restrictions, the following sources: MEDLINE (Ovid, 1946 to November 20, 2020, Wyllie et al., 2020), EMBASE (Ovid, 1974 to November 20, 2020, Wyllie et al., 2020), Cochrane Central Register of Controlled Trials (via Ovid, 1991 to November 20, 2020, Wyllie et al., 2020), Web of Science Core Collection (up to November 20, 2020, Wyllie et al., 2020), and medRxiv and bioRxiv (both searched through Google Scholar via the Publish or Perish program, up to November 20, 2020, Wyllie et al., 2020). We also gathered studies by searching through the reference lists of review articles identified by the database search, by searching through the reference lists of included articles, through expert recommendation (by Eric J Topol and Akiko Iwasaki on Twitter) and by hand-searching through journals. A comprehensive search was developed by a librarian (ZP). The line-by-line search strategies for all databases are included in Figure 1\u2014source data 1 to 5. The search results were exported from each database and uploaded to the Covidence online system (research resource identifier, RRID:SCR_016484) for deduplication and screening.\n\n### Study selection\n\nStudies that reported SARS-CoV-2 quantitation in individual URT (nasopharyngeal swab [NPS], nasopharyngeal aspirate, oropharyngeal swab [OPS], or posterior oropharyngeal saliva [POS]) or LRT (endotracheal aspirate [ETA] or sputum [Spu]) specimens taken during the estimated infectious period (\u22123 to 10 DFSO) in humans were included (additional details given in the Appendix). As semiquantitative metrics (cycle threshold [Ct] values) cannot be compared on an absolute scale between studies based on instrument and batch variation (Han et al., 2021), studies reporting specimen measurements as Ct values, without quantitative calibration, were excluded. Two authors (PZC and NB) independently screened titles and abstracts and reviewed full texts. At the full-text stage, reference lists were reviewed for study inclusion. Inconsistencies were resolved by discussion and consensus, and 26 studies met the inclusion criteria (Bal et al., 2020; Benotmane et al., 2020; Biguenet et al., 2021; Fajnzylber et al., 2020; Han et al., 2020; Hirotsu et al., 2020; Hurst et al., 2020; Iwasaki et al., 2020; L\u2019Huillier et al., 2020; Lavezzo et al., 2020; Pan et al., 2020; Peng et al., 2020; Shrestha et al., 2020; Sun et al., 2020; To et al., 2020; van Kampen et al., 2021; Vetter et al., 2020; W\u00f6lfel et al., 2020; Wyllie et al., 2020; Xu et al., 2020a; Yazdanpanah, 2021; Yilmaz et al., 2021; Yonker et al., 2020; Zhang et al., 2021; Zheng et al., 2020; Zou et al., 2020). Additional details on study selection can be found in our previous protocol (Chen et al., 2021a).\n\n### Data extraction and risk-of-bias assessment\n\nTwo authors (PZC and NB) independently collected data (specimen measurements taken between \u20133 and 10 DFSO, specimen type, volume of viral transport media [VTM], and case characteristics, including age, sex, and disease severity) from contributing studies and assessed risk of bias using a modified version of the Joanna Briggs Institute (JBI) tools for case series, analytical cross-sectional studies, and prevalence studies (Moola et al., 2020; Munn et al., 2019; Munn et al., 2015) (shown in the Appendix). Items were judged with responses to data inquiries, if authors responded.\n\nData were collected for individually reported specimens of known type, with known DFSO, and for COVID-19 cases with known age, sex or severity. Case characteristics were collected directly from contributing studies when reported individually or obtained via data request from the authors. Data from serially sampled asymptomatic cases were included, and the day of laboratory diagnosis was referenced as 0 DFSO (Lavezzo et al., 2020; W\u00f6lfel et al., 2020). Based on the modified JBI checklist, studies were considered to have low risk of bias if they met the majority of items and included item 1 (representative sample). Discrepancies were resolved by discussion and consensus. Studies at high or unclear risk of bias typically included samples that were not representative of the target population; did not report the VTM volume used; had non-consecutive inclusion for case series and cohort studies or did not use probability-based sampling for cross-sectional studies; and did not report the response rate.\n\n### Respiratory viral load\n\nTo enable analyses based on respiratory viral load (rVL, viral RNA concentration in the respiratory tract) and to account for between-study variation in specimen measurements, the rVL for each collected sample was estimated based on the specimen concentration (viral RNA concentration in the specimen) and its dilution factor in VTM. Typically, swabbed specimens (NPS and OPS) report the viral RNA concentration in VTM. Based on the VTM volume reported in the study along with the expected uptake volume for swabs (0.128 \u00b1 0.031 ml, mean \u00b1 SD) (Warnke et al., 2014), we calculated the dilution factor for each respiratory specimen and then estimated the rVL. Similarly, liquid specimens (ETA, POS, and Spu) are often diluted in VTM, and the rVL was estimated based on the reported collection and VTM volumes. If the diluent volume was not reported, then VTM volumes of 1 ml (NPS and OPS) or 2 ml (POS and ETA) were assumed (Lavezzo et al., 2020; To et al., 2020). Unless dilution was reported, Spu specimens were taken as undiluted (W\u00f6lfel et al., 2020). The non-reporting of VTM volume was noted as an element increasing risk of bias in the modified JBI critical appraisal checklist. For laboratory-confirmed COVID-19 cases, negative specimen measurements were taken at the reported assay detection limit in the respective study.\n\n### Case definitions\n\nAs severity in the clinical manifestations of COVID-19 and case-fatality rates tend to increase among children (aged 0\u201317 years), younger adults (aged 18\u201359 years), and older adults (aged 60 years or older) (Onder et al., 2020; Zheng et al., 2020), the data were delineated by these three age groups. Cases were also categorized by sex.\n\nU.S. National Institutes of Health guidance was used to categorize disease severity as nonsevere or severe (National Institutes of Health, 2021) (Appendix 1\u2014table 1). The nonsevere group included those with asymptomatic infection (individuals who test positive via a molecular test for SARS-CoV-2 and report no symptoms consistent with COVID-19); mild illness (individuals who report any signs or symptoms of COVID-19, including fever, cough, sore throat, malaise, headache, muscle pain, nausea, vomiting, diarrhea, loss of taste and smell, but who do not have dyspnea or abnormal chest imaging); and moderate illness (individuals with clinical or radiographic evidence of LRT disease, fever >39.4\u00b0C or SpO2 >94% on room air) disease. The severe group included those with severe illness (individuals who have SpO2 <94% on room air, [PaO2/FiO2] < 300 mmHg, respiratory rate >30 breaths/min or lung infiltrates > 50%) and critical illness (respiratory failure, septic shock, or multiple organ dysfunction).\n\n### Regression analyses\n\nTo assess the respiratory shedding of SARS-CoV-2 and compare age, sex, or severity groups, we analyzed the data via normal linear regression (Hurst et al., 2020; Lucas et al., 2020). Previous studies have shown that SARS-CoV-2 shedding tends to diminish exponentially after 1 DFSO in the URT and, at least, after 4 DFSO in the LRT (Bernheim et al., 2020; Chen et al., 2021a; W\u00f6lfel et al., 2020). Although LRT shedding may peak before 4 DFSO, there is limited data near or before symptom onset. Hence, rVLs (in units of log10 copies/ml) between 1 and 10 DFSO for the URT, or 4 and 10 DFSO for the LRT, were fitted using linear regression with interaction:\n\n$$\nV=\\alpha+\\beta_{1}X_{1}+\\beta_{2}X_{2}+\\beta_{3}X_{1}X_{2},\n$$\n\nwhere $V$ represents the rVL, $\\alpha$ represents the estimated mean rVL (at 1 DFSO for URT or 4 DFSO for LRT) for the reference group, $X_{1}$ represents DFSO for the reference group, $X_{2}$ represents the comparison group, $\\beta_{1}$ represents the effect of DFSO on rVL for the reference group, $\\beta_{2}$ represents the effect of the comparison group on the main effect (mean rVL at 1 DFSO), and $\\beta_{3}$ represents the interaction between DFSO and groups. Regression analyses were offset by DFSO such that mean rVLs at 1 DFSO for URT, or 4 DFSO for LRT, were compared between groups by the main effect (i.e., effect on the intercept in the regression t-test for $\\beta_{2}$). Shedding dynamics were compared between groups by interaction (regression t-test for $\\beta_{3}$). The statistical significance of viral clearance for each group was analyzed using simple linear regression (regression t-test on the slope). Each group in statistical analyses included all rVLs for which the relevant characteristic (LRT or URT, age group, sex, or disease severity) was ascertained at the individual level. Groups with small sample sizes were not compared, as these analyses are more sensitive to potential sampling error.\n\nRegression models were extrapolated to 0 log10 copies/ml to estimate the total duration of shedding. Some clinical studies report shedding duration based on assay negativity, when the viral RNA concentration in the specimen reaches the detection limit of the assay (often between 1 and 4 log10 copies/ml), and these cases may continue to shed viral RNA. To show the relationship between the two approaches, we used our regression model for URT shedding and estimated the shedding duration to a specimen concentration of 3 log10 copies/ml when sampling was conducted with nasopharyngeal swabs (approximately equivalent to an rVL of 2.1 log10 copies/ml). Then, the estimated mean duration of URT shedding for severe cases was 20.8 (95% CI: 14.5\u201327.0) DFSO, while it was 20.3 (95% CI: 16.8\u201323.7) DFSO for nonsevere cases. These values are in line with those reported by studies considering the assay detection limit (Cevik et al., 2021), supporting our regression models, and can be compared with those reported in the body text.\n\nStatistical analyses were performed using OriginPro 2019b (RRID:SCR_014212, OriginLab) and the General Linear regression app. p-Values below 0.05 were considered statistically significant.\n\n### Distribution analyses\n\nPreviously, our analyses found that SARS-CoV-2 rVLs best conform to Weibull distributions (Chen et al., 2021b). To assess heterogeneity in shedding in this study, rVL data were fitted to Weibull distributions. The Weibull quantile function and Weibull cumulative distribution function were used to estimate the rVL at a case percentile and the percentage of cases at a given rVL, respectively. Each distribution was fitted to groups that included all rVLs for which the relevant characteristic (LRT or URT, age group, sex, or disease severity) was ascertained at the individual level. Distribution fitting was performed using Matlab R2019b (RRID:SCR_001622, MathWorks) and the Distribution Fitter app.\n\n### Prognostication accuracy\n\nThe fitted Weibull distributions were used to estimate the accuracy when using URT or LRT rVLs of SARS-CoV-2 as a prognostic indicator for COVID-19 severity. The overlapped area under the curve (AUC) and separated AUC were calculated using the rVL distributions for severe and nonsevere adult COVID-19. These calculations were performed for each DFSO and, separately, for the URT and LRT. The estimated maximal accuracy for prognostication at a given rVL threshold was then estimated by $A=50+50*AUC_{separated}$ , where $AUC_{separated}$ represents the AUC that was separated for the nonsevere and severe distributions. The 95% CIs for prognostication accuracy were estimated using the proportional 95% CIs in the respective Weibull cumulative distributions. As the Weibull cumulative distributions estimate the percentage of cases at a given rVL, they were also used to estimate the sensitivity and specificity at a given prognostic threshold of rVL. The cases with rVL lower than the prognostic threshold were predicted to have nonsevere COVID-19, whereas those with rVL above it were predicted to have severe COVID-19. Hence, we used the cumulative distributions for nonsevere and severe adult cases on a DFSO and calculated the proportion of cases that were true positive, false positive, false negative, and true negative rates across prognostic thresholds of rVL. Sensitivity and specificity were calculated based on these values. These analyses were coded in Matlab R2019b (RRID:SCR_001622, MathWorks) and are available at GitHub (copy archived at swh:1:rev:c96390f98f47f17939f3669c7c8fad96f9603e84, Chen, 2019).\n\n## Results\n\n### Overview of contributing studies\n\nThe systematic search (Figure 1\u2014source data 1, Figure 1\u2014source data 2, Figure 1\u2014source data 3, Figure 1\u2014source data 4, Figure 1\u2014source data 5) identified 5802 deduplicated results. After screening and full-text review, 26 studies met the inclusion criteria, and data were collected for individually reported specimens of known type and taken on a known DFSO for COVID-19 cases with known age, sex, or severity (Figure 1). From 1402 COVID-19 cases, we collected 1915 quantitative specimen measurements (viral RNA concentration in a respiratory specimen) of SARS-CoV-2 (Table 1) and used them to estimate rVLs (viral RNA concentration in the respiratory tract) (Figure 1\u2014figure supplement 1). For pediatric cases, the search found only nonsevere infections and URT specimen measurements. Appendix 1\u2014table 1 and Appendix 1\u2014table 2 summarize the characteristics of contributing studies, of which 18 had low risk of bias according to the modified JBI critical appraisal checklist.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig1-v2.jpg)\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Upper respiratory tract (URT) respiratory viral loads (rVLs) for adult coronavirus disease 2019 (COVID-19) cases (from \u20133 to 10 days from symptom onset [DFSO], n = 0, 3, 12, 71, 145, 159, 176, 152, 114, 123, 161, 125, 110, and 117 samples per DFSO). (B) Lower respiratory tract (LRT) rVLs for adult COVID-19 cases (from \u20133 to 10 DFSO, n = 0, 0, 1, 0, 0, 1, 8, 10, 18, 23, 31, 39, 40, and 40 samples per DFSO). (C) URT rVLs for pediatric COVID-19 cases (from \u20133 to 10 DFSO, n = 1, 1, 2, 8, 17, 20, 11, 14, 16, 25, 26, 20, 17, and 14 samples per DFSO). Data were collected within the estimated infectious period of SARS-CoV-2 (\u22123 to 10 DFSO). The systematic search found no quantitative specimen measurements from the LRT for pediatric COVID-19. Open circles show rVL data. Filled circles and bars depict mean estimates and 95% CIs, respectively.\n\n**Table 1.**\n Characteristics of adult and pediatric coronavirus disease 2019 (COVID-19) cases in the systematic dataset.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Adult</th>\n      <th>Pediatric</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cases, n</td>\n      <td>1266</td>\n      <td>136</td>\n    </tr>\n    <tr>\n      <td>URT specimens, n</td>\n      <td>1513</td>\n      <td>192</td>\n    </tr>\n    <tr>\n      <td>LRT specimens, n</td>\n      <td>210</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Mean age (SD), years</td>\n      <td>51.8 (18.0)</td>\n      <td>8.7 (5.3)</td>\n    </tr>\n    <tr>\n      <td>Male, n (%)</td>\n      <td>528 (44.0)</td>\n      <td>63 (52.5)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Disease severity, n (%)</td>\n    </tr>\n    <tr>\n      <td>Asymptomatic</td>\n      <td>2 (0.2)</td>\n      <td>5 (3.7)</td>\n    </tr>\n    <tr>\n      <td>Mild</td>\n      <td>710 (57.5)</td>\n      <td>112 (83.6)</td>\n    </tr>\n    <tr>\n      <td>Moderate</td>\n      <td>178 (14.4)</td>\n      <td>17 (12.7)</td>\n    </tr>\n    <tr>\n      <td>Severe</td>\n      <td>167 (13.5)</td>\n      <td>0 (0.0)</td>\n    </tr>\n    <tr>\n      <td>Critical</td>\n      <td>178 (14.4)</td>\n      <td>0 (0.0)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Adult cases were those aged 18 years or older, while pediatric cases were those aged younger than 18 years. Upper respiratory tract = URT. Lower respiratory tract = LRT._\n\n### URT shedding of SARS-CoV-2 for adult COVID-19\n\nTo interpret the complex interplay between SARS-CoV-2 shedding dynamics and age, sex, and COVID-19 severity, we stratified our systematic dataset into age, sex, and severity groups and then conducted a series of linear regression analyses. For adult COVID-19, regression analysis showed that the mean URT rVL at 1 DFSO was significantly greater (p = 0.005) for severely infected cases (8.28 [95% CI: 7.71\u20138.84] log10 copies/ml) than nonsevere ones (7.45 [95% CI: 7.26\u20137.65] log10 copies/ml) (Figure 2A, D,). Meanwhile, these groups showed comparable URT dynamics post-symptom onset (p for interaction = 0.479), as severe adult cases tended to cleared SARS-CoV-2 from the URT at \u20130.31 (95% CI: \u20130.40 to\u20130.22) log10 copies/ml/day while nonsevere ones did so at \u20130.28 (95% CI: \u20130.32 to \u20130.24) log10 copies/ml/day (Figure 2A, E). For severe cases, the estimated mean duration of URT shedding (down to 0 log10 copies/ml) was 27.5 (95% CI: 21.2\u201333.8) DFSO; it was 27.9 (95% CI: 24.4\u201331.3) DFSO for nonsevere cases.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) URT shedding for severe and nonsevere adult (aged 18 years or older) coronavirus disease 2019 (COVID-19) (A), for nonsevere pediatric (aged 0\u201317 years) and nonsevere adult COVID-19 (B) and for nonsevere pediatric and severe adult COVID-19 (C). Open circles represent respiratory viral load (rVL) data and were offset from their day from symptom onset (DFSO) for visualization. Lines and bands show regressions and their 95% CIs, respectively. (D and E) Comparisons of URT shedding levels at 1 DFSO (D) and URT shedding dynamics (E) between severity, age, and sex groups for COVID-19. (F and G) Comparisons of URT shedding levels at 1 DFSO (F) and URT shedding dynamics (G) between pediatric and adult groups for COVID-19. The black line in (E) and (G) depicts 0, the threshold for no significant trend in SARS-CoV-2 clearance. Linear regression analyses with interaction determined p-values and compared shedding levels and dynamics between the two groups in each row.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013D) URT shedding for male and female adult (aged 18 years or older) cases with nonsevere COVID-19 (A), for male and female adult cases with severe COVID-19 (B), for older (aged 60 years or older) and younger (aged 18\u201359 years) adults with nonsevere COVID-19 (C) and for older and younger adults with severe COVID-19 (D). Open circles represent respiratory viral load (rVL) data and were offset from their day from symptom onset (DFSO) for visualization. Lines and bands show regressions and their 95% CIs, respectively.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) URT shedding for male and female pediatric (aged 0\u201317 years) cases with nonsevere COVID-19. Open circles represent respiratory viral load (rVL) data and were offset from their day from symptom onset (DFSO) for visualization. Lines and bands show regressions and their 95% CIs, respectively. (B) Estimated distributions at 2, 6, and 10 DFSO of URT shedding for adult (aged 18 years or older) and pediatric cases with nonsevere COVID-19.\n\nAfter stratifying adults for disease severity, our analyses showed no significant differences in URT shedding levels or dynamics between sex or age groups (Figure 2D,E, Figure 2\u2014figure supplement 1). For severe disease, male and female cases had comparable mean rVLs at 1 DFSO (p = 0.326) and rates of SARS-CoV-2 clearance (p for interaction = 0.280). Similarly, for nonsevere illness, male and female cases had no significant difference in mean rVL at 1 DFSO (p = 0.085) or URT dynamics (p for interaction = 0.644). For nonsevere illness, younger and older adults had no significant difference in URT shedding levels at 1 DFSO (p = 0.294) or post-symptom onset dynamics (p for interaction = 0.100). For severe disease, the adult age groups showed similar mean rVLs at 1 DFSO (p = 0.915) and rates of viral clearance (p for interaction = 0.359).\n\n### URT shedding of SARS-CoV-2 for pediatric COVID-19\n\nFor pediatric COVID-19, regression estimated that, in the URT, the mean rVL at 1 DFSO was 7.32 (95% CI: 6.78\u20137.86) log10 copies/ml and the SARS-CoV-2 clearance rate was \u20130.32 (95% CI: \u20130.42 to \u20130.22) log10 copies/ml/day (Figure 2F,G). Both estimates were comparable between the sexes for children (Figure 2\u2014figure supplement 1). The estimated mean duration of URT shedding (down to 0 log10 copies/ml) was 22.6 (95% CI: 17.0\u201328.1) DFSO for children with COVID-19.\n\nBetween pediatric cases, who had nonsevere illness in our dataset, and adults with nonsevere illness, both URT shedding at 1 DFSO (p = 0.653) and URT dynamics (p for interaction = 0.400) were similar (Figure 2B, F and G). In contrast, URT shedding at 1 DFSO was greater for severely affected adults when compared to children with nonsevere disease (p = 0.017), but URT dynamics remained similar (p for interaction = 0.863) (Figure 2C, F and G).\n\n### LRT shedding of SARS-CoV-2 for adult COVID-19\n\nFor adults, our analyses showed that high, persistent LRT shedding of SARS-CoV-2 was associated with severe COVID-19 but not nonsevere illness (Figure 3A). At the initial day in our analyzed period (4 DFSO), the mean rVL in the LRT of severe cases (8.42 [95% CI: 7.67\u20139.17] log10 copies/ml) was significantly greater (p = 0.006) than that of nonsevere cases (6.82 [95% CI: 5.95\u20137.69] log10 copies/ml) (Figure 3D). Between severities, the difference in LRT clearance rates was marginally above the threshold for statistical significance (p for interaction = 0.053). Nonetheless, severe cases had persistent LRT shedding, with no significant trend in SARS-CoV-2 clearance up to 10 DFSO (\u20130.14 [95% CI: \u20130.32\u20130.030] log10 copies/ml/day, p = 0.105), whereas nonsevere cases rapidly cleared the virus from the LRT (\u20130.41 [95% CI: \u20130.64 to \u20130.19] log10 copies/ml/day, p < 0.001) (Figure 3E). For nonsevere cases, the estimated mean duration of LRT shedding (down to 0 log10 copies/ml) was 20.4 (95% CI: 13.2\u201327.7) DFSO.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C). Shedding in the LRT for severe and nonsevere adult (aged 18 years or older) COVID-19 (A), in the LRT and URT nonsevere adult COVID-19 (B) and in the LRT and URT severe adult COVID-19 (C). Open circles represent respiratory viral load (rVL) data and were offset from their day from symptom onset (DFSO) for visualization. Lines and bands show regressions and their 95% CIs, respectively. (D and E) Comparisons of shedding levels at 4 DFSO (D) and URT shedding dynamics (E) between severity and age groups in the LRT and between the LRT and URT. The black line in (E) depicts 0, the threshold for no significant trend in SARS-CoV-2 clearance. Linear regression analyses with interaction determined p-values and compared shedding levels and dynamics between the two groups in each row.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A and B) LRT shedding for older (aged 60 years or older) or younger (aged 18\u201359 years) adult cases with severe COVID-19 (A) and male adult (aged 18 years or older) cases with severe COVID-19 (B). Open circles represent respiratory viral load (rVL) data and were offset from their day from symptom onset (DFSO) for visualization. Lines and bands show regressions and their 95% CIs, respectively.\n\nFor severe COVID-19, regression analysis showed comparable mean LRT rVLs at 4 DFSO between younger and older adults (p = 0.745) (Figure 3D). For severe cases, both age groups also had persistent LRT shedding in the analyzed period: younger adults (\u20130.20 [95% CI: \u20130.32 to 0.042] log10 copies/ml/day, p = 0.105) and older adults (\u20130.13 [95% CI: \u20130.39 to 0.13] log10 copies/ml/day, p = 0.316) both had no significant trend in SARS-CoV-2 clearance (Figure 3E, Figure 3\u2014figure supplement 1A). Likewise, severely affected male cases had no significant trend in LRT shedding (0.001 [95% CI: \u20130.16 to 0.19] log10 copies/ml/day, p = 0.988) (Figure 3\u2014figure supplement 1B). The female group included few samples, and statistically analyses were not conducted (Appendix 1\u2014table 3).\n\nInterestingly, nonsevere cases showed similar SARS-CoV-2 shedding between the URT and LRT (Figure 3B), whereas severe cases shed greater and longer in the LRT than in the URT (Figure 3C). At 4 DFSO, the URT rVL of nonsevere adults was 6.62 (95% CI: 6.50\u20136.74) log10 copies/ml, which was not different from the LRT rVL of nonsevere adults (p = 0.651). Conversely, for severe adults, the rVL at 4 DFSO was significantly lower in the URT (7.34 [95% CI: 7.01\u20137.68] log10 copies/ml) than the LRT (p = 0.031) (Figure 3D).\n\n### Heterogeneity in URT shedding of SARS-CoV-2\n\nWhile regression analyses compared mean shedding levels and dynamics, we fitted rVLs to Weibull distributions to assess the heterogeneity in rVL. Both severe and nonsevere adult COVID-19 showed broad variation in URT shedding throughout disease course (Figure 4A). For severe disease, the standard deviation (SD) of rVL was 1.86, 2.34, 1.89, and 1.90 log10 copies/ml at 2, 4, 7, and 10 DFSO, respectively. For nonsevere illness, these SDs were 2.08, 1.90, 1.89, and 1.96 log10 copies/ml, respectively. Notably, our distribution analyses indicated that the top 2\u20139% of adults with COVID-19 harbored 80% of the SARS-CoV-2 copies in the URT on each DFSO (Figure 4\u2014figure supplement 1A-D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013D) Upper respiratory tract (URT) analyses. (A) Estimated distributions at 2, 4, 7, and 10 days from symptom onset (DFSO) of URT shedding for adults (aged 18 years or older) with nonsevere or severe COVID-19. (B) Overlapped or separated areas under the curve for the distributions in (A). (C) Estimated accuracy for using URT shedding of SARS-CoV-2 as a prognostic indicator for COVID-19 severity. (D) Cumulative distributions of URT shedding for adults with nonsevere or severe COVID-19 at various DFSO. (E\u2013H) Lower respiratory tract (LRT) analyses. (E) Estimated distributions at 5, 6, 8, and 10 DFSO of LRT shedding for adults with nonsevere or severe COVID-19. (F) Overlapped or separated areas under the curve for the distributions in (E). (G) Estimated accuracy for using LRT shedding of SARS-CoV-2 as a prognostic indicator for COVID-19 severity. (H) Cumulative distributions of LRT shedding for adults with nonsevere or severe COVID-19 at various DFSO. Arrows in (A) and (E) denote the 80th case percentiles, in terms of respiratory viral load (rVL), for each group. For (D) and (H), the proportion of cases to the left of a given prognostic threshold are predicted to have nonsevere COVID-19, while those to the right of it are predicted to have severe disease. Sensitivity and specificity can then be estimated using the nonsevere and severe distributions. The dotted lines in (D) and (H) denote 50% accuracy.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013D) Cumulative distribution of URT SARS-CoV-2 copies harbored in adults with nonsevere or severe COVID-19 at 2 (A), 4 (B), 7 (C), and 10 (D) days from symptom onset (DFSO). (E\u2013H) Cumulative distribution of LRT SARS-CoV-2 copies harbored in adults with nonsevere or severe COVID-19 at 5 (A), 6 (B), 8 (C), and 10 (D) DFSO. These curves were based on the fitted Weibull distributions in copies/ml and estimate the proportion of cases that carry the total amount of SARS-CoV-2 in the URT or LRT. The dotted lines denote when the upper case percentiles harbor 80% of copies.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013D) Metrics for the accuracy of SARS-CoV-2 quantitation from the URT as a prognostic indicator for coronavirus disease 2019 (COVID-19) severity. Estimated true positive, true negative, false positive, and false negative (top) or sensitivity and specificity (bottom) at 2 (A), 4 (B), 7 (C), and 10 (D) days from symptom onset (DFSO) across SARS-CoV-2 respiratory viral loads as the prognostic threshold. As depicted throughout this study, these plots show respiratory viral loads (rVLs, viral RNA concentration in the respiratory tract) rather than specimen concentrations (viral RNA concentration quantitated from a respiratory specimen).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70458/elife-70458-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013D) Metrics for the accuracy of SARS-CoV-2 quantitation from the LRT as a prognostic indicator for coronavirus disease 2019 (COVID-19) severity. Estimated true positive, true negative, false positive, and false negative (top) or sensitivity and specificity (bottom) at 2 (A), 4 (B), 7 (C), and 10 (D) days from symptom onset (DFSO) across SARS-CoV-2 respiratory viral loads (rVLs) as the prognostic threshold. As depicted throughout this study, these plots show rVLs (viral RNA concentration in the respiratory tract) rather than specimen concentrations (viral RNA concentration quantitated from a respiratory specimen).\n\nSince cases with severe COVID-19 tend to deteriorate at 10 DFSO (Solomon et al., 2020; Zhou et al., 2020), early differences in shedding may predict disease severity before deterioration. To assess the prognostic utility of URT shedding, we used the rVL distributions of nonsevere and severe adult cases and calculated the AUC that is overlapped or separated (Figure 4B). The greater the separation between these rVL distributions, the greater the ability to differentiate severe COVID-19 from nonsevere illness, and this AUC analysis estimates the maximal accuracy of prognostication (Figure 4C). At each DFSO, these URT distributions were largely overlapped. Moreover, the cumulative density distributions of rVL (Figure 4D) estimated poor sensitivity and specificity for prognostication (Figure 4\u2014figure supplement 2). Thus, our data indicated that URT shedding inaccurately predicts COVID-19 severity.\n\n### Heterogeneity in LRT shedding of SARS-CoV-2\n\nIn contrast, the distributions of severe and nonsevere LRT shedding bifurcated along disease course (Figure 4E). At 6 DFSO, the estimate at the 80th case percentile of LRT rVL was 9.40 (95% CI: 8.67\u201310.20) log10 copies/ml for severe COVID-19, while it was 7.66 (95% CI: 6.65\u20138.83) log10 copies/ml for nonsevere illness. At 10 DFSO, the difference between 80th case percentile estimates expanded, as they were 8.63 (95% CI: 8.04\u20139.26) and 6.01 (95% CI: 4.65\u20137.78) log10 copies/ml for severe and nonsevere disease, respectively. Furthermore, our data indicated that nonsevere illness was associated with greater skewing in LRT shedding than severe disease in the analyzed period (Figure 4E). For nonsevere COVID-19, the SD of rVL was 1.92, 2.01, and 2.09 log10 copies/ml at 6, 8, and 10 DFSO, respectively. For severe disease, it was lesser at 1.25, 1.37, and 1.61 log10 copies/ml for 6, 8, and 10 DFSO, respectively. On each DFSO, the top 2\u201312% of cases harbored 80% of the LRT copies of SARS-CoV-2 for adults with nonsevere COVID-19, whereas it was the top 10\u201320% of cases for adults with severe disease (Figure 4\u2014figure supplement 1, E to H).\n\nWe also assessed the prognostic utility of LRT shedding. We calculated the AUC that is overlapped or separated, which showed greater separation between the LRT distributions of severe and nonsevere cases (Figure 4F). The estimated accuracy for using LRT shedding as a prognostic indicator for COVID-19 severity was up to 81% (Figure 4G). As a resource, the cumulative distributions of LRT shedding (Figure 4H) enable for the estimation of the specificity and sensitivity at different prognostic thresholds of LRT rVL. For example, at 5 DFSO, the estimated specificity was 93.3% and the estimated sensitivity was 64.4% at a prognostic threshold of 9.10 log10 copies/ml (Figure 4\u2014figure supplement 3). For 8 DFSO, the estimated specificity and sensitivity was 73.1% and 88.8%, respectively, at a prognostic threshold of 5.95 log10 copies/ml. These estimated specificities and sensitivities agreed with the estimated accuracy for prognostication from their AUC analyses. Taken together, our data indicated that LRT shedding more accurately predicts COVID-19 severity than does URT shedding.\n\n## Discussion\n\nOur study systematically developed a dataset of COVID-19 case characteristics and rVLs and conducted stratified analyses on SARS-CoV-2 shedding post-symptom onset. In the URT, we found that adults with severe COVID-19 showed slightly higher rVLs shortly after symptom onset, but similar SARS-CoV-2 clearance rates, when compared with their nonsevere counterparts. After stratifying for disease severity, our analyses showed that sex and age had nonsignificant effects on SARS-CoV-2 shedding for each included analysis (summarized in Appendix 1\u2014table 4). Thus, while sex and age influence the tendency to develop severe COVID-19 (Onder et al., 2020; Tartof et al., 2020; Zhou et al., 2020), we find no such sex dimorphism or age distinction in shedding among cases of similar severity. This includes children, who had nonsevere illness in our study and show similar URT shedding post-symptom onset as adults with nonsevere illness.\n\nNotably, our analyses indicate that high, persistent LRT shedding of SARS-CoV-2 characterizes severe COVID-19 in adults. Previous reports have found prolonged LRT shedding for weeks in critically ill adult patients (Buetti et al., 2020; Huang et al., 2020). Our results provide additional insights into the LRT kinetics of SARS-CoV-2 in adults, particularly soon after symptom onset. They reveal a severity-associated difference in both shedding and clearance in the LRT which begins, at least, at 4 DFSO; our dataset had limited LRT samples before 4 DFSO. Interestingly, our analyses also reveal an early bifurcation between the LRT and URT for severe COVID-19. That is, severe disease is associated with higher rVLs in the LRT than the URT throughout the analyzed period, whereas nonsevere illness shows similar shedding between the LRT and URT. This suggests that the effective immune responses associated with milder COVID-19, including innate, cross-reactive, and coordinated adaptive immunity (Lucas et al., 2020; Rydyznski Moderbacher et al., 2020; Ng et al., 2020; Pierce et al., 2020; Takahashi et al., 2020), do not significantly inhibit early, or prolonged, SARS-CoV-2 replication in the LRT of severely affected adults. Hence, poorly controlled LRT replication tends to continue, at least, to 10 DFSO, which coincides with the timing of clinical deterioration (median, 10 DFSO) (Solomon et al., 2020; Zhou et al., 2020). Moreover, the bifurcated profiles of LRT shedding concur with the observed severity-associated differences in lung pathology, in which severe cases show hyperinflammation and progressive loss of epithelial-endothelial integrity (Magro et al., 2020; Matheson and Lehner, 2020; Xu et al., 2020b).\n\nThus, LRT shedding may predict COVID-19 severity, serving as a prognostic factor. As emerging evidence suggests that timing influences the efficacy of anti-SARS-CoV-2 therapies (O\u2019Brien et al., 2021; Weinreich et al., 2021a), early clinical decision making is crucial. A prognostic indicator guides early risk stratification, identifying high-risk individuals before they deteriorate into severe COVID-19. This facilitates the early administration of the efficacious therapies to these patients and may reduce the incidence of severe and fatal COVID-19 (O\u2019Brien et al., 2021; Weinreich et al., 2021a; Weinreich et al., 2021b). Additional studies should further explore the prognostic utility of LRT shedding in clinical settings, including toward improving COVID-19 outcomes.\n\nLRT shedding can be assessed noninvasively. This study predominantly analyzed expectorated sputum, which can be obtained from a deep cough, as the LRT specimen. Since SARS-CoV-2 detection occurs more frequently in expectorated sputum than in URT specimens, including nasopharyngeal swabs (Fajnzylber et al., 2020; Wang et al., 2020; W\u00f6lfel et al., 2020), SARS-CoV-2 quantitation from sputum may more accurately diagnose COVID-19 while simultaneously predicting severity. Noninvasively induced sputum presents a potential alternative for patients without sputum production (Lai et al., 2020), although it was not assessed in this study and its prognostic utility remains to be evaluated. Furthermore, our data suggest that sex and age may not significantly influence prognostic thresholds but that the time course of disease may. Prognostication should account for the dynamics of shedding, and both the rVL and DFSO of a sputum specimen should be considered.\n\nWhile our analyses did not account for virus infectivity, higher SARS-CoV-2 rVL is associated with a higher likelihood of culture positivity, from adults (van Kampen et al., 2021; W\u00f6lfel et al., 2020) as well as children (L\u2019Huillier et al., 2020), and a higher transmission risk (Marks et al., 2021). Hence, our results suggest that infectiousness increases with COVID-19 severity, concurring with epidemiological analyses (Li et al., 2021; Sayampanathan et al., 2021). They also suggest that adult and pediatric infections of similar severity have comparable infectiousness, reflecting epidemiological findings on age-based infectiousness (Laxminarayan et al., 2020; Li et al., 2021; Sun et al., 2021). Furthermore, since respiratory aerosols are typically produced from the LRT (Johnson et al., 2011), severe SARS-CoV-2 infections may have increased, and extended, risk for aerosol transmission. As severe cases tend to be hospitalized, this provides one possible explanation for the elevated risk of COVID-19 among healthcare workers in inpatient settings (Nguyen et al., 2020); airborne precautions, such as the use of N95 or air-purifying respirators, should be implemented around patients with COVID-19.\n\nOur study has limitations. First, while our study design systematically developed a large, diverse dataset, there were few severe female cases with LRT specimens and no severe pediatric cases included. Statistical comparisons involving these groups were not conducted. Additional studies should permit these remaining comparisons. Second, our analyses did not account for additional case characteristics, including comorbidities, and their relationships with SARS-CoV-2 kinetics remain unclear. Third, the review found that expectorated sputum was the predominant LRT specimen used for SARS-CoV-2 quantitation, and our analyses on LRT kinetics may not generalize to cases without sputum production. The systematic dataset also consisted largely of hospitalized patients, and our results may not generalize to asymptomatic infections.\n\nIn summary, our findings provide insight into the kinetics of SARS-CoV-2 and describe virological factors that facilitate the pathogenesis of severe COVID-19. They show that high, persistent LRT shedding characterizes severe disease in adults, highlighting the potential prognostic utility of SARS-CoV-2 quantitation from LRT specimens. Lastly, each study identified by our systematic review collected specimens before October 2020. As widespread transmission of the emerging variants of concerns likely occurred after this date (Davies et al., 2021; Konings et al., 2021; Tegally et al., 2021), our study presents a quantitative resource to assess the effects of their mutations on respiratory shedding levels and dynamics.\n",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "ab0f4671-ca23-49a8-8080-ad2de7b2e587",
+      "submission_id": "d52a3941-93a4-47b7-b8ef-b91f5b448a82",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jos W Van der Meer, Radboud University Medical Centre Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70458.sa1](https://doi.org/10.7554/eLife.70458.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors performed a systematic literature review and meta-analysis to develop a dataset of respiratory viral loads (rVLs) for SARS-CoV-2. Focus was on finding the relation between individual case characteristics (e.g. disease severity, age and sex) and lower and upper respiratory tract viral loads. COVID-19 severity, rather than sex or age, predicts SARS-CoV-2 kinetics, and SARS-CoV-2 viral load from lower respiratory tract specimens seems to predict severe disease days before clinical deterioration for COVID-19 patients.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"SARS-CoV-2 shedding dynamics across the respiratory tract, sex and disease severity for adult and pediatric COVID-19: a systematic review and modeling study\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Jos Van der Meer as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Lucie Vermeulen (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) It is not clear how surprising the association between LRT and disease severity is. For example, a similar result was found by Buetti et al., Critical Care, 2020 (\"viral shedding in LRT lasted almost 30\u2009days in median in critically ill patients, and the viral load in the LRT was associated with the 6-week mortality.\") and the statement made in the methods of this paper (\"In COVID-19 cases, rVL tends to diminish exponentially after 1 DFSO in the URT, whereas it tends to do so after 4 DFSO in the LRT (Bernheim et al., 2020; Chen et al., 2021; Wolfel et al., 2020).\" ) also indicates that a faster decrease of viral load has been observed in URT compared to LRT. The present analysis certainly adds to these findings, but the observation does not seem to be completely new.\n\n2) Lines 322-: \"Data from serially sampled asymptomatic cases were included, and the day of laboratory diagnosis was referenced as 0 DFSO\". It would be interesting to compare the dynamics observed in those serially sampled patients to the patterns shown in Figure 2 and derived mostly from cross-sectional data.\n\n3) Lines 366-:\"We used regression analysis to assess the respiratory shedding of SARS-CoV-2 and compare age, sex or severity groups. \" Please specify the type of regression analysis (I guess this was \"normal\" linear regression assuming normally distributed erros). How are measurements with undetectable virus loads included in the analysis? Wouldn't these measurements call for the use of censored regression models?\n\n4) The approach of how the authors estimated the AUC-ROC for the prediction of disease severity is not fully clear. Why did the authors need to first fit a distribution to the viral load values? The ROC curve and its AUC value can be computed directly from the observations, without this intermediate step.\n\n5) Line 381-382: You write \"Regression models were extrapolated (to 0 log10 copies/ml, rather than an assay detection limit) to estimate the duration of shedding.\" How large is the effect of extrapolating to 0 instead of to the detection limit? Some discussion on this is warranted.\n\n6) Line 390: Why was the Weibull distribution chosen? Some reasoning for this could be added to the paper (in methods, discussion or supplement)\n\n7) Line 399-400: \"The fitted Weibull distributions were used to estimate the accuracy when using URT or LRT rVLs of SARS-CoV-2 as a prognostic indicator for SARS-CoV-2 infection.\" Do you mean severity of infection here?\n\n8) Table 1: There are relatively few lower respiratory samples included in the analysis, compared to the number of upper respiratory samples. What is typically the reason that a LRT sample is taken from a patient? And following, is there any possible association of taking an LRT sample with patient characteristics included or excluded in this study that could influence the results? Then some discussion on this would be warranted.\n\n9) Figure 4: Could it be made clearer in the figure which panels concern URT and which LRT? Now the reader has to carefully read the caption in order to deduce this.Reviewer #1 (Recommendations for the authors):\n\nThis manuscript presents a systematic review and regression analysis to analyze the association between upper and lower respiratory tract shedding (URT and LRT) of SARS-CoV-2 and disease severity. In addition, the authors study the impact of the days from symptoms onset on shedding in the two compartments. Overall, the presented results provide an interesting synthesis of the literature on these issues.\n\nReviewer #2 (Recommendations for the authors):\n\nThe study appears robust and comprehensive, and relevant quality checks for systematic review have been applied. The results are valuable and contribute to the scientific knowledge in this field.\n\nInteresting findings include:\n\n\u2013 Adult patients with severe disease had on average a somewhat higher upper respiratory tract viral load at 1 day from symptom onset than patients with non-severe disease. After this stratification for severity, respiratory viral loads did not differ significantly for age and sex. Rates of viral clearing were similar. Children and adults with non-severe disease had similar upper respiratory tract viral loads and viral clearance rates.\n\n\u2013 High and persistent lower respiratory tract shedding of SARS-CoV-2 was associated with severe but not non-severe illness. The difference in lower respiratory viral load for severe and non-severe cases was more pronounced than for upper respiratory tract viral loads. In contrast to the upper respiratory tract, viral clearance from the lower respiratory tract was more rapid in non-severe than in severe cases. Again, age and sex did not differ significantly after stratification for severity.\n\n\u2013 The authors then aimed to assess whether the observed difference in shedding in the first days after start of symptoms could be used to predict which people would develop more severe COVID-19. Typically, deterioration into severe disease only happens around 10 days from symptom onset. The authors conclude that upper respiratory tract viral shedding is so heterogeneous that its predictive capacity of disease severity is inaccurate. In contrast, lower respiratory tract shedding does have a predictive accuracy of up to 81% for disease severity.\n\nPotential impact: Lower respiratory tract viral load could thus potentially be used as an early warning for developing severe COVID-19. However, lower respiratory tract samples are not routinely taken, the standard nasopharyngeal swab is an upper respiratory sample. Some discussion on the practical applicability of this suggestion could enhance the paper's impact.\n",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3e3d8e4b-ce79-499e-84a1-c4aa03943b90",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C1",
+      "claim": "As of August 8, 2021, the COVID-19 pandemic has caused more than 202.6 million infections and 4.2 million deaths globally.",
+      "claim_type": "EXPLICIT",
+      "source": "As of August 8, 2021, the coronavirus disease 2019 (COVID-19) pandemic has caused more than 202.6 million infections and 4.2 million deaths globally (Dong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites Dong et al., 2020 as the source for these statistics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "2a0c0615-5109-4543-913e-888b7f8d0d25",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C2",
+      "claim": "For cases that deteriorate into severe COVID-19, deterioration occurs, on median, 10 days after symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "For cases that deteriorate into severe COVID-19, deterioration occurs, on median, 10 days after symptom onset (Solomon et al., 2020; Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Solomon et al., 2020 and Zhou et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "58da7019-d632-4cb6-a807-24302b38f28e",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C3",
+      "claim": "Risk factors for severe illness and death include age, sex, smoking, and comorbidities, such as obesity, hypertension, diabetes, and cardiovascular disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Risk factors for severe illness and death include age, sex, smoking, and comorbidities, such as obesity, hypertension, diabetes, and cardiovascular disease (Onder et al., 2020; Tartof et al., 2020; Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Onder et al., 2020; Tartof et al., 2020; and Zhou et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "220232c5-7e44-4fb3-8a7e-2c89ac0eff9f",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C4",
+      "claim": "Age and sex differences in innate, cross-reactive, and adaptive immunity facilitate the higher risks observed in older and male cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging evidence indicates that age and sex differences in innate, cross-reactive, and adaptive immunity facilitate the higher risks observed in older and male cases (Rydyznski Moderbacher et al., 2020; Ng et al., 2020; Pierce et al., 2020; Takahashi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Rydyznski Moderbacher et al., 2020; Ng et al., 2020; Pierce et al., 2020; and Takahashi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "8acd56a5-bd50-4dbd-9c8a-202f84ed044b",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C5",
+      "claim": "Robust immune responses putatively mediate nonsevere illness, in part, by controlling the replication of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, robust immune responses putatively mediate nonsevere illness, in part, by controlling the replication of SARS-CoV-2 (Lucas et al., 2021; Lucas et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lucas et al., 2021 and Lucas et al., 2020, and involves speculative reasoning ('putatively').",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "0caaa0cc-ee73-413e-8e4d-6e75375b827b",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C6",
+      "claim": "URT viral load has been associated with transmission risk, duration of infectiousness, disease severity, and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "URT viral load has been associated with transmission risk, duration of infectiousness, disease severity, and mortality (Chen et al., 2021b; Fu et al., 2021; Magleby et al., 2020; Marks et al., 2021; Pujadas et al., 2020; van Kampen et al., 2021; Westblade et al., 2020; W\u00f6lfel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "5ac1d2f9-75cb-49fd-b096-06ef28d14b89",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C7",
+      "claim": "Chest computed tomography (CT) evidence of viral pneumonitis suggests pulmonary replication in most symptomatic cases.",
+      "claim_type": "EXPLICIT",
+      "source": "While chest computed tomography (CT) evidence of viral pneumonitis suggests pulmonary replication in most symptomatic cases (Bernheim et al., 2020), the LRT kinetics of SARS-CoV-2, especially as related to disease severity, remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bernheim et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "c22dde21-84af-4dc6-baf8-26d99217d5fe",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C8",
+      "claim": "The systematic dataset included 1266 adults and 136 children with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The systematic dataset included 1266 adults and 136 children with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section of the abstract and supported by Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "10f3888a-d1ff-46a0-a0e9-6305058c5c2e",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C9",
+      "claim": "High, persistent LRT shedding of SARS-CoV-2 characterized severe COVID-19 in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses indicated that high, persistent LRT shedding of SARS-CoV-2 characterized severe COVID-19 in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section of the abstract and supported by regression analyses and data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "97ff144e-59ca-47bf-b7a0-b175d51a8535",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C10",
+      "claim": "Severe cases tended to show slightly higher URT shedding post-symptom onset, but similar rates of viral clearance, when compared to nonsevere infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe cases tended to show slightly higher URT shedding post-symptom onset, but similar rates of viral clearance, when compared to nonsevere infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section of the abstract and supported by regression analyses presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "82f683fd-ec3b-40b7-84a3-7d486543aefb",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C11",
+      "claim": "After stratifying for disease severity, sex and age (including child vs. adult) were not predictive of respiratory shedding.",
+      "claim_type": "EXPLICIT",
+      "source": "After stratifying for disease severity, sex and age (including child vs. adult) were not predictive of respiratory shedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section of the abstract and supported by stratified regression analyses presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "c463a413-ca26-4a30-8b8a-26569a942e41",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C12",
+      "claim": "The estimated accuracy for using LRT shedding as a prognostic indicator for COVID-19 severity was up to 81%.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated accuracy for using LRT shedding as a prognostic indicator for COVID-19 severity was up to 81%, whereas it was up to 65% for URT shedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section of the abstract and supported by distribution analyses and AUC calculations presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "e0cb14eb-d805-400a-8ea0-bda4156accd9",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C13",
+      "claim": "The estimated accuracy for using URT shedding as a prognostic indicator for COVID-19 severity was up to 65%.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated accuracy for using LRT shedding as a prognostic indicator for COVID-19 severity was up to 81%, whereas it was up to 65% for URT shedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section of the abstract and supported by distribution analyses and AUC calculations presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "48fc38f4-28c2-481a-8f96-397368859373",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C14",
+      "claim": "Disease severity, rather than sex or age, predicts SARS-CoV-2 kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Disease severity, rather than sex or age, predicts SARS-CoV-2 kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Conclusions section of the abstract and is an inference from the stratified regression analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "137be6b9-d296-4c57-b274-8318322b6aa1",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C15",
+      "claim": "LRT viral load may prognosticate COVID-19 severity in patients before the timing of deterioration and should do so more accurately than URT viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "LRT viral load may prognosticate COVID-19 severity in patients before the timing of deterioration and should do so more accurately than URT viral load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Conclusions section of the abstract and involves inference and speculation based on the prognostic accuracy analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "2eff4a9d-f563-44a6-82e2-7ee78932a21c",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C16",
+      "claim": "From 1402 COVID-19 cases, 1915 quantitative specimen measurements of SARS-CoV-2 were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "From 1402 COVID-19 cases, we collected 1915 quantitative specimen measurements (viral RNA concentration in a respiratory specimen) of SARS-CoV-2 (Table 1) and used them to estimate rVLs (viral RNA concentration in the respiratory tract) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "07aabbaa-214e-4d37-be84-e9d4a92e0231",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C17",
+      "claim": "For pediatric cases, the search found only nonsevere infections and URT specimen measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "For pediatric cases, the search found only nonsevere infections and URT specimen measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by Table 1 showing 0 LRT specimens for pediatric cases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "a908864f-05ec-4068-89ca-ca599fb8cc16",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C18",
+      "claim": "18 of the 26 contributing studies had low risk of bias according to the modified JBI critical appraisal checklist.",
+      "claim_type": "EXPLICIT",
+      "source": "Appendix 1\u2014table 1 and Appendix 1\u2014table 2 summarize the characteristics of contributing studies, of which 18 had low risk of bias according to the modified JBI critical appraisal checklist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section and refers to the risk of bias assessment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "dcb26a01-a3ac-4c51-ad4a-05109089fe6a",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C19",
+      "claim": "For adult COVID-19, the mean URT rVL at 1 DFSO was significantly greater (p = 0.005) for severely infected cases (8.28 [95% CI: 7.71\u20138.84] log10 copies/ml) than nonsevere ones (7.45 [95% CI: 7.26\u20137.65] log10 copies/ml).",
+      "claim_type": "EXPLICIT",
+      "source": "For adult COVID-19, regression analysis showed that the mean URT rVL at 1 DFSO was significantly greater (p = 0.005) for severely infected cases (8.28 [95% CI: 7.71\u20138.84] log10 copies/ml) than nonsevere ones (7.45 [95% CI: 7.26\u20137.65] log10 copies/ml) (Figure 2A, D,).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "bb404b31-7ea8-478f-93aa-407cfc2dc752",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C20",
+      "claim": "Severe adult cases tended to clear SARS-CoV-2 from the URT at \u20130.31 (95% CI: \u20130.40 to\u20130.22) log10 copies/ml/day while nonsevere ones did so at \u20130.28 (95% CI: \u20130.32 to \u20130.24) log10 copies/ml/day.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, these groups showed comparable URT dynamics post-symptom onset (p for interaction = 0.479), as severe adult cases tended to cleared SARS-CoV-2 from the URT at \u20130.31 (95% CI: \u20130.40 to\u20130.22) log10 copies/ml/day while nonsevere ones did so at \u20130.28 (95% CI: \u20130.32 to \u20130.24) log10 copies/ml/day (Figure 2A, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "11c189ed-cd0c-4d4c-ac5b-fd45c5b1d14b",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C21",
+      "claim": "For severe cases, the estimated mean duration of URT shedding (down to 0 log10 copies/ml) was 27.5 (95% CI: 21.2\u201333.8) DFSO.",
+      "claim_type": "EXPLICIT",
+      "source": "For severe cases, the estimated mean duration of URT shedding (down to 0 log10 copies/ml) was 27.5 (95% CI: 21.2\u201333.8) DFSO; it was 27.9 (95% CI: 24.4\u201331.3) DFSO for nonsevere cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on extrapolation of regression models to estimate shedding duration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "1ea152f3-2bb3-4256-a421-68dd288d2de8",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C22",
+      "claim": "For nonsevere cases, the estimated mean duration of URT shedding (down to 0 log10 copies/ml) was 27.9 (95% CI: 24.4\u201331.3) DFSO.",
+      "claim_type": "EXPLICIT",
+      "source": "For severe cases, the estimated mean duration of URT shedding (down to 0 log10 copies/ml) was 27.5 (95% CI: 21.2\u201333.8) DFSO; it was 27.9 (95% CI: 24.4\u201331.3) DFSO for nonsevere cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on extrapolation of regression models to estimate shedding duration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "4c64da88-6694-43ad-bd59-22f80b21e513",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C23",
+      "claim": "After stratifying adults for disease severity, there were no significant differences in URT shedding levels or dynamics between sex or age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "After stratifying adults for disease severity, our analyses showed no significant differences in URT shedding levels or dynamics between sex or age groups (Figure 2D,E, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by stratified regression analyses presented in the text and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "35f87dc9-556e-4b00-807d-f89ea2ba6194",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C24",
+      "claim": "For severe disease, male and female cases had comparable mean rVLs at 1 DFSO (p = 0.326) and rates of SARS-CoV-2 clearance (p for interaction = 0.280).",
+      "claim_type": "EXPLICIT",
+      "source": "For severe disease, male and female cases had comparable mean rVLs at 1 DFSO (p = 0.326) and rates of SARS-CoV-2 clearance (p for interaction = 0.280).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "6c46f5ed-0f87-4b61-9a81-f09626299591",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C25",
+      "claim": "For nonsevere illness, male and female cases had no significant difference in mean rVL at 1 DFSO (p = 0.085) or URT dynamics (p for interaction = 0.644).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, for nonsevere illness, male and female cases had no significant difference in mean rVL at 1 DFSO (p = 0.085) or URT dynamics (p for interaction = 0.644).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "06c0998f-712a-4414-8556-807bb99f6575",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C26",
+      "claim": "For nonsevere illness, younger and older adults had no significant difference in URT shedding levels at 1 DFSO (p = 0.294) or post-symptom onset dynamics (p for interaction = 0.100).",
+      "claim_type": "EXPLICIT",
+      "source": "For nonsevere illness, younger and older adults had no significant difference in URT shedding levels at 1 DFSO (p = 0.294) or post-symptom onset dynamics (p for interaction = 0.100).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "34c4cc2f-7899-40ef-a866-2355dbe14d53",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C27",
+      "claim": "For severe disease, younger and older adult age groups showed similar mean rVLs at 1 DFSO (p = 0.915) and rates of viral clearance (p for interaction = 0.359).",
+      "claim_type": "EXPLICIT",
+      "source": "For severe disease, the adult age groups showed similar mean rVLs at 1 DFSO (p = 0.915) and rates of viral clearance (p for interaction = 0.359).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "f9cc76e4-5a7b-44e3-a55c-66db7011f0f5",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C28",
+      "claim": "For pediatric COVID-19, the mean URT rVL at 1 DFSO was 7.32 (95% CI: 6.78\u20137.86) log10 copies/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "For pediatric COVID-19, regression estimated that, in the URT, the mean rVL at 1 DFSO was 7.32 (95% CI: 6.78\u20137.86) log10 copies/ml and the SARS-CoV-2 clearance rate was \u20130.32 (95% CI: \u20130.42 to \u20130.22) log10 copies/ml/day (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "fc62621f-a7f1-4256-bd39-fff5136cda63",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C29",
+      "claim": "For pediatric COVID-19, the SARS-CoV-2 clearance rate in the URT was \u20130.32 (95% CI: \u20130.42 to \u20130.22) log10 copies/ml/day.",
+      "claim_type": "EXPLICIT",
+      "source": "For pediatric COVID-19, regression estimated that, in the URT, the mean rVL at 1 DFSO was 7.32 (95% CI: 6.78\u20137.86) log10 copies/ml and the SARS-CoV-2 clearance rate was \u20130.32 (95% CI: \u20130.42 to \u20130.22) log10 copies/ml/day (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "d282ca4a-ba57-47cb-b0d5-0725f65bceee",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C30",
+      "claim": "The estimated mean duration of URT shedding (down to 0 log10 copies/ml) was 22.6 (95% CI: 17.0\u201328.1) DFSO for children with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated mean duration of URT shedding (down to 0 log10 copies/ml) was 22.6 (95% CI: 17.0\u201328.1) DFSO for children with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on extrapolation of regression models to estimate shedding duration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "f0b4fca2-9cfc-4a66-99b1-cc8e22b7eed5",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C31",
+      "claim": "Between pediatric cases with nonsevere illness and adults with nonsevere illness, both URT shedding at 1 DFSO (p = 0.653) and URT dynamics (p for interaction = 0.400) were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Between pediatric cases, who had nonsevere illness in our dataset, and adults with nonsevere illness, both URT shedding at 1 DFSO (p = 0.653) and URT dynamics (p for interaction = 0.400) were similar (Figure 2B, F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "963cb7c6-9620-406c-87e0-5e0c85edc552",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C32",
+      "claim": "URT shedding at 1 DFSO was greater for severely affected adults when compared to children with nonsevere disease (p = 0.017), but URT dynamics remained similar (p for interaction = 0.863).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, URT shedding at 1 DFSO was greater for severely affected adults when compared to children with nonsevere disease (p = 0.017), but URT dynamics remained similar (p for interaction = 0.863) (Figure 2C, F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "f9835cec-40ce-4d88-b397-ba2f5e6f0282",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C33",
+      "claim": "At 4 DFSO, the mean rVL in the LRT of severe cases (8.42 [95% CI: 7.67\u20139.17] log10 copies/ml) was significantly greater (p = 0.006) than that of nonsevere cases (6.82 [95% CI: 5.95\u20137.69] log10 copies/ml).",
+      "claim_type": "EXPLICIT",
+      "source": "At the initial day in our analyzed period (4 DFSO), the mean rVL in the LRT of severe cases (8.42 [95% CI: 7.67\u20139.17] log10 copies/ml) was significantly greater (p = 0.006) than that of nonsevere cases (6.82 [95% CI: 5.95\u20137.69] log10 copies/ml) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "3d15b94b-44cf-4770-b835-9893c0ddb0b6",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C34",
+      "claim": "Severe cases had persistent LRT shedding, with no significant trend in SARS-CoV-2 clearance up to 10 DFSO (\u20130.14 [95% CI: \u20130.32\u20130.030] log10 copies/ml/day, p = 0.105).",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, severe cases had persistent LRT shedding, with no significant trend in SARS-CoV-2 clearance up to 10 DFSO (\u20130.14 [95% CI: \u20130.32\u20130.030] log10 copies/ml/day, p = 0.105), whereas nonsevere cases rapidly cleared the virus from the LRT (\u20130.41 [95% CI: \u20130.64 to \u20130.19] log10 copies/ml/day, p < 0.001) (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "ee855aad-b0c9-449c-ba0d-0ca6fbcebaf5",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C35",
+      "claim": "Nonsevere cases rapidly cleared the virus from the LRT (\u20130.41 [95% CI: \u20130.64 to \u20130.19] log10 copies/ml/day, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, severe cases had persistent LRT shedding, with no significant trend in SARS-CoV-2 clearance up to 10 DFSO (\u20130.14 [95% CI: \u20130.32\u20130.030] log10 copies/ml/day, p = 0.105), whereas nonsevere cases rapidly cleared the virus from the LRT (\u20130.41 [95% CI: \u20130.64 to \u20130.19] log10 copies/ml/day, p < 0.001) (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "74e368d6-f389-4cfa-934e-e60a1cea7b52",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C36",
+      "claim": "For nonsevere cases, the estimated mean duration of LRT shedding (down to 0 log10 copies/ml) was 20.4 (95% CI: 13.2\u201327.7) DFSO.",
+      "claim_type": "EXPLICIT",
+      "source": "For nonsevere cases, the estimated mean duration of LRT shedding (down to 0 log10 copies/ml) was 20.4 (95% CI: 13.2\u201327.7) DFSO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on extrapolation of regression models to estimate shedding duration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "7a6eba17-fccb-458d-9922-bd227dd51c35",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C37",
+      "claim": "For severe COVID-19, younger and older adults had comparable mean LRT rVLs at 4 DFSO (p = 0.745).",
+      "claim_type": "EXPLICIT",
+      "source": "For severe COVID-19, regression analysis showed comparable mean LRT rVLs at 4 DFSO between younger and older adults (p = 0.745) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "33b6f97b-8a65-4ee0-83a0-1189570850ca",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C38",
+      "claim": "For severe cases, younger adults had no significant trend in LRT SARS-CoV-2 clearance (\u20130.20 [95% CI: \u20130.32 to 0.042] log10 copies/ml/day, p = 0.105).",
+      "claim_type": "EXPLICIT",
+      "source": "For severe cases, both age groups also had persistent LRT shedding in the analyzed period: younger adults (\u20130.20 [95% CI: \u20130.32 to 0.042] log10 copies/ml/day, p = 0.105) and older adults (\u20130.13 [95% CI: \u20130.39 to 0.13] log10 copies/ml/day, p = 0.316) both had no significant trend in SARS-CoV-2 clearance (Figure 3E, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "85cbe49e-dd41-4b1d-82fa-49a4c3fbe71f",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C39",
+      "claim": "For severe cases, older adults had no significant trend in LRT SARS-CoV-2 clearance (\u20130.13 [95% CI: \u20130.39 to 0.13] log10 copies/ml/day, p = 0.316).",
+      "claim_type": "EXPLICIT",
+      "source": "For severe cases, both age groups also had persistent LRT shedding in the analyzed period: younger adults (\u20130.20 [95% CI: \u20130.32 to 0.042] log10 copies/ml/day, p = 0.105) and older adults (\u20130.13 [95% CI: \u20130.39 to 0.13] log10 copies/ml/day, p = 0.316) both had no significant trend in SARS-CoV-2 clearance (Figure 3E, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "810b7b89-1f69-4d3d-bde8-733408e747b1",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C40",
+      "claim": "Severely affected male cases had no significant trend in LRT shedding (0.001 [95% CI: \u20130.16 to 0.19] log10 copies/ml/day, p = 0.988).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, severely affected male cases had no significant trend in LRT shedding (0.001 [95% CI: \u20130.16 to 0.19] log10 copies/ml/day, p = 0.988) (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "1e723d5c-4634-4943-b889-77bd9c83ce03",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C41",
+      "claim": "Nonsevere cases showed similar SARS-CoV-2 shedding between the URT and LRT.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, nonsevere cases showed similar SARS-CoV-2 shedding between the URT and LRT (Figure 3B), whereas severe cases shed greater and longer in the LRT than in the URT (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of regression analyses presented in the text and Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "17c2e517-5016-47d9-a8ab-1a0e3f7eb0fa",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C42",
+      "claim": "Severe cases shed greater and longer in the LRT than in the URT.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, nonsevere cases showed similar SARS-CoV-2 shedding between the URT and LRT (Figure 3B), whereas severe cases shed greater and longer in the LRT than in the URT (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of regression analyses presented in the text and Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "880c4f1a-7e1f-4bf1-83e2-4e352f168b2b",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C43",
+      "claim": "At 4 DFSO, the URT rVL of nonsevere adults was 6.62 (95% CI: 6.50\u20136.74) log10 copies/ml, which was not different from the LRT rVL of nonsevere adults (p = 0.651).",
+      "claim_type": "EXPLICIT",
+      "source": "At 4 DFSO, the URT rVL of nonsevere adults was 6.62 (95% CI: 6.50\u20136.74) log10 copies/ml, which was not different from the LRT rVL of nonsevere adults (p = 0.651).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "e20f93e1-7c5b-450c-ab1b-a190a74936a4",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C44",
+      "claim": "For severe adults, the rVL at 4 DFSO was significantly lower in the URT (7.34 [95% CI: 7.01\u20137.68] log10 copies/ml) than the LRT (p = 0.031).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, for severe adults, the rVL at 4 DFSO was significantly lower in the URT (7.34 [95% CI: 7.01\u20137.68] log10 copies/ml) than the LRT (p = 0.031) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis results presented in the text and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "fe17b642-233b-4188-967f-cbb7c93efbe1",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C45",
+      "claim": "Both severe and nonsevere adult COVID-19 showed broad variation in URT shedding throughout disease course.",
+      "claim_type": "EXPLICIT",
+      "source": "While regression analyses compared mean shedding levels and dynamics, we fitted rVLs to Weibull distributions to assess the heterogeneity in rVL. Both severe and nonsevere adult COVID-19 showed broad variation in URT shedding throughout disease course (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by distribution analyses presented in the text and Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "7121e40c-439c-4a25-89fd-9d7be1f3adc7",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C46",
+      "claim": "For severe disease, the standard deviation (SD) of URT rVL was 1.86, 2.34, 1.89, and 1.90 log10 copies/ml at 2, 4, 7, and 10 DFSO, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For severe disease, the standard deviation (SD) of rVL was 1.86, 2.34, 1.89, and 1.90 log10 copies/ml at 2, 4, 7, and 10 DFSO, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on distribution analyses of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "42c09cfe-1f97-4158-bb1a-11b051b87a6e",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C47",
+      "claim": "For nonsevere illness, the standard deviation of URT rVL was 2.08, 1.90, 1.89, and 1.96 log10 copies/ml at 2, 4, 7, and 10 DFSO, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For nonsevere illness, these SDs were 2.08, 1.90, 1.89, and 1.96 log10 copies/ml, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on distribution analyses of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "037d6d2c-a3d7-4f8b-8523-0ce8a7eaa750",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C48",
+      "claim": "The top 2\u20139% of adults with COVID-19 harbored 80% of the SARS-CoV-2 copies in the URT on each DFSO.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our distribution analyses indicated that the top 2\u20139% of adults with COVID-19 harbored 80% of the SARS-CoV-2 copies in the URT on each DFSO (Figure 4\u2014figure supplement 1A-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on cumulative distribution analyses presented in the text and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "c59140ca-1783-4bed-9956-8b7465ad07d8",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C49",
+      "claim": "The distributions of severe and nonsevere LRT shedding bifurcated along disease course.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the distributions of severe and nonsevere LRT shedding bifurcated along disease course (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by distribution analyses presented in the text and Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "5e5f9c83-d942-4087-86c7-a95b61b555f1",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C50",
+      "claim": "At 6 DFSO, the estimate at the 80th case percentile of LRT rVL was 9.40 (95% CI: 8.67\u201310.20) log10 copies/ml for severe COVID-19, while it was 7.66 (95% CI: 6.65\u20138.83) log10 copies/ml for nonsevere illness.",
+      "claim_type": "EXPLICIT",
+      "source": "At 6 DFSO, the estimate at the 80th case percentile of LRT rVL was 9.40 (95% CI: 8.67\u201310.20) log10 copies/ml for severe COVID-19, while it was 7.66 (95% CI: 6.65\u20138.83) log10 copies/ml for nonsevere illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on distribution analyses of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "afe05167-0707-4fb6-8e3f-2ecdb1d3e1c7",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C51",
+      "claim": "At 10 DFSO, the 80th case percentile estimates for LRT rVL were 8.63 (95% CI: 8.04\u20139.26) and 6.01 (95% CI: 4.65\u20137.78) log10 copies/ml for severe and nonsevere disease, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "At 10 DFSO, the difference between 80th case percentile estimates expanded, as they were 8.63 (95% CI: 8.04\u20139.26) and 6.01 (95% CI: 4.65\u20137.78) log10 copies/ml for severe and nonsevere disease, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on distribution analyses of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "a07029a5-4037-465f-943a-7bf0c75ea552",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C52",
+      "claim": "Nonsevere illness was associated with greater skewing in LRT shedding than severe disease in the analyzed period.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our data indicated that nonsevere illness was associated with greater skewing in LRT shedding than severe disease in the analyzed period (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by distribution analyses presented in the text and Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "1258dc9f-d740-4fa9-8fd3-9e4082259307",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C53",
+      "claim": "For nonsevere COVID-19, the SD of LRT rVL was 1.92, 2.01, and 2.09 log10 copies/ml at 6, 8, and 10 DFSO, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For nonsevere COVID-19, the SD of rVL was 1.92, 2.01, and 2.09 log10 copies/ml at 6, 8, and 10 DFSO, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on distribution analyses of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "995f4712-d745-46f8-8eae-4ea85ca8d475",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C54",
+      "claim": "For severe disease, the SD of LRT rVL was 1.25, 1.37, and 1.61 log10 copies/ml for 6, 8, and 10 DFSO, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For severe disease, it was lesser at 1.25, 1.37, and 1.61 log10 copies/ml for 6, 8, and 10 DFSO, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on distribution analyses of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "9f1a22b7-5927-4ec3-852e-db0011598023",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C55",
+      "claim": "On each DFSO, the top 2\u201312% of cases harbored 80% of the LRT copies of SARS-CoV-2 for adults with nonsevere COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "On each DFSO, the top 2\u201312% of cases harbored 80% of the LRT copies of SARS-CoV-2 for adults with nonsevere COVID-19, whereas it was the top 10\u201320% of cases for adults with severe disease (Figure 4\u2014figure supplement 1, E to H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on cumulative distribution analyses presented in the text and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "75b58cbb-e7e4-4c8a-b5de-9ef70d587c02",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C56",
+      "claim": "On each DFSO, the top 10\u201320% of cases harbored 80% of the LRT copies of SARS-CoV-2 for adults with severe disease.",
+      "claim_type": "EXPLICIT",
+      "source": "On each DFSO, the top 2\u201312% of cases harbored 80% of the LRT copies of SARS-CoV-2 for adults with nonsevere COVID-19, whereas it was the top 10\u201320% of cases for adults with severe disease (Figure 4\u2014figure supplement 1, E to H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on cumulative distribution analyses presented in the text and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "15facbee-33c3-4c20-b5f3-15a170d50eb2",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C57",
+      "claim": "At 5 DFSO, the estimated specificity was 93.3% and the estimated sensitivity was 64.4% at a prognostic threshold of 9.10 log10 copies/ml for LRT shedding.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at 5 DFSO, the estimated specificity was 93.3% and the estimated sensitivity was 64.4% at a prognostic threshold of 9.10 log10 copies/ml (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on cumulative distribution analyses presented in the text and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "6d315908-5285-4854-8fb1-b928b6e233b7",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C58",
+      "claim": "For 8 DFSO, the estimated specificity and sensitivity was 73.1% and 88.8%, respectively, at a prognostic threshold of 5.95 log10 copies/ml for LRT shedding.",
+      "claim_type": "EXPLICIT",
+      "source": "For 8 DFSO, the estimated specificity and sensitivity was 73.1% and 88.8%, respectively, at a prognostic threshold of 5.95 log10 copies/ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cumulative distribution analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "d410b2a8-bfce-4db3-b6e7-41bf97b83ead",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C59",
+      "claim": "LRT shedding more accurately predicts COVID-19 severity than does URT shedding.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data indicated that LRT shedding more accurately predicts COVID-19 severity than does URT shedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the prognostic accuracy analyses comparing URT and LRT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "d64679d3-d447-4997-8c9f-2e5335556cc0",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C60",
+      "claim": "Adults with severe COVID-19 showed slightly higher rVLs shortly after symptom onset in the URT, but similar SARS-CoV-2 clearance rates, when compared with their nonsevere counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the URT, we found that adults with severe COVID-19 showed slightly higher rVLs shortly after symptom onset, but similar SARS-CoV-2 clearance rates, when compared with their nonsevere counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes findings from regression analyses presented earlier in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "e7e71502-430f-4646-abda-71e23e35f667",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C61",
+      "claim": "Sex and age had nonsignificant effects on SARS-CoV-2 shedding after stratifying for disease severity.",
+      "claim_type": "EXPLICIT",
+      "source": "After stratifying for disease severity, our analyses showed that sex and age had nonsignificant effects on SARS-CoV-2 shedding for each included analysis (summarized in Appendix 1\u2014table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes findings from stratified regression analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "babf3dc5-ae1e-44e2-b2c5-cef01f649a20",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C62",
+      "claim": "While sex and age influence the tendency to develop severe COVID-19, there is no such sex dimorphism or age distinction in shedding among cases of similar severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while sex and age influence the tendency to develop severe COVID-19 (Onder et al., 2020; Tartof et al., 2020; Zhou et al., 2020), we find no such sex dimorphism or age distinction in shedding among cases of similar severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim combines established knowledge (cited) with findings from the current study's analyses.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "c41ca1fa-0b8e-4ecf-b7ae-0d72c5b67a53",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C63",
+      "claim": "Children with nonsevere illness show similar URT shedding post-symptom onset as adults with nonsevere illness.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes children, who had nonsevere illness in our study and show similar URT shedding post-symptom onset as adults with nonsevere illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on regression analyses comparing pediatric and adult cases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "72c9d68d-18bc-499b-b363-cb0318b87f03",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C64",
+      "claim": "High, persistent LRT shedding of SARS-CoV-2 characterizes severe COVID-19 in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our analyses indicate that high, persistent LRT shedding of SARS-CoV-2 characterizes severe COVID-19 in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes findings from LRT regression analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "7edbd505-7fbe-4595-94e5-61d4a97d54ec",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C65",
+      "claim": "Previous reports have found prolonged LRT shedding for weeks in critically ill adult patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports have found prolonged LRT shedding for weeks in critically ill adult patients (Buetti et al., 2020; Huang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Buetti et al., 2020 and Huang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "6b8cf811-6fa5-4a50-aba1-23fe73b2e018",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C66",
+      "claim": "A severity-associated difference in both shedding and clearance in the LRT begins, at least, at 4 DFSO.",
+      "claim_type": "EXPLICIT",
+      "source": "They reveal a severity-associated difference in both shedding and clearance in the LRT which begins, at least, at 4 DFSO; our dataset had limited LRT samples before 4 DFSO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on regression analyses of LRT data and acknowledges data limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "27327e95-23aa-4c66-aa04-a77e0aa56072",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C67",
+      "claim": "Severe disease is associated with higher rVLs in the LRT than the URT throughout the analyzed period, whereas nonsevere illness shows similar shedding between the LRT and URT.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our analyses also reveal an early bifurcation between the LRT and URT for severe COVID-19. That is, severe disease is associated with higher rVLs in the LRT than the URT throughout the analyzed period, whereas nonsevere illness shows similar shedding between the LRT and URT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of regression analyses between LRT and URT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "38991f9c-3dd0-4bc5-b7e6-5a61ab07aeba",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C68",
+      "claim": "The effective immune responses associated with milder COVID-19 do not significantly inhibit early, or prolonged, SARS-CoV-2 replication in the LRT of severely affected adults.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the effective immune responses associated with milder COVID-19, including innate, cross-reactive, and coordinated adaptive immunity (Lucas et al., 2020; Rydyznski Moderbacher et al., 2020; Ng et al., 2020; Pierce et al., 2020; Takahashi et al., 2020), do not significantly inhibit early, or prolonged, SARS-CoV-2 replication in the LRT of severely affected adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the LRT shedding data combined with cited knowledge about immune responses.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "0232075c-2ef8-4651-994f-7eb164233479",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C69",
+      "claim": "Poorly controlled LRT replication tends to continue, at least, to 10 DFSO, which coincides with the timing of clinical deterioration (median, 10 DFSO).",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, poorly controlled LRT replication tends to continue, at least, to 10 DFSO, which coincides with the timing of clinical deterioration (median, 10 DFSO) (Solomon et al., 2020; Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim combines findings from LRT analyses with cited knowledge about timing of deterioration.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "88199c08-9f44-45f5-81f3-ee8824741990",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C70",
+      "claim": "The bifurcated profiles of LRT shedding concur with the observed severity-associated differences in lung pathology, in which severe cases show hyperinflammation and progressive loss of epithelial-endothelial integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the bifurcated profiles of LRT shedding concur with the observed severity-associated differences in lung pathology, in which severe cases show hyperinflammation and progressive loss of epithelial-endothelial integrity (Magro et al., 2020; Matheson and Lehner, 2020; Xu et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim connects findings from LRT analyses with cited knowledge about lung pathology.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "dd04badf-bde2-4f51-b77a-583282a46b2b",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C71",
+      "claim": "LRT shedding may predict COVID-19 severity, serving as a prognostic factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, LRT shedding may predict COVID-19 severity, serving as a prognostic factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the prognostic accuracy analyses and involves speculation about clinical utility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "cb0e37f3-a9e8-48c8-8971-995ddfcb4662",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C72",
+      "claim": "Timing influences the efficacy of anti-SARS-CoV-2 therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "As emerging evidence suggests that timing influences the efficacy of anti-SARS-CoV-2 therapies (O'Brien et al., 2021; Weinreich et al., 2021a), early clinical decision making is crucial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to O'Brien et al., 2021 and Weinreich et al., 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "9d05e1b5-87ca-467f-bb30-5dbaeea09575",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C73",
+      "claim": "A prognostic indicator guides early risk stratification, identifying high-risk individuals before they deteriorate into severe COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "A prognostic indicator guides early risk stratification, identifying high-risk individuals before they deteriorate into severe COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general medical knowledge about the purpose of prognostic indicators.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "4d74dbde-a79b-467c-a107-4f01b97e80ad",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C74",
+      "claim": "Early administration of efficacious therapies to high-risk patients may reduce the incidence of severe and fatal COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "This facilitates the early administration of the efficacious therapies to these patients and may reduce the incidence of severe and fatal COVID-19 (O'Brien et al., 2021; Weinreich et al., 2021a; Weinreich et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations and involves speculation about potential clinical benefits.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "97f4513f-348a-4e13-b9b3-c323683f0cc8",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C75",
+      "claim": "SARS-CoV-2 detection occurs more frequently in expectorated sputum than in URT specimens, including nasopharyngeal swabs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since SARS-CoV-2 detection occurs more frequently in expectorated sputum than in URT specimens, including nasopharyngeal swabs (Fajnzylber et al., 2020; Wang et al., 2020; W\u00f6lfel et al., 2020), SARS-CoV-2 quantitation from sputum may more accurately diagnose COVID-19 while simultaneously predicting severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fajnzylber et al., 2020; Wang et al., 2020; and W\u00f6lfel et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "3573654a-db5a-478b-8523-7b2fef7cb053",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C76",
+      "claim": "SARS-CoV-2 quantitation from sputum may more accurately diagnose COVID-19 while simultaneously predicting severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since SARS-CoV-2 detection occurs more frequently in expectorated sputum than in URT specimens, including nasopharyngeal swabs (Fajnzylber et al., 2020; Wang et al., 2020; W\u00f6lfel et al., 2020), SARS-CoV-2 quantitation from sputum may more accurately diagnose COVID-19 while simultaneously predicting severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from cited evidence and involves speculation about diagnostic utility.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "199036e7-9066-4e85-9530-0db0a988fe1f",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C77",
+      "claim": "Higher SARS-CoV-2 rVL is associated with a higher likelihood of culture positivity from adults.",
+      "claim_type": "EXPLICIT",
+      "source": "While our analyses did not account for virus infectivity, higher SARS-CoV-2 rVL is associated with a higher likelihood of culture positivity, from adults (van Kampen et al., 2021; W\u00f6lfel et al., 2020) as well as children (L'Huillier et al., 2020), and a higher transmission risk (Marks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to van Kampen et al., 2021 and W\u00f6lfel et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "573c3f0e-36ca-46a4-8e8d-fb8cd9188ca7",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C78",
+      "claim": "Higher SARS-CoV-2 rVL is associated with a higher likelihood of culture positivity from children.",
+      "claim_type": "EXPLICIT",
+      "source": "While our analyses did not account for virus infectivity, higher SARS-CoV-2 rVL is associated with a higher likelihood of culture positivity, from adults (van Kampen et al., 2021; W\u00f6lfel et al., 2020) as well as children (L'Huillier et al., 2020), and a higher transmission risk (Marks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to L'Huillier et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "b17eca8e-7353-4a8f-b4fb-2a159c1ba2c9",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C79",
+      "claim": "Higher SARS-CoV-2 rVL is associated with a higher transmission risk.",
+      "claim_type": "EXPLICIT",
+      "source": "While our analyses did not account for virus infectivity, higher SARS-CoV-2 rVL is associated with a higher likelihood of culture positivity, from adults (van Kampen et al., 2021; W\u00f6lfel et al., 2020) as well as children (L'Huillier et al., 2020), and a higher transmission risk (Marks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Marks et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "8419fa74-e356-4b2b-b3fb-67a2251340f0",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C80",
+      "claim": "Infectiousness increases with COVID-19 severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our results suggest that infectiousness increases with COVID-19 severity, concurring with epidemiological analyses (Li et al., 2021; Sayampanathan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the study's findings, supported by citations to Li et al., 2021 and Sayampanathan et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "b7d25e93-d917-4223-9d84-0f2178c809df",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C81",
+      "claim": "Adult and pediatric infections of similar severity have comparable infectiousness.",
+      "claim_type": "EXPLICIT",
+      "source": "They also suggest that adult and pediatric infections of similar severity have comparable infectiousness, reflecting epidemiological findings on age-based infectiousness (Laxminarayan et al., 2020; Li et al., 2021; Sun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the study's findings, supported by citations to Laxminarayan et al., 2020; Li et al., 2021; and Sun et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "8facea6e-7a44-4cbf-a60c-016b7d4a7d7e",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C82",
+      "claim": "Respiratory aerosols are typically produced from the LRT.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since respiratory aerosols are typically produced from the LRT (Johnson et al., 2011), severe SARS-CoV-2 infections may have increased, and extended, risk for aerosol transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Johnson et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "3cfd313d-0cd6-408c-86a7-4a4841d3b789",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C83",
+      "claim": "Severe SARS-CoV-2 infections may have increased, and extended, risk for aerosol transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since respiratory aerosols are typically produced from the LRT (Johnson et al., 2011), severe SARS-CoV-2 infections may have increased, and extended, risk for aerosol transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from cited knowledge about aerosol production and the study's findings on LRT shedding, involving speculation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "83edee95-8fd1-404b-920f-93d6ecfa3646",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C84",
+      "claim": "There is elevated risk of COVID-19 among healthcare workers in inpatient settings.",
+      "claim_type": "EXPLICIT",
+      "source": "As severe cases tend to be hospitalized, this provides one possible explanation for the elevated risk of COVID-19 among healthcare workers in inpatient settings (Nguyen et al., 2020); airborne precautions, such as the use of N95 or air-purifying respirators, should be implemented around patients with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nguyen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "2600b403-1716-4f5a-af06-b0cd5e54414e",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C85",
+      "claim": "Airborne precautions, such as the use of N95 or air-purifying respirators, should be implemented around patients with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "As severe cases tend to be hospitalized, this provides one possible explanation for the elevated risk of COVID-19 among healthcare workers in inpatient settings (Nguyen et al., 2020); airborne precautions, such as the use of N95 or air-purifying respirators, should be implemented around patients with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a recommendation based on inference from the study's findings and cited evidence.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "e824001e-ead5-4e8b-8dcb-45c40c54cee6",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C86",
+      "claim": "The systematic dataset consisted largely of hospitalized patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The systematic dataset also consisted largely of hospitalized patients, and our results may not generalize to asymptomatic infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "0a6b795e-9dc5-45b5-9fbd-2116d19ad88d",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C87",
+      "claim": "The results may not generalize to asymptomatic infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The systematic dataset also consisted largely of hospitalized patients, and our results may not generalize to asymptomatic infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a limitation of the study and involves speculation about generalizability.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "97ab6b35-95ed-44e7-9fe8-a940d73d1634",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C88",
+      "claim": "Virological factors, especially in the LRT, facilitate the pathogenesis of severe COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings provide insight into the kinetics of SARS-CoV-2 and describe virological factors that facilitate the pathogenesis of severe COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the study's findings about LRT shedding in severe disease.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "27e418a6-fc53-48ba-8524-747e6ac3e5ce",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C89",
+      "claim": "Each study identified by the systematic review collected specimens before October 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, each study identified by our systematic review collected specimens before October 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "5bab3036-ff65-4305-a63a-d25eec417af6",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C90",
+      "claim": "Widespread transmission of the emerging variants of concerns likely occurred after October 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "As widespread transmission of the emerging variants of concerns likely occurred after this date (Davies et al., 2021; Konings et al., 2021; Tegally et al., 2021), our study presents a quantitative resource to assess the effects of their mutations on respiratory shedding levels and dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Davies et al., 2021; Konings et al., 2021; and Tegally et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "0a5a7d94-ca65-41a2-a3db-af0b925ee126",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C91",
+      "claim": "The study presents a quantitative resource to assess the effects of variant mutations on respiratory shedding levels and dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "As widespread transmission of the emerging variants of concerns likely occurred after this date (Davies et al., 2021; Konings et al., 2021; Tegally et al., 2021), our study presents a quantitative resource to assess the effects of their mutations on respiratory shedding levels and dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a potential application of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "380cd4f0-f9ab-4f46-855d-43d415e41418",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C92",
+      "claim": "26 studies met the inclusion criteria for the systematic review.",
+      "claim_type": "EXPLICIT",
+      "source": "Inconsistencies were resolved by discussion and consensus, and 26 studies met the inclusion criteria (Bal et al., 2020; Benotmane et al., 2020; Biguenet et al., 2021; Fajnzylber et al., 2020; Han et al., 2020; Hirotsu et al., 2020; Hurst et al., 2020; Iwasaki et al., 2020; L'Huillier et al., 2020; Lavezzo et al., 2020; Pan et al., 2020; Peng et al., 2020; Shrestha et al., 2020; Sun et al., 2020; To et al., 2020; van Kampen et al., 2021; Vetter et al., 2020; W\u00f6lfel et al., 2020; Wyllie et al., 2020; Xu et al., 2020a; Yazdanpanah, 2021; Yilmaz et al., 2021; Yonker et al., 2020; Zhang et al., 2021; Zheng et al., 2020; Zou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Methods section and supported by the list of included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "cc6afbaa-fac6-4af3-9896-815f71459cc9",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C93",
+      "claim": "The expected uptake volume for swabs is 0.128 \u00b1 0.031 ml (mean \u00b1 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the VTM volume reported in the study along with the expected uptake volume for swabs (0.128 \u00b1 0.031 ml, mean \u00b1 SD) (Warnke et al., 2014), we calculated the dilution factor for each respiratory specimen and then estimated the rVL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Warnke et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "15a01dcc-153e-45a7-8d73-a7aacdfea841",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C94",
+      "claim": "The mean age of adult cases in the systematic dataset was 51.8 (SD 18.0) years.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean age (SD), years\t51.8 (18.0)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "07848e8a-69e3-49b9-b2f4-c2a40a27f4d1",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C96",
+      "claim": "44.0% of adult cases in the systematic dataset were male.",
+      "claim_type": "EXPLICIT",
+      "source": "Male, n (%)\t528 (44.0)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "833c2652-40df-406d-85de-ea7a55bf2c66",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C98",
+      "claim": "The systematic review protocol was prospectively registered on PROSPERO (registration number, CRD42020204637).",
+      "claim_type": "EXPLICIT",
+      "source": "The systematic review protocol was based on our previous study (Chen et al., 2021a) and was prospectively registered on PROSPERO (registration number, CRD42020204637).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "653c666f-455c-4890-a198-758d5d376da8",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C99",
+      "claim": "The systematic review was conducted according to Cochrane methods guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "The systematic review was conducted according to Cochrane methods guidance (Higgins et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Methods section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "3e082815-2a94-4fe3-880c-f296435f47c1",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C100",
+      "claim": "PRISMA reporting guidelines were followed.",
+      "claim_type": "EXPLICIT",
+      "source": "PRISMA reporting guidelines were followed (Moher et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Methods section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "1a4263e7-6242-4f74-83c1-8578ea4fabc7",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C101",
+      "claim": "The systematic search identified 5802 deduplicated results.",
+      "claim_type": "EXPLICIT",
+      "source": "The systematic search (Figure 1\u2014source data 1, Figure 1\u2014source data 2, Figure 1\u2014source data 3, Figure 1\u2014source data 4, Figure 1\u2014source data 5) identified 5802 deduplicated results.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the Results section and supported by the PRISMA flow diagram in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "97a73067-f0b1-4a3d-8217-89580f27c6d7",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "claim_id": "C102",
+      "claim": "Between severities, the difference in LRT clearance rates was marginally above the threshold for statistical significance (p for interaction = 0.053).",
+      "claim_type": "EXPLICIT",
+      "source": "Between severities, the difference in LRT clearance rates was marginally above the threshold for statistical significance (p for interaction = 0.053).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study systematically collected data from 1402 COVID-19 cases (1266 adults, 136 children) across 26 studies, yielding 1915 quantitative SARS-CoV-2 specimen measurements. The systematic review followed established guidelines (PRISMA, Cochrane), was prospectively registered (PROSPERO CRD42020204637), and 18 of 26 studies had low risk of bias. The dataset consisted largely of hospitalized patients with specimens collected before October 2020, and no severe pediatric cases or LRT specimens from children were identified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C16-18, C86, C89, C92, C94, C96, C98-101 collectively describe the systematic review methodology and dataset characteristics. The methods are well-documented with appropriate registration, adherence to guidelines, and transparent reporting of study characteristics and limitations. The data collection process is clearly described with specific numbers that are internally consistent across claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "750e5a19-c93d-48dd-9156-aede8758af08",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the upper respiratory tract (URT), severe adult COVID-19 cases showed significantly higher viral loads at 1 day from symptom onset (DFSO) compared to nonsevere cases (8.28 vs 7.45 log10 copies/ml, p=0.005), but similar viral clearance rates (-0.31 vs -0.28 log10 copies/ml/day, p=0.479) and estimated shedding durations (27.5 vs 27.9 DFSO).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-22, C10, C60 are supported by regression analyses with appropriate statistical tests, confidence intervals, and p-values. The findings show a modest but statistically significant difference in initial viral load but no significant difference in clearance dynamics, which is internally consistent. The extrapolated shedding durations are appropriately caveated as estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "2f431fad-7b80-44eb-b918-f65a5b24ad74",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "After stratifying for disease severity, sex and age showed no significant effects on URT SARS-CoV-2 shedding levels or dynamics in adults. This held true for both severe and nonsevere disease across male/female comparisons and younger/older adult age groups (all p>0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-27, C61-62 consistently report non-significant differences across multiple stratified comparisons with appropriate p-values. The statistical approach of stratifying by severity before examining sex and age effects is sound. The conclusion that severity, rather than sex or age, predicts viral kinetics is well-supported by the data, though the authors appropriately note this applies to cases of similar severity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "b57cea2f-9362-4243-811a-3b87b38bb24d",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pediatric COVID-19 cases (all nonsevere) showed URT viral loads and clearance rates similar to nonsevere adult cases (7.32 vs 7.45 log10 copies/ml at 1 DFSO, p=0.653; -0.32 vs -0.28 log10 copies/ml/day, p=0.400), but lower initial viral loads compared to severe adult cases (p=0.017).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-32, C63 are supported by regression analyses with appropriate statistical comparisons. However, a limitation is that all pediatric cases were nonsevere, preventing assessment of severity effects in children. The comparison between pediatric nonsevere and adult nonsevere cases is valid, but the comparison with severe adults confounds age and severity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "fe5306ac-68e6-4848-95ec-a461a503db9c",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the lower respiratory tract (LRT), severe adult cases showed significantly higher viral loads at 4 DFSO (8.42 vs 6.82 log10 copies/ml, p=0.006) and persistent shedding with no significant clearance trend (-0.14 log10 copies/ml/day, p=0.105), while nonsevere cases rapidly cleared virus (-0.41 log10 copies/ml/day, p<0.001). This severity-associated difference begins at least by 4 DFSO.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-36, C102, C9, C64, C66 are well-supported by regression analyses with appropriate statistics. The p-value for interaction (0.053) is marginally non-significant but the individual clearance rates show clear differences. The persistent LRT shedding in severe cases (no significant clearance) versus rapid clearance in nonsevere cases represents a major finding, though the authors appropriately note limited data before 4 DFSO.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "2148695c-5040-4860-8c78-fb69c9c752ac",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For severe COVID-19, LRT viral loads and clearance dynamics were similar between younger and older adults (p=0.745 for initial levels) and showed no significant clearance trends in either age group or in male cases (all p>0.1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-40 show consistent non-significant differences with appropriate p-values. The persistent LRT shedding (no significant clearance) is consistent across age and sex subgroups within severe disease. However, the female severe group had insufficient samples for analysis, which is appropriately noted as a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "6e025d66-37a0-42ec-88ea-f5cb15c6f4bf",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Nonsevere cases showed similar SARS-CoV-2 shedding between URT and LRT (p=0.651 at 4 DFSO), whereas severe cases showed significantly higher and more prolonged LRT shedding compared to URT (8.42 vs 7.34 log10 copies/ml at 4 DFSO, p=0.031), representing an early bifurcation between respiratory tract compartments in severe disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-44, C67 are supported by within-subject comparisons of URT and LRT shedding. The statistical comparisons are appropriate and the bifurcation pattern is clearly demonstrated. This represents an important mechanistic insight into severe COVID-19 pathogenesis, showing differential viral control between respiratory compartments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "a1fc44dc-8742-4a11-8ae5-10081de727ad",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both severe and nonsevere adult COVID-19 showed broad variation in URT shedding (standard deviations 1.86-2.34 and 1.89-2.08 log10 copies/ml respectively across timepoints), with the top 2-9% of cases harboring 80% of SARS-CoV-2 copies in the URT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-48 are supported by distribution analyses using Weibull fits. The high standard deviations and skewed distributions are clearly documented. The finding that a small percentage of cases harbor most viral copies has important epidemiological implications for transmission, though the analysis is descriptive rather than mechanistic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "94087df7-0db8-4d61-8abc-5e2094c023da",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LRT shedding distributions bifurcated between severe and nonsevere cases over disease course, with severe cases showing higher 80th percentile values (9.40 vs 7.66 log10 copies/ml at 6 DFSO; 8.63 vs 6.01 at 10 DFSO) and less skewing (lower standard deviations). The top 2-12% of nonsevere cases versus 10-20% of severe cases harbored 80% of LRT viral copies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-56 are supported by distribution analyses showing clear separation between severe and nonsevere LRT shedding patterns. The bifurcation is well-documented with specific percentile estimates and confidence intervals. The paradoxical finding of greater skewing in nonsevere cases (despite lower mean values) is interesting and appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "84003bfc-6048-4a38-84a3-6bdfdd05f54f",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LRT shedding showed estimated prognostic accuracy up to 81% for predicting COVID-19 severity (versus 65% for URT), with specific sensitivity/specificity trade-offs at different thresholds (e.g., 93.3% specificity and 64.4% sensitivity at 9.10 log10 copies/ml at 5 DFSO). LRT shedding may serve as a prognostic factor for disease severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C12-13, C57-59, C71 present prognostic accuracy estimates based on distribution overlap/separation (AUC analysis). While the analytical approach is reasonable, the prognostic utility remains uncertain because: (1) this is a retrospective analysis without prospective validation, (2) the accuracy estimates assume optimal threshold selection, (3) clinical utility depends on timing of measurement relative to deterioration (median 10 DFSO), and (4) practical implementation challenges (sputum collection) are not addressed. The claim that LRT shedding \"may\" serve as a prognostic factor is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "962f7d07-713d-47b1-b1cf-7690549bb585",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The effective immune responses associated with milder COVID-19 do not significantly inhibit SARS-CoV-2 replication in the LRT of severely affected adults, with poorly controlled LRT replication continuing to at least 10 DFSO (coinciding with clinical deterioration timing). These virological factors, especially in the LRT, facilitate the pathogenesis of severe COVID-19 and concur with observed lung pathology differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-70, C88 represent mechanistic interpretations of the LRT shedding data, integrated with cited literature on immune responses and lung pathology. The inference that ineffective immune control in the LRT characterizes severe disease is well-supported by the persistent high viral loads. However, the study does not directly measure immune responses, so this remains an inference based on viral kinetics and literature integration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "ca156486-343a-4eb8-b267-e2ee9bc0fde4",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Higher SARS-CoV-2 respiratory viral loads are associated with higher likelihood of culture positivity in both adults and children and higher transmission risk. The study's results suggest that infectiousness increases with COVID-19 severity and that adult and pediatric infections of similar severity have comparable infectiousness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-81 appropriately cite prior literature linking viral load to culture positivity and transmission risk, then make reasonable inferences about infectiousness based on the observed viral load patterns. The authors appropriately note they did not directly measure infectivity. The inferences about severity-associated and age-independent infectiousness are logical extensions supported by cited epidemiological studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "89a78401-ce81-4281-a6bd-fe9e7b98918c",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Since respiratory aerosols are typically produced from the LRT, severe SARS-CoV-2 infections may have increased and extended risk for aerosol transmission. This may explain elevated COVID-19 risk among healthcare workers in inpatient settings, and airborne precautions should be implemented around COVID-19 patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-85 make inferences about aerosol transmission risk based on LRT viral loads and cited knowledge about aerosol production. While the logic is reasonable (high LRT viral loads + LRT as aerosol source = increased aerosol transmission risk), this remains speculative as the study did not measure aerosol production or transmission. The recommendation for airborne precautions (C85) goes beyond what the data directly support, though it may be reasonable from a precautionary principle.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "e7f56198-fbb6-4602-a95d-7d92d63d2591",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Timing influences anti-SARS-CoV-2 therapy efficacy, making early risk stratification crucial. SARS-CoV-2 quantitation from sputum may more accurately diagnose COVID-19 while simultaneously predicting severity, potentially enabling early therapeutic intervention to reduce severe and fatal COVID-19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-76 discuss clinical implications and potential applications. While C72 is supported by citations about therapy timing, claims C73-76 about the clinical utility of sputum-based prognostication are speculative. The diagnostic and prognostic utility of sputum quantitation requires prospective clinical validation, and practical implementation challenges are not addressed. The potential to reduce severe/fatal COVID-19 through early intervention is plausible but unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "6648759b-015b-4ca7-8e7c-c93bbc44c191",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The results may not generalize to asymptomatic infections (given the dataset consisted largely of hospitalized patients). Since specimens were collected before October 2020 (before widespread variant transmission), the study presents a quantitative resource to assess effects of variant mutations on respiratory shedding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87, C90-91 appropriately acknowledge study limitations and potential applications. The limitation regarding generalizability to asymptomatic infections is valid given the hospitalized patient population. The temporal limitation regarding variants is clearly stated, and the suggestion that the study provides a baseline for variant comparisons is reasonable, though such comparisons would require additional data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "298ca508-b828-40ad-935d-a377519dd9b7",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establish COVID-19 epidemiology, risk factors, immune response differences, and prior knowledge about viral load associations and LRT kinetics, along with methodological parameters (swab uptake volume).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-7, C65, C93 represent background information and prior knowledge, all appropriately cited. These establish context for the study but are not original findings. The citations appear appropriate for the claims made, though verification of the cited sources is beyond the scope of this review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    },
+    {
+      "id": "91d5d652-12cb-4e40-ac14-cee048252012",
+      "content_id": "5bb99c58-a3c0-4725-9dbd-b36c72d0be7c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "After stratifying for disease severity, sex and age (including child vs. adult) were not predictive of respiratory shedding. Disease severity, rather than sex or age, predicts SARS-CoV-2 kinetics. LRT viral load may prognosticate COVID-19 severity before deterioration and should do so more accurately than URT viral load.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C14-15 represent the main conclusions synthesizing multiple analyses. C11 and C14 are well-supported by the stratified regression analyses showing non-significant effects of sex and age after controlling for severity. C15 regarding prognostic utility is more speculative (\"may\") and appropriately cautious, though it requires prospective validation as noted in the evaluation of prognostic accuracy claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:50.837728Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c22dde21-84af-4dc6-baf8-26d99217d5fe",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "2eff4a9d-f563-44a6-82e2-7ee78932a21c",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "07aabbaa-214e-4d37-be84-e9d4a92e0231",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "a908864f-05ec-4068-89ca-ca599fb8cc16",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "380cd4f0-f9ab-4f46-855d-43d415e41418",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "15a01dcc-153e-45a7-8d73-a7aacdfea841",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "07848e8a-69e3-49b9-b2f4-c2a40a27f4d1",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "e824001e-ead5-4e8b-8dcb-45c40c54cee6",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "27e418a6-fc53-48ba-8524-747e6ac3e5ce",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "833c2652-40df-406d-85de-ea7a55bf2c66",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "653c666f-455c-4890-a198-758d5d376da8",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "3e082815-2a94-4fe3-880c-f296435f47c1",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "1a4263e7-6242-4f74-83c1-8578ea4fabc7",
+      "result_id": "0a4de1a0-9603-4bc7-b704-24e9f360eb48"
+    },
+    {
+      "claim_id": "dcb26a01-a3ac-4c51-ad4a-05109089fe6a",
+      "result_id": "750e5a19-c93d-48dd-9156-aede8758af08"
+    },
+    {
+      "claim_id": "bb404b31-7ea8-478f-93aa-407cfc2dc752",
+      "result_id": "750e5a19-c93d-48dd-9156-aede8758af08"
+    },
+    {
+      "claim_id": "11c189ed-cd0c-4d4c-ac5b-fd45c5b1d14b",
+      "result_id": "750e5a19-c93d-48dd-9156-aede8758af08"
+    },
+    {
+      "claim_id": "1ea152f3-2bb3-4256-a421-68dd288d2de8",
+      "result_id": "750e5a19-c93d-48dd-9156-aede8758af08"
+    },
+    {
+      "claim_id": "97ff144e-59ca-47bf-b7a0-b175d51a8535",
+      "result_id": "750e5a19-c93d-48dd-9156-aede8758af08"
+    },
+    {
+      "claim_id": "d64679d3-d447-4997-8c9f-2e5335556cc0",
+      "result_id": "750e5a19-c93d-48dd-9156-aede8758af08"
+    },
+    {
+      "claim_id": "4c64da88-6694-43ad-bd59-22f80b21e513",
+      "result_id": "2f431fad-7b80-44eb-b918-f65a5b24ad74"
+    },
+    {
+      "claim_id": "35f87dc9-556e-4b00-807d-f89ea2ba6194",
+      "result_id": "2f431fad-7b80-44eb-b918-f65a5b24ad74"
+    },
+    {
+      "claim_id": "6c46f5ed-0f87-4b61-9a81-f09626299591",
+      "result_id": "2f431fad-7b80-44eb-b918-f65a5b24ad74"
+    },
+    {
+      "claim_id": "06c0998f-712a-4414-8556-807bb99f6575",
+      "result_id": "2f431fad-7b80-44eb-b918-f65a5b24ad74"
+    },
+    {
+      "claim_id": "34c4cc2f-7899-40ef-a866-2355dbe14d53",
+      "result_id": "2f431fad-7b80-44eb-b918-f65a5b24ad74"
+    },
+    {
+      "claim_id": "e7e71502-430f-4646-abda-71e23e35f667",
+      "result_id": "2f431fad-7b80-44eb-b918-f65a5b24ad74"
+    },
+    {
+      "claim_id": "babf3dc5-ae1e-44e2-b2c5-cef01f649a20",
+      "result_id": "2f431fad-7b80-44eb-b918-f65a5b24ad74"
+    },
+    {
+      "claim_id": "f9cc76e4-5a7b-44e3-a55c-66db7011f0f5",
+      "result_id": "b57cea2f-9362-4243-811a-3b87b38bb24d"
+    },
+    {
+      "claim_id": "fc62621f-a7f1-4256-bd39-fff5136cda63",
+      "result_id": "b57cea2f-9362-4243-811a-3b87b38bb24d"
+    },
+    {
+      "claim_id": "d282ca4a-ba57-47cb-b0d5-0725f65bceee",
+      "result_id": "b57cea2f-9362-4243-811a-3b87b38bb24d"
+    },
+    {
+      "claim_id": "f0b4fca2-9cfc-4a66-99b1-cc8e22b7eed5",
+      "result_id": "b57cea2f-9362-4243-811a-3b87b38bb24d"
+    },
+    {
+      "claim_id": "963cb7c6-9620-406c-87e0-5e0c85edc552",
+      "result_id": "b57cea2f-9362-4243-811a-3b87b38bb24d"
+    },
+    {
+      "claim_id": "c41ca1fa-0b8e-4ecf-b7ae-0d72c5b67a53",
+      "result_id": "b57cea2f-9362-4243-811a-3b87b38bb24d"
+    },
+    {
+      "claim_id": "f9835cec-40ce-4d88-b397-ba2f5e6f0282",
+      "result_id": "fe5306ac-68e6-4848-95ec-a461a503db9c"
+    },
+    {
+      "claim_id": "3d15b94b-44cf-4770-b835-9893c0ddb0b6",
+      "result_id": "fe5306ac-68e6-4848-95ec-a461a503db9c"
+    },
+    {
+      "claim_id": "ee855aad-b0c9-449c-ba0d-0ca6fbcebaf5",
+      "result_id": "fe5306ac-68e6-4848-95ec-a461a503db9c"
+    },
+    {
+      "claim_id": "74e368d6-f389-4cfa-934e-e60a1cea7b52",
+      "result_id": "fe5306ac-68e6-4848-95ec-a461a503db9c"
+    },
+    {
+      "claim_id": "97a73067-f0b1-4a3d-8217-89580f27c6d7",
+      "result_id": "fe5306ac-68e6-4848-95ec-a461a503db9c"
+    },
+    {
+      "claim_id": "10f3888a-d1ff-46a0-a0e9-6305058c5c2e",
+      "result_id": "fe5306ac-68e6-4848-95ec-a461a503db9c"
+    },
+    {
+      "claim_id": "72c9d68d-18bc-499b-b363-cb0318b87f03",
+      "result_id": "fe5306ac-68e6-4848-95ec-a461a503db9c"
+    },
+    {
+      "claim_id": "6b8cf811-6fa5-4a50-aba1-23fe73b2e018",
+      "result_id": "fe5306ac-68e6-4848-95ec-a461a503db9c"
+    },
+    {
+      "claim_id": "7a6eba17-fccb-458d-9922-bd227dd51c35",
+      "result_id": "2148695c-5040-4860-8c78-fb69c9c752ac"
+    },
+    {
+      "claim_id": "33b6f97b-8a65-4ee0-83a0-1189570850ca",
+      "result_id": "2148695c-5040-4860-8c78-fb69c9c752ac"
+    },
+    {
+      "claim_id": "85cbe49e-dd41-4b1d-82fa-49a4c3fbe71f",
+      "result_id": "2148695c-5040-4860-8c78-fb69c9c752ac"
+    },
+    {
+      "claim_id": "810b7b89-1f69-4d3d-bde8-733408e747b1",
+      "result_id": "2148695c-5040-4860-8c78-fb69c9c752ac"
+    },
+    {
+      "claim_id": "1e723d5c-4634-4943-b889-77bd9c83ce03",
+      "result_id": "6e025d66-37a0-42ec-88ea-f5cb15c6f4bf"
+    },
+    {
+      "claim_id": "17c2e517-5016-47d9-a8ab-1a0e3f7eb0fa",
+      "result_id": "6e025d66-37a0-42ec-88ea-f5cb15c6f4bf"
+    },
+    {
+      "claim_id": "880c4f1a-7e1f-4bf1-83e2-4e352f168b2b",
+      "result_id": "6e025d66-37a0-42ec-88ea-f5cb15c6f4bf"
+    },
+    {
+      "claim_id": "e20f93e1-7c5b-450c-ab1b-a190a74936a4",
+      "result_id": "6e025d66-37a0-42ec-88ea-f5cb15c6f4bf"
+    },
+    {
+      "claim_id": "27327e95-23aa-4c66-aa04-a77e0aa56072",
+      "result_id": "6e025d66-37a0-42ec-88ea-f5cb15c6f4bf"
+    },
+    {
+      "claim_id": "fe17b642-233b-4188-967f-cbb7c93efbe1",
+      "result_id": "a1fc44dc-8742-4a11-8ae5-10081de727ad"
+    },
+    {
+      "claim_id": "7121e40c-439c-4a25-89fd-9d7be1f3adc7",
+      "result_id": "a1fc44dc-8742-4a11-8ae5-10081de727ad"
+    },
+    {
+      "claim_id": "42c09cfe-1f97-4158-bb1a-11b051b87a6e",
+      "result_id": "a1fc44dc-8742-4a11-8ae5-10081de727ad"
+    },
+    {
+      "claim_id": "037d6d2c-a3d7-4f8b-8523-0ce8a7eaa750",
+      "result_id": "a1fc44dc-8742-4a11-8ae5-10081de727ad"
+    },
+    {
+      "claim_id": "c59140ca-1783-4bed-9956-8b7465ad07d8",
+      "result_id": "94087df7-0db8-4d61-8abc-5e2094c023da"
+    },
+    {
+      "claim_id": "5e5f9c83-d942-4087-86c7-a95b61b555f1",
+      "result_id": "94087df7-0db8-4d61-8abc-5e2094c023da"
+    },
+    {
+      "claim_id": "afe05167-0707-4fb6-8e3f-2ecdb1d3e1c7",
+      "result_id": "94087df7-0db8-4d61-8abc-5e2094c023da"
+    },
+    {
+      "claim_id": "a07029a5-4037-465f-943a-7bf0c75ea552",
+      "result_id": "94087df7-0db8-4d61-8abc-5e2094c023da"
+    },
+    {
+      "claim_id": "1258dc9f-d740-4fa9-8fd3-9e4082259307",
+      "result_id": "94087df7-0db8-4d61-8abc-5e2094c023da"
+    },
+    {
+      "claim_id": "995f4712-d745-46f8-8eae-4ea85ca8d475",
+      "result_id": "94087df7-0db8-4d61-8abc-5e2094c023da"
+    },
+    {
+      "claim_id": "9f1a22b7-5927-4ec3-852e-db0011598023",
+      "result_id": "94087df7-0db8-4d61-8abc-5e2094c023da"
+    },
+    {
+      "claim_id": "75b58cbb-e7e4-4c8a-b5de-9ef70d587c02",
+      "result_id": "94087df7-0db8-4d61-8abc-5e2094c023da"
+    },
+    {
+      "claim_id": "c463a413-ca26-4a30-8b8a-26569a942e41",
+      "result_id": "84003bfc-6048-4a38-84a3-6bdfdd05f54f"
+    },
+    {
+      "claim_id": "e0cb14eb-d805-400a-8ea0-bda4156accd9",
+      "result_id": "84003bfc-6048-4a38-84a3-6bdfdd05f54f"
+    },
+    {
+      "claim_id": "15facbee-33c3-4c20-b5f3-15a170d50eb2",
+      "result_id": "84003bfc-6048-4a38-84a3-6bdfdd05f54f"
+    },
+    {
+      "claim_id": "6d315908-5285-4854-8fb1-b928b6e233b7",
+      "result_id": "84003bfc-6048-4a38-84a3-6bdfdd05f54f"
+    },
+    {
+      "claim_id": "d410b2a8-bfce-4db3-b6e7-41bf97b83ead",
+      "result_id": "84003bfc-6048-4a38-84a3-6bdfdd05f54f"
+    },
+    {
+      "claim_id": "dd04badf-bde2-4f51-b77a-583282a46b2b",
+      "result_id": "84003bfc-6048-4a38-84a3-6bdfdd05f54f"
+    },
+    {
+      "claim_id": "38991f9c-3dd0-4bc5-b7e6-5a61ab07aeba",
+      "result_id": "962f7d07-713d-47b1-b1cf-7690549bb585"
+    },
+    {
+      "claim_id": "0232075c-2ef8-4651-994f-7eb164233479",
+      "result_id": "962f7d07-713d-47b1-b1cf-7690549bb585"
+    },
+    {
+      "claim_id": "88199c08-9f44-45f5-81f3-ee8824741990",
+      "result_id": "962f7d07-713d-47b1-b1cf-7690549bb585"
+    },
+    {
+      "claim_id": "97ab6b35-95ed-44e7-9fe8-a940d73d1634",
+      "result_id": "962f7d07-713d-47b1-b1cf-7690549bb585"
+    },
+    {
+      "claim_id": "199036e7-9066-4e85-9530-0db0a988fe1f",
+      "result_id": "ca156486-343a-4eb8-b267-e2ee9bc0fde4"
+    },
+    {
+      "claim_id": "573c3f0e-36ca-46a4-8e8d-fb8cd9188ca7",
+      "result_id": "ca156486-343a-4eb8-b267-e2ee9bc0fde4"
+    },
+    {
+      "claim_id": "b17eca8e-7353-4a8f-b4fb-2a159c1ba2c9",
+      "result_id": "ca156486-343a-4eb8-b267-e2ee9bc0fde4"
+    },
+    {
+      "claim_id": "8419fa74-e356-4b2b-b3fb-67a2251340f0",
+      "result_id": "ca156486-343a-4eb8-b267-e2ee9bc0fde4"
+    },
+    {
+      "claim_id": "b7d25e93-d917-4223-9d84-0f2178c809df",
+      "result_id": "ca156486-343a-4eb8-b267-e2ee9bc0fde4"
+    },
+    {
+      "claim_id": "8facea6e-7a44-4cbf-a60c-016b7d4a7d7e",
+      "result_id": "89a78401-ce81-4281-a6bd-fe9e7b98918c"
+    },
+    {
+      "claim_id": "3cfd313d-0cd6-408c-86a7-4a4841d3b789",
+      "result_id": "89a78401-ce81-4281-a6bd-fe9e7b98918c"
+    },
+    {
+      "claim_id": "83edee95-8fd1-404b-920f-93d6ecfa3646",
+      "result_id": "89a78401-ce81-4281-a6bd-fe9e7b98918c"
+    },
+    {
+      "claim_id": "2600b403-1716-4f5a-af06-b0cd5e54414e",
+      "result_id": "89a78401-ce81-4281-a6bd-fe9e7b98918c"
+    },
+    {
+      "claim_id": "cb0e37f3-a9e8-48c8-8971-995ddfcb4662",
+      "result_id": "e7f56198-fbb6-4602-a95d-7d92d63d2591"
+    },
+    {
+      "claim_id": "9d05e1b5-87ca-467f-bb30-5dbaeea09575",
+      "result_id": "e7f56198-fbb6-4602-a95d-7d92d63d2591"
+    },
+    {
+      "claim_id": "4d74dbde-a79b-467c-a107-4f01b97e80ad",
+      "result_id": "e7f56198-fbb6-4602-a95d-7d92d63d2591"
+    },
+    {
+      "claim_id": "97f4513f-348a-4e13-b9b3-c323683f0cc8",
+      "result_id": "e7f56198-fbb6-4602-a95d-7d92d63d2591"
+    },
+    {
+      "claim_id": "3573654a-db5a-478b-8523-7b2fef7cb053",
+      "result_id": "e7f56198-fbb6-4602-a95d-7d92d63d2591"
+    },
+    {
+      "claim_id": "0a6b795e-9dc5-45b5-9fbd-2116d19ad88d",
+      "result_id": "6648759b-015b-4ca7-8e7c-c93bbc44c191"
+    },
+    {
+      "claim_id": "5bab3036-ff65-4305-a63a-d25eec417af6",
+      "result_id": "6648759b-015b-4ca7-8e7c-c93bbc44c191"
+    },
+    {
+      "claim_id": "0a5a7d94-ca65-41a2-a3db-af0b925ee126",
+      "result_id": "6648759b-015b-4ca7-8e7c-c93bbc44c191"
+    },
+    {
+      "claim_id": "3e3d8e4b-ce79-499e-84a1-c4aa03943b90",
+      "result_id": "298ca508-b828-40ad-935d-a377519dd9b7"
+    },
+    {
+      "claim_id": "2a0c0615-5109-4543-913e-888b7f8d0d25",
+      "result_id": "298ca508-b828-40ad-935d-a377519dd9b7"
+    },
+    {
+      "claim_id": "58da7019-d632-4cb6-a807-24302b38f28e",
+      "result_id": "298ca508-b828-40ad-935d-a377519dd9b7"
+    },
+    {
+      "claim_id": "220232c5-7e44-4fb3-8a7e-2c89ac0eff9f",
+      "result_id": "298ca508-b828-40ad-935d-a377519dd9b7"
+    },
+    {
+      "claim_id": "8acd56a5-bd50-4dbd-9c8a-202f84ed044b",
+      "result_id": "298ca508-b828-40ad-935d-a377519dd9b7"
+    },
+    {
+      "claim_id": "0caaa0cc-ee73-413e-8e4d-6e75375b827b",
+      "result_id": "298ca508-b828-40ad-935d-a377519dd9b7"
+    },
+    {
+      "claim_id": "5ac1d2f9-75cb-49fd-b096-06ef28d14b89",
+      "result_id": "298ca508-b828-40ad-935d-a377519dd9b7"
+    },
+    {
+      "claim_id": "7edbd505-7fbe-4595-94e5-61d4a97d54ec",
+      "result_id": "298ca508-b828-40ad-935d-a377519dd9b7"
+    },
+    {
+      "claim_id": "cc6afbaa-fac6-4af3-9896-815f71459cc9",
+      "result_id": "298ca508-b828-40ad-935d-a377519dd9b7"
+    },
+    {
+      "claim_id": "82f683fd-ec3b-40b7-84a3-7d486543aefb",
+      "result_id": "91d5d652-12cb-4e40-ac14-cee048252012"
+    },
+    {
+      "claim_id": "48fc38f4-28c2-481a-8f96-397368859373",
+      "result_id": "91d5d652-12cb-4e40-ac14-cee048252012"
+    },
+    {
+      "claim_id": "137be6b9-d296-4c57-b274-8318322b6aa1",
+      "result_id": "91d5d652-12cb-4e40-ac14-cee048252012"
+    }
+  ],
+  "comparisons": []
+}

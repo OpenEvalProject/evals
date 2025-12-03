@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Chondrosarcoma is characterized as a highly aggressive, treatment-refractory malignancy with poor prognosis, limited treatment options, and significant unmet medical need.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C22 collectively establish the clinical context and severity of chondrosarcoma through cited literature and established medical knowledge. The claims consistently describe the aggressive nature, poor outcomes, resistance to therapy, and lack of effective treatments, providing a well-supported foundation for the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "EZH2 is highly expressed in chondrosarcoma cell lines compared to normal chondrocytes, correlates with poor survival in sarcoma patients, and its knockdown reduces proliferation, migration, and colony-forming capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by western blot data (Figure 1A), Kaplan-Meier survival analysis (Figure 1B), and functional assays (Figures 1E-I). The data consistently demonstrate EZH2 overexpression and its functional importance in chondrosarcoma, though the survival analysis uses sarcoma rather than chondrosarcoma-specific data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "SULF1 is identified as the top EZH2-targeted gene in chondrosarcoma through integrated ChIP-seq and microarray analysis, is downregulated in chondrosarcoma cell lines, and its expression inversely correlates with patient survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C42-C47 are supported by ChIP-seq data, microarray analysis (Figure 2A), qChIP (Figure 2B), qRT-PCR (Figure 2C), western blots (Figures 2D-F), and survival analysis (Figure 2G). The multi-modal approach provides strong converging evidence for SULF1 as an EZH2 target with clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C98"
+    ],
+    "result": "Ectopic expression of SULF1 at physiologically relevant levels inhibits chondrosarcoma cell proliferation, migration, colony formation in vitro, and tumor growth in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C98 are supported by MTT assays (Figure 3B), migration assays (Figure 3C), colony formation assays (Figures 3D-E), and xenograft experiments (Figure 3F). The rescue experiment (C51) and comparison to normal chondrocyte expression levels (C98) strengthen the conclusion that SULF1 functions as a tumor suppressor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "EZH2 overexpression downregulates SULF1, which in turn activates cMET signaling and downstream pathways including AKT, ERK1/2, and p38.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C53-C59 are supported by RTK antibody arrays (Figures 4A-B), western blots showing phosphorylation changes (Figures 4C-E), and dose-response experiments with EZH2 inhibitor EPZ-6438 (Figure 4D). The data establish a clear mechanistic link between EZH2, SULF1, and cMET signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C100",
+      "C101"
+    ],
+    "result": "The enzymatic activity of SULF1 is required for dephosphorylation of cMET and tumor suppression in vitro, though the CA mutant shows unexpected partial tumor suppression in vivo associated with altered Y1003 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C62 are supported by experiments comparing wild-type and CA mutant SULF1 (Figures 4F-I). However, the unexpected partial tumor suppression by the CA mutant (C62) and differential Y1003 phosphorylation in vivo versus in vitro (C100-C101) suggest incomplete understanding of the mechanism. The authors acknowledge this discrepancy but do not fully explain it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C94",
+      "C95"
+    ],
+    "result": "SULF1 desulfates cell surface HSGAGs, disrupting the HGF/cMET/CD44 tricomplex and thereby inhibiting downstream signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C94-C95 are supported by immunoprecipitation data (Figure 5C), flow cytometry (Figures 5D-E), and western blots (Figure 5F). The data demonstrate that SULF1 reduces HSGAG sulfation and disrupts cMET-CD44 interaction, providing mechanistic insight into how SULF1 suppresses cMET signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C96"
+    ],
+    "result": "Pharmaceutical inhibition of cMET with crizotinib or tivantinib effectively reduces chondrosarcoma growth in vitro and in vivo, with crizotinib showing superior potency and extending survival in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C67-C73 are supported by western blots (Figures 6A-B), colony formation assays (Figures 6C-D), orthotopic xenograft experiments (Figures 7B-C), and survival analysis (Figure 7G). The IC50 data (C96) supports crizotinib's superior potency. The in vivo data demonstrate therapeutic efficacy without toxicity (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Genetic silencing of cMET pathway significantly retards chondrosarcoma growth and extends mice survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C8 states that genetic silencing of cMET was performed, but no experimental data using genetic approaches (e.g., shRNA, CRISPR) to silence cMET are presented in the manuscript. All cMET inhibition experiments use pharmaceutical inhibitors, not genetic silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The EZH2/SULF1/cMET axis is validated in chondrosarcoma patient samples, showing high EZH2 and phospho-cMET expression with low SULF1 expression compared to normal tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C74-C76 are supported by immunohistochemistry data from patient tissue arrays (Figures 8A-C). The data demonstrate that the molecular relationships observed in cell lines are recapitulated in human patient samples, providing clinical validation of the proposed axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C47",
+      "C38"
+    ],
+    "result": "Higher expression of cMET and EZH2, and lower expression of SULF1, correlate with poorer survival in sarcoma patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38, C47, and C63 are supported by Kaplan-Meier survival analyses (Figures 1B, 2G, 4J). However, the analyses use general sarcoma patient data rather than chondrosarcoma-specific cohorts, as acknowledged by the authors. This limits the strength of the clinical correlation for chondrosarcoma specifically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "EZH2 inhibitors GSK343 and EPZ-6438 require higher IC50 concentrations to inhibit chondrosarcoma compared to cMET inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by dose-response data (Figure 5\u2014figure supplement 1) showing that EZH2 inhibitors require higher concentrations (5-10 \u03bcM) compared to cMET inhibitors (0.2-1 \u03bcM) to achieve similar effects on colony formation. This supports the authors' conclusion that cMET inhibitors may be more effective therapeutically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The EZH2/SULF1/cMET axis regulation observed in chondrosarcoma is also present in osteosarcoma cell lines and patient samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by western blots, functional assays (Figure 2\u2014figure supplement 1), and immunohistochemistry data (Figure 8\u2014figure supplement 1) from osteosarcoma samples. This suggests the mechanism may be generalizable to other sarcoma types, though this is presented as supplementary rather than primary data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The EZH2/SULF1/cMET axis provides therapeutic potential for development of effective targeted therapy to treat chondrosarcoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is a conclusion supported by the collective experimental evidence showing: (1) the mechanistic link between EZH2, SULF1, and cMET (C4-C6, C53-C59); (2) the functional importance of this axis (C39-C52); (3) the efficacy of cMET inhibitors in preclinical models (C67-C73); and (4) validation in patient samples (C74-C76). The therapeutic potential is demonstrated but requires clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "The five-year survival rate for dedifferentiated chondrosarcoma is 11 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C2 contains a logical inconsistency: a 'five-year survival rate' cannot be expressed as '11 months.' This appears to be an error in the manuscript. The claim likely intends to state either 'median survival of 11 months' or 'five-year survival rate of X%,' but as written, it is internally contradictory and unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C99"
+    ],
+    "result": "Background knowledge about EZH2, SULF1, cMET, and prior therapeutic approaches in chondrosarcoma and related cancers is established through cited literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C35 and C77-C92, C99 provide background context through citations to published literature. These claims establish the biological functions of key molecules, prior therapeutic attempts, and relevant mechanisms in related cancers. The citations appear appropriate and support the study's rationale, though verification of citation accuracy is beyond the scope of this evaluation.",
+    "result_type": "MINOR"
+  }
+]

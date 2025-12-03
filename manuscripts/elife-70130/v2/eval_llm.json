@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors developed a mechanistic mathematical model for checkpoint inhibitor therapy that reduces a complex set of partial differential equations (PDEs) to a single ordinary differential equation (ODE) dependent on three key parameters: tumor growth rate (\u03b1), tumor-immune infiltration (\u039b), and immunotherapy-mediated amplification of anti-tumor response (\u00b5). The model incorporates specific biological mechanisms including drug diffusion, immune cell chemotaxis, and cancer cell killing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C25-C31, and C106-C109 collectively describe the model structure and its underlying assumptions. The model derivation is stated to be detailed in prior work (Butner et al., 2020) and Appendix 1, and the biological mechanisms are illustrated in Figure 1. The assumptions are explicitly stated and the mathematical framework is clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The model was calibrated using tumor volume data from 189 patients across six published clinical trials of anti-PD-1 and anti-PD-L1 therapies. The calibration cohort included 55 patients (29%) with objective responses and 134 patients (71%) with stable/progressive disease. The derived tumor proliferation constant \u03b1 ranged from 0.0034 (doubling time ~200 days) in renal cell carcinoma to 0.0622 (doubling time ~11 days) in non-mismatch repair colon cancer, with an average \u03b1 of 0.018 (doubling time ~85 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C36 describe the calibration methodology and results. The data sources are properly cited, sample sizes are clearly stated, and quantitative results for \u03b1 are provided with appropriate context. The average root-mean-square error of 0.4% (C40) indicates good model fit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The model was validated on an independent cohort of 64 NSCLC patients treated with pembrolizumab from an in-house clinical trial (NCT02444741). The validation cohort included 25 patients (39%) with objective response and 39 patients (61%) with stable/progressive disease. Individual patient proliferation constants ranged from -0.0129 to 0.0602, with negative values indicating shrinking tumor burden before treatment initiation. Patient-specific pretreatment growth rates were obtained from imaging data available before treatment start.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37-C39, and C99-C104 describe the validation cohort and methodology. The validation approach is appropriate, using an independent dataset with detailed imaging methodology. The ability to calculate patient-specific \u03b1 values from pretreatment imaging represents a methodological improvement over the calibration cohort.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The derived parameters \u039b and \u00b5 were significantly different between responding and nonresponding patients in both cohorts. In the calibration cohort, \u00b5 showed highly significant separation (p<0.001) while \u039b showed a trend (p=0.119). In the validation cohort, both \u039b and \u00b5 showed highly significant separation (p<0.001) between response groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41-C44 present statistical comparisons between responders and non-responders. The p-values are provided with appropriate statistical tests (Wilcoxon two-tail). While \u039b did not reach significance in the calibration cohort (p=0.119), it did in the validation cohort (p<0.001), and \u00b5 was consistently significant in both cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The model achieved 81.4% classification accuracy using tumor volume measurements within 2 months of treatment initiation. ROC analysis identified optimal thresholds (\u039b=0.722, \u00b5=0.00905) in the calibration cohort. When applied to the validation cohort, \u00b5 showed high sensitivity (0.960) and specificity (0.769), with high negative predictive value (0.968). Misclassification rates were 19% at t<60 days and 13% at t<200 days in the calibration cohort, and 18.6% and 10.9% respectively in the validation cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C51-C52, and C88-C98 present comprehensive predictive performance metrics. The 81.4% accuracy claim (C8) is supported by the detailed misclassification rates. The ROC analysis provides appropriate threshold identification, and the validation cohort confirms performance. The high NPV (0.968 for \u00b5) supports the claim of minimal false-negatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C67",
+      "C110",
+      "C111"
+    ],
+    "result": "The model reliably predicted clinical response across multiple solid tumor types, suggesting the master equation may be universally applied while parameter values are tumor-specific. The leave-one-cancer-type-out validation revealed that \u00b5 shows more consistent significant differences between response categories relative to \u039b across different cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C67, C110-C111 address the model's generalizability. The model was tested across six different cancer types (Table 1), and the leave-one-cancer-type-out analysis (Appendix 1\u2014figure 3) provides evidence for the tumor-specific nature of parameter values. However, the claim of 'reliable prediction' should be interpreted cautiously given the limited number of cancer types tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C65"
+    ],
+    "result": "Model parameter \u039b corresponds with intratumoral CD8+ T cell counts. Conversion of \u039b yielded predicted CD8+ T cell counts of 3970\u00b11429 cells/mm\u00b2 for responders and 553\u00b1147 cells/mm\u00b2 for non-responders in the calibration cohort, and 4871\u00b1567 vs 165\u00b12604 cells/mm\u00b2 in the validation cohort. These values are comparable to published IHC data from Tumeh et al., 2014 (2632\u00b1518 vs 322\u00b1133 cells/mm\u00b2 pretreatment; 3770\u00b1675 vs 501\u00b1113 cells/mm\u00b2 including on-treatment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C53-C56, C65 demonstrate biological validation of \u039b. The model-predicted CD8+ T cell counts are in reasonable agreement with published IHC measurements, supporting the mechanistic interpretation of \u039b. However, the large error bars in the validation cohort (\u00b12604 for non-responders) suggest high variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "Model parameter \u00b5 corresponds with PD-L1 staining. Using standard PD-L1 staining thresholds (1% and 5%), the model-predicted objective response rates showed improved discrimination compared to literature values. At the 1% threshold, model-predicted ORR was 10% vs 45% (calibration) and 9% vs 71% (validation) for \u00b5<1% vs \u00b5\u22651%, compared to 15% vs 28% in literature. At the 5% threshold, model-predicted ORR was 25% vs 67% (calibration) and 29% vs 100% (validation) for \u00b5<5% vs \u00b5\u22655%, compared to 21% vs 38% in literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63, C65 demonstrate biological validation of \u00b5 against PD-L1 staining data from 12 published trials. The model parameter \u00b5 shows better discrimination of responders than PD-L1 staining alone, particularly at the 5% threshold. The 100% ORR for \u00b5\u22655% in the validation cohort (C63) is notable but based on a small subset of patients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Model parameters showed temporal stability when derived from truncated datasets. In the calibration cohort, Spearman correlation coefficients for \u00b5 ranged from 0.910 (t<30 days) to 0.921 (t<200 days). In the validation cohort, correlations for \u00b5 ranged from 0.800 (t<30 days) to 0.989 (t<200 days), while \u039b showed correlations from 0.800 to 0.771.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 demonstrate parameter stability over time. The high Spearman correlations for \u00b5 (>0.9 in calibration, >0.8 in validation) support early prediction capability. The lower correlations for \u039b, particularly in the calibration cohort, suggest this parameter may be less stable at early timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C66",
+      "C72"
+    ],
+    "result": "The model demonstrates that immunotherapy response arises from nonlinear interactions between immune cell infiltration and immunotherapy efficacy. Model parameters \u039b and \u00b5 can stratify responding and nonresponding patients, with average root-mean-square error of only 0.4% when fitting clinical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C66, C72 describe the model's mechanistic insights and performance. The 0.4% RMSE indicates excellent fit quality. Figure 4 illustrates the nonlinear parameter interactions. The stratification capability is demonstrated in Figure 3 and supported by the statistical analyses (C41-C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C68",
+      "C74",
+      "C75"
+    ],
+    "result": "Model parameters can be informed from biopsy samples obtainable at treatment start and may serve as early biomarkers of checkpoint inhibitor efficacy. The high sensitivity at early timepoints (t<60 days) indicates potential for early identification of patients likely to benefit from therapy. The model can be informed by standard-of-care measurements and provide quantitative guidance for treatment optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11-C12, C68, C74-C75 make translational claims about clinical utility. While the model shows good predictive performance and parameters correlate with biological measurements, the claim that parameters 'may be informed directly from biopsy samples' (C11) is not directly demonstrated in this study. The authors acknowledge (C112) that per-patient IHC measurements corresponding to individual responses were not available, preventing validation of this specific claim. These represent promising directions but require prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C71"
+    ],
+    "result": "The mathematical model is mechanistically grounded and compatible with current understanding of checkpoint blockade biology. The fundamental difference from prior models is that cell death quantification depends on specific mechanisms underlying cancer-immunotherapy interactions, providing mechanistic insight into the treatment system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C71 position the model relative to prior work and biological understanding. The model incorporates known biological mechanisms (Figure 1) and is supported by citation to Teng et al., 2015. The comparison to Stein et al., 2008 (C70-C71) appropriately distinguishes the mechanistic approach from purely phenomenological models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C112"
+    ],
+    "result": "The model has several acknowledged limitations: it does not explicitly include immunosuppressive cells or CD4+ T cells; RECIST v1.1 was used instead of iRECIST due to data availability; testing was limited to a handful of cancer types; and per-patient IHC measurements corresponding to individual responses were not available for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C80-C81, C112 transparently acknowledge study limitations. These are appropriately discussed and provide context for interpreting results. The authors recognize these limitations affect the model's comprehensiveness and generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Some model assumptions are supported by published data, including high rates of anti-PD1 antibody binding to immune cells in peripheral circulation and local intratumoral expansion of CD8+ T cells during checkpoint inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 provide biological justification for model assumptions. These are supported by appropriate citations (Topalian et al., 2012; Tumeh et al., 2014; Ribas et al., 2016) and help validate the model's biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors outline future directions including: improving the model through additional biomarkers (IFN\u03b3, CD206, CX3CR1, CD1D, iNOS); collecting per-patient paired IHC measures with tumor response; testing in additional cancer types; and prospectively validating early prediction capability to improve personalized cancer care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 describe future work and are appropriately speculative. These represent reasonable next steps for model development and clinical translation. The ongoing data collection (C85) addresses a key limitation identified in C112.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction establishes the clinical context and prior work: checkpoint inhibitors have improved survival in multiple cancers but only benefit a subset of patients; the biological mechanisms are understood but predictive biomarkers are inconsistent; current response criteria document rather than predict responses; and prior mathematical modeling has shown success in predicting responses to other immunotherapies and cancer treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C24 provide background context supported by appropriate citations. These establish the clinical need and position the current work within the field. The claims about prior work are properly attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "The factors driving clinical responses or lack thereof to checkpoint inhibitor therapy are not known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C2 states that factors driving responses are 'not known,' which is an overstatement given C18-C19 acknowledge that various immunological features and biomarkers have been identified, though with inconsistent results. The claim should be interpreted as 'not fully understood' or 'incompletely characterized' rather than completely unknown.",
+    "result_type": "MINOR"
+  }
+]

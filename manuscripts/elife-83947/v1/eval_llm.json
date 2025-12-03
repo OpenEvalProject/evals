@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Zeno SWATH MS is a novel data-independent acquisition technique that employs a linear ion trap (Zeno trap) to increase MS/MS duty cycle from 5-25% to >90%, thereby increasing fragment ion intensity 4-20 times without loss of mass accuracy and resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21, C68-C71 collectively describe the Zeno trap mechanism and its integration with SWATH MS. The technical description is supported by citations (C21, C68, C70, C71) and Figure 1\u2014figure supplement 1. The mechanism is clearly explained: fragment ions are trapped in an axial pseudopotential well and released with timing aligned to the TOF accelerator pulse, achieving >90% duty cycle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Using 20 min micro-flow chromatography with 62.5 ng K562 cell line standard, Zeno SWATH MS identified 5179 consistently quantified proteins (median CV 6%, 89% with CV<20%) and 40,209 precursors (77% with CV<20%), substantially outperforming conventional SWATH MS which identified 2743 proteins (76% with CV<20%) and 16,022 precursors (median CV 11%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 provide comprehensive quantitative comparisons between Zeno SWATH MS and conventional SWATH MS on the same instrument and sample. The data show consistent improvements in both protein and precursor identification and quantification precision, supported by Figure 1a-b. The experimental design includes appropriate replicates (n=3) and statistical measures (CV values).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In two-species benchmark experiments (human/yeast mixtures), Zeno SWATH MS quantified 3414 human and 1816 yeast proteins with improved accuracy (median CV 6.9-7% for human) compared to SWATH MS (2064 human, 973 yeast proteins; median CV 12.7-12.6%), with gains primarily from better quantification of low-abundant proteins and more accurate representation of known mixing ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 describe LFQbench-type validation experiments with defined mixing ratios. The results demonstrate both increased protein identification (65-133% more proteins depending on injection amount) and improved quantification accuracy, particularly for low-abundant proteins. The data are supported by Figures 1c-f and supplementary figures, with appropriate statistical analysis showing correlation and ratio accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In concentration series experiments with 62.5 ng K562 standard, Zeno SWATH MS on the ZenoTOF 7600 identified 62,769 precursors and 5206 proteins, matching the performance of conventional SWATH MS at 500 ng (64,316 precursors, 5242 proteins), representing an ~8-fold improvement in sensitivity and achieving 4636 precursors/min compared to 2874 precursors/min for SWATH MS on the same instrument.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 provide systematic comparison across three platforms (TripleTOF 6600, ZenoTOF 7600 SWATH, ZenoTOF 7600 Zeno SWATH) using library-free analysis to avoid bias. The data demonstrate clear sensitivity improvements with appropriate controls and normalization by gradient time. Results are supported by Figure 2a-b and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Zeno SWATH MS increased protein identification to 5206 protein groups compared to 3690 for SWATH MS on the 7600 system, with gains primarily from improved detection of low-abundant proteins, while maintaining high correlation (r\u00b2=0.93) with SWATH MS for high-abundant proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe dynamic range improvements validated against a reference dataset (Bekker-Jensen et al., 2017) with protein copy numbers. The correlation analysis (Figure 2d) demonstrates that improvements are genuine and not artifacts, with agreement for high-abundant proteins and divergence for low-abundant ones, as expected from the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Using 5 min analytical flow-rate chromatography (800 \u00b5l/min), Zeno SWATH MS identified 4907 proteins from 2 \u00b5g K562 standard (median CV 6%, 92% with CV<20%) compared to 3250 proteins for SWATH MS, and achieved ~3000 protein identifications from only 250 ng, matching SWATH MS performance at 2 \u00b5g.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 demonstrate that Zeno SWATH MS enables high-throughput analytical flow-rate chromatography with reduced sample requirements. The ~8-fold reduction in required sample amount (250 ng vs 2 \u00b5g for similar performance) is consistent with the micro-flow results. Data are supported by Figure 3a-b with appropriate replicates and CV measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Zeno SWATH MS demonstrated improved performance across diverse sample types: human plasma (245 proteins from 62.5 ng, 160 proteins from 15 ng), yeast (2915 proteins from 62.5 ng vs 1660 for SWATH), E. coli (2131 proteins from 62.5 ng vs 1768 for SWATH), and chickpea (3815 proteins from 62.5 ng, matching SWATH performance at 500 ng).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 demonstrate generalizability across different biological matrices with varying dynamic ranges and complexities. The consistent ~8-fold improvement in sensitivity across diverse samples (plasma, yeast, bacteria, plant) validates the technology's broad applicability. Data are supported by Figure 4 and supplementary figures with appropriate concentration series.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The sensitivity limitation of TOF mass spectrometers in SWATH MS is primarily due to low MS/MS duty cycle (5-25%), where only a small proportion of fragment ions are positioned correctly to enter the TOF accelerator during each pulse, disproportionately affecting low-m/z ions and limiting detection of low-abundance samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C64-C67 provide the technical rationale for the Zeno trap innovation. The explanation of TOF duty cycle limitations is consistent with established mass spectrometry principles and provides clear mechanistic context for why the Zeno trap improves sensitivity. This is background knowledge appropriately cited and explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The benchmark experiments were performed on a ZenoTOF 7600 system running SCIEX OS 2.1.6 with an experimental ionization threshold to prevent detector damage, limiting maximum injection to 62.5 ng, though subsequent software releases (SCIEX OS 3.0) enabled higher loads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 transparently describe experimental limitations and subsequent improvements. This is important methodological information that explains why higher sample amounts were not tested in the benchmark, though it does not invalidate the low-sample-amount findings which are the primary focus. The disclosure of this limitation and its resolution is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C88"
+    ],
+    "result": "Zeno SWATH MS increases sensitivity and expands proteomic dynamic range coverage across all tested chromatographic methods, facilitating sensitive high-throughput proteomic experiments with low sample amounts and improving both protein identification numbers and quantification precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 and C88 are summary conclusions supported by the comprehensive experimental data across multiple sample types, chromatographic methods, and sample amounts (C22-C63). The conclusions are appropriately conservative and directly supported by the presented data showing consistent improvements in sensitivity, dynamic range, and precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Lowering sample requirements in high-throughput proteomics enables three key applications: extending proteomics to studies with limited material availability, decreasing mass spectrometer cleaning cycles and increasing uptime, and reducing costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are logical inferences from the demonstrated 8-fold reduction in sample requirements. These are reasonable practical implications of the technical improvements, though they represent potential applications rather than directly tested outcomes. The inferences are appropriately presented as applications rather than proven results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Comparison of SWATH acquisition schemes with 40, 60, and 85 variable windows on 100 ng K562 standard showed similar identification performance for 60 and 85 windows (25,884-25,945 precursors, 3995-4025 proteins), with minimal differences in identification numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 describe method optimization experiments shown in Figure 5. The data demonstrate that window number optimization plateaus between 60-85 windows, providing justification for the window schemes used in the main experiments. This is appropriate method validation with clear quantitative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C92",
+      "C95"
+    ],
+    "result": "Potential future applications of Zeno SWATH MS include analysis of finger-prick plasma samples or nano-sampling devices, single-cell proteomics when coupled with nano-flow chromatography, and combination with scanning SWATH for further sensitivity gains in high-throughput analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C92, and C95 are explicitly speculative about future applications ('could be applied', 'might benefit', 'might result'). While these are reasonable extrapolations from the demonstrated capabilities, they represent untested hypotheses rather than validated results. The speculative nature is appropriately indicated in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Data were acquired using SCIEX OS v2.1.6 and processed with DIA-NN v1.8 beta 20 using specified mass accuracy parameters (20 and 12 ppm at MS2 and MS1 levels), with 1% FDR filtering at precursor and protein levels, and CV calculations for proteins/precursors identified in all replicates. Data were deposited to ProteomeXchange (PXD036786).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 provide comprehensive methodological details for data acquisition, processing, filtering, and availability. The methods are clearly described with specific software versions, parameters, and filtering criteria. Data deposition in a public repository (PXD036786) enables reproducibility. These are appropriate methodological descriptions.",
+    "result_type": "MINOR"
+  }
+]

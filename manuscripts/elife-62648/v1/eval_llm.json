@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study cohort consisted of 22 HIV controllers (4 female, 18 male; 11 African American, 11 European descent) classified into top-neutralizers (TN, n=6), non-neutralizers (NN, n=7), and intermediate neutralizers (n=9) based on neutralization breadth. No significant differences in age, CD4 count, HIV RNA levels, or time-off-ART were observed between TN and NN groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 provide comprehensive cohort characterization with clear classification criteria and statistical comparisons. The neutralization assay methodology is described in Materials and Methods, and Figure 1\u2014figure supplement 1 supports the lack of significant differences in clinical parameters between groups. The cohort design appropriately controls for confounding variables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C36",
+      "C37"
+    ],
+    "result": "The study analyzed 12,591 paired heavy and light chain BCR sequences from HIV-1 envelope-specific single memory B-cells across 22 HIV controllers, with 5,771 sequences from TN and 2,707 from NN individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C36, and C37 describe the primary dataset generated. The methodology is detailed in Materials and Methods with appropriate single-cell sorting and sequencing protocols. The unequal distribution of sequences between groups is noted but normalized in subsequent analyses to avoid bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "IgG subclass distributions differed between TN and NN, with TN showing IgG1>IgG2>IgG3>IgG4 hierarchy (78.6%, 12.5%, 8.8%, 0.1%) while NN showed IgG1>IgG3>IgG2>IgG4 (82.5%, 11.1%, 6.2%, 0.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 report IgG subclass distributions with reference to Figure 1A. The differences in hierarchy between groups are clearly stated, though no statistical test is reported to determine if these differences are significant. The biological relevance of the IgG2/IgG3 hierarchy switch is not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C60"
+    ],
+    "result": "V(D)J gene usage was similar overall between TNs and NNs, with IGHV1 being most common and IGHV1-69/IGHV4-34 being the top two IGHV genes in both groups. However, the frequency and combination of IGH/IGL pairs differed significantly between groups, with specific dominant pairings in each group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C60 describe comprehensive V(D)J gene usage analysis supported by Figure 1\u2014figure supplement 3 and statistical testing (C54: Mann Whitney U-test, p<0.05). The finding that overall gene usage is similar but pairing frequencies differ is well-supported. The consistency with prior literature (C41-C42, C49) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C77",
+      "C108"
+    ],
+    "result": "Very few sequences matched known bNAb IGHV/IGLV gene pairs, none showed high CDRH3 sequence similarity except for BG18 in one TN individual, and no enrichment of known bNAb sequences was observed in TNs compared to NNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C77, and C108 consistently report the absence of known bNAb sequences in the dataset. The detection of BG18 (C58) is supported by prior work (Freund et al., 2017) and serves as a positive control. This negative finding is important for interpreting the source of neutralization breadth in these individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "CDRH3 and CDRL3 length distributions differed significantly between TN and NN (p<2.2e-16, Kolmogorov-Smirnov test), with TN showing CDRH3 lengths of 3-37 aa and CDRL3 of 5-17 aa, compared to NN with 4-31 aa and 5-14 aa respectively. Significant differences were also observed for CDRH2 and CDRL1, but not for CDRH1 and CDRL2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 report CDR length distributions with appropriate statistical testing (Kolmogorov-Smirnov test) and reference to Figure 1C. The extremely low p-values (p<2.2e-16) indicate highly significant differences. However, the biological significance of these length differences and their relationship to neutralization breadth could be better explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C9"
+    ],
+    "result": "TN repertoires had significantly higher IGHV mutation frequencies compared to NN (mean 54\u00b117 vs 29\u00b18 mutations, p<0.05), with >65% of TN sequences showing >15% mutations. IGHV mutation frequency correlated directly with serum neutralization breadth across the entire cohort (Spearman's rho=0.60, p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 and C9 report a key finding with appropriate statistical tests (unpaired t-test, Spearman correlation) and reference to Figure 2A-C. The correlation between mutation frequency and neutralization breadth is a central result. The statistical approach is sound, though the correlation coefficient of 0.60 indicates moderate rather than strong correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "IGLV mutation frequencies were significantly higher in TN than NN (mean 35\u00b118 vs 14\u00b15 mutations, p<0.05), with >50% of TN sequences showing >10% mutations. IGLV mutation frequency correlated with neutralization breadth (Spearman's rho=0.63, p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 parallel the IGHV findings for light chains with appropriate statistics and reference to Figure 2D-F. The slightly higher correlation coefficient (0.63 vs 0.60) for IGLV is noted. The consistency between heavy and light chain findings strengthens the overall conclusion about the importance of somatic hypermutation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "While overall V-J gene combinations were similar between groups, highly mutated sequences (>15% IGHV, >10% IGLV) in TNs showed selection for fewer dominant V-J combinations. Specific gene pairs (HJ4/HV1-69-2, HJ6/HV4-4, HJ6/HV3-30.33, HJ6/HV4-34) were significantly enriched in highly mutated TN sequences (p<0.01), suggesting TNs were more permissive for extensive somatic hypermutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87, C90-C91, C93 describe mutation-dependent changes in gene usage patterns with appropriate statistical testing (Fisher's exact test with Benjamini-Hochberg correction) and reference to Figure 2G-I. The interpretation that TNs are more permissive for SHM (C93) is reasonable given the data, though the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C10",
+      "C11"
+    ],
+    "result": "Clonal analysis identified 770 clones (mean 7.4 sequences/clone), with larger clones consisting of highly mutated sequences. The Gini index was significantly higher in highly mutated sequences (p<0.04), indicating that the BCR repertoire becomes more narrow with increasing mutation rates, dominated by a small number of large clones with evolutionary signatures of peak affinity maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97, C10-C11 describe clonal structure with appropriate quantitative measures (Gini index) and statistical testing (paired t-test). Figure 3A-B supports these findings. The interpretation of peak affinity maturation (C11) is supported by subsequent selection analysis (C100-C104), though the term 'peak' could be better defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "TNs showed stronger purifying selection (lower \u03c9CDR values) compared to NNs, with significantly longer average lineage tree lengths (p<0.05) that correlated negatively with \u03c9. This is consistent with B-cell lineages shifting toward negative selection during affinity maturation, suggesting dominant TN clones reached a level where additional amino acid changes would be detrimental.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 describe phylogenetic selection analysis with appropriate methods (IgPhyML, \u03c9 estimation) and statistical testing (Wilcoxon rank sum test). The interpretation is supported by citations to prior work (Hoehn et al., 2019; Clarke et al., 1985) and Figure 3C-F. The negative correlation between tree length and \u03c9 is a key finding supporting the affinity maturation interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Enrichment of HV4-34 usage in highly mutated TN sequences (p<0.001), a feature of autoimmunity, is consistent with HIV infection inducing a permissive state where potentially autoreactive clones can persist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 report HV4-34 enrichment with appropriate statistical testing and cite relevant literature (Wardemann et al., 2003; Roskin et al., 2020). The interpretation linking this to autoimmunity and HIV-induced permissiveness is supported by the cited work, though the functional consequences for neutralization breadth are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Consistent with Scheepers et al. (2015), germline IGHV gene usage was similar between individuals with and without bNAbs, but clear differences in the hierarchy of IGHV/IGHJ/IGLV/IGLJ combinations were observed between TNs and NNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 appropriately contextualize the findings with prior work and summarize the gene usage results. The consistency with Scheepers et al. strengthens the conclusion that germline repertoire differences do not explain neutralization breadth, while gene combination frequencies do.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Given that known bNAbs like 3BNC117 have been isolated from HIV controllers but were largely absent from this dataset, the neutralization breadth in TNs likely results from either single bNAbs with non-classical epitope specificities or multiple neutralizing antibodies targeting different epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C110 present a speculative interpretation (C110 is marked as SPECULATION) of the absence of known bNAb sequences. While the logic is reasonable, this remains a hypothesis requiring functional validation through antibody isolation and characterization. The claim appropriately acknowledges this limitation and proposes future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The findings confirm that individuals with neutralizing antibody breadth have antibody lineages with long CDRH3s and very high SHM frequencies, consistent with the notion that high levels of SHM are generally necessary for neutralization breadth and potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 appropriately contextualize the study findings with recent literature (Roskin et al., 2020; Klein et al., 2013). The confirmation of these findings in HIV-specific B-cells (rather than bulk repertoires) adds value, though the study does not directly test the necessity of high SHM for neutralization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C117",
+      "C118"
+    ],
+    "result": "With increasing IGHV mutations, fewer clones with less diverse HV-HJ combinations dominated. Phylogenetic analysis revealed that NNs showed continuous evolution with younger, less diverse clones exploring novel evolutionary space, while TNs pursued specific evolutionary paths rather than continuous evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114, C117-C118 describe evolutionary dynamics inferred from phylogenetic analysis. While the data support these interpretations, the claims involve substantial inference from cross-sectional data. Longitudinal sampling would strengthen these conclusions about evolutionary trajectories. The distinction between NN and TN evolutionary patterns is a key finding but requires careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C121",
+      "C123",
+      "C137"
+    ],
+    "result": "Potential mechanisms for the observed patterns include: (1) TNs generating massive bursts of clones that prevent lower affinity variant evolution, (2) reduced immunodominance effects in TNs, (3) early suppression of selection in TNs allowing extended SHM, and (4) low-level antigen titration in controllers creating higher selection pressure for evolving B-cell clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119, C121, C123, C137 present speculative mechanistic explanations (all marked as SPECULATION). While these hypotheses are reasonable and grounded in immunological principles, they lack direct experimental support in this study. These represent important directions for future research but should not be considered established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The selection process appears to revert during later stages of antibody evolution when purifying selection becomes dominant, consistent with prior observations that B-cell lineages shift toward negative selection over time and that evolutionary rates of bNAb lineages decrease over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 interpret the selection dynamics with appropriate citations to supporting literature (Yaari et al., 2015; Hoehn et al., 2019; NISC Comparative Sequencing Program et al., 2015; Sheng et al., 2016). The interpretation of temporal dynamics from cross-sectional data is reasonable given the phylogenetic analysis, though longitudinal data would provide stronger support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C138"
+    ],
+    "result": "Based on the slow antigen delivery model from Cirelli et al., evolving B-cells with BCRs able to bind diverse Env variants can capture more antigen and receive enhanced Tfh signals, while high-affinity narrow-specificity B-cells may gain less support. In HIV controllers, B-cell lineages able to bind many variants may capture larger amounts of antigen despite low viremia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C138 apply a model from non-human primate studies to interpret the HIV controller data. While the logic is sound and supported by citation (C136: De Boer and Perelson, 2017; C138: Fukazawa et al., 2015), this remains a mechanistic hypothesis rather than a demonstrated finding. Direct evidence for this mechanism in the study cohort is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C12"
+    ],
+    "result": "Development of B-cell lineages with superior neutralization breadth in HIV controllers is linked to selected clonal evolution, allowing B-cells to accumulate mutations and diversify without constant clonal interference. This demonstrates that BCR selection for extended somatic hypermutation and clonal evolution can occur even with low plasma HIV antigenemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 and C12 present the study's main conclusion, integrating multiple lines of evidence (mutation frequencies, clonal structure, selection analysis). The conclusion is well-supported by the data, though the specific mechanisms remain to be fully elucidated. The implication for vaccine design (C12) is reasonable but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C13",
+      "C142"
+    ],
+    "result": "Host-specific factors might be involved in BCR selection for extended somatic hypermutation and clonal evolution. Immunization strategies providing continuous, diverse, subtherapeutically dosed antigen with targeted inflammatory signals could potentially accelerate broad neutralizing antibody development in vaccinees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13 and C142 present speculative proposals for vaccine design based on the study findings. While the logic follows from the results, these remain hypotheses requiring experimental validation. The study does not identify specific host factors or test vaccine strategies, so these claims represent future directions rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "CDRH3 length by itself is not a determining feature for neutralization potency and breadth, but rather CDRH3-specific sequence characteristics contribute to the superior binding activity of certain bNAbs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 present an important interpretive point about CDRH3 length. While C75 is marked as INFERENCE and C76 as KNOWLEDGE, the conclusion is reasonable given the data showing length differences but absence of known bNAb sequences. However, the study does not directly test the functional importance of CDRH3 characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "The interpretation that TNs are more permissive for extensive SHM assumes that somatic IGHV mutation rates correlate with total exposure time in the germinal center environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 explicitly states an assumption underlying the interpretation of mutation frequency differences. This assumption is reasonable based on established germinal center biology (marked as KNOWLEDGE), though alternative explanations (e.g., differences in mutation rate per cell division) are not fully excluded. The transparency about this assumption is appropriate.",
+    "result_type": "MINOR"
+  }
+]

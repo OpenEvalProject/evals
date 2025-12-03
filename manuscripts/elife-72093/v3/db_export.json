@@ -1,0 +1,1303 @@
+{
+  "submission": {
+    "id": "013fa41f-a974-4589-b5ec-d13754484755",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:52:39.224099Z",
+    "updated_at": "2025-12-03T09:52:39.224099Z"
+  },
+  "content": [
+    {
+      "id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "submission_id": "013fa41f-a974-4589-b5ec-d13754484755",
+      "content_type": "manuscript",
+      "content_text": "# Generation and diversification of recombinant monoclonal antibodies\n\n## Authors\n\n- Keith F DeLuca<sup>1</sup>\n- Jeanne E Mick<sup>1</sup>\n- Amy H Ide<sup>1</sup>\n- Wanessa C Lima<sup>2</sup>\n- Lori Sherman<sup>3</sup>\n- Kristin L Schaller<sup>4</sup>\n- Steven M Anderson<sup>3</sup>\n- Ning Zhao<sup>1</sup> ([ORCID: 0000-0001-7092-6229](https://orcid.org/0000-0001-7092-6229))\n- Timothy J Stasevich<sup>1</sup>\n- Dileep Varma<sup>7</sup>\n- Jakob Nilsson<sup>8</sup> ([ORCID: 0000-0003-4100-1125](https://orcid.org/0000-0003-4100-1125))\n- Jennifer G DeLuca<sup>1</sup> ([ORCID: 0000-0002-3598-1721](https://orcid.org/0000-0002-3598-1721)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology, Colorado State University Fort Collins United States\n2. Geneva Antibody Facility, Faculty of Medicine, University of Geneva Geneva Switzerland\n3. CU Cancer Center Cell Technologies Shared Resource, University of Colorado Cancer Center, Anschutz Medical Campus Aurora United States\n4. Department of Pediatric Hematology, Oncology and Bone Marrow Transplant, University of Colorado Anschutz Medical Campus Aurora United States\n5. Department of Pathology, University of Colorado Anschutz Medical Campus Aurora United States\n6. Cell Biology Center and World Research Hub Initiative, Tokyo Institute of Technology Yokohama Japan\n7. Department of Cell and Developmental Biology, Feinberg School of Medicine, Northwestern University Chicago United States\n8. The Novo Nordisk Foundation Center for Protein Research, University of Copenhagen, Faculty of Health and Medical Sciences Copenhagen Denmark\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntibodies are indispensable tools used for a large number of applications in both foundational and translational bioscience research; however, there are drawbacks to using traditional antibodies generated in animals. These include a lack of standardization leading to problems with reproducibility, high costs of antibodies purchased from commercial sources, and ethical concerns regarding the large number of animals used to generate antibodies. To address these issues, we have developed practical methodologies and tools for generating low-cost, high-yield preparations of recombinant monoclonal antibodies and antibody fragments directed to protein epitopes from primary sequences. We describe these methods here, as well as approaches to diversify monoclonal antibodies, including customization of antibody species specificity, generation of genetically encoded small antibody fragments, and conversion of single chain antibody fragments (e.g. scFv) into full-length, bivalent antibodies. This study focuses on antibodies directed to epitopes important for mitosis and kinetochore function; however, the methods and reagents described here are applicable to antibodies and antibody fragments for use in any field.\n\n## Introduction\n\nAntibodies are indispensable tools used in a diverse array of applications in the biomedical sciences including detection of biomolecules in cells, tissues, and biological fluids, protein purification, functional depletion of proteins from cells and cell extracts, medical diagnostics, and therapeutic medicine. While these reagents are essential for almost all areas of research in the biosciences, there are drawbacks to using traditional antibodies generated in animals. First, there are growing concerns regarding reproducibility, and this is in part due to a lack of standardized and thoroughly defined immunological reagents. In many cases, antibodies are incompletely characterized, not well understood at the molecular level, and variable in performance across lots (Bradbury and Pl\u00fcckthun, 2015; Bordeaux et al., 2010; Bradbury et al., 2018; Baker, 2015; Weller, 2016). Second, the continued availability of traditionally generated antibodies is not guaranteed, as the existence of such reagents depends on active maintenance and storage, or continued production in animals (Cosson and Hartley, 2016). Third, traditional, commercially available antibodies are expensive. For many researchers, these costs are prohibitive and in turn significantly limit productivity and research innovation. Finally, a large number of vertebrate animals are used for the generation of traditional antibodies for biomedical research, which presents ethical concerns (Gray et al., 2020; Gray et al., 2016; Leenaars et al., 1998).\n\nIn recent years, it has been possible to sequence monoclonal antibodies from purified antibody samples and from hybridoma cell lines such that their primary amino acid composition is explicitly identified (Lima et al., 2020; Cosson and Hartley, 2016; Vazquez-Lombardi et al., 2018). In addition, techniques have been developed in which antibodies to nearly any antigen can be isolated through clonal selection of sequence-defined antibody fragments (Gavilondo and Larrick, 2000; Saeed et al., 2017; Alfaleh et al., 2020; Almagro et al., 2019; Laustsen et al., 2021). Using these approaches, the generation of sequence-defined recombinant antibodies and antibody fragments is feasible, which circumvents many of the problems listed above regarding traditionally generated antibodies. First, using recombinant antibodies generated from an invariant primary sequence increases reagent reproducibility. Second, after a primary sequence is determined, recombinant antibodies and their derivatives are accessible in perpetuity. Third, recombinant antibodies can be produced in large quantities using low-cost expression and purification systems, such that researchers can produce large-scale yields of recombinant antibodies for a fraction of the cost of antibodies purchased from commercial sources. In addition, plasmids are easily distributed for direct expression in cell line of choice. Finally, the use of recombinant antibodies significantly reduces the number of animals required for antibody production.\n\nAn additional advantage of recombinant antibodies is the potential for increased reagent versatility. With the primary amino acid sequence of an antibody in-hand, researchers can diversify the original reagent and create derivative tools such as antibody fragments, which can be genetically fused to other molecules, such as fluorophores, to generate custom tools with diverse functionalities. Here, we describe methods and tools for generating low-cost, high-yield preparations of recombinant monoclonal antibodies and antibody fragments from mammalian cell cultures, benchmarking the approach with mitotic epitopes. Furthermore, we describe straightforward and accessible approaches to diversify immunological reagents including customization of antibody species specificity, generation of genetically encoded small antibody fragments, and conversion of single chain antibody fragments (e.g. scFv) into full-length, bivalent antibodies. While this study focuses on antibodies relevant to cell division and mitosis, these approaches are widely applicable for antibodies and antibody fragments across fields.\n\n## Results\n\n### Generation of recombinant monoclonal antibodies to mitotic targets\n\nIn the process of mitosis, chromosomes must properly segregate into two daughter cells in order to maintain genomic integrity. Kinetochores are structures built at the primary constriction of mitotic chromosomes which mediate attachments to spindle microtubules and are largely responsible for both powering and regulating chromosome congression and segregation (Musacchio and Desai, 2017). The primary factor that connects kinetochores to microtubules is the kinetochore-associated NDC80 complex, and within this complex the Ndc80/Hec1 subunit serves as the direct link to microtubules (DeLuca and Musacchio, 2012; Varma and Salmon, 2012; Wimbish and DeLuca, 2020). Research in many labs takes advantage of the Hec1 monoclonal antibody \u20189G3\u2019, which was originally generated in mice to a purified protein fragment encompassing amino acids 56\u2013632 of the human Hec1 protein (Chen et al., 1997). The specific epitope was later mapped using peptide array analysis to amino acids 200\u2013215, a region which resides within the well-ordered calponin homology domain of the protein (DeLuca et al., 2006). While this antibody is commercially available, the quality of the antibody is variable between lots, which is not uncommon in the case of commercially produced immunological reagents (Pozner-Moulis et al., 2007; Garg and Loring, 2017; Katzman et al., 2017; Bradbury and Pl\u00fcckthun, 2015; Bordeaux et al., 2010; Bradbury et al., 2018; Baker, 2015; Weller, 2016).\n\nTo ensure continued consistency, we sequenced the 9G3 Hec1 mouse monoclonal antibody (GeneTex) using tandem mass spectrometry with W-ion isoleucine and leucine determination (Rapid Novor, Kitchener, Ontario, Canada) (Johnson et al., 1987; Zhokhov et al., 2017). A 100 \u00b5g sample of purified monoclonal antibody was used as the source material for sequencing. Figure 1A shows the antibody sequence and annotations for the hypervariable regions (HVR, also known as complementarity determining regions or CDRs) in green, the framework regions (FR) within the variable regions in blue, as well as the constant regions (CR1, CR2, and CR3 in the heavy chain [HC]; CR in the light chain [LC]) in orange. The HC was identified as class IgG2a and the LC as kappa (Figure 1A and B). We next generated geneblocks encoding for both HC and LC sequences optimized for expression in human cells. The geneblocks were cloned separately into GFP-N1 vectors with the GFP removed. Signal peptide sequences for each chain (Burton et al., 1994; Yu et al., 2006) were cloned N-terminal to the HC and LC sequences to direct the expressed antibody for secretion into the cell media (Figure 1C). The HC- and LC-containing expression vectors were co-transfected at a ratio of 2:3 (HC:LC) into 30 ml cultures of human HEK293 cells grown in suspension (Expi293F cells) using PEI transfection reagent (Figure 1C). The cell supernatant was collected 5 days post-transfection, and the antibody was purified on a Protein A Sepharose column (Figure 1C). From a 30 ml cell suspension culture, the purification yield of the recombinant Hec1 antibody (rMAb-Hec1ms) was 1.1 mg of purified antibody (Figure 1D; Table 1). To test the quality and specificity of the rMAb-Hec1ms antibody, we carried out immunofluorescence staining and found that in HeLa cells, rMAb-Hec1ms recognized kinetochores during all phases of mitosis, as expected (Figure 1E). We also analyzed mitotic cell lysates from control cells and cells treated with Hec1 siRNA by immunoblotting, and as shown in Figure 1F, rMAb-Hec1ms recognized a single band at ~72 kDa (corresponding to the predicted mass of the 642 amino acid protein, 73.9 kDa) in control lysates, but not in lysates depleted of Hec1. Consistently, rMAb-Hec1ms antibodies did not recognize kinetochores in cells treated with Hec1 siRNA (Figure 1G). Finally, we compared the sensitivity of the rMAb-Hec1ms antibody to that of the original, traditionally generated Hec1 9G3 antibody by carrying out immunofluorescence on HeLa cells using the same concentration of primary antibody (1.5 \u00b5g/ml) for both. As shown in Figure 1\u2014figure supplement 1, both antibodies robustly recognized kinetochores, and the recombinant version was moderately more sensitive. Of note, the original Hec1 antibody exhibited more spindle staining and overall background staining when compared to the recombinant version (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig1-v3.jpg)\n\n**Figure 1.:** (A) Sequence data obtained for the Hec1 antibody is annotated for the heavy chain (HC) and light chain (LC) variable regions (HC = light blue; LC = dark blue), hypervariable regions (green), constant regions (HC = light orange; LC = dark orange), and the flexible hinge (dark gray). (B) rMAb-Hec1ms antibody structure and nomenclature. (C) Cloning, transfection, and purification scheme. Heavy and light chain coding regions were cloned into separate plasmids for transfection into human Expi293F cells. Cell media containing secreted antibodies was collected and applied to a Protein A Sepharose column. After column washing, antibodies were eluted using a low pH buffer. (D) Purified rMAb-Hec1ms antibody was serially diluted and run on a 12% SDS- polyacrylamide gel. The prominent band that runs above the 245 kDa molecular mass marker is likely a population of non-denatured antibody. The bands running at ~63 and ~50 kDa are glycosylated and non-glycosylated heavy chains, respectively. The antibody light chain runs at ~25 kDa. (E) HeLa cells immunostained with the purified rMAb-Hec1ms antibody. Cells were also stained with DAPI to detect chromosomes. (F) Immunoblot of control and Hec1 siRNA-depleted HeLa cell lysates. Increasing amounts of lysates are shown, and the blot is probed with the purified rMAb-Hec1ms antibody. (G) HeLa cell treated with Hec1 siRNA and stained with the rMAb-Hec1ms antibody and an ACA (anti-centromere) antibody to detect kinetochores. Cell is also stained with DAPI to detect chromosomes. Scale bars are 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) HeLa cells immunostained with the rMAb-Hec1ms antibody (left) and the commercial, traditionally generated Hec1 9G3 antibody (right). Cells were also stained with an ACA (anti-centromere) antibody to detect kinetochores and with DAPI to detect chromosomes. Cells in early prometaphase and metaphase are shown. (B) Quantification of kinetochore fluorescence intensities of cells immunostained with both antibodies. Values were normalized to the kinetochore fluorescence intensity values of the ACA antibody, which recognizes CENP-A, -B, and -C. For each condition, at least 20 kinetochores from at least five cells were measured. For each pair of measurements, a Student\u2019s t-test was carried out to determine statistical significance. Scale bars in all immunofluorescence images are 10 \u00b5m.\n\n**Table 1.**\n Yields from representative preparations of recombinant antibodies and antibody fragments.Each antibody listed in the table was purified from a 30 ml culture of Expi293F cells.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Recombinant Ab</th>\n      <th>Yield (mg)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>rMAb-Hec1ms</td>\n      <td>1.1</td>\n    </tr>\n    <tr>\n      <td>rMAb-Hec1rb</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>rMAb-Hec1hu</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>rMAb-pMELTrb</td>\n      <td>1.9</td>\n    </tr>\n    <tr>\n      <td>rMAb-CENP-Cms</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>rMAb-CENP-Chu</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>rMAb-BubR1ms</td>\n      <td>0.7</td>\n    </tr>\n    <tr>\n      <td>rMAb-BubR1hu</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>rMAb-Mad2-Cms</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <td>rMAb-Mad2-Chu</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>rMAb-Tubrb</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>rMAb-HArb</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>scFvC-Hec1rb</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>scFvC-Mad2-Crb</td>\n      <td>0.1</td>\n    </tr>\n  </tbody>\n</table>\n\nWe implemented a similar strategy for generating a recombinant phospho-specific antibody to a conserved, repeating four amino acid motif (\u2018MELT\u2019 motif) in the kinetochore scaffolding protein KNL1 whose phosphorylation at the threonine (T) residue by the mitotic kinase Mps1 is required to recruit a suite of spindle assembly checkpoint proteins to kinetochores (Shepperd et al., 2012; Yamagishi et al., 2012; London et al., 2012), and a recombinant antibody to CENP-C, an inner kinetochore protein required for kinetochore assembly (Kixmoeller et al., 2020; Hara and Fukagawa, 2020; Navarro and Cheeseman, 2021). The KNL1 pMELT monoclonal antibody (Fisher Scientific) was generated in rabbits against a peptide containing phosphorylated Thr943 and phosphorylated Thr1155 (Nijenhuis et al., 2014). Sequence results revealed that the pMELT rabbit antibody belongs to class IgG with a kappa-class LC (Figure 2\u2014figure supplement 1A). The CENP-C monoclonal antibody was generated in mice (Abcam), and sequencing identified the HC as IgG2b, and the LC as belonging to the kappa class (Figure 2\u2014figure supplement 1B). Both the pMELT and CENP-C antibody HC and LC were cloned into expression vectors as described for the rMAb-Hec1ms antibody. Expression plasmids were transfected into human Expi293F cells, and the antibodies were purified on Protein A Sepharose columns. Immunofluorescence experiments revealed that the rMAb-pMELTrb antibody recognized kinetochores, and as expected, staining was high at kinetochores in early mitosis and decreased as chromosomes aligned at the spindle equator (Figure 2A; Nijenhuis et al., 2014; Vleugel et al., 2015). To test the phospho-specificity of the rMAb-pMELTrb antibody, we treated cells with 10 \u00b5M reversine, an Mps1 kinase inhibitor (Santaguida et al., 2010), and found the antibody reactivity was significantly reduced upon Mps1 inhibition, as detected by immunofluorescence and immunoblotting (Figure 2B and C). We found that the rMAb-CENP-Cms antibody also recognized kinetochores during mitosis; however, the antibody exhibited low levels of cross-reactivity with rabbit secondary antibodies (not shown). We therefore cloned a new CENP-C antibody by combining the rMAb-Hec1ms antibody constant regions with the sequenced CENP-C antibody variable regions. In this case, immunofluorescence experiments revealed that the new rMAb-CENP-Cms antibody recognized kinetochores at all phases in mitosis as expected (Hara and Fukagawa, 2020; Figure 2D), and there was no cross-reactivity with rabbit secondary antibodies (not shown). To test the specificity of the rMAb-CENP-Cms antibody, we treated cells with CENP-C siRNA, and as shown in Figure 2E, kinetochores in these cells were no longer recognized by the recombinant CENP-C antibody. We compared the sensitivities of both the rMAb-pMELTrb and rMAb-CENP-Cms antibodies to the original, traditionally generated antibodies by carrying out immunofluorescence on HeLa cells using the same concentration of primary antibodies for each (1.9 \u00b5g/ml for KNL1 pMELT antibodies; 0.66 \u00b5g/ml for CENP-C antibodies). As shown in Figure 2\u2014figure supplement 2, both antibodies recognized kinetochores. The recombinant version of the KNL1 pMELT antibody was somewhat more sensitive than the commercial antibody, and the CENP-C antibodies exhibited similar sensitivity (Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig2-v3.jpg)\n\n**Figure 2.:** (A) HeLa cells immunostained with rMAb-pMELTrb antibodies. (B) HeLa cell treated with 10 \u00b5M reversine and immunostained with rMAb-pMELTrb antibodies. (C) Immunoblots of lysates generated from untreated or reversine-treated HeLa cells expressing a 100 kDa fragment of KNL1 containing multiple pMELT domains, and probed with rMAb-pMELTrb antibodies (left) and tubulin antibodies as a loading control (right). (D) HeLa cells immunostained with rMAb-CENP-Cms antibodies. (E) HeLa cell treated with CENP-C siRNA and stained with rMAb-CENP-Cms antibodies and rMAb-Hec1hu antibodies to detect kinetochores. In all immunofluorescence images, cells were stained with DAPI to detect chromosomes. Scale bars are 10 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Sequence data and domains for the KNL1 pMELT antibody are annotated for the heavy chain (HC) and light chain (LC) variable regions (HC = light yellow; LC = dark yellow), hypervariable regions (green), constant regions (HC = light pink; LC = red), and the flexible hinge (dark gray). (B) Sequence data and domains for the CENP-C antibody are annotated for the HC and LC variable regions (HC = light brown; LC = dark brown), hypervariable regions (green), constant regions (HC = light orange; LC = dark orange), and the flexible hinge (dark gray).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) HeLa cells immunostained with the rMAb-pMELTrb antibody (left) and the commercial, traditionally generated KNL1 pMELT antibody (right). Cells were also stained with an ACA antibody to detect kinetochores and with DAPI to detect chromosomes. Cells in early prometaphase and metaphase are shown. (B) Quantification of kinetochore fluorescence intensities of cells immunostained with both KNL1 pMELT antibodies. (C) HeLa cells immunostained with the rMAb-CENP-Cms antibody (left) and the commercial, traditionally generated CENP-C antibody (right). Cells were also stained with an ACA antibody to detect kinetochores and with DAPI to detect chromosomes. Cells in early prometaphase and metaphase are shown. (D) Quantification of kinetochore fluorescence intensities of cells immunostained with both CENP-C antibodies. For all quantifications, values were normalized to the kinetochore fluorescence intensity values of the ACA antibody which recognizes kinetochore proteins CENP-A, -B, and -C. For each condition, at least 20 kinetochores from at least five cells were measured. For each pair of measurements, a Student\u2019s t-test was carried out to determine statistical significance. Scale bars in all immunofluorescence images are 10 \u00b5m.\n\nWe next wanted to obtain primary sequences and generate recombinant antibodies from existing mouse hybridoma cell lines producing monoclonal antibodies to key mitotic epitopes. To this end, we used cell lines expressing antibodies to the kinetochore-associated and spindle assembly checkpoint protein BubR1 (Chan et al., 1999; Zhang et al., 2015; Lischetti and Nilsson, 2015); and to the active form of the kinetochore-associated and spindle assembly checkpoint protein Mad2, which recognize the \u2018closed\u2019 conformation of Mad2 molecules that are found in Mitotic Checkpoint Complexes or bound to Mad1 (Sedgwick et al., 2016; De Antoni et al., 2005; Mapelli et al., 2007). For both hybridoma cell lines, the mRNA transcriptome was obtained and used to generate a cDNA library from which the antibody sequences were identified through whole transcriptome shotgun sequencing (Absolute Antibody; Boston, MA). Based on the obtained sequences, the BubR1 antibody was classified as IgG2b with a kappa LC and the Mad2-C antibody was classified as IgG1, also with a kappa LC (Figure 3\u2014figure supplement 1A and B). Through this approach, we were able to additionally obtain the sequences of the native N-terminal signal peptides (also referred to as leader peptides) for both HC and LC for both antibodies (Figure 3\u2014figure supplement 1A and B). HC and LC sequences were cloned into expression vectors as described for rMAb-Hec1ms above, with the exception that the native signal peptides were used. Expression plasmids were transfected into human Expi293F cells, and the antibodies against BubR1 and Mad2-C were purified on Protein A Sepharose columns. Immunofluorescence experiments revealed that both antibodies recognized kinetochores during mitosis (Figure 3A and D). As expected, staining for both antibodies was high at kinetochores in early mitosis and decreased as chromosomes aligned at the spindle equator (Skoufias et al., 2001; Hoffman et al., 2001; Waters et al., 1998; Figure 3A and D). To test the specificity of rMAb-BubR1ms, HeLa cells were treated with an siRNA targeted to BubR1 and processed for immunofluorescence or immunoblotting. Cells depleted of BubR1 exhibited significantly reduced reactivity with rMAb-BubR1ms antibodies at kinetochores (Figure 3B) and in cell lysates (Figure 3C). To test the specificity of the rMAb-Mad2-Cms antibody, we treated HeLa cells with Mad2 siRNA and found that cells exhibited no reactivity at kinetochores with recombinant Mad2-C antibody (Figure 3E). In this case, cells were treated with nocodazole to enrich for kinetochore association of Mad2, which is rapidly evicted from kinetochores in the presence of spindle microtubules in untreated cells. Finally, we compared the sensitivities of the recombinant antibodies to the original, traditionally generated antibodies by carrying out immunofluorescence on HeLa cells using the same concentration of primary antibodies for each (2.1 \u00b5g/ml for BubR1 antibodies; 1.6 \u00b5g/ml for Mad2-C antibodies) (Figure 3\u2014figure supplement 2). We found that while all antibodies recognized kinetochores, the recombinant versions of both antibodies were modestly more sensitive than the original antibodies (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig3-v3.jpg)\n\n**Figure 3.:** (A) HeLa cells immunostained with rMAb-BubR1ms antibodies. (B) HeLa cell treated with BubR1 siRNA and immunostained with rMAb-BubR1ms antibodies. (C) Immunoblots of lysates generated from control or BubR1 siRNA-treated HeLa cells and probed with rMAb-BubR1ms antibodies (left) and tubulin antibodies as a loading control (right). (D) HeLa cells immunostained with rMAb-Mad2-Cms antibodies. (E) HeLa cells (\u00b1Mad2 siRNA) pre-treated with 500 nM nocodazole for 12 hr and immunostained with rMAb-Mad2-Cms antibodies. In all immunofluorescence images, cells were stained with DAPI to detect chromosomes. Scale bars are 10 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Sequence data and domains for the BubR1 antibody are annotated for the heavy chain (HC) and light chain (LC) variable regions (HC = light gray; LC = dark gray), hypervariable regions (green), constant regions (HC = light orange; LC = dark orange), and the flexible hinge (dark gray). (B) Sequence data and domains for the Mad2-C antibody are annotated for the HC and LC variable regions (HC = light purple; LC = dark purple), hypervariable regions (green), constant regions (HC = light orange; LC = dark orange), and the flexible hinge (dark gray). For each antibody sequence, the signal peptide domain is also highlighted.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) HeLa cells immunostained with the rMAb-BubR1ms antibody (left) and the original BubR1 antibody generated in mice and obtained from hybridoma cell lines (right). Cells were also stained with an ACA antibody to detect kinetochores and with DAPI to detect chromosomes. Cells in early prometaphase and metaphase are shown. (B) Quantification of kinetochore fluorescence intensities of cells immunostained with both BubR1 antibodies. (C) HeLa cells immunostained with the rMAb-Mad2-Cms antibody (left) and the original Mad2-C antibody generated in mice and obtained from hybridoma cell lines (right). Cells were also stained with an ACA antibody to detect kinetochores and with DAPI to detect chromosomes. Cells in early prometaphase and metaphase are shown. (D) Quantification of kinetochore fluorescence intensities of cells immunostained with both Mad2-C antibodies. For all quantifications, values were normalized to the kinetochore fluorescence intensity values of the ACA antibody, which recognizes kinetochore proteins CENP-A, -B, and -C. For each condition, at least 20 kinetochores from at least five cells were measured. For each pair of measurements, a Student\u2019s t-test was carried out to determine statistical significance. Scale bars in all immunofluorescence images are 10 \u00b5m.\n\n### Modification of antibody species specificity\n\nFor indirect immunofluorescence experiments, a commonly used cell biology approach, a fluorescently tagged secondary antibody recognizes a primary antibody and provides signal detection and amplification. In many cases, commercial primary antibodies directed to target antigens are only available in a single animal specificity, meaning the antibodies were generated in a particular species and contain HC and LC constant regions unique to that species. In practice, this limits the number and combinations of targets that can be probed for and detected in such experiments. A solution to this problem is to directly conjugate primary antibodies with fluorescent dyes, obviating the need for secondary antibodies, and allowing for the simultaneous use of two primary antibodies generated in the same host species. However, this approach requires a substantial amount of primary antibody, which may be cost prohibitive if the antibodies are purchased from a commercial source. Furthermore, this approach eliminates secondary antibody-mediated amplification of primary antibody signals. We therefore set out to alter the species specificity of our recombinant monoclonal antibodies to expand our toolbox of available reagents. To this end, we generated a new Hec1 primary antibody, termed rMAb-Hec1rb, such that it is recognized by a rabbit secondary antibody. We generated the new sequence by removing the constant regions from both the HC and LC of the rMAb-Hec1ms antibody and replacing them with the constant regions from a rabbit IgG antibody (Figure 4A). The new HC and LC expression plasmids were transfected into human Expi293F cells and purified on a Protein A Sepharose column as described above. We tested the antibody in immunofluorescence assays and determined that rMAb-Hec1rb localized to kinetochores in mitotic cells, and importantly, was recognized by rabbit secondary antibodies, but not by mouse secondary antibodies. (Figure 4B). We diversified the Hec1 antibody even further by generating a version that is recognized by a human secondary antibody. In this case, we acquired the human IgG1 sequence from the UniProt Knowledgebase (UniProt # P01857 and P01834) and generated geneblocks for the HC and LC constant regions. We then combined the variable regions of both the HC and LC from the rMAb-Hec1ms IgG2a sequence with the human IgG1 antibody constant region sequences to generate plasmids encoding for rMAb-Hec1hu (Figure 4C). We purified and tested this antibody in immunofluorescence assays and determined that the rMAb-Hec1hu localized to kinetochores in mitotic cells, and was recognized by human, but not mouse secondary antibodies (Figure 4C). We went on to use this approach to generate a number of additional species variants, including rMAb-Cenp-Chu, rMAb-BubR1hu, and rMAb-Mad2-Chu antibodies (Figure 4D\u2013F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig4-v3.jpg)\n\n**Figure 4.:** (A) Schematic of \u2018species swap\u2019 approach. (B\u2013F) HeLa cells stained with antibodies to rMAb-Hec1rb, panel B; rMAb-Hec1hu, panel C; rMAb-CENP-Chu, panel D; rMAb-BubR1hu, panel E; and rMAb-Mad2-Chu, panel F. For all panels B\u2013F, cells were probed with the species-appropriate secondary antibody and also with secondary antibodies specific for the original species. Cells were also stained with DAPI to detect chromosomes. Scale bars are 10 \u00b5m.\n\n### Generation of recombinant antibody fragments\n\nFor some cell biological and biomedical applications, antibody fragments, generated by either proteolysis or genetic engineering, offer advantages over the use of intact, bivalent antibodies. For example, their smaller size allows more efficient penetration of tissue samples and may provide better access to \u2018buried\u2019 epitopes; they are able to bind targets without inducing cross-linking; they reduce steric effects (compared with intact antibodies) when monitoring an antigen in living cells, and they have reduced immunogenicity, which may be desirable for therapeutic applications (Hayashi-Takanaka et al., 2011; Cheloha et al., 2020; Zhao et al., 2019; Xenaki et al., 2017; Berland et al., 2021; Ries et al., 2012; Morisaki et al., 2016; Yan et al., 2016; Wang et al., 2016; Stasevich et al., 2014). Another advantage is that single chain antibody fragments can be fused to a fluorescent protein and genetically encoded for expression in living cells for the purpose of real-time antigen tracking. This ability becomes particularly important when an antibody recognizes a post-translational protein modification or specific protein conformation, which cannot be tracked simply by expressing a fluorescently tagged version of a protein of interest (Sato et al., 2013; Kimura et al., 2015). Finally, the use of antibody fragments is becoming increasingly important in super-resolution microscopy approaches, where the achieved spatial resolution depends not only on the imaging method, but on the size of the probes used (Ries et al., 2012; Traenkle and Rothbauer, 2017; Mikhaylova et al., 2015; Zhao et al., 2019).\n\nTo further diversify our recombinant antibodies and to capitalize on the advantages listed above, we set out to generate three types of antibody fragments: (1) scFvC (single chain variable fragment plus a truncated constant region), (2) scFv (single chain variable fragment), and (3) Fab (antigen binding fragment). We first used the antibody sequences to Hec1 and Mad2-C to generate recombinantly expressed and purified scFvC fragments, which contain the variable regions of the HC and LC connected by a flexible linker, attached to the rabbit IgG-specific HC constant regions (CR2 + CR3) in a single polypeptide chain and totaling ~60 kDa in mass, and totaling ~120 kDa in mass after dimerization (Figure 5A, left panel). Single plasmids encoding the Hec1 and Mad2-C scFvC fragments (scFvC-Hec1rb and scFvC-Mad2-Crb), which include signal peptides (Lima and Cosson, 2019), were transfected into human Expi293F cells and purified on Protein A Sepharose columns. We were able to purify the scFvC fragments on our affinity columns, since they contain a portion of the HC constant region that is recognized by Protein A. The purified Hec1 and Mad2-C scFvC fragments were introduced into cells by bead-loading (McNeil and Warder, 1987; Cialek et al., 2021), and the cells were subsequently fixed and incubated with anti-rabbit secondary antibodies. As shown in Figure 5B and C, the fragments recognized kinetochores in mitotic cells, and the results were similar to those obtained with the intact, bivalent antibodies. Next, we generated genetically encoded scFvC fragments using both the Hec1 and Mad2-C antibody sequences. For these constructs, we removed the signal peptide sequence and transiently expressed a single plasmid encoding for the HC and LC variable regions connected by the flexible linker, and the rabbit IgG-specfic HC constant regions (CR2 + CR3) in HeLa cells. After transfection with the single plasmids, the HeLa cells were prepared for immunofluorescence and stained with an anti-rabbit secondary antibody. As shown in Figure 5D and E, the genetically encoded Hec1 and Mad2-C scFvC fragments both recognized kinetochores in mitotic cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig5-v3.jpg)\n\n**Figure 5.:** (A) Schematic illustrating the generation of three types of fragments: scFvC (left), scFv (center), and Fab (right). (B and C) Hec1 and Mad2-C scFvC fragments were purified on Protein A Sepharose columns and bead-loaded into HeLa cells. Cells were fixed and stained with anti-rabbit secondary antibodies and DAPI to detect chromosomes. (D and E) HeLa cells were transfected with the scFvC-Hec1 expression plasmid or the scFvC-Mad2-C expression plasmid. Cells were fixed and stained with anti-rabbit secondary antibodies and DAPI to detect chromosomes. (F) HeLa cells were transfected with the pMELT scFv-GFP expression plasmid and time-lapse imaged using confocal microscopy, and a representative cell is shown. At time = 0 min, many kinetochores are positive for scFv-pMELT-GFP, and by 18 min, when the cell has reached metaphase, no kinetochore-associated pMELT signals are detected. Arrows in the 8 min timepoint image point to the kinetochores which retain detectable MELT phosphorylation in late prometaphase. (G) Hec1 Fab were generated through proteolysis and directly labeled with an Alexa 647 fluorophore. HeLa cells were bead-loaded with Hec1 Fab647, stained with DAPI to detect chromosomes, and imaged. (H) Hec1 Fab were generated through proteolysis and directly labeled with both Alexa 405 and Alexa 647 fluorophores. HeLa cells were fixed, permeabilized, incubated with Hec1 Fab405/647, and subjected to both wide-field (left) and STORM imaging (right). Scale bars are 10 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) HeLa cells were transfected with the pMELT scFv-GFP expression plasmid and time-lapse imaged using confocal microscopy, and several examples are shown. Times are shown in minutes, and t = 0 indicates the start of filming, not the start of mitosis. (B) HeLa cells were transfected with the scFv-pMELT-GFP expression plasmid, lysed, fixed, and processed for fixed cell imaging. Representative cells in early prometaphase, mid prometaphase, and metaphase are shown. Cells are stained with DAPI to detect chromosomes. Scale bars are 10 \u00b5m.\n\nWe next used the rMAb-pMELTrb sequence to generate an scFv, comprised of the variable regions of the HC and LC connected by a flexible linker and totaling ~25 kDa in mass (Figure 5A, middle panel). In this case, the scFv does not contain the Fc (fragment crystallizable) region (comprised of the HC constant regions CR2 and CR3), which is recognized by Protein A. We therefore did not express and purify the antibody for this experiment. However, we added a GFP tag to the C-terminus of the polypeptide chain, omitted the signal peptide, and expressed the fluorescently tagged scFv in HeLa cells. We collected time-lapse images, and as shown in Figure 5F and Figure 5\u2014figure supplement 1, the genetically encoded pMELT scFv-GFP recognizes kinetochores in early mitosis when phosphorylation of the KNL1 MELT repeats is high, but much less so in late mitosis, when phosphorylation of the MELT repeats is low. These results demonstrate that small immunological probes can be generated from primary monoclonal antibody sequences and successfully expressed in mitotic cells to detect mitotic antigens, and importantly, post-translational protein modifications of mitotic targets in living cells.\n\nFinally, we used the recombinant, purified rMAb-Hec1ms antibody to generate Fab, or antigen binding fragments, containing a single constant region of each chain and the variable regions from both the HC and LC (Figure 5A, right panel). The purified rMAb-Hec1ms antibody was enzymatically digested with papain protease, the digestion reaction was centrifuged through a Protein A spin column, and the antigen binding fragments (Fab), which do not bind the Protein A resin, were collected in the flow through. We directly labeled the rMAb-Hec1ms Fab with an Alexa 647 fluorescent dye and bead-loaded the fragment into HeLa cells, and as shown in Figure 5G, the labeled Fab recognizes kinetochores in mitotic cells. We next tested if the labeled rMAb-Hec1ms Fab fragment is appropriate for use in super-resolution STORM imaging. For this experiment, we double-labeled the rMAb-Hec1ms Fab with Alexa 647 and Alexa 405 dyes at a ratio of 1:1. HeLa cells were then fixed and stained with the dually labeled rMAb-Hec1ms Fab405/647 fragment (Figure 5H). Samples were excited with 640 and 405 nm lasers, and images were collected on a Nikon N-STORM imaging system. The Fab robustly recognized kinetochores and the resulting STORM images demonstrate that the recombinantly expressed antibody fragments are compatible with super-resolution imaging approaches (Figure 5H).\n\n### Reverse engineering antibody fragments into full-length, bivalent antibodies\n\nAdvances in genetic engineering techniques such as antibody phage display and hypervariable domain grafting have provided new routes to generating antibody fragments including scFv (single chain variable fragments) and single domain antibodies (sdAb, also known as nanobodies) (Panikar et al., 2021; Laustsen et al., 2021; Valldorf et al., 2021; Shim, 2017; Shukra and Sridevi, 2014; Zhao et al., 2019). As a result, there are growing numbers of published antibody fragment sequences. As discussed above, there are numerous advantages to using such antibody fragments; however, there are also cases in which a full-length, bivalent antibody is preferred. For example, in standard indirect immunofluorescence experiments, multiple secondary antibodies bind to the constant regions of a full-length, bivalent primary antibody, which results in signal amplification and increased sensitivity. Similar arguments can be made for the use of full-length, bivalent antibodies in immunoblotting and immunoprecipitation experiments. Given the rise in availability of antibody fragment sequences, we wanted to use our approach to convert scFv sequences into full-length, bivalent antibodies. For this reason, we modified an HA (hemagglutinin)-tag scFv (also known as the HA-tag \u2018frankenbody\u2019) sequence (Zhao et al., 2019) into a full-length, bivalent antibody. Specifically, we cloned the HC variable regions of the HA-tag scFv onto the HC constant regions from a rabbit IgG antibody (Figure 6A). Similarly, we cloned the LC variable region of the HA-tag scFv onto the rabbit IgG LC constant region (Figure 6A). In addition, signal peptides were cloned into both HC and LC plasmids. Both plasmids were transfected into human Expi293F cells as described above and full-length, bivalent antibody secreted into the cell media was purified using a Protein A Sepharose column. To test the antibody in cells and to confirm specificity, we expressed the following versions of Hec1 in HeLa cells: HA-tagged (Figure 6B); HA- and GFP-tagged (Figure 6C), and GFP-tagged (Figure 6D). Cells were prepared for immunofluorescence and stained with the rMAb-HArb antibody and a fluorescently labeled rabbit secondary. As shown in Figure 6B\u2013D, the rMAb-HArb antibody recognized Hec1 at kinetochores in cells expressing Hec1-HA and Hec1-HA-GFP, but not in cells expressing Hec1-GFP.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72093/elife-72093-fig6-v3.jpg)\n\n**Figure 6.:** (A) Schematic illustrating the generation of a reverse engineered, full-length HA-tag antibody from an scFv. (B\u2013D) HeLa cells were transfected with Hec1-HA (B), Hec1-HA-GFP (C), or Hec1-GFP (C), and immunostained with rMAb-HArb antibodies. In panels C and D, GFP was also imaged. (E) Immunoblot of HeLa lysate probed with reverse engineered, full-length tubulin antibody, rMAb-Tubrb. (F) HeLa cells immunostained with rMAb-Hec1ms and rMAb-Tubrb. In all immunofluorescence images, cells were stained with DAPI to detect chromosomes. Scale bars are 10 \u00b5m.\n\nFinally, we carried out a similar reverse engineering approach to generate a full-length, bivalent IgG tubulin antibody using the sequence of an \u03b1 tubulin scFvC antibody fragment (Lima and Cosson, 2019). Similar to the approach used for the HA-tag scFv described above, we cloned the HC and LC variable regions from the tubulin scFvC onto the HC and LC constant regions from a rabbit IgG antibody. Additionally, signal peptides were cloned into both the HC and LC plasmids. The full-length antibody was expressed and purified from human Expi293F cells. We confirmed that the new, bivalent rMAb-Tubrb antibody recognized an ~55 kDa protein in HeLa cell lysate, which corresponds to the molecular weight of \u03b1 and \u03b2 tubulin monomers (Figure 6E). In addition, the antibody recognizes microtubules in cells, and as expected, the primary antibody is recognized by rabbit but not mouse secondary antibodies (Figure 6F).\n\n## Discussion\n\nHere, we describe a set of tools and protocols that can be used to generate high-yield, low-cost antibodies and antibody fragments from primary amino acid sequences. While most of the antibodies and antibody derivatives described here are directed to antigens involved in mitotic cell division and kinetochore function, the plasmids and protocols are applicable to any monoclonal antibody sequence. Using relatively small volumes (~30 ml) of human Expi293F cells grown in suspension, we demonstrate production of up to 2.0 mg of protein per preparation (rMAb-Tubrb). We note, however, that the yields for individual antibody preparations varied, and our lowest yields were in the range of 0.1 mg of protein from a 30 ml suspension culture (Table 1). We have not yet defined the source of yield variation, but we are working to normalize these values by optimizing the cloning, expression, and purification conditions for the lower-yield reagents.\n\nIn some cases, the major cost incurred for the approach described here is the protein sequencing itself. Currently, the approximate costs of sequencing a purified monoclonal antibody range from ~$5000 to $12,000. However, obtaining sequence information from a monoclonal hybridoma cell line is much less expensive (~$500-1500), and is offered through many companies and non-profit facilities as a stand-alone service, or as an \u2018add-on\u2019 cost for custom monoclonal antibody production services. We propose that if individual research labs submit existing hybridoma cell lines for antibody sequencing and share this information publicly, this would greatly benefit the entire research community by providing a means for individual labs to produce low-cost antibodies and generate customized reagents for use in their own research. Importantly, there are growing numbers of available monoclonal antibody sequences available through databases, obtained through protein sequencing or from atomic structures. These include the ABCD (Antibodies Chemically Defined) database at the Geneva Antibody Facility (Lima et al., 2020; https://web.expasy.org/abcd); the ABG (Antibody Group) directory (http://pt7mdv.ceingebi.unam.mx/vir/structure/structures.html); the Kabat database (Johnson and Wu, 2000; http://bigd.big.ac.cn/databasecommons/database/id/5425); SAbDab (http://opig.stats.ox.ac.uk/webapps/newsabdab/sabdab/); abYbank (https://www.abybank.org); and the IMGT (International Immunogenetics Information System) monoclonal antibodies database (http://www.imgt.org/mAb-DB/doc). The approaches described are intended to facilitate the expression and purification of recombinant antibodies and antibody fragments in individual labs using accessible, non-specialized equipment and reagents; however, we note that many non-profit, institutional core facilities also offer these services at relatively low costs, which provide a convenient and accessible alternative to expressing and purifying antibodies in-house. Costs can also be reduced by ordering geneblocks for only the variable regions of a newly sequenced antibody and combining these sequences with previously validated constant regions of choice (e.g. those described here for rabbit, mouse, and human IgG antibodies). We note that while an advantage of using recombinant antibodies such as those described in this study is increased reproducibility, it is important that, as with any recombinant DNA-based reagent, plasmids are routinely sequenced for quality control. Finally, it is important to consider downstream usage of data generated from antibodies purchased from commercial sources, as different companies may have unique sets of terms and conditions.\n\nIn addition to providing low-cost methods for in-house monoclonal antibody production, the approaches described here allow for diversification of sequenced monoclonal antibodies. One practical example of such diversification is altering the species specificity by \u2018swapping\u2019 constant regions. Researchers are typically limited to the combination of antigens they wish to detect in indirect immunofluorescence or immunohistochemical experiments by species specificity of the antibodies. Once a monoclonal antibody sequence is in hand, it is simple and straightforward to produce a new antibody containing the constant regions specific to a different species.\n\nAnother advantage of the methodology described here is the ability to generate antibody fragments from a primary sequence. Advantages of such fragments include more efficient penetration of tissue and cell samples; access to less-accessible epitopes; the ability to bind targets without inducing cross-linking; and reduced steric effects compared with full-length bivalent antibodies. Additionally, antibody fragments can be used for tracking protein modifications and specific protein conformations in living cells. To study protein dynamics in cells, fluorescent proteins such as GFP are typically fused to a protein of interest, expressed, and monitored in living cells. However, such fluorescent protein tags cannot track or identify protein modifications (e.g. phosphorylation), nor can they detect specific protein conformations, both of which may play critical roles in a protein\u2019s cellular function. In recent years, fluorescently labeled antibody fragments such as Fab, scFv, scFvC, and nanobodies have been used for the purpose of tracking post-translational modifications and specific protein conformations (Kimura et al., 2015; Lyon and Stasevich, 2017; Sachs et al., 1972). Antibody fragments may be preferable to intact bivalent antibodies for tracking modifications and specific conformations in living cells since their smaller size minimizes steric effects of the probes themselves, which could lead to interference with protein function. Such antibody fragments can be purified, directly labeled with a fluorescent dye, and introduced into cells by microinjection, electroporation, or bead-loading, and visualized in living cells. Alternatively, single chain antibody fragments (e.g. scFv, scFvC) fused to a fluorescent protein such as GFP can be genetically encoded for expression and monitoring in living cells. Here, we describe tools to generate both types of labeled antibody fragments from a primary monoclonal antibody sequence, which will allow for investigations of processes in cells that have previously not been feasible. For example, during mitotic cell division, the regulation of kinetochore-microtubule attachments is driven in large part by reversible and dynamic phosphorylation events, yet these events have not yet been monitored in real-time during mitotic progression in living cells. The methodologies described here will enable the generation of reagents for real-time tracking of phosphorylation events on key kinetochore proteins during chromosome congression and spindle assembly checkpoint inactivation, which will provide critical insight into the mechanisms that regulate kinetochore function during mitosis.\n\nIt is important to note that while we were successful in generating a recombinant scFv directed to the KNL1 pMELT domain using the native sequence, we were not successful in generating scFv fragments to Hec1, BubR1, or Mad2-C. Why this is the case is not clear; however, there are other methods to obtain an scFv from the primary sequence that we have not yet explored. For example, it has been demonstrated that the hypervariable domains, obtained from the primary sequence of a monoclonal antibody, can be grafted onto optimized scFv scaffolds which are known to function in cells (Zhao et al., 2019). This approach has led to the generation of genetically encoded single chain antibody fragments referred to as \u2018frankenbodies\u2019, which are capable of recognizing and tracking specific epitopes in cells (Zhao et al., 2019).\n\nIn this study, we also demonstrated that our recombinant antibody fragments can be directly labeled with fluorescent dyes for use in super-resolution light microscopy approaches. The use of small, directly labeled probes is desirable for super-resolution imaging approaches, such as PALM/STORM, where the goal is precise molecular mapping of antigens on the nanometer scale. The size of the probe is directly relevant since larger probes, such as intact, bivalent primary and secondary antibodies, limit the achievable resolution (Ries et al., 2012; Traenkle and Rothbauer, 2017; Mikhaylova et al., 2015). For example, an intact bivalent antibody is approximately 10\u201315 nm long, and when using an imaging technique with a spatial resolution in the range of 20\u201330 nm (e.g. STED; PALM/STORM), such a large labeling probe reduces the resolution by approximately twofold.\n\nIn summary, we describe methodologies to generate and purify recombinant versions of a suite of antibodies directed to kinetochore and mitotic proteins. We also present a set of molecular biological methods to expand the versatility of these antibodies by altering species specificity and generating antibody fragments that can be either genetically encoded for tracking antigens in cells or recombinantly expressed and purified. As tools such as these become more widely shared, access to low-cost, sequence-defined antibodies will increase, benefiting all fields that utilize antibody and antibody-based reagents.\n\n## Materials and methods\n\n### Antibody sequencing\n\nPurified samples (100 \u00b5g each) of Hec1 (Genetex), KNL1 pMELT (Fisher Scientific), and CENP-C (Abcam) monoclonal antibodies were sequenced by Rapid Novor (Kitchener, Ontario, Canada) using tandem mass spectrometry. Data obtained from these antibodies presented in the current study are for non-commercial purposes only, in accordance with the terms and conditions of the companies from which the CENP-C, Hec1 9G3, and KNL1 pMELT antibodies were purchased. Cell samples (106 cells each) of Mad2 and BubR1 hybridoma cell lines were submitted to Absolute Antibody (Boston, MA) for sequencing. For each cell sample, the mRNA transcriptome was obtained through whole transcriptome shotgun sequencing, the resulting reads were assembled into contigs, and antibody transcripts were identified based on homology.\n\n### Plasmid generation\n\nFor full-length Hec1, KNL1 pMELT, CENP-C, Mad2-C, and BubR1 antibodies, the protein sequence for each was used to design DNA geneblocks optimized for expression in human cells using the IDT (Integrated DNA Technologies) codon optimization tool. For full-length Hec1, KNL1 pMELT, and CENP-C antibodies, an N-terminal signal peptide sequence was added to the geneblock (Burton et al., 1994; Yu et al., 2006). For Mad2-C and BubR1 antibodies, the native signal peptides were included in the geneblock design. The resulting DNA fragments/geneblocks were cloned using the Gibson assembly method into the pEGFP-N1 vector (Clontech) with the GFP removed by Sac1/Not1 digestion, henceforth referred to as the rMAbParent plasmid. For each full-length antibody, a HC and LC plasmid was generated for co-expression in HEK293 suspension culture cells (Expi293F cells) (Fisher Scientific). For species specificity swapping experiments, geneblocks corresponding only to the variable regions of the HCs and LCs were designed and ordered. PCR fragments were generated corresponding to the target species constant regions for both HCs and LCs. DNA fragments from the geneblocks for the variable regions were combined with the PCR fragments for the constant regions and cloned into the rMAbParent plasmid using the Gibson assembly method. For construction of each of the Mad2 and Hec1 scFvC plasmids, the following PCR fragments were generated: (1) HC variable region (for expression in Expi293F cells, a signal peptide was also included; for genetic encoding, the signal peptide was not included) (Sasada et al., 1988), (2) flexible linker, (3) LC variable region, and (4) rabbit IgG HC constant regions (CH2 and CH3). PCR fragments were cloned by the Gibson assembly method into the rMAbParent plasmid resulting in a final single scFvC plasmid. For construction of the KNL1 pMELT scFv, the following PCR fragments were generated: (1) HC variable region (the signal peptide was not included) (2) flexible linker, and (3) LC variable region. PCR fragments were cloned by the Gibson assembly method into the rMAbParent plasmid (containing the sequence for GFP), resulting in a final single scFv plasmid. To generate the full-length bivalent HA-tag antibody, PCR fragments were generated corresponding to the HC and LC variable regions of the HA-tag scFv, which were generated by grafting the HA-tag HC and LC HVR (aka CDRs) into the 15F11 scaffold (Zhao et al., 2019). The PCR fragments containing the HC and LC variable regions also included N-terminal signal peptide sequences (Burton et al., 1994; Yu et al., 2006). PCR fragments corresponding to the rabbit IgG-specific LC and HC constant regions were generated and, together with the HC and LC variable regions, were cloned into the rMAbParent plasmid using the Gibson assembly method. To generate the full-length bivalent tubulin antibody, geneblocks corresponding to the HC and LC variable regions of a tubulin scFvC (AA345) (Lima and Cosson, 2019) were designed. N-terminal signal peptide sequences were added to both the HC and LC variable regions (Burton et al., 1994; Yu et al., 2006). PCR fragments corresponding to the rabbit IgG-specific LC and HC constant regions were generated and, together with the HC and LC variable regions, were cloned into the rMAbParent plasmid using the Gibson assembly method. Descriptions of all plasmids generated in this study are listed in Table 2.\n\n**Table 2.**\n Descriptions of antibody-related plasmids generated in this study.Plasmids will be made available by contacting the corresponding author. Use of the plasmids and sequence information is for non-commercial purposes only.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Plasmid name</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>pDL001_Hec1-ms_IgG_HC</td>\n      <td>Hec1 heavy chain variable and constant regions (mouse) + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL002_Hec1-ms_IgG_LC</td>\n      <td>Hec1 light chain variable and constant region (mouse) + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL003_Hec1-rb_IgG_HC</td>\n      <td>Hec1 heavy chain variable region + rabbit heavy chain constant regions + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL004_Hec1-rb_IgG_LC</td>\n      <td>Hec1 light chain variable region + rabbit light chain constant region + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL005_Hec1-hu_IgG_HC</td>\n      <td>Hec1 heavy chain variable region + human heavy chain constant regions (UniProt P01857) + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL006_Hec1-hu_IgG_LC</td>\n      <td>Hec1 light chain variable region + human light chain constant region (UniProt P01834) + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL007_pMELT-rb_IgG_HC</td>\n      <td>KNL1 pMELT heavy chain variable and constant regions (rabbit) + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL008_pMELT-rb_IgG_LC</td>\n      <td>KNL1 pMELT light chain variable and constant region (rabbit) + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL009_CENPC-ms_IgG_HC</td>\n      <td>CENP-C heavy chain variable region + mouse heavy chain constant regions (from Hec1 sequence) + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL010_CENPC-ms_IgG_LC</td>\n      <td>CENP-C light chain variable region + mouse light chain constant region (from Hec1 sequence) + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL011_CENPC-hu_IgG_HC</td>\n      <td>CENP-C heavy chain variable region + human heavy chain constant regions (UniProt P01857) + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL012_CENPC-hu_IgG_LC</td>\n      <td>CENP-C light chain variable region + human light chain constant region (UniProt P01834) + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL013_BubR1-ms_IgG_HC</td>\n      <td>BubR1 heavy chain variable and constant regions (mouse); (contains endogenous N-term signal peptide)</td>\n    </tr>\n    <tr>\n      <td>pDL014_BubR1-ms_IgG_LC</td>\n      <td>BubR1 light chain variable and constant region (mouse); (contains endogenous N-term signal peptide)</td>\n    </tr>\n    <tr>\n      <td>pDL015_BubR1-hu_IgG_HC</td>\n      <td>BubR1 heavy chain variable region + human heavy chain constant regions (UniProt P01857) (contains endogenous N-term signal peptide)</td>\n    </tr>\n    <tr>\n      <td>pDL016_BubR1-hu_IgG_LC</td>\n      <td>BubR1 light chain variable region + human light chain constant region (UniProt P01834) (contains endogenous N-term signal peptide)</td>\n    </tr>\n    <tr>\n      <td>pDL017_Mad2C-ms_IgG_HC</td>\n      <td>Mad2-C heavy chain variable and constant regions (mouse) (contains endogenous N-term signal peptide)</td>\n    </tr>\n    <tr>\n      <td>pDL018_Mad2C-ms_IgG_LC</td>\n      <td>Mad2-C light chain variable and constant region (mouse) (contains endogenous N-term signal peptide)</td>\n    </tr>\n    <tr>\n      <td>pDL019_Mad2C-hu_IgG_HC</td>\n      <td>Mad2-C heavy chain variable region + human heavy chain constant regions (UniProt P01857) (contains endogenous N-term signal peptide)</td>\n    </tr>\n    <tr>\n      <td>pDL020_Mad2C-hu_IgG_LC</td>\n      <td>Mad2-C light chain variable region + human light chain constant region (UniProt P01834) (contains endogenous N-term signal peptide)</td>\n    </tr>\n    <tr>\n      <td>pDL023_Tub-rb_IgG_HC</td>\n      <td>\u03b1-Tubulin heavy chain variable region + rabbit heavy chain constant regions + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL024_Tub-rb_IgG_LC</td>\n      <td>\u03b1-Tubulin light chain variable region + rabbit light chain constant region + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL025_HA-rb_IgG_HC_15F11</td>\n      <td>HA-tag heavy chain hypervariable regions grafted into framework 15F11 scaffold (Zhao et al., 2019) + rabbit heavy chain constant regions + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL026_HA-rb_IgG_LC_15F11</td>\n      <td>HA-tag light chain hypervariable regions grafted into framework 15F11 scaffold (Zhao et al., 2019) + rabbit light chain constant regions + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL027_scFvC_Hec1-rb</td>\n      <td>Hec1 heavy and light chain variable regions connected by linker + rabbit heavy chain constant regions 2 and 3 + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL028_scFvC_Mad2C-rb</td>\n      <td>Mad2-C heavy and light chain variable regions connected by linker + rabbit heavy chain constant regions 2 and 3 + exogenous N-term signal peptide</td>\n    </tr>\n    <tr>\n      <td>pDL029_scFv_pMELT_GFP_NoSP</td>\n      <td>KNL1 pMELT heavy and light chain variable regions connected by linker + GFP (no signal peptide included)</td>\n    </tr>\n    <tr>\n      <td>pDL030_scFvC_Hec1-rb_NoSP</td>\n      <td>Hec1 heavy and light chain variable regions connected by linker + rabbit heavy chain constant regions 2 and 3 (no signal peptide included)</td>\n    </tr>\n    <tr>\n      <td>pDL031_scFvC_Mad2C-rb_NoSP</td>\n      <td>Mad2-C heavy and light chain variable regions connected by linker + rabbit heavy chain constant regions 2 and 3 (no signal peptide included)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nHuman HEK293 suspension culture cells (Expi293F) were cultured in Expi293F expression media (Fisher Scientific) and maintained at 37\u00b0C in 8% CO2 in 125 ml spinner flasks on an orbital shaker rotating at 125 rpm. HeLa cells were cultured in DMEM supplemented with 10% FBS and 1% antibiotic/antimycotic solution and maintained at 37\u00b0C in 5% CO2. Both cell lines were authenticated by American Type Culture Collection ATCC using short tandem repeat analysis, and both cell lines tested negative for mycoplasma contamination.\n\n### Expi293F cell transfection\n\nHEK293 Expi293F cells were grown to 30 ml volumes in 125 ml spinner flasks. For generation of full-length antibodies, cells were treated as follows: 24 hr prior to transfection, cells were seeded at 0.9 \u00d7 106 cells/ml (27 \u00d7 106 cells total) with a viability no less than 90% (typically 94\u201399% viability). On the day of transfection, cells were counted and 30 \u00d7 106cells (at>90% viability) were pelleted by centrifugation at 2000\u00d7 g for 4 min at 4\u00b0C. The resulting supernatant was aspirated off and the pellet was gently resuspended in 15 ml fresh Expi293F media. Spinner flasks were returned to the incubator while transfection reactions were prepared. For transfection, 100 \u00b5l of polyethylenimine (PEI) (Polysciences Inc) at 1 mg/ml was added to 1 ml Optimem media (Gibco). In a second tube, 50 \u00b5g LC plasmid and 35 \u00b5g HC plasmid were mixed with 1 ml Optimem media. The two separate tubes were incubated for 5 min at room temperature with occasional flicking. After 5 min, the contents of the two tubes were combined and mixed by flicking every 3 min for a total of 20 min at room temperature. After 20 min, the mixture was added to the 15 ml Expi293F culture and incubated overnight, rotating at 125 rpm. Approximately 15 hr later, 15 ml fresh Expi293F media was added to the original 15 ml culture, as well as 300 \u00b5l of 220 mM valproic acid (Sigma). Cells were subsequently cultured for an additional 4 days, after which cells were pelleted by centrifugation at 2000\u00d7 g for 15 min at 4\u00b0C. The supernatant was harvested and filtered through a 0.2 \u00b5m filter (GenClone). The volume of the filtered supernatant was measured, and 1.0 M Tris-HCL, pH 7.4 was added to bring the pH to between 7.4 and 7.7. The filtered supernatant was stored at 4\u00b0C until purification, which was optimally within 1 day of harvesting.\n\n### Antibody purification\n\nThe Protein A slurry was prepared by washing 1.5 g Protein A Sepharose (Sigma) 4 times in 1\u00d7 Tris buffered saline (1\u00d7 TBS: 50 mM Tris-HCl, 150 mM NaCl, pH 7.5), and raised in a final volume of 40 ml 1\u00d7 TBS, pH 7.5. Three ml of the washed slurry was added to the 30 ml of filtered Expi293F cell supernatant and gently inverted for 12 hr at 4\u00b0C. Following the 12 hr incubation, the antibody-containing cell supernatant plus Protein A Sepharose mixture was added to a 9 cm high, 2 ml bed volume (0.8 \u00d7 4 cm) empty polypropylene column (BioRad) fitted with a two-way stopcock up to the fill line. A funnel reservoir was attached to the top of the column and the remaining cell supernatant/Protein A slurry was poured into the funnel. The column and the reservoir were transferred to a 4\u00b0C cooler, covered loosely, and left to settle for 1 hr. After 1 hr, the stopcock was opened and the flow-through was collected at a flow rate of 1 ml/min. Once the cell supernatant approached the top of compacted Protein A slurry (with ~1 ml remaining), the column flow was stopped and the flow-through was added back to the column/funnel for a second round of binding. The column was left to settle for 15 min, the stopcock was opened, and the flow-through was again collected at 1 ml/min. After the flow-through approached the compacted slurry, 3 ml of 1\u00d7 TBS (pH 8.0) was added to the column and incubated for 15 min. After 15 min, the flow-through was collected at 1 ml/min. To elute the purified antibody, 9 ml of low pH elution buffer (0.15 M NaCl, 0.1 M glycine, pH 2.95) was added to the column, which was then connected to a peristaltic pump (BioRad). The flow rate was adjusted to 5 ml/min, and the eluate was collected in a 15 ml conical tube containing 0.9 ml 1 M Tris-HCl, pH 8.0. The eluate was then dialyzed and concentrated by transferring it to pre-soaked dialysis membrane (SpectrumLabs), which was then placed into 1 l of 1\u00d7 phosphate buffered saline (PBS) buffer (137 mM NaCl, 2.7 mM KCl, 4.3 mM Na2HPO4, 1.47 mM KH2PO4, pH 7.4) and gently stirred at 4\u00b0C for 4 hr. After 4 hr, the 1\u00d7 PBS was replaced and incubated overnight at 4\u00b0C. Purified, dialyzed antibodies were retrieved from the dialysis tubing and subsequently concentrated in a 10,000 kDa cutoff concentrator (Millipore) to final volume of between 100 and 200 \u00b5l. The protein concentration was calculated, and glycerol was added to a final concentration of 15%. Purified, concentrated antibodies were stored in 2\u201310 \u00b5l aliquots at \u201320\u00b0C.\n\n### Cell treatments\n\nFor live-cell imaging experiments, HeLa cells were seeded and imaged in 35 mm glass-bottomed dishes (constructed in-house). For fixed cell analysis, cells were grown on sterile, acid-washed coverslips in six-well plates. siRNAs were transfected into HeLa cells using 6 \u00b5l Oligofectamine (Fisher Scientific) and 160 nM of the appropriate siRNA: siHec1 (5\u2032-CCCUGGGUCGUGUCAGGAA-3\u2032); siBubR1 (5\u2032-AAGGAGACAACUAAACUGCAA-3\u2032); siMad2 (5\u2032-CUGAAAGUAACUCAUAAUCUA-3\u2032) (Qiagen); siCENP-C (5\u2019-GAUCUGUCUUGAUAACGUA-3\u2019). For transfection of the scFv or scFvC plasmids, 2.5 \u00b5l of Lipofectamine 3000 (Fisher Scientific) and 0.5\u20131 \u00b5g of DNA were used. All siRNA and DNA transfections were incubated for 24\u201330 hr before the cells were either imaged, fixed for immunofluorescence, or harvested for immunoblot analysis. For some experiments, cells were incubated with 500 nM nocodazole (Tocris) for 15 hr prior to fixation for immunofluorescence or harvesting for immunoblot analysis. To inhibit Mps1 kinase, cells were treated with 10 \u00b5M reversine (Adooq Biosciences) for 1 hr prior to fixation for immunofluorescence or harvesting for immunoblot analysis. For bead loading experiments, antibodies were bead-loaded into HeLa cells 1 hr prior to fixing or imaging (Cialek et al., 2021). Briefly, 10 \u00b5l of a 1 mg/ml antibody solution (scFvC-Hec1rb, scFvC-Mad2-Crb, or Hec1 Fab647) were placed directly atop growing HeLa cells in a 35 mm glass-bottomed dish. A single layer of glass beads (Sigma; G-4649) were then sprinkled atop the cells, and the dish was agitated by sharply striking against the countertop. Fresh cell media was added to the dish, which was returned to the incubator for 1 hr prior to fixation.\n\n### Immunofluorescence\n\nCells were rinsed in 37\u00b0C PHEM buffer (60 mM PIPES, 25 mM HEPES, 10 mM EGTA, and 4 mM MgSO4, pH 7.0) and then lysed for 5 min in freshly prepared lysis buffer (PHEM buffer +0.5% Triton X-100). Cells were subsequently fixed for 20 min at room temperature in freshly prepared 4% paraformaldehyde in PHEM buffer (37\u00b0C). After fixation, cells were washed 3 \u00d7 5 min in PHEM-T (PHEM buffer +0.1% Triton X-100) and then blocked in 10% boiled donkey serum (BDS) in PHEM for 1 hr at room temperature. Primary antibodies diluted in 5% BDS were added to coverslips and allowed to incubate for 1 hr at room temperature. The following primary antibody and antibody fragment concentrations were used for immunofluorescence: rMAb-Hec1ms at 1.5 \u00b5g/ml, rMAb-Hec1rb at 0.2 \u00b5g/ml, rMAb-Hec1hu at 1 \u00b5g/ml, rMAb-pMELTrb at 1.9 \u00b5g/ml, rMAb-CENP-Cms at 0.66 \u00b5g/ml, rMAb-CENP-Chu at 0.6 \u00b5g/ml, rMAb-BubR1ms at 2.1 \u00b5g/ml, rMAb-BubR1hu at 0.85 \u00b5g/ml, rMAb-Mad2-Cms at 1.6 \u00b5g/ml, rMAb-Mad2-Chu at 1.12 \u00b5g/ml, scFvC-Hec1rb at 0.5 \u00b5g/ml, scFvC-Mad2-C rb at 1.0 \u00b5g/ml, rMAb-tubulinrb at 1.2 \u00b5g/ml, and rMAb-HArb at 1.2 \u00b5g/ml. After primary antibody incubation, cells were rinsed 3 \u00d7 5 min in PHEM-T and then incubated for 45min at room temperature with secondary antibodies conjugated to either Alexa 647 or Cy3 (Jackson ImmunoResearch Laboratories, Inc) at 1.5\u00b5g/ml diluted in 5% BDS. Cells were rinsed 3 \u00d7 5 min in PHEM-T, incubated in a solution of 2ng/ml DAPI diluted in PHEM, rinsed 3 \u00d7 5 min, quick-rinsed in PHEM, and then mounted onto glass slides in an antifade solution (90% glycerol +0.5% N-propyl gallate). Coverslips were sealed with nail polish and stored at 4\u00b0C.\n\n### Imaging and fluorescence quantification\n\nAll fixed-cell images were acquired on an Inverted Olympus microscope incorporated into a GE Ultra imaging system (GE Healthcare) with SoftWoRx software (GE Healthcare) using a 60 \u00d7 1.42 NA differential interference contrast Plan Apochromat oil immersion lens (Olympus) with a final magnification of 107.6 nm/pixel at the camera sensor (edge4.2, PCO Inc). For live-cell imaging experiments, cells were imaged in 35 mm glass-bottomed dishes (constructed in-house) and imaged in Leibovitz\u2019s l-15 media (Invitrogen) supplemented with 10% FBS, 7 mM HEPES, 4.5 g/l glucose, pH 7.0. Live-cell images were captured on a Nikon Ti-E microscope equipped with a Piezo Z-control (Physik Instrumente), stage top incubation system (Okolab), and spinning disk confocal scanner unit (CSUX1; Yokogawa), using a 60\u00d7, 1.49 NA objective and an iXon DU888 EM-CCD camera (Andor). Five z-planes at 0.75 \u00b5m steps were acquired every 3 min for the duration of filming using the 488 nm laser. For quantification of kinetochore fluorescence intensities, measurements were performed on nondeconvolved, uncompressed images using the custom \u2018SpeckleTracker\u2019 MatLab (MathWorks) program (Wan et al., 2009).\n\n### Fluorophore conjugations\n\nFor direct labeling of the Fab fragment, full-length rMAb-Hec1ms was first digested using a Pierce Fab Preparation Kit (Fisher Scientific) according to the manufacturer\u2019s instructions. Purified Hec1 Fab was then directly conjugated with Alexa 647 (Invitrogen) according to the following procedure: 0.065 mg of Fab-Hec1ms was incubated with 6 \u00b5l 1 M NaHCO3 and 1 \u00b5l Alexa 647 (final reaction volume 50 \u00b5l). The tube containing the reaction mix was wrapped in foil, rotated for 30 min at room temperature, and then diluted with an additional 140 \u00b5l of 1\u00d7 PBS. This solution was then added to the center of a Nap-5 gel filtration column and allowed to enter the column via gravity; 500 \u00b5l of 1\u00d7 PBS was added to the column and the fastest-eluting fluorescent band containing the fluorescently conjugated protein was collected in a fresh tube. Hec1 Fab647 concentration and labeling ratio was calculated.\n\n### STORM imaging\n\nCells were seeded and fixed as above in 35 mm glass-bottomed dishes. The Hec1 Fab used for STORM was directly labeled as described above, but in addition to Alexa 647, the Fab was also conjugated with Alexa 405 by adding 3 \u00b5l of the dye to the same reaction volume. The directly labeled Hec1 Fab405/647 was used at 1:500 following the above immunofluorescence procedure. STORM imaging buffer was made immediately before use according to NIKON STORM protocol: 24 \u00b5l of GLOX (14 mg glucose oxidase (Sigma) + 50 \u00b5l catalase (Sigma)) and 280 \u00b5l 1 M MEA was added to 2480 \u00b5l of imaging buffer (50 mM Tris-HCl + 10 mM NaCl + 10% glucose). Two ml of the imaging buffer was added to the dish and the cells were imaged on a Nikon Ti-Eclipse microscope using a 1.49 NA 100\u00d7 Plan Apo TIRF lens equipped with an iXon3 DU897 EM-CCD (Andor). STORM images were acquired using 405 and 640 nm lasers on N-STORM software, version 3.30.\n\n### Immunoblotting\n\nSamples were run on 12% SDS-polyacrylamide gels and subsequently transferred to 0.2 \u00b5m polyvinylidene difluoride membrane (PVDF) (Millipore). Membranes were washed with 1\u00d7 TBS and incubated with a 5% solution of BSA for 1 hr at room temperature. Primary antibodies were added to membranes in quick-seal bags, and incubated, rocking for 1 hr at room temperature. The following primary antibody and antibody fragment concentrations were used for immunoblotting: rMAb-Hec1ms at 1.5 \u00b5g/ml, rMAb-BubR1ms at 2.1 \u00b5g/ml, rMAb-pMELTrb at 1.9 \u00b5g/ml, and rMAb-Tubulinrb at 1.2 \u00b5g/ml. Membranes were washed with TBS-T (1\u00d7 TBS +0.05% Tween-20) and incubated with HRP-tagged secondary antibodies for 1 hr at room temperature. Membranes were washed with TBS-T and scanned on a chemiluminescence imager IA600 (GE Healthcare). For the KNL1 pMELT immunoblots, a truncated version of KNL1 with a molecular mass of ~100 kDa and containing multiple MELT motifs was transiently expressed in HeLa cells 24 hr prior to processing for SDS-PAGE and immunoblot analysis.\n",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "ee9e4963-98fb-47b1-85f0-0d8dc575eaed",
+      "submission_id": "013fa41f-a974-4589-b5ec-d13754484755",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Silke Hauf, Virginia Tech United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72093.sa0](https://doi.org/10.7554/eLife.72093.sa0)\n\nThis study reports the systematic generation and diversification of recombinant monoclonal antibodies against a panel of mitosis-specific proteins and phosphoepitopes. These reagents provide additional versatility for experiments, and will be a great tool for mitosis researchers. In addition, the methodology is applicable to other monoclonal antibodies, and therefore will be of value in all fields that utilize antibodies, or antibody-based tools.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Silke Hauf, Virginia Tech United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72093.sa1](https://doi.org/10.7554/eLife.72093.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Generation and diversification of recombinant monoclonal antibodies for studying mitosis\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Robert Carnahan (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll reviewers found the tools you developed highly valuable, and the experiments well-conducted and clearly described. A few suggestions for improvements were made:\n\n1) A systematic comparison of the recombinant antibodies to the previously available antibody preparations for these particular antibodies would be useful (Figure 1 and 2). Is there any difference in sensitivity or specificity?\n\n2) The Hec1 scFvC and Fab-Alexa 647 fragments also label the spindle, which is not seen with the rMAb. Do you have an explanation for this? Please discuss the differences more explicitly. A double-staining with the full-length antibodies for direct comparison could be useful.\n\n3) Please include additional controls for the specificity and sensitivity of the recombinant antibodies. For example:\n\nFigure 1E: Please include the RNAi control for the immunostaining.\n\nFigure 1C: The rMAb-pMELT was used to detect an exogenously expressed KNL1 fragment.\n\nDoes the antibody recognize the endogenous protein on an immunoblot?\n\nFigure 2G: The 3F3/2 epitope has been proposed to depend on Plk1, and the antibody has been suspected to recognize BubR1. Does the signal change after Plk1 inhibition? Is the signal reduced in BubR1 RNAi? Does the recombinant antibody detect any band(s) on an immunoblot?\n\nFigure 4F: A larger field of view, or a quantification that represents more cells than just one, would be yet more convincing.\n\n4) For primary antibody dilutions (e.g. lines 613-615), it would be more appropriate to give the final concentration rather than the dilution.\n\n5) The strategy for Fab purification was confusing to the reviewers (lines 333-334). Cleavage by papain is followed by purification of the Fab fragment with Protein A. Protein A is more typically known to bind the Fc region. Does it bind the Fab and allow purification? Or was the Fc region depleted by Protein A?\n\n6) Please mention if the expression plasmids generated in this study will be made available to the scientific community and on what terms.\n\n7) Line 400, problems with yield: It was not entirely clear whether the yield can vary for one reagent, or only varies between reagents. It would be useful to add a table with the yields obtained for the different reagents, which would allow other researchers to know which preparations would need to be scaled-up to obtain the desired amounts of recombinant antibody.\n\n8) Line 190: It does not seem entirely accurate to say that closed Mad2 is \"competent to assemble into active \u2026 MCCs\". Closed Mad2 is found in active MCCs (or bound to Mad1), but empty closed Mad2 is probably not capable of binding full-length Cdc20 and forming the MCC (Piano et al., Science 2021). Prior experiments that seemed to support this idea were done with a Cdc20 peptide.\n\n9) Some of the discussion repeats statements that were already made in the Results section. Shortening or deleting these sections (in particular around line 436 \u2013 461 and 473-481) would improve readability. In contrast, other aspects could be added in the discussion. For example:\n\n\u2013 In case scientists would like to apply the described approach to their favorite commercial antibody, do they have to expect legal objections from the company?\n\n\u2013 A premise of the article is to combat irreproducibility. But giving out the antibody sequences to everyone to express in their labs seems like it will undoubtedly lead to reproducibility issues as well. Antibody production, purification, and QC are not necessarily trivial. There is ample opportunity to swap plasmids and obtain antibodies different from the \"label\". These types of issues are often challenging to identify and correct unless careful QC is being performed. The best solution is to have systems to prevent these types of swaps, but that takes a well-thought-out and careful strategy. Do you have suggestions how individual labs could cope with these challenges?\n\nReviewer #1:\n\nRecombinant antibodies have several advantages over traditional antibody preparations from animal body fluids or hybridomas, including less harm to animals, better reproducibility, versatility in terms of the precise sequence being used, and potentially lower price. The authors have sequenced several monoclonal antibodies frequently used in mitosis research (against Hec1, KNL1, CENP-C, BubR1, Mad2, and the 3F3/2 epitope), have recombinantly expressed them, and show that they work in immunofluorescence, as well as \u2013 for those tested \u2013 in immunoblotting.\n\nFor several of these antibodies, the authors have also swapped the original Fc part of the antibody against that of a different species, providing more versatility for co-labeling experiments. In addition, the authors have created shorter versions for a few of these antibodies, including some that contain only the variable heavy- and light-chain regions in a single polypeptide. These can be fused to fluorescent proteins and expressed in cells allowing live-cell imaging of post-translational modifications, which the authors demonstrate for the phospho-specific KNL1 antibody.\n\nThe methods used here are not novel, but the authors have assembled a very useful panel of reagents for mitosis research along with instructions for others to repeat the same for their antibody of interest, and thus they provide a valuable resource for the field.Reviewer #2:\n\nIn this manuscript, DeLuca et al., describe methodologies to generate and diversify recombinant monoclonal antibodies and recombinant antibody fragments from existing monoclonal antibodies directed to epitopes expressed during mitosis. They either sequenced full length commercially-available antibodies using tandem mass spectrometry or obtained primary sequences from existing hybridoma cell lines through whole transcriptome shotgun sequencing. Sequence information was used to generate geneblocks encoding heavy and light chain peptide sequences optimized for expression in human cells, and these were cloned in expression vectors. Plasmids were transfected in HEK293 cells and recombinant antibodies were purified from the cell supernatant. Specificity and usability of the recombinant antibodies was tested by IF and western blotting using human cell lines in which the epitopes were either present or absent. Furthermore, they provide convincing evidence for the possibility to modify \u2018species\u2019 specificity by replacing the constant domains from both heavy and light chains of a mouse monoclonal Ab with the constant domains from a rabbit IgG monoclonal antibody. This overcomes limitations in indirect IF experiments as it allows more flexibility in combining different antibodies against particular targets. Moreover, they successfully generate a variety of recombinant antibody fragments which makes it even possible to visualize a phosphorylated epitope in living cells by simply expressing a GFP-tagged antibody fragment in the cell of interest. Finally, they also show a reverse engineering approach where full-length, bivalent antibodies are generated from fragment sequences.\n\nThe rationale, methods and experiments are well described, controlled and presented, and pros and cons and major costs incurred from the approach are discussed. Overall, I consider this a well-constructed and powerful toolbox and resource, of interest and service to a large part of the scientific community.Reviewer #3:\n\nIn this manuscript, the authors focus on monoclonal antibodies (mAbs) broadly utilized in cell division and mitosis studies as a case study for developing workflows to express these pre-existing antibodies in recombinant forms. They demonstrate that multiple possible workflows existent in the scientific literature can be deployed to specifically develop recombinant antibody tools for high utility mAbs. Using starting points of protein mAb or hybridoma cells expressing a particular mAb, they express and validate the performance of these mAbs. Furthermore, there is considerable effort to demonstrate the flexibility in manipulating recombinant antibodies into alternate formats to suit specific needs (ex. Altered Fc domains, antibody formats, etc.).\n\nThe strength of this manuscript is the examination of multiple antibodies recreated through several different workflows. This demonstrates there is a diverse toolbox for creating recombinant versions of these high-value antibodies. The techniques proposed have become increasingly available to many labs. Using antibodies with specific and trackable uses assists the reader in verifying the successful validation of the recombinant antibodies. One weakness is that side-by-side comparison to the currently available antibodies (generally hybridoma-derived) is not systematically carried out. The authors show results consistent with the expected function of the antibodies, but a parallel comparison to the parental antibodies would be more compelling. This reviewer is also curious about the consequences of the model proposed in the discussion. There are significant advantages to manipulability and diversification of the recombinant mAbs as described. A separate premise of the article is to combat irreproducibility. But giving out the antibody sequences to everyone to express in their labs seems like it will undoubtedly lead to reproducibility issues as well. Antibody production, purification, and validation are not necessarily trivial. There may also be plasmid mix-ups that lead to an antibody other than the one expected. These types of mistakes are notoriously tricky to track down. A systematic process for validating antibodies may then need to be replicated across many labs.\n\nOverall this is an intriguing work that should spur on the development of new antibody tools of great value across many fields.\n",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "73082258-c414-4ea6-8ec3-6ef0af25064f",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C1",
+      "claim": "Antibodies are indispensable tools used for a large number of applications in both foundational and translational bioscience research.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies are indispensable tools used for a large number of applications in both foundational and translational bioscience research; however, there are drawbacks to using traditional antibodies generated in animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of antibodies in research, representing established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "500ee5d5-80f2-491d-b379-8be3eb37eab1",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C2",
+      "claim": "Traditional antibodies generated in animals have drawbacks including lack of standardization leading to problems with reproducibility.",
+      "claim_type": "EXPLICIT",
+      "source": "These include a lack of standardization leading to problems with reproducibility, high costs of antibodies purchased from commercial sources, and ethical concerns regarding the large number of animals used to generate antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations in the manuscript discussing reproducibility issues with traditional antibodies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "49fbaaba-a89f-49fa-ba06-3d8724d0a9f4",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C3",
+      "claim": "Traditional antibodies purchased from commercial sources are expensive.",
+      "claim_type": "EXPLICIT",
+      "source": "These include a lack of standardization leading to problems with reproducibility, high costs of antibodies purchased from commercial sources, and ethical concerns regarding the large number of animals used to generate antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a commonly acknowledged issue in the field and is stated as a motivation for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "133f4ba8-8e44-4c94-865f-64730dc35c02",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C4",
+      "claim": "There are ethical concerns regarding the large number of animals used to generate traditional antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "These include a lack of standardization leading to problems with reproducibility, high costs of antibodies purchased from commercial sources, and ethical concerns regarding the large number of animals used to generate antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations discussing ethical concerns in antibody production.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "b0d2f728-f7b4-4f0a-b77a-3cfe59031b4d",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C5",
+      "claim": "Antibodies are incompletely characterized, not well understood at the molecular level, and variable in performance across lots.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases, antibodies are incompletely characterized, not well understood at the molecular level, and variable in performance across lots (Bradbury and Pl\u00fcckthun, 2015; Bordeaux et al., 2010; Bradbury et al., 2018; Baker, 2015; Weller, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "36d91be5-85c7-4e0a-8233-e31373c48536",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C6",
+      "claim": "The continued availability of traditionally generated antibodies is not guaranteed.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the continued availability of traditionally generated antibodies is not guaranteed, as the existence of such reagents depends on active maintenance and storage, or continued production in animals (Cosson and Hartley, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "f57f479b-322f-40ce-b7e9-8c22d4f4c309",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C7",
+      "claim": "A large number of vertebrate animals are used for the generation of traditional antibodies for biomedical research.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a large number of vertebrate animals are used for the generation of traditional antibodies for biomedical research, which presents ethical concerns (Gray et al., 2020; Gray et al., 2016; Leenaars et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "2a651b10-1d7f-465b-ad02-fe8a7574489e",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C8",
+      "claim": "It is possible to sequence monoclonal antibodies from purified antibody samples and from hybridoma cell lines to explicitly identify their primary amino acid composition.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, it has been possible to sequence monoclonal antibodies from purified antibody samples and from hybridoma cell lines such that their primary amino acid composition is explicitly identified (Lima et al., 2020; Cosson and Hartley, 2016; Vazquez-Lombardi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "8fa25021-5fb3-4fc7-b475-cca11b47381d",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C9",
+      "claim": "Techniques have been developed in which antibodies to nearly any antigen can be isolated through clonal selection of sequence-defined antibody fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, techniques have been developed in which antibodies to nearly any antigen can be isolated through clonal selection of sequence-defined antibody fragments (Gavilondo and Larrick, 2000; Saeed et al., 2017; Alfaleh et al., 2020; Almagro et al., 2019; Laustsen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "6511b3dc-508f-4f97-990c-ea05b3d3506c",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C10",
+      "claim": "Using recombinant antibodies generated from an invariant primary sequence increases reagent reproducibility.",
+      "claim_type": "EXPLICIT",
+      "source": "First, using recombinant antibodies generated from an invariant primary sequence increases reagent reproducibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the nature of sequence-defined reagents.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "5521545d-3bfc-41b8-8f32-84dcc0ec2901",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C11",
+      "claim": "After a primary sequence is determined, recombinant antibodies and their derivatives are accessible in perpetuity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, after a primary sequence is determined, recombinant antibodies and their derivatives are accessible in perpetuity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the ability to store and reproduce sequence information.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "99786403-1899-4aab-885d-831b931c0f7c",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C12",
+      "claim": "Recombinant antibodies can be produced in large quantities using low-cost expression and purification systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, recombinant antibodies can be produced in large quantities using low-cost expression and purification systems, such that researchers can produce large-scale yields of recombinant antibodies for a fraction of the cost of antibodies purchased from commercial sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is demonstrated by the experimental data in the manuscript showing yields from 30 ml cultures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "32089cc7-eff4-4c07-a4e2-1261577e3f2e",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C13",
+      "claim": "The use of recombinant antibodies significantly reduces the number of animals required for antibody production.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the use of recombinant antibodies significantly reduces the number of animals required for antibody production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the fact that recombinant antibodies are produced in cell culture rather than in animals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "078f3694-3040-41ec-8e92-72f1886826db",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C14",
+      "claim": "Kinetochores are structures built at the primary constriction of mitotic chromosomes which mediate attachments to spindle microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochores are structures built at the primary constriction of mitotic chromosomes which mediate attachments to spindle microtubules and are largely responsible for both powering and regulating chromosome congression and segregation (Musacchio and Desai, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "ce98efe3-cbd6-4e18-aaf1-a9ab475de9bb",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C15",
+      "claim": "The Ndc80/Hec1 subunit of the NDC80 complex serves as the direct link to microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary factor that connects kinetochores to microtubules is the kinetochore-associated NDC80 complex, and within this complex the Ndc80/Hec1 subunit serves as the direct link to microtubules (DeLuca and Musacchio, 2012; Varma and Salmon, 2012; Wimbish and DeLuca, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "3d1f0292-eff1-4316-9b28-486ae0c093f1",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C16",
+      "claim": "The Hec1 monoclonal antibody '9G3' was originally generated in mice to a purified protein fragment encompassing amino acids 56\u2013632 of the human Hec1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Research in many labs takes advantage of the Hec1 monoclonal antibody '9G3', which was originally generated in mice to a purified protein fragment encompassing amino acids 56\u2013632 of the human Hec1 protein (Chen et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "4b1f6348-620d-4474-9b31-19666ebf2626",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C17",
+      "claim": "The specific epitope of the Hec1 9G3 antibody was mapped to amino acids 200\u2013215 using peptide array analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific epitope was later mapped using peptide array analysis to amino acids 200\u2013215, a region which resides within the well-ordered calponin homology domain of the protein (DeLuca et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "fa15752a-4343-4df2-9f06-00fbbc181773",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C18",
+      "claim": "The quality of the commercially available Hec1 9G3 antibody is variable between lots.",
+      "claim_type": "EXPLICIT",
+      "source": "While this antibody is commercially available, the quality of the antibody is variable between lots, which is not uncommon in the case of commercially produced immunological reagents (Pozner-Moulis et al., 2007; Garg and Loring, 2017; Katzman et al., 2017; Bradbury and Pl\u00fcckthun, 2015; Bordeaux et al., 2010; Bradbury et al., 2018; Baker, 2015; Weller, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "d4412ac4-7d15-4574-aeec-05b50d008962",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C19",
+      "claim": "The 9G3 Hec1 mouse monoclonal antibody was sequenced using tandem mass spectrometry with W-ion isoleucine and leucine determination.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure continued consistency, we sequenced the 9G3 Hec1 mouse monoclonal antibody (GeneTex) using tandem mass spectrometry with W-ion isoleucine and leucine determination (Rapid Novor, Kitchener, Ontario, Canada) (Johnson et al., 1987; Zhokhov et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "b61af318-26cd-4e43-9426-5d9fb2018858",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C20",
+      "claim": "A 100 \u00b5g sample of purified monoclonal antibody was used as the source material for sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "A 100 \u00b5g sample of purified monoclonal antibody was used as the source material for sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "90e049ec-b2e9-47a5-86ff-b60fdc9b2ae6",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C21",
+      "claim": "The Hec1 9G3 heavy chain was identified as class IgG2a and the light chain as kappa.",
+      "claim_type": "EXPLICIT",
+      "source": "The HC was identified as class IgG2a and the LC as kappa (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sequencing experiment, shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "ba7908d6-92e6-413d-b9a6-309d7ec329d3",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C22",
+      "claim": "From a 30 ml cell suspension culture, the purification yield of the recombinant Hec1 antibody (rMAb-Hec1ms) was 1.1 mg of purified antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "From a 30 ml cell suspension culture, the purification yield of the recombinant Hec1 antibody (rMAb-Hec1ms) was 1.1 mg of purified antibody (Figure 1D; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data showing the yield of antibody production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "2930efae-7ba7-4c59-a379-2d8739875573",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C23",
+      "claim": "rMAb-Hec1ms recognized kinetochores during all phases of mitosis in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the quality and specificity of the rMAb-Hec1ms antibody, we carried out immunofluorescence staining and found that in HeLa cells, rMAb-Hec1ms recognized kinetochores during all phases of mitosis, as expected (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "06d02df0-3280-4594-918e-9903b2f1a82a",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C24",
+      "claim": "rMAb-Hec1ms recognized a single band at ~72 kDa in control lysates, but not in lysates depleted of Hec1.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed mitotic cell lysates from control cells and cells treated with Hec1 siRNA by immunoblotting, and as shown in Figure 1F, rMAb-Hec1ms recognized a single band at ~72 kDa (corresponding to the predicted mass of the 642 amino acid protein, 73.9 kDa) in control lysates, but not in lysates depleted of Hec1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunoblotting experiments shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "c9627723-1280-4f11-a7d3-14d6daceabae",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C25",
+      "claim": "rMAb-Hec1ms antibodies did not recognize kinetochores in cells treated with Hec1 siRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, rMAb-Hec1ms antibodies did not recognize kinetochores in cells treated with Hec1 siRNA (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "be96f93b-5790-45d5-befd-de64316d2168",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C26",
+      "claim": "The recombinant Hec1 antibody was moderately more sensitive than the original, traditionally generated Hec1 9G3 antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1\u2014figure supplement 1, both antibodies robustly recognized kinetochores, and the recombinant version was moderately more sensitive.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data comparing the two antibodies shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "3c444941-1e87-4dc5-8ca8-917194824c26",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C27",
+      "claim": "The original Hec1 antibody exhibited more spindle staining and overall background staining when compared to the recombinant version.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the original Hec1 antibody exhibited more spindle staining and overall background staining when compared to the recombinant version (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data comparing the two antibodies shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "8a17e81c-57dd-4a13-a486-4951f44bf74b",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C28",
+      "claim": "The KNL1 pMELT monoclonal antibody was generated in rabbits against a peptide containing phosphorylated Thr943 and phosphorylated Thr1155.",
+      "claim_type": "EXPLICIT",
+      "source": "The KNL1 pMELT monoclonal antibody (Fisher Scientific) was generated in rabbits against a peptide containing phosphorylated Thr943 and phosphorylated Thr1155 (Nijenhuis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "898f4831-fdd5-43c1-8e85-eec67c686407",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C29",
+      "claim": "The pMELT rabbit antibody belongs to class IgG with a kappa-class light chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence results revealed that the pMELT rabbit antibody belongs to class IgG with a kappa-class LC (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sequencing experiment, shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "41181d9b-dcf1-4d98-a6b9-da5e050c105a",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C30",
+      "claim": "The CENP-C monoclonal antibody heavy chain is IgG2b, and the light chain belongs to the kappa class.",
+      "claim_type": "EXPLICIT",
+      "source": "The CENP-C monoclonal antibody was generated in mice (Abcam), and sequencing identified the HC as IgG2b, and the LC as belonging to the kappa class (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sequencing experiment, shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "52fec983-a4d4-47c7-a39a-0897b8dd2af0",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C31",
+      "claim": "The rMAb-pMELTrb antibody recognized kinetochores, with staining high at kinetochores in early mitosis and decreased as chromosomes aligned at the spindle equator.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence experiments revealed that the rMAb-pMELTrb antibody recognized kinetochores, and as expected, staining was high at kinetochores in early mitosis and decreased as chromosomes aligned at the spindle equator (Figure 2A; Nijenhuis et al., 2014; Vleugel et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 2A, with citations supporting the expected pattern.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "54545c92-daf5-4834-a741-4128f3bc8c85",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C32",
+      "claim": "The rMAb-pMELTrb antibody reactivity was significantly reduced upon Mps1 inhibition with reversine.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the phospho-specificity of the rMAb-pMELTrb antibody, we treated cells with 10 \u00b5M reversine, an Mps1 kinase inhibitor (Santaguida et al., 2010), and found the antibody reactivity was significantly reduced upon Mps1 inhibition, as detected by immunofluorescence and immunoblotting (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence and immunoblotting experiments shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "00fff610-46b8-48e3-ab9a-424f14eaf28c",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C33",
+      "claim": "The rMAb-CENP-Cms antibody recognized kinetochores at all phases in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, immunofluorescence experiments revealed that the new rMAb-CENP-Cms antibody recognized kinetochores at all phases in mitosis as expected (Hara and Fukagawa, 2020; Figure 2D), and there was no cross-reactivity with rabbit secondary antibodies (not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 2D, with a citation supporting the expected pattern.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "067c1e29-594d-4d86-ae76-4eaef8997b4e",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C34",
+      "claim": "Kinetochores in cells treated with CENP-C siRNA were no longer recognized by the recombinant CENP-C antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the specificity of the rMAb-CENP-Cms antibody, we treated cells with CENP-C siRNA, and as shown in Figure 2E, kinetochores in these cells were no longer recognized by the recombinant CENP-C antibody.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "7a2ed915-1698-494f-9f7b-e3f0ee6eaf97",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C35",
+      "claim": "The recombinant version of the KNL1 pMELT antibody was somewhat more sensitive than the commercial antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2\u2014figure supplement 2, both antibodies recognized kinetochores. The recombinant version of the KNL1 pMELT antibody was somewhat more sensitive than the commercial antibody, and the CENP-C antibodies exhibited similar sensitivity (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data comparing the antibodies shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "c8d45d21-e076-4e65-a182-a0716a3641ec",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C36",
+      "claim": "The CENP-C antibodies exhibited similar sensitivity between recombinant and commercial versions.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2\u2014figure supplement 2, both antibodies recognized kinetochores. The recombinant version of the KNL1 pMELT antibody was somewhat more sensitive than the commercial antibody, and the CENP-C antibodies exhibited similar sensitivity (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data comparing the antibodies shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "9e30625c-6614-4485-a575-36900cec4707",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C37",
+      "claim": "The BubR1 antibody was classified as IgG2b with a kappa light chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the obtained sequences, the BubR1 antibody was classified as IgG2b with a kappa LC and the Mad2-C antibody was classified as IgG1, also with a kappa LC (Figure 3\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sequencing experiment, shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "9a469edd-0f1a-4e06-9bfc-acee02ae821d",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C38",
+      "claim": "The Mad2-C antibody was classified as IgG1 with a kappa light chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the obtained sequences, the BubR1 antibody was classified as IgG2b with a kappa LC and the Mad2-C antibody was classified as IgG1, also with a kappa LC (Figure 3\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sequencing experiment, shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "ec138562-92a1-498e-a682-34c5c2903cab",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C39",
+      "claim": "Both rMAb-BubR1ms and rMAb-Mad2-Cms antibodies recognized kinetochores during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence experiments revealed that both antibodies recognized kinetochores during mitosis (Figure 3A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 3A and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "302a5601-b04d-459a-a55f-7a9e4a0fd006",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C40",
+      "claim": "Staining for both rMAb-BubR1ms and rMAb-Mad2-Cms antibodies was high at kinetochores in early mitosis and decreased as chromosomes aligned at the spindle equator.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, staining for both antibodies was high at kinetochores in early mitosis and decreased as chromosomes aligned at the spindle equator (Skoufias et al., 2001; Hoffman et al., 2001; Waters et al., 1998; Figure 3A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 3A and D, with citations supporting the expected pattern.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "d7536697-6224-43aa-9d63-0c2e0ae78a54",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C41",
+      "claim": "Cells depleted of BubR1 exhibited significantly reduced reactivity with rMAb-BubR1ms antibodies at kinetochores and in cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the specificity of rMAb-BubR1ms, HeLa cells were treated with an siRNA targeted to BubR1 and processed for immunofluorescence or immunoblotting. Cells depleted of BubR1 exhibited significantly reduced reactivity with rMAb-BubR1ms antibodies at kinetochores (Figure 3B) and in cell lysates (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence and immunoblotting experiments shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "7e188632-df73-4ba9-b010-8b1f860d4633",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C42",
+      "claim": "Cells treated with Mad2 siRNA exhibited no reactivity at kinetochores with recombinant Mad2-C antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the specificity of the rMAb-Mad2-Cms antibody, we treated HeLa cells with Mad2 siRNA and found that cells exhibited no reactivity at kinetochores with recombinant Mad2-C antibody (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "9a224b39-bacd-4945-9162-f6b8b912fb97",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C43",
+      "claim": "The recombinant versions of both BubR1 and Mad2-C antibodies were modestly more sensitive than the original antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while all antibodies recognized kinetochores, the recombinant versions of both antibodies were modestly more sensitive than the original antibodies (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data comparing the antibodies shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "a60e9e17-5859-4ff6-af07-04b49596a8f6",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C44",
+      "claim": "The rMAb-Hec1rb antibody localized to kinetochores in mitotic cells and was recognized by rabbit secondary antibodies, but not by mouse secondary antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the antibody in immunofluorescence assays and determined that rMAb-Hec1rb localized to kinetochores in mitotic cells, and importantly, was recognized by rabbit secondary antibodies, but not by mouse secondary antibodies. (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "6415caa7-ac9b-45a7-99c8-fd3ce585942b",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C45",
+      "claim": "The rMAb-Hec1hu antibody localized to kinetochores in mitotic cells and was recognized by human, but not mouse secondary antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "We purified and tested this antibody in immunofluorescence assays and determined that the rMAb-Hec1hu localized to kinetochores in mitotic cells, and was recognized by human, but not mouse secondary antibodies (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "dc5f809c-6621-42b6-b4ec-c4bdbf43a9eb",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C46",
+      "claim": "Antibody fragments offer advantages over intact, bivalent antibodies including smaller size allowing more efficient penetration of tissue samples and better access to buried epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "For some cell biological and biomedical applications, antibody fragments, generated by either proteolysis or genetic engineering, offer advantages over the use of intact, bivalent antibodies. For example, their smaller size allows more efficient penetration of tissue samples and may provide better access to 'buried' epitopes; they are able to bind targets without inducing cross-linking; they reduce steric effects (compared with intact antibodies) when monitoring an antigen in living cells, and they have reduced immunogenicity, which may be desirable for therapeutic applications (Hayashi-Takanaka et al., 2011; Cheloha et al., 2020; Zhao et al., 2019; Xenaki et al., 2017; Berland et al., 2021; Ries et al., 2012; Morisaki et al., 2016; Yan et al., 2016; Wang et al., 2016; Stasevich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "323bdb90-62b8-4478-b2de-c86b369610a2",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C47",
+      "claim": "Single chain antibody fragments can be fused to a fluorescent protein and genetically encoded for expression in living cells for real-time antigen tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "Another advantage is that single chain antibody fragments can be fused to a fluorescent protein and genetically encoded for expression in living cells for the purpose of real-time antigen tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known capability of antibody fragments, supported by the experimental demonstration in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "18fe0d8c-fbf4-430c-bd09-8e7645aa0be3",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C48",
+      "claim": "The purified Hec1 and Mad2-C scFvC fragments recognized kinetochores in mitotic cells when introduced by bead-loading.",
+      "claim_type": "EXPLICIT",
+      "source": "The purified Hec1 and Mad2-C scFvC fragments were introduced into cells by bead-loading (McNeil and Warder, 1987; Cialek et al., 2021), and the cells were subsequently fixed and incubated with anti-rabbit secondary antibodies. As shown in Figure 5B and C, the fragments recognized kinetochores in mitotic cells, and the results were similar to those obtained with the intact, bivalent antibodies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "01ca2fa3-5a8b-40ca-9148-71c6db41c48c",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C49",
+      "claim": "Genetically encoded Hec1 and Mad2-C scFvC fragments both recognized kinetochores in mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After transfection with the single plasmids, the HeLa cells were prepared for immunofluorescence and stained with an anti-rabbit secondary antibody. As shown in Figure 5D and E, the genetically encoded Hec1 and Mad2-C scFvC fragments both recognized kinetochores in mitotic cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "ece85667-c63f-4556-8f55-5ee79eae0dec",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C50",
+      "claim": "The genetically encoded pMELT scFv-GFP recognizes kinetochores in early mitosis when phosphorylation of the KNL1 MELT repeats is high, but much less so in late mitosis when phosphorylation is low.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected time-lapse images, and as shown in Figure 5F and Figure 5\u2014figure supplement 1, the genetically encoded pMELT scFv-GFP recognizes kinetochores in early mitosis when phosphorylation of the KNL1 MELT repeats is high, but much less so in late mitosis, when phosphorylation of the MELT repeats is low.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from live-cell imaging experiments shown in Figure 5F and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "3034779b-febe-41c6-85c5-e41cb5a75054",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C51",
+      "claim": "The labeled Hec1 Fab recognizes kinetochores in mitotic cells when bead-loaded.",
+      "claim_type": "EXPLICIT",
+      "source": "We directly labeled the rMAb-Hec1ms Fab with an Alexa 647 fluorescent dye and bead-loaded the fragment into HeLa cells, and as shown in Figure 5G, the labeled Fab recognizes kinetochores in mitotic cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "9b874b2e-a9c6-40a8-9f79-c7314f0cffb7",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C52",
+      "claim": "The recombinantly expressed Hec1 Fab fragments are compatible with super-resolution STORM imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were excited with 640 and 405 nm lasers, and images were collected on a Nikon N-STORM imaging system. The Fab robustly recognized kinetochores and the resulting STORM images demonstrate that the recombinantly expressed antibody fragments are compatible with super-resolution imaging approaches (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from STORM imaging experiments shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "bc10562f-29e9-4ef6-a1c3-04edf0a40a12",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C53",
+      "claim": "The rMAb-HArb antibody recognized Hec1 at kinetochores in cells expressing Hec1-HA and Hec1-HA-GFP, but not in cells expressing Hec1-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the antibody in cells and to confirm specificity, we expressed the following versions of Hec1 in HeLa cells: HA-tagged (Figure 6B); HA- and GFP-tagged (Figure 6C), and GFP-tagged (Figure 6D). Cells were prepared for immunofluorescence and stained with the rMAb-HArb antibody and a fluorescently labeled rabbit secondary. As shown in Figure 6B\u2013D, the rMAb-HArb antibody recognized Hec1 at kinetochores in cells expressing Hec1-HA and Hec1-HA-GFP, but not in cells expressing Hec1-GFP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 6B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "15186f61-1755-4510-896c-c47e0cbe22ca",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C54",
+      "claim": "The new, bivalent rMAb-Tubrb antibody recognized an ~55 kDa protein in HeLa cell lysate, which corresponds to the molecular weight of \u03b1 and \u03b2 tubulin monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the new, bivalent rMAb-Tubrb antibody recognized an ~55 kDa protein in HeLa cell lysate, which corresponds to the molecular weight of \u03b1 and \u03b2 tubulin monomers (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunoblotting experiments shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "c0a3c9be-bc39-46ee-99b9-0e933a6dcd74",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C55",
+      "claim": "The rMAb-Tubrb antibody recognizes microtubules in cells and is recognized by rabbit but not mouse secondary antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the antibody recognizes microtubules in cells, and as expected, the primary antibody is recognized by rabbit but not mouse secondary antibodies (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from immunofluorescence experiments shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "714cd14c-7f63-4576-944f-01abab2f5c2e",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C56",
+      "claim": "Using relatively small volumes (~30 ml) of human Expi293F cells grown in suspension, production of up to 2.0 mg of protein per preparation was demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Using relatively small volumes (~30 ml) of human Expi293F cells grown in suspension, we demonstrate production of up to 2.0 mg of protein per preparation (rMAb-Tubrb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from antibody purification experiments, with specific yield shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "f773bc06-e14b-4b61-874b-9ad27a4791a0",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C57",
+      "claim": "The yields for individual antibody preparations varied, with the lowest yields in the range of 0.1 mg of protein from a 30 ml suspension culture.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that the yields for individual antibody preparations varied, and our lowest yields were in the range of 0.1 mg of protein from a 30 ml suspension culture (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from antibody purification experiments shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "6cbe5c4c-5d06-422e-85e1-a0ccd165ffa0",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C58",
+      "claim": "The approximate costs of sequencing a purified monoclonal antibody range from ~$5000 to $12,000.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the approximate costs of sequencing a purified monoclonal antibody range from ~$5000 to $12,000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current cost information for antibody sequencing services.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "dac6c737-1b5d-4224-9bd0-9e73e06c8e0e",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C59",
+      "claim": "Obtaining sequence information from a monoclonal hybridoma cell line is much less expensive (~$500-1500) than sequencing purified antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, obtaining sequence information from a monoclonal hybridoma cell line is much less expensive (~$500-1500), and is offered through many companies and non-profit facilities as a stand-alone service, or as an 'add-on' cost for custom monoclonal antibody production services.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current cost information for antibody sequencing services.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "ee17f7bd-cdcd-4c94-8bbb-43475ad7f7f8",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C60",
+      "claim": "The use of small, directly labeled probes is desirable for super-resolution imaging approaches where the goal is precise molecular mapping of antigens on the nanometer scale.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we also demonstrated that our recombinant antibody fragments can be directly labeled with fluorescent dyes for use in super-resolution light microscopy approaches. The use of small, directly labeled probes is desirable for super-resolution imaging approaches, such as PALM/STORM, where the goal is precise molecular mapping of antigens on the nanometer scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and demonstrated by the STORM imaging data in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "aedd842d-c94a-4918-bdda-25ad253a66cd",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C61",
+      "claim": "An intact bivalent antibody is approximately 10\u201315 nm long.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an intact bivalent antibody is approximately 10\u201315 nm long, and when using an imaging technique with a spatial resolution in the range of 20\u201330 nm (e.g. STED; PALM/STORM), such a large labeling probe reduces the resolution by approximately twofold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about antibody size.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "32a2288e-7463-4af6-bb64-8c905e35fbc1",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C62",
+      "claim": "Phosphorylation of the KNL1 MELT motif at the threonine residue by the mitotic kinase Mps1 is required to recruit a suite of spindle assembly checkpoint proteins to kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "We implemented a similar strategy for generating a recombinant phospho-specific antibody to a conserved, repeating four amino acid motif ('MELT' motif) in the kinetochore scaffolding protein KNL1 whose phosphorylation at the threonine (T) residue by the mitotic kinase Mps1 is required to recruit a suite of spindle assembly checkpoint proteins to kinetochores (Shepperd et al., 2012; Yamagishi et al., 2012; London et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "a66afeed-3ea7-40f7-8269-6c28ac47a56f",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "claim_id": "C63",
+      "claim": "CENP-C is an inner kinetochore protein required for kinetochore assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "and a recombinant antibody to CENP-C, an inner kinetochore protein required for kinetochore assembly (Kixmoeller et al., 2020; Hara and Fukagawa, 2020; Navarro and Cheeseman, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f500718f-9882-4b30-b364-fba990c0b6cc",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Traditional antibodies generated in animals have multiple drawbacks including lack of standardization leading to reproducibility problems, high costs, incomplete characterization, variable performance across lots, uncertain continued availability, and ethical concerns regarding animal use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 establish the motivation for the study by documenting well-known problems with traditional antibodies. These claims are supported by multiple citations to published literature and represent established knowledge in the field, providing appropriate context for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "efcaccba-9af3-493b-92b0-5b0bfce09401",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Recombinant antibodies generated from sequence-defined primary sequences offer advantages over traditional antibodies including increased reproducibility, perpetual accessibility, low-cost large-scale production, and reduced animal use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 describe the advantages of recombinant antibodies and are supported by citations (C8, C9) and logical inferences based on the nature of sequence-defined reagents (C10, C11, C13). Claim C12 is demonstrated by experimental data showing yields from 30 ml cultures (C22, C56, C57).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "1d7fa877-ac0e-4f29-80f1-c090675e6f5b",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Hec1 9G3 mouse monoclonal antibody was successfully sequenced, cloned, expressed, and purified as a recombinant antibody (rMAb-Hec1ms) that recognizes kinetochores during mitosis with specificity for Hec1 and moderately improved sensitivity compared to the original antibody.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27 describe the complete workflow from sequencing to validation of the recombinant Hec1 antibody. The sequencing method is described (C19-C21), yields are quantified (C22), and specificity is demonstrated through immunofluorescence (C23, C25) and immunoblotting (C24). Comparative analysis shows improved sensitivity and reduced background (C26, C27). All claims are supported by experimental data with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "79bfa109-0a50-4208-b73d-2195469f906d",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A recombinant phospho-specific antibody to the KNL1 pMELT domain (rMAb-pMELTrb) was generated that recognizes phosphorylated kinetochores in early mitosis with reactivity dependent on Mps1 kinase activity, showing somewhat improved sensitivity compared to the commercial antibody.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32, C35 describe the generation and validation of the pMELT antibody. The original antibody generation is cited (C28), sequencing results are shown (C29), and specificity is demonstrated through expected localization patterns (C31) and phospho-specificity confirmed by Mps1 inhibition (C32). Comparative analysis shows improved sensitivity (C35). The phospho-specificity validation with reversine is appropriate and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "06ecb767-b39d-4658-8105-5d4ecd55c8f5",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A recombinant CENP-C antibody (rMAb-CENP-Cms) was generated that recognizes kinetochores at all phases of mitosis with specificity for CENP-C and similar sensitivity to the commercial antibody.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C33-C34, C36 describe the generation and validation of the CENP-C antibody. Sequencing results are shown (C30), expected localization is demonstrated (C33), specificity is confirmed by siRNA depletion (C34), and comparative analysis shows similar sensitivity (C36). The validation is appropriate with proper controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "68dcf291-b23f-4fd9-b5c1-31f5dcf035e8",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Recombinant antibodies to BubR1 (rMAb-BubR1ms) and Mad2-C (rMAb-Mad2-Cms) were generated from hybridoma cell lines that recognize kinetochores during mitosis with expected dynamic localization patterns and specificity confirmed by siRNA depletion, showing modestly improved sensitivity compared to original antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 describe the generation and validation of BubR1 and Mad2-C antibodies from hybridoma sequences. Sequencing results are shown (C37, C38), expected localization patterns are demonstrated (C39, C40), specificity is confirmed by siRNA depletion (C41, C42), and comparative analysis shows improved sensitivity (C43). The validation includes appropriate controls and the expected dynamic localization patterns are supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "e2617cc4-fef7-4fc8-b831-2752a1f216ee",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The species specificity of the Hec1 antibody was successfully modified by swapping constant regions to generate rabbit (rMAb-Hec1rb) and human (rMAb-Hec1hu) versions that localize to kinetochores and are recognized by species-appropriate secondary antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 demonstrate successful species swapping by showing that the modified antibodies localize correctly to kinetochores and are recognized by the appropriate species-specific secondary antibodies but not by the original mouse secondary antibodies. This is a straightforward validation of the species-swapping approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "bc360a71-5702-44d7-9ff8-720666863e61",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multiple types of antibody fragments (scFvC, scFv, and Fab) were successfully generated from recombinant antibody sequences that recognize kinetochores when introduced by bead-loading or genetic encoding, can track dynamic phosphorylation events in living cells, and are compatible with super-resolution STORM imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 describe the generation and validation of antibody fragments. The advantages of fragments are established by citations (C46, C47). Experimental validation shows that scFvC fragments recognize kinetochores when bead-loaded (C48) or genetically encoded (C49), scFv-GFP tracks dynamic phosphorylation in living cells (C50), and Fab fragments work for bead-loading (C51) and STORM imaging (C52). All claims are supported by appropriate experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "95727112-a5a4-46be-b597-32464746bffb",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Full-length bivalent antibodies were successfully reverse-engineered from scFv sequences for HA-tag (rMAb-HArb) and tubulin (rMAb-Tubrb) that recognize their respective antigens with appropriate specificity and are recognized by rabbit secondary antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 demonstrate successful reverse engineering of scFv sequences into full-length antibodies. The HA-tag antibody shows specificity by recognizing HA-tagged but not untagged proteins (C53), and the tubulin antibody recognizes the expected molecular weight band (C54) and microtubules in cells (C55). Both are recognized by rabbit but not mouse secondary antibodies, confirming proper species specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "dd6b1f6d-8041-4368-b84f-15e5096e1d97",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Recombinant antibody production from 30 ml suspension cultures yielded between 0.1 and 2.0 mg of purified antibody, with variable yields across different antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 report the yields from antibody production experiments. The data are presented in Table 1 and show the range of yields obtained. However, the manuscript notes that the source of yield variation has not been defined, indicating that optimization work is ongoing. The yields are sufficient to demonstrate feasibility but the variability suggests the method may require further optimization for some antibodies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "da70d747-d3d0-4271-9653-a54c89ffcb30",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The cost of sequencing purified monoclonal antibodies ranges from $5,000-$12,000, while sequencing from hybridoma cell lines is much less expensive at $500-$1,500.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 provide cost information for antibody sequencing services. These are stated as current costs and represent practical information for researchers considering this approach. The claims are presented as factual cost information rather than experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "f48a68f4-379a-46fb-bb55-b7e8bc283402",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Small, directly labeled antibody fragment probes are desirable for super-resolution imaging because intact bivalent antibodies (~10-15 nm) reduce spatial resolution by approximately twofold in techniques with 20-30 nm resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 explain the rationale for using antibody fragments in super-resolution imaging. The size of intact antibodies (C61) is established knowledge, and the advantage of smaller probes for super-resolution imaging (C60) is supported by citations and demonstrated by the STORM imaging data (C52).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    },
+    {
+      "id": "be55757d-185d-40dc-8c6d-bacd564453c0",
+      "content_id": "c4d3f5c8-4362-42bd-b44b-b1e487b32f7a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information on kinetochore biology and the Hec1 9G3 antibody establishes the biological context for the study, including the role of kinetochores in chromosome segregation, the function of Hec1 in microtubule attachment, the epitope specificity of the 9G3 antibody, and the variable quality of the commercial antibody.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18, C62-C63 provide background information on kinetochore biology and the antibodies being studied. All claims are supported by citations to published literature and represent established knowledge in the field. This background appropriately contextualizes the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:52:39.224099Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "73082258-c414-4ea6-8ec3-6ef0af25064f",
+      "result_id": "f500718f-9882-4b30-b364-fba990c0b6cc"
+    },
+    {
+      "claim_id": "500ee5d5-80f2-491d-b379-8be3eb37eab1",
+      "result_id": "f500718f-9882-4b30-b364-fba990c0b6cc"
+    },
+    {
+      "claim_id": "49fbaaba-a89f-49fa-ba06-3d8724d0a9f4",
+      "result_id": "f500718f-9882-4b30-b364-fba990c0b6cc"
+    },
+    {
+      "claim_id": "133f4ba8-8e44-4c94-865f-64730dc35c02",
+      "result_id": "f500718f-9882-4b30-b364-fba990c0b6cc"
+    },
+    {
+      "claim_id": "b0d2f728-f7b4-4f0a-b77a-3cfe59031b4d",
+      "result_id": "f500718f-9882-4b30-b364-fba990c0b6cc"
+    },
+    {
+      "claim_id": "36d91be5-85c7-4e0a-8233-e31373c48536",
+      "result_id": "f500718f-9882-4b30-b364-fba990c0b6cc"
+    },
+    {
+      "claim_id": "f57f479b-322f-40ce-b7e9-8c22d4f4c309",
+      "result_id": "f500718f-9882-4b30-b364-fba990c0b6cc"
+    },
+    {
+      "claim_id": "2a651b10-1d7f-465b-ad02-fe8a7574489e",
+      "result_id": "efcaccba-9af3-493b-92b0-5b0bfce09401"
+    },
+    {
+      "claim_id": "8fa25021-5fb3-4fc7-b475-cca11b47381d",
+      "result_id": "efcaccba-9af3-493b-92b0-5b0bfce09401"
+    },
+    {
+      "claim_id": "6511b3dc-508f-4f97-990c-ea05b3d3506c",
+      "result_id": "efcaccba-9af3-493b-92b0-5b0bfce09401"
+    },
+    {
+      "claim_id": "5521545d-3bfc-41b8-8f32-84dcc0ec2901",
+      "result_id": "efcaccba-9af3-493b-92b0-5b0bfce09401"
+    },
+    {
+      "claim_id": "99786403-1899-4aab-885d-831b931c0f7c",
+      "result_id": "efcaccba-9af3-493b-92b0-5b0bfce09401"
+    },
+    {
+      "claim_id": "32089cc7-eff4-4c07-a4e2-1261577e3f2e",
+      "result_id": "efcaccba-9af3-493b-92b0-5b0bfce09401"
+    },
+    {
+      "claim_id": "d4412ac4-7d15-4574-aeec-05b50d008962",
+      "result_id": "1d7fa877-ac0e-4f29-80f1-c090675e6f5b"
+    },
+    {
+      "claim_id": "b61af318-26cd-4e43-9426-5d9fb2018858",
+      "result_id": "1d7fa877-ac0e-4f29-80f1-c090675e6f5b"
+    },
+    {
+      "claim_id": "90e049ec-b2e9-47a5-86ff-b60fdc9b2ae6",
+      "result_id": "1d7fa877-ac0e-4f29-80f1-c090675e6f5b"
+    },
+    {
+      "claim_id": "ba7908d6-92e6-413d-b9a6-309d7ec329d3",
+      "result_id": "1d7fa877-ac0e-4f29-80f1-c090675e6f5b"
+    },
+    {
+      "claim_id": "2930efae-7ba7-4c59-a379-2d8739875573",
+      "result_id": "1d7fa877-ac0e-4f29-80f1-c090675e6f5b"
+    },
+    {
+      "claim_id": "06d02df0-3280-4594-918e-9903b2f1a82a",
+      "result_id": "1d7fa877-ac0e-4f29-80f1-c090675e6f5b"
+    },
+    {
+      "claim_id": "c9627723-1280-4f11-a7d3-14d6daceabae",
+      "result_id": "1d7fa877-ac0e-4f29-80f1-c090675e6f5b"
+    },
+    {
+      "claim_id": "be96f93b-5790-45d5-befd-de64316d2168",
+      "result_id": "1d7fa877-ac0e-4f29-80f1-c090675e6f5b"
+    },
+    {
+      "claim_id": "3c444941-1e87-4dc5-8ca8-917194824c26",
+      "result_id": "1d7fa877-ac0e-4f29-80f1-c090675e6f5b"
+    },
+    {
+      "claim_id": "8a17e81c-57dd-4a13-a486-4951f44bf74b",
+      "result_id": "79bfa109-0a50-4208-b73d-2195469f906d"
+    },
+    {
+      "claim_id": "898f4831-fdd5-43c1-8e85-eec67c686407",
+      "result_id": "79bfa109-0a50-4208-b73d-2195469f906d"
+    },
+    {
+      "claim_id": "52fec983-a4d4-47c7-a39a-0897b8dd2af0",
+      "result_id": "79bfa109-0a50-4208-b73d-2195469f906d"
+    },
+    {
+      "claim_id": "54545c92-daf5-4834-a741-4128f3bc8c85",
+      "result_id": "79bfa109-0a50-4208-b73d-2195469f906d"
+    },
+    {
+      "claim_id": "7a2ed915-1698-494f-9f7b-e3f0ee6eaf97",
+      "result_id": "79bfa109-0a50-4208-b73d-2195469f906d"
+    },
+    {
+      "claim_id": "41181d9b-dcf1-4d98-a6b9-da5e050c105a",
+      "result_id": "06ecb767-b39d-4658-8105-5d4ecd55c8f5"
+    },
+    {
+      "claim_id": "00fff610-46b8-48e3-ab9a-424f14eaf28c",
+      "result_id": "06ecb767-b39d-4658-8105-5d4ecd55c8f5"
+    },
+    {
+      "claim_id": "067c1e29-594d-4d86-ae76-4eaef8997b4e",
+      "result_id": "06ecb767-b39d-4658-8105-5d4ecd55c8f5"
+    },
+    {
+      "claim_id": "c8d45d21-e076-4e65-a182-a0716a3641ec",
+      "result_id": "06ecb767-b39d-4658-8105-5d4ecd55c8f5"
+    },
+    {
+      "claim_id": "9e30625c-6614-4485-a575-36900cec4707",
+      "result_id": "68dcf291-b23f-4fd9-b5c1-31f5dcf035e8"
+    },
+    {
+      "claim_id": "9a469edd-0f1a-4e06-9bfc-acee02ae821d",
+      "result_id": "68dcf291-b23f-4fd9-b5c1-31f5dcf035e8"
+    },
+    {
+      "claim_id": "ec138562-92a1-498e-a682-34c5c2903cab",
+      "result_id": "68dcf291-b23f-4fd9-b5c1-31f5dcf035e8"
+    },
+    {
+      "claim_id": "302a5601-b04d-459a-a55f-7a9e4a0fd006",
+      "result_id": "68dcf291-b23f-4fd9-b5c1-31f5dcf035e8"
+    },
+    {
+      "claim_id": "d7536697-6224-43aa-9d63-0c2e0ae78a54",
+      "result_id": "68dcf291-b23f-4fd9-b5c1-31f5dcf035e8"
+    },
+    {
+      "claim_id": "7e188632-df73-4ba9-b010-8b1f860d4633",
+      "result_id": "68dcf291-b23f-4fd9-b5c1-31f5dcf035e8"
+    },
+    {
+      "claim_id": "9a224b39-bacd-4945-9162-f6b8b912fb97",
+      "result_id": "68dcf291-b23f-4fd9-b5c1-31f5dcf035e8"
+    },
+    {
+      "claim_id": "a60e9e17-5859-4ff6-af07-04b49596a8f6",
+      "result_id": "e2617cc4-fef7-4fc8-b831-2752a1f216ee"
+    },
+    {
+      "claim_id": "6415caa7-ac9b-45a7-99c8-fd3ce585942b",
+      "result_id": "e2617cc4-fef7-4fc8-b831-2752a1f216ee"
+    },
+    {
+      "claim_id": "dc5f809c-6621-42b6-b4ec-c4bdbf43a9eb",
+      "result_id": "bc360a71-5702-44d7-9ff8-720666863e61"
+    },
+    {
+      "claim_id": "323bdb90-62b8-4478-b2de-c86b369610a2",
+      "result_id": "bc360a71-5702-44d7-9ff8-720666863e61"
+    },
+    {
+      "claim_id": "18fe0d8c-fbf4-430c-bd09-8e7645aa0be3",
+      "result_id": "bc360a71-5702-44d7-9ff8-720666863e61"
+    },
+    {
+      "claim_id": "01ca2fa3-5a8b-40ca-9148-71c6db41c48c",
+      "result_id": "bc360a71-5702-44d7-9ff8-720666863e61"
+    },
+    {
+      "claim_id": "ece85667-c63f-4556-8f55-5ee79eae0dec",
+      "result_id": "bc360a71-5702-44d7-9ff8-720666863e61"
+    },
+    {
+      "claim_id": "3034779b-febe-41c6-85c5-e41cb5a75054",
+      "result_id": "bc360a71-5702-44d7-9ff8-720666863e61"
+    },
+    {
+      "claim_id": "9b874b2e-a9c6-40a8-9f79-c7314f0cffb7",
+      "result_id": "bc360a71-5702-44d7-9ff8-720666863e61"
+    },
+    {
+      "claim_id": "bc10562f-29e9-4ef6-a1c3-04edf0a40a12",
+      "result_id": "95727112-a5a4-46be-b597-32464746bffb"
+    },
+    {
+      "claim_id": "15186f61-1755-4510-896c-c47e0cbe22ca",
+      "result_id": "95727112-a5a4-46be-b597-32464746bffb"
+    },
+    {
+      "claim_id": "c0a3c9be-bc39-46ee-99b9-0e933a6dcd74",
+      "result_id": "95727112-a5a4-46be-b597-32464746bffb"
+    },
+    {
+      "claim_id": "714cd14c-7f63-4576-944f-01abab2f5c2e",
+      "result_id": "dd6b1f6d-8041-4368-b84f-15e5096e1d97"
+    },
+    {
+      "claim_id": "f773bc06-e14b-4b61-874b-9ad27a4791a0",
+      "result_id": "dd6b1f6d-8041-4368-b84f-15e5096e1d97"
+    },
+    {
+      "claim_id": "6cbe5c4c-5d06-422e-85e1-a0ccd165ffa0",
+      "result_id": "da70d747-d3d0-4271-9653-a54c89ffcb30"
+    },
+    {
+      "claim_id": "dac6c737-1b5d-4224-9bd0-9e73e06c8e0e",
+      "result_id": "da70d747-d3d0-4271-9653-a54c89ffcb30"
+    },
+    {
+      "claim_id": "ee17f7bd-cdcd-4c94-8bbb-43475ad7f7f8",
+      "result_id": "f48a68f4-379a-46fb-bb55-b7e8bc283402"
+    },
+    {
+      "claim_id": "aedd842d-c94a-4918-bdda-25ad253a66cd",
+      "result_id": "f48a68f4-379a-46fb-bb55-b7e8bc283402"
+    },
+    {
+      "claim_id": "078f3694-3040-41ec-8e92-72f1886826db",
+      "result_id": "be55757d-185d-40dc-8c6d-bacd564453c0"
+    },
+    {
+      "claim_id": "ce98efe3-cbd6-4e18-aaf1-a9ab475de9bb",
+      "result_id": "be55757d-185d-40dc-8c6d-bacd564453c0"
+    },
+    {
+      "claim_id": "3d1f0292-eff1-4316-9b28-486ae0c093f1",
+      "result_id": "be55757d-185d-40dc-8c6d-bacd564453c0"
+    },
+    {
+      "claim_id": "4b1f6348-620d-4474-9b31-19666ebf2626",
+      "result_id": "be55757d-185d-40dc-8c6d-bacd564453c0"
+    },
+    {
+      "claim_id": "fa15752a-4343-4df2-9f06-00fbbc181773",
+      "result_id": "be55757d-185d-40dc-8c6d-bacd564453c0"
+    },
+    {
+      "claim_id": "32a2288e-7463-4af6-bb64-8c905e35fbc1",
+      "result_id": "be55757d-185d-40dc-8c6d-bacd564453c0"
+    },
+    {
+      "claim_id": "a66afeed-3ea7-40f7-8269-6c28ac47a56f",
+      "result_id": "be55757d-185d-40dc-8c6d-bacd564453c0"
+    }
+  ],
+  "comparisons": []
+}

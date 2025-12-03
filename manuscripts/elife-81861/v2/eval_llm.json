@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C51"
+    ],
+    "result": "The study analyzed chromatin-tracing data from approximately 7600 individual chromosomes in IMR90 cells, quantifying 3D centroid positions of 651 50 kb chromosomal segments and nascent transcription states of approximately 80 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C51 describe the dataset used in the study. These are straightforward descriptive claims about the data source (Su et al., 2020) that are consistently stated throughout the manuscript and supported by Figure 1A. The sample size and scope are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C37",
+      "C38",
+      "C56",
+      "C57"
+    ],
+    "result": "Active genes adopt a constrained chromatin conformation and reposition toward the centroid of surrounding chromatin upon transcriptional activation. Nearly all ~80 genes examined showed this repositioning and confinement behavior, suggesting it is a general phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C37-C38, and C56-C57 collectively demonstrate gene repositioning upon activation through multiple complementary analyses (Figures 1D-K). The metagene analysis shows reduced variability (C3), closer proximity to surrounding chromatin (C4-C5), and positioning toward local centroids (C6-C7) for active genes. The consistency across nearly all genes (C56-C57) strengthens the conclusion. Statistical significance is reported (p<0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C21",
+      "C22"
+    ],
+    "result": "High-activity genes show greater movement with transcription compared to low-activity genes, with this difference primarily due to larger distances from the centroid when inactive rather than different distances when active. For high-activity genes separated by large MPD (>1300 nm), nearly all move away from each other when transcriptionally active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C21-C22 describe activity-dependent differences in gene repositioning supported by Appendix 1 figures 2-4. The analysis partitions genes by activity level and demonstrates differential behavior. However, the mechanistic interpretation (C10) relies on visual inspection of trends rather than formal statistical modeling, introducing some uncertainty about the precise cause of the observed differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Transcriptional bursting correlates with promoter-promoter contact formation. For genomically proximal genes (<1.5 Mb), distances between promoters are consistently smaller with transcription, with the (0,0)-(1,1) difference approximately twice the (0,0)-(0,1) difference. As genomic distance increases, genes appear to be positioned to different locations with transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 describe promoter-promoter distance changes with transcription state (Figure 2A-B). The statistical comparisons show significant differences (p<0.01), and the quantitative relationship between single and double activation (C14) is clearly demonstrated. The inference about positioning to different locations (C15-C16) is supported by the trend toward negative values at larger genomic distances, though the high variability noted in the text suggests caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Physical distance (MPD) rather than genomic distance is predictive of whether genes move toward or away from each other with transcription. Genes close to each other (MPD <1100 nm) move closer when bursting, while genes far from each other separate when bursting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 demonstrate that MPD is the key predictor of gene repositioning (Figure 2C-G). The analysis comparing MPD minus expected MPD (C17-C18) shows clear monotonic trends, while genomic distance minus expected genomic distance shows non-monotonic behavior (C20), supporting the conclusion. The threshold of ~1100 nm is empirically derived from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The correlation between genes shows a monotonic decay with increasing genomic distance, with enrichment in co-expression above the asymptotic baseline persisting to approximately 2 Mb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 describe the correlation-genomic distance relationship (Figure 3A). The monotonic decay is clearly visible in the figure, and the ~2 Mb threshold is stated. However, the analysis does not provide confidence intervals or formal statistical tests for the decay function, which would strengthen the quantitative claims about the relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C39",
+      "C40",
+      "C65"
+    ],
+    "result": "Physical distance between genes on individual chromosomes, not genomic distance, is the major factor driving co-bursting and co-expression. Co-expression correlates with single-chromosome distance but shows no correlation with genomic distance when single-chromosome distance is controlled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C39-C40, and C65 present the key finding that physical distance drives co-expression (Figure 4B). The analysis leverages single-cell variability to disentangle physical and genomic distance effects. Statistical significance is demonstrated for physical distance correlations but not for genomic distance (indicated by asterisks in Figure 4B). This is a well-supported central conclusion of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C85"
+    ],
+    "result": "Active genes exhibit Brownian motion over timescales of 3000 seconds, with the on time of human genes approximately 10-15 minutes as measured by nascent RNA dwell time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C85 describe chromatin dynamics from live-cell imaging. C29 is supported by MSD analysis (Figure 4C) showing linear fit consistent with Brownian motion. C85 cites prior work (Wan et al., 2021) for the on-time estimate. Both claims are well-documented, though the generalization from TFF1 to all genes involves some assumption about similarity of diffusion coefficients across genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The bursting frequency does not generally change as a function of distance between genes at a 200 nm binning scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by Figure 4D showing no systematic variation in the normalized burst frequency metric with distance. This finding is important for the modeling approach as it justifies using constant burst frequencies in the simulation. However, the 200 nm binning scale is relatively coarse, and finer-scale dependencies might exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Correcting for experimental limitations (resolution error, stochastic on times, and chromatin diffusion) reveals a true transcriptional correlation of approximately 0.3 for genes separated by less than 400 nm, representing an approximately 5-fold increase over the observed correlation in fixed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C36 present the corrected correlation estimate from simulations (Figures 4H-J). While the computational approach is systematic and the corrections are conceptually sound, the result depends heavily on modeling assumptions: (1) the \u03c9(r) coupling function is empirically fitted rather than mechanistically derived; (2) the assumption of constant 13-minute on times for all genes is acknowledged as an assumption; (3) the Langevin equation approach uses empirically determined potentials but lacks validation against independent data. The ~0.3 correlation is a prediction requiring experimental validation rather than a directly measured result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The observed gene repositioning may not be a result of enhancer-promoter interaction, as MPD changes did not show general differences with H3K27ac enrichment compared to loci lacking H3K27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by analysis in Appendix 1 figure 1B comparing H3K27ac-enriched and non-enriched regions. The lack of differential behavior argues against enhancer-promoter interactions as the primary driver. However, H3K27ac is an imperfect proxy for enhancer activity, and the analysis does not rule out other types of regulatory interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The movement toward the centroid is likely a steric effect, where active genes recruit large megadalton complexes (pre-initiation complex and RNA polymerase II) that push and confine the gene to a specific location due to the occluded volume effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C55 propose a mechanistic explanation for gene repositioning. While C54 (recruitment of large complexes) is established knowledge, C53 and C55 are explicitly labeled as speculation by the authors ('which we favor'). The steric/occluded volume mechanism is plausible but lacks direct experimental support in this study. Alternative mechanisms (e.g., active positioning to transcription factories) are not definitively ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The rules of promoter-promoter interaction may apply to enhancer-promoter interaction, and for MPD < 400 nm, a repositioning of 100 nm could be functionally relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 are speculative extensions of the findings. C58 is explicitly speculation based on functional similarity between promoters and enhancers. C59 suggests functional relevance for 100 nm repositioning at small MPD, supported by citations to relevant studies, but lacks direct experimental validation in this work. These are reasonable hypotheses for future testing rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The variability in MPD for a given genomic distance is too low to disentangle physical and genomic distance effects in previous studies. Extreme cases show enriched correlation for genomic distances up to 10 Mb when physical distance is <200 nm, and very low correlations for genes separated by <0.5 Mb when physical distance is >1200 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 explain why previous studies found conflicting results (Figures 3D-E, 4B). The analysis demonstrates limited variability in ensemble chromatin structure for specific genomic distances, and the extreme cases (C63-C64) clearly illustrate the dominance of physical over genomic distance. This reconciles prior literature and is well-supported by the single-cell data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The lack of temporal data and spatial resolution limits of chromatin-tracing methodology greatly obscure both the true transcriptional correlation between spatially proximal genes and the length scale over which transcriptional correlation is measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 identify key limitations of fixed-cell approaches that motivate the simulation-based correction. This is a conceptually sound assessment of methodological limitations. The subsequent simulation work (C32-C36) attempts to address these limitations, though with the uncertainties noted above.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Co-expression is a general property of the system where unrelated genes show correlated bursts when in spatial proximity, representing an unavoidable emergent behavior due to the physicality of the system. The physical distance between the vast majority of genes arises from physical constraints and is not indicative of a biologically functional relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C78 present a broad interpretation that observed correlations are emergent physical properties rather than specific regulatory mechanisms. While this is a reasonable hypothesis consistent with the data, it is explicitly speculative. The claim that proximity is 'not indicative of a biologically functional relationship' (C78) is strong and difficult to prove definitively. The authors acknowledge exceptions (C80), but the generalization requires more evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C82"
+    ],
+    "result": "The correlation of \u03c6\u22480.3 represents a physical property of human chromosomes and establishes a theoretical benchmark for future experimental studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 and C82 propose that the corrected correlation represents a fundamental property and benchmark. While the simulation-based estimate is systematic, calling it a 'physical property' (C41) and 'benchmark' (C42, C82) requires validation. The value depends on modeling assumptions that may not fully capture biological complexity. This is better characterized as a testable prediction than an established property.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C60",
+      "C61",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C79",
+      "C80",
+      "C83",
+      "C86",
+      "C87"
+    ],
+    "result": "The manuscript contextualizes findings within prior literature on chromosome conformation, transcription factories, co-expression, and chromatin dynamics, citing relevant studies on ensemble Hi-C, single-cell RNA-seq, live-cell imaging, and chromatin tracing methodologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50, C60-C61, C68-C71, C79-C80, C83, and C86-C87 are citation-based claims describing prior work. These appropriately contextualize the current study and are generally accurate representations of the cited literature. The authors use this context to explain why their single-cell approach resolves previous conflicting findings (e.g., C61-C62). No major misattributions are evident.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The enrichment in co-bursting for genes separated by <400 nm suggests the working distance of the underlying mechanism is not direct contact, consistent with enhancers coordinating transcription with working distances of hundreds of nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 interpret the spatial scale of correlation. The inference that the mechanism is not direct contact (C72) is reasonable given the 400 nm scale. The consistency with enhancer function (C73) is supported by multiple citations. However, the exact mechanism remains unknown, as the authors acknowledge, so this is an interpretation rather than a definitive mechanistic conclusion.",
+    "result_type": "MINOR"
+  }
+]

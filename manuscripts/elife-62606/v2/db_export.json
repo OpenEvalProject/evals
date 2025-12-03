@@ -1,0 +1,2208 @@
+{
+  "submission": {
+    "id": "c08f23b3-3cf7-435a-981a-df99693b4c80",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:42:09.433134Z",
+    "updated_at": "2025-12-03T02:42:09.433134Z"
+  },
+  "content": [
+    {
+      "id": "222af8e0-d029-44bb-b662-959df7352498",
+      "submission_id": "c08f23b3-3cf7-435a-981a-df99693b4c80",
+      "content_type": "manuscript",
+      "content_text": "# Bidirectional regulation of glial potassium buffering \u2013 glioprotection versus neuroprotection\n\n## Authors\n\n- Hailun Li<sup>1</sup> ([ORCID: 0000-0003-4757-4151](https://orcid.org/0000-0003-4757-4151))\n- Lorenzo Lones<sup>1</sup>\n- Aaron DiAntonio<sup>1</sup> ([ORCID: 0000-0002-7262-0968](https://orcid.org/0000-0002-7262-0968)) \u2020\n\n### Affiliations\n\n1. Department of Developmental Biology, Washington University in St. Louis School of Medicine St. Louis United States\n2. Needleman Center for Neurometabolism and Axonal Therapeutics St. Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGlia modulate neuronal excitability and seizure sensitivity by maintaining potassium and water homeostasis. A salt inducible kinase 3 (SIK3)-regulated gene expression program controls the glial capacity to buffer K+ and water in Drosophila, however upstream regulatory mechanisms are unknown. Here, we identify an octopaminergic circuit linking neuronal activity to glial ion and water buffering. Under basal conditions, octopamine functions through the inhibitory octopaminergic G-protein-coupled receptor (GPCR) Oct\u03b2R to upregulate glial buffering capacity, while under pathological K+ stress, octopamine signals through the stimulatory octopaminergic GPCR OAMB1 to downregulate the glial buffering program. Failure to downregulate this program leads to intracellular glia swelling and stress signaling, suggesting that turning down this pathway is glioprotective. In the eag shaker Drosophila seizure model, the SIK3-mediated buffering pathway is inactivated. Reactivation of the glial buffering program dramatically suppresses neuronal hyperactivity, seizures, and shortened life span in this mutant. These findings highlight the therapeutic potential of a glial-centric therapeutic strategy for diseases of hyperexcitability.\n\n## Introduction\n\nK+ homeostasis in the nervous system is required to maintain a healthy level of neuronal activity. Neurons release K+ ions as they repolarize during action potentials. If this K+ builds up in the extracellular space, it can disrupt neuronal firing and set the stage for neuronal hyperexcitability. Conventional treatments for conditions of hyperexcitability mostly target neuronal channels. However, more than one-third of epilepsy patients suffer from medically intractable seizures, while others experience debilitating side effects as neuron-targeting treatments often interfere with healthy neuronal functions (Chen et al., 2018). Hence, there is an urgent need for innovative therapeutic approaches that improve seizure control. Here, we explore glial mechanisms that regulate K+ balance to modulate neuronal excitability and seizure sensitivity.\n\nGlia buffer K+ stress by taking in excess K+ ions and osmotically obliged water molecules from the extracellular space. This function allows glia to control the extracellular level of K+ and thereby modulate neuronal excitability, raising the hope that glia may be targeted to restore K+ homeostasis and suppress hyperexcitability in epilepsy and stroke (H\u00fcbel and Ullah, 2016; Sontheimer, 1994). Glial-centric therapeutic strategies for these conditions have not been possible, largely due to a lack of understanding of mechanisms controlling the glial K+ buffering capacity. We previously discovered a signal transduction pathway that controls the glial capacity to buffer K+ and water in Drosophila (Li et al., 2019). SIK3 (salt inducible kinase 3) is an AMPK\u00a0family kinase that sequesters histone deacetylase 4 (HDAC4) in the cytoplasm, thereby promoting myocyte enhancer-factor 2 (Mef2)-dependent expression of K+ and water transport molecules, including the Drosophila orthologs of aquaporin-4 and SPAK, a kinase necessary for activating the Na+/K+ transporter NKCC1. This glial program suppresses extracellular nerve edema and prevents neuronal hyperexcitability and seizure in Drosophila, suggesting that it plays an important role in glial maintenance of K+ and water homeostasis and is required for a healthy level of neuronal activity. This glial program is best characterized in wrapping glia, which ensheathe axons in the Drosophila peripheral nervous system\u00a0(PNS) and are akin to vertebrate non-myelinating Schwann cells (Bittern et al., 2020), and so are well positioned to regulate the ionic composition around PNS axons (Li et al., 2019).\n\nWhile we have elucidated downstream effectors by which SIK3 regulates K+ and water buffering, the upstream signals that work through the SIK3 pathway to control glial buffering capacity are unknown. In other contexts, SIK3 integrates signals from different signal transduction pathways, coupling extracellular signals to changes in cellular responses (Choi et al., 2015; Wang et al., 2011; Wein et al., 2018). One of these pathways is G-protein-coupled receptor (GPCR)-cyclic AMP (cAMP)-protein kinase A (PKA) signaling, in which PKA directly inhibits SIK3 activity (Wang et al., 2011). A better understanding of upstream signaling mechanisms that regulate the SIK3 pathway and extracellular cues that modulate glial K+ buffering capacity will inform approaches to leverage this glial function for therapeutic benefits in diseases of hyperexcitability.\n\nHere, we identify an octopaminergic circuit linking neuronal activity to glial K+ and water buffering. Octopamine regulates the glial buffering program via GPCR-dependent regulation of PKA, which inhibits SIK3. At baseline, octopamine acts through the inhibitory octopaminergic GPCR Oct\u03b2R to activate the glial SIK3 pathway to promote K+ and water buffering and healthy levels of excitability. Under pathological K+ stress, in contrast, octopamine functions through the stimulatory octopaminergic GPCR OAMB1 to inhibit SIK3 and downregulate the glial capacity to buffer K+ and water. While loss of the SIK3 pathway leads to extracellular edema, constitutive activation of the pathway results in intracellular glial swelling and activation of stress signaling, suggesting that turning down this pathway protects glia. In eag shaker, a classic Drosophila hyperexcitable mutant with defective K+ channels, the SIK3-mediated glial buffering program is turned off, likely as a self-protective mechanism for glia. However, reactivation of this glial K+ and water buffering program dramatically suppresses neuronal hyperexcitability, seizures, and shortened life\u00a0span in eag shaker. Therefore, the maintenance of a robust glial K+ and water buffering program in response to extreme neuronal excitability is beneficial to the organism despite the risks posed to glial health. Taken together, this study identifies a neuromodulatory circuit that links neuronal activity to glial K+ buffering and highlights the promise of a glial-centric therapeutic strategy that restores K+ and water homeostasis for control of hyperexcitability in diseases such as epilepsy and stroke.\n\n## Results\n\n### G-protein/PKA signaling in glia regulates K+ and water homeostasis\n\nGlia modulate neuronal excitability by removing K+ and water from the extracellular space. Our previous work identified SIK3 as a key regulator of glial K+ buffering that suppresses extracellular fluid accumulation, neuronal hyperexcitability, and seizure sensitivity (Li et al., 2019). Here, we sought to identify upstream signaling pathway(s) that regulate SIK3 activity. In the Drosophila fat body, cAMP-dependent PKA may phosphorylate and inhibit SIK3 (Choi et al., 2015; Wang et al., 2011). We hypothesized that this signaling axis also functions in glia, and that PKA is a negative regulator of SIK3. If so, PKA activation in glia would phenocopy the SIK3 mutant phenotype and cause peripheral nerve extracellular edema which is visualized as discrete swellings, a readout of disrupted ionic and water homeostasis (Leiserson et al., 2000; Li et al., 2019). PKA exists as a tetramer of regulatory and catalytic subunits, in which the catalytic subunits are liberated from the regulatory subunits after cAMP binds. To test if activated PKA inhibits SIK3, we took two complementary approaches. First, we employed the pan-glial driver Repo-GAL4 to overexpress the catalytic subunit PKA-C1. Second, we knocked down the regulatory subunit PKA-R1, which should activate the endogenous catalytic subunit. Both manipulations phenocopied the loss of SIK3 in glia and induced dramatic localized edema in larval peripheral nerves, suggesting that PKA hyperactivity in glia disrupts ionic and water homeostasis (Figure 1A\u2013B). Since PKA is often regulated by GPCR-cAMP signaling, we tested if overexpression of constitutively active G\u03b1s also phenocopies SIK3 loss-of-function (LOF) in glia. Indeed, this manipulation recapitulates the characteristic nerve swellings (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62606/elife-62606-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative images of larval peripheral nerves stained for the nerve membrane marker HRP. Repo-GAL4, a pan-glial driver, was used to express LexA RNAi (control; abbreviated as Repo>), SIK3 RNAi (Repo>SIK3 RNAi), PKA-R1 RNAi (Repo>PKA-R1 RNAi), or a UAS-PKA-C1 transgene (Repo>PKA-C1). PKA hyperactivity, induced by either glial overexpression of its catalytic subunit (PKA-C1) or knockdown of a regulatory subunit (PKA-R1), causes localized nerve swellings (arrow) that resemble defects caused by loss of SIK3 from glia. Control larvae do not display swellings. Scale bars 20 \u03bcm. (B) Quantification of nerve swellings in (A). n\u00a0\u2265\u00a030. One-way ANOVA with Tukey's multiple comparisons; NS\u00a0= not significant, p>0.05. (C) Quantification of nerve swellings per animal in control, larvae with glial expression of constitutively activated G\u03b1s protein, HDAC4 RNAi, or co-expression of HDAC4 RNAi and G\u03b1s. Constitutively activated G\u03b1s in glia (Repo>Gs\u03b1. Q215L) causes nerve swellings that resemble (A); swellings are suppressed by loss of HDAC4 from glia (Repo>Gs\u03b1. Q215L, HDAC4 RNAi). Glial knockdown of HDAC4 (Repo>HDAC4 RNAi) does not result in nerve swellings. n\u00a0\u2265\u00a030. One-way ANOVA with Tukey's multiple comparisons; ****, p<0.0001. (D) Representative images of larval peripheral nerves demonstrating the effects of G\u03b1s and PKA activation on HDAC4 localization in glia. Left: glial nuclei (green) and HDAC4 (red). Right: grayscale images show HDAC4 staining; glial nuclei are outlined. Scale bars 15 \u03bcm. (E) Quantification of nucleo:cytoplasmic ratio of HDAC4 for genotypes in (D). n\u00a0\u2265\u00a020. Data are presented as fold changes relative to Repo>HDAC4. One-way ANOVA with Tukey's multiple comparisons; ****, p<0.0001. (F) Quantification of number of nerve swellings per animal for genotypes in (D). n\u00a0\u2265\u00a020. One-way ANOVA with Tukey's multiple comparisons; ****, p<0.0001. Data are mean \u00b1 SEM.\n\nWe hypothesize that this G-protein/PKA signal regulates the SIK3 pathway to control glial K+ and water homeostasis. If so, the induction of these nerve swellings should require HDAC4, the major downstream effector of SIK3 and inhibitor of the SIK3 signaling pathway. Indeed, glial-specific knockdown of HDAC4 fully suppresses the nerve swellings caused by G\u03b1s overexpression (Figure 1C). In our previous work, we demonstrated that SIK3 sequesters HDAC4 in the glial cytoplasm, thereby promoting gene expression of a K+ and water buffering program (Li et al., 2019). Here, we tested the model that G\u03b1s and PKA also regulate HDAC4 localization to maintain glial K+ homeostasis. We examined HDAC4 localization in glia by co-expressing a nuclear-localized GFP to label glial nuclei and a FLAG-tagged HDAC4 to measure HDAC4 intensity in both the nucleus and the cytoplasm. We then overexpressed PKA-C1 or G\u03b1s in glia expressing FLAG-tagged HDAC4 (Figure 1D\u2013E). In both cases, HDAC4 nuclear localization increases dramatically, resulting in an\u00a0~6-fold increase in the nucleo:cytoplasmic HDAC4 ratio. While glial overexpression of FLAG-tagged HDAC4 allows visualization of HDAC4 localization, it also causes HDAC4 hyperactivity in glia and induces nerve swellings. Consistent with the re-localization of HDAC4 into the nucleus induced by expression of G\u03b1s and PKA-C1, these manipulations further increase the number of nerve swellings (Figure 1F). Since G\u03b1-cAMP-PKA signaling is usually regulated by GPCRs, we conclude that a GPCR signaling pathway likely controls SIK3 activity to regulate K+ and water homeostasis. Next, we sought to identify the ligand/receptor pair that regulates this glial K+ and water buffering pathway.\n\n### Octopamine signaling is required for K+ and water buffering by glia\n\nStudies of adipocytes have revealed a role for \u03b2-adrenergic signaling in cAMP-dependent regulation of SIK3 activity (Berggreen et al., 2012). Norepinephrine is a stress hormone that suppresses seizures in several mammalian models of epilepsy (Mason and Corcoran, 1979; Szot et al., 1999). The fly equivalent, octopamine, is a neuromodulator that regulates stress responses such as aggression and starvation resistance (Suo et al., 2006; Zhou et al., 2008). Here, we hypothesize that octopamine controls the glial capacity to buffer K+ stress in the nervous system. First, we tested whether octopamine is required for SIK3-mediated K+ buffering. Octopamine synthesis occurs in a well-defined small subset of neurons, in which tyrosine is processed into tyramine and subsequently into octopamine. This two-step process is catalyzed by tyrosine decarboxylase 2 (tdc2) and tyramine beta-hydroxylase (t\u03b2h), respectively. Vesicular monoamine transporters (VMATs) then package octopamine into secretory vesicles for later release. To test whether glial K+ buffering is disrupted in mutants deprived of octopamine, we examined HDAC4 localization in glia expressing FLAG-tagged HDAC4, which provides a simple ON/OFF readout for the K+ buffering program. HDAC4 nuclear localization increases dramatically in octopamine synthesis mutants, tdc2R054 and t\u03b2hnM18, suggesting that SIK3 is inhibited and so cannot sequester HDAC4 in the cytoplasm. These mutations also enhance the nerve swellings caused by HDAC4 hyperactivity in this glial background (Figure 2C). We observed similar results in dVMAT mutants (Simon et al., 2009), which cannot load octopamine into secretory vesicles and thereby have a defect in octopamine release (Figure 2A\u2013C). Next, we tested the hypothesis that octopamine signals through GPCR-cAMP-PKA signaling for this function. If so, octopamine regulation of HDAC4 localization should depend on PKA activity. Indeed, glial knockdown of PKA-C1 potently reverts HDAC4 nuclear localization in tdc2R054 mutants, pointing to PKA hyperactivity as the cause of HDAC4 mislocalization in octopamine synthesis mutants (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62606/elife-62606-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative images of peripheral nerves showing aberrant HDAC4 localization in octopamine synthesis and transport mutants. Grayscale images show HDAC4 staining; glial nuclei are outlined in red. Scale bars 15 \u03bcm. (B) Quantification of nucleo:cytoplasmic ratio of HDAC4 for genotypes in (A). n\u00a0\u2265\u00a020. Data are presented as fold changes relative to Repo>HDAC4. One-way ANOVA with Tukey's multiple comparisons; ***, p<0.001; ****, p<0.0001. (C) Quantification of number of nerve swellings per animal in HDAC4 overexpressing\u00a0control larvae (Repo>HDAC4) and octopamine mutants. n\u00a0\u2265\u00a020 larvae per genotype. One-way ANOVA with Tukey's multiple comparisons; ***, p<0.001. ****, p<0.0001. (D) Quantification of HDAC4 localization in octopamine synthesis mutants, mutants with glial expression of LexA RNAi as control or PKA-C1 RNAi. Octopamine synthesis mutants (tdc2R054) exhibit HDAC4 accumulation in glial nuclei; this nuclear localization is rescued by abolishing protein kinase A (PKA) catalytic activity in glia (Repo>PKA-C1 RNAi). One-way ANOVA with Tukey's multiple comparisons; ****, p<0.0001. (E) Representative images of nerves demonstrating the effect of 30 mg/ml octopamine or 30 mg/ml tyramine on octopamine synthesis mutant glia in an ex vivo assay. Scale bars 15 \u03bcm. (F) Quantification of HDAC4 nucleo:cytoplasmic ratio for genotypes in (D). Octopamine (30 mg/ml), but not TA (30 mg/ml) or KCl (500 mM), suppresses HDAC4 nuclear localization in glia. n\u00a0\u2265\u00a015. One-way ANOVA with Tukey's multiple comparisons; ***, p<0.001; NS\u00a0= not significant, p>0.05. (G) Quantification of number of nerve swellings per animal in larvae with glial expression of LexA RNAi as control (Repo>), Oct\u03b21R RNAi, PKA-C1 RNAi, or co-expression of Oct\u03b21R RNAi and PKA-C1 RNAi. n\u00a0\u2265\u00a020. Student's t test; ****, p<0.0001. Data are mean \u00b1 SEM.\n\nOur findings demonstrate an essential role of octopamine in the activation of glial K+ buffering. We hypothesize that this function is specific to octopamine and that octopamine acts directly on glia to regulate the SIK3 pathway. To test this model, we developed an ex vivo preparation to test if exogenous octopamine is sufficient to bypass the requirement for endogenous octopamine for the regulation of HDAC4 localization. In tdc2R054 mutants, which cannot synthesize either tyramine or octopamine, HDAC4 accumulates in the nucleus. We dissected third-instar larvae and treated the larval fillet for 2 min with physiological saline or saline containing 30 mg/ml octopamine hydrochloride or tyramine hydrochloride and assessed HDAC4 localization in glial nuclei. tdc2R054 mutants treated with control or tyramine-containing saline exhibit pronounced HDAC4 nuclear localization with a high nucleo:cytoplasmic HDAC4 ratio (Figure 2E\u2013F). In contrast, 2 min exposure to octopamine induces rapid re-localization of HDAC4 to the cytosol. Hence, octopamine is sufficient to activate the SIK3 signaling pathway in glia, and the rapid time course strongly suggests that octopamine is acting directly on the glia.\n\nIf octopamine signals directly to glia, then there must be an octopamine receptor that mediates octopamine activation of glial K+ buffering. Among the octopamine receptors that have been identified in Drosophila, OAMB, Oct\u03b21R, Oct\u03b22R, and Oct\u03b23R can signal through cAMP as a second messenger (El-Kholy et al., 2015). Since octopamine is necessary for SIK3 signaling while PKA inhibits SIK3 signaling, we postulated that the relevant GPCR is coupled to an inhibitory G\u03b1 protein that normally suppresses PKA activity. Loss of this receptor from glia would result in PKA hyperactivity, inhibition of SIK3, and disrupted glial K+ and water homeostasis. We performed RNAi-mediated knockdown of each candidate from above selectively in glia using Repo-GAL4 and assessed peripheral nerve morphology. From this screen, RNAi-mediated glial knockdown of Oct\u03b21R results in the characteristic localized nerve edema phenotype that resembles SIK3 LOF mutants (Figure 2G). Moreover, glial knockdown of either PKA-C1 or HDAC4 potently suppresses nerve swellings in larvae deprived of Oct\u03b21R in glia. These findings strongly support the model that octopamine functions through Oct\u03b21R to inhibit PKA, thereby de-repressing SIK3 to sequester HDAC4 in the cytoplasm and promote proper K+ and water buffering. Having demonstrated that octopamine normally activates the glial K+ and water buffering program, we next investigated the impact of elevated octopamine on the glial SIK3 pathway.\n\n### Excess octopamine inhibits the glial K+ buffering program\n\nIn Drosophila, octopamine can activate distinct receptors that are localized in the same cell yet have antagonistic functions, potentially allowing for differential responses to low and high levels of octopamine (Koon and Budnik, 2012). We hypothesized that octopamine could have dual actions on glia to exert bidirectional control over K+ buffering. We have demonstrated that octopamine functions through the inhibitory GPCR Oct\u03b21R to activate SIK3 signaling and upregulate glial K+ and water buffering capacity (Figure 2). If octopamine indeed has dual effects on glial K+ buffering, then octopamine acting through a stimulatory GPCR would enhance PKA activity in glia and thereby inhibit SIK3 signaling. As a first test of this model, we asked whether chronic treatment with elevated levels of octopamine can disrupt glial regulation of K+ and water homeostasis. We increased octopamine levels by raising third instar larvae on a diet supplemented with octopamine hydrochloride or tyramine hydrochloride and examined peripheral nerve morphology. Wild-type larvae raised on a control diet do not develop swellings in their peripheral nerves (0 out of\u00a0>100 larvae) (Figure 3A). A high tyramine diet also does not impact larval nerve morphology. However, a high octopamine diet increases the susceptibility of wild-type larvae to nerve edema, with\u00a0~70% of larvae developing swellings in peripheral nerves. Hence, high levels of octopamine disrupt the larval ability to maintain ionic and water homeostasis. These nerve swellings can be suppressed by enhancing the glial SIK3 signaling pathway, as PKA-C1 knockdown and HDAC4 knockdown selectively in glia both significantly reduce the frequency of nerve swellings in larvae raised on a high octopamine diet (Figure 3A). The suppression by PKA-C1 knockdown demonstrates that the effect of exogenous octopamine works through active PKA, supporting the model that high levels of octopamine work through a stimulatory GPCR.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62606/elife-62606-fig3-v2.jpg)\n\n**Figure 3.:** (A) Frequency of occurrence of nerve swellings in high octopamine-fed larvae with glial expression of LexA RNAi (Repo>), PKA-C1 RNAi, or HDAC4 RNAi. Larvae raised on control diet do not develop swellings; high octopamine (5 mg/ml)\u00a0diet, but not high TA (5 mg/ml) diet, increases the percent of larvae exhibiting nerve swellings; this effect is blocked by loss of PKA-C1 or HDAC4 from glia. n\u00a0\u2265\u00a0100. (B) Representative images of peripheral nerves demonstrating the effect of high octopamine diet on glial HDAC4 localization. High octopamine diet enhances HDAC4 nuclear localization in control larvae (Repo>HDAC4); this effect is blocked by glial knockdown of PKA-C1 (Repo> PKA-C1 RNAi) or OAMB (Repo>OAMB RNAi). Grayscale images show HDAC4 staining; glial nuclei are outlined in red. Scale bars 15 \u03bcm. High octopamine diet promotes nuclear localization of HDAC4 specifically in wrapping glia, as shown in Figure 3\u2014figure supplement 1. (C) Quantification of HDAC4 nucleo:cytoplasmic ratio for genotypes in (B). n\u00a0\u2265\u00a030. Data are presented as fold changes relative to Repo>HDAC4. One-way ANOVA with Tukey's multiple comparisons; ****, p<0.0001. NS\u00a0= not significant, p>0.05. (D) Quantification of HDAC4 localization in larvae raised on high salt diets. KCl-rich (200 mM) diet, but not NaCl-rich (200 mM) diet, promotes nuclear shuttling of HDAC4 in control larvae (Repo>HDAC4); this re-localization is inhibited by glial knockdown of OAMB (Repo>OAMB RNAi). n\u00a0\u2265\u00a020. One-way ANOVA with Tukey's multiple comparisons; ****, p<0.0001; NS, p>0.05. (E) Schematic model of octopamine exerting dual effects on SIK3-mediated glial K+ buffering: in response to K+ stress, different levels of octopamine act through receptors with antagonistic functions to differentially regulate SIK3-mediated glial K+ buffering. Data are mean \u00b1 SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62606/elife-62606-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative images of peripheral nerves showing HDAC4 localization in wrapping glia (Nrv2>HDAC4) of larvae raised on a normal or a high-octopamine diet. High octopamine leads to a high nucleo:cytoplasmic ratio of HDAC4. Grayscale images show HDAC4 staining. Scale bars 15 \u03bcm. (B) Quantification of HDAC4 nucleo:cytoplamic ratio for genotypes in (A). n\u00a0\u2265\u00a012. Data are presented as fold changes relative to Nrv2>HDAC4 + normal diet. Student's t test; ****, p<0.0001.\n\nTo test directly whether high levels of octopamine modulate the SIK3 signaling pathway, we examined HDAC4 localization in glia expressing FLAG-tagged HDAC4 under control of the pan-glial driver Repo-Gal4. If exogenous octopamine downregulates the glial capacity to buffer K+ by inhibiting SIK3, then this would lead to nuclear accumulation of HDAC4. Indeed, a high octopamine diet dramatically increases HDAC4 nuclear localization in glia (Figure 3B\u2013C). This regulation of HDAC4 localization by octopamine depends on PKA activity, as glial knockdown of PKA-C1 completely abolishes octopamine-induced nuclear shuttling of HDAC4. We previously demonstrated that in the PNS this SIK3/HDAC4 pathway primarily regulates ion buffering in wrapping glia, the glial subtype that directly ensheathes the axon (Li et al., 2019). To assess whether octopamine regulation can occur in wrapping glia, we expressed FLAG-tagged HDAC4 under control of Nrv2-Gal4, which expresses exclusively in wrapping glia (Sun et al., 1999). With a high octopamine diet, HDAC4 in wrapping glia is present at much lower levels in the cytoplasm leading to a high nuclear:cytoplasmic ratio of HDAC4 (Figure 3\u2014figure supplement 1). Hence, octopamine can inhibit the SIK3 pathway in the wrapping glia that primarily mediate ionic buffering around peripheral axons.\n\nHaving demonstrated that high levels of octopamine enhances PKA activity to inhibit SIK3 pathway in glia, we next searched for the relevant stimulatory GPCR in glia. OAMB is an octopamine receptor coupled to a G\u03b1s protein that activates adenylyl cyclase to increase cAMP-PKA signaling (Kim et al., 2013). Glial knockdown of OAMB potently blocks HDAC4 nuclear localization in larvae raised on a high octopamine diet, demonstrating that high levels of octopamine act directly on glia through OAMB to inhibit the SIK3 pathway and turn down glial K+ buffering. Hence, octopamine can bidirectionally regulate the glial capacity to buffer K+ and water, and this differential effect works through distinct octopamine receptors and may depend on variations in the level of octopamine release.\n\nLike its mammalian counterpart norepinephrine, octopamine is normally maintained at a low level and released as a stress signal during bouts of high neuronal activity or in response to high K+ levels (Orchard and Lange, 1987). Here, we postulated that octopamine links neuronal activity to glial K+ buffering, and that octopamine release correlates with the level of K+ stress. If the effect of K+ stress is mediated by octopamine signaling, then high K+ stress should induce the same effects as high levels of octopamine and modulate HDAC4 localization in wild-type glia. To test this model, we raised larvae on a diet supplemented with 200 mM KCl and examined HDAC4 localization in their glia expressing FLAG-tagged HDAC4. Indeed, a high K+ diet mimics a high octopamine diet and dramatically increases HDAC4 accumulation in the glial nuclei (Figure 3D). This regulation of HDAC4 localization is potently suppressed by glial knockdown of the octopamine receptor OAMB, demonstrating that sustained K+ stress requires octopamine signaling to alter SIK3 pathway activity. Since K+ stress is correlated with the level of neuronal excitability, these findings suggest that sustained changes in neuronal excitability function through differential octopamine release to bidirectionally modulate glial K+ and water buffering capacity, likely by acting through receptors with antagonistic functions (Figure 3E).\n\n### Glia with enhanced K+ and water buffering capacity undergo cellular swelling\n\nHaving demonstrated a seemingly counterintuitive relationship between high K+ stress and reduced glial K+ buffering capacity, we next explored the significance of this downregulation. We hypothesized that this mechanism protects glia from the negative effects of extreme K+ stress (Murphy et al., 2017; Risher et al., 2012). To test this idea, we assessed consequences of a constitutively active glial K+ buffering program. We independently knocked down two components that each would enhance SIK3 signaling in glia: (1) OAMB, the octopamine receptor that enhances PKA activity to inhibit SIK3 signaling, and (2) HDAC4, the central negative regulator of SIK3 signaling. First, we hypothesized that glia with enhanced K+ buffering capacity would undergo cellular swelling as a result of taking in an excess load of K+ ions and water molecules. Drosophila and mouse mutants with glial swelling exhibit an increase in nerve width along the entire length of their peripheral nerves (Byun and Delpire, 2007; Rusan et al., 2014). This is in contrast to the localized extracellular edema caused by SIK3 LOF in glia, which occurs in discrete locations along the nerve (Figure 1A and Li et al., 2019). Here, we raised larvae on control diet or a diet supplemented with 200 mM KCl and examined peripheral nerve morphology. Glial knockdown of OAMB results in a \u2018non-localized\u2019 nerve edema phenotype in both larvae raised on control diet and those on a high K+ diet (Figure 4A\u2013B). As expected, this edema phenotype is dramatically different than the extracellular nerve swellings in SIK3 mutants, as it occurs uniformly along the entire nerve. HDAC4 LOF in glia induces a similar edema phenotype, but only when larvae were provided with K+ stress by being raised on a high K+ diet. To directly test if this phenotype reflects edema inside the glia, we knocked down OAMB or HDAC4 in glia labeled with cytoplasmic RFP. Thin optical sections of nerves with OAMB or HDAC4 knockdown in glia revealed a large increase in intracellular glial cytoplasm that is indicative of increased glial volume (Figure 4C). This is in direct contrast to the appearance of the large extracellular swellings caused by glial loss of SIK3, which appear as large unstained regions surrounded by glial cytoplasm (Figure 4C). These results support our hypothesis that a constitutively active K+ buffering program causes excess uptake of ions and osmotically obliged water and results in glial cellular swelling.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62606/elife-62606-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative images of HRP-stained peripheral nerves demonstrating \u2018non-localized\u2019 edema in larvae with glial expression of LexA RNAi (Repo>), OAMB RNAi, or HDAC4 RNAi. Scale bars 20 \u03bcm. (B) Quantification of average nerve width for genotypes in (A). Loss of OAMB from glia causes \u2018non-localized\u2019 edema that results in a uniform increase in nerve width along the entire nerve; HDAC4 knockdown in glia induces a similar phenotype when larvae were fed a KCl-rich (200 mM) diet. n\u00a0\u2265\u00a015. Two-way ANOVA with Tukey's multiple comparisons; ****, p<0.0001; NS\u00a0= not significant, p>0.05. (C) Representative thin optical sections of larval peripheral nerves with RFP-labeled (red) glial cytoplasm. (D) Representative images of larval peripheral nerves stained for c-Jun N-terminal kinase (JNK) pathway activity reporter puc-lacZ. Left: glial nuclei (green) and puc (red). Right: grayscale images show puc-lacZ staining; glial nuclei are outlined. Scale bars 15 \u03bcm. (E) Quantification of puc-lacZ signals in glia for genotypes in (C). Loss of OAMB or HDAC4 from glia dramatically increases puc expression in glia. n\u00a0\u2265\u00a020. One-way ANOVA with Tukey's multiple comparisons; ****, p<0.0001. Data are presented as fold changes relative to puc-lacZ; Repo>. Data are mean \u00b1 SEM.\n\nWe next examined whether activation of the SIK3 pathway influences other aspects of glial health beyond cellular swelling. The c-Jun N-terminal kinase (JNK) is a classic stress kinase activated by a variety of cell stressors including the mechanical stress of cell stretching (Pereira et al., 2011). To test whether enhanced SIK3 signaling affects JNK activity in glia, we employed a transcriptional reporter of JNK pathway activity, a nuclear-localized lacZ enhancer trap inserted into puckered (puc), a JNK phosphatase that is induced by JNK signaling as a negative regulatory mechanism. We expressed a nuclear-localized GFP in glia in the puc-lacZ background to label the glial nuclei. Basal expression of puc-lacZ in control larvae is relatively low, suggesting a minimal level of JNK activity in normal glia (Figure 4D). In contrast, SIK3 pathway activation by glial-specific knockdown of either OAMB or HDAC4 dramatically increases JNK activity, resulting in\u00a0~3-fold increase in puc-lacZ signal (Figure 4D\u2013E). Taken together, we conclude that constitutive activation of the SIK3 K+ and water buffering program causes intracellular glial swelling and activates a molecular stress response pathway. While these findings highlight the cell autonomous costs of an activated glial buffering program, we also tested whether enhanced K+ and water buffering might provide organismal benefit in a seizure model.\n\n### Activation of the glial buffering program suppresses hyperexcitability in a classic seizure mutant\n\nWe demonstrated that inducing K+ stress by feeding larvae KCl re-localizes HDAC4 to the glial nuclei and thereby turns off the glial buffering program (Figure 3E). While high K+ is a common proxy for hyperexcitability, we wished to test whether a bona fide hyperexcitable mutant would also turn down the glial K+ and water buffering program. We employed a classic fly seizure model, eag shaker (eag,Sh), which is mutant for two voltage-gated K+ channels and displays dramatic neuronal hyperexcitability, seizures, and a very short life\u00a0span (Fergestad et al., 2006; Ganetzky and Wu, 1983). To test if the eag,Sh mutant has altered glial SIK3 signaling, we examined HDAC4 localization in glia expressing FLAG-tagged HDAC4. In the eag,Sh mutant, there is greatly enhanced HDAC4 nuclear localization, demonstrating inhibition of the glial SIK3 pathway (Figure 5A\u2013B). Moreover, loss of eag and Shaker exacerbates the localized nerve edema induced by HDAC4 hyperactivity in this glial background (Figure 5C). Hence, the glial buffering program is inhibited in this hyperexcitable mutant. Since we previously demonstrated that inhibition of the glial SIK3 pathway is sufficient to induce hyperexcitability and seizures (Li et al., 2019), we explored whether inhibition of the glial buffering program is contributing to the hyperexcitable phenotype in the eag,Sh mutant.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62606/elife-62606-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative images of peripheral nerves demonstrating aberrant HDAC4 localization in eag,Sh mutant. Grayscale images show HDAC4 staining; glial nuclei are outlined in red. Scale bars 15 \u03bcm. (B) Quantification of HDAC4 nucleo:cytoplasmic ratio for genotypes in (A). n\u00a0\u2265\u00a020. Data are presented as fold changes relative to Repo>HDAC4. Student's t test; ***, p<0.001. (C) Quantification of nerve swellings in HDAC4-overexpressing control and eag shaker mutant. n\u00a0\u2265\u00a020. Student's t test; ***, p<0.001. (D) Representative images of wing morphology in control, eag,Sh mutants, and mutants with glial knockdown of HDAC4. Eag,Sh mutants exhibit down-turned wings (arrow) that are not observed in control flies; this phenotype is suppressed by glial-specific inhibition of HDAC4 (Repo>HDAC4 RNAi). (E) Representative physiological traces recorded from larval neuromuscular junctions\u00a0(NMJs) for genotypes in (D). Control larvae (Repo>) only exhibit miniature excitatory junction potentials\u00a0(mEJPs); eag,Sh exhibit spontaneous evoked junction potentials\u00a0(EJPs). These spontaneous EJPs are suppressed by glial expression of HDAC4 RNAi. (F) Quantification of frequency of spontaneous EJPs for genotypes in (D). A minimum of 50 consecutive events were analyzed over a passive recording window (up to 75 consecutive events or 120 s, whichever happened first), and events with amplitudes\u00a0\u22654 mV were considered as spontaneous EJPs. n\u00a0=\u00a08 for Repo>; n\u00a0=\u00a08 for eag,Sh; n\u00a0=\u00a08 for eag,Sh; Repo>HDAC4 RNAi. One-way ANOVA with Tukey's multiple comparisons; p<0.0001. (G) Time course of vortex-induced seizure behaviors for genotypes in (D). n\u00a0\u2265\u00a05 groups of 10 flies per genotype per time point. Two-tailed Student's t test; ****, p<0.0001. (H) Life span analysis of genotypes in (D). n\u00a0\u2265\u00a050. Data are mean \u00b1 SEM.\n\nIf glial defects in the K+ and water buffering program contribute to eag,Sh phenotypes, then enhancing the glial buffering capacity in the eag,Sh mutant should ameliorate defects in K+ buffering and suppress seizure phenotypes. To test this idea, we performed glial-specific RNAi-mediated knockdown of HDAC4 to enhance SIK3-mediated glial K+ and water buffering in the eag,Sh mutant. We observed dramatic suppression of a series of eag,Sh phenotypes. First, eag Sh mutants exhibit down-turned wings, a phenotype commonly observed in Drosophila hyperexcitability mutants (Figure 5D). This morphological abnormality is suppressed by glial knockdown of HDAC4. In fact, inhibition of glial HDAC4 in these mutants results in an upheld wing phenotype, which occurs in mutants with muscle hypercontraction as a result of altered neuronal excitability (Katti et al., 2017; Montana and Littleton, 2004). Next, we tested if HDAC4 inhibition suppresses neuronal hyperexcitability in the eag,Sh mutant at the larval neuromuscular junction (NMJ). In this system, the peripheral nerve is severed such that motor axons do not receive input from their cell bodies and so do not fire action potentials without exogenous nerve stimulation. When recording from postsynaptic muscles of wild-type larvae, only miniature excitatory junction potentials (mEJPs) generated by the spontaneous release of single vesicles are detected (Figure 5E). In contrast, eag,Sh displays not only mEJPs, but also much larger evoked junction potentials (EJPs) that result from the spontaneous firing of axons. These observations are consistent with findings from previous studies on eag,Sh (Ganetzky and Wu, 1983) and are a hallmark of neuronal hyperexcitability. Activation of the SIK3 glial buffering program in eag,Sh mutants by selective glial knockdown of HDAC4 leads to an\u00a0~60% reduction in the frequency of these spontaneous EJPs (Figure 5E\u2013F). Since enhancing glial K+ buffering potently suppresses the neuronal hyperexcitability induced by loss of the eag and Shaker potassium channels, the hyperexcitability attributed to the absence of these channels is due in part to the lack of sufficient glial ion and water buffering.\n\nWe next tested whether enhancing glial K+ and water buffering could suppress seizures in the eag,Sh mutant (Kuebler et al., 2001; Pavlidis and Tanouye, 1995). We assessed bang-sensitive seizures by delivering a 15 s mechanical shock and recording the frequency of seizing behaviors including shuddering, leg shaking, contorted posturing, and spinning flight. Consistent with previous findings, eag,Sh mutants are about 25 times more likely to seize than control flies (Figure 5H). They also have much longer seizures, which last for up to a minute while in control flies seizing behavior lasts only a few seconds. Glial-specific inhibition of HDAC4 dramatically suppresses the seizure behavior of eag,Sh mutants, reducing the incidence of seizure by ~80% and seizure duration to a few seconds. Finally, we tested whether enhancing glial K+ buffering capacity improves the life\u00a0span of eag,Sh mutants. eag,Sh mutants have a dramatically shortened life\u00a0span compared to control flies (Figure 5I and Fergestad et al., 2006). Remarkably, glial-specific knockdown of HDAC4 in the eag,Sh mutant results in a dramatic extension of life\u00a0span to essentially control levels. Taken together, these findings demonstrate that enhancing glial mechanisms that boost K+ and water homeostasis profoundly suppresses electrophysiological, behavioral, and survival phenotypes of eag,Sh, the paradigmatic Drosophila neuronal hyperexcitability mutant.\n\n## Discussion\n\nK+ dysregulation drives edema and neuronal hyperexcitability and can lead to brain damage in patients with epilepsy and stroke. Glia buffer K+ stress by taking up excess K+ ions and water to maintain a healthy extracellular environment for neuronal excitability. We previously identified SIK3 as the central node of a signal transduction pathway that controls the glial capacity to buffer K+ and water in Drosophila (Li et al., 2019). Here, we uncovered upstream regulatory mechanisms controlling the SIK3 pathway and demonstrated that activation of this glial program can dramatically ameliorate the pathological consequences of neuronal hyperexcitabiltiy. An octopaminergic circuit couples neuronal activity to glia buffering, exerting a dual effect on SIK3-mediated K+ buffering: low levels of octopamine enhance the glial K+ buffering capacity, while high levels of octopamine inhibit this buffering program, likely to protect glia against extreme K+ stress. Glial-specific inhibition of HDAC4, a central repressor of SIK3 signaling, results in a constitutively active glial buffering program that dramatically suppresses seizure and extends life\u00a0span in a classic epilepsy model. Hence, augmenting glial K+ and water buffering holds promise as a therapeutic approach for the treatment of seizures.\n\n### Glial SIK3 signaling controls cell volume regulation\n\nThe glial SIK3/HDAC4/Mef2 pathway regulates expression of both fray/SPAK, a kinase controlling ion transporter activity, and aquaporin 4, a water channel essential for volume regulation (Leiserson et al., 2011; Li et al., 2019; Papadopoulos et al., 2004). Our original analysis of SIK3 LOF mutants demonstrated that glial SIK3 inhibits extracellular edema, presumably by promoting the uptake of ions and water into glial cells. This is an essential activity of glia, since accumulation of K+ in the extracellular space around axons leads to hyperexcitability and heightened seizure susceptibility. Since peripheral nerves must continuously fire, this raised the question of why expression of fray and aquaporin 4 would be regulated by SIK3, which is best understood to integrate opposing signals such as feeding and fasting to control the levels of downstream transcriptional targets (Choi et al., 2015). If ion and water buffering were so essential, then why is expression of essential buffering proteins not constitutive? Our findings suggest that the downregulating glial K+ buffering capacity is a protective response that prevents pathological glial swelling. Activity-dependent glial swelling is a commonly observed physiological phenomenon, but when taking in an excess load of ions and water, glia may swell to the point of cytolysis (MacVicar et al., 2002). We have shown that glia with enhanced K+ buffering capacity undergo cell swelling that is exacerbated by extreme K+ stress. These glia also exhibit enhanced JNK pathway activity, which responds to a variety of stressors, including mechanical stress caused by cell stretching (Pereira et al., 2011). JNK plays a critical role in the regulation of apoptosis, suggesting that pathological swelling that results from enhanced K+ buffering could promote cell death (Dhanasekaran and Reddy, 2008). Taken together, these findings demonstrate that overactivity of glial SIK3 activity leads to intracellular edema while underactivity of glial SIK3 signaling leads to extracellular edema. Hence, SIK3 balances the need for robust extracellular buffering with the health of the glial cell. We suggest that the ability of the SIK3 pathway to integrate disparate upstream signals is important for maintaining this balance between an extracellular milieu conducive to neuronal firing with intracellular volume regulation that maintains glial health.\n\n### Dual actions of octopamine in controlling glial K+ buffering\n\nNorepinephrine is a stress hormone that can exert anticonvulsant effects in the mammalian nervous system (Szot et al., 1999). Moreover, norepinephrine regulates astrocyte transporter activity (Monai et al., 2019). In Drosophila, octopamine is structurally and functionally analogous to norepinephrine and regulates a variety of stress responses, including aggression, alertness, and starvation (Crocker and Sehgal, 2008; Suo et al., 2006; Zhou et al., 2008). Octopamine is also similar to norepinephrine in that it exerts dual effects on cellular responses by signaling through receptors with antagonistic functions (Koon and Budnik, 2012; Papaefthimiou and Theophilidis, 2011). In this study, we propose that octopamine bidirectionally controls SIK3-mediated glial K+ buffering in response to changes in neuronal excitability.\n\nLike its mammalian counterpart, octopamine is normally maintained at low levels and is released upon physiological stimuli to help the system mount a stress response. Octopamine release can be enhanced by a surge in the level of extracellular K+, suggesting that its concentration correlates with the level of K+ stress in the nervous system (Orchard and Lange, 1987). Here, we propose a model in which octopamine release links activity-dependent K+ stress to glial K+ buffering. This model is supported by a number of key findings. First, octopamine is required for SIK3 signaling and this regulation occurs through the inhibitory octopaminergic GPCR Oct\u03b21R. Second, elevated levels of either octopamine or K+ each inhibit the glial SIK3 pathway, and both of these effects require the stimulatory octopaminergic GPCR OAMB. Hence, elevated K+ works through octopaminergic signaling to regulate the SIK3 pathway and glial buffering. Finally, the glial SIK3 pathway is inhibited in the hyperexcitable eag,Sh mutant. We propose that basal levels of octopamine promote SIK3-dependent glial K+ buffering to cope with physiological K+ stress and maintain a healthy level of neuronal activity. When neurons become hyperexcitable, as would occur under pathological conditions, levels of extracellular K+ rise and more octopamine is released. High levels of octopamine will inhibit SIK3 activity and turn down glial K+ buffering, likely to protect glia from pathological cell swelling.\n\nThis model posits that different levels of octopamine differentially activate Oct\u03b21R and OAMB to exert these dual effects on glial K+ buffering. Oct\u03b21R couples to the inhibitory G\u03b1i protein, whereas OAMB can function through the excitatory G\u03b1s protein (Kim et al., 2013; Koon and Budnik, 2012). How might octopamine differentially signal through both Oct\u03b21R and OAMB when they bind to the same ligand, reside in the same cell, and have antagonistic functions? Potentially, Oct\u03b21R and OAMB could have different binding affinities for octopamine, with Oct\u03b21R having a higher affinity such that Oct\u03b21R is preferentially activated at low levels of octopamine. Inhibitory G\u03b1i-coupled Oct\u03b21R would decrease cAMP levels and inhibit PKA activity, thereby relieving the inhibition on SIK3 to upregulate glial K+ buffering capacity. Conversely, octopamine would bind to the lower affinity OAMB when octopamine levels are high, as would occur during hyperexcitability. High levels of octopamine signaling through the excitatory G\u03b1s-coupled OAMB would enhance PKA activity and downregulate the glial capacity to buffer K+ stress. Hence, different binding affinities would allow Oct\u03b21R and OAMB to be activated by different octopamine concentrations. A similar differential regulation via opposing octopaminergic receptors residing in the same cell is described at the larval NMJ, where octopamine signals through inhibitory Oct\u03b21R and excitatory Oct\u03b22R to bidirectionally control synaptic function (Koon and Budnik, 2012).\n\nWe have defined an octopaminergic circuit that links neuronal activity to glial K+ buffering to maintain K+ homeostasis and neuronal excitability. Neuromodulators such as octopamine are useful for integrating synaptic activity over time and space rather than signaling rapidly and locally like classical neurotransmitters. Moreover, altering the glial transcriptional response will be reasonably slow to change physiological function since such changes require transcription and translation. Hence, this system is likely tuned to respond to average neuronal activity rather than to transient changes in neuronal firing. This pathway may work in concert with additional mechanisms for rapid tuning of glial ion transporter function as described in mammalian astrocytes (Bellot-Saez et al., 2017).\n\nThis model for octopaminergic regulation of the glial SIK3-dependent ionic buffering program leaves open a number of important questions. First, is the octopamine released locally or does release from the central octopaminergic neurons diffuse widely to set the glial tone for ionic buffering? Second, while we showed that a glial octopamine receptor is necessary for pathway modulation by octopamine, it would also be interesting to test whether direct activation of octopaminergic neurons is sufficient to regulate the glial SIK3 pathway. Similarly, is direct inhibition of octopaminergic neurons capable of rescuing the whole animal phenotypes of the eag, Sh mutants? Third, while we have focused on octopaminergic regulation, in other systems the SIK3 pathway is regulated by additional upstream signals including the kinase Lkb1 and the insulin receptor (Choi et al., 2015). Input from these additional pathways would allow for regulation of glial ion and water buffering in locations that may not be accessible for octopaminergic neuromodulation. Finally, we have focused our analysis on peripheral nerves and peripheral glia. In future studies it will be important to assess the role of this SIK3 buffering program in the cortex glia that buffer ions around neuronal cell bodies.\n\n### Enhancing glial K+ buffering can dramatically suppress neuronal hyperexcitability\n\nWith hyperexcitability, waves of action potentials can lead to increases in extracellular K+ that, if not properly buffered, will lead to neuronal depolarization and further hyperexcitability (Kofuji and Newman, 2004). We explored the role of glial buffering in a paradigmatic Drosophila seizure mutant, eag,Sh, that exhibits dramatic neuronal hyperexcitability, seizure behaviors, and shortened life\u00a0span (Fergestad et al., 2006; Ganetzky and Wu, 1983). Although we would expect eag,Sh larvae to have an increased need for glial buffering, we found that the glial SIK3 signaling pathway is downregulated, likely as part of the glial protective response described above. Since downregulating the glial SIK3 pathway is sufficient to cause hyperexcitability and seizures, we tested whether this inhibition of SIK3 could be exacerbating the eag,Sh phenotypes. HDAC4 is the key repressor of SIK3-regulated glial K+ buffering, and so we activated SIK3 signaling by glial knockdown of HDAC4. Reactivation of the glial buffering program dramatically suppressed neuronal hyperexcitability, seizures, and shortened life\u00a0span in eag,Sh. This result is quite remarkable, since the neurons are still deficient for two extremely important K+ channels. Nonetheless, the pathological consequences for the organism are almost wholly mitigated by enhanced glial buffering. This highlights the potential of glial-centric therapeutic strategies for diseases of hyperexcitability.\n\n## Materials and methods\n\n### Drosophila stocks and genetics\n\nFly stocks were maintained at room temperature using standard techniques. Experimental crosses were raised at 25\u00b0C in 60% relative humidity. The following flies were used in this study: UAS-HDAC4 (a gift from Biao Wang); tdc2R054 and tbhnM18 are gifts from Vivian Budnick; dVMATP1\u00a0(a gift from David Krantz); puc-lacZ; UAS-mito-GFP; eag1 shaker120 (a gift from Troy Littleton). Flies obtained from the Bloomington Drosophila Stock Center include Repo-GAL4, Nrv2-Gal4, UAS-LexA RNAi (RRID:BDSC_67945), UAS-PKA-C1 (RRID:BDSC_35554), UAS-PKA-R1 RNAi (RRID:BDSC_27308), UAS-Gs\u03b1. Q215L (RRID:BDSC_6490), UAS-nls-GFP (RRID:BDSC_4775), UAS-HDAC4 RNAi (RRID:BDSC_28549, BDSC_34774), UAS-Oct\u03b21R RNAi (RRID:BDSC_31107), and UAS-OAMB RNAi (RRID:BDSC_31171). UAS-SIK3 RNAi (KK 106268) flies were obtained from the Vienna Drosophila Resource Center. In GAL4 experiments, unless otherwise noted, control flies were generated by crossing virgin females with the GAL4 driver to UAS-LexA RNAi male flies.\n\n### Immunocytochemistry\n\nThird instar larvae were dissected in phosphate-buffered saline (PBS) and immediately fixed with either Bouin\u2019s fixative for 10 min or 4% paraformaldehyde for 20 min at room temperature. Larval preps were then washed 3\u00d7\u00a0for 10 min with PBS + 0.1% Triton X-100 (PBST) and blocked for 30 min with PBST + 5% goat serum. To assess peripheral nerve morphology, larvae were incubated in Cy3-conjugated goat \u03b1-HRP antibody (1:1000; Jackson ImmunoResearch, cat# 123-165-021, RRID:AB 2338959) for 60 min at room temperature. In all other experiments, larvae were incubated overnight at 4\u00b0C in the following primary antibodies: mouse \u03b1-FLAG antibody (1:1000; Sigma, cat# F3165, RRID:AB_259529); rabbit \u03b1-FLAG (1:1000; Cell Signaling, cat# 147935); rabbit \u03b1-RFP (1:500; Clontech, cat# 632496, RRID:AB_10013483); mouse \u03b1-lacZ antibody (1:100; Developmental Studies Hybridoma Bank, cat# 40-1a, RRID:AB_2314509). On the following day, larvae were washed with PBST for 10 min 3\u00d7 and incubated for 90 min at room temperature in the following secondary antibodies: Cy3 goat \u03b1-mouse (1:1000; Jackson ImmunoResearch, cat# 115-165-146, RRID:AB_2338680); Cy3 goat \u03b1-rabbit (1:1000; Invitrogen, cat# A-10520, RRID:AB_2534029); AlexaFluor 488-conjugated goat \u03b1-rabbit (1:1000; Invitrogen, cat# A-11034, RRID:AB_2576217); 647 AffiniPure goat \u03b1-HRP (1:1000; Jackson ImmunoResearch, cat# 123-065-021). After 3 \u00d7 10 min wash in PBST, larvae were transferred to be equilibrated in 70% glycerol in PBS for at least 1\u00a0hr. Larvae were then mounted in Vectashield (Vector Laboratories) and ready to be imaged.\n\n### Imaging and analysis\n\n#### Peripheral nerve morphology\n\nLarvae peripheral nerves were stained for \u03b1-HRP and imaged using 20\u00d7/0.60 NA and 40\u00d7/1.15 NA oil immersion objectives on a Leica TCS SPE confocal microscope, a Leica DFC7000 T camera, and the LAS X software. We acquired images for all genotypes and conditions in the same experiment in one sitting using identical laser power, gain, and offset settings. Images shown are maximal Z-projections of confocal stacks, except for thin optical sections used to highlight glial swellings. Photoshop CC (2.2, Adobe) and Illustrator (15.0.0, Adobe) were used to minimally process the images in preparation for final figures. Nerve swellings were quantified by identifying and scoring regions with a maximum nerve width\u00a0>15 \u00b5m. The total number of nerve swellings was measured for each larva and subsequently averaged for each genotype and condition.\n\n#### HDAC4 localization\n\nLarvae were stained for FLAG-tagged HDAC4 in glia and GFP-labeled glial nuclei. For wrapping glia, glial nuclei were stained with mouse \u03b1-Repo antibody, HDAC4 was labeled with rabbit \u03b1-FLAG, and nerves were labeled with 647 \u03b1-HRP antibody. Their peripheral nerves were imaged using 40\u00d7/1.15 NA oil immersion objective on the confocal microscope and other equipment mentioned above. Images were acquired under identical settings and shown as maximal Z-projections of confocal stacks. Fluorescence intensity of FLAG-tagged HDAC4 was analyzed using Image J (1.52 k, National Institute of Health). The method used to quantify HDAC4 localization in glial nuclei and cytosol was described in a previous study. In brief, we used the GFP channel to generate a nuclear mask and applied this mask to the FLAG channel to selectively measure HDAC4 levels in glial nuclei. To assess HDAC4 levels in glial cytoplasm, FLAG signals in the \u2018non-nuclei\u2019 areas were also analyzed by subtracting the mask from total area of the peripheral nerve. For wrapping glia, we used the Repo channel to generate a nuclear mask and applied this to the FLAG signals in the \u2018non-nuclei\u2019 areas marked by HRP. The nuclear:cytoplasmic ratio of HDAC4 intensity was then calculated using these two measurements. A minimum of 60 independent peripheral nerves was examined for each genotype and condition and normalized to the control.\n\n#### JNK activity\n\npuc-lacZ was used as a nuclear-localized transcriptional reporter of JNK pathway activity. Larvae expressing puc-lacZ were stained for lacZ and GFP-labeled glial nuclei, and their peripheral nerves were imaged using the methods described above. To quantify the expression level of puc-lacZ, glial nuclei were selected using the GFP channel and assessed on the intensity of lacZ signals. A minimum of 20 glial nuclei from different nerves were assessed for each genotype and then normalized to the control.\n\n### High octopamine/high K+ experiments\n\n#### Ex vivo assay\n\nBefore each experiment, octopamine hydrochloride (Sigma-Aldrich, cat# O0250) or tyramine hydrochloride (Sigma-Aldrich, cat# T2879) was resuspended from powder using HL3.1 solution with 0.35 mM Ca2+ to reach a concentration of 30 mg/ml. Third instar larvae were dissected in HL3.1 solution and then immediately incubated in high octopamine or TA solution for 2 min at room temperature. Living larval preps were then rinsed with HL3.1 solution 3\u00d7 before they were fixed in 4% paraformaldehyde. Larvae were further processed and assessed on HDAC4 localization using standard techniques as described above.\n\n#### Feeding assay\n\nOctopamine hydrochloride or tyramine hydrochloride was resuspended using PBS and added to freshly made Formula 4\u201324 Instant Drosophila Medium Blue Food (Carolina, cat# 173210) to reach a final concentration of 5 mg/ml. Experimental crosses were made on Blue Food such that larvae were always exposed to the drug until being assessed on peripheral nerve morphology or HDAC4 localization. In high salt experiments, larvae were raised on Blue Food supplemented with 200 mM KCl or NaCl. Control animals were larvae of the same genotype that were raised on Blue Food containing only PBS.\n\n### Electrophysiology\n\nThird instar larvae were dissected in Ca2+-free HL3.1 buffer solution (70 mm NaCl, 5 mm KCl, 8 mm MgCl2, 10 mm NaHCO3, 5 mm trehalose, 5 mm HEPES, and 0 mm Ca++, pH 7.2). Larval fillets were washed with and recorded in HL3.1 solution with 0.35 mM Ca2+. Spontaneous EJPs and mEJPs were recorded from larval muscle 6 in segments A2, A3, and A4 using borosilicate sharp electrodes. In any given experiment, a minimum of 50 consecutive events were measured over a passive recording window. MiniAnalysis Software (Synaptosoft, Decatur, GA) was used to analyze\u00a0\u226475 consecutive events or a total recording window of 120 s, whichever happened first. All events were filtered by amplitude and events larger than 4 mV were classified as \u2018spontaneous EJPs\u2019. The number of these events was divided by the exact length of recording to calculate the frequency of spontaneous EJPs. In all electrophysiology experiments, cells were chosen that had a resting membrane potential between \u221260 and \u221280 mV and muscle input resistance larger than 5 M\u2126.\n\n### Behavioral analysis\n\nAdult virgin flies were collected within 24 hr post-eclosion and rested for 2 hr before being tested for bang sensitivity. They were transferred to an empty culture vial in groups of 5-10 and mechanically stimulated for ~15 s using a vortex mixer (Fisher Scientific). In the same vial, these flies were then assessed for seizure behaviors that lasted at least 1\u00a0s, including shuddering, leg shaking, spinning flight, and contorted posture. The number of flies seizing was recorded every 10 s for at least 2 min, and a minimum of 50 flies were tested for each genotype and condition.\n\n### Life span assay\n\nAdult virgin flies were collected within 24 hr of eclosion and maintained in groups of 10 in standard culture vials. These vials were kept at 25\u00b0C and 60% humidity on a 12:12 hr light-dark cycle. Living flies were transferred to fresh food and their numbers were recorded every 2 days for up to 80 days. A minimum of 50 flies were tested for each genotype.\n\n### Experimental design and statistical analysis\n\nFor immunocytochemical experiments, a minimum of 10 larvae were assessed for each genotype and condition. For electrophysiology experiments, data were collected from at least seven independent cells derived from a minimum of four different larvae. Here, each NMJ is consider an n of 1, as each motor axon is restricted to its own muscle cell. For behavioral studies, a minimum of 50 and 100 flies were assessed per genotype, respectively. Detailed information on n used for each experiment is included in the figure legends. Male and female animals were used in comparable numbers except for behavioral and life\u00a0span assays, in which male adult flies are used. There are no statistical differences in results between the two groups.\n\nAll data are shown as mean \u00b1 SEM. Data had passed the D'Agostino-Pearson and the Shapiro-Wilk test for normality before being evaluated for statistical significance. Statistical analyses were performed using Prism (7.02, GraphPad), including one-way ANOVA test with Tukey's multiple comparisons, two-way ANOVA test with Tukey's multiple comparisons, and unpaired two-tailed Student's t-test with unequal variance. Results shown represent data pooled from at least two independent experiments performed on larvae or adult flies derived from different crosses. Researchers were blinded to genotype and treatment condition during all experiments and data analyses.\n",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "658bbf02-170e-466d-bd6e-8b9ad496134d",
+      "submission_id": "c08f23b3-3cf7-435a-981a-df99693b4c80",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Graeme W Davis, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62606.sa1](https://doi.org/10.7554/eLife.62606.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this paper, the authors examine the function of a salt-inducible-kinase (SIK3) pathway, operating in Drosophila glia, in response to K+ stress. The authors expand on a pathway they previously described, showing that glial SIK3 functions downstream of neuronal octopamine, a stress ligand. The glial SIK3 pathway is either activated or inhibited, depending on the type of K+ stress.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Bidirectional regulation of glial potassium buffering: glioprotection versus neuroprotection\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Graeme Davis as Reviewing Editor and Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: J Troy Littleton (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThe manuscript by Li and colleagues describes a very nice follow-up analysis to the DiAntonio lab's original discovery of SIK3 AMPK control of a HDAC4-dependent transcriptional program for K+ buffering capacity in Drosophila wrapping glia. Drosophila has been used as a model system to study molecular functions of glia for over two decades. While there are clear differences with vertebrate glia, the similarities appear meaningful and powerful for the discovery of conserved functional principles. In general, glial control of excitability has been a bit of a vague area of research, and precise mechanisms have been difficult to pin down. The work here and in the authors' previous paper does a good job in implicating specific signaling systems in the response. Overall, all of the reviewers are very positive about the work and congratulate the authors for their nice study. There was consensus among the reviewers regarding a few major comments that should be address, listed below. revision.\n\nEssential revisions:\n\n1) It is not clear in the title, or even in the Abstract that the model system being used is Drosophila. Drosophila is mentioned once in the Abstract with respect to the hyperexcitability model, but not for the rest. Because flies are not necessarily the same as mammals, I think this needs to be made very clear.\n\n2) Given point 1, in the Introduction, the authors really need to explain which fly glia they are looking at, and make the case for similarity with vertebrates based on existing knowledge.\n\n3) In their prior work, the authors demonstrated the SIK3 pathway primarily occurred in wrapping glia that surround axons using wrapping glia-specific GAL4 drivers. That distinction is missing in the current study, as the pan-glial REPO-GAL4 driver was used for all the experiments described here. It seems essential for the authors to define the glial sub-type specific requirements for a number of reasons. For example, the data presented suggest that the blood-brain barrier forming subperineurial glial cells are required given the fast reaction of HDAC4 localization upon bath application of octopamine.\n\n4) Where are the different receptors (Oct\u00df1R and OAMB) localized? For both genes Trojan Gal4 insertions (or aGFP converted MiMIC) are available.\n",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "29154257-3538-48a8-92c4-b86496324ff1",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C1",
+      "claim": "Glia modulate neuronal excitability and seizure sensitivity by maintaining potassium and water homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Glia modulate neuronal excitability and seizure sensitivity by maintaining potassium and water homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a foundational claim about glial function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "ceac2091-bbf0-497a-9597-56e61f541657",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C2",
+      "claim": "A salt inducible kinase 3 (SIK3)-regulated gene expression program controls the glial capacity to buffer K+ and water in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "A salt inducible kinase 3 (SIK3)-regulated gene expression program controls the glial capacity to buffer K+ and water in Drosophila, however upstream regulatory mechanisms are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Li et al., 2019) as mentioned in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "9a8545f5-53ad-453b-9a75-17af7a440929",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C3",
+      "claim": "Under basal conditions, octopamine functions through the inhibitory octopaminergic G-protein-coupled receptor (GPCR) Oct\u03b2R to upregulate glial buffering capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Under basal conditions, octopamine functions through the inhibitory octopaminergic G-protein-coupled receptor (GPCR) Oct\u03b2R to upregulate glial buffering capacity, while under pathological K+ stress, octopamine signals through the stimulatory octopaminergic GPCR OAMB1 to downregulate the glial buffering program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 2, showing that loss of Oct\u03b2R from glia causes nerve swellings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "87f8900d-7fd4-4a8d-a84d-a9588f6d9062",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C4",
+      "claim": "Under pathological K+ stress, octopamine signals through the stimulatory octopaminergic GPCR OAMB1 to downregulate the glial buffering program.",
+      "claim_type": "EXPLICIT",
+      "source": "Under basal conditions, octopamine functions through the inhibitory octopaminergic G-protein-coupled receptor (GPCR) Oct\u03b2R to upregulate glial buffering capacity, while under pathological K+ stress, octopamine signals through the stimulatory octopaminergic GPCR OAMB1 to downregulate the glial buffering program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 3 showing that high K+ diet promotes HDAC4 nuclear localization and this effect is blocked by OAMB knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "bc47c8d8-5f81-4c4f-9af5-c3bdbc202c1c",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C5",
+      "claim": "Failure to downregulate the glial buffering program leads to intracellular glia swelling and stress signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Failure to downregulate this program leads to intracellular glia swelling and stress signaling, suggesting that turning down this pathway is glioprotective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Figure 4 showing that loss of OAMB or HDAC4 from glia causes non-localized edema and increased JNK activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "80720e9c-fcd0-494e-ab71-a0420f30ded3",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C6",
+      "claim": "In the eag shaker Drosophila seizure model, the SIK3-mediated buffering pathway is inactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "In the eag shaker Drosophila seizure model, the SIK3-mediated buffering pathway is inactivated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Figure 5A-B showing increased HDAC4 nuclear localization in eag,Sh mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "d58f953c-9fa4-4ea3-b4e5-ccffdee9dfab",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C7",
+      "claim": "Reactivation of the glial buffering program dramatically suppresses neuronal hyperactivity, seizures, and shortened life span in the eag shaker mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactivation of the glial buffering program dramatically suppresses neuronal hyperactivity, seizures, and shortened life span in this mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Figure 5E-H showing that glial knockdown of HDAC4 in eag,Sh mutants reduces spontaneous EJPs, seizure behavior, and extends lifespan.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "36eaf93d-de15-49f0-a292-8a4448bd3f44",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C8",
+      "claim": "More than one-third of epilepsy patients suffer from medically intractable seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more than one-third of epilepsy patients suffer from medically intractable seizures, while others experience debilitating side effects as neuron-targeting treatments often interfere with healthy neuronal functions (Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Chen et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "4d42af09-7093-4957-9bf8-3b63112a1c8d",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C9",
+      "claim": "Neuron-targeting treatments often interfere with healthy neuronal functions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more than one-third of epilepsy patients suffer from medically intractable seizures, while others experience debilitating side effects as neuron-targeting treatments often interfere with healthy neuronal functions (Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Chen et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "849c9cb9-26f2-4f34-9986-d20914d706fd",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C10",
+      "claim": "Glia buffer K+ stress by taking in excess K+ ions and osmotically obliged water molecules from the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "Glia buffer K+ stress by taking in excess K+ ions and osmotically obliged water molecules from the extracellular space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established glial function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "267f4684-c2af-43ef-949f-496bd62410bd",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C11",
+      "claim": "SIK3 is an AMPK family kinase that sequesters histone deacetylase 4 (HDAC4) in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "SIK3 (salt inducible kinase 3) is an AMPK family kinase that sequesters histone deacetylase 4 (HDAC4) in the cytoplasm, thereby promoting myocyte enhancer-factor 2 (Mef2)-dependent expression of K+ and water transport molecules, including the Drosophila orthologs of aquaporin-4 and SPAK, a kinase necessary for activating the Na+/K+ transporter NKCC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Li et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "d9f0d26d-8709-4ed8-977f-7f8327449278",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C12",
+      "claim": "SIK3 promotes myocyte enhancer-factor 2 (Mef2)-dependent expression of K+ and water transport molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "SIK3 (salt inducible kinase 3) is an AMPK family kinase that sequesters histone deacetylase 4 (HDAC4) in the cytoplasm, thereby promoting myocyte enhancer-factor 2 (Mef2)-dependent expression of K+ and water transport molecules, including the Drosophila orthologs of aquaporin-4 and SPAK, a kinase necessary for activating the Na+/K+ transporter NKCC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Li et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "e1184499-83e6-457f-8829-7ae7a23ae58a",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C13",
+      "claim": "The glial SIK3 program suppresses extracellular nerve edema and prevents neuronal hyperexcitability and seizure in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "This glial program suppresses extracellular nerve edema and prevents neuronal hyperexcitability and seizure in Drosophila, suggesting that it plays an important role in glial maintenance of K+ and water homeostasis and is required for a healthy level of neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Li et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "f21f7beb-175e-4cb8-9095-31941c2635f0",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C14",
+      "claim": "Wrapping glia ensheathe axons in the Drosophila peripheral nervous system (PNS) and are akin to vertebrate non-myelinating Schwann cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This glial program is best characterized in wrapping glia, which ensheathe axons in the Drosophila peripheral nervous system (PNS) and are akin to vertebrate non-myelinating Schwann cells (Bittern et al., 2020), and so are well positioned to regulate the ionic composition around PNS axons (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bittern et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "3fa3ebb3-2d73-45ea-b49c-d113eba1934d",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C15",
+      "claim": "SIK3 integrates signals from different signal transduction pathways, coupling extracellular signals to changes in cellular responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In other contexts, SIK3 integrates signals from different signal transduction pathways, coupling extracellular signals to changes in cellular responses (Choi et al., 2015; Wang et al., 2011; Wein et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Choi et al., 2015; Wang et al., 2011; Wein et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "0750d91b-0a9d-4b5f-a262-8cda4f7500d6",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C16",
+      "claim": "PKA directly inhibits SIK3 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these pathways is G-protein-coupled receptor (GPCR)-cyclic AMP (cAMP)-protein kinase A (PKA) signaling, in which PKA directly inhibits SIK3 activity (Wang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "a6e7232e-f34f-4978-92f5-496b465ee182",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C17",
+      "claim": "PKA hyperactivity in glia disrupts ionic and water homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Both manipulations phenocopied the loss of SIK3 in glia and induced dramatic localized edema in larval peripheral nerves, suggesting that PKA hyperactivity in glia disrupts ionic and water homeostasis (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A-B demonstrating nerve swellings with PKA overexpression or PKA-R1 knockdown in glia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "b0069002-6db1-48ee-88e1-c4d92aee32be",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C18",
+      "claim": "Overexpression of constitutively active G\u03b1s in glia recapitulates the characteristic nerve swellings seen in SIK3 loss-of-function mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PKA is often regulated by GPCR-cAMP signaling, we tested if overexpression of constitutively active G\u03b1s also phenocopies SIK3 loss-of-function (LOF) in glia. Indeed, this manipulation recapitulates the characteristic nerve swellings (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "b2581ae0-5cb9-4e1d-8f4a-502079dfb12d",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C19",
+      "claim": "Glial-specific knockdown of HDAC4 fully suppresses the nerve swellings caused by G\u03b1s overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, glial-specific knockdown of HDAC4 fully suppresses the nerve swellings caused by G\u03b1s overexpression (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "252141de-c3ca-440b-aba3-c4ff6e3236a5",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C20",
+      "claim": "G\u03b1s and PKA regulate HDAC4 localization to maintain glial K+ homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we tested the model that G\u03b1s and PKA also regulate HDAC4 localization to maintain glial K+ homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis tested by the experiments shown in Figure 1D-F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "fd08238a-85a2-4e86-a69d-3a73a80e974b",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C21",
+      "claim": "Overexpression of PKA-C1 or G\u03b1s in glia causes HDAC4 nuclear localization to increase dramatically, resulting in an ~6-fold increase in the nucleo:cytoplasmic HDAC4 ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "We then overexpressed PKA-C1 or G\u03b1s in glia expressing FLAG-tagged HDAC4 (Figure 1D\u2013E). In both cases, HDAC4 nuclear localization increases dramatically, resulting in an ~6-fold increase in the nucleo:cytoplasmic HDAC4 ratio.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "2fdefca2-a9f3-4920-9e9b-e848fb6e8cc3",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C22",
+      "claim": "Glial overexpression of FLAG-tagged HDAC4 causes HDAC4 hyperactivity in glia and induces nerve swellings.",
+      "claim_type": "EXPLICIT",
+      "source": "While glial overexpression of FLAG-tagged HDAC4 allows visualization of HDAC4 localization, it also causes HDAC4 hyperactivity in glia and induces nerve swellings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experimental system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "fbec2706-1032-43d2-a72d-7fe4f1189662",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C23",
+      "claim": "Expression of G\u03b1s and PKA-C1 further increases the number of nerve swellings in glia overexpressing HDAC4.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the re-localization of HDAC4 into the nucleus induced by expression of G\u03b1s and PKA-C1, these manipulations further increase the number of nerve swellings (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "233b76c1-2135-4bd4-89b2-0caacaa34f2a",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C24",
+      "claim": "\u03b2-adrenergic signaling plays a role in cAMP-dependent regulation of SIK3 activity in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of adipocytes have revealed a role for \u03b2-adrenergic signaling in cAMP-dependent regulation of SIK3 activity (Berggreen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Berggreen et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "5db8ddc4-0818-4383-8cf9-b5b423c38454",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C25",
+      "claim": "Norepinephrine is a stress hormone that suppresses seizures in several mammalian models of epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Norepinephrine is a stress hormone that suppresses seizures in several mammalian models of epilepsy (Mason and Corcoran, 1979; Szot et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mason and Corcoran, 1979; Szot et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "a242401a-e20b-4c41-9464-0afed97cfa74",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C26",
+      "claim": "Octopamine is a neuromodulator that regulates stress responses such as aggression and starvation resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "The fly equivalent, octopamine, is a neuromodulator that regulates stress responses such as aggression and starvation resistance (Suo et al., 2006; Zhou et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Suo et al., 2006; Zhou et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "dc315457-f472-42e9-a664-5cd06e084013",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C27",
+      "claim": "Octopamine synthesis occurs in a well-defined small subset of neurons, in which tyrosine is processed into tyramine and subsequently into octopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Octopamine synthesis occurs in a well-defined small subset of neurons, in which tyrosine is processed into tyramine and subsequently into octopamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about octopamine biosynthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "d7fc4338-3eaf-4d24-817b-eb5044d01d66",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C28",
+      "claim": "Tyrosine decarboxylase 2 (tdc2) and tyramine beta-hydroxylase (t\u03b2h) catalyze the two-step process of octopamine synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This two-step process is catalyzed by tyrosine decarboxylase 2 (tdc2) and tyramine beta-hydroxylase (t\u03b2h), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about octopamine biosynthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "e5631c8b-9235-4f40-bbb5-0b366a8d467a",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C29",
+      "claim": "Vesicular monoamine transporters (VMATs) package octopamine into secretory vesicles for later release.",
+      "claim_type": "EXPLICIT",
+      "source": "Vesicular monoamine transporters (VMATs) then package octopamine into secretory vesicles for later release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about octopamine packaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "a108d7ec-8e73-4c33-9387-6879805b2a8c",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C30",
+      "claim": "HDAC4 nuclear localization increases dramatically in octopamine synthesis mutants tdc2R054 and t\u03b2hnM18.",
+      "claim_type": "EXPLICIT",
+      "source": "HDAC4 nuclear localization increases dramatically in octopamine synthesis mutants, tdc2R054 and t\u03b2hnM18, suggesting that SIK3 is inhibited and so cannot sequester HDAC4 in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "0fb65fa9-cd40-4b7e-b00a-f4e3ced0a9ff",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C31",
+      "claim": "Octopamine synthesis mutations enhance the nerve swellings caused by HDAC4 hyperactivity in glia.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutations also enhance the nerve swellings caused by HDAC4 hyperactivity in this glial background (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "55319652-37f7-498d-bb81-dd47df6538f4",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C32",
+      "claim": "dVMAT mutants have a defect in octopamine release.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar results in dVMAT mutants (Simon et al., 2009), which cannot load octopamine into secretory vesicles and thereby have a defect in octopamine release (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to Simon et al., 2009 and experimental data shown in Figure 2A-C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "66f31b12-455a-46ab-a628-b9dec2533945",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C33",
+      "claim": "Glial knockdown of PKA-C1 potently reverts HDAC4 nuclear localization in tdc2R054 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, glial knockdown of PKA-C1 potently reverts HDAC4 nuclear localization in tdc2R054 mutants, pointing to PKA hyperactivity as the cause of HDAC4 mislocalization in octopamine synthesis mutants (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "c609a9b9-a4ad-4662-b468-814da1d8bdbf",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C34",
+      "claim": "2 min exposure to octopamine induces rapid re-localization of HDAC4 to the cytosol in tdc2R054 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 2 min exposure to octopamine induces rapid re-localization of HDAC4 to the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "e32a6f0e-4e6c-487d-a6c6-7f8fe6137f99",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C35",
+      "claim": "Octopamine is sufficient to activate the SIK3 signaling pathway in glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, octopamine is sufficient to activate the SIK3 signaling pathway in glia, and the rapid time course strongly suggests that octopamine is acting directly on the glia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E-F demonstrating rapid HDAC4 relocalization with octopamine treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "a8c8dfc9-fbf0-4ac9-b49f-c0773ebaa7f6",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C36",
+      "claim": "RNAi-mediated glial knockdown of Oct\u03b21R results in localized nerve edema that resembles SIK3 LOF mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "From this screen, RNAi-mediated glial knockdown of Oct\u03b21R results in the characteristic localized nerve edema phenotype that resembles SIK3 LOF mutants (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "42614706-dff8-419b-be9d-374b79371df3",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C37",
+      "claim": "Glial knockdown of either PKA-C1 or HDAC4 potently suppresses nerve swellings in larvae deprived of Oct\u03b21R in glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, glial knockdown of either PKA-C1 or HDAC4 potently suppresses nerve swellings in larvae deprived of Oct\u03b21R in glia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "774648ad-a913-4efa-881d-4343abab9e9f",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C38",
+      "claim": "Octopamine functions through Oct\u03b21R to inhibit PKA, thereby de-repressing SIK3 to sequester HDAC4 in the cytoplasm and promote proper K+ and water buffering.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings strongly support the model that octopamine functions through Oct\u03b21R to inhibit PKA, thereby de-repressing SIK3 to sequester HDAC4 in the cytoplasm and promote proper K+ and water buffering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model inferred from the experimental data in Figure 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "a29a0867-72a3-4d52-b785-6c12ef3e966d",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C39",
+      "claim": "In Drosophila, octopamine can activate distinct receptors that are localized in the same cell yet have antagonistic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, octopamine can activate distinct receptors that are localized in the same cell yet have antagonistic functions, potentially allowing for differential responses to low and high levels of octopamine (Koon and Budnik, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Koon and Budnik, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "d8e0b5d5-2049-4b17-9223-a261b5848288",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C40",
+      "claim": "A high octopamine diet increases the susceptibility of wild-type larvae to nerve edema, with ~70% of larvae developing swellings in peripheral nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a high octopamine diet increases the susceptibility of wild-type larvae to nerve edema, with ~70% of larvae developing swellings in peripheral nerves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "fac0956d-c0db-49e2-ad67-323558a42532",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C41",
+      "claim": "PKA-C1 knockdown and HDAC4 knockdown selectively in glia both significantly reduce the frequency of nerve swellings in larvae raised on a high octopamine diet.",
+      "claim_type": "EXPLICIT",
+      "source": "These nerve swellings can be suppressed by enhancing the glial SIK3 signaling pathway, as PKA-C1 knockdown and HDAC4 knockdown selectively in glia both significantly reduce the frequency of nerve swellings in larvae raised on a high octopamine diet (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "58e034b3-75be-45a6-a749-e8371e5595e9",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C42",
+      "claim": "A high octopamine diet dramatically increases HDAC4 nuclear localization in glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a high octopamine diet dramatically increases HDAC4 nuclear localization in glia (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "ed623857-a4e0-4666-a140-010158abe4a9",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C43",
+      "claim": "Glial knockdown of PKA-C1 completely abolishes octopamine-induced nuclear shuttling of HDAC4.",
+      "claim_type": "EXPLICIT",
+      "source": "This regulation of HDAC4 localization by octopamine depends on PKA activity, as glial knockdown of PKA-C1 completely abolishes octopamine-induced nuclear shuttling of HDAC4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "ea014df1-4e2a-4a29-b591-f29640d40da0",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C44",
+      "claim": "With a high octopamine diet, HDAC4 in wrapping glia is present at much lower levels in the cytoplasm leading to a high nuclear:cytoplasmic ratio of HDAC4.",
+      "claim_type": "EXPLICIT",
+      "source": "With a high octopamine diet, HDAC4 in wrapping glia is present at much lower levels in the cytoplasm leading to a high nuclear:cytoplasmic ratio of HDAC4 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "7b021384-820f-4bbb-8a02-a76dd763e14b",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C45",
+      "claim": "OAMB is an octopamine receptor coupled to a G\u03b1s protein that activates adenylyl cyclase to increase cAMP-PKA signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "OAMB is an octopamine receptor coupled to a G\u03b1s protein that activates adenylyl cyclase to increase cAMP-PKA signaling (Kim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kim et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "96575a52-f2ff-4d9b-9efa-de9505e9650b",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C46",
+      "claim": "Glial knockdown of OAMB potently blocks HDAC4 nuclear localization in larvae raised on a high octopamine diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Glial knockdown of OAMB potently blocks HDAC4 nuclear localization in larvae raised on a high octopamine diet, demonstrating that high levels of octopamine act directly on glia through OAMB to inhibit the SIK3 pathway and turn down glial K+ buffering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "628a6bda-239b-4753-87e9-ee43f35edf62",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C47",
+      "claim": "Octopamine is normally maintained at a low level and released as a stress signal during bouts of high neuronal activity or in response to high K+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Like its mammalian counterpart norepinephrine, octopamine is normally maintained at a low level and released as a stress signal during bouts of high neuronal activity or in response to high K+ levels (Orchard and Lange, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Orchard and Lange, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "413f6000-de64-4998-b40e-9156719657d3",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C48",
+      "claim": "A high K+ diet dramatically increases HDAC4 accumulation in the glial nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a high K+ diet mimics a high octopamine diet and dramatically increases HDAC4 accumulation in the glial nuclei (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "53516732-2a79-4a99-b8f7-6ed683d46fb2",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C49",
+      "claim": "Glial knockdown of the octopamine receptor OAMB potently suppresses HDAC4 nuclear localization induced by high K+ diet.",
+      "claim_type": "EXPLICIT",
+      "source": "This regulation of HDAC4 localization is potently suppressed by glial knockdown of the octopamine receptor OAMB, demonstrating that sustained K+ stress requires octopamine signaling to alter SIK3 pathway activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "93b5f85f-2fd6-4309-a8bf-8951becc553f",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C50",
+      "claim": "Drosophila and mouse mutants with glial swelling exhibit an increase in nerve width along the entire length of their peripheral nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila and mouse mutants with glial swelling exhibit an increase in nerve width along the entire length of their peripheral nerves (Byun and Delpire, 2007; Rusan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Byun and Delpire, 2007; Rusan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "bbd18e1a-1c2a-4ec7-9662-3b66244ba171",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C51",
+      "claim": "Glial knockdown of OAMB results in a 'non-localized' nerve edema phenotype in both larvae raised on control diet and those on a high K+ diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we raised larvae on control diet or a diet supplemented with 200 mM KCl and examined peripheral nerve morphology. Glial knockdown of OAMB results in a 'non-localized' nerve edema phenotype in both larvae raised on control diet and those on a high K+ diet (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "b7f59ad3-8383-4fc0-9821-dbbe9e411d05",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C52",
+      "claim": "HDAC4 LOF in glia induces a non-localized edema phenotype, but only when larvae were provided with K+ stress by being raised on a high K+ diet.",
+      "claim_type": "EXPLICIT",
+      "source": "HDAC4 LOF in glia induces a similar edema phenotype, but only when larvae were provided with K+ stress by being raised on a high K+ diet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "a07cb5d8-99aa-431e-9e83-4284139bf351",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C53",
+      "claim": "Thin optical sections of nerves with OAMB or HDAC4 knockdown in glia revealed a large increase in intracellular glial cytoplasm that is indicative of increased glial volume.",
+      "claim_type": "EXPLICIT",
+      "source": "To directly test if this phenotype reflects edema inside the glia, we knocked down OAMB or HDAC4 in glia labeled with cytoplasmic RFP. Thin optical sections of nerves with OAMB or HDAC4 knockdown in glia revealed a large increase in intracellular glial cytoplasm that is indicative of increased glial volume (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "2cb2d1b2-cb38-461d-9b2c-9ad1cade1805",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C54",
+      "claim": "A constitutively active K+ buffering program causes excess uptake of ions and osmotically obliged water and results in glial cellular swelling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support our hypothesis that a constitutively active K+ buffering program causes excess uptake of ions and osmotically obliged water and results in glial cellular swelling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data in Figure 4A-C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "582fd09b-27ac-4419-8eed-e68927f896e6",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C55",
+      "claim": "The c-Jun N-terminal kinase (JNK) is a classic stress kinase activated by a variety of cell stressors including the mechanical stress of cell stretching.",
+      "claim_type": "EXPLICIT",
+      "source": "The c-Jun N-terminal kinase (JNK) is a classic stress kinase activated by a variety of cell stressors including the mechanical stress of cell stretching (Pereira et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pereira et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "86fb3997-f201-4940-a2d0-3aaca9f37b98",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C56",
+      "claim": "SIK3 pathway activation by glial-specific knockdown of either OAMB or HDAC4 dramatically increases JNK activity, resulting in ~3-fold increase in puc-lacZ signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SIK3 pathway activation by glial-specific knockdown of either OAMB or HDAC4 dramatically increases JNK activity, resulting in ~3-fold increase in puc-lacZ signal (Figure 4D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "b98cbfe4-79d0-480c-ad7b-5979c987a6f6",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C57",
+      "claim": "Constitutive activation of the SIK3 K+ and water buffering program causes intracellular glial swelling and activates a molecular stress response pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we conclude that constitutive activation of the SIK3 K+ and water buffering program causes intracellular glial swelling and activates a molecular stress response pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data in Figure 4.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "fcdfed38-7d58-4d7f-a56d-a0103fcae265",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C58",
+      "claim": "eag shaker (eag,Sh) is mutant for two voltage-gated K+ channels and displays dramatic neuronal hyperexcitability, seizures, and a very short life span.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed a classic fly seizure model, eag shaker (eag,Sh), which is mutant for two voltage-gated K+ channels and displays dramatic neuronal hyperexcitability, seizures, and a very short life span (Fergestad et al., 2006; Ganetzky and Wu, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fergestad et al., 2006; Ganetzky and Wu, 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "d6affc09-3e8a-4a0e-8046-bed771b3fd76",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C59",
+      "claim": "In the eag,Sh mutant, there is greatly enhanced HDAC4 nuclear localization, demonstrating inhibition of the glial SIK3 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In the eag,Sh mutant, there is greatly enhanced HDAC4 nuclear localization, demonstrating inhibition of the glial SIK3 pathway (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "8fea3f8f-039d-4f0a-b3c1-c11fee948ca3",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C60",
+      "claim": "Loss of eag and Shaker exacerbates the localized nerve edema induced by HDAC4 hyperactivity in glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, loss of eag and Shaker exacerbates the localized nerve edema induced by HDAC4 hyperactivity in this glial background (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "ae86d35a-6c77-450b-9182-0819134e19b5",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C61",
+      "claim": "Eag,Sh mutants exhibit down-turned wings, a phenotype commonly observed in Drosophila hyperexcitability mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "First, eag Sh mutants exhibit down-turned wings, a phenotype commonly observed in Drosophila hyperexcitability mutants (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "7eb84476-f773-4c2f-b457-1b01fb4e4469",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C62",
+      "claim": "The down-turned wing morphological abnormality in eag,Sh mutants is suppressed by glial knockdown of HDAC4.",
+      "claim_type": "EXPLICIT",
+      "source": "This morphological abnormality is suppressed by glial knockdown of HDAC4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "6d63a6c0-9b78-4c80-97fd-bbdb407fbaaa",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C63",
+      "claim": "Inhibition of glial HDAC4 in eag,Sh mutants results in an upheld wing phenotype, which occurs in mutants with muscle hypercontraction as a result of altered neuronal excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, inhibition of glial HDAC4 in these mutants results in an upheld wing phenotype, which occurs in mutants with muscle hypercontraction as a result of altered neuronal excitability (Katti et al., 2017; Montana and Littleton, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D and citations to Katti et al., 2017; Montana and Littleton, 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "42b277c5-3463-4f4f-a06b-b11f2a9f90a9",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C64",
+      "claim": "eag,Sh displays not only mEJPs, but also much larger evoked junction potentials (EJPs) that result from the spontaneous firing of axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, eag,Sh displays not only mEJPs, but also much larger evoked junction potentials (EJPs) that result from the spontaneous firing of axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "0215004c-aea0-45f3-9ed4-d38b8824fdc3",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C65",
+      "claim": "Activation of the SIK3 glial buffering program in eag,Sh mutants by selective glial knockdown of HDAC4 leads to an ~60% reduction in the frequency of spontaneous EJPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the SIK3 glial buffering program in eag,Sh mutants by selective glial knockdown of HDAC4 leads to an ~60% reduction in the frequency of these spontaneous EJPs (Figure 5E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "2c05a54e-242a-472d-be46-4f4fd8ba8df6",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C66",
+      "claim": "The hyperexcitability attributed to the absence of eag and Shaker K+ channels is due in part to the lack of sufficient glial ion and water buffering.",
+      "claim_type": "EXPLICIT",
+      "source": "Since enhancing glial K+ buffering potently suppresses the neuronal hyperexcitability induced by loss of the eag and Shaker potassium channels, the hyperexcitability attributed to the absence of these channels is due in part to the lack of sufficient glial ion and water buffering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data in Figure 5E-F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "d7a19237-c3a5-4d67-9019-1480107278e3",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C67",
+      "claim": "eag,Sh mutants are about 25 times more likely to seize than control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings, eag,Sh mutants are about 25 times more likely to seize than control flies (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5G (note: text says 5H but likely refers to 5G based on figure content).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "1320ed9d-11b1-4a40-a2a3-3200b469bb9a",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C68",
+      "claim": "eag,Sh mutants have much longer seizures, which last for up to a minute while in control flies seizing behavior lasts only a few seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "They also have much longer seizures, which last for up to a minute while in control flies seizing behavior lasts only a few seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "1abb40ff-ac7b-4888-9a7a-bb8982228a6c",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C69",
+      "claim": "Glial-specific inhibition of HDAC4 dramatically suppresses the seizure behavior of eag,Sh mutants, reducing the incidence of seizure by ~80% and seizure duration to a few seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Glial-specific inhibition of HDAC4 dramatically suppresses the seizure behavior of eag,Sh mutants, reducing the incidence of seizure by ~80% and seizure duration to a few seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "2938e831-58bd-49a3-b104-e57a46015a43",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C70",
+      "claim": "eag,Sh mutants have a dramatically shortened life span compared to control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "eag,Sh mutants have a dramatically shortened life span compared to control flies (Figure 5I and Fergestad et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5H (note: text says 5I but likely refers to 5H based on figure content) and citation to Fergestad et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "cda7a143-0052-4616-a64e-9017a927b3ee",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C71",
+      "claim": "Glial-specific knockdown of HDAC4 in the eag,Sh mutant results in a dramatic extension of life span to essentially control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, glial-specific knockdown of HDAC4 in the eag,Sh mutant results in a dramatic extension of life span to essentially control levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "a992a01b-d779-4fd4-a49a-758784dc6940",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C72",
+      "claim": "Enhancing glial mechanisms that boost K+ and water homeostasis profoundly suppresses electrophysiological, behavioral, and survival phenotypes of eag,Sh.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings demonstrate that enhancing glial mechanisms that boost K+ and water homeostasis profoundly suppresses electrophysiological, behavioral, and survival phenotypes of eag,Sh, the paradigmatic Drosophila neuronal hyperexcitability mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "e280036f-341e-43b1-befd-6e53027a9894",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C73",
+      "claim": "K+ dysregulation drives edema and neuronal hyperexcitability and can lead to brain damage in patients with epilepsy and stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "K+ dysregulation drives edema and neuronal hyperexcitability and can lead to brain damage in patients with epilepsy and stroke.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about K+ dysregulation in disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "423b7026-e15d-4501-97ea-49958ddc335c",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C74",
+      "claim": "Low levels of octopamine enhance the glial K+ buffering capacity, while high levels of octopamine inhibit this buffering program.",
+      "claim_type": "EXPLICIT",
+      "source": "An octopaminergic circuit couples neuronal activity to glia buffering, exerting a dual effect on SIK3-mediated K+ buffering: low levels of octopamine enhance the glial K+ buffering capacity, while high levels of octopamine inhibit this buffering program, likely to protect glia against extreme K+ stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental data presented in Figures 2 and 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "63c398a0-abf8-421f-9772-bffa266e9e41",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C75",
+      "claim": "Glial-specific inhibition of HDAC4 results in a constitutively active glial buffering program that dramatically suppresses seizure and extends life span in eag,Sh.",
+      "claim_type": "EXPLICIT",
+      "source": "Glial-specific inhibition of HDAC4, a central repressor of SIK3 signaling, results in a constitutively active glial buffering program that dramatically suppresses seizure and extends life span in a classic epilepsy model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental data presented in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "b0609ef9-b037-43e1-a12d-e4168199eafb",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C76",
+      "claim": "Augmenting glial K+ and water buffering holds promise as a therapeutic approach for the treatment of seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, augmenting glial K+ and water buffering holds promise as a therapeutic approach for the treatment of seizures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "f31eca2b-10aa-41fc-9417-d97ee0f58f23",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C77",
+      "claim": "The glial SIK3/HDAC4/Mef2 pathway regulates expression of both fray/SPAK, a kinase controlling ion transporter activity, and aquaporin 4, a water channel essential for volume regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The glial SIK3/HDAC4/Mef2 pathway regulates expression of both fray/SPAK, a kinase controlling ion transporter activity, and aquaporin 4, a water channel essential for volume regulation (Leiserson et al., 2011; Li et al., 2019; Papadopoulos et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Leiserson et al., 2011; Li et al., 2019; Papadopoulos et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "2f204601-6324-4ebc-9239-1dc5900ea3b5",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C78",
+      "claim": "Glial SIK3 inhibits extracellular edema, presumably by promoting the uptake of ions and water into glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our original analysis of SIK3 LOF mutants demonstrated that glial SIK3 inhibits extracellular edema, presumably by promoting the uptake of ions and water into glial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Li et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "91720a28-628b-45e5-899f-11373f9c672d",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C79",
+      "claim": "Accumulation of K+ in the extracellular space around axons leads to hyperexcitability and heightened seizure susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an essential activity of glia, since accumulation of K+ in the extracellular space around axons leads to hyperexcitability and heightened seizure susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about K+ accumulation and hyperexcitability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "21aee89f-025e-4509-922d-7f6686d04d7e",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C80",
+      "claim": "Downregulating glial K+ buffering capacity is a protective response that prevents pathological glial swelling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the downregulating glial K+ buffering capacity is a protective response that prevents pathological glial swelling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data in Figure 4.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "ec061cd2-25db-4beb-b78f-85ebfff5a8ca",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C81",
+      "claim": "Activity-dependent glial swelling is a commonly observed physiological phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity-dependent glial swelling is a commonly observed physiological phenomenon, but when taking in an excess load of ions and water, glia may swell to the point of cytolysis (MacVicar et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to MacVicar et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "001e6115-5fe4-49e8-b3eb-e147ca82022b",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C82",
+      "claim": "When taking in an excess load of ions and water, glia may swell to the point of cytolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity-dependent glial swelling is a commonly observed physiological phenomenon, but when taking in an excess load of ions and water, glia may swell to the point of cytolysis (MacVicar et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to MacVicar et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "9870ef47-e2d4-4643-92e5-7e99f712b325",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C83",
+      "claim": "Glia with enhanced K+ buffering capacity undergo cell swelling that is exacerbated by extreme K+ stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that glia with enhanced K+ buffering capacity undergo cell swelling that is exacerbated by extreme K+ stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "24c844a6-3cdb-48e3-9514-f7f54230adb3",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C84",
+      "claim": "JNK plays a critical role in the regulation of apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "JNK plays a critical role in the regulation of apoptosis, suggesting that pathological swelling that results from enhanced K+ buffering could promote cell death (Dhanasekaran and Reddy, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dhanasekaran and Reddy, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "5b95b2ea-160e-4e44-8f16-30aedafe62db",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C85",
+      "claim": "Pathological swelling that results from enhanced K+ buffering could promote cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "JNK plays a critical role in the regulation of apoptosis, suggesting that pathological swelling that results from enhanced K+ buffering could promote cell death (Dhanasekaran and Reddy, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the JNK activation data and citation to Dhanasekaran and Reddy, 2008.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "c659885c-60ea-45e5-aa32-a7c337fc058f",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C86",
+      "claim": "Overactivity of glial SIK3 activity leads to intracellular edema while underactivity of glial SIK3 signaling leads to extracellular edema.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings demonstrate that overactivity of glial SIK3 activity leads to intracellular edema while underactivity of glial SIK3 signaling leads to extracellular edema.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "7472d976-f064-4465-be10-ff706c9d6811",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C87",
+      "claim": "SIK3 balances the need for robust extracellular buffering with the health of the glial cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, SIK3 balances the need for robust extracellular buffering with the health of the glial cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "b9c9e469-bdf0-4162-b0fa-4d118395c5db",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C88",
+      "claim": "The ability of the SIK3 pathway to integrate disparate upstream signals is important for maintaining balance between an extracellular milieu conducive to neuronal firing with intracellular volume regulation that maintains glial health.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the ability of the SIK3 pathway to integrate disparate upstream signals is important for maintaining this balance between an extracellular milieu conducive to neuronal firing with intracellular volume regulation that maintains glial health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "e08bb4a3-152b-4c4d-b3ad-9082569db9f9",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C89",
+      "claim": "Norepinephrine can exert anticonvulsant effects in the mammalian nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Norepinephrine is a stress hormone that can exert anticonvulsant effects in the mammalian nervous system (Szot et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Szot et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "d93f2142-e413-45c8-9231-cfbb206c3564",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C90",
+      "claim": "Norepinephrine regulates astrocyte transporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, norepinephrine regulates astrocyte transporter activity (Monai et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Monai et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "af903eac-87d2-4c73-ae11-de022355b404",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C91",
+      "claim": "Octopamine is structurally and functionally analogous to norepinephrine.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, octopamine is structurally and functionally analogous to norepinephrine and regulates a variety of stress responses, including aggression, alertness, and starvation (Crocker and Sehgal, 2008; Suo et al., 2006; Zhou et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Crocker and Sehgal, 2008; Suo et al., 2006; Zhou et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "d8ff892d-e397-445d-b8b1-f17136c635b6",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C92",
+      "claim": "Octopamine regulates a variety of stress responses, including aggression, alertness, and starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, octopamine is structurally and functionally analogous to norepinephrine and regulates a variety of stress responses, including aggression, alertness, and starvation (Crocker and Sehgal, 2008; Suo et al., 2006; Zhou et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Crocker and Sehgal, 2008; Suo et al., 2006; Zhou et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "5eaf9648-4ea8-4051-b65a-acbf4ca32ce0",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C93",
+      "claim": "Octopamine exerts dual effects on cellular responses by signaling through receptors with antagonistic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Octopamine is also similar to norepinephrine in that it exerts dual effects on cellular responses by signaling through receptors with antagonistic functions (Koon and Budnik, 2012; Papaefthimiou and Theophilidis, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Koon and Budnik, 2012; Papaefthimiou and Theophilidis, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "016f84e6-1d03-4cef-8c58-58cd101c3388",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C94",
+      "claim": "Octopamine release can be enhanced by a surge in the level of extracellular K+.",
+      "claim_type": "EXPLICIT",
+      "source": "Octopamine release can be enhanced by a surge in the level of extracellular K+, suggesting that its concentration correlates with the level of K+ stress in the nervous system (Orchard and Lange, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Orchard and Lange, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "53f3752e-ef90-4f4c-ad9a-97b246f8acc0",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C95",
+      "claim": "Octopamine concentration correlates with the level of K+ stress in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Octopamine release can be enhanced by a surge in the level of extracellular K+, suggesting that its concentration correlates with the level of K+ stress in the nervous system (Orchard and Lange, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on citation to Orchard and Lange, 1987.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "08a7b410-43be-4d6f-9c02-a3d00e2510fb",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C96",
+      "claim": "Octopamine release links activity-dependent K+ stress to glial K+ buffering.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose a model in which octopamine release links activity-dependent K+ stress to glial K+ buffering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "e80bc3f1-f3ea-4115-8e19-9ce94f2efab8",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C97",
+      "claim": "Octopamine is required for SIK3 signaling and this regulation occurs through the inhibitory octopaminergic GPCR Oct\u03b21R.",
+      "claim_type": "EXPLICIT",
+      "source": "First, octopamine is required for SIK3 signaling and this regulation occurs through the inhibitory octopaminergic GPCR Oct\u03b21R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "0824f6c4-54b9-47c9-b311-f00f677a8ea0",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C98",
+      "claim": "Elevated levels of either octopamine or K+ each inhibit the glial SIK3 pathway, and both of these effects require the stimulatory octopaminergic GPCR OAMB.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, elevated levels of either octopamine or K+ each inhibit the glial SIK3 pathway, and both of these effects require the stimulatory octopaminergic GPCR OAMB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "4d544f84-602a-4b57-8b29-0202de7cb4ad",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C99",
+      "claim": "Elevated K+ works through octopaminergic signaling to regulate the SIK3 pathway and glial buffering.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, elevated K+ works through octopaminergic signaling to regulate the SIK3 pathway and glial buffering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data in Figure 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "00e9e68a-c7fe-4015-ba83-f9d6220e2f4b",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C100",
+      "claim": "Basal levels of octopamine promote SIK3-dependent glial K+ buffering to cope with physiological K+ stress and maintain a healthy level of neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that basal levels of octopamine promote SIK3-dependent glial K+ buffering to cope with physiological K+ stress and maintain a healthy level of neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "12cb98cb-6749-4a03-b47e-9bdbdb7c4187",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C101",
+      "claim": "When neurons become hyperexcitable, levels of extracellular K+ rise and more octopamine is released.",
+      "claim_type": "EXPLICIT",
+      "source": "When neurons become hyperexcitable, as would occur under pathological conditions, levels of extracellular K+ rise and more octopamine is released.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge and the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "e5620c1d-8e97-46fb-8b55-c4d2ec9c1c3e",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C102",
+      "claim": "High levels of octopamine will inhibit SIK3 activity and turn down glial K+ buffering, likely to protect glia from pathological cell swelling.",
+      "claim_type": "EXPLICIT",
+      "source": "High levels of octopamine will inhibit SIK3 activity and turn down glial K+ buffering, likely to protect glia from pathological cell swelling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "060445b7-093c-4d0d-8567-c1a417e31692",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C103",
+      "claim": "Oct\u03b21R couples to the inhibitory G\u03b1i protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Oct\u03b21R couples to the inhibitory G\u03b1i protein, whereas OAMB can function through the excitatory G\u03b1s protein (Kim et al., 2013; Koon and Budnik, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kim et al., 2013; Koon and Budnik, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "37739ac1-ed15-42b1-a834-3a4015961455",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C104",
+      "claim": "OAMB can function through the excitatory G\u03b1s protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Oct\u03b21R couples to the inhibitory G\u03b1i protein, whereas OAMB can function through the excitatory G\u03b1s protein (Kim et al., 2013; Koon and Budnik, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kim et al., 2013; Koon and Budnik, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "45141f19-e19c-4d9e-a215-6775e76024b2",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C105",
+      "claim": "Oct\u03b21R and OAMB could have different binding affinities for octopamine, with Oct\u03b21R having a higher affinity such that Oct\u03b21R is preferentially activated at low levels of octopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially, Oct\u03b21R and OAMB could have different binding affinities for octopamine, with Oct\u03b21R having a higher affinity such that Oct\u03b21R is preferentially activated at low levels of octopamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed to explain the dual effects of octopamine.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "0ecbed5d-49af-4ac1-af58-95abc9c1ec94",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C106",
+      "claim": "A similar differential regulation via opposing octopaminergic receptors residing in the same cell is described at the larval NMJ, where octopamine signals through inhibitory Oct\u03b21R and excitatory Oct\u03b22R to bidirectionally control synaptic function.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar differential regulation via opposing octopaminergic receptors residing in the same cell is described at the larval NMJ, where octopamine signals through inhibitory Oct\u03b21R and excitatory Oct\u03b22R to bidirectionally control synaptic function (Koon and Budnik, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Koon and Budnik, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "f147b45e-ec90-47eb-9b61-1523b44aa828",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C107",
+      "claim": "Neuromodulators such as octopamine are useful for integrating synaptic activity over time and space rather than signaling rapidly and locally like classical neurotransmitters.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuromodulators such as octopamine are useful for integrating synaptic activity over time and space rather than signaling rapidly and locally like classical neurotransmitters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about neuromodulators.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "a9892b44-1da3-4d59-9507-fdbf3814eb07",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C108",
+      "claim": "Altering the glial transcriptional response will be reasonably slow to change physiological function since such changes require transcription and translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, altering the glial transcriptional response will be reasonably slow to change physiological function since such changes require transcription and translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about transcriptional regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "348d4d3c-bf26-47fc-8ee1-e9b9326de043",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C109",
+      "claim": "The octopaminergic pathway is likely tuned to respond to average neuronal activity rather than to transient changes in neuronal firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, this system is likely tuned to respond to average neuronal activity rather than to transient changes in neuronal firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of neuromodulators and transcriptional regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "f3f2a4b1-a79e-4a37-a2b4-2df611c30358",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C110",
+      "claim": "The octopaminergic pathway may work in concert with additional mechanisms for rapid tuning of glial ion transporter function as described in mammalian astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathway may work in concert with additional mechanisms for rapid tuning of glial ion transporter function as described in mammalian astrocytes (Bellot-Saez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citation to Bellot-Saez et al., 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "537d8b62-0e1e-4d6e-a057-401fefc983b6",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C111",
+      "claim": "With hyperexcitability, waves of action potentials can lead to increases in extracellular K+ that, if not properly buffered, will lead to neuronal depolarization and further hyperexcitability.",
+      "claim_type": "EXPLICIT",
+      "source": "With hyperexcitability, waves of action potentials can lead to increases in extracellular K+ that, if not properly buffered, will lead to neuronal depolarization and further hyperexcitability (Kofuji and Newman, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kofuji and Newman, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "f2d7b2ea-e646-4785-a2a0-c54ddf54e5a6",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C112",
+      "claim": "The glial SIK3 signaling pathway is downregulated in eag,Sh mutants, likely as part of the glial protective response.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we would expect eag,Sh larvae to have an increased need for glial buffering, we found that the glial SIK3 signaling pathway is downregulated, likely as part of the glial protective response described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data in Figure 5A-B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "edafec07-a869-4066-ae48-e58e01402d9e",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C113",
+      "claim": "Downregulating the glial SIK3 pathway is sufficient to cause hyperexcitability and seizures.",
+      "claim_type": "EXPLICIT",
+      "source": "Since downregulating the glial SIK3 pathway is sufficient to cause hyperexcitability and seizures, we tested whether this inhibition of SIK3 could be exacerbating the eag,Sh phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Li et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "72b84da0-365e-4826-ae2b-fbc8431be7c9",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C114",
+      "claim": "HDAC4 is the key repressor of SIK3-regulated glial K+ buffering.",
+      "claim_type": "EXPLICIT",
+      "source": "HDAC4 is the key repressor of SIK3-regulated glial K+ buffering, and so we activated SIK3 signaling by glial knockdown of HDAC4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Li et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "af47fbf0-9bc8-40fe-92d9-25cfb96d1923",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C115",
+      "claim": "The pathological consequences for the organism in eag,Sh mutants are almost wholly mitigated by enhanced glial buffering despite neurons still being deficient for two extremely important K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is quite remarkable, since the neurons are still deficient for two extremely important K+ channels. Nonetheless, the pathological consequences for the organism are almost wholly mitigated by enhanced glial buffering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "710dba76-94f1-42b1-a933-1ac42d1e9bdf",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "claim_id": "C116",
+      "claim": "Enhanced glial buffering highlights the potential of glial-centric therapeutic strategies for diseases of hyperexcitability.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights the potential of glial-centric therapeutic strategies for diseases of hyperexcitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d339d4d3-988e-4cd6-94af-4ad608ba0927",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PKA and G\u03b1s regulate glial K+ and water homeostasis through HDAC4 localization. Glial overexpression of PKA-C1 or constitutively active G\u03b1s induces nerve swellings similar to SIK3 loss-of-function, causes ~6-fold increase in nuclear HDAC4, and these effects are suppressed by HDAC4 knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21, C23 provide converging experimental evidence from multiple genetic manipulations (PKA overexpression, PKA-R1 knockdown, G\u03b1s overexpression) all producing consistent phenotypes (nerve swellings, HDAC4 nuclear localization) that are rescued by HDAC4 knockdown. The data in Figure 1 directly support the model that PKA/G\u03b1s regulate HDAC4 localization to control glial homeostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "ed7183ca-50bc-4107-9246-d44b6d2c1319",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Octopamine is required for basal SIK3 pathway activity and signals through the inhibitory GPCR Oct\u03b21R to promote glial K+ buffering. Loss of octopamine synthesis or Oct\u03b21R causes HDAC4 nuclear accumulation and nerve swellings, which are rescued by PKA knockdown. Exogenous octopamine rapidly relocalizes HDAC4 to the cytoplasm within 2 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C38 provide strong converging evidence from multiple octopamine synthesis mutants (tdc2, t\u03b2h, dVMAT), receptor knockdown (Oct\u03b21R), genetic rescue experiments (PKA-C1 RNAi, HDAC4 RNAi), and rapid ex vivo octopamine treatment. The 2-minute timecourse (C34) strongly supports direct action on glia. All data consistently support the model that octopamine-Oct\u03b21R signaling activates the SIK3 pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "High levels of octopamine or K+ inhibit the glial SIK3 pathway through the stimulatory GPCR OAMB. High octopamine diet causes nerve swellings in ~70% of wild-type larvae and dramatically increases HDAC4 nuclear localization in a PKA-dependent manner. High K+ diet mimics high octopamine, and both effects require OAMB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C49, C98-C99 provide strong evidence for bidirectional octopamine regulation. The high octopamine/K+ diet experiments show consistent HDAC4 nuclear localization that is blocked by PKA-C1 or OAMB knockdown (Figure 3). The parallel effects of high octopamine and high K+, both requiring OAMB, strongly support the model that K+ stress works through octopaminergic signaling to inhibit SIK3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "2876ed8f-2e9a-480c-bd54-9d1eeb5f76f6",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Constitutive activation of the glial K+ buffering program causes intracellular glial swelling and stress signaling. OAMB or HDAC4 knockdown in glia produces non-localized nerve edema with increased intracellular glial cytoplasm and ~3-fold increase in JNK stress pathway activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57, C83 provide direct evidence that enhanced SIK3 signaling causes intracellular glial swelling (distinct from extracellular edema in SIK3 mutants) and activates JNK stress signaling. The RFP-labeled glia experiments (C53, Figure 4C) directly demonstrate increased intracellular volume. The puc-lacZ reporter data (C56) quantitatively demonstrate stress pathway activation. This supports the model that downregulating the buffering program is glioprotective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "34c36a92-7dc5-484e-8a25-d52412c89059",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the eag,Sh seizure mutant, the glial SIK3 pathway is inhibited, but reactivation by HDAC4 knockdown dramatically suppresses hyperexcitability, seizures, and early death. Glial HDAC4 knockdown reduces spontaneous EJP frequency by ~60%, seizure incidence by ~80%, and extends lifespan to near-control levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C72 provide comprehensive evidence across multiple phenotypic levels (molecular, electrophysiological, behavioral, survival) that glial HDAC4 knockdown rescues eag,Sh defects. The data show HDAC4 nuclear accumulation in eag,Sh (C59), and dramatic rescue of wing phenotype (C62-C63), spontaneous EJPs (C65), seizure behavior (C69), and lifespan (C71). The consistency across multiple independent assays strongly supports the therapeutic potential of enhancing glial buffering.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "900063e0-d832-4648-ad10-ebf604c40716",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Octopamine exerts bidirectional control over glial K+ buffering: low levels activate buffering through Oct\u03b21R under basal conditions, while high levels inhibit buffering through OAMB under pathological K+ stress. This links neuronal activity to glial buffering capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative model (C74, C96, C100-C102) is well-supported by the experimental data showing opposite effects of octopamine through different receptors (Results 2 and 3). The model coherently explains how basal octopamine promotes buffering (via Oct\u03b21R) while elevated octopamine during hyperexcitability inhibits buffering (via OAMB), providing a mechanism linking neuronal activity to glial function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "6322415e-9075-497b-97f1-7326d5bbe47a",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SIK3 balances extracellular K+ buffering with glial health: underactivity causes extracellular edema and hyperexcitability, while overactivity causes intracellular glial swelling and stress. Downregulating buffering under extreme K+ stress is a glioprotective mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C86-C88 synthesize findings from Results 1, 4, and 5 into a coherent model. The bidirectional edema phenotypes (extracellular with SIK3 loss, intracellular with SIK3 gain) and JNK activation with constitutive buffering support the conclusion that SIK3 balances neuroprotection with glioprotection. This model is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "c86e4b03-09fc-4b40-9a5a-4cc43418337e",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The SIK3/HDAC4/Mef2 pathway regulates expression of K+ and water transport molecules including aquaporin-4 and SPAK/fray, and controls glial buffering capacity to prevent extracellular edema and neuronal hyperexcitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C2, C11-C13, C77-C78) are supported by citations to prior work (Li et al., 2019) establishing the SIK3 pathway and its downstream targets. While the current manuscript does not re-demonstrate these molecular mechanisms, they provide essential context for interpreting the upstream regulatory mechanisms identified here. The prior work is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "7d558865-0acf-487a-874c-53fbcfa2161a",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Glial-specific HDAC4 inhibition constitutively activates the buffering program and dramatically suppresses seizures and extends lifespan in eag,Sh, highlighting the therapeutic potential of glial-centric strategies for hyperexcitability disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76, C115-C116 represent the translational implications of the eag,Sh rescue experiments. The dramatic phenotypic rescue across multiple measures (Result 5) strongly supports the therapeutic potential. However, C76 and C116 are somewhat speculative regarding clinical translation, as they extrapolate from Drosophila to human disease. The data support the concept but clinical applicability requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "da9f94bb-c8cd-473f-b40b-12b430276992",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Oct\u03b21R couples to inhibitory G\u03b1i while OAMB couples to excitatory G\u03b1s. The receptors may have different octopamine binding affinities, with Oct\u03b21R preferentially activated at low octopamine levels, similar to differential regulation at the larval NMJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103-C104 about G-protein coupling are supported by citations. However, C105 proposing differential binding affinities is explicitly speculative and not tested experimentally. While this is a reasonable mechanistic hypothesis to explain the bidirectional effects, it remains unvalidated. The parallel to NMJ regulation (C106) provides some support but does not directly test the affinity hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "9c802198-099c-454d-bf0a-f69781d0bc44",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The octopaminergic pathway likely responds to average neuronal activity rather than transient changes, given the slow timescale of transcriptional regulation. This may work with additional rapid mechanisms for tuning glial transporter function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C107-C110 present reasonable inferences about the temporal dynamics of the pathway based on general principles of neuromodulation and transcriptional regulation. However, these temporal properties are not directly tested experimentally. The 2-minute octopamine response (C34) shows rapid HDAC4 relocalization, but the timescale of functional changes in buffering capacity is not measured. C110 is speculative about additional rapid mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "33ce3f3a-f3e1-4d92-875b-acff28d9d7c4",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Glia maintain K+ and water homeostasis to modulate neuronal excitability. K+ dysregulation drives edema and hyperexcitability in epilepsy and stroke, and extracellular K+ accumulation leads to neuronal depolarization and seizure susceptibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10, C73, C79 represent established knowledge about glial function and K+ homeostasis, appropriately cited or stated as foundational concepts. These provide necessary background context for the study but are not novel findings. They are well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on epilepsy treatment challenges and octopamine/norepinephrine biology: one-third of epilepsy patients have intractable seizures, neuron-targeting treatments have side effects, and octopamine is analogous to norepinephrine in regulating stress responses and is released in response to K+ stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C25-C26, C89-C95 provide background information supported by appropriate citations. These establish the clinical motivation and biological context for studying octopaminergic regulation of glial buffering. While not novel findings, they are accurately presented and properly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "35620350-68a9-4176-9990-4828d03b57d2",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on cellular and molecular mechanisms: wrapping glia are analogous to Schwann cells, SIK3 integrates signaling pathways, octopamine synthesis pathway, glial swelling phenotypes, JNK stress signaling, eag,Sh mutant characteristics, and K+ effects on neuronal excitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15, C24, C27-C29, C39, C47, C50, C55, C58, C81-C82, C84, C111 provide established background information with appropriate citations. These contextualize the experimental findings within existing knowledge but are not novel contributions. They are accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    },
+    {
+      "id": "3a1122e9-120f-4738-b149-4213dba505f0",
+      "content_id": "222af8e0-d029-44bb-b662-959df7352498",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Pathological glial swelling from enhanced K+ buffering could promote cell death through JNK-mediated apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is explicitly speculative, inferring potential cell death from JNK activation. While JNK is known to regulate apoptosis (C84, cited), the manuscript does not directly measure cell death or apoptosis in glia with enhanced buffering. The JNK activation (C56) suggests stress but does not demonstrate apoptosis. This remains a reasonable but untested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:42:09.433134Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0750d91b-0a9d-4b5f-a262-8cda4f7500d6",
+      "result_id": "d339d4d3-988e-4cd6-94af-4ad608ba0927"
+    },
+    {
+      "claim_id": "a6e7232e-f34f-4978-92f5-496b465ee182",
+      "result_id": "d339d4d3-988e-4cd6-94af-4ad608ba0927"
+    },
+    {
+      "claim_id": "b0069002-6db1-48ee-88e1-c4d92aee32be",
+      "result_id": "d339d4d3-988e-4cd6-94af-4ad608ba0927"
+    },
+    {
+      "claim_id": "b2581ae0-5cb9-4e1d-8f4a-502079dfb12d",
+      "result_id": "d339d4d3-988e-4cd6-94af-4ad608ba0927"
+    },
+    {
+      "claim_id": "252141de-c3ca-440b-aba3-c4ff6e3236a5",
+      "result_id": "d339d4d3-988e-4cd6-94af-4ad608ba0927"
+    },
+    {
+      "claim_id": "fd08238a-85a2-4e86-a69d-3a73a80e974b",
+      "result_id": "d339d4d3-988e-4cd6-94af-4ad608ba0927"
+    },
+    {
+      "claim_id": "fbec2706-1032-43d2-a72d-7fe4f1189662",
+      "result_id": "d339d4d3-988e-4cd6-94af-4ad608ba0927"
+    },
+    {
+      "claim_id": "a108d7ec-8e73-4c33-9387-6879805b2a8c",
+      "result_id": "ed7183ca-50bc-4107-9246-d44b6d2c1319"
+    },
+    {
+      "claim_id": "0fb65fa9-cd40-4b7e-b00a-f4e3ced0a9ff",
+      "result_id": "ed7183ca-50bc-4107-9246-d44b6d2c1319"
+    },
+    {
+      "claim_id": "55319652-37f7-498d-bb81-dd47df6538f4",
+      "result_id": "ed7183ca-50bc-4107-9246-d44b6d2c1319"
+    },
+    {
+      "claim_id": "66f31b12-455a-46ab-a628-b9dec2533945",
+      "result_id": "ed7183ca-50bc-4107-9246-d44b6d2c1319"
+    },
+    {
+      "claim_id": "c609a9b9-a4ad-4662-b468-814da1d8bdbf",
+      "result_id": "ed7183ca-50bc-4107-9246-d44b6d2c1319"
+    },
+    {
+      "claim_id": "e32a6f0e-4e6c-487d-a6c6-7f8fe6137f99",
+      "result_id": "ed7183ca-50bc-4107-9246-d44b6d2c1319"
+    },
+    {
+      "claim_id": "a8c8dfc9-fbf0-4ac9-b49f-c0773ebaa7f6",
+      "result_id": "ed7183ca-50bc-4107-9246-d44b6d2c1319"
+    },
+    {
+      "claim_id": "42614706-dff8-419b-be9d-374b79371df3",
+      "result_id": "ed7183ca-50bc-4107-9246-d44b6d2c1319"
+    },
+    {
+      "claim_id": "774648ad-a913-4efa-881d-4343abab9e9f",
+      "result_id": "ed7183ca-50bc-4107-9246-d44b6d2c1319"
+    },
+    {
+      "claim_id": "e80bc3f1-f3ea-4115-8e19-9ce94f2efab8",
+      "result_id": "ed7183ca-50bc-4107-9246-d44b6d2c1319"
+    },
+    {
+      "claim_id": "d8e0b5d5-2049-4b17-9223-a261b5848288",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "fac0956d-c0db-49e2-ad67-323558a42532",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "58e034b3-75be-45a6-a749-e8371e5595e9",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "ed623857-a4e0-4666-a140-010158abe4a9",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "ea014df1-4e2a-4a29-b591-f29640d40da0",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "7b021384-820f-4bbb-8a02-a76dd763e14b",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "96575a52-f2ff-4d9b-9efa-de9505e9650b",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "413f6000-de64-4998-b40e-9156719657d3",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "53516732-2a79-4a99-b8f7-6ed683d46fb2",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "0824f6c4-54b9-47c9-b311-f00f677a8ea0",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "4d544f84-602a-4b57-8b29-0202de7cb4ad",
+      "result_id": "a65b80fe-de65-4e18-b0ac-36bb07cdb89b"
+    },
+    {
+      "claim_id": "bbd18e1a-1c2a-4ec7-9662-3b66244ba171",
+      "result_id": "2876ed8f-2e9a-480c-bd54-9d1eeb5f76f6"
+    },
+    {
+      "claim_id": "b7f59ad3-8383-4fc0-9821-dbbe9e411d05",
+      "result_id": "2876ed8f-2e9a-480c-bd54-9d1eeb5f76f6"
+    },
+    {
+      "claim_id": "a07cb5d8-99aa-431e-9e83-4284139bf351",
+      "result_id": "2876ed8f-2e9a-480c-bd54-9d1eeb5f76f6"
+    },
+    {
+      "claim_id": "2cb2d1b2-cb38-461d-9b2c-9ad1cade1805",
+      "result_id": "2876ed8f-2e9a-480c-bd54-9d1eeb5f76f6"
+    },
+    {
+      "claim_id": "86fb3997-f201-4940-a2d0-3aaca9f37b98",
+      "result_id": "2876ed8f-2e9a-480c-bd54-9d1eeb5f76f6"
+    },
+    {
+      "claim_id": "b98cbfe4-79d0-480c-ad7b-5979c987a6f6",
+      "result_id": "2876ed8f-2e9a-480c-bd54-9d1eeb5f76f6"
+    },
+    {
+      "claim_id": "9870ef47-e2d4-4643-92e5-7e99f712b325",
+      "result_id": "2876ed8f-2e9a-480c-bd54-9d1eeb5f76f6"
+    },
+    {
+      "claim_id": "d6affc09-3e8a-4a0e-8046-bed771b3fd76",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "8fea3f8f-039d-4f0a-b3c1-c11fee948ca3",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "ae86d35a-6c77-450b-9182-0819134e19b5",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "7eb84476-f773-4c2f-b457-1b01fb4e4469",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "6d63a6c0-9b78-4c80-97fd-bbdb407fbaaa",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "42b277c5-3463-4f4f-a06b-b11f2a9f90a9",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "0215004c-aea0-45f3-9ed4-d38b8824fdc3",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "2c05a54e-242a-472d-be46-4f4fd8ba8df6",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "d7a19237-c3a5-4d67-9019-1480107278e3",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "1320ed9d-11b1-4a40-a2a3-3200b469bb9a",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "1abb40ff-ac7b-4888-9a7a-bb8982228a6c",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "2938e831-58bd-49a3-b104-e57a46015a43",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "cda7a143-0052-4616-a64e-9017a927b3ee",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "a992a01b-d779-4fd4-a49a-758784dc6940",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "f2d7b2ea-e646-4785-a2a0-c54ddf54e5a6",
+      "result_id": "34c36a92-7dc5-484e-8a25-d52412c89059"
+    },
+    {
+      "claim_id": "9a8545f5-53ad-453b-9a75-17af7a440929",
+      "result_id": "900063e0-d832-4648-ad10-ebf604c40716"
+    },
+    {
+      "claim_id": "87f8900d-7fd4-4a8d-a84d-a9588f6d9062",
+      "result_id": "900063e0-d832-4648-ad10-ebf604c40716"
+    },
+    {
+      "claim_id": "423b7026-e15d-4501-97ea-49958ddc335c",
+      "result_id": "900063e0-d832-4648-ad10-ebf604c40716"
+    },
+    {
+      "claim_id": "08a7b410-43be-4d6f-9c02-a3d00e2510fb",
+      "result_id": "900063e0-d832-4648-ad10-ebf604c40716"
+    },
+    {
+      "claim_id": "00e9e68a-c7fe-4015-ba83-f9d6220e2f4b",
+      "result_id": "900063e0-d832-4648-ad10-ebf604c40716"
+    },
+    {
+      "claim_id": "12cb98cb-6749-4a03-b47e-9bdbdb7c4187",
+      "result_id": "900063e0-d832-4648-ad10-ebf604c40716"
+    },
+    {
+      "claim_id": "e5620c1d-8e97-46fb-8b55-c4d2ec9c1c3e",
+      "result_id": "900063e0-d832-4648-ad10-ebf604c40716"
+    },
+    {
+      "claim_id": "21aee89f-025e-4509-922d-7f6686d04d7e",
+      "result_id": "6322415e-9075-497b-97f1-7326d5bbe47a"
+    },
+    {
+      "claim_id": "c659885c-60ea-45e5-aa32-a7c337fc058f",
+      "result_id": "6322415e-9075-497b-97f1-7326d5bbe47a"
+    },
+    {
+      "claim_id": "7472d976-f064-4465-be10-ff706c9d6811",
+      "result_id": "6322415e-9075-497b-97f1-7326d5bbe47a"
+    },
+    {
+      "claim_id": "b9c9e469-bdf0-4162-b0fa-4d118395c5db",
+      "result_id": "6322415e-9075-497b-97f1-7326d5bbe47a"
+    },
+    {
+      "claim_id": "ceac2091-bbf0-497a-9597-56e61f541657",
+      "result_id": "c86e4b03-09fc-4b40-9a5a-4cc43418337e"
+    },
+    {
+      "claim_id": "267f4684-c2af-43ef-949f-496bd62410bd",
+      "result_id": "c86e4b03-09fc-4b40-9a5a-4cc43418337e"
+    },
+    {
+      "claim_id": "d9f0d26d-8709-4ed8-977f-7f8327449278",
+      "result_id": "c86e4b03-09fc-4b40-9a5a-4cc43418337e"
+    },
+    {
+      "claim_id": "e1184499-83e6-457f-8829-7ae7a23ae58a",
+      "result_id": "c86e4b03-09fc-4b40-9a5a-4cc43418337e"
+    },
+    {
+      "claim_id": "f31eca2b-10aa-41fc-9417-d97ee0f58f23",
+      "result_id": "c86e4b03-09fc-4b40-9a5a-4cc43418337e"
+    },
+    {
+      "claim_id": "2f204601-6324-4ebc-9239-1dc5900ea3b5",
+      "result_id": "c86e4b03-09fc-4b40-9a5a-4cc43418337e"
+    },
+    {
+      "claim_id": "63c398a0-abf8-421f-9772-bffa266e9e41",
+      "result_id": "7d558865-0acf-487a-874c-53fbcfa2161a"
+    },
+    {
+      "claim_id": "b0609ef9-b037-43e1-a12d-e4168199eafb",
+      "result_id": "7d558865-0acf-487a-874c-53fbcfa2161a"
+    },
+    {
+      "claim_id": "af47fbf0-9bc8-40fe-92d9-25cfb96d1923",
+      "result_id": "7d558865-0acf-487a-874c-53fbcfa2161a"
+    },
+    {
+      "claim_id": "710dba76-94f1-42b1-a933-1ac42d1e9bdf",
+      "result_id": "7d558865-0acf-487a-874c-53fbcfa2161a"
+    },
+    {
+      "claim_id": "060445b7-093c-4d0d-8567-c1a417e31692",
+      "result_id": "da9f94bb-c8cd-473f-b40b-12b430276992"
+    },
+    {
+      "claim_id": "37739ac1-ed15-42b1-a834-3a4015961455",
+      "result_id": "da9f94bb-c8cd-473f-b40b-12b430276992"
+    },
+    {
+      "claim_id": "45141f19-e19c-4d9e-a215-6775e76024b2",
+      "result_id": "da9f94bb-c8cd-473f-b40b-12b430276992"
+    },
+    {
+      "claim_id": "0ecbed5d-49af-4ac1-af58-95abc9c1ec94",
+      "result_id": "da9f94bb-c8cd-473f-b40b-12b430276992"
+    },
+    {
+      "claim_id": "f147b45e-ec90-47eb-9b61-1523b44aa828",
+      "result_id": "9c802198-099c-454d-bf0a-f69781d0bc44"
+    },
+    {
+      "claim_id": "a9892b44-1da3-4d59-9507-fdbf3814eb07",
+      "result_id": "9c802198-099c-454d-bf0a-f69781d0bc44"
+    },
+    {
+      "claim_id": "348d4d3c-bf26-47fc-8ee1-e9b9326de043",
+      "result_id": "9c802198-099c-454d-bf0a-f69781d0bc44"
+    },
+    {
+      "claim_id": "f3f2a4b1-a79e-4a37-a2b4-2df611c30358",
+      "result_id": "9c802198-099c-454d-bf0a-f69781d0bc44"
+    },
+    {
+      "claim_id": "29154257-3538-48a8-92c4-b86496324ff1",
+      "result_id": "33ce3f3a-f3e1-4d92-875b-acff28d9d7c4"
+    },
+    {
+      "claim_id": "849c9cb9-26f2-4f34-9986-d20914d706fd",
+      "result_id": "33ce3f3a-f3e1-4d92-875b-acff28d9d7c4"
+    },
+    {
+      "claim_id": "e280036f-341e-43b1-befd-6e53027a9894",
+      "result_id": "33ce3f3a-f3e1-4d92-875b-acff28d9d7c4"
+    },
+    {
+      "claim_id": "91720a28-628b-45e5-899f-11373f9c672d",
+      "result_id": "33ce3f3a-f3e1-4d92-875b-acff28d9d7c4"
+    },
+    {
+      "claim_id": "36eaf93d-de15-49f0-a292-8a4448bd3f44",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "4d42af09-7093-4957-9bf8-3b63112a1c8d",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "5db8ddc4-0818-4383-8cf9-b5b423c38454",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "a242401a-e20b-4c41-9464-0afed97cfa74",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "e08bb4a3-152b-4c4d-b3ad-9082569db9f9",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "d93f2142-e413-45c8-9231-cfbb206c3564",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "af903eac-87d2-4c73-ae11-de022355b404",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "d8ff892d-e397-445d-b8b1-f17136c635b6",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "5eaf9648-4ea8-4051-b65a-acbf4ca32ce0",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "016f84e6-1d03-4cef-8c58-58cd101c3388",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "53f3752e-ef90-4f4c-ad9a-97b246f8acc0",
+      "result_id": "15bbb562-05b5-46e2-9477-8b1c05e1a7c7"
+    },
+    {
+      "claim_id": "f21f7beb-175e-4cb8-9095-31941c2635f0",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "3fa3ebb3-2d73-45ea-b49c-d113eba1934d",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "233b76c1-2135-4bd4-89b2-0caacaa34f2a",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "dc315457-f472-42e9-a664-5cd06e084013",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "d7fc4338-3eaf-4d24-817b-eb5044d01d66",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "e5631c8b-9235-4f40-bbb5-0b366a8d467a",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "a29a0867-72a3-4d52-b785-6c12ef3e966d",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "628a6bda-239b-4753-87e9-ee43f35edf62",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "93b5f85f-2fd6-4309-a8bf-8951becc553f",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "582fd09b-27ac-4419-8eed-e68927f896e6",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "fcdfed38-7d58-4d7f-a56d-a0103fcae265",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "ec061cd2-25db-4beb-b78f-85ebfff5a8ca",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "001e6115-5fe4-49e8-b3eb-e147ca82022b",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "24c844a6-3cdb-48e3-9514-f7f54230adb3",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "537d8b62-0e1e-4d6e-a057-401fefc983b6",
+      "result_id": "35620350-68a9-4176-9990-4828d03b57d2"
+    },
+    {
+      "claim_id": "5b95b2ea-160e-4e44-8f16-30aedafe62db",
+      "result_id": "3a1122e9-120f-4738-b149-4213dba505f0"
+    }
+  ],
+  "comparisons": []
+}

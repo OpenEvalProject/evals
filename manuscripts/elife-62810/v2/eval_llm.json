@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Single-cell RNA sequencing of human gingival tissue identified 16 distinct cell populations across 12,411 cells from four patient biopsies. The analysis revealed three epithelial subsets, mesenchymal/stromal populations, two endothelial populations, three B cell populations, T cells, dendritic cells, mast cells, and two macrophage populations, each characterized by specific marker gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 provide comprehensive characterization of cell populations with specific marker genes and appropriate citations. The methodology is clearly described (10x Genomics platform), quality control criteria are stated (>500 transcripts), and the identification of 16 distinct populations is supported by marker gene expression patterns. The consistency between two healthy patient samples (C2, C3) validates the technical reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C120"
+    ],
+    "result": "Histological analysis revealed progressive tissue changes across disease states. Samples were staged as healthy, mild, and severe based on histological features including epithelial integrity, collagen content, and lymphocyte infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C120 describe clear histological differences between disease states with specific observations (intact epithelium in mild, lymphocyte infiltration and epithelial breakdown in severe). The staging criteria are explicitly stated and supported by H&E staining (Figure 1D). However, the staging appears subjective without quantitative metrics or blinded assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Disease progression is characterized by dynamic changes in immune and structural cell populations. B cells (follicular and plasma) show progressive increase from health to severe disease, while memory B cells and T cells peak in mild disease then decrease. Macrophages expand in mild disease consistent with tissue clearing function, while mesenchymal and epithelial populations progressively deplete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C37 describe cell population dynamics across disease states with supporting figures (Figure 1E). The observations are consistent with prior literature (C29, C32 with citations). However, the study has only one sample per disease state (except two healthy), limiting statistical power to assess significance of these changes. The term 'significant enrichment' (C36) is used without statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Re-clustering of stromal cells identified seven distinct populations: five fibroblast-like populations (S0, S2, S4, S5, S6), one myofibroblast (S1), and one pericyte (S3). These populations show distinct functional signatures including ECM organization, Wnt signaling regulation, immune regulation, and tissue repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C49 provide detailed characterization of stromal heterogeneity with marker genes and GO term enrichment. The functional annotations are supported by literature citations (C43, C46, C49). The re-clustering methodology is described in Methods. However, the functional interpretations are largely based on GO enrichment without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In mild disease, myofibroblast (S1) and pericyte (S3) populations show marked decrease, representing the most pronounced stromal change from health to mild disease. A pro-inflammatory fibroblast population (S6) expressing CD74 and AREG emerges. Collagen VI levels decrease as confirmed by immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 describe specific stromal changes in disease with supporting data (Figure 2B, 2E). The immunofluorescence validation (C54) strengthens the scRNA-seq findings. However, with only one mild disease sample, the generalizability is uncertain. The interpretation that S1/S3 loss is the 'most pronounced change' (C51) is subjective without quantitative comparison to other populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "CytoTRACE analysis based on transcriptional diversity identified S5 and S0 as less differentiated stromal subpopulations, while S1 (myofibroblasts) and S3 (pericytes) represent fully differentiated states. AEBP1 was identified as a marker of less differentiated states, with AEBP1+ cells concentrated in the subepithelial region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 describe a computational approach to infer differentiation states with appropriate citations (C55). The CytoTRACE analysis is a recognized method for predicting developmental potential. Immunohistochemistry validation of AEBP1 localization (C59, Figure 2G) supports the computational prediction. However, this remains a prediction without lineage tracing or functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Re-clustering of epithelial cells identified ten populations including two basal cell populations (E0 expressing HOPX/IGFBP5 as stem markers, E1 as more mature basal cells), cycling cells (E5), and populations with inflammatory signatures (E2, E3, E4, E8), cell cycle regulation (E6, E7), and ECM organization (E9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C72 provide comprehensive epithelial characterization with marker genes and functional annotations. The stem cell markers HOPX and IGFBP5 are supported by literature citations (C62, C63, C64). GO enrichment provides functional context. However, the stem cell identity of E0 is inferred from marker expression without functional validation (e.g., organoid formation, lineage tracing).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Epithelial populations show disease-specific changes: E6, E7 (cell cycle regulation) and E9 (ECM organization) deplete in mild disease, cycling cells (E5) decrease in mild then increase in severe, and E8 (cytokine-mediated signaling) increases in disease. NicheNet analysis predicted E8 as the main signaling source modulating the stem cell population E0 through ligands including MMP9, SPN, and HLA-DRA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 describe epithelial dynamics with supporting figures (Figure 3B). The NicheNet analysis (C77, C78) is a computational prediction of cell-cell communication with appropriate methodology citation. However, these are predictions from a single mild and single severe sample without statistical testing or experimental validation of the predicted interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Cell-cell interaction analysis revealed that in health and mild disease, stromal interactions are dominated by endothelial, stromal, macrophage, and epithelial signals. As disease progresses, endothelial and stromal signals decrease while immune cell signaling increases. Epithelial ligands IL1, EDN1, TNF, LTB, and BMP2 (mainly from proliferative cells) are predicted to drive stromal inflammatory responses, with IL1B and TNF targeting S0/S5 populations and BMP2 targeting all fibroblast-like populations and pericytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C87 describe computational predictions of cell-cell interactions using NicheNet. While the methodology is appropriate and cited, these are entirely computational predictions without experimental validation. The authors acknowledge uncertainty: 'It is unclear if the interactions described above are causative or consequential of disease progression' (manuscript text). The predictions are based on single samples per condition, limiting confidence in the generalizability of these interaction patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "IgG plasma B cells are almost absent in health but expand with disease progression. This population shows enrichment for complement system genes (CFB, C2), which play critical roles in B-cell activation and have established roles in periodontitis. Mucosal IgG responses are pro-inflammatory when involving complement activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 describe B cell dynamics with supporting data (Figure 5A) and appropriate literature context (C89, C92, C93 with citations). The complement gene enrichment is shown in Figure 5D. However, the functional significance is inferred from literature rather than demonstrated experimentally. The study lacks functional assays to confirm that these IgG plasma cells are indeed pro-inflammatory or that complement activation is occurring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The discussion contextualizes findings within existing literature on myofibroblast function, pericyte biology, complement activation in periodontitis, and the roles of IL1B and TNF in disease pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C106 are literature citations and established knowledge statements that appropriately contextualize the study findings. All claims are supported by citations to primary literature. These provide important context but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "This work provides the first comprehensive cellular landscape of in vivo human gingiva, the first detailed human characterization of oral epithelial progenitor cells, and the first comprehensive analysis of the human gingival epithelium at single-cell resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 assert novelty as 'first' comprehensive analyses. While previous bulk RNA-seq studies exist (cited in manuscript), this appears to be the first single-cell RNA-seq study of human gingiva across disease states. The claim is supported by the comprehensive characterization presented. However, the small sample size (n=1 per disease state except healthy) limits the comprehensiveness of the atlas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The introduction establishes background knowledge about oral mucosa biology, periodontal disease pathogenesis, and the roles of tissue resident cells in immunity and homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C116 are background statements from the introduction, all supported by appropriate citations. These establish the scientific context and rationale for the study but do not represent findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Quality control filtering retained cells expressing >500 transcripts to limit contamination from dead or dying cells. Variable feature selection identified the 2000 most variable features using the 'vst' method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 describe standard computational methods for scRNA-seq analysis. The 500 transcript threshold is a reasonable quality control metric, though relatively permissive compared to some studies. The use of 2000 variable features and 'vst' method are standard Seurat pipeline parameters. These methodological choices are appropriate and clearly documented.",
+    "result_type": "MINOR"
+  }
+]

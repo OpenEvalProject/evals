@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Osteoporosis is a major global health burden affecting hundreds of millions of people worldwide, with 9 million bone fragility fractures in 2000 and projections of 7-21 million annual hip fractures by 2050. The disease leads to significant clinical consequences (disabilities, pain, increased mortality) and substantial economic costs (US$17 billion in the US in 2005; \u20ac100-120 billion projected in the EU from 2010-2025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by appropriate citations to peer-reviewed literature and provide consistent epidemiological and economic data establishing the scope and impact of osteoporosis. These background claims appropriately contextualize the importance of the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Osteoporosis results from an imbalance between bone resorption and formation, with postmenopausal women at particular risk due to declining estrogen levels and aging-related effects. The disease can also occur secondary to other conditions (hyperparathyroidism, gastrointestinal diseases) or treatments (glucocorticoid administration being the most common cause of secondary osteoporosis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 accurately describe established pathophysiology of osteoporosis and are supported by appropriate citations. These represent well-established background knowledge rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C18"
+    ],
+    "result": "While numerous osteoporosis treatments have emerged targeting different mechanisms, very few treatment schemes have been clinically tested relative to the total number of possible dosing regimens and drug combinations. An integrated mathematical framework for multiple drugs that can quantitatively predict effects of drug combinations in sequence and in parallel is not yet available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C18 establish the gap in current knowledge that motivates this study. The logical inference that few combinations have been tested (C14) is reasonable given the combinatorial explosion of possibilities, and the claim about lack of integrated frameworks (C18) is supported by the literature review provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior mathematical modeling work has described bone-forming and bone-resorbing cell population dynamics coupled through signaling pathways, with models qualitatively reproducing effects of various conditions on bone turnover and elucidating regulatory mechanisms underlying mineral balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 accurately summarize prior modeling work with appropriate citations, establishing the foundation upon which the current work builds. These represent accurate characterizations of the existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The manuscript describes established mechanisms of bone turnover including the cellular basis (osteoclasts, osteoblasts, osteocytes), their organization into bone remodeling units (BRUs), and key regulatory pathways involving RANKL, sclerostin, estrogen, PTH, and matrix-derived signaling factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C46 describe well-established bone biology supported by appropriate citations. These represent accurate background knowledge that forms the biological foundation for the model rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors developed a mathematical model comprising eight dynamic components (pre-osteoclasts, osteoclasts, pre-osteoblasts, osteoblasts, osteocytes, sclerostin, bone density, and BMC) with BMD calculated as the product of bone density and BMC. The model incorporates age-dependent estrogen concentration and restricts PTH description to anabolic administration regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 clearly describe the model structure and design choices. The model components are well-defined and the restriction to anabolic PTH regimes (C51) is appropriately justified given the clinical focus on osteoporosis treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model was calibrated using published clinical data on long-term BMD age dependence and drug responses, yielding an inferred skeletal bone turnover rate of ~6% per year (consistent with cortical bone values). The model captured BMD and BTM dynamics across all calibration datasets with MAPE for BMD consistently below 1% and correct qualitative BTM behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe the calibration results with quantitative metrics (MAPE <1%) and reference to supporting data in appendices. The inferred turnover rate (C53) being consistent with literature values provides validation. However, the claim of \"remarkable accuracy\" should be interpreted cautiously given that these are calibration (not validation) datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C57",
+      "C58",
+      "C82",
+      "C83"
+    ],
+    "result": "Using a single parameter set, the model demonstrated predictive capacity for complex medication scenarios including sequential treatments with up to three drug types and parallel treatments with two drugs. Validation MAPEs for BMD were consistently below 1.5%, with the model receiving only dosing information (not BMD/BTM measurements) during validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C57-C58, C82-C83 describe rigorous validation methodology where the model predicted outcomes without being informed by the validation data. The quantitative performance (MAPE <1.5%) and ability to handle complex combination therapies represent strong evidence for the model's predictive capacity. The validation on independent datasets is a key strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C69"
+    ],
+    "result": "The model demonstrates predictive capacity for complex medication scenarios including sequential and parallel drug combinations, and can predict effects of drug dosing regimens and combination therapies beyond those used for model development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C69 are supported by the validation results showing accurate predictions for complex treatment schemes not used in calibration. This represents a key finding demonstrating the model's utility beyond simple interpolation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C59",
+      "C60",
+      "C61",
+      "C66",
+      "C67"
+    ],
+    "result": "Simulations reveal large potential to improve BMD gains by exploiting synergistic interactions between drug classes without increasing total drug administered. Different medication sequences produced markedly different outcomes, with some sequences achieving higher maximum BMD but worse long-term outcomes, suggesting considerable potential for optimization of dosing regimens and drug sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C59-C61, C66-C67 describe simulation results showing differential outcomes for different drug sequences (Figure 3). The finding that sequence matters despite identical total drug amounts is well-supported by the model simulations. However, these are model predictions that would require clinical validation to confirm actual patient outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C71",
+      "C72"
+    ],
+    "result": "Model simulations suggest that short-term BMD gains may be limited as a proxy for overall clinical benefit, as some initially successful treatment schemes may lead to 'rebound' effects of accelerated bone loss after treatment end, with rapid BMD increases not necessarily accompanied by sustained elevation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C71-C72 describe an important model prediction about rebound effects. While supported by the model simulations (Figure 3C), this represents an extrapolation beyond available clinical data and would require long-term follow-up studies to validate. The authors appropriately frame this as a prediction/caution rather than established fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The model provides a mechanistic explanation for differential treatment outcomes: drug-mediated inhibition of osteoclastogenesis leads to build-up of undifferentiated osteoclast precursors that rapidly differentiate after treatment end, causing accelerated bone resorption. Specific drug sequences can attenuate this rebound effect by enhancing osteoclast apoptosis during the rebound phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 describe mechanistic insights from the model about precursor pool dynamics and rebound effects. These represent plausible biological mechanisms consistent with the model structure, though they are model-derived hypotheses rather than directly measured phenomena. The mechanistic explanation is internally consistent with the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The effectiveness of the modeling approach suggests that despite the complexity of bone mineral metabolism, the dynamics relevant for osteoporosis medications can be condensed into only a few components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 represents a reasonable inference from the model's success in capturing diverse clinical data with a simplified framework. However, this should be interpreted as demonstrating sufficiency for the specific modeling goals rather than proving these are the only relevant components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Some model parameters (e.g., concentration thresholds for signaling factors) were inferred through calibration from BMD and BTM dynamics alone rather than being directly measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 appropriately acknowledges a limitation of the modeling approach. This is an honest assessment that some parameters are effectively fitted rather than independently validated, which is important for interpreting the model's predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C80"
+    ],
+    "result": "The authors speculate that the model's generic representation of bone remodeling makes it adaptable to other types of osteoporosis, with potential future extensions including additional medications, comorbidities, lifestyle factors, and integration with statistical models relating BMD to fracture risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 and C80 represent speculations about future applications rather than demonstrated results. While the modular structure may facilitate extensions, these remain untested possibilities. The claims are appropriately framed as potential future work rather than established capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The manuscript discusses the relationship between BMD, fracture risk, and clinical practice, noting that while BMD is easily measured and has a prime role in therapy evaluation, its relationship to fracture risk is complex, with clinical fracture risk calculations involving demographic and lifestyle factors alongside BMD measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 accurately describe established clinical knowledge about BMD measurement and fracture risk assessment, supported by appropriate citations. These provide important context for interpreting the model's focus on BMD as an outcome measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Analysis of the aging dataset revealed that relative changes in BMD were remarkably consistent among ethnic groups (non-Hispanic white, non-Hispanic black, and Mexican American women) despite differing absolute baselines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 describes a finding from the data analysis (Appendix 1\u2014figure 1C) that justified using a single ethnic group for calibration. This represents appropriate data exploration supporting a methodological choice.",
+    "result_type": "MINOR"
+  }
+]

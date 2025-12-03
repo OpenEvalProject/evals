@@ -1,0 +1,161 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "The TEAL model is a discrete-time stochastic process that tracks tumor-associated antigens (TAAs) during cancer-immune interactions, with outcomes of escape, elimination, or equilibrium. The model has a unique optimal evasion strategy that maximizes long-run population survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C21, C22, and C24 collectively describe the TEAL model framework and its mathematical properties. The model is rigorously defined with clear state transitions, and the uniqueness of the optimal solution is proven mathematically (C16). The model appropriately mirrors known biological outcomes (C24) with proper citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Optimal (active) evasion strategies result in substantially higher cancer escape probabilities (150% increase) compared to passive strategies, with wider escape time distributions and sustained interactions with the immune system before escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C34-C37 are supported by simulation data shown in Figures 2 and 3. The 150% increase in escape probability is quantified (C34), and the broader escape time distributions (C35) and sustained interactions (C37) are demonstrated across various recognition landscapes (C36). Statistical significance is reported (p<10^-5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Optimal evasion strategies generate substantial diversity in post-escape tumor antigenicity, with immune recognition efficiency and microenvironment penalties determining whether tumors accumulate or lose TAAs. Larger penalties result in higher post-escape TAA levels, while efficient immune recognition depletes TAAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17, C18, C40-C42 are supported by simulation results in Figure 4 showing distributions of post-escape TAAs under varying conditions. The model predictions about the relationship between recognition efficiency, penalties, and TAA levels are clearly demonstrated and mechanistically explained (C42). This diversity distinguishes optimal from passive strategies (C17).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C19"
+    ],
+    "result": "The model predicts constant (linear) mutation accumulation over time, consistent with empirical observations. Strong immune selective pressure results in tumor neoantigen depletion and poor clinical outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 connects model predictions to empirical data with appropriate citations (Lawrence et al., 2013; Alexandrov et al., 2013). Claim C19 is supported by citations to empirical work (Rosenthal et al., 2019; Lakatos et al., 2020) showing agreement between model predictions and clinical observations. The mathematical derivation of linear mutation accumulation is provided in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The model provides mechanistic predictions for clinical observations and therapeutic strategies, including differences between hematological and solid tumors, the utility of neo-adjuvant therapies, and strategies to offset TAA depletion by increasing immune microenvironment hostility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C59 represent predictions and inferences from the model rather than direct experimental validation. While the predictions are logically consistent with the model framework and supported by citations to relevant empirical work, they remain theoretical predictions requiring experimental validation. The model provides a framework for understanding these phenomena but does not directly test these hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Multiple biological mechanisms support the possibility that cancer cells can sense immune recognition, including IL-6/ATM signaling, IFN-gamma/STING pathway activation, and granzyme B-induced stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by appropriate citations to experimental work demonstrating these signaling pathways. These claims establish biological plausibility for the model's assumption that cancer populations can sense and respond to immune recognition. Each mechanism is properly attributed to prior experimental studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior work has established the mathematical framework for drug resistance, the cancer-immune interaction dynamics, mechanisms of immune evasion, and evidence for adaptive evolution in response to stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C14 appropriately cite and summarize prior work establishing the foundation for this study. Each claim is supported by relevant citations. These claims accurately represent the state of knowledge and properly contextualize the current work within the existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The TEAL model has specific assumptions and limitations, including not distinguishing between types of TAA loss, tracking the fittest clone, equating antigen loss with subpopulation progression, and not accounting for variations in individual TAA antigenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 transparently describe model assumptions and limitations. These are clearly stated in the discussion and methods sections. The authors appropriately acknowledge what the model does and does not capture, including potential extensions (C63). This transparency is important for proper interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Cancer treatment failure often results from tumor evolution, both genotypic and phenotypic, away from sensitive cell states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a well-established general statement about cancer treatment failure supported by extensive prior literature. This represents accepted knowledge in the field and appropriately frames the motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The TEAL model represents a broadly applicable framework for studying optimized collective decision-making in evolving populations, with implications for treatment strategies if cancer populations employ informed evasion strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C67 appropriately describe the broader implications and future directions of the work. These are reasonable statements about the potential impact and applicability of the framework, appropriately framed as possibilities requiring experimental validation. The authors acknowledge that experimental validation is a priority (C66).",
+    "result_type": "MINOR"
+  }
+]

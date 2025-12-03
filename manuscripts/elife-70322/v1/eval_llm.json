@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Maternal DEHP exposure induces testicular abnormalities in F1 and F2 generations. F1 males showed three types of abnormalities (Type A vacuoles, Type B no lumen, Type C apoptotic cells) with a six-fold increase in abnormal tubules compared to controls. F2 males showed similar abnormalities with a two-fold increase, but Type B abnormalities were absent in F2, suggesting differences in spermatogenic failure between generations. Additionally, multinucleated germ cells increased significantly in E19.5 DEHP-exposed embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are well-supported by histological data in Figures 1A-D and Figure 1\u2014figure supplement 1E-F, with quantitative analysis showing statistically significant increases in abnormal tubules. The observation that Type B abnormalities are absent in F2 is clearly documented, supporting the inference of generational differences in phenotype (C35). The data are consistent with prior literature (Doyle et al., 2013; Ungewitter et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "RRBS analysis revealed that maternal DEHP exposure induces DNA hypermethylation preferentially in spermatogenesis-related genes in fetal germ cells, which persists to F1 spermatogonia. In E19.5 germ cells, 80 promoters (78 genes) were hypermethylated, with enrichment of spermatogenesis-related GO terms. In F1 spermatogonia, 191 promoters (182 genes) were hypermethylated with similar GO enrichment. Twenty-six genes were hypermethylated in both E19.5 germ cells and F1 spermatogonia, including 9 spermatogenesis-related genes. No such overlap was found with spermatocytes or round spermatids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C50 are based on RRBS data with only n=2 biological replicates, which the authors acknowledge provides \"low statistical power to capture reliable global differences.\" While the data show consistent patterns and GO enrichment is statistically significant (FDR<0.05), the small sample size limits confidence in the genome-wide methylation differences. The identification of 26 overlapping genes (C47-C48) and the inference about preferential hypermethylation (C50) are reasonable but would benefit from additional validation with larger sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Three spermatogenesis-related genes (Hist1h2ba, Sycp1, Taf7l) identified as hypermethylated in both E19.5 germ cells and F1 spermatogonia showed significantly decreased expression in DEHP-exposed F1 spermatogonia. Bisulfite sequencing confirmed significant hypermethylation of Hist1h2ba (two regions) and Sycp1 (one region) promoters in DEHP-exposed spermatogonia, while Taf7l showed a non-significant trend toward hypermethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by RT-qPCR data (n=6, Figure 4A) showing significant downregulation of all three genes, and bisulfite sequencing data (n=4, Figure 4B-C) confirming hypermethylation of Hist1h2ba and Sycp1 with appropriate statistical tests (Mann-Whitney U test). The inference that hypermethylation contributes to decreased expression (C55) is reasonable given the correlation, though causality is not definitively established without functional validation at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Luciferase reporter assays demonstrated that forced methylation of the promoters of Hist1h2ba, Sycp1, and Taf7l significantly decreased reporter gene expression in HEK293T cells, supporting the hypothesis that hypermethylation of these genes results in decreased expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are well-supported by luciferase reporter assay data (n=3 independent experiments, Figure 6B-D) showing statistically significant decreases in activity for all three methylated promoters. This functional validation strengthens the mechanistic link between promoter methylation and gene silencing, though the assays were performed in a heterologous cell line (HEK293T) rather than germ cells, which is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C94",
+      "C96"
+    ],
+    "result": "Methylation levels of Hist1h2ba, Sycp1, and Taf7l decreased during spermatogenesis from spermatogonia to round spermatids in F1 testis, with DEHP-exposed samples showing more drastic demethylation than controls. This suggests that hypermethylation induced by DEHP is not directly transmitted to F2, and that these genes undergo demethylation during spermatogenesis followed by re-methylation after fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by RRBS data shown in Figure 5 (n=2 replicates) demonstrating progressive demethylation across germ cell stages. The inference that hypermethylation is not directly transmitted to F2 (C94) is logical given the demethylation data. The speculation about re-methylation after fertilization (C96) is reasonable based on cited literature (Kremsky and Corces, 2020) on transcription factor binding and methylation dynamics, though this remains to be directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "F2 spermatogonia showed no statistically significant changes in expression or methylation of Hist1h2ba, Sycp1, and Taf7l after maternal DEHP exposure, though weak non-significant trends were observed. Methylation levels in F2 spermatogonia were generally lower than in F1, possibly due to differences in cell purity (Gfra1 enrichment was higher in F1 than F2). The authors suggest that DEHP-induced epigenetic changes may weaken or disappear in F2 alleles inherited from exposed males and untreated females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C89-C93 are supported by RT-qPCR and bisulfite sequencing data (n=3 for F2, Figure 4\u2014figure supplement 2A-D) showing no significant differences, and by Gfra1 expression data (C92) suggesting differences in spermatogonial purity between F1 and F2 samples. The inference about weakening of epigenetic effects in F2 (C93) is logical given the breeding scheme (DEHP-exposed males \u00d7 untreated females), though the authors acknowledge this as a limitation and potential confound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The histone variants HIST1H2AA and HIST1H2BA are abundant in testis and essential for spermatogenesis, as mice lacking both genes are sterile. These genes are located tandemly in inverted orientation on chromosome 13 and share a promoter. Following maternal DEHP exposure, both Hist1h2ba expression was significantly downregulated and Hist1h2aa showed a non-significant trend toward reduced expression, with abnormal nuclear localization in spermatids resembling the phenotype of double knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are well-supported by established literature (Trostle-Weige et al., 1982; Shinagawa et al., 2015; Huh et al., 1991) and by RT-qPCR data (Figure 4A) showing significant Hist1h2ba downregulation and a trend for Hist1h2aa. The phenotypic comparison to knockout mice (C67) is reasonable based on histological similarities, and the inference about shared promoter effects (C71) is logical given the genomic organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "SYCP1 is a component of the synaptonemal complex essential for meiosis, and Sycp1 null mice are sterile due to spermatogenic arrest at pachytene stage. Similar abnormalities were observed in F1 mice following maternal DEHP exposure, suggesting that downregulation of Sycp1 expression contributes to abnormal spermatogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by established literature on SYCP1 function (de Vries, 2005) and by the phenotypic similarities between Sycp1 null mice and DEHP-exposed mice shown in Figure 1A. The inference that Sycp1 downregulation contributes to spermatogenic defects (C74) is reasonable based on the genetic evidence and observed phenotypes, though direct causality is not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "TAF7L is a testis-specific transcription factor, and Taf7l null mice exhibit sperm with abnormal morphology, reduced motility, and large vacuoles in seminiferous tubules. These defects resemble the abnormal tubules observed in F1 testis following maternal DEHP exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by established literature on TAF7L function (Pointud et al., 2003; Cheng et al., 2007) and by phenotypic comparisons with DEHP-exposed mice. The inference that Taf7l downregulation contributes to the observed phenotype (C77) is reasonable based on the similarity to knockout phenotypes, though direct causality is not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The authors conclude that Hist1h2ba, Sycp1, and Taf7l are \"epi-mutated\" following maternal DEHP exposure, and that downregulation of these genes may cause abnormal spermatogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 represent the main conclusions of the study, integrating observations of hypermethylation (C52-C54), downregulation (C51), functional validation (C59-C62), and phenotypic similarities to knockout models (C67, C74, C77). While the term \"epi-mutation\" is appropriate given the persistent methylation changes, the causal relationship (\"may be a cause\") is appropriately qualified as the study demonstrates correlation and functional plausibility but not definitive causation through rescue experiments or other direct tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The introduction establishes the context of transgenerational epigenetic inheritance through citations to prior work on environmental influences (nutrition, chemicals, aging, stress) affecting offspring phenotypes via epigenetic modifications in germ cells across various species. Specific focus is given to DEHP exposure effects on spermatogenesis and multiple organ systems, with the gap that causal relationships between DNA methylation changes and spermatogenic defects have not been established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C29 are background claims supported by appropriate citations to established literature. These provide context for the current study and accurately represent prior knowledge in the field. Claim C22 correctly identifies the knowledge gap that motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The authors confirm that abnormal spermatogenesis following maternal DEHP exposure, first demonstrated in CD1 mice, has been subsequently observed in multiple mouse strains including C57BL/6 and in rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by appropriate citations (Doyle et al., 2013; Prados et al., 2015; Chen et al., 2015) and provide context for the current study's use of C57BL/6 mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose several speculative mechanisms for DEHP-induced DNA hypermethylation in fetal germ cells, including: (1) upregulation of Dnmt1 expression, (2) ROS production by MEHP leading to enhanced DNA methylation, (3) highly accessible chromatin structure around spermatogenesis-related genes in fetal germ cells facilitating preferential methylation, and (4) DEHP/MEHP binding to PPARs and CAR potentially recruiting DNA methylation machinery to target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C88 are explicitly speculative (\"may be involved,\" \"may facilitate,\" \"may thereby promote\") and based on indirect evidence from cited literature rather than direct experimental testing in this study. While the proposed mechanisms are plausible and grounded in prior work (Quinnies et al., 2015; Wen et al., 2020; Kasahara et al., 2002; Afanas'ev, 2014; Li et al., 2018; Corton and Lapinskas, 2005; Eveillard et al., 2009), they remain hypothetical and would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors discuss potential mechanisms for transgenerational inheritance of spermatogenic defects despite demethylation during spermatogenesis, proposing that: (1) transcription factor binding affects methylation dynamics during germ cell reprogramming, (2) DNA methylation changes may indirectly perturb gene expression in subsequent generations (as shown for embryonic undernutrition), and (3) histone modifications retained in sperm may mediate transgenerational effects in a DNA methylation-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95, C97-C100 are based on cited literature (Kremsky and Corces, 2020; Radford et al., 2014; Yamaguchi et al., 2018) and represent speculative mechanisms to explain the F2 phenotypes observed in this study. While these are plausible hypotheses grounded in prior work, they are not directly tested in the current manuscript and remain speculative (\"may affect,\" \"may influence\").",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The abstract summarizes the main findings: maternal DEHP exposure results in DNA hypermethylation of spermatogenesis-related gene promoters in fetal germ cells, with hypermethylation of Hist1h2ba, Sycp1, and Taf7l persisting to adult spermatogonia, resulting in downregulation of these genes. Forced methylation of these promoters silenced expression in reporter assays, suggesting that hypermethylation-induced downregulation leads to spermatogenic defects in F1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 accurately summarize the main experimental findings of the study, which are supported by the data discussed in other result groups (RRBS analysis, RT-qPCR, bisulfite sequencing, luciferase assays, and histological observations). The conclusion is appropriately qualified to F1 generation (C6) given the lack of significant changes in F2.",
+    "result_type": "MAJOR"
+  }
+]

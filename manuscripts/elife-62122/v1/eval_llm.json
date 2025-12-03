@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study addresses malaria elimination in Haiti, a low-transmission setting where Plasmodium falciparum prevalence is below 1% in many areas and the dominant vector Anopheles albimanus is inefficient. The National Malaria Control Program (PNCM) has prioritized elimination and collaborated with the Malaria Atlas Project to construct a national-level endemicity map and seasonality profile using routine health facility case reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish the epidemiological context and study objectives. The claims are well-supported by appropriate citations to WHO reports, peer-reviewed literature on vector biology, and descriptions of the PNCM's strategic approach. These contextual claims provide necessary background for understanding the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The study used monthly malaria case counts from 771 health facilities reporting at least once in 2019 (a subset of 1,191 facilities), covering January 2014 to December 2019 with 77.5% reporting completeness. After imputation and aggregation, 450 'aggregate pseudo-facilities' were formed. High-resolution satellite covariates, population data from Facebook's High Resolution Settlement Layer, and travel-time maps were incorporated. Serological data from 24,514 children in 820 schools (TAS dataset, 2014-2016) were used for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C104-C114 describe the primary data sources and are well-documented with specific quantitative details. The data processing steps (aggregation, imputation) are clearly stated. The use of multiple data types (case counts, covariates, serological validation data) is appropriate for the modeling framework. Data completeness metrics provide transparency about data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "A novel three-stage hierarchical Bayesian modeling framework was developed to map malaria incidence from health facility data. Stage 1 imputes missing data and de-trends case counts toward RDT-standardized 2019 levels. Stage 2 fits a spatial-only geostatistical model with flexible catchment sub-model to estimate annual incidence and facility attractiveness. Stage 3 fits a spatio-temporal model conditional on the catchment to explain seasonal variation. Modularization guards against error magnification between components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120, C122 describe the methodological framework. The three-stage approach is clearly articulated with appropriate justification for modularization (computational feasibility, focus on endemic transmission, error containment). The hierarchical Bayesian structure is standard for geostatistical modeling. Citations to relevant methodological literature (Plummer 2015, Jacob 2017) support the approach. The novelty claim regarding the catchment sub-model appears reasonable given the complexity described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The model reveals extreme spatial heterogeneity in malaria incidence across Haiti. Large areas in northern departments (Nord-Ouest, Nord, Nord-Est) and the Cha\u00eene de la Selle mountain range have very low incidence (<1 per 10,000 PYO). High-burden communities (>50 cases per 1,000 PYO) are concentrated along the coastline and rivers of the Tiburon peninsula (Grand'Anse, Sud, Nippes departments) with populations-at-risk of 322,693, 322,956, and 108,077 respectively. Additional moderate-burden areas exist in the central valley (Artibonite and Centre departments) with populations-at-risk of 174,766 and 166,938, and around Port-au-Prince.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32, C67-C71 present the main spatial findings with specific quantitative estimates and confidence intervals. The geographic patterns are consistent with the visual evidence in Figures 1-3. The population-at-risk estimates include appropriate uncertainty quantification (95% CIs). The identification of high-burden areas in Grand'Anse and moderate-burden areas in the central valley is clearly supported by the model outputs. The finding of substantial small-scale heterogeneity within departments is a key result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Broad credible intervals around population-at-risk estimates reflect systematic uncertainties from de-trending, RDT-standardization, and imputation. High variance regions correspond to the Cha\u00eene de la Selle mountain range (explained by population sparsity and extreme elevation, but likely correctly classified as low risk due to unsuitable vector habitat) and patches in Artibonite, Nord, and Nord-Ouest (explained by ongoing microscopy use at some facilities, which has been characterized as inadequate in Haiti).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 provide important interpretation of model uncertainties. The explanations for high-variance regions are reasonable and supported by citations (Frederick et al. 2016 for vector habitat; Landman et al. 2015, Weppelmann et al. 2018 for microscopy accuracy). The acknowledgment of systematic uncertainties from data processing steps demonstrates appropriate scientific caution. The inference about the Cha\u00eene de la Selle being correctly classified despite high uncertainty is justified by ecological reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Fine-scale spatial patterns below health facility catchment extent are driven by environmental covariates. The most important covariates are elevation, accessibility, road presence/absence, and potential evapotranspiration (three topological, one climatic). However, these should not be interpreted causally\u2014they reflect the fitted regression structure. The spatially varying slope parameters can change sign across regions (e.g., elevation has opposite effects in different departments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe covariate importance findings with appropriate caveats. The identification of topological covariates as dominant is interesting and supported by Figure 4. The authors correctly caution against causal interpretation (C41, C53), citing Arambepola et al. 2020 showing differences between regression-based and causal variable selection. The spatially varying coefficient structure (C43-C44) is a strength of the modeling approach, allowing relationships to differ geographically. The example of elevation having opposite effects in different regions is well-explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C89",
+      "C90",
+      "C91",
+      "C121"
+    ],
+    "result": "The catchment model allows patients to split attendance between multiple facilities based on travel time and learned attractiveness weights, resulting in overlapping catchments. This gravity-style representation is more sophisticated than Euclidean distances or hard boundaries, though still a simplification. Almost 96.4% of populated pixels lie within 100 minutes travel time from their nearest facility. Validation against TAS serological data suggests the model is on the right track for downscaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C89-C91, C121 describe the catchment sub-model, a key methodological innovation. The overlapping catchment structure is more realistic than hard boundaries and is well-justified. The quantitative finding about accessibility (C121) is important for understanding treatment-seeking behavior. The acknowledgment that the model is still a simplification (C90) demonstrates appropriate scientific humility. The validation statement (C91) is supported by the correlation results with TAS data (C56, C63-C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C73"
+    ],
+    "result": "Malaria incidence in Haiti exhibits strong uniphasic seasonality, peaking in December-January and reaching a low in April-May. A small number of locations (notably near Jeremie in Grand'Anse) show tentative biphasic patterns with a second peak in June, possibly an artifact of epidemic outbreaks. In high-incidence areas, the most important positive covariate is EVI lagged 2 months; the most important negative covariates are LST lagged 1 month (central valley) and unlagged EVI (Grand'Anse). These should not be interpreted as causal drivers, and climatic/vegetation covariates are highly collinear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54, C73 present the seasonality findings. The dominant uniphasic pattern is clearly shown in Figure 6 and is a major result. The tentative biphasic pattern near Jeremie is appropriately qualified as uncertain (C48-C49). The covariate findings (C50-C52) are supported by Figure 7. The caveats about causal interpretation (C53) and collinearity (C54) are important and demonstrate appropriate statistical reasoning. The seasonality profile has clear programmatic implications for timing interventions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Validation against TAS serological data (AMA/MSP responses in school-aged children) shows a Pearson correlation of 0.426 (95% CI: 0.353-0.499) between sero-prevalence and predicted incidence. Much of the scatter likely derives from sampling noise. A discrepancy exists in Nord department where moderate-to-high sero-prevalence schools contrast with low predicted incidence, possibly reflecting transmission decline during 2014-2016, though changes in reporting cannot be distinguished from genuine trends. The incidence surfaces reflect current transmission under recent interventions, not inherent environmental receptivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 present the validation results. The correlation coefficient of 0.426 indicates moderate agreement between two independent data sources measuring different aspects of transmission (current incidence vs. lifetime exposure). The explanation for scatter (C57) is reasonable given small TAS sample sizes. The Nord department discrepancy (C59-C61) is honestly reported and the proposed explanation (transmission decline) is plausible. The important caveat (C62) that maps reflect current transmission under interventions rather than baseline receptivity is crucial for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A minimal alternative approach using na\u00efve imputation and na\u00efve catchment structure yields correlation of 0.301 (95% CI: 0.215-0.369) against TAS data, compared to 0.426 for the preferred model. Adding de-trending, imputation, and diagnostic correction improves this to 0.331 (95% CI: 0.257-0.398). The na\u00efve approach suggests transmission in Grand'Anse is concentrated in sharp hotspots (>100 cases per 1,000 PYO) rather than spread more evenly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 provide important comparative validation showing the value of the sophisticated modeling approach. The preferred model shows substantially better correlation with validation data (0.426 vs 0.301), with non-overlapping confidence intervals. The incremental improvement from data processing steps (0.301 to 0.331) and from the full model (0.331 to 0.426) demonstrates the value of both components. The comparison of spatial patterns (C65) illustrates how the na\u00efve approach produces unrealistic sharp hotspots. This is strong evidence supporting the methodological choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The maps have been used operationally to focus IRS and focal mass drug administration in Grand'Anse, derive epidemiologically relevant operational units in five priority communes, and rank areas by transmission strength (Rc) to determine intervention targeting in 2018 and 2020. Fine-scale probabilistic maps offer more nuanced stratification than commune-level categorical maps or elevation-based dichotomous maps. Point-of-care case counts can generate programmatically useful maps providing fine-scale risk stratifications and seasonality profiles for targeting interventions. Outputs are readily updatable and will be valuable for defining residual transmission foci as elimination nears.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C74-C78, C99-C103 describe the operational impact and programmatic value of the work. The actual use of maps for intervention planning in Grand'Anse (C24, C74-C76) demonstrates real-world impact. The comparative statements about superiority over simpler approaches (C77-C78) are supported by the validation results. The conclusions about utility (C99-C101) are justified by the demonstrated applications. The statements about updatability (C102) and future value (C103) are reasonable projections. This represents successful translation of research to public health practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Important limitations include lack of information on spatial variations in treatment-seeking behavior (some Haitians seek care outside the national system). The study adjusted for travel-time effects using a model from an African setting, which requires refinement with local data. Seasonal migration and human movement are not explicitly modeled due to lack of high-fidelity movement data for Haiti, though Port-au-Prince appears strongly connected to other departments. The model maps where people at risk reside, not necessarily where infections were contracted. Substantial cases occur around Port-au-Prince, but the role of local transmission vs. importation is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 provide honest assessment of important limitations. The lack of treatment-seeking data (C79-C81) is a significant gap, and the use of an African-calibrated model is appropriately flagged as requiring local validation. The inability to model human movement (C82-C84) is a real limitation, though the authors reasonably note that high-risk areas are primarily rural where long-distance commuting is unlikely (C86). The distinction between residence and infection location (C85, C88) is an important conceptual point. The acknowledgment of these limitations strengthens rather than weakens the paper by demonstrating scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Ongoing and future work includes: (1) exploring more complex catchment sub-models in Artibonite using case tracing data, which reveals patients sometimes travel far beyond nearest facilities (possibly to avoid illegal charges); (2) incorporating serological data beyond validation to refine risk maps; (3) developing methods for simultaneous modeling of multiple data types (point and areal data, multiple disease metrics), which is an active research area; and (4) further refinement of Grand'Anse incidence maps using multiple data types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 describe ongoing research directions. The case tracing work in Artibonite (C92-C94) addresses catchment model limitations with empirical data. The finding that patients sometimes bypass nearby facilities (C93) is important for understanding healthcare-seeking behavior. The proposed integration of serological data (C95-C96) and multiple data types (C97-C98) represents logical extensions supported by appropriate citations. These future directions are well-motivated by the current study's limitations and findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The study is situated within the broader context of model-based geostatistics for disease mapping. In low-transmission settings like Haiti, transmission becomes focalized and low prevalence forces intensive survey designs. Routine passive surveillance may be more effective than community surveys for describing heterogeneity. Challenges include unknown catchment extents, lack of information on treatment-seeking and diagnostic practices, and validation difficulties. Serological tools offer an alternative by targeting lifetime exposure with lower sampling variance but reduced temporal precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C22 provide methodological context and rationale. The claims are well-supported by extensive citations to relevant literature on geostatistics (C9-C10), data quality issues (C11), low-transmission challenges (C12-C14), methodological challenges (C15-C19), and alternative approaches (C20-C22). This contextual framing effectively positions the study within the field and justifies the methodological choices. The progression from general methods to specific challenges to the proposed approach is logical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C72"
+    ],
+    "result": "The fine-scale mapping brings greatly refined understanding of the elimination challenge in Haiti. Within-department heterogeneity can be explained in a predictive sense by differences in accessibility, elevation, road presence/absence, and potential evapotranspiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C72 provide summary statements about the study's contribution. The claim of \"greatly refined understanding\" (C66) is justified by the fine-scale spatial resolution (1\u00d71 km), incorporation of multiple data sources, and demonstrated operational utility. The predictive explanation of heterogeneity (C72) is supported by the covariate analysis (C40, C72), though appropriately qualified as predictive rather than causal. These summary claims accurately reflect the study's achievements.",
+    "result_type": "MAJOR"
+  }
+]

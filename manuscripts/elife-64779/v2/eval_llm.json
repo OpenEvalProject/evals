@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors developed a novel microfluidic device called the 'sisters machine' that traps sister cells in v-shaped channels, maintaining them in identical environments for 20-160 generations. The device design does not alter division statistics compared to straight channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 describe the device design and its key feature of maintaining identical environments for sister cells. Claims C26-C28 provide validation data showing the device works as intended. The experimental setup is well-documented with appropriate controls comparing v-shaped to straight channels (C26), demonstrating methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors demonstrate that different traps in microfluidic devices create distinct micro-niches with different autocorrelation functions (ACFs), and that averaging across traps erases cellular memory dynamics, reducing apparent memory to ~2 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by citations and experimental data (Figure 1\u2014figure supplement 1, C66). Claim C15 is a logical inference from the observation of distinct ACFs. Claim C67 provides quantitative support showing that averaging yields ~2 generation decay time. This provides crucial motivation for the new experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C25"
+    ],
+    "result": "Sister cells within the same trap exhibit strikingly similar growth dynamics, while sister cell pairs in different traps show significantly different growth patterns, supporting micro-niche formation in the microfluidic device.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are directly supported by experimental data in Figure 2A. Claim C25 is an inference supported by Figure 2B showing different standard deviations for sister cells versus random pairs. The evidence clearly demonstrates environmental heterogeneity between traps while confirming environmental similarity within traps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C70",
+      "C71"
+    ],
+    "result": "Cell-cycle time of sister cells remains strongly correlated for up to 8-9 successive cell divisions (half-life ~4.5 generations) regardless of environmental conditions, while neighbor cell correlation decays within three generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by experimental data in Figure 4B-C and supplementary figures. Claim C30 is validated across different conditions (Figure 4\u2014figure supplement 3). Claims C70-C71 provide quantitative details. The use of 122 sister cell pairs from three experiments provides adequate statistical power. However, the manuscript lacks explicit statistical testing (e.g., confidence intervals, p-values) to support claims of significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C72",
+      "C73"
+    ],
+    "result": "Sister cell size correlation decays slowly over ~7 generations (half-life ~3.5 generations), while neighbor cells show rapid decay within two generations similar to ACF, and random pairs show no correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by experimental data in Figure 4D-E. Claims C72-C73 provide quantitative details consistent with the main claims. The pattern is similar to cell-cycle time but with slightly shorter memory. The control comparisons (neighbor cells and random pairs) strengthen the interpretation that the observed correlation is due to shared inheritance rather than environmental factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Sister cell elongation rates exhibit maximum variation immediately after division, with smaller sisters growing faster. This variation decreases to minimum within one cell cycle (~30 min), demonstrating that growth rates are not constant throughout the cell cycle and inversely scale with inherited size fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by experimental data in Figure 5B and its inset. The finding challenges previous assumptions (C43 cites contradicting literature). Claim C42 is additionally supported by citation to Kohram et al., 2020. The temporal resolution (~11 images per generation, C28) is sufficient to capture intra-cycle dynamics. However, the mechanism underlying size-dependent growth rate adjustment is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Inheritance dynamics are property-specific, with restraining forces varying significantly among cellular properties and extending up to ~10 generations, working to restrain variation among cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the main conclusions of the study, supported by the diverse memory patterns observed for different properties (cell-cycle time, size, growth rate, protein concentration). Claims C51-C53 reiterate these findings. The experimental data across multiple figures (4B-E, 5A-C) demonstrate property-specific dynamics. However, the ~10 generation claim appears to be an upper bound based on cell-cycle time data, while other properties show shorter memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C56"
+    ],
+    "result": "Protein concentration exhibits relatively short-term memory (~2 generations), which may be protein-specific or reflect plasmid-based expression, suggesting cells are less restrictive of protein concentration compared to other properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50 are explicitly speculative (evidence_type: SPECULATION). Claim C56 is an inference from limited data. Figure 5C and Figure 5\u2014figure supplement 4 show short memory, but only two promoter types were tested (LacO and \u03bb-phage Pr), both on plasmids. Without chromosomal expression data or testing of multiple proteins, the generalizability is unclear. The speculation about plasmid vs. chromosomal expression is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Sister cells inherit similar cellular content that determines biochemical activity rates and growth rates, leading to similar growth rates once uneven size partitioning is compensated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 combine established biological knowledge with inference from experimental observations. The convergence of growth rates after initial divergence (Figure 5B) supports this interpretation. However, the claim about 'similar content' is not directly measured\u2014the authors infer this from the observed phenotypic convergence. Direct measurement of inherited molecular content would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cellular memory persists for several generations and limits variation in cellular characteristics including growth rate, with implications for understanding population growth and fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 summarize the main findings supported by the experimental data throughout the manuscript. Claim C59 is a forward-looking recommendation rather than a result. The evidence for multi-generational memory is strong, but the claim about 'limiting variation' is somewhat circular\u2014the memory is inferred from the limited variation. The fitness implications (C59) are speculative and would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Previous studies using the mother machine and theoretical calculations based on the adder model concluded that non-genetic memory in bacteria is erased within two generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 accurately represent prior work through appropriate citations (Susman et al., 2018; Tanouchi et al., 2015; Wang et al., 2010; Ho et al., 2018). This provides important context for why the current study's findings of longer memory are significant. The authors correctly identify the methodological limitation (averaging across traps) that led to the previous consensus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Growth rate differences between sister cells are larger in straight channels than v-shaped channels, possibly due to differential nutrient access in the mother machine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by data in Figure 3C. Claim C69 is speculation supported by citation to Yang et al., 2018. This observation validates that the v-shaped design improves environmental uniformity. However, the explanation remains speculative without direct measurement of nutrient gradients. The difference could also arise from other factors like mechanical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establishing that cellular heterogeneity arises from stochasticity but is limited by inheritance, that genetic and non-genetic inheritance operate on different timescales, and that understanding of non-genetic inheritance has been limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent established knowledge about sources and constraints on heterogeneity. Claims C6-C9 are supported by appropriate citations to prior literature. Claim C10 characterizes the state of the field with citations. These background claims are well-supported and provide appropriate context, though they are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Methodological details including bacterial strain (MG1655 E. coli), protein measurement approach (GFP fluorescence from plasmid pZA with LacO or \u03bb-phage Pr promoters), imaging parameters, and analysis software (Oufti).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 describe experimental methods with appropriate detail and citations. The methods appear sound and reproducible. However, some details are missing: no information about biological vs. technical replicates, limited detail on image analysis parameters, and no mention of data/code availability. The use of plasmid-based reporters (C61) may limit generalizability as noted in the protein concentration results.",
+    "result_type": "MINOR"
+  }
+]

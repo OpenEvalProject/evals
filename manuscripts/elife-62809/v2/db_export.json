@@ -1,0 +1,1566 @@
+{
+  "submission": {
+    "id": "d490d898-11ca-49a0-962c-ab37b5e6f47a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:27:17.785610Z",
+    "updated_at": "2025-12-03T02:27:17.785610Z"
+  },
+  "content": [
+    {
+      "id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "submission_id": "d490d898-11ca-49a0-962c-ab37b5e6f47a",
+      "content_type": "manuscript",
+      "content_text": "# The temporal and spectral characteristics of expectations and prediction errors in pain and thermoception\n\n## Authors\n\n- Andreas Strube<sup>1</sup> ([ORCID: 0000-0002-6545-0366](https://orcid.org/0000-0002-6545-0366)) \u2020\n- Michael Rose<sup>1</sup>\n- Sepideh Fazeli<sup>1</sup>\n- Christian B\u00fcchel<sup>1</sup> ([ORCID: 0000-0003-1965-906X](https://orcid.org/0000-0003-1965-906X)) \u2020\n\n### Affiliations\n\n1. Department of Systems Neuroscience, University Medical Center Hamburg-Eppendorf Hamburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the context of a generative model, such as predictive coding, pain and heat perception can be construed as the integration of expectation and input with their difference denoted as a prediction error. In a previous neuroimaging study (Geuter et al., 2017) we observed an important role of the insula in such a model but could not establish its temporal aspects. Here, we employed electroencephalography to investigate neural representations of predictions and prediction errors in heat and pain processing. Our data show that alpha-to-beta activity was associated with stimulus intensity expectation, followed by a negative modulation of gamma band activity by absolute prediction errors. This is in contrast to prediction errors in visual and auditory perception, which are associated with increased gamma band activity, but is in agreement with observations in working memory and word matching, which show gamma band activity for correct, rather than violated, predictions.\n\n## Introduction\n\nIt has been shown that physically identical nociceptive input can lead to variable sensations of pain, depending on contextual factors (Tracey and Mantyh, 2007). In particular, attention, reappraisal, and expectation are core mechanisms that influence how nociception leads to pain (Wiech et al., 2008). A clinically important example of how expectations can shape pain processing is placebo hypoalgesia: pain relief mediated by expectation and experience \u2013 in the absence of active treatment (Petrovic et al., 2002; Wager et al., 2004; Colloca and Benedetti, 2005; Bingel et al., 2006; Atlas and Wager, 2012; Anchisi and Zanon, 2015).\n\nIn the context of a generative model of pain, it has been proposed that pain perception can be seen as the consequence of an integration of expectations with nociception (B\u00fcchel et al., 2014; Wiech, 2016; Ongaro and Kaptchuk, 2019). In this framework, expectations are integrated with incoming nociceptive information and both are weighted by their relative precision (Grahl et al., 2018) to form a pain percept. This can be seen in analogy to ideas in multisensory integration (Ernst and Banks, 2002). Expectations or predictions and resulting prediction errors also play a key role in generative models such as predictive coding (Huang et al., 2011). In essence, this framework assumes that neuronal assemblies implement perception and learning by constantly matching incoming sensory data with the top-down predictions of an internal or generative model (Knill and Pouget, 2004; Huang et al., 2011; Clark, 2013). Basically, minimizing prediction errors allows systems to resist their tendency to disorder by the creation of models with better predictions regarding the sensory environment, leading to a more efficient encoding of information (Friston, 2010).\n\nElectroencephalogram\u00a0(EEG) correlates of nociceptive skin stimulation have been widely investigated. Generally, phasic gamma activity has been associated with stimulus intensity over the sensory cortex where the amplitudes of pain-induced gamma oscillations increase with objective stimulus intensity and subjective pain intensity (Gross et al., 2007; Hauck et al., 2007; Zhang et al., 2012; Rossiter et al., 2013; Tiemann et al., 2015). Additionally, pain-related gamma band oscillations have been linked to the insular cortex as well as temporal and frontal regions using depth electrodes in epilepsy patients (Liberati et al., 2018). In tonic painful heat stimulation, medial prefrontal gamma activity has been observed (Schulz et al., 2015). In addition, gamma activity is enhanced by attention in human EEG experiments in visual (Gruber et al., 1999), auditory (Tiitinen et al., 1993; Debener et al., 2003), and sensorimotor processing (i.e. tactile stimuli) (Bauer et al., 2006) as well as in nociception (Hauck et al., 2007; Hauck et al., 2015; Tiemann et al., 2010).\n\nPain-related alpha-to-beta band oscillations are typically found to be suppressed with higher stimulus intensity (Mouraux et al., 2003; Ploner et al., 2006; May et al., 2012; Hu et al., 2013), which is enhanced by attention (May et al., 2012) and (placebo) expectation (Huneke et al., 2013; Tiemann et al., 2015; Albu and Meagher, 2016). Interestingly, prestimulus theta (Taesler and Rose, 2016) as well as prestimulus alpha and gamma activity (Tu et al., 2016) can affect subsequent pain processing. Specifically, trials with smaller prestimulus alpha and gamma oscillations were perceived as more painful, suggesting a negative modulation of subsequent pain perception (Tu et al., 2016).\n\nCued pain paradigms (Atlas et al., 2010) have been used to generate expectations and prediction errors. Previous functional magnetic resonance imaging\u00a0(fMRI) studies have suggested an important role of the anterior insular cortex for mediating expectation effects and the integration of prior expectation and prediction errors in the context of pain (Ploghaus et al., 1999; Koyama et al., 2005; Atlas et al., 2010; Geuter et al., 2017; Fazeli and B\u00fcchel, 2018). These studies have revealed that neuronal signals in the anterior insula represent predictions and prediction errors with respect to pain, which in theory would allow the combination of both terms as required for predictive coding (B\u00fcchel et al., 2014; Ongaro and Kaptchuk, 2019). However, in fMRI studies, predictions and prediction errors cannot be temporally dissociated due to the low temporal resolution of the method. To investigate this further, we conducted a cue-based pain experiment using EEG to achieve high temporal and spectral resolution of predictions and prediction error processes in the context of pain.\n\nIn this experiment (N\u00a0=\u00a029) we employed contact heat stimuli with three different intensities (low heat, medium heat, and high heat), preceded by a visual cue indicating the upcoming intensity (Figure 1). To generate prediction errors, the modality (picture or heat) was correctly cued only in 70% of all trials, and stimulus intensities were correctly cued only in 60% of all trials. We then investigated oscillatory activity related to stimulus intensity, expectation, and prediction errors (Figure 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig1-v2.jpg)\n\n**Figure 1.:** Each trial started with the presentation of a cue, indicating the stimulus intensity and modality of the following stimulus. After a jittered phase where only the fixation cross was shown, the stimulus (visual or thermal) was presented. A rating phase (1\u20134) of the stimulus aversiveness followed. Right: Contingency table for all conditions for each cue\u2013stimulus combination. Note that percentages are for all trials; therefore, each row adds up to 1/6 (six different cues).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig1-figsupp1-v2.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig2-v2.jpg)\n\n**Figure 2.:** The y-axis represents a hypothetical response variable (e.g. electroencephalogram\u00a0[EEG] power). Each dot represents a different condition for each stimulus\u2013cue combination. Blue colors represent low heat conditions, green colors represent medium heat conditions, and red colors represent high heat conditions. Color intensities depict expectation level.\n\nBased on the\u00a0previous data, we hypothesized that expectation signals should temporally precede prediction error signals. Based on the functional neuroanatomy of cortical microcircuits (Bastos et al., 2012), with feedforward connections predominately originating from superficial layers and feedback connections from deep layers, we expect that prediction error signals should be related to higher frequencies (e.g. gamma band) than prediction signals (Todorovic et al., 2011; Arnal and Giraud, 2012).\n\n## Materials and methods\n\n### Participants\n\nWe investigated 35 healthy male participants (mean 26, range 18\u201337 years), who were paid as compensation for their participation. Applicants were excluded if one of the following exclusion criteria applied: neurological, psychiatric, dermatological diseases, pain conditions, current medication, or substance abuse. All volunteers gave their informed consent. The study was approved by the Ethics Board of the Hamburg Medical Association. Of 35 participants, data from six participants had to be excluded from the final EEG data analysis due to technical issues during the EEG recording (i.e. the data of the excluded participants were contaminated with excessive muscle and/or technical artifacts) leaving a final sample of 29 participants. The sample size was determined according to\u00a0a power calculation (G*Power V 3.1.9.4) based on Geuter et al., 2017. For the left anterior insula (fMRI; Table 1 in Geuter et al., 2017), we observed an effect size of partial eta squared of 0.17 and an effect size of 0.22 for the right anterior insula (cue \u00d7 stimulus interaction). Using a power of (1-beta) of 0.95 and an alpha level of 0.05 and assuming a low correlation (0.1) between repeated measures, this leads to a sample size of 25, assuming the weaker effect in the left insula.\n\n### Stimuli and task\n\nStimulus properties were chosen to be identical to a previous fMRI study of predictive coding in pain where both expectation and absolute prediction error effects were observed (Fazeli and B\u00fcchel, 2018). Thermal stimulation was performed using a 30\u00a0\u00d7\u00a030 mm2 Peltier thermode (CHEPS Pathway, Medoc) at three different intensities: low heat (42\u00b0C), medium heat (46\u00b0C), and high heat (48\u00b0C) at the left radial forearm. These three temperatures cover a large range of temperatures associated with nociception. The lowest temperature was set at 42\u00b0C to ensure a temperature above the median threshold of heat-sensitive C-fiber nociceptors which have a median heat threshold of 41\u00b0C (Treede et al., 1998). The baseline temperature was set at 33\u00b0C and the rise rate to 40\u00b0C/s. After two blocks, the stimulated skin patch was changed to avoid sensitization.\n\nAversive pictures were chosen from the International Affective Picture System (IAPS) (Lang et al., 2008) database at three different levels of aversiveness. The images presented during the EEG experiment had three levels of valence of which the low valence category had valence values of 2.02\u00a0\u00b1\u00a00.05 (mean \u00b1 standard error), the medium valence category had valence values of 4.06\u00a0\u00b1\u00a00.02 (mean \u00b1 standard error), and the high valence category had valence values of 5.23\u00a0\u00b1\u00a00.01 (mean \u00b1 standard error).\n\nPrior to each picture or heat stimulus, a visual cue was presented. The color of the cue (triangle) indicated (probabilistically) the modality of the stimulus (orange for picture and blue for heat). A white digit written inside of each triangle indicated (probabilistically) the intensity of the subsequent stimulus (1, 2, and 3 for low, medium, and high intensity,\u00a0respectively). During the whole trial, a centered fixation cross was presented on the screen.\n\nEach trial began with the presentation of the cue for 500 ms as an indicator for the modality and intensity of the subsequently presented stimulus. The modality was correctly cued in 70% of all trials by the color of the triangle. In 60% of all trials, the stimulus intensity was correctly indicated by the digit within the triangle (see Figure 1 for an overview of all cue contingencies).\n\nBefore the presentation of the stimulus, there was a blank period with a variable time frame between 1000 and 1400 ms. Then, the visual or thermal stimulus was presented for a duration of 2 s. The visual stimulus was centered on the screen and allowed the participant to perceive the stimulus without eye movements. Right after the termination of the stimulus, subjects were asked to rate the aversiveness of the stimulus on a four-point rating scale, where one was labeled as \u2018neutral\u2019 and four was labeled as \u2018very strong\u2019. Ratings were performed using a response box operated with the right hand (see Figure 1 for a visualization of the trial structure).\n\nIn addition, four catch trials were included in each block. Subjects were asked to report the preceding cue in terms of their information content of the modality and intensity within 8 s, and no stimulation was given in these trials.\n\nTrials were presented in four blocks. Each block consisted of 126 trials and four catch trials and lasted about 15 min. The trial order within each block was pseudorandomized. The order of blocks was randomized across subjects. The whole EEG experiment including preparation and instructions lasted for about 3\u00a0hr.\n\nPrior to the actual EEG experiment, subjects participated in a behavioral training session. During this session, participants were informed about the procedure and gave their written informed consent. The behavioral training session was implemented to avoid learning effects associated with the contingencies between the cues and the stimuli during the EEG session. Between two and three blocks were presented during the training session (without electrophysiological recordings). The experimenter assessed the performance after each block based on the percentage of successful catch trials and the ability to distinguish the three levels of aversiveness of each modality. The training session was terminated after the second block if participants were able to successfully label cues in 75% of the catch trials within the second block.\n\n### EEG data acquisition\n\nEEG data were acquired using a 64-channel Ag/AgCl active electrode system (ActiCap64; BrainProducts) placed according to the extended 10\u201320 system (Klem et al., 1999). Sixty electrodes were used of the most central scalp positions. The EEG was sampled at 500 Hz, referenced at FCz, and grounded at Iz. For artifact removal, a horizontal, bipolar electrooculogram (EOG) was recorded using two of the remaining electrodes and placing them on the skin approximately 1 cm left from the left eye and right from the right eye at the height of the pupils. One vertical EOG was recorded using one of the remaining electrodes centrally approx. 1 cm beneath the left eyelid and another electrode was fixated on the neck at the upper part of the left trapezius muscle (Musculus trapezius) to record an electromyogram.\n\n### EEG preprocessing\n\nThe data analysis was performed using the Fieldtrip toolbox for EEG/MEG\u00a0(magnetoencephalogram)\u00a0analysis (Oostenveld et al., 2011) at\u00a0Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen, the Netherlands (see http://www.ru.nl/neuroimaging/fieldtrip). EEG data were epoched and time-locked to the stimulus onset using the electrical trigger signaling the thermode to start the temperature rise of a given heat trial. Each epoch was centered (subtraction of the temporal mean) and detrended and included a time range of 3410 ms before and 2505 ms after trigger onset.\n\nThe data was band\u00a0pass-filtered at 1\u2013100 Hz, Butterworth, fourth order. EEG epochs were then visually inspected and trials contaminated by artifacts due to gross movements or technical artifacts were removed. Subsequently, trials contaminated by eye-blinks and movements were corrected using an independent component analysis (ICA) algorithm (Makeig et al., 1996; Jung et al., 2000). In all datasets, individual eye movements, showing a large EOG channel contribution and a frontal scalp distribution, were clearly seen in the removed independent components. Additionally, time\u2013frequency decomposed ICA data were inspected at a single trial level, after z-transformation (only for artifact detection purposes) based on the mean and the standard deviation across all components separately for each frequency from 31\u00a0to 100 Hz. Time\u2013frequency representations were calculated using a sliding window multi-taper analysis with a window of 200 ms length, which was shifted over the data with a step size of 20 ms with a spectral smoothing of 15 Hz. Artifact components or trials were easily visible and were compared with the raw ICA components. Specifically, single and separate muscle spikes were identified as columns or \u2018clouds\u2019 in time\u2013frequency plots. Using this procedure, up to 30 components were removed before remaining non-artifactual components were back-projected and resulted in corrected data. Subsequently, the data was re-referenced to a common average of all EEG channels and the previous reference channel FCz was reused as a data channel (see Figure 1\u2014figure supplement 1 for a summary of rejected components per participant).\n\nBefore time\u2013frequency transformations for data analysis were performed on the cleaned dataset, the time axis of single trials was shifted to create cue-locked and stimulus-locked data. Cue-locked data uses the onset of the cue as t\u00a0=\u00a00. Stimulus-locked data takes the ramp-up period of the thermode into account and sets t\u00a0=\u00a00 to the time point when the thermode reached the target temperature (225, 325, and 375 ms\u00a0after trigger onset for low, medium, and high heat conditions, respectively). Frequencies up to 30 Hz (1\u201330 Hz in 1 Hz steps) were analyzed using a sliding Hanning-window Fourier transformation with a window length of 300 ms and a step\u00a0size of 50 ms. For the analysis of frequencies higher than 30 Hz (31\u2013100 Hz in 1 Hz steps), spectral analyses of the EEG data were performed using a sliding window multi-taper analysis. A window of 200 ms length was shifted over the data with a step size of 50 ms with a spectral smoothing of 15 Hz. Spectral estimates were averaged for each subject over trials. Afterward, a z-baseline normalization was performed based on a 500 ms baseline before cue onset. For cue-locked data, a time frame ranging from \u2212650 to \u2212150 ms was chosen as a baseline. A distance from the cue onset to the baseline period of 150 ms was set because of the half-taper window length of 150 ms, that\u00a0is, data points between \u2212150 and 0 ms are contaminated by the onset of the cue. For stimulus-locked trials, a variable cue duration (1500\u20131900 ms) and a variable stimulus offset based on the ramp-up time (225\u2013375 ms) were additionally taken into account, resulting in an according baseline from \u22122950 to \u22122450 ms from stimulus onset. For the baseline correction of time\u2013frequency data, the mean and standard deviation were estimated for the baseline period (for each subject\u2013channel\u2013frequency combination, separately). The mean spectral estimate of the baseline was then subtracted from each data point, and the resulting baseline-centered values were divided by the baseline standard deviation (classical baseline normalization \u2013 additive model; see Grandchamp and Delorme, 2011).\n\n### Predictive coding model\n\nSimilar to a previous fMRI study (Fazeli and B\u00fcchel, 2018), our full model included three experimental within-subject factors (see Figure 2). The stimulus intensity factor (INT) models the measured response with a simple linear function of the stimulus intensity (\u22121, 0, and 1 for low, medium, and high intensities, respectively). The expectation factor\u00a0(EXP) was defined (see Figure 2; center column) linearly from the intensity predicted by the cue. Again, conditions with a low intensity cue were coded with a \u22121, conditions with a medium intensity cue with a 0 and conditions with a high intensity cue with a 1. The absolute prediction error factor\u00a0(PE) resulted from the absolute difference of the expectation and actual stimulus intensity (see Figure 2; right column).\n\nWe also investigated a signed PE. However, it should be noted that such a term is not orthogonal to the EXP. However, assuming that an EXP can only be observed after the cue and a PE after the nociceptive stimulus, we were able to test for a signed PE during the heat phase. Also, we considered a one-sided PE, where a prediction error is only signaled when the stimulus is more intense as expected, which is motivated by previous work (Egner et al., 2010; Summerfield and de Lange, 2014; Geuter et al., 2017).\n\nAs the lowest stimulus intensity was often perceived as non-painful, we additionally performed an analysis only with medium and high stimulus intensities. Accordingly, the lowest stimulus intensity (42\u00b0C) were excluded in an additional repeated-measures ANOVA for this purpose (which will be referred to as the reduced pain model).\n\n### Behavioral aversiveness ratings\n\nBehavioral aversiveness ratings were averaged for all 3 \u00d7 3 cue\u2013stimulus combinations over each participant, resulting in a 29 \u00d7 9 matrix (subject \u00d7 condition) for the full model and a 29 \u00d7 6 matrix for the reduced pain model. We tested for main effects across stimulus intensity, expectation, as well as prediction error using a repeated-measures ANOVA as implemented in MATLAB (see fitrm and ranova; version 2020a, The MathWorks).\n\n### EEG data analysis\n\nAll statistical tests in electrode space were corrected for multiple comparisons using non-parametrical permutation tests of clusters (Maris and Oostenveld, 2007). Cluster permutation tests take into account that biological processes are not strictly locked to a single frequency or time point and that activity could be picked up by multiple electrodes. Cluster permutation tests are specifically useful for explorative testing, as explained by Maris and Oostenveld, 2007. While prior hypotheses could have been formulated regarding the spatial, temporal,\u00a0and spectral characteristics of brain responses associated with the intensity of thermal stimulation, and regions\u00a0of\u00a0interest could have been described, variations in the present design could be related to temporal and spectral differences compared to other studies, which would be taken into account using non-parametric cluster permutation testing.\n\nWe wanted to explore positive and negative time\u2013frequency patterns associated with our variations of stimulus intensity, expectation, and absolute prediction errors using a repeated-measures ANOVA. A statistical value corresponding to a p-value of\u00a00.05 (F[1,28] = 4.196) obtained from the repeated-measures ANOVA F-statistics of the respective main effect was used for clustering. Samples (exceeding the threshold of F[1,28] = 4.196) were clustered in connected sets on the basis of temporal (i.e. adjacent time points), spatial (i.e. neighboring electrodes), and spectral (i.e. +/\u2212\u00a01 Hz) adjacency. Further, clustering was restricted in a way that only samples were included in a cluster which had at least one significant neighbor in electrode space, that\u00a0is, at least one neighboring channel also had to exceed the threshold for a sample to be included in the cluster. Neighbors were defined by a template provided by the Fieldtrip toolbox corresponding to the used EEG montage.\n\nSubsequently, a cluster value was defined as the sum of all statistical values of included samples. Monte Carlo sampling was used to generate 1000 random permutations of the design matrix, and statistical tests were repeated in time\u2013frequency space with the random design matrix. The probability of a cluster from the original design matrix (p-value) was calculated by the proportion of random design matrices producing a cluster with a cluster value exceeding the original cluster. This test was applied two-sided for negative and positive clusters, which were differentiated by the average slope of the estimated factors.\n\nMonte Carlo cluster tests were performed with 1000 permutations using the test statistics of a repeated-measures ANOVA model as the value for clustering (at p<0.05/F[1,28]=4.196). All tests were performed for low frequencies (1\u201330 Hz) and high frequencies (31\u2013100 Hz), separately. Muscular and ocular electrodes were excluded from the cluster analysis.\n\nThe within-subject INT (which was coded as increasing linearly with stimulus intensity) was tested stimulus-locked from 0\u00a0to 1.6 s. The within-subject EXP, which was coded as increasing linearly with the cued stimulus intensity, was tested cue-locked from 0 to 3.6 s. The signed PE was coded as the difference between stimulus intensity and expectation. The absolute prediction error was coded as the absolute difference between stimulus intensity and expectation (see Figure 2 for details). Additionally, we tested a one-sided prediction error, occurring only when the actual stimulus is of a higher intensity than expected. The signed, absolute, and one-sided PEs were tested stimulus-locked from 0 to 1.6 s.\n\n## Results\n\n### Behavioral data \u2013 aversiveness ratings\n\nParticipants experienced aversive heat or saw picture stimuli which were probabilistically cued in terms of modality and intensity, evoking an expectation of modality and intensity. The subsequently applied stimuli were then rated on a visual analog scale (VAS) from 1 to 4. Our primary behavioral question was whether ratings are influenced by the experimental manipulation of stimulus intensity, expectation, and absolute prediction errors.\n\nTo validate our intensity manipulation for thermal stimuli and to verify the discriminability between different levels of heat, we first tested for the main effect of stimulus intensity (Figure 3a). Our data show a clear rating difference between the three levels of heat. Results regarding the aversive pictures are not the focus of this report but are depicted in Figure 3b for the sake of comparison.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig3-v2.jpg)\n\n**Figure 3.:** Dots indicate average single-subject ratings.\n\nTo evaluate the main effects of stimulus intensity, expectation, and absolute prediction errors, we employed a repeated-measures ANOVA of the behavioral data, which revealed significant effects for the main effect of stimulus intensity, that\u00a0is, the three levels of heat (F[1,28] = 743.97, p<0.001). Also, the main effect for expectation on aversiveness ratings was significant (F[1,28] = 38.53, p<0.001) (Table 1), indicating an influence of the cued intensity on behavioral aversiveness ratings (Figure 4). The absolute difference between the cued intensity and the actual stimulus intensity (i.e. absolute prediction error) only showed a trend effect on aversiveness ratings (F[1,28] = 2.87, p=0.10). The results regarding the aversive pictures are summarized in Table 1.\n\n**Table 1.**\n Main effects of stimulus intensity, expectation, and absolute prediction errors on subjective ratings in both heat and picture conditions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Factor</th>\n      <th colspan=\"2\">Stimulus intensity (INT)</th>\n      <th colspan=\"2\">Cued intensity (EXP)</th>\n      <th colspan=\"2\">Absolute prediction error (PE)</th>\n    </tr>\n    <tr>\n      <th>F(1,28)</th>\n      <th>p</th>\n      <th>F(1,28)</th>\n      <th>p</th>\n      <th>F(1,28)</th>\n      <th>p</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Modality</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Thermal</td>\n      <td>743.97</td>\n      <td>&lt;0.001</td>\n      <td>39.53</td>\n      <td>&lt;0.001</td>\n      <td>2.87</td>\n      <td>0.10</td>\n    </tr>\n    <tr>\n      <td>Visual</td>\n      <td>762.10</td>\n      <td>&lt;0.001</td>\n      <td>1.46</td>\n      <td>0.24</td>\n      <td>7.7</td>\n      <td>0.01</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig4-v2.jpg)\n\n**Figure 4.:** Bars indicate average aversiveness ratings. Ratings were given on a scale from 1 to 4. Error bars depict SEM. The data shows not\u00a0only an effect of stimulus intensity (increase from blue to green to red) but also an effect of expectation (low to medium to high expectation). The right figure represents hypothetical response patterns based on the expectation factor. The y-axis represents the hypothetical response variable (e.g. visual analog scale\u00a0[VAS] rating). Each dot represents a different condition for each stimulus\u2013cue combination. Blue colors represent low heat conditions, green colors represent medium heat conditions, and red colors represent high heat conditions. Color intensities depict expectation level.\n\n### EEG \u2013 stimulus intensity\n\nIn a first EEG analysis, we tested for a main effect of the intensity of the heat input in the context of a correctly cued modality (i.e. heat was expected and received). In order to do so, we performed a repeated-measures ANOVA on the time\u2013frequency representation of the EEG data on low frequencies (1\u201330 Hz) and high frequencies (31\u2013100 Hz) separately after stimulus onset using a cluster correction criterion to address the multiple comparisons problem (see 'Materials\u00a0and\u00a0methods' for details). Any significant cluster \u2013 composed of neighboring data points in time, frequency, and space \u2013 would indicate a neuronal oscillatory representation of variations in stimulus intensity in a given frequency band.\n\nIn the low frequency range (1\u201330 Hz), one positive cluster (i.e. a positive average slope of the factor) and one negative cluster (i.e. a negative average slope of the factor) were significant (Figure 5), indicating a linear association of stimulus intensity and power in this frequency range. Specifically, the negative cluster included samples in a time range from 250 to 1600 ms after stimulus onset in a frequency range from 1 to 30 Hz, predominately at contralateral central electrode sites (p=0.002). The highest parametric F-value within this cluster obtained from the repeated-measures ANOVA was F(1,28) = 36.40 (p<0.001). This sample was observed at 1250 ms and 22 Hz and had a maximum at channel CP2. All channels included samples of the negative low frequency stimulus intensity cluster.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig5-v2.jpg)\n\n**Figure 5.:** Time\u2013frequency representation averaged over all channels including a significant time\u2013frequency sample of any cluster (a) and topographies over the whole cluster extents (i.e. full time and frequency range), respectively (b), of the stimulus intensity main effect of the repeated-measures ANOVA depicting increases (warm) and decreases (cold) in power in relation to heat stimulus intensity. Significant clusters are highlighted. Colors represent F-values from the repeated-measures ANOVA statistics for the main effect of stimulus intensity.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig5-figsupp1-v2.jpg)\n\nAlso in the low frequency range (1\u201330 Hz), a positive significant cluster included samples in a time range from 150 to 1050 ms after stimulus onset in the theta frequency range from 1 to 7 Hz predominately at midline electrode sites (p=0.048). The highest parametric F-value from the repeated-measures ANOVA was F(1,28) = 27.93 (p<0.001). This sample was found at 550 ms and 3 Hz and had a maximum at channel O2. All channels except FC5, CP4, C6, and FT7 were part of the positive low frequency stimulus intensity cluster.\n\nIn the high frequency range (31\u2013100 Hz) representing gamma activity, one positive cluster was significant (p<0.001). This cluster included samples in a time range from 550 to 1600 ms after stimulus onset and frequencies from 46 to 100 Hz, predominately at contralateral centroparietal electrode sites (Figure 5). The highest parametric F-value within this cluster obtained from the repeated-measures ANOVA was F(1,28) = 33.35 (p<0.001). This sample was observed at 1600 ms and 100 Hz and had a maximum at channel Cz. All channels included samples of the positive high frequency stimulus intensity cluster.\n\nIn conclusion, these results indicate that a higher intensity of the thermal input is associated with increased theta and gamma band power and a negative relationship of alpha-to-beta band power and the intensity of the thermal input (see Figure 5 for a summary of the results of the main effect of stimulus intensity; see Figure 5\u2014figure supplement 1 for single-subject differences in the gamma band between low stimulus intensity and high stimulus intensity trials).\n\n### Expectation\n\nIn a next step, we investigated the representation of EXP in our repeated-measures model, again for low frequencies (1\u201330 Hz) and high frequencies (31\u2013100 Hz) separately in the cue-locked time\u2013frequency representation of the EEG data.\n\nThis analysis revealed one significant positive cluster in the low frequency range (1\u201330 Hz), indicating a linear association of cue intensity (EXP) and power in this frequency range (p<0.05). The expectation cluster (p=0.022) included samples from time points ranging from 100 to 2000 ms after cue onset and included frequencies from 1 to 20 Hz. The highest parametric statistical test value (F[1,28] = 26.96, p<0.001) was observed at channel P1 700 ms after cue onset at a frequency of 9 Hz. All channels except TP8 included samples of the late expectation cluster (see Figure 6 for a summary of the results of the expectation cluster; see Figure 6\u2014figure supplement 1 for single-subject values).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig6-v2.jpg)\n\n**Figure 6.:** (a)\u00a0Time\u2013frequency representation of the statistical F-values averaged over all channels. The significant cluster is highlighted. The black box between 1500 and 1900 ms marks the jittered onset of the trigger signal to start the ramp-up of the heat stimulus. (b) Topography of the averaged power over time and frequency of the whole cluster extent (i.e. over the whole time and frequency range) at each channel. Brighter colors indicate higher F-values. (c) Power values for all conditions with a valid modality cue (expect heat receive heat) averaged over all significant time\u2013frequency\u2013electrode samples of the EXP cluster show alpha-to-beta enhancement (i.e. positive representation) associated with expectation. Error bars represent SEM. (d) Predicted responses based on the positive expectation factor are shown. The y-axis represents an imaginary response variable (e.g. EEG power). Each dot represents a different condition (in the order of the bar plot representation of average EEG power) for each stimulus\u2013cue combination. Blue colors represent low heat conditions, green colors represent medium heat conditions, and red colors represent high heat conditions. Color intensities depict expectation level.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Blue colors represent low heat conditions, green colors represent medium heat conditions, and red colors represent high heat conditions. Color intensities depict expectation level.\n\nIn summary, these results suggest an increase in alpha-to-beta band power to be associated with our experimental manipulation of expectations regarding the intensity of the thermal input.\n\n### Prediction error model\n\nLikewise, clustering was performed for the prediction error term after stimulus onset in low (1\u201330 Hz) and high frequencies (31\u2013100 Hz). Any significant cluster would associate oscillatory activity with the difference of the expectation regarding the intensity of the thermal stimulation and the actual stimulation, representing a violation of this expectation (prediction error).\n\nThis analysis revealed a significant negative cluster in the high frequency range (31\u2013100 Hz), indicating a (negative) linear association of absolute prediction errors and power in this frequency range (p=0.002). This (negative) absolute prediction error cluster included samples from frequencies ranging from 51 to 100 Hz and time points ranging from 50\u00a0to 1600 ms after stimulus onset. The highest parametric statistical test value (F(1,28) = 28.52, p<0.001) was found at channel O1 1300 ms after stimulus onset at a frequency of 98 Hz. All channels included samples of the absolute prediction error cluster (see Figure 7 for a summary of the results; see Figure 7\u2014figure supplement 1 for single-subject values).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig7-v2.jpg)\n\n**Figure 7.:** (a)\u00a0Time\u2013frequency representation of the statistical F-values averaged over all channels. The significant cluster is highlighted. (b) Topography of the averaged power over time and frequency of the whole cluster extent (i.e. over the whole time and frequency range) at each channel. Brighter colors indicate higher F-values. (c) Power values for all conditions with a valid modality cue (expect heat receive heat) averaged over all significant time\u2013frequency\u2013electrode samples of the prediction error factor\u00a0(PE) cluster show gamma decreases (i.e. negative representation) associated with prediction errors. Error bars represent SEM. (d) Predicted responses based on the negative PE are shown: The y-axis represents an imaginary response variable (e.g. electroencephalogram\u00a0[EEG] power). Each dot represents a different condition (in the order of the bar plot representation of average EEG power) for each stimulus\u2013cue combination. Blue colors represent low heat conditions, green colors represent medium heat conditions, and red colors represent high heat conditions. Color intensities depict expectation level.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Blue colors represent low heat conditions, green colors represent medium heat conditions, and red colors represent high heat conditions. Color intensities depict expectation level.\n\nA cluster analysis of the signed prediction error, stimulus-locked after stimulus onset (from 1 to 30 Hz for low frequencies and 31\u2013100 Hz for gamma frequencies; from 0 to 1600 ms, stimulus-locked), did not reveal any significant cluster of activity associated with a linear increase or decrease of EXP (all p>0.05). Ignoring all stimulus\u2013cue combinations of the PE\u00a0where the stimulus intensity was less intense than expected leads to a one-sided PE. A cluster analysis of this effect did not reveal any significant cluster of activity (all p>0.05).\n\nIn summary, these results suggest a decrease in gamma band power to be associated with our experimental manipulation of expectation violations, resulting from a mismatch of the cued intensity and the actual heat input.\n\n### Reduced pain model\n\nIn an additional analysis, we tested all effects in a reduced pain model, which only included painful stimuli (i.e. three expectation levels and two intensity levels).\n\nTo evaluate the main effects of stimulus intensity, expectation, and absolute prediction errors in the behavioral data, we employed again a repeated-measures ANOVA which revealed significant effects for the main effect of stimulus intensity, that\u00a0is, the two remaining levels of pain (F[1,28] = 1109.9, p<0.001). Also, the main effect for expectation on pain ratings was significant (F[1,28] = 17.07, p<0.001), indicating again an influence of the cued intensity on behavioral pain ratings. The absolute difference between the cued intensity and the actual stimulus intensity (i.e. absolute prediction error) when only painful stimuli were included revealed a positive significant effect on pain ratings (F[1,28] = 80.75, p<0.001). This indicates prediction errors and prior expectations to modulate behavioral aversiveness ratings in painful stimulation.\n\nFor the analysis of time\u2013frequency EEG data, we performed a repeated-measures ANOVA on the time\u2013frequency representation of the EEG data on low frequencies (1\u201330 Hz) and high frequencies (31\u2013100 Hz) separately and again using the same cluster correction criterion to address the multiple comparisons problem as in the initial analysis of the full model.\n\nThe cluster test of stimulus intensity revealed one negative cluster (p=0.014) in the low frequency range (1\u201330 Hz) including time points from 850 to 1600 ms and frequencies from 8 to 30 Hz (Figure 8a; see Figure 8\u2014figure supplement 1 for single-subject values). The maximum statistical F-value (F[1,28]\u00a0=\u00a031.82; p<0.001) was found at channel AF3 at a frequency of 30 Hz at 1600 ms and revealed a similar but more broad topography as compared to the original alpha-to-beta negative main effect of stimulus intensity of the analysis of the full model. All channels included samples of the negative stimulus intensity cluster.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig8-v2.jpg)\n\n**Figure 8.:** The top three rows show (a) the main effect of stimulus intensity, (b) the main effect of negative absolute prediction errors, and (c) the main effect of expectation. Left column: time\u2013frequency representation of the statistical F-values averaged over all channels. Significant clusters are highlighted by a solid line. The non-significant expectation cluster is highlighted by a thin dotted line. Right column: power values for all conditions included in the reduced model with a valid modality cue (expect heat receive heat) averaged over all significant time\u2013frequency\u2013electrode samples of the respective cluster. (d) Topographies of the averaged power over time and frequency of the whole cluster extent (i.e. over the whole time and frequency range) at each channel for stimulus intensity (left), negative absolute prediction errors (center), and expectation (right). Brighter colors indicate higher F-values.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (Expect heat receive heat) averaged over all significant time\u2013frequency\u2013electrode samples period for each subject (ID) of the negative stimulus intensity cluster of the analysis of the reduced model. Green colors represent medium heat conditions and red colors represent high heat conditions. Color intensities depict expectation level.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (Expect heat receive heat) averaged over all significant time\u2013frequency\u2013electrode samples period for each subject (ID) of the negative absolute prediction error cluster of the analysis of the reduced model. Green colors represent medium heat conditions and red colors represent high heat conditions. Color intensities depict expectation level.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62809/elife-62809-fig8-figsupp3-v2.jpg)\n\n**Figure 8\u2014figure supplement 3.:** (Expect heat receive heat) averaged over all (non-significant) time\u2013frequency\u2013electrode samples of the respective cluster period for each subject (ID) of the non-significant expectation cluster of the analysis of the reduced model. Green colors represent medium heat conditions and red colors represent high heat conditions. Color intensities depict expectation level.\n\nIn the high frequency range (31\u2013100 Hz), a negative cluster of activity (p=0.038) was associated with absolute prediction errors and included samples in a time range from 850 to 1600 ms after stimulus onset in the gamma frequency range from 54 to 90 Hz predominately at occipital and parietal electrode sites. The highest parametric F-value from the repeated-measures ANOVA was F(1,28) = 24.10 (p<0.001). This sample was found at 1150 ms and 77 Hz and had a maximum at channel F8 (Figure 8b; see Figure 8\u2014figure supplement 2 for single-subject values). All channels except FC5, CP4, C6, and FT7 were part of the gamma frequency negative absolute prediction error cluster.\n\nIn the low (1\u201330 Hz) and high frequency (31\u2013100 Hz) ranges, no significant cluster was observed representing a significant relationship between expectations and EEG activity. However, one cluster in the low frequency range (1\u201330 Hz) showed a trend level (p=0.14; based on cluster mass, i.e., the sum of all clustered F-values) and included samples in a time range from 550 to 1600 ms after stimulus onset and frequencies from 6 to 24 Hz and is displayed in dotted lines in Figure 8c (see Figure 8\u2014figure supplement 3 for single-subject values).\n\n## Discussion\n\nUsing a cued heat paradigm with three different stimulus intensities, our data showed a clear discriminability of different levels of aversiveness based on behavioral ratings and EEG time\u2013frequency patterns. Specifically, we observed several clusters of activity to be associated with the intensity of thermal stimulation in the theta, beta, and gamma band. Furthermore, behavioral data clearly indicated a positive influence of cued intensity on pain perception. In addition, our results provide evidence for temporally and spectrally separable clusters of oscillatory activity associated with expectation and a negative modulation of gamma activity by prediction errors for thermoception and pain. Specifically, one early low frequency (1\u201330 Hz) cluster was related to expectation in thermoception, that\u00a0is, cued intensity. In contrast, a later occurring cluster at higher frequencies (31\u2013100 Hz) was related to negative prediction errors in thermoception and pain.\n\n### Stimulus intensity and oscillatory activity\n\nNote that our definition of stimulus onset is based on the moment the thermode reached the target temperature. Using a thermode heating gradient of 40\u00b0C/s and neglecting any small internal delays, the target temperatures of 42\u00b0C, 46\u00b0C, and 48\u00b0C are reached after 225, 325, and 375 ms, respectively. Therefore, our observed increase in theta power agrees with previous studies (Ploner et al., 2017) and most likely correspond to pain-related evoked potentials (Lorenz and Garcia-Larrea, 2003; Tiemann et al., 2015), such as the P2 with a similar topography. In addition, we observed a significant suppression of alpha-to-beta activity which, given the abovementioned delays of our painful stimuli, is in line with the reported beta suppression in previous EEG studies on pain (Mouraux et al., 2003; Ploner et al., 2006; May et al., 2012; Hu et al., 2013). Finally, power in the gamma band was also correlated with heat intensity, which is in line with previous studies (Gross et al., 2007; Hauck et al., 2007; Zhang et al., 2012; Rossiter et al., 2013; Tiemann et al., 2015). Interestingly, only the alpha-to-beta band desynchronization differentiated between medium and high pain conditions, whereas differences in the theta and gamma band activity were only evident when the lowest stimulus intensity was included which was perceived as neutral.\n\nWe observed a behavioral effect of prediction errors on perceived stimulus intensity in the reduced pain model, but this effect was only a trend in the full model. The latter finding replicates a previous study (Fazeli and B\u00fcchel, 2018) indicating a robust effect. Interestingly, the effect of prediction errors on perception increased, and became significant, when we constrained our analysis to the clearly painful stimuli (reduced pain model). This suggests that a prediction error seems to more strongly affect pain perception, whereas the effect is weaker in the context of thermoception. However, this speculation should be corroborated in a future study.\n\nOn a more conceptual level, the investigation of neurophysiological effects even in the absence of a behavioral effect has been considered meaningful (Wilkinson and Halligan, 2004). In particular, the authors argue that because it is commonly unknown which parts of a cognitive process (and in which way) produce a specific behavioral response, the relationship between neurophysiological data and behavioral responses should not be overemphasized, and therefore it can be misleading to declare behavioral effects a reference or \u2018gold standard\u2019. Studies aiming to understand neurophysiological mechanisms of cognition usually relate a neurophysiological readout to a known perturbation (i.e. experimental design), which is meaningful in its own right.\n\n### Hypotheses based on microcircuits\n\nTheoretical accounts (Arnal and Giraud, 2012; Bastos et al., 2012) have suggested that predictive coding mechanisms could be related to the functional architecture of neuronal microcircuits. As feedforward connections are predominately originating from superficial layers and feedback connections from deep layers, it has been suggested that prediction errors should be expressed by higher frequencies than the predictions that accumulate them.\n\nIn the auditory modality, these ideas are supported by empirical data (Todorovic et al., 2011) showing that prediction errors in the context of repetition suppression were associated with higher gamma band activity. Likewise, in the visual domain, an MEG study has shown that temporo-parietal beta power was correlated with the predictability of an action kinematics\u2013outcome sequence, while gamma power was correlated with the prediction error (van Pelt et al., 2016).\n\n### Frequency patterns in predictive coding of pain\n\nOnly a few studies have investigated the spectral and temporal properties of expectations and prediction errors in the context of pain (summarized by Ploner et al., 2017). A recent study in rodents has suggested an information flow between S1 gamma and ACC (Anterior Cingulate Cortex) beta activity during spontaneous pain (Xiao et al., 2019). Based on these data, the authors have proposed a predictive coding model including a bottom-up (gamma) and top-down (beta) component (Song et al., 2019). Finally, in humans, a recent EEG study showed that the sensorimotor cortex is more strongly connected to the medial prefrontal cortex at alpha frequencies during tonic pain, suggesting alpha band activity in tonic pain to be associated with bottom-up instead of top-down signaling (Nickel et al., 2020). Nevertheless, the focus of these studies was on generic interactions (i.e. top-down vs. bottom-up) processes without directly inducing prediction errors as in a cued pain paradigm employed in our study.\n\nIn the flexible routing model proposed by Ploner et al., 2017, pain is seen as driven by contextual processes, such as expectations, which is associated with alpha/beta oscillations and alpha/beta synchrony across brain areas. Previous studies have started to examine the spectral properties of mechanisms related to generative models of pain perception. In particular, a previous MEG study reported that alpha suppression in the anterior insula is related mainly to pain expectation in a paradigm in which painful stimuli were interleaved with non-painful stimuli (Franciotti et al., 2009). This was interpreted as a preparatory mechanism for an upcoming painful stimulus. In a related study, alpha desynchronization in the context of predictable painful stimuli has been discussed as a possible neural correlate of attentional preparatory processes (Babiloni et al., 2003).\n\nExpectation is also a crucial ingredient of placebo analgesia and nocebo hyperalgesia. A previous study reported that resting-state alpha band activity was also linked to the expectation of pain modulation (analgesia) in a placebo paradigm (Huneke et al., 2013). With respect to negative expectations, it has been shown that pain modulation due to nocebo expectation is associated with enhanced alpha activity (Albu and Meagher, 2016). Our findings are in line with these results indicating an important role of low frequency activity in mediating expectation effects in a pain network underlying a generative model for pain perception.\n\nIn contrast to prediction error effects in the visual (Bauer et al., 2014; van Pelt et al., 2016) and auditory (Edwards et al., 2005; Parras et al., 2017) domains, we observed a negative modulation of gamma activity by absolute prediction errors. However, it should be noted that opposite effects have been observed in other cognitive domains. For instance, increased gamma power has been associated with successful matching (i.e. the absence of a prediction error) between external input and internal representation (Herrmann et al., 2004a; Osipova et al., 2006; Wang et al., 2018). In particular, gamma\u00a0band responses have been explained in terms of the match between bottom-up and top-down information (Herrmann et al., 2004b). One example is the observation of increased gamma activity with a higher so-called cloze probability in sentence-level language comprehension (Hald et al., 2006; Obleser and Kotz, 2011; Wang et al., 2012; Wang et al., 2018; Molinaro et al., 2013). It has been shown that a critical word that is semantically predictable by the preceding sentence (so-called high cloze probability) induces a larger gamma response than words which are semantically incongruent (i.e. unpredicted; low cloze probability) (Wang et al., 2018).\n\n### Pain vs. thermoception\n\nIn the present study, the lowest stimulus intensity was often not perceived as painful but as hot. In general, stimulus properties were chosen to be comparable to a previous fMRI study which showed fMRI signals related to prediction errors (Fazeli and B\u00fcchel, 2018). However, even though the lowest stimulus intensity (42\u00b0C) was above the threshold of nociceptors (Treede et al., 1998), the subjective experience of the lowest pain stimuli was often rated as neutral. Therefore, we performed an additional analysis (reduced pain model) only comprising clearly painful stimuli (46\u00b0C and 48\u00b0C) to more specifically address expectations and predictions errors in pain. The analyses of the behavioral data revealed similar results. Both models showed a highly significant effect of stimulus intensity and expectation on perceived stimulus intensity. In addition, the reduced pain model showed a significant prediction error effect, which was formally not observed in the full model. However, it is important to note that this difference should not be overinterpreted, as the p-value for the prediction error effect of the full model was at a trend level (p=0.1). Importantly, the negative representation of prediction errors in the gamma band was evident in both, the reduced and the full model.\n\n### Limitations\n\nTo unravel the temporal aspects of expectations and prediction errors, this study has been designed in close analogy to a previous fMRI study and we decided to use the same experimental paradigm (Fazeli and B\u00fcchel, 2018). We therefore decided to also keep the sample characteristics similar and restricted the sample to male participants, which means that we cannot generalize our results to the population. However, our study agrees with the\u00a0findings of a previous study using a similar design (Geuter et al., 2017) which tested male and female participants. Future studies should investigate samples including female participants. This would also allow to investigate sex effects with respect to expectation and prediction error effects in pain.\n\nTo minimize motor responses and speed\u00a0up the rating procedure, we used a four-button device to directly assess stimulus intensity (in contrast to using two buttons to move a slider on a VAS), thus being limited to a coarse rating scale of four levels, where one was labeled as \u2018neutral\u2019 and four was labeled as \u2018very strong\u2019. This allows to accommodate more trials but is not ideal to assess fine-grained differences, specifically to differentiate between non-painful and painful stimulation, as level 1 would represent 0\u201325 on a 0\u2013100 VAS. Future research could use conventional 0\u2013100 VAS to assess stimulus intensity on a finer scale.\n\nFor reasons of comparability to a previous fMRI study, we employed three different temperatures for all volunteers. Alternatively, we could have defined three levels of pain based on individual calibration of heat stimuli (Taesler and Rose, 2017; Grahl et al., 2018; Horing et al., 2019; Zhang et al., 2020; Feldhaus et al., 2021). Such a procedure could have avoided trials where no pain was subjectively perceived. On the other hand, such an approach also carries the risk that subjective ratings during the calibration process do not truly reflect pain and can lead to errors (especially if ratings are too low) which then affect the entire experiment. However, to address this shortcoming, we performed an additional analysis, which only included painful stimulus intensities.\n\n### Summary\n\nOur data show that key variables required for pain perception and thermoception in the context of a generative model are correlated with distinct oscillatory profiles in the brain. Furthermore, each oscillatory frequency band was correlated with a distinct variable such as expectation and prediction errors. These mechanistic insights could be very helpful in patients with acute and more importantly in patients with chronic pain, where expectations have been shown to play a critical role in pain persistence.\n",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "e7ea4a24-d35b-4d35-91f6-c47d9dcb6118",
+      "submission_id": "d490d898-11ca-49a0-962c-ab37b5e6f47a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Kok, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62809.sa1](https://doi.org/10.7554/eLife.62809.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nOur expectations strongly influence how we perceive painful stimuli, as demonstrated by the well-known placebo effect. This paper elegantly elucidates the neural dynamics involved: expectations modulate low-frequency (alpha and beta) pre-stimulus oscillations, whereas expectation mismatches modulate post-stimulus high-frequency (gamma) power. This work demonstrates important overlap with expectation mechanisms in other perceptual domains (vision, audition), but also striking differences, such as that high-frequency power is decreased rather than increased by pain prediction errors.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The temporal characteristics of expectations and prediction errors in pain\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Floris de Lange as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Enrico Schulz (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional analyses are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThe study by Strube and colleagues investigates neural prediction error processing in the context of painful stimuli. The results suggest that alpha-to-beta oscillations were associated with pain expectation, whereas gamma band oscillations (GBO) were associated with prediction error (PE). The concept and the findings of the study are interesting. However, so far, it is not clear whether the findings unequivocally support the conclusions and additional analyses are needed.\n\nEssential revisions:\n\n1) There is a vast amount of literature on pain-related theta, alpha, and gamma activity that the authors should mention in the Introduction in order to prepare the reader for the results. Similarly, the Discussion section is very much focused on imaging effects despite a vast amount of literature on pain-related oscillations. Interestingly, the only paper the authors are citing for gamma activity is relying on an artefact (Zhang et al., 2012). The authors should discuss their findings in light of neurophysiological studies.\n\n2) In contrast to Fazeli and B\u00fcchel, 2018, the behavioral data do not show PE effects. Does it make sense to analyze PE effects in the imaging data if no behavioural PE effects are found?\n\n3) The study deals with expectations and PE in pain. To this end, a cueing paradigm has been performed with three thermal stimulus intensities. However, the lowest stimulus intensity has not been perceived as painful but as warm. Thus, some PE refer to errors regarding pain intensity and other PE to errors regarding pain vs non-painful warm. Moreover, the low pain cue is in fact a no pain cue. Does the study therefore really deal with PE in pain? Wouldn't it be necessary to restrict the analysis to painful stimuli? Or should the study be re-framed as studying PE in thermal perception?\n\nRelated to this, it is not clear whether it was a good decision to keep the stimulation temperature at the same level for all participants. As this is a within-subject design, the authors want to maximise the perceptual differences (e.g. no, low, high pain).\n\n4) The current study conceptualizes PE as absolute unsigned PE, i.e., similar PE occur when the sensory evidence is less or more intense than expected. However, other PE concepts have assumed absolute signed PE, i.e., opposite neural effects occur when the sensory evidence is less or more intense than expected. Moreover, a third concept assumes negative PE, i.e., PE occur only when the sensory evidence is more intense than expected. The authors should clearly explain and motivate their PE definition. Moreover, the authors might perform similar analyses for other PE definitions.\n\n5) The relationship between GBO and PE is negative, i.e., the greater the PE the lower the GBO amplitude. This pattern is at variance with all previous findings on GBO and PE and therefore contradicts rather than supports PE coding by GBO.\n\n6) The relationship between alpha-to-beta-oscillations and expectations is not fully clear. The text and Figure 6 indicate a positive relationship whereas later it describes a decrease of alpha-to-beta band power associated with the manipulation of expectations, i.e., a negative relationship.\n\n7) The expectation effects have been analyzed cue-locked. Thus, their timing with respect to thermal stimulus application is unclear, i.e. it is unknown whether expectations effects occur before or after stimulus application. The authors should find a way to clarify this.\n\n8) Is there a reason why the authors focused on the pain part only? The visual part could serve as a control experiment, or the pain part as control for the visual experiment. It would be desirable to see whether there are similar effects of prediction error in either modalities. Alternatively, the authors might explain the motivation of the visual control condition and why it is not relevant for the present study.\n\n9) There are problems with the analysis of gamma oscillations. There are additional and essential steps required in order to prevent that the findings are based on muscle artefacts (such as in Zhang et al., 2012). The authors may want to take the following steps:\n\na) Inspection of time-frequency decomposed ICA data at single trial level\n\nb) Plot the trials after z-transforming based on the mean and the standard deviation of the entire component or potentially across all components. The z-transformation should be done separately for each frequency.\n\nc) Artefact components or trials are easily visible and should be compared with the raw ICA time course as the muscle spikes can be easily detected there, too. However, the TFR plots are more sensitive. The artefact detection procedure may require a finer sliding window than the 50 ms which the authors used.\n\nd) Single and separate muscle spikes are shown as columns, similar to the figure presented in Zhang (2012). Overlapping muscle spikes appear like \"clouds\" and can easily be misinterpreted as cortical activity. A sensitive single trial inspection on ICA transformed data is helpful.\n\ne) As the authors have a low number of trials for some combinations (~1%), they may want to focus more on component rejection than on trial rejection. The authors may be required to remove up to 30 components from further analyses. The Vision Analyzer software from Brain Products has some features the authors may find useful, which is a Matlab interface for data export to FieldTrip as well as an excellent overlay function of cleaned vs uncleaned data after component removal.\n\n10) Usually, less than half of the sample exhibits pain-related gamma activity. Could the authors provide a histogramme plot for the baseline-corrected gamma amplitude across the sample?\n\n11) Is there a reason for not including a source analysis for pain intensity encoding? The authors provided a source analysis for all other aspects and should do the same for pain encoding for all frequencies.\n\n12) The analysis should be explained in sufficient detail for replication. In particular, it should be explained for which time-frequency-electrode spaces cluster permutation tests were performed. Moreover, it should be detailed how prediction error effects were calculated (interactions between stimulus intensity and expectations in ANOVA?).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your article \"The temporal characteristics of expectations and prediction errors in pain\" for consideration by eLife. Your revised article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Floris de Lange as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Enrico Schulz (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers felt that the revisions have improved the manuscript, and the paper has clear potential. However, substantial revisions are still required to make this paper suitable for publication. They point out that several central issues have not been fully addressed for far.\n\nEssential Revisions:\n\n1) One issue that not been fully address are the concerns about the pain rating scale, where the \"1\" is clearly outside the pain range, being rated as neutral. Moreover, the low pain cue is in fact a no pain cue. What matters is not located in the periphery and the use of C-fibres, but the subjective pain experience of the participants. There's plenty of literature showing that participants exhibit differences in pain sensitivity. The QUEST algorithm to individually adapt pain intensities from Taesler and Rose, 2017, would have been more suitable to define different levels of pain intensity. Within-subject analyses should (probably) always use individually adapted pain intensities. This issue that the stimuli were ranging from non-painful heat to moderate pain needs to be explicitly addressed throughout the manuscript (including the title) and added to the paragraph on limitations. It is essential that the following questions are addressed convincingly and that these considerations are included to the Discussion section. Does the study really deal with PE in pain? Wouldn't it be necessary to restrict the analysis to painful stimuli? Or should the study be re-framed as studying PE in thermal perception?\n\n2) The answer to the central question about the absence of behavioural effects is not fully convincing. The main argument is simply that it does make sense to investigate PE imaging effects without any behavioural effects. However, a more substantiated consideration of the significance of PE imaging effects in the absence of behavioural effects would be appropriate. These considerations should also be included in the Discussion section.\n\n3) The relationship between GBO and PE is negative, i.e., the greater the PE the lower the GBO amplitude. This pattern is at variance with all previous findings on GBO and PE and therefore contradicts rather than supports PE coding by GBO. The authors reply to this point in the previous round was not sufficiently clear. Clear arguments in plain terms are needed. Moreover, the unusual inverse coding of PEs by gamma oscillations should be added to the Abstract.\n\n4) The cluster-based permutation test is central to control for false positives. It has now been clarified that clustering has been performed across electrodes. However, it is best practice to cluster across electrodes, time and space. It is therefore essential to adjust the clustering procedure.\n\n5) It is unclear whether it is appropriate to apply a baseline correction in reference to the entire trial segment. Could the authors provide a reference in order to justify their approach? Otherwise, they might consider applying a conventional baseline correction.\n\n6) The reviewers suggest the authors consider dropping the source localisation. Most of the images do not seem to make much sense. The only exception that resembles a meaningful solution for the expectation analysis appears to be exaggerated. The authors rightfully mention in the manuscript that the anterior insula is involved in cognitive processing, such as expectation. However, the activity cluster points to the posterior insula and has its major part extended to the lingual gyrus. It does not seem appropriate to rely on the interpretation of one (out of many) remotely interpretable source analysis. It suggests selectively interpreting results that fit the hypotheses.\n\n7) For the interpretation of the EXP and PE effect the authors should be sure that there are no differences in subjective pain intensity between the 3 conditions of EXP and the 2 conditions of PE. The question is whether the prediction error is a real error or whether the pain stimuli were \"naturally\" experienced as more or less painful than intended. Previous studies have shown that the trial-by-trial experience of pain can substantially jitter within subjects, even without any kind of intervention.\n\n8) It is not clear why there is a significant cluster for expectation in the alpha/beta range between 1 \u2013 2 s after cue onset. From visual inspection and \"plausibility check\" this cluster does not particularly stick out from the scattered apparently insignificant clusters across the entire time-frequency range. The F-values at 2.5s/70Hz even appear to be higher than the significant cluster.\n\nReviewer #1:\n\nThe EEG study by Strube and colleagues used a predictive model paradigm to investigate the temporal dynamics of expectation and prediction errors on the processing of heat and pain. Their elaborate and balanced paradigm allowed to differentiate the neuronal oscillations contributing to the encoding of (a) stimulus intensity, (b) expectation, and (c) prediction errors. As a major weakness of the study, the lowest stimulus intensity was not perceived as painful, which does not justify restricting the interpretation to the pain domain but must include heat processing. The reason for this disadvantage is that the stimulus intensity has not been adapted to the participants. All study participants received the same stimulus intensities. This adaptation is mandatory due to the large differences in pain sensitivity across individuals and the focus on within-subject statistical analyses.\n\nThe study corroborates previous work on the influence of cognitive factors on the processing of pain. Furthermore, the study also takes advantage of the higher temporal resolution of EEG, which enabled the authors to analyse the data in reference to the onset of the expectation phase, as well as to analyse the data in reference to the subsequent (jittered) onset of the pain perception phase. As a result, the authors associated pain encoding with gamma activity and high-alpha/low-beta activity for predictor error encoding. The authors utilised an established design, which they have already published using fMRI.\n\nThe study is of utmost relevance for a broad readership of scientists in the fields of pain and cognition. The authors applied a timely randomisation algorithm at cluster-level in order to correct for multiple testing. They also applied an EEG source localisation of their effects with barely interpretable results. The many presented source maps are a good example for the challenges of EEG source localisation, which probably often do not exhibit results we can rely on. This can cause severe publication bias, where \"good\" results are published and \"bad\" results are dropped. The source localisation could have been improved by the use of individual and accurate electrode positions (instead of standard electrode positions), with the use of individual 3D brain images to account for individual anatomical differences, as well as by the co-registration of EEG electrode positions to the individual head shape.\n\nReviewer #2:\n\nThe revisions have significantly improved the manuscript. Many details have been clarified. However, some important issues should be addressed in more detail.\n\nIn contrast to Fazeli and B\u00fcchel, 2018, the behavioral data do not show PE effects. Does it make sense to analyze PE effects in the imaging data if no behavioral PE effects are found?\n\nThe study deals with expectations and PE in pain. To this end, a cueing paradigm has been performed with three thermal stimulus intensities. However, the lowest stimulus intensity has not been perceived as painful but as warm. Thus, some PE refer to errors regarding pain intensity and other PE to errors regarding pain vs non-painful warm. Moreover, the low pain cue is in fact a no pain cue. Does the study therefore really deal with PE in pain? Wouldn't it be necessary to restrict the analysis to painful stimuli? Or should the study be re-framed as studying PE in thermal perception?\n\nThe relationship between GBO and PE is negative, i.e., the greater the PE the lower the GBO amplitude. This pattern is at variance with all previous findings on GBO and PE and therefore contradicts rather than supports PE coding by GBO.\n\nThe analysis should be explained in sufficient detail for replication. In particular, it should be explained for which time-frequency-electrode spaces cluster permutation tests were performed. Moreover, it should be detailed how prediction error effects were calculated (interactions between stimulus intensity and expectations in ANOVA?).\n",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "133ac730-e6e7-4c1d-9ae2-e5f259bbbb8a",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C1",
+      "claim": "Physically identical nociceptive input can lead to variable sensations of pain, depending on contextual factors.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that physically identical nociceptive input can lead to variable sensations of pain, depending on contextual factors (Tracey and Mantyh, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tracey and Mantyh, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "9c4e3c76-903a-4c87-a1ed-3cefa9ac7cbb",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C2",
+      "claim": "Attention, reappraisal, and expectation are core mechanisms that influence how nociception leads to pain.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, attention, reappraisal, and expectation are core mechanisms that influence how nociception leads to pain (Wiech et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wiech et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "99089c63-8e2c-4379-bca2-44aad02d93ae",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C3",
+      "claim": "Placebo hypoalgesia is pain relief mediated by expectation and experience in the absence of active treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "A clinically important example of how expectations can shape pain processing is placebo hypoalgesia: pain relief mediated by expectation and experience \u2013 in the absence of active treatment (Petrovic et al., 2002; Wager et al., 2004; Colloca and Benedetti, 2005; Bingel et al., 2006; Atlas and Wager, 2012; Anchisi and Zanon, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on placebo hypoalgesia",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "44d3985c-9624-4cd1-9b38-f6896e6fb18e",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C4",
+      "claim": "Pain perception can be seen as the consequence of an integration of expectations with nociception in the context of a generative model.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of a generative model of pain, it has been proposed that pain perception can be seen as the consequence of an integration of expectations with nociception (B\u00fcchel et al., 2014; Wiech, 2016; Ongaro and Kaptchuk, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical frameworks",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "a0b2f9eb-713f-4e8c-883f-0a25614d7100",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C5",
+      "claim": "Expectations are integrated with incoming nociceptive information and both are weighted by their relative precision to form a pain percept.",
+      "claim_type": "EXPLICIT",
+      "source": "In this framework, expectations are integrated with incoming nociceptive information and both are weighted by their relative precision (Grahl et al., 2018) to form a pain percept.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Grahl et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "eddd7a17-dd20-4f12-ad07-eb9a6738f6ae",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C6",
+      "claim": "Phasic gamma activity has been associated with stimulus intensity over the sensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, phasic gamma activity has been associated with stimulus intensity over the sensory cortex where the amplitudes of pain-induced gamma oscillations increase with objective stimulus intensity and subjective pain intensity (Gross et al., 2007; Hauck et al., 2007; Zhang et al., 2012; Rossiter et al., 2013; Tiemann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to EEG studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "8fdeea18-d182-4a32-bb7e-f87b87b19f31",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C7",
+      "claim": "Pain-related gamma band oscillations have been linked to the insular cortex as well as temporal and frontal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, pain-related gamma band oscillations have been linked to the insular cortex as well as temporal and frontal regions using depth electrodes in epilepsy patients (Liberati et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liberati et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "ecd737ca-fd3d-4869-a1ad-c8ef554512d7",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C8",
+      "claim": "Gamma activity is enhanced by attention in visual, auditory, sensorimotor processing, and nociception.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, gamma activity is enhanced by attention in human EEG experiments in visual (Gruber et al., 1999), auditory (Tiitinen et al., 1993; Debener et al., 2003), and sensorimotor processing (i.e. tactile stimuli) (Bauer et al., 2006) as well as in nociception (Hauck et al., 2007; Hauck et al., 2015; Tiemann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations across different sensory modalities",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "e83e0f90-29bf-4d8c-80c9-bb2a7008d3d3",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C9",
+      "claim": "Pain-related alpha-to-beta band oscillations are typically suppressed with higher stimulus intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Pain-related alpha-to-beta band oscillations are typically found to be suppressed with higher stimulus intensity (Mouraux et al., 2003; Ploner et al., 2006; May et al., 2012; Hu et al., 2013), which is enhanced by attention (May et al., 2012) and (placebo) expectation (Huneke et al., 2013; Tiemann et al., 2015; Albu and Meagher, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to EEG studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "db8d606f-162b-4f88-9901-53a6d3e290f3",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C10",
+      "claim": "Prestimulus theta, alpha, and gamma activity can affect subsequent pain processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, prestimulus theta (Taesler and Rose, 2016) as well as prestimulus alpha and gamma activity (Tu et al., 2016) can affect subsequent pain processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on prestimulus activity",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "bb8b0b5e-988a-4fd2-92d8-13627871b472",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C11",
+      "claim": "Trials with smaller prestimulus alpha and gamma oscillations were perceived as more painful.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, trials with smaller prestimulus alpha and gamma oscillations were perceived as more painful, suggesting a negative modulation of subsequent pain perception (Tu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tu et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "5635d611-ea84-4e2c-bebc-e66f822e9d2e",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C12",
+      "claim": "The anterior insular cortex plays an important role in mediating expectation effects and the integration of prior expectation and prediction errors in pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous functional magnetic resonance imaging (fMRI) studies have suggested an important role of the anterior insular cortex for mediating expectation effects and the integration of prior expectation and prediction errors in the context of pain (Ploghaus et al., 1999; Koyama et al., 2005; Atlas et al., 2010; Geuter et al., 2017; Fazeli and B\u00fcchel, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple fMRI study citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "f34e1f07-f2cf-4df6-9d1f-3fb554e9dfc5",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C13",
+      "claim": "Neuronal signals in the anterior insula represent predictions and prediction errors with respect to pain.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have revealed that neuronal signals in the anterior insula represent predictions and prediction errors with respect to pain, which in theory would allow the combination of both terms as required for predictive coding (B\u00fcchel et al., 2014; Ongaro and Kaptchuk, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to fMRI studies and theoretical frameworks",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "8accffa8-5acb-4281-86e4-d0bd4187a465",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C14",
+      "claim": "In fMRI studies, predictions and prediction errors cannot be temporally dissociated due to the low temporal resolution of the method.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in fMRI studies, predictions and prediction errors cannot be temporally dissociated due to the low temporal resolution of the method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on known limitations of fMRI methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "bd66f4b7-75dd-4b9a-bf6f-ac85a41afe2c",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C15",
+      "claim": "The study employed contact heat stimuli with three different intensities (low heat, medium heat, and high heat), preceded by a visual cue indicating the upcoming intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this experiment (N = 29) we employed contact heat stimuli with three different intensities (low heat, medium heat, and high heat), preceded by a visual cue indicating the upcoming intensity (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Describes the experimental design used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "1311179e-d3cc-410e-9a35-2bae73c9f663",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C16",
+      "claim": "The modality was correctly cued in 70% of all trials and stimulus intensities were correctly cued in 60% of all trials.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate prediction errors, the modality (picture or heat) was correctly cued only in 70% of all trials, and stimulus intensities were correctly cued only in 60% of all trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental manipulation to generate prediction errors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "bb0fb4a6-9c23-4e02-a622-bd74a2f87da5",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C17",
+      "claim": "Alpha-to-beta activity was associated with stimulus intensity expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that alpha-to-beta activity was associated with stimulus intensity expectation, followed by a negative modulation of gamma band activity by absolute prediction errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding from the EEG data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "5ec29bcb-8b06-4747-b0a0-c43446f6379d",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C18",
+      "claim": "Gamma band activity was negatively modulated by absolute prediction errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that alpha-to-beta activity was associated with stimulus intensity expectation, followed by a negative modulation of gamma band activity by absolute prediction errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding from the EEG data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "82fdc193-355f-4be0-b591-9210e776e029",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C19",
+      "claim": "Prediction errors in visual and auditory perception are associated with increased gamma band activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to prediction errors in visual and auditory perception, which are associated with increased gamma band activity, but is in agreement with observations in working memory and word matching, which show gamma band activity for correct, rather than violated, predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with findings from other sensory modalities",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "87329d90-00f6-4809-aeb7-c316c91a6fd3",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C20",
+      "claim": "Observations in working memory and word matching show gamma band activity for correct, rather than violated, predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to prediction errors in visual and auditory perception, which are associated with increased gamma band activity, but is in agreement with observations in working memory and word matching, which show gamma band activity for correct, rather than violated, predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with findings from other cognitive domains",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "1005dce2-69cd-49b3-87da-5cb2a8a6f3f9",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C21",
+      "claim": "Expectation signals should temporally precede prediction error signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the previous data, we hypothesized that expectation signals should temporally precede prediction error signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on theoretical considerations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "d56529c9-9582-4a2a-bf45-58f240e02323",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C22",
+      "claim": "Prediction error signals should be related to higher frequencies (e.g. gamma band) than prediction signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the functional neuroanatomy of cortical microcircuits (Bastos et al., 2012), with feedforward connections predominately originating from superficial layers and feedback connections from deep layers, we expect that prediction error signals should be related to higher frequencies (e.g. gamma band) than prediction signals (Todorovic et al., 2011; Arnal and Giraud, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on microcircuit theory and citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "44616663-25fa-4ce3-ba0f-3077fc6e6bbf",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C23",
+      "claim": "The study investigated 35 healthy male participants (mean 26, range 18\u201337 years).",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated 35 healthy male participants (mean 26, range 18\u201337 years), who were paid as compensation for their participation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study participants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "8427b3f7-d3ed-4d25-b36c-ccaeea057fca",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C24",
+      "claim": "Data from six participants had to be excluded from the final EEG data analysis due to technical issues, leaving a final sample of 29 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 35 participants, data from six participants had to be excluded from the final EEG data analysis due to technical issues during the EEG recording (i.e. the data of the excluded participants were contaminated with excessive muscle and/or technical artifacts) leaving a final sample of 29 participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data exclusion and final sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "e99e3684-8875-4b0d-8bd3-a768cc410358",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C25",
+      "claim": "Thermal stimulation was performed using a 30 \u00d7 30 mm2 Peltier thermode at three different intensities: low heat (42\u00b0C), medium heat (46\u00b0C), and high heat (48\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Thermal stimulation was performed using a 30 \u00d7 30 mm2 Peltier thermode (CHEPS Pathway, Medoc) at three different intensities: low heat (42\u00b0C), medium heat (46\u00b0C), and high heat (48\u00b0C) at the left radial forearm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of thermal stimulation parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "34c1f30f-6422-4105-85dd-d349009deb9d",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C26",
+      "claim": "The three temperatures cover a large range of temperatures associated with nociception.",
+      "claim_type": "EXPLICIT",
+      "source": "These three temperatures cover a large range of temperatures associated with nociception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Justification for temperature selection",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "3e3ddf7e-02b3-4ea6-881d-84343e8608ab",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C27",
+      "claim": "The lowest temperature was set at 42\u00b0C to ensure a temperature above the median threshold of heat-sensitive C-fiber nociceptors which have a median heat threshold of 41\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest temperature was set at 42\u00b0C to ensure a temperature above the median threshold of heat-sensitive C-fiber nociceptors which have a median heat threshold of 41\u00b0C (Treede et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Justification for lowest temperature based on nociceptor threshold from citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "7aae3df6-2925-48de-aede-0f7dc904bb38",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C28",
+      "claim": "Aversive pictures were chosen from the International Affective Picture System (IAPS) database at three different levels of aversiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Aversive pictures were chosen from the International Affective Picture System (IAPS) (Lang et al., 2008) database at three different levels of aversiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of visual stimulus selection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "e3e3f23b-7642-408c-8fd2-eeab4193f663",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C29",
+      "claim": "The color of the cue indicated the modality of the stimulus (orange for picture and blue for heat).",
+      "claim_type": "EXPLICIT",
+      "source": "The color of the cue (triangle) indicated (probabilistically) the modality of the stimulus (orange for picture and blue for heat).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of cue design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "c7faedc9-6fd8-4d7f-93ab-43d68de18cd4",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C30",
+      "claim": "A white digit written inside of each triangle indicated the intensity of the subsequent stimulus (1, 2, and 3 for low, medium, and high intensity, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "A white digit written inside of each triangle indicated (probabilistically) the intensity of the subsequent stimulus (1, 2, and 3 for low, medium, and high intensity, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of cue design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "73f0c9be-6ce8-432d-a798-6c76e6ad6a0e",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C31",
+      "claim": "EEG data were acquired using a 64-channel Ag/AgCl active electrode system placed according to the extended 10\u201320 system.",
+      "claim_type": "EXPLICIT",
+      "source": "EEG data were acquired using a 64-channel Ag/AgCl active electrode system (ActiCap64; BrainProducts) placed according to the extended 10\u201320 system (Klem et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of EEG recording setup",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "7984225e-79fa-449e-8cdd-65dc500e2d74",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C32",
+      "claim": "The EEG was sampled at 500 Hz, referenced at FCz, and grounded at Iz.",
+      "claim_type": "EXPLICIT",
+      "source": "The EEG was sampled at 500 Hz, referenced at FCz, and grounded at Iz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of EEG recording parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "d62c76c1-98d7-46ea-a666-11bec2bd8d6e",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C33",
+      "claim": "Trials contaminated by eye-blinks and movements were corrected using an independent component analysis (ICA) algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, trials contaminated by eye-blinks and movements were corrected using an independent component analysis (ICA) algorithm (Makeig et al., 1996; Jung et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of artifact correction method with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "0270c974-af08-453e-92b4-0b5a12fac9eb",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C34",
+      "claim": "Participants experienced a clear rating difference between the three levels of heat.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show a clear rating difference between the three levels of heat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Behavioral result from aversiveness ratings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "6fa34354-6c7b-4ae1-84f6-9f339c51fe47",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C35",
+      "claim": "The main effect of stimulus intensity on aversiveness ratings was significant (F[1,28] = 743.97, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate the main effects of stimulus intensity, expectation, and absolute prediction errors, we employed a repeated-measures ANOVA of the behavioral data, which revealed significant effects for the main effect of stimulus intensity, that is, the three levels of heat (F[1,28] = 743.97, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical result from repeated-measures ANOVA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "501793b3-b7dc-4c15-8940-c3f16a94e54a",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C36",
+      "claim": "The main effect for expectation on aversiveness ratings was significant (F[1,28] = 38.53, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the main effect for expectation on aversiveness ratings was significant (F[1,28] = 38.53, p<0.001) (Table 1), indicating an influence of the cued intensity on behavioral aversiveness ratings (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical result from repeated-measures ANOVA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "5072a5aa-d7ef-4380-a12c-acb7f22af49e",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C37",
+      "claim": "The absolute prediction error showed only a trend effect on aversiveness ratings (F[1,28] = 2.87, p=0.10).",
+      "claim_type": "EXPLICIT",
+      "source": "The absolute difference between the cued intensity and the actual stimulus intensity (i.e. absolute prediction error) only showed a trend effect on aversiveness ratings (F[1,28] = 2.87, p=0.10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical result from repeated-measures ANOVA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "ee6c4719-d149-4d8d-80de-41fe3f7d0247",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C38",
+      "claim": "A negative cluster in the low frequency range (1\u201330 Hz) was significantly associated with stimulus intensity, including samples from 250 to 1600 ms after stimulus onset (p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the negative cluster included samples in a time range from 250 to 1600 ms after stimulus onset in a frequency range from 1 to 30 Hz, predominately at contralateral central electrode sites (p=0.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EEG cluster analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "93909e7e-c918-4571-bf06-872fd1aafeda",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C39",
+      "claim": "A positive cluster in the low frequency range (1\u201330 Hz) was significantly associated with stimulus intensity, including samples from 150 to 1050 ms after stimulus onset in the theta frequency range (p=0.048).",
+      "claim_type": "EXPLICIT",
+      "source": "Also in the low frequency range (1\u201330 Hz), a positive significant cluster included samples in a time range from 150 to 1050 ms after stimulus onset in the theta frequency range from 1 to 7 Hz predominately at midline electrode sites (p=0.048).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EEG cluster analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "e33b2c07-5e0a-4b90-a2b5-13a08209960b",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C40",
+      "claim": "A positive cluster in the high frequency range (31\u2013100 Hz) was significantly associated with stimulus intensity, including samples from 550 to 1600 ms after stimulus onset (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In the high frequency range (31\u2013100 Hz) representing gamma activity, one positive cluster was significant (p<0.001). This cluster included samples in a time range from 550 to 1600 ms after stimulus onset and frequencies from 46 to 100 Hz, predominately at contralateral centroparietal electrode sites (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "EEG cluster analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "c04b16b9-6a67-440f-9efd-3e83a8b36764",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C41",
+      "claim": "Higher intensity of thermal input is associated with increased theta and gamma band power.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, these results indicate that a higher intensity of the thermal input is associated with increased theta and gamma band power and a negative relationship of alpha-to-beta band power and the intensity of the thermal input (see Figure 5 for a summary of the results of the main effect of stimulus intensity; see Figure 5\u2014figure supplement 1 for single-subject differences in the gamma band between low stimulus intensity and high stimulus intensity trials).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of EEG findings for stimulus intensity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "a4d83230-6718-4be4-bcff-c9dda0ead84d",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C42",
+      "claim": "Higher intensity of thermal input is associated with a negative relationship of alpha-to-beta band power.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, these results indicate that a higher intensity of the thermal input is associated with increased theta and gamma band power and a negative relationship of alpha-to-beta band power and the intensity of the thermal input (see Figure 5 for a summary of the results of the main effect of stimulus intensity; see Figure 5\u2014figure supplement 1 for single-subject differences in the gamma band between low stimulus intensity and high stimulus intensity trials).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of EEG findings for stimulus intensity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "72d3a55e-bb9d-41cd-8536-966419cbabbb",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C43",
+      "claim": "One significant positive cluster in the low frequency range (1\u201330 Hz) was associated with cue intensity (expectation) (p=0.022).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed one significant positive cluster in the low frequency range (1\u201330 Hz), indicating a linear association of cue intensity (EXP) and power in this frequency range (p<0.05). The expectation cluster (p=0.022) included samples from time points ranging from 100 to 2000 ms after cue onset and included frequencies from 1 to 20 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EEG cluster analysis result for expectation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "daf9e7e5-6bac-44c8-bfd0-e8692dff9761",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C44",
+      "claim": "An increase in alpha-to-beta band power is associated with experimental manipulation of expectations regarding the intensity of thermal input.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these results suggest an increase in alpha-to-beta band power to be associated with our experimental manipulation of expectations regarding the intensity of the thermal input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of EEG findings for expectation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "ce3546df-1bb8-4136-a9a2-3122664f3575",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C45",
+      "claim": "A significant negative cluster in the high frequency range (31\u2013100 Hz) was associated with absolute prediction errors (p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a significant negative cluster in the high frequency range (31\u2013100 Hz), indicating a (negative) linear association of absolute prediction errors and power in this frequency range (p=0.002). This (negative) absolute prediction error cluster included samples from frequencies ranging from 51 to 100 Hz and time points ranging from 50 to 1600 ms after stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EEG cluster analysis result for prediction errors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "85393ad4-ee24-4f3d-bff5-4ebea43ceff6",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C46",
+      "claim": "A decrease in gamma band power is associated with experimental manipulation of expectation violations.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these results suggest a decrease in gamma band power to be associated with our experimental manipulation of expectation violations, resulting from a mismatch of the cued intensity and the actual heat input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of EEG findings for prediction errors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "69268c01-7231-42b2-9d56-d8dd005e2722",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C47",
+      "claim": "A cluster analysis of the signed prediction error did not reveal any significant cluster of activity (all p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "A cluster analysis of the signed prediction error, stimulus-locked after stimulus onset (from 1 to 30 Hz for low frequencies and 31\u2013100 Hz for gamma frequencies; from 0 to 1600 ms, stimulus-locked), did not reveal any significant cluster of activity associated with a linear increase or decrease of EXP (all p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Negative result from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "c490b991-20b5-43ad-a266-79e0e9837c08",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C48",
+      "claim": "A cluster analysis of the one-sided prediction error did not reveal any significant cluster of activity (all p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Ignoring all stimulus\u2013cue combinations of the PE where the stimulus intensity was less intense than expected leads to a one-sided PE. A cluster analysis of this effect did not reveal any significant cluster of activity (all p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Negative result from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "52acc0ad-5b21-4179-b112-9d40719c664b",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C49",
+      "claim": "In the reduced pain model, the main effect of stimulus intensity on pain ratings was significant (F[1,28] = 1109.9, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate the main effects of stimulus intensity, expectation, and absolute prediction errors in the behavioral data, we employed again a repeated-measures ANOVA which revealed significant effects for the main effect of stimulus intensity, that is, the two remaining levels of pain (F[1,28] = 1109.9, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical result from reduced pain model analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "519d407a-d712-4a25-9737-ec0b129fdb6d",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C50",
+      "claim": "In the reduced pain model, the main effect for expectation on pain ratings was significant (F[1,28] = 17.07, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the main effect for expectation on pain ratings was significant (F[1,28] = 17.07, p<0.001), indicating again an influence of the cued intensity on behavioral pain ratings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical result from reduced pain model analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "ad9f3522-d481-4c7c-9590-2299ed265f21",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C51",
+      "claim": "In the reduced pain model, the absolute prediction error revealed a positive significant effect on pain ratings (F[1,28] = 80.75, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The absolute difference between the cued intensity and the actual stimulus intensity (i.e. absolute prediction error) when only painful stimuli were included revealed a positive significant effect on pain ratings (F[1,28] = 80.75, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical result from reduced pain model analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "4a596938-92fe-4395-965c-4187ae70ed6f",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C52",
+      "claim": "The observed increase in theta power agrees with previous studies and most likely corresponds to pain-related evoked potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our observed increase in theta power agrees with previous studies (Ploner et al., 2017) and most likely correspond to pain-related evoked potentials (Lorenz and Garcia-Larrea, 2003; Tiemann et al., 2015), such as the P2 with a similar topography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings in context of previous literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "0328eb3d-a275-41e7-b317-dadf588f51ff",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C53",
+      "claim": "The observed suppression of alpha-to-beta activity is in line with reported beta suppression in previous EEG studies on pain.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed a significant suppression of alpha-to-beta activity which, given the abovementioned delays of our painful stimuli, is in line with the reported beta suppression in previous EEG studies on pain (Mouraux et al., 2003; Ploner et al., 2006; May et al., 2012; Hu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings in context of previous literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "3228080a-143a-4cb6-bf2a-ba1caa35c444",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C54",
+      "claim": "Power in the gamma band was correlated with heat intensity, which is in line with previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, power in the gamma band was also correlated with heat intensity, which is in line with previous studies (Gross et al., 2007; Hauck et al., 2007; Zhang et al., 2012; Rossiter et al., 2013; Tiemann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings in context of previous literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "15412adb-b2d5-450f-90e9-832bddb07334",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C55",
+      "claim": "Only the alpha-to-beta band desynchronization differentiated between medium and high pain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only the alpha-to-beta band desynchronization differentiated between medium and high pain conditions, whereas differences in the theta and gamma band activity were only evident when the lowest stimulus intensity was included which was perceived as neutral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from data analysis comparing different frequency bands",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "be084c7f-35fe-45f7-b4ea-106a97325e89",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C56",
+      "claim": "The effect of prediction errors on perception increased when the analysis was constrained to clearly painful stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the effect of prediction errors on perception increased, and became significant, when we constrained our analysis to the clearly painful stimuli (reduced pain model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison between full model and reduced pain model results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "980a1cf5-2e69-4584-b815-dbd5f93ee4ec",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C57",
+      "claim": "A prediction error seems to more strongly affect pain perception than thermoception.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a prediction error seems to more strongly affect pain perception, whereas the effect is weaker in the context of thermoception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of differences between full and reduced models",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "1d33cd51-71f9-4112-8336-fd3e1fb83543",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C58",
+      "claim": "Feedforward connections are predominately originating from superficial layers and feedback connections from deep layers in cortical microcircuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical accounts (Arnal and Giraud, 2012; Bastos et al., 2012) have suggested that predictive coding mechanisms could be related to the functional architecture of neuronal microcircuits. As feedforward connections are predominately originating from superficial layers and feedback connections from deep layers, it has been suggested that prediction errors should be expressed by higher frequencies than the predictions that accumulate them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical framework from cited literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "3ef58d9d-ff59-4462-ad52-4b2330b071ab",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C59",
+      "claim": "In the auditory modality, prediction errors in the context of repetition suppression were associated with higher gamma band activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the auditory modality, these ideas are supported by empirical data (Todorovic et al., 2011) showing that prediction errors in the context of repetition suppression were associated with higher gamma band activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Empirical finding from cited auditory study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "f9a278f8-9d1b-4974-ae26-6f84f24b6e5e",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C60",
+      "claim": "In the visual domain, temporo-parietal beta power was correlated with the predictability of an action kinematics\u2013outcome sequence, while gamma power was correlated with the prediction error.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, in the visual domain, an MEG study has shown that temporo-parietal beta power was correlated with the predictability of an action kinematics\u2013outcome sequence, while gamma power was correlated with the prediction error (van Pelt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Empirical finding from cited visual MEG study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "dd539e6e-8aba-4377-a522-06dcc8351d92",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C61",
+      "claim": "In rodents, an information flow between S1 gamma and ACC beta activity has been suggested during spontaneous pain.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study in rodents has suggested an information flow between S1 gamma and ACC (Anterior Cingulate Cortex) beta activity during spontaneous pain (Xiao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from cited rodent study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "33865a41-33a2-4fa4-bea6-cfd00c4b01b7",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C62",
+      "claim": "In humans, the sensorimotor cortex is more strongly connected to the medial prefrontal cortex at alpha frequencies during tonic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in humans, a recent EEG study showed that the sensorimotor cortex is more strongly connected to the medial prefrontal cortex at alpha frequencies during tonic pain, suggesting alpha band activity in tonic pain to be associated with bottom-up instead of top-down signaling (Nickel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from cited human EEG study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "b33c49e8-bc32-4390-9e46-03a1be21898d",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C63",
+      "claim": "Alpha suppression in the anterior insula is related mainly to pain expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a previous MEG study reported that alpha suppression in the anterior insula is related mainly to pain expectation in a paradigm in which painful stimuli were interleaved with non-painful stimuli (Franciotti et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from cited MEG study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "0cc59bf7-1d92-4038-9141-eb3d0ef8a993",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C64",
+      "claim": "Alpha desynchronization in the context of predictable painful stimuli has been discussed as a possible neural correlate of attentional preparatory processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In a related study, alpha desynchronization in the context of predictable painful stimuli has been discussed as a possible neural correlate of attentional preparatory processes (Babiloni et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation from cited study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "fe34c194-608f-419e-beed-748e18cd06d8",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C65",
+      "claim": "Resting-state alpha band activity was linked to the expectation of pain modulation (analgesia) in a placebo paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study reported that resting-state alpha band activity was also linked to the expectation of pain modulation (analgesia) in a placebo paradigm (Huneke et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from cited placebo study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "827bec4c-d7dc-4822-a6c5-45eb7afb2fa7",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C66",
+      "claim": "Pain modulation due to nocebo expectation is associated with enhanced alpha activity.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to negative expectations, it has been shown that pain modulation due to nocebo expectation is associated with enhanced alpha activity (Albu and Meagher, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from cited nocebo study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "4f28905a-6d0c-45d5-8486-d78e3075d41d",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C67",
+      "claim": "The findings indicate an important role of low frequency activity in mediating expectation effects in a pain network underlying a generative model for pain perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are in line with these results indicating an important role of low frequency activity in mediating expectation effects in a pain network underlying a generative model for pain perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of current findings in context of literature",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "fe71adb0-f84b-4032-8eaa-37e55b51bfca",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C68",
+      "claim": "Increased gamma power has been associated with successful matching between external input and internal representation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, increased gamma power has been associated with successful matching (i.e. the absence of a prediction error) between external input and internal representation (Herrmann et al., 2004a; Osipova et al., 2006; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from cited studies on gamma activity",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "0dceec79-81af-481e-a29e-c59efd467307",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C69",
+      "claim": "Gamma band responses have been explained in terms of the match between bottom-up and top-down information.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, gamma band responses have been explained in terms of the match between bottom-up and top-down information (Herrmann et al., 2004b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical interpretation from cited study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "a50f0f06-cb45-485c-b5e1-5e3f9fe7c685",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C70",
+      "claim": "A critical word that is semantically predictable by the preceding sentence induces a larger gamma response than words which are semantically incongruent.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that a critical word that is semantically predictable by the preceding sentence (so-called high cloze probability) induces a larger gamma response than words which are semantically incongruent (i.e. unpredicted; low cloze probability) (Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from cited language comprehension study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "9215ec6d-69d0-40ef-b611-f506a5ec3a9d",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C71",
+      "claim": "The lowest stimulus intensity was often not perceived as painful but as hot.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, the lowest stimulus intensity was often not perceived as painful but as hot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from behavioral data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "ac171e3f-cd92-49f8-9a8b-6c4b73fbcb00",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C72",
+      "claim": "Even though the lowest stimulus intensity (42\u00b0C) was above the threshold of nociceptors, the subjective experience was often rated as neutral.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we performed an additional analysis (reduced pain model) only comprising clearly painful stimuli (46\u00b0C and 48\u00b0C) to more specifically address expectations and predictions errors in pain. The analyses of the behavioral data revealed similar results. Both models showed a highly significant effect of stimulus intensity and expectation on perceived stimulus intensity. In addition, the reduced pain model showed a significant prediction error effect, which was formally not observed in the full model. However, it is important to note that this difference should not be overinterpreted, as the p-value for the prediction error effect of the full model was at a trend level (p=0.1). Importantly, the negative representation of prediction errors in the gamma band was evident in both, the reduced and the full model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from behavioral data and justification for reduced model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "2dbb47ff-5b25-474e-9985-a3d35cc52459",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C73",
+      "claim": "The study was restricted to male participants, which means the results cannot be generalized to the population.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore decided to also keep the sample characteristics similar and restricted the sample to male participants, which means that we cannot generalize our results to the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of study limitation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "14b1b338-72d6-45c2-a9aa-6cfacb2a1fc5",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C74",
+      "claim": "The study used a four-button device to assess stimulus intensity, being limited to a coarse rating scale of four levels.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize motor responses and speed up the rating procedure, we used a four-button device to directly assess stimulus intensity (in contrast to using two buttons to move a slider on a VAS), thus being limited to a coarse rating scale of four levels, where one was labeled as 'neutral' and four was labeled as 'very strong'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological choice and limitation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "919e0600-8732-4297-a094-b14c592a8d9d",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C75",
+      "claim": "Key variables required for pain perception and thermoception in the context of a generative model are correlated with distinct oscillatory profiles in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that key variables required for pain perception and thermoception in the context of a generative model are correlated with distinct oscillatory profiles in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "88dac345-ad47-4eb5-bf03-2ca214b74115",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "claim_id": "C76",
+      "claim": "Each oscillatory frequency band was correlated with a distinct variable such as expectation and prediction errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, each oscillatory frequency band was correlated with a distinct variable such as expectation and prediction errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study employed a cued heat paradigm with three stimulus intensities (42\u00b0C, 46\u00b0C, 48\u00b0C) and probabilistic cues (70% modality accuracy, 60% intensity accuracy) in 29 male participants using 64-channel EEG. The experimental design was intended to generate prediction errors and investigate neural representations of expectations and prediction errors in pain processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C33 provide comprehensive methodological details including participant characteristics (C23-C24), stimulus parameters (C25-C27), cue design (C29-C30), and EEG acquisition/preprocessing (C31-C33). The experimental design is clearly described with appropriate justification for temperature selection (C26-C27) and adequate sample size based on power calculation (C24). The methodology is sufficiently detailed for replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "e1e87587-9a0e-4418-ac61-55b78a8630a0",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Behavioral ratings showed significant main effects of stimulus intensity (F[1,28]=743.97, p<0.001) and expectation (F[1,28]=38.53, p<0.001) on aversiveness ratings, while absolute prediction error showed only a trend effect (F[1,28]=2.87, p=0.10) in the full model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 report behavioral results with appropriate statistical tests (repeated-measures ANOVA) and clear p-values. The significant effects of stimulus intensity and expectation are well-supported by the data, while the non-significant prediction error effect is appropriately reported as a trend. Sample size (N=29) appears adequate based on the reported effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "faf2bf20-bd79-44cd-8af8-ed91c2f3133e",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EEG analysis revealed that higher thermal stimulus intensity was associated with increased theta (1-7 Hz, 150-1050 ms, p=0.048) and gamma band power (46-100 Hz, 550-1600 ms, p<0.001), and decreased alpha-to-beta band power (1-30 Hz, 250-1600 ms, p=0.002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 report EEG cluster analysis results with appropriate multiple comparison correction (cluster permutation testing). The temporal, spectral, and spatial characteristics of significant clusters are clearly specified with p-values. The findings replicate previous literature on pain-related oscillatory activity (C52-C54), providing convergent validity. The analysis approach is appropriate for exploratory EEG data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "7fc32a3c-8997-4e73-be0e-2f80ffa6072c",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Expectation of stimulus intensity was associated with increased alpha-to-beta band power (1-20 Hz, 100-2000 ms after cue onset, p=0.022) during the anticipatory period before stimulus delivery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 report a significant cluster associated with expectation using appropriate cluster correction. The temporal window (cue-locked, before stimulus) is appropriate for testing expectation effects. The finding is consistent with prior literature on alpha/beta activity in pain expectation (C63-C67), providing theoretical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "475db1a8-c4d9-413c-9d91-8e44dd116e44",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Absolute prediction errors were associated with decreased gamma band power (51-100 Hz, 50-1600 ms after stimulus onset, p=0.002), representing a negative modulation of gamma activity by expectation violations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 report a significant negative cluster for absolute prediction errors with appropriate statistical correction. The finding is novel and contrasts with visual/auditory prediction error literature (C19, C59-C60) but aligns with working memory/word matching findings (C20, C68-C70). The temporal window is appropriate for post-stimulus prediction error processing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "7c7d17b6-7d7c-4ff6-b458-6bfce120df93",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "No significant clusters were found for signed prediction errors or one-sided prediction errors (all p>0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 appropriately report negative findings with p-values. These null results are important for characterizing the specificity of the absolute prediction error effect and are transparently reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "b44878c4-a7ec-4ac1-b721-4ff2e804e9e8",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In the reduced pain model (excluding 42\u00b0C stimuli), significant effects were observed for stimulus intensity (F[1,28]=1109.9, p<0.001), expectation (F[1,28]=17.07, p<0.001), and absolute prediction error (F[1,28]=80.75, p<0.001) on pain ratings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 report results from the reduced model with appropriate statistics. The emergence of a significant prediction error effect in the reduced model (C51) compared to the trend in the full model (C37) is appropriately discussed (C56-C57, C72). This analysis addresses the concern that the lowest temperature was often perceived as non-painful (C71-C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "68cf52b5-a5f2-4e3d-bc1d-630c97120f5c",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study demonstrates temporal and spectral separation of expectation and prediction error signals: alpha-to-beta activity preceded stimulus onset and was associated with expectation, while gamma band activity occurred post-stimulus and was negatively modulated by prediction errors, supporting distinct oscillatory profiles for key variables in a generative model of pain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 and C75-C76 summarize the main findings, which are well-supported by the detailed EEG results (C38-C46). The temporal separation (C21) and frequency differentiation (C22) hypotheses are confirmed by the data. The findings provide novel insights into the neural mechanisms of predictive coding in pain, though the negative gamma modulation by prediction errors differs from visual/auditory domains (C19) and requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "16452d8e-8af4-4d97-bd9f-c6cf8e346a0e",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Alpha-to-beta desynchronization differentiated between medium and high pain conditions, while theta and gamma differences were only evident when including the neutral (42\u00b0C) condition. Prediction error effects on perception were stronger for clearly painful stimuli than for thermoception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C57 present interesting observations about frequency-specific sensitivity and pain vs. thermoception differences. However, C57 is explicitly labeled as speculation by the authors and C56 notes the prediction error effect 'became significant' in the reduced model, though the p-value difference (p=0.10 vs p<0.001) may not be statistically meaningful without formal interaction testing. These interpretations require additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "afb01f50-208f-49e9-843b-3b6386b023e6",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The observed theta power increase corresponds to pain-related evoked potentials (P2), alpha-to-beta suppression aligns with previous pain EEG studies, and gamma band correlation with heat intensity replicates prior findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 appropriately contextualize the current findings within existing literature. The interpretations are supported by multiple citations and the observed patterns are consistent with established pain neurophysiology. These claims validate the experimental approach and demonstrate replication of known effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "f2d783e4-a6d9-4918-99ae-aae6684be817",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings are interpreted within theoretical frameworks of cortical microcircuits and predictive coding, with comparisons to auditory, visual, rodent, and human pain studies showing that low-frequency activity mediates expectation effects in pain networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C67 provide appropriate theoretical context from prior literature. The citations support the interpretations and the authors appropriately note both consistencies (C67) and differences (C19-C20) with other sensory modalities. The theoretical framework is well-established and appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "18696304-807c-40b3-9654-e97c2ca40744",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Increased gamma power has been associated with successful matching between external input and internal representation in working memory and language comprehension tasks, where predicted stimuli show larger gamma responses than unpredicted stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 cite relevant literature showing gamma activity for correct predictions in non-pain domains. These citations appropriately support the interpretation that the negative gamma modulation by prediction errors in pain (C45-C46) aligns with some cognitive domains rather than visual/auditory perception.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "efc0fcea-267b-4937-892a-e6efcf431c9f",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The lowest stimulus intensity (42\u00b0C) was often perceived as hot rather than painful, despite being above nociceptor threshold, motivating the reduced pain model analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 acknowledge an important limitation and justify the reduced model analysis. The observation that 42\u00b0C was above nociceptor threshold (C27) but subjectively neutral is appropriately addressed. The authors correctly note that the prediction error p-value difference between models (p=0.10 vs p<0.001) should not be overinterpreted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "b8e3d7f3-47ee-4108-894d-7d7dc127303c",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study has limitations including restriction to male participants (limiting generalizability) and use of a coarse 4-point rating scale (limiting sensitivity to fine-grained differences).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 appropriately acknowledge study limitations. The male-only sample is a clear limitation for generalizability, though justified by the desire to match a previous fMRI study. The coarse rating scale is a methodological trade-off for faster responses and more trials. These limitations are transparently reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "668e277b-8fa9-4134-a3dc-77286ba8312a",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction establishes that pain perception is influenced by contextual factors including expectations, that predictive coding frameworks propose pain results from integrating expectations with nociception, and that prior fMRI studies implicated the anterior insula but could not temporally dissociate predictions from prediction errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 provide appropriate background from cited literature establishing the theoretical framework and motivation for the study. The citations support the claims about pain modulation by expectations (C1-C3), generative models (C4-C5), EEG correlates (C6-C11), and fMRI findings (C12-C13). The limitation of fMRI temporal resolution (C14) appropriately motivates the EEG approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    },
+    {
+      "id": "e18fce16-463b-4e65-b222-971535692dd4",
+      "content_id": "f98f2e2d-3b6b-46cc-96a2-4c7cea6a91cb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The negative gamma modulation by prediction errors in pain contrasts with visual/auditory perception (where prediction errors increase gamma) but agrees with working memory and word matching (where gamma increases for correct predictions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 appropriately contextualize the main finding within broader literature. The contrast with visual/auditory domains and agreement with cognitive domains is important for interpreting the results. However, the specific citations supporting C20 are not provided in the text, making this claim slightly less verifiable than C19.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:17.785610Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bd66f4b7-75dd-4b9a-bf6f-ac85a41afe2c",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "1311179e-d3cc-410e-9a35-2bae73c9f663",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "44616663-25fa-4ce3-ba0f-3077fc6e6bbf",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "8427b3f7-d3ed-4d25-b36c-ccaeea057fca",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "e99e3684-8875-4b0d-8bd3-a768cc410358",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "34c1f30f-6422-4105-85dd-d349009deb9d",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "3e3ddf7e-02b3-4ea6-881d-84343e8608ab",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "7aae3df6-2925-48de-aede-0f7dc904bb38",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "e3e3f23b-7642-408c-8fd2-eeab4193f663",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "c7faedc9-6fd8-4d7f-93ab-43d68de18cd4",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "73f0c9be-6ce8-432d-a798-6c76e6ad6a0e",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "7984225e-79fa-449e-8cdd-65dc500e2d74",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "d62c76c1-98d7-46ea-a666-11bec2bd8d6e",
+      "result_id": "30e21eb2-73ec-41c2-a950-6fd15bbadb5d"
+    },
+    {
+      "claim_id": "0270c974-af08-453e-92b4-0b5a12fac9eb",
+      "result_id": "e1e87587-9a0e-4418-ac61-55b78a8630a0"
+    },
+    {
+      "claim_id": "6fa34354-6c7b-4ae1-84f6-9f339c51fe47",
+      "result_id": "e1e87587-9a0e-4418-ac61-55b78a8630a0"
+    },
+    {
+      "claim_id": "501793b3-b7dc-4c15-8940-c3f16a94e54a",
+      "result_id": "e1e87587-9a0e-4418-ac61-55b78a8630a0"
+    },
+    {
+      "claim_id": "5072a5aa-d7ef-4380-a12c-acb7f22af49e",
+      "result_id": "e1e87587-9a0e-4418-ac61-55b78a8630a0"
+    },
+    {
+      "claim_id": "ee6c4719-d149-4d8d-80de-41fe3f7d0247",
+      "result_id": "faf2bf20-bd79-44cd-8af8-ed91c2f3133e"
+    },
+    {
+      "claim_id": "93909e7e-c918-4571-bf06-872fd1aafeda",
+      "result_id": "faf2bf20-bd79-44cd-8af8-ed91c2f3133e"
+    },
+    {
+      "claim_id": "e33b2c07-5e0a-4b90-a2b5-13a08209960b",
+      "result_id": "faf2bf20-bd79-44cd-8af8-ed91c2f3133e"
+    },
+    {
+      "claim_id": "c04b16b9-6a67-440f-9efd-3e83a8b36764",
+      "result_id": "faf2bf20-bd79-44cd-8af8-ed91c2f3133e"
+    },
+    {
+      "claim_id": "a4d83230-6718-4be4-bcff-c9dda0ead84d",
+      "result_id": "faf2bf20-bd79-44cd-8af8-ed91c2f3133e"
+    },
+    {
+      "claim_id": "72d3a55e-bb9d-41cd-8536-966419cbabbb",
+      "result_id": "7fc32a3c-8997-4e73-be0e-2f80ffa6072c"
+    },
+    {
+      "claim_id": "daf9e7e5-6bac-44c8-bfd0-e8692dff9761",
+      "result_id": "7fc32a3c-8997-4e73-be0e-2f80ffa6072c"
+    },
+    {
+      "claim_id": "ce3546df-1bb8-4136-a9a2-3122664f3575",
+      "result_id": "475db1a8-c4d9-413c-9d91-8e44dd116e44"
+    },
+    {
+      "claim_id": "85393ad4-ee24-4f3d-bff5-4ebea43ceff6",
+      "result_id": "475db1a8-c4d9-413c-9d91-8e44dd116e44"
+    },
+    {
+      "claim_id": "69268c01-7231-42b2-9d56-d8dd005e2722",
+      "result_id": "7c7d17b6-7d7c-4ff6-b458-6bfce120df93"
+    },
+    {
+      "claim_id": "c490b991-20b5-43ad-a266-79e0e9837c08",
+      "result_id": "7c7d17b6-7d7c-4ff6-b458-6bfce120df93"
+    },
+    {
+      "claim_id": "52acc0ad-5b21-4179-b112-9d40719c664b",
+      "result_id": "b44878c4-a7ec-4ac1-b721-4ff2e804e9e8"
+    },
+    {
+      "claim_id": "519d407a-d712-4a25-9737-ec0b129fdb6d",
+      "result_id": "b44878c4-a7ec-4ac1-b721-4ff2e804e9e8"
+    },
+    {
+      "claim_id": "ad9f3522-d481-4c7c-9590-2299ed265f21",
+      "result_id": "b44878c4-a7ec-4ac1-b721-4ff2e804e9e8"
+    },
+    {
+      "claim_id": "bb0fb4a6-9c23-4e02-a622-bd74a2f87da5",
+      "result_id": "68cf52b5-a5f2-4e3d-bc1d-630c97120f5c"
+    },
+    {
+      "claim_id": "5ec29bcb-8b06-4747-b0a0-c43446f6379d",
+      "result_id": "68cf52b5-a5f2-4e3d-bc1d-630c97120f5c"
+    },
+    {
+      "claim_id": "1005dce2-69cd-49b3-87da-5cb2a8a6f3f9",
+      "result_id": "68cf52b5-a5f2-4e3d-bc1d-630c97120f5c"
+    },
+    {
+      "claim_id": "d56529c9-9582-4a2a-bf45-58f240e02323",
+      "result_id": "68cf52b5-a5f2-4e3d-bc1d-630c97120f5c"
+    },
+    {
+      "claim_id": "919e0600-8732-4297-a094-b14c592a8d9d",
+      "result_id": "68cf52b5-a5f2-4e3d-bc1d-630c97120f5c"
+    },
+    {
+      "claim_id": "88dac345-ad47-4eb5-bf03-2ca214b74115",
+      "result_id": "68cf52b5-a5f2-4e3d-bc1d-630c97120f5c"
+    },
+    {
+      "claim_id": "15412adb-b2d5-450f-90e9-832bddb07334",
+      "result_id": "16452d8e-8af4-4d97-bd9f-c6cf8e346a0e"
+    },
+    {
+      "claim_id": "be084c7f-35fe-45f7-b4ea-106a97325e89",
+      "result_id": "16452d8e-8af4-4d97-bd9f-c6cf8e346a0e"
+    },
+    {
+      "claim_id": "980a1cf5-2e69-4584-b815-dbd5f93ee4ec",
+      "result_id": "16452d8e-8af4-4d97-bd9f-c6cf8e346a0e"
+    },
+    {
+      "claim_id": "4a596938-92fe-4395-965c-4187ae70ed6f",
+      "result_id": "afb01f50-208f-49e9-843b-3b6386b023e6"
+    },
+    {
+      "claim_id": "0328eb3d-a275-41e7-b317-dadf588f51ff",
+      "result_id": "afb01f50-208f-49e9-843b-3b6386b023e6"
+    },
+    {
+      "claim_id": "3228080a-143a-4cb6-bf2a-ba1caa35c444",
+      "result_id": "afb01f50-208f-49e9-843b-3b6386b023e6"
+    },
+    {
+      "claim_id": "1d33cd51-71f9-4112-8336-fd3e1fb83543",
+      "result_id": "f2d783e4-a6d9-4918-99ae-aae6684be817"
+    },
+    {
+      "claim_id": "3ef58d9d-ff59-4462-ad52-4b2330b071ab",
+      "result_id": "f2d783e4-a6d9-4918-99ae-aae6684be817"
+    },
+    {
+      "claim_id": "f9a278f8-9d1b-4974-ae26-6f84f24b6e5e",
+      "result_id": "f2d783e4-a6d9-4918-99ae-aae6684be817"
+    },
+    {
+      "claim_id": "dd539e6e-8aba-4377-a522-06dcc8351d92",
+      "result_id": "f2d783e4-a6d9-4918-99ae-aae6684be817"
+    },
+    {
+      "claim_id": "33865a41-33a2-4fa4-bea6-cfd00c4b01b7",
+      "result_id": "f2d783e4-a6d9-4918-99ae-aae6684be817"
+    },
+    {
+      "claim_id": "b33c49e8-bc32-4390-9e46-03a1be21898d",
+      "result_id": "f2d783e4-a6d9-4918-99ae-aae6684be817"
+    },
+    {
+      "claim_id": "0cc59bf7-1d92-4038-9141-eb3d0ef8a993",
+      "result_id": "f2d783e4-a6d9-4918-99ae-aae6684be817"
+    },
+    {
+      "claim_id": "fe34c194-608f-419e-beed-748e18cd06d8",
+      "result_id": "f2d783e4-a6d9-4918-99ae-aae6684be817"
+    },
+    {
+      "claim_id": "827bec4c-d7dc-4822-a6c5-45eb7afb2fa7",
+      "result_id": "f2d783e4-a6d9-4918-99ae-aae6684be817"
+    },
+    {
+      "claim_id": "4f28905a-6d0c-45d5-8486-d78e3075d41d",
+      "result_id": "f2d783e4-a6d9-4918-99ae-aae6684be817"
+    },
+    {
+      "claim_id": "fe71adb0-f84b-4032-8eaa-37e55b51bfca",
+      "result_id": "18696304-807c-40b3-9654-e97c2ca40744"
+    },
+    {
+      "claim_id": "0dceec79-81af-481e-a29e-c59efd467307",
+      "result_id": "18696304-807c-40b3-9654-e97c2ca40744"
+    },
+    {
+      "claim_id": "a50f0f06-cb45-485c-b5e1-5e3f9fe7c685",
+      "result_id": "18696304-807c-40b3-9654-e97c2ca40744"
+    },
+    {
+      "claim_id": "9215ec6d-69d0-40ef-b611-f506a5ec3a9d",
+      "result_id": "efc0fcea-267b-4937-892a-e6efcf431c9f"
+    },
+    {
+      "claim_id": "ac171e3f-cd92-49f8-9a8b-6c4b73fbcb00",
+      "result_id": "efc0fcea-267b-4937-892a-e6efcf431c9f"
+    },
+    {
+      "claim_id": "2dbb47ff-5b25-474e-9985-a3d35cc52459",
+      "result_id": "b8e3d7f3-47ee-4108-894d-7d7dc127303c"
+    },
+    {
+      "claim_id": "14b1b338-72d6-45c2-a9aa-6cfacb2a1fc5",
+      "result_id": "b8e3d7f3-47ee-4108-894d-7d7dc127303c"
+    },
+    {
+      "claim_id": "133ac730-e6e7-4c1d-9ae2-e5f259bbbb8a",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "9c4e3c76-903a-4c87-a1ed-3cefa9ac7cbb",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "99089c63-8e2c-4379-bca2-44aad02d93ae",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "44d3985c-9624-4cd1-9b38-f6896e6fb18e",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "a0b2f9eb-713f-4e8c-883f-0a25614d7100",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "eddd7a17-dd20-4f12-ad07-eb9a6738f6ae",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "8fdeea18-d182-4a32-bb7e-f87b87b19f31",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "ecd737ca-fd3d-4869-a1ad-c8ef554512d7",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "e83e0f90-29bf-4d8c-80c9-bb2a7008d3d3",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "db8d606f-162b-4f88-9901-53a6d3e290f3",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "bb8b0b5e-988a-4fd2-92d8-13627871b472",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "5635d611-ea84-4e2c-bebc-e66f822e9d2e",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "f34e1f07-f2cf-4df6-9d1f-3fb554e9dfc5",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "8accffa8-5acb-4281-86e4-d0bd4187a465",
+      "result_id": "668e277b-8fa9-4134-a3dc-77286ba8312a"
+    },
+    {
+      "claim_id": "82fdc193-355f-4be0-b591-9210e776e029",
+      "result_id": "e18fce16-463b-4e65-b222-971535692dd4"
+    },
+    {
+      "claim_id": "87329d90-00f6-4809-aeb7-c316c91a6fd3",
+      "result_id": "e18fce16-463b-4e65-b222-971535692dd4"
+    }
+  ],
+  "comparisons": []
+}

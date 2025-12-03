@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A microevolution experiment was conducted with two TcI parental strains (P1, P2) and three hybrid clones (1C2, 1D12, 2C1) cultured for ~800 generations. Parental DNA content remained stable while hybrid DNA content decreased progressively by up to 22.5%, corresponding to genome erosion at ~23 kb/generation, with variable patterns among hybrid lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 provide converging evidence from flow cytometry measurements over time showing stable parental DNA content and progressive hybrid genome erosion. The experimental design is clearly described (C18-C19), measurements are quantitative (C20-C23), and line-specific patterns are documented (C24-C26). The erosion rate calculation (C23) is appropriately derived from flow cytometry data and published genome size estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Three of nine evolved hybrid clones lost at least one microsatellite allele during culture growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by microsatellite genotyping data presented in Supplementary file 1. This provides independent molecular evidence for genome instability in hybrids, complementing the flow cytometry data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Parental strains P1 and P2 differ in genome size (~2 Mbp) and SNP density (9.28 vs 3.71 SNP/kb genome-wide; 2.84 vs 2.11 SNP/kb in high-quality regions). P1 shows expansion of tandem-repeated and surface molecule-coding regions compared to P2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by genome assembly data and SNP calling analysis with appropriate quality filtering. The characterization of parental genome differences provides essential baseline data for interpreting hybrid genomes. CNV analysis (C31) supports the observed SNP distribution patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Hybrid strains show increased SNP density (3.29-3.49 SNP/kb) compared to parents, with additional de novo mutations enriched for non-synonymous changes (NS/S ratio ~2.2-2.4 vs ~1.4 in inherited SNPs) and disproportionately affecting surface protein-coding genes (~4-fold enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 demonstrate increased genetic diversity in hybrids with quantitative support from SNP density analysis (C33), identification of de novo mutations (C34-C35), and effect prediction showing elevated NS/S ratios (C36) and surface gene enrichment (C37-C38). The data consistently support a burst of mutations associated with hybridization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Parental strains are diploid (allele balance peaks at 50%) while initial hybrid clones are tetraploid (peaks at 25%/75% or 50%), with ~70% greater DNA content. P2 shows trisomy of chromosomes 2 and 21. Hybrids inherit SNPs from both parents, indicating tetraploidy results from fusion of diploid parental genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide converging evidence for ploidy from multiple methods: read depth coverage (RDC), allele balance (AB) analysis, and flow cytometry. The combination of methods strengthens the conclusion. However, C40 notes that chromosome 44 aneuploidy in P1 could not be confirmed by AB analysis due to lack of high-quality SNPs, appropriately acknowledging a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "After 800 generations, parental aneuploidies changed (P2 lost trisomies in chr 2/21; both parents gained trisomy in chr 37). Hybrid 2C1 transitioned from tetraploid to triploid. Chromosomes 19 and 37 remained tetrasomic in all hybrids. Genome erosion appears gradual with sequential losses rather than coordinated ploidy jumps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by CCNV analysis at generation 800 combined with intermediate time point flow cytometry data. The observation of dynamic aneuploidy and gradual erosion is well-documented. The retention of tetrasomy in specific chromosomes (C47) is consistently observed across all hybrid clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Despite stable parental DNA content, both parental and hybrid clones showed CNV after culture growth. Gene losses occurred mainly in surface protein-coding and host-parasite interaction genes, while genes for metabolism, ion transport, and cell division increased. Chromosomes 19 and 37 (enriched in housekeeping genes) remained tetrasomic in hybrids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by CNV analysis data in Supplementary files 6-12 and gene content analysis. The functional categorization of genes showing gains vs losses is biologically coherent and consistent with adaptation to culture conditions. The retention of housekeeping gene-rich chromosomes (C52-C53) provides a plausible fitness explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C89"
+    ],
+    "result": "P1 clones maintained stable SNP density after culture growth while P2 clones showed significant increase (2.11 to 2.66-2.81 SNP/kb, p=0.042). P2 clones lost copies of HUS1-like DNA repair genes, many located on chromosome 2, potentially explaining the increased mutation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by SNP density analysis with appropriate statistical testing (Mann-Whitney test) and CNV analysis. The proposed mechanistic link between HUS1 gene loss and increased mutation rate (C57, C89) is speculative but reasonable given the known role of HUS1 in genome stability (supported by C88). However, C89 appropriately uses cautious language ('could possibly be related').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Most evolved hybrid clones showed slight SNP density decrease (except 1D12-3), with clone-specific patterns of new variants. Chromosome-level SNP patterns remained similar over time, with some chromosomes (5, 11, 24, 37) showing consistently higher density. Novel SNPs were enriched for non-synonymous mutations in surface protein-coding genes, suggesting these regions mutate faster than the rest of the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 are supported by comprehensive SNP analysis across all evolved clones with chromosome-level resolution. The enrichment of mutations in surface protein genes is consistently observed in both parental (C65) and hybrid (C66) evolved clones. The inference that surface molecule-coding regions mutate faster (C67) is well-supported by the data, though the mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Initial hybrid clones were tetraploid, formed by fusion of diploid parental genomes (evidenced by inheritance of SNPs from both parents), with gradual genome erosion over time. This confirms parasexual hybridization in T. cruzi, resembling Candida albicans parasexual cycle, distinct from the meiosis-like process in T. brucei and Leishmania.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 synthesize multiple lines of evidence (ploidy, SNP inheritance, erosion patterns) to support parasexual hybridization. The comparison to C. albicans (C72) and contrast with T. brucei/Leishmania (C73) are appropriately supported by citations. However, C69 acknowledges that 'more complex pathways cannot be ruled out in the absence of direct observational evidence,' appropriately noting the limitation of inferring mechanism from genomic data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "T. cruzi genomes are highly responsive to environmental conditions, showing dynamic aneuploidy and CNV. Surface genes were eroded while metabolism/cell division genes expanded during culture adaptation. Aneuploidy (particularly chr 37 in all clones) appears to provide fitness benefits in culture and is rapidly reversed when no longer beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are supported by the observed CNV and CCNV changes during culture growth. The interpretation of environmental responsiveness is well-supported by the data. Claims about aneuploidy in natural populations (C76) and its role in adaptation (C77, C81) are appropriately supported by citations. The inference about fitness benefits (C80) is reasonable given the consistent observation across all clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Hybridization increased genetic sequence diversity through both new mutations and likely recombination. P2 showed higher mutation rate than P1 after 800 generations. TcI strains have more efficient mismatch repair than other DTUs, and HUS1 is required for genome stability in Leishmania.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by SNP analysis data. The inference of recombination (C84) is reasonable but not directly demonstrated. Claims about TcI mismatch repair efficiency (C87) and HUS1 function (C88) are appropriately supported by citations to prior work, providing context for interpreting the observed mutation rate differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Culture growth led to reduction in genetic variants in most evolved clones, likely due to loss of heterozygosity and genome erosion. No bias in loss of specific parental chromosomes was observed, suggesting recombination. Hybrids would likely stabilize at diploidy with chromosomes from both parents and higher polymorphism than parents, similar to natural TcV/TcVI hybrids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C92 are supported by SNP density analysis over time. However, the prediction that hybrids will stabilize at diploidy (C93) is speculative, appropriately qualified with 'it is likely.' The comparison to natural hybrids (C94-C95) is supported by citations but the claim that in vitro hybrid formation is 'highly similar' to natural hybrid formation (C95) is an inference that extends beyond the direct evidence, as the natural hybridization process was not directly observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Surface protein-coding genes show higher genetic diversity and more rapid evolution than other genomic regions. Distinct genomic signatures and amino acid substitutions accumulated in both parental and hybrid clones after relatively few generations. Higher recombination frequency in repeat-rich regions likely contributes to this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are well-supported by SNP distribution and mutation rate analysis throughout the study. The inference about higher recombination in repeat-rich regions (C98) is supported by citation to prior work and is consistent with the observed patterns. The comparison to natural T. cruzi strains (C99) is appropriately supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Natural inter-DTU hybridization between TcII and TcIII generated TcV and TcVI. Evidence for TcI/TcIV genetic exchange exists from phylogenetic incongruence. However, genetic exchange frequency appears too low to disrupt clade stability, likely due to ecological/geographical isolation and potentially high fitness costs of tetraploidy in the wild.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 about natural hybridization and clade stability are appropriately supported by citations. However, the explanations for clade robustness (C103) and fitness costs of tetraploidy (C104) are speculative inferences, though reasonable. C103 and C104 appropriately use cautious language ('likely promoted,' 'may also be').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "In vitro T. cruzi hybrid formation occurs via parasexual mechanism, representing an important mechanism of genetic diversification. Tetraploid hybrids show progressive genome erosion shaped by environmental selective pressure. Hybrids show increased coding sequence diversity from new mutations and recombination. Repetitive gene families related to immune evasion evolve more rapidly than other genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 appropriately summarize the major findings of the study. Each summary claim is supported by the detailed results presented earlier. The conclusions are appropriately qualified and acknowledge both demonstrated findings (parasexual mechanism, genome erosion, increased diversity) and inferences (role of selective pressure, intrinsic mechanism of variation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establish that T. cruzi causes Chagas disease, has complex transmission cycles, displays diverse surface proteins encoded by repetitive genomic regions, and has debated reproductive modes. Natural TcV/TcVI hybrids exist, and in vitro hybrid formation has been demonstrated with non-Mendelian inheritance and elevated DNA content, suggesting parasexual mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide background context appropriately supported by citations to prior literature. These establish the scientific foundation for the current study but do not represent new findings from this work.",
+    "result_type": "MINOR"
+  }
+]

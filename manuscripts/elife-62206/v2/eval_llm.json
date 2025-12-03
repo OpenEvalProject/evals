@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C39",
+      "C40",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors developed a chromatin-constrained variant-to-gene mapping approach using ATAC-seq and promoter-focused Capture C data from adipocytes and hypothalamic neurons. Applied to 2010 BMI GWAS suggestive signals (5\u00d710\u207b\u2078\u2264p<5\u00d710\u207b\u2074), this method identified 15 loci at p<5\u00d710\u207b\u2075, of which 13 (86.7%) achieved genome-wide significance by 2018.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C25-C34, C96-C105) provide detailed technical specifications for data generation and filtering. The key result claims (C3-C5, C39) report specific validation rates with clear numerical outcomes. The retrospective validation design allows direct assessment of predictive performance, and the high validation rate (13/15) at the stringent threshold provides strong support for the method's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "When applied to 2010 BMI GWAS data and validated against 2018 results (N=681,275), 45 of 78 biologically constrained loci achieved genome-wide significance. At the 5\u00d710\u207b\u2078\u2264p<5\u00d710\u207b\u2075 threshold, 86.7% (13/15) of constrained loci reached GWS by 2018, significantly outperforming unconstrained approaches (105/163, 64.4%) with approximately 1.2-1.5-fold higher positive predictive value than random selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 provide comprehensive validation data across multiple p-value thresholds with specific numerical outcomes. The comparison to unconstrained approaches (C44-C45) and random sampling (C46-C48) strengthens the evidence. The sample size progression (C76-C78) provides context for interpreting validation rates. The diminishing returns observation (C50) appropriately qualifies the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Applying the chromatin-constraint method to 2015 BMI GWAS data, 80% (57/71) of constrained loci at 5\u00d710\u207b\u2078\u2264p<5\u00d710\u207b\u2075 achieved genome-wide significance by 2018, compared to 59% (148/248) of unconstrained loci. At the more stringent 5\u00d710\u207b\u2078\u2264p<5\u00d710\u207b\u2076 threshold, 93% (26/28) of surviving signals reached GWS by 2018.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide specific validation rates with clear denominators across different thresholds. The comparison between constrained and unconstrained approaches (C52-C53) demonstrates consistent superiority of the method. The interpretation regarding sample size effects (C55) is reasonable given the data. The overall conclusion (C56) is well-supported by the presented evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The chromatin-constraint approach was validated on WHRadjBMI GWAS data. For 2010 WHRadjBMI, 36 of 71 constrained loci achieved GWS by 2018. Precision at 5\u00d710\u207b\u2078\u2264p<5\u00d710\u207b\u2076 was 100% for most analyses (83% for adipose WHRadjBMI), representing a 1.3-1.6-fold increase over random sampling. The method showed lower but still significant performance for WHRadjBMI compared to BMI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide specific numerical outcomes for WHRadjBMI analyses. The precision values (C60) are clearly stated with the exception noted. The comparison to random sampling (C61) and the overall conclusion (C62) are supported by the data. Claims C81-C83 provide additional context showing trait-specific differences in performance, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C72"
+    ],
+    "result": "Negative control analyses showed that SNPs failing the variant-to-gene mapping filter (not in open chromatin or not contacting promoters) did not differ from unconstrained signals in their validation rates across any p-value bin, cell type, or trait. The specificity of this negative control never outperformed the variant-to-gene mapping filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C72 report consistent null findings across all tested conditions, which is appropriate for a negative control. Claim C64 provides a reasonable interpretation that the observed differences are attributable to the chromatin-constraint strategy rather than artifacts. The figures referenced (Figures 7-8) provide visual support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Performance characterization revealed sensitivity generally <25% (high false negative rate) but specificity consistently >80-90% (low false positive rate). Precision was particularly high through 5\u00d710\u207b\u2078<p<5\u00d710\u207b\u2075. The low sensitivity is attributed to cell-type specificity of the chromatin data, while high specificity and precision indicate the method preferentially retains true positive signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 provide comprehensive performance metrics with clear interpretations. The trade-off between sensitivity and specificity (C65-C69) is well-documented. The mechanistic explanation for low sensitivity (C67, C91) is reasonable given the cell-type-specific nature of chromatin data. Claims C88-C91 appropriately discuss both strengths and limitations of the approach, demonstrating balanced interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "In the 2010-2015 BMI comparison, positive predictive value was low and constrained signals did not significantly differ from unconstrained signals in achieving GWS. This is attributed to the modest sample size increase (+89,428) between these time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 reports the empirical finding from Figure 2, and C38 provides a reasonable interpretation based on statistical power considerations. The modest sample size increase between 2010 (N=249,796) and 2015 (N=339,224) compared to 2018 (N=681,275) supports this interpretation. This negative result is important context for understanding when the method performs well.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Four of the 11 loci that achieved genome-wide significance by 2015 were previously highlighted as 'suggestive' in the 2010 study but did not meet the genome-wide significance threshold in the stage one discovery set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 provides context about which identified loci were previously noted in the 2010 study. This is a straightforward factual claim about the overlap between studies, supported by comparison of the published reports. This contextual information helps interpret the novelty of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors conclude the strategy is capable of identifying loci that will achieve GWS at 5\u00d710\u207b\u2078\u2264p<5\u00d710\u207b\u2076, with additional loci identifiable at 5\u00d710\u207b\u2078\u2264p<5\u00d710\u207b\u2075 at the expense of some false positives. Current false positives may potentially achieve GWS in future larger studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are reasonable conclusions based on the validation data presented (C83, C42, C52). The speculation about future validation of current false positives (C86) is appropriately qualified as possibility rather than certainty. These conclusions appropriately summarize the practical implications of the threshold-dependent performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "The authors suggest that a more comprehensive library of chromatin states across diverse cell types or additional biological filters could potentially increase sensitivity while maintaining precision and specificity. Confirmation of prioritized loci could come from larger datasets or direct molecular/physiological analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 and C95 are speculative suggestions for future work rather than tested hypotheses. While these are reasonable proposals based on the observed limitations (low sensitivity due to cell-type specificity), they remain untested. The conditional language ('could potentially') appropriately reflects the speculative nature of these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C74",
+      "C75",
+      "C94",
+      "C101"
+    ],
+    "result": "The manuscript provides extensive background on GWAS methodology, its limitations, and prior approaches to analyzing sub-threshold signals. This includes the requirement for large sample sizes, the missing heritability problem, previous use of biological constraints, and the development of relevant genomic technologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C24, C74-C75, C94, and C101 provide background context supported by appropriate citations. These establish the scientific rationale for the study and describe the methodological foundation. The claims about GWAS limitations (C1, C13-C15) and prior work (C16-C20) are well-established in the field and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors conclude that biological constraints on sub-significant GWAS signals can reveal potentially true-positive loci for further investigation without increasing sample size, with similar results observed for both BMI and waist-to-hip ratio analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is the main conclusion, supported by the comprehensive validation data for both BMI (C3-C5, C41-C56) and WHRadjBMI (C57-C62). Claim C6 provides a specific validation rate for 2015-2018 BMI. Claim C7 indicates the method generalizes across related anthropometric traits. The conclusion is well-supported by the retrospective validation design and consistent performance across traits.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors developed a novel experimental paradigm (the 'BD apricot task') where participants allocate finite sampling capacity across multiple suppliers with unknown quality probabilities, then make a final purchase decision. The task includes parametric manipulation of capacity (narrow: 2-10, wide: 2-32), environment richness (poor, neutral, rich), and uses both within- and between-subject designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C44 collectively describe a well-designed experimental paradigm with clear manipulations of key variables (capacity, environment richness) and appropriate controls (within/between-subject designs to address learning effects). The task design is internally consistent and the experimental parameters are clearly specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C47"
+    ],
+    "result": "At low capacity, participants employ a pure-breadth strategy (sampling as many suppliers as possible), while at higher capacities, sampling progressively evolves toward a breadth-depth trade-off where participants sample fewer alternatives in greater depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C47 describe the primary behavioral finding regarding capacity-dependent sampling strategies. These are supported by empirical data shown in Figure 2 and represent the core observation of the study, consistent with theoretical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "The number of alternatives sampled increases with capacity following a power law with an exponent close to 3/4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 provides a quantitative characterization of the breadth-depth trade-off. This is supported by power-law model fitting shown in Figure 3, where exponents across conditions cluster around 0.7-0.8, consistent with the stated ~3/4 value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C64",
+      "C65"
+    ],
+    "result": "Richer environments promote depth over breadth in sampling strategies. However, this effect is primarily driven by strong differences between poor and neutral/rich environments, with participants showing limited sensitivity to differences between neutral and rich environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C52-55, C64-65 describe environment effects on sampling strategy. The data in Figures 2 and 3 show significant effects of environment richness, with statistical tests confirming differences between poor and rich/neutral environments but not between neutral and rich. The asymmetric sensitivity is an important nuance well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Contrary to theoretical predictions, participants did not show a fast transition between low- and high-capacity regimes. This smoothness could result from averaging over participants with different transition points or allocation noise, with noisy models better predicting behavior than noise-free optimal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-51 identify a deviation from theoretical predictions and provide plausible explanations. The observation is supported by Figure 2 data, and the model comparison results (C104-106) confirm that models with noise outperform the noise-free optimal model, supporting the proposed explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Participants show systematic deviations from optimality: sampling more deeply than optimal at low capacities and more broadly than optimal at high capacities. These biases may reflect errors in estimating environment richness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-78 describe capacity-dependent deviations from optimality supported by data analysis and Table 2. The proposed explanation (C78) is speculative but reasonable and supported by citation. The pattern of deviations is clearly documented though the mechanistic explanation remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C110"
+    ],
+    "result": "Model comparison using cross-validated log-likelihood shows that a free power-law model with binomial noise outperforms all other models including the optimal model, pure breadth, pure depth, and square root models. Results are consistent across Gaussian and binomial noise models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-106, C110 report model comparison results shown in Figure 8 and Table 3. The statistical comparisons are appropriate (Wilcoxon tests with corrections), and the consistency across noise models strengthens the conclusions. The fourfold cross-validation approach is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C111",
+      "C115",
+      "C154"
+    ],
+    "result": "Participants deviate from optimality by allocating samples more homogeneously across selected alternatives than optimal, with this bias stronger in richer environments. However, the impact on outcomes is small (mean deviation from optimal: -3.5 \u00b1 6.24%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-10, C111, C115, C154 describe the homogeneous allocation bias supported by Figure 9. The quantification of the small impact on outcomes provides important context. Statistical tests confirm significant deviations from optimal allocation across all environments with environment-dependent magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C92",
+      "C96"
+    ],
+    "result": "Participants show learning within blocks, becoming closer to optimal in the second half. However, long-lived carryover effects occur when environments are presented sequentially, with previous environment affecting sampling strategy in subsequent blocks (e.g., sampling shifts toward breadth after poor environments and toward depth after rich environments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-85, C92, C96 describe temporal dynamics and sequential effects supported by Figures 4-5. The within-block learning is demonstrated with appropriate statistical tests. The carryover effects are based on exploratory analyses (acknowledged by authors) but show consistent patterns across multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "Participants select the optimal sampled alternative according to the normative rule on 96.0 \u00b1 4.34% of trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 provides a quantitative measure of choice optimality at the purchase phase. This high percentage indicates participants effectively use the information gathered during sampling, though the manuscript notes slightly higher performance (96.6%) when using proportional rather than normative value.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Human behavior is close to but systematically deviates from optimality. The sampling strategy is better captured by a continuous power law than the predicted optimal model, which may reduce computational cost at a controlled loss of efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-139 provide a high-level summary of findings. C137-138 are well-supported by the data and model comparisons. C139 is speculative about the cognitive advantages of the power-law strategy but represents a reasonable interpretation of why participants might deviate from the theoretically optimal model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C145",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Multiple speculative explanations are proposed for observed biases: deviations from optimality may reflect errors in estimating environment richness; homogeneous allocation may simplify computations, comparisons, or reflect uncertainty-directed exploration or preference for symmetry; individual differences in risk aversion may drive breadth vs. depth preferences; mathematical knowledge may influence task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-143, C145, C148-152 are explicitly speculative explanations for observed phenomena. While these hypotheses are plausible and some are supported by citations to relevant literature, they are not directly tested in the current study. These represent reasonable interpretations but require future empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "Participants focus more on the number of samples per alternative than on the number of sampled alternatives, and this bias toward homogeneous sampling may partially drive deviations from optimality in the number of sampled alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-147 are supported by Figure 10 showing prevalence of depth-focused vs. breadth-focused sampling sequences. The interpretation linking homogeneous sampling bias to deviations in M is logical and consistent with the data, though the causal connection is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The identified heuristics (continuous power-law sampling and homogeneous sampling) are associated with lower cognitive effort than optimal behavior, with relatively small impact on outcomes. It remains unclear whether these biases reflect computational limitations (bounded rationality) or optimal compromises between accuracy and computational cost (bounded optimality/resource rationality).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-155 provide theoretical interpretation of the findings. C153-154 are supported by the data showing small outcome losses. C155 appropriately acknowledges uncertainty about the underlying mechanism and cites relevant theoretical frameworks, representing an honest assessment of what can and cannot be concluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C159",
+      "C160"
+    ],
+    "result": "The observed deviations cannot be explained by motor biases due to the experimental design. The study provides a counter-example to choice overload, as participants did not consider fewer options than optimal at high capacities and actually considered more alternatives than optimal at larger capacities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-157, C159-160 address alternative explanations and relate findings to prior literature. C156 is supported by the experimental design details. C157 is well-supported by data showing participants sample many alternatives (often >5) and the pattern of deviations. These claims appropriately contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C161",
+      "C162"
+    ],
+    "result": "Contamination occurs in participants' sampling strategies when different environments are presented consecutively, and between-subjects designs should be favored to prevent this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-162 are supported by the sequential effects data (Figures 5 and supplements). The methodological recommendation (C162) is appropriate given the observed carryover effects, though it represents a design consideration rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "This is the first thorough experimental study of the breadth-depth dilemma, revealing close-to-optimal choice behaviors sensitive to capacity and environment, and identifying heuristics used to simplify computations at the cost of optimality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-167 provide summary statements about the study's contributions. C165's claim of being 'first thorough experimental study' is supported by the literature review showing prior work was outside cognitive neuroscience or used simplified scenarios. C166-167 accurately summarize the main empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The breadth-depth dilemma is a fundamental problem in decision-making under finite resources, relevant across many domains (college selection, marketing, internet navigation, attention allocation, working memory, multitasking). While theoretical work has described optimal resource allocation, empirical evidence about human behavior in many-alternative BD problems is lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C11-C29 establish the background and motivation for the study. These claims are well-supported by citations to relevant literature and accurately characterize the state of knowledge. The distinction between BD and other trade-offs (speed-accuracy, exploration-exploitation) is clearly articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The breadth-depth dilemma differs from exploration-exploitation in that limited resources can be divided across multiple options simultaneously, creating a qualitatively new problem with additional degrees of freedom where exploration and exploitation can occur in parallel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-135 articulate an important conceptual distinction between BD and EE dilemmas. This distinction is logical and well-explained, providing theoretical context for why the BD dilemma represents a distinct research problem requiring separate investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C164"
+    ],
+    "result": "The experimental framework can be easily adapted to investigate future questions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C164 is a reasonable assertion given the demonstrated flexibility of the paradigm (multiple capacity ranges, environments, within/between designs). The authors also suggest specific future directions (continuous capacity, multiple choices, decision trees), supporting the claim of adaptability.",
+    "result_type": "MINOR"
+  }
+]

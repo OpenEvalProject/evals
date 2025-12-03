@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In humans, burst-suppression was dose-dependent: 19/20 subjects showed burst-suppression at high sevoflurane (3.9-4.6%), 4/20 at intermediate (3%), and none at low (2%) concentrations. This pattern is consistent with known dose-dependency of burst-suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 provide clear observational data from EEG recordings showing dose-dependent burst-suppression in humans. The findings are consistent with prior literature (C39), and the sample size (N=20) is adequate for this observational study. The data directly support the dose-dependency claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "fMRI runs with EEG-defined burst-suppression showed cortex-wide BOLD fluctuations captured by an asymmetric principal component (PC), while runs with continuous slow-wave activity showed no such fluctuations. Every burst-suppression run had a PC with median r>0.45, except one subject with near-constant suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 describe a clear fMRI signature of burst-suppression validated against concurrent EEG. The asymmetric PC metric perfectly discriminated burst-suppression from continuous slow-wave states (C44), with one explainable exception (C45-C46). The convergent evidence from carpet plots, PCA, and correlation analysis strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The asymmetric PC correlated strongly with EEG-derived hemodynamic models (r=0.73\u00b10.11), with a time lag of 3.71\u00b12.22s attributable to anesthesia-induced HRF slowing. After lag correction, correlation increased to r=0.84\u00b10.06.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide quantitative validation of the asymmetric PC as a hemodynamic correlate of burst-suppression. The time lag is appropriately explained by known anesthetic effects on HRF (C50), and the high correlation after correction (r=0.84) demonstrates strong correspondence between EEG and fMRI measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "GLM analyses using asymmetric PCs versus EEG-derived models produced nearly identical spatial maps (neighborhood cross-correlation r=0.96\u00b10.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 demonstrates methodological equivalence between the novel fMRI-only approach and the established EEG-fMRI approach. The very high spatial correlation (r=0.96) validates the asymmetric PC method for mapping burst-suppression without requiring concurrent EEG.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In humans, burst-suppression engaged the striatum and most cortex, but excluded V1, parts of primary sensory/motor areas, and other specific regions. Anterior/midline thalamus was involved, while posterior thalamus, cerebellum, hippocampus, and amygdala were mostly not engaged. Ventricular borders showed anticorrelation, possibly reflecting CSF pumping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 describe the human burst-suppression map from group-level analysis (N=19 subjects, n=21 runs). The findings are based on appropriate statistical methods (TFCE, p<0.05) and show clear spatial patterns. The ventricular anticorrelation interpretation (C59-C60) is speculative but supported by supplementary analysis and consistent with related phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In macaques (N=7, n=9 runs), the burst-suppression map showed striking homology with humans, including V1 exclusion and involvement of striatum and most cortex. Notable differences included full auditory cortex involvement in macaques and no ventricular anticorrelations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 describe the macaque burst-suppression map with appropriate methodology. The sample size (7 subjects, 9 runs) is reasonable for this comparative study. The findings replicate and extend previous work in macaques (referenced in C112-C113), and the cross-species homology is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In marmosets (N=8), the burst-suppression map was functionally homologous to macaques, with V1 exclusion confirmed in whole-brain imaging. The map included striatum and most cortex (including auditory areas) but excluded V1, extrastriate visual areas, and parts of sensory/motor cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 describe the first marmoset burst-suppression map with appropriate methodology. The V1 exclusion was confirmed with additional whole-brain imaging (C73-C74), addressing potential field-of-view limitations. The functional homology with macaques supports the generalizability of V1 exclusion across primates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In rats (N=11, n=28 runs), burst-suppression engaged the entire neocortex including all primary sensory and motor areas, contrasting with primates. The striatum was also involved, while cerebellum and amygdala were not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 describe the rat burst-suppression map showing pancortical involvement. The finding is based on appropriate data selection (28 runs at 2% and 1.5% isoflurane) and statistical analysis. The pancortical pattern contrasts sharply with primates and is consistent with previous rat studies (C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The rat burst-suppression map resembles a unified cortico-striatal network previously reported in isoflurane-anesthetized rats. Reanalysis of a published dataset confirmed asymmetric PCs in all rats, suggesting previous studies were conducted during burst-suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 connect current findings to previous literature through reanalysis of published data. The identification of asymmetric PCs in all rats from the Rat 2 dataset (C84) and the spatial correspondence with previously reported networks (C83) strongly support the inference that burst-suppression underlies the unified network phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The main inter-species difference was V1 exclusion in primates but not rats. This cannot be attributed to thresholding artifacts or regional tSNR differences, as other low-tSNR areas (e.g., macaque area TE) showed significant correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 identify the key species difference and rule out technical confounds. The control analyses (unthresholded maps, tSNR comparisons) appropriately address alternative explanations. The finding that other low-tSNR regions show correlations (C88) strengthens the conclusion that V1 exclusion is a true biological effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "ROI analysis showed V1 activity in rats was indistinguishable from cingulate (p=0.63), while in primates V1 showed reduced BOLD amplitude (p<0.001 humans, p=0.004 macaques, p=0.008 marmosets), lower PSD, and spatially confined correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 provide quantitative support for the species difference using appropriate statistical tests (Wilcoxon rank-sum). The multiple metrics (amplitude, PSD, seed-based correlation) converge on the same conclusion. The statistical significance is clearly reported with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In 12 human subjects, both V1 and cingulate showed reduced BOLD amplitude from low to intermediate sevoflurane. During high concentration (burst-suppression), cingulate amplitude rose significantly while V1 remained unchanged, suggesting V1 maintains continuous slow waves during burst-suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 provide dose-response data supporting the continuous slow-wave hypothesis for V1. The within-subject design (N=12) and multiple concentration levels strengthen the inference. However, the conclusion (C96) is tentative as it relies on indirect evidence from BOLD amplitude rather than direct neural recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The asymmetric PC threshold is arbitrarily defined, but multiple lines of evidence support its validity: concentration ranges match previous burst-suppression reports, asymmetric PCs show quasi-periodicity and gray matter localization, and cannot be attributed to physiological noise or motion artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 acknowledge a methodological limitation (arbitrary threshold) but provide strong validation evidence. The convergence of concentration-dependent detection (C100-C101), signal characteristics (C103), and exclusion of artifacts (C102-C104) supports the method's validity despite the arbitrary threshold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Burst-suppression timescales differ across species, with faster alternation in smaller animals. This could reflect faster metabolic rates in smaller animals according to the neurophysiological-metabolic model, but requires validation with direct neural recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C147 describe an interesting observation (C145) with a plausible mechanistic explanation (C146), but the authors appropriately note that verification requires additional studies (C147). The speculation is reasonable but lacks direct supporting evidence in the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Anesthesia depth was not standardized across species, with different concentrations and age ranges used. This limits direct cross-species comparisons of burst-suppression characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C153 appropriately acknowledge important methodological limitations. The lack of standardized anesthetic depth (C148-C151) and age effects (C152) are clearly described as caveats. The recommendation for future systematic studies (C153) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The current findings replicate and extend previous reports of V1 exclusion in humans and macaques, provide the first marmoset burst-suppression map, and confirm pancortical distribution in rats. The uniform methodology enables direct cross-species comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 appropriately contextualize the findings within existing literature. The replication in larger samples (C113), novel marmoset data (C114), and consistency with rat literature (C115) strengthen confidence in the results. The methodological uniformity (C116) is a key strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The findings imply regional variability in burst propensity. Possible mechanisms include metabolic differences (supported by a theoretical model), with primate V1's distinctive characteristics (cytoarchitecture, receptor expression, connectivity, myelin density) potentially imposing special metabolic demands. Myelin distribution differences between primates and rodents could explain species differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C126 present reasonable mechanistic speculation supported by relevant literature, but lack direct experimental evidence. The metabolic model (C120-C121) and myelin hypothesis (C124-C125) are plausible but remain untested. These are valuable hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The V1 exclusion in primates challenges the 'ripples on a pond' model of burst propagation from sensory areas. The paradox could be explained by internally generated bursts or bursts evoked through non-excluded modalities, but requires further investigation with visual stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 identify an important conceptual challenge posed by the findings. The paradox is clearly articulated (C131), and alternative explanations are proposed (C132). The recommendation for future experiments (C133) is appropriate. The evaluation is SUPPORTED because the paradox itself is well-established by the data, even though its resolution remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The striatum showed the strongest correlation with burst-suppression across all species, while the thalamus was only partly involved with anteromedial regions more engaged than posterolateral regions. This suggests cortico-striatal loops and differential thalamic roles may be important for burst propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 describe consistent subcortical findings across species. The striatal involvement (C134) is clearly demonstrated in all maps. The thalamic pattern (C136-C137) is more variable but shows consistent regional differences. The mechanistic speculation (C135, C138) is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The method could be used by animal fMRI researchers to screen for burst-suppression, though generalization to other species/anesthetics requires caution. Potential clinical applications include mapping burst-suppression in comatose patients without EEG, pending validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C111 propose applications but appropriately note limitations. The animal fMRI screening application (C107) is reasonable given the validation shown. The clinical application (C109-C111) is more speculative and explicitly requires validation (C110). These are promising directions but not yet validated applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C98"
+    ],
+    "result": "Three mechanisms could explain V1 uncoupling in primates: continuous slow waves, constant suppression, or altered neurovascular coupling. EEG data from previous studies showed bursts in occipital electrodes, but EEG may lack spatial resolution to detect different V1 activity. Altered neurovascular coupling cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93, C98 outline possible mechanisms but cannot definitively distinguish between them with available data. The EEG limitation argument (C93) is reasonable but speculative. The acknowledgment that neurovascular coupling changes cannot be ruled out (C98) is appropriate. Direct neural recordings are needed for resolution.",
+    "result_type": "MINOR"
+  }
+]

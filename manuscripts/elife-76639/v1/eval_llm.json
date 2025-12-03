@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C66",
+      "C67",
+      "C105",
+      "C146",
+      "C155"
+    ],
+    "result": "The authors propose the Proprioceptive Re-alignment Model (PReMo), which posits that implicit sensorimotor adaptation is driven by minimizing proprioceptive error\u2014the mismatch between perceived and desired hand position\u2014rather than visual error. The model predicts that adaptation ceases when the perceived hand position aligns with the target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the central theoretical claim of the manuscript, but it is presented as a novel model rather than empirically demonstrated. The model is supported by reinterpretation of existing data and correlational evidence (addressed in other results), but direct causal evidence is lacking. The authors acknowledge this limitation (C148) and propose future experiments (C156, C157) to test the model directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The magnitude of proprioceptive shift (which saturates at ~5\u00b0 and occurs rapidly) is negatively correlated with the extent of implicit adaptation across individuals. This correlation is consistent with PReMo predictions but not predicted by visuo-centric models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 present empirical data from multiple studies showing robust correlations between proprioceptive shift and adaptation magnitude (Figure 3E-G). The saturation of proprioceptive shift at ~5\u00b0 is well-documented across multiple studies (C69). However, the evidence is correlational rather than causal, and some studies have failed to replicate these correlations (C149).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The rate and extent of implicit adaptation saturate for visual errors exceeding ~10\u00b0, remaining invariant across larger error sizes. PReMo accounts for this by attributing saturation to the saturation of proprioceptive shift rather than motor system limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The saturation phenomenon is well-documented empirically (C74, Figure 4A) and supported by multiple studies (C22, C76). PReMo provides a novel sensory-based explanation (C75) that is consistent with the observed saturation of proprioceptive shift (C76, C77). The prediction that scaling of proprioceptive shift mirrors scaling of adaptation for small errors is supported by empirical data (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PReMo accounts for both local and far generalization patterns by proposing that proprioceptive shifts occur globally across the workspace, affecting movements to both trained and untrained locations. This provides an alternative to the hypothesis that far generalization reflects explicit re-aiming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The empirical observations of local (C80) and far (C81, C82) generalization are well-established. The global nature of proprioceptive shifts is supported by multiple studies (C84-C86). However, the key assumption that proprioceptive shift at the start position drives far generalization has not been directly tested (acknowledged in C87). The qualitative account provided by PReMo is plausible but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Passive limb movement with perturbed visual feedback induces both proprioceptive shift (~5\u00b0) and subsequent motor aftereffects during active reaching, with the magnitude of aftereffect correlated with proprioceptive shift. PReMo accounts for this, while visuo-centric models do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The empirical findings from Salomonczyk et al., 2013 are clearly documented (C88-C91, Figure 6). The correlation between passively-induced proprioceptive shift and motor aftereffect provides strong support for PReMo's emphasis on proprioception. The observation that adaptation occurs without active movement challenges visuo-centric models (C93), though the evidence comes from a single study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Delayed visual feedback (50-100ms or more) attenuates both implicit adaptation and proprioceptive shift by approximately 30%, consistent with PReMo's prediction that reduced proprioceptive shift leads to reduced adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The attenuation of adaptation by delayed feedback is well-established (C94, C95). The attenuation of proprioceptive shift by delay is documented (C97), and similar effects are seen in the rubber hand illusion (C98). However, the evidence linking these two phenomena is indirect and based on comparisons across different studies rather than within-subject measurements. The authors acknowledge that temporal constraints are not formally included in PReMo (C96).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Awareness of the visuomotor perturbation attenuates both implicit adaptation and proprioceptive shift by approximately 30-33%, with PReMo predicting this quantitative correspondence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The attenuation of adaptation by awareness is documented (C100, C101), as is the attenuation of proprioceptive shift (C102, C103). The quantitative similarity (~30-33%) is suggestive but based on comparisons across different studies with different methodologies. The evidence is correlational and indirect. Some studies show conflicting results regarding awareness effects (noted in C100).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "During clamped feedback adaptation, perceived hand position follows a non-monotonic trajectory: initially shifting ~5\u00b0 toward the cursor, then reversing direction and eventually overshooting the target by ~1\u00b0. PReMo accounts for this pattern, with the overshoot reflecting visual shift magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The non-monotonic pattern of perceived hand position is clearly demonstrated in the data (C108, Figure 7B). PReMo provides a coherent account of both the initial shift (C110) and the overshoot (C112). The inferred visual shift magnitude (~1\u00b0) is consistent with independent empirical estimates (C114), providing convergent validation. This is a novel and striking prediction of PReMo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Greater proprioceptive uncertainty/variability at baseline is associated with greater implicit adaptation. PReMo predicts this relationship based on optimal integration principles, while visuo-centric models do not account for it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between proprioceptive variability and adaptation magnitude is demonstrated empirically (C115, Figure 3H-J). PReMo provides a mechanistic explanation based on sensory integration (C118, C119). However, there is a potential inconsistency: C117 states the correlation should be negative, but Figure 3H-J shows positive correlations. This may reflect confusion about terminology or measurement direction. Some studies have failed to find this correlation (C149).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Visual uncertainty attenuates implicit adaptation for small errors (3.5\u00b0) but not large errors (30\u00b0), yielding an interaction between error size and visual uncertainty. This interaction is predicted by PReMo but not by optimal integration accounts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The predicted interaction is clearly demonstrated in the experimental data (C123, Figure 8B). The finding is replicated in an independent sample with intrinsic visual uncertainty (low vision participants, C124). PReMo provides a specific mechanistic account of why the effect depends on error size (C122), distinguishing it from alternative explanations. The experimental design using clamped feedback effectively isolates implicit adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Increased uncertainty in sensory predictions (e.g., due to cerebellar pathology or extrinsic variability) attenuates implicit adaptation. PReMo attributes this to noisier predictions reducing the relative contribution of predicted hand position to perceived hand position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The attenuation of adaptation in cerebellar patients is well-documented (C130, Figure 9), and evidence supports the hypothesis of noisier sensory predictions in this population (C132). However, the evidence for effects of extrinsic variability is mixed (C127, C128), and alternative explanations exist (C129). The specific mechanism proposed by PReMo (C131) is plausible but not directly tested. Evidence that proprioceptive measures are intact in cerebellar patients (C133-C135) supports PReMo's focus on prediction rather than proprioception per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "PReMo extends to force-field adaptation, accounting for proprioceptive shifts in the direction of the force field and the correlation between these shifts and adaptation magnitude. The model provides a unified account of visuomotor and force-field adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Proprioceptive shifts in the direction of force fields are documented (C136, Figure 10A), and the correlation with adaptation is established (C141). PReMo provides a plausible mechanistic account (C137, Figure 10C-F). However, the extension to force-field adaptation involves additional assumptions and complexities not fully developed in the model. The claim of a unified account (C142) is aspirational rather than fully demonstrated. Evidence that force-field adaptation can occur without vision (C138) or with vision alone in deafferented individuals (C139) supports the flexibility of the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Motor adaptation relies on multiple learning processes, including explicit (prefrontal-dependent, volitional, rapid) and implicit (cerebellar-dependent, automatic, slower) processes that solve different computational problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize well-established findings in the motor learning literature, supported by extensive citations (C9, C11, C12). The distinction between explicit and implicit processes is foundational to the field and provides necessary context for the manuscript's focus on implicit adaptation. The neural dissociation (prefrontal vs. cerebellar) is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Explicit strategy use scales with perturbation size, while implicit adaptation (measured via aftereffects or clamped feedback) saturates at 15-25\u00b0 regardless of perturbation size (15-90\u00b0). The clamped feedback paradigm isolates implicit adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are well-documented in the literature and illustrated in Figure 1B. The saturation of implicit adaptation is a key empirical phenomenon motivating PReMo. The clamped feedback method (C16-C19) is an established technique for isolating implicit adaptation. Multiple studies confirm the invariance of the asymptote across perturbation sizes (C19).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "The dominant visuo-centric framework posits that implicit adaptation is driven by visual error, with the asymptote representing equilibrium between learning and forgetting. Various models account for saturation effects through reduced learning rates or motor system limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately characterize the existing theoretical framework in the field, supported by extensive citations (C20, C21). This provides essential context for understanding PReMo as an alternative framework. The description of visuo-centric models and their variants (C22, C24) is fair and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Despite evidence that proprioception is critical for motor control and correlates with adaptation, its computational role in implicit adaptation has been neglected or characterized as passive in existing models. Deafferented individuals can adapt using vision alone, but multiple lines of evidence suggest proprioception contributes to adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of the field's neglect of proprioception (C3, C4) is supported by the review of existing models (C35, C36). Evidence for proprioception's importance is drawn from multiple sources: deafferentation studies (C27, C28, C30), force-field adaptation without vision (C31), opposing error paradigms (C32), and individual differences (C33, C34). The apparent paradox that deafferented individuals adapt (C25, C26) is acknowledged and provides important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Sensory recalibration during visuomotor adaptation produces reciprocal shifts in perceived hand position (proprioceptive shift, ~5\u00b0, larger) and cursor position (visual shift, ~1\u00b0, smaller). These shifts are enduring, occur rapidly (within a few trials), and saturate for large visuo-proprioceptive discrepancies. Sensory expectations from motor commands also bias perceived hand position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phenomena of sensory recalibration are well-documented across multiple studies (C38, C39, C41, C44-C48). The quantitative estimates (5\u00b0 proprioceptive, 1\u00b0 visual) are consistent across studies. The rapid time course (C47) and saturation (C48) are key features incorporated into PReMo. The role of sensory expectations (C42, C43) is supported by extensive literature. These findings provide the empirical foundation for PReMo's computational framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Visual and proprioceptive shifts are global, affecting perceived hand position across the workspace, not just near the training location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This principle is supported by multiple empirical studies (citations in C57) and is critical for PReMo's account of generalization patterns. The global nature of shifts distinguishes sensory recalibration from local motor learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "PReMo may extend to locomotor adaptation (where proprioceptive error related to gait symmetry could drive adaptation) but likely does not apply to saccade adaptation (which relies on visual error signals to align the eye on target).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative extensions and boundary conditions for PReMo. The application to locomotor adaptation (C143) is plausible but untested. The exclusion of saccade adaptation (C144, C145) is reasonable given the fundamentally visual nature of oculomotor goals, but represents a limitation of the model's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "PReMo accounts for multiple phenomena and generates testable predictions based on established principles of sensory integration and recalibration. However, much evidence is correlational, some studies fail to find predicted correlations, and methodological issues may confound proprioceptive measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors provide a balanced assessment of PReMo's strengths (C147, C153, C154) and limitations (C148, C149, C150). The acknowledgment that evidence is primarily correlational (C148) is appropriate. The discussion of methodological challenges (C150) and alternative approaches (C151, C152) demonstrates scientific rigor. This honest appraisal strengthens rather than weakens the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "The authors propose future experiments using brain stimulation or tendon vibration to manipulate proprioception, predicting that increased proprioceptive bias and uncertainty will enhance implicit adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are clearly stated, testable predictions derived from PReMo (C157) with appropriate methodological approaches identified (C156). These predictions provide a roadmap for future causal tests of the model, addressing the current limitation of correlational evidence.",
+    "result_type": "MINOR"
+  }
+]

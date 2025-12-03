@@ -1,0 +1,1902 @@
+{
+  "submission": {
+    "id": "4ce79de3-ec91-42a2-a06c-5dec50e465d5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:07:13.556280Z",
+    "updated_at": "2025-12-03T05:07:13.556280Z"
+  },
+  "content": [
+    {
+      "id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "submission_id": "4ce79de3-ec91-42a2-a06c-5dec50e465d5",
+      "content_type": "manuscript",
+      "content_text": "# FnCas9-based CRISPR diagnostic for rapid and accurate detection of major SARS-CoV-2 variants on a paper strip\n\n## Authors\n\n- Manoj Kumar<sup>1</sup> ([ORCID: 0000-0003-0772-1399](https://orcid.org/0000-0003-0772-1399))\n- Sneha Gulati<sup>1</sup>\n- Asgar H Ansari<sup>1</sup>\n- Rhythm Phutela<sup>1</sup>\n- Sundaram Acharya<sup>1</sup>\n- Mohd Azhar<sup>1</sup>\n- Jayaram Murthy<sup>1</sup>\n- Poorti Kathpalia<sup>1</sup>\n- Akshay Kanakan<sup>1</sup>\n- Ranjeet Maurya<sup>1</sup>\n- Janani Srinivasa Vasudevan<sup>1</sup> ([ORCID: 0000-0002-3381-5228](https://orcid.org/0000-0002-3381-5228))\n- Aparna S<sup>1</sup>\n- Rajesh Pandey<sup>1</sup>\n- Souvik Maiti<sup>1</sup> \u2020\n- Debojyoti Chakraborty<sup>1</sup> ([ORCID: 0000-0003-1460-7594](https://orcid.org/0000-0003-1460-7594)) \u2020\n\n### Affiliations\n\n1. CSIR-Institute of Genomics & Integrative Biology Mathura India\n2. Academy of Scientific & Innovative Research (AcSIR) Ghaziabad India\n3. CSIR-National Chemical Laboratory Pune India\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe COVID-19 pandemic originating in the Wuhan province of China in late 2019 has impacted global health, causing increased mortality among elderly patients and individuals with comorbid conditions. During the passage of the virus through affected populations, it has undergone mutations, some of which have recently been linked with increased viral load and prognostic complexities. Several of these variants are point mutations that are difficult to diagnose using the gold standard quantitative real-time PCR (qRT-PCR) method and necessitates widespread sequencing which is expensive, has long turn-around times, and requires high viral load for calling mutations accurately. Here, we repurpose the high specificity of Francisella novicida Cas9 (FnCas9) to identify mismatches in the target for developing a lateral flow assay that can be successfully adapted for the simultaneous detection of SARS-CoV-2 infection as well as for detecting point mutations in the sequence of the virus obtained from patient samples. We report the detection of the S gene mutation N501Y (present across multiple variant lineages of SARS-CoV-2) within an hour using lateral flow paper strip chemistry. The results were corroborated using deep sequencing on multiple wild-type (n = 37) and mutant (n = 22) virus infected patient samples with a sensitivity of 87% and specificity of 97%. The design principle can be rapidly adapted for other mutations (as shown also for E484K and T716I) highlighting the advantages of quick optimization and roll-out of CRISPR diagnostics (CRISPRDx) for disease surveillance even beyond COVID-19. This study was funded by Council for Scientific and Industrial Research, India.\n\n## Introduction\n\nTesting and isolating SARS-CoV-2-positive cases has been one of the main strategies for controlling the rise and spread of the coronavirus pandemic that has affected about 157 million people and 3 million deaths all over the world (World Health Organization, WHO). Like all other viruses, the SARS-CoV-2 genome has undergone several mutations during its passage through the human host, and the positive or negative impact of most of them on virus transmission and immune escape are still under investigation (Rabi et al., 2020; Pachetti et al., 2020; Korber et al., 2020; Zhou et al., 2021).\n\nIn December 2020, health authorities in the United Kingdom had reported the emergence of a new SARS-CoV-2 variant (lineage B.1.1.7) that is phylogenetically distinct from other circulating strains in the region. With 23 mutations, this variant had rapidly replaced former SARS-CoV-2 lineages occurring in the region and has been established to have greater transmissibility through modeling and clinical correlation studies (Chand, 2020; Horby et al., 2021; Davies et al., 2021; Volz et al., 2021). Subsequently, the South African and Brazilian authorities have also reported variants (B.1.351 and P.1, respectively) that have been associated with a higher viral load in preliminary studies (Tegally et al., 2020; Faria et al., 2021). Till May 2021, at least 13 emerging SARS-CoV-2 lineages with multiple mutations have been reported from sequencing efforts across the globe (CDC, 2021). Variants in lineages of the SARS-CoV-2 genome have been classified either as Variants of Concern (VOC) or Variants of Interest (VOI). Among these, the VOCs have shown an indication of higher severity, transmissibility, and impact on pandemic spread from ongoing studies. VOIs have limited evidence for the same currently but are being monitored for potential impact in the future. Till May 2021, at least five lineages (B.1.1.7, P.1, B.1.351, B.1.427, and B.1.429) have been classified as VOCs and are being investigated for their susceptibility to diagnosis, response to vaccines, and correlation with disease severity and transmission (CDC, 2021).\n\nAs air travel has resumed in most countries post lockdown, infected individuals harboring these mutations have been detected in countries far away from their origin, generating concerns about greater disease incidence unless these cases are recognized and isolated. That is particularly important as vaccine roll-out has been initiated in several countries, and the studies about vaccine efficacy against the new variants are only in their infancy.\n\nAmong the diagnostic methods that have been employed for identifying coronavirus infected cases, qRT-PCR has been the most widely adopted nucleic-acid-based test due to its ability to identify even low copy numbers of viral RNA in patient samples and has been considered as a gold standard in diagnosis (Mackay, 2002; Carter et al., 2020). However, probe-based qRT PCR assays rely on amplification of a target gene with real-time analysis of DNA copy numbers and are generally not suited for genotyping point mutations associated with novel CoV2 variants (Afzal, 2020; Yin, 2020; Vandenberg et al., 2021). Although strategies such as Amplification Refractory Mutation System-quantitative PCR (ARMS-qPCR) have been described in the literature for genotyping mutations in nucleic acids, these require substantial design and validation for reproducible readouts and hence are not routinely used for clinical diagnosis (Little, 2001). Similarly, antigen-based SARS-CoV-2 assays which have lower sensitivity than qPCR have not yet been reported to specifically identify mutant variants. In the absence of any true diagnostic test for the variants, most countries have resorted to next-generation sequencing of patient samples both for understanding the evolution of mutations in the virus as well as detecting the variants in suspected individuals (Vandenberg et al., 2021). Using sequencing for routine diagnosis greatly increases both the time and cost of identifying positive individuals (Jayamohan et al., 2021).\n\nWe and several others have documented the applicability of CRISPR diagnostics (CRISPRDx) for identifying CoV2 signatures in patient samples (Broughton et al., 2020; Patchsung et al., 2020; Ding et al., 2020; Joung et al., 2020; Fozouni et al., 2021; Guo et al., 2020; Lucia et al., 2020; Wang et al., 2021; Azhar et al., 2021). Using the Cas9 from Francisella novicida (FnCas9), we have recently reported the development of the FELUDA (FnCas9 Editor Linked Uniform Detection Assay) platform for SARS-CoV-2 diagnosis with similar accuracy as the gold standard qPCR test (Azhar et al., 2021). The assay which is performed on a Lateral Flow strip generates a visual readout within an hour that is quantifiable using a smartphone-based application. Since FnCas9 has a very high intrinsic specificity to point mismatches in the target (Acharya et al., 2019), we speculated that the enzyme can also be used for detecting SARS-CoV-2 variants on a paper strip with high accuracy. In this report, we introduce RAY (Rapid variant AssaY), a paper-strip based platform to identify mutational signatures of the coronavirus variants in a sample eliminating the need for sequencing-based diagnostics. RAY can successfully detect both SARS-CoV-2 infection as well as the presence of the common N501Y mutation present across the majority of VOCs described so far and distinguish it from the parent CoV2 lineage. Thus, it can be employed as a primary surveillance method for isolating cases belonging to these groups and can enable the initiation of appropriate management protocols.\n\n## Materials and methods\n\n### Study design\n\nThe study was designed to evaluate the efficacy of RAY on left-over patient samples. The intent of the study was to develop a robust CRISPR diagnostic that can perform with high accuracy for variant detection at significantly low cost and time taken for detection as compared to sequencing. For the N501Y detection using RAY, SARS-CoV-2 and control RNA samples were received from the diagnostic laboratory at CSIR-Institute of Genomics and Integrative Biology.\n\n### Oligos\n\nA list of all oligos (Merck) used in the study can be found in Supplementary file 4.\n\n### Protein purification\n\nPlasmids containing FnCas9-WT and dFnCas9 (catalytically-inactive, dead)\u00a0(Acharya et al., 2019) sequences were transformed and expressed in Escherichia coli Rosetta 2 (DE3) (Novagen). Rosetta 2 (DE3) cells were cultured at 37\u00b0C in LB medium (with 50 mg/ml Kanamycin) and induced when OD600 reached 0.6, using 0.5 mM isopropyl \u03b2-D-thiogalactopyranoside (IPTG). After an overnight culture at 18\u00b0C, E.\u00a0coli cells were harvested by centrifugation and resuspended in a lysis buffer (20 mM HEPES, pH 7.5, 500 mM NaCl, 5%) glycerol supplemented with 1X PIC (Roche) containing 100 \u00b5g/ml lysozyme. Subsequent cell lysis by sonication, the lysate was put through to Ni-NTA beads (Roche). The eluted protein was further purified by size-exclusion chromatography on HiLoad Superdex 200 16/60 column (GE Healthcare) in a buffer solution with 20 mM HEPES pH 7.5, 150 mM KCl, 10% glycerol, 1 mM DTT. The purified proteins were quantified by Pierce BCA protein assay kit (Thermo Fisher Scientific) and stored at \u221280\u00b0C until further use.\n\n### RAY crRNA and primer design\n\nAll 48 VOCs/VOIs within 12 emerging SARS-CoV-2 lineages till May 2021 were taken from the Centers for Disease Control and Prevention report (CDC, 2021; Rambaut et al., 2020; Hadfield et al., 2018). Further, by having these mutations at 2nd/6th/16th/19th bp upstream to PAM (NGG) in the SARS-CoV2- genome, a total of 19 among 48 variants could be targeted with the RAY strategy. Next, within the variant nucleotide containing crRNA sequence, a second synthetic mismatch nucleotide at the corresponding 6th/2nd/19th/16th position was added. Primers required for IVC assays flanking these crRNAs were designed using Primer3plus python library (Untergasser et al., 2012). Finally, the crRNAs/primers were checked for off-targets on a representative bacterial genome database (NCBI), virus genome database (NCBI) (Brister et al., 2015), and human genome/transcriptome (GENCODE GRCh38) (Frankish et al., 2019).\n\nFor the benefit of end users with quick design and implementation of the RAY for any targetable SNV/VOC/VOI, we now have also optimized our previously developed web tool JATAYU (Junction for Analysis and Target Design for Your FELUDA assay) (Azhar et al., 2021), which functions by incorporating mismatches in the sequence provided by the user. The server generates sgRNA and flanking primer sequences ready for synthesis (http://jatayu.igib.res.in).\n\n### In vitro cleavage assay for 2 and 6 or 16 and 19 mismatched positions\n\nPurified PCR 228 bp amplicon from HBB gene was used as substrate in in vitro cleavage assays, as optimized in our previous studies (Acharya et al., 2019). Substrate amplicons were treated with reconstituted dFnCas9 RNP complex (100 nM) in a reaction buffer (20 mM HEPES, pH7.5, 150 mM KCl, 1 mM DTT, 10% glycerol, 10 mM MgCl2) at 37\u00b0C for 10 min, the cleaved products were visualized on a 2% agarose gel and densitometric quantification of images were done (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67130/elife-67130-fig1-v2.jpg)\n\n**Figure 1.:** (A) FnCas9 is unable to bind or cleave targets having two mismatches at the PAM proximal 2nd and 6th or PAM distal 16th and 19th positions as shown (left panel). The quantification of cleavage with a substrate with mismatches at indicated positions is shown (right panel, n\u00a0=\u00a03 independent experiments, errors s.e.m, student\u2019s paired T-test p values ***<0.001 are shown). (B) Dot plot showing the major SNVs (y-axis) present in the emerging SARS-CoV-2 lineages (x-axis). The status of each SNV as being targetable by RAY is indicated as dots.\n\n### RAY detection assays\n\nSequences containing WT and Mutant were reverse transcribed, and amplified using primers with/without 5\u2019 biotinylation from SARS-CoV-2 Viral RNA-enriched samples.\n\n### Detection via In vitro Cleavage (IVC)\n\nPurified PCR amplicons containing WT and Mutant sequences were used as substrates in in vitro cleavage assays, as optimized in our previous studies (Azhar et al., 2021). Substrate amplicons were treated with reconstituted RNP complex (100 nM) in a reaction buffer (20 mM HEPES, pH7.5, 150 mM KCl, 1 mM DTT, 10% glycerol, 10 mM MgCl2) at 37\u00b0C for 10 min, and cleaved products were visualized on a 2% agarose gel.\n\n### RAY via lateral flow assay (RT-PCR)\n\nA region from the SARS-CoV-2 S gene containing N501Y/T716I/E484K mutations was reverse transcribed and amplified using a single end 5\u2019 biotin-labeled primer. In vitro transcription of sgRNAs/crRNAs was done using MegaScript T7 Transcription kit (ThermoFisher Scientific) following manufacturer\u2019s protocol and purified by NucAway spin column (ThermoFisher Scientific). Chimeric gRNA (crRNA:TracrRNA) was prepared by equally (crRNA:TracrRNA molar ratio,1:1) combining respective crRNAs and synthetic 3'-FAM-labeled TracrRNA in an annealing buffer (100 mM NaCl, 50 mM Tris-HCl pH8 and 1 mM MgCl2) by heating at 95\u00b0C for 2\u20135 min and then allowed to cool at room temperature for 15\u201320 min. RNP complex was prepared by equally mixing (Protein:sgRNA molar ratio,1:1) Chimeric gRNA and dead FnCas9 in a buffer (20 mM HEPES, pH7.5, 150 mM KCl, 1 mM DTT, 10% glycerol, 10 mM MgCl2) and rested for 10 min at RT. Target biotinylated amplicons were then treated with the RNP complexes for 10 min at 37\u00b0C. Finally, 80 \u00b5l of Dipstick buffer was added to the mix along with Milenia HybriDetect one lateral flow strip. The strips were allowed to stand in the solution for 2\u20135 min at room temperature and the result was observed. The strip images can be processed using the TOPSE application that generates background corrected values from the smart phone acquired images of the strip. This application has been previously trained on a large number of CoV-2 samples (Azhar et al., 2021). In vitro synthesized crRNAs used for double amplicon RAY were a gift from TATA Medical and Diagnostics. Detailed description of the protocol can be found in Appendix 1.\n\n### qRT-PCR SARS-CoV-2 detection\n\nqRT-PCR was performed using STANDARD M nCoV Real-Time Detection kit (SD Biosensor) as per manufacturer\u2019s protocol. Briefly, per reaction 3 \u00b5l of RTase mix and 0.25 \u00b5l of Internal Control A was added to 7 \u00b5l of the reaction solution. Five \u00b5l of each of the negative control, positive control, and patient sample nucleic acid extract was added to the PCR mixture dispensed in each reaction tube. The cycling conditions on the instrument were as follows: Reverse transcription 50\u00b0C for 15 min, Initial denaturation 95\u00b0C for 1 min, 5 Pre-amplification cycles of 95\u00b0C for 5 s; 60\u00b0C for 40 s followed by 40 amplification cycles of 95\u00b0C for 5 s; 60\u00b0C for 40 s. Signal was captured in the FAM channel for the qualitative detection of the new coronavirus (SARS-CoV-2) ORF1ab (RdRp) gene, JOE (VIC or HEX) channel for E gene, and CY5 channel for internal reference.\n\n### Sequencing of patient samples\n\nIndividuals who were found to be RT-PCR positive for SARS-CoV-2, were sequenced to determine whether it was a UK variant (20I/501Y.V1) or non-UK variant. With a low number of samples arriving each day in the lab and with quick turnaround time for reporting, Nanopore sequencing was undertaken for most of the samples.\n\n### SARS-CoV-2 whole genome sequencing using nanopore platform\n\nIn brief, 100 ng total RNA was used for double-stranded cDNA synthesis by using Superscript IV (ThermoFisher Scientific, Cat.No. 18091050) for first strand cDNA synthesis followed by RNase H digestion of ssRNA and second strand synthesis by DNA polymerase-I large (Klenow) fragment (New England Biolabs, Cat. No. M0210S). Double stranded cDNA thus obtained was purified using AMPure XP beads (Beckman Coulter, Cat. No. A63881). The SARS-CoV-2 genome was then amplified from 100 ng of the purified cDNA following the ARTIC V3 primer protocol. Sequencing library preparation consisting of End Repair/dA tailing, Native Barcode Ligation, and Adapter Ligation was performed with 200 ng of the multiplexed PCR amplicons according to Oxford Nanopore Technology (ONT) library preparation protocol-PCR tiling of COVID-19 virus (Version: PTC_9096_v109revE_06Feb2020). Sequencing in sets of 24 barcoded samples was performed on MinION Mk1B platform by ONT.\n\n### Nanopore sequencing analysis\n\nThe ARTIC end-to-end pipeline was used for the analysis of MinION raw fast5 files up to the variant calling. Raw fast5 files of samples were basecalled and demultiplexed using Guppy basecaller that uses the base calling algorithms of Oxford Nanopore Technologies (https://community.nanoporetech.com) with phred quality cut-off score\u00a0>7 on GPU-linux accelerated computing machine. Reads having phred quality scores less than seven were discarded to filter the low-quality reads. The resulting demultiplexed fastq were normalized by read length of 300\u2013500 (approximate size of amplicons) for further downstream analysis and aligned to the SARS-CoV-2 reference (MN908947.3) using the aligner Minimap2 v2.17 (Li, 2018). Nanopolish (Loman et al., 2015) was used to index raw fast5 files for variant calling from the minimap output files. To create consensus fasta, bcftools v1.8 was used over normalized minimap2 output.\n\n## Results\n\n### RAY is able to target at least one SNV in every emerging lineage of SARS-CoV-2\n\nIn an earlier study, we had successfully established that FnCas9 is unable to bind or cleave targets having two mismatches at the 2nd and 6th position (PAM proximal) of the sgRNA with respect to the target (Azhar et al., 2021; Figure 1A). Through in vitro cleavage studies of a double-stranded DNA substrate, we identified that the same outcome is also observed when mismatches are present at the 16th and 19th position (PAM distal) (Figure 1A, Materials\u00a0and\u00a0methods). This implies that if a mismatch exists in any of these position combinations, placing an additional synthetic mutation in the sgRNA at the other positions makes FnCas9 unable to bind or cleave the target (Figure 1A). Thus, mutations at any of these positions relative to a NGG PAM site in the SARS CoV-2 variants could be potentially distinguished from the parent strain.\n\nTo develop RAY for identifying SARS-CoV-2 variants, we first analyzed the mutations arising in all SARS-CoV-2 lineages reported so far (May 2021) and looked for the possibility of FnCas9-mediated targeting based on the presence of an NGG PAM site in the vicinity. We found that out of the 48 unique SNVs reported across all the VOCs and VOIs reported so far (CDC, 2021), 19 SNVs (12 VOC-associated SNVs and 7 VOI-associated SNVs) can be targeted by RAY (Supplementary file 1). Interestingly, each VOC/VOI reported so far consists of at least one of the 19 SNVs and can therefore be targeted by RAY design (Figure 1A). Among these SNVs, N501Y is present across 3/5 of the VOCs (B.1.1.7, P.1, and B.1.351). This mutation affects the receptor-binding domain of the virus and is the subject of numerous studies analyzing the efficacy of vaccines against the mutated form of the virus (Cheng et al., 2021; Dejnirattisai et al., 2021; Ku et al., 2021; Luan et al., 2021; Naveca et al., 2021; Tian et al., 2021; Xie et al., 2021; Collier et al., 2021). Owing to its prevalence as a shared marker for the majority of mutated lineages, we took this SNV further for developing a diagnostic assay.\n\nWe designed primer pairs surrounding the N501Y mutation after analyzing the mutational spectrum in SARS-CoV-2 strains obtained from the publicly available sequencing database, GISAID (Shu and McCauley, 2017). Additionally, we ensured that no regions from human or non-human genome as well as transcriptome shared significant homology to the sites to prevent any non-specific amplification during the reverse transcription PCR (RT-PCR) reaction (Materials\u00a0and\u00a0methods). In our earlier study, we have validated two FnCas9 sgRNAs in the N and S gene of SARS-CoV-2 which could detect positive cases with high sensitivity and specificity (Azhar et al., 2021). We reasoned that including the S-gene sgRNA which lies in the vicinity of the N501Y variant would serve as an internal positive control both for the presence of the SARS-CoV-2 virus in the sample as well as quality control for the amplicons generated in the RT PCR step of the assay.\n\n### RAY can successfully discriminate N501Y and WT nCoV2 substrates\n\nWe tested the N501Y sgRNA containing the variant mismatch at PAM proximal 2nd position to selectively bind and cleave the mutant substrate, while not affecting the WT substrate due to mismatch at PAM proximal 2nd and 6th positions. We found that catalytically active FnCas9 was able to successfully cleave the dsDNA substrate containing the N501Y mutation while leaving the WT sequence intact (Figure 2A). Importantly, this leads to a distinct pattern on agarose gel that can distinguish the two variants. We established that this approach for variant identification can be performed using a stand-alone or portable electrophoresis apparatus leading to a turnaround time of about 1.5 hr from RNA to read-out (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67130/elife-67130-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic showing the application of RAY for distinguishing variants WT and N501Y using electrophoresis, key steps in the process are shown. The uncleaved band represents the amplicon from either the WT or N501Y sample, cleavage occurs only in the N501Y sample. (B) Schematic for detecting the N501Y through a single amplicon RAY on a lateral flow assay is shown. Left panel depicts key steps in the assay. The amplicon sequence and position of primers and sgRNAs are indicated on the right. The N501Y mutation position is shown in raised font. (C) Outcome of the association of FAM-labeled FnCas9 RNP bound to biotin-labeled substrate on the paper strip is shown. Arrow indicates the direction of flow. (D) Different outcomes of RAY on a paper strip based on the starting material. Distinct bands on the streptavidin line (test line) characterize CoV-2 negative, CoV-2 wild type and CoV2 N501Y variants.\n\nThe electrophoresis based identification of the N501Y(A23063T) mutation can be adapted for COVID-19 detection under laboratory conditions. However, dye-based systems have inherent low sensitivity and cannot be used for routine diagnosis. We reasoned that for RAY to detect and diagnose variants, we need to adapt the detection to a more sensitive readout. In an earlier study, we had reported that using a lateral flow assay, a catalytically inactive (dead) FnCas9 generated by mutating the RuvC and HNH domains can be used to accurately identify the presence of SARS-CoV-2 RNA in patient samples (Azhar et al., 2021). To enable such a readout, the RNA sample first undergoes reverse transcription PCR using biotin-labeled primers, generating labeled amplicons at the end of the PCR reaction. The products from the reaction are then incubated with dFnCas9:sgRNA ribonucleoprotein complex where the sgRNA component is labeled with Fluorescein amidite (FAM) at the 3\u2019 end. Upon identifying its target, the RNP forms a tight complex with the dsDNA substrate. This complex is then applied on a paper strip that has gold nanoparticles tagged with antibodies recognizing the FAM label. In an aqueous environment, the nanoparticle:RNP:substrate complex moves up the strip by lateral flow and upon reaching a streptavidin line on the strip these get deposited if the RNP is attached to biotin-labeled substrates (test band). Residual or unbound AuNP complexes get deposited at a control line where secondary antibodies recognizing the anti-FAM antibody attached to the AuNPs are immobilized on the strip (Figure 2B,C).\n\nWe reasoned that in order to enable RAY to distinguish two samples different by a single mismatch on a paper strip, the intensity of the one mismatched sgRNA (as the other mismatch corresponds to N501Y SNV) should be several folds higher than wild-type samples (having two mismatches with the sgRNA, one at the SNV position and another synthetic mismatch). To generate a visually distinctive signal between WT and mutant sample, we performed a single-step reverse transcription PCR to generate a biotin-labeled amplified product that can be detected by a single sgRNA (called SWT) if the sample is WT and by both sgRNAs (SWT and SN501Y) if the sample contains the N501Y variant (Figure 2B,C). The presence of the SWT band also serves as a validation for the sample to be SARS-CoV-2 positive.\n\n### Single Amplicon RAY can discriminate N501Y and WT nCoV-2 substrates from patient samples with high viral load\n\nWe first generated a single amplicon labeled with biotin at one end and performed RAY with both sgRNAs (SWT and SN501Y) (Figure 3A). We reasoned that labeling biotin in the reverse primer would reduce possible background signal due to non-specific interactions of the unused biotin primers with the streptavidin line on the strip and increase the signal resolution between the mutant and WT samples. Among the four amplicon sizes that we investigated, an amplicon of 580 bp gave a clear discernible signal distinguishing the N501Y mutation over the WT sample (Figure 3A, Materials\u00a0and\u00a0methods). To validate the reproducibility of this method, we took mutant and WT substrates, and performed RAY 10 times, and were able to successfully distinguish them on every occasion (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67130/elife-67130-fig3-v2.jpg)\n\n**Figure 3.:** (A) RAY optimization with different size of S gene PCR amplicons. Optimal amplicon length denoted by red dotted box. (B) Reproducibility in output on multiple runs of RAY on the same samples (WT or N501Y) showing high concordance between assays (n\u00a0=\u00a010 RAY replicates from same sample). (C) RAY outcomes on three groups of patient samples as indicated. The ORF1ab Ct values for every sample is indicated below.\n\nNext, we tested RAY on RNA extracted from samples of eight qRT-PCR-positive SARS-CoV-2-infected individuals who harbored the N501Y mutation (along with other mutations). The samples were sequenced in parallel to detect the presence of N501Y mutation. RAY was able to correctly identify the variant signature in all eight samples that harbored the mutation (Figure 3C). However, we observed variability of signal intensities across the different samples. In particular, samples with low viral load (qRT-PCR Ct\u00a0>25) showed a comparatively faint band (Figure 3C). This suggested that the RAY protocol required further optimization to increase the signal intensity, especially for low viral titres. Importantly, RAY correctly classified all eight WT samples where neither the N501Y mutation nor any other lineage variants were present as seen by either an absence of a distinct band or an extremely faint band in the test line (Figure 3C). In addition, RAY identified all confirmed COVID-19-negative samples (12) tested simultaneously (Figure 3C). Taken together, the single amplicon RAY assay showed good specificity in identifying WT and SARS-CoV-2-negative samples but required improvements to increase the sensitivity for samples with low viral load.\n\n### Double Amplicon RAY can successfully achieves high specificity and sensitivity with patient samples\n\nTo improve the performance of the assay for patient samples across a wide range of viral titres, we modified several aspects of the RAY assay. Firstly, we used TOPSE (True Outcome Predicted via Strip Evaluation), a smartphone-based application to generate a band intensity score from a lateral flow strip to eliminate bias that can result from visual estimation (Appendix 1). Secondly, we labeled both forward and reverse primers in the assay with 5' Biotin to increase the signal intensity and reduced the amplicon length of the substrate to get a consistent amplification at the end of each PCR run (Figure 4A,B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67130/elife-67130-fig4-v2.jpg)\n\n**Figure 4.:** (A) Effect of single/double biotin labeling on primers for the 580 bp amplicon. (B) Effect of reduction of amplicon length on RAY outcomes. Red dotted box shows the optimal amplification conditions for successful discrimination of WT and N501Y samples. (C) Schematic for the double amplicon RAY. Positions of primers and sgRNAs for the N501Y sgRNA and WT S-gene sgRNA are shown. The two amplicons are highlighted in green and red. (D) Key steps in the assay and overall time is indicated. (E) Representative image showing the limit of detection of RAY for serial dilutions of patient samples (N501Y or WT as indicated). The corresponding TOPSE and ORF1ab Ct values are shown below. Right panel shows a quantification of the image intensity values (n\u00a0=\u00a02 RAY replicates per sample). (F) Graph showing the distribution of sequenced confirmed WT (cyan\u00a0dot) and N501Y (red\u00a0triangle) containing patient samples detected through RAY. Dotted line depicts the cut-off for N501Y sgRNA. (G) RAY outcomes on E484K and T716I mutations from patient samples. (H) Outcome of RAY showing minimal cross-reactivity of N501Y sgRNA on the E484K amplicon. (I) Increased signal intensity of N501Y RAY on patient samples upon using phosphorothioate modified synthetic sgRNA as compared to in vitro synthesized sgRNA.\n\nWe observed that upon double biotinylation the test band intensity for the 580 bp amplicon was 1.5 times higher than single biotin-labeled amplicon (Figure 4A). To increase the band intensity further, we reduced the length of the PCR amplicon containing the N501Y mutation and found that within the same sample, amplicons with shorter lengths had higher band intensities (Figure 4B). In particular, with an amplicon size of 149 bp, a clearly discernible background-corrected signal intensity could be achieved in the mutant sample over the WT sample (Figure 4B). Since the 149 bp amplicon did not contain the SWT sgRNA-binding site, we modified the assay to perform two simultaneous PCR reactions from the same sample, one generating the N501Y specific amplicon (149 bp), and another corresponding to the SWT sgRNA from the original FELUDA assay (287 bp) (Figure 4C). The double amplicon RAY assay results in shorter products and lower overall time for completion, starting from RNA samples while compared to a single amplicon RAY (reduced to 55 min from 75 min).\n\nNext, we investigated the sensitivity of the assay on serial dilutions of a WT and a N501Y mutant patient sample with moderately high viral load (Ct\u00a0<25). We observed that RAY was able to give a clearly discernible SN501Y sgRNA signal that was at least 5.5 times higher than that of the WT sample up to a Ct value of 34. Upon further dilution, no signal was observed both in RAY or qRT PCR for these samples (Figure 4E). Taken together, RAY is sufficiently sensitive in detecting the N501Y VOC in a sample with only a few copies of the virus and is comparable to other sequencing platforms (Klempt et al., 2020).\n\nWe then proceeded to test RAY on a set of patient samples containing either the WT (n\u00a0=\u00a037) or the N501Y variants (n\u00a0=\u00a022) identified by sequencing. For each of these samples, a qRT-PCR and the SWT RAY were first performed to confirm SARS-CoV-2 positivity (Appendix 1, Supplementary file 1). With a single run of the assay, SN501Y was able to detect 36/37 WT samples and 19/22 N501Y samples corresponding to a sensitivity of 86% and a specificity of 97% across all ranges of Ct values (Figure 4F, Supplementary file 2). Thus, RAY can identify the N501Y SNV with high accuracy in patient samples underscoring its impact as a rapid screening methodology for SARS-CoV-2 VOCs.\n\nNotably, we were able to successfully validate RAY for two more mutations E484K and T716I in patient samples using corresponding sgRNAs suggesting that the assay can be optimized and adapted for other VOCs in addition to N501Y (Figure 4G). Among these, the E484K mutation has been associated with high transmissibility and the possibility of reinfection (Weisblum et al., 2020; Xie et al., 2021; Collier et al., 2021; Wibmer et al., 2021; Annavajhala et al., 2021; Resende et al., 2021; Nonaka et al., 2021; Naveca et al., 2021). Importantly, amplicons containing the E484K mutation do not show cross-reactivity with the N501Y sgRNA, highlighting the specificity of the assay between variants (Figure 4H). Finally, as seen in our earlier study, synthetic sgRNA containing a phosphorothioate backbone modification leads to higher stability and greater band intensity when compared to in vitro synthesized sgRNAs (Figure 4I).\n\n## Discussion\n\nCurrently, deep-sequencing of patient samples is being routinely done by health authorities in various countries to track and isolate cases containing the SARS-CoV-2 variants (Meredith et al., 2020; Oude Munnink et al., 2020; McNamara et al., 2020; Rockett et al., 2020; Bhoyar et al., 2021). The accuracy of variant calling in any sequencing platform is dependent on the very high quality and coverage of reads to the reference genome. Since the process from sample to sequence consists of multiple steps, low viral titres can be missed out during sequencing assays for variant calling. The RAY pipeline uses an amplification step followed by enzymatic binding and is reproducible across a wide range of viral titres tested.\n\nThe main advantage of sequencing COVID-19 samples is the generation of cumulative information about all mutations co-existing in a given variant (Chiu and Miller, 2019\u00a0and\u00a0Vandenberg et al., 2021). This information is valuable to track and trace how lineages evolve and has led to the identification of mutations in the first place. RAY can identify only known VOCs and is therefore useful as a diagnostic tool for the early detection of variant signatures in a sample. For example, determining whether a sample belongs to the South African lineage through E484K specific RAY can allow early quarantine of the patient and prevent the spreading of a highly transmissible variant. Similarly, identifying a WT sample rapidly through RAY negates the necessity of sequencing such a sample thereby reducing the cost of the associated sequencing exercise. Together, this can ease the burden of surveillance and ensure both rapid disease control measures as well as the identification of newer variants efficiently.\n\nIn the current format (lateral flow assay), RAY has limitations in multiplexing several VOC candidates in a single assay. Although longer amplicons can be used to identify multiple mutations that appear close to each other, we observed a drop in sensitivity probably due to reduced PCR efficiency for longer amplicons. Similarly, to increase the throughput of the assay, converting the readout into a fluorescence-based mode might be beneficial.\n\nPerhaps, the most imperative area of improvement for RAY is increasing the number of possible mutations that can be targeted. The necessity of an NGG PAM at a fixed position away from the position of the target mutation limits the total number of targets that RAY can identify. This can be significantly expanded by systematically exploring more sites in the sgRNA where a mutation weakens the enzyme:substrate interaction. Alternatively, engineering the enzyme to generate PAM-flexible versions can be considered.\n\nRoutine sequencing of patient samples for disease surveillance is fraught with issues such as cost, logistics, and turnaround times. A typical deep sequencing cost per sample is several orders of magnitude higher than RAY (which costs\u00a0~7 USD per sample, Supplementary file 3) and the minimum turnaround time for sequencing is 36 hr. Importantly, sequencing runs are generally done on pooled samples to save on cost, workforce, and machine time, all of which necessitate the advent of alternate solutions that can identify variants through a simple pipeline. RAY -on the contrary- is scalable to any number of samples at a given time.\n\nSequencing also generates a large amount of data and requires physical storage and high-performance computing methodologies to record, analyze and interpret the data (Chiu and Miller, 2019\u00a0and\u00a0Vandenberg et al., 2021). In addition, dedicated personnel with a substantial understanding of sequence analysis and programming skills are necessary for identifying variants within reads generated from a sample. In contrast, RAY uses a visual readout on a paper strip leading to a binary decision about the sample. The automated image acquisition and recording through a smartphone app allows operators with a minimum skill set to process samples. This has the advantage of rapid screening, particularly at the point of care settings.\n\nIn this study, we report the development of a CRISPR diagnostic platform for detecting the major VOCs in the SARS-CoV-2 genome. The outcomes of this platform can be extended to other pathogenic SNVs and can provide a robust solution for rapid variant calling in patient samples. Considering the rise and spread of mutated lineages of the virus in multiple countries, it is imperative to develop technologies that can quickly and accurately detect these variants. Since the first-generation vaccines against SARS-CoV-2 have been developed against the parent strain, careful assessment of the variant lineages and their response to the vaccine will become imperative during the course of the pandemic (Fontanet et al., 2021; Walensky et al., 2021). Novel variants, particularly those correlated with adverse disease manifestation, need to be controlled so that these do not spread rampantly across populations. Testing and isolating them will thus continue to be at the forefront of disease control measures.\n",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "d21f1b33-89c6-466a-944d-db707d68b47c",
+      "submission_id": "4ce79de3-ec91-42a2-a06c-5dec50e465d5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yamuna Krishnan, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67130.sa1](https://doi.org/10.7554/eLife.67130.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper is likely to be of interest to those interested in developing diagnostic tools for rapid low cost detection of single nucleotide variants in viral and host pathogenic sequences; genetic disorders and development of precision medicine. Although the key scientific claims are an extension to a recently developed CRISPR diagnostic platform by the same group, this advance has potential application to the COVID-19 pandemic.\n\nThe manuscript was revised to provide data and detailed methodologies to support the detection of two major variants of SARs CoV-2. It has been re-written such that the reader need not be familiar with the previous methodology published by the authors, which has been extended to detect these variants.\n\nDecision letter after peer review:\n\nThank you for submitting your work entitled \"RAY: CRISPR diagnostic for rapid and accurate detection of SARS-CoV-2 variants on a paper strip\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor.\n\nThe manuscript has some issues that need to be addressed, as outlined below:\n\nThis paper will be of interest to scientists interested in developing diagnostic tools for rapid low cost detection of SNVs in viral and host pathogenic sequences; genetic disorders and development of precision medicine. Although this tool has immediate application in healthcare during the current pandemic, the key scientific claims of the manuscript are an extension to a recently developed CRISPR diagnostic platform by the same groups. Further data and detailed methodologies need to be provided to support generalizing of the conclusions for applications to a broader field beyond detection of the two 2 variants of SARs-CoV-2.\n\nBriefly, we request a revised manuscript. It is written such that the reader must already be familiar with a previous paper published by the authors, of which this is an extension to detect variants. The manuscript should be stand alone and include all information about this assay and the method validation result. As the title of this manuscript is \"detection of variants on a paper strip\", generalizability must be addressed if this assay is able to do that. If not, the authors must discuss how to achieve generality and revise the title to \"detection of common SARS-CoV-2 variants\". In this scenario, the results can support the title.\n\nReviewer 1:\n\nResearchers from different groups have employed CRISPR-Cas9 protein variants (Cas13, and Cas12a) to develop nucleic acids detection platforms such as SHERLOCK (2017, Science, 356, 438; 2018, Science, 360, 439) and DETECTR (2018, Science, 360, 436). Both SHERLOCK and DETECTR rely on the \"collateral effect\" \u2013 promiscuous cleavage and degradation of neighboring ssRNA and ssDNA by Cas13 and Cas12a. Upon target binding, it will cleave the ssDNA probe. These CRISPR-based detections were used for SARS-CoV-2 detection after then (2020, Nature Biotechnology, 38, 870).\n\nAuthors previously reported that Francisella novicida (FnCas9) could be used for gene editing. In authors' preprint project, they reported the high specificity of FnCas9 to the point mismatch at the specific position of gRNA and there is no \"collateral effect\" of FnCas9. Based on this discovery, they developed a non-cleavage, affinity-based method for the nucleobase detection with single nucleotide mismatch sensitivity (ref 25).\n\nAuthors leverage the single nucleotide mismatch sensitivity of FnCAS9 and report herein a non-cleavage, affinity-based SARS-CoV-2 variants detection.\n\nStrengths:\n\n\u2013 This assay provides a simple, rapid way to detect SARS-CoV-2 and its SNV.\n\n\u2013 Authors demonstrated the detection of SARS-CoV-2 and SAR-S-CoV2 variants (N501Y) in 18 patient samples and validated the samples by sequencing.\n\nWeaknesses:\n\n\u2013 Although authors cite their previous preprint paper (similar assay called \"FELUDA\"), authors didn't describe any sensing mechanism of this assay (RAY). Readers cannot understand this assay by reading this manuscript only. The lack of description in this manuscript strongly affects readers to understand the experiments. Authors assume readers have read another article from the same group and understand the design and mechanism of their \"FELUDA\" assay. For example, Authors didn't mention that active FnCas9 was used in the experiment in Figure 2a while catalytic inactive FnCas9 was used for SNV detection assay \"RAY\".\n\n\u2013 Only N501Y detection was demonstrated in this project. Authors did not demonstrate the generalizability of this assay by demonstration of detecting other SARS-CoV-2 variants. Furthermore, authors mentioned that only 10/32 SNV sites were targetable by FnCas9.\n\n\u2013 The concept / sensing mechanism of this assay is very similar to the assay reported in the same group (ref 25). They used a lot of results / discovery in the preprint (ref 25) to develop this assay and there are only 4 sets of new data reported in this manuscript.\n\nThere are several points that may help authors to improve this project.\n\n\"We found that out of the 32 defining SNVs 100 reported across all the three lineages, 10 sites were targetable by FnCas9 (Figure 1B,C, Supplementary Table 1)\"\n\nFigure 1B shows the evolution of SARS-CoV-2 virus. How is it related to this statement? Figure 1C shows the position of different mutations in the genome. Why is it important to show the position of the mutations? Is it related to the targetability of FnCas9? Explanation is needed.\n\nAuthors should explain how they find 10 of 32 single nucleotide variation (SNV) sites are targetable by FnCas9. Why only 10/32 SNV sites are targetable? Authors should explain this result. Without this explanation, readers will not understand how this assay works and how to use this assay to detect other SNV.\n\nAs only 10 of 32 SNV sites are targetable, authors should discuss the generalizability of this assay.\n\n\"Thirdly, we made modifications at the level of amplicon length, PCR conditions, and RNP concentration to generate the most optimal protocol that can produce a clear discernible signal on a commercially available paper strip\"\n\nNo data is shown about PCR conditions and RNP concentration optimization. Why does the assay not work well when the amplicon length is 541 bp or less?\n\nIn my view, the combination of the preprint paper (ref 25) and this manuscript will make it a detailed, comprehensive project.\n\nThere are additional points that need addressing to improve this paper.\n\nOnly N501Y detection was demonstrated in this paper strip assay. Paper strip detection of other targetable SNV sites could show the generalizability of this assay in specific conditions.\n\nThis manuscript has a lot of abbreviations, but some of them only appear 1 or 2 times. It makes this manuscript difficult for readers to read.\n\nIt is confused that Wt, mut and N501Y are all present in Figure 2a. Authors are suggested to label it more clearly to show that it is WT and mutated sgRNA (N501Y).\n\n\"Finally, we tested RAY on RNA extracted from samples of RT-PCR positive SARS-CoV-2 infected individuals who returned to India from the United Kingdom between December 2020 and January 2021.\"\n\nThe travel history of the patient is not necessary for assay validation.\n\nReviewer 2:\n\nThe authors report the development of a CRISPR diagnostic platform for detecting variants (N501Y and T716I) in SARS-CoV-2. This is based on a technology, recently developed by the same research groups, using a Cas9 ortholog from Francisella novicida (FnCas9) based enzymatic readout for detecting nucleotide sequences. RAY (Rapid variant Assay), detect both the infection as well as the presence of the common N501Y mutation present in the 3 new variants and distinguish it from the parent CoV-2 lineage. The authors also adapt RAY to a lateral flow paper strip assay for low-cost rapid detection. This represents a novel sequencing-free rapid detection system for CoV-2 mutations.\n\nAlthough the paper does have major strengths in principle, the authors have not provided sufficient data and information directly for an end user to adapt this platform to their use. For a stand-alone resource article, authors must provide all the critical information within the text, figures, methods and supplementary figures required to understand the range, specificity, sensitivity, limits and error prone aspects (if any) of the technology.\n\nFurther information and clarification are required for the following points:\n\nPrimer design and selection:\n\n1. Given that the authors mention that they successfully established that FnCas9 is unable to bind or cleave targets having two mismatches -in the 2nd and 6th position; why were PAMs searched with mismatches in the 16th and 19th position (Figure 1D)?\n\n2. How many pairs of flanking primers need to be designed for a specific point mutation? What experimental output would demonstrate optimal primer design?\n\n3. More details on the amplicons are required.\n\nIVC Detection\n\n1. What size fragments were generated? Was only one sgRNA used for each N501Y and T716I?\n\nIn figure 2a it seems like the amount of wild type amplicon is higher or equal to one of the cleaved fragments in the N501Y sample gel (mut lane). Is this due to poor cleavage by the FnCas9? A densitometry analysis would provide better quantification of fragment formations.\n\n2. What is the specificity, selectivity for each of these variants? Do altering sgRNA change the specificity? What conditions are necessary for the reaction to go to completion? How does one account for false negatives; is there a low copy number limit for this detection system. No experimental results have been provided for any of this.\n\n3. For the reaction between FnCas9 and sample/amplicons what are the ratio ranges; concentrations; volumes to be followed?\n\nLFA Detection\n\n1. Please elaborate the protocol for \"modified single step\" RT-PCR.\n\n2. The authors mention that they eliminate one of the biotin label primers to reduce the chances of background signal due to non-specific interactions of the unused biotin primers with the streptavidin. The authors should compare and quantitate the output using various methods used in the current work as well as previous FELUDA paper [double biotin labels; synthetic phosphothioate modified RNA etc]\n\n3. Authors should explain the difference between FnCas9 and dFnCas9 in at least the methods.\n\n4. What are the limits of detection of RAY? Is it similar to FELUDA? How does changing sgRNA/ chimeric gRNA effect the detection limit? No experimental results have been provided for this.\n\n5. If the only method of detection analysis is TOPSE then the authors must provide more details of how to access/use the app.\n\nReviewer 3:\n\nThe work by Kumar et al. presents a new diagnostic technique (called \"RAY\") for detecting SARS-CoV-2 virus infection (responsible for the current COVID-19 pandemic). The researchers use a CRISPR-based method to provide a \"quick\" assay that can distinguish COVID positive and negative samples. This method is an extension of their previous work on a COVID-19 assay called FELUDA (https://www.medrxiv.org/content/10.1101/2020.09.13.20193581v1). The focus of the current work is to specifically identify COVID-positive samples as well as the particular variant of the viral genome. Typically, the different SARS-CoV-2 variants could differ by a few differences in the genome sequence. This work uses the specificity of the CRISPR reaction: the enzymatic cleavage only occurs for a completely complementary target and not for a target with mutations. The authors developed a lateral flow assay, where the signal corresponding to detection of the viral RNA and/or the mutant is read out as a line on a paper strip (similar to pregnancy strips). Appearance of these lines indicate presence of the virus in the sample. The work used 8 COVID positive samples, 8 positive samples with the mutation N501Y (earlier shown to be present in the British, South African and Brazilian variants of SARS-CoV-2), and 12 COVID negative samples, and identified all the clinical samples accurately.\n\nIn terms of the scope, the current work demonstrates COVID19 mutation detection with an easy lateral flow-based readout, within ~75 minutes. While the assay has been shown to be able to detect 20 samples accurately, a larger data set might be needed to evaluate the sensitivity of the assay and the range of viral loads it can detect. The past year has seen a number of new techniques for COVID19 diagnosis, all of which will be useful for the still ongoing large-scale testing worldwide. In that context, this assay has practical and immediate use for COVID19 detection if it can be commercialized, especially with the rise of a number of variants of the SARS-CoV-2 virus.\n\nI liked reading the paper \u2013 it was very clear and crisp, and the data was well presented in both the text and the figures. However, as written, the paper seems to rely heavily on the reader's knowledge of their earlier work on FELUDA. From a reader's point of view, I felt that certain aspects of the assay, methodology and scope of immediate use could be expanded here even if it is a repeat from the authors' FELUDA work, to make this a stand-alone paper.\n\nDiscussion can be included on the following points. While these are not technical concerns, I think it will be informative for scientific and lay audience to know where the assay stands in terms of immediate impact for COVID19 pandemic.\n\n\u2013 Metrics of the assay such as sensitivity and specificity (even if referring to previous works).\n\n\u2013 Scope of the assay: Do the authors intend to use this as a clinical test or at POC? Specific aspects can be discussed for either or both of these scenarios.\n\n\u2013 For the assay to be useful in POC setting, sample processing is an important step. Assuming samples are collected on swabs, RNA needs to be extracted before RAY can be performed. How can this be brought into the regular workflow for the assay to work at a testing site outside a lab or clinical facility? How will this affect the cost of the assay? The tally of the assay cost excludes RNA extraction. How can such an enzymatic approach be performed in a remote site without a cold chain?\n",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aa915f51-d559-41a7-a9e3-a4dac3c2b4ad",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C1",
+      "claim": "The COVID-19 pandemic originated in the Wuhan province of China in late 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID-19 pandemic originating in the Wuhan province of China in late 2019 has impacted global health, causing increased mortality among elderly patients and individuals with comorbid conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as background information about the pandemic's origin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "64752840-e160-48f2-ae26-1912c95867a1",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C2",
+      "claim": "The COVID-19 pandemic has caused increased mortality among elderly patients and individuals with comorbid conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID-19 pandemic originating in the Wuhan province of China in late 2019 has impacted global health, causing increased mortality among elderly patients and individuals with comorbid conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact about the pandemic's impact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "e8b5e6c4-f11d-4034-b5c4-776fc34d8b0d",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C3",
+      "claim": "SARS-CoV-2 has undergone mutations during its passage through affected populations.",
+      "claim_type": "EXPLICIT",
+      "source": "During the passage of the virus through affected populations, it has undergone mutations, some of which have recently been linked with increased viral load and prognostic complexities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed phenomenon during the pandemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "4c1fa00f-6fd7-4c0f-8f96-3b6af26a119d",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C4",
+      "claim": "Some SARS-CoV-2 mutations have been linked with increased viral load and prognostic complexities.",
+      "claim_type": "EXPLICIT",
+      "source": "During the passage of the virus through affected populations, it has undergone mutations, some of which have recently been linked with increased viral load and prognostic complexities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recent finding about certain mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "52999670-6ae1-4234-b439-9649ec3e047a",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C5",
+      "claim": "Point mutations in SARS-CoV-2 are difficult to diagnose using qRT-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these variants are point mutations that are difficult to diagnose using the gold standard quantitative real-time PCR (qRT-PCR) method and necessitates widespread sequencing which is expensive, has long turn-around times, and requires high viral load for calling mutations accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the current gold standard diagnostic method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "db430d63-4a50-4acf-b10f-9ea7e522ebb3",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C6",
+      "claim": "Sequencing for SARS-CoV-2 variant detection is expensive.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these variants are point mutations that are difficult to diagnose using the gold standard quantitative real-time PCR (qRT-PCR) method and necessitates widespread sequencing which is expensive, has long turn-around times, and requires high viral load for calling mutations accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of sequencing-based diagnostics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "7fd056fa-ca86-42c1-b814-b55ac1b337e2",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C7",
+      "claim": "Sequencing for SARS-CoV-2 variant detection has long turn-around times.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these variants are point mutations that are difficult to diagnose using the gold standard quantitative real-time PCR (qRT-PCR) method and necessitates widespread sequencing which is expensive, has long turn-around times, and requires high viral load for calling mutations accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of sequencing-based diagnostics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "6386fa5b-54d9-4197-a3d7-569313c6a99d",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C8",
+      "claim": "Sequencing for SARS-CoV-2 variant detection requires high viral load for calling mutations accurately.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these variants are point mutations that are difficult to diagnose using the gold standard quantitative real-time PCR (qRT-PCR) method and necessitates widespread sequencing which is expensive, has long turn-around times, and requires high viral load for calling mutations accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of sequencing-based diagnostics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "a0a615d9-e794-49d4-b77b-5dc202137125",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C9",
+      "claim": "Francisella novicida Cas9 (FnCas9) has high specificity to identify mismatches in the target.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we repurpose the high specificity of Francisella novicida Cas9 (FnCas9) to identify mismatches in the target for developing a lateral flow assay that can be successfully adapted for the simultaneous detection of SARS-CoV-2 infection as well as for detecting point mutations in the sequence of the virus obtained from patient samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of FnCas9 that is being utilized in the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "02b0f5ab-5340-4880-854f-a856a22cee57",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C10",
+      "claim": "A lateral flow assay using FnCas9 can simultaneously detect SARS-CoV-2 infection and point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we repurpose the high specificity of Francisella novicida Cas9 (FnCas9) to identify mismatches in the target for developing a lateral flow assay that can be successfully adapted for the simultaneous detection of SARS-CoV-2 infection as well as for detecting point mutations in the sequence of the virus obtained from patient samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the study describing the developed assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "a353985d-485d-4a59-be09-c066bcbb4f89",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C11",
+      "claim": "The N501Y mutation is present across multiple variant lineages of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "We report the detection of the S gene mutation N501Y (present across multiple variant lineages of SARS-CoV-2) within an hour using lateral flow paper strip chemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the N501Y mutation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "35b305c5-c1e6-431f-a246-112997a1f3fe",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C12",
+      "claim": "The N501Y mutation can be detected within an hour using lateral flow paper strip chemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "We report the detection of the S gene mutation N501Y (present across multiple variant lineages of SARS-CoV-2) within an hour using lateral flow paper strip chemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study regarding the speed of detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "8f0501b7-460b-4589-9345-c4d02cfc3b04",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C13",
+      "claim": "The RAY assay for N501Y detection was tested on 37 wild-type patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The results were corroborated using deep sequencing on multiple wild-type (n = 37) and mutant (n = 22) virus infected patient samples with a sensitivity of 87% and specificity of 97%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size used for validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "c6d06c5b-5410-4661-b788-91c0fd9439c4",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C14",
+      "claim": "The RAY assay for N501Y detection was tested on 22 mutant patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The results were corroborated using deep sequencing on multiple wild-type (n = 37) and mutant (n = 22) virus infected patient samples with a sensitivity of 87% and specificity of 97%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size used for validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "9df82b18-04bd-4b18-b684-9712ec642018",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C15",
+      "claim": "The RAY assay for N501Y detection has a sensitivity of 87%.",
+      "claim_type": "EXPLICIT",
+      "source": "The results were corroborated using deep sequencing on multiple wild-type (n = 37) and mutant (n = 22) virus infected patient samples with a sensitivity of 87% and specificity of 97%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative performance metric from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "c38e5704-1dd1-453a-ac30-bb2174ab9ce2",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C16",
+      "claim": "The RAY assay for N501Y detection has a specificity of 97%.",
+      "claim_type": "EXPLICIT",
+      "source": "The results were corroborated using deep sequencing on multiple wild-type (n = 37) and mutant (n = 22) virus infected patient samples with a sensitivity of 87% and specificity of 97%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative performance metric from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "3c4abb8e-6f43-4649-96dc-3fcffc119bf7",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C17",
+      "claim": "The RAY design principle can be adapted for the E484K mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The design principle can be rapidly adapted for other mutations (as shown also for E484K and T716I) highlighting the advantages of quick optimization and roll-out of CRISPR diagnostics (CRISPRDx) for disease surveillance even beyond COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the study as evidence of adaptability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "11d8185a-ca11-440a-a395-9a8ad9efca3e",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C18",
+      "claim": "The RAY design principle can be adapted for the T716I mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The design principle can be rapidly adapted for other mutations (as shown also for E484K and T716I) highlighting the advantages of quick optimization and roll-out of CRISPR diagnostics (CRISPRDx) for disease surveillance even beyond COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the study as evidence of adaptability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "2bf0975d-cace-483e-99ea-321c82698e7f",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C19",
+      "claim": "The study was funded by Council for Scientific and Industrial Research, India.",
+      "claim_type": "EXPLICIT",
+      "source": "This study was funded by Council for Scientific and Industrial Research, India.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the funding source for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "3bd5b575-7be0-4962-b136-092bac1a1cc3",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C20",
+      "claim": "The coronavirus pandemic has affected about 157 million people worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing and isolating SARS-CoV-2-positive cases has been one of the main strategies for controlling the rise and spread of the coronavirus pandemic that has affected about 157 million people and 3 million deaths all over the world (World Health Organization, WHO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from WHO data as of the time of writing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "78598b17-565c-4505-a75e-e31f7747ed03",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C21",
+      "claim": "The coronavirus pandemic has caused 3 million deaths worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing and isolating SARS-CoV-2-positive cases has been one of the main strategies for controlling the rise and spread of the coronavirus pandemic that has affected about 157 million people and 3 million deaths all over the world (World Health Organization, WHO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from WHO data as of the time of writing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "8387eda6-0e4a-4e19-b21d-18f8f1d80d7e",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C22",
+      "claim": "The SARS-CoV-2 genome has undergone several mutations during its passage through the human host.",
+      "claim_type": "EXPLICIT",
+      "source": "Like all other viruses, the SARS-CoV-2 genome has undergone several mutations during its passage through the human host, and the positive or negative impact of most of them on virus transmission and immune escape are still under investigation (Rabi et al., 2020; Pachetti et al., 2020; Korber et al., 2020; Zhou et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed phenomenon with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "ad8e6fee-a9ce-4cf0-a5b8-5fdafda00588",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C23",
+      "claim": "The positive or negative impact of most SARS-CoV-2 mutations on virus transmission and immune escape are still under investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Like all other viruses, the SARS-CoV-2 genome has undergone several mutations during its passage through the human host, and the positive or negative impact of most of them on virus transmission and immune escape are still under investigation (Rabi et al., 2020; Pachetti et al., 2020; Korber et al., 2020; Zhou et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the current state of research with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "da75b7cd-e30c-4ac9-b5af-d754deae4465",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C24",
+      "claim": "In December 2020, health authorities in the United Kingdom reported the emergence of a new SARS-CoV-2 variant (lineage B.1.1.7).",
+      "claim_type": "EXPLICIT",
+      "source": "In December 2020, health authorities in the United Kingdom had reported the emergence of a new SARS-CoV-2 variant (lineage B.1.1.7) that is phylogenetically distinct from other circulating strains in the region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical event in the pandemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "de179d8a-0fd4-496c-8272-2e51d975fe96",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C25",
+      "claim": "The B.1.1.7 variant is phylogenetically distinct from other circulating strains in the UK region.",
+      "claim_type": "EXPLICIT",
+      "source": "In December 2020, health authorities in the United Kingdom had reported the emergence of a new SARS-CoV-2 variant (lineage B.1.1.7) that is phylogenetically distinct from other circulating strains in the region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the B.1.1.7 variant.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "3b11adde-1e67-446c-a70f-04e6dacb11f1",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C26",
+      "claim": "The B.1.1.7 variant has 23 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "With 23 mutations, this variant had rapidly replaced former SARS-CoV-2 lineages occurring in the region and has been established to have greater transmissibility through modeling and clinical correlation studies (Chand, 2020; Horby et al., 2021; Davies et al., 2021; Volz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the B.1.1.7 variant.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "b32b19c3-4d83-41d9-85bb-1d6d6ae2e9ff",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C27",
+      "claim": "The B.1.1.7 variant rapidly replaced former SARS-CoV-2 lineages in the UK region.",
+      "claim_type": "EXPLICIT",
+      "source": "With 23 mutations, this variant had rapidly replaced former SARS-CoV-2 lineages occurring in the region and has been established to have greater transmissibility through modeling and clinical correlation studies (Chand, 2020; Horby et al., 2021; Davies et al., 2021; Volz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed phenomenon with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "65b1e3c2-484f-41f2-b046-4919bfe018d8",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C28",
+      "claim": "The B.1.1.7 variant has been established to have greater transmissibility through modeling and clinical correlation studies.",
+      "claim_type": "EXPLICIT",
+      "source": "With 23 mutations, this variant had rapidly replaced former SARS-CoV-2 lineages occurring in the region and has been established to have greater transmissibility through modeling and clinical correlation studies (Chand, 2020; Horby et al., 2021; Davies et al., 2021; Volz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established finding with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "f0a952ba-32ca-49b4-862f-71a2a49fe812",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C29",
+      "claim": "South African authorities reported the B.1.351 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the South African and Brazilian authorities have also reported variants (B.1.351 and P.1, respectively) that have been associated with a higher viral load in preliminary studies (Tegally et al., 2020; Faria et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical event with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "74480884-4183-4c12-93d9-6e93943aaf7a",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C30",
+      "claim": "Brazilian authorities reported the P.1 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the South African and Brazilian authorities have also reported variants (B.1.351 and P.1, respectively) that have been associated with a higher viral load in preliminary studies (Tegally et al., 2020; Faria et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical event with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "4aa3770b-3280-4df4-a3b0-9bfe511db440",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C31",
+      "claim": "The B.1.351 and P.1 variants have been associated with a higher viral load in preliminary studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the South African and Brazilian authorities have also reported variants (B.1.351 and P.1, respectively) that have been associated with a higher viral load in preliminary studies (Tegally et al., 2020; Faria et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from preliminary studies with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "ef26ccf6-f6d3-4224-94cf-a598b932442b",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C32",
+      "claim": "Till May 2021, at least 13 emerging SARS-CoV-2 lineages with multiple mutations have been reported from sequencing efforts across the globe.",
+      "claim_type": "EXPLICIT",
+      "source": "Till May 2021, at least 13 emerging SARS-CoV-2 lineages with multiple mutations have been reported from sequencing efforts across the globe (CDC, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact from CDC data as of May 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "d35dc23d-1451-4e8b-8cb8-ed0108c5ad16",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C33",
+      "claim": "SARS-CoV-2 variants are classified as either Variants of Concern (VOC) or Variants of Interest (VOI).",
+      "claim_type": "EXPLICIT",
+      "source": "Variants in lineages of the SARS-CoV-2 genome have been classified either as Variants of Concern (VOC) or Variants of Interest (VOI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the classification system for variants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "1c2f22bc-9e83-4799-ba87-8080acd7e134",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C34",
+      "claim": "VOCs have shown an indication of higher severity, transmissibility, and impact on pandemic spread from ongoing studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, the VOCs have shown an indication of higher severity, transmissibility, and impact on pandemic spread from ongoing studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of VOCs based on ongoing research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "648c6d6a-3ddb-4d6b-b4ca-51df50bfab14",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C35",
+      "claim": "VOIs have limited evidence for higher severity and transmissibility currently but are being monitored for potential impact in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "VOIs have limited evidence for the same currently but are being monitored for potential impact in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the current status of VOIs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "a119c587-9bc0-4d33-8954-06627c71d173",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C36",
+      "claim": "Till May 2021, at least five lineages (B.1.1.7, P.1, B.1.351, B.1.427, and B.1.429) have been classified as VOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Till May 2021, at least five lineages (B.1.1.7, P.1, B.1.351, B.1.427, and B.1.429) have been classified as VOCs and are being investigated for their susceptibility to diagnosis, response to vaccines, and correlation with disease severity and transmission (CDC, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact from CDC data as of May 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "4b93f319-a6e5-491b-8438-7fce3a2c3880",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C37",
+      "claim": "VOCs are being investigated for their susceptibility to diagnosis, response to vaccines, and correlation with disease severity and transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Till May 2021, at least five lineages (B.1.1.7, P.1, B.1.351, B.1.427, and B.1.429) have been classified as VOCs and are being investigated for their susceptibility to diagnosis, response to vaccines, and correlation with disease severity and transmission (CDC, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as ongoing research activities with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "b3f58a45-841f-4314-8852-0a2547bf4953",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C38",
+      "claim": "Infected individuals harboring SARS-CoV-2 mutations have been detected in countries far away from their origin as air travel has resumed.",
+      "claim_type": "EXPLICIT",
+      "source": "As air travel has resumed in most countries post lockdown, infected individuals harboring these mutations have been detected in countries far away from their origin, generating concerns about greater disease incidence unless these cases are recognized and isolated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed phenomenon following resumption of air travel.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "4b654582-ab21-4fe9-9abb-756aebe97634",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C39",
+      "claim": "Vaccine roll-out has been initiated in several countries.",
+      "claim_type": "EXPLICIT",
+      "source": "That is particularly important as vaccine roll-out has been initiated in several countries, and the studies about vaccine efficacy against the new variants are only in their infancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the pandemic response.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "3c1ac760-6d17-4d8d-83d0-d6a193ee8c3f",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C40",
+      "claim": "Studies about vaccine efficacy against the new SARS-CoV-2 variants are only in their infancy.",
+      "claim_type": "EXPLICIT",
+      "source": "That is particularly important as vaccine roll-out has been initiated in several countries, and the studies about vaccine efficacy against the new variants are only in their infancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the current state of research on vaccine efficacy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "3a2ac847-8b14-474b-8f18-255d6c1d42ec",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C41",
+      "claim": "qRT-PCR has been the most widely adopted nucleic-acid-based test for identifying coronavirus infected cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the diagnostic methods that have been employed for identifying coronavirus infected cases, qRT-PCR has been the most widely adopted nucleic-acid-based test due to its ability to identify even low copy numbers of viral RNA in patient samples and has been considered as a gold standard in diagnosis (Mackay, 2002; Carter et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about diagnostic methods with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "8a324150-6398-4e77-b29a-fb5d908c4549",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C42",
+      "claim": "qRT-PCR can identify even low copy numbers of viral RNA in patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the diagnostic methods that have been employed for identifying coronavirus infected cases, qRT-PCR has been the most widely adopted nucleic-acid-based test due to its ability to identify even low copy numbers of viral RNA in patient samples and has been considered as a gold standard in diagnosis (Mackay, 2002; Carter et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of qRT-PCR with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "337ca1be-628c-491a-8761-09cc8fe9f864",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C43",
+      "claim": "qRT-PCR has been considered as a gold standard in diagnosis for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the diagnostic methods that have been employed for identifying coronavirus infected cases, qRT-PCR has been the most widely adopted nucleic-acid-based test due to its ability to identify even low copy numbers of viral RNA in patient samples and has been considered as a gold standard in diagnosis (Mackay, 2002; Carter et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the status of qRT-PCR with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "c02d52cf-03d5-44cf-a28f-bb61f15f1993",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C44",
+      "claim": "Probe-based qRT PCR assays are generally not suited for genotyping point mutations associated with novel CoV2 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, probe-based qRT PCR assays rely on amplification of a target gene with real-time analysis of DNA copy numbers and are generally not suited for genotyping point mutations associated with novel CoV2 variants (Afzal, 2020; Yin, 2020; Vandenberg et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of qRT-PCR with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "98d09928-94cd-457d-9497-b41cd5d09e3d",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C45",
+      "claim": "ARMS-qPCR has been described in the literature for genotyping mutations in nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Although strategies such as Amplification Refractory Mutation System-quantitative PCR (ARMS-qPCR) have been described in the literature for genotyping mutations in nucleic acids, these require substantial design and validation for reproducible readouts and hence are not routinely used for clinical diagnosis (Little, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an existing method with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "e46855c4-8602-4f8e-b5d5-52513aa6e27f",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C46",
+      "claim": "ARMS-qPCR requires substantial design and validation for reproducible readouts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although strategies such as Amplification Refractory Mutation System-quantitative PCR (ARMS-qPCR) have been described in the literature for genotyping mutations in nucleic acids, these require substantial design and validation for reproducible readouts and hence are not routinely used for clinical diagnosis (Little, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of ARMS-qPCR with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "505d8866-7871-4452-90d9-1206b38a2332",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C47",
+      "claim": "ARMS-qPCR is not routinely used for clinical diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although strategies such as Amplification Refractory Mutation System-quantitative PCR (ARMS-qPCR) have been described in the literature for genotyping mutations in nucleic acids, these require substantial design and validation for reproducible readouts and hence are not routinely used for clinical diagnosis (Little, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the current usage status of ARMS-qPCR with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "e29d0b87-9583-48bd-9271-4d0356ad704c",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C48",
+      "claim": "Antigen-based SARS-CoV-2 assays have lower sensitivity than qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, antigen-based SARS-CoV-2 assays which have lower sensitivity than qPCR have not yet been reported to specifically identify mutant variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of antigen-based assays.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "ac2ac9e5-5e92-4469-b756-7e3b1e77a333",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C49",
+      "claim": "Antigen-based SARS-CoV-2 assays have not yet been reported to specifically identify mutant variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, antigen-based SARS-CoV-2 assays which have lower sensitivity than qPCR have not yet been reported to specifically identify mutant variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the current status of antigen-based assays.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "3adc03ed-c049-44e0-a09b-d4fcf949856e",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C50",
+      "claim": "Most countries have resorted to next-generation sequencing of patient samples for understanding the evolution of mutations in the virus and detecting variants in suspected individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of any true diagnostic test for the variants, most countries have resorted to next-generation sequencing of patient samples both for understanding the evolution of mutations in the virus as well as detecting the variants in suspected individuals (Vandenberg et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the current practice with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "39e8009f-7fc3-4556-b77c-dcaf4ddd22b5",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C51",
+      "claim": "Using sequencing for routine diagnosis greatly increases both the time and cost of identifying positive individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using sequencing for routine diagnosis greatly increases both the time and cost of identifying positive individuals (Jayamohan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of sequencing with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "7d771edd-a988-439f-94e5-a974e6d4c400",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C52",
+      "claim": "CRISPR diagnostics (CRISPRDx) have been documented for identifying CoV2 signatures in patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We and several others have documented the applicability of CRISPR diagnostics (CRISPRDx) for identifying CoV2 signatures in patient samples (Broughton et al., 2020; Patchsung et al., 2020; Ding et al., 2020; Joung et al., 2020; Fozouni et al., 2021; Guo et al., 2020; Lucia et al., 2020; Wang et al., 2021; Azhar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work with multiple supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "edf4045b-63b7-45a1-92a1-d8d8103d768b",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C53",
+      "claim": "The FELUDA platform for SARS-CoV-2 diagnosis has similar accuracy as the gold standard qPCR test.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Cas9 from Francisella novicida (FnCas9), we have recently reported the development of the FELUDA (FnCas9 Editor Linked Uniform Detection Assay) platform for SARS-CoV-2 diagnosis with similar accuracy as the gold standard qPCR test (Azhar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from prior work with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "37181678-7ccb-499e-a15d-c74625219b2a",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C54",
+      "claim": "The FELUDA assay is performed on a Lateral Flow strip and generates a visual readout within an hour.",
+      "claim_type": "EXPLICIT",
+      "source": "The assay which is performed on a Lateral Flow strip generates a visual readout within an hour that is quantifiable using a smartphone-based application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the FELUDA assay.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "6d5c9ac8-bad5-4bff-b3a0-3bfeb50a3e58",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C55",
+      "claim": "The FELUDA assay readout is quantifiable using a smartphone-based application.",
+      "claim_type": "EXPLICIT",
+      "source": "The assay which is performed on a Lateral Flow strip generates a visual readout within an hour that is quantifiable using a smartphone-based application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the FELUDA assay.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "754f702e-31b3-4ffa-9ce2-11b5ce3800a6",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C56",
+      "claim": "FnCas9 has a very high intrinsic specificity to point mismatches in the target.",
+      "claim_type": "EXPLICIT",
+      "source": "Since FnCas9 has a very high intrinsic specificity to point mismatches in the target (Acharya et al., 2019), we speculated that the enzyme can also be used for detecting SARS-CoV-2 variants on a paper strip with high accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of FnCas9 with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "14284bf0-f073-47c8-82d2-9d718b66d581",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C57",
+      "claim": "RAY can successfully detect both SARS-CoV-2 infection and the presence of the common N501Y mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "RAY can successfully detect both SARS-CoV-2 infection as well as the presence of the common N501Y mutation present across the majority of VOCs described so far and distinguish it from the parent CoV2 lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "cea072da-a1e5-4268-a0f1-ea02153f70b4",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C58",
+      "claim": "RAY can distinguish the N501Y mutation from the parent CoV2 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "RAY can successfully detect both SARS-CoV-2 infection as well as the presence of the common N501Y mutation present across the majority of VOCs described so far and distinguish it from the parent CoV2 lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "11a27a3b-0fc9-4900-8000-09917ffcc566",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C59",
+      "claim": "RAY can be employed as a primary surveillance method for isolating cases belonging to VOC groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it can be employed as a primary surveillance method for isolating cases belonging to these groups and can enable the initiation of appropriate management protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of RAY.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "f36a4c8d-a55f-4d15-a80b-9458a06ec916",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C60",
+      "claim": "FnCas9 is unable to bind or cleave targets having two mismatches at the 2nd and 6th position (PAM proximal) of the sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In an earlier study, we had successfully established that FnCas9 is unable to bind or cleave targets having two mismatches at the 2nd and 6th position (PAM proximal) of the sgRNA with respect to the target (Azhar et al., 2021; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from prior work with supporting citation and figure reference.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "bd2b20a3-965f-4efe-a11d-5c47170e1a44",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C61",
+      "claim": "FnCas9 is unable to bind or cleave targets having two mismatches at the 16th and 19th position (PAM distal).",
+      "claim_type": "EXPLICIT",
+      "source": "Through in vitro cleavage studies of a double-stranded DNA substrate, we identified that the same outcome is also observed when mismatches are present at the 16th and 19th position (PAM distal) (Figure 1A, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a new finding from in vitro cleavage studies with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "ce9f47c7-1f20-4132-b249-08f11e1b204b",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C62",
+      "claim": "Out of the 48 unique SNVs reported across all VOCs and VOIs, 19 SNVs can be targeted by RAY.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that out of the 48 unique SNVs reported across all the VOCs and VOIs reported so far (CDC, 2021), 19 SNVs (12 VOC-associated SNVs and 7 VOI-associated SNVs) can be targeted by RAY (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from analysis of reported SNVs with supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "17e45b45-8cb0-451a-ab41-49d45e20fd83",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C63",
+      "claim": "12 VOC-associated SNVs can be targeted by RAY.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that out of the 48 unique SNVs reported across all the VOCs and VOIs reported so far (CDC, 2021), 19 SNVs (12 VOC-associated SNVs and 7 VOI-associated SNVs) can be targeted by RAY (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from analysis with supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "7146e47e-3f9f-4250-bf7d-32a9466fb220",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C64",
+      "claim": "7 VOI-associated SNVs can be targeted by RAY.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that out of the 48 unique SNVs reported across all the VOCs and VOIs reported so far (CDC, 2021), 19 SNVs (12 VOC-associated SNVs and 7 VOI-associated SNVs) can be targeted by RAY (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from analysis with supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "22cdc055-7734-42a8-bd31-a9cd4bae9a35",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C65",
+      "claim": "Each VOC/VOI reported so far consists of at least one of the 19 SNVs targetable by RAY.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, each VOC/VOI reported so far consists of at least one of the 19 SNVs and can therefore be targeted by RAY design (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from analysis with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "b4644656-6bd0-4cec-a525-df988b965e02",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C66",
+      "claim": "N501Y is present across 3/5 of the VOCs (B.1.1.7, P.1, and B.1.351).",
+      "claim_type": "EXPLICIT",
+      "source": "Among these SNVs, N501Y is present across 3/5 of the VOCs (B.1.1.7, P.1, and B.1.351).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the N501Y mutation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "ec3efd43-5b8a-4a76-9cab-c8c793fe30a8",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C67",
+      "claim": "The N501Y mutation affects the receptor-binding domain of the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation affects the receptor-binding domain of the virus and is the subject of numerous studies analyzing the efficacy of vaccines against the mutated form of the virus (Cheng et al., 2021; Dejnirattisai et al., 2021; Ku et al., 2021; Luan et al., 2021; Naveca et al., 2021; Tian et al., 2021; Xie et al., 2021; Collier et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of N501Y with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "58845a43-256e-44c0-b466-dedc4cb508a5",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C68",
+      "claim": "The N501Y mutation is the subject of numerous studies analyzing the efficacy of vaccines against the mutated form of the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation affects the receptor-binding domain of the virus and is the subject of numerous studies analyzing the efficacy of vaccines against the mutated form of the virus (Cheng et al., 2021; Dejnirattisai et al., 2021; Ku et al., 2021; Luan et al., 2021; Naveca et al., 2021; Tian et al., 2021; Xie et al., 2021; Collier et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the current research focus with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "141fc788-6607-4baa-8293-bcf790221753",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C69",
+      "claim": "Catalytically active FnCas9 was able to successfully cleave the dsDNA substrate containing the N501Y mutation while leaving the WT sequence intact.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that catalytically active FnCas9 was able to successfully cleave the dsDNA substrate containing the N501Y mutation while leaving the WT sequence intact (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "0eef899f-d768-4440-9b57-19831f02232a",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C70",
+      "claim": "The RAY approach for variant identification can be performed using a stand-alone or portable electrophoresis apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "We established that this approach for variant identification can be performed using a stand-alone or portable electrophoresis apparatus leading to a turnaround time of about 1.5 hr from RNA to read-out (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a characteristic of the method with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "1947bfa3-8c43-41f0-8de9-1d786fcc463c",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C71",
+      "claim": "The electrophoresis-based RAY has a turnaround time of about 1.5 hr from RNA to read-out.",
+      "claim_type": "EXPLICIT",
+      "source": "We established that this approach for variant identification can be performed using a stand-alone or portable electrophoresis apparatus leading to a turnaround time of about 1.5 hr from RNA to read-out (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a performance metric with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "59ca570e-df60-49b8-bdf2-a46556a6829e",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C72",
+      "claim": "Dye-based systems have inherent low sensitivity and cannot be used for routine diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, dye-based systems have inherent low sensitivity and cannot be used for routine diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of dye-based detection systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "5110802f-e0e4-47e1-a762-a33de73d2374",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C73",
+      "claim": "A catalytically inactive (dead) FnCas9 can be used to accurately identify the presence of SARS-CoV-2 RNA in patient samples using a lateral flow assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In an earlier study, we had reported that using a lateral flow assay, a catalytically inactive (dead) FnCas9 generated by mutating the RuvC and HNH domains can be used to accurately identify the presence of SARS-CoV-2 RNA in patient samples (Azhar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from prior work with supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "96db7f0d-9e35-468b-92f5-3017b5903fed",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C74",
+      "claim": "An amplicon of 580 bp gave a clear discernible signal distinguishing the N501Y mutation over the WT sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the four amplicon sizes that we investigated, an amplicon of 580 bp gave a clear discernible signal distinguishing the N501Y mutation over the WT sample (Figure 3A, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "caa647c4-9755-4227-bc12-8c3126574955",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C75",
+      "claim": "RAY was able to correctly identify the variant signature in all eight samples that harbored the N501Y mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "RAY was able to correctly identify the variant signature in all eight samples that harbored the mutation (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental result with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "c1ab1fa8-ce5c-4d0d-b14d-f1c30dd9c896",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C76",
+      "claim": "Samples with low viral load (qRT-PCR Ct >25) showed a comparatively faint band in single amplicon RAY.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, samples with low viral load (qRT-PCR Ct >25) showed a comparatively faint band (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from experiments with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "2429af0f-20df-4f40-be1e-73201b710f5c",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C77",
+      "claim": "RAY correctly classified all eight WT samples where neither the N501Y mutation nor any other lineage variants were present.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, RAY correctly classified all eight WT samples where neither the N501Y mutation nor any other lineage variants were present as seen by either an absence of a distinct band or an extremely faint band in the test line (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental result with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "bb5e4dce-b865-41ac-aaa4-753cfcab3b7c",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C78",
+      "claim": "RAY identified all confirmed COVID-19-negative samples (12) tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, RAY identified all confirmed COVID-19-negative samples (12) tested simultaneously (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental result with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "632f6a8d-243a-49ec-96ed-6451fd3bd788",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C79",
+      "claim": "TOPSE is a smartphone-based application that generates a band intensity score from a lateral flow strip.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, we used TOPSE (True Outcome Predicted via Strip Evaluation), a smartphone-based application to generate a band intensity score from a lateral flow strip to eliminate bias that can result from visual estimation (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a tool used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "90b1ddd7-c2e0-4ab5-845f-ae74d3e136c6",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C80",
+      "claim": "Double biotinylation increased the test band intensity for the 580 bp amplicon by 1.5 times compared to single biotin-labeled amplicon.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that upon double biotinylation the test band intensity for the 580 bp amplicon was 1.5 times higher than single biotin-labeled amplicon (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "96caf18f-df5e-46f4-913a-0092df0fb0c6",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C81",
+      "claim": "Amplicons with shorter lengths had higher band intensities within the same sample.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase the band intensity further, we reduced the length of the PCR amplicon containing the N501Y mutation and found that within the same sample, amplicons with shorter lengths had higher band intensities (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "54a41822-7dd3-4e2b-b9c3-d38929a4f187",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C82",
+      "claim": "With an amplicon size of 149 bp, a clearly discernible background-corrected signal intensity could be achieved in the mutant sample over the WT sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, with an amplicon size of 149 bp, a clearly discernible background-corrected signal intensity could be achieved in the mutant sample over the WT sample (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "793a480a-c520-406e-9746-b3751e1a6cbc",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C83",
+      "claim": "The double amplicon RAY assay has a reduced overall time for completion (55 min) compared to single amplicon RAY (75 min).",
+      "claim_type": "EXPLICIT",
+      "source": "The double amplicon RAY assay results in shorter products and lower overall time for completion, starting from RNA samples while compared to a single amplicon RAY (reduced to 55 min from 75 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a performance improvement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "9aa07c9f-16d6-4782-9667-cf29c6075752",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C84",
+      "claim": "RAY was able to give a clearly discernible SN501Y sgRNA signal that was at least 5.5 times higher than that of the WT sample up to a Ct value of 34.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that RAY was able to give a clearly discernible SN501Y sgRNA signal that was at least 5.5 times higher than that of the WT sample up to a Ct value of 34.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding from sensitivity testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "cc11fd64-fdd2-4878-9fab-8f06fbe7c123",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C85",
+      "claim": "RAY is sufficiently sensitive in detecting the N501Y VOC in a sample with only a few copies of the virus and is comparable to other sequencing platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, RAY is sufficiently sensitive in detecting the N501Y VOC in a sample with only a few copies of the virus and is comparable to other sequencing platforms (Klempt et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from sensitivity testing with supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "02a32051-c048-4500-b333-200a798e49ed",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C86",
+      "claim": "SN501Y was able to detect 36/37 WT samples in the validation study.",
+      "claim_type": "EXPLICIT",
+      "source": "With a single run of the assay, SN501Y was able to detect 36/37 WT samples and 19/22 N501Y samples corresponding to a sensitivity of 86% and a specificity of 97% across all ranges of Ct values (Figure 4F, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from the validation study with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "c95d3925-ddbd-4286-9fd5-f0f676554b5d",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C87",
+      "claim": "SN501Y was able to detect 19/22 N501Y samples in the validation study.",
+      "claim_type": "EXPLICIT",
+      "source": "With a single run of the assay, SN501Y was able to detect 36/37 WT samples and 19/22 N501Y samples corresponding to a sensitivity of 86% and a specificity of 97% across all ranges of Ct values (Figure 4F, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from the validation study with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "361dd8a9-7834-4276-b9d0-19fd76078b8d",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C88",
+      "claim": "Amplicons containing the E484K mutation do not show cross-reactivity with the N501Y sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, amplicons containing the E484K mutation do not show cross-reactivity with the N501Y sgRNA, highlighting the specificity of the assay between variants (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "8e42b492-6850-4521-adf9-4af0d6a87488",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C89",
+      "claim": "Synthetic sgRNA containing a phosphorothioate backbone modification leads to higher stability and greater band intensity when compared to in vitro synthesized sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as seen in our earlier study, synthetic sgRNA containing a phosphorothioate backbone modification leads to higher stability and greater band intensity when compared to in vitro synthesized sgRNAs (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding consistent with prior work with figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "3dc6c367-e11a-43bd-8921-0d8c4f070be4",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C90",
+      "claim": "Deep-sequencing of patient samples is being routinely done by health authorities in various countries to track and isolate cases containing the SARS-CoV-2 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, deep-sequencing of patient samples is being routinely done by health authorities in various countries to track and isolate cases containing the SARS-CoV-2 variants (Meredith et al., 2020; Oude Munnink et al., 2020; McNamara et al., 2020; Rockett et al., 2020; Bhoyar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current practice with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "c143f091-6255-45cc-9f33-8bcbfd4f8e40",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C91",
+      "claim": "The accuracy of variant calling in any sequencing platform is dependent on the very high quality and coverage of reads to the reference genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of variant calling in any sequencing platform is dependent on the very high quality and coverage of reads to the reference genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of sequencing platforms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "c56df0f9-f1dc-49fa-94d4-530a3a547f31",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C92",
+      "claim": "Low viral titres can be missed out during sequencing assays for variant calling.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the process from sample to sequence consists of multiple steps, low viral titres can be missed out during sequencing assays for variant calling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of sequencing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "2ec91ace-c8f8-42da-a4cb-6414f673684b",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C93",
+      "claim": "The RAY pipeline is reproducible across a wide range of viral titres tested.",
+      "claim_type": "EXPLICIT",
+      "source": "The RAY pipeline uses an amplification step followed by enzymatic binding and is reproducible across a wide range of viral titres tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of RAY based on experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "278a6ed1-d7c2-4c1e-b867-dcf8b227448b",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C94",
+      "claim": "Sequencing COVID-19 samples generates cumulative information about all mutations co-existing in a given variant.",
+      "claim_type": "EXPLICIT",
+      "source": "The main advantage of sequencing COVID-19 samples is the generation of cumulative information about all mutations co-existing in a given variant (Chiu and Miller, 2019 and Vandenberg et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of sequencing with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "b2c892cf-d073-4e90-8b66-2f8757022033",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C95",
+      "claim": "RAY can identify only known VOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "RAY can identify only known VOCs and is therefore useful as a diagnostic tool for the early detection of variant signatures in a sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of RAY.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "31f41c49-4bc0-4e80-bb8a-30b17b78fa80",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C96",
+      "claim": "Identifying a WT sample rapidly through RAY negates the necessity of sequencing such a sample thereby reducing the cost of the associated sequencing exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, identifying a WT sample rapidly through RAY negates the necessity of sequencing such a sample thereby reducing the cost of the associated sequencing exercise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit of using RAY.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "6e659ce8-a95e-416e-acb5-9a7a177126fc",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C97",
+      "claim": "In the current format (lateral flow assay), RAY has limitations in multiplexing several VOC candidates in a single assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current format (lateral flow assay), RAY has limitations in multiplexing several VOC candidates in a single assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the current RAY format.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "ec98684b-964b-4e55-be80-397ea2cefdc6",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C98",
+      "claim": "Longer amplicons showed a drop in sensitivity probably due to reduced PCR efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Although longer amplicons can be used to identify multiple mutations that appear close to each other, we observed a drop in sensitivity probably due to reduced PCR efficiency for longer amplicons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments with a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "b49f39d1-0ab9-42ec-b3cd-d182b7116531",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C99",
+      "claim": "The necessity of an NGG PAM at a fixed position away from the position of the target mutation limits the total number of targets that RAY can identify.",
+      "claim_type": "EXPLICIT",
+      "source": "The necessity of an NGG PAM at a fixed position away from the position of the target mutation limits the total number of targets that RAY can identify.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of RAY.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "0547a478-95a3-4376-8893-3bfff4b46661",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C100",
+      "claim": "A typical deep sequencing cost per sample is several orders of magnitude higher than RAY (which costs ~7 USD per sample).",
+      "claim_type": "EXPLICIT",
+      "source": "A typical deep sequencing cost per sample is several orders of magnitude higher than RAY (which costs ~7 USD per sample, Supplementary file 3) and the minimum turnaround time for sequencing is 36 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a cost comparison with supporting supplementary file reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "929c8533-eadb-4e1e-a46a-4dc0749c2bc3",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C101",
+      "claim": "The minimum turnaround time for sequencing is 36 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "A typical deep sequencing cost per sample is several orders of magnitude higher than RAY (which costs ~7 USD per sample, Supplementary file 3) and the minimum turnaround time for sequencing is 36 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of sequencing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "33c53189-b17d-4d57-bfa7-b9cecc407477",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C102",
+      "claim": "Sequencing runs are generally done on pooled samples to save on cost, workforce, and machine time.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, sequencing runs are generally done on pooled samples to save on cost, workforce, and machine time, all of which necessitate the advent of alternate solutions that can identify variants through a simple pipeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of sequencing practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "cb111ede-c5db-46f4-960b-0905990bc75b",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C103",
+      "claim": "RAY is scalable to any number of samples at a given time.",
+      "claim_type": "EXPLICIT",
+      "source": "RAY -on the contrary- is scalable to any number of samples at a given time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of RAY.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "12ca3368-e61a-4eba-a9d1-357d07cbc58a",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C104",
+      "claim": "Sequencing generates a large amount of data and requires physical storage and high-performance computing methodologies to record, analyze and interpret the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing also generates a large amount of data and requires physical storage and high-performance computing methodologies to record, analyze and interpret the data (Chiu and Miller, 2019 and Vandenberg et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of sequencing with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "e55fdba6-518d-4557-b8ea-968f12b2e429",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C105",
+      "claim": "Sequencing requires dedicated personnel with a substantial understanding of sequence analysis and programming skills for identifying variants within reads.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, dedicated personnel with a substantial understanding of sequence analysis and programming skills are necessary for identifying variants within reads generated from a sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for sequencing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "765ad316-a65d-4f41-8069-f8981f666cd0",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C106",
+      "claim": "RAY uses a visual readout on a paper strip leading to a binary decision about the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, RAY uses a visual readout on a paper strip leading to a binary decision about the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of RAY.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "889f3f40-6dd9-4350-a333-95429d434883",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C107",
+      "claim": "The automated image acquisition and recording through a smartphone app allows operators with a minimum skill set to process samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The automated image acquisition and recording through a smartphone app allows operators with a minimum skill set to process samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of RAY.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "55f5f7de-d293-4c0c-ab02-87ec49e77bcb",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C108",
+      "claim": "First-generation vaccines against SARS-CoV-2 have been developed against the parent strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the rise and spread of mutated lineages of the virus in multiple countries, it is imperative to develop technologies that can quickly and accurately detect these variants. Since the first-generation vaccines against SARS-CoV-2 have been developed against the parent strain, careful assessment of the variant lineages and their response to the vaccine will become imperative during the course of the pandemic (Fontanet et al., 2021; Walensky et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about vaccine development with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "ad4db802-5d15-4ea0-a22c-e02e02e05b96",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C109",
+      "claim": "Careful assessment of the variant lineages and their response to the vaccine will become imperative during the course of the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the first-generation vaccines against SARS-CoV-2 have been developed against the parent strain, careful assessment of the variant lineages and their response to the vaccine will become imperative during the course of the pandemic (Fontanet et al., 2021; Walensky et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future need with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "16e30c04-ec95-4753-982c-10033aef6927",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "claim_id": "C110",
+      "claim": "The E484K mutation has been associated with high transmissibility and the possibility of reinfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, the E484K mutation has been associated with high transmissibility and the possibility of reinfection (Weisblum et al., 2020; Xie et al., 2021; Collier et al., 2021; Wibmer et al., 2021; Annavajhala et al., 2021; Resende et al., 2021; Nonaka et al., 2021; Naveca et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of E484K with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "45940af4-84f3-45ab-8f1c-914218415b9a",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "FnCas9 is unable to bind or cleave DNA targets containing two mismatches at either the 2nd and 6th positions (PAM proximal) or the 16th and 19th positions (PAM distal) of the sgRNA. This mismatch specificity forms the mechanistic basis for the RAY variant detection strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 provide the fundamental mechanistic principle underlying RAY. C60 cites prior work establishing PAM-proximal specificity, while C61 presents new in vitro cleavage data extending this to PAM-distal positions. The experimental evidence with figure references supports this foundational result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "80a480eb-9e2d-4635-9a6e-2ad5ed24afea",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Computational analysis of 48 unique SNVs across all reported VOCs and VOIs identified that 19 SNVs (12 VOC-associated and 7 VOI-associated) can be targeted by RAY design. Each VOC/VOI contains at least one targetable SNV, with N501Y present in 3/5 VOCs (B.1.1.7, P.1, and B.1.351).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 describe a systematic computational analysis with clear quantitative results and CDC citation. The finding that every VOC/VOI has at least one targetable SNV is important for establishing RAY's broad applicability. The data appears sound and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "c12ee16c-4a06-46b5-8c4c-549e0e48bd2a",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Catalytically active FnCas9 successfully cleaved dsDNA substrates containing the N501Y mutation while leaving wild-type sequences intact, enabling variant discrimination via electrophoresis with a turnaround time of approximately 1.5 hours from RNA to readout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 demonstrate proof-of-concept for N501Y detection using electrophoresis. The experimental data with figure references shows clear discrimination between mutant and wild-type samples. However, C72 notes this approach has inherent low sensitivity, limiting its clinical utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "0daf6aca-2d9d-4cd3-ac00-1d2eb36ca0cd",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single amplicon RAY (580 bp) correctly identified N501Y variants in all 8 mutant patient samples and correctly classified all 8 wild-type and 12 COVID-19-negative samples. However, samples with low viral load (Ct >25) showed comparatively faint bands, indicating sensitivity limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 present initial patient sample validation with clear outcomes. The assay showed 100% accuracy in this small cohort but revealed sensitivity issues with low viral loads (C76), prompting further optimization. The sample sizes are small (n=8 per group) but results are clearly documented with figure references.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "cdd4e5bd-392c-4cff-863b-8b766cd16810",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Double amplicon RAY with double biotinylation and shorter amplicons (149 bp for N501Y, 287 bp for WT control) achieved 87% sensitivity and 97% specificity when validated on 59 patient samples (37 wild-type, 22 N501Y mutant) with turnaround time reduced to 55 minutes. The assay detected N501Y with signal 5.5-fold higher than wild-type up to Ct value 34.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C87 and C13-C16 describe systematic optimization and comprehensive validation. The sensitivity (19/22 mutants detected) and specificity (36/37 wild-types correctly identified) are clearly stated with sample sizes. The optimization steps (double biotinylation, shorter amplicons) are well-documented with quantitative improvements. This represents the main validated diagnostic result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "474d8cac-937e-4a14-b608-26c83188fa60",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RAY design was successfully adapted to detect E484K and T716I mutations in patient samples, with no cross-reactivity observed between N501Y and E484K sgRNAs, demonstrating the platform's adaptability to multiple clinically relevant mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 and C88 demonstrate adaptability with experimental validation on patient samples for E484K and T716I. C110 provides context for E484K's clinical significance. The specificity data (C88) showing no cross-reactivity strengthens confidence in the approach. However, the extent of validation for E484K and T716I appears more limited than for N501Y.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "d56f5487-cfb9-42ae-a519-679170c4df34",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Synthetic sgRNA with phosphorothioate backbone modification showed higher stability and greater band intensity compared to in vitro synthesized sgRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 presents a technical optimization with experimental data and figure reference. This is consistent with prior work cited and represents a methodological improvement for assay performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "cf1de117-cea2-4467-b213-88a0d97e6280",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Current diagnostic approaches have significant limitations: qRT-PCR cannot genotype point mutations (C5, C44), sequencing is expensive (C6, C100: several orders of magnitude more than RAY's ~$7/sample), has long turnaround times (C7, C101: minimum 36 hours), requires high viral loads (C8, C92), pooled sample processing (C102), and specialized computational expertise (C104-C105).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8, C44, C50-C51, C90-C92, C100-C102, C104-C105 establish the diagnostic gap that RAY addresses. These are well-supported by citations and represent established knowledge about current methods' limitations. The cost comparison (C100) includes specific data from supplementary files.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "8b27c658-bd0b-433c-a0c4-e8b71d7d90a0",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RAY has several advantages over sequencing: reproducible across wide viral titre ranges (C93), scalable to any number of samples (C103), visual readout requiring minimal operator skill (C106-C107), and can rapidly exclude wild-type samples from sequencing (C96). However, RAY has limitations including inability to detect unknown variants (C95), multiplexing constraints in lateral flow format (C97), reduced sensitivity with longer amplicons (C98), and PAM sequence requirements limiting targetable mutations (C99).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C99, C103, C106-C107 provide balanced assessment of RAY's advantages and limitations. The advantages are supported by experimental data (C93) and logical inference from the assay design. The limitations are honestly acknowledged by the authors and represent important caveats for clinical implementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "92cafa82-2caf-4589-9695-2e885e1286be",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study developed RAY, a lateral flow assay leveraging FnCas9's high specificity for mismatch detection, that can simultaneously detect SARS-CoV-2 infection and distinguish the N501Y mutation from wild-type virus, enabling its use as a primary surveillance method for VOC identification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C56-C59 state the main conceptual advance and application. These are supported by the experimental validation data (C13-C16, C86-C87) showing the assay works as claimed. C59 represents a reasonable inference about potential application based on the demonstrated performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    },
+    {
+      "id": "7849331d-add5-41d0-a5a6-dc5d8ea7f97d",
+      "content_id": "cce1917b-8032-49c1-9f5d-ca57690a1ac7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "N501Y mutation, present in 3/5 VOCs (B.1.1.7, P.1, B.1.351), affects the receptor-binding domain and can be detected within one hour using RAY lateral flow chemistry, making it a clinically relevant target for variant surveillance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 and C66-C68 establish N501Y as the primary target with clear rationale. The one-hour detection time (C12) is supported by experimental data. The clinical significance (C67-C68) is well-cited, justifying the focus on this mutation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:07:13.556280Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f36a4c8d-a55f-4d15-a80b-9458a06ec916",
+      "result_id": "45940af4-84f3-45ab-8f1c-914218415b9a"
+    },
+    {
+      "claim_id": "bd2b20a3-965f-4efe-a11d-5c47170e1a44",
+      "result_id": "45940af4-84f3-45ab-8f1c-914218415b9a"
+    },
+    {
+      "claim_id": "ce9f47c7-1f20-4132-b249-08f11e1b204b",
+      "result_id": "80a480eb-9e2d-4635-9a6e-2ad5ed24afea"
+    },
+    {
+      "claim_id": "17e45b45-8cb0-451a-ab41-49d45e20fd83",
+      "result_id": "80a480eb-9e2d-4635-9a6e-2ad5ed24afea"
+    },
+    {
+      "claim_id": "7146e47e-3f9f-4250-bf7d-32a9466fb220",
+      "result_id": "80a480eb-9e2d-4635-9a6e-2ad5ed24afea"
+    },
+    {
+      "claim_id": "22cdc055-7734-42a8-bd31-a9cd4bae9a35",
+      "result_id": "80a480eb-9e2d-4635-9a6e-2ad5ed24afea"
+    },
+    {
+      "claim_id": "b4644656-6bd0-4cec-a525-df988b965e02",
+      "result_id": "80a480eb-9e2d-4635-9a6e-2ad5ed24afea"
+    },
+    {
+      "claim_id": "141fc788-6607-4baa-8293-bcf790221753",
+      "result_id": "c12ee16c-4a06-46b5-8c4c-549e0e48bd2a"
+    },
+    {
+      "claim_id": "0eef899f-d768-4440-9b57-19831f02232a",
+      "result_id": "c12ee16c-4a06-46b5-8c4c-549e0e48bd2a"
+    },
+    {
+      "claim_id": "1947bfa3-8c43-41f0-8de9-1d786fcc463c",
+      "result_id": "c12ee16c-4a06-46b5-8c4c-549e0e48bd2a"
+    },
+    {
+      "claim_id": "96db7f0d-9e35-468b-92f5-3017b5903fed",
+      "result_id": "0daf6aca-2d9d-4cd3-ac00-1d2eb36ca0cd"
+    },
+    {
+      "claim_id": "caa647c4-9755-4227-bc12-8c3126574955",
+      "result_id": "0daf6aca-2d9d-4cd3-ac00-1d2eb36ca0cd"
+    },
+    {
+      "claim_id": "c1ab1fa8-ce5c-4d0d-b14d-f1c30dd9c896",
+      "result_id": "0daf6aca-2d9d-4cd3-ac00-1d2eb36ca0cd"
+    },
+    {
+      "claim_id": "2429af0f-20df-4f40-be1e-73201b710f5c",
+      "result_id": "0daf6aca-2d9d-4cd3-ac00-1d2eb36ca0cd"
+    },
+    {
+      "claim_id": "bb5e4dce-b865-41ac-aaa4-753cfcab3b7c",
+      "result_id": "0daf6aca-2d9d-4cd3-ac00-1d2eb36ca0cd"
+    },
+    {
+      "claim_id": "90b1ddd7-c2e0-4ab5-845f-ae74d3e136c6",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "96caf18f-df5e-46f4-913a-0092df0fb0c6",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "54a41822-7dd3-4e2b-b9c3-d38929a4f187",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "793a480a-c520-406e-9746-b3751e1a6cbc",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "9aa07c9f-16d6-4782-9667-cf29c6075752",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "cc11fd64-fdd2-4878-9fab-8f06fbe7c123",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "02a32051-c048-4500-b333-200a798e49ed",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "c95d3925-ddbd-4286-9fd5-f0f676554b5d",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "8f0501b7-460b-4589-9345-c4d02cfc3b04",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "c6d06c5b-5410-4661-b788-91c0fd9439c4",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "9df82b18-04bd-4b18-b684-9712ec642018",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "c38e5704-1dd1-453a-ac30-bb2174ab9ce2",
+      "result_id": "cdd4e5bd-392c-4cff-863b-8b766cd16810"
+    },
+    {
+      "claim_id": "3c4abb8e-6f43-4649-96dc-3fcffc119bf7",
+      "result_id": "474d8cac-937e-4a14-b608-26c83188fa60"
+    },
+    {
+      "claim_id": "11d8185a-ca11-440a-a395-9a8ad9efca3e",
+      "result_id": "474d8cac-937e-4a14-b608-26c83188fa60"
+    },
+    {
+      "claim_id": "361dd8a9-7834-4276-b9d0-19fd76078b8d",
+      "result_id": "474d8cac-937e-4a14-b608-26c83188fa60"
+    },
+    {
+      "claim_id": "16e30c04-ec95-4753-982c-10033aef6927",
+      "result_id": "474d8cac-937e-4a14-b608-26c83188fa60"
+    },
+    {
+      "claim_id": "8e42b492-6850-4521-adf9-4af0d6a87488",
+      "result_id": "d56f5487-cfb9-42ae-a519-679170c4df34"
+    },
+    {
+      "claim_id": "52999670-6ae1-4234-b439-9649ec3e047a",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "db430d63-4a50-4acf-b10f-9ea7e522ebb3",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "7fd056fa-ca86-42c1-b814-b55ac1b337e2",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "6386fa5b-54d9-4197-a3d7-569313c6a99d",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "c02d52cf-03d5-44cf-a28f-bb61f15f1993",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "3adc03ed-c049-44e0-a09b-d4fcf949856e",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "39e8009f-7fc3-4556-b77c-dcaf4ddd22b5",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "3dc6c367-e11a-43bd-8921-0d8c4f070be4",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "c143f091-6255-45cc-9f33-8bcbfd4f8e40",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "c56df0f9-f1dc-49fa-94d4-530a3a547f31",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "0547a478-95a3-4376-8893-3bfff4b46661",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "929c8533-eadb-4e1e-a46a-4dc0749c2bc3",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "33c53189-b17d-4d57-bfa7-b9cecc407477",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "12ca3368-e61a-4eba-a9d1-357d07cbc58a",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "e55fdba6-518d-4557-b8ea-968f12b2e429",
+      "result_id": "cf1de117-cea2-4467-b213-88a0d97e6280"
+    },
+    {
+      "claim_id": "2ec91ace-c8f8-42da-a4cb-6414f673684b",
+      "result_id": "8b27c658-bd0b-433c-a0c4-e8b71d7d90a0"
+    },
+    {
+      "claim_id": "b2c892cf-d073-4e90-8b66-2f8757022033",
+      "result_id": "8b27c658-bd0b-433c-a0c4-e8b71d7d90a0"
+    },
+    {
+      "claim_id": "31f41c49-4bc0-4e80-bb8a-30b17b78fa80",
+      "result_id": "8b27c658-bd0b-433c-a0c4-e8b71d7d90a0"
+    },
+    {
+      "claim_id": "6e659ce8-a95e-416e-acb5-9a7a177126fc",
+      "result_id": "8b27c658-bd0b-433c-a0c4-e8b71d7d90a0"
+    },
+    {
+      "claim_id": "ec98684b-964b-4e55-be80-397ea2cefdc6",
+      "result_id": "8b27c658-bd0b-433c-a0c4-e8b71d7d90a0"
+    },
+    {
+      "claim_id": "b49f39d1-0ab9-42ec-b3cd-d182b7116531",
+      "result_id": "8b27c658-bd0b-433c-a0c4-e8b71d7d90a0"
+    },
+    {
+      "claim_id": "cb111ede-c5db-46f4-960b-0905990bc75b",
+      "result_id": "8b27c658-bd0b-433c-a0c4-e8b71d7d90a0"
+    },
+    {
+      "claim_id": "765ad316-a65d-4f41-8069-f8981f666cd0",
+      "result_id": "8b27c658-bd0b-433c-a0c4-e8b71d7d90a0"
+    },
+    {
+      "claim_id": "889f3f40-6dd9-4350-a333-95429d434883",
+      "result_id": "8b27c658-bd0b-433c-a0c4-e8b71d7d90a0"
+    },
+    {
+      "claim_id": "a0a615d9-e794-49d4-b77b-5dc202137125",
+      "result_id": "92cafa82-2caf-4589-9695-2e885e1286be"
+    },
+    {
+      "claim_id": "02b0f5ab-5340-4880-854f-a856a22cee57",
+      "result_id": "92cafa82-2caf-4589-9695-2e885e1286be"
+    },
+    {
+      "claim_id": "754f702e-31b3-4ffa-9ce2-11b5ce3800a6",
+      "result_id": "92cafa82-2caf-4589-9695-2e885e1286be"
+    },
+    {
+      "claim_id": "14284bf0-f073-47c8-82d2-9d718b66d581",
+      "result_id": "92cafa82-2caf-4589-9695-2e885e1286be"
+    },
+    {
+      "claim_id": "cea072da-a1e5-4268-a0f1-ea02153f70b4",
+      "result_id": "92cafa82-2caf-4589-9695-2e885e1286be"
+    },
+    {
+      "claim_id": "11a27a3b-0fc9-4900-8000-09917ffcc566",
+      "result_id": "92cafa82-2caf-4589-9695-2e885e1286be"
+    },
+    {
+      "claim_id": "a353985d-485d-4a59-be09-c066bcbb4f89",
+      "result_id": "7849331d-add5-41d0-a5a6-dc5d8ea7f97d"
+    },
+    {
+      "claim_id": "35b305c5-c1e6-431f-a246-112997a1f3fe",
+      "result_id": "7849331d-add5-41d0-a5a6-dc5d8ea7f97d"
+    },
+    {
+      "claim_id": "b4644656-6bd0-4cec-a525-df988b965e02",
+      "result_id": "7849331d-add5-41d0-a5a6-dc5d8ea7f97d"
+    },
+    {
+      "claim_id": "ec3efd43-5b8a-4a76-9cab-c8c793fe30a8",
+      "result_id": "7849331d-add5-41d0-a5a6-dc5d8ea7f97d"
+    },
+    {
+      "claim_id": "58845a43-256e-44c0-b466-dedc4cb508a5",
+      "result_id": "7849331d-add5-41d0-a5a6-dc5d8ea7f97d"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Loss of Bmal1 in adult skeletal muscle alters titin splicing in the proximal Ig region (exons 52-88), resulting in a shift from predominantly short titin isoforms to a mixture of short and long isoforms. This was demonstrated using SDS-VAGE, RNAseq showing increased PSI of exons 52-88, and LC-MS confirming increased peptide abundance from exons 70-79 and 80-88, with no change in total titin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27, C34-C43 provide converging evidence from three independent methods (SDS-VAGE, RNAseq, LC-MS) demonstrating altered titin splicing in iMSBmal1-/- muscle. The LC-MS data (C39-C43) directly validates the RNAseq findings (C36-C38) at the protein level, providing strong support for the conclusion. Statistical significance is reported for all key findings (p<0.05 or better).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "iMSBmal1-/- skeletal muscle exhibits sarcomere length heterogeneity without a change in mean sarcomere length. The increased variability in sarcomere length (F=22.12, p<0.05) is associated with longer proximal Ig domain lengths (229.5\u00b11.357 nm in iMSBmal1-/- vs 182.4\u00b11.388 nm in controls, p<0.0001), which accounts for the observed sarcomere length differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28, C44-C50 demonstrate sarcomere length heterogeneity using immunohistochemistry with appropriate statistical tests (F-test for variance, t-test for means). The correlation between proximal Ig domain length and sarcomere length is well-supported by epitope-specific antibody measurements (C47-C49). However, C50 notes that variance in proximal Ig domain length was not significantly different, which somewhat contradicts the heterogeneity claim but may reflect measurement limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C82"
+    ],
+    "result": "Direct manipulation of titin's proximal Ig domain using U7 snRNPs to induce exon skipping (exons 52-88) in C2C12 myotubes results in shorter sarcomeres (2.387\u00b10.0347 \u00b5m vs 2.756\u00b10.0495 \u00b5m in controls, p<0.0001) and shorter proximal Ig domains (285.1\u00b13.131 nm vs 448.0\u00b13.368 nm, p<0.0001), demonstrating that changes to this titin region can directly alter sarcomere length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C82 provide strong causal evidence linking titin proximal Ig domain length to sarcomere length through direct manipulation using U7 snRNPs. The in vitro system allows for controlled testing of the hypothesis without confounding factors from the Bmal1 knockout. Statistical significance is robust (p<0.0001) with adequate sample sizes (100-200 sarcomeres/two biological replicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C80",
+      "C81"
+    ],
+    "result": "The skeletal muscle molecular clock regulates Rbm20 expression through direct transcriptional regulation. BMAL1, CLOCK, and MYOD1 bind to a conserved enhancer element in Rbm20 intron 1 (confirmed by ChIP-seq and ChIP-PCR), and this enhancer drives a 255-fold increase in luciferase activity with clock factor overexpression. Rbm20 mRNA and protein are reduced by 34% and 46% respectively in iMSBmal1-/- muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30, C58-C64, C80-C81 provide multiple lines of evidence for clock regulation of Rbm20: reduced expression in knockout mice (C58-C59), direct binding of clock factors to Rbm20 regulatory regions (C60-C62), and functional validation via luciferase assays (C63-C64). The enhancer element is conserved and contains canonical E-box sequences. The 9.8-fold difference between enhancer-containing and promoter-only constructs (C64) demonstrates enhancer-specific activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Environmental circadian rhythm disruption using a chronic phase advance (CPA) model results in reduced Rbm20 expression in wildtype mice. Rbm20 expression showed significant time-of-day variation under normal conditions and was depressed in CPA mice, particularly at CT30 in quadriceps muscle. TA muscle showed a similar trend but did not reach significance (p=0.09).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33, C65-C67 demonstrate that circadian disruption affects Rbm20 expression independent of genetic manipulation. The significant reduction in quadriceps (C66) supports the conclusion, though the non-significant trend in TA muscle (C67, p=0.09) suggests muscle-specific differences or insufficient power. The use of two time points (CT30 and CT42) strengthens the interpretation of circadian regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83"
+    ],
+    "result": "AAV-mediated overexpression of RBM20 in iMSBmal1-/- muscle partially rescues titin isoform expression. RBM20 overexpression (2.8-fold mRNA, 2-fold protein) significantly reduced the long titin isoform (p<0.05) and decreased inclusion of exons 70-88 at both RNA and protein levels. However, exons 52-69 showed only modest changes, indicating incomplete rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C68-C79, C83 provide gain-of-function evidence that RBM20 is a key mediator of titin splicing downstream of the clock. The partial rescue (significant for exons 70-88 but not 52-69) suggests RBM20 is necessary but not sufficient for complete regulation, or that other factors also regulate exons 52-69. The convergence of SDS-VAGE, RNAseq, LC-MS, and IHC data (C78-C79) strengthens the conclusion despite incomplete rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C31"
+    ],
+    "result": "RBM20 is a well-characterized RNA-binding protein that acts as a splicing repressor of titin pre-mRNA. When present at high levels, RBM20 binds titin pre-mRNA and induces large exon-skipping events, resulting in shorter titin proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C31 describe established knowledge about RBM20 function supported by multiple citations (Guo et al., 2012; Li et al., 2013; Maatz et al., 2014). This provides the mechanistic framework for interpreting the experimental findings. The characterization is consistent with the observed phenotype where reduced RBM20 leads to longer titin isoforms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Titin is the largest known protein, spanning from Z-line to M-line in the sarcomere, functioning as a structural backbone and contributing to force generation. The I-band region, composed of Ig repeats and PEVK domain, acts as a viscoelastic spring and undergoes extensive alternative splicing that affects titin length and muscle function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 describe well-established knowledge about titin structure and function, supported by multiple citations (Freundt and Linke, 2019; Brynnel et al., 2018; Mijailovich et al., 2019; Guo et al., 2010, 2012; Li et al., 2013). This background information is essential for contextualizing the experimental findings but represents prior knowledge rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Circadian rhythms are ~24-hour patterns maintained by a cell-autonomous molecular clock present in virtually every cell. BMAL1 is a PAS/bHLH transcription factor and the only nonredundant component of the core clock mechanism. BMAL1 and CLOCK regulate both rhythmic and nonrhythmic genes, including those involved in metabolism and cell-type-specific functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C11 describe established knowledge about circadian rhythms and the molecular clock, supported by multiple citations (Bass and Takahashi, 2010; Merrow et al., 2005; Yoo et al., 2004; Bunger et al., 2000; Hogenesch et al., 1998; Bozek et al., 2009; Miller et al., 2007; Reinke and Asher, 2019). This provides essential background but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C26"
+    ],
+    "result": "Prior work from the authors' lab suggested the skeletal muscle clock maintains muscle structure and function, with evidence from circadian expression of contractile protein genes, diminished force output in Bmal1 knockout mice, and sarcomere irregularities. However, systemic Bmal1 KO mice exhibit behavioral abnormalities, necessitating muscle-specific models like iMSBmal1-/- mice, which display muscle weakness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16, C26 summarize prior work (McCarthy et al., 2007; Andrews et al., 2010; Schroder et al., 2015) that motivated the current study. The acknowledgment of limitations in systemic knockout models (C16) justifies the use of the inducible muscle-specific model. This provides important context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "RBM20 is predominantly expressed in cardiac and skeletal muscle, with most research focused on cardiac function due to links to cardiomyopathies. The Rbm20 enhancer region is highly conserved (human ENCODE E1499168). RBM20 regulates splicing of up to 18 mRNAs in heart, 5 of which show changes in the iMSBmal1-/- model, though there is limited overlap between cardiac and skeletal muscle targets, suggesting tissue-specific functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 provide context about RBM20 expression patterns and known targets, supported by citations (Guo et al., 2010; Maatz et al., 2014) and ENCODE data (C88). The observation of tissue-specific targets (C92-C93) is based on comparison with published cardiac data and represents a reasonable inference, though C91 and C93 are explicitly speculative about broader implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Circadian rhythm disruption occurs in aging and chronic diseases, and maintaining muscle strength is a strong predictor of mortality. Skeletal muscle function is linked to structure, and heterogeneous sarcomere lengths are disadvantageous because they reduce the likelihood of optimal force generation. Changes in titin isoform may lead to compensatory changes in serial sarcomere number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 provide physiological context for the significance of the findings, supported by citations (Newman et al., 2006; Garc\u00eda-Hermoso et al., 2018; Hou, 2018; Patel et al., 2004). These claims establish the broader relevance of the work but represent established knowledge and speculation (C95) about clinical implications rather than direct experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "This study is the first to provide direct correlations between titin exon splicing at the RNA level and peptide expression at the protein level using LC-MS. Historical methods relied on vertical agarose gels and antibodies for semi-quantitative analysis. The LC-MS methodology could be applied to other conditions with disrupted titin splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 describe a methodological advance. The novelty claim (C101) is reasonable given the comprehensive LC-MS analysis (1218 peptides identified, 1009 quantified, covering 225 of 363 exons). The direct RNA-to-protein correlation is indeed a strength of the study. However, C103 is speculative about future applications. The methodological contribution is significant but secondary to the biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors speculate that despite titin's slow turnover (days), dynamic titin exchange within ~14 hours (as shown in cardiomyocytes) could allow daily modulation of titin length in skeletal muscle, potentially synchronized with circadian regulation of TCAP (which anchors titin at the Z-line). This could create a vulnerable period for muscle damage when TCAP is low, consistent with studies showing greater muscle damage markers following evening versus morning exercise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C111 present an interesting speculative model linking circadian regulation of titin and TCAP to potential daily titin exchange and vulnerability to damage. While supported by citations about titin turnover (Isaacs et al., 1989), cardiomyocyte titin exchange (da Silva Lopes et al., 2011), TCAP regulation (Gregorio et al., 1998; Hammouda et al., 2012), and exercise timing effects (Hammouda et al., 2011, 2012), the model is explicitly speculative (C106, C109, C110) and lacks direct experimental evidence in skeletal muscle. The speculation is reasonable but requires validation.",
+    "result_type": "MINOR"
+  }
+]

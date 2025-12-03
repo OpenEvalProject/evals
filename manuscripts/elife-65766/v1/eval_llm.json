@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "AAV-mediated ArchT expression in BLA resulted in anterograde labeling of axons in GC without cell body expression in GC, confirming pathway-specific targeting. The dataset comprised 140 neurons from 4 rats with confirmed viral expression and electrode placement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide converging anatomical and methodological validation. Immunohistochemical data (C24) confirms selective axonal expression in GC, anterograde transport is demonstrated (C25), and sample size is clearly stated (C26). These establish the technical foundation for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The impact of BLA\u2192GC axon perturbation on GC neurons was consistent across two recording sessions, with no significant differences in percentage of affected neurons, direction of impact, or strength of impact between sessions, suggesting taste novelty plays minimal role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 report statistical analyses showing session consistency (all X\u00b2 <1, F=1.95 p>0.05). The inference about taste novelty (C29) is reasonable given the lack of session differences. This justifies pooling data across sessions for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Optogenetic perturbation of BLA\u2192GC axons strongly altered GC taste responses in complex, neuron-specific ways. The impact was not a simple reduction in firing but showed reliable directional effects (enhancement or suppression) within individual neurons, with delayed onset that spared the initial 150-200ms and aligned with known GC taste response epoch timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 describe the basic phenomenology of the perturbation effect with supporting data from Figure 2. The heatmap analysis (C32) demonstrates within-neuron consistency, and temporal analyses (C34-C36) show epoch-aligned effects. These observations are well-documented and form the basis for subsequent detailed analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "BLA\u2192GC axon perturbation impacted 55.7% of recorded GC neurons, with 46.1% showing changes to all four taste stimuli. Approximately 40% of individual taste responses were affected, and critically, when multiple taste responses in a neuron were impacted, the direction of change (suppression or enhancement) was consistent across all affected responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 provide quantitative characterization supported by data in Figure 3. The consistency of directional effects within neurons (C40-C41) is particularly important for understanding the nature of BLA\u2192GC influence. Statistical support is provided throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Cell-type analysis revealed differential effects of BLA\u2192GC perturbation: putative interneurons showed predominantly suppression (90%), while putative pyramidal cells showed mixed effects (47% suppression). This pattern is consistent with BLA providing excitatory glutamatergic input to both cell types, though functional coding properties were similarly affected across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 integrate prior in vitro findings (C42, C46) with current in vivo observations (C43-C45, C49). The differential directional effects (C44-C45) are well-explained by circuit architecture (C47-C48), though these mechanistic interpretations are inferences. The lack of cell-type specificity in coding (C49-C50) is statistically supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The effects of BLA\u2192GC axon perturbation were qualitatively distinct from direct GC soma perturbation. Direct GC perturbation affected 91% of neurons (vs. 50% for axon perturbation), showed 88% suppression (vs. 60%), and produced immediate effects reaching asymptote within 250ms (vs. delayed effects for axon perturbation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 provide critical control analyses using comparison data from prior work (Mukherjee et al., 2019). The quantitative differences in percentage affected (C52), direction (C53), and temporal dynamics (C54) are statistically significant and rule out off-target GC soma effects. The conclusion (C55) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Despite tonic 2.5s laser stimulation, the impact of BLA\u2192GC perturbation was epoch-specific. The distribution of impact latencies showed multiple peaks at ~347ms and ~754ms (better fit by bi-modal Gaussian than exponential decay), aligning with identity and palatability epoch onsets. Effects were predominantly felt during the palatability epoch, with only 8% of modulations restricted to the identity epoch versus significantly more (19%) restricted to the palatability epoch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C67 demonstrate a key finding: tonic perturbation produces temporally structured effects. Statistical model comparison (C59-C61) supports bi-modal distribution over exponential decay. The epoch-specific analysis (C62-C66) with statistical support (C65: X\u00b2=5.86, p<0.05) shows preferential palatability epoch impact. This is a major mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "BLA\u2192GC perturbation did not reduce the incidence of taste-specific responses in GC\u201471.4% of neurons remained taste-specific in both conditions. While the specific composition of taste-responsive ensembles changed (with similar numbers of responses created and destroyed), population-level taste coding was preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 demonstrate preserved identity coding at the population level despite single-neuron changes. The identical percentages (C69), similar distributions (C70, C72), and balanced gain/loss (C73) are well-documented in Figure 7A-C. This dissociation between firing rate changes and coding capacity is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Classification analyses confirmed that taste identity remained discriminable during BLA\u2192GC perturbation (>50% correct, well above 25% chance). Within-condition classification was similar for control (64%) and perturbed (58%) trials. However, cross-condition classification dropped significantly, especially for neurons with altered firing rates (45% correct), indicating that while GC remains discriminative, the coding scheme is altered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 provide sophisticated computational analysis of coding. Within-condition performance (C77) shows preserved discriminability, but cross-condition deficits (C78-C79) reveal altered coding schemes. Statistical support is provided (X\u00b2 values, p-values). The conclusion (C80) appropriately distinguishes between coding capacity and coding implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "BLA\u2192GC perturbation significantly reduced palatability-related activity in the late epoch. The number of palatability-correlated neurons decreased from 33.6% to 25.0% (X\u00b2=5.49, p<0.05), with far more neurons losing than gaining palatability responses. Palatability correlations rose more slowly, reached lower asymptotes, and disappeared more quickly in perturbed trials, specifically during the late epoch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 demonstrate selective impairment of palatability coding with statistical support (C84, C86). The temporal specificity (late epoch only) and asymmetric gain/loss (C85) are well-documented in Figure 8. This contrasts sharply with preserved identity coding and represents a major functional dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Hidden Markov Modeling revealed that BLA\u2192GC perturbation disrupted the normal sudden, coherent transition into palatability-related firing. While control trials showed sharp ensemble transitions (with trial-to-trial variability in timing), perturbed trials showed significantly shallower transitions into palatability-correlated states, as quantified by non-overlapping 95% credible intervals for sigmoid slope parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 employ sophisticated ensemble analysis (HMM) to reveal network-level effects. The prior work establishing sudden transitions (C88-C90) provides context. The current finding of reduced transition sharpness (C91-C92) is statistically rigorous using Bayesian credible intervals. This is a key mechanistic finding about BLA's role in organizing ensemble dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Single-neuron analysis revealed that BLA\u2192GC perturbation reduced the sharpness of individual neurons' firing rate changes during palatability state transitions. Regression analysis showed slopes significantly shallower than unity (0.42, p<0.05), with reductions across most slope intervals. This 'blurring' of single-neuron transitions explains the loss of ensemble transition sharpness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 test the mechanism underlying ensemble effects. The regression analysis (C94) and binned analysis (C95) provide converging evidence with statistical support. The interpretation (C96-C97) that reduced single-neuron sharpness explains ensemble effects is well-justified by the data in Figure 10B-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The timing coherence of GC ensemble responses was not altered by BLA\u2192GC perturbation. The distribution of maximal slope times did not differ significantly between conditions (X\u00b2=13.93, p>0.05), with comparable means and standard deviations. This indicates that the loss of sharp transitions reflects altered single-neuron dynamics rather than temporal decoupling of neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 test an alternative hypothesis about ensemble disruption. The statistical analysis (C98) with supporting distributional comparisons (C99) rules out temporal decoupling. The conclusion (C100) appropriately distinguishes between two mechanisms and is supported by the data in Figure 10D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The impact of BLA\u2192GC perturbation on firing rate transition sharpness was epoch-specific. During identity state transitions (100-600ms), perturbation had minimal effect: regression slopes did not differ from unity (0.79, p>0.05), ANOVA showed no laser effect (F(1,58)=1.44, p>0.05), and timing was unaltered (X\u00b2=20.06, p>0.05). This contrasts with strong effects on palatability transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 demonstrate functional specificity by showing null effects on identity epoch transitions. Multiple statistical tests (regression, ANOVA, chi-square) converge on the same conclusion. This epoch-specific pattern (Figure 11) strengthens the interpretation that BLA specifically organizes palatability-related dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Optogenetic perturbation of BLA\u2192GC axons during taste delivery strongly altered GC taste responses in an epoch-specific manner, reducing palatability-related activity in the late epoch without reducing taste identity information in the middle epoch, and diminishing the abruptness of ensemble transitions into the late epoch. These results suggest BLA 'organizes' behavior-related GC taste dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 summarize the main experimental findings. Each component is supported by detailed analyses in subsequent results: epoch-specific effects (C4), selective palatability impairment (C5), and disrupted ensemble transitions (C6). The organizational role conclusion (C7) is an appropriate inference from the pattern of results, though 'organizes' is somewhat interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C114",
+      "C118"
+    ],
+    "result": "The authors conclude that GC palatability-related activity is organized by connections from BLA, with BLA actively coordinating activity among cortical neurons to enable sudden, coherent transitions into the palatability state. This represents a specific organizational role rather than simple information relay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C114, C118 represent the main interpretive conclusions. These are well-supported by the experimental findings: selective palatability impairment, preserved identity coding, reduced transition sharpness at single-neuron and ensemble levels, and epoch-specific effects. The 'organizational' interpretation is justified, though alternative mechanisms cannot be fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors propose that the taste system functions as a nonlinear attractor network where BLA is an essential component, and that loss of BLA input may reduce the nonlinearity of attractor dynamics and predispose the network to random noise, explaining the observed blurring of transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C113 invoke attractor network theory to explain results. While C110-C111 cite theoretical work, C112-C113 are explicitly speculative hypotheses. The attractor framework is plausible and consistent with the data, but the specific mechanisms (reduced nonlinearity, increased noise susceptibility) are not directly tested. This remains a theoretical interpretation requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Based on prior work showing that GC inhibition during the first 500ms delays palatability-driven behavior, combined with earlier palatability coding in BLA than GC, the authors speculate that BLA-GC interactions across 0.5-1.0s are responsible for causing the transition into the GC palatability epoch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117 integrate prior findings (C115 from Mukherjee et al., 2019) with current results to propose a temporal mechanism. While the inference (C116) from prior work is reasonable, the specific timing hypothesis (C117) is explicitly speculative. The current data show BLA is important for palatability transitions but don't directly test the proposed 0.5-1.0s interaction window.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C68",
+      "C107",
+      "C108",
+      "C119"
+    ],
+    "result": "The introduction and discussion establish the scientific context: palatability drives consumption decisions, GC shows dynamic taste processing through sequential epochs with sudden transitions that predict behavior, GC likely requires network interactions given response complexity, and BLA is anatomically and functionally positioned to interact with GC in palatability processing, though prior pharmacological studies had limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23, C68, C107-C108, C119 provide background knowledge and rationale. These are well-supported by extensive citations to prior literature. The critiques of prior pharmacological approaches (C22-C23) appropriately motivate the current optogenetic approach. This contextual material is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PP2ACdc55 and Clb2 have opposing effects on Cdc6 protein stability. In mitosis, Cdc6 levels are reduced in \u0394clb2 cells and elevated in \u0394cdc55 cells compared to wild-type. This regulation is specific to Clb2 and Cdc55, as Clb5 and Rts1 do not affect Cdc6 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by western blot data (Figure 1B) and quantification (Figure 1C) showing differential Cdc6 levels across genotypes. The specificity controls (C46) strengthen the conclusion. Statistical significance is reported (C44: p-values provided), and the contradictory regulation pattern (C45) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cell cycle analysis reveals that Cdc6 accumulates during mitosis in wild-type cells (peak at 80 min), is suppressed in \u0394clb2 cells throughout mitosis, and is hyper-stabilized in cdc55-101 cells (peak 60-100 min). The cdc55-101 mutant shows a 20-min S-phase delay, but the early Cdc6 accumulation is not due to cell cycle delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 are supported by synchronized cell cycle experiments with western blots (Figure 1D-E) and flow cytometry (Figure 1F). The temporal resolution allows distinction between cell cycle delay and direct effects on Cdc6 stability. The conclusion (C56) appropriately accounts for the S-phase delay observed in cdc55-101.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Time-lapse microscopy using Whi5 nuclear import as a temporal marker shows that Cdc6-Citrine accumulates in the nucleus starting after Whi5 import, with maximum at 9 min in wild-type. Both \u0394cdc55 and cdc55-101 cells show increased Cdc6 accumulation without altered timing, indicating nuclear PP2ACdc55 negatively regulates Cdc6 stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by quantitative time-lapse microscopy (Figure 1H) with appropriate temporal controls (Whi5-mCherry). The similar phenotypes of \u0394cdc55 and cdc55-101 (C63) support the nuclear-specific function conclusion, as cdc55-101 specifically excludes Cdc55 from the nucleus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The CDC6-T368A mutant (C-terminal phospho-degron mutation) is stabilized in mitosis but becomes unstable in \u0394clb2 cells, supporting Clb2's role in shielding the N-terminal phospho-degron. The CDC6-T39A-T368A double mutant is synthetically lethal with \u0394clb2, and overexpression experiments confirm the importance of the N-terminal degron when Clb2 is absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by western blots (Figure 2A-B), genetic analysis (tetrad dissection, Figure 2C), and overexpression studies (Figure 2\u2014supplement 1). The synthetic lethality (C67) provides strong genetic evidence for the model. Statistical significance is reported (C66: p=0.0442).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Co-immunoprecipitation experiments show that Cdc6 is stabilized in \u0394cdc55 cells and has increased Clb2 binding. The Clb2:Cdc6 ratio is reproducibly higher in \u0394cdc55 cells, suggesting PP2ACdc55 disrupts Cdc6-Clb2 binding, which may mask the N-terminal phospho-degron and contribute to Cdc6 stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by co-IP experiments (Figure 2D) with quantification (Figure 2E) showing statistically significant differences (Cdc6: p=0.0205; Clb2: p=0.0003; Clb2:Cdc6 ratio: p=0.0001). The interpretation (C73) logically follows from the data, though it remains mechanistic inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Using CDC6 mutants retaining only specific phosphorylation sites, the study shows that PP2ACdc55 specifically dephosphorylates Cdc6-T7. The CDC6-T7 construct shows enhanced T7 phosphorylation and Clb2 binding in \u0394cdc55 cells, while CDC6-6A (all sites mutated) shows no Clb2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 are supported by western blots and co-IP with a custom phospho-specific antibody (Figure 3B-C). The specificity control (C77) validates the antibody. Statistical significance is reported (C79: Cdc6-T7p:Cdc6 p=0.0468; Clb2:Cdc6 p=0.0034). The mutant design provides clear mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Cell cycle time-course experiments show that Cdc6-T7 phosphorylation is suppressed in wild-type cells but shows a spike at 80 min in cdc55-101 cells, coinciding with Cdc6 stabilization during mitosis. Flow cytometry confirms both strains are in mitosis at this timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by synchronized cell cycle experiments with phospho-specific western blots (Figure 3D-E) and flow cytometry controls (Figure 3\u2014supplement 2). The temporal correlation between T7 phosphorylation and Cdc6 stabilization (C90) is clearly demonstrated, supporting the conclusion (C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Cdc6 accumulation is consistently lower in cdc14-3 mutant cells compared to cdc15-1 control cells during mitosis (120-180 min), with matched cell cycle profiles, indicating that Cdc14 stabilizes Cdc6 during late mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by western blots (Figure 4\u2014supplement 1A) and flow cytometry controls (Figure 4\u2014supplement 1B). The use of cdc15-1 as an alternative mitotic mutant control strengthens the conclusion that the effect is specific to Cdc14 function rather than general mitotic arrest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In vitro phosphatase assays demonstrate that PP2ACdc55 and Cdc14 directly dephosphorylate Cdc6 with distinct site specificities: PP2ACdc55 efficiently dephosphorylates T7 and T23 (but not T39, S43, or the C-terminal degron), while Cdc14 dephosphorylates the C-terminal phospho-degron T368-S372 (but not T7, T23, T39, or S43).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C105 are supported by in vitro phosphatase assays using purified proteins and 32P-labeled substrates (Figure 4A-F, Figure 4\u2014supplement 2). Positive controls (N-Swe1 for PP2ACdc55, Csa1 for Cdc14) validate specificity. Three biological replicates are reported. The site-specific dephosphorylation pattern is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Overexpression of Sic1 releases Clb2 from Cdc6 in nocodazole-arrested mitotic cells, as shown by co-immunoprecipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by co-IP experiments (Figure 5A) with quantification (Figure 5B) showing statistically significant reduction in Clb2:Cdc6 binding upon Sic1 induction (galactose: p<0.0001 at 1hr, p=0.0090 at 2hr). Three biological replicates are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Overexpression of TAP-tagged Cdc6 in mitotically arrested cells yields a stable stoichiometric Cdc6\u00b7Clb2\u00b7Cdk1\u00b7Cks1 complex identified by mass spectrometry. Gel-filtration analysis shows that Sic1 releases Cdc6 from this complex while forming a stable complex with Clb2-Cdk1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by protein purification (Figure 5C), mass spectrometry identification, and gel-filtration analysis (Figure 5D). The biochemical characterization is rigorous, though the mitotic arrest phenotype (C107) is mentioned as unpublished data. The consistency with prior work (C109) strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In vitro Mcm2-7 loading assays demonstrate that the Cdc6\u00b7Clb2\u00b7Cdk1\u00b7Cks1 complex is inactive for Mcm2-7 loading and recruitment, but Sic1 addition restores normal loading by releasing Cdc6 from the complex. The mechanism is distinct from ORC phosphorylation-mediated inhibition, as Mcm2-7 recruitment (not just loading) is blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 are supported by biochemical Mcm2-7 loading assays with purified components (Figure 5E). The distinction between loading and recruitment (C117-C119) using ATP\u03b3S provides mechanistic insight. The observation of partial Clb2-Cdk1 kinase activity (C114-C115) is important context but doesn't undermine the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Bioinformatics analysis identifies intrinsically disordered regions (IDRs) in Cdc6 at the N-terminus (residues 1-59, containing T7, T23, T39, S43, RxL, and LxF motifs) and C-terminus (residues 350-378, containing the phospho-degron). The structural model outperforms AlphaFold in modeling these IDR regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 are supported by multiple disorder prediction programs (Figure 6A, Figure 6\u2014supplement 1A) and structural modeling (Figure 6B). The model quality comparison (C124) is validated using Verify3D scores (Figure 6\u2014supplement 1C), showing better performance in IDR regions. The functional residues map to predicted IDRs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Structural modeling predicts a Cdc6-Clb2 interaction where Cdc6 E45 forms a salt bridge with Clb2 K270 in the hydrophobic patch, with the PEKLQF motif potentially adopting a transient helix. The model captures the Cdc6 N-terminal phospho-degron being protected by Clb2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C129 are based on computational modeling (Figure 6C-D) without experimental validation. While the model is consistent with known interactions and functional data, the specific molecular details (salt bridge, transient helix) remain predictions. The claim about phospho-degron protection (C129) is inferred from the model rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In cdc4-1 cells at restrictive temperature, endogenous Cdc6 is stabilized, but Cdc6-6A (with all six phosphorylation sites mutated) is still degraded, indicating an SCF-independent degradation mechanism. Cdc6-T7 protein levels remain unchanged in cdc4-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by western blots in cdc4-1 temperature-shift experiments (Figure 3\u2014supplement 1). The differential stability of Cdc6-6A versus Cdc6-T7 in cdc4-1 background provides evidence for alternative degradation pathways. However, the mechanism of this alternative pathway is not identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study demonstrates a sequential model where PP2ACdc55 dephosphorylates Cdc6 at T7 and T23 to disrupt the Cdc6-Clb2 complex in mitosis, Sic1 releases Clb2\u00b7Cdk1\u00b7Cks1 from Cdc6 in late mitosis, and Cdc14 dephosphorylates Cdc6 at T368-S372 to stabilize Cdc6 before origin licensing. IDRs in the Cdc6 N-terminus are critical for binding dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 summarize the main findings supported by multiple experimental approaches throughout the paper. The sequential model integrates genetic, biochemical, and cell biological data. While individual steps are well-supported, the precise temporal ordering and coordination between phosphatases could benefit from additional kinetic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C141"
+    ],
+    "result": "The study supports a model where PP2ACdc55 (and its mammalian homolog PP2AB55) preferentially targets phospho-threonines over phospho-serines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134 and C141 are supported by the in vitro phosphatase data showing efficient dephosphorylation of T7 and T23 but not S43 (Figure 4), consistent with cited literature. However, the preference is not quantitatively characterized in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C184",
+      "C185"
+    ],
+    "result": "The study provides evidence linking PP2A to DNA replication and establishes a stepwise origin licensing process mediated by PP2A, Cdc14, and Sic1, which may represent a conserved mechanism in eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145, C184, and C185 represent the authors' assessment of the study's significance. The link between PP2ACdc55 and DNA replication through Cdc6 regulation is clearly established. The conservation claim (C145) is supported by comparison to mammalian systems (C139-C144), though direct experimental evidence in other organisms is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "A regulatory model is proposed where PP2ACdc55 inhibits Cdc14 through Net1 dephosphorylation, and PP2ACdc55-dependent Cdc6-T7 dephosphorylation releases Clb2, potentially enhancing Net1 phosphorylation. Once released, Cdc14 dephosphorylates Cdc6, Cdh1, and Sic1 to enable origin licensing, ensuring sequential dephosphorylation of Cdk1 substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C151 propose a regulatory network model (Figure 7B) integrating the current findings with prior knowledge. While individual components are supported (Cdc14 inhibition by PP2ACdc55 via Net1 is cited; Cdc14 targets are established), the proposed enhancement of Net1 phosphorylation by released Clb2 (C149) is speculative and not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Clb2\u00b7Cdk1\u00b7Cks1 binding to Cdc6 may hinder SCFCdc4 recognition of the N-terminal phospho-degron, making the C-terminal phospho-degron the key element for degradation until Clb2 is released. The C-terminal degron is targeted by Mck1 (GSK3 homolog), which is involved in DNA damage signaling, suggesting a role for the Cdc6 C-terminus in controlling licensing timing under stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C162 integrate current findings (Figures 2, 6C) with prior work on Mck1 (cited). The model of phospho-degron masking (C157) is supported by structural modeling and genetic data. The connection to stress response (C161-C162) is based on cited literature rather than new experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "The N-terminal Cdc6 IDR containing RxL and LxF motifs serves as a hub for multiple protein-protein interactions. Cdc6 IDRs are available for binding in G1/S (when subjected to SCF-dependent degradation), then shift to a licensing preparation period where Cdc6 is stabilized but not licensed via Clb2 binding, released when Cdc14 outcompetes Clb2-Cdk1 activity at mitotic exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C182 synthesize structural modeling (Figure 6B) with functional data throughout the paper. The model of temporal regulation is well-supported by the cell cycle experiments. However, the mechanistic details of how IDRs facilitate these transitions remain largely inferred from structure rather than directly demonstrated.",
+    "result_type": "MINOR"
+  }
+]

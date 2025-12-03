@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "A large-scale EM volume (~250 \u00d7 140 \u00d7 90 \u00b5m) was acquired from layer 2/3 of mouse V1 at P36, with 40-nm sections imaged at 3.58 \u00d7 3.58 nm/pixel resolution, and processed using machine learning-based methods for alignment, segmentation, and synapse detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide explicit technical details about the EM dataset preparation and processing pipeline. The dimensions, resolution, and computational methods are clearly stated and referenced (Turner et al., 2020), establishing the foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Comprehensive mapping of the EM volume identified 1929 AIS synapses across 153 PyCs (mean 12.6 synapses/AIS, range 1-32), with 547 total cell bodies classified as 416 excitatory PyCs, 34 inhibitory cells, and 97 glia. Only cells with \u226540 \u00b5m of AIS were analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 provide explicit counts and classification criteria that are internally consistent. The inclusion criterion (\u226540 \u00b5m AIS) is justified by reference to Figure 2I. The remarkable variability in synapse counts (1-32) is a key observation that motivates subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Of 1929 total AIS synapses, 1127 (58%) originated from ChCs (122 axon fragments plus 2 complete ChCs) and 802 (42%) from non-ChC axons, demonstrating that more than 40% of AIS synapses come from non-ChC sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 provide explicit counts that are mathematically consistent (1127 + 802 = 1929). The classification methodology is described in detail in the Methods and Figure 2A-C. This finding challenges the assumption that ChCs are the exclusive source of AIS input.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "ChC synapses are predominantly located 10-40 \u00b5m from the axon hillock and cluster near cisternal organelles (COs), while non-ChC synapses are distributed more proximally and broadly across the AIS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe spatial distributions supported by Figure 2F and statistical analysis (Figure 2\u2014figure supplement 4). The clustering near COs is consistent with prior qualitative observations (Benedeczky et al., 1994; King et al., 2014) and is now quantitatively demonstrated through spatial shuffling controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "ChC connections ranged from 1-9 synapses per connection with a geometric distribution (exponent 0.44), while 94% of non-ChC connections comprised single synapses, with all non-ChC connections having \u22643 synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 provide explicit distributions supported by Figure 2J-K. The geometric fit for ChC connections and the predominance of single-synapse non-ChC connections are clearly stated. However, the possibility that single-synapse connections may be overestimated due to axon fragmentation is acknowledged in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Individual PyCs received input from 0-9 distinct ChC axons (mean 3.3), with a mean of 2.3 synapses per connection for ChC-innervated AISs, and 80% (122/153) of AISs had at least one cartridge with \u22652 synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 provide explicit statistics supported by Figure 2L-N. The convergence of multiple ChC axons onto individual PyCs is well-documented. The caveat that distinct axon branches may belong to the same ChC is appropriately noted in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Analysis of the first 37 \u00b5m of AIS (containing 97% of ChC synapses) revealed ChC synapses on 95% of PyCs (144/152) with high variability (mean 7.4 \u00b1 5.3, range 0-25), while all PyCs had 47-113 somatic synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 provide explicit measurements supported by Figure 3A-D. The 37 \u00b5m threshold is justified as capturing 97% of ChC synapses while maximizing cell inclusion. The striking variability in ChC input contrasts with more uniform somatic input.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ChC synapse counts show substantially higher variability (CV = 0.73) than perisomatic synapse counts (CV = 0.18), indicating axo-axonic inhibition is more heterogeneous than perisomatic inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide explicit CV values that quantify the variability difference. This is a key finding demonstrating that ChC input is more variable than other forms of inhibition, with important functional implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Multivariate OLS regression using three ICA components (depth, soma inhibition, soma size) explained 45% of variance in ChC synapse number, with significant correlations for depth (coefficient -0.47), perisomatic inhibition (+0.33), and cell size (+0.34).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 provide explicit regression results supported by Figure 3H-K. The ICA approach appropriately addresses correlations among structural features. Statistical significance is stated with multiple test correction. The 45% explained variance indicates substantial but incomplete predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Number of connections and mean synapses per connection are uncorrelated (r = -0.08, p = 0.36), with synapses per connection showing no significant relationship to depth or inhibition (modest correlation with size), while number of connections relates to all three PyC properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by Figure 4B-F with explicit statistics. The lack of correlation between connection number and synapses per connection suggests independent regulatory mechanisms, a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Potential connections (ChC axons within 7.5 \u00b5m of AIS) decreased with depth but not with size or inhibition, while connectivity fraction (actual/potential connections) was positively modulated by size and inhibition but not depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by Figure 4H-K with explicit statistical tests. This dissociation between potential connections (geometric) and connectivity fraction (cell-specific) is a sophisticated analysis that distinguishes spatial availability from active recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Biophysical simulations using four V1 PyC models showed asynchronous ChC input most effectively suppressed output, with biologically inspired (spatiotemporally heterogeneous) input intermediate. AIS inhibition was significantly more effective than somatic inhibition for concurrent excitation/inhibition when ChC synapses numbered 4-15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 describe modeling results supported by Figure 5. The models are well-characterized (Nandi et al., 2020) and the simulations systematically vary temporal patterns and synapse numbers. The 4-15 synapse range for differential AIS vs. somatic effect overlaps with observed distributions, strengthening biological relevance. Statistical testing (Wilcoxon signed-rank, 5% FDR) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "Network motif analysis found no evidence of ChC axon coordination beyond geometric constraints, with observed bifan motif connectivity probability within the range of spatially-constrained random shuffles, indicating ChC connectivity emulates random networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C54 are supported by Figure 6C with appropriate null model (shuffling preserving spatial constraints). The power analysis (Figure 6E) demonstrates ability to detect biases of \u03b1 < 0.4 or \u03b1 > 1.5, ruling out strong clustering or anticlustering. This is a rigorous negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In vivo two-photon imaging using Vipr2-IRES2-Cre mice showed ChCs exhibit highly correlated spontaneous activity (0.49 \u00b1 0.30, 68 pairs) exceeding other interneuron types (PV: 0.34, VIP: 0.18, SST: 0.07), with ChC activity more strongly correlated with pupil dilation (0.40 \u00b1 0.14) than locomotion (0.16 \u00b1 0.11, p = 4.8\u00d710\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 provide explicit correlation values with appropriate statistics (Wilcoxon signed-rank test). The Vipr2-IRES2-Cre specificity is supported by histology (Figure 7A) and citation (Daigle et al., 2018). Comparisons to other interneuron types use public Allen Brain Observatory data, providing robust context. The correlation with pupil dilation (arousal proxy) is a key functional finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Integration of EM and functional imaging results supports a model where ChCs provide a circuit-wide arousal-related signal whose strength is adjusted by target neuron properties (depth, size, inhibition), with axo-axonic inhibition particularly effective during co-active excitation/inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 synthesize findings from anatomical (C1-C45) and functional (C55-C60) experiments. The model is explicitly stated in the abstract and Discussion (Figure 8). The integration is logical: collective ChC activation during arousal (C60) combined with heterogeneous connectivity (C29-C40) and effective AIS inhibition during co-activation (C49-C50) supports the proposed circuit function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Validation experiments confirmed that 100% of randomly sampled somatic synapses (81/81 on five PyCs, plus 75/75 on one additional PyC) originated from inhibitory axons, supporting the assumption that perisomatic input is predominantly inhibitory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 provide explicit validation data supporting a key assumption for interpreting perisomatic synapse counts as inhibitory input. The sampling is appropriate and the result is consistent with prior literature (Davis and Sterling, 1979; Fari\u00f1as and DeFelipe, 1991a).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "ChC synapse number onto PyCs is influenced by target cell shape, location, and inhibitory connectivity, with the number of ChC connections and synapses per connection regulated by different processes: depth modulates local ChC axon abundance, while size and inhibition correlate with ChC axon recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 synthesize findings from C36-C45. The conclusions are explicitly stated and supported by the regression and potential connection analyses. The dissociation between geometric (depth) and cell-specific (size, inhibition) factors is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Modeling demonstrates that AIS innervation by multiple presynaptic ChCs with spatiotemporally heterogeneous inhibition is more effective at suppressing PyC output than single-ChC input, and that AIS inhibition is significantly more effective than somatic inhibition when excitation and inhibition are co-active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are explicitly stated conclusions from the modeling work (Figure 5). The simulations systematically compare synchronous, asynchronous, and biologically inspired (multi-ChC) scenarios, and AIS vs. somatic inhibition with varying temporal offsets. The conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In vivo imaging suggests naturally occurring periods of high arousal when ChCs are collectively active, during which L2/3 PyCs likely receive functional input from all or most presynaptic ChCs. Results support a model of synchronous ChC activation during arousal providing a global signal adjusted by cell-specific structural factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 integrate functional imaging (C57-C60) with anatomical findings (C29-C45). The inference that collective ChC activation leads to convergent input onto PyCs is logical given the anatomical connectivity (C24-C27) and high correlation during arousal (C58-C60). The model (Figure 8) is explicitly stated and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Background context establishes that ChCs are GABAergic interneurons with characteristic cartridges targeting the AIS (action potential generation site), connecting to 30-50% of PyCs within 200 \u00b5m, with variable targeting across regions and diverse functional effects. VIP interneurons preferentially inhibit other interneurons and are active during locomotion/whisking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 provide literature context with appropriate citations. These are established facts from prior work that motivate the current study. The citations are appropriate and the statements accurately represent the cited work.",
+    "result_type": "MINOR"
+  }
+]

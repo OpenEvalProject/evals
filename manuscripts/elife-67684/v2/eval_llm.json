@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Prior experimental work has established that during sustained attention, visual processing alternates rhythmically at 4-8 Hz between enhanced (good \u03b8 phase) and diminished (poor \u03b8 phase) states. These behavioral oscillations are associated with distinct neural dynamics and functional connectivity patterns in FEF, LIP, and mdPul, with mdPul specifically coordinating cortical activity during the good \u03b8 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C5, and C6 are all supported by multiple citations to prior experimental work (Benedetto et al., 2020; Fiebelkorn and Kastner, 2019b; Fiebelkorn et al., 2018, 2019c; and others). These claims establish the experimental foundation upon which the current computational model is built and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C23",
+      "C29",
+      "C86",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors constructed a biologically detailed computational model of FEF and LIP using Hodgkin-Huxley point neurons with cell type-specific parameters. The model integrates components from previous models of working memory and cholinergic modulation, includes multiple interneuron types (FS, SOM, VIP), and is driven by \u03b8-rhythmic mdPul input at \u03b1 frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C23, C29, and C86-C92 describe the model construction and are supported by detailed Methods sections, citations to prior models (Kramer et al., 2008; Lee and Whittington, 2013; Gelastopoulos et al., 2019), and experimental data on cell properties (Tremblay et al., 2016). The model design is thoroughly documented with parameter tables and equations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "The computational model, when driven by \u03b8-rhythmic mdPul inputs, reproduced the alternating dynamical states observed experimentally, including \u03b1, \u03b2, and \u03b3 oscillations in LIP and FEF. The model replicated behavioral results showing that target detection depends on \u03b8 phase, with higher decision cell spiking during the good \u03b8 phase, and exhibited 8 Hz rhythmicity in hit rates matching experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19, C52, C53, and C55 are supported by computational modeling results shown in Figures 2, 3, 4, and 6. The model successfully reproduces both the neural dynamics (spectral power at different frequencies during good/poor \u03b8 phases) and behavioral outcomes (\u03b8-phase-dependent hit rates with 8 Hz periodicity) observed experimentally. The quantitative agreement with behavioral data is demonstrated in Figure 6C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C33",
+      "C35",
+      "C69"
+    ],
+    "result": "The model reveals that FEF \u03b2\u2082 input to LIP deep layers activates SOM interneurons, which suppress granular layer FS cells, resulting in disinhibition of granular RS cells. This mechanism, combined with mdPul \u03b1 input, produces \u03b3 oscillations in LIP superficial layers during the good \u03b8 phase, representing a top-down gain modulation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C33, C35, and C69 describe the mechanistic basis for LIP \u03b3 generation and are supported by computational modeling results shown in Figure 3 and Figure 11. The model demonstrates that FEF \u03b2\u2082 input is necessary for LIP \u03b3 (Figure 11B shows absence of \u03b3 without FEF input), while mdPul input alone is insufficient. This mechanism is consistent with prior work (Lee and Whittington, 2013) and represents a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The FEF visuomotor module consists of RS cells reciprocally inhibited by SOM cells. During the poor \u03b8 phase, SOM cells silence RS cells, but during the good \u03b8 phase, mdPul stimulation enables RS cells to fire and take control of SOM cell activity, producing \u03b2\u2082 oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C38 describe the FEF visuomotor module dynamics and are supported by computational modeling results shown in Figure 4. The model demonstrates the E-I balance shift between good and poor \u03b8 phases, with \u03b2\u2082 oscillations emerging only during mdPul stimulation. The mechanism is clearly illustrated in raster plots and spectrograms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The FEF visual module detects targets through VIP-SOM interactions. VIP cells, which have steeper f-I curves than SOM cells and receive only local inhibition, fire in response to small increases in target-related excitation, temporarily silencing SOM cells and disinhibiting RS cells. This circuit amplifies small differences in excitation between visual regions, enabling detection of near-threshold stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 describe the target detection mechanism and are supported by computational modeling results (Figure 5), citations to experimental data on VIP/SOM connectivity and physiology (Tremblay et al., 2016; Karnani et al., 2016; Zhang et al., 2014; Lee et al., 2010; Wall et al., 2016; Millman et al., 2020), and f-I curve data (Appendix 1\u2014figure 1). The mechanism is demonstrated to work during both good and poor \u03b8 phases with different temporal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "FEF decision cells integrate inputs from FEF visual and visuomotor RS cells, with visuomotor input setting the threshold for decision cell spiking. Decision cell spiking is interpreted as initiating action in response to target detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 describe the decision mechanism and are supported by the model design and results shown in Figure 6. The thresholding mechanism (more than half of decision cells spiking) is clearly defined in the Methods and results in \u03b8-phase-dependent hit rates that match experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C22",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C76",
+      "C77"
+    ],
+    "result": "The model reveals that LIP\u2192FEF functional connectivity strength determines both task performance and hit rate rhythmicity. Intermediate connectivity values maximize sensitivity (D'), while higher connectivity produces a dominant 8 Hz component in hit rates (vs. 4 Hz at lower connectivity). The 8 Hz rhythm arises from an additional hit rate peak during the poor \u03b8 phase due to LIP \u03b2\u2081 oscillations exciting FEF visual cells, not from division of attention between multiple locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C22, C56-C59, C61, C76, and C77 are supported by computational experiments varying LIP\u2192FEF connectivity (Figure 7). The model demonstrates a clear relationship between connectivity strength and both sensitivity (inverted U-shape) and hit rate frequency (transition from 4 Hz to 8 Hz dominance). This provides a mechanistic explanation for the experimentally observed difference between cued (8 Hz) and uncued (4 Hz) locations, offering an alternative to prior hypotheses (Landau and Fries, 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C21",
+      "C63",
+      "C72"
+    ],
+    "result": "Altering the timescales of FEF or LIP oscillatory dynamics (by changing inhibitory time constants) decreased task performance, with peak sensitivity occurring at experimentally observed frequencies (\u03b2\u2082 ~20ms for SOM cells, \u03b3 ~5ms for FS cells). The \u03b3-timescale activation of FEF visual SOM cells provides a blanket of inhibition that prevents false alarms during the good \u03b8 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C21, C63, and C72 are supported by computational experiments varying \u03c4_d,SOM and \u03c4_d,FS (Figure 8, Figure 9, Figure 10). The model demonstrates that experimentally observed frequencies maximize D' sensitivity, with clear mechanistic explanations for how deviations affect hit rates and false alarm rates. The blanket of inhibition mechanism is well-explained and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C75"
+    ],
+    "result": "The model suggests that attentional modulation can be interpreted as gain modulation of bottom-up input based on expected reliability, consistent with predictive processing frameworks. The temporal dynamics provide periodic windows of enhanced sensitivity that enable precise monitoring with acceptable temporal coverage while minimizing energetic cost and allowing interleaving with other computational processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70 and C75 represent interpretations of the model's behavior in theoretical frameworks (predictive processing, computational efficiency). While the model demonstrates gain modulation and periodic sensitivity windows, the claims about energetic cost minimization and optimal temporal coverage are speculative and not directly tested. The interpretation is plausible but requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Very strong LIP\u2192FEF connectivity led to high false alarm rates in the model, which the authors speculate may be linked to hallucinations or other pathologies in visual perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is supported by computational results showing increased false alarms at high connectivity (Figure 7A), but the speculation about clinical relevance to hallucinations is not tested and represents a hypothesis for future work. The connection between model behavior and pathology is plausible but unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "The authors propose multiple hypotheses about the functional role of the \u03b8 rhythm: it may enable switching attention between multiple objects, alternation between specific and general hypotheses about target location, rapid adaptation to changes in visual salience, or interleaving of sensory processing with motor execution. The poor \u03b8 phase may enable motor planning and execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C83 and C85 represent speculative hypotheses about the functional significance of the \u03b8 rhythm that are not directly tested in the current model. While these hypotheses are informed by the modeling results and are plausible, they require future experimental and computational work to validate. Claim C83 is supported by a citation to a prior hypothesis (Fiebelkorn and Kastner, 2019b).",
+    "result_type": "MINOR"
+  }
+]

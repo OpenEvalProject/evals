@@ -1,0 +1,1532 @@
+{
+  "submission": {
+    "id": "380c83d1-cf23-4235-8d20-6390a271cd18",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:40:30.665801Z",
+    "updated_at": "2025-12-03T20:40:30.665801Z"
+  },
+  "content": [
+    {
+      "id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "submission_id": "380c83d1-cf23-4235-8d20-6390a271cd18",
+      "content_type": "manuscript",
+      "content_text": "# Antagonistic role of the BTB-zinc finger transcription factors Chinmo and Broad-Complex in the juvenile/pupal transition and in growth control\n\n## Authors\n\n- S\u00edlvia Chafino<sup>1</sup> ([ORCID: 0000-0001-9679-0622](https://orcid.org/0000-0001-9679-0622))\n- Panagiotis Giannios<sup>1</sup> ([ORCID: 0000-0002-7881-1431](https://orcid.org/0000-0002-7881-1431))\n- Jordi Casanova<sup>1</sup> ([ORCID: 0000-0001-6121-8589](https://orcid.org/0000-0001-6121-8589))\n- David Mart\u00edn<sup>2</sup> ([ORCID: 0000-0002-9784-647X](https://orcid.org/0000-0002-9784-647X)) \u2020\n- Xavier Franch-Marro<sup>2</sup> ([ORCID: 0000-0002-7465-6729](https://orcid.org/0000-0002-7465-6729)) \u2020\n\n### Affiliations\n\n1. Institut de Biologia Molecular de Barcelona (CSIC) Barcelona Spain ([ROR:05t8khn72](https://ror.org/05t8khn72))\n2. Institute of Evolutionary Biology (IBE, CSIC-Universitat Pompeu Fabra) Barcelona Spain ([ROR:044mj7r89](https://ror.org/044mj7r89))\n3. Barcelona Institute of Science and Technology, Institute for Research in Biomedicine, IRB Barcelona Barcelona Spain ([ROR:03kpps236](https://ror.org/03kpps236))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring development, the growing organism transits through a series of temporally regulated morphological stages to generate the adult form. In humans, for example, development progresses from childhood through to puberty and then to adulthood, when sexual maturity is attained. Similarly, in holometabolous insects, immature juveniles transit to the adult form through an intermediate pupal stage when larval tissues are eliminated and the imaginal progenitor cells form the adult structures. The identity of the larval, pupal, and adult stages depends on the sequential expression of the transcription factors chinmo, Br-C, and E93. However, how these transcription factors determine temporal identity in developing tissues is poorly understood. Here, we report on the role of the larval specifier chinmo in larval and adult progenitor cells during fly development. Interestingly, chinmo promotes growth in larval and imaginal tissues in a Br-C-independent and -dependent manner, respectively. In addition, we found that the absence of chinmo during metamorphosis is critical for proper adult differentiation. Importantly, we also provide evidence that, in contrast to the well-known role of chinmo as a pro-oncogene, Br-C and E93 act as tumour suppressors. Finally, we reveal that the function of chinmo as a juvenile specifier is conserved in hemimetabolous insects as its homolog has a similar role in Blatella germanica. Taken together, our results suggest that the sequential expression of the transcription factors Chinmo, Br-C and E93 during larva, pupa an adult respectively, coordinate the formation of the different organs that constitute the adult organism.\n\n## Introduction\n\nAnimal development passes through various stages characterised by distinct morphological and molecular changes. In humans, for instance, development continues from birth through to childhood and puberty to give rise to the adult form. As in many animals, in holometabolous insects such as Drosophila melanogaster, the developmental stages are sharply defined: embryogenesis gives rise to the larva, a juvenile stage, which, upon different rounds of growth and moulting, brings about a new stage structure, the pupa, when most of the larval cells die and the adult progenitor cells (imaginal cells) develop to generate the adult organism. The regulation of stage-specific differences is mediated by the action of two major developmental hormones, the steroid 20-hydroxyecdysone and the terpenoid juvenile hormone (Hiruma and Kaneko, 2013; Jindra et al., 2013; Truman, 2019; Truman and Riddiford, 2007; Truman and Riddiford, 2002; Yamanaka et al., 2013). Both hormones exert this precise developmental control by regulating the expression of three critical genes that encode for the stage-identity factors that compose the metamorphic gene network: the C2H2 zinc finger type factor Kr\u00fcppel-homolog 1 (Kr-h1), the helix-turn-helix Ecdysone inducible protein 93F (E93), and Broad-complex (Br-C; also known as broad), a member of the bric-a-brac-tramtrack-broad family (Mart\u00edn et al., 2021).\n\nThe deployment of the pupal-specific genetic program is controlled by the expression of Br-C at the larval-pupal transition (Truman, 2019; Zhou and Riddiford, 2002). Upon the formation of the pupa, hormone signalling triggers the expression of the helix-turn-helix factor E93, whose product represses Br-C expression and directs the formation of the final differentiated adult structures (Chafino et al., 2019; Mart\u00edn et al., 2021; Ure\u00f1a et al., 2014). While it is firmly established that Br-C and E93 are the stage-specifying genes for the pupal and adult states, the nature of the larval specifying gene has been elusive. To date, larval identity has been attributed to Kr-h1, which is present during the larval period and represses Br-C and E93 expression during this period (Huang et al., 2011; Ure\u00f1a et al., 2016). However, although Kr-h1 is undoubtedly critical for maintaining the larval state, evidence has shown that this factor cannot be considered the larval specifier per se. For example, depletion of Kr-h1 in Drosophila does not prevent normal larval development nor a timely transition to the pupa (Beck et al., 2004; Pecasse et al., 2000). In this regard, the product of chronologically inappropriate morphogenesis (chinmo) gene, another member of the BTB family of transcription factors, has been recently proposed to be responsible for larval identity in Drosophila (Truman and Riddiford, 2022).\n\nFirst isolated based on its requirement for the temporal identity of mushroom body neurons (Zhu et al., 2006), the identification of Chinmo as a more general larval specifier has provided invaluable insights into the molecular mechanisms underlying the control of juvenile identity. Yet, little is known about how this factor exerts its function along with Br-C and E93. Moreover, given that holometabolous insects are comprised of both larval tissues and pools of adult progenitor cells (known as imaginal cells), a central issue in the understanding of how larval identity is controlled is how larval and imaginal cells respond differentially to the same set of temporal transcription factors. Furthermore, in the sequential activation of chinmo, Br-C, and E93, the extent of the activity directly attributable to each transcription factor or to their mutual repression is still unclear.\n\nHere, we confirm the role of chinmo as larval specifier in larval and imaginal cells and establish its regulatory interactions with the other temporal specifiers. We also examine how the temporal sequence of Chinmo and Br-C differently affects with the genetic program that establishes larval vs. imaginal identity. Thus, we found that Chinmo controls larval development of larval and imaginal tissues in a Br-C-independent and -dependent manner, respectively. According to these data, and in the context of the metamorphic gene network, we also show that chinmo absence is critical for the transition from larva to pupa and then to adult, as it acts as a repressor of both Br-C and E93. In addition, we report that the chinmo homologue has a similar role in the cockroach Blattella germanica, thereby indicating that its function as a juvenile specifier precedes the hemimetabolous/holometabolous split. Finally, we show that in contrast to the well-characterised role of chinmo as a pro-oncogene, the Br-C pupal and E93 adult specifiers act mainly as tumour suppressor genes. These characteristics are maintained beyond insects and may account for the different role of some human BTB-zinc finger transcription factors in tumourigenesis.\n\n## Results and discussion\n\n### chinmo is expressed throughout larval stages and is required in larval and imaginal tissues\n\nExamination of chinmo expression revealed that it is expressed during embryogenesis and early larval development and that it is strongly downregulated from L3 (Figure 1A). Immunostaining analysis in imaginal and larval tissues confirmed the presence of Chinmo in L1 and L2 stages and its disappearance in late L3 (Figure 1B and C), an expression profile that is in agreement with previous studies (Narbonne-Reveau and Maurange, 2019; Truman and Riddiford, 2022). We next addressed its functional requirement by knocking down this factor with an RNAi transgene controlled by the ubiquitous Act-Gal4 driver. chinmo-depleted animals showed developmental arrest at the end of the first instar larval stage presenting a tanned cuticle clearly reminiscent of the tanned larval cuticle of the puparium (Figure 1D). Consistent with the phenotype, we found that arrested chinmo-depleted larvae precociously expressed pupal cuticle genes while blocked larval-specific genes activation (Figure 1E). These results confirm that chinmo is required for normal progression of the organism during the larval period, as proposed by Truman and Riddiford, 2022.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig1-v2.jpg)\n\n**Figure 1.:** (A) chinmo mRNA levels measured by quantitative real-time reverse transcriptase polymerase chain reaction (qRT-PCR) from embryo to the wandering stage of L3 (L3W). Transcript abundance values were normalised against the Rpl32 transcript. Fold changes were relative to the expression of embryo, arbitrarily set to 1. Error bars indicate the SEM (n\u2009=\u20093). (B\u2013C) Chinmo protein levels in the wing disc (B) and salivary glands (C) of larval L1, L2, and L3W (females) stages. (D) Compared with the control (Act-Gal4), overexpression of UAS chinmoRNAi in the whole body induced developmental arrest at the L1 stage. Scale bars represent 50 \u00b5m (B and C) and 0.5 mm (D). (E) Relative expression of larval-specific (Crp47Eg, Lcp65Ag3, and CG30457) and pupal-specific genes (Edg78E) in UAS-chinmoRNAi L1 larvae measured by qRT-PCR. Transcript abundance values were normalised against the Rpl32 transcript. Fold changes were relative to the expression in control larvae, arbitrarily set to 1 (dashed black line). Error bars indicate the SEM (n\u2009=\u20093). Statistical significance was calculated using t test (***p\u22640.001; **p\u22640.005).\n\nSince Drosophila larva consists of a combination of larval and imaginal tissues, we then analysed the contribution of chinmo to the development of these two types of tissues. Regarding the former, chinmo was selectively depleted in the salivary glands using the forkhead (fkh) driver (fkh-Gal4), which is active in this tissue from embryogenesis onwards. The salivary glands are a secretory organ that develops from embryonic epithelial placodes (Abrams et al., 2003; Bradley et al., 2001; Edgar et al., 2014; Zielke et al., 2013). This tissue is responsible for producing glycosylated mucin for the lubrication of food during the larval period (Costantino et al., 2008; Farka\u0161 et al., 2014; Riddiford, 1993; Syed et al., 2008) and for synthesising glue proteins for the attachment of the pupa to a solid surface at the onset of metamorphosis (Andres et al., 1993; Costantino et al., 2008; Kaieda et al., 2017). As it is shown in Figure 2A, although depletion of chinmo in the salivary glands did not affect the formation of this organ, it caused a dramatic decrease in normal larval development, as revealed by the strong reduction in size and DNA content of the gland cells (Figure 2B\u2013D). Consistently, the expression levels of both early and late specific salivary gland protein encoding genes, such as new glue 1\u20133 (ng) and Salivary gland secretion (Sgs), were virtually undetectable in chinmo-depleted salivary glands compared to control (Figure 2E). Remarkably, to further study the requirement of chinmo for larval tissue growth, we analyzed the role of this factor in the larval tracheal system. Although depletion of chinmo specifically in the tracheal cells, using a trh-Gal4 driver, resulted in many arrested L2 larvae with a necrotic tracheal system, escapers that reached L3 presented reduction in nuclear size and DNA content of tracheal cells as well as reduced length of the organ (Figure 2\u2014figure supplement 1), thus confirming that Chinmo is required for proper growth of larval tissues.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig2-v2.jpg)\n\n**Figure 2.:** (A) DAPI staining of salivary glands from control (fkh-Gal4) and UAS-chinmoRNAi larvae at L3W. Scale bar represents 50 \u00b5m. (B\u2013D) Comparison of the relative size of salivary glands (n\u2009=\u200910 for each genotype) (B), DAPI intensity (n\u2009=\u200950 for each genotype) (C), and nucleic size of salivary glands (n\u2009=\u200950 for each genotype) (D) between UAS-chinmoRNAi and control larvae at L3W. Error bars indicate the SEM (n\u2009=\u20095\u20138). (E) Relative expression of ng1-3 and Salivary glands secretion genes (Sgs) in UAS-chinmoRNAi L3W animals measured by quantitative real-time reverse transcriptase polymerase chain reaction (qRT-PCR). Transcript abundance values were normalised against the Rpl32 transcript. Error bars indicate the SEM (n\u2009=\u20095\u20138). Statistical significance was calculated using t test (***p\u22640.001).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Chinmo (in green), Br-C (in red) and DAPI-stained trachea from control (trh-Gal4) (A), UAS-chinmoRNAi (B) and UAS-Br-CRNAi; UAS-chinmoRNAi (C) mid L3 larvae. Growth defect of tracheal cells induced by the absence of chinmo (B) was not rescued by Br-C depletion (C). (D\u2013F) Comparison of the relative size of the trachea by measuring (n\u2009=\u200910 for each genotype) (D), DAPI intensity (E), and nucleic size of tracheal cells (F), and tracheal metamere length of control, UAS-chinmoRNAi and UAS-Br-CRNAi; UAS-chinmoRNAi mid L3 larvae. Error bars indicates the SEM (n\u2009=\u20095\u20138). Statistical significance was calculated using t test ( ****p\u22640.001). Scale bars represent 50\u00b5m.\n\nRegarding the role of chinmo in imaginal tissues, we knocked down this factor in the pouch region of wing imaginal discs from the embryonic period onwards using the escargot (esg) driver (esg-Gal4). As before, depletion of chinmo in the esg domain did not alter the specification of the disc, but strongly impeded its larval development. Thus, in late L3 wing discs only the notum, which does not express the esg-Gal4 driver, was observed while the wing pouch, revealed by positive GFP signal, was strongly reduced and did not show the expression of patterning genes such as wingless (wg) and cut (ct) (Figure 3A). In line with these results, although most of the chinmo-depleted animals arrested development as pharate adults, escapers that were able to eclose (15%) had no wings (Figure 3\u2014figure supplement 1). Similarly, depletion of chinmo in the eye disc using a specific driver (ey-Gal4) induced similar effects abolishing the developing tissue and the formation of the adult eye (Figure 3\u2014figure supplement 2). Taken together, these data show that Chinmo is required during the larval period to control the development and function of larval and imaginal tissues.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig3-v2.jpg)\n\n**Figure 3.:** Expression of Ct and Wg in wing discs of control (esg-Gal4) and UAS-chinmoRNAi L3W larvae. Wing discs were labelled to visualise the esg domain (GFP in green) and nuclei (DAPI). Ct and Wg were not detected in UAS-chinmoRNAi. Scale bars represent 50\u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Dorsal and lateral view of control (right panel) and UAS-chinmoRNAi (left panel) adult flies. In the absence of Chinmo, flies emerged without wings. Scale bar represents 1 mm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013C) Chinmo (in red), Br-C (in green), and DAPI (in grey) staining in eye discs of control (ey-Gal4) (A), UAS-chinmoRNAi (B), and UAS-Br-CRNAi; UAS-chinmoRNAi (C) L3W larvae. The dramatic eye disc reduction induced by the absence of chinmo (B) was rescued by Br-C depletion (C). (D\u2013E) Lateral view of control (D) and UAS-chinmoRNAi (E) adult flies. In the absence of Chinmo, flies emerged without eyes. Scale bars represent 50 \u00b5m in A\u2013B and 1 mm in D\u2013E. Scale bars represent 50\u00b5min A-C and 1mm in D-E .\n\n### Distinct roles of Chinmo in larval and progenitor cells\n\nA critical feature of the metamorphic gene network factors is that their sequential expression is achieved through a series of regulatory interactions between them. Therefore, we next sought to characterise the regulatory interactions of Chinmo with the pupal specifier Br-C and the adult specifier E93. To this end, we measured the expression of Br-C and E93 in chinmo-depleted salivary glands and wing discs. Contrary to recently published data (Truman and Riddiford, 2022), both tissues showed a significant and premature increase of Br-C protein levels as early as in L1 larvae, while no increase in E93 protein levels was detected in any tissue (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Expression of Chinmo, Br-C, and E93 in salivary glands of L1 control (fkh-Gal4) (A), and UAS-chinmoRNAi (B). (C\u2013D) Expression of Chinmo, Br-C, and E93 in wing discs of early L2 control (esg-Gal4) (C) and UAS-chinmoRNAi (D). The esg domain is marked with GFP and all cell nucleus with DAPI. In the absence of chinmo only Br-C shows early upregulation in both tissues. Scale bars represent 25 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) DAPI-stained SGs from control (fkh-Gal4) and UASBr-CZ1 in L3W larvae. Overexpression of Br-CZ1 impairs SGs grow. (B) Wing discs of control (esg-Gal4) and UA-SBr-CZ1 L3W larvae. Wing discs were labelled to visualise the esg domain (GFP in green) and nuclei (DAPI). Overexpression of Br-CZ1 in the esg domain abolishes wing development. Scale bar represents 50 \u00b5m in all panels.\n\nIn view of these results, we speculated whether the impairment of larval development observed in chinmo-depleted animals could be the result of precocious presence of the wrong stage-identity factor, in this case, Br-C. To address this notion, we precociously expressed Br-CZ1, the main Br-C isoform expressed during imaginal larval development (Narbonne-Reveau and Maurange, 2019), in salivary glands and wing discs. As previously described, ectopic expression of Br-CZ1 blocked Chinmo activation (Narbonne-Reveau and Maurange, 2019). As a consequence, precocious upregulation of Br-C blocked development in both tissues, phenocopying the loss of function of chinmo (Figure 4\u2014figure supplement 1). This result suggests that a fundamental function of Chinmo is to suppress the expression of the pupal specifier Br-C during the juvenile stages. To confirm this hypothesis, we simultaneously depleted chinmo and Br-C in salivary glands and wing discs. Remarkably, whereas salivary glands showed the same growth impairment observed upon chinmo depletion (Figure 5A-F, Figure 5\u2014figure supplement 1), depletion of Br-C largely rescued the abnormalities in the wing discs caused by depletion of chinmo: the double knock-out wing discs developed in a regular manner to reach normal size by the end of L3 and showed proper expression of patterning genes such as wg (Figure 5G, Figure 5\u2014figure supplement 2). The difference between larval and imaginal tissues was also observed in the analysis of the tracheal system and the eye imaginal disc. Whereas depletion of Br-C in the eye disc rescued the phenotype induced by the absence of chinmo (Figure 3\u2014figure supplement 1), the larval trachea failed to restore the growth defects observed in chinmo-depleted tracheal cells (Figure 2\u2014figure supplement 1). Taken together, our results suggest that a major regulatory function of chinmo during early larval development in imaginal cells is channelled through the repression of Br-C, while in larval tissues chinmo appears to exert specific growth-related functions that are independent to Br-C repression. Thus, in the imaginal cells chinmo appears to ensure the expression of juvenile genes by repressing Br-C, a well-known inhibitor of larval gene expression (Zhou and Riddiford, 2002). In this regard, it is tempting to speculate that Br-C might repress the early expression of critical components of signaling pathways such as Wg and EGFR, involved in wing fate specification in early larval development (Ng et al., 1996; Wang et al., 2000; Zecca and Struhl, 2002). In contrast, in larval tissues chinmo seems to exert an active role promoting growth and maturation. The fact that the Br-C-dependent Sgs genes fail to be activated in absence of chinmo, when Br-C is prematurely expressed, supports this idea (Figure 2E). This different response could be explained by the nature of the larval and imaginal tissues. While larval tissues are mainly devoted to growth during the larval period and then fated to die during the metamorphic transition, the developmental identity of the imaginal cells is modified along the larva-pupa-adult temporal axis to give rise to the adult structures. This difference could also account for the distinct roles of the other members of the metamorphic gene network in larval and imaginal tissues. Thus, while Br-C is necessary for the degeneration of the larval salivary glands during the onset of the pupal period (Jiang et al., 2000), it is critical for the correct eversion of the imaginal wing disc and for the temporary G2 arrest that synchronises the cell cycle in the wing epithelium during early pupa wing elongation (Guo et al., 2016). Likewise, E93 is necessary to activate autophagy for elimination of the larval mushroom body neuroblasts in late pupae (Pahl et al., 2019), whereas it controls the terminal adult differentiation of the imaginal wing during the same period (Ure\u00f1a et al., 2016; Uyehara et al., 2017).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig5-v2.jpg)\n\n**Figure 5.:** (A) DAPI-stained salivary glands from control (fkh-Gal4) and UAS-Br-CRNAi; UAS-chinmoRNAi L3W larvae. In the absence of chinmo and Br-C, salivary glands did not grow. (B\u2013D) Comparison of the relative size of salivary glands (n\u2009=\u200910 for each genotype) (B), DAPI intensity (n\u2009=\u200950 for each genotype) (C), and nucleic size of salivary glands (n\u2009=\u200930 for each genotype) (D) of control and UAS-Br-CRNAi; UAS-chinmoRNAi L3W larvae. (E\u2013F) Relative expression of (E) ng1-3 and (F) Salivary glands secretion genes in control and UAS-Br-CRNAi; UAS-chinmoRNAi L3W larvae measured by quantitative real-time reverse transcriptase polymerase chain reaction (qRT-PCR). Transcript abundance values were normalised against the Rpl32 transcript. Error bars in B and C indicate the SEM (n\u2009=\u20095\u20138). Statistical significance was calculated using t test ( ****p\u22640.001). (G) Expression of Chinmo, Br-C, and Wg in wing discs of UAS-Br-CRNAi; UAS-chinmoRNAi L3W larvae. Wing discs labelled to visualise the esg domain (GFP in green). In the absence of chinmo and Br-C, wing discs grow normally and express Wg correctly. Scale bars represent 50 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Expression of Chinmo (in red) and Br-C (in green) in SG of control (fkh-Gal4) (A) UAS-chinmoRNAi and (B) UAS-Br-CRNAi; UAS-chinmoRNAi (C) L2 larvae. Nuclei of SG cells are labelled with DAPI (in blue). Note that the (C) double knockdown of chinmo and Br-c completely abolished the expression of Br-C in the absence of Chinmo (C). Scale bars represent 50 \u00b5m.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013C) Control wing discs, esg-Gal4; UAS-GFP, were labelled to visualise the esg domain in green and in red (A) Br-C expression in L3W larvae, (B) Chinmo expression in early-mid L3 larvae and (C) the morphogenetic marker Wg in L3W larvae. Scale bar represents 50 \u00b5m in all panels.\n\n### Downregulation of chinmo is required during metamorphosis\n\nThe functional and expression data reported above show that Chinmo acts as a larval specifier in Drosophila. From this, we could infer that its absence by the end of larval development is required first for the transition to the prepupa, and then to allow terminal adult differentiation during the pupal period. If this were the case, maintenance of high levels of chinmo during late L3 would interfere with the larva-pupal transition. To test this possibility, we maintained high levels of chinmo in late L3 wing discs using the Gal4/Gal80ts system. Consistent with this hypothesis, overexpression of chinmo from early L3 in the anterior compartment of the disc using the cubitus interruptus ci-Gal4 driver impaired its larva-pupal transition as abolished Br-C expression and induced apoptosis at late L3 as revealed by the high expression of the effector caspase Dcp-1 (Figure 6A). As a result, the size of the anterior compartment was dramatically reduced, and the expression of patterning genes such as ct was halted (Figure 6B). Impairment of ct expression was not just a consequence of cell death, as ct expression was neither detected in wing discs overexpressing both chinmo and the p35 inhibitor of effector caspases (Hay et al., 1994; Figure 6C and D), but instead to a distinct response to the sustained expression of chinmo or to the consequent depletion of Br-C.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013H) Images of wing imaginal discs from L3W larvae. The indicated constructs were expressed under the control of the ci-Gal4 driver. Overexpression or depletion of the transgenes was activated in early L3 larvae and analyzed at the L3W stage. An UAS-GFP construct was used to mark the anterior region of the disc where the transgenes were induced or repressed (green). (A) Overexpression of chinmo repressed Br-C, induced Dcp-1, and (B) abolished Ct. (C) Overexpression of chinmo together with p35 repressed Br-C and blocked Dcp-1, but fails to restore normal expression of Ct (D). (E) Depletion of Br-C induced Chinmo and Dcp-1 and (F) repressed Ct. (G) In double depletion of Br-C and chinmo (H), Dcp-1 was not detected. Scale bars represent 50 \u00b5m.\n\nAn alternative way to keep high levels of chinmo at late L3 is by depleting Br-C, a well-known repressor of chinmo from mid L3 (Narbonne-Reveau and Maurange, 2019). Therefore, we knocked down Br-C in the anterior compartment of the wing disc and confirmed that Chinmo levels remained high in this compartment by late L3. Also, in this case we observed a strong Dcp-1 staining and impairment of ct expression (Figure 6E and F). Importantly, simultaneous depletion of chinmo and Br-C from early L3 did not lead to an increase in apoptosis (Figure 6G) nor altered the expression of patterning genes (Figure 5F), which indicates that tissue death at the end of the larval period is due to sustained expression of chinmo rather than the absence of Br-C. Altogether, these results confirm that the transition from larva to pupa must take place in the absence of the larval specifier Chinmo.\n\nNext, we analyzed whether lack of chinmo is also important during the pupal period to allow the E93-dependent development of the adult. To this end, we used the thermo-sensitive system to overexpress chinmo in the anterior part of the wing specifically during the pupal stage. To that aim, larvae were maintained at 18\u00b0C until 12 hr after pupa formation (APF) and then shifted to 29\u00b0C to allow the Gal4 to function. The resulting ectopic expression of chinmo led to a marked decrease in E93 protein levels (Figure 7A). As a result, the anterior compartment of the wing was strongly undifferentiated, a phenotype reminiscent of that observed in E93-depleted wings (Ure\u00f1a et al., 2016; Ure\u00f1a et al., 2014; Figure 7B). Taken together, our results show that chinmo must be downregulated during the initiation and throughout the metamorphic transition to allow the sequential expression of the pupal specifier Br-C and the adult specifier E93.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig7-v2.jpg)\n\n**Figure 7.:** (A) Overexpression of chinmo in the anterior part of the pupal wing at 72 hr after pupa formation (APF) using ci-Gal4 driver represses E93 expression and produced alterations in phalloidin (Pha) pattern. (B) Cuticle preparation of a pupal wing at 96 hr APF expressing chinmo under the control of the ci-Gal4 driver. Bottom panels are magnifications from upper images. The scale bars represent 50 \u03bcm (top panels) and 100 \u03bcm (bottom panels).\n\n### Antagonistic effects of chinmo and Br-C/E93 in tumour growth\n\nChinmo and Br-C belong to the extended family of BTB-zinc finger transcription factors, which are not restricted to insects. In humans, many such factors have been implicated in cancer, where they have opposing effects, from oncogenic to tumour suppressor functions (Siggs and Beutler, 2012). However, while overexpression of Drosophila chinmo has been found to cooperate with Ras or Notch to trigger massive tumour overgrowth (Doggett et al., 2015), changes in Drosophila Br-C expression have not been associated with any effect on tumourigenesis. Since the results described here, and those from other labs (Narbonne-Reveau and Maurange, 2019), indicate that chinmo and Br-C have antagonistic effects in terms of proliferation vs. differentiation, we addressed whether these opposite features might also be associated with pro-oncogenic or tumour suppressor properties, respectively. To test this notion, we resorted to the well-defined tumourigenesis model in Drosophila generated by the depletion of cell polarity genes such as lgl (Froldi et al., 2008; Gong et al., 2021). To downregulate lgl and generate an oncogenic sensitised background (Figure 8A, B and G), we triggered the expression of UAS-lglRNAi constructs in the imaginal wing disc pouch by means of nubbin-Gal4 (nub-Gal4) (see Materials and methods for details).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig8-v2.jpg)\n\n**Figure 8.:** (A\u2013F) Confocal images of L3 wing imaginal discs. The indicated constructs were expressed under the control of the nub-Gal4 driver. An UAS-RFP construct was used to mark the pouch region of the disc where the transgenes were induced (magenta). Nuclei were labelled with DAPI (grey). Scale bars at 100 \u03bcm. (G) Volumetric quantification of the RFP-positive area of the wing discs for the indicated groups. The pouch volumes were normalised to the mean of the control. Error bars in G indicate the SEM (n\u2009=\u200910). Welch\u2019s ANOVA (p<0.0001) followed by Dunnett\u2019s T3 post hoc tests (*p<0.05, **p<0.01, ***p<0.001).\n\nInterestingly, RNAi-mediated depletion of Br-C in the wing discs in the downregulated lgl background resulted in an increase in the mean wing pouch volume compared to the downregulation of lgl alone (Figure 8B, C and G). Consistently, overexpression of Br-C in the same lgl background had the opposite effect, reducing the size of the lgl-induced overgrowth, thereby confirming that Br-C expression elicits tumour suppressor activity (Figure 8D and G). Given that E93 has a similar pro-differentiation role to that of Br-C, we examined whether E93 also exerts tumour suppressor activity. We found that overexpression of E93 also reduced the size of lgl overgrowth (Figure 8E and G). However, as E93 overexpression in the wing disc triggers extensive cell death (data not shown), we assessed whether in this case the reduction of the pouch region was caused by apoptosis induction. However, combined overexpression of E93 with the p35 inhibitor of apoptosis still lead to a reduction in the size of the wing pouch in the lgl-sensitised background (Figure 8F and G). Thus, also in this regard, chinmo and Br-C/E93 play opposite functions, chinmo with pro-oncogenic features and Br-C and E93 act as tumour suppressor genes.\n\n### Role of chinmo in hemimetabolous development\n\nAs full metamorphosis is an evolutionary acquisition of holometabolous insects from hemimetabolous ancestors with no pupal stage (Truman, 2019), we sought to determine whether the role of chinmo as a larval specifier was also present in hemimetabolous insects. To this end, we used the German cockroach B. germanica as a model for hemimetabolous development. Blattella goes through six juvenile nymphal instars (N1\u2013N6) before developing into an adult. Metamorphosis takes place during N6 and is restricted to the transformation of the wing primordia into functional wings, the attainment of functional genitalia, and changes in cuticle pigmentation (Ure\u00f1a et al., 2014).\n\nA detailed Tblastn search in the Blattella genome database revealed the presence of a chinmo orthologue (Bg-chinmo). To study Bg-chinmo, we first examined its expression during the life cycle of Blattella. We found that it is highly expressed in embryos and decreases dramatically thereafter during nymphal development (Figure 9A). In order to analyze the function of the relative low levels of Bg-chinmo during postembryonic stages, we analysed the function of Bg-Chinmo by systemic injection of dsRNAs into newly emerged N4 instar. Specimens injected with dsMock were used as negative controls (Control animals). Importantly, whereas Control larvae underwent two nymphal molts before initiating metamorphosis at the end of the N6 stage, 43% of Bg-chinmoRNAi animals underwent only one nymphal molt before molting to an early adult after the N5 stage (Figure 9B\u2013E). Precocious Bg-chinmo-depleted adults were smaller than control counterparts as they skipped a nymphal stage. However, they presented all the external characteristics of an adult, namely functional hind- and fore-wings, adult legs (Figure 9F), adult cerci, mature genitalia, and adult-specific cuticle pigmentation. Altogether, these results suggest that the role of Chinmo as juvenile specifier seems to be conserved in hemimetabolous insects, thereby indicating that its developmental function precedes the hemimetabolous-holometabolous split.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/84648/elife-84648-fig9-v2.jpg)\n\n**Figure 9.:** (A\u2013B) Bg-chinmo mRNA levels measured by quantitative real-time reverse transcriptase polymerase chain reaction (qRT-PCR) from embryo to the last nymphal stage (N6) in whole body (A), and prothoracic gland (PG), and wings and elytra (B). Transcript abundance values were normalised against the Rpl32 transcript. Fold changes were relative to the expression of embryo (for whole body) or N5d0 (for PG and wings and elytra), arbitrarily set to 1. Error bars indicate the SEM (n\u2009=\u20093\u20135). (C\u2013D) Newly moulted N4 nymphs of B. germanica were injected with dsMock (Control) or dschinmo (Bg-chinmoRNAi) and left until adulthood. (C) Dorsal view of adult Control, and (B) premature adult Bg-chinmoRNAi. (E) Quantification of wing and elytra areas (cm2) of adult Control and Bg-chinmoRNAi premature adults. Error bars indicate the SEM (n\u2009=\u20094\u20136). Statistical significance was calculated using t-test (***p\u22640.001). (F) Control and Bg-chinmoRNAi wing, elytra and foreleg of newly emerged adult of B. germanica. The scale bar represents 2 mm.\n\nIn summary, we identified Chinmo as a new member of the metamorphic gene network acting as a general larval specifier, as recently proposed by Truman and Riddiford, 2022. Together with a number of previous reports (reviewed in Mart\u00edn et al., 2021), our results show that the temporal expression of Chinmo, Br-C, and E93 determines the tissue acquisition of gradual differentiation features from the juvenile to the adult to generate the distinct organs. Whereas Chinmo maintains cells in an undifferentiated state, Br-C and E93 induce progressively the differentiation program. This effect has already been shown in the central nervous system where early-born neurons are characterised by the expression of Chinmo, whereas smaller late-born neurons are marked by expression of Br-C (Maurange et al., 2008). Similarly, the chinmo-to-Br-C transition in Drosophila has been associated with the loss of the regenerative potential of imaginal cells (Narbonne-Reveau and Maurange, 2019). The fact that Br-C and E93 act as a tumour suppressor in an overproliferative background supports this idea.\n\nFinally, we found that the role of chinmo as larval specifier is conserved in hemimetabolous insects. Since hemimetabolous insects do not undergo the intermediate pupal stage, the transition from juvenile to adult, therefore, relies mainly on the shift from Chinmo to E93 during the last nymphal stage, with Kr-h1 also involved in preventing metamorphosis through the repression of E93 (Ure\u00f1a et al., 2016). However, although in hemimetabolans insects depletion of Br-C does not impair metamorphosis, Br-C does regulate the progressive growth of the metamorphic tissues, such as the wing pads and the dorsal thorax (Erezyilmaz et al., 2006; Fernandez-Nicolas et al., 2022; Huang et al., 2013; Konopova et al., 2011). This observation suggests that a premetamorphic role of Br-C was already present in hemimetabolous insects, acquiring an additional metamorphic role as pupal specifier during the evolution of holometabolous insects.\n\n## Materials and methods\n\n### Fly strains\n\nAll fly stocks were reared at 25\u00b0C on standard flour/agar Drosophila media. The Gal4/UAS system was used to drive the expression of transgenes at 29\u00b0C. Gal4/Gal80ts system was used for conditional activation. In these experiments, crosses were kept at 18 until L2 or L3-late molt and then shifted to 29\u00b0C for conditional induction. The following strains used in this study were provided by the Bloomington Drosophila Stock Center (BDSC): fkh-Gal4 (#78060); Act-Gal4 (#3954); Tub-Gal80ts (#7016), UAS-chinmoRNAi (#26777); UAS-chinmo (#50740); UAS-Br-CRNAi (#51378); UAS-p35 (#5072); UAS-myr-mRFP (#7118); and UAS-mCD8::GFP (#32186) were used to follow the GAL4 driver activity. trh-Gal4 (Kondo and Hayashi, 2013) and ey-Gal4 (#8227) were used to drive the expression of distinct constructs in the trachea and eye disc, respectively. A recombinant stock containing UAS-lgl-RNAi51247 and UAS-lgl-RNAi51249 (third chromosome) was used to generate the tumours (Daniel et al., 2018). nub-Gal4 (Calleja et al., 1996), esg-Gal4, UAS-GFP (Jiang et al., 2009), and ci-Gal4 (Croker et al., 2006) were used to drive the expression of different constructs in the wing disc. Crosses to CantonS line were used as control.\n\n### B. germanica\n\nSpecimens of B. germanica were obtained from a colony reared in the dark at 30 \u00b1 1\u00b0C and 60\u201370% relative humidity. Cockroaches undergo hemimetabolous development, where growth and maturation take place gradually and simultaneously during a series of nymphal instars. In our rearing conditions, B. germanica undergoes six nymphal instars (N1\u2013N6) before molting into the adult. All dissections and tissue sampling were carried out on carbon dioxide anesthetised specimens.\n\n### Immunohistochemistry\n\nFor fluorescent imaging, salivary glands, wing discs from different juvenile stages and pupal wings were dissected in 1\u00d7 phosphate-buffered saline (PBS) and fixed in 4% formaldehyde for 20 min at RT. The tissues were rinsed in 0.1% Triton X-100 (PBST) or 0.3% PBST in pupal wings for 1 hr and incubated at 4\u00b0C with primary antibodies diluted in PBST overnight. After incubation with primary antibodies, the tissues were washed with PBST (3\u00d710 min washes) and incubated with adequate combinations of secondary antibodies (Alexa Conjugated dyes 488, 555, 647, Life Technologies, 1:500) for 2 hr at RT, followed by 3\u00d710 min washes with PBST, and then rinsed with PBS before mounting in Vectashield with DAPI (Vector Laboratories, H1200) for image acquisition. The following primary antibodies were used at indicated dilution: rat anti-Chinmo (1:500, N, Sokol), mouse anti-Cut (1:200, Developmental Studies Hybridoma Bank (DSHB) #2B10), mouse anti-Wg (1:200, DSHB #4D4), mouse anti Br-C core (1:250 DSHB #25E9.D7), rabbit anti-cleaved Dcp-1 (1:100, Cell Signaling #9578), and rabbit anti-E93 (1:50, this work).\n\n### Antibody generation\n\nA peptide corresponding to the 23 residues (GRRAYSEEDLSRALQDVVANKL) of E93 was coupled to KLH and was injected into rabbits. Polyclonal antisera were affinity-purified and were found to be specific for E93, by western blotting and by immunofluorescence.\n\n### RNA extraction and quantitative real-time reverse transcriptase polymerase chain reaction\n\nTotal RNA was isolated with the GenElute Mammalian Total RNA kit (Sigma), DNAse treated (Promega) and reverse transcribed with Superscript II reverse transcriptase (Invitrogen) and random hexamers (Promega). In the case of Drosophila, cDNA was obtained from whole larvae (CantonS) or L3 wandering salivary glands. B. germanica cDNAs were obtained from whole nymphs or wings and prothoracic gland (PG) of different juvenile instars. All the samples were collected from females except in the case of L1 and L2 tissues. Relative transcripts levels were determined by real-time polymerase chain reaction (PCR) (quantitative PCR [qPCR]), using iTaq Universal SYBR Green Supermix (Bio-Rad). To standardise the qPCR inputs, a master mix that contained iTaq Universal SYBR Green PCR Supermix and forward and reverse primers was prepared (final concentration: 100 nM/qPCR). The qPCR experiments were conducted with the same quantity of tissue equivalent input for all treatments and each sample was run in duplicate using 2 \u03bcl of cDNA per reaction. All the samples were analyzed on the iCycler iQ Real Time PCR Detection System (Bio-Rad). RNA expression was calculated in relation to the expression of DmRpl32 or BgActin5C. Primers sequences for qPCR analyses were (Duan et al., 2020):\n\n### RNA interference\n\nRNA interference (RNAi) in vivo in nymphs was performed as previously described (Cruz et al., 2007; Mart\u00edn et al., 2006). A dose of 1 \u00b5l (4\u20138 \u00b5g/\u00b5l) of the dsRNA solution was injected into the abdomen of newly antepenultimate (N4d0) instar nymphs, and left until analysed. To promote the RNAi effect, the same dose of dsRNAs was reapplied to all treated animals after 3 days (N4d3) from the first injection. Control dsRNA consisted of a non-coding sequence from the pSTBlue-1 vector (dsControl). The primers used to generate templates via PCR for transcription of the dsRNA were:\n\n### Imaging acquisition and analysis\n\nImages were obtained with the Leica TCS SP5 and the Zeiss LSM880 and LSM780 confocal microscopes. The same imaging acquisition parameters were used for all the comparative analyses. Images were processed with the Imaris Software (Oxford Instruments), Fiji, or Photoshop CS4 (Adobe). For DNA quantification and nuclear size of salivary glands, DNA staining intensity in the salivary glands and tracheal cells was obtained from z stacked images every 0.25 \u03bcm of DAPI-stained L3 larvae. Image analysis was performed using Fiji. For the volumetric calculation of the wing pouch region in Imaris software (Oxford Instruments), the regions of interest were selected based on the RFP fluorescence (induced by nub-Gal4) in confocal stacks that included the whole disc. The surface function of Imaris was used to segment the wing pouch and the surface volume was calculated by the software. Adult flies, nymphal parts, and adult cockroach images were acquired using AxioImager.Z1 (ApoTome 213 System, Zeiss) microscope, and images were subsequently processed using Photoshop CS4 (Adobe).\n\n### Statistical analysis\n\nStatistical analysis and graphical representations were performed in GraphPad Prism 9 software. All experiments were performed with at least three biological replicates. Two-tailed Student\u2019s test and Welch\u2019s ANOVA followed by Dunnett\u2019s T3 post hoc tests were used to determine significant differences.\n",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "9eee70aa-ba1b-4e42-b4fc-d630abe18a81",
+      "submission_id": "380c83d1-cf23-4235-8d20-6390a271cd18",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vilaiwan M Fernandes, https://ror.org/02jx3x895 University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84648.sa0](https://doi.org/10.7554/eLife.84648.sa0)\n\nThis important study demonstrates that the transcription factor Chinmo is a master regulator that maintains larval growth and development as part of the metamorphic gene network in Drosophila. Chinmo does so in part by regulating Broad expression in imaginal tissues (e.g. eye and wing discs) and in a Broad-independent manner in other larval tissues such as the salivary glands and larval trachea. Finally, the authors demonstrate that the role of Chinmo in promoting larval development is conserved between holometabolous insects and hemimetabolous insects, which lack a pupal stage. The data were collected and analyzed using solid and validated methodology and will be of interest to a broad audience including those interested in development and evolution.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Vilaiwan M Fernandes, https://ror.org/02jx3x895 University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84648.sa1](https://doi.org/10.7554/eLife.84648.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Antagonistic role of the BTB-zinc finger transcription factors Chinmo and Broad in the juvenile/pupal transition and in growth control\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Claude Desplan as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: James W Truman (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions and clarifications of reviewer feedback\n\n1. Please test the relationship between Chinmo and Broad in imaginal/larval tissues (in addition to the wing disc and salivary glands, which are provided in the manuscript). The reviewers felt this would strengthen the authors' claim that Chinmo promotes larval development in a Br-C-dependent manner in imaginal tissues and a Br-C-independent manner in other larval tissues.\n\n2. Related to point 2 raised by Reviewer #2, following the consultation session, the reviewers agreed that the role of ecdysone and EcR in the transition from Chinmo to Broad is of obvious interest, but that the manuscript stands well without this additional information. While it would be interesting to know if larval cells show a similar transition time and dependence on EcR (perhaps by using an EcR-DN under conditional GAL-80 control) this information does not impact the main message of the manuscript and is therefore not essential.\n\n3. Regarding sex-specific regulation of Chinmo (point 3 raised by reviewer#2), following the consultation session, the reviewers have asked that the figure legend and methods relating to Figure 1 be revised to clarify which sex was used throughout the study.\n\n4. There are some discrepancies with the model that Chinmo promotes larval development and represses the larval-to-pupal transition in larval tissues independently of Broad (see specific reviewer comments) since salivary glands lacking chinmo would be expected to express higher rather than lower levels of sgs genes. This discrepancy may relate to the reduced size of the tissue. It is therefore possible that Chinmo may feed into two parallel pathways, one to regulate growth independently of Broad and the other involving Broad to regulate premetamorphic changes.\n\n- Please examine early larval salivary gland proteins such as ng-1 to -3 that are expressed in salivary glands before the critical weight. Also, it would be interesting if the appearance of the SGS proteins after chinmo knock-down (Figure 5E) is abolished by simultaneous knock-down of broad.\n\n5. Please amend the text to include further consideration of the role of Broad in hemimetabolous insects in light of other publications (see comments from reviewer #3 for more details).\n\nReviewer #1 (Recommendations for the authors):\n\nPlease accept these manuscript comments, which include experimental suggestions as well as minor spelling errors:\n\n1. In the legend for Figure 1E, the larval stage isolated at the time of qPCR should be reported.\n\n2. In Figure 1F, the staining of Br-C and Chinmo in L3W wing discs should be repeated with proper controls included: control wing discs, UAS-chinmoRNAi with an additional \"control\" UAS-line such as UAS-laczRNAi. The latter should be included since the stated conclusion of this experiment is that wing disc growth requires the absence of Br-C until the L3W stage. The restoration of normal growth in the experiment shown could be a result of attenuated Chinmo depletion due to the presence of a 3rd UAS construct (there is already a UAS-GFP in the background).\n\n3. For similar reasons stated above, the following experiments/figures should be shown with proper controls:\n\n\u2013 Figure 5A (single knockdowns of Br-C or chinmo, each with UAS control);\n\n\u2013 Figure 5F (control wing disc staining, as well as UAS-chinmoRNAi with a UAS control).\n\n4. Control stainings should be included for:\n\n\u2013 Br-C and Ct staining in control wing discs are not shown in any figures and should be included in experimental controls for each figure where this staining appears (e.g., Fig6);\n\n\u2013 Same comment for E93 in Fig7.\n\n5. Stage of animals used to assess SG gene expression in Figure 2E should be reported.\n\n6. In Figure 4, unique subfigure letters for each genotype would aid analysis/reading.\n\n7. Unique figure letters for each graph in 9A would aid reader analysis. Also, the \"PG\" and \"wing and elytra\" graphs should each include a y-axis label.\n\n8. In the text description of the esgGal4 driver (lines 150-151), I suggest revising it to the following: \"\u2026we knocked down this factor in the pouch region of wing imaginal discs\u2026\"\n\n9. In line 181, there is a minor typo. Would revise it to \"As a consequence, precocious upregulation of Br-C blocked development in both tissues, phenocopying the loss of chinmo.\n\n10. In lines 205-213, literature evidence is presented to bolster the notion that MGN factors can exert different functions depending on the tissue, as they demonstrate Chinmo acting in both Br-C-dependent and independent manners to promote larval development. I'm not sure that I logically follow this argument and I don't think it strengthens the previous statement. If it is possible to clarify the argument then I support that, but otherwise, I would suggest removing this portion of the text.\n\n11. In line 282, remove the word \"also\"\n\n12. In lines 315-317, the authors describe phenotypes that are preserved in the absence of Bg-chinmo (Figure 9). I recommend including representative images that show that the mentioned adult structures are preserved in Bg-chinmoRNAi.\n\n13. In line 335, there is a typo in the word \"background\".\n\nReviewer #2 (Recommendations for the authors):\n\nOverall, the paper is a very nice piece of work. Besides my comments in the Public Review, there are a couple of general issues in the presentation. One is that through the text and figures the authors might use FlyBase terminology for the different genetic constructs: \"UAS-chinmo\" rather than \"UASChinmo\", nub-GAL4 rather than nubGal4, and esg-GAL4, UAS-GFP\" rather than \"esgGal4UASGFP\" (ln 359).\n\nA second general issue is that the font for the labels on some of the confocal images is so small that it is unreadable (Figure 4, 5F, 6, 7, and 8A)\n",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "682c72da-f04e-4f87-8e6e-0bfdd0fef649",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C1",
+      "claim": "chinmo is expressed during embryogenesis and early larval development and is strongly downregulated from L3",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of chinmo expression revealed that it is expressed during embryogenesis and early larval development and that it is strongly downregulated from L3 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 1A measuring chinmo mRNA levels across developmental stages",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "88de6cb4-9006-422d-a946-43bf1ff1d550",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C2",
+      "claim": "Chinmo protein is present in L1 and L2 stages and disappears in late L3 in imaginal and larval tissues",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining analysis in imaginal and larval tissues confirmed the presence of Chinmo in L1 and L2 stages and its disappearance in late L3 (Figure 1B and C), an expression profile that is in agreement with previous studies (Narbonne-Reveau and Maurange, 2019; Truman and Riddiford, 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 1B and C, and corroborated by citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "2e25ff99-a97c-4960-b3ff-7b70ae57afa1",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C3",
+      "claim": "chinmo-depleted animals show developmental arrest at the end of the first instar larval stage presenting a tanned cuticle reminiscent of the puparium",
+      "claim_type": "EXPLICIT",
+      "source": "chinmo-depleted animals showed developmental arrest at the end of the first instar larval stage presenting a tanned cuticle clearly reminiscent of the tanned larval cuticle of the puparium (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic observation shown in Figure 1D of Act-Gal4 driven chinmoRNAi larvae",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "b5b52497-f713-41ba-8b87-a567e88555c2",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C4",
+      "claim": "Arrested chinmo-depleted larvae precociously express pupal cuticle genes while blocking larval-specific genes activation",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the phenotype, we found that arrested chinmo-depleted larvae precociously expressed pupal cuticle genes while blocked larval-specific genes activation (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data in Figure 1E showing upregulation of Edg78E and downregulation of Crp47Eg, Lcp65Ag3, and CG30457",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "373113dd-3252-4d53-bc87-ae384a60e956",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C5",
+      "claim": "chinmo is required for normal progression of the organism during the larval period",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that chinmo is required for normal progression of the organism during the larval period, as proposed by Truman and Riddiford, 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the developmental arrest phenotype and gene expression changes, with citation to supporting work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "8c53f8c6-b0c7-4bc8-970f-d945cd8368ca",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C6",
+      "claim": "Depletion of chinmo in salivary glands causes a dramatic decrease in normal larval development with strong reduction in size and DNA content of gland cells",
+      "claim_type": "EXPLICIT",
+      "source": "As it is shown in Figure 2A, although depletion of chinmo in the salivary glands did not affect the formation of this organ, it caused a dramatic decrease in normal larval development, as revealed by the strong reduction in size and DNA content of the gland cells (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative measurements in Figure 2B-D showing reduced salivary gland size, DAPI intensity, and nuclear size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "0d72ca59-39e7-46f1-8b75-8fb33d6556be",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C7",
+      "claim": "Expression levels of early and late specific salivary gland protein encoding genes (ng1-3 and Sgs) are virtually undetectable in chinmo-depleted salivary glands",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the expression levels of both early and late specific salivary gland protein encoding genes, such as new glue 1\u20133 (ng) and Salivary gland secretion (Sgs), were virtually undetectable in chinmo-depleted salivary glands compared to control (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data in Figure 2E showing dramatic reduction in ng1-3 and Sgs gene expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "eed7ac81-5874-4443-b962-2647deac41f8",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C8",
+      "claim": "Depletion of chinmo in tracheal cells results in reduction in nuclear size and DNA content of tracheal cells as well as reduced length of the organ",
+      "claim_type": "EXPLICIT",
+      "source": "Although depletion of chinmo specifically in the tracheal cells, using a trh-Gal4 driver, resulted in many arrested L2 larvae with a necrotic tracheal system, escapers that reached L3 presented reduction in nuclear size and DNA content of tracheal cells as well as reduced length of the organ (Figure 2\u2014figure supplement 1), thus confirming that Chinmo is required for proper growth of larval tissues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by measurements shown in Figure 2\u2014figure supplement 1 of tracheal cell size, DAPI intensity, and tracheal length",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "99086edd-8b43-463f-9228-c72cff1509c7",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C9",
+      "claim": "Chinmo is required for proper growth of larval tissues",
+      "claim_type": "EXPLICIT",
+      "source": "Although depletion of chinmo specifically in the tracheal cells, using a trh-Gal4 driver, resulted in many arrested L2 larvae with a necrotic tracheal system, escapers that reached L3 presented reduction in nuclear size and DNA content of tracheal cells as well as reduced length of the organ (Figure 2\u2014figure supplement 1), thus confirming that Chinmo is required for proper growth of larval tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple observations of growth defects in salivary glands and trachea upon chinmo depletion",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "460aecfe-b557-435f-94db-f7035ff04001",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C10",
+      "claim": "Depletion of chinmo in the wing pouch strongly impedes larval development, with the wing pouch being strongly reduced and not showing expression of patterning genes wg and ct",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in late L3 wing discs only the notum, which does not express the esg-Gal4 driver, was observed while the wing pouch, revealed by positive GFP signal, was strongly reduced and did not show the expression of patterning genes such as wingless (wg) and cut (ct) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 3A showing absence of Wg and Ct expression in chinmo-depleted wing pouches",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "fa480ce7-3988-4a48-b548-5dba13f837b8",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C11",
+      "claim": "Most chinmo-depleted animals arrest development as pharate adults, and escapers that eclose (15%) have no wings",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these results, although most of the chinmo-depleted animals arrested development as pharate adults, escapers that were able to eclose (15%) had no wings (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by adult phenotype images in Figure 3\u2014figure supplement 1 showing wingless flies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "6f812ce0-5f9f-45e7-8c43-a3080257509a",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C12",
+      "claim": "Depletion of chinmo in the eye disc abolishes the developing tissue and the formation of the adult eye",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, depletion of chinmo in the eye disc using a specific driver (ey-Gal4) induced similar effects abolishing the developing tissue and the formation of the adult eye (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by images in Figure 3\u2014figure supplement 2 showing reduced eye disc and eyeless adult flies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "b6e61103-1743-4224-ac12-766d811f5b34",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C13",
+      "claim": "Chinmo is required during the larval period to control the development and function of larval and imaginal tissues",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data show that Chinmo is required during the larval period to control the development and function of larval and imaginal tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple tissue-specific depletion experiments showing developmental defects in both larval and imaginal tissues",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "bf39d875-2e68-4f17-a65e-12594a355428",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C14",
+      "claim": "Both salivary glands and wing discs show a significant and premature increase of Br-C protein levels as early as in L1 larvae upon chinmo depletion",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to recently published data (Truman and Riddiford, 2022), both tissues showed a significant and premature increase of Br-C protein levels as early as in L1 larvae, while no increase in E93 protein levels was detected in any tissue (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 4 showing Br-C upregulation in chinmo-depleted tissues, and contradicts a previous publication",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "73e1b76c-3017-4a7c-a8d7-443ee5e6fa2c",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C15",
+      "claim": "No increase in E93 protein levels is detected in salivary glands or wing discs upon chinmo depletion",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to recently published data (Truman and Riddiford, 2022), both tissues showed a significant and premature increase of Br-C protein levels as early as in L1 larvae, while no increase in E93 protein levels was detected in any tissue (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 4 showing no E93 upregulation in chinmo-depleted tissues",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "335bf145-d913-4257-96c6-3c795615f136",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C16",
+      "claim": "Ectopic expression of Br-CZ1 blocks Chinmo activation",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described, ectopic expression of Br-CZ1 blocked Chinmo activation (Narbonne-Reveau and Maurange, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation supported by citation to previous work",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "0ec67fe8-d9a5-4404-bba5-a77dbe850c0f",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C17",
+      "claim": "Precocious upregulation of Br-C blocks development in both salivary glands and wing discs, phenocopying the loss of function of chinmo",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, precocious upregulation of Br-C blocked development in both tissues, phenocopying the loss of function of chinmo (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by images in Figure 4\u2014figure supplement 1 showing growth defects upon Br-CZ1 overexpression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "5c15eaf0-cc7b-47b5-9203-19cb048f28bc",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C18",
+      "claim": "A fundamental function of Chinmo is to suppress the expression of the pupal specifier Br-C during the juvenile stages",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that a fundamental function of Chinmo is to suppress the expression of the pupal specifier Br-C during the juvenile stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Br-C overexpression phenocopies chinmo loss of function",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "f22c9b40-b393-4c5f-b363-432b60f6aa35",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C19",
+      "claim": "Salivary glands show the same growth impairment upon simultaneous depletion of chinmo and Br-C as observed upon chinmo depletion alone",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, whereas salivary glands showed the same growth impairment observed upon chinmo depletion (Figure 5A-F, Figure 5\u2014figure supplement 1), depletion of Br-C largely rescued the abnormalities in the wing discs caused by depletion of chinmo",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data in Figure 5A-F showing no rescue of salivary gland size, DNA content, or gene expression in double knockdown",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "30ffdf2c-1668-4fd1-ab66-fe874eae389d",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C20",
+      "claim": "Depletion of Br-C largely rescues the abnormalities in wing discs caused by depletion of chinmo",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, whereas salivary glands showed the same growth impairment observed upon chinmo depletion (Figure 5A-F, Figure 5\u2014figure supplement 1), depletion of Br-C largely rescued the abnormalities in the wing discs caused by depletion of chinmo: the double knock-out wing discs developed in a regular manner to reach normal size by the end of L3 and showed proper expression of patterning genes such as wg (Figure 5G, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by images in Figure 5G showing normal wing disc development and Wg expression in double knockdown",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "82940b86-5917-4f05-851c-dfa0e38be293",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C21",
+      "claim": "Depletion of Br-C in the eye disc rescues the phenotype induced by the absence of chinmo",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas depletion of Br-C in the eye disc rescued the phenotype induced by the absence of chinmo (Figure 3\u2014figure supplement 1), the larval trachea failed to restore the growth defects observed in chinmo-depleted tracheal cells (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by images in Figure 3\u2014figure supplement 2 showing rescue of eye disc development in double knockdown",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "f6ecb854-0a93-4cc2-aca8-159ec0224faa",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C22",
+      "claim": "The larval trachea fails to restore the growth defects observed in chinmo-depleted tracheal cells upon Br-C depletion",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas depletion of Br-C in the eye disc rescued the phenotype induced by the absence of chinmo (Figure 3\u2014figure supplement 1), the larval trachea failed to restore the growth defects observed in chinmo-depleted tracheal cells (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2\u2014figure supplement 1 showing no rescue of tracheal growth defects in double knockdown",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "c4aa96df-80c4-4279-8728-ff9f590dc794",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C23",
+      "claim": "A major regulatory function of chinmo during early larval development in imaginal cells is channelled through the repression of Br-C",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that a major regulatory function of chinmo during early larval development in imaginal cells is channelled through the repression of Br-C, while in larval tissues chinmo appears to exert specific growth-related functions that are independent to Br-C repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential rescue of wing disc versus salivary gland phenotypes upon Br-C co-depletion",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "ec7a6045-fc9a-4bb1-b726-3377126b7815",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C24",
+      "claim": "In larval tissues chinmo exerts specific growth-related functions that are independent of Br-C repression",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that a major regulatory function of chinmo during early larval development in imaginal cells is channelled through the repression of Br-C, while in larval tissues chinmo appears to exert specific growth-related functions that are independent to Br-C repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of rescue of salivary gland and tracheal phenotypes upon Br-C co-depletion",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "308a36db-0bae-4d83-b5e1-f3c84526c45d",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C25",
+      "claim": "In imaginal cells chinmo ensures the expression of juvenile genes by repressing Br-C, a well-known inhibitor of larval gene expression",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the imaginal cells chinmo appears to ensure the expression of juvenile genes by repressing Br-C, a well-known inhibitor of larval gene expression (Zhou and Riddiford, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the rescue of imaginal disc phenotypes and supported by citation to Br-C function",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "afa7539f-7fb8-44bd-8c2c-914c786cc18c",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C26",
+      "claim": "Br-C might repress the early expression of critical components of signaling pathways such as Wg and EGFR involved in wing fate specification in early larval development",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it is tempting to speculate that Br-C might repress the early expression of critical components of signaling pathways such as Wg and EGFR, involved in wing fate specification in early larval development (Ng et al., 1996; Wang et al., 2000; Zecca and Struhl, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on observed loss of Wg expression and supported by citations to pathway functions",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "71953426-883a-4f93-9f77-a5c5150a3d57",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C27",
+      "claim": "In larval tissues chinmo exerts an active role promoting growth and maturation",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in larval tissues chinmo seems to exert an active role promoting growth and maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Br-C-dependent Sgs genes fail to activate in absence of chinmo despite premature Br-C expression",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "6ae1ca09-1966-48b7-872d-67e70c5e46c4",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C28",
+      "claim": "The Br-C-dependent Sgs genes fail to be activated in absence of chinmo when Br-C is prematurely expressed",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the Br-C-dependent Sgs genes fail to be activated in absence of chinmo, when Br-C is prematurely expressed, supports this idea (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data in Figure 2E showing lack of Sgs expression in chinmo-depleted salivary glands",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "ecaca8f3-2bc2-4ffd-95e7-1de62adb57bb",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C29",
+      "claim": "Br-C is necessary for the degeneration of the larval salivary glands during the onset of the pupal period",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while Br-C is necessary for the degeneration of the larval salivary glands during the onset of the pupal period (Jiang et al., 2000), it is critical for the correct eversion of the imaginal wing disc and for the temporary G2 arrest that synchronises the cell cycle in the wing epithelium during early pupa wing elongation (Guo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "c00d5f12-d6dc-4547-a6da-0d7c8e473275",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C30",
+      "claim": "Br-C is critical for the correct eversion of the imaginal wing disc and for the temporary G2 arrest that synchronises the cell cycle in the wing epithelium during early pupa wing elongation",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while Br-C is necessary for the degeneration of the larval salivary glands during the onset of the pupal period (Jiang et al., 2000), it is critical for the correct eversion of the imaginal wing disc and for the temporary G2 arrest that synchronises the cell cycle in the wing epithelium during early pupa wing elongation (Guo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "f4a3a9f8-e1d3-40f7-82a1-452df258282f",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C31",
+      "claim": "E93 is necessary to activate autophagy for elimination of the larval mushroom body neuroblasts in late pupae",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, E93 is necessary to activate autophagy for elimination of the larval mushroom body neuroblasts in late pupae (Pahl et al., 2019), whereas it controls the terminal adult differentiation of the imaginal wing during the same period (Ure\u00f1a et al., 2016; Uyehara et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "7282dc48-6930-4251-a5e0-5f188ea8b8ad",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C32",
+      "claim": "E93 controls the terminal adult differentiation of the imaginal wing during late pupal period",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, E93 is necessary to activate autophagy for elimination of the larval mushroom body neuroblasts in late pupae (Pahl et al., 2019), whereas it controls the terminal adult differentiation of the imaginal wing during the same period (Ure\u00f1a et al., 2016; Uyehara et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "44d01789-cf6f-466a-8a37-774c0a9f8b19",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C33",
+      "claim": "Overexpression of chinmo from early L3 in the anterior compartment of the wing disc impairs its larva-pupal transition by abolishing Br-C expression and inducing apoptosis at late L3",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, overexpression of chinmo from early L3 in the anterior compartment of the disc using the cubitus interruptus ci-Gal4 driver impaired its larva-pupal transition as abolished Br-C expression and induced apoptosis at late L3 as revealed by the high expression of the effector caspase Dcp-1 (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 6A showing loss of Br-C and high Dcp-1 expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "df834cbc-7827-48d6-a0e2-d4953f5ae06b",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C34",
+      "claim": "Overexpression of chinmo results in dramatically reduced size of the anterior compartment and halted expression of patterning genes such as ct",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the size of the anterior compartment was dramatically reduced, and the expression of patterning genes such as ct was halted (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 6B showing loss of Ct expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "0248f5e7-f58c-4ebf-90f0-966baee78699",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C35",
+      "claim": "Impairment of ct expression upon chinmo overexpression is not just a consequence of cell death but a distinct response to sustained chinmo expression or consequent Br-C depletion",
+      "claim_type": "EXPLICIT",
+      "source": "Impairment of ct expression was not just a consequence of cell death, as ct expression was neither detected in wing discs overexpressing both chinmo and the p35 inhibitor of effector caspases (Hay et al., 1994; Figure 6C and D), but instead to a distinct response to the sustained expression of chinmo or to the consequent depletion of Br-C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 6C-D showing loss of Ct despite blocking apoptosis with p35",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "46a41b80-4b44-4f92-a26a-3f8e12faf9f0",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C36",
+      "claim": "Depletion of Br-C in the anterior compartment of the wing disc results in high Chinmo levels, strong Dcp-1 staining, and impairment of ct expression",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we knocked down Br-C in the anterior compartment of the wing disc and confirmed that Chinmo levels remained high in this compartment by late L3. Also, in this case we observed a strong Dcp-1 staining and impairment of ct expression (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 6E-F showing maintained Chinmo, high Dcp-1, and loss of Ct",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "e19b0f19-15cd-4b54-92cb-7a699d0a4d33",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C37",
+      "claim": "Simultaneous depletion of chinmo and Br-C from early L3 does not lead to an increase in apoptosis nor altered expression of patterning genes",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, simultaneous depletion of chinmo and Br-C from early L3 did not lead to an increase in apoptosis (Figure 6G) nor altered the expression of patterning genes (Figure 5F), which indicates that tissue death at the end of the larval period is due to sustained expression of chinmo rather than the absence of Br-C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 6G showing no Dcp-1 and Figure 5F showing normal Wg expression in double knockdown",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "221cf3fc-0ac7-4bba-83ba-6a593dddf03d",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C38",
+      "claim": "Tissue death at the end of the larval period is due to sustained expression of chinmo rather than the absence of Br-C",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, simultaneous depletion of chinmo and Br-C from early L3 did not lead to an increase in apoptosis (Figure 6G) nor altered the expression of patterning genes (Figure 5F), which indicates that tissue death at the end of the larval period is due to sustained expression of chinmo rather than the absence of Br-C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the rescue of apoptosis in double knockdown experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "e45c1f36-4094-46be-b966-fce68a136cdf",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C39",
+      "claim": "The transition from larva to pupa must take place in the absence of the larval specifier Chinmo",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results confirm that the transition from larva to pupa must take place in the absence of the larval specifier Chinmo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that sustained chinmo expression blocks the larva-pupa transition",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "04e2394e-2398-4c49-b6a5-62d02d653947",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C40",
+      "claim": "Ectopic expression of chinmo during the pupal stage leads to a marked decrease in E93 protein levels",
+      "claim_type": "EXPLICIT",
+      "source": "To that aim, larvae were maintained at 18\u00b0C until 12 hr after pupa formation (APF) and then shifted to 29\u00b0C to allow the Gal4 to function. The resulting ectopic expression of chinmo led to a marked decrease in E93 protein levels (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 7A showing reduced E93 upon chinmo overexpression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "59c4ce8f-6276-46e3-8aff-b0fb989db2d9",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C41",
+      "claim": "Ectopic expression of chinmo during pupal stage results in strongly undifferentiated anterior compartment of the wing, reminiscent of E93-depleted wings",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the anterior compartment of the wing was strongly undifferentiated, a phenotype reminiscent of that observed in E93-depleted wings (Ure\u00f1a et al., 2016; Ure\u00f1a et al., 2014; Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cuticle preparation in Figure 7B showing undifferentiated wing and citation to E93 depletion phenotype",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "f0c62aa1-5d90-4323-bdbf-195034828612",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C42",
+      "claim": "chinmo must be downregulated during the initiation and throughout the metamorphic transition to allow the sequential expression of the pupal specifier Br-C and the adult specifier E93",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results show that chinmo must be downregulated during the initiation and throughout the metamorphic transition to allow the sequential expression of the pupal specifier Br-C and the adult specifier E93.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing that sustained chinmo expression blocks both Br-C and E93 function",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "cbd403c1-de3d-4828-9aa3-8998f0f768ad",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C43",
+      "claim": "Overexpression of Drosophila chinmo has been found to cooperate with Ras or Notch to trigger massive tumour overgrowth",
+      "claim_type": "EXPLICIT",
+      "source": "However, while overexpression of Drosophila chinmo has been found to cooperate with Ras or Notch to trigger massive tumour overgrowth (Doggett et al., 2015), changes in Drosophila Br-C expression have not been associated with any effect on tumourigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "b56929fe-1d63-41a2-81d4-867345e82c77",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C44",
+      "claim": "Changes in Drosophila Br-C expression have not been associated with any effect on tumourigenesis",
+      "claim_type": "EXPLICIT",
+      "source": "However, while overexpression of Drosophila chinmo has been found to cooperate with Ras or Notch to trigger massive tumour overgrowth (Doggett et al., 2015), changes in Drosophila Br-C expression have not been associated with any effect on tumourigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about absence of previous findings in the literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "ad144d55-a62a-4315-b0d7-c1bf3361533b",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C45",
+      "claim": "RNAi-mediated depletion of Br-C in wing discs in the downregulated lgl background results in an increase in the mean wing pouch volume compared to downregulation of lgl alone",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RNAi-mediated depletion of Br-C in the wing discs in the downregulated lgl background resulted in an increase in the mean wing pouch volume compared to the downregulation of lgl alone (Figure 8B, C and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by volumetric quantification data in Figure 8G showing increased pouch volume",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "081ee028-3cec-4a3a-95c8-422e177a0e51",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C46",
+      "claim": "Overexpression of Br-C in the lgl background reduces the size of the lgl-induced overgrowth, confirming that Br-C expression elicits tumour suppressor activity",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, overexpression of Br-C in the same lgl background had the opposite effect, reducing the size of the lgl-induced overgrowth, thereby confirming that Br-C expression elicits tumour suppressor activity (Figure 8D and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by volumetric quantification data in Figure 8G showing decreased pouch volume",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "5e6ab59d-67ea-4b00-9098-0871879eee4b",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C47",
+      "claim": "Overexpression of E93 reduces the size of lgl overgrowth",
+      "claim_type": "EXPLICIT",
+      "source": "We found that overexpression of E93 also reduced the size of lgl overgrowth (Figure 8E and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by volumetric quantification data in Figure 8G showing decreased pouch volume",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "b4577382-79bf-4b86-ae71-a65ae0548d9f",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C48",
+      "claim": "Combined overexpression of E93 with the p35 inhibitor of apoptosis still leads to a reduction in the size of the wing pouch in the lgl-sensitised background",
+      "claim_type": "EXPLICIT",
+      "source": "However, combined overexpression of E93 with the p35 inhibitor of apoptosis still lead to a reduction in the size of the wing pouch in the lgl-sensitised background (Figure 8F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by volumetric quantification data in Figure 8G showing decreased pouch volume despite blocking apoptosis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "6aab9d9f-d32f-4c90-a921-7c3391e54150",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C49",
+      "claim": "chinmo and Br-C/E93 play opposite functions, chinmo with pro-oncogenic features and Br-C and E93 acting as tumour suppressor genes",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, also in this regard, chinmo and Br-C/E93 play opposite functions, chinmo with pro-oncogenic features and Br-C and E93 act as tumour suppressor genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects on tumor growth in lgl background",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "6b19b555-a59e-4669-9b69-a0b1287e2c21",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C50",
+      "claim": "A chinmo orthologue (Bg-chinmo) is present in the Blattella germanica genome",
+      "claim_type": "EXPLICIT",
+      "source": "A detailed Tblastn search in the Blattella genome database revealed the presence of a chinmo orthologue (Bg-chinmo).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bioinformatic search results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "84641fc2-9ff9-4601-9155-08cf1a8702c7",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C51",
+      "claim": "Bg-chinmo is highly expressed in embryos and decreases dramatically thereafter during nymphal development",
+      "claim_type": "EXPLICIT",
+      "source": "We found that it is highly expressed in embryos and decreases dramatically thereafter during nymphal development (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data in Figure 9A showing Bg-chinmo expression across developmental stages",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "de5c7823-8d0a-406f-a523-62e22d109910",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C52",
+      "claim": "43% of Bg-chinmoRNAi animals undergo only one nymphal molt before molting to an early adult after the N5 stage",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, whereas Control larvae underwent two nymphal molts before initiating metamorphosis at the end of the N6 stage, 43% of Bg-chinmoRNAi animals underwent only one nymphal molt before molting to an early adult after the N5 stage (Figure 9B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotypic observations shown in Figure 9B-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "a72740f7-f292-4fb2-998a-f8ada30841be",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C53",
+      "claim": "Precocious Bg-chinmo-depleted adults are smaller than control counterparts as they skip a nymphal stage",
+      "claim_type": "EXPLICIT",
+      "source": "Precocious Bg-chinmo-depleted adults were smaller than control counterparts as they skipped a nymphal stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by size measurements in Figure 9E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "26dbf89f-1db7-44a5-98c2-539603642d70",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C54",
+      "claim": "Precocious Bg-chinmo-depleted adults present all the external characteristics of an adult, including functional hind- and fore-wings, adult legs, adult cerci, mature genitalia, and adult-specific cuticle pigmentation",
+      "claim_type": "EXPLICIT",
+      "source": "However, they presented all the external characteristics of an adult, namely functional hind- and fore-wings, adult legs (Figure 9F), adult cerci, mature genitalia, and adult-specific cuticle pigmentation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morphological observations shown in Figure 9C-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "687ff6ef-c60f-4a19-83f0-37f03f91e745",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C55",
+      "claim": "The role of Chinmo as juvenile specifier seems to be conserved in hemimetabolous insects, indicating that its developmental function precedes the hemimetabolous-holometabolous split",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggest that the role of Chinmo as juvenile specifier seems to be conserved in hemimetabolous insects, thereby indicating that its developmental function precedes the hemimetabolous-holometabolous split.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the precocious metamorphosis phenotype in Blattella upon Bg-chinmo depletion",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "6710ca28-e781-4a77-abf1-b95b68dca373",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C56",
+      "claim": "The temporal expression of Chinmo, Br-C, and E93 determines the tissue acquisition of gradual differentiation features from the juvenile to the adult to generate the distinct organs",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we identified Chinmo as a new member of the metamorphic gene network acting as a general larval specifier, as recently proposed by Truman and Riddiford, 2022. Together with a number of previous reports (reviewed in Mart\u00edn et al., 2021), our results show that the temporal expression of Chinmo, Br-C, and E93 determines the tissue acquisition of gradual differentiation features from the juvenile to the adult to generate the distinct organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from all experimental results and supported by citations to previous work",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "7ec6609b-c6a5-443a-838f-70626df43ae4",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C57",
+      "claim": "Chinmo maintains cells in an undifferentiated state, whereas Br-C and E93 induce progressively the differentiation program",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas Chinmo maintains cells in an undifferentiated state, Br-C and E93 induce progressively the differentiation program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the functional characterization of these factors throughout the manuscript",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "8f163dca-db73-4754-9b1a-00a476b7ba12",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C58",
+      "claim": "The chinmo-to-Br-C transition in Drosophila has been associated with the loss of the regenerative potential of imaginal cells",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the chinmo-to-Br-C transition in Drosophila has been associated with the loss of the regenerative potential of imaginal cells (Narbonne-Reveau and Maurange, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "40f08079-bc9d-4ba7-af15-b45dd343448b",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C59",
+      "claim": "The fact that Br-C and E93 act as a tumour suppressor in an overproliferative background supports the idea that they induce differentiation",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that Br-C and E93 act as a tumour suppressor in an overproliferative background supports this idea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the tumor suppressor experiments with lgl background",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "dfb93037-c722-4ec0-a98d-75d78deca1b8",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C60",
+      "claim": "The role of chinmo as larval specifier is conserved in hemimetabolous insects",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that the role of chinmo as larval specifier is conserved in hemimetabolous insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the Blattella experiments showing precocious metamorphosis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "08a7f8fe-6551-400e-9182-93c68565d82a",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C61",
+      "claim": "In hemimetabolous insects, the transition from juvenile to adult relies mainly on the shift from Chinmo to E93 during the last nymphal stage, with Kr-h1 also involved in preventing metamorphosis through the repression of E93",
+      "claim_type": "EXPLICIT",
+      "source": "Since hemimetabolous insects do not undergo the intermediate pupal stage, the transition from juvenile to adult, therefore, relies mainly on the shift from Chinmo to E93 during the last nymphal stage, with Kr-h1 also involved in preventing metamorphosis through the repression of E93 (Ure\u00f1a et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the absence of pupal stage in hemimetabolans and supported by citation",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "fa8375eb-872c-4788-b57c-87a6b3c86d61",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C62",
+      "claim": "In hemimetabolous insects, depletion of Br-C does not impair metamorphosis",
+      "claim_type": "EXPLICIT",
+      "source": "However, although in hemimetabolans insects depletion of Br-C does not impair metamorphosis, Br-C does regulate the progressive growth of the metamorphic tissues, such as the wing pads and the dorsal thorax (Erezyilmaz et al., 2006; Fernandez-Nicolas et al., 2022; Huang et al., 2013; Konopova et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "5510174c-112b-45ce-ae8f-7b9479813405",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C63",
+      "claim": "Br-C regulates the progressive growth of the metamorphic tissues, such as the wing pads and the dorsal thorax in hemimetabolous insects",
+      "claim_type": "EXPLICIT",
+      "source": "However, although in hemimetabolans insects depletion of Br-C does not impair metamorphosis, Br-C does regulate the progressive growth of the metamorphic tissues, such as the wing pads and the dorsal thorax (Erezyilmaz et al., 2006; Fernandez-Nicolas et al., 2022; Huang et al., 2013; Konopova et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "94427745-c57c-4f5b-8b86-d674a13b2513",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C64",
+      "claim": "A premetamorphic role of Br-C was already present in hemimetabolous insects, acquiring an additional metamorphic role as pupal specifier during the evolution of holometabolous insects",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that a premetamorphic role of Br-C was already present in hemimetabolous insects, acquiring an additional metamorphic role as pupal specifier during the evolution of holometabolous insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Br-C regulates growth but not metamorphosis in hemimetabolans",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "fdb2d192-0272-4b94-bdf2-b4ba64d42331",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C65",
+      "claim": "The deployment of the pupal-specific genetic program is controlled by the expression of Br-C at the larval-pupal transition",
+      "claim_type": "EXPLICIT",
+      "source": "The deployment of the pupal-specific genetic program is controlled by the expression of Br-C at the larval-pupal transition (Truman, 2019; Zhou and Riddiford, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "d255118f-a9ef-47d0-8f93-36518cbf6810",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C66",
+      "claim": "Upon the formation of the pupa, hormone signalling triggers the expression of E93, whose product represses Br-C expression and directs the formation of the final differentiated adult structures",
+      "claim_type": "EXPLICIT",
+      "source": "Upon the formation of the pupa, hormone signalling triggers the expression of the helix-turn-helix factor E93, whose product represses Br-C expression and directs the formation of the final differentiated adult structures (Chafino et al., 2019; Mart\u00edn et al., 2021; Ure\u00f1a et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "08b7a960-5ea5-43dc-a190-c1ce2843f880",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C67",
+      "claim": "Br-C and E93 are the stage-specifying genes for the pupal and adult states",
+      "claim_type": "EXPLICIT",
+      "source": "While it is firmly established that Br-C and E93 are the stage-specifying genes for the pupal and adult states, the nature of the larval specifying gene has been elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established scientific consensus",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "8bc158f0-102b-4740-8ddf-04e3dd519257",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C68",
+      "claim": "Larval identity has been attributed to Kr-h1, which is present during the larval period and represses Br-C and E93 expression during this period",
+      "claim_type": "EXPLICIT",
+      "source": "To date, larval identity has been attributed to Kr-h1, which is present during the larval period and represses Br-C and E93 expression during this period (Huang et al., 2011; Ure\u00f1a et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "0a4f31dc-1e9a-4e25-a55e-48ed1e1cd09f",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C69",
+      "claim": "Kr-h1 is critical for maintaining the larval state",
+      "claim_type": "EXPLICIT",
+      "source": "However, although Kr-h1 is undoubtedly critical for maintaining the larval state, evidence has shown that this factor cannot be considered the larval specifier per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "7994b21a-7dbb-4be2-92c4-f65c42432eb6",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C70",
+      "claim": "Depletion of Kr-h1 in Drosophila does not prevent normal larval development nor a timely transition to the pupa",
+      "claim_type": "EXPLICIT",
+      "source": "For example, depletion of Kr-h1 in Drosophila does not prevent normal larval development nor a timely transition to the pupa (Beck et al., 2004; Pecasse et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "0547a248-da9d-4b5f-84ec-cae156ff2300",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C71",
+      "claim": "The product of chronologically inappropriate morphogenesis (chinmo) gene has been recently proposed to be responsible for larval identity in Drosophila",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the product of chronologically inappropriate morphogenesis (chinmo) gene, another member of the BTB family of transcription factors, has been recently proposed to be responsible for larval identity in Drosophila (Truman and Riddiford, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to recent study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "3af965be-92d2-42e0-8ec3-89af3c0735ec",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C72",
+      "claim": "Chinmo was first isolated based on its requirement for the temporal identity of mushroom body neurons",
+      "claim_type": "EXPLICIT",
+      "source": "First isolated based on its requirement for the temporal identity of mushroom body neurons (Zhu et al., 2006), the identification of Chinmo as a more general larval specifier has provided invaluable insights into the molecular mechanisms underlying the control of juvenile identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "687faec4-31f0-4060-996d-dccf34302295",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C73",
+      "claim": "In humans, many BTB-zinc finger transcription factors have been implicated in cancer, where they have opposing effects, from oncogenic to tumour suppressor functions",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, many such factors have been implicated in cancer, where they have opposing effects, from oncogenic to tumour suppressor functions (Siggs and Beutler, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "904a2d07-32c9-4086-b998-13cfbec67366",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "claim_id": "C74",
+      "claim": "Early-born neurons in the central nervous system are characterised by the expression of Chinmo, whereas smaller late-born neurons are marked by expression of Br-C",
+      "claim_type": "EXPLICIT",
+      "source": "This effect has already been shown in the central nervous system where early-born neurons are characterised by the expression of Chinmo, whereas smaller late-born neurons are marked by expression of Br-C (Maurange et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9053c667-4df7-4f91-b3a0-6f1575ae8cd1",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Chinmo expression is temporally regulated during Drosophila development, being present during embryogenesis and early larval stages (L1-L2) and strongly downregulated from L3 onwards. This expression pattern was confirmed at both mRNA and protein levels in multiple tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are well-supported by qRT-PCR data (Figure 1A) and immunostaining in wing discs and salivary glands (Figures 1B-C). The temporal expression pattern is consistent with previous studies cited by the authors, providing independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "8effb7ed-29da-4f19-be52-f827f262cea7",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Depletion of chinmo causes developmental arrest at the first larval instar with precocious expression of pupal cuticle genes and suppression of larval-specific genes, confirming chinmo is required for normal larval progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 are supported by phenotypic observations (Figure 1D) and qRT-PCR data (Figure 1E) showing altered gene expression patterns. The developmental arrest phenotype and molecular changes are consistent with loss of a larval specifier function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "86eb7685-9862-476f-bef1-73e8d4ba9f8a",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chinmo is required for proper growth of larval tissues including salivary glands and trachea. Tissue-specific depletion results in reduced organ size, decreased DNA content, reduced nuclear size, and impaired expression of tissue-specific genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 are supported by quantitative measurements of tissue size, DAPI intensity, nuclear size (Figures 2B-D, Figure 2\u2014supplement 1), and qRT-PCR data showing reduced expression of salivary gland genes (Figure 2E). Multiple independent tissue types show consistent growth defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "67cd4d8d-e105-49e2-b9a2-1cd73acb8241",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chinmo is required for development of imaginal tissues including wing discs and eye discs. Depletion results in reduced tissue size, loss of patterning gene expression, and adult structures fail to form properly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are supported by immunostaining showing loss of Wg and Ct expression in wing discs (Figure 3A) and phenotypic observations of adult flies lacking wings or eyes (Figures 3\u2014supplements 1-2). The data demonstrate chinmo requirement in both larval and imaginal tissues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "3516d777-fea1-41b2-be93-aaabba317c3d",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Upon chinmo depletion, Br-C protein levels increase prematurely in both salivary glands and wing discs as early as L1, while E93 protein levels remain unchanged. This contradicts a recent publication by Truman and Riddiford (2022).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 are supported by immunostaining data in Figure 4 showing premature Br-C upregulation and absence of E93 upregulation in chinmo-depleted tissues. However, the contradiction with prior work (Truman and Riddiford, 2022) raises questions about experimental differences that are not fully addressed. The authors' data appear robust but the discrepancy warrants further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "b2a49a0a-025e-49ad-84c1-30585a2ea296",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Precocious expression of Br-C phenocopies chinmo loss of function, blocking development in both salivary glands and wing discs. This suggests a fundamental function of Chinmo is to suppress Br-C expression during juvenile stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are supported by data showing that Br-CZ1 overexpression blocks Chinmo and impairs tissue development (Figure 4\u2014supplement 1). The phenocopy provides strong evidence for the regulatory relationship, though C18 is an inference that could benefit from additional mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "e4dc9c65-2fb7-4f73-aca2-9af0001ea9cd",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chinmo functions differently in larval versus imaginal tissues. In imaginal tissues (wing discs, eye discs), chinmo acts primarily through Br-C repression, as Br-C co-depletion rescues chinmo depletion phenotypes. In larval tissues (salivary glands, trachea), chinmo has Br-C-independent growth functions, as Br-C co-depletion does not rescue growth defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 are well-supported by differential rescue experiments. Wing disc and eye disc phenotypes are rescued by Br-C co-depletion (Figures 5G, 3\u2014supplement 2), while salivary gland and tracheal phenotypes are not (Figures 5A-F, 2\u2014supplement 1). This tissue-specific difference is a key finding, though the molecular basis for the difference remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "38115332-bb93-4c61-b206-2b3516b88d86",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In imaginal cells, chinmo ensures juvenile gene expression by repressing Br-C, which is known to inhibit larval genes. In larval tissues, chinmo actively promotes growth and maturation, as evidenced by failure of Br-C-dependent genes to activate despite premature Br-C expression when chinmo is absent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C25 and C27 are inferences from the rescue experiments. C26 is explicitly speculative. C28 is supported by qRT-PCR data (Figure 2E) showing Sgs genes fail to activate. While the overall model is plausible and consistent with the data, the mechanistic details of how chinmo promotes growth in larval tissues remain unclear and require further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "46b72dc4-6ad2-42b3-9d5d-3c2e76c235cf",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors cite previous literature establishing tissue-specific roles for Br-C and E93 during metamorphosis, including Br-C's role in salivary gland degeneration and wing disc eversion, and E93's role in neuroblast elimination and wing differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by appropriate citations to previous studies. These claims provide context for understanding the differential roles of metamorphic factors in different tissue types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "baf12cfe-4119-4804-b9f3-c0cf3bcfc437",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sustained chinmo expression during late L3 blocks the larva-pupa transition by preventing Br-C expression and inducing apoptosis. This effect is due to sustained chinmo rather than absence of Br-C, as demonstrated by rescue experiments with double knockdowns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 are supported by temporal overexpression experiments using the Gal4/Gal80ts system (Figure 6). The data show that sustained chinmo blocks Br-C, induces apoptosis (Dcp-1), and impairs patterning gene expression. The p35 rescue experiment (C35) and double knockdown (C37) provide strong evidence that the phenotype is due to sustained chinmo rather than simply loss of Br-C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "d6bc63d6-0980-4ec7-8458-e8c25cbb2b19",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Chinmo must be downregulated during metamorphosis to allow sequential expression of Br-C and E93. Ectopic chinmo expression during pupal stages reduces E93 levels and blocks adult wing differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by pupal-stage overexpression experiments (Figure 7) showing reduced E93 and undifferentiated wing phenotype. This demonstrates chinmo must be absent not only for the larva-pupa transition but throughout metamorphosis for proper adult development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "b8a7e737-7dcf-4795-9742-51ac53cefea9",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Chinmo and Br-C/E93 have opposing roles in tumor growth. In an lgl-sensitized tumor model, Br-C depletion increases tumor size while Br-C or E93 overexpression reduces tumor size, demonstrating tumor suppressor activity. This contrasts with chinmo's known pro-oncogenic properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 are supported by volumetric quantification of wing pouch size in lgl background (Figure 8G). The data show statistically significant effects of Br-C and E93 manipulation on tumor size. C48 demonstrates the effect is not solely due to apoptosis. However, the tumor model is somewhat artificial (lgl depletion) and may not fully represent natural tumorigenesis. The statistical analysis appears appropriate with multiple comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "385a872f-7f0b-47c2-8605-4223760c4372",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The role of chinmo as a juvenile specifier is conserved in the hemimetabolous insect Blattella germanica. Bg-chinmo is highly expressed in embryos and decreases during nymphal development. RNAi depletion causes 43% of animals to undergo precocious metamorphosis, skipping a nymphal stage but developing all adult characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are supported by qRT-PCR data (Figure 9A) and phenotypic observations (Figures 9B-F). The precocious metamorphosis phenotype with complete adult differentiation provides strong evidence for conservation of chinmo function. However, the penetrance is incomplete (43%), which could indicate partial knockdown efficiency or genetic redundancy. The sample sizes for statistical analysis are not clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "c690880a-75b8-4088-98a6-e4750304fb80",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The temporal expression of Chinmo, Br-C, and E93 determines gradual tissue differentiation from juvenile to adult. Chinmo maintains undifferentiated state while Br-C and E93 progressively induce differentiation, as supported by their tumor suppressor activity and effects on regenerative potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 represent the authors' synthesis of their findings with previous literature. C56 and C57 are well-supported by the cumulative experimental evidence. C58 is supported by citation. C59 is an inference from the tumor suppressor experiments that is reasonable but somewhat speculative regarding the mechanistic link between tumor suppression and differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "0d02da16-b52a-4b0d-a8fe-daee3db859d4",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In hemimetabolous insects, the juvenile-to-adult transition relies on the Chinmo-to-E93 shift without an intermediate pupal stage. Br-C regulates progressive growth of metamorphic tissues in hemimetabolans but does not control metamorphosis itself, suggesting Br-C's premetamorphic role predates its acquisition of pupal specifier function in holometabolans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 integrate the Blattella results with cited literature on hemimetabolan development. C60 is supported by the experimental data. C61-C63 are supported by appropriate citations. C64 is an evolutionary inference that is plausible given the data but remains speculative without direct comparative evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    },
+    {
+      "id": "2e509981-4919-4c62-9cea-95caac4c2ad8",
+      "content_id": "b947db6f-96d7-4fa4-a4af-5926e39a269c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors provide background on the metamorphic gene network, establishing that Br-C and E93 are stage specifiers for pupal and adult stages, while the larval specifier has been elusive. Kr-h1 maintains larval state but is not the larval specifier per se. Chinmo has been recently proposed as the larval specifier and belongs to the BTB-zinc finger family implicated in cancer and neuronal temporal identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C74 are introductory/background claims supported by appropriate citations to previous literature. These establish the scientific context for the current work and are accurately represented based on the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:40:30.665801Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "682c72da-f04e-4f87-8e6e-0bfdd0fef649",
+      "result_id": "9053c667-4df7-4f91-b3a0-6f1575ae8cd1"
+    },
+    {
+      "claim_id": "88de6cb4-9006-422d-a946-43bf1ff1d550",
+      "result_id": "9053c667-4df7-4f91-b3a0-6f1575ae8cd1"
+    },
+    {
+      "claim_id": "2e25ff99-a97c-4960-b3ff-7b70ae57afa1",
+      "result_id": "8effb7ed-29da-4f19-be52-f827f262cea7"
+    },
+    {
+      "claim_id": "b5b52497-f713-41ba-8b87-a567e88555c2",
+      "result_id": "8effb7ed-29da-4f19-be52-f827f262cea7"
+    },
+    {
+      "claim_id": "373113dd-3252-4d53-bc87-ae384a60e956",
+      "result_id": "8effb7ed-29da-4f19-be52-f827f262cea7"
+    },
+    {
+      "claim_id": "8c53f8c6-b0c7-4bc8-970f-d945cd8368ca",
+      "result_id": "86eb7685-9862-476f-bef1-73e8d4ba9f8a"
+    },
+    {
+      "claim_id": "0d72ca59-39e7-46f1-8b75-8fb33d6556be",
+      "result_id": "86eb7685-9862-476f-bef1-73e8d4ba9f8a"
+    },
+    {
+      "claim_id": "eed7ac81-5874-4443-b962-2647deac41f8",
+      "result_id": "86eb7685-9862-476f-bef1-73e8d4ba9f8a"
+    },
+    {
+      "claim_id": "99086edd-8b43-463f-9228-c72cff1509c7",
+      "result_id": "86eb7685-9862-476f-bef1-73e8d4ba9f8a"
+    },
+    {
+      "claim_id": "460aecfe-b557-435f-94db-f7035ff04001",
+      "result_id": "67cd4d8d-e105-49e2-b9a2-1cd73acb8241"
+    },
+    {
+      "claim_id": "fa480ce7-3988-4a48-b548-5dba13f837b8",
+      "result_id": "67cd4d8d-e105-49e2-b9a2-1cd73acb8241"
+    },
+    {
+      "claim_id": "6f812ce0-5f9f-45e7-8c43-a3080257509a",
+      "result_id": "67cd4d8d-e105-49e2-b9a2-1cd73acb8241"
+    },
+    {
+      "claim_id": "b6e61103-1743-4224-ac12-766d811f5b34",
+      "result_id": "67cd4d8d-e105-49e2-b9a2-1cd73acb8241"
+    },
+    {
+      "claim_id": "bf39d875-2e68-4f17-a65e-12594a355428",
+      "result_id": "3516d777-fea1-41b2-be93-aaabba317c3d"
+    },
+    {
+      "claim_id": "73e1b76c-3017-4a7c-a8d7-443ee5e6fa2c",
+      "result_id": "3516d777-fea1-41b2-be93-aaabba317c3d"
+    },
+    {
+      "claim_id": "335bf145-d913-4257-96c6-3c795615f136",
+      "result_id": "b2a49a0a-025e-49ad-84c1-30585a2ea296"
+    },
+    {
+      "claim_id": "0ec67fe8-d9a5-4404-bba5-a77dbe850c0f",
+      "result_id": "b2a49a0a-025e-49ad-84c1-30585a2ea296"
+    },
+    {
+      "claim_id": "5c15eaf0-cc7b-47b5-9203-19cb048f28bc",
+      "result_id": "b2a49a0a-025e-49ad-84c1-30585a2ea296"
+    },
+    {
+      "claim_id": "f22c9b40-b393-4c5f-b363-432b60f6aa35",
+      "result_id": "e4dc9c65-2fb7-4f73-aca2-9af0001ea9cd"
+    },
+    {
+      "claim_id": "30ffdf2c-1668-4fd1-ab66-fe874eae389d",
+      "result_id": "e4dc9c65-2fb7-4f73-aca2-9af0001ea9cd"
+    },
+    {
+      "claim_id": "82940b86-5917-4f05-851c-dfa0e38be293",
+      "result_id": "e4dc9c65-2fb7-4f73-aca2-9af0001ea9cd"
+    },
+    {
+      "claim_id": "f6ecb854-0a93-4cc2-aca8-159ec0224faa",
+      "result_id": "e4dc9c65-2fb7-4f73-aca2-9af0001ea9cd"
+    },
+    {
+      "claim_id": "c4aa96df-80c4-4279-8728-ff9f590dc794",
+      "result_id": "e4dc9c65-2fb7-4f73-aca2-9af0001ea9cd"
+    },
+    {
+      "claim_id": "ec7a6045-fc9a-4bb1-b726-3377126b7815",
+      "result_id": "e4dc9c65-2fb7-4f73-aca2-9af0001ea9cd"
+    },
+    {
+      "claim_id": "308a36db-0bae-4d83-b5e1-f3c84526c45d",
+      "result_id": "38115332-bb93-4c61-b206-2b3516b88d86"
+    },
+    {
+      "claim_id": "afa7539f-7fb8-44bd-8c2c-914c786cc18c",
+      "result_id": "38115332-bb93-4c61-b206-2b3516b88d86"
+    },
+    {
+      "claim_id": "71953426-883a-4f93-9f77-a5c5150a3d57",
+      "result_id": "38115332-bb93-4c61-b206-2b3516b88d86"
+    },
+    {
+      "claim_id": "6ae1ca09-1966-48b7-872d-67e70c5e46c4",
+      "result_id": "38115332-bb93-4c61-b206-2b3516b88d86"
+    },
+    {
+      "claim_id": "ecaca8f3-2bc2-4ffd-95e7-1de62adb57bb",
+      "result_id": "46b72dc4-6ad2-42b3-9d5d-3c2e76c235cf"
+    },
+    {
+      "claim_id": "c00d5f12-d6dc-4547-a6da-0d7c8e473275",
+      "result_id": "46b72dc4-6ad2-42b3-9d5d-3c2e76c235cf"
+    },
+    {
+      "claim_id": "f4a3a9f8-e1d3-40f7-82a1-452df258282f",
+      "result_id": "46b72dc4-6ad2-42b3-9d5d-3c2e76c235cf"
+    },
+    {
+      "claim_id": "7282dc48-6930-4251-a5e0-5f188ea8b8ad",
+      "result_id": "46b72dc4-6ad2-42b3-9d5d-3c2e76c235cf"
+    },
+    {
+      "claim_id": "44d01789-cf6f-466a-8a37-774c0a9f8b19",
+      "result_id": "baf12cfe-4119-4804-b9f3-c0cf3bcfc437"
+    },
+    {
+      "claim_id": "df834cbc-7827-48d6-a0e2-d4953f5ae06b",
+      "result_id": "baf12cfe-4119-4804-b9f3-c0cf3bcfc437"
+    },
+    {
+      "claim_id": "0248f5e7-f58c-4ebf-90f0-966baee78699",
+      "result_id": "baf12cfe-4119-4804-b9f3-c0cf3bcfc437"
+    },
+    {
+      "claim_id": "46a41b80-4b44-4f92-a26a-3f8e12faf9f0",
+      "result_id": "baf12cfe-4119-4804-b9f3-c0cf3bcfc437"
+    },
+    {
+      "claim_id": "e19b0f19-15cd-4b54-92cb-7a699d0a4d33",
+      "result_id": "baf12cfe-4119-4804-b9f3-c0cf3bcfc437"
+    },
+    {
+      "claim_id": "221cf3fc-0ac7-4bba-83ba-6a593dddf03d",
+      "result_id": "baf12cfe-4119-4804-b9f3-c0cf3bcfc437"
+    },
+    {
+      "claim_id": "e45c1f36-4094-46be-b966-fce68a136cdf",
+      "result_id": "baf12cfe-4119-4804-b9f3-c0cf3bcfc437"
+    },
+    {
+      "claim_id": "04e2394e-2398-4c49-b6a5-62d02d653947",
+      "result_id": "d6bc63d6-0980-4ec7-8458-e8c25cbb2b19"
+    },
+    {
+      "claim_id": "59c4ce8f-6276-46e3-8aff-b0fb989db2d9",
+      "result_id": "d6bc63d6-0980-4ec7-8458-e8c25cbb2b19"
+    },
+    {
+      "claim_id": "f0c62aa1-5d90-4323-bdbf-195034828612",
+      "result_id": "d6bc63d6-0980-4ec7-8458-e8c25cbb2b19"
+    },
+    {
+      "claim_id": "cbd403c1-de3d-4828-9aa3-8998f0f768ad",
+      "result_id": "b8a7e737-7dcf-4795-9742-51ac53cefea9"
+    },
+    {
+      "claim_id": "b56929fe-1d63-41a2-81d4-867345e82c77",
+      "result_id": "b8a7e737-7dcf-4795-9742-51ac53cefea9"
+    },
+    {
+      "claim_id": "ad144d55-a62a-4315-b0d7-c1bf3361533b",
+      "result_id": "b8a7e737-7dcf-4795-9742-51ac53cefea9"
+    },
+    {
+      "claim_id": "081ee028-3cec-4a3a-95c8-422e177a0e51",
+      "result_id": "b8a7e737-7dcf-4795-9742-51ac53cefea9"
+    },
+    {
+      "claim_id": "5e6ab59d-67ea-4b00-9098-0871879eee4b",
+      "result_id": "b8a7e737-7dcf-4795-9742-51ac53cefea9"
+    },
+    {
+      "claim_id": "b4577382-79bf-4b86-ae71-a65ae0548d9f",
+      "result_id": "b8a7e737-7dcf-4795-9742-51ac53cefea9"
+    },
+    {
+      "claim_id": "6aab9d9f-d32f-4c90-a921-7c3391e54150",
+      "result_id": "b8a7e737-7dcf-4795-9742-51ac53cefea9"
+    },
+    {
+      "claim_id": "6b19b555-a59e-4669-9b69-a0b1287e2c21",
+      "result_id": "385a872f-7f0b-47c2-8605-4223760c4372"
+    },
+    {
+      "claim_id": "84641fc2-9ff9-4601-9155-08cf1a8702c7",
+      "result_id": "385a872f-7f0b-47c2-8605-4223760c4372"
+    },
+    {
+      "claim_id": "de5c7823-8d0a-406f-a523-62e22d109910",
+      "result_id": "385a872f-7f0b-47c2-8605-4223760c4372"
+    },
+    {
+      "claim_id": "a72740f7-f292-4fb2-998a-f8ada30841be",
+      "result_id": "385a872f-7f0b-47c2-8605-4223760c4372"
+    },
+    {
+      "claim_id": "26dbf89f-1db7-44a5-98c2-539603642d70",
+      "result_id": "385a872f-7f0b-47c2-8605-4223760c4372"
+    },
+    {
+      "claim_id": "687ff6ef-c60f-4a19-83f0-37f03f91e745",
+      "result_id": "385a872f-7f0b-47c2-8605-4223760c4372"
+    },
+    {
+      "claim_id": "6710ca28-e781-4a77-abf1-b95b68dca373",
+      "result_id": "c690880a-75b8-4088-98a6-e4750304fb80"
+    },
+    {
+      "claim_id": "7ec6609b-c6a5-443a-838f-70626df43ae4",
+      "result_id": "c690880a-75b8-4088-98a6-e4750304fb80"
+    },
+    {
+      "claim_id": "8f163dca-db73-4754-9b1a-00a476b7ba12",
+      "result_id": "c690880a-75b8-4088-98a6-e4750304fb80"
+    },
+    {
+      "claim_id": "40f08079-bc9d-4ba7-af15-b45dd343448b",
+      "result_id": "c690880a-75b8-4088-98a6-e4750304fb80"
+    },
+    {
+      "claim_id": "dfb93037-c722-4ec0-a98d-75d78deca1b8",
+      "result_id": "0d02da16-b52a-4b0d-a8fe-daee3db859d4"
+    },
+    {
+      "claim_id": "08a7f8fe-6551-400e-9182-93c68565d82a",
+      "result_id": "0d02da16-b52a-4b0d-a8fe-daee3db859d4"
+    },
+    {
+      "claim_id": "fa8375eb-872c-4788-b57c-87a6b3c86d61",
+      "result_id": "0d02da16-b52a-4b0d-a8fe-daee3db859d4"
+    },
+    {
+      "claim_id": "5510174c-112b-45ce-ae8f-7b9479813405",
+      "result_id": "0d02da16-b52a-4b0d-a8fe-daee3db859d4"
+    },
+    {
+      "claim_id": "94427745-c57c-4f5b-8b86-d674a13b2513",
+      "result_id": "0d02da16-b52a-4b0d-a8fe-daee3db859d4"
+    },
+    {
+      "claim_id": "fdb2d192-0272-4b94-bdf2-b4ba64d42331",
+      "result_id": "2e509981-4919-4c62-9cea-95caac4c2ad8"
+    },
+    {
+      "claim_id": "d255118f-a9ef-47d0-8f93-36518cbf6810",
+      "result_id": "2e509981-4919-4c62-9cea-95caac4c2ad8"
+    },
+    {
+      "claim_id": "08b7a960-5ea5-43dc-a190-c1ce2843f880",
+      "result_id": "2e509981-4919-4c62-9cea-95caac4c2ad8"
+    },
+    {
+      "claim_id": "8bc158f0-102b-4740-8ddf-04e3dd519257",
+      "result_id": "2e509981-4919-4c62-9cea-95caac4c2ad8"
+    },
+    {
+      "claim_id": "0a4f31dc-1e9a-4e25-a55e-48ed1e1cd09f",
+      "result_id": "2e509981-4919-4c62-9cea-95caac4c2ad8"
+    },
+    {
+      "claim_id": "7994b21a-7dbb-4be2-92c4-f65c42432eb6",
+      "result_id": "2e509981-4919-4c62-9cea-95caac4c2ad8"
+    },
+    {
+      "claim_id": "0547a248-da9d-4b5f-84ec-cae156ff2300",
+      "result_id": "2e509981-4919-4c62-9cea-95caac4c2ad8"
+    },
+    {
+      "claim_id": "3af965be-92d2-42e0-8ec3-89af3c0735ec",
+      "result_id": "2e509981-4919-4c62-9cea-95caac4c2ad8"
+    },
+    {
+      "claim_id": "687faec4-31f0-4060-996d-dccf34302295",
+      "result_id": "2e509981-4919-4c62-9cea-95caac4c2ad8"
+    },
+    {
+      "claim_id": "904a2d07-32c9-4086-b998-13cfbec67366",
+      "result_id": "2e509981-4919-4c62-9cea-95caac4c2ad8"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C16",
+      "C30",
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C85"
+    ],
+    "result": "Differentially expressed genes are enriched on the same chromosome as the mutation in zebrafish mutant lines. In 7 out of 9 RNA-seq analyzed mutant lines, linkage disequilibrium (LD) significantly increased the probability of a gene being differentially expressed (DE), with odds ratios ranging from 2.0 to over 100-fold. In a broader analysis of 124 transcriptional profiling experiments, 44 out of 60 chromosomes showing significant enrichment of DE genes were the chromosome carrying the mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 and C85 provide consistent quantitative evidence from multiple independent mutant lines showing enrichment of DE genes on mutant chromosomes. The logistic regression analysis (C41-C42) and binomial tests (C44-C45) provide appropriate statistical support. The comparison to random genomic windows (C40) strengthens the finding. The convergence of evidence from both RNA-seq/LD mapping and DeTCT experiments supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C34",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Allele-specific expression (ASE) is widespread in wild-type zebrafish. Using a SAT line incross derived from two haplotypes (AB and T\u00fcbingen), 82 different genomic regions showed differential expression based on local genotype. DE genes were located in or near the regions used to define embryo groups, with an absolute mean log2(fold change) of 0.5 between homozygous genotypes. Individual recombination events were detectable in the expression data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C70 describe a well-designed experiment using haplotype-resolved fish to directly test for ASE. The SAT line provides a controlled genetic background with only two possible alleles per locus (C57-C58), making it ideal for detecting ASE. The observation of 82 genomic regions showing genotype-dependent expression (C64-C65) with quantified effect sizes (C66) provides strong evidence. The detection of recombination events (C68-C70) validates the genotyping approach and demonstrates the resolution of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C33",
+      "C55",
+      "C84",
+      "C93",
+      "C106"
+    ],
+    "result": "The differential expression of genes on the same chromosome as a mutation may be driven by ASE rather than by the mutation itself. The enrichments of DE genes on mutant chromosomes were driven by ASE, which manifests due to expression differences between wild-type strain alleles rather than altered transcription caused by the mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the convergence of evidence from the mutant line analysis (showing chromosomal enrichment, C32, C44-C45) and the SAT line experiment (demonstrating widespread ASE in wild-type context, C67). The sox10 compound heterozygote experiment (C51-C55) provides direct evidence that some DE genes track with specific wild-type alleles rather than with the mutation. Claims C33 and C93 synthesize these findings appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C109"
+    ],
+    "result": "In a sox10 compound heterozygote cross, genes on chromosome 3 could be classified into two groups: 10 genes showing allele-linked expression patterns consistent with ASE, and 15 genes showing expression patterns consistent with response to loss of sox10 function. The ASE candidates were not spatially restricted, while the putative sox10-responsive genes were expressed in neural and neural crest derivatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 describe clear patterns in the data that distinguish ASE from mutation-responsive genes. The use of four genotypes in the compound heterozygote cross (C51-C54) provides the necessary resolution to distinguish these patterns. The spatial expression data from ZFIN (C82-C83) provides independent validation that the classification is biologically meaningful, as sox10 is a known neural crest regulator (C81). This demonstrates a practical approach to distinguish ASE from genuine mutation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ASE can substantially alter Gene Ontology (GO) term enrichment analysis. The effect was variable across experiments, with experiments having fewer DE genes showing larger effects. In one sox10 example, only 49 of 92 GO terms remained enriched when chromosome 3 genes were removed, while 28 new terms became enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 provide a concrete example with specific numbers showing substantial changes in GO enrichment. Claim C71 reports the overall pattern from systematic analysis shown in Figure 4A. The observation that experiments with fewer DE genes show larger effects (C73) is logical, as ASE-linked genes would represent a larger fraction of the total. This demonstrates practical consequences of ASE for pathway interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C35",
+      "C11",
+      "C104"
+    ],
+    "result": "ASE has implications for interpretation of RNA-seq experiments in zebrafish and other non-inbred organisms. Local genes affected by ASE may be red herrings that could lead to pathways being erroneously implicated or overlooked. These observations are relevant for outbred animals and non-inbred model organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent reasonable inferences from the demonstrated presence of widespread ASE (C6, C34, C67) and its effects on GO enrichment (C71-C76). The logic is sound: if ASE causes spurious DE on mutant chromosomes, and genomic location is typically not considered (C9, C15), then misinterpretation is likely. Claims C102-C104 appropriately extend this to other organisms based on genetic principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C92"
+    ],
+    "result": "Of 16 chromosomal enrichments not on the mutant chromosome, 7 were on chromosome 9 and driven by \u03b3-crystallin genes expressed in the lens, suggesting eye defects in some mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 report a specific pattern in the data with citation support for the crystallin gene cluster. The inference that eyes are affected (C48) is reasonable given that crystallin genes are lens-specific. This represents a biologically interpretable exception to the general pattern of enrichment on mutant chromosomes, likely reflecting genuine co-regulation of clustered genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Whether there was enrichment of DE genes on the mutant chromosome did not depend on the total number of DE genes, although experiments with very high numbers of DE genes tended not to show enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation is reported as being shown in Figure 2B. The pattern makes biological sense: experiments with very large numbers of DE genes likely reflect more global or severe phenotypes where mutation-specific effects dominate over ASE effects. This is a descriptive observation about the data pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "A previous study using RNA-seq to map ENU mutations detected very few DE genes in regions linked to mutations, likely due to methodological differences, particularly sample size (1 mutant and 1 wild-type sample vs. median of 10 per condition in this study).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 accurately reports findings from a cited study. However, claim C87's explanation is speculative. While sample size is a plausible explanation for different statistical power to detect DE genes, the authors do not provide direct evidence (e.g., power calculations or reanalysis of the Miller et al. data with different sample sizes) to support this specific explanation. Other methodological differences could also contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "While gene clustering can occur due to co-regulation of functionally related genes, the neighboring DE genes in the tested mutant lines showed no obvious functional connections, arguing against this as an explanation for the observed chromosomal enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 establish the principle of gene clustering with citation support. Claim C90 presents a logical alternative hypothesis. Claim C91 reports the observation that rules out this hypothesis. This represents appropriate consideration and rejection of an alternative explanation, though the analysis of \"no obvious functional connections\" is not described in detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "ASE in zebrafish whole embryos shows similar magnitude (mean absolute log2FC of 0.5) to human tissue-specific ASE (average log2FC of ~0.6), suggesting that tissue-specific expression differences between alleles would be even larger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 provides a quantitative comparison to human data with citation. Claim C96 reports the zebrafish finding. Claim C97 makes a reasonable inference that averaging across tissues would dilute tissue-specific effects. However, this assumes that the zebrafish ASE is tissue-specific like human ASE, which is plausible but not directly demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C26",
+      "C100",
+      "C101"
+    ],
+    "result": "Zebrafish are highly polymorphic compared to inbred mouse strains, with ASE evident even without outcrossing. ASE could impact penetrance or expressivity of phenotypes in different genetic backgrounds, as demonstrated by a cited example where ahsa1a expression differences affected gata3 mutant phenotype severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by the SAT line data (C34, C67) and citation C26. Claim C100 is a reasonable speculation supported by citations. Claim C101 provides a concrete example from the literature. Together these support the broader implications of ASE for phenotypic variation, though the authors did not directly test this in their own experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "ASE effects are expected to be less pronounced in inbred mouse strains, and indeed were not observed in the authors' previous work on mouse knockouts. However, ASE should be considered when working with wild mouse strains, crosses between genetic backgrounds, or any non-inbred organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is a reasonable prediction based on genetic principles (inbred strains have minimal polymorphism). Claim C103 provides supporting evidence from the authors' own work. Claim C104 is a logical recommendation. The reasoning is sound, though the authors did not systematically test ASE across different organisms or genetic backgrounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Several approaches are proposed to address ASE in mutant transcriptome analysis: using compound heterozygotes to track parental alleles, identifying informative SNPs in wild-type alleles, transgenic overexpression, or analyzing G0 CRISPR/Cas9 injected embryos. All methods have caveats, but as a first step, DE gene outputs should include genomic locations to identify ASE candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 propose various experimental approaches, with C109 demonstrating that the compound heterozygote approach works (shown in Figure 5). Claims C113-C114 appropriately acknowledge limitations. Claim C115 provides a practical recommendation. These represent reasonable solutions based on the study's findings, though most are not empirically tested beyond the sox10 example. The recommendation in C115 is well-supported and immediately actionable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C59",
+      "C94"
+    ],
+    "result": "Background and methodological context for the study, including standard practices in zebrafish genetics, RNA-seq analysis, and established knowledge about ASE in other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide necessary context and describe established methods and knowledge, supported by appropriate citations. They are not novel findings but rather set the stage for the study's contributions. The claims accurately represent standard practices and prior knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "RNA-seq and LD mapping based on Cloudmap was used to map causal mutations in mutant lines from forward genetic screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This describes the methods used in the study with appropriate citation. The approach is standard and well-established. This is a methodological claim that is adequately supported.",
+    "result_type": "MINOR"
+  }
+]

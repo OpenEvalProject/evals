@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C84"
+    ],
+    "result": "Myristoylated CaMKII inhibitory peptides (myr-CN27 and myr-CN21) are more effective than tat-conjugated peptides (tatCN21) at reducing AMPAR/NMDAR ratios. tatCN21 (5 \u03bcM) failed to reduce the ratio, while myr-CN27 (1 \u03bcM) and myr-CN21 (5 \u03bcM) each reduced it by ~50%, suggesting lipidation is superior to cell-penetrating peptides for delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide direct experimental comparisons showing tatCN21 ineffectiveness versus myr-CN27/myr-CN21 effectiveness at reducing AMPAR/NMDAR ratios (Figure 1\u2014figure supplement 1). The conclusion about lipidation superiority (C30, C84) is well-supported by these comparative data. Statistical analysis and appropriate controls strengthen this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C113",
+      "C114"
+    ],
+    "result": "myr-CN27 (1 \u03bcM) selectively and completely inhibits CaMKII, causing a slowly developing (~40 min) depression of AMPAR-mediated EPSCs to ~50% of baseline without affecting NMDAR EPSCs. This effect is absent in CaMKII\u03b1 knockout cells, demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 and C113-C114 provide converging evidence from multiple experimental approaches (acute slices, CRISPR knockouts, paired recordings) with appropriate statistical tests (p < 0.01). The magnitude matches genetic deletion studies (C33), and the lack of effect in CaMKII\u03b1-null cells (C37, C114) confirms specificity. The selectivity for AMPAR over NMDAR is consistently demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C115"
+    ],
+    "result": "myr-AIP, another myristoylated CaMKII inhibitor, produces effects similar to myr-CN27: selective ~50% reduction in AMPAR EPSCs without affecting NMDAR responses. The effect is absent in CaMKII\u03b1 knockout cells, confirming CaMKII-specific action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 and C115 demonstrate that myr-AIP replicates myr-CN27 effects across multiple preparations (slice culture, acute slices) with appropriate controls (CaMKII\u03b1 deletion). Statistical significance is reported (p < 0.01), and the convergence of two structurally distinct inhibitors strengthens the conclusion about CaMKII's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C116",
+      "C117"
+    ],
+    "result": "paAIP2, a photoactivatable CaMKII inhibitor, causes slowly developing (~10s of minutes) inhibition of AMPAR responses upon blue light exposure without affecting NMDAR responses or control cells. The slow kinetics despite rapid inhibitor activation suggests the time course reflects slow reversal of CaMKII action rather than slow inhibitor access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 and C116-C117 provide strong evidence using an optogenetic approach with appropriate controls (untransfected cells, CaMKII\u03b1 knockouts, NMDAR measurements). The key inference (C55) about kinetics is well-reasoned: rapid light activation yet slow functional effect implies the rate-limiting step is CaMKII action reversal, not inhibitor delivery. Statistical support is provided (p < 0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C82"
+    ],
+    "result": "The depression caused by myr-CN27 develops faster in whole-cell recordings than in field potential recordings, likely due to slower peptide penetration to deeper neurons that contribute to field potentials. This highlights the importance of recording method and peptide application duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C82 provide direct experimental comparison (Figure 1E) with a reasonable mechanistic explanation based on tissue penetration kinetics. The interpretation is logical and consistent with known properties of peptide diffusion through tissue. This addresses an important methodological consideration for comparing with prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Constitutive CaMKII activity maintaining basal synaptic transmission is not Ca2+-dependent. Loading cells with BAPTA (15 mM) or blocking NMDARs with MK-801 (in vivo pretreatment plus bath application) does not prevent myr-CN27's depressive effect, ruling out ongoing Ca2+ signaling or spontaneous NMDAR activity as the source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 and C125-C127 provide two independent experimental approaches (BAPTA chelation, NMDAR blockade) with appropriate verification (NMDAR EPSC measurements confirming blockade). Statistical analysis supports the findings (p < 0.01). The logic is sound: if constitutive activity required ongoing Ca2+, these manipulations should prevent the effect. The negative results strongly support Ca2+-independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C118",
+      "C119"
+    ],
+    "result": "Following transient CaMKII inhibition (either myr-CN27 washout or paAIP2 light termination), synaptic transmission remains persistently depressed with no recovery, consistent with resetting of a molecular switch. LTP can still be induced after paAIP2 deactivation, confirming the inhibitor is no longer active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C118-C119 demonstrate persistent depression using two independent approaches (pharmacological washout, optogenetic reversal). The paAIP2 experiment is particularly strong because the inhibitor rapidly reverses (~40s), yet depression persists. The ability to induce LTP afterward (C64) rules out continued inhibitor action. Statistical support is provided (p < 0.01). This is critical evidence for CaMKII as a bistable switch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C120",
+      "C121"
+    ],
+    "result": "Constitutive CaMKII activity is absent in neurons lacking functional NMDARs. myr-AIP has no effect in GluN1 knockout cells or cells expressing pore-dead GluN1(N812W) mutant, suggesting that in vivo, NMDAR-independent Ca2+ sources cannot activate CaMKII to maintain synaptic function. This supports the interpretation that constitutive CaMKII activity represents prior NMDAR-dependent LTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 and C120-C121 provide strong genetic evidence using two complementary approaches (complete GluN1 deletion, pore-dead mutant). The pore-dead experiment (C69-C71) is particularly important because it preserves GluN2B (required for CaMKII binding) while eliminating NMDAR-mediated Ca2+ influx. Statistical support is provided (p < 0.01). The conclusion that constitutive activity represents prior LTP is well-supported, though the inference relies on the assumption that all relevant CaMKII activation in vivo requires NMDAR function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C122",
+      "C123"
+    ],
+    "result": "Transient CaMKII inhibition with paAIP2 prior to LTP induction reduces baseline EPSCs to ~50% but doubles the magnitude of subsequent LTP compared to control cells. This occlusion-like interaction suggests constitutive CaMKII activity and LTP share the same mechanism, supporting the conclusion that LTP acquired in vivo leaves a persistent synaptic memory trace.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 and C122-C123 provide elegant evidence for LTP saturation and shared mechanisms. The experimental design (in utero transfection, light exposure before recording) is appropriate. The doubling of LTP magnitude after removing constitutive activity is quantitatively consistent with occlusion and statistically significant (p < 0.01). The inference about shared mechanisms (C74) is well-reasoned. This is strong evidence that 'basal' transmission includes prior LTP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C124"
+    ],
+    "result": "myr-CN27 completely reverses established LTP in two-pathway experiments. After LTP induction in one pathway, myr-CN27 application causes both the LTP pathway and control pathway to converge at ~50% of the original control level, demonstrating that CaMKII is essential for maintaining LTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C80, and C124 provide the critical experiment demonstrating LTP reversal using the gold-standard two-pathway design. The convergence of both pathways to the same level is quantitatively demonstrated (n=11, p>0.05 for difference between pathways after drug). This is replicated in field recordings (C80). This directly addresses the long-standing controversy about CaMKII's role in LTP maintenance and provides definitive evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "Previous failures to observe LTP reversal with tatCN21 can be explained by: (1) tatCN21's ineffectiveness at inhibiting CaMKII (no effect on basal transmission), (2) insufficient duration of peptide application, and (3) inferior delivery method (tat vs. myristoylation). Reversing constitutive CaMKII is more difficult than blocking its activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 provide a coherent explanation for discrepancies with prior literature, supported by the authors' own comparative data (C27, C81) and kinetic observations (C82, C83). The reasoning is logical and addresses specific methodological differences. However, this is primarily reconciliation with prior work rather than new mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CaMKII contributes to basal synaptic transmission (~50%), is required for LTP maintenance (acute inhibition erases LTP), and transient inhibition enhances subsequent LTP. These findings strongly support CaMKII as a molecular storage device for synaptic memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 and C85-C87 represent the main conclusions synthesized from all experimental results. Each component is well-supported by multiple independent experiments with different inhibitors and approaches. The convergence of evidence from basal transmission, LTP reversal, and occlusion experiments provides strong support for the molecular storage model. This represents the primary contribution of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The kinetics of CaMKII inhibition differ dramatically between blocking LTP induction (~1 min sufficient) versus reversing established LTP or basal transmission (10s of minutes required). This is explained by CaMKII sequestration at the PSD bound to GluN2B, where it is protected from phosphatases, making reversal of this sequestered pool more difficult than preventing initial cytosolic CaMKII phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C98 integrate prior literature (C90, C97) with current observations (C91-C92) to propose a mechanistic model. The model is reasonable and consistent with known CaMKII biology (C93-C96). However, the protection from phosphatases (C97) is cited rather than directly demonstrated here. The inference about differential difficulty (C98) is logical but somewhat speculative. The model provides a plausible explanation but would benefit from direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The demonstration that CaMKII maintains basal synaptic transmission provides a simple model for LTD as depotentiation (reversal of prior LTP). The slow kinetics of CaMKII inhibition (~10s of minutes) explains the slow induction of LTD. This model is supported by the absence of LTD in CaMKII knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C104 propose an attractive model connecting the current findings to LTD mechanisms. The logic is sound: if CaMKII maintains transmission, phosphatase activation could reverse this. The kinetic argument (C102-C103) is reasonable. However, this is primarily speculative extrapolation from the current data rather than direct experimental test of LTD mechanisms. The supporting evidence from knockouts (C104) is cited, not generated here. The model is plausible but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "CaMKII's contribution to synaptic transmission is unlikely to be simple additive potentiation, as this would be unstable and saturate. Instead, the CaMKII memory trace is envisioned as embedded in a network with compensatory mechanisms (heterosynaptic depression, LTD, homeostasis) maintaining overall stability with no net change in excitatory drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 address an important theoretical concern about network stability. The argument is well-grounded in established theory (C106 cites extensive prior work) and known stabilization mechanisms (C107). The proposed model (C108) is reasonable though speculative. This represents thoughtful consideration of how the findings fit into broader network function, though it is not directly tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The concept of 'basal synaptic transmission' requires reevaluation. Rather than representing a ground state, synaptic currents measured in hippocampal slices are maintained by persistent enhancement (LTP) acquired prior to slicing while the animal was alive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 represent an important conceptual reframing based on the experimental findings. The conclusion follows logically from the evidence that CaMKII maintains transmission and represents prior NMDAR-dependent plasticity. This challenges a fundamental assumption in the field and has broad implications for interpreting slice physiology experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Despite presynaptic CaMKII expression and reported effects on transmitter release, the peptide inhibitors showed no presynaptic effects in these experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 note an interesting negative result. C49 cites prior evidence for presynaptic CaMKII function, while C50 reports no presynaptic effect observed here (inferred from lack of changes in paired-pulse ratio or other measures, though these data are not explicitly shown). This is a minor observation but worth noting as it suggests the inhibitors primarily affect postsynaptic CaMKII or that presynaptic effects are subtle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "While the results strongly support CaMKII's role in LTP maintenance, whether CaMKII actually stores behavioral memories remains an open question. Some support comes from recent viral expression studies of dominant-negative CaMKII mutants affecting memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 appropriately acknowledge the limitation that LTP is a model system and the leap to actual memory storage is not directly demonstrated. The citation of supporting behavioral work (C89) is appropriate. This represents honest assessment of what the data do and do not show.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background context establishing LTP as a memory model, CaMKII biochemistry, and prior conflicting evidence about CaMKII's role in LTP maintenance. Previous studies showed CaMKII is required for LTP induction but produced inconsistent results regarding maintenance, with most pharmacological and genetic studies failing to detect effects on basal transmission or LTP reversal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 provide literature context and are appropriately supported by citations. These establish the scientific background and controversy that motivated the current study. C1 represents field consensus, C7-C15 describe established mechanisms, and C16-C26 document prior conflicting results. This is standard background material, not new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "LTP is saturable, a well-established property that predicts larger LTP should be possible when constitutive CaMKII activity is removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 states established knowledge about LTP saturation that provides the theoretical basis for the occlusion experiment (C72-C75). This is background knowledge, not a new finding.",
+    "result_type": "MINOR"
+  }
+]

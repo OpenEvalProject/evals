@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "P. vivax patients in the study cohort exhibited significant haematological abnormalities including anaemia (38%), leukopenia (54.5%), lymphopenia (80%), and thrombocytopenia (87%), with many presenting severely reduced levels. Neutrophil counts were not significantly different, but other myeloid populations (MXD) were significantly reduced, and mean platelet volume was significantly increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C24 provide comprehensive descriptive statistics of the study cohort with appropriate statistical tests (p-values reported). The haematological measurements are standard clinical parameters with established reference ranges, and the data are presented with proper statistical comparisons between patients and controls. The findings are internally consistent and supported by Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Unsupervised clustering analysis (PCA and K-means) revealed two patient subgroups (Vivaxlow and Vivaxhigh) that differ significantly in total parasite biomass (PvLDH) but not in peripheral parasitaemia or parasite load. PvLDH was the parasite variable with the highest loading score in PCA and the best predictor for segregating patients into clusters using machine learning models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe a well-executed clustering analysis with appropriate dimensionality reduction (PCA), bootstrapping validation (jaccard_index 0.9 and 0.86), and machine learning validation (classification tree and random forest). The statistical methods are appropriate, and the finding that PvLDH (total biomass) rather than peripheral parasitaemia distinguishes patient groups is robustly demonstrated across multiple analytical approaches (Figures 2-3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Vivaxhigh patients showed significantly more severe haematological alterations compared to Vivaxlow patients, including more intense thrombocytopenia (63,000 vs 100,700 platelets/\u03bcL, p=0.002), higher frequency of severe thrombocytopenia (47% vs 8%), more severe lymphopenia (88% vs 64% with lymphopenia, fourfold increase in severe cases), significantly reduced MXD counts, and significant neutrophil enrichment with higher NLCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 present comparative data between the two patient subgroups with appropriate statistical tests and p-values. The differences are substantial and statistically significant, with clear clinical thresholds defined for severity categories. The data are internally consistent and supported by Figure 4B, showing a coherent pattern of more severe haematological disturbances in the Vivaxhigh group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Vivaxhigh patients showed significantly increased plasma levels of cytokines regulating haematopoiesis, including thrombopoiesis-inducing cytokines (TPO and IL-11), proinflammatory cytokines associated with myeloid-biased HSC differentiation and lymphopoiesis inhibition (TNF-\u03b1, IL-1\u03b1, IL-1\u03b2, IL-6, IL-8), and myelopoiesis mediators (G-CSF and L-selectin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 present Luminex multiplex immunoassay data comparing cytokine levels between patient groups. The measurements are technically sound, with appropriate statistical comparisons shown in Figure 4C and supplementary figures. The interpretation linking these cytokines to haematopoietic processes is supported by appropriate citations to established literature (Boiko and Borghesi, 2012; Chiba et al., 2018; Kovtonyuk et al., 2016; Soehnlein et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Vivaxhigh patients showed significantly elevated circulating levels of endothelial cell (EC) activation markers (ICAM-1, VCAM-1, E-selectin, P-selectin, Ang-2, VWF-A2, CD40L, PAI-1) and EC glycocalyx breakdown marker (Syndecan-1) compared to Vivaxlow patients and healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 present Luminex data on EC activation and damage markers with appropriate statistical comparisons between groups. The measurements are technically sound and the interpretation of Syndecan-1 as a glycocalyx breakdown marker is supported by citations (Yeo et al., 2019; Pillinger and Kam, 2017). The data are presented in Figure 5A with supporting supplementary figures showing individual biomarker levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C66"
+    ],
+    "result": "Ex vivo experiments demonstrated that pooled plasma from Vivaxhigh patients (but not Vivaxlow or control plasma) directly induces EC activation in HUVECs, including transcriptional upregulation of ICAM-1, IL-1\u03b1, and IL-8, downregulation of Ang-1, ADAMTS13, and NOS3, and increased protein expression of ICAM-1 and VCAM-1, in the absence of parasitized RBCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C66 describe well-controlled ex vivo experiments using HUVECs stimulated with pooled plasma from different patient groups. Multiple complementary techniques were used (qRT-PCR, flow cytometry, immunofluorescence) with appropriate controls (mock, isotype controls). The data are presented in Figure 5B and 5D with technical replicates specified. The finding that plasma factors alone can induce EC activation is mechanistically important and well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Network analysis revealed that PvLDH (total parasite biomass) occupies a central position connecting functional modules of EC activation/damage and inflammatory/haematopoietic responses. PvLDH showed highly significant positive correlations with Syndecan-1, VCAM-1, VWF, IL-6, IL-8, and TNF-\u03b1 (p<0.0001), while platelet, lymphocyte, and neutrophil counts were negatively correlated with PvLDH (p<0.0001) but not with peripheral parasitaemia or parasite load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 present network and correlation analyses using appropriate statistical methods (Pearson's correlations with p<0.05 cutoff for network, p<0.01 for heatmap). The analysis reveals biologically meaningful patterns with PvLDH as a central node. The correlation data are presented in Figure 6A-C with clear visualization of network topology differences between patients and controls. The finding that correlations are specific to total biomass (PvLDH) rather than peripheral parasitaemia is a key result consistently demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C55"
+    ],
+    "result": "Machine learning classification tree models identified Syndecan-1, IL-6, and platelet counts as the most dominant host predictor attributes for classifying patients based on total parasite biomass levels. PvLDH was identified as a relevant predictor of thrombocytopenia severity, and Syndecan-1 was identified as a putative biomarker predicting total parasite biomass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C55 describe supervised machine learning analyses (C4.5 algorithm, random forest, recursive partitioning) with appropriate training/test set splits and cross-validation. The models achieved reasonable accuracy (77-87% for cluster prediction) and identified biologically plausible predictor variables. The analysis is presented in Figures 6D and supplementary figures with clear decision tree visualizations showing cutoff values and classification accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C78",
+      "C79"
+    ],
+    "result": "The study concludes that total parasite biomass (measured by PvLDH) is a better predictor of P. vivax host responses and pathogenesis than peripheral parasitaemia, and that changes in clinical parameters and biomarkers result from both systemic host responses and local infection in tissue reservoirs (BM and spleen). A combination of host parameters (Syndecan-1, IL-6, platelet levels) and PvLDH can predict the extent of parasite infection outside circulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C78, and C79 represent the main conclusions synthesized from multiple lines of evidence presented in the study. The conclusion that PvLDH is a better predictor than peripheral parasitaemia is supported by clustering analysis (C25-C28), correlation analysis (C44-C45), and machine learning models (C46-C47). The interpretation is consistent with cited prior work (Barber et al., 2015; Silva-Filho et al., 2021) and the comprehensive dataset presented. The predictive model combining host and parasite parameters is directly demonstrated by the classification tree analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "EC activation biomarkers (ICAM-1, VCAM-1, E-selectin, Ang-2, CD40L, vWF-A2) and Syndecan-1 are positively correlated with thrombocytopenia, lymphopenia, anaemia, neutrophil enrichment, and with cytokines inducing megakaryocyte differentiation (IL-11, TPO) and myeloid-biased HSC differentiation (TNF-\u03b1, IL1-\u03b1, IL6, IL-8, G-CSF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 describe correlation patterns identified in the network and correlation matrix analyses. These correlations are statistically significant (p<0.01 cutoff used) and biologically coherent, linking EC activation/damage with haematological perturbations and inflammatory responses. The data are presented in Figure 6 and correlation matrices, showing consistent patterns across multiple related biomarkers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors hypothesize that elevated EC activation and glycocalyx damage in Vivaxhigh patients increases exposure of adhesion molecules, favoring cytoadherence of P. vivax-infected RBCs in splenic red pulp and BM, leading to parasite accumulation in deep tissues. This may act synergistically with inflammatory changes to cause splenic platelet pooling, platelet clumping, and lymphopenia through mechanisms including AICD, splenic T-cell accumulation, or decreased lymphopoiesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C54 and C64-C65 represent mechanistic hypotheses proposed by the authors to explain their observations. While these hypotheses are biologically plausible and supported by citations to relevant literature, they are speculative interpretations not directly tested in this study. The authors appropriately use language indicating these are proposed mechanisms ('hypothesize,' 'propose,' 'might explain'). Direct evidence for cytoadherence in tissues, platelet pooling mechanisms, or lymphopoiesis alterations would require additional experiments not performed here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Ex vivo data indicate that systemic inflammatory responses in P. vivax patients can lead to local EC activation but not vascular damage, as evidenced by transcriptional and protein changes in adhesion molecules without detectable effects on vascular integrity (ECIS assays) or damage markers (Syndecan-1, VEGF expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 synthesizes findings from the ex vivo HUVEC experiments (C40-C41, C66) with ECIS functional assays and gene expression data. The interpretation that plasma induces EC activation without vascular damage is supported by the observation that adhesion molecules are upregulated while vascular integrity (measured by ECIS) and damage markers (Syndecan-1, VEGF mRNA) are not affected in the ex vivo system. However, this conclusion is limited by the use of HUVECs rather than adult vascular endothelium (acknowledged in C67).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Luminex analysis confirmed heterogeneity in EC changes across P. vivax patients, with systemic increases in EC activation and damage markers detected only in Vivaxhigh patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 summarizes the Luminex findings presented in detail in C38-C39 and Figure 5A. This is a direct observation from the data showing that EC activation/damage markers are elevated in Vivaxhigh but not Vivaxlow patients compared to controls, confirming the heterogeneity identified by clustering analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C56"
+    ],
+    "result": "The ratio of plasma pLDH to peripheral parasitaemia is sixfold higher in P. vivax patients with complicated outcomes compared to non-severe patients (versus only 1.4-fold difference in P. falciparum), indicating that peripheral parasitaemia is a poor predictor of clinical outcomes in P. vivax infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50 cite comparative data from Barber et al., 2015 about severe versus non-severe patients, but the current study cohort included only uncomplicated P. vivax patients. Claim C56 about peripheral parasitaemia being a poor predictor is supported by citation to Baird, 2013 and is consistent with the study's findings, but the specific sixfold ratio claim (C49) is an inference from prior work, not a direct finding from this study's data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Thrombocytopenia and lymphopenia, while not included in WHO criteria for severe malaria, have been associated with severe manifestations and need for transfusions in severe vivax malaria, suggesting these haematological complications could be explored as markers of severity for P. vivax.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 appropriately cite established literature about the clinical relevance of thrombocytopenia and lymphopenia in malaria (Lacerda et al., 2011; Naing and Whittaker, 2018; Gerardin et al., 2002; Kochar et al., 2010; Kochar et al., 2005). The suggestion that these could be explored as severity markers is a reasonable inference based on the study's findings showing association with total parasite biomass and the cited literature on clinical outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Patients with strong host responses during acute infection might be at increased risk of deteriorating after treatment commencement, and identification of unique biological signatures could help build rational approaches to diagnosis, prognosis, and individualized treatment for vivax malaria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 represent speculative clinical implications of the study's findings. While biologically plausible based on case reports of post-treatment deterioration cited in the discussion, these are prospective hypotheses not tested in this cross-sectional study. The suggestion about clinical utility is reasonable but would require validation in longitudinal studies with clinical outcome data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The introduction establishes the epidemiological importance of P. vivax, its unique biological features (low peripheral parasitaemia, reticulocyte tropism, hypnozoites), evidence for a parasite reservoir outside circulation based on pLDH/parasitaemia discrepancy, cytoadherence capability of schizonts, enrichment in BM and spleen, and the ability to cause severe disease at low parasitaemia, though pathogenic mechanisms remain incompletely understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide background context supported by appropriate citations to established literature and recent studies. These are well-established facts about P. vivax biology and epidemiology (C1-C7, C13), supported by cited evidence for tissue reservoirs (C8-C12), setting up the rationale for the current study (C14). The claims accurately represent the cited literature and current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C80",
+      "C81"
+    ],
+    "result": "The discussion contextualizes findings within established knowledge about mechanisms of thrombocytopenia, lymphopenia, EC activation in malaria, EC biology (PAMP/PRR sensing, cytokine receptors, Weibel-Palade body exocytosis), extracellular vesicles in malaria, PvLDH as a biomarker, and limitations of HUVECs as a model system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C67-C70, C73-C75, C80-C81 provide contextual background information appropriately supported by citations to established literature. These claims accurately represent current understanding in the field and are used to interpret the study's findings. The acknowledgment of HUVEC limitations (C67) is appropriate scientific caution.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2351 @@
+{
+  "submission": {
+    "id": "23a87267-7bc1-45f8-aecc-ca54d5d2d876",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:03:50.068174Z",
+    "updated_at": "2025-12-03T14:03:50.068174Z"
+  },
+  "content": [
+    {
+      "id": "695332ec-67ed-4435-925d-86b917123a46",
+      "submission_id": "23a87267-7bc1-45f8-aecc-ca54d5d2d876",
+      "content_type": "manuscript",
+      "content_text": "# Life history predicts global population responses to the weather in terrestrial mammals\n\n## Authors\n\n- John Jackson<sup>1</sup> ([ORCID: 0000-0002-4563-2840](https://orcid.org/0000-0002-4563-2840)) \u2020\n- Christie Le Coeur<sup>3</sup> ([ORCID: 0000-0002-0911-2506](https://orcid.org/0000-0002-0911-2506))\n- Owen Jones<sup>1</sup>\n\n### Affiliations\n\n1. Interdisciplinary centre for population dynamics (CPop), Department of Biology, University of Southern Denmark Odense Denmark ([ROR:03yrrjy16](https://ror.org/03yrrjy16))\n2. Department of Zoology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n3. Centre for Ecological and Evolutionary Synthesis (CEES), Department of Biosciences, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWith the looming threat of abrupt ecological disruption due to a changing climate, predicting which species are most vulnerable to environmental change is critical. The life-history of a species is an evolved response to its environmental context, and therefore a promising candidate for explaining differences in climate-change responses. However, we need broad empirical assessments from across the world's ecosystems to explore the link between life history and climate-change responses. Here, we use long-term abundance records from 157 species of terrestrial mammals and a two-step Bayesian meta-regression framework to investigate the link between annual weather anomalies, population growth rates, and species-level life history. Overall, we found no directional effect of temperature or precipitation anomalies or variance on annual population growth rates. Furthermore, population responses to weather anomalies were not predicted by phylogenetic covariance, and instead there was more variability in weather responses for populations within a species. Crucially, however, long-lived mammals with smaller litter sizes had smaller absolute population responses to weather anomalies compared with their shorter living counterparts with larger litters. These results highlight the role of species-level life history in driving responses to the environment.\n\n## Introduction\n\nClimate change is one of the greatest challenges we face in the twenty-first century (Diaz, 2019). Although habitat loss and direct exploitation are currently the most important drivers of extinction in the natural world (Daskalova et al., 2020a; Diaz, 2019), changes to the climate altering both the mean and variance of weather conditions and the frequency of extreme events, are predicted to cause widespread declines of global biodiversity in the coming decades (Almond et al., 2020; Newbold, 2018; Soroye et al., 2020; Thomas et al., 2004). For mammals and birds, temperature increases are already associated with declining population trends (Spooner et al., 2018) and many endangered species have already been negatively impacted by climate change in at least part of their range (Pacifici et al., 2017; Pacifici et al., 2020). Perhaps more worryingly, abrupt ecological disruption due to climate change has been predicted to have large negative future impacts on biodiversity, with tropical ecosystems being affected as early as 2030 (Newbold, 2018; Trisos et al., 2020). Furthermore, these future impacts will likely be exacerbated by interactions between the climate and other drivers of extinction such as habitat loss or disease prevalence (Brook et al., 2008; Cohen et al., 2020; Williams et al., 2019). Research highlighting the species and ecosystems that are most sensitive to climate-change impacts will therefore provide crucial knowledge to prevent future losses to global biodiversity.\n\nNot all species are equally sensitive to changes in the climate. Species vary in their climatic niches and in their behavioural, physiological, and demographic responses to environmental change and we therefore expect there to be both climate \u2018winners\u2019 and \u2018losers\u2019 (Ant\u00e3o et al., 2020; Bellard et al., 2012; Moritz and Agudo, 2013). At the macro scale, species-occupancy data highlight that geographic range shifts are the key response associated with climate change across taxa, resulting in changes to community composition, but not necessarily population decline (Ant\u00e3o et al., 2020; Chen et al., 2011; Dornelas et al., 2019). Furthermore, this pattern also occurs in broad species-assemblage and abundance-change data (Dornelas et al., 2019; Leung et al., 2020). While there is a lack of consistent directional temperature-related biodiversity change effects today (Ant\u00e3o et al., 2020), many species are predicted to become at risk of climate-induced population declines before 2,100 (Trisos et al., 2020). Therefore, investigating the mechanisms of how climate change induces population change may improve our predictions of the species most-affected by warming temperatures.\n\nUnderstanding the mechanisms underpinning population declines in response to climate change and the temporal scale at which these mechanisms occur, at short- or long-term timescales, remains one of the main challenges when investing the influence of climate change on population change. Population abundance time-series and demographic data have begun to reveal how climate change leads to population decline. For birds and mammals average abundance trends were negatively associated with long-term rates of climate warming (Spooner et al., 2018), but sparse data in short time-series are at risk of overfitting weather effects (Knape and de Valpine, 2011). Therefore, targeted demographic studies unpicking how changes in weather patterns cause population change (Cordes et al., 2020; Coulson et al., 2001; Layton-Matthews et al., 2021; Paniw et al., 2019; Paniw et al., 2021; Woodroffe et al., 2017) and whether species traits can help predict these changes (Pacifici et al., 2017) are vital to highlight vulnerable species. While emphasis is often on long-term temperature trends, the immediate impact of the weather on populations, particularly in the context of extreme or anomalous events (e.g. heat waves and droughts), is also important (Maxwell et al., 2018). Furthermore, there may also be impacts of increased variance in weather conditions as opposed to changes in central tendency (Lawson et al., 2015; Le Coeur et al., 2021; Stenseth et al., 2003). Applying these concepts at a comparative scale and assessing finer-scale population changes with respect to changes in the weather (and particularly extreme weather events or weather variance), and their relationship to species traits, will aid in illuminating climate-change responses across the tree of life (Compagnoni et al., 2021; Paniw et al., 2021).\n\nLife-history variation is a promising factor that could explain observed variation in responses to climate change (Pacifici et al., 2017). The timing of key demographic events of survival and recruitment across the life cycle, or life-history traits, are evolved responses to the environment, and characteristics relating to both \u2018slow\u2019 and \u2018fast\u2019 life histories are therefore adaptive in different environmental contexts (Stearns, 1992). For example, life-history differences between three amphibian species in Western Europe drove predicted survival and reproduction responses to the North Atlantic Oscillation (Cayuela et al., 2017). Generally, organisms with slower life histories are better adapted to cope with environmental fluctuations. Longer-lived organisms have a reduced relative effect of variability in vital rates, variability which is expected during environmental change, on population growth rates (Morris et al., 2008) and long-lived plants have weaker absolute demographic responses to weather (Compagnoni et al., 2021). However, while generally buffered, long-lived, slow-reproducing animals are often more at risk of extinction (Cardillo et al., 2005), and slower to recover when perturbed (Gamelon et al., 2014; Jackson et al., 2019; Turkalo et al., 2017). Comparative approaches linking life-history traits to climate-change responses may therefore provide a useful predictive link to improve our understanding of climate vulnerability.\n\nIn this study, we investigated annual population responses to temperature and precipitation anomalies (i.e. weather deviation from average conditions) in populations of terrestrial mammals across the world\u2019s ecosystems. We tested whether life history predicts population responses to the weather, and therefore its utility in assessing vulnerability to climate change. We addressed these questions using 486 long-term (\u226510 consecutive years) abundance records from 157 species of terrestrial mammal obtained from the Living Planet Database (Almond et al., 2020), by implementing a two-step meta-regression framework. First, for each abundance record, we assessed how observed annual population growth rates were influenced by standardised weather anomalies (annual deviation from long-term average weather patterns) and intra-annual weather variance using autoregressive additive models that accounted for temporal autocorrelation in abundance records and overall abundance trends.\n\nThen, we used a phylogenetically controlled Bayesian meta-regression with weather-effect coefficients as the response variable to address three key questions: (1) Are there directional (i.e. different from 0) temperature and precipitation effects on abundance changes across the terrestrial mammals? (2) How are these patterns influenced by covariance both within and between species, and are there vulnerable biomes or spatial patterns in responses? (3) Can species-level life-history traits predict the absolute magnitude of population responses to the weather? We characterised population responses to weather anomalies/variance accounting for both within- and among- species variance, incorporating a categorical predictor of ecological biome (Olson et al., 2001), and three broad continuous life-history traits that are widely characteristic of the key axes of life-history variation (Stearns, 1992). Due to a lack of overall biodiversity change globally in response to climate (Ant\u00e3o et al., 2020), we predicted that there will be no clear directional patterns in population responses to weather anomalies or weather variance overall. Instead, because life-history traits are an evolved response to the environment (Stearns, 1992), we predicted that mammals with \u2018slow\u2019 life-history traits will be buffered against weather anomalies and have responses with a lower absolute magnitude (Morris et al., 2008). We focused on absolute responses to weather anomalies in the context of life history because we had no a priori expectation for directional patterns in response to weather, but instead expected greater variance in (or more extreme) responses from \u2018fast\u2019 species (Compagnoni et al., 2021; Le Coeur et al., 2021). We expected that the link between population responses and life history would result in strong phylogenetic autocorrelation in weather responses (James et al., 2021; Melero et al., 2022). Finally, we predicted that population responses to weather anomalies would be more pronounced in biomes that experience more stable average climatic conditions.\n\nThe terrestrial mammals are an ideal study system to explore the predictors of population responses to climate change because they are a well-studied group with a combination of intensive abundance monitoring across the globe (Almond et al., 2020), detailed life-history information for hundreds of species (Conde et al., 2019; Myhrvold et al., 2015) and a highly-resolved phylogeny to facilitate phylogenetic comparative analyses (Upham et al., 2019). Furthermore, there is growing evidence from the mammals of the mechanistic links between the climate, demography, and population dynamics (Coulson et al., 2001; Paniw et al., 2019; Paniw et al., 2021; Woodroffe et al., 2017).\n\n## Results\n\nWe assessed population responses to weather anomalies in 486 long-term abundance time-series records from 157 species of terrestrial mammals globally (Figure 1). The time-series records ranged in duration from 10 years to 35 years, with mean and median record lengths across records of 15.7 and 14 years, respectively (Figure 1). The records were distributed across 13 terrestrial biomes (Olson et al., 2001), including both tropical and temperate regions, but were generally biased towards north western Europe and North America. We had records from 12 of 27 mammalian orders recognised by the IUCN Red List for threatened species (IUCN, 2016), but most densely in the Artiodactyla (n=172), Carnivora (n=127) and Rodentia (n=82) (Figure 1). The number of records for each species ranged from 1 to 17, with a mean of 3.1 and median of 2 records per species (Figure 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74161/elife-74161-fig1-v2.jpg)\n\n**Figure 1.:** Map gives the locations for each record analysed in the current study. Points are transparent, such that colour intensity indicates the spatial density of records. The size of the point represents the record duration in years. The histogram in the bottom left gives the distribution of record lengths across the whole dataset. The bar graph in the bottom right is a frequency distribution of each of the mammal orders analysed in the current study.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74161/elife-74161-fig2-v2.jpg)\n\n**Figure 2.:** Heatmaps for population responses to temperature (a) and precipitation (b) for 157 species of terrestrial mammal. Each row of the heatmap is a species, and coloured rectangles are the population records. The colour denotes the coefficient of temperature/precipitation effects derived from autoregressive additive models. Here, positive numbers indicate that positive temperature/precipitation anomalies (hotter/wetter than average in a given year) were associated with increases in population size, and vice versa. The distribution half-eye plots in (a) and (b) (top) are summaries of the posterior distribution for the global intercept (\u03b1(0)) of temperature and precipitation responses across records, fit with a Gaussian Bayesian meta-regression. The points give the approximate posterior mean and the error bar is calculated using a cumulative distribution function. Bayesian models were fit incorporating phylogenetic covariance using the maximum clade credibility tree from Upham et al., 2019, which is plotted on the right with annotations indicating the mammal order. The distribution half-eye plots in (c) are the posterior distribution summaries for phylogenetic covariance and within-species variance from the Gaussian Bayesian meta-regression.\n\n### No directional population response to weather anomalies\n\nOverall, we did not find directional effects of either temperature or precipitation anomalies on annual population growth rates in the terrestrial mammals (Figure 2). In our Bayesian meta-regression, controlling for both within species variance, phylogenetic covariance and differences in record length (number of years), the posterior mean global intercept, $\\alpha\u00af$, for temperature effects was 0.02 [-0.21,0.25] (95% credible intervals) and for precipitation effects was \u20130.07 [-0.31,0.15] (Figure 2a and Figure 2b). Furthermore, 95% of records had temperature and precipitation coefficients from \u20134.29 to 3.17, and \u20131.41 to 1.88, respectively. Nevertheless, approximately 8% (n=42) of temperature coefficients and 1% of precipitation coefficients were greater than 3 or less than \u20133, indicating that small clusters of populations experienced more extreme annual responses to the weather. In addition to temperature and precipitation anomalies, we also found no clear directional effects of weather variance on population growth rates (Appendix 1\u2014figure 23). There was also a positive effect of the number of years of population data for a record and the response to temperature anomalies, with a linear slope, $\\beta_{N}$ of 0.12 [0.03,0.21]. Together with the results of the global intercept $\\alpha\u00af$, this suggests that shorter records were associated with more negative temperature effects. However, there was a relationship between the variance in temperature effects and the length of the record; short records displayed larger variation in temperature effects (Appendix 1\u2014figure 24). While this finding has important implications for the biases in the raw data, record length was accounted for in all models, and therefore we do not expect that it influences our findings. These results highlight the paradigm of the existence of both winners and losers in weather responses, but no clear directional effect across Mammalia.\n\n### Spatial and phylogenetic effects\n\nWe tested whether there were differences in mean weather responses across ecological biomes (Olson et al., 2001). We did not find evidence for differences in weather responses across biomes, or strong evidence for spatial autocorrelation in weather responses. Using leave-one-out cross-validation, we compared the predictive performance of the model including a categorical predictor of biome relative to the base model, and we found no evidence for increased predictive performance for either temperature (\u0394elpd = \u20130.67; \u0394elpd = the change in expected log-wise predictive density relative to the base model) or precipitation (\u0394elpd = \u20130.73) effects (see Appendix 1\u2014figures 16\u201317 for more information). Furthermore, we explored the role of spatial autocorrelation in driving differences in weather coefficients across records using Morans I tests and spatially explicit meta-regressions but did not find evidence for spatial autocorrelation in weather effects (Appendix 1\u2014figures 19\u201321).\n\nInterestingly, we found far greater levels of within-species variation in temperature responses compared to among-species variance (Figure 2c). To explore the relative effects of within- vs. among- species variance, we incorporated both phylogenetic covariance ($\\sigma_{PHYLO}^{2}$) and species-level variance ($\\sigma_{SPECIES}$). The posterior mean for species-level variance in temperature effects was 0.2 [0.01,0.4] which was 20 times greater than the posterior estimate of 0.01 [0.0,0.03] for phylogenetic covariance (Figure 2c). Similarly, for precipitation the posterior mean for species-level variance was five times greater than for phylogenetic covariance, with a value 0.05 [0.0,0.15] compared to 0.01 [0.0,0.02] (Figure 2c). These patterns are reflected in the temperature and precipitation coefficients, for which large variation can be seen among records of the same species. For example, Myodes glareolus (bank vole) in the Rodentia had nine population records, and a range of temperature/precipitation effects from \u20133.33 to 3.86 and \u20132.72 to 2.41 respectively, compared to coefficients from \u201311.60 to 9.22 and \u20133.47 to 3.22 across Rodentia as a whole (Figure 2). This result highlights the potential importance of within-species variability in population responses to environmental change.\n\n### Life history predicts absolute population responses to weather anomalies\n\nAcross terrestrial mammals, we found that longer-living species with smaller litter sizes had lower absolute population responses to weather anomalies. We tested a set of Gamma models incorporating univariate, multivariate and two-way interaction effects of maximum longevity, litter size, and adult body mass and their influence on the absolute magnitude of temperature/precipitation effects using model selection and leave-one-out cross-validation (Supplementary file 1). As with our Gaussian models of overall weather effects, we found that record length had a strong negative impact on the absolute magnitude of temperature and precipitation responses, with posterior estimates on the linear predictor scale of $\\beta_{N}$ = \u20130.30 [-0.38\u2013\u20130.21] and $\\beta_{N}$ = \u20130.37 [\u20130.47- \u20130.26], respectively (Appendix 1\u2014figure 18). Namely, shorter records were associated with larger absolute temperature and precipitation responses. We found no association between adult body mass and either temperature ($\\beta_{BODYMASS}$ = \u20130.02 [-0.15,0.10]) or precipitation responses ($\\beta_{BODYMASS}$ = \u20130.00 [-0.17,0.17]). Furthermore, we found no strong evidence for any two-way interactions between life-history variables (Supplementary file 1). For both temperature and precipitation effects, the most competitive model was the univariate model including maximum recorded longevity (\u0394elpd = 5.44 and \u0394elpd = 1.03, compared to the base model for temperature and precipitation, respectively; Supplementary file 1 - Table S1). However, univariate models including litter size also had a higher predictive performance than the base model (\u0394elpd = 3.98 and \u0394elpd = 0.8 for temperature and precipitation, respectively). For temperature, the second-best predictive model was the one that included univariate effects for longevity, body mass and litter size (\u0394elpd = 4.54; Supplementary file 1 - Table S1), and this model was also competitive for precipitation (\u0394elpd = 0.69; Supplementary file 1 - Table S2). Therefore, in both cases we selected the models including all univariate life-history effects.\n\nFor both temperature and precipitation, our results highlight that shorter living mammals with greater litter sizes had greater absolute responses to weather anomalies than longer-living, slower-reproducing mammals (Figure 3). Absolute weather responses were negatively associated with longevity, with posterior means on the linear predictor scale of $\\beta_{LONGEVITY}$ = \u20130.20 [-0.41,0.02] and $\\beta_{LONGEVITY}$ = \u20130.17 [-0.42,0.09] for temperature and precipitation, respectively (Figure 3a and c). Thus, a maximum longevity change from 10 months (Akodon azarae) to 80 years (Loxodonta africana) was associated with a 2.36-fold and 2.05-fold decrease in the predicted absolute magnitude of responses to temperature and precipitation. So, for every additional 5 years of life, there was a 16.8% decrease in absolute responses to temperature and 14.6% decrease in the absolute responses to precipitation. An organism\u2019s longevity is strongly correlated to their body mass, but the effect of longevity held irrespective of whether adult body mass was also included in the model.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74161/elife-74161-fig3-v2.jpg)\n\n**Figure 3.:** Each panel presents the mean absolute effect of temperature (a and b) and precipitation (c and d) on population growth rates, |\u03c9|, for standardised maximum longevity (a and c) and standardised mean litter size (b and d) (n = 486). Standardisation was performed using z-scores of the natural-log of raw life-history traits. The values on each x-axis are split into equal bins of 0.2 units from the minimum to the maximum life-history value. Points are coefficient means, with standard error bars. The black lines are the mean posterior predictions from the best predictive model, where predictions were calculated averaging over all other covariates and varying effects in the model. The shaded intervals are the 80% quantile prediction intervals. Panel insets give posterior distribution summaries for the slope terms presented in each panel. Two points are omitted from the plotting panel due to large mean coefficient values and high standard errors.\n\nAbsolute weather responses were also positively associated with litter size, with posterior means of $\\beta_{LITTER}$ = 0.16 [0.02,0.32] and $\\beta_{LITTER}$ = 0.11 [-0.08,0.30] for temperature and precipitation, respectively (Figure 3b and d). In other words, mammals bearing more offspring in a single litter had greater absolute responses to temperature and precipitation anomalies. A change in litter size from 1 (monotocous species, various) to 17 (Thylamys elegans) was associated with a 1.99-fold and 1.60-fold increase in the predicted temperature and precipitation responses. For every additional offspring invested into at the litter stage, there was a 12.4% increase in the absolute magnitude of temperature responses and 10% increase in the absolute magnitude of precipitation responses.\n\n## Discussion\n\nOur results provide an important empirical link between a species\u2019 life history and its population responses to environmental change. While we found no directional patterns of responses to temperature and precipitation anomalies or intra-annual variance across the mammals, life-history traits relating to the pace of life were associated with absolute responses to weather. Namely, shorter living species with increased litters sizes, or species characterised with \u2018fast\u2019 life-history traits, responded with a greater absolute magnitude compared to those with \u2018slow\u2019 life-history traits. Practically, our results suggest that increased extreme/anomalous weather events will have a greater impact (both positive or negative) on the abundance of short-living mammals with higher reproductive output. Therefore, increased monitoring of vulnerable species with \u2018fast\u2019 life-history characteristics may benefit mammal conservation as global weather anomalies are increasingly common.\n\nWe find support for the hypothesis that longevity, and \u2018slow\u2019 life-history traits more generally, buffer organisms against short-term variability in the environment (Morris et al., 2008). Life history evolves in response to, and as an adaptation to, environmental conditions (Stearns, 1992), but rarely has the link between life history and responses to the environment been demonstrated at a global scale. We add to a small number of studies linking population demography and the climate (Compagnoni et al., 2021; Paniw et al., 2021). We do not argue that long-lived species are less vulnerable to climate change. Over longer time-scales, species with slow life-history traits are also slower to recover from perturbations (Gamelon et al., 2014), which would include sustained environmental change. Furthermore, many long-lived mammal species are affected by other threats such as poaching and habitat loss (Cardillo et al., 2005). Critically, however, our results highlight the potential utility of life-history traits for predicting species vulnerability to climate change.\n\nMore generally, demography has a role to play in predicting population declines in the Anthropocene and in highlighting targets for conservation management (Conde et al., 2019; Richards et al., 2021). Our study emphasises this role, demonstrating the predictive power of life-history traits when investigating responses to environmental change. However, there are limitations and barriers to the utility of demography in conservation. Only 1.3% of tetrapods globally have sufficient demographic information with which to estimate population dynamics (Conde et al., 2019). Here, we used summary traits that are available for many species (maximum longevity and mean litter size). Although these summary traits were well correlated with more robust demographic traits for a smaller subset of species (Appendix 1\u2014figure 26), maximum recorded longevity, while sufficient as a broad indicator, is strongly influenced by sampling variance and a flawed measure of longevity differences between taxa (Moorad et al., 2012). Ideally, lifetables with mortality and reproduction trajectories across the life cycle can be combined with data on external drivers to investigate detailed patterns in population dynamics, rather than relying on abundance trends (Desforges et al., 2018; Jackson et al., 2019). The recent development of the demographic resilience framework, which uses demographic data across the life cycle to simulate how a population may respond to perturbations (Capdevila et al., 2020), has excellent potential in extending these findings to explore demographic relationships with climate responses in detail. Unfortunately, however, detailed (st)age-specific demographic information is currently available only for a minority of species, but growing in availability rapidly (Salguero-G\u00f3mez et al., 2016). Therefore, there is a need to continue to increase the collection of demographic data (and other traits) for many more species than are currently available (Conde et al., 2019), so that we may predict population changes with respect to environmental change. Achieving this target may revolutionise the way we quantify species vulnerability to climate change (Ant\u00e3o et al., 2020; Dornelas et al., 2019; Leung et al., 2020; Paniw et al., 2021), helping to prevent extinctions before they occur.\n\nIn line with recent global assessments of biodiversity in the face of climatic change (Paniw et al., 2021), we did not find an overall directional effect of weather anomalies on population growth rates. This may in part reflect the fact that abundance changes are a higher order process determined by complex interactions between demographic components that counteract each other (Leung et al., 2020; Paniw et al., 2021). However, our results contrast with findings of linear associations between mammal abundance and temperature change (Spooner et al., 2018). These differences may reflect our approach to investigate annual changes, rather than long-term trends. Significant population trends from long time-series are detectable from smaller component time-series even when sampling is incomplete (Wauchope et al., 2019), and thus responses detected in trends may reflect broader changes in response to the climate that are not detected in models of annual change. Furthermore, we estimated linear, annual effects of weather on population growth rates, where population responses may actually be more complex non-linear patterns or lagged effects. However, the detection of climate effects on average trends may also be confounded by effects of other (sometimes more dominant) drivers (e.g. habitat loss) (Daskalova et al., 2020a). While out of the scope of the current study, population dynamics in endothermic mammals have been linked to other drivers such as diet specialisation, body size and human influence (Pacifici et al., 2020). Nevertheless, our findings can be explained in light of recent studies from the Living Planet Database that have found that the large majority of records do not exhibit population declines (Leung et al., 2020).\n\nInterestingly, we did not find evidence for phylogenetic covariance in weather responses between species. Closely related species can have disparate responses to weather anomalies. Recent evidence from birds indicated strong phylogenetic covariance in vital rates, particularly in adult survival, and the incorporation of phylogenetic information greatly improved predictive performance when imputing vital rates (James et al., 2021). In line with the overall patterns, our findings may reflect the trade-offs between vital rates, which cancel one another out when scaling up to population-level processes such as population growth rates in response to the weather (Paniw et al., 2021). However, this result is in contrast to findings from butterflies, which suggested that local responses to weather anomalies had a strong phylogenetic signal (Melero et al., 2022). One potential explanation for our finding is that for long-term time-series, there may also be temporal trade-offs in vital rates, where for example investing heavily into survival in one year (in response to weather) may impact subsequent reproduction for several years, decreasing the magnitude of population growth rates. The extent of phylogenetic covariance in vital rate responses and trade-offs remains unknown, but understanding how the climate impacts demographic rates across species may provide a useful tool for imputing population responses to the climate across the tree of life (James et al., 2021).\n\nInstead, we highlight the importance of variation in population responses to weather anomalies within a species. Different populations of the same species can have different responses to weather anomalies. Sampling heterogeneity has recently been shown to have broad implications for metrics of population dynamics, where demographic rates are poorly correlated among sampling sites for the same species (Engbo et al., 2020; R\u00f6mer et al., 2021). Demographic differences within a species range may reflect broader environmental gradients or wider climatic niche (R\u00f6mer et al., 2021). Therefore, inferences obtained from monitoring single populations or studies may not accurately portray species-level variability (Gaillard et al., 2013). This has broad implications for macroecology, particularly in population viability assessments (PVA) and species-distribution modelling. As well as suffering from data quality issues in their parameterisation (Chaudhary and Oli, 2020), our findings suggest that PVAs based on data from a single population may not accurately reflect population viability across a species\u2019 geographic range. Therefore, incorporating detailed demographic data, and investigating differences in population responses across a range, could greatly improve our perspective on population viability (Desforges et al., 2018). Furthermore, presence-only models of species distributions that do not account for responses to the environment within a species range do not accurately represent species distributions (Benito Garz\u00f3n et al., 2019). Moving towards trait-based monitoring and explicitly including demographic processes with mechanistic links to appropriate drivers into species distribution models could greatly improve predictions of climate change impacts on the biosphere (Trisos et al., 2020).\n\n### Limitations\n\nAs with many macroecological studies exploring global patterns in biodiversity using data collated from many individual studies, it is important to acknowledge limitations in the current study. These limitations include spatial biases, effects of record length on population responses, and the scope of current analyses. First, while broad in coverage spatially, population records in the Living Planet Database are biased towards temperate biomes and Europe/North America, a feature common in macroecology (Beck et al., 2012). We aimed to overcome these biases by using data on a well-studied taxonomic group with a broad range of life-history traits, conservative Bayesian meta-regression incorporating uncertainty, and explicitly exploring spatial and phylogenetic autocorrelation. Second, there was a consistent effect of record length on population responses to weather, for which longer records were associated with lower-absolute ($\\omega$ closer to 0) population responses. We accounted for record length in all analyses and do not expect that it influenced our findings, but it is important to acknowledge that increased long-term monitoring is crucial to assess population dynamics. Finally, the scope of the current study was to explore how standardised annual weather anomalies affect the directionality of annual population responses and absolute magnitude of responses with respect to life history. Thus, we do not make conclusions about how life history influences the directionality of responses, nor how long-term climatic trends influence population change.\n\n### Conclusion\n\nUltimately, improving our predictions of how humans are influencing the natural world is paramount to prevent rapid declines to global biodiversity (Kissling et al., 2018). This, however, requires a large shift towards both broad and detailed monitoring of global biodiversity. We show that linking species traits such as life-history traits to changes in the environment may equip us with tools to predict and prevent future losses.\n\n## Materials and methods\n\nTo assess the effects of weather anomalies on population growth rates, we collated information on global weather and the abundance, life history and phylogeny of the terrestrial mammals. We carried out all analyses using R version 4.0.5 (R Development Core Team, 2021). For all data on the terrestrial mammals, we standardised species names using the taxize package version 0.9.98 (Chamberlain, 2020) and matched using the Global Biodiversity Information Facility database (https://www.gbif.org/). All code used in the current study and additional descriptions of the analyses are archived in the Zenodo repository (https://doi.org/10.5281/zenodo.6620489), which was created from the following GitHub repository https://github.com/jjackson-eco/mammal_weather_lifehistory; Jackson, 2022 copy archived at swh:1:rev:cd6fb95ac8ae80c6889fe4f4785d17cab7d18375.\n\n### Time-series abundance data\n\nThe Living Planet Database was developed by the World Wildlife Fund and the Zoological Society of London as a tool to monitor global biodiversity, and contains over 20,000 population abundance records for over 4,000 species of vertebrate (Almond et al., 2020). We obtained long-term annual time-series abundance data across the terrestrial mammals from the Living Planet Database found at https://livingplanetindex.org/data_portal. The records measure annual abundance in a variety of ways (e.g. full population counts, density, indices). We tested whether the method of data collection influenced the effect of weather on population growth rates, and found that they did not influence overall effect distributions (Appendix 1\u2014figure 19). Records contain information on the location, realm, biome, and taxonomy of the species in the record. We included only data for the terrestrial mammals that had species-level life-history information and coordinate locations, which referred to either specific or more general locations for each population (accounted for using weather data from a buffered radius around each location). Our analyses were focussed on estimating weather effects on annual population growth rates using regression models with several covariates, and short timeseries are at large risk of overfitting when including covariates (Knape and de Valpine, 2011). Therefore, we opted to include only long-term records with 10 or more consecutive years of abundance data, and only for years in which there was also weather data (1979\u20132013). We tested the implications of this choice of data quality by running additional analyses with both \u22655 and \u226520 years of data. Our key findings were robust to the choice of long-term records (Appendix 1\u2014figure 25), and we therefore continued with 10 years. In one record (for Bettongia penicillata), there were two blocks with \u226510 years of data, which were analysed separately. We also removed records (n=8) with a high proportion (>32%) and consecutive occurrences of 0 in the raw abundance time-series (refer to the annual_abundance_changes/ directory, associated README.md and annual_population_growth_rate.R file in the Zenodo repository doi:10.5281/zenodo.6620489). Our final dataset contained 486 records from 157 terrestrial mammal species, which was used in all subsequent analyses (Figure 1).\n\n### Global weather data\n\nWe used temperature and precipitation anomalies as the key weather variables in our analyses. We extracted global weather data from version 1.2.1 of the CHELSA monthly gridded temperature and precipitation dataset at a spatial resolution of 30 arc seconds (~1 km2 at the equator) for all months between 1979 and 2013 across the globe\u2019s land surface (Karger et al., 2017). We processed raster files of the raw monthly mean temperature and total precipitation data using the raster, rgeos, and sf packages (Bivand and Rundel, 2020; Hijmans, 2020; Pebesma, 2018). For each record, we averaged raw variables for the surrounding region to account for the lack of specificity in record locations and account for animal movements that may alter the weather conditions experienced. Using the Living Planet Database record coordinate locations as a centroid, we averaged the monthly weather data for a buffered radius of 5 km around each record location using the exactextractr package (Baston, 2020). Averaged weather variables and weather effects for alternate buffer radii (50 m and 50 km) were highly correlated (Appendix 1\u2014figure 1; Appendix 1\u2014figure 6), and thus we do not expect that our results were sensitive to the choice of this radius.\n\nGenerally, given that organisms have evolved in a given environmental context (with seasonal fluctuations), we expect that populations will respond more often to extremes in the weather, as opposed to raw weather changes. Furthermore, across the globes surface the variance in weather variables changes substantially, which may influence population responses. Thus, we explored population responses for the key weather variable of standardised annual anomalies, and then validated our approach using annual weather variance. These weather anomalies are the average distance of the observed temperature and precipitation from expected values in a given year. For the anomalies, we decomposed z-scored averaged monthly weather data for each location for the full timeseries (1979\u20132013 i.e. a longer timeseries than each record) using a Seasonal-Trend Decomposition by Loess (STL) (Cleveland et al., 1990). We refer to z-scoring when variables were mean centered on 0 and standardised by their standard deviation. We used a seasonal window of 7 (seasonal smoothing parameter) and trend window of 1,000 (trend smoothing parameter) for the decomposition (Cleveland et al., 1990). We extracted the anomaly component, which describes the remainder when accounting for the trend and seasonal components of the timeseries. We then used annual mean temperature and precipitation anomalies as the key weather variables in subsequent analyses. Weather variance was calculated for each year as the Pearson\u2019s variance of monthly mean temperature and monthly total precipitation values.\n\n### Species-level life history\n\nWe tested how responses to weather anomalies was associated with a species\u2019 position on the \u2018fast\u2019-\u2018slow\u2019 continuum of life history using summary traits. We used three key traits that broadly characterise species-level life history that are available for a large number of species: maximum longevity, litter size and adult body mass. We collected these traits from the compendium developed by Conde et al., 2019, combining information from three primary database sources: The Amniote Life-History Database (Myhrvold et al., 2015), PanTHERIA (Jones et al., 2009) and AnAge (Tacutu et al., 2013) databases. Adult body mass data was obtained exclusively from the Amniote Life-History Database (Myhrvold et al., 2015). Where multiple records were available for a single species, we took the largest maximum longevity value and the mean litter size/adult body mass. We removed erroneous raw litter size data for Hydrochoerus hydrochaeris (mean litter size = 37.8) and Marmota broweri (mean litter size = 1063), which both greatly exceeded the 95% quantile for mean litter size (7.13) and contradicted published species information. For analysis, we z-scored the natural-logarithm of raw life-history trait data, and verified that the life-history variables were represented across the range of weather anomaly variables in the raw data (Appendix 1\u2014figure 2).\n\nIn order to test the suitability of the selected traits for capturing species-level life history, we also explored demographic rates from structured population models and the covariance of life-history traits. We extracted 37 suitable structured matrix population models (namely, ergodic, reducible, primitive, non-NA population matrices) from the COMADRE database (Salguero-G\u00f3mez et al., 2016). From these matrix population models, we calculated adult survival (mean survival of adult life stages), life-expectancy and generation time. Generally, there was high covariance in all life-history traits, with longevity traits positively associated with adult body mass and negatively associated with litter size (Appendix 1\u2014figure 26). The additional life-history traits from structured population models were also significantly correlated with maximum longevity, litter size and adult body mass (Appendix 1\u2014figure 26). Furthermore, we repeated subsequent analyses for 16 species that had both detailed demographic rates and population abundance data, and found that the link between life history and population responses to weather anomalies was maintained (Appendix 1\u2014figure 27).\n\n### Phylogeny data\n\nThe mammal phylogeny was obtained from Upham et al., 2019, which uses a \u2018backbone-and-patch\u2019 Bayesian approach for a newly assembled 31-gene supermatrix and is part of the Vertlife project (https://vertlife.org/). We used the maximum clade credibility tree in analysis, which was processed using the ape package (Paradis and Schliep, 2019). Loxodonta cyclotis (African forest elephant) was considered as Loxodonta africana (African elephant) for analysis so that the abundance record and phylogenetic data matched.\n\n### Weather effects on annual population growth rates\n\nTo assess comparative population responses to weather anomalies in the terrestrial mammals we used a two-step meta-regression approach. First, for each record we estimated the effect of annual weather anomalies (and weather variance) on population growth rates. We calculated the standardised proportional population growth rate r in year t as\n\n$$\nr_{t}=In\\frac{X_{t\u22121}}{X_{t}},\n$$\n\nwhere X is the abundance in year t, transformed (raw abundance +1) to prevent observations of 0. We used this standardised population growth rate to ensure that the effects of weather on population growth rates were on the same scale across the population records (e.g density measured between 1 and 5 individuals per km2 vs. full population counts between 10,000 and 50,000 individuals).\n\nThen, with rt as the response variable, we estimated the effect of temperature and precipitation anomalies on population growth using generalised additive mixed models (GAMMs) fit using the gamm function of the mgcv package (Wood, 2017). We opted to use a general linear-modelling framework as opposed to a state-space approach, which is often employed for time-series to account for measurement error and estimate trends (see Daskalova et al., 2020b). The primary reason for this choice was that we aimed to assess broad comparative patterns in population change, and did not expect systematic errors in model parameters due to measurement error. Furthermore, Daskalova et al., 2020b found that abundance trend terms were highly correlated between linear and state-space approaches across the Living Planet Database, which would be expected if there are not systematic errors in measurement across the database. Our results were robust to this modelling choice, and we found that the observed population responses were highly correlated between GAMM and state-space approaches (Appendix 1\u2014figure 11; see full alternative approaches section below).\n\nIn addition to estimating the influence of weather anomalies, we accounted for temporal autocorrelation in abundance and trends in population change. Changes in abundance are influenced by several drivers of population dynamics including habitat loss (Daskalova et al., 2020a) and population processes such as density dependence (Brook and Bradshaw, 2006), which may confound any influence of the weather on abundance. Therefore, because we aimed to assess the isolated impact of weather anomalies, accounting for these trends in abundance and temporal autocorrelation was crucial. We initially explored the extent of autocorrelation in abundance patterns using timeseries analysis and found evidence for lag 1 autocorrelation in abundance, but not for greater lags (Appendix 1\u2014figures 3 and 4). Furthermore, we tested the potential impact of density dependence on estimating environmental effects using an autoregressive timeseries simulation and found that environmental effects were robust to density dependence even for short timeseries (Appendix 1\u2014figure 5).\n\nThus, to estimate the effect of weather anomalies on population growth, for each record we modelled population growth rate in each year as\n\n$$\nr_{t}=\\beta^{0}+\\omegaW_{t}+f(y_{t}),\n$$\n\nwhere $\\beta^{0}$ is the intercept and $\\omegaW_{t}$ is a linear parametric term with coefficient $\\omega$ for the weather W (temperature or precipitation anomaly) in year $t$. Here, positive coefficients indicate that positive weather anomalies i.e. hotter/wetter years, were associated with population increases, and vice versa. Identical additive regression models were run using weather variances as the weather variable W. The term $f(y_{t})$ captures the effect of year $y_{t}$ as a non-linear trend. Here, the smoothing function $f$ was fit using a thin plate regression spline, which is comprised of penalised local regressions, where the number of regressions is given by the basis dimension (Wood, 2003). We used a basis dimension of five. The function $f$ was also fitted with an order 1 autoregressive (AR(1)) correlation structure, as specified in the nlme package (Pinheiro et al., 2014). Thus, using the year effect we accounted for both a non-linear trend in abundance and temporal autocorrelation.\n\n### Alternative approaches to estimate weather effects\n\nWe validated our additive model approach by testing other models to calculate weather effects, including linear regressions both including and excluding temporal trends or density dependence, state-space models and a temporally autocorrelated model fit using the glmmTMB package (Brooks et al., 2017; Appendix 1\u2014figures 7\u201311). Weather coefficients $\\omega$ generated using linear year effects were positively correlated to those from additive models (Appendix 1\u2014figure 9). In addition to models fit using a generalised linear modelling approach, we also tested the validity of the final GAMM approach by calculating weather effect coefficients using state-space autoregressive time-series models that incorporated both process and observation error, which are often used as predictive models of time-series abundance data (e.g. Daskalova et al., 2020b). Here, the state process of the population growth rate r in year t was a function of a linear effect of the weather variable on the abundance and random noise. An advantage of state-space approaches in this context is that explicitly modelling process noise captures inherent variation in population growth rate that may confound linear relationships with weather anomalies. We fit state-space models using the rjags and jagsUI packages in R (Kellner, 2021; Plummer, 2019) across 3 chains, which each had a total of 200,000 iterations, comprised of 100,000 burn-in iterations, 5000 adaptation iterations, and a thinning rate of 6. Across time-series records, there was a high fit-to sample, and the fit-to-sample was not influenced by the length of the time-series record (Appendix 1\u2014figure 10). We compared weather coefficients from state-space models with those obtained from GAMMs using Pearson\u2019s regression, and found highly significant correlations for both temperature and precipitation effects (Appendix 1\u2014figure 11). Overall, given the strong correlations observed between weather variables calculated using different approaches, we concluded that our results are unlikely to be sensitive to the choice of modelling framework.\n\n### Bayesian meta-regression\n\nWith the weather effects $\\omega$ from each record as the response variable, we explored comparative patterns in population responses to weather anomalies using a Bayesian meta-regression framework implemented in the brms package (B\u00fcrkner, 2017). We standardised weather effects with z-scoring for analyses. We fit separate models for temperature and precipitation. Then, we used Bayesian meta-regression to address three key questions: (1) Were there directional (i.e. average responses different to 0 overall) population responses to weather across the terrestrial mammals? (2) How did population responses vary within and between species and were there spatial patterns across biomes? (3) Does life history predict the absolute magnitude of population responses $|\\omega|$? To address questions 1 and 2, we used Gaussian models controlling for both phylogenetic and species-level covariance. The full model for record i and species j is given by equation 3 below\n\n$$\nLinearmodel_\\omega\u223cMVNormal(\\mu,S)\\mu_{i}=\\alpha_{SPECIES[j]}+\\beta_{BIOME}[i]+\\beta_{N}N_{i}Varyingeffects_S=\\sigma_{PHYLO}^{2}V\\mu_{i}=\\alpha_{SPECIES[j]}+\\beta_{BIOME}[i]+\\beta_{N}N_{i}Priors_\\alpha\u00af\u223cNormal(0,0.3)\\beta_{BIOME}\u223cNormal(0,0.3),forbin1:13\\beta_{N}\u223cNormal(0,0.5)\\sigma_{PHYLO}^{2}\u223cExponential(8)\\sigma_{SPECIES}^{2}\u223cExponential(8)\n$$\n\nwhere the weather effect $\\omega$, is given by a multivariate normal distribution with mean \u03bc and phylogenetic covariance matrix $S$. The global intercept is given by $\\alpha\u00af$, which estimates overall patterns in weather effects across records, addressing question 1. We incorporated phylogenetic covariance using a Brownian motion model, with the correlation matrix given by V (calculated from the maximum clade-credibility tree) and variance factor $\\sigma_{PHYLO}^{2}$, from which between-species variance was estimated. We incorporated an intercept-only varying effect for species with the term $\\sigma_{SPECIES}^{2}[j]$, from which within-species variance was estimated with $\\sigma_{SPECIES}^{2}$. The term $\\beta_{BIOME}$ gives the spatial effect of biome on weather responses, where biome was a categorical variable with biomes as described by Olson et al., 2001 (n=13, subscript b). Therefore, we explored question 2 by capturing within-species variance ($\\sigma_{SPECIES}$), between-species variance ($\\sigma_{PHYLO}^{2}$), and the spatial effect of biome ($\\beta_{BIOME}$). All meta-regression models also included the linear effect of record length N (scaled number of years in the record) on weather effects, which was estimated using $\\beta_{N}$. Finally, we also fit Gaussian meta-regression models for weather effects calculated using the annual weather variance, and the results obtained were largely identical to those obtained for weather anomalies (Appendix 1\u2014figure 22).\n\n### Prior predictive simulation\n\nFor all meta-regression models, we used conservative priors that gave predictions lying within the parameter space of the raw data. Specifically, we used regularising priors obtained from prior predictive simulations of the slope, intercept and exponential variance terms (McElreath, 2020a; McElreath, 2020b; Appendix 1\u2014figures 12\u201315). Here, we compared the estimates and predictions of priors to the limits of observed data and expected patterns to inform the priors. In addition to prior choices made in this section, we further tuned the priors during the model selection to improve the efficiency/accuracy of Markov chains. For example, for Normal priors we tuned parameters with further reductions in standard deviation to improve the efficiency of the Markov chains. Choosing conservative regularising priors was also appropriate given the large number of parameters in phylogenetically or spatially controlled models. We performed prior predictive simulation for the global intercept term of directional weather effects (question 1), the \u03b2 terms relating to differences in weather effects (i.e. biome effects; question 2), \u03b2 terms for linear life-history effects (question 3), and mixed-effects variance terms for species variance and phylogenetic covariance (question 2). For the full set of priors used in analyses please refer to the meta_regression/ directory of the supplementary code doi:10.5281/zenodo.6620489.\n\n### Life-history effects on weather responses\n\nFor question 3, we tested how species-level life history influences absolute responses to weather anomalies. Although on average we expect that species life history influences population responses to the environment, we have little evidence to suggest that life history per se influences the directionality of responses (Morris et al., 2008). Thus, to address this question we explored how maximum longevity, litter size and adult body mass influenced the absolute magnitude of weather responses, $|\\omega|$, using Gamma regression models with a log link (Compagnoni et al., 2021). The full model for record i and species j is given by equation 4 below\n\n$$\nLinearmodel_|\\omega|\u223cGamma(\u03b7,\\mu)log\\mu_{i}=\\alpha_{SPECIES[j]}+\\gamma_{PHYLO}[j]+LH+\\beta_{N}N_{i}Varyingeffects_\\alpha_{j}\u223cNormal(\\alpha\u00af,\\sigma_{SPECIES})\\gamma_{j}\u223cMVNormal(0,S)VS=\\sigma_{PHYLO}^{2}VPriors_\\alpha\u00af\u223cNormal(0,0.3)\\beta_{LH}\u223cNormal(0,0.2)\\beta_{N}\u223cNormal(0,0.2)\\sigma_{PHYLO}^{2}\u223cExponential(11)\\sigma_{SPECIES}^{2}\u223cExponential(8)\u03b7\u223cGamma(2,0.6)\n$$\n\nwhere \u03b7 is a shape parameter that was fit with a Gamma prior, and LH refers to a set of linear life-history terms ($\\beta_{1}x_{1}+\u22ef+\\beta_{k}x_{k}$) that were explored using model selection. Specifically, for the three life-history traits, we explored a set of models incorporating univariate, multivariate and 2-way interaction terms, as well as a base model excluding all life-history effects. For the full set of 10 candidate models please refer to the supplementary information (Supplementary file 1). We fit all life-history effects using the same Normal prior, with mean 0 and standard deviation 0.3. A standard deviation of 0.3 was chosen to improve the accuracy of the Markov chains, after initial regularising values of 0.5 were further reduced (Appendix 1\u2014figure 14).\n\n### Model predictive performance\n\nWe assessed the predictive performance of candidate models using leave-one-out cross-validation implemented in the loo package (Vehtari et al., 2016). Models were compared using the Bayesian LOO estimate of out-of-sample predictive performance, or the expected log pointwise predictive density (elpd)(Vehtari et al., 2016). All final meta-regression models were run over 3 Markov chains, with 4,000 total iterations and 2000 warmup iterations per chain. Model convergence was assessed by inspecting Markov chains and using $R^$, which assesses the degree of mixing (agreement) between- and within- chains, such that values of $R^<1.05$ indicate sufficient agreement across chains.\n",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "6eda46cd-e5a6-41e3-9798-89b501d9613e",
+      "submission_id": "23a87267-7bc1-45f8-aecc-ca54d5d2d876",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bernhard Schmid, https://ror.org/02crff812 University of Zurich Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74161.sa0](https://doi.org/10.7554/eLife.74161.sa0)\n\nUsing 486 long-term population records of 157 mammal species, the authors show that species with a short life span and large litters are more affected, either positively or negatively, by extreme weather events than are species with a long life span and few offspring. This suggests that these \"fast\" species may require particular conservation attention, to avoid extinction due to the increased frequency and magnitude of extreme events.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Bernhard Schmid, https://ror.org/02crff812 University of Zurich Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74161.sa1](https://doi.org/10.7554/eLife.74161.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Life-history predicts global population responses to the weather in the terrestrial mammals\" for consideration by eLife.\n\nYour article has been reviewed by three peer reviewers, and the evaluation has been overseen by Bernhard Schmid as the Reviewing Editor and Christian Rutz as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Nigel Yoccoz (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this decision letter to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please try to improve the narrative by making it less exploratory (Reviewer #4). Clearly state your a priori hypotheses or at least explain why you expected the chosen life-history traits and environmental variables to be the most relevant and how they may interact and influence population dynamics. It may also be useful to explain why you expected robust prediction of absolute changes, but not for the direction of changes, and why this can still be useful for conservation biologists (Reviewer #4).\n\n2) Please explain to which extent the greater absolute response of species to weather anomalies scales to a potentially larger absolute variation in population size of those species (Reviewer #2).\n\n3) Please justify the selection of explanatory weather variables (Reviewers #3 and #4), e.g., by mentioning that fits with alternative variables were worse.\n\n4) Perhaps try to analyze some subsets of the data to verify the robustness of the overall analysis (Reviewer #2).\n\n5) Please discuss the limitations highlighted below by Reviewers #2-4, as well as the following points: traits were assumed constant between populations within species as were other characteristics of populations within species (e.g., marginality with regard to distribution range and thus \"weather niche\" (Reviewer #2), other traits (Reviewer #3) such as size at birth, sociality). Please provide a reason for why (or add corresponding analyses) biome (Reviewers #2 and #3) or site characteristics were not considered as explanatory variables (but rather subsumed in multilevel factors).\n\n6) Please amend the title to read \"Life-history predicts global population responses to weather in terrestrial mammals\".\n\nReviewer #1 (Recommendations for the authors):\n\nI must admit being a bit skeptical when it comes to large comparative analyses, as databases such as the Living Planet includes data of variable quality, and maximum longevity is, as you acknowledge, a far from ideal index for adult survival rate. Moreover, as you rightly point out, the available data are heavily biased towards some groups and biomes. Many analyses have been published using similar databases (e.g., Ono et al., 2019), so clearly some see value in such analyses. My concern is that because one has to \"sell\" the paper one avoids pointing out the limitations -- but alas this is not specific to your study.\n\nOne concern I have is how such analyses can be informed by the more detailed and accurate studies based on long-term monitoring of single populations (e.g., Gaillard et al., 2013). One knows that weather effects will vary among populations -- e.g., depending on where the population is in the climatic niche (see above) -- and such variation is crucial in predicting effects of weather and climate change. Large \"meta-regressions\" such as yours might be useful in summarizing the data available in one database, and you have done an excellent job analyzing these data, but given the far from random sample you have available, it is hard to assess how to make sense of the patterns observed. Perhaps using subsamples of high quality studies in different groups and biomes (if that is at all possible) to assess the predictive performance of your models may help.\n\nYou rightly discuss the limits of using maximum longevity as an index of a better measure such as adult survival rate. Would it be possible for the sample of species you have to at least assess the relationship between maximum longevity and adult survival rate? And for those species to repeat the analyses? The precision would be much lower as the sample size is likely to be small but you can at least assess the consistency of the relationships.\n\nRegarding the effects of biomes, I did not understand how it was parameterized (e.g., l 465). It was included as a categorical predictor, right (figure S16 seems to indicate that)? So you have \u03b2_Biome[j] for j=1:number of biomes?\n\nAdler, P. B., et al., 2011. Productivity Is a Poor Predictor of Plant Species Richness. Science 333:1750-1753.\n\nAngert, A. L. 2009. The niche, limits to species' distributions, and spatiotemporal variation in demography across the elevation ranges of two monkeyflowers. Proceedings of the National Academy of Sciences of the United States of America 106 Suppl 2:19693-19698.\n\nGaillard, J. M., A. J. M. Hewison, F. Klein, F. Plard, M. Douhard, R. Davison, and C. Bonenfant. 2013. How does climate change influence demographic processes of widespread species? Lessons from the comparative analysis of contrasted populations of roe deer. Ecology Letters 16:48-57.\n\nOno, K., O. Langangen, and N. C. Stenseth. 2019. Improving risk assessments in conservation ecology. Nature Communications 10:7.\n\nReviewer #2 (Recommendations for the authors):\n\nJackson et al., present a global analysis of the effects of life history on the response of terrestrial mammal populations to weather, showing that litter size and longevity significantly alter how population's respond to anomalies in temperature and rainfall. The topic is highly interesting, and generally the manuscript is written in clear and concise way with some exceptions (see comments below). My main concern is about the timescales over which the weather events are calculated. As I understand it, these are anomalies away from the yearly expected value. This approach was of course used because the LPD data is recorded on an annual basis. However, there is a huge difference in the effect of slightly elevated temperatures across a whole year vs. one month with very high temperatures. The authors appear to have addressed this by looking at the yearly anomaly and the variance in the weather (annual weather variance) calculated across each year; however they are currently lacking some detail on exactly what this entailed (it is currently only mentioned in passing).\n\nThe authors have done a good job pulling all these analyses together into an accessible piece, and have provided all of the code to repeat these analyses.\n\nReviewer #3 (Recommendations for the authors):\n\n1/ Overall framing and questions/hypotheses:\n\n\u2013 Please justify more clearly, somewhere in the introduction, why looking at the weather is interesting for understanding future effects of climate change (see lines 87/88 and 111/112).\n\n\u2013 In the introduction, the evidence from past work could be summarised more efficiently and concisely around key points (e.g., see lines 74-82, lines 96-104); thus the overall narrative/structure of the introduction can be improved.\n\n\u2013 Beyond the three questions you ask, please explain what the underlying hypotheses are (e.g., for each question, adding a few words to explain what you expect: what are the spatial patterns you predict, what do you hypothesize would be the effect of life history, etc.)? In addition, the phrasing of the first question is a bit ambiguous with the term \"consistent\" (in my understanding, here you ask, across species and populations, whether the weather effects are significant, as in whether they differ from zero). Adding a specific hypothesis would also help to make this question clearer.\n\n\u2013 Finally, please justify more why you look at the magnitude (absolute values) of the weather effects when investigating the influence of life-history on the responses, and why you don't investigate the directionality of the effects.\n\n2/ Results\n\nThe results could be presented more efficiently and clearly overall. I would suggest including a few higher-level summaries throughout the manuscript to conclude on specific points.\n\n3/ Discussion:\n\n\u2013 Some of the limitations of the study should be developed in the discussion, in particular:\n\n\u2013 The potential biases of the study (e.g., length of the time series): you mention that record length was significantly associated with temperature and precipitation effects. I would be good to mention whether your results are likely robust to these biases or otherwise what the expected effects on the results would be.\n\n\u2013 The fact that you use absolute values (magnitude of the weather effects) for the life-history models, so that you can't conclude about the directionality of the effects. I suggest highlighting how your work helps predict future responses and inform conservation despite the fact that you didn't investigate the directionality of the effects (see lines 239/240; 243/244) (e.g., do your results imply that populations of species with fast life history should be more closely monitored irrespectively of whether they grow or decline?).\n\n\u2013 It would be good for the discussion to make the key points stand out more.\n\n4/ Methods\n\nLife-history traits: It is important to include a statement about the degree of multicollinearity among the traits.\n",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "95e2440e-d7e1-406a-bb38-4d42dd19137f",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C1",
+      "claim": "Climate change is one of the greatest challenges we face in the twenty-first century.",
+      "claim_type": "EXPLICIT",
+      "source": "Climate change is one of the greatest challenges we face in the twenty-first century (Diaz, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Diaz, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c7d8d9f0-b6ec-47f9-b259-f1fbcf0e9851",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C2",
+      "claim": "Habitat loss and direct exploitation are currently the most important drivers of extinction in the natural world.",
+      "claim_type": "EXPLICIT",
+      "source": "Although habitat loss and direct exploitation are currently the most important drivers of extinction in the natural world (Daskalova et al., 2020a; Diaz, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Daskalova et al., 2020a and Diaz, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "a95c5926-4137-44af-ab28-e98e3119af08",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C3",
+      "claim": "Changes to the climate are predicted to cause widespread declines of global biodiversity in the coming decades.",
+      "claim_type": "EXPLICIT",
+      "source": "changes to the climate altering both the mean and variance of weather conditions and the frequency of extreme events, are predicted to cause widespread declines of global biodiversity in the coming decades (Almond et al., 2020; Newbold, 2018; Soroye et al., 2020; Thomas et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies predicting future biodiversity declines",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "3432ef0e-e459-4cfe-8126-f447a24b7643",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C4",
+      "claim": "Temperature increases are already associated with declining population trends in mammals and birds.",
+      "claim_type": "EXPLICIT",
+      "source": "For mammals and birds, temperature increases are already associated with declining population trends (Spooner et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Spooner et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "b056556a-9148-4991-b60f-691015a85d72",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C5",
+      "claim": "Many endangered species have already been negatively impacted by climate change in at least part of their range.",
+      "claim_type": "EXPLICIT",
+      "source": "many endangered species have already been negatively impacted by climate change in at least part of their range (Pacifici et al., 2017; Pacifici et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pacifici et al., 2017 and 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "286e079a-1ea5-4ce0-b1b0-4c7e6d339003",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C6",
+      "claim": "Abrupt ecological disruption due to climate change has been predicted to have large negative future impacts on biodiversity, with tropical ecosystems being affected as early as 2030.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps more worryingly, abrupt ecological disruption due to climate change has been predicted to have large negative future impacts on biodiversity, with tropical ecosystems being affected as early as 2030 (Newbold, 2018; Trisos et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Newbold, 2018 and Trisos et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "1487d4ce-0e7e-4c00-b907-c40a379edc01",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C7",
+      "claim": "Future climate impacts will likely be exacerbated by interactions between the climate and other drivers of extinction such as habitat loss or disease prevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these future impacts will likely be exacerbated by interactions between the climate and other drivers of extinction such as habitat loss or disease prevalence (Brook et al., 2008; Cohen et al., 2020; Williams et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brook et al., 2008, Cohen et al., 2020, and Williams et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "5d7bc5d5-f83a-4dba-997d-a3b4e0008c94",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C8",
+      "claim": "Species vary in their climatic niches and in their behavioural, physiological, and demographic responses to environmental change.",
+      "claim_type": "EXPLICIT",
+      "source": "Species vary in their climatic niches and in their behavioural, physiological, and demographic responses to environmental change",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about species variation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "5f382a07-53c9-4e1e-ab93-31778f46d95a",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C9",
+      "claim": "There are both climate 'winners' and 'losers' among species.",
+      "claim_type": "EXPLICIT",
+      "source": "we therefore expect there to be both climate 'winners' and 'losers' (Ant\u00e3o et al., 2020; Bellard et al., 2012; Moritz and Agudo, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ant\u00e3o et al., 2020, Bellard et al., 2012, and Moritz and Agudo, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "67a188ee-5502-4d67-8b9f-ab7156337c28",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C10",
+      "claim": "Geographic range shifts are the key response associated with climate change across taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "At the macro scale, species-occupancy data highlight that geographic range shifts are the key response associated with climate change across taxa, resulting in changes to community composition, but not necessarily population decline (Ant\u00e3o et al., 2020; Chen et al., 2011; Dornelas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ant\u00e3o et al., 2020, Chen et al., 2011, and Dornelas et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "1cc9c58d-c316-472f-822d-0445a552b3ef",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C11",
+      "claim": "There is a lack of consistent directional temperature-related biodiversity change effects today.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is a lack of consistent directional temperature-related biodiversity change effects today (Ant\u00e3o et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ant\u00e3o et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "913e74a7-e9be-46a7-9f3a-07b8ba1245ae",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C12",
+      "claim": "Many species are predicted to become at risk of climate-induced population declines before 2,100.",
+      "claim_type": "EXPLICIT",
+      "source": "many species are predicted to become at risk of climate-induced population declines before 2,100 (Trisos et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Trisos et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "22646d4b-ee3b-4eca-af4e-c52d424194f5",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C13",
+      "claim": "Average abundance trends in birds and mammals were negatively associated with long-term rates of climate warming.",
+      "claim_type": "EXPLICIT",
+      "source": "For birds and mammals average abundance trends were negatively associated with long-term rates of climate warming (Spooner et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Spooner et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "07127c87-49e1-43ff-9572-5b30abe0b3f2",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C14",
+      "claim": "Sparse data in short time-series are at risk of overfitting weather effects.",
+      "claim_type": "EXPLICIT",
+      "source": "but sparse data in short time-series are at risk of overfitting weather effects (Knape and de Valpine, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Knape and de Valpine, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "56cec9ef-c045-4996-8165-97fde0bd8959",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C15",
+      "claim": "Life-history traits are evolved responses to the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of key demographic events of survival and recruitment across the life cycle, or life-history traits, are evolved responses to the environment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established evolutionary biology knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "7dea5aed-638f-481b-b93d-4bdab74ff6ae",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C16",
+      "claim": "Life-history differences between three amphibian species in Western Europe drove predicted survival and reproduction responses to the North Atlantic Oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, life-history differences between three amphibian species in Western Europe drove predicted survival and reproduction responses to the North Atlantic Oscillation (Cayuela et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cayuela et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "7e649ce6-656f-4f47-a817-a873c7b9bd5b",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C17",
+      "claim": "Organisms with slower life histories are better adapted to cope with environmental fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, organisms with slower life histories are better adapted to cope with environmental fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established life history theory",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "31bbabed-a729-4042-8977-4c490972c1a5",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C18",
+      "claim": "Longer-lived organisms have a reduced relative effect of variability in vital rates on population growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Longer-lived organisms have a reduced relative effect of variability in vital rates, variability which is expected during environmental change, on population growth rates (Morris et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Morris et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c73185d2-21f6-4042-8d18-504df3a2908d",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C19",
+      "claim": "Long-lived plants have weaker absolute demographic responses to weather.",
+      "claim_type": "EXPLICIT",
+      "source": "long-lived plants have weaker absolute demographic responses to weather (Compagnoni et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Compagnoni et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "89f78ba9-27f0-48bd-98c7-02acaca1c7ba",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C20",
+      "claim": "Long-lived, slow-reproducing animals are often more at risk of extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while generally buffered, long-lived, slow-reproducing animals are often more at risk of extinction (Cardillo et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cardillo et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "fb16da1a-d04f-49e8-b887-d6c0f42cc43f",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C21",
+      "claim": "Long-lived, slow-reproducing animals are slower to recover when perturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "and slower to recover when perturbed (Gamelon et al., 2014; Jackson et al., 2019; Turkalo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gamelon et al., 2014, Jackson et al., 2019, and Turkalo et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "bcecc2ec-2ef9-490a-9b0b-9ee746dfd51e",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C22",
+      "claim": "The study analyzed 486 long-term abundance records from 157 species of terrestrial mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use long-term abundance records from 157 species of terrestrial mammals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "6f4842b6-fdf8-4c8e-bd40-e517363c1b82",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C23",
+      "claim": "Overall, there was no directional effect of temperature or precipitation anomalies or variance on annual population growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we found no directional effect of temperature or precipitation anomalies or variance on annual population growth rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "b0a60d2e-d504-4c39-be11-68bbecd18426",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C24",
+      "claim": "Population responses to weather anomalies were not predicted by phylogenetic covariance.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, population responses to weather anomalies were not predicted by phylogenetic covariance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "0956268d-538c-4363-88ea-c812f329e4d6",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C25",
+      "claim": "There was more variability in weather responses for populations within a species.",
+      "claim_type": "EXPLICIT",
+      "source": "and instead there was more variability in weather responses for populations within a species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "68287936-b3a2-4f03-92a3-86900bdd760a",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C26",
+      "claim": "Long-lived mammals with smaller litter sizes had smaller absolute population responses to weather anomalies compared with their shorter living counterparts with larger litters.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, however, long-lived mammals with smaller litter sizes had smaller absolute population responses to weather anomalies compared with their shorter living counterparts with larger litters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c59fad4c-ef44-4e60-8d89-6222d4276188",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C27",
+      "claim": "The time-series records ranged in duration from 10 years to 35 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-series records ranged in duration from 10 years to 35 years",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "9761235d-ec80-4bbb-9eb4-ff9b0f178102",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C28",
+      "claim": "The mean record length across records was 15.7 years.",
+      "claim_type": "EXPLICIT",
+      "source": "with mean and median record lengths across records of 15.7 and 14 years, respectively (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of data characteristics with reference to Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "4225095e-51b1-4f5d-ad00-db2f7074cebd",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C29",
+      "claim": "The median record length across records was 14 years.",
+      "claim_type": "EXPLICIT",
+      "source": "with mean and median record lengths across records of 15.7 and 14 years, respectively (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of data characteristics with reference to Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "4ab5dcf3-b8a8-4fa2-a86d-a69e8511bd97",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C30",
+      "claim": "The records were distributed across 13 terrestrial biomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The records were distributed across 13 terrestrial biomes (Olson et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "ec84db40-e4a8-4486-bd2f-2a7c1351bcc1",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C31",
+      "claim": "The records were generally biased towards north western Europe and North America.",
+      "claim_type": "EXPLICIT",
+      "source": "but were generally biased towards north western Europe and North America.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "8b81d098-bd91-447c-a35f-3f4f3e6e8d7e",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C32",
+      "claim": "The study had records from 12 of 27 mammalian orders recognised by the IUCN Red List.",
+      "claim_type": "EXPLICIT",
+      "source": "We had records from 12 of 27 mammalian orders recognised by the IUCN Red List for threatened species (IUCN, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "d0337c42-1137-4033-aadc-d1c0e724294e",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C33",
+      "claim": "Most records were in the Artiodactyla (n=172), Carnivora (n=127) and Rodentia (n=82).",
+      "claim_type": "EXPLICIT",
+      "source": "but most densely in the Artiodactyla (n=172), Carnivora (n=127) and Rodentia (n=82) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of data characteristics with reference to Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "f168ef5e-0ff7-42ff-9f4b-2c8dfc6e2b3b",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C34",
+      "claim": "The number of records for each species ranged from 1 to 17.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of records for each species ranged from 1 to 17",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "7e416c34-483e-495c-86f6-1a24be0034e4",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C35",
+      "claim": "The mean number of records per species was 3.1.",
+      "claim_type": "EXPLICIT",
+      "source": "with a mean of 3.1 and median of 2 records per species (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of data characteristics with reference to Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "5d00f368-35fc-4e41-9f0c-18046465894e",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C36",
+      "claim": "The median number of records per species was 2.",
+      "claim_type": "EXPLICIT",
+      "source": "with a mean of 3.1 and median of 2 records per species (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of data characteristics with reference to Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "cd0c1e09-bfea-44ff-b826-cbebf765f3b5",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C38",
+      "claim": "The posterior mean global intercept for precipitation effects was \u20130.07 [-0.31,0.15].",
+      "claim_type": "EXPLICIT",
+      "source": "and for precipitation effects was \u20130.07 [-0.31,0.15] (Figure 2a and Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical results from Bayesian meta-regression with reference to Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "eec3545b-eba8-4ff9-8eef-e17eb40393f5",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C39",
+      "claim": "95% of records had temperature coefficients from \u20134.29 to 3.17.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 95% of records had temperature and precipitation coefficients from \u20134.29 to 3.17, and \u20131.41 to 1.88, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "dc6757fb-0508-4bcd-9e7f-3b6a2d132fc3",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C40",
+      "claim": "95% of records had precipitation coefficients from \u20131.41 to 1.88.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 95% of records had temperature and precipitation coefficients from \u20134.29 to 3.17, and \u20131.41 to 1.88, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "49171f83-3a1a-4bbe-a5b1-53e18ea9d624",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C41",
+      "claim": "Approximately 8% (n=42) of temperature coefficients were greater than 3 or less than \u20133.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, approximately 8% (n=42) of temperature coefficients and 1% of precipitation coefficients were greater than 3 or less than \u20133",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "728856f7-39e6-418d-95e9-ad7100d6e463",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C42",
+      "claim": "Approximately 1% of precipitation coefficients were greater than 3 or less than \u20133.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, approximately 8% (n=42) of temperature coefficients and 1% of precipitation coefficients were greater than 3 or less than \u20133",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "08e3ea68-317c-4395-936a-ff1b07997ec3",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C43",
+      "claim": "Small clusters of populations experienced more extreme annual responses to the weather.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that small clusters of populations experienced more extreme annual responses to the weather.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the statistical results about extreme coefficients",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "905b3919-940b-4278-a157-34c597dec920",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C46",
+      "claim": "There was a relationship between the variance in temperature effects and the length of the record.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was a relationship between the variance in temperature effects and the length of the record; short records displayed larger variation in temperature effects (Appendix 1\u2014figure 24).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical results with reference to Appendix figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "a06239aa-1f81-4902-afd4-092ff3317193",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C47",
+      "claim": "Short records displayed larger variation in temperature effects.",
+      "claim_type": "EXPLICIT",
+      "source": "short records displayed larger variation in temperature effects (Appendix 1\u2014figure 24).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical results with reference to Appendix figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "0822432e-e725-4a79-b05a-fba7348bd64f",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C48",
+      "claim": "There was no evidence for differences in weather responses across biomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find evidence for differences in weather responses across biomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "aa36b3b2-bdc7-41dc-8813-59bf03b1f6dd",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C49",
+      "claim": "There was no strong evidence for spatial autocorrelation in weather responses.",
+      "claim_type": "EXPLICIT",
+      "source": "or strong evidence for spatial autocorrelation in weather responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "82e8cf2a-8fd0-4a64-afcb-a8f8db978e29",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C50",
+      "claim": "There was far greater levels of within-species variation in temperature responses compared to among-species variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found far greater levels of within-species variation in temperature responses compared to among-species variance (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical results with reference to Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "45581d14-8396-4dba-930a-b12ee10f806e",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C51",
+      "claim": "The posterior mean for species-level variance in temperature effects was 0.2 [0.01,0.4].",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior mean for species-level variance in temperature effects was 0.2 [0.01,0.4]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "8d4c2de2-1b61-487c-b67f-6a2810144682",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C52",
+      "claim": "The posterior estimate for phylogenetic covariance in temperature effects was 0.01 [0.0,0.03].",
+      "claim_type": "EXPLICIT",
+      "source": "which was 20 times greater than the posterior estimate of 0.01 [0.0,0.03] for phylogenetic covariance (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical results with reference to Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "d9a7aa60-04bc-4fd8-99c4-94a975abcbc2",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C53",
+      "claim": "Species-level variance in temperature effects was 20 times greater than phylogenetic covariance.",
+      "claim_type": "EXPLICIT",
+      "source": "which was 20 times greater than the posterior estimate of 0.01 [0.0,0.03] for phylogenetic covariance (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical results with reference to Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "19c489bf-c204-4ed2-805a-3d5390b0e674",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C54",
+      "claim": "For precipitation, the posterior mean for species-level variance was five times greater than for phylogenetic covariance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, for precipitation the posterior mean for species-level variance was five times greater than for phylogenetic covariance, with a value 0.05 [0.0,0.15] compared to 0.01 [0.0,0.02] (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical results with reference to Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "0b3e9dda-99b0-48c5-879d-6ecffea04338",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C55",
+      "claim": "Myodes glareolus had nine population records with a range of temperature effects from \u20133.33 to 3.86.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Myodes glareolus (bank vole) in the Rodentia had nine population records, and a range of temperature/precipitation effects from \u20133.33 to 3.86 and \u20132.72 to 2.41 respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data for a specific species",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c9243d24-19f3-49c1-8e2d-a8eb84e8642f",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C56",
+      "claim": "Myodes glareolus had nine population records with a range of precipitation effects from \u20132.72 to 2.41.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Myodes glareolus (bank vole) in the Rodentia had nine population records, and a range of temperature/precipitation effects from \u20133.33 to 3.86 and \u20132.72 to 2.41 respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data for a specific species",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c61b06c7-72da-4a15-a66f-c6f3ddce6ead",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C57",
+      "claim": "Temperature effects across Rodentia as a whole ranged from \u201311.60 to 9.22.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to coefficients from \u201311.60 to 9.22 and \u20133.47 to 3.22 across Rodentia as a whole (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of data for Rodentia with reference to Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "25b0b279-12b4-4c23-8925-5ab83f35e125",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C58",
+      "claim": "Precipitation effects across Rodentia as a whole ranged from \u20133.47 to 3.22.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to coefficients from \u201311.60 to 9.22 and \u20133.47 to 3.22 across Rodentia as a whole (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of data for Rodentia with reference to Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "7f7d90e0-67bf-41ff-aaac-364bed3f4749",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C59",
+      "claim": "Longer-living species with smaller litter sizes had lower absolute population responses to weather anomalies.",
+      "claim_type": "EXPLICIT",
+      "source": "Across terrestrial mammals, we found that longer-living species with smaller litter sizes had lower absolute population responses to weather anomalies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "e36aa590-5801-41a3-8e93-720067cb8a25",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C62",
+      "claim": "Shorter records were associated with larger absolute temperature and precipitation responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, shorter records were associated with larger absolute temperature and precipitation responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from statistical results about record length effects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "56afab6c-067e-4563-9f17-f41e256c94cd",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C65",
+      "claim": "There was no strong evidence for any two-way interactions between life-history variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found no strong evidence for any two-way interactions between life-history variables (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "85f0deb7-03d7-489f-ba62-11af97ba6682",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C66",
+      "claim": "For both temperature and precipitation effects, the most competitive model was the univariate model including maximum recorded longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "For both temperature and precipitation effects, the most competitive model was the univariate model including maximum recorded longevity (\u0394elpd = 5.44 and \u0394elpd = 1.03, compared to the base model for temperature and precipitation, respectively; Supplementary file 1 - Table S1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of model selection results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "6753c3bd-c15a-409e-863b-e35d8bff25ef",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C69",
+      "claim": "A maximum longevity change from 10 months to 80 years was associated with a 2.36-fold decrease in the predicted absolute magnitude of responses to temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a maximum longevity change from 10 months (Akodon azarae) to 80 years (Loxodonta africana) was associated with a 2.36-fold and 2.05-fold decrease in the predicted absolute magnitude of responses to temperature and precipitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "e1ecf29f-549d-4dd5-bce9-fc5af81ac4a2",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C70",
+      "claim": "A maximum longevity change from 10 months to 80 years was associated with a 2.05-fold decrease in the predicted absolute magnitude of responses to precipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a maximum longevity change from 10 months (Akodon azarae) to 80 years (Loxodonta africana) was associated with a 2.36-fold and 2.05-fold decrease in the predicted absolute magnitude of responses to temperature and precipitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "79694620-0d27-4005-8032-5dc7db3384e2",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C71",
+      "claim": "For every additional 5 years of life, there was a 16.8% decrease in absolute responses to temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "So, for every additional 5 years of life, there was a 16.8% decrease in absolute responses to temperature and 14.6% decrease in the absolute responses to precipitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c097316b-e14a-46e7-a298-b799c4ca6ab3",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C72",
+      "claim": "For every additional 5 years of life, there was a 14.6% decrease in absolute responses to precipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "So, for every additional 5 years of life, there was a 16.8% decrease in absolute responses to temperature and 14.6% decrease in the absolute responses to precipitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "2f909d97-fa1f-4ba3-bc2d-260186c53098",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C75",
+      "claim": "Mammals bearing more offspring in a single litter had greater absolute responses to temperature and precipitation anomalies.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, mammals bearing more offspring in a single litter had greater absolute responses to temperature and precipitation anomalies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from statistical results about litter size effects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c82c2d4c-bf79-47a3-9766-08aef8e3fedd",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C76",
+      "claim": "A change in litter size from 1 to 17 was associated with a 1.99-fold increase in the predicted temperature responses.",
+      "claim_type": "EXPLICIT",
+      "source": "A change in litter size from 1 (monotocous species, various) to 17 (Thylamys elegans) was associated with a 1.99-fold and 1.60-fold increase in the predicted temperature and precipitation responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "6550508a-2cb8-4eca-ad4b-c5d2e339f097",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C77",
+      "claim": "A change in litter size from 1 to 17 was associated with a 1.60-fold increase in the predicted precipitation responses.",
+      "claim_type": "EXPLICIT",
+      "source": "A change in litter size from 1 (monotocous species, various) to 17 (Thylamys elegans) was associated with a 1.99-fold and 1.60-fold increase in the predicted temperature and precipitation responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "ee0b141b-df98-4e07-b6aa-d2089e4e6c17",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C78",
+      "claim": "For every additional offspring invested into at the litter stage, there was a 12.4% increase in the absolute magnitude of temperature responses.",
+      "claim_type": "EXPLICIT",
+      "source": "For every additional offspring invested into at the litter stage, there was a 12.4% increase in the absolute magnitude of temperature responses and 10% increase in the absolute magnitude of precipitation responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "1758d412-0ee5-4231-a6ce-c01aed74b989",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C79",
+      "claim": "For every additional offspring invested into at the litter stage, there was a 10% increase in the absolute magnitude of precipitation responses.",
+      "claim_type": "EXPLICIT",
+      "source": "For every additional offspring invested into at the litter stage, there was a 12.4% increase in the absolute magnitude of temperature responses and 10% increase in the absolute magnitude of precipitation responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c22738df-5e47-4651-a035-5512907c0227",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C80",
+      "claim": "The results provide an important empirical link between a species' life history and its population responses to environmental change.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide an important empirical link between a species' life history and its population responses to environmental change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's interpretation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "2964ef73-e832-4626-8d96-6b9ab8adb516",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C81",
+      "claim": "Shorter living species with increased litters sizes responded with a greater absolute magnitude compared to those with 'slow' life-history traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, shorter living species with increased litters sizes, or species characterised with 'fast' life-history traits, responded with a greater absolute magnitude compared to those with 'slow' life-history traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "4ed61ad7-89c6-42a9-aa98-72794ae82490",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C82",
+      "claim": "Increased extreme/anomalous weather events will have a greater impact on the abundance of short-living mammals with higher reproductive output.",
+      "claim_type": "EXPLICIT",
+      "source": "Practically, our results suggest that increased extreme/anomalous weather events will have a greater impact (both positive or negative) on the abundance of short-living mammals with higher reproductive output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study's findings about future impacts",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "757774a9-0c2b-41e5-b2a2-01c262c8afcf",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C83",
+      "claim": "The study finds support for the hypothesis that longevity buffers organisms against short-term variability in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We find support for the hypothesis that longevity, and 'slow' life-history traits more generally, buffer organisms against short-term variability in the environment (Morris et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's interpretation with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "ecdaddea-ef2e-4f24-b297-822412e5419a",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C84",
+      "claim": "Over longer time-scales, species with slow life-history traits are slower to recover from perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Over longer time-scales, species with slow life-history traits are also slower to recover from perturbations (Gamelon et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gamelon et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "054ba2d3-8270-4491-af4c-9ac0a6c912bf",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C85",
+      "claim": "Many long-lived mammal species are affected by other threats such as poaching and habitat loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many long-lived mammal species are affected by other threats such as poaching and habitat loss (Cardillo et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cardillo et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "70778035-3a3b-4883-bc24-d4cb3cdbbc18",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C86",
+      "claim": "Only 1.3% of tetrapods globally have sufficient demographic information with which to estimate population dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 1.3% of tetrapods globally have sufficient demographic information with which to estimate population dynamics (Conde et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Conde et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "9cb3f204-6e54-4819-ac9a-ab5a4e9e311a",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C87",
+      "claim": "Maximum recorded longevity is strongly influenced by sampling variance and a flawed measure of longevity differences between taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these summary traits were well correlated with more robust demographic traits for a smaller subset of species (Appendix 1\u2014figure 26), maximum recorded longevity, while sufficient as a broad indicator, is strongly influenced by sampling variance and a flawed measure of longevity differences between taxa (Moorad et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Moorad et al., 2012 and reference to Appendix figure",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "dfffe8d3-541c-4e48-a731-8d50c29f59f7",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C88",
+      "claim": "The study's results contrast with findings of linear associations between mammal abundance and temperature change.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results contrast with findings of linear associations between mammal abundance and temperature change (Spooner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct comparison with cited study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "7777b122-6179-416a-bdfd-d3a84ed47a7d",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C89",
+      "claim": "Significant population trends from long time-series are detectable from smaller component time-series even when sampling is incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant population trends from long time-series are detectable from smaller component time-series even when sampling is incomplete (Wauchope et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wauchope et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c17079bf-b4f6-4892-94c8-fe8c8cc4869d",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C91",
+      "claim": "Population dynamics in endothermic mammals have been linked to other drivers such as diet specialisation, body size and human influence.",
+      "claim_type": "EXPLICIT",
+      "source": "While out of the scope of the current study, population dynamics in endothermic mammals have been linked to other drivers such as diet specialisation, body size and human influence (Pacifici et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pacifici et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "647ef27c-38fa-45d1-ad24-204a1ea2eb83",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C92",
+      "claim": "The large majority of records in the Living Planet Database do not exhibit population declines.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our findings can be explained in light of recent studies from the Living Planet Database that have found that the large majority of records do not exhibit population declines (Leung et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leung et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "7474120d-e534-45e4-a809-ef7929c1edc5",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C93",
+      "claim": "There was no evidence for phylogenetic covariance in weather responses between species.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we did not find evidence for phylogenetic covariance in weather responses between species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "7b968186-cf40-4c7c-933f-208f927797f2",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C94",
+      "claim": "Closely related species can have disparate responses to weather anomalies.",
+      "claim_type": "EXPLICIT",
+      "source": "Closely related species can have disparate responses to weather anomalies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the lack of phylogenetic covariance",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "15ed3736-b5ab-4842-8169-e556ac684a9f",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C95",
+      "claim": "Recent evidence from birds indicated strong phylogenetic covariance in vital rates, particularly in adult survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence from birds indicated strong phylogenetic covariance in vital rates, particularly in adult survival, and the incorporation of phylogenetic information greatly improved predictive performance when imputing vital rates (James et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to James et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "1d56d19b-8781-43d7-914f-1182493604c5",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C96",
+      "claim": "Local responses to weather anomalies in butterflies had a strong phylogenetic signal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this result is in contrast to findings from butterflies, which suggested that local responses to weather anomalies had a strong phylogenetic signal (Melero et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Melero et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c3003b0f-4964-4353-90ee-d704b9ff617c",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C97",
+      "claim": "Different populations of the same species can have different responses to weather anomalies.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we highlight the importance of variation in population responses to weather anomalies within a species. Different populations of the same species can have different responses to weather anomalies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "6c543dad-eb07-498a-a4b9-b5bdec03fbce",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C98",
+      "claim": "Sampling heterogeneity has broad implications for metrics of population dynamics, where demographic rates are poorly correlated among sampling sites for the same species.",
+      "claim_type": "EXPLICIT",
+      "source": "Sampling heterogeneity has recently been shown to have broad implications for metrics of population dynamics, where demographic rates are poorly correlated among sampling sites for the same species (Engbo et al., 2020; R\u00f6mer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Engbo et al., 2020 and R\u00f6mer et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "8c9e741c-d8e5-4bc6-a1c2-22eac105bac0",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C99",
+      "claim": "Demographic differences within a species range may reflect broader environmental gradients or wider climatic niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Demographic differences within a species range may reflect broader environmental gradients or wider climatic niche (R\u00f6mer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to R\u00f6mer et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "84deb39f-3c6e-4f05-a641-b128e6851c22",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C100",
+      "claim": "Inferences obtained from monitoring single populations or studies may not accurately portray species-level variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, inferences obtained from monitoring single populations or studies may not accurately portray species-level variability (Gaillard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gaillard et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "48dc6378-f6f6-4d2f-9ef7-fb0138f995e0",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C101",
+      "claim": "Population viability assessments suffer from data quality issues in their parameterisation.",
+      "claim_type": "EXPLICIT",
+      "source": "As well as suffering from data quality issues in their parameterisation (Chaudhary and Oli, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chaudhary and Oli, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "2faedeb2-b84d-44b2-9d99-8b0e54d07784",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C102",
+      "claim": "PVAs based on data from a single population may not accurately reflect population viability across a species' geographic range.",
+      "claim_type": "EXPLICIT",
+      "source": "our findings suggest that PVAs based on data from a single population may not accurately reflect population viability across a species' geographic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study's findings about within-species variation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "308cee37-378c-4ced-945d-799801ef4074",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C103",
+      "claim": "Presence-only models of species distributions that do not account for responses to the environment within a species range do not accurately represent species distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, presence-only models of species distributions that do not account for responses to the environment within a species range do not accurately represent species distributions (Benito Garz\u00f3n et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Benito Garz\u00f3n et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "3d5a40a8-6292-47ed-91bd-bd9ee95ee071",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C104",
+      "claim": "Population records in the Living Planet Database are biased towards temperate biomes and Europe/North America.",
+      "claim_type": "EXPLICIT",
+      "source": "First, while broad in coverage spatially, population records in the Living Planet Database are biased towards temperate biomes and Europe/North America, a feature common in macroecology (Beck et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data limitations with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "cfc8232c-9350-4544-a3c7-6c129c887d90",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C106",
+      "claim": "Increased long-term monitoring is crucial to assess population dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We accounted for record length in all analyses and do not expect that it influenced our findings, but it is important to acknowledge that increased long-term monitoring is crucial to assess population dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the importance of long-term monitoring",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "4f479398-86e6-47c5-b6c6-3ea1d0732451",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C107",
+      "claim": "Linking species traits such as life-history traits to changes in the environment may equip us with tools to predict and prevent future losses.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that linking species traits such as life-history traits to changes in the environment may equip us with tools to predict and prevent future losses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's implications",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "4f571a39-254a-4109-8b9f-f421c594d92b",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C108",
+      "claim": "The study used long-term annual time-series abundance data from the Living Planet Database.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained long-term annual time-series abundance data across the terrestrial mammals from the Living Planet Database found at https://livingplanetindex.org/data_portal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "56c0068f-b268-4db1-aff9-9bd2c4a64a68",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C109",
+      "claim": "The study included only data for terrestrial mammals that had species-level life-history information and coordinate locations.",
+      "claim_type": "EXPLICIT",
+      "source": "We included only data for the terrestrial mammals that had species-level life-history information and coordinate locations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data inclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "7fd34cd3-eece-4600-92d2-7feee04261fd",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C110",
+      "claim": "The study included only long-term records with 10 or more consecutive years of abundance data.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we opted to include only long-term records with 10 or more consecutive years of abundance data, and only for years in which there was also weather data (1979\u20132013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data inclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "f6a9e794-143a-49bc-843d-c1f98026b204",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C111",
+      "claim": "The study's key findings were robust to the choice of long-term records (\u22655, \u226510, or \u226520 years).",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the implications of this choice of data quality by running additional analyses with both \u22655 and \u226520 years of data. Our key findings were robust to the choice of long-term records (Appendix 1\u2014figure 25)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of robustness testing with reference to Appendix figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "cb6f28fd-99b6-4567-a668-eac1b7738bbc",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C112",
+      "claim": "The final dataset contained 486 records from 157 terrestrial mammal species.",
+      "claim_type": "EXPLICIT",
+      "source": "Our final dataset contained 486 records from 157 terrestrial mammal species, which was used in all subsequent analyses (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of final dataset characteristics with reference to Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "cc86ebda-aaa0-415d-acaa-8b32de631f28",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C113",
+      "claim": "The study used temperature and precipitation anomalies as the key weather variables.",
+      "claim_type": "EXPLICIT",
+      "source": "We used temperature and precipitation anomalies as the key weather variables in our analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodological choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "4cd435fc-bb13-4d3e-9e6f-c9a6940f7c91",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C114",
+      "claim": "Global weather data was extracted from version 1.2.1 of the CHELSA monthly gridded temperature and precipitation dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We extracted global weather data from version 1.2.1 of the CHELSA monthly gridded temperature and precipitation dataset at a spatial resolution of 30 arc seconds (~1 km2 at the equator) for all months between 1979 and 2013 across the globe's land surface (Karger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data source with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "7a3f9694-10ab-4ec5-82c0-bdc1a78d3cde",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C115",
+      "claim": "For each record, monthly weather data was averaged for a buffered radius of 5 km around each record location.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Living Planet Database record coordinate locations as a centroid, we averaged the monthly weather data for a buffered radius of 5 km around each record location using the exactextractr package (Baston, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodological approach with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "d392d1b9-1b60-44e9-a38b-7a26953194fc",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C116",
+      "claim": "Averaged weather variables and weather effects for alternate buffer radii (50 m and 50 km) were highly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged weather variables and weather effects for alternate buffer radii (50 m and 50 km) were highly correlated (Appendix 1\u2014figure 1; Appendix 1\u2014figure 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of robustness testing with reference to Appendix figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "84126159-e5fe-4957-b446-167cb150bcd5",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C117",
+      "claim": "The study's results were not sensitive to the choice of buffer radius.",
+      "claim_type": "EXPLICIT",
+      "source": "and thus we do not expect that our results were sensitive to the choice of this radius.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the high correlation of weather variables across buffer radii",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "bc86eef3-dd58-4a51-8f07-8bedb69a1f14",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C118",
+      "claim": "Organisms have evolved in a given environmental context with seasonal fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, given that organisms have evolved in a given environmental context (with seasonal fluctuations)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established evolutionary biology knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "eab95aa6-7bf5-42e0-b2a0-0b7d1dbe5919",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C119",
+      "claim": "Populations are expected to respond more often to extremes in the weather, as opposed to raw weather changes.",
+      "claim_type": "EXPLICIT",
+      "source": "we expect that populations will respond more often to extremes in the weather, as opposed to raw weather changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on evolutionary adaptation to environmental context",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "99188359-1d30-4996-8bb0-9ded67081cc3",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C120",
+      "claim": "The study used three key traits that broadly characterise species-level life history: maximum longevity, litter size and adult body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "We used three key traits that broadly characterise species-level life history that are available for a large number of species: maximum longevity, litter size and adult body mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodological choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "87c2134b-8775-4967-b740-e48c7aaf3b53",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C121",
+      "claim": "Life-history traits were collected from the compendium developed by Conde et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected these traits from the compendium developed by Conde et al., 2019, combining information from three primary database sources: The Amniote Life-History Database (Myhrvold et al., 2015), PanTHERIA (Jones et al., 2009) and AnAge (Tacutu et al., 2013) databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data source with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "96beb6fa-6fd0-4794-967a-59ff29556c37",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C122",
+      "claim": "Adult body mass data was obtained exclusively from the Amniote Life-History Database.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult body mass data was obtained exclusively from the Amniote Life-History Database (Myhrvold et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data source with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "7bb24a33-3771-4937-918a-59e25a99a919",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C123",
+      "claim": "There was high covariance in all life-history traits, with longevity traits positively associated with adult body mass and negatively associated with litter size.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, there was high covariance in all life-history traits, with longevity traits positively associated with adult body mass and negatively associated with litter size (Appendix 1\u2014figure 26).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of data analysis with reference to Appendix figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "f255fd09-c564-4e05-91ae-1fdde3004876",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C124",
+      "claim": "The mammal phylogeny was obtained from Upham et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammal phylogeny was obtained from Upham et al., 2019, which uses a 'backbone-and-patch' Bayesian approach for a newly assembled 31-gene supermatrix and is part of the Vertlife project (https://vertlife.org/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data source with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "8c34404c-5d1d-4d75-a5b2-9e9eba5b3402",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C125",
+      "claim": "The study used a two-step meta-regression approach to assess comparative population responses to weather anomalies.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess comparative population responses to weather anomalies in the terrestrial mammals we used a two-step meta-regression approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodological approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "d5f3d50f-531b-4626-820f-408cdc5e635b",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C126",
+      "claim": "The study estimated the effect of annual weather anomalies on population growth rates using generalised additive mixed models (GAMMs).",
+      "claim_type": "EXPLICIT",
+      "source": "Then, with rt as the response variable, we estimated the effect of temperature and precipitation anomalies on population growth using generalised additive mixed models (GAMMs) fit using the gamm function of the mgcv package (Wood, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodological approach with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "4c67d8b2-b22a-4660-988c-acd72233a6f0",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C127",
+      "claim": "The study opted to use a general linear-modelling framework as opposed to a state-space approach.",
+      "claim_type": "EXPLICIT",
+      "source": "We opted to use a general linear-modelling framework as opposed to a state-space approach, which is often employed for time-series to account for measurement error and estimate trends (see Daskalova et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodological choice with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "ca9868df-9148-4f9b-b24f-c6b966115c5f",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C128",
+      "claim": "The study's results were robust to the modelling choice between GAMM and state-space approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results were robust to this modelling choice, and we found that the observed population responses were highly correlated between GAMM and state-space approaches (Appendix 1\u2014figure 11; see full alternative approaches section below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of robustness testing with reference to Appendix figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "cf88e0c4-5f76-4820-8807-07e907f23579",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C129",
+      "claim": "There was evidence for lag 1 autocorrelation in abundance, but not for greater lags.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially explored the extent of autocorrelation in abundance patterns using timeseries analysis and found evidence for lag 1 autocorrelation in abundance, but not for greater lags (Appendix 1\u2014figures 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of data analysis with reference to Appendix figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "93447a8c-b83f-4779-a48a-a0a1d4c08425",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C130",
+      "claim": "Environmental effects were robust to density dependence even for short timeseries.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we tested the potential impact of density dependence on estimating environmental effects using an autoregressive timeseries simulation and found that environmental effects were robust to density dependence even for short timeseries (Appendix 1\u2014figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of simulation testing with reference to Appendix figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "d8337388-2be7-4870-9a5d-0e899d54a5b3",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C132",
+      "claim": "Weather coefficients from state-space models were highly correlated with those obtained from GAMMs for both temperature and precipitation effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared weather coefficients from state-space models with those obtained from GAMMs using Pearson's regression, and found highly significant correlations for both temperature and precipitation effects (Appendix 1\u2014figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of validation testing with reference to Appendix figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "c8727684-2102-4540-9ad7-0b5fb55ab569",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C133",
+      "claim": "The study used conservative priors that gave predictions lying within the parameter space of the raw data.",
+      "claim_type": "EXPLICIT",
+      "source": "For all meta-regression models, we used conservative priors that gave predictions lying within the parameter space of the raw data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodological approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "b6997d63-0072-4246-9f5e-5fbc6a58a829",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C134",
+      "claim": "The study used regularising priors obtained from prior predictive simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we used regularising priors obtained from prior predictive simulations of the slope, intercept and exponential variance terms (McElreath, 2020a; McElreath, 2020b; Appendix 1\u2014figures 12\u201315).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of methodological approach with citations and reference to Appendix figures",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "d2468c35-69ac-402e-b202-a4b6f5de2d9e",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "claim_id": "C135",
+      "claim": "The study assessed the predictive performance of candidate models using leave-one-out cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the predictive performance of candidate models using leave-one-out cross-validation implemented in the loo package (Vehtari et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodological approach with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0dad96d9-d7da-489f-b3de-3383f19689d5",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 486 long-term abundance records (10-35 years, mean 15.7 years) from 157 terrestrial mammal species across 13 biomes, with geographic bias toward northwestern Europe and North America. Most records were from Artiodactyla (n=172), Carnivora (n=127), and Rodentia (n=82), with 1-17 records per species (mean 3.1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C36 and C108-C112 provide consistent, detailed descriptions of the dataset characteristics including sample sizes, temporal coverage, taxonomic representation, and geographic distribution. The data are clearly documented with specific numbers and ranges that are internally consistent across claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "4c638188-bada-4ea3-85ac-2c31cc39d452",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "No directional effect of temperature or precipitation anomalies on annual population growth rates was found across terrestrial mammals. The posterior mean global intercept for temperature was 0.02 [-0.21, 0.25] and for precipitation was -0.07 [-0.31, 0.15], with 95% of records showing coefficients within moderate ranges, though ~8% of temperature and ~1% of precipitation coefficients showed extreme responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C38-C43 present consistent statistical results from Bayesian meta-regression showing no overall directional effects, with credible intervals overlapping zero. The quantitative results are specific and internally consistent, though the interpretation of 'extreme' responses (C43) for 8-9% of populations could benefit from additional context about biological significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "68a99407-2704-4f92-98a4-814bb63810ba",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Record length influenced the variance and magnitude of temperature effects, with shorter records displaying larger variation and larger absolute responses to temperature and precipitation anomalies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 and C62 consistently describe the relationship between record length and effect estimates. The authors acknowledge this relationship and state they accounted for record length in all models, which is appropriate. However, this finding raises questions about potential bias in shorter time series that may affect interpretation of results from records with fewer years of data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "261e35b4-4e95-431c-9c63-a3c5f7c67b24",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "No evidence was found for differences in weather responses across biomes or for spatial autocorrelation in weather responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 report negative findings from model comparison (\u0394elpd values near zero) and spatial autocorrelation tests. The authors appropriately used leave-one-out cross-validation for model comparison and tested for spatial patterns, though the geographic bias in the dataset (C31, C104) may limit power to detect biome-specific effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "23879ed0-2158-493a-8a0c-217f2ba8d0a3",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Population responses to weather anomalies showed far greater within-species variation than among-species variance, with no evidence for phylogenetic covariance. Species-level variance in temperature effects (0.2 [0.01, 0.4]) was 20 times greater than phylogenetic covariance (0.01 [0.0, 0.03]).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C50-C54, C93-C94 present consistent statistical results showing minimal phylogenetic signal and high within-species variation. The quantitative estimates are specific with credible intervals. This finding is notable and well-supported, though it contrasts with findings from other taxa (C95-C96), which the authors appropriately acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "e32b35b6-fc2e-4726-a4d5-b8f4c0da9037",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Different populations of the same species exhibited substantial variation in weather responses, exemplified by Myodes glareolus showing temperature effects ranging from -3.33 to 3.86 across nine populations, compared to -11.60 to 9.22 across all Rodentia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 and C97 provide a concrete example supporting the within-species variation finding. The specific numerical ranges for M. glareolus are consistent with the broader statistical results (C50-C54). This example effectively illustrates the magnitude of within-species variation, though it represents only one species and may not be representative of all taxa.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "d928fcd2-ffa5-4670-93af-0617cdda62dd",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Longer-lived species with smaller litter sizes had lower absolute population responses to weather anomalies. Maximum longevity was the best predictor, with a change from 10 months to 80 years associated with a 2.36-fold decrease in temperature response magnitude and 2.05-fold decrease in precipitation response magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C66, C69-C72, C81 present consistent results from model selection and Gamma regression showing life history effects on absolute weather responses. The model selection approach using leave-one-out cross-validation is appropriate, and the quantitative effect sizes are specific. However, the use of maximum longevity as a life history metric has acknowledged limitations (C87), which may affect the precision of these estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "4b7f24e3-b2dd-44c0-98e7-5f19ca968c1f",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Litter size positively predicted absolute population responses to weather anomalies, with no evidence for two-way interactions between life-history variables. A change in litter size from 1 to 17 was associated with a 1.99-fold increase in temperature responses and 1.60-fold increase in precipitation responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65, C75-C79 present consistent results showing litter size effects on absolute weather responses. The lack of interaction effects (C65) simplifies interpretation. The quantitative estimates are specific, though the biological interpretation of these fold-changes across such extreme litter size ranges (1 to 17) should be considered carefully as few species occupy the extremes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "e46fac3b-24f7-47fb-b8b6-d6c90cca3613",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study provides an empirical link between life history and population responses to environmental change, supporting the hypothesis that longevity buffers organisms against short-term environmental variability. The results suggest that increased extreme weather events will have greater impacts on short-lived mammals with higher reproductive output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80, C82-C83, C107 present interpretations and implications of the findings. While C80 and C83 are reasonable interpretations of the data, C82 and C107 involve speculation about future impacts and predictive utility that extend beyond what the current data directly demonstrate. The study shows associations with weather anomalies but does not directly test responses to future climate scenarios or validate predictive models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "905ab888-1f57-4ab9-bb23-14993011d5ae",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study used temperature and precipitation anomalies from CHELSA climate data (1979-2013) as key weather variables, averaged over 5 km buffer radii around population locations. Results were robust to buffer radius choice, and the focus on anomalies was justified by evolutionary adaptation to environmental context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C119 describe the weather data processing methodology. The robustness testing across buffer radii (C116) strengthens confidence in the approach. The justification for using anomalies rather than raw values (C118-C119) is reasonable from an evolutionary perspective, though alternative approaches (e.g., absolute values, variance) were also tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "1d327746-516e-4c36-9450-48a2cc5c2d45",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study used three life-history traits (maximum longevity, litter size, adult body mass) from established databases, which showed high covariance with longevity positively associated with body mass and negatively with litter size. Maximum longevity is acknowledged as flawed but was well-correlated with more robust demographic traits for a subset of species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C120-C123 and C87 describe the life history data sources and acknowledge limitations. The high covariance among traits (C123) is expected from life history theory. The acknowledgment that maximum longevity is flawed (C87) but validated against demographic rates for a subset is appropriate, though this limitation may affect the precision of life history effect estimates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "6c8deade-4849-415c-ba7c-d88db05bb2e2",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used a two-step meta-regression approach: first estimating weather effects on population growth rates using GAMMs accounting for temporal autocorrelation and trends, then analyzing these effects using Bayesian meta-regression. The GAMM approach was validated against state-space models showing highly correlated results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C124-C130 and C132 describe the analytical framework with appropriate detail. The validation against alternative approaches (C128, C130, C132) strengthens confidence in the methodological choices. The accounting for temporal autocorrelation (C129) and density dependence (C130) addresses important confounders. The two-step approach is reasonable for comparative analysis across many populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "6e13b22d-477c-4555-b950-6cf479c4113d",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Bayesian meta-regression used conservative regularizing priors obtained from prior predictive simulations and assessed model performance using leave-one-out cross-validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C133-C135 describe appropriate Bayesian methodology. The use of prior predictive simulation to set regularizing priors (C134) and leave-one-out cross-validation for model comparison (C135) represent best practices in Bayesian analysis. These methodological choices enhance the reliability of the statistical inferences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "9fd9fb0c-3ed6-446d-9d7c-842e7da00a04",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study's results contrast with previous findings of linear associations between mammal abundance and temperature change, potentially due to differences in analyzing annual changes versus long-term trends. The findings align with recent studies showing most Living Planet Database records do not exhibit population declines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89, C91-C92 appropriately contextualize the findings relative to prior work. The discussion of why results differ from Spooner et al. 2018 (C88-C89) is reasonable, acknowledging that annual effects may differ from long-term trends. The alignment with recent findings about lack of widespread declines (C92) provides supporting context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "3ed36354-64a6-4ca9-ab67-10c453ec32ef",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The lack of phylogenetic signal contrasts with findings from birds and butterflies. Within-species variation has implications for population viability assessments and species distribution models, suggesting that single-population studies may not accurately represent species-level patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 and C98-C103 discuss implications of the within-species variation finding. The contrasts with other taxa (C95-C96) are appropriately noted. The implications for PVAs (C101-C102) and species distribution models (C103) are reasonable inferences from the high within-species variation, though these represent suggested future directions rather than directly tested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "3c3781cf-5796-418d-a22a-5b22fec16c8d",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study acknowledges limitations including geographic bias toward temperate biomes and Europe/North America, and emphasizes the importance of increased long-term monitoring for assessing population dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104 and C106 appropriately acknowledge data limitations. The geographic bias (C104) is a common issue in macroecological studies and may limit generalizability to underrepresented regions. The call for increased monitoring (C106) is reasonable given the observed effects of record length on estimates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The introduction establishes that climate change threatens biodiversity, with species showing varied responses based on their life-history traits. While habitat loss is currently the dominant driver of extinction, climate change impacts are already evident and predicted to worsen, with life-history traits potentially buffering or exacerbating responses to environmental variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 provide background context supported by appropriate citations. These claims establish the scientific rationale for the study by synthesizing prior work on climate change impacts, species variation in responses, and life-history theory. The claims are well-supported by the cited literature and represent accurate summaries of current understanding in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    },
+    {
+      "id": "b0722875-35d7-4300-bcc7-1034a6d95b65",
+      "content_id": "695332ec-67ed-4435-925d-86b917123a46",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Long-lived species with slow life-history traits are slower to recover from perturbations over longer time-scales and face additional threats from poaching and habitat loss. Only 1.3% of tetrapods have sufficient demographic data to estimate population dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 provide important context about limitations of slow life-history species and data availability. These claims are supported by appropriate citations and help qualify the main findings by noting that buffering against short-term weather variability does not necessarily confer overall resilience to environmental change.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:03:50.068174Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bcecc2ec-2ef9-490a-9b0b-9ee746dfd51e",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "c59fad4c-ef44-4e60-8d89-6222d4276188",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "9761235d-ec80-4bbb-9eb4-ff9b0f178102",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "4225095e-51b1-4f5d-ad00-db2f7074cebd",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "4ab5dcf3-b8a8-4fa2-a86d-a69e8511bd97",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "ec84db40-e4a8-4486-bd2f-2a7c1351bcc1",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "8b81d098-bd91-447c-a35f-3f4f3e6e8d7e",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "d0337c42-1137-4033-aadc-d1c0e724294e",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "f168ef5e-0ff7-42ff-9f4b-2c8dfc6e2b3b",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "7e416c34-483e-495c-86f6-1a24be0034e4",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "5d00f368-35fc-4e41-9f0c-18046465894e",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "4f571a39-254a-4109-8b9f-f421c594d92b",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "56c0068f-b268-4db1-aff9-9bd2c4a64a68",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "7fd34cd3-eece-4600-92d2-7feee04261fd",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "f6a9e794-143a-49bc-843d-c1f98026b204",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "cb6f28fd-99b6-4567-a668-eac1b7738bbc",
+      "result_id": "0dad96d9-d7da-489f-b3de-3383f19689d5"
+    },
+    {
+      "claim_id": "6f4842b6-fdf8-4c8e-bd40-e517363c1b82",
+      "result_id": "4c638188-bada-4ea3-85ac-2c31cc39d452"
+    },
+    {
+      "claim_id": "cd0c1e09-bfea-44ff-b826-cbebf765f3b5",
+      "result_id": "4c638188-bada-4ea3-85ac-2c31cc39d452"
+    },
+    {
+      "claim_id": "eec3545b-eba8-4ff9-8eef-e17eb40393f5",
+      "result_id": "4c638188-bada-4ea3-85ac-2c31cc39d452"
+    },
+    {
+      "claim_id": "dc6757fb-0508-4bcd-9e7f-3b6a2d132fc3",
+      "result_id": "4c638188-bada-4ea3-85ac-2c31cc39d452"
+    },
+    {
+      "claim_id": "49171f83-3a1a-4bbe-a5b1-53e18ea9d624",
+      "result_id": "4c638188-bada-4ea3-85ac-2c31cc39d452"
+    },
+    {
+      "claim_id": "728856f7-39e6-418d-95e9-ad7100d6e463",
+      "result_id": "4c638188-bada-4ea3-85ac-2c31cc39d452"
+    },
+    {
+      "claim_id": "08e3ea68-317c-4395-936a-ff1b07997ec3",
+      "result_id": "4c638188-bada-4ea3-85ac-2c31cc39d452"
+    },
+    {
+      "claim_id": "905b3919-940b-4278-a157-34c597dec920",
+      "result_id": "68a99407-2704-4f92-98a4-814bb63810ba"
+    },
+    {
+      "claim_id": "a06239aa-1f81-4902-afd4-092ff3317193",
+      "result_id": "68a99407-2704-4f92-98a4-814bb63810ba"
+    },
+    {
+      "claim_id": "e36aa590-5801-41a3-8e93-720067cb8a25",
+      "result_id": "68a99407-2704-4f92-98a4-814bb63810ba"
+    },
+    {
+      "claim_id": "0822432e-e725-4a79-b05a-fba7348bd64f",
+      "result_id": "261e35b4-4e95-431c-9c63-a3c5f7c67b24"
+    },
+    {
+      "claim_id": "aa36b3b2-bdc7-41dc-8813-59bf03b1f6dd",
+      "result_id": "261e35b4-4e95-431c-9c63-a3c5f7c67b24"
+    },
+    {
+      "claim_id": "b0a60d2e-d504-4c39-be11-68bbecd18426",
+      "result_id": "23879ed0-2158-493a-8a0c-217f2ba8d0a3"
+    },
+    {
+      "claim_id": "82e8cf2a-8fd0-4a64-afcb-a8f8db978e29",
+      "result_id": "23879ed0-2158-493a-8a0c-217f2ba8d0a3"
+    },
+    {
+      "claim_id": "45581d14-8396-4dba-930a-b12ee10f806e",
+      "result_id": "23879ed0-2158-493a-8a0c-217f2ba8d0a3"
+    },
+    {
+      "claim_id": "8d4c2de2-1b61-487c-b67f-6a2810144682",
+      "result_id": "23879ed0-2158-493a-8a0c-217f2ba8d0a3"
+    },
+    {
+      "claim_id": "d9a7aa60-04bc-4fd8-99c4-94a975abcbc2",
+      "result_id": "23879ed0-2158-493a-8a0c-217f2ba8d0a3"
+    },
+    {
+      "claim_id": "19c489bf-c204-4ed2-805a-3d5390b0e674",
+      "result_id": "23879ed0-2158-493a-8a0c-217f2ba8d0a3"
+    },
+    {
+      "claim_id": "7474120d-e534-45e4-a809-ef7929c1edc5",
+      "result_id": "23879ed0-2158-493a-8a0c-217f2ba8d0a3"
+    },
+    {
+      "claim_id": "7b968186-cf40-4c7c-933f-208f927797f2",
+      "result_id": "23879ed0-2158-493a-8a0c-217f2ba8d0a3"
+    },
+    {
+      "claim_id": "0b3e9dda-99b0-48c5-879d-6ecffea04338",
+      "result_id": "e32b35b6-fc2e-4726-a4d5-b8f4c0da9037"
+    },
+    {
+      "claim_id": "c9243d24-19f3-49c1-8e2d-a8eb84e8642f",
+      "result_id": "e32b35b6-fc2e-4726-a4d5-b8f4c0da9037"
+    },
+    {
+      "claim_id": "c61b06c7-72da-4a15-a66f-c6f3ddce6ead",
+      "result_id": "e32b35b6-fc2e-4726-a4d5-b8f4c0da9037"
+    },
+    {
+      "claim_id": "25b0b279-12b4-4c23-8925-5ab83f35e125",
+      "result_id": "e32b35b6-fc2e-4726-a4d5-b8f4c0da9037"
+    },
+    {
+      "claim_id": "c3003b0f-4964-4353-90ee-d704b9ff617c",
+      "result_id": "e32b35b6-fc2e-4726-a4d5-b8f4c0da9037"
+    },
+    {
+      "claim_id": "7f7d90e0-67bf-41ff-aaac-364bed3f4749",
+      "result_id": "d928fcd2-ffa5-4670-93af-0617cdda62dd"
+    },
+    {
+      "claim_id": "85f0deb7-03d7-489f-ba62-11af97ba6682",
+      "result_id": "d928fcd2-ffa5-4670-93af-0617cdda62dd"
+    },
+    {
+      "claim_id": "6753c3bd-c15a-409e-863b-e35d8bff25ef",
+      "result_id": "d928fcd2-ffa5-4670-93af-0617cdda62dd"
+    },
+    {
+      "claim_id": "e1ecf29f-549d-4dd5-bce9-fc5af81ac4a2",
+      "result_id": "d928fcd2-ffa5-4670-93af-0617cdda62dd"
+    },
+    {
+      "claim_id": "79694620-0d27-4005-8032-5dc7db3384e2",
+      "result_id": "d928fcd2-ffa5-4670-93af-0617cdda62dd"
+    },
+    {
+      "claim_id": "c097316b-e14a-46e7-a298-b799c4ca6ab3",
+      "result_id": "d928fcd2-ffa5-4670-93af-0617cdda62dd"
+    },
+    {
+      "claim_id": "2964ef73-e832-4626-8d96-6b9ab8adb516",
+      "result_id": "d928fcd2-ffa5-4670-93af-0617cdda62dd"
+    },
+    {
+      "claim_id": "56afab6c-067e-4563-9f17-f41e256c94cd",
+      "result_id": "4b7f24e3-b2dd-44c0-98e7-5f19ca968c1f"
+    },
+    {
+      "claim_id": "2f909d97-fa1f-4ba3-bc2d-260186c53098",
+      "result_id": "4b7f24e3-b2dd-44c0-98e7-5f19ca968c1f"
+    },
+    {
+      "claim_id": "c82c2d4c-bf79-47a3-9766-08aef8e3fedd",
+      "result_id": "4b7f24e3-b2dd-44c0-98e7-5f19ca968c1f"
+    },
+    {
+      "claim_id": "6550508a-2cb8-4eca-ad4b-c5d2e339f097",
+      "result_id": "4b7f24e3-b2dd-44c0-98e7-5f19ca968c1f"
+    },
+    {
+      "claim_id": "ee0b141b-df98-4e07-b6aa-d2089e4e6c17",
+      "result_id": "4b7f24e3-b2dd-44c0-98e7-5f19ca968c1f"
+    },
+    {
+      "claim_id": "1758d412-0ee5-4231-a6ce-c01aed74b989",
+      "result_id": "4b7f24e3-b2dd-44c0-98e7-5f19ca968c1f"
+    },
+    {
+      "claim_id": "c22738df-5e47-4651-a035-5512907c0227",
+      "result_id": "e46fac3b-24f7-47fb-b8b6-d6c90cca3613"
+    },
+    {
+      "claim_id": "4ed61ad7-89c6-42a9-aa98-72794ae82490",
+      "result_id": "e46fac3b-24f7-47fb-b8b6-d6c90cca3613"
+    },
+    {
+      "claim_id": "757774a9-0c2b-41e5-b2a2-01c262c8afcf",
+      "result_id": "e46fac3b-24f7-47fb-b8b6-d6c90cca3613"
+    },
+    {
+      "claim_id": "4f479398-86e6-47c5-b6c6-3ea1d0732451",
+      "result_id": "e46fac3b-24f7-47fb-b8b6-d6c90cca3613"
+    },
+    {
+      "claim_id": "cc86ebda-aaa0-415d-acaa-8b32de631f28",
+      "result_id": "905ab888-1f57-4ab9-bb23-14993011d5ae"
+    },
+    {
+      "claim_id": "4cd435fc-bb13-4d3e-9e6f-c9a6940f7c91",
+      "result_id": "905ab888-1f57-4ab9-bb23-14993011d5ae"
+    },
+    {
+      "claim_id": "7a3f9694-10ab-4ec5-82c0-bdc1a78d3cde",
+      "result_id": "905ab888-1f57-4ab9-bb23-14993011d5ae"
+    },
+    {
+      "claim_id": "d392d1b9-1b60-44e9-a38b-7a26953194fc",
+      "result_id": "905ab888-1f57-4ab9-bb23-14993011d5ae"
+    },
+    {
+      "claim_id": "84126159-e5fe-4957-b446-167cb150bcd5",
+      "result_id": "905ab888-1f57-4ab9-bb23-14993011d5ae"
+    },
+    {
+      "claim_id": "bc86eef3-dd58-4a51-8f07-8bedb69a1f14",
+      "result_id": "905ab888-1f57-4ab9-bb23-14993011d5ae"
+    },
+    {
+      "claim_id": "eab95aa6-7bf5-42e0-b2a0-0b7d1dbe5919",
+      "result_id": "905ab888-1f57-4ab9-bb23-14993011d5ae"
+    },
+    {
+      "claim_id": "99188359-1d30-4996-8bb0-9ded67081cc3",
+      "result_id": "1d327746-516e-4c36-9450-48a2cc5c2d45"
+    },
+    {
+      "claim_id": "87c2134b-8775-4967-b740-e48c7aaf3b53",
+      "result_id": "1d327746-516e-4c36-9450-48a2cc5c2d45"
+    },
+    {
+      "claim_id": "96beb6fa-6fd0-4794-967a-59ff29556c37",
+      "result_id": "1d327746-516e-4c36-9450-48a2cc5c2d45"
+    },
+    {
+      "claim_id": "7bb24a33-3771-4937-918a-59e25a99a919",
+      "result_id": "1d327746-516e-4c36-9450-48a2cc5c2d45"
+    },
+    {
+      "claim_id": "9cb3f204-6e54-4819-ac9a-ab5a4e9e311a",
+      "result_id": "1d327746-516e-4c36-9450-48a2cc5c2d45"
+    },
+    {
+      "claim_id": "f255fd09-c564-4e05-91ae-1fdde3004876",
+      "result_id": "6c8deade-4849-415c-ba7c-d88db05bb2e2"
+    },
+    {
+      "claim_id": "8c34404c-5d1d-4d75-a5b2-9e9eba5b3402",
+      "result_id": "6c8deade-4849-415c-ba7c-d88db05bb2e2"
+    },
+    {
+      "claim_id": "d5f3d50f-531b-4626-820f-408cdc5e635b",
+      "result_id": "6c8deade-4849-415c-ba7c-d88db05bb2e2"
+    },
+    {
+      "claim_id": "4c67d8b2-b22a-4660-988c-acd72233a6f0",
+      "result_id": "6c8deade-4849-415c-ba7c-d88db05bb2e2"
+    },
+    {
+      "claim_id": "ca9868df-9148-4f9b-b24f-c6b966115c5f",
+      "result_id": "6c8deade-4849-415c-ba7c-d88db05bb2e2"
+    },
+    {
+      "claim_id": "cf88e0c4-5f76-4820-8807-07e907f23579",
+      "result_id": "6c8deade-4849-415c-ba7c-d88db05bb2e2"
+    },
+    {
+      "claim_id": "93447a8c-b83f-4779-a48a-a0a1d4c08425",
+      "result_id": "6c8deade-4849-415c-ba7c-d88db05bb2e2"
+    },
+    {
+      "claim_id": "d8337388-2be7-4870-9a5d-0e899d54a5b3",
+      "result_id": "6c8deade-4849-415c-ba7c-d88db05bb2e2"
+    },
+    {
+      "claim_id": "c8727684-2102-4540-9ad7-0b5fb55ab569",
+      "result_id": "6e13b22d-477c-4555-b950-6cf479c4113d"
+    },
+    {
+      "claim_id": "b6997d63-0072-4246-9f5e-5fbc6a58a829",
+      "result_id": "6e13b22d-477c-4555-b950-6cf479c4113d"
+    },
+    {
+      "claim_id": "d2468c35-69ac-402e-b202-a4b6f5de2d9e",
+      "result_id": "6e13b22d-477c-4555-b950-6cf479c4113d"
+    },
+    {
+      "claim_id": "dfffe8d3-541c-4e48-a731-8d50c29f59f7",
+      "result_id": "9fd9fb0c-3ed6-446d-9d7c-842e7da00a04"
+    },
+    {
+      "claim_id": "7777b122-6179-416a-bdfd-d3a84ed47a7d",
+      "result_id": "9fd9fb0c-3ed6-446d-9d7c-842e7da00a04"
+    },
+    {
+      "claim_id": "c17079bf-b4f6-4892-94c8-fe8c8cc4869d",
+      "result_id": "9fd9fb0c-3ed6-446d-9d7c-842e7da00a04"
+    },
+    {
+      "claim_id": "647ef27c-38fa-45d1-ad24-204a1ea2eb83",
+      "result_id": "9fd9fb0c-3ed6-446d-9d7c-842e7da00a04"
+    },
+    {
+      "claim_id": "15ed3736-b5ab-4842-8169-e556ac684a9f",
+      "result_id": "3ed36354-64a6-4ca9-ab67-10c453ec32ef"
+    },
+    {
+      "claim_id": "1d56d19b-8781-43d7-914f-1182493604c5",
+      "result_id": "3ed36354-64a6-4ca9-ab67-10c453ec32ef"
+    },
+    {
+      "claim_id": "6c543dad-eb07-498a-a4b9-b5bdec03fbce",
+      "result_id": "3ed36354-64a6-4ca9-ab67-10c453ec32ef"
+    },
+    {
+      "claim_id": "8c9e741c-d8e5-4bc6-a1c2-22eac105bac0",
+      "result_id": "3ed36354-64a6-4ca9-ab67-10c453ec32ef"
+    },
+    {
+      "claim_id": "84deb39f-3c6e-4f05-a641-b128e6851c22",
+      "result_id": "3ed36354-64a6-4ca9-ab67-10c453ec32ef"
+    },
+    {
+      "claim_id": "48dc6378-f6f6-4d2f-9ef7-fb0138f995e0",
+      "result_id": "3ed36354-64a6-4ca9-ab67-10c453ec32ef"
+    },
+    {
+      "claim_id": "2faedeb2-b84d-44b2-9d99-8b0e54d07784",
+      "result_id": "3ed36354-64a6-4ca9-ab67-10c453ec32ef"
+    },
+    {
+      "claim_id": "308cee37-378c-4ced-945d-799801ef4074",
+      "result_id": "3ed36354-64a6-4ca9-ab67-10c453ec32ef"
+    },
+    {
+      "claim_id": "3d5a40a8-6292-47ed-91bd-bd9ee95ee071",
+      "result_id": "3c3781cf-5796-418d-a22a-5b22fec16c8d"
+    },
+    {
+      "claim_id": "cfc8232c-9350-4544-a3c7-6c129c887d90",
+      "result_id": "3c3781cf-5796-418d-a22a-5b22fec16c8d"
+    },
+    {
+      "claim_id": "95e2440e-d7e1-406a-bb38-4d42dd19137f",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "c7d8d9f0-b6ec-47f9-b259-f1fbcf0e9851",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "a95c5926-4137-44af-ab28-e98e3119af08",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "3432ef0e-e459-4cfe-8126-f447a24b7643",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "b056556a-9148-4991-b60f-691015a85d72",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "286e079a-1ea5-4ce0-b1b0-4c7e6d339003",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "1487d4ce-0e7e-4c00-b907-c40a379edc01",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "5d7bc5d5-f83a-4dba-997d-a3b4e0008c94",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "5f382a07-53c9-4e1e-ab93-31778f46d95a",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "67a188ee-5502-4d67-8b9f-ab7156337c28",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "1cc9c58d-c316-472f-822d-0445a552b3ef",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "913e74a7-e9be-46a7-9f3a-07b8ba1245ae",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "22646d4b-ee3b-4eca-af4e-c52d424194f5",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "07127c87-49e1-43ff-9572-5b30abe0b3f2",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "56cec9ef-c045-4996-8165-97fde0bd8959",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "7dea5aed-638f-481b-b93d-4bdab74ff6ae",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "7e649ce6-656f-4f47-a817-a873c7b9bd5b",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "31bbabed-a729-4042-8977-4c490972c1a5",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "c73185d2-21f6-4042-8d18-504df3a2908d",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "89f78ba9-27f0-48bd-98c7-02acaca1c7ba",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "fb16da1a-d04f-49e8-b887-d6c0f42cc43f",
+      "result_id": "90844d79-6c3d-4a3f-9e6c-e27aa848e416"
+    },
+    {
+      "claim_id": "ecdaddea-ef2e-4f24-b297-822412e5419a",
+      "result_id": "b0722875-35d7-4300-bcc7-1034a6d95b65"
+    },
+    {
+      "claim_id": "054ba2d3-8270-4491-af4c-9ac0a6c912bf",
+      "result_id": "b0722875-35d7-4300-bcc7-1034a6d95b65"
+    },
+    {
+      "claim_id": "70778035-3a3b-4883-bc24-d4cb3cdbbc18",
+      "result_id": "b0722875-35d7-4300-bcc7-1034a6d95b65"
+    }
+  ],
+  "comparisons": []
+}

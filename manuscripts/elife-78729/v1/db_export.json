@@ -1,0 +1,1693 @@
+{
+  "submission": {
+    "id": "eed909a6-c052-48ad-a1cb-d33d18cf581b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:25:40.091684Z",
+    "updated_at": "2025-12-03T19:25:40.091684Z"
+  },
+  "content": [
+    {
+      "id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "submission_id": "eed909a6-c052-48ad-a1cb-d33d18cf581b",
+      "content_type": "manuscript",
+      "content_text": "# Sensory input-dependent gain modulation of the optokinetic nystagmus by mid-infrared stimulation in pigeons\n\n## Authors\n\n- Tong Xiao<sup>1</sup> ([ORCID: 0000-0001-8489-4731](https://orcid.org/0000-0001-8489-4731))\n- Kaijie Wu<sup>3</sup>\n- Peiliang Wang<sup>2</sup>\n- Yali Ding<sup>2</sup>\n- Xiao Yang<sup>3</sup>\n- Chao Chang<sup>3</sup> ([ORCID: 0000-0002-4081-1583](https://orcid.org/0000-0002-4081-1583)) \u2020\n- Yan Yang<sup>1</sup> ([ORCID: 0000-0003-3001-9178](https://orcid.org/0000-0003-3001-9178)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Brain and Cognitive Science, Institute of Biophysics, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))\n2. University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))\n3. Innovation Laboratory of Terahertz Biophysics, National Innovation Institute of Defense Technology Beijing China\n4. Key Laboratory of Electromagnetic Radiation and Sensing Technology, Aerospace Information Research Institute, Chinese Academy of sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))\n5. School of Physics, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))\n6. Institute of Artificial Intelligence, Hefei Comprehensive National Science Center Hefei China\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeuromodulation serves as a cornerstone for brain sciences and clinical applications. Recent reports suggest that mid-infrared stimulation (MIRS) causes non-thermal modulation of brain functions. Current understanding of its mechanism hampers the routine application of MIRS. Here, we examine how MIRS influences the sensorimotor transformation in awaking-behaving pigeons, from neuronal signals to behavior. We applied MIRS and electrical stimulation (ES) to the pretectal nucleus lentiformis mesencephali (nLM), an essential retinorecipient structure in the pretectum, and examined their influences on the optokinetic nystagmus, a visually guided eye movement. We found MIRS altered eye movements by modulating a specific gain depending on the strength of visual inputs, in a manner different than the effect of ES. Simultaneous extracellular recordings and stimulation showed that MIRS could either excite and inhibit the neuronal activity in the same pretectal neuron depending on its ongoing sensory responsiveness levels in awake-behaving animals. Computational simulations suggest that MIRS modulates the resonance of a carbonyl group of the potassium channel, critical to the action potential generation, altering neuronal responses to sensory inputs and as a consequence, guiding behavior. Our findings suggest that MIRS could be a promising approach toward modulating neuronal functions for brain research and treating neurological diseases.\n\n## Introduction\n\nNeuromodulation has historically been used both for circuit manipulation in neuroscience research and as a tool to treat patients with brain disorders. Scientific and clinical applications have co-evolved with each set of technological innovations. For example, deep brain and transcranial electromagnetic stimulation directly alter neuronal excitability and connectivity, and their use in clinical settings is widespread (Krauss et al., 2021). Optogenetic stimulation has recently extended the toolkit to excite or inhibit specific groups of neurons selectively, but relies on genetic manipulations that currently limit its clinical application (Deisseroth, 2015). It will be of great significance to neuroscience research and clinical applications of neuromodulation if technological advances permit finer-resolution neuronal excitation and inhibition without genetic manipulation.\n\nOptical infrared neuronal stimulation is emerging to serve this role due to its ability to deliver focused energy through tissue without direct contact. Initial studies have shown that near-infrared wavelength stimulation (NIRS) can excite neuronal responses in vitro (Izzo et al., 2008; Albert et al., 2012; Shapiro et al., 2012; Entwisle et al., 2016) and in vivo (Wells et al., 2005; Wells et al., 2007a; Wells et al., 2007b; Richter et al., 2008; Xia et al., 2014; Xu et al., 2019). Interestingly, there are also reports that NIRS can inhibit neuronal firing (Cayce et al., 2011; Duke et al., 2012; Duke et al., 2013; Horv\u00e1th et al., 2020). Recently, there is evidence that mid-infrared stimulation (MIRS) with a specific wavelength can drive dramatic changes in neuronal firing rates and behavioral performance. MIRS can exert non-thermal effects on ion channels, and lead to gain modulation of action potentials based on current injections in the vitro slice preparation (Liu et al., 2021). MIRS can enhance spontaneous neuronal activities (Zhang et al., 2021) and sensory responses (Tan et al., 2022) in anesthetized animals. Consequently, prior reports show how MIRS accelerates associative learning in mice (Zhang et al., 2021), and regulates startle responses in larval zebrafish (Liu et al., 2021). Although our understanding of how MIRS neuromodulation impacts the brain is evolving, a convincing link between MIRS influence over neuronal firing and observed alternation of behavioral performance remains incomplete due to a lack of simultaneous stimulation and recording in awake-behaving animals. In this research, we aim to bridge the gap between the cellular targets of MIRS and its effects on a simple sensorimotor transformation in an awake-behaving pigeon.\n\nPigeons, as creatures of flight, highly depends on vision. While they fly or walk, the surrounding environment generates a large field of visual motion over the entire retina, known as optic flow (Gibson, 1951). In the presence of this visual motion, pigeons\u2019 eyes reflexively move to maintain stabilization of image on the retina, by ocular movements known as the optokinetic nystagmus (OKN). OKN occurs in two phases producing a characteristic irregular sawtooth waveform. A slow phase of pursuit eye movement closely tracks the moving field followed by a quick phase of ballistic saccadic eye movement that resets eyes to their primary position when they reach a maximal eccentricity (Figure 1B). In birds, the pretectal nucleus lentiformis mesencephali (nLM) is a crucial optokinetic nucleus responsible for encoding the horizontal optic flow and generating the OKN. The nLM is homologous to the nucleus of the optic tract and highly conserved across all vertebrates (Fite, 1985; McKenna and Wallman, 1985). The majority of nLM neurons prefer slow velocity and become excited by visual motion in the temporal-to-nasal direction, while other neurons are predominantly sensitive to the nasal-to-temporal, or vertical motion (Winterson and Brauth, 1985; Wylie and Frost, 1996; Fu et al., 1998; Wylie and Crowder, 2000; Cao et al., 2004; Wylie et al., 2018). Reversible inactivation or electrolytic lesions of the nLM impair generating horizontal OKN (Fite et al., 1979; Gioanni et al., 1983; Yang et al., 2008a; Yang et al., 2008b). Regarding connectivity, the nLM relays visual information from the retina directly or indirectly to the vestibular cerebellum, the oculomotor cerebellum, the thalamus, the brainstem, and other brain areas (Figure 1D). These connections are integral to the nLM\u2019s role in eye and head movements, and many other behaviors, including postural and steering control (Cao et al., 2006; Yang et al., 2008b; Wylie, 2013; Ibbotson, 2017; Wylie et al., 2018). This established circuitry and decades of work documenting these specific sensorimotor transformations the nLM performs make it an ideal candidate to study the effects of MIRS on behavioral and neuronal responses.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic drawing of neuronal activities (extracellular spikes) and behavioral performances (EOG) recording systems in awake-behaving pigeons, together with the arrangement of MIRS fiber or ES electrodes. Animals viewed grating motion in the T-N and N-T directions. (B) Raw traces of eye movements and action potentials of an example nLM while a pigeon viewing grating motion in the T-N (top traces) and N-T direction (bottom traces). Sky blue lines label time points of the onset and offset of pursuit eye movements during the slow phase of OKN. Arrow segments show the measurement of the amplitude and duration of the slow phase. An equation on the top defines pursuit eye velocity as amplitude divided by duration of pursuit eye movement. (C) The parameters of MIRS and ES used in the study. (D) The retina-nLM-cerebellum circuit involving the OKN eye movement generation in birds. nLM is a core sensory center that processes the direction and speed of visual motion in a large field and transfers these signals to the oculomotor system. The inserted plot in the gray box showed that firing responses of nLM evoked as a function of visual inputs. (E) Marked recording sites (dots) and MIRS/ES sites (gray shading) in the pretectal nLM (pink shading) across brain sections under study (from the interaural midpoint, A 5.5\u20136.0). On the right panel, the red bar presents the distance between the fiber tip and marked recording sites (n=15 pigeons, red dots). The black bar shows the depth of recorded neurons when recording electrodes were introduced laterally (n=37 neurons, black dots), as shown in A. Abbreviations are: OCb, oculomotor cerebellum; VbC, vestibular cerebellum; IO, inferior olive; nLM, the pretectal nucleus lentiformis mesencephali; EBN, excitatory burst neurons; IBN, inhibitory burst neurons; VN, vestibular nucleus; nRt, the nucleus rotundus; TeO, the optic tectum.\n\nIn this study, we applied MIRS in the pretectal nLM and studied several of its effects in awake-behaving pigeons. We found a reversible and gain regulation of pursuit velocity of OKN eye movements depending on the strength of visual inputs. Simultaneous recording of neuronal activity in the pretectal nLM and behavioral performance demonstrated that MIRS could facilitate or suppress firing activity depending on its ongoing sensory responsiveness levels. These modulations increased with the size of MIRS output power. Computational simulations suggest a candidate mechanism underlying these effects whereby MIRS preferentially enhances potassium permeability through K+channels, altering action potential generation in the nLM, which would modulate neuronal signals in brain network and guide sensorimotor responses.\n\n## Results\n\n### MIRS exerts gain modulation of pursuit depending on the strength of visual input\n\nWe introduced a large-field grating motion to pigeons and tracked their reflexive eye movements. Visual evoked OKN eye movements were recorded before, during, and after ~120 s of 10 mW MIRS applied in the left pretectal nucleus (Figure 1A and C) of 20 pigeons. In response to the temporal-to-nasal (T-N) grating motion of 8 deg/s (Figure 1B and Figure 2A top plots), they closely pursued moving gratings (Figure 2B, velocity: 4.78\u00b10.22 deg/s; Figure 2\u2014figure supplement 1, amplitude: 9.45\u00b10.65 deg; duration: 2.23\u00b10.22 s; mean \u00b1 SEM, n=20 pigeons) along the T-N direction, and then quickly saccade back to reset eye position. Once MIRS was turned on, animals significantly fasted their pursuit performance (velocity: 6.44\u00b10.38 deg/s; n=20 pigeons, p=8.86\u00d710\u20135, two-sided Wilcoxon signed-rank test), but kept similar pursuit amplitudes and durations (amplitude: 10.12\u00b10.70 deg; duration: 2.14\u00b10.22 s; p=0.15 for amplitude, p=0.31 for duration, two-sided Wilcoxon signed-rank test). Conversely, when pigeons were introduced a grating motion of 8 deg/s in the nasal-to-temporal (N-T) direction (Figure 1B and Figure 2A, bottom plots), animals tracked grating motion with far less effective pursuit eye movements than ones in the T-N direction (Figure 2B, velocity: \u20130.99\u00b10.06 deg/s; Figure 2\u2014figure supplement 1, amplitude: \u20132.45\u00b10.25 deg; duration: 2.96\u00b10.28 s). When MIRS was turned on, animals again significantly fasted their eye movements to pursue in the N-T direction (velocity: \u20131.48\u00b10.08 deg/s; n=20 pigeons, p=2.54\u00d710\u20134, two-sided Wilcoxon signed-rank test), without significant changes in pursuit amplitudes and durations (amplitude: \u20132.84\u00b10.30 deg; duration: 2.73\u00b10.25 s; p=0.07 for amplitude, p=0.06 for duration, two-sided Wilcoxon signed-rank test). There was asymmetry between the N-T and T-N OKN, which has been widely observed in lateral-eyed vertebrates (rabbits: Collewijn, 1969; pigeons: Zolotilina et al., 1995; rats: Harvey et al., 1997; mice: Kodama and du Lac, 2016). Although there were asymmetric OKN responses, MIRS significantly speeded up pursuit velocities in slow phases evoked by 8 deg/s grating motion along both T-N and N-T directions, in the individual and group animals.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig2-v1.jpg)\n\n**Figure 2.:** (A and E) Raw traces of OKN eye movements modulated by MIRS (A) and ES (E) while pigeons viewing grating motion in the T-N and N-T direction (top to bottom traces: before and during MIRS/ES in the T-N and N-T direction motion). Scale bars: 200ms, 4 deg. (B and F) Comparison of pursuit eye velocities to T-N and N-T grating motion (top and bottom plots) before, during, and after MIRS (B, n=20 pigeons) and ES (F, n=6 pigeons). (C and G) MIRS (C) and ES (G) modulated pursuit eye velocities under different grating motion stimuli (blue symbols: before stimulation; red symbols: during MIRS; yellow symbols: during ES). Two-sided Wilcoxon signed-rank test, * p<0.05, *** p<0.001. Gray lines represent data from individual animals. (D and H) Pursuit eye velocity data normalized to average values from the top 10 trials with highest peak pursuit velocities before MIRS (D) and ES (H) under different grating speeds. Error bars represent 1 SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Schematic drawings of MIRS (A) and ES (E) applied in pigeons, while animals viewing visual stimuli of grating motion at 8 deg/s in the T-N and N-T direction. (B and F) Raw EOG traces of evoked OKN eye movements in the T-N and N-T direction (from top to bottom traces) during 120 s MIRS (B) or 120 s ES (F) in example animals. Scale bars: 10 s, 4 deg. (C and G) Comparison of amplitudes of pursuit eye movements during the slow phase of OKN in the T-N and N-T grating motion (from top and bottom plots) during MIRS (C, n=20) and ES (G, n=6). (D and H) Comparison of durations of pursuit in the T-N and N-T grating motion (from top and bottom plots) during MIRS (D, n=20) and ES (H, n=6). * p<0.05, ** p<0.01, two-sided Wilcoxon signed-rank test. Error bars represent 1 SEM. Gray lines represent data from individual animals.\n\nNext, we conducted electrical stimulation experiments in 6 pigeons matching frequencies used in deep brain stimulation (Hao et al., 2015; Mann et al., 2018; Valverde et al., 2020). During the grating motion of 8 deg/s, a 120 s ES pulse train was applied similarly to our MIRS protocol (Figure 1C and Figure 2E). Unlike MIRS, ES can evoke pursuit eye movements towards the T-N direction, independent of the direction of grating motion (Figure 2F, top plot: T-N direction, before: 4.84\u00b10.12 deg/s; ES: 8.19\u00b10.42 deg/s; bottom plot: N-T direction, before: \u20130.80\u00b10.14 deg/s; ES: 2.43\u00b10.59 deg/s; n=6 pigeons, p=0.03 for both conditions, two-sided Wilcoxon signed-rank test).\n\nTo verify and explore these differences in the modulation of MIRS and ES, we further compared the effects of MIRS and ES on eye movements during the slow phase of OKN evoked by grating motion in multiple directions and speeds (Figure 2C, D, G and H). At a speed of 8 deg/s, MIRS significantly increased the component of pursuit eye velocity during the slow phase aligned with grating motion direction (Figure 2B). At a slower speed of 2 deg/s or in the absence of motion (0 deg/s), MIRS had a negligible impact on pursuit velocity (Figure 2C, 2 deg/s T-N direction: before: 1.98\u00b10.04 deg/s, MIRS: 2.08\u00b10.15 deg/s, n=16 pigeons, p=0.92; still grating: before: 0.01\u00b10.06 deg/s, MIRS: 0.10\u00b10.08 deg/s, n=11 pigeons, p=0.52; 2 deg/s N-T direction: before: \u20130.45\u00b10.07 deg/s, MIRS: \u20130.56\u00b10.08 deg/s, n=17 pigeons, p=0.12; two-sided Wilcoxon signed-rank test). The effect of ES on OKN was consistent across different visual conditions: ES deflected pursuit eye movements towards the T-N direction, regardless of directions or velocities of grating motion (Figure 2F and G, n=6 pigeons, 2 deg/s T-N direction: before: 2.10\u00b10.10 deg/s, ES: 4.54\u00b10.57 deg/s; still grating: before: 0.28\u00b10.08 deg/s, ES: 2.10\u00b10.59 deg/s; 2 deg/s N-T direction: before: \u20130.37\u00b10.13 deg/s, ES: 2.24\u00b10.49 deg/s; p=0.03 for all three visual conditions, two-sided Wilcoxon signed-rank test). To control for the possibility of an individual animal biasing our population analyses, we further examined pursuit velocity normalized to the top 10 non-stim trials with the highest pursuit velocity before MIRS/ES in each visual condition (Figure 2D and H). We compared the change of normalized data between before and during MIRS under different grating speeds. One-way ANOVA analyses revealed that gain modulation intensity of MIRS on pursuit eye movements during the slow phase depended on the strength of visual inputs (F(4,79)=6.66, p=0.0001), in a manner different than the unidirectional modulation of ES (F(4,25)=0.25, p=0.9094).\n\n### MIRS excites and inhibits neuronal responses in the same pretectal neuron\n\nTo examine the effect of MIRS on neuronal responses, we performed extracellular recording and tested 43 nLM neurons in 15/20 awake-behaving pigeons before, during, and after MIRS stimulation. Relative to their spontaneous firing rate to still grating, over half of the recorded neurons (23/43) showed an increase in firing rate to motion in the T-N direction (\u201cpreferred direction\u201d), with a decrease in the N-T direction (\"null direction\"). The other 20 cells showed the oppositive pattern of direction selectivity. All recorded nLM cells have been modulated by corollary discharge signals during saccadic eye movements: their firing rates were inhibited during saccades, confirming prior report (Yang et al., 2008a). To investigate how nLM neurons code sensory information to guide pursuit eye movements of the OKN, we aligned the spiking activity to the initial of pursuit eye movements. The following data analysis focused on an interval from 0-600ms after the onset of pursuit. There are 37/43 neurons showed significant visual response changes in pursuit when MIRS at 10 mW applied (two-sided Wilcoxon signed-rank test, p<0.01). Among these 37 neurons, we tested 33 in their preferred directions, and 24 in their null directions. We focused on these 37 pretectal neurons with significant modulation for further data analysis.\n\nFigure 3 shows an example nLM neuron that prefers the N-T motion. At a grating motion of 8 deg/s in the neuron\u2019s preferred direction (N-T), visual responses reach an average of 30.99\u00b16.84 spikes/s (mean \u00b1 SD, n1=43 pursuits). Once MIRS was turned on, there is a potentiation of the visual response in that neuron to 37.68\u00b111.35 spikes/s (Figure 3A, n2=47 pursuits, n1 vs. n2: p=0.0034, two-sided Wilcoxon rank sum test), accompanied by a faster pursuit velocity toward the N-T direction (Figure 2A). By contrast, during motion in this neuron\u2019s null direction (T-N), neuronal firing rate fell to 26.25\u00b16.73 spikes/s (n3=60 pursuits). Interestingly, the MIRS further significantly enhanced neuronal inhibition to 18.40\u00b16.87 spikes/s (Figure 3B, n4=73 pursuits, n3 vs. n4: p=6.66\u00d710\u201310, two-sided Wilcoxon rank sum test), but sped up pursuit eye movements in the T-N direction (Figure 2A). In the given example nLM neuron, the same MIRS can increase and decrease neuronal firing rates to grating motion. These oppositive modulations on neuronal responsiveness were related to its levels of visual responses in the preferred and null direction. This pattern was typical of most of the neurons we analyze below.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig3-v1.jpg)\n\n**Figure 3.:** (A and B) Representative eye movements and spiking responses to grating motion at 8 deg/s in the preferred (A) and null direction (B) of an example neuron. From top to bottom: example raw traces of EOG signals and action potential responses in a single OKN eye movement, and visual responses of the example neuron during individual OKN eye movements before, during, and after MIRS. Each horizontal colored band shows neuronal firing rates during pursuit of one OKN. Neuronal responses are color-coded with a scale on the right color bar (spikes/s). Red horizontal lines show the beginning and ending timepoints of MIRS. (C and D) Visual responses of population neurons showed the effect of MIRS in preferred (C, n=33 neurons) and null directions (D, n=24 neurons). Data points lie well above or below the dashed unity line. (E and F) Ratio of neuronal firing rates across population responses to grating motion at 8 deg/s before, during, and after MIRS in the preferred (E) and null (F) directions. Data were normalized to the mean value of visual responses in the 600ms interval after the onset of pursuit before stimulation. Error bars represent 1 SEM.\n\nWe compared each neuron\u2019s response to an 8 deg/s grating moving in their preferred and null directions before, during and after MIRS. All tested neurons had a greater firing rate during 600ms pursuit in their preferred direction (mean \u00b1 SD: 52.33\u00b126.43 spikes/s, n=33 neurons) than their null direction (mean \u00b1 SD: 33.44\u00b122.04 spikes/s, n=24 neurons) before stimulation. During MIRS, nearly all neurons showed a further potentiation of their preferred direction visual responses (Figure 3C, mean \u00b1 SD: 59.02\u00b129.59 spikes/s, n=33 neurons, p=1.76\u00d710\u20136, two-sided Wilcoxon signed-rank test), and a further inhibition in their null direction visual responses (Figure 3D, 29.16\u00b121.23 spikes/s, n=24 neurons, p=3.96\u00d710\u20134; two-sided Wilcoxon signed-rank test). We further calculated the ratio of firing rates by normalization to the mean value of visual responses in the 600ms pursuit before MIRS for individual cells, and then computed the average ratio across population as a function of time from the pursuit onset. Data showed that MIRS caused significant facilitation of neuronal excitation during the interval of 600ms of pursuit in the preferred direction (Figure 3E, n=33 neurons, before vs. during, p=1.34\u00d710\u20136, two-sided Wilcoxon signed-rank test) and enhance neuronal inhibition in the null direction (Figure 3F, n=24 neurons, before vs. during, p=1.29\u00d710\u20134; two-sided Wilcoxon signed-rank test). These bidirectional effects of MIRS occurred reversibly, which were linked with whether the nLM neuron was excited or inhibited by the sensory inputs.\n\n### MIRS effects depended on the stimulus parameters\n\nTo tease apart interactions between MIRS and visual stimulation, we jointly varied visual and infrared stimulation parameters and examined how behavioral and neuronal responses changed. We examined how the strength of sensory input, the output power of MIRS, and the duration of MIRS affected responses (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig4-v1.jpg)\n\n**Figure 4.:** The parameters included the strength of visual inputs (A), the MIRS output power (D), and the duration of MIRS irradiation (G). (A\u2013C) MIRS alters sensory coding in pretectal neurons associated with the level of visual responses. (B) The change ratio of visual responses across populations was correlated with the strength of visual inputs. (C) MIRS effects on different neuronal populations with similar evoked firing rates to grating motion at 8 deg/s in the preferred (Group 1, n=7 neurons) and null (Group 2, n=7 neurons) directions. (D\u2013F) The size of MIRS output power alters modulations on behavioral and neuronal responses. (E) MIRS modulations on pursuit eye movements in the T-N and N-T directions increased with the MIRS output power. (F) MIRS effects on neuronal responses in the preferred (n=12 neurons) and null (n=9 neurons) directions increased with the MIRS output power. Filled symbols and lines show data from individual neurons. Open symbols with black line show the average across populations. (G\u2013J) The duration of MIRS irradiation failed to modify modulations on behavioral and neuronal responses. (H) Comparison of 30 s (n=5 pigeons) and 120 s (n=20 pigeons) MIRS on pursuit eye velocities in the T-N direction. (I and J) Comparison effects on behavioral and neuronal responses in each 30 s period of 120 s MIRS irradiation. Pursuit velocity in the T-N direction (n=20 pigeons, I) and neuronal responses in the preferred (red cycles, n=33 neurons) and null (blue cycles, n=24 neurons) directions (H) failed to show significant changes across different periods. Two-sided Wilcoxon signed rank test, p>0.05. Error bars represent 1 SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** MIRS with 34.88 THz is coupled and emitted from the fiber tip. We scanned the intensity map of light spot at a test surface with a distance of 850 \u03bcm from the fiber tip, with a scanning resolution of 100 \u03bcm along x and y axis. Between any two sample points, we fitted data using the linear interpolation with a step of 10 \u03bcm. Data are presented in two-dimensional (A) and three-dimensional (B) views. The spot diameters were ~1000 \u03bcm in both x and y axis when the laser intensity was reduced to 1/e2 of the peak in our setting. (C) and (D) Modulation of pursuit eye movements during the slow phase when MIRS was applied in the optic tectum (TeO) (C, n=6 MIRS times in 3 pigeons) and the nucleus rotundus (nRt) (D, n=5 MIRS times in 3 pigeons). p>0.05, two-sided Wilcoxon signed-rank test. Error bars represent 1 SEM. Gray lines represent data from individual MIRS.\n\nFirst, we analyzed neuronal activity changes under different grating speed conditions when we applied MIRS at an output power of 10 mw (Figure 4A). We found a gradation firing rate in recorded nLM neurons by grating speed: as the grating motion increased from 2 to 8 deg/s in preferred or null (negative velocity) direction, average neuronal responses increased from ~45 to~52 spikes/s or decreased from ~40 to~33 spikes/s, consistent with the results of prior research (Cao et al., 2004). During MIRS, the increase of visual responses to the grating motion at 8 deg/s in the preferred direction was significantly larger than 2 deg/s in that direction (Figure 4B, mean \u00b1 SEM, 8 deg/s: 15.63% \u00b1 1.72% (n1=33 neurons); 2 deg/s: 5.25% \u00b1 2.92% (n2=13 neurons); n1 vs. n2 p=0.02, two-sided Wilcoxon rank sum test). Similarly, the decrease of visual activity to the 8 deg/s grating motion in the null direction was also significantly larger than 2 deg/s in the same direction (2 deg/s: \u20139.26% \u00b1 2.66% (n3=11 neurons); 8 deg/s: \u201317.53% \u00b1 2.75% (n4=24 neurons); n1 vs. n3, p=2.10\u00d710\u20136; n1 vs. n4, p=5.70\u00d710\u201310; two-sided Wilcoxon rank sum test). The percentage change of visual responses during MIRS was correlated with the grating motion condition for individual neurons (Figure 4B, each gray line presents an individual neuron).\n\nNeurons in nLM can fire at different levels of spontaneous activities and evoke different visual responses based on the strength of sensory information. The MIRS effects on neuronal activity might relate to the ongoing neuronal firing rate (for example, the MIRS might enhance neurons\u2019 activities in the same way when these neurons fired at similar high frequencies by excitatory or inhibitory inputs). To confirm that the MIRS effect is indeed a manner of sensory inputs dependent, we have measured the effects under two well-controlled conditions. First, we checked the modulation while animals viewing still grating. nLM neurons fire at different \u2018spontaneous\u2019 firing rates without any excitation or inhibition by visual inputs of grating motion. During MIRS, these neuronal activities to still grating failed to show any significant changes (Figure 4B, mean \u00b1 SEM, \u20134.15% \u00b1 3.87%, n=6 neurons, p=0.37, two-sided Wilcoxon rank sum test,). Second, we confirmed this was true for the subset of cells with similar evoked firing rates preceding MIRS but to grating motion in the preferred or null direction (Figure 4C). Group 1 preferred nLM cells reached a mean firing rate of 28.17\u00b11.47 spike/s (mean \u00b1 SEM, n=7 neurons) during grating motion in their preferred direction. Group 2 null nLM cells reached a mean firing rate of 27.67\u00b11.47 spike/s (n=7 neurons) for motion in their null direction. The firing rate range in each group was not statistically different from one another (p=0.80, two-sided Wilcoxon rank sum test), varying from ~22 to~36 spikes/s. When we compared MIRS effects on both groups, preferred cells showed a larger evoked response (p=0.02, two-sided Wilcoxon signed-rank test), while null cells showed more significant inhibition (p=0.02, two-sided Wilcoxon signed-rank test). These results have consistently supported that MIRS exerts gain modulation of neuronal signals, in a manner that is itself sensory responses dependent.\n\nNext, we varied MIRS output power and examined its influence on pursuit velocity and nLM visual firing rates while the same grating motion was introduced to animals (Figure 4D). In response to the grating motion, pursuit eye velocities (Figure 4E, 10 pigeons) and neuronal responses (Figure 4F, 12 nLM neurons in 5 pigeons) scaled with MIRS output powers. When MIRS at a higher power applied, the percentage changes of pursuit eye velocity in the T-N and N-T direction were larger than ones when a lower power MIRS used (Figure 4E, red opened cycles for T-N direction: 41.32 \u00b1 9.50% for 20 mW, 39.97 \u00b1 9.98% for 10 mW, 17.81 \u00b1 8.39% for 5 mW, and 8.68 \u00b1 9.12% for 2.5 mW, mean \u00b1 SEM, n=19 MIRS times in 10 animals; blue opened cycles for N-T direction: 29.03 \u00b1 11.68% for 20 mW, 29.53 \u00b1 16.49% for 10 mW, 8.51 \u00b1 16.59% for 5 mW, and 3.77 \u00b1 9.42% for 2.5 mW, n=17 MIRS times in 10 animals). Although there were no significant changes in pursuit eye velocities between MIRS of 5 mW and a higher power of 10 or 20 mW (n=36 MIRS times in both directions in 10 pigeons, p=0.1620 for 5 vs. 10 mW or p=0.0573 for 5 vs. 20 mW, two-sided Wilcoxon signed rank test), the effects were significantly increased between MIRS of 2.5 mW and 10 or 20 mW (n=36 MIRS times, p=0.0057 for 2.5 vs. 10 mW or p=0.0022 for 2.5 vs. 20 mW, two-sided Wilcoxon signed rank test). A one-way ANOVA analysis further confirmed that the MIRS output power can effectively modify effects on eye movements in both the T-N and N-T directions at the p<0.05 for the four output powers (F(3, 140)=3.4, p=0.0196). Meanwhile, in 12 nLM cells, we simultaneously recorded neuronal responses to grating motion at multiple output power levels (Figure 4F). Among them, we tested nine neurons in their preferred and null directions, and three additional neurons in only their preferred direction. When a higher power of 20 and 10 mW MIRS applied, neuronal responses were increased by 20.91 \u00b1 2.78% for 20 mW and 17.92 \u00b1 2.89% for 10 mW in the preferred direction (red dots and lines in Figure 4F, mean \u00b1 SEM, n=12 neurons) and decreased by 19.80 \u00b1 3.10% for 20 mW and 14.66 \u00b1 1.92% for 10 mW (blue dots and lines in Figure 4F, n=9 neurons). These modulations were significantly larger than changes of neuronal firing when a lower power of 5 and 2.5 mW MIRS used (the preferred direction: 8.21 \u00b1 2.68% for 5 mW, and 8.61 \u00b1 3.08% for 2.5 mW; the null direction: 6.75 \u00b1 1.39% for 5 mW, and 10.62 \u00b1 2.74% for 2.5 mW) (n=21 in the preferred and null directions, 5 vs. 20 mW: p=9.22\u00d710\u20135, 2.5 vs. 20 mW: p=0.0026; 5 vs. 10 mW: p=7.02\u00d710\u20134, 2.5 vs. 10 mW: p=0.0143, two-sided Wilcoxon signed-rank test). Like behavioral responses, MIRS power had a significant effect on evoked responses of the recorded nLM cells to grating motion stimuli (One-way ANOVA, F(3,80)=7.92, p=0.0001).\n\nTo probe the effect of stimulation duration, we compared the influence of MIRS with 10 mW output power applied for 30 s vs. 120 s during 8 deg/s grating motion (Figure 4G). The evoked pursuit velocity did not vary substantially as a function of MIRS duration (Figure 4H, n30s=5 MIRS times, n120s=20 MIRS times, p=0.8651, two-sided Wilcoxon rank sum test). When we divided the 120 s duration condition into 4 sequential 30-s segments (Figure 4I and J), we again found that duration was not associated with a significant difference in eye velocity (n=20 MIRS times, One-way ANOVA, F(3,76)=0.08, p=0.9698) or nLM firing rates (the preferred direction: F(3,128)=1.18, p=0.3191; the null direction: F(3,92)=0.26, p=0.8563, One-way ANOVA). Thus, the effect of MIRS was established in the first 30 s of stimulation and remained constant for 120 s.\n\nIn our study, the laser is coupled and emitted from optical fiber of 600 \u03bcm. The light spot diameter at a working distance of 850 \u03bcm (mean distance between fiber tip and recorded neurons, Figure 1E) can be about 1000 \u03bcm (Figure 4\u2014figure supplement 1A and B). Thus the laser could have a good chance to irradiate the pretectal nLM with a width of ~1000 \u03bcm (Figure 1E). To further test the spatial specificity of MIRS, we measured the effect on eye movements when MIRS applied in other brain regions. We introduced the optical fiber to two adjacent visual nuclei located next to the nLM (Figure 1E), the optic tectum (TeO) and the thalamic nucleus rotundus (nRt), which are homologous to the superior colliculus and the pulvinar in mammals, respectively. The TeO is a principal destination of retinal ganglion axons and projects to the telencephalic entopallium via the nRt. The ascending tectofugal pathway is considered homologous to the colliculo-pulvinar-cortical pathway in mammals (Benowitz and Karten, 1976; Wang and Frost, 1992; Hellmann and G\u00fcnt\u00fcrk\u00fcn, 2001; Reiner et al., 2004). Both nuclei are involved in visual information processing in birds, but not crucial for OKN generation. We run the same protocol as the main experiment, an 8 deg/s grating motion in the T-N direction and a 10 mW MIRS for 120 s. There were no significant changes in pursuit velocities during MIRS once the fiber applied in the OKN-irrelevant nuclei (Figure 4\u2014figure supplement 1C and D, TeO: n=6 MIRS times in 3 pigeons, p=0.31; nRt: n=5 MIRS times in 3 pigeons, p=0.63; two-sided Wilcoxon signed-rank test).\n\n### MIRS preferentially regulates the permeation of K+ channels\n\nTo explore the potential molecular mechanism underlying the gain modulation of neuronal responses by MIRS, we constructed models of voltage-gated K+ and Na+ channel subtypes. Recently, models of biomimetic channels have been widely used to investigate the translocation events of K+ and Na+ ions through ion channels (Long et al., 2005; Zhang et al., 2012). In our model (Figure 5\u2014figure supplement 1), we constructed K+ channels containing the whole protein embedded in the middle of the phospholipid bilayer (DPPC molecules) to separate water and ions on each side. We defined the absorption spectrum of ion channels to MIRS based on the classical molecular dynamics (MD) method. The MD simulation showed two remarkable absorption fingerprint peaks of K+ channels located between 33\u201337 THz, and 50\u201355 THz (Figure 5A). Both fingerprint peaks are just out of the strong absorption spectral ranges of both water molecules (Heyden et al., 2010) and Na+ channels. The second absorption frequency of ~53 THz is consistent with prior research and well-studied (Liu et al., 2021). Note that the 34.88 THz simulation frequency we used in the initial results is closed to the maximum of the first peak of the K+ channels absorption spectrum, at least within half-height width of the fingerprint peak of 33\u201337 THz.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig5-v1.jpg)\n\n**Figure 5.:** (A) Absorption spectra of K+and Na+ channels calculated using a molecular dynamics simulation. The vertical dashed line indicates MIRS with a frequency of 34.88 THz used in this study. (B, C) The potential of mean force (PMF) of K+and Na+ions permeate through ion channels before and during MIRS with a frequency of 34.88 THz, under field strengths varied from 0 to 2.5 V/nm (black and colored lines), respectively. (D) The PMF ratio of K+ channels increased by 1.15\u20131.4 folds at the exit site around \u03be=1.1 nm when the field strength increased from 1.0 to 2.5 V/nm. (E) The ratio of Na+ channels was kept closely to 1 at the exit site around \u03be=0.5 nm under different field strengths.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** In our models, we constructed channels containing the whole protein placed at the middle of phospholipid bilayer to separate water and ions on each side. There are 12 sodium, 12 potassium and 20 chloride ions for K+ channels, and 14 sodium, 14 potassium and 24 chloride ions for Na+ channels, respectively. Both the water thickness of K+ and Na+ channels are ~0.3 nm. (A) The K+ channel (PDB ID: 2a79) contains 10,294 atoms, including 2,725 TIP3P water molecules, 12 K+ and 20 Cl- ions, thus the concentration of a salt solution is 0.15 M. The protein has four negative charges, the addition of four counterbalance ions ensures that the whole system is electrically neutral. The size of the PBC box is 5.04 nm \u00d7 5.16 nm\u00d76.25 nm. (B) The Na+ channel (PDB ID: 4dxw) contains 14,922 atoms, including 4,067 water molecules, 14 Na+ and 24 Cl- ions, thus the concentration of a salt solution is 0.15 M. Similarly, the addition of four counterbalance ions also ensures that the whole system is electrically neutral. The size of the PBC box is 5.40 nm \u00d7 5.40 nm\u00d77.30 nm. The purple atom represents K+, the yellow atom represents Na+, and the gray atom represents Cl-. The TIP3P water molecule is displayed in the format of a red ball stick. Green strips show K+ and Na+ channels, red stripes show \u2212C=O groups located at the inner wall of the filter region, blue stripes show -OH- groups of the filter, and light gray lines show a phospholipid bilayer, respectively.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A and B) Calculations on the eigen-mode frequencies of \u2013C=O groups for K+ channels, and \u2013C=O, \u2013OH\u2212 groups for Na+ channels. The filter structures extracted from the model of K+ channels (PDB ID: 2a79) contained 284 atoms (A), and Na+ channels (PDB ID: 4dxw) contained 96 atoms (B). (C) The intrinsic spectrum was calculated by using Gaussian 09 code based on the density functional theory (DFT) methods at B3LYP/6-31G(d) level.\n\nThe protein structures of K+ and Na+ channels were tetramers, consisting of four chains and a narrow pore region (i.e. selectivity filter), that plays a decisive role in the permeation efficiency of K+ and Na+ ions. Using quantum chemistry calculations, we simplified the ion channel structure into a filter model. We further identified the specific absorption modes of ion channels during MIRS according to the filter structure extracted from the K+ and Na+ channels model. We calculated the intrinsic spectrum using Gaussian 09 code (Frisch and Trucks, 2009) based on density functional theory (DFT) at employing the B3LYP method and the 6-31G(d) basis set. We note that the absorption fingerprint peak of \u2212OH\u2212 groups at the filter region of Na+ channels are distant from ~34.88 THz (Figure 5\u2014figure supplement 2), indicating that MIRS was mainly absorbed by \u2212C=O groups at the inner wall of the filter region of K+ channels. Therefore, the low-frequency oscillation mode corresponding to MIRS with 34.88 THz could involve almost all the \u2212C=O groups (similar to \u2212C=O N-H) in the filter structure vibrating in an in-plane bending manner (Figure 5A). These data demonstrated that the effect of MIRS with 34.88 THz could enhance the resonance absorption of K+ channels. While \u2212C=O groups at the inner wall of K+ channels are frequency sensitive due to their collective resonance, these effects seldom occur in Na+ channels or water molecules.\n\nIn response to a stimulus, the transfer of sodium ions through Na+ channels and potassium ions through K+ channels generates action potentials. To quantify the modulation of neuronal activity by MIRS, we computed the potential of mean force (PMF) as the change of free energy during ion permeability (Bern\u00e8che and Roux, 2001; Li et al., 2021). Action potentials are generated and released in milliseconds, with approximately ~107 ions permeating across the membrane. These ions are passed sequentially through the filter region. Thus, the ion permeation can be studied on the level of single one (Kopec et al., 2018). Here we have simulated the permeability of a single ion, with an average permeation time on the order of nanosecond (Kopec et al., 2018) and different MIRS field strengths from 0~2.5 V/nm (Zhu et al., 2020; Liu et al., 2021). We used a steered molecular dynamics (SMD) method (Abraham et al., 2015) to analyze the ion permeation process. The PMF was sampled along the corresponding path and could reflect the permeation potential of individual ions along the filter region of ion channels (Bern\u00e8che and Roux, 2001; K\u00f6pfer et al., 2014). Our simulations suggest free energy changes between the entrance and the exit of the selectivity filter for both K+ channels and Na+ channels prior to MIRS (black lines in Figure 5B and C). It implied that potassium and sodium ions can permeate the selectivity filter with comparable energetic potential. The MD simulation with different field strengths showed that the potential energy changes of potassium ions through the filter became enlarged dramatically during MIRS (red lines in Figure 5B), while the energy of sodium ions only changed slightly through the filter configuration of Na+ channels (blue lines in Figure 5C). To statically characterize the effect on ion permeability by MIRS, we defined a PMF ratio of \u0394PMIRS/\u0394PBefore (\u0394PBefore and \u0394PMIRS represent before and during MIRS, respectively) for both sodium and potassium ions. In the simulation, MIRS increased the PMF ratio of potassium ions by 1.15\u20131.4 folds at the exit site of K+ channels around \u03be=1.1 nm when the field strength increased from 1.0 to 2.5 V/nm (Figure 5D). At the same time, the ratio of Na+ channels stayed near 1 at the exit site around \u03be=0.5 nm under different field strengths (Figure 5E). Together, our simulations demonstrate a mechanism by which the K+ permeability can be selectively enhanced during MIRS with 34.88 THz. Increasing MIRS output power proportionally improves the efficiency of K+ permeability, in a manner that only weakly modulates Na+ channels. This enhancement of potassium permeability through K+ channels will then lead to the changes in neuronal responses we document extensively above.\n\n## Discussion\n\nOur study provides evidence that MIRS can cause reversible and gain modulation on neuronal activity and sensorimotor behavior, by simultaneously recording neuronal and behavioral responses in awaking-behaving pigeons (Figure 6). The question of how MIRS modulates neuronal and behavioral responses were revealed in the greatest detail by directly controlling the strength of sensory input/neuronal visual activity in our study. The effect of MIRS depended on the level of ongoing firing rates evoked by the direction and speed of visual motion, the MIRS output power, but not by the duration of MIRS. Computational simulations suggest a mechanism by which MIRS enhances K+ permeance through the selectivity filter of potassium channels (Figures 5 and 6B) and causes the observed differences in neuronal responses. These findings suggest that MIRS with 34.88 THz could be an useful approach to modulate the neural circuits and motor responses in a sensory input-dependent manner.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig6-v1.jpg)\n\n**Figure 6.:** (A) MIRS produces gain modulations on visual responses in the same nLM neuron. (B) MIRS preferentially regulates the permeation of K+ channels instead of Na+ channels. (C) MIRS exerts multiplicative gain modulations on neuronal responses to sensory and behavior performance, suggested by our experimental data. Blue and red lines present neuronal and behavioral responses before and during MIRS. (D) ES could exert additive modulations on neuronal firing and cause unidirectional deflections in behaviour in our results. Blue and yellow lines present neuronal and behavioral responses before and during ES. Dashed lines present the possible changes in neuronal firing by ES suggested by prior research. (E) Summary of different effects of MIRS and ES on sensorimotor transformation: gain modulation by MIRS and additive modulation by ES.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78729/elife-78729-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A and E) average waveforms of action potentials from an example pretectal neuron before, during and after MIRS to grating motion at 8 deg/s in its preferred (A) and null (E) direction. (B and F) Distributions of the full width at half maximum (FWHM) and the duration of spikes\u2019 negative phases (Spike duration) of the example pretectal neuron\u2019s action potentials (*** p<0.001, two-sided Wilcoxon rank sum test). (C, D, G, and H) Statical summarization of the FWHM and the Spike duration across population neurons in the preferred (C and D, n=28 neurons) and null direction (G and H, n=18 neurons). To reduce the influence of recording noises on the definition of duration, we analyzed neurons with a higher signal-to-noise ratio above 4:1 in recording. * p<0.05, ** p<0.01, *** p<0.001, two-sided Wilcoxon signed-rank test. Error bars represent 1 SEM.\n\nWe report that pursuit eye velocity during the slow phase of OKN covaries with the velocity of visual motion. We found that MIRS applied in nLM induced multiplicative gain modulations on pursuit eye movements based on the speed of visual motion (Figure 6C). MIRS can significantly speed up pursuit eye movements during the slow phase induced by a faster visual grating motion, but failed to significantly modulate pursuit when OKN was evoked by a slower visual grating motion. Note that if the grating was still (0 deg/s), pigeons only made spontaneous saccadic eye movements to search surrounding without any slow pursuit eye movements. Under this visual condition, MIRS failed to initiate any pursuit-like eye movements in any directions. In contrast to MIRS, ES in the nLM caused a unidirectional defection of pursuit eye movements of OKN toward the T-N direction, independent of direction of grating motion (Figure 6D). Comparing behavioral evidence from MIRS and ES, we found that MIRS could induce gain modulations to regulate oculomotor behavior depending on the strength of sensory inputs.\n\nBrain is constantly performing complex computations to encode sensory information and guide the behavioral performances. A nonlinear, multiplicative calculation by a single neuron could greatly enhance the computational power to process multiple incoming signals in the neuronal system (Pe\u00f1a and Konishi, 2001; Gabbiani et al., 2002; Zhou et al., 2007; Groschner et al., 2022). Our results showed that MIRS can cause reversible and multiplicative modulations on neuronal discharges depending on the ongoing levels of visual responses or the strength of sensory inputs (Figure 4B and Figure 6C). Consistent with prior reports, all recorded nLM neurons in this study showed tuning curves for the velocity of grating motion. Once the grating moved from a lower speed of 2 deg/s to a higher speed of 8 deg/s in both preferred and null directions, pretectal neurons could fire at different visual responsiveness levels, emitting neuronal discharges into low or high frequencies. MIRS can further inhibit or excite neuronal firing rates that occurred in the same neuron in a manner of its level of visual responses, respectively. Meanwhile, when animals viewed a given grating motion, the same MIRS could facilitate neuronal activity in one nLM neuron and suppress firing rates in the other neuron in a manner that the grating motion excited or inhibited neuronal discharges of that cell (Figure 4C). Therefore, MIRS can implement multiplication-like modulations on individual neurons in a sensory input-dependent manner.\n\nA traditional explanation of these findings is that the MIRS could cause local thermal heat by water absorption, which changes capacitance of the transmembrane to excite cells (Shapiro et al., 2012), or activate thermosensitive TRPV channels to depolarize cells (Albert et al., 2012). By contrast, experimental evidence in vitro demonstrates that MIRS does not have a thermally mediated effect on ion channels and neuronal functions, especially when the distance was greater than 300 \u03bcm (Liu et al., 2021). MIRS could cause local thermal heat in our study. Meanwhile our evidence from behavioral and neurophysiological results is inconsistent with the thermal mechanism for several reasons. First, in our experiments, the distance between the MIRS fiber tip and recording sites was 848\u00b1351 \u00b5m (mean \u00b1 SD, Figure 1E), limiting thermal changes within a range of 2 \u00b0C (Tan et al., 2022). The MIRS effects on behavioral and neuronal responses were revisable after MIRS in our observations. Thus, it could be small chance that the limited thermal change during 120 s MIRS irradiation causes thermal damages in brain tissues. Second, MIRS\u2019s modulation of pursuit eye movements during the slow phase depends on the sensory inputs, which is not consistent with the thermal effect. If a mechanism of local thermal heat solely mediated the effect of MIRS, the gain of pursuit should be grating speed independent, contrary to our findings. Similarly, visual responses of the same recorded neuron could be excited or inhibited by MIRS depending on the direction of grating motion, and this enhancement of response scaled with the speed of grating motion. In summary, these findings suggest that thermally induced neuronal activity changes or vasodilation are insufficient to account for the results reported here.\n\nThe multiformity of ionic channels allows neurons to encode and transfer information by generating action potentials with a wide range of shapes, patterns and frequencies. This process must involve complex interactions with ion channels. Recent research in brain slice found that MIRS\u2019s multiplicative modulations of the action potential generation depended on the strength of current pules in vitro, and an increase in K+currents (not Na+currents) could lead to gain modulation (Liu et al., 2021). Consistent with previous reports, our ion channel simulations indicated that MIRS could cause the carbonyl group (-C=O) enriched on the K+channel selectivity filter to resonate, thereby decreasing membrane input resistance and increasing potassium ion flow. This mechanism may account for the modulation of neuronal responses to sensory inputs in vivo (Figure 6B). Potassium channels commonly play a significant part in membrane repolarization following action potentials. The increased potassium ion flow by MIRS could cause a faster and/or earlier repolarization and lead to a shortened action potential duration (Figure 6\u2014figure supplement 1, p<0.05, two-sided Wilcoxon signed-rank test; Liu et al., 2021) and an enlarged afterhyperpolarization. As a result, stimuli that more strongly drive a neuron (i.e. motion in the preferred direction in our case) might cause faster recovery from the inactivation of sodium channels (Bean, 2007) and the prior action potential\u2019s refractory period. Then the neuron can be facilitated to initiate a subsequent action potential, resulting in higher firing rates. With stimuli that weakly drive or inhibit the neuron (i.e. motion in the null direction), the raising K+permeability might hinder the depolarization and retard the threshold potential of a subsequent action potential, resulting in lower firing rates. Although our computational simulations do not simulate every stage, from ion channel dynamics to the generation of action potentials, our data are consistent with an ionic mechanism underlying MIRS: MIRS could preferentially modify permeation of K+channels, leading to alternations of action potential generation in a manner of ongoing firing levels depended on sensory inputs.\n\nContrary to the unidirectional behavioural and neuronal effects of electrical stimulation (Figure 6D), MIRS causes a sensory-specific gain modulation in visual responses of the same neuron and behavioral performance (Figure 6C and E). Unlike the optogenetic stimulation that would require the delivery of the transgenes encoding the light-responsive proteins, MIRS can selectively activate or inhibit neuronal responses by controlling the strength of sensory inputs in an individual or population cells, without genetic manipulation. These findings suggest that MIRS could be used as a promising neuromodulation approach to excite and inhibit neuronal firing in the brain. There is the potential that MIRS could work for other higher cognitive functions. Recent research showed that MIRS could accelerate associative learning (Zhang et al., 2021) by stimulating the auditory cortex through opened or thinned intact skulls. At present, however, it is easier to interpret MIRS stimulation in sensory systems, where we have greater control over stimuli. Thus, methods to interpret MIRS applied to the associative areas serving higher cognitive functions are an appealing topic for future research. We hope that the presented details of MIRS effects on a simple sensorimotor transformation may lead to principles of MIRS that apply in other systems in the brain.\n\n## Methods\n\n### Animal preparation\n\nWe conducted experiments on 32 awake, behaving adult pigeons of either sex (Columba livia, body weight: 300\u2013500 g). We randomly chose 20 animals among them for MIRS experiments and combined stimulation with recording in the pretectal nLM of 15/20. We randomly used six animals for electrical stimulation in the nLM experiments, and the left six animals for MIRS in the optic tectum (TeO) and the thalamic nucleus rotundus (nRt) experiments. We anesthetized each pigeon with an injection of ketamine (40 mg/kg) and xylazine (5 mg/kg) into the pectoral muscles. The anesthetic depth was assessed by breathing patterns and the toe pinch reflex (Yang et al., 2008a; Yang et al., 2008b; Yang et al., 2017). After placing the pigeon in a stereotaxic apparatus, we made an incision in its scalp and cemented a lightweight steel holder to the skull to provide head restraint in experiments. Based on the stereotaxic coordinates of the pigeon brain (Karten and Hodos, 1967), a recording window over the left tectum, and a stimulation window over the left caudal forebrain were surgically exposed by a dental drill. The overlying dura mater was untouched. After exposing these sites, we stitched the scalp over the window, treating wound sites with erythromycin ointment. Pigeons were returned to their home cages for recovery from anesthesia and received ibuprofen as an analgesic (20 mg/kg) for postoperative pain for several days after surgery. Within ~12 hr, pigeons\u2019 walking, pecking, and drinking behaviors had returned to normal. On an experimental day, we lightly anesthetized the pigeon with ketamine (4 mg/kg), wrapped it in a bag and, placed it on a foam couch. The head was stabilized to the stereotax using a rod connected to head holder. The wound edge and muscles were periodically infiltrated with lidocaine. The pigeon adapted to the restraint and sat unruffled on the couch. The left eye was covered, and the right eye was held open to visual stimuli during recordings, otherwise, its lid was allowed to move freely. Procedures followed with the guidelines for the care and use of animals established by the Society for Neuroscience and approved by the Institutional Animal Administration Committee at the Institute of Biophysics, Chinese Academy of Sciences.\n\n### Visual conditions\n\nWe programmed and presented the visual stimulus in this experiment, a full-field square wave grating with a spatial frequency of 0.16 cycles/deg, using Matlab (Mathworks Inc, Matlab R2016b). The horizontal and vertical meridians of the visual field were rotated by 38\u00b0 (Britto et al., 1990; Fu et al., 1998) to match pigeons\u2019 normal viewing conditions (Erichsen et al., 1989). The visual stimulation was projected onto a large screen (130\u00d7140\u00b0) placed 40 cm away from the viewing eye by a projector (EPSON, CB-535W). The luminance of black and white stripes of grating was 0.1 and 6.6\u00a0cd/m2. Animals produced spontaneous saccades when they viewed stationary gratings (0 deg/s) and OKN when they viewed moving gratings. In the experiments, the grating moved at 2 deg/s and 8 deg/s in the T-N and N-T directions to elicit OKN (Gioanni et al., 1983; Yang et al., 2008b).\n\n### Mid-infrared stimulation and electrical stimulation\n\nWe applied MIRS using a quantum cascade mid-infrared laser (QCL, Institute of Semiconductors, Chinese Academy of Sciences) with a constant radiation wavelength of 8.6 \u03bcm, and frequency of 34.88 THz. The beam was collimated and matched with an infrared fiber coupling (polycrystalline Infra-Red fiber code: PIR600/700; core diameters: 600\u00b115 \u03bcm; wavelength range: 3\u201317 \u03bcm; numerical aperture (NA): 0.35\u00b10.05; type: multimode step index; temperature range was \u201350 to +80 \u00b0C). The pulse train of MIRS lasted 30 or 120 seconds with a pulse width of 2 \u03bcs, a repetition frequency of 200 kHz, and a duty cycle of 40% (Figure 1C). For MIRS experiments in the study, the average output power at the tip of fiber was 2.5, 5, 10, or 20 mW. The stability of output power over 120 s was better than \u00b10.5%, as measured by a MIR detector (NOVA II-3A, Ophir, Israel). We also measured profiles of the light spot when the mid-infrared laser passed through the coupler and optical fiber, and travelled 850 \u03bcm distance to the test surface. We used the MIR detector covered by a tinfoil with a 100 \u03bcm diameter hole to scan the intensity of the light, with a scanning resolution of 100 \u03bcm (Figure 4\u2014figure supplement 1A and B). The spot diameter was ~1000 \u03bcm when the laser light intensity was reduced to 1/e2 of the peak in our setting. In most experiments, the fiber was inserted vertically through the window over the caudal forebrain to reach the left pretectal nLM (Figure 1A and E, from the interaural midpoint, A 5.75 mm; L 4.0 mm; H 5.5\u20136.0 mm). As a control, the fiber was introduced vertically through the forebrain window to reach the left TeO (Figure 1E and A, 6.0 mm; L 5.0 mm; H 5.5\u20136.0 mm), and the left nRt (Figure 1E and A, 6.0 mm; L 3.0 mm; H 6.5\u20137.0 mm) in six pigeons. There were ~2- to 10-min intervals between any two MIRS to allow recovery from the prior stimulation.\n\nElectrical stimulation was generated using an isolated pulse stimulator (A-M Systems, model 2100) and applied for 120 s in the pretectal nLM, with parameters of 0.2 mA, 100 \u03bcs pulse width, 133 Hz (Hao et al., 2015; Mann et al., 2018; Elias et al., 2021; Valverde et al., 2020). The stimulation electrodes were glass-insulated tungsten bipolar electrodes with an exposed tip of 60 \u00b5m and a distance of 400\u2013500 \u00b5m between the two tips (Figure 1C). The electrodes were advanced into the nLM following the same method as optical fibers in the MIRS (Figure 1A), with their poles in a mediolateral arrangement between L 3.5 mm to 4.5 mm.\n\n### Data acquisition\n\n#### Electrooculogram recording (EOG)\n\nEye movements were recorded by an electrooculogram system (Wohlschl\u00e4ger et al., 1993; Yang et al., 2008a; Yang et al., 2008b). We inserted two EOG electrodes into the right orbital arch\u2019s anterior and posterior regions and placed a third electrode in the occipital bone as a reference. Eye position change signals were sampled at 2.5 kHz and stored simultaneously for off-line analysis together with the neuronal spike recordings (Cambridge electronic design limited, CED, power 1401). We smoothed EOG signals with a low-pass filter at a 5 Hz, and differentiated the signal to estimate eye velocity. For calibration purposes, we also imaged eye movements using an infrared video camera simultaneously with EOG recording (Niu et al., 2006; Yang et al., 2008a; Yang et al., 2008b). We defined the EOG electrode in the anterior region of right eye as the positive pole (nasal side), and the electrode in the posterior region as negative pole (temporal side). So the amplitude and velocity of eye movements, and the velocity of grating motion stimuli were represented as positive values in the T-N direction and negative for the N-T direction.\n\n#### Extracellular recording\n\nWe used homemade glass-insulated tungsten microelectrodes with an impedance of 1\u20133 M\u2126 for single-cell recording and electrolytic marking of recording sites (Gioanni et al., 1983; Yang et al., 2008b). To record the pretectal neurons in the MIRS light path, we placed the electrode laterally into the left tectum to target the nLM (from the interaural midpoint, A 5.5\u20136.0 mm, L, 4.0 mm; H, 5.5\u20136.0 mm). The depth range of recorded neurons was between 2.42 and 4.08 \u2009mm. The distance between recording microelectrodes and fiber tips was about 848\u00b1351 \u00b5m (mean \u00b1 SD, n=15, Figure 1E). Extracellular action potentials were filtered using a bandpass filter of 300 Hz to 5 kHz (A-M Systems, Model 1800), and recordings were digitized at 25 kHz (CED, Power 1401 Cambridge electronic design limited). Spike sorting was performed offline (Spike2, Cambridge electronic design limited). Neurons in nLM had high levels of spontaneous activity, and were selective for the direction and velocity of grating motion. Based on this selectivity, we assigned a preferred and null direction to each cell.\n\nAt the end of each experiment, recording sites were marked by an electrolytic lesion (positive current of 30\u201340 \u00b5A for 20\u201330 s), and the animals were given a lethal dose of urethane (4 g/kg). The brain was extracted, postfixed for 24 hr (4% paraformaldehyde with 30% sucrose), immersed in 30% sucrose, and kept at 4 \u00b0C for 48 hr before being cut into 50 \u03bcm sections through the pretectum (Thermo Scientific Cryotome E). Using a standard light microscope, we reconstructed lesions, fiber tracts, and electrode tracts and verified that all recording sites were confined to the nLM (Figure 1E).\n\n### Data analysis\n\nFor most of this study, we analyzed MIRS effects on the average eye movement velocity and firing rate in the 600ms interval following the onset of pursuit eye movements during the slow phase of OKN. The interval choice ensures that our measures are related to the visual response to grating motion during the slow phase of OKN. The onset and offset of the slow phase were determined by custom Matlab code (Source code 1) that detected the characteristic ~26 Hz oscillations in avian saccadic eye movements and then manually rechecked (Figure 1B). The amplitude and duration of the slow phase were measured from eye traces between the onset and offset of pursuit. Then the pursuit eye velocity during the slow phase was defined as amplitude divided by the duration of the slow phase in each OKN. We excluded trials where the slow phase was shorter than 600ms, although this was a negligible fraction of the tested conditions. Neuronal activities were collected before, during and after MIRS for about 120 s, aligned to the onset of pursuit, and smoothed by a Gaussian Kernel filter with an h value of 25ms. For each neuron, we computed average firing rate as a function of the 600 ms slow phase time (Figure 3), and compared its visual responses before and during MIRS. When firing rates were significantly increased or decreased through the slow phase of 600 ms during MIRS (p<0.01, n=600 ms, two-sided Wilcoxon signed-rank test), we reported neuronal firing of that neuron to be significantly facilitated or suppressed by MIRS.\n\nUnless otherwise specified, if the data are paired, behavioral and neuronal responses were tested by a two-sided Wilcoxon signed-rank test. If they are two independent observations, an independent Wilcoxon rank sum test was used to compare data. Differences with p<0.05 were considered significant.\n\n### Molecular dynamics simulation\n\nThe simulation was carried out to understand the power of ions permeation, and aimed to compare the permeability of K+ and Na+ ions during MIRS at nano-scale spatial and femto-second time resolution. The analyses were based on the eukaryotic model of voltage-gated K+ channels (PDB ID: 2a79; Long et al., 2005) and Na+ channels (PDB ID: 4dxw; Zhang et al., 2012), respectively. Our simulations used the force field of Charmm 36 and periodic boundary conditions (Mackerell and Nilsson, 2008). The connection element algorithm Ewald was used to deal with the electrostatic interaction (Leeuw et al., 1980). The Velocity-Verlet algorithm (Andersen, 1983) was performed to solve the motion equation, with the time step of 2 fs. All bond lengths were limited by the Lincs algorithm (Swope et al., 1982). In particular, for K+ channels, the truncation of Lennard-Jones interaction and the real space part of Ewald sum were 1.90 nm, the convergence factor of Ewald sum was 1.65 nm, and the radius of K-space section was 10.4 nm. Meanwhile, for Na+ channels, the truncation of Lennard-Jones interaction and the real space part of Ewald sum were 1.623 nm, Ewald and convergence factors were 1.65 nm, and the radius of K-space section was 10.4 nm. The process of the ion permeation events was divided into two stages according to before and during MIRS. First, the simulation system experiences temperature equilibration and pressure equilibration at 300 K room temperature to fully solvate mobile water and lipids around the protein to obtain the dynamical stable state. Then, we carried out a SMD process of ~1.5 ns for the K+ ions permeation through the filter of K+ channels, and ~0.75 ns of Na+ ions permeation through the filter of Na+ channels. We fixed the phospholipid bilayer and protein (except the filter region of K+ and Na+ channels) in the system to research the process of ion permeation through the filter region under the NVT ensemble. To combine effects of the electromagnetic wave on the ion channel, MIRS with frequency of 34.88 THz was added into the whole simulation system (Wu et al., 2020). The intensity ratio of the electromagnetic component of an electromagnetic wave is equal to the speed of light. In the formula:\n\n$$\nE(t)=A\u2217u\u2217cos(\\omegat+\\phi)\n$$\n\nwhere A represented the amplitude of the electric field strength to generate the electromagnetic wave, varying from 0 to 2.5 V/nm in our simulations (Zhu et al., 2020; Liu et al., 2021), and u and \u03c6 represented the polarization direction and phase, thus set to (0, 0, 1) and 0 respectively. The electromagnetic wave frequency was computed as a function of the angular frequency \u03c9 by the equation \u03b3 = \u03c9/2\u03c0. In prior simulation research, action potentials were generated and released in milliseconds, with approximately ~107 ions permeating across the membrane, and ~10 ns permeation time for a single ion when there was no additional traction force (Kopec et al., 2018). Here we simulated the permeability of a single ion, with an additional traction force constant of 2000 kJ/mol/nm2 applied. The permeation time required is set to ~1.5 ns for K+ ions and 0.75 ns for Na+ ions, at a pulling rate to 0.001 nm/ps. For the analysis of the ion permeation barrier, we used the steered molecular dynamics (SMD) method. The SMD produced a continuous conformation along the z-direction of the center line of ion channels. The PMF was sampled along the corresponding path.\n\nWe simulated the absorption spectrum of K+ and Na+ channels by using molecular dynamics methods based on the classical GROMACS code (Abraham et al., 2015; Figure 5A). The absorption spectra were calculated according to the Fourier transform of the velocity autocorrelation function of the total charge current of our simulation systems (Heyden et al., 2010). We set the time interval of spectrum sampling as 1 fs, and the total time of sampling as 50 ps. The absorption spectra were calculated based on the Fourier transform of the autocorrelation function of the total charge current (Heyden et al., 2010):\n\n$$\nJ(t)=\\sumiq_{i}v_{i}(t)\n$$\n\nwhere qi represented the charge of the i-th atom, and vi(t) stood for the velocity of the ith atom at time t.\n\nWe further simulated the potential of mean force (PMF) as the change of free energy crossing configurations during ion permeability (Bern\u00e8che and Roux, 2001; Li et al., 2021; Figure 5B and C). Umbrella sampling (US) is a method that a series of initial configurations are sampled along a reaction coordinate defined between two groups; then, we simulated in the group of K+/Na+ harmonically restrained against the other fixed group via an umbrella biasing potential with the force constant of 2000 kJ/mol/nm2 along the z-axis. Initially, a K+ or Na+ ion was placed in the z direction at the entrance of the selectivity filter. The Cl- ion was in line with the center of the protein channel. It was initially frozen and taken as the reference group. The initial configurations for the US simulations were extracted from the pulling process at approximately 0.2 \u00c5 (COM distance between the reference Cl- ion and the simulated K+ or Na+ ion) along the ion conductance path. During the US process, the protein (except for the key residues) was restrained. Thus, the shift of the whole protein due to system thermal and pressure fluctuations can be negligible. Based on the US data, the free energy profile was calculated with the WHAM method implemented in GROMACS code (Abraham et al., 2015).\n\nThe ion channel filter region is the critical factor determining an ion\u2019s permeability (Kopec et al., 2018). The selectivity filter of K+ channels is composed of 24 residues (sequence index of 75~80; Long et al., 2005), and 12 residues for Na+ channels (sequence index 9~11; Zhang et al., 2012). According to the filter structure extracted from the model of K+ and Na+ channels, the intrinsic spectrum was further calculated by using Gaussian 09 code (Frisch and Trucks, 2009) based on density functional theory (DFT) at B3LYP/6-31G(d) level (Zhang et al., 2012), thus to explore the specific absorption modes of an ion channel during MIRS.\n",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "23f30d6a-81a9-419a-a63c-7a3a15c13991",
+      "submission_id": "eed909a6-c052-48ad-a1cb-d33d18cf581b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emilio Salinas, https://ror.org/0207ad724 Wake Forest School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78729.sa0](https://doi.org/10.7554/eLife.78729.sa0)\n\nThis study will be of interest to systems neuroscientists considering neuromodulation techniques other than optogenetics or electrical stimulation. The work is important, as it provides new insights into the mechanisms and effects of mid-infrared stimulation (MIRS) on neuronal activity. Using optokinetic nystagmus in pigeons as a model circuit, it provides compelling evidence that depending on the cells' activity, MIRS can either increase or decrease neuronal firing \u2013 an effect that sets this technique apart.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Emilio Salinas, https://ror.org/0207ad724 Wake Forest School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78729.sa1](https://doi.org/10.7554/eLife.78729.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Reversible and gain modulation of neuronal responses and sensorimotor behavior by mid-infrared stimulation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nSpecifically, the reviewers agreed that the results are potentially interesting to a broad audience, but there were too many questions about the stimulation protocol and its effect on neuronal activity, which undermined the conclusions of the study. It was felt that the manuscript would require major reworking, and likely additional experiments, to appropriately characterize the impact of MIRS stimulation and determine the reliability of its effects on neuronal activity and behavior.\n\nReviewer #1 (Recommendations for the authors):\n\nRecent studies suggest that midinfrared stimulation (MIRS) could be a potential neuromodulation strategy, which exerts nonthermal and reversible effect on neuronal signaling and animal behavior. However, there is no direct evidence showing the effect of MIRS on neuronal firing in awake behaving animals. In this study, the authors examined the alternations of neuronal spiking activities in response to MIRS and the association between these alternations with behavioral performance (eye movement in pigeon) in vivo, and compared the modulatory effects of MIRS with electrical stimulation (similar to that with high-frequency deep brain stimulation). With simultaneous extracellular single-unit recording and electrooculogram recording, the authors demonstrated that MIRS with a wavelength of 8.6 \u03bcm produced reversible gain modulation on neuronal responsiveness and behavioral performance. They further dissected the underlying potential mechanism using molecular dynamics (MD) simulations and showed that MIRS with specific wavelength could cause carbonyl groups (-C=O) at the ion selectivity filter of K+ channel to resonate with the mid-infrared light, leading to the gain modulation of neuronal responsiveness and changes in eye movement. Overall, the electrophysiological results are of high quality and provide strong evidence showing the effect of MIRS on neuronal signaling and sensorimotor behavior. The MD results also provide insight into molecular mechanisms (K+ channels) underlying these modulatory effects. However, a weakness of the manuscript is that the methods and results are not well described.\n\n1. Please provide detailed information about MIRS laser source and its application. There is no clear description about MIRS parameters. The type of infrared fiber is IRF-S-9 (the diameter should be 9 \u03bcm), but the diameter is described as 600 \u03bcm.\n\n2. Please provide the pulse width and repetition frequency of MIRS. The specific parameters (including continue wave or pulse train) should be provided clearly, these parameters will all impact the MIRS effect.\n\n3. It would be nice to have a schematic drawing of the experimental configurations, particularly the relative position of the MIRS fiber and the recorded brain region. The authors stated that the distance between the MIRS fiber tip and the electrode recording site was kept ~850 \u00b5m. The fiber was inserted vertically (what's the depth?) into the brain tissue. Was the nLM region in the light path?\n\n4. What does the \"80 mW\" represent? the average power? The peak power? Had the authors measured the real output power at the tip of MIRS fiber? What is the estimated power density at the recorded brain region? At least, the power density in air should be given. What was the temperature rise at the fiber tip? Was there any tissue damage? It would help if the authors provided histochemical examination of the brain tissues before and after MIRS, including the nLM region and the fiber tip region. What are the changes in neuronal spiking activity near the fiber tip < 100 \u03bcm?\n\n5. Why was the pursuit velocity (but not the duration and distance) altered by MIRS? What's the corresponding relationship between the firing frequency of nLM neurons and the eye movement parameters? How was the pursuit eye velocity analyzed? Please describe these parameters (velocity, duration and distance) and provide details about their measurements. Moreover, the authors performed data analysis of nLM neuron spiking activities within a time window from 0-600 ms after the onset of pursuit. It should be stated clearly in Figure 1 where the onset of pursuit was. The baseline firing activity without visual stimulation should be measured. Were there any effects on baseline activity upon MIRS application? From Figure 3C, it is clear that the firing frequency during the rapid eye resetting phase (i.e. 300 ms before the onset of pursuit) was altered with MIRS. In Figure 3E, the MIRS effect was not reversible? Spiking activity during the rapid phase (before the pursuit onset) was still high when the MIRS was turned off.\n\n6. What do the gray bars in Figure 1. D-F stand for?\n\n7. There is inconsistency between results description and Figure 2A. No significant difference between MIRS and Ctrl group?\n\n8. The statistic results are inaccurate. Are they significantly different in each condition?\n\n9. Should the baselines be aligned in Figure 4A-B? Please describe the statistical results in detail (Paired or independent Student's t-test, repeated-measures ANOVA).\n\n10. The measurement of the extracellular spike waveforms in Figure S3 is not appropriate. The duration between the trough and the peak (i.e. peak to peak duration) should be used.\n\n11. \"Finger\" in this manuscript should be changed to \"Fingerprint peak\".\n\n12. From a chemical point of view, the -C=O group only has an intrinsic stretching vibration mode between carbon and oxygen atoms at a frequency of ~53 THz (not 34.88 THz). Although there is an absorption peak of the group at 34.88 THz calculated from the MD simulation, the source of this peak should be explained.\n\n13. In this study, the total time of MD simulations is ~10 ns, which is too short for a biological system. It is important to confirm that the MD results are independent of the simulation time.\n\n14. The field strength applied is 2.5 V/nm, too strong? Is this strength critical for the gain modulation?\n\n15. The filter region of ion channel should be \"selectivity filter\", not \"selective filter\".\n\n16. PMF is the key data to indirectly support the conclusion that MIRS could preferentially enhance potassium permeability through K+ channels to alter action potential generation, but it is not a direct measurement of the change in ion flux. It is important to confirm whether changes in PMF have an effect on K+ and Na+ currents. What is the direct effect of MIRS on ion currents?\n\n17. Can the authors explain the physical mechanisms for the rightward shift of PMF for Na+ channels.\n\n18. What is the dependence of PMF and ion currents on MIRS intensity?\n\n19. What is the direction of the mid-infrared light? From Figure 5B and C, the direction is parallel to channel pores?\n\nReviewer #2 (Recommendations for the authors):\n\nIn the manuscript Xiao et al. investigate the impact of mid-infrared stimulation (MIRS) on neuronal activity in awake behaving pigeons. Earlier studies have found that MIRS can excite neuronal responses, but other studies also found inhibition of neuronal firing. In their paper, Xiao et al. investigate the mechanism of MIRS that might explain these diverse findings as reported in the literature so far. They investigated the impact of MIRS and electrical stimulation on neuronal signals as well as on the behavioral performance of pigeons during visually guided eye movements. They found that, unlike electrical stimulation, MIRS rather resulted in gain modulation of firing activity. Therefore, MIRS increased firing rates of highly active neurons, while it reduced the firing of less active cells. Likewise, pursuit eye movements were facilitated by MIRS. Moreover, Xiao et al. explained their experimental findings using computational methods to simulate molecular effects which suggested enhanced permeability of potassium channels.\n\nThe manuscript from Xiao et al. combines different methods including neurophysiology, behavior and computational modelling to comprehensively investigate the mechanism behind MIRS. Their electrophysiological findings are congruent to their behavioral results supporting the idea that MIRS results in gain modulation. Although this study was performed in pigeons, the findings could be of interest not just for avian researchers but for the whole field of neuroscience. This is the case as they shed light on the mechanisms of MIRS, so that it can be used more purposefully in future as their findings suggest that it is not inhibitory or excitatory per se but results in gain modulation.\n\nHowever, the introduction and/or discussion is missing a section explaining why the effects of MIRS were investigated in pigeons. While the use of diverse model organisms is desirable, the authors motivate their study primarily with clinical applications and say that human research could benefit from MIRS. It is so far not completely clear why the model organism and the specific brain area were chosen in this study. To determine the generalizability of their findings, control experiments in other brain regions or species would be desirable.\n\nMoreover, the authors say that in the clinical setting there is the need for neuromodulation methods that, without genetic manipulation, have the potential for neuronal inhibition and excitation. In parts of the manuscript the authors create the impression that this is possible with MIRS. However, based on their findings, the effect of MIRS is not directly controllable, as it varies with the strength of sensory input/neuronal activity. In their experiment the authors were able to control the sensory input into the cell population by varying the visual gratings. However, this is easy for sensory systems and becomes more complicated in higher associative areas. How well could the effect of MIRS be controlled in these areas?\n\nThe method section is missing important information. For example, the statistics and surgical procedures are not explained. In some other sections, the authors refer to other publications, which makes it hard for the reader to fully understand or assess the procedures. The stimulation protocol is also a cause for concern. Testing different stimulation protocols and their effects on neuronal activity would be necessary to fully characterize the effects of MIRS. So far only one protocol was used and it is not made clear why.\n\nIn the Results section it is sometimes hard to follow the statistical procedures. It is not always indicated what the number of subjects was, which test was performed and why, and whether a within or between subjects design was applied. Moreover, when reporting the results of t-tests the authors should report the t and p values. t values are missing so far, and the authors should report the exact p-values rather than p < 0.05 or p < 0.01.\n\nThe discussion should also provide an outlook on the potential use of MIRS and put it into the context of other methods of neuromodulation such as optogenetics and electrical stimulation. So far, the advantages, disadvantages and possible applications are not well explained. What is possible now that the mechanisms of MIRS is better understood?\n\nReviewer #3 (Recommendations for the authors):\n\nThis is a study that uses a mid-infrared wavelength light (8.6 um) to induce changes in neuronal response in the pretectal nucleus and in associated optokinetic pursuit eye movements in pigeons. Understanding this manuscript was quite challenging. The study as written lacks a clear hypothesis and experiments lack rationale. No prediction is presented regarding what effect MIRS should have on pretectal neurons or on behavior. Methods are presented without rationale, resulting in what appears to be poor experimental design. In general, the optical stimulation paradigm has a very poor spatiotemporal resolution, making it unlikely to lead to interesting, interpretable results regarding neural circuitry. The optical stimulation produces other concerning effects (e.g. massive sensorimotor responses) for which there are no controls. The rationale for comparing MIRS with electrical stimulation is also obscure. The abstract mentions effect of MIRS can depend on 'ongoing sensory responsiveness in awake animals' but it is not clear what measure is used for sensory responsiveness. The figures are poorly explained. It is unclear why modeling of K+ channels is included in this study; it seems like a different topic, making the presentation even more incoherent. Overall, this manuscript lacks rationale, coherence, and direction. A strong suggestion is to (1) describe and understand, at minimum, the spatiotemporal nature of the optical stimulation, (2) make some circuit diagrams regarding what the expected outcomes are of MIRS stimulation on the prectectum, and (3) focus on the neuronal and behavioral portion of this study. Given the primary author's previous strong publications, this should be achievable.\n\nHypothesis: It would be helpful to state clearly what the hypothesis is and what are the predicted outcomes of stimulating with MIRS in the pretectum. For example, the authors describe that application of MIRS in the pretectum induces an increase in pursuit eye movement velocity in the T-N direction but not in the N-T direction. Does 'facilitating pursuit velocity' mean better behavioral performance? But it is not clear what the significance of this result is. What is the neural circuit underlying OKN and what is the proposed effect of MIRS on this circuit?\n\nMethods: There are many questions about the experimental paradigm that are not addressed. These include:\n\n\u2013 why 8.6um wavelength? what is a 'mark of 2 us and a space of 3us'? why use this paradigm? why use a 600um fiber, this is quite large size fiber for a small pigeon pretectum? why 80mW power, this also seems high.\n\n\u2013 why 120 seconds (is this a mistake?), this seems quite a long stimulation period, likely to produce non-specific and difficult to interpret effects. For example, typical electrical stimulation might be in the range of 10s or 100s of milliseconds, so 120 seconds is tremendously long. Even optical stimulation, whether it is optogenetic, near infrared (800-900nm, ~1800nm, or mid infrared 5.6um) are usually delivered in briefer sub-second to few seconds periods of time. Why is a 10 min recovery period needed, this is also a very long time.\n\n\u2013 The distance between electrode and fiber is 850um. Will such a distance induce a Becqueral effect for 5.8um wavelength light?\n\n\u2013 What are the 'massive sensorimotor responses'. This is quite concerning as it suggests there are large multi-circuit effects that are not controlled for.\n\nResults: MIRS\n\n\u2013 If the grating motion is 8deg/sec but eye movement velocity is 4.88deg/sec, this is good tracking?\n\n\u2013 When the MIRS was turned on, it evoked 'fasted their pursuit performances'. I presume it means the eye movements were faster? Is facilitating pursuit velocity considered an enhanced performance? It is better? Shouldn't an improved response be one that follows the grating better?\n\n\u2013 If nasal to temporal pursuit tracking was less effective, what does this indicate about effect on the circuit?\n\nResults: Electrical stimulation\n\n\u2013 120 sec is an extremely long stimulation period. Current would reach every part of the brain.\n\n\u2013 ES effectively deflected eye movements to pursue toward the T-N direction: does this mean it interrupted the eye movements? Changed them to T-N direction?\n\nFigures are low resolution\n\nFigure 1: quite hard to understand\n\n\u2013 D,F: what are the top and bottom traces, if this a behavioral trace, what does the Before trace look like? Why does the top one look so erratic? Electrophysiology recording trace?\n\n\u2013 E,G: what are the 6 graphs? is each dot one animal or one session or one trial?\n\nFigure 3: what is the significance of the positive and negative modulation by MIRS?\n\nAuthors should check and review extensively for improvements to the use of English.\n",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d686eeb4-1011-4796-b349-ca50b0302444",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C1",
+      "claim": "Mid-infrared stimulation (MIRS) causes non-thermal modulation of brain functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports suggest that mid-infrared stimulation (MIRS) causes non-thermal modulation of brain functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by references to recent reports in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "83804f26-5dba-4a09-9507-ebafabc02e0e",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C2",
+      "claim": "MIRS applied to the pretectal nucleus lentiformis mesencephali (nLM) altered eye movements by modulating a specific gain depending on the strength of visual inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found MIRS altered eye movements by modulating a specific gain depending on the strength of visual inputs, in a manner different than the effect of ES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study comparing MIRS and ES effects on eye movements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "ee3c50ff-da03-4096-a46d-9ee7586d84f9",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C3",
+      "claim": "MIRS could either excite or inhibit neuronal activity in the same pretectal neuron depending on its ongoing sensory responsiveness levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous extracellular recordings and stimulation showed that MIRS could either excite and inhibit the neuronal activity in the same pretectal neuron depending on its ongoing sensory responsiveness levels in awake-behaving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simultaneous recording and stimulation experiments in awake-behaving animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "a5ce6837-2232-4bf0-8d74-4aa85e8b0738",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C4",
+      "claim": "MIRS modulates the resonance of a carbonyl group of the potassium channel, critical to action potential generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational simulations suggest that MIRS modulates the resonance of a carbonyl group of the potassium channel, critical to the action potential generation, altering neuronal responses to sensory inputs and as a consequence, guiding behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational simulations using molecular dynamics methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "251f78d7-a82e-42eb-ab15-410189185194",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C5",
+      "claim": "Deep brain and transcranial electromagnetic stimulation directly alter neuronal excitability and connectivity, and their use in clinical settings is widespread.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, deep brain and transcranial electromagnetic stimulation directly alter neuronal excitability and connectivity, and their use in clinical settings is widespread (Krauss et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Krauss et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "dafc1eb8-5f5b-4ea6-9f9e-f4d94d21e45a",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C6",
+      "claim": "Optogenetic stimulation has recently extended the toolkit to excite or inhibit specific groups of neurons selectively, but relies on genetic manipulations that currently limit its clinical application.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimulation has recently extended the toolkit to excite or inhibit specific groups of neurons selectively, but relies on genetic manipulations that currently limit its clinical application (Deisseroth, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Deisseroth, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "8bb8b9c3-86b9-4eeb-be1a-559cf7f50082",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C7",
+      "claim": "Near-infrared wavelength stimulation (NIRS) can excite neuronal responses in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial studies have shown that near-infrared wavelength stimulation (NIRS) can excite neuronal responses in vitro (Izzo et al., 2008; Albert et al., 2012; Shapiro et al., 2012; Entwisle et al., 2016) and in vivo (Wells et al., 2005; Wells et al., 2007a; Wells et al., 2007b; Richter et al., 2008; Xia et al., 2014; Xu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "25878fdf-e785-4ca0-83f2-12176f4a845c",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C8",
+      "claim": "Near-infrared wavelength stimulation (NIRS) can excite neuronal responses in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial studies have shown that near-infrared wavelength stimulation (NIRS) can excite neuronal responses in vitro (Izzo et al., 2008; Albert et al., 2012; Shapiro et al., 2012; Entwisle et al., 2016) and in vivo (Wells et al., 2005; Wells et al., 2007a; Wells et al., 2007b; Richter et al., 2008; Xia et al., 2014; Xu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "0e618f46-9e15-4dbc-af4d-d2b788fc7ccc",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C9",
+      "claim": "NIRS can inhibit neuronal firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there are also reports that NIRS can inhibit neuronal firing (Cayce et al., 2011; Duke et al., 2012; Duke et al., 2013; Horv\u00e1th et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "44c5ad62-d33c-4272-ab7f-eab016e8a575",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C10",
+      "claim": "MIRS can exert non-thermal effects on ion channels, and lead to gain modulation of action potentials based on current injections in the vitro slice preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "MIRS can exert non-thermal effects on ion channels, and lead to gain modulation of action potentials based on current injections in the vitro slice preparation (Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "8b04bd31-d9a1-4492-bda8-09361caa0e40",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C11",
+      "claim": "MIRS can enhance spontaneous neuronal activities in anesthetized animals.",
+      "claim_type": "EXPLICIT",
+      "source": "MIRS can enhance spontaneous neuronal activities (Zhang et al., 2021) and sensory responses (Tan et al., 2022) in anesthetized animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "2106b5e0-b87b-4e93-a0fd-fb5e0d8a9f2a",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C12",
+      "claim": "MIRS can enhance sensory responses in anesthetized animals.",
+      "claim_type": "EXPLICIT",
+      "source": "MIRS can enhance spontaneous neuronal activities (Zhang et al., 2021) and sensory responses (Tan et al., 2022) in anesthetized animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tan et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "f934e270-817b-4486-b0a0-a4a25c336603",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C13",
+      "claim": "MIRS accelerates associative learning in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, prior reports show how MIRS accelerates associative learning in mice (Zhang et al., 2021), and regulates startle responses in larval zebrafish (Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "aa6d2668-2078-4b5b-8068-437d984699d8",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C14",
+      "claim": "MIRS regulates startle responses in larval zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, prior reports show how MIRS accelerates associative learning in mice (Zhang et al., 2021), and regulates startle responses in larval zebrafish (Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "8b76f95b-1929-4a58-91d3-2a78a762859f",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C15",
+      "claim": "The pretectal nucleus lentiformis mesencephali (nLM) is homologous to the nucleus of the optic tract and highly conserved across all vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The nLM is homologous to the nucleus of the optic tract and highly conserved across all vertebrates (Fite, 1985; McKenna and Wallman, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fite, 1985 and McKenna and Wallman, 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "1ae5521e-6570-44f6-9810-66591833d63e",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C16",
+      "claim": "The majority of nLM neurons prefer slow velocity and become excited by visual motion in the temporal-to-nasal direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of nLM neurons prefer slow velocity and become excited by visual motion in the temporal-to-nasal direction, while other neurons are predominantly sensitive to the nasal-to-temporal, or vertical motion (Winterson and Brauth, 1985; Wylie and Frost, 1996; Fu et al., 1998; Wylie and Crowder, 2000; Cao et al., 2004; Wylie et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "205d946c-4067-4efc-bd77-716b4c6aacbb",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C17",
+      "claim": "Reversible inactivation or electrolytic lesions of the nLM impair generating horizontal OKN.",
+      "claim_type": "EXPLICIT",
+      "source": "Reversible inactivation or electrolytic lesions of the nLM impair generating horizontal OKN (Fite et al., 1979; Gioanni et al., 1983; Yang et al., 2008a; Yang et al., 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "309de9f1-c353-4a74-83c5-884f1715a6d1",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C18",
+      "claim": "MIRS significantly speeded up pursuit velocities in slow phases evoked by 8 deg/s grating motion along both T-N and N-T directions.",
+      "claim_type": "EXPLICIT",
+      "source": "MIRS significantly speeded up pursuit velocities in slow phases evoked by 8 deg/s grating motion along both T-N and N-T directions, in the individual and group animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "ddea3d80-54bf-42e1-95cd-d984510059e0",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C19",
+      "claim": "During 8 deg/s grating motion in the T-N direction, MIRS significantly increased pursuit velocity from 4.78\u00b10.22 deg/s to 6.44\u00b10.38 deg/s (n=20 pigeons, p=8.86\u00d710\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "Once MIRS was turned on, animals significantly fasted their pursuit performance (velocity: 6.44\u00b10.38 deg/s; n=20 pigeons, p=8.86\u00d710\u20135, two-sided Wilcoxon signed-rank test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "b62e55f9-1584-4373-9c28-dc5d01223bbb",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C20",
+      "claim": "During 8 deg/s grating motion in the N-T direction, MIRS significantly increased pursuit velocity from \u20130.99\u00b10.06 deg/s to \u20131.48\u00b10.08 deg/s (n=20 pigeons, p=2.54\u00d710\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "When MIRS was turned on, animals again significantly fasted their eye movements to pursue in the N-T direction (velocity: \u20131.48\u00b10.08 deg/s; n=20 pigeons, p=2.54\u00d710\u20134, two-sided Wilcoxon signed-rank test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "31ee7782-10d3-400a-a1dc-8aef8c306925",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C21",
+      "claim": "Asymmetry between the N-T and T-N OKN has been widely observed in lateral-eyed vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "There was asymmetry between the N-T and T-N OKN, which has been widely observed in lateral-eyed vertebrates (rabbits: Collewijn, 1969; pigeons: Zolotilina et al., 1995; rats: Harvey et al., 1997; mice: Kodama and du Lac, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research in different species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "eee05005-404f-4de9-92e9-dfb7a5c3643a",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C22",
+      "claim": "Electrical stimulation (ES) in the nLM caused a unidirectional deflection of pursuit eye movements toward the T-N direction, independent of direction of grating motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike MIRS, ES can evoke pursuit eye movements towards the T-N direction, independent of the direction of grating motion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data comparing ES to MIRS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "f79d218d-bf86-48b2-ab50-726ea412ca12",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C23",
+      "claim": "Gain modulation intensity of MIRS on pursuit eye movements during the slow phase depended on the strength of visual inputs (F(4,79)=6.66, p=0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "One-way ANOVA analyses revealed that gain modulation intensity of MIRS on pursuit eye movements during the slow phase depended on the strength of visual inputs (F(4,79)=6.66, p=0.0001), in a manner different than the unidirectional modulation of ES (F(4,25)=0.25, p=0.9094).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "b8a8c49e-19ad-475b-970e-65101b2a312f",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C24",
+      "claim": "37 out of 43 recorded nLM neurons showed significant visual response changes during 10 mW MIRS (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "There are 37/43 neurons showed significant visual response changes in pursuit when MIRS at 10 mW applied (two-sided Wilcoxon signed-rank test, p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "2a3eee20-b930-44bc-b678-cd03116c57ab",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C25",
+      "claim": "All recorded nLM cells have been modulated by corollary discharge signals during saccadic eye movements: their firing rates were inhibited during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "All recorded nLM cells have been modulated by corollary discharge signals during saccadic eye movements: their firing rates were inhibited during saccades, confirming prior report (Yang et al., 2008a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data and confirmed by a citation to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "224b76d7-e96b-4932-9d46-976f76a79eb6",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C26",
+      "claim": "During MIRS, nearly all neurons showed a further potentiation of their preferred direction visual responses (mean \u00b1 SD: 59.02\u00b129.59 spikes/s, n=33 neurons, p=1.76\u00d710\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "During MIRS, nearly all neurons showed a further potentiation of their preferred direction visual responses (Figure 3C, mean \u00b1 SD: 59.02\u00b129.59 spikes/s, n=33 neurons, p=1.76\u00d710\u20136, two-sided Wilcoxon signed-rank test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "c9b7cbe3-1253-45c2-a0e0-636ca17ea9c6",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C27",
+      "claim": "During MIRS, neurons showed a further inhibition in their null direction visual responses (29.16\u00b121.23 spikes/s, n=24 neurons, p=3.96\u00d710\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "and a further inhibition in their null direction visual responses (Figure 3D, 29.16\u00b121.23 spikes/s, n=24 neurons, p=3.96\u00d710\u20134; two-sided Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "47715a66-317a-47f7-bef8-e8819619da63",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C28",
+      "claim": "The increase of visual responses to the grating motion at 8 deg/s in the preferred direction was significantly larger than 2 deg/s in that direction (8 deg/s: 15.63% \u00b1 1.72%, n=33 neurons; 2 deg/s: 5.25% \u00b1 2.92%, n=13 neurons; p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "During MIRS, the increase of visual responses to the grating motion at 8 deg/s in the preferred direction was significantly larger than 2 deg/s in that direction (Figure 4B, mean \u00b1 SEM, 8 deg/s: 15.63% \u00b1 1.72% (n1=33 neurons); 2 deg/s: 5.25% \u00b1 2.92% (n2=13 neurons); n1 vs. n2 p=0.02, two-sided Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "0c870c84-1304-47a0-b625-768dd50af5a5",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C29",
+      "claim": "Neuronal activities to still grating failed to show any significant changes during MIRS (mean \u00b1 SEM, \u20134.15% \u00b1 3.87%, n=6 neurons, p=0.37).",
+      "claim_type": "EXPLICIT",
+      "source": "During MIRS, these neuronal activities to still grating failed to show any significant changes (Figure 4B, mean \u00b1 SEM, \u20134.15% \u00b1 3.87%, n=6 neurons, p=0.37, two-sided Wilcoxon rank sum test,).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "113ecfff-6a8a-40eb-a9a1-099f0905ffe8",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C30",
+      "claim": "The MIRS output power can effectively modify effects on eye movements in both the T-N and N-T directions at the p<0.05 for the four output powers (F(3, 140)=3.4, p=0.0196).",
+      "claim_type": "EXPLICIT",
+      "source": "A one-way ANOVA analysis further confirmed that the MIRS output power can effectively modify effects on eye movements in both the T-N and N-T directions at the p<0.05 for the four output powers (F(3, 140)=3.4, p=0.0196).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "4f28453f-f4fa-4c02-aac0-19519b4b7f33",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C31",
+      "claim": "MIRS power had a significant effect on evoked responses of the recorded nLM cells to grating motion stimuli (One-way ANOVA, F(3,80)=7.92, p=0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Like behavioral responses, MIRS power had a significant effect on evoked responses of the recorded nLM cells to grating motion stimuli (One-way ANOVA, F(3,80)=7.92, p=0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "20c50a52-cb66-4a62-94f4-682f17fac0d6",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C32",
+      "claim": "The evoked pursuit velocity did not vary substantially as a function of MIRS duration (n30s=5 MIRS times, n120s=20 MIRS times, p=0.8651).",
+      "claim_type": "EXPLICIT",
+      "source": "The evoked pursuit velocity did not vary substantially as a function of MIRS duration (Figure 4H, n30s=5 MIRS times, n120s=20 MIRS times, p=0.8651, two-sided Wilcoxon rank sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "c6dd3575-d82e-47f0-980a-1dc972076f3f",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C33",
+      "claim": "There were no significant changes in pursuit velocities during MIRS once the fiber applied in the OKN-irrelevant nuclei (TeO: n=6 MIRS times in 3 pigeons, p=0.31; nRt: n=5 MIRS times in 3 pigeons, p=0.63).",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant changes in pursuit velocities during MIRS once the fiber applied in the OKN-irrelevant nuclei (Figure 4\u2014figure supplement 1C and D, TeO: n=6 MIRS times in 3 pigeons, p=0.31; nRt: n=5 MIRS times in 3 pigeons, p=0.63; two-sided Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "8f570cd0-a77d-49a9-916f-9c5b6dbbd0b4",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C34",
+      "claim": "The MD simulation showed two remarkable absorption fingerprint peaks of K+ channels located between 33\u201337 THz, and 50\u201355 THz.",
+      "claim_type": "EXPLICIT",
+      "source": "The MD simulation showed two remarkable absorption fingerprint peaks of K+ channels located between 33\u201337 THz, and 50\u201355 THz (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on molecular dynamics simulation data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "4b6fc5fc-1c5c-4864-9917-50fa98492ff3",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C35",
+      "claim": "Both fingerprint peaks are just out of the strong absorption spectral ranges of both water molecules and Na+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Both fingerprint peaks are just out of the strong absorption spectral ranges of both water molecules (Heyden et al., 2010) and Na+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data and a citation to Heyden et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "8450c7bb-494a-4fc3-9ab9-abc514c02a91",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C36",
+      "claim": "The second absorption frequency of ~53 THz is consistent with prior research and well-studied.",
+      "claim_type": "EXPLICIT",
+      "source": "The second absorption frequency of ~53 THz is consistent with prior research and well-studied (Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "20a4358b-e4c0-4b2c-95f7-5ce8bef51bcb",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C37",
+      "claim": "MIRS was mainly absorbed by \u2212C=O groups at the inner wall of the filter region of K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the absorption fingerprint peak of \u2212OH\u2212 groups at the filter region of Na+ channels are distant from ~34.88 THz (Figure 5\u2014figure supplement 2), indicating that MIRS was mainly absorbed by \u2212C=O groups at the inner wall of the filter region of K+ channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on quantum chemistry calculations shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "f32751d1-2504-4732-9098-943eb217c593",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C38",
+      "claim": "MIRS increased the PMF ratio of potassium ions by 1.15\u20131.4 folds at the exit site of K+ channels around \u03be=1.1 nm when the field strength increased from 1.0 to 2.5 V/nm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulation, MIRS increased the PMF ratio of potassium ions by 1.15\u20131.4 folds at the exit site of K+ channels around \u03be=1.1 nm when the field strength increased from 1.0 to 2.5 V/nm (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on molecular dynamics simulation data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "474de5e8-cbb2-4e60-81b4-8cc7aa1f6350",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C39",
+      "claim": "The ratio of Na+ channels stayed near 1 at the exit site around \u03be=0.5 nm under different field strengths.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the ratio of Na+ channels stayed near 1 at the exit site around \u03be=0.5 nm under different field strengths (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on molecular dynamics simulation data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "d68ee683-fc01-41ed-8911-4b81d2dfb858",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C40",
+      "claim": "MIRS with 34.88 THz could be an useful approach to modulate the neural circuits and motor responses in a sensory input-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that MIRS with 34.88 THz could be an useful approach to modulate the neural circuits and motor responses in a sensory input-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental and simulation results presented in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "c533d66e-e247-4825-9dee-c58a0374d36f",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C41",
+      "claim": "MIRS could cause local thermal heat by water absorption, which changes capacitance of the transmembrane to excite cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A traditional explanation of these findings is that the MIRS could cause local thermal heat by water absorption, which changes capacitance of the transmembrane to excite cells (Shapiro et al., 2012), or activate thermosensitive TRPV channels to depolarize cells (Albert et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is presented as a traditional explanation with citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "bce5357f-594f-46ed-9546-fa9f02c02bbf",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C42",
+      "claim": "MIRS does not have a thermally mediated effect on ion channels and neuronal functions when the distance was greater than 300 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, experimental evidence in vitro demonstrates that MIRS does not have a thermally mediated effect on ion channels and neuronal functions, especially when the distance was greater than 300 \u03bcm (Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "dfec78bc-845e-4d6e-8c67-bf2ed13e3884",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C43",
+      "claim": "The distance between the MIRS fiber tip and recording sites was 848\u00b1351 \u00b5m (mean \u00b1 SD), limiting thermal changes within a range of 2 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in our experiments, the distance between the MIRS fiber tip and recording sites was 848\u00b1351 \u00b5m (mean \u00b1 SD, Figure 1E), limiting thermal changes within a range of 2 \u00b0C (Tan et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental measurements and a citation to Tan et al., 2022.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "b276d2f0-f82b-4554-ad91-c51241f084ee",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C44",
+      "claim": "MIRS's multiplicative modulations of the action potential generation depended on the strength of current pulses in vitro, and an increase in K+ currents (not Na+ currents) could lead to gain modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research in brain slice found that MIRS's multiplicative modulations of the action potential generation depended on the strength of current pules in vitro, and an increase in K+currents (not Na+currents) could lead to gain modulation (Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "fb350302-6e04-4d62-bdd9-c29119878a92",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C45",
+      "claim": "MIRS could cause a shortened action potential duration (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The increased potassium ion flow by MIRS could cause a faster and/or earlier repolarization and lead to a shortened action potential duration (Figure 6\u2014figure supplement 1, p<0.05, two-sided Wilcoxon signed-rank test; Liu et al., 2021)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 6\u2014figure supplement 1 and a citation to Liu et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "0116888d-5952-4349-8df2-fcbc78697d39",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C46",
+      "claim": "MIRS could accelerate associative learning by stimulating the auditory cortex through opened or thinned intact skulls.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research showed that MIRS could accelerate associative learning (Zhang et al., 2021) by stimulating the auditory cortex through opened or thinned intact skulls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "878f5c5b-d614-4a24-9817-ec6efc494b88",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C47",
+      "claim": "The nLM relays visual information from the retina directly or indirectly to the vestibular cerebellum, the oculomotor cerebellum, the thalamus, the brainstem, and other brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding connectivity, the nLM relays visual information from the retina directly or indirectly to the vestibular cerebellum, the oculomotor cerebellum, the thalamus, the brainstem, and other brain areas (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established anatomical knowledge and illustrated in Figure 1D.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "3fc3ecf8-76fb-49a2-94e3-27f250ca00d3",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C48",
+      "claim": "These connections are integral to the nLM's role in eye and head movements, and many other behaviors, including postural and steering control.",
+      "claim_type": "EXPLICIT",
+      "source": "These connections are integral to the nLM's role in eye and head movements, and many other behaviors, including postural and steering control (Cao et al., 2006; Yang et al., 2008b; Wylie, 2013; Ibbotson, 2017; Wylie et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "84f7463a-0708-405b-82b0-d9536df07e0b",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C49",
+      "claim": "The pretectal nLM is a crucial optokinetic nucleus responsible for encoding the horizontal optic flow and generating the OKN.",
+      "claim_type": "EXPLICIT",
+      "source": "In birds, the pretectal nucleus lentiformis mesencephali (nLM) is a crucial optokinetic nucleus responsible for encoding the horizontal optic flow and generating the OKN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the nLM's function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "87e1ef73-f5fc-43c3-915f-1c24588df4bf",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C50",
+      "claim": "Optokinetic nystagmus (OKN) occurs in two phases producing a characteristic irregular sawtooth waveform.",
+      "claim_type": "EXPLICIT",
+      "source": "OKN occurs in two phases producing a characteristic irregular sawtooth waveform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about OKN.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "1eb69d33-1c8b-45ed-8b1c-f85e6a8a238b",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C51",
+      "claim": "A slow phase of pursuit eye movement closely tracks the moving field followed by a quick phase of ballistic saccadic eye movement that resets eyes to their primary position when they reach a maximal eccentricity.",
+      "claim_type": "EXPLICIT",
+      "source": "A slow phase of pursuit eye movement closely tracks the moving field followed by a quick phase of ballistic saccadic eye movement that resets eyes to their primary position when they reach a maximal eccentricity (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge about OKN and illustrated in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "ca34214a-3da5-4eaa-a9a6-a0ca206ac285",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C52",
+      "claim": "The TeO is a principal destination of retinal ganglion axons and projects to the telencephalic entopallium via the nRt.",
+      "claim_type": "EXPLICIT",
+      "source": "The TeO is a principal destination of retinal ganglion axons and projects to the telencephalic entopallium via the nRt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "18d642a6-d936-4cc0-86c4-942c4fae3212",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C53",
+      "claim": "The ascending tectofugal pathway is considered homologous to the colliculo-pulvinar-cortical pathway in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The ascending tectofugal pathway is considered homologous to the colliculo-pulvinar-cortical pathway in mammals (Benowitz and Karten, 1976; Wang and Frost, 1992; Hellmann and G\u00fcnt\u00fcrk\u00fcn, 2001; Reiner et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "4de3522a-e4df-4faf-bb6c-cfe78571a1da",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C54",
+      "claim": "Both TeO and nRt nuclei are involved in visual information processing in birds, but not crucial for OKN generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both nuclei are involved in visual information processing in birds, but not crucial for OKN generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about these brain regions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "c080f5db-9b12-469b-8e3c-5c5014814c6d",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C55",
+      "claim": "The light spot diameter at a working distance of 850 \u03bcm can be about 1000 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The light spot diameter at a working distance of 850 \u03bcm (mean distance between fiber tip and recorded neurons, Figure 1E) can be about 1000 \u03bcm (Figure 4\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental measurements shown in Figure 4\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "b396370e-4bff-4231-99c3-3fa8333943de",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C56",
+      "claim": "The laser could have a good chance to irradiate the pretectal nLM with a width of ~1000 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the laser could have a good chance to irradiate the pretectal nLM with a width of ~1000 \u03bcm (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference based on the light spot diameter and the size of the nLM.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "d272ae4f-ac9b-48e0-bd82-387e3c420258",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C57",
+      "claim": "MIRS can implement multiplication-like modulations on individual neurons in a sensory input-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, MIRS can implement multiplication-like modulations on individual neurons in a sensory input-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental results showing bidirectional modulation depending on sensory input.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "8d2a6568-3a6c-43fd-87a9-57ed954b68a3",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C58",
+      "claim": "MIRS could be a promising approach toward modulating neuronal functions for brain research and treating neurological diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that MIRS could be a promising approach toward modulating neuronal functions for brain research and treating neurological diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative conclusion based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "276ebd84-e4fe-4f1a-9acb-1f3308cc1291",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C59",
+      "claim": "MIRS can selectively activate or inhibit neuronal responses by controlling the strength of sensory inputs in an individual or population cells, without genetic manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the optogenetic stimulation that would require the delivery of the transgenes encoding the light-responsive proteins, MIRS can selectively activate or inhibit neuronal responses by controlling the strength of sensory inputs in an individual or population cells, without genetic manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental results and comparison with optogenetics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "4446d11f-208c-496f-9cad-f4d95362b219",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C60",
+      "claim": "The 34.88 THz simulation frequency used in the study is closed to the maximum of the first peak of the K+ channels absorption spectrum, at least within half-height width of the fingerprint peak of 33\u201337 THz.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the 34.88 THz simulation frequency we used in the initial results is closed to the maximum of the first peak of the K+ channels absorption spectrum, at least within half-height width of the fingerprint peak of 33\u201337 THz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the simulation results and analysis of the absorption spectrum.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "b6d286ac-cf93-42dc-8016-ea2a545d7154",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C61",
+      "claim": "The low-frequency oscillation mode corresponding to MIRS with 34.88 THz could involve almost all the \u2212C=O groups in the filter structure vibrating in an in-plane bending manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the low-frequency oscillation mode corresponding to MIRS with 34.88 THz could involve almost all the \u2212C=O groups (similar to \u2212C=O N-H) in the filter structure vibrating in an in-plane bending manner (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on quantum chemistry calculations and analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "0e33a1f1-ee4b-4f2f-bf16-1b8afd79bc6c",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C62",
+      "claim": "The effect of MIRS with 34.88 THz could enhance the resonance absorption of K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrated that the effect of MIRS with 34.88 THz could enhance the resonance absorption of K+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation data showing selective absorption by K+ channels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "dfa56042-ffb9-4a2f-9a6f-eafda25fe652",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C63",
+      "claim": "\u2212C=O groups at the inner wall of K+ channels are frequency sensitive due to their collective resonance.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u2212C=O groups at the inner wall of K+ channels are frequency sensitive due to their collective resonance, these effects seldom occur in Na+ channels or water molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation results showing differential absorption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "e0faefad-3a47-4648-b831-bb60b86782e2",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C64",
+      "claim": "Action potentials are generated and released in milliseconds, with approximately ~10^7 ions permeating across the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Action potentials are generated and released in milliseconds, with approximately ~107 ions permeating across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about action potential generation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "4e849139-0089-4767-8c5d-adbbe1da0e91",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C65",
+      "claim": "The ion permeation can be studied on the level of single one.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ion permeation can be studied on the level of single one (Kopec et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kopec et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "20d7aba8-c227-45ce-a779-27120355dd83",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C66",
+      "claim": "The average permeation time for a single ion is on the order of nanosecond.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have simulated the permeability of a single ion, with an average permeation time on the order of nanosecond (Kopec et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kopec et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "f3898b33-635b-4da6-ab87-3110852f876b",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C67",
+      "claim": "Increasing MIRS output power proportionally improves the efficiency of K+ permeability, in a manner that only weakly modulates Na+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our simulations demonstrate a mechanism by which the K+ permeability can be selectively enhanced during MIRS with 34.88 THz. Increasing MIRS output power proportionally improves the efficiency of K+ permeability, in a manner that only weakly modulates Na+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation results showing differential effects on K+ and Na+ channels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "6007ad36-9170-46c1-a7bb-d61ef0a68b10",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C68",
+      "claim": "The enhancement of potassium permeability through K+ channels will lead to the changes in neuronal responses documented in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancement of potassium permeability through K+ channels will then lead to the changes in neuronal responses we document extensively above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference linking the simulation results to the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "a1978b69-e324-427d-be2d-07ef496081e1",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C69",
+      "claim": "The increased potassium ion flow by MIRS could cause a faster and/or earlier repolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased potassium ion flow by MIRS could cause a faster and/or earlier repolarization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the known role of K+ channels in repolarization.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "9c46099a-d65a-47e0-ab23-1dbf090ef882",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C70",
+      "claim": "Stimuli that more strongly drive a neuron might cause faster recovery from the inactivation of sodium channels and the prior action potential's refractory period.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, stimuli that more strongly drive a neuron (i.e. motion in the preferred direction in our case) might cause faster recovery from the inactivation of sodium channels (Bean, 2007) and the prior action potential's refractory period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the mechanism of action potential generation and a citation to Bean, 2007.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "05fe4be9-24f6-4765-b188-bcd0f36a9631",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C71",
+      "claim": "With stimuli that weakly drive or inhibit the neuron, the raising K+ permeability might hinder the depolarization and retard the threshold potential of a subsequent action potential, resulting in lower firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "With stimuli that weakly drive or inhibit the neuron (i.e. motion in the null direction), the raising K+permeability might hinder the depolarization and retard the threshold potential of a subsequent action potential, resulting in lower firing rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the mechanism of action potential generation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "9eb5bc97-dbed-42ba-8643-2e87d7b489b8",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C72",
+      "claim": "MIRS could preferentially modify permeation of K+ channels, leading to alternations of action potential generation in a manner of ongoing firing levels depended on sensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our computational simulations do not simulate every stage, from ion channel dynamics to the generation of action potentials, our data are consistent with an ionic mechanism underlying MIRS: MIRS could preferentially modify permeation of K+channels, leading to alternations of action potential generation in a manner of ongoing firing levels depended on sensory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the combined experimental and simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "a602fcea-08e2-4e2b-8f86-72f00fccf0d6",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C73",
+      "claim": "MIRS causes a sensory-specific gain modulation in visual responses of the same neuron and behavioral performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the unidirectional behavioural and neuronal effects of electrical stimulation (Figure 6D), MIRS causes a sensory-specific gain modulation in visual responses of the same neuron and behavioral performance (Figure 6C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figures 6C and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "829d69d2-09c6-430b-8ef5-6d005d6fcced",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C74",
+      "claim": "The MIRS effects on behavioral and neuronal responses were reversible after MIRS.",
+      "claim_type": "EXPLICIT",
+      "source": "The MIRS effects on behavioral and neuronal responses were revisable after MIRS in our observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "26de0e98-f31f-469e-af80-cc127d5b436e",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C75",
+      "claim": "Pigeons highly depend on vision as creatures of flight.",
+      "claim_type": "EXPLICIT",
+      "source": "Pigeons, as creatures of flight, highly depends on vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge about pigeons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "94ae5e3a-ff8c-42b2-8cdf-8f10ea65b817",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C76",
+      "claim": "While pigeons fly or walk, the surrounding environment generates a large field of visual motion over the entire retina, known as optic flow.",
+      "claim_type": "EXPLICIT",
+      "source": "While they fly or walk, the surrounding environment generates a large field of visual motion over the entire retina, known as optic flow (Gibson, 1951).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge and a citation to Gibson, 1951.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "6ec76a9d-66d9-45bf-a4f4-e7cf157d92cc",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C77",
+      "claim": "In the presence of visual motion, pigeons' eyes reflexively move to maintain stabilization of image on the retina, by ocular movements known as the optokinetic nystagmus (OKN).",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of this visual motion, pigeons' eyes reflexively move to maintain stabilization of image on the retina, by ocular movements known as the optokinetic nystagmus (OKN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about OKN.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "078a9f28-7057-4690-9977-3cb47a2cfcdf",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C78",
+      "claim": "The quantum cascade mid-infrared laser (QCL) used had a constant radiation wavelength of 8.6 \u03bcm, and frequency of 34.88 THz.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied MIRS using a quantum cascade mid-infrared laser (QCL, Institute of Semiconductors, Chinese Academy of Sciences) with a constant radiation wavelength of 8.6 \u03bcm, and frequency of 34.88 THz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "91fc9551-fefe-4349-8664-d8c1a61a33a6",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C79",
+      "claim": "The pulse train of MIRS lasted 30 or 120 seconds with a pulse width of 2 \u03bcs, a repetition frequency of 200 kHz, and a duty cycle of 40%.",
+      "claim_type": "EXPLICIT",
+      "source": "The pulse train of MIRS lasted 30 or 120 seconds with a pulse width of 2 \u03bcs, a repetition frequency of 200 kHz, and a duty cycle of 40% (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental parameters shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "1c19b666-7ca6-4198-999d-423a8e7ee52e",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C80",
+      "claim": "Electrical stimulation was generated using an isolated pulse stimulator and applied for 120 s in the pretectal nLM, with parameters of 0.2 mA, 100 \u03bcs pulse width, 133 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical stimulation was generated using an isolated pulse stimulator (A-M Systems, model 2100) and applied for 120 s in the pretectal nLM, with parameters of 0.2 mA, 100 \u03bcs pulse width, 133 Hz (Hao et al., 2015; Mann et al., 2018; Elias et al., 2021; Valverde et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental setup with citations to prior research using similar parameters.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "cea49936-b426-4463-ba98-4c30ed441008",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "claim_id": "C81",
+      "claim": "As the grating motion increased from 2 to 8 deg/s in preferred or null direction, average neuronal responses increased from ~45 to ~52 spikes/s or decreased from ~40 to ~33 spikes/s.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a gradation firing rate in recorded nLM neurons by grating speed: as the grating motion increased from 2 to 8 deg/s in preferred or null (negative velocity) direction, average neuronal responses increased from ~45 to~52 spikes/s or decreased from ~40 to~33 spikes/s, consistent with the results of prior research (Cao et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data and consistent with a citation to Cao et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a344f873-b2ee-4c40-a0ca-48ccb8c0e8c9",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MIRS applied to the pretectal nLM produces gain modulation of pursuit eye movements during optokinetic nystagmus (OKN) that depends on the strength of visual inputs. At 8 deg/s grating motion, MIRS significantly increased pursuit velocity in both T-N and N-T directions (C19, C20), with the modulation intensity depending on visual input strength (C23).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C18-C20, and C23 provide converging behavioral evidence with appropriate statistical tests (n=20 pigeons, p<0.001) showing that MIRS effects scale with visual stimulus strength. The ANOVA analysis (C23, F(4,79)=6.66, p=0.0001) demonstrates stimulus-dependent gain modulation, distinguishing MIRS from electrical stimulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "35bfd37f-4caa-4d5e-9cec-9759ad9ba2df",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MIRS bidirectionally modulates neuronal activity in the same nLM neuron depending on its ongoing sensory responsiveness level. During preferred direction motion, MIRS potentiated neuronal responses (C26: 59.02\u00b129.59 spikes/s, p=1.76\u00d710\u207b\u2076), while during null direction motion, MIRS further inhibited responses (C27: 29.16\u00b121.23 spikes/s, p=3.96\u00d710\u207b\u2074). This modulation was stronger for faster (8 deg/s) than slower (2 deg/s) motion (C28) and absent for still gratings (C29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24, C26-C29 provide robust neurophysiological evidence from simultaneous recording and stimulation in awake-behaving animals (37/43 neurons showed significant changes, p<0.01). The bidirectional modulation depending on sensory state is well-documented with appropriate statistics and controls (still grating condition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "05126ed1-2a66-47d9-bacc-29b50df2c422",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Electrical stimulation (ES) in the nLM produces unidirectional deflection of pursuit eye movements toward the T-N direction, independent of grating motion direction, contrasting with MIRS's stimulus-dependent gain modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C23 demonstrate that ES effects are fundamentally different from MIRS, with ES showing no dependence on visual input strength (F(4,25)=0.25, p=0.9094) while MIRS shows significant dependence (F(4,79)=6.66, p=0.0001). This control experiment strengthens the interpretation of MIRS as producing gain modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "62f4a7ab-8eb6-4c85-b1d0-fb573142baa5",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MIRS effects on both behavioral and neuronal responses scale with output power. Behavioral effects showed significant power dependence (C30: F(3,140)=3.4, p=0.0196), as did neuronal responses (C31: F(3,80)=7.92, p=0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C31 demonstrate dose-response relationships for MIRS at the behavioral and neuronal levels with appropriate ANOVA analyses. The parallel scaling at both levels strengthens the link between neuronal modulation and behavioral output.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "b39b9923-b2ff-4993-be6a-9e53ae8e6be3",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MIRS duration (30s vs 120s) did not significantly affect pursuit velocity modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 provides evidence that MIRS effects are established quickly and remain stable, with no significant difference between 30s and 120s durations (p=0.8651). This temporal characterization is important for understanding MIRS dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "dea8db63-8dd5-4469-a1cc-8ee474152fab",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MIRS applied to OKN-irrelevant brain regions (TeO and nRt) did not significantly alter pursuit velocities, demonstrating spatial specificity of MIRS effects to the nLM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C54-C56 provide anatomical controls showing no significant effects when MIRS was applied to adjacent visual nuclei not involved in OKN generation (TeO: p=0.31; nRt: p=0.63). The light spot diameter measurements (C55) support that the nLM could be effectively targeted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "7c804866-bfc1-4781-b416-d0de0629a487",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations reveal that MIRS at 34.88 THz selectively targets K+ channels through resonance absorption by carbonyl groups (-C=O) at the selectivity filter. The absorption spectrum shows fingerprint peaks at 33-37 THz and 50-55 THz for K+ channels (C34), distinct from water and Na+ channels (C35). The 34.88 THz frequency corresponds to collective in-plane bending vibrations of -C=O groups (C61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37, C60-C63 provide computational evidence for the molecular mechanism using established MD simulation methods. The selective absorption by K+ channels over Na+ channels and water is demonstrated through absorption spectra and quantum chemistry calculations. However, the simulations use simplified models and do not fully bridge from ion channel dynamics to action potential generation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "0991f833-9823-4726-9011-e23f98abf14c",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MIRS selectively enhances K+ permeability through increased potential of mean force (PMF) at the channel exit site (1.15-1.4 fold increase for field strengths 1.0-2.5 V/nm), while Na+ channel PMF remains near 1.0. This enhancement scales with MIRS output power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C39, and C67 demonstrate selective modulation of K+ over Na+ channels using steered molecular dynamics and PMF calculations. The dose-response relationship between field strength and K+ permeability is consistent with experimental observations of power-dependent effects. However, the field strengths used (1.0-2.5 V/nm) require validation against actual tissue conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "75d20bc4-9ee1-4a1d-ba5c-5e9fcbd20be6",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The proposed mechanism links enhanced K+ permeability to bidirectional neuronal modulation: increased K+ flow causes faster repolarization and shortened action potential duration, which can facilitate firing during strong excitatory inputs (preferred direction) or hinder firing during weak/inhibitory inputs (null direction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C68-C72 propose a mechanistic link between K+ channel modulation and observed neuronal responses, but this remains largely inferential. While C45 provides some experimental evidence for shortened action potential duration (p<0.05), the authors acknowledge that simulations do not cover the full pathway from ion channel dynamics to action potential generation (C72). The mechanism is plausible but requires more direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "34b1f3b4-f361-4697-a730-48d98f332aaf",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MIRS effects are argued to be non-thermal based on: (1) fiber-to-recording distance of 848\u00b1351 \u03bcm limiting thermal changes to <2\u00b0C (C43), and (2) prior in vitro evidence showing no thermal effects at distances >300 \u03bcm (C42).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C43 address the thermal mechanism but the evidence is incomplete. While C43 provides distance measurements and cites thermal modeling (Tan et al., 2022), direct temperature measurements during MIRS in the current study are not reported. The behavioral and neuronal evidence (stimulus-dependent modulation) is inconsistent with simple thermal effects, but more rigorous thermal controls would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "5ac9a4ed-c5a5-40eb-8e0c-d0424d1434c0",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MIRS caused shortened action potential duration in recorded neurons (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 provides experimental evidence for action potential shortening consistent with increased K+ currents, supported by Figure 6\u2014figure supplement 1 and statistical analysis. This bridges computational predictions with experimental observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "1900dc96-bbc4-4ca4-b450-b649ba70d84c",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Recorded nLM neurons showed expected physiological properties: inhibition during saccades (C25) and graded firing rates with grating speed (C81), consistent with prior research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C81 validate the recording quality and confirm that neurons exhibit expected functional properties documented in prior literature. These are important controls but represent confirmatory rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "02d4a508-820c-44e5-ba10-2b48e91b63f9",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior literature establishes that infrared stimulation (both NIRS and MIRS) can modulate neuronal activity and behavior in various preparations, providing context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C14 accurately summarize prior work on infrared neuromodulation with appropriate citations. These establish the scientific context but are not results of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The nLM is an evolutionarily conserved pretectal nucleus essential for OKN generation, with well-characterized connectivity, directional selectivity, and functional properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17, C47-C53, C75-C77 accurately describe established anatomical and functional properties of the nLM and OKN system with appropriate citations. This provides essential background but represents prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "0a710dfc-c589-4d43-8221-82b43b9f5747",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Deep brain stimulation and optogenetics represent current neuromodulation approaches with different advantages and limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C6 accurately characterize existing neuromodulation technologies with appropriate citations, providing context for positioning MIRS as an alternative approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "45df5322-59ce-44b8-90ff-cb01c0697271",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study used specific MIRS parameters (8.6 \u03bcm wavelength, 34.88 THz frequency, 2 \u03bcs pulse width, 200 kHz repetition rate, 40% duty cycle) and ES parameters (0.2 mA, 100 \u03bcs pulse width, 133 Hz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 document experimental parameters essential for reproducibility. These are methodological details rather than results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "6c141479-e346-4bb3-9c87-bb2d2ffaf1d0",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "MIRS represents a promising neuromodulation approach that can implement multiplicative gain modulation in a sensory input-dependent manner without genetic manipulation, with reversible effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C57-C59, C73-C74 represent the authors' conclusions about MIRS as a neuromodulation tool. These are well-supported by the experimental data showing stimulus-dependent bidirectional modulation (C73) and reversibility (C74), distinguishing MIRS from optogenetics (C59) and electrical stimulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "f3abeb66-9e95-4934-9e34-19b0b55d1471",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior research showed that MIRS can modulate action potential generation in vitro through K+ currents (C44) and accelerate associative learning in mice (C46).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C46 accurately cite prior work (Liu et al., 2021; Zhang et al., 2021) that provides important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    },
+    {
+      "id": "1812ea82-21c3-45f3-9ee2-5128f5b3be01",
+      "content_id": "65bbef38-0023-4bc5-9f02-c605afc88003",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Action potential generation involves ~10\u2077 ions permeating across the membrane in milliseconds, with single ion permeation occurring on nanosecond timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 describe established biophysical principles and cite appropriate literature (Kopec et al., 2018) to justify the simulation approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:25:40.091684Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "83804f26-5dba-4a09-9507-ebafabc02e0e",
+      "result_id": "a344f873-b2ee-4c40-a0ca-48ccb8c0e8c9"
+    },
+    {
+      "claim_id": "309de9f1-c353-4a74-83c5-884f1715a6d1",
+      "result_id": "a344f873-b2ee-4c40-a0ca-48ccb8c0e8c9"
+    },
+    {
+      "claim_id": "ddea3d80-54bf-42e1-95cd-d984510059e0",
+      "result_id": "a344f873-b2ee-4c40-a0ca-48ccb8c0e8c9"
+    },
+    {
+      "claim_id": "b62e55f9-1584-4373-9c28-dc5d01223bbb",
+      "result_id": "a344f873-b2ee-4c40-a0ca-48ccb8c0e8c9"
+    },
+    {
+      "claim_id": "f79d218d-bf86-48b2-ab50-726ea412ca12",
+      "result_id": "a344f873-b2ee-4c40-a0ca-48ccb8c0e8c9"
+    },
+    {
+      "claim_id": "ee3c50ff-da03-4096-a46d-9ee7586d84f9",
+      "result_id": "35bfd37f-4caa-4d5e-9cec-9759ad9ba2df"
+    },
+    {
+      "claim_id": "b8a8c49e-19ad-475b-970e-65101b2a312f",
+      "result_id": "35bfd37f-4caa-4d5e-9cec-9759ad9ba2df"
+    },
+    {
+      "claim_id": "224b76d7-e96b-4932-9d46-976f76a79eb6",
+      "result_id": "35bfd37f-4caa-4d5e-9cec-9759ad9ba2df"
+    },
+    {
+      "claim_id": "c9b7cbe3-1253-45c2-a0e0-636ca17ea9c6",
+      "result_id": "35bfd37f-4caa-4d5e-9cec-9759ad9ba2df"
+    },
+    {
+      "claim_id": "47715a66-317a-47f7-bef8-e8819619da63",
+      "result_id": "35bfd37f-4caa-4d5e-9cec-9759ad9ba2df"
+    },
+    {
+      "claim_id": "0c870c84-1304-47a0-b625-768dd50af5a5",
+      "result_id": "35bfd37f-4caa-4d5e-9cec-9759ad9ba2df"
+    },
+    {
+      "claim_id": "eee05005-404f-4de9-92e9-dfb7a5c3643a",
+      "result_id": "05126ed1-2a66-47d9-bacc-29b50df2c422"
+    },
+    {
+      "claim_id": "f79d218d-bf86-48b2-ab50-726ea412ca12",
+      "result_id": "05126ed1-2a66-47d9-bacc-29b50df2c422"
+    },
+    {
+      "claim_id": "113ecfff-6a8a-40eb-a9a1-099f0905ffe8",
+      "result_id": "62f4a7ab-8eb6-4c85-b1d0-fb573142baa5"
+    },
+    {
+      "claim_id": "4f28453f-f4fa-4c02-aac0-19519b4b7f33",
+      "result_id": "62f4a7ab-8eb6-4c85-b1d0-fb573142baa5"
+    },
+    {
+      "claim_id": "20c50a52-cb66-4a62-94f4-682f17fac0d6",
+      "result_id": "b39b9923-b2ff-4993-be6a-9e53ae8e6be3"
+    },
+    {
+      "claim_id": "c6dd3575-d82e-47f0-980a-1dc972076f3f",
+      "result_id": "dea8db63-8dd5-4469-a1cc-8ee474152fab"
+    },
+    {
+      "claim_id": "4de3522a-e4df-4faf-bb6c-cfe78571a1da",
+      "result_id": "dea8db63-8dd5-4469-a1cc-8ee474152fab"
+    },
+    {
+      "claim_id": "c080f5db-9b12-469b-8e3c-5c5014814c6d",
+      "result_id": "dea8db63-8dd5-4469-a1cc-8ee474152fab"
+    },
+    {
+      "claim_id": "b396370e-4bff-4231-99c3-3fa8333943de",
+      "result_id": "dea8db63-8dd5-4469-a1cc-8ee474152fab"
+    },
+    {
+      "claim_id": "8f570cd0-a77d-49a9-916f-9c5b6dbbd0b4",
+      "result_id": "7c804866-bfc1-4781-b416-d0de0629a487"
+    },
+    {
+      "claim_id": "4b6fc5fc-1c5c-4864-9917-50fa98492ff3",
+      "result_id": "7c804866-bfc1-4781-b416-d0de0629a487"
+    },
+    {
+      "claim_id": "8450c7bb-494a-4fc3-9ab9-abc514c02a91",
+      "result_id": "7c804866-bfc1-4781-b416-d0de0629a487"
+    },
+    {
+      "claim_id": "20a4358b-e4c0-4b2c-95f7-5ce8bef51bcb",
+      "result_id": "7c804866-bfc1-4781-b416-d0de0629a487"
+    },
+    {
+      "claim_id": "4446d11f-208c-496f-9cad-f4d95362b219",
+      "result_id": "7c804866-bfc1-4781-b416-d0de0629a487"
+    },
+    {
+      "claim_id": "b6d286ac-cf93-42dc-8016-ea2a545d7154",
+      "result_id": "7c804866-bfc1-4781-b416-d0de0629a487"
+    },
+    {
+      "claim_id": "0e33a1f1-ee4b-4f2f-bf16-1b8afd79bc6c",
+      "result_id": "7c804866-bfc1-4781-b416-d0de0629a487"
+    },
+    {
+      "claim_id": "dfa56042-ffb9-4a2f-9a6f-eafda25fe652",
+      "result_id": "7c804866-bfc1-4781-b416-d0de0629a487"
+    },
+    {
+      "claim_id": "f32751d1-2504-4732-9098-943eb217c593",
+      "result_id": "0991f833-9823-4726-9011-e23f98abf14c"
+    },
+    {
+      "claim_id": "474de5e8-cbb2-4e60-81b4-8cc7aa1f6350",
+      "result_id": "0991f833-9823-4726-9011-e23f98abf14c"
+    },
+    {
+      "claim_id": "f3898b33-635b-4da6-ab87-3110852f876b",
+      "result_id": "0991f833-9823-4726-9011-e23f98abf14c"
+    },
+    {
+      "claim_id": "a5ce6837-2232-4bf0-8d74-4aa85e8b0738",
+      "result_id": "75d20bc4-9ee1-4a1d-ba5c-5e9fcbd20be6"
+    },
+    {
+      "claim_id": "6007ad36-9170-46c1-a7bb-d61ef0a68b10",
+      "result_id": "75d20bc4-9ee1-4a1d-ba5c-5e9fcbd20be6"
+    },
+    {
+      "claim_id": "a1978b69-e324-427d-be2d-07ef496081e1",
+      "result_id": "75d20bc4-9ee1-4a1d-ba5c-5e9fcbd20be6"
+    },
+    {
+      "claim_id": "9c46099a-d65a-47e0-ab23-1dbf090ef882",
+      "result_id": "75d20bc4-9ee1-4a1d-ba5c-5e9fcbd20be6"
+    },
+    {
+      "claim_id": "05fe4be9-24f6-4765-b188-bcd0f36a9631",
+      "result_id": "75d20bc4-9ee1-4a1d-ba5c-5e9fcbd20be6"
+    },
+    {
+      "claim_id": "9eb5bc97-dbed-42ba-8643-2e87d7b489b8",
+      "result_id": "75d20bc4-9ee1-4a1d-ba5c-5e9fcbd20be6"
+    },
+    {
+      "claim_id": "c533d66e-e247-4825-9dee-c58a0374d36f",
+      "result_id": "34b1f3b4-f361-4697-a730-48d98f332aaf"
+    },
+    {
+      "claim_id": "bce5357f-594f-46ed-9546-fa9f02c02bbf",
+      "result_id": "34b1f3b4-f361-4697-a730-48d98f332aaf"
+    },
+    {
+      "claim_id": "dfec78bc-845e-4d6e-8c67-bf2ed13e3884",
+      "result_id": "34b1f3b4-f361-4697-a730-48d98f332aaf"
+    },
+    {
+      "claim_id": "fb350302-6e04-4d62-bdd9-c29119878a92",
+      "result_id": "5ac9a4ed-c5a5-40eb-8e0c-d0424d1434c0"
+    },
+    {
+      "claim_id": "2a3eee20-b930-44bc-b678-cd03116c57ab",
+      "result_id": "1900dc96-bbc4-4ca4-b450-b649ba70d84c"
+    },
+    {
+      "claim_id": "cea49936-b426-4463-ba98-4c30ed441008",
+      "result_id": "1900dc96-bbc4-4ca4-b450-b649ba70d84c"
+    },
+    {
+      "claim_id": "d686eeb4-1011-4796-b349-ca50b0302444",
+      "result_id": "02d4a508-820c-44e5-ba10-2b48e91b63f9"
+    },
+    {
+      "claim_id": "8bb8b9c3-86b9-4eeb-be1a-559cf7f50082",
+      "result_id": "02d4a508-820c-44e5-ba10-2b48e91b63f9"
+    },
+    {
+      "claim_id": "25878fdf-e785-4ca0-83f2-12176f4a845c",
+      "result_id": "02d4a508-820c-44e5-ba10-2b48e91b63f9"
+    },
+    {
+      "claim_id": "0e618f46-9e15-4dbc-af4d-d2b788fc7ccc",
+      "result_id": "02d4a508-820c-44e5-ba10-2b48e91b63f9"
+    },
+    {
+      "claim_id": "44c5ad62-d33c-4272-ab7f-eab016e8a575",
+      "result_id": "02d4a508-820c-44e5-ba10-2b48e91b63f9"
+    },
+    {
+      "claim_id": "8b04bd31-d9a1-4492-bda8-09361caa0e40",
+      "result_id": "02d4a508-820c-44e5-ba10-2b48e91b63f9"
+    },
+    {
+      "claim_id": "2106b5e0-b87b-4e93-a0fd-fb5e0d8a9f2a",
+      "result_id": "02d4a508-820c-44e5-ba10-2b48e91b63f9"
+    },
+    {
+      "claim_id": "f934e270-817b-4486-b0a0-a4a25c336603",
+      "result_id": "02d4a508-820c-44e5-ba10-2b48e91b63f9"
+    },
+    {
+      "claim_id": "aa6d2668-2078-4b5b-8068-437d984699d8",
+      "result_id": "02d4a508-820c-44e5-ba10-2b48e91b63f9"
+    },
+    {
+      "claim_id": "8b76f95b-1929-4a58-91d3-2a78a762859f",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "1ae5521e-6570-44f6-9810-66591833d63e",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "205d946c-4067-4efc-bd77-716b4c6aacbb",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "878f5c5b-d614-4a24-9817-ec6efc494b88",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "3fc3ecf8-76fb-49a2-94e3-27f250ca00d3",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "84f7463a-0708-405b-82b0-d9536df07e0b",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "87e1ef73-f5fc-43c3-915f-1c24588df4bf",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "1eb69d33-1c8b-45ed-8b1c-f85e6a8a238b",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "ca34214a-3da5-4eaa-a9a6-a0ca206ac285",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "18d642a6-d936-4cc0-86c4-942c4fae3212",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "26de0e98-f31f-469e-af80-cc127d5b436e",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "94ae5e3a-ff8c-42b2-8cdf-8f10ea65b817",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "6ec76a9d-66d9-45bf-a4f4-e7cf157d92cc",
+      "result_id": "bcd15e80-4650-49d2-8b2a-e1fc078f238f"
+    },
+    {
+      "claim_id": "251f78d7-a82e-42eb-ab15-410189185194",
+      "result_id": "0a710dfc-c589-4d43-8221-82b43b9f5747"
+    },
+    {
+      "claim_id": "dafc1eb8-5f5b-4ea6-9f9e-f4d94d21e45a",
+      "result_id": "0a710dfc-c589-4d43-8221-82b43b9f5747"
+    },
+    {
+      "claim_id": "078a9f28-7057-4690-9977-3cb47a2cfcdf",
+      "result_id": "45df5322-59ce-44b8-90ff-cb01c0697271"
+    },
+    {
+      "claim_id": "91fc9551-fefe-4349-8664-d8c1a61a33a6",
+      "result_id": "45df5322-59ce-44b8-90ff-cb01c0697271"
+    },
+    {
+      "claim_id": "1c19b666-7ca6-4198-999d-423a8e7ee52e",
+      "result_id": "45df5322-59ce-44b8-90ff-cb01c0697271"
+    },
+    {
+      "claim_id": "d68ee683-fc01-41ed-8911-4b81d2dfb858",
+      "result_id": "6c141479-e346-4bb3-9c87-bb2d2ffaf1d0"
+    },
+    {
+      "claim_id": "d272ae4f-ac9b-48e0-bd82-387e3c420258",
+      "result_id": "6c141479-e346-4bb3-9c87-bb2d2ffaf1d0"
+    },
+    {
+      "claim_id": "8d2a6568-3a6c-43fd-87a9-57ed954b68a3",
+      "result_id": "6c141479-e346-4bb3-9c87-bb2d2ffaf1d0"
+    },
+    {
+      "claim_id": "276ebd84-e4fe-4f1a-9acb-1f3308cc1291",
+      "result_id": "6c141479-e346-4bb3-9c87-bb2d2ffaf1d0"
+    },
+    {
+      "claim_id": "a602fcea-08e2-4e2b-8f86-72f00fccf0d6",
+      "result_id": "6c141479-e346-4bb3-9c87-bb2d2ffaf1d0"
+    },
+    {
+      "claim_id": "829d69d2-09c6-430b-8ef5-6d005d6fcced",
+      "result_id": "6c141479-e346-4bb3-9c87-bb2d2ffaf1d0"
+    },
+    {
+      "claim_id": "b276d2f0-f82b-4554-ad91-c51241f084ee",
+      "result_id": "f3abeb66-9e95-4934-9e34-19b0b55d1471"
+    },
+    {
+      "claim_id": "0116888d-5952-4349-8df2-fcbc78697d39",
+      "result_id": "f3abeb66-9e95-4934-9e34-19b0b55d1471"
+    },
+    {
+      "claim_id": "e0faefad-3a47-4648-b831-bb60b86782e2",
+      "result_id": "1812ea82-21c3-45f3-9ee2-5128f5b3be01"
+    },
+    {
+      "claim_id": "4e849139-0089-4767-8c5d-adbbe1da0e91",
+      "result_id": "1812ea82-21c3-45f3-9ee2-5128f5b3be01"
+    },
+    {
+      "claim_id": "20d7aba8-c227-45ce-a779-27120355dd83",
+      "result_id": "1812ea82-21c3-45f3-9ee2-5128f5b3be01"
+    }
+  ],
+  "comparisons": []
+}

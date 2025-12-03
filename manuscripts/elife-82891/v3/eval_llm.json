@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the scientific context and motivation for developing improved cryo-FIB sample preparation methods for cryo-ET. Claims describe the capabilities of cryo-ET for high-resolution structural biology (C1, C11, C13), the requirement for thin samples (C14, C15), and the established use of FIB-SEM for lamella preparation (C2, C16, C17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide well-established background knowledge supported by appropriate citations to the literature. They accurately describe the state of the field and the technical requirements for cryo-ET, providing necessary context for the presented work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The manuscript identifies limitations of existing cryo-FIB and cryo-CLEM approaches, including blind milling (C3, C19, C20), sample transfer requirements (C4), insufficient correlation accuracy (C5, C28, C33), and the need for fiducial markers (C23-C27). The authors propose that coincident imaging could address these limitations (C34, C35, C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of prior work limitations is well-supported by citations to Arnold et al. 2016 and Gorelick et al. 2019. The reported correlation errors (0.2-1 \u03bcm for Arnold; <420 nm X, <220 nm Y for Gorelick) and success rates (60% for 200-300 nm lamellae) provide quantitative context for the problem being addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors developed a coincident three-beam cryogenic correlative microscope by integrating a tilted objective lens, cryogenic microcooler, and custom positioning stage into an existing FIB-SEM system. The key design feature is placement of the optical objective below the sample, enabling simultaneous FM, SEM, and FIB imaging without stage movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The system design and integration are well-documented with detailed descriptions and figures. The design rationale is clearly explained, and the claimed advantages (C42-C46) logically follow from the coincident geometry. The NA of 0.85 and compatibility with existing FIB-SEM systems are specific, verifiable specifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The optical microscope subsystem features a tilted objective lens (NA 0.85, WD ~1 mm) positioned in high vacuum, four fluorescence channels plus reflected light microscopy, and switchable astigmatic PSF shaping using cylindrical lenses. The objective lens is vacuum-compatible and maintains imaging performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optical design is thoroughly described with specific component specifications (Nikon CFI L Plan EPI 100xCRA, Semrock filters). Vacuum compatibility is validated by residual gas analysis (C62) and repeated pump/flush cycles (C63). The astigmatic PSF implementation using Stokes cross-cylinder lenses is a well-established optical technique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "The cryogenic sample holder uses a Joule-Thomson microcooler providing ~200 mW cooling power, reaching <108 K in ~2 hours with >9 hour uptime. The system achieves peak-to-peak vibrations <1 nm and drift ~1 nm/min (X) and ~0.5 nm/min (Y), while maintaining sample vitrification and allowing three-beam access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cooling performance is quantitatively characterized with temperature and time data (Figure 3d). Vibration measurements (Figure 3f) demonstrate sub-nanometer performance across all directions. The design requirements (C70-C74) are clearly stated and the solution is well-documented. The 500 Hz vibration peaks are appropriately attributed to the JT expansion mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C97",
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "The positioning stage provides 5 degrees of freedom (X, Y, Z, Rx, Rz) using piezo stick-slip actuators with crossed roller bearings. The microcooler mounts via kinematic coupling with ceramic balls. Vibrations remain <1 nm peak-to-peak when the microcooler is mounted on the stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stage design is well-documented with specific components (SmarAct SLC series) and mechanical details. The kinematic mounting approach is appropriate for precision positioning. Vibration performance is maintained when the microcooler is integrated (C102, Figure 4d), demonstrating successful mechanical integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C115"
+    ],
+    "result": "The three-beam alignment procedure uses thin grid foil (15-50 nm) to achieve coincidence of SEM, FIB, and optical beams. After initial alignment, samples can be positioned for targeted milling by centering and focusing the fluorescent ROI in the light microscope, automatically aligning it to the FIB center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The alignment procedure is clearly described and logical. Using thin grid foil for alignment is appropriate as it provides contrast in all three imaging modalities. The key advantage\u2014that focusing and centering in the LM automatically aligns to the FIB (C115)\u2014directly follows from the coincident geometry and is demonstrated in the experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Live FM and RLM monitoring during FIB milling enables real-time quality control and correction of misalignments. Experiments with Drosophila and zebrafish myofibrils demonstrate that fluorescence signal persists during milling, reflected light intensity changes track lamella thinning, and misalignments can be detected and corrected at each milling step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The live monitoring capability is demonstrated with Video 1 and Figure 5. The observations about reflected light narrowing (C118) and fluorescence persistence (C120) are consistent with the expected physics. The ability to detect and correct misalignments (C122, C124) is clearly illustrated in Figure 5c, directly supporting the claimed improvement in sample preparation yield (C125).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Fluorescence-targeted lamella fabrication is demonstrated by targeting autophagic compartments in HeLa cells expressing mRFP-GFP-LC3. The workflow includes fluorescence-guided targeting, stepwise milling with monitoring, transfer to cryo-TEM, correlation of FM with TEM overview images, and tomogram acquisition showing no devitrification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents a complete proof-of-concept demonstration of the workflow (Figure 6). The use of the mRFP-GFP-LC3 autophagy reporter is well-established (cited to Kimura et al. 2007). The absence of devitrification in the tomograms (C134) validates that sample quality is maintained throughout the procedure, which is critical for the method's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "Astigmatic imaging using rotatable cylindrical lenses improves relocalization accuracy after stage movements to within 90 nm along the optical axis (Z direction), compared to 291 nm with widefield imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The improvement in Z-axis relocalization from 291 nm (widefield) to 89 nm (astigmatic) represents a >3-fold improvement and is supported by quantitative measurements (Figure 4c). The astigmatic PSF approach is well-established for 3D localization. However, the manuscript could benefit from more details on the number of measurements and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The system has several acknowledged limitations: AutoGrid-only compatibility (C135), working distance constraints preventing NA >1 objectives (C141), challenges with cryo-immersion objectives (C142), limited super-resolution options (C143), and requirement for sample loading into FIB-SEM for FM imaging (C140). Imaging through thick samples may induce aberrations (C138).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors provide a balanced discussion of limitations. The constraints are logical consequences of the design choices (e.g., WD requirement from cryogenic sample holder geometry). The comparison to external super-resolution approaches (C144-C146) appropriately notes that correlation accuracy limits the effective localization precision, which is an important consideration for users.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C125"
+    ],
+    "result": "The system is claimed to result in higher success rates in lamella fabrication (C9) and increased throughput (C10) due to the ability to monitor and correct the milling process in real-time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the capability for real-time monitoring and correction is clearly demonstrated, quantitative data on success rates and throughput improvements are not provided. Claims C9 and C10 are logical inferences from the demonstrated capabilities but lack direct experimental validation. Comparative success rate data (e.g., vs. the 60% reported by Arnold et al.) would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C164"
+    ],
+    "result": "The manuscript discusses several speculative future developments: compatibility with other manufacturers' systems (C54), quantitative single-fluorophore localization (C149), automated milling (C150, C151, C164), and integration of super-resolution microscopy (C152, C153).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly presented as future prospects rather than current capabilities. They represent reasonable extensions of the demonstrated technology but are speculative. The requirement for automatic alignment correction for automated milling (C151) is appropriately noted as requiring additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The authors conclude they have developed a coincident three-beam microscope enabling direct fluorescence-targeted lamella fabrication without repositioning or fiducial markers. The system features diffraction-limited widefield imaging (NA 0.85), astigmatic PSF capability, liquid nitrogen-free cooling with >9 hour uptime, and can be retrofitted to existing FIB-SEM systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims accurately reflect the demonstrated capabilities. The key achievements\u2014coincident imaging, elimination of fiducial markers and repositioning, live monitoring during milling\u2014are all experimentally validated. The specifications (NA 0.85, >9 hour uptime, <1 nm vibrations) are supported by measurements. The retrofit capability is demonstrated by the installation on a commercial system.",
+    "result_type": "MAJOR"
+  }
+]

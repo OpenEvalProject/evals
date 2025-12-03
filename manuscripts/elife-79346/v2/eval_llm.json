@@ -1,0 +1,469 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The manuscript establishes the background that PMM2 mutations cause the most common congenital disorders of glycosylation (CDG) in humans, and that the yeast gene SEC53 encodes a functional homolog. Prior work by Lao et al. (2019) constructed yeast strains with disease-equivalent mutations sec53-V238M and sec53-F126L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 provide well-established background knowledge about CDG, PMM2 function, and the yeast model system, all supported by appropriate citations to prior literature. The characterization of the V238M and F126L variants as affecting protein stability and dimerization respectively is supported by multiple structural and biochemical studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors evolved 384 yeast populations (96 wild-type SEC53, 192 sec53-V238M, 96 sec53-F126L) for 1000 generations. Populations with pACT1-sec53-V238M showed variable fitness trajectories with some reaching saturation early, while pACT1-sec53-F126L populations showed modest fitness gains. The pSEC53-sec53-V238M populations started with wild-type-like growth, suggesting pre-existing compensatory mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C32, C35-C40 describe the experimental design and growth dynamics observed during evolution, supported by OD600 measurements shown in Figure 1. The inference that pSEC53-sec53-V238M populations contained pre-existing compensatory mutations (C40) is reasonable given their initial wild-type-like growth rates (C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C109",
+      "C110"
+    ],
+    "result": "After 1000 generations, most populations compensated for the slow-growth phenotype, with greater fitness gains in pACT1-sec53-V238M populations compared to pACT1-sec53-F126L populations. This indicates that compensatory mutations are more numerous and/or more effective for the V238M allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C109-C110 are supported by the OD600 trajectory data in Figure 1C showing differential compensation between the two disease alleles. The inference that this reflects differences in the number or effectiveness of compensatory mutations (C110) is reasonable given the observed phenotypic differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Whole-genome sequencing of 188 evolved clones identified compensatory mutations. The pACT1-sec53-F126L clones accumulated significantly more mutations per clone (8.14 \u00b1 1.00) compared to pACT1-sec53-V238M (5.76 \u00b1 0.54) and wild-type (6.49 \u00b1 0.90). Most sequenced clones (131/188) were autodiploids despite benomyl screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C33, C41-C44 are supported by sequencing data analysis. The statistical comparison of mutation numbers (C42) includes confidence intervals and shows significant differences. The high frequency of autodiploids (C43) despite screening indicates a limitation of the benomyl selection method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C111"
+    ],
+    "result": "Mutations in negative regulators of Ras (IRA1, IRA2) were found across all experimental groups and are common in other evolution experiments. However, pACT1-sec53-V238M populations showed enrichment for mutations in Type 1 CDG homologs, which are typically under purifying selection in wild-type evolution experiments. The pACT1-sec53-V238M populations showed unique targets of selection while pACT1-sec53-F126L populations mostly acquired mutations in common targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C111 are supported by the mutation distribution analysis in Figure 2A-B. The binomial enrichment test (Figure 2B) provides statistical support for enrichment in pACT1-sec53-V238M and depletion in wild-type populations. The comparison with published datasets strengthens the conclusion about purifying selection (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C34",
+      "C49",
+      "C50",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Five missense mutations in PGM1 (encoding the minor isoform of phosphoglucomutase) were identified, making it the most commonly mutated gene. The mutational spectrum (all missense, no frameshift/nonsense) is consistent with selection for alteration-of-function rather than loss-of-function (posterior probability = 0.96). Additional mutations were found in other Type 1 CDG homologs including ALG9, ALG12, and ALG7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C34, C49-C50, C115-C118 are supported by sequencing data and Bayesian statistical analysis. The posterior probability calculation (C50) provides quantitative support for the alteration-of-function hypothesis. The identification of PGM1 as a known SEC53 genetic interactor (C117) is verifiable against interaction databases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Competitive fitness assays showed that the pACT1-sec53-V238M ancestor has a fitness deficit of \u221225.86 \u00b1 2.3% relative to wild-type. All five evolved pgm1 mutations are compensatory, conferring fitness benefits between 6.76% and 16.02%. The evolved alg9-S230R mutation is also compensatory. Evolved clones were generally more fit than reconstructed double mutants, indicating additional mutations contribute to fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are supported by flow cytometry-based competitive fitness assays with appropriate replication (\u226524 technical replicates of 4 biological replicates). The fitness measurements include confidence intervals and the comparison between evolved and reconstructed strains (C60) provides evidence for epistatic interactions (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Deletion of one copy of PGM1 (pgm1\u0394) improves fitness (\u221215.28 \u00b1 0.76%) in the pACT1-sec53-V238M background, indicating that loss-of-function is compensatory. A catalytically dead allele (pgm1-S120A) shows similar fitness improvement (\u221213.32 \u00b1 0.88%) that does not significantly differ from pgm1\u0394, demonstrating that PGM1 LOF is compensatory regardless of whether it arises from loss of coding sequence or enzyme activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by fitness assay data in Figure 3A. The statistical comparison between pgm1-S120A and pgm1\u0394 (C66) supports the conclusion that loss of enzymatic activity is sufficient for compensation (C67). The structural analysis showing evolved mutations cluster around the active site (C64) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The fitness effects of heterozygous and homozygous pgm1 mutants are not substantially different from each other in the pACT1-sec53-V238M background, indicating that the evolved pgm1 mutations are dominant by fitness assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by fitness measurements comparing heterozygous and homozygous strains (Figure 3\u2014figure supplement 3). The lack of substantial difference between heterozygous and homozygous effects supports the dominance conclusion (C69), though this contrasts with tetrad dissection results for pgm1\u0394.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Western blot analysis of invertase and carboxypeptidase Y (CPY) showed that the ancestral pACT1-sec53-V238M strain exhibits underglycosylation. Evolved pgm1 mutations, pgm1\u0394, and pgm1-S120A each restore glycosylation to near-wild-type levels in the sec53-V238M background but not in the sec53-F126L background, demonstrating allele-specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by Western blot data in Figure 3B and supplementary figures. The restoration of glycosylation by pgm1 mutations specifically in the sec53-V238M background (C74-C75) supports the conclusion of allele-specific compensation (C76). The molecular weight standards for invertase and CPY (C70-C71) are well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Tetrad dissection analysis confirmed that all five evolved pgm1 mutations, pgm1\u0394, pgm1-S120A, and the evolved alg9 mutation suppress sec53-V238M. Several pgm1 alleles (T521K, D295N, S120A, pgm1\u0394) also suppress sec53-F126L, though the degree of compensation is less based on colony sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by tetrad dissection data in Figure 4 and supplementary figures. The log-likelihood analysis (C78) provides statistical support for suppression. The observation of weaker suppression in the sec53-F126L background (C81) is based on visual assessment of colony sizes, which is less quantitative but consistent with fitness assay results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C112"
+    ],
+    "result": "The five evolved pgm1 mutations and pgm1-S120A, but not pgm1\u0394, are dominant suppressors of sec53-V238M in tetrad dissections with integrated wild-type PGM1. No pgm1 mutations are dominant suppressors in the sec53-F126L background. This demonstrates allele-specific dominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C112 are supported by tetrad dissection data with integrated PGM1 (Figure 4C-D, Figure 4\u2014figure supplement 2). The experimental design appropriately tests dominance by ensuring all haploid spores contain at least one wild-type PGM1 copy. The allele-specificity of dominance (C112) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Enzymatic characterization of purified recombinant Pgm1 proteins showed variable phosphoglucomutase activities ranging from near-wild-type (Pgm1-T231A) to non-detectable (Pgm1-R64C, Pgm1-D295N). Active mutant enzymes show 27-72% reduction in Vmax and altered substrate affinities. Thermostability did not differ between active enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 are supported by enzymatic activity assays on purified proteins (Figure 5B-C). The kinetic parameters include confidence intervals and statistical comparisons (C89-C90). The loss of activity for Pgm1-D295N is expected given the role of D295 in Mg2+ coordination (C85). All active forms show EDTA sensitivity (C86), confirming metal dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C13"
+    ],
+    "result": "The relationship between pgm1 fitness effects and Pgm1 Vmax is best fit by a quadratic rather than linear function, indicating that optimal fitness is attained by reducing but not eliminating Pgm1 activity. This demonstrates that reduction, but not elimination, of Pgm1 activity best compensates for the sec53-V238M allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C13 are supported by regression analysis of fitness versus enzymatic activity data (Figure 5D). The quadratic fit provides a better model than linear, supporting the conclusion that intermediate activity levels are optimal (C92). This is a key mechanistic finding explaining why missense mutations rather than null alleles were selected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "31P-NMR spectroscopy showed that wild-type Pgm1 and Pgm1-G514C have comparably low phosphomannomutase activity (3.5% and 3.0% of phosphoglucomutase activity). No phosphomannomutase activity was detected for Pgm1-D295N. M1P does not act as a competitive inhibitor in phosphoglucomutase assays, indicating that mutant Pgm1 does not have enhanced phosphomannomutase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by 31P-NMR spectroscopy data (Figure 5\u2014figure supplement 3A) and competitive inhibition assays (Figure 5\u2014figure supplement 3B). The conclusion that mutant Pgm1 does not compensate through enhanced phosphomannomutase activity (C96) is well-supported by both direct measurement and competitive inhibition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Glucose-1,6-bisphosphate (G16P) is required as an activator of both Pgm1 and Sec53 and can stabilize pathogenic Pmm2 variants. Metabolite extraction showed that strains heterozygous for pgm1-T521K or pgm1-D295N have statistically significant increases in intracellular G16P levels compared to wild-type PGM1 in the sec53-V238M background, but not in the SEC53-WT background. None of the mutant Pgm1 enzymes have detectable glucose-1,6-bisphosphatase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 are supported by metabolite quantification data (Figure 5\u2014figure supplement 4) with appropriate statistical analysis (Mann-Whitney U-test). The background-specific increase in G16P (C102-C103) suggests a mechanism involving G16P-mediated stabilization of Sec53-V238M. The lack of bisphosphatase activity (C101) rules out one potential mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "31P-NMR analysis of forward and reverse phosphoglucomutase reactions showed ratios of 3.0 \u00b1 1.2 and 4.3 \u00b1 1.1 for Pgm1-T231A and Pgm1-G514C respectively, compared to 7.4 \u00b1 3.1 for wild-type. However, these differences are not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by 31P-NMR spectroscopy data (Figure 5\u2014figure supplement 5) with appropriate statistical analysis (Mann-Whitney U-test). The lack of statistical significance (C105) indicates that altered forward/reverse reaction ratios do not explain the compensatory mechanism, though the trend toward lower ratios in mutants is noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Mutations were identified in downstream N-linked glycosylation pathway genes: ALG7 (acetylglucosaminephosphotransferase), ALG9 and ALG12 (mannosyltransferases). PROVEAN analysis predicts these mutations have deleterious effects on protein function, suggesting that reducing flux through downstream glycosylation steps alleviates the deleterious effects of sec53 disease-associated alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 are supported by sequencing data, established biochemical knowledge of pathway enzymes (C119-C120), and computational predictions (C121). The inference that reducing downstream pathway flux compensates for reduced M1P availability (C122) is reasonable but remains speculative without direct flux measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Evidence from human studies shows that there is not a direct correlation between clinical phenotypes and biochemical properties of PMM2, and that variants in the glucosyltransferase ALG6 have been implicated in worsening clinical outcomes of PMM2-CDG individuals, supporting the concept of downstream genetic modifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 cite established clinical observations that support the biological relevance of the yeast findings. The lack of genotype-phenotype correlation (C123) and identification of ALG6 as a modifier (C124) are well-documented in the CDG literature and provide important context for the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Recurrent mutations were identified in protein degradation pathway components: RPN5 (26S proteasome lid subunit) in pACT1-sec53-V238M, UBR1 (E3 ubiquitin ligase) in pACT1-sec53-F126L, and UBP3 (ubiquitin-specific protease) in both backgrounds. Multiple independent mutations in known SEC53-interactors RPN5, SRP1, and YNL011C were also observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 are supported by sequencing data analysis (Figure 2A). The identification of mutations in protein degradation pathways suggests that modulating protein stability/degradation may compensate for disease alleles. The observation of mutations in known SEC53 genetic interactors (C129) provides validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "PGM1 loss-of-function (pgm1\u0394) provides fitness benefits comparable to some evolved mutations and restores glycosylation, albeit recessively. Most evolved clones with pgm1 mutations are more fit than reconstructed strains, but there are no shared mutational targets among these clones, suggesting allele-specific epistatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 are supported by fitness assays, Western blots, and sequencing analysis. The observation that pgm1\u0394 phenocopies some evolved mutations (C130-C131) but that evolved clones are generally more fit (C133) suggests complex genetic interactions. The lack of shared targets (C134-C135) and inference of allele-specificity (C136) are reasonable conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "There is a discrepancy between tetrad dissection and fitness assay results for pgm1\u0394: it is not a dominant suppressor in tetrad analysis but the heterozygous allele confers fitness benefits in liquid culture. This likely results from differences in ploidy or growth medium between experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 identify an important experimental discrepancy and propose a reasonable explanation. The difference between haploid growth on agar plates versus diploid growth in liquid culture (C138) could account for the observed differences, though this remains speculative without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Three of four pgm1 mutations that suppress sec53-F126L (T521K, D295N, S120A) have no detectable enzymatic activity, while R64C (also inactive) does not suppress. Structural analysis indicates R64C and D295N affect active-site integrity, with R64 holding the catalytic serine in place and D295 coordinating essential Mg2+. T231A shows highest activity among mutants, while G514C and T521K occur in the phosphate-binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 integrate enzymatic activity data with structural knowledge. The differential suppression despite similar loss of activity (C139-C140) suggests mechanism complexity. The structural interpretations (C141-C145) are supported by citations to well-characterized PGM1 structures and are consistent with the observed biochemical properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "Comparing pgm1 fitness effects versus enzyme Vmax reveals an inverted U-shaped curve where reducing phosphoglucomutase activity improves fitness but complete loss overshoots the optimum. Plotting fitness versus kcat/Km shows a qualitatively similar trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147 are supported by regression analysis (Figure 5D). The quadratic relationship is statistically significant and provides key mechanistic insight. The caveat about comparing kcat/Km between mutant enzymes (C147) shows appropriate caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Compounds that raise G16P levels show promise for PMM2-CDG treatment. While yeast lacks a dedicated G16P synthase (unlike higher eukaryotes), intracellular G16P levels are increased in strains with pgm1-T521K or pgm1-D295N. However, it cannot be determined if this increase is sufficient to rescue glycosylation, and other metabolic changes may contribute. The observation that complete loss of Pgm1 activity improves growth suggests multiple mechanisms of suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C154 discuss potential mechanisms but acknowledge significant uncertainty. The increased G16P levels (C151) are measured but their sufficiency for rescue cannot be determined (C152). The speculation about other metabolic changes (C153) and multiple mechanisms (C154) is reasonable but lacks direct experimental support. This represents an important area for future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C14",
+      "C28",
+      "C29",
+      "C155"
+    ],
+    "result": "Experimental evolution is a powerful tool for identifying genes and pathways that compensate for human-disease-associated alleles. It allows identification of weak suppressors, suppressors with modest fitness effects, and complex compensatory interactions involving multiple mutations that are largely absent from current genetic interaction networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C28-C29, C155 are supported by the experimental results and citations to prior work demonstrating the utility of experimental evolution. The identification of PGM1 mutations, Type 1 CDG homologs, and complex genetic interactions validates this approach. The methodological advantages over traditional screens are well-articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The budding yeast S. cerevisiae is a powerful system for studying conserved aspects of eukaryotic cell biology. Many human genes can functionally complement their yeast homologs, and 'humanizing' yeast enables functional studies of human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 provide well-established background on yeast as a model organism, supported by appropriate citations. This contextualizes the use of yeast to study human PMM2-CDG and is consistent with extensive prior literature on humanized yeast models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Protein glycosylation involves attachment of glycans to polypeptides and plays vital roles in protein folding, stability, activity, and transport. Over 50% of human proteins are glycosylated, making it one of the most abundant protein modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 provide well-established background on protein glycosylation, supported by appropriate citations. The estimate that >50% of human proteins are glycosylated (C17) is widely accepted in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Twenty-four genes have been associated with Type 1 CDG in humans, and all but two have at least one functional homolog in yeast with most mapping one-to-one.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by established clinical knowledge (C113) and homology analysis (C114). This conservation between human and yeast validates the use of yeast as a model for studying CDG mechanisms.",
+    "result_type": "MINOR"
+  }
+]

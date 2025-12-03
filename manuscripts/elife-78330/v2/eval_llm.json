@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C36",
+      "C37",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors developed a microfluidic pairing device using antigen-coated lipid droplets to study immune synapse formation in B lymphocytes with high temporal resolution. The droplets are characterized as stiff substrates with mobile antigen at their surface, suitable for mimicking antigen-presenting cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C28, C36, C37, and C126-C132 collectively describe the methodological innovation and validation of the microfluidic system. The droplet characterization (stiffness, antigen concentration, diffusion constant) is supported by prior measurements and citations (C130-C132), and the system is validated with both cell lines and primary cells (C40, C126-C129). The approach is well-documented and appropriate for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C52",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Immune synapse formation in B cells consists of two temporal phases: early local events (DAG production peaking at ~3.25 min, F-actin polymerization peaking at ~3 min, antigen clustering) and late global events (centrosome polarization at ~5 min, Golgi at ~6.5 min, lysosome recruitment at ~6 min, nucleus reorientation and transport).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C52, and C41-C50 describe the temporal sequence of synapse formation events based on quantitative tracking data shown in Figure 2. The measurements are systematic, include appropriate controls (BSA vs. \u03b1IgG), and the timescales are consistent with prior work in T cells (C42, C106). The biphasic nature of synapse formation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "F-actin polymerization is essential for early local events of synapse formation (antigen clustering and BCR signaling) but not for late global events (centrosome and nucleus polarization). Latrunculin A treatment impaired antigen clustering and DAG production but accelerated centrosome polarization, while myosin II activity was not required for these early events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 are supported by systematic perturbation experiments shown in Figure 4. The latrunculin A data clearly demonstrate differential effects on local vs. global events, with appropriate controls (DMSO) and multiple readouts. The acceleration of centrosome polarization is explained by prior work on F-actin tethering (C58, C26). The myosin II experiments (C55) provide important negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Microtubules are required for late global events (centrosome and nucleus polarization) and maintain cell polarity by restricting F-actin polymerization to the immune synapse. Nocodazole treatment prevented organelle polarization but caused aberrant F-actin distribution throughout the cell, cell deformation, and blebbing, while preserving synaptic actin patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 are supported by comprehensive nocodazole experiments shown in Figure 5. The data demonstrate clear effects on organelle positioning (C63-C64) and reveal an unexpected role in restricting actin polymerization (C68, C73). The preservation of synaptic actin patterns (C71) while global actin distribution is disrupted is a key observation. The rescue by latrunculin A (C69, C92) provides strong support for the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "GEF-H1 mediates the microtubule-dependent restriction of F-actin polymerization to the immune synapse. Microtubules are acetylated upon BCR activation, leading to local GEF-H1 release and accumulation at the synapse. Nocodazole or SAHA treatment caused global GEF-H1 release and loss of actin polarization, while GEF-H1 silencing rescued the nocodazole phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C85 are supported by multiple lines of evidence in Figure 6: immunofluorescence showing microtubule acetylation (C76) and GEF-H1 accumulation at the synapse (C77), perturbation experiments with nocodazole and SAHA (C78-C79), and rescue experiments with siRNA (C82-C84). The specificity of GEF-H1 silencing is confirmed by rescue experiments (C83). The model is consistent with prior work (C74-C75, C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The GEF-H1-RhoA axis controls actin nucleation rather than myosin II activity to restrict actin polymerization. Constitutively active RhoA phenocopied nocodazole treatment, while dominant-negative RhoA prevented the nocodazole phenotype. Myosin II inhibition prevented blebbing but not aberrant actin polymerization or cell deformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 are supported by RhoA manipulation experiments (Figure 7) and myosin II inhibition experiments. The RhoA CA and DN experiments provide strong genetic evidence for the pathway (C86-C87), while the myosin II inhibition data (C90) distinguish between nucleation and contractility. The conclusion that actin nucleation is the key downstream effector (C91, C93) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C117"
+    ],
+    "result": "Microtubules maintain a unique immune synapse by restricting actin polymerization via GEF-H1. Microtubule-depleted cells formed multiple separated synapses and failed to merge contacted droplets into a single synapse. Control cells established a dominant polarity axis with stronger F-actin enrichment at one synapse, which was lost upon nocodazole treatment but restored by GEF-H1 silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 and C117 are supported by multiple synapse experiments shown in Figure 8A-F. The quantification of synapse number (C95), droplet merging behavior (C96), and F-actin asymmetry (C98) provide strong evidence. The rescue by GEF-H1 silencing (C99) and the SAHA phenotype (C100) further support the model. The experiments are well-controlled and the conclusions are justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C121"
+    ],
+    "result": "Microtubule-mediated maintenance of a single polarity axis is required for directional B cell migration. Nocodazole-treated cells exhibited more confined trajectories and larger directional changes compared to control cells, indicating impaired directional migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 and C121 are supported by migration tracking experiments shown in Figure 8G-I. The quantification of confinement ratio and directional change rate provides clear evidence for impaired directional migration. The connection to polarity axis maintenance is logical and supported by the prior results. However, the functional consequence for T-B cooperation (C105, C109, C121) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The microfluidic system supports functional immune synapse formation, as evidenced by EXOC7 enrichment at 45 min and validation in primary murine B cells showing antigen and actin enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 provide validation that the microfluidic system supports functional synapses. EXOC7 enrichment (C39) indicates lysosomal protease secretion, and the primary cell validation (C40) shows the findings are not restricted to the cell line. The data are shown in Figure 1\u2014figure supplement 1 and support the use of this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The centrosome and nucleus reorient together throughout immune synapse formation, independently of F-actin, with a strong correlation between their orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by tracking data in Figure 4C and correlation analysis in Figure 4G. The strong correlation (r=0.93) and the preservation of coordinated reorientation in latrunculin A-treated cells provide clear evidence. This finding is consistent with the physical association of these organelles (C47).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "The timescales for late polarization events in this study are shorter than those measured for B cells in other systems and closer to results found in T cells, possibly due to the properties of the antigen-presenting substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by comparison to prior literature (Yuseff et al., 2011; Ulloa et al., 2022; Spillane and Tolar, 2018; Gawden-Bone et al., 2018; Yi et al., 2013; Hooikaas et al., 2020). The inference about substrate properties is reasonable but speculative. The comparison is useful for contextualizing the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C123",
+      "C124"
+    ],
+    "result": "Microtubules act as a master regulator of actin polymerization in B lymphocytes, controlling both organelle repositioning and maintenance of a unique polarity axis through the GEF-H1-RhoA axis, which may operate via a 'Local Excitation Global Inhibition' model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 and C123-C124 represent the main conclusions of the study, synthesizing the findings from all experiments. The evidence from perturbation experiments, GEF-H1 silencing, RhoA manipulation, and multiple synapse assays strongly supports this model. The LEGI model analogy (C114, C124) is speculative but well-reasoned based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors propose a model where microtubule acetylation near the centrosome releases GEF-H1 locally at the synapse to activate RhoA and trigger formin-dependent actin nucleation, while GEF-H1 remains trapped on deacetylated microtubules elsewhere in the cell, resembling a Local Excitation Global Inhibition mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 present a mechanistic model integrating the current findings with prior work (S\u00e1ez et al., 2019; Seetharaman et al., 2021). The model is supported by the acetylation data (C76), GEF-H1 localization (C77-C78), SAHA experiments (C78-C79, C113), and the LEGI analogy (C114). While some aspects are inferential, the model is well-supported by the data and consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The authors speculate that histone deacetylase inhibitors could prevent hyperactivity of immune cells in pathological conditions by impairing B cell polarization toward the synapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is a speculative therapeutic implication based on the SAHA data showing impaired polarization. While the SAHA experiments support the mechanism, the therapeutic application to lymphoma or autoimmune diseases is highly speculative and would require extensive additional validation. The claim is appropriately framed as speculative in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose that localized GEF-H1 activation at the immune synapse concentrates resources for F-actin polymerization and proteolytic extraction at a single site, improving antigen extraction efficiency by maintaining high local protease concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C120 present a functional model for why synapse uniqueness matters for antigen extraction. While the logic is sound and consistent with prior work on GEF-H1 and exocyst assembly (S\u00e1ez et al., 2019), the model is inferential and not directly tested. The manuscript appropriately frames this as a proposal, but experimental validation would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C109",
+      "C122"
+    ],
+    "result": "The authors propose that the microtubule-mediated maintenance of a single polarity axis helps B cells properly extract, process, and present antigens to T lymphocytes, supports persistent migration to the T cell zone, and enables asymmetric cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105, C109, and C122 propose functional consequences of the findings for T-B cooperation and asymmetric division. While the migration data (C102-C103) support impaired directional migration, the specific consequences for antigen presentation, T-B cooperation, and asymmetric division are speculative and not directly tested. The manuscript appropriately frames these as proposals, but they remain uncertain without additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "The authors suggest that the interaction between actin and microtubules as a mechanism to control cell polarity might be common to a larger class of cells beyond lymphocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C125 is a broader speculation about the generality of the findings. While the mechanism is well-supported in B cells and analogous mechanisms exist in other systems (C25), the claim that this is common to a larger class of cells is speculative and would require testing in other cell types. This is appropriately framed as a speculation in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

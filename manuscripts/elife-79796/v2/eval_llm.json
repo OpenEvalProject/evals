@@ -1,0 +1,180 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes background knowledge about the Tae superfamily of T6SS toxins, including their delivery mechanism, substrate specificity, structural diversity, and the poorly understood molecular basis of organism-level specificity in interbacterial competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 represent well-established background knowledge supported by appropriate citations to prior work. These claims accurately describe the T6SS system, Tae toxin diversity, and peptidoglycan structure as documented in the literature. The authors correctly identify gaps in current understanding (C11) that motivate their study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "A DMS screen was developed and validated using a library of 902 Tae1 variants encompassing at least one amino acid substitution at every position in the 154-residue protein. The screen successfully identified known catalytic residues (Cys30 and His91) as critical for toxicity, validating the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe the experimental design and validation of the DMS approach. The identification of known catalytic residues as LOF mutations (C21, Figure 1D) provides strong validation that the screen accurately identifies functional determinants. The library composition (C20) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "DMS revealed that 54% of Tae1 variants were LOF and only 6% were GOF. K-means clustering identified that 56% of residues were LOFclus, with 78% of buried residues in this category. Unexpectedly, a ring-like zone of LOFclus residues extends around the entire enzyme circumference, including many poorly conserved surface residues distant from the catalytic core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C30 present the primary DMS findings with quantitative data from Figure 2. The clustering analysis is appropriately applied and the structural mapping clearly shows the extended functional surface. The observation that many functionally important surface residues are poorly conserved (C30) is well-supported by comparison with prior sequence conservation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Nine LOFclus variants were validated through individual lysis assays, NMR chemical shift perturbation experiments, and HPLC-based peptidoglycan degradation assays. Six of these residues (Leu21, Gly42, Gly48, Ala52, Gly56, Ser144) showed chemical shift perturbations upon PG binding, and two variants (Tae1S144A and Tae1G48S) showed reduced PG cleavage activity (29.1\u00b13.2% and 36.4\u00b14.2% reduction, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide strong orthogonal validation of DMS predictions using three independent methods (lysis assays, NMR, HPLC). The NMR data (Figure 3D-E) directly demonstrate PG binding at distal sites, and the HPLC data (Figure 3F) show functional consequences. Western blots control for expression differences (C32). The convergence of multiple experimental approaches strongly supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C55"
+    ],
+    "result": "Tae1 engages with the intact cell wall network through a more distributed three-dimensional interaction interface than previously appreciated, which is more extensive than most proteases or other enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C55 represent the major interpretive conclusion drawn from the DMS and NMR data. The ring-like distribution of functional residues (C29), NMR evidence of binding at distal sites (C33-C34), and functional validation (C35-C36) collectively support this model. The comparison to other enzymes is reasonable given the extensive functional surface identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Comparative DMS in D-Met media, which alters cell wall composition, revealed dramatic changes in the functional landscape: 50% fewer LOFclus residues (38 vs 86), more mixed residues (94 vs 56), and more GOFclus residues (18 vs 8). Overall, 58% of residues were classified differently. Three GOF variants (Asp134Asn, Ser147Ile, Ala116Thr) showed condition-specific increases in lysis only in D-Met media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe the comparative DMS experiment with quantitative results from Figure 4. The D-Met condition is well-established to alter PG composition (C37, supported by citations). The dramatic shift in functional classifications (C38-C41) is clearly documented, and the condition-specific GOF variants (C42) are validated by individual lysis assays (Figure 4F-G). However, some GOF effects may be due to increased expression rather than enhanced catalytic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "The functional contribution of different Tae1 surfaces is highly context-dependent, varying alongside composition of targeted cell walls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 represents the interpretive conclusion from the comparative DMS experiments. The dramatic differences in functional classifications between M9 and D-Met conditions (C38-C41) and the condition-specific GOF variants (C42) strongly support this conclusion. This finding has important implications for understanding Tae diversity across bacterial species with different cell wall compositions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The Tae1C110S variant was identified as the top GOF variant in D-Met and ranked 11th in M9. It lysed cells faster than wild-type in both conditions. Phylogenetic analysis revealed that approximately half of tae1-carrying bacterial species naturally encode serine at position 110.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe the identification and characterization of Tae1C110S. The DMS rankings (C43-C44) are clearly documented, lysis assays validate the GOF phenotype (C45, Figure 5B), and the phylogenetic analysis (C46, Figure 5C) is appropriately conducted. The natural occurrence of Ser110 in other species raises interesting evolutionary questions addressed in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Crystal structure analysis of Tae1C110S showed no major structural rearrangements (RMSD=0.746) but revealed that His91 protrudes away from the active site in a manner that would clash with the Tai1 immunity protein. ITC measurements showed that Tae1WT binds Tai1 with ~36-fold greater affinity (Kd=9.5 nM) than Tae1C110S (Kd=349.6 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 provide structural and biophysical characterization of the Tae1C110S-Tai1 interaction. The crystal structure (C47-C48, Figure 6A-B, PDB 7TVH) is properly solved and deposited. The ITC data (C49-C51, Figure 6C) are quantitative and show a substantial reduction in binding affinity. The structural explanation for reduced binding (His91 clash) is reasonable and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "P. aeruginosa strains expressing Tae1C110S from the endogenous locus showed substantially reduced fitness on solid media (where T6SS is induced) but not in liquid media. In contact-dependent competition with E. coli, PAC110S exhibited a substantially reduced competitive index compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 demonstrate the in vivo consequences of reduced Tai1 binding. The condition-specific fitness defect (C52-C53, Figure 6F and supplement 3) strongly suggests that Tae1C110S causes self-toxicity when T6SS is active. The reduced competitive index (C54, Figure 6I) further supports this interpretation. These experiments appropriately test the hypothesis that reduced immunity binding has fitness costs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57"
+    ],
+    "result": "Requirements to maintain protection from Tae activity through Tai1 binding may be a significant constraint on the mutational landscape of tae1 toxicity in the wild. Determinants for Tae1 cell wall-binding and immunity-binding partially overlap, and accommodation of multiple distinct functions likely constrains evolution of Tae enzymes despite intrinsic potential for enhanced toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56, and C57 represent the major evolutionary conclusions of the study. The demonstration that a hyperactive variant (Tae1C110S) has reduced immunity binding (C49-C51) and causes fitness costs in vivo (C52-C54) strongly supports the constraint hypothesis. The phylogenetic distribution of Ser110 variants (C46) and the overlap between functional surfaces for PG binding and immunity binding provide additional support. These conclusions are well-justified by the data.",
+    "result_type": "MAJOR"
+  }
+]

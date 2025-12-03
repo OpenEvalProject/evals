@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "Codetta is a computational method that uses profile HMMs from the Pfam database to infer genetic codes by aligning them to six-frame translations of input sequences and computing decoding probabilities for each codon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C18, C60, C62, and C63 collectively describe the Codetta methodology with appropriate citations and methodological details. The approach is clearly documented with specific parameters (e.g., probability threshold of 0.9999) and is supported by the Pfam database characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Codetta requires approximately 8-34 aligned consensus columns for >95% power to correctly infer codon meanings in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by subsampling analysis shown in Figure 1\u2014figure supplement 1, which systematically evaluated the relationship between the number of consensus columns and inference accuracy. The range varies by codon, which is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C64",
+      "C92"
+    ],
+    "result": "Codetta successfully validated on 462 yeast species, correctly predicting CUG translation consistent with known phylogenetic distributions in 453 species, including the predominant serine translation in C. albicans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C23, C64, and C92 are supported by analysis of yeast genomes with appropriate citations to prior work. The validation demonstrates Codetta's ability to recapitulate known genetic code variations, providing confidence in the method's accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C69"
+    ],
+    "result": "Saccharomycopsis malanga expresses both serine and leucine tRNACAG genes that are predominantly charged, suggesting ambiguous CUG translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, and C69 are supported by northern blotting and acid urea PAGE data shown in Figure 2C. The experimental evidence directly demonstrates expression and charging of both tRNA types, supporting the inference of ambiguous translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Codetta failed to infer CUG translation in nine yeast species, including B. inositovora and C. fragrans, despite evidence these species translate CUG as serine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 acknowledge a limitation of Codetta in detecting CUG translation in certain species. The failure is explained by inconsistent amino acid conservation at aligned positions (Figure 2\u2014figure supplement 1), and is supported by independent mass spectrometry evidence for serine translation in B. inositovora.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Codetta analyzed 251,571 bacterial and archaeal genomes, achieving 99.79% accuracy for sense codons and 99.80% accuracy for stop codons in a dereplicated dataset of 48,693 species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C30 describe the large-scale genomic survey with specific accuracy metrics supported by Table 2. The high accuracy rates and low '?' inference rates demonstrate the method's robustness across diverse genomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The most common Codetta error was inferring AGA/AGG arginine codons as lysine in 567 bacterial species with high GC content (0.52-0.77), likely due to GC-driven nonsynonymous substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C32 identify a systematic error and provide a mechanistic explanation based on GC content analysis. The correlation between high GC content and this specific error pattern is well-reasoned, though the explanation remains inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C71",
+      "C72"
+    ],
+    "result": "Eight bacterial genomes from uncultivated Bacilli were discovered to translate AGG as methionine, with AGG becoming the dominant methionine codon (209-235 per 10,000 codons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C35, C71, and C72 describe a novel genetic code discovery supported by extensive computational evidence (>2200 aligned Pfam columns from >480 domains) and phylogenetic analysis using GTDB. The high usage of AGG as methionine indicates an established reassignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C74",
+      "C75"
+    ],
+    "result": "The AGG to methionine reassignment in Bacilli likely evolved through changes in aminoacylation of an arginine tRNACCU, which acquired methionine identity elements while losing arginine identity element A20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36, C37, C74, and C75 provide a mechanistic explanation supported by tRNA sequence analysis (Figure 3C), genomic context analysis (Figure 3D), and MetRS sequence conservation (Figure 3\u2014figure supplement 1). The evidence converges on aminoacylation change rather than anticodon mutation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Two phage assemblies from the same metagenomic dataset were predicted to translate AGG as methionine, suggesting phage adaptation to the host's alternative genetic code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by Codetta analysis of phage genomes. The finding is consistent with phage adaptation to host translation machinery, though experimental validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Four clades with CGA/CGG reassignments share very low genomic GC content (0.26-0.38), depressed CGN-box codon usage, and in three Firmicute clades, loss of tRNAUCG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39-C42 describe common features across multiple reassignments supported by GC content data (Figure 4A), codon usage analysis (Figure 4B), and tRNA gene analysis. The convergent patterns suggest shared evolutionary mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Four new CGA/CGG reassignments were discovered: CGG to glutamine in Peptacetobacter, CGG to tryptophan in two Bacilli clades and Anaerococcus, and CGA/CGG to tryptophan in Absconditabacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 describe novel genetic code discoveries supported by Codetta analysis and supplementary figures showing phylogenetic context, tRNA genes, and multiple sequence alignments. However, the rarity of these codons means predictions are based on fewer aligned columns, increasing uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C44",
+      "C101"
+    ],
+    "result": "Low GC content driven by mutational bias is proposed as a major evolutionary force enabling codon reassignment in bacteria by reducing codon usage to low frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C43, C44, and C101 present an evolutionary model supported by observed correlations between low GC content and codon reassignments, with appropriate citations to prior work. The inference is well-reasoned but remains correlative rather than causative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "All five new bacterial reassignments affect arginine codons, which are predisposed to reassignment due to codon over-representation, GC variability (1-3 GC nucleotides), and unique tRNA decoding patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 synthesize findings and provide mechanistic explanations for why arginine codons are reassignment targets. The arguments are supported by citations to prior work on codon usage and tRNA wobble rules, though some aspects remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Some codon reassignments have convergently evolved multiple times: CGG to tryptophan in three bacterial clades, AGG to methionine in Bacilli and green algal mitochondria, and UGA to tryptophan in multiple lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 document convergent evolution of genetic code changes, supported by findings from this study and appropriate citations to prior work. The patterns suggest either shared evolutionary processes or constraints from conserved translational machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Analysis of outgroup species reveals potential intermediate stages of codon reassignment, including rare CGG usage without decoding tRNAs and variable CGG translation in Gracilibacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C88-C91 describe observations in outgroup species that may represent evolutionary intermediates. The evidence includes codon usage data and tRNA gene analysis, though the evolutionary interpretations remain inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Codetta has limitations: it cannot predict reassignment to noncanonical amino acids, cannot directly detect ambiguous translation, and cannot detect new start/stop codons or context-dependent stop codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 honestly acknowledge methodological limitations. These are logical consequences of the method's design (selecting among 20 canonical amino acids, assuming unambiguous translation, not modeling initiation/termination).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Historical context: The genetic code was proposed as a 'frozen accident' but alternative genetic codes have been discovered in over 30 lineages through various methods including direct protein sequencing and DNA sequence analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C15 provide historical background supported by appropriate citations to foundational work. These claims establish context for the current study and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Three evolutionary models explain codon reassignment: 'codon capture' (codon driven to extinction by GC bias/genome reduction), 'ambiguous intermediate' (stochastic dual decoding), and 'tRNA loss-driven reassignment' (inefficient translation drives substitutions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 describe established theoretical models with appropriate citations to original work and supporting examples. These models provide framework for interpreting the new discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Known UGA reassignments in bacteria occur in clades with low GC content: Mycoplasmatales/Entomoplasmatales (0.24-0.39), Absconditabacteria/Gracilibacteria (0.21-0.53), and insect endosymbionts (0.13-0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 compile GC content data for known reassignments with appropriate citations. This provides comparative context for the new discoveries and supports the GC content hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "tRNA anticodon-codon pairing rules dictate that U- and C-ending codons cannot be assigned separate meanings, and this constraint has been observed in all known genetic codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 state an established principle of tRNA wobble pairing supported by knowledge of genetic code structure. This constraint helps explain observed patterns of codon reassignment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Ambiguous CUG translation was previously demonstrated in Ascoidea asiatica, while S. malanga was reported to express only serine tRNACAG under different growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 cites prior work demonstrating ambiguous translation in A. asiatica and contrasts it with previous findings for S. malanga. The authors note their different growth conditions may explain detection of leucine tRNACAG expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "C. albicans CUG codons are stochastically decoded as 97% serine and 3% leucine due to dual aminoacylation of tRNACAG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 describes a well-established example of ambiguous translation supported by citations to Suzuki et al., 1997 and Gomes et al., 2007. This provides context for understanding ambiguous translation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In E. coli, tRNAUCU is modified to 5-methylaminomethyluridine and primarily decodes AGA with low AGG recognition; the reassigned Bacilli clade shows reduced AGA usage and preference for CGU, potentially avoiding ambiguous AGG translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 combine established knowledge about E. coli tRNA modification with observations about codon usage in the reassigned clade. The inference about avoiding ambiguous translation is reasonable but speculative.",
+    "result_type": "MINOR"
+  }
+]

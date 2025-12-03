@@ -1,0 +1,1988 @@
+{
+  "submission": {
+    "id": "56b2e4c3-1921-4087-b496-2d64d1ba2509",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:09:03.204025Z",
+    "updated_at": "2025-12-03T05:09:03.204025Z"
+  },
+  "content": [
+    {
+      "id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "submission_id": "56b2e4c3-1921-4087-b496-2d64d1ba2509",
+      "content_type": "manuscript",
+      "content_text": "# An in vivo reporter for tracking lipid droplet dynamics in transparent zebrafish\n\n## Authors\n\n- Dianne Lumaquin<sup>1</sup> ([ORCID: 0000-0002-5285-0467](https://orcid.org/0000-0002-5285-0467))\n- Eleanor Johns<sup>1</sup> ([ORCID: 0000-0001-6802-041X](https://orcid.org/0000-0001-6802-041X))\n- Emily Montal<sup>1</sup>\n- Joshua M Weiss<sup>1</sup> ([ORCID: 0000-0001-7340-4004](https://orcid.org/0000-0001-7340-4004))\n- David Ola<sup>1</sup>\n- Abderhman Abuhashem<sup>2</sup>\n- Richard M White<sup>1</sup> ([ORCID: 0000-0001-9099-9169](https://orcid.org/0000-0001-9099-9169)) \u2020\n\n### Affiliations\n\n1. Cancer Biology and Genetics Program, Memorial Sloan Kettering Cancer Center New York United States\n2. Weill Cornell/Rockefeller/Sloan Kettering Tri-Institutional MD-PhD Program New York United States\n3. Gerstner Sloan Kettering Graduate School of Biomedical Sciences, Memorial Sloan Kettering Cancer Center New York United States\n4. Developmental Biology Program, Memorial Sloan Kettering Cancer Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLipid droplets are lipid storage organelles found in nearly all cell types from adipocytes to cancer cells. Although increasingly implicated in disease, current methods to study lipid droplets in vertebrate models rely on static imaging or the use of fluorescent dyes, limiting investigation of their rapid in vivo dynamics. To address this, we created a lipid droplet transgenic reporter in whole animals and cell culture by fusing tdTOMATO to Perilipin-2 (PLIN2), a lipid droplet structural protein. Expression of this transgene in transparent casper zebrafish enabled in vivo imaging of adipose depots responsive to nutrient deprivation and high-fat diet. Simultaneously, we performed a large-scale in vitro chemical screen of 1280 compounds and identified several novel regulators of lipolysis in adipocytes. Using our Tg(-3.5ubb:plin2-tdTomato) zebrafish line, we validated several of these novel regulators and revealed an unexpected role for nitric oxide in modulating adipocyte lipid droplets. Similarly, we expressed the PLIN2-tdTOMATO transgene in melanoma cells and found that the nitric oxide pathway also regulated lipid droplets in cancer. This model offers a tractable imaging platform to study lipid droplets across cell types and disease contexts using chemical, dietary, or genetic perturbations.\n\n## Introduction\n\nLipid droplets are cellular organelles that act as storage sites for neutral lipids and are key regulators of cellular metabolism (Wilfling et al., 2013). Lipid droplets are present in most cell types and are characterized by a monophospholipid membrane surrounding a hydrophobic lipid core (Tauchi-Sato et al., 2002; Wilfling et al., 2013). Cells maintain energetic homeostasis and membrane formation through the regulated incorporation and release of fatty acids and lipid species from the lipid droplet core (Kurat et al., 2009; Kuerschner et al., 2008; Fujimoto et al., 2007; Zimmermann et al., 2004). Importantly, lipid droplets can assume various functions during cellular stress through the sequestration of potentially toxic lipids and misfolded proteins (Bailey et al., 2015; Listenberger et al., 2003; Vevea et al., 2015; Fei et al., 2009), maintenance of energy and redox homeostasis (Liu et al., 2015; Liu et al., 2017), regulation of fatty acid transfer to the mitochondria for \u03b2-oxidation (Rambold et al., 2015; Herms et al., 2015), and the maintenance of endoplasmic reticulum\u00a0(ER) membrane homeostasis (Chitraju et al., 2017; Bosma et al., 2014; Vel\u00e1zquez et al., 2016; Vevea et al., 2015). Moreover, a\u00a0recent study demonstrated that lipid droplets actively participate in the innate immune response (Bosch et al., 2020) and, conversely, can be hijacked by infectious agents like hepatitis C virus to facilitate viral replication (Barba et al., 1997; Miyanari et al., 2007; Vieyres et al., 2020). The role of lipid droplets in metabolic homeostasis and cellular stress is critical across multiple cell types and has also been increasingly implicated in cancer. For example, lipid droplets can act as a storage pool in cancer cells after they take up lipids from extracellular sources, including adipocytes (Kuniyoshi et al., 2019; Nieman et al., 2011; Zhang et al., 2018).\n\nLipid droplets are ubiquitous across most cell types; however, they are essential to the function of adipocytes in regulating organismal energy homeostasis (Zimmermann et al., 2004; Bergman et al., 2001). White adipocytes, which contain a large unilocular lipid droplet, can be readily labeled by lipophilic dyes (Minchin and Rawls, 2017a; Fam et al., 2018). However, in vivo imaging of lipid droplets, in adipocytes or other cell types, is currently highly limited. Understanding the dynamics of lipid droplets in vivo, rather than in fixed tissues, is important since the size of the lipid droplet can change very rapidly in response to fluctuating metabolic needs (Bosch et al., 2020; Fam et al., 2018). In mice, much of adipose tissue imaging utilizes tissue fixation and sectioning, which can fail to preserve key aspects of the tissue structure (Berry et al., 2014; Xue et al., 2010). Whole-mount imaging approaches in mice can be combined with adipocyte-specific promoters; however, these methods still require tissue dissection and can be limited by tissue thickness (Berry and Rodeheffer, 2013; Chi et al., 2018).\n\nZebrafish offer a tractable model to address these limitations given the ease of high-throughput imaging of live animals. This is especially true with the availability of relatively transparent strains such as casper, which allows for detailed in vivo imaging without the need for fixation of the animal (White et al., 2008). Although less well studied than other vertebrates, zebrafish adipose tissue is highly similar to mammalian white adipose tissue, and a\u00a0detailed work has classified the timing, dynamics, and location of zebrafish adipose tissue development (Minchin and Rawls, 2017a). Current imaging approaches using lipophilic fluorescent dyes or analogs in vivo have advanced our understanding of lipid droplets in adipocytes and other cell types (Minchin and Rawls, 2017a; Minchin et al., 2018; Minchin and Rawls, 2017b; Carten et al., 2011; Farber et al., 2001; Otis and Farber, 2016); however, these methods can require extensive and repeated staining, which may restrict the ability to read out dynamic changes over time. Furthermore, fluorescent dyes such as BODIPY and NileRed have limitations in their specificity for the lipid droplet (Daemen et al., 2016). Finally, although a probe-free imaging approach to study subcellular lipid populations has been recently described (H\u00f8gset et al., 2020), this method is restricted to early-stage zebrafish, which would fail to capture post-embryonic cell populations and tissues, including adipocytes.\n\nHere, we report the development of an in vivo lipid droplet reporter using a -3.5ubb:plin2-tdTomato transgene in the casper strain. To date, transgenic lipid droplet reporters have been restricted to cell culture systems and invertebrate model organisms such as Caenorhabditis elegans (C. elegans) and Drosophila (Targett-Adams et al., 2003; Beller et al., 2010; Liu et al., 2014; Liu et al., 2015) although a similar approach in zebrafish was recently described while this manuscript was in review (Wilson et al., 2021). We demonstrate that the -3.5ubb:plin2-tdTomato reporter faithfully marks the lipid droplet, which enables robust in vivo imaging. We show that this reporter can be applied to visualize adipocytes and to monitor adipose tissue remodeling in response to dietary and pharmacologic perturbations. Furthermore, we report the discovery of novel pharmacologic regulators of adipocyte lipolysis such as nitric oxide and demonstrate that several of these compounds can modulate adipose tissue area in our in vivo system. To facilitate the study of lipid droplets in novel contexts outside of adipocytes, we also generated a zebrafish melanoma cell line (ZMEL) (Heilmann et al., 2015) expressing -3.5ubb:plin2-tdTomato (ZMEL-LD). We confirm that this cell line can be used to monitor changes in lipid droplet production in response to both known and novel regulators of lipolysis. We anticipate that these models will be highly valuable as a high-throughput imaging platform to investigate lipid droplets in both adipose tissue biology and disease contexts such as cancer.\n\n## Results\n\n### An in vivo lipid droplet reporter using a PLIN2-tdTOMATO fusion transgene\n\nTo create a specific fluorescent reporter for lipid droplets in zebrafish, we fused tdTomato to the 3\u2019 end of the plin2 cDNA. We chose plin2 because it is a well-known lipid droplet-associated protein that is ubiquitously expressed on lipid droplets across cell types (Olzmann and Carvalho, 2019). We generated stable transgenic zebrafish expressing -3.5ubb:plin2-tdTomato and sought to validate whether the construct faithfully marks lipid droplets (Figure 1A). White adipocytes are fat cells known for their large unilocular lipid droplet (Fujimoto and Parton, 2011; Heid et al., 2014), so we expected expression of the PLIN2-tdTOMATO fusion protein on the surface of the adipocyte lipid droplet (Figure 1A). Since the adipocyte lipid droplet occupies the majority of space in the cell (Fujimoto et al., 2020), existing methods to visualize zebrafish adipocytes rely on lipophilic dyes and lipid analogs, which incorporate into the lipid droplet (Zhang et al., 2018). Thus, in addition to labeling individual lipid droplets, we reasoned that the PLIN2-tdTOMATO fusion protein can also function as a reporter for adipocytes since these cells would have the largest and unilocular lipid droplets.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64744/elife-64744-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of ubb:plin2-tdTomato construct injected into zebrafish and an\u00a0adipocyte lipid droplet labeled with PLIN2-tdTOMATO fusion protein. Widefield microscope images of adult (B) wild-type sibling and (C) Tg(-3.5ubb:plin2-tdTomato) zebrafish. Box shows zoomed images of the fish tail with panels for brightfield, BODIPY, PLIN2-tdTOMATO, and merge. (D) Confocal images of fish tail adipocytes of adult wild-type sibling and Tg(-3.5ubb:plin2-tdTomato) zebrafish. Panels show brightfield, BODIPY, PLIN2-tdTOMATO, and merge. (E) Adult casper and Tg(-3.5ubb:plin2-tdTomato) zebrafish tails were fixed and immunohistochemistry was\u00a0conducted for tdTOMATO expression of tail adipocytes.\n\nIn adult zebrafish, subcutaneous adipocytes are known to reside proximally to the tail fin (Minchin and Rawls, 2017a). When we imaged 6-month-old adult Tg(-3.5ubb:plin2-tdTomato) zebrafish, we detected PLIN2-tdTOMATO expression in the zebrafish tail fin adipocytes, which colocalized with BODIPY staining (Figure 1B,C). Lipophilic dyes such as BODIPY stain the lipid-rich core of the lipid droplet while lipid droplet resident proteins, such as PLIN2, localize to the lipid droplet membrane (Zhang et al., 2018). As expected, higher magnification images of tail adipocytes revealed that PLIN2-tdTOMATO expression was on the outside of the lipid droplet, whereas the BODIPY staining was on the interior of each droplet in the adipocyte (Figure 1D). Similarly, immunohistochemistry (IHC)\u00a0on the Tg(-3.5ubb:plin2-tdTomato) zebrafish tail fin showed that adipocytes express tdTOMATO (Figure 1E). Taken together, this data demonstrates that the PLIN2-tdTOMATO fusion protein functions as a fluorescent lipid droplet reporter that can be applied to visualize adipocytes in vivo.\n\n### The Tg(-3.5ubb:plin2-tdTomato) is an in vivo reporter for visceral adipocytes\n\nVisceral adipose tissue, otherwise known as abdominal fat, plays an important role in metabolism and participates in pathological processes of obesity, aging, and metabolic syndromes (Tchernof and Despr\u00e9s, 2013). Because PLIN2-tdTOMATO labeled subcutaneous adipocytes in the adult zebrafish tail fin, we wondered whether we could use the Tg(-3.5ubb:plin2-tdTomato) zebrafish to visualize other adipose depots in vivo such as visceral adipocytes. In 21 days post-fertilization (dpf) zebrafish, visceral adipose tissue is composed of abdominal and pancreatic visceral adipocytes predominantly located on the right flank near the swim bladder (Figure 2A; Minchin and Rawls, 2017a). To determine whether Tg(-3.5ubb:plin2-tdTomato) visceral adipocytes express PLIN2-tdTOMATO, we imaged around the swim bladder of zebrafish where we expected development of abdominal visceral adipocytes (Figure 2B). Visceral adipocytes visualized in brightfield demonstrate colocalization of PLIN2-tdTOMATO and BODIPY, as we observed for subcutaneous adipocytes (Figure 2C). IHC confirmed that the abdominal and visceral adipocytes of Tg(-3.5ubb:plin2-Tomato) express tdTOMATO (Figure 2G).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64744/elife-64744-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of visceral adipose tissue development in the 21\u00a0days\u00a0post-fertilization\u00a0(dpf) zebrafish. Abdominal visceral adipocytes (orange) develop around the swim bladder (gray) and pancreatic visceral adipocytes (red) develop ventrally around the pancreas. (B) Brightfield image of Tg(-3.5ubb:plin2-tdTomato) at 21 dpf. Red box indicates position of higher magnification images to visualize abdominal visceral adipocytes. (C) Widefield microscope images of 21 dpf wild-type casper and Tg(-3.5ubb:plin2-tdTomato) visceral adipocytes around the posterior swim bladder (SB) costained with BODIPY. Panels show brightfield, BODIPY, tdTOMATO, and merge.\u00a0BODIPY stained adipose tissue was imaged and analyzed for (D) area, (E) standard length, and (F) area/standard length. Points indicate individual fish for\u00a0N\u00a0= 3\u00a0independent\u00a0experiments; wild-type sibling,\u00a0Data values for (D-F).\u00a0n=35;\u00a0Tg(-3.5ubb:plin2-tdTomato),\u00a0n\u00a0= 28. Bars indicate mean and SEM. Significance calculated via Mann-Whitney test. (G) 21 dpf wild-typecasperandTg(-3.5ubb:plin2-tdTomato)zebrafish were fixed and immunohistochemistry conducted for tdTOMATO expression of abdominal (AVA) and pancreatic visceral adipocytes (PVA).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64744/elife-64744-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Heatmap of adipose depot presence during zebrafish development in Tg(-3.5ubb:plin2-tdTomato) and wild-type siblings. Shown is the percent of fish scored for presence of the depot using either BODIPY GFP signal or tdTOMATO expression at each time point. (B) Representative whole-mount images demonstrating the\u00a0timing of adipose tissue development in Tg(-3.5ubb:plin2-tdTomato) and wild-type siblings using visceral adipose tissue as an example. Data points are an average of N\u00a0=\u00a03 independent experiments for each time point, excluding 14 days\u00a0post-fertilization\u00a0(dpf), where N\u00a0=\u00a04, and the adults, where N\u00a0=\u00a05 (5 dpf WT n\u00a0=\u00a032, 5\u00a0dpf Tg(-3.5ubb:plin2-tdTomato) n\u00a0=\u00a038, 14 dpf WT n\u00a0=\u00a032, 14 dpf Tg(-3.5ubb:plin2-tdTomato) n\u00a0=\u00a048, 21 dpf WT n\u00a0=\u00a030, 21 dpf Tg(-3.5ubb:plin2-tdTomato) n\u00a0=\u00a040, 42 dpf WT n\u00a0=\u00a048, 42 dpf Tg(-3.5ubb:plin2-tdTomato) n\u00a0=\u00a043, adult WT n\u00a0=\u00a038, adult Tg(-3.5ubb:plin2-tdTomato) n\u00a0=\u00a029).\n\nPrevious studies have shown that overexpression of perilipin proteins alters lipid accumulation in adipocytes (Sawada et al., 2010). To test whether constitutive expression of our PLIN2-tdTOMATO transgenes altered adiposity, we compared the visceral adipose tissue of Tg(-3.5ubb:plin2-tdTomato) fish to their wild-type siblings. Using BODIPY staining, we did not detect differences in visceral adipose tissue area (Figure 2D). In addition to dpf, standard length can indicate developmental progress in zebrafish (Parichy et al., 2009). Similarly, we found no difference in standard lengths between wild-type siblings and Tg(-3.5ubb:plin2-tdTomato) at 21 dpf (Figure 2E). We normalized visceral adipose tissue area to standard length, similar to a Body Mass Index (BMI) in mammals, and did not detect differences between wild-type and Tg(-3.5ubb:plin2-tdTomato) fish (Figure 2F). To comprehensively assess whether constitutive PLIN2-tdTOMATO expression alters adiposity, we imaged adipose depots of wild-type and Tg(-3.5ubb:plin2-tdTomato) zebrafish from 5 dpf larvae to adult fish. Using BODIPY staining to visualize adipose tissue, we observed\u00a0similar development\u00a0of\u00a0the major adipose depots between wild-type and Tg(-3.5:ubbplin2-tdTomato) zebrafish (Figure 2\u2014figure supplement 1A\u2013B). Furthermore, we detected PLIN2-tdTOMATO expression at the corresponding time points and adipose depots within Tg(-3.5ubb:plin2-tdTomato) (Figure 2\u2014figure supplement 1A\u2013B). Thus, the Tg(-3.5ubb:plin2-tdTomato) zebrafish faithfully recapitulates normal adipose tissue development.\n\n### Diet and pharmacologically induced reduction in visceral adipose tissue area\n\nAfter confirming that we could image visceral adipose tissue in Tg(-3.5ubb:plin2-tdTomato), we wanted to test whether this could be a tractable platform to image adipose tissue remodeling. We first verified whether we could use Tg(-3.5ubb:plin2-tdTomato) to track reduction in visceral adiposity. Fasting is a well-known mechanism for reducing adiposity, since it will induce lipolysis and lead to a reduction in the size of the adipocyte lipid droplet (Henne et al., 2018; Longo and Mattson, 2014; Rambold et al., 2015; Tang et al., 2017). To test this, wild-type and Tg(-3.5ubb:plin2-tdTomato) zebrafish were fed or fasted for 7 days and\u00a0then imaged to measure standard length and adipose tissue area (Figure 3A). As expected, we observed a reduction in the BODIPY-stained visceral adipose tissue in both wild-type and Tg(-3.5ubb:plin2-tdTomato) fasted zebrafish (Figure 3B). Similarly, we measured a significant reduction in adipose tissue area, standard length, and normalized area to standard length between fed and fasted fish (Figure 3C,D,E). Furthermore, we did not see differences in adiposity or standard length between wild-type and Tg(-3.5ubb:plin2-tdTomato) fish within the same diet (Figure 3C,D,E). This suggests that the transgenic expression of PLIN2-tdTOMATO reflects adipose tissue remodeling consistent with wild-type fish.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64744/elife-64744-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of experimental set-up for fasting experiment. 21 days\u00a0post-fertilization\u00a0(dpf) wild-type casper and Tg(-3.5ubb:plin2-tdTomato) zebrafish\u00a0were fed or fasted for 7 days and imaged to measure standard length and adipose area. (B) Representative images of zebrafish fed or fasted after 7 days. Panels show merged images of brightfield and BODIPY-stained visceral adipose tissue. BODIPY-stained adipocytes were imaged to measure (C) area, (D) standard length, and (E) area/standard length. Data points indicate individual fish for N\u00a0=\u00a03 independent experiments; bars indicate mean and 95% CI. Fed wild-type n\u00a0=\u00a024; fed Tg(-3.5ubb:plin2-tdTomato) n\u00a0=\u00a024; fasted wild-type n\u00a0=\u00a029; fasted Tg(-3.5ubb:plin2-tdTomato) n\u00a0=\u00a020. Significance calculated via Kruskal-Wallis with Dunn\u2019s multiple comparisons test; ****p<0.0001. (F) Representative image of computational segmentation of Tg(-3.5ubb:plin2-tdTomato) adipocytes. PLIN2-tdTOMATO was background subtracted with GFP fluorescence. Bottom panels show brightfield, segmented adipocytes, and segmentation overlaid on brightfield. (G) Schematic of experimental set-up for repeated imaging of 21 dpf Tg(-3.5ubb:plin2-tdTomato) zebrafish, which were fed or fasted for 7 days. Adipose tissue was imaged and analyzed for (H) area, (I) standard length, and (J) area/standard length. Points indicate mean and error bars indicate 95% CI for N\u00a0=\u00a03 independent experiments; by day 7, fed n\u00a0=\u00a046 and fasted n\u00a0=\u00a057. Significance calculated via Mann-Whitney test; **p<0.01, ****p<0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64744/elife-64744-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic of experimental set-up for Forskolin drug treatment. 21 days\u00a0post-fertilization\u00a0(dpf) Tg(-3.5ubb:plin2-tdTomato) zebrafish\u00a0were individually placed in six-well plates with either dimethyl sulfoxide\u00a0(DMSO) or 5 \u00b5M Forskolin for 24 hr. Adipose tissue was imaged and analyzed for (B) area, (C) standard length, and (D) area/standard length. Points indicate individual fish for N\u00a0=\u00a05 independent experiments; DMSO, n\u00a0=\u00a053; Forskolin, n\u00a0=\u00a055. Bars indicate mean and SEM. Significance calculated via Mann-Whitney test; *p<0.05.\n\nCombined with the capacity for high-throughput in vivo imaging in zebrafish, we sought to use Tg(-3.5ubb:plin2-tdTomato) as a model to study lipid droplet dynamics in visceral adipocytes. One challenge we encountered was the autofluorescence from the zebrafish intestinal loops and gallbladder present in the tdTOMATO and GFP channels (Figure 3F). To remove background fluorescence, we developed an image analysis pipeline in MATLAB to segment the visceral adipocytes in juvenile Tg(-3.5ubb:plin2-Tomato) zebrafish\u00a0(Figure 3F). Next, we combined our image analysis pipeline with the ability to do repeated imaging in zebrafish to more granularly quantify adipose tissue remodeling in fed or fasted Tg(-3.5ubb:plin2-tdTomato) fish (Figure 3G). We saw the expected increase in adipose tissue area, standard length, and normalized area to standard length over 7 days in fed Tg(-3.5ubb:plin2-tdTomato) fish (Figure 3H\u2013J). The standard lengths for fasted fish were significantly lower than those\u00a0for\u00a0fed fish and remained stable over 7 days, which we attribute to food restriction, disrupting zebrafish development (Figure 3I). Notably, we found that visceral adiposity was not reduced until after 2 days of fasting (Figure 3H,J).\n\nIn addition to fasting as a dietary perturbation, we also pharmacologically reduced adipose tissue. To achieve this, we used Forskolin, a drug that is known to induce lipolysis through cAMP signaling (Litosch et al., 1982). We treated juvenile zebrafish for 24 hr with either dimethyl sulfoxide\u00a0(DMSO) or 5 \u00b5M Forskolin and imaged the adipocytes (Figure 3\u2014figure supplement 1A). We detected a reduction in both the adipose tissue area and normalized area to standard length in the Forskolin-treated fish, but no differences in standard length (Figure 3\u2014figure supplement 1B\u2013D). Thus, Tg(-3.5ubb:plin2-tdTomato) can be used as an in vivo model to visualize adipocytes, with the benefits of avoiding staining steps and allowing for repeated imaging with high-throughput image analysis in zebrafish.\n\n### High-fat diet leads to specific enlargement of visceral adipose tissue\n\nHaving shown that we could use Tg(-3.5ubb:plin2-tdTomato) to image and measure reduction in adipose tissue, we tested whether we can use our model to detect an increase in adiposity. Zebrafish have been used as a model for diet-induced obesity and share pathophysiological perturbations seen in mammals, but few studies have focused on architectural changes of visceral adipose tissue (Chu et al., 2012; Landgraf et al., 2017; Oka et al., 2010). We sought to determine if we could detect increases in visceral adiposity from a high-fat diet (HFD). We fed juvenile zebrafish with either control feed (12% crude fat) or HFD (23% crude fat) for 7 days and subsequently imaged the adipose tissue (Figure 4A,B). After a week of HFD feeding, we observed that HFD-fed fish developed significantly increased visceral adiposity compared to the fish fed with control feed (Figure 4C,E). Although less dramatic between 7 and 14 days of HFD, we found that\u00a0significantly greater visceral adiposity persisted after 2 weeks of HFD (Figure 4C,E). Interestingly, we did not detect differences in the standard lengths of the control and HFD-fed fish, suggesting that this formulation of HFD leads to specific enlargement of visceral adipose tissue (Figure 4E). Our results demonstrate that Tg(-3.5ubb:plin2-tdTomato) is an effective and unique tool to visualize visceral adipose tissue remodeling induced by HFD, which can be widely applied to study obesity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64744/elife-64744-fig4-v1.jpg)\n\n**Figure 4.:** (A) Percent breakdown of nutritional content for control feed and high-fat diet (HFD). (B) Schematic of experimental set-up for HFD experiment. 21 days\u00a0post-fertiization\u00a0(dpf) Tg(-3.5ubb:plin2-tdTomato) zebrafish\u00a0were fed control feed or HFD for 14 days and imaged to measure standard length and adipose area. Image analysis pipeline resulted in measurements of adipose tissue (C) area, (D) standard length, and (E) area/standard length. Points indicate mean and error bars indicate 95% CI for N\u00a0=\u00a03 independent experiments; by day 14, control feed n\u00a0=\u00a057; HFD n\u00a0=\u00a061. Significance calculated via Mann-Whitney test; *p<0.05, **p<0.01, ****p<0.0001.\n\n### A screen to discover novel compounds that modulate lipolysis and lipid droplets in vivo\n\nTo meet fluctuating nutritional needs of the cell, lipid droplets are remodeled through lipolysis to regulate lipid mobilization and metabolic homeostasis (Krahmer et al., 2013; Olzmann and Carvalho, 2019; Paar et al., 2012). As a major lipid depot for the body, white adipose tissue is critical to lipid availability and cycles through lipolytic flux in response to energy demands (Duncan et al., 2007). In disease contexts such as cancer, adipocytes undergoing lipolysis act as a lipid source for neighboring cancer cells (Lengyel et al., 2018). Adipocyte-derived lipids have been directly shown to promote cancer progression in ovarian (Nieman et al., 2011), breast (Balaban et al., 2017), and melanoma cancer cells (Zhang et al., 2018). Due to growing evidence of adipocyte and cancer cell cross-talk as a metabolic adaptation for tumor progression, there is significant interest in disrupting lipid transfer between adipocytes and cancer cells.\n\nLeveraging our model to visualize lipid droplets in adipocytes, we became interested in identifying novel compounds that remodel adipocyte lipid droplets through lipolysis. In mammalian systems, the most commonly used cell line to study lipolysis is\u00a03T3-L1 cells, which can be differentiated in vitro to resemble adipocytes (Zebisch et al., 2012). We first used the 3T3-L1 system to rapidly identify lipolysis inhibitors at high\u00a0throughput and then test those hits using our zebrafish lipid droplet reporter. We reasoned that compounds that inhibit lipolysis in vitro would cause an increase in the size of the lipid droplets in vivo. To achieve this, we differentiated mouse 3T3-L1 fibroblast cells into adipocytes and conducted a chemical screen for compounds that inhibit lipolysis (Figure 5A), measured by quantifying glycerol in the media, a gold standard readout of lipolysis in this system (Hellm\u00e9r et al., 1989). As a positive control, we used Atglistatin, an inhibitor of adipose triglyceride lipase (ATGL) that is known to be the rate-limiting step of lipolysis and has been shown to inhibit lipolysis in cell lines and mouse models (Mayer et al., 2013; Schweiger et al., 2017). We confirmed that Atglistatin potently inhibits lipolysis in 3T3-L1 adipocytes (Figure 5B). We then screened through a library of 1280 compounds of diverse chemical structures to find novel inhibitors of lipolysis. Overall, we found 29 out of 1280 compounds that led to at least a 40% reduction in lipolysis as measured by glycerol release into the media. Looking more closely at the top 10 hits from this screen, we noted that 2 of the top 10 hits (Auranofin and JS-K) modulated nitric oxide (Figure 5A). Nitric oxide can be used for post-translational modification of proteins via S-nitrosylation (Stamler et al., 2001). A\u00a0previous study has shown that increased nitric oxide has a suppressive role on lipolysis, and Auranofin, a thioredoxin reductase inhibitor that promotes S-nitrosylation, can inhibit lipolysis in 3T3-L1 cells (Yamada et al., 2015). Similarly, JS-K is a nitric oxide donor purported to promote S-nitrosylation, but it has not been shown to play a role in lipolysis (Nath et al., 2010; Shami et al., 2003). Given that both of these top hits were in the same pathway, we chose these for in vivo validation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64744/elife-64744-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of pharmacologic lipolysis screen in 3T3-L1 adipocytes using a glycerol release assay. Normalized log2 transformed values for top 10 drugs that inhibit lipolysis are\u00a0shown. Magenta indicates compounds that modulate nitric oxide. (B) Normalized log2 transformed values for lipolysis inhibition in 3T3-L1 adipocytes using either dimethyl sulfoxide\u00a0(DMSO) or 100 \u00b5M Atglistatin. N\u00a0=\u00a05 independent experiments. Bars indicate mean and SEM. Significance calculated via Welch\u2019s t-test; ****p<0.0001. (C) Schematic of experimental set-up for drug treatment. 21 days post-fertilization\u00a0(dpf) Tg(-3.5ubb:plin2-tdTomato) zebrafish\u00a0were individually placed in six-well plates with either DMSO, 40 \u00b5M Atglistatin, 1 \u00b5M Auranofin, or\u00a01 \u00b5M JS-K for 24 hr. Adipose tissue was imaged and analyzed for (C) area, (D) standard length, and (E) area/standard length. Data points indicate individual fish for N\u00a0=\u00a04 independent experiments; DMSO n\u00a0=\u00a047; Atglistatin n\u00a0=\u00a044; Auranofin n\u00a0=\u00a042; JS-K n\u00a0=\u00a044. Bars indicate mean and SEM. Significance calculated via Kruskal-Wallis with Dunn\u2019s multiple comparisons test; *p<0.05, ****p<0.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64744/elife-64744-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Viability of 21 days post-fertilization\u00a0(dpf) Tg(-3.5ubb:plin2-tdTomato) zebrafish was measured after 24 hr of treatment with dimethyl sulfoxide\u00a0(DMSO) or increasing concentrations of (A) Atglistatin, (B) Auranofin, or (C) JS-K.\u00a0Percent larval viability measured from N\u00a0=\u00a03 independent experiments. After 24 hr of drug treatment, 21 dpf zebrafish were imaged to measure (D) area, (E) standard length, and (F) area/standard length. Data points indicate individual fish for N\u00a0=\u00a05 independent experiments; DMSO n\u00a0=\u00a029; 1 \u00b5M n\u00a0=\u00a032; 10 \u00b5M n\u00a0=\u00a028; 40 \u00b5M n\u00a0=\u00a031. Bars indicate mean and SEM. Significance calculated via Kruskal-Wallis with Dunn\u2019s multiple comparisons test; *p<0.05.\n\nNext, we asked whether these drugs could modulate lipid droplet size and lead to increased adiposity in\u00a0zebrafish. We first established the maximal tolerated doses of Atglistatin, Auranofin, and JS-K in vivo (Figure 5\u2014figure supplement 1A\u2013C), and then tested their effects on adipose tissue in the Tg(-3.5ubb:plin2-tdTomato) fish (Figure 5D\u2013F). As expected, treatment of juvenile zebrafish for 24 hr with Atglistatin caused a\u00a0significant increase\u00a0in adipose tissue area without affecting standard length or fish viability at the maximally tolerated dose. Consistent with our screen results, we found that JS-K also significantly increased adiposity (Figure 5C,E). These effects were specific to the adipose tissue as standard length was not affected (Figure 5D). These data indicate that modulators of nitric oxide can inhibit lipolysis in cell lines and lead to increased adiposity in vivo in zebrafish. Moreover, this approach demonstrates the power of this system to dissect the relationship between novel modulators of lipolysis (i.e., nitric oxide) and adiposity in vivo.\n\n### Lipolysis modulators also inhibit lipid droplet loss in melanoma cells\n\nUpon uptake of adipocyte-derived lipids, cancer cells can store excess lipids in lipid droplets (Lengyel et al., 2018). Accumulation of lipid droplets in melanoma cells has been associated with increased metastatic potential and worse clinical outcomes (Fujimoto et al., 2020; Zhang et al., 2018). The mechanisms regulating subsequent lipolysis from the lipid droplets in cancer cells are not well understood, but we reasoned that some of the same mechanisms (i.e., ATGL, nitric oxide) used in adipocytes might also be used in cancer cells. To test this, we created a stable zebrafish melanoma cell line (ZMEL) that expressed the -3.5ubb:plin2-tdTomato construct (Heilmann et al., 2015) to generate the ZMEL-LD (lipid droplet) reporter cell line (Figure 6A). Because melanoma cells at baseline only have few small lipid droplets, we induced their formation via extrinsic addition of oleic acid, a key fatty acid that can be transferred from the adipocyte to the melanoma cell (Zhang et al., 2018). We found that after a pulse of oleic acid for 24 hr, we could easily detect PLIN2-tdTOMATO expression surrounding lipid droplets marked by the lipid droplet dye\u00a0Monodansylpentane (MDH) (Figure 6B, Video 1), similar to what we saw in the adipocytes (Figure 1). Similar to what we did in the whole fish, we wanted to be sure that the PLIN2-tdTOMATO transgene itself did not alter lipid droplets, so we compared lipid droplet formation in ZMEL-LD and parental cell line (ZMEL-GFP) via imaging and flow cytometry (Figure 6\u2014figure supplement 1A,B). Using the lipid droplet dye Lipidtox as a proxy for lipid droplet content, we pulsed the cells with increasing amounts of oleic acid and found no difference in Lipidtox median fluorescence intensity (MFI) between the two cell lines (Figure 6\u2014figure supplement 1B), indicating that the transgene was not having any unexpected effect. Next, we assessed the sensitivity of the\u00a0PLIN2-tdTOMATO transgene versus Lipidtox in reporting changes in lipid droplets of ZMEL-LD. While both PLIN2-tdTOMATO and Lipidtox expression increased accordingly with oleic acid, PLIN2-tdTOMATO expression provided a much greater dynamic range (Figure 6\u2014figure supplement 1C\u2013F), highlighting its advantages over standard lipid dyes like Lipidtox.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64744/elife-64744-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic of zebrafish melanoma cell line with lipid droplet reporter (ZMEL-LD) with lipid droplet labeled by PLIN2-tdTOMATO. (B) Confocal images of ZMEL-LD cells after 24 hr of oleic acid\u00a0treatment. Panels show fluorescence signals in PLIN2-tdTOMATO, MDH (lipid droplet dye) staining, and merge of images with cytoplasmic GFP. Red box indicates position of higher magnification image of lipid droplets. (C) ZMEL-LD cells were treated with either bovine serum albumin (BSA) or oleic acid with dimethyl sulfoxide\u00a0(DMSO) for 72 hr and\u00a0then analyzed by Fluorescence Activated Cell Sorting (FACS) for PLIN2-tdTOMATO expression. (D) Representative histogram of PLIN2-tdTOMATO expression of ZMEL-GFP and GFP+ZMEL-LD cells with indicated drugs. Dashed line shows threshold for PLIN2-tdTOMATO expression. (E) Quantification of percent of GFP+ZMEL-LD cells with lipid droplets. Lipid droplet low and high controls were ZMEL-LD cells treated with BSA or oleic acid for 72 hr. For drug treatments, ZMEL-LD cells were pulsed with oleic acid for 24 hr and\u00a0then given DMSO, 40 \u00b5M Atglistatin, 0.5 \u00b5M Auranofin, or 0.5 \u00b5M JS-K for 48 hr. N\u00a0=\u00a03 independent experiments. Bars indicate mean and SEM. Significance calculated via one-way ANOVA with Dunnett\u2019s multiple comparisons test; *p<0.05, ***p<0.001, ****p<0.0001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64744/elife-64744-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Confocal images of ZMEL-GFP and ZMEL-LD after 24 hr of 150 \u00b5M oleic acid\u00a0treatment. Cells were fixed and stained, with panels showing fluorescence signals for PLIN2-tdTOMATO, Lipidtox (lipid droplet dye), and merge of images with cytoplasmic GFP. ZMEL-GFP and ZMEL-LD cells were treated with bovine serum albumin (BSA) or increasing concentrations of oleic acid for 24 hr and\u00a0then analyzed by FACS. (B) Comparison of Lipidtox median fluorescence intensity (MFI) between ZMEL-GFP and ZMEL-LD. Significance calculated via Welch\u2019s t-test with Bonferroni correction. (C) Representative histogram of PLIN2-tdTOMATO expression of ZMEL-GFP and ZMEL-LD cells. Dashed line shows the\u00a0threshold for PLIN2-tdTOMATO expression. (D) Quantification of percent of GFP+ ZMEL-LD cells with lipid droplets. Significance calculated via one-way ANOVA with Dunnett\u2019s multiple comparison test. (E) Representative histogram of Lipidtox expression of ZMEL-LD cells. (F) Quantification of Lipidtox MFI relative to BSA control of GFP+ZMEL-LD cells. Significance calculated via one-way ANOVA with Dunnett\u2019s multiple comparison test. N\u00a0=\u00a03 independent experiments. Bars indicate mean and SEM. *p<0.05, **p<0.01, ****p<0.0001.\n\n![Video 1.](https://cdn.elifesciences.org/articles/64744/elife-64744-video1.mp4.jpg)\n\n**Video 1.:** ZMEL-LD cells were given oleic acid for 24 hr, fixed, and stained with the lipid droplet dye MDH.\u00a0This video is a 3D reconstruction of 37 planes covering a 6 \u00b5m stack of a lipid droplet cluster in a ZMEL-LD cell. PLIN2-tdTOMATO (orange) is located outside of the lipid droplet core (blue).\n\nTo validate whether the lipolysis-inhibiting compounds we identified above could modulate lipid droplets in ZMEL-LD cells, we utilized the same flow cytometry assay to measure PLIN2-tdTOMATO expression. We treated ZMEL-LD cells for 72 hr with either BSA or oleic acid as controls for low- or high-lipid droplet cell populations (Figure 6C). We then tested the effects of the lipolysis inhibitors Atglistatin, Auranofin, and JS-K. We pulsed the ZMEL-LD cells with oleic acid for 24 hr (to induce lipid droplets) and then measured the subsequent decay in signal over the ensuing 48 hr, which is expected to decrease due to gradual lipolysis of the lipid droplets. Compared to cells with oleic acid pulse and DMSO, cells given JS-K did not differ in the percent of lipid droplet-positive cells (Figure 6D,E). In contrast, cells treated with Atglistatin and Auranofin demonstrated significantly higher lipid droplet-positive cells (Figure 6D,E). These data indicate that similar to adipocytes, ATGL is a key regulatory step in lipolysis in melanoma cells. Moreover, we found that nitric oxide, which was identified in our adipocyte screen, is similarly a modulator of lipolysis in the melanoma context and can be utilized for future studies to target adipocyte-melanoma cell cross-talk. We do not yet understand why different nitric oxide donors are more or less potent in adipocytes (where JS-K is a better inhibitor in vivo) versus melanoma cells (where Auranofin is a better inhibitor), but this could reflect differences in pharmacokinetics or cell-type-specific lipid droplet regulation.\n\n## Discussion\n\nLipid droplets are cytosolic storage organelles for cellular lipids, which are dynamically regulated in response to metabolic and oxidative perturbations (Jarc and Petan, 2019). Changes in the lipid droplet content of a cell can occur in response to a variety of factors, including hypoxia, reactive oxygen stress, ER stress, and alterations in nutrient availability (Bailey et al., 2015; Bensaad et al., 2014; Chitraju et al., 2017; Vel\u00e1zquez et al., 2016; Vevea et al., 2015; Cabodevilla et al., 2013; Nguyen et al., 2017). However, the regulatory mechanisms driving these processes remain incompletely understood. Furthermore, lipid droplets are highly heterogeneous, and the pathways that regulate lipid droplet dynamics in specific cell types warrant investigation.\n\nTo address such questions, we report the first lipid droplet reporter in a vertebrate model organism. We show that our plin2-tdtomato reporter faithfully marks the lipid droplet in vivo. As a further validation of our approach, while our manuscript was in review, a similar approach using knockin at the endogenous plin2 promoter was recently described (Wilson et al., 2021). The combination of our reporter with the in vivo system of the casper zebrafish enables flexible and robust imaging approaches to examine lipid droplet regulation and function. In particular, the ease of chemical and genetic manipulation of the zebrafish combined with high-throughput imaging approaches enables interrogation of relevant pathways in a cell type-specific manner. Furthermore, the capacity for intravital imaging creates the opportunity to conduct longitudinal analysis of lipid droplet dynamics across developmental time and in disease contexts between single animals.\n\nHere, we demonstrate the capabilities of the Tg(-3.5ubb:plin2-tdTomato) line by taking advantage of the fact that white adipocytes are readily labeled by PLIN2-tdTOMATO expression. This labeling enables the study of individual adipocytes and adipose tissue in adult and juvenile zebrafish. We show that the Tg(-3.5ubb:plin2-tdTomato) reporter can be used as an alternative to lipophilic fluorescent dyes to study adipose tissue across zebrafish developmental stages while preserving normal adipose tissue development.\n\nWe establish the utility of this transgenic line to study the regulation of adipose tissue by both diet and pharmacologic perturbations. We focused on visceral adipose tissue due to its role as an endocrine organ and the\u00a0central regulator of organismal metabolism (Fox et al., 2007; Le Jemtel et al., 2018; Verboven et al., 2018). We show that our Tg(-3.5ubb:plin2-tdTomato) line is sensitive enough to capture quantitative changes in visceral adipose tissue after short-term pharmacologic treatments with known regulators of adipocyte lipolysis. Furthermore, by combining top hits from a large-scale in vitro chemical screen in 3T3-L1 adipocytes with our reporter we uncovered a novel role for nitric oxide in modulating adipocyte lipolysis and adipose tissue dynamics.\n\nBeyond pharmacologic perturbations, we also demonstrate the power of this line to perform longitudinal analyses of diet-induced perturbations on adipose tissue area across multiple time points. This work yielded compelling insights into the dynamics of adipose tissue response to both prolonged fasting and high-fat diet. Differences in the kinetics of each response suggest a complex relationship between adipose tissue development and the nutritional and energetic requirements of the developing organism, which merits future investigation. Collectively, these data illustrate the potential of our model to yield novel insights into the regulation of visceral adipose tissue, including the context of obesity.\n\nWhile our studies show that this tool can be used to increase our understanding of adipocyte biology, it can also be utilized to study lipid droplets in other contexts as well.\u00a0Lipid droplets are ubiquitous across almost all cell types. Therefore, this model could be applied to study the regulation of lipid droplets in the development and function of other adipose depots and additional cell types, such as muscle and hepatocytes (Bosma, 2016; Wang et al., 2013). In the disease context, we focused on the role of lipid droplets in cancer, since tumor cells can take up lipids from adipocytes and then package them into lipid droplets (Balaban et al., 2017; Lengyel et al., 2018; Nieman et al., 2011; Zhang et al., 2018). This transfer of lipids has been linked to disease progression, making the regulation of lipid release from the lipid droplet through subsequent lipolysis in the tumor cell of particular interest. We found that regulation of lipolysis by ATGL and nitric oxide pathways is conserved between adipocytes and melanoma cells although phenotypes downstream of nitric oxide may be cell type specific. Collectively, this underscores the complexity of lipid droplet regulation and emphasizes the importance of studying these processes in multiple cell types. We believe that our model will serve as a powerful tool to study cell type-specific regulation of lipid droplet biogenesis and function while preserving the endogenous structural and metabolic environment of an in vivo system.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Danio rerio)</td>\n      <td>ZMEL</td>\n      <td>Heilmann et al., 2015</td>\n      <td></td>\n      <td>mitfa:BRAFV600E/p53-/-</td>\n    </tr>\n    <tr>\n      <td>Cell line (Danio rerio)</td>\n      <td>ZMEL-LD</td>\n      <td>This paper</td>\n      <td>(-3.5ubb:plin2-tdtomato) in pDestTol2pA2-blastocidin</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>3T3-L1</td>\n      <td>ZenBio</td>\n      <td>SP-L1-F</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>casper</td>\n      <td>White et al., 2008</td>\n      <td>mitfaw2/w2;mpv17a9/a9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>(-3.5ubb:plin2-tdtomato)</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>(-3.5ubb:plin2-tdtomato) in pDestTol2CG2 (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>(-3.5ubb:plin2-tdtomato) in pDestTol2pA2-blastocidin (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDestTol2pA2-blastocidin (plasmid)</td>\n      <td>Heilmann et al., 2015</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDestTol2CG2 (plasmid)</td>\n      <td>Kwan et al., 2007</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PLIN2 cDNA FWD</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>AAAGCAGGCTCCACCATGAGCTTTCTTCTGTACTTGAAACTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PLIN2 cDNA REV</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>GCCCTTGCTCACCATTTCAGTGACTTGAAGGGTCCTCTGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PLIN2-TMT FWD</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>GCCGCCCCCTTCACCATGAGCTTTCTTCTGTACTTGAAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PLIN2-TMT REV</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>GCCCTTGCTCACCATTTCAGTGACTTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>tdTOMATO ME PLIN2 FWD</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>ATGGTGAGCAAGGGCGAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>tdTOMATO ME PLIN2 REV</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>GGTGAAGGGGGCGGC</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Cloneamp HiFi PCR Premix</td>\n      <td>Takara</td>\n      <td>Catalog #639298</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>In-Fusion HD Cloning Plus</td>\n      <td>Takara</td>\n      <td>Catalog #638920</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Gateway LR Clonase Enzyme mix</td>\n      <td>Thermo Fisher</td>\n      <td>Catalog #11791019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Zymogen Quick RNA Miniprep Kit</td>\n      <td>Zymo Research</td>\n      <td>Catalog #R1054</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Invitrogen SuperScriptIII First-Strand Synthesis SuperMix Kit</td>\n      <td>Thermo Fisher</td>\n      <td>Catalog #18080400</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NucleoSpin Gel and PCR Clean up</td>\n      <td>Takara</td>\n      <td>Catalog #740609.50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Free Glycerol Reagent</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #F6428</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Glycerol Standard Solution</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #G7793</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HCS LipidTOX deep red</td>\n      <td>Thermo Fisher</td>\n      <td>Catalog #H34477</td>\n      <td>1:250 or 1:500</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>BODIPY 493/503</td>\n      <td>Thermo Fisher</td>\n      <td>Catalog #D3922</td>\n      <td>5 or 10 ng/\u00b5l</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>AUTODOT Visualization Dye (MDH)</td>\n      <td>Abcepta</td>\n      <td>Catalog #SM1000a</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Forskolin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #F6886</td>\n      <td>5 \u00b5M (fish)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Auranofin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #A6733</td>\n      <td>1 \u00b5M (fish), 0.5 \u00b5M (cells)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>JS-K</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #J4137</td>\n      <td>1 \u00b5M (fish), 0.5 \u00b5M (cells)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Atglistatin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #SML1075</td>\n      <td>40 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Oleic Acid-Albumin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #O3008-5M</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>LOPAC 1280 Library</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog #LO1280</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RFP antibody (rabbit polyclonal)</td>\n      <td>Rockland</td>\n      <td>Catalog #600-401-379, RRID:AB_2209751</td>\n      <td>(1:500), (1 \u00b5L)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PRISM</td>\n      <td>Graphpad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI</td>\n      <td>Schindelin et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo</td>\n      <td>Becton, Dickinson and Company</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>High-fat diet</td>\n      <td>Sparos</td>\n      <td></td>\n      <td>See detailed description of high-fat diet contents in the 'Methods' section below</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning of -3.5ubb:plin2-tdtomato\n\nTo clone the plin2 cDNA, tissue from the muscle and heart of adult casper zebrafish was dissected, pooled, and then RNA was isolated using the Zymogen Quick RNA Miniprep Kit (Zymo Research, Irvine, USA; catalog #R1054) according to manufacturer's instructions. The Invitrogen SuperScriptIII First-Strand Synthesis SuperMix Kit (Thermo Fisher, Waltham, USA;\u00a0catalog #18080400) was used according to manufacturer's instructions to produce cDNA. CloneAmp HiFi PCR Premix (Takara, Mountain View, USA;\u00a0catalog #639298) was used to PCR amplify the PLIN2 cDNA and gel purified via NucleoSpin Gel and PCR Clean Up (Takara, Mountain View, USA; catalog #740609.50). To generate pME-PLIN2-tdTOMATO, the PLIN2 cDNA was inserted on the 5\u2019 end of pME-tdTOMATO using In-Fusion HD Cloning Plus (Takara, Mountain View, USA;\u00a0catalog #638920). Gateway cloning using the Gateway LR Clonase Enzyme mix (Thermo Fisher, Waltham, USA;\u00a0catalog #11791019) was employed to create the -3.5ubb:plin2-tdTomato construct with p5E-ubb, pME-PLIN2-tdTOMATO, and\u00a0p3E-polyA into pDestTol2pA2-blastocidin (cells) (Heilmann et al., 2015) or pDestTol2CG2 (zebrafish) (Kwan et al., 2007).\n\n### Zebrafish husbandry\n\nAll zebrafish experiments were carried out in accordance with institutional animal protocols. All zebrafish were housed in a temperature- (28.5\u00b0C) and light-controlled (14 hr on, 10 hr off) room. Fish were initially housed at a density of five fish per liter and fed three times per day using rotifers and pelleted zebrafish food. Anesthesia was done using Tricaine (Western Chemical Incorporated, Ferndale, USA) with a stock of 4 g/l (protected for light) and diluted until the fish was immobilized. All procedures were approved by and adhered to Institutional Animal Care and Use Committee (IACUC) protocol #12-05-008 through Memorial Sloan Kettering Cancer Center.\n\n### Generation of Tg(-3.5ubb:plin2-tdTomato)\n\nThe ubb:plin2-tdTomato plasmid was injected into casper embryos with Tol2 mRNA to introduce stable integration of the ubb:plin2-tdTomato cassette. Fish with GFP+ hearts (due to pDestTol2CG) were selected and outcrossed with casper fish to produce the F1 generation. F1 zebrafish with GFP+ hearts and validated PLIN2-tdTOMATO-expressing adipocytes were outcrossed to generate F2 and F3 generation zebrafish for experiments.\n\n### Zebrafish imaging and analysis\n\nZebrafish were imaged using an upright Zeiss AxioZoom V16 Fluorescence Stereo Zoom Microscope with a x0.5 (for adult fish) or x1.0 (for juvenile fish) adjustable objective lens equipped with a motorized stage, brightfield, and Cy5, GFP, and tdTomato filter sets. To acquire images, zebrafish were lightly anesthetized with 0.2% Tricaine. Images were acquired with the Zeiss Zen Pro v2 and exported as CZI files for visualization using FIJI or analysis using FIJI (to manually quantify standard length) and MATLAB (Mathworks, Natick, USA).\n\nOur adipocyte segmentation approach utilized the Image Processing Toolbox within MATLAB. Because the zebrafish gut is highly autofluorescent, we chose a threshold for the GFP channel to categorize as background signal and subtracted it from a determined threshold for the tdTOMATO channel. We used a set size to crop images around the tdTOMATO-positive signal and created a mask for the adipose tissue. Within the masked area, we applied a higher tdTOMATO threshold to segment the fluorescent signal from the adipocytes. Finally, we quantified the number of pixels above the threshold to quantify adipose tissue area. MATLAB code is available for download at https://github.com/dlumaquin/PLIN2-tdT-Adipo-Quant.git (copy archived at swh:1:rev:decae59e912bd79d43f8559d5a4ee32316233153);\u00a0Anthony, 2021.\n\nTo quantify BODIPY-stained adipose tissue, we utilized FIJI to autothreshold GFP signal. We removed background autofluorescence by subtracting Cy5 autothresholded signal. We used the polygon tool to outline and quantify the resulting segmented adipose area.\n\nFor visualization purposes, the segmented images were color filtered on Adobe Photoshop from grayscale to gold color scale.\n\n### BODIPY staining of zebrafish\n\nAdult zebrafish were placed in tanks with 10 ng/\u00b5l BODIPY 493/503 (Thermo Fisher, Waltham, USA;\u00a0catalog #D3922) for 30 min in the dark. Fish were washed and\u00a0then placed in new tanks with fresh water for 2 hr. Fish were washed again to remove any residual BODIPY, then anesthetized and imaged as indicated above for whole adipose tissue.\n\nHigher resolution images of zebrafish adipocytes were acquired using the Zeiss LSM 880 inverted confocal microscope using a x10 objective. Zebrafish were lightly anesthetized with 0.2% Tricaine and mounted on a glass bottom dish (MatTek, Ashland, USA; catalog #P35G-1.5\u201320 C) with 0.1% low gelling agarose (Sigma-Aldrich, St. Louis, USA;\u00a0catalog #A9045-25G).\n\n### Staining to track adipose depot development\n\nFor BODIPY staining, 5, 14, and\u00a021 dpf fish were incubated with 5 ng/\u00b5l BODIPY 493/503 in dishes for\u00a030 min in the dark. Fish were washed with fresh E3 every 45 min for 1.5 hr, then anesthetized and imaged as indicated above for whole adipose tissue. 42 dpf and adult zebrafish were stained in p1000 tip boxes for 30 or 15 min, respectively, in the dark. Fish were then placed back on system to wash with fresh water for 1.5 hr and then anesthetized and imaged as indicated below for whole adipose tissue.\n\n### Image analysis to track adipose depot development\n\nTo track adipose depot development across multiple stages, F2\u00a0(-3.5ubb:plin2-tdTomato) zebrafish were outcrossed with caspers to generate F3 fish expressing the transgene and control siblings. Control and Tg(-3.5ubb:plin2-tdTomato) fish were raised to a standard density of 25 fish per 2.8\u00a0l tank. At the appropriate time\u00a0points, 5, 14, 21, and\u00a042 dpf or adult-stage zebrafish were removed from the tank and stained for BODIPY as described above.\n\nImages were acquired in three segments per fish along the anterior to posterior axis to capture the entire body of the fish. Adipose depots were classified based on the previously described system (Minchin and Rawls, 2017a). To determine the presence of each adipose depot, images were thresholded in FIJI for GFP (BODIPY493/503) or tdTomato (-3.5ubb:plin2-tdTomato) using control fish as the reference. A depot was scored as present based on positive signal corresponding to the presence of adipocytes for at least one sub-depot in the appropriate anatomic location.\n\n### IHC for tdTOMATO\n\nZebrafish were sacrificed in an ice bath for at least 15 min. For adults, zebrafish tails were dissected. For juvenile zebrafish, the entire fish was used for fixation. Selected zebrafish were fixed in 4% paraformaldehyde for 72 hr at 4\u00b0C, washed in 70% ethanol for 24 hr, and then paraffin embedded. Fish were sectioned at 5 \u00b5m and placed on Apex Adhesive slides, baked at 60\u00b0C, and then stained with antibodies against tdTomato (1:500, Rockland, #600-401-379).\u00a0Histology was performed and stained by Histowiz.\n\n### Zebrafish fast\n\nTg(-3.5ubb:plin2-tdTomato) F2 fish were outcrossed with caspers to generate the F3 generation. F3 fish were raised at a standard density of 25 fish per 2.8 l tank. For BODIPY staining experiments, 21 dpf fish were separated into new tanks that received standard feed or were fasted for 7 days. Prior to imaging, food was withheld for 3\u20136 hr to clear the gut. Fish were anesthetized with Tricaine and imaged as described above to quantify BODIPY-stained visceral adipose tissue area and standard length. For the time course fast, 21 dpf Tg(-3.5ubb:plin2-tdTomato) fish were separated into new tanks that received standard feed or fasted. Prior to imaging, food was withheld for 3\u20136 hr to clear the gut. Fish were anesthetized with Tricaine and imaged on days 0, 2, 5, and 7 to quantify PLIN2-tdTOMATO-positive visceral adipose tissue area and standard length.\n\n### High-fat diet feeding\n\nTg(-3.5ubb:plin2-tdTomato) F3 zebrafish were raised at a standard density of 25 fish per 2.8 l tank. At 21 dpf, the zebrafish were placed in 0.8\u00a0l tanks and fed either a high-fat or control diet (Sparos, Portugal) for up to 14 days. Fish were then imaged for PLIN2-tdTOMATO expression at days 0, 7, and 14 after the start of diet. Prior to imaging, fish were\u00a0put in a new tank and food withheld for\u00a0~16 hr. Zebrafish were at equal density for control and experimental groups, ranging from 15 to 30 fish per tank. Fish were fed 0.1 g feed per tank per day split over two feedings. The high-fat and control diets were customized and produced at Sparos Lda (Olh\u00e3o, Portugal), where powder ingredients were initially mixed according to each target formulation in a double-helix mixer, and\u00a0thereafter ground twice in a micropulverizer hammer mill (SH1; Hosokawa-Alpine, Germany). The oil fraction of the formulation was subsequently added and diets were humidified and agglomerated through low-shear extrusion (Dominioni Group, Italy). Upon extrusion, diets were dried in a convection oven (OP 750-UF; LTE Scientifics, United Kingdom) for 4 hr at 60\u00b0C, and subsequently crumbled (Neuero Farm, Germany) and sieved to 400\u00a0\u03bcm. Experimental diets were analyzed for proximal composition. The Sparos control diet contains 30% fishmeal, 33% squid meal, 5% fish gelatin, 5.5% wheat gluten, 12% cellulose, 2.5% soybean oil, 2.5% rapeseed oil, 2% vitamins and minerals, 0.1% vitamin E, 0.4% antioxidant, 2% monocalcium phosphate, and 2.2% calcium silicate. The Sparos HFD contains 30% fishmeal, 33% squid meal, 5% fish gelatin, 5.5% wheat gluten, 12% palm oil, 2.5% soybean oil, 2.5% rapeseed oil, 2% vitamins and minerals, 0.1% vitamin E, 0.4% antioxidant, 2% monocalcium phosphate, and 2.2% calcium silicate.\n\n### 3T3-L1 cell culture\n\n3T3-L1 cells were acquired from ZenBio and their differentiation protocol\u00a0was\u00a0followed. Cells were received at passage 8\u00a0and split to a maximum of passage 12 as per the\u00a0recommendations of the company. 96-well plates were coated with fibronectin (EMD Millipore, Burlington, USA; catalog #FC010) diluted 1:100 in phosphate-buffered saline\u00a0(PBS) for at least 30 min to promote improved adherence of cells to the dish. 3T3-L1 cells were first cultured in PM-1-L1 Preadipocyte Medium and allowed to grow to 100% confluence. PM-1-L1 medium was changed every 48\u201372 hr. 48 hr after reaching 100% confluence, cells were changed to DM-1-L1 Differentiation Medium for 72 hr and then changed to AM-1-L1 Adipocyte Medium. AM-1-L1 Adipocyte Medium was changed every 48\u201372 hr. Once in AM-1-L1, the\u00a0medium was changed gently with a multichannel pipette, and only 150 \u00b5l of the 200 \u00b5l was replaced to prevent touching the bottom of the well with the pipette tip. After 2\u20133 weeks in AM-1-L1, the 3T3-L1 developed significantly large lipid droplets and were used in the screen.\n\n### LOPAC library screen\n\nThe LOPAC library includes 1280 clinically relevant compounds with annotated targets or pathways. The workflow of the screen involved drug or vehicle control of the 3T3-L1 adipocytes for 24 hr in serum-free media. After 24 hr, 100 \u00b5l of the media supernatant was collected to measure secreted glycerol using the Free Glycerol Reagent (Sigma-Aldrich, St. Louis, USA;\u00a0catalog F6428) following the associated glycerol assay protocol.\n\nThe\u00a0medium (screen media) used for drug treatment was phenol-free DMEM supplemented with 0.2% BSA FFA-free (Sigma-Aldrich, St. Louis, USA; catalog 9048-46-8). The 1280 compounds were aliquoted as 2 \u00b5l at 1 mM into 16 \u00d7 96-well plates and stored at \u221220\u00b0C. Upon thawing, 198 \u00b5l of screen media was added to the well, bringing the final drug concentration for all compounds in the screen to 10 \u00b5M. Control vehicle was 1% DMSO served as a negative control and 1 uM isoproterenol served as a positive control in the screen. This medium containing LOPAC drugs, DMSO, and isoproterenol was transferred to 3T3-L1 cells and incubated for 24 hr.\n\nTo measure glycerol release as a readout for lipolysis, 100 \u00b5l of Free Glycerol Reagent was aliquoted per well of a 96-well plate. 10 \u00b5l of supernatant media from 3T3-L1 adipocytes was then added to each well. A standard curve was produced by using Glycerol Standard Solution (Sigma-Aldrich, St. Louis, USA; catalog G7793). The plate was incubated at 37\u00b0C for 5 min and then developed with a plate reader set to detect absorbance at 540 nm. Using the standard curve, a fit equation was developed in Excel to convert the absorbance values into glycerol concentrations. To take into account differences that occur in wells on the edge versus middle of the plate, all well positions across all plates in the screen were averaged to create a normalization factor for any given position on the plate. These normalized values were then used to determine top hits for compounds that block lipolysis.\n\n### Glycerol release assay with Atglistatin\n\n3T3-L1s were differentiated on a fibronectin-coated 96-well dish. At the start of the lipolysis experiment, 3T3-L1s were changed to serum-free DMEM supplemented with 0.2% BSA FFA-free (Sigma-Aldrich, St. Louis, USA; catalog 9048-46-8). The medium was supplemented with 1% DMSO for negative control or 1 uM isoproterenol to induce lipolysis\u00a0or\u00a0\u00b1100 \u00b5M Atglistatin (Sigma-Aldrich, St. Louis, USA; catalog SML1075) to block lipolysis and cells were incubated for 24 hr.\n\nTo measure glycerol release, 100 \u00b5l of Free Glycerol Reagent was aliquoted per well of a new 96-well plate. 10 \u00b5l of supernatant media from 3T3-L1 adipocytes was then added to each well. A standard curve was produced by using Glycerol Standard Solution (Sigma-Aldrich, St. Louis, USA; catalog G7793). The plate was incubated at 37\u00b0C for 5 min and then developed with a plate reader set to detect absorbance at 540 nm. Using the standard curve, a fit equation was developed in Excel to convert the absorbance values into glycerol concentrations.\n\n### Zebrafish drug treatments\n\nTg(-3.5ubb:plin2-tdTomato) zebrafish\u00a0were outcrossed with caspers to generate the F2 or F3 generation. F2 or F3 fish were raised at a standard density of 50 fish per 6.0\u00a0l tank. For drug treatment, fish were removed from the system at 21 dpf and placed at a density of one fish per well in a six-well plate with 10 ml of E3 per well. To evaluate viability, fish were treated for 24 hr and quantified for live and dead larvae. After a 24 hr incubation with the drug, fish were anesthetized with Tricaine and imaged using the described protocol to quantify (1) standard length and (2) area of PLIN2-tdTOMATO expression corresponding to visceral adipose tissue area. Fish were treated with Forskolin (Sigma-Aldrich, St. Louis, USA; catalog #F6886), Auranofin (Sigma-Aldrich, St. Louis, USA; catalog #A6733), JS-K (Sigma-Aldrich, St. Louis, USA; catalog #J4137), or Atglistatin (Sigma-Aldrich, St. Louis, USA; catalog #SML1075[1]), which were all dissolved in DMSO.\n\n### Generation of ZMEL-LD cell line\n\nThe ZMEL zebrafish melanoma cell line was derived from a tumor of a mitfa:BRAFV600E/p53-/- zebrafish as described previously (Heilmann et al., 2015). ZMEL cells constitutively express eGFP driven by the mitfa promoter (Heilmann et al., 2015). ZMEL cells were grown at 28\u00b0C in a humidified incubator in DMEM (Gibco, Waltham, USA; catalog #11965) supplemented with 10% fetal bovine serum\u00a0(FBS) (Gemini Bio, #100\u2013500), 1x penicillin/streptomycin/glutamine (Gibco, Waltham, USA; catalog #10378016), and 1x GlutaMAX (Gibco, Waltham, USA; catalog #35050061). To generate the ZMEL-LD cells, ZMEL cells were nucleofected with the ubb:plin2-tdtomato plasmid using the Neon Transfection System (Thermo Fisher, Waltham, USA; catalog #MPK10096), selected for 2 weeks in blasticidine-supplemented media at 4 \u00b5g/\u00b5l (Sigma-Aldrich, St. Louis, USA; catalog #15205\u201325 MG), and FACS sorted for GFP and tdTOMATO double-positive cells. ZMEL and ZMEL-LD cells underwent routine Mycoplasma testing, most recently in January 2021.\n\n### ZMEL-GFP and ZMEL-LD imaging\n\nEight-well Nunc Lab-Tek Chambered Coverglass was coated with 1:100 dilution of fibronectin in Dulbecco's Phosphate\u00a0Buffered Saline\u00a0(DPBS) (Millipore Sigma, Burlington, USA; catalog #FC010-5MG) for 30 min and then washed with DPBS (Thermo Scientific, Waltham, USA; catalog #14190\u2013250). ZMEL-GFP or ZMEL-LD cells were seeded at 30,000 cells per well and left to adhere for 24 hr. A\u00a0medium supplemented with oleic acid (Sigma-Aldrich, St. Louis, USA;\u00a0catalog #O3008-5ML) was added for 24 hr. Cells were fixed with 2% paraformaldehyde (Santa Cruz Biotechnology, Santa Cruz, USA; catalog #sc-281692) for 45 min and washed with DPBS. For MDH staining, cells were permeabilized with 0.1% Triton-X (Thermo Fisher, Waltham, USA; catalog #PI85111) for 30 min at room temperature, washed, and stained with 1:500 MDH (Abcepta, San Diego, USA;\u00a0catalog #SM1000a) for 15 min. Cells were imaged on the Zeiss LSM 880 inverted confocal microscope with AiryScan using a x63 oil immersion objective. For Lipid staining, cells were stained with 1:500 Lipidtox Deep Red (Thermo Fisher, Waltham, USA; catalog #H34477) and 1:2000 Hoechst 33342 (Thermo Fisher, Waltham, USA; catalog #H3570) for 30 min. Cells were imaged on the Zeiss LSM 880 inverted confocal microscope using a x40 oil immersion objective. Confocal stacks were visualized via FIJI, and 3D reconstruction was created using Imaris (Bitplane Inc, Concord, USA).\n\n### ZMEL-LD FACS analysis\n\nZMEL Dark (no fluorescence), ZMEL-GFP, and\u00a0ZMEL-LD cells were plated on fibronectin-coated six-well plates at a density of 500,000 cells in 1 ml of media per well. At 24 hr after plating, cells were given either 150 \u00b5M of BSA or oleic acid with 1 \u00b5l of DMSO. At 48 and 72 hr after plating, lipid droplet low and high controls were switched to fresh media with 150 \u00b5M of BSA or oleic acid with 1 \u00b5l of DMSO. Cells pulsed with oleic acid received fresh media with 150 \u00b5M of BSA with either 40 \u00b5M Atglistatin, 0.5 \u00b5M Auranofin, or 0.5 \u00b5M JS-K. At 96 hr after plating, cells were trypsinized, washed with DPBS, and resuspended in DMEM supplemented with 2% FBS, 1x penicillin/streptomycin/glutamine, and 1x GlutaMAX. Cells were stained for viability with 1:1000 DAPI and strained through the Falcon FACS Tube with Cell Strainer Cap (Thermo Fisher, Waltham, USA; catalog #08-771-23). For Lipidtox comparison, cells were given either BSA or indicated concentrations of oleic acid for 24 hr. Cells were trypsinized, washed with DPBS, stained with 1:250 Lipid Deep Red and 1:1000 DAPI for 10 min, and strained through the Falcon FACS Tube with Cell Strainer Cap. Data was acquired via the Beckman Coulter CytoFLEX Flow Cytometer (Beckman Coulter, Miami, USA) and analyzed using FlowJo software (BD Biosciences, San Jose, USA).\n\n### Schematics\n\nSchematics and illustrations were generated using Biorender on biorender.com.\n\n### Statistics\n\nAll statistical analyses were performed using GraphPad Prism 8 (Graphpad, San Diego, USA). Data are presented as mean\u00a0\u00b1\u00a095% confidence interval (CI) or standard error of the mean (SEM). p<0.05 was considered statistically significant. Statistical tests used are noted in the figure legend. All experiments were done with at least three independent replicates. For in vivo experiments, N denotes the\u00a0number of independent experiments while n denotes the\u00a0number of individual fish. Imaging analyses utilized FIJI, Imaris, and\u00a0MATLAB software.\n\n### Availability of resources\n\nAll zebrafish cell lines and transgenic lines are available upon request. In addition, the Tg(-3.5ubb:plin2-tdTomato) zebrafish will be deposited at the Zebrafish International Resource Center.\n",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "8f545a41-f1fa-4de1-833c-f279be63ef05",
+      "submission_id": "56b2e4c3-1921-4087-b496-2d64d1ba2509",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Amnon Schlegel, University of Utah School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64744.sa1](https://doi.org/10.7554/eLife.64744.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this rigorously revised manuscript you and your colleagues show that your Pin2-tdTomato fusion protein system (in whole zebrafish and in melanoma cells) is a robust reporter of lipid mass. The carefully controlled time series, high-fat feeding, and dose-response experiments strengthen your conclusions. Your reporter line will be a major resource to those in the lipid droplet field. The explicit statements regarding transgenic line and source code availability are major steps in spreading the use of your resource.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"An in vivo reporter for tracking lipid droplet dynamics in transparent zebrafish\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Amnon Schlegel as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Didier Stainier as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: James Minchin (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nIn this Tools and Resources manuscript, the authors present a transgenic zebrafish line ubiquitously expressing a lipid droplet coat protein gene fused to a fluorescent protein. The authors characterize the properties of this reporter in labeling adipocyte lipid droplets of optically transparent juveniles and adults casper mutants. Experiments are presented using this reporter construct to validate the results of a chemical screen conducted in in vitro-differentiated adipocytes, revealing a role for nitric oxide signaling in controlling lipolysis. Several hits from this screen are also validated in a zebrafish melanoma cell line system expressing the lipid droplet reporter system. The authors posit transgenic reporter system will be useful to workers interested in lipid droplet accumulation in an intact vertebrate animal.\n\nThe authors prepared a transgenic zebrafish whose official name should be stated as Tg-3.5ubb:plin2-tdTomato throughout the manuscript. This line expresses a fusion protein of the lipid droplet coat protein Perilipin 2 with a C-terminally fused tdTomato fluorescent reporter (Figure 1). This line was prepared to establish a system for evaluating lipid droplets in an intact vertebrate model organism, something not available to the research community prior to this study. The authors posit this tool will be of use to other researchers interested in studying lipid droplet biology with implications for several diseases.\n\nThe authors use the reporter line to examine the appearance of lipid droplet area in the visceral depots of late larvae (Figure 2); monitor the decrease lipid droplet area in starvation and following adrenergic signaling-driven lipolytic states (figure 3); and to demonstrate an increase in adipose area in a high-fat dietary challenge (Figure 4).\n\nThe authors then conducted a chemical screen in 3T3-L1 differentiated adipocytes for compounds that modulate lipolysis (glycerol release being the high-throughput assay read-out). They find multiple nitric oxide modulators inhibit lipolysis, and demonstrate that treatment of fasted Tg-3.5ubb:plin2-tdTomato juveniles with the hit compounds also modulates lipid droplet area. These same compounds also modulate lipid droplet number and size in a zebrafish melanoma cell line.\n\nThe three reviewers agree that the manuscript represents a potentially major advance. For labs using zebrafish, this tool will provide new abilities to monitor lipid droplets and their potential roles in metabolic challenges and diseases like cancer. This reporter could also allow for novel understanding of heterogeneity of adipocytes and lipid droplets by allowing study of how single cells and even single lipid droplets dynamically change in an organism. The essential revisions were formulated after discussion in the hopes of strengthening the manuscript and yielding a tool of wide interest to the field.\n\nTitle:\n\nSee the comments below regarding the need to include the chemical screen in the title or abstract.\n\nEssential revisions:\n\n1. A fuller ontogeny of lipid droplets within adipocytes should be feasible with the authors new reporter: starting from feeding (5 to 7 dfp) , a time series of representative larval whole-mount photomicrographs should be presented to demonstrate when, where, and to what extent the reporter begins to report. (Figure 1). Others have used a similar lipid droplet coat protein labeling approach in cell culture models and invertebrates; these citations are more pertinent than several review articles (https://pubmed.ncbi.nlm.nih.gov/12591929/) and (https://pubmed.ncbi.nlm.nih.gov/24894357/). An alternative, probe-free, whole animal imaging platform has been described in zebrafish, and merits discussion: https://pubmed.ncbi.nlm.nih.gov/33268772/.\n\n2. A direct comparison of the tdTomato signal with a fluorescent lipid dye such as BODIPY 493/503 in a time series would allow the reader to grasp what the advantages and disadvantages of both approaches are. A critical control for this experiment is to use analyze the fluorescent lipid signal of casper siblings not carrying the transgene to assess whether the transgene itself alters lipid accumulation. The presence of a Perilipin A transgene in mouse adipose alters whole body physiology, making the need to evaluate the zebrafish Plin2-tdTomato transgenic for possible neomorphic phenotypes critical: https://pubmed.ncbi.nlm.nih.gov/21103377/. Along similar lines, the text from lines 17 to 58 and line 75 should be revised to more fairly describe the body of work using several lipid dyes in this model system.\n\n3. A prolonged fast is feasible, and has been done with fluorescent lipid molecule vital stains (again, see point 1 regarding the robust read-out available with these probes and the need for balanced discussion of their limitations). Conducting such a fast would greatly enhance the results of Figure 2. A time course of up to 7 days would be very informative, revealing how the tdTomato signal decreases as lipid mass decreases. This would also reveal how a transgene under a ubiquitous promoter responds to loss of a cellular structure. This point mirrors the first: casper animals lacking the transgene should be examined with concurrent BODIPY staining, since this would reveal if the transgene's presence alters the kinetics of lipolysis. If single animals could be tracked, that would also enhance the power of the tool to reveal individual organism lipid levels. Of course, repeated microscopic mounting might not be feasible; but sufficient animals will survive the process to make initial and final data points informative (Figure 2).\n\n4. The impact of the short-term (7 days) feeding of the \"HFD\" on mass and condition factor should be presented. The expansion of visceral lipid area seems rather modest in 7 days; doubling this duration and plotting time series for the changes in SL, mass, and adipose fluorescent area would reveal the dynamic range of this tool in revealing increases in adiposity. A second diet of age-appropriate live feed would also make the results more useful to other workers: the defined diet the authors present might not be widely used by others.\n\n5. The scale and scope of the chemical screen should be described in the title, abstract, or both. The potent ATGL inhibitor Atglistatin has a much larger effect in preventing loss of fluorescent area in a 24-hour drug treatment in vivo than the nitric oxide donor JS-K or the thioredoxin reductase inhibitor does. This might reflect dose more than potency of mechanism: 40 \u03bcm vs. 1 uM. A dose range for the nitric oxide modulators is needed to make valid comparisons and to address the power of the transgenic system to serve as a valid readout in future chemical screens (i.e., using these animals and not 3T3L1 cells will reveal both autonomous and non-autonomous mechanisms of adipose lipid accumulation). Others have made a similar observation that merits citation: https://pubmed.ncbi.nlm.nih.gov/26317347/.\n\n6. Paralleling points 1 to 3, the melanoma cell experiments should be done with the BODIPY tracer as a comparator to reveal what is gained with the transgenic reporter. A video of melanoma cells does not add much to this manuscript, since it is the power of the in vivo reporter that is being showcased and could be demonstrated better with addressing the above points.\n\n7. Data Availability\n\nThe availability of the Tg(-3.5ubb:plin2-tdTomato) casper line is not disclosed, while a competing interest of the senior author's use of the casper line is. Given the NIH funding listed, this model organism should be deposited in the Zebrafish International Resource Center, and a statement regarding this should be included in the manuscript.\n",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a5dc40c0-3801-48d1-aa0b-b21c71769354",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C1",
+      "claim": "Lipid droplets are lipid storage organelles found in nearly all cell types from adipocytes to cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid droplets are lipid storage organelles found in nearly all cell types from adipocytes to cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about lipid droplets that draws from established scientific knowledge about their ubiquity across cell types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "303ad02f-91cd-484d-8ecd-c43d85e7b68a",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C2",
+      "claim": "Current methods to study lipid droplets in vertebrate models rely on static imaging or the use of fluorescent dyes, limiting investigation of their rapid in vivo dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Although increasingly implicated in disease, current methods to study lipid droplets in vertebrate models rely on static imaging or the use of fluorescent dyes, limiting investigation of their rapid in vivo dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by inference from the limitations described in the manuscript and knowledge of existing methods.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "69039b2c-3951-42be-906f-96d6db3a287b",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C3",
+      "claim": "A lipid droplet transgenic reporter was created in whole animals and cell culture by fusing tdTOMATO to Perilipin-2 (PLIN2).",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we created a lipid droplet transgenic reporter in whole animals and cell culture by fusing tdTOMATO to Perilipin-2 (PLIN2), a lipid droplet structural protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "0f8e8352-91bd-4d47-a3d5-0015a5974760",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C4",
+      "claim": "Expression of the plin2-tdTomato transgene in transparent casper zebrafish enabled in vivo imaging of adipose depots responsive to nutrient deprivation and high-fat diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of this transgene in transparent casper zebrafish enabled in vivo imaging of adipose depots responsive to nutrient deprivation and high-fat diet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing imaging of adipose tissue under different dietary conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "0edb10e8-7780-4aa5-b303-90352f45df7e",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C5",
+      "claim": "A large-scale in vitro chemical screen of 1280 compounds identified several novel regulators of lipolysis in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, we performed a large-scale in vitro chemical screen of 1280 compounds and identified several novel regulators of lipolysis in adipocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data from the LOPAC library screen described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "d5ff3ede-a87c-4df4-b0f9-8254fcc9854b",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C6",
+      "claim": "The Tg(-3.5ubb:plin2-tdTomato) zebrafish line validated several novel regulators of lipolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our Tg(-3.5ubb:plin2-tdTomato) zebrafish line, we validated several of these novel regulators and revealed an unexpected role for nitric oxide in modulating adipocyte lipid droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental validation data showing effects of compounds on adipose tissue in zebrafish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "84b9b1d0-b937-4c62-a84d-360e6ea94b21",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C7",
+      "claim": "Nitric oxide has an unexpected role in modulating adipocyte lipid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our Tg(-3.5ubb:plin2-tdTomato) zebrafish line, we validated several of these novel regulators and revealed an unexpected role for nitric oxide in modulating adipocyte lipid droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing effects of nitric oxide modulators on adipocyte lipid droplets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "927e21b0-2f42-4445-a505-8008affa15ce",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C8",
+      "claim": "The nitric oxide pathway regulates lipid droplets in melanoma cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we expressed the PLIN2-tdTOMATO transgene in melanoma cells and found that the nitric oxide pathway also regulated lipid droplets in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from ZMEL-LD cell line experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "daa06035-602f-4bc5-85c6-222ebdcd111a",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C9",
+      "claim": "Lipid droplets are cellular organelles that act as storage sites for neutral lipids and are key regulators of cellular metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid droplets are cellular organelles that act as storage sites for neutral lipids and are key regulators of cellular metabolism (Wilfling et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "364150bb-fb44-4a25-8bff-7118cc13f904",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C10",
+      "claim": "Lipid droplets are characterized by a monophospholipid membrane surrounding a hydrophobic lipid core.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid droplets are present in most cell types and are characterized by a monophospholipid membrane surrounding a hydrophobic lipid core (Tauchi-Sato et al., 2002; Wilfling et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "03e9b87d-4d5e-4137-b096-54109fdb7737",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C11",
+      "claim": "Cells maintain energetic homeostasis and membrane formation through the regulated incorporation and release of fatty acids and lipid species from the lipid droplet core.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells maintain energetic homeostasis and membrane formation through the regulated incorporation and release of fatty acids and lipid species from the lipid droplet core (Kurat et al., 2009; Kuerschner et al., 2008; Fujimoto et al., 2007; Zimmermann et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "dd20ee9a-052a-4e9c-88a2-9459b3ff13e4",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C12",
+      "claim": "Lipid droplets can sequester potentially toxic lipids and misfolded proteins during cellular stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, lipid droplets can assume various functions during cellular stress through the sequestration of potentially toxic lipids and misfolded proteins (Bailey et al., 2015; Listenberger et al., 2003; Vevea et al., 2015; Fei et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "e08fd8d5-72f5-4cfa-bf3d-ecbad1bad5e8",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C13",
+      "claim": "Lipid droplets maintain energy and redox homeostasis during cellular stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, lipid droplets can assume various functions during cellular stress through the sequestration of potentially toxic lipids and misfolded proteins (Bailey et al., 2015; Listenberger et al., 2003; Vevea et al., 2015; Fei et al., 2009), maintenance of energy and redox homeostasis (Liu et al., 2015; Liu et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "cbc81d0f-de03-4116-96a0-d8586376c0b1",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C14",
+      "claim": "Lipid droplets regulate fatty acid transfer to the mitochondria for \u03b2-oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "regulation of fatty acid transfer to the mitochondria for \u03b2-oxidation (Rambold et al., 2015; Herms et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "0bbe35cf-898b-41ff-a686-bace7aeb11ae",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C15",
+      "claim": "Lipid droplets maintain endoplasmic reticulum (ER) membrane homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "and the maintenance of endoplasmic reticulum (ER) membrane homeostasis (Chitraju et al., 2017; Bosma et al., 2014; Vel\u00e1zquez et al., 2016; Vevea et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "d4a9f181-3b3f-4db3-beef-be30ddda3c1f",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C16",
+      "claim": "Lipid droplets actively participate in the innate immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a recent study demonstrated that lipid droplets actively participate in the innate immune response (Bosch et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "ea2d1954-b37c-4e9f-9c77-ba95d4fdf42d",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C17",
+      "claim": "Lipid droplets can be hijacked by infectious agents like hepatitis C virus to facilitate viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "and, conversely, can be hijacked by infectious agents like hepatitis C virus to facilitate viral replication (Barba et al., 1997; Miyanari et al., 2007; Vieyres et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "64424731-0006-4f66-b0ef-796e4dbdc6aa",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C18",
+      "claim": "Lipid droplets can act as a storage pool in cancer cells after they take up lipids from extracellular sources, including adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lipid droplets can act as a storage pool in cancer cells after they take up lipids from extracellular sources, including adipocytes (Kuniyoshi et al., 2019; Nieman et al., 2011; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "e4a39ad8-68f9-486a-93fc-3db08238835a",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C19",
+      "claim": "White adipocytes contain a large unilocular lipid droplet.",
+      "claim_type": "EXPLICIT",
+      "source": "White adipocytes, which contain a large unilocular lipid droplet, can be readily labeled by lipophilic dyes (Minchin and Rawls, 2017a; Fam et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and represents established knowledge about adipocyte structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "3c346c1b-c8d9-4c55-9be3-3c07652ebbc6",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C20",
+      "claim": "In vivo imaging of lipid droplets in adipocytes or other cell types is currently highly limited.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in vivo imaging of lipid droplets, in adipocytes or other cell types, is currently highly limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the limitations of existing methods described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "bf82ac06-1281-4a6a-88ad-8f40f51cccaa",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C21",
+      "claim": "The size of the lipid droplet can change very rapidly in response to fluctuating metabolic needs.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the dynamics of lipid droplets in vivo, rather than in fixed tissues, is important since the size of the lipid droplet can change very rapidly in response to fluctuating metabolic needs (Bosch et al., 2020; Fam et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "bbfa53d5-46fd-4834-9160-8fe9e54527f7",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C22",
+      "claim": "In mice, much of adipose tissue imaging utilizes tissue fixation and sectioning, which can fail to preserve key aspects of the tissue structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, much of adipose tissue imaging utilizes tissue fixation and sectioning, which can fail to preserve key aspects of the tissue structure (Berry et al., 2014; Xue et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "48a5f058-e086-4263-9237-b78852cd550c",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C23",
+      "claim": "Whole-mount imaging approaches in mice can be combined with adipocyte-specific promoters but still require tissue dissection and can be limited by tissue thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-mount imaging approaches in mice can be combined with adipocyte-specific promoters; however, these methods still require tissue dissection and can be limited by tissue thickness (Berry and Rodeheffer, 2013; Chi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "9123751e-3b0b-42b7-875e-bdd51ec8c95b",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C24",
+      "claim": "Zebrafish offer a tractable model for high-throughput imaging of live animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish offer a tractable model to address these limitations given the ease of high-throughput imaging of live animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about zebrafish as a model organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "69e88019-9c68-4ce6-b085-0380d7613c71",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C25",
+      "claim": "The casper zebrafish strain allows for detailed in vivo imaging without the need for fixation of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially true with the availability of relatively transparent strains such as casper, which allows for detailed in vivo imaging without the need for fixation of the animal (White et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work describing the casper strain.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "71ce86d5-35ad-4fb6-ba5b-05b014e61be7",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C26",
+      "claim": "Zebrafish adipose tissue is highly similar to mammalian white adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Although less well studied than other vertebrates, zebrafish adipose tissue is highly similar to mammalian white adipose tissue, and a detailed work has classified the timing, dynamics, and location of zebrafish adipose tissue development (Minchin and Rawls, 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "af0bd346-98b4-4609-8270-0793ff8ca487",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C27",
+      "claim": "Current imaging approaches using lipophilic fluorescent dyes or analogs in vivo can require extensive and repeated staining, which may restrict the ability to read out dynamic changes over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Current imaging approaches using lipophilic fluorescent dyes or analogs in vivo have advanced our understanding of lipid droplets in adipocytes and other cell types (Minchin and Rawls, 2017a; Minchin et al., 2018; Minchin and Rawls, 2017b; Carten et al., 2011; Farber et al., 2001; Otis and Farber, 2016); however, these methods can require extensive and repeated staining, which may restrict the ability to read out dynamic changes over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and inference about the limitations of existing methods.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "03746cec-5b89-41de-b9ec-de8c93412014",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C28",
+      "claim": "Fluorescent dyes such as BODIPY and NileRed have limitations in their specificity for the lipid droplet.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, fluorescent dyes such as BODIPY and NileRed have limitations in their specificity for the lipid droplet (Daemen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "292b5667-beb0-4cbb-bc01-09e3cca48d26",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C29",
+      "claim": "A probe-free imaging approach to study subcellular lipid populations is restricted to early-stage zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, although a probe-free imaging approach to study subcellular lipid populations has been recently described (H\u00f8gset et al., 2020), this method is restricted to early-stage zebrafish, which would fail to capture post-embryonic cell populations and tissues, including adipocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and inference about the limitations of the method.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "9af6360f-2314-408a-a92a-81f8ee6717d5",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C30",
+      "claim": "Transgenic lipid droplet reporters have been restricted to cell culture systems and invertebrate model organisms such as C. elegans and Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, transgenic lipid droplet reporters have been restricted to cell culture systems and invertebrate model organisms such as Caenorhabditis elegans (C. elegans) and Drosophila (Targett-Adams et al., 2003; Beller et al., 2010; Liu et al., 2014; Liu et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "33452754-eaac-40f6-b533-742ebcfc5e38",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C31",
+      "claim": "A similar approach to creating a lipid droplet reporter in zebrafish was recently described while this manuscript was in review.",
+      "claim_type": "EXPLICIT",
+      "source": "although a similar approach in zebrafish was recently described while this manuscript was in review (Wilson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to concurrent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "09b3cb15-342f-40a0-a92f-b08b1d67bfe4",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C32",
+      "claim": "The -3.5ubb:plin2-tdTomato reporter faithfully marks the lipid droplet.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the -3.5ubb:plin2-tdTomato reporter faithfully marks the lipid droplet, which enables robust in vivo imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing colocalization with BODIPY and proper localization to lipid droplet membranes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "483d59e6-94c9-4a32-bc57-623354719785",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C33",
+      "claim": "The reporter can be applied to visualize adipocytes and to monitor adipose tissue remodeling in response to dietary and pharmacologic perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this reporter can be applied to visualize adipocytes and to monitor adipose tissue remodeling in response to dietary and pharmacologic perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from fasting, high-fat diet, and drug treatment experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "49f24bc2-4b26-45fa-bd08-30d4fcd07fc9",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C34",
+      "claim": "Several novel pharmacologic regulators of adipocyte lipolysis were discovered, including nitric oxide.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we report the discovery of novel pharmacologic regulators of adipocyte lipolysis such as nitric oxide and demonstrate that several of these compounds can modulate adipose tissue area in our in vivo system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the chemical screen and validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "ffb93fb5-4419-454c-a9df-e1b85d8d0b6f",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C35",
+      "claim": "A zebrafish melanoma cell line (ZMEL) expressing -3.5ubb:plin2-tdTomato (ZMEL-LD) was generated.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate the study of lipid droplets in novel contexts outside of adipocytes, we also generated a zebrafish melanoma cell line (ZMEL) (Heilmann et al., 2015) expressing -3.5ubb:plin2-tdTomato (ZMEL-LD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing the cell line creation and characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "16191938-2d1f-40d7-bc53-7006035bb9f9",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C36",
+      "claim": "The ZMEL-LD cell line can be used to monitor changes in lipid droplet production in response to both known and novel regulators of lipolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm that this cell line can be used to monitor changes in lipid droplet production in response to both known and novel regulators of lipolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from drug treatment experiments in ZMEL-LD cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "7963bd48-26f8-4b46-a351-dc549f3ed190",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C37",
+      "claim": "PLIN2 is a well-known lipid droplet-associated protein that is ubiquitously expressed on lipid droplets across cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose plin2 because it is a well-known lipid droplet-associated protein that is ubiquitously expressed on lipid droplets across cell types (Olzmann and Carvalho, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "168d2bb8-f423-4db0-86c0-eb587c12aabc",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C38",
+      "claim": "The adipocyte lipid droplet occupies the majority of space in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the adipocyte lipid droplet occupies the majority of space in the cell (Fujimoto et al., 2020), existing methods to visualize zebrafish adipocytes rely on lipophilic dyes and lipid analogs, which incorporate into the lipid droplet (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and represents established knowledge about adipocyte structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "9b70b90c-1f78-41d0-b6a7-8c5cc84d56b8",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C39",
+      "claim": "In adult zebrafish, subcutaneous adipocytes reside proximally to the tail fin.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult zebrafish, subcutaneous adipocytes are known to reside proximally to the tail fin (Minchin and Rawls, 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "691936ba-fdef-4496-9396-98f10f087ab9",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C40",
+      "claim": "PLIN2-tdTOMATO expression was detected in the zebrafish tail fin adipocytes and colocalized with BODIPY staining in 6-month-old adult Tg(-3.5ubb:plin2-tdTomato) zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "When we imaged 6-month-old adult Tg(-3.5ubb:plin2-tdTomato) zebrafish, we detected PLIN2-tdTOMATO expression in the zebrafish tail fin adipocytes, which colocalized with BODIPY staining (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "899a0ff3-a4ea-4e12-a5df-a333712cfcda",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C41",
+      "claim": "PLIN2 localizes to the lipid droplet membrane while BODIPY stains the lipid-rich core of the lipid droplet.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipophilic dyes such as BODIPY stain the lipid-rich core of the lipid droplet while lipid droplet resident proteins, such as PLIN2, localize to the lipid droplet membrane (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "faa29693-786f-4dc3-a522-edff7a9bcd34",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C42",
+      "claim": "PLIN2-tdTOMATO expression was on the outside of the lipid droplet, whereas BODIPY staining was on the interior of each droplet in the adipocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, higher magnification images of tail adipocytes revealed that PLIN2-tdTOMATO expression was on the outside of the lipid droplet, whereas the BODIPY staining was on the interior of each droplet in the adipocyte (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "ed85c4c9-2e97-4d6d-a133-c971e748cfdd",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C43",
+      "claim": "Immunohistochemistry on the Tg(-3.5ubb:plin2-tdTomato) zebrafish tail fin showed that adipocytes express tdTOMATO.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, immunohistochemistry (IHC) on the Tg(-3.5ubb:plin2-tdTomato) zebrafish tail fin showed that adipocytes express tdTOMATO (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "2ddd073f-6e03-462f-924f-29ad8ca6476d",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C44",
+      "claim": "Visceral adipose tissue plays an important role in metabolism and participates in pathological processes of obesity, aging, and metabolic syndromes.",
+      "claim_type": "EXPLICIT",
+      "source": "Visceral adipose tissue, otherwise known as abdominal fat, plays an important role in metabolism and participates in pathological processes of obesity, aging, and metabolic syndromes (Tchernof and Despr\u00e9s, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "3d99c7de-98c4-4528-9d73-a115bffbe385",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C45",
+      "claim": "In 21 dpf zebrafish, visceral adipose tissue is composed of abdominal and pancreatic visceral adipocytes predominantly located on the right flank near the swim bladder.",
+      "claim_type": "EXPLICIT",
+      "source": "In 21 days post-fertilization (dpf) zebrafish, visceral adipose tissue is composed of abdominal and pancreatic visceral adipocytes predominantly located on the right flank near the swim bladder (Figure 2A; Minchin and Rawls, 2017a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to prior work and illustrated in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "b6b6434d-922d-4647-8544-eb676c0bb85a",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C46",
+      "claim": "Visceral adipocytes visualized in brightfield demonstrate colocalization of PLIN2-tdTOMATO and BODIPY.",
+      "claim_type": "EXPLICIT",
+      "source": "Visceral adipocytes visualized in brightfield demonstrate colocalization of PLIN2-tdTOMATO and BODIPY, as we observed for subcutaneous adipocytes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "aefe9f76-c7fb-4b70-81e4-7bfd979a4e4f",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C47",
+      "claim": "IHC confirmed that the abdominal and visceral adipocytes of Tg(-3.5ubb:plin2-Tomato) express tdTOMATO.",
+      "claim_type": "EXPLICIT",
+      "source": "IHC confirmed that the abdominal and visceral adipocytes of Tg(-3.5ubb:plin2-Tomato) express tdTOMATO (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "5049dd60-574a-4638-b2f8-0f79ab2714c1",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C48",
+      "claim": "Overexpression of perilipin proteins alters lipid accumulation in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that overexpression of perilipin proteins alters lipid accumulation in adipocytes (Sawada et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "717605a2-a793-44f9-af25-61526688fc80",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C49",
+      "claim": "No differences in visceral adipose tissue area were detected between Tg(-3.5ubb:plin2-tdTomato) fish and their wild-type siblings using BODIPY staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Using BODIPY staining, we did not detect differences in visceral adipose tissue area (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "e71ec886-789f-4e87-8ae8-066f898079ef",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C50",
+      "claim": "No difference in standard lengths was found between wild-type siblings and Tg(-3.5ubb:plin2-tdTomato) at 21 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found no difference in standard lengths between wild-type siblings and Tg(-3.5ubb:plin2-tdTomato) at 21 dpf (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "a6e84997-8b1d-44f5-860e-53cd957e4555",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C51",
+      "claim": "No differences were detected between wild-type and Tg(-3.5ubb:plin2-tdTomato) fish when visceral adipose tissue area was normalized to standard length.",
+      "claim_type": "EXPLICIT",
+      "source": "We normalized visceral adipose tissue area to standard length, similar to a Body Mass Index (BMI) in mammals, and did not detect differences between wild-type and Tg(-3.5ubb:plin2-tdTomato) fish (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "c2e7de50-d107-4bfb-8428-e4df750ab2fb",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C52",
+      "claim": "Similar development of the major adipose depots was observed between wild-type and Tg(-3.5:ubbplin2-tdTomato) zebrafish from 5 dpf larvae to adult fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Using BODIPY staining to visualize adipose tissue, we observed similar development of the major adipose depots between wild-type and Tg(-3.5:ubbplin2-tdTomato) zebrafish (Figure 2\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "c73788ff-ae9e-4b2f-a213-92e151a2b11a",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C53",
+      "claim": "The Tg(-3.5ubb:plin2-tdTomato) zebrafish faithfully recapitulates normal adipose tissue development.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Tg(-3.5ubb:plin2-tdTomato) zebrafish faithfully recapitulates normal adipose tissue development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data showing no differences in adipose tissue development between transgenic and wild-type fish.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "6ea7a3d2-0045-4f08-80a1-39af077d4677",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C54",
+      "claim": "Fasting induces lipolysis and leads to a reduction in the size of the adipocyte lipid droplet.",
+      "claim_type": "EXPLICIT",
+      "source": "Fasting is a well-known mechanism for reducing adiposity, since it will induce lipolysis and lead to a reduction in the size of the adipocyte lipid droplet (Henne et al., 2018; Longo and Mattson, 2014; Rambold et al., 2015; Tang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "7e2cc33c-0ac8-428d-adb2-899ea947a915",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C55",
+      "claim": "A reduction in BODIPY-stained visceral adipose tissue was observed in both wild-type and Tg(-3.5ubb:plin2-tdTomato) fasted zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a reduction in the BODIPY-stained visceral adipose tissue in both wild-type and Tg(-3.5ubb:plin2-tdTomato) fasted zebrafish (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "a5852aff-ed08-4cb2-a834-32d56b5e9252",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C56",
+      "claim": "A significant reduction in adipose tissue area, standard length, and normalized area to standard length was measured between fed and fasted fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we measured a significant reduction in adipose tissue area, standard length, and normalized area to standard length between fed and fasted fish (Figure 3C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C,D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "95d7fc13-59e2-41de-b188-dd77254ddcf0",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C57",
+      "claim": "No differences in adiposity or standard length were seen between wild-type and Tg(-3.5ubb:plin2-tdTomato) fish within the same diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we did not see differences in adiposity or standard length between wild-type and Tg(-3.5ubb:plin2-tdTomato) fish within the same diet (Figure 3C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C,D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "5981ebf3-4bd6-4aa2-87e8-f8696b513b80",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C58",
+      "claim": "The transgenic expression of PLIN2-tdTOMATO reflects adipose tissue remodeling consistent with wild-type fish.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the transgenic expression of PLIN2-tdTOMATO reflects adipose tissue remodeling consistent with wild-type fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data showing similar responses to fasting in transgenic and wild-type fish.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "96534901-d2f5-4dd8-97d7-913e96f9e881",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C59",
+      "claim": "An image analysis pipeline in MATLAB was developed to segment the visceral adipocytes in juvenile Tg(-3.5ubb:plin2-Tomato) zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "To remove background fluorescence, we developed an image analysis pipeline in MATLAB to segment the visceral adipocytes in juvenile Tg(-3.5ubb:plin2-Tomato) zebrafish (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological development supported by the description and illustration in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "6e3fbeec-17f9-46f4-a0ff-08190c41b390",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C60",
+      "claim": "An expected increase in adipose tissue area, standard length, and normalized area to standard length was seen over 7 days in fed Tg(-3.5ubb:plin2-tdTomato) fish.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw the expected increase in adipose tissue area, standard length, and normalized area to standard length over 7 days in fed Tg(-3.5ubb:plin2-tdTomato) fish (Figure 3H\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3H\u2013J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "f558ce7d-18d3-47b3-8830-2b5273e48474",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C61",
+      "claim": "The standard lengths for fasted fish were significantly lower than those for fed fish and remained stable over 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard lengths for fasted fish were significantly lower than those for fed fish and remained stable over 7 days, which we attribute to food restriction, disrupting zebrafish development (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "219d6712-7ca4-45ce-a7e7-c8754d7e6fd7",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C62",
+      "claim": "Visceral adiposity was not reduced until after 2 days of fasting.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that visceral adiposity was not reduced until after 2 days of fasting (Figure 3H,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3H,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "fd0fec8a-8d12-48b8-867b-c90735ba43f4",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C63",
+      "claim": "Forskolin is a drug that induces lipolysis through cAMP signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this, we used Forskolin, a drug that is known to induce lipolysis through cAMP signaling (Litosch et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "d7b3ea59-e830-44ad-90ed-d24ea2e03578",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C64",
+      "claim": "A reduction in both the adipose tissue area and normalized area to standard length was detected in Forskolin-treated fish, but no differences in standard length.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a reduction in both the adipose tissue area and normalized area to standard length in the Forskolin-treated fish, but no differences in standard length (Figure 3\u2014figure supplement 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "3d8bb638-f2cb-4969-b4eb-3c55fbfeba3f",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C65",
+      "claim": "Zebrafish have been used as a model for diet-induced obesity and share pathophysiological perturbations seen in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish have been used as a model for diet-induced obesity and share pathophysiological perturbations seen in mammals, but few studies have focused on architectural changes of visceral adipose tissue (Chu et al., 2012; Landgraf et al., 2017; Oka et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "d0d8f009-7973-4299-a5f2-9daed379c6d1",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C66",
+      "claim": "HFD-fed fish developed significantly increased visceral adiposity compared to fish fed with control feed after a week of HFD feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "After a week of HFD feeding, we observed that HFD-fed fish developed significantly increased visceral adiposity compared to the fish fed with control feed (Figure 4C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "c7ea8168-49ac-48d0-86b1-f8d9ae7bb40f",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C67",
+      "claim": "Significantly greater visceral adiposity persisted after 2 weeks of HFD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although less dramatic between 7 and 14 days of HFD, we found that significantly greater visceral adiposity persisted after 2 weeks of HFD (Figure 4C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "2a1943f7-e959-4d5c-b1ce-618842b2c10b",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C68",
+      "claim": "No differences in the standard lengths of the control and HFD-fed fish were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we did not detect differences in the standard lengths of the control and HFD-fed fish, suggesting that this formulation of HFD leads to specific enlargement of visceral adipose tissue (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "fa64cf2d-e3e7-4f5a-ba94-85d760450fbb",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C69",
+      "claim": "This formulation of HFD leads to specific enlargement of visceral adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we did not detect differences in the standard lengths of the control and HFD-fed fish, suggesting that this formulation of HFD leads to specific enlargement of visceral adipose tissue (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that HFD increased adiposity without affecting standard length.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "edf6eb3a-8800-4916-aa52-b98eee534458",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C70",
+      "claim": "White adipose tissue is critical to lipid availability and cycles through lipolytic flux in response to energy demands.",
+      "claim_type": "EXPLICIT",
+      "source": "As a major lipid depot for the body, white adipose tissue is critical to lipid availability and cycles through lipolytic flux in response to energy demands (Duncan et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "c3b5773d-3b36-48dd-9c59-1c12bdae1163",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C71",
+      "claim": "In disease contexts such as cancer, adipocytes undergoing lipolysis act as a lipid source for neighboring cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In disease contexts such as cancer, adipocytes undergoing lipolysis act as a lipid source for neighboring cancer cells (Lengyel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "d9a11ab1-d322-43f6-b319-2fdb660cb1ab",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C72",
+      "claim": "Adipocyte-derived lipids have been directly shown to promote cancer progression in ovarian, breast, and melanoma cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Adipocyte-derived lipids have been directly shown to promote cancer progression in ovarian (Nieman et al., 2011), breast (Balaban et al., 2017), and melanoma cancer cells (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "8396a467-d492-484f-9c92-b57fd0617422",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C73",
+      "claim": "3T3-L1 cells are the most commonly used cell line to study lipolysis in mammalian systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian systems, the most commonly used cell line to study lipolysis is 3T3-L1 cells, which can be differentiated in vitro to resemble adipocytes (Zebisch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "8096a9fb-ed6a-4c68-8e94-f9aa7a860a63",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C74",
+      "claim": "Atglistatin is an inhibitor of adipose triglyceride lipase (ATGL) that is the rate-limiting step of lipolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, we used Atglistatin, an inhibitor of adipose triglyceride lipase (ATGL) that is known to be the rate-limiting step of lipolysis and has been shown to inhibit lipolysis in cell lines and mouse models (Mayer et al., 2013; Schweiger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "ea958bdc-4377-4406-83d5-4fb4c9a1cf88",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C75",
+      "claim": "Atglistatin potently inhibits lipolysis in 3T3-L1 adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that Atglistatin potently inhibits lipolysis in 3T3-L1 adipocytes (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "9915fdb8-95a2-4f78-a6af-25c539d83dc2",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C76",
+      "claim": "29 out of 1280 compounds led to at least a 40% reduction in lipolysis as measured by glycerol release into the media.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we found 29 out of 1280 compounds that led to at least a 40% reduction in lipolysis as measured by glycerol release into the media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the chemical screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "68fb4efd-8044-4727-b86a-bc03d156e24c",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C77",
+      "claim": "2 of the top 10 hits from the screen (Auranofin and JS-K) modulated nitric oxide.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking more closely at the top 10 hits from this screen, we noted that 2 of the top 10 hits (Auranofin and JS-K) modulated nitric oxide (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "555ae7c9-d637-4a11-9f90-9d24b46c2977",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C78",
+      "claim": "Nitric oxide can be used for post-translational modification of proteins via S-nitrosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nitric oxide can be used for post-translational modification of proteins via S-nitrosylation (Stamler et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "bc79b7a0-8352-421b-a56c-8c06a6863039",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C79",
+      "claim": "Increased nitric oxide has a suppressive role on lipolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study has shown that increased nitric oxide has a suppressive role on lipolysis, and Auranofin, a thioredoxin reductase inhibitor that promotes S-nitrosylation, can inhibit lipolysis in 3T3-L1 cells (Yamada et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "a300eb36-0a14-42f4-9927-37edc57f2ccc",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C80",
+      "claim": "Auranofin is a thioredoxin reductase inhibitor that promotes S-nitrosylation and can inhibit lipolysis in 3T3-L1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study has shown that increased nitric oxide has a suppressive role on lipolysis, and Auranofin, a thioredoxin reductase inhibitor that promotes S-nitrosylation, can inhibit lipolysis in 3T3-L1 cells (Yamada et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "973dc41e-10c4-4ba8-b0f9-2b9f00844428",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C81",
+      "claim": "JS-K is a nitric oxide donor purported to promote S-nitrosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, JS-K is a nitric oxide donor purported to promote S-nitrosylation, but it has not been shown to play a role in lipolysis (Nath et al., 2010; Shami et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "39c265f2-e3e2-4147-b9e9-c181b87f712d",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C82",
+      "claim": "JS-K has not been shown to play a role in lipolysis prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, JS-K is a nitric oxide donor purported to promote S-nitrosylation, but it has not been shown to play a role in lipolysis (Nath et al., 2010; Shami et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and inference about the novelty of the finding.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "a0fb20a9-c43e-4b61-95b6-8243c32c5b2b",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C83",
+      "claim": "Treatment of juvenile zebrafish for 24 hr with Atglistatin caused a significant increase in adipose tissue area without affecting standard length or fish viability at the maximally tolerated dose.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, treatment of juvenile zebrafish for 24 hr with Atglistatin caused a significant increase in adipose tissue area without affecting standard length or fish viability at the maximally tolerated dose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from drug treatment experiments in zebrafish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "485279e0-e428-4919-9bf2-b7be9a925a8a",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C84",
+      "claim": "JS-K significantly increased adiposity in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our screen results, we found that JS-K also significantly increased adiposity (Figure 5C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "2942b598-a6b2-44cb-9f43-ee1697ed2212",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C85",
+      "claim": "The effects of JS-K on adiposity were specific to the adipose tissue as standard length was not affected.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects were specific to the adipose tissue as standard length was not affected (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "29b96bd8-2558-4c31-9942-72719144dba7",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C86",
+      "claim": "Modulators of nitric oxide can inhibit lipolysis in cell lines and lead to increased adiposity in vivo in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that modulators of nitric oxide can inhibit lipolysis in cell lines and lead to increased adiposity in vivo in zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results of the in vitro screen and in vivo validation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "399a244d-40a5-4880-af08-960dc7ee7928",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C87",
+      "claim": "Upon uptake of adipocyte-derived lipids, cancer cells can store excess lipids in lipid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon uptake of adipocyte-derived lipids, cancer cells can store excess lipids in lipid droplets (Lengyel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "607ca0f2-94f8-4e6a-9805-ea31a0174d3d",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C88",
+      "claim": "Accumulation of lipid droplets in melanoma cells has been associated with increased metastatic potential and worse clinical outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of lipid droplets in melanoma cells has been associated with increased metastatic potential and worse clinical outcomes (Fujimoto et al., 2020; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "f49353fe-4e4f-44ce-bd11-e9f0c4db9e75",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C89",
+      "claim": "After a pulse of oleic acid for 24 hr, PLIN2-tdTOMATO expression was easily detected surrounding lipid droplets marked by MDH in ZMEL-LD cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that after a pulse of oleic acid for 24 hr, we could easily detect PLIN2-tdTOMATO expression surrounding lipid droplets marked by the lipid droplet dye Monodansylpentane (MDH) (Figure 6B, Video 1), similar to what we saw in the adipocytes (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "4662e02d-4dff-49dd-bdbd-fbf3301325bc",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C90",
+      "claim": "No difference in Lipidtox median fluorescence intensity (MFI) was found between ZMEL-GFP and ZMEL-LD cell lines after pulsing with increasing amounts of oleic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the lipid droplet dye Lipidtox as a proxy for lipid droplet content, we pulsed the cells with increasing amounts of oleic acid and found no difference in Lipidtox median fluorescence intensity (MFI) between the two cell lines (Figure 6\u2014figure supplement 1B), indicating that the transgene was not having any unexpected effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "be1342b9-dced-44ef-b368-e45326f58d7c",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C91",
+      "claim": "PLIN2-tdTOMATO expression provided a much greater dynamic range than Lipidtox in reporting changes in lipid droplets of ZMEL-LD.",
+      "claim_type": "EXPLICIT",
+      "source": "While both PLIN2-tdTOMATO and Lipidtox expression increased accordingly with oleic acid, PLIN2-tdTOMATO expression provided a much greater dynamic range (Figure 6\u2014figure supplement 1C\u2013F), highlighting its advantages over standard lipid dyes like Lipidtox.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1C\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "4856469f-aaa1-4cc9-81e0-832c7d1c6eef",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C92",
+      "claim": "Cells treated with Atglistatin and Auranofin demonstrated significantly higher lipid droplet-positive cells compared to cells with oleic acid pulse and DMSO.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells treated with Atglistatin and Auranofin demonstrated significantly higher lipid droplet-positive cells (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "7e49787f-c831-41c1-8f1e-0b1ff1adc10d",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C93",
+      "claim": "Cells given JS-K did not differ in the percent of lipid droplet-positive cells compared to cells with oleic acid pulse and DMSO.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to cells with oleic acid pulse and DMSO, cells given JS-K did not differ in the percent of lipid droplet-positive cells (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "feaf44ab-f8e1-45de-a2eb-827c3fb4be8e",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C94",
+      "claim": "Similar to adipocytes, ATGL is a key regulatory step in lipolysis in melanoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that similar to adipocytes, ATGL is a key regulatory step in lipolysis in melanoma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing Atglistatin's effect on lipid droplets in melanoma cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "afeb01db-79a4-4000-8394-14362ba0d504",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C95",
+      "claim": "Nitric oxide is a modulator of lipolysis in the melanoma context.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that nitric oxide, which was identified in our adipocyte screen, is similarly a modulator of lipolysis in the melanoma context and can be utilized for future studies to target adipocyte-melanoma cell cross-talk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing effects of nitric oxide modulators in melanoma cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "0743f158-1bb9-45dc-8eba-a82fdad91de3",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C96",
+      "claim": "Changes in the lipid droplet content of a cell can occur in response to hypoxia, reactive oxygen stress, ER stress, and alterations in nutrient availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in the lipid droplet content of a cell can occur in response to a variety of factors, including hypoxia, reactive oxygen stress, ER stress, and alterations in nutrient availability (Bailey et al., 2015; Bensaad et al., 2014; Chitraju et al., 2017; Vel\u00e1zquez et al., 2016; Vevea et al., 2015; Cabodevilla et al., 2013; Nguyen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "f5e2edfc-c507-4ab3-a908-8470f31ca3cb",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C97",
+      "claim": "This is the first lipid droplet reporter in a vertebrate model organism.",
+      "claim_type": "EXPLICIT",
+      "source": "To address such questions, we report the first lipid droplet reporter in a vertebrate model organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the novelty of the work, though a similar approach was described concurrently.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "407e737f-b2c0-4da4-9542-044ea9dffaf6",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C98",
+      "claim": "The plin2-tdtomato reporter faithfully marks the lipid droplet in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that our plin2-tdtomato reporter faithfully marks the lipid droplet in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing colocalization and proper localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "f7084b1e-57ea-4d59-b985-0947deeacc17",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C99",
+      "claim": "A similar approach using knockin at the endogenous plin2 promoter was recently described while this manuscript was in review.",
+      "claim_type": "EXPLICIT",
+      "source": "As a further validation of our approach, while our manuscript was in review, a similar approach using knockin at the endogenous plin2 promoter was recently described (Wilson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to concurrent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "a6c89181-fd3f-4f7d-8981-4185f3c76847",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C100",
+      "claim": "The Tg(-3.5ubb:plin2-tdTomato) reporter can be used as an alternative to lipophilic fluorescent dyes to study adipose tissue across zebrafish developmental stages while preserving normal adipose tissue development.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the Tg(-3.5ubb:plin2-tdTomato) reporter can be used as an alternative to lipophilic fluorescent dyes to study adipose tissue across zebrafish developmental stages while preserving normal adipose tissue development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing normal adipose tissue development in transgenic fish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "2c3831e3-afa0-4899-8321-573940c4676c",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C101",
+      "claim": "The Tg(-3.5ubb:plin2-tdTomato) line is sensitive enough to capture quantitative changes in visceral adipose tissue after short-term pharmacologic treatments with known regulators of adipocyte lipolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that our Tg(-3.5ubb:plin2-tdTomato) line is sensitive enough to capture quantitative changes in visceral adipose tissue after short-term pharmacologic treatments with known regulators of adipocyte lipolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from drug treatment experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "2cd091a7-b1e1-42a0-99ae-9f93e3778a2f",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C102",
+      "claim": "Differences in the kinetics of adipose tissue response to prolonged fasting and high-fat diet suggest a complex relationship between adipose tissue development and the nutritional and energetic requirements of the developing organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in the kinetics of each response suggest a complex relationship between adipose tissue development and the nutritional and energetic requirements of the developing organism, which merits future investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of different kinetics in response to dietary perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "7cdd109d-da64-4d22-811e-68da2adaf599",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C103",
+      "claim": "Regulation of lipolysis by ATGL and nitric oxide pathways is conserved between adipocytes and melanoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that regulation of lipolysis by ATGL and nitric oxide pathways is conserved between adipocytes and melanoma cells although phenotypes downstream of nitric oxide may be cell type specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing effects of ATGL and nitric oxide modulators in both cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "0cdfbfa7-9a47-457f-89aa-6386151a9354",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "claim_id": "C104",
+      "claim": "Phenotypes downstream of nitric oxide may be cell type specific.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that regulation of lipolysis by ATGL and nitric oxide pathways is conserved between adipocytes and melanoma cells although phenotypes downstream of nitric oxide may be cell type specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that different nitric oxide donors had different effects in adipocytes versus melanoma cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "65ec1e80-b276-42ae-906d-c25ee49866d6",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors created a transgenic zebrafish line expressing PLIN2-tdTOMATO that faithfully marks lipid droplets in adipocytes. The reporter colocalizes with BODIPY staining, with PLIN2-tdTOMATO localizing to the lipid droplet membrane and BODIPY to the core, as confirmed by confocal microscopy and immunohistochemistry in both subcutaneous and visceral adipocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C32, C37, C40-C43, C46-C47, and C98 collectively demonstrate successful creation and validation of the reporter. The colocalization data (C40, C42, C46), IHC confirmation (C43, C47), and proper membrane localization (C41, C42) provide strong converging evidence that the reporter faithfully marks lipid droplets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "14c42483-f4cf-43df-b650-684bf7e62aa3",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Tg(-3.5ubb:plin2-tdTomato) transgenic line does not alter normal adipose tissue development. No differences in visceral adipose tissue area, standard length, or normalized adiposity were detected between transgenic and wild-type fish across developmental stages from 5 dpf to adult.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 and C100 demonstrate that the transgene does not perturb adipose tissue development through multiple independent measurements (area, length, normalized metrics) across developmental time points. This addresses a critical concern about overexpression artifacts (C48) and validates the reporter as a non-invasive tool.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "6f585340-316a-4daa-b4e2-eac0712e3e23",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The transgenic reporter responds appropriately to fasting-induced lipolysis. Fasted fish showed significant reductions in adipose tissue area and normalized adiposity compared to fed fish, with no differences between transgenic and wild-type fish. Longitudinal imaging revealed that visceral adiposity was not reduced until after 2 days of fasting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C62 demonstrate that the reporter accurately reflects physiological changes in adipose tissue. The consistency between transgenic and wild-type responses (C57, C58) validates the reporter, while the temporal dynamics (C62) showcase its utility for longitudinal studies. Statistical significance is shown in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "01736b5e-7c78-4dd3-93da-bce5e2472151",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The transgenic line is sensitive enough to detect pharmacologically-induced changes in adiposity. Treatment with Forskolin, a known lipolysis inducer, caused significant reduction in adipose tissue area without affecting standard length after 24 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 and C101 demonstrate that the reporter can detect short-term pharmacological perturbations. The use of Forskolin as a positive control with known mechanism (C63) and the specific effect on adipose tissue without affecting overall fish length (C64) validate the sensitivity and specificity of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "896c6ce6-c1c9-43f7-ad66-11986cdc7fd9",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "High-fat diet feeding leads to specific enlargement of visceral adipose tissue. HFD-fed fish developed significantly increased visceral adiposity after 1 week that persisted through 2 weeks, without changes in standard length, suggesting tissue-specific effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 demonstrate the utility of the reporter for diet-induced obesity studies. The significant increases in adiposity (C66, C67) without changes in body length (C68) support the interpretation of specific adipose tissue enlargement (C69). However, C69 is somewhat inferential and would benefit from additional validation such as cell size/number analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "097d81f2-58c3-45c1-9c5a-43c51bc3839a",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A large-scale chemical screen of 1280 compounds in 3T3-L1 adipocytes identified 29 compounds that inhibit lipolysis by at least 40%, including two nitric oxide modulators (Auranofin and JS-K) among the top 10 hits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C73-C77 describe a well-controlled screen using an established cell line (C73) with appropriate positive control (C74, C75). The identification of 29 hits (C76) and specific nitric oxide modulators (C77) is supported by experimental data. The glycerol release assay is a standard method for measuring lipolysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Nitric oxide modulators regulate adipocyte lipolysis and adiposity in vivo. JS-K, a nitric oxide donor, significantly increased adiposity in zebrafish without affecting standard length, validating the in vitro screen findings. Atglistatin also increased adiposity as expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C34, and C78-C86 demonstrate successful translation from in vitro screen to in vivo validation. The effects of JS-K (C84-C85) and Atglistatin (C83) on adiposity are statistically significant and tissue-specific. The novelty of JS-K's role in lipolysis (C82) is appropriately noted. The mechanistic link through S-nitrosylation (C78-C81) provides biological plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "68d78111-7fc2-4590-8c67-ead59b532aec",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A zebrafish melanoma cell line (ZMEL-LD) expressing PLIN2-tdTOMATO was generated and validated. The reporter properly localizes to lipid droplets after oleic acid treatment, does not alter lipid droplet formation compared to parental cells, and provides greater dynamic range than standard lipid dyes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 and C89-C91 demonstrate successful generation and validation of the melanoma reporter cell line. The proper localization (C89), lack of artifact (C90), and superior dynamic range compared to Lipidtox (C91) validate the system for studying lipid droplets in cancer cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "4681b93f-31ac-4962-b9ee-222a7c3bb38c",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ATGL and nitric oxide pathways regulate lipolysis in melanoma cells, though with cell-type-specific differences. Atglistatin and Auranofin significantly increased lipid droplet-positive cells, while JS-K showed no effect, contrasting with its efficacy in adipocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C95 and C103-C104 demonstrate conservation of lipolysis regulation between adipocytes and melanoma cells, with important cell-type-specific differences. The differential effects of nitric oxide donors (JS-K effective in adipocytes but not melanoma; Auranofin effective in both) suggest context-dependent mechanisms (C104). However, the mechanistic basis for these differences remains unclear and requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "e4119688-1df7-4113-9b17-c26e2cb12feb",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "An image analysis pipeline in MATLAB was developed to segment visceral adipocytes and remove background autofluorescence from zebrafish gut and gallbladder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 describes a methodological development that is illustrated in Figure 3F. The pipeline addresses a technical challenge (autofluorescence) and enables quantitative analysis. The code is made available on GitHub, supporting reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "14b31937-8c36-4eb6-af76-295dd240517f",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The different kinetics of adipose tissue response to fasting versus high-fat diet suggest complex relationships between adipose tissue development and nutritional/energetic requirements that merit future investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C102 is an interpretive statement based on observations from C62 (delayed response to fasting) and C66-C67 (rapid response to HFD). While the observations are supported, the interpretation of 'complex relationships' is speculative and not mechanistically tested. This represents a hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological importance of lipid droplets, limitations of existing methods, and advantages of zebrafish as a model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C31, C38-C39, C44-C45, C48, C70-C72, C87-C88, and C96 provide context from prior literature. These are appropriately cited and represent established knowledge. They justify the need for the new reporter system but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    },
+    {
+      "id": "4144e7ac-047d-4c6c-89f7-e26c36f00f41",
+      "content_id": "292f6575-4161-4946-a3ad-a53c761ee934",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This work represents the first lipid droplet reporter in a vertebrate model organism, though a similar approach was described concurrently during review.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97 and C99 present a novelty claim that is complicated by concurrent publication (Wilson et al., 2021). While the authors appropriately acknowledge the concurrent work (C99), the claim of being 'first' (C97) is uncertain given the timing. Both approaches appear to have been developed independently, making priority claims difficult to evaluate definitively.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:09:03.204025Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "69039b2c-3951-42be-906f-96d6db3a287b",
+      "result_id": "65ec1e80-b276-42ae-906d-c25ee49866d6"
+    },
+    {
+      "claim_id": "09b3cb15-342f-40a0-a92f-b08b1d67bfe4",
+      "result_id": "65ec1e80-b276-42ae-906d-c25ee49866d6"
+    },
+    {
+      "claim_id": "7963bd48-26f8-4b46-a351-dc549f3ed190",
+      "result_id": "65ec1e80-b276-42ae-906d-c25ee49866d6"
+    },
+    {
+      "claim_id": "691936ba-fdef-4496-9396-98f10f087ab9",
+      "result_id": "65ec1e80-b276-42ae-906d-c25ee49866d6"
+    },
+    {
+      "claim_id": "899a0ff3-a4ea-4e12-a5df-a333712cfcda",
+      "result_id": "65ec1e80-b276-42ae-906d-c25ee49866d6"
+    },
+    {
+      "claim_id": "faa29693-786f-4dc3-a522-edff7a9bcd34",
+      "result_id": "65ec1e80-b276-42ae-906d-c25ee49866d6"
+    },
+    {
+      "claim_id": "ed85c4c9-2e97-4d6d-a133-c971e748cfdd",
+      "result_id": "65ec1e80-b276-42ae-906d-c25ee49866d6"
+    },
+    {
+      "claim_id": "b6b6434d-922d-4647-8544-eb676c0bb85a",
+      "result_id": "65ec1e80-b276-42ae-906d-c25ee49866d6"
+    },
+    {
+      "claim_id": "aefe9f76-c7fb-4b70-81e4-7bfd979a4e4f",
+      "result_id": "65ec1e80-b276-42ae-906d-c25ee49866d6"
+    },
+    {
+      "claim_id": "407e737f-b2c0-4da4-9542-044ea9dffaf6",
+      "result_id": "65ec1e80-b276-42ae-906d-c25ee49866d6"
+    },
+    {
+      "claim_id": "717605a2-a793-44f9-af25-61526688fc80",
+      "result_id": "14c42483-f4cf-43df-b650-684bf7e62aa3"
+    },
+    {
+      "claim_id": "e71ec886-789f-4e87-8ae8-066f898079ef",
+      "result_id": "14c42483-f4cf-43df-b650-684bf7e62aa3"
+    },
+    {
+      "claim_id": "a6e84997-8b1d-44f5-860e-53cd957e4555",
+      "result_id": "14c42483-f4cf-43df-b650-684bf7e62aa3"
+    },
+    {
+      "claim_id": "c2e7de50-d107-4bfb-8428-e4df750ab2fb",
+      "result_id": "14c42483-f4cf-43df-b650-684bf7e62aa3"
+    },
+    {
+      "claim_id": "c73788ff-ae9e-4b2f-a213-92e151a2b11a",
+      "result_id": "14c42483-f4cf-43df-b650-684bf7e62aa3"
+    },
+    {
+      "claim_id": "a6c89181-fd3f-4f7d-8981-4185f3c76847",
+      "result_id": "14c42483-f4cf-43df-b650-684bf7e62aa3"
+    },
+    {
+      "claim_id": "6ea7a3d2-0045-4f08-80a1-39af077d4677",
+      "result_id": "6f585340-316a-4daa-b4e2-eac0712e3e23"
+    },
+    {
+      "claim_id": "7e2cc33c-0ac8-428d-adb2-899ea947a915",
+      "result_id": "6f585340-316a-4daa-b4e2-eac0712e3e23"
+    },
+    {
+      "claim_id": "a5852aff-ed08-4cb2-a834-32d56b5e9252",
+      "result_id": "6f585340-316a-4daa-b4e2-eac0712e3e23"
+    },
+    {
+      "claim_id": "95d7fc13-59e2-41de-b188-dd77254ddcf0",
+      "result_id": "6f585340-316a-4daa-b4e2-eac0712e3e23"
+    },
+    {
+      "claim_id": "5981ebf3-4bd6-4aa2-87e8-f8696b513b80",
+      "result_id": "6f585340-316a-4daa-b4e2-eac0712e3e23"
+    },
+    {
+      "claim_id": "6e3fbeec-17f9-46f4-a0ff-08190c41b390",
+      "result_id": "6f585340-316a-4daa-b4e2-eac0712e3e23"
+    },
+    {
+      "claim_id": "f558ce7d-18d3-47b3-8830-2b5273e48474",
+      "result_id": "6f585340-316a-4daa-b4e2-eac0712e3e23"
+    },
+    {
+      "claim_id": "219d6712-7ca4-45ce-a7e7-c8754d7e6fd7",
+      "result_id": "6f585340-316a-4daa-b4e2-eac0712e3e23"
+    },
+    {
+      "claim_id": "fd0fec8a-8d12-48b8-867b-c90735ba43f4",
+      "result_id": "01736b5e-7c78-4dd3-93da-bce5e2472151"
+    },
+    {
+      "claim_id": "d7b3ea59-e830-44ad-90ed-d24ea2e03578",
+      "result_id": "01736b5e-7c78-4dd3-93da-bce5e2472151"
+    },
+    {
+      "claim_id": "2c3831e3-afa0-4899-8321-573940c4676c",
+      "result_id": "01736b5e-7c78-4dd3-93da-bce5e2472151"
+    },
+    {
+      "claim_id": "3d8bb638-f2cb-4969-b4eb-3c55fbfeba3f",
+      "result_id": "896c6ce6-c1c9-43f7-ad66-11986cdc7fd9"
+    },
+    {
+      "claim_id": "d0d8f009-7973-4299-a5f2-9daed379c6d1",
+      "result_id": "896c6ce6-c1c9-43f7-ad66-11986cdc7fd9"
+    },
+    {
+      "claim_id": "c7ea8168-49ac-48d0-86b1-f8d9ae7bb40f",
+      "result_id": "896c6ce6-c1c9-43f7-ad66-11986cdc7fd9"
+    },
+    {
+      "claim_id": "2a1943f7-e959-4d5c-b1ce-618842b2c10b",
+      "result_id": "896c6ce6-c1c9-43f7-ad66-11986cdc7fd9"
+    },
+    {
+      "claim_id": "fa64cf2d-e3e7-4f5a-ba94-85d760450fbb",
+      "result_id": "896c6ce6-c1c9-43f7-ad66-11986cdc7fd9"
+    },
+    {
+      "claim_id": "0edb10e8-7780-4aa5-b303-90352f45df7e",
+      "result_id": "097d81f2-58c3-45c1-9c5a-43c51bc3839a"
+    },
+    {
+      "claim_id": "8396a467-d492-484f-9c92-b57fd0617422",
+      "result_id": "097d81f2-58c3-45c1-9c5a-43c51bc3839a"
+    },
+    {
+      "claim_id": "8096a9fb-ed6a-4c68-8e94-f9aa7a860a63",
+      "result_id": "097d81f2-58c3-45c1-9c5a-43c51bc3839a"
+    },
+    {
+      "claim_id": "ea958bdc-4377-4406-83d5-4fb4c9a1cf88",
+      "result_id": "097d81f2-58c3-45c1-9c5a-43c51bc3839a"
+    },
+    {
+      "claim_id": "9915fdb8-95a2-4f78-a6af-25c539d83dc2",
+      "result_id": "097d81f2-58c3-45c1-9c5a-43c51bc3839a"
+    },
+    {
+      "claim_id": "68fb4efd-8044-4727-b86a-bc03d156e24c",
+      "result_id": "097d81f2-58c3-45c1-9c5a-43c51bc3839a"
+    },
+    {
+      "claim_id": "d5ff3ede-a87c-4df4-b0f9-8254fcc9854b",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "84b9b1d0-b937-4c62-a84d-360e6ea94b21",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "49f24bc2-4b26-45fa-bd08-30d4fcd07fc9",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "555ae7c9-d637-4a11-9f90-9d24b46c2977",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "bc79b7a0-8352-421b-a56c-8c06a6863039",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "a300eb36-0a14-42f4-9927-37edc57f2ccc",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "973dc41e-10c4-4ba8-b0f9-2b9f00844428",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "39c265f2-e3e2-4147-b9e9-c181b87f712d",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "a0fb20a9-c43e-4b61-95b6-8243c32c5b2b",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "485279e0-e428-4919-9bf2-b7be9a925a8a",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "2942b598-a6b2-44cb-9f43-ee1697ed2212",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "29b96bd8-2558-4c31-9942-72719144dba7",
+      "result_id": "a5498ae2-1f7f-450b-8e0f-4bdd3192279f"
+    },
+    {
+      "claim_id": "ffb93fb5-4419-454c-a9df-e1b85d8d0b6f",
+      "result_id": "68d78111-7fc2-4590-8c67-ead59b532aec"
+    },
+    {
+      "claim_id": "16191938-2d1f-40d7-bc53-7006035bb9f9",
+      "result_id": "68d78111-7fc2-4590-8c67-ead59b532aec"
+    },
+    {
+      "claim_id": "f49353fe-4e4f-44ce-bd11-e9f0c4db9e75",
+      "result_id": "68d78111-7fc2-4590-8c67-ead59b532aec"
+    },
+    {
+      "claim_id": "4662e02d-4dff-49dd-bdbd-fbf3301325bc",
+      "result_id": "68d78111-7fc2-4590-8c67-ead59b532aec"
+    },
+    {
+      "claim_id": "be1342b9-dced-44ef-b368-e45326f58d7c",
+      "result_id": "68d78111-7fc2-4590-8c67-ead59b532aec"
+    },
+    {
+      "claim_id": "4856469f-aaa1-4cc9-81e0-832c7d1c6eef",
+      "result_id": "4681b93f-31ac-4962-b9ee-222a7c3bb38c"
+    },
+    {
+      "claim_id": "7e49787f-c831-41c1-8f1e-0b1ff1adc10d",
+      "result_id": "4681b93f-31ac-4962-b9ee-222a7c3bb38c"
+    },
+    {
+      "claim_id": "feaf44ab-f8e1-45de-a2eb-827c3fb4be8e",
+      "result_id": "4681b93f-31ac-4962-b9ee-222a7c3bb38c"
+    },
+    {
+      "claim_id": "afeb01db-79a4-4000-8394-14362ba0d504",
+      "result_id": "4681b93f-31ac-4962-b9ee-222a7c3bb38c"
+    },
+    {
+      "claim_id": "7cdd109d-da64-4d22-811e-68da2adaf599",
+      "result_id": "4681b93f-31ac-4962-b9ee-222a7c3bb38c"
+    },
+    {
+      "claim_id": "0cdfbfa7-9a47-457f-89aa-6386151a9354",
+      "result_id": "4681b93f-31ac-4962-b9ee-222a7c3bb38c"
+    },
+    {
+      "claim_id": "96534901-d2f5-4dd8-97d7-913e96f9e881",
+      "result_id": "e4119688-1df7-4113-9b17-c26e2cb12feb"
+    },
+    {
+      "claim_id": "2cd091a7-b1e1-42a0-99ae-9f93e3778a2f",
+      "result_id": "14b31937-8c36-4eb6-af76-295dd240517f"
+    },
+    {
+      "claim_id": "a5dc40c0-3801-48d1-aa0b-b21c71769354",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "303ad02f-91cd-484d-8ecd-c43d85e7b68a",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "daa06035-602f-4bc5-85c6-222ebdcd111a",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "364150bb-fb44-4a25-8bff-7118cc13f904",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "03e9b87d-4d5e-4137-b096-54109fdb7737",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "dd20ee9a-052a-4e9c-88a2-9459b3ff13e4",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "e08fd8d5-72f5-4cfa-bf3d-ecbad1bad5e8",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "cbc81d0f-de03-4116-96a0-d8586376c0b1",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "0bbe35cf-898b-41ff-a686-bace7aeb11ae",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "d4a9f181-3b3f-4db3-beef-be30ddda3c1f",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "ea2d1954-b37c-4e9f-9c77-ba95d4fdf42d",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "64424731-0006-4f66-b0ef-796e4dbdc6aa",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "e4a39ad8-68f9-486a-93fc-3db08238835a",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "3c346c1b-c8d9-4c55-9be3-3c07652ebbc6",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "bf82ac06-1281-4a6a-88ad-8f40f51cccaa",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "bbfa53d5-46fd-4834-9160-8fe9e54527f7",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "48a5f058-e086-4263-9237-b78852cd550c",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "9123751e-3b0b-42b7-875e-bdd51ec8c95b",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "69e88019-9c68-4ce6-b085-0380d7613c71",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "71ce86d5-35ad-4fb6-ba5b-05b014e61be7",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "af0bd346-98b4-4609-8270-0793ff8ca487",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "03746cec-5b89-41de-b9ec-de8c93412014",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "292b5667-beb0-4cbb-bc01-09e3cca48d26",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "9af6360f-2314-408a-a92a-81f8ee6717d5",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "33452754-eaac-40f6-b533-742ebcfc5e38",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "168d2bb8-f423-4db0-86c0-eb587c12aabc",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "9b70b90c-1f78-41d0-b6a7-8c5cc84d56b8",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "2ddd073f-6e03-462f-924f-29ad8ca6476d",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "3d99c7de-98c4-4528-9d73-a115bffbe385",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "5049dd60-574a-4638-b2f8-0f79ab2714c1",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "edf6eb3a-8800-4916-aa52-b98eee534458",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "c3b5773d-3b36-48dd-9c59-1c12bdae1163",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "d9a11ab1-d322-43f6-b319-2fdb660cb1ab",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "399a244d-40a5-4880-af08-960dc7ee7928",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "607ca0f2-94f8-4e6a-9805-ea31a0174d3d",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "0743f158-1bb9-45dc-8eba-a82fdad91de3",
+      "result_id": "a1b6568e-a2b6-4c86-9b22-38f1a7b0b2ce"
+    },
+    {
+      "claim_id": "f5e2edfc-c507-4ab3-a908-8470f31ca3cb",
+      "result_id": "4144e7ac-047d-4c6c-89f7-e26c36f00f41"
+    },
+    {
+      "claim_id": "f7084b1e-57ea-4d59-b985-0947deeacc17",
+      "result_id": "4144e7ac-047d-4c6c-89f7-e26c36f00f41"
+    }
+  ],
+  "comparisons": []
+}

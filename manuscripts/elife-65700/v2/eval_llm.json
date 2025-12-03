@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C62"
+    ],
+    "result": "The authors successfully generated CRISPR/Cas9-mediated deletions of the TP53/Trp53 3\u2032UTR in human cell lines and mice. The deletion removed 1048 nucleotides (88% of the 3\u2032UTR) in human cells, affecting almost all previously reported binding sites for regulatory miRNAs, lncRNAs, and RNA-binding proteins. Northern blot analysis confirmed intact 3\u2032 end processing and expression of the expected shorter TP53 mRNA in dUTR cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16, C17, and C62 collectively describe the successful generation and validation of the 3\u2032UTR deletion model. The methodology is clearly described, the deletion is well-characterized, and Northern blot data (Figure 1B) confirms proper mRNA processing. The deletion design is appropriate for testing the role of the 3\u2032UTR while preserving essential processing elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Deletion of the endogenous TP53 3\u2032UTR does not significantly affect p53 steady-state mRNA levels or mRNA half-life in human cell lines. RT-qPCR analysis showed similar TP53 mRNA levels between WT and dUTR cells, and 4sU labeling experiments revealed no significant differences in mRNA half-life, though all clones showed slightly reduced half-life compared to parental cells, possibly due to clonal expansion effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, C63, C64, and C65 are supported by RT-qPCR data (Figures 1C, 1D) and 4sU labeling experiments (Figure 1F). The authors appropriately note the slight reduction in mRNA half-life across all clones (including controls) and provide a reasonable speculation about clonal expansion effects (C65). The use of multiple control clones strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C66"
+    ],
+    "result": "Under steady-state conditions, there is no significant difference in p53 protein levels between WT and dUTR cells, and the expression pattern of p53 protein isoforms is unchanged. Western blot analysis using multiple antibodies showed similar p53 protein expression in cells with or without the 3\u2032UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, and C66 are supported by western blot data (Figures 2A, 2B, and Figure 2\u2014figure supplement 1). The use of multiple antibodies with different epitope specificities (DO-7 and PAb240) to examine both total p53 and isoform expression patterns strengthens the conclusion. Statistical analysis (ANOVA) confirms no significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C67"
+    ],
+    "result": "The endogenous TP53 3\u2032UTR is not required for stress-induced p53 protein upregulation. Treatment with etoposide, 5-fluorouracil, or UV irradiation resulted in similar concentration-dependent and time-dependent p53 protein upregulation in WT and dUTR cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, and C67 are supported by western blot data showing similar p53 upregulation in response to multiple genotoxic stressors (Figures 2C-H). The use of multiple stress conditions (etoposide at various concentrations and time points, 5-FU, UV) and multiple cell clones provides robust evidence. Statistical analysis confirms no significant differences between genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C70"
+    ],
+    "result": "The 3\u2032UTR does not regulate p53 protein synthesis or degradation rates. Nutlin-3 treatment (MDM2 inhibitor) resulted in similar p53 accumulation in WT and dUTR cells, and metabolic labeling with AHA showed no significant differences in de novo p53 protein synthesis between genotypes, both in steady state and after etoposide treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C26, and C70 are supported by western blot data with Nutlin-3 treatment (Figures 3A, 3B) and metabolic labeling experiments (Figures 3D, 3E). The experimental design appropriately addresses the potential confounding effect of the p53-MDM2 feedback loop by using MDM2 inhibition. The metabolic labeling directly measures protein synthesis rates, providing strong evidence for the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "In reporter assays, the isolated TP53 3\u2032UTR significantly reduces GFP mRNA and protein expression compared to control sequences. Deletion of a U-rich element within the 3\u2032UTR partially relieves this repression, confirming the negative regulatory impact of this element on reporter gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C71, C73, and C74 are supported by reporter assay data (Figure 4B, 4C). The experiments confirm previous findings about the repressive nature of the TP53 3\u2032UTR when tested in isolation. The U-rich element deletion experiment provides additional mechanistic insight. The data are consistent with prior literature (C6, C14).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C39",
+      "C43",
+      "C75",
+      "C76"
+    ],
+    "result": "The TP53 coding region has a dominant repressive effect on reporter expression that overrides the contribution of the 3\u2032UTR. When the TP53 CDS is included in reporter constructs, it reduces both mRNA and protein levels more strongly than any tested 3\u2032UTR sequence, and the presence of different 3\u2032UTR sequences (including TP53, housekeeping genes, or dUTR) has no additional impact on expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32, C39, C43, C75, and C76 are supported by comprehensive reporter assay data (Figure 4C). The experiments systematically test the effects of the CDS alone and in combination with various 3\u2032UTR sequences. The finding that the CDS effect is larger than any 3\u2032UTR effect and that 3\u2032UTR effects disappear in the presence of the CDS is well-documented. The speculation about MDM2-mediated turnover (C75) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Inclusion of the TP53 5\u2032UTR in reporter constructs containing the TP53 CDS does not reveal additional effects on reporter mRNA or protein expression, and reporter gene expression remains 3\u2032UTR-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C78 are supported by reporter assay data (Figure 4\u2014figure supplement 1B). This experiment addresses whether the 5\u2032UTR might modulate the CDS-3\u2032UTR interaction, and the negative result strengthens the conclusion that the CDS effect is dominant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Trp53 dUTR mice are viable and fertile with no developmental defects. In multiple mouse tissues, there are no significant differences in Trp53 mRNA expression between WT and dUTR mice under steady-state conditions or after total body irradiation. p53 protein upregulation and target gene (Cdkn1a) activation following irradiation are similar in WT and dUTR mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by mouse phenotyping data (Figure 5\u2014figure supplement 1D, E), RT-qPCR data from 10 tissues (Figure 5B), western blot data after irradiation (Figures 5C, Figure 5\u2014figure supplement 2), and Cdkn1a expression data (Figure 5D). The in vivo validation across multiple tissues and conditions provides strong evidence that the findings in cell culture are physiologically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C38",
+      "C45"
+    ],
+    "result": "The study reveals a discrepancy between reporter assays and endogenous gene regulation: while the isolated TP53 3\u2032UTR is repressive in reporter assays (confirming previous studies), the endogenous TP53 mRNA does not depend on the 3\u2032UTR for post-transcriptional expression regulation. This indicates that different parts of mRNAs do not act autonomously but are part of a regulatory unit that functionally cooperates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C38, and C45 represent the central finding of the paper. The discrepancy between reporter assays and endogenous regulation is well-documented through systematic experiments. The conclusion that mRNA regions functionally interact is supported by the data showing that the CDS masks 3\u2032UTR effects. This finding challenges the common practice of using reporter assays to infer endogenous regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C83"
+    ],
+    "result": "The TP53 coding region is more conserved than the 3\u2032UTR sequence, with the TP53 3\u2032UTR being among the 20% poorest conserved 3\u2032UTRs of protein-coding genes. The authors speculate that a basic mechanism for p53 expression control may have first evolved in the coding region, given the importance of proper p53 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by conservation analysis data and citation to Narula et al., 2019. The conservation data support the hypothesis that the CDS plays a more important regulatory role than the 3\u2032UTR. The speculation in C83 is reasonable given the data but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C86",
+      "C87"
+    ],
+    "result": "3\u2032UTR knockouts can discriminate between direct and indirect effects of miRNAs and RNA-binding proteins. The authors argue that previous studies attributing p53 regulation to direct 3\u2032UTR binding by factors like RBM38 and HUR may have observed indirect effects, since these factors target multiple genes in the p53 pathway and their knockout/knockdown phenotypes could result from indirect mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53, C86, and C87 present a well-reasoned argument supported by the comparison of RBM38 knockout mice (which show p53 hyperactivation phenotypes) with Trp53 dUTR mice (which are normal). The logic is sound: if RBM38 directly regulated p53 through its 3\u2032UTR, then dUTR mice should show similar phenotypes to RBM38 knockout mice. The absence of phenotypes in dUTR mice suggests indirect regulation through other p53 pathway genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose that some prior studies may have observed p53 upregulation as a result of general cell stress rather than direct 3\u2032UTR-mediated regulation. Overexpression and knockdown of RNA-binding proteins and miRNAs cause widespread gene expression changes, and p53, as an integrator of cellular stress responses, is uniquely sensitive to altered cell states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C88-C90 present a reasonable alternative explanation for previous findings. The argument is well-supported by established knowledge about p53's role as a stress sensor (C55, C56 with citation to Horn and Vousden, 2007) and the pleiotropic effects of manipulating RNA-binding proteins and miRNAs (C54). This provides a plausible mechanism for why previous studies observed p53 changes that were not due to direct 3\u2032UTR regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C84",
+      "C85"
+    ],
+    "result": "The impact of sequence context on cis-regulatory elements has been previously described, with 5\u2032UTR, codon optimality, and splicing shown to modulate 3\u2032UTR element effects. Mechanistically, sequence context may affect RNA folding and RNA-binding motif accessibility, and saturation effects or epistatic interactions might limit the impact of additional suppressive elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C84, and C85 are supported by citations to prior work (Cottrell et al., 2017, 2018; Paolantoni et al., 2018; Theil et al., 2018). The mechanistic explanations (C84, C85) are speculative but reasonable and supported by literature. This contextualizes the findings within the broader field of post-transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Other studies have found discrepancies between reporter assays and endogenous gene regulation (Zhao et al., 2017), while some endogenous 3\u2032UTR deletions have revealed 3\u2032UTR-dependent mRNA localization phenotypes (Terenzio et al., 2018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 are supported by citations to relevant literature. These claims place the current findings in the context of other studies using endogenous 3\u2032UTR deletions, showing that the approach can reveal both cases where 3\u2032UTRs are not important for abundance regulation and cases where they have other functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors acknowledge limitations of their study: while the 3\u2032UTR does not regulate p53 abundance, it may have other functions such as controlling protein localization or activity. Additionally, while experimental conditions were similar to previous studies, 3\u2032UTR-dependent regulation in select cell types or specific conditions cannot be fully excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C79, C80, and C81 appropriately acknowledge the limitations and scope of the study. The speculation about alternative 3\u2032UTR functions (C59) is supported by citations to studies showing such functions in other proteins. The acknowledgment of potential context-specific regulation (C79, C81) is scientifically appropriate and honest about the study's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The authors conclude that 3\u2032UTR knockouts enable investigators to distinguish between direct and indirect effects of post-transcriptional regulation and to perform experiments under endogenous expression conditions. They argue that genetic validation is critical for identifying promising gene targets for miRNA-based therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C61 represent reasonable conclusions based on the study's findings. The argument for genetic validation is well-supported by the discrepancy between reporter assays and endogenous regulation demonstrated in this study. The implications for therapeutic development are appropriately cautious and supported by citations (Kasinski and Slack, 2011; Hermeking, 2012; Bonneau et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C47",
+      "C52",
+      "C68",
+      "C69",
+      "C82"
+    ],
+    "result": "The manuscript provides extensive background on p53 biology, including its role as a tumor suppressor, its regulation by MDM2-mediated degradation, its continuous transcription in unstressed cells, and the characterization of binding sites for regulatory factors in the TP53 3\u2032UTR. Previous studies using reporter assays demonstrated the repressive nature of the TP53 3\u2032UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C15, C47, C52, C68, C69, and C82 provide well-established background information supported by appropriate citations to the literature. These claims accurately represent prior knowledge in the field and provide necessary context for understanding the significance of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Prior to this study, numerous studies suggested that 3\u2032UTR-mediated p53 expression regulation plays a role in tumorigenesis and could be exploited therapeutically, but these studies did not investigate post-transcriptional regulation of the native TP53 gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C3 accurately characterize the state of the field prior to this study and provide the rationale for the current work. The claim that previous studies did not investigate the native TP53 gene (C3) is supported by the literature review presented in Table 1, which shows that prior studies used reporter assays or overexpression systems.",
+    "result_type": "MINOR"
+  }
+]

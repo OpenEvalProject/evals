@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C61",
+      "C154",
+      "C155"
+    ],
+    "result": "K57 is a potent and fully efficacious inhibitor of C5 activation in both classical and alternative complement pathways, preventing release of C5a and deposition of C5b and C9 without affecting upstream C3b. This peptide represents a novel C5 inhibitor with potential therapeutic applications for complement-mediated disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C61 are directly supported by ELISA and haemolysis assay data shown in Figure 1, demonstrating complete inhibition of C5 activation in both pathways. The therapeutic potential (C154-C155) is a reasonable inference from the functional data, though clinical validation would be required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C5",
+      "C6",
+      "C62",
+      "C157",
+      "C158"
+    ],
+    "result": "K92 selectively inhibits C5 activation by the alternative pathway C5 convertase but not the classical pathway convertase, achieving partial antagonism (Emax 30-40%) in AP assays. This represents the first reported example of complement pathway-specific inhibition through C5 and provides experimental evidence for mechanistic differences between AP and CP C5 convertases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The selective inhibition is well-documented by ELISA (C55) and haemolysis data (C62) in Figure 1, showing clear differential effects between pathways. The partial antagonism and pathway selectivity strongly support the inference of mechanistic differences between convertases (C6, C157-C158), consistent with pharmacological principles cited (C57-C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C59",
+      "C60",
+      "C63"
+    ],
+    "result": "K8 demonstrates allosteric inhibition of C5, partially inhibiting both AP and CP pathways without affecting C3b deposition. K8 showed efficacy in CP haemolysis assays but limited activity in AP assays below 10 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The allosteric effects are supported by ELISA data (C59-C60) and haemolysis assays (C63) shown in Figure 1. The partial inhibition pattern and lack of C3b effects are consistent with an allosteric mechanism. The differential potency between assay types is appropriately attributed to experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C156"
+    ],
+    "result": "K149 is a high-affinity silent binder of C5 with no functional effects on complement activation, even at concentrations exceeding 100\u00d7 KD. This peptide may serve as a non-inhibitory reagent for detecting native C5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of functional activity is clearly demonstrated by the functional assay data (C53), and the high-affinity binding was established in prior work (C46-C49). The proposed utility as a detection reagent (C156) is a reasonable inference from these properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The crystal structure of the C5-K8 complex at 2.3 \u00c5 resolution reveals that K8 binds to a previously unrecognized regulatory site on the MG8 domain of the C5 \u03b1-chain. K8 adopts a cysteine knot-like configuration with a 3-strand \u03b2-sheet topology constrained by three disulphide bonds, forming an extensive interface with 1642 \u00c5\u00b2 buried surface area stabilized by 18 hydrogen bonds and multiple ionic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural claims are directly supported by crystallographic data with good resolution and refinement statistics. The interface analysis using PDBePISA (C77-C80) provides quantitative validation. The structure has been deposited in the PDB (7AD7), enabling independent verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The crystal structure of the C5-K92 complex at 2.75 \u00c5 resolution shows K92 binding between the MG1 and MG5 domains of the C5 \u03b2-chain. K92 adopts a 3-strand \u03b2-sheet topology with two disulphide bonds, forming an interface of 1365 \u00c5\u00b2 sustained by eight hydrogen bonds and extensive \u03c0-\u03c0 and aliphatic-aromatic stacking interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural data are supported by crystallography and validated by disulphide mapping via mass spectrometry (C83). While electron density was less well-defined than for K8 (noted in manuscript), the structure is consistent with mutagenesis data (C89-C90) and has been deposited in the PDB (7AD6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Site-directed mutagenesis and computational analysis validate the observed binding modes. For K8, the R32A mutation caused a 715-fold drop in affinity while R23A showed only 2-fold reduction. For K92, W21A and F26A mutations resulted in 1209-fold and 46-fold affinity losses, respectively. Binding pose metadynamics confirmed exceptional stability of both binding poses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis data (C87-C90) from SPR experiments directly validate key interactions identified in the crystal structures. The computational analysis (C91) provides additional support. The magnitude of effects correlates well with the structural importance of the mutated residues, strengthening confidence in the structural models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "SPR cross-blocking experiments reveal negative cooperativity between K8, K57, and K92, with order-dependent binding effects. K8 binding prevents subsequent K92 and K57 binding, while K92 and K57 show mutual negative cooperativity. K149 does not cross-block with any functional peptides, suggesting a distinct, non-perturbing binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cooperativity patterns are clearly demonstrated by SPR data in Figure 2 (C64-C72). The order-dependent effects and differential blocking patterns provide strong evidence for allosteric interactions between binding sites. The lack of K149 cross-blocking is consistent with its silent binder phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Structural comparison reveals that the K92 epitope is entirely contained within the SSL7 binding site on C5. However, K92 binds more deeply between MG1 and MG5 domains, inducing different conformational changes than SSL7, which correlates with their different functional profiles (K92 as selective AP partial antagonist vs. SSL7 as full/partial antagonist of both pathways).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural overlap is clearly demonstrated by superposition analysis in Figure 4 (C107, C109). The functional differences between K92 and SSL7 (C110) are supported by cited literature and the current functional data. The correlation between binding mode differences and functional outcomes is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C111",
+      "C112"
+    ],
+    "result": "Structural alignment reveals that K92 binding induces a conformational change in C5, causing a twist in the MG1 domain and significant rotational movement of the \u03b1-chain. Similar conformational changes are observed with OmCI and RaCI binding, and to some extent with K8. The C5a domain adopts different conformations in K92 vs. K8 complexes, with the scissile bond potentially more exposed in the K8 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conformational changes are documented by structural superposition analysis (C113-C114) shown in Figure 4C. The comparison to OmCI/RaCI complexes provides validation through independent structural data. The differential C5a conformations (C111-C112) are supported by electron density observations, though the functional significance requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "SEC-MALLS and SAXS analysis of C5-knob domain complexes in solution reveals increases in radius of gyration and molecular weight consistent with complex formation. C5-K8 showed the largest conformational change while C5-K149 showed minimal change. For K92 and K57, discrepancies in scattering curves indicate changes in C5 flexibility that may contribute to their inhibitory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The solution data (C122-C126) from SEC-MALLS and SAXS provide orthogonal validation of complex formation and conformational changes. The correlation between SAXS changes and functional activity (C125) is logical. However, the mechanistic interpretation regarding dynamics (C127) is somewhat speculative and marked as such in the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "SAXS analysis reveals that C5 adopts a more elongated conformation in solution than suggested by crystal structures. Normal mode analysis using SREFLEX improved model fits to SAXS data significantly (\u03c7\u00b2 from >13 to 1.55 for C5-apo, >20 to 2.5 for C5-K92). For C5-K8, the absence of the C345c domain in the crystal structure complicated fitting, but refinement achieved acceptable fit (\u03c7\u00b2=4.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The solution-crystal structure discrepancies are well-documented by SAXS data (C128) and consistent with prior observations. The computational modeling approach (C129-C132) is appropriate and the improved fits validate the refined models. The challenges with C5-K8 are transparently reported and adequately addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The higher \u03c7\u00b2 value for C5-K8 SAXS fitting suggests increased flexibility around the C345c linker, which correlates with absent electron density in the crystal structure. This K8-induced flexibility may contribute to peptide efficacy. The discrepancies between crystal and solution data indicate that crystal lattice constraints may obscure subtle global conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the correlation between SAXS fitting difficulties and missing electron density is logical (C133), the mechanistic interpretation linking flexibility to efficacy (C134) is speculative. The general principle about crystal lattice constraints (C135) is reasonable but the specific impact on detecting conformational changes in this system requires more direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "HDX-MS analysis reveals that K8 binding protects the MG8 domain epitope (L1380-E1387) while increasing solvent exposure of the neighboring C5d domain. K92 binding protects its epitope between MG1 and MG5 domains (H70-L85) and induces distal conformational changes in C5d (I1169-F1227) and CUB domain (L1303-L1346). An allosteric network can be visualized propagating from the K92 epitope through the MG2 domain into C5d and CUB domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HDX-MS data (C136-C140) shown in Figure 6 provide direct evidence for epitope protection and allosteric conformational changes. The visualization of the allosteric network for K92 (C140) is particularly compelling. The data are consistent with crystallographic observations and provide solution-phase validation of conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "HDX-MS analysis of C5-K57 complex reveals protection in the MG5 domain (N483-L540) and CUB domain (G951-L967), suggesting the epitope is likely on MG5. Minimal changes were observed in the C5a domain for all complexes, indicating the peptides do not act by shielding the scissile arginine bond but rather affect global changes that lower affinity for C3b or C5 convertases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HDX-MS data for K57 (C141-C142) provide epitope mapping in the absence of crystal structure. The inference that the epitope is on MG5 rather than CUB (C153) is strengthened by C5b binding data. The mechanistic interpretation (C143-C145) is well-reasoned based on the pattern of changes observed across all complexes and is consistent with the allosteric mechanisms proposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "HDX-MS data are in good agreement with crystallographic data, with K8 and K92 epitopes showing clear solvent protection. The conformational changes in the C5d domain and rotational movement of the \u03b1-chain observed in crystal structures also manifest in solution upon knob domain binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The agreement between HDX-MS and crystallography (C146-C147) provides strong validation that the conformational changes observed in crystals are not artifacts of crystallization but represent genuine solution-phase phenomena. This cross-validation using orthogonal techniques significantly strengthens the mechanistic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "SPR analysis of binding to C5b and C5b-6 reveals that K8 does not bind C5b but binds C5b-6, while K57, K92, and K149 bind both forms with affinities similar to C5. K92 shows reduced affinity for C5b-6 (6.7 nM vs <0.6 nM for C5). Since the CUB domain is significantly altered in C5b, the K57 epitope is likely on the MG5 domain rather than CUB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The binding data to C5b and C5b-6 (C148-C151) from SPR experiments provide additional epitope mapping information. The inference about K57's epitope location (C153) is logical given the structural changes in C5b (C152) and is consistent with HDX-MS data (C141-C142). This multi-technique approach strengthens epitope assignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The authors propose that rearrangement of the C5d domain can lower affinity or preclude interaction of C5 with convertases, representing a common inhibitory mechanism for OmCI, RaCI, K8, and K92. For K92, this allosteric effect propagates over 50 \u00c5 from the binding site to the C5d domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proposed mechanism (C163-C164) is well-supported by the convergent evidence from crystallography, HDX-MS, and SAXS showing C5d conformational changes. The structural similarity to OmCI/RaCI complexes provides independent validation. The >50 \u00c5 propagation distance (C165) is directly supported by structural measurements and HDX-MS data, and is contextualized by literature precedent (C166).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Structural analysis reveals that K8 and K92 paratopes contain 18 and 10 residues respectively, within the typical range of antibody paratope sizes. However, no structurally similar antibody paratopes were found in a database of 924 antibody complexes. K8 has 15 intra-paratope and 17 inter-paratope interactions (similar to antibody average of 16 and 17), while K92 has fewer with 9 and 10 interactions. The presence of cysteine in paratopes is uncommon in most antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The paratope analysis (C95-C101) using computational tools and database comparisons is methodologically sound. The finding that knob domains have antibody-like paratope sizes but unique structural features (C97-C98) is well-documented. The interaction analysis using Arpeggio provides quantitative validation of the binding interfaces.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "DALI searches found no 3D structures similar to K8 or K92, including among 14 known bovine Fab structures with ul-CDRH3. Comparison to cyclic peptides reveals that K8's 19 inter-paratope interactions are comparatively high (average for cyclic peptides is 8, range 1-20), while K92's 7 interactions are typical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural uniqueness (C103) is established by comprehensive database searching. The comparison to cyclic peptides (C104-C106) provides useful context for understanding the binding properties of knob domains. The data support the conclusion that knob domains represent a distinct structural class.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Structural analysis reveals that disulphide bonds participate in both inter- and intra-molecular interactions. For K92, the backbone of C23 forms H-bonds with S82 of C5. For K8, a sulphur-\u03c0 stack between the C27-C41 disulphide and Y1378 of C5 positions the tyrosine for H-bonding. For K92, an intra-chain sulphur-\u03c0 stack between C9-C23 and Y14 orientates Y14 for H-bonding with N38 of C5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The detailed structural interactions (C92-C94) are directly observed in the crystal structures and represent novel findings about the role of disulphide bonds beyond simple structural stabilization. These observations are well-documented in the figures and provide mechanistic insights into binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Structural comparison reveals that C5 in complex with K92 and K8 does not adopt the same conformation as when bound to CVF, potentially indicating the knob domains stabilize a different C5 conformation than binds the C5 convertase. K92 is not an orthosteric inhibitor of either convertase, and the K92 epitope is compatible with the CVF model for C5 activation. K8 binding to MG8 would not sterically block the catalytic unit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparisons (C116-C117, C120-C121) are based on superposition analysis shown in Figure 4. The inference that K92 acts non-orthosterically (C119) is consistent with the partial antagonism observed functionally. The compatibility with the CVF model (C120) is supported by the ternary complex structure showing SSL7 and CVF do not cross-block.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on knob domain discovery method: Bovine antibodies have evolved ultra-long CDRH3 regions containing cysteine-rich knob domains. The authors previously developed a method to isolate autonomous 3-6 kDa knob domains that bind antigen independently, involving cattle immunization, B-cell sorting, RT-PCR, and recombinant expression. This method was established using C5 as target, yielding peptides with pM-low nM affinities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C22) describe established background and prior work by the authors, appropriately supported by citations to their previous publication (Macpherson et al., 2020). The methodology is clearly described and the prior affinity data (C46-C49) provide the foundation for the current functional and structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Background on C5 biology and therapeutic landscape: C5 is a validated drug target for complement-mediated diseases including PNH and aHUS. Six monoclonal antibodies and various other modalities are in clinical development. C5 is cleaved by two convertases (CP and AP) that are thought to be mechanistically identical. The structural biology of C5 is well-characterized with multiple co-crystal structures available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C23-C45) accurately summarize established knowledge about C5 biology, clinical applications, and structural biology, appropriately supported by citations to relevant literature. The statement that CP and AP convertases are thought to be mechanistically identical (C32) sets up the key finding that challenges this assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Therapeutic implications and future directions: Selective AP inhibition by K92 may preserve serum bactericidal activity and lower meningococcal infection risk compared to complete terminal pathway inhibition. Knob domains may be able to target flat protein-protein interaction surfaces not accessible to small molecules. The bovine immune system can be used to generate knob domains with specificity for any antigen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The therapeutic speculation about reduced infection risk (C159) is logical but requires clinical validation. The established risk with eculizumab (C160) provides context. The inferences about targeting flat surfaces (C161) and antigen versatility (C162) are reasonable extrapolations from the structural data but represent future potential rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Summary conclusions: This study expands the therapeutic scope of C5, presents new inhibitors (K57, K92, K8), and introduces knob domains as a new class of low molecular weight antibody fragments with therapeutic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C167-C169) accurately reflect the major findings of the study. The new inhibitors have been functionally and structurally characterized (C168), the pathway-selective inhibition expands C5 therapeutic scope (C167), and the structural and functional characterization establishes knob domains as a distinct antibody fragment class (C169).",
+    "result_type": "MAJOR"
+  }
+]

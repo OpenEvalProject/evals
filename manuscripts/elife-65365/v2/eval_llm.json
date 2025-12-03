@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The SARS-CoV-2 Spike D614G variant emerged in February 2020 and rapidly increased in prevalence, becoming the dominant variant globally. By early June 2020, approximately 72% of surveyed genomes contained the G614 variant, representing a defining feature of the most prevalent clade (A2a).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, C10, C70-C72 collectively demonstrate the temporal emergence and global spread of the G614 variant using genomic surveillance data from GISAID. The data shows clear temporal trends from January-May 2020 (Figure 1a) and quantifies prevalence at 72% by June 2020, providing strong epidemiological evidence for the variant's rapid rise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C38"
+    ],
+    "result": "The Spike D614G mutation is in linkage disequilibrium with an ORF1b P314L mutation in patient isolates, making it challenging to isolate the functional contribution of the Spike mutation from population genetics alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C38 are supported by genomic analysis and citation to Bhattacharyya et al., 2020. This linkage disequilibrium is an important confounding factor that justifies the experimental approach of introducing the D614G mutation in isolation through site-directed mutagenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C73"
+    ],
+    "result": "There is a significant positive correlation between G614 prevalence and case-fatality rate across countries (rp = 0.29, p=0.04), replicating a previously reported correlation with a larger dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C11 reports statistical significance (p=0.04), the correlation is weak (rp = 0.29) and the analysis does not control for confounding variables such as testing rates, healthcare infrastructure, demographic differences, or temporal factors. The correlation could be spurious due to founder effects or sampling bias rather than reflecting a biological relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "COVID-19 patients with the G614 variant show approximately 3-fold higher viral RNA levels in qPCR testing, with remarkably consistent \u0394\u0394Ct values (1.6 Ct for Sheffield, 1.8 Ct for Washington) across two independent studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by reanalysis of published data from two independent patient cohorts (Korber et al., 2020; Wagner et al., 2020). The consistency of the \u0394\u0394Ct difference across studies despite different methodologies suggests a biological effect, though the authors appropriately note this is observational data from patients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Lentiviral particles pseudotyped with Spike G614 show increased transduction efficiency compared to D614 across multiple human cell lines, ranging from 1.3- to 2.4-fold in cells with endogenous ACE2 (Caco-2, Calu-3) and 1.5- to 7.7-fold in cells overexpressing ACE2 (A549ACE2, Huh7.5ACE2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C16-C19 are well-supported by flow cytometry data across four cell lines at multiple viral doses (Figure 2). The experiments include appropriate controls (no pseudotype, C15) and account for viral titer differences (C20). The dose-response data and replication across cell types strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Trans-complementation of replication-competent SARS-CoV-2 with Spike G614 shows significantly increased infectivity in human cells at all time points (12, 18, 24 hr) and MOIs (0.01, 0.1) tested, with appropriate negative controls showing <1% infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40-C42 are supported by immunocytochemistry data from the trans-complementation assay (Figure 4). The novel assay design addresses the linkage disequilibrium issue (C2, C38) by introducing only the Spike mutation. Statistical significance is reported at all conditions with appropriate negative controls, validating the pseudovirus findings with intact SARS-CoV-2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C52"
+    ],
+    "result": "Bio-layer interferometry shows minimal difference in ACE2 binding between D614 and G614 Spike S1 monomers, with similar dissociation constants (KD1 = 8.45 nM vs 18.0 nM; KD2 = 127 nM vs 92.7 nM), suggesting the transduction phenotype is independent of S1-ACE2 binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C22-C26, C52 are supported by bio-layer interferometry data (Figure 3b,c, Table 1). The KD values are consistent with published literature (C25), and the similar binding profiles between variants support the conclusion that increased transduction is not due to enhanced receptor binding. However, the authors appropriately note (C53-C54) that full-length trimers may behave differently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C29",
+      "C30",
+      "C46"
+    ],
+    "result": "The G614 variant shows increased resistance to proteolytic cleavage compared to D614, with approximately 2.5-fold less cleavage in transfected cells and 1.4-fold less cleavage on pseudotyped lentiviral particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C29-C30, C46 are supported by western blot quantification data (Figure 3d-i). The reduced cleavage is observed in both transfected cells and on viral particles, providing a potential mechanism for increased transduction. However, the authors appropriately note (C61) that isogenic SARS-CoV-2 studies found no difference in cleavage, highlighting limitations of the pseudovirus system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C47"
+    ],
+    "result": "The increased transduction with G614 may be due to greater uncleaved Spike on virions, potentially enabling more receptor-binding-capable Spike protein per particle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31 and C47 are speculative mechanisms inferred from the cleavage data (C29-C30). While the reduced cleavage is well-documented, the causal link to increased transduction is not directly demonstrated. Alternative mechanisms are possible, and the authors acknowledge (C61-C62) that isogenic SARS-CoV-2 studies show different results, suggesting pseudovirus-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C49"
+    ],
+    "result": "There is no significant difference in Spike incorporation into pseudotyped lentiviral particles between D614 and G614 variants, consistent with observations by other groups but contrasting with one study using murine leukemia virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C49 are supported by western blot quantification (Figure 3\u2014figure supplement 1) and citations to concordant studies (Ozono et al., 2020; Yurkovetskiy et al., 2020). The authors appropriately acknowledge the discrepancy with Zhang et al., 2020 (C48) and discuss methodological differences (C59-C60) that may explain conflicting results across studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Viral RNA content differs minimally between D614 and G614 pseudotyped viruses (7% higher for D614), potentially causing slight underestimation of G614 transduction efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by qPCR data using two independent primer sets (Figure 2\u2014figure supplement 2). This control is important for validating that the observed transduction differences are not simply due to differences in viral titer, strengthening the interpretation of the transduction data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C68",
+      "C69"
+    ],
+    "result": "S-virus transduction is much more efficient when ACE2 is overexpressed, consistent with previous studies. Caco-2 and Calu-3 cells express endogenous ACE2, while A549 and Huh7.5 cells were engineered to overexpress ACE2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C68-C69 are supported by experimental data (Figure 2\u2014figure supplement 1a) and citations to previous work. This establishes the experimental system and validates that the pseudovirus system recapitulates known ACE2-dependence of SARS-CoV-2 entry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "Lentivirus lacking an attachment protein (no pseudotype control) resulted in negligible transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is supported by flow cytometry data (Figure 2c) and serves as an essential negative control demonstrating that transduction is Spike-dependent, not due to non-specific viral entry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C27",
+      "C28"
+    ],
+    "result": "SARS-CoV-2 Spike protein contains a receptor-binding domain and fusion polypeptide, and requires two-step proteolytic cleavage (S1/S2, then S2') for membrane fusion and viral entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C27-C28 describe established knowledge of coronavirus entry mechanisms, supported by citations to previous literature. This background information contextualizes the cleavage experiments and is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Computational epitope prediction suggests the G614 variant can alter MHC binding, with one high-affinity epitope showing nearly 4-fold decreased predicted binding (58 nM for D614 vs 221 nM for G614 with HLA-A*02:01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C36 are based solely on computational predictions using NetMHC (Figure 3\u2014figure supplement 2) without experimental validation. Epitope prediction algorithms have known limitations, and the functional significance of these predicted changes for immune responses is unclear. This requires experimental validation with T cell assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C67"
+    ],
+    "result": "Many of the 174 preclinical and 63 clinical COVID-19 vaccine candidates utilize Spike sequences or peptides developed prior to G614 emergence. The G614 variant merits consideration for vaccine development, particularly for vaccines using partial Spike sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C37, C67 are supported by WHO data and vaccine literature citations. The recommendation (C67) is a reasonable inference from the study's findings of increased infectivity and potential epitope changes, though the clinical significance remains uncertain (C64).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Most cell lines require ACE2 overexpression for efficient SARS-CoV-2 infection, as reported by multiple groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by citations to multiple studies (Hoffmann et al., 2020; Ou et al., 2020; Shang et al., 2020; Ziegler et al., 2020) and justifies the trans-complementation assay design where ACE2 is co-transfected with Spike variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The D614G mutation increases cellular entry efficiency across multiple human cell types (lung, liver, colon) using both pseudotyped lentivirus and replication-competent SARS-CoV-2. The concordance between systems suggests pseudovirus effectively represents Spike variant biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 synthesize the major findings from both experimental systems. The concordance between pseudovirus (C3-C5) and intact virus (C6, C40) strengthens the conclusions. However, the authors appropriately acknowledge (C61-C62) that some aspects of Spike biology may differ between pseudoviruses and SARS-CoV-2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C51",
+      "C53",
+      "C54"
+    ],
+    "result": "Other studies report varied mechanisms for G614 increased fitness. Spike is primarily processed by furin, though G614 may also be processed by elastase-2. Full-length Spike trimers may show different ACE2-binding behavior than S1 monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C50-C51, C53-C54 accurately cite and contextualize findings from other studies. The authors appropriately acknowledge discrepancies (C48) and limitations of their S1 monomer binding studies compared to full-length trimer studies (C53-C54), demonstrating critical assessment of their own work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Multiple groups report increased viral fitness with D614G, though proposed mechanisms vary. Discrepancies regarding cleavage and incorporation may result from technical differences in pseudovirus systems (murine leukemia virus, mouse sarcoma virus, lentivirus) and protocols. Isogenic SARS-CoV-2 studies found no cleavage differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 provide a thorough and critical discussion of the literature, acknowledging both consensus (increased fitness) and discrepancies (mechanism). The authors appropriately identify methodological factors (C59-C60) that may explain conflicting results and acknowledge limitations of pseudovirus systems compared to isogenic SARS-CoV-2 (C61-C62).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "While there is emerging consensus that G614 results in faster viral spread, clinical impact on disease severity remains uncertain. Two studies found no correlation between Spike mutation status and clinical severity or hospitalization, though one found non-significant enrichment of G614 in ICU patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 accurately summarize clinical data from cited studies (Korber et al., 2020; Wagner et al., 2020). The authors appropriately distinguish between evidence for increased transmission (C63) and lack of evidence for increased severity (C64-C66), acknowledging uncertainty where it exists.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Phylogenomic analyses have produced conflicting interpretations, with some groups proposing positive selection of D614G while others claim current evidence does not support positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 accurately represent the debate in the literature regarding positive selection, citing both perspectives (Bhattacharyya et al., 2020; Dorp et al., 2020; Korber et al., 2020). This acknowledges the complexity of inferring selection from genomic data alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Neutralizing antibodies targeting the receptor-binding domain appear largely unaffected by D614G, but effects on other anti-Spike antibody classes remain to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by citation to Yurkovetskiy et al., 2020. C77 appropriately identifies a knowledge gap requiring future research, which is important for vaccine development considerations.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C38",
+      "C39",
+      "C42"
+    ],
+    "result": "The Far complex localizes to both mitochondria and ER. Fluorescence microscopy shows that GFP-tagged Far proteins (Far3, Far7, Far8, Far9, Far11) localize substantially to mitochondria (93-96% of cells), in addition to the previously reported ER localization. This dual localization is consistent with findings for Far9/Far10 orthologues in other organisms. Engineered Far9 variants with mitochondria-specific (Tom5TA) or ER-specific (Cyb5TA) tail anchors show distinct localization patterns, and mitochondria-targeted Far9 recruits other Far proteins to mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-33, C38-39, and C42 are well-supported by fluorescence microscopy data in Figures 1A, 1B, 1D, and 1F showing clear localization patterns. The quantification (e.g., 93-96% of cells) provides strong evidence. The engineered localization experiments provide additional validation of the dual localization finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41",
+      "C43",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Mitochondria-localized Far complex inhibits mitophagy via Atg32 dephosphorylation, while ER-localized Far complex does not. Cells expressing mitochondria-targeted Far9 (Far9-Tom5TA) show dephosphorylated Atg32 and strongly inhibited mitophagy, while ER-targeted Far9 (Far9-Cyb5TA) shows phosphorylated Atg32 and increased mitophagy. The effect requires Ppg1, and Ppg1 overexpression does not enhance the effect in Far9-Tom5TA cells, indicating the mitochondria-localized Far complex is the limiting factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40-41, C43, C48-53 are strongly supported by Western blot data (Figures 1E, 2A, 2B) showing Atg32 phosphorylation status and mitophagy assays (Idh1-GFP processing). The genetic epistasis experiments with ppg1\u0394 provide mechanistic validation. The data consistently demonstrate that mitochondrial localization is necessary for Atg32 dephosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "ER-localized Far complex regulates TORC2 signaling. Temperature-sensitive growth assays using tsc11-1 mutants show that ER-targeted Far9 (Far9-Cyb5TA) is functional in TORC2 signaling (cells fail to grow at 37\u00b0C), while mitochondria-targeted Far9 (Far9-Tom5TA) is non-functional (partial growth restoration at 37\u00b0C). This demonstrates distinct roles for the two Far complex subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44-48 are supported by growth assay data in Figure 1H. The use of temperature-sensitive TORC2 mutants as a functional readout is well-established (C44). The differential growth phenotypes of Far9-Tom5TA vs Far9-Cyb5TA provide clear evidence for localization-dependent functions. However, the mechanism by which ER-localized Far complex regulates TORC2 is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Ppg1, Far11, and Tpd3 form a subcomplex with Ppg1 as the central factor. Immunoprecipitation experiments show that Far11 is the primary binding partner of Ppg1 among Far proteins (co-IPs in all FAR deletion backgrounds). Ppg1 interacts independently with both Tpd3 and Far11, but the Far11-Tpd3 interaction requires Ppg1, indicating Ppg1 bridges these two proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C54-60 are well-supported by systematic immunoprecipitation data in Figures 3F, 3G, and 3H. The experimental design testing interactions in various deletion backgrounds is rigorous. The conclusion that Ppg1 is central to the subcomplex is logically derived from the observation that Far11-Tpd3 interaction is lost in ppg1\u0394 but not vice versa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Ppg1 phosphatase activity is required for Far complex assembly, specifically for the interaction between Far8 and Far11. In ppg1\u0394 cells, only the Far8-Far11 interaction is disrupted while other Far protein interactions remain intact. Catalytically inactive Ppg1-H111N shows strongly impaired Far8-Far11 co-immunoprecipitation. Far11 mislocalization to cytoplasm in ppg1\u0394 cells further supports the assembly defect. The Ppg1-Far11 subcomplex formation appears prerequisite for binding to the Far complex core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C63-74 are strongly supported by immunoprecipitation data (Figures 4A, 4B, 4E, 4F, 4G) and microscopy data (Figures 4C, 4D). The use of catalytically inactive Ppg1-H111N mutant provides direct evidence for the requirement of phosphatase activity. The specificity of the defect (only Far8-Far11 interaction affected) is well-demonstrated. The conclusion about assembly order is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "The Far complex preferentially interacts with phosphorylated Atg32 via the 151-250 amino acid region. Co-immunoprecipitation of Atg32 and Far8 is dramatically enhanced in ppg1\u0394 cells where Atg32 is constitutively phosphorylated. Non-phosphorylatable Atg32-2SA shows remarkably decreased interaction with Far8. Deletion of Atg32 amino acids 151-200 impairs the interaction. The interaction requires assembly of the core Far complex (Far3, Far7, Far8, Far9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C78-82, C84 are well-supported by immunoprecipitation data in Figures 5C, 5E, and 5F. The use of phosphorylation mutants (2SA) and deletion mutants (\u0394151-200) provides strong mechanistic evidence. The requirement for core Far complex assembly is demonstrated by systematic deletion analysis. The preferential binding to phosphorylated Atg32 is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C75",
+      "C76",
+      "C77",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The Far complex-Atg32 interaction is weakened upon mitophagy induction, while Far complex integrity is maintained. Immunoprecipitation shows markedly decreased Atg32-Far8 interaction after starvation or rapamycin treatment. However, Ppg1-Far8/Far11 and Far8-Far11 interactions remain unchanged, and Far protein localization is stable. This suggests dissociation from Atg32 is a key regulatory mechanism for promoting Atg32 phosphorylation during mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C75-77, C85-87 are supported by immunoprecipitation data (Figures 5A, 5B, 5G) and microscopy data (Figure 5 supplements 1-2). The finding that Far complex integrity is maintained while Atg32 interaction is lost is important for understanding the regulatory mechanism. However, the molecular basis for this dissociation is not identified, which is acknowledged by the authors as requiring further study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Far8 directly interacts with Atg32 (amino acids 151-250), and artificial tethering prevents mitophagy. GST pull-down assays with purified proteins demonstrate direct Far8-Atg32 interaction requiring amino acids 201-250. A Far8-Atg32 chimeric protein remains constitutively dephosphorylated in a Ppg1-dependent manner, functions as a Far complex component (recruits Far11 to mitochondria), and severely inhibits mitophagy. Ppg1 deletion restores phosphorylation and mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C88-100 are strongly supported by in vitro pull-down data (Figure 6B), Western blots (Figures 6C, 6D, 6F), microscopy (Figure 6E), and mitophagy assays (Figure 6F). The GST pull-down with purified proteins provides direct evidence of interaction. The chimeric protein experiments elegantly demonstrate that forced association prevents mitophagy, supporting the model that dissociation is crucial for mitophagy induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Ppg1-mediated Far complex formation and dissociation from Atg32 are crucial for mitophagy regulation. This is the overarching conclusion integrating findings about Far complex assembly requiring Ppg1 activity, preferential binding to phosphorylated Atg32, and dissociation upon mitophagy induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is a synthesis of multiple experimental findings (C7-C11) and is well-supported by the collective evidence. The conclusion logically follows from the demonstrated requirements for Ppg1 in complex assembly, the phosphorylation-dependent Atg32 interaction, and the functional consequences of forced association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Membrane anchoring of at least one of Far9 or Far10 is required for Atg32 dephosphorylation. Single mutants lacking Far9 or Far10 tail anchors show normal Atg32 phosphorylation status, while the double mutant shows highly phosphorylated Atg32 similar to far9\u0394 far10\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-37 are supported by Western blot data in Figure 1C. The genetic complementation pattern (single mutants normal, double mutant defective) provides clear evidence for functional redundancy. The conclusion that membrane anchoring of at least one protein is required is logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C105",
+      "C106"
+    ],
+    "result": "Tpd3 plays a limited role in the Ppg1-Far complex for mitophagy regulation. Tpd3 co-immunoprecipitates with Far8 much less efficiently than Far11, and prior work showed Tpd3 is dispensable for Atg32 dephosphorylation. The authors propose Tpd3 is essential for ER-localized Far complex (TORC2 signaling) but accessory for mitochondria-localized Far complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-62, C105-106 are partially supported by immunoprecipitation data (Figure 3I) and prior work (C62 cites Furukawa et al., 2018). However, the differential role of Tpd3 in ER vs mitochondrial Far complexes (C105-106) is speculative and not directly tested. The TORC2 experiments (Figure 1H) do not specifically test Tpd3's role. Additional experiments would be needed to validate this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Far9 is dominant to Far10 for assembly of other Far proteins. Mitochondria-localized Far9 (Far9-Tom5TA) recruits all Far proteins except Far10 to mitochondria, indicating a hierarchy in Far complex assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by microscopy data in Figure 1F showing selective recruitment of Far proteins. The observation that Far10 is not recruited despite Far9 being its paralogue is notable. However, the molecular basis for this dominance is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Under growing conditions, Atg32 is dephosphorylated in wild-type cells but phosphorylated in FAR-deficient cells, as detected by mobility shift in Western blots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by Western blot data in Figure 1\u2014figure supplement 1A. This establishes the baseline phosphorylation status used throughout the study. The mobility shift assay is a standard method for detecting phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Prior work showed that deletion of Atg32 amino acids 151-200 has the same effect as absence of Ppg1 or Far complex, suggesting this region serves as a scaffold for the Ppg1-Far complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 references prior work (Furukawa et al., 2018) and is used to interpret current findings. The current study validates this with interaction data (C84), providing additional support for the scaffold model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "CK2 is constitutively active, leading to the hypothesis that a mechanism must exist to suppress Ppg1-Far complex function under mitophagy-inducing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-103 are supported by citation (Litchfield, 2003) and prior work (Furukawa et al., 2018). This provides the rationale for investigating Far complex regulation. The current study addresses this hypothesis by demonstrating dissociation of the Far complex from Atg32 upon mitophagy induction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "This is the first report to distinguish localization-dependent roles of the Far/STRIPAK complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is a novelty claim based on the authors' knowledge of the literature. While the dual localization and distinct functions are novel findings in this study, the claim of being 'first' cannot be fully verified without comprehensive literature review. The finding itself is well-supported, but the priority claim is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "Pph21/Pph22 may regulate TORC2 signaling independently of the Far complex, as they are dispensable for Far complex assembly but have been implicated in TORC2 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 is speculation based on the observation that Pph21/Pph22 deletion does not disrupt Far8-Far11 interaction (Figure 4B) but prior work implicated them in TORC2 signaling. This is presented as an alternative hypothesis but is not tested. Additional experiments would be needed to evaluate this possibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The requirement of Ppg1 phosphatase activity for Far complex assembly implies that Far11 and/or other Far proteins are regulated by (de)phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 is a logical inference from the finding that Ppg1 activity is required for assembly (C8, C74). The authors cite precedent with Sit4 and its binding proteins. However, this is not directly tested - no experiments identify phosphorylation sites on Far proteins or demonstrate that their phosphorylation status affects assembly. This remains a hypothesis requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "The findings regarding Far complex localization, assembly, and substrate interactions will serve as a model system for studying STRIPAK complexes in other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is a forward-looking statement about the potential impact of the work. While the findings are significant and yeast is a valuable model organism, whether this will actually serve as a model system depends on future work by the field. The claim is speculative about future utility rather than a result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Modifications of core Far proteins (Far3-Far7-Far8-Far9) may determine Far complex-Atg32 association/dissociation, as the Far complex-Atg32 interaction changes upon mitophagy induction without changes in Ppg1-Far interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is speculation to explain the observation that Far complex-Atg32 interaction decreases upon mitophagy induction while Far complex integrity is maintained (C75-77, C85). This is a reasonable hypothesis but is not tested. The authors acknowledge that additional experiments examining Far protein modifications are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C111"
+    ],
+    "result": "Background claims about autophagy, mitophagy, Far complex, and STRIPAK complex from established literature. These include general mechanisms of autophagy, the role of Atg32 in yeast mitophagy, CK2-mediated phosphorylation, Far complex functions, and STRIPAK complex conservation and functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-3, C13-30, C32, C111 are background knowledge supported by appropriate citations. These establish the context for the current study and are accurately represented based on the cited literature. These are not novel findings of this study but provide essential background.",
+    "result_type": "MINOR"
+  }
+]

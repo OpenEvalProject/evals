@@ -1,0 +1,517 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C49",
+      "C53",
+      "C54"
+    ],
+    "result": "TPL contains two independent repression domains: Helix 1 (LisH domain) and Helix 8 (CRA domain). Helix 8 is required for maximum repression activity and maintenance of repression after auxin addition. The repressive activity of Helix 8 requires the context of the larger Helix 3-Helix 8 truncation carrying the CTLH domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44, C45, C49, C53, and C54 are well-supported by deletion series experiments shown in Figure 1. The systematic deletion analysis demonstrates that both Helix 1 and Helix 8 can independently confer repression, with Helix 8 providing stronger, auxin-insensitive repression. The requirement for the CTLH domain context is demonstrated by the failure of Helix 8 alone to repress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C62",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "The Helix 8 repression domain directly interacts with Mediator middle module subunits MED21 and MED10B. The interaction with MED21 requires the first five amino acids of the MED21 N-terminus and is specific to the Helix 8-based repression domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C62, C67, C69, C70, C71, C72, and C74 are strongly supported by multiple protein interaction assays (cytoSUS, co-immunoprecipitation) shown in Figure 2. The N-terminal truncation experiments clearly demonstrate the requirement for the first five amino acids of MED21, and domain specificity is confirmed by testing different TPL truncations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Four amino acids in Helix 8 (V145, E146, K148, K149) are critical for interaction with MED21 and repression function. Single alanine mutations of these residues significantly reduced MED21 interaction, while a quadruple mutation completely abrogated binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 are well-supported by systematic mutagenesis experiments shown in Figure 3. The alanine scanning identifies specific residues required for MED21 interaction, with the quadruple mutant providing strong evidence for the importance of these residues. The correlation between loss of MED21 binding and altered repression activity strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The CRA domain (H3-H8) requires contact with MED21 to repress, and this is independent of repression via Helix 1. The quadruple mutation in Helix 8 phenocopies deletion of Helix 8 in the H3-H8 context but has minimal effect in the TPLN188 context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C86, and C87 are supported by experiments in Figure 3E comparing the effects of the QuadAAAA mutation in different TPL truncation contexts. The differential effects in H3-H8 versus TPLN188 backgrounds demonstrate the independence of the two repression domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C101",
+      "C102"
+    ],
+    "result": "The Mediator complex is recruited to TPL-repressed loci and is required for full repression in yeast. ChIP experiments show enrichment of Mediator components at repressed loci, and nuclear depletion of Mediator components triggers reporter activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C93, C96, C97, C98, C101, and C102 are supported by ChIP-qPCR data (Figure 4C-D) and Anchor Away experiments (Figure 4E-I). The ChIP data demonstrate Mediator presence at repressed loci, while the Anchor Away experiments establish functional requirement. The modest effect of CDK8 depletion compared to core Mediator components is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112"
+    ],
+    "result": "Deletion of the N-terminal residues of ScMed21 (particularly \u03945) reduces TPL-mediated repression in yeast. The \u03945Med21 mutation increases reporter expression and shows increased promoter binding, consistent with partial de-repression. Inducible replacement experiments confirm the requirement for the MED21 N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C107, C108, C109, C111, and C112 are supported by multiple complementary experiments in Figure 4J-L and Figure 4\u2014figure supplement 4. The N-terminal deletion experiments, ChIP analysis, and inducible replacement system all converge on the same conclusion. The modest fold-changes are appropriately interpreted as partial effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C120",
+      "C123",
+      "C124",
+      "C137",
+      "C138"
+    ],
+    "result": "Multimer formation has minimal influence on TPL repression strength. Monomeric TPL (with mutations disrupting both LisH and CRA dimerization interfaces) retains full repression activity in both yeast and plant lateral root development assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C120, C123, C124, C137, and C138 are supported by experiments with LDimer and Monomer mutants in Figure 5. Size-exclusion chromatography confirms the monomeric state (C123), while functional assays in yeast (Figure 5G) and plants (Figure 6E) demonstrate retained repression activity. This is a surprising finding that challenges previous models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The TPL-MED21 interaction is conserved in plants. BiFC and co-immunoprecipitation experiments in tobacco confirm the interaction, and the same Helix 8 residues and MED21 N-terminal residues are required as in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C127, C128, C130, C131, and C132 are supported by BiFC experiments (Figure 6A) and co-IP experiments (Figure 6B) in tobacco. The conservation of the critical residues identified in yeast strengthens the conclusion that this is a conserved mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C139",
+      "C140"
+    ],
+    "result": "TPL-MED21 interaction is critical for repression in the native plant context of lateral root development. Expression of TPLN188 in xylem pole pericycle cells suppresses lateral root formation, and this requires both Helix 1 and functional Helix 8 (intact MED21 binding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133, C134, C135, C136, C139, and C140 are supported by lateral root density measurements in transgenic Arabidopsis (Figure 6E). The requirement for both Helix 1 and Helix 8 is demonstrated by comparing different TPL truncations and the QuadAAAA mutant. Appropriate controls (IAA14mED alone, TPLN188 alone) confirm specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "Disrupting the TPL-MED21 interaction in plants increases lateral root density. Expression of N-terminal deletion variants of MED21 or repression of MED21 expression in xylem pole pericycle cells stimulates lateral root development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144 and C145 are supported by experiments in Figure 6F and Figure 6\u2014figure supplement 2C-E. These gain-of-function and loss-of-function approaches provide complementary evidence that the TPL-MED21 interaction is required for normal regulation of lateral root development. The consistency between approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "TPLN188 requires MED21 but not MED13 for repression in the lateral root development context. Loss of med13 function does not rescue lateral root production in lines expressing TPLN188.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146 and C147 are supported by genetic crosses with med13 mutants shown in Figure 6\u2014figure supplement 1E-F. This result distinguishes the role of the Mediator middle module from the kinase module in TPL-mediated repression. However, the low transmission rate of med13 homozygotes (1%) noted in the methods raises some concern about the robustness of this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C150"
+    ],
+    "result": "The MED21 residues that interact with TPL are the same ones required for transcriptional repression by the yeast corepressor Tup1, suggesting a conserved mechanism across eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, and C150 are supported by comparison with published data on Tup1 (Grom\u00f6ller and Lehming, 2000) and the authors' experiments showing that the same N-terminal residues of MED21 are required for TPL interaction. The conservation across plant and yeast corepressors is a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The authors propose a model where TPL/Tup1 corepressors bind to Mediator components recruited by transcription factors, creating a 'pre-paused' repressed state that allows rapid activation upon corepressor removal. Corepressor binding blocks formation of a fully active Mediator complex, limiting Pol II recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C156 represent a mechanistic model proposed by the authors based on their data. While the model is consistent with the experimental observations (Mediator enrichment at repressed loci, requirement for Mediator in repression, low Pol II at repressed loci), it remains speculative. The model makes specific predictions about Mediator conformation and dynamics that are not directly tested. Additional experiments (e.g., structural studies, single-molecule imaging) would be needed to confirm this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The SPARC (single-plasmid auxin response circuit) system recapitulates the behavior of the integrated AtARCSc and is orthogonal to endogenous yeast repression systems (Tup1/Cyc8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C92 are supported by experiments in Figure 4\u2014figure supplement 1. The SPARC system shows similar dynamics to AtARCSc, and Anchor Away depletion of Tup1 or Cyc8 does not affect SPARC repression, confirming orthogonality. This validates SPARC as a tool for studying TPL function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "No interactions were observed between TPLN188 and HDACs (HDA6, HDA9), histone protein AtHIS4, or Mediator subunit AtMED13 in cytoSUS assays. The absence of these interactions may be due to methodological differences or interaction interfaces in the C-terminal WD40 repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55, C56, C57, and C61 report negative results from cytoSUS assays (Figure 2A, Figure 2\u2014figure supplement 1B). While the negative results are clearly shown, the authors appropriately note that these may reflect methodological limitations or the absence of the C-terminal domain in TPLN188. The speculation in C61 is reasonable but unresolved. These negative results are important for ruling out certain mechanisms but do not definitively exclude these interactions in other contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The relationship between tetramer formation and repression is more complex than previously thought. Several TPL constructs that are unlikely or unable to form tetramers show strong repressive activity. Helix 8 is required for strongest interaction between TPL constructs, and the LisH domain is sufficient for dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116, C117, C118, and C119 are supported by cytoSUS interaction assays (Figure 5\u2014figure supplement 1A) and functional data from deletion constructs. The observation that non-tetrameric constructs retain repression activity challenges previous models. However, the interpretation is complicated by differential protein accumulation levels (noted in C117), which could affect the interaction assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Monomer expressed in yeast retained measurable interaction with wild-type TPL, LDimer, or Monomer at reduced levels compared to wild-type. The Monomer mutations led to increased protein concentration in yeast, potentially compensating for decreased affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125 and C126 are supported by cytoSUS assays (Figure 5I) and western blots (Figure 5\u2014figure supplement 1C). The authors appropriately note the caveat that increased protein levels may compensate for reduced affinity, explaining the discrepancy between in vitro (monomeric) and in vivo (some interaction) results. This highlights the complexity of interpreting multimerization in cellular contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43",
+      "C46"
+    ],
+    "result": "TPLN188 behaved identically to TPLN300 in the AtARCSc system. All constructs lacking Helix 8 retained the ability to repress transcription, but this repression was lifted in the presence of auxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C46 are supported by flow cytometry data in Figure 1D. These observations establish the functional equivalence of TPLN188 and TPLN300, validating the use of the shorter construct for subsequent studies. The auxin-sensitive repression of constructs lacking Helix 8 is a key observation that motivated the detailed analysis of this domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Helix 1 (18 amino acids) is sufficient to confer repression on its own. Helix 3-H9 can repress transcription. Helix 8 and the following linker alone are not sufficient for repression. Removal of Helix 9 or the linker between Helix 8 and Helix 9 slightly increases auxin sensitivity. H3-H7 (lacking both repression domains) shows only weak repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, C50, C51, and C52 are supported by the systematic deletion analysis in Figure 1E-F and Figure 1\u2014figure supplement 1. These structure-function studies define the minimal requirements for each repression domain and demonstrate their independence. The data are internally consistent and support the two-domain model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C75",
+      "C76"
+    ],
+    "result": "MED21 is one of the most highly conserved Mediator subunits with a particularly conserved N-terminus. The MED21 N-terminus lies in the hinge region of the middle module with exterior-facing residues suitable for protein-protein interactions. Structural analysis suggests Helix 8 and the following linker are optimally positioned to interact with Mediator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, C75, and C76 are supported by sequence alignments (Figure 2\u2014figure supplement 2A) and structural analysis (Figure 2F, Figure 2\u2014figure supplement 2C-E). The structural modeling provides a plausible molecular basis for the TPL-Mediator interaction, though it is based on manual juxtaposition of structures rather than a co-crystal structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The quadruple mutations in Helix 8 (QuadAAAA) had little effect on interaction with AtMED10B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by cytoSUS data in Figure 2\u2014figure supplement 1D. This observation suggests that MED10B and MED21 interact with TPL through different interfaces, which is consistent with their distinct positions in the Mediator structure. However, the functional significance of the MED10B interaction is less well characterized than the MED21 interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C99",
+      "C100"
+    ],
+    "result": "ChIP experiments show modest enrichment of MED21-FRB at the SUC2 promoter (~2-fold) and higher enrichment at the active PMA1 promoter (~8-fold). Mediator is highly enriched at the SPARC promoter when TPL is absent. Higher enrichment of middle module members at repressed promoters may indicate nucleation of complex assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C95, C99, and C100 are supported by ChIP-qPCR data in Figure 4C-D and Figure 4\u2014figure supplement 2D. The differential enrichment at active versus repressed loci is consistent with the proposed model. However, the speculation about nucleation (C100) is not directly tested and represents an interpretation of the enrichment patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "No mutation in ScMed21 increased SPARC's sensitivity to auxin. \u03945ScMed21 had no observable growth defects, although this deletion is known to alter Mediator assembly and disrupt binding of Pol II and the CDK8 kinase module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C105, and C106 are supported by experimental observations and citations to prior work (Hallberg et al., 2006; Sato et al., 2016). The lack of auxin sensitivity increase is an important negative result that constrains mechanistic interpretations. The absence of growth defects in \u03945ScMed21 is somewhat surprising given its known effects on Mediator function, but this may reflect functional redundancy or context-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "MED21 and TPL can be co-immunoprecipitated with MED10B. BiFC confirmed the importance of the same TPL Helix 8 residues and the \u03945AtMED21 N-terminal truncation for the TPL-MED21 interaction in plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129, C130, and C131 are supported by co-IP experiments (Figure 6\u2014figure supplement 1A) and BiFC experiments (Figure 6A) in tobacco. These experiments validate in plants the key residues identified in yeast, demonstrating conservation of the interaction interface.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "AtMED21 is essential in plants. Homozygous loss-of-function mutations are embryo lethal, but plants heterozygous for Atmed21 mutations appear wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141, C142, and C143 are supported by analysis of med21 mutants (Figure 6\u2014figure supplement 2A-B) and citation to Dhawan et al., 2009. The essentiality of MED21 necessitated the use of alternative approaches (dominant-negative constructs, tissue-specific knockdown) to study its role in lateral root development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "TPL is recruited to many loci that are selectively induced in response to developmental or environmental cues, but the mechanisms of repression are poorly understood. Previous work established that the N-terminus of TPL enables repression in a yeast synthetic system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C3 provide background context for the study. C1 and C2 are general statements about TPL function and knowledge gaps that are well-established in the field. C3 refers to the authors' previous work (Pierre-Jerome et al., 2014) establishing the yeast system used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on transcriptional repression and corepressor function: Mutations affecting repression cause cancer and developmental defects. Corepressors interact with transcription factors and recruit repressive machinery. Plant corepressors include TPL family members with conserved domain structure (LisH, CTLH, CRA, WD40). TPL defects affect stem cell homeostasis, organ development, and hormone signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C22 provide background information about corepressors and TPL that is well-supported by the cited literature. These claims establish the biological importance of the research question and the structural context for the functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Description of the AtARCSc synthetic system: The auxin response pathway has been recapitulated in yeast. In this system, ARF binds a promoter driving a fluorescent reporter, TPL-IAA fusion represses ARF activity, and auxin addition triggers degradation of the fusion protein. TPLN100 and TPLN300 behave differently, with only TPLN100 showing auxin-induced de-repression despite equal degradation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C33 describe the AtARCSc system and key observations from previous work (Pierre-Jerome et al., 2014). These claims establish the experimental system used in the current study and the key observation (differential behavior of TPLN100 and TPLN300) that motivated the structure-function analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background on corepressor mechanisms: TPL's function in yeast suggests conserved protein partners. TPL's N-terminal structure resembles truncated TLE forms. Gro/TLE family members recruit HDACs. Tup1 blocks Pol II recruitment, possibly through Mediator contacts. TPL has been found to recruit CDK8 Mediator, HDACs, and bind histones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 provide background on corepressor mechanisms and TPL's known interactions. These claims are supported by the cited literature and establish the context for investigating TPL's mechanism of action. The structural similarity to TLE (C35) provides evolutionary context for the functional conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Background on TPL interactions: HDAC interaction with TPL has been hypothesized to occur through indirect interactions, but direct interactions with histones and MED13 have been detected in other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, and C60 summarize prior work on TPL interactions (Krogan et al., 2012; Ito et al., 2016; Ma et al., 2017). These claims provide context for the negative results with TPLN188 and suggest that different TPL domains may mediate different interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Background on Mediator function and speculation about TPL mechanism: The Mediator complex stabilizes the pre-initiation complex enabling transcriptional activation. Auxin-induced removal of TPL is sufficient to induce changes in Mediator activity, but multiple points of contact likely exist between Mediator and the transcriptional machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C89, and C90 provide background on Mediator function (C88, well-supported by citations) and speculation about TPL's mechanism (C89-C90). The speculation is reasonable given the complexity of transcriptional regulation but is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Background on TPL multimerization: Structural studies show conservation of residues coordinating tetramer formation. The tpl-1 mutant induces aggregation. D53 recruitment motifs induce higher-order oligomerization that increases histone binding and repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C114, and C115 summarize prior structural and functional work on TPL multimerization (Ke et al., 2015; Martin-Arevalillo et al., 2017; Long et al., 2006; Ma et al., 2017). These claims provide the context for the surprising finding that multimerization is not required for repression in the authors' assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C148",
+      "C149"
+    ],
+    "result": "Background on corepressor conservation: The literature gives conflicting impressions that corepressor function is broadly conserved but that every organism may have distinct modes of repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148 and C149 summarize the state of the field regarding corepressor conservation (supported by multiple citations). This sets up the motivation for the study: to resolve whether corepressor mechanisms are truly conserved or organism-specific.",
+    "result_type": "MINOR"
+  }
+]

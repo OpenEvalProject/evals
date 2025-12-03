@@ -1,0 +1,1439 @@
+{
+  "submission": {
+    "id": "954a06fc-ff8e-45a1-90de-b2541baf1a91",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:45:27.413035Z",
+    "updated_at": "2025-12-03T16:45:27.413035Z"
+  },
+  "content": [
+    {
+      "id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "submission_id": "954a06fc-ff8e-45a1-90de-b2541baf1a91",
+      "content_type": "manuscript",
+      "content_text": "# Kap-\u03b22/Transportin mediates \u03b2-catenin nuclear transport in Wnt signaling\n\n## Authors\n\n- Woong Y Hwang<sup>1</sup> ([ORCID: 0000-0002-0575-0033](https://orcid.org/0000-0002-0575-0033))\n- Valentyna Kostiuk<sup>1</sup> ([ORCID: 0000-0003-3405-7518](https://orcid.org/0000-0003-3405-7518))\n- Delfina P Gonz\u00e1lez<sup>1</sup> ([ORCID: 0000-0002-6327-1348](https://orcid.org/0000-0002-6327-1348))\n- C Patrick Lusk<sup>2</sup> ([ORCID: 0000-0003-4703-0533](https://orcid.org/0000-0003-4703-0533)) \u2020\n- Mustafa K Khokha<sup>1</sup> ([ORCID: 0000-0002-9846-7076](https://orcid.org/0000-0002-9846-7076)) \u2020\n\n### Affiliations\n\n1. Pediatric Genomics Discovery Program, Department of Pediatrics and Genetics, Yale School of Medicine New Haven United States ([ROR:03t432d20](https://ror.org/03t432d20))\n2. Department of Cell Biology, Yale School of Medicine New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWnt signaling is essential for many aspects of embryonic development including the formation of the primary embryonic axis. In addition, excessive Wnt signaling drives multiple diseases including cancer, highlighting its importance for disease pathogenesis. \u03b2-catenin is a key effector in this pathway that translocates into the nucleus and activates Wnt responsive genes. However, due to our lack of understanding of \u03b2-catenin nuclear transport, therapeutic modulation of Wnt signaling has been challenging. Here, we took an unconventional approach to address this long-standing question by exploiting a heterologous model system, the budding yeast Saccharomyces cerevisiae, which contains a conserved nuclear transport machinery. In contrast to prior work, we demonstrate that \u03b2-catenin accumulates in the nucleus in a Ran-dependent manner, suggesting the use of a nuclear transport receptor (NTR). Indeed, a systematic and conditional inhibition of NTRs revealed that only Kap104, the ortholog of Kap-\u03b22/Transportin-1 (TNPO1), was required for \u03b2-catenin nuclear import. We further demonstrate direct binding between TNPO1 and \u03b2-catenin that is mediated by a conserved PY-NLS. Finally, using Xenopus secondary axis and TCF/LEF (T Cell factor/lymphoid enhancer factor family) reporter assays, we demonstrate that our results in yeast can be directly translated to vertebrates. By elucidating the nuclear localization signal in \u03b2-catenin and its cognate NTR, our study suggests new therapeutic targets for a host of human diseases caused by excessive Wnt signaling. Indeed, we demonstrate that a small chimeric peptide designed to target TNPO1 can reduce Wnt signaling as a first step toward therapeutics.\n\n## Introduction\n\nWnt signaling plays multiple roles in embryonic development. For example, Wnt signaling is critical for establishing the dorsal embryonic axis; increased Wnt signaling can lead to a secondary axis (twinning of the embryo), while depletion of a key effector of the Wnt signaling pathway, \u03b2-catenin, can lead to a radially ventralized embryo (Heasman et al., 1994; Heasman et al., 2000; Khokha et al., 2005; McMahon and Moon, 1989; Moon et al., 1997; Nishisho et al., 1991; Smith and Harland, 1991; Sokol et al., 1991). In addition, Wnt signaling has been implicated in a variety of human diseases especially cancer (Clevers and Nusse, 2012; MacDonald et al., 2009; Moon et al., 2004; Morin et al., 1997; Nusse and Varmus, 1982; Polakis, 2012; Wood et al., 2007). In fact, 90% of colorectal cancers are caused by genetic alterations in Wnt pathway factors (Cancer Genome Atlas, 2012). Therefore, chemical inhibitors of Wnt signaling have tremendous therapeutic potential.\n\nIn Wnt signaling, \u03b2-catenin (CTNNB1) relays the message from a Wnt ligand at the plasma membrane to transcription factors in the nucleus (MacDonald et al., 2009; Niehrs, 2012). As such, its levels are kept under control through a constitutively active degradation pathway. In the presence of Wnt ligand, the degradation machinery is sequestered, and the resulting stabilization of \u03b2-catenin allows it to enter the nucleus where it drives the transcription of Wnt responsive genes (MacDonald et al., 2009; Niehrs, 2012). Despite intensive study, the mechanism of \u03b2-catenin translocation from the cytosol to the nucleus remains obscure. First, although early studies suggested that \u03b2-catenin nuclear import was energy dependent, they excluded a role for the Ran GTPase (Fagotto et al., 1998; Yokoya et al., 1999), the master regulator of the nuclear transport of most macromolecules bearing either nuclear localization signals (NLSs) and/or nuclear export signals (NES; Wente and Rout, 2010). Second, prior studies demonstrated that \u03b2-catenin nuclear import did not require the Kap-\u03b1/Kap-\u03b21 (Importin \u03b1/\u03b21) nuclear transport receptor (NTR) complex (Fagotto et al., 1998; Yokoya et al., 1999), a notion consistent with Ran independence. Finally, the structural similarity between \u03b2-catenin (Huber et al., 1997; Xing et al., 2008) and Kap-\u03b1 (Conti and Kuriyan, 2000), both made up of armadillo-repeats, suggested that \u03b2-catenin might itself act as an NTR by directly interacting with the Phe-Gly (FG) nups responsible for selective passage across the nuclear pore complex (NPC; Andrade et al., 2001; Xu and Massagu\u00e9, 2004; Yano et al., 1994). However, Kap-\u03b1 does not directly bind to FG-nups and the evidence that \u03b2-catenin does so is controversial (Sharma et al., 2014; Suh and Gumbiner, 2003). Using a CRISPR-based screening platform, recent work provided evidence that \u03b2-catenin may be imported by the NTR, IPO11 (Importin-11); however, this mechanism appears curiously relevant only for a subset of colon cancer cells (Mis et al., 2020). Alternative models for \u03b2-catenin nuclear transport have also been proposed; however, proteins that directly bind \u03b2-catenin to modulate nuclear transport remain undefined (Goto et al., 2013; Griffin et al., 2018; Komiya et al., 2014). Thus, a complete understanding of \u03b2-catenin nuclear transport remains outstanding, leaving open a key gap in our knowledge of Wnt signaling that could otherwise be targeted for therapeutic intervention.\n\nA major challenge with understanding the \u03b2-catenin nuclear import mechanism is the myriad of binding partners that modulate its steady-state distribution and, hence, complicate the direct interrogation of the nuclear transport step (Fagotto, 2013; MacDonald et al., 2009). Here, we take an unconventional approach and investigate \u03b2-catenin nuclear transport in a heterologous system, the budding yeast Saccharomyces cerevisiae. Yeast do not have a Wnt pathway or a \u03b2-catenin ortholog, which presumably emerged in metazoans with the onset of multicellularity and cell fate specialization (Holstein, 2012). Yeast also likely lack \u03b2-catenin binding partners and its degradation machinery and thus provide a simplified system to specifically evaluate nuclear import. Most critically, the nuclear transport system, including NTRs, NPCs, and Ran, is well conserved from yeast to human (Malik et al., 1997; Wente and Rout, 2010; Wozniak et al., 1998). Indeed, even NLS and NES sequences are recognized by orthologous NTRs across millions of years of evolution (Conti and Kuriyan, 2000; Fontes et al., 2000; Kosugi et al., 2008; Lange et al., 2008; Soniat et al., 2013). Using the yeast system as a discovery platform, we uncover a PY-NLS in \u03b2-catenin that functions in yeast, Xenopus, and mammalian cells by directly binding to Kap-\u03b22/Transportin-1 (TNPO1). We further demonstrate that a small peptide based on a chimeric PY-NLS sequence can prevent Wnt signaling, opening the door for therapeutics.\n\n## Results\n\n### \u03b2-catenin requires a functional Ran cycle to accumulate in the nucleus of S. cerevisiae\n\nInvestigating the \u03b2-catenin nuclear import mechanism in yeast relies on the premise that a minimal, conserved \u03b2-catenin transport machinery exists in this organism. Therefore, we first tested whether \u03b2-catenin accumulates in the yeast nucleus. Specifically, we assessed the localization of a Xenopus \u03b2-catenin-GFP (x\u03b2-catenin-GFP) in a wildtype yeast strain expressing an endogenously tagged nuclear envelope membrane protein, Heh2-mCherry, to help visualize the nuclear boundary. Indeed, x\u03b2-catenin-GFP was enriched in the nucleus compared to GFP alone (Figure 1A). To quantify this steady state distribution, we measured the nuclear enrichment of x\u03b2-catenin-GFP by relating the mean GFP fluorescence in the nucleus (N) and cytoplasm (C) (Figure 1A, plot at right). The x\u03b2-catenin-GFP had a mean N:C ratio of ~1.6, which was significantly higher than GFP alone (1.1). As x\u03b2-catenin-GFP is 119 kD, it would be unable to easily pass through the NPC diffusion barrier, suggesting that x\u03b2-catenin-GFP can access a facilitated nuclear transport mechanism through the NPC (Popken et al., 2015; Timney et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative deconvolved fluorescence images of x\u03b2-catenin-GFP in a wildtype yeast strain that expresses Heh2-mCherry to label the nucleus (left). White arrows indicate the nuclear compartment. Plot showing the quantification of mean nuclear to cytosolic fluorescence intensity from 30 to 40 cells from three independent replicates (right). (B) Representative deconvolved fluorescence images of x\u03b2-catenin-GFP in the RanGEF mutant (mtr1-1) strain at room temperature or 37\u00b0C that co-expresses Heh2-mCherry as a nuclear envelope marker (left). The ratio of mean nuclear to cytosolic fluorescence intensity was measured in the wildtype or mtr1-1 strain from 30 to 35 cells from three independent replicates (right). Scale bar is 5 \u03bcm in (A) and (B). Red bar indicates the mean value with the SD. p-Values are from unpaired two-tailed t-test where ns is p>0.05, and ****p<0.0001 for both (A) and (B). The data is uploaded as Figure 1\u2014source data 1.\n\nIn principle, three mechanisms of x\u03b2-catenin nuclear import are possible: (1) x\u03b2-catenin-GFP is imported by an NTR, (2) x\u03b2-catenin-GFP piggybacks on an unknown binding partner that is itself imported by an NTR, or (3) x\u03b2-catenin-GFP has an intrinsic ability to cross the NPC free of NTRs. To rule out the latter possibility, we tested whether x\u03b2-catenin-GFP nuclear accumulation was dependent on a functional Ran gradient, which would specifically impact NTR-mediated transport (Schmidt and G\u00f6rlich, 2016; Weis, 2003; Wente and Rout, 2010). We therefore assessed \u03b2-catenin-GFP localization in the mtr1-1 mutant strain, which is a temperature sensitive, loss of function allele in the gene encoding the yeast Ran-GEF (SRM1/MTR1/PRP20; Kadowaki et al., 1992). As Ran-GEF exchanges Guanosine-5\u2019-diphosphate (GDP) for Guanosine-5\u2019-triphosphate (GTP) on Ran in the nucleus, it is essential for the functioning of the nuclear transport system (Weis, 2003). At room temperature, x\u03b2-catenin-GFP is localized in the nucleus with a N:C ratio similar to the wildtype strain (~1.6) (Figure 1B). In striking contrast, growth at 37\u00b0C, which is non-permissive for mtr1-1p function, resulted in the re-distribution of x\u03b2-catenin-GFP such that it was evenly distributed between the nucleus and cytoplasm with N:C ratios identical to GFP alone (1.1) (Figure 1B). Importantly, x\u03b2-catenin-GFP localization was not affected by the elevated temperature as wildtype cells showed N:C ratios of ~1.6 even at 37\u00b0C. Thus, nuclear accumulation of x\u03b2-catenin-GFP is dependent on a functional Ran-GTP gradient raising the possibility that it requires a NTR-mediated pathway to accumulate in the nucleus.\n\n### The C-terminus of \u03b2-catenin contains an NLS\n\nHaving established that \u03b2-catenin import requires a functional Ran pathway, we next sought to map the sequence elements of \u03b2-catenin that confer nuclear localization. \u03b2-catenin can be divided into three domains: a central region rich in armadillo (ARM) repeats sandwiched between two unstructured domains (Figure 2A). We generated constructs where each of these domains was individually deleted and examined their localization in yeast. Removal of the C-terminus significantly reduced nuclear enrichment of x\u03b2-catenin-(1-664)-GFP compared to constructs lacking either the N (x\u03b2-catenin-[141-782]-GFP) or ARM (\u0394141-664) domains, which accumulated in the nucleus at levels similar to the full-length protein (Figure 2A\u2013C). These data suggested that the C-terminus contains sequence elements required for nuclear accumulation. Consistent with this idea, the C-terminus of \u03b2-catenin (x\u03b2-catenin-[665-782]-GFP) was sufficient to confer nuclear accumulation of GFP to levels comparable to the full-length protein (mean N:C 1.6; Figure 2A, B and D). Of note, both the ARM repeats (x\u03b2-catenin-[141-664]-GFP) and the N-terminus of \u03b2-catenin (x\u03b2-catenin-[1-141]-GFP) could confer some nuclear enrichment of GFP but to a considerably lesser extent than the C-terminus (mean N:C of ~1.3; Figure 2A, B and D). Additionally, the ARM repeats had some affinity for the nuclear periphery (Figure 2; x\u03b2-catenin-[141-664]-GFP, white arrows). Of future interest, even the weaker nuclear accumulation driven by the N-terminal and ARM repeat sequences is dependent on a functional Ran pathway as x\u03b2-catenin-1\u2013664 does not accumulate in the nucleus in the mtr1-1 strain at the non-permissive temperature (Figure 2\u2014figure supplement 1). Thus, when taken together, there are several elements of x\u03b2-catenin that, in isolation, can target to the nucleus in a Ran pathway dependent fashion, but the C-terminus contains a sequence that was both necessary and sufficient for nuclear accumulation at levels comparable to the full-length protein. Consistent with previous work (Koike et al., 2004; Mis et al., 2020), these data suggested that the C-terminus of x\u03b2-catenin contains the dominant NLS in \u03b2-catenin, which we further mapped to amino acids 665\u2013745 (Figure 2A, B and E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of Xenopus \u03b2-catenin truncation constructs tested in this study. (B) Plot of the ratio of mean nuclear to cytosolic fluorescence intensity of Xenopus \u03b2-catenin GFP truncation constructs tested in a wildtype yeast strain from 30 to 40 cells from three independent replicates. Red bar indicates the mean value with the SD. (C) Deconvolved fluorescence images of the N-terminal deletion (141-782), ARM-repeats deletion (\u0394141-664) and C-terminal deletion (1-664) of Xenopus \u03b2-catenin GFP in the wildtype strain. GFP and full-length Xenopus \u03b2-catenin-GFP were used as controls. (D) Deconvolved fluorescence images of the indicated fragments of Xenopus \u03b2-catenin GFP in the wildtype strain. White arrows indicate nuclear rim localization. (E) Deconvolved fluorescence images of indicated C-terminus fragments of Xenopus \u03b2-catenin GFP in the wildtype strain. Heh2-mCherry was co-expressed to label the nuclear envelope in (C), (D), and (E). Scale bar is 5 \u00b5m in (C), (D), and (E). The data is uploaded as Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative deconvolved fluorescence image of x\u03b2-catenin (1-664)-GFP in the RanGEF mutant (mtr1-1) strain at room temperature or 37\u00b0C that co-expresses Heh2-mCherry as a nuclear envelope marker (left). The ratio of mean nuclear to cytosolic fluorescence intensity was measured in the mtr1-1 strain from three independent replicates (right). Red bar indicates the mean value with the SD. p-Values are from unpaired two-tailed t-test where ns is p>0.05 and **** is p<0.0001. Scale bar is 5 \u00b5m. The data is uploaded as Figure 2\u2014figure supplement 1\u2014source code 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Deconvolved fluorescence image of Xenopus \u03b2-catenin-(665-745)-GFP in the wildtype (top left) and RanGEF mutant (mtr1-1) (bottom left) strain at room temperature (RT) or 37\u00b0C that co-expresses Heh2-mCherry as a nuclear envelope marker. White arrows indicate the nuclear compartment. The ratio of mean nuclear to cytosolic fluorescence intensity from a single experiment (right). Scale bar is 5 \u00b5m. (B) Representative image of HEK293T cells expressing Xenopus \u03b2-catenin (665-745)-GFP. LaminB1 was labeled to locate the nuclear envelope. GFP was used as a control. Ratio of nuclear to cytoplasmic intensities from two independent replicates (right). Scale bar is 10 \u00b5m. (C) Representative image of HEK293T expressing full-length human \u03b2-catenin GFP and human \u03b2-catenin (\u0394665-745)-GFP. Ratio of nuclear to cytoplasmic intensities from three independent replicates (right). Hoechst was labeled to locate the nuclear compartment. Scale bar is 6 \u00b5m. p-Values are from unpaired two-tailed t-test where ns is p>0.05 and ****p<0.0001. The data is uploaded as Figure 2\u2014figure supplement 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Schematic diagram of Xenopus \u03b2-catenin constructs. (B) Double axes were scored in st 19 embryos and viewed dorsally with anterior to the top (left). Data from three independent replicates depicted in histogram (right). p-values are from Fisher\u2019s exact test where ns is p>0.05, p<0.05 (*), and 0.0021 (**). (C) Subcellular localization of x\u03b2-catenin-GFP, x\u03b2-catenin (\u0394665-745)-GFP, or cNLS-x\u03b2-catenin (\u0394665-745)-GFP in the dorsal blastopore lip of stage 10 X. laevis embryos. cNLS-mCherry mRNA was co-injected to mark the nucleus. Scale bar is 30 \u00b5m.\n\nWe confirmed that nuclear accumulation of x\u03b2-catenin-(665-745)-GFP was dependent on the Ran pathway using the mtr1-1 strain (Figure 2\u2014figure supplement 2A). To ensure that this sequence did not confer binding to a yeast-specific factor, we also tested localization of x\u03b2-catenin-(665-745)-GFP in HEK293T cells, a human embryonic kidney cell line. In line with the yeast results, x\u03b2-catenin-(665-745)-GFP showed higher levels of nuclear accumulation compared to GFP alone (Figure 2\u2014figure supplement 2B). Furthermore, to test if this NLS is required for \u03b2-catenin localization in human cells, we also examined human \u03b2-catenin that lacks aa 665\u2013745 in HEK293T cells. Indeed, deletion of aa 665\u2013745 (h\u03b2-catenin-[\u2206665\u2013745]-GFP) led to a significant reduction in nuclear to cytoplasmic ratio compared to the full-length h\u03b2-catenin localization (Figure 2\u2014figure supplement 2C).\n\nNext, we investigated the function of the \u03b2-catenin NLS in the context of Wnt signaling using the secondary axis assay in Xenopus (McMahon and Moon, 1989; Smith and Harland, 1991; Sokol et al., 1991). Overexpression of Wnt effectors including \u03b2-catenin induces a secondary axis in Xenopus embryos. By injecting a moderate dose (200 pg) of x\u03b2-catenin mRNA, secondary axes develop in roughly half of the embryos (Figure 2\u2014figure supplement 3A-B) compared to none in the uninjected controls (UICs). If we delete the coding sequence for the NLS (x\u03b2-catenin-[\u2206665\u2013745]-GFP) then the number of embryos with secondary axes is significantly reduced (Figure 2\u2014figure supplement 3A-B). To ensure that this loss of function is due to the inhibition of \u03b2-catenin nuclear import, we added the classical NLS of the SV40 large T-antigen (cNLS), which is imported by Kap-\u03b1/\u03b21, to the N-terminus of this construct (cNLS-x\u03b2-catenin-[\u2206665\u2013745]-GFP). cNLS-x\u03b2-catenin-(\u2206665\u2013745)-GFP could induce secondary axes similarly to the full-length \u03b2-catenin (Figure 2\u2014figure supplement 3B), consistent with the conclusion that x\u03b2-catenin-(\u2206665\u2013745)-GFP was still functional for Wnt signaling but lacked the nuclear localization element. Supporting this supposition, we imaged x\u03b2-catenin-GFP in these Xenopus embryos and found that while x\u03b2-catenin-GFP localizes to the cell membrane and nucleus, x\u03b2-catenin-(\u0394665\u2013745)-GFP shows a reduction in nuclear accumulation, which is rescued by the addition of the cNLS (Figure 2\u2014figure supplement 3C).\n\n### Kap104 is specifically required for \u03b2-catenin nuclear accumulation in S. cerevisiae\n\nNext, to define the NTR responsible for x\u03b2-catenin-GFP nuclear import, we used the Anchor-Away approach (Haruki et al., 2008) to systematically inhibit 10 budding yeast NTRs, all of which have orthologs in human cells (Table 1). This strategy takes advantage of the rapamycin-induced dimerization of a FK506 binding protein (FKBP12) with the FKBP-rapamycin binding (FRB) domain (Figure 3A). In this system, NTR-FRB fusions are expressed in a strain harboring FKBP12 fused to a highly abundant plasma membrane protein (Pma1) (Figure 3A). The addition of rapamycin leads to the rapid (~15 min) trapping of the NTRs at the plasma membrane (Haruki et al., 2008). We systematically tested whether the addition of rapamycin (or the DMSO carrier alone) impacted the nuclear accumulation of x\u03b2-catenin-(665-782)-GFP in each of the 10 NTR-FRB strains. Consistent with prior data (Fagotto et al., 1998), plasma membrane trapping of the Kap\u03b21 ortholog, Kap95-FRB, did not impact nuclear localization of x\u03b2-catenin-(665-782)-GFP (Figure 3B). Indeed, trapping 9 of the 10 NTRs, including the IPO11 ortholog, Kap120, had no overt influence on x\u03b2-catenin-(665-782)-GFP nuclear localization (Figure 3B and C, and Figure 3\u2014figure supplement 1). In contrast, we observed a remarkable inhibition of nuclear accumulation, specifically when Kap104-FRB (ortholog of Kap\u03b22/Transportin-1[TNPO1]) was anchored away (Figure 3B and C). These data support a model in which Kap104 specifically mediates the nuclear import of x\u03b2-catenin-(665-782)-GFP in the yeast system.\n\n**Table 1.**\n List of human nuclear transport receptor (NTR) and Saccharomyces cerevisiae orthologs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Human NTR</th>\n      <th>S. cerevisiae orthologs</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Kap \u03b21</td>\n      <td>Kap95</td>\n    </tr>\n    <tr>\n      <td>Kap \u03b1</td>\n      <td>Kap60/Srp1</td>\n    </tr>\n    <tr>\n      <td>Transportin 1</td>\n      <td>Kap104</td>\n    </tr>\n    <tr>\n      <td>Importin-5/Kap \u03b23</td>\n      <td>Kap121/Pse1</td>\n    </tr>\n    <tr>\n      <td>Importin-4/RanBP5</td>\n      <td>Kap123</td>\n    </tr>\n    <tr>\n      <td>Importin-7/RanBP7</td>\n      <td>Kap119/Nmd5</td>\n    </tr>\n    <tr>\n      <td>Importin-8/RanBP8</td>\n      <td>Kap108/Sxm1</td>\n    </tr>\n    <tr>\n      <td>Importin-9</td>\n      <td>Kap114</td>\n    </tr>\n    <tr>\n      <td>Importin-11</td>\n      <td>Kap120</td>\n    </tr>\n    <tr>\n      <td>Transportin-SR/TNPO3</td>\n      <td>Kap111/Mtr10</td>\n    </tr>\n    <tr>\n      <td>Importin-13</td>\n      <td>Kap122/Pdr6</td>\n    </tr>\n    <tr>\n      <td>CRM1/Exportin-1</td>\n      <td>Xpo1</td>\n    </tr>\n    <tr>\n      <td>Exportin-t</td>\n      <td>Los1</td>\n    </tr>\n    <tr>\n      <td>Exportin-5</td>\n      <td>Kap142/Msn5</td>\n    </tr>\n    <tr>\n      <td>CAS</td>\n      <td>Cse1</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of the Anchor-Away assay mediated by the rapamycin-induced dimerization of nuclear transport receptor (NTR)-FKBP-rapamycin binding (FRBP and Pma1-FKBP12). Pma1 is a plasma membrane ATPase. (B) Deconvolved fluorescence images of cells with indicated FRB fusions expressing Xenopus \u03b2-catenin (665-782)-GFP treated with DMSO (vehicle) or rapamycin for 15 min. Heh2-mCherry was used as a nuclear envelope marker. White arrows indicate the nucleus. Scale bar is 5 \u00b5m. (C) Plot showing the ratio of mean nuclear to cytosolic fluorescence intensity of Xenopus \u03b2-catenin (665-782)-GFP in the 10 NTR-FRB strains treated with DMSO or rapamycin from 30 to 40 cells from three independent replicates. Red bar indicates the mean value with the SD. Experiments were performed three times. p-Values are from unpaired two-tailed t-test where ns is p>0.05 and ****p<0.0001. The data is uploaded as Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Representative deconvolved fluorescence image of x\u03b2-catenin (665-782)-GFP treated with DMSO (carrier) or rapamycin in the indicated nuclear transport receptor (NTR)-FKBP-rapamycin binding (FRB) strain. Heh2-mCherry was used as a nuclear membrane marker. Scale bar is 5 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Schematic diagram of FKBP-rapamycin binding (FRB) tagging to individual endogenous nuclear transport receptors (NTRs) by homologous recombination. (B) Screening of NTR-FRB strains by colony PCR. Primers are listed in Supplementary file 3. (C) Positive NTR-FRB strains from the colony PCR in (B) were further tested for cell growth as some NTRs are essential for survival. No FRB and DMSO were used a negative controls.\n\n### \u03b2-catenin contains a PY-NLS that is required for nuclear import\n\nHaving established that Kap104 mediates \u03b2-catenin nuclear transport in yeast, we compared the x\u03b2-catenin-(665-782) protein sequence to established TNPO1 NLS (e.g. PY-NLS; Lee et al., 2006; Soniat and Chook, 2015; Soniat et al., 2013). By close inspection, the x\u03b2-catenin amino acid sequence (665-703) does conform to the loose PY-NLS consensus with a hydrophobic methionine (M) in place of a tyrosine (Y; Figure 4A; Soniat and Chook, 2015); this NLS is conserved across vertebrate species (Figure 4A). We therefore mutated the PM motif in \u03b2-catenin by substituting the proline (P) and methionine (M) residues for tandem alanine (A) amino acids. We tested whether these changes impacted the ability of the x\u03b2-catenin-(665-703) to import a GFP fusion to three maltose binding proteins. MBP(x3)-GFP is constitutively excluded from the nucleus due to its large molecular weight (149 kDa) (Figure 4B; Popken et al., 2015). Fusion of the x\u03b2-catenin-(665-703) can confer nuclear localization of this large fusion protein. Furthermore, this localization is dependent on the PM motif as substitution of PM with AA abolishes nuclear localization (Figure 4B). These amino acids were also critical for human (h)\u03b2-catenin-(665-782)-GFP nuclear accumulation in human cell lines (HeLa) as the PM to AA substitution reduced the mean N:C ratios of this construct from 2.5 to 1.5 (Figure 4C). Thus, the PM sequence in the \u03b2-catenin PY-NLS is required for nuclear import in yeast and human cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig4-v2.jpg)\n\n**Figure 4.:** (A) Conservation of amino acid sequences that conform to the PY-NLS consensus (top, from Soniat and Chook, 2015) in the C-terminus of \u03b2-catenin. (B) Deconvolved fluorescence images of wildtype yeast cells expressing MBP(x3)-GFP tagged with the Xenopus \u03b2-catenin nuclear localization signal (NLS) (665-703) and also an NLS that contains the PM to AA mutation (top). Untagged MBP(x3)-GFP was used as a control. Plot of the ratio of mean nuclear to cytoplasmic fluorescence intensity from a single experiment (bottom). Scale bar is 5 \u00b5m. (C) Representative fluorescence image of HeLa cells expressing human \u03b2-catenin (665-782) or the PM to AA mutant version (top). LaminB1 was labeled to locate the nuclear envelope. GFP alone was used as a control. Plot of the ratio of mean nuclear to cytoplasmic fluorescence intensity from three experiments (bottom). Scale bar is 15 \u00b5m. p-Values are from unpaired two-tailed t-test where ns is p>0.05 and ****p<0.0001 for both (B) and (C). The data is uploaded as Figure 4\u2014source data 1.\n\n### Direct binding of \u03b2-catenin and TNPO1 is destabilized by Ran-GTP\n\nTo test that the \u03b2-catenin-NLS is directly recognized by TNPO1, we generated recombinant TNPO1 and Glutathione S-transferase (GST) fusions of human \u03b2-catenin (GST-h\u03b2-catenin) and human \u03b2-catenin containing the PM-AA mutations (GST-h\u03b2-catenin P687A, M688A). We immobilized these GST fusions (and GST alone) on GT Sepharose beads and tested binding to purified TNPO1. We observed specific binding of TNPO1 to the GST-h\u03b2-catenin (Figure 5A), which was disrupted by the PM to AA mutations in the NLS. Furthermore, as NTR-NLS interactions are disrupted by the binding of Ran-GTP to the NTR in the nucleus, we tested the Ran-GTP sensitivity of the TNPO1:\u03b2-catenin complex. We generated recombinant RanQ69L, which cannot hydrolyze GTP and confirmed that RanQ69L-GTP specifically interacted with TPNO1 and not to \u03b2-catenin (Figure 5\u2014figure supplement 1B). Next, we assessed the formation of the TNPO1:\u03b2-catenin complex in the presence or absence of RanQ69L-GTP. Adding RanQ69L-GTP specifically disrupted \u03b2-catenin binding to TPNO1, indicating that the TNPO1:\u03b2-catenin complex reflects the formation of a canonical NTR-NLS import complex (Figure 5B). When taken together, these data establish a model in which TNPO1 imports \u03b2-catenin through a direct interaction with its PY-NLS that is modulated by TPNO1-binding to Ran-GTP.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig5-v2.jpg)\n\n**Figure 5.:** (A) In vitro binding assay of purified recombinant TNPO1 and GST fusions of human \u03b2-catenin and human \u03b2-catenin containing the PM to AA mutations. GST alone was used as a negative control. (B) In vitro binding assay of purified recombinant TNPO1 to GST fusions of human \u03b2-catenin in the presence of GTP hydrolysis deficient Ran mutant loaded with GTP (RanQ69L). Proteins were separated by sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS-PAGE) and stained with Coomassie blue in (A) and (B). * indicates TNPO1 bound to GST-h\u03b2-catenin.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Generation of recombinant GST fusions of human \u03b2-catenin and TNPO1 and RanQ69L in vitro. (B) In vitro binding assay of purified recombinant RanQ69L to GST fusions of human TNPO1. GST fusions of human \u03b2-catenin and RanQ69L buffer were used as a control. Proteins were separated by SDS-PAGE and stained with Coomassie blue in (A) and (B).\n\n### TNPO1/2 and the \u03b2-catenin NLS are required for Wnt signaling in vivo\n\nTo explore the function of TNPO1-mediated import of \u03b2-catenin in vertebrates, we applied two different Wnt signaling assays: (1) a TCF/LEF reporter and (2) Xenopus secondary axis development. First, once \u03b2-catenin enters the nucleus, it binds to the TCF/LEF complex to activate transcription of Wnt responsive genes (Molenaar et al., 1996; van de Wetering et al., 1997; van de Wetering et al., 1991). A well-established reporter assay (commonly known as TOPFLASH) places the TCF/LEF DNA-binding element upstream of a reporter such as GFP or luciferase (Molenaar et al., 1996; van de Wetering et al., 1991). In Xenopus tropicalis, the Tg(pbin7Lef-dGFP) line has seven tandem TCF/LEF DNA binding sites upstream of GFP and is an effective reporter of Wnt signaling (Borday et al., 2018; Denayer et al., 2008). We crossed heterozygous transgenic animals with a wildtype animal such that half of the resultant progeny had the transgene. In vertebrates, the tnpo1 gene is duplicated (tnpo1 and tnpo2), and both paralogs have nearly identical sequence and function (Figure 6\u2014figure supplement 1; Dormann et al., 2010; Rebane et al., 2004; Twyffels et al., 2014). Therefore, we injected single guide RNAs (sgRNAs) targeting both tnpo1 and tnpo2 with Cas9 protein at the one cell stage and raised embryos to st10 before fixing them. Because GFP fluorescence is undetectable at these early stages, we used whole mount in situ hybridization (WMISH) to visualize GFP transcripts as an assay for Wnt reporter activation and used sibling embryos without the transgene as a WMISH negative control. When we depleted both tnpo1 and tnpo2 using F0 CRISPR, significantly more embryos had weak expression of the GFP transgene compared to UIC embryos (Figure 6A, see images of embryos stained for GFP transcripts as key to histogram). This result was specific as the second set of non-overlapping sgRNAs gave comparable results (Figure 6A, tnpo1/2 sgRNAs#2). Importantly, we detected deleterious gene modification at the appropriate targeted sites using Inference of CRISPR Edits (ICE) analysis (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig6-v2.jpg)\n\n**Figure 6.:** (A) Depletion of tnpo1 and tnpo2 using two different pairs of non-overlapping sgRNAs represses gfp expression in Xenopus tropicalis Tg(pbin7Lef-dGFP) embryos at stage 10. Key used to quantify embryos with whole mount in situ hybridization (WMISH) signal (blue \u2013 normal gfp signal nd red \u2013 reduced gfp signal). Uninjected control (UIC) embryos were used as a negative control. (B) siRNA mediated TNPO1 and/or TNPO2 knockdown reduces luciferase activity in mouse embryonic fibroblasts that harbor a stable integration of luciferase under the control of TCF/LEF promoters. Wnt signaling was activated by human \u03b2-catenin-GFP overexpression. Control siRNA and GFP were used as negative controls. Experiments were performed in triplicate. (C) Schematic diagram of three \u03b2-catenin constructs used in the double axis assay in Xenopus laevis. ** indicates P687A, M688A substitutions (top left). Dorsal views of X. laevis embryos with anterior to the top (bottom left). Dotted lines indicate the embryonic axis, and the white arrows indicate the head. Histogram of the percent of embryos with secondary axes from three independent replicates. p-Values are from Fisher\u2019s exact test (A) and (C) and unpaired two-tailed t-test (B) where ns is p>0.05, p<0.05 (*), 0.0021 (**), 0.0002 (***), and p<0.0001 (****).The data is uploaded as Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Amino acid sequences of transportin 1 and transportin 2 were compared across four different species (Saccharomyces cerevisiae, human, mouse, and Xenopus tropicalis). Each residue in the alignment is colored using Jalview software (Waterhouse et al., 2009).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Schematic diagram of tnpo1 and tnpo2 sgRNA target sites (top). Inference of CRISPR Edits (ICE) analysis of indel mutations at predicted target sites (bottom).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Western blot demonstrating the efficacy of siRNA mediated Tnpo1 and Tnpo2 depletion in mouse embryonic fibroblast Wnt reporter cell lines.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Western blot demonstrating the efficacy of siRNA mediated Tnpo1 and Tnpo2 depletion on \u03b2-catenin nuclear and cytoplasmic levels in two colorectal cancer cell lines, HCT-116 and DLD-1.\n\nWe next tested the function of mouse Tnpo1/2 in a stable transgenic mouse fibroblast cell line in which luciferase is expressed under the control of TCF/LEF DNA-binding elements. To activate Wnt signaling, we transfected a full-length human \u03b2-catenin-GFP that increased luciferase signal 7.7-fold over transfection of GFP alone (Figure 6B). Then we measured luciferase activity in transgenic fibroblasts transfected with h\u03b2-catenin-GFP in which we depleted transcripts of TNPO1 or TNPO2 (alone or simultaneously) using specific siRNAs. Compared to control siRNA, depletion of either TNPO1 or TNPO2 led to a 34% reduction in luciferase signal (Figure 6B). By targeting both transcripts, the luciferase signals were reduced by 64% (Figure 6B). By western blot, we observed the production of h\u03b2-catenin-GFP and the specific reduction of TNPO1/2 (Figure 6\u2014figure supplement 3). We next examined the dependence of \u03b2-catenin nuclear localization on TNPO1/2 in colorectal cancer cell lines, HCT-116 and DLD-1, which harbor an activating Ser45 \u03b2-catenin mutation and a deactivating frameshift mutation in APC, respectively. Similar to the TCF/LEF mouse fibroblast cell line, TNPO1/2 depletion by siRNA reduced \u03b2-catenin levels specifically in nuclear fractions compared to control siRNA condition (Figure 6\u2014figure supplement 4). Taken together, TNPO1/2 is required for \u03b2-catenin nuclear localization across a wide range of species: Xenopus, mouse, and human cancer cell lines.\n\nHaving established the importance of TNPO1/2 for \u03b2-catenin nuclear localization in vertebrates, we next evaluated the specific impact of inhibiting \u03b2-catenin nuclear import by testing the function of the PY-AA mutant in the Xenopus secondary axis assay. We compared the number of secondary axes induced by the wildtype h\u03b2-catenin mRNA to a PM to AA mutated version (P687A, M688A). We noted a significant reduction in the number of secondary axes induced by the PM-AA mutant \u03b2-catenin (Figure 6C). If we add the cNLS to the N-terminus of the PM-AA mutant then induction of secondary axes is rescued, suggesting that the PM-AA mutant fails to enter the nucleus to activate Wnt signaling (Figure 6C).\n\n### The M9M peptide inhibits Wnt signaling\n\nHaving established that TNPO1 binds directly to a PY-NLS and imports \u03b2-catenin into the nucleus, we wondered whether direct perturbation of the \u03b2-catenin-TNPO1 interaction could, in principle, be a viable therapeutic strategy. We therefore took advantage of the prior design of a potent TNPO1 peptide inhibitor, M9M, that binds with high affinity to the TNPO1 NLS binding site (Cansizoglu et al., 2007). We tested whether this peptide could inhibit Wnt signaling in the mouse fibroblast TCF/LEF luciferase reporter cell line (Cansizoglu et al., 2007). Excitingly, transfection of the M9M peptide reduced luciferase activity in a dose-dependent manner, regardless of whether activation was induced with a Wnt ligand (Wnt3a) or by co-transfection with human \u03b2-catenin (Figure 7A, Figure 7\u2014figure supplement 1A-B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig7-v2.jpg)\n\n**Figure 7.:** Wnt signaling was activated by Wnt3a (A, left), human \u03b2-catenin-GFP overexpression (A, right and B), or cNLS-human \u03b2-catenin-GFP (B). No Wnt3a or GFP overexpression were used as negative controls. Experiments were performed in triplicate (A) or duplicate in two independent experiments (B). p-Values are from unpaired two-tailed t-test where ns is p>0.05, p<0.05 (*), 0.0021 (**), 0.0002 (***), and p<0.0001 (****). The data is uploaded as Figure 7\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70495/elife-70495-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Western blot data for M9M peptide treatment in mouse embryonic fibroblast Wnt reporter cell lines. Wnt signaling is activated by (A) Wnt3a or (B) human \u03b2-catenin. (C) PY-NLS residues (blue) in M9M peptide were mutated to alanine (red) to create M9M-A peptide.\n\nThe M9M peptide is a chimera of the NLSs of heterogeneous nuclear ribonucleoprotein (hnRNP) M and A1 (Cansizoglu et al., 2007). To test the specificity, we leveraged the understanding of the key amino acids that confer binding to TNPO1 in each individual NLS to design a control M9M-A peptide. M9M-A contains seven amino acid substitutions that would reduce binding to TNPO1 (Figure 7\u2014figure supplement 1C). The M9M-A peptide only reduced luciferase activity by 24% (compared to 45% by M9M at the similar dosage; Figure 7B).\n\nAs the M9M peptide inhibits the nuclear import of a multitude of TNPO1/2 cargos (Cansizoglu et al., 2007), we sought to ensure that the M9M-mediated inhibition of Wnt signaling was specifically due to the reduced nuclear import of \u03b2-catenin. We therefore transfected a human \u03b2-catenin with a cNLS, which would be imported by Kap-\u03b1/Kap-\u03b21 and thus be insensitive to M9M inhibition. The cNLS-human \u03b2-catenin could drive the luciferase reporter to levels comparable to human \u03b2-catenin, but the M9M peptide only reduced this signal by ~15% (Figure 7B). Thus, these data support the conclusion that the M9M peptide\u2019s impact on Wnt signaling is due, at least in part, to the inhibition of \u03b2-catenin nuclear transport via TNPO1/2. Together, Wnt signaling can be inhibited by blocking TNPO1-mediated import of \u03b2-catenin either by mutating the \u03b2-catenin NLS or competitive inhibition with the M9M peptide.\n\n## Discussion\n\nOur lack of understanding of the mechanism of \u03b2-catenin nuclear transport has been a major stumbling block for opening up new avenues of Wnt-targeted anti-cancer therapies. Numerous transport models have been proposed including piggybacking on TCF/LEF (Behrens et al., 1996; Huber et al., 1996; Molenaar et al., 1996) or APC (Henderson, 2000; Neufeld et al., 2000; Rosin-Arbesfeld et al., 2000), although neither factor was ultimately found to be required for import (Eleftheriou et al., 2001; Orsulic and Peifer, 1996; Prieve and Waterman, 1999). There is also a model in which \u03b2-catenin directly binds to the FG-nups and translocates through the NPC in an NTR-like (yet Ran independent) mechanism (Fagotto, 2013; Xu and Massagu\u00e9, 2004). Indeed, while some of our data suggests that there are additional nuclear localization elements in the ARM repeats or N-terminus (Figure 2\u2014figure supplement 1) that might also confer an affinity for the NPC (Figure 2D, white arrows), they are dependent on a functional Ran cycle. Thus, we disfavor the idea that there is a Ran-independent pathway for \u03b2-catenin nuclear import while acknowledging that there is still more to be learned.\n\nBy far the major determinant of \u03b2-catenin\u2019s nuclear accumulation is the PY-NLS in its C-terminus. This NLS functions in yeast, Xenopus, and human cells, supporting that it can be recognized by TPNO1 orthologs across eukaryotes. It turns out, however, that although the \u03b2-catenin NLS can be imported in yeast, Kap104 (the yeast TPNO1 ortholog) does not recognize the same spectrum of NLSs as its human counterpart (S\u00fcel et al., 2008). Indeed, Kap104 only recognizes PY-NLSs with an N-terminal basic motif, whereas human TPNO1 can bind to PY-NLSs with both a basic or a hydrophobic N-terminal motif (Soniat and Chook, 2016; S\u00fcel et al., 2008). Thus, we were fortunate that \u03b2-catenin\u2019s PY-NLS could be recognized by Kap104, enabling our yeast screen and the ultimate identification of the dominant NLS in \u03b2-catenin.\n\nThis work must also be reconciled with a recent study that implicated IPO11 as an important factor for \u03b2-catenin nuclear transport in a subset of cancer cells (Mis et al., 2020). The latter work also identified the C-terminus as essential for \u03b2-catenin nuclear transport, and our study adds further resolution to a specific PY-NLS. However, we did not determine any requirement for IPO11 (Kap120) in \u03b2-catenin import, at least in the yeast system. Although it remains possible that IPO11 might ultimately have a role in \u03b2-catenin nuclear transport in some vertebrate cells, the current evidence suggests that it plays a critical role only in a subset of colon cancer cells (Mis et al., 2020). In contrast, our work establishes that TNPO1 imports \u03b2-catenin in yeast, amphibian, mouse, and human cells, providing confidence that there is a TNPO1-specific mechanism at play. How IPO11 contributes to \u03b2-catenin nuclear import in the context of specific cancer cell lines remains to be fully established. It also remains possible that there are additional NLSs in \u03b2-catenin as the N-terminus and ARM repeats retain some Ran-dependent nuclear localization elements (Figure 2\u2014figure supplement 1). Future studies will need to define the NLSs in the N-terminus and ARM repeats and the associated NTRs.\n\nFor the purposes of rational drug design, we fortuitously identified the \u03b2-catenin NTR as TNPO1, as it is one of the few NTRs where the NLS-NTR interaction is resolved to the atomic level (Cansizoglu et al., 2007; Soniat et al., 2013). This knowledge base has established a consensus amino acid sequence (PY-NLS) that helped us identify the \u03b2-catenin NLS required for TNPO1 binding. Furthermore, it has led to the generation of the high affinity M9M peptide (Cansizoglu et al., 2007) that, as shown here, can be used to inhibit Wnt signaling in TCF/LEF luciferase mouse fibroblast cell lines, demonstrating proof of principle that inhibiting TNPO1 could be a viable therapeutic strategy. Nonetheless, such a strategy might benefit from future crystallographic studies of the TNPO1-\u03b2-catenin complex, as the overall binding of different NLSs can vary depending on the contribution of individual amino acids. It may be possible, for example, to identify small molecules that specifically block the \u03b2-catenin-TNPO1 interaction without more broadly impacting other TNPO1 cargos. Our findings have formed the basis for ongoing work seeking to identify small molecules that could specifically target and ameliorate the multitude of Wnt-related diseases including cancers.\n\n## Materials and methods\n\n### Contact for reagent and resource sharing\n\nFurther information and request for reagents may be directed to and will be fulfilled by the lead contact, Mustafa K. Khokha (Mustafa.khokha@yale.edu).\n\n### Xenopus\n\nX. tropicalis and Xenopus laevis were maintained and cared for in accordance with the Yale University Institutional Animal Care and Use Committee protocols. In vitro fertilization was performed as per standard protocols (del Viso and Khokha, 2012; Sive et al., 2007).\n\n### S. cerevisiae strains\n\nAll yeast strains used in this study are listed in Supplementary file 1. Yeast strains were grown at 30\u00b0C, unless indicated otherwise in yeast extract peptone dextrose (YPD) medium (1% bacto yeast extract, 2% bactopeptone, 2% glucose, and 0.05% adenine sulfate). Transformation of yeast was carried out using standard protocols (Amberg and Strathern, 2005).\n\n### Mammalian cells\n\nHEK293T and HeLa cells were maintained and cultured with Dulbecco's Modified Eagle Medium (DMEM) medium + 10% fetal bovine serum + 1% penicillin and streptomycin in a T-75 flask. The engineered 3T3 mouse fibroblast cell line that stably expresses the TCF/LEF luciferase transgene was maintained with DMEM medium + Cell Growth Medium Concentrate (Enzo life sciences). Further experimental procedures for the 3T3 cell line can be found under TCF/LEF luciferase assay method section. Upon 70\u201380% cell confluency, cells were transfected with plasmids using jetPRIME (Polyplus-transfection) following the manufacturer\u2019s instructions. Cells were fixed with 4% paraformaldehyde/PBS and further processed for immunofluorescence 24\u201348 hr post-transfection. Antibodies used in this study are listed in Key resources table. Cells were tested for mycoplasma using MycoAlert Detection Kit (Lonza).\n\n### Plasmid, mRNA, siRNA, CRISPR, and M9M peptide\n\nKey resources and all plasmids used in this study are listed in Key resources table and Supplementary file 2, respectively. Xenopus \u03b2-catenin-GFP (Addgene #16839), Xenopus cNLS-\u03b2-catenin-GFP (Addgene #16838), GST-human \u03b2-catenin (Addgene #24193), and NLS-mCherry (Addgene #49313) plasmids were obtained from Addgene. GST-transportin 1 (TNPO1) and Gal-MBP(x3)-GFP plasmids were generous gifts from Dr. Yuh-min Chook at UTSW and Dr. Liesbeth M. Veenhoff at University of Groningen, respectively. Gibson Assembly (New England Biolabs) was used to generate GFP-tagged Xenopus \u03b2-catenin truncation constructs following the manufacturer\u2019s instructions. Both the human and Xenopus \u03b2-catenin P687A, M688A variants were generated using Q5 site- directed mutagenesis (New England Biolabs) following the manufacturer\u2019s instructions. Subsequently, the \u03b2-catenin constructs were sub-cloned into the pRS406 vector containing an ADH1 promotor for yeast studies or a pCS2+ vector for mammalian/Xenopus studies. mRNAs were generated using the SP6 mMessage machine kit (Thermo Fisher Scientific) and RNA clean & concentrator kit (Zymo Research) following the manufacturer\u2019s instructions. We obtained siRNAs directed against mouse TNPO1 (s108857), mouse TNPO2 (s102754), and a control siRNA (4390843) from Thermo Fisher Scientific. To generate CRISPR sgRNAs, we used the EnGen sgRNA synthesis kit (NEB) following the manufacturer\u2019s instructions with the following targeting sequences tnpo1 sgRNA#1 (5\u2019-GGCATGGGGGCCACCTCTTG-3\u2019), tnpo1 sgRNA#2 (5\u2019- GGGTTACGTTTGTCCTCAAG-3\u2019), tnpo2 sgRNA #1 (5\u2019- GGGCGTTTAGCCGCGTTCTA-3\u2019), and tnpo2 sgRNA #2 (5\u2019- GGCGTCATGGATGAGTCCGA-3\u2019) (designed using CRISPRscan Moreno-Mateos et al., 2015). CRISPR experiments in wildtype or transgenic X. tropicalis were performed as previously described (Bhattacharya et al., 2015). CRISPR gene editing efficiency was assessed using Synthego ICE (ice.synthego.com) as previously described (Sempou et al., 2018). The M9M peptide (GGSYNDFGNYNNQSSNFGPMKGGNFGGRFEPYANPTKR) and the M9M-A peptide (GGSYNDFGNYNNQSSNAAAAKGGNFGGAFEAAANPTKR) were synthesized by LifeTein.\n\n### Yeast and mammalian \u03b2-catenin sub-cellular localization by microscopy\n\nExpression plasmids containing full length and fragments of the \u03b2-catenin-GFP coding sequence under the control of the ADH1 promoter were transformed into the W303, Heh2-mCherry::NAT (BWCPL1314) strain. A yeast colony that incorporated the plasmid sequence was cultured and mounted onto a coverslip for live imaging on a DeltaVision wide-field microscope (GE Healthcare) with a CoolSnapHQ2 CCD camera. Yeast fluorescent images were deconvolved using the iterative algorithm sofWoRx. 6.5.1 (Applied Precision, GE Healthcare). \u03b2-catenin-GFP transfected HeLa or HEK293T cells were mounted on Pro-Long Gold coated coverslip for imaging on a Zeiss Axio Observer microscope. All fluorescent images were analyzed with Fiji software. For quantification, the oval selection tool was used to draw a circle in both the nuclear and cytosolic regions on the same image plane to measure florescence intensity.\n\n### Secondary axis assays and \u03b2-catenin sub-cellular localization\n\nX. laevis embryos were injected with a mixture of either 200 pg of Xenopus or human \u03b2-catenin-GFP mRNA and cNLS-mCherry mRNA in one of four cells (targeting the ventral side). Embryos were assessed for a secondary axis via stereomicroscopy at stage 17\u201319. For the \u03b2-catenin localization experiments by fluorescence, stage 10 embryos were fixed in 4% paraformaldehyde/PBS at 4\u00b0C overnight on a nutator. Embryos were washed in 1\u00d7 PBS + 0.1% TritonX-100, and the dorsal blastopore lips were sectioned with a razor blade and mounted on Pro-Long Gold (Invitrogen) coated coverslip before imaging on a Zeiss 710 confocal microscope.\n\n### The Anchor-Away assay\n\nTo employ the Anchor-Away approach, we used a yeast strain that harbors a FKBP12 fusion of the endogenous plasma membrane H+-ATPase (PMA1 gene), a Heh2-mCherry fusion to mark the nuclear envelope and a mutated TOR1 gene (HHY110: HEH2-mCherry::KAN, PMA1-2xFKBP12, fpr1::NAT tor1-1). In this strain, individual, endogenous NTRs are tagged with the FRB domain at the C-terminus by homologous recombination of a PCR product that contains an FRB sequence, a 3\u00d7 HA epitope, and a selective marker, HIS3, flanked by a 60 bp homology arm of endogenous NTR coding sequence (Figure 3\u2014figure supplement 2 and Supplementary file 3 for FRB cloning primers; Haruki et al., 2008; Longtine et al., 1998). Integration of an FRB sequence is confirmed by colony PCR using a gene-specific forward and a plasmid specific reverse primer and rapamycin-induced cell death for essential NTRs (Figure 3\u2014figure supplement 2 and Supplementary file 3 for colony PCR primers). Subsequently, an expression plasmid containing the coding sequence for x\u03b2-catenin (665-782)-GFP under the control of the ADH1 promoter was transformed into the Anchor-Away line. These lines were treated with 1 mg/ml of rapamycin (5\u201315 min of incubation) or vehicle alone (DMSO) before imaging.\n\n### TCF/LEF luciferase assay\n\nA 3T3 mouse fibroblast cell line that has a stable integration of the luciferase reporter gene under the Wnt responsive TCF/LEF promoters was used for this assay (Enzo life sciences). Cells were maintained with DMEM medium + Cell Growth Medium Concentrate (Enzo life sciences). Prior to the transfection, cells were seeded on a 24 well plate in media containing DMEM + Cell Assay Medium Concentrate (Enzo life sciences). Subsequently, cells were transfected with siRNA (25 pmol) first, then GFP or human \u03b2-catenin-GFP DNA (0.5 \u00b5g) for 48 hr and 24 hr, respectively, using JetPRIME per the manufacturer\u2019s instructions. Luciferase was quantified using the Luciferase Assay System (Promega) and the Promega Glomax luminometer according to the manufacturer\u2019s instructions. For the M9M peptide experiment, cells were transfected with an M9M or M9M-A peptide dose ranging from 0.635 \u00b5g to 0.5 \u00b5g using ProteoJuice Protein transfection following the manufacturer\u2019s instructions for 20 hr, and Wnt signaling was activated either by Wnt3a ligand (50 ng/ml) or human \u03b2-catenin-GFP DNA (0.5 \u00b5g) for 16\u201324 hr.\n\n### In vivo TCF/LEF GFP in situ hybridization\n\nHeterozygous X. tropicalis Tg(pbin7Lef-dGFP) were crossed with wildtype X. tropicalis. Fertilized embryos were injected with sgRNAs targeting tnpo1 and tnpo2 and Cas9 protein at one-cell stage and collected at stage 10 for in situ hybridization as previously described (Khokha et al., 2002). Digoxigenin-labeled anti-sense GFP probe was used to detect GFP transcript expression. Progeny that did not carry the transgene was used as a negative control.\n\n### Western blotting\n\n3T3 mouse fibroblast cells were lysed in radioimmunoprecipitation assay (RIPA) buffer to harvest protein samples. Nuclear and cytoplasmic proteins were extracted from colorectal cancer cell lines (HCT-116 and DLD-1) following the manufacturer\u2019s instructions (NE-PER Thermo Fisher). Protein levels are normalized, and immunoblots were carried out in bolt 4\u201312% Bis-Tris plus gels following standard protocols. Antibodies used in this study are listed in Key resources table.\n\n### In vitro binding experiment\n\npGEX-6P1, pGEX-human \u03b2-catenin, pGEX-human transportin 1, or pET28a-His6-RanQ69L were transformed into the BL21 Escherichia coli strain and cultured in Lysogeny broth (LB) with antibiotics to mid-log phase (OD600 0.6\u20130.8). To induce expression of the recombinant proteins (GST alone, GST-h\u03b2-catenin, GST-hTNPO1, and His6-hRanQ69L), isopropyl \u03b2-d-1-thiogalacto pyranoside was added at a final concentration of 1 mM for 3 hr. All cultures were harvested in 50 ml batches and stored at \u201380\u00b0C until further use. Glutathione Sepharose (GT) beads (Millipore Sigma) were washed and equilibrated in lysis buffer 1 (50 mM Tris pH 7.4, 150 mM NaCl, 2 mM MgCl2, 10% glycerol, 0.05% NP-40, 1 mM DTT, and protease inhibitor cocktail mix [Millipore Sigma]). Bacterial pellets containing GST tagged proteins were resuspended with the ice cold lysis buffer 1, sonicated, and spun down at 4\u00b0C at 30,000\u00d7 g for 20 min. The supernatant was collected into a new 50 ml conical tube and incubated with 200 \u00b5l of GT bead slurry for 1 hr at 4\u00b0C. Subsequently, the GST-GT bead slurry was collected and washed with lysis buffer 1 (excluding the protease cocktail mix). The GST tag was removed from hTNPO1 using proTEV Plus Protease (Promega), and the protease enzyme was further removed from hTNPO1 protein by Ni-NTA Magnetic Beads (NEB) as per the manufacturer\u2019s instructions. To pulldown His6-RanQ69L, bacterial pellets were resuspended with ice cold lysis buffer 2 (50mM Tris pH 7.4, 500 mM NaCl, 2 mM MgCl2, 20 mM Imidazole, 10% glycerol, 0.05% NP-40, and protease inhibitor cocktail mix), sonicated, and spun down at 4\u00b0C at 30,000\u00d7 g for 20 min. The supernatant was collected into a new 50 ml conical tube and incubated with 200 \u00b5l of equilibrated Ni NTA bead slurry for 1 hr at 4\u00b0C. The His-Ni bead slurry was collected and washed with lysis buffer 2. His6-RanQ69L was eluted from Ni beads by adding the elution buffer (50 mM pH Tris 7.4, 500 mM NaCl, 2 mM MgCl2, 500 mM Imidazole, 10% glycerol, 0.05% NP-40, and protease inhibitor cocktail mix) and rotating at 4\u00b0C for 1 hr. The supernatant containing His-RanQ69L was collected by centrifugation at 500\u00d7 g for 3 min and dialyzed in the buffer (50 mM pH Tris 7.4, 150 mM NaCl, 2 mM MgCl2, 10% Glycerol, and 1 mM PMSF) at 4\u00b0C overnight. Subsequently, RanQ69L was incubated in GTP buffer (400 uM GTP in 5 mM EDTA) 4\u00b0C for 1 hr. hNTPO1 protein was incubated with GT beads preloaded with GST fusion protein (GST alone or GST-h\u03b2-catenin) for 1 hr at 4\u00b0C. Then, RanQ69L protein (dialysis buffer + GTP or RanQ69L) was added to the mix for 1 hr at 4\u00b0C. The beads were washed with the lysis buffer and eluted with SDS-PAGE sample buffer. Protein samples were separated by SDS-PAGE and detected with Coomassie (BioRad).\n\n### Quantification and statistical analysis\n\nStatistical significance was defined as p<0.05 (*), 0.002 (**), 0.0002 (***), and 0.0001 (****). The double axis assay and in situ data were analyzed by Fisher\u2019s exact tests. Otherwise, unpaired two-tailed Student\u2019s t-tests or a one-way ANOVA test were used to determine significance of mean ratio of nuclear to cytosolic fluorescence intensity in GraphPad Prism 8.4.3.\n",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "21ef7cae-24d0-4776-8d0b-be1ffa00df27",
+      "submission_id": "954a06fc-ff8e-45a1-90de-b2541baf1a91",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- William I Weis, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70495.sa0](https://doi.org/10.7554/eLife.70495.sa0)\n\nIn Wnt/\u03b2-catenin signaling, Wnt growth factor binding to cell surface receptors results in the stabilization and nuclear translocation of the transcriptional coactivator \u03b2-catenin, but how \u03b2-catenin is translocated to the nucleus has been a longstanding problem in the field. The authors show that the yeast Kap104/mammalian TNPO1 mediates nuclear translocation of \u03b2-catenin using a conserved TNPO1 nuclear localization sequence in the C-terminal region of \u03b2-catenin, and mutation of this sequence or knockdown of TNPO1 diminishes nuclear localization and Wnt sigaling. The data demonstrate that \u03b2-catenin nuclear translocation is Ran dependent and that TNPO1 binding is a significant, although not exclusive, contributor to \u03b2-catenin translocation, and could represent a new therapeutic target.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- William I Weis, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70495.sa1](https://doi.org/10.7554/eLife.70495.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Kap-\u03b22/Transportin mediates \u03b2-catenin nuclear transport in Wnt signaling\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Yuh Min Chook (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers agree that the findings here are significant and contribute to our understanding of \u03b2-catenin signaling. However, there were several problems that need to be addressed, including the constructs used for assessing nuclear translocation of \u03b2-catenin fragments, the pulldown assay, and a general concern about TNPO1 as a therapeutic target.\n\n1. The fluorescence data show significant nuclear localization of \u03b2-catenin even in the absence of TNPO1 activity. Thus, there may be both Ran-dependent and -independent mechanisms for its nuclear localization, and this should be made clear, especially since there are prior findings along these lines. Given this, it is premature to claim that TNPO1 would be a target for inhibiting \u03b2-catenin signaling in cancer if it is only 50% effective. Double knockdown of TNPO1/2 only decreased WNT reporter activity by 60%. \u0392-catenin P687A M688A mutant still retained significant activity in the Xenopus double axis assay (Figure 5C). Further, a significant fraction of \u03b2-catenin \u0394 665-745-GFP was in the nucleus (Figure S2C). If TNPO1/2 are only partially responsible for \u03b2-catenin nuclear translocation, targeting the TNPO1/2-\u03b2-catenin interaction might not be a good therapeutic strategy for cancer. This can be provided as a speculative discussion point, but not a conclusion of the paper.\n\n2. Related to (1), inhibition of TNPO1/2-dependent nuclear import pathway was not confirmed in a relevant (e.g. colorectal) cancer model system, in which \u03b2-catenin levels are inappropriately enhanced and inhibition of \u03b2-catenin nuclear entry would needed to support the idea that the current findings hold relevance for the development of future cancer therapies. The importance of TNPO1/2 for nuclear translocation of \u03b2-catenin should be tested in more mammalian cell lines, especially since a IPO11-\u03b2-catenin connection has already been proposed. TNPO1/2 knockdown and/or \u03b2-catenin P687A M688A viral transduction in various cell lines, including cell lines with \u03b2-catenin or APC mutations, and nuclear \u03b2-catenin levels quantified. Does the MPM9 peptide and/or TNPO1/2 depletion inhibit \u03b2-catenin mediated transcription in cancer cell lines carrying either \u03b2-catenin or APC mutations?\n\n3. The difference between \u03b2-catenin-GFP and \u03b2-catenin \u03b4 665-745 is quite clear in Xenopus embryos (Figure S2C). It would be more convincing if authors can extend this finding to common mammalian cell lines such as HEK293, Hela or colon cancer cell lines such as DLD1. This can be done by lentiviral transduction and should be a very easy experiment for them.\n\n4. Since GFP is small and can enter the nucleus passively, it might not be a good fusion partner for mapping nuclear localization activity of \u03b2-catenin truncation fragments (Figure 2B). Based on Figure 2B, it appears that many fragments of \u03b2-catenin have some level of NLS activity. It would be more convincing if authors can fuse different \u03b2-catenin fragments to MBP(3x)GFP, which is excluded from the nucleus (Figure 4C). A control with an established TNPO1 cargo like hnRNP A1 or a strong YP-NLS would be helpful as well. It is also not clear whether the authors used MBP(3x)GFP to test the activity of the PY like motif in HeLa cells (Figure 4D); if not they should do so.\n\n5. The pull-down binding assay of GST-\u03b2-catenin + TNPO1 in Figure 4B could benefit from some straightforward improvement. Lane 4 shows TNPO1 binding, but at very sub-stoichiometric amounts. This may be due to having partially active bacterially expressed GST- TNPO1, which is not easy to produce. While there appears to be a decrease in binding to the PM/AA mutant, the experiment would be more decisive if RanGTP is added to the pulldown in lane 4 to demonstrate specific and Ran-sensitive TNPO1-\u03b2-catenin interactions.\n\n6. It is possible that TNPO1/2 are required for nuclear translocation of cofactors of \u03b2-catenin; the C-terminus of \u03b2-catenin is involved in transcription activation, and it is thought to bind to many nuclear factors. Can the authors rule this out?\n\nOther changes for the introduction/discussion:\n\na. The authors are correct that NTRs are mostly functionally conserved between the budding yeast and mammalian systems. However, PY-NLS/cargo binding functions of Kap104 are only partially conserved when compared to those of TNPO1. Since the key finding here is on Kap104 and TNPO1, the authors should present this information more carefully and thoroughly in the introduction. Please refer to studies of Kap104 binding to the PY-NLS and conservation of PY-NLS recognition across eukaryotic TNPO1 in Suel et al., PLoS Biology 2008.\n\nTNPO1 binds to PY-NLSs that carry either basic (e.g. hnRNP M) or hydrophobic (e.g. hnRNP A1 and FUS) N-terminal motifs/epitopes. Please note that Kap104 binds only PY-NLSs that carry the basic epitope (e.g. Nab2 and as the authors show here, \u03b2-catenin) but not the ones that have hydrophobic N-terminal epitopes (hnRNP A1, FUS, etc. hence the use of budding yeast to study toxicity of cytoplasmic FUS). This is also why M9M (has an N-terminal hydrophobic epitope) works in mammalian cells but not in yeast.\n\nb. It is suggested that the authors simply use the term PY-NLS, which is defined very broadly (see the Soniat and Chook 2015 review and other reviews on nuclear transport and NLSs), for the NLS of \u03b2-catenin. Sequences of PY-NLSs are incredibly diverse and defined only by very loose sequence motifs, and this class of signals is simply named after the most easily recognized and most conserved PY sequence element. The Suel et al., paper shows clearly how other hydrophobic residues function well in the place of the tyrosine in the PY motif of this signal. For example, the yeast mRNA export factor Nab2 carries a PY-NLS that has a PL motif. Soniat et al., (Structure 2016) also showed how a PY-NLS can sometimes not even have a PY motif, and the 2008 Suel et al., paper explained why this is the case.\n\nc. The PY dipeptide motif is simply the most easily recognized and most conserved PY sequence element. It is NOT the most energetically important element of the PY-NLS; it is just one of several binding elements usually present in the signal so the PM/PA mutation should not be expected to completely inactivate the NLS let alone nuclear localization. The PY is in fact weak (in the extreme, missing) and does not contribute much to TNPO1 or Kap104 binding in some PY-NLSs. An example is the M9 sequence of the PY-NLS of hnRNP A1, which has a really weak PY motif (Lee et al., Cell 2006).\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Kap-\u03b22/Transportin mediates \u03b2-catenin nuclear transport in Wnt signaling\" for further consideration by eLife. Your revised article has been evaluated by Kevin Struhl (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\n1. Given the emphasis on the potential therapeutic importance, the concern remains that the requirement of this NLS for \u03b2-catenin localization in mammalian cells is not solidly established. The TNPO knockdown experiment has many caveats (off target, indirect effect through other proteins). Therefore, it was felt that an experiment to test whether a \u03b2-catenin mutant lacking this NLS has decreased nuclear localization in mammalian cells should be performed. Note that even if the result is negative, you can discuss the caveats.\n\n2. The knockdown experiments in the HCT116 and DLD1 cells show a weak effect (Figure 6-supplement 4) \u2013 is it possible to show longer exposures?\n",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "62ffc049-9160-495a-b8f7-e58498de7213",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C1",
+      "claim": "Wnt signaling is essential for the formation of the primary embryonic axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt signaling is essential for many aspects of embryonic development including the formation of the primary embryonic axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about Wnt signaling's role in development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "c76df743-5396-4e18-8c71-4b6ee1400d55",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C2",
+      "claim": "Excessive Wnt signaling drives multiple diseases including cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, excessive Wnt signaling drives multiple diseases including cancer, highlighting its importance for disease pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "e4aa0c79-7517-4e25-9c78-e0513c2711fc",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C3",
+      "claim": "\u03b2-catenin is a key effector in the Wnt signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-catenin is a key effector in this pathway that translocates into the nucleus and activates Wnt responsive genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about \u03b2-catenin's role.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "1aaa0952-651f-4131-a3af-52da3286c089",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C4",
+      "claim": "\u03b2-catenin translocates into the nucleus and activates Wnt responsive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-catenin is a key effector in this pathway that translocates into the nucleus and activates Wnt responsive genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about \u03b2-catenin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "7e4f6464-1677-4531-b1a1-10a228814b18",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C5",
+      "claim": "\u03b2-catenin accumulates in the nucleus in a Ran-dependent manner in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to prior work, we demonstrate that \u03b2-catenin accumulates in the nucleus in a Ran-dependent manner, suggesting the use of a nuclear transport receptor (NTR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "c4481908-796c-4c24-ac85-ec8dd3334703",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C6",
+      "claim": "Kap104, the ortholog of Kap-\u03b22/Transportin-1 (TNPO1), is required for \u03b2-catenin nuclear import.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a systematic and conditional inhibition of NTRs revealed that only Kap104, the ortholog of Kap-\u03b22/Transportin-1 (TNPO1), was required for \u03b2-catenin nuclear import.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "a6fd3cc9-a64b-44df-95e4-ed09f6f91e0a",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C7",
+      "claim": "TNPO1 directly binds to \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate direct binding between TNPO1 and \u03b2-catenin that is mediated by a conserved PY-NLS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by in vitro binding data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "e710d32a-8adc-4dbf-9cef-dfb3272f973c",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C8",
+      "claim": "The binding between TNPO1 and \u03b2-catenin is mediated by a conserved PY-NLS.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate direct binding between TNPO1 and \u03b2-catenin that is mediated by a conserved PY-NLS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "a5154b1e-3b4f-43c0-8cc3-dc17f2e4fcef",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C9",
+      "claim": "A small chimeric peptide designed to target TNPO1 can reduce Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we demonstrate that a small chimeric peptide designed to target TNPO1 can reduce Wnt signaling as a first step toward therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "a6169fbc-9110-43bd-bc61-37648b4ef0df",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C10",
+      "claim": "Increased Wnt signaling can lead to a secondary axis (twinning of the embryo).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Wnt signaling is critical for establishing the dorsal embryonic axis; increased Wnt signaling can lead to a secondary axis (twinning of the embryo), while depletion of a key effector of the Wnt signaling pathway, \u03b2-catenin, can lead to a radially ventralized embryo (Heasman et al., 1994; Heasman et al., 2000; Khokha et al., 2005; McMahon and Moon, 1989; Moon et al., 1997; Nishisho et al., 1991; Smith and Harland, 1991; Sokol et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "405de4c2-3597-4a1b-ad6f-026135751990",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C11",
+      "claim": "Depletion of \u03b2-catenin can lead to a radially ventralized embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Wnt signaling is critical for establishing the dorsal embryonic axis; increased Wnt signaling can lead to a secondary axis (twinning of the embryo), while depletion of a key effector of the Wnt signaling pathway, \u03b2-catenin, can lead to a radially ventralized embryo (Heasman et al., 1994; Heasman et al., 2000; Khokha et al., 2005; McMahon and Moon, 1989; Moon et al., 1997; Nishisho et al., 1991; Smith and Harland, 1991; Sokol et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "60e1d877-1cb1-48d5-8759-8b0d62fdc266",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C12",
+      "claim": "90% of colorectal cancers are caused by genetic alterations in Wnt pathway factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, 90% of colorectal cancers are caused by genetic alterations in Wnt pathway factors (Cancer Genome Atlas, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "b917e311-8b60-41f4-9697-dd29f9c282c9",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C13",
+      "claim": "\u03b2-catenin relays the message from a Wnt ligand at the plasma membrane to transcription factors in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In Wnt signaling, \u03b2-catenin (CTNNB1) relays the message from a Wnt ligand at the plasma membrane to transcription factors in the nucleus (MacDonald et al., 2009; Niehrs, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "5bf5e2a4-7687-4052-aeb6-23f2265a19f5",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C14",
+      "claim": "\u03b2-catenin levels are kept under control through a constitutively active degradation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, its levels are kept under control through a constitutively active degradation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about \u03b2-catenin regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "fe221fb0-e4ae-4ea3-b418-e131baa08bca",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C15",
+      "claim": "In the presence of Wnt ligand, the degradation machinery is sequestered, and the resulting stabilization of \u03b2-catenin allows it to enter the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of Wnt ligand, the degradation machinery is sequestered, and the resulting stabilization of \u03b2-catenin allows it to enter the nucleus where it drives the transcription of Wnt responsive genes (MacDonald et al., 2009; Niehrs, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "0fc79c62-bdc1-44d9-bbac-7b3d625986d9",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C16",
+      "claim": "Early studies suggested that \u03b2-catenin nuclear import was energy dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "First, although early studies suggested that \u03b2-catenin nuclear import was energy dependent, they excluded a role for the Ran GTPase (Fagotto et al., 1998; Yokoya et al., 1999), the master regulator of the nuclear transport of most macromolecules bearing either nuclear localization signals (NLSs) and/or nuclear export signals (NES; Wente and Rout, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "a3539c4f-828d-4df1-9a6b-5564b0359003",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C17",
+      "claim": "Early studies excluded a role for the Ran GTPase in \u03b2-catenin nuclear import.",
+      "claim_type": "EXPLICIT",
+      "source": "First, although early studies suggested that \u03b2-catenin nuclear import was energy dependent, they excluded a role for the Ran GTPase (Fagotto et al., 1998; Yokoya et al., 1999), the master regulator of the nuclear transport of most macromolecules bearing either nuclear localization signals (NLSs) and/or nuclear export signals (NES; Wente and Rout, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "3e20e39f-b59c-486f-966d-889750f4cd63",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C18",
+      "claim": "Prior studies demonstrated that \u03b2-catenin nuclear import did not require the Kap-\u03b1/Kap-\u03b21 (Importin \u03b1/\u03b21) nuclear transport receptor complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, prior studies demonstrated that \u03b2-catenin nuclear import did not require the Kap-\u03b1/Kap-\u03b21 (Importin \u03b1/\u03b21) nuclear transport receptor (NTR) complex (Fagotto et al., 1998; Yokoya et al., 1999), a notion consistent with Ran independence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "8fdf8f20-3e42-470d-99ca-1e25dc544919",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C19",
+      "claim": "\u03b2-catenin and Kap-\u03b1 are both made up of armadillo-repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the structural similarity between \u03b2-catenin (Huber et al., 1997; Xing et al., 2008) and Kap-\u03b1 (Conti and Kuriyan, 2000), both made up of armadillo-repeats, suggested that \u03b2-catenin might itself act as an NTR by directly interacting with the Phe-Gly (FG) nups responsible for selective passage across the nuclear pore complex (NPC; Andrade et al., 2001; Xu and Massagu\u00e9, 2004; Yano et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "58611459-a43e-4721-aa69-3350642abb99",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C20",
+      "claim": "Kap-\u03b1 does not directly bind to FG-nups.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Kap-\u03b1 does not directly bind to FG-nups and the evidence that \u03b2-catenin does so is controversial (Sharma et al., 2014; Suh and Gumbiner, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "45f991cb-d2bc-4a03-a0d6-188ccb15591a",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C21",
+      "claim": "The evidence that \u03b2-catenin directly binds to FG-nups is controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Kap-\u03b1 does not directly bind to FG-nups and the evidence that \u03b2-catenin does so is controversial (Sharma et al., 2014; Suh and Gumbiner, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "d3f1efda-8424-42b6-82a7-57d514957a16",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C22",
+      "claim": "Recent work provided evidence that \u03b2-catenin may be imported by the NTR, IPO11 (Importin-11).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a CRISPR-based screening platform, recent work provided evidence that \u03b2-catenin may be imported by the NTR, IPO11 (Importin-11); however, this mechanism appears curiously relevant only for a subset of colon cancer cells (Mis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "bc486021-3780-4362-9713-d93a7c53b8dc",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C23",
+      "claim": "The IPO11-mediated import mechanism appears relevant only for a subset of colon cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a CRISPR-based screening platform, recent work provided evidence that \u03b2-catenin may be imported by the NTR, IPO11 (Importin-11); however, this mechanism appears curiously relevant only for a subset of colon cancer cells (Mis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "3a6241e8-5f3b-4404-8d4b-56897650b601",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C24",
+      "claim": "Yeast do not have a Wnt pathway or a \u03b2-catenin ortholog.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast do not have a Wnt pathway or a \u03b2-catenin ortholog, which presumably emerged in metazoans with the onset of multicellularity and cell fate specialization (Holstein, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "1d1530ce-2ce2-4f0a-96c3-40bec469a616",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C25",
+      "claim": "The nuclear transport system, including NTRs, NPCs, and Ran, is well conserved from yeast to human.",
+      "claim_type": "EXPLICIT",
+      "source": "Most critically, the nuclear transport system, including NTRs, NPCs, and Ran, is well conserved from yeast to human (Malik et al., 1997; Wente and Rout, 2010; Wozniak et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "b6e0f2fd-f803-403b-ae39-34e366ba0c9d",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C26",
+      "claim": "NLS and NES sequences are recognized by orthologous NTRs across millions of years of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, even NLS and NES sequences are recognized by orthologous NTRs across millions of years of evolution (Conti and Kuriyan, 2000; Fontes et al., 2000; Kosugi et al., 2008; Lange et al., 2008; Soniat et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "0bc66144-d117-4b67-aad3-e6223bd92360",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C27",
+      "claim": "x\u03b2-catenin-GFP was enriched in the nucleus compared to GFP alone in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, x\u03b2-catenin-GFP was enriched in the nucleus compared to GFP alone (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "e031e811-a88b-4944-b6a7-b9f41cbe8b27",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C28",
+      "claim": "x\u03b2-catenin-GFP had a mean N:C ratio of ~1.6, which was significantly higher than GFP alone (1.1).",
+      "claim_type": "EXPLICIT",
+      "source": "The x\u03b2-catenin-GFP had a mean N:C ratio of ~1.6, which was significantly higher than GFP alone (1.1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by quantification data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "21a4b5e4-bc97-4513-91ef-645deb3080a3",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C29",
+      "claim": "x\u03b2-catenin-GFP is 119 kD.",
+      "claim_type": "EXPLICIT",
+      "source": "As x\u03b2-catenin-GFP is 119 kD, it would be unable to easily pass through the NPC diffusion barrier, suggesting that x\u03b2-catenin-GFP can access a facilitated nuclear transport mechanism through the NPC (Popken et al., 2015; Timney et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a fact about the molecular weight of the fusion protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "1d6caebd-85d0-4b3a-a234-6873ba48bc87",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C30",
+      "claim": "At room temperature, x\u03b2-catenin-GFP is localized in the nucleus with a N:C ratio similar to the wildtype strain (~1.6) in the mtr1-1 mutant strain.",
+      "claim_type": "EXPLICIT",
+      "source": "At room temperature, x\u03b2-catenin-GFP is localized in the nucleus with a N:C ratio similar to the wildtype strain (~1.6) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "fdfba327-8f5f-4c56-9716-0ec1f18eedeb",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C31",
+      "claim": "Growth at 37\u00b0C, which is non-permissive for mtr1-1p function, resulted in the re-distribution of x\u03b2-catenin-GFP such that it was evenly distributed between the nucleus and cytoplasm with N:C ratios identical to GFP alone (1.1).",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, growth at 37\u00b0C, which is non-permissive for mtr1-1p function, resulted in the re-distribution of x\u03b2-catenin-GFP such that it was evenly distributed between the nucleus and cytoplasm with N:C ratios identical to GFP alone (1.1) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "33f8ece7-0a8d-4ab6-aa2f-7b363720127f",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C32",
+      "claim": "x\u03b2-catenin-GFP localization was not affected by elevated temperature in wildtype cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, x\u03b2-catenin-GFP localization was not affected by the elevated temperature as wildtype cells showed N:C ratios of ~1.6 even at 37\u00b0C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "2024de3d-1658-4f9b-bdf9-ee8b5ff4f04f",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C33",
+      "claim": "Nuclear accumulation of x\u03b2-catenin-GFP is dependent on a functional Ran-GTP gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, nuclear accumulation of x\u03b2-catenin-GFP is dependent on a functional Ran-GTP gradient raising the possibility that it requires a NTR-mediated pathway to accumulate in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the results based on the mtr1-1 mutant data in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "e8f489ec-2bec-4a17-82b7-f1ef49397049",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C34",
+      "claim": "Removal of the C-terminus significantly reduced nuclear enrichment of x\u03b2-catenin-(1-664)-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of the C-terminus significantly reduced nuclear enrichment of x\u03b2-catenin-(1-664)-GFP compared to constructs lacking either the N (x\u03b2-catenin-[141-782]-GFP) or ARM (\u0394141-664) domains, which accumulated in the nucleus at levels similar to the full-length protein (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "3895c328-3382-4a10-be6f-1435f6564835",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C35",
+      "claim": "The C-terminus of \u03b2-catenin (x\u03b2-catenin-[665-782]-GFP) was sufficient to confer nuclear accumulation of GFP to levels comparable to the full-length protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, the C-terminus of \u03b2-catenin (x\u03b2-catenin-[665-782]-GFP) was sufficient to confer nuclear accumulation of GFP to levels comparable to the full-length protein (mean N:C 1.6; Figure 2A, B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "dce60b63-9892-4a9b-bf30-b7044553c444",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C36",
+      "claim": "Both the ARM repeats (x\u03b2-catenin-[141-664]-GFP) and the N-terminus of \u03b2-catenin (x\u03b2-catenin-[1-141]-GFP) could confer some nuclear enrichment of GFP but to a considerably lesser extent than the C-terminus (mean N:C of ~1.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, both the ARM repeats (x\u03b2-catenin-[141-664]-GFP) and the N-terminus of \u03b2-catenin (x\u03b2-catenin-[1-141]-GFP) could confer some nuclear enrichment of GFP but to a considerably lesser extent than the C-terminus (mean N:C of ~1.3; Figure 2A, B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "0c6b5095-3c5b-43bf-bfc7-bcea18c7a0df",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C37",
+      "claim": "The C-terminus of x\u03b2-catenin contains a sequence that was both necessary and sufficient for nuclear accumulation at levels comparable to the full-length protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when taken together, there are several elements of x\u03b2-catenin that, in isolation, can target to the nucleus in a Ran pathway dependent fashion, but the C-terminus contains a sequence that was both necessary and sufficient for nuclear accumulation at levels comparable to the full-length protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the results based on the truncation data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "95358577-c9c6-40f9-b29e-dc951886f980",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C38",
+      "claim": "The C-terminus of x\u03b2-catenin contains the dominant NLS in \u03b2-catenin, which was further mapped to amino acids 665\u2013745.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Koike et al., 2004; Mis et al., 2020), these data suggested that the C-terminus of x\u03b2-catenin contains the dominant NLS in \u03b2-catenin, which we further mapped to amino acids 665\u2013745 (Figure 2A, B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 2 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "cf39c0b8-ccdc-4cc6-bd06-a23f5b6ae6db",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C39",
+      "claim": "Plasma membrane trapping of Kap95-FRB did not impact nuclear localization of x\u03b2-catenin-(665-782)-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior data (Fagotto et al., 1998), plasma membrane trapping of the Kap\u03b21 ortholog, Kap95-FRB, did not impact nuclear localization of x\u03b2-catenin-(665-782)-GFP (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 3B and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "fcd67109-984b-41ea-8c92-4768119f3ff2",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C40",
+      "claim": "Trapping 9 of the 10 NTRs, including the IPO11 ortholog, Kap120, had no overt influence on x\u03b2-catenin-(665-782)-GFP nuclear localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, trapping 9 of the 10 NTRs, including the IPO11 ortholog, Kap120, had no overt influence on x\u03b2-catenin-(665-782)-GFP nuclear localization (Figure 3B and C, and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "f007c2d7-f47e-402a-a39a-f596c4b8fb0b",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C41",
+      "claim": "Anchoring away Kap104-FRB resulted in a remarkable inhibition of nuclear accumulation of x\u03b2-catenin-(665-782)-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed a remarkable inhibition of nuclear accumulation, specifically when Kap104-FRB (ortholog of Kap\u03b22/Transportin-1[TNPO1]) was anchored away (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "e4887d47-8169-461f-b4f1-3375d6290917",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C42",
+      "claim": "Kap104 specifically mediates the nuclear import of x\u03b2-catenin-(665-782)-GFP in the yeast system.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support a model in which Kap104 specifically mediates the nuclear import of x\u03b2-catenin-(665-782)-GFP in the yeast system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the results based on the Anchor-Away data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "cd377faa-dd5c-4ac1-8c01-0582109f6643",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C43",
+      "claim": "The x\u03b2-catenin amino acid sequence (665-703) conforms to the loose PY-NLS consensus with a hydrophobic methionine (M) in place of a tyrosine (Y).",
+      "claim_type": "EXPLICIT",
+      "source": "By close inspection, the x\u03b2-catenin amino acid sequence (665-703) does conform to the loose PY-NLS consensus with a hydrophobic methionine (M) in place of a tyrosine (Y; Figure 4A; Soniat and Chook, 2015); this NLS is conserved across vertebrate species (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by sequence alignment data in Figure 4A and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "f9770f4b-a429-4cda-8854-566169e0196e",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C44",
+      "claim": "The \u03b2-catenin NLS is conserved across vertebrate species.",
+      "claim_type": "EXPLICIT",
+      "source": "By close inspection, the x\u03b2-catenin amino acid sequence (665-703) does conform to the loose PY-NLS consensus with a hydrophobic methionine (M) in place of a tyrosine (Y; Figure 4A; Soniat and Chook, 2015); this NLS is conserved across vertebrate species (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by sequence alignment data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "6de52bf1-3477-4b89-a9a3-95016a553a6a",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C45",
+      "claim": "Fusion of the x\u03b2-catenin-(665-703) can confer nuclear localization of MBP(x3)-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion of the x\u03b2-catenin-(665-703) can confer nuclear localization of this large fusion protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "a04a2a62-5532-4336-b65d-b3a296d2fa6f",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C46",
+      "claim": "Substitution of PM with AA abolishes nuclear localization of MBP(x3)-GFP fused to x\u03b2-catenin-(665-703).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this localization is dependent on the PM motif as substitution of PM with AA abolishes nuclear localization (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "788dfbc6-25d6-4a50-92d8-f5a228e0cf0f",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C47",
+      "claim": "The PM to AA substitution reduced the mean N:C ratios of h\u03b2-catenin-(665-782)-GFP from 2.5 to 1.5 in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These amino acids were also critical for human (h)\u03b2-catenin-(665-782)-GFP nuclear accumulation in human cell lines (HeLa) as the PM to AA substitution reduced the mean N:C ratios of this construct from 2.5 to 1.5 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by microscopy data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "3b87dcf3-41ea-4feb-a769-c7607b29923d",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C48",
+      "claim": "The PM sequence in the \u03b2-catenin PY-NLS is required for nuclear import in yeast and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the PM sequence in the \u03b2-catenin PY-NLS is required for nuclear import in yeast and human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the results based on the PM to AA mutation data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "957999f7-bee0-4e1c-95a8-76570f1902a7",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C49",
+      "claim": "TNPO1 specifically binds to GST-h\u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed specific binding of TNPO1 to the GST-h\u03b2-catenin (Figure 5A), which was disrupted by the PM to AA mutations in the NLS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by in vitro binding data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "11d4baee-4ada-4c51-a5ed-2e317141a88d",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C50",
+      "claim": "The binding of TNPO1 to GST-h\u03b2-catenin was disrupted by the PM to AA mutations in the NLS.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed specific binding of TNPO1 to the GST-h\u03b2-catenin (Figure 5A), which was disrupted by the PM to AA mutations in the NLS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by in vitro binding data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "7b933a49-580c-4258-9395-ed67651cc436",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C51",
+      "claim": "Adding RanQ69L-GTP specifically disrupted \u03b2-catenin binding to TPNO1.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding RanQ69L-GTP specifically disrupted \u03b2-catenin binding to TPNO1, indicating that the TNPO1:\u03b2-catenin complex reflects the formation of a canonical NTR-NLS import complex (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by in vitro binding data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "9adac816-e075-497e-a4b2-48dce5ea286d",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C52",
+      "claim": "The TNPO1:\u03b2-catenin complex reflects the formation of a canonical NTR-NLS import complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding RanQ69L-GTP specifically disrupted \u03b2-catenin binding to TPNO1, indicating that the TNPO1:\u03b2-catenin complex reflects the formation of a canonical NTR-NLS import complex (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the results based on the Ran-GTP sensitivity data in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "c4a1f2a8-46e6-4283-be1d-6d6286251cca",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C53",
+      "claim": "TNPO1 imports \u03b2-catenin through a direct interaction with its PY-NLS that is modulated by TPNO1-binding to Ran-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "When taken together, these data establish a model in which TNPO1 imports \u03b2-catenin through a direct interaction with its PY-NLS that is modulated by TPNO1-binding to Ran-GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the results based on the in vitro binding data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "e3413c6e-97d5-4aed-aeb6-681cd11ff706",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C54",
+      "claim": "Depletion of both tnpo1 and tnpo2 using F0 CRISPR resulted in significantly more embryos with weak expression of the GFP transgene compared to UIC embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "When we depleted both tnpo1 and tnpo2 using F0 CRISPR, significantly more embryos had weak expression of the GFP transgene compared to UIC embryos (Figure 6A, see images of embryos stained for GFP transcripts as key to histogram).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by in situ hybridization data in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "91ac79d1-c025-4a29-a914-2372f4afc511",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C55",
+      "claim": "Depletion of either TNPO1 or TNPO2 led to a 34% reduction in luciferase signal in transgenic fibroblasts transfected with h\u03b2-catenin-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control siRNA, depletion of either TNPO1 or TNPO2 led to a 34% reduction in luciferase signal (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by luciferase assay data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "4a518fd7-401c-4b1d-bd62-889d0ef5c7b8",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C56",
+      "claim": "Targeting both TNPO1 and TNPO2 transcripts reduced luciferase signals by 64% in transgenic fibroblasts transfected with h\u03b2-catenin-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "By targeting both transcripts, the luciferase signals were reduced by 64% (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by luciferase assay data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "bccdac30-c26c-44af-a78e-e90520cbb6b5",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C57",
+      "claim": "TNPO1/2 depletion by siRNA reduced \u03b2-catenin levels specifically in nuclear fractions compared to control siRNA condition in HCT-116 and DLD-1 colorectal cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the TCF/LEF mouse fibroblast cell line, TNPO1/2 depletion by siRNA reduced \u03b2-catenin levels specifically in nuclear fractions compared to control siRNA condition (Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by western blot data in Figure 6\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "5a1e8119-8bba-4b03-a1f3-31486ec65902",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C58",
+      "claim": "TNPO1/2 is required for \u03b2-catenin nuclear localization across a wide range of species: Xenopus, mouse, and human cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, TNPO1/2 is required for \u03b2-catenin nuclear localization across a wide range of species: Xenopus, mouse, and human cancer cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the results based on the data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "39a702de-1d21-4929-bca1-616084223ee6",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C59",
+      "claim": "There was a significant reduction in the number of secondary axes induced by the PM-AA mutant \u03b2-catenin compared to wildtype h\u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted a significant reduction in the number of secondary axes induced by the PM-AA mutant \u03b2-catenin (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by secondary axis assay data in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "6e36989f-9c19-4574-aaf1-2bc3e5ca496d",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C60",
+      "claim": "Adding the cNLS to the N-terminus of the PM-AA mutant rescued induction of secondary axes.",
+      "claim_type": "EXPLICIT",
+      "source": "If we add the cNLS to the N-terminus of the PM-AA mutant then induction of secondary axes is rescued, suggesting that the PM-AA mutant fails to enter the nucleus to activate Wnt signaling (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by secondary axis assay data in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "f7a6ef3b-8c85-434e-956d-37b5b7439fe6",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C61",
+      "claim": "Transfection of the M9M peptide reduced luciferase activity in a dose-dependent manner in the mouse fibroblast TCF/LEF luciferase reporter cell line, regardless of whether activation was induced with Wnt3a or by co-transfection with human \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitingly, transfection of the M9M peptide reduced luciferase activity in a dose-dependent manner, regardless of whether activation was induced with a Wnt ligand (Wnt3a) or by co-transfection with human \u03b2-catenin (Figure 7A, Figure 7\u2014figure supplement 1A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by luciferase assay data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "2c787ee2-3c0e-4e7f-8e59-f76d20b038ea",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C62",
+      "claim": "The M9M-A peptide only reduced luciferase activity by 24% compared to 45% by M9M at similar dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "The M9M-A peptide only reduced luciferase activity by 24% (compared to 45% by M9M at the similar dosage; Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by luciferase assay data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "dd5e6af7-7858-4ee8-b782-66b699a6d5f2",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C63",
+      "claim": "The cNLS-human \u03b2-catenin could drive the luciferase reporter to levels comparable to human \u03b2-catenin, but the M9M peptide only reduced this signal by ~15%.",
+      "claim_type": "EXPLICIT",
+      "source": "The cNLS-human \u03b2-catenin could drive the luciferase reporter to levels comparable to human \u03b2-catenin, but the M9M peptide only reduced this signal by ~15% (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by luciferase assay data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "744e53f7-c989-4203-86f7-e7337b15d1a7",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C64",
+      "claim": "The M9M peptide's impact on Wnt signaling is due, at least in part, to the inhibition of \u03b2-catenin nuclear transport via TNPO1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these data support the conclusion that the M9M peptide's impact on Wnt signaling is due, at least in part, to the inhibition of \u03b2-catenin nuclear transport via TNPO1/2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the results based on the M9M peptide data in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "4a8ec167-6c8d-4e38-b942-8d1a84750f3f",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C65",
+      "claim": "Wnt signaling can be inhibited by blocking TNPO1-mediated import of \u03b2-catenin either by mutating the \u03b2-catenin NLS or competitive inhibition with the M9M peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, Wnt signaling can be inhibited by blocking TNPO1-mediated import of \u03b2-catenin either by mutating the \u03b2-catenin NLS or competitive inhibition with the M9M peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the results based on the data in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "acd8d87d-0a01-4925-b5f2-694bd269d531",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C66",
+      "claim": "In vertebrates, the tnpo1 gene is duplicated (tnpo1 and tnpo2), and both paralogs have nearly identical sequence and function.",
+      "claim_type": "EXPLICIT",
+      "source": "In vertebrates, the tnpo1 gene is duplicated (tnpo1 and tnpo2), and both paralogs have nearly identical sequence and function (Figure 6\u2014figure supplement 1; Dormann et al., 2010; Rebane et al., 2004; Twyffels et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by sequence alignment data in Figure 6\u2014figure supplement 1 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "9cefccfd-bd34-457a-adff-eeecbfefe429",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C67",
+      "claim": "Kap104 only recognizes PY-NLSs with an N-terminal basic motif, whereas human TPNO1 can bind to PY-NLSs with both a basic or a hydrophobic N-terminal motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Kap104 only recognizes PY-NLSs with an N-terminal basic motif, whereas human TPNO1 can bind to PY-NLSs with both a basic or a hydrophobic N-terminal motif (Soniat and Chook, 2016; S\u00fcel et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "c4bf288a-db79-43fb-b01f-5c494db1b878",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C68",
+      "claim": "\u03b2-catenin's PY-NLS could be recognized by Kap104, enabling the yeast screen and the ultimate identification of the dominant NLS in \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we were fortunate that \u03b2-catenin's PY-NLS could be recognized by Kap104, enabling our yeast screen and the ultimate identification of the dominant NLS in \u03b2-catenin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "efc7cbde-fa0f-4231-a232-d31982fd5bf2",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C69",
+      "claim": "TNPO1 imports \u03b2-catenin in yeast, amphibian, mouse, and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our work establishes that TNPO1 imports \u03b2-catenin in yeast, amphibian, mouse, and human cells, providing confidence that there is a TNPO1-specific mechanism at play.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "a9b0a5af-b7c7-41fb-b012-4079556c16d5",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C70",
+      "claim": "There are additional NLSs in \u03b2-catenin as the N-terminus and ARM repeats retain some Ran-dependent nuclear localization elements.",
+      "claim_type": "EXPLICIT",
+      "source": "It also remains possible that there are additional NLSs in \u03b2-catenin as the N-terminus and ARM repeats retain some Ran-dependent nuclear localization elements (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "413b16f6-2a6a-429d-bbe9-690f3b3ad0c1",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "claim_id": "C71",
+      "claim": "The M9M peptide is a chimera of the NLSs of heterogeneous nuclear ribonucleoprotein (hnRNP) M and A1.",
+      "claim_type": "EXPLICIT",
+      "source": "The M9M peptide is a chimera of the NLSs of heterogeneous nuclear ribonucleoprotein (hnRNP) M and A1 (Cansizoglu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "747c2bf1-c25d-4b47-ad95-8d4aa5c653a3",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "\u03b2-catenin nuclear accumulation in yeast is Ran-dependent. x\u03b2-catenin-GFP showed nuclear enrichment (N:C ratio ~1.6) in wildtype yeast, which was abolished in the mtr1-1 (Ran-GEF) mutant at non-permissive temperature (37\u00b0C), indicating dependence on a functional Ran-GTP gradient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C27-C33 provide converging evidence from microscopy and quantification showing that \u03b2-catenin nuclear accumulation requires functional Ran-GTP gradient. The temperature-sensitive mtr1-1 mutant provides a clean genetic control, and the molecular weight argument (119 kD) supports the need for facilitated transport. The data are internally consistent and statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "333fbde7-0e8f-431b-a411-b83788defe7e",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The C-terminus of \u03b2-catenin (aa 665-745) contains the dominant NLS. Deletion mapping showed that removal of the C-terminus significantly reduced nuclear enrichment, while the C-terminus alone (aa 665-782) was sufficient to confer nuclear accumulation comparable to full-length protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 describe systematic truncation analysis with microscopy data (Figure 2) showing the C-terminus is both necessary and sufficient for nuclear accumulation. The N-terminus and ARM repeats showed weaker effects. The mapping to aa 665-745 is supported by additional constructs and is consistent with prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "2f45160b-ea73-4615-97ea-35379bb19d5c",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Kap104 (TNPO1 ortholog) is specifically required for \u03b2-catenin nuclear import in yeast. Systematic Anchor-Away screening of 10 NTRs showed that only Kap104 depletion inhibited nuclear accumulation of x\u03b2-catenin-(665-782)-GFP, while trapping other NTRs including Kap95 (Kap\u03b21) and Kap120 (IPO11) had no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C39-C42 describe a systematic screen using the Anchor-Away approach with appropriate controls. The specificity for Kap104 among 10 NTRs tested is compelling. The microscopy data (Figure 3) show clear phenotypic differences. The negative result for Kap120 (IPO11 ortholog) is notable given prior literature and strengthens the specificity claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "8718d66a-df55-48f0-bd96-6c3fe1a85c18",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "\u03b2-catenin contains a conserved PY-NLS (aa 665-703) with a PM motif that is required for nuclear import. The sequence conforms to PY-NLS consensus, is conserved across vertebrates, and PM to AA mutations abolish nuclear localization in both yeast (MBP(x3)-GFP fusion) and human cells (HeLa).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 identify the specific NLS sequence and demonstrate its function through sequence analysis, conservation, and mutagenesis. The PM to AA mutation provides a critical test showing the motif is required for function in both yeast and human cells. The use of MBP(x3)-GFP (149 kDa) as a reporter is a strong experimental design to test NLS sufficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "d164f4ea-9c16-4321-b0fa-f959803c9225",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TNPO1 directly binds \u03b2-catenin through its PY-NLS in a Ran-GTP sensitive manner. In vitro binding assays showed specific interaction between TNPO1 and GST-h\u03b2-catenin that was disrupted by PM to AA mutations and by addition of RanQ69L-GTP, indicating formation of a canonical NTR-NLS import complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C49-C53 provide biochemical evidence for direct binding using GST pulldown assays (Figure 5). The PM to AA mutation disrupts binding, and Ran-GTP sensitivity confirms the interaction is consistent with canonical nuclear import. The use of RanQ69L (GTP-locked) is appropriate. The data directly support the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "f235da4b-6ece-4a71-ad37-aa95789356be",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TNPO1/2 is required for \u03b2-catenin nuclear localization across vertebrate species. CRISPR depletion of tnpo1/2 in Xenopus reduced TCF/LEF-GFP reporter expression; siRNA knockdown in mouse fibroblasts reduced luciferase activity by 34% (single) or 64% (double); and siRNA in human colorectal cancer cells reduced nuclear \u03b2-catenin levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58, C66 demonstrate conservation of the TNPO1/2-mediated import mechanism across species using multiple assays. The use of two non-overlapping sgRNA pairs in Xenopus (Figure 6A) controls for off-target effects. The dose-dependent reduction in mouse cells and nuclear fractionation in cancer cells provide orthogonal validation. The functional redundancy of TNPO1/2 paralogs is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "451428e4-b50a-41cf-9d5e-a91a098e3ec4",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The \u03b2-catenin PY-NLS is required for Wnt signaling in vivo. PM to AA mutant \u03b2-catenin showed significantly reduced secondary axis induction in Xenopus compared to wildtype, and this defect was rescued by adding a cNLS, indicating the mutation specifically impairs nuclear import rather than other \u03b2-catenin functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 demonstrate functional consequences of the NLS mutation using the Xenopus secondary axis assay. The rescue with cNLS (which bypasses TNPO1) is a critical control showing the PM-AA mutant retains signaling activity but cannot enter the nucleus. This establishes the physiological relevance of the TNPO1-mediated import mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "7f7b2e93-fb6c-4aaf-b070-225faddfb7af",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The M9M peptide, a chimeric TNPO1 inhibitor, reduces Wnt signaling in a dose-dependent manner. M9M reduced TCF/LEF luciferase activity when Wnt was activated by either Wnt3a or \u03b2-catenin overexpression. A control M9M-A peptide showed reduced inhibition, and M9M had minimal effect on cNLS-\u03b2-catenin, indicating specificity for TNPO1-mediated import.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C61-C65, C71 demonstrate proof-of-concept for therapeutic targeting using the M9M peptide. The dose-response, control peptide (M9M-A), and cNLS-\u03b2-catenin rescue experiments provide multiple lines of evidence for specificity. However, M9M inhibits all TNPO1 cargos, not just \u03b2-catenin, which is acknowledged. The data support the conclusion that inhibiting \u03b2-catenin nuclear import can reduce Wnt signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "465f87c8-f34e-4713-a5ee-fbf9182da73a",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background on Wnt signaling and \u03b2-catenin function in development and disease. Wnt signaling is essential for embryonic axis formation, excessive signaling drives cancer (90% of colorectal cancers), and \u03b2-catenin is the key effector that translocates to the nucleus to activate Wnt-responsive genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C10-C15 provide established background knowledge supported by citations. These are well-accepted facts in the field and provide context for the study. The 90% statistic for colorectal cancer (C12) is from a major consortium study (Cancer Genome Atlas, 2012).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "96b3b435-edfe-4544-81c4-efa91cdfa98e",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work on \u03b2-catenin nuclear import was contradictory or incomplete. Early studies suggested energy-dependent but Ran-independent import, excluded Kap-\u03b1/Kap-\u03b21, and proposed \u03b2-catenin might act as its own NTR. Recent work implicated IPO11 but only in a subset of cancer cells. Evidence for direct FG-nup binding is controversial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 accurately summarize prior literature with appropriate citations. The authors correctly identify contradictions and gaps in previous work, which motivates their study. The characterization of the IPO11 work (C22-C23) as limited to a subset of cancer cells is supported by the cited reference (Mis et al., 2020).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "3aca72c2-9428-42f9-8e6b-c92608101664",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Rationale for using yeast as a model system. Yeast lack Wnt pathway and \u03b2-catenin but have conserved nuclear transport machinery (NTRs, NPCs, Ran), and NLS/NES sequences are recognized by orthologous NTRs across evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 provide the justification for the heterologous yeast system with appropriate citations. The conservation of nuclear transport machinery is well-established, and the authors correctly note that yeast lack \u03b2-catenin binding partners that could complicate analysis in metazoan systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "cf1f4f2f-5aa6-4b2c-bc4f-f32899fdb5b6",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Discussion of NLS recognition specificity and conservation. Kap104 recognizes PY-NLSs with basic N-terminal motifs while human TNPO1 recognizes both basic and hydrophobic motifs. The authors were fortunate that \u03b2-catenin's PY-NLS could be recognized by Kap104. TNPO1 imports \u03b2-catenin across yeast, amphibian, mouse, and human cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 provide important discussion of the yeast system's limitations and the conservation of findings. The specificity differences between Kap104 and TNPO1 are well-documented (cited references). The cross-species validation (C69) is supported by the experimental data presented in the paper.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    },
+    {
+      "id": "8573c7d2-6486-4567-b4b6-d6cdf79eef69",
+      "content_id": "3dd9401f-af56-480a-83ba-fc63e34f59bd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Speculation about additional NLSs in \u03b2-catenin. The N-terminus and ARM repeats retain some Ran-dependent nuclear localization elements, suggesting there may be additional NLSs beyond the dominant C-terminal PY-NLS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is speculative and based on weaker nuclear enrichment observed with N-terminal and ARM repeat constructs (Figure 2, Figure 2\u2014figure supplement 1). While the data show some Ran-dependent localization, the authors appropriately frame this as a possibility requiring future investigation. The claim is uncertain because the mechanism and functional significance of these weaker signals are not established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:45:27.413035Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7e4f6464-1677-4531-b1a1-10a228814b18",
+      "result_id": "747c2bf1-c25d-4b47-ad95-8d4aa5c653a3"
+    },
+    {
+      "claim_id": "0bc66144-d117-4b67-aad3-e6223bd92360",
+      "result_id": "747c2bf1-c25d-4b47-ad95-8d4aa5c653a3"
+    },
+    {
+      "claim_id": "e031e811-a88b-4944-b6a7-b9f41cbe8b27",
+      "result_id": "747c2bf1-c25d-4b47-ad95-8d4aa5c653a3"
+    },
+    {
+      "claim_id": "21a4b5e4-bc97-4513-91ef-645deb3080a3",
+      "result_id": "747c2bf1-c25d-4b47-ad95-8d4aa5c653a3"
+    },
+    {
+      "claim_id": "1d6caebd-85d0-4b3a-a234-6873ba48bc87",
+      "result_id": "747c2bf1-c25d-4b47-ad95-8d4aa5c653a3"
+    },
+    {
+      "claim_id": "fdfba327-8f5f-4c56-9716-0ec1f18eedeb",
+      "result_id": "747c2bf1-c25d-4b47-ad95-8d4aa5c653a3"
+    },
+    {
+      "claim_id": "33f8ece7-0a8d-4ab6-aa2f-7b363720127f",
+      "result_id": "747c2bf1-c25d-4b47-ad95-8d4aa5c653a3"
+    },
+    {
+      "claim_id": "2024de3d-1658-4f9b-bdf9-ee8b5ff4f04f",
+      "result_id": "747c2bf1-c25d-4b47-ad95-8d4aa5c653a3"
+    },
+    {
+      "claim_id": "e8f489ec-2bec-4a17-82b7-f1ef49397049",
+      "result_id": "333fbde7-0e8f-431b-a411-b83788defe7e"
+    },
+    {
+      "claim_id": "3895c328-3382-4a10-be6f-1435f6564835",
+      "result_id": "333fbde7-0e8f-431b-a411-b83788defe7e"
+    },
+    {
+      "claim_id": "dce60b63-9892-4a9b-bf30-b7044553c444",
+      "result_id": "333fbde7-0e8f-431b-a411-b83788defe7e"
+    },
+    {
+      "claim_id": "0c6b5095-3c5b-43bf-bfc7-bcea18c7a0df",
+      "result_id": "333fbde7-0e8f-431b-a411-b83788defe7e"
+    },
+    {
+      "claim_id": "95358577-c9c6-40f9-b29e-dc951886f980",
+      "result_id": "333fbde7-0e8f-431b-a411-b83788defe7e"
+    },
+    {
+      "claim_id": "c4481908-796c-4c24-ac85-ec8dd3334703",
+      "result_id": "2f45160b-ea73-4615-97ea-35379bb19d5c"
+    },
+    {
+      "claim_id": "cf39c0b8-ccdc-4cc6-bd06-a23f5b6ae6db",
+      "result_id": "2f45160b-ea73-4615-97ea-35379bb19d5c"
+    },
+    {
+      "claim_id": "fcd67109-984b-41ea-8c92-4768119f3ff2",
+      "result_id": "2f45160b-ea73-4615-97ea-35379bb19d5c"
+    },
+    {
+      "claim_id": "f007c2d7-f47e-402a-a39a-f596c4b8fb0b",
+      "result_id": "2f45160b-ea73-4615-97ea-35379bb19d5c"
+    },
+    {
+      "claim_id": "e4887d47-8169-461f-b4f1-3375d6290917",
+      "result_id": "2f45160b-ea73-4615-97ea-35379bb19d5c"
+    },
+    {
+      "claim_id": "cd377faa-dd5c-4ac1-8c01-0582109f6643",
+      "result_id": "8718d66a-df55-48f0-bd96-6c3fe1a85c18"
+    },
+    {
+      "claim_id": "f9770f4b-a429-4cda-8854-566169e0196e",
+      "result_id": "8718d66a-df55-48f0-bd96-6c3fe1a85c18"
+    },
+    {
+      "claim_id": "6de52bf1-3477-4b89-a9a3-95016a553a6a",
+      "result_id": "8718d66a-df55-48f0-bd96-6c3fe1a85c18"
+    },
+    {
+      "claim_id": "a04a2a62-5532-4336-b65d-b3a296d2fa6f",
+      "result_id": "8718d66a-df55-48f0-bd96-6c3fe1a85c18"
+    },
+    {
+      "claim_id": "788dfbc6-25d6-4a50-92d8-f5a228e0cf0f",
+      "result_id": "8718d66a-df55-48f0-bd96-6c3fe1a85c18"
+    },
+    {
+      "claim_id": "3b87dcf3-41ea-4feb-a769-c7607b29923d",
+      "result_id": "8718d66a-df55-48f0-bd96-6c3fe1a85c18"
+    },
+    {
+      "claim_id": "a6fd3cc9-a64b-44df-95e4-ed09f6f91e0a",
+      "result_id": "d164f4ea-9c16-4321-b0fa-f959803c9225"
+    },
+    {
+      "claim_id": "e710d32a-8adc-4dbf-9cef-dfb3272f973c",
+      "result_id": "d164f4ea-9c16-4321-b0fa-f959803c9225"
+    },
+    {
+      "claim_id": "957999f7-bee0-4e1c-95a8-76570f1902a7",
+      "result_id": "d164f4ea-9c16-4321-b0fa-f959803c9225"
+    },
+    {
+      "claim_id": "11d4baee-4ada-4c51-a5ed-2e317141a88d",
+      "result_id": "d164f4ea-9c16-4321-b0fa-f959803c9225"
+    },
+    {
+      "claim_id": "7b933a49-580c-4258-9395-ed67651cc436",
+      "result_id": "d164f4ea-9c16-4321-b0fa-f959803c9225"
+    },
+    {
+      "claim_id": "9adac816-e075-497e-a4b2-48dce5ea286d",
+      "result_id": "d164f4ea-9c16-4321-b0fa-f959803c9225"
+    },
+    {
+      "claim_id": "c4a1f2a8-46e6-4283-be1d-6d6286251cca",
+      "result_id": "d164f4ea-9c16-4321-b0fa-f959803c9225"
+    },
+    {
+      "claim_id": "e3413c6e-97d5-4aed-aeb6-681cd11ff706",
+      "result_id": "f235da4b-6ece-4a71-ad37-aa95789356be"
+    },
+    {
+      "claim_id": "91ac79d1-c025-4a29-a914-2372f4afc511",
+      "result_id": "f235da4b-6ece-4a71-ad37-aa95789356be"
+    },
+    {
+      "claim_id": "4a518fd7-401c-4b1d-bd62-889d0ef5c7b8",
+      "result_id": "f235da4b-6ece-4a71-ad37-aa95789356be"
+    },
+    {
+      "claim_id": "bccdac30-c26c-44af-a78e-e90520cbb6b5",
+      "result_id": "f235da4b-6ece-4a71-ad37-aa95789356be"
+    },
+    {
+      "claim_id": "5a1e8119-8bba-4b03-a1f3-31486ec65902",
+      "result_id": "f235da4b-6ece-4a71-ad37-aa95789356be"
+    },
+    {
+      "claim_id": "acd8d87d-0a01-4925-b5f2-694bd269d531",
+      "result_id": "f235da4b-6ece-4a71-ad37-aa95789356be"
+    },
+    {
+      "claim_id": "39a702de-1d21-4929-bca1-616084223ee6",
+      "result_id": "451428e4-b50a-41cf-9d5e-a91a098e3ec4"
+    },
+    {
+      "claim_id": "6e36989f-9c19-4574-aaf1-2bc3e5ca496d",
+      "result_id": "451428e4-b50a-41cf-9d5e-a91a098e3ec4"
+    },
+    {
+      "claim_id": "a5154b1e-3b4f-43c0-8cc3-dc17f2e4fcef",
+      "result_id": "7f7b2e93-fb6c-4aaf-b070-225faddfb7af"
+    },
+    {
+      "claim_id": "f7a6ef3b-8c85-434e-956d-37b5b7439fe6",
+      "result_id": "7f7b2e93-fb6c-4aaf-b070-225faddfb7af"
+    },
+    {
+      "claim_id": "2c787ee2-3c0e-4e7f-8e59-f76d20b038ea",
+      "result_id": "7f7b2e93-fb6c-4aaf-b070-225faddfb7af"
+    },
+    {
+      "claim_id": "dd5e6af7-7858-4ee8-b782-66b699a6d5f2",
+      "result_id": "7f7b2e93-fb6c-4aaf-b070-225faddfb7af"
+    },
+    {
+      "claim_id": "744e53f7-c989-4203-86f7-e7337b15d1a7",
+      "result_id": "7f7b2e93-fb6c-4aaf-b070-225faddfb7af"
+    },
+    {
+      "claim_id": "4a8ec167-6c8d-4e38-b942-8d1a84750f3f",
+      "result_id": "7f7b2e93-fb6c-4aaf-b070-225faddfb7af"
+    },
+    {
+      "claim_id": "413b16f6-2a6a-429d-bbe9-690f3b3ad0c1",
+      "result_id": "7f7b2e93-fb6c-4aaf-b070-225faddfb7af"
+    },
+    {
+      "claim_id": "62ffc049-9160-495a-b8f7-e58498de7213",
+      "result_id": "465f87c8-f34e-4713-a5ee-fbf9182da73a"
+    },
+    {
+      "claim_id": "c76df743-5396-4e18-8c71-4b6ee1400d55",
+      "result_id": "465f87c8-f34e-4713-a5ee-fbf9182da73a"
+    },
+    {
+      "claim_id": "e4aa0c79-7517-4e25-9c78-e0513c2711fc",
+      "result_id": "465f87c8-f34e-4713-a5ee-fbf9182da73a"
+    },
+    {
+      "claim_id": "1aaa0952-651f-4131-a3af-52da3286c089",
+      "result_id": "465f87c8-f34e-4713-a5ee-fbf9182da73a"
+    },
+    {
+      "claim_id": "a6169fbc-9110-43bd-bc61-37648b4ef0df",
+      "result_id": "465f87c8-f34e-4713-a5ee-fbf9182da73a"
+    },
+    {
+      "claim_id": "405de4c2-3597-4a1b-ad6f-026135751990",
+      "result_id": "465f87c8-f34e-4713-a5ee-fbf9182da73a"
+    },
+    {
+      "claim_id": "60e1d877-1cb1-48d5-8759-8b0d62fdc266",
+      "result_id": "465f87c8-f34e-4713-a5ee-fbf9182da73a"
+    },
+    {
+      "claim_id": "b917e311-8b60-41f4-9697-dd29f9c282c9",
+      "result_id": "465f87c8-f34e-4713-a5ee-fbf9182da73a"
+    },
+    {
+      "claim_id": "5bf5e2a4-7687-4052-aeb6-23f2265a19f5",
+      "result_id": "465f87c8-f34e-4713-a5ee-fbf9182da73a"
+    },
+    {
+      "claim_id": "fe221fb0-e4ae-4ea3-b418-e131baa08bca",
+      "result_id": "465f87c8-f34e-4713-a5ee-fbf9182da73a"
+    },
+    {
+      "claim_id": "0fc79c62-bdc1-44d9-bbac-7b3d625986d9",
+      "result_id": "96b3b435-edfe-4544-81c4-efa91cdfa98e"
+    },
+    {
+      "claim_id": "a3539c4f-828d-4df1-9a6b-5564b0359003",
+      "result_id": "96b3b435-edfe-4544-81c4-efa91cdfa98e"
+    },
+    {
+      "claim_id": "3e20e39f-b59c-486f-966d-889750f4cd63",
+      "result_id": "96b3b435-edfe-4544-81c4-efa91cdfa98e"
+    },
+    {
+      "claim_id": "8fdf8f20-3e42-470d-99ca-1e25dc544919",
+      "result_id": "96b3b435-edfe-4544-81c4-efa91cdfa98e"
+    },
+    {
+      "claim_id": "58611459-a43e-4721-aa69-3350642abb99",
+      "result_id": "96b3b435-edfe-4544-81c4-efa91cdfa98e"
+    },
+    {
+      "claim_id": "45f991cb-d2bc-4a03-a0d6-188ccb15591a",
+      "result_id": "96b3b435-edfe-4544-81c4-efa91cdfa98e"
+    },
+    {
+      "claim_id": "d3f1efda-8424-42b6-82a7-57d514957a16",
+      "result_id": "96b3b435-edfe-4544-81c4-efa91cdfa98e"
+    },
+    {
+      "claim_id": "bc486021-3780-4362-9713-d93a7c53b8dc",
+      "result_id": "96b3b435-edfe-4544-81c4-efa91cdfa98e"
+    },
+    {
+      "claim_id": "3a6241e8-5f3b-4404-8d4b-56897650b601",
+      "result_id": "3aca72c2-9428-42f9-8e6b-c92608101664"
+    },
+    {
+      "claim_id": "1d1530ce-2ce2-4f0a-96c3-40bec469a616",
+      "result_id": "3aca72c2-9428-42f9-8e6b-c92608101664"
+    },
+    {
+      "claim_id": "b6e0f2fd-f803-403b-ae39-34e366ba0c9d",
+      "result_id": "3aca72c2-9428-42f9-8e6b-c92608101664"
+    },
+    {
+      "claim_id": "9cefccfd-bd34-457a-adff-eeecbfefe429",
+      "result_id": "cf1f4f2f-5aa6-4b2c-bc4f-f32899fdb5b6"
+    },
+    {
+      "claim_id": "c4bf288a-db79-43fb-b01f-5c494db1b878",
+      "result_id": "cf1f4f2f-5aa6-4b2c-bc4f-f32899fdb5b6"
+    },
+    {
+      "claim_id": "efc7cbde-fa0f-4231-a232-d31982fd5bf2",
+      "result_id": "cf1f4f2f-5aa6-4b2c-bc4f-f32899fdb5b6"
+    },
+    {
+      "claim_id": "a9b0a5af-b7c7-41fb-b012-4079556c16d5",
+      "result_id": "8573c7d2-6486-4567-b4b6-d6cdf79eef69"
+    }
+  ],
+  "comparisons": []
+}

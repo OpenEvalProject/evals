@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "DCLK1 autophosphorylation occurs via an intramolecular mechanism under the experimental conditions used, as demonstrated by the absence of trans-phosphorylation of kinase-dead DCLK1-D511N by wild-type DCLK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 provide direct experimental evidence using kinase-dead and wild-type proteins. The immunoblot data (Figure 1\u2014figure supplement 2B) clearly shows DCLK1-WT autophosphorylates but does not trans-phosphorylate D511N in co-incubation experiments. This is appropriate evidence for the intramolecular mechanism claim, though it's limited to the specific in vitro conditions tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Removal of the C-terminal tail (\u0394C construct) results in hyperphosphorylation of DCLK1 and dramatic loss of microtubule binding, which can be rescued by phosphatase treatment, demonstrating that autophosphorylation modulates microtubule-binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C30 form a coherent experimental series using Phos-tag gels, TIRF microscopy, and phosphatase treatment. The data show: (1) \u0394C migrates similarly to WT on Phos-tag gels but shifts more after phosphatase treatment (C27), indicating hyperphosphorylation; (2) \u0394C does not bind microtubules (C20) while WT and D511N do (C21); (3) phosphatase treatment rescues \u0394C binding (C28). Statistical analysis shows significant differences (p<0.0001). The logic is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Co-expression with lambda phosphatase produces dephosphorylated DCLK1 proteins that, upon ATP incubation, show differential phosphorylation kinetics: \u0394C becomes fully phosphorylated by 30 min while WT shows intermediate states even at 60 min. This correlates with dramatic loss of microtubule binding for \u0394C (41-fold KD increase) but only moderate loss for WT (2.5-fold), demonstrating that the C-terminus regulates kinase activity to control microtubule association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C44 present a time-course phosphorylation experiment with corresponding binding assays. The Phos-tag gel quantification (93.7% vs 41.8% fully phosphorylated at 30 min, C33-C34) is well-documented. TIRF microscopy provides KD values showing 41-fold decrease for \u0394C vs 2.5-fold for WT (C36-C37). Co-sedimentation assays confirm these findings (C40-C41). The experimental design is rigorous with appropriate controls and replicates (n=3). The conclusion that C-terminus regulates kinase activity is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Mass spectrometry analysis identified 17 phosphorylation sites more frequently phosphorylated in DCLK1-\u0394C compared to 9 sites in WT within the microtubule-binding region (aa 44-263), with five \u0394C sites directly contacting or adjacent to tubulin-binding residues. The loss of microtubule binding results from increased phosphorylation at multiple sites rather than a single critical site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 present LC-MS/MS data with appropriate quantification (n=751 and 637 peptides analyzed). The identification of multiple phosphorylation sites and their structural context (C47, citing Manka and Moores 2019) is well-documented. The conclusion about multiple sites (C49) is reasonable given the data, though the relative contribution of each site is not quantified. The intrinsic disorder prediction (C48) supports the structural feasibility of autophosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C87",
+      "C88"
+    ],
+    "result": "Mutating four phosphorylation sites within DC1 (S77A, S83A, S96A, T143A) substantially rescues microtubule binding of the \u0394C construct in the presence of ATP (8-fold increase in fluorescence intensity at 20 nM), while mutating four sites in DC2 produces a smaller but significant rescue, indicating that DC1 phosphorylation is the primary driver of reduced microtubule binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C87-C88 present rescue experiments with clear quantification. Figure 4 shows significant rescue for \u0394C4A-DC1 (p=0.0002 at 20 nM) and smaller rescue for \u0394C4A-DC2 (p=0.0058). The experimental design appropriately tests whether specific phosphorylation sites are responsible for the binding defect. Statistical analysis with n\u22653 independent trials supports the conclusions. The claim that DC1 is the primary driver is justified by the magnitude difference in rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "T688 within the C-terminal tail is critical for regulating DCLK1 kinase activity. The T688A mutant becomes fully phosphorylated by 30 min (96.0% vs 13.2% for WT), exhibits a 40-fold increase in KD after ATP incubation, and shows dramatically reduced microtubule co-sedimentation, while T687A behaves similarly to WT. This demonstrates that T688 autophosphorylation prevents aberrant hyperphosphorylation of the microtubule-binding domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 identify T688 through LC-MS/MS (C53) and test its function through mutagenesis. The phosphorylation kinetics (C54-C55, quantified at 96.0% for T688A vs 13.2% for WT) and binding assays (C58-C59, 40-fold KD increase) provide strong evidence. Co-sedimentation confirms the binding defect (C60-C61). The comparison with T687A serves as an important control showing specificity. Statistical analysis supports significance claims. The conclusion about T688's regulatory role (C62) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Autophosphorylation does not affect the gross conformation of DCLK1 or its sensitivity to calpain cleavage, as demonstrated by similar sucrose gradient profiles for all DCLK1 variants regardless of phosphorylation state and similar calpain cleavage patterns for WT and T688A with or without ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 address whether phosphorylation affects protein conformation or proteolytic sensitivity. Sucrose gradient data (Figure 5\u2014figure supplement 1A-B, n=2) shows similar profiles for all variants (C63-C64). Calpain cleavage assays (Figure 5\u2014figure supplement 1C, n=3) show similar products under all conditions (C65-C66). These negative results are important controls supporting that phosphorylation specifically affects microtubule binding rather than global protein properties. However, n=2 for sucrose gradients is minimal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C68",
+      "C69"
+    ],
+    "result": "DCLK1 employs an autoregulatory mechanism where autophosphorylation of T688 in the C-terminal tail modulates kinase activity to control phosphorylation levels within the DC1 and DC2 microtubule-binding domains, thereby tuning microtubule-binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C68-C69 synthesize the major findings into a mechanistic model. This model is well-supported by the collective experimental evidence: (1) T688 autophosphorylation regulates kinase activity; (2) loss of C-terminus or T688 mutation causes hyperphosphorylation of DC domains; (3) DC domain phosphorylation reduces microtubule binding; (4) mutating DC1 phosphosites rescues binding. The logic connecting these observations is sound and the model is parsimonious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C70"
+    ],
+    "result": "This represents the first example of a self-regulatory MAP that tunes its microtubule-binding properties based on autophosphorylation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16 and C70 assert novelty based on the authors' knowledge of the field. While the specific mechanism described appears novel, the claim 'to our knowledge' indicates this is not based on systematic review. Other MAPs may have similar but undiscovered mechanisms. The novelty claim is plausible but cannot be definitively verified without comprehensive literature analysis. The mechanism itself is well-supported, but the 'first example' claim remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C85",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "Phosphorylation at different sites within DCLK1 has distinct functional effects: C-terminal phosphorylation restricts kinase activity while DC1 phosphorylation primarily reduces microtubule-binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C85-C86, C89-C90 summarize the site-specific effects of phosphorylation. This is well-supported by the differential effects of T688 mutation (hyperphosphorylation and loss of binding) versus DC1 mutations (rescue of binding). The mass spectrometry data showing different phosphorylation patterns and the rescue experiments provide strong evidence for distinct functional roles of different phosphorylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "In the presence of ATP, hyperphosphorylated DCLK1-\u0394C remains present at regions of microtubule curvature, consistent with prior findings that doublecortin proteins have higher affinity for curved microtubule regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 describe residual binding of \u0394C to curved microtubule regions. This observation is supported by imaging data (Figure 1\u2014figure supplement 2D) and is consistent with published work (Bechstedt et al., 2014). This suggests that even hyperphosphorylated DCLK1 retains some binding capacity for specific microtubule conformations, adding nuance to the binding regulation mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "DCLK1 shares 46% sequence identity with CaMKI in the kinase domain and C-terminal tail region, and the regulatory mechanism appears conserved, with the C-terminal tail preventing kinase hyperactivity through direct interactions with the kinase domain, and T688 serving as a critical regulatory residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 draw parallels between DCLK1 and CaMKI regulation. The sequence similarity (C93) is documented in cited literature. The functional similarity (C94-C95) is supported by the current data showing C-terminal tail regulation of kinase activity, consistent with the CaMKI mechanism. The identification of T688 as critical (C96) is well-supported by experimental data. The claim of conserved mechanism (C97) is reasonable but would benefit from direct structural or biochemical comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "DCLK1 is upregulated in multiple cancer types and is a therapeutic target, but developing kinase inhibitors may not effectively control DCLK1's microtubule-binding functions since WT and kinase-dead DCLK1 bind microtubules with similar affinities and stimulate polymerization similarly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C98-C102 discuss therapeutic implications. The cancer relevance is well-documented by citations (C1, C98). The current study's data showing similar binding of WT and D511N (C21-C22) supports the conclusion that kinase inhibitors may not affect microtubule binding (C101). The citation to Patel et al. 2016 supports similar polymerization activity (C102). This is an important therapeutic consideration, though it doesn't address whether kinase activity has other cancer-relevant functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "The physiological significance of DCLK1 kinase activity and how autophosphorylation is controlled in cellular contexts remain unclear, though the autoregulatory mechanism may be important for DCLK1's broader temporal and spatial expression pattern compared to DCX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10-C11, C71-C72, C75-C76, and C78 acknowledge knowledge gaps and speculate about physiological relevance. These are appropriate caveats indicating that while the in vitro mechanism is well-characterized, cellular validation is needed. The speculation about temporal control (C76) and the comparison with DCX expression patterns (C75) are reasonable hypotheses for future work. These claims appropriately identify limitations and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C73",
+      "C74",
+      "C77",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Background context on DCLK1 and DCX family structure, function, and prior characterization, including domain organization, roles in neuronal development, microtubule-binding properties, and differential expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9, C73-C74, C77, and C81-C84 provide background information supported by appropriate citations to published literature. These establish the context for the current study and are well-documented in the field. The structural information (C4) is illustrated in Figure 1A. These background claims are appropriately cited and provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The mouse DCLK1 construct used (aa 1-740) has the same boundaries as human DCLK1, with only 11 amino acid differences, and all mutated residues in this study are conserved between mouse and human sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 document the protein constructs used and their conservation. This is important methodological information ensuring the relevance of findings to human DCLK1. The specific residue differences are listed, and conservation of mutated residues is explicitly stated. This supports the translational relevance of the findings.",
+    "result_type": "MINOR"
+  }
+]

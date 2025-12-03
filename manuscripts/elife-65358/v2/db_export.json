@@ -1,0 +1,1473 @@
+{
+  "submission": {
+    "id": "8bb9ab62-864c-4e55-a0b2-60ec1dfc3ecd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:39:18.734409Z",
+    "updated_at": "2025-12-03T04:39:18.734409Z"
+  },
+  "content": [
+    {
+      "id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "submission_id": "8bb9ab62-864c-4e55-a0b2-60ec1dfc3ecd",
+      "content_type": "manuscript",
+      "content_text": "# Symmetry breaking meets multisite modification\n\n## Authors\n\n- Vaidhiswaran Ramesh<sup>1</sup> ([ORCID: 0000-0002-8514-4657](https://orcid.org/0000-0002-8514-4657))\n- J Krishnan<sup>1</sup> ([ORCID: 0000-0001-6196-2033](https://orcid.org/0000-0001-6196-2033)) \u2020\n\n### Affiliations\n\n1. Department of Chemical Engineering, Centre for Process Systems Engineering, Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nMultisite modification is a basic way of conferring functionality to proteins and a key component of post-translational modification networks. Additional interest in multisite modification stems from its capability of acting as complex information processors. In this paper, we connect two seemingly disparate themes: symmetry and multisite modification. We examine different classes of random modification networks of substrates involving separate or common enzymes. We demonstrate that under different instances of symmetry of the modification network (invoked explicitly or implicitly and discussed in the literature), the biochemistry of multisite modification can lead to the symmetry being broken. This is shown computationally and consolidated analytically, revealing parameter regions where this can (and in fact does) happen, and characteristics of the symmetry-broken state. We discuss the relevance of these results in situations where exact symmetry is not present. Overall, through our study we show how symmetry breaking (i) can confer new capabilities to protein networks, including concentration robustness of different combinations of species (in conjunction with multiple steady states); (ii) could have been the basis for ordering of multisite modification, which is widely observed in cells; (iii) can significantly impact information processing in multisite modification and in cell signalling networks/pathways where multisite modification is present; and (iv) can be a fruitful new angle for engineering in synthetic biology and chemistry. All in all, the emerging conceptual synthesis provides a new vantage point for the elucidation and the engineering of molecular systems at the junction of chemical and biological systems.\n\n## Introduction\n\nReversible phosphorylation, and post-translational modification (PTM) of proteins in general, constitutes a basic way of conferring functionality to proteins in cells. This basic unit (covalent modification) is built upon in many different ways to result in the complex biochemical pathways encountered in cells.\n\nA particular elaboration of this mechanism, which is widely encountered, is the reversible multisite modification of proteins by enzymes. Here, a number of basic variations are possible depending on whether the enzymes involved in distinct modification steps are different or if a common enzyme effects multiple modifications. In the latter case, there are variations depending on whether the enzymatic mechanism is distributive (enzyme dissociating from substrate after every modification) or processive (enzyme remains attached). Finally, there are variations depending on whether a specific ordering of modifications occurs (ordered mechanism) or not (random mechanism).\n\nIn addition to being a widely encountered way in which substrates are reversibly modified to confer functionality (and consequently of broad interest), interest in multisite modification stems from the fact that the basic modification mechanisms are capable of acting as complex molecular information processors (Conradi and Shiu, 2018). Various studies have highlighted the possibilities of these mechanisms exhibiting switching and threshold behaviour (Markevich et al., 2004), bistability/multistability (Thomson and Gunawardena, 2009; Conradi and Mincheva, 2014, oscillations Suwanmajo and Krishnan, 2015; Rubinstein et al., 2016; Suwanmajo et al., 2020), biphasic dose\u2013response curves (Suwanmajo and Krishnan, 2013), and other complex behaviour (Suwanmajo and Krishnan, 2018). A range of studies have delineated the ingredients required (from the above possible variations) to enable or prevent such behaviour (Conradi et al., 2017; Eithun and Shiu, 2017; Tung, 2018). We emphasize that this rich repertoire of behaviour emerges from the most basic considerations and aspects of enzymatic modification of substrates, and that this behaviour is a feature and a consequence of the modification network (rather than a single modification). Information processing capabilities are also at the heart of different strands of work in synthetic biology engineering multisite modification, and reaction networks more broadly (Valk et al., 2014; Lyons et al., 2013; OShaughnessy et al., 2011; Maguire and Huck, 2019). This paper focuses on a distinct aspect of information processing of multisite modification: symmetry and symmetry breaking.\n\nSymmetry and symmetry breaking are themes encountered across different scales and levels in biology, ranging from the cell population, to the cellular, to the molecular level. A fundamental theme in developmental biology is the breaking of symmetry to generate patterns. The basic questions here centre around how an apparently homogeneous field of cells can differentiate to exhibit a basic pattern which serves as a precursor for subsequent development. Modelling, experiments, and concepts from self-organization have been used to probe this generation of form, which breaks spatial symmetry. The underlying mechanisms invoked involve many variations on the classical Turing mechanism or the interplay of mechanics and chemistry (Green and Sharpe, 2015; Maini et al., 2012). This can be significantly complicated by the presence of many layers of regulation. Strong experimental evidence for such mechanisms present at the core of developmental regulation has been demonstrated in multiple model systems (Onimaru et al., 2016). Symmetry breaking as a basis of generating form at the cellular level, for instance, polarization and polarized or other strongly inhomogeneous patterns of concentration of species, has been explored in a range of contexts. Examples include polarity generation in fungi and plant cells (Khan et al., 2015), and in neutrophil chemotaxis (Wang, 2009). Symmetry has also been invoked as a key ingredient in the development of the MWC model which has been used to explain allostery in biomolecular information processing (Changeux, 2012).\n\nWhile the theme of symmetry in chemistry is well recognized especially at the molecular structure level (Hargittai and Hargittai, 1994), there are relatively few studies of symmetry breaking at the molecular reaction level. In chemical reaction systems, symmetry is encountered in the context of chirality in racemic mixtures. Racemic mixtures comprise equal amounts of the two enantiomeric forms of a chiral molecule with opposite chiralities, and a central question is how a dominant orientation (chirality) of the molecular mixture can emerge from this. Some studies explain this as an emergent behaviour of the reaction network system governing the two forms of the molecules: even if the network/reaction system is symmetric allowing for equal amounts of the two forms, this symmetry can break, giving rise to a dominant form. A recent study (Hochberg et al., 2017; Rib\u00f3 et al., 2017) evaluated and demonstrated the feasibility of such symmetry breaking in a number of potential reaction systems. Chiral symmetry breaking has been experimentally observed in crystallization of nanoparticles (Hananel et al., 2019), fibril formation from racemic mixtures (Kushida et al., 2017), and in the Soai reaction (Soai et al., 1995). Such symmetry breaking is of particular importance in prebiotic evolution and biology, where biopolymers and biomolecules are characterized by a specific chirality and orientation, even though the original non-life chemical world was chirally symmetric (Chen and Ma, 2020). The establishment of such chirality has been postulated to be important in understanding the origins of life (Blackmond, 2020).\n\nThis paper focuses on a specific aspect of symmetry breaking at the junction of the biological and the chemical: the breaking of symmetry in basic multisite phosphorylation (MSP) systems.\n\nThe motivation for studying symmetry and symmetry breaking in the context of multisite modification stems from different sources: conceptual insights, relevance to systems biology, and potential application in synthetic biology. In this regard, we note that (i) many of the basic modification networks accommodate different types of symmetries, as we discuss below. (ii) Certain symmetries, for example, resulting in equal concentrations of different partial phosphoforms of a given level (Case 2 symmetry, discussed below) are not only plausible in vivo, but have also been assumed in multiple contexts, sometimes implicitly. (iii) An asymmetric state currently observed may have its genesis traced back to a symmetric state in evolution, which broke symmetry. (iv) Other symmetries (Case 3 symmetry, discussed below) have been found to be particularly desirable in enabling oscillatory behaviour: in fact, a thorough parametric analysis of oscillatory behaviour in certain random double-site modification networks reveals clusters in parameter space centred around parameter sets representing networks with this symmetry (Jolley et al., 2012). Case 3 symmetry involves a combination of two symmetries (Case 1 and Case 2) which we individually study as well. (v) Symmetry breaking can confer new functionality and information processing characteristics enriching the repertoire of MSP. (vi) Our study of symmetric systems allows us to draw important insights about multisite modification even when exact symmetry does not hold good. Thus it is also relevant to networks which are approximately symmetric. (vii) In this sense, the symmetric scenarios also serve as valuable (and sometimes non-obvious) vantage points from which to investigate important aspects of multisite modification. Furthermore, while studying modification networks of larger numbers of modifications, the symmetric networks may represent one of the few tractable vantage points from which to study and elucidate the behaviour of such networks. (viii) These serve as interesting candidates for engineering multisite modification in synthetic biology with desirable features.\n\nWe examine basic models of MSP and evaluate the possibility of spontaneous symmetry breaking in basic and canonical reaction pathways/circuits/networks of MSP. We discuss the consequences of the results which emerge for multisite modification networks which may not possess an exact symmetry. We then discuss the various consequences of such behaviour for biological systems, and cellular signalling pathways and networks which contain multisite modification. The ordering of multisite modification is a fundamental aspect of substrate modification and its regulation, and the deployment of modified substrates in various processes. It has been the focus of different studies (Kocieniewski et al., 2012; Lyons et al., 2013; L\u00f6ssl et al., 2016; Valk et al., 2014) spanning canonical pathways, important cellular processes, basic principles, and engineering for synthetic biology. We show how symmetry breaking could provide a natural mechanism for the creation of ordered multisite modification systems from random multisite modification, which could in turn explain the various degrees of ordering encountered in cells.\n\n## Results\n\nWe begin by discussing the basic aspects of the models we employ and the way they are analysed before proceeding to the results. We discuss the multisite modification networks we study and the possible symmetries they may exhibit (with further details in Appendix 1).\n\n### Models of multisite modification\n\nOur primary focus is on random mechanisms of multisite modification, and we study the case of double-site modification as a tractable, representative case. Figure 1A represents random mechanisms of modification (i.e. modifications can proceed in either order) and depicts cases where the kinases and phosphatases effecting individual modifications could either be the same or different. Taken together, these networks span a range of basic cases of multisite modification, including the possibility of an enzyme performing multiple modifications (seen in many biological contexts) and the possibility that this may be associated with one modification direction, but not the other due to the fact that kinases significantly outnumber phosphatases, as seen in genome-wide studies (Ghaemmaghami et al., 2003). When a common enzyme is involved in effecting multiple modifications, the modification mechanism is assumed to be distributive, unless otherwise stated. We note here that such modification circuits are encountered in multiple cellular contexts and can be viewed as building blocks of more complex multisite modification networks. Such networks have been the focus of detailed studies in contexts such as circadian oscillations (Ode and Ueda, 2018, involving the common kinase common phosphatase network depicted: the substrate represents the Per proteins), with additional studies on temperature compensation in this context (Shinohara et al., 2017; Hatakeyama and Kaneko, 2012). They have also been used to evaluate design principles for both oscillatory and pattern forming behaviour more broadly (Jolley et al., 2012; Sugai et al., 2017). For purposes of contrast and elucidating basic effects, we also examine two related modification networks: (i) an ordered double-site modification mechanism (Figure 1C) mediated by a common kinase and common phosphatase. The specific ordering of modification involves the phosphorylation order being opposite to that of dephosphorylation resulting in one partial phosphoform. This has been extensively studied in the literature (e.g. Thomson and Gunawardena, 2009; Conradi and Shiu, 2018). (ii) A random mechanism where the dephosphorylation is processive (Figure 1B and Appendix 2\u2014figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65358/elife-65358-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013C) Schematic representation of the various multisite phosphorylation networks considered in the paper. (A) depicts the core networks while (B,C) serve as suitable contrasts to illustrate basic points. The labels $\u03ba_{i}$, $\\alpha_{i}$ in the schematic represent the triplet of binding, unbinding, and catalytic rate constants involved in the enzyme modification for the $i^{t\u2062h}$ modification (on each leg of the network). Detailed model description is provided in Appendix 2\u2014figure 10. (A) shows the various random (distributive) double-site phosphorylation (DSP) networks (the focal point of the study) with different combinations of enzyme action (common kinase and common phosphatase, separate kinase and common phosphatase, and separate kinase and separate phosphatase). (B) shows the random DSP with distributive phosphorylation and processive dephosphorylation (depicted for simplicity as direct arrows from $A_{11}\u2192A_{00}$) with separate kinase and common phosphatase (model: mixed random 2). (C) shows the ordered distributive DSP with common kinase and common phosphatase, and an expanded description of reaction mechanism showing in detail the binding, unbinding, and catalytic action for each modification step. (D). Schematic representation of the three different classes of symmetries in the random DSP networks considered in this study. The different symmetries are depicted in the right-hand panel. In each case, the axis of symmetry is depicted, and nodes of the network on either side of this axis (enclosed in a boundary of the same colour) have equal concentration. Identically coloured arrows in schematics are indicative of equal kinetic rate constants (for the corresponding triplet of binding/unbinding/catalysis reaction) and equal total concentrations of enzymes involved. The associated kinetic and enzymatic requirements required for enforcing symmetries are also listed. These are key ingredient in establishing symmetry in the reaction network. The origins of these symmetries can be conceptualized and visualized by examining an enzymatic network with a \u2018square\u2019 topology (left-hand panel), where every reaction is mediated by an enzyme. Such networks can have symmetry about one axis or two axes. Now examining the single-axis reflection symmetry in multisite modification results in two possibilities of symmetric nodes (the pair ($A_{00},A_{11}$) and ($A_{01},A_{10}$)). In each case, symmetry requires different pairs of reactions (depicted by identically coloured arrows) to have equivalent rates and enzyme amounts. Importantly, in the $A_{11}=A_{00}$ case these pairs of reactions are associated with enzymes of different kinds, while in the $A_{01}=A_{10}$ case they are associated with enzymes of the same kind. While this is depicted for a single kinase and a single phosphatase, it applies to any combination of common/separate kinase and phosphatase. This dichotomy underscores the difference between case 1 and case 2 symmetry. Overall this conceptualization allows us to obtain the three symmetries along with the kinetic and enzymatic requirements shown in the right-hand panel.\n\n### From networks to models\n\nThe model for each of these networks (depicted in Figure 1A\u2013C, Appendix 2\u2014figure 1A) is built up from widely used descriptions of individual substrate modification by an enzyme (involving reversible complex formation and irreversible modification to give the product; see Appendix 2\u2014figure 10). Such a description makes no a priori assumptions about the kinetic regimes of modifications. Further details are presented in Appendix 1. Throughout the paper, we work with these canonical modification circuits, where the substrate forms are denoted by $A$, with subscripts denoting the type of modification. Depending on the context, these could represent different proteins.\n\n### Associated network symmetries\n\nIn order to understand and visualize the types of symmetries we will examine, it is fruitful to examine a \u2018square\u2019 reaction network, which has the same network topology as that of the multisite modification networks above. Note that in this depiction the nodes of the network represent substrates, while the enzymes are implicitly present in the arrows: both substrates and enzymes together constitute an enzymatic reaction network of this type. As depicted in Figure 1D (left panel), there are two types of symmetries which can be encountered. (i) In the first case, the two \u2018legs\u2019 of the network are symmetric (about the axis of symmetry depicted), which means that the rates of reaction for corresponding reactions on either side of the axis are the same. The associated pair of species (nodes of this network representing substrates, on either side of the axis of symmetry) is expected to behave identically (assuming the same initial conditions). (ii) In the second case, the symmetry is associated with two pairs of species simultaneously and can be viewed as a simultaneous occurrence of two of the previous symmetries, along different axes (see Figure 1D). Viewed from a general network perspective, in each case the symmetry is a consequence of rates of different pairs of reactions (intrinsic reaction rate constants as well as total enzyme concentrations) being identical, thus giving rise to the symmetry. Thus enabling such symmetries establishes correspondences/constraints between different pairs of enzymes. Note that in this network we have not made any restrictions on which enzymes may be involved in specific steps. Establishing the structural requirements for symmetry then allows us to examine when and how the multisite modification networks we study exhibit different symmetries.\n\n### Network symmetry meets multisite phosphorylation\n\nWe now focus on the network symmetries in the specific instance of the biochemistry of multisite modification. In so doing, we discuss different types of symmetries which multisite modification networks can exhibit. While some of these symmetries may appear to be more natural biologically, it is useful to examine all these together to obtain a comprehensive systems understanding. Furthermore, some of these have been postulated explicitly or invoked implicitly in multiple different contexts.\n\nSymmetries in such networks require basic conditions/constraints on the kinetics and enzyme amounts (refer Figure 1D, right panel). In particular, equivalence between two reactions (as represented in the schematic) requires that the rate constants of their constituent elementary reactions (binding, unbinding, and catalytic) remain equal. The first two cases of symmetries correspond to a scenario where the two \u2018legs\u2019 of the network are symmetric. The difference between them is what the symmetric nodes of the network correspond to in the context of multisite modification along with the fundamentally distinct pairings of enzymes in each case (discussed further below).\n\n### Case 1 symmetry:[A00]=[A11]\n\nIn this case, the nodes involved in either leg of the symmetric network are A00 and A11. In such a case, the requirement of a symmetry implies that for these two phosphoforms the action of an enzyme (kinase) on one of these substrates (A00) has the same rate as that of another enzyme (phosphatase) on the other substrate (A11) (this is seen by examining the corresponding reaction arrows on the two legs of the network). Furthermore, an analogous requirement applies to the production of each of these species from the partial phosphoforms. With these requirements a symmetry between A00 and A11 is maintained. We further note that such a requirement (of having certain rates of kinase-mediated reactions being equal to that of other phosphate-based reactions) places a constraint on total enzyme amounts as well. Case 1 symmetry is of interest both as a basic independent symmetry and as a constituent of Case 3 symmetry discussed below.\n\n### Accommodating the requirements for symmetry\n\n(i) The above requirements can be accommodated both in the common kinase common phosphatase case and the separate kinase separate phosphatase case, but not in the separate kinase common phosphatase case (discussed in Appendix 1). (ii) We also note that a simpler network, which corresponds to ordered double-site modification, also accommodates a symmetry of this type (while only possessing a single partial phosphoform). Here too, this is accommodated in the common kinase common phosphatase and separate kinase separate phosphatase cases.\n\n### Case 2 symmetry:[A01]=[A10]\n\nIn this case, the nodes involved in either leg of the symmetric network are A01 and A10. Such a symmetry is realized if the following pairs of reactions have the same rates: (i) phosphorylation of A00 to produce the respective partial phosphoforms, (ii) dephosphorylation of A11 to produce the respective partial phosphoforms, (iii) the phosphorylation of the respective partial phosphoforms, and (iv) the dephosphorylation of the two partial phosphoforms. Note that equal rates of reaction require the same intrinsic kinetic rate constants (for binding, unbinding, and catalysis of substrate by enzymes) as well as total enzyme amounts. This is characterized by saying that the rate of modification of all substrates of a given level of modification is the same (and likewise for demodification), and this ensures that progression in substrate modification is equally balanced between the pathways associated with each partial phosphoform (a feature explicitly/implicitly assumed in multiple instances in the literature). This symmetry can be accommodated in all cases of separate/common kinases and separate/common phosphatases.\n\n### Difference between Case 1 and Case 2 symmetries\n\nCase 1 and Case 2 symmetries involve different pairs of symmetric nodes. As noted earlier, the symmetries require both intrinsic rate constants and enzyme amounts to be equal for different pairs of enzymes. The essential difference between the two cases is the essentially different enzyme pairs associated with this. In Case 1 symmetry, the pairing is between enzymes of different types (a kinase and a phosphatase), while in Case 2 it is between enzymes of the same type (between kinases and between phosphatases). This is exactly why Case 1 symmetry is not possible in the separate kinase common phosphatase network, while Case 2 symmetry is.\n\n### Case 3 symmetry: [A00]=[A11] and [A01]=[A10] simultaneously\n\nThis involves the combination of the earlier cases. Here the action of a kinase enzyme on a substrate occurs at the same rate as that of the phosphatase enzyme on its associated substrate in the diagonally opposite modification leg. Thus the action of the kinase on A00 modifying it to A01 is the same as that of the phosphatase action on A11 modifying it to A10. This applies to the modification of all substrates in the network. Such symmetries have been implicated in oscillatory networks of multisite modification underlying circadian oscillators (Jolley et al., 2012). Again, similar to Case 1 symmetry, the separate kinase common phosphatase case cannot accommodate this symmetry.\n\n### The basic questions\n\nThe basic questions we address below are (i) Are these symmetries always maintained or can they be broken? (ii) What network features determine whether or not symmetry breaking is possible? (iii) What kind of capabilities does symmetry breaking provide? (iv) When symmetry breaking is possible, can the parameter regimes for symmetry breaking be established?\n\n### Methods of analysis\n\nTo address the above questions, we employ two approaches in tandem: (i) computational analysis, involving simulations and bifurcation analysis, where we demonstrate the possibility of such behaviour occurring. We note here that our bifurcation parameter is the total substrate concentration, though it could apply to other parameters; and (ii) analytical work which rules out the possibility of symmetry breaking in networks irrespective of kinetic parameters, bringing to the fore structural features which prevent the occurrence of the behaviour. Analytical work is also used to demonstrate necessary conditions for symmetry breaking (in terms of kinetic parameters and total enzyme and substrate amounts) and further that in these cases these conditions are sufficient to guarantee the presence of symmetry breaking. Additionally, analytical work also reveals important characteristics of symmetry-broken states.\n\nWe present the results for Case 1, Case 2, and Case 3 for the different random modification networks below. The ordered double-site modification network can exhibit Case 1 symmetry, as noted above. Therefore, in presenting Case 1 symmetry, we start with this simpler network, before proceeding to the random modification networks.\n\n### Analysis of a simpler ordered mechanism reveals the origins of Case 1 symmetry breaking\n\nWe first analyse the scenario of Case 1 Symmetry. It is instructive to examine an ordered mechanism (Figure 2A) in this regard as it is simpler while exhibiting the same behaviour encountered in random mechanisms. The system has a symmetric steady state which is characterized by (i) equal concentrations of unmodified ($A$) and fully modified ($A_{p\u2062p}$) phosphoforms and (ii) equal concentrations of free kinase and phosphatase (note that the total concentrations of these enzymes need to be the same for symmetry to be present). This steady state simply represents an absence of bias in the direction of modification (i.e. between the unmodified and fully modified phosphoforms). However as the total substrate concentration is varied, we find that this steady state loses stability via a supercritical pitchfork bifurcation (Strogatz, 2001). A pair of asymmetric steady states emerge which are stable. These correspond to either $[A_{p\u2062p}]>[A]$ or the other way around, and unequal free enzyme concentrations. Interestingly on each of these steady-state branches, the value of the intermediate phosphoform $A_{p}$ remains fixed at the level at the bifurcation point (Figure 2A, lower panel). The presence of asymmetric states, as well as the fact that the partial phosphoform concentration is fixed on the branches of asymmetric steady states, is established analytically (see Appendix 1, Source code 1 [Section 2.1], and Supplementary file 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65358/elife-65358-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Case 1 symmetry breaking in distributive DSP: (A) ordered DSP with common kinase and common phosphatase, (B) random DSP with common kinase and common phosphatase, and (C) random DSP with separate kinase and separate phosphatase. Note that in these cases the concentrations of the partially modified substrates are fixed after symmetry breaking (in the symmetry-broken state) in the bifurcation diagrams. (D, E). Case 2 symmetry breaking: (D) random DSP with separate kinase and separate phosphatase and (E) mixed random DSP with distributive phosphorylation through separate kinases and processive dephosphorylation through common phosphatase. Note that in these cases the concentrations of the fully modified and unmodified substrate are fixed after symmetry breaking (in the symmetry-broken state) in the bifurcation diagrams. Dashed lines indicate unstable steady states, while solid lines represent stable steady states in the bifurcation diagram. Dashed lines in the schematic represent axis of symmetry of the network. BP: pitchfork bifurcation.\n\n### Conditions for symmetry breaking\n\nThe asymmetric steady states represent the establishment of overall directionality in the reaction network output, even in the absence of any a priori bias (in terms of reaction rates and enzyme concentrations). Analytical work also reveals the necessary conditions for symmetry breaking to occur in this system: $k_{2}>k_{1}$. In other words, the catalytic rate constant for the second phosphorylation is greater than that of the first phosphorylation step. Note that this does not involve binding or unbinding constants for enzyme/substrate interactions. Further analysis indicates that in such a parameter regime a symmetry-broken state is guaranteed to exist for some value of the bifurcation parameter $A_{T\u2062o\u2062t\u2062a\u2062l}$ (see Appendix 1, Source code 1 [Section 2.1], and Supplementary file 1). It is worth emphasizing here that (i) the nonlinearity responsible for the symmetry breaking arises purely from sequestration effects with no explicit feedback present and (ii) an analogous case of single-site modification is incapable of intrinsically exhibiting such behaviour.\n\n### The random mechanism with common kinase and phosphatase\n\nThe symmetry breaking observed in this ordered mechanism is seen in the random modification with common kinase and phosphatase (Figure 2B). The random modification network can be thought of as two connected \u2018legs\u2019 of ordered modification networks, and consequently echoes of the behaviour seen previously are observed here. In this instance, beyond the bifurcation point, the concentrations of both partial phosphoforms remain fixed at their values at the bifurcation point. This is established analytically (see Appendix 1, Source code 1 [Section 3.1], and Supplementary file 1).\n\n### Conditions for symmetry breaking\n\nAn analytical necessary criterion for the presence of symmetry breaking in this system is presented in Appendix 1, Source code 1 (Section 3.1), and Supplementary file 1. It takes the form $(k_{2}-k_{1})+\\alpha\u2062(k_{2}/a_{2})\u2062(a_{2}-a_{1})>0$. Here $k_{1},k_{2}$ are the catalytic rate constants associated with phosphorylation along one leg of modifications ($A_{00}\u2192A_{01}\u2192A_{11}$), while $a_{1},a_{2}$ are the catalytic rate constants associated with phosphorylation along the other leg of modifications ($A_{00}\u2192A_{10}\u2192A_{11}$). Further $\\alpha$ is a positive constant determined in terms by rate constants (including binding and unbinding). Further work in Source code 1 (Section 3.1) and Supplementary file 1 establishes the fact that this is a sufficient condition for the generation of asymmetric states for some value of $A_{T\u2062o\u2062t\u2062a\u2062l}$.\n\n### A comparison with ordered mechanisms reveals additional flexibility available for symmetry breaking in random mechanisms\n\nWe can make multiple inferences from this condition in relation to the corresponding condition for ordered mechanisms discussed above. (i) If both $k_{2}>k_{1}$ and $a_{2}>a_{1}$, then the requisite condition is satisfied. This means that if each leg (viewed as an ordered mechanism) satisfies the conditions for symmetry breaking in ordered mechanisms, this guarantees the possibility of symmetry breaking in the random mechanism. (ii) For the same reason, if neither leg satisfies the condition, then symmetry breaking is precluded in the random modification network. (iii) Interestingly if only one leg satisfies the criterion for symmetry breaking, it is possible for the entire random network to break symmetry (an example of this is presented in Appendix 2\u2014figure 3). In such a case, the random network can be viewed as being comprising two subnetworks, only one of which is the driver of this behaviour.\n\n### Symmetry breaking is possible even if the enzymes performing each modification are different\n\nRandom mechanisms with different kinases and phosphatases can also exhibit the same type of symmetry (this places constraints on total concentrations of \u2018corresponding\u2019 enzymes, in addition to the kinetic constraints already discussed). As seen in Figure 2C, this system also exhibits a similar symmetry-breaking behaviour as encountered above, and here again the concentration of partial phosphoforms is fixed beyond the bifurcation. The case of different kinases and phosphatases represents a much more general case (not requiring any enzyme to perform more than one modification) with significantly reduced nonlinearity (for the same reason), which is nonetheless sufficient for symmetry breaking.\n\n### Conditions for symmetry breaking reveal requirements on both modification legs\n\nThe necessary conditions for symmetry breaking here are established analytically in Source code 1 (Section 3.3) and Supplementary file 1, where it is also shown that these conditions guarantee the existence of a symmetry-broken state. This takes the form $k_{2}/k_{1}>P_{2Total}/P_{1Total}$ and $a_{2}/a_{1}>P_{1Total}/P_{2Total}$ (the equation could also be written in terms of the total concentrations of kinases). The main difference here is that (i) there are two such conditions to be satisfied and (ii) they also involve total enzyme amounts. (iii) When $P_{2\u2062T\u2062o\u2062t\u2062a\u2062l}=P_{1\u2062T\u2062o\u2062t\u2062a\u2062l}$, this amounts to $k_{2}>k_{1}$ and $a_{2}>a_{1}$, which is a requirement for each of the legs of the modification network. (iv) When $P_{2\u2062T\u2062o\u2062t\u2062a\u2062l}\\neqP_{1\u2062T\u2062o\u2062t\u2062a\u2062l}$, this amounts to a tighter requirement on one of the legs (where enzyme P2 is involved in the first dephosphorylation step) and a weaker requirement on the other (where P2 is involved in the second dephosphorylation step).\n\n### Symmetry breaking cannot be observed in an ordered mechanism constituting a single leg of the modification if all modifications are effected by different enzymes\n\nEach leg of the modification corresponds to an ordered modification mechanism with different kinases and phosphatases, which is incapable of symmetry breaking (as shown in Source code 1 [Section 2.2] and Supplementary file 1) and multistability in general. Thus the observed symmetry breaking is an emergent behaviour of the entire network with both modification legs.\n\n### Implications\n\nThe implication of Case 1 symmetry breaking is that it is possible to establish a directionality to the modification even if none existed, resulting in an establishment of relative dominance of fully modified phosphoforms vis-a-vis fully unmodified forms or the other way round. Case 1 symmetry is also a constituent of Case 3 symmetry, and this has implications in that situation as well.\n\n### Case 2 symmetry: when can it break?\n\nCase 2 symmetry implies that there is no bias in the ordering of modifications and this is manifest in the equal steady-state concentrations of the partial phosphoforms A01 and A10. Examining all the cases of random networks together (Figure 1A\u2013C) reveals the following insights: (i) the case of common kinase and common phosphatase will not lead to the breaking of this symmetry. (ii) The case of different kinase and common phosphatase will also not lead to the breaking of this symmetry. In both cases, this can be shown directly analytically by demonstrating that for any steady states (irrespective of parameters) the partial phosphoforms necessarily must have equal concentrations (see Source code 1 [Sections 3.1 and 3.2] and Supplementary file 1). Incidentally, an identical conclusion can be drawn for the common kinase common phosphatase case, irrespective of the number of modification sites. (iii) On the other hand, the case of different kinase and different phosphatase can indeed exhibit the breaking of this symmetry (Figure 2D) via a supercritical pitchfork bifurcation: here the asymmetric steady states are characterized by fixed values of concentrations of unmodified and fully modified phosphoforms. This is established analytically (see Source code 1 [Section 3.3] and Supplementary file 1).\n\n### Conditions for symmetry breaking\n\nAnalytical results provide further insights. The necessary requirements for an asymmetric state are $k_{1}/k_{4}>P_{Total}/K_{Total}$ and $k_{2}/k_{3}<P_{Total}/K_{Total}$. Note here that $K_{T\u2062o\u2062t\u2062a\u2062l}$ denotes the total concentration of each of the kinase enzymes while $P_{T\u2062o\u2062t\u2062a\u2062l}$ denotes the total concentration of each of the phosphatase enzymes (the equality, a requirement of symmetry). $k_{1},k_{2}$ denote the catalytic constants for phosphorylation of $A$ and the partial phosphoforms (the constants being equal), while $k_{3},k_{4}$ denote the catalytic constants of dephosphorylation of A11 and the partial phosphoforms. Further analysis shows that this is sufficient for the existence of an asymmetric state. From this we can infer that (i) if $k_{1}/k_{4}<k_{2}/k_{3}$ then this behaviour is precluded. (ii) On the other hand if $k_{1}/k_{4}>k_{2}/k_{3}$, then by suitable choices of total enzyme concentrations (quantities easy to manipulate), these conditions can be satisfied. (iii) In such a case, there is only a finite range of ratio of total enzyme concentrations (between $k_{2}/k_{3}$ and $k_{1}/k_{4}$) which can result in symmetry breaking. (iv) The presence of multiple kinases and phosphatases proves to have a combination of both sufficient nonlinearity as well as sufficient flexibility (from the multiplicity of enzymes) to enable such behaviour. As seen previously with multiple kinases/phosphatases, the parameters need to satisfy two inequalities. A combination of the naturalness of the symmetry and the widely encountered modification scenario suggests that symmetry breaking here may be encountered quite broadly.\n\n### Case 2 symmetry breaking in a separate kinase common phosphatase network with processive dephosphorylation\n\nWe aimed to get further insights into the factors driving such behaviour by comparing it with other related networks. To do this, we examined associated random modification networks where the dephosphorylation was processive (Figure 1B, Appendix 2\u2014figure 1A). Note that this implies that the phosphatase has to be the same for all modifications. Here we find that if the kinase is common to different phosphorylation steps, the symmetry does not break; however, surprisingly when the kinases are different, symmetry breaking does indeed happen, as shown in Figure 2E (again reinforcing the flexibility provided by having different enzymes in enabling such behaviour). This is supported analytically (see Source code 1 [Section 4.2] and Supplementary file 1). A direct comparison with the different kinase common phosphatase random mechanism above reveals a new dimension: having processive dephosphorylation while reducing the nonlinearity in the network actually enables this behaviour which was otherwise precluded. Elsewhere we have noted how having processive dephosphorylation could readily enable other behaviour (oscillations) which was not observed when the modification was distributive (Suwanmajo and Krishnan, 2015). We also note that different conditions in the cell (or stimuli) could effect a transition from distributive to processive mechanisms, as demonstrated (Aoki et al., 2013; Aoki et al., 2011; Kocieniewski et al., 2012).\n\n### Implications\n\nCase 2 symmetry breaking ultimately results in the biasing of one ordered sequence of modifications over another. The implications of this as a key step for generating ordering of modifications are discussed subsequently.\n\n### Case 3 symmetry breaking reveals the simultaneous breaking of two symmetries\n\nThe scenario of Case 3 symmetry is examined in Figure 3. This involves a combination of the earlier cases. Figure 3A (and Appendix 2\u2014figure 2) focuses on the common kinase common phosphatase case. Here too, the symmetric steady state (characterized by $[A_{01}]=[A_{10}]$ and $[A_{00}]=[A_{11}]$) can lose symmetry to a pair of asymmetric steady states via a supercritical pitchfork bifurcation (Appendix 2\u2014figure 2). The noteworthy point here is that both symmetries necessarily break together in general. In addition to previously observed bifurcation patterns, new possibilities arise. One is the possibility of a subcritical pitchfork bifurcation (Figure 3A). In such a case, the branches of asymmetric states are unstable at the point of inception, but following a saddle node bifurcation, they become stable. As a direct consequence of this, when the parameter (total concentration of substrate) is varied, a sudden change from a symmetric to asymmetric steady state is observed in simulations, the latter exhibiting a pronounced asymmetry, which is not a small perturbation of the symmetric state. The asymmetric steady states are characterized by high levels of A11 and one of the partial phosphoforms, and low levels of A00 and the other phosphoform, or the other way around. Furthermore, the grouping in which each partial phosphoform is present is determined by baseline parameters (and changing baseline parameters can alter the grouping).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65358/elife-65358-fig3-v2.jpg)\n\n**Figure 3.:** (A) shows Case 3 symmetry breaking in random DSP with common kinase and common phosphatase. The symmetric steady state is capable of losing stability either through a Hopf bifurcation leading to oscillations, which is followed by symmetry breaking through a subcritical pitchfork bifurcation eventually leading to stable asymmetric steady states (column 1), or just by breaking symmetry leading to asymmetric branches through a subcritical pitchfork bifurcation, which eventually becomes stable (column 2). As seen in the plots, both symmetries simultaneously break. Note that the sum of the concentrations of the partially modified substrates is fixed in the asymmetric states in the bifurcation diagrams. Symmetry breaking via a supercritical pitchfork bifurcation, as seen previously in other cases, can also be seen (Appendix 2\u2014figure 2). (B) shows Case 3 symmetry breaking in random DSP with separate kinase and separate phosphatase. The symmetric steady state is capable of losing stability either through a Hopf bifurcation leading to oscillations (column 1) or by breaking symmetry leading to two stable asymmetric branches through a supercritical pitchfork bifurcation (column 2). Note that the sum of the concentrations of the completely modified and completely unmodified substrates is approximately constant in the asymmetric steady states in the bifurcation diagram. (However, Case 3 symmetry breaking in this network is also capable of providing approximate concentration robustness in the sum of the concentrations of partial substrate forms; see main text and Appendix 2\u2014figure 4.) Dotted lines indicate unstable steady states, while solid lines represent stable steady states in the bifurcation diagram. Shaded regions in the bifurcation diagram indicate regions of oscillations, and the blue lines indicate bounds on concentrations during such oscillations. BP: pitchfork bifurcation; HP: Hopf bifurcation; LP: saddle node bifurcation.\n\nIrrespective of the nature of the pitchfork bifurcation (supercritical or subcritical), we find that the sum of partial phosphoform concentrations remains fixed on the asymmetric branches, and this is established analytically (see Appendix 1, Source code 1 [Section 3.1], and Supplementary file 1). The implications of this distinct type of invariant are discussed in the next section. It is interesting to contrast the invariant in this Case 3 symmetry breaking with invariants in symmetry breaking in the constituent symmetries (in this instance of common kinase common phosphatase, Case 1 symmetry, since Case 2 symmetry does not break). In Case 1 symmetry breaking, the invariants are the individual partial phosphoform concentrations while here it is the sum.\n\n### Implications\n\nThis simultaneous breaking of symmetries and pairing of partial phosphoform and fully modified (or fully unmodified phosphoform) has a transparent interpretation. Symmetry breaking simultaneously imposes directionality to the modification (i.e. relative dominance of fully modified vs. fully unmodified phosphoform) as well as a particular route of modification (via one of the two phosphoforms).\n\n### The presence of oscillations\n\nAnother behaviour which is observed in a different parameter regime is the emergence of oscillations, via a Hopf bifurcation, and this precedes the subcritical pitchfork bifurcation (Figure 3A). The oscillations do not preserve the symmetry of the original system. Instead we see correlated changes between the corresponding pairs of substrates at different time intervals. As the total substrate concentration increases, the period of oscillations increases, as the periodic trajectory comes close to a steady state in the phase space (Appendix 2\u2014figure 2). Oscillations in such networks can occur without symmetry breaking, and in fact oscillations emerging from such random modification networks have been the focus of earlier studies (Jolley et al., 2012), Here we show that in the presence of symmetry (a condition recognized as a desirable criterion for oscillations), oscillations may be present in conjunction with symmetry breaking, which affects the oscillatory range and characteristics of oscillations.\n\n### Conditions for symmetry breaking\n\nAnalytical work in the case of common kinases and common phosphatases reveals a necessary condition for the realization of an asymmetric state (which is shown to be sufficient as well). This takes the form $c_{3}\u2062(1-k_{3}/k_{2})+c_{1}\u2062(1-k_{1}/k_{4})>0$. Here c1 and c3 are known positive constants, which depend on kinetic parameters. As in the situation of Case 1 symmetry, this hinges on two ratios of catalytic constants, though in contrast to that case it is the phosphorylation and dephosphorylation rate constants associated with the interconversion between A00 and A01 ($k_{1}/k_{4}$) and dephosphorylation and phosphorylation rate constants for the interconversion between A01 and A11 ($k_{3}/k_{2}$). As before we can make a range of conclusions: (i) $k_{3}/k_{2}>1$ and $k_{1}/k_{4}>1$ will preclude an asymmetric state; (ii) $k_{3}/k_{2}<1$ and $k_{1}/k_{4}<1$ will ensure the possibility of an asymmetric state; and (iii) a combination of parts of the above conditions can allow for an asymmetric state depending on the constants $c_{1},c_{3}$. In this regard, we also point out that these results show when symmetry breaking is precluded, and this combined with (Jolley et al., 2012) yield conditions under which oscillations can occur without interference from symmetry breaking (and in fact multistability).\n\n### The case of different kinases and phosphatases\n\nHere (Figure 3B), we again find symmetry breaking via supercritical pitchfork bifurcations (but not subcritical pitchfork bifurcations), and the symmetry-broken states (which necessarily have both symmetries broken: see Source code 1 [Section 3.3] and Supplementary file 1) are characterized by having a higher level of one pair of substrates (one partial phosphoform and a completely modified/unmodified phosphoform) and a lower level for the other pair.\n\nHere an exact invariant of the form examined previously does not hold: instead we find that (depending on parameters) either the sum of partial phosphoform concentrations or the sum of concentrations of A00 and A11 is approximately constant (see Figure 3, Appendix 2\u2014figure 4, Source code 1 [Section 3.3], and Supplementary file 1). It is worth noting as a contrast that fixed individual concentrations for pairs of species $(A_{01},A_{10})$ and $(A_{00},A_{11})$ are obtained in this case for symmetry breaking of the constituent Case 1 and Case 2 symmetries, respectively. The possibility of oscillations (stable over a broad range of parameters) emerging is also seen here (Figure 3B), though we have never found it occurring side-by-side with symmetry breaking (seen earlier in the common kinase common phosphatase network). The presence of oscillations expands on and complements (Jolley et al., 2012), by revealing oscillations in this network which is desirable as it has additional tuneable dials (multiple total enzyme amounts).\n\n### Implications for inferences based on measurements\n\nIn Case 3 symmetry breaking in both the common kinase common phosphatase and separate kinase separate phosphatase, we find that in the symmetry-broken state the concentration of one partial phosphoform and either unmodified or fully modified form may be significantly elevated relative to its counterpart. This disparity between the two pairs can become pronounced and easily be misinterpreted as suggesting (i) the nonexistence of other active modifications or (ii) a significant disparity in intrinsic kinetic rates of modification in the two legs of the network.\n\n## Discussion\n\nThis paper has focused on symmetry-breaking behaviour in MSP systems (summarized in Figure 4). The wide prevalence and relevance of MSP is well-established, but why focus on symmetry?\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65358/elife-65358-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic representation of realization of symmetry and symmetry breaking in multisite modification networks through the interplay of basic biochemistry of post-translational protein modification and network symmetry. The analysis of the multisite network through symmetry and symmetry breaking reveals the underpinnings of new network features and serves as a rich and distinct vantage point to understand information processing behaviour in multisite modification networks. (B) Symmetry breaking as a new vista for understanding behaviour and engineering functionality in multisite modification networks: symmetry breaking can confer network features such as ordering and directionality to multisite phosphorylation (MSP) networks, limit the range of oscillations, and enable robust homeostasis for individual or combinations of substrates. It also provides key insights on the origin of behaviours in networks which are not far from symmetry. (C) A tabular summary of the presence and absence of symmetry and symmetry breaking in MSP networks, along with features of the symmetry-broken states (exact absolute concentration robustness).\n\nThere are multiple reasons for this: (i) the structure of basic modification networks for MSP (the topology as well as positions of enzyme action therein) admits to the possibility of symmetries. Additionally, these have been sometimes implicitly or explicitly assumed in the literature (Sadreev et al., 2014; Enciso and Ryerson, 2017): for example, Case 2 symmetries where different partial phosphoforms behave in a similar way. In such instances, our results indicate that even if there is no biasing in the network interactions, the two phosphoforms may end up behaving very differently. Thus a simple, plausible assumption may have far-reaching and unexpected consequences. (ii) Certain symmetries may indeed naturally exist, for example, the possibility that modification/demodification can proceed at an equal rate, irrespective of the modification site under consideration (Case 2 symmetry). In other instances (Case 3 symmetry), exhaustive parametric analysis of random double-site modification networks reveals the fact that oscillatory behaviour occurs in clusters centred around these symmetric networks (i.e. parameter sets which enable Case 3 symmetry) (Jolley et al., 2012). Thus networks which possess these symmetries (or represent small to moderate deviations therefrom) represent those enabling oscillations, suggestive of a basic design principle. Case 3 symmetry involves Case 1 and Case 2 symmetries as basic building blocks. Our analysis in both instances indicates distinct, unexpected outcomes which can emerge in terms of system behaviour and information processing characteristics. (iii) The breaking of symmetries may have been exploited during the process of evolution: in such cases, the presence of observed asymmetric networks may have its origins in symmetric cases encountered in evolution. In particular, as discussed further below, we show how multisite modification possesses natural ingredients for creating ordering by (Case 2) symmetry breaking. (iv) The insights we obtain are also relevant to systems where the exact symmetry may not strictly hold, but which are not large deviations of the symmetric case. In the latter case, clear echoes of the behaviour we discuss may continue to be observed (Appendix 2\u2014figures 5 and 6). In such cases, the symmetric scenario provides a key vantage point from which to understand the origins of the behaviour. This behaviour may manifest itself as multistability in these cases, but in contrast to multistability which may be more broadly seen in parameter space, the origins and characteristics of the steady states in these instances can be traced back to the symmetric case and symmetry breaking. This is also an example of how having clear-cut reference cases allows us to elucidate how and why certain behaviour may arise, going beyond parameter scanning-based model analysis and data analysis. We further emphasize that as the number of modifications increases the underlying modification networks become considerably more complex (with an exponential increase in the size of the network in the absence of ordering) and symmetric networks represent one of the few tractable vantage points from which to study such networks. (v) In addition to revealing distinct new information processing characteristics of multisite modification (for instance, exact absolute concentration robustness [ACR] of different types) of relevance in natural systems, this also serves as a potentially fruitful point of departure in engineering information processing circuits involving multisite modification in synthetic biology.\n\nOur studies primarily focussed on different random mechanisms of double-site modification, with different combinations of common/separate kinase and common/separate phosphatase. These serve as a useful basis for investigation, noting that (i) these different types of enzyme combinations are widely encountered in cellular biology (Stepanov et al., 2018; Lyons et al., 2013; Ramachandran et al., 1992), and (ii) the double-site mechanism is among the simplest multisite modification system which both exhibits different types of symmetries and symmetry breaking. This provides a tractable case for understanding this behaviour transparently, serving as a basis for subsequent investigation of more complex modification scenarios. Furthermore, the insights obtained from our analysis suggest natural extensions and generalizations to modification networks with a greater number of modification sites. This is seen in preliminary studies of ordered triple-site modification systems (see Source code 1 [Section 2.3], Supplementary file 1, and Appendix 2\u2014figure 8).\n\n### Symmetries\n\nThe symmetries which arise can be conceptualized and understood by examining symmetries of the underlying \u2018square\u2019 reaction network topology (refer Figure 1D). That viewpoint, relevant for a broad class of chemical reaction networks, can then be applied to the specific instance of multisite substrate modification networks. Our studies involved a systematic analysis of different symmetries which emerge (noting the reasons above): symmetry in the modification direction (Case 1 symmetry: arising from a symmetry in action of the two enzymes on their corresponding substrates), symmetry between different branches of modification (Case 2 symmetry: arising from the same rates of modification to and from phosphoforms at a given level of modification: see text for distinction from Case 1) and combinations of the two (Case 3 symmetry: arising from a symmetry in the action of the two enzymes in the modification/demodification at a given site, but on opposite legs). The different types of symmetries are encountered among the different classes of multisite modification networks (with either common/separate kinase/phosphatase) though some networks may not exhibit all symmetries (summarized in Figure 4C).\n\n### Which symmetries can be broken?\n\nCase 1 symmetry can be broken in all the random modification networks where it exists. This symmetry breaking serves as a distinct mechanism for establishing directionality. Additionally, Case 1 symmetry breaking can also be observed in a simple ordered DSP network (with only a single partial phosphoform), though only in the common kinase, common phosphatase case. This ordered network serves as a simpler network for understanding this symmetry breaking transparently. Case 2 symmetry breaking is the basis of ordering of modifications. While Case 2 symmetry is possible for all combinations of common/separate kinase and common/separate phosphatase, the symmetry is broken only for the different kinase and different phosphatase case. A combination of the flexibility afforded by the different sets of enzymes, along with sufficient nonlinearity (due to enzymes participation in multiple complexes), enables this. Interestingly, if the dephosphorylation mechanism is processive (rather than distributive, as assumed throughout), the separate kinase common phosphatase network can also give rise to Case 2 symmetry breaking, reinforcing how the interplay of processive and distributive modification can enable new behaviour (see Suwanmajo and Krishnan, 2015 for another example). In Case 3, the two symmetries necessarily break together. A distinct behaviour encountered here is the presence of symmetry breaking and oscillatory behaviour. In most cases, the symmetry-broken states are associated with transparent invariants which we analytically identify: these represent a behaviour reminiscent of absolute concentration robustness (discussed below). Additionally, the symmetry breaking manifests as a supercritical pitchfork bifurcation, while in Case 3 symmetry with common kinase/common phosphatase, a subcritical pitchfork bifurcation is observed, along with possible tristability. Our analytical work reveals how symmetry breaking (in all cases studied) may be accessed in large regions of (symmetric) parameter space by varying total enzyme/substrate concentrations, which represent easy to manipulate experimental factors (see Appendix 2\u2014figure 7).\n\n### Multisite modification and network symmetry breaking\n\nIt is worth viewing the above results from a different perspective: the breaking of symmetry in (potentially general) biochemical networks of the \u2018square\u2019 topology (discussed in Figure 1D). While symmetry simply imposes the restriction that the two legs of the network have kinetics which are identical, when can the symmetry actually break? Our study presents multiple insights: (i) firstly, a degree of nonlinearity is required, and this arises from conservation of species and sequestration of enzymes/substrates in complexes, a fundamental aspect of biochemical systems. All the modification networks we consider have enzymes shared between at least two enzyme-substrate complexes (this stems from the fact that a given modification is effected by only one enzyme, and without any ordering) and this provides the nonlinearity. (ii) On the other hand, for symmetry breaking to occur, a sufficient flexibility is required in the network to be able to allow for this. This is clearly seen in Case 2 symmetry in modification networks (with distributive enzyme mechanism), where reduced nonlinearity notwithstanding, it is only the separate kinase separate phosphatase modification network that allows symmetry to be broken. In general, there is a trade-off between nonlinearity and flexibility (associated with distinct enzymes for different steps), but multisite modification provides many instances of sufficient combinations of both factors to realize symmetry breaking. These insights, bringing together basic (bio)chemistry and network features, are broadly relevant in biochemical networks.\n\n### Enzyme sequestration\n\nEnzyme sequestration (and competition) provides the key nonlinearity for generating symmetry breaking obviating the need for explicit feedback. Eliminating enzyme sequestration eliminates the possibility of symmetry breaking. Enzyme competition is a key ingredient in multisite modification, and in general this could combine with zeroth-order ultrasensitivity to generate new behaviour. However, the symmetry breaking we have found does not require any explicit assumption on the kinetic regime of enzymatic action (as seen from the sufficient conditions we have obtained) and so zeroth-order ultrasensitivity is neither necessary nor sufficient for this.\n\nWe now discuss the relevance of our results from different vantage points. All of these underscore the fact that information processing is a characteristic and consequence of the modification network (rather than an individual modification) and that symmetry and symmetry breaking provides distinct classes of insights therein (see Figure 4).\n\n### Ordering and directionality in multisite modification\n\nMultisite modification systems encountered in vivo often exhibit different degrees of ordering ranging from complete ordering of the sequence of modifications, to partial ordering, to a complete absence of ordering (symmetric scenario). Ordering is a fundamental aspect of substrate modification and its deployment in different pathways and processes. In fact, ordering of modifications is key to establishing a strictly sequential logic, which is likely to be an important aspect of information processing in those cellular contexts. A range of studies focus on these contexts, basic principles, and the potent role in engineering multisite modification (Kocieniewski et al., 2012; Lyons et al., 2013; Ramachandran et al., 1992; L\u00f6ssl et al., 2016; Valk et al., 2014; K\u00f5ivom\u00e4gi et al., 2013). How ordering has emerged is however unclear, and there could be multiple contributing factors. Our results indicate that the basic biochemistry of multisite modification by itself provides the basis for creating an ordering by breaking symmetry. The biasing which emerges can itself be very significant, and with possible additional refinements, gives rise to ordering. This demonstrates that a key driving factor could be at the modification network level rather than at the molecular level. Our analysis of the different symmetry cases allows us to explore the different ways in which both ordering and directionality may be determined. We determine explicit conditions for the occurrence of symmetry breaking, revealing broad ranges of parameter space where this can happen. In the context of ordering, this, along with the demonstration of sufficiency of the conditions for symmetry breaking, demonstrates the robustness of the mechanism. We further point out that even if the system is not exactly symmetric an echo of such symmetry breaking may be seen, which is indicated by multiple steady states which strongly bias one pathway over another, in a manner which is not commensurate with the (small) differences in kinetics of the pathways (Appendix 2\u2014figures 5 and 6).\n\nGiven a symmetric (Case 2 symmetry) or close to symmetric network where different phosphoforms behave (essentially) the same, there are different ways in which evolution could lead to biasing of one modification pathway over the other. One is by effecting local changes in one of the pathways. Symmetry breaking allows for a distinct mechanism whereby changing one easy to manipulate parameter (expression level of substrate), a significant biasing of one pathway over the other is established. This could be further reinforced (if this is a desirable outcome) by local changes in the pathway or increasing substrate amounts further (which further accentuates the biasing). This can lead to either partial or even complete ordering subsequently. Thus the mechanism could be seen as an efficient way of effecting a substantial change which could be reinforced and consolidated by further tinkering. It can also generate different robustness characteristics.\n\nA similar comment applies to directionality. Case 3 symmetry breaking results in a combination of ordering and directionality, which ultimately manifests itself as elevated combinations of specific partial phosphoforms and unmodified/fully modified forms. Such a behaviour of the network (for instance, if observed experimentally) could easily be misinterpreted as suggestive of either some modification being inactive or there being a strong bias in the intrinsic kinetics, neither of which may be correct. Our results also provide important insights in the cases of larger numbers of modification sites. For instance, analogues of Case 2 symmetry breaking could explain both ordering and partial ordering (some sequences of modifications ordered) in those systems.\n\n### Absolute concentration robustness\n\nOur analysis reveals the presence of (exact) ACR of different species in the symmetry-broken state. In this regard, we note that (i) the relevant species (in some cases, partial phosphoforms, and in others the fully modified or fully unmodified phosphoforms) exhibit concentration robustness to changes in total substrate concentration and are fixed at a level corresponding to the concentration of these species at the symmetry-breaking bifurcation (the inception of the asymmetric branch). (ii) Depending on the network and the type of symmetry broken, this can manifest itself as ACR for pairs of species (Case 1 and Case 2). (iii) In other cases (Case 3), the robustness is in the sum of concentrations of species, either exactly or approximately. From the above points, we see that multisite modification contains an in-built mechanism of creating robustness for clusters of species, either individually or collectively, something which represents an appealing characteristic for natural and engineered modification networks. It remains to be seen how this has been exploited in cells. (iv) There are different ways in which ACR may be obtained (for instance, in bifunctional enzymes Batchelor and Goulian, 2003; Krishnan et al., 2020). The mechanism seen here shares a feature of ACR observed in autocatalytic networks, arising from a transcritical bifurcation (Shinar and Feinberg, 2011; Krishnan and Floros, 2019) as being intimately tied to a nonlinear dynamic transition arising from the biochemistry. In both cases, there is more than one steady state possible, and one of the steady states exhibits the ACR.\n\n### The origins of ACR\n\nBased on the above, a natural question is which substrates could exhibit (exact) ACR and whether symmetry is a prerequisite. We note that in the ACR we have made no assumption/restriction or invoked any particular kinetic regime for enzymatic action. We answer the questions (based on analytical work: see Appendix 1 and Appendix 2\u2014figure 9) relating to ACR in these terms in the ordered DSP network. (i) Only $A_{p}$ can exhibit ACR, and this occurs only in response to $A_{T\u2062o\u2062t\u2062a\u2062l}$ (not $K_{T\u2062o\u2062t\u2062a\u2062l}$ or $P_{T\u2062o\u2062t\u2062a\u2062l}$). (ii) ACR necessarily requires multiple steady states, with two branches of steady states exhibiting ACR.There is another steady-state branch which does not exhibit ACR, but intersects one of the branches in what was computationally observed to be a transcritical bifurcation. (iii) There is a constraint on parameters to enable this, which is weaker than the symmetry condition. (iv) In the case of symmetry, the two ACR branches are symmetric and intersect with the other branch in a pitchfork bifurcation.\n\n### Approximate ACR\n\nAs noted above, networks deviating from exact symmetry can exhibit approximate concentration robustness (refer Appendix 2\u2014figure 6). Concentration robustness (approximate) could also be obtained in specific limiting kinetic parameter regimes. In ordered DSP with common kinase common phosphatase, we find that (i) $A_{pp}$ and $A$ could also exhibit concentration robustness. This can happen in a regime where the enzyme producing this (from $A_{p}$) acts in the saturated regime while the action of both enzymes on reactions not involving the species under consideration acts in the unsaturated limit (see Appendix 1). Here approximate ACR occurs without requiring multistability. (ii) Similarly approximate ACR can occur in $A_{p}$ without multistability by (for instance) having phosphorylation of $A$ in the saturated regime and phosphorylation of $A_{p}$ and dephosphorylation of $A_{p\u2062p}$ in the unsaturated limit (or having phosphatases in excess). Similar insights can enable approximate ACR for one species in the corresponding random network (see Appendix 1). In contrast to such limiting regimes, absolute/approximate concentration robustness via symmetry breaking is present along with a rich repertoire of information processing characteristics.\n\n### Pathways and modularity\n\nHow does symmetry breaking in multisite modification both affect and be affected by the behaviour of a signalling network of which it is a part? (i) The importance of multisite modification stems from the fact that it confers functionality to proteins which can regulate other processes. Here the symmetry breaking allows for both regulation of downstream pathways as well as insulation of some downstream pathways from the effect of total upstream substrate and other upstream perturbations (via ACR for specific substrates in the modification network). This ability to insulate some parts of a network, while not the others, is a desirable feature which can be exploited: symmetry breaking in multisite modification provides a way of realizing this exactly purely from chemistry without requiring elaborate network structures (incorporating adaptation, feedback, etc.). (ii) Additionally, we find examples of \u2018shared ACR\u2019 where the sum of two species concentrations is fixed. This represents a case where robustness is applied to a combination of pathways if the two species regulate different pathways. This may be relevant in multiple cell signalling contexts by directly incorporating an inbuilt trade-off between the activation of two pathways, for instance, for efficient resource allocation. If the two species regulate the same pathway in the same way, this translates into robustness in regulating the pathway, while allowing flexibility through the redundancy. (iii) The effect of sequestration of a substrate species can be to either facilitate or make difficult the possibility of symmetry breaking. The sequestration of a substrate species in a downstream complex is the basis of a retroactive effect in a signalling pathway (Ventura et al., 2010; Del Vecchio et al., 2008). In the current case, this retroactive effect can help facilitate the possibility of symmetry breaking, and further that this happens in a context-dependent way. (iv) Other factors associated with the network, for instance, feedback, may also significantly affect the possibility of this happening. These aspects need to be assessed systematically and will be studied in the future. Interestingly an existing study (Krishnamurthy et al., 2007) examines sequential multisite modification with two explicit feedbacks: one from the maximally modified phosphoform increasing the probability of (every) modification and the other from the unmodified form increasing the probability of every demodification. In a stochastic setting, this has been shown to result in breaking a symmetry between phosphorylation and dephosphorylation even with no enzyme sequestration. In contrast to this, all our studies are on the intrinsic behaviour of multisite modification and in a deterministic setting.\n\n### Relevance to oscillatory enzymatic networks\n\nStudies of multisite networks have focused on their capacity of generating oscillations (Rust et al., 2007; Van Zon et al., 2007), including random networks with common kinase and common phosphatase with a view to their relevance in circadian oscillators (Jolley et al., 2012). A detailed computational study (Jolley et al., 2012) reveals regions of parameter space which facilitate the presence of oscillations, and the prominent regions are clustered around a symmetric network (the Case 3 network that we have studied). What is the relevance of our analysis here? Our study shows how oscillations occur in such cases, and also how (by changing substrate amounts) both oscillations and symmetry breaking may occur. We can identify different regimes based on our analysis. (i) A regime where symmetry breaking is ruled out. Here our analysis indicates regimes where oscillations can occur without any potential interference from symmetry breaking. (ii) A regime where symmetry breaking is possible, and in fact guaranteed, for some total substrate amount. In the latter case, we demonstrate that by varying total enzyme amounts (easily tuneable dials) it is possible to obtain, multistability, oscillations or a combination of such behaviour (see Appendix 2\u2014figure 7). It indicates how in certain cases symmetry breaking may occur, limiting/preventing a range of oscillations. In particular, it indicates that oscillations do not have to be present for an indefinitely large range (suggested in the computations of Jolley et al., 2012). We provide further insights with regard to oscillations. (iii) The existence of long period oscillations which hover between different symmetric states is also seen (Appendix 2\u2014figure 2). (iv) We demonstrate the possibility of oscillations in networks with different kinases and phosphatases, which potentially benefit from a greater tuneability than the common kinase common phosphatase case. (v) By contrast, we find that the other symmetries do not readily yield oscillatory behaviour, though further work needs to be done to study this exhaustively. The above points sharpen our understanding of oscillations emerging in random modification mechanisms and reinforce the theme of multisite modification as a complex information processor.\n\n### Experimental signatures and testable predictions\n\nOur analysis reveals the key features associated with symmetry breaking, which suggest multiple non-trivial signatures which could be seen experimentally: for instance, a considerable disparity in partial phosphoform behaviour, which may be incommensurate with the (minor) differences in kinetics in the legs of modification, characteristic patterns of ACR for specific species or groups. These signatures even if approximate could suggest the presence of symmetry breaking. On the other hand, experiments could be developed to realize this behaviour by constructing underlying modification circuits either for synthetic purposes or to probe and test the behaviour itself. The multiplicity of enzymes involved allows for the deployment of a broad experimental tool kit for these purposes. Systems mimicking Case 2 symmetry could be created by engineering different modification sites (of similar properties), with modification by different isoforms of an enzyme. If this is also done for the demodification, then an approximate realization of a Case 2 symmetry (different kinase different phosphatase) can be realized. Alternatively, in a similar vein it may be possible to engineer a different kinase common phosphatase system with processive dephosphorylation: here the dephosphorylation could be induced to be processive (as seen elsewhere in cellular contexts). Other approaches could involve reconstitution of components of existing systems, such as circadian oscillators.\n\nIt is worth examining the implications and extensions of our study to a larger number of modification sites. Random networks lead to an exponential increase in the number of states. Additionally, the modifications/demodifications can be effected by common enzymes (for all modifications), distinct enzymes (for every modification), or a combination thereof, leading to a further combinatorial explosion in possibilities. Clearly direct analogues of the symmetry breaking seen here (e.g. Case 1 and Case 2) can be encountered here. In addition, new possibilities can emerge. In Case 2, for instance, in addition to the situation where all modification legs behave the same, we can have a situation where some modification legs (or parts thereof) are the same. Furthermore, not surprisingly, new behavioural characteristics can emerge. For instance, in the ordered triple-site phosphorylation network (Case 1 symmetry: common kinase common phosphatase), we find shared robustness (see Appendix 2\u2014figure 8), not seen in the ordered double-site modification. These aspects need a dedicated study of their own and will be studied in the future. Viewed from the perspective of information storage, symmetry breaking suggests that a symmetric double-site modification network contains a bit of information. We emphasize, however, that symmetric network encodes a richer set of information, such as simultaneously presenting homeostasis and multiple steady states, an observation relevant to networks of any number of modification sites.\n\nAll in all, we have shown how basic biochemistry of multisite modification even within simple modification networks can be the basis of symmetry breaking. Symmetry breaking in turn can confer ordering, directionality, exact concentration robustness, and can significantly enhance the repertoire of information processing in multisite modification and regulation in signalling networks where they are present. The insights which arise from a structured systems study are of relevance in multiple contexts spanning the chemical and the biological, from systems biology to systems chemistry with potential in synthetic biology and the engineering of chemical systems.\n",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "96ea517d-8ddd-4b3b-a3d8-4fa8ffa573ff",
+      "submission_id": "8bb9ab62-864c-4e55-a0b2-60ec1dfc3ecd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Olivier Rivoire, College de France France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65358.sa1](https://doi.org/10.7554/eLife.65358.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper proposes a new theoretical perspective to analyze multisite modification networks based on the symmetries that they display and the way in which these symmetries can be effectively broken. This perspective has several interesting implications, including for the analysis, synthetic design and evolution of these networks.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Symmetry breaking meets multisite modification\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\nThe three Reviewers concur to find the manuscript of interest but raise concerns related to its presentation and its relation to the previous literature. They welcome a resubmission provided that it addresses the points raised by the Reviewers and in particular the following essential points:\n\n1) A clarification of the nature of the differences between the 'cases': to what extent are they really different? wouldn't it possible to have a more synthetic and unified presentation? all reviewers pointed out the manuscript in general and Figure 1D in particular would benefit from an effort of clarification\n\n2) Relation to previous literature: to what extent are the results different from previous proposals, in particular zero-order ultrasensitivity, sequestration effects and previous analyses of symmetry breaking in multisite modification systems? (see in particular references given by Rev #2)\n\n3) To what extent is symmetry breaking a necessary condition for the properties that it can induce, in particular absolute concentration robustness? and to what extent does symmetry need to exactly hold?\n\n4) Make more explicit the evolutionary scenarios that are only briefly sketches: what are the assumptions on the symmetries that are 'naturally' expected to be present prior to any evolution?\n\n5) Include mention of symmetries in other parameters, notably dissociation constants\n\nReviewer #1 (Recommendations for the authors):\n\nPost-translational modifications of proteins at multiple sites, for instance by phosphorylation, play a key role in signal transduction and processing. Their system-level behaviors, which include bistability and oscillations, can be analyzed on a case-by-case basis with mathematical tools from dynamical systems. The main contribution of the paper is to propose a new perspective that goes beyond this case-by-case approach. This is achieved by pointing out that protein networks based on multisite modifications can display symmetries and that these symmetries can be broken to give rise to properties of biological relevance: ordering, directionality, concentration robustness,\u2026\n\nThe paper includes on one side a mathematical analysis of two-site modifications systems, with an detailed analysis of the symmetries that they may display, the conditions for these symmetries to be present, and the conditions under which they may be broken. On the other side, the paper includes an extensive general discussion of the relevance of these analyses for actual biological system.\n\nThis is not a standard paper presenting a specific result or a novel technical method but a thought-provoking proposal revisiting the dynamics of multisite modification systems from a new perspective. While it is difficult to judge it by the usual standards, it should be of broad interest. For instance, no reference is made to any particular experimental system but the authors convincingly argue for the relevance of their point of view for interpreting natural systems and designing synthetic ones.\n\nMy main comment concerns the generality of the concept of symmetry: the paper advocates it in general but focuses on simple cases of reflection symmetry with 2-site modification systems. What other symmetries, if any, may be expected and of interest? How may the approach generalize beyond 2-site modification systems? Addressing exhaustively these questions may be outside the scope of a single article, but it would be worth fleshing out a few possible extensions.\n\n\u2013 Figure 1D is key to define what is meant by symmetry but in my opinion not sufficiently informative. In particular the symmetry in kinetic structure is highlighted while the constraints on enzymes, which seem as essential, are not represented. For instance requiring k1=k3 is not sufficient, something like k1[K1]=k3[P2] is in fact needed? Also, as represented, Case 1 and Case 2 appear as formally equivalent (related through a 45 degree rotation). I was also wondering if more transparent notations could be used for ki, aj, which would reflect the (possible) symmetries?\n\n\u2013 Another example of information processing at the molecular level where symmetry plays a key role is the MWC model of allostery. It may be worth mentioning it as, beyond the analogy, post-translational modifications can be associated with allosteric transitions.\n\n\u2013 The two concepts of information processing and symmetry breaking bring to mind the possibility of encoding a bit of information in the symmetric states: could it be relevant in the context of post-translational modifications?\n\nReviewer #2 (Recommendations for the authors):\n\nIn this paper, the authors demonstrated that the symmetry in the concentration of different phospho-forms of a protein could be broken in multisite phosphorylation processes in proteins, even if the reaction's kinetic parameters to produce those are the same. They analyzed some different classes of symmetries in the kinetics for a protein with two phosphorylation sites and showed some of those shows the pitchfork bifurcation or the Hopf bifurcation. Also, they discussed that the relevance of the symmetry breaking for the absolute concentration robustness.\n\nThe analysis of classes of networks with different symmetries may be of use for future research in the field. Also, the relationship of the symmetry breaking to the absolute concentration robustness may be interesting. However, the discussion of whether symmetry breaking is a necessary condition for the absolute concentration robustness is still lacking. Moreover, the connection to previous studies has not been argued enough. For example, the symmetry-breaking mechanism may be related to the Goldbeter-Koshland-type zero-order ultrasensitivity and the enzyme competition. However, the connection has not been discussed sufficiently. Also, the symmetry breaking in the multisite modification has been studied for networks with feedback. However, mention of those studies is still lacking.\n\nThis paper still has several problems to be addressed, as described below.\n\n1) The writing often lacks clarity and sharpness and is poorly organized. Although the authors showed their analyses for different symmetries in order from Case 1 to 3, the central mechanism of the symmetry breaking may be almost the same in these three classes. Moreover, the ordered distributive DSB seems sufficient to demonstrate the symmetry breaking by such a central mechanism. Hence, I recommend reorganizing the paper; to state detailed analyses for the ordered distributive DSB and an intuitive explanation at first, and then discuss three classes in the following sections.\n\n2) The authors stated that Case 1 symmetry breaking was observed \"only in the common kinase, common phosphatase case,\" and Case 2 symmetry breaking \"is broken only for different kinase and different phosphatase case.\" It looks strange to me. Changes of variables, e.g., from A_00 to A_01, A_11 to A_10, k_1 to k_2, k_3 to a_2, and so on, can transform one case to the other. Thus, the two cases seem to be identical. Please explain why those two cases are different.\n\n3) The mechanism of the symmetry breaking may be a combination of the Goldbeter-Koshland-type zero-order ultrasensitivity and a competition for the enzyme among different phospho-forms of the protein. However, there is no discussion about the relationship of symmetry breaking they found to zero-order ultrasensitivity and phenomena related to the enzyme competition.\n\n4) The authors claimed the importance of the symmetry among phosphorylation and dephosphorylation speeds. However, even if the phosphorylation and dephosphorylation speeds are the same, the difference in dissociation constants can drastically change the actual reaction speed when substrates with different modification states compete for the limited amount of enzyme. (For example, Hatakeyama and Kaneko, PLoS Comput. Biol. (2014) and Hatakeyama Kaneko, Phys. Rev. Research (2020)). Hence, I recommend that the authors emphasize the importance of the symmetry in the dissociation constant as well as the modification speed, to make a reader pay attention.\n\n5) The author demonstrated that if the network is symmetric and the symmetry in concentration is broken, the concentration of some phospho-form of the protein shows the absolute robustness. However, they did not show whether symmetry breaking is necessary for the absolute concentration robustness. Does a network without symmetry never show the absolute concentration robustness?\n\n6) The authors cited papers only written by Ueda's group (Ode and Ueda, (2018), Jolly et al., (2012), Sugui et al., (2017), and Shinohara et al., (2017)) about the circadian clock as references. However, the circadian clock generated by the multisite modification has long been studied in cyanobacteria. Thus, the basic concept has already been stated in previous studies. For example, a generation of the oscillation by a protein with two phosphorylation sites was published in Rust et al., \"Ordered phosphorylation governs oscillation of a three-protein circadian clock.\" (2007). The importance of enzyme sequestration for the oscillation was published in van Zon et al., \"An allosteric model of circadian KaiC phosphorylation.\" (2007). Also, the mechanism of temperature compensation by the competition for the enzyme was published in Hatakeyama and Kaneko, \"Generic temperature compensation of biological clocks by autonomous regulation of catalyst concentration.\" (2012). I recommend citing those papers in addition to Ueda's paper, for the healthy development of the scientific community.\n\n7) The symmetry breaking in the multisite modification has been studied, at least for networks with explicit feedback. Hence, it may be better to tone down the title and some claims.\n\nReviewer #4 (Recommendations for the authors):\n\nIn this manuscript, Ramesh and Krishnan analyze on a theoretical level symmetry breaking in multisite models of covalent modification. The basic idea is that while the underlying network dynamics may preserve certain symmetries, these symmetries can be broken leading to asymmetric states, with for example unequal levels of doubly modified or unmodified phosphoforms. The symmetry breaking requires the presence of nonlinearities which fundamentally result from sequestration effects of the necessary enzymes/substrates. Overall, I found the paper to be a highly original contribution, with some very nice results that could open up new directions, for example in understanding the evolution of asymmetric networks. Their extensive analytical and numerical work clearly supports their conclusions, and suggestions for experimental signatures of broken symmetry are given. This work may have consequences for the fields of network evolution and synthetic biology.\n\nIn general, I found the manuscript to be well-written. Nevertheless, the paper is definitely not an easy read, despite clearly significant efforts from the authors due to the complexity of the subject matter.\n\nOne aspect that needs further attention is to what extent the system needs to be exactly symmetric to exhibit the behavior studied by the authors. This is an important point as some of the required symmetries are not natural: for example, in Case 1 of Figure 1D, k_1=k_3 which means that a phosphorylation and a dephosphorylation reaction must be precisely balanced. There is some effort towards analyzing this in Figure S5, but I think this aspect needs to be given much greater prominence and discussion also in the main text.\n\nThe authors also argue that evolution may have started with a symmetric network with broken symmetry as a starter towards asymmetric networks. This is an interesting idea but isn't it more likely that the networks were just asymmetric to begin with (which has a much bigger parameter space), and that was subsequently exaggerated, rather than starting from an a priori fine-tuned symmetric configuration? A similar issue arises with claims that an observed asymmetric network may not have biased dynamics but may instead simply be due to symmetry breaking within a symmetric network. Without more knowledge surely the former is still much more likely?\n\nKey to the symmetry breaking is the nonlinearity introduced by sequestration effects without the need for explicit feedback. However, I think this needs an expanded discussion (probably with some equations) in the main text rather than being relegated to the (extremely large) methods. This is a central point, I think.\n\nI didn't find the left side of Figure 1D very helpful for my understanding. Also, the explanation of the \"square\" network topology wasn't made very clear; I didn't find it more straightforward than the depictions in Figure 1A-C, for example.\n",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "29c9ca09-c015-40fc-ba3e-60ed47bb1813",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C1",
+      "claim": "Multisite modification is a basic way of conferring functionality to proteins and a key component of post-translational modification networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Multisite modification is a basic way of conferring functionality to proteins and a key component of post-translational modification networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a foundational premise of the paper.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "dd6e85c0-243c-4c6c-8dd3-160e47b93c9c",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C2",
+      "claim": "Under different instances of symmetry of the modification network, the biochemistry of multisite modification can lead to the symmetry being broken.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that under different instances of symmetry of the modification network (invoked explicitly or implicitly and discussed in the literature), the biochemistry of multisite modification can lead to the symmetry being broken.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the paper demonstrated through computational and analytical methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "84e3e005-ab9a-4a30-9fc5-e326fcca0167",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C3",
+      "claim": "Symmetry breaking can confer new capabilities to protein networks, including concentration robustness of different combinations of species in conjunction with multiple steady states.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, through our study we show how symmetry breaking (i) can confer new capabilities to protein networks, including concentration robustness of different combinations of species (in conjunction with multiple steady states)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding in the abstract and demonstrated throughout the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "293797c0-b4ce-4690-8402-e1d99e1210b7",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C4",
+      "claim": "Symmetry breaking could have been the basis for ordering of multisite modification, which is widely observed in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) could have been the basis for ordering of multisite modification, which is widely observed in cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative interpretation of the findings in the abstract.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "434d6a26-4992-4a4f-a2c2-7e4ec15ae88b",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C5",
+      "claim": "Symmetry breaking can significantly impact information processing in multisite modification and in cell signalling networks/pathways where multisite modification is present.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) can significantly impact information processing in multisite modification and in cell signalling networks/pathways where multisite modification is present",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the abstract based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "5b32e79e-f62f-4b4f-9fdf-46574038ecbe",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C6",
+      "claim": "Reversible phosphorylation and post-translational modification of proteins constitutes a basic way of conferring functionality to proteins in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Reversible phosphorylation, and post-translational modification (PTM) of proteins in general, constitutes a basic way of conferring functionality to proteins in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "1dbf608e-4cd3-4804-9c11-6f6d41d4980d",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C7",
+      "claim": "Basic modification mechanisms are capable of acting as complex molecular information processors.",
+      "claim_type": "EXPLICIT",
+      "source": "interest in multisite modification stems from the fact that the basic modification mechanisms are capable of acting as complex molecular information processors (Conradi and Shiu, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "d9075acc-8148-4988-9980-b69178dc9b32",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C8",
+      "claim": "Multisite modification mechanisms can exhibit switching and threshold behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Various studies have highlighted the possibilities of these mechanisms exhibiting switching and threshold behaviour (Markevich et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "844fa260-ddee-43fb-a182-2aec1c6f19ed",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C9",
+      "claim": "Multisite modification mechanisms can exhibit bistability/multistability.",
+      "claim_type": "EXPLICIT",
+      "source": "bistability/multistability (Thomson and Gunawardena, 2009; Conradi and Mincheva, 2014",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "616bd483-5a61-4845-afd9-c25c121832e4",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C10",
+      "claim": "Multisite modification mechanisms can exhibit oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "oscillations Suwanmajo and Krishnan, 2015; Rubinstein et al., 2016; Suwanmajo et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "a46d5fbd-69c5-47b6-9a37-0560017c272a",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C11",
+      "claim": "Multisite modification mechanisms can exhibit biphasic dose\u2013response curves.",
+      "claim_type": "EXPLICIT",
+      "source": "biphasic dose\u2013response curves (Suwanmajo and Krishnan, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "3cf119bb-6357-4cfa-b000-49d93c7e29e9",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C12",
+      "claim": "The rich repertoire of behaviour in multisite modification emerges from the most basic considerations and aspects of enzymatic modification of substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "We emphasize that this rich repertoire of behaviour emerges from the most basic considerations and aspects of enzymatic modification of substrates, and that this behaviour is a feature and a consequence of the modification network (rather than a single modification).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the literature in the introduction.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "2e57a6e1-6757-4aa7-ac17-d3efe0f8029a",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C13",
+      "claim": "Symmetry breaking is a fundamental theme in developmental biology for generating patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "A fundamental theme in developmental biology is the breaking of symmetry to generate patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "4295fcc8-a51e-4262-9ece-dfe0f5a111d7",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C14",
+      "claim": "Strong experimental evidence for Turing-like mechanisms at the core of developmental regulation has been demonstrated in multiple model systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong experimental evidence for such mechanisms present at the core of developmental regulation has been demonstrated in multiple model systems (Onimaru et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "0dc0ad1c-ad5e-4886-8d55-74a3ae5b0f36",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C15",
+      "claim": "Symmetry has been invoked as a key ingredient in the development of the MWC model which has been used to explain allostery in biomolecular information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Symmetry has also been invoked as a key ingredient in the development of the MWC model which has been used to explain allostery in biomolecular information processing (Changeux, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "89e1e581-405f-4422-8732-d68c842cc9b1",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C16",
+      "claim": "Chiral symmetry breaking has been experimentally observed in crystallization of nanoparticles.",
+      "claim_type": "EXPLICIT",
+      "source": "Chiral symmetry breaking has been experimentally observed in crystallization of nanoparticles (Hananel et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "b2ec6470-1955-4c10-947d-f45fb9b4666e",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C17",
+      "claim": "Chiral symmetry breaking has been experimentally observed in fibril formation from racemic mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "fibril formation from racemic mixtures (Kushida et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "98d83e8b-dabe-4796-81dd-145974281775",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C18",
+      "claim": "Chiral symmetry breaking has been experimentally observed in the Soai reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "and in the Soai reaction (Soai et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "244194fe-97bb-448e-a0b3-1cf9e87e4464",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C19",
+      "claim": "The establishment of chirality has been postulated to be important in understanding the origins of life.",
+      "claim_type": "EXPLICIT",
+      "source": "The establishment of such chirality has been postulated to be important in understanding the origins of life (Blackmond, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "99790577-3471-4ac0-bf56-130a7f5b642b",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C20",
+      "claim": "Many of the basic modification networks accommodate different types of symmetries.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, we note that (i) many of the basic modification networks accommodate different types of symmetries, as we discuss below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the introduction and demonstrated in the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "a1a28f42-a6b0-43b6-a57d-1e3021712d38",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C21",
+      "claim": "Certain symmetries resulting in equal concentrations of different partial phosphoforms of a given level have been assumed in multiple contexts, sometimes implicitly.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) Certain symmetries, for example, resulting in equal concentrations of different partial phosphoforms of a given level (Case 2 symmetry, discussed below) are not only plausible in vivo, but have also been assumed in multiple contexts, sometimes implicitly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the literature in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "805f0a17-d8cf-4342-a587-3eb82a82588a",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C22",
+      "claim": "Case 3 symmetry has been found to be particularly desirable in enabling oscillatory behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) Other symmetries (Case 3 symmetry, discussed below) have been found to be particularly desirable in enabling oscillatory behaviour: in fact, a thorough parametric analysis of oscillatory behaviour in certain random double-site modification networks reveals clusters in parameter space centred around parameter sets representing networks with this symmetry (Jolley et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "32233d6d-3264-408c-b051-b286ba7f4250",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C23",
+      "claim": "The ordering of multisite modification is a fundamental aspect of substrate modification and its regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ordering of multisite modification is a fundamental aspect of substrate modification and its regulation, and the deployment of modified substrates in various processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "503c3f1d-feee-48ba-acaa-176ea57d9c3d",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C24",
+      "claim": "The ordering of multisite modification has been the focus of different studies spanning canonical pathways, important cellular processes, basic principles, and engineering for synthetic biology.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been the focus of different studies (Kocieniewski et al., 2012; Lyons et al., 2013; L\u00f6ssl et al., 2016; Valk et al., 2014) spanning canonical pathways, important cellular processes, basic principles, and engineering for synthetic biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "dd878e44-e8f6-41d9-874e-f71f91ee5264",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C25",
+      "claim": "In the ordered double-site modification network with common kinase and common phosphatase, the symmetric steady state loses stability via a supercritical pitchfork bifurcation as total substrate concentration is varied.",
+      "claim_type": "EXPLICIT",
+      "source": "However as the total substrate concentration is varied, we find that this steady state loses stability via a supercritical pitchfork bifurcation (Strogatz, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated computationally and analytically in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "307c9178-ae01-4a72-97c0-3a0f64bb1299",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C26",
+      "claim": "In the ordered double-site modification network with common kinase and common phosphatase, a pair of asymmetric steady states emerge which are stable after the bifurcation.",
+      "claim_type": "EXPLICIT",
+      "source": "A pair of asymmetric steady states emerge which are stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated computationally and analytically in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "9931b3ea-c814-4bc3-8244-4c4c23b834df",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C30",
+      "claim": "The nonlinearity responsible for symmetry breaking in the ordered double-site modification system arises purely from sequestration effects with no explicit feedback present.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth emphasizing here that (i) the nonlinearity responsible for the symmetry breaking arises purely from sequestration effects with no explicit feedback present",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the analytical results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "e995ac63-1e29-4152-abcc-0abccc3efe00",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C31",
+      "claim": "A single-site modification system is incapable of intrinsically exhibiting symmetry breaking behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) an analogous case of single-site modification is incapable of intrinsically exhibiting such behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the results section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "a63a07e3-1f95-4625-85bb-9f46356dcb2b",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C32",
+      "claim": "The symmetry breaking observed in the ordered modification mechanism is also seen in the random modification with common kinase and phosphatase.",
+      "claim_type": "EXPLICIT",
+      "source": "The symmetry breaking observed in this ordered mechanism is seen in the random modification with common kinase and phosphatase (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated computationally and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "1ced9af6-1e5d-4a38-b5d5-6c58cf7ccf3b",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C33",
+      "claim": "In the random modification network with common kinase and phosphatase, beyond the bifurcation point, the concentrations of both partial phosphoforms remain fixed at their values at the bifurcation point.",
+      "claim_type": "EXPLICIT",
+      "source": "In this instance, beyond the bifurcation point, the concentrations of both partial phosphoforms remain fixed at their values at the bifurcation point. This is established analytically (see Appendix 1, Source code 1 [Section 3.1], and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated computationally and established analytically in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "4dab56c6-1b4c-467b-aa5c-5dfdf2f725cd",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C34",
+      "claim": "Random mechanisms with different kinases and phosphatases can exhibit Case 1 symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "Random mechanisms with different kinases and phosphatases can also exhibit the same type of symmetry (this places constraints on total concentrations of 'corresponding' enzymes, in addition to the kinetic constraints already discussed). As seen in Figure 2C, this system also exhibits a similar symmetry-breaking behaviour as encountered above",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated computationally and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "f6c14a9f-9a99-4e8b-90f6-abd98512bc1e",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C35",
+      "claim": "In the random modification network with different kinases and phosphatases, the concentration of partial phosphoforms is fixed beyond the bifurcation.",
+      "claim_type": "EXPLICIT",
+      "source": "and here again the concentration of partial phosphoforms is fixed beyond the bifurcation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated computationally and established analytically in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "7a2fee57-c248-44f5-acc3-1c87907c3a06",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C36",
+      "claim": "Each leg of the random modification network with different kinases and phosphatases corresponds to an ordered modification mechanism with different kinases and phosphatases, which is incapable of symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "Each leg of the modification corresponds to an ordered modification mechanism with different kinases and phosphatases, which is incapable of symmetry breaking (as shown in Source code 1 [Section 2.2] and Supplementary file 1) and multistability in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established analytically in the results section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "141bacc3-e719-4b18-8a63-ba6b2ce731bb",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C37",
+      "claim": "The observed symmetry breaking in the random modification network with different kinases and phosphatases is an emergent behaviour of the entire network with both modification legs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the observed symmetry breaking is an emergent behaviour of the entire network with both modification legs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the analytical results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "85d1149e-876e-4629-a123-99bd69abb499",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C38",
+      "claim": "The case of common kinase and common phosphatase will not lead to the breaking of Case 2 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining all the cases of random networks together (Figure 1A\u2013C) reveals the following insights: (i) the case of common kinase and common phosphatase will not lead to the breaking of this symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated analytically in the results section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "f8585b3c-ee27-4c67-8433-7810fe78ab66",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C39",
+      "claim": "The case of different kinase and common phosphatase will not lead to the breaking of Case 2 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) The case of different kinase and common phosphatase will also not lead to the breaking of this symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated analytically in the results section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "4999e630-257e-4a73-b637-c9967a764c45",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C40",
+      "claim": "For the common kinase and common phosphatase case, the partial phosphoforms necessarily must have equal concentrations at any steady state irrespective of parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, this can be shown directly analytically by demonstrating that for any steady states (irrespective of parameters) the partial phosphoforms necessarily must have equal concentrations (see Source code 1 [Sections 3.1 and 3.2] and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established analytically in the results section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "1e25058c-7dc1-4aea-8c48-f2fd3f6bc6f3",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C41",
+      "claim": "An identical conclusion about equal partial phosphoform concentrations can be drawn for the common kinase common phosphatase case, irrespective of the number of modification sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidentally, an identical conclusion can be drawn for the common kinase common phosphatase case, irrespective of the number of modification sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an extension of the analytical results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "1e319ee1-05fb-4f01-bb8c-131e4d55cc75",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C42",
+      "claim": "The case of different kinase and different phosphatase can exhibit the breaking of Case 2 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) On the other hand, the case of different kinase and different phosphatase can indeed exhibit the breaking of this symmetry (Figure 2D) via a supercritical pitchfork bifurcation",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated computationally and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "f63e8b32-5928-4b2a-a9d6-f0af5dd59e93",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C43",
+      "claim": "In the case of different kinase and different phosphatase with Case 2 symmetry breaking, the asymmetric steady states are characterized by fixed values of concentrations of unmodified and fully modified phosphoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "here the asymmetric steady states are characterized by fixed values of concentrations of unmodified and fully modified phosphoforms. This is established analytically (see Source code 1 [Section 3.3] and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated computationally and established analytically in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "4b477507-17f8-4a43-b69a-66787aa1716e",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C44",
+      "claim": "In the separate kinase common phosphatase network with processive dephosphorylation, if the kinase is common to different phosphorylation steps, the Case 2 symmetry does not break.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we find that if the kinase is common to different phosphorylation steps, the symmetry does not break",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated computationally and analytically in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "bd3356dd-2637-424a-94b8-0669fd4cd8cc",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C45",
+      "claim": "In the separate kinase common phosphatase network with processive dephosphorylation, when the kinases are different, Case 2 symmetry breaking does happen.",
+      "claim_type": "EXPLICIT",
+      "source": "however, surprisingly when the kinases are different, symmetry breaking does indeed happen, as shown in Figure 2E (again reinforcing the flexibility provided by having different enzymes in enabling such behaviour).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated computationally and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "991bb04b-098b-4104-b372-01543ca4e004",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C46",
+      "claim": "Having processive dephosphorylation while reducing the nonlinearity in the network actually enables Case 2 symmetry breaking which was otherwise precluded in the different kinase common phosphatase random mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "A direct comparison with the different kinase common phosphatase random mechanism above reveals a new dimension: having processive dephosphorylation while reducing the nonlinearity in the network actually enables this behaviour which was otherwise precluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the computational results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "73723abf-33db-4d13-bf30-b1ee5fd1842a",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C47",
+      "claim": "Different conditions in the cell or stimuli could effect a transition from distributive to processive mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that different conditions in the cell (or stimuli) could effect a transition from distributive to processive mechanisms, as demonstrated (Aoki et al., 2013; Aoki et al., 2011; Kocieniewski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "3540dd05-b364-4f06-a65c-9dd73f7b1490",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C49",
+      "claim": "In Case 3 symmetry breaking, both symmetries necessarily break together in general.",
+      "claim_type": "EXPLICIT",
+      "source": "The noteworthy point here is that both symmetries necessarily break together in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the results section and established analytically.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "670c0a6e-1d47-469f-a850-624a894b291c",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C50",
+      "claim": "In Case 3 symmetry breaking in the common kinase common phosphatase case, a subcritical pitchfork bifurcation is possible.",
+      "claim_type": "EXPLICIT",
+      "source": "One is the possibility of a subcritical pitchfork bifurcation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated computationally and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "5b03b429-acff-436f-a5c6-114be1b84323",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C51",
+      "claim": "In the subcritical pitchfork bifurcation scenario for Case 3 symmetry, the branches of asymmetric states are unstable at the point of inception, but following a saddle node bifurcation, they become stable.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a case, the branches of asymmetric states are unstable at the point of inception, but following a saddle node bifurcation, they become stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated computationally in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "a7acce51-e360-49f0-bb75-7fe068ea6125",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C52",
+      "claim": "In Case 3 symmetry breaking in the common kinase common phosphatase case, the sum of partial phosphoform concentrations remains fixed on the asymmetric branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of the nature of the pitchfork bifurcation (supercritical or subcritical), we find that the sum of partial phosphoform concentrations remains fixed on the asymmetric branches, and this is established analytically (see Appendix 1, Source code 1 [Section 3.1], and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated computationally and established analytically in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "7d401852-9aa0-462b-80a7-ea083f4b4f07",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C53",
+      "claim": "In Case 3 symmetry breaking in the common kinase common phosphatase case, oscillations can emerge via a Hopf bifurcation, and this precedes the subcritical pitchfork bifurcation.",
+      "claim_type": "EXPLICIT",
+      "source": "Another behaviour which is observed in a different parameter regime is the emergence of oscillations, via a Hopf bifurcation, and this precedes the subcritical pitchfork bifurcation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated computationally and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "ff4071ac-5865-4a07-8710-8c167c820005",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C54",
+      "claim": "The oscillations in Case 3 symmetry breaking do not preserve the symmetry of the original system.",
+      "claim_type": "EXPLICIT",
+      "source": "The oscillations do not preserve the symmetry of the original system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the computational results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "4f27ad42-9a15-4954-bb6c-86d657fc1fdd",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C55",
+      "claim": "In Case 3 symmetry breaking in the separate kinase separate phosphatase case, symmetry breaking occurs via supercritical pitchfork bifurcations but not subcritical pitchfork bifurcations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here (Figure 3B), we again find symmetry breaking via supercritical pitchfork bifurcations (but not subcritical pitchfork bifurcations)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated computationally and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "09442c3b-ee1e-4317-9873-3f9155580009",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C56",
+      "claim": "In Case 3 symmetry breaking in the separate kinase separate phosphatase case, the symmetry-broken states necessarily have both symmetries broken.",
+      "claim_type": "EXPLICIT",
+      "source": "and the symmetry-broken states (which necessarily have both symmetries broken: see Source code 1 [Section 3.3] and Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established analytically in the results section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "3580940e-d26e-4d76-a740-6365e411d723",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C57",
+      "claim": "In Case 3 symmetry breaking in the separate kinase separate phosphatase case, either the sum of partial phosphoform concentrations or the sum of concentrations of A00 and A11 is approximately constant depending on parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Here an exact invariant of the form examined previously does not hold: instead we find that (depending on parameters) either the sum of partial phosphoform concentrations or the sum of concentrations of A00 and A11 is approximately constant (see Figure 3, Appendix 2\u2014figure 4, Source code 1 [Section 3.3], and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated computationally and established analytically in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "4a7704a2-a76e-45dc-a9ae-fc7888bafaca",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C58",
+      "claim": "The possibility of oscillations emerging is seen in Case 3 symmetry breaking in the separate kinase separate phosphatase case.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility of oscillations (stable over a broad range of parameters) emerging is also seen here (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated computationally and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "aa5d2528-856c-40d7-aef4-ea059f0f4588",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C59",
+      "claim": "Enzyme sequestration and competition provides the key nonlinearity for generating symmetry breaking obviating the need for explicit feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzyme sequestration (and competition) provides the key nonlinearity for generating symmetry breaking obviating the need for explicit feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "874d8c9a-b11c-4b08-a5a1-f5ca3eab334f",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C60",
+      "claim": "Eliminating enzyme sequestration eliminates the possibility of symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "Eliminating enzyme sequestration eliminates the possibility of symmetry breaking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "5057b2ae-1022-45a1-84d3-46465d92b004",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C61",
+      "claim": "The symmetry breaking found does not require any explicit assumption on the kinetic regime of enzymatic action.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the symmetry breaking we have found does not require any explicit assumption on the kinetic regime of enzymatic action (as seen from the sufficient conditions we have obtained) and so zeroth-order ultrasensitivity is neither necessary nor sufficient for this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the analytical results in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "36e8d983-8b4c-4785-b7b9-ae428483ccac",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C62",
+      "claim": "Multisite modification systems encountered in vivo often exhibit different degrees of ordering ranging from complete ordering of the sequence of modifications, to partial ordering, to a complete absence of ordering.",
+      "claim_type": "EXPLICIT",
+      "source": "Multisite modification systems encountered in vivo often exhibit different degrees of ordering ranging from complete ordering of the sequence of modifications, to partial ordering, to a complete absence of ordering (symmetric scenario).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "21d1f82a-1509-4ca1-9c6b-4e9ef2779cd1",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C63",
+      "claim": "The basic biochemistry of multisite modification by itself provides the basis for creating an ordering by breaking symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the basic biochemistry of multisite modification by itself provides the basis for creating an ordering by breaking symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "b83780ba-d698-4542-9ed9-787788a3586e",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C64",
+      "claim": "Symmetry breaking demonstrates that a key driving factor for ordering could be at the modification network level rather than at the molecular level.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that a key driving factor could be at the modification network level rather than at the molecular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "1d15c70f-8560-42fa-beaa-2dd1b82c2e65",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C65",
+      "claim": "Symmetry breaking allows for a mechanism whereby changing one easy to manipulate parameter (expression level of substrate) establishes a significant biasing of one pathway over the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Symmetry breaking allows for a distinct mechanism whereby changing one easy to manipulate parameter (expression level of substrate), a significant biasing of one pathway over the other is established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "32c85e58-dea2-4a9a-85c4-e3fee93ae831",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C66",
+      "claim": "Multisite modification contains an in-built mechanism of creating robustness for clusters of species, either individually or collectively.",
+      "claim_type": "EXPLICIT",
+      "source": "From the above points, we see that multisite modification contains an in-built mechanism of creating robustness for clusters of species, either individually or collectively, something which represents an appealing characteristic for natural and engineered modification networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "a14793e6-cb31-4d6b-abea-1618f352c3a3",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C67",
+      "claim": "The mechanism of absolute concentration robustness seen in multisite modification shares a feature with ACR observed in autocatalytic networks, arising from a transcritical bifurcation, as being intimately tied to a nonlinear dynamic transition arising from the biochemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism seen here shares a feature of ACR observed in autocatalytic networks, arising from a transcritical bifurcation (Shinar and Feinberg, 2011; Krishnan and Floros, 2019) as being intimately tied to a nonlinear dynamic transition arising from the biochemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "5f05f6dc-69c4-4e97-bbf7-a2b564a33eb9",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C69",
+      "claim": "Absolute concentration robustness in the ordered DSP network necessarily requires multiple steady states, with two branches of steady states exhibiting ACR.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) ACR necessarily requires multiple steady states, with two branches of steady states exhibiting ACR.There is another steady-state branch which does not exhibit ACR, but intersects one of the branches in what was computationally observed to be a transcritical bifurcation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established analytically in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "0d95805a-2553-4292-b53a-408ae94f5929",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C70",
+      "claim": "There is a constraint on parameters to enable absolute concentration robustness in the ordered DSP network, which is weaker than the symmetry condition.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) There is a constraint on parameters to enable this, which is weaker than the symmetry condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established analytically in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "b39278a9-dc18-4de0-b732-e37b58af564a",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C71",
+      "claim": "In the case of symmetry in the ordered DSP network, the two ACR branches are symmetric and intersect with the other branch in a pitchfork bifurcation.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) In the case of symmetry, the two ACR branches are symmetric and intersect with the other branch in a pitchfork bifurcation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established analytically in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "578bcffc-a4a4-4f72-b38b-b7eecf2da324",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C72",
+      "claim": "Symmetry breaking in multisite modification allows for both regulation of downstream pathways as well as insulation of some downstream pathways from the effect of total upstream substrate and other upstream perturbations via ACR for specific substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Here the symmetry breaking allows for both regulation of downstream pathways as well as insulation of some downstream pathways from the effect of total upstream substrate and other upstream perturbations (via ACR for specific substrates in the modification network).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "75eb7674-facc-4e9c-ab78-889ea2efdc36",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C73",
+      "claim": "Shared ACR where the sum of two species concentrations is fixed represents a case where robustness is applied to a combination of pathways if the two species regulate different pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents a case where robustness is applied to a combination of pathways if the two species regulate different pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "eb778f02-03f7-42bf-81d6-8c761c48a82d",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C74",
+      "claim": "The sequestration of a substrate species in a downstream complex can either facilitate or make difficult the possibility of symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) The effect of sequestration of a substrate species can be to either facilitate or make difficult the possibility of symmetry breaking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "c86cfa8f-04c5-485c-94f4-db918e0806ea",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C75",
+      "claim": "A detailed computational study reveals regions of parameter space which facilitate the presence of oscillations in random networks with common kinase and common phosphatase, and the prominent regions are clustered around a symmetric network (Case 3).",
+      "claim_type": "EXPLICIT",
+      "source": "A detailed computational study (Jolley et al., 2012) reveals regions of parameter space which facilitate the presence of oscillations, and the prominent regions are clustered around a symmetric network (the Case 3 network that we have studied).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "afe95dde-f264-4fda-8558-caded0855a6b",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C76",
+      "claim": "By varying total enzyme amounts, it is possible to obtain multistability, oscillations or a combination of such behaviour in Case 3 symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter case, we demonstrate that by varying total enzyme amounts (easily tuneable dials) it is possible to obtain, multistability, oscillations or a combination of such behaviour (see Appendix 2\u2014figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated computationally and shown in Appendix 2\u2014figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "0d677555-9543-4bf8-84e9-acf8205964e9",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C77",
+      "claim": "Symmetry breaking may occur, limiting/preventing a range of oscillations in certain cases.",
+      "claim_type": "EXPLICIT",
+      "source": "It indicates how in certain cases symmetry breaking may occur, limiting/preventing a range of oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "d9bd8914-5cc7-4a80-8d8a-f15d2dd5d8e7",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "claim_id": "C78",
+      "claim": "Oscillations do not have to be present for an indefinitely large range in Case 3 symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it indicates that oscillations do not have to be present for an indefinitely large range (suggested in the computations of Jolley et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results in the discussion, contrasting with prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8d4b4453-c120-44f0-a8e5-79cd231e6729",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Case 1 symmetry breaking occurs in ordered and random double-site modification networks with common or separate kinases/phosphatases, where symmetric steady states lose stability via pitchfork bifurcations, leading to asymmetric steady states with fixed partial phosphoform concentrations. The nonlinearity arises from enzyme sequestration without explicit feedback, and single-site modification systems cannot exhibit this behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C25-C26, C30-C37 collectively demonstrate Case 1 symmetry breaking through both computational bifurcation analysis (Figures 2A-C) and analytical work establishing necessary and sufficient conditions. The analytical derivations in Source code 1 confirm the fixed partial phosphoform concentrations and identify parameter regimes enabling symmetry breaking. The mechanism is well-characterized as arising from enzyme sequestration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "c3b056e3-a3ef-4b0f-9280-d8f7087a1ec9",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Case 2 symmetry (equal partial phosphoform concentrations) cannot break in common kinase/common phosphatase or separate kinase/common phosphatase networks, but does break in separate kinase/separate phosphatase networks and in separate kinase/common phosphatase networks with processive dephosphorylation. Analytical work proves partial phosphoforms must have equal concentrations in the first two cases regardless of parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C46 provide comprehensive analytical proofs (Source code 1, Sections 3.1-3.3) demonstrating when Case 2 symmetry breaking is precluded versus enabled. The computational results (Figures 2D-E) confirm the analytical predictions. The necessary and sufficient conditions for symmetry breaking are rigorously established, and the surprising role of processive dephosphorylation in enabling symmetry breaking is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "3d6afb8c-755d-468e-af5d-52a7af9231bc",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Case 3 symmetry breaking involves simultaneous breaking of both Case 1 and Case 2 symmetries. In common kinase/common phosphatase networks, both supercritical and subcritical pitchfork bifurcations occur, with the sum of partial phosphoform concentrations remaining fixed. Oscillations can emerge via Hopf bifurcations. In separate kinase/separate phosphatase networks, only supercritical bifurcations occur with approximate concentration robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C58 are well-supported by computational bifurcation analysis (Figure 3A-B) and analytical work (Source code 1, Sections 3.1 and 3.3). The identification of both supercritical and subcritical pitchfork bifurcations, the analytical proof of fixed sum of partial phosphoforms, and the demonstration of oscillations are all rigorously established. The distinction between exact and approximate invariants in different network configurations is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "b921348c-6a19-4c9f-9bc4-afdabf2554ac",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Enzyme sequestration provides the key nonlinearity for symmetry breaking without requiring explicit feedback or specific kinetic regimes. Eliminating enzyme sequestration eliminates symmetry breaking, and zeroth-order ultrasensitivity is neither necessary nor sufficient for this behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by the analytical conditions derived throughout the paper, which show symmetry breaking depends on enzyme sequestration and competition but not on specific kinetic regimes. The sufficient conditions obtained (Source code 1) confirm that no assumptions about enzymatic kinetic regimes are required. This mechanistic insight is consistently demonstrated across all symmetry cases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "df5ed2be-a83b-47ee-bad1-f44a0e03a81a",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Symmetry breaking confers absolute concentration robustness (ACR) for specific substrate species or combinations thereof in conjunction with multiple steady states. In ordered DSP networks, ACR requires multistability with parameter constraints weaker than symmetry conditions, and the mechanism shares features with ACR in autocatalytic networks arising from transcritical bifurcations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C66-C67, C69-C71 are supported by analytical work (Appendix 1, Appendix 2\u2014figure 9) establishing the conditions for ACR and its relationship to multistability. The computational demonstrations show fixed concentrations of specific species beyond bifurcation points. The analytical proofs confirm ACR arises from the bifurcation structure and identify parameter constraints. The comparison to autocatalytic networks is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "041cf55c-880c-41ad-9f98-37f59ef634aa",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Symmetry breaking could provide a basis for the ordering of multisite modification observed in cells by establishing significant biasing of one modification pathway over another through changes in easily manipulated parameters like substrate concentration, demonstrating that ordering could arise at the network level rather than the molecular level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C62-C65 present an interesting hypothesis about the evolutionary origins of ordering in multisite modification. While the computational and analytical results clearly demonstrate that symmetry breaking can create pathway biasing (supported), the claim that this 'could have been' or 'could be' the basis for observed cellular ordering is speculative. The mechanism is plausible and well-characterized, but lacks direct experimental validation in biological systems or evidence that this mechanism actually operates in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "98e267bc-ee99-4d65-a336-fb9a7e691a72",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Symmetry breaking can significantly impact information processing in cell signaling networks by allowing both regulation and insulation of downstream pathways via ACR, enabling 'shared ACR' for pathway combinations, and context-dependent effects of substrate sequestration on symmetry breaking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C72-C74 extrapolate the demonstrated symmetry breaking behavior to broader signaling network contexts. While the ACR and symmetry breaking mechanisms are well-established in the isolated multisite modification networks studied, the claims about impacts on downstream pathways and broader signaling networks are largely speculative. The paper acknowledges (C74) that factors like feedback need systematic assessment in future work, indicating these broader implications require additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "851fb402-5b74-4a2f-81d6-2024dd9233a6",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Case 3 symmetry is particularly desirable for oscillatory behavior in multisite modification networks, with parameter space clusters centered around symmetric networks. Symmetry breaking can limit or prevent oscillations in certain cases, and oscillations need not persist indefinitely as substrate concentration increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C75-C78 are supported by computational analysis (Figure 3, Appendix 2\u2014figure 7) combined with prior work (Jolley et al., 2012). The demonstration that varying enzyme amounts can produce multistability, oscillations, or combinations thereof is computationally shown. The analytical work identifying when symmetry breaking is precluded provides insight into oscillation regimes. The refinement of prior computational predictions about indefinite oscillation ranges is appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "0386ea08-f305-4294-b908-86c54ba5728c",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Many basic modification networks accommodate different types of symmetries, and certain symmetries (particularly Case 2) have been assumed explicitly or implicitly in multiple contexts in the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by the systematic analysis of symmetry conditions across different network architectures (Figure 1D) and references to prior literature. The paper demonstrates which networks can accommodate which symmetries through analytical derivations of the kinetic and enzymatic requirements. The observation about implicit assumptions in prior work is appropriately qualified and contextualizes the study's relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "e8920b80-7bcf-48d9-8c84-20f26310a756",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Multisite modification is a fundamental mechanism for conferring protein functionality and acts as a complex molecular information processor capable of exhibiting switching, bistability, oscillations, and biphasic dose-response curves, with this rich behavior emerging from basic enzymatic modification principles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C12 establish the foundational context for the study through established knowledge and appropriately cited prior work. These claims accurately represent the current understanding of multisite modification as documented in the cited literature (Conradi and Shiu 2018; Markevich et al. 2004; Thomson and Gunawardena 2009; Suwanmajo and Krishnan 2013-2020). This provides appropriate scientific context for the novel symmetry breaking results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "f0c88c12-7944-49e8-96cb-9b0ac0dc497a",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Symmetry breaking is a fundamental theme across biological scales from developmental biology to molecular chemistry, with experimental evidence in Turing mechanisms, the MWC model, chiral crystallization, and potential relevance to origins of life.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C19 provide appropriate background on symmetry breaking across different scientific domains through well-cited prior work (Onimaru et al. 2016; Changeux 2012; Hananel et al. 2019; Kushida et al. 2017; Soai et al. 1995; Blackmond 2020). These claims establish the broader scientific context and motivate the study of symmetry breaking in multisite modification networks. The citations are appropriate and the claims accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "d5118096-96dc-40b9-ae11-43eb354416c9",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ordering of multisite modification is a fundamental aspect of substrate modification and regulation that has been the focus of studies spanning canonical pathways, cellular processes, basic principles, and synthetic biology engineering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 establish the importance of ordering in multisite modification through appropriate citations (Kocieniewski et al. 2012; Lyons et al. 2013; L\u00f6ssl et al. 2016; Valk et al. 2014). This contextualizes why understanding mechanisms that could generate ordering (like symmetry breaking) is scientifically important. The claims accurately represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    },
+    {
+      "id": "9d9c2abb-8726-464a-8cd5-d69ecfada0d9",
+      "content_id": "743701c8-7c79-4f09-8fa5-37a6e9e2dbe3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Different cellular conditions or stimuli can effect transitions from distributive to processive modification mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by appropriate citations to prior experimental work (Aoki et al. 2011, 2013; Kocieniewski et al. 2012) demonstrating such transitions. This contextualizes the relevance of studying both distributive and processive mechanisms and their different symmetry breaking properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:39:18.734409Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd6e85c0-243c-4c6c-8dd3-160e47b93c9c",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "dd878e44-e8f6-41d9-874e-f71f91ee5264",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "307c9178-ae01-4a72-97c0-3a0f64bb1299",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "9931b3ea-c814-4bc3-8244-4c4c23b834df",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "e995ac63-1e29-4152-abcc-0abccc3efe00",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "a63a07e3-1f95-4625-85bb-9f46356dcb2b",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "1ced9af6-1e5d-4a38-b5d5-6c58cf7ccf3b",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "4dab56c6-1b4c-467b-aa5c-5dfdf2f725cd",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "f6c14a9f-9a99-4e8b-90f6-abd98512bc1e",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "7a2fee57-c248-44f5-acc3-1c87907c3a06",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "141bacc3-e719-4b18-8a63-ba6b2ce731bb",
+      "result_id": "8d4b4453-c120-44f0-a8e5-79cd231e6729"
+    },
+    {
+      "claim_id": "85d1149e-876e-4629-a123-99bd69abb499",
+      "result_id": "c3b056e3-a3ef-4b0f-9280-d8f7087a1ec9"
+    },
+    {
+      "claim_id": "f8585b3c-ee27-4c67-8433-7810fe78ab66",
+      "result_id": "c3b056e3-a3ef-4b0f-9280-d8f7087a1ec9"
+    },
+    {
+      "claim_id": "4999e630-257e-4a73-b637-c9967a764c45",
+      "result_id": "c3b056e3-a3ef-4b0f-9280-d8f7087a1ec9"
+    },
+    {
+      "claim_id": "1e25058c-7dc1-4aea-8c48-f2fd3f6bc6f3",
+      "result_id": "c3b056e3-a3ef-4b0f-9280-d8f7087a1ec9"
+    },
+    {
+      "claim_id": "1e319ee1-05fb-4f01-bb8c-131e4d55cc75",
+      "result_id": "c3b056e3-a3ef-4b0f-9280-d8f7087a1ec9"
+    },
+    {
+      "claim_id": "f63e8b32-5928-4b2a-a9d6-f0af5dd59e93",
+      "result_id": "c3b056e3-a3ef-4b0f-9280-d8f7087a1ec9"
+    },
+    {
+      "claim_id": "4b477507-17f8-4a43-b69a-66787aa1716e",
+      "result_id": "c3b056e3-a3ef-4b0f-9280-d8f7087a1ec9"
+    },
+    {
+      "claim_id": "bd3356dd-2637-424a-94b8-0669fd4cd8cc",
+      "result_id": "c3b056e3-a3ef-4b0f-9280-d8f7087a1ec9"
+    },
+    {
+      "claim_id": "991bb04b-098b-4104-b372-01543ca4e004",
+      "result_id": "c3b056e3-a3ef-4b0f-9280-d8f7087a1ec9"
+    },
+    {
+      "claim_id": "3540dd05-b364-4f06-a65c-9dd73f7b1490",
+      "result_id": "3d6afb8c-755d-468e-af5d-52a7af9231bc"
+    },
+    {
+      "claim_id": "670c0a6e-1d47-469f-a850-624a894b291c",
+      "result_id": "3d6afb8c-755d-468e-af5d-52a7af9231bc"
+    },
+    {
+      "claim_id": "5b03b429-acff-436f-a5c6-114be1b84323",
+      "result_id": "3d6afb8c-755d-468e-af5d-52a7af9231bc"
+    },
+    {
+      "claim_id": "a7acce51-e360-49f0-bb75-7fe068ea6125",
+      "result_id": "3d6afb8c-755d-468e-af5d-52a7af9231bc"
+    },
+    {
+      "claim_id": "7d401852-9aa0-462b-80a7-ea083f4b4f07",
+      "result_id": "3d6afb8c-755d-468e-af5d-52a7af9231bc"
+    },
+    {
+      "claim_id": "ff4071ac-5865-4a07-8710-8c167c820005",
+      "result_id": "3d6afb8c-755d-468e-af5d-52a7af9231bc"
+    },
+    {
+      "claim_id": "4f27ad42-9a15-4954-bb6c-86d657fc1fdd",
+      "result_id": "3d6afb8c-755d-468e-af5d-52a7af9231bc"
+    },
+    {
+      "claim_id": "09442c3b-ee1e-4317-9873-3f9155580009",
+      "result_id": "3d6afb8c-755d-468e-af5d-52a7af9231bc"
+    },
+    {
+      "claim_id": "3580940e-d26e-4d76-a740-6365e411d723",
+      "result_id": "3d6afb8c-755d-468e-af5d-52a7af9231bc"
+    },
+    {
+      "claim_id": "4a7704a2-a76e-45dc-a9ae-fc7888bafaca",
+      "result_id": "3d6afb8c-755d-468e-af5d-52a7af9231bc"
+    },
+    {
+      "claim_id": "aa5d2528-856c-40d7-aef4-ea059f0f4588",
+      "result_id": "b921348c-6a19-4c9f-9bc4-afdabf2554ac"
+    },
+    {
+      "claim_id": "874d8c9a-b11c-4b08-a5a1-f5ca3eab334f",
+      "result_id": "b921348c-6a19-4c9f-9bc4-afdabf2554ac"
+    },
+    {
+      "claim_id": "5057b2ae-1022-45a1-84d3-46465d92b004",
+      "result_id": "b921348c-6a19-4c9f-9bc4-afdabf2554ac"
+    },
+    {
+      "claim_id": "84e3e005-ab9a-4a30-9fc5-e326fcca0167",
+      "result_id": "df5ed2be-a83b-47ee-bad1-f44a0e03a81a"
+    },
+    {
+      "claim_id": "32c85e58-dea2-4a9a-85c4-e3fee93ae831",
+      "result_id": "df5ed2be-a83b-47ee-bad1-f44a0e03a81a"
+    },
+    {
+      "claim_id": "a14793e6-cb31-4d6b-abea-1618f352c3a3",
+      "result_id": "df5ed2be-a83b-47ee-bad1-f44a0e03a81a"
+    },
+    {
+      "claim_id": "5f05f6dc-69c4-4e97-bbf7-a2b564a33eb9",
+      "result_id": "df5ed2be-a83b-47ee-bad1-f44a0e03a81a"
+    },
+    {
+      "claim_id": "0d95805a-2553-4292-b53a-408ae94f5929",
+      "result_id": "df5ed2be-a83b-47ee-bad1-f44a0e03a81a"
+    },
+    {
+      "claim_id": "b39278a9-dc18-4de0-b732-e37b58af564a",
+      "result_id": "df5ed2be-a83b-47ee-bad1-f44a0e03a81a"
+    },
+    {
+      "claim_id": "293797c0-b4ce-4690-8402-e1d99e1210b7",
+      "result_id": "041cf55c-880c-41ad-9f98-37f59ef634aa"
+    },
+    {
+      "claim_id": "36e8d983-8b4c-4785-b7b9-ae428483ccac",
+      "result_id": "041cf55c-880c-41ad-9f98-37f59ef634aa"
+    },
+    {
+      "claim_id": "21d1f82a-1509-4ca1-9c6b-4e9ef2779cd1",
+      "result_id": "041cf55c-880c-41ad-9f98-37f59ef634aa"
+    },
+    {
+      "claim_id": "b83780ba-d698-4542-9ed9-787788a3586e",
+      "result_id": "041cf55c-880c-41ad-9f98-37f59ef634aa"
+    },
+    {
+      "claim_id": "1d15c70f-8560-42fa-beaa-2dd1b82c2e65",
+      "result_id": "041cf55c-880c-41ad-9f98-37f59ef634aa"
+    },
+    {
+      "claim_id": "434d6a26-4992-4a4f-a2c2-7e4ec15ae88b",
+      "result_id": "98e267bc-ee99-4d65-a336-fb9a7e691a72"
+    },
+    {
+      "claim_id": "578bcffc-a4a4-4f72-b38b-b7eecf2da324",
+      "result_id": "98e267bc-ee99-4d65-a336-fb9a7e691a72"
+    },
+    {
+      "claim_id": "75eb7674-facc-4e9c-ab78-889ea2efdc36",
+      "result_id": "98e267bc-ee99-4d65-a336-fb9a7e691a72"
+    },
+    {
+      "claim_id": "eb778f02-03f7-42bf-81d6-8c761c48a82d",
+      "result_id": "98e267bc-ee99-4d65-a336-fb9a7e691a72"
+    },
+    {
+      "claim_id": "805f0a17-d8cf-4342-a587-3eb82a82588a",
+      "result_id": "851fb402-5b74-4a2f-81d6-2024dd9233a6"
+    },
+    {
+      "claim_id": "c86cfa8f-04c5-485c-94f4-db918e0806ea",
+      "result_id": "851fb402-5b74-4a2f-81d6-2024dd9233a6"
+    },
+    {
+      "claim_id": "afe95dde-f264-4fda-8558-caded0855a6b",
+      "result_id": "851fb402-5b74-4a2f-81d6-2024dd9233a6"
+    },
+    {
+      "claim_id": "0d677555-9543-4bf8-84e9-acf8205964e9",
+      "result_id": "851fb402-5b74-4a2f-81d6-2024dd9233a6"
+    },
+    {
+      "claim_id": "d9bd8914-5cc7-4a80-8d8a-f15d2dd5d8e7",
+      "result_id": "851fb402-5b74-4a2f-81d6-2024dd9233a6"
+    },
+    {
+      "claim_id": "99790577-3471-4ac0-bf56-130a7f5b642b",
+      "result_id": "0386ea08-f305-4294-b908-86c54ba5728c"
+    },
+    {
+      "claim_id": "a1a28f42-a6b0-43b6-a57d-1e3021712d38",
+      "result_id": "0386ea08-f305-4294-b908-86c54ba5728c"
+    },
+    {
+      "claim_id": "29c9ca09-c015-40fc-ba3e-60ed47bb1813",
+      "result_id": "e8920b80-7bcf-48d9-8c84-20f26310a756"
+    },
+    {
+      "claim_id": "5b32e79e-f62f-4b4f-9fdf-46574038ecbe",
+      "result_id": "e8920b80-7bcf-48d9-8c84-20f26310a756"
+    },
+    {
+      "claim_id": "1dbf608e-4cd3-4804-9c11-6f6d41d4980d",
+      "result_id": "e8920b80-7bcf-48d9-8c84-20f26310a756"
+    },
+    {
+      "claim_id": "d9075acc-8148-4988-9980-b69178dc9b32",
+      "result_id": "e8920b80-7bcf-48d9-8c84-20f26310a756"
+    },
+    {
+      "claim_id": "844fa260-ddee-43fb-a182-2aec1c6f19ed",
+      "result_id": "e8920b80-7bcf-48d9-8c84-20f26310a756"
+    },
+    {
+      "claim_id": "616bd483-5a61-4845-afd9-c25c121832e4",
+      "result_id": "e8920b80-7bcf-48d9-8c84-20f26310a756"
+    },
+    {
+      "claim_id": "a46d5fbd-69c5-47b6-9a37-0560017c272a",
+      "result_id": "e8920b80-7bcf-48d9-8c84-20f26310a756"
+    },
+    {
+      "claim_id": "3cf119bb-6357-4cfa-b000-49d93c7e29e9",
+      "result_id": "e8920b80-7bcf-48d9-8c84-20f26310a756"
+    },
+    {
+      "claim_id": "2e57a6e1-6757-4aa7-ac17-d3efe0f8029a",
+      "result_id": "f0c88c12-7944-49e8-96cb-9b0ac0dc497a"
+    },
+    {
+      "claim_id": "4295fcc8-a51e-4262-9ece-dfe0f5a111d7",
+      "result_id": "f0c88c12-7944-49e8-96cb-9b0ac0dc497a"
+    },
+    {
+      "claim_id": "0dc0ad1c-ad5e-4886-8d55-74a3ae5b0f36",
+      "result_id": "f0c88c12-7944-49e8-96cb-9b0ac0dc497a"
+    },
+    {
+      "claim_id": "89e1e581-405f-4422-8732-d68c842cc9b1",
+      "result_id": "f0c88c12-7944-49e8-96cb-9b0ac0dc497a"
+    },
+    {
+      "claim_id": "b2ec6470-1955-4c10-947d-f45fb9b4666e",
+      "result_id": "f0c88c12-7944-49e8-96cb-9b0ac0dc497a"
+    },
+    {
+      "claim_id": "98d83e8b-dabe-4796-81dd-145974281775",
+      "result_id": "f0c88c12-7944-49e8-96cb-9b0ac0dc497a"
+    },
+    {
+      "claim_id": "244194fe-97bb-448e-a0b3-1cf9e87e4464",
+      "result_id": "f0c88c12-7944-49e8-96cb-9b0ac0dc497a"
+    },
+    {
+      "claim_id": "32233d6d-3264-408c-b051-b286ba7f4250",
+      "result_id": "d5118096-96dc-40b9-ae11-43eb354416c9"
+    },
+    {
+      "claim_id": "503c3f1d-feee-48ba-acaa-176ea57d9c3d",
+      "result_id": "d5118096-96dc-40b9-ae11-43eb354416c9"
+    },
+    {
+      "claim_id": "73723abf-33db-4d13-bf30-b1ee5fd1842a",
+      "result_id": "9d9c2abb-8726-464a-8cd5-d69ecfada0d9"
+    }
+  ],
+  "comparisons": []
+}

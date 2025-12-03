@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study employed a threat conditioning and extinction task with 215 participants (after exclusions) aged 8-50 years, including individuals with and without anxiety disorders. The task involved pre-conditioning, conditioning with 80% reinforcement, and extinction phases using facial stimuli and aversive screams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17, C19-C24 provide comprehensive methodological details about sample characteristics, exclusion criteria, and task design. The task design is well-established (C21) and the sample size is substantial for computational modeling. The exclusion of 136 participants (C19) is appropriately justified and comparable to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Raw SCR data demonstrated successful threat conditioning and extinction. During conditioning, CS+ elicited greater responses than CS-, while CS- showed both generalization and safety learning. During extinction, both stimuli showed rapid response diminishment. Age effects and Phase\u00d7Anxiety interactions were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C37-C46 provide converging evidence from descriptive observations and statistical analyses (repeated-measures ANOVA with appropriate factors). The significant Phase\u00d7CS interaction (C37, p=0.001) and follow-up tests (C38-C39) demonstrate task validity. Statistical tests are properly reported with F-values and p-values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C47",
+      "C48",
+      "C49",
+      "C64"
+    ],
+    "result": "Fourteen reinforcement learning models were fit to conditioning data. Model 7 (Rescorla-Wagner with Bayesian learning rate decay and habituation) was selected as optimal based on BIC comparisons, though it did not differ significantly from Model 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C47-C49, C64 describe a rigorous model comparison procedure. The selection of Model 7 is justified by statistical comparison (C47: ps<0.05, Bonferroni-corrected) and parsimony principles (C49). The use of BIC for model comparison is appropriate. However, the lack of significant difference from Model 8 (C48: p=0.20) introduces some uncertainty about model uniqueness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "CS+ threat learning rate and habituation rate parameters from Model 7 showed no significant associations with anxiety severity or brain structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 report null findings with appropriate statistical tests. The lack of associations is clearly stated with effect sizes (C50: \u03b2s<0.09, ps>0.193) and corrected p-values for neuroimaging (C51: pFWEs>0.05). These negative results are important for understanding specificity of anxiety-learning associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Greater anxiety severity was specifically associated with slower CS- safety learning rate (\u03b2=-0.243, p=0.001), an effect that remained significant when controlling for CS+ habituation. Threat generalization rate was not associated with anxiety severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C73-C75 provide strong evidence for a specific anxiety-safety learning association. The effect survives statistical control (C53: \u03b2=-0.239, p=0.001), demonstrating specificity. The Bonferroni-corrected significance threshold (\u03b1=0.0125 for 4 parameters) is appropriately applied. The null finding for generalization (C73) provides important specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C5"
+    ],
+    "result": "Left nucleus accumbens gray matter volume moderated the association between anxiety severity and safety learning rate (pFWE=0.043). When accumbens volume was smaller, slower safety learning was associated with greater anxiety severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 demonstrate a significant brain-behavior interaction with appropriate FWE correction for multiple comparisons. The effect survives control for CS+ habituation (C55: pFWE=0.040). The interaction decomposition (C56) is supported by visualization in Figure 2D. This represents a novel neuroanatomical finding linking accumbens structure to safety learning in anxiety.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C82"
+    ],
+    "result": "Model 3 (Bayesian-decay learning rate) was selected as the best-fitting model for extinction data, though it did not differ significantly from Models 1, 2, or 5. Extinction learning follows an incrementally-diminishing learning rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C82 describe model selection for extinction based on frequency of best fit and parsimony. However, the lack of statistical difference from other models (C57: ps>0.05, Bonferroni-corrected) indicates less certainty than for conditioning models. The conclusion about diminishing learning rate (C82) is supported but should be interpreted cautiously given model ambiguity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C4",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "CS- extinction rate showed a marginal correlation with anxiety severity (\u03b2=-0.16, p=0.034), with slower extinction associated with greater anxiety. This effect remained when controlling for CS+ extinction rate and conditioning parameters. CS+ extinction rate did not correlate with anxiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C61, C84-C86 report extinction findings, but the primary effect (C59: p=0.034) only reaches marginal significance and does not meet the Bonferroni-corrected threshold (\u03b1=0.025 for 2 parameters). While the effect survives multiple controls (C60-C61), the authors themselves note these effects are weaker and trend-level (C88), calling for caution and replication. The theoretical interpretation (C84-C86) is reasonable but premature given statistical uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C87"
+    ],
+    "result": "Left nucleus accumbens gray matter volume showed trend-level moderation of the association between CS- extinction rate and anxiety severity (pFWE=0.062), with smaller volume associated with slower extinction at higher anxiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C63 report a trend-level neuroimaging finding (pFWE=0.062) that does not reach the FWE-corrected significance threshold of 0.05. While the pattern mirrors the conditioning findings (C87), the lack of statistical significance prevents strong conclusions. The authors appropriately note this requires replication (C88).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "An incrementally-diminishing threat-learning rate (Bayesian decay) provides better fit to human SCR data than fixed learning rates, suggesting greater emphasis on learning from initial threat encounters, which may be adaptive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 draw appropriate inferences from the model comparison results. The Bayesian decay feature was present in the winning models for both conditioning and extinction. The interpretation about adaptive value (C67) is reasonable and supported by citation (Fanselow, 2018), though it remains somewhat speculative about evolutionary function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The habituation term in the optimal model may reflect decreasing conditioned responding as threat cues become predictable, potentially influenced by the 80% reinforcement schedule or the use of trial-level UCS values. UCS responses naturally diminish as learning is achieved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C72 offer multiple speculative interpretations of the habituation parameter. While C71 provides empirical support from prior work, C68-C70 are explicitly speculative (\"could indicate,\" \"could be a product\"). The habituation term improved model fit, but its psychological interpretation remains uncertain without additional experimental manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Fear responses may initially generalize to neutral stimuli as an adaptive mechanism, but continued responding to these stimuli may contribute to persistent and generalized fears in anxiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 provide a reasonable theoretical interpretation of the safety learning findings, supported by citation (Lissek et al., 2014). The interpretation connects the empirical finding (slower safety learning in anxiety) to broader theory about adaptive and maladaptive aspects of fear generalization. However, this remains an inference about mechanism rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The findings extend prior work by suggesting nucleus accumbens structure relates to fear regulation following generalization to safety cues, with potential pathophysiological relevance to anxiety severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 appropriately contextualize the accumbens findings within existing literature (C79: Ray et al., 2020; Dutta et al., 2021; Abraham et al., 2014). The extension to safety learning (C80) is novel and the association with anxiety severity (C81) supports clinical relevance. However, structural findings alone cannot establish functional mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The RW-PH hybrid model, which provided optimal fit in prior studies of threat contingency expression, did not provide the best fit for rapid threat conditioning/extinction in this study. Differences may reflect rapid acquisition versus optimized expression of threat contingencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 appropriately compare current findings to prior work (Homan et al., 2019; Tzovara et al., 2018; Zhang et al., 2016). The explanation for discrepancies (C91) is reasonable speculation about task differences (rapid vs. extended learning). The complementary interpretation (C92) is appropriate scientific reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The computational modeling approach enabled direct quantification of learning dynamics and multiple learning characteristics, providing greater sensitivity than standard trial-averaging approaches. This allowed detection of anxiety-learning associations not found in prior analysis of the same dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 provide a clear comparison between modeling and standard approaches using the same dataset. The previous report (Abend et al., 2020) found no associations, while the current modeling approach identified specific effects (C102). This demonstrates the methodological advantage of computational modeling (C103), though it also raises questions about robustness across analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Study limitations include: few trials for modeling (potentially noisy parameters), cross-sectional design, structural-only MRI, single SCR analysis method, potential confounding psychopathology, and demographic differences between included/excluded participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 provide appropriate acknowledgment of limitations with citations supporting each concern. The authors appropriately note that large sample size (C117) partially offsets the few-trials limitation (C109). The demographic differences (C116) are acknowledged but stated not to influence findings. These limitations are standard for this type of research and appropriately disclosed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Study strengths include: large sample size increasing parameter precision, medication-free carefully assessed participants, wide anxiety and age ranges providing statistical power, and identical task/setting reducing confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 appropriately highlight methodological strengths. The large sample (N=215) is substantial for computational modeling studies. Medication-free status (C118) is important for psychophysiology. Wide ranges (C119) do increase power, though they also introduce heterogeneity. Standardized procedures (C120) reduce measurement error.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Combining anxiety data across youth and adults presents challenges due to different measures (SCARED vs. STAI). Supplementary analyses indicated attenuation of anxiety-learning associations with age and age-specific brain structure moderation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 acknowledge an important methodological challenge in lifespan research. The supplementary age-stratified analyses (C95-C96) provide valuable additional information, though they are not fully reported in the main text. The recommendation for future research (C97) is appropriate. However, this raises questions about whether the combined-age analyses are optimal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Model parameters were estimated using maximum likelihood on individual subjects. Future work could use hierarchical Bayesian estimation to reduce parameter variance, though choosing priors is non-trivial and may not work for all models tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 appropriately describe the parameter estimation approach and suggest methodological improvements. The acknowledgment of challenges with hierarchical Bayesian approaches (C123) is realistic. The current maximum likelihood approach is standard and appropriate, though hierarchical methods could improve precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Theoretical background establishes that threat learning involves conserved neural circuits, individual differences in threat learning are theorized to relate to anxiety symptoms, but prior empirical findings are inconsistent. Computational modeling may overcome limitations of standard methods. Specific processes theorized to relate to anxiety include facilitated conditioning, greater generalization, slower safety learning, and impaired extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C16, C28-C31 provide appropriate theoretical context supported by extensive citations. The identification of inconsistent prior findings (C12) and methodological limitations (C13) justifies the computational modeling approach (C14). The specific theoretical predictions (C28-C31) are well-grounded in prior literature and provide clear hypotheses for testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The findings could inform theories of anxiety etiology, guide future research on learning mechanisms promoting anxiety, enable more sensitive evaluation of exposure therapy theories using modeling-derived indices, and motivate human neuroscience and animal research on identified subcortical structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C108 are speculative about future research directions (\"could inform,\" \"could be evaluated\"). While these are reasonable implications, they represent potential applications rather than demonstrated outcomes. The suggestions are appropriate for a Discussion section but should not be interpreted as established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study used computational modeling to quantify threat learning processes, revealed specific associations with anxiety symptoms, identified neuroanatomical substrates, and extended knowledge of how learning process variations may contribute to anxiety symptomatology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 provide appropriate summary statements of the study's contributions. These conclusions are supported by the empirical findings, particularly the safety learning-anxiety association (C52-C53) and accumbens moderation (C54-C56). The cautious language (\"could potentially contribute,\" C126) appropriately acknowledges the correlational nature of the findings.",
+    "result_type": "MAJOR"
+  }
+]

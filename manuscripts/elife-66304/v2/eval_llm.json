@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript reviews prior literature on sleep function, noting that sleep is evolutionarily conserved and that various hypotheses propose sleep stabilizes, strengthens, weakens, or prunes synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 accurately summarize established knowledge and competing hypotheses from the literature, supported by appropriate citations. These are background claims that contextualize the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The synaptic homeostasis hypothesis (SHY) proposes that wake strengthens synapses through Hebbian mechanisms while sleep downscales synaptic strengths, with slow wave activity correlating with synaptic strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 accurately describe the SHY hypothesis from the literature (Tononi and Cirelli, 2014), providing the theoretical framework the study tests. These are well-established prior work claims with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior studies have reported conflicting results regarding sleep's effects on synaptic strength, with some finding strengthening after wake and others finding potentiation by sleep or no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 accurately summarize contradictory findings in the literature with appropriate citations, establishing the controversy the current study addresses. This contextualizes the need for the present work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The study used juvenile rats (P25-31) to enable high-quality slice recordings during a highly plastic developmental window when Hebbian and homeostatic plasticity are pronounced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide methodological justification supported by citations (Lambo and Turrigiano, 2013; Hengen et al., 2016; Smith et al., 2009; Espinosa and Stryker, 2012). The age choice is appropriate for the experimental goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Juvenile rats showed expected circadian sleep patterns with more sleep during light phase (~60%) than dark phase (~40%), with considerable inter-animal variability and delta power changes consistent with adult rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by experimental data in Figure 1 and consistent with cited literature (Frank and Heller, 1997; Leemburg et al., 2010). The characterization validates the animal model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C104",
+      "C105"
+    ],
+    "result": "A real-time sleep classifier was developed with 93.3% accuracy against manual coding, enabling detection of sleep-dense (69% density) and wake-dense epochs (76% light, 71% dark).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35, C104-C105 describe the novel real-time classification method with validation data (Figure 2D). The 93.3% accuracy is adequate, though the method's reliance on manually adjustable thresholds introduces potential subjectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C51",
+      "C75"
+    ],
+    "result": "mEPSC amplitudes in L2/3 and L4 pyramidal neurons were stable across sleep- and wake-dense epochs in both V1 and PFC, indicating postsynaptic strengths do not globally change with sleep/wake states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C51, C75 are supported by data in Figures 3D-G showing no significant differences in mEPSC amplitudes (p>0.05, Kruskal-Wallis tests). Sample sizes are adequate (17-47 cells per condition) and the authors demonstrate detection sensitivity of <10% changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "A small but significant rightward shift in mEPSC amplitude distribution was observed in PFC L2/3 neurons in dark wake versus sleep conditions, suggesting minor circadian modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by statistical analysis (p=0.015, KS test) in Figure 3G. However, this effect is small and only at the high end of the distribution, and may not be biologically significant given multiple comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "mEPSC frequency was generally stable across conditions, though PFC showed shorter inter-event intervals during light wake compared to dark wake and sleep, suggesting possible time-of-day and state interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by data in Figure 4. The PFC finding (C45) shows statistical significance but the biological interpretation is uncertain and doesn't generalize to V1, limiting its impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "No correlations were found between wake density and mEPSC amplitude/frequency, or between delta power decrease during sleep and mEPSC amplitude/frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by data in Figure 3\u2014figure supplement 2. These negative results are important as they test specific predictions of SHY regarding relationships between sleep pressure and synaptic strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Optogenetically-evoked thalamocortical fEPSPs in L4 were rapidly modulated by behavioral state, being largest during NREM, intermediate during quiet wake/REM, and smallest during active wake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 are supported by data in Figure 5B-F and consistent with cited literature (Vyazovskiy et al., 2008; Matsumoto et al., 2020). The rapid state-dependent modulation is well-documented and likely reflects neuromodulatory effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "fEPSPs were consistently higher amplitude in light versus dark periods across all behavioral states, with rapid changes at light/dark transitions but no gradual circadian oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by data in Figure 5G. The rapid light/dark transition effects likely reflect visual input changes rather than circadian mechanisms, as the authors suggest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "fEPSP amplitude and slope showed no progressive changes during prolonged sleep (up to 4.75 hr) or wake (up to 12.5 hr) epochs, even with stringent density thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by data in Figures 6 and 6\u2014figure supplement 1. The stability across extended periods directly contradicts SHY predictions and is a major finding, though limited to juvenile animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Using a 'sandwich' approach comparing fEPSPs before and after sleep/wake epochs, amplitudes remained stable (<2% change) with no correlation between epoch duration and amplitude change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by data in Figure 7. This complementary analysis strengthens the conclusion that thalamocortical synaptic efficacy is stable across sleep/wake, addressing potential confounds in the time-series analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Evoked spiking in V1 neurons showed state-dependent modulation (more during NREM) but no persistent changes after sleep/wake epochs, with no correlation between epoch duration and spiking changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by data in Figure 8. This extends the fEPSP findings to functional output, showing that thalamocortical transmission efficacy at driving spikes is also stable across sleep/wake.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The real-time classification approach controlled for inter-animal variability in sleep habits, addressing the limitation that <50% of young animals experience sleep-dense epochs at commonly used time points (ZT 4-6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 highlight a methodological strength supported by data in Figure 1. This addresses a significant limitation of prior studies that used fixed time points, though the approach requires manual threshold adjustment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The mEPSC measurement approach can detect changes <10% in amplitude, and previously reported sleep-related synaptic changes are larger than 10%, suggesting sufficient sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 address potential sensitivity concerns with citations to the authors' prior work and literature. This is important for interpreting negative results, though the 10% threshold is somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prior literature shows inconsistent effects of sleep on spine density, mEPSC frequency, and evoked responses, with some studies finding learning-dependent changes but not constitutive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 accurately summarize contradictory prior findings with appropriate citations, contextualizing the current results within the broader literature. These support the interpretation that sleep effects may be context-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The optogenetic stimulation protocol used light exposure ~8000-fold less than levels shown to cause phototoxicity, and stable responses over days suggest no significant photodamage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 address a potential methodological concern with quantitative comparison to published thresholds (Tyssowski and Gray, 2019) and empirical stability data. The calculation appears sound and the concern is adequately addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Rapid state-dependent modulation of fEPSPs and evoked spiking likely reflects neuromodulatory changes and/or network activity changes, with thalamocortical transmission most effective during NREM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 provide mechanistic interpretations supported by citations (Lee and Dan, 2012; Steriade, 2001). The NREM finding (C88) has implications for information transfer during sleep, though this is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Prior studies show variable effects of sleep/wake on spontaneous firing rates across brain regions, suggesting the impact is complex and brain-area dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 accurately summarize literature variability with appropriate citations, supporting the interpretation that sleep effects on neural activity are not uniform across the brain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Sleep facilitates visual system plasticity and gates homeostatic synaptic plasticity (upward during wake, downward during sleep) when induced by perturbations, but does not drive constitutive changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 integrate current findings with prior work (Frank et al., 2001; Hengen et al., 2016; Torrado Pacheco et al., 2021), proposing that sleep gates rather than drives synaptic changes. This interpretation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Sleep does not have a single unified effect on synaptic strengths but rather gates various forms of synaptic plasticity when induced by salient experiences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 present the main interpretive conclusion, integrating experimental data with broader literature. This is well-supported by the negative findings for constitutive changes and positive findings for gating of induced plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Sleep does not drive widespread downscaling of synaptic strengths during the highly plastic critical period in juvenile animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is the primary conclusion, directly supported by the mEPSC (C36-C39) and fEPSP (C61-C65) data showing stability across sleep/wake. This contradicts SHY predictions but is limited to juvenile animals and specific synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "mEPSC amplitudes and thalamocortical synaptic efficacy were stable across sleep- and wake-dense epochs in V1 and PFC of juvenile rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 summarize the main experimental findings supported by Figures 3-8. These are the core results demonstrating stability of synaptic strength across natural sleep/wake cycles.",
+    "result_type": "MAJOR"
+  }
+]

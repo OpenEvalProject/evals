@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C28",
+      "C40",
+      "C41",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Participants relied more on episodic memory when incremental learning estimates were more uncertain due to environmental volatility. This effect was demonstrated across two independent samples (n=254 and n=223) using a novel task that directly contrasted episodic and incremental influences on decision-making. The primary finding shows that greater relative uncertainty (RU) about incrementally learned deck values increased the likelihood that participants retrieved individual episodic memories to guide choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C28, C40, C41, C77, C78 are strongly supported by converging evidence from behavioral analyses (EBCI), computational modeling (RB2H+RU model outperformed alternatives), and successful replication in an independent sample. The model comparison (C19) and trial-by-trial uncertainty analyses provide rigorous quantitative support. The interpretation (C79, C80) follows logically from the data, though the causal mechanism remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C31"
+    ],
+    "result": "The reduced Bayesian model with separate hazard rates for each environment (RB2H) and sensitivity to uncertainty at retrieval time best predicted participant choices. Model comparison using cross-validation showed this model outperformed simpler alternatives, and including uncertainty at encoding time did not improve model fit beyond uncertainty at retrieval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C31 are supported by rigorous model comparison using 20-fold cross-validation and ELPD metrics (Figure 3A, Figure 4\u2014supplement 2C). The hierarchical Bayesian inference approach with convergence diagnostics (R-hat) strengthens confidence. However, the manuscript lacks details on whether alternative model architectures were considered, and the appendix references suggest additional models exist but are not fully described in the main text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42",
+      "C51",
+      "C73"
+    ],
+    "result": "Individual differences in episodic memory quality modulated the balance between episodic and incremental learning systems. Participants with better subsequent memory performance showed greater sensitivity to episodic value and reduced sensitivity to incremental value during decision-making. Objects from putatively episodic-based choices were better remembered than those from incremental-based choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C51, C73 are well-supported by subsequent memory data (Figure 5) showing correlations between memory performance and model-estimated sensitivities. However, C39 and C42 represent broader interpretations that extend beyond the data. The directionality of causation is unclear\u2014does better memory cause more episodic reliance, or does episodic reliance during encoding improve memory? The correlational nature limits causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Uncertainty at encoding improved subsequent memory for objects, but had little effect on whether episodic memory was used to guide decisions at retrieval. This dissociation suggests uncertainty and novelty may operate through different mechanisms, with uncertainty affecting encoding strength but not retrieval-based decision strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C61 are supported by the data showing improved subsequent memory with encoding uncertainty but no effect on EBCI or model fit (Figure 4\u2014supplement 2). However, C62's interpretation about uncertainty and novelty operating in concert is speculative and relies heavily on a single citation (Xu et al., 2021). The dissociation is interesting but the mechanistic interpretation requires additional experimental manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C75",
+      "C76"
+    ],
+    "result": "A substantial proportion of participants (120/418 in main sample, 124/401 in replication) failed to show sensitivity to the volatility manipulation and were excluded from analysis. The authors note this may reflect limitations of online data collection or the relatively subtle difference between volatility conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C87-C90, C75 are straightforward reports of exclusion data. However, C76 is speculative about causes. The high exclusion rate (~29-31%) raises concerns about generalizability and whether the included sample represents typical behavior. The exclusion criterion (requiring faster learning in high vs. low volatility) may introduce selection bias by only including participants who show the predicted effect, potentially inflating effect sizes in the remaining sample.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Prior work has established that incremental learning and episodic memory both contribute to decision-making, that uncertainty plays a role in arbitrating between decision systems, and that people adapt learning rates in response to environmental volatility. Imbalances in such arbitration have been linked to clinical dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C6-C8 are well-supported by extensive citations to established literature. These represent accurate summaries of prior work that motivate the current study. The citations appear appropriate and the characterizations are consistent with the cited work. However, the manuscript does not critically evaluate potential limitations or controversies in this prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C5"
+    ],
+    "result": "The authors hypothesize that incremental learning is most beneficial when volatility is low and many experiences can be leveraged, while episodic memory should be favored when environments change frequently. This reflects a broader hypothesis that the brain judiciously adopts different decision strategies based on their relative suitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 represent logical predictions that follow from the properties of each learning system and are supported by the experimental results. However, C5 is a general hypothesis statement that, while plausible and supported by the current findings, represents a broader theoretical claim that extends beyond what can be definitively concluded from this single study. The hypothesis is well-motivated but remains partially speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C74"
+    ],
+    "result": "The findings align with theoretical and computational work suggesting episodic memory benefits decision-making when data are sparse, and extend principles of uncertainty-based arbitration previously demonstrated for model-free/model-based systems. Artificial agents with episodic memory show similar advantages in computational studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48, C74 appropriately contextualize the current findings within prior theoretical and computational work. The citations are relevant and the connections are logical. However, the direct comparison to model-free/model-based arbitration (C46-C48) may be somewhat oversimplified, as the computational and neural mechanisms may differ substantially between these frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors speculate that behavioral signatures attributed to model-based learning might arise from episodic retrieval, though they argue working memory is unlikely to account for their effects due to capacity constraints given the task demands (dozens of trial-unique stimuli over tens of trials).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 is explicitly speculative and supported only by citations to theoretical work. C54's argument against working memory is logical given known capacity limits (~4 items), but the task involves recognition of previously seen items rather than active maintenance, which could engage different memory systems. The manuscript provides no direct evidence (e.g., working memory load manipulations) to rule out working memory contributions. This remains an open question requiring additional experimentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Prior work has shown that novelty and familiarity modulate encoding and retrieval states, with prediction errors and surprise enhancing episodic memory. These states can bias decisions toward or away from using single past experiences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 accurately summarize relevant prior work with appropriate citations. These provide important context for interpreting the current findings, particularly the dissociation between encoding and retrieval effects of uncertainty. The characterizations appear accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors speculate that norepinephrine and acetylcholine may play important roles in managing the tradeoff between incremental learning and episodic memory, given their known involvement in uncertainty signaling, learning, and memory formation. Both neuromodulators have anatomical connections to the hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C67 accurately cite established anatomical and functional knowledge about NE and ACh. However, C63 and C68 are speculative extensions without direct evidence from the current study. The manuscript provides no measurements of neuromodulatory function (e.g., pupillometry, pharmacological manipulations). While the speculation is plausible and well-motivated, it remains untested and represents a direction for future work rather than a supported finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors acknowledge that uncertainty arises from multiple environmental parameters beyond volatility (e.g., stochasticity, valence), and that volatility manipulations are a well-established but not exclusive means of modulating uncertainty. Other factors like valence also affect uncertainty estimation and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 appropriately acknowledge limitations and contextualize the choice to focus on volatility. The citations supporting volatility manipulations (C70) are extensive and appropriate. The acknowledgment of other sources of uncertainty (C69, C71) demonstrates appropriate scientific caution. However, the manuscript does not empirically test whether the effects generalize to other forms of uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C50"
+    ],
+    "result": "The authors argue that multiple memory systems (rather than a single system with feature-based attention) are involved in their task, citing extensive prior work. They note that an observer with perfect episodic memory would always benefit from using it in their task design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is well-supported by extensive citations to prior work demonstrating behavioral and neural dissociations between memory systems. C50 is a logical inference about optimal behavior given the task structure (objects maintain constant value across appearances). However, the manuscript does not provide direct neural evidence (e.g., fMRI) to definitively demonstrate that separate systems are engaged. The subsequent memory findings (C73) provide supporting behavioral evidence but do not conclusively rule out alternative single-system accounts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C85",
+      "C86"
+    ],
+    "result": "The experimental design involved 320 trials with trial-unique objects that could reappear once after 9-30 trials with the same value, regardless of current deck luckiness. This design allowed independent assessment of episodic and incremental influences on choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C85, C86 are straightforward descriptions of the experimental design that are clearly documented in the methods and Figure 1. The design is well-suited to the research question and allows for the intended dissociation between episodic and incremental influences. The sampling procedure for old objects is described in detail and appears appropriately controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The brain optimizes the balance between different forms of learning according to volatility in the environment, as indicated by the modulation of episodic memory use by reward uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 represents the main conclusion of the paper and is supported by the convergence of behavioral, modeling, and replication evidence (C1, C19, C28, C40, C41). However, the term 'optimizes' implies a normative claim about optimality that is not directly tested. The study shows that participants adjust their strategy in a manner consistent with rational arbitration, but does not demonstrate that this adjustment is truly optimal (e.g., by comparing to an ideal observer model or showing that the strategy maximizes reward).",
+    "result_type": "MAJOR"
+  }
+]

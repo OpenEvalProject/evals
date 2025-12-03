@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors developed a novel method combining FUCCI-based live-cell imaging with single-cell RNA sequencing to assign precise cell cycle times to individual sequenced cells, enabling high-resolution temporal transcriptome profiling during the M-G1 phase transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C25-C28 describe the methodological development and validation of the FUCCI-based timing system. The method is well-documented with calibration procedures (C27-C28), normalization strategies, and validation against alternative approaches (C72-C73). The polynomial fitting approach and comparison with Monocle2 provide convergent evidence for the method's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C50"
+    ],
+    "result": "Two temporally distinct waves of mRNA decay occur sequentially during the M-G1 phase transition: the first wave initiates within 20 minutes of metaphase (during mitotic exit), and the second wave initiates at approximately 80 minutes after metaphase (in early G1 phase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C23, C36-C39 collectively demonstrate two waves of mRNA decay through multiple independent methods: spline analysis of scRNA-seq data (C36-C37), RT-qPCR validation (C41), and mathematical modeling (C50). The convergence of these approaches with consistent timing provides strong support for this central finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Single-molecule FISH and RT-qPCR experiments confirm that immediate decrease genes (TOP2A, CDK1, FBXO5, UBE2C, FZR1) decline during mitotic exit, while delayed decrease genes do not decline until G1 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 provide orthogonal validation of the two waves using smFISH (C42-C43) and RT-qPCR across mitotic stages (C44-C46). The data show significant decreases in immediate decrease genes during anaphase/telophase while delayed decrease genes remain stable, supporting the temporal distinction between the two waves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Both waves of mRNA decay occur sequentially in the same cells entering G1 phase (rather than representing distinct cell populations entering G1 versus G0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 address a critical alternative explanation. C47 uses p53 knockout cells that exclusively enter G1 to show both waves occur in cycling cells. C48 demonstrates high correlation between immediate and delayed decrease gene expression in individual cells, ruling out the possibility that the two waves represent different cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "mRNA decay during the M-G1 transition is driven by active degradation mechanisms rather than transcriptional inhibition alone, as evidenced by substantially shorter mRNA half-lives (median 61.5 min) during M-G1 compared to asynchronous cells and high mRNA stability in mitosis, G2, and late G1 phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 establish active decay through multiple lines of evidence: transcription is reduced for nearly all downregulated genes (C49), computed half-lives are much shorter during M-G1 than in asynchronous cells (C51-C52), and transcription inhibition experiments show mRNAs are stable in mitosis, G2, and late G1 but unstable during M-G1 transition (C54-C56). This comprehensive analysis strongly supports active, scheduled degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "CNOT1, a subunit of the CCR4-NOT deadenylase complex, contributes to mRNA decay during both waves of the M-G1 phase transition, as demonstrated by increased mRNA abundance in CNOT1-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C60-C62, C66, C68-C69 demonstrate CNOT1's role through siRNA and CRISPRi depletion experiments. While the effects are modest (20-25% increase for TOP2A/CDK1 in telophase, C61; small but reproducible effects for 8/10 genes tested, C68), the authors acknowledge this limitation is likely due to incomplete depletion while maintaining cycling cells (C87). The consistency across multiple genes and both waves supports CNOT1's involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C85"
+    ],
+    "result": "Transcripts subject to decay during the M-G1 transition have significantly shorter poly(A) tails in mitosis compared to control genes, with immediate decrease genes showing the most pronounced shortening (median 58 vs 79 nucleotides).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C85 are based on re-analysis of published poly(A) tail data. The analysis shows statistically significant differences in poly(A) tail length that are specific to mitosis (C65), providing mechanistic insight into how CNOT1-dependent deadenylation may mark transcripts for decay. The re-analysis approach is appropriate and the findings are consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Differential transcriptome analysis identified 220 downregulated and 42 upregulated genes during the M-G1 transition, with strong enrichment for cell cycle functions. The FUCCI-based method shows good correlation with Monocle2 trajectory inference but provides more accurate temporal resolution in early G1 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 describe the transcriptome analysis results. The identification of differentially expressed genes is well-supported by the data (C29-C30), with appropriate validation through Gene Ontology analysis (C31) and comparison with known cell cycle genes (C32). The comparison with Monocle2 (C33-C35) demonstrates both convergence and the advantages of the FUCCI-based approach for temporal resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C75",
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "Scheduled mRNA decay represents an additional mechanism, alongside protein degradation and transcriptional control, that helps reset gene expression following cell division by preventing carry-over of G2/M transcripts into the next cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C75-C77, C80 represent the main biological conclusion of the study. This conclusion is well-supported by the collective evidence showing: (1) active decay mechanisms during M-G1 (C57), (2) high mRNA stability outside this window (C76), and (3) the inference that transcriptional inhibition alone would lead to significant transcript carry-over (C77). The conclusion appropriately integrates the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C81",
+      "C86",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The two waves of mRNA decay may be regulated by distinct mechanisms involving different RNA-binding proteins that recruit CNOT1 to specific transcript sets, though additional decay mechanisms beyond CNOT1-dependent deadenylation may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67, C81, C86, C88-C90 are explicitly speculative (using language like 'may indicate', 'could suggest', 'it is possible'). While these speculations are reasonable given the data, they represent hypotheses for future work rather than demonstrated findings. The modest effects of CNOT1 depletion (C87) and the observation of two waves both stimulated by CNOT1 (C89) suggest additional complexity that requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Continued expression of G2/M genes in G1 phase may perturb normal cell cycle progression and potentially contribute to cellular transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is explicitly speculative and based on inference from the data combined with cited literature. While the speculation is reasonable given that many downregulated genes have cell cycle control functions, the manuscript does not provide direct experimental evidence for this functional consequence. This represents a hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C24",
+      "C58",
+      "C59",
+      "C70",
+      "C71",
+      "C74",
+      "C78",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The manuscript provides appropriate context from prior work on cell cycle regulation, mRNA decay mechanisms, and limitations of existing methods for studying cell cycle dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C18, C21, C24, C58-C59, C70-C71, C74, C78, C82-C84 represent background knowledge and citations to prior work. These claims appropriately contextualize the current study and are supported by the cited literature. The characterization of prior work appears accurate and provides proper motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "The M-G1 phase transition was selected for study because gene expression needs to be reset after cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 provides the rationale for focusing on the M-G1 transition. This rationale is reasonable and well-supported by the cited literature on protein degradation during this transition (C21) and the known importance of resetting gene expression after division.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Most mRNAs reached a new steady-state level at later times (>8 hr) in G1 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is based on analysis showing that slopes of individual mRNAs center around zero at later G1 time points. This observation is consistent with the data and supports the interpretation that the decay process is complete by this time, with mRNAs reaching new steady-state levels.",
+    "result_type": "MINOR"
+  }
+]

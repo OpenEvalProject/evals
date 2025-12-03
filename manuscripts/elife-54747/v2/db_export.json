@@ -1,0 +1,1896 @@
+{
+  "submission": {
+    "id": "44ee8111-9e85-4343-8799-a9d172135611",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:34:27.934372Z",
+    "updated_at": "2025-12-03T01:34:27.934372Z"
+  },
+  "content": [
+    {
+      "id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "submission_id": "44ee8111-9e85-4343-8799-a9d172135611",
+      "content_type": "manuscript",
+      "content_text": "# The clonal structure and dynamics of the human T cell response to an organic chemical hapten\n\n## Authors\n\n- Tahel Ronel<sup>1</sup> ([ORCID: 0000-0002-9513-9181](https://orcid.org/0000-0002-9513-9181))\n- Matthew Harries<sup>3</sup>\n- Kate Wicks<sup>3</sup>\n- Theres Oakes<sup>1</sup>\n- Helen Singleton<sup>3</sup>\n- Rebecca Dearman<sup>3</sup>\n- Gavin Maxwell<sup>5</sup>\n- Benny Chain<sup>1</sup> ([ORCID: 0000-0002-7417-3970](https://orcid.org/0000-0002-7417-3970)) \u2020\n\n### Affiliations\n\n1. Division of Infection and Immunity, University College London London United Kingdom\n2. Cancer Institute, University College London London United Kingdom\n3. Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom\n4. Salford Royal NHS Foundation Trust (Dermatology Centre) Salford United Kingdom\n5. Safety and Environmental Assurance Centre, Unilever, Colworth Science Park Bedford United Kingdom\n6. Department of Computer Science, University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nDiphenylcyclopropenone (DPC) is an organic chemical hapten which induces allergic contact dermatitis and is used in the treatment of warts, melanoma, and alopecia areata. This therapeutic setting therefore provided an opportunity to study T cell receptor (TCR) repertoire changes in response to hapten sensitization in humans. Repeated exposure to DPC induced highly dynamic transient expansions of a polyclonal diverse T cell population. The number of TCRs expanded early after sensitization varies between individuals and predicts the magnitude of the allergic reaction. The expanded TCRs show preferential TCR V and J gene usage and consist of clusters of TCRs with similar sequences, two characteristic features of antigen-driven responses. The expanded TCRs share subtle sequence motifs that can be captured using a dynamic Bayesian network. These observations suggest the response to DPC is mediated by a polyclonal population of T cells recognizing a small number of dominant antigens.\n\n## Introduction\n\nDiphenylcyclopropenone (DPC) is an example of a hapten, a small organic compound that reacts with biological macromolecules including proteins to form immunogenic conjugates. It is a potent skin sensitizer (Mose et al., 2017a; Stute et al., 1981) and, since it is non-mutagenic in the AMES assay (Wilkerson et al., 1987), it has been used as an immunostimulant in the treatment of warts (Buckley et al., 1999), melanoma (Read et al., 2017), and alopecia (Ashworth et al., 1989; Karanovic et al., 2018; Lee et al., 2018). DPC can also act as an adjuvant to conventional immunization (von Moos et al., 2012). Because of its clinical applications, and because it is not commonly found in the environment, DPC serves as an interesting model to study primary and secondary responses to chemical haptens in humans, although the confounding effects of any underlying clinical condition in the treated individuals must obviously be considered. Clinically, repeated exposure results in rapid sensitization, but the magnitude of the resulting allergic contact dermatitis (ACD) does not continue to increase during repeated exposure (Mose et al., 2017a), suggesting the existence of regulatory processes. Global expression profiling at the site of elicitation suggested a predominantly Th1/Th17 type T cell infiltration, whose dynamics mirrored the clinical and histopathological picture (Mose et al., 2017b). High serum interleukin-4 (IL4) and low interleukin-12 (IL12) were observed in patients with alopecia showing a favorable response to DPC treatment.\n\nAs part of an extended project to understand more fully the immunological events leading to ACD, and hence generate better tools for chemical risk assessment (Kimber et al., 2012), we have measured the T cell receptor repertoire (TCRrep) changes in ex vivo blood samples collected from patients before and after therapeutic sensitization with DPC. In a previous study, we used a newly developed quantitative, robust experimental and computational pipeline (Oakes et al., 2017a) to measure changes in the TCRrep following in vitro re-stimulation of blood from individuals allergic to the environmental contact allergen paraphenylene diamine (Oakes et al., 2017b). A limitation of the study was that the extent of allergen exposure prior to challenge was unknown. Here we extend these studies to document in vivo changes to the TCRrep during primary and secondary sensitization with DPC in a small cohort of patients with alopecia. Exposure to DPC results in transient expansions of a set of related TCR sequences in the peripheral blood. The number of responding TCRs correlates with the extent of sensitization and is not observed in unexposed individuals. The results suggest that exposure to a contact allergen in vivo stimulates an initial polyclonal expansion of antigen-specific responding T cells which, however, does not increase on further repeated exposure to antigen.\n\n## Results\n\nWe carried out TCRseq on unfractionated blood samples from 29 patients with alopecia (Table 1).\n\n**Table 1.**\n Demographics of the study population.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>ID</th>\n      <th>Age</th>\n      <th>Sex1</th>\n      <th>Alopecia2</th>\n      <th>TCRseq sets3</th>\n      <th>Flow cytometry4</th>\n      <th>Patch test scores5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>50\u201359</td>\n      <td>F</td>\n      <td>AA (&gt;50%)</td>\n      <td>0</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>10\u201319</td>\n      <td>M</td>\n      <td>AU</td>\n      <td>0</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>20\u201329</td>\n      <td>F</td>\n      <td>AT</td>\n      <td>3</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>50\u201359</td>\n      <td>F</td>\n      <td>AT</td>\n      <td>4</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>50\u201359</td>\n      <td>M</td>\n      <td>AA (&gt;50%)</td>\n      <td>3</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>40\u201349</td>\n      <td>M</td>\n      <td>AA (&gt;50)</td>\n      <td>4</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>40\u201349</td>\n      <td>M</td>\n      <td>AU</td>\n      <td>4</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>30\u201339</td>\n      <td>F</td>\n      <td>AA (&gt;50%)</td>\n      <td>3</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>30\u201339</td>\n      <td>F</td>\n      <td>AT</td>\n      <td>0</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>20\u201329</td>\n      <td>F</td>\n      <td>AT</td>\n      <td>1</td>\n      <td>X</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>30\u201339</td>\n      <td>M</td>\n      <td>AU</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>20\u201329</td>\n      <td>F</td>\n      <td>AA (&gt;50%)</td>\n      <td>0</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>30\u201339</td>\n      <td>F</td>\n      <td>AT</td>\n      <td>1</td>\n      <td>X</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>14</td>\n      <td>30\u201339</td>\n      <td>F</td>\n      <td>AA (&lt;50%)</td>\n      <td>3</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>40\u201349</td>\n      <td>F</td>\n      <td>AU</td>\n      <td>4</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>16</td>\n      <td>40\u201349</td>\n      <td>F</td>\n      <td>AA (&lt;50%)</td>\n      <td>4</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>17</td>\n      <td>50\u201359</td>\n      <td>F</td>\n      <td>AT</td>\n      <td>3</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>18</td>\n      <td>20\u201329</td>\n      <td>F</td>\n      <td>AT</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>50\u201359</td>\n      <td>F</td>\n      <td>AU</td>\n      <td>2</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>50\u201359</td>\n      <td>F</td>\n      <td>AU</td>\n      <td>4</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>21</td>\n      <td>10\u201319</td>\n      <td>M</td>\n      <td>AA (&gt;50%)</td>\n      <td>3</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>22</td>\n      <td>30\u201339</td>\n      <td>F</td>\n      <td>AA (&gt;50%)</td>\n      <td>4</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>23</td>\n      <td>50\u201359</td>\n      <td>F</td>\n      <td>AU</td>\n      <td>4</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>24</td>\n      <td>40\u201349</td>\n      <td>F</td>\n      <td>AA (&lt;50%)</td>\n      <td>4</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>25</td>\n      <td>40\u201349</td>\n      <td>F</td>\n      <td>AT</td>\n      <td>3</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>26</td>\n      <td>60\u201369</td>\n      <td>F</td>\n      <td>AA (&lt;50%)</td>\n      <td>2</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>27</td>\n      <td>30\u201339</td>\n      <td>F</td>\n      <td>AA (&gt;50%)</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>28</td>\n      <td>30\u201339</td>\n      <td>M</td>\n      <td>AA (&lt;50%)</td>\n      <td>3</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>29</td>\n      <td>50\u201359</td>\n      <td>F</td>\n      <td>AT</td>\n      <td>4</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>30</td>\n      <td>60\u201369</td>\n      <td>F</td>\n      <td>AT</td>\n      <td>3</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>31</td>\n      <td>30\u201339</td>\n      <td>F</td>\n      <td>AA (&gt;50%)</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>32</td>\n      <td>20\u201329</td>\n      <td>F</td>\n      <td>AA (&lt;50%)</td>\n      <td>0</td>\n      <td></td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>33</td>\n      <td>40\u201349</td>\n      <td>F</td>\n      <td>AU</td>\n      <td>3</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>34</td>\n      <td>40\u201349</td>\n      <td>F</td>\n      <td>AA (&gt;50%)</td>\n      <td>3</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_1F: female; M: male; 2AA: alopecia areata (<50% or\u00a0>50% scalp involvement); AT: alopecia totalis; AU: alopecia universalis. 3The number of time points for which TCRseq data was obtained. 4The patients for whom PBMC flow cytometry data were available. 5The patients for whom patch test scores were available._\n\nSamples were collected before (referred to as the pre-sensitization [PS] sample, week 0, n\u00a0=\u00a025 samples) and at one to three time points after sensitization with DPC (Figure 1A), taken at 2 weeks (PT1, n\u00a0=\u00a023), 6 weeks (PT2, n\u00a0=\u00a018), and approximately 24 weeks (PT3, n\u00a0=\u00a017) post-sensitization. As controls, we carried out TCRseq on five healthy volunteers, for which we had time points that matched the 0-, 2-, and 6-week time points of the DPC sensitized group. We obtained a total of 24,431,855 distinct TCR sequences, of which 17,451,853 were unique across all samples. The number of TCR sequences obtained varied between samples (mainly due to small differences in volume of individual libraries when preparing the pooled library for sequencing) and are shown in Supplementary file 1. The median number of TCRs per sample was 95,638 (range 23,224\u2013690,600) and the median number of unique TCRs per sample was 75,111 (range 19,095\u2013342,336). Analyses included every patient for whom the relevant time points (and patch test data where relevant) were available, and this number is indicated in the respective figure legends.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54747/elife-54747-fig1-v2.jpg)\n\n**Figure 1.:** (A) The study outline showing when bloods were drawn, skin tests were performed, and DPC treatment was applied during the\u00a0~24 weeks of participation in the study. The four time\u00a0points at which sensitization scores were recorded and blood samples were taken are referred to throughout the paper as PS (pre-sensitization, week 0), PT1 (Patch Test 1, week 2), PT2 (Patch Test 2, week 6) and PT3 (Patch Test 3, around week 24). In all cases bloods were drawn prior to application of the patch test. (B)\u00a0and\u00a0(C) The PS and PT1 blood samples of 10 patients were analyzed using flow cytometry. The mean percentage of total naive, central memory (CM), effector memory (EM), and effector memory RA (EMRA) expressing\u00a0cells in the (B) CD4 and (C) CD8 compartments are shown. Paired t-tests with Benjamini\u2013Hochberg correction for multiple testing were performed to check for significant differences between the pre- and post-sensitization cell number distributions for each subpopulation. All p-values were considerably higher than the 0.05 significance threshold. (D) The Shannon diversity index of the healthy volunteers (n\u00a0=\u00a015 samples from five individuals), pre-sensitization (n\u00a0=\u00a025), and post-sensitization (n\u00a0=\u00a058; from all three time points) TCR repertoire samples. All samples were randomly subsampled to the minimum sample size (21,838 beta TCRs), and the Shannon diversity index of the subsample was then calculated. Each sample is represented by a dot. The box plots show the median, and lower and upper quartiles of each group. Differences in the distribution of the three groups were tested using a\u00a0Kruskal\u2013Wallis rank sum test and were non-significant (p=0.87). (E) The Gini inequality coefficient of the healthy volunteers, pre-sensitization and post-sensitization TCR repertoire samples, subsampled as in (D). Differences in the distribution of the three groups were tested using a Kruskal\u2013Wallis rank sum test and were non-significant (p=0.89). (F) The number of TCRs that appear with a\u00a0frequency of 1/1000 or higher in each sample (termed \u2018abundant TCRs\u2019), for the healthy volunteers, pre-sensitization and post-sensitization samples, subsampled as in (D) and (E). A Kruskal\u2013Wallis rank sum test revealed no statistical difference between the groups (p=0.14). (G)\u2013\u00a0(I) Sensitized samples were separated according to time point: PT1 (n\u00a0=\u00a023), PT2 (n\u00a0=\u00a018), and PT3 (n\u00a0=\u00a017). The Shannon diversity index (G), the Gini coefficient (H), and the number of abundant clones (I) of these subsamples were then calculated. Kruskal\u2013Wallis rank sum tests were used to compare between the three groups in each case. All tests showed no statistically significant difference, with p-values p=0.97, p=0.96, and p=0.90 respectively.\n\n### Repeated exposure to DPC does not alter the global structure of the peripheral blood TCR repertoire\n\nThe major T cell sub-populations (CD4/CD8, naive, central memory, effector memory, and effector memory RA revertant) (Fletcher et al., 2005) were quantified by flow cytometry and did not change significantly after exposure to DPC (Figure 1B, two-sided paired t-tests corrected for multiple testing, p=0.48, p=0.74, p=0.49, and p=0.74 for CD4, and Figure 1C, p=0.11, p=0.72, p=0.72, and p=0.37 for CD8 naive, central, effector, and effector memory RA revertant cells respectively). Similarly, TCR repertoire diversity, captured by the Shannon diversity index, or the clonal expansion captured by the Gini inequality coefficient, did not differ significantly before and after exposure to DPC (Figure 1D,E, Kruskal\u2013Wallis rank sum tests, p=0.89 and p=0.90 respectively), nor between the different time points post-sensitization (Figure 1G,H, Kruskal\u2013Wallis rank sum tests, p=0.96 and p=0.95 respectively). Finally, the number of TCRs found at frequencies above 1 in 1000, which correspond to the most abundant 6% of the repertoire on average, did not change as a result of sensitization (Figure 1F,I, Kruskal\u2013Wallis rank sum tests, p=0.12 and p=0.91 respectively). The corresponding analyses for the alpha chain sequences are shown in Supplementary file 2. There was therefore no evidence that exposure to DPC, a potent skin sensitizer, caused global alterations in the structure of the TCR repertoire.\n\n### Sensitization with DPC induces a transient expansion in the frequency of a small subset of the TCR repertoire\n\nWe next looked for evidence of changes in individual TCR sequences following exposure to DPC. We plotted the abundance of each TCR before sensitization and after sensitization (at PT1) (representative examples are in Figure 2A; all individuals in Supplementary file 3). We observed that in a number of individuals, there was a population of TCRs which were absent before sensitization and present at relatively high abundance after sensitization (indicated by the pink dots in the left panels of Figure 2A). This change is seen clearly in the abundance profile of all TCRs that were absent in the pre-sensitization sample, but present after sensitization (Figure 2B). On the basis of these profiles, we counted the proportion of TCRs absent at PS and present at PT1 with an abundance of eight times or above. The remainder of this study focuses on this population, which we refer to as PT1 expanded. The percentages of PT1 TCRs which are expanded in each individual are summarized for patients and healthy volunteers in Figure 2C. For comparison, we calculated the percentage of TCRs absent at PT1 but present at PS with an abundance of eight times or above (referred to as PS expanded). The range of percentages of expanded TCRs at PT1 is clearly much greater in the patients than in the healthy volunteers (between 0 and 2 weeks), although the medians are not significantly different (p=0.16 and p=0.47 for alpha and beta respectively, Mann\u2013Whitney). The percentage of expanded TCRs at PT1 in the patients is significantly larger than the percentage of TCRs which were expanded at PS and absent at PT1 (p=0.02 for alpha, p=0.03 for beta, Wilcoxon signed\u2013rank). This is not the case for the healthy volunteers (p=0.79 for alpha, p=0.59 for beta, Wilcoxon signed\u2013rank). Similar results were obtained setting the expansion threshold at 16 or 32. The number of PT1 expanded TCR alpha and TCR beta sequences was highly correlated (Spearman\u2019s rho\u00a0=\u00a00.85, p<0.0001, Supplementary file 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54747/elife-54747-fig2-v2.jpg)\n\n**Figure 2.:** (A) The abundance distribution of TCRs at PS and PT1. All samples were subsampled to the same number of TCRs (28,000). Each unique TCR is represented by a dot, and the axes represent the number of times it is observed in the PS (x-axis) and PT1 (y-axis) sample of the same individual. The left and center panels represent two representative individuals. The right panels show one representative healthy volunteer at 0 and 2 weeks (equivalent timings to PS and PT1). The plots for all individuals are shown in Supplementary file 3. The pink dots identify a population of TCRs absent in the PS sample and expanded (abundance\u00a0\u22658) in the PT1 sample. The blue dots identify a population of TCRs absent in the PT1 sample and expanded (\u22658) in the PS sample. The numbers indicate the percentage of PT1 expanded TCRs (pink) and PS expanded TCRs (blue). (B) The abundance distribution profile of TCRs present at PT1 and absent at PS corresponding to the left panel in (A) (orange), middle panel (green), and right panel (gray). The y-axis shows the proportion of the TCRs which are found at the abundance indicated by the x-axis. (C) The distribution of the percentages of PT1 expanded (\u22658) TCRs in healthy volunteers (n\u00a0=\u00a05) and in sensitized individuals (n\u00a0=\u00a022), and the distribution of the percentages of PS expanded (\u22658) TCRs in sensitized individuals (n\u00a0=\u00a022), all subsampled as in (A). Bars show Wilcoxon signed\u2013rank comparisons.\n\nAfter the initial increase post-sensitization, the number of expanded TCRs remained rather constant over the later time points. There was no evidence that the total number of expanded TCRs increased with time, despite the fact that individuals were exposed to repeated therapeutic stimulation with sensitizer on a weekly basis for the period of the study in addition to the patch test applications (Figure 1A) (Kruskal\u2013Wallis rank sum test, p=0.92 alpha and p=0.36 beta). However, this apparent overall stability hid dramatic dynamic changes in the frequency of individual TCRs within individual patients. The majority of PT1 (2 weeks) expanded TCRs decreased or returned to baseline at subsequent time\u00a0points (Figure 3A). The majority of PT2 expanded TCRs present at 6\u00a0weeks were not expanded at 2 weeks, peaked at 6 weeks, and decreased or returned to baseline by the time the PT3 sample was taken at around 24 weeks (Figure 3B). These dynamics are shown for the beta chain sequences of\u00a010 patients for whom all four time points were available (the corresponding analysis for five healthy volunteers is in Figure 3C). The alpha chain sequences of the same patients behaved similarly (Supplementary file 4). The exposure to repeated doses of DPC therefore induced large, but predominantly transient, changes in the frequencies of a small proportion of the TCRs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54747/elife-54747-fig3-v2.jpg)\n\n**Figure 3.:** (A) The abundances of the PT1 expanded (threshold\u00a0\u22658) beta TCRs at the four time points: PS, PT1, PT2,\u00a0and PT3. Each panel is a different patient (n\u00a0=\u00a010). (B) The abundances of the PT2 expanded (threshold\u00a0\u22658) beta TCRs at the four time points: PS, PT1, PT2, and\u00a0PT3. Each panel is a different patient (n\u00a0=\u00a010). (C) Equivalent time points (0 weeks, 2 weeks, and 6 weeks) for five healthy volunteers. Top row is PT1 expanded beta TCRs; bottom row is PT2 expanded beta TCRs.\n\n### TCR expansion after exposure to DPC correlates with the magnitude of skin sensitization\n\nWe hypothesized that the expanded TCRs identified above might be functionally related to development of ACD. Exposure to DPC induced skin sensitization (patch test scores of + or higher) in almost all individuals but the magnitude of the response varied significantly between individuals (Figure 4A). Interestingly, the maximum response was usually observed at the first patch test, and declined or remained constant thereafter despite repeated exposure (Figure 4B). The sensitization reaction, therefore, like the number of expanded TCRs, did not continue to increase despite repeated exposure to antigen. In consequence, the magnitude of the response was very diverse at the beginning (+++, ++, or +) but converged toward a score of + or below by week 24.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54747/elife-54747-fig4-v2.jpg)\n\n**Figure 4.:** (A) Photographs showing examples of the varying levels of skin reaction observed in response to DPC; the reactions were classified according to standards set by the International Contact Dermatitis Research Group (no reaction [\u2212], +, ++, +++). (B) The changes in patch test scores during treatment in patients with PT1 score of +++ (n\u00a0=\u00a04, left panel), ++ (n\u00a0=\u00a06, middle panel), and + or \u2212 (n\u00a0=\u00a011, right panel). (C) Left panels:\u00a0The number of PT1 expanded (\u22658) clones are plotted against the sensitization score. Center panels: The number of PT1 expanded (\u22658) clones are plotted against the PT1 patch test score. Right panels: The number of PS expanded (\u22658) clones are plotted against the patch test score at PT1. The blue line indicates the best fit linear model, with the model\u2019s 95% confidence intervals in gray. The inset text shows the Spearman\u2019s correlation coefficient, rho. (D) Correlation matrix representing the Spearman correlation between the number of PT expanded TCRs and the reaction recorded at the sensitization site or the patch test scores at each time\u00a0point. The color and size of each square correspond to Spearman\u2019s rho, and non-adjusted p-values are shown.\n\nWe plotted the number of PT1 expanded TCRs (abundance\u00a0\u22658) in individuals with varying strengths of sensitization as a function of the initial skin response recorded at the site of application (Figure 4C, left panels) or at the first patch test (Figure 4C, center panels). The number of PT1 expanded TCRs was positively correlated to the patch test score. The correlation was positive but did not reach significance at an expansion threshold of 4, but remained significant when using a threshold abundance of 16 or 32. In contrast, there was no significant association between the number of PS expanded TCRs and the PT1 patch test score (Figure 4C, right panels). Although we measured the proportion of expanded TCRs, and not the absolute number, it remained possible that the total number of TCRs in each sample could affect the percentage of expanded TCRs. However, there was no significant correlation between the proportion of PT1 expanded TCRs (abundance\u00a0\u22658) and the total number of TCRs sequenced in each sample (Spearman\u2019s correlation rho\u00a0=\u00a00.18 [p=0.4] and rho\u00a0=\u00a00.22 [p=0.3] for alpha and beta respectively). We also carried out repeated (10 times) subsampling of each sample to the size of the smallest sample. We observed a mean positive correlation (Spearman\u2019s rho) between the patch test scores and the percentage of PT1 expanded TCRs in the subsamples at a threshold of 8 (0.4 [alpha] and 0.3 [beta]), but the p-value did not reach significance (p=0.18 and 0.22 respectively). At a threshold of 16, the correlations were 0.54 (p=0.04) and 0.32 (p=0.2), and at a threshold of 32, the correlations were 0.58 (p=0.01) and 0.61 (p=0.006) for alpha and beta respectively. Overall, the qualitative pattern of greater number of PT1 expanded TCRs remained the same after subsampling although the smaller data sets did alter the magnitude of the correlations and the threshold at which they became significant.\n\nThe correlation between the number of expanded TCRs at all time points (in each case measured as change relative to pre-sensitization frequency) and the sensitization/patch test scores at all time points is summarized in Figure 4D. As illustrated above, the numbers of expanded TCRs at PT1 were correlated with the strength of the reaction recorded at the sensitization site, and with the patch test score at PT1 (2 weeks), as well as PT2 (6 weeks). The correlation was lost at PT3 (24 weeks), perhaps reflecting the greatly decreased range of patch test scores at this time point (Figure 4B).\n\n### The expanded TCRs show characteristics of antigen-driven responses\n\nWe hypothesized that the population of TCRs that are found at increased frequency post-exposure to DPC may be enriched for T cells which bind to DPC, or DPC-modified peptides. Antigen-specific sets of TCRs frequently share sequence features, including skewed use of V and J regions, and similarities in CDR3 sequence (Dash et al., 2017; Davis et al., 1995; Glanville et al., 2017; Pogorelyy et al., 2019; Sun et al., 2017; Thomas et al., 2014). The relative V and J gene usage profiles within the expanded set of TCRs compared to the pre-sensitization repertoire for that individual are shown for each patient in Figure 5. We used a non-parametric bootstrapping approach to determine which V and J genes were statistically significantly skewed in the repertoire of the expanded TCRs. We compared the observed proportion of each V and J gene in the PT1 expanded TCRs (\u22658) with 1000 random sets of the same number of TCRs sampled from the pre-sensitization repertoires of the same individuals. V and J genes that ranked in the top 50 out of 1001 were considered significantly under-represented at the 0.05 significance level, and genes in the bottom 50 ranks as significantly over-represented. Several examples of skewed V and J gene usage were observed, both in TCR alpha and TCR beta (pink dots). Due to the relatively small number of expanded TCRs in some patients, under-represented genes were very common as a result of sampling, and hence less statistically robust. We therefore show only over-represented V and J genes. In addition, genes that were over-represented by a similar analysis on the set of all expanded TCRs (generated by combining the individual patient expanded sets and taking unique TCRs) are also shown (Figure 5, pink gene names). Interestingly, some V and J regions were skewed in several different individuals, suggesting some common driver of V/J gene usage, despite the fact that the individuals were not related.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54747/elife-54747-fig5-v2.jpg)\n\n**Figure 5.:** Relative frequency of V and J alpha and beta gene usage in the set of PT1 expanded TCRs (\u22658) from 22 individuals, compared to the frequency in their respective pre-sensitization repertoires. Each dot is a patient. Genes significantly over-represented in the expanded set (see text for statistical test) are colored pink. Under-represented genes are not included in this figure, since the small number of expanded TCRs in some patients resulted in a large but less meaningful set of under-represented genes due to sampling. Genes colored pink on the x-axis are those that were significantly over-represented in the combined expanded set (1858 unique alpha TCRs and 2019 unique beta TCRs).\n\nWe also looked for potential clustering of CDR3 sequences of the expanded TCRs (Figure 6). We have previously shown that amino acid triplets (sequences of three adjacent amino acids within the CDR3 region) can predict antigen specificity (Sun et al., 2017). We therefore compared the pairwise similarity of all expanded CDR3s using a metric that quantifies the number of shared triplets between two sequences, normalized for sequence length (an example of a string kernel in the machine learning literature Shawe-Taylor and Cristianini, 2004). We converted the matrix of pairwise similarities into a network (Figure 6A), by connecting all those TCRs with a similarity above a given threshold (75%). As control, we performed the same analysis on same-sized sets randomly sampled either from the combined pre-sensitization repertoire (Figure 6B,C (ii)) or from the combined repertoire of the healthy volunteers (Figure 6B,C (iii)). The expanded TCRs formed significantly more large clusters of \u2018related\u2019 TCRs than either control sets (Figure 6B,C (i)). We selected the largest cluster of CDR3 beta sequences (Figure 6D) and carried out an alignment (summarized in Figure 6E, full alignment in\u00a0Supplementary file 5). The sequences showed a high level of similarity consistent with belonging to a set of TCRs with shared specificities (Dash et al., 2017; Glanville et al., 2017).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54747/elife-54747-fig6-v2.jpg)\n\n**Figure 6.:** (A) Diagram illustrating the similarity graph construction process. Individual CDR3s are deconstructed into overlapping series of contiguous amino acid triplets, and the pairwise similarity between two CDR3s is calculated as the normalized string kernel. Two CDR3s which have a pairwise similarity of >0.75 are connected by an edge. (B) Clusters formed from the CDR3 sequences of (i) the PT1 expanded alpha TCRs (\u2265 8), (ii) an equal-sized (1858) set of alpha TCRs sampled randomly from the combined pre-sensitization repertoires of the same patients, and (iii) a size-matched set randomly sampled from the combined healthy volunteer alpha TCRs. The numbers under each network diagram show the percentage of the 1858 TCRs which are incorporated in a cluster, and the number of clusters. The numbers for the pre-sensitization and healthy volunteers show the average \u00b1 standard error of the mean for each parameter. (C) As (), but for beta sequences (2019 expanded TCRs, or the\u00a0same number of control TCRs). (D) The largest (35 unique CDR3s) cluster of PT1 expanded TCR beta sequences, from panel (C)\u00a0(i). (E) An alignment of CDR3 sequences from the cluster shown in panel (D). The alignment is illustrated as a sequence logo (https://weblogo.berkeley.edu/logo.cgi). The full alignment is shown in Supplementary file 5.\n\nTaken together, the skewing of V and J genes, and the presence of clusters of similar TCRs were strongly suggestive that the expanded TCRs were enriched for TCRs responding to a limited number of specific epitopes.\n\n### A dynamic Bayesian network can predict sensitization based on TCR sequence\n\nThe skewed V/J usage and the TCR clustering are indicative of an antigen-specific response. We therefore explored whether the repertoire of expanded TCRs was sufficiently distinct from that of the unselected repertoire so that it could be used to distinguish DPC-expanded TCRs or sets of TCRs from the unexpanded repertoire. We used a dynamic Bayesian network (DBN) (Dagum et al., 1992; Murphy and Mian, 1999; Murphy, 2002; Pearl, 1988; Yao et al., 2008), a model we have developed to interrogate antigen specificity in TCR sequences. The DBN is a probabilistic graphical model, which provides a flexible classification tool that can incorporate heterogeneous data (e.g. sequences as well as V/J usage).\n\nWe constructed a DBN to classify TCR beta CDR3 sequences into one of two classes: DPC-related CDR3s and randomly sampled pre-sensitization CDR3s from the same individuals. To construct the training/test sets for the model, we used the PT1 expanded CDR3 sequences (\u22658) for the DPC class, which were at most 22 amino acids long (2019 beta sequences from 22 patients), and for the control class, a randomly generated set of the same number of TCRs from the combined pre-sensitization sequences. CDR3 sequences in the expanded set were excluded from the pre-sensitization (control) training set. The length of CDR3 sequences used in the model was capped at 22 in order to manage the computational complexity of the algorithm, while still utilizing all expanded sequences. To account for the variable length of the CDR3 sequences, the sequences were aligned by the first Cysteine of the CDR3 on the left, up to the final Phenylalanine of the CDR3, then \u2018completed\u2019 to length 22 using a dummy variable (\u2018amino acid number 21\u2019). The DBN took as input the amino acid in each position in the CDR3 (converted to an integer 0\u201321 for each amino acid or dummy), the V and J genes, as well as position-specific triplet scores and class scores (as explained in Materials and methods). The proposed probabilistic dependencies between these sequence features and antigen specificity are encoded into the network structure by directed edges (Figure 7A). Further details of the DBN and how it was trained and tested are provided in Materials and\u00a0methods.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/54747/elife-54747-fig7-v2.jpg)\n\n**Figure 7.:** (A) The directed acyclic graph depicts the DBN structure, unrolled over 22 time slices (positions). Directed edges capture probabilistic dependencies. Pi indicates position i along the CDR3 sequence; AAi the amino acid in position i; Ti is the triplet score for the triplet of amino acids in positions $\u27e8i\u22122,i\u22121,i\u27e9$; Vi and Ji are the V and J genes (constant for each sequence); CSi the class score at position i, and Classi determines whether the sequence comes from the diphenylcyclopropenone\u00a0(DPC)-related expanded set, or the control set. (B) The probability of observing pairs of neighboring amino acids differs between DPC-related sequences and control sequences from the pre-sensitization repertoire of the same individuals. Each column in the heatmap corresponds to a position along the CDR3 sequence, each row to an ordered pair of amino acids (total 400). If row i in the heatmap corresponds to amino acid pair $\u27e8X,Y\u27e9$, then position $\u27e8i,j\u27e9$ in the matrix is the ratio of the probability of observing amino acid Y in position j+1 in the expanded sequences against the probability of observing Y in the same position in an equal-sized random sample of control sequences, given amino acid X has been observed in position j. (C) The upper panel shows the mean classification accuracy for classifying the full DPC/control test sets, and sets of 10 DPC/control sequences. The lower panel shows mean classification accuracy for individual sequences. 5% confidence refers to the top 5% of sequences with greatest log likelihood difference between the models, and similarly for 10%. 100% is the accuracy when classifying every sequence. Each dot depicts the mean of one\u00a0of\u00a0the train-test sets from 10-fold cross validation over\u00a010\u00a0generations of the model.\u00a0Each training set consisted of 3618 expanded sequences and control sequences in equal proportions, and the test sets 402 sequences in equal proportions (201 expanded and 201 control).\n\nOne of the key features of the DBN is that each \u2018slice\u2019 of the network is position specific. This enables modeling local as well as global sequence features. For example, Figure 7B demonstrates the relationship between neighboring amino acids in specific positions in the CDR3 sequence and antigen specificity. The probability of observing a specific amino acid in a particular position given its neighbors differs between DPC-expanded sequences and control sequences. Both over and under-represented pairs of amino acids can be seen, in particular in the middle of the CDR3. Such relationships are utilized by the model in classification.\n\nThe DBN classifier could classify the full DPC/control test sets with mean accuracy of 94% from 10 repeats of 10-fold cross validation, and sets of 10 sequences with mean accuracy 77.7% (Figure 7C upper panel). Model confidence in classifying individual sequences correctly, taken as the difference in the log likelihood between the DPC and the control models for each sequence, varied between different test sets and sequences. Where the DBN was asked to classify every sequence regardless of confidence level, the mean accuracy was 54.3%. When taking the 5% or 10% most confident assignments, individual sequences were classified with mean accuracy of 64.7% and 60.6% respectively, from 10-fold cross validation (Figure 7C lower panel). The DBN provides mechanistic insights into which features are critical for classification, in addition to confidence bounds on its decisions, since the probabilities used by the model in classification are transparent.\n\n## Discussion\n\nThe results presented above report the first comprehensive analysis of the TCRrep in the context of controlled exposure to a contact sensitizer in humans. The key findings are that the response to sensitizer is accompanied by a dynamic, robust polyclonal increase in abundance of a defined set of TCR genes which presumably reflects clonal expansion of antigen-specific T cells in response to DPC. Notably, the breadth of the response, as captured by the number of TCRs that increase in frequency, is very diverse between individuals and predicts the degree of sensitization. Furthermore, the response of individual TCRs, which reflect individual T cell clonal dynamics, is transient, with most TCRs returning to low frequencies, or disappearing by the subsequent time\u00a0point.\n\nThe immunological mechanisms that drive ACD have been studied in detail (see for example Kimber et al., 2012). The dose and frequency of exposure are both key parameters in determining the strength of the response (Friedmann, 2006;\u00a0Friedmann, 2007), although it is clear that the full impact of different factors on the observed variance in the population is still not fully understood, and is one limitation in accurate prediction of allergy to chemical exposure in the context of consumer safety (Basketter and Safford, 2016). There is widespread agreement that activation of both CD4+ and CD8+ antigen-specific T cells plays key roles, although antibody may also be important (Singleton et al., 2016).\n\nThe nature of the molecular interaction between the sensitizer, which is usually a chemical hapten that reacts with macromolecules including proteins in the skin following exposure, remains much less well\u00a0understood than for microbial or viral peptide antigens. There are no MHC tetramers\ufeff or multimers which can be used to identify DPC or indeed any hapten-specific T cells. Nevertheless, a number of lines of evidence support our hypothesis that the TCRs that increase in frequency following sensitization represent an antigen-specific response. The observed changes from zero to eight are unlikely to be due to sampling effects; in fact, modeling sampling as a Poisson process indicates that changes from zero to eight or more have individual probabilities of\u00a0<0.05. The observed changes are also unlikely to arise from exposure to unknown antigens (e.g. infectious agents) since the number of expanded TCRs at the first time point post-sensitization is greater than the number of expanded TCRs observed in unsensitized individuals sampled at similar time points, for the great majority of the patients tested. The functional link between TCR expansion and DPC exposure is also strengthened by the observed statistical correlation between the number of expanded TCRs and the vigor of sensitization, as measured by the patch test. Moreover, the expanded set of TCRs show strong evidence of V and J gene skewing, and of increased CDR3 clustering, both well-established signatures of an antigen-specific T cell response (Thomas et al., 2014; Sun et al., 2017; Davis et al., 1995; Glanville et al., 2017; Dash et al., 2017). Finally, these features are shown to be discriminatory enough to allow classification of TCRs into DPC-related and pre-sensitization TCRs by the DBN. Taken together, this set of observations suggest that DPC, perhaps in the form of a set of modified-self peptide adjuncts, stimulates a transient expansion of T cells carrying a defined set of related TCRs. The observation that TCR clustering, V region enrichment, and DBN classification could be observed across a panel of unrelated individuals is particularly intriguing, and suggests that hapten-specific responses may be less dependent on MHC matching than conventional peptide-specific responses. However, further more detailed study is required to determine the molecular target of the DPC-responsive TCRs.\n\nDPC is considered a potent sensitizer (Stute et al., 1981; Mose et al., 2017b). Nevertheless, we noted a wide range of quantitative responses in different individuals, at least as measured by standard patch test results. This was reflected in a wide range of expanded TCRs, and the number of expanded TCRs at the first post-sensitization sample (2 weeks) showed strong correlation with\u00a0the strength of the response. The reasons for this inter-individual variation are unknown, but could reflect inter-individual differences in immune response (Brodin et al., 2015), or potentially differences in factors that control hapten penetration, such as skin thickness or composition (Reynolds et al., 2019). Understanding the factors that determine this variation may be important in developing novel approaches to ACD risk prediction (MacKay et al., 2013; Maxwell and Mackay, 2008).\n\nIn our study, low responders were not boosted by repeated exposure to DPC over many months. In fact, the response was usually maximal at the first patch test, suggesting that regulatory mechanisms come into play to limit the response in vivo. Similarly the initial TCR expansion did not continue to increase despite repeated exposure to antigen, and indeed the majority of TCRs showed very transitory responses, with individual TCR frequencies falling to around pre-sensitization frequencies by the next time point. Similar rapid expansion and subsequent contraction have been observed in response to live attenuated yellow fever vaccine (DeWitt et al., 2015; Pogorelyy et al., 2019;\u00a0Pogorelyy et al., 2018), one of few examples where TCR repertoire has been studied before and after challenge in a human setting. The latter study (Pogorelyy et al., 2018) precisely documents changes in TCR frequency in three pairs of twins, at several time points before and after exposure to a single dose of the live attenuated YFV 17D vaccine. The study documented the expansion and then contraction of several hundred TCR genes, which reflected the clonal expansion, and subsequent contraction of a polyclonal set of vaccine-specific T cells. However, in this case antigen was delivered as a single dose of vaccine, which gives rise to systemic but very transitory viremia. T cell contraction in the vaccine context may therefore reflect the rapid disappearance of antigen. In contrast, the patients in the current study were exposed to repeated doses of DPC weekly over the course of many months for their therapeutic benefit. The mechanisms which limit the DPC response are therefore more likely to be due to intrinsic regulatory pathways (e.g. Treg induction), or changes in intrinsic migratory pathways rather than simply reflect antigen disappearance. We noted that a second wave of TCRs appeared at increased frequency at PT2, 6\u00a0weeks post-sensitization. This set of \u2018late\u2019 TCRs was almost completely distinct from the \u2018early\u2019 peak at week 2. Furthermore, there was no correlation between the magnitude of the patch test score at PT1 and the number of TCRs expanded at PT2. Additional experiments will be needed to explore whether this set of late TCRs represents part of a regulatory mechanism, which regulates and limits further T cell expansion during chronic exposure to DPC.\n\nIn conclusion, this study is the first analysis of in vivo TCR repertoire changes in response to a chemical allergen, and is one of only a handful of studies that document in vivo longitudinal changes in TCRrep in response to immunization in humans. We cannot rule out that the immune response in this population is different from healthy individuals, since all patients suffered from some form of alopecia, which is believed to have an autoimmune etiology (Tr\u00fceb and Dias, 2018). Nevertheless, DPC is unlikely to bear any relation to the autoimmune target in alopecia, since similar therapeutic responses (hair growth) can be observed in patients with alopecia treated with other completely unrelated contact sensitizers. While the qualitative balance of immune response may be influenced by the underlying autoimmune background, the specificity of the TCR repertoire is likely to reflect fundamental features of the response to chemical haptens. The study confirms our previous in vitro findings that the response even to a simple chemical such as DPC is polyclonal involving dozens or even hundreds of TCRs. The study also highlights the dynamic nature of the TCR repertoire. Further studies will be required to unravel the complex mechanisms that regulate the immune response to chronic antigen exposure.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Decombinator V4</td>\n      <td>https://github.com/innate2adaptive/Decombinator</td>\n      <td>RRID:SCR_006732</td>\n      <td>This software suite is under active development; latest versions available at the GitHub site.</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TCRseq protocol</td>\n      <td>Uddin et al., 2019b\u00a0PMID:31727254</td>\n      <td></td>\n      <td>This protocol is in a continuous state of development. The full details of the current stable version including primer sequences, PCR conditions etc. are all in the attached reference. For latest development contact the corresponding author on b.chain@ucl.ac.uk</td>\n    </tr>\n  </tbody>\n</table>\n\n### Patient recruitment\n\nA total of 34 patients were recruited to this study (NRES Ethics Committee East of England \u2013 Cambridgeshire and Hertfordshire [14/EE/1067]). Participants were recruited from patients who had been diagnosed with alopecia, were aged between 18 and 70, identified as suitable for DPC treatment by a consultant dermatologist, and were now attending their first visit to the Alopecia Clinic at Salford Royal Hospital for DPC therapy. This study ran alongside patients\u2019 prescribed DPC treatment (weekly doses of DPC to the scalp to induce inflammation and hair regrowth). The study timeline in terms of treatment and sample collection is provided in Figure 1A. All participants gave their informed consent to participate and were free to withdraw from the study at any time and for any reason without affecting their treatment. Patients were excluded from the study if they were pregnant.\n\nTwenty-nine of the individuals who participated in the study provided blood samples for TCR sequencing (TCRseq), for between one and four of the study time points (pre-sensitization, and at 2, 6, and 24 weeks of DPC treatment). Flow cytometry data was obtained for peripheral blood mononuclear cells (PBMCs) from 10 treated patients, and patch test data for 24 patients. The clinical response to treatment (in terms of hair regrowth) and the associated immunological changes will be discussed in a separate publication. A summary of the patient demographics and the samples collected is shown in Table 1.\n\nAs controls for the TCR sequencing, five healthy volunteers were bled three times, at day 0, 2\u00a0weeks, and 6 weeks. All subjects gave written informed consent in accordance with the Declaration of Helsinki. The protocol was approved by the University College London Hospital Ethics Committee 06/Q0502/92.\n\n### Sensitization and patch testing\n\nSensitization to DPC was induced by application of 2% DPC (in acetone) to a 2 cm by 2 cm patch of skin on the upper inner arm. Sensitization at the site of application was assessed 14 days later and scored as described below (sensitization score). Patch testing at a remote site (upper back) was conducted 2 weeks (PT1), 6 weeks (PT2), and 24 weeks (PT3) after application of the sensitizing dose of DPC. Patch testing was performed on the skin of the upper back using Finn chambers (8 mm inner diameter) containing 0.01% DPC in acetone. After 6 days, patients\u2019 reactions were scored as no reaction (\u2212), weakly sensitized (+), strongly sensitized (++), or extremely sensitized (+++) according to standards set by the International Contact Dermatitis Research Group.\n\n### TCR sequencing\n\nThe \u03b1 and \u03b2 chains of the TCR repertoire of 29 participants were sequenced using a method that starts with total RNA isolated from unfractionated whole blood, collected in Tempus Blood RNA tubes (Thermofisher #4342792) using the manufacturer\u2019s protocol for RNA extraction. The pipeline introduces unique molecular identifiers attached to individual cDNA molecules to provide a quantitative and reproducible method of library preparation. Full details for both the experimental TCRseq library preparation and the subsequent computational analysis (V, J, and CDR3 annotation) using Decombinator are published in Oakes et al., 2017b; Uddin et al., 2019a.\n\n### Flow cytometry\n\nPBMCs were isolated from 30 mL whole blood (diluted 1:1 in PBS) from 10 patients layered over an equal volume of Histopaque 1077 (Sigma Aldrich) according to the manufacturer's instructions. Cells were stored at a concentration of 5 \u00d7 107 cells/mL in 10% DMSO/90% human AB serum (Sigma Aldrich) at \u221280\u00b0C until required.\n\nFlow cytometric analyses were performed on previously frozen cells using antibodies obtained from eBioscience, with single-stained controls used for compensation. Na\u00efve and memory CD4+ and CD8+ T-cell subsets were identified as previously described (Appay et al., 2008). Na\u00efve cells were defined as CD45RA+ and CD27+; central memory as CD45RA\u2212 CD27+; effector memory as CD45RA\u2212 CD27\u2212, and EMRA as CD45RA+ CD27\u2212. Flow cytometry was performed on a minimum of 10,000 cells using a FACS-calibur (Becton Dickinson, Mountain View, CA) and data analysis performed in FlowJo (TreeStar) using standardized gating across all samples.\n\n### Statistical and mathematical analysis\n\nStatistical analyses were performed using the statistical programming language R [R version 4.0.2 (2020-06-22)]. Mann\u2013Whitney U-tests were used to compare between two unmatched groups and paired t-tests or Wilcoxon signed-rank tests between two paired groups. All statistical comparisons between more than two groups were done using Kruskal\u2013Wallis non-parametric tests with post hoc Dunn Test and Benjamini\u2013Hochberg correction for multiple testing. Statistical significance in all tests was accepted above the 0.05 threshold.\n\nTo calculate which V and J genes were significantly over- or under-expressed in the DPC-expanded TCR sets, at both the individual patient level and for the entire expanded set, we generated 2*1000 independent random samples of equal-sized sets from the pre-sensitized individual/combined population, calculated the ratio between the two, and compared this with the ratio derived from the set of interest against a further 1000 random simulations. A significance level of 0.05 was then achieved for genes that ranked in either the top 50 \u2018ratios\u2019 (under-represented) or bottom 50 in the list (over-represented).\n\n### TCR clustering\n\nThe CDR3 protein sequences of expanded TCRs were identified using the package CDR3translator (https://github.com/innate2adaptive/Decombinator). The pairwise similarity between TCRs was measured on the basis of amino acid triplet sharing, which was calculated using the normalized string kernel function stringdot (with parameters stringdottype=\u2018spectrum\u2019, length\u00a0=\u00a03, normalized=TRUE) from the Kernlab package (Karatzoglou et al., 2004). The kernel was calculated as the number of amino acid triplets (sets of three consecutive amino acids) shared between two CDR3s, normalized by the number of triplets in each CDR3 being compared. The TCR similarity matrix was converted into a network diagram using the iGraph package in R (Csardi and Nepusz, 2006). Two TCRs were considered connected if the similarity index was above 0.75. A range of thresholds were explored, and the lowest threshold that consistently gave few large (>3 nodes) clusters using random samples of TCRs from the study was chosen. The sequences from individual clusters were aligned using Aliview (Larsson, 2014), and the consensus visualized using webLogo (https://weblogo.berkeley.edu/logo.cgi).\n\n### TCR repertoire classification using a DBN\n\nDBNs are a type of probabilistic graphical model consisting of a directed acyclic graph and a set of conditional probability distributions. The probability of the set of variables (nodes) of the system Xt at time t given its state at time t\u22121 can be calculated by\n\n$$\nP(X_{t}|X_{t\u22121})=\\prodi=1NP(X_{t}^{(i)}\u00a0|\u00a0Pa(X_{t}^{(i)}))\n$$\n\nwhere N is the number of variables, Xt(i) is the i\u2019th node in time slice t, and Pa(Xt(i)) are the parents of Xt(i). The TCR DBN was built in MATLAB (2019b), using the Bayes Net Toolbox (Murphy, 2001). The DBN took as input the position along the CDR3 sequence, the amino acid in each position, the V and J genes, a position-specific triplet score, and a class score relative to sequence position. An edge between neighboring amino acids was included in the network to model the observed non-independence between neighboring amino acids in their specific sequence positions and the sequence specificity. The triplet score was calculated by taking for each position the triplet containing the two previous amino acids in the CDR3 and ranking it against other triplets in this position in the control and DPC training sets. The triplet was given a score of 1 if it appeared more frequently (in a given position) in the DPC training set than in the control training set, which consisted of the same number of sequences randomly sampled from the pre-sensitization repertoires of the same patients. Triplets that were more frequent in the control set were scored 2, and triplets that appeared equally in the DPC and control sets were scored 1 or 2 uniformly at random. Positions 1 and 2 were taken as a singleton and an ordered pair of amino acids respectively and scored similarly. Triplets were chosen since they were sufficiently high\u00a0dimensional to capture amino acid dependencies but remained computationally feasible. To calculate the class scores, the following procedure was followed: 1. Each V gene in the training set was scored 1 if it was more prevalent in the DPC set, 2 if in the control set, and 1 or 2 uniformly at random otherwise. 2. The J genes were scored similarly. 3. For each sequence position, every amino acid (and an additional dummy amino acid added to the end of CDR3s shorter than 22 to equalize sequence lengths) was scored 1 or 2 as above. 4. Finally, the class score for position i was assigned 1 if the total number of \u20181\u2019 scores obtained by Steps 1\u20133 and the triplets scores from positions 1,2,\u2026,i\u22121 was greater than the number of \u20182\u2019 scores; a score of 2 if the number of \u20182\u2019s was greater, and 1 or 2 randomly otherwise. Training sequences were assigned 1 or 2 in position 22 according to their original class. This process ensured knowledge about the likelihood of belonging to either set could be learned by the model across time\u00a0slices (positions). Class scores for the test sets were calculated based on gene, amino acid, and triplet frequencies in the training sets. Nodes depicting specificity (DPC or control) were included as hidden (latent) variables (the Class nodes in Figure 7A). Inference on the network was done using the Junction Tree algorithm, and parameters were initiated with Dirichlet priors and fitted to the network by Expectation Maximization with a maximum of 10 iterations. Two DBNs were constructed, one for the DPC training set and one for the control set. To classify TCR sequences, the log likelihood of each model was calculated. For sets of sequences, we calculated the sum log likelihood for each model. The results of the DBN were evaluated using 10-fold cross-validation, running each train-test pair 10 times, and calculating the mean classification accuracy (number of sequences/sets of sequences correctly classified divided by total number of sequences/sets of sequences). The training and test sets all consisted of equal numbers of DPC-related and control sequences, and running the DBN with shuffled class labels returned ~50% accuracy. The network diagram in Figure 7A was created using the LaTeX TikZ BayesNet package (https://github.com/jluttine/tikz-bayesnet; Luttinen and Dietz, 2013).\n",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "6dfd9cd2-9d0c-470a-ad73-465ed322287e",
+      "submission_id": "44ee8111-9e85-4343-8799-a9d172135611",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54747.sa1](https://doi.org/10.7554/eLife.54747.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript presents a longitudinal analysis of the whole blood Tcell repertoire dynamics in patients with Alopecia Areata upon primary, secondary and chronic exposures to an allergic chemical agent. The authors have identified signatures of polyclonal T-cell response following sensitization involving stereotypical T-cell receptor genes. Aside from the specific case of T-cell response to the allergic agent in this study, the developed methods could be used for the general and important problem of identifying reactive Tcell populations to antigenic challenges.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The clonal structure and dynamics of the human T cell response to an organic chemical hapten\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Yuval Elhanati (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis manuscript presents a longitudinal analysis of the whole blood TCR repertoire dynamics in patients with Alopecia Areata upon primary, secondary and chronic exposure to DPC treatment. The authors have identified signatures of polyclonal T-cell response following sensitization involving stereotypical T-cell receptor genes. Using a Dynamic Bayesian Network, the authors characterize a sequence based classifier that with a high accuracy can predict sensitization based on TCR sequence. Data collection and analysis are performed carefully and the results are presented clearly, but there are still some concerns that we would like to see addressed.\n\n1) Most of the analysis rely on recognizing the expanded clones. For this purpose TCRs were counted based on their fold change \u2013 2, 4, 8 and 16. However, the fold change can be very sensitive to the sample size at each time point \u2013 smaller samples tend to have lower diversity, which translates into bigger clone frequencies. This bias in particular, is present for TCR clones with low multiplicities (i.e., the majority of TCRs in your data). For example, consider two replicate blood samples such that one is sequenced ten times deeper than the other. A lot of singletons (TCRs with count 1) should be present in the deep sample, whereas almost all of them should be absent in the other sample. To estimate frequencies however, authors adjust these absent counts from 0 to 1 and divide the adjusted counts by the total counts in each sample. As a result, these fluctuations due to sample depth would appear as 10-fold difference in frequency of the singleton clones between samples.\n\n\u2013 To gauge the validity of the analysis, it would be insightful if authors show more basic statistics for the fold change in clone sizes: what are pre-sensitization frequency and counts for expanding clones? Are there a lot of clonotypes that grow from 0 to 8 counts? What fraction of pre-sensitization high-frequency clones expand? One way to show this is to make scatterplots for clone counts in PS vs counts in PT1, ideally in log-scale; see DeWitt et al., 2015 Figure 2 as an example.\n\n\u2013 Given the concerns above, it is also necessary that authors provide a table with details on sample size in data (e.g. unique clonotypes and UMIs for each sequenced sample) and show that the results are robust to these differences. For example, do observed differences in Figure 2 hold, if all time points are down-sampled to the same number of UMI per sample?\n\n2) A more detailed description of the methods for analysis of clone size dynamics is necessary: Are clonal frequencies estimated after adding 1 to zero counts or are missing clones assigned a minimum frequency in a given sample (see the example in comment 1)?\n\n3) From the comparison of Figure 2 and Supplementary file 2 it seems that expansion analyses in \u03b1 and \u03b2 repertoires do not quite agree. In particular, for the \u03b1 chain, there are no significant differences between control and patient groups. If there are strong clonal expansions, one expects a correlated fold increase in \u03b1 and \u03b2 chains that belong to the same clone. Can authors explain this discrepancy? Is there a correlation between the number of expanded clones in \u03b1 and the \u03b2 repertoires?\n\n4) Presentation of Figure 3 should be improved. For examples, clonal dynamics can be shown by connected lines over time. For comparison, it would be useful to show similar statistics in healthy individuals.\n\n5) Figure 4 is difficult to read, specifically the left panels in C, D and E. These plots highlight the dependence of the number of expanded TCRs on the expansion fold change, which is rather trivial and not the point the authors are making here. On the other hand, the differences between the different sensitization groups are difficult to see. A different visualization should be considered.\n\n6) Figure 5: Although V/J usage can reflect a response to DPC, the authors should first analyze whether the V/J usage is patient dependent or treatment dependent. For instance, this can be done by performing the same analysis on all clonotypes from patients versus healthy volunteers, expanded clonotypes in healthy individuals versus 1000 random clones in healthy individuals, etc\u2026 In addition, the use of box-plot is not readable for all the V and J. Better summarizing the information as heatmap.\n\n7) For DBN, it is not clear from the Materials and methods how the sequences are aligned since TCRs have variable length.\n\n8) To train a DBN, the authors construct the negative set from TCRs of healthy donors which were not in the expanded positive set. A natural negative set would be the patient-specific TCRs that were present in the pre-sensitized sample but did not expand. Authors should check how their results are robust to this choice of negative set.\n\nAlso, TCRs are somewhat individual-specific and so using a negative set from different donors might be problematic and create an \"easy\" task for classification. This can be fixed by using donor specific training sets.\n\nWhat is the ratio of positive to negative set? Again, how robust is the performance of DBN to this training ratio. Authors should provide access to their training and test sets as a separate supplementary file.\n\n9) Can authors discuss in more detail the TCR features that are informative for DPC classification. Do the authors expect same classifier performance for other tasks (e.g. distinction of TCRs specific for certain viral epitope from TCRs specific for other epitopes), or high accuracy of DBN is limited to the special case of DPC-recognizing TCRs?\n",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7859a30d-298d-41cc-b13e-5b238ea3e062",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C1",
+      "claim": "Diphenylcyclopropenone (DPC) is an organic chemical hapten which induces allergic contact dermatitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Diphenylcyclopropenone (DPC) is an organic chemical hapten which induces allergic contact dermatitis and is used in the treatment of warts, melanoma, and alopecia areata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known property of DPC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "87abf26b-f6a1-4f9b-937b-7ee35892e9e6",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C2",
+      "claim": "DPC is used in the treatment of warts, melanoma, and alopecia areata.",
+      "claim_type": "EXPLICIT",
+      "source": "Diphenylcyclopropenone (DPC) is an organic chemical hapten which induces allergic contact dermatitis and is used in the treatment of warts, melanoma, and alopecia areata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "19e7347a-386a-4dae-9a5f-86f0ed613ab0",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C3",
+      "claim": "Repeated exposure to DPC induced highly dynamic transient expansions of a polyclonal diverse T cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeated exposure to DPC induced highly dynamic transient expansions of a polyclonal diverse T cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "8340f930-fddb-4bdf-97a4-25091115d936",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C4",
+      "claim": "The number of TCRs expanded early after sensitization varies between individuals and predicts the magnitude of the allergic reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of TCRs expanded early after sensitization varies between individuals and predicts the magnitude of the allergic reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by correlation analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "35ef5bf8-483a-454c-a0cc-39cc2ed68b7c",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C5",
+      "claim": "The expanded TCRs show preferential TCR V and J gene usage.",
+      "claim_type": "EXPLICIT",
+      "source": "The expanded TCRs show preferential TCR V and J gene usage and consist of clusters of TCRs with similar sequences, two characteristic features of antigen-driven responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "4cef0196-1c38-43a9-bf2e-5c2b3b38ea48",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C6",
+      "claim": "The expanded TCRs consist of clusters of TCRs with similar sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The expanded TCRs show preferential TCR V and J gene usage and consist of clusters of TCRs with similar sequences, two characteristic features of antigen-driven responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by clustering analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "4e9024d6-3a97-42f3-a0b4-9c529a7f2733",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C7",
+      "claim": "Preferential V and J gene usage and TCR clustering are characteristic features of antigen-driven responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The expanded TCRs show preferential TCR V and J gene usage and consist of clusters of TCRs with similar sequences, two characteristic features of antigen-driven responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by multiple citations in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "55237b6e-41b8-47f9-89ee-d3ae05dea55d",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C8",
+      "claim": "The expanded TCRs share subtle sequence motifs that can be captured using a dynamic Bayesian network.",
+      "claim_type": "EXPLICIT",
+      "source": "The expanded TCRs share subtle sequence motifs that can be captured using a dynamic Bayesian network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by the DBN analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "38d2ad94-a6d5-4869-85cd-6542f07a4b8b",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C9",
+      "claim": "The response to DPC is mediated by a polyclonal population of T cells recognizing a small number of dominant antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest the response to DPC is mediated by a polyclonal population of T cells recognizing a small number of dominant antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings based on the observed TCR expansion patterns, V/J gene usage, and clustering.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "e5edd8da-d37e-432d-a149-8d9d8b8597e7",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C10",
+      "claim": "DPC is a potent skin sensitizer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a potent skin sensitizer (Mose et al., 2017a; Stute et al., 1981) and, since it is non-mutagenic in the AMES assay (Wilkerson et al., 1987), it has been used as an immunostimulant in the treatment of warts (Buckley et al., 1999), melanoma (Read et al., 2017), and alopecia (Ashworth et al., 1989; Karanovic et al., 2018; Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "3ac88efe-0486-4cd7-bf8d-7126ddad8714",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C11",
+      "claim": "DPC is non-mutagenic in the AMES assay.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a potent skin sensitizer (Mose et al., 2017a; Stute et al., 1981) and, since it is non-mutagenic in the AMES assay (Wilkerson et al., 1987), it has been used as an immunostimulant in the treatment of warts (Buckley et al., 1999), melanoma (Read et al., 2017), and alopecia (Ashworth et al., 1989; Karanovic et al., 2018; Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Wilkerson et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "c231cc51-7d04-4905-a62c-2d145b016587",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C12",
+      "claim": "DPC can act as an adjuvant to conventional immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "DPC can also act as an adjuvant to conventional immunization (von Moos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to von Moos et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "ce94cbf4-ad58-4cae-be2c-a50166d8ea1f",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C13",
+      "claim": "DPC is not commonly found in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its clinical applications, and because it is not commonly found in the environment, DPC serves as an interesting model to study primary and secondary responses to chemical haptens in humans, although the confounding effects of any underlying clinical condition in the treated individuals must obviously be considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a rationale for using DPC as a model system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "5ca45cfe-9e72-41a7-af45-5d31a04629d5",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C14",
+      "claim": "The magnitude of allergic contact dermatitis to DPC does not continue to increase during repeated exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, repeated exposure results in rapid sensitization, but the magnitude of the resulting allergic contact dermatitis (ACD) does not continue to increase during repeated exposure (Mose et al., 2017a), suggesting the existence of regulatory processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Mose et al., 2017a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "d3e5bf15-eca5-48cc-b7ba-b5a2342f28a1",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C15",
+      "claim": "The lack of continued increase in ACD magnitude during repeated DPC exposure suggests the existence of regulatory processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, repeated exposure results in rapid sensitization, but the magnitude of the resulting allergic contact dermatitis (ACD) does not continue to increase during repeated exposure (Mose et al., 2017a), suggesting the existence of regulatory processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the introduction based on the observed clinical pattern.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "117ca95e-b2ad-4317-975b-521a43699250",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C16",
+      "claim": "Global expression profiling at the site of DPC elicitation suggested a predominantly Th1/Th17 type T cell infiltration.",
+      "claim_type": "EXPLICIT",
+      "source": "Global expression profiling at the site of elicitation suggested a predominantly Th1/Th17 type T cell infiltration, whose dynamics mirrored the clinical and histopathological picture (Mose et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Mose et al., 2017b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "d9db1b58-4bf9-46d5-8692-34d69ce3baa6",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C17",
+      "claim": "The dynamics of Th1/Th17 T cell infiltration at the DPC elicitation site mirrored the clinical and histopathological picture.",
+      "claim_type": "EXPLICIT",
+      "source": "Global expression profiling at the site of elicitation suggested a predominantly Th1/Th17 type T cell infiltration, whose dynamics mirrored the clinical and histopathological picture (Mose et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Mose et al., 2017b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "b07a5b2d-3e90-48a8-8488-584eca932bb2",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C18",
+      "claim": "High serum IL4 and low IL12 were observed in patients with alopecia showing a favorable response to DPC treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "High serum interleukin-4 (IL4) and low interleukin-12 (IL12) were observed in patients with alopecia showing a favorable response to DPC treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a previous observation, though no specific citation is provided in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "3e05a07b-7ba7-4289-98c8-23df1f30cee7",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C19",
+      "claim": "TCR sequencing was carried out on unfractionated blood samples from 29 patients with alopecia.",
+      "claim_type": "EXPLICIT",
+      "source": "We carried out TCRseq on unfractionated blood samples from 29 patients with alopecia (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental design in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "6450adc7-fddb-42ec-81d5-a778b7f9b8cd",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C20",
+      "claim": "Samples were collected before and at one to three time points after sensitization with DPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were collected before (referred to as the pre-sensitization [PS] sample, week 0, n = 25 samples) and at one to three time points after sensitization with DPC (Figure 1A), taken at 2 weeks (PT1, n = 23), 6 weeks (PT2, n = 18), and approximately 24 weeks (PT3, n = 17) post-sensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental design in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "5de4ad03-23a8-4f92-96aa-29115c6f31cd",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C21",
+      "claim": "TCR sequencing was performed on five healthy volunteers as controls.",
+      "claim_type": "EXPLICIT",
+      "source": "As controls, we carried out TCRseq on five healthy volunteers, for which we had time points that matched the 0-, 2-, and 6-week time points of the DPC sensitized group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental design in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "88f5a413-7849-40a1-bf18-0c73462890d2",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C22",
+      "claim": "A total of 24,431,855 distinct TCR sequences were obtained, of which 17,451,853 were unique across all samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained a total of 24,431,855 distinct TCR sequences, of which 17,451,853 were unique across all samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sequencing results in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "e76631c4-5679-45b5-b44f-5636cc5a4776",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C23",
+      "claim": "The median number of TCRs per sample was 95,638 (range 23,224\u2013690,600).",
+      "claim_type": "EXPLICIT",
+      "source": "The median number of TCRs per sample was 95,638 (range 23,224\u2013690,600) and the median number of unique TCRs per sample was 75,111 (range 19,095\u2013342,336).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sequencing results in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "13eafd7f-4ca9-4241-a606-4a40ab285c7e",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C24",
+      "claim": "The median number of unique TCRs per sample was 75,111 (range 19,095\u2013342,336).",
+      "claim_type": "EXPLICIT",
+      "source": "The median number of TCRs per sample was 95,638 (range 23,224\u2013690,600) and the median number of unique TCRs per sample was 75,111 (range 19,095\u2013342,336).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sequencing results in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "d221c2d3-39ef-4665-a19c-d9bd127e4de0",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C25",
+      "claim": "The major T cell sub-populations did not change significantly after exposure to DPC.",
+      "claim_type": "EXPLICIT",
+      "source": "The major T cell sub-populations (CD4/CD8, naive, central memory, effector memory, and effector memory RA revertant) (Fletcher et al., 2005) were quantified by flow cytometry and did not change significantly after exposure to DPC (Figure 1B, two-sided paired t-tests corrected for multiple testing, p=0.48, p=0.74, p=0.49, and p=0.74 for CD4, and Figure 1C, p=0.11, p=0.72, p=0.72, and p=0.37 for CD8 naive, central, effector, and effector memory RA revertant cells respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by flow cytometry data shown in Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "535cccf7-6ee7-4e10-b7ee-7b1dba9e192f",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C26",
+      "claim": "TCR repertoire diversity did not differ significantly before and after exposure to DPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, TCR repertoire diversity, captured by the Shannon diversity index, or the clonal expansion captured by the Gini inequality coefficient, did not differ significantly before and after exposure to DPC (Figure 1D,E, Kruskal\u2013Wallis rank sum tests, p=0.89 and p=0.90 respectively), nor between the different time points post-sensitization (Figure 1G,H, Kruskal\u2013Wallis rank sum tests, p=0.96 and p=0.95 respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data shown in Figures 1D, 1E, 1G, and 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "abfeddd5-2b5d-4518-b726-927f18116cea",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C27",
+      "claim": "The number of TCRs found at frequencies above 1 in 1000 did not change as a result of sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the number of TCRs found at frequencies above 1 in 1000, which correspond to the most abundant 6% of the repertoire on average, did not change as a result of sensitization (Figure 1F,I, Kruskal\u2013Wallis rank sum tests, p=0.12 and p=0.91 respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data shown in Figures 1F and 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "228a9f21-cafd-4863-b5a3-7c4800bbbeee",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C28",
+      "claim": "There was no evidence that exposure to DPC caused global alterations in the structure of the TCR repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "There was therefore no evidence that exposure to DPC, a potent skin sensitizer, caused global alterations in the structure of the TCR repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on the analyses of diversity, clonality, and T cell subpopulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "ad4ed6b2-2921-4d5d-b2f8-a75ceee882c4",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C29",
+      "claim": "In a number of individuals, there was a population of TCRs which were absent before sensitization and present at relatively high abundance after sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in a number of individuals, there was a population of TCRs which were absent before sensitization and present at relatively high abundance after sensitization (indicated by the pink dots in the left panels of Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and illustrated in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "2be5173c-f309-4ac5-a1c4-a385286ca437",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C30",
+      "claim": "The range of percentages of expanded TCRs at PT1 is much greater in the patients than in the healthy volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "The range of percentages of expanded TCRs at PT1 is clearly much greater in the patients than in the healthy volunteers (between 0 and 2 weeks), although the medians are not significantly different (p=0.16 and p=0.47 for alpha and beta respectively, Mann\u2013Whitney).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section and supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "b0e0de6f-4bd6-4d62-9cbb-6f820261a0e4",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C31",
+      "claim": "The percentage of expanded TCRs at PT1 in the patients is significantly larger than the percentage of TCRs which were expanded at PS and absent at PT1.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of expanded TCRs at PT1 in the patients is significantly larger than the percentage of TCRs which were expanded at PS and absent at PT1 (p=0.02 for alpha, p=0.03 for beta, Wilcoxon signed\u2013rank).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section and supported by statistical analysis of data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "d77fe6a6-0c1d-4d4a-a723-85b276faa6b3",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C32",
+      "claim": "The number of PT1 expanded TCR alpha and TCR beta sequences was highly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of PT1 expanded TCR alpha and TCR beta sequences was highly correlated (Spearman's rho = 0.85, p<0.0001, Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Results section based on correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "51987b6c-a5e8-46bb-af81-899afe7d669e",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C33",
+      "claim": "After the initial increase post-sensitization, the number of expanded TCRs remained rather constant over the later time points.",
+      "claim_type": "EXPLICIT",
+      "source": "After the initial increase post-sensitization, the number of expanded TCRs remained rather constant over the later time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Results section based on longitudinal analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "1d774b7a-eaec-4c5d-96d1-4ef05f53b062",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C34",
+      "claim": "There was no evidence that the total number of expanded TCRs increased with time despite repeated therapeutic stimulation with sensitizer.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence that the total number of expanded TCRs increased with time, despite the fact that individuals were exposed to repeated therapeutic stimulation with sensitizer on a weekly basis for the period of the study in addition to the patch test applications (Figure 1A) (Kruskal\u2013Wallis rank sum test, p=0.92 alpha and p=0.36 beta).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Results section based on statistical analysis of longitudinal data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "30467def-bbec-4cf9-9f68-b2f8bc1ab281",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C35",
+      "claim": "The majority of PT1 (2 weeks) expanded TCRs decreased or returned to baseline at subsequent time points.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of PT1 (2 weeks) expanded TCRs decreased or returned to baseline at subsequent time points (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section and illustrated in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "c6b890ba-6c6b-4a47-9844-abdc2595159e",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C36",
+      "claim": "The majority of PT2 expanded TCRs present at 6 weeks were not expanded at 2 weeks, peaked at 6 weeks, and decreased or returned to baseline by around 24 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of PT2 expanded TCRs present at 6 weeks were not expanded at 2 weeks, peaked at 6 weeks, and decreased or returned to baseline by the time the PT3 sample was taken at around 24 weeks (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section and illustrated in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "3ff6780b-6d3a-4eab-8b77-adb8b9c743e7",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C37",
+      "claim": "Exposure to repeated doses of DPC induced large, but predominantly transient, changes in the frequencies of a small proportion of the TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The exposure to repeated doses of DPC therefore induced large, but predominantly transient, changes in the frequencies of a small proportion of the TCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on the longitudinal TCR dynamics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "7929054b-079f-4cd1-91c7-a5df367c134d",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C38",
+      "claim": "Exposure to DPC induced skin sensitization in almost all individuals but the magnitude of the response varied significantly between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to DPC induced skin sensitization (patch test scores of + or higher) in almost all individuals but the magnitude of the response varied significantly between individuals (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section and illustrated in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "cbba24dd-9d19-4524-9a0a-26855b514c44",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C39",
+      "claim": "The maximum skin response to DPC was usually observed at the first patch test, and declined or remained constant thereafter despite repeated exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the maximum response was usually observed at the first patch test, and declined or remained constant thereafter despite repeated exposure (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section and illustrated in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "a83bbaf2-1cd3-4581-89e4-09262052cb7f",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C40",
+      "claim": "The number of PT1 expanded TCRs was positively correlated to the patch test score.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of PT1 expanded TCRs was positively correlated to the patch test score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Results section and supported by correlation analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "7ff66cb0-72f6-4313-a4fa-5ee09b061d5a",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C41",
+      "claim": "There was no significant association between the number of PS expanded TCRs and the PT1 patch test score.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was no significant association between the number of PS expanded TCRs and the PT1 patch test score (Figure 4C, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section and illustrated in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "5944263c-9eae-44fb-8ad9-86f2758e56ee",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C42",
+      "claim": "The numbers of expanded TCRs at PT1 were correlated with the strength of the reaction recorded at the sensitization site, and with the patch test score at PT1 (2 weeks), as well as PT2 (6 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated above, the numbers of expanded TCRs at PT1 were correlated with the strength of the reaction recorded at the sensitization site, and with the patch test score at PT1 (2 weeks), as well as PT2 (6 weeks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Results section and illustrated in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "93b52a2a-4ec2-44f2-89ac-4d31361df72b",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C43",
+      "claim": "The correlation between expanded TCRs and patch test scores was lost at PT3 (24 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation was lost at PT3 (24 weeks), perhaps reflecting the greatly decreased range of patch test scores at this time point (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Results section with a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "3254ab64-7855-4f30-9547-4d3b4fbe0b88",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C44",
+      "claim": "Several V and J regions were skewed in several different individuals, suggesting some common driver of V/J gene usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some V and J regions were skewed in several different individuals, suggesting some common driver of V/J gene usage, despite the fact that the individuals were not related.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Results section based on the V/J gene usage analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "bf024625-1894-41b2-b17f-bce544dfdb26",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C45",
+      "claim": "The expanded TCRs formed significantly more large clusters of 'related' TCRs than control sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The expanded TCRs formed significantly more large clusters of 'related' TCRs than either control sets (Figure 6B,C (i)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section and illustrated in Figure 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "719f9028-98f1-4d24-a47b-db6eaf249cb3",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C46",
+      "claim": "The sequences in the largest cluster of CDR3 beta sequences showed a high level of similarity consistent with belonging to a set of TCRs with shared specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequences showed a high level of similarity consistent with belonging to a set of TCRs with shared specificities (Dash et al., 2017; Glanville et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Results section based on sequence alignment analysis and supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "23577b23-19df-4527-9246-4d8ade3c16e9",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C47",
+      "claim": "The skewing of V and J genes, and the presence of clusters of similar TCRs were strongly suggestive that the expanded TCRs were enriched for TCRs responding to a limited number of specific epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the skewing of V and J genes, and the presence of clusters of similar TCRs were strongly suggestive that the expanded TCRs were enriched for TCRs responding to a limited number of specific epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "cb72723a-d56d-4426-b4a9-b17dbee47d49",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C48",
+      "claim": "The DBN could classify the full DPC/control test sets with mean accuracy of 94%.",
+      "claim_type": "EXPLICIT",
+      "source": "The DBN classifier could classify the full DPC/control test sets with mean accuracy of 94% from 10 repeats of 10-fold cross validation, and sets of 10 sequences with mean accuracy 77.7% (Figure 7C upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section based on the DBN classification analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "d8ef6d6c-6c96-4727-87f7-1375e841194e",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C49",
+      "claim": "The DBN could classify sets of 10 DPC/control sequences with mean accuracy 77.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "The DBN classifier could classify the full DPC/control test sets with mean accuracy of 94% from 10 repeats of 10-fold cross validation, and sets of 10 sequences with mean accuracy 77.7% (Figure 7C upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section based on the DBN classification analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "d60d9911-0b9c-4555-9589-6a3da59b709e",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C50",
+      "claim": "When the DBN was asked to classify every sequence regardless of confidence level, the mean accuracy was 54.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Where the DBN was asked to classify every sequence regardless of confidence level, the mean accuracy was 54.3%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Results section based on the DBN classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "e58d58b5-76b7-4eca-a8e0-6637aeb5951d",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C51",
+      "claim": "When taking the 5% or 10% most confident assignments, individual sequences were classified with mean accuracy of 64.7% and 60.6% respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "When taking the 5% or 10% most confident assignments, individual sequences were classified with mean accuracy of 64.7% and 60.6% respectively, from 10-fold cross validation (Figure 7C lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section based on the DBN classification analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "e102f6a5-7c46-44b5-b7f5-c1325893097b",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C52",
+      "claim": "The response to sensitizer is accompanied by a dynamic, robust polyclonal increase in abundance of a defined set of TCR genes which presumably reflects clonal expansion of antigen-specific T cells in response to DPC.",
+      "claim_type": "EXPLICIT",
+      "source": "The key findings are that the response to sensitizer is accompanied by a dynamic, robust polyclonal increase in abundance of a defined set of TCR genes which presumably reflects clonal expansion of antigen-specific T cells in response to DPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of key findings stated in the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "fed56c3f-d1e3-412f-9c56-918ade095a64",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C53",
+      "claim": "The breadth of the response to DPC, as captured by the number of TCRs that increase in frequency, is very diverse between individuals and predicts the degree of sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the breadth of the response, as captured by the number of TCRs that increase in frequency, is very diverse between individuals and predicts the degree of sensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of key findings stated in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "6e56b492-7273-49c6-9083-b0e7585bfd30",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C54",
+      "claim": "The response of individual TCRs to DPC is transient, with most TCRs returning to low frequencies, or disappearing by the subsequent time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the response of individual TCRs, which reflect individual T cell clonal dynamics, is transient, with most TCRs returning to low frequencies, or disappearing by the subsequent time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of key findings stated in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "57a45121-df51-450d-8988-d23e47a02654",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C55",
+      "claim": "Activation of both CD4+ and CD8+ antigen-specific T cells plays key roles in allergic contact dermatitis.",
+      "claim_type": "EXPLICIT",
+      "source": "There is widespread agreement that activation of both CD4+ and CD8+ antigen-specific T cells plays key roles, although antibody may also be important (Singleton et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as established knowledge and supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "89e7ebcd-c1d6-491e-9d0d-50a09185eea6",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C56",
+      "claim": "The observed changes in TCR frequency from zero to eight are unlikely to be due to sampling effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed changes from zero to eight are unlikely to be due to sampling effects; in fact, modeling sampling as a Poisson process indicates that changes from zero to eight or more have individual probabilities of <0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument stated in the Discussion based on statistical modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "8c1d830d-ae20-4a9f-b880-d06235843415",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C57",
+      "claim": "The observed TCR changes are unlikely to arise from exposure to unknown antigens (e.g. infectious agents).",
+      "claim_type": "EXPLICIT",
+      "source": "The observed changes are also unlikely to arise from exposure to unknown antigens (e.g. infectious agents) since the number of expanded TCRs at the first time point post-sensitization is greater than the number of expanded TCRs observed in unsensitized individuals sampled at similar time points, for the great majority of the patients tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument stated in the Discussion based on comparison with control data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "43c54cad-f855-49d2-9ccd-a2c22a49700e",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C58",
+      "claim": "V and J gene skewing and increased CDR3 clustering are well-established signatures of an antigen-specific T cell response.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the expanded set of TCRs show strong evidence of V and J gene skewing, and of increased CDR3 clustering, both well-established signatures of an antigen-specific T cell response (Thomas et al., 2014; Sun et al., 2017; Davis et al., 1995; Glanville et al., 2017; Dash et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as established knowledge and supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "85fa2f51-d562-4c27-8aaf-32557d07707f",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C59",
+      "claim": "The set of observations suggest that DPC stimulates a transient expansion of T cells carrying a defined set of related TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this set of observations suggest that DPC, perhaps in the form of a set of modified-self peptide adjuncts, stimulates a transient expansion of T cells carrying a defined set of related TCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Discussion based on multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "e5b83cab-d26f-4461-a25a-9e9f7c0758ba",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C60",
+      "claim": "TCR clustering, V region enrichment, and DBN classification could be observed across a panel of unrelated individuals, suggesting that hapten-specific responses may be less dependent on MHC matching than conventional peptide-specific responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that TCR clustering, V region enrichment, and DBN classification could be observed across a panel of unrelated individuals is particularly intriguing, and suggests that hapten-specific responses may be less dependent on MHC matching than conventional peptide-specific responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation stated in the Discussion based on the observed patterns across individuals.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "7125e0f0-87fd-43b5-ad74-425385c5bb08",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C61",
+      "claim": "DPC is considered a potent sensitizer.",
+      "claim_type": "EXPLICIT",
+      "source": "DPC is considered a potent sensitizer (Stute et al., 1981; Mose et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "97c7cfd8-650d-4086-b1f5-2df0a7451703",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C62",
+      "claim": "The number of expanded TCRs at the first post-sensitization sample (2 weeks) showed strong correlation with the strength of the response.",
+      "claim_type": "EXPLICIT",
+      "source": "This was reflected in a wide range of expanded TCRs, and the number of expanded TCRs at the first post-sensitization sample (2 weeks) showed strong correlation with the strength of the response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings stated in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "178ad623-a08c-47ac-8b93-8e8ddf79a916",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C63",
+      "claim": "The reasons for inter-individual variation in response to DPC are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The reasons for this inter-individual variation are unknown, but could reflect inter-individual differences in immune response (Brodin et al., 2015), or potentially differences in factors that control hapten penetration, such as skin thickness or composition (Reynolds et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an acknowledgment of uncertainty with speculative explanations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "c30ce498-3c00-4f3c-8612-f74c6e205672",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C64",
+      "claim": "Low responders to DPC were not boosted by repeated exposure over many months.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, low responders were not boosted by repeated exposure to DPC over many months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "90a196d6-c956-45d0-9f45-fe27c8faf53e",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C65",
+      "claim": "The response to DPC was usually maximal at the first patch test, suggesting that regulatory mechanisms come into play to limit the response in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the response was usually maximal at the first patch test, suggesting that regulatory mechanisms come into play to limit the response in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Discussion with an interpretive explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "643049bb-235c-4855-a3a6-06c090f4e46b",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C66",
+      "claim": "The initial TCR expansion did not continue to increase despite repeated exposure to antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly the initial TCR expansion did not continue to increase despite repeated exposure to antigen, and indeed the majority of TCRs showed very transitory responses, with individual TCR frequencies falling to around pre-sensitization frequencies by the next time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "e1151300-7e67-4d0c-b8ea-6ba59829292b",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C67",
+      "claim": "Similar rapid expansion and subsequent contraction of TCRs have been observed in response to live attenuated yellow fever vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar rapid expansion and subsequent contraction have been observed in response to live attenuated yellow fever vaccine (DeWitt et al., 2015; Pogorelyy et al., 2019; Pogorelyy et al., 2018), one of few examples where TCR repertoire has been studied before and after challenge in a human setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "80b09d1e-5cdd-4605-a8fc-2ea718575438",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C68",
+      "claim": "T cell contraction in the vaccine context may reflect the rapid disappearance of antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "T cell contraction in the vaccine context may therefore reflect the rapid disappearance of antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation stated in the Discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "8a7bf050-8d2b-4e9e-9e8a-d7810dbf231d",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C69",
+      "claim": "The mechanisms which limit the DPC response are more likely to be due to intrinsic regulatory pathways or changes in intrinsic migratory pathways rather than simply reflect antigen disappearance.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms which limit the DPC response are therefore more likely to be due to intrinsic regulatory pathways (e.g. Treg induction), or changes in intrinsic migratory pathways rather than simply reflect antigen disappearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation stated in the Discussion based on the contrast with vaccine studies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "6629dbf9-7327-4f33-a586-176376ccffee",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C70",
+      "claim": "A second wave of TCRs appeared at increased frequency at PT2, 6 weeks post-sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that a second wave of TCRs appeared at increased frequency at PT2, 6 weeks post-sensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "cf814574-9021-4c46-b3eb-0692f1a41bc9",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C71",
+      "claim": "The set of 'late' TCRs at PT2 was almost completely distinct from the 'early' peak at week 2.",
+      "claim_type": "EXPLICIT",
+      "source": "This set of 'late' TCRs was almost completely distinct from the 'early' peak at week 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "817adccf-7597-4ff9-b768-a4535234aa39",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C72",
+      "claim": "There was no correlation between the magnitude of the patch test score at PT1 and the number of TCRs expanded at PT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there was no correlation between the magnitude of the patch test score at PT1 and the number of TCRs expanded at PT2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "580e6a90-bc2e-400e-9d64-75aaf7c9ee40",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C73",
+      "claim": "This study is the first analysis of in vivo TCR repertoire changes in response to a chemical allergen.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, this study is the first analysis of in vivo TCR repertoire changes in response to a chemical allergen, and is one of only a handful of studies that document in vivo longitudinal changes in TCRrep in response to immunization in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a claim about the novelty of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "faf9bb49-1ca3-4c57-a4b6-ee86b82f6d83",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C74",
+      "claim": "The immune response in this population may be different from healthy individuals, since all patients suffered from some form of alopecia, which is believed to have an autoimmune etiology.",
+      "claim_type": "EXPLICIT",
+      "source": "We cannot rule out that the immune response in this population is different from healthy individuals, since all patients suffered from some form of alopecia, which is believed to have an autoimmune etiology (Tr\u00fceb and Dias, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a limitation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "2efc6b24-e2d1-4992-977b-daee69256d26",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C75",
+      "claim": "DPC is unlikely to bear any relation to the autoimmune target in alopecia, since similar therapeutic responses can be observed in patients with alopecia treated with other completely unrelated contact sensitizers.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, DPC is unlikely to bear any relation to the autoimmune target in alopecia, since similar therapeutic responses (hair growth) can be observed in patients with alopecia treated with other completely unrelated contact sensitizers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument stated in the Discussion to address the potential limitation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "aab89512-66a5-401e-9828-8d9e4b019d4c",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C76",
+      "claim": "The study confirms that the response even to a simple chemical such as DPC is polyclonal involving dozens or even hundreds of TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The study confirms our previous in vitro findings that the response even to a simple chemical such as DPC is polyclonal involving dozens or even hundreds of TCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Discussion based on the study findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "113f40d6-0160-4af2-99bc-5693caa80f83",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C77",
+      "claim": "The study highlights the dynamic nature of the TCR repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "The study also highlights the dynamic nature of the TCR repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Discussion based on the study findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "16c0c763-58a2-4150-b374-909ce7f84253",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C78",
+      "claim": "A total of 34 patients were recruited to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 34 patients were recruited to this study (NRES Ethics Committee East of England \u2013 Cambridgeshire and Hertfordshire [14/EE/1067]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "3a41346e-e960-4e45-9703-2c265eb7e298",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C79",
+      "claim": "Participants were recruited from patients who had been diagnosed with alopecia and were identified as suitable for DPC treatment by a consultant dermatologist.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were recruited from patients who had been diagnosed with alopecia, were aged between 18 and 70, identified as suitable for DPC treatment by a consultant dermatologist, and were now attending their first visit to the Alopecia Clinic at Salford Royal Hospital for DPC therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "92aa05c0-6f0d-48dc-bb07-57178cddfdbb",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C80",
+      "claim": "This study ran alongside patients' prescribed DPC treatment (weekly doses of DPC to the scalp to induce inflammation and hair regrowth).",
+      "claim_type": "EXPLICIT",
+      "source": "This study ran alongside patients' prescribed DPC treatment (weekly doses of DPC to the scalp to induce inflammation and hair regrowth).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "1d7f0df6-9da2-4f98-b754-ebb4a83a95ed",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C81",
+      "claim": "Twenty-nine of the individuals who participated in the study provided blood samples for TCR sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-nine of the individuals who participated in the study provided blood samples for TCR sequencing (TCRseq), for between one and four of the study time points (pre-sensitization, and at 2, 6, and 24 weeks of DPC treatment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "66d210c4-590a-4400-88b1-ab665e15707c",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C82",
+      "claim": "Flow cytometry data was obtained for peripheral blood mononuclear cells (PBMCs) from 10 treated patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry data was obtained for peripheral blood mononuclear cells (PBMCs) from 10 treated patients, and patch test data for 24 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "fb80c2c2-af76-4658-adf0-67f7a6483897",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C83",
+      "claim": "Patch test data was obtained for 24 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry data was obtained for peripheral blood mononuclear cells (PBMCs) from 10 treated patients, and patch test data for 24 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "2fe39a0c-61f3-4a75-b67d-ce56d74d03c9",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C84",
+      "claim": "Sensitization to DPC was induced by application of 2% DPC (in acetone) to a 2 cm by 2 cm patch of skin on the upper inner arm.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitization to DPC was induced by application of 2% DPC (in acetone) to a 2 cm by 2 cm patch of skin on the upper inner arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "b6179b66-5723-48cd-a3c4-39f2632e222b",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C85",
+      "claim": "Patch testing was performed on the skin of the upper back using Finn chambers (8 mm inner diameter) containing 0.01% DPC in acetone.",
+      "claim_type": "EXPLICIT",
+      "source": "Patch testing was performed on the skin of the upper back using Finn chambers (8 mm inner diameter) containing 0.01% DPC in acetone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "e13a646c-5fa5-4af5-822c-931d5d2df5f5",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C86",
+      "claim": "After 6 days, patients' reactions were scored according to standards set by the International Contact Dermatitis Research Group.",
+      "claim_type": "EXPLICIT",
+      "source": "After 6 days, patients' reactions were scored as no reaction (\u2212), weakly sensitized (+), strongly sensitized (++), or extremely sensitized (+++) according to standards set by the International Contact Dermatitis Research Group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "c214d375-b3c2-474a-994f-915012082638",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C87",
+      "claim": "The \u03b1 and \u03b2 chains of the TCR repertoire were sequenced using a method that starts with total RNA isolated from unfractionated whole blood.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1 and \u03b2 chains of the TCR repertoire of 29 participants were sequenced using a method that starts with total RNA isolated from unfractionated whole blood, collected in Tempus Blood RNA tubes (Thermofisher #4342792) using the manufacturer's protocol for RNA extraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "3893b741-85c5-4234-acf2-11b9839b43f5",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C88",
+      "claim": "The TCR sequencing pipeline introduces unique molecular identifiers attached to individual cDNA molecules to provide a quantitative and reproducible method of library preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pipeline introduces unique molecular identifiers attached to individual cDNA molecules to provide a quantitative and reproducible method of library preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "016b7666-889c-45c8-a289-4ef96b08d705",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C89",
+      "claim": "Na\u00efve T cells were defined as CD45RA+ and CD27+.",
+      "claim_type": "EXPLICIT",
+      "source": "Na\u00efve cells were defined as CD45RA+ and CD27+; central memory as CD45RA\u2212 CD27+; effector memory as CD45RA\u2212 CD27\u2212, and EMRA as CD45RA+ CD27\u2212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "bb3120df-f336-4baa-b095-1a5601357542",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C90",
+      "claim": "Central memory T cells were defined as CD45RA\u2212 CD27+.",
+      "claim_type": "EXPLICIT",
+      "source": "Na\u00efve cells were defined as CD45RA+ and CD27+; central memory as CD45RA\u2212 CD27+; effector memory as CD45RA\u2212 CD27\u2212, and EMRA as CD45RA+ CD27\u2212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "5642a4a0-2234-4e0d-a4cb-17a05461fac8",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C91",
+      "claim": "Effector memory T cells were defined as CD45RA\u2212 CD27\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "Na\u00efve cells were defined as CD45RA+ and CD27+; central memory as CD45RA\u2212 CD27+; effector memory as CD45RA\u2212 CD27\u2212, and EMRA as CD45RA+ CD27\u2212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "c8de3517-7d35-4033-9343-38f2aae401b3",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C92",
+      "claim": "EMRA T cells were defined as CD45RA+ CD27\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "Na\u00efve cells were defined as CD45RA+ and CD27+; central memory as CD45RA\u2212 CD27+; effector memory as CD45RA\u2212 CD27\u2212, and EMRA as CD45RA+ CD27\u2212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "dec8c418-4bdf-4440-ae44-b74c0bce7135",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C93",
+      "claim": "The pairwise similarity between TCRs was measured on the basis of amino acid triplet sharing using the normalized string kernel function.",
+      "claim_type": "EXPLICIT",
+      "source": "The pairwise similarity between TCRs was measured on the basis of amino acid triplet sharing, which was calculated using the normalized string kernel function stringdot (with parameters stringdottype='spectrum', length = 3, normalized=TRUE) from the Kernlab package (Karatzoglou et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "800e5c8a-2816-4276-9025-59772c58ca64",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C94",
+      "claim": "Two TCRs were considered connected if the similarity index was above 0.75.",
+      "claim_type": "EXPLICIT",
+      "source": "Two TCRs were considered connected if the similarity index was above 0.75.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "9ebbdcaf-1472-431b-8d65-b23ecb56891c",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C95",
+      "claim": "The DBN took as input the position along the CDR3 sequence, the amino acid in each position, the V and J genes, a position-specific triplet score, and a class score relative to sequence position.",
+      "claim_type": "EXPLICIT",
+      "source": "The DBN took as input the position along the CDR3 sequence, the amino acid in each position, the V and J genes, a position-specific triplet score, and a class score relative to sequence position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "6071c2c6-f1ab-4fb8-a4f7-8adc24842336",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "claim_id": "C96",
+      "claim": "The probability of observing a specific amino acid in a particular position given its neighbors differs between DPC-expanded sequences and control sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Figure 7B demonstrates the relationship between neighboring amino acids in specific positions in the CDR3 sequence and antigen specificity. The probability of observing a specific amino acid in a particular position given its neighbors differs between DPC-expanded sequences and control sequences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding stated in the Results section and illustrated in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recruited 34 patients with alopecia undergoing DPC treatment, with 29 providing blood samples for TCR sequencing at multiple time points (pre-sensitization and 2, 6, and 24 weeks post-sensitization). Five healthy volunteers served as controls. A total of 24,431,855 distinct TCR sequences were obtained using a quantitative method with unique molecular identifiers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 and C78-C88 provide comprehensive methodological details about patient recruitment, sample collection, and sequencing approach. The experimental design is clearly described with appropriate controls, sample sizes are reported, and the technical methodology is well-documented with references to established protocols.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "9af25b6d-37ec-46e6-a2f8-ae0fd6862de2",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Exposure to DPC did not cause global alterations in the TCR repertoire structure. Major T cell subpopulations, TCR repertoire diversity (Shannon index), clonal expansion (Gini coefficient), and the number of abundant TCRs (>1/1000 frequency) remained unchanged after sensitization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are well-supported by flow cytometry data (Figure 1B-C) and statistical analyses using appropriate non-parametric tests with multiple testing correction. All p-values are reported and exceed the 0.05 threshold, supporting the conclusion of no significant global changes. The analyses are appropriately controlled and the conclusion follows logically from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "ed673c9c-7774-48a9-92b6-db75912d0479",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A subset of TCRs absent before sensitization appeared at high abundance (\u22658 copies) after DPC exposure. The range of expanded TCRs at PT1 was greater in patients than healthy volunteers, and the percentage of PT1 expanded TCRs was significantly larger than pre-sensitization expanded TCRs. The number of expanded TCRs remained constant over time despite repeated antigen exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 are supported by visual data (Figure 2A-C) and statistical analyses including Mann-Whitney and Wilcoxon signed-rank tests with reported p-values. The threshold of \u22658 copies is justified by Poisson modeling (C56). The correlation between alpha and beta chains (rho=0.85, p<0.0001) provides internal validation. However, the choice of threshold (8) could benefit from more extensive sensitivity analysis beyond the mentioned thresholds of 4, 16, and 32.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "d87cf9f6-5e75-471e-a89f-8fba10226cac",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individual TCR dynamics showed transient expansions with most PT1 expanded TCRs decreasing or returning to baseline at subsequent time points. A distinct set of TCRs expanded at PT2 (6 weeks), which were not expanded at PT1, and these also returned to baseline by PT3 (24 weeks).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are well-supported by longitudinal data shown in Figure 3A-B for 10 patients with complete time series. The visual evidence clearly demonstrates the transient nature of TCR expansions. The observation of distinct early and late waves is a novel finding, though the biological mechanism remains unexplored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "89aac80a-7f79-4a83-b4ad-2132b30e3e1d",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DPC induced skin sensitization in almost all individuals with variable magnitude. The maximum response typically occurred at the first patch test and declined thereafter. The number of PT1 expanded TCRs positively correlated with patch test scores at PT1 and PT2, but not with pre-sensitization expanded TCRs or at PT3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 and C62 are supported by clinical data (Figure 4A-D) and correlation analyses with reported Spearman's rho values and p-values. The correlation between TCR expansion and clinical response is a key finding. However, the loss of correlation at PT3 is attributed speculatively to decreased range of patch test scores without rigorous statistical testing. The subsampling analysis mentioned shows threshold-dependent significance, suggesting some sensitivity to analytical choices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "2ddc7f19-a425-477d-95c1-1042aefea9e9",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Expanded TCRs showed preferential V and J gene usage across multiple individuals and formed significantly more clusters of similar sequences compared to control sets. The largest cluster showed high sequence similarity consistent with shared TCR specificities, suggesting enrichment for TCRs responding to limited epitopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C44-C47 are supported by V/J gene usage analysis (Figure 5) using bootstrapping for statistical significance, and clustering analysis (Figure 6) with appropriate controls. The similarity threshold (0.75) is justified. However, the bootstrapping approach for V/J genes acknowledges that under-represented genes are less robust due to small sample sizes. The interpretation that these features indicate antigen-specific responses relies on established knowledge (C7, C58) but lacks direct functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "f94de7fc-ff12-45ff-827a-cfad4e259fa6",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A dynamic Bayesian network (DBN) successfully classified DPC-expanded TCRs from control sequences with 94% accuracy for full test sets and 77.7% for sets of 10 sequences. Individual sequence classification achieved 54.3% mean accuracy overall, improving to 64.7% and 60.6% for the 5% and 10% most confident assignments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C8, C48-C51, C95-C96 describe the DBN methodology and performance. The approach is technically sound with 10-fold cross-validation repeated 10 times. The model incorporates multiple sequence features and provides confidence estimates. However, the modest individual sequence accuracy (54.3% overall, only slightly better than random for low-confidence predictions) suggests limited discriminatory power at the single-sequence level. The high accuracy for full sets may reflect aggregate statistical power rather than strong individual sequence signatures. The biological interpretation of the learned features (Figure 7B) is interesting but requires validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "33ced8a9-48d8-4d76-8d5f-eb7d502ff4b7",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study demonstrates that repeated DPC exposure induces highly dynamic, transient, polyclonal T cell expansions. The breadth of response varies between individuals and predicts sensitization magnitude. The observations suggest DPC stimulates expansion of T cells recognizing a small number of dominant antigens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C9, C52-C54, C59, C76-C77 represent the main conclusions synthesizing multiple lines of evidence. These are well-supported by the data presented in earlier results. However, the interpretation that expanded TCRs recognize 'a small number of dominant antigens' (C9, C59) is inferential and lacks direct evidence of antigen specificity. The study cannot definitively prove these TCRs are DPC-specific without functional validation (e.g., tetramer staining, which the authors acknowledge is unavailable for haptens).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "31591842-3984-4f1b-b8f4-ea0df0131a97",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple lines of evidence support that observed TCR changes represent antigen-specific responses rather than sampling artifacts or responses to unknown antigens. Changes from zero to \u22658 copies have Poisson probabilities <0.05, expanded TCRs exceed those in healthy controls, and show established signatures of antigen-driven responses (V/J skewing, CDR3 clustering).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 provide important arguments supporting the antigen-specificity interpretation. The Poisson modeling (C56) provides statistical justification for the expansion threshold. Comparison with healthy volunteers (C57) strengthens the causal link to DPC exposure. Reference to established signatures (C58) is well-cited. However, these remain indirect evidence; the study lacks direct functional proof of DPC-specificity (acknowledged by authors in C74-C75).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "dd6404d8-710e-4cc5-93d7-d7a5efe19e50",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TCR clustering and V/J enrichment patterns observed across unrelated individuals suggest hapten responses may be less MHC-dependent than conventional peptide responses. Low responders were not boosted by repeated exposure, and responses were maximal at first patch test, suggesting regulatory mechanisms. A second wave of distinct TCRs appeared at PT2 without correlation to PT1 patch test scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60, C63-C66, C69-C72 present important observations but with significant uncertainty. The speculation about reduced MHC-dependence (C60) is intriguing but highly speculative without HLA typing data. The reasons for inter-individual variation (C63) are acknowledged as unknown. The regulatory mechanism hypothesis (C65, C69) is reasonable but speculative. The second wave of TCRs (C70-C72) is an interesting observation but lacks mechanistic explanation and could represent various phenomena including regulatory responses, different epitope recognition, or technical artifacts. These findings warrant follow-up studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "048b1be9-62fa-4350-8950-7d3f98ebb831",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Similar rapid TCR expansion and contraction have been observed in yellow fever vaccine studies, where contraction may reflect rapid antigen disappearance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 appropriately cite prior work on yellow fever vaccine responses. The comparison is relevant and well-supported by citations. The speculation about antigen disappearance (C68) in the vaccine context is reasonable and helps contextualize the DPC findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "ae2bb91a-0071-452c-bab9-547a6dceb0fb",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "This is the first in vivo analysis of TCR repertoire changes in response to a chemical allergen. The study acknowledges that all patients had alopecia with autoimmune etiology, which may affect immune responses, but argues DPC is unlikely related to the autoimmune target since other unrelated sensitizers produce similar therapeutic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 appropriately position the study's novelty and acknowledge an important limitation. The argument that DPC is unlikely related to the alopecia autoimmune target (C75) is reasonable but not definitive. The potential confounding effect of underlying autoimmune disease on TCR dynamics remains a limitation that cannot be fully resolved without comparison to DPC-treated individuals without alopecia.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "69b2071d-f64a-4630-8a5e-35678f2f02fb",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "DPC is an organic chemical hapten and potent skin sensitizer that induces allergic contact dermatitis and is used therapeutically for warts, melanoma, and alopecia. It is non-mutagenic and not commonly found in the environment. Previous studies showed the response involves Th1/Th17 infiltration and does not continue to increase with repeated exposure, suggesting regulatory processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C18, C55, C61 provide background knowledge about DPC that is well-supported by appropriate citations. These establish the rationale for using DPC as a model system and provide context for interpreting the findings. The claims are appropriately attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "b260e2dd-bfd5-45ce-8d36-003a38548169",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Preferential V and J gene usage and TCR clustering are well-established characteristic features of antigen-driven T cell responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C58 state established knowledge that is well-supported by multiple citations to authoritative prior work. This provides the conceptual framework for interpreting the observed V/J skewing and clustering as evidence of antigen-specific responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    },
+    {
+      "id": "c7a80f05-0295-4207-883c-5b1141ae627c",
+      "content_id": "92cd3335-7fc2-4e5f-bbb3-823bc9520434",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "T cell subpopulations were defined using standard markers (CD45RA and CD27 for naive, central memory, effector memory, and EMRA). TCR similarity was measured using normalized string kernel based on amino acid triplet sharing, with a similarity threshold of 0.75 for clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C94 describe standard methodological approaches. The T cell subset definitions are conventional and appropriately cited. The string kernel approach for TCR similarity is well-established and the threshold selection is justified. These methodological choices are appropriate and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:34:27.934372Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3e05a07b-7ba7-4289-98c8-23df1f30cee7",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "6450adc7-fddb-42ec-81d5-a778b7f9b8cd",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "5de4ad03-23a8-4f92-96aa-29115c6f31cd",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "88f5a413-7849-40a1-bf18-0c73462890d2",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "e76631c4-5679-45b5-b44f-5636cc5a4776",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "13eafd7f-4ca9-4241-a606-4a40ab285c7e",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "16c0c763-58a2-4150-b374-909ce7f84253",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "3a41346e-e960-4e45-9703-2c265eb7e298",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "92aa05c0-6f0d-48dc-bb07-57178cddfdbb",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "1d7f0df6-9da2-4f98-b754-ebb4a83a95ed",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "66d210c4-590a-4400-88b1-ab665e15707c",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "fb80c2c2-af76-4658-adf0-67f7a6483897",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "2fe39a0c-61f3-4a75-b67d-ce56d74d03c9",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "b6179b66-5723-48cd-a3c4-39f2632e222b",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "e13a646c-5fa5-4af5-822c-931d5d2df5f5",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "c214d375-b3c2-474a-994f-915012082638",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "3893b741-85c5-4234-acf2-11b9839b43f5",
+      "result_id": "8af3f4a5-54c7-4c2d-8c70-2cf347f29caa"
+    },
+    {
+      "claim_id": "d221c2d3-39ef-4665-a19c-d9bd127e4de0",
+      "result_id": "9af25b6d-37ec-46e6-a2f8-ae0fd6862de2"
+    },
+    {
+      "claim_id": "535cccf7-6ee7-4e10-b7ee-7b1dba9e192f",
+      "result_id": "9af25b6d-37ec-46e6-a2f8-ae0fd6862de2"
+    },
+    {
+      "claim_id": "abfeddd5-2b5d-4518-b726-927f18116cea",
+      "result_id": "9af25b6d-37ec-46e6-a2f8-ae0fd6862de2"
+    },
+    {
+      "claim_id": "228a9f21-cafd-4863-b5a3-7c4800bbbeee",
+      "result_id": "9af25b6d-37ec-46e6-a2f8-ae0fd6862de2"
+    },
+    {
+      "claim_id": "ad4ed6b2-2921-4d5d-b2f8-a75ceee882c4",
+      "result_id": "ed673c9c-7774-48a9-92b6-db75912d0479"
+    },
+    {
+      "claim_id": "2be5173c-f309-4ac5-a1c4-a385286ca437",
+      "result_id": "ed673c9c-7774-48a9-92b6-db75912d0479"
+    },
+    {
+      "claim_id": "b0e0de6f-4bd6-4d62-9cbb-6f820261a0e4",
+      "result_id": "ed673c9c-7774-48a9-92b6-db75912d0479"
+    },
+    {
+      "claim_id": "d77fe6a6-0c1d-4d4a-a723-85b276faa6b3",
+      "result_id": "ed673c9c-7774-48a9-92b6-db75912d0479"
+    },
+    {
+      "claim_id": "51987b6c-a5e8-46bb-af81-899afe7d669e",
+      "result_id": "ed673c9c-7774-48a9-92b6-db75912d0479"
+    },
+    {
+      "claim_id": "1d774b7a-eaec-4c5d-96d1-4ef05f53b062",
+      "result_id": "ed673c9c-7774-48a9-92b6-db75912d0479"
+    },
+    {
+      "claim_id": "30467def-bbec-4cf9-9f68-b2f8bc1ab281",
+      "result_id": "d87cf9f6-5e75-471e-a89f-8fba10226cac"
+    },
+    {
+      "claim_id": "c6b890ba-6c6b-4a47-9844-abdc2595159e",
+      "result_id": "d87cf9f6-5e75-471e-a89f-8fba10226cac"
+    },
+    {
+      "claim_id": "3ff6780b-6d3a-4eab-8b77-adb8b9c743e7",
+      "result_id": "d87cf9f6-5e75-471e-a89f-8fba10226cac"
+    },
+    {
+      "claim_id": "7929054b-079f-4cd1-91c7-a5df367c134d",
+      "result_id": "89aac80a-7f79-4a83-b4ad-2132b30e3e1d"
+    },
+    {
+      "claim_id": "cbba24dd-9d19-4524-9a0a-26855b514c44",
+      "result_id": "89aac80a-7f79-4a83-b4ad-2132b30e3e1d"
+    },
+    {
+      "claim_id": "a83bbaf2-1cd3-4581-89e4-09262052cb7f",
+      "result_id": "89aac80a-7f79-4a83-b4ad-2132b30e3e1d"
+    },
+    {
+      "claim_id": "7ff66cb0-72f6-4313-a4fa-5ee09b061d5a",
+      "result_id": "89aac80a-7f79-4a83-b4ad-2132b30e3e1d"
+    },
+    {
+      "claim_id": "5944263c-9eae-44fb-8ad9-86f2758e56ee",
+      "result_id": "89aac80a-7f79-4a83-b4ad-2132b30e3e1d"
+    },
+    {
+      "claim_id": "93b52a2a-4ec2-44f2-89ac-4d31361df72b",
+      "result_id": "89aac80a-7f79-4a83-b4ad-2132b30e3e1d"
+    },
+    {
+      "claim_id": "97c7cfd8-650d-4086-b1f5-2df0a7451703",
+      "result_id": "89aac80a-7f79-4a83-b4ad-2132b30e3e1d"
+    },
+    {
+      "claim_id": "35ef5bf8-483a-454c-a0cc-39cc2ed68b7c",
+      "result_id": "2ddc7f19-a425-477d-95c1-1042aefea9e9"
+    },
+    {
+      "claim_id": "3254ab64-7855-4f30-9547-4d3b4fbe0b88",
+      "result_id": "2ddc7f19-a425-477d-95c1-1042aefea9e9"
+    },
+    {
+      "claim_id": "bf024625-1894-41b2-b17f-bce544dfdb26",
+      "result_id": "2ddc7f19-a425-477d-95c1-1042aefea9e9"
+    },
+    {
+      "claim_id": "719f9028-98f1-4d24-a47b-db6eaf249cb3",
+      "result_id": "2ddc7f19-a425-477d-95c1-1042aefea9e9"
+    },
+    {
+      "claim_id": "23577b23-19df-4527-9246-4d8ade3c16e9",
+      "result_id": "2ddc7f19-a425-477d-95c1-1042aefea9e9"
+    },
+    {
+      "claim_id": "4cef0196-1c38-43a9-bf2e-5c2b3b38ea48",
+      "result_id": "f94de7fc-ff12-45ff-827a-cfad4e259fa6"
+    },
+    {
+      "claim_id": "55237b6e-41b8-47f9-89ee-d3ae05dea55d",
+      "result_id": "f94de7fc-ff12-45ff-827a-cfad4e259fa6"
+    },
+    {
+      "claim_id": "cb72723a-d56d-4426-b4a9-b17dbee47d49",
+      "result_id": "f94de7fc-ff12-45ff-827a-cfad4e259fa6"
+    },
+    {
+      "claim_id": "d8ef6d6c-6c96-4727-87f7-1375e841194e",
+      "result_id": "f94de7fc-ff12-45ff-827a-cfad4e259fa6"
+    },
+    {
+      "claim_id": "d60d9911-0b9c-4555-9589-6a3da59b709e",
+      "result_id": "f94de7fc-ff12-45ff-827a-cfad4e259fa6"
+    },
+    {
+      "claim_id": "e58d58b5-76b7-4eca-a8e0-6637aeb5951d",
+      "result_id": "f94de7fc-ff12-45ff-827a-cfad4e259fa6"
+    },
+    {
+      "claim_id": "9ebbdcaf-1472-431b-8d65-b23ecb56891c",
+      "result_id": "f94de7fc-ff12-45ff-827a-cfad4e259fa6"
+    },
+    {
+      "claim_id": "6071c2c6-f1ab-4fb8-a4f7-8adc24842336",
+      "result_id": "f94de7fc-ff12-45ff-827a-cfad4e259fa6"
+    },
+    {
+      "claim_id": "19e7347a-386a-4dae-9a5f-86f0ed613ab0",
+      "result_id": "33ced8a9-48d8-4d76-8d5f-eb7d502ff4b7"
+    },
+    {
+      "claim_id": "8340f930-fddb-4bdf-97a4-25091115d936",
+      "result_id": "33ced8a9-48d8-4d76-8d5f-eb7d502ff4b7"
+    },
+    {
+      "claim_id": "38d2ad94-a6d5-4869-85cd-6542f07a4b8b",
+      "result_id": "33ced8a9-48d8-4d76-8d5f-eb7d502ff4b7"
+    },
+    {
+      "claim_id": "e102f6a5-7c46-44b5-b7f5-c1325893097b",
+      "result_id": "33ced8a9-48d8-4d76-8d5f-eb7d502ff4b7"
+    },
+    {
+      "claim_id": "fed56c3f-d1e3-412f-9c56-918ade095a64",
+      "result_id": "33ced8a9-48d8-4d76-8d5f-eb7d502ff4b7"
+    },
+    {
+      "claim_id": "6e56b492-7273-49c6-9083-b0e7585bfd30",
+      "result_id": "33ced8a9-48d8-4d76-8d5f-eb7d502ff4b7"
+    },
+    {
+      "claim_id": "85fa2f51-d562-4c27-8aaf-32557d07707f",
+      "result_id": "33ced8a9-48d8-4d76-8d5f-eb7d502ff4b7"
+    },
+    {
+      "claim_id": "aab89512-66a5-401e-9828-8d9e4b019d4c",
+      "result_id": "33ced8a9-48d8-4d76-8d5f-eb7d502ff4b7"
+    },
+    {
+      "claim_id": "113f40d6-0160-4af2-99bc-5693caa80f83",
+      "result_id": "33ced8a9-48d8-4d76-8d5f-eb7d502ff4b7"
+    },
+    {
+      "claim_id": "89e7ebcd-c1d6-491e-9d0d-50a09185eea6",
+      "result_id": "31591842-3984-4f1b-b8f4-ea0df0131a97"
+    },
+    {
+      "claim_id": "8c1d830d-ae20-4a9f-b880-d06235843415",
+      "result_id": "31591842-3984-4f1b-b8f4-ea0df0131a97"
+    },
+    {
+      "claim_id": "43c54cad-f855-49d2-9ccd-a2c22a49700e",
+      "result_id": "31591842-3984-4f1b-b8f4-ea0df0131a97"
+    },
+    {
+      "claim_id": "e5b83cab-d26f-4461-a25a-9e9f7c0758ba",
+      "result_id": "dd6404d8-710e-4cc5-93d7-d7a5efe19e50"
+    },
+    {
+      "claim_id": "178ad623-a08c-47ac-8b93-8e8ddf79a916",
+      "result_id": "dd6404d8-710e-4cc5-93d7-d7a5efe19e50"
+    },
+    {
+      "claim_id": "c30ce498-3c00-4f3c-8612-f74c6e205672",
+      "result_id": "dd6404d8-710e-4cc5-93d7-d7a5efe19e50"
+    },
+    {
+      "claim_id": "90a196d6-c956-45d0-9f45-fe27c8faf53e",
+      "result_id": "dd6404d8-710e-4cc5-93d7-d7a5efe19e50"
+    },
+    {
+      "claim_id": "643049bb-235c-4855-a3a6-06c090f4e46b",
+      "result_id": "dd6404d8-710e-4cc5-93d7-d7a5efe19e50"
+    },
+    {
+      "claim_id": "8a7bf050-8d2b-4e9e-9e8a-d7810dbf231d",
+      "result_id": "dd6404d8-710e-4cc5-93d7-d7a5efe19e50"
+    },
+    {
+      "claim_id": "6629dbf9-7327-4f33-a586-176376ccffee",
+      "result_id": "dd6404d8-710e-4cc5-93d7-d7a5efe19e50"
+    },
+    {
+      "claim_id": "cf814574-9021-4c46-b3eb-0692f1a41bc9",
+      "result_id": "dd6404d8-710e-4cc5-93d7-d7a5efe19e50"
+    },
+    {
+      "claim_id": "817adccf-7597-4ff9-b768-a4535234aa39",
+      "result_id": "dd6404d8-710e-4cc5-93d7-d7a5efe19e50"
+    },
+    {
+      "claim_id": "e1151300-7e67-4d0c-b8ea-6ba59829292b",
+      "result_id": "048b1be9-62fa-4350-8950-7d3f98ebb831"
+    },
+    {
+      "claim_id": "80b09d1e-5cdd-4605-a8fc-2ea718575438",
+      "result_id": "048b1be9-62fa-4350-8950-7d3f98ebb831"
+    },
+    {
+      "claim_id": "580e6a90-bc2e-400e-9d64-75aaf7c9ee40",
+      "result_id": "ae2bb91a-0071-452c-bab9-547a6dceb0fb"
+    },
+    {
+      "claim_id": "faf9bb49-1ca3-4c57-a4b6-ee86b82f6d83",
+      "result_id": "ae2bb91a-0071-452c-bab9-547a6dceb0fb"
+    },
+    {
+      "claim_id": "2efc6b24-e2d1-4992-977b-daee69256d26",
+      "result_id": "ae2bb91a-0071-452c-bab9-547a6dceb0fb"
+    },
+    {
+      "claim_id": "7859a30d-298d-41cc-b13e-5b238ea3e062",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "87abf26b-f6a1-4f9b-937b-7ee35892e9e6",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "e5edd8da-d37e-432d-a149-8d9d8b8597e7",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "3ac88efe-0486-4cd7-bf8d-7126ddad8714",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "c231cc51-7d04-4905-a62c-2d145b016587",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "ce94cbf4-ad58-4cae-be2c-a50166d8ea1f",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "5ca45cfe-9e72-41a7-af45-5d31a04629d5",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "d3e5bf15-eca5-48cc-b7ba-b5a2342f28a1",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "117ca95e-b2ad-4317-975b-521a43699250",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "d9db1b58-4bf9-46d5-8692-34d69ce3baa6",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "b07a5b2d-3e90-48a8-8488-584eca932bb2",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "57a45121-df51-450d-8988-d23e47a02654",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "7125e0f0-87fd-43b5-ad74-425385c5bb08",
+      "result_id": "69b2071d-f64a-4630-8a5e-35678f2f02fb"
+    },
+    {
+      "claim_id": "4e9024d6-3a97-42f3-a0b4-9c529a7f2733",
+      "result_id": "b260e2dd-bfd5-45ce-8d36-003a38548169"
+    },
+    {
+      "claim_id": "43c54cad-f855-49d2-9ccd-a2c22a49700e",
+      "result_id": "b260e2dd-bfd5-45ce-8d36-003a38548169"
+    },
+    {
+      "claim_id": "016b7666-889c-45c8-a289-4ef96b08d705",
+      "result_id": "c7a80f05-0295-4207-883c-5b1141ae627c"
+    },
+    {
+      "claim_id": "bb3120df-f336-4baa-b095-1a5601357542",
+      "result_id": "c7a80f05-0295-4207-883c-5b1141ae627c"
+    },
+    {
+      "claim_id": "5642a4a0-2234-4e0d-a4cb-17a05461fac8",
+      "result_id": "c7a80f05-0295-4207-883c-5b1141ae627c"
+    },
+    {
+      "claim_id": "c8de3517-7d35-4033-9343-38f2aae401b3",
+      "result_id": "c7a80f05-0295-4207-883c-5b1141ae627c"
+    },
+    {
+      "claim_id": "dec8c418-4bdf-4440-ae44-b74c0bce7135",
+      "result_id": "c7a80f05-0295-4207-883c-5b1141ae627c"
+    },
+    {
+      "claim_id": "800e5c8a-2816-4276-9025-59772c58ca64",
+      "result_id": "c7a80f05-0295-4207-883c-5b1141ae627c"
+    }
+  ],
+  "comparisons": []
+}

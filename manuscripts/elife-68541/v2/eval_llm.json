@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Focal seizures exhibit stereotypical progression through distinct phases (low-voltage fast activity, tonic, clonic, postictal suppression) occurring over tens of seconds, particularly in temporal lobe epilepsy patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10 establish well-documented clinical observations of seizure progression patterns supported by multiple citations. Claim C2 provides a reasonable inference about timescales based on these observations. These claims form a coherent description of the clinical phenomenon being modeled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A computational model incorporating five cells with dynamic ion concentrations successfully replicates the complete electrographic pattern of focal seizures including LVF onset, tonic phase, clonic phase, and postictal suppression, with corresponding ionic concentration changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 describe the model architecture, while C19-C26 document specific model behaviors matching seizure phases with corresponding ionic dynamics. The model demonstrates internally consistent behavior across multiple timescales and variables, though validation against experimental data is addressed separately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The computational model successfully replicates experimental observations from isolated guinea pig brain preparations, including LFP characteristics, cellular firing patterns, and extracellular potassium dynamics during seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 describe experimental observations, while C30 explicitly compares model output to experimental data shown in Figure 3. The qualitative agreement across multiple measured variables (LFP, cellular activity, [K+]o) provides strong validation of the model's ability to capture key experimental features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Seizure initiation can occur via inhibitory interneuron activation, supported by experimental evidence across multiple preparations and species, with computational models demonstrating this mechanism through extracellular K+ accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 establish strong experimental evidence for interneuron-initiated seizures across multiple preparations. Claims C57-C60 provide mechanistic context from prior computational work. Claim C4 represents the current model's demonstration of this mechanism, though the model uses artificial current injection rather than simulating the underlying cause of interneuron activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Bifurcation analysis reveals that changes in [K+]o and [Na+]i control transitions between resting, tonic, and bursting states, with increased [Na+]i shrinking excitable domains and sequential changes in somatic and dendritic [K+]o driving phase transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 establish biophysical principles, while C34-C37 describe specific model predictions from bifurcation analysis shown in Figure 4A. The analysis systematically explores parameter space and identifies clear boundaries between activity states, providing mechanistic insight into seizure phase transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Chloride accumulation is essential for full seizure expression in the model, acting synergistically with K+ accumulation by reducing inhibitory currents and increasing excitability through shifts in reversal potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe systematic computational experiments comparing model behavior with and without chloride dynamics (Figure 5). The results clearly demonstrate that chloride accumulation is necessary for the bursting phase, with specific mechanisms identified (GABAa influx dominates over KCC2). However, the model shows continuous Cl- accumulation unlike some experimental observations (C77-C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The role of KCC2 in seizure generation is complex and context-dependent: while KCC2-mediated K+ efflux can contribute to seizure initiation in some conditions, in this model KCC2 primarily buffers [K+]o rather than accumulating it, with the main K+ source being action potential repolarization currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 establish experimental context showing variable KCC2 roles across different seizure models. Claims C72-C74 describe specific model findings that KCC2 reverses direction and buffers rather than accumulates K+. This represents a nuanced finding that differs from some prior models (C64) but is consistent with biophysical principles and some experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Inter-burst intervals during seizure termination increase exponentially with time in both the computational model and experimental data (guinea pig and human), with this pattern arising from simultaneous linear decrease in [K+]o and increase in [Na+]i.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 demonstrate exponential IBI scaling in model and experimental data with quantitative RMSE comparisons (Figure 6). Claim C47 uses fast-slow analysis to show that linear [K+]o decrease produces exponential IBI evolution. Claim C48 synthesizes these findings. The experimental validation across species strengthens this prediction, though sample sizes are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Seizures terminate spontaneously in the model through coincident decrease in [K+]o and maintained elevation of [Na+]i, with increased Na+/K+-pump activity providing hyperpolarizing current that eventually prevents burst initiation, consistent with prior computational models and experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 describe the specific termination mechanism identified through fast-slow analysis. Claims C91-C95 place this in context of prior work showing similar mechanisms across different model implementations. The consistency across multiple independent models and supporting experimental evidence (C92-C93) strengthens confidence in this mechanism, though direct experimental validation of the specific ionic dynamics is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The model predicts a ~90 second postictal suppression period driven primarily by elevated Na+/K+-pump current rather than [K+]o undershoot, consistent with clinical observations and some prior models, though experimental evidence for the specific mechanism is mixed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 describe model predictions about postictal suppression mechanisms shown in Figure 7. Claims C107-C110 establish that the predicted duration is consistent with clinical observations. Claims C111-C116 compare with prior models and experimental data, noting that [K+]o undershoot is not observed in this model (C116) unlike some prior models (C112-C113), though both mechanisms have experimental support (C114-C115). The model provides a coherent mechanistic explanation consistent with available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The model's prediction of exponential IBI scaling contradicts bifurcation theory predictions of logarithmic or square root scaling, with alternative explanations involving spatial dynamics, synaptic plasticity, or chloride recovery proposed in other models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 establish that exponential IBI scaling is observed clinically and in experiments. Claims C99-C100 note that bifurcation theory predicts different scaling laws that are not confirmed by the data. Claims C101-C106 discuss alternative mechanisms from other models. This represents an important finding where empirical observations (model and experiment) diverge from theoretical predictions, suggesting more complex dynamics than captured by simple bifurcation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Multiple experimental studies demonstrate that seizures can occur without normal synaptic transmission and with paradoxical increases in inhibitory cell firing, indicating that synaptic gain changes alone cannot explain seizure generation and progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 cite multiple independent experimental studies across different preparations showing seizures without synaptic transmission or with increased inhibition. Claim C15 draws the logical inference that non-synaptic mechanisms must be involved. This provides strong motivation for the ionic mechanism focus of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model predicts differential [K+]o dynamics in soma versus dendrites due to interneuron localization, with high somatic and moderate dendritic [K+]o favoring burst firing through multiple ionic mechanisms, consistent with experimental observations and independent of interneuron subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 describes the model prediction of compartment-specific K+ dynamics based on model architecture. Claim C80 provides experimental validation from rat hippocampus. Claims C81-C83 detail the bursting mechanisms. Claims C84-C85 generalize the findings beyond the specific interneuron type modeled. The convergence of model predictions with experimental data strengthens confidence in this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Prior computational models have investigated pyramidal-interneuron interactions during seizures using different mechanisms (depolarization block, simultaneous activity, KCC2-mediated K+ accumulation), providing context for the current model's approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 accurately summarize findings from three prior computational modeling studies (Wei et al. 2014a, Gentiletti et al. 2017, Gonz\u00e1lez et al. 2018) that explored related mechanisms. This provides appropriate context for the current work and highlights how the present model builds on and differs from prior approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The model's prediction that K+ accumulation arises primarily from action potential currents rather than KCC2 is consistent with some experimental observations, though chloride recovery dynamics differ across experimental seizure models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 provides experimental support for K+ accumulation from spiking activity. Claims C76-C78 note that chloride recovery timing varies across experimental models (Mg2+-free vs 4-AP), with the current model showing continuous accumulation. This highlights model limitations while acknowledging experimental variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C117"
+    ],
+    "result": "The model identifies ionic dynamics as elementary processes organizing seizure generation, evolution, and termination through negative feedback mechanisms, with specific predictions about inter-burst interval scaling validated experimentally, suggesting potential therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 state the main conclusions about ionic mechanisms and therapeutic implications. Claim C117 provides the mechanistic summary. These claims synthesize the major findings from the detailed analyses. While the model provides strong mechanistic insights and some experimental validation, the therapeutic implications remain speculative without direct intervention studies.",
+    "result_type": "MAJOR"
+  }
+]

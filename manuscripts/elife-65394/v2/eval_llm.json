@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C93"
+    ],
+    "result": "The new whale shark genome assembly represents a substantial improvement in quality and contiguity over previous assemblies. The assembly has 57,333 contigs with a contig N50 of 144,422 bp, totaling 2.96 Gbp, with higher contig contiguity than all other published cartilaginous fish genomes. The assembly size is consistent with k-mer-based estimates (~2.79 Gbp) but smaller than non-sequencing-based estimates (3.73 Gbp), suggesting some repetitive regions may be missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C93 provide consistent assembly statistics and quality metrics that are directly reported from the sequencing and assembly pipeline. The comparisons to previous assemblies are appropriately referenced, and the interpretation that some genome content may be missing is reasonable given the discrepancy with non-sequencing estimates. The data support the conclusion of improved assembly quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The whale shark genome exhibits relatively low heterozygosity, estimated at approximately 0.0797-0.0828% by GenomeScope and 0.0739% by SNP calling with freebayes (2,189,244 SNPs, or one SNP every 1353 bases). These concordant estimates from independent methods support the conclusion of low genomic heterozygosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 report heterozygosity estimates from two independent computational approaches (GenomeScope and freebayes) that yield similar values (~0.08% and ~0.07%). The consistency between methods strengthens the conclusion. The interpretation of 'relatively low' heterozygosity is reasonable, though the manuscript does not provide explicit comparisons to other species to contextualize this value.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Gene completeness assessments demonstrate substantial improvement over previous whale shark assemblies. BUSCO analysis found 78.7% complete genes (2033/2586 orthologs), a marked improvement over the previous 15% completeness. CVG analysis showed 85% complete genes and 97.4% genes including partial sequences, comparing favorably to other shark assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 report gene completeness metrics from two independent assessment tools (BUSCO and CVG). The dramatic improvement from 15% to 78.7% BUSCO completeness is well-documented and represents a major quality improvement. The CVG results provide additional validation. These metrics are standard for genome assembly quality assessment and the results are clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Analysis of 18,435 orthologous gene families across 37 chordate species revealed a major increase in gene families at the origin of gnathostomes (jawed vertebrates), with peak novelty at the MRCA of gnathostomes followed by decreased novelty in descendants. Only 5.4% (157/2885) of novel gnathostome gene families corresponded to split ohnologs from whole-genome duplication, indicating that the burst of gene family origins was largely independent of the 2R genome duplication events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 describe a comprehensive orthology analysis using OrthoFinder and careful validation against known ohnolog families. The finding that only 5.4% of novel gene families are split ohnologs effectively addresses the concern that genome duplication artifacts might inflate gene family counts. The analysis of teleost-specific duplication (only 3 novel families) provides additional validation. The methodology is sound and the conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Functional enrichment analysis of novel gene families in vertebrate ancestors revealed biologically meaningful patterns. Novel Olfactores gene families were enriched for connexin function, consistent with prior work on connexin origins. Novel vertebrate gene families showed enrichment for rhodopsin 7-TM receptors, immunoglobulin domains, collagen triple helix repeats, zona pellucida domains, and C2H2 zinc fingers, consistent with the evolution of key vertebrate traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 report functional enrichment results that are consistent with established knowledge about the evolutionary origins of these protein families. The connexin finding (C20-C21) is explicitly validated by citation to prior work. The enrichments for collagens, zona pellucida, and other domains align with known vertebrate innovations. The statistical approach (Fisher's exact test with multiple testing correction) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Novel gene families in the MRCA of jawed vertebrates showed enrichment for immune-related protein domains (immunoglobulin V-set and C1-set domains, interleukin-8-like cytokines) and hormone activity. The immunoglobulin-containing families included immunoglobulins, interleukins, T-cell receptors, chemokines, CD proteins, and MHC proteins, consistent with the evolution of adaptive immunity in gnathostomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 report functional enrichment patterns that align with the well-established emergence of adaptive immunity in jawed vertebrates. The specific gene families identified (immunoglobulins, T-cell receptors, MHC) are the canonical components of adaptive immunity. The enrichment analysis methodology is appropriate and the biological interpretation is consistent with established evolutionary immunology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Gene families exclusive to bony vertebrates (414 derived + 366 lost in cartilaginous fishes) showed enrichment for GPCR domains (particularly olfactory receptors), lectin C-type domains, and C2H2 zinc fingers. Notably, no orthologs of the NK gene cluster were found in cartilaginous fishes, and many GPCRs gained in bony vertebrates were olfactory receptors, consistent with the relative paucity of these receptors in cartilaginous fishes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 identify functional genomic differences between bony vertebrates and cartilaginous fishes through enrichment analysis. The findings are consistent with prior observations about reduced olfactory receptor diversity in sharks (C28-C29 cite Marra et al., 2019; Hara et al., 2018). The absence of NK gene cluster orthologs (C30) is a specific, testable finding that implies functional differences in natural killer cell biology. The methodology is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The whale shark possesses 43 putative NLRs, including direct orthologs of almost all human NLRs. Surprisingly, three NOD1 orthologs were identified (rather than the single copy in humans), which resulted from tandem duplication in the cartilaginous fish ancestor. All three whale shark NOD1s possess canonical NACHT domains and likely retain NOD1-like binding mechanisms but may have unique recognition specificities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 report a novel finding of NOD1 triplication in whale shark with strong phylogenetic support (UFBOOT=100). The domain analysis confirms all three copies retain functional NACHT domains. The inference of tandem duplication in the cartilaginous fish ancestor is supported by synteny analysis (referenced in Appendix 3). This represents a clear departure from the single-copy state in other vertebrates and is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "No NACHT domain-containing orthologs of the 14 human NLRP genes were found in whale shark. However, a novel jawed vertebrate NLR gene family closely related to NLRPs was identified and has undergone significant expansion in whale shark. This implies that NLR-based inflammasomes in humans and whale sharks are not directly orthologous and that inflammation-related functions may be functionally distinct between these species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 report the absence of canonical NLRPs and discovery of a novel, expanded NLR family. The phylogenetic support for the novel family is moderate (UFBOOT=67) but the expansion within whale shark is strongly supported (UFBOOT=100). The inference that inflammasomes are not directly orthologous is logical given the absence of NLRP orthologs, though the functional implications remain speculative without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Each vertebrate species examined (human, zebrafish, whale shark) has independently expanded different NLR subfamilies: NLRPs in human, FISNA in zebrafish, and the novel NLR family in whale shark. The discovery of a whale shark FISNA ortholog indicates this gene was present in the jawed vertebrate ancestor and is not a teleost novelty. These findings demonstrate that multiple, independent NLR repertoire expansions have occurred during jawed vertebrate evolution despite the presence of adaptive immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 document lineage-specific NLR expansions with appropriate phylogenetic support. The FISNA finding (C41) revises previous understanding by demonstrating this gene family predates teleosts (UFBOOT=74). The conclusion that NLR innovation continues despite adaptive immunity (C42) is well-supported by the documented independent expansions in multiple lineages. This challenges the hypothesis that adaptive immunity negates PRR innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Orthologs of all three canonical vertebrate RLRs (RIG-1, MDA5, LGP2) and MAVS exist in whale shark with strong phylogenetic support (UFBOOT=100 for all). MDA5 and LGP2 resulted from a vertebrate-specific duplication, while RIG-1 diverged earlier in animal evolution. These results demonstrate that the mammalian RLR repertoire was established prior to the emergence of extant jawed vertebrates and has been highly conserved since.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 report the identification of all three RLRs and MAVS in whale shark with maximum phylogenetic support. The analysis used two independent domain datasets (DEAD-Helicase and CARD) which strengthens the conclusions. The evolutionary relationships (C45) are consistent with prior work (Mukherjee et al., 2014). The identification of MAVS in coelacanth (C46) resolves a previous difficulty. The conclusion of RLR conservation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Thirteen putative TLRs were identified in whale shark, including 11 orthologs of known TLRs and two sequences representing a novel ancestral jawed vertebrate TLR family (TLR29) related to TLR21. Phylogenetic analysis indicates the vertebrate ancestor possessed at least 15 TLRs and the jawed vertebrate ancestor possessed at least 19 TLRs (including three TLR9 lineages). Lineage-specific TLR diversification primarily resulted from differential loss and genome duplications, supplemented by occasional duplications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 report comprehensive TLR repertoire analysis with strong phylogenetic support (UFBOOT\u226599 for known TLRs, 99 for TLR29). The discovery of TLR29 (C49) represents a novel finding. The ancestral repertoire reconstructions (C51-C52) are based on rooted phylogenies using appropriate methods. The conclusion about TLR evolution patterns (C53) contrasts vertebrates with invertebrates and is supported by the phylogenetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The jawed vertebrate ancestor possessed a core set of PRRs (NLRs, RLRs, TLRs) that has largely shaped modern jawed vertebrate PRR repertoires. Despite this conservation, diverse patterns of gene family evolution demonstrate that adaptive immunity in gnathostomes did not fully displace germline-encoded PRR innovation, with lineage-specific expansions occurring in different PRR families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 synthesize the PRR findings into an overarching conclusion. The evidence from NLRs (independent expansions in different lineages), RLRs (high conservation), and TLRs (differential loss with occasional expansion) supports the nuanced conclusion that adaptive immunity did not simply replace PRR innovation. The claim challenges a previous hypothesis (C97) and is well-supported by the documented patterns across all three PRR families.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Substitution rate analysis across single-copy orthologs revealed that cartilaginous fishes have significantly slower substitution rates than bony vertebrates (p=0.0004). Within cartilaginous fishes, Callorhinchus milii evolves significantly slower than sharks (p=0.0004), while whale shark and brownbanded bamboo shark do not differ significantly (p=0.1802). Cartilaginous fishes had lower rates than ray-finned fishes, sarcopterygians, coelacanth, and tetrapods, but not significantly slower than spotted gar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 report substitution rate comparisons using the two-cluster test with appropriate statistical methodology. The findings are consistent with prior work on cartilaginous fish evolution rates (C58 cites Weber et al., 2020). The p-values are clearly reported and the comparisons are systematic. The lack of significant difference between whale shark and bamboo shark (C59) is an important negative result that informs interpretation of gigantism effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Giant vertebrate genomes (whale shark, elephant, baleen whales, ocean sunfish) had decreased substitution rates compared to other vertebrates. The two-rate model allowing different rates in giant lineages was significantly better than a strict clock (p=1.76\u00d710\u207b\u2075\u2076). Gigantism in whale shark corresponds to a discrete shift in body size evolution rate to five times the background rate in cartilaginous fishes, consistent with prior work showing larger-bodied taxa have lower protein evolution rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 report the relationship between gigantism and substitution rates using PAML likelihood ratio tests. The highly significant p-value (C63) strongly supports different rates in giant lineages. The body size evolution analysis (C62) uses BAMM and is consistent with prior work (Pimiento et al., 2019). The interpretation (C64) is supported by citation to Martin and Palumbi, 1993. The methodology is appropriate and results are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Gene family size evolution rates in giant vertebrates were significantly faster than in non-giant lineages (roughly double, p<0.002), but rates varied across all taxa including giants. The relationship between gigantism and gene substitution rates does not predict gene family size evolution rates, suggesting these two aspects of genomic evolution are decoupled in vertebrate genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 report CAFE analysis results showing faster gene family evolution in giants despite slower substitution rates. The statistical significance is clearly reported (C65). The observation that rates vary among giants (C66) and the interpretation of decoupling (C67-C68) are supported by the contrasting patterns between substitution rates (slower in giants) and gene family rates (faster in giants). This represents an important finding about different modes of genomic evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Among 10,258 gene families analyzed, 1387 showed significant rate shifts in gene family size evolution on at least one branch (p<0.05). No gene families independently shifted in all giant taxa exclusively, and only five gene families shifted in any giant taxa exclusive of other branches, indicating no consistent signal of selection for specific gene families across all vertebrate giants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 report branch-specific rate shift analysis from CAFE. The finding that no gene families consistently shift across all giants (C70) is an important negative result that argues against universal gigantism-related gene family changes. The methodology is appropriate and the interpretation is conservative. This sets up the subsequent analysis of cancer gene enrichment by establishing that specific gene identity is not consistently associated with gigantism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Gene families with rate shifts anywhere in vertebrate phylogeny were enriched for Cancer Gene Census orthologs (OR=1.43, p=0.00414). Gene families that shifted along branches leading to giant vertebrates showed stronger enrichment for cancer genes (OR=2.66, p=0.00199) compared to all shifting families. Non-giant sister branches showed no enrichment (OR=0.88, p=0.624), and permutation testing confirmed the observed enrichment in giants was more extreme than 98% of random branch sets (p=0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 report a series of enrichment analyses with appropriate statistical tests and controls. The comparison to non-giant sister branches (C74) is a critical control that strengthens the inference. The permutation test (C75) validates the effect size. The progressive enrichment from all shifting families (C71) to giant-specific shifts (C73) supports the biological interpretation. The methodology is rigorous and the statistical evidence is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Linear mixed model analysis revealed significantly higher gene family size evolution rates along giant branches (coefficient=0.0203, p=5.95\u00d710\u207b\u2076) with a significant interaction between cancer gene status and gigantism (coefficient=0.0102, p=8.51\u00d710\u207b\u2075). In gene families with rate shifts, the mean rate along giant branches was 3.32\u00d7 greater than other branches for cancer genes versus 2.60\u00d7 for non-cancer genes, suggesting cancer-related gene family dynamics are driven by gigantism evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 report linear mixed model results with appropriate statistical methodology accounting for gene family as a random effect. The significant interaction term (C76) demonstrates that the gigantism effect is stronger for cancer genes than expected from the main effects alone. The comparison of rate ratios (C77) quantifies this differential effect. The interpretation (C78) is supported by the statistical evidence, though causality cannot be definitively established from comparative data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Prior work has established Peto's paradox (larger organisms have lower cancer rates than expected) and identified cancer suppression mechanisms in giant mammals, including TP53 duplication in elephants but not baleen whales. The current study confirmed a rate shift in TP53 in the elephant lineage, but also found shifts in minke whale and the non-giant bamboo shark, demonstrating that TP53 evolution is not exclusively associated with gigantism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 appropriately cite prior work establishing the biological context (Peto's paradox, cancer suppression in giants) and report the TP53 analysis results from the current study. The finding that TP53 shifts occur in both giant and non-giant lineages (C83) is consistent with prior observations that the same genes don't expand in all mammalian giants (C82). This provides important context for interpreting the broader cancer gene enrichment findings.",
+    "result_type": "MINOR"
+  }
+]

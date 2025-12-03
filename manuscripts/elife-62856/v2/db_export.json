@@ -1,0 +1,978 @@
+{
+  "submission": {
+    "id": "493d8833-a6f3-4e89-8077-a029e37bbd20",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:49:07.988097Z",
+    "updated_at": "2025-12-03T10:49:07.988097Z"
+  },
+  "content": [
+    {
+      "id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "submission_id": "493d8833-a6f3-4e89-8077-a029e37bbd20",
+      "content_type": "manuscript",
+      "content_text": "# Fibroblast mechanotransduction network predicts targets for mechano-adaptive infarct therapies\n\n## Authors\n\n- Jesse D Rogers<sup>1</sup>\n- William J Richardson<sup>1</sup> ([ORCID: 0000-0001-8678-9716](https://orcid.org/0000-0001-8678-9716)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering; Clemson University Clemson United States ([ROR:037s24f05](https://ror.org/037s24f05))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRegional control of fibrosis after myocardial infarction is critical for maintaining structural integrity in the infarct while preventing collagen accumulation in non-infarcted areas. Cardiac fibroblasts modulate matrix turnover in response to biochemical and biomechanical cues, but the complex interactions between signaling pathways confound efforts to develop therapies for regional scar formation. We employed a logic-based ordinary differential equation model of fibroblast mechano-chemo signal transduction to predict matrix protein expression in response to canonical biochemical stimuli and mechanical tension. Functional analysis of mechano-chemo interactions showed extensive pathway crosstalk with tension amplifying, dampening, or reversing responses to biochemical stimuli. Comprehensive drug target screens identified 13 mechano-adaptive therapies that promote matrix accumulation in regions where it is needed and reduce matrix levels in regions where it is not needed. Our predictions suggest that mechano-chemo interactions likely mediate cell behavior across many tissues and demonstrate the utility of multi-pathway signaling networks in discovering therapies for context-specific disease states.\n\n## Introduction\n\nControlling cardiac fibrosis remains a major challenge in developing long-term treatments for patients suffering from myocardial infarction (MI). For a proportion of the over 800,000 patients diagnosed per year (Benjamin, 2019), excessive hypertrophy and scar formation in the non-infarcted myocardium can result in the development of heart failure, with decreases in contractility, myocardial conductivity, and pump function leading to poor rates of survival (Shah et al., 2017). Currently prescribed therapeutics for MI patients are designed to reduce hypertrophy via several neurohormonal mechanisms including inhibition of angiotensin II (AngII) and norepinephrine (NE) or increasing the bioavailability of natriuretic peptides (NPs) (Ponikowski et al., 2016), but no drugs have been approved for treating cardiac fibrosis directly. Notably, scar formation serves a reparative function in post-MI wound healing by replacing necrotic myocardium and preventing infarct expansion and cardiac rupture (Weber et al., 2013). Therefore, developing therapeutics that limit excessive fibrosis to prevent the development of heart failure while preserving beneficial scar tissue at the infarct site would be a critical step toward improving long-term patient outcomes (Richardson et al., 2021).\n\nTissue remodeling in the myocardium is a dynamic process in which the accumulation of extracellular matrix proteins (e.g. collagens I and III, fibronectin) and matricellular proteins are balanced by degradation via proteases such as matrix metalloproteinases (MMPs). This balance is mediated largely by cardiac fibroblasts, which infiltrate the infarct site and assume an activated, synthetic phenotype to promote matrix accumulation (Chen and Frangogiannis, 2013). A wide variety of biochemical factors regulate fibroblast behavior such as AngII, transforming growth factor-\u03b2 (TGF\u03b21), endothelin-1 (ET1), and various inflammatory cytokines (Leask, 2010; Turner, 2014), but a growing body of research has demonstrated that biomechanical factors such as circumferential stretch and tissue stiffness are also critical determinants of fibroblast behavior (Saucerman et al., 2019). Parallel transduction of biochemical and biomechanical stimuli is integrated by fibroblasts through a complex signaling network in which pathways interact via systems-level crosstalk and feedback mechanisms (Hinz, 2015; Saraswati et al., 2020), making prediction and control of fibroblast behavior in the post-MI environment highly challenging.\n\nA variety of computational approaches have been used to investigate molecular networks including mechanistic models, statistical models, and artificial intelligence approaches. Ordinary differential equation (ODE) network models offer the ability to provide a mechanistic basis for disease progression while accounting for complex system dynamics. One advantage of mechanistic networks over \u2018black-box\u2019 statistical and machine learning models is that they directly facilitate the discovery of influential pathways and druggable targets. Several recent studies have employed a normalized Hill-ODE approach for network modeling, which offers a balance between fully mechanistic network models (i.e. mass action kinetics that require challenging measurements of many rate parameters) and overly simplified Boolean models (which can have difficulty discerning the nonlinear interactions between competing cues with different quantitative contributions) (Irons and Humphrey, 2020; Kraeutler et al., 2010; Ryall et al., 2012; Tan et al., 2017; Zeigler et al., 2016). Using a system of ODEs to approximate changes in activation of signaling proteins, cellular responses to both individual stimuli and combinations of stimuli can be predicted, providing a basis for targeted experimental validation of new mechanisms-of-action or treatments with therapeutic potential.\n\nIn this current study, we expanded a previously published model of fibroblast mechano-chemo signal transduction capable of accurately predicting fibrosis-related protein expression in response to canonical biochemical factors and mechanical tension (Zeigler et al., 2016). We examined the extent and dynamics of mechano-chemo interactions by simulating biochemical dose-response behavior under varying levels of mechanical stimulation, finding that tension amplified, dampened, or reversed fibroblast responses to individual biochemical cues. Comprehensive simulations of fibroblast responses to over 23,000 combinatory drug targets in low- or high-tension contexts identified several drug combinations that adapted fibrotic activity to the local mechanical state, demonstrating the potential of this model to act as a screening tool for targeted therapeutics.\n\n## Results\n\n### Development of fibroblast mechanotransduction network\n\nTo develop a fibroblast signaling model capable of sensing and transducing dynamic tension, we performed a manual literature search of intracellular signaling reactions related to fibroblast mechanotransduction and integrated our search with an existing model of fibroblast signaling (Zeigler et al., 2016). Our extended model includes nine cytokine inputs known to mediate fibroblast activation post-MI as well as mechanical tension, which is transduced via multiple mechanosensors including integrins, stretch-activated ion channels, and the G-coupled protein receptor angiotensin type I receptor (AT1R) (Figure 1, and see Figure 1\u2014figure supplement 1 for nodes added to the previous network). We also added several outputs that have been recently shown to mediate myocardial remodeling, including proMMPs 3, 8, and 12, tenascin-c (TNC), osteopontin, and thrombospondin-4 (Frolova et al., 2012; Iyer et al., 2015; Singh et al., 2010; Song et al., 2017), as well as autocrine feedback mechanisms found to regulate fibroblast activation (Ashizawa et al., 1996; Midwood and Schwarzbauer, 2002; Zent and Guo, 2018). The total network, consisting of 109 nodes and 174 reactions, was implemented as a logic-based ODE model using the open-source Netflux package as previously described (Kraeutler et al., 2010) in which node activity levels and reaction weights are normalized values between 0 and 1 (e.g. an activity of 0.5 represents 50% of maximum activity). All model species, reaction logic, default reaction parameters, and supporting references can be found in Supplementary file 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig1-v2.jpg)\n\n**Figure 1.:** Extracellular stimuli, intracellular signaling species, transcription factors, and fibroblast-secreted outputs are represented as nodes (boxes, 109 total). Directed edges represent activating and inhibiting reactions (arrows and T junctions respectively, 174 total) with AND logic indicated by circular nodes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Added nodes relating to mechanotransduction mechanisms, mechano-chemo-crosstalk mechanisms, and additional secreted outputs are highlighted in blue.\n\nModel predictions were validated against an independent set of experimental studies by comparing qualitative changes (i.e. increase, decrease, or no change) in node activation to changes in protein activity measured in vitro (see Materials and methods, Model validation section for full description). A curated body of experimental literature kept separate from model construction was used for validation, and most studies were additionally kept separate from each other in terms of authorship, with only 4 of 47 studies containing repeat authors from a single group and 2 of 47 studies containing a repeat author from a separate group, accounting for 10.2% and 1.7% of the total validation set for each group. Parameter sweeps for half-maximal effective concentrations (EC50) and Hill coefficients (n) identified default reaction parameters for optimizing predictive accuracy (Figure 2\u2014figure supplement 1). For fibroblast-secreted outputs, simulated responses to biochemical and mechanical stimuli correctly predicted qualitative changes in protein secretion in 81.8% (63/77) of simulations (Figure 2A). Additionally, the model correctly predicted qualitative changes in activation levels of canonical signaling intermediates for 80.5% (33/41) of simulations compared to experimental studies (Figure 2B). Consistent with previous studies, the model-predicted increased expression of collagens, matricellular proteins, and protease inhibitors with exposure to canonical agonists TGF\u03b21, AngII, platelet-derived growth factor (PDGF), tumor necrosis factor-\u03b1 (TNF\u03b1), and mechanical tension, and secretion of these pro-fibrotic species was accompanied by increased MMP production. Disagreement between model predictions and experimental studies were typically found for studies that reported either decreases or no change in output expression with interleukin-1\u03b2 (IL1), interleukin-6 (IL6), or NE simulation. However, as described in the next section, these incorrect model predictions could be rectified with the experimentally observed decreases under other input contexts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig2-v2.jpg)\n\n**Figure 2.:** (A) Expression of cell-secreted outputs and phenotypic markers (i.e. \u03b1SMA) were predicted in response to single biochemical stimuli and mechanical tension and compared to an independent set of experimental studies found in literature (47 papers total). (B) Activation of intracellular intermediates representing major signaling pathways was predicted in response to single stimuli and compared to independent experimental studies measuring changes in activity (e.g. by phosphorylation, 27 papers total). All model predictions were categorized based on a \u00b15% change in activity levels compared to baseline conditions.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Parameter sweeps of half-maximal effective concentration (EC50) and Hill coefficients (n) were conducted by simulating changes in output node expression (A) and intermediate node activity (B) in response to single input stimuli. Shading of parameter combinations represents the total proportion of correct qualitative predictions compared to each independent experimental validation set used in Figure 2. The validation accuracy was also tested against the threshold used for defining a model-predicted response or non-response (C).\n\nWe additionally investigated the sensitivity of predictive accuracy against the threshold change in activity levels used to classify model predictions by repeating the above analysis for thresholds between 1% and 10% change in activity. We found that the accuracies of both output and intermediate node predictions were robust to the threshold change in activity, as output accuracy deviated by \u00b11.3% from the median at the minimum and maximum thresholds, and intermediate accuracy did not change across all simulations (Figure 2\u2014figure supplement 1C). Output and intermediate accuracies remained above 80% across all threshold levels, and the same analysis performed an existing model of fibroblast signaling (Zeigler et al., 2016) showed consistent increases in accuracy across the thresholds tested, demonstrating that the current model improves on predictive accuracy across a range of activity thresholds.\n\n### Mechanical tension amplifies, dampens, or reverses network responses to biochemical stimuli\n\nSeveral previous experimental studies have established that combined biochemical and biomechanical signals can interact to produce context-dependent responses from fibroblasts (Bishop et al., 1998; Kural and Billiar, 2016; Lindahl et al., 2002; Merryman et al., 2007; Speight et al., 2016). But the full scope and mechanisms behind these interactions are mostly unclear. We investigated interactions between tension and individual biochemical stimuli computationally by simulating dose-response relationships between biochemical inputs and all model nodes under increasing levels of tension, using area under the curve measurements (AUCs) integrated over all biochemical input doses as a metric for total change in activity for each level of tension (see Materials and methods, Mechano-chemo interaction analysis section for full description). We characterized interactions based on changes in each AUC from basal tension to increased levels of tension, categorizing nodes with increased AUC levels with tension as being amplified, nodes with decreased AUC levels as being dampened, and nodes that changed the direction of activation with tension (i.e. from net activation to net inhibition or vice versa) as being reversed.\n\nWe found that these interactions were dependent on both the individual inputs as well as the level of tension. Of the nine biochemical model inputs, AngII, TGF\u03b21, IL1, TNF\u03b1, PDGF, and ET1 all demonstrated sizable changes in dose-response behavior with various levels of tension, based on a 5% change in AUC levels. Using this threshold, a tension level of 0.5 (i.e. 50% of maximum stimulation) amplified, dampened, or reversed an average 56.7% of node AUCs toward these six inputs compared to basal levels of tension (Figure 3A), and a tension level of 0.9 (i.e. 90% of maximum stimulation) sizably altered an average 60.4% of node AUCs (Figure 3B). We additionally compared the distribution of changes in AUCs across all nodes between selected levels of tension using two-sample Kolmogorov-Smirnov tests (see Materials and methods, Mechano-chemo interaction analysis for full description), finding that tension significantly altered distributions of dose-response behavior of these six inputs at tension levels of both 0.5 and 0.9 (Figure 3\u2014figure supplement 1 and Table 1). Conversely, tension altered the dose-response behavior of very few nodes with IL6, NE, and NP stimuli, with only 7.03% of node AUCs on average changing sizably toward these inputs for a tension level of 0.9 (Figure 3\u2014figure supplement 1). We found that although tension levels of 0.5 and 0.9 significantly altered probability distributions of changes in AUC for these inputs (Table 1), the relatively small population of nodes with sizable changes suggests that these inputs were largely unchanged with tension. In support of their insensitivity to tension, we found that IL6, NE, and NP all displayed lower degrees of network connectivity compared to the remaining inputs as evidenced by lower measures of closeness centrality and higher measures of average shortest path length and eccentricity (Figure 3\u2014figure supplement 1). While our previous work has shown that these measures do not correlate with functional measures such as sensitivity studies (Zeigler et al., 2016), these topological trends point to a less-influential role of tension for inputs that are relatively less connected to mechanotransduction pathways in the network.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) Dose-response curves were simulated under elevated levels of tension with incremental doses of each biochemical input, and changes in area under normalized dose-response curves (\u0394AUC) were calculated for all nodes in the model in comparison to basal dose-response simulations (i.e. tension = 0.1). Reversal cases were identified based on opposing AUC signs between basal and elevated tension simulations, that is, nodes that exhibited a positive AUC with basal tension and a negative AUC with elevated tension, and vice versa. (C\u2013E) Examples of mechano-chemo interaction categories identified from network-wide analysis in (A) and (B). Normalized dose-response curves for procollagen I (proCI) expression are shown following simulations with incremental doses of norepinephrine (NE) (A), transforming growth factor-\u03b2 (TGF\u03b21) (B), and interleukin-1\u03b2 (IL1) (C) under static levels of tension. (F\u2013H) Sub-networks regulating the mechano-chemo interactions shown in (C\u2013E) were determined by manual examination of node activity levels following dose-response simulations using NE (F), TGF\u03b21 (G), and IL1 (H) stimuli under basal and elevated levels of tension.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Probability density distributions of changes in area under normalized dose-response curves (\u0394AUC) with incremental levels of tension. Distributions were estimated from data using a kernel density smoothing function with a bandwidth of 0.01, and dashed lines represent a \u00b15% threshold used to identify nodes that exhibited amplified or dampened responses toward biochemical stimuli with added tension. (B) Comparison of topological measures of centrality for biochemical inputs. Topological analysis of the full network was conducted using the NetworkAnalyzer plugin for Cytoscape.\n\n**Table 1.**\n Statistical tests of tension dependencies.Results of Kolmogorov-Smirnov (K-S) tests with Benjamini-Hochberg correction comparing changes in area under normalized dose-response curves (\u0394AUC) distributions for inputs across levels of tension.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Input</th>\n      <th>Tension levels</th>\n      <th>K-S test p-value</th>\n      <th>Tension levels</th>\n      <th>K-S test p-value</th>\n      <th>Tension levels</th>\n      <th>K-S test p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AngII</td>\n      <td>0.2 vs. 0.5</td>\n      <td>2.2e-17</td>\n      <td>0.2 vs. 0.9</td>\n      <td>2.37e-37</td>\n      <td>0.5 vs. 0.9</td>\n      <td>1.00e-32</td>\n    </tr>\n    <tr>\n      <td>TGF\u03b2</td>\n      <td>0.2 vs. 0.5</td>\n      <td>1.88e-13</td>\n      <td>0.2 vs. 0.9</td>\n      <td>6.10e-32</td>\n      <td>0.5 vs. 0.9</td>\n      <td>5.20e-31</td>\n    </tr>\n    <tr>\n      <td>IL6</td>\n      <td>0.2 vs. 0.5</td>\n      <td>1.87e-28</td>\n      <td>0.2 vs. 0.9</td>\n      <td>9.56e-6</td>\n      <td>0.5 vs. 0.9</td>\n      <td>9.90e-23</td>\n    </tr>\n    <tr>\n      <td>IL1</td>\n      <td>0.2 vs. 0.5</td>\n      <td>5.38e-21</td>\n      <td>0.2 vs. 0.9</td>\n      <td>5.88e-16</td>\n      <td>0.5 vs. 0.9</td>\n      <td>5.88e-16</td>\n    </tr>\n    <tr>\n      <td>TNF\u03b1</td>\n      <td>0.2 vs. 0.5</td>\n      <td>3.17e-21</td>\n      <td>0.2 vs. 0.9</td>\n      <td>1.55e-39</td>\n      <td>0.5 vs. 0.9</td>\n      <td>1.55e-39</td>\n    </tr>\n    <tr>\n      <td>NE</td>\n      <td>0.2 vs. 0.5</td>\n      <td>1.07e-22</td>\n      <td>0.2 vs. 0.9</td>\n      <td>1.19e-3</td>\n      <td>0.5 vs. 0.9</td>\n      <td>7.47e-13</td>\n    </tr>\n    <tr>\n      <td>PDGF</td>\n      <td>0.2 vs. 0.5</td>\n      <td>5.38e-21</td>\n      <td>0.2 vs. 0.9</td>\n      <td>6.10e-32</td>\n      <td>0.5 vs. 0.9</td>\n      <td>6.10e-32</td>\n    </tr>\n    <tr>\n      <td>ET1</td>\n      <td>0.2 vs. 0.5</td>\n      <td>1.15e-15</td>\n      <td>0.2 vs. 0.9</td>\n      <td>8.30e-34</td>\n      <td>0.5 vs. 0.9</td>\n      <td>1.70e-32</td>\n    </tr>\n    <tr>\n      <td>NP</td>\n      <td>0.2 vs. 0.5</td>\n      <td>1.18e-17</td>\n      <td>0.2 vs. 0.9</td>\n      <td>2.02e-12</td>\n      <td>0.5 vs. 0.9</td>\n      <td>6.97e-4</td>\n    </tr>\n  </tbody>\n</table>\n\nWithin inputs that demonstrated tension-modulated dose-response behavior, the level of tension applied mediated different types of interactions. Moderate tension levels (reaction weights 0.2\u20130.5) largely amplified the effects of inputs; of the six inputs demonstrating tension-mediated changes in dose-response behavior, 51.8% of node AUCs were amplified at a tension level of 0.5 on average while 4.43% and 0.46% of node AUCs were dampened or reversed on average, respectively (Figure 3A). High levels of tension (reaction weights 0.6\u20130.9) largely dampened network responses to these inputs, with 56.4% of nodes on average decreasing AUCs with the same six inputs compared to 2.75% and 1.22% of node AUCs showing sizable amplification or reversal, respectively (Figure 3B). Repeated analyses with incremental levels of tension suggested that this change in tension-mediated behavior occurred at a tension reaction weight of 0.6, with an average 40.3 \u00b1 12.1 nodes changing from amplification to dampening at this level for these inputs compared to a reaction weight of 0.5 (Figure 3\u2014figure supplement 1). These changes in sensitivity were indicative of network interactions between tension and biochemical stimuli; we observed that NE-mediated inhibition of procollagen I expression was amplified by tension (Figure 3C), which can be explained by the logical requirement for tension-induced smad3 activation for effective inhibition by cAMP response element-binding protein (CREB) (Figure 3D). We also found that tension-mediated desensitization of procollagen I expression toward TGF\u03b21 can be explained mechanistically by a common autocrine feedback loop integrating both tension and TGF\u03b21 signals via a reactive oxygen species (ROS)-activator protein 1 (AP1) signaling axis (Figure 3E\u2013F).\n\nNotably, 4.40% of nodes reversed the direction of dose-response curves with IL1 stimulation with a tension reaction weight of 0.6 or greater compared to baseline tension levels, including intermediate nodes involved in TGF\u03b21 signaling (TGF\u03b21R, NOX, ROS), mitogen-activated protein kinase (MAPK) signaling (TRAF, ASK1, MKK3, MKK4, ERK), as well as the expression of procollagen I (Figure 3G). By comparing these reversed nodes to the network topology, we found that IL1 exerted both stimulatory effects via activation of AP1 and suppressive effects via activation of BMP and activin bound inhibitor (BAMBI), with suppressive behavior dominating procollagen I expression at high IL1 levels (Figure 3H). While low-tension levels allowed for IL1-mediated activation of AP1 and downstream procollagen expression, high levels of tension alone were sufficient to saturate AP1 levels, eliminating the stimulatory effects of IL1 and causing high cytokine doses to inhibit expression. Our model predicts a high degree of interaction between tension and biochemical stimuli, suggesting that the effects of current and potential therapeutics for cardiac fibrosis may be substantially altered by local tension.\n\n### Network perturbation analysis reveals differential roles of tension\n\nWhile targeted experimental studies of fibroblast signaling have identified numerous pathways mediating extracellular matrix turnover, it is still unclear whether certain mechanisms influence cell behavior more than others and whether these influences are altered with changes in the mechanical context. Using our systems-level model, we calculated changes in network activity following comprehensive knockdowns of individual nodes to functionally assess network-wide effects of perturbations. We calculated each node\u2019s \u2018knockdown influence\u2019 as the summed magnitudes of all changes in other nodes\u2019 activities upon knockdown of that particular node, and we calculated each node\u2019s \u2018knockdown sensitivity\u2019 as the summed magnitudes of all changes in that particular node\u2019s activity with knockdown of all other nodes (see Materials and methods, Network perturbation analysis section for full description). We repeated simulations for low, medium, and high levels of tension (reaction weights 0.25, 0.5, and 0.75, respectively) and selected for the top 10 scoring nodes in both influence and sensitivity, which indicated differentially responsive sets of nodes (Figure 4A\u2013C, see Figure 4\u2014figure supplement 1 for network-wide sensitivity results).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Changes in activity levels for top 10 sensitive nodes with simulated knockdown of top 10 influential nodes at low (A), medium (B), and high (C) levels of tension. Nodes were ranked based on knockdown influence (rows) and knockdown sensitivity metrics (columns), and changes in activity levels with perturbations are compared un-perturbed (i.e. no knockdown) conditions at each tension level. (D\u2013E) Comparison of top-ranked sensitive and influential nodes between levels of tension. Nodes shown reflect all unique nodes that ranked in the top 10 based on knockdown sensitivity (D) or knockdown influence (E) between all levels of tension simulated, and colors reflect nodes that were top-ranked starting at low tension (green), medium tension (orange), and high tension (purple).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Changes in activity for all nodes in the network were measured following comprehensive knockdown of individual noes (Ymax = 0.1) under given levels of tension. Values reflect changes in node activity between perturbed and un-perturbed conditions at each tension level. Refer to Supplementary file 1 for the order of nodes perturbed/measured.\n\nAt low levels of tension, knockdowns produced only small changes in node activities and correspondingly low influence and sensitivity values (Figure 4A, D and E). This is not surprising given all node activities are relatively low at this close-to-baseline context. In contrast, medium and high levels of tension demonstrated marked activity changes with knockdown perturbations and exhibited common influencers and unique sets of sensitive nodes. Under medium tension levels, knockdown of AT1R exhibited relatively broad inhibition compared to other top influencers, decreasing activity levels of several proMMPs, fibronectin, TNC, and members of the IL6 pathway by an average of 35.9% \u00b1 5.4% (Figure 4B). While other top influencers mediated smaller reductions in activity across the top 10 sensitive nodes, NADPH oxidase (NOX), ROS, AP1, and c-Jun N-terminal kinases (JNK) demonstrated an increased capacity to mediate proMMP2, proMMP14, and smad7 levels under medium tension. Under high-tension conditions, however, these four nodes ranked as the highest influencers network-wide, mediating decreases in activity for members of the MAPK pathways (80.6% \u00b1 4.3% reduction in activity on average), actin cytoskeleton-related signaling (68.7% \u00b1 22.2% average reduction), and outputs procollagen I, procollagen III, and proMMP1 (30.9% \u00b1 8.9% average reduction) (Figure 4C). Several members of the TGF\u03b21 pathway demonstrated similar trends in regulation including latent TGF\u03b21, suggesting that autocrine feedback may play a role in regulation at high tension.\n\nRankings of knockdown influence and knockdown sensitivity across all tension conditions suggest that influential mechanisms and their effects were dependent on the tensional context (Figure 4D\u2013E). While ROS, AP1, JNK, and TGF\u03b21-related node knockdowns displayed an overall lower degree of influence on the network compared to knockdown of AT1R for low- and medium-tension conditions, knockdown of these nodes under high levels of tension mediated large changes in network-wide activity with knockdown influence levels increasing by up to 4.9-fold compared to medium tension (Figure 4D). Similarly, different sets of nodes were more sensitive toward perturbations between tension levels, with lower knockdown sensitivity levels of proMMPs 2, 9, and 14 and higher levels of proCI, proCIII, and proMMP1 at high tension relative to medium tension (Figure 4E). These behaviors suggest that tension acts via different pathways at different levels of stimulation, and cell behavior in a dynamic mechanical environment may not be dictated by a single mechanism alone.\n\n### Fibroblast signaling network predicts behavior of current post-MI therapeutics\n\nCurrent post-MI therapeutics aim to reduce cardiac hypertrophy via inhibition or activation of neurohormonal signaling (Ponikowski et al., 2016), both of which also alter cardiac fibroblast behavior and extracellular matrix turnover as a side effect. To test the hypothesis that our model can reproduce experimentally observed effects of current post-MI drugs on fibroblast behavior, we simulated the effects of three drug classes by modulating the maximum activation parameters of individual nodes: (1) angiotensin receptor blockers (ARB) were simulated via knockdown of the AT1R node, (2) neprilysin inhibitors (NEPi), which increase the bioavailability of NPs, were simulated via overexpression of the NP node, and (3) ARB-NEPi combination drugs were simulated via combination of (1) and (2) above (see Materials and methods, Drug effect comparisons section for full description and Table 2 for simulation parameters).\n\n**Table 2.**\n Model parameters used for drug effect simulations.Minimum/maximum AT1R inhibitor (AT1Ri) values represent modifiers subtracted from the Ymax parameter of the AT1R node, and minimum/maximum neprilysin inhibitor (NEPi) values represent modifiers added to the Ymax parameter of the NP node. Non-specified input levels were set to a default value of 0.1. Int.: interpolated from measurements of post-MI cytokine levels in vivo.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Study</th>\n      <th>TGF\u03b2 (w)</th>\n      <th>AngII (w)</th>\n      <th>NP (w)</th>\n      <th>Tension (w)</th>\n      <th>AT1Ri minimum</th>\n      <th>AT1Ri maximum</th>\n      <th>NEPi minimum</th>\n      <th>NEPi maximum</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>von Lueder et al., 2015</td>\n      <td>\u2013</td>\n      <td>0.4</td>\n      <td>\u2013</td>\n      <td>0.3</td>\n      <td>0.01</td>\n      <td>0.5</td>\n      <td>0.05</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Burke et al., 2019</td>\n      <td>0.4</td>\n      <td>0.4</td>\n      <td>0.6</td>\n      <td>0.3</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>4</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Ramirez et al., 2014</td>\n      <td>Int.</td>\n      <td>Int.</td>\n      <td>Int.</td>\n      <td>0.1/0.6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\nWe tested whether our model could discern both individual and synergistic effects of post-MI drugs by simulating dose-response relationships between the three drugs above and procollagen I expression. Von Lueder and colleagues previously found that valsartan primarily attenuated collagen expression in cardiac fibroblasts following exposure to AngII, with NEPi LBQ657 acting in a synergistic manner with valsartan but not altering collagen expression alone (von Lueder et al., 2015). Our model independently confirmed this conclusion, as increasing levels of AT1R knockdown combined with NP overexpression further attenuated procollagen I expression compared to AT1R knockdown alone (Figure 5A). We additionally observed that NP overexpression alone did not appreciably alter procollagen I expression while AT1R knockdown suppressed expression to near-control levels, further supporting the authors\u2019 conclusions of the dominant mechanism for combinatory ARB-NEPi drugs (Figure 5\u2014figure supplement 1). This inability of NEPi class treatments to independently regulate AngII signaling can be attributed to a lack of overlap between AngII and NP pathways; AngII stimulation causes the activation of canonical and non-canonical TGF\u03b21 signaling via production of latent TGF\u03b21, and although NP overexpression inhibited canonical activation of smad3 by TGF\u03b21R, non-canonical activation and downstream procollagen expression via Akt remained unchanged. Knockdown of AT1R inhibited both pathways of TGF\u03b21 signaling, thereby reducing procollagen I levels in a dose-dependent manner.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig5-v2.jpg)\n\n**Figure 5.:** (A) Comparison of model-predicted effect of angiotensin receptor blocker (ARB) doses with or without neprilysin inhibitor (NEPi) treatment on procollagen I expression with measurements of collagen synthesis in cardiac fibroblasts in vitro. Doses for model predictions reflect negative modifiers of the Ymax parameter of AT1R, doses for the in vitro study reflect doses of valsartan in \u03bcM, and values reflect fold changes compared to control conditions. (B) Comparison of model-predicted effects of ARB and ARB-NEPi treatments on three output nodes with corresponding gene expression measurements of cardiac fibroblasts in vitro. Values reflect fold changes compared to TGF\u03b21/AngII/atrial NP (T/A/A) conditions. (C) Comparison of model-predicted effects of ARB treatment on five output nodes in representative remote (LVC) and infarct (LVI) zones with corresponding gene expression measurements in post-MI mouse hearts. Values reflect fold changes compared to control (non-infarcted) conditions. All experimental data are represented as mean \u00b1 SEM.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Simulated and experimental measurements of procollagen I synthesis in response to increasing doses of neprilysin inhibitor (NEPi) LBQ657 (LBQ). Simulated concentrations of NEPi represent positive modifiers added to Ymax parameters, and experimental concentrations represent concentrations of LBQ657 in \u00b5M. (B) Simulated and experimental measurements of procollagen I synthesis in response to increasing doses of angiotensin receptor blocker valsartan (VAL). Simulated concentrations represent negative modifiers subtracted from Ymax parameters, and experimental concentrations represent concentrations of valsartan in \u00b5M. (C) Simulated and experimental measurements of PKG activity in response to valsartan and/or NEPi sacubitril (SAC). Experimental values reflect phosphorylation of PKG analog VASP (vasodilator-stimulated phosphoprotein). (D) Simulated and experimental measurements of Rho activity in response to valsartan and/or sacubitril. All experimental data represent mean levels \u00b1 SEM.\n\nWe next assessed our model\u2019s capability to predict the expression of multiple gene products and potential mechanisms-of-action following perturbation by the drug classes above. We compared model predictions of three model outputs following ARB or ARB-NEPi treatments to a recent study by Burke and colleagues, who observed synergistic inhibition of genes encoding alpha-smooth muscle actin (\u03b1SMA), collagen I, and periostin by combinations of valsartan and the NEPi sacubitril (Burke et al., 2019). We found that model simulations predicted a similar synergistic inhibition of all three gene products in high TGF\u03b21/AngII/atrial NP (T/A/A) conditions, and although simulations of ARB treatment alone reduced output expression as concluded in the von Lueder study, combinatory treatment in this context further reduced all three model outputs to an average 16.6% of positive controls (Figure 5B). The authors additionally suggested that sacubitril mediated on fibroblast behavior via activation of PKG and inhibition of the small GTPase Rho, with patient-derived fibroblasts responding to sacubitril or valsartan-sacubitril treatment with decreased fractions of active Rho (Burke et al., 2019). Upon incorporating this interaction into the model reaction logic, model-predicted activation levels of PKG and Rho following NEPi and ARB-NEPi treatments confirm this mechanism-of-action by NP-related treatments, with ARB-only treatments failing to change activity levels of both PKG and Rho compared to TGF\u03b21/AngII/NP controls (Figure 5\u2014figure supplement 1). These comparisons demonstrate the ability of the model topology to predict both output-level changes with drug treatments as well as identify mechanisms-of-action compared to experimental data.\n\nBy incorporating known mechanotransduction pathways into network topology, we expanded our model\u2019s capability to predict responses to drug treatments in local cardiac tissue based on differences in tension. This capability is particularly important in the context of an infarcted left ventricle wherein fibroblasts in the infarct scar are subjected to heightened tensile stretches compared to the fibroblasts in the remote, non-infarcted myocardium that are subjected to normal myocardial tensions (Torres et al., 2018). We investigated this capability by simulating the expression of model outputs in response to valsartan treatment in both low- and high-tension contexts, while setting the model cytokine inputs to experimentally matched post-infarct levels as previously described (Zeigler et al., 2020). We compared model output expressions to a study by Ramirez and colleagues, who observed significant differences in fibrosis-related gene expression between infarct and remote zones and negligible effects of valsartan treatment alone using a mouse model (Ramirez et al., 2014). Model predictions generally agreed with their findings, as the degree of tension sizably altered the expression of procollagens, matricellular proteins, and connective tissue growth factor relative to changes in expression with valsartan treatment (Figure 5C). While we observed variable degrees of error between simulated levels of individual outputs and measured gene expression, our model accurately predicted qualitative differences in drug response based on regional tension.\n\n### Computational drug screen predicts candidates for mechano-adaptive therapy\n\nThe infarcted ventricle presents a spatially dependent need to maintain extracellular matrix content at the infarct region while limiting scar formation in remote regions. While targeted experimental studies involving individual or combinatory post-MI drugs demonstrate efficacy either for individual cell types or bulk tissues, there is currently no evidence of current or potential drugs showing variable effects based on regional mechanics. Our analysis of mechano-chemo interactions above suggests that regional mechanics can alter the effects of positive and negative perturbations, so we investigated whether simulated drug treatments for low- and high-tension conditions could identify drug targets that provide regional therapeutic effects post-MI. Specifically, we sought potential drug targets that adapt matrix-related expression to the regional tension by increasing pro-matrix expression in high tension and decreasing expression in low tension. To that end, we performed a comprehensive screen of individual and combinatory drug targets involving single node knockdown and overexpression and dual node knockdown, overexpression, and knockdown-overexpression combinations for a total of 23,762 drug treatments.\n\nWe used a rank-based scoring strategy to score drug treatments based on changes in output expression compared to non-perturbed conditions, calculating a matrix content metric from individual output nodes and ranking treatments by the capacity to decrease or increase this metric with low- or high-tension stimuli, respectively (see Materials and methods, Mechano-adaptive drug screen section for full description). While no individual drug target perturbation achieved these opposing responses (Figure 6\u2014figure supplement 1), we found that 450 of 23,544 combinatory perturbations qualitatively altered matrix content based on regional tension, and we identified a cluster of 13 perturbations that scored highly in adapting expression of fibrosis-related outputs to regional tension (Figure 6A, boxed combinations). This cluster primarily involved dual knockdown of nodes related to the IL6 and Akt/mTOR signaling pathways, with 8 of 13 treatments targeting members of these pathways (Figure 6B\u2013C). While most of these combinations exerted relatively minor changes in individual output levels compared to un-perturbed conditions, these combinations primarily acted to increase expression levels of procollagens, periostin, and PAI1 while decreasing proMMPs 1, 3, and 8 with high tension, thus aiding scar formation in high-tension conditions only (Figure 6C). Additionally, seven treatments showed evidence of increasing proMMP levels and decreasing procollagen and periostin levels with low tension (Figure 6B), suggesting that inhibition of the IL6 and Akt/mTOR pathways may simultaneously reduce pro-fibrotic matrix expression in remote tissues with low levels of tension. In follow-up in vitro experiments, we tested a subset of six combination perturbations by treating primary human cardiac fibroblasts cultured with pharmacological inhibitors under low mechanical stimulation (8 kPa stiffness plates) or high mechanical stimulation (64 kPa stiffness plates). Excitingly, four out of the six perturbations showed statistically significant differences in the drug treatment effects on collagen content (assessed as fluorescence intensity) with decreased collagen under low mechanical stimulation and increased collagen content under high mechanical stimulation (Figure 6D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig6-v2.jpg)\n\n**Figure 6.:** (A) Target combinations meeting preliminary threshold for mechano-adaptive behavior (i.e. promoted negative change in matrix content in low tension and positive change in matrix content in high tension) were scored based on rankings of matrix content changes in low- and high-tension simulations. Boxed values represent scores of 13 candidates examined in panels (B) and (C). (B\u2013C) Changes in output expression predicted with mechano-adaptive candidates under tensional contexts, expressed as changes in node activity compared to non-perturbed conditions for each level of tension. Bracketed groups in panels (B/C) represent categories used for calculations of matrix content in (A). (D) Follow-up in vitro experiments treated human cardiac fibroblasts with pharmacological compound combinations that inhibited the model-identified targets. Four of six combinations successfully decreased collagen content under low mechanical stimulation (8 kPa stiffness) and increased collagen under high mechanical stimulation (64 kPa stiffness). * indicates p<0.05 using Student's t-tests with Bonferroni multiple comparison adjustments.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62856/elife-62856-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Changes in matrix content as a function of output node expression were measured following comprehensive knockdown and overexpression of individual nodes in low- or high-tension contexts. Perturbations were scored for mechano-adaptive behavior based on matrix content change values. Overlapping low- and high-tension values indicate perturbations that equality altered matrix content regardless of the tensional context.\n\n## Discussion\n\nSpatial control of myocardial fibrosis after MI has remained a challenge due in part to simultaneous signaling from biochemical cues and regional mechanics, both of which mediate fibroblast activation and synthesis of extracellular matrix components (Davis and Molkentin, 2014). In the current study, we employed a computational model of fibroblast signaling to predict the regional expression of fibrosis-related proteins by incorporating known signaling pathways related to canonical biochemical agonists and mechanical tension. We found that the model correctly predicted qualitative changes in fibrotic protein expression with a similar degree of accuracy compared to other logic-based ODE networks (Cao et al., 2020; Wang et al., 2020), and model simulations of current therapeutics such as ARB and ARB-NEPi class drugs accurately reproduced trends in output gene expression observed in cardiac fibroblasts and a post-MI mouse model. Functional analyses identified influential mechano-chemo interactions and preferential pathways of mechanotransduction such as the production of latent TGF\u03b21 via a NOX-ROS-AP1 signaling axis. We additionally used the model as a targeted screening tool by simulating fibroblast responses to drug combinations in regions of low and high tension, and we identified 13 combinations that adapted the expression of matrix-related proteins to the regional mechanical environment. Our results suggest that this computational approach can aid the development of effective therapies for pathological tissue remodeling which involves simultaneous changes to paracrine signaling and tissue mechanics, and model predictions can generate targeted hypotheses for controlling fibroblast behavior for further experimental investigation.\n\n### Crosstalk between biochemical and biomechanical factors in fibroblast signaling\n\nIncreased circumferential stretch and stiffness in the post-MI infarct zone have been established as both a direct regulator of fibroblast activation and an indirect regulator of biochemical signaling pathways via crosstalk mechanisms (Herum et al., 2017b; Margadant and Sonnenberg, 2010). Experimentally assessing the system-wide extent and dynamics of these interactions would be exceedingly challenging due to time and resource constraints; however, biological network models can overcome this challenge by comprehensively simulating biochemical dose-response relationships under a variety of mechanical contexts. Our findings indicate that tension exerts a wide influence on biochemical signaling in fibroblasts by either amplifying responses to biochemical stimuli in the case of NE, dampening responses in the case of TGF\u03b21, and even reversing responses in the case of IL1.\n\nThe three example cases above share a common connection in tension-mediated expression and activation of latent TGF\u03b21, an autocrine feedback mechanism shown to influence cardiac fibroblast phenotypes (Hinz, 2015; Lindahl et al., 2002). We found that NE acted to antagonize latent TGF\u03b21 expression via a cAMP-PKA-CREB signaling axis. Activation of CREB through the use of phosphodiesterase inhibitors has previously been shown to antagonize fibrotic expression of lung and cardiac fibroblasts (Miller et al., 2011; W\u00f3jcik-Pszczo\u0142a et al., 2020) as well as cardiac fibrosis in a pressure overload mouse model (Gong et al., 2014), suggesting a potential mechano-responsiveness of this mechanism. Simulated fibroblast responses to TGF\u03b21 indicated a synergistic response under tension with latent TGF\u03b21 activation and output expression occurring for lower input doses. This trend is consistent with experiments involving valvular myofibroblasts, which exhibited earlier and greater induction of bioactive TGF\u03b21 and aSMA protein levels when subjected to combined tension/TGF\u03b21 compared to either stimulus alone (Merryman et al., 2007).\n\nWe additionally found that stimulation with IL1 produced opposite effects depending on the level of tension, with IL1 increasing procollagen I expression for low- to medium-tension levels and decreasing expression for high-tension levels through activation of BAMBI and downregulation of downstream targets of TGF\u03b21R. As a positive regulator, IL1 upregulates MAPK and NFkB signaling pathways via myeloid differentiation factor-88 (MyD88) (Van Tassell et al., 2015), and both IL1R-/- and MyD88-/- mice display reduced fibrosis and progression toward heart failure in a model of acute myocarditis (Blyszczuk et al., 2009). As a negative regulator, IL1 upregulates the expression of BAMBI to act as a decoy receptor for TGF\u03b21, thereby reducing downstream signaling (Saxena et al., 2013). In BAMBI-/- mice, pressure overload worsened fibrosis compared to wild-type mice in a TGF\u03b21-dependent manner, suggesting that this negative regulation is dependent on both mechanical stress and TGF\u03b21 stimulation (Villar et al., 2013). IL1 has additionally been shown to reverse the myofibroblast phenotype in valvular interstitial cells with culture on stiff substrates (Aguado et al., 2019), further suggesting that context-dependent regulation by IL1 may be a determining factor of fibroblast phenotype. Our analysis of mechano-chemo interactions above suggests that computational approaches can reveal context-specific mechanisms of disease progression and reinforces the need to account for various environmental factors (such as local biomechanics) in developing therapeutic strategies.\n\n### Influential mechanisms controlling fibroblast mechanotransduction\n\nFibroblasts transduce changes in their local mechanical environment using both well-known mechanosensors such as integrins and newly discovered mechanisms such as piezo channels and actin-dependent translocation of YAP/TAZ (Herum et al., 2017b). While these mechanisms have all been shown to alter cell phenotypes individually, it is still unclear as to whether individual pathways influence cell behavior over others. Network perturbation analysis predicted that tension is primarily mediated by an autocrine feedback mechanism in which a NOX/ROS/JNK/AP1 signaling axis stimulates latent TGF\u03b21 expression to drive further NOX activation as well as procollagen expression via smad3. The secondary activation of TGF\u03b21 has been demonstrated for various stimuli in fibroblasts such as TNF\u03b1 and AngII (Gao et al., 2009; Voloshenyuk et al., 2011) as well as for other cell types by influencing changes in phenotype related to extracellular matrix deposition and angiogenesis (Hamzeh et al., 2015; Joki et al., 2000; Zheng et al., 2001). Inhibition of NOX2 and NOX4 in AngII-infusion mouse models has additionally been shown to attenuate interstitial collagen deposition, further implicating NOX/ROS signaling as a central influencer of cardiac fibrosis (Johar et al., 2006; Zhao et al., 2015). Our model prediction that this pathway primarily influences fibrosis-related protein expression suggests that perturbation of this pathway may induce larger reductions in cardiac fibrosis compared to others, and experimental studies investigating this behavior could provide a basis for developing targeted anti-fibrotic therapies.\n\n### Fibroblast network model as a screening tool for targeted therapeutics\n\nThe heterogenous nature of MI creates a clear need for regionally targeted therapies for tissue remodeling, with the infarct zone requiring scar formation to provide local structural integrity and remote zones requiring scar downregulation to prevent adverse tissue stiffening. Loss of cardiomyocytes additionally presents different mechanical conditions between the infarct and remote zones (Torres et al., 2018), and our model predictions above and experimental evidence suggest that myofibroblast-mediated tissue remodeling is dependent on this mechanical context (Watson et al., 2012; Waxman et al., 2012). Previous trials of anti-fibrotic therapies have demonstrated the need to account for local increases in circumferential stretch in infarcted tissue. Studies inhibiting known mediators of excessive fibrosis such as TGF\u03b21, osteopontin, and TIMP3 have shown increased risk of left ventricular thinning and cardiac rupture, early complications associated with impaired scar formation at the infarct zone (Hammoud et al., 2011; Ikeuchi et al., 2004; Trueblood et al., 2001) \u2013 an indication that therapies designed to inhibit global fibrosis are not sufficient to promote healthy scar formation where it is needed. A further complication of post-infarct fibrotic control is the lack of evidence of regional differences in tissue remodeling for current and potential drugs. While our comparisons of model-predicted and experimentally tested ARB and NEPi treatments above demonstrated the inhibitory effects of these drugs in a single context, not enough evidence exists to determine whether these drugs produce therapeutic effects in both remote and infarcted zones.\n\nWe investigated the ability of our model to predict regional effects of drug treatments based on regional mechanical tension, and our computational screen of 23,762 drug treatments yielded 13 candidates that adapted expression of extracellular matrix-related proteins to the regional tension. These candidates implicated the IL6 and Akt/mTOR signaling pathways as well as the IL1/cAMP and MRTF/SRF pathways as mediators of mechano-adaptive behavior. Perturbations involving the IL6 and IL1 inflammatory pathways individually have yielded mixed results clinically; while several animal studies and clinical trials perturbing IL6 and IL1 signaling have concluded that knockdown of these pathways suppresses cardiac fibrosis and mediates gain of function due to MI or factors associated with MI (Abbate et al., 2013; Hilfiker-Kleiner et al., 2010; Ma et al., 2012), others have concluded that IL6 and IL1 knockdown exacerbate fibrosis post-MI or in response to MI-associated biochemical factors (Dziemidowicz et al., 2019; Obana et al., 2010; Turner, 2014). The results from these studies indicate that the influence of these pathways on tissue remodeling is highly context dependent with varying responses between treatment time courses and methods of antagonism, and our drug screen indicates that mechanical signaling additionally modifies cellular and tissue responses to these drugs. While we found no clinical evidence of tissue remodeling in response to the model-predicted drug combinations above, these results suggest that pairing of anti-inflammatory treatments with those for additional signaling pathways may provide an additional advantage in controlling regional cardiac fibrosis, and our predictions provide testable hypotheses for further investigation. Moreover, this model-based approach toward target discovery provides substantial value for potential drug development by focusing efforts on drugs or drug combinations with strong mechanistic evidence of therapeutic efficacy. Combinatory therapies involving three or more drugs could additionally be discovered efficiently using global search algorithms. Such algorithms have been used previously to prioritize effective treatments within other biological network models without constraining the number of drugs used (Weiss and Nowak-Sliwinska, 2017), and these methods could be employed to compare global knockdown/overexpression combinations against a similar summary metric used above to describe ECM turnover. While global search methods can optimize drug combinations within a systems-level network, the large number of simulations required for these methods will necessitate either substantial computing resources for full systematic exploration/optimization or reduction of the search space for efficient discovery. Finally, our model and approach can additionally be expanded to investigate fibrosis across multiple disease states and for individual patient conditions to stratify patients based on predicted responses to current drugs or to identify drug candidates for subpopulations of patients.\n\n### Study limitations and future directions\n\nOne major limitation of the current study stems from the need for quantitative predictions of fibroblast signaling processes and matrix production. While the current model was able to make semi-quantitative predictions of cell behavior based on network topology and normalized reaction parameters, data-driven reaction parameters are necessary both to fully investigate mechanisms-of-action of fibrotic activity and to relate signaling processes to experimental measures of fibrosis. Phospho-proteomic datasets generated using methods such as reverse-phase array provide direct analogs to intracellular protein activation or inhibition as well as the scope of measurements required for systems-level modeling, and previous studies have demonstrated the utility of these datasets in inferring cell signaling networks and fitting literature-curated network parameters (Alexopoulos et al., 2010; Osmanbeyoglu et al., 2017; Terfve and Saez-Rodriguez, 2012). Future implementation of in vitro or clinical phospho-proteomic data would improve the accuracy of model predictions and reveal additional mechanistic insight into fibroblast behavior in the post-MI environment.\n\nAn additional limitation of the current model is that of scope as it relates to both cell signaling processes and additional levels of regulation. While the current model was developed based on direct experimental evidence of signaling interactions stemming from selected biochemical and mechanical stimuli, we must acknowledge that additional stimuli and signaling pathways play a role in cardiac fibroblast signaling, such as interferon-\u03b3 and epidermal growth factor receptor signaling pathways (Levick and Goldspink, 2014; Liu et al., 2018). While not meeting our requirements for inclusion (see Materials and methods, Fibroblast signaling model development section for criteria), we expect these additional signaling mechanisms to aid in model predictions across the diverse range of stimuli represented in vivo.\n\nIt is important to note that a variety of biomechanical factors can potentially affect fibroblast behavior in the post-infarct environment including altered strains, stresses, and tissue stiffness (Clarke et al., 2016; Richardson et al., 2021; Richardson et al., 2015). In addition, both the magnitude and directionality of applied loads can differentially mediate cell behavior and matrix turnover (Herum et al., 2017a; Wang et al., 2004). In our model, we use \u2018tension\u2019 as a term to imply any change in molecular-scale force across cell receptor proteins and channels, which past experiments have shown can be driven by extracellular deformation (e.g. substrate strains that accompany tissue stresses) and intracellular acto-myosin contractility (e.g. pulling against a stiffened substrate). Undoubtedly, future work could help improve model predictions by experimentally calibrating how different cardiac fibroblast mechano-receptors may be more or less sensitive to different forms of mechanical stimulation.\n\nLastly, evidence suggests additional dimensions of cardiac fibrosis regulation including transcriptional regulation (Lacraz et al., 2017), extracellular remodeling of collagen fibers (Richardson et al., 2015), paracrine signaling involving inflammatory cells, immune cells and myocytes (Mouton et al., 2018), and additional modes of cell signaling (e.g. microRNA, matrix degradation products) (Lindsey et al., 2015; Thum et al., 2008). Several groups have made progress in modeling regulation within these levels in the heart (Chen et al., 2019; Liu et al., 2021; Rouillard and Holmes, 2012; Skelly et al., 2018; Tan et al., 2017; Zeigler et al., 2020). While incorporating all factors into a computational framework is a non-trivial effort, a combined, multi-scale approach capturing hetero-cellular communication and extracellular mechanics across a chronic time course will ultimately be necessary to fully predict tissue remodeling given the range of variables involved in post-infarct wound healing.\n\nThrough our simulated studies of fibroblast signaling and fibrotic activity above, we demonstrated the utility of computational models of mechano-chemo signal transduction in identifying mechanisms-of-action governing cell behavior in complex environments. While in vitro and in vivo evidence validating these results are crucial for translating this mechanistic insight into clinical solutions for cardiac fibrosis, this model-driven approach can be advantageous in focusing experimental efforts toward promising candidates that limit scar formation to regions where it is beneficial to do so. Excitingly, our simulations identified 13 novel drug target pairs whose modulation resulted in desirable mechano-adaptive effects \u2013 namely, an increase in matrix accumulation within the infarct zone (where scar material is beneficial to maintain structural integrity) and a simultaneous decrease in matrix within the remote zone (where scar material is detrimental to myocardial mechanical and electrical function). Given the broad significance of the involved pathways in many different cell types, our computational predictions also suggest that similar mechano-chemo-signaling interactions are likely present across many cell types and tissues, potentially confounding the translation of in vitro findings to in vivo applications where the mechanical context is strikingly different. Therefore, predictive models integrating both modes of signal transduction represent a critical step toward discovering targeted therapeutics across many disease states involving complex environmental signals. Future phospho-proteomic studies of fibroblast signaling in combination with targeted studies of influential signaling pathways will both enable further development of targeted treatments for cardiac remodeling and enable therapeutic development for a range of fibrosis-related diseases.\n\n## Materials and methods\n\n### Data and code availability\n\nThe code generated during this study is available at GitHub (copy archived at swh:1:rev:e73f424bd4477a1776d4316e3c5af8cd72c3b666; Rogers, 2022). The published article includes all model and validation databases generated or analyzed during this study.\n\n### Fibroblast signaling model development\n\nOur previously published model of cardiac fibroblast signaling was expanded using a manual literature search of over 100 peer-reviewed studies to include newly identified proteins and/or signaling pathways associated with fibroblast mechanotransduction, as well as several secreted proteins newly associated with cardiac fibrosis. New individual proteins (model nodes) and signaling reactions (edges) were identified from studies that concluded direct interactions between proteins altering protein activity (e.g. by phosphorylation). New nodes and/or edges were included if at least two independent studies contained evidence of either activation of a node or activation of another species by a node in either cardiac or other fibroblast subtypes. As previously described (Tan et al., 2017; Zeigler et al., 2016), the final network was implemented as logic-based ODEs in which activity levels of all nodes were modeled as a system of Hill equations, and all activity levels and input stimuli were represented as normalized values between 0 and 1. Logical NOT, AND, and OR gates were used for inhibitory and complex signaling interactions by applying logical operations $1-fx$ , $f(x)f(y)$ , and $fx+fy-fxfy$ to Hill equations, respectively. The system of differential equations was constructed using the open-source Netflux package for MATLAB (https://github.com/saucermanlab/Netflux; Kraeutler et al., 2010), and all subsequent analyses were conducted using MATLAB (Mathworks, Natwick, MA). Visualizations of the full network and sub-networks were created using Cytoscape software (Shannon et al., 2003).\n\n### Model validation\n\nQualitative changes in select model outputs and signaling intermediates were compared between model predictions and independent experimental studies. A set of studies independent from model development (47 papers total) were selected based on direct measurement of either output secretion or activity of a signaling intermediate in response to a single input stimulus in fibroblasts. Outputs included in this set were either collagens, matrix proteases, protease inhibitors, matricellular proteins, autocrine signaling species, or \u03b1SMA as a marker of fibroblast activation. Intermediates included were limited to members of canonical signaling pathways (i.e. Akt, CREB, ERK, JNK, p38, PKC, smad3, ROS), and only intermediates with direct measurements were included in the final set. Model predictions were performed by simulating basal conditions (all input weights = 0.1) for 80 hr, followed by simulating single input stimuli (weight = 0.8) for an additional 240 hr in order to allow for the system to reach steady-state activity levels. Because studies used for validation conducted in vitro experiments on tissue culture plastic, a tension input weight of 0.4 (40% of maximum stimulation) was used for all validation simulations. Changes in intermediate and output node activity from basal to stimulated conditions were binned into either \u2018increase\u2019, \u2018decrease\u2019, or \u2018no change\u2019 categories using \u00b15% change in activity levels, which has been shown previously to distinguish qualitative changes in behavior for single-stimulus simulations (Tan et al., 2017; Wang et al., 2020). To fit default model parameters to best describe experimental data, parameter sweeps of Hill coefficient (n) and half-maximal effective concentration (EC50) were conducted to maximize the accuracy of model predictions, using the percentage of correct predictions as a metric. Maximum activation levels (Ymax) were set to a default value of 1, and time constants (\u03c4) were set to default values of either 0.1, 1, or 10 corresponding with species involved in intracellular signaling reactions, ligand-receptor reactions, or transcription-translation events, respectively. Reaction weights (w) were set to default values of 1 with the exception of autocrine feedback-associated reactions, which were set to default values of 0.8 due to the lowered probability of these reactions resulting diffusion of output proteins or sequestering by the extracellular matrix (Hinz, 2015). Values for n and EC50 found to maximize predictive accuracy were used with the other described parameters for all subsequent simulations. All model species, reactions, and assigned parameters are detailed in Supplementary file 1.\n\n### Mechano-chemo interaction analysis\n\nDose-response behaviors of biochemical stimuli were simulated for incremental levels of the \u2018tension\u2019 input reaction to assess interactions between mechanical and biochemical stimulations. For 0.1 increments in tension reaction weight ranging from 0.1 (10% of maximum stimulation) to 0.9 (90% of maximum stimulation), steady-state activity levels of all nodes in the network were simulated following stimulation of each biochemical input reaction (AngII, TGF\u03b21, IL6, IL1, TNF\u03b1, NE, PDGF, ET1, and NP) for 240 hr, ranging in reaction weight from 0 to 1 in 0.01 increments. The resulting dose-response curves were normalized to steady-state activity levels for a biochemical input of 0, and the total response of each node to a biochemical stimulus was calculated as the area under the normalized curve (AUC). Changes in AUC due to tension (\u0394AUC) were calculated for each tension level as the difference between AUCs with added tension and with baseline tension (tension = 0.1). Sizeable mechano-chemo interactions were identified using a threshold of \u00b15% in \u0394AUC. \u0394AUCs greater than or equal to 5% were categorized as amplifying interactions (tension increases node response to a biochemical stimulus), \u0394AUCs less than or equal to \u20135% were categorized as dampening interactions (tension decreases node response), and AUCs with opposite signs between baseline and tension conditions and exceeded the threshold of \u00b15% were classified as reversal interactions (tension causes biochemical stimulation to exert the opposite effect on node activity). This threshold has been shown previously to distinguish qualitative changes in activity levels with individual node perturbations (Tan et al., 2017; Wang et al., 2020), and while these studies did not use an integrated AUC metric for comparison, our comparison of AUCs requires greater peak activation levels to meet the threshold, thereby imposing a stricter comparison than these previous studies.\n\nTo compare the extent of interactions between tension levels for each input, two-sample Kolmogorov-Smirnov tests were conducted for distributions of \u0394AUCs, comparing (1) distributions for tension = 0.2 vs. tension = 0.5; (2) distributions for tension = 0.2 vs. tension = 0.9; and (3) distributions for tension = 0.5 vs. tension = 0.9. Corrections for multiple comparisons were made using the Benjamini-Hochberg procedure (Benjamini and Hochberg, 2009), and adjusted p-values are displayed in Figure 3\u2014figure supplement 1. As an additional measure supporting the input-related differences in interactions found above, topological network parameters were computed using the NetworkAnalyzer plugin for Cytoscape (Doncheva et al., 2012).\n\n### Network perturbation analysis\n\nTo identify influential signaling mechanisms across various mechanical contexts, a series of node knockdowns were simulated for several levels of tension. For tension reaction weights of 0.25, 0.5, and 0.75, basal conditions were simulated for 80 hr (all other input weights = 0.1) followed by knockdown of individual nodes (Ymax = 0.1) for 240 hr. Steady-state activity levels of all nodes were measured across knockdowns of all nodes, and changes in activity (\u0394Activity) were calculated as the difference between node activity after knockdown and basal activity. Knockdown sensitivity of each node was calculated as the total change in activity of the node across all knockdown simulations, and knockdown influence of each node was calculated as the total change in activity of all other nodes in the network upon knockdown.\n\n### Drug effect comparisons\n\nPredicted responses of the network to currently prescribed pharmacological therapies were compared three studies measuring cardiac fibroblast or myocardial tissue gene expression or protein expression in vitro or in vivo (Burke et al., 2019; Ramirez et al., 2014; von Lueder et al., 2015). All drugs were simulated by knockdown or overexpression of individual nodes: ARB valsartan (VAL), simulated by applying a negative modifier to Ymax for the AT1R node, NEPi LBQ657 (LBQ) and sacubitril (SAC), simulated by applying a positive modifier Ymax for the NP node, and angiotensin receptor NEPi LCZ696 (VAL+ LBQ) and sacrbitril/valsartan (VAL+ SAC). All negative control simulations were conducted using input reaction weights of 0.1, and all input reaction weights and drug perturbation levels for in vitro studies were chosen to maximize the dynamic range of network responses. Input reaction weights for in vivo studies were interpolated from experimental data of cytokine levels post-MI as previously described (Zeigler et al., 2020) using a time point of 4 weeks post-infarction, and tension reaction weights for control and infarct zones were set to 0.1 and 0.6, respectively. All input reaction weights and perturbation conditions can be found in Table 2.\n\n### Mechano-adaptive drug screen\n\nA computational screen of single and double network perturbations was conducted to identify drug targets with potential to adapt fibrotic activity to the local mechanical environment. Biochemical input reaction weights used for all simulations were interpolated using the method described for in vivo study comparisons at a time point of 2 weeks post-infarction. To represent remote (low-tension) and infarcted (high-tension) zones post-MI, tension reaction weights of 0.1 and 0.6 were used, respectively. For each simulation, baseline conditions were simulated using the input reaction weights above for 80 hr, and single or double perturbations were simulated by setting Ymax values of nodes to 0.1 (knockdown) or 5 (overexpression) for 240 hr. Single perturbations were simulated for all individual nodes as both knockdown and overexpression for a total of 218 perturbations, and double perturbations were simulated for all node combinations as double knockdown, double overexpression, or knockdown-overexpression combinations for a total of 23,544 perturbations.\n\nPerturbations that exhibited mechano-adaptive behavior were identified using a rank-based score metric based on changes in activity levels for model outputs (\u0394Activity). For each perturbation and tension level, \u0394Activity levels were calculated as the difference in each node\u2019s activity between baseline and perturbed conditions, and changes in overall matrix content (MCC) for each perturbation and tension level were calculated based on \u0394Activity levels for all procollagens and matricellular proteins (\u0394ActivityMatrix), \u0394Activity levels for all MMPs (\u0394ActivityMMP), and \u0394Activity levels for all protease inhibitors (\u0394ActivityInhib): $MCC=\\sum\u0394Activity_{Matrix}\u2212\u0394Activity_{MMP}+\u0394Activity_{Inhib}$ . Output nodes were categorized as follows: \u0394ActivityMatrix: proCI, proCIII, fibronectin, periostin, osteopontin; \u0394ActivityMMP: proMMPs 1, 2, 3, 8, 9, 12, 14; \u0394ActivityInhib: TIMP1, TIMP2, PAI1. To identify perturbations that (1) qualitatively alter matrix content in a desirable manner based on the tensional context and (2) maximize differences in low- and high-tension expression, a two-step procedure was used to score mechano-adaptive behavior from MCC values:\n\n### In vitro validation experiments for mechano-adaptive drug candidates\n\nPrimary human ventricular cardiac fibroblasts were purchased (Lonza #CC-2904) and cultured according to manufacturer\u2019s protocols with manufacturer-supplied growth medium (FGM-3 with 10% fetal bovine serum, fibroblast growth factor B, GA-1000). For testing drug effects under low mechanical stimulation vs. high mechanical stimulation, variable stiffness plates were purchased (8 kPa vs. 64 kPa CytoSoft Imaging 24-well plates, Advanced Biomatrix) and coated with collagen I according to manufacturer\u2019s protocols (PureCol, Advanced Biomatrix). Fibroblasts at passages 4\u20136 were seeded on collagen-coated plates at 25,000 cells per well, cultured in normal growth medium for 24 hr at 37\u00b0C and 5% CO2, then treated with one of seven media conditions listed in Table 3.\n\n**Table 3.**\n Experimental group culture media conditions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Control</th>\n      <th>Media (0.5% FBS)+ TGF\u03b2 (10 ng/mL)+ TNF\u03b1 (10 ng/mL)+ L-ascorbic acid (50 ng/mL)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PI3K + STAT inhibitors</td>\n      <td>Control + LY294002 (10 \u03bcM)+ Niclosamide (0.5 \u03bcM)</td>\n    </tr>\n    <tr>\n      <td>PI3K + gp130 inhibitors</td>\n      <td>Control + LY294002 (10 \u03bcM)+ SC144 (10 \u03bcM)</td>\n    </tr>\n    <tr>\n      <td>PI3K + IL6 inhibitors</td>\n      <td>Control + LY294002 (10 \u03bcM)+ Rosuvastatin (10 \u03bcM)</td>\n    </tr>\n    <tr>\n      <td>mTOR + STAT inhibitors</td>\n      <td>Control + Everolimus (0.5 \u03bcM)+ Niclosamide (0.5 \u03bcM)</td>\n    </tr>\n    <tr>\n      <td>mTOR + gp130 inhibitors</td>\n      <td>Control + Everolimus (0.5 \u03bcM)+ SC144 (10 \u03bcM)</td>\n    </tr>\n    <tr>\n      <td>mTOR+ IL6 inhibitors</td>\n      <td>Control + Everolimus (0.5 \u03bcM)+ Rosuvastatin (10 \u03bcM)</td>\n    </tr>\n  </tbody>\n</table>\n\nAfter 72 hr of incubation with treatment media, cells were washed with PBS and stained for collagen I (Fisher #PA5-95137 primary antibody, Fisher #A-11012 Texas Red secondary antibody) and nuclei (DAPI), then imaged at 20\u00d7 magnification with an EVOS FL-Auto inverted microscope. A total of 210 images were taken, accounting for seven media conditions \u00d7 two stiffness conditions \u00d7 three biological replicates/condition \u00d7 five technical replicates/biological replicate. Images were background subtracted prior to calculating total collagen intensity values for each image, which were then averaged across technical replicates and normalized to the control condition for each stiffness plate (i.e. drug combinations on 8 kPa were normalized to 8 kPa control average, while drug combinations on 64 kPa were normalized to 64 kPa control average). Two-tailed Student\u2019s t-tests were made between the normalized effects of each drug on 8 kPa vs. 64 kPa plates with p-values adjusted for multiple comparisons using a Bonferroni correction, and p<0.05 designated as significant.\n",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "79827cfc-e2dd-4990-a7bf-c13b9d68c14a",
+      "submission_id": "493d8833-a6f3-4e89-8077-a029e37bbd20",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62856.sa0](https://doi.org/10.7554/eLife.62856.sa0)\n\nThis paper presents a computational network model of fibroblast signalling in order to identify drug combinations that might be useful targets for controlling cardiac fibrosis, with application to treating myocardial infarction. The approach clearly has merit and is a potentially powerful way to make progress in understanding effects of interventions in situations where regional variations in tension and biochemical alterations have to date frustrated many attempts of understanding and rational treatment.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62856.sa1](https://doi.org/10.7554/eLife.62856.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Fibroblast Mechanotransduction Network Predicts Targets for Mechano-Adaptive Infarct Therapies\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Jennifer Flegg as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Andrew McCulloch (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors extended an existing systems model of cardiac fibroblast pro-fibrotic cell signaling network and used it to investigate interactions between the effects of altered tension and ligand-mediated signaling that could identify novel combination drug targets that could be used to target excessive collagen matrix accumulation in remote myocardium while not inhibiting ECM expression in the myocardial required for ventricular structural integrity. Model validation with independent experimental data showed 80% accuracy, which is very encouraging and comparable to previous reports with this class of cell systems model. The authors then looked at how sensitivity of network responses to node knockdown was affected by tension and used the model to identify subnetwork interactions mediating significant crosstalk. Model-predicted responses to combination treatment with angiotensin receptor blockers and neprilysin inhibition showed good agreement with published data. The authors concluding by predicting drug combinations that could be modulated significantly by tension.\n\nEssential Revisions:\n\n1. More motivation on why the methods applied here are appropriate over others.\n\n2. The contribution over the previous work should be made clearer.\n\n3. Is it possible to do a formal fitting or sensitivity analysis for the many model parameters?\n\n4. Can the authors comment on whether therapies with 3 or more drugs can be combined and, if so, could the optimal treatment be found with optimisation methods?\n\n5. The authors should be more specific about exactly whether they interpret tension as stress or strain based on the experiments used to formulate the model and they should identify experiments that enable the predictions to be tested less ambiguously. If these independent experiments cannot be found, then the paper would be improved by new in-vitro experiments that test some subset of the predicted tension-dependent drug combinations directly. The potentially important role of paracrine interactions should also be discussed.\n\n6. Given the fairly strong emphasis of the manuscript on the identified 13 candidates that are predicted to have differential effect on pro-matrix expression depending on local tension, doesn't this require a minimum of a proof-of-concept experiment to illustrate both the types of experiments, say using cultured cells, that need to be performed and actually test if these predictions are realistic?\n\n7. While the authors note a number of limitations, with the strong emphasis relating this study to cardiac infarcts, the omission of major cell types (such as a complete lack of cardiomyocytes) in the current model may leave this as too preliminary and incomplete to construct such a strong link with the infarct situation. For example, certain aspects of feedback between cell systems cannot currently be captured as only fibroblasts are modelled. It may require at least a toning down of the interpretation of the data shown here.\n",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f6d1d742-cd0a-4fd2-80a1-7a75a673b8fe",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C1",
+      "claim": "Over 800,000 patients are diagnosed with myocardial infarction per year.",
+      "claim_type": "EXPLICIT",
+      "source": "For a proportion of the over 800,000 patients diagnosed per year (Benjamin, 2019), excessive hypertrophy and scar formation in the non-infarcted myocardium can result in the development of heart failure, with decreases in contractility, myocardial conductivity, and pump function leading to poor rates of survival (Shah et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Benjamin, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "5a2d8b83-02b0-45bf-8b22-421d1678cdf2",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C2",
+      "claim": "Excessive hypertrophy and scar formation in the non-infarcted myocardium can result in the development of heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "For a proportion of the over 800,000 patients diagnosed per year (Benjamin, 2019), excessive hypertrophy and scar formation in the non-infarcted myocardium can result in the development of heart failure, with decreases in contractility, myocardial conductivity, and pump function leading to poor rates of survival (Shah et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Shah et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "bd68b989-9d91-4681-8885-893b4d4ee3d4",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C3",
+      "claim": "Currently prescribed therapeutics for MI patients are designed to reduce hypertrophy via several neurohormonal mechanisms including inhibition of angiotensin II (AngII) and norepinephrine (NE) or increasing the bioavailability of natriuretic peptides (NPs).",
+      "claim_type": "EXPLICIT",
+      "source": "Currently prescribed therapeutics for MI patients are designed to reduce hypertrophy via several neurohormonal mechanisms including inhibition of angiotensin II (AngII) and norepinephrine (NE) or increasing the bioavailability of natriuretic peptides (NPs) (Ponikowski et al., 2016), but no drugs have been approved for treating cardiac fibrosis directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ponikowski et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "804cc89f-0baa-49b3-9c94-e7deb2cb3503",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C4",
+      "claim": "No drugs have been approved for treating cardiac fibrosis directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently prescribed therapeutics for MI patients are designed to reduce hypertrophy via several neurohormonal mechanisms including inhibition of angiotensin II (AngII) and norepinephrine (NE) or increasing the bioavailability of natriuretic peptides (NPs) (Ponikowski et al., 2016), but no drugs have been approved for treating cardiac fibrosis directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge in the field as of the publication date.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "73f03092-53ce-4699-b3b5-1793f1adcbad",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C5",
+      "claim": "Scar formation serves a reparative function in post-MI wound healing by replacing necrotic myocardium and preventing infarct expansion and cardiac rupture.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, scar formation serves a reparative function in post-MI wound healing by replacing necrotic myocardium and preventing infarct expansion and cardiac rupture (Weber et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Weber et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "f600bb70-ba68-4114-af27-56b7206fe7c4",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C6",
+      "claim": "Cardiac fibroblasts infiltrate the infarct site and assume an activated, synthetic phenotype to promote matrix accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This balance is mediated largely by cardiac fibroblasts, which infiltrate the infarct site and assume an activated, synthetic phenotype to promote matrix accumulation (Chen and Frangogiannis, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chen and Frangogiannis, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "fbb5de90-b93d-4bd0-b8aa-fb372b176026",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C7",
+      "claim": "A wide variety of biochemical factors regulate fibroblast behavior such as AngII, transforming growth factor-\u03b2 (TGF\u03b21), endothelin-1 (ET1), and various inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "A wide variety of biochemical factors regulate fibroblast behavior such as AngII, transforming growth factor-\u03b2 (TGF\u03b21), endothelin-1 (ET1), and various inflammatory cytokines (Leask, 2010; Turner, 2014), but a growing body of research has demonstrated that biomechanical factors such as circumferential stretch and tissue stiffness are also critical determinants of fibroblast behavior (Saucerman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Leask, 2010 and Turner, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "e3f3639c-b2b6-4bab-8489-eb90b23d07a3",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C8",
+      "claim": "Biomechanical factors such as circumferential stretch and tissue stiffness are critical determinants of fibroblast behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "A wide variety of biochemical factors regulate fibroblast behavior such as AngII, transforming growth factor-\u03b2 (TGF\u03b21), endothelin-1 (ET1), and various inflammatory cytokines (Leask, 2010; Turner, 2014), but a growing body of research has demonstrated that biomechanical factors such as circumferential stretch and tissue stiffness are also critical determinants of fibroblast behavior (Saucerman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Saucerman et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "d000debe-6ee1-4c62-a62e-471c6d441ca4",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C9",
+      "claim": "Parallel transduction of biochemical and biomechanical stimuli is integrated by fibroblasts through a complex signaling network in which pathways interact via systems-level crosstalk and feedback mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel transduction of biochemical and biomechanical stimuli is integrated by fibroblasts through a complex signaling network in which pathways interact via systems-level crosstalk and feedback mechanisms (Hinz, 2015; Saraswati et al., 2020), making prediction and control of fibroblast behavior in the post-MI environment highly challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hinz, 2015 and Saraswati et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "81cb5b2e-0673-4378-979a-b17efd22a8d4",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C10",
+      "claim": "The extended model includes nine cytokine inputs known to mediate fibroblast activation post-MI as well as mechanical tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Our extended model includes nine cytokine inputs known to mediate fibroblast activation post-MI as well as mechanical tension, which is transduced via multiple mechanosensors including integrins, stretch-activated ion channels, and the G-coupled protein receptor angiotensin type I receptor (AT1R) (Figure 1, and see Figure 1\u2014figure supplement 1 for nodes added to the previous network).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the model description and references to Figure 1 and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "17ac1f70-7433-488f-9815-5810d0206f1c",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C11",
+      "claim": "Mechanical tension is transduced via multiple mechanosensors including integrins, stretch-activated ion channels, and the G-coupled protein receptor angiotensin type I receptor (AT1R).",
+      "claim_type": "EXPLICIT",
+      "source": "Our extended model includes nine cytokine inputs known to mediate fibroblast activation post-MI as well as mechanical tension, which is transduced via multiple mechanosensors including integrins, stretch-activated ion channels, and the G-coupled protein receptor angiotensin type I receptor (AT1R) (Figure 1, and see Figure 1\u2014figure supplement 1 for nodes added to the previous network).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the model structure and established knowledge of mechanotransduction pathways.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "62c45bad-156d-4910-bd23-220f01b3ab63",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C12",
+      "claim": "The total network consists of 109 nodes and 174 reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The total network, consisting of 109 nodes and 174 reactions, was implemented as a logic-based ODE model using the open-source Netflux package as previously described (Kraeutler et al., 2010) in which node activity levels and reaction weights are normalized values between 0 and 1 (e.g. an activity of 0.5 represents 50% of maximum activity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text describing the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "f68ae6ee-dbda-4083-81c5-5f3e6a4e0803",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C13",
+      "claim": "For fibroblast-secreted outputs, simulated responses to biochemical and mechanical stimuli correctly predicted qualitative changes in protein secretion in 81.8% (63/77) of simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "For fibroblast-secreted outputs, simulated responses to biochemical and mechanical stimuli correctly predicted qualitative changes in protein secretion in 81.8% (63/77) of simulations (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by validation data presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "152d7233-c877-4a5f-837a-5648ad553423",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C14",
+      "claim": "The model correctly predicted qualitative changes in activation levels of canonical signaling intermediates for 80.5% (33/41) of simulations compared to experimental studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the model correctly predicted qualitative changes in activation levels of canonical signaling intermediates for 80.5% (33/41) of simulations compared to experimental studies (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by validation data presented in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "8c992ec4-c1ee-45d4-9637-01441e86d78a",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C15",
+      "claim": "The model predicted increased expression of collagens, matricellular proteins, and protease inhibitors with exposure to canonical agonists TGF\u03b21, AngII, platelet-derived growth factor (PDGF), tumor necrosis factor-\u03b1 (TNF\u03b1), and mechanical tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, the model-predicted increased expression of collagens, matricellular proteins, and protease inhibitors with exposure to canonical agonists TGF\u03b21, AngII, platelet-derived growth factor (PDGF), tumor necrosis factor-\u03b1 (TNF\u03b1), and mechanical tension, and secretion of these pro-fibrotic species was accompanied by increased MMP production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model predictions consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "833b6df7-ce8a-4bb5-bde1-53d9fe0f7342",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C16",
+      "claim": "Tension amplified, dampened, or reversed fibroblast responses to individual biochemical cues.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the extent and dynamics of mechano-chemo interactions by simulating biochemical dose-response behavior under varying levels of mechanical stimulation, finding that tension amplified, dampened, or reversed fibroblast responses to individual biochemical cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results described in the abstract and results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "b7c6094a-d927-4fdd-a077-4e04938cf4bb",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C17",
+      "claim": "A tension level of 0.5 amplified, dampened, or reversed an average 56.7% of node AUCs toward six biochemical inputs compared to basal levels of tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this threshold, a tension level of 0.5 (i.e. 50% of maximum stimulation) amplified, dampened, or reversed an average 56.7% of node AUCs toward these six inputs compared to basal levels of tension (Figure 3A), and a tension level of 0.9 (i.e. 90% of maximum stimulation) sizably altered an average 60.4% of node AUCs (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of simulation data presented in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "9a5b3551-9240-495e-9afe-f99a660ce5d1",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C18",
+      "claim": "A tension level of 0.9 sizably altered an average 60.4% of node AUCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this threshold, a tension level of 0.5 (i.e. 50% of maximum stimulation) amplified, dampened, or reversed an average 56.7% of node AUCs toward these six inputs compared to basal levels of tension (Figure 3A), and a tension level of 0.9 (i.e. 90% of maximum stimulation) sizably altered an average 60.4% of node AUCs (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of simulation data presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "da87ef8d-3cad-4166-8e2a-4a7a45ec18ce",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C19",
+      "claim": "Moderate tension levels (reaction weights 0.2\u20130.5) largely amplified the effects of inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Within inputs that demonstrated tension-modulated dose-response behavior, the level of tension applied mediated different types of interactions. Moderate tension levels (reaction weights 0.2\u20130.5) largely amplified the effects of inputs; of the six inputs demonstrating tension-mediated changes in dose-response behavior, 51.8% of node AUCs were amplified at a tension level of 0.5 on average while 4.43% and 0.46% of node AUCs were dampened or reversed on average, respectively (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "404a65fb-5bc4-42a4-82d2-6ca5ad56c3cd",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C20",
+      "claim": "High levels of tension (reaction weights 0.6\u20130.9) largely dampened network responses to inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "High levels of tension (reaction weights 0.6\u20130.9) largely dampened network responses to these inputs, with 56.4% of nodes on average decreasing AUCs with the same six inputs compared to 2.75% and 1.22% of node AUCs showing sizable amplification or reversal, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "56fd7bae-cbcf-45c9-a0ab-958555cf048e",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C21",
+      "claim": "NE-mediated inhibition of procollagen I expression was amplified by tension.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes in sensitivity were indicative of network interactions between tension and biochemical stimuli; we observed that NE-mediated inhibition of procollagen I expression was amplified by tension (Figure 3C), which can be explained by the logical requirement for tension-induced smad3 activation for effective inhibition by cAMP response element-binding protein (CREB) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "cf25e5b2-c781-45a4-9d0a-b3ae970748a6",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C22",
+      "claim": "Tension-mediated desensitization of procollagen I expression toward TGF\u03b21 can be explained mechanistically by a common autocrine feedback loop integrating both tension and TGF\u03b21 signals via a reactive oxygen species (ROS)-activator protein 1 (AP1) signaling axis.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that tension-mediated desensitization of procollagen I expression toward TGF\u03b21 can be explained mechanistically by a common autocrine feedback loop integrating both tension and TGF\u03b21 signals via a reactive oxygen species (ROS)-activator protein 1 (AP1) signaling axis (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mechanistic analysis shown in Figures 3E-F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "2a11da9f-6063-419e-b25a-b7b58359daf2",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C23",
+      "claim": "4.40% of nodes reversed the direction of dose-response curves with IL1 stimulation with a tension reaction weight of 0.6 or greater compared to baseline tension levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 4.40% of nodes reversed the direction of dose-response curves with IL1 stimulation with a tension reaction weight of 0.6 or greater compared to baseline tension levels, including intermediate nodes involved in TGF\u03b21 signaling (TGF\u03b21R, NOX, ROS), mitogen-activated protein kinase (MAPK) signaling (TRAF, ASK1, MKK3, MKK4, ERK), as well as the expression of procollagen I (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of simulation data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "b9862854-5eb2-460f-854c-0325d33c670a",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C24",
+      "claim": "At low levels of tension, knockdowns produced only small changes in node activities and correspondingly low influence and sensitivity values.",
+      "claim_type": "EXPLICIT",
+      "source": "At low levels of tension, knockdowns produced only small changes in node activities and correspondingly low influence and sensitivity values (Figure 4A, D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by perturbation analysis data shown in Figure 4A, D, and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "55bcd128-878b-48a3-a6dd-9a2722d46df9",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C25",
+      "claim": "Under medium tension levels, knockdown of AT1R exhibited relatively broad inhibition compared to other top influencers, decreasing activity levels of several proMMPs, fibronectin, TNC, and members of the IL6 pathway by an average of 35.9% \u00b1 5.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Under medium tension levels, knockdown of AT1R exhibited relatively broad inhibition compared to other top influencers, decreasing activity levels of several proMMPs, fibronectin, TNC, and members of the IL6 pathway by an average of 35.9% \u00b1 5.4% (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by perturbation analysis data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "cd4f8ab9-8155-44c2-85c5-747aa6462f21",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C26",
+      "claim": "Under high-tension conditions, NOX, ROS, AP1, and JNK ranked as the highest influencers network-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Under high-tension conditions, however, these four nodes ranked as the highest influencers network-wide, mediating decreases in activity for members of the MAPK pathways (80.6% \u00b1 4.3% reduction in activity on average), actin cytoskeleton-related signaling (68.7% \u00b1 22.2% average reduction), and outputs procollagen I, procollagen III, and proMMP1 (30.9% \u00b1 8.9% average reduction) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by perturbation analysis data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "d325b0c4-1952-4c94-850e-c38a1a15106c",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C27",
+      "claim": "The model independently confirmed that increasing levels of AT1R knockdown combined with NP overexpression further attenuated procollagen I expression compared to AT1R knockdown alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Von Lueder and colleagues previously found that valsartan primarily attenuated collagen expression in cardiac fibroblasts following exposure to AngII, with NEPi LBQ657 acting in a synergistic manner with valsartan but not altering collagen expression alone (von Lueder et al., 2015). Our model independently confirmed this conclusion, as increasing levels of AT1R knockdown combined with NP overexpression further attenuated procollagen I expression compared to AT1R knockdown alone (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 5A that matches experimental findings from von Lueder et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "c56a71a9-94df-4999-ac35-47928d80c265",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C28",
+      "claim": "Model simulations predicted a similar synergistic inhibition of \u03b1SMA, collagen I, and periostin in high TGF\u03b21/AngII/atrial NP (T/A/A) conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared model predictions of three model outputs following ARB or ARB-NEPi treatments to a recent study by Burke and colleagues, who observed synergistic inhibition of genes encoding alpha-smooth muscle actin (\u03b1SMA), collagen I, and periostin by combinations of valsartan and the NEPi sacubitril (Burke et al., 2019). We found that model simulations predicted a similar synergistic inhibition of all three gene products in high TGF\u03b21/AngII/atrial NP (T/A/A) conditions, and although simulations of ARB treatment alone reduced output expression as concluded in the von Lueder study, combinatory treatment in this context further reduced all three model outputs to an average 16.6% of positive controls (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 5B that matches experimental findings from Burke et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "3154b3ad-f856-4a23-b92c-8b3aaeea691e",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C29",
+      "claim": "Comprehensive simulations of fibroblast responses to over 23,000 combinatory drug targets in low- or high-tension contexts identified several drug combinations that adapted fibrotic activity to the local mechanical state.",
+      "claim_type": "EXPLICIT",
+      "source": "Comprehensive simulations of fibroblast responses to over 23,000 combinatory drug targets in low- or high-tension contexts identified several drug combinations that adapted fibrotic activity to the local mechanical state, demonstrating the potential of this model to act as a screening tool for targeted therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the computational drug screen described in the abstract and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "a61f18e4-8a10-4d46-8661-9d92d7f56f69",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C30",
+      "claim": "450 of 23,544 combinatory perturbations qualitatively altered matrix content based on regional tension.",
+      "claim_type": "EXPLICIT",
+      "source": "While no individual drug target perturbation achieved these opposing responses (Figure 6\u2014figure supplement 1), we found that 450 of 23,544 combinatory perturbations qualitatively altered matrix content based on regional tension, and we identified a cluster of 13 perturbations that scored highly in adapting expression of fibrosis-related outputs to regional tension (Figure 6A, boxed combinations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative results from the drug screen shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "139cf5da-9e08-4786-bcf8-71bf9755c118",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C31",
+      "claim": "13 perturbations scored highly in adapting expression of fibrosis-related outputs to regional tension.",
+      "claim_type": "EXPLICIT",
+      "source": "While no individual drug target perturbation achieved these opposing responses (Figure 6\u2014figure supplement 1), we found that 450 of 23,544 combinatory perturbations qualitatively altered matrix content based on regional tension, and we identified a cluster of 13 perturbations that scored highly in adapting expression of fibrosis-related outputs to regional tension (Figure 6A, boxed combinations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative results from the drug screen shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "4cef468c-b9d1-42b1-a4bb-fa74386ba621",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C32",
+      "claim": "8 of 13 treatments targeted members of the IL6 and Akt/mTOR signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster primarily involved dual knockdown of nodes related to the IL6 and Akt/mTOR signaling pathways, with 8 of 13 treatments targeting members of these pathways (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of the top-scoring drug combinations shown in Figures 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "a74b2986-4483-4cf9-9271-a1c22462fd8a",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C33",
+      "claim": "Four out of six perturbations showed statistically significant differences in the drug treatment effects on collagen content with decreased collagen under low mechanical stimulation and increased collagen content under high mechanical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In follow-up in vitro experiments, we tested a subset of six combination perturbations by treating primary human cardiac fibroblasts cultured with pharmacological inhibitors under low mechanical stimulation (8 kPa stiffness plates) or high mechanical stimulation (64 kPa stiffness plates). Excitingly, four out of the six perturbations showed statistically significant differences in the drug treatment effects on collagen content (assessed as fluorescence intensity) with decreased collagen under low mechanical stimulation and increased collagen content under high mechanical stimulation (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental validation data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "a40794f0-06d6-4b9e-9c81-e847c47e1049",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C34",
+      "claim": "Increased circumferential stretch and stiffness in the post-MI infarct zone have been established as both a direct regulator of fibroblast activation and an indirect regulator of biochemical signaling pathways via crosstalk mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased circumferential stretch and stiffness in the post-MI infarct zone have been established as both a direct regulator of fibroblast activation and an indirect regulator of biochemical signaling pathways via crosstalk mechanisms (Herum et al., 2017b; Margadant and Sonnenberg, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Herum et al., 2017b and Margadant and Sonnenberg, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "5b8e1800-e43b-43fe-a100-c441f604c8e4",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C35",
+      "claim": "Activation of CREB through the use of phosphodiesterase inhibitors has been shown to antagonize fibrotic expression of lung and cardiac fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of CREB through the use of phosphodiesterase inhibitors has previously been shown to antagonize fibrotic expression of lung and cardiac fibroblasts (Miller et al., 2011; W\u00f3jcik-Pszczo\u0142a et al., 2020) as well as cardiac fibrosis in a pressure overload mouse model (Gong et al., 2014), suggesting a potential mechano-responsiveness of this mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Miller et al., 2011 and W\u00f3jcik-Pszczo\u0142a et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "149c2e4e-7ffa-42cb-801f-a8762adb93ae",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C36",
+      "claim": "Valvular myofibroblasts exhibited earlier and greater induction of bioactive TGF\u03b21 and aSMA protein levels when subjected to combined tension/TGF\u03b21 compared to either stimulus alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is consistent with experiments involving valvular myofibroblasts, which exhibited earlier and greater induction of bioactive TGF\u03b21 and aSMA protein levels when subjected to combined tension/TGF\u03b21 compared to either stimulus alone (Merryman et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Merryman et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "990ab0a5-d531-4aa4-ac9c-fec376e0ea25",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C37",
+      "claim": "In BAMBI-/- mice, pressure overload worsened fibrosis compared to wild-type mice in a TGF\u03b21-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In BAMBI-/- mice, pressure overload worsened fibrosis compared to wild-type mice in a TGF\u03b21-dependent manner, suggesting that this negative regulation is dependent on both mechanical stress and TGF\u03b21 stimulation (Villar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Villar et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "e44ed34e-5e5a-4ba9-ae82-ec2e4f557787",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C38",
+      "claim": "IL1 has been shown to reverse the myofibroblast phenotype in valvular interstitial cells with culture on stiff substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "IL1 has additionally been shown to reverse the myofibroblast phenotype in valvular interstitial cells with culture on stiff substrates (Aguado et al., 2019), further suggesting that context-dependent regulation by IL1 may be a determining factor of fibroblast phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Aguado et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "c0bb80b7-f9e6-4ad4-b321-1bd2a66c8cac",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C39",
+      "claim": "Inhibition of NOX2 and NOX4 in AngII-infusion mouse models has been shown to attenuate interstitial collagen deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of NOX2 and NOX4 in AngII-infusion mouse models has additionally been shown to attenuate interstitial collagen deposition, further implicating NOX/ROS signaling as a central influencer of cardiac fibrosis (Johar et al., 2006; Zhao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Johar et al., 2006 and Zhao et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "b8777568-3072-4c3f-bf31-79fa96490287",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C40",
+      "claim": "Studies inhibiting known mediators of excessive fibrosis such as TGF\u03b21, osteopontin, and TIMP3 have shown increased risk of left ventricular thinning and cardiac rupture.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies inhibiting known mediators of excessive fibrosis such as TGF\u03b21, osteopontin, and TIMP3 have shown increased risk of left ventricular thinning and cardiac rupture, early complications associated with impaired scar formation at the infarct zone (Hammoud et al., 2011; Ikeuchi et al., 2004; Trueblood et al., 2001) \u2013 an indication that therapies designed to inhibit global fibrosis are not sufficient to promote healthy scar formation where it is needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hammoud et al., 2011, Ikeuchi et al., 2004, and Trueblood et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "78b1b9c3-ea01-463a-baea-714f4145b73c",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C41",
+      "claim": "The model was implemented as logic-based ODEs in which activity levels of all nodes were modeled as a system of Hill equations.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described (Tan et al., 2017; Zeigler et al., 2016), the final network was implemented as logic-based ODEs in which activity levels of all nodes were modeled as a system of Hill equations, and all activity levels and input stimuli were represented as normalized values between 0 and 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methodology used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "4e17d79d-604f-49ef-9c61-ff3b5af580af",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C42",
+      "claim": "A curated body of experimental literature kept separate from model construction was used for validation.",
+      "claim_type": "EXPLICIT",
+      "source": "A curated body of experimental literature kept separate from model construction was used for validation, and most studies were additionally kept separate from each other in terms of authorship, with only 4 of 47 studies containing repeat authors from a single group and 2 of 47 studies containing a repeat author from a separate group, accounting for 10.2% and 1.7% of the total validation set for each group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the validation methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "063241d8-3958-41f0-8c7f-2a7c6c7f24fd",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C43",
+      "claim": "Because studies used for validation conducted in vitro experiments on tissue culture plastic, a tension input weight of 0.4 (40% of maximum stimulation) was used for all validation simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because studies used for validation conducted in vitro experiments on tissue culture plastic, a tension input weight of 0.4 (40% of maximum stimulation) was used for all validation simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological choice based on experimental conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "be930990-f145-4133-bebd-71390af52535",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C46",
+      "claim": "Primary human ventricular cardiac fibroblasts were purchased from Lonza (#CC-2904).",
+      "claim_type": "EXPLICIT",
+      "source": "Primary human ventricular cardiac fibroblasts were purchased (Lonza #CC-2904) and cultured according to manufacturer's protocols with manufacturer-supplied growth medium (FGM-3 with 10% fetal bovine serum, fibroblast growth factor B, GA-1000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental materials used in the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "c22916ff-3a03-4ca1-9fc0-2561ad9959a1",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C47",
+      "claim": "Variable stiffness plates (8 kPa vs. 64 kPa CytoSoft Imaging 24-well plates) were purchased from Advanced Biomatrix.",
+      "claim_type": "EXPLICIT",
+      "source": "For testing drug effects under low mechanical stimulation vs. high mechanical stimulation, variable stiffness plates were purchased (8 kPa vs. 64 kPa CytoSoft Imaging 24-well plates, Advanced Biomatrix) and coated with collagen I according to manufacturer's protocols (PureCol, Advanced Biomatrix).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental materials used in the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "cba28683-560a-4fc0-b4a8-ab271bb7ddd2",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C48",
+      "claim": "Fibroblasts at passages 4\u20136 were seeded on collagen-coated plates at 25,000 cells per well.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibroblasts at passages 4\u20136 were seeded on collagen-coated plates at 25,000 cells per well, cultured in normal growth medium for 24 hr at 37\u00b0C and 5% CO2, then treated with one of seven media conditions listed in Table 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "3e4e8e63-09f2-405e-af5c-b3a5595982f2",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C49",
+      "claim": "After 72 hr of incubation with treatment media, cells were washed with PBS and stained for collagen I.",
+      "claim_type": "EXPLICIT",
+      "source": "After 72 hr of incubation with treatment media, cells were washed with PBS and stained for collagen I (Fisher #PA5-95137 primary antibody, Fisher #A-11012 Texas Red secondary antibody) and nuclei (DAPI), then imaged at 20\u00d7 magnification with an EVOS FL-Auto inverted microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "ae2707a5-86f4-4e15-aef1-600c85430448",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "claim_id": "C50",
+      "claim": "A total of 210 images were taken, accounting for seven media conditions \u00d7 two stiffness conditions \u00d7 three biological replicates/condition \u00d7 five technical replicates/biological replicate.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 210 images were taken, accounting for seven media conditions \u00d7 two stiffness conditions \u00d7 three biological replicates/condition \u00d7 five technical replicates/biological replicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design used in the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5a311e4a-23c1-4a58-8df6-c37623170718",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and validated a computational model of cardiac fibroblast mechanotransduction consisting of 109 nodes and 174 reactions. The model correctly predicted qualitative changes in protein secretion in 81.8% (63/77) of simulations and activation of signaling intermediates in 80.5% (33/41) of simulations when compared to independent experimental studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 and C41-C43 collectively demonstrate successful model development and validation. The model structure is clearly defined (C10, C11, C12), validation methodology is rigorous with independent literature sources (C42), and prediction accuracy exceeds 80% for both outputs and intermediates (C13, C14). The validation approach using separate literature and appropriate tension parameters (C43) strengthens confidence in the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "7ee7237a-8975-433a-af5c-da4c87d5ba27",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model predicts extensive mechano-chemo interactions where mechanical tension amplifies, dampens, or reverses fibroblast responses to biochemical stimuli. At moderate tension levels (0.5), 56.7% of node AUCs were altered, while at high tension (0.9), 60.4% were altered. Moderate tension primarily amplified responses (51.8% of nodes), while high tension dampened responses (56.4% of nodes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 provide comprehensive computational evidence for mechano-chemo interactions with quantitative metrics (C17, C18) and mechanistic explanations (C21, C22). The analysis includes statistical validation (Table 1 referenced in text) and specific examples with mechanistic basis (C21, C22, C23). The 5% threshold for defining interactions is justified by prior work, though the biological significance of this computational threshold could be questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "81078bed-e6a4-4e54-bbcd-bf49fe6f5cb7",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Network perturbation analysis revealed tension-dependent influential mechanisms. At low tension, knockdowns produced minimal effects. At medium tension, AT1R knockdown showed broad inhibition (35.9% \u00b1 5.4% reduction). At high tension, NOX, ROS, AP1, and JNK emerged as top influencers, mediating 80.6% \u00b1 4.3% reduction in MAPK pathways and 30.9% \u00b1 8.9% reduction in procollagen expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 demonstrate systematic perturbation analysis across tension conditions with quantitative results. The findings are internally consistent and supported by computational data in Figure 4. However, these are purely computational predictions without experimental validation, which limits confidence in the biological relevance of the specific quantitative values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "7e05c9da-2b7d-46fb-ab4c-1b7f6b73005d",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model successfully predicted effects of current post-MI therapeutics (ARB and ARB-NEPi combinations) on fibroblast behavior, matching experimental findings from von Lueder et al. 2015 and Burke et al. 2019. The model confirmed synergistic inhibition of \u03b1SMA, collagen I, and periostin by ARB-NEPi combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 demonstrate successful validation against independent experimental studies of clinically relevant drugs. The model predictions qualitatively match published experimental results (Figure 5A-B), providing evidence that the model captures relevant biology. However, the validation is qualitative rather than quantitative, and parameter choices for simulating drug effects (Table 2) involve assumptions that could affect predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "e5c6d59c-390b-49a8-90cc-9fa00b82b748",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A computational screen of 23,544 combinatory drug perturbations identified 13 mechano-adaptive drug combinations that adapt matrix expression to regional tension. These primarily targeted IL6 and Akt/mTOR pathways (8 of 13 treatments). Experimental validation of six combinations showed four had statistically significant mechano-adaptive effects on collagen content (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 present a major finding with both computational predictions and experimental validation. The computational screen is comprehensive (C29, C30), identifies specific pathways (C32), and importantly includes experimental validation (C33) showing 4/6 predictions were confirmed. The experimental validation using human cardiac fibroblasts on variable stiffness substrates (C46-C50) provides strong support, though the 67% validation rate (4/6) suggests some limitations in predictive accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "9b3eb0be-eee1-4da2-b6af-a5feff69697f",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The introduction establishes the clinical context and biological background for cardiac fibrosis post-MI, including epidemiology, current therapeutics, the role of fibroblasts, and the importance of both biochemical and biomechanical factors in regulating fibroblast behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide background context supported by appropriate citations to prior literature. These claims establish the rationale for the study but do not present new findings. All claims are properly attributed to cited sources (Benjamin 2019, Shah et al. 2017, Ponikowski et al. 2016, etc.).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "3dbd84bd-0423-4481-a9da-f902f0befa62",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within prior experimental literature, citing evidence for mechano-chemo crosstalk mechanisms including CREB activation effects, TGF\u03b21 synergy with tension, IL1 context-dependent regulation, NOX/ROS pathway importance, and risks of global anti-fibrotic therapies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40 appropriately cite and interpret prior experimental literature to support the model predictions. These claims provide important context but represent interpretation of existing literature rather than new findings. All claims are properly attributed to cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    },
+    {
+      "id": "78b52cc4-501e-45d2-8806-cd64ecaef2c0",
+      "content_id": "33d5af71-8c22-4f79-a47a-f904e0a8e235",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The experimental validation used primary human ventricular cardiac fibroblasts cultured on variable stiffness plates (8 kPa vs 64 kPa) with seven treatment conditions, three biological replicates, and five technical replicates per condition, totaling 210 images analyzed for collagen content.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 describe the experimental methods used for validation. The experimental design is appropriate with biological and technical replicates (C50), variable stiffness substrates to test mechanical effects (C47), and primary human cells (C46). The methods are clearly described and support the validation results in C33.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:49:07.988097Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "81cb5b2e-0673-4378-979a-b17efd22a8d4",
+      "result_id": "5a311e4a-23c1-4a58-8df6-c37623170718"
+    },
+    {
+      "claim_id": "17ac1f70-7433-488f-9815-5810d0206f1c",
+      "result_id": "5a311e4a-23c1-4a58-8df6-c37623170718"
+    },
+    {
+      "claim_id": "62c45bad-156d-4910-bd23-220f01b3ab63",
+      "result_id": "5a311e4a-23c1-4a58-8df6-c37623170718"
+    },
+    {
+      "claim_id": "f68ae6ee-dbda-4083-81c5-5f3e6a4e0803",
+      "result_id": "5a311e4a-23c1-4a58-8df6-c37623170718"
+    },
+    {
+      "claim_id": "152d7233-c877-4a5f-837a-5648ad553423",
+      "result_id": "5a311e4a-23c1-4a58-8df6-c37623170718"
+    },
+    {
+      "claim_id": "8c992ec4-c1ee-45d4-9637-01441e86d78a",
+      "result_id": "5a311e4a-23c1-4a58-8df6-c37623170718"
+    },
+    {
+      "claim_id": "78b1b9c3-ea01-463a-baea-714f4145b73c",
+      "result_id": "5a311e4a-23c1-4a58-8df6-c37623170718"
+    },
+    {
+      "claim_id": "4e17d79d-604f-49ef-9c61-ff3b5af580af",
+      "result_id": "5a311e4a-23c1-4a58-8df6-c37623170718"
+    },
+    {
+      "claim_id": "063241d8-3958-41f0-8c7f-2a7c6c7f24fd",
+      "result_id": "5a311e4a-23c1-4a58-8df6-c37623170718"
+    },
+    {
+      "claim_id": "833b6df7-ce8a-4bb5-bde1-53d9fe0f7342",
+      "result_id": "7ee7237a-8975-433a-af5c-da4c87d5ba27"
+    },
+    {
+      "claim_id": "b7c6094a-d927-4fdd-a077-4e04938cf4bb",
+      "result_id": "7ee7237a-8975-433a-af5c-da4c87d5ba27"
+    },
+    {
+      "claim_id": "9a5b3551-9240-495e-9afe-f99a660ce5d1",
+      "result_id": "7ee7237a-8975-433a-af5c-da4c87d5ba27"
+    },
+    {
+      "claim_id": "da87ef8d-3cad-4166-8e2a-4a7a45ec18ce",
+      "result_id": "7ee7237a-8975-433a-af5c-da4c87d5ba27"
+    },
+    {
+      "claim_id": "404a65fb-5bc4-42a4-82d2-6ca5ad56c3cd",
+      "result_id": "7ee7237a-8975-433a-af5c-da4c87d5ba27"
+    },
+    {
+      "claim_id": "56fd7bae-cbcf-45c9-a0ab-958555cf048e",
+      "result_id": "7ee7237a-8975-433a-af5c-da4c87d5ba27"
+    },
+    {
+      "claim_id": "cf25e5b2-c781-45a4-9d0a-b3ae970748a6",
+      "result_id": "7ee7237a-8975-433a-af5c-da4c87d5ba27"
+    },
+    {
+      "claim_id": "2a11da9f-6063-419e-b25a-b7b58359daf2",
+      "result_id": "7ee7237a-8975-433a-af5c-da4c87d5ba27"
+    },
+    {
+      "claim_id": "b9862854-5eb2-460f-854c-0325d33c670a",
+      "result_id": "81078bed-e6a4-4e54-bbcd-bf49fe6f5cb7"
+    },
+    {
+      "claim_id": "55bcd128-878b-48a3-a6dd-9a2722d46df9",
+      "result_id": "81078bed-e6a4-4e54-bbcd-bf49fe6f5cb7"
+    },
+    {
+      "claim_id": "cd4f8ab9-8155-44c2-85c5-747aa6462f21",
+      "result_id": "81078bed-e6a4-4e54-bbcd-bf49fe6f5cb7"
+    },
+    {
+      "claim_id": "d325b0c4-1952-4c94-850e-c38a1a15106c",
+      "result_id": "7e05c9da-2b7d-46fb-ab4c-1b7f6b73005d"
+    },
+    {
+      "claim_id": "c56a71a9-94df-4999-ac35-47928d80c265",
+      "result_id": "7e05c9da-2b7d-46fb-ab4c-1b7f6b73005d"
+    },
+    {
+      "claim_id": "3154b3ad-f856-4a23-b92c-8b3aaeea691e",
+      "result_id": "e5c6d59c-390b-49a8-90cc-9fa00b82b748"
+    },
+    {
+      "claim_id": "a61f18e4-8a10-4d46-8661-9d92d7f56f69",
+      "result_id": "e5c6d59c-390b-49a8-90cc-9fa00b82b748"
+    },
+    {
+      "claim_id": "139cf5da-9e08-4786-bcf8-71bf9755c118",
+      "result_id": "e5c6d59c-390b-49a8-90cc-9fa00b82b748"
+    },
+    {
+      "claim_id": "4cef468c-b9d1-42b1-a4bb-fa74386ba621",
+      "result_id": "e5c6d59c-390b-49a8-90cc-9fa00b82b748"
+    },
+    {
+      "claim_id": "a74b2986-4483-4cf9-9271-a1c22462fd8a",
+      "result_id": "e5c6d59c-390b-49a8-90cc-9fa00b82b748"
+    },
+    {
+      "claim_id": "f6d1d742-cd0a-4fd2-80a1-7a75a673b8fe",
+      "result_id": "9b3eb0be-eee1-4da2-b6af-a5feff69697f"
+    },
+    {
+      "claim_id": "5a2d8b83-02b0-45bf-8b22-421d1678cdf2",
+      "result_id": "9b3eb0be-eee1-4da2-b6af-a5feff69697f"
+    },
+    {
+      "claim_id": "bd68b989-9d91-4681-8885-893b4d4ee3d4",
+      "result_id": "9b3eb0be-eee1-4da2-b6af-a5feff69697f"
+    },
+    {
+      "claim_id": "804cc89f-0baa-49b3-9c94-e7deb2cb3503",
+      "result_id": "9b3eb0be-eee1-4da2-b6af-a5feff69697f"
+    },
+    {
+      "claim_id": "73f03092-53ce-4699-b3b5-1793f1adcbad",
+      "result_id": "9b3eb0be-eee1-4da2-b6af-a5feff69697f"
+    },
+    {
+      "claim_id": "f600bb70-ba68-4114-af27-56b7206fe7c4",
+      "result_id": "9b3eb0be-eee1-4da2-b6af-a5feff69697f"
+    },
+    {
+      "claim_id": "fbb5de90-b93d-4bd0-b8aa-fb372b176026",
+      "result_id": "9b3eb0be-eee1-4da2-b6af-a5feff69697f"
+    },
+    {
+      "claim_id": "e3f3639c-b2b6-4bab-8489-eb90b23d07a3",
+      "result_id": "9b3eb0be-eee1-4da2-b6af-a5feff69697f"
+    },
+    {
+      "claim_id": "d000debe-6ee1-4c62-a62e-471c6d441ca4",
+      "result_id": "9b3eb0be-eee1-4da2-b6af-a5feff69697f"
+    },
+    {
+      "claim_id": "a40794f0-06d6-4b9e-9c81-e847c47e1049",
+      "result_id": "3dbd84bd-0423-4481-a9da-f902f0befa62"
+    },
+    {
+      "claim_id": "5b8e1800-e43b-43fe-a100-c441f604c8e4",
+      "result_id": "3dbd84bd-0423-4481-a9da-f902f0befa62"
+    },
+    {
+      "claim_id": "149c2e4e-7ffa-42cb-801f-a8762adb93ae",
+      "result_id": "3dbd84bd-0423-4481-a9da-f902f0befa62"
+    },
+    {
+      "claim_id": "990ab0a5-d531-4aa4-ac9c-fec376e0ea25",
+      "result_id": "3dbd84bd-0423-4481-a9da-f902f0befa62"
+    },
+    {
+      "claim_id": "e44ed34e-5e5a-4ba9-ae82-ec2e4f557787",
+      "result_id": "3dbd84bd-0423-4481-a9da-f902f0befa62"
+    },
+    {
+      "claim_id": "c0bb80b7-f9e6-4ad4-b321-1bd2a66c8cac",
+      "result_id": "3dbd84bd-0423-4481-a9da-f902f0befa62"
+    },
+    {
+      "claim_id": "b8777568-3072-4c3f-bf31-79fa96490287",
+      "result_id": "3dbd84bd-0423-4481-a9da-f902f0befa62"
+    },
+    {
+      "claim_id": "be930990-f145-4133-bebd-71390af52535",
+      "result_id": "78b52cc4-501e-45d2-8806-cd64ecaef2c0"
+    },
+    {
+      "claim_id": "c22916ff-3a03-4ca1-9fc0-2561ad9959a1",
+      "result_id": "78b52cc4-501e-45d2-8806-cd64ecaef2c0"
+    },
+    {
+      "claim_id": "cba28683-560a-4fc0-b4a8-ab271bb7ddd2",
+      "result_id": "78b52cc4-501e-45d2-8806-cd64ecaef2c0"
+    },
+    {
+      "claim_id": "3e4e8e63-09f2-405e-af5c-b3a5595982f2",
+      "result_id": "78b52cc4-501e-45d2-8806-cd64ecaef2c0"
+    },
+    {
+      "claim_id": "ae2707a5-86f4-4e15-aef1-600c85430448",
+      "result_id": "78b52cc4-501e-45d2-8806-cd64ecaef2c0"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The three PAMs tested (rac-BHFF, CGP7930, and GS39783) exhibit different functional properties: rac-BHFF and CGP7930 show strong intrinsic agonist activity (with rac-BHFF reaching >60% of maximal GABA effect), while GS39783 acts more like a pure PAM with weaker agonist activity detectable only in IP1 accumulation assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are well-supported by experimental data from multiple functional assays (calcium release, IP1 accumulation, and BRET) shown in Figure 2. The differential activity profiles are consistently demonstrated across assays, with appropriate controls and replicates. The inference that IP1 is more sensitive for slow binders (C46) is reasonable given the assay characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Both GB1 and GB2 transmembrane domains are required and sufficient for PAM agonist activity. The presence of both TMDs is sufficient even when extracellular domains are deleted, but replacement of GB1 TMD with GB2 TMD or only GB1-TM7 abolishes PAM agonist activity despite maintaining GABA responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are strongly supported by systematic domain deletion and replacement experiments shown in Figure 3 and supplements. The experiments include appropriate controls (GABA responsiveness, surface expression), multiple PAMs, and multiple assays (calcium, IP1, BRET). The conclusion that both specific TMDs are required is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Site-directed mutagenesis of the TM6 interface identifies specific residues in both GB1 (K792, Y810) and GB2 (M694, Y697, N698) that are critical for rac-BHFF potency and efficacy. These mutations impair PAM activity without affecting receptor expression or GABA responsiveness, confirming the TM6 interface as the binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are well-supported by mutagenesis data in Figure 4 with appropriate controls for surface expression (C58) and receptor function (C59). The data are consistent with structural studies (C62), though the inference relies on correlation between functional and structural data. Multiple independent measurements strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The three PAMs exhibit different binding modes at the TM6 interface: CGP7930 is primarily affected by GB2 mutations, while rac-BHFF and GS39783 are affected by mutations in both GB1 and GB2, suggesting CGP7930 binding involves mostly GB2 while the other PAMs engage both subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 and C83-C87 are supported by differential mutagenesis effects shown in Figure 4E. The inference about binding modes (C67-C68, C83, C85, C87) is reasonable given the data, though direct binding studies would strengthen the conclusion. GS39783's greater sensitivity (C65) could reflect either binding differences or lower efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TM6 mutations differentially affect constitutive activity: most GB1 mutants show reduced constitutive activity compared to wild-type, while GB2 mutants maintain similar constitutive activity. The triple mutant 6.43MYN6.45-AAA in GB2 shows constitutive activity that cannot be blocked by antagonist, suggesting impaired allosteric coupling between TMDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by constitutive activity measurements in Figure 4F and antagonist blocking experiments in Figure 4\u2014figure supplement 1B. The data demonstrate differential roles of GB1 vs GB2 TM6 in basal activity. The inference about impaired coupling (C76) is reasonable given the antagonist insensitivity, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Three residues in the deep region of GB2 TMD (G2.46, A3.43, T7.43) are critical for constitutive activity of GABAB. These residues are highly conserved in GB2 subunits across evolution, and mutations in this region (particularly in mutants M14 and M15) strongly impair constitutive activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 and C121-C123 are well-supported by mutagenesis data in Figure 5D and conservation analysis in Figure 5\u2014figure supplement 5. Multiple assays (IP1, BRET) confirm the effect. The inference about functional importance from conservation (C94) is reasonable. Surface expression controls rule out expression artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C107",
+      "C108",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The deep region of GB2 TMD is required for PAM agonist activity but not for allosteric modulation. Mutants M14 and M15 lose agonist activity but retain the ability to potentiate GABA responses, indicating this region serves as a microswitch for agonism without being involved in direct PAM binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C107-C108, and C124-C126 are strongly supported by data in Figure 5C and Figure 5\u2014figure supplement 4A showing differential effects on agonist vs. allosteric activity. The conclusion that this region is not involved in direct binding (C126) is well-supported by retained potentiation activity. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The maximal agonist activity of rac-BHFF correlates with constitutive activity of GABAB mutants, demonstrating a link between allosteric agonism and constitutive activity. A mathematical model predicts that PAMs cannot efficiently activate receptors with very low constitutive activity, consistent with loss of activity on mutants M14 and M15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by correlation analysis in Figure 5E and mathematical modeling in Figure 5\u2014figure supplement 4C-D. The correlation is clearly demonstrated, and the model predictions match experimental observations. However, correlation does not prove causation, and the simplified model makes assumptions that may not fully capture receptor complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The deep region in GB2 TMD corresponds to the sodium ion binding site in class A GPCRs (residues D2.50, S3.39, N7.49) that controls receptor basal state. However, in GABAB, ion binding is likely excluded due to hydrophobic residues, and the pocket is no longer accessible in the active state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C96-C98 are supported by structural comparison shown in Figure 5G and cited references about Na+ binding in class A GPCRs. The structural correspondence is clear, though the inference about excluded ion binding (C98) is based on sequence analysis rather than direct experimental evidence. The functional analogy is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Testing equivalent mutations in mGluR5 shows that mutation A812F (position 7.43) increases constitutive activity, suggesting the deep region also controls conformational landscape in mGlu5. However, effects are not predictable as different mutations produce variable results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by mGluR5 data in Figure 5H showing increased constitutive activity for one mutation but not others. This extends the findings beyond GABAB, though the limited number of mutations tested and variable results (C113) indicate the mechanism may be more complex than in GABAB.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "A human genetic mutation in GB2 (A567T) associated with Rett-like phenotype is located in the deep region and increases constitutive activity, while the corresponding rat mutation (A566F) decreases it, suggesting that different residues at position 3.43 can tune constitutive activity up or down.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 are supported by data in Figure 5F showing opposite effects of Thr vs. Phe substitutions at position 3.43. This provides disease relevance and demonstrates position-specific effects. However, the rat and human mutations are not identical substitutions, limiting direct comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "A mechanistic model proposes that GB1 TMD provides a binding site at the TM6 interface, which is adopted by a fraction of receptors even without agonist. PAM binding at this interface stabilizes the active state, explaining agonist activity. In the presence of orthosteric agonist, the binding site is favored, facilitating both agonist and allosteric activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C104 present a mechanistic model inferred from the experimental data and analogy to mGlu2 dynamics (C100). While the model is consistent with the data, it involves speculation about receptor conformational dynamics that are not directly measured. The model is plausible but would benefit from additional biophysical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C10"
+    ],
+    "result": "PAMs bind at the interface of transmembrane domains of the GABAB heterodimer, specifically at the active interface between both TMDs involving TM6 residues of both subunits. This demonstrates the possibility of developing allosteric compounds that specifically modulate GPCR dimer activity by acting at the transmembrane interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 summarize the main findings supported by extensive mutagenesis data. Claim C10 is a forward-looking conclusion that is reasonable given the demonstrated proof-of-concept, though it remains speculative regarding future drug development. The core finding about interface binding is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The TM6 binding pocket for PAMs in GABAB forms only in the active state and is relatively tight (729 \u00c5\u00b3), accommodating only small compounds like GS39783 (268 \u00c5\u00b3) and rac-BHFF (260 \u00c5\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by structural analysis and volume calculations described in Methods. The pocket volumes are quantitatively determined from crystal structures. The inference that the pocket forms only in the active state (C79) is based on structural studies showing PAM binding only in active conformations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The binding mode of PAMs in GABAB is novel within class C GPCRs, where other allosteric modulators bind in the ancestral TMD pocket. In GABAB, phospholipids occupy the ancestral pocket and may stabilize the inactive conformation, potentially precluding PAM binding at this site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by comparison with cited structural studies of other class C GPCRs and phospholipid binding in GABAB structures. The novelty of the interface binding mode is well-established. The speculation about phospholipids precluding PAM binding (C90-C91) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The position of TM6s stabilized by bound PAM is consistent with the absence of TM6 movement during GABAB activation, which differs from other GPCR classes (A, B, F) where large TM6 movement occurs during activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by cited structural studies showing no TM6 movement in GABAB and comparison with other GPCR classes. This structural insight helps explain how PAMs can stabilize the active state without requiring the canonical TM6 movement seen in other GPCRs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background claims establishing that GPCRs are important drug targets, form dimers with allosteric cross-talk in native tissues, and that modulating dimer activity could offer new therapeutic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C11-C18 represent established knowledge in the GPCR field, supported by cited references. These provide appropriate context for the study but are not novel findings. The claims are well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background on approaches to control GPCR dimer activity, including bivalent ligands and interface-binding modulators. Previous structural studies identified PAMs binding at the GABAB TM interface, representing the first example of this binding mode in GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 provide literature context supported by appropriate citations. The prior structural identification of interface-binding PAMs in GABAB (C23) is well-documented, and the novelty within class C GPCRs (C25-C26) is accurately stated based on cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background on GABAB receptor biology, therapeutic relevance, disease associations, activation mechanism, and PAM pharmacology. The molecular basis of PAM agonist activity was unknown prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C40 provide appropriate background supported by citations. The gap in knowledge about PAM agonist activity (C39-C40) correctly identifies the motivation for the current study. All background claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C47",
+      "C54",
+      "C55",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C127"
+    ],
+    "result": "Background on prior findings from the authors' group and others regarding TMD cooperativity, PAM binding sites from structural studies, TM6 role in GPCR activation, and GABAB constitutive activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C54-C55, C69-C72, and C127 cite prior work that provides foundation for the current study. These are appropriately referenced and accurately represent the cited literature. The claims establish necessary context for interpreting the new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C109",
+      "C110"
+    ],
+    "result": "The importance of the deep region residues agrees with their interaction with phospholipids in structures. A TM6 active interface is observed in mGlu and CaSR dimers, but whether a similar activation mechanism is conserved in mGlu-like class C GPCRs remains to be established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C109 are supported by cited structural studies. Claim C110 appropriately identifies an open question for future research. The structural similarities suggest conservation is possible, but the authors correctly note this requires further investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54"
+    ],
+    "result": "T3 neurons respond omnidirectionally to moving bars with small receptive fields and show calcium activity that is inversely proportional to bar speed. T3 neurons exhibit retinotopic activation patterns, respond to both ON and OFF bars with modest preference for OFF transitions, have receptive fields confined to ~9\u00b0 bins, and show similar sensitivity to leftward, rightward, upward, and downward bar motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50, C53-C54 are directly supported by calcium imaging data presented in Figure 1 and associated supplementary figures. The physiological characterization includes receptive field mapping, directional selectivity measurements, and speed-dependent response quantification with appropriate statistical analysis. The omnidirectional responses and speed tuning are key findings that distinguish T3 from directionally selective T4/T5 neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "T3 neurons are tuned to pattern speed rather than temporal frequency, showing selectivity for speeds between 100-200\u00b0/s regardless of spatial wavelength. T3 responses to gratings are nonselective for motion direction and respond similarly to different spatial wavelengths moving at the same speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C64 are supported by systematic testing of T3 responses to gratings of varying spatial and temporal frequencies (Figure 2). The speed-tuning analysis includes Bayesian model comparison showing higher probability for speed-tuned versus temporal frequency-tuned models. This distinguishes T3 from temporal frequency-tuned T4/T5 neurons and is critical for the proposed integrate-and-fire model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C78",
+      "C81"
+    ],
+    "result": "Hyperpolarizing T3 neurons via Kir2.1 expression significantly reduces counter-directional orientation responses to motion-defined bars in rigidly tethered flies, while T4/T5 silencing leaves counter-directional responses intact but reduces syn-directional tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70, C78, C81 are supported by behavioral data from rigidly tethered flies (Figure 3) with appropriate genetic controls. The dissociation between T3 and T4/T5 silencing effects on different components of the compound steering response is statistically significant and consistent across multiple stimulus conditions. The specificity of the T3 driver line is confirmed by immunostaining showing no off-target expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C87",
+      "C90",
+      "C92",
+      "C156"
+    ],
+    "result": "Hyperpolarizing T3 neurons reduces the frequency of bar tracking saccades in magnetically tethered flies. T3 silenced flies show reduced angular displacement, remain concentrated at initial heading, and show compromised bar tracking performance compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C84, C87, C90, C92, C156 are supported by quantitative behavioral analysis of magnetically tethered flies (Figure 4) including saccade frequency, performance index, and angular displacement measurements. The effects are specific to bar tracking and not observed for large-field optomotor responses. Statistical comparisons using linear mixed models show significant differences between T3 silenced flies and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C119",
+      "C121",
+      "C123"
+    ],
+    "result": "Optogenetic activation of T3 neurons via CsChrimson modulates bar tracking saccade frequency in a push-pull manner. During LED ON epochs, T3 activation reduces or eliminates bar tracking, while LED OFF epochs restore saccadic tracking. This effect is specific to T3 and not observed with T4/T5 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109, C111-C113, C119, C121, C123 are supported by optogenetic experiments (Figure 5) showing reversible, bidirectional control of saccade frequency. The push-pull dynamics are demonstrated across multiple ON/OFF cycles with appropriate controls. The specificity for bar tracking versus large-field responses is confirmed. However, the interpretation that sustained depolarization acts as a 'loss-of-function' perturbation rather than gain-of-function is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C129",
+      "C134",
+      "C135"
+    ],
+    "result": "T3 perturbation specifically affects bar tracking saccades but not large-field optomotor saccades, while T4/T5 perturbation affects both bar and large-field responses. Optogenetic activation of T3 does not significantly change large-field saccade frequency between ON and OFF epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129, C134-C135 are supported by experiments comparing bar versus large-field stimuli (Figure 6). The dissociation between T3 and T4/T5 effects across stimulus types is statistically significant and consistent with the proposed parallel pathway model. This provides strong evidence for functional specificity of T3 in bar tracking versus gaze stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C149",
+      "C150",
+      "C152",
+      "C153",
+      "C155"
+    ],
+    "result": "T3 calcium responses support a spatiotemporal integrate-and-fire model for triggering bar tracking saccades. The model proposes that calcium signals from retinotopic T3 neurons are temporally integrated by downstream neurons, with response amplitudes inversely proportional to bar speed enabling constant integrated retinal position error across speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C145, C149-C150, C152-C153, C155 present a computational model based on T3 physiology and prior behavioral findings. While the model is parsimonious and qualitatively consistent with observed speed-dependent calcium responses (C149), it remains largely theoretical. The model successfully simulates constant integrated retinal position error (C152), but lacks direct experimental validation of the proposed downstream integrator or the specific integration mechanism. The authors acknowledge the model is incomplete (C151, C196) and does not fully explain all behavioral dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C37",
+      "C154",
+      "C166",
+      "C182",
+      "C194",
+      "C197"
+    ],
+    "result": "Parallel neural pathways coordinate smooth gaze stabilization and saccadic bar tracking during flight. T4/T5 neurons control smooth optomotor responses, while T3 neurons control bar tracking saccades. T3 neurons function as small-field local detectors providing motion features to downstream partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C37, C154, C166, C182, C194, C197 represent the main conclusions synthesizing physiological and behavioral findings. The parallel pathway model is well-supported by the dissociation of T3 versus T4/T5 perturbation effects across multiple experimental paradigms. The characterization of T3 as local feature detectors (rather than strictly small object detectors) is supported by responses to bars and gratings. This represents a significant conceptual advance in understanding fly visual control systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "T4/T5 silenced flies show paradoxically normal or enhanced bar tracking performance despite reduced saccade frequency, with increased angular velocity, higher inter-saccadic gain, and extended pre-saccadic error angles. This is interpreted as flies being 'pushed around' by the bar due to inability to stabilize the visual panorama.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C97-C101 describe counterintuitive findings from T4/T5 silencing experiments (Figure 4). The behavioral measurements are well-documented, but the interpretation requires careful consideration. The authors provide a reasonable mechanistic explanation: impaired gaze stabilization prevents proper integration of bar error, leading to smooth tracking rather than saccadic pursuit. This interpretation is supported by large-field control experiments showing compromised stabilization in T4/T5 silenced flies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "T2a neurons, like T3, have small receptive fields and omnidirectional sensitivity, but show strong responses only to slow-moving luminance-defined bars and weak or no responses to motion-defined bars or large-field gratings at behaviorally relevant speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 characterize T2a neurons as a control comparison to T3 (Figure 1 supplement 2). The physiological characterization is thorough and demonstrates that despite some similarities in receptive field properties, T2a neurons have distinct speed and stimulus selectivity that makes them unlikely candidates for bar tracking behavior. This strengthens the case for T3 specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C76"
+    ],
+    "result": "The T3 split-Gal4 driver shows no off-target expression in brain or VNC. T3 silencing has no effect on behaviors driven by solid luminance-defined bars or closed-loop bar fixation, which depend on T4/T5 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C76 provide important controls demonstrating driver specificity and stimulus selectivity of T3 effects (Figure 3 supplements). The immunostaining confirms no off-target expression, and the behavioral specificity for motion-defined versus luminance-defined bars is consistent with the physiological properties of T3 neurons. These controls strengthen confidence in the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "T4/T5 silencing compromises large-field optomotor gaze stabilization, showing higher percentage of trials without stabilization, reduced positive performance index, and reduced inter-saccadic gain. T3 hyperpolarization does not affect large-field gaze stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 provide essential control experiments (Figure 4 supplement 3-4) demonstrating the expected effects of T4/T5 silencing on large-field responses and the specificity of T3 for bar tracking. These results are consistent with established knowledge about T4/T5 function and confirm the parallel pathway model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Flies expressing CsChrimson in T3 or T4/T5 without optogenetic activation show higher baseline saccade rates than controls, interpreted as subthreshold depolarization by the LED display enhancing responses to visual cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C138 describe an unexpected finding (Figure 6 supplement 3) where CsChrimson expression alone (without red light activation) enhances bar tracking. The interpretation that this results from subthreshold depolarization by the blue LED display is speculative and not directly tested. Alternative explanations (e.g., developmental compensation, expression artifacts) are not ruled out. This observation is interesting but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "T3 cells respond to large-field gratings, contrary to prior work. Methodological differences include use of maximum contrast broadband stimuli, unilateral presentation, and highly specific split-Gal4 driver in the current study versus low-contrast bilateral stimuli and standard Gal4 in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C177 address an apparent discrepancy with prior literature. The authors provide reasonable methodological explanations for the different findings and demonstrate that T3 neurons are not strictly object-selective but respond to various stimuli including large-field gratings under certain conditions. This refinement of T3 functional properties is important for understanding their role in visual processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C124",
+      "C125"
+    ],
+    "result": "Saccade amplitude is slightly reduced in both T3 and T4/T5 silenced flies. The control of saccade dynamics is likely modulated by both T3 and T4/T5 neurons as well as unidentified neurons, though effects on dynamics may be spurious stimulus artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102, C124-C125 describe weak effects on saccade dynamics (Figure 4 supplement 2, Figure 5 supplement 3). The authors appropriately note these effects are relatively weak and may be artifacts, given that saccade dynamics are stereotyped and not influenced by visual feedback once triggered. The speculation about involvement of unidentified neurons is reasonable but unsupported. These findings are inconclusive and require further investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1715 @@
+{
+  "submission": {
+    "id": "116e8286-7ae2-4756-b99d-cccf6496d622",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:20:26.207087Z",
+    "updated_at": "2025-12-03T19:20:26.207087Z"
+  },
+  "content": [
+    {
+      "id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "submission_id": "116e8286-7ae2-4756-b99d-cccf6496d622",
+      "content_type": "manuscript",
+      "content_text": "# Enteroendocrine cell lineages that differentially control feeding and gut motility\n\n## Authors\n\n- Marito Hayashi<sup>1</sup> ([ORCID: 0000-0002-9367-6389](https://orcid.org/0000-0002-9367-6389))\n- Judith A Kaye<sup>1</sup>\n- Ella R Douglas<sup>1</sup>\n- Narendra R Joshi<sup>1</sup> ([ORCID: 0000-0002-5030-389X](https://orcid.org/0000-0002-5030-389X))\n- Fiona M Gribble<sup>2</sup> ([ORCID: 0000-0002-4232-2898](https://orcid.org/0000-0002-4232-2898))\n- Frank Reimann<sup>2</sup> ([ORCID: 0000-0001-9399-6377](https://orcid.org/0000-0001-9399-6377))\n- Stephen D Liberles<sup>1</sup> ([ORCID: 0000-0002-2177-9741](https://orcid.org/0000-0002-2177-9741)) \u2020\n\n### Affiliations\n\n1. Department of Cell Biology, Howard Hughes Medical Institute, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n2. Wellcome Trust MRC Institute of Metabolic Science, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEnteroendocrine cells are specialized sensory cells of the gut-brain axis that are sparsely distributed along the intestinal epithelium. The functions of enteroendocrine cells have classically been inferred by the gut hormones they release. However, individual enteroendocrine cells typically produce multiple, sometimes apparently opposing, gut hormones in combination, and some gut hormones are also produced elsewhere in the body. Here, we developed approaches involving intersectional genetics to enable selective access to enteroendocrine cells in vivo in mice. We targeted FlpO expression to the endogenous Villin1 locus (in Vil1-p2a-FlpO knock-in mice) to restrict reporter expression to intestinal epithelium. Combined use of Cre and Flp alleles effectively targeted major transcriptome-defined enteroendocrine cell lineages that produce serotonin, glucagon-like peptide 1, cholecystokinin, somatostatin, or glucose-dependent insulinotropic polypeptide. Chemogenetic activation of different enteroendocrine cell types variably impacted feeding behavior and gut motility. Defining the physiological roles of different enteroendocrine cell types provides an essential framework for understanding sensory biology of the intestine.\n\n## Introduction\n\nThe gut-brain axis plays a critical role in animal physiology and behavior. Sensory pathways from the gut relay information about ingested nutrients, meal-induced tissue distension, osmolarity changes in the intestinal lumen, and cellular damage from toxins (Bai et al., 2019; Brookes et al., 2013; Prescott and Liberles, 2022; Richards et al., 2021; Williams et al., 2016). Responding neural circuits evoke sensations like satiety and nausea, coordinate digestion across organs, shift systemic metabolism and energy utilization, and provide positive and negative reinforcement signals that guide future consumption of safe, energy-rich foods (Andermann and Lowell, 2017; Sternson and Eiselt, 2017; Zimmerman and Knight, 2020). Moreover, manipulations of the gut-brain axis have been harnessed clinically through gut hormone receptor agonism or bariatric surgery to provide powerful therapeutic approaches for obesity and diabetes intervention (Richards et al., 2021; Seeley et al., 2015).\n\nEnteroendocrine cells are first-order chemosensory cells of the gut-brain axis and are sparsely distributed along the gastrointestinal tract (Gribble and Reimann, 2019). Like taste cells, enteroendocrine cells are epithelial cells with neuron-like features, as they are electrically excitable, release vesicles upon elevation of intracellular calcium, and form synaptic connections with second-order neurons through specialized extrusions called neuropods (Boh\u00f3rquez et al., 2015; Reimann et al., 2012). Single-cell RNA sequencing approaches revealed a diversity of enteroendocrine cell types that produce different gut hormones (Beumer et al., 2018; Gehart et al., 2019; Haber et al., 2017). Superimposing cell birthdate on the enteroendocrine cell atlas through an elegant genetically encoded fluorescent clock revealed five major enteroendocrine cell lineages defined by expression of either glucose-dependent insulinotropic polypeptide (GIP), ghrelin, serotonin (called enterochromaffin cells), somatostatin, or a combination of glucagon-like peptide 1 (GLP1), cholecystokinin (CCK), and/or neurotensin (Gehart et al., 2019).\n\nEnteroendocrine cell-derived gut hormones evoke a variety of physiological effects (Drucker, 2016). GLP1 and CCK are satiety hormones released following nutrient intake, ghrelin is an appetite-promoting hormone whose release is suppressed by nutrients, and serotonin can be released by non-nutritive signals like irritants, force, and catecholamines. Sugar-induced release of GIP and GLP1 causes the incretin effect which rapidly promotes insulin release and lowers blood glucose (Holst et al., 2009). CCK, serotonin, and other gut hormones additionally regulate a variety of digestive functions, including gut motility, gastric emptying, gastric acidification, absorption, gallbladder contraction, and exocrine pancreas secretion.\n\nThe functions of individual enteroendocrine cell types could in some cases be inferred by summing the actions of their expressed hormones. For example, chemogenetic activation of enteroendocrine cells in the distal colon which express insulin-like peptide 5 triggers a multipronged physiological response that includes appetite suppression through a peptide YY (PYY) receptor, improved glucose tolerance through GLP1, and defecation indirectly through the serotonin receptor HTR3A (Lewis et al., 2020). However, a challenge in generalizing this approach is that some enteroendocrine cells release hormones with apparently opposing functions (Gehart et al., 2019; Haber et al., 2017), and moreover, many gut hormones are also produced by other cell types in the body (Lee and Soltesz, 2011; Okaty et al., 2019). To overcome these challenges, we developed approaches involving intersectional genetics to obtain highly selective access to major transcriptome-defined enteroendocrine cell lineages. Chemogenetic activation of each of these enteroendocrine cell types produced variable effects on gut physiology and behavior. Obtaining a holistic model for enteroendocrine cell function provides a critical framework for understanding the neuronal and cellular logic underlying gut-brain communication.\n\n## Results and discussion\n\n### Selective access to enteroendocrine cells in vivo through intersectional genetics\n\nWe first sought to identify genetic tools that broadly and selectively mark enteroendocrine cells. Transcription factors such as Atoh1, Neurogenin3, and NeuroD1 are expressed in enteroendocrine cell progenitors and/or precursors and act in early stages of enteroendocrine cell development (Li et al., 2011). We obtained Atoh1-Cre (both knock-in and transgenic lines), Neurog3-Cre, and Neurod1-Cre mice and crossed them to mice containing a Cre-dependent tdTomato reporter (Rosa26CAG-lsl-tdTomato herein defined as lsl-tdTomato). Neurog3-Cre and Neurod1-Cre lines labeled a sparse population of intestinal epithelial cells characteristic of enteroendocrine cells, although the Neurog3-Cre line additionally labeled other cells in intestinal crypts and in occasional mice produced broad labeling of intestinal epithelium; neither Atoh1-Cre line tested displayed selective labeling of enteroendocrine cells (Figure 1\u2014figure supplement 1A; Schonhoff et al., 2004). Two-color analysis of tdTomato and gut hormone expression verified tdTomato localization in enteroendocrine cells of Neurod1-Cre; lsl-tdTomato mice, consistent with prior findings (Figure 1\u2014figure supplement 1B; Li et al., 2012). Single-cell RNA sequencing of tdTomato-positive cells obtained from these mice (see below) also verified selective enteroendocrine cell labeling.\n\nNeurod1-Cre mice provide broad, indelible, and selective marking of enteroendocrine cells within the intestine, but NeuroD1 is also expressed in a variety of other tissues, including the brain, retina, pancreas, peripheral neurons, and enteric neurons (Figure 1B and C, Figure 1\u2014figure supplement 1D and E; Cho and Tsai, 2004; Li et al., 2011). Knockout of NeuroD1 is lethal, causing severe deficits in neuron birth and survival, as well as in the development of pancreatic islets and enteroendocrine cells (Gao et al., 2009; Naya et al., 1997). We employed an intersectional genetic strategy of combining Cre and Flp recombinases to limit effector gene expression to enteroendocrine cells. Villin1 (Vil1) is expressed with high selectivity in the lower gastrointestinal tract (el Marjou et al., 2004; Maunoury et al., 1992), so we generated a knock-in mouse allele (Vil1-p2a-FlpO) that drives FlpO recombinase expression from the endogenous Vil1 locus. Vil1-p2a-FlpO mice displayed expression of a Flp-dependent Gfp allele in epithelial cells throughout the entire length of the intestine with striking specificity (Figure 1A, Figure 1\u2014figure supplement 1C). Reporter expression was not observed in most other tissues examined, including most brain regions, spinal cord, peripheral ganglia, and enteric neurons; rare GFP-expressing cells were noted in taste papillae, epiglottis, pancreas, liver, and thalamus (Figure 1C, Figure 1\u2014figure supplement 1C and D; H\u00f6fer and Drenckhahn, 1999; Madison et al., 2002; Rutlin et al., 2020). Combining Neurod1-Cre and Vil1-p2a-FlpO alleles (Neurod1INTER) yielded highly selective expression of an intersectional reporter gene encoding tdTomato (Rosa26CAG-lsl-fsf-tdTomato herein defined as inter-tdTomato) in enteroendocrine cells, with only occasional cells observed in pancreas, and no detectable expression in other cell types labeled by either allele alone (Figure 1C, Figure 1\u2014figure supplement 1D and E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig1-v2.jpg)\n\n**Figure 1.:** (A) Bright-field microscopy and native GFP fluorescence microscopy of intestinal tissue from Vil1-p2a-FlpO; fsf-Gfp mice (left) and fsf-Gfp mice (right). Scale bars: 5 mm. (B) Cartoon depicting intersectional genetic strategy to access enteroendocrine cells. (C) Native reporter fluorescence in cryosections (20 \u03bcm, except 50 \u03bcm for cortex and dorsal root ganglion) or wholemounts (tongue) of fixed tissues indicated from Neurod1-Cre; lsl-tdTomato mice (left), Vil1-p2a-FlpO; fsf-Gfp mice (middle), and Neurod1INTER; inter-tdTomato mice (right). Scale bars: 100 \u03bcm for all except 500 \u03bcm for tongue. Intestine sections from duodenum (middle) or jejunum (left, right). See Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Native tdTomato fluorescence in fixed intestinal cryosections (20 \u03bcm) of mouse lines indicated. (B) Two-color analysis examining expression of tdTomato (native fluorescence, magenta) and hormones (immunochemistry, green) in fixed intestinal cryosections (20 \u03bcm) of mouse lines indicated, SST: somatostatin. (C) Native GFP fluorescence in fixed cryosections of tissues (20 \u03bcm), spinal cord (50 \u03bcm) and brain regions indicated (50 \u03bcm) in Vil1-p2a-FlpO; fsf-Gfp mice. (D) Native reporter fluorescence in fixed wholemount tissue preparations from mouse lines indicated. Scale bars: 500 \u03bcm. (E) Native tdTomato fluorescence in fixed tissue cryosections (20 \u03bcm for stomach, 50 \u03bcm for cortex, spinal cord) from mouse lines indicated. Scale bars: 100 \u03bcm.\n\n### Charting enteroendocrine cell diversity and gene expression\n\nOur general goal was to use intersectional genetics to access subtypes of enteroendocrine cells that express different gut hormones. We first used single-cell RNA sequencing approaches to measure the extent of enteroendocrine cell diversity, compare findings with existing enteroendocrine cell atlases, and establish a foundation for genetic experiments. Enteroendocrine cells represent <1% of gut epithelial cells, so we used genetic markers for enrichment. NeuroD1 is expressed early in the enteroendocrine cell lineage, and we observed by two-color expression analysis that Neurod1-Cre mice target at least several enteroendocrine cell types (Figure 1\u2014figure supplement 1B). Since prior enteroendocrine cell atlases were derived from cells expressing an earlier developmental marker, Neurog3 (Gehart et al., 2019), we sought to compare the repertoire of enteroendocrine cells captured by Neurod1-Cre and Neurog3-Cre mice.\n\ntdTomato-positive cells were separately obtained from the intestines (duodenum to ileum) of Neurod1-Cre; lsl-tdTomato mice and Neurog3-Cre; lsl-tdTomato mice by fluorescence-activated cell sorting (Figure 2\u2014figure supplement 1A). Using the 10X Genomics platform, mRNA was captured from individual cells, and barcoded single-cell cDNA was generated. Single-cell cDNA was then sequenced and unsupervised clustering analysis was performed using the Seurat pipeline (Hafemeister and Satija, 2019; Stuart et al., 2019). Transcriptome data was obtained for 5,856 tdTomato-positive cells from Neurog3-Cre; lsl-tdTomato mice and 1841 tdTomato-positive cells from Neurod1-Cre; lsl-tdTomato mice. Twenty-five percent of Neurog3-lineage cells (1454/5856) and 87% of NeuroD1-lineage cells (1595/1841) expressed classical markers for enteroendocrine cells (Figure 2\u2014figure supplement 1B and C). Moreover, the full diversity of known enteroendocrine cell types was similarly captured by both Cre lines, with Neurog3-Cre mice additionally labeling many other cells, including paneth cells, goblet cells, enterocytes, and progenitors (Figure 2\u2014figure supplement 1C). These findings are consistent with NeuroD1 acting later than Neurogenin3 in the enteroendocrine cell lineage, but prior to cell fate decisions leading to enteroendocrine cell specialization (Jenny et al., 2002).\n\nSince Neurog3-Cre and Neurod1-Cre mice similarly labeled all known enteroendocrine cell lineages, transcriptome data was computationally integrated for analysis of enteroendocrine cell subtypes. Selective clustering analysis of 3049 enteroendocrine cells from both mouse lines revealed 10 distinct cell clusters, with one cluster representing putative progenitors (Figure 2A, Figure 2\u2014source data 1). Cell clusters were compared with previously described enteroendocrine cell types based on expression of signature genes encoding hormones and transcriptional regulators (Figure 2A\u2013C; Gehart et al., 2019). We observed three classes of enterochromaffin cells that similarly express serotonin biosynthesis enzymes (Tph1) and associated transcription factors (Lmx1a), but differentially produce Tac1, Cartpt, Pyy, Ucn3, and Gad2 (Figure 2B). Six other cell types preferentially express either Gip (K cells), Cck (I cells), Gcg (GLP1 precursor, L cells), Nts (N cells), Sst (D cells), and Ghrl (X cells), with L, I, and N cells thought to be derived from a common cell lineage (Beumer et al., 2020; Gehart et al., 2019). Strong segregation was observed for some signature genes, such as Tph1 in enterochromaffin cells and Sst in D cells. In other cases, signature hormone genes like Cck and Ghrl were enriched in particular cell clusters but expression was not absolutely restricted and also observed at lower levels in other cell clusters (Figure 2B). We note that glutamate transporters were not readily detected in our transcriptomic data (Figure 2B, Figure 2\u2014figure supplement 2). Thus, each enteroendocrine cell subtype expresses a hormone repertoire with distinct patterns of enrichment but also sometimes partial overlap.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig2-v2.jpg)\n\n**Figure 2.:** (A) A uniform manifold approximation and projection (UMAP) plot of enteroendocrine cell transcriptomic data reveals 10 cell clusters. (B) Violin plots showing expression of genes encoding key transcriptional regulators, hormones, other secreted molecules, and receptors across enteroendocrine cell subtypes. Gene loci used for genetic targeting are highlighted with dashed boxes. (C) Normalized expression of enriched signature genes (see Figure 2\u2014source data 1 for a gene list) in single enteroendocrine cells. The dendrogram (top) depicts the relatedness (quantified by position along the Y-axis) between cell clusters based on gene expression. (D) For each enteroendocrine cell type, examples of gene loci used for genetic targeting (top, also highlighted in B), expressed cell surface receptor genes (middle) and expressed hormone and neurotransmitter-related genes (bottom). Genes were selected among the top 30 differentially expressed genes. See Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Left: small intestines were collected from Neurog3-Cre; lsl-tdTomato (one male) and Neurod1-Cre; lsl-tdTomato (three females) mice. Fluorescent cells were collected by cell sorting and separately analyzed by single-cell RNA sequencing. (Center) Cell purity was determined by visualizing tdTomato fluorescence (top) and bright-field microscopy (bottom), scale bar: 100 um. Right: duodenum tissue from Neurog3-Cre; lsl-tdTomato mice was fixed at different time points after the onset of cell dissociation and analyzed for tdTomato fluorescence in 20 \u03bcm tissue cryosections. Scale bars: 100 \u03bcm. (B) (left) UMAP plot of single-cell transcriptomic data merged from both Neurog3-Cre; lsl-tdTomato and Neurod1-Cre; lsl-tdTomato mice. Cells are colored based on the expression of signature genes indicated in the dot plot on right (average expression from natural log of normalized UMI counts). (C) UMAP plots indicating all cell types (left) and enteroendocrine cell types (right) purified from Neurod1-Cre; lsl-tdTomato (Neurod1 lineage) and Neurog3-Cre; lsl-tdTomato (Neurog3 lineage) mice.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Native tdTomato fluorescence in fixed intestinal cryosections (20 \u03bcm) of mouse lines indicated. Asterisks indicate labeled cells in the lamina propria or muscular layer. Scale bars: 100 \u03bcm.\n\nEnteroendocrine cells also express various cell surface receptors to detect nutrients, toxins, and other stimuli. For example, enteroendocrine cells detect sugars through the sodium-glucose cotransporter SGLT1 (encoded by the gene Slc5a1), with sodium co-transport thought to lead directly to cell depolarization (Gorboulev et al., 2012; Reimann et al., 2008). This mechanism is distinct from sugar detection by taste cells or pancreatic beta cells. Gustatory sensations of sweet (and savory/umami) involve taste cell-mediated detection of sugars (and amino acids) through heterodimeric G protein-coupled receptors termed T1Rs (Yarmolinsky et al., 2009), while pancreatic beta cells respond to sugar through increased metabolic flux, ATP-gated potassium channel closure, and depolarization. Expression of Slc5a1 was observed in multiple enteroendocrine cell subtypes, and highest in K, L, D, and N cells, while abundant expression of T1Rs was not detected in any enteroendocrine cell type (Figure 2B). These findings are consistent with the ability of taste blind mice lacking T1Rs to develop a preference for sugar-rich foods through SGLT1-mediated post-ingestive signals of the gut-brain axis (Sclafani et al., 2016; Tan et al., 2020). In addition, free fatty acid receptor genes Ffar1 and Ffar4 were broadly expressed in several enteroendocrine cell lineages, but largely excluded from enterochromaffin cells (Figure 2B). Orthogonally, the toxin receptor gene Trpa1 was enriched in enterochromaffin cells (Bellono et al., 2017), but not abundantly expressed in other enteroendocrine cells (Figure 2B and D). Enterochromaffin cells also reportedly sense force through the mechanosensory ion channel PIEZO2 (Alcaino et al., 2018); Piezo2 transcript was not readily detected in our transcriptomic data, but is enriched in enteroendocrine cells from colon that we did not analyze (Billing et al., 2019; Treichel et al., 2022; Figure 2B). Thus, enteroendocrine cells often express multiple cell surface receptors, suggesting polymodal response properties, and some receptors are expressed by multiple enteroendocrine cell types.\n\n### Genetic access to subtypes of enteroendocrine cells\n\nNext, we obtained genetic tools for selective access to each major enteroendocrine cell lineage. We chose several combinations of Cre and FlpO lines to achieve intersectional genetic access to different enteroendocrine cells based on the cell atlas. (1) Vil1-Cre; Pet1-FlpE (Pet1INTER) mice broadly target enterochromaffin cells, while (2) Tac1-ires2-Cre; Vil1-p2a-FlpO (Tac1INTER) and (3) Npy1r-Cre; Vil1-p2a-FlpO (Npy1rINTER) mice target different enterochromaffin cell subtypes. (4) Vil1-Cre; Sst-ires-FlpO, (5) Gip-Cre; Vil1-p2a-FlpO, (6) Cck-ires-Cre; Vil1-p2a-FlpO, and (7) Gcg-Cre; Vil1-p2a-FlpO mice respectively target D, K, I, and L cells (Figure 2D), and are herein referred to as SstINTER, GipINTER, CckINTER, and GcgINTER mice.\n\nMice of each intersectional allele combination were crossed to inter-tdTomato mice, and reporter expression was analyzed across tissues, including in the brain, tongue, airways, pancreas, stomach, and intestine (duodenum to rectum) (Figure 3\u2014figure supplements 1 and 2). Each of these seven intersectional combinations produced sparse labeling of intestinal epithelial cells, as expected for labeling of enteroendocrine cell subtypes (Figure 3\u2014figure supplement 1). Striking selectivity for enteroendocrine cells was observed across analyzed tissues for intersectional combinations targeting D, K, L, and I cells; sparse labeling was rarely observed in gastric endocrine cells and pancreatic islets, and absent from all other tissues examined. For example, Cck-ires-Cre alone (without intersectional genetics) drove reporter (lsl-tdTomato) expression in many tissues, including the brain, spinal cord, and muscle, and within the intestine, in enteroendocrine cells as well as enteric neurons, extrinsic neurons, and cells in the lamina propria; however, in CckINTER; inter-tdTomato mice, expression was not observed in the brain, spinal cord, or muscle, and within the intestine, was highly restricted to a subset of enteroendocrine cells, and not observed in other intestinal cell types (Figure 3\u2014figure supplement 1). Similarly restrictive reporter expression was observed in SstINTER; inter-tdTomato, GipINTER; inter-tdTomato, and GcgINTER; inter-tdTomato mice. We did note that Tac1INTER and Npy1rINTER alleles more broadly labeled rectal epithelium, and Npy1rINTER additionally labeled taste cells as well as rare cells in the airways and epiglottis (Figure 3\u2014figure supplements 2 and 3B). We also note that other genetic tools were inefficient at targeting enteroendocrine cells, including Nts-ires-Cre and Mc4r-t2a-Cre mice (Figure 3\u2014figure supplement 3A).\n\nHormone expression can be dynamic in individual enteroendocrine cells, and Cre/Flp lines provide an indelible marker for transiently expressed genes (Beumer et al., 2018; Gehart et al., 2019). Thus, Cre/Flp lines enable in vivo lineage tracing to measure enteroendocrine cell dynamics. We used two-color expression analysis to investigate the repertoires of enteroendocrine cells captured by different intersectional lines. Two-color analysis involved visualization of native reporter fluorescence and immunohistochemistry for GLP1, CCK, SST, and/or serotonin in the duodenum, jejunum, ileum, colon, and rectum (Figure 3\u2014figure supplement 4, Figure 3\u2014figure supplement 4\u2014source data 1). SstINTER mice showed enriched targeting of somatostatin cells throughout the intestine (SstINTER cells in duodenum, jejunum, ileum, colon, and rectum: 98.9, 66.4, 66.0, 82.4, and 66.0% express somatostatin, 0.3, 0.0, 0.0, 0.8, and 0.0% express serotonin, 0, 0, 0, 0, and 0% express CCK, and 0, 0, 0.9, 2.3, 0% express GLP1). The PetINTER driver also captured cells with other hormones, suggesting that some enteroendocrine cells can either transiently or durably express markers of multiple lineages or can switch identity from enterochromaffin cells to other enteroendocrine cell types (PetINTER cells in duodenum, jejunum, ileum, colon, and rectum: 6.3, 2.0, 4.6, 0.9, and 0% express somatostatin, 86.7, 47.9, 43.7, 52.5, and 49.4% express serotonin, 8.2, 6.5, 3.7, 0.3, and 0.6% express CCK, and 4.6, 17.2, 45.7, 18.5, and 25.7% express GLP1). Tac1-ires2-Cre and Npy1r-Cre both labeled subsets of serotonin cells (100% of labeled cells produce serotonin in each line), with Tac1-ires2-Cre labeling a higher percentage of serotonin cells in duodenum (78.4%) than Npy1r-Cre (5.0%) (Figure 3\u2014figure supplement 3A). Both GcgINTER and CckINTER mice labeled the majority of GLP1 and CCK cells; these cell types are within the same developmental lineage, and CCK and proglucagon are frequently coexpressed in the same EE cells (Habib et al., 2012). GcgINTER mice did not effectively label either somatostatin or serotonin cells (GcgINTER labeled in duodenum, jejunum, ileum, colon, and rectum 75.5, 67.6, 89.4, 95.9, and 99.0% of GLP1 cells, 34.8, 50.0, 0, 0, and 0% of CCK cells, 0.0, 0.0, 20.8, 34.3, and 22.2% of somatostatin cells, and 1.5, 0.2, 1.8, 0, and 0.8% of serotonin cells). CckINTER mice were less selective (CckINTER labeled in duodenum, jejunum, ileum, colon, and rectum 68.6, 54.0, 60.7, 71.3, and 23.8% of GLP1 cells, 90.8, 87.9, 96.2, 54.2, and 26.8% of CCK cells, 24.2, 15.1,28.3, 38.1, and 22.1% of somatostatin cells, and 11.6, 20.6, 15.9, 0.9, and 0.5% of serotonin cells), and a substantial fraction (at least 13.7% in duodenum) targeted other enteroendocrine cells that do not express these four hormones (Figure 3\u2014figure supplement 4B and C). It is possible that the Cck-ires-Cre allele simply displays inefficient targeting efficiency and/or that it drives reporter expression at early developmental time points with subsequent switching or refinement of cell identity. Together, these experiments measure the extent of selectivity achievable with each genetic tool, with some intersectional combinations providing highly selective genetic access to classes of enteroendocrine cells in vivo.\n\nNext, we assessed the spatial distribution of each enteroendocrine cell lineage along the proximal-distal axis in the duodenum, jejunum, ileum, colon, and rectum by quantifying the number of reporter-positive cells (Figure 3). PetINTER and SstINTER cells were most enriched in the duodenum and colon (Figure 3). SstINTER cells were the sparsest of enteroendocrine cell types, consistent with observations from scRNA-seq data (Figures 2A and 3). GipINTER cells and GcgINTER cells displayed strikingly distinct spatial patterns. GipINTER cells were enriched proximally, with almost no tdTomato+ cells observed in distal intestine. In contrast, GcgINTER cells were present along the entire proximal-distal axis and were enriched in colon and rectum. Thus, various enteroendocrine cell subtypes display distinct spatial distributions along the gastrointestinal tract.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig3-v2.jpg)\n\n**Figure 3.:** (Left) UMAP plots based on single-cell transcriptome data showing expression of indicated genes across the enteroendocrine cell atlas. (Middle) Number of cells expressing inter-tdTomato reporter in five 20 \u03bcm sections from intestinal regions of mice indicated, dots: individual animals, n: 2\u20134 mice, mean \u00b1 sem. (Right) Representative images of native tdTomato fluorescence in intestinal tissue from mouse lines indicated. Scale bars: 100 \u03bcm. See Figure 3\u2014figure supplements 1\u20134.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Native tdTomato fluorescence was analyzed in cryosections (20 \u03bcm) of fixed tissues indicated. Tissue was obtained from mice expressing a single recombinase (single recombinase; Cre lines indicated including Sst-ires-Cre were crossed with lsl-tdTomato, while Pet1-FlpE was crossed with fsf-Gfp and images pseudocolored in red) or two recombinases (intersectional; Cre lines indicated crossed with Vil1-p2a-FlpO and inter-tdTomato while Pet1-FlpE and Sst-ires-FlpO were crossed with Vil1-Cre and inter-tdTomato). For Gcg-Cre mice, images are taken from the ileum rather than duodenum. Scale bars: 100 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Mouse lines indicated were crossed to inter-tdTomato and native reporter fluorescence was analyzed in wholemount tissue preparations from fixative-perfused mice, scale bars: 500 \u03bcm.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Two-color analysis examining expression of tdTomato (native fluorescence, magenta) and either neurotensin (NTS), CRE, or serotonin (immunochemistry, green) in fixed intestinal cryosections (20 \u03bcm) of mouse lines indicated. UMAP plots (bottom right) indicate gene expression in single-cell RNA sequencing data from enteroendocrine cells. (B) Native tdTomato fluorescence in fixed cryosections (20 \u03bcm) from the rectum of mouse lines indicated, scale bars: 100 \u03bcm.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Numbers of cells labeled by hormone-targeting antibodies across five 20 \u03bcm sections in different regions of intestine. n: 2\u20134 mice, mean \u00b1 sem. (B) Quantification of cells expressing both inter-tdTomato and hormones indicated shown as a percentage of all reporter-expressing cells (left) or all hormone-expressing cells (right), n: 2\u20134 mice (see source data for more information), mean \u00b1 sem. (C) Representative images of intestinal tissue harvested from mouse lines indicated and analyzed simultaneously for expression of tdTomato (native fluorescence, red) and hormones (immunohistochemistry, cyan), scale bars: 10 \u03bcm.\n\n### Physiological responses to enteroendocrine cell activation\n\nDirect study of enteroendocrine cell function has been challenging due to a lack of specific genetic tools. Hints come from Neurogenin3 point mutations in human infants or intestine-targeted Neurog3 knockout, which cause loss of enteroendocrine cells, severe malabsorptive diarrhea, and increased mortality (Mellitzer et al., 2010; Wang et al., 2006). We sought to develop cell type-specific genetic tools for enteroendocrine cell manipulation, reasoning that they might provide a specific approach to define the repertoire of evoked physiological and behavioral responses.\n\nWe first developed chemogenetic approaches for acute stimulation of all enteroendocrine cell types in freely behaving mice. Chemogenetic strategies involved designer G protein-coupled receptors (so-called DREADDs) that respond to the synthetic ligand clozapine-N-oxide (CNO) (Roth, 2016). Neurod1INTER mice were crossed to contain an intersectional reporter allele (Rosa26CAG-fsf-eGFP-FLEX-hM3Dq-mCherry herein defined as inter-hM3Dq-mCherry) that enables expression of a G\u03b1q-coupled DREADD (hM3Dq) only in cells expressing both Cre and Flp recombinase (Sciolino et al., 2016). Since this approach yielded rare reporter expression in pancreatic islets, we used an additional control mouse line, Ptf1a-Cre; Vil1-p2a-FlpO (Ptf1aINTER), which targets sparse Vil1-expressing pancreatic cells but not intestinal cells (Figure 4\u2014figure supplement 1; Kawaguchi et al., 2002).\n\nFirst, we examined the effect of global enteroendocrine cell activation on gut motility as assessed by movement of charcoal dye following oral gavage. Neurod1INTER; inter-hM3Dq-mCherry mice, Ptf1aINTER; inter-hM3Dq-mCherry mice, and control Cre-negative Vil1-p2a-FlpO; inter-hM3Dq-mCherry littermates were injected intraperitoneally (IP) with CNO (fed ad libitum, daytime). After 15 min, charcoal dye was administered, and after an additional 20 min, the gastrointestinal tract was harvested. Charcoal transit distance was calculated by genotype-blinded measurement of the charcoal dye leading edge. In control animals lacking DREADD expression, the leading edge of charcoal dye traversed part of the intestine (littermate controls lacking Neurod1-Cre: 22.6 \u00b1 1.2 cm; littermate controls lacking Ptf1a-Cre: 22.8 \u00b1 2.0 cm) (Figure 4, Figure 4\u2014source data 1). Chemogenetic activation of all enteroendocrine cells in Neurod1INTER; inter-hM3Dq-mCherry mice accelerated gut transit, with the charcoal leading edge traversing 30.8 \u00b1 1.5 cm of the intestine. When DREADD signaling was instead activated in all epithelial cells using Vil1-Cre; lsl-hM3Dq mice, gavaged dye failed to enter the intestine at all (Figure 4\u2014figure supplement 1A). CNO-accelerated gut transit was not observed Ptf1aINTER; inter-hM3Dq-mCherry mice (22.6 \u00b1 2.6 cm) containing DREADD expression only in pancreatic cells (Figure 4, Figure 4\u2014figure supplement 1B and C). Based on these observations, the observed effects in Neurod1INTER; inter-hM3Dq-mCherry mice are due to enteroendocrine cells rather than pancreatic cells, and the net effect of activating all enteroendocrine cells is to promote gut transit.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig4-v2.jpg)\n\n**Figure 4.:** Mice of genotypes indicated were injected with CNO (IP, 3 mg/kg) and gavaged orally with charcoal dye. Intestinal tissue was harvested, and the distance between the pyloric sphincter and the charcoal dye leading edge was measured. Representative images (left) and quantification (right) of gut transit. Scale bars: 1 cm, circles: individual mice, n: 5\u201314 mice, mean \u00b1 sem, *p<0.05, **p<0.01 by a Mann\u2013Whitney test with Holm\u2013\u0160\u00edd\u00e1k correction. See Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Mice indicated were injected with CNO (IP, 3 mg/kg), and gavaged orally with carmen red dye. Intestinal tissue was harvested and the distance between the pyloric sphincter and the dye leading edge measured. Representative images (left) and quantification (right) of gut transit, scale bar: 1 cm, circles: individual mice, n: 4\u20135 mice, mean \u00b1 sem, **p<0.01 by a Mann\u2013Whitney test. (B) Native tdTomato fluorescence in fixed cryosections (20 \u03bcm) of tissues from mice indicated, scale bars: 100 \u03bcm. (C) Native reporter fluorescence was analyzed in wholemount tissue preparations indicated. Scale bars: 500 \u03bcm.\n\nNext, we examined the effects of activating different enteroendocrine cell subtypes on gut motility. We additionally generated (1) Pet1INTER; inter-hM3Dq-mCherry; (2) Tac1INTER; inter-hM3Dq-mCherry; (3) Npy1rINTER; inter-hM3Dq-mCherry; (4) SstINTER; inter-hM3Dq-mCherry; (5) GipINTER; inter-hM3Dq-mCherry; (6) CckINTER; inter-hM3Dq-mCherry; and (7) GcgINTER; inter-hM3Dq-mCherry mice, with Cre-negative FlpO-positive inter-hM3Dq-mCherry littermates serving as controls (Figure 4). As above, CNO was injected (IP) into ad libitum-fed animals followed by oral charcoal gavage. Pet1INTER cells promoted gut transit (Pet1INTER: 29.8 \u00b1 1.6 cm, Cre-negative littermates: 22.1 \u00b1 1.5 cm), while SstINTER and GipINTER cells had no significant effect (SstINTER: 24.5 \u00b1 2.0 cm, Cre-negative littermates: 18.8 \u00b1 1.6 cm; GipINTER: 23.2 \u00b1 1.0 cm, Cre-negative littermates: 22.0 \u00b1 1.8 cm). Interestingly, single-cell transcriptome data revealed multiple subtypes of enterochromaffin cells, and we observed accelerated gut transit upon chemogenetic activation of Tac1INTER cells (Tac1INTER: 36.2 \u00b1 1.4 cm, Cre-negative littermates: 21.0 \u00b1 1.1 cm) but not Npy1rINTER cells (Npy1rINTER: 21.8 \u00b1 2.0 cm, Cre-negative littermates: 24.3 \u00b1 2.1 cm). These findings raise the possibility that each enterochromaffin cell subtype may privately communicate with different downstream extrinsic and/or enteric neurons to control gut physiology. In contrast, CckINTER and GcgINTER cells slowed gut motility (CckINTER: 7.1 \u00b1 0.3 cm, Cre-negative littermates: 21.5 \u00b1 2.8 cm; GcgINTER: 7.9 \u00b1 0.7 cm, Cre-negative littermates: 22.4 \u00b1 1.9 cm). Ingested food slows gut motility to promote nutrient absorption, while ingested toxins may accelerate gut motility to purge luminal contents (Nozawa et al., 2009; Van Citters and Lin, 2006). Consistent with these findings, CCK and GLP1 are released by nutrients while serotonin signaling is required for certain toxin responses (Drucker, 2016; Gribble and Reimann, 2019). Simultaneous activation of both pathways, as done in Neurod1INTER; inter-hM3Dq-mCherry mice, masks the slowing of gut transit by CckINTER and GcgINTER cells. These findings suggest a hierarchy where neural circuits that mediate toxin responses may achieve priority over those that mediate nutrient responses, at least under conditions of equal and maximal activation. Altogether, we characterize enteroendocrine cell subtypes that have different and sometimes opposing effects on digestive system physiology.\n\n### Enteroendocrine cells that regulate feeding behavior\n\nNext, we examined the effect of global enteroendocrine cell activation on feeding behavior. Fasted mice expressing DREADDs in all enteroendocrine cells (Neurod1INTER; inter-hM3Dq-mCherry) or in sparse pancreatic cells (Ptf1aINTER; inter-hM3Dq-mCherry), and their control littermates lacking Cre recombinase, were injected (IP) with CNO and given access to food for 2 hr at dark onset (Figure 5A). Animals lacking DREADD expression, or with sparse DREADD expression only in pancreas, ate robustly (~1 g of food over a 2 hr period). In contrast, CNO-induced activation of enteroendocrine cells caused a 26% reduction in food intake (Figure 5B, Figure 5\u2014source data 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig5-v2.jpg)\n\n**Figure 5.:** (A) Timeline for behavioral assay. (B) Mice of genotypes indicated were fasted overnight, injected with CNO (IP, 3 mg/kg), and total food intake was measured during 2 hr ad libitum food access, circles: individual mice, n: 8\u201313 mice, mean \u00b1 sem, *p<0.05 by a Mann\u2013Whitney test with Holm\u2013\u0160\u00edd\u00e1k correction. See Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Mice of genotypes indicated were fasted overnight, injected with CNO (IP, 3 mg/kg), and total food intake was measured during 2 hr ad libitum food access, circles: individual mice, n: 4\u20137 mice, mean \u00b1 sem, *p<0.05 by a Mann\u2013Whitney test with Holm\u2013\u0160\u00edd\u00e1k correction. (B) Effects of enteroendocrine cell activation on feeding behavior in ad libitum fed mice. Mice of genotypes indicated were injected with CNO (IP, 3 mg/kg), and total food intake was measured over 2 hr, circles: individual mice, n: 4\u201312 mice, mean \u00b1 sem, **p<0.01 by a Mann\u2013Whitney tests with Holm\u2013\u0160\u00edd\u00e1k correction. (C) Analysis of CNO-evoked behavioral changes in genotypes indicated by a Comprehensive Lab Animal Monitoring System (CLAMS). CNO was injected 30 min prior to dark onset (dark: gray shading), n: 3\u20139 mice, mean \u00b1 sem, *p<0.05 by an ANCOVA (feeding, water intake) or ANOVA (distance traveled, respiratory exchange ratio or RER).\n\nTo interrogate the roles of different enteroendocrine cell subtypes in feeding regulation, similar experiments were then performed in (1) Pet1INTER; inter-hM3Dq-mCherry; (2) Tac1INTER; inter-hM3Dq-mCherry; (3) Npy1rINTER; inter-hM3Dq-mCherry; (4) SstINTER; inter-hM3Dq-mCherry; (5) GipINTER; inter-hM3Dq-mCherry; (6) CckINTER; inter-hM3Dq-mCherry; and (7) GcgINTER; inter-hM3Dq-mCherry mice, with Cre-negative littermates again serving as controls. Chemogenetic activation of enterochromaffin cells reduced feeding behavior (Figure 5B, 52.1% reduction). Similar results were seen upon chemogenetic activation of Tac1 and Npy1r cells (Figure 5\u2014figure supplement 1A, Tac1-ires2-Cre: 48.5% reduction, Npy1r-Cre: 79.6% reduction), but we note that these intersectional allele combinations also drove expression in taste cells and rectal epithelium, cell types that could also potentially drive changes in feeding behavior. In contrast, activation of SstINTER and GipINTER cells did not change feeding behavior (Figure 5B). Activating GcgINTER cells also reduced feeding (compared to Cre-negative littermates, GcgINTER: 52.4% reduction), but surprisingly, activating CckINTER cells lowered feeding only in fed but not fasted mice (Figure 5\u2014figure supplement 1B, Figure 5\u2014figure supplement 1\u2014source data 1). This observation is likely due to Cck-ires-Cre and Gcg-Cre alleles targeting at least partially distinct populations of enteroendocrine cells. Chemogenetic activation of GcgINTER (single CNO injection) caused a durable reduction of feeding for several hours, with total food intake normalizing by 11 hr, and also evoked a decrease in water intake and the respiratory exchange ratio, but not locomotion (Figure 5\u2014figure supplement 1C). For comparison, activating somatostatin cells reduced the respiratory exchange ratio but did not change feeding, water intake, or locomotion. Altogether, we find that some but not all enteroendocrine cells can regulate food intake, and can do so with varying efficacy.\n\n### Conclusion\n\nHere we developed a toolkit involving intersectional genetics for systematic access to each major enteroendocrine cell lineage (Figure 6A). We then used chemogenetic approaches to delineate major response pathways of the gut-brain axis (Figure 6B). Serotonin-producing enterochromaffin cells express the irritant receptor TRPA1 (Bellono et al., 2017) and chemogenetic activation blocks feeding behavior and promotes gut transit, presumably for toxin clearance. Furthermore, different enterochromaffin cell subtypes can have different effects on gut motility, suggesting at least partially nonoverlapping communication pathways with downstream neurons. These findings are consistent with a role for enterochromaffin cells in toxin-induced illness responses, and interestingly, pharmacological blockade of the serotonin receptor HTR3A is a clinical mainstay for nausea treatment (Freeman et al., 1992). Other enteroendocrine cell types, including those that produce CCK, GIP, GLP1, neurotensin, and somatostatin, express nutrient receptors yet elicit different physiological and behavioral responses. For example, GLP1 cells slow gut motility, presumably to promote nutrient absorption and decrease feeding behavior (Gribble and Reimann, 2019). Additional studies are needed to define gut-brain pathways that mediate nutrient reward, and why receptors for specific nutrients are expressed across a dispersed ensemble of enteroendocrine cells. Together, these experiments provide a highly selective method for accessing enteroendocrine cells in vivo and a direct measure of their various roles in behavior and digestive physiology.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig6-v2.jpg)\n\n**Figure 6.:** (A) A dendrogram depicting cell types targeted by different genetic tools. (B) Summary of feeding and gut transit data obtained for genetic tools that target different enteroendocrine cell types, *only observed in fed state.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Atoh1-Cre knock-in</td>\n      <td>Yang et al., 2010</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Pet1-FlpE</td>\n      <td>Jensen et al., 2008</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Ptf1a-Cre</td>\n      <td>Kawaguchi et al., 2002</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Gip-Cre</td>\n      <td>Svendsen et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Atoh1-Cre transgenic</td>\n      <td>Jax 011104</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Neurog3-Cre</td>\n      <td>Jax 006333</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Neurod1-Cre</td>\n      <td>Jax 028364</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Sst-ires-Cre</td>\n      <td>Jax 013044</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Sst-ires-FlpO</td>\n      <td>Jax 028579</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Vil1-Cre</td>\n      <td>Jax 021504</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Gcg-Cre</td>\n      <td>Jax 030542</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Cck-ires-Cre</td>\n      <td>Jax 012706</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Nts-ires-Cre</td>\n      <td>Jax 017525</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Mc4r-t2a-Cre</td>\n      <td>Jax 030759</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Npy1r-Cre</td>\n      <td>Jax 030544</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Tac1-ires2-Cre</td>\n      <td>Jax 021877</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Rosa26CAG-lsl-tdTomato, Ai14 (lsl-tdTomato)</td>\n      <td>Jax 007914</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Rosa26CAG-lsl-fsf-tdTomato, Ai65 (inter-tdTomato)</td>\n      <td>Jax 021875</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Rosa26CAG-fsf-eGFP-FLEX-hM3Dq-mCherry, (inter-hM3Dq-mCherry)</td>\n      <td>Jax 026943</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>lsl-hM3Dq</td>\n      <td>Jax 026220</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>C57BL/6</td>\n      <td>Jax 000664</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Vil1-p2a-FlpO</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Chromium single-cell 3\u2019 reagent kit v3</td>\n      <td>10X Genomics</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>TrypLE express</td>\n      <td>Thermo Fisher 12604013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>FBS</td>\n      <td>VWR10802-772</td>\n      <td></td>\n      <td>5%See \u2018Single-cell RNA sequencing\u2019</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>DNase</td>\n      <td>Worthington Biochemical LK003172</td>\n      <td></td>\n      <td>100 U/ml</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TO-PRO-3</td>\n      <td>Thermo Fisher T3605</td>\n      <td></td>\n      <td>1:10,000See \u2018Single-cell RNA sequencing\u2019</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Calcein Violet</td>\n      <td>Thermo Fisher 65-0854-39</td>\n      <td></td>\n      <td>1:10,000See \u2018Single-cell RNA sequencing\u2019</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Normal donkey serum</td>\n      <td>Jackson Immuno 017-000-121</td>\n      <td></td>\n      <td>5%See \u2018Tissue histology\u2019 section</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Bovine serum albumin</td>\n      <td>Jackson Immuno 001-000-161</td>\n      <td></td>\n      <td>1%See \u2018Tissue histology\u2019</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI Fluoromount-G</td>\n      <td>Southern Biotech 0100-20</td>\n      <td></td>\n      <td>See \u2018Tissue histology\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CCK (rabbit polyclonal)</td>\n      <td>Abcam ab27441</td>\n      <td></td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CRE (rabbit polyclonal)</td>\n      <td>Cell Signaling 15036</td>\n      <td></td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GLP1 (rabbit polyclonal)</td>\n      <td>Novus 2622B MAB10473</td>\n      <td></td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-NTS (rabbit polyclonal)</td>\n      <td>Immunostar 20072</td>\n      <td></td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-SST (rabbit polyclonal)</td>\n      <td>Novus 906552 MAB2358</td>\n      <td></td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-5HT (goat polyclonal)</td>\n      <td>Abcam ab66047</td>\n      <td></td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-rabbit Alexa488</td>\n      <td>Jackson Immuno 711-545-152</td>\n      <td></td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-rabbit AlexaCy3</td>\n      <td>Jackson Immuno 711-165-152</td>\n      <td></td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-rabbit AlexaCy5</td>\n      <td>Jackson Immuno 711-175-152</td>\n      <td></td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-rabbit Alexa680</td>\n      <td>Thermo Fisher A32802</td>\n      <td></td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-goat Alexa488</td>\n      <td>Jackson Immuno 705-545-147</td>\n      <td></td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Clozapine N-oxide dihydrochloride</td>\n      <td>Fisher ScientificTocris 6329/10</td>\n      <td></td>\n      <td>3 mg/kg</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nAll animal husbandry and procedures were performed in compliance with institutional animal care and use committee guidelines. All animal husbandry and procedures followed the ethical guidelines outlined in the NIH Guide for the Care and Use of Laboratory Animals (https://grants.nih.gov/grants/olaw/guide-for-the-care-and-use-of-laboratory-animals.pdf), and all protocols were approved by the institutional animal care and use committee (IACUC) at Harvard Medical School (protocol #04424). Atoh1-Cre knock-in (Yang et al., 2010), Pet1-FlpE (Jensen et al., 2008), Ptf1a-Cre (Kawaguchi et al., 2002), and Gip-Cre (Svendsen et al., 2016) mice were described before; Atoh1-Cre transgenic (011104), Neurog3-Cre (006333), Neurod1-Cre (028364), Sst-ires-Cre (013044), Sst-ires-FlpO (028579), Vil1-Cre (021504), Gcg-Cre (030542), Cck-ires-Cre (012706), Nts-ires-Cre (017525), Mc4r-t2a-Cre (030759), Npy1r-Cre (030544), Tac1-ires2-Cre (021877), lsl-tdTomato (Ai14, Rosa26CAG-lsl-tdTomato, 007914), inter-tdTomato (Ai65, Rosa26CAG-lsl-fsf-tdTomato, 021875), inter-hM3Dq-mCherry (Rosa26CAG-fsf-eGFP-FLEX-hM3Dq-mCherry, 026943), lsl-hM3Dq (026220), and C57BL/6 (000664) mice were purchased (Jackson Laboratory). Both male and female mice between 8 and 24 weeks old were used for all studies, and no differences based on sex were observed. All mice were maintained in the C57BL/6 genetic background. Mouse breeding involved paternal Cre alleles, paternal Flp alleles, and/or maternal effector genes. Vil1-Cre produced occasional germline recombination of loxP sites that resulted in ectopic inter-hM3Dq-mCherry gene expression; mice with such ectopic expression were excluded based on genotyping of reporter allele DNA extracted from ear tissue with primer 1 (stop cassette forward): atgtctggatctgacatggtaa; primer 2 (hM3Dq cassette reverse): tctggagaggagaaattgcca; primer 3 (GFP cassette reverse): ttgaagtcgatgcccttcag; intact allele: ~490 bp, recombined allele: ~290 bp. Vil1-p2a-FlpO mice were generated by CRISPR-guided approaches at Boston Children\u2019s Hospital Mouse Gene Manipulation Core. Cas9 protein, CRISPR sgRNAs (targeting the stop codon of Vil1 locus), and an ssDNA (containing a p2a-FlpO cassette with 150 bp homology arms) were injected into the pronucleus of C57BL/6 embryos. Founder mice were screened by allele specific PCR analysis with primers flanking the 5\u2032 junction (primer 1: aacagaagttccttaaacaagcca; primer 2: aacaggaactggtacagggtcttg; ~930 bp), FlpO internally (primer 1: acaagggcaacagccaca; primer 2: tcagatccgcctgttgatgt; ~830 bp), and the 3\u2032 junction (primer 1: accccctggtgtacctgga; primer 2: tagccctcccttttgagtgtga; ~840 bp), followed by Sanger sequencing to validate the allele. Selected Vil1-p2a-FlpO founder mice were viable, fertile, and back crossed to C57BL/6 mice for at least three generations.\n\n### Single-cell RNA sequencing\n\nEnteroendocrine cells were acutely harvested using a protocol modified from previous publications (Haber et al., 2017; Sato et al., 2009). Intestinal tissue was obtained from Neurog3-Cre; lsl-tdTomato mice (one adult male), or Neurod1-Cre; lsl-tdTomato (three adult females), cut longitudinally, washed (cold phosphate-buffered saline [PBS]), cut into small ~5 mm pieces, and incubated (gentle agitation, 20 min, 4\u00b0C) in EDTA solution (20 mM EDTA-PBS, Ca/Mg-free) in LoBind Protein tubes (Eppendorf 0030122216). The specimen was shaken, the tissue allowed to settle, and the supernatants collected. The residual tissue was again incubated similarly with EDTA solution, and supernatants were combined, and centrifuged (300 \u00d7 g, 5 min, 4\u00b0C) Pellets were washed (2\u00d7, PBS [Ca/Mg-free] supplemented with 5% fetal bovine serum [FBS], 4\u00b0C) and incubated (37\u00b0C, 2 min) in protease solution (TrypLE express, Thermo Fisher 12604013) supplemented with DNase (100 U/ml, Worthington Biochemical LK003172). The suspension containing dissociated cells was centrifuged (300 \u00d7 g, 5 min), washed (2\u00d7, PBS [Ca/Mg-free] containing 5% FBS, 4\u00b0C) The resulting pellet was resuspended in FACS buffer (5% FBS in DMEM/F12, HEPES, no phenol red) containing DNase (100 U/ml), TO-PRO-3 (Thermo Fisher T3605, 1:10,000) to label dead cells, and Calcein Violet (Thermo Fisher 65-0854-39, 1:10,000) to label living cells. Cells were filtered (1 \u00d7 70 um, 1 \u00d7 40 um) and tdTomato+, Calcein Violet+, TO-PRO-3- cells were collected by fluorescence activated cell sorting using a FACS Aria (BD Biosciences). Collected cells were then loaded into the 10X Genomics Chromium Controller, and cDNA prepared and amplified according to manufacturer\u2019s protocol (10X Genomics, Chromium single-cell 3\u2032 reagent kit v3, 12 cycles per amplification step). The resulting cDNA was sequenced on a NextSeq 500 at the Harvard Medical School Biopolymers Facility. Sequence reads were aligned to the mm39 mouse transcriptome reference, and feature barcode matrices were generated using 10X Genomics CellRanger. Unique transcript (UMI) count matrices were analyzed in R v4.1.1 using Seurat v4.0.5 (Beutler et al., 2017; Satija et al., 2015). The cell barcodes were filtered, removing cells with a high number of UMIs (>125,000) or high percentage of mitochondrial genes (>25%). The filtered UMI count matrix was transformed using SCTransform (Hafemeister and Satija, 2019). Transformed matrices from Neurog3 and Neurod1 samples were integrated (nFeature = 3000), and integrated matrices used for cluster identification and UMAP projections. Additional clusters of low-quality cells (defined by low-average UMI counts and low-average feature counts across the cluster) were removed. To examine the diversity among enteroendocrine cells, cell barcodes belonging to enteroendocrine cells from Neurog3 and Neurod1 samples were identified and reanalyzed separately. Matrices of enteroendocrine cells from Neurog3 and Neurod1 samples were transformed and integrated (nFeature = 3000). Differential gene expression (Wilcoxon ranked-sum test) was conducted on UMI counts matrices that were log normalized and scaled. Seurat\u2019s BuildClusterTree function was used to spatially arrange clusters based on relative similarity in gene expression. Two serotonergic clusters were merged post hoc (to become cluster EC_3) due to the absence of any single signature gene that effectively distinguished them. Gene expression data in all UMAP plots is shown as a natural log of normalized UMI counts. Further details and full parameters of analysis will be provided on GitHub upon publication: https://github.com/jakaye/EEC_scRNA, copy archived at (Hayashi, 2023).\n\n### Tissue histology\n\nFor histology, mice were perfused intracardially with PBS and then fixative (4% paraformaldehyde/PBS). Intestinal regions and other organs were dissected (duodenum: first 2 cm after the pyloric sphincter, jejunum: middle 2 cm, ileum: last 2 cm before the cecum, colon: first 2 cm after the cecum, and rectum: last 2 cm accessible via the pelvic cavity) and postfixed (1\u20132 hr, 4\u00b0C). Samples were then incubated in 30% sucrose/PBS (overnight, 4\u00b0C), embedded in Tissue-Tek OCT, frozen, cryosectioned, and placed on glass slides. Slides were incubated with primary antibodies at dilutions indicated below (overnight, 4\u00b0C, PBS supplemented with 0.05% Tween20, 0.1% TritonX, and either 5% normal donkey serum or 1% BSA) and then with fluorophore-conjugated secondary antibodies (1:500, 2 hr, RT). Sections were mounted (DAPI Fluoromount-G, Southern Biotech 0100-20), coverslipped, and imaged using a Nikon A1R confocal microscope, an Olympus FV1000 confocal microscope, or a Zeiss Axiozoom V16 fluorescent stereoscope. Microscope images are presented as z-projections. Quantification of tdTomato expression and antibody staining was performed manually using a Nikon Ti2 inverted microscope. Antibodies were rabbit anti-CCK (Abcam ab27441, 1:1000), rabbit anti-CRE (Cell Signaling 15036, 1:500), rabbit anti-GLP1 (Novus 2622B MAB10473, 1:2000), rabbit anti-NTS (Immunostar 20072, 1:2000), rabbit anti-SST (Novus 906552 MAB2358, 1:1000), goat anti-5HT (Abcam ab66047, 1:2000), donkey anti-rabbit Alexa488, Cy3, Cy5, Alexa680 (Jackson Immuno Research, Thermo Fisher, 1:500), donkey anti-goat Alexa488 (Jackson Immuno Research, 1:500).\n\n### Gut transit measurements\n\nDREADD-expressing and control animals (ad libitum fed) were injected with CNO (3 mg/kg, IP). After 15 min, charcoal dye (200 \u03bcl, 10% activated charcoal, 10% gum Arabic in water), or for Figure 4\u2014figure supplement 1, carmen red dye (200 \u03bcl, 6% carmen red, 0.5% methyl cellulose in water), was gavaged orally, and 20 min later, mice were euthanized and the gastrointestinal tract was harvested. The distance between the pyloric sphincter and the charcoal dye leading edge was measured by an observer blind to animal genotype. All animals were naive to CNO exposure, except for some Gip-Cre mice due to limited availability of mice.\n\n### Feeding measurements\n\nExperimental mice were individually housed for 3 days and habituated to feeding from a ceramic bowl. Animals were either fed ad libitum or fasted for the last 20\u201322 hr in a new clean cage with some bedding material from the previous cage. CNO was injected (3 mg/kg, IP), and food pellets presented 15 min later at the onset of darkness. Food intake was measured over the course of 2 hr by weighing the amount of residual food, with genotypes revealed post hoc to achieve a genotype-blinded analysis. Studies involved fasted mice that were naive to prior CNO exposure or fed mice that were either naive to CNO or acclimated for at least a week after prior CNO exposure.\n\n### Body composition and indirect calorimetry\n\nBody composition (lean mass and fat mass) was first analyzed for each experimental group with a 3-in-1 Echo MRI Composition Analyzer (Echo Medical Systems, Houston, TX), and no significant differences were observed. Animals were then placed in a Sable Systems Promethion indirect calorimeter maintained at 23\u00b0C \u00b1 0.2\u00b0C. Mice were singly housed in metabolic cages with corn cob bedding and ad libitum access to Labdiet 5008 chow (56.8/16.5/26.6 carbohydrate/fat/protein). After 18 hr, all mice were injected with PBS (IP) for acclimatation to handling and mild injection stress. The following day, mice were injected with CNO (3 mg/kg, IP) approximately 30 min before dark onset. Animals were then analyzed for food and water consumption, body weight, distance traveled, and respiratory exchange ratio. Statistical analysis was performed with CalR (Mina et al., 2018).\n\n### Statistical analysis\n\nGraphs represent data as mean \u00b1 sem, as indicated in figure legends. All data points were derived from different mice except some mice in Figure 4 (Gip-Cre; Vil1-p2a-FlpO; inter-hM3Dq-mCherry mice) were previously used in feeding assays and some mice in Figure 5\u2014figure supplement 1 (Ptf1a-Cre; Vil1-p2a-FlpO; inter-hM3Dq-mCherry: 21/21 mice, Cck-ires-Cre; Vil1-p2a-FlpO; inter-hM3Dq-mCherry: 7/19 mice, Gip-Cre; Vil1-p2a-FlpO; inter-hM3Dq-mCherry: 10/10 mice, and Vil1-Cre; Sst-ires-FlpO; inter-hM3Dq-mCherry: 9/16 mice) were previously used in prior feeding assays for Figure 5. When mice were reused, they were acclimated for at least a week after prior CNO exposure.\n\nSample sizes (from left to right): Figure 3 (Pet1: 4, 4, 3, 3, 3; Sst: 4, 4, 3, 2, 4; Gip: 4, 4, 4, 2, 4; Cck: 4, 4, 3, 4, 4; Gcg: 3, 3, 3, 2, 3), Figure 3\u2014figure supplement 4A (serotonin antibody: 17, 17, 16, 10, 13; Sst antibody: 18, 18, 12, 10, 13; Cck antibody: 18, 18, 12, 13, 13; GLP1 antibody: 18, 18, 13, 10, 13), B (serotonin antibody: 3, 3, 3, 3, 3; Sst antibody: 4, 4, 3, 3, 3; Cck antibody: 3, 3, 3, 3, 3; GLP1 antibody: 3, 3, 3, 3, 3), C (serotonin antibody: 4, 4, 4, 2, 4; Sst antibody: 4, 4, 4, 2, 4; Cck antibody: 4, 4, 4, 2, 4; GLP1 antibody: 4, 4, 4, 2, 4), D (serotonin antibody: 4, 4, 4, 2, 4; Sst antibody: 4, 4, 4, 2, 4; Cck antibody: 4, 4, 4, 2, 4; GLP1 antibody: 4, 4, 4, 2, 4), E (serotonin antibody: 3, 3, 2, 3, 3; Sst antibody: 3, 3, 2, 3, 3; Cck antibody: 4, 4, 2, 3, 3; GLP1 antibody: 4, 4, 2, 3, 3), F (serotonin antibody: 3, 3, 2, 3, 3; Sst antibody: 3, 3, 2, 3, 3; Cck antibody: 3, 3, 2, 3, 3; GLP1 antibody: 3, 3, 2, 3, 3), Figure 4 (13, 14, 8, 8, 8, 10, 6, 7, 8, 9, 12, 12, 5, 5, 5, 5, 8, 8), Figure 4\u2014figure supplement 1A (4, 5), Figure 5 (10, 10, 10, 11, 9, 10, 8, 8, 13, 12, 9, 9, 9, 9), Figure 5\u2014figure supplement 1A (4, 7, 6, 6,), B (9, 12, 9, 8, 4, 6, 9, 10), Figure 5\u2014figure supplement 1C (7, 9, 3, 5).\n\nStatistical significance was measured using a Mann\u2013Whitney test with Holm\u2013\u0160\u00edd\u00e1k correction on Prism 9 (GraphPad) for Figure 4, Figure 5, and Figure 5\u2014figure supplement 1A and B, a Mann\u2013Whitney test on Prism 9 (GraphPad) for Figure 4\u2014figure supplement 1A, and ANCOVA and ANOVA on CalR for Figure 5\u2014figure supplement 1C (Mina et al., 2018).\n\n### Source data\n\nThe source data Excel file contains raw numerical data used for all bar graphs and statistical analyses. Single-cell transcriptome data is available with a GEO GSE accession number GSE224223.\n\n### Materials availability statement\n\nVil1-p2a-FlpO mice will be deposited in Jackson Laboratory and made generally available upon reasonable request.\n\n### Declaration of interest\n\nSDL and FMG are consultants for Kallyope, Inc.\n",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "bbd2d567-d15d-4cd8-aefc-b382aee3b00f",
+      "submission_id": "116e8286-7ae2-4756-b99d-cccf6496d622",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alexander Theodore Chesler, https://ror.org/01cwqze88 National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78512.sa0](https://doi.org/10.7554/eLife.78512.sa0)\n\nAs digested food moves through the intestines specialized epithelial cells (called Enterochromaffin Cells or EECs) sense and respond to the constituent chemicals. The current work utilizes single-cell transcriptomic analyses and intersectional approaches to define and genetically manipulate subsets of EECs. Key findings are that direct stimulation of EEC subtypes influences key aspects of feeding, specifically gut transit, ingestion, and food preference.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Alexander Theodore Chesler, https://ror.org/01cwqze88 National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78512.sa1](https://doi.org/10.7554/eLife.78512.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Enteroendocrine cell lineages that differentially control feeding and gut motility\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Alexander Theodore Chesler as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by K VijayRaghavan as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nIn general, the work provides new tools and insight into the function of enterochromaffin cells (EECs). However, several key points were raised by reviewers that we would like to see addressed in a revised manuscript:\n\n(1) Better characterization of the precise cells in which recombination takes place and more information about the rostral-caudal expression patterns.\n\n(2) Controls for the lack of specificity of DREADD mediated cell manipulation, particularly for the Npy1r-line.\n\n(3) Improved controls for both feeding behavior and particularly for the conditioned preference assay. These could include receptor antagonists to validate their hM3Dq activation approach and better link EEC subtypes to differential functions.\n\nThe complete reviews are provided below. We hope these are helpful in preparing your revision. When resubmitting, please include point-by-point responses and highlight the changes to the manuscript.\n\nReviewer #1 (Recommendations for the authors):\n\nThe manuscript could be rewritten for clarity. For example, I found it hard to keep track of the crosses since the full genetic names are used throughout.\n\nSpecific comments (by figure and associated supplements)\n\nFigure 1:\n\na. The images of the genetic marker labeling could be clearer. Nicer overview sections and more detailed zoom-in panels would be helpful. EECs are small, so they are hard to see in the images provided.\n\nb. What are the cells in the pancreas?\n\nc. Why is the tongue, epiglottis, and trachea in the supplement when these could be consequential? Most of the figure is blank sections, not sure about the need to take up so much space, maybe move these to supplemental?\n\nd. Figure 1B is slightly misleading as a complete survey of the body is not presented and so labeling outside the gut could be occurring in the Vil1 and NeuroD1/Vil1 strains.\n\nFigure 2:\n\nIt would have been helpful to have the panel of sequencing data in 2D be with the markers used in the crosses for the rest of the study and associated directly with 2E.\n\nFigure 3:\n\na. Please provide zoom-in panels for 3A so we can see the EEC cells and the overlap with the associated markers.\n\nb. Figure 3, supplement 2 is critical data, especially for Npy1r-Cre/Vil-FlpO. More details as to what is being labeled in these areas would be very helpful for interpreting behavioral data from this strain.\n\nc. Figure 3, supplement 3B is important data for interpreting phenotypes. I assume chemogenetic activation of colon cells could have effects on behavior? Can these data be moved to the main figure and can the function of these cells be tested?\n\nFigure 4:\n\nThis is a nice assay, and the presentation is stunning and convincing.\n\nFigure 5:\n\nIt is strange that many of the EEC subtypes have no effect. One wonders if relying solely on this assay has revealed the functions of these cells. Of particular concern is that the Npy1r cross has the biggest effect, and this is the strain with expression in the tongue, epiglottis, and trachea.\n\nFigure 6:\n\nGenerally, these data are the least convincing and have a lot of variation. Not clear what conclusions can be drawn from this. The LiCl should be in the main figure. A positive reinforcing stimulus might also be included.\n\nReviewer #2 (Recommendations for the authors):\n\nOverall, this is a well-written report. The Villin-Flp mouse is a great approach for manipulating EEC subtypes and it was convincingly shown to be highly selective to the gut. It was put to good use in characterizing gut motility and feeding behaviour.\n\nReviewer #3 (Recommendations for the authors):\n\n1. Figure 3C contains important but rather incomplete data (perhaps reflecting antibody availability) about a few driver lines; as few as 14 cells and sections from 2 animals were used for generating these data. Some of this information is also repeated in the text (along with data for other lines not shown here). It is crucial for accurate interpretation that data are extended to better characterize the lines and that the data are supplied as a figure that the reader can understand. These data will provide a critical framework for interpreting all the subsequent functional data.\n\n2. It appears that only very few EECs are labeled using the Npy1r-Cre driver line (5% of serotonergic cells) despite sc-data that suggests quite a broad expression. Particularly since this line is also active outside the gut when intersected with villin-Flp, behavioral data using the chemogenetic strategy appear poorly controlled, and conclusions about feeding suppression are risky.\n\n3. Descriptions of expression given in Figure 4 need more validation; e.g., Tac1 and Fev are expressed in the sc-population called precursor cells and are therefore likely to both target the same broad group of ECCs.\n\n4. Feeding behavior data Figure 5 suggests great inter-animal variation for some groups and consistency for others meaning that the analysis is likely underpowered. For example, the 4 Tac1 control mice all eat at the high end of the range. The Npy1r data are unexpected given the poor targeting of ECCs by this line, but expression in taste receptor cells cannot be discounted for this CNO-driven feeding deficit. Finally, all data presented about Cck and Gcg-Cre lines suggests broad overlap in targeted EECs making the discrepancies between lines difficult to explain.\n\n5. The assay data presented in Figure 6 are just too scattered for any conclusions to be drawn. Indeed, it would appear that the only \"significant\" difference with CNO treatment arises not from the effect of CNO but by virtue of a difference in the control mice.\n\n6. Some discussion of how the single-cell data presented here compare with previously published results would be appropriate. In addition, the main figure should include expression patterns for genes used as driver lines (violin plots); it would also be helpful to have feature plots for these genes in a supplement. It is important that some of the data e.g., expression of Slc5a1 and Ffars as well as lack of expression of Piezo2 are tested by e.g., ISH if they deserve a section of text; otherwise this section could be deleted since it is not fundamental to the story.\n\n7. The early focus on lines that are non-specific or not a feature of this paper (including much of Figure 1) and the demonstration of lots of negative expression outside the gut (as well as expression of the Cre-drivers alone) are not really relevant to the story and should be dramatically shortened providing room for more fundamental controls.\n\n8. Many strategies are relatively commonplace but are described in great detail, similarly, the nomenclature for the lines needs to be simplified to make this paper more straightforward to read.\n",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6f4997e2-aede-4626-8632-bbd446864400",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C1",
+      "claim": "Enteroendocrine cells are specialized sensory cells of the gut-brain axis that are sparsely distributed along the intestinal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Enteroendocrine cells are specialized sensory cells of the gut-brain axis that are sparsely distributed along the intestinal epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about enteroendocrine cells, stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "8911bed9-542b-4dbc-827e-5ad7a14f54d0",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C2",
+      "claim": "Individual enteroendocrine cells typically produce multiple, sometimes apparently opposing, gut hormones in combination.",
+      "claim_type": "EXPLICIT",
+      "source": "However, individual enteroendocrine cells typically produce multiple, sometimes apparently opposing, gut hormones in combination, and some gut hormones are also produced elsewhere in the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by references to prior work and the manuscript's own transcriptomic data showing co-expression patterns.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "20de11f0-4dd7-4b7b-8905-99b1b1655d94",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C3",
+      "claim": "Some gut hormones are also produced elsewhere in the body.",
+      "claim_type": "EXPLICIT",
+      "source": "However, individual enteroendocrine cells typically produce multiple, sometimes apparently opposing, gut hormones in combination, and some gut hormones are also produced elsewhere in the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge referenced in the manuscript with citations (Lee and Soltesz, 2011; Okaty et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "236678de-4e2e-4291-ac0c-cfeabb882f2f",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C4",
+      "claim": "Vil1-p2a-FlpO knock-in mice restrict reporter expression to intestinal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted FlpO expression to the endogenous Villin1 locus (in Vil1-p2a-FlpO knock-in mice) to restrict reporter expression to intestinal epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing GFP expression patterns in Figure 1A and Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "103fb038-5697-466f-b3ea-49f5be6c532e",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C5",
+      "claim": "Combined use of Cre and Flp alleles effectively targeted major transcriptome-defined enteroendocrine cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined use of Cre and Flp alleles effectively targeted major transcriptome-defined enteroendocrine cell lineages that produce serotonin, glucagon-like peptide 1, cholecystokinin, somatostatin, or glucose-dependent insulinotropic polypeptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-color expression analysis and single-cell RNA sequencing shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "138f880e-d431-4920-a5be-afb9424f0c01",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C6",
+      "claim": "Chemogenetic activation of different enteroendocrine cell types variably impacted feeding behavior and gut motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemogenetic activation of different enteroendocrine cell types variably impacted feeding behavior and gut motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from chemogenetic experiments shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "7f1e3a52-43c8-461e-a2ad-205aaabff1de",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C7",
+      "claim": "Enteroendocrine cells are first-order chemosensory cells of the gut-brain axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Enteroendocrine cells are first-order chemosensory cells of the gut-brain axis and are sparsely distributed along the gastrointestinal tract (Gribble and Reimann, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Gribble and Reimann, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "548400f4-36e7-4630-8193-a9005dd2f662",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C8",
+      "claim": "Enteroendocrine cells are electrically excitable.",
+      "claim_type": "EXPLICIT",
+      "source": "Like taste cells, enteroendocrine cells are epithelial cells with neuron-like features, as they are electrically excitable, release vesicles upon elevation of intracellular calcium, and form synaptic connections with second-order neurons through specialized extrusions called neuropods (Boh\u00f3rquez et al., 2015; Reimann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Boh\u00f3rquez et al., 2015 and Reimann et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "47aab2e4-8082-406a-a31c-40a1de6e3032",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C9",
+      "claim": "Enteroendocrine cells release vesicles upon elevation of intracellular calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "Like taste cells, enteroendocrine cells are epithelial cells with neuron-like features, as they are electrically excitable, release vesicles upon elevation of intracellular calcium, and form synaptic connections with second-order neurons through specialized extrusions called neuropods (Boh\u00f3rquez et al., 2015; Reimann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Boh\u00f3rquez et al., 2015 and Reimann et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "2c6c4a63-2d9c-4d9e-bbee-2b1677730fbb",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C10",
+      "claim": "Enteroendocrine cells form synaptic connections with second-order neurons through specialized extrusions called neuropods.",
+      "claim_type": "EXPLICIT",
+      "source": "Like taste cells, enteroendocrine cells are epithelial cells with neuron-like features, as they are electrically excitable, release vesicles upon elevation of intracellular calcium, and form synaptic connections with second-order neurons through specialized extrusions called neuropods (Boh\u00f3rquez et al., 2015; Reimann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Boh\u00f3rquez et al., 2015 and Reimann et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "5942847b-9ad0-43b5-84c0-c7fa9b703962",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C11",
+      "claim": "Single-cell RNA sequencing approaches revealed a diversity of enteroendocrine cell types that produce different gut hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNA sequencing approaches revealed a diversity of enteroendocrine cell types that produce different gut hormones (Beumer et al., 2018; Gehart et al., 2019; Haber et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beumer et al., 2018; Gehart et al., 2019; Haber et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "c93d908a-9c55-46ac-bd65-d1ea794212f4",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C12",
+      "claim": "There are five major enteroendocrine cell lineages defined by expression of either GIP, ghrelin, serotonin, somatostatin, or a combination of GLP1, CCK, and/or neurotensin.",
+      "claim_type": "EXPLICIT",
+      "source": "Superimposing cell birthdate on the enteroendocrine cell atlas through an elegant genetically encoded fluorescent clock revealed five major enteroendocrine cell lineages defined by expression of either glucose-dependent insulinotropic polypeptide (GIP), ghrelin, serotonin (called enterochromaffin cells), somatostatin, or a combination of glucagon-like peptide 1 (GLP1), cholecystokinin (CCK), and/or neurotensin (Gehart et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gehart et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "3397cc5c-3371-411e-a3e5-8604e6a01792",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C13",
+      "claim": "GLP1 and CCK are satiety hormones released following nutrient intake.",
+      "claim_type": "EXPLICIT",
+      "source": "GLP1 and CCK are satiety hormones released following nutrient intake, ghrelin is an appetite-promoting hormone whose release is suppressed by nutrients, and serotonin can be released by non-nutritive signals like irritants, force, and catecholamines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about gut hormone functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "d1aa5672-622c-4917-8da2-915defaa6d4c",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C14",
+      "claim": "Ghrelin is an appetite-promoting hormone whose release is suppressed by nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "GLP1 and CCK are satiety hormones released following nutrient intake, ghrelin is an appetite-promoting hormone whose release is suppressed by nutrients, and serotonin can be released by non-nutritive signals like irritants, force, and catecholamines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about gut hormone functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "46624a0a-e943-41df-95c5-bfa56e54415a",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C15",
+      "claim": "Serotonin can be released by non-nutritive signals like irritants, force, and catecholamines.",
+      "claim_type": "EXPLICIT",
+      "source": "GLP1 and CCK are satiety hormones released following nutrient intake, ghrelin is an appetite-promoting hormone whose release is suppressed by nutrients, and serotonin can be released by non-nutritive signals like irritants, force, and catecholamines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about gut hormone functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "d5637d85-1cc7-400a-98c4-d204df4d9225",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C16",
+      "claim": "Sugar-induced release of GIP and GLP1 causes the incretin effect which rapidly promotes insulin release and lowers blood glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Sugar-induced release of GIP and GLP1 causes the incretin effect which rapidly promotes insulin release and lowers blood glucose (Holst et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Holst et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "2f3fe61e-6481-4645-8456-c2236b94bd5c",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C17",
+      "claim": "CCK, serotonin, and other gut hormones regulate gut motility, gastric emptying, gastric acidification, absorption, gallbladder contraction, and exocrine pancreas secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "CCK, serotonin, and other gut hormones additionally regulate a variety of digestive functions, including gut motility, gastric emptying, gastric acidification, absorption, gallbladder contraction, and exocrine pancreas secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about gut hormone functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "7df98689-f58b-4183-b324-f090d7c9391f",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C18",
+      "claim": "Chemogenetic activation of enteroendocrine cells in the distal colon which express insulin-like peptide 5 triggers appetite suppression through a peptide YY (PYY) receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chemogenetic activation of enteroendocrine cells in the distal colon which express insulin-like peptide 5 triggers a multipronged physiological response that includes appetite suppression through a peptide YY (PYY) receptor, improved glucose tolerance through GLP1, and defecation indirectly through the serotonin receptor HTR3A (Lewis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lewis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "1c4d09d7-381a-4f17-90e3-fe271fb76a5c",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C19",
+      "claim": "Chemogenetic activation of enteroendocrine cells in the distal colon which express insulin-like peptide 5 triggers improved glucose tolerance through GLP1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chemogenetic activation of enteroendocrine cells in the distal colon which express insulin-like peptide 5 triggers a multipronged physiological response that includes appetite suppression through a peptide YY (PYY) receptor, improved glucose tolerance through GLP1, and defecation indirectly through the serotonin receptor HTR3A (Lewis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lewis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "cfe58012-2e70-42f9-8021-9b8577d37804",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C20",
+      "claim": "Chemogenetic activation of enteroendocrine cells in the distal colon which express insulin-like peptide 5 triggers defecation indirectly through the serotonin receptor HTR3A.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chemogenetic activation of enteroendocrine cells in the distal colon which express insulin-like peptide 5 triggers a multipronged physiological response that includes appetite suppression through a peptide YY (PYY) receptor, improved glucose tolerance through GLP1, and defecation indirectly through the serotonin receptor HTR3A (Lewis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lewis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "7ddb947b-6062-4584-b578-0727d84f3d7f",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C21",
+      "claim": "Neurog3-Cre and Neurod1-Cre lines labeled a sparse population of intestinal epithelial cells characteristic of enteroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurog3-Cre and Neurod1-Cre lines labeled a sparse population of intestinal epithelial cells characteristic of enteroendocrine cells, although the Neurog3-Cre line additionally labeled other cells in intestinal crypts and in occasional mice produced broad labeling of intestinal epithelium; neither Atoh1-Cre line tested displayed selective labeling of enteroendocrine cells (Figure 1\u2014figure supplement 1A; Schonhoff et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A and citation to Schonhoff et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "030f7b7b-575f-4e17-afe9-fdb3687ad240",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C22",
+      "claim": "Neither Atoh1-Cre line tested displayed selective labeling of enteroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurog3-Cre and Neurod1-Cre lines labeled a sparse population of intestinal epithelial cells characteristic of enteroendocrine cells, although the Neurog3-Cre line additionally labeled other cells in intestinal crypts and in occasional mice produced broad labeling of intestinal epithelium; neither Atoh1-Cre line tested displayed selective labeling of enteroendocrine cells (Figure 1\u2014figure supplement 1A; Schonhoff et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A and citation to Schonhoff et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "2b40391e-cf26-426b-8b24-df2515b7fca5",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C23",
+      "claim": "Neurod1-Cre mice provide broad, indelible, and selective marking of enteroendocrine cells within the intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurod1-Cre mice provide broad, indelible, and selective marking of enteroendocrine cells within the intestine, but NeuroD1 is also expressed in a variety of other tissues, including the brain, retina, pancreas, peripheral neurons, and enteric neurons (Figure 1B and C, Figure 1\u2014figure supplement 1D and E; Cho and Tsai, 2004; Li et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 1B, 1C, and Figure 1\u2014figure supplement 1D and E, and citations to Cho and Tsai, 2004; Li et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "dfa9996b-a6b5-419c-b9f5-8d69e31e62d5",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C24",
+      "claim": "NeuroD1 is expressed in the brain, retina, pancreas, peripheral neurons, and enteric neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurod1-Cre mice provide broad, indelible, and selective marking of enteroendocrine cells within the intestine, but NeuroD1 is also expressed in a variety of other tissues, including the brain, retina, pancreas, peripheral neurons, and enteric neurons (Figure 1B and C, Figure 1\u2014figure supplement 1D and E; Cho and Tsai, 2004; Li et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 1B, 1C, and Figure 1\u2014figure supplement 1D and E, and citations to Cho and Tsai, 2004; Li et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "5254cd51-0068-4ffb-9258-bcdab51f2c16",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C25",
+      "claim": "Knockout of NeuroD1 is lethal, causing severe deficits in neuron birth and survival, as well as in the development of pancreatic islets and enteroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockout of NeuroD1 is lethal, causing severe deficits in neuron birth and survival, as well as in the development of pancreatic islets and enteroendocrine cells (Gao et al., 2009; Naya et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gao et al., 2009; Naya et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "f4dd3e4b-2da1-4ffb-9a97-235818b6db50",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C26",
+      "claim": "Villin1 (Vil1) is expressed with high selectivity in the lower gastrointestinal tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Villin1 (Vil1) is expressed with high selectivity in the lower gastrointestinal tract (el Marjou et al., 2004; Maunoury et al., 1992), so we generated a knock-in mouse allele (Vil1-p2a-FlpO) that drives FlpO recombinase expression from the endogenous Vil1 locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to el Marjou et al., 2004; Maunoury et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "193dabdd-dabd-4e35-954d-4a18b2f2f508",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C27",
+      "claim": "Vil1-p2a-FlpO mice displayed expression of a Flp-dependent Gfp allele in epithelial cells throughout the entire length of the intestine with striking specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Vil1-p2a-FlpO mice displayed expression of a Flp-dependent Gfp allele in epithelial cells throughout the entire length of the intestine with striking specificity (Figure 1A, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A and Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "fe706b45-c462-436f-8130-651e9f9dd455",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C28",
+      "claim": "Reporter expression in Vil1-p2a-FlpO mice was not observed in most tissues examined, including most brain regions, spinal cord, peripheral ganglia, and enteric neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter expression was not observed in most other tissues examined, including most brain regions, spinal cord, peripheral ganglia, and enteric neurons; rare GFP-expressing cells were noted in taste papillae, epiglottis, pancreas, liver, and thalamus (Figure 1C, Figure 1\u2014figure supplement 1C and D; H\u00f6fer and Drenckhahn, 1999; Madison et al., 2002; Rutlin et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1C and D, and citations to H\u00f6fer and Drenckhahn, 1999; Madison et al., 2002; Rutlin et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "c9765170-1b4b-400c-9c39-75d1c8926ed6",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C29",
+      "claim": "Rare GFP-expressing cells in Vil1-p2a-FlpO mice were noted in taste papillae, epiglottis, pancreas, liver, and thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter expression was not observed in most other tissues examined, including most brain regions, spinal cord, peripheral ganglia, and enteric neurons; rare GFP-expressing cells were noted in taste papillae, epiglottis, pancreas, liver, and thalamus (Figure 1C, Figure 1\u2014figure supplement 1C and D; H\u00f6fer and Drenckhahn, 1999; Madison et al., 2002; Rutlin et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1C and D, and citations to H\u00f6fer and Drenckhahn, 1999; Madison et al., 2002; Rutlin et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "be45b7af-2358-4604-840a-725d497fd33e",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C30",
+      "claim": "Combining Neurod1-Cre and Vil1-p2a-FlpO alleles yielded highly selective expression of an intersectional reporter gene in enteroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining Neurod1-Cre and Vil1-p2a-FlpO alleles (Neurod1INTER) yielded highly selective expression of an intersectional reporter gene encoding tdTomato (Rosa26CAG-lsl-fsf-tdTomato herein defined as inter-tdTomato) in enteroendocrine cells, with only occasional cells observed in pancreas, and no detectable expression in other cell types labeled by either allele alone (Figure 1C, Figure 1\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "9b745684-21b7-4dbb-b182-8370644f9627",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C31",
+      "claim": "Twenty-five percent of Neurog3-lineage cells expressed classical markers for enteroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-five percent of Neurog3-lineage cells (1454/5856) and 87% of NeuroD1-lineage cells (1595/1841) expressed classical markers for enteroendocrine cells (Figure 2\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from single-cell RNA sequencing shown in Figure 2\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "497e15a2-fe9c-44b6-883b-0ab869bff605",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C32",
+      "claim": "Eighty-seven percent of NeuroD1-lineage cells expressed classical markers for enteroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-five percent of Neurog3-lineage cells (1454/5856) and 87% of NeuroD1-lineage cells (1595/1841) expressed classical markers for enteroendocrine cells (Figure 2\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from single-cell RNA sequencing shown in Figure 2\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "910f6993-754c-4370-b249-99135ad79489",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C33",
+      "claim": "The full diversity of known enteroendocrine cell types was similarly captured by both Neurog3-Cre and Neurod1-Cre lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the full diversity of known enteroendocrine cell types was similarly captured by both Cre lines, with Neurog3-Cre mice additionally labeling many other cells, including paneth cells, goblet cells, enterocytes, and progenitors (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from single-cell RNA sequencing shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "369fe3e3-67f4-48eb-b6e7-48e9b344900b",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C34",
+      "claim": "Neurog3-Cre mice additionally labeled paneth cells, goblet cells, enterocytes, and progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the full diversity of known enteroendocrine cell types was similarly captured by both Cre lines, with Neurog3-Cre mice additionally labeling many other cells, including paneth cells, goblet cells, enterocytes, and progenitors (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from single-cell RNA sequencing shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "25d467e4-42a8-4abc-b06f-28961055e2f8",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C35",
+      "claim": "NeuroD1 acts later than Neurogenin3 in the enteroendocrine cell lineage, but prior to cell fate decisions leading to enteroendocrine cell specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with NeuroD1 acting later than Neurogenin3 in the enteroendocrine cell lineage, but prior to cell fate decisions leading to enteroendocrine cell specialization (Jenny et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and supported by citation to Jenny et al., 2002.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "75152ffa-7256-4f90-8053-a11b4ee5a75d",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C36",
+      "claim": "Selective clustering analysis of 3049 enteroendocrine cells revealed 10 distinct cell clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective clustering analysis of 3049 enteroendocrine cells from both mouse lines revealed 10 distinct cell clusters, with one cluster representing putative progenitors (Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from single-cell RNA sequencing shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "3e46d115-f9b0-4dd7-ba41-fd7ac6284c1f",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C37",
+      "claim": "There are three classes of enterochromaffin cells that similarly express serotonin biosynthesis enzymes (Tph1) and associated transcription factors (Lmx1a), but differentially produce Tac1, Cartpt, Pyy, Ucn3, and Gad2.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed three classes of enterochromaffin cells that similarly express serotonin biosynthesis enzymes (Tph1) and associated transcription factors (Lmx1a), but differentially produce Tac1, Cartpt, Pyy, Ucn3, and Gad2 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from single-cell RNA sequencing shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "df44ea18-b14b-480b-b314-1522c6efa60a",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C38",
+      "claim": "L, I, and N cells are thought to be derived from a common cell lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Six other cell types preferentially express either Gip (K cells), Cck (I cells), Gcg (GLP1 precursor, L cells), Nts (N cells), Sst (D cells), and Ghrl (X cells), with L, I, and N cells thought to be derived from a common cell lineage (Beumer et al., 2020; Gehart et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beumer et al., 2020; Gehart et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "40989064-fbdf-4cb0-88a4-ac88b88eed8a",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C39",
+      "claim": "Enteroendocrine cells detect sugars through the sodium-glucose cotransporter SGLT1 (encoded by the gene Slc5a1), with sodium co-transport thought to lead directly to cell depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, enteroendocrine cells detect sugars through the sodium-glucose cotransporter SGLT1 (encoded by the gene Slc5a1), with sodium co-transport thought to lead directly to cell depolarization (Gorboulev et al., 2012; Reimann et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gorboulev et al., 2012; Reimann et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "30570c2a-f2bd-480b-91ff-ca3ea7669198",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C40",
+      "claim": "Expression of Slc5a1 was highest in K, L, D, and N cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Slc5a1 was observed in multiple enteroendocrine cell subtypes, and highest in K, L, D, and N cells, while abundant expression of T1Rs was not detected in any enteroendocrine cell type (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from single-cell RNA sequencing shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "28f79419-2180-412d-abd0-871929a54878",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C41",
+      "claim": "Abundant expression of T1Rs was not detected in any enteroendocrine cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Slc5a1 was observed in multiple enteroendocrine cell subtypes, and highest in K, L, D, and N cells, while abundant expression of T1Rs was not detected in any enteroendocrine cell type (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from single-cell RNA sequencing shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "16aaa080-66fc-4b6b-991c-2b5af017774c",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C42",
+      "claim": "Taste blind mice lacking T1Rs can develop a preference for sugar-rich foods through SGLT1-mediated post-ingestive signals of the gut-brain axis.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the ability of taste blind mice lacking T1Rs to develop a preference for sugar-rich foods through SGLT1-mediated post-ingestive signals of the gut-brain axis (Sclafani et al., 2016; Tan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sclafani et al., 2016; Tan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "7599ead4-bfa2-4e28-8853-b2e18bd4b1dc",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C43",
+      "claim": "Free fatty acid receptor genes Ffar1 and Ffar4 were broadly expressed in several enteroendocrine cell lineages, but largely excluded from enterochromaffin cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, free fatty acid receptor genes Ffar1 and Ffar4 were broadly expressed in several enteroendocrine cell lineages, but largely excluded from enterochromaffin cells (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from single-cell RNA sequencing shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "fb253b25-9e9f-4ca4-8371-4e3deb5cafa0",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C44",
+      "claim": "The toxin receptor gene Trpa1 was enriched in enterochromaffin cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Orthogonally, the toxin receptor gene Trpa1 was enriched in enterochromaffin cells (Bellono et al., 2017), but not abundantly expressed in other enteroendocrine cells (Figure 2B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from single-cell RNA sequencing shown in Figure 2B and D, and citation to Bellono et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "c4965205-7a6d-4e2a-a4f3-835fb8ba2f36",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C45",
+      "claim": "Enterochromaffin cells sense force through the mechanosensory ion channel PIEZO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Enterochromaffin cells also reportedly sense force through the mechanosensory ion channel PIEZO2 (Alcaino et al., 2018); Piezo2 transcript was not readily detected in our transcriptomic data, but is enriched in enteroendocrine cells from colon that we did not analyze (Billing et al., 2019; Treichel et al., 2022; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Alcaino et al., 2018; Billing et al., 2019; Treichel et al., 2022, and experimental data shown in Figure 2B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "77e17483-1330-431d-b9f8-1df564088804",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C46",
+      "claim": "Each of the seven intersectional combinations produced sparse labeling of intestinal epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these seven intersectional combinations produced sparse labeling of intestinal epithelial cells, as expected for labeling of enteroendocrine cell subtypes (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "c25ca678-aa4e-4aa8-8922-2df1e0af0f89",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C47",
+      "claim": "Striking selectivity for enteroendocrine cells was observed across analyzed tissues for intersectional combinations targeting D, K, L, and I cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Striking selectivity for enteroendocrine cells was observed across analyzed tissues for intersectional combinations targeting D, K, L, and I cells; sparse labeling was rarely observed in gastric endocrine cells and pancreatic islets, and absent from all other tissues examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from tissue analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "ab4b8f19-3008-49cd-bb78-9c420f241d38",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C48",
+      "claim": "Tac1INTER and Npy1rINTER alleles more broadly labeled rectal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "We did note that Tac1INTER and Npy1rINTER alleles more broadly labeled rectal epithelium, and Npy1rINTER additionally labeled taste cells as well as rare cells in the airways and epiglottis (Figure 3\u2014figure supplements 2 and 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplements 2 and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "d5c14d7a-95a8-44db-b327-1ca41401de12",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C49",
+      "claim": "Npy1rINTER additionally labeled taste cells as well as rare cells in the airways and epiglottis.",
+      "claim_type": "EXPLICIT",
+      "source": "We did note that Tac1INTER and Npy1rINTER alleles more broadly labeled rectal epithelium, and Npy1rINTER additionally labeled taste cells as well as rare cells in the airways and epiglottis (Figure 3\u2014figure supplements 2 and 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplements 2 and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "9587d67a-25c3-403c-a37a-78cf86fa12dd",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C50",
+      "claim": "SstINTER mice showed enriched targeting of somatostatin cells throughout the intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "SstINTER mice showed enriched targeting of somatostatin cells throughout the intestine (SstINTER cells in duodenum, jejunum, ileum, colon, and rectum: 98.9, 66.4, 66.0, 82.4, and 66.0% express somatostatin, 0.3, 0.0, 0.0, 0.8, and 0.0% express serotonin, 0, 0, 0, 0, and 0% express CCK, and 0, 0, 0.9, 2.3, 0% express GLP1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-color expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "18233d2e-af3c-4307-826b-3482a691c6bb",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C51",
+      "claim": "PetINTER driver captured cells with multiple hormones, suggesting that some enteroendocrine cells can either transiently or durably express markers of multiple lineages or can switch identity from enterochromaffin cells to other enteroendocrine cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The PetINTER driver also captured cells with other hormones, suggesting that some enteroendocrine cells can either transiently or durably express markers of multiple lineages or can switch identity from enterochromaffin cells to other enteroendocrine cell types (PetINTER cells in duodenum, jejunum, ileum, colon, and rectum: 6.3, 2.0, 4.6, 0.9, and 0% express somatostatin, 86.7, 47.9, 43.7, 52.5, and 49.4% express serotonin, 8.2, 6.5, 3.7, 0.3, and 0.6% express CCK, and 4.6, 17.2, 45.7, 18.5, and 25.7% express GLP1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data from two-color expression analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "eda8751c-9ac5-4a93-a6d5-18c0ee6d6627",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C52",
+      "claim": "GcgINTER mice labeled the majority of GLP1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GcgINTER mice did not effectively label either somatostatin or serotonin cells (GcgINTER labeled in duodenum, jejunum, ileum, colon, and rectum 75.5, 67.6, 89.4, 95.9, and 99.0% of GLP1 cells, 34.8, 50.0, 0, 0, and 0% of CCK cells, 0.0, 0.0, 20.8, 34.3, and 22.2% of somatostatin cells, and 1.5, 0.2, 1.8, 0, and 0.8% of serotonin cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from two-color expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "785a8a0b-5141-4f62-ae30-5ce292e05c2c",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C53",
+      "claim": "PetINTER and SstINTER cells were most enriched in the duodenum and colon.",
+      "claim_type": "EXPLICIT",
+      "source": "PetINTER and SstINTER cells were most enriched in the duodenum and colon (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "f6aabc06-eb71-4e58-96d9-597e8330abf9",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C54",
+      "claim": "GipINTER cells were enriched proximally, with almost no tdTomato+ cells observed in distal intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "GipINTER cells and GcgINTER cells displayed strikingly distinct spatial patterns. GipINTER cells were enriched proximally, with almost no tdTomato+ cells observed in distal intestine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "643aedb3-cc19-4d00-84b1-30c92b165bc9",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C55",
+      "claim": "GcgINTER cells were present along the entire proximal-distal axis and were enriched in colon and rectum.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GcgINTER cells were present along the entire proximal-distal axis and were enriched in colon and rectum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "fc0843d4-9f71-4848-bd8b-dadc132f5d24",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C56",
+      "claim": "Neurogenin3 point mutations in human infants or intestine-targeted Neurog3 knockout cause loss of enteroendocrine cells, severe malabsorptive diarrhea, and increased mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Hints come from Neurogenin3 point mutations in human infants or intestine-targeted Neurog3 knockout, which cause loss of enteroendocrine cells, severe malabsorptive diarrhea, and increased mortality (Mellitzer et al., 2010; Wang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mellitzer et al., 2010; Wang et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "a82dfc84-6bc7-4bd8-bb79-31e4161bc523",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C57",
+      "claim": "CNO-induced activation of enteroendocrine cells in Neurod1INTER; inter-hM3Dq-mCherry mice accelerated gut transit.",
+      "claim_type": "EXPLICIT",
+      "source": "In control animals lacking DREADD expression, the leading edge of charcoal dye traversed part of the intestine (littermate controls lacking Neurod1-Cre: 22.6 \u00b1 1.2 cm; littermate controls lacking Ptf1a-Cre: 22.8 \u00b1 2.0 cm) (Figure 4, Figure 4\u2014source data 1). Chemogenetic activation of all enteroendocrine cells in Neurod1INTER; inter-hM3Dq-mCherry mice accelerated gut transit, with the charcoal leading edge traversing 30.8 \u00b1 1.5 cm of the intestine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "a6138cc8-2b44-461c-a842-1e28a9278c68",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C58",
+      "claim": "When DREADD signaling was activated in all epithelial cells using Vil1-Cre; lsl-hM3Dq mice, gavaged dye failed to enter the intestine at all.",
+      "claim_type": "EXPLICIT",
+      "source": "When DREADD signaling was instead activated in all epithelial cells using Vil1-Cre; lsl-hM3Dq mice, gavaged dye failed to enter the intestine at all (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "2fd08cd2-0541-4cac-90b7-67e791748bde",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C59",
+      "claim": "CNO-accelerated gut transit was not observed in Ptf1aINTER; inter-hM3Dq-mCherry mice containing DREADD expression only in pancreatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CNO-accelerated gut transit was not observed Ptf1aINTER; inter-hM3Dq-mCherry mice (22.6 \u00b1 2.6 cm) containing DREADD expression only in pancreatic cells (Figure 4, Figure 4\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4 and Figure 4\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "01812bde-44ef-4f8e-b127-110ab5fdb313",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C60",
+      "claim": "The net effect of activating all enteroendocrine cells is to promote gut transit.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations, the observed effects in Neurod1INTER; inter-hM3Dq-mCherry mice are due to enteroendocrine cells rather than pancreatic cells, and the net effect of activating all enteroendocrine cells is to promote gut transit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data from chemogenetic experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "ad6a448a-f2b5-4b5f-94cc-866183ce4955",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C61",
+      "claim": "Pet1INTER cells promoted gut transit.",
+      "claim_type": "EXPLICIT",
+      "source": "Pet1INTER cells promoted gut transit (Pet1INTER: 29.8 \u00b1 1.6 cm, Cre-negative littermates: 22.1 \u00b1 1.5 cm), while SstINTER and GipINTER cells had no significant effect (SstINTER: 24.5 \u00b1 2.0 cm, Cre-negative littermates: 18.8 \u00b1 1.6 cm; GipINTER: 23.2 \u00b1 1.0 cm, Cre-negative littermates: 22.0 \u00b1 1.8 cm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from chemogenetic experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "2d8cc73d-2a00-4914-9fe6-66cc8c947293",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C62",
+      "claim": "SstINTER and GipINTER cells had no significant effect on gut transit.",
+      "claim_type": "EXPLICIT",
+      "source": "Pet1INTER cells promoted gut transit (Pet1INTER: 29.8 \u00b1 1.6 cm, Cre-negative littermates: 22.1 \u00b1 1.5 cm), while SstINTER and GipINTER cells had no significant effect (SstINTER: 24.5 \u00b1 2.0 cm, Cre-negative littermates: 18.8 \u00b1 1.6 cm; GipINTER: 23.2 \u00b1 1.0 cm, Cre-negative littermates: 22.0 \u00b1 1.8 cm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from chemogenetic experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "1cb4a4db-b98e-4453-beae-2a93d3eefd08",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C63",
+      "claim": "Accelerated gut transit was observed upon chemogenetic activation of Tac1INTER cells but not Npy1rINTER cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, single-cell transcriptome data revealed multiple subtypes of enterochromaffin cells, and we observed accelerated gut transit upon chemogenetic activation of Tac1INTER cells (Tac1INTER: 36.2 \u00b1 1.4 cm, Cre-negative littermates: 21.0 \u00b1 1.1 cm) but not Npy1rINTER cells (Npy1rINTER: 21.8 \u00b1 2.0 cm, Cre-negative littermates: 24.3 \u00b1 2.1 cm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from chemogenetic experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "05c47d07-bbc0-41bb-9467-78e0206ed0d9",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C64",
+      "claim": "Each enterochromaffin cell subtype may privately communicate with different downstream extrinsic and/or enteric neurons to control gut physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings raise the possibility that each enterochromaffin cell subtype may privately communicate with different downstream extrinsic and/or enteric neurons to control gut physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the differential effects of activating different enterochromaffin cell subtypes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "e134fd39-dd53-42da-97b2-dbbcfa1b6c6d",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C65",
+      "claim": "CckINTER and GcgINTER cells slowed gut motility.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CckINTER and GcgINTER cells slowed gut motility (CckINTER: 7.1 \u00b1 0.3 cm, Cre-negative littermates: 21.5 \u00b1 2.8 cm; GcgINTER: 7.9 \u00b1 0.7 cm, Cre-negative littermates: 22.4 \u00b1 1.9 cm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from chemogenetic experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "b30720e3-c35e-4559-9876-c505e9dd3d1b",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C66",
+      "claim": "Neural circuits that mediate toxin responses may achieve priority over those that mediate nutrient responses, at least under conditions of equal and maximal activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous activation of both pathways, as done in Neurod1INTER; inter-hM3Dq-mCherry mice, masks the slowing of gut transit by CckINTER and GcgINTER cells. These findings suggest a hierarchy where neural circuits that mediate toxin responses may achieve priority over those that mediate nutrient responses, at least under conditions of equal and maximal activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental data from chemogenetic experiments.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "7ac9a3c8-257b-4b66-ba83-7816c6d6d6c0",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C67",
+      "claim": "CNO-induced activation of enteroendocrine cells in Neurod1INTER; inter-hM3Dq-mCherry mice caused a 26% reduction in food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals lacking DREADD expression, or with sparse DREADD expression only in pancreas, ate robustly (~1 g of food over a 2 hr period). In contrast, CNO-induced activation of enteroendocrine cells caused a 26% reduction in food intake (Figure 5B, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "205d2b95-de26-4c09-83f0-070807012c40",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C68",
+      "claim": "Chemogenetic activation of enterochromaffin cells reduced feeding behavior by 52.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemogenetic activation of enterochromaffin cells reduced feeding behavior (Figure 5B, 52.1% reduction).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "bd4d7ed0-f332-45c1-86b9-c8e2c9c06b1a",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C69",
+      "claim": "Activation of SstINTER and GipINTER cells did not change feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, activation of SstINTER and GipINTER cells did not change feeding behavior (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "a6bfbbd4-d35d-4ab1-a21d-07a0bfd07cb8",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C70",
+      "claim": "Activating GcgINTER cells reduced feeding by 52.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating GcgINTER cells also reduced feeding (compared to Cre-negative littermates, GcgINTER: 52.4% reduction), but surprisingly, activating CckINTER cells lowered feeding only in fed but not fasted mice (Figure 5\u2014figure supplement 1B, Figure 5\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "7799a40d-e6e2-48cb-a89c-425e4d370626",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C71",
+      "claim": "Activating CckINTER cells lowered feeding only in fed but not fasted mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating GcgINTER cells also reduced feeding (compared to Cre-negative littermates, GcgINTER: 52.4% reduction), but surprisingly, activating CckINTER cells lowered feeding only in fed but not fasted mice (Figure 5\u2014figure supplement 1B, Figure 5\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "76bc884f-aee1-4ab9-afe2-8ae7c2952f5e",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C72",
+      "claim": "Chemogenetic activation of GcgINTER cells caused a durable reduction of feeding for several hours, with total food intake normalizing by 11 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemogenetic activation of GcgINTER (single CNO injection) caused a durable reduction of feeding for several hours, with total food intake normalizing by 11 hr, and also evoked a decrease in water intake and the respiratory exchange ratio, but not locomotion (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "a2c120bb-61f6-4fcf-8182-7e2501a548ad",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C73",
+      "claim": "Chemogenetic activation of GcgINTER cells evoked a decrease in water intake and the respiratory exchange ratio, but not locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemogenetic activation of GcgINTER (single CNO injection) caused a durable reduction of feeding for several hours, with total food intake normalizing by 11 hr, and also evoked a decrease in water intake and the respiratory exchange ratio, but not locomotion (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "8aab9691-c501-407a-b0fa-d7bf56481ba3",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C74",
+      "claim": "Activating somatostatin cells reduced the respiratory exchange ratio but did not change feeding, water intake, or locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, activating somatostatin cells reduced the respiratory exchange ratio but did not change feeding, water intake, or locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "aaee5e49-60c1-43b2-9c49-ad367d185696",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C75",
+      "claim": "Serotonin-producing enterochromaffin cells express the irritant receptor TRPA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Serotonin-producing enterochromaffin cells express the irritant receptor TRPA1 (Bellono et al., 2017) and chemogenetic activation blocks feeding behavior and promotes gut transit, presumably for toxin clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bellono et al., 2017 and experimental data from chemogenetic experiments.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "9701b9bf-503a-47f1-b213-452dda9cb883",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C76",
+      "claim": "Chemogenetic activation of enterochromaffin cells blocks feeding behavior and promotes gut transit, presumably for toxin clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "Serotonin-producing enterochromaffin cells express the irritant receptor TRPA1 (Bellono et al., 2017) and chemogenetic activation blocks feeding behavior and promotes gut transit, presumably for toxin clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from chemogenetic experiments and inference about the functional role.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "02c2cbd0-7ef8-49ae-adfc-f87873987602",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C77",
+      "claim": "Different enterochromaffin cell subtypes can have different effects on gut motility, suggesting at least partially nonoverlapping communication pathways with downstream neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, different enterochromaffin cell subtypes can have different effects on gut motility, suggesting at least partially nonoverlapping communication pathways with downstream neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data showing differential effects of activating different enterochromaffin cell subtypes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "97647d6b-6979-4506-bdcf-89ed36e2dae1",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C78",
+      "claim": "Pharmacological blockade of the serotonin receptor HTR3A is a clinical mainstay for nausea treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with a role for enterochromaffin cells in toxin-induced illness responses, and interestingly, pharmacological blockade of the serotonin receptor HTR3A is a clinical mainstay for nausea treatment (Freeman et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Freeman et al., 1992.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "1445b1b2-a242-4484-b149-901a1e3aa906",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "claim_id": "C79",
+      "claim": "GLP1 cells slow gut motility, presumably to promote nutrient absorption and decrease feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, GLP1 cells slow gut motility, presumably to promote nutrient absorption and decrease feeding behavior (Gribble and Reimann, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from chemogenetic experiments and citation to Gribble and Reimann, 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e320e24c-da62-4978-a7ff-3997c9be96e9",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Enteroendocrine cells are specialized sensory cells of the gut-brain axis that are sparsely distributed along the intestinal epithelium, are electrically excitable, release vesicles upon calcium elevation, and form synaptic connections with second-order neurons through neuropods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7-C10 describe established knowledge about enteroendocrine cell properties, supported by citations to prior work (Gribble and Reimann, 2019; Boh\u00f3rquez et al., 2015; Reimann et al., 2012). These are well-documented characteristics of enteroendocrine cells in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "f9ff2398-21bf-4a6c-8a62-8bf681d1a2aa",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Individual enteroendocrine cells produce multiple gut hormones in combination, some gut hormones are produced elsewhere in the body, and single-cell RNA sequencing revealed five major enteroendocrine cell lineages defined by expression of GIP, ghrelin, serotonin, somatostatin, or a combination of GLP1, CCK, and/or neurotensin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C11-C12 are supported by citations to prior work (Lee and Soltesz, 2011; Okaty et al., 2019; Beumer et al., 2018; Gehart et al., 2019; Haber et al., 2017) and the manuscript's own transcriptomic data showing co-expression patterns. This establishes the complexity of enteroendocrine cell hormone production.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "412d4057-43bc-49b8-b043-51f837b4965f",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Vil1-p2a-FlpO knock-in mice restrict reporter expression to intestinal epithelium with high specificity, with expression throughout the entire length of the intestine and rare GFP-expressing cells in taste papillae, epiglottis, pancreas, liver, and thalamus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C26-C29 are supported by experimental data shown in Figure 1A, Figure 1\u2014figure supplement 1C and D, and citations to el Marjou et al., 2004; Maunoury et al., 1992; H\u00f6fer and Drenckhahn, 1999; Madison et al., 2002; Rutlin et al., 2020. The data demonstrate the specificity of the Vil1-p2a-FlpO allele for intestinal epithelium.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "f7ba7654-ee9b-474e-a64e-dee5253e6533",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Combined use of Neurod1-Cre and Vil1-p2a-FlpO alleles (Neurod1INTER) yielded highly selective expression of an intersectional reporter gene in enteroendocrine cells, effectively targeting major transcriptome-defined enteroendocrine cell lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C30 are supported by experimental data from two-color expression analysis and single-cell RNA sequencing shown in Figures 1C, 2, 3, and Figure 1\u2014figure supplement 1D and E. The intersectional genetic strategy successfully restricts reporter expression to enteroendocrine cells with high selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "26fd8014-7789-4a03-a69b-c4731ebba5d1",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neurod1-Cre mice provide broad, indelible, and selective marking of enteroendocrine cells within the intestine, while Neurog3-Cre mice additionally label other intestinal cell types and neither Atoh1-Cre line tested displayed selective labeling of enteroendocrine cells. NeuroD1 is also expressed in brain, retina, pancreas, peripheral neurons, and enteric neurons, and its knockout is lethal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 are supported by experimental data shown in Figure 1\u2014figure supplement 1A, B, D, and E, and citations to Schonhoff et al., 2004; Cho and Tsai, 2004; Li et al., 2011; Gao et al., 2009; Naya et al., 1997. The data demonstrate the selectivity and limitations of different Cre lines for enteroendocrine cell labeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "de01a61b-64f6-437f-aca2-1df578399b4b",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Twenty-five percent of Neurog3-lineage cells and 87% of NeuroD1-lineage cells expressed classical markers for enteroendocrine cells, with both Cre lines capturing the full diversity of known enteroendocrine cell types. NeuroD1 acts later than Neurogenin3 in the enteroendocrine cell lineage, but prior to cell fate decisions leading to enteroendocrine cell specialization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 are supported by experimental data from single-cell RNA sequencing shown in Figure 2\u2014figure supplement 1B and C, and citation to Jenny et al., 2002. The data demonstrate that Neurod1-Cre provides more selective labeling of enteroendocrine cells compared to Neurog3-Cre, consistent with NeuroD1 acting later in the lineage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "3b4b4aa3-ea93-4aad-a88c-119ec35e1c00",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Selective clustering analysis of 3049 enteroendocrine cells revealed 10 distinct cell clusters, including three classes of enterochromaffin cells that similarly express serotonin biosynthesis enzymes (Tph1) and associated transcription factors (Lmx1a), but differentially produce Tac1, Cartpt, Pyy, Ucn3, and Gad2. L, I, and N cells are thought to be derived from a common cell lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 are supported by experimental data from single-cell RNA sequencing shown in Figure 2A and B, and citations to Beumer et al., 2020; Gehart et al., 2019. The clustering analysis reveals the diversity of enteroendocrine cell types and subtypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "62cbe8ef-6186-432b-8507-2a793a9e4790",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Enteroendocrine cells detect sugars through the sodium-glucose cotransporter SGLT1 (Slc5a1), with expression highest in K, L, D, and N cells, while abundant expression of T1Rs was not detected in any enteroendocrine cell type. This is consistent with taste blind mice lacking T1Rs developing a preference for sugar-rich foods through SGLT1-mediated post-ingestive signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by experimental data from single-cell RNA sequencing shown in Figure 2B and citations to Gorboulev et al., 2012; Reimann et al., 2008; Sclafani et al., 2016; Tan et al., 2020. The data demonstrate the mechanism of sugar detection by enteroendocrine cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "985acd87-fa43-46af-a764-93594341cf00",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Free fatty acid receptor genes Ffar1 and Ffar4 were broadly expressed in several enteroendocrine cell lineages but largely excluded from enterochromaffin cells, while the toxin receptor gene Trpa1 was enriched in enterochromaffin cells. Enterochromaffin cells also sense force through the mechanosensory ion channel PIEZO2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by experimental data from single-cell RNA sequencing shown in Figure 2B and D, and citations to Bellono et al., 2017; Alcaino et al., 2018; Billing et al., 2019; Treichel et al., 2022. The data demonstrate the differential expression of nutrient and toxin receptors across enteroendocrine cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "f238e7de-4ae9-46c8-b4a8-a65243cf30cf",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Seven intersectional combinations produced sparse labeling of intestinal epithelial cells, with striking selectivity for enteroendocrine cells observed for intersectional combinations targeting D, K, L, and I cells. Tac1INTER and Npy1rINTER alleles more broadly labeled rectal epithelium, and Npy1rINTER additionally labeled taste cells and rare cells in the airways and epiglottis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 are supported by experimental data shown in Figure 3\u2014figure supplements 1, 2, and 3B. The data demonstrate the selectivity and limitations of different intersectional genetic combinations for targeting enteroendocrine cell subtypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "fd51e7c4-9309-4542-b51b-9f6f04aeb79c",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SstINTER mice showed enriched targeting of somatostatin cells throughout the intestine, while PetINTER driver captured cells with multiple hormones, suggesting that some enteroendocrine cells can transiently or durably express markers of multiple lineages or switch identity. GcgINTER mice labeled the majority of GLP1 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by experimental data from two-color expression analysis shown in Figure 3\u2014figure supplement 4. The data demonstrate the selectivity of different intersectional genetic combinations and suggest plasticity in enteroendocrine cell identity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "8371f7aa-339b-46e2-8cdd-01f4cc0208a3",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PetINTER and SstINTER cells were most enriched in the duodenum and colon, GipINTER cells were enriched proximally with almost no cells in distal intestine, and GcgINTER cells were present along the entire proximal-distal axis and enriched in colon and rectum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by experimental data shown in Figure 3. The data demonstrate the distinct spatial distributions of different enteroendocrine cell subtypes along the gastrointestinal tract.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "848772ad-b647-4efe-b719-f81c98c1742f",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CNO-induced activation of enteroendocrine cells in Neurod1INTER; inter-hM3Dq-mCherry mice accelerated gut transit, while activation in all epithelial cells using Vil1-Cre; lsl-hM3Dq mice caused gavaged dye to fail to enter the intestine. CNO-accelerated gut transit was not observed in Ptf1aINTER; inter-hM3Dq-mCherry mice containing DREADD expression only in pancreatic cells, indicating the net effect of activating all enteroendocrine cells is to promote gut transit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 are supported by experimental data shown in Figure 4 and Figure 4\u2014figure supplement 1A, B, and C. The data demonstrate that chemogenetic activation of enteroendocrine cells promotes gut transit, with appropriate controls ruling out effects from pancreatic cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "f6c16c02-91be-404d-b38d-f8b5e16bc975",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Pet1INTER cells promoted gut transit, while SstINTER and GipINTER cells had no significant effect. Accelerated gut transit was observed upon chemogenetic activation of Tac1INTER cells but not Npy1rINTER cells, raising the possibility that each enterochromaffin cell subtype may privately communicate with different downstream neurons to control gut physiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by experimental data from chemogenetic experiments shown in Figure 4. Claim C64 is speculation based on the differential effects observed, which is reasonable but requires further validation. The data demonstrate that different enteroendocrine cell subtypes have distinct effects on gut motility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "331010c3-f82e-4c90-b970-6cf6eee9553b",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CckINTER and GcgINTER cells slowed gut motility, and simultaneous activation of both pathways in Neurod1INTER; inter-hM3Dq-mCherry mice masks the slowing of gut transit by these cells. This suggests a hierarchy where neural circuits that mediate toxin responses may achieve priority over those that mediate nutrient responses, at least under conditions of equal and maximal activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by experimental data from chemogenetic experiments shown in Figure 4. Claim C66 is speculation based on the experimental data, which is reasonable but requires further validation. The data demonstrate that different enteroendocrine cell subtypes have opposing effects on gut motility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "0a66966d-f221-4c5f-bf7f-054f9c0c2c4f",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CNO-induced activation of enteroendocrine cells in Neurod1INTER; inter-hM3Dq-mCherry mice caused a 26% reduction in food intake. Chemogenetic activation of enterochromaffin cells reduced feeding behavior by 52.1%, while activation of SstINTER and GipINTER cells did not change feeding behavior. Activating GcgINTER cells reduced feeding by 52.4%, but activating CckINTER cells lowered feeding only in fed but not fasted mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 are supported by experimental data shown in Figure 5B and Figure 5\u2014figure supplement 1B. The data demonstrate that different enteroendocrine cell subtypes have distinct effects on feeding behavior, with some showing context-dependent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "fd7a7907-f93c-42b3-b4eb-6f65bf32ab10",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Chemogenetic activation of GcgINTER cells caused a durable reduction of feeding for several hours with total food intake normalizing by 11 hr, and also evoked a decrease in water intake and the respiratory exchange ratio, but not locomotion. Activating somatostatin cells reduced the respiratory exchange ratio but did not change feeding, water intake, or locomotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by experimental data shown in Figure 5\u2014figure supplement 1C. The data demonstrate the temporal dynamics and specificity of effects from activating different enteroendocrine cell subtypes on feeding and metabolic parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "78f46eae-979e-4e94-8f7d-d7f623e80117",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Serotonin-producing enterochromaffin cells express the irritant receptor TRPA1 and chemogenetic activation blocks feeding behavior and promotes gut transit, presumably for toxin clearance. Different enterochromaffin cell subtypes can have different effects on gut motility, suggesting at least partially nonoverlapping communication pathways with downstream neurons. Pharmacological blockade of the serotonin receptor HTR3A is a clinical mainstay for nausea treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C77, and C78 are supported by citations to Bellono et al., 2017 and Freeman et al., 1992, and experimental data from chemogenetic experiments. Claim C76 is an inference based on experimental data, which is reasonable. The data and citations support the role of enterochromaffin cells in toxin-induced illness responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "8ee462e2-ced1-4f3e-8471-9b8063abdcd1",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "GLP1 cells slow gut motility, presumably to promote nutrient absorption and decrease feeding behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by experimental data from chemogenetic experiments and citation to Gribble and Reimann, 2019. The inference about the functional role is reasonable based on the observed effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "f6744e49-3254-4d8c-aec8-916e49b0a31f",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Chemogenetic activation of different enteroendocrine cell types variably impacted feeding behavior and gut motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 is a summary statement supported by experimental data from chemogenetic experiments shown in Figures 4 and 5. This is the main conclusion of the manuscript regarding the differential physiological effects of activating different enteroendocrine cell subtypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "b3a7e836-16f5-4e5f-b492-81e029e824ca",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "GLP1 and CCK are satiety hormones released following nutrient intake, ghrelin is an appetite-promoting hormone whose release is suppressed by nutrients, serotonin can be released by non-nutritive signals like irritants, force, and catecholamines, sugar-induced release of GIP and GLP1 causes the incretin effect which rapidly promotes insulin release and lowers blood glucose, and CCK, serotonin, and other gut hormones regulate various digestive functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 describe established knowledge about gut hormone functions, supported by citation to Holst et al., 2009. These are well-documented characteristics of gut hormones in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "a00ceaca-c205-4fd1-81f0-d938ea274bb5",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Chemogenetic activation of enteroendocrine cells in the distal colon which express insulin-like peptide 5 triggers appetite suppression through a peptide YY (PYY) receptor, improved glucose tolerance through GLP1, and defecation indirectly through the serotonin receptor HTR3A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by citation to Lewis et al., 2020. This is prior work demonstrating the multipronged physiological response from activating a specific enteroendocrine cell population.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    },
+    {
+      "id": "85997578-cd75-4483-8ad3-7007fb400c0e",
+      "content_id": "6c0c360b-7493-457b-b7cc-65cad68722f4",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Neurogenin3 point mutations in human infants or intestine-targeted Neurog3 knockout cause loss of enteroendocrine cells, severe malabsorptive diarrhea, and increased mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by citations to Mellitzer et al., 2010; Wang et al., 2006. This is prior work demonstrating the importance of enteroendocrine cells for intestinal function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:20:26.207087Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6f4997e2-aede-4626-8632-bbd446864400",
+      "result_id": "e320e24c-da62-4978-a7ff-3997c9be96e9"
+    },
+    {
+      "claim_id": "7f1e3a52-43c8-461e-a2ad-205aaabff1de",
+      "result_id": "e320e24c-da62-4978-a7ff-3997c9be96e9"
+    },
+    {
+      "claim_id": "548400f4-36e7-4630-8193-a9005dd2f662",
+      "result_id": "e320e24c-da62-4978-a7ff-3997c9be96e9"
+    },
+    {
+      "claim_id": "47aab2e4-8082-406a-a31c-40a1de6e3032",
+      "result_id": "e320e24c-da62-4978-a7ff-3997c9be96e9"
+    },
+    {
+      "claim_id": "2c6c4a63-2d9c-4d9e-bbee-2b1677730fbb",
+      "result_id": "e320e24c-da62-4978-a7ff-3997c9be96e9"
+    },
+    {
+      "claim_id": "8911bed9-542b-4dbc-827e-5ad7a14f54d0",
+      "result_id": "f9ff2398-21bf-4a6c-8a62-8bf681d1a2aa"
+    },
+    {
+      "claim_id": "20de11f0-4dd7-4b7b-8905-99b1b1655d94",
+      "result_id": "f9ff2398-21bf-4a6c-8a62-8bf681d1a2aa"
+    },
+    {
+      "claim_id": "5942847b-9ad0-43b5-84c0-c7fa9b703962",
+      "result_id": "f9ff2398-21bf-4a6c-8a62-8bf681d1a2aa"
+    },
+    {
+      "claim_id": "c93d908a-9c55-46ac-bd65-d1ea794212f4",
+      "result_id": "f9ff2398-21bf-4a6c-8a62-8bf681d1a2aa"
+    },
+    {
+      "claim_id": "236678de-4e2e-4291-ac0c-cfeabb882f2f",
+      "result_id": "412d4057-43bc-49b8-b043-51f837b4965f"
+    },
+    {
+      "claim_id": "f4dd3e4b-2da1-4ffb-9a97-235818b6db50",
+      "result_id": "412d4057-43bc-49b8-b043-51f837b4965f"
+    },
+    {
+      "claim_id": "193dabdd-dabd-4e35-954d-4a18b2f2f508",
+      "result_id": "412d4057-43bc-49b8-b043-51f837b4965f"
+    },
+    {
+      "claim_id": "fe706b45-c462-436f-8130-651e9f9dd455",
+      "result_id": "412d4057-43bc-49b8-b043-51f837b4965f"
+    },
+    {
+      "claim_id": "c9765170-1b4b-400c-9c39-75d1c8926ed6",
+      "result_id": "412d4057-43bc-49b8-b043-51f837b4965f"
+    },
+    {
+      "claim_id": "103fb038-5697-466f-b3ea-49f5be6c532e",
+      "result_id": "f7ba7654-ee9b-474e-a64e-dee5253e6533"
+    },
+    {
+      "claim_id": "be45b7af-2358-4604-840a-725d497fd33e",
+      "result_id": "f7ba7654-ee9b-474e-a64e-dee5253e6533"
+    },
+    {
+      "claim_id": "7ddb947b-6062-4584-b578-0727d84f3d7f",
+      "result_id": "26fd8014-7789-4a03-a69b-c4731ebba5d1"
+    },
+    {
+      "claim_id": "030f7b7b-575f-4e17-afe9-fdb3687ad240",
+      "result_id": "26fd8014-7789-4a03-a69b-c4731ebba5d1"
+    },
+    {
+      "claim_id": "2b40391e-cf26-426b-8b24-df2515b7fca5",
+      "result_id": "26fd8014-7789-4a03-a69b-c4731ebba5d1"
+    },
+    {
+      "claim_id": "dfa9996b-a6b5-419c-b9f5-8d69e31e62d5",
+      "result_id": "26fd8014-7789-4a03-a69b-c4731ebba5d1"
+    },
+    {
+      "claim_id": "5254cd51-0068-4ffb-9258-bcdab51f2c16",
+      "result_id": "26fd8014-7789-4a03-a69b-c4731ebba5d1"
+    },
+    {
+      "claim_id": "9b745684-21b7-4dbb-b182-8370644f9627",
+      "result_id": "de01a61b-64f6-437f-aca2-1df578399b4b"
+    },
+    {
+      "claim_id": "497e15a2-fe9c-44b6-883b-0ab869bff605",
+      "result_id": "de01a61b-64f6-437f-aca2-1df578399b4b"
+    },
+    {
+      "claim_id": "910f6993-754c-4370-b249-99135ad79489",
+      "result_id": "de01a61b-64f6-437f-aca2-1df578399b4b"
+    },
+    {
+      "claim_id": "369fe3e3-67f4-48eb-b6e7-48e9b344900b",
+      "result_id": "de01a61b-64f6-437f-aca2-1df578399b4b"
+    },
+    {
+      "claim_id": "25d467e4-42a8-4abc-b06f-28961055e2f8",
+      "result_id": "de01a61b-64f6-437f-aca2-1df578399b4b"
+    },
+    {
+      "claim_id": "75152ffa-7256-4f90-8053-a11b4ee5a75d",
+      "result_id": "3b4b4aa3-ea93-4aad-a88c-119ec35e1c00"
+    },
+    {
+      "claim_id": "3e46d115-f9b0-4dd7-ba41-fd7ac6284c1f",
+      "result_id": "3b4b4aa3-ea93-4aad-a88c-119ec35e1c00"
+    },
+    {
+      "claim_id": "df44ea18-b14b-480b-b314-1522c6efa60a",
+      "result_id": "3b4b4aa3-ea93-4aad-a88c-119ec35e1c00"
+    },
+    {
+      "claim_id": "40989064-fbdf-4cb0-88a4-ac88b88eed8a",
+      "result_id": "62cbe8ef-6186-432b-8507-2a793a9e4790"
+    },
+    {
+      "claim_id": "30570c2a-f2bd-480b-91ff-ca3ea7669198",
+      "result_id": "62cbe8ef-6186-432b-8507-2a793a9e4790"
+    },
+    {
+      "claim_id": "28f79419-2180-412d-abd0-871929a54878",
+      "result_id": "62cbe8ef-6186-432b-8507-2a793a9e4790"
+    },
+    {
+      "claim_id": "16aaa080-66fc-4b6b-991c-2b5af017774c",
+      "result_id": "62cbe8ef-6186-432b-8507-2a793a9e4790"
+    },
+    {
+      "claim_id": "7599ead4-bfa2-4e28-8853-b2e18bd4b1dc",
+      "result_id": "985acd87-fa43-46af-a764-93594341cf00"
+    },
+    {
+      "claim_id": "fb253b25-9e9f-4ca4-8371-4e3deb5cafa0",
+      "result_id": "985acd87-fa43-46af-a764-93594341cf00"
+    },
+    {
+      "claim_id": "c4965205-7a6d-4e2a-a4f3-835fb8ba2f36",
+      "result_id": "985acd87-fa43-46af-a764-93594341cf00"
+    },
+    {
+      "claim_id": "77e17483-1330-431d-b9f8-1df564088804",
+      "result_id": "f238e7de-4ae9-46c8-b4a8-a65243cf30cf"
+    },
+    {
+      "claim_id": "c25ca678-aa4e-4aa8-8922-2df1e0af0f89",
+      "result_id": "f238e7de-4ae9-46c8-b4a8-a65243cf30cf"
+    },
+    {
+      "claim_id": "ab4b8f19-3008-49cd-bb78-9c420f241d38",
+      "result_id": "f238e7de-4ae9-46c8-b4a8-a65243cf30cf"
+    },
+    {
+      "claim_id": "d5c14d7a-95a8-44db-b327-1ca41401de12",
+      "result_id": "f238e7de-4ae9-46c8-b4a8-a65243cf30cf"
+    },
+    {
+      "claim_id": "9587d67a-25c3-403c-a37a-78cf86fa12dd",
+      "result_id": "fd51e7c4-9309-4542-b51b-9f6f04aeb79c"
+    },
+    {
+      "claim_id": "18233d2e-af3c-4307-826b-3482a691c6bb",
+      "result_id": "fd51e7c4-9309-4542-b51b-9f6f04aeb79c"
+    },
+    {
+      "claim_id": "eda8751c-9ac5-4a93-a6d5-18c0ee6d6627",
+      "result_id": "fd51e7c4-9309-4542-b51b-9f6f04aeb79c"
+    },
+    {
+      "claim_id": "785a8a0b-5141-4f62-ae30-5ce292e05c2c",
+      "result_id": "8371f7aa-339b-46e2-8cdd-01f4cc0208a3"
+    },
+    {
+      "claim_id": "f6aabc06-eb71-4e58-96d9-597e8330abf9",
+      "result_id": "8371f7aa-339b-46e2-8cdd-01f4cc0208a3"
+    },
+    {
+      "claim_id": "643aedb3-cc19-4d00-84b1-30c92b165bc9",
+      "result_id": "8371f7aa-339b-46e2-8cdd-01f4cc0208a3"
+    },
+    {
+      "claim_id": "a82dfc84-6bc7-4bd8-bb79-31e4161bc523",
+      "result_id": "848772ad-b647-4efe-b719-f81c98c1742f"
+    },
+    {
+      "claim_id": "a6138cc8-2b44-461c-a842-1e28a9278c68",
+      "result_id": "848772ad-b647-4efe-b719-f81c98c1742f"
+    },
+    {
+      "claim_id": "2fd08cd2-0541-4cac-90b7-67e791748bde",
+      "result_id": "848772ad-b647-4efe-b719-f81c98c1742f"
+    },
+    {
+      "claim_id": "01812bde-44ef-4f8e-b127-110ab5fdb313",
+      "result_id": "848772ad-b647-4efe-b719-f81c98c1742f"
+    },
+    {
+      "claim_id": "ad6a448a-f2b5-4b5f-94cc-866183ce4955",
+      "result_id": "f6c16c02-91be-404d-b38d-f8b5e16bc975"
+    },
+    {
+      "claim_id": "2d8cc73d-2a00-4914-9fe6-66cc8c947293",
+      "result_id": "f6c16c02-91be-404d-b38d-f8b5e16bc975"
+    },
+    {
+      "claim_id": "1cb4a4db-b98e-4453-beae-2a93d3eefd08",
+      "result_id": "f6c16c02-91be-404d-b38d-f8b5e16bc975"
+    },
+    {
+      "claim_id": "05c47d07-bbc0-41bb-9467-78e0206ed0d9",
+      "result_id": "f6c16c02-91be-404d-b38d-f8b5e16bc975"
+    },
+    {
+      "claim_id": "e134fd39-dd53-42da-97b2-dbbcfa1b6c6d",
+      "result_id": "331010c3-f82e-4c90-b970-6cf6eee9553b"
+    },
+    {
+      "claim_id": "b30720e3-c35e-4559-9876-c505e9dd3d1b",
+      "result_id": "331010c3-f82e-4c90-b970-6cf6eee9553b"
+    },
+    {
+      "claim_id": "7ac9a3c8-257b-4b66-ba83-7816c6d6d6c0",
+      "result_id": "0a66966d-f221-4c5f-bf7f-054f9c0c2c4f"
+    },
+    {
+      "claim_id": "205d2b95-de26-4c09-83f0-070807012c40",
+      "result_id": "0a66966d-f221-4c5f-bf7f-054f9c0c2c4f"
+    },
+    {
+      "claim_id": "bd4d7ed0-f332-45c1-86b9-c8e2c9c06b1a",
+      "result_id": "0a66966d-f221-4c5f-bf7f-054f9c0c2c4f"
+    },
+    {
+      "claim_id": "a6bfbbd4-d35d-4ab1-a21d-07a0bfd07cb8",
+      "result_id": "0a66966d-f221-4c5f-bf7f-054f9c0c2c4f"
+    },
+    {
+      "claim_id": "7799a40d-e6e2-48cb-a89c-425e4d370626",
+      "result_id": "0a66966d-f221-4c5f-bf7f-054f9c0c2c4f"
+    },
+    {
+      "claim_id": "76bc884f-aee1-4ab9-afe2-8ae7c2952f5e",
+      "result_id": "fd7a7907-f93c-42b3-b4eb-6f65bf32ab10"
+    },
+    {
+      "claim_id": "a2c120bb-61f6-4fcf-8182-7e2501a548ad",
+      "result_id": "fd7a7907-f93c-42b3-b4eb-6f65bf32ab10"
+    },
+    {
+      "claim_id": "8aab9691-c501-407a-b0fa-d7bf56481ba3",
+      "result_id": "fd7a7907-f93c-42b3-b4eb-6f65bf32ab10"
+    },
+    {
+      "claim_id": "aaee5e49-60c1-43b2-9c49-ad367d185696",
+      "result_id": "78f46eae-979e-4e94-8f7d-d7f623e80117"
+    },
+    {
+      "claim_id": "9701b9bf-503a-47f1-b213-452dda9cb883",
+      "result_id": "78f46eae-979e-4e94-8f7d-d7f623e80117"
+    },
+    {
+      "claim_id": "02c2cbd0-7ef8-49ae-adfc-f87873987602",
+      "result_id": "78f46eae-979e-4e94-8f7d-d7f623e80117"
+    },
+    {
+      "claim_id": "97647d6b-6979-4506-bdcf-89ed36e2dae1",
+      "result_id": "78f46eae-979e-4e94-8f7d-d7f623e80117"
+    },
+    {
+      "claim_id": "1445b1b2-a242-4484-b149-901a1e3aa906",
+      "result_id": "8ee462e2-ced1-4f3e-8471-9b8063abdcd1"
+    },
+    {
+      "claim_id": "138f880e-d431-4920-a5be-afb9424f0c01",
+      "result_id": "f6744e49-3254-4d8c-aec8-916e49b0a31f"
+    },
+    {
+      "claim_id": "3397cc5c-3371-411e-a3e5-8604e6a01792",
+      "result_id": "b3a7e836-16f5-4e5f-b492-81e029e824ca"
+    },
+    {
+      "claim_id": "d1aa5672-622c-4917-8da2-915defaa6d4c",
+      "result_id": "b3a7e836-16f5-4e5f-b492-81e029e824ca"
+    },
+    {
+      "claim_id": "46624a0a-e943-41df-95c5-bfa56e54415a",
+      "result_id": "b3a7e836-16f5-4e5f-b492-81e029e824ca"
+    },
+    {
+      "claim_id": "d5637d85-1cc7-400a-98c4-d204df4d9225",
+      "result_id": "b3a7e836-16f5-4e5f-b492-81e029e824ca"
+    },
+    {
+      "claim_id": "2f3fe61e-6481-4645-8456-c2236b94bd5c",
+      "result_id": "b3a7e836-16f5-4e5f-b492-81e029e824ca"
+    },
+    {
+      "claim_id": "7df98689-f58b-4183-b324-f090d7c9391f",
+      "result_id": "a00ceaca-c205-4fd1-81f0-d938ea274bb5"
+    },
+    {
+      "claim_id": "1c4d09d7-381a-4f17-90e3-fe271fb76a5c",
+      "result_id": "a00ceaca-c205-4fd1-81f0-d938ea274bb5"
+    },
+    {
+      "claim_id": "cfe58012-2e70-42f9-8021-9b8577d37804",
+      "result_id": "a00ceaca-c205-4fd1-81f0-d938ea274bb5"
+    },
+    {
+      "claim_id": "fc0843d4-9f71-4848-bd8b-dadc132f5d24",
+      "result_id": "85997578-cd75-4483-8ad3-7007fb400c0e"
+    }
+  ],
+  "comparisons": []
+}

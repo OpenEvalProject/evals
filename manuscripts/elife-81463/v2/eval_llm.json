@@ -1,0 +1,402 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SUMO1 increases neuronal excitability in wild-type L5 cortical neurons by increasing firing frequency, input resistance, and membrane time constant, while SENP1 has opposite effects. Control recordings show no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 provide quantitative electrophysiological measurements with appropriate statistical tests (paired t-tests) and adequate sample sizes (n=6-11). The data show significant effects of SUMO1 and SENP1 on firing frequency, input resistance, and membrane time constant, with proper controls demonstrating stability over recording time. The measurements are internally consistent and support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In NaV1.2-Lys38Gln mutant neurons, SUMO1 and SENP1 still affect firing frequency and input resistance, indicating effects on potassium channels independent of NaV1.2 SUMOylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 demonstrate that SUMO1 and SENP1 retain effects on excitability in mutant neurons lacking the NaV1.2 SUMOylation site. The quantitative data with statistical tests (n=6-7, p<0.05) support the interpretation that these effects are mediated through potassium channels rather than NaV1.2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "SUMO1 increases neuronal excitability through synergistic effects on both K+ and Na+ channels: suppressing K+ channel open probability while increasing persistent Na+ current via leftward shift in activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C91-C93 describe the dual mechanism by which SUMO1 affects excitability. These claims are supported by the experimental data showing effects on both conductances, though the specific mechanisms are inferred from the combined electrophysiological measurements rather than direct channel recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "SUMO1 dialysis induces a leftward shift in voltage dependence of persistent Na+ current activation in soma, dendrites, and AIS of wild-type L5 neurons, with differential effects across compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by Na+ imaging data (Figure 4) showing compartment-specific effects of SUMO1 on INaP activation. The measurements of half-activation voltage shifts provide quantitative support, though the spatial resolution of the imaging technique may limit precise localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "SUMO1 has no effect on INaP voltage dependence in NaV1.2-Lys38Gln mutant neurons, while SENP1 causes rightward shift in wild-type but not mutant neurons, indicating baseline SUMOylation of NaV1.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 provide critical genetic validation using the knock-in mouse model. The absence of SUMO1 effects in mutant neurons and the SENP1 effects in wild-type neurons support the specificity of NaV1.2 SUMOylation at Lys38. The data are supported by appropriate controls and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SUMO1 prolongs decay of large EPSPs (>10 mV) and enhances EPSP integral-to-peak relationship in wild-type but not NaV1.2-Lys38Gln neurons, indicating NaV1.2-dependent amplification of synaptic potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 demonstrate functional consequences of NaV1.2 SUMOylation on synaptic integration. The voltage-dependent effects on EPSP duration and the genetic specificity provide strong support. However, the mechanism linking INaP to EPSP amplification could benefit from additional analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "SUMOylation of NaV1.2 selectively increases backpropagation velocity without affecting forward propagation velocity, as demonstrated by paired recordings showing velocity ratios increase in wild-type but not mutant neurons treated with SUMO1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 present the key finding on differential regulation of AP propagation. The paired loose-patch recordings provide direct measurements of propagation velocities. The genetic control (NaV1.2-Lys38Gln) strengthens the conclusion, though sample sizes are modest (n=5-6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Computational modeling shows that a 6 mV leftward shift in NaV1.2 activation causes approximately twofold increase in backpropagation velocity while leaving forward propagation unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 provide computational validation of the experimental findings. The model incorporates known channel distributions and produces results consistent with experimental observations. However, the model is simplified and may not capture all relevant biophysical details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "NaV1.2-Lys38Gln mutant neurons show no significant differences in baseline electrophysiological properties compared to wild-type, indicating functional compensation for the mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 establish that the knock-in mutation does not cause gross alterations in neuronal function under baseline conditions. This is important for interpreting the SUMO1/SENP1 experiments, as it suggests the mutation specifically affects SUMOylation without other confounding effects. Data in Table 1 support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C95",
+      "C76"
+    ],
+    "result": "A significant fraction of K+ and Na+ channels are SUMOylated under baseline conditions in L5 neurons, as evidenced by the effectiveness of SENP1 in altering channel properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C95, and C76 infer baseline SUMOylation from SENP1 effects. The logic is sound: if SENP1 (which removes SUMO) has significant effects, channels must be SUMOylated at baseline. This is supported by quantitative changes in multiple parameters, though direct biochemical evidence of SUMOylation levels is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The axo-somatic difference in Na+ channel voltage dependence is not affected by NaV1.2-Lys38Gln mutation or SUMO1/SENP1 treatment, suggesting other factors determine compartment-specific gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 address whether SUMOylation explains the known hyperpolarizing shift in AIS channel activation. The data (Figures 4-5) show that while SUMO1 shifts activation in both compartments, the axo-somatic difference persists. This negative result is important for understanding the limits of SUMO regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Diffusion of SUMO1 and SENP1 from the somatic pipette is extremely slow in L5 pyramidal neurons, representing a limitation in determining whether steady-state SUMOylation is achieved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 acknowledge an important experimental limitation. The inference about slow diffusion is based on cited literature about complex neuronal morphology. This is a reasonable concern, though the 30-35 min protocols appear sufficient to produce consistent effects. The authors appropriately identify this as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C8",
+      "C10",
+      "C11",
+      "C55",
+      "C113"
+    ],
+    "result": "SUMOylation of NaV1.2 at Lys38 controls neuronal gain, INaP generation, and AP backpropagation velocity in cortical pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C8, C10-C11, C55, and C113 represent the main conclusions of the study. These are well-supported by the convergent evidence from electrophysiology, imaging, genetic manipulation, and computational modeling. The use of the NaV1.2-Lys38Gln mutant provides strong genetic validation of the specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C102",
+      "C103"
+    ],
+    "result": "SUMOylation of NaV1.2 provides a molecular switch for differential regulation of backpropagation and synaptic plasticity without affecting forward propagation and ongoing neuronal activity mediated by NaV1.6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 and C102-C103 present the functional interpretation of the differential effects on propagation. The data support selective regulation of backpropagation, though the implications for synaptic plasticity and circuit function are inferred rather than directly tested. The interpretation is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C114",
+      "C115"
+    ],
+    "result": "SUMOylation may regulate spike-time-dependent plasticity by altering backpropagation timing and could represent a new mechanism for regulating neuronal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104, C114, and C115 are speculative proposals about functional roles in plasticity. While the effects on backpropagation velocity are demonstrated, the consequences for plasticity are not tested. These represent reasonable hypotheses for future work but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C54"
+    ],
+    "result": "A CRISPR-generated mouse expressing NaV1.2-Lys38Gln channels that cannot be SUMOylated shows absence of SUMO effects on Na+ and K+ channel properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C53, and C54 describe the key genetic tool used in the study. The mouse model is well-characterized (Figure 3\u2014figure supplement 1) and provides critical validation. However, C53 overstates the case slightly\u2014SUMO effects on K+ channels persist in the mutant (C118-C119), only the Na+ channel effects are abolished.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on sodium channel distribution and function in cortical pyramidal neurons, including the roles of NaV1.2 and NaV1.6 in different neuronal compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 provide established background knowledge supported by appropriate citations. These claims set up the rationale for the study but do not represent new findings. They are accurately stated and properly referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on biophysical differences between NaV1.2 and NaV1.6 channels and their differential regulation by phosphorylation and neuromodulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 summarize prior work on channel properties and regulation. The citations support these statements, including the authors' previous work (C32-C34) showing NaV1.6 is not required for certain functions. These provide important context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Background on SUMO pathway regulation of ion channels, including previous findings that SUMO modulates NaV1.2 but not NaV1.6 channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C49 summarize the authors' extensive prior work on SUMO regulation of ion channels. These are well-supported by citations and establish the foundation for the current study. The differential effects on NaV1.2 vs NaV1.6 (C48-C49) are particularly important for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C81",
+      "C82",
+      "C100",
+      "C101"
+    ],
+    "result": "NaV1.2 channels are predominantly localized in soma, dendrites, and proximal AIS where they mediate backpropagation, while NaV1.6 channels are in distal AIS and nodes of Ranvier mediating forward propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69, C81-C82, and C100-C101 describe the established spatial distribution of channel subtypes based on immunohistochemical studies. These are well-supported by multiple citations and provide the anatomical basis for understanding the functional results. The claims accurately represent the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C99"
+    ],
+    "result": "In NaV1.6-deficient neurons, NaV1.2 channels in the AIS still show hyperpolarized activation, and SUMO effects differ across neuronal compartments due to heterogeneous channel distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C99 integrate prior findings with current observations to explain compartment-specific effects. C96 is supported by cited prior work, while C99 represents a reasonable hypothesis based on known channel distributions and the experimental data. The interpretation is logical though not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C120"
+    ],
+    "result": "Background on the role of backpropagating action potentials in synaptic plasticity and the regulation of persistent sodium current in controlling neuronal gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 and C120 provide relevant background on the functional significance of backpropagation and INaP. These are well-supported by appropriate citations and help contextualize the importance of the findings. They represent established knowledge rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "SUMOylation depends on SUMO concentration as a limiting factor, and intracellular administration of SUMO1/SENP1 can saturate or empty conjugation sites on ion channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 explain the biochemical basis for the experimental approach of dialyzing SUMO1 or SENP1. C107 is supported by cited literature, while C108-C110 represent established biochemistry and reasonable inferences about the experimental manipulation. This justifies the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C69"
+    ],
+    "result": "SUMO does not affect or interact with NaV1.6 channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C49, and C69 state that NaV1.6 is not subject to SUMOylation, based on prior work (Plant et al., 2016). This is a critical premise for interpreting the differential effects on propagation. While not directly tested in this study, it is supported by the cited prior work and is consistent with the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C12",
+      "C104"
+    ],
+    "result": "SUMOylation of NaV1.2 plays a prominent role in synaptic integration and plasticity, potentially regulating spike-time-dependent plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12 and C104 propose functional roles in synaptic plasticity based on the demonstrated effects on backpropagation. While the logic is reasonable\u2014backpropagation is known to be important for plasticity\u2014these specific functional consequences are not directly tested. These represent plausible hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C32",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Wild-type mouse rods form a readily releasable pool (RRP) of 87 synaptic vesicles that depletes with ultrafast kinetics (\u03c4 < 0.4 ms) as a single kinetic phase when filled with 10 mM EGTA. The RRP is fully depleted within 3 ms, with 70% released by 1 ms and negligible release at 0.5 ms, indicating a fusion delay of ~0.5 ms followed by ultrafast depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C32, C73-C79 collectively demonstrate the RRP size and kinetics through capacitance measurements (\u0394Cm) with exponential fitting. The data show consistent RRP size (~87 SVs) and ultrafast depletion kinetics across multiple measurements with appropriate statistical analysis. The single exponential fit and time-course data provide strong convergent evidence for the uniformly primed nature of the RRP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Lowering intracellular EGTA from 10 mM to 0.5 mM accelerates Cav channel activation kinetics (\u03c4activ twofold faster at -30 mV, p=0.003) and facilitates release onset without changing RRP size. This results in >10-fold larger \u0394Cm responses to 0.5 ms depolarizations (1.51\u00b10.36 vs 0.14\u00b10.19 fF, p=0.006), interpreted as Ca\u00b2\u207a-dependent facilitation of channel opening kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C68-C72, C89-C91 provide consistent evidence from multiple experimental approaches (activation kinetics, release measurements) with appropriate statistical tests. The interpretation that facilitation affects channel opening kinetics rather than peak amplitude is supported by the data showing unchanged peak-ICa but faster \u03c4activ. The fixed RRP size across EGTA concentrations strengthens the conclusion about nanodomain coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Ribbonless (Ribeye-ko) rods form a much smaller RRP of only 22 SVs (~24% of wild-type), representing a 75% reduction. This deficit is consistent across both 10 mM and 0.5 mM EGTA conditions, with evoked \u0394Cm responses <30% of wild-type (p<0.001). The coupling of Ca\u00b2\u207a influx to exocytosis remains tight, indicating the primary deficit is in the number of release-ready vesicles rather than spatial coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C115-C127 demonstrate the RRP reduction through multiple measurements with appropriate statistical analysis across different EGTA conditions. The consistency of the deficit across conditions and the maintained tight coupling support the conclusion that the ribbon's primary role is establishing release sites rather than coupling. The data align with previous EM observations (C114) showing 60% fewer docked SVs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C156",
+      "C157"
+    ],
+    "result": "Ribbonless mice show significantly attenuated scotopic b-wave amplitudes (52-38% of wild-type, p=0.04-0.005) while a-wave amplitudes remain normal, indicating weakened rod-to-rod bipolar cell transmission. The b-wave rate-of-rise is 2-3-fold slower in ribbonless mice (p=0.04-0.009), but kinetics (time-to-peak) are largely unaffected, consistent with the 75% reduction in presynaptic release measured by capacitance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C147-C154, C156-C157 provide convergent evidence from ERG recordings with appropriate statistical analysis. The normal a-waves (C147) control for phototransduction, isolating the synaptic deficit. The magnitude of the ERG deficit (~50-60%) is reasonably consistent with the 75% reduction in RRP measured by capacitance (C157), though the authors acknowledge potential under/over-representation. The preserved kinetics support a quantitative rather than qualitative deficit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C103",
+      "C104"
+    ],
+    "result": "Mouse rod Cav1.4 channels activate rapidly with a delay of ~300 \u03bcs followed by activation with \u03c4~310 \u03bcs at -30 mV (with 0.5 mM EGTA), totaling ~0.6 ms for majority activation. This rapid activation is critical for ultrafast release, as evidenced by the correlation between ICa-tail amplitude and \u0394Cm at short (0.5-1 ms) depolarizations, with the majority of the RRP fusing within the time needed for channel activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C42-C46, C94-C98, C103-C104 provide detailed characterization of Cav channel kinetics with appropriate exponential fitting and voltage-dependence analysis. The correlation between channel activation time and release onset (C102-C104) supports the interpretation that channel kinetics rate-limit ultrafast release. The measurements are technically sound with appropriate corrections for liquid junction potential (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C177"
+    ],
+    "result": "Ribbonless rods show altered Cav1.4 channel properties including 20-35% smaller peak-ICa amplitudes (p<0.05), ~34% reduced maximal conductance (p=0.024-0.029), and loss of the Ca\u00b2\u207a-dependent facilitation of activation kinetics observed in wild-type rods with 10 mM EGTA. The ribbon-shaped Cav1.4 channel profile is 50% shorter in ribbonless terminals, though total protein levels are unchanged, indicating ribeye directly or indirectly facilitates Cav1.4 channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C140, C177 provide comprehensive characterization of Cav channel alterations with appropriate statistical analysis and Boltzmann fitting. The data are internally consistent showing reduced current density without changed V1/2 (C135), and loss of facilitation (C136). The interpretation is supported by previous immunofluorescence data (C128-C130) and is appropriately cautious about direct vs. indirect effects (C177).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C35",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The synaptic ribbon facilitates Ca\u00b2\u207a-influx through Cav channels and establishes a large RRP of ~87 SVs at the ribbon base where Cav channels are concentrated. The coupling between Cav channels and SVs operates on a nanoscale with no heterogeneity in spatial coupling, as evidenced by the single exponential release kinetics and fixed RRP size across EGTA concentrations. Release heterogeneity arises from alterations in Cav channel facilitation affecting release onset timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C35, C108-C112, C188-C191 represent the main conclusions synthesizing multiple lines of evidence. The conclusions are well-supported by the experimental data on RRP size, release kinetics, EGTA manipulations, and comparison to ribbonless rods. The agreement between measured RRP size (~87 SVs) and EM estimates of docked vesicles (60-86 SVs, C111-C112) provides independent validation. The nanodomain coupling conclusion is supported by the EGTA experiments (C107-C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Lowering intracellular EGTA to 0.5 mM reveals Ca\u00b2\u207a-activated Cl\u207b currents (ICl(Ca)) in mouse rods, with an outward current during depolarization and inward tail current upon repolarization. Peak-ICa values are identical between 0.5 and 10 mM EGTA conditions, and ICl(Ca)-tail amplitudes follow similar voltage-dependence as peak-ICa, demonstrating Ca\u00b2\u207a-dependent activation. The blockade by 10 mM EGTA suggests Ca\u00b2\u207a-activated Cl\u207b channels are not within nanometers of Cav channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 provide clear characterization of ICl(Ca) with appropriate controls (comparison to 10 mM EGTA condition) and analysis of voltage-dependence. The interpretation about spatial separation is reasonable based on the EGTA sensitivity and is consistent with previous work on salamander and porcine rods (C63). The data are internally consistent and technically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Mouse rod ICa shows moderate inactivation during 200 ms depolarizations (31% decay, \u03c4=19.46\u00b10.01 ms) with 10 mM EGTA, which is tentatively attributed to voltage-dependent inactivation (VDI) rather than Ca\u00b2\u207a-dependent inactivation (CDI). This differs from salamander rods where ICa inactivation was absent with 10 mM EGTA, possibly due to incomplete blockade of Kv channels in the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C52 identify ICa inactivation but the mechanism remains uncertain. The authors appropriately note this is tentative (C52) and acknowledge the difference from salamander rods (C47-C48) and potential confounds from incomplete Kv channel blockade. Additional experiments with Ba\u00b2\u207a substitution or higher TEA concentrations would be needed to definitively distinguish VDI from CDI or Kv channel contributions. The observation is valid but the interpretation requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The soma-ribbon recording configuration achieves excellent voltage control with a membrane time constant \u03c4<30 \u03bcs, matching the calculated RC time constant from measured access resistance (~30 M\u03a9) and membrane capacitance (~1 pF). Depolarization-evoked increases in Cm can be attributed to SV fusion when conductance changes are absent, with a conversion factor of 37.6 aF per SV yielding ~106 SVs for a 4 fF \u0394Cm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 establish the technical validity of the capacitance measurements. The agreement between measured and calculated time constants (C36-C37) demonstrates adequate voltage control. The methodological principle (C38) is standard for capacitance measurements. The SV capacitance calculation (C39, C192-C194) is based on appropriate literature values and geometric calculations. These technical validations are essential for interpreting the release measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Ribbonless rods show 60% smaller ICl(Ca)-tail amplitudes compared to wild-type and a 2.4 mV negative shift in V1/2 for ICl(Ca) (p=0.016). Despite these differences, the overall Ca\u00b2\u207a-dependence of ICl(Ca) appears similar between wild-type and ribbonless rods when normalized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 provide appropriate characterization of ICl(Ca) differences with statistical analysis and Boltzmann fitting. The reduced amplitude is consistent with the reduced ICa in ribbonless rods (C131-C133). The similar normalized Ca\u00b2\u207a-dependence (C143) suggests the TMEM16 channels themselves are not fundamentally altered. The data support the conclusion but represent a secondary observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The 8 s inter-stimulus interval used in the study is justified based on previous work showing recovery from paired-pulse depression within 0.3-1 s in various photoreceptor-bipolar cell pairs. The 35 s infusion time after whole-cell access is sufficient to affect Ca\u00b2\u207a-buffering, as evidenced by the appearance of Ca\u00b2\u207a-activated currents only with 0.5 mM EGTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84, C86-C88 provide appropriate justification for the experimental design based on literature precedent and internal controls. The appearance of ICl(Ca) only with 0.5 mM EGTA (C87) provides direct evidence for adequate infusion. The assumption about 8 s recovery (C86) is reasonable given the cited recovery times, though direct measurement in mouse rods would strengthen this. The experimental design appears sound for the measurements performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Plotting \u0394Cm versus QCa from combined experiments with 0.5 and 10 mM EGTA shows a single exponential process reaching 3.31 fF (RRP ~88 SVs), with 63% depletion at QCa=4.66 fC (~12,263 Ca\u00b2\u207a ions). This demonstrates ultrafast depletion of the RRP in response to moderate Ca\u00b2\u207a entry (~10,000 ions), pointing to a critical role for Cav channel activation kinetics and tight coupling where primed SVs fuse once neighboring channels open.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 provide an alternative analysis of the release data that is internally consistent with the time-course analysis. The single exponential fit to combined data from different EGTA conditions strengthens the conclusion about uniform priming. The moderate Ca\u00b2\u207a requirement (~10,000 ions) is consistent with nanodomain coupling. The interpretation about channel-SV coupling (C102) is reasonable and supported by citation to previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C40",
+      "C41"
+    ],
+    "result": "Rod photoreceptors use ribbon synapses to transmit visual information by releasing glutamate continually in darkness to activate postsynaptic mGluR6\u2192TRPM1 pathway in rod bipolar cells (the 'dark signal'), with release pausing when light is detected. Mammalian rods express a single horseshoe-shaped ribbon with Cav1.4 L-type channels, and mathematical models predict a required release rate \u226540 SVs\u00b7s\u207b\u00b9 for the dark signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C14-C16, C26-C31, C40-C41 provide established background knowledge supported by appropriate citations. These claims set the context for the experimental work and are well-established in the field. The information is accurate and appropriately cited, providing necessary background for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Previous work on Ribeye-ko mice showed that deletion of the Ribeye gene eliminates synaptic ribbons, with varied effects across cell types: ribbonless rod bipolar cells showed greatly reduced transmission attributed to Cav-SV uncoupling, ribbonless hair cells showed milder impairment with compensatory substitute AZs, and ribbonless retina showed robust on-responses to light increments but with significant alterations. Deficits were assigned to the rod pathway but specific defects were not identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 accurately summarize previous work with appropriate citations. The authors correctly identify gaps in previous knowledge (C25) that motivate the current study. The summary is balanced, noting both the varied effects across cell types and the limitations of previous studies in identifying specific mechanisms. This provides appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Changing intracellular EGTA from 10 to 0.5 mM is predicted to expand the Ca\u00b2\u207a-domain from ~6 to ~210 nm. High EGTA concentrations (~10 mM) restrict free Ca\u00b2\u207a to the ribbon base where Cav channels are located. TMEM16A/B channels are localized to mouse rod terminals and are thought to underlie ICl(Ca), which was not observed with 10 mM EGTA in the current study, consistent with previous work on salamander and porcine rods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide appropriate background on Ca\u00b2\u207a buffering and ICl(Ca) with citations to theoretical predictions (C53) and previous experimental work (C54-C57). The observations are consistent with established principles and previous findings. This background is necessary for interpreting the EGTA manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C106"
+    ],
+    "result": "Cytoplasmic Ca\u00b2\u207a can facilitate Cav channel opening, a behavior documented at rat inner hair cell ribbon synapses and central synapses. Changing intracellular EGTA levels has been shown to accelerate Ca\u00b2\u207a-entry onset and release kinetics in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C106 provide relevant background on Ca\u00b2\u207a-dependent facilitation with appropriate citations. This context is important for interpreting the facilitation observed in mouse rods and comparing to other systems. The citations are appropriate and the background is accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Comparison to other ribbon synapses shows that goldfish Mb1 bipolars exhibit ultrafast release (\u03c4~0.5 ms) rate-limited by Cav channel activation kinetics and unimpeded by 5 mM EGTA, with an additional SV population entering the RRP only with low EGTA. Mouse rod bipolar cells support ultrafast release via nanodomain coupling. Auditory hair cells show Ca\u00b2\u207a-dependent facilitation with shorter onset latencies. Mammalian IHCs and rods accelerate Cav channel opening to expedite release, while frog hair cells and Mb1 bipolars use distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C169 provide appropriate comparison to other ribbon synapses with citations to relevant literature. The comparisons are accurate and help contextualize the mouse rod findings. The authors appropriately distinguish between different mechanisms of facilitation across systems (C168-C169). This comparative analysis strengthens the interpretation of the mouse rod data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Studies on heterologously expressed human Cav1.4 channels in HEK cells have reported both CDI and VDI, with molecular details being worked out for CDI. VDI in Cav1.4 is highly temperature-dependent, with raising temperature from 23 to 37\u00b0C increasing peak-ICa by 3-fold and accelerating VDI by 50-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C173 provide relevant background on Cav1.4 channel properties from heterologous expression studies with appropriate citations. This context is important for interpreting the inactivation observed in mouse rods (C47-C52). The authors appropriately note they don't have definitive answers from their recordings (C170), showing appropriate caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Previous work showed normal Cav1.4 protein levels in Ribeye-ko retina despite 50% shorter AZ length, indicating ribeye influences AZ structure and facilitates Cav1.4 channel opening. Deletion of RIM1/2\u03b1 from rods reduced ICa and release without altering Cav1.4/ribeye staining, while RIM2\u03b1-ko mice showed impaired scotopic responses with normal ribbon structure. Loss of ribeye may impair RIM2\u03b1 function. Unlike ribeye and RIM2\u03b1, CAST/ELKs and bassoon are essential for OPL development and maintenance, with their deletion causing dramatic structural and functional deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C186 provide comprehensive discussion of how different AZ proteins contribute to rod synapse function, with appropriate citations. The authors appropriately distinguish between proteins essential for structure/development (CAST/ELKs, bassoon) versus those affecting function without gross structural changes (ribeye, RIM2\u03b1). The speculation about ribeye-RIM2\u03b1 interactions (C181) is appropriately cautious. This discussion contextualizes the current findings within the broader understanding of AZ protein function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "The capacitance per synaptic vesicle is calculated as 37.6 aF based on an average SV diameter of 34.6 nm in mouse rod terminals (derived from multiple published studies: 32.4-37.3 nm). This is comparable to single SV fusion events in mouse inner hair cells (40.2 aF, 36.9 nm diameter).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C194 provide appropriate calculation of SV capacitance based on published diameter measurements with multiple citations. The calculation method is standard (spherical capacitance) and the value is consistent with measurements from other systems (C192). This conversion factor is essential for translating \u0394Cm measurements into numbers of fused vesicles throughout the study.",
+    "result_type": "MINOR"
+  }
+]

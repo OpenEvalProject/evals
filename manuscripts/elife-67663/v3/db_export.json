@@ -1,0 +1,1750 @@
+{
+  "submission": {
+    "id": "4d0b22cc-bc50-4acc-9ed4-47d682ae65b4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:06:47.871045Z",
+    "updated_at": "2025-12-03T09:06:47.871045Z"
+  },
+  "content": [
+    {
+      "id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "submission_id": "4d0b22cc-bc50-4acc-9ed4-47d682ae65b4",
+      "content_type": "manuscript",
+      "content_text": "# Strong confinement of active microalgae leads to inversion of vortex flow and enhanced mixing\n\n## Authors\n\n- Debasmita Mondal<sup>1</sup> ([ORCID: 0000-0002-8265-6876](https://orcid.org/0000-0002-8265-6876))\n- Ameya G Prabhune<sup>1</sup>\n- Sriram Ramaswamy<sup>2</sup> ([ORCID: 0000-0001-7726-8556](https://orcid.org/0000-0001-7726-8556))\n- Prerna Sharma<sup>1</sup> ([ORCID: 0000-0003-4988-9560](https://orcid.org/0000-0003-4988-9560)) \u2020\n\n### Affiliations\n\n1. Department of Physics, Indian Institute of Science Bangalore India\n2. Centre for Condensed Matter Theory, Department of Physics, Indian Institute of Science Bangalore India\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicroorganisms swimming through viscous fluids imprint their propulsion mechanisms in the flow fields they generate. Extreme confinement of these swimmers between rigid boundaries often arises in natural and technological contexts, yet measurements of their mechanics in this regime are absent. Here, we show that strongly confining the microalga Chlamydomonas between two parallel plates not only inhibits its motility through contact friction with the walls but also leads, for purely mechanical reasons, to inversion of the surrounding vortex flows. Insights from the experiment lead to a simplified theoretical description of flow fields based on a quasi-2D Brinkman approximation to the Stokes equation rather than the usual method of images. We argue that this vortex flow inversion provides the advantage of enhanced fluid mixing despite higher friction. Overall, our results offer a comprehensive framework for analyzing the collective flows of strongly confined swimmers.\n\n## Introduction\n\nFluid friction governs the functional and mechanical responses of microorganisms which operate at low Reynolds number. They have exploited this friction and developed drag-based propulsive strategies to swim through viscous fluids (Lauga and Powers, 2009; Pedley and Kessler, 1992). Naturally, many studies have elucidated aspects of the motility and flow fields of microswimmers in a variety of settings that mimic their natural habitats (Elgeti et al., 2015; Bechinger et al., 2016; Denissenko et al., 2012; Bhattacharjee and Datta, 2019). The self-propulsion of microbes in crowded and strongly confined environments is one such setting, encountered very commonly in the natural world as well as in controlled laboratory experiments. Examples include microbial biofilms, bacteria- and algae-laden porous rocks or soil (Qin et al., 2020; Hoh et al., 2016; Foissner, 1998; Bhattacharjee and Datta, 2019); parasitic infections in crowded blood streams and tissues (Heddergott et al., 2012); and biomechanics experiments using thin films and microfluidic channels (Durham et al., 2009; Denissenko et al., 2012; Jeanneret et al., 2019; Ostapenko et al., 2018; Kurtuldu et al., 2011). Confined microswimmers are also fundamentally interesting as active suspensions (Brotto et al., 2013; Maitra et al., 2020) and there are efforts to mimic these by chemical and mechanical means for applications in nano- and microtechnologies (Duan et al., 2015; Temel and Yesilyurt, 2015).\n\nThe mechanical interaction of microswimmers with confining boundaries alters their motility and flow fields (Lauga and Powers, 2009; Brotto et al., 2013; Mathijssen et al., 2016), leading to emergent self-organization in cell\u2013cell coordination (Riedel et al., 2005; Petroff et al., 2015), spatial distribution of cells (Tsang and Kanso, 2016; Rothschild, 1963), and ecological aspects such as energy expenditure, nutrient uptake, fluid mixing, transport, and sensing (Lambert et al., 2013; Pushkin and Yeomans, 2014). It is expected that steric interactions will dominate with increasing confinement at the swimmer\u2013wall interface and that hydrodynamic screening by the confining wall will lead to recirculating flow patterns or vortices (Persat et al., 2015; Mathijssen et al., 2016).\n\nAmong the abundant diversity of microswimmers, the unicellular and biflagellated algae Chlamydomonas reinhardtii (CR), with body diameter $D\u224810\\mum$, are a versatile model system, widely used for understanding cellular processes such as carbon fixation, DNA repair and damage, phototaxis, ciliary beating (Sasso et al., 2018; Brumley et al., 2015; Choudhary et al., 2019; Mondal et al., 2020), and physical phenomena of biological fluid dynamics (Goldstein, 2015; Brennen and Winet, 1977; Rafa\u00ef et al., 2010). They are considered next-generation resources for wastewater remediation and synthesis of biofuel, biocatalysts, and pharmaceuticals (Hoh et al., 2016; Khan et al., 2018). Recently, extreme confinement between two hard walls has been exploited to induce stress memory in CR cells towards enhanced biomass production and cell viability (Min et al., 2014; Mikulski and Santos-Aberturas, 2021). Despite the existing and emerging contexts outlined above, knowledge about how rigid walls might modify the kinetics, kinematics, fluid flow and mixing, and theoretical description of a strongly confined microalga such as CR (or any other microswimmer) is scarce. All studies prior to ours have exclusively focused on the effect of boundaries on CR dynamics in PDMS chambers or thin fluid films of height $H\u227314\\mum$ (Jeanneret et al., 2019; Ostapenko et al., 2018; Guasto et al., 2010), that is, for weak confinement, $D/H<1$.\n\nHere, we present the first experimental measurements of the flagellar waveform, motility, and flow fields of strongly confined CR cells placed in between two hard glass walls \u223c10 \u03bcm apart ($D/H\u22731$, denoted \u2018H10 cells\u2019), and infer from them the effect of confinement on kinetics, energy dissipation, and fluid mixing due to the cells. We also measure the corresponding quantities for weakly confined cells placed in glass chambers of height $H=30\\mum$ ($D/H\u223c0.3$, denoted \u2018H30 cells\u2019) for comparison. We find that the cell speed decreases significantly and the trajectory tortuosity increases with increasing confinement as we go from H30 to H10 cells.\n\nSurprisingly, the beat-cycle averaged experimental flow field of strongly confined cells has opposite flow vorticity to that expected from the screened version of bulk flow (Drescher et al., 2010; Guasto et al., 2010). This counterintuitive result comes about because the close proximity of the walls greatly suppresses the motility of the organism and, consequently, the thrust force of the flagella is balanced primarily by the non-hydrodynamic contact friction from the walls. The reason being that the flagellar thrust is largely unaffected by the walls, whereas the hydrodynamic drag on the slowly moving cell body is readily seen to be far smaller. Understandably, theoretical predictions from the source-dipole description of strongly confined swimmers do not account for this vortex flow inversion because they include only hydrodynamic stresses (Brotto et al., 2013; Mathijssen et al., 2016). We complement our experimental results with a simple theoretical description of the strongly confined microswimmer flows using a quasi-2D steady Brinkman approximation to the Stokes equation (Brinkman, 1949), instead of the complicated method of recursive images using Hankel transforms (Liron and Mochon, 1976; Mathijssen et al., 2016). Solving this equation, we demonstrate that the vortex flow inversion in strong confinement is well described as arising from a pair of like-signed force densities localized with a Gaussian spread around the approximate flagellar positions rather than the conventional three overall neutral point forces for CR (Drescher et al., 2010). We also show that under strong confinement there is enhanced fluid transport and mixing despite higher drag due to the walls.\n\n## Results\n\n### Experimental system\n\nSynchronously grown wild-type CR cells (strain CC 1690) swim in a fluid medium using the characteristic breaststroke motion of two $\u223c11\u00a0\\mum$ long anterior flagella with beat frequency $\u03bd_{b}\u223c50\u221260$ Hz. These cells are introduced into rectangular quasi-2D chambers (area, 18 mm \u00d7 6 mm) made up of a glass slide and coverslip sandwich with double tape of thickness $H=10/30\\mum$ as spacer. Passive 200 nm latex microspheres are added as tracers to the cell suspension for measuring the fluid flow using particle-tracking velocimetry. We use high-speed phase-contrast imaging at \u223c500 frames/s and \u00d740 magnification to capture flagellar waveform and cellular and tracer motion at a distance $H/2$ from the solid walls. The detailed experimental procedure is described in Materials and methods.\n\n### Mechanical equilibrium of confined cells\n\nThe net force and torque on microswimmers, together with the ambient medium and boundaries, can be taken to be zero as gravitational effects are negligible in the case of CR for the range of length scales considered (Drescher et al., 2010; Brennen and Winet, 1977; Pedley and Kessler, 1992; Elgeti et al., 2015; Mathijssen et al., 2016). The two local forces exerted by any dipolar microswimmer on the surrounding fluid are flagellar propulsive thrust Fth and cell body drag Fhd. They balance each other completely for any swimmer in an unbounded medium (Lauga and Powers, 2009; Goldstein, 2015) and approximately in weak confinement between two hard walls (Figure 1A). In these regimes, CR is the classic example of an active puller where the direction of force dipole due to thrust and drag are such that the cell draws in fluid along the propulsion axis (x-axis in Figure 1A) and ejects it in the perpendicular plane (Lauga and Powers, 2009). CR is described well by three point forces or Stokeslets (Drescher et al., 2010) as in Figure 1A because the thrust is spatially extended and distributed equally between the two flagella. However, microswimmers in strong confinement between two closely spaced hard walls, $D/H\u22731$, are in a regime altogether different from bulk because the close proximity of the cells to the glass walls results in an additional drag force Fcf (Figure 1B). Therefore, the flagellar thrust is balanced by the combined drag due to the cell body and the strongly confining walls (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67663/elife-67663-fig1-v3.jpg)\n\n**Figure 1.:** Schematics of the forces exerted by a Chlamydomonas cell (green) swimming along the x-axis in between two glass plates separated by height, $H$ under (A) weak confinement where the cell\u2019s body diameter, $D<H$, and (B) strong confinement where $D\u2273H$. Solid arrows represent local forces exerted by the cell on the surrounding medium. Fth and Fhd are the propulsive thrust distributed equally between the two flagella and hydrodynamic drag due to the cell body, respectively. Fcf is the contact friction with the strongly confining walls (B). Time lapse images of CR cells swimming in a quasi-2D chamber of height $H=10\\mum$ with (C) synchronously beating flagella with $\u03bd_{b}\u223c39Hz$ ($D\u223c13.2\\mum$); (D) asynchronously beating flagella ($D\u223c9.9\\mum$); and (E) paddler type flagellar beat ($D\u223c9.7\\mum$). The cell bodies in (D) and (E) wobble due to their irregular flagellar beat pattern and are called \u2018Wobblers\u2019. (F) Histogram of cell body diameter in the chamber of $H=10\\mum$ (number of cells, $N=70$). Synchronously beating cells ($N=34$) typically have larger diameter than Wobblers ($N=36$) and thus the H10 Synchronous cells with $D/H\u22731$ are strongly confined. Raw data is available in Figure 1\u2014source data 1.\n\n### Size polydispersity, confinement heterogeneity, and consequences for flagellar waveform and motility\n\nWe define the degree of confinement of the CR cells as the ratio $D/H$ of cell body diameter to chamber height. CR cells in chambers of height $H=30\\mum$ are always in weak confinement as the cell diameter varies within $D\u223c8\u221214\\mum<H$. However, this dispersity in cell size becomes significant when CR cells are swimming within quasi-2D chambers of height, $H=10\\mum$. Here, the diameter of individual cell is crucial in determining the character \u2013 weak or strong \u2013 of the confinement and, as a consequence, the forces acting on the cell. Below, we illustrate how the cell size determines the type of confinement in this regime through measurements of flagellar waveform and cell motility.\n\nCR cells confined to swim in $H=10\\mum$ chambers show three kinds of flagellar waveform: (1) synchronous breaststroke and planar beating of flagella interrupted by intermittent phase slips (\u2018H10 Synchronous\u2019, Figure 1C, Video 1); (2) asynchronous and planar flagellar beat over large time periods (Figure 1D, Video 2); and (3) a distinctive paddling flagellar beat wherein flagella often wind around each other and paddle irregularly anterior to the cell with their beat plane oriented away from the x\u2013y plane (Figure 1E, Video 2). While both synchronous and asynchronous beats are typically observed for CR in bulk (Polin et al., 2009) and weak confinement of $30\\mum$, the paddler beat is associated with calcium-mediated mechanosensitive shock response of the flagella to the chamber walls (Fujiu et al., 2011). The cell body wobbles for both asynchronous and paddler beat of cells (Figure 1D, E) and often the flagellar waveform in a single CR switches between these two kinds (Video 2). Hence, we collectively call them \u2018H10 Wobblers\u2019 (Qin et al., 2015).\n\n![Video 1.](https://cdn.elifesciences.org/articles/67663/elife-67663-video1.mp4.jpg)\n\n**Video 1.:** High-speed video microscopy of a strongly confined swimmer (synchronously beating Chlamydomonas cell in H = 10 \u03bcm chamber) in the presence of tracer particles at 500 frames/s. This phase-contrast video clearly shows the synchronous breaststroke and planar beating of flagella with intermittent phase slips. This is the representative cell whose flow field is shown in Figure 3C. The direction of vortex flow is evident from the tracers\u2019 motion.\n\n![Video 2.](https://cdn.elifesciences.org/articles/67663/elife-67663-video2.mp4.jpg)\n\n**Video 2.:** Flagellar waveform of Chlamydomonas cells in H = 10 \u03bcm chamber with wobbling cell body, that is, H10 Wobblers. The video is divided into three parts. The first part shows the asynchronous and planar flagellar beat of a cell which leads to a wobbling motion of the cell body. The second part shows the distinctive paddling flagellar beat of a cell, anterior to the cell body. Here, the flagellar beat plane is perpendicular to the imaging x\u2013y plane and one of the flagella is mostly out of focus. In both these cases, the cell bodies wobble due to their irregular flagellar beat pattern. The third part shows a representative H10 Wobbler which switches from paddling beat to an asynchronous one.\n\nWe correlate the Synchronous and Wobbler nature of cells to their body diameter (Figure 1F). The mean projected diameter in the image plane of Synchronous cells ($D=12.28\\pm0.94\\mum$, number of cells, $N=34$) is larger than that of Wobblers ($D=9.92\\pm0.85\\mum$, $N=36$). Hence, the former\u2019s cell body is squished and strongly confined in $H=10\\mum$ chamber in comparison with that of the latter. This leads to planar swimming of Synchronous cells, whereas Wobblers tend to spin about their body axis and trace out a near-helical trajectory which is a remnant of its behaviour in the bulk. Thus, the Wobblers likely compromise their flagellar beat into asynchrony and/or paddling over long periods, as a shock response, due to frequent mechanical interactions with the solid boundaries while rolling and yawing their cell body (Fujiu et al., 2011; Choudhary et al., 2019).\n\nThe motility of CR cells in $H=30\\mum$ is similar to that in bulk and has the signature of back-and-forth cellular motion due to the recovery and power strokes of the flagella (Figure 2A, D). As confinement increases, the drag on the cells due to the solid walls increases and they trace out smaller distances with increasing twists and turns in the trajectory (Figure 2A\u2013F). These phenomena can be quantitatively characterized by cell speed and trajectory tortuosity (Materials and methods) as a function of the degree of confinement of the cells (Figure 2G). Cellular speed decreases and tortuosity of trajectories increases with increasing confinement as we go from H30 \u2192 H10 Wobblers \u2192 H10 Synchronous cells. Notably, the cell speed u decreases by 96% from H30 ($\u27e8u^{30}\u27e9=122.14\\pm31.59\\mum/s$, $N=52$) to H10 Synchronous swimmers ($\u27e8u^{10}\u27e9=4.07\\pm2.88\\mum/s$, $N=23$). Henceforth, we equivalently refer to the H10 Synchronous CR as \u2018strongly confined\u2019 or \u2018H10\u2019 cells ($D/H\u22731$) and the H30 cells as \u2018weakly confined\u2019 ($D/H<1$).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67663/elife-67663-fig2-v3.jpg)\n\n**Figure 2.:** Representative trajectories of Chlamydomonas reinhardtii (CR) cells in (A) $H=30\\mum$ ($N=25$), (B) $H=10\\mum$, Wobblers ($N=13$); (C) $H=10\\mum$, Synchronous cells ($N=17$). All of these trajectories lasted for 8.2 s and their initial positions are shifted to origin. (D), (E) and (F) are the zoomed in trajectories of (A), (B) and (C), respectively. (G) Cell speed (circles) and tortuosity of trajectories (squares) as a function of the degree of confinement, $D/H$ ($N=52,35,23$ for H30, H10 Wobbler and H10 Synchronous, respectively). The error bars in the plot correspond to standard deviation in diameter (x-axis), cell speed and tortuosity (y-axes) due to the heterogeneous population of cells. Raw data are available in Figure 2\u2014source data 1\u20134.\n\nWe also note that the flagellar beat frequency of the strongly confined cells, $\u03bd_{b}^{10}\u224851.58\\pm7.62Hz$ (averaged over 210 beat cycles for $N=20$) is similar to that of the weakly confined ones, $\u03bd_{b}^{30}\u224855.27\\pm8.22Hz$ (averaged over 194 beat cycles for $N=20$). This is because even in the 10 \u03bcm chamber where the CR cell body is strongly confined, the flagella are beating far from the walls ($\u223c5\\mum$) and almost unaffected by the confinement.\n\n### Experimental flow fields\n\nWe measure the beat-averaged flow fields of H30 and H10 CR cells to systematically understand the effect of strong confinement on the swimmer\u2019s flow field. We determine the flow field for H30 cells only when their flagellar beat is in the x\u2013y plane (Video 3) for appropriate comparison with planar H10 swimmers. Figure 3A shows the velocity field for H30 cells obtained by averaging \u223c178 beat cycles from 32 cells. It shows standard features of an unbounded CR\u2019s flow field (Drescher et al., 2010; Guasto et al., 2010), namely far-field four-lobe flow of a puller, two lateral vortices at 8\u20139 \u03bcm from cell\u2019s major axis, and anterior flow along the swimming direction till a stagnation point, 21 \u03bcm from the cell centre (Figure 3B). These near-field flow characteristics are quite well explained theoretically by a three-bead model (Jibuti et al., 2017; Friedrich and J\u00fclicher, 2012; Bennett and Golestanian, 2013) or a three-Stokeslet model (Drescher et al., 2010), where the thrust is distributed at approximate flagellar positions between two Stokeslets of strength ($-1/2,-1/2$) balanced by a +1 Stokeslet due to viscous drag on the cell body (Figure 1A).\n\n![Video 3.](https://cdn.elifesciences.org/articles/67663/elife-67663-video3.mp4.jpg)\n\n**Video 3.:** High-speed video microscopy of a weakly confined Chlamydomonas cell swimming in H = 30 \u03bcm chamber in the presence of tracer particles at 500 frames/s. This video shows the natural motility of cells in bulk where they spin about their body axis. The video starts with the cell and its flagella beating in the image plane. At \u223c90\u2013180 ms, the flagellar beat of the cell is out of the image plane, when the cell body is rotating about its axis. The flow field is calculated only when the flagellar beat of the H30 cell is in the image plane, that is, for 0\u201390 and 180\u2013252 ms for this particular video.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67663/elife-67663-fig3-v3.jpg)\n\n**Figure 3.:** Experimentally measured, beat-averaged flow fields in the x\u2013y plane of synchronously beating CR cells swimming in (A) $H=30\\mum$, and (C) $H=10\\mum$. Black arrows on the cell body indicate that the cells are swimming to the right. Solid black lines indicate the streamlines of the flow in lab frame. The colourbars represent flow magnitude, v. (B and D) denote the speed variation in (A and C), respectively, along anterior, posterior, and lateral to the cell (where the vortices are present). Distances along anterior and posterior are measured along horizontal lines from the cell centre (0, 0); whereas the lateral (vortex) distances are measured along the vertical line passing through (x, y) = (2, 0) for (B) and (8, 0) for (D), respectively. Raw data are available in Figure 3\u2014source data 1 and Figure 3\u2014source data 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67663/elife-67663-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Theoretically computed near-field flow characteristics as expected from the screened version of the bulk flow field, that is, from the three-Stokeslet model in $H=10\\mum$. The three Stokeslets denoted by red arrows represent the cell drag of strength +1 at (0, 0) and flagellar thrust of strength -1/2 each at (12,\u00b110) \u03bcm. This flow field is calculated using the quasi-2D Brinkman equation, which is introduced later in this article. (B) Theoretically predicted far-field flow of a microswimmer in confinement (but under the influence of hydrodynamic stresses only) which is that of a 2D source dipole oriented along the propulsion direction (denoted by red arrow) (Brotto et al., 2013; Mathijssen et al., 2016). The colourbars represent flow magnitudes normalized by their maximum, vnor. Scale bars, 10 \u03bcm.\n\nThe flow field of a representative H10 swimmer ($u=5.67\\pm1.57\\mum/s$, $\u03bd_{b}\u223c42.67\\pm2.24Hz$) is shown in Figure 3C, averaged over \u223c328 beat cycles. Strikingly, the vortices contributing dominantly to the flow in this strongly confined geometry are opposite in sign to those in the bulk (Drescher et al., 2010) or weakly confined case (H30, Figure 3A). This two-lobed flow is distinct from expectations based on the screened version of the bulk or three-Stokeslet flow, which is four-lobed (Figure 3\u2014figure supplement 1A). Importantly, the far-field flow resembles a 2D source dipole pointing opposite to the swimmer\u2019s motion, which is entirely different from that produced by the standard source dipole theory of strongly confined swimmers (Figure 3\u2014figure supplement 1B; Brotto et al., 2013; Mathijssen et al., 2016; Jeanneret et al., 2019). This is because the source-dipole treatment does not consider the possibility that the cells are squeezed by the walls, or in other words, it does not account for contact friction (Brotto et al., 2013; Mathijssen et al., 2016). Other significant differences from the bulk flow include front-back flow asymmetry, opposite flow direction posterior to the cell, distant lateral vortices (20 \u03bcm) and closer stagnation point (11 \u03bcm) (Figure 3D). All other H10 Synchronous swimmers, including the slowest ($u\u223c0.15\\mum/s$) and the fastest ($u\u223c14\\mum/s$) cells, show similar flow features. Even though the flow fields of H30 and H10 cells look strikingly different, the viscous power dissipated through the flow fields is nearly the same (Appendix 1.1).\n\nA close examination suggests that the vortex contents of the flow fields of Figure 3A (H30) and Figure 3C (H10) are mutually compatible. The large vortices flanking the rapidly moving CR in H30 are shrunken and localized close to the cell body in H10 due to the greatly reduced swimming speed. The frontal vortices generated by flagellar motion now fill most of the flow field in H10. Generated largely during the power stroke of flagella, they are opposite in sense to the vortices produced by the moving cell body.\n\n### Force balance on confined cells\n\nIn an unbounded fluid, the thrust $F_{th}$ exerted by the flagellar motion of the cell balances the hydrodynamic drag $F_{hd}$ on the moving cell body (Figure 1A). We assume this balance holds for the case of weak confinement (H30) as well. We estimate $|F_{hd}|=3\\pi\u03b7Du$ as the Stokes drag on a spherical cell body of diameter $D\u224310\\mum$ moving at speed u through a fluid of viscosity $\u03b7=1mPas$ (Goldstein, 2015) which in the regime of weak confinement (H30), for a cell speed $u^{30}\u2248120\\mum/s$, is $F_{hd}^{30}\u224811.31pNx^$, so that the corresponding thrust force is $F_{th}^{30}\u2248\u221211.31pNx^$.\n\nGiven that CR operates at nearly constant thrust since $u\u221d\u03b7^{-1}$ (Qin et al., 2015; Rafa\u00ef et al., 2010) and that the flagella of the H10 cell are beating far from the walls ($\u223c5\\mum$) with beat frequency and waveform similar to that of the H30 cell (Videos 1 and 3), we take the flagellar thrust force in strong confinement to be $F_{th}^{10}\u2248F_{th}^{30}\u2248\u221211.31pNx^$ as in weak confinement. This thrust is balanced by the total drag on the cell body. The cell speed, $u^{10}\u22484\\mum/s$, is down by a factor of 30, and so is the hydrodynamic contribution to the drag if we assume the flow is the same as for the H30 geometry. Even if we take into account the tight confinement, and thus assume that the major hydrodynamic drag comes (Brotto et al., 2013; Persat et al., 2015; Bhattacharya et al., 2005) from a lubricating film of thickness $\\delta=(H-D)/2\u226aD$ between the cell and each wall, the enhancement of drag due to the fluid, logarithmic in $\\delta/D$ (Bhattacharya et al., 2005; Ganatos et al., 2006), cannot balance thrust for any plausible value of $\\delta$.\n\nThe above imbalance drives the vortex flow inversion observed in Figure 3C, as will be shown later theoretically, and implies that the drag is dominated by the direct frictional contact between the cell body and the strongly confining walls, which we denote by $F_{cf}$. Force balance on the fluid element and rigid walls enclosing the CR in strong confinement requires $F_{th}^{10}+F_{hd}^{10}+F_{cf}^{10}=0$ (Figure 1B). We know that the hydrodynamic drag under strong confinement is greater than $0.38\u2062pN$ (Stokes drag at $u^{10}\u22484\\mum/s$), but lack a more accurate estimate as we do not know the thickness $\\delta$ of the lubricating film. We can therefore say that the contact force $F_{cf}^{10}\u227210.93pNx^$. Thus, the flagellar thrust works mainly against the non-hydrodynamic contact friction from the walls as expected due to the extremely low speed of the strongly confined swimmer.\n\n### Theoretical model of strongly confined flow\n\nWe begin by using the well-established far-field solution of a parallel Stokeslet between two plates by Liron and Mochon in an attempt to explain the strongly confined CR\u2019s flow field (Liron and Mochon, 1976). However, the theoretical flow of Liron and Mochon decays much more rapidly than the experimental one and does not capture the vortex positions and flow variation in the experiment (Appendix 1.2 and Appendix 1\u2014figure 1). This is because the Liron and Mochon approximation to the confined Stokeslet flow is itself singular and also the far-field limit of the full analytical solution, so it cannot be expected to accurately explain the near-field characteristics of the experimental flow (Liron and Mochon, 1976).\n\nWe therefore start afresh from the incompressible 3D Stokes equation, $\u2212\u2207p(r)+\u03b7\u2207^{2}v(r)=0,\u00a0\u2207\u22c5v(r)=0$, where $p$ and $v$ are the fluid pressure and velocity fields, respectively. Next, we formulate an effective 2D Stokes equation and find its point force solution. In a quasi-2D chamber of height $H$, we consider an effective description of a CR swimming in the $z=0$ plane of the coordinate system with the first Fourier mode for the velocity profile along $z$, satisfying the no-slip boundary condition on the solid walls, $v(x,y,z=\\pmH/2)=0$ (Figure 4\u2014figure supplement 1). Therefore, the flow velocity varies as $v(x,y,z)=v^{0}(x,y)cos\u2061(\\piz/H)$ (Figure 4\u2014figure supplement 1), where $v^{0}=(v_{x},v_{y})$ is the flow profile in the swimmer\u2019s $x-y$ plane that is experimentally measured in Figure 3 (Fortune et al., 2021). Substituting this form of velocity field in the Stokes equation we obtain its quasi-2D Brinkman approximation (Brinkman, 1949), which for a point force of strength $F$ at the $z=0$ plane, is\n\n$$\n\u2212\u2207_{xy}p(r)+\u03b7(\u2207_{xy}^{2}\u2212\\frac{\\pi^{2}}{H^{2}})v(r)+F\\delta(r)=0,\u2207_{xy}\u22c5v(r)=0\n$$\n\nwhere $p$ and $v\u2261v^{0}$ are the pressure and fluid velocity in the $x-y$ plane and $\u2207_{xy}=\u2202_{x}x^+\u2202_{y}y^$. We Fourier transform the above equation in 2D and invoke the orthogonal projection operator $O_{k}=1\u2212k^k^$ to annihilate the pressure term and obtain the quasi-2D Brinkman equation in Fourier space.\n\n$$\nv_{k}=\\frac{O_{k}\u22c5F}{\u03b7(k^{2}+\\frac{\\pi^{2}}{H^{2}})}\n$$\n\nWe perform inverse Fourier transform on Equation 2 in 2D for a Stokeslet oriented along the x-direction, $F=Fx^$ to obtain its flow field $v(r)$ at the $z=0$ plane (Appendix 1.3). This solution is identical to the analytical closed-form expression of Pushkin and Bees, 2016. We have already shown that superposing our Brinkman solution for the conventional three point forces at cell centre and flagellar positions of CR, which leads to the effective three-Stokeslet model in 2D, is an inappropriate description of the strongly confined flow (Figure 3\u2014figure supplement 1A). This is not surprising at this point because the force imbalance between the flagellar thrust and hydrodynamic cell drag suggests that the cell is nearly stationary compared to the motion of its flagella. We utilize this experimental insight by superposing only two Stokeslets of strength $\u22121/2x^$ each at approximate flagellar positions $(x_{f},\\pmy_{f})=(6,\\pm11)\\mum$ to find qualitatively similar streamlines and vortex flows (Figure 4A) as that of the experimental flow field (Figure 3C). However, this theoretical \u2018two-Stokeslet Brinkman flow\u2019 (Figure 4A) decays faster than the experiment as shown in the quantitative comparison of these two flows in Figure 4B and Figure 4\u2014figure supplement 2A,B. The root mean square deviation (RMSD) between these two flows in vx, vy, and $|v|$ are 20.3%, 14.2%, and 22.6%, respectively (see Materials and methods for RMSD definition).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67663/elife-67663-fig4-v3.jpg)\n\n**Figure 4.:** Theoretically computed flow fields for (A) two Stokeslets and (C) two Gaussian forces, both positioned at $(6,\\pm11)\\mum$ (red arrows) using the quasi-2D Brinkman equation for $H=10\\mum$ at the $z=0$ plane. The colourbars represent flow magnitudes normalized by their maximum, $v_{n\u2062o\u2062r}$. (B, D) Comparison of normalized experimental flow of the Chlamydomonas reinhardtii (CR) in $H=10\\mum$ (Figure 3C) with theoretical flow fields (A) and (C), respectively, along representative radial distances, r, from the cell centre as a function of polar angle. Inset of (B) shows the convention used for polar angle. Plots for each r denote the flow magnitudes for those grid points which lie in the radial gap (r, r + 1) \u03bcm; r (\u03bcm) = 7 (yellow), 13 (blue), 20 (magenta), and 30 (green). Raw data are available in Figure 4\u2014source data 1 and Figure 4\u2014source data 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67663/elife-67663-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Schematic of flow profile along $z$-direction, $v\u2062(z)\u223ccos\u2061(\\pi\u2062z/H)$, in a chamber of height $H$ bounded by two solid walls.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67663/elife-67663-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Comparison of (A, C) vx and (B, D) vy between normalized experimental flow of the Chlamydomonas reinhardtii (CR) in H = 10 \u03bcm (Figure 3C) with theoretical flow fields (Figure 4A, C), respectively, along representative radial distances, r, from the cell centre as a function of polar angle. Plots for each r denote the flow components for those grid points which lie in the radial gap (r, r + 1) \u03bcm; r (\u03bcm) = 7 (yellow), 13 (blue), 20 (magenta), and 30 (green).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67663/elife-67663-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Theoretically computed flow field from three-Gaussian forces (cell drag of strength +1 at (0,0), flagellar thrust of strength \u22121\u22152 each at (12, \u00b110) \u03bcm; all denoted by red arrows) using the quasi-2D Brinkman equation for H = 30 \u03bcm at the z = 0 plane. The Gaussian standard deviation, \u03c3 for cell and flagellum are 3 and 5 \u03bcm, respectively. The colourbar represents flow magnitude normalized by its maximum, vnor. Scale bar, 10 \u03bcm. Comparison of (B) |v|, (C) vx, and (D) vy between normalized experimental (Figure 3A) and theoretical flow field (A) of a cell swimming in H = 30 \u03bcm along representative radial distances, r, from the cell centre as a function of polar angle. The convention used for polar angle is same as in Figure 4B, D. Plots for each r denote the flow magnitudes for those grid points which lie in the radial gap (r, r + 1) \u03bcm; r (\u03bcm) = 7 (yellow), 13 (blue), 20 (magenta), and 30 (green).\n\nWith the experimental streamlines and vortices well described by a two-Stokeslet Brinkman model, we now explain the slower flow variation in experiment. Strongly confined experimentally observed flow is mostly ascribed to the flagellar thrust, as described above. Clearly, a delta-function point force will not be adequate to describe the thrust generated by flagellar beating as they are slender rods of length $L\u223c11\\mum$ with high aspect ratio. We, therefore, associate a 2D Gaussian source $g(r)=\\frac{e^{\u2212r^{2}/2\\sigma^{2}}}{2\\pi\\sigma^{2}}$ of standard deviation $\\sigma$, to Equation 1 instead of the point source $\\delta(r)$, in a manner similar to the regularized Stokeslet approach (Cortez et al., 2005). Thus, the quasi-2D Brinkman equation in Fourier space (Equation 2) for a Gaussian force $Fg(r)$ becomes,\n\n$$\nv_{k}=\\frac{O_{k}\u22c5F}{\u03b7(k^{2}+\\frac{\\pi^{2}}{H^{2}})}e^{\u2212k^{2}\\sigma^{2}/2}.\n$$\n\nSuperposing the inverse Fourier transform of the above equation for two sources of $F=(\u22121/2,\u22121/2)x^$ at $(x_{f},\\pmy_{f})=(6,\\pm11)\\mum$ with $\\sigma\u223cL/2=5\\mum$, we obtain the theoretical flow shown in Figure 4C. RMSD in vx, vy, and $|v|$ between this theoretical flow and those of the experimental one (Figure 3C) are 7.8%, 9%, and 8.3%, respectively. Comparing these two flows along representative radial distances from the cell centre as a function of polar angle show a good agreement (Figure 4D and Figure 4\u2014figure supplement 2C, D). Notably, Figure 4C, that is, the \u2018two-Gaussian Brinkman flow\u2019, has captured the flow variation and most of the experimental flow features accurately. Specifically, these are the lateral vortices at 20 \u03bcm and an anterior stagnation point at 13 \u03bcm from cell centre. The only limitation of this theoretical model is that it cannot account for the front-back asymmetry of the strongly confined flow, as is evident from Figure 4D for the polar angles 0 or 2\u03c0 and \u03c0 which correspond to front and back of the cell, respectively. This deviation is more pronounced in the frontal region as the cell body squashed between the two solid walls mostly blocks the forward flow from reaching the cell posterior. Thus, the no-slip boundary on the cell body needs to be invoked to mimic the front-back flow asymmetry, which is a more involved analysis due to the presence of multiple boundaries and can be addressed in a follow-up study.\n\nNow that we have explained the flow field of CR in strong confinement, we test our quasi-2D Brinkman theory in weak confinement, $H=30\\mum$, where the thrust and drag forces almost balance each other. Hence, we use the conventional three-Stokeslet model for CR, but with a Gaussian distribution for each point force. We, therefore, superpose the solution of Equation 3 for three-Gaussian forces representing the cell body and two flagella in $H=30\\mum$. The resulting flow field (Figure 4\u2014figure supplement 3) matches qualitatively with the experimental flow field of CR in weak confinement (Figure 3A). This deviation is expected in weak confinement, $D/H\u223c0.3$, because the quasi-2D theoretical approximation is mostly valid at $D/H\u22731$, even though RMSD in vx, vy, and $|v|$ remain in the low range at 11.4%, 11.2%, and 13.8%, respectively.\n\nTogether, the experimental and theoretical flow fields show that the contact friction from the walls reduces the force-dipolar swimmer in bulk or weak confinement (H30) to a force-monopole one in strong confinement (H10).\n\n### Enhancement of fluid mixing in strong confinement\n\nThe photosynthetic alga CR feeds on dissolved inorganic ions/molecules such as phosphate, nitrogen, ammonium, and carbon dioxide from the surrounding fluid in addition to using sunlight as the major source of energy (Tam and Hosoi, 2011; Ki\u00f8rboe, 2008). Importantly, nitrogen and carbon are limiting macronutrients to algal growth and metabolism (Khan et al., 2018; Short et al., 2006; Ki\u00f8rboe, 2008). For example, dissolved carbon dioxide in the surrounding fluid contains the carbon source essential for photosynthesis and acts as pH buffer for optimum algal growth. It is widely known that flagella-generated flow fields help in uniform distribution of these dissolved solute molecules through fluid mixing and transport which have a positive influence on the nutrient uptake of osmotrophs like CR (Ki\u00f8rboe, 2008; Tam and Hosoi, 2011; Ding et al., 2014; Short et al., 2006; Leptos et al., 2009; Kurtuldu et al., 2011). This is even more important for the strongly confined CR cells as they cannot move far enough to outrun diffusion of nutrient molecules because of slow swimming speed.\n\nWe first calculate the flow-field-based P\u00e9clet number, $P\u2062e=V\u2062l_{V}/D_{S}$ where $V$ and $l_{V}$ are the flow-speed and diameter of the flagellar vortex, and $D_{S}$ is the solute diffusivity in water, as the standard measure to characterize the relative significance of advective to diffusive transport. Using the experimentally measured flow data from Figure 3 and $D_{S}\u224810^{-9}\u2062m^{2}/s$ (Shapiro et al., 2014; Ki\u00f8rboe, 2008; Tam and Hosoi, 2011), we compute the P\u00e9clet numbers for the weakly and strongly confined cell to be $P\u2062e^{30}\u22480.5$ and $P\u2062e^{10}\u22482$, respectively (see Appendix 1\u2014table 1 and Appendix 1.4). These numbers suggest that flow-field-mediated advection does not completely dominate, but nevertheless can play a role in nutrient uptake for small biological molecules along with diffusion-mediated transport, especially for the strongly confined cell. However, it is evident from the recorded videos of weakly and strongly confined cell suspensions that the tracers are advected more in the H10 than in the H30 chamber (Videos 1 and 3). Hence, we attempt to quantify the observed differences in fluid mixing through correlation in flow velocity and displacement of passive tracers by the swimmers.\n\nWe calculate the normalized spatial velocity\u2013velocity correlation function of the flow fields, $C_{vv}(R)=\\frac{\u27e8v(r)\u22c5v(r+R)\u27e9}{\u27e8v(r)\u22c5v(r)\u27e9}$ to estimate the enhancement of fluid mixing in strong confinement (Figure 5A). The fluctuating flow field has a correlation length, $\\lambda=13.2\\mum$ for the strongly confined H10 flow, which is 37.5% higher than the weakly confined flow in $H=30\\mum$ ($\\lambda=9.6\\mum$), even though the cell is swimming very slowly in strong confinement. This observation is complementary to the experiments of Kurtuldu et al., 2011 where enhanced mixing is observed for active CR suspensions in 2D soap films compared to those in 3D unconfined fluid (Leptos et al., 2009). In their case, the reduced spatial dimension leads to long-ranged flow correlations due to the stress-free boundaries (the force-dipolar flow reduces from $v\u223cr^{-2}$ in 3D to $v\u223cr^{-1}$ in 2D). In our case, strong confinement reduces the force-dipolar swimmer in H30 to a force-monopole one in H10 (as shown in the previous section). This leads to longer correlation length scales in the flow velocity, which implies an increased effective diffusivity (scaling $\u223cV_{r\u2062m\u2062s}\u2062\\lambda$ for a velocity field with RMS value $V_{r\u2062m\u2062s}$) of the fluid particles on time scales $\u226b\\lambda/V_{r\u2062m\u2062s}$, in strong confinement.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67663/elife-67663-fig5-v3.jpg)\n\n**Figure 5.:** (A) Normalized radial velocity\u2013velocity correlation function, $C_{v\u2062v}\u2062(R)$, of flow fields in Figures 3A, C, 4C. The dashed vertical lines denote the correlation length scales for the flows, $\\lambda=9.6\\mum$ (H30) and 13.2 \u03bcm (H10, both experiment and theory), where the correlation function decays to 1/e (horizontal dashed line). (B and C) Snapshots showing passive tracer trajectories (coloured) due to a Chlamydomonas reinhardtii (CR) cell (white) swimming along the black dashed arrow in $H=30\\mum$ and $H=10\\mum$, respectively. The H30 swimmer ($u=121\\mum/s$) passes through the field of view within 1.3 s whereas the H10 cell ($u=3\\mum/s$) traces a semicircular trajectory staying in the field of view for the recording time of 8.2 s. The tracer trajectories are colour coded, according to the colourbar below, based on their maximum displacement, $\u0394\u2062r_{t\u2062r\u2062c\u2062r}$, during a fixed lag time of $\u0394\u2062t=0.2\u2062s$ (\u223c10 flagellar beat cycles). Scale bars, 15 \u03bcm. Raw data is available in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67663/elife-67663-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** MSD of tracers, $\u27e8\u0394\u2062r_{t\u2062r\u2062c\u2062r}^{2}\u27e9$, due to a representative Chlamydomonas reinhardtii (CR) cell swimming through the field of view in (A) $H=30\\mum$ and (B) $H=10\\mum$. Semi-transparent lines represent the MSD of \u223c500 tracers for each video where a single swimmer is passing through the field of view and the solid line with symbols denotes the average tracer MSD from six such videos. Black dashed lines indicate linear fit to the log\u2013log data of average MSD vs lag-time ($\u0394\u2062t$) where $\\alpha$ denotes the MSD exponent, $\u27e8\u0394\u2062r_{t\u2062r\u2062c\u2062r}^{2}\u27e9\u221d\u0394\u2062t^{\\alpha}$.\n\nNext, we measure the displacement of the passive tracer particles when a single swimmer passes through the field of view (179 \u03bcm \u00d7 143 \u03bcm) in our experiments. The H30 swimmers are fast and therefore pass through this field of view in \u223c1-1.4 s (Figure 5B), whereas the slow-moving H10 swimmers stay in the field of view for the maximum recording time of \u223c8 s (Figure 5C). As the swimmer moves within the chamber, it perturbs the tracer particles. The trajectories of these tracer particles involve both Brownian components and large jumps induced by the motion and flow field of these swimmers. We colour code the tracer trajectories based on their maximum displacement, $\u0394\u2062r_{t\u2062r\u2062c\u2062r}$, during a fixed lag time of $\u0394\u2062t=0.2\u2062s$ (\u223c10 flagellar beat cycles) (Figure 5B,C). The tracer trajectories close to the swimming path of the representative H30 swimmer (black dashed arrow) are mostly advected by the flow whereas those far away from the cell involve mostly Brownian components (Figure 5B). However, a majority of the tracers in the full field of view are perturbed due to the H10 flow, those in the close vicinity being mostly affected (Figure 5C). Their advective displacements are larger than that of the tracers due to H30 flow (see the colourbar below).\n\nWe define the spatial range to which a swimmer motion advects the tracers \u2014 radius of influence, $R_{a\u2062d}$ \u2014 to be approximately equal to the lateral distance from the cell's swimming path (black dashed arrow) where the tracer displacements decrease to \u223c20% of their maxima (dark orange trajectories). The region of influence for the H30 cell is a cylinder of radius $R_{ad}\u224815\\mum$ with the cell's swimming path as its axis (Figure 5B) and that for the H10 cell is a sphere of radius $R_{ad}\u224835\\mum$ centred on the slow swimming cell's trajectory (Figure 5C). That is, the radius of influence of the H10 flow is higher than the H30 one, which corroborates the longer velocity correlation length scale in strong confinement. We also measure the mean-squared displacement (MSD) of the tracers to quantify the relative increment in the advective transport of the H10 flow with respect to the H30 one. We calculate the MSD of approximately 500 tracers in the whole field of view for each video where a single cell is passing through it and then ensemble average over six such videos (Figure 5\u2014figure supplement 1). These plots with a scaling $\u27e8\u0394\u2062r_{t\u2062r\u2062c\u2062r}^{2}\u27e9\u221d\u0394\u2062t^{\\alpha}$ show a higher MSD exponent in H10 ($\\alpha\u22431.55$) than H30 ($\\alpha\u22431.25$) indicating enhanced anomalous diffusion in strong confinement. Together, Figure 5 shows that the fluid is advected more in strong confinement leading to enhanced fluid mixing and transport. In other words, the opposite vortical flows driven by flagellar beating in strong confinement help in advection-dominated dispersal of nutrients, air and CO2 in the surrounding fluid, thereby aiding the organism to avail itself of more nutrients for growth and metabolism.\n\n## Discussion\n\nOur results show that a prototypical puller-type of microswimmer like CR, when squeezed between two solid walls with a gap that is narrower than its size, has a remarkedly different motility and flow field from those of a bulk swimmer. In this regime of strong confinement, the cells experience a non-hydrodynamic contact friction that is large enough to decrease their swimming speed by 96%. Consequently, their effect on the fluid is dominantly through the flagella, which pull the fluid towards the organism and therefore, the major vortices in the associated flow field have vorticity opposite to that observed in bulk or weak confinement. This leads to an increased mixing and transport through the flow in strong confinement. These experimental results, which arise due to mechanical friction from the walls and not due to any behavioural change, establish that confinement not only alters the hydrodynamic stresses but also modifies the swimmer motility which in turn impacts the fluid flows. This coupling between confinement and motility is typically ignored in theoretical studies because the focus tends to be on the effect of confining geometry on flow fields induced by a given set of force generators (Brotto et al., 2013; Mathijssen et al., 2016), which is appropriate for weak confinement, whereas strong confinement alters the complexion of forces generating the flow. Recent experimental reports have not observed the effect we discuss because they confine CR in chambers of height greater than the cell size ($D/H\u22720.7$) (Jeanneret et al., 2019) where the stresses are mostly hydrodynamic and therefore their theoretical model is force free and different from ours (Appendix 1.5).\n\nOur theoretical approach of using two like-signed Brinkman Stokeslets localized with a Gaussian spread on the propelling appendages can also be easily utilized to analyze flows of a dilute collection of strongly confined swimmers (Appendix 1.6 and Appendix 1\u2014figure 2). Notably, the force-monopolar flow field of the strongly confined CR is similar to that of tethered microorganisms like Vorticella within the slide-coverslip experimental setup (Pepper et al., 2009; O\u2019Malley, 2011). Therefore, our effective 2D theoretical model involving Brinkman Stokeslet is applicable to these contexts as well. However, one needs to account for the differences in ciliary beating (two-ciliary flow for CR whereas multi-ciliated metachronal waves for Vorticella) for a comprehensive description of the flow field closer to the organism (Pepper et al., 2009; Ryu et al., 2016).\n\nWe note that even though CR is known to glide on liquid-infused solid substrates through flagella-mediated adhesive interactions (Sasso et al., 2018), it has recently been shown that the strength of flagellar adhesion is sensitive to and switchable by ambient light (Kreis et al., 2017). Consequently, it is likely that CR in its natural habitat of rocks and soils would also utilize swimming in addition to gliding. Our quantitative analysis shows that despite the higher frictional drag due to the strongly confining walls, there is enhanced fluid mixing due to the H10 flow field. That is, the inverse vortical flows driven by the flagellar propulsive thrust help in advection-mediated transport of nutrients to the strongly confined microswimmer. This suggests that swimming is more efficient than gliding for CR under strong confinement (especially in low-light conditions), even though CR speeds are of the same order in both these mechanisms [$u_{glide}\u223c1\\mum/s$ (Sasso et al., 2018) and $u_{swim}\u223c4\\mum/s$]. We note that apart from the time-averaged flows, the oscillations produced in the flow ($v^{o\u2062s\u2062c}$) due to the periodic beating of the flagella can play a role in fluid transport and mixing for both the H30 ($\u03bd_{b}\u223c55\u00a0Hz$, order of magnitude estimate of $v^{osc}\u223cL\\times2\\pi\u03bd_{b}\u223c3450\\mum/s$) and H10 ($\u03bd_{b}\u223c52\u00a0Hz$, $v^{osc}\u223c3270\\mum/s$) cells (Guasto et al., 2010; Klindt and Friedrich, 2015).\n\nFinally, our experimental and theoretical methodologies are completely general and can be applied to any strongly confined microswimmer, biological or synthetic from individual to collective scales. Specifically, our robust and efficient description using point or Gaussian forces in a quasi-2D Brinkman equation is simple enough to implement and analyze confined flows in a wide range of active systems. We expect our work to inspire further studies on biomechanics and fluid mixing due to hard-wall confinement of concentrated active suspensions (Kurtuldu et al., 2011; Pushkin and Yeomans, 2014; Jin et al., 2021). These effects can be exploited in realizing autonomous motion through microchannel for biomedical applications and in microfluidic devices for efficient control, navigation and trapping of microbes and synthetic swimmers (Park et al., 2017; Karimi et al., 2013; Temel and Yesilyurt, 2015).\n\n## Materials and methods\n\n### Surface modification of microspheres and glass surfaces\n\nCR cells are synchronously grown in 12:12 hr light:dark cycle in Tris-Acetate-Phosphate (TAP + P) medium. This culture medium contains divalent ions such as Ca2+, Mg2+, SO42- which decrease the screening length of the 200 nm negatively charged microspheres, thereby promoting inter-particle aggregation and sticking to glass surfaces and CR\u2019s flagella. Therefore, the sulfate latex microspheres (S37491, Thermo Scientific) are sterically stabilized by grafting long polymer chains of polyethylene glycol (mPEG-SVA-20k, NANOCS, USA) with the help of a positively charged poly-l-lysine backbone (P7890, 15\u201330 kDa, Sigma) (Mondal et al., 2020). In addition, the coverslip and slide surfaces are also cleaned and coated with polyacrylamide brush to prevent non-specific adhesion of microspheres and flagella to the glass surfaces, prior to sample injection (Mondal et al., 2020).\n\n### Sample imaging\n\nCell suspension is collected in the logarithmic growth phase within the first 2\u20133 hr of light cycle and re-suspended in fresh TAP + P medium. After 30 min of equilibration, the cells are injected into the sample chamber. The sample chamber containing cells and tracers is mounted on an inverted microscope (Olympus IX83/IX73) and placed under red light illumination (>610 nm) to prevent adhesion of flagella (Kreis et al., 2017) and phototactic response of CR (Sineshchekov et al., 2002). We let the system acclimatize in this condition for 40 min before recording any data. All flow field data, flagellar waveform and cellular trajectory (except for Figure 2A) are captured using a \u00d740 phase objective (Olympus, 0.65 NA, Plan N, Ph2) coupled to a high-speed CMOS camera (Phantom Miro C110, Vision Research, pixel size = 5.6 \u03bcm) at 500 frames/s. As CR cells move faster in $H=30\\mum$ chamber, a 8.2 s long trajectory cannot be captured at that magnification. So we used a \u00d710 objective in bright field (Olympus, 0.25 NA, PlanC N) connected to a high-speed camera of higher pixel length (pco.1200hs, pixel size = 12 \u03bcm) at 100 frames/s to capture 8.2 s long trajectories of H30 cells (Figure 2A).\n\nOur observations are consistent across CR cultures grown on different days and cultures inoculated from different colonies of CR agar plates. We have prepared at least 15\u201318 samples of dilute CR suspensions from eight different days/batches of cultures, each for chambers of height 10 and 30 \u03bcm. Our imaging parameters remain same for all observations. We also use the same code, which is verified from standard particle-tracking videos, for tracking all the cells. We modify the cell tracking code to track the tracer motion for calculating the flow-field data.\n\n### Height measurement of sample chamber\n\nWe use commercially available double tapes of thickness 10 and 30 \u03bcm (Nitto Denko Corporation) as spacer between the glass slide and coverslip. To measure the actual separation between these two surfaces, we stick 200 nm microspheres to a small strip (18 mm \u00d7 6 mm) on both the glass surfaces by heating a dilute solution of microspheres. Next, we inject immersion oil inside the sample chamber to prevent geometric distortion due to refractive index mismatch between objective immersion medium and sample. The chamber height is then measured by focusing the stuck microspheres on both surfaces through a \u00d760 oil-immersion phase objective (Olympus, 1.25 NA). We find the measured chamber height for the 10 \u03bcm spacer to be 10.88 \u00b1 0.68 \u03bcm and for the 30 \u03bcm spacer to be 30.32 \u00b1 0.87 \u03bcm, from eight different samples in each case.\n\n### Particle-tracking velocimetry\n\nThe edge of a CR cell body appears as a dark line (Figure 1C\u2013E) in phase-contrast microscopy and is detected using ridge detection in ImageJ (Wagner and Hiner, 2017). An ellipse is fitted to the pixelated CR\u2019s edge and the major axis vertex in between the two flagella is identified through custom-written MATLAB codes (refer to Source code 1). The cell body is masked and the tracers\u2019 displacement in between two frames (time gap, 2 ms) are calculated in the lab frame using standard MATLAB tracking routines (Blair and Dufresne, 2008). The velocity vectors obtained from multiple beat cycles are translated and rotated to a common coordinate system where the cell\u2019s major axis vertex is pointing to the right (Figure 3A, C). Outliers with velocity magnitude more than six standard deviations from the mean are deleted. The resulting velocity vectors from all beat cycles (including those from different cells in $H=30\\mum$) are then placed on a mesh grid of size 2.24 \u03bcm \u00d7 2.24 \u03bcm and the mean at each grid point is computed. The gridded velocity vectors are then smoothened using a 5 \u00d7 5 averaging filter. Furthermore, for comparison with theoretical flow, the x and y components of the velocity vectors are interpolated on a grid size of 1 \u00d7 1 \u03bcm2. Streamlines are plotted using the \u2018streamslice\u2019 function in MATLAB.\n\n### Trajectory tortuosity\n\nTortuosity characterizes the number of twists or loops in a cell\u2019s trajectory. It is given by the ratio of arclength to end-to-end distance between two points in a trajectory. We divide each trajectory into segments of arc-length $\u224820\\mum$. We calculate the tortuosity for individual segments and find their mean for each trajectory. We consider the trajectories of all cells whose mean speed >1 \u03bcm/s and are imaged at 500 frames/s through \u00d740 objective for consistency. There were 52 H30 cells, 35 H10 Wobblers, and 23 H10 Synchronous cells which satisfied these conditions and the data from these cells constitute Figure 2G.\n\n### Root mean square deviation\n\nThe match between experimental and theoretical flow fields is quantified by the RMSD of their velocities in the normalized scale ($v/v_{max}$). $R\u2062M\u2062S\u2062D=\\sqrt{\\sum_{j=1}^{N\u2062G}(v_{j}^{expt}-v_{j}^{th})^{2}/N\u2062G}$, where $v_{j}^{expt}$ and $v_{j}^{th}$ are the experimental and theoretical values of the velocity fields at the jth grid point, respectively, and $N\u2062G$ is the total number of grid points. We calculate RMSD in the x and y components of the flow velocity, that is, in vx and vy, respectively, for a comparison of the vector nature of the flow fields. This is because the signed magnitudes of vx and vy determine the vector direction of the flow. We also calculate RMSD in the flow speed ($|v|=[v_{x}^{2}+v_{y}^{2}]^{1/2}$) to compare their scalar magnitudes.\n",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "3c4e5bed-6aad-4815-8843-ebbd1ec44fc9",
+      "submission_id": "4d0b22cc-bc50-4acc-9ed4-47d682ae65b4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67663.sa0](https://doi.org/10.7554/eLife.67663.sa0)\n\nThe manuscript focusses on changes in the flow fields generated by swimming microorganisms as a consequence of them being squeezed within a very narrow gap. The resulting friction with the cell body is such that the flows are dominated by the propelling appendages only, and the authors show in this regime the surprising result that there can be an enhanced nutrient flux to the microorganism.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67663.sa1](https://doi.org/10.7554/eLife.67663.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Strong confinement of active microalgae leads to inversion of vortex flow and enhanced transport\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) A general conclusion of the reviewers is that while they appreciate the approach taken to the Brinkman equation, reference should be made to other recent work in this area, including Pushkin and Bees (10.1007/978-3-319-32189-9_12), Jeanneret et al., (PRL; 10.1103/PhysRevLett.123.248102) and Fortune et al., (JFM; 10.1017/jfm.2020.1112). In addition, the revision should not only discuss previous work but also improve the interpretation of the results. The reviewers felt that the discussion should avoid mystifying the physics, which they believe is straightforward \u2013 when puller cells are subject to wall friction due to being in a tight space, they exert a net force towards themselves, and the associated flow field decays more slowly.\n\n2) Chlamydomonas is not neutrally-buoyant (page 4).\n\n3) The Peclet number calculation on page 10 is unclear. The diffusion coefficient is an order of magnitude estimate, whereas the Peclet number is calculated to one significant figure, and value of 2 versus 0.5 is considered a change of regime. Really all this shows is that diffusion and advection are both likely to be important for small molecules. Considering the effect of flow oscillations (order of magnitude estimate 10 microns x 250 rad/s = 2500 microns/s) suggests advection is more important still.\n\n4) More data on beat frequency and how it varies with confinement would be useful. The impression is given that maybe it is near-constant?\n\n5) Some of the presentation is unclear, for example the azimuthal variation of the flow fields (Figure 5BD and some of the appendix figures) it is difficult to see the scale and the variation is very compressed.\n\n6) The argument for wall contact force is essentially correct I think but is unclearly written. If there is no contact force, the correct force balance taken over the cell F_drag + F_propulsive = 0. The wall changes the drag and propulsive force, but does not directly exert a force on the cell. If there is contact, then the balance is F_drag + F_propulsive + F_contact = 0. The last two sentences about 'could in principle originate in direct frictional contact' is confusing because this is actually the conclusion of the argument, not just something 'in principle'.\n\n7) There is a lack of clarity about measures of variation versus measures of uncertainty. For example, the 'error bars' in Figure 2G represent standard deviation in a heterogeneous population, not a measure of experimental uncertainty.\n\n8) Line 48. Should it be \"primed\" instead of \"prime\"?\n\n9) Line 51. \"[\u2026]ecological characteristics and theoretical description\". Unclear meaning\n\n10) Line 53 (and in the discussion). \"soft PDMS\". I do not think that the Youngs modulus of the PDMS in a normal microfluidic device (which by the way is several mm thick) is small enough for the channels to be bent to any significantly degree by swimming microorganisms. I have many years of experience in this field and personally I have never seen any such thing.\n\n11) Line 60,61. \"We find that the cell speed decreases significantly and the trajectory tortuosity increases\". Have the author checked whether -and how much- the rotational diffusivity of the cells change in confinement? Is the increased tortuosity of the trajectory just a consequence of their smaller speed?\n\n12) Lines 65,66. \"but also to those predicted from the source dipole theory of strongly confined swimmers\"\n\nLine 339-342. \"This result is contrary to the common theoretical expectation that the far-field flow of a confined microswimmer between two closely spaced solid walls is a 2D source dipole pointing along the swimmer's propulsion direction\". I find these sentences misleading. The \"theoretical expectations\" were made with the assumption that the only stresses present in the system are hydrodynamic. Therefore it is not surprising that one finds something different when this is not the case. The statements in the paper suggest to the reader that the previous theoretical models were wrong, whereas it is just that now the cells' friction with the walls needs to be taken into account.\n\n13) I am not convinced by that the current method used to extract the friction force for the body. The authors rely on an estimate of the drag based on the bulk drag coefficient, which is certainly an underestimate of the hydrodynamic drag of the body under confinement. I agree that in the 10um case the cells move at such a low speed that the contribution from hydrodynamic friction is much smaller than that from contact friction with the wall. But at this point one might as well just forget about hydrodynamic friction rather than removing the wrong estimate for it.\n\n14) Line 245. It would help the reader to include that v_rad^0 is equal to \\vec{v}\\dot\\hat{r}.\n\nReviewer #1:\n\nThe manuscript aims to study (through particle tracking microscopy), understand (through mathematical modelling) and interpret (through analysis of mixing) the time-averaged flow fields around swimming algae when the cells are squeezed between rigid glass surfaces.\n\nThe main strengths of the work are the acquisition and analysis of extensive flow data, and development of a rather simple and elegant mathematical model for the flow, based on depth-averaging the viscous flow equations with spatially-smoothed force terms, and subsequent Fourier solution. This approach is much simpler than known solutions of the 3D flow equations involving infinite sequences of images or Hankel transforms, and/or computational solutions of the flow problem which resolve the cell body and flagella.\n\nWeaknesses include:\n\na) The terminology around 'extreme/strong/weak confinement' (borrowing from quantum physics?) perhaps gives the impression of physical complexity, whereas what has been done is quite simple \u2013 cells were examined in a chamber in which there was quite a lot of space to move, or not very much space, or they were squeezed very tightly and barely able to move. In the first two cases they could move effectively through the fluid and so cell tends to drag fluid along from behind and push it forward in front. In the squeezed case, the cell is barely moving and so the flagella pull fluid from front to back, reversing the sense of the surrounding vortices.\n\nb) Along similar lines, perhaps more is made of the use of 'hard versus soft' boundaries. In appendix 1.1 is it claimed that soft boundaries (such as PDMS?) will not produce a significant velocity gradient. However, the correct boundary condition on a soft solid surface is still the no-slip condition. I would think the important issue is the deformability of the boundary compared with the cell, and hence the level of friction resulting from squeezing.\n\nc) The model is good, but the reasons for its success relative to the solution of Liron and Mochon that it is compared to are perhaps simpler than suggested. The approximation for the flow field due to a force monopole in a confined domain of Liron and Mochon (which is potential-dipole in character) is (i) singular, which is responsible for the spike in appendix figure 1c, (ii) in any case is the far-field limit of the full singular solution, so cannot be expected to be accurate in the near-field. Conversely, it is relatively unsurprising that the near-field of the cilia motion is better modelled by a spatially-averaged force. Whether the force needs to be Gaussian, or some other regularization, is unclear.\n\nd) Both the data and the model are for time-averaged flow field, which loses the (large) oscillations occurring in the near-field flow due to the flagellar beat. These oscillations may have a role in mixing. Resolving this flow is probably very difficult experimentally, but can be accomplished in silico through computational modelling. The difference between time-averaged and instantaneous flow should at least be acknowledged.\n\ne) The slower decay of the velocity correlation in the confined case (figure 5 \u2013 supplement figure 2) could be explained by the fact that the confined case produces a force monopole, and hence a lower order of decay than a force-free swimmer? In which case we are not necessarily seeing evidence of increased mixing?\n\nf) Apart from a brief reference to a review paper, relatively little contact is made with Chlamydomonas biology or ecology, particularly concerning the functional importance of fluid mixing. I am not a specialist in this area; my question is, under what circumstances is the ability to exchange e.g. carbon dioxide with the surrounding fluid a limiting factor in metabolism? Are we seeing something specific to CR's adaptation to certain natural habitats, or just that tethered swimmers always disturb more fluid than free swimmers due to the force monopole?\n\nAppraisal: I believe the authors have partially achieved their aim of studying and understanding the flow fields produced by confined swimming algae.\n\nLikely impact: I believe the paper may help to clarify understanding of the fact that the flow field changes when a swimming cell is in contact with a surface; the mathematical approach will be valuable in producing simplified mechanistic models of the flow fields produced by cells in the ubiquitous microscope slide-coverslip set up.\n\nReviewer #2:\n\nThe manuscript focusses on changes in the flow fields generated by swimming microorganisms as a consequence of them being squeezed within a gap that is narrower than their size. This is studied here in the context of the unicellular green microalga Chlamydomonas reinhardtii, which is a common model system for microbial motility of body sizes ranging from 8um to 14um. The authors compare their behaviour in the two cases of a 30um and 10um-thick Hele-Shaw cell. The resulting flow fields are then compared with those obtained by a superposition of quasi-2D Stokeslets, Green functions of the Brinkman equation.\n\nThe paper has three main results. Firstly, cell behaviour in the 10um-thick samples depends clearly on microorganismal size. Larger cells beat their flagella with the standard synchronous breaststroke, while smaller ones display either asynchronous beating or \"paddling\" (as the authors call it, but see below my comment on this). Secondly, the larger cells display an average flow field that, in the far field, is directed oppositely to what would be predicted in absence of cell squeezing by the walls. Thirdly, the paper presents a theoretical modelling for the observed flow fields in terms of a \"Gaussian\" Brinkman Stokeslets. This flow field is proposed to increase the flow of nutrients to the cell.\n\n1) The confinement that the authors focus on is in a different regime that what has been addressed earlier, in the sense that it starts to probe strong non-hydrodynamic friction, which is a case that can definitely happen in nature. This is interesting, although likely to depend quantitatively very much on topographical and chemical details of the actual surfaces that are in close contact.\n\nGiven that the strongly confined cells experience a non-hydrodynamic friction that is large enough to almost halt their swimming, it is not surprising that the measured flow field is dominated by the forces imposed on the fluid by the flagella and therefore a force-free 3-Stokeslet model is inappropriate. After all, the presence of non-hydrodynamic friction means that the cell exerts a net force on the fluid. It seems to me that this situation essentially resembles that of a tethered microorganism like Vorticella and I would have liked to see more discussion on the similarities between the two cases, both experimentally and from a modelling perspective. I do not think this is developed sufficiently in the manuscript.\n\nBesides this, the range of gaps probed by the authors is rather coarse. The 10um gap is not much smaller than the smallest gaps that were probed in ref [12] for which -however- the flow field was qualitatively different. In my opinion, within the context of the effect of confinement on flow fields, it would have been interesting to explore this range in more detail, studying the transition from the hydrodynamic to the contact-friction case.\n\n2) Regarding the modelling, I have two main comments. Firstly, I appreciate the idea of a diffused Stokeslet. However, it does look very close to the idea of a regularised Stokeslet (Cortez 2005), which is not even mentioned in the manuscript. I think this is quite surprising. I would expect the manuscript to comment on differences between the two approaches.\n\nSecondly, I do not understand the FT approach to finding the 2D Stokeslet for the Brinkman equation, when this is actually known analytically. It has been published in\n\nPushkin, D. O. and Bees, M. A. Bugs on a slippery plane: Understanding the motility of microbial pathogens with mathematical modelling. Adv. Exp. Med. Biol. 915, 193-205 (2016).\n\nwhich is cited in ref [12] of the manuscript (Jeanneret et al., PRL 2019). This paper also shows that a model based on the point forces from Liron and Mochon does not perform well (see Suppl Mat), while one made of Brinkman Stokeslets with a 2D source dipole does. Therefore I do not think that it is surprising to see that the same approach works well for the current manuscript. In fact, given the similarity between the current setup and that in [12], I would have expected a comparison between the current approach and the full model from [12] at least in the Supplementary Material.\n\nFinally, I think that comparing the magnitude of the flow fields as in Figure 5B,D is insufficient. One should instead show that both magnitude and direction of the flow fields are well captured by the model. This cannot really be grasped by comparing by eye Figure 3C and Figure 5A, C.\n\n3) As for the question of nutrient transport, I find the claim on the enhancement for the 10um-cells not completely convincing. It is clear that the fluid fluxes for the 30um-cells and the 10um-cells are organised in an opposite way. However, Figure 4D shows that the positive part of the flux is of a very similar magnitude in both cases, in particular for the average fluxes. This is true also when one compares the negative fluxes. Given the similarities, I do not find a compelling reason why the cell should have a much higher nutrient uptake in one of the two cases. This might be the case, but there is not enough evidence in the paper to support this statement.\n\n4) Finally, regarding the \u201cpaddling\u201d state, I\u2019m afraid this is the normal flagellar shock response in Chlamydomonas and not some sort of previously unknown state of the cells. It is known that the shock response can be elicited both by intense light stimuli or by mechanical stimuli. It is very likely that this is just a mechanosensitive shock, which comes from the mechanical interactions between the flagella and the upper/lower walls. In turn, these are possible due to the fact that cells of smaller size than the gap can spin around their body enough to touch the walls with their flagella. I think that the authors would need to investigate further the existing literature on flagellar shock response in Chlamydomonas and put appropriately in context the \u201cpaddling\u201d behaviour they observe.\n",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "02161cce-301d-49a1-8c2f-7b7b6be1f425",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C1",
+      "claim": "Microorganisms swimming through viscous fluids imprint their propulsion mechanisms in the flow fields they generate.",
+      "claim_type": "EXPLICIT",
+      "source": "Microorganisms swimming through viscous fluids imprint their propulsion mechanisms in the flow fields they generate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws from established understanding of microswimmer fluid dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "e702075d-8265-4f43-b5e6-721f6afaaa4e",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C2",
+      "claim": "Strongly confining the microalga Chlamydomonas between two parallel plates inhibits its motility through contact friction with the walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that strongly confining the microalga Chlamydomonas between two parallel plates not only inhibits its motility through contact friction with the walls but also leads, for purely mechanical reasons, to inversion of the surrounding vortex flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental measurements of cell speed and trajectory tortuosity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "5326a85e-152f-4c30-a0f0-8283e9f65351",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C3",
+      "claim": "Strong confinement of Chlamydomonas leads to inversion of the surrounding vortex flows for purely mechanical reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that strongly confining the microalga Chlamydomonas between two parallel plates not only inhibits its motility through contact friction with the walls but also leads, for purely mechanical reasons, to inversion of the surrounding vortex flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental flow field measurements and theoretical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "d3e442df-163f-4e73-af59-37c8ea18f759",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C4",
+      "claim": "Vortex flow inversion in strong confinement provides the advantage of enhanced fluid mixing despite higher friction.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that this vortex flow inversion provides the advantage of enhanced fluid mixing despite higher friction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by velocity correlation analysis and tracer displacement measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "ac19ef2a-23c8-4577-bd93-c01af40a9d1c",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C5",
+      "claim": "Fluid friction governs the functional and mechanical responses of microorganisms which operate at low Reynolds number.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluid friction governs the functional and mechanical responses of microorganisms which operate at low Reynolds number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of microorganism fluid dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "311786eb-b2ef-41c7-a2cf-26f6f00d72f3",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C6",
+      "claim": "Microorganisms have developed drag-based propulsive strategies to swim through viscous fluids.",
+      "claim_type": "EXPLICIT",
+      "source": "They have exploited this friction and developed drag-based propulsive strategies to swim through viscous fluids (Lauga and Powers, 2009; Pedley and Kessler, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "c169e73d-dc2b-417e-98d2-a7f01f7eb9fc",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C7",
+      "claim": "Microbial biofilms are examples of strongly confined environments encountered in the natural world.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include microbial biofilms, bacteria- and algae-laden porous rocks or soil (Qin et al., 2020; Hoh et al., 2016; Foissner, 1998; Bhattacharjee and Datta, 2019); parasitic infections in crowded blood streams and tissues (Heddergott et al., 2012); and biomechanics experiments using thin films and microfluidic channels (Durham et al., 2009; Denissenko et al., 2012; Jeanneret et al., 2019; Ostapenko et al., 2018; Kurtuldu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "44fc5fbe-5813-4578-a982-f7fe661a4655",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C8",
+      "claim": "The mechanical interaction of microswimmers with confining boundaries alters their motility and flow fields.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanical interaction of microswimmers with confining boundaries alters their motility and flow fields (Lauga and Powers, 2009; Brotto et al., 2013; Mathijssen et al., 2016), leading to emergent self-organization in cell\u2013cell coordination (Riedel et al., 2005; Petroff et al., 2015), spatial distribution of cells (Tsang and Kanso, 2016; Rothschild, 1963), and ecological aspects such as energy expenditure, nutrient uptake, fluid mixing, transport, and sensing (Lambert et al., 2013; Pushkin and Yeomans, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "1d69e635-e240-4637-a97b-917c48a5a858",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C11",
+      "claim": "Chlamydomonas reinhardtii is considered a next-generation resource for wastewater remediation and synthesis of biofuel, biocatalysts, and pharmaceuticals.",
+      "claim_type": "EXPLICIT",
+      "source": "They are considered next-generation resources for wastewater remediation and synthesis of biofuel, biocatalysts, and pharmaceuticals (Hoh et al., 2016; Khan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "08f9d0aa-59d8-4a5c-b9e1-69f40aa56c66",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C12",
+      "claim": "Extreme confinement between two hard walls has been exploited to induce stress memory in CR cells towards enhanced biomass production and cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, extreme confinement between two hard walls has been exploited to induce stress memory in CR cells towards enhanced biomass production and cell viability (Min et al., 2014; Mikulski and Santos-Aberturas, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "15da9fc0-f86d-4a10-acc4-8d70e78e7b4f",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C15",
+      "claim": "Cell speed decreases significantly with increasing confinement as we go from H30 to H10 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the cell speed decreases significantly and the trajectory tortuosity increases with increasing confinement as we go from H30 to H10 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental measurements shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "ac47f9da-147e-42d4-86ce-58ccd14e7222",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C16",
+      "claim": "Trajectory tortuosity increases with increasing confinement as we go from H30 to H10 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the cell speed decreases significantly and the trajectory tortuosity increases with increasing confinement as we go from H30 to H10 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental measurements shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "759652b3-a5a8-4c82-a7a4-de5369b11117",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C17",
+      "claim": "The beat-cycle averaged experimental flow field of strongly confined cells has opposite flow vorticity to that expected from the screened version of bulk flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the beat-cycle averaged experimental flow field of strongly confined cells has opposite flow vorticity to that expected from the screened version of bulk flow (Drescher et al., 2010; Guasto et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental flow field measurements in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "3bfb6b25-e993-4a11-8918-14bf3749f585",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C18",
+      "claim": "The vortex flow inversion comes about because the close proximity of the walls greatly suppresses the motility of the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "This counterintuitive result comes about because the close proximity of the walls greatly suppresses the motility of the organism and, consequently, the thrust force of the flagella is balanced primarily by the non-hydrodynamic contact friction from the walls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental observations and force balance analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "1cceeb05-c320-47ba-a5c2-fabd24b5ffa5",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C19",
+      "claim": "The thrust force of the flagella is balanced primarily by the non-hydrodynamic contact friction from the walls in strong confinement.",
+      "claim_type": "EXPLICIT",
+      "source": "This counterintuitive result comes about because the close proximity of the walls greatly suppresses the motility of the organism and, consequently, the thrust force of the flagella is balanced primarily by the non-hydrodynamic contact friction from the walls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on force balance analysis and experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "ed10e9df-ec3d-412a-be5b-3a328586f784",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C20",
+      "claim": "The flagellar thrust is largely unaffected by the walls in strong confinement.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason being that the flagellar thrust is largely unaffected by the walls, whereas the hydrodynamic drag on the slowly moving cell body is readily seen to be far smaller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that flagella beat far from the walls and maintain similar beat frequency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "2ae92c1a-1c95-4419-be1c-416a0ab1dfe5",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C21",
+      "claim": "Theoretical predictions from the source-dipole description of strongly confined swimmers do not account for vortex flow inversion because they include only hydrodynamic stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Understandably, theoretical predictions from the source-dipole description of strongly confined swimmers do not account for this vortex flow inversion because they include only hydrodynamic stresses (Brotto et al., 2013; Mathijssen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with existing theoretical models cited in the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "38dbb2c4-1793-48a4-88cb-36893423beea",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C23",
+      "claim": "The net force and torque on microswimmers can be taken to be zero as gravitational effects are negligible in the case of CR for the range of length scales considered.",
+      "claim_type": "EXPLICIT",
+      "source": "The net force and torque on microswimmers, together with the ambient medium and boundaries, can be taken to be zero as gravitational effects are negligible in the case of CR for the range of length scales considered (Drescher et al., 2010; Brennen and Winet, 1977; Pedley and Kessler, 1992; Elgeti et al., 2015; Mathijssen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "c47407bf-aedb-44a7-a25a-d89f37e18925",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C24",
+      "claim": "The two local forces exerted by any dipolar microswimmer on the surrounding fluid are flagellar propulsive thrust Fth and cell body drag Fhd.",
+      "claim_type": "EXPLICIT",
+      "source": "The two local forces exerted by any dipolar microswimmer on the surrounding fluid are flagellar propulsive thrust Fth and cell body drag Fhd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in microswimmer mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "9d146b54-430b-4497-8719-897107f9cd94",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C25",
+      "claim": "Flagellar thrust and cell body drag balance each other completely for any swimmer in an unbounded medium.",
+      "claim_type": "EXPLICIT",
+      "source": "They balance each other completely for any swimmer in an unbounded medium (Lauga and Powers, 2009; Goldstein, 2015) and approximately in weak confinement between two hard walls (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "6ca76e26-a6c7-4c74-898e-b4cae36f6f5f",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C26",
+      "claim": "CR is a classic example of an active puller where the cell draws in fluid along the propulsion axis and ejects it in the perpendicular plane.",
+      "claim_type": "EXPLICIT",
+      "source": "In these regimes, CR is the classic example of an active puller where the direction of force dipole due to thrust and drag are such that the cell draws in fluid along the propulsion axis (x-axis in Figure 1A) and ejects it in the perpendicular plane (Lauga and Powers, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CR swimming mechanics supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "340e01ee-4912-439b-bcf5-927d7df5a0e3",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C27",
+      "claim": "CR is described well by three point forces or Stokeslets because the thrust is spatially extended and distributed equally between the two flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "CR is described well by three point forces or Stokeslets (Drescher et al., 2010) as in Figure 1A because the thrust is spatially extended and distributed equally between the two flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "211ae62b-2b43-4dfe-9e4d-3c172671990a",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C29",
+      "claim": "In strong confinement, the flagellar thrust is balanced by the combined drag due to the cell body and the strongly confining walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the flagellar thrust is balanced by the combined drag due to the cell body and the strongly confining walls (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on force balance analysis shown in Figure 1B.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "e616bf45-eaf8-46c2-b3cd-88759653af59",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C35",
+      "claim": "As confinement increases, the drag on the cells due to the solid walls increases and they trace out smaller distances with increasing twists and turns in the trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "As confinement increases, the drag on the cells due to the solid walls increases and they trace out smaller distances with increasing twists and turns in the trajectory (Figure 2A\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "d06a2efb-82aa-45b9-bf68-b375a8e72ff3",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C39",
+      "claim": "The H30 flow field shows standard features of an unbounded CR's flow field, namely far-field four-lobe flow of a puller, two lateral vortices at 8\u20139 \u03bcm from cell's major axis, and anterior flow along the swimming direction till a stagnation point, 21 \u03bcm from the cell centre.",
+      "claim_type": "EXPLICIT",
+      "source": "It shows standard features of an unbounded CR's flow field (Drescher et al., 2010; Guasto et al., 2010), namely far-field four-lobe flow of a puller, two lateral vortices at 8\u20139 \u03bcm from cell's major axis, and anterior flow along the swimming direction till a stagnation point, 21 \u03bcm from the cell centre (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental flow field measurements shown in Figure 3A and B, compared with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "7c2ef0ac-d6bb-4818-b6c1-7081d3e8f6d0",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C40",
+      "claim": "The vortices contributing dominantly to the flow in strongly confined geometry are opposite in sign to those in the bulk or weakly confined case.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the vortices contributing dominantly to the flow in this strongly confined geometry are opposite in sign to those in the bulk (Drescher et al., 2010) or weakly confined case (H30, Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on experimental flow field measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "c297911e-417f-4a0a-8405-5bb413e8a9ad",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C41",
+      "claim": "The two-lobed flow in strong confinement is distinct from expectations based on the screened version of the bulk or three-Stokeslet flow, which is four-lobed.",
+      "claim_type": "EXPLICIT",
+      "source": "This two-lobed flow is distinct from expectations based on the screened version of the bulk or three-Stokeslet flow, which is four-lobed (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison between experimental data and theoretical predictions shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "1a8942aa-44c7-4088-bd9c-d97b187a2883",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C42",
+      "claim": "The far-field flow of strongly confined CR resembles a 2D source dipole pointing opposite to the swimmer's motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the far-field flow resembles a 2D source dipole pointing opposite to the swimmer's motion, which is entirely different from that produced by the standard source dipole theory of strongly confined swimmers (Figure 3\u2014figure supplement 1B; Brotto et al., 2013; Mathijssen et al., 2016; Jeanneret et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental flow field measurements compared with theoretical predictions from cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "b7ce0644-5ec7-46c9-81e3-155965fcae9b",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C43",
+      "claim": "The source-dipole treatment does not consider the possibility that the cells are squeezed by the walls, or in other words, it does not account for contact friction.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the source-dipole treatment does not consider the possibility that the cells are squeezed by the walls, or in other words, it does not account for contact friction (Brotto et al., 2013; Mathijssen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on analysis of existing theoretical models cited in the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "c13e562c-a04d-4040-92a3-72e7f5838602",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C45",
+      "claim": "The viscous power dissipated through the flow fields is nearly the same for H30 and H10 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the flow fields of H30 and H10 cells look strikingly different, the viscous power dissipated through the flow fields is nearly the same (Appendix 1.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on experimental flow field data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "88d87708-4c91-40dd-ad13-60849d1f1b1d",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C46",
+      "claim": "The large vortices flanking the rapidly moving CR in H30 are shrunken and localized close to the cell body in H10 due to the greatly reduced swimming speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The large vortices flanking the rapidly moving CR in H30 are shrunken and localized close to the cell body in H10 due to the greatly reduced swimming speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of experimental flow fields.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "e3e47d9b-28e9-40b5-915c-f7770a168348",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C47",
+      "claim": "The frontal vortices generated by flagellar motion now fill most of the flow field in H10.",
+      "claim_type": "EXPLICIT",
+      "source": "The frontal vortices generated by flagellar motion now fill most of the flow field in H10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental flow field data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "60ccb7a5-e760-4407-a15a-77f2e9bd8f08",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C48",
+      "claim": "The frontal vortices are generated largely during the power stroke of flagella and are opposite in sense to the vortices produced by the moving cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "Generated largely during the power stroke of flagella, they are opposite in sense to the vortices produced by the moving cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of flagellar mechanics and flow field observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "59d950bb-7210-4487-b37c-ccadb887d65c",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C50",
+      "claim": "The force balance holds for the case of weak confinement (H30) as well.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume this balance holds for the case of weak confinement (H30) as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption based on established knowledge and the degree of confinement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "99461409-316e-4995-a3d5-413db4bbbae8",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C61",
+      "claim": "The flagellar thrust works mainly against the non-hydrodynamic contact friction from the walls as expected due to the extremely low speed of the strongly confined swimmer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the flagellar thrust works mainly against the non-hydrodynamic contact friction from the walls as expected due to the extremely low speed of the strongly confined swimmer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on force balance analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "6d4a1032-0e88-429e-a1be-a0fd62ec424a",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C62",
+      "claim": "The theoretical flow of Liron and Mochon decays much more rapidly than the experimental one and does not capture the vortex positions and flow variation in the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the theoretical flow of Liron and Mochon decays much more rapidly than the experimental one and does not capture the vortex positions and flow variation in the experiment (Appendix 1.2 and Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison between theoretical predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "12a85664-f1d3-4e6a-97e0-9ef277aeb43d",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C63",
+      "claim": "The Liron and Mochon approximation to the confined Stokeslet flow is itself singular and also the far-field limit of the full analytical solution, so it cannot be expected to accurately explain the near-field characteristics of the experimental flow.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the Liron and Mochon approximation to the confined Stokeslet flow is itself singular and also the far-field limit of the full analytical solution, so it cannot be expected to accurately explain the near-field characteristics of the experimental flow (Liron and Mochon, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of the cited theoretical model.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "2d859693-cc5f-4104-93dc-c72f9c1b1b61",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C66",
+      "claim": "Superposing the Brinkman solution for the conventional three point forces at cell centre and flagellar positions of CR is an inappropriate description of the strongly confined flow.",
+      "claim_type": "EXPLICIT",
+      "source": "We have already shown that superposing our Brinkman solution for the conventional three point forces at cell centre and flagellar positions of CR, which leads to the effective three-Stokeslet model in 2D, is an inappropriate description of the strongly confined flow (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison between theoretical predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "02eea784-a8ab-4cb5-a26f-08c4dc055454",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C67",
+      "claim": "The cell is nearly stationary compared to the motion of its flagella in strong confinement.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not surprising at this point because the force imbalance between the flagellar thrust and hydrodynamic cell drag suggests that the cell is nearly stationary compared to the motion of its flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on force balance analysis and experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "1c20344f-1f3e-4b26-8f2f-6bf020fd04a1",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C69",
+      "claim": "The theoretical 'two-Stokeslet Brinkman flow' decays faster than the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this theoretical 'two-Stokeslet Brinkman flow' (Figure 4A) decays faster than the experiment as shown in the quantitative comparison of these two flows in Figure 4B and Figure 4\u2014figure supplement 2A,B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative comparison between theoretical predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "fa92c338-ca27-493a-96aa-13763975a7ef",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C73",
+      "claim": "The 'two-Gaussian Brinkman flow' with \u03c3~L/2=5 \u03bcm has captured the flow variation and most of the experimental flow features accurately.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Figure 4C, that is, the 'two-Gaussian Brinkman flow', has captured the flow variation and most of the experimental flow features accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison between theoretical predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "1279178d-2077-4e92-8479-9e03bf598214",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C75",
+      "claim": "The two-Gaussian Brinkman flow has captured the lateral vortices at 20 \u03bcm and an anterior stagnation point at 13 \u03bcm from cell centre.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, these are the lateral vortices at 20 \u03bcm and an anterior stagnation point at 13 \u03bcm from cell centre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison between theoretical predictions and experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "853ab15a-45b9-4b88-b8b9-0f927b86cc14",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C76",
+      "claim": "The theoretical model cannot account for the front-back asymmetry of the strongly confined flow.",
+      "claim_type": "EXPLICIT",
+      "source": "The only limitation of this theoretical model is that it cannot account for the front-back asymmetry of the strongly confined flow, as is evident from Figure 4D for the polar angles 0 or 2\u03c0 and \u03c0 which correspond to front and back of the cell, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison between theoretical predictions and experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "3749d8b5-10e2-4a59-b3cf-2739ee570878",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C77",
+      "claim": "The cell body squashed between the two solid walls mostly blocks the forward flow from reaching the cell posterior.",
+      "claim_type": "EXPLICIT",
+      "source": "This deviation is more pronounced in the frontal region as the cell body squashed between the two solid walls mostly blocks the forward flow from reaching the cell posterior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the geometry of the system and flow field observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "8304c56c-a488-4c7d-af48-0aa468af85ae",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C78",
+      "claim": "The no-slip boundary on the cell body needs to be invoked to mimic the front-back flow asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the no-slip boundary on the cell body needs to be invoked to mimic the front-back flow asymmetry, which is a more involved analysis due to the presence of multiple boundaries and can be addressed in a follow-up study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future theoretical work needed.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "0f42701c-02d9-485b-830a-72f2744bc733",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C79",
+      "claim": "The three-Gaussian Brinkman flow for H=30 \u03bcm matches qualitatively with the experimental flow field of CR in weak confinement.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting flow field (Figure 4\u2014figure supplement 3) matches qualitatively with the experimental flow field of CR in weak confinement (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison between theoretical predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "f4a2dabe-f25d-4a96-a5ac-20a174671f8c",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C81",
+      "claim": "The experimental and theoretical flow fields show that the contact friction from the walls reduces the force-dipolar swimmer in bulk or weak confinement (H30) to a force-monopole one in strong confinement (H10).",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the experimental and theoretical flow fields show that the contact friction from the walls reduces the force-dipolar swimmer in bulk or weak confinement (H30) to a force-monopole one in strong confinement (H10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion based on experimental data and theoretical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "f632b49e-5572-4fe8-aed7-86d55f327b92",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C82",
+      "claim": "The photosynthetic alga CR feeds on dissolved inorganic ions/molecules such as phosphate, nitrogen, ammonium, and carbon dioxide from the surrounding fluid in addition to using sunlight as the major source of energy.",
+      "claim_type": "EXPLICIT",
+      "source": "The photosynthetic alga CR feeds on dissolved inorganic ions/molecules such as phosphate, nitrogen, ammonium, and carbon dioxide from the surrounding fluid in addition to using sunlight as the major source of energy (Tam and Hosoi, 2011; Ki\u00f8rboe, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "6f13e279-bb4b-4536-b90a-6695fce8b9ac",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C83",
+      "claim": "Nitrogen and carbon are limiting macronutrients to algal growth and metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, nitrogen and carbon are limiting macronutrients to algal growth and metabolism (Khan et al., 2018; Short et al., 2006; Ki\u00f8rboe, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "662e3b9b-435a-4d76-85c9-6bf1d0668a08",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C84",
+      "claim": "Flagella-generated flow fields help in uniform distribution of dissolved solute molecules through fluid mixing and transport which have a positive influence on the nutrient uptake of osmotrophs like CR.",
+      "claim_type": "EXPLICIT",
+      "source": "It is widely known that flagella-generated flow fields help in uniform distribution of these dissolved solute molecules through fluid mixing and transport which have a positive influence on the nutrient uptake of osmotrophs like CR (Ki\u00f8rboe, 2008; Tam and Hosoi, 2011; Ding et al., 2014; Short et al., 2006; Leptos et al., 2009; Kurtuldu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "f497f0b9-6b4d-4666-8f6b-d566e34c2977",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C87",
+      "claim": "Flow-field-mediated advection does not completely dominate, but nevertheless can play a role in nutrient uptake for small biological molecules along with diffusion-mediated transport, especially for the strongly confined cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These numbers suggest that flow-field-mediated advection does not completely dominate, but nevertheless can play a role in nutrient uptake for small biological molecules along with diffusion-mediated transport, especially for the strongly confined cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the calculated P\u00e9clet numbers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "5feb5c4d-36c5-4c40-82f8-518f43b52696",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C91",
+      "claim": "The H30 swimmers pass through the field of view in ~1-1.4 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The H30 swimmers are fast and therefore pass through this field of view in \u223c1-1.4 s (Figure 5B), whereas the slow-moving H10 swimmers stay in the field of view for the maximum recording time of \u223c8 s (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from experimental videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "654c3b5e-db41-4b93-ad1b-95a914268139",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C92",
+      "claim": "The slow-moving H10 swimmers stay in the field of view for the maximum recording time of ~8 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The H30 swimmers are fast and therefore pass through this field of view in \u223c1-1.4 s (Figure 5B), whereas the slow-moving H10 swimmers stay in the field of view for the maximum recording time of \u223c8 s (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from experimental videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "f09ec48c-84d9-4347-b8da-f1f1ccbdc1fc",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C95",
+      "claim": "The radius of influence of the H10 flow is higher than the H30 one.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the radius of influence of the H10 flow is higher than the H30 one, which corroborates the longer velocity correlation length scale in strong confinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of tracer displacement data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "0c53034e-6738-4cba-b7f0-d2523e712ce2",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C97",
+      "claim": "The fluid is advected more in strong confinement leading to enhanced fluid mixing and transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, Figure 5 shows that the fluid is advected more in strong confinement leading to enhanced fluid mixing and transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple analyses shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "f53df069-14eb-4ce4-ac99-8ba7b87f6aff",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C98",
+      "claim": "The opposite vortical flows driven by flagellar beating in strong confinement help in advection-dominated dispersal of nutrients, air and CO2 in the surrounding fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the opposite vortical flows driven by flagellar beating in strong confinement help in advection-dominated dispersal of nutrients, air and CO2 in the surrounding fluid, thereby aiding the organism to avail itself of more nutrients for growth and metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the enhanced mixing results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "df3f563c-fc1f-4975-a421-a3422fe82998",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C99",
+      "claim": "A prototypical puller-type of microswimmer like CR, when squeezed between two solid walls with a gap that is narrower than its size, has a remarkedly different motility and flow field from those of a bulk swimmer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that a prototypical puller-type of microswimmer like CR, when squeezed between two solid walls with a gap that is narrower than its size, has a remarkedly different motility and flow field from those of a bulk swimmer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "a05ccede-f056-4622-a558-19bda7a31542",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C100",
+      "claim": "In the regime of strong confinement, the cells experience a non-hydrodynamic contact friction that is large enough to decrease their swimming speed by 96%.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regime of strong confinement, the cells experience a non-hydrodynamic contact friction that is large enough to decrease their swimming speed by 96%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements and force balance analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "784d22c9-6238-46de-bd30-ef64485e5fef",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C101",
+      "claim": "The effect of strongly confined cells on the fluid is dominantly through the flagella, which pull the fluid towards the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, their effect on the fluid is dominantly through the flagella, which pull the fluid towards the organism and therefore, the major vortices in the associated flow field have vorticity opposite to that observed in bulk or weak confinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental flow field observations and force balance analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "3de7f4f4-7ed6-4791-9aaf-91edd1c3ddd2",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C102",
+      "claim": "The major vortices in the flow field of strongly confined cells have vorticity opposite to that observed in bulk or weak confinement.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, their effect on the fluid is dominantly through the flagella, which pull the fluid towards the organism and therefore, the major vortices in the associated flow field have vorticity opposite to that observed in bulk or weak confinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on experimental flow field measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "98f6eb85-73e9-4291-97b6-e975678f511e",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C103",
+      "claim": "The vortex inversion leads to an increased mixing and transport through the flow in strong confinement.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to an increased mixing and transport through the flow in strong confinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on velocity correlation and tracer displacement analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "1dd4af51-1205-4050-8082-0b8c151e36a8",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C104",
+      "claim": "These experimental results arise due to mechanical friction from the walls and not due to any behavioural change.",
+      "claim_type": "EXPLICIT",
+      "source": "These experimental results, which arise due to mechanical friction from the walls and not due to any behavioural change, establish that confinement not only alters the hydrodynamic stresses but also modifies the swimmer motility which in turn impacts the fluid flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations and force balance analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "00f665e9-7c3c-413c-8923-b6bbc571ede6",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C105",
+      "claim": "Confinement not only alters the hydrodynamic stresses but also modifies the swimmer motility which in turn impacts the fluid flows.",
+      "claim_type": "EXPLICIT",
+      "source": "These experimental results, which arise due to mechanical friction from the walls and not due to any behavioural change, establish that confinement not only alters the hydrodynamic stresses but also modifies the swimmer motility which in turn impacts the fluid flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "45c823f0-4d71-4835-8cd6-4ebdb7d941f3",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C106",
+      "claim": "The coupling between confinement and motility is typically ignored in theoretical studies because the focus tends to be on the effect of confining geometry on flow fields induced by a given set of force generators.",
+      "claim_type": "EXPLICIT",
+      "source": "This coupling between confinement and motility is typically ignored in theoretical studies because the focus tends to be on the effect of confining geometry on flow fields induced by a given set of force generators (Brotto et al., 2013; Mathijssen et al., 2016), which is appropriate for weak confinement, whereas strong confinement alters the complexion of forces generating the flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on review of cited theoretical literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "52af5e2e-2618-4a72-9eb8-80c5ead927ad",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C108",
+      "claim": "The theoretical approach of using two like-signed Brinkman Stokeslets localized with a Gaussian spread on the propelling appendages can be easily utilized to analyze flows of a dilute collection of strongly confined swimmers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theoretical approach of using two like-signed Brinkman Stokeslets localized with a Gaussian spread on the propelling appendages can also be easily utilized to analyze flows of a dilute collection of strongly confined swimmers (Appendix 1.6 and Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the applicability of the theoretical approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "25042680-9682-4dfb-aaee-09d2aed861a6",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C109",
+      "claim": "The force-monopolar flow field of the strongly confined CR is similar to that of tethered microorganisms like Vorticella within the slide-coverslip experimental setup.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the force-monopolar flow field of the strongly confined CR is similar to that of tethered microorganisms like Vorticella within the slide-coverslip experimental setup (Pepper et al., 2009; O'Malley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "f731f03d-9b99-4ff2-b9c4-24a8e2716f18",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C110",
+      "claim": "The effective 2D theoretical model involving Brinkman Stokeslet is applicable to tethered microorganisms like Vorticella.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our effective 2D theoretical model involving Brinkman Stokeslet is applicable to these contexts as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on similarity of flow fields.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "ca5e0fcc-6025-4eec-917c-35a2e80dfdf7",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C111",
+      "claim": "One needs to account for the differences in ciliary beating for a comprehensive description of the flow field closer to the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one needs to account for the differences in ciliary beating (two-ciliary flow for CR whereas multi-ciliated metachronal waves for Vorticella) for a comprehensive description of the flow field closer to the organism (Pepper et al., 2009; Ryu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about necessary modifications for different organisms.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "8d0c8524-03c4-4396-8d9d-1d148c3699c8",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C112",
+      "claim": "CR is known to glide on liquid-infused solid substrates through flagella-mediated adhesive interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that even though CR is known to glide on liquid-infused solid substrates through flagella-mediated adhesive interactions (Sasso et al., 2018), it has recently been shown that the strength of flagellar adhesion is sensitive to and switchable by ambient light (Kreis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "a756dc58-ff80-4d34-9126-ec71b9e8c748",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C113",
+      "claim": "The strength of flagellar adhesion is sensitive to and switchable by ambient light.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that even though CR is known to glide on liquid-infused solid substrates through flagella-mediated adhesive interactions (Sasso et al., 2018), it has recently been shown that the strength of flagellar adhesion is sensitive to and switchable by ambient light (Kreis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "6bb3ca44-bc62-4a2b-a940-e10fcddbab94",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C114",
+      "claim": "It is likely that CR in its natural habitat of rocks and soils would also utilize swimming in addition to gliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, it is likely that CR in its natural habitat of rocks and soils would also utilize swimming in addition to gliding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the light-sensitivity of adhesion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "77964622-4633-42a2-ad75-d95c65ad031e",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C115",
+      "claim": "Despite the higher frictional drag due to the strongly confining walls, there is enhanced fluid mixing due to the H10 flow field.",
+      "claim_type": "EXPLICIT",
+      "source": "Our quantitative analysis shows that despite the higher frictional drag due to the strongly confining walls, there is enhanced fluid mixing due to the H10 flow field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on velocity correlation and tracer displacement analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "0ca38c67-2ac7-456f-b1b3-8436d40f8e02",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C116",
+      "claim": "The inverse vortical flows driven by the flagellar propulsive thrust help in advection-mediated transport of nutrients to the strongly confined microswimmer.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the inverse vortical flows driven by the flagellar propulsive thrust help in advection-mediated transport of nutrients to the strongly confined microswimmer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the enhanced mixing results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "dcf8aa4d-d009-460c-879c-2e5110597b61",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C119",
+      "claim": "The experimental and theoretical methodologies are completely general and can be applied to any strongly confined microswimmer, biological or synthetic from individual to collective scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our experimental and theoretical methodologies are completely general and can be applied to any strongly confined microswimmer, biological or synthetic from individual to collective scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the generalizability of the methods.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "9ed23507-8af8-48d3-bd7a-4d8ebcada3b0",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C120",
+      "claim": "The description using point or Gaussian forces in a quasi-2D Brinkman equation is simple enough to implement and analyze confined flows in a wide range of active systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, our robust and efficient description using point or Gaussian forces in a quasi-2D Brinkman equation is simple enough to implement and analyze confined flows in a wide range of active systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the applicability of the theoretical approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "1ec3e686-eb79-46f4-97cc-933a76a4ce45",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C121",
+      "claim": "This work is expected to inspire further studies on biomechanics and fluid mixing due to hard-wall confinement of concentrated active suspensions.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect our work to inspire further studies on biomechanics and fluid mixing due to hard-wall confinement of concentrated active suspensions (Kurtuldu et al., 2011; Pushkin and Yeomans, 2014; Jin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "cb81779d-031c-47f0-b39e-bd249aa790db",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C122",
+      "claim": "These effects can be exploited in realizing autonomous motion through microchannel for biomedical applications and in microfluidic devices for efficient control, navigation and trapping of microbes and synthetic swimmers.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects can be exploited in realizing autonomous motion through microchannel for biomedical applications and in microfluidic devices for efficient control, navigation and trapping of microbes and synthetic swimmers (Park et al., 2017; Karimi et al., 2013; Temel and Yesilyurt, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "64be2f13-8c35-48b8-87ae-94ea62c82ad4",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C123",
+      "claim": "CR cells are synchronously grown in 12:12 hr light:dark cycle in Tris-Acetate-Phosphate (TAP + P) medium.",
+      "claim_type": "EXPLICIT",
+      "source": "CR cells are synchronously grown in 12:12 hr light:dark cycle in Tris-Acetate-Phosphate (TAP + P) medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "c102bf1b-2153-4442-bd8d-23ab2ac86564",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C124",
+      "claim": "The TAP + P culture medium contains divalent ions such as Ca2+, Mg2+, SO42- which decrease the screening length of the 200 nm negatively charged microspheres.",
+      "claim_type": "EXPLICIT",
+      "source": "This culture medium contains divalent ions such as Ca2+, Mg2+, SO42- which decrease the screening length of the 200 nm negatively charged microspheres, thereby promoting inter-particle aggregation and sticking to glass surfaces and CR's flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about electrostatic interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "43320cf9-0c1f-4877-b820-a52529b479d4",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C125",
+      "claim": "The sulfate latex microspheres are sterically stabilized by grafting long polymer chains of polyethylene glycol with the help of a positively charged poly-l-lysine backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the sulfate latex microspheres (S37491, Thermo Scientific) are sterically stabilized by grafting long polymer chains of polyethylene glycol (mPEG-SVA-20k, NANOCS, USA) with the help of a positively charged poly-l-lysine backbone (P7890, 15\u201330 kDa, Sigma) (Mondal et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "b8e8eb92-2625-460f-bd32-a2c4ffa0220e",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C126",
+      "claim": "The coverslip and slide surfaces are cleaned and coated with polyacrylamide brush to prevent non-specific adhesion of microspheres and flagella to the glass surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the coverslip and slide surfaces are also cleaned and coated with polyacrylamide brush to prevent non-specific adhesion of microspheres and flagella to the glass surfaces, prior to sample injection (Mondal et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "9e767c88-4e32-49e5-8940-afcfd8ca6d4e",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C127",
+      "claim": "The sample chamber is placed under red light illumination (>610 nm) to prevent adhesion of flagella and phototactic response of CR.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample chamber containing cells and tracers is mounted on an inverted microscope (Olympus IX83/IX73) and placed under red light illumination (>610 nm) to prevent adhesion of flagella (Kreis et al., 2017) and phototactic response of CR (Sineshchekov et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "4fc331d1-9c96-41ba-bf09-f58031793b28",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C128",
+      "claim": "The measured chamber height for the 10 \u03bcm spacer is 10.88 \u00b1 0.68 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "We find the measured chamber height for the 10 \u03bcm spacer to be 10.88 \u00b1 0.68 \u03bcm and for the 30 \u03bcm spacer to be 30.32 \u00b1 0.87 \u03bcm, from eight different samples in each case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "92d93ba4-de49-4b90-a107-fd2f8133d7d9",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "claim_id": "C129",
+      "claim": "The measured chamber height for the 30 \u03bcm spacer is 30.32 \u00b1 0.87 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "We find the measured chamber height for the 10 \u03bcm spacer to be 10.88 \u00b1 0.68 \u03bcm and for the 30 \u03bcm spacer to be 30.32 \u00b1 0.87 \u03bcm, from eight different samples in each case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6c8813a1-6bdc-46c7-9833-77836a3c1ef4",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Strong confinement (H10, D/H\u22731) significantly inhibits Chlamydomonas motility through contact friction with walls, decreasing swimming speed by 96% (from ~122 \u03bcm/s in H30 to ~4 \u03bcm/s in H10) and increasing trajectory tortuosity. This is attributed to non-hydrodynamic contact friction between the cell body and confining walls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15, C16, C35, and C100 are well-supported by experimental measurements shown in Figure 2G, with clear quantitative data on speed reduction and tortuosity increase. The force balance analysis (C100) provides a mechanistic explanation consistent with the observed 96% speed reduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "ef46a8a3-5eab-4420-843a-76a354425df3",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Strong confinement leads to inversion of vortex flows, with vortices opposite in sign to those in bulk or weak confinement. This counterintuitive result arises because flagellar thrust is balanced primarily by non-hydrodynamic contact friction rather than hydrodynamic drag, as the flagellar thrust remains largely unaffected by walls while the slowly moving cell body experiences minimal hydrodynamic drag.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17, C18-C20, C40-C42, and C102 are strongly supported by experimental flow field measurements (Figure 3C) showing opposite vortex orientation compared to H30 (Figure 3A). The mechanistic explanation based on force balance is consistent with the observed slow swimming speed and maintained flagellar beat frequency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "db2f48b3-6735-4c3c-87af-25b848449027",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Existing theoretical models (source-dipole descriptions and Liron-Mochon approximation) fail to account for vortex flow inversion in strong confinement because they include only hydrodynamic stresses and do not account for contact friction. The coupling between confinement and motility is typically ignored in theoretical studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C43, C62, C63, C66, and C106 are supported by comparison between experimental data and existing theoretical predictions (Figure 3\u2014figure supplement 1). The authors correctly identify the limitation of prior models: they assume force-free conditions appropriate for weak confinement but invalid when contact friction dominates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "a49010fa-f0b2-4250-bd58-2f5221db5e5f",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A quasi-2D Brinkman equation with two Gaussian-distributed forces at flagellar positions (rather than three point forces) accurately describes the strongly confined flow field, capturing vortex positions, stagnation point location, and flow variation. This model demonstrates that contact friction reduces the force-dipolar swimmer to a force-monopole in strong confinement. The model's limitation is inability to capture front-back asymmetry due to the cell body blocking flow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C67, C69, C73, C75, C76, C77, and C81 are well-supported by quantitative comparison between theory and experiment (Figure 4). The two-Gaussian Brinkman model achieves low RMSD (7.8-9%) compared to the two-Stokeslet model (14.2-22.6%). The acknowledged limitation regarding front-back asymmetry (C76, C77) is appropriate and does not undermine the overall model validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "061f17ce-220c-454b-aa17-46a749095af2",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Despite higher frictional drag, strong confinement provides enhanced fluid mixing and transport. The H10 flow field shows 37.5% longer velocity correlation length (13.2 \u03bcm vs 9.6 \u03bcm for H30), larger radius of influence (~35 \u03bcm vs ~15 \u03bcm), and higher MSD exponent (\u03b1\u22431.55 vs 1.25), indicating enhanced anomalous diffusion. The inverted vortical flows help in advection-mediated dispersal of nutrients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C97, C103, C115, and C116 are supported by multiple quantitative analyses: velocity correlation function (Figure 5A), tracer displacement measurements (Figure 5B-C), and MSD analysis (Figure 5\u2014figure supplement 1). The convergence of these independent measures provides strong evidence for enhanced mixing despite the acknowledged modest P\u00e9clet numbers (Pe^30\u22480.5, Pe^10\u22482).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "386dda63-07b3-44b5-9023-cbb6429de3f7",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Flow-field-mediated advection does not completely dominate but can play a role in nutrient uptake for small biological molecules along with diffusion-mediated transport, especially for strongly confined cells, based on calculated P\u00e9clet numbers (Pe^30\u22480.5, Pe^10\u22482).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is appropriately cautious given the modest P\u00e9clet numbers calculated. The authors correctly note that advection does not dominate but can contribute, which is consistent with Pe~O(1). This interpretation is supported by the subsequent direct measurements of enhanced mixing (C97, C103, C115).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "c6d9737c-5399-4192-bfc2-141d4f44d616",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The three-Gaussian Brinkman flow model for H=30 \u03bcm matches qualitatively with the experimental flow field of CR in weak confinement, though with higher RMSD (11.4-13.8%) than for the H10 model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by comparison shown in Figure 4\u2014figure supplement 3. The authors appropriately note this is a qualitative match and acknowledge the quasi-2D approximation is less valid at D/H~0.3. The moderate RMSD values are reasonable given the theoretical limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "ff18ec7d-120b-43ad-9fc8-2da524d70fe2",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The viscous power dissipated through the flow fields is nearly the same for H30 and H10 cells despite their strikingly different flow patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C45 references Appendix 1.1 for calculation details, but the manuscript does not provide the actual power dissipation values or calculation methodology in the main text. Without access to the appendix or seeing the quantitative comparison, this claim cannot be fully evaluated. The claim is plausible given similar flagellar beat frequencies, but requires verification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "6b9e2269-83bc-4e32-9562-e9c9670aaa16",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Strong confinement of puller-type microswimmers produces remarkably different motility and flow fields from bulk swimmers due to mechanical friction from walls, not behavioral change. This establishes that confinement alters both hydrodynamic stresses and swimmer motility, which in turn impacts fluid flows.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99, C104, and C105 represent the primary conclusions of the study, well-supported by the experimental data on motility (C2, C15, C16), flow fields (C3, C17, C40), and force balance analysis (C18-C20, C61). The attribution to mechanical rather than behavioral causes is supported by maintained flagellar beat frequency and waveform.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "c7f6578e-19d4-48b6-9d14-cf74b38e2c52",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mechanical equilibrium framework for confined microswimmers is established: net force and torque are zero (negligible gravity), with flagellar thrust (Fth) and cell body drag (Fhd) balancing in unbounded/weak confinement, but requiring additional contact friction (Fcf) in strong confinement. CR is a classic puller described by three Stokeslets in weak confinement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27, C29, and C50 establish the theoretical framework based on established knowledge (C23-C26) and appropriate assumptions (C50). The force balance is well-supported by citations and consistent with the experimental observations. The extension to strong confinement (C29) is a logical inference supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "ebec4079-c758-494e-a0f8-edafec18facb",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The H30 flow field shows standard features of an unbounded CR's flow field: far-field four-lobe flow of a puller, two lateral vortices at 8\u20139 \u03bcm from cell's major axis, and anterior flow along the swimming direction till a stagnation point at 21 \u03bcm from cell centre.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by experimental flow field measurements (Figure 3A-B) and comparison with cited literature (Drescher et al., 2010; Guasto et al., 2010). This validates the experimental methodology by reproducing known results for weak confinement before examining strong confinement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "2cacc3a9-6404-45b1-b287-d7084079336f",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The vortex contents of H30 and H10 flow fields are mutually compatible: large vortices flanking the rapidly moving CR in H30 are shrunken and localized close to the cell body in H10 due to reduced swimming speed, while frontal vortices generated during flagellar power stroke (opposite in sense to cell body vortices) now fill most of the H10 flow field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 provide a mechanistic interpretation of the flow field differences that is consistent with the experimental observations and force balance analysis. The explanation logically connects the reduced swimming speed to vortex shrinkage and the dominance of flagellar-generated vortices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "1d5cf9e1-6c79-404a-8e1d-5dc73512c4af",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "H30 swimmers pass through the field of view in ~1-1.4 s while H10 swimmers stay for ~8 s. The radius of influence of H10 flow (~35 \u03bcm) is higher than H30 (~15 \u03bcm), corroborating the longer velocity correlation length scale in strong confinement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91, C92, and C95 are direct observations from experimental videos (Figure 5B-C) and tracer displacement analysis. The consistency between radius of influence and velocity correlation length provides internal validation of the enhanced mixing result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "f93edda1-fdc1-46b8-b412-2116a1b3306a",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CR feeds on dissolved inorganic nutrients (phosphate, nitrogen, ammonium, CO2) in addition to sunlight. Nitrogen and carbon are limiting macronutrients, and flagella-generated flow fields help in uniform distribution of dissolved solute molecules through fluid mixing and transport, positively influencing nutrient uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 represent established knowledge supported by appropriate citations. These provide biological context for the significance of the enhanced mixing results but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "6da6bdf5-49c6-4e67-ac11-4580a55ba7ec",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The force-monopolar flow field of strongly confined CR is similar to tethered microorganisms like Vorticella, making the Brinkman Stokeslet model applicable to these contexts, though differences in ciliary beating must be accounted for near the organism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C111 are supported by comparison with cited literature on Vorticella. The similarity is reasonable given both involve force-monopole flows. The caveat about ciliary beating differences (C111) is appropriate and shows awareness of model limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "bc140be9-fd71-49d7-8fd1-1c3638bcfade",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CR is known to glide on substrates through flagellar adhesion, but adhesion strength is light-switchable. Consequently, CR in natural habitats (rocks and soils) would likely utilize swimming in addition to gliding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C113 cite established knowledge. Claim C114 is a reasonable inference given light-switchable adhesion, though it remains speculative about natural behavior. This provides ecological context for why swimming in strong confinement is biologically relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "0e6388ec-e4a1-4e24-b964-751045ee5cfa",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The experimental and theoretical methodologies are general and applicable to any strongly confined microswimmer. The quasi-2D Brinkman approach with Gaussian forces is simple to implement for analyzing confined flows in active systems. The work is expected to inspire further studies and enable applications in microfluidic devices and biomedical contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C108, C119-C122 are speculative statements about future applicability and impact. While the methodology appears sound and the approach is indeed simpler than method of images, the generalizability claims (C119, C120) require validation on other systems. The application claims (C121, C122) are reasonable expectations but remain to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "b2229d19-31ea-4102-bae7-ca389b500558",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The no-slip boundary on the cell body needs to be invoked to mimic front-back flow asymmetry, which requires more involved analysis due to multiple boundaries and can be addressed in follow-up study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 appropriately identifies a limitation of the current theoretical model and suggests future work. This is a reasonable assessment given the complexity of incorporating the cell body boundary condition in addition to the wall boundaries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "56970524-5ef4-43bb-bd03-e270122003e0",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Detailed experimental methods are described including cell culture conditions, surface modification to prevent adhesion, imaging setup with red light illumination, and chamber height measurements (H10: 10.88\u00b10.68 \u03bcm; H30: 30.32\u00b10.87 \u03bcm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123-C129 describe experimental protocols with appropriate detail and citations. The chamber height measurements (C128-C129) provide important validation that the nominal spacer thicknesses are accurate. The surface modification protocols (C125-C126) address potential artifacts from adhesion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    },
+    {
+      "id": "db2cf7f5-1fc6-4811-b34d-e8cfaade4915",
+      "content_id": "2cde17e7-6041-4f69-9b40-510c32b602e3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background context is established: microorganisms imprint propulsion mechanisms in flow fields, operate at low Reynolds number governed by fluid friction, have developed drag-based propulsion, encounter confined environments naturally (biofilms, porous media, tissues) and in applications, and confinement alters motility and flow fields with ecological consequences. CR is a model system with biotechnological applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C8, C11-C12 provide established background knowledge supported by appropriate citations. These contextualize the study but are not novel findings. The claims accurately represent the state of knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:06:47.871045Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e702075d-8265-4f43-b5e6-721f6afaaa4e",
+      "result_id": "6c8813a1-6bdc-46c7-9833-77836a3c1ef4"
+    },
+    {
+      "claim_id": "15da9fc0-f86d-4a10-acc4-8d70e78e7b4f",
+      "result_id": "6c8813a1-6bdc-46c7-9833-77836a3c1ef4"
+    },
+    {
+      "claim_id": "ac47f9da-147e-42d4-86ce-58ccd14e7222",
+      "result_id": "6c8813a1-6bdc-46c7-9833-77836a3c1ef4"
+    },
+    {
+      "claim_id": "e616bf45-eaf8-46c2-b3cd-88759653af59",
+      "result_id": "6c8813a1-6bdc-46c7-9833-77836a3c1ef4"
+    },
+    {
+      "claim_id": "a05ccede-f056-4622-a558-19bda7a31542",
+      "result_id": "6c8813a1-6bdc-46c7-9833-77836a3c1ef4"
+    },
+    {
+      "claim_id": "5326a85e-152f-4c30-a0f0-8283e9f65351",
+      "result_id": "ef46a8a3-5eab-4420-843a-76a354425df3"
+    },
+    {
+      "claim_id": "759652b3-a5a8-4c82-a7a4-de5369b11117",
+      "result_id": "ef46a8a3-5eab-4420-843a-76a354425df3"
+    },
+    {
+      "claim_id": "3bfb6b25-e993-4a11-8918-14bf3749f585",
+      "result_id": "ef46a8a3-5eab-4420-843a-76a354425df3"
+    },
+    {
+      "claim_id": "1cceeb05-c320-47ba-a5c2-fabd24b5ffa5",
+      "result_id": "ef46a8a3-5eab-4420-843a-76a354425df3"
+    },
+    {
+      "claim_id": "ed10e9df-ec3d-412a-be5b-3a328586f784",
+      "result_id": "ef46a8a3-5eab-4420-843a-76a354425df3"
+    },
+    {
+      "claim_id": "7c2ef0ac-d6bb-4818-b6c1-7081d3e8f6d0",
+      "result_id": "ef46a8a3-5eab-4420-843a-76a354425df3"
+    },
+    {
+      "claim_id": "c297911e-417f-4a0a-8405-5bb413e8a9ad",
+      "result_id": "ef46a8a3-5eab-4420-843a-76a354425df3"
+    },
+    {
+      "claim_id": "1a8942aa-44c7-4088-bd9c-d97b187a2883",
+      "result_id": "ef46a8a3-5eab-4420-843a-76a354425df3"
+    },
+    {
+      "claim_id": "3de7f4f4-7ed6-4791-9aaf-91edd1c3ddd2",
+      "result_id": "ef46a8a3-5eab-4420-843a-76a354425df3"
+    },
+    {
+      "claim_id": "2ae92c1a-1c95-4419-be1c-416a0ab1dfe5",
+      "result_id": "db2f48b3-6735-4c3c-87af-25b848449027"
+    },
+    {
+      "claim_id": "b7ce0644-5ec7-46c9-81e3-155965fcae9b",
+      "result_id": "db2f48b3-6735-4c3c-87af-25b848449027"
+    },
+    {
+      "claim_id": "6d4a1032-0e88-429e-a1be-a0fd62ec424a",
+      "result_id": "db2f48b3-6735-4c3c-87af-25b848449027"
+    },
+    {
+      "claim_id": "12a85664-f1d3-4e6a-97e0-9ef277aeb43d",
+      "result_id": "db2f48b3-6735-4c3c-87af-25b848449027"
+    },
+    {
+      "claim_id": "2d859693-cc5f-4104-93dc-c72f9c1b1b61",
+      "result_id": "db2f48b3-6735-4c3c-87af-25b848449027"
+    },
+    {
+      "claim_id": "45c823f0-4d71-4835-8cd6-4ebdb7d941f3",
+      "result_id": "db2f48b3-6735-4c3c-87af-25b848449027"
+    },
+    {
+      "claim_id": "99461409-316e-4995-a3d5-413db4bbbae8",
+      "result_id": "a49010fa-f0b2-4250-bd58-2f5221db5e5f"
+    },
+    {
+      "claim_id": "02eea784-a8ab-4cb5-a26f-08c4dc055454",
+      "result_id": "a49010fa-f0b2-4250-bd58-2f5221db5e5f"
+    },
+    {
+      "claim_id": "1c20344f-1f3e-4b26-8f2f-6bf020fd04a1",
+      "result_id": "a49010fa-f0b2-4250-bd58-2f5221db5e5f"
+    },
+    {
+      "claim_id": "fa92c338-ca27-493a-96aa-13763975a7ef",
+      "result_id": "a49010fa-f0b2-4250-bd58-2f5221db5e5f"
+    },
+    {
+      "claim_id": "1279178d-2077-4e92-8479-9e03bf598214",
+      "result_id": "a49010fa-f0b2-4250-bd58-2f5221db5e5f"
+    },
+    {
+      "claim_id": "853ab15a-45b9-4b88-b8b9-0f927b86cc14",
+      "result_id": "a49010fa-f0b2-4250-bd58-2f5221db5e5f"
+    },
+    {
+      "claim_id": "3749d8b5-10e2-4a59-b3cf-2739ee570878",
+      "result_id": "a49010fa-f0b2-4250-bd58-2f5221db5e5f"
+    },
+    {
+      "claim_id": "f4a2dabe-f25d-4a96-a5ac-20a174671f8c",
+      "result_id": "a49010fa-f0b2-4250-bd58-2f5221db5e5f"
+    },
+    {
+      "claim_id": "d3e442df-163f-4e73-af59-37c8ea18f759",
+      "result_id": "061f17ce-220c-454b-aa17-46a749095af2"
+    },
+    {
+      "claim_id": "0c53034e-6738-4cba-b7f0-d2523e712ce2",
+      "result_id": "061f17ce-220c-454b-aa17-46a749095af2"
+    },
+    {
+      "claim_id": "98f6eb85-73e9-4291-97b6-e975678f511e",
+      "result_id": "061f17ce-220c-454b-aa17-46a749095af2"
+    },
+    {
+      "claim_id": "77964622-4633-42a2-ad75-d95c65ad031e",
+      "result_id": "061f17ce-220c-454b-aa17-46a749095af2"
+    },
+    {
+      "claim_id": "0ca38c67-2ac7-456f-b1b3-8436d40f8e02",
+      "result_id": "061f17ce-220c-454b-aa17-46a749095af2"
+    },
+    {
+      "claim_id": "f497f0b9-6b4d-4666-8f6b-d566e34c2977",
+      "result_id": "386dda63-07b3-44b5-9023-cbb6429de3f7"
+    },
+    {
+      "claim_id": "0f42701c-02d9-485b-830a-72f2744bc733",
+      "result_id": "c6d9737c-5399-4192-bfc2-141d4f44d616"
+    },
+    {
+      "claim_id": "c13e562c-a04d-4040-92a3-72e7f5838602",
+      "result_id": "ff18ec7d-120b-43ad-9fc8-2da524d70fe2"
+    },
+    {
+      "claim_id": "df3f563c-fc1f-4975-a421-a3422fe82998",
+      "result_id": "6b9e2269-83bc-4e32-9562-e9c9670aaa16"
+    },
+    {
+      "claim_id": "1dd4af51-1205-4050-8082-0b8c151e36a8",
+      "result_id": "6b9e2269-83bc-4e32-9562-e9c9670aaa16"
+    },
+    {
+      "claim_id": "00f665e9-7c3c-413c-8923-b6bbc571ede6",
+      "result_id": "6b9e2269-83bc-4e32-9562-e9c9670aaa16"
+    },
+    {
+      "claim_id": "38dbb2c4-1793-48a4-88cb-36893423beea",
+      "result_id": "c7f6578e-19d4-48b6-9d14-cf74b38e2c52"
+    },
+    {
+      "claim_id": "c47407bf-aedb-44a7-a25a-d89f37e18925",
+      "result_id": "c7f6578e-19d4-48b6-9d14-cf74b38e2c52"
+    },
+    {
+      "claim_id": "9d146b54-430b-4497-8719-897107f9cd94",
+      "result_id": "c7f6578e-19d4-48b6-9d14-cf74b38e2c52"
+    },
+    {
+      "claim_id": "6ca76e26-a6c7-4c74-898e-b4cae36f6f5f",
+      "result_id": "c7f6578e-19d4-48b6-9d14-cf74b38e2c52"
+    },
+    {
+      "claim_id": "340e01ee-4912-439b-bcf5-927d7df5a0e3",
+      "result_id": "c7f6578e-19d4-48b6-9d14-cf74b38e2c52"
+    },
+    {
+      "claim_id": "211ae62b-2b43-4dfe-9e4d-3c172671990a",
+      "result_id": "c7f6578e-19d4-48b6-9d14-cf74b38e2c52"
+    },
+    {
+      "claim_id": "59d950bb-7210-4487-b37c-ccadb887d65c",
+      "result_id": "c7f6578e-19d4-48b6-9d14-cf74b38e2c52"
+    },
+    {
+      "claim_id": "d06a2efb-82aa-45b9-bf68-b375a8e72ff3",
+      "result_id": "ebec4079-c758-494e-a0f8-edafec18facb"
+    },
+    {
+      "claim_id": "88d87708-4c91-40dd-ad13-60849d1f1b1d",
+      "result_id": "2cacc3a9-6404-45b1-b287-d7084079336f"
+    },
+    {
+      "claim_id": "e3e47d9b-28e9-40b5-915c-f7770a168348",
+      "result_id": "2cacc3a9-6404-45b1-b287-d7084079336f"
+    },
+    {
+      "claim_id": "60ccb7a5-e760-4407-a15a-77f2e9bd8f08",
+      "result_id": "2cacc3a9-6404-45b1-b287-d7084079336f"
+    },
+    {
+      "claim_id": "5feb5c4d-36c5-4c40-82f8-518f43b52696",
+      "result_id": "1d5cf9e1-6c79-404a-8e1d-5dc73512c4af"
+    },
+    {
+      "claim_id": "654c3b5e-db41-4b93-ad1b-95a914268139",
+      "result_id": "1d5cf9e1-6c79-404a-8e1d-5dc73512c4af"
+    },
+    {
+      "claim_id": "f09ec48c-84d9-4347-b8da-f1f1ccbdc1fc",
+      "result_id": "1d5cf9e1-6c79-404a-8e1d-5dc73512c4af"
+    },
+    {
+      "claim_id": "f632b49e-5572-4fe8-aed7-86d55f327b92",
+      "result_id": "f93edda1-fdc1-46b8-b412-2116a1b3306a"
+    },
+    {
+      "claim_id": "6f13e279-bb4b-4536-b90a-6695fce8b9ac",
+      "result_id": "f93edda1-fdc1-46b8-b412-2116a1b3306a"
+    },
+    {
+      "claim_id": "662e3b9b-435a-4d76-85c9-6bf1d0668a08",
+      "result_id": "f93edda1-fdc1-46b8-b412-2116a1b3306a"
+    },
+    {
+      "claim_id": "25042680-9682-4dfb-aaee-09d2aed861a6",
+      "result_id": "6da6bdf5-49c6-4e67-ac11-4580a55ba7ec"
+    },
+    {
+      "claim_id": "f731f03d-9b99-4ff2-b9c4-24a8e2716f18",
+      "result_id": "6da6bdf5-49c6-4e67-ac11-4580a55ba7ec"
+    },
+    {
+      "claim_id": "ca5e0fcc-6025-4eec-917c-35a2e80dfdf7",
+      "result_id": "6da6bdf5-49c6-4e67-ac11-4580a55ba7ec"
+    },
+    {
+      "claim_id": "8d0c8524-03c4-4396-8d9d-1d148c3699c8",
+      "result_id": "bc140be9-fd71-49d7-8fd1-1c3638bcfade"
+    },
+    {
+      "claim_id": "a756dc58-ff80-4d34-9126-ec71b9e8c748",
+      "result_id": "bc140be9-fd71-49d7-8fd1-1c3638bcfade"
+    },
+    {
+      "claim_id": "6bb3ca44-bc62-4a2b-a940-e10fcddbab94",
+      "result_id": "bc140be9-fd71-49d7-8fd1-1c3638bcfade"
+    },
+    {
+      "claim_id": "52af5e2e-2618-4a72-9eb8-80c5ead927ad",
+      "result_id": "0e6388ec-e4a1-4e24-b964-751045ee5cfa"
+    },
+    {
+      "claim_id": "dcf8aa4d-d009-460c-879c-2e5110597b61",
+      "result_id": "0e6388ec-e4a1-4e24-b964-751045ee5cfa"
+    },
+    {
+      "claim_id": "9ed23507-8af8-48d3-bd7a-4d8ebcada3b0",
+      "result_id": "0e6388ec-e4a1-4e24-b964-751045ee5cfa"
+    },
+    {
+      "claim_id": "1ec3e686-eb79-46f4-97cc-933a76a4ce45",
+      "result_id": "0e6388ec-e4a1-4e24-b964-751045ee5cfa"
+    },
+    {
+      "claim_id": "cb81779d-031c-47f0-b39e-bd249aa790db",
+      "result_id": "0e6388ec-e4a1-4e24-b964-751045ee5cfa"
+    },
+    {
+      "claim_id": "8304c56c-a488-4c7d-af48-0aa468af85ae",
+      "result_id": "b2229d19-31ea-4102-bae7-ca389b500558"
+    },
+    {
+      "claim_id": "64be2f13-8c35-48b8-87ae-94ea62c82ad4",
+      "result_id": "56970524-5ef4-43bb-bd03-e270122003e0"
+    },
+    {
+      "claim_id": "c102bf1b-2153-4442-bd8d-23ab2ac86564",
+      "result_id": "56970524-5ef4-43bb-bd03-e270122003e0"
+    },
+    {
+      "claim_id": "43320cf9-0c1f-4877-b820-a52529b479d4",
+      "result_id": "56970524-5ef4-43bb-bd03-e270122003e0"
+    },
+    {
+      "claim_id": "b8e8eb92-2625-460f-bd32-a2c4ffa0220e",
+      "result_id": "56970524-5ef4-43bb-bd03-e270122003e0"
+    },
+    {
+      "claim_id": "9e767c88-4e32-49e5-8940-afcfd8ca6d4e",
+      "result_id": "56970524-5ef4-43bb-bd03-e270122003e0"
+    },
+    {
+      "claim_id": "4fc331d1-9c96-41ba-bf09-f58031793b28",
+      "result_id": "56970524-5ef4-43bb-bd03-e270122003e0"
+    },
+    {
+      "claim_id": "92d93ba4-de49-4b90-a107-fd2f8133d7d9",
+      "result_id": "56970524-5ef4-43bb-bd03-e270122003e0"
+    },
+    {
+      "claim_id": "02161cce-301d-49a1-8c2f-7b7b6be1f425",
+      "result_id": "db2cf7f5-1fc6-4811-b34d-e8cfaade4915"
+    },
+    {
+      "claim_id": "ac19ef2a-23c8-4577-bd93-c01af40a9d1c",
+      "result_id": "db2cf7f5-1fc6-4811-b34d-e8cfaade4915"
+    },
+    {
+      "claim_id": "311786eb-b2ef-41c7-a2cf-26f6f00d72f3",
+      "result_id": "db2cf7f5-1fc6-4811-b34d-e8cfaade4915"
+    },
+    {
+      "claim_id": "c169e73d-dc2b-417e-98d2-a7f01f7eb9fc",
+      "result_id": "db2cf7f5-1fc6-4811-b34d-e8cfaade4915"
+    },
+    {
+      "claim_id": "44fc5fbe-5813-4578-a982-f7fe661a4655",
+      "result_id": "db2cf7f5-1fc6-4811-b34d-e8cfaade4915"
+    },
+    {
+      "claim_id": "1d69e635-e240-4637-a97b-917c48a5a858",
+      "result_id": "db2cf7f5-1fc6-4811-b34d-e8cfaade4915"
+    },
+    {
+      "claim_id": "08f9d0aa-59d8-4a5c-b9e1-69f40aa56c66",
+      "result_id": "db2cf7f5-1fc6-4811-b34d-e8cfaade4915"
+    }
+  ],
+  "comparisons": []
+}

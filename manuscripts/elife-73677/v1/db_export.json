@@ -1,0 +1,1666 @@
+{
+  "submission": {
+    "id": "143608bd-8e49-4bfa-9d4b-d8d3f0108e2b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:33:41.850105Z",
+    "updated_at": "2025-12-03T17:33:41.850105Z"
+  },
+  "content": [
+    {
+      "id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "submission_id": "143608bd-8e49-4bfa-9d4b-d8d3f0108e2b",
+      "content_type": "manuscript",
+      "content_text": "# CD47 cross-dressing by extracellular vesicles expressing CD47 inhibits phagocytosis without transmitting cell death signals\n\n## Authors\n\n- Yang Li<sup>1</sup> ([ORCID: 0000-0003-4623-4489](https://orcid.org/0000-0003-4623-4489))\n- Yan Wu<sup>2</sup>\n- Elena A Federzoni<sup>3</sup>\n- Xiaodan Wang<sup>1</sup>\n- Andre Dharmawan<sup>3</sup>\n- Xiaoyi Hu<sup>2</sup>\n- Hui Wang<sup>2</sup>\n- Robert J Hawley<sup>2</sup>\n- Sean Stevens<sup>3</sup>\n- Megan Sykes<sup>2</sup>\n- Yong-Guang Yang<sup>1</sup> ([ORCID: 0000-0003-4985-1247](https://orcid.org/0000-0003-4985-1247)) \u2020\n\n### Affiliations\n\n1. Key Laboratory of Organ Regeneration and Transplantation of the Ministry of Education, The First Hospital, and Institute of Immunology, Jilin University Changchun China ([ROR:00js3aw79](https://ror.org/00js3aw79))\n2. Columbia Center for Translational Immunology, Columbia University Medical Center New York United States ([ROR:01esghr10](https://ror.org/01esghr10))\n3. Lung Biotechnology PBC Silver Spring United States\n4. International Center of Future Science, Jilin University Changchun China ([ROR:00js3aw79](https://ror.org/00js3aw79))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransgenic CD47 overexpression is an encouraging approach to ameliorating xenograft rejection and alloresponses to pluripotent stem cells, and the efficacy correlates with the level of CD47 expression. However, CD47, upon ligation, also transmits signals leading to cell dysfunction or death, raising a concern that overexpressing CD47 could be harmful. Here, we unveiled an alternative source of cell surface CD47. We showed that extracellular vesicles, including exosomes, released from normal or tumor cells overexpressing CD47 (transgenic or native) can induce efficient CD47 cross-dressing on pig or human cells. Like the autogenous CD47, CD47 cross-dressed on cell surfaces is capable of interacting with SIRP\u03b1 to inhibit phagocytosis. However, ligation of the autogenous, but not cross-dressed, CD47 induced cell death. Thus, CD47 cross-dressing provides an alternative source of cell surface CD47 that may elicit its anti-phagocytic function without transmitting harmful signals to the cells. CD47 cross-dressing also suggests a previously unidentified mechanism for tumor-induced immunosuppression. Our findings should help to further optimize the CD47 transgenic approach that may improve outcomes by minimizing the harmful effects of CD47 overexpression.\n\n## Introduction\n\nCD47 is ubiquitously expressed and acts as a ligand of signaling regulatory protein (SIRP)\u03b1, a critical inhibitory receptor on macrophages and dendritic cells (DCs). Emerging evidence indicates that the CD47-SIRP\u03b1 signaling pathway plays an important role in regulation of macrophage and DC activation, offering a promising intervention target for immunological disorders. CD47KO cells are vigorously rejected by macrophages after infusion into syngeneic wild-type (WT) mice, demonstrating that CD47 provides a \u2018don\u2019t eat me\u2019 signal to macrophages (Oldenborg et al., 2000; Wang et al., 2007a). Xenotransplantation using pigs as the transplant source has the potential to resolve the severe shortage of human organ donors, a major limiting factor in clinical transplantation (Yang and Sykes, 2007). We reported that the strong rejection of xenogeneic cells by macrophages (Abe et al., 2002) is largely caused by the lack of functional interaction between donor CD47 and recipient SIRP\u03b1 (Wang et al., 2007b, Ide et al., 2007; Navarro-Alvarez and Yang, 2014). These findings led to the development of human CD47 transgenic pigs that have achieved encouraging results in pig-to-nonhuman primate xenotransplantation (Tena et al., 2017; Nomura et al., 2020; Watanabe et al., 2020). In addition to macrophages, a sub-population of DCs also expresses SIRP\u03b1 (Wang et al., 2007a, Guilliams et al., 2016). Importantly, CD47-SIRP\u03b1 signaling also inhibits DC activation and their ability to prime T cells, and plays an important role in induction of T cell tolerance by donor-specific transfusion (DST) and hepatocyte transplantation (Wang et al., 2007a, Wang et al., 2014; Zhang et al., 2016). Thus, transgenic expression of human CD47 in pigs may also attenuate xenoimmune responses by ameliorating DC activation and antigen presentation. More recently, transgenic overexpression of CD47 was also applied for reducing allogenicity and generating hypoimmunogenic pluripotent stem cells (Han et al., 2019; Deuse et al., 2019).\n\nIt has become increasingly evident that the CD47-SIRP\u03b1 pathway plays a critical role in containing anti-tumor immune responses. CD47 upregulation was detected in various cancer cells, serving a powerful mechanism of evading macrophage killing (Jaiswal et al., 2009; Chan et al., 2009). Accordingly, treatment with CD47 blockade could inhibit tumor growth via macrophage-mediated mechanism (Jaiswal et al., 2009; Willingham et al., 2012; Weiskopf et al., 2016; Chao et al., 2010; Liu et al., 2015a). More recently, the antitumor activity of CD47 blockade was found to be associated with CD11c+ DC activation and largely T cell-dependent (Liu et al., 2015b, Chen et al., 2020; Li et al., 2020). Taken together, these studies revealed clearly that the CD47-SIRP\u03b1 pathway provides a powerful negative regulation for both innate and adaptive immune responses and is increasingly considered as an effective intervention target for protecting against transplant rejection and unleashing immune responses to cancer.\n\nAlthough negative regulation of immune responses is predominantly mediated by inhibitory CD47-SIRP\u03b1 signaling in macrophages and DCs, it remains largely unknown how transgenic CD47 on pig or human pluripotent stem cells and upregulated CD47 on tumor cells interact with its receptor and ligands. In the present study, we identified an alternative source of cell surface CD47. We found that extracellular vesicles (EVs), including exosomes (Exos) from cells transgenically overexpressing CD47 or tumor cells overexpressing endogenous CD47, could induce CD47 cross-dressing on pig or human cells. CD47 cross-dressed on cell surfaces can interact with SIRP\u03b1 to inhibit phagocytosis. However, unlike the autogenous CD47 that, upon ligation, induces cell apoptosis and senescence (Mateo et al., 1999; Gao et al., 2016; Meijles et al., 2017), ligation of CD47 cross-dressed on cell surfaces is not harmful to cells. This study provides deeper insight into the effect of CD47 overexpression, which needs to be considered when designing strategies for gene-editing in pigs for xenotransplantation or in human pluripotent stem cells for cell replacement therapy, and for developing CD47 blockade-based cancer immunotherapy.\n\n## Results\n\n### Transgenic hCD47 cross-dressing in pig cells\n\nCD47 cross-dressing was first identified by detecting hCD47 on pig cells that was cocultured with pig cells expressing transgenic hCD47. Two different hCD47 isoforms were used to ensure that findings are not isoform-specific. In these experiments, cell cocultures were performed using cell line cells derived from porcine aortic cells (PAOC; Figure 1\u2014figure supplement 1). First, we cocultured parental PAOCs (expressing pig CD47; referred to as PAOC/CD47p) with PAOCs that were genetically modified to express hCD47 isoform 2 (referred to as PAOC/CD47p/h2) or isoform 4 (referred to as PAOC/CD47p/h4). Two different CD47 isoforms were used to confirm the findings are not isoform-specific. Flow cytometry analysis using anti-CD47 antibodies recognizing both human and pig CD47 revealed that PAOC/CD47p/h2 or PAOC/CD47p/h4 cells expressed a markedly increased level of CD47 compared to PAOC/CD47p cells, and that PAOC/CD47p cells showed significantly increased CD47 staining after coculture with PAOC/CD47p/h2 or PAOC/CD47p/h4 (Figure 1A). These results suggest that PAOC/CD47p cells were cross-dressed by CD47, likely transgenic hCD47, from PAOC/CD47p/h cells during cultures. To confirm this possibility, we made CD47-defficient PAOC cells (via targeted deletion using CRISPR-Cas9- technology; referred to as PAOC/CD47null) and PAOC47null cells that express transgenic hCD47 isoform 2 (PAOC/CD47h2) or isoform 4 (PAOC/CD47h4). When the PAOC cell line cells were cocultured for 24 hr, we found that PAOC47null cells became positively stained by both anti-h/pCD47 (Figure 1B, top) and anti-hCD47 (Figure 1B, bottom) antibodies. To rule out the possibility that, during the coculture, the CD47null cells did not become CD47+, but PAOC/CD47h2 cells reduced hCD47 expression, we labeled PAOC/CD47null (Figure 1C, Left) or PAOC/CD47h2 (Figure 1C, Right) cells with florescence Celltrace violet and then cocultured the labeled cells with unlabeled PAOC/CD47h2 or PAOC/CD47null cells, respectively. This experiment, in which fluorescence-labeling allowed for better distinguishing between the two cell populations in the cocultures, further confirmed that PAOC/CD47null cells can be cross-dressed by CD47 after coculture with PAOC/CD47h2 cells (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig1-v1.jpg)\n\n**Figure 1.:** (A) Porcine aortic cell (PAOC)/CD47p cells and PAOC/CD47p/h2 or PAOC/CD47p/h4 cells were cultured alone or cocultured for 24 hr, and hCD47 cross-dressing on gated PAOC/CD47p cells was assessed by flow cytometry using anti-h/pCD47-PE mAb (clone CC2C6, reacting with both human and pig CD47). Shown are representative histogram profiles (left; the numbers in the figure indicate the median fluorescent intensity [MFI] of gated PAOC/CD47p cells), and average MFI (right; mean \u00b1 SDs; n=6 replicates per group) of gated PAOC/CD47p cells in the indicated cell cultures. ****, p<0.0001 (two-tailed unpaired t-test). Results shown are representative of three independent experiments. (B) PAOC/CD47null, and PAOC/CD47h2 or PAOC/CD47h4 were cultured alone or cocultured for 24 hr, and analyzed for hCD47 cross-dressing on gated PAOC/CD47null cells by flow cytometry using anti-h/pCD47-PE mAb (top) or anti-hCD47-BV786 mAb (bottom). Shown are representative histogram profiles (left panel; the numbers in the figure indicate the MFI of gated PAOC/CD47null cells), and average MFI (right panel; mean \u00b1 SDs; n=3 replicates per group) of gated PAOC/CD47null cells in the indicated cell cultures. **, p<0.01; ****, p<0.0001 (two-tailed unpaired t-test). Results shown are representative of three independent experiments. (C) Celltrace violet-labeled PAOC/CD47null (left panel) or PAOC/CD47h2 (right panel) was cultured alone (Violet CD47null or Violet CD47h2) or cocultured with unlabeled PAOC/CD47h2 (Violet CD47null + CD47h2) or PAOC/CD47null (CD47null or Violet CD47h2), respectively, then the cells were stained by anti-h/pCD47-PE mAb. Shown are representative flow cytometry profiles (n=3 replicates). Results shown are representative of two independent experiments. (D) Pig lymphoma cell line (LCL) and hCD47-tg LCL (LCL/CD47p/h) cells were cultured alone or cocultured for 24 hr, and analyzed for hCD47 cross-dressing on gated LCL cells (the numbers in the figure indicate the MFI of gated LCL cells). The staining control of \u2018mixed at staining\u2019 indicates the two types of cells were cultured separately and mixed immediately prior anti-CD47 staining. Two independent experiments were performed, and each experiment had two replicates per group. Representative flow cytometry profiles are shown. (E) PAOC47null cells were cocultured with bone marrow cells from hCD47-tg miniature swine for 2 days and analyzed for hCD47 cross-dressing on gated PAOC47null cells by flow cytometry using anti-h/pCD47-PE mAb (the numbers in the figure indicate the MFI of gated PAOC/CD47null cells). Two independent experiments were performed, and each experiment had two replicates per group. Representative flow cytometry profiles are shown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of pig CD47 loci and guide RNA sequence targeting the exon 2 of pig CD47 gene used for generating POAC/CD47null cells. (B) Schematics of human CD47 isoform 2 (with 16aa intracellular domain (ID); top) and isoform 4 (with 34aa ID; bottom) plasmids, which were used for making POAC/CD47h2 and POAC/CD47h4 cells, respectively. (C) flow cytometry profiles showing staining of the indicated PAOC cell lines with anti-h/p CD47 (top) and anti-hCD47 (bottom) antibodies.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Shown are representative flow cytometry profiles of porcine aortic cell (PAOC) CD47null (left) and pig lymphoma cell line (LCL; right) cells stained with anti-pig SIRP\u03b1.\n\nPAOC cells express SIRP\u03b1 (Figure 1\u2014figure supplement 2, left), and pig SIRP\u03b1 is reported to interact with human CD47 (Boettcher et al., 2019). Furthermore, previous studies have shown that CD47-lentiviruses are more effective in transducing SIRP\u03b1+ non-phagocytic tumor cells, suggesting that the interaction of CD47 with SIRP\u03b1 may facilitate lentiviral engulfment by target cells (Sosale et al., 2016). Thus, to determine whether hCD47 cross-dressing is mediated by binding of hCD47 to pig SIRP\u03b1, we performed cocultures with pig lymphoma cell line (LCL) cells that do not express SIRP\u03b1 (Figure 1\u2014figure supplement 2, right). LCL cells cocultured with LCL cells that express hCD47 (LCL/CD47p/h) (Ide et al., 2007; Wang et al., 2011), but not those cultured alone or mixed with LCL/CD47p/h immediately prior to flow cytometry analysis, were positively stained by anti-hCD47 antibodies (Figure 1D). Although we cannot rule out of the role of SIRP\u03b1 in hCD47 cross-dressing, our data indicate that hCD47 cross-dressing can occur in an SIRP\u03b1-independent manner.\n\nWe then wished to determine if cells other than the PAOC cell lines could be a source of CD47 for cross-dressing. Toward this end, PAOC47null cells were cocultured with bone marrow cells (BMCs) from hCD47-transgenic miniature swine. Like pig cells cocultured with hCD47-transgenic cell lines (Figure 1A\u2013D), PAOC47null cells also became positively stained by anti-hCD47 antibodies after being cocultured with hCD47-tg swine cells (Figure 1E).\n\n### Cross-dressing with native CD47 from human T cell leukemia cells\n\nWe next determined whether cells can be cross-dressed by native CD47 using human T-cell leukemia Jurkat cells that express a higher level of CD47 than normal hematopoietic cells (Figure 2A). In order to clearly identify cross-dressed CD47 on cell surface, CD47-defficient Jurkat cells were generated using the CRISPR-Cas9 technique (Figure 2\u2014figure supplement 1) and cocultured for 24 hr with the parental WT Jurkat cells or with hCD47-tg pig LCL cells (Figure 2B). Flow cytometry analysis revealed that CD47KO Jurkat cells were clearly stained positive by anti-hCD47 antibodies after coculture with parental WT Jurkat cells or hCD47-tg pig LCL cells compared to those cultured alone or mixed immediately before staining (Figure 2B). Furthermore, pig LCL cells also became positive for human CD47 staining after coculture for 24 hr with WT Jurkat cells (Figure 2B). More than half of the cross-dressed hCD47 (determined by MFI) remained on pig LCL cells 3 days after being separated from hCD47-expressing cells (Figure 2C), indicating that hCD47 cross-dressing was relatively stable. We also noted that not only hCD47, but other membrane proteins of WT Jurkat cells were also cross-dressed on pig LCL cells (Figure 2\u2014figure supplement 2). While to a lower level than untreated cells, hCD47 cross-dressing was clearly detected on LCL cells that were pretreated with cytochalasin D, a cell-permeable potent inhibitor that disrupts actin microfilaments (Cooper, 1987), after cocultured with cytochalasin D-pretreated WT Jurkat cells (Figure 2\u2014figure supplement 3A), indicating that a functional cytoskeleton is not absolutely required for, but may facilitate hCD47 cross-dressing. These results indicate that human CD47 cross-dressing could be induced by not only hCD47-transgenic cells but also tumor cells that express only the native CD47.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig2-v1.jpg)\n\n**Figure 2.:** (A) CD47 expression on Jurkat cells and normal human CD3+, CD19+, and CD14+ peripheral blood cells (the numbers indicate median fluorescent intensity [MFI] of human CD47 staining). (B) CD47 expression on wild-type (WT) Jurkat cells, pig lymphoma cell line (LCL)/CD47p/h cells, CD47KO Jurkat cells, CD47KO cells mixed with WT Jurkat cells (mixed at the time of staining), CD47KO Jurkat cells cocultured (24 hr) with WT Jurkat or pig LCL/CD47p/h cells, pig LCL cells, and LCL cells cocultured (24 hr) with WT Jurkat cells. (C) PKH67-labeled pig LCL cells were cocultured with PHK26-labeled LCL/CD47p/h (left) or WT Jurkat (right) cells for 1 day, PHK67-labeled pig LCL cells are sorted and treated with mitomycin C (2 \u00b5g/ml) for 30 min (to stop cell division), then analyzed for hCD47 staining on pig LCL cells immediately (Day 0) and at the indicated times after cultured in media. The numbers in the figure indicate MFI of CD47 staining on gated cells.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic of human CD47 loci and guide RNA sequence targeting the exon 2 of human CD47 gene used for generating CD47KO Jurkat cells. (B) Flow cytometry profiles showing anti-CD47 staining of wild-type (WT) and CD47KO Jurkat cells.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** PKH67-labeled pig lymphoma cell line (LCL) cells were cocultured with PKH26 labeled-wild-type (WT) Jurkat cells for 20 hr and analyzed for human CD47, CD45, CD90, and HLA-ABC staining on pig LCL cells. Shown are representative histogram, and MFI (mean \u00b1 SDs; n = 3 replicates in the co-cultured group) of pig LCL cells co-cultured with WT Jurkat cells. Results shown are representative of three independent experiments.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Untreated or cytochalasin D-pretreated pig lymphoma cell line (LCL) cells were cocultured with PKH26-labeled wild-type Jurkat cells (A) or extracellular vesicles (prepared from LCL/CD47p/h) (B) for 20 hr, and analyzed for PKH26 fluorescence on pig LCL cells by flow cytometry. MFI: median fluorescent intensity. Results shown are representative of two independent experiments.\n\n### CD47 cross-dressing by extracellular vesicles and exosomes\n\nWe next investigated whether CD47 cross-dressing can be induced by EVs or requires direct cell-cell interaction. We analyzed hCD47 cross-dressing on CD47KO Jurkat cells, pig LCL cells, and PAOC/CD47null cells in the absence or presence of EVs prepared from PAOC/CD47h2 cells. Flow cytometry analysis showed that CD47 cross-dressing occurred in both CD47KO human T-cell leukemia Jurkat cells (Figure 3A) and pig B-lymphoma LCL cells (Figure 3B) after incubation for 2 or 6 hr with PAOC47h2 cell-derived EVs. To a less extent, both CD47KO Jurkat and LCL cells were also positively stained by anti-hCD47 after incubation with Exos released by PAOC47h2 cells (Figure 3A and B). Similarly, hCD47 cross-dressing was detected in PAOCnull cells after incubation with EVs from PAOC47h2 cells (Figure 3C). In this experiment, PAOCnull cells were labeled with florescence Celltrace violet prior to incubation with EVs to ensure there was no contamination by PAOCh2 cells in the prepared EVs. After incubation with PAOC47h2 EVs, a significant proportion of violet-labeled PAOCnull cells became positive for hCD47 (Figure 3C). Of note, the frequency of hCD47+ PAOCnull cells at 42 hr was lower than that at 18 hr, which is most likely due to PAOCnull cell proliferation and EV exhaustion/degradation. Pig LCL cells were also stained positive for hCD47 after incubated with EVs from hCD47-tg pig LCL cells or WT Jurkat cells, in which hCD47 cross-dressing was detected 1 hr after incubation with EVs and the levels remained stable or increased at 24 hr (Figure 3\u2014figure supplement 1). These results indicate that CD47 cross-dressing could be induced independently of cell-cell contact by EVs, including Exos. Again, a functional cytoskeleton is not absolutely required for hCD47 cross-dressing, as hCD47 was clearly detected on cytochalasin D-pretreated LCL cells after incubation with EVs from hCD47-tg LCL cells, though the level was moderately reduced (Figure 2\u2014figure supplement 3B). Furthermore, cross-dressing was not diminished by treatment with trypsin/EDTA, indicating that membrane fusion is involved in EV cross-dressing (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013B) CD47KO Jurkat cells (A) or pig lymphoma cell line (LCL) cells (B) were cultured in the absence (left) or presence (right) of EVs (top) or Exos (bottom) prepared from PAOC/CD47h2 cell culture supernatants for 2 hr or 6 hr, and analyzed for hCD47 cross-dressing by flow cytometry using anti-hCD47-BV786 mAb. Representative flow cytometry profiles of three independent experiments were shown. (C) Celltrace violet-labeled PAOC/CD47null cells were cultured in the absence (left) or presence (right) of EVs prepared from PAOC/CD47h2 cells for 18 hr or 42 hr, and analyzed for hCD47 cross-dressing by flow cytometry using anti-hCD47-BV786 mAb.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Pig LCL cells were cultured with EVs from hCD47-tg pig LCL (A) or wild-type Jurkat cells (B), and analyzed for CD47 cross-dressing by flow cytometry at 1 and 24 hr after culture. Pig LCL cells that were not cultured with EVs were used as the staining control. Results shown are representative of three independent experiments.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Wild-type Jurkat cells were labeled with PKH26 and cocultured with PKH67-labeled pig lymphoma cell line (LCL) cells for 24 hr, washed with PBS with or without trypsin/EDTA, then analyzed PKH26 fluorescence on LCL cells by flow cytometry. Shown are staining profiles (left) and median fluorescent intensity (MFI; mean \u00b1 SDs) of cocultured LCL cells that were not (Control, n=3) or treated with trypsin/EDTA (EDTA,n=3), ns, not significant (two-tailed unpaired t-test); LCL cells not cocultured with Jurkat cells were used as staining control (LCL). Results shown are representative of two independent experiments.\n\n### Protection against phagocytosis by cross-dressed CD47\n\nWe next determined whether cross-dressed CD47 can act as a marker of self to protect the cells against phagocytosis. We first investigated the binding potential of cross-dressed hCD47 with human SIRP\u03b1. CD47KO Jurkat cells were cocultured without or with EVs from PAOC/CD47h2 cells for 5 hr, washed, and incubated with recombinant human SIRP\u03b1-Fc chimera for 1 hr. Binding of human SIRP\u03b1 fusion protein to CD47KO Jurkat cells was then measured using fluorochrome-labeled anti-human IgG Fc antibody. Flow cytometry analysis showed that human SIRP\u03b1 fusion protein was able to bind CD47KO Jurkat cells cultured with EVs but not those cultured without EVs (Figure 4A). The data indicate that cross-dressed hCD47 on CD47KO Jurkat cells can bind human SIRP\u03b1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig4-v1.jpg)\n\n**Figure 4.:** (A) CD47KO Jurkat cells were cocultured without (left) or with (right) extracellular vesicles (EVs) from PAOC/CD47h2 cells at 37\u00b0C for 5 hr, then washed and incubated with recombinant human SIRP\u03b1-Fc chimera at 37\u00b0C for 1 hr. The binding of SIRP\u03b1-Fc proteins to CD47KO Jurkat cells was visualized by staining with APC-conjugated mouse anti-human IgG Fc mAb. Representative flow cytometry profiles of two independent experiments are shown. (B) PAOC47null and PAOC47h2 cells were cultured alone (left and middle) or together (right) for 48 hr and stained using anti-hCD47-BV786 mAb, then PAOC47null (R1), PAOC47h2 (R3), and hCD47+ (i.e. hCD47 cross-dressed) PAOC47null (R2) cells sorted from cocultures were used immediately for phagocytic assay. (C) PAOC47null (R1), PAOC47h2 (R3), or sorted hCD47 cross-dressed PAOC47null (R2) cells were labeled with Celltrace violet and incubated with human macrophages for 2 hr, then phagocytosis was determined by flow cytometry using anti-human CD14 mAb. Shown are representative flow cytometry profiles (left) and levels (right; mean \u00b1 SDs; n=3) of phagocytosis (i.e. percentages of human macrophages that have engulfed violet + target cells (CD14+violet+) in human CD14+ macrophages). Representative results of three independent experiments are shown. (D) CD47KO Jurkat, wild-type (WT) Jurkat, and CD47KO Jurkat cells pre-incubated with EVs from PAOC/CD47h2 cells were labeled by Celltrace violet and cocultured with human macrophages for 2 hr, then phagocytosis was analyzed by flow cytometry. Shown are representative flow cytometry profiles (left) and levels (right; mean \u00b1 SDs; n=3) of phagocytosis (i.e. percentages of hCD14+violet+ in total hCD14+ macrophages). Representative results of two independent experiments are shown. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001; ns, not significant (two-tailed unpaired t-test).\n\nWe then performed phagocytic assay to determine the potential of cross-dressed hCD47 to protect pig cells or CD47KO human leukemia cells against phagocytosis by human monocyte-derived macrophages. PAOC47null and PAOC/CD47h2 cells were cultured for 48 hr, then hCD47 cross-dressed PAOC47null cells were sorted out (Figure 4B) and their susceptibility to phagocytosis by human macrophages was determined in comparison to PAOC47null and PAOC/CD47h2 cells that were cultured separately (Figure 4C). As expected, PAOC47null cells were significantly more sensitive than PAOC/CD47h2 cells to phagocytosis (Figure 4C). However, hCD47 cross-dressing effectively reduced the susceptibility of PAOC47null cells to phagocytosis by human macrophages, to a level comparable to that of PAOC/CD47h2 cells (Figure 4C). Human CD47 cross-dressing protects not only xenogeneic pig cells, but also human leukemia cells, against phagocytosis by human macrophages. In phagocytic assays where CD47KO Jurkat cells showed significantly greater phagocytosis than WT Jurkat cells, pre-incubation of CD47KO Jurkat cells with EVs released by PAOC/CD47h2 cells was found highly effective in reducing their phagocytosis by human macrophages (Figure 4D). These results indicate that human CD47 cross-dressing can act as a functional ligand for human SIRP\u03b1 and deliver \u2018don\u2019t eat me\u2019 signals to human macrophages.\n\n### Ligation of autogenous but not cross-dressed CD47 induces death in Jurkat cells\n\nLigation of cell surface CD47 by its ligand thrombospondin-1 (TSP-1) (Saumet et al., 2005), CD47-binding peptides of TSP-1 (Martinez-Torres et al., 2015) or CD47 antibodies (Mateo et al., 1999) has been shown to induce death in varying types of cells. In line with these reports, we observed that human SIRP\u03b1-Fc fusion proteins could induce cell death in a dose-dependent manner in WT, but not CD47KO, human T-cell leukemia Jurkat cells (Figure 5\u2014figure supplement 1; Figure 5A and B). The cell death observed in WT Jurkat cells was induced by CD47 ligation with hSIRP\u03b1-Fc proteins, as cell death was minimally detectable in WT Jurkat cells that were cultured simultaneously without hSIRP\u03b1-Fc proteins. To determine whether cross-dressed CD47 on Jurkat cells may also induce cell death, we compared the susceptibility to cell death induced by SIRP\u03b1-Fc proteins among WT, CD47KO, and hCD47 cross-dressed CD47KO Jurkat cells. CD47 cross-dressing was performed on GFP+ CD47KO Jurkat cells by incubation for 2 hr with PAOC/CD47h2 EVs. To induce cell death, GFP+ CD47KO or hCD47 cross-dressed GFP+ CD47KO Jurkat cells were cocultured, respectively, with an equal number of control WT Jurkat cells (5\u00d7104 each) in the presence of human SIRP\u03b1-Fc for 1 hr. The cocultured cells were then stained with anti-hCD47 (BV786) mAb, and cell death in WT (hCD47+GFP-), CD47KO (CD47-GFP+), and hCD47 cross-dressed CD47KO (CD47lowGFP+) Jurkat cells were measured. Of note, binding of hSIRP\u03b1-Fc proteins to cell surface CD47 (either native or cross-dressed) could partially block subsequent staining with anti-hCD47 antibodies and thus, the cells cultured with hSIRP\u03b1-Fc showed relatively lower hCD47 staining than those cultured without (Figure 5\u2014figure supplement 2, Figure 5). We found that SIRP\u03b1-Fc proteins induced significant cell death in WT Jurkat cells regardless of whether they were cocultured with CD47KO (Figure 5C and D) or with hCD47 cross-dressed CD47KO (Figure 5E and F). CD47 cross-dressing did not increase the sensitivity to cell death induced by SIRP\u03b1-Fc proteins, and cell death was minimally detectable in both CD47KO (Figure 5C and D) and hCD47 cross-dressed CD47KO (Figure 5E and F) Jurkat cells. However, CD47KO Jurkat cells regained the sensitivity to apoptosis induced by CD47 agonists after being transfected to express CD47 (Figure 5\u2014figure supplement 3). These results indicate that, unlike autogenous CD47, cross-dressed CD47 on Jurkat cells does not induce cell death upon ligation with SIRP\u03b1-Fc proteins.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) 5\u00d7104 wild-type (WT) Jurkat cells (GFP\u2212) were incubated in the presence (A) or absence (B) of 2.5 \u00b5g/ml hSIRP\u03b1-Fc proteins at 37\u00b0C for 1 hr and stained with anti-hCD47 mAb and Propidium Iodide (PI). Representative flow cytometry profiles show dead cells (PI+) in hCD47+ WT Jurkat population. (C\u2013D) CD47KO Jurkat (GFP+) and WT Jurkat cells were mixed (at 1:1 ratio; 5\u00d7104 each) and cocultured in the presence of 2.5 \u00b5g/ml human SIRP\u03b1-Fc for 1 hr, then stained with anti-hCD47 mAb and PI. Shown are representative flow cytometry profiles (C) and percentages (D; mean \u00b1 SDs) of PI+ dead cells in gated CD47KO (R1, CD47-GFP+) and WT (R2, hCD47+GFP\u2212) Jurkat cells. (E\u2013F) CD47KO Jurkat (GFP+) cells were incubated for 2 hr with PAOC/CD47h2 extracellular vesicles (EVs), then mixed with WT Jurkat cells (at 1:1 ratio; 5\u00d7104 each) and cocultured in the presence of 2.5 \u00b5g/ml human SIRP\u03b1-Fc for 1 hr. The cells were stained with anti-hCD47 mAb and PI. Shown are representative flow cytometry profiles (E) and percentages (F; mean \u00b1 SDs) of PI+ dead cells in gated EV-treated CD47KO (R1, CD47lowGFP+) and WT (R2, hCD47+GFP-) Jurkat cells. ****, p<0.0001 (two-tailed unpaired t-test). Of note, the cells cultured with hSIRP\u03b1-Fc proteins (A, C and E) showed reduced hCD47 staining (as detailed in Figure 5\u2014figure supplement 2). Results shown are representative of three independent experiments.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** 1\u00d7105 CD47KO or WT Jurkat cells were incubated in with hSIRP\u03b1-Fc proteins at the indicated concentrations for 1 hr at 37\u00b0C, then stained with PI to identify dead cells. (A) Representative flow cytometry profiles. (B) Percentages of dead (PI+) cells. Representative results of two independent experiments are shown.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Anti-hCD47 staining of wild-type (WT) Jurkat cells with or without prior incubation with hSIRP\u03b1-Fc. (B) Anti-hCD47 staining of CD47KO Jurkat cells with or without prior incubation with hSIRP\u03b1-Fc. (C) Anti-hCD47 staining of PAOC/CD47h2 extracellular vesicle (EV)-treated (for 2 hr) CD47KO Jurkat cells with or without prior incubation with hSIRP\u03b1-Fc. The numbers in the figures indicate median fluorescent intensity levels. Results shown are representative of three independent experiments.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73677/elife-73677-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) CD47 expression on wild-type (WT), transfected CD47KO (KO/CD47tg), and control CD47KO Jurkat cells. (B) Apoptosis induced by SIRPa-Fc proteins. (C) Apoptosis induced by agonistic anti-CD47 antibody CC2C6 (5 \u00b5g/ml). Results shown are representative of two independent experiments.\n\n## Discussion\n\nGiven its strong inhibitory effects on macrophage activation and phagocytosis, transgenically overexpressed CD47 is considered an effective means of preventing transplant rejection. A major obstacle impeding the translation of xenotransplantation into clinical therapies is vigorous xenograft rejection (Yang and Sykes, 2007), and the lack of functional interaction in CD47-SIRP\u03b1 pathway is a key mechanism triggering macrophage xenoimmune responses (Yang, 2010). Studies have shown that the use of gene-edited pigs carrying human CD47 is effective in protecting against xenograft rejection by macrophages in non-human primates (Ide et al., 2007; Tena et al., 2017; Watanabe et al., 2020). Recently, transgenic overexpression of CD47 was also successfully used in combination with other approaches, such as deletion of HLA molecules, to generate hypoimmunogenic pluripotent stem cells (Han et al., 2019; Deuse et al., 2019). Here we found that EVs and Exos released from pig cells transgenically overexpressing hCD47 can mediate hCD47 cross-dressing on surrounding pig cells. Furthermore, hCD47 cross-dressed on pig cells can interact with human SIRP\u03b1 and inhibit phagocytosis by human macrophages. Such CD47 cross-dressing occurs not only in the pig-to-pig combination, but also in the human-to-human, pig-to-human, and human-to-pig directions. These results provide a new mechanism for the inhibition of phagocytosis by the approach of transgenically expressing CD47.\n\nIn both xenogeneic and allogeneic settings, a high level of transgenic CD47 expression was found to be essential for its immune inhibitory effect. CD47 is not only a ligand of SIRP\u03b1, but also a signaling receptor that mediates a variety of functions, including apoptosis, cell cycle arrest, and senescence. It was reported that deletion of CD47 improves survival, proliferation, and function of endothelial cells, leading to increased angiogenesis and neovascularization both in vitro and in vivo (Meijles et al., 2017; Gao et al., 2016; Gao et al., 2017). In line with these observations, CD47 deletion from organ grafts was reported to ameliorate renal ischemia/reperfusion injury (Isenberg and Roberts, 2019) and cardiac allograft rejection (Chen et al., 2019). Using a pig-to-baboon kidney xenotransplantation model, a recent study suggested that widespread expression of hCD47 in the pig kidney was associated with increased vascular permeability and systemic edema, presumably due to upregulated TSP-1, and hence, TSP-1-CD47 signaling in the graft (Takeuchi et al., 2021). Our study showed that, although CD47 cross-dressed on cells may bind CD47 ligands, the ligand engagement does not induce CD47 signaling to cause apoptosis. We found that ligation of hSIRP\u03b1-Fc proteins with autogenous, but not cross-dressed, CD47 on Jurkat cells induces cell death. This study suggests that using a pig vascularized organ with hCD47 overexpression in some cells, which are more sensitive to macrophage attack but relatively resistant to CD47 signaling-induced deleterious effects, may improve the outcomes of xenotransplantation.\n\nEmerging evidence indicates that CD47-SIRP\u03b1 signaling plays an important role in regulating DC activation, and hence, T cell priming. The initial evidence for a role of CD47 in controlling DC activation was obtained in a mouse model of DST, in which DST using WT cells induces donor-specific tolerance, but DST using CD47-deficient cells paradoxically induces SIRP\u03b1+ DC activation and augments anti-donor T cell responses (Wang et al., 2010). A similar finding was made in a mouse model of hepatocyte allotransplantation where WT hepatocytes promote allograft survival, but CD47KO hepatocytes exacerbated rejection (Zhang et al., 2016). Although it was not tested directly, it is conceivable that CD47 cross-dressed on cells, which induces sufficient SIRP\u03b1 signaling to inhibit macrophages, may suppress SIRP\u03b1+ DC activation. Thus, in addition to inhibition of phagocytosis, CD47 cross-dressing may also attenuate anti-donor T cell responses when transplants are performed using CD47-overexpressing donors.\n\nCD47-SIRP\u03b1 signaling is an important component of the tumor immune microenvironment. CD47 upregulation was found in many types of cancer cells, in which CD47 provides an important mechanism to evade macrophage killing (Jaiswal et al., 2009; Chan et al., 2009). CD47 upregulation in tumors also significantly contributes to tumor-induced T cell suppression, as the antitumor activity of CD47 blocking treatment is associated with CD11c+ DC activation and is largely T cell-dependent (Liu et al., 2015b, Chen et al., 2020; Li et al., 2020). In the present study, CD47 cross-dressing was found in human T-cell leukemia Jurkat and pig B-lymphoma LCL cells, suggesting a possible involvement of CD47 cross-dressing in the formation of a tumor immunosuppressive microenvironment. In addition, CD47 on EVs and CD47 cross-dressed on tumor cells may also neutralize CD47 ligands, such as TSP-1 that has been shown to induce CD47 activation leading to apoptosis in tumor and endothelial cells (Martinez-Torres et al., 2015), hence, favoring tumor growth.\n\nWhile the mechanisms of EV-mediated exchange of biological information and materials between cells remain poorly understood (Raposo and Stahl, 2019), EV-induced antigen cross-dressing has been reported to play an important role in the regulation of immune responses, including alloantigen recognition and allograft rejection (Zeng and Morelli, 2018; Gonzalez-Nolasco et al., 2018). Earlier studies have shown that CD47, as a \u2018don\u2019t eat me\u2019 signal, is essential for EVs to elicit biological function by preventing their clearance by macrophages (Kamerkar et al., 2017). Here we report that EV-induced CD47 cross-dressing possesses partial activity of the autogenous CD47, such as the ability to initiate inhibitory SIRP\u03b1 signaling, and therefore offers means of separating the desired and harmful effects of CD47.\n\n## Materials and methods\n\n### Cell culture\n\nJurkat (J.RT3-T3.5) cell line was purchased from ATCC (named WT Jurkat to distinguish from CD47KO Jurkat cells) and the identity has been authenticated by STR profiling provided by China Center for Type Culture Collection (CCTCC). Jurkat cells were grown in Dulbecco's Modified Eagle's Medium supplemented with 10% Fetal Bovine Serum (FBS) (Atlanta Biologicals), GlutaMax and 100 U/ml penicillin and streptomycin. Pig LCL cell is a pig B cell lymphoma cell line (LCL-13271) derived from Swine Leukocyte Antigen AD (SLAAD) miniature swine with post-transplantation lymphoproliferative disease (PTLD), which is kindly provided by Christene Huang (Harvard Medical School). The markers used for characterization of pig LCL cells are CD2, CD25 and anti-mu heavy chain (details were published previously) (Cho et al., 2007). Human CD47 (hCD47) transgenic (tg) pig B-LCL cell line (hCD47-tg LCL) and control pig LCL cell line were generated by transfecting LCL cells with pKS336-hCD47 or empty pKS336 vector, respectively, as described previously (Ide et al., 2007). Pig LCL cells were grown in RPMI 1640 Medium supplemented with 10% FBS, GlutaMax, MEM Non-Essential Amino Acids Solution, sodium pyruvate, 5 \u03bcM 2-mercaptoenthaol and 100 U/ml penicillin and streptomycin. Human CD47-tg porcine BMCs were harvested from SLA-defined miniature swine with hCD47 transgene (Watanabe et al., 2020), and BMCs were grown in Dulbecco's Modified Eagle's Medium supplemented with 10% FBS, GlutaMax and 100 U/ml penicillin and streptomycin. Pig aortic endothelial cells (PAOC) immortalized with SV40 were purchased from ABM (catalog # T0448), and the endothelial cell characterization was determined by expression of VE cadherin and CD31, and uptake of fluorescent Dil-Ac-LDL (measured by DiI-Ac-LDL Kit; Cell Applications, Cat # 022K). All PAOC cell lines were grown in Porcine Endothelial Cell Growth Medium (Cell Applications, Cat # P211-500) supplemented with 10% FBS. All cell lines were confirmed negative for mycoplasma contamination by MycoStrip mycoplasma detection kit (InvivoGen, Cat# rep-mys-10). Trypsin/EDTA was used for cell dissociation. Media and reagents for cell culture were purchased from GIBCO. Where indicated, cells were treated with mitomycin C (2 \u00b5g/mL for 30 min; Sigma-Aldrich) or cytochalasin D (2 \u00b5g/mL for 60 min; Thermo Fisher).\n\n### Generation of CD47KO Jurkat and PAOC sublines\n\nCRISPR small guide RNA (sgRNA) for disrupting hCD47 in Jurkat cells was designed using the online tools (https://crispr.mit.edu), with sequence targeting the exon 2 of hCD47 (CTACTGAAGTATACGTAAAG-TGG [PAM]). The sgRNA was cloned into the pL-CRISPR.EFS.GFP lentiviral vector which was a gift from Benjamin Ebert (Addgene plasmid no. 57818) for co-expression with Cas9 (Heckl et al., 2014). Lentiviral particles were produced by co-transfection of a three-plasmid system consisting of the pL-CRISPR.EFS. GFP vector and packaging plasmids (pVSV-G and p\u0394) using CaCl2 into 293T cells in 175 cm2 flasks. Lentivirus supernatant was collected 48 hr post-transfection, concentrated by ultracentrifugation at 22,000 rpm for 2.5 hr (Beckman Coulter, Optima XE-90) and stored at \u201380\u00b0C until use. GFP+ cells were sorted 3 days after lentivirus transduction, then sorted GFP+ cells were expanded and assessed for CD47 expression by staining with BV786-conjugated anti-hCD47 mAb B6H12 (BD Bioscience) and PE-conjugated anti-hCD47 mAb CC2C6 (Biolegend). CD47-negative Jurkat cells were established by four rounds of cell sorting. We also generated Jurkat cells that express only transgenic hCD47 by transduction of CD47-negative Jurkat cells with pLVX lentiviral vector encoding hCD47 isoform 2 cDNA.\n\nPAOC cells were immortalized with Lenti-hTERT virus (ABM; cat no. G200) following manufacturer\u2019s instructions and clonal sorting/expansion. Alpha GAL KO pAOC-SV40-hTERT (GTKO) cell line (PAOC/CD47p) was created via nucleofection of pAOC-SV40-hTERT with plasmid expressing Cas9 protein (GeneART CRISPR Nuclease Vector, Invitrogen) and guide RNA targeting GGTA-1 gene (aGal protein, guide RNA sequence used: TCATGGTGGATGATATCTCC) using Lonza 4D-Nucleofector, followed by clonal sorting/expansion. PAOC/CD47null was created via nucleofection of PAOC/CD47p cells with plasmid expressing Cas9 protein and guide RNA targeting the pig CD47 gene (guide RNA sequence used: TCACCATCAGAATTACTACA) using Lonza 4D-Nucleofector. PAOC/CD47null and PAOC/CD47p cell lines expressing hCD47 short (305aa, 16aa short intracellular domain, NM_198793, NP_942088, PAOC/CD47h2, and PAOC/CD47p/h2) or hCD47long isoforms (323aa, 34aa long intracellular domain, NM_001777, NP_001768, PAOC/CD47h4, and PAOC/CD47p/h4) (Reinhold et al., 1995) were created via nucleofection with plasmid expressing Cas9 protein (GeneART CRISPR Nuclease Vector, Invitrogen) and guide RNA targeting AAVS1 safe harbor site using Lonza 4D-Nucleofector, followed by clonal sorting/expansion.\n\n### Flow cytometric analysis\n\nCD47 expression or cross-dressing on cells was determined by direct staining with BV786- or AF647-conjugated anti human specific CD47 mAb B6H12 (abbreviated anti-hCD47; BD Bioscience) or PE-conjugated anti-human CD47 mAb CC2C6 (with cross-reactivity to pig CD47 and thus, referred to as anti-h/pCD47; Biolegend). The level of cell surface CD47 is expressed as median fluorescent intensity. FITC(fluorescein isothiocyanate)-conjugated anti-pig SIRP\u03b1 mAb (clone BL1H7) was from Abcam; recombinant human SIRP\u03b1/CD172a Fc chimera protein, CF (cat no. 4546-SA-050) was from R&D system; APC-conjugated anti-human IgG Fc (clone HP6017), PE-conjugated anti-human CD90 (clone 5E10), AF647-conjugated anti-human HLA-ABC (clone W6/32) were from Biolegend; PKH26 and PKH67 were from Sigma-Aldrich. For analysis of CD47 expression on human PBMCs, single-cell suspensions were incubated with anti-hCD47 mAb B6H12 in combination with fluorochrome-conjugated anti-human CD45 (clone HI30), CD19 (clone HIB19), CD3 (clone SK7), and CD14 (clone M5E2; all from Biolegend). Dead cells were identified by staining with propidium iodide or 7-AAD. All samples were collected on Flow Cytometer (Fortessa and Celesta, Becton Dickinson), and data were analyzed by Flowjo software (Tree Star).\n\n### Purification of extracellular vesicles\n\nEVs and Exos from cell culture supernatants were purified by a standard differential centrifugation protocol as previously reported (Chen et al., 2018). In brief, bovine Exos were depleted from FBS by overnight centrifugation at 100,000 g, PAOC/CD47h2 cells were cultured in media supplemented with 10% Exos-depleted FBS for EVs and Exos purification from cell culture supernatants. Supernatants collected from 48-hr cell cultures were centrifuged at 2000 g (3000 rpm) for 20 min to remove cell debris and dead cells. EVs were pelleted after centrifugation at 16,500 g (9800 rpm) for 45 min (Beckman Coulter, Optima XE-90) and resuspended in PBS. The pelleted Exos from above supernatants were further centrifuged at 100,000 g (26,450 rpm) for 2 hr at 4\u00b0C (Beckman Coulter, Optima XE-90) and resuspended in PBS. EVs and Exos from total 1.3\u00d7107 PAOC/CD47h2 cells cultured for 48 hr were concentrated in 250 ul and 400 ul PBS, respectively, 10 ul of each was used for CD47 cross-dressing.\n\n### Preparation of human macrophages\n\nBlood from healthy volunteers was used to prepare peripheral blood mononuclear cells (PBMCs) by density gradient centrifugation. PBMCs were added at 3\u00d7106 per well in a 24-well plate, and unattached cells were removed from the plate on the second day. Attached cells were then differentiated to macrophages by 8\u20139 days of culture in Iscove's Modified Dulbecco's Medium (IMDM) (Gibco) + GlutaMax (Thermo fisher scientific) supplemented with 10% AB human serum (Gemini Bio-products, Inc), containing 10 ng/ml human M-CSF (PeproTech) and 100 U/ml penicillin and streptomycin (Gibco). The use of human blood samples was approved by the Institutional Review Board of Columbia University Medical Center.\n\n### Flow cytometry-based phagocytic assay\n\nMacrophages generated as above were harvested from plates using Trypsin-EDTA (Thermo fisher scientific). The indicated target cells were labeled with Celltrace violet (Thermo fisher scientific) according to the manufacturer\u2019s protocol, and phagocytic assay was performed by co-culturing 6\u00d7104 Celltrace Violet-labeled target cells with 3\u00d7104 human macrophages for 2 hr in ultra-low attachment 96-well flat bottom plates in IMDM + GlutaMax without antibiotics or serum added. All cells were harvested after coculture, and phagocytosis was determined by flow cytometry analyses, in which the phagocytic ratio is calculated as the percentage of macrophages that engulfed target cells (human CD45+CD14+Celltrace violet+) among total macrophages (human CD45+CD14+).\n\n### Statistical analysis\n\nData were analyzed using GraphPad Prism (version 8; San Diego, CA) and presented as mean value \u00b1 SDs. The level of significant differences in group means was assessed by student\u2019s t-test, and a p-value of \u22640.05 was considered significant in all analyses herein.\n",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "96998880-ba37-4054-b08f-915f0af3f1c0",
+      "submission_id": "143608bd-8e49-4bfa-9d4b-d8d3f0108e2b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Simon Yona, https://ror.org/03qxff017 The Hebrew University of Jerusalem Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73677.sa0](https://doi.org/10.7554/eLife.73677.sa0)\n\nThis study by Li et al., describes an important molecular mechanism that limits the rejection of xenotransplant or allogenic tissue. By presenting compelling evidence, that describes a mechanism to cross-dress xenogeneic cells with human CD47. Li et al., investigated if this process can improve grafted tissue survival by halting phagocytosis of xenogeneic cells by host human monocytes while also diminishing SIRP-a mediated apoptosis. This work will be of interest to basic and transplant immunology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Simon Yona, https://ror.org/03qxff017 The Hebrew University of Jerusalem Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73677.sa1](https://doi.org/10.7554/eLife.73677.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"CD47 cross-dressing by extracellular vesicles expressing CD47 inhibits phagocytosis without transmitting cell death signals\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Satyajit Rath as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Dennis Discher (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Figure 1\n\nThe rationale for the use of CD47 isoforms 2 and 4 requires further detail a full explanation.\n\nPlease provide kinetics or the dynamic of CD47 acquisition in recipient cells.\n\nIs cross-dressing blocked at 4deg?\n\nDoes cross-dressing require cell-to-cell contact?\n\nDoes cross-dressing require a functional cytoskeleton?\n\nDo other membrane proteins get transferred as well or is it a peculiarity of CD47h2/h4 to be embedded in cross-dressing vesicles released from donor cells?\n\nDoes cross-dressed CD47 resist to EDTA washes (one might anticipate that tethered CD47 would not resist while CD47 actually transferred by membrane fusion would)?\n\nWhat is the persistence of crossdressed CD47 on recipient cells (post-separation from donor cells)?\n\nb) Why \"ligation of the autogenous, but not cross-dressed, CD47 induced cell death.\" (ii) Please show the extracellular vesicles and/or exosomes, do or do not transfer hCD47 mRNA or even DNA (e.g. plasmid, even episomal). (iii) Determine the reason(s) and implications for function (e.g. phagocytosis) for the very broad distribution of intensities on cells that supposedly have 'all' received hCD47. (iv) Show whether \"florescence Celltrace violet\" transfers from labelled cells to unlabeled cells (Figure 1c). (v) Determine why results for h2 and h4 spliceforms are variable; sometimes the same (e.g. Figure 1a) versus sometimes different (Figure 1b).\n\nc) In Figure 1A-B: How did the authors gate on the PAOCp in the coculture? Congenic marker, cell tracker? 1C is the right way to do it as surface markers/ membrane stains can't be relied upon. The histograms may be misleading as the shifted curves can include both the acceptor cells that capture CD47h and donor cells that had reduced CD47h. 1D: It's not possible to say that it's fully SIRP-a independent as the increase in the CD47 cross-dressing looks more modest compared to 1-A,B,C. However, this may be due to an intrinsic difference between the starting levels of CD47 on tg LCL and PAOC. Yet, this reviewer recommends changing the statement at line 131 as such: \"\u2026., indicating that hCD47 cross-dressing can occur in a SIRP\u03b1-independent manner.\"\n\n2) Figure 2\n\nIn Figure 2 Please address labelling and gating the cells in the coculture (see comments 1c).\n\n3) Figure 3\n\nThe titration of EVs/Exos should be performed to highlight the efficiency of the cross-dressing process.\n\nThe yield of EV/Exos production is explained in order to get an idea if the concentration/quantity of EVs correspond to a reasonable amount of cells and how this number compares to the number of cross-dressed \"recipient\" cells.\n\nDoes membrane acquisition upon EV/Exos involve membrane fusion?\n\n(this can be addressed using fluorescent membrane probes).\n\nIn Figure 3C: Why did the authors cocultured cells for 18 and 42 hours? At 42h PAOC cells line would be expected to divide and dilute the CTV, why didn't they? Also, the fitness of the cells might be impaired at the late time points, have the authors performed a viability staining and gated out the dead cells?\n\n4) Figure 4\n\nIt is unclear if CD14+CTV+ events all correspond to phagocytosis or doublets formation upon tethering of both cell types. Imaging experiments using confocal microscopy on sorted CD14+CTV+ events could easily quantify this. Please add quantitative imaging data.\n\nThis assay requires rigorous viability staining, a robust gating strategy to identify the donor and acceptor cells of the co-culture and controls with single cells. Without those, how do the authors claim that the CTV+ cells in the gate are monocytes that had phagocytosed the CTV-labeled cells?\n\n4B: The population sorted is likely a mix of donor and acceptor cells and contains CD47 expressing cells too. This should have been carefully carried out by labeling the cells with cell trackers prior to culture and sorting them according to the label.\n\n4C: What does the CD14 staining of PAOC cells before and after coculture look like? In systems where cross-dressing occurs, it's hard to rely on the surface markers as they have mobility between cells. Have the authors considered labelling donor and acceptor cells with two different cell trackers to set the gates properly and independent of surface markers?\n\n5) Figure 5\n\nSIRPa-Fc binding on should be assessed on EV-exposed KO cells.\n\nThe assay could be performed using additional cross-linking of SIRPa-Fc protein by anti-Fc Fab'2 or plate-bound SIRPa-Fc protein.\n\nWhy cross-dressing does not happen between Jurkat WT and CD47ko, thereby sensitizing the CD47ko Jurkat to SIRPa-induce apoptosis?\n\nComplementation of CD47ko clones with CD47 would provide a nice control ruling out possible artefacts of CRISPR targeting.\n\n6) PMID: 28053997 needs to be properly cited, and the author's need further data to support their claim that \"hCD47 cross-dressing is SIRP\u03b1-independent\". Specifically, they need to quantify 'cross-dressing' by non-phagocytic cells that express a suitable hSIRPa in the presence or absence of SIRPa blocking Ab.\n\n7) While Figure S5 nicely shows that SIRPa-Fc causes apoptosis on the cells that express CD47 in a dose-dependent manner, the actual Figure 5 fails to support the claim that EV-based crossdressing protects the cells from apoptosis. Crossdressing doesn't seem to cause a notable increase in hCD47 expression on R1 cells, so the difference in apoptosis between R1 and R2 is likely due to the comparably low expression of CD47 in R1 despite the EV treatment.\n",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f15e6d9e-f9ef-4e9f-a59a-4d4b401f6c60",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C1",
+      "claim": "CD47 is ubiquitously expressed and acts as a ligand of signaling regulatory protein (SIRP)\u03b1, a critical inhibitory receptor on macrophages and dendritic cells (DCs).",
+      "claim_type": "EXPLICIT",
+      "source": "CD47 is ubiquitously expressed and acts as a ligand of signaling regulatory protein (SIRP)\u03b1, a critical inhibitory receptor on macrophages and dendritic cells (DCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge about CD47 and SIRP\u03b1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "3d66e899-c822-422c-a18f-f6dde4b930e5",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C2",
+      "claim": "CD47KO cells are vigorously rejected by macrophages after infusion into syngeneic wild-type (WT) mice.",
+      "claim_type": "EXPLICIT",
+      "source": "CD47KO cells are vigorously rejected by macrophages after infusion into syngeneic wild-type (WT) mice, demonstrating that CD47 provides a 'don't eat me' signal to macrophages (Oldenborg et al., 2000; Wang et al., 2007a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "7a5ade1b-89ae-40bb-a33a-ce807a44b1a6",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C3",
+      "claim": "CD47 provides a 'don't eat me' signal to macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "CD47KO cells are vigorously rejected by macrophages after infusion into syngeneic wild-type (WT) mice, demonstrating that CD47 provides a 'don't eat me' signal to macrophages (Oldenborg et al., 2000; Wang et al., 2007a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "7201b858-098d-40ff-a82b-4707870e276c",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C4",
+      "claim": "The strong rejection of xenogeneic cells by macrophages is largely caused by the lack of functional interaction between donor CD47 and recipient SIRP\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "We reported that the strong rejection of xenogeneic cells by macrophages (Abe et al., 2002) is largely caused by the lack of functional interaction between donor CD47 and recipient SIRP\u03b1 (Wang et al., 2007b, Ide et al., 2007; Navarro-Alvarez and Yang, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "3443dbc5-d6de-44ec-a13f-d594b7ffa299",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C5",
+      "claim": "Human CD47 transgenic pigs have achieved encouraging results in pig-to-nonhuman primate xenotransplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings led to the development of human CD47 transgenic pigs that have achieved encouraging results in pig-to-nonhuman primate xenotransplantation (Tena et al., 2017; Nomura et al., 2020; Watanabe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "09c56ba2-68ec-4b5e-a222-cd0654db2f8e",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C6",
+      "claim": "CD47-SIRP\u03b1 signaling inhibits DC activation and their ability to prime T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, CD47-SIRP\u03b1 signaling also inhibits DC activation and their ability to prime T cells, and plays an important role in induction of T cell tolerance by donor-specific transfusion (DST) and hepatocyte transplantation (Wang et al., 2007a, Wang et al., 2014; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "5ff5c711-5b46-4adf-b015-30d8ddb5fe7e",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C7",
+      "claim": "CD47-SIRP\u03b1 signaling plays an important role in induction of T cell tolerance by donor-specific transfusion (DST) and hepatocyte transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, CD47-SIRP\u03b1 signaling also inhibits DC activation and their ability to prime T cells, and plays an important role in induction of T cell tolerance by donor-specific transfusion (DST) and hepatocyte transplantation (Wang et al., 2007a, Wang et al., 2014; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "aa3a83b7-f7b5-4f00-a5a7-6ce4cccdebe2",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C8",
+      "claim": "Transgenic expression of human CD47 in pigs may attenuate xenoimmune responses by ameliorating DC activation and antigen presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, transgenic expression of human CD47 in pigs may also attenuate xenoimmune responses by ameliorating DC activation and antigen presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the previous findings about CD47-SIRP\u03b1 signaling effects on DC activation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "30bf9ca6-df7e-43bb-82c4-66420115af7c",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C9",
+      "claim": "Transgenic overexpression of CD47 was applied for reducing allogenicity and generating hypoimmunogenic pluripotent stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, transgenic overexpression of CD47 was also applied for reducing allogenicity and generating hypoimmunogenic pluripotent stem cells (Han et al., 2019; Deuse et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "bc2f58f3-80e4-426d-8f0c-7b06017c4701",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C10",
+      "claim": "CD47 upregulation was detected in various cancer cells, serving a powerful mechanism of evading macrophage killing.",
+      "claim_type": "EXPLICIT",
+      "source": "CD47 upregulation was detected in various cancer cells, serving a powerful mechanism of evading macrophage killing (Jaiswal et al., 2009; Chan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "7fc2b65c-9e69-47f4-ba3e-65f4bdbd039b",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C11",
+      "claim": "Treatment with CD47 blockade could inhibit tumor growth via macrophage-mediated mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, treatment with CD47 blockade could inhibit tumor growth via macrophage-mediated mechanism (Jaiswal et al., 2009; Willingham et al., 2012; Weiskopf et al., 2016; Chao et al., 2010; Liu et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "a0779db1-92a8-463f-b163-7abfd3eae035",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C12",
+      "claim": "The antitumor activity of CD47 blockade was found to be associated with CD11c+ DC activation and largely T cell-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, the antitumor activity of CD47 blockade was found to be associated with CD11c+ DC activation and largely T cell-dependent (Liu et al., 2015b, Chen et al., 2020; Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "aeb36c02-f8b7-4af3-bcf7-d19e12be4faf",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C13",
+      "claim": "Extracellular vesicles (EVs), including exosomes (Exos) from cells transgenically overexpressing CD47 or tumor cells overexpressing endogenous CD47, could induce CD47 cross-dressing on pig or human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that extracellular vesicles (EVs), including exosomes (Exos) from cells transgenically overexpressing CD47 or tumor cells overexpressing endogenous CD47, could induce CD47 cross-dressing on pig or human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "64ea8534-2178-4fcd-9a75-f781da3d3774",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C14",
+      "claim": "CD47 cross-dressed on cell surfaces can interact with SIRP\u03b1 to inhibit phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "CD47 cross-dressed on cell surfaces can interact with SIRP\u03b1 to inhibit phagocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "76ad7267-68c7-4acf-9a4c-6b82b29199c0",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C15",
+      "claim": "Ligation of the autogenous, but not cross-dressed, CD47 induced cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ligation of the autogenous, but not cross-dressed, CD47 induced cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "47f09c35-00c2-47c9-8b43-912dec7fb39b",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C16",
+      "claim": "CD47 cross-dressing provides an alternative source of cell surface CD47 that may elicit its anti-phagocytic function without transmitting harmful signals to the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CD47 cross-dressing provides an alternative source of cell surface CD47 that may elicit its anti-phagocytic function without transmitting harmful signals to the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental findings about cross-dressed CD47 function.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "cb2d98bf-bf11-4cde-a414-4ea38e4be522",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C17",
+      "claim": "CD47 cross-dressing suggests a previously unidentified mechanism for tumor-induced immunosuppression.",
+      "claim_type": "EXPLICIT",
+      "source": "CD47 cross-dressing also suggests a previously unidentified mechanism for tumor-induced immunosuppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "1fa20938-e0d1-4299-88ba-84d43591e349",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C18",
+      "claim": "PAOC/CD47p cells showed significantly increased CD47 staining after coculture with PAOC/CD47p/h2 or PAOC/CD47p/h4.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis using anti-CD47 antibodies recognizing both human and pig CD47 revealed that PAOC/CD47p/h2 or PAOC/CD47p/h4 cells expressed a markedly increased level of CD47 compared to PAOC/CD47p cells, and that PAOC/CD47p cells showed significantly increased CD47 staining after coculture with PAOC/CD47p/h2 or PAOC/CD47p/h4 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "bda3f2fb-0f06-464b-b5f9-dbb9d472056d",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C19",
+      "claim": "PAOC/CD47p cells were cross-dressed by CD47, likely transgenic hCD47, from PAOC/CD47p/h cells during cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that PAOC/CD47p cells were cross-dressed by CD47, likely transgenic hCD47, from PAOC/CD47p/h cells during cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "76864351-6e5b-4652-b8d4-e2458a008ffd",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C20",
+      "claim": "PAOC47null cells became positively stained by both anti-h/pCD47 and anti-hCD47 antibodies after coculture with PAOC/CD47h2 or PAOC/CD47h4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When the PAOC cell line cells were cocultured for 24 hr, we found that PAOC47null cells became positively stained by both anti-h/pCD47 (Figure 1B, top) and anti-hCD47 (Figure 1B, bottom) antibodies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "0ffdc5f8-e74f-437e-88aa-3a4861f6fc23",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C21",
+      "claim": "PAOC/CD47null cells can be cross-dressed by CD47 after coculture with PAOC/CD47h2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment, in which fluorescence-labeling allowed for better distinguishing between the two cell populations in the cocultures, further confirmed that PAOC/CD47null cells can be cross-dressed by CD47 after coculture with PAOC/CD47h2 cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "3d75e323-3aba-4d09-8f97-3f8e838a1682",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C22",
+      "claim": "PAOC cells express SIRP\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "PAOC cells express SIRP\u03b1 (Figure 1\u2014figure supplement 2, left), and pig SIRP\u03b1 is reported to interact with human CD47 (Boettcher et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2 and citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "14384c3e-b168-4a18-8ba3-e034146c6df8",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C23",
+      "claim": "Pig SIRP\u03b1 is reported to interact with human CD47.",
+      "claim_type": "EXPLICIT",
+      "source": "PAOC cells express SIRP\u03b1 (Figure 1\u2014figure supplement 2, left), and pig SIRP\u03b1 is reported to interact with human CD47 (Boettcher et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "bdf58b40-b5b9-4b61-a9ec-f51e145d59b2",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C24",
+      "claim": "The interaction of CD47 with SIRP\u03b1 may facilitate lentiviral engulfment by target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, previous studies have shown that CD47-lentiviruses are more effective in transducing SIRP\u03b1+ non-phagocytic tumor cells, suggesting that the interaction of CD47 with SIRP\u03b1 may facilitate lentiviral engulfment by target cells (Sosale et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "19ec199a-ac37-405b-928e-49707b7beee9",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C25",
+      "claim": "LCL cells cocultured with LCL cells that express hCD47 (LCL/CD47p/h), but not those cultured alone or mixed with LCL/CD47p/h immediately prior to flow cytometry analysis, were positively stained by anti-hCD47 antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "LCL cells cocultured with LCL cells that express hCD47 (LCL/CD47p/h) (Ide et al., 2007; Wang et al., 2011), but not those cultured alone or mixed with LCL/CD47p/h immediately prior to flow cytometry analysis, were positively stained by anti-hCD47 antibodies (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "ffb83c12-46e6-4459-ba41-0e8743797e2b",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C26",
+      "claim": "hCD47 cross-dressing can occur in an SIRP\u03b1-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot rule out of the role of SIRP\u03b1 in hCD47 cross-dressing, our data indicate that hCD47 cross-dressing can occur in an SIRP\u03b1-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "701648e7-f6ed-4253-b5d0-cec9af0b455a",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C27",
+      "claim": "PAOC47null cells became positively stained by anti-hCD47 antibodies after being cocultured with hCD47-tg swine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Like pig cells cocultured with hCD47-transgenic cell lines (Figure 1A\u2013D), PAOC47null cells also became positively stained by anti-hCD47 antibodies after being cocultured with hCD47-tg swine cells (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "0cc46443-4ac1-4e71-8195-8a142dca9942",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C28",
+      "claim": "Jurkat cells express a higher level of CD47 than normal hematopoietic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We next determined whether cells can be cross-dressed by native CD47 using human T-cell leukemia Jurkat cells that express a higher level of CD47 than normal hematopoietic cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "349a946a-2033-4d09-9ee6-71d1f977d973",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C29",
+      "claim": "CD47KO Jurkat cells were clearly stained positive by anti-hCD47 antibodies after coculture with parental WT Jurkat cells or hCD47-tg pig LCL cells compared to those cultured alone or mixed immediately before staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis revealed that CD47KO Jurkat cells were clearly stained positive by anti-hCD47 antibodies after coculture with parental WT Jurkat cells or hCD47-tg pig LCL cells compared to those cultured alone or mixed immediately before staining (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "f9bb147f-4115-4966-a6a0-2b44f337d973",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C30",
+      "claim": "Pig LCL cells became positive for human CD47 staining after coculture for 24 hr with WT Jurkat cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, pig LCL cells also became positive for human CD47 staining after coculture for 24 hr with WT Jurkat cells (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "04c311d7-8385-4811-b201-4337e3f0f3bd",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C31",
+      "claim": "More than half of the cross-dressed hCD47 remained on pig LCL cells 3 days after being separated from hCD47-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More than half of the cross-dressed hCD47 (determined by MFI) remained on pig LCL cells 3 days after being separated from hCD47-expressing cells (Figure 2C), indicating that hCD47 cross-dressing was relatively stable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "10ce1561-03ed-4931-b128-63fb16a45dea",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C32",
+      "claim": "hCD47 cross-dressing was relatively stable.",
+      "claim_type": "EXPLICIT",
+      "source": "More than half of the cross-dressed hCD47 (determined by MFI) remained on pig LCL cells 3 days after being separated from hCD47-expressing cells (Figure 2C), indicating that hCD47 cross-dressing was relatively stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "41e3ca98-9f6a-4794-859b-a95fe54b1f35",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C33",
+      "claim": "Not only hCD47, but other membrane proteins of WT Jurkat cells were also cross-dressed on pig LCL cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted that not only hCD47, but other membrane proteins of WT Jurkat cells were also cross-dressed on pig LCL cells (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "7ede147a-315b-4e25-9dd3-61c92af80958",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C34",
+      "claim": "hCD47 cross-dressing was clearly detected on LCL cells that were pretreated with cytochalasin D after cocultured with cytochalasin D-pretreated WT Jurkat cells, though the level was lower than untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While to a lower level than untreated cells, hCD47 cross-dressing was clearly detected on LCL cells that were pretreated with cytochalasin D, a cell-permeable potent inhibitor that disrupts actin microfilaments (Cooper, 1987), after cocultured with cytochalasin D-pretreated WT Jurkat cells (Figure 2\u2014figure supplement 3A), indicating that a functional cytoskeleton is not absolutely required for, but may facilitate hCD47 cross-dressing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "2516493e-e356-44ac-8cd5-bc805e880e71",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C35",
+      "claim": "A functional cytoskeleton is not absolutely required for, but may facilitate hCD47 cross-dressing.",
+      "claim_type": "EXPLICIT",
+      "source": "While to a lower level than untreated cells, hCD47 cross-dressing was clearly detected on LCL cells that were pretreated with cytochalasin D, a cell-permeable potent inhibitor that disrupts actin microfilaments (Cooper, 1987), after cocultured with cytochalasin D-pretreated WT Jurkat cells (Figure 2\u2014figure supplement 3A), indicating that a functional cytoskeleton is not absolutely required for, but may facilitate hCD47 cross-dressing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "325e3521-401e-4073-9b38-2bcc5c5317b3",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C36",
+      "claim": "Human CD47 cross-dressing could be induced by not only hCD47-transgenic cells but also tumor cells that express only the native CD47.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that human CD47 cross-dressing could be induced by not only hCD47-transgenic cells but also tumor cells that express only the native CD47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "d90e4648-b094-4300-b26d-6b89c88b34ed",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C37",
+      "claim": "CD47 cross-dressing occurred in both CD47KO human T-cell leukemia Jurkat cells and pig B-lymphoma LCL cells after incubation for 2 or 6 hr with PAOC47h2 cell-derived EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis showed that CD47 cross-dressing occurred in both CD47KO human T-cell leukemia Jurkat cells (Figure 3A) and pig B-lymphoma LCL cells (Figure 3B) after incubation for 2 or 6 hr with PAOC47h2 cell-derived EVs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "e5cca436-904c-4a8d-8b00-5566473fcf8d",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C38",
+      "claim": "Both CD47KO Jurkat and LCL cells were positively stained by anti-hCD47 after incubation with Exos released by PAOC47h2 cells, though to a less extent than EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "To a less extent, both CD47KO Jurkat and LCL cells were also positively stained by anti-hCD47 after incubation with Exos released by PAOC47h2 cells (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "6e35ffb5-6920-4406-b619-a65e4cbbd561",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C39",
+      "claim": "hCD47 cross-dressing was detected in PAOCnull cells after incubation with EVs from PAOC47h2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, hCD47 cross-dressing was detected in PAOCnull cells after incubation with EVs from PAOC47h2 cells (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "e43b856b-b3c6-49fe-ae4d-be44d3c58012",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C40",
+      "claim": "A significant proportion of violet-labeled PAOCnull cells became positive for hCD47 after incubation with PAOC47h2 EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "After incubation with PAOC47h2 EVs, a significant proportion of violet-labeled PAOCnull cells became positive for hCD47 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "c12493bf-97ec-4c0e-b47d-aa9e2dce270a",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C41",
+      "claim": "The frequency of hCD47+ PAOCnull cells at 42 hr was lower than that at 18 hr, which is most likely due to PAOCnull cell proliferation and EV exhaustion/degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the frequency of hCD47+ PAOCnull cells at 42 hr was lower than that at 18 hr, which is most likely due to PAOCnull cell proliferation and EV exhaustion/degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "de31d645-12b5-436e-9f99-639725182c0c",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C42",
+      "claim": "Pig LCL cells were stained positive for hCD47 after incubated with EVs from hCD47-tg pig LCL cells or WT Jurkat cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Pig LCL cells were also stained positive for hCD47 after incubated with EVs from hCD47-tg pig LCL cells or WT Jurkat cells, in which hCD47 cross-dressing was detected 1 hr after incubation with EVs and the levels remained stable or increased at 24 hr (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "7961d149-0178-40ec-8607-cfcbfb77eb38",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C43",
+      "claim": "hCD47 cross-dressing was detected 1 hr after incubation with EVs and the levels remained stable or increased at 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Pig LCL cells were also stained positive for hCD47 after incubated with EVs from hCD47-tg pig LCL cells or WT Jurkat cells, in which hCD47 cross-dressing was detected 1 hr after incubation with EVs and the levels remained stable or increased at 24 hr (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "16fba2d3-7187-462b-80d0-5caff5a15499",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C44",
+      "claim": "CD47 cross-dressing could be induced independently of cell-cell contact by EVs, including Exos.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that CD47 cross-dressing could be induced independently of cell-cell contact by EVs, including Exos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "cffe9b3a-cef2-4961-b7ba-88b29d34f14a",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C45",
+      "claim": "hCD47 was clearly detected on cytochalasin D-pretreated LCL cells after incubation with EVs from hCD47-tg LCL cells, though the level was moderately reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, a functional cytoskeleton is not absolutely required for hCD47 cross-dressing, as hCD47 was clearly detected on cytochalasin D-pretreated LCL cells after incubation with EVs from hCD47-tg LCL cells, though the level was moderately reduced (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "cadf6a06-51ea-4198-9bd6-db8b646162e1",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C46",
+      "claim": "Cross-dressing was not diminished by treatment with trypsin/EDTA, indicating that membrane fusion is involved in EV cross-dressing.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cross-dressing was not diminished by treatment with trypsin/EDTA, indicating that membrane fusion is involved in EV cross-dressing (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2 and inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "c44223ae-7bf0-4cb3-9959-876768cb50bd",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C47",
+      "claim": "Human SIRP\u03b1 fusion protein was able to bind CD47KO Jurkat cells cultured with EVs but not those cultured without EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis showed that human SIRP\u03b1 fusion protein was able to bind CD47KO Jurkat cells cultured with EVs but not those cultured without EVs (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "0af82e80-7f11-4ffb-9589-348e89d6df94",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C48",
+      "claim": "Cross-dressed hCD47 on CD47KO Jurkat cells can bind human SIRP\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The data indicate that cross-dressed hCD47 on CD47KO Jurkat cells can bind human SIRP\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "1bfbab19-b499-4366-ad0e-31a9b3d76ad1",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C49",
+      "claim": "PAOC47null cells were significantly more sensitive than PAOC/CD47h2 cells to phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, PAOC47null cells were significantly more sensitive than PAOC/CD47h2 cells to phagocytosis (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "efbbd1ec-ad93-4ae0-b618-125ff55f39d0",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C50",
+      "claim": "hCD47 cross-dressing effectively reduced the susceptibility of PAOC47null cells to phagocytosis by human macrophages, to a level comparable to that of PAOC/CD47h2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hCD47 cross-dressing effectively reduced the susceptibility of PAOC47null cells to phagocytosis by human macrophages, to a level comparable to that of PAOC/CD47h2 cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "19e83bfa-fd54-49b5-9a6f-c38d68ad8265",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C51",
+      "claim": "Human CD47 cross-dressing protects not only xenogeneic pig cells, but also human leukemia cells, against phagocytosis by human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Human CD47 cross-dressing protects not only xenogeneic pig cells, but also human leukemia cells, against phagocytosis by human macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "7c0e1f5e-40bd-4f0f-9aaf-5d5deb3d609a",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C52",
+      "claim": "CD47KO Jurkat cells showed significantly greater phagocytosis than WT Jurkat cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In phagocytic assays where CD47KO Jurkat cells showed significantly greater phagocytosis than WT Jurkat cells, pre-incubation of CD47KO Jurkat cells with EVs released by PAOC/CD47h2 cells was found highly effective in reducing their phagocytosis by human macrophages (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "788fdf5a-bead-478c-82cb-965f464dbed8",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C53",
+      "claim": "Pre-incubation of CD47KO Jurkat cells with EVs released by PAOC/CD47h2 cells was highly effective in reducing their phagocytosis by human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In phagocytic assays where CD47KO Jurkat cells showed significantly greater phagocytosis than WT Jurkat cells, pre-incubation of CD47KO Jurkat cells with EVs released by PAOC/CD47h2 cells was found highly effective in reducing their phagocytosis by human macrophages (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "ab66c683-4454-4b16-aee7-ee2715f8f8c7",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C54",
+      "claim": "Human CD47 cross-dressing can act as a functional ligand for human SIRP\u03b1 and deliver 'don't eat me' signals to human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that human CD47 cross-dressing can act as a functional ligand for human SIRP\u03b1 and deliver 'don't eat me' signals to human macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "f68543f1-3f35-45fd-9a35-cf01d5e8b592",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C55",
+      "claim": "Ligation of cell surface CD47 by its ligand thrombospondin-1 (TSP-1) has been shown to induce death in varying types of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligation of cell surface CD47 by its ligand thrombospondin-1 (TSP-1) (Saumet et al., 2005), CD47-binding peptides of TSP-1 (Martinez-Torres et al., 2015) or CD47 antibodies (Mateo et al., 1999) has been shown to induce death in varying types of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "2062645d-80da-41f8-9ab6-76fee3452e8e",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C56",
+      "claim": "Ligation of cell surface CD47 by CD47-binding peptides of TSP-1 has been shown to induce death in varying types of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligation of cell surface CD47 by its ligand thrombospondin-1 (TSP-1) (Saumet et al., 2005), CD47-binding peptides of TSP-1 (Martinez-Torres et al., 2015) or CD47 antibodies (Mateo et al., 1999) has been shown to induce death in varying types of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "3b4ab01c-4d2e-424d-b3b8-7600280a3b86",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C57",
+      "claim": "Ligation of cell surface CD47 by CD47 antibodies has been shown to induce death in varying types of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligation of cell surface CD47 by its ligand thrombospondin-1 (TSP-1) (Saumet et al., 2005), CD47-binding peptides of TSP-1 (Martinez-Torres et al., 2015) or CD47 antibodies (Mateo et al., 1999) has been shown to induce death in varying types of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "a53b4193-c7eb-45e0-aa3c-c55d173b0b1d",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C58",
+      "claim": "Human SIRP\u03b1-Fc fusion proteins could induce cell death in a dose-dependent manner in WT, but not CD47KO, human T-cell leukemia Jurkat cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these reports, we observed that human SIRP\u03b1-Fc fusion proteins could induce cell death in a dose-dependent manner in WT, but not CD47KO, human T-cell leukemia Jurkat cells (Figure 5\u2014figure supplement 1; Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1 and Figures 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "a7dee3af-f6db-4a79-ae6d-6519f660d449",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C59",
+      "claim": "The cell death observed in WT Jurkat cells was induced by CD47 ligation with hSIRP\u03b1-Fc proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell death observed in WT Jurkat cells was induced by CD47 ligation with hSIRP\u03b1-Fc proteins, as cell death was minimally detectable in WT Jurkat cells that were cultured simultaneously without hSIRP\u03b1-Fc proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "e1d98e34-0443-40cd-a5f1-dd90719e06b3",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C60",
+      "claim": "SIRP\u03b1-Fc proteins induced significant cell death in WT Jurkat cells regardless of whether they were cocultured with CD47KO or with hCD47 cross-dressed CD47KO.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SIRP\u03b1-Fc proteins induced significant cell death in WT Jurkat cells regardless of whether they were cocultured with CD47KO (Figure 5C and D) or with hCD47 cross-dressed CD47KO (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 5C, D, E, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "e81d880a-0ee8-4d95-96e6-b81b2a73ab27",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C61",
+      "claim": "CD47 cross-dressing did not increase the sensitivity to cell death induced by SIRP\u03b1-Fc proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "CD47 cross-dressing did not increase the sensitivity to cell death induced by SIRP\u03b1-Fc proteins, and cell death was minimally detectable in both CD47KO (Figure 5C and D) and hCD47 cross-dressed CD47KO (Figure 5E and F) Jurkat cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 5C, D, E, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "2dade86e-2abf-444f-b905-050f58c7e670",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C62",
+      "claim": "Cell death was minimally detectable in both CD47KO and hCD47 cross-dressed CD47KO Jurkat cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CD47 cross-dressing did not increase the sensitivity to cell death induced by SIRP\u03b1-Fc proteins, and cell death was minimally detectable in both CD47KO (Figure 5C and D) and hCD47 cross-dressed CD47KO (Figure 5E and F) Jurkat cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 5C, D, E, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "029d63be-232c-493e-81fb-a0d98d6e1055",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C63",
+      "claim": "CD47KO Jurkat cells regained the sensitivity to apoptosis induced by CD47 agonists after being transfected to express CD47.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CD47KO Jurkat cells regained the sensitivity to apoptosis induced by CD47 agonists after being transfected to express CD47 (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "7c5c5ab9-ef3f-47d0-8929-90a1e9e19ec7",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C64",
+      "claim": "Unlike autogenous CD47, cross-dressed CD47 on Jurkat cells does not induce cell death upon ligation with SIRP\u03b1-Fc proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that, unlike autogenous CD47, cross-dressed CD47 on Jurkat cells does not induce cell death upon ligation with SIRP\u03b1-Fc proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "1976f120-3aba-4761-b2d3-d4107d46f0a6",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C65",
+      "claim": "EVs and Exos released from pig cells transgenically overexpressing hCD47 can mediate hCD47 cross-dressing on surrounding pig cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we found that EVs and Exos released from pig cells transgenically overexpressing hCD47 can mediate hCD47 cross-dressing on surrounding pig cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "de49c1a0-8cf0-4170-953c-68a04eeff611",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C66",
+      "claim": "hCD47 cross-dressed on pig cells can interact with human SIRP\u03b1 and inhibit phagocytosis by human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, hCD47 cross-dressed on pig cells can interact with human SIRP\u03b1 and inhibit phagocytosis by human macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "92602997-51bb-44a9-a42e-2a068e8932eb",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C67",
+      "claim": "CD47 cross-dressing occurs not only in the pig-to-pig combination, but also in the human-to-human, pig-to-human, and human-to-pig directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such CD47 cross-dressing occurs not only in the pig-to-pig combination, but also in the human-to-human, pig-to-human, and human-to-pig directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "a6038837-20b8-4fd8-b65c-e8edab4a2605",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C68",
+      "claim": "A high level of transgenic CD47 expression was found to be essential for its immune inhibitory effect in both xenogeneic and allogeneic settings.",
+      "claim_type": "EXPLICIT",
+      "source": "In both xenogeneic and allogeneic settings, a high level of transgenic CD47 expression was found to be essential for its immune inhibitory effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "4d977982-d495-4cb5-8b3e-7e6c9a52e048",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C69",
+      "claim": "CD47 is not only a ligand of SIRP\u03b1, but also a signaling receptor that mediates a variety of functions, including apoptosis, cell cycle arrest, and senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "CD47 is not only a ligand of SIRP\u03b1, but also a signaling receptor that mediates a variety of functions, including apoptosis, cell cycle arrest, and senescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "b1028867-62ab-40f6-a3a1-8084e610b59f",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C70",
+      "claim": "Deletion of CD47 improves survival, proliferation, and function of endothelial cells, leading to increased angiogenesis and neovascularization both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that deletion of CD47 improves survival, proliferation, and function of endothelial cells, leading to increased angiogenesis and neovascularization both in vitro and in vivo (Meijles et al., 2017; Gao et al., 2016; Gao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "93cd24e6-f113-47a4-93cd-bfc0a667fde5",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C71",
+      "claim": "CD47 deletion from organ grafts was reported to ameliorate renal ischemia/reperfusion injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these observations, CD47 deletion from organ grafts was reported to ameliorate renal ischemia/reperfusion injury (Isenberg and Roberts, 2019) and cardiac allograft rejection (Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "ada16557-b5f9-4e52-bc92-c822f3c0134c",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C72",
+      "claim": "CD47 deletion from organ grafts was reported to ameliorate cardiac allograft rejection.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these observations, CD47 deletion from organ grafts was reported to ameliorate renal ischemia/reperfusion injury (Isenberg and Roberts, 2019) and cardiac allograft rejection (Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "b19a36d8-ddfe-45f7-a0c4-0c12efbd68dc",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C73",
+      "claim": "Widespread expression of hCD47 in the pig kidney was associated with increased vascular permeability and systemic edema, presumably due to upregulated TSP-1, and hence, TSP-1-CD47 signaling in the graft.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a pig-to-baboon kidney xenotransplantation model, a recent study suggested that widespread expression of hCD47 in the pig kidney was associated with increased vascular permeability and systemic edema, presumably due to upregulated TSP-1, and hence, TSP-1-CD47 signaling in the graft (Takeuchi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "0bbd77c5-b5da-4cb1-a8c1-692fb7e96d22",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C74",
+      "claim": "Ligation of hSIRP\u03b1-Fc proteins with autogenous, but not cross-dressed, CD47 on Jurkat cells induces cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ligation of hSIRP\u03b1-Fc proteins with autogenous, but not cross-dressed, CD47 on Jurkat cells induces cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "db2f310d-b06c-4029-976a-9ccb1af81572",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C75",
+      "claim": "Using a pig vascularized organ with hCD47 overexpression in some cells, which are more sensitive to macrophage attack but relatively resistant to CD47 signaling-induced deleterious effects, may improve the outcomes of xenotransplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "This study suggests that using a pig vascularized organ with hCD47 overexpression in some cells, which are more sensitive to macrophage attack but relatively resistant to CD47 signaling-induced deleterious effects, may improve the outcomes of xenotransplantation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "b1e624bc-2e31-433e-a533-99c14c86271b",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C76",
+      "claim": "CD47 cross-dressed on cells, which induces sufficient SIRP\u03b1 signaling to inhibit macrophages, may suppress SIRP\u03b1+ DC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it was not tested directly, it is conceivable that CD47 cross-dressed on cells, which induces sufficient SIRP\u03b1 signaling to inhibit macrophages, may suppress SIRP\u03b1+ DC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "28e512ae-aaa4-4fac-bb22-52c6bf8a9cc8",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C77",
+      "claim": "In addition to inhibition of phagocytosis, CD47 cross-dressing may also attenuate anti-donor T cell responses when transplants are performed using CD47-overexpressing donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to inhibition of phagocytosis, CD47 cross-dressing may also attenuate anti-donor T cell responses when transplants are performed using CD47-overexpressing donors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "c59740de-40db-4ce9-b1da-c439600b1a58",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C78",
+      "claim": "CD47 upregulation in tumors significantly contributes to tumor-induced T cell suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "CD47 upregulation in tumors also significantly contributes to tumor-induced T cell suppression, as the antitumor activity of CD47 blocking treatment is associated with CD11c+ DC activation and is largely T cell-dependent (Liu et al., 2015b, Chen et al., 2020; Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "e8b72dce-f0e7-4c87-bfa4-c924a7d53ba6",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C79",
+      "claim": "CD47 cross-dressing was found in human T-cell leukemia Jurkat and pig B-lymphoma LCL cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, CD47 cross-dressing was found in human T-cell leukemia Jurkat and pig B-lymphoma LCL cells, suggesting a possible involvement of CD47 cross-dressing in the formation of a tumor immunosuppressive microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "c2e5f18b-7d8e-492f-a0db-83b8b5214f65",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C80",
+      "claim": "CD47 cross-dressing may be involved in the formation of a tumor immunosuppressive microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, CD47 cross-dressing was found in human T-cell leukemia Jurkat and pig B-lymphoma LCL cells, suggesting a possible involvement of CD47 cross-dressing in the formation of a tumor immunosuppressive microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "b8a4f39f-d589-454d-a066-062ab294ca2d",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C81",
+      "claim": "CD47 on EVs and CD47 cross-dressed on tumor cells may neutralize CD47 ligands, such as TSP-1 that has been shown to induce CD47 activation leading to apoptosis in tumor and endothelial cells, hence, favoring tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CD47 on EVs and CD47 cross-dressed on tumor cells may also neutralize CD47 ligands, such as TSP-1 that has been shown to induce CD47 activation leading to apoptosis in tumor and endothelial cells (Martinez-Torres et al., 2015), hence, favoring tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the implications of the findings and citation to previous research.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "9450f170-f912-49c6-9711-17f80ef89c97",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C82",
+      "claim": "CD47, as a 'don't eat me' signal, is essential for EVs to elicit biological function by preventing their clearance by macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies have shown that CD47, as a 'don't eat me' signal, is essential for EVs to elicit biological function by preventing their clearance by macrophages (Kamerkar et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "3b6e1743-77a6-419f-995d-21f828af789d",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C83",
+      "claim": "EV-induced CD47 cross-dressing possesses partial activity of the autogenous CD47, such as the ability to initiate inhibitory SIRP\u03b1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that EV-induced CD47 cross-dressing possesses partial activity of the autogenous CD47, such as the ability to initiate inhibitory SIRP\u03b1 signaling, and therefore offers means of separating the desired and harmful effects of CD47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "244d498b-52fb-4be6-985e-4b9506af8dcc",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "claim_id": "C84",
+      "claim": "EV-induced CD47 cross-dressing offers means of separating the desired and harmful effects of CD47.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that EV-induced CD47 cross-dressing possesses partial activity of the autogenous CD47, such as the ability to initiate inhibitory SIRP\u03b1 signaling, and therefore offers means of separating the desired and harmful effects of CD47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c21f6487-e0a6-4845-8183-0644f28051a8",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior work establishing CD47 as a 'don't eat me' signal that inhibits macrophage phagocytosis and DC activation through SIRP\u03b1 signaling, with applications in xenotransplantation, stem cell therapy, and cancer immunotherapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 are all supported by citations to prior research and represent established knowledge in the field. These claims provide essential background context for the current study but do not constitute novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "0b5f1c4f-a71f-4cbd-ad4b-035cd124529b",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CD47 can be transferred between cells through a process called 'cross-dressing' during coculture, where pig cells expressing transgenic human CD47 transfer CD47 to CD47-null pig cells, as demonstrated by flow cytometry showing increased CD47 staining on recipient cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C18-C21, C27, C65, and C67 are supported by experimental data in Figures 1A-E showing CD47 cross-dressing in multiple cell type combinations (pig-to-pig, human-to-human, pig-to-human, human-to-pig). The experiments include appropriate controls (cells cultured alone, cells mixed immediately before staining) and use multiple detection methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "eccf13d1-dbe7-461d-916a-0848a4cb8776",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CD47 cross-dressing occurs with native CD47 from human T-cell leukemia Jurkat cells (which express high levels of CD47) to CD47KO cells and pig cells, and the cross-dressed CD47 is relatively stable, persisting for at least 3 days after separation from donor cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 and C36 are supported by experimental data in Figures 2A-C showing that native (non-transgenic) CD47 from Jurkat cells can cross-dress onto CD47KO cells and pig LCL cells. The stability data (C31-C32) shows >50% retention at 3 days, though longer time points would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "2c089be5-afca-49a3-872b-cd67a06ce24b",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CD47 cross-dressing can occur in an SIRP\u03b1-independent manner, as demonstrated by cross-dressing in pig LCL cells that do not express SIRP\u03b1, though SIRP\u03b1 may facilitate the process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 are supported by data showing CD47 cross-dressing in SIRP\u03b1-negative pig LCL cells (Figure 1D and Figure 1\u2014figure supplement 2). The authors appropriately acknowledge they cannot rule out a role for SIRP\u03b1 but demonstrate cross-dressing can occur without it.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "0ada4f32-e852-47e5-b3ea-e0822eba2b42",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A functional cytoskeleton is not absolutely required for CD47 cross-dressing, though it may facilitate the process, as demonstrated by reduced but still detectable cross-dressing in cytochalasin D-treated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 and C45 are supported by experimental data in Figure 2\u2014figure supplement 3A-B showing CD47 cross-dressing still occurs in cytochalasin D-treated cells, albeit at reduced levels. This suggests cytoskeleton involvement but not absolute requirement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "b8494d0f-9530-4a6f-bfaf-4e2efbc4511a",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Extracellular vesicles (EVs) and exosomes (Exos) from CD47-expressing cells can induce CD47 cross-dressing on recipient cells independently of cell-cell contact, with cross-dressing detectable within 1-2 hours and persisting for at least 24 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 are supported by experimental data in Figures 3A-C and Figure 3\u2014figure supplement 1 showing CD47 cross-dressing induced by purified EVs and Exos. The time course data and use of fluorescent cell labeling to exclude contamination strengthen these findings. However, the EV/Exo purification methods could be better characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "7095d626-f228-457f-829f-1b29df23c23e",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CD47 cross-dressing involves membrane fusion, as cross-dressed CD47 is not removed by trypsin/EDTA treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by data in Figure 3\u2014figure supplement 2 showing that trypsin/EDTA treatment does not diminish cross-dressing. This suggests membrane fusion rather than simple protein transfer, though additional experiments (e.g., lipid dye transfer) would strengthen this mechanistic conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "d9ddb91f-9bfb-4225-9639-92c5b686b70a",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cross-dressed CD47 on cell surfaces can functionally interact with human SIRP\u03b1, as demonstrated by binding assays with SIRP\u03b1-Fc fusion proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48, C54, and C66 are supported by experimental data in Figure 4A showing that SIRP\u03b1-Fc binds to CD47KO cells after EV-induced cross-dressing but not to untreated CD47KO cells. This demonstrates functional receptor-ligand interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "6c364794-3509-4c3c-ac00-1672d3d073c5",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CD47 cross-dressing effectively protects both pig cells and human leukemia cells from phagocytosis by human macrophages, reducing phagocytosis to levels comparable to cells expressing autogenous CD47.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by phagocytosis assay data in Figures 4C-D showing that cross-dressed CD47 reduces phagocytosis of both PAOC47null pig cells and CD47KO Jurkat cells to levels similar to CD47-expressing controls. Statistical significance is demonstrated (p<0.05 to p<0.0001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "5dd53dbe-9787-4873-9253-0294c642702d",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ligation of autogenous CD47 with SIRP\u03b1-Fc fusion proteins induces cell death in wild-type Jurkat cells in a dose-dependent manner, but cross-dressed CD47 does not transmit death signals upon ligation, as CD47KO cells with cross-dressed CD47 remain viable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C64 and C74 are supported by experimental data in Figures 5A-F and Figure 5\u2014figure supplement 1-3. The key finding that cross-dressed CD47 does not induce cell death is well-controlled, comparing WT, CD47KO, cross-dressed CD47KO, and re-transfected CD47KO cells. This is a critical functional distinction between autogenous and cross-dressed CD47.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "b4fb7906-3f59-44ee-a20f-6e2273db10c5",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CD47 cross-dressing provides an alternative source of cell surface CD47 that possesses partial activity (anti-phagocytic function) without transmitting harmful signals (cell death), offering a means to separate desired and harmful effects of CD47.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C83, and C84 represent the main conclusion integrating findings from phagocytosis protection (C49-C53) and lack of death signaling (C60-C64). This conclusion is well-supported by the experimental data, though the term 'partial activity' could be better quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "2475b70d-3709-464e-a89d-ffd2de49f838",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "High-level CD47 expression is essential for immune inhibition but CD47 also mediates harmful effects including apoptosis, cell cycle arrest, and vascular dysfunction, as demonstrated in prior studies of CD47 deletion and overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 are supported by citations to prior research and represent established knowledge that motivates the current study. These claims provide important context for why separating beneficial and harmful CD47 functions is valuable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "4241c269-0304-4415-ab2c-b422f9bd03a0",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CD47 cross-dressing may have implications for xenotransplantation strategies and tumor immunosuppression, potentially allowing selective CD47 expression in sensitive cell types and contributing to immunosuppressive tumor microenvironments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C17, C75-C77, C80-C81 are speculative and represent potential implications rather than demonstrated findings. While these hypotheses are reasonable extensions of the data, they require experimental validation in relevant models (xenotransplantation, tumor immunity) to be considered supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    },
+    {
+      "id": "9aa12000-34a8-44db-96f4-32726ac3077a",
+      "content_id": "aace683d-92ed-4d51-8eac-8cab06f02868",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CD47 plays important roles in tumor immunity and EV function, and CD47 cross-dressing was observed in leukemia and lymphoma cell lines, suggesting potential involvement in tumor immunosuppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78 and C82 are supported by citations to prior research. Claim C79 is supported by experimental data showing cross-dressing in Jurkat (T-cell leukemia) and LCL (B-lymphoma) cells. However, the connection to tumor immunosuppression (C80) remains speculative without functional tumor immunity experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:33:41.850105Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f15e6d9e-f9ef-4e9f-a59a-4d4b401f6c60",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "3d66e899-c822-422c-a18f-f6dde4b930e5",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "7a5ade1b-89ae-40bb-a33a-ce807a44b1a6",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "7201b858-098d-40ff-a82b-4707870e276c",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "3443dbc5-d6de-44ec-a13f-d594b7ffa299",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "09c56ba2-68ec-4b5e-a222-cd0654db2f8e",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "5ff5c711-5b46-4adf-b015-30d8ddb5fe7e",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "aa3a83b7-f7b5-4f00-a5a7-6ce4cccdebe2",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "30bf9ca6-df7e-43bb-82c4-66420115af7c",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "bc2f58f3-80e4-426d-8f0c-7b06017c4701",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "7fc2b65c-9e69-47f4-ba3e-65f4bdbd039b",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "a0779db1-92a8-463f-b163-7abfd3eae035",
+      "result_id": "c21f6487-e0a6-4845-8183-0644f28051a8"
+    },
+    {
+      "claim_id": "aeb36c02-f8b7-4af3-bcf7-d19e12be4faf",
+      "result_id": "0b5f1c4f-a71f-4cbd-ad4b-035cd124529b"
+    },
+    {
+      "claim_id": "1fa20938-e0d1-4299-88ba-84d43591e349",
+      "result_id": "0b5f1c4f-a71f-4cbd-ad4b-035cd124529b"
+    },
+    {
+      "claim_id": "bda3f2fb-0f06-464b-b5f9-dbb9d472056d",
+      "result_id": "0b5f1c4f-a71f-4cbd-ad4b-035cd124529b"
+    },
+    {
+      "claim_id": "76864351-6e5b-4652-b8d4-e2458a008ffd",
+      "result_id": "0b5f1c4f-a71f-4cbd-ad4b-035cd124529b"
+    },
+    {
+      "claim_id": "0ffdc5f8-e74f-437e-88aa-3a4861f6fc23",
+      "result_id": "0b5f1c4f-a71f-4cbd-ad4b-035cd124529b"
+    },
+    {
+      "claim_id": "701648e7-f6ed-4253-b5d0-cec9af0b455a",
+      "result_id": "0b5f1c4f-a71f-4cbd-ad4b-035cd124529b"
+    },
+    {
+      "claim_id": "1976f120-3aba-4761-b2d3-d4107d46f0a6",
+      "result_id": "0b5f1c4f-a71f-4cbd-ad4b-035cd124529b"
+    },
+    {
+      "claim_id": "92602997-51bb-44a9-a42e-2a068e8932eb",
+      "result_id": "0b5f1c4f-a71f-4cbd-ad4b-035cd124529b"
+    },
+    {
+      "claim_id": "0cc46443-4ac1-4e71-8195-8a142dca9942",
+      "result_id": "eccf13d1-dbe7-461d-916a-0848a4cb8776"
+    },
+    {
+      "claim_id": "349a946a-2033-4d09-9ee6-71d1f977d973",
+      "result_id": "eccf13d1-dbe7-461d-916a-0848a4cb8776"
+    },
+    {
+      "claim_id": "f9bb147f-4115-4966-a6a0-2b44f337d973",
+      "result_id": "eccf13d1-dbe7-461d-916a-0848a4cb8776"
+    },
+    {
+      "claim_id": "04c311d7-8385-4811-b201-4337e3f0f3bd",
+      "result_id": "eccf13d1-dbe7-461d-916a-0848a4cb8776"
+    },
+    {
+      "claim_id": "10ce1561-03ed-4931-b128-63fb16a45dea",
+      "result_id": "eccf13d1-dbe7-461d-916a-0848a4cb8776"
+    },
+    {
+      "claim_id": "41e3ca98-9f6a-4794-859b-a95fe54b1f35",
+      "result_id": "eccf13d1-dbe7-461d-916a-0848a4cb8776"
+    },
+    {
+      "claim_id": "325e3521-401e-4073-9b38-2bcc5c5317b3",
+      "result_id": "eccf13d1-dbe7-461d-916a-0848a4cb8776"
+    },
+    {
+      "claim_id": "3d75e323-3aba-4d09-8f97-3f8e838a1682",
+      "result_id": "2c089be5-afca-49a3-872b-cd67a06ce24b"
+    },
+    {
+      "claim_id": "14384c3e-b168-4a18-8ba3-e034146c6df8",
+      "result_id": "2c089be5-afca-49a3-872b-cd67a06ce24b"
+    },
+    {
+      "claim_id": "bdf58b40-b5b9-4b61-a9ec-f51e145d59b2",
+      "result_id": "2c089be5-afca-49a3-872b-cd67a06ce24b"
+    },
+    {
+      "claim_id": "19ec199a-ac37-405b-928e-49707b7beee9",
+      "result_id": "2c089be5-afca-49a3-872b-cd67a06ce24b"
+    },
+    {
+      "claim_id": "ffb83c12-46e6-4459-ba41-0e8743797e2b",
+      "result_id": "2c089be5-afca-49a3-872b-cd67a06ce24b"
+    },
+    {
+      "claim_id": "7ede147a-315b-4e25-9dd3-61c92af80958",
+      "result_id": "0ada4f32-e852-47e5-b3ea-e0822eba2b42"
+    },
+    {
+      "claim_id": "2516493e-e356-44ac-8cd5-bc805e880e71",
+      "result_id": "0ada4f32-e852-47e5-b3ea-e0822eba2b42"
+    },
+    {
+      "claim_id": "cffe9b3a-cef2-4961-b7ba-88b29d34f14a",
+      "result_id": "0ada4f32-e852-47e5-b3ea-e0822eba2b42"
+    },
+    {
+      "claim_id": "d90e4648-b094-4300-b26d-6b89c88b34ed",
+      "result_id": "b8494d0f-9530-4a6f-bfaf-4e2efbc4511a"
+    },
+    {
+      "claim_id": "e5cca436-904c-4a8d-8b00-5566473fcf8d",
+      "result_id": "b8494d0f-9530-4a6f-bfaf-4e2efbc4511a"
+    },
+    {
+      "claim_id": "6e35ffb5-6920-4406-b619-a65e4cbbd561",
+      "result_id": "b8494d0f-9530-4a6f-bfaf-4e2efbc4511a"
+    },
+    {
+      "claim_id": "e43b856b-b3c6-49fe-ae4d-be44d3c58012",
+      "result_id": "b8494d0f-9530-4a6f-bfaf-4e2efbc4511a"
+    },
+    {
+      "claim_id": "c12493bf-97ec-4c0e-b47d-aa9e2dce270a",
+      "result_id": "b8494d0f-9530-4a6f-bfaf-4e2efbc4511a"
+    },
+    {
+      "claim_id": "de31d645-12b5-436e-9f99-639725182c0c",
+      "result_id": "b8494d0f-9530-4a6f-bfaf-4e2efbc4511a"
+    },
+    {
+      "claim_id": "7961d149-0178-40ec-8607-cfcbfb77eb38",
+      "result_id": "b8494d0f-9530-4a6f-bfaf-4e2efbc4511a"
+    },
+    {
+      "claim_id": "16fba2d3-7187-462b-80d0-5caff5a15499",
+      "result_id": "b8494d0f-9530-4a6f-bfaf-4e2efbc4511a"
+    },
+    {
+      "claim_id": "cadf6a06-51ea-4198-9bd6-db8b646162e1",
+      "result_id": "7095d626-f228-457f-829f-1b29df23c23e"
+    },
+    {
+      "claim_id": "c44223ae-7bf0-4cb3-9959-876768cb50bd",
+      "result_id": "d9ddb91f-9bfb-4225-9639-92c5b686b70a"
+    },
+    {
+      "claim_id": "0af82e80-7f11-4ffb-9589-348e89d6df94",
+      "result_id": "d9ddb91f-9bfb-4225-9639-92c5b686b70a"
+    },
+    {
+      "claim_id": "ab66c683-4454-4b16-aee7-ee2715f8f8c7",
+      "result_id": "d9ddb91f-9bfb-4225-9639-92c5b686b70a"
+    },
+    {
+      "claim_id": "de49c1a0-8cf0-4170-953c-68a04eeff611",
+      "result_id": "d9ddb91f-9bfb-4225-9639-92c5b686b70a"
+    },
+    {
+      "claim_id": "1bfbab19-b499-4366-ad0e-31a9b3d76ad1",
+      "result_id": "6c364794-3509-4c3c-ac00-1672d3d073c5"
+    },
+    {
+      "claim_id": "efbbd1ec-ad93-4ae0-b618-125ff55f39d0",
+      "result_id": "6c364794-3509-4c3c-ac00-1672d3d073c5"
+    },
+    {
+      "claim_id": "19e83bfa-fd54-49b5-9a6f-c38d68ad8265",
+      "result_id": "6c364794-3509-4c3c-ac00-1672d3d073c5"
+    },
+    {
+      "claim_id": "7c0e1f5e-40bd-4f0f-9aaf-5d5deb3d609a",
+      "result_id": "6c364794-3509-4c3c-ac00-1672d3d073c5"
+    },
+    {
+      "claim_id": "788fdf5a-bead-478c-82cb-965f464dbed8",
+      "result_id": "6c364794-3509-4c3c-ac00-1672d3d073c5"
+    },
+    {
+      "claim_id": "f68543f1-3f35-45fd-9a35-cf01d5e8b592",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "2062645d-80da-41f8-9ab6-76fee3452e8e",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "3b4ab01c-4d2e-424d-b3b8-7600280a3b86",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "a53b4193-c7eb-45e0-aa3c-c55d173b0b1d",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "a7dee3af-f6db-4a79-ae6d-6519f660d449",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "e1d98e34-0443-40cd-a5f1-dd90719e06b3",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "e81d880a-0ee8-4d95-96e6-b81b2a73ab27",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "2dade86e-2abf-444f-b905-050f58c7e670",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "029d63be-232c-493e-81fb-a0d98d6e1055",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "7c5c5ab9-ef3f-47d0-8929-90a1e9e19ec7",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "0bbd77c5-b5da-4cb1-a8c1-692fb7e96d22",
+      "result_id": "5dd53dbe-9787-4873-9253-0294c642702d"
+    },
+    {
+      "claim_id": "47f09c35-00c2-47c9-8b43-912dec7fb39b",
+      "result_id": "b4fb7906-3f59-44ee-a20f-6e2273db10c5"
+    },
+    {
+      "claim_id": "3b6e1743-77a6-419f-995d-21f828af789d",
+      "result_id": "b4fb7906-3f59-44ee-a20f-6e2273db10c5"
+    },
+    {
+      "claim_id": "244d498b-52fb-4be6-985e-4b9506af8dcc",
+      "result_id": "b4fb7906-3f59-44ee-a20f-6e2273db10c5"
+    },
+    {
+      "claim_id": "a6038837-20b8-4fd8-b65c-e8edab4a2605",
+      "result_id": "2475b70d-3709-464e-a89d-ffd2de49f838"
+    },
+    {
+      "claim_id": "4d977982-d495-4cb5-8b3e-7e6c9a52e048",
+      "result_id": "2475b70d-3709-464e-a89d-ffd2de49f838"
+    },
+    {
+      "claim_id": "b1028867-62ab-40f6-a3a1-8084e610b59f",
+      "result_id": "2475b70d-3709-464e-a89d-ffd2de49f838"
+    },
+    {
+      "claim_id": "93cd24e6-f113-47a4-93cd-bfc0a667fde5",
+      "result_id": "2475b70d-3709-464e-a89d-ffd2de49f838"
+    },
+    {
+      "claim_id": "ada16557-b5f9-4e52-bc92-c822f3c0134c",
+      "result_id": "2475b70d-3709-464e-a89d-ffd2de49f838"
+    },
+    {
+      "claim_id": "b19a36d8-ddfe-45f7-a0c4-0c12efbd68dc",
+      "result_id": "2475b70d-3709-464e-a89d-ffd2de49f838"
+    },
+    {
+      "claim_id": "cb2d98bf-bf11-4cde-a414-4ea38e4be522",
+      "result_id": "4241c269-0304-4415-ab2c-b422f9bd03a0"
+    },
+    {
+      "claim_id": "db2f310d-b06c-4029-976a-9ccb1af81572",
+      "result_id": "4241c269-0304-4415-ab2c-b422f9bd03a0"
+    },
+    {
+      "claim_id": "b1e624bc-2e31-433e-a533-99c14c86271b",
+      "result_id": "4241c269-0304-4415-ab2c-b422f9bd03a0"
+    },
+    {
+      "claim_id": "28e512ae-aaa4-4fac-bb22-52c6bf8a9cc8",
+      "result_id": "4241c269-0304-4415-ab2c-b422f9bd03a0"
+    },
+    {
+      "claim_id": "c2e5f18b-7d8e-492f-a0db-83b8b5214f65",
+      "result_id": "4241c269-0304-4415-ab2c-b422f9bd03a0"
+    },
+    {
+      "claim_id": "b8a4f39f-d589-454d-a066-062ab294ca2d",
+      "result_id": "4241c269-0304-4415-ab2c-b422f9bd03a0"
+    },
+    {
+      "claim_id": "c59740de-40db-4ce9-b1da-c439600b1a58",
+      "result_id": "9aa12000-34a8-44db-96f4-32726ac3077a"
+    },
+    {
+      "claim_id": "e8b72dce-f0e7-4c87-bfa4-c924a7d53ba6",
+      "result_id": "9aa12000-34a8-44db-96f4-32726ac3077a"
+    },
+    {
+      "claim_id": "9450f170-f912-49c6-9711-17f80ef89c97",
+      "result_id": "9aa12000-34a8-44db-96f4-32726ac3077a"
+    }
+  ],
+  "comparisons": []
+}

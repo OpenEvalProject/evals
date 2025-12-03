@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31"
+    ],
+    "result": "Female meiotic C. elegans spindles are composed of arrays of short, overlapping microtubules rather than long microtubules spanning the entire spindle. Throughout meiosis I and II, roughly 40-50% of microtubules are shorter than 500 nm, only 10% are at least half spindle length, and the mean microtubule length is approximately 20% of spindle length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C27, C30-C31 provide converging evidence from electron tomography showing that meiotic spindles consist of short microtubules. The quantitative measurements (C25-C27) directly support the structural conclusion (C30-C31), and this is consistent with the dynamic nature described in C3. The data from Tables 1-2 and Figure 1D provide strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Microtubules in C. elegans meiotic spindles turn over rapidly with half-times of approximately 4-5 seconds and show substantial poleward motion at rates of 8.5 \u00b1 2.2 \u00b5m/min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by FRAP experiments with quantitative measurements (Figure 2). The recovery half-times (C32-C33) and poleward flux rates (C34) are directly measured, and the conclusion (C35) is appropriately drawn from these data. Sample sizes (n=6) are provided with standard deviations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The metaphase to anaphase transition correlates with a nearly twofold increase in microtubule number, particularly in the spindle center, followed by a decrease during mid and late anaphase. Microtubule numbers increase from ~3700 in metaphase to ~7000 in early anaphase, then decrease to ~3300 in mid anaphase and ~1400 in late anaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C45 provide detailed quantitative data from electron tomography reconstructions (Tables 1-2, Figure 3A-B). The measurements are consistent across multiple datasets for both meiosis I and II, with spatial resolution showing the increase is most pronounced in the spindle center (C43). The data directly support the correlation claimed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "During the metaphase to anaphase transition, average microtubule length decreases by a factor of 2 while total polymer length remains constant, with the magnitude of length decrease varying spatially and being most pronounced in the spindle center and near chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C46-C52 are supported by quantitative analysis of tomographic data (Figure 1D, Figure 3C-D, Tables 1-2). The inverse relationship between microtubule number (doubling) and average length (halving) while maintaining constant total polymer is a key finding. The spatial variation (C50-C52) is documented in Figure 3C-D with appropriate detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C72",
+      "C99"
+    ],
+    "result": "Microtubule turnover, driven by changes in nucleation and catastrophe rates, is the major driver of spindle reorganization during the metaphase to anaphase transition, rather than katanin-dependent severing. Only a minor fraction of microtubules closest to chromosomes undergo severing in metaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11, C72, C99 are supported by Bayesian inference on mathematical models comparing model predictions to experimental data (Figures 6, 8). The inference shows that the dimensionless cutting rate \u03ba\u0304 is much smaller than the turnover rate r\u0304, indicating cutting is rare for most microtubules. The mathematical framework is appropriate and the conclusions follow logically from the inference results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C100"
+    ],
+    "result": "Katanin selectively cuts microtubules in close contact with chromosomes (within 150 nm) in metaphase, where they represent 13-25% of total microtubules and show non-exponential length distributions. This cutting mechanism appears suppressed in anaphase when 70% of microtubules contact chromosomes but show exponential length distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C79-C83, C100 are supported by spatial analysis of tomographic data and mathematical modeling (Figures 7-8). The distinction between chromosome-proximal and distal microtubules is quantified, and the non-exponential vs exponential length distributions provide evidence for differential cutting. The inference scheme appropriately identifies cutting signatures in metaphase chromosome-proximal microtubules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C109"
+    ],
+    "result": "Katanin promotes microtubule turnover by severing microtubules near chromosomes. In katanin mutants (mei-2(ct98)), fluorescence recovery is significantly reduced from 87% to 52% (p=0.0039) without affecting recovery time, suggesting stabilization of a microtubule population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C84-C88, C90, C109 are supported by FRAP experiments comparing wildtype and mei-2(ct98) mutants (Figure 9). The statistical significance (p=0.0039) and sample sizes (n=7 control, n=11 mutant) are provided. The interpretation that reduced recovery fraction indicates stabilized microtubules is reasonable, though the mechanism is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Microtubule growth velocity during metaphase is estimated at ~12 \u00b5m/min, similar to mitotic C. elegans spindle dense regions (16-20 \u00b5m/min) but slower than astral microtubules (44 \u00b5m/min), suggesting spatial and temporal control of growth velocities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 combine FRAP measurements with mathematical modeling to estimate growth velocity. The estimate (C66) is derived from measured turnover time (~5s) and average length (~1 \u00b5m), which is methodologically sound. The comparisons to prior work (C67-C68) are appropriately cited, and the conclusion about spatial/temporal control (C69) is reasonable given the variation observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Short microtubules (\u2264500 nm) localize closer to spindle poles while longer microtubules (0.51-1.5 \u00b5m) localize to the spindle center. The fraction of short microtubules increases from ~35% in metaphase to ~50% in anaphase, with asymmetry between cortical and cytoplasmic spindle halves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by spatial analysis of microtubule positions (Figures 3-4). The quantitative measurements include statistical significance for the cortical-cytoplasmic asymmetry (p=3.6E-6 and p=0.002). The spatial distribution patterns are clearly documented, though the cause of asymmetry is acknowledged as unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of lateral defects in tomographic data shows very low abundance (1.1-2.5% of microtubules) with no increased occurrence in longer microtubules or at distinct spindle positions, contrasting with earlier partial EM reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 provide quantitative analysis of cutting sites from tomographic data. The low frequency of lateral defects supports the modeling conclusion that cutting is rare globally. However, this contrasts with prior work (C74), which may reflect differences in developmental stage or reconstruction completeness. The negative result (C76) is appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The data contradict previous hypotheses that spindle reorganization is driven by inward sliding of antiparallel microtubules by kinesin-14 or depolymerization at poles by katanin. While microtubule density increases in early anaphase, the twofold increase in number and poleward movement are inconsistent with inward sliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 appropriately evaluate prior hypotheses against new data. The tomographic data (C95) showing increased microtubule number cannot be explained by sliding alone (C96), and FRAP data showing poleward movement (C97) contradicts inward sliding. The logical reasoning is sound, though alternative mechanisms involving both processes cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Complete 3D reconstructions of meiotic spindles were generated for multiple stages: two metaphase I, four anaphase I (early, mid, two late), two metaphase II, one early anaphase II, and one mid anaphase II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe the datasets generated, which are documented in Tables 1-2 and Figure 1. The reconstructions represent the methodological foundation for all subsequent analyses. The completeness of the reconstructions is a key advance over prior partial reconstructions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Microtubule dynamics change throughout the spindle during spindle rearrangements, with nucleation and turnover rates increasing globally though with spatially varying magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 synthesize findings from spatial analyses (Figures 3-4) and mathematical modeling. The conclusion appropriately integrates multiple lines of evidence showing spatial heterogeneity in microtubule properties while identifying global trends. This represents a higher-level interpretation of the detailed spatial data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Very few microtubules exceed 10 times the average length: none in metaphase (>10 \u00b5m) and only one in early anaphase (>5 \u00b5m), indicating that extremely long microtubules are rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide specific observations from tomographic data that support the inference that cutting is rare. These observations are used to constrain the mathematical model, as microtubules would need to reach these lengths to be more likely cut than to undergo catastrophe. The data directly support the modeling conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C92",
+      "C101"
+    ],
+    "result": "Microtubules near chromosomes may be stabilized by chromosome interactions, and katanin prevents them from growing too long through severing. New plus ends created by cutting are mostly unstable (\u03b1 < 0.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89, C92, C101 involve speculation (C89, C101 explicitly noted as speculation) supported by inference data and citations to prior work. While the inference suggests \u03b1 < 0.5 for chromosome-proximal microtubules (C92), the uncertainty is significant given the small number of such microtubules. The model is plausible but requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "In vitro studies suggest katanin can amplify microtubules by incorporating GTP tubulin into the lattice, promoting rescue and stabilizing new plus ends. This is consistent with the observed twofold increase in microtubule number and prior reports of decreased microtubule number in katanin-depleted embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C107 connect in vitro findings to in vivo observations. While the twofold increase in microtubule number (C106) is well-documented, the mechanistic link to GTP incorporation (C103-C105) is speculative. The consistency with prior work (C107) provides some support, but the mechanism remains to be directly demonstrated in the meiotic system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Female meiotic spindles undergo striking morphological changes during the metaphase to anaphase transition, including spindle shortening and microtubule density shifts from poles to the midzone. The ultrastructural basis of these changes was largely unknown prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C18-C21 establish the biological context and knowledge gap. These are supported by general knowledge (C1, C18-C20) and citations (C21). They appropriately frame the research question but do not constitute novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Errors in meiotic chromosome segregation lead to aneuploidies and genetic disorders that are often lethal. Female meiotic spindles in humans, mice, and nematodes lack centrosomes due to centriole elimination during oogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 provide background information supported by appropriate citations. These establish the biological importance of accurate meiosis and the distinctive acentrosomal nature of female meiotic spindles across species. This is established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Microtubule motion was not detected in similar FRAP experiments in the first mitotic division in early C. elegans embryos, contrasting with the substantial poleward motion observed in meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 provides an important comparison to prior work (cited to Labb\u00e9 et al., 2004 and Redemann et al., 2017) that highlights the distinctive dynamics of meiotic versus mitotic spindles. This contextualizes the findings but is based on prior published work rather than new experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Earlier work demonstrated the importance of severing during spindle assembly and found a large number of katanin-mediated cutting events in wildtype spindles based on partial EM reconstructions at earlier stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 accurately represent prior work (multiple citations provided) that the current study's findings appear to contradict. This establishes the surprising nature of the current findings and appropriately acknowledges prior literature, though the apparent contradiction may reflect differences in developmental stage or methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The reorganization of microtubules during the metaphase to anaphase transition in C. elegans meiotic embryos is driven by changes in microtubule growth and/or turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is a summary conclusion that integrates multiple lines of evidence from tomography, FRAP, and mathematical modeling. The hedging with 'and/or' is appropriate given that the relative contributions of growth velocity changes versus turnover rate changes cannot be definitively separated with the available data. This represents the main conclusion of the study.",
+    "result_type": "MAJOR"
+  }
+]

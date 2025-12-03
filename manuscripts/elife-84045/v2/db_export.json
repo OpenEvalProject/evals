@@ -1,0 +1,1684 @@
+{
+  "submission": {
+    "id": "68e10f5f-ccbf-4177-aa4a-bb05b0d5f72f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:45:32.901863Z",
+    "updated_at": "2025-12-03T20:45:32.901863Z"
+  },
+  "content": [
+    {
+      "id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "submission_id": "68e10f5f-ccbf-4177-aa4a-bb05b0d5f72f",
+      "content_type": "manuscript",
+      "content_text": "# Temporal integration is a robust feature of perceptual decisions\n\n## Authors\n\n- Alexandre Hyafil<sup>1</sup> ([ORCID: 0000-0002-0566-651X](https://orcid.org/0000-0002-0566-651X)) \u2020\n- Jaime de la Rocha<sup>3</sup> ([ORCID: 0000-0002-3314-9384](https://orcid.org/0000-0002-3314-9384))\n- Cristina Pericas<sup>3</sup>\n- Leor N Katz<sup>4</sup> ([ORCID: 0000-0002-2742-6533](https://orcid.org/0000-0002-2742-6533))\n- Alexander C Huk<sup>5</sup> ([ORCID: 0000-0003-1430-6935](https://orcid.org/0000-0003-1430-6935))\n- Jonathan W Pillow<sup>2</sup> ([ORCID: 0000-0002-3638-8831](https://orcid.org/0000-0002-3638-8831))\n\n### Affiliations\n\n1. Centre de Recerca Matem\u00e0tica Bellaterra Spain ([ROR:020s51w82](https://ror.org/020s51w82))\n2. Princeton Neuroscience Institute, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n3. Institut d\u2019Investigacions Biom\u00e8diques August Pi i Sunyer (IDIBAPS) Barcelona United States\n4. Laboratory of Sensorimotor Research, National Eye Institute, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))\n5. Fuster Laboratory for Cognitive Neuroscience, Departments of Psychiatry & Biobehavioral Sciences and Ophthalmology, UCLA Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMaking informed decisions in noisy environments requires integrating sensory information over time. However, recent work has suggested that it may be difficult to determine whether an animal\u2019s decision-making strategy relies on evidence integration or not. In particular, strategies based on extrema-detection or random snapshots of the evidence stream may be difficult or even impossible to distinguish from classic evidence integration. Moreover, such non-integration strategies might be surprisingly common in experiments that aimed to study decisions based on integration. To determine whether temporal integration is central to perceptual decision-making, we developed a new model-based approach for comparing temporal integration against alternative \u2018non-integration\u2019 strategies for tasks in which the sensory signal is composed of discrete stimulus samples. We applied these methods to behavioral data from monkeys, rats, and humans performing a variety of sensory decision-making tasks. In all species and tasks, we found converging evidence in favor of temporal integration. First, in all observers across studies, the integration model better accounted for standard behavioral statistics such as psychometric curves and psychophysical kernels. Second, we found that sensory samples with large evidence do not contribute disproportionately to subject choices, as predicted by an extrema-detection strategy. Finally, we provide a direct confirmation of temporal integration by showing that the sum of both early and late evidence contributed to observer decisions. Overall, our results provide experimental evidence suggesting that temporal integration is an ubiquitous feature in mammalian perceptual decision-making. Our study also highlights the benefits of using experimental paradigms where the temporal stream of sensory evidence is controlled explicitly by the experimenter, and known precisely by the analyst, to characterize the temporal properties of the decision process.\n\n## Introduction\n\nPerceptual decision-making is thought to rely on the temporal integration of noisy sensory information on a timescale of hundreds of milliseconds to seconds. Temporal integration corresponds to summing over time the evidence provided by each new sensory stimulus, and optimizes perceptual judgments in face of noise (Bogacz et al., 2006; Gold and Shadlen, 2007). A perceptual decision can then be made on the basis of this accumulated evidence, either as some threshold on accumulated evidence is reached, or if some internal or external cue signals the need to initiate a response.\n\nAlthough many behavioral and neural results are consistent with this integration framework, temporal integration is a feature that has often been taken for granted rather than explicitly tested. Recently, the claim that standard perceptual decision-making tasks rely on (or even frequently elicit) temporal integration has been challenged by theoretical results showing that non-integration strategies can produce behavior that carries superficial signatures of temporal integration (Stine et al., 2020). These signatures include the relationship between stimulus difficulty, stimulus duration, and behavioral accuracy, the precise temporal weighting of sensory information on the decisions, and the patterns of reaction times.\n\nHere, we propose new analytical tools for directly assessing integration and non-integration strategies from fixed- or variable-duration paradigms where, critically, the experimenter controls the fluctuations in perceptual evidence over time within each trial (discrete-sample stimulus, or DSS). By leveraging these controlled fluctuations, our methods allow us to make direct comparisons between integration and non-integration strategies. We apply these tools to assess temporal integration in data from monkeys, humans, and rats that performed a variety of perceptual decision-making tasks with DSS. Applying these analyses to these behavioral datasets yields strong evidence that perceptual decision-making tasks in all three species rely on temporal integration. Temporal integration, a critical element of many major theories of perception at both the neural and behavioral levels, is indeed a robust and pervasive aspect of mammalian behavior. Our results also illuminate the power of targeted stimulus design and statistical analysis to test specific features of behavior.\n\n## Results\n\n### Integration and non-integration models\n\nIn a typical perceptual evidence-integration experiment (Figure 1A), an observer is presented in each trial with a time-varying stimulus and must report which of two possible stimulus categories it belongs to. Typical examples include judging whether a dynamic visual stimulus is moving leftwards or rightwards (Yates et al., 2017; Katz et al., 2015); whether the orientation of a set of gratings is more aligned with cardinal or diagonal directions (Wyart et al., 2012) whether a combination of tones is dominated by high or low frequencies (Morillon et al., 2014; Hermoso-Mendizabal et al., 2020; Znamenskiy and Zador, 2013); which of two acoustic streams is more intense or dense (Brunton et al., 2013; Pardo-Vazquez et al., 2019; Cisek et al., 2009). Such paradigms have been used extensively in humans, nonhuman primates, and rodents. Here, we focus on experiments in which observers report their choice at the end of a period whose duration is controlled by the experimenter (Kiani and Shadlen, 2009; Wyart et al., 2012; Brunton et al., 2013; Raposo et al., 2012), in contrast to so-called \u2018reaction time\u2019 tasks, in which the observer can respond after viewing as brief a portion of the stimulus as they wish (Roitman and Shadlen, 2002; Znamenskiy and Zador, 2013; Pardo-Vazquez et al., 2019; Hermoso-Mendizabal et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of a typical fixed-duration perceptual task with discrete-sample stimuli (DSS). A stimulus is composed of a discrete sequence of n samples (here, n = 8). The subjects must report at the end of the sequence whether one specific quality of the stimulus was \u2018overall\u2019 leaning more toward one of two possible categories A or B. Evidence in favor of category A or B varies across samples (blue and orange bars). (B) Temporal integration model. The relative evidence in favor of each category is accumulated sequentially as each new sample is presented (black line), resulting in temporal integration of the sequence evidence. The choice is determined by the end point of the accumulation process: here, the overall evidence in favor of category A is positive, so response A is selected. (C) Extrema-detection model. A decision is made whenever the instantaneous evidence for a given sample (blue and orange arrows) reaches a certain fixed threshold (dotted lines). The selected choice corresponds to the sign of the evidence of the sample that reaches the threshold (here, response B). Subsequent samples are ignored (gray bars). (D) Snapshot model. Here, only one sample is attended. Which sample is attended is determined in each trial by a stochastic policy. The response of the model simply depends on the evidence of the attended sample. Other samples are ignored (gray bars). Variants of the model include attending K > 1 sequential samples.\n\nMoreover, we focus on experimental paradigms in which the sensory evidence in favor of each category arrives in a sequence of discrete samples. Samples can correspond to motion pulses (Yates et al., 2017), individual gratings (Wyart et al., 2012), acoustic tones (Morillon et al., 2014; Hermoso-Mendizabal et al., 2020; Znamenskiy and Zador, 2013), numbers (Bronfman et al., 2015; Cisek et al., 2009), or symbols representing category probabilities (Yang and Shadlen, 2007). We refer to this configuration as the DSS paradigm. In this paradigm, the perceptual evidence provided by each sample can be controlled independently, allowing for detailed analyses of how different samples contribute to the behavioral response. The DSS framework can be contrasted with experiments in which the experimenter specifies only the mean stimulus strength on each trial, and variations in sensory evidence over time are not finely controlled or are not easily determined from the raw spatio-temporal stimulus.\n\nTasks using the DSS paradigm are classically thought to rely on sequential accumulation of the stimulus evidence (Bogacz et al., 2006), which we refer to here as temporal integration. Figure 1A shows an example stimulus sequence composed of n samples that provide differing amounts of evidence in favor of one alternative vs. another (\u2018A\u2019 vs. \u2018B\u2019). In the temporal integration model, the accumulated evidence fluctuates as new samples are integrated and finishes at a positive value indicating overall evidence for stimulus category A (Figure 1B). This integration process can be formalized by defining the decision variable or accumulated evidence $x_{i}$ and its updating dynamics across stimulus samples: $x_{i}=x_{i-1}+m_{i}$ where $m_{i}=S_{i}+\\epsilon_{i}$ represents a noisy version of the true stimulus evidence $S_{i}$ in the ith sample corrupted by sensory noise $\\epsilon_{i}$ . The binary decision r is simply based on the sign of the accumulated evidence $x_{n }$ at the end of the sample sequence (composed of n samples): $r=A$ if $x_{n}>0$, and $r=B$ if $x_{n}<0$. This procedure corresponds to the normative strategy with uniform weighting that maximizes accuracy. For such perfect integration, $x_{n} = \u03a3_{i}S_{i}+\u03a3_{i}\\epsilon_{i}$ , so that the probability of response A is $p(r=A) = \u03a6(\u03a3_{i}\\betaS_{i})$ where $\u03a6$ is the cumulative normal distribution function (the normative weight for the stimuli \u03b2 depends on the noise variance $Var(\\epsilon)$ and the number of samples through $\\beta=1/\\sqrt{n Var(\\epsilon)}$). Departures from optimality in the accumulation process such as accumulation leak, categorization dynamics, divisive normalization, sensory adaptation, or sticky boundaries may however yield unequal weighting of the different samples (Yates et al., 2017; Brunton et al., 2013; Prat-Ortega et al., 2021; Bronfman et al., 2016; Keung et al., 2019; Keung et al., 2020). To accommodate for these, we allowed the integration model to take any arbitrary weighting of the samples: $p(r=A) = \u03a6(\\beta_{0}+\u03a3_{i}\\beta_{i}S_{i})$ (see Methods for details). The mapping from final accumulated evidence to choice was probabilistic, to account for the effects of noise from different sources in the decision-making process (Drugowitsch et al., 2016). Thus, this model represented an approximate statistical description for any generative model relying on temporal integration of the stimulus evidence.\n\nAlthough it has been commonly assumed that observers use evidence-integration strategies to perform these psychophysical tasks, recent work has suggested that observers may employ non-integration strategies instead (Stine et al., 2020). Here, we consider two specific alternative models. The first non-integration model corresponds to an extrema-detection model (Waskom and Kiani, 2018; Stine et al., 2020; Ditterich, 2006). In this model, observers do not integrate evidence across samples but instead base their decision on extreme or salient bits of evidence. More specifically, the observer commits to a decision based on the first sample i in the stimulus sequence that exceeds one of the two symmetrical thresholds, that is such that $|m_{i}|\\geq\\theta$. In our example stimulus, the first sample that reaches this threshold in evidence space is the fifth sample, which points toward stimulus category B, so response B is selected (Figure 1C). This policy can be viewed as a memoryless decision process with sticky bounds. If the stimulus sequence contains no extreme samples, so that neither threshold is reached, the observer selects a response at random. We also explored an alternative mechanism where in such cases the response is based on the last sample in the sequence, following Stine et al., 2020; and a variant of the model where the decision threshold is different on every sample position.\n\nThe second non-integration model corresponds to the snapshot model (Stine et al., 2020; Pinto et al., 2018). In this model, the observer attends to only one sample i within the stimulus sequence, and makes a decision based solely on the evidence from the attended sample: $r=A$ if $m_{i}>0$, and $r=B$ if $m_{i}<0$. The position in the sequence of the attended sample is randomly selected on each trial. In our example, the fourth sample is randomly selected, and since it contains evidence toward stimulus category A, response A is selected (Figure 1D). We considered variants of this model that gave it additional flexibility, including: allowing the prior probability over the attended sample to depend on its position in the sequence using a non-parametric probability mass function estimated from the data; allowing for deterministic vs. probabilistic decision-making rule based on the attended evidence; including attentional lapses that were either fixed to 0.02 (split equally between leftward and rightward responses) or estimated from behavioral data. We finally considered a variant of the snapshot model where the decision was made based on a subsequence of K consecutive samples within the main stimulus sequence ($1\\leqK<n$), rather than based on a single sample.\n\n### Standard behavioral statistics favor integration accounts of pulse-based motion perception in primates\n\nTo compare the three decision-making models defined above (i.e., temporal integration, extrema-detection, snapshots), we first examined behavioral data from two monkeys performing a fixed-duration motion integration task (Yates et al., 2017). In this experiment, each stimulus was composed of a sequence of 7 motion samples of 150 ms each where the motion strength toward left or right was manipulated independently for each sample. At the end of the stimulus sequence, monkeys reported with a saccade whether the overall sequence contained more motion toward the left or right direction. The animals performed 72,137 and 33,416 trials for monkey N and monkey P, respectively, allowing for in-depth dissection of their response patterns.\n\nWe fit the three models (and their variants) to the responses for each animal individually (see Figure 2\u2014figure supplement 1 for estimated parameters for the different models). We then simulated the fitted model and computed, for simulated and experimental data, the psychophysical kernels capturing the weights of the different sensory samples based on their position in the stimulus sequence (Figure 2B). Psychophysical kernels were non-monotonic and differed in shape between the two animals, probably reflecting the complex contributions of various dynamics and suboptimalities along the sensory and decision pathways (Yates et al., 2017; Levi and Huk, 2020).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig2-v2.jpg)\n\n**Figure 2.:** (A) Difference between Akaike information criterion (AIC) of models (temporal integration: red bar; snapshot model: blue; extrema-detection model: green) and temporal integration model for each monkey. Positive values indicate poorer fit to data. (B) Psychophysical kernels for behavioral data (black dots) vs. simulated data from temporal integration model (left panel, red curve), snapshot model (middle panel, blue curve), and extrema-detection model (right panel, green curve) for the two animals (monkey N: top panels; monkey P: bottom panels). Each data point represents the weight of the motion pulse at the corresponding position on the animal/model response. Error bars and shadowed areas represent the standard error of the weights for animal and simulated data, respectively. (C) Accuracy of animal responses (black bars) vs. simulated data from fitted models (color bars), for each monkey. Blue and green marks indicate the maximum performance for the snapshot and extrema-detection models, respectively. Error bars represent standard error of the mean. (D) Psychometric curves for animal (black dots) and simulated data (color lines) for monkey N, representing the proportion of rightward choices per quantile of weighted stimulus evidence.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Modulation gain $\\gamma$ per session for the integration model, for each animal (green: monkey P; purple: monkey N). (B) Mixture coefficients $\\pi_{i}$ of the snapshot model estimated for each monkey, representing the prior probability that each sample is attended on each trial. (C) Parameters T and $\\sigma$ of the extrema-detection model, estimated for each monkey. Error bars correspond to the confidence interval obtained using the Laplace approximation.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Predicted accuracy for the snapshot model fitted to monkey data, as a function of memory span K, for fixed lapses (dashed lines, $\\pi_{L}=\\pi_{R}=0.01$) and lapses estimated from the data (full lines). Black curves represent the model with sensory noise (\u2018probabilistic\u2019), blue curves represent the model without sensory noise (\u2018non-probabilistic\u2019 or \u2018deterministic\u2019). Memory span K corresponds to the number of successive samples used to define the decision on each trial (see Methods). The horizontal bar corresponds to the average accuracy of the animal. (B) Akaike information criterion (AIC) difference between each of the four variants of the snapshot and the integration model. Legend as in A (full/dashed lines for fixed/free lapse parameters; black/blue curves for probabilistic/deterministic variants). Note that the probabilistic variant with either fixed or free lapses provide virtually indistinguishable values. Positive values indicate that the snapshot model provides a worse fit compared with the integration model. (C) Psychometric curve for the snapshot model with span K = 3 samples, sensory noise and free lapse parameters (best snapshot model variant according to AIC). (D) Psychophysical kernel for the same variant of the model. (E) Correlation between data and model integration maps for variants of the snapshot model.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Predicted accuracy for the extrema-detection model fitted to the monkey data, for random (black curves) and last sample (red curve) default rule, for fixed lapses ($\\pi_{L}=\\pi_{R}=0.01$) or lapse parameters estimated from the data, and for fixed- or varying-threshold parameter. The horizontal bar indicates animal accuracy. (B) Akaike information criterion (AIC) difference between variants of the extrema-detection model and the integration model. Legend as in A. Positive values indicate that the extrema-detection model provides a worse fit. Psychometric curve (C) and psychophysical kernel (D) for the model variant that provided the best match to behavior in terms of predicted accuracy and AIC: free lapse parameters and last sample rule. (E) Correlation between integration maps from animal and simulated data (see Figure 4) for variants of the extrema-detection model. The horizontal bar marks the correlation between experimental data and the integration model.\n\nThe temporal profile of the kernel was perfectly matched by the integration model, almost by design, as we gave full flexibility to the model to adjust the sample weights. The snapshot model was provided with similar flexibility, as the prior probability of attending each sample could be fully adjusted to the monkey decisions. However, the snapshot model could not match the experimental psychophysical kernel as accurately. It consistently underestimated the magnitude of weighting in monkey P (Figure 2B, bottom row). The extrema-detection model was not endowed with such flexibility of sensory weighting. On the contrary, since the decision was based on the first sample in the sequence reaching a certain criterion, this inevitably generates a primacy effect in the psychophysical kernels \u2013 or at best a flat weighting (Stine et al., 2020). The model thus failed to capture the non-monotonic psychophysical kernels from animal data.\n\nNext, we looked at the psychometric curves and choice accuracy predictions of each fitted model (Figure 2C, D). Stine et al., 2020 have argued that integration and non-integration models can capture the psychometric curves equally well. For both animals, the accuracy and psychometric curves were accurately captured by the integration model. In line with Stine et al., we also found that both non-integration models could reproduce the shape of the psychometric curve in monkey N, although the quantitative fit was always better for the integration than non-integration models. By contrast both non-integration models failed to capture the psychometric curve for monkey P (Figure 2B, bottom row). More systematically, the overall accuracy, which is an aggregate measure of the psychometric curve, clearly differed between models, as the accuracy of the non-integration models systematically deviated from animal data for both animals (Figure 2C). In other words, all models produce the same type of psychometric curves up to a scaling factor, and this scaling factor (directly linked to the model accuracy) is key to differentiate model fits. For the snapshot model in monkey P, this discrepancy was explained because the model, limited to using one stimulus sample, could not reach the performance of the animal (compare the maximum accuracy of the model indicated by the blue mark with the accuracy of the animal). (This also explains why the psychophysical kernel of the snapshot model underestimated the true kernel in monkey P.) For the extrema-detection model in monkey P and for both non-integration models in the other animal (monkey N), the model accuracy is not bounded below the subject\u2019s accuracy. In such cases, the model can produce better-than-observed accuracy for certain parameter ranges, but these are not the parameters found by the maximum likelihood procedure, probably because they produce a pattern of errors that is inconsistent with the observed pattern of errors. This indicates an inability of the models to match the pattern of errors of the animal (see Discussion).\n\nFinally, we assessed quantitatively which model provided the best fit, while correcting for model complexity using the Akaike information criterion (AIC, Figure 2A). In both monkeys, AIC favored the integration model over the two non-integration models by a very large margin. We also explored whether (previously unpublished) elaborations of the extrema-detection and snapshot models could provide a better match to the behavioral metrics considered above (Figure 2\u2014figure supplements 2 and 3). We found using the AIC metric that the integration model was preferred over all variants of both non-integration models, for both monkeys. Moreover, these model variants could not replicate the psychophysical kernels as well as the integration model did (Figure 2\u2014figure supplements 2 and 3).\n\nIn conclusion, while psychometric curves may not always discriminate between integration and non-integration strategies, other metrics including psychophysical kernels, predicted accuracy and quality of fit (AIC) support temporal integration in monkey perceptual decisions. For one model in one monkey (the snapshot model in monkey P), even the simple metric of overall accuracy compellingly supported temporal integration (Figure 2C). For the other monkey and/or model, where the distinction was less clear, our model-based approach allowed us to leverage these other metrics to reveal strong support for the temporal integration model (Figure 2A\u2013C). While these data rely only on two experimental subjects, we show below further evidence supporting the integration model in humans and rats.\n\n### Temporal integration is more likely than the extrema-detection model: evidence from a unique subset of trials\n\nWhile formal model comparison leads us to reject the non-integration models in favor of the integration models, it is informative to examine qualitative features of the animal strategies and identify how non-integration models failed to capture them. We started by designing two analyses aimed at testing whether choices were consistent with the extrema-detection model, namely by testing whether choices were strongly correlated with the largest evidence samples. In the first analysis, we looked at the subset of trials where the evidence provided by the largest evidence sample in the sequence was at odds with the total evidence in the sequence: we show one example in Figure 3B, where the largest evidence sample points toward response B, while the overall evidence points toward response A. These \u2018disagree trials\u2019 represent a substantial minority of the whole dataset: 1865 trials (2.6%) in monkey N and 1831 trials (5.5%) in monkey P. If integration is present, the response of the animal should in general be aligned with the total evidence from the sequence (Figure 3A, red bars). By contrast, if it followed the extrema-detection model (Figure 1C), it should in general follow the largest evidence sample (Figure 3A, green bars). In both monkeys, animal choices were more often than not aligned with the integrated evidence (Figure 3A, black bars), as predicted by the integration model. The responses generated from the extrema-detection model tended to align more with the largest evidence sample, although that behavior was somehow erratic (for monkey N) due to the large estimated decision noise in the model. This rules out that monkey decisions rely on a memoryless strategy of simply detecting large evidence samples, discarding all information provided by lower evidence samples. Our results complement a previous analysis on disagree trials in this task (Levi et al., 2018), by explicitly comparing monkey behavior to model predictions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig3-v2.jpg)\n\n**Figure 3.:** (A) Example of an \u2018agree trial\u2019 where the total stimulus evidence (accumulated over samples) and the evidence from the largest evidence sample point toward the same response (here, response A). In this case, we expect that temporal integration and extrema-detection will produce similar responses (here, A). (B) Example of a \u2018disagree trial\u2019, where the total stimulus evidence and evidence from the largest evidence sample point toward opposite responses (here A for the former; B for the latter). In this case, we expect that integration and extrema-detection models will produce opposite responses. (C) Proportion of choices out of all disagree trials aligned with total evidence, for animal (gray bars), integration (red), and extrema-detection model (green). Error bars denote 95% confidence intervals based on parametric bootstrap (see Methods).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Impact on decision of individual samples as a function of absolute sample evidence. Shaded area: standard error of the weight. Top row: monkey P; bottom row: monkey N. (A) Integration model. (B) Extrema-detection model. The vertical dotted line marks the value of the threshold T estimated from animal data. (C) Impact on decision of individual pulses, estimated from each monkey.\n\nWe reasoned that the extrema-detection would also leave a clear signature in the \u2018subjective weight\u2019 of the samples, defined as the impact of each sample on the decision as a function of absolute sample evidence (Yang and Shadlen, 2007; Waskom and Kiani, 2018; Nienborg and Cumming, 2007). The extrema-detection model predicts that, in principle, samples whose evidence is below the threshold have little impact on the decision, while samples whose evidence is above the threshold have full impact on the decision. By contrast, the integration model predicts that subjective weight should grow linearly with sample evidence. We estimated subjective weights from monkey choices using a regression method similar in spirit to previous methods (Yang and Shadlen, 2007; Waskom and Kiani, 2018), taking the form $p(r_{t}=A)\u00a0=\u00a0\\sigma(\\beta_{0}+\u03a3_{i\\in[1...n]}\\beta_{i}\u00a0f(S_{t,i}))$, where \u03c3 is a sigmoidal function. Here f is a function that captures the subjective weight of the sample as a function of its associated evidence. Whereas previous methods estimated subjective weights assuming a uniform psychophysical kernel, our method estimated simultaneously subjective weights $f(S)$ and the psychophysical kernel $\\beta$, thus removing potential estimation biases due to unequal weighting of sample evidence (see Methods). In both monkeys, we indeed found that the subjective weight depends linearly on sample evidence for low to median values of sample evidence (motion pulse lower than 6), in agreement with the integration model (Figure 3\u2014figure supplement 1). Counter to our predictions, simulated data of the extrema-detection model displayed the same linear pattern for low to median values of sample evidence. We realized this was due to the very high estimated sensory noise (Figure 2\u2014figure supplement 1), such that, according to the model, even samples with minimal sample evidence were likely to reach the extrema-detection threshold. In other words, unlike the previous analyses, inferring the subjective weights used by animals was inconclusive as to whether animals deployed the extrema-detection strategy. This somewhat surprising dependency reinforces the importance of validating intuitions by fitting and simulating models (Wilson and Collins, 2019).\n\n### Impact of early and late stimulus evidence onto choice shows direct evidence for temporal integration\n\nFollowing model comparisons favoring integration over both snapshot and extrema-detection models, the immediately previous analysis relied on a special subset of trials to provide an additional, and perhaps more intuitive, signature of integration, which ruled out extrema-detection as a possible strategy of either monkey. We next employed another novel analysis specifically designed to tease apart unique signatures of the integration and snapshot models. More specifically, we tested whether decisions were based on the information from only one part of the sequence, as predicted by the snapshot model, or from the full sequence, as predicted by the integration model. To facilitate the analysis, we defined early evidence Et by grouping evidence from the first three samples in the sequence, and late evidence Lt, as the grouped evidence from the last four samples. We then displayed the proportion of rightward responses as a function of both early and late evidence in a graphical representation that we call integration map (Figure 4A). A pure integration strategy corresponds to summing early and late evidence equally, which can be formalized as $p(r)=\\sigma(E_{t}+L_{t})$, where $\\sigma$ is a sigmoidal function. Because this only depends on the sum $E_{t}+L_{t}$ , the probability of response is invariant to changes in the $(E_{t},L_{t})$ space along the diagonals, which leave the sum unchanged. These diagonals correspond to isolines of the integration map (Figure 4A, left; Figure 4\u2014figure supplement 2A). In other words, straight diagonal isolines in the integration map reflect the fact that the decision only depends on the sum of evidence $E_{t}+L_{t}$ . Straight isolines thus constitute a specific signature of evidence integration.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig4-v2.jpg)\n\n**Figure 4.:** (A) Integration map representing the probability of rightward responses (orange: high probability; blue: low probability) as a function of early stimulus evidence $E_{t}$ and late stimulus evidence $L_{t}$ , illustrated for a toy integration model (where $p(right)=\\sigma(E_{t}+L_{t})$; left panel) and a toy non-integration model ($p(right)=0.5\\sigma(E_{t})+0.5\\sigma(L_{t})$; middle panel), and computed for monkey N responses (right panel). Black lines represent the isolines for p(rightwards) = 0.15, 0.3, 0.5, 0.7, and 0.85. (B) Conditional psychometric curves representing the probability for rightward response as a function of early evidence $E_{t}$ , for different values of late evidence $L_{t}$ (see inset for $L_{t}$ values), for toy models and monkey N. The curves correspond to horizontal cuts in the integration maps at $L_{t}$ values marked by color triangles in panel A. (C) Illustration of the fits to conditional psychometric curves. The value of the bias $\\beta$, left lapse $\\pi_{L}$ and right lapse $\\pi_{R}$ are estimated from the conditional psychometric curves for each value of late evidence. (D) Lateral bias as a function of late evidence for toy models and monkey N. Shaded areas represent standard error of weights for animal data. (E) Lapse parameters (blue: left lapse; orange: right lapse) as a function of late evidence for toy models and monkey N. (F) Pearson correlation between integration maps for animal data and integration maps for simulated data, for each animal. Red: integration model; blue: snapshot model; green: extrema-detection model.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Integration map. Legend as in Figure 4A. (B) Conditional psychometric curves. Legend as in Figure 4B. (C) Bias and lapse parameters from conditional psychometric curves, as a function of late evidence. Legend as in Figure 4D, E.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Data were simulated for each model from parameters estimated from monkey N. Left panels: integration model. Middle panels: snapshot models. Right panels: extrema-detection models. (A) Integration maps. (B) Conditional psychometric curves. (C) Lateral bias and (D) lapse parameters estimated from conditional psychometric curves, as a function late evidence. Legend as in Figure 4.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Neural models for temporal integration, extrema-detection, and snapshot model. (B) Integration map for LIP neurons, and simulated neurons following either integration, extrema-detection, or snapshot model. Color represents the average normalized spike count per bins of neuron-weighted early and late evidence (see Methods). Isolines represent values of 0.4, 0.6, 1, 1.4, and 1.8.\n\nWe contrasted this integration map with the one obtained from a non-integration strategy (Figure 4A, middle panel; Figure 4\u2014figure supplement 2B). There we assumed that the decision depends either on the early evidence or on the late evidence, as in the snapshot model, with equal probability. This can be formalized as $p(r)=0.5\\sigma(E_{t})+0.5\\sigma(L_{t})$. In this case, if late evidence is null ($\\sigma(L_{t})=0.5$) and early evidence is very strong toward the right ($\\sigma(E_{t})\u22431$) the overall probability for rightward response is $p(r)=0.75$. This probability contrasts with that obtained in the integration case where the early evidence would dominate and lead to an overwhelming proportion of rightward responses, that is $p(r)\u22431$. The 25% of leftwards responses yielded by the non-integration model correspond to trials where only the late (uninformative) part of the stimulus is attended and a random response to the left is drawn. More generally, in regions of the space in which either early or late evidence take large absolute values, their corresponding probability of choice saturates to 0 or 1, when that evidence is attended, so the overall response probability becomes only sensitive to the other evidence. As a result, the equiprobable lines bend toward the horizontal and vertical axes (Figure 4A, middle). Finally, to compare predictions from both integration and non-integration models to monkey behavior, we plotted the integration maps for both monkeys (Figure 4A, right; Figure 4\u2014figure supplement 1A). The isolines were almost straight diagonal lines and showed no consistent curvature toward the horizontal and vertical axes. This provides direct evidence that monkey responses predominantly depend on the sum of early and late evidence \u2013 a clear signature of temporal integration.\n\nWe derived subsequent tests based on the integration map. We computed conditional psychometric curves as the probability for rightward responses as a function of early evidence $E_{t}$ , conditioned on late evidence value $L_{t}$ (Figure 4B; Figure 4\u2014figure supplement 1B). From the integration formula $p(r)=\\sigma(E_{t}+L_{t})$, we see that a change in late evidence value corresponds to a horizontal shift of the conditional psychometric curves. By contrast, according to the non-integration formula $p(r)=0.5\\sigma(E_{t})+0.5\\sigma(L_{t})$, conditioning on different values of late evidence adds a fixed value to the response probability irrespective of early evidence, a vertical shift akin to that introduced by lapse responses (Figure 4B, middle panel). The conditional psychometric curves for monkeys (Figure 4B, right panel; Figure 4\u2014figure supplement 1 and Figure 4\u2014figure supplement 2) displayed horizontal shifts as late evidence was changed, consistently with the integration hypothesis. We sought to quantify these shifts in better detail. To this purpose, we fitted each conditional psychometric curve with the formula $p(r)=(1-\\pi_{L}-\\pi_{R}) \\sigma(\\alphaE_{t}+\\beta)+\\pi_{R}$ , where $\\pi_{L}$ , $\\pi_{R}$ , $\\alpha$, and $\\beta$ correspond to the left lapse, right lapse, sensitivity, and lateral bias parameters, respectively (Figure 4C, Figure 4\u2014figure supplement 1 and Figure 4\u2014figure supplement 2). The integration model predicts that the bias parameter $\\beta$ should vary linearly with Lt, while lapse parameters should remain null (Figure 4D, left panel). By contrast, the non-integration model predicts that the horizontal shift parameter $\\beta$ should remain constant while left and right lapse parameters $(\\pi_{L},\\pi_{R})$ should vary (middle panel), as these lapse parameters correspond to the trials where early evidence is not attended and the response depends simply on late evidence. Both monkeys showed a very strong linear dependence between late evidence and the horizontal shift $\\beta$ (Figure 4D, right panel; see also Figure 4\u2014figure supplement 1), further supporting that late evidence is summed to early evidence. By contrast, the lapse parameters showed no consistent relationship with late evidence $L_{t}$ (Figure 4E, right panel). Finally, we directly assessed the similarities between the integration maps from monkey responses and from simulated responses for the three models (integration, snapshot, and extrema-detection). The model-data correlation was larger in the integration model than in the non-integration strategies for both monkeys (Figure 4E; unpaired t-test on bootstrapped r values: p < 0.001 for each animal and comparison against extrema-detection and against snapshot model). Overall, integration maps allow to dissect how early and late parts of the stimulus sequence are combined to produce a behavioral response. In both monkeys, these maps carried signatures of temporal integration. For monkey N, the integration model and the data look very similar (Figure 4\u2014figure supplement 2). For monkey P, there is still a qualitative dependency that deviates from non-integration, but which is not as uniquely matched to the integration strategy (although the imperfect coverage of the two-dimensional space impedes further investigations; Figure 4\u2014figure supplement 1). Thus, complementing the statistical model tests favoring integration, this richer visualization allows the data to show us that some degree of integration is occurring, albeit not perfect.\n\n### Visual orientation discrimination in humans relies on temporal integration\n\nOverall, all our analyses converged to support the idea that monkey decisions in a fixed-duration motion discrimination task relied on temporal integration. We explored whether the same results would hold for two other species and perceptual paradigms. We first analyzed the behavioral responses from nine human subjects performing a variable-duration orientation discrimination task (Cheadle et al., 2014). In each trial, a sequence of 5\u201310 gratings with a certain orientation were shown to the subject, and the subject had to report whether they thought the gratings were overall mostly aligned to the left or to the right diagonal. In this task, the experimenter can control the evidence provided by each sample by adjusting the orientation of the grating. We performed the same analyses on the participant responses as on monkey data. As for monkeys, we found that the integration model nicely captured psychometric curves, participant accuracy and psychophysical kernels (Figure 5A\u2013C, red curves and symbols). By contrast, both non-integration models failed to capture these patterns (Figure 5A\u2013C, blue and green curves and symbols). The accuracy from both models consistently underestimated participant performance: eight and six out of nine subjects outperformed the maximum performance for the snapshot and extrema-detection models, respectively (Figure 5\u2014figure supplement 1). This suggests that human participants achieved such accuracy by integrating sensory evidence over successive samples. Moreover, subjects overall weighted more later samples (Figure 5C), which is inconsistent with the extrema-detection mechanism. A formal model comparison confirmed that in each participant, the integration model provided a far better account of subject responses than either of the non-integration models did (Figure 5D). We then assessed how subjects combined information from weak and strong evidence samples into their decisions, using the same analyses as for monkeys. As predicted by the integration model, but not by the extrema-detection model, human choices consistently aligned with the total stimulus evidence and not simply with the strongest evidence sample (Figure 5E). Finally, the average integration map for early and late evidence within the stimulus sequence displayed nearly linear diagonal isolines, showing that both were integrated into the response (Figure 5F). Integration maps from participants correlated better with maps predicted by the integration model than with maps predicted by either of the alternative non-integration strategies (Figure 5G; two-tailed t-test on bootstrapped r values: p < 0.001 for six out of nine participants in the integration vs. snapshot comparison; in all nine participants for the integration vs. extrema-detection comparison). Overall, these analyses provide converging evidence that human decisions in an orientation discrimination task rely on temporal integration.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig5-v2.jpg)\n\n**Figure 5.:** (A) Psychometric curves for human and simulated data, averaged across participants (n = 9). Legend as in Figure 2C. (B) Simulated model accuracy (y-axis) vs. participant accuracy (x-axis) for integration model (red), snapshot model (blue) and extrema-detection model (green). Each symbol corresponds to a participant. (C) Psychophysical kernel for human and simulated data, averaged across participants. Legend as in A. (D) Difference in Akaike information criterion (AIC) between each model and the integration model. Legend as in B. (E) Proportion of choices aligned with total stimulus evidence in disagree trials, for participant data (gray bars) and simulated models, averaged over participants. (F) Integration map for early and late stimulus evidence, computed as in Figure 4A, averaged across participants. (G) Correlation between integration map of participants and simulated data for integration, snapshot, and extrema-detection models, averaged across participants. Color code as in B. Error bars represent the standard error of the mean across participants in all panels.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Left panel: snapshot model (with span K = 1). Right panel: extrema-detection. Each symbol represents a subject.\n\n### Auditory intensity discrimination in rats relies on temporal integration\n\nFinally, we analyzed data from five rats performing a fixed-duration auditory task where the animals had to discriminate the side with larger acoustic intensity (Pardo-Vazquez et al., 2019). The relative intensity of the left and right acoustic signals was modulated in sensory samples of 50ms, so that the stimulus sequence provided time-varying evidence for the rewarded port. The stimulus sequence was composed of either 10 or 20 acoustic samples of 50 ms each, for a total duration of 500 or 1000 ms. We applied the same analysis pipeline as for monkey and human data. The integration model provided a much better account of rat choices than non-integration strategies, based on psychometric curves (Figure 6A), predicted accuracy (Figure 6B), psychophysical kernel (Figure 6C), and model comparison using AIC (Figure 6D). Similar to humans and monkeys, rats tended to select the side corresponding to the total stimulus evidence and not the largest sample evidence in \u2018disagree\u2019 trials, as predicted by the integration model (Figure 6E). Finally, the integration map was largely consistent with an integration strategy (Figure 6F), and correlated more strongly with simulated maps from the integration model (unpaired t-test on bootstrapped r values: p < 0.001 for each animal and comparison against extrema-detection and against snapshot model).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig6-v2.jpg)\n\n**Figure 6.:** (A-G) Legend as in Figure 5. Rats were rewarded for correctly identifying the auditory sequence of larger intensity (number of samples: 10 or 20; stimulus duration: 500 or 1000 ms). Legend as in Figure 5. Psychophysical kernels are computed only for 10-sample stimuli (in 4 animals). See Figure 6\u2014figure supplement 1 for psychophysical kernels with 20-sample stimuli.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84045/elife-84045-fig6-figsupp1-v2.jpg)\n\n## Discussion\n\nWe investigated the presence of temporal integration in perceptual decisions in monkeys, humans, and rats through a series of standard and innovative analyses of response patterns. In all analyses, we contrasted predictions from one integration and two non-integration computational models of behavioral responses (Figure 1). For each non-integration model, we considered multiple variants to explore the maximal flexibility offered by each framework to capture animal behavior. For our datasets, evidence in favor of integration was easy to achieve using standard model comparison techniques as well as comparing simulated psychometric curves and psychophysical kernels to their experimental counterparts (Figure 2). Our results are in line with previous evidence for temporal integration in perceptual decisions of humans and mice (Pinto et al., 2018; Stine et al., 2020; Waskom and Kiani, 2018). Importantly, we also put forth new analyses targeted at revealing specific signatures of temporal integration.\n\nIn some cases, we could link the failure of the non-integration model to a fundamental limitation of the model. For example, the extrema-detection model cannot explain the non-monotonic psychophysical kernels of monkeys or the increasing psychophysical kernels in humans. This is because the decision in that mode is based on the first sample to reach a certain fixed criterion, so it will always produce a primacy effect, that is, a decreasing psychophysical kernel. Although this effect can be small, and in practice yields approximately flat kernels (Stine et al., 2020), it cannot produce increasing or non-monotonic kernels.\n\nAnother strong limitation of non-integration models (both the extrema-detection and the snapshot model) is that accuracy is limited by the fact that decisions depend on a single sample. We found that that boundary performance (i.e., the maximum performance that a model can reach) was actually lower than subject accuracy for most human participants, de facto ruling out these non-integration strategies for these participants. This is consistent to what was observed in a contrast discrimination DSS task where human subjects had to make judgments about image sequences spanning up to tens of seconds each (Waskom and Kiani, 2018). It clearly contrasts however with results from Stine et al., 2020 where the non-integration strategies matched the accuracy of human subjects performing the classical random-dot-motion task. This discrepancy may be related to the different sources of noise in the two paradigms. In DSS tasks, because the sensory evidence provided by the stimulus at each moment is controlled by the experimenter, the unpredictability of human responses essentially stems from internal noise at the level of sensory processing and temporal integration (Waskom and Kiani, 2018; Drugowitsch et al., 2016). By contrast, the random dot motion task (Kiani et al., 2008), which is a non-DSS task because the experimenter does not typically specify differing amounts of motion in each time epoch within a single trial, typically elicits more variable responses due to the presence of stimulus noise. This overall increased noise level leads to a looser relationship between the stimulus condition and the behavioral responses, which can thus be accounted for by a larger spectrum of computational mechanisms. These issues have been addressed by forcing \u2018pulses\u2019 of a certain stimulus strength and/or by performing post hoc analyses to estimate signal and noise (Kiani et al., 2008; Huk and Shadlen, 2005) but these are partial solutions that DSS paradigms solve by design. This illustrates the benefits of using experimental designs where variability in stimulus information can be fully controlled and parametrized by the experimenter, as these paradigms discriminate more precisely between different models of perceptual decisions (see Cisek et al., 2009).\n\nIn at least one monkey, although quantitative metrics such as penalized log-likelihood and fits to psychometric curves clearly pointed to the integration model as the best account to behavior, the qualitative failure modes of the non-integration strategies (especially the snapshot model) was not immediately clear. Although we tried variants for each non-integration model, there remained a possibility that our precise implementation failed to account for monkey behavior but that other possible implementations would. Note that the extrema-detection and snapshot are two of the many possible non-integration strategies. A generic form for non-integration strategies corresponds to a policy that implements position-dependent thresholds on the instantaneous sensory evidence. In this framework, the extrema-dependent model corresponds to the case with a position-independent threshold, while the snapshot model corresponds to a null bound for one sample and infinite bounds for all other samples. To rule out these more complex strategies, we conducted additional analyses that specifically targeted core assumptions of the integration and non-integration strategies.\n\nFirst, the extrema-detection model fails to account for the data because it predicts that largest evidence samples should have a disproportionate impact on choices. However, this does not occur, as monkeys and humans tend to respond according to the total evidence and not the single large-evidence sample (Figures 3C and 5E) \u2013 and see Levi et al., 2018 for a similar analysis. All non-integration strategies share the property that on each trial the decision should only rely either on the early or the late part of the trial. We thus directly examined the assumptions of integration and non-integration models by assessing how the evidence from the early and late parts of each stimulus sequence is combined to produce a decision. We introduced integration maps (Figure 4) to inspect such integration: isolines of the integration maps will be rectilinear if and only if early and late evidence are summed, in other words if and only if temporal integration takes place. Unequal weighting of evidence would still produce rectilinear isolines, albeit with a different angle. By contrast, a non-integration scenario when on each trial only a single piece of evidence contributes to the decision predicts isolines that bend toward the axes. Integration maps from monkey, human, and rat subjects nicely matched the predictions of the integration models, proving that their decisions do rely on temporal integration. Note that this innovative analysis technique could be used to probe integration of evidence not only at temporal level but also between different sources of evidence. Indeed, there has been an intense debate about whether sensory information from different spatial locations or different modalities are integrated prior to reaching a decision, or whether decisions are taken separately for each source before being merged, which can be viewed as extensions to the snapshot model (Pannunzi et al., 2015; Otto and Mamassian, 2012; Lorteije et al., 2015; Hyafil and Moreno-Bote, 2017). Our integration analysis could provide new answers to this old debate.\n\nIntegration maps can be computed not only for choice patterns but for any type of behavioral or neural marker of cognition. We computed a neural integration map (Figure 4\u2014figure supplement 3) by looking at the average spike activity of Lateral Intra Parietal (LIP) neurons as a function of early and late evidence, for neurons recorded while the monkeys performed the motion discrimination experiment (Yates et al., 2017). The neural integration map clearly showed rectilinear isolines, as predicted by an integration model of neural spiking. By contrast, neural implementations of the snapshot and extrema-detection predicted strongly curved isolines. The activity of LIP neurons correlates with the evidence accumulated over the presentation of the stimulus in favor of either possible choices (Gold and Shadlen, 2007). This result shows that the activity of individual LIP neurons indeed reflects the temporal integration of sensory information that drives animal behavior.\n\nWe have focused in this study on paradigms where the stimulus duration is fixed by the experimenter, and subjects could only respond after stimulus extinction. Stine et al. proposed a method for distinguishing integration from non-integration strategies but the method is based on two experimental conditions: experiments where stimulus duration is controlled by the experimenter and experiments where the stimulus is controlled by the subject (i.e., plays until the subject responds, \u2018reaction time paradigms\u2019). Our study puts forth a method to differentiate integration from non-integration strategies that is based on only one experimental condition (i.e., the variable-duration paradigm), and may therefore be applied to existing datasets.\n\nOther studies have shown how integration and non-integration strategies can be disentangled in free reaction time task paradigms. Specifically, different models make different predictions regarding how the total sample evidence presented before response time should vary with response time (Glickman and Usher, 2019; Zuo and Diamond, 2019). Glickman and Usher used these predictions to rule out non-integration strategies in a counting task in humans, and Zuo and Diamond, 2019 found evidence for evidence integration to bound when rats discriminate textures using whisker touches. Under strong urgency constraints, it has been proposed that decisions depend on very limited temporal integration of the stimulus by low-pass filtering of stimulus evidence (Cisek et al., 2009; Thura et al., 2012). However, this suggestion cannot explain the fact that evidence presented early in the trial influences decisions taken later on Winkel et al., 2014; Thura et al., 2012. Of note, the absence of integration seems a more viable strategy when the duration of the stimulus is controlled externally and the benefits of integrating in terms of accuracy might not compensate for its cognitive cost. In free reaction time paradigms, waiting for a long sequence of samples and selecting its response based on a single sample does not seem a particularly efficient strategy. If the cognitive cost of integration is high, it is more beneficial to interrupt the stimulus sequence early with a rapid response. Indeed, fast or very fast (under 250 ms) perceptual decisions are very common (Uchida et al., 2006; Zariwala et al., 2013; Stanford and Salinas, 2021; Pardo-Vazquez et al., 2019; Hermoso-Mendizabal et al., 2020). Such rapid termination of the decision process have been attributed either to urgency signals modulating the integration of stimulus evidence (Drugowitsch et al., 2012; Stanford and Salinas, 2021) or to action initiation mechanisms that time the response after a specific time (e.g., one or two samples) following stimulus onset (Hern\u00e1ndez-Navarro et al., 2021). Here, we have shown that even in paradigms where the stimulus duration is controlled by the experimenter, mammals often integrate sensory evidence over the entire stimulus.\n\nIn conclusion, we have found strong evidence for temporal integration in perceptual tasks across species (monkeys, humans, and rats) and perceptual domain (visual motion, visual orientation, and auditory discrimination). Although the timescale of integration can be adapted to the statistics of the environment (Ossmy et al., 2013; Glaze et al., 2015; Kilpatrick et al., 2019), the principle that stimulus evidence is integrated over time appears to be a hallmark of perception. This evidence was gathered by leveraging experimentally controlled sensory evidence at each sensory sample composing a stimulus, and novel model-based statistical analysis. We speculate that temporal integration is a ubiquitous feature of perceptual decisions due to hard-wired neural integrating circuits, such as recurrent stabilizing connectivity in sensory and perceptual areas (Wang, 2008; Wimmer et al., 2015).\n\n## Methods\n\n### Monkey experiment\n\nWe present here the most relevant features of the behavioral protocol \u2013 see Yates et al., 2017 for further experimental details. Two adult rhesus monkeys performed a motion discrimination task. On each trial, a stimulus consisting of a hexagonal grid (5\u20137 degrees, scaled by eccentricity) of Gabor patches (0.9 cycle per degree; temporal frequency 5 Hz for Monkey P; 7 Hz for Monkey N) was presented. Monkeys were trained to report the net direction of motion in a field of drifting and flickering Gabor elements with an eye movement to one of two targets. Each trial motion stimulus consisted of seven consecutive motion pulses, each lasting 9 or 10 video samples (150 or 166 ms; pulse duration did not vary within a session), with no interruptions or gaps between the pulses. The strength and direction of each pulse $S_{ti}$ for trial t and sample i were set by a draw from a Gaussian rounded to the nearest integer value. The difficulty of each trial was modulated by manipulating the mean and variance of the Gaussian distribution. Monkeys were rewarded based on the empirical stimulus and not on the stimulus distribution. We analyzed a total of 112 sessions for monkey N and 60 sessions for monkey P, with a total of 72,137 and 33,416 valid trials, respectively. These sessions correspond to sessions with electrophysiological recordings reported in Yates et al., 2017 and purely behavioral sessions.\n\n### Human experiment\n\nNine adult subjects performed an orientation discrimination task whereby on each trial they reported in each trial whether a series of gratings were perceived to be mostly tilted clockwise or counterclockwise (Drugowitsch et al., 2016). Each DSS consisted of 5\u201310 gratings. Each grating was a high-contrast Gabor patch (color: blue or purple; spatial frequency = 2 cycles per degree; SD of Gaussian envelope = 1 degree) presented within a circular aperture (4 degrees) against a uniform gray background. Each grating was presented during 100 ms, and the interval between gratings was fixed to 300 ms. The angles of the gratings were sampled from a von Mises distribution centered on the reference angle ($\\alpha_{0}=45$ degrees for clockwise sequences, 135 degrees for anticlockwise sequences) and with a concentration coefficient $\u03ba=0.3$. The normative evidence provided by sample i in trial t in favor of the clockwise category corresponds to how well the grating orientation $\\alpha_{ti }$ aligns with the reference orientation, that is $S_{ti}=2\u03ba cos(2(\\alpha_{ti}-\\alpha_{0}))$ .\n\nEach sequence was preceded by a rectangle flashed twice during 100 ms (the interval between the flashes and between the second flash and the first grating varied between 300 and 400 ms). The participants indicated their choice with a button press after the onset of a centrally occurring dot that succeeded the rectangle mask and were made with a button press with the right hand. Failure to provide a response within 1000 ms after central dot onset was classified as invalid trial. Auditory feedback was provided 250 ms after participant response (at latest 1100 ms after end of stimulus sequence). It consisted of an ascending tone (400/800 Hz; 83/167 ms) for correct responses; descending tone (400/400 Hz; 83/167 ms) for incorrect responses; a low tone (400 Hz; 250 ms) for invalid trials.\n\nTrials were separated by a blank interstimulus interval of 1200\u20131600 ms (truncated exponential distribution of mean 1333 ms). Experiments consisted of 480 trials in 10 blocks of 48. It was preceded with two blocks of initiation with 36 trials each. In the first initiation block, there was only one grating in the sequence, and it was perfectly aligned with one of the reference angles. In the second initiation block, sequences of gratings were introduced, and the difficulty was gradually increased (the distribution concentration linearly decreased from $\u03ba=1.2$ to $\u03ba=0.3$). Invalid trials (mean 6.9 per participant, std 9.4) were excluded from all regression analyses. The study was approved by the local ethics committee (approval 2013/5435/I from CEIm-Parc de Salut MAR).\n\n### Rat experiment\n\nRat experiments were approved by the local ethics committee of the University of Barcelona (Comit\u00e9 d\u2019Experimentaci\u00f3 Animal, Barcelona, Spain, protocol number Ref 390/14). Five male Long-Evans rats (350\u2013650 g), pair-housed and kept on stable conditions of temperature (23\u00b0C) and humidity (60%) with a constant light\u2013dark cycle (12:12 hr, experiments were conducted during the light phase). Rats had free access to food, but water was restricted to behavioral sessions. Free water during a limited period was provided on days with no experimental sessions.\n\nRats performed a fixed-duration auditory discrimination task where they had to classify noisy stimuli based on the intensity difference between the two lateral speakers (Pardo-Vazquez et al., 2019; Hermoso-Mendizabal et al., 2020). An LED on the center port indicated that the rat could start the trial by poking in that center port. After this poke, rats had to hold their snouts in the central port during 300 ms (i.e., fixation). Following this period, an acoustic DSS was played. Rats had to remain in the central port during the entire presentation of the stimulus. At stimulus offset, the center LED went off and rats could then come out of the center port and head toward one of the two lateral ports. Entering the lateral port associated with the speaker that generated the larger sound intensity led to a reward of 24 \u00b5l of water (correct responses), while entering the opposite port lead to a 5-s timeout accompanied with a bright light during the entire period (incorrect responses). If rats broke fixation during the pre-stimulus fixation period or during the stimulus presentation, the sound was interrupted, the center LED remained on, and the rat had to initiate a new trial starting by center fixation followed by a new stimulus. Fixation breaks were not included in any of the analyses. Stimulus duration was 0.5 s (10 samples) or 1 s (20 samples). Two rats performed 0.5-s stimuli only (77,810 and 54,803 valid trials, respectively); one rat performed 1-s stimuli only (42,474 valid trials); the remaining two rats performed a mixture of 0.5 and 1 s stimuli trials randomly interleaved (5016 trials and 65,212 valid trials, respectively, for one animal; 7374 and 38,829 trials for the other animal). In each trial k one stimulus $S_{K}^{X}(t)$ was played in each speaker (X = R for the Right speaker and X = L for the Left speaker). Each stimulus was an amplitude-modulated (AM) broadband noise defined by $S_{k}^{X}(t)=[1+sin(f_{AM}t+\\phi)]a_{k}^{X}(t) \u03be_{X}(t)$ where fAM = 20 Hz (sensory samples lasted 50 ms), the phase delay $\\phi=3\\pi/2$ and $\u03be_{X}(t)$ were broadband noise bursts. The amplitudes of each sound in each frame were $a_{k}^{L}(t)=1+S_{k, f}/2$ and $a_{k}^{R}(t)=1-S_{k, f}/2$ with Sk,f(t) being the instantaneous evidence that was drawn independently in each frame f from a transformed Beta distribution with support [\u22121,1]. With this parametrization of the two sounds the sum of the two envelopes was constant in all frames aLk(t) + aRk(t) = 1. There were 7 \u00d7 5 stimulus conditions, each defined by a Beta distribution, spanning 7 mean values (\u22121, \u22120.5, \u22120.15, 0, 0.15, 0.5, and 1) and 5 different standard deviations (0, 0.11, 0.25, 0.57, and 0.8). In around the first half of the sessions, only sample sequences in which the total stimulus evidence matched the targeted nominal evidence were used. This effectively introduced weak correlations between samples. In the second half of the sessions, this condition was removed and samples in each stimulus were drawn independently from the corresponding Beta distribution.\n\n### Integration model\n\nThe integration model for human participants corresponds to a logistic regression model, where the probability of selecting the right choice $p(r_{t})$ at trial t depends on the weighted sum of the sample evidence: $p(r_{t})\u00a0=\u00a0\\sigma(\\beta_{0}+\u03a3_{i\\in[1...n]}\\beta_{i}S_{ti})$, where $\\beta_{0}$ is a lateral bias, $S_{ti}$ is the signed sample evidence at sample i; $ \\beta_{i}$ is the sensory weight associated with the ith sample in the stimulus sequence; and $\\sigma(x)=(1+e^{-x})^{-1}$ is the logistic function. The vector $\\beta_{i}$ \u2019s allowed to capture different shapes of psychophysical kernels (e.g., primacy effects, recency effects) which can emerge due to a variety of suboptimalities in the integration process (leak, attractor dynamics, sticky bounds, sensory after-effects, etc.) (Brunton et al., 2013; Yates et al., 2017; Prat-Ortega et al., 2021; Bronfman et al., 2016; Keung et al., 2019; Keung et al., 2020). Technically, our statistical approach corresponds to the first-order expansion of the Volterra series used to approximate any integration model (Neri, 2004) by a simple and fittable logistic model. In other words, because a more complete description of integration models would be computationally challenging to fit and prone to overfitting, we chose a statistical approximation in the form of the logistic model that captures the essence of any generative model that include temporal integration, that is weighted summation of stimulus evidence.\n\nFor the monkey and rat data, we included a session-dependent modulation gain $\\gamma_{t}$ to capture the large variations in performance in monkeys across the course of sessions (see Figure 2\u2014figure supplement 1A):\n\n$$\np(r_{t})\u00a0=\u00a0\\sigma(\\beta_{0}+\\gamma_{t}\u03a3_{i\\in[1...n]}\\beta_{i}S_{ti})\n$$\n\nThis model corresponds to a bilinear logistic regression model which pertains to the larger family of Generalized Unrestricted Models (GUMs) (Adam and Hyafil, 2020). Parameters ($\\beta,\\gamma$) were fitted using the Laplace approximation as described in Adam and Hyafil, 2020. The modulation gain was omitted when applied to human data, yielding a classical logistic regression model.\n\n### Snapshot model\n\nIn the snapshot model, decisions are based on each trial based upon a single sample. The model also includes the possibility for left and right lapses. In each trial, the attended sample is drawn from a multinomial distribution of parameters ($\\pi_{1},\u00a0...\\pi_{n},\u00a0\\pi_{L},\u00a0\\pi_{R}$), where the first terms $\\pi_{i} (1\\leqi\\leqn)$ correspond to the probability of attending sample i, and $\\pi_{L}$ and $\\pi_{R}$ correspond to the probability of left and right lapses, respectively. Upon selecting sample i, the probability for selecting the right choice is given by the function $H_{i}(S_{t})$. In the deterministic version of the model, $H_{i}$ is simply determined by the sign of the ith sample evidence: $ H_{i}(S_{t})=1$ if $S_{ti}>0$, $H_{i}(S_{t})=0$ if $S_{ti}<0$, and $H_{i}(S_{t})=0.5$ if $S_{ti}=0$ (i.e., random guess if the sample has null evidence). We also define similar functions for lapse responses: $H_{R}(S)=1$ and $H_{L}(S)=0$, irrespective of the stimulus. In the non-deterministic version of the model, the probability $H_{i}(S_{ti})$ is determined by a logistic function of the attended sample evidence $H_{i}(S_{t})=\\sigma(\\beta_{i}S_{ti})$ where $\\beta_{i}$ describes a sensitivity parameter. The deterministic case can be viewed as the limit of the non-deterministic case when all sensitivity parameters $\\beta_{i}$ diverge to $+\u221e$, that is when sensory and decision noise are negligible.\n\nThe overall probability for selecting right choice (marginalizing over the attended sample, which is a hidden variable) can be captured by a mixture model:\n\n$$\np(r_{t})\u00a0=\\pi_{R}+\u03a3_{i\\in[1...n]}\\pi_{i}H_{i}(S_{t})=\u03a3_{i\\in[1...n,L,R]}\\pi_{i}H_{i}(S_{t})\n$$\n\nThe mixture coefficients $\\pi_{i}\u00a0(i=1,...n,L,R)$ are constrained to be non-negative and sum up to 1. In the non-deterministic model, the parameters also include sensitivity parameters $\\beta_{i}$ .The model is fitted using Expectation-Maximization (Bishop, 2006). In the Expectation step, we compute the responsibility $z_{ti}$ , that is the posterior probability that the sample i was attended at trial t (for i = L, R, the probability that the trial corresponded to a lapse trial):\n\n$$\nz_{ti}=\\pi_{i}\\theta(S_{ti})/\u03a3_{j}\\pi_{j}H(S_{tj})forrightwardresponses(R_{t}=1)\n$$\n\n\n\n$$\nz_{ti}=\\pi_{i}(1\u2212H(S_{ti}))/\u03a3_{j}\\pi_{j}(1\u2212H(S_{tj}))forleftwardresponses(R_{t}=0)\n$$\n\nIn the Maximization step, we update the value of the parameters by maximizing the Expected Complete Log-Likelihood (ECLL): $Q(\\pi,\\beta)=\u03a3_{ti}z_{ti}log p(r_{t};\\pi,\\beta)$. Maximizing over the mixture coefficients with the unity-sum constraint provides the classical update: $\\pi_{i}=\u03a3_{ti}z_{ti}/N$, where N is the total number of trials. In the non-deterministic model, maximizing the ECLL over sensitivity parameters is equivalent to fitting a logistic regression model with weighted coefficients $z_{ti}$, which is a convex problem. Best fitting parameters can be found using Newton\u2013Raphson updates on the parameters:\n\n$$\n\\beta_{i}^{(new)}=\\beta_{i}\u2212\\frac{\u2202Q/\u2202\\beta_{i}}{\u2202^{2}Q/\u2202\\beta_{i}^{2}}with\u2202Q/\u2202\\beta_{i}=\\sumtz_{ti}(p(r_{t}\u2212R_{t}))and\u2202^{2}Q/\u2202\\beta_{i}^{2}=\u03a3_{t}z_{ti}S_{ti}^{2}p(r_{t})(1\u2212p(r_{t}))\n$$\n\nTo speed up the computations, in each M step, we only performed one Newton\u2013Raphson update for each sensitivity parameter, rather than iterating the updates fully until convergence. The EM procedure was run until convergence, assessed by an increment in the log-likelihood $L(\\pi,\\beta)$ of less than 10\u22129 after one EM iteration. The log-likelihood for a given set of parameters is given by $L(\\pi,\\beta)=\u03a3_{t}log p(r_{t})$. The EM iterative procedure was repeated with 10 different initializations of the parameters to avoid local minima.\n\nNote that for monkey and rat data, since we observed large variations in performance across sessions, the model based its choices on session-gain-modulated evidence $S-_{ti}=\\gamma_{t}S_{ti}$ instead of raw evidence $S_{ti}$ (this had no impact for the deterministic variant since $S-_{ti}$ and $S_{ti}$ always have the same sign). We fitted the model from individual subject responses either with lapses $\\pi_{L}$ and $\\pi_{R}$ as free parameters, or fixed to $\\pi_{L}=\\pi_{R}=0.01$. Figures in the main manuscript correspond to the deterministic snapshot model with fixed lapses. We also studied variants of the snapshot model where decisions in each trial are based on K attended samples, that is depends on $(S_{ti},..S_{t,i+K-1})$ with $1\\leqK\\leqn-1$ and $1\\leqi\\leqn-K+1$ is the first attended sample. In the deterministic case, the choice is directly determined by the sign of the sum of the signed evidence for the attended samples. In the non-deterministic case, the evidence for the attended samples are weighted and passed through a sigmoid: $H_{i}(S_{t})=\\sigma(\u03a3_{k\\in[1...K]}\\beta_{ki}S_{t,i+k\u22121})$. The model with a single attended sample presented above is equivalent to this extended model when using $K=1$. At the other end, using $K=n$ corresponds to the temporal integration model (without the lateral bias).\n\n### Extrema-detection model\n\nIn the extrema-detection model, a choice is selected according to the first sample in the sequence whose absolute evidence value reaches a certain threshold $\\theta$, that is $p(r_{t}|\\theta)=\u00a0H(m_{ti}),\u00a0|m_{ti}|\\geq\\theta,\u00a0|m_{tj}|<\\theta$ for all $j<i$ . Here, $m_{ti}$ is the sample evidence corrupted by sensory noise $\\epsilon_{ti}$ which is distributed normally with variance $\\sigma^{2}$ : $m_{ti}=S_{ti}+\\epsilon_{ti}$ with $\\epsilon_{ti}\u223cN(0,\\sigma^{2})$. H is the step function. If the stimulus sequence ends and no sample has reached the threshold, then the decision is taken at chance. As described in Waskom and Kiani, 2018, the probability for a rightward choice at trial t can be expressed as:\n\n$$\np(r_{t})=\u03a3_{i\\leqn}\u03a6(\\frac{S_{ti}\u2212\\theta}{\\sigma})\u03a0_{j<i}(1\u2212\u03a6(\\frac{S_{tj}\u2212\\theta}{\\sigma})\u2212\u03a6(\\frac{\u2212S_{tj}\u2212\\theta}{\\sigma}))+\\frac{1}{2}\u03a0_{j\\leqn}(1\u2212\u03a6(\\frac{S_{tj}\u2212\\theta}{\\sigma})\u2212\u03a6(\\frac{\u2212S_{tj}\u2212\\theta}{\\sigma}))\n$$\n\nwhere $\u03a6$ is the cumulative normal distribution. We also included the possibility for left and right lapses with probability $\\pi_{L}$ and $\\pi_{R}$ . Following Stine et al., 2020, we explored an alternative default rule called \u2018last sample\u2019 rule: if the stimulus extinguishes and the threshold has not been reached, then the decision is based on the (noisy) last sample rather than simply by chance. This changes the equation describing the probability for rightward choices to:\n\n$$\np(r_{t})=\u03a3_{i<n}\u03a6(\\frac{S_{ti}\u2212\\theta}{\\sigma})\u03a0_{j<i}(1\u2212\u03a6(\\frac{S_{tj}\u2212\\theta}{\\sigma})\u2212\u03a6(\\frac{\u2212S_{tj}\u2212\\theta}{\\sigma}))+\u03a6(\\frac{S_{tn}}{\\sigma})\u03a0_{j<n}(1\u2212\u03a6(\\frac{S_{tj}\u2212\\theta}{\\sigma})\u2212\u03a6(\\frac{\u2212S_{tj}\u2212\\theta}{\\sigma}))\n$$\n\nWe also explored a variant of the model where the threshold changes on every sample, that is the equations above are changed by substituting $\\theta$ with $\\theta_{i}$ . As for the snapshot model, we used the session-gain-modulated evidence $S-_{ti}$ instead of raw evidence $S_{ti}$ for fitting the model to monkey and rat data. The four parameters of the model $(\\theta,\\sigma,\\pi_{L},\\pi_{R})$ were estimated from each subject data by maximizing the log-likelihood with interior-point algorithm (function fmincon in Matlab) and 10 different initializations of the parameters. (In the varying-threshold variant, there are n + 3 parameters which are estimated similarly.)\n\n### Model validation and model comparison\n\nPsychophysical kernels were obtained from subject and simulated data by running a logistic regression model: $p(r_{t}) = \\sigma(\\beta_{0}+\u03a3_{i}\\beta_{i}S_{ti})$. Standard errors of the weights $\\beta_{i}$ were obtained from the Laplace approximation. For psychometric curves, we first defined the weighted stimulus evidence Tt at trial t as the session-modulated weighted sum of signed sample evidence; with the weights obtained from the logistic regression model above $T_{t}=\\gamma_{t}\u03a3_{i}\\beta_{i}S_{ti}$ . We then divided the total stimulus evidence into 50 quantiles (10 for human subjects) and computed the psychometric curve as the proportion of rightward choices for each quantile.\n\nThe boundary performance for the snapshot and extrema-detection models corresponds to the best choice accuracy out of all the parameterizations for each model. In the snapshot model, the boundary performance corresponds to the deterministic version with no-lapse, where the attended sample is always the sample $i^{*}$ whose sign better predicts the stimulus category over all animal trials, that is $\\pi_{i^{*}}=1$ and $\\pi_{i}=0$ if $i\\neqi^{*}$ . For the extrema-detection model, the boundary performance corresponds to the lapse-free model with no sensory noise ($\\sigma=0$) and a certain value for threshold $\\theta$ that is identified for each subject by simple parameter search.\n\nFinally, model selection was performed using the AIC $AIC=2p-2L_{ML}$ , where p is the number of model parameters and $L_{ML}$ is the likelihood evaluated at maximum likelihood parameters.\n\n### Analysis of majority-driven choices\n\nWe selected for each animal the subset of trials corresponding to when the largest evidence sample was at odds with the total stimulus evidence (disagree trials), that is where $sign(S_{tj}, |S_{tj}|\\geq|S_{ti}| \u2228i) \\neqsign(\u03a3_{i}S_{ti})$. For this subset of trials, we computed the proportion of animal choices that were aligned with the overall stimulus evidence. We repeated the analysis for simulated data from the integration and extrema-detection models. We computed error bars following a parametric bootstrap procedure: for each bootstrap, we simulated the model (integration/extrema-detection) using parameters sampled from their posterior distribution (based on the Laplace approximation). We then applied the analysis on disagree trials for simulated data, and used these bootstrap values to define confidence intervals.\n\n### Subjective weighting analysis\n\nIn order to estimate the impact of each sample on the animal choice as a function of sample evidence, we built and estimated the following statistical model:\n\n$$\np(r_{t}=A)\u00a0=\u00a0\\sigma(\\beta_{0}+\\gamma_{t}\u03a3_{i\\in[1...n]}\\beta_{i}\u00a0f(S_{ti}))\n$$\n\nAs can be seen, this model is equivalent to the temporal integration model under the assumption that f is a linear function. Rather, here we wanted to estimate the function f (as well as the session gain $\\gamma_{t}$ , lateral bias $\\beta_{0}$, and sensory weight $\\beta_{i}$). Including the session gain was necessary for estimating f accurately from the monkey and rat behavioral data, since the distribution of pulse strength $S_{ti}$ was varied across sessions and could otherwise induce a confound. We assumed that f is an odd function, that is $f(-S_{ti})= -f(S_{ti})$. This equation takes the form of a GUM and was fitted using the Laplace approximation method as described in Adam and Hyafil, 2020. In the monkey experiment, sample evidence could take only a finite number of values, so f was simply estimated over these values. In the human experiment, sample evidence could take continuous values. In this case, we defined a Gaussian Process prior over f with squared exponential kernel with length scale 0.1 and variance 1.\n\n### Integration of early and late evidence\n\nWe designed a new analysis tool to characterize the statistical mapping from the multidimensional stimulus space $S_{t }=(S_{t1},...S_{tn})\\inR^{n}$ onto binary choices $r_{t}\\in[0,1]$. We first collapsed the stimulus sequence $S_{t }$ onto the two-dimensional space defined by early evidence $E_{t }$ and late evidence $L_{t }$ defined by $E_{t}=\\gamma_{t}\u03a3_{1\\leqi\\leq[n/2]}\\beta_{i}S_{ti}$ and $L_{t}=\\gamma_{t}\u03a3_{[n/2]+1\\leqi\\leqn}\\beta_{i}S_{ti}$ , where the weights $\\beta_{i}$ and session gains $\\gamma_{t}$ correspond to parameters estimated from the temporal integration model (session gains were omitted for human participants). Next we plotted the integration map which represents the probability for rightward choices as a function of $(E_{t},L_{t})$. The map was obtained by smoothing data points with a two-dimensional Gaussian kernel. More specifically, for each pair value (E,L), we selected the trials whose early and late evidence values $E_{t}$ and $L_{t}$ fell within a certain distance to (E,L), that is $d_{t}=dist((E,L)(E_{t},L_{t}))<\u00a02$. We then computed the proportion of rightward choices for the selected trials, with a weight for each trial depending on the distance to the pair value $w_{t}=N((E_{t},L_{t});(E,L),0.1^{2} I)$. Because the space (E,L) was not sampled uniformly during the experiment, we represent the density of trials by brightness. For each subject, we obtained integration maps both from subject data and from model simulations. For each model, we computed the Pearson correlation between the maps obtained from the corresponding simulation and from the subject data. We tested the significance of correlation measures between models by using a bootstrapping procedure: we calculated the correlation measure r from 100 bootstraps for each model and participant, and then performed an unpaired t-test between bootstrapped r.\n\nNext, we analyzed the conditional psychometric curves, that is the psychometric curves for the early evidence conditioned on the value of late evidence, which correspond to vertical cuts in the integration map. To do so, we first binned late evidence $L_{t}$ by bins of width 0.5. Conditional psychometric curve represents the probability of rightward choices as a function of early evidence $E_{t}$, separately for each late evidence bin. For each late evidence bin, we also estimated the corresponding bias $\\beta$, left lapse $\\pi_{L}$ and right lapse $\\pi_{R}$ by fitting the following function on the corresponding subset of trials:\n\n$$\np(r_{t})=\\pi_{R}+(1\u2212\\pi_{R}\u2212\\pi_{L})\\sigma(\\betaE_{t})\n$$\n\n### Analysis of LIP neuron activity\n\nWe analyzed the activity of 82 LIP neurons recorded over 43 sessions of the motion discrimination tasks (Yates et al., 2017). We applied the following procedure to extract the integration map for LIP neurons. For each neuron n, we computed the spike count $s_{t}^{(n)}$ in a window of 500 ms width following each stimulus offset, which is where LIP neurons were found to have maximal selectivity to motion evidence from the entire pulse sequence (Yates et al., 2017). We then applied a Poisson GLM $E(s_{t}^{(n)}) = exp(w_{0}^{(n)}+\u03a3_{i}w_{i}^{(n)}S_{ti})$ for each neuron n to extract the impact of each sample i on the individual neural spike count $w_{i}^{(n)}$ . For each trial t, we used these weights to compute the neuron-weighted early and late evidence defined by and $E_{t}^{(n)}=\u03a3_{1\\leqi\\leq3}w_{i}^{(n)}S_{ti}$ and $L_{t}^{(n)}=\u03a3_{4\\leqi\\leq7}w_{i}^{(n)}S_{ti}$ . Note that this weighting converts the evidence onto the space defined by the preferred direction of the neuron, such that positive evidence signals evidence toward the preferred direction and negative evidence signals evidence toward the anti-preferred direction. We then merged the vectors for normalized spike counts $s-_{t}^{(n)}=s_{t}^{(n)}/exp(w_{0}^{(n)})$, early evidence $E_{t}^{(n)}$ and late evidence $L_{t}^{(n)}$ across all neurons. The normalized spike counts were binned by values of early and late evidence (bin width: 0.02), and the average over each bin was computed after convolving with a two-dimensional Gaussian kernel of width 0.1. The neural integration map represents the average normalized activity per bin.\n\nSimulations of spiking data for the integration and non-integration models were proceeded as follows. First, the neural integration model corresponds to linear summing with neuron-specific weights which are then passed through an exponential nonlinearity; the spike counts for each trial are generated using a Poisson distribution whose rate is equal to the nonlinear output (Figure 4\u2014figure supplement 3a, top). This corresponds exactly to the generative process of the Poisson GLM described above. For the extrema-detection model (Figure 4\u2014figure supplement 3a, middle), we hypothesized that LIP activity would only be driven by the sample that reaches the threshold (and dictates the animal response). To this end, we first simulated the behavioral extrema-detection model for all trials, using parameters $(\\theta,\\sigma,\\pi_{L},\\pi_{R})$ fitted from the corresponding animal, to identify which sample i reaches the subject-specific threshold. We then assumed that the spiking activity of the neuron would follow the stimulus value at sample i $S_{ti}$ (signed by the preferred direction of the neuron $p^{(n)}$ through):\n\n$$\nE_{ED}(s_{t}^{(n)})\u00a0=exp\u2061(w_{0}^{(n)}+p^{(n)}S_{ti}\u03a3_{j}w_{j}^{(n)}/2)\n$$\n\nAgain the spike count were generated from a Poisson distribution with rate $E_{ED}(s_{t}^{(n)})$.\n\nFinally, for the snapshot model (Figure 4\u2014figure supplement 3a, bottom), we assumed that the neuron activity would merely reflect the sensory value of the only sample it would attend. We assumed that the probability mass function to attend each of the seven samples would be neuron specific, so we used the normalized weights of the Poisson GLM for that specific neuron as defining such probability (weights were signed by the neuron preferred direction so that the vast majority of weights were positive; negative weights were ignored). For each trial, we thus randomly sampled the attended sample i using this probability mass function and then simulated the spike count $s_{t}^{(n)}$ from a Poisson distribution with rate\n\n$$\nE_{Snapshot}(s_{t}^{(n)})\u00a0=exp\u2061(w_{0}^{(n)}+p^{(n)}S_{ti}\u03a3_{j}w_{j}^{(n)})\n$$\n\nWe simulated spiking activity for each neuron and for each integration and non-integration model, and then used simulated data to compute neural integration maps exactly as described above for the actual LIP neuron activity.\n",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "7942fd24-1337-4bcf-83b1-800000518a95",
+      "submission_id": "68e10f5f-ccbf-4177-aa4a-bb05b0d5f72f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emilio Salinas, https://ror.org/0207ad724 Wake Forest School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84045.sa0](https://doi.org/10.7554/eLife.84045.sa0)\n\nThis manuscript tests an important assumption about how sensory information is processed and used to guide motor choices. The widely held assumption is that sensory-motor circuits are capable of integrating evidence, but the validity and generality of this 'principle' have been recently questioned by studies suggesting that other computational operations may lead to similar psychophysical results, mimicking integration without actually performing it. This study makes a compelling case that the integration assumption was likely correct all along and that the model mimicry can be easily disambiguated by using appropriate sensory stimuli and task designs that permit rigorous analyses.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Emilio Salinas, https://ror.org/0207ad724 Wake Forest School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84045.sa1](https://doi.org/10.7554/eLife.84045.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Temporal integration is a robust feature of perceptual decisions\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Emilio Salinas as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Michael Frank as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Reviewer 2 pointed out that the model used by the authors is one of a broader family of possible models. Consideration of this broader family, at least in the form of some discussion, would strengthen the results, or would at least situate them more clearly in the theoretical landscape. See the full recommendation of Reviewer 2 below.\n\nReviewer #2 (Recommendations for the authors):\n\nI have one main suggestion. Otherwise, I think this is a great study.\n\nA very general family of models of integration of a variable \"x\" in response to a noisy stimulus \"s\" would be:\n\ntau. dx/dt = s(t). F(x,t) + G(x,t) where G(x,t) would represent any dynamics in the absence of stimulus and F(x,t) would weight evidence according to time and current level of integrated evidence. It is unclear to this reader if the results have placed any restrictions on the potential forms of G(x,t) \u2013 the suggestion is that it should be zero, but this has not been tested I think \u2013 nor on whether the function \"F()\" which they show depends on time, \"t\" could also depend on the level of integrated evidence, \"x\". Since the model only includes an F(t) but then contrasts with very different models, there is an implicit suggestion or assumption that F(x,t) = F(t) and G(x,t) = 0, but this assumption is not tested. It would be nice to see an explicit test or a clear statement on what limits or lack thereof must be present in this integration-like process. For example, a comparison with the urgency-gating model of Cisek (J Neurosci 2009) would be valuable, along with a discussion of whether the authors expect different results in free response paradigms.\n\nSupp Figure 2: This needs a bit more explaining. Legend in A is different from the caption. In B, with \u0394-AIC, shouldn't the AIC be based on the likelihood of the data-given model? So why is there a black curve for \"data\"? In fact, how are their 3 curves at all as a \u0394-AIC is a difference between two values? Confusing. Perhaps this is just \"AIC\" and the black curve is the integration model, not the experimental data?\n",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aa7b226b-3cd0-400c-84a2-6bf377d9f726",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C1",
+      "claim": "Making informed decisions in noisy environments requires integrating sensory information over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Making informed decisions in noisy environments requires integrating sensory information over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about decision-making that draws from established scientific understanding of perceptual processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "f5b2d1c6-29d2-4a89-ac08-9ce9cb9d2c0b",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C2",
+      "claim": "Recent work has suggested that it may be difficult to determine whether an animal's decision-making strategy relies on evidence integration or not.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent work has suggested that it may be difficult to determine whether an animal's decision-making strategy relies on evidence integration or not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references recent work without specific citations in this sentence, suggesting it draws from the broader literature context.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "55176359-ebc2-4593-8923-92b1da682f3e",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C3",
+      "claim": "Strategies based on extrema-detection or random snapshots of the evidence stream may be difficult or even impossible to distinguish from classic evidence integration.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, strategies based on extrema-detection or random snapshots of the evidence stream may be difficult or even impossible to distinguish from classic evidence integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical considerations from recent literature about distinguishing decision-making strategies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "27bbdfef-243d-4e66-adc8-f02c1b287beb",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C4",
+      "claim": "Non-integration strategies might be surprisingly common in experiments that aimed to study decisions based on integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, such non-integration strategies might be surprisingly common in experiments that aimed to study decisions based on integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the difficulty of distinguishing strategies mentioned in recent work.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "a5b64268-9e80-43eb-93d4-62349af9a4da",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C5",
+      "claim": "The authors developed a new model-based approach for comparing temporal integration against alternative 'non-integration' strategies for tasks in which the sensory signal is composed of discrete stimulus samples.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether temporal integration is central to perceptual decision-making, we developed a new model-based approach for comparing temporal integration against alternative 'non-integration' strategies for tasks in which the sensory signal is composed of discrete stimulus samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "72281480-9aea-4250-a1e4-10347585c6e8",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C6",
+      "claim": "The authors applied their methods to behavioral data from monkeys, rats, and humans performing a variety of sensory decision-making tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied these methods to behavioral data from monkeys, rats, and humans performing a variety of sensory decision-making tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "ccc8fa77-1373-4fa9-b5eb-0419d2d53789",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C7",
+      "claim": "In all species and tasks studied, the integration model better accounted for standard behavioral statistics such as psychometric curves and psychophysical kernels than non-integration models.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in all observers across studies, the integration model better accounted for standard behavioral statistics such as psychometric curves and psychophysical kernels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from model comparisons performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "c8a12af0-50b0-47ad-a11d-34a98ebcce09",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C8",
+      "claim": "Sensory samples with large evidence do not contribute disproportionately to subject choices, as predicted by an extrema-detection strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we found that sensory samples with large evidence do not contribute disproportionately to subject choices, as predicted by an extrema-detection strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of behavioral data that contradicts the extrema-detection model prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "a480b0ba-524c-4979-9e6c-ac518cd6af65",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C9",
+      "claim": "The sum of both early and late evidence contributed to observer decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we provide a direct confirmation of temporal integration by showing that the sum of both early and late evidence contributed to observer decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the integration map analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "541e6d67-ca3d-48f3-ad65-95dbdde24ccc",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C10",
+      "claim": "Temporal integration is an ubiquitous feature in mammalian perceptual decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results provide experimental evidence suggesting that temporal integration is an ubiquitous feature in mammalian perceptual decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the convergent evidence across multiple species and tasks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "251ba0ed-b89d-4c5d-b6be-27353aa1cbd8",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C11",
+      "claim": "Temporal integration corresponds to summing over time the evidence provided by each new sensory stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal integration corresponds to summing over time the evidence provided by each new sensory stimulus, and optimizes perceptual judgments in face of noise (Bogacz et al., 2006; Gold and Shadlen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "f26cb9fe-16a2-4cf8-988c-88999820675d",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C12",
+      "claim": "Temporal integration optimizes perceptual judgments in face of noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal integration corresponds to summing over time the evidence provided by each new sensory stimulus, and optimizes perceptual judgments in face of noise (Bogacz et al., 2006; Gold and Shadlen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical work on optimal decision-making.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "e1ae6b48-5eaf-4fe5-aa93-710efc45b763",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C13",
+      "claim": "Temporal integration has often been taken for granted rather than explicitly tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many behavioral and neural results are consistent with this integration framework, temporal integration is a feature that has often been taken for granted rather than explicitly tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the state of the field based on review of the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "5284c467-361d-4857-aa0b-13071d9e1b94",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C14",
+      "claim": "The claim that standard perceptual decision-making tasks rely on temporal integration has been challenged by theoretical results showing that non-integration strategies can produce behavior that carries superficial signatures of temporal integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the claim that standard perceptual decision-making tasks rely on (or even frequently elicit) temporal integration has been challenged by theoretical results showing that non-integration strategies can produce behavior that carries superficial signatures of temporal integration (Stine et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a specific citation to Stine et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "2a3804dd-3b9a-4406-a572-977c758d1698",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C15",
+      "claim": "Non-integration strategies can produce signatures including the relationship between stimulus difficulty, stimulus duration, and behavioral accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "These signatures include the relationship between stimulus difficulty, stimulus duration, and behavioral accuracy, the precise temporal weighting of sensory information on the decisions, and the patterns of reaction times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes specific behavioral signatures that can be mimicked by non-integration strategies, based on theoretical work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "088a37e1-dc1e-42f0-91e6-610ed6c3dbe4",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C16",
+      "claim": "Two monkeys performed a fixed-duration motion integration task with 72,137 and 33,416 trials for monkey N and monkey P, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The animals performed 72,137 and 33,416 trials for monkey N and monkey P, respectively, allowing for in-depth dissection of their response patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "d53dd9e1-8fc0-4cdf-8890-3f0df274f530",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C17",
+      "claim": "Psychophysical kernels were non-monotonic and differed in shape between the two monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychophysical kernels were non-monotonic and differed in shape between the two animals, probably reflecting the complex contributions of various dynamics and suboptimalities along the sensory and decision pathways (Yates et al., 2017; Levi and Huk, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis with interpretation supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "d2500923-ab5d-4aa3-a523-aa84e9be0245",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C18",
+      "claim": "The temporal integration model perfectly matched the temporal profile of the psychophysical kernel.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal profile of the kernel was perfectly matched by the integration model, almost by design, as we gave full flexibility to the model to adjust the sample weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from model fitting with explanation of why the fit was good.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "f96e6a63-728a-48f7-a973-d7941200e50d",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C19",
+      "claim": "The snapshot model could not match the experimental psychophysical kernel as accurately as the integration model.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the snapshot model could not match the experimental psychophysical kernel as accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing model fits to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "eef1006a-8b3b-4113-87a7-d70d9cfdc97a",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C20",
+      "claim": "The snapshot model consistently underestimated the magnitude of weighting in monkey P.",
+      "claim_type": "EXPLICIT",
+      "source": "It consistently underestimated the magnitude of weighting in monkey P (Figure 2B, bottom row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the data analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "693e6c78-95bf-4097-b62f-21f8268aaf00",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C21",
+      "claim": "The extrema-detection model inevitably generates a primacy effect in the psychophysical kernels.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, since the decision was based on the first sample in the sequence reaching a certain criterion, this inevitably generates a primacy effect in the psychophysical kernels \u2013 or at best a flat weighting (Stine et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the model structure, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "4e17094c-ab18-4203-bd1a-3a065470f391",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C22",
+      "claim": "The extrema-detection model failed to capture the non-monotonic psychophysical kernels from animal data.",
+      "claim_type": "EXPLICIT",
+      "source": "The model thus failed to capture the non-monotonic psychophysical kernels from animal data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing model predictions to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "c38d24d3-f972-4d60-b14b-d7cee991c360",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C23",
+      "claim": "For both animals, the accuracy and psychometric curves were accurately captured by the integration model.",
+      "claim_type": "EXPLICIT",
+      "source": "For both animals, the accuracy and psychometric curves were accurately captured by the integration model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from model fitting to behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "d5dc225c-9f24-4a63-b19d-e18a386415a0",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C24",
+      "claim": "Both non-integration models could reproduce the shape of the psychometric curve in monkey N.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with Stine et al., we also found that both non-integration models could reproduce the shape of the psychometric curve in monkey N, although the quantitative fit was always better for the integration than non-integration models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from model comparison, consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "32ba68f9-7481-4876-bcc8-5c37daddd4d4",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C25",
+      "claim": "Both non-integration models failed to capture the psychometric curve for monkey P.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast both non-integration models failed to capture the psychometric curve for monkey P (Figure 2B, bottom row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model comparison shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "942fc7f3-a876-42d7-86d7-14c2446933c5",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C26",
+      "claim": "The overall accuracy of the non-integration models systematically deviated from animal data for both animals.",
+      "claim_type": "EXPLICIT",
+      "source": "More systematically, the overall accuracy, which is an aggregate measure of the psychometric curve, clearly differed between models, as the accuracy of the non-integration models systematically deviated from animal data for both animals (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing model predictions to data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "c1079cbc-824a-42a8-8943-d78be95306ea",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C27",
+      "claim": "For the snapshot model in monkey P, the model could not reach the performance of the animal because it was limited to using one stimulus sample.",
+      "claim_type": "EXPLICIT",
+      "source": "For the snapshot model in monkey P, this discrepancy was explained because the model, limited to using one stimulus sample, could not reach the performance of the animal (compare the maximum accuracy of the model indicated by the blue mark with the accuracy of the animal).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of model limitations based on its structure and observed performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "5622d076-18ff-4349-a465-aea0a46e96a3",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C28",
+      "claim": "AIC favored the integration model over the two non-integration models by a very large margin in both monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "In both monkeys, AIC favored the integration model over the two non-integration models by a very large margin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from formal model comparison using AIC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "ae299625-ebad-40cd-ab40-1fe9685dd8dd",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C29",
+      "claim": "The integration model was preferred over all variants of both non-integration models for both monkeys using the AIC metric.",
+      "claim_type": "EXPLICIT",
+      "source": "We found using the AIC metric that the integration model was preferred over all variants of both non-integration models, for both monkeys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comprehensive model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "a05ee983-a84a-4212-a308-e6aae1a690ca",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C30",
+      "claim": "Model variants of non-integration models could not replicate the psychophysical kernels as well as the integration model did.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these model variants could not replicate the psychophysical kernels as well as the integration model did (Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing model predictions to data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "b3dc4adc-c891-4e4c-b3eb-343381e4bfb0",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C31",
+      "claim": "Monkey choices in disagree trials were more often aligned with the integrated evidence than with the largest evidence sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In both monkeys, animal choices were more often than not aligned with the integrated evidence (Figure 3A, black bars), as predicted by the integration model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the disagree trials analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "03a1d4c7-87ba-4bf6-8be5-e1ac74097090",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C32",
+      "claim": "The disagree trials analysis rules out that monkey decisions rely on a memoryless strategy of simply detecting large evidence samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This rules out that monkey decisions rely on a memoryless strategy of simply detecting large evidence samples, discarding all information provided by lower evidence samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the disagree trials analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "b07034d5-eb7e-443e-8aa3-8f0b370003d2",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C33",
+      "claim": "The integration map isolines were almost straight diagonal lines for both monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "The isolines were almost straight diagonal lines and showed no consistent curvature toward the horizontal and vertical axes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the integration map analysis of monkey data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "3cc9e1ae-b173-4404-8900-674d70f79b93",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C34",
+      "claim": "Straight diagonal isolines in integration maps provide direct evidence that monkey responses predominantly depend on the sum of early and late evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides direct evidence that monkey responses predominantly depend on the sum of early and late evidence \u2013 a clear signature of temporal integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the integration map findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "5488414c-566d-47b7-9382-4e2a85b1f8ee",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C35",
+      "claim": "Both monkeys showed a very strong linear dependence between late evidence and the horizontal shift \u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Both monkeys showed a very strong linear dependence between late evidence and the horizontal shift \u03b2 (Figure 4D, right panel; see also Figure 4\u2014figure supplement 1), further supporting that late evidence is summed to early evidence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the conditional psychometric curve analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "e7d51258-1f77-466d-a9e6-6f070faed5d3",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C36",
+      "claim": "The lapse parameters showed no consistent relationship with late evidence Lt in monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the lapse parameters showed no consistent relationship with late evidence Lt (Figure 4E, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the conditional psychometric curve analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "44031366-35fd-4bfc-b3d2-078ab4e07468",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C37",
+      "claim": "The model-data correlation was larger in the integration model than in the non-integration strategies for both monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "The model-data correlation was larger in the integration model than in the non-integration strategies for both monkeys (Figure 4E; unpaired t-test on bootstrapped r values: p < 0.001 for each animal and comparison against extrema-detection and against snapshot model).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from comparing integration maps between models and data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "c7e917bb-ece0-4c58-9aca-59d88558395d",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C38",
+      "claim": "Nine human subjects performed a variable-duration orientation discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "We first analyzed the behavioral responses from nine human subjects performing a variable-duration orientation discrimination task (Cheadle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data analyzed, with citation to the original study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "04e3e4c9-86e9-40f6-8bae-8a29e2ba0c30",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C39",
+      "claim": "The integration model nicely captured psychometric curves, participant accuracy and psychophysical kernels in human subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "As for monkeys, we found that the integration model nicely captured psychometric curves, participant accuracy and psychophysical kernels (Figure 5A\u2013C, red curves and symbols).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model fitting to human behavioral data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "03b45cbc-d682-4988-b93a-63b8dad39a18",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C40",
+      "claim": "Both non-integration models failed to capture behavioral patterns in human subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, both non-integration models failed to capture these patterns (Figure 5A\u2013C, blue and green curves and symbols).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model comparison shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "fa3ac3d6-b8f7-421f-8326-f3095eaf8979",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C41",
+      "claim": "Eight out of nine human subjects outperformed the maximum performance for the snapshot model.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy from both models consistently underestimated participant performance: eight and six out of nine subjects outperformed the maximum performance for the snapshot and extrema-detection models, respectively (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing subject performance to model boundary performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "91779206-800b-4100-9bbd-4cf74c54a4e0",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C42",
+      "claim": "Six out of nine human subjects outperformed the maximum performance for the extrema-detection model.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy from both models consistently underestimated participant performance: eight and six out of nine subjects outperformed the maximum performance for the snapshot and extrema-detection models, respectively (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing subject performance to model boundary performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "577e658e-7c2f-423c-a018-fecbfe37c7cd",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C43",
+      "claim": "Human participants achieved high accuracy by integrating sensory evidence over successive samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that human participants achieved such accuracy by integrating sensory evidence over successive samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the finding that subjects outperformed non-integration models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "42f413ed-a3c9-45fe-9403-e6fbe0018691",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C44",
+      "claim": "Human subjects overall weighted more later samples in the orientation discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, subjects overall weighted more later samples (Figure 5C), which is inconsistent with the extrema-detection mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from psychophysical kernel analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "5c96e8fa-1750-4be3-9e99-df9ce75de98a",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C45",
+      "claim": "In each human participant, the integration model provided a far better account of subject responses than either of the non-integration models.",
+      "claim_type": "EXPLICIT",
+      "source": "A formal model comparison confirmed that in each participant, the integration model provided a far better account of subject responses than either of the non-integration models did (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from formal model comparison shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "df8d55d5-d7e6-4e08-a976-8cdb52136b4d",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C46",
+      "claim": "Human choices in disagree trials consistently aligned with the total stimulus evidence and not simply with the strongest evidence sample.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the integration model, but not by the extrema-detection model, human choices consistently aligned with the total stimulus evidence and not simply with the strongest evidence sample (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the disagree trials analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "86810156-0990-4812-b489-ab9f04c13503",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C47",
+      "claim": "The average integration map for human participants displayed nearly linear diagonal isolines.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the average integration map for early and late evidence within the stimulus sequence displayed nearly linear diagonal isolines, showing that both were integrated into the response (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the integration map analysis shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "270d4576-2dbe-4bce-a65c-c390db1859ef",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C48",
+      "claim": "Integration maps from human participants correlated better with maps predicted by the integration model than with maps predicted by either of the alternative non-integration strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Integration maps from participants correlated better with maps predicted by the integration model than with maps predicted by either of the alternative non-integration strategies (Figure 5G; two-tailed t-test on bootstrapped r values: p < 0.001 for six out of nine participants in the integration vs. snapshot comparison; in all nine participants for the integration vs. extrema-detection comparison).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from comparing integration maps shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "86046e22-fd78-4638-9a7b-2a080a4fc2fb",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C49",
+      "claim": "Human decisions in an orientation discrimination task rely on temporal integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these analyses provide converging evidence that human decisions in an orientation discrimination task rely on temporal integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple analyses of human behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "4696a0aa-5ea5-4986-9290-6ef816ff62f5",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C50",
+      "claim": "Five rats performed a fixed-duration auditory task where they had to discriminate the side with larger acoustic intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we analyzed data from five rats performing a fixed-duration auditory task where the animals had to discriminate the side with larger acoustic intensity (Pardo-Vazquez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data analyzed, with citation to the original study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "f2e2d0af-e74a-471b-bd79-f5e1bde07dc3",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C51",
+      "claim": "The integration model provided a much better account of rat choices than non-integration strategies based on psychometric curves, predicted accuracy, psychophysical kernel, and AIC.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration model provided a much better account of rat choices than non-integration strategies, based on psychometric curves (Figure 6A), predicted accuracy (Figure 6B), psychophysical kernel (Figure 6C), and model comparison using AIC (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comprehensive model comparison shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "ad7feab9-2b39-48b0-abea-d601e9c25806",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C52",
+      "claim": "Rats tended to select the side corresponding to the total stimulus evidence and not the largest sample evidence in disagree trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to humans and monkeys, rats tended to select the side corresponding to the total stimulus evidence and not the largest sample evidence in 'disagree' trials, as predicted by the integration model (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the disagree trials analysis shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "e40788c5-86a9-4e81-8c02-f3c890cdcbb9",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C53",
+      "claim": "The integration map for rats was largely consistent with an integration strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the integration map was largely consistent with an integration strategy (Figure 6F), and correlated more strongly with simulated maps from the integration model (unpaired t-test on bootstrapped r values: p < 0.001 for each animal and comparison against extrema-detection and against snapshot model).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the integration map analysis shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "ad4165e6-035a-4681-960e-bd5837b5cb34",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C54",
+      "claim": "The extrema-detection model cannot explain non-monotonic psychophysical kernels because the decision is based on the first sample to reach a certain fixed criterion, which always produces a primacy effect.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the extrema-detection model cannot explain the non-monotonic psychophysical kernels of monkeys or the increasing psychophysical kernels in humans. This is because the decision in that mode is based on the first sample to reach a certain fixed criterion, so it will always produce a primacy effect, that is, a decreasing psychophysical kernel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical explanation of a fundamental limitation of the extrema-detection model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "cff94dea-6b00-4d1a-a536-08b1900d0ee1",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C55",
+      "claim": "A strong limitation of non-integration models is that accuracy is limited by the fact that decisions depend on a single sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Another strong limitation of non-integration models (both the extrema-detection and the snapshot model) is that accuracy is limited by the fact that decisions depend on a single sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of a fundamental limitation of non-integration models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "d9a507ac-8f28-4eab-9d61-8d365fdab28b",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C56",
+      "claim": "The boundary performance of non-integration models was lower than subject accuracy for most human participants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that that boundary performance (i.e., the maximum performance that a model can reach) was actually lower than subject accuracy for most human participants, de facto ruling out these non-integration strategies for these participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing model boundary performance to subject performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "2e2ae315-c26c-4a8e-af70-f20445d50bec",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C57",
+      "claim": "Human subjects had to make judgments about image sequences spanning up to tens of seconds each in a contrast discrimination DSS task.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent to what was observed in a contrast discrimination DSS task where human subjects had to make judgments about image sequences spanning up to tens of seconds each (Waskom and Kiani, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to findings from another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "c2880983-13f2-46c0-b174-c99e3b7585db",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C58",
+      "claim": "Non-integration strategies matched the accuracy of human subjects performing the classical random-dot-motion task in Stine et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "It clearly contrasts however with results from Stine et al., 2020 where the non-integration strategies matched the accuracy of human subjects performing the classical random-dot-motion task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to findings from another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "7cc1af9a-1f26-406e-8d12-3d92b045cf52",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C59",
+      "claim": "In DSS tasks, the unpredictability of human responses essentially stems from internal noise at the level of sensory processing and temporal integration.",
+      "claim_type": "EXPLICIT",
+      "source": "In DSS tasks, because the sensory evidence provided by the stimulus at each moment is controlled by the experimenter, the unpredictability of human responses essentially stems from internal noise at the level of sensory processing and temporal integration (Waskom and Kiani, 2018; Drugowitsch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of noise sources in DSS tasks, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "3974bfcb-3346-481b-b65c-7ed180d21924",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C60",
+      "claim": "The random dot motion task typically elicits more variable responses due to the presence of stimulus noise.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the random dot motion task (Kiani et al., 2008), which is a non-DSS task because the experimenter does not typically specify differing amounts of motion in each time epoch within a single trial, typically elicits more variable responses due to the presence of stimulus noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of noise sources in non-DSS tasks, with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "a6cdb3f2-8cb0-4ac4-80da-3ff85e146508",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C61",
+      "claim": "DSS paradigms discriminate more precisely between different models of perceptual decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "This illustrates the benefits of using experimental designs where variability in stimulus information can be fully controlled and parametrized by the experimenter, as these paradigms discriminate more precisely between different models of perceptual decisions (see Cisek et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the advantages of DSS paradigms, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "177d5feb-97a2-4480-8a90-a6f6b9ca0eac",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C62",
+      "claim": "Integration maps can be used to probe integration of evidence not only at temporal level but also between different sources of evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this innovative analysis technique could be used to probe integration of evidence not only at temporal level but also between different sources of evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of the integration map method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "36147256-716f-426f-919b-c48df9eeb78d",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C63",
+      "claim": "There has been an intense debate about whether sensory information from different spatial locations or different modalities are integrated prior to reaching a decision.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there has been an intense debate about whether sensory information from different spatial locations or different modalities are integrated prior to reaching a decision, or whether decisions are taken separately for each source before being merged, which can be viewed as extensions to the snapshot model (Pannunzi et al., 2015; Otto and Mamassian, 2012; Lorteije et al., 2015; Hyafil and Moreno-Bote, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about an ongoing debate in the field, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "3b7bef90-a2fd-4c82-846c-ca939ad45387",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C64",
+      "claim": "The neural integration map for LIP neurons clearly showed rectilinear isolines, as predicted by an integration model of neural spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural integration map clearly showed rectilinear isolines, as predicted by an integration model of neural spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the neural integration map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "a5fd5571-7296-423d-a996-e8569539c5cf",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C65",
+      "claim": "Neural implementations of the snapshot and extrema-detection models predicted strongly curved isolines in the neural integration map.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, neural implementations of the snapshot and extrema-detection predicted strongly curved isolines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from simulating neural models of non-integration strategies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "76d92d08-9dc5-4685-a139-7ec6b481f8a5",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C66",
+      "claim": "The activity of LIP neurons correlates with the evidence accumulated over the presentation of the stimulus in favor of either possible choices.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of LIP neurons correlates with the evidence accumulated over the presentation of the stimulus in favor of either possible choices (Gold and Shadlen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about LIP neuron properties supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "e4e8de62-3e8d-4f29-a444-1ca8753991d0",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C67",
+      "claim": "The activity of individual LIP neurons reflects the temporal integration of sensory information that drives animal behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that the activity of individual LIP neurons indeed reflects the temporal integration of sensory information that drives animal behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the neural integration map analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "46c1a048-0ef7-4183-981f-7d3894fb34f6",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C68",
+      "claim": "Stine et al. proposed a method for distinguishing integration from non-integration strategies based on two experimental conditions: experiments where stimulus duration is controlled by the experimenter and experiments where the stimulus is controlled by the subject.",
+      "claim_type": "EXPLICIT",
+      "source": "Stine et al. proposed a method for distinguishing integration from non-integration strategies but the method is based on two experimental conditions: experiments where stimulus duration is controlled by the experimenter and experiments where the stimulus is controlled by the subject (i.e., plays until the subject responds, 'reaction time paradigms').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a method from another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "08db2335-a600-4e25-a9a1-d6c4d1cfc49d",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C69",
+      "claim": "The current study puts forth a method to differentiate integration from non-integration strategies that is based on only one experimental condition (the variable-duration paradigm).",
+      "claim_type": "EXPLICIT",
+      "source": "Our study puts forth a method to differentiate integration from non-integration strategies that is based on only one experimental condition (i.e., the variable-duration paradigm), and may therefore be applied to existing datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological contribution of the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "86a9992b-4dfc-4474-bf83-d56727ed1c8d",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C70",
+      "claim": "Different models make different predictions regarding how the total sample evidence presented before response time should vary with response time in free reaction time tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have shown how integration and non-integration strategies can be disentangled in free reaction time task paradigms. Specifically, different models make different predictions regarding how the total sample evidence presented before response time should vary with response time (Glickman and Usher, 2019; Zuo and Diamond, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of methods from other studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "fbf70263-6571-49e8-90d5-d85a61e9a227",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C71",
+      "claim": "Glickman and Usher used predictions about total sample evidence to rule out non-integration strategies in a counting task in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Glickman and Usher used these predictions to rule out non-integration strategies in a counting task in humans, and Zuo and Diamond, 2019 found evidence for evidence integration to bound when rats discriminate textures using whisker touches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to findings from another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "6d352531-ec51-48ea-b9f6-5e79567ab8d4",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C72",
+      "claim": "Zuo and Diamond, 2019 found evidence for evidence integration to bound when rats discriminate textures using whisker touches.",
+      "claim_type": "EXPLICIT",
+      "source": "Glickman and Usher used these predictions to rule out non-integration strategies in a counting task in humans, and Zuo and Diamond, 2019 found evidence for evidence integration to bound when rats discriminate textures using whisker touches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to findings from another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "2ff034fb-7f6f-490d-9a68-cabdeac62c9b",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C73",
+      "claim": "Under strong urgency constraints, it has been proposed that decisions depend on very limited temporal integration of the stimulus by low-pass filtering of stimulus evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Under strong urgency constraints, it has been proposed that decisions depend on very limited temporal integration of the stimulus by low-pass filtering of stimulus evidence (Cisek et al., 2009; Thura et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to a proposal from other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "9ac8181d-f97d-4f46-9b12-df1dc465e238",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C74",
+      "claim": "The suggestion that decisions depend on very limited temporal integration under urgency cannot explain the fact that evidence presented early in the trial influences decisions taken later on.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this suggestion cannot explain the fact that evidence presented early in the trial influences decisions taken later on Winkel et al., 2014; Thura et al., 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of a proposal, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "a65b8c29-fcfb-45b2-b470-4f4d1816ae7c",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C75",
+      "claim": "The absence of integration seems a more viable strategy when the duration of the stimulus is controlled externally and the benefits of integrating in terms of accuracy might not compensate for its cognitive cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the absence of integration seems a more viable strategy when the duration of the stimulus is controlled externally and the benefits of integrating in terms of accuracy might not compensate for its cognitive cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about when non-integration strategies might be used.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "9d2975b8-6816-4325-ad21-f808c90c0bba",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C76",
+      "claim": "Fast or very fast (under 250 ms) perceptual decisions are very common.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, fast or very fast (under 250 ms) perceptual decisions are very common (Uchida et al., 2006; Zariwala et al., 2013; Stanford and Salinas, 2021; Pardo-Vazquez et al., 2019; Hermoso-Mendizabal et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the prevalence of fast decisions, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "844be773-9812-48a5-a30b-33107832f28e",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C77",
+      "claim": "Rapid termination of the decision process has been attributed either to urgency signals modulating the integration of stimulus evidence or to action initiation mechanisms that time the response after a specific time following stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Such rapid termination of the decision process have been attributed either to urgency signals modulating the integration of stimulus evidence (Drugowitsch et al., 2012; Stanford and Salinas, 2021) or to action initiation mechanisms that time the response after a specific time (e.g., one or two samples) following stimulus onset (Hern\u00e1ndez-Navarro et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about explanations for rapid decisions, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "9a904366-ff33-4648-bc3f-5d7367d7aa79",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C78",
+      "claim": "Even in paradigms where the stimulus duration is controlled by the experimenter, mammals often integrate sensory evidence over the entire stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that even in paradigms where the stimulus duration is controlled by the experimenter, mammals often integrate sensory evidence over the entire stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings across species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "4bfe2a6a-5244-4608-bf9c-3e81c338afca",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C79",
+      "claim": "The study found strong evidence for temporal integration in perceptual tasks across species (monkeys, humans, and rats) and perceptual domain (visual motion, visual orientation, and auditory discrimination).",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have found strong evidence for temporal integration in perceptual tasks across species (monkeys, humans, and rats) and perceptual domain (visual motion, visual orientation, and auditory discrimination).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the study's main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "62483c62-3499-4be0-aeaf-5db8ebea3176",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C80",
+      "claim": "The timescale of integration can be adapted to the statistics of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the timescale of integration can be adapted to the statistics of the environment (Ossmy et al., 2013; Glaze et al., 2015; Kilpatrick et al., 2019), the principle that stimulus evidence is integrated over time appears to be a hallmark of perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the flexibility of integration, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "fdd51f83-7b09-4cc5-961e-df73e386a13b",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C81",
+      "claim": "The principle that stimulus evidence is integrated over time appears to be a hallmark of perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the timescale of integration can be adapted to the statistics of the environment (Ossmy et al., 2013; Glaze et al., 2015; Kilpatrick et al., 2019), the principle that stimulus evidence is integrated over time appears to be a hallmark of perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings and broader literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "3c104224-39e4-4f06-9521-05d7e9736c6f",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "claim_id": "C82",
+      "claim": "Temporal integration is an ubiquitous feature in mammalian perceptual decision-making due to hard-wired neural integrating circuits, such as recurrent stabilizing connectivity in sensory and perceptual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that temporal integration is a ubiquitous feature of perceptual decisions due to hard-wired neural integrating circuits, such as recurrent stabilizing connectivity in sensory and perceptual areas (Wang, 2008; Wimmer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the neural basis of temporal integration, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "158b65bc-a8e9-4eac-b09c-bef56c15800c",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel model-based approach to distinguish temporal integration from non-integration strategies in discrete-sample stimulus (DSS) paradigms, requiring only variable-duration experimental conditions rather than both fixed and reaction-time paradigms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, and C69 describe the methodological contribution clearly. The approach is applied to data from multiple species (C6) and represents an advance over prior methods (C69) by requiring fewer experimental conditions. The method is well-described and its application is demonstrated throughout the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "2f6ec75d-51cc-447d-b619-b52009879b1b",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Across all species (monkeys, humans, rats) and tasks studied, the temporal integration model provided superior fits to behavioral data compared to non-integration models based on psychometric curves, accuracy, and formal model comparison using AIC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims consistently show that integration models outperform non-integration models across multiple species and behavioral metrics. The evidence includes psychometric curves (C7, C23, C39), AIC comparisons (C28, C29, C45), and comprehensive analyses (C51). Statistical support is provided with specific p-values and effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "74f9a388-3bae-4b28-88de-c1fec9efbd56",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Non-integration models failed to accurately capture psychophysical kernels from behavioral data, with the snapshot model underestimating weighting magnitudes and the extrema-detection model producing primacy effects inconsistent with observed non-monotonic or recency-weighted kernels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 and C30 demonstrate specific failures of non-integration models to match psychophysical kernels. The integration model's flexibility (C18) contrasts with systematic failures of snapshot (C19, C20) and extrema-detection models (C21, C22). Evidence is shown across species (C40, C44) with visual support from figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "b5f80900-6000-46bb-9fa4-363366323a03",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Non-integration models systematically underestimated behavioral accuracy, with most human subjects (8/9 for snapshot, 6/9 for extrema-detection) exceeding the maximum theoretical performance of these models, indicating that subjects must integrate evidence across samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 and C41-C43 provide convergent evidence that non-integration models cannot account for observed accuracy levels. The boundary performance analysis (C56) provides a strong logical constraint: if subjects exceed the theoretical maximum of a model, that model is ruled out. This is particularly compelling for human data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "ebb20402-c3b1-4512-9fb2-bbfffbd1d209",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In 'disagree trials' where the largest evidence sample conflicted with total integrated evidence, subjects across all species (monkeys, humans, rats) chose according to total evidence rather than the largest sample, ruling out extrema-detection strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 for monkeys, C46 for humans, and C52 for rats provide consistent evidence across species. The disagree trial analysis directly tests a key prediction distinguishing integration from extrema-detection. Statistical support includes confidence intervals and the consistency across species strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "488e547a-6efa-4b7b-9e8a-a507bf3f7df2",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Integration maps showing the combined influence of early and late evidence displayed nearly straight diagonal isolines across all species, indicating that decisions depend on the sum of early and late evidence\u2014a direct signature of temporal integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 for monkeys, C47-C48 for humans, and C53 for rats demonstrate consistent integration map patterns. The straight diagonal isolines (C33, C47) provide direct visual evidence for summation. Quantitative support includes linear dependence of bias on late evidence (C35) and superior model-data correlations for integration models (C37, C48, C53) with p < 0.001.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "fdbf89a0-afb9-4505-8e82-af048faeeacc",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Neural integration maps from LIP neurons showed rectilinear isolines consistent with temporal integration, while simulated non-integration models predicted curved isolines, demonstrating that individual LIP neurons reflect temporal integration of sensory information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 provide neural-level evidence supporting behavioral findings. The rectilinear isolines in LIP data (C64) match integration predictions and contrast with non-integration simulations (C65). This extends the integration map analysis from behavior to neural activity, with C66-C67 connecting to established knowledge about LIP function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "027bb923-1bc0-46ed-a6e4-720d9d479de0",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Temporal integration is a ubiquitous feature of mammalian perceptual decision-making, demonstrated across three species (monkeys, humans, rats) and three perceptual domains (visual motion, visual orientation, auditory discrimination).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the main conclusion synthesizing evidence from all analyses. The convergent evidence across species (C79), tasks (C79), and multiple analytical approaches (C10, C49, C78) strongly supports this broad conclusion. The consistency of findings despite differences in experimental paradigms strengthens the claim of ubiquity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "7e145681-47ba-41ca-b1e0-1b7766c5d06a",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The extrema-detection model has fundamental limitations: it cannot explain non-monotonic psychophysical kernels because decisions based on the first sample reaching a threshold always produce primacy effects, and accuracy is limited by dependence on single samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 provide logical explanations for why extrema-detection fails. These are theoretical constraints derived from the model structure itself. C54 explains the primacy effect limitation, while C55 explains the accuracy ceiling. These logical arguments are supported by the empirical failures documented in other results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "2390f01d-e470-4e37-a2c8-8829c2b8e021",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study analyzed large behavioral datasets from two monkeys (72,137 and 33,416 trials), nine human subjects, and five rats performing fixed or variable-duration perceptual discrimination tasks with discrete stimulus samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C38, and C50 describe the experimental datasets. Sample sizes are clearly stated (C16) and are substantial, particularly for monkey data. The description of tasks and subjects is straightforward and verifiable. C17 notes inter-subject variability in psychophysical kernels, which is an honest characterization of the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "83402b4f-2a7e-4b63-b76b-f21e35e17dd3",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Non-integration models could reproduce psychometric curve shapes for monkey N but failed for monkey P, though quantitative fits were always better for integration models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 acknowledge that non-integration models can sometimes match qualitative features (consistent with Stine et al.), while noting quantitative superiority of integration models and complete failure for one subject. This nuanced finding is supported by Figure 2 and demonstrates that model discrimination depends on both qualitative and quantitative metrics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "7d31f683-f0fc-44b5-9f27-4a01b58bdb32",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DSS paradigms, where experimenters control temporal evidence fluctuations, discriminate more precisely between decision-making models than non-DSS tasks like random-dot motion, because internal noise dominates over stimulus noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 discuss methodological advantages of DSS paradigms. The contrast between DSS and non-DSS tasks (C59-C60) is supported by citations. C61's conclusion about discriminative power follows logically from the noise structure differences. This explains why the current study succeeds where Stine et al. found ambiguity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "6d5ab3b9-2b11-43e3-abae-0e21f8de5ba9",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Temporal integration, defined as summing sensory evidence over time, is theoretically optimal for perceptual decisions in noisy environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11, and C12 establish the theoretical foundation. These are well-established principles in the field, supported by citations to Bogacz et al., 2006 and Gold and Shadlen, 2007. This provides the normative framework motivating the empirical investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "d188153b-8890-4cb0-a729-488c07a50278",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Recent theoretical work has challenged the assumption that perceptual tasks rely on temporal integration, showing that non-integration strategies can mimic behavioral signatures of integration, and such strategies might be common in experiments designed to study integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 and C13-C15 establish the motivation for the study by citing recent challenges to integration assumptions, particularly Stine et al., 2020. These claims accurately represent prior work and establish the scientific context. The citations are appropriate and the characterization appears accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "85519a9a-ed9c-406d-9d0f-24f6aca9b24b",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Integration maps could potentially be applied to probe integration between different sources of evidence (spatial locations, modalities), addressing ongoing debates about whether such integration occurs before or after separate decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 is explicitly speculative about future applications. While C63 establishes that such debates exist (with appropriate citations), the actual application of integration maps to these questions is not demonstrated in the current work. This represents a reasonable but untested hypothesis for future research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "f45fcf78-7cec-4c53-b888-cbe83f97599c",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Other methods exist for distinguishing integration from non-integration strategies, including approaches based on reaction time paradigms and analyses of evidence accumulation under urgency constraints, with mixed evidence for integration depending on task conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C74 review alternative methodological approaches from the literature. Each claim is supported by appropriate citations (Stine et al., Glickman and Usher, Zuo and Diamond, Cisek et al., Thura et al.). This contextualizes the current contribution relative to other approaches and acknowledges the complexity of the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "ec415997-0f65-4cf5-b86e-6a0a558ebf4c",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Non-integration strategies may be viable when stimulus duration is externally controlled and integration costs outweigh accuracy benefits, particularly for fast decisions under 250 ms, which can be explained by urgency signals or action initiation mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 is explicitly speculative about when non-integration might occur. While C76 establishes that fast decisions are common (with citations), and C77 describes proposed mechanisms (with citations), the current study does not directly test these scenarios. The speculation is reasonable but represents boundary conditions not examined in the present data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    },
+    {
+      "id": "b5b4e114-10b5-4629-86eb-587d19a960d2",
+      "content_id": "a9f77fa0-3ced-4f0c-8358-b13da502c810",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The timescale of integration can adapt to environmental statistics, but the principle of temporal integration appears to be a hallmark of perception, possibly due to hard-wired neural integrating circuits like recurrent connectivity in sensory areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 about adaptive timescales is supported by citations (Ossmy et al., Glaze et al., Kilpatrick et al.). C82's speculation about neural mechanisms is appropriately qualified and supported by citations (Wang, Wimmer et al.). These claims synthesize the findings with broader theoretical frameworks, though the neural mechanism claim is speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:45:32.901863Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a5b64268-9e80-43eb-93d4-62349af9a4da",
+      "result_id": "158b65bc-a8e9-4eac-b09c-bef56c15800c"
+    },
+    {
+      "claim_id": "72281480-9aea-4250-a1e4-10347585c6e8",
+      "result_id": "158b65bc-a8e9-4eac-b09c-bef56c15800c"
+    },
+    {
+      "claim_id": "08db2335-a600-4e25-a9a1-d6c4d1cfc49d",
+      "result_id": "158b65bc-a8e9-4eac-b09c-bef56c15800c"
+    },
+    {
+      "claim_id": "ccc8fa77-1373-4fa9-b5eb-0419d2d53789",
+      "result_id": "2f6ec75d-51cc-447d-b619-b52009879b1b"
+    },
+    {
+      "claim_id": "c38d24d3-f972-4d60-b14b-d7cee991c360",
+      "result_id": "2f6ec75d-51cc-447d-b619-b52009879b1b"
+    },
+    {
+      "claim_id": "5622d076-18ff-4349-a465-aea0a46e96a3",
+      "result_id": "2f6ec75d-51cc-447d-b619-b52009879b1b"
+    },
+    {
+      "claim_id": "ae299625-ebad-40cd-ab40-1fe9685dd8dd",
+      "result_id": "2f6ec75d-51cc-447d-b619-b52009879b1b"
+    },
+    {
+      "claim_id": "04e3e4c9-86e9-40f6-8bae-8a29e2ba0c30",
+      "result_id": "2f6ec75d-51cc-447d-b619-b52009879b1b"
+    },
+    {
+      "claim_id": "5c96e8fa-1750-4be3-9e99-df9ce75de98a",
+      "result_id": "2f6ec75d-51cc-447d-b619-b52009879b1b"
+    },
+    {
+      "claim_id": "f2e2d0af-e74a-471b-bd79-f5e1bde07dc3",
+      "result_id": "2f6ec75d-51cc-447d-b619-b52009879b1b"
+    },
+    {
+      "claim_id": "d2500923-ab5d-4aa3-a523-aa84e9be0245",
+      "result_id": "74f9a388-3bae-4b28-88de-c1fec9efbd56"
+    },
+    {
+      "claim_id": "f96e6a63-728a-48f7-a973-d7941200e50d",
+      "result_id": "74f9a388-3bae-4b28-88de-c1fec9efbd56"
+    },
+    {
+      "claim_id": "eef1006a-8b3b-4113-87a7-d70d9cfdc97a",
+      "result_id": "74f9a388-3bae-4b28-88de-c1fec9efbd56"
+    },
+    {
+      "claim_id": "4e17094c-ab18-4203-bd1a-3a065470f391",
+      "result_id": "74f9a388-3bae-4b28-88de-c1fec9efbd56"
+    },
+    {
+      "claim_id": "a05ee983-a84a-4212-a308-e6aae1a690ca",
+      "result_id": "74f9a388-3bae-4b28-88de-c1fec9efbd56"
+    },
+    {
+      "claim_id": "03b45cbc-d682-4988-b93a-63b8dad39a18",
+      "result_id": "74f9a388-3bae-4b28-88de-c1fec9efbd56"
+    },
+    {
+      "claim_id": "42f413ed-a3c9-45fe-9403-e6fbe0018691",
+      "result_id": "74f9a388-3bae-4b28-88de-c1fec9efbd56"
+    },
+    {
+      "claim_id": "942fc7f3-a876-42d7-86d7-14c2446933c5",
+      "result_id": "b5f80900-6000-46bb-9fa4-363366323a03"
+    },
+    {
+      "claim_id": "c1079cbc-824a-42a8-8943-d78be95306ea",
+      "result_id": "b5f80900-6000-46bb-9fa4-363366323a03"
+    },
+    {
+      "claim_id": "fa3ac3d6-b8f7-421f-8326-f3095eaf8979",
+      "result_id": "b5f80900-6000-46bb-9fa4-363366323a03"
+    },
+    {
+      "claim_id": "91779206-800b-4100-9bbd-4cf74c54a4e0",
+      "result_id": "b5f80900-6000-46bb-9fa4-363366323a03"
+    },
+    {
+      "claim_id": "577e658e-7c2f-423c-a018-fecbfe37c7cd",
+      "result_id": "b5f80900-6000-46bb-9fa4-363366323a03"
+    },
+    {
+      "claim_id": "d9a507ac-8f28-4eab-9d61-8d365fdab28b",
+      "result_id": "b5f80900-6000-46bb-9fa4-363366323a03"
+    },
+    {
+      "claim_id": "b3dc4adc-c891-4e4c-b3eb-343381e4bfb0",
+      "result_id": "ebb20402-c3b1-4512-9fb2-bbfffbd1d209"
+    },
+    {
+      "claim_id": "03a1d4c7-87ba-4bf6-8be5-e1ac74097090",
+      "result_id": "ebb20402-c3b1-4512-9fb2-bbfffbd1d209"
+    },
+    {
+      "claim_id": "df8d55d5-d7e6-4e08-a976-8cdb52136b4d",
+      "result_id": "ebb20402-c3b1-4512-9fb2-bbfffbd1d209"
+    },
+    {
+      "claim_id": "ad7feab9-2b39-48b0-abea-d601e9c25806",
+      "result_id": "ebb20402-c3b1-4512-9fb2-bbfffbd1d209"
+    },
+    {
+      "claim_id": "b07034d5-eb7e-443e-8aa3-8f0b370003d2",
+      "result_id": "488e547a-6efa-4b7b-9e8a-a507bf3f7df2"
+    },
+    {
+      "claim_id": "3cc9e1ae-b173-4404-8900-674d70f79b93",
+      "result_id": "488e547a-6efa-4b7b-9e8a-a507bf3f7df2"
+    },
+    {
+      "claim_id": "5488414c-566d-47b7-9382-4e2a85b1f8ee",
+      "result_id": "488e547a-6efa-4b7b-9e8a-a507bf3f7df2"
+    },
+    {
+      "claim_id": "e7d51258-1f77-466d-a9e6-6f070faed5d3",
+      "result_id": "488e547a-6efa-4b7b-9e8a-a507bf3f7df2"
+    },
+    {
+      "claim_id": "44031366-35fd-4bfc-b3d2-078ab4e07468",
+      "result_id": "488e547a-6efa-4b7b-9e8a-a507bf3f7df2"
+    },
+    {
+      "claim_id": "86810156-0990-4812-b489-ab9f04c13503",
+      "result_id": "488e547a-6efa-4b7b-9e8a-a507bf3f7df2"
+    },
+    {
+      "claim_id": "270d4576-2dbe-4bce-a65c-c390db1859ef",
+      "result_id": "488e547a-6efa-4b7b-9e8a-a507bf3f7df2"
+    },
+    {
+      "claim_id": "e40788c5-86a9-4e81-8c02-f3c890cdcbb9",
+      "result_id": "488e547a-6efa-4b7b-9e8a-a507bf3f7df2"
+    },
+    {
+      "claim_id": "3b7bef90-a2fd-4c82-846c-ca939ad45387",
+      "result_id": "fdbf89a0-afb9-4505-8e82-af048faeeacc"
+    },
+    {
+      "claim_id": "a5fd5571-7296-423d-a996-e8569539c5cf",
+      "result_id": "fdbf89a0-afb9-4505-8e82-af048faeeacc"
+    },
+    {
+      "claim_id": "76d92d08-9dc5-4685-a139-7ec6b481f8a5",
+      "result_id": "fdbf89a0-afb9-4505-8e82-af048faeeacc"
+    },
+    {
+      "claim_id": "e4e8de62-3e8d-4f29-a444-1ca8753991d0",
+      "result_id": "fdbf89a0-afb9-4505-8e82-af048faeeacc"
+    },
+    {
+      "claim_id": "541e6d67-ca3d-48f3-ad65-95dbdde24ccc",
+      "result_id": "027bb923-1bc0-46ed-a6e4-720d9d479de0"
+    },
+    {
+      "claim_id": "86046e22-fd78-4638-9a7b-2a080a4fc2fb",
+      "result_id": "027bb923-1bc0-46ed-a6e4-720d9d479de0"
+    },
+    {
+      "claim_id": "9a904366-ff33-4648-bc3f-5d7367d7aa79",
+      "result_id": "027bb923-1bc0-46ed-a6e4-720d9d479de0"
+    },
+    {
+      "claim_id": "4bfe2a6a-5244-4608-bf9c-3e81c338afca",
+      "result_id": "027bb923-1bc0-46ed-a6e4-720d9d479de0"
+    },
+    {
+      "claim_id": "fdd51f83-7b09-4cc5-961e-df73e386a13b",
+      "result_id": "027bb923-1bc0-46ed-a6e4-720d9d479de0"
+    },
+    {
+      "claim_id": "ad4165e6-035a-4681-960e-bd5837b5cb34",
+      "result_id": "7e145681-47ba-41ca-b1e0-1b7766c5d06a"
+    },
+    {
+      "claim_id": "cff94dea-6b00-4d1a-a536-08b1900d0ee1",
+      "result_id": "7e145681-47ba-41ca-b1e0-1b7766c5d06a"
+    },
+    {
+      "claim_id": "088a37e1-dc1e-42f0-91e6-610ed6c3dbe4",
+      "result_id": "2390f01d-e470-4e37-a2c8-8829c2b8e021"
+    },
+    {
+      "claim_id": "d53dd9e1-8fc0-4cdf-8890-3f0df274f530",
+      "result_id": "2390f01d-e470-4e37-a2c8-8829c2b8e021"
+    },
+    {
+      "claim_id": "c7e917bb-ece0-4c58-9aca-59d88558395d",
+      "result_id": "2390f01d-e470-4e37-a2c8-8829c2b8e021"
+    },
+    {
+      "claim_id": "4696a0aa-5ea5-4986-9290-6ef816ff62f5",
+      "result_id": "2390f01d-e470-4e37-a2c8-8829c2b8e021"
+    },
+    {
+      "claim_id": "d5dc225c-9f24-4a63-b19d-e18a386415a0",
+      "result_id": "83402b4f-2a7e-4b63-b76b-f21e35e17dd3"
+    },
+    {
+      "claim_id": "32ba68f9-7481-4876-bcc8-5c37daddd4d4",
+      "result_id": "83402b4f-2a7e-4b63-b76b-f21e35e17dd3"
+    },
+    {
+      "claim_id": "2e2ae315-c26c-4a8e-af70-f20445d50bec",
+      "result_id": "7d31f683-f0fc-44b5-9f27-4a01b58bdb32"
+    },
+    {
+      "claim_id": "c2880983-13f2-46c0-b174-c99e3b7585db",
+      "result_id": "7d31f683-f0fc-44b5-9f27-4a01b58bdb32"
+    },
+    {
+      "claim_id": "7cc1af9a-1f26-406e-8d12-3d92b045cf52",
+      "result_id": "7d31f683-f0fc-44b5-9f27-4a01b58bdb32"
+    },
+    {
+      "claim_id": "3974bfcb-3346-481b-b65c-7ed180d21924",
+      "result_id": "7d31f683-f0fc-44b5-9f27-4a01b58bdb32"
+    },
+    {
+      "claim_id": "a6cdb3f2-8cb0-4ac4-80da-3ff85e146508",
+      "result_id": "7d31f683-f0fc-44b5-9f27-4a01b58bdb32"
+    },
+    {
+      "claim_id": "aa7b226b-3cd0-400c-84a2-6bf377d9f726",
+      "result_id": "6d5ab3b9-2b11-43e3-abae-0e21f8de5ba9"
+    },
+    {
+      "claim_id": "251ba0ed-b89d-4c5d-b6be-27353aa1cbd8",
+      "result_id": "6d5ab3b9-2b11-43e3-abae-0e21f8de5ba9"
+    },
+    {
+      "claim_id": "f26cb9fe-16a2-4cf8-988c-88999820675d",
+      "result_id": "6d5ab3b9-2b11-43e3-abae-0e21f8de5ba9"
+    },
+    {
+      "claim_id": "f5b2d1c6-29d2-4a89-ac08-9ce9cb9d2c0b",
+      "result_id": "d188153b-8890-4cb0-a729-488c07a50278"
+    },
+    {
+      "claim_id": "55176359-ebc2-4593-8923-92b1da682f3e",
+      "result_id": "d188153b-8890-4cb0-a729-488c07a50278"
+    },
+    {
+      "claim_id": "27bbdfef-243d-4e66-adc8-f02c1b287beb",
+      "result_id": "d188153b-8890-4cb0-a729-488c07a50278"
+    },
+    {
+      "claim_id": "e1ae6b48-5eaf-4fe5-aa93-710efc45b763",
+      "result_id": "d188153b-8890-4cb0-a729-488c07a50278"
+    },
+    {
+      "claim_id": "5284c467-361d-4857-aa0b-13071d9e1b94",
+      "result_id": "d188153b-8890-4cb0-a729-488c07a50278"
+    },
+    {
+      "claim_id": "2a3804dd-3b9a-4406-a572-977c758d1698",
+      "result_id": "d188153b-8890-4cb0-a729-488c07a50278"
+    },
+    {
+      "claim_id": "177d5feb-97a2-4480-8a90-a6f6b9ca0eac",
+      "result_id": "85519a9a-ed9c-406d-9d0f-24f6aca9b24b"
+    },
+    {
+      "claim_id": "36147256-716f-426f-919b-c48df9eeb78d",
+      "result_id": "85519a9a-ed9c-406d-9d0f-24f6aca9b24b"
+    },
+    {
+      "claim_id": "46c1a048-0ef7-4183-981f-7d3894fb34f6",
+      "result_id": "f45fcf78-7cec-4c53-b888-cbe83f97599c"
+    },
+    {
+      "claim_id": "86a9992b-4dfc-4474-bf83-d56727ed1c8d",
+      "result_id": "f45fcf78-7cec-4c53-b888-cbe83f97599c"
+    },
+    {
+      "claim_id": "fbf70263-6571-49e8-90d5-d85a61e9a227",
+      "result_id": "f45fcf78-7cec-4c53-b888-cbe83f97599c"
+    },
+    {
+      "claim_id": "6d352531-ec51-48ea-b9f6-5e79567ab8d4",
+      "result_id": "f45fcf78-7cec-4c53-b888-cbe83f97599c"
+    },
+    {
+      "claim_id": "2ff034fb-7f6f-490d-9a68-cabdeac62c9b",
+      "result_id": "f45fcf78-7cec-4c53-b888-cbe83f97599c"
+    },
+    {
+      "claim_id": "9ac8181d-f97d-4f46-9b12-df1dc465e238",
+      "result_id": "f45fcf78-7cec-4c53-b888-cbe83f97599c"
+    },
+    {
+      "claim_id": "a65b8c29-fcfb-45b2-b470-4f4d1816ae7c",
+      "result_id": "ec415997-0f65-4cf5-b86e-6a0a558ebf4c"
+    },
+    {
+      "claim_id": "9d2975b8-6816-4325-ad21-f808c90c0bba",
+      "result_id": "ec415997-0f65-4cf5-b86e-6a0a558ebf4c"
+    },
+    {
+      "claim_id": "844be773-9812-48a5-a30b-33107832f28e",
+      "result_id": "ec415997-0f65-4cf5-b86e-6a0a558ebf4c"
+    },
+    {
+      "claim_id": "62483c62-3499-4be0-aeaf-5db8ebea3176",
+      "result_id": "b5b4e114-10b5-4629-86eb-587d19a960d2"
+    },
+    {
+      "claim_id": "3c104224-39e4-4f06-9521-05d7e9736c6f",
+      "result_id": "b5b4e114-10b5-4629-86eb-587d19a960d2"
+    }
+  ],
+  "comparisons": []
+}

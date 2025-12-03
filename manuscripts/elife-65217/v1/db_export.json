@@ -1,0 +1,2484 @@
+{
+  "submission": {
+    "id": "4d89fcb5-abf3-4145-8ea3-570315d9dfdf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:44:26.924882Z",
+    "updated_at": "2025-12-03T07:44:26.924882Z"
+  },
+  "content": [
+    {
+      "id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "submission_id": "4d89fcb5-abf3-4145-8ea3-570315d9dfdf",
+      "content_type": "manuscript",
+      "content_text": "# Task-specific roles of local interneurons for inter- and intraglomerular signaling in the insect antennal lobe\n\n## Authors\n\n- Debora Fusca<sup>1</sup>\n- Peter Kloppenburg<sup>1</sup> ([ORCID: 0000-0002-4554-404X](https://orcid.org/0000-0002-4554-404X)) \u2020\n\n### Affiliations\n\n1. Biocenter, Institute for Zoology, and Cologne Excellence Cluster on Cellular Stress Responses in Aging-Associated Diseases (CECAD), University of Cologne Cologne Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nLocal interneurons (LNs) mediate complex interactions within the antennal lobe, the primary olfactory system of insects, and the functional analog of the vertebrate olfactory bulb. In the cockroach Periplaneta americana, as in other insects, several types of LNs with distinctive physiological and morphological properties can be defined. Here, we combined whole-cell patch-clamp recordings and Ca2+ imaging of individual LNs to analyze the role of spiking and nonspiking LNs in inter- and intraglomerular signaling during olfactory information processing. Spiking GABAergic LNs reacted to odorant stimulation with a uniform rise in [Ca2+]i in the ramifications of all innervated glomeruli. In contrast, in nonspiking LNs, glomerular Ca2+ signals were odorant specific and varied between glomeruli, resulting in distinct, glomerulus-specific tuning curves. The cell type-specific differences in Ca2+ dynamics support the idea that spiking LNs play a primary role in interglomerular signaling, while they assign nonspiking LNs an essential role in intraglomerular signaling.\n\n## Introduction\n\nLocal interneurons (LNs) with markedly different functional phenotypes are crucial for odor information processing in the insect antennal lobe (AL). The AL is the first synaptic relay in the insect olfactory system, showing striking structural and functional similarities to the vertebrates' olfactory bulb. In many regards, the LNs in the AL are the functional equivalent of granule cells, but also periglomerular and short axon cells in the vertebrate olfactory bulb (Ennis et al., 2015; Shepherd et al., 2004). They help to structure the odor representation in the AL, ultimately shaping the tuning profiles of the olfactory projection (output) neurons.\n\nBased on initial studies, LNs originally have been characterized as GABAergic and multiglomerular (Distler, 1989; Hoskins et al., 1986; Waldrop et al., 1987). Typically, they can generate Na+-driven action potentials (Chou et al., 2010; Christensen et al., 1993; Husch et al., 2009a; Seki et al., 2010) or Ca2+-driven spikelets (Laurent and Davidowitz, 1994). Accordingly, these neurons have been associated with inhibitory interglomerular signaling, that is, with mediating lateral inhibition to enhance contrast and to control timing and synchronization of neuronal activity (Assisi and Bazhenov, 2012; Assisi et al., 2011; Christensen et al., 1998; Fujiwara et al., 2014; Hong and Wilson, 2015; MacLeod and Laurent, 1996; Nagel and Wilson, 2016; Olsen and Wilson, 2008; Sachse and Galizia, 2002; Wilson, 2013). Subsequent studies showed that LNs can also synthesize other potential neurotransmitters and neuromodulators (Berg et al., 2007; Chou et al., 2010; Das et al., 2011; Distler, 1990; Fusca et al., 2013; Fusca et al., 2015; Neupert et al., 2012; Shang et al., 2007). In fact, they can be excitatory, distributing excitatory synaptic input to (projection) neurons in other glomeruli by chemical and electrical synapses (Assisi et al., 2012; Das et al., 2017; Huang et al., 2010; Olsen et al., 2007; Shang et al., 2007; Yaksi and Wilson, 2010).\n\nFurthermore, nonspiking LNs with weak active membrane properties that do not generate Na+-driven action potentials have been described in both holo- and hemimetabolous insect species (Fusc\u00e0 and Kloppenburg, 2021; Husch et al., 2009a; Husch et al., 2009b; Tabuchi et al., 2015). While their functional role for odor information processing is not clear yet, it is plausible to assume that they are functionally highly relevant since they have been found across different insect species.\n\nIn Periplaneta americana, two main LN types, each with distinct functional properties, have been identified: spiking type I LNs and nonspiking type II LNs (Fusca et al., 2013; Fusc\u00e0 and Kloppenburg, 2021; Husch et al., 2009a; Husch et al., 2009b). Spiking type I LNs generate Na+-driven action potentials upon odor stimulation and have a multiglomerular branching pattern with ramifications in many, but not all, glomeruli. The density and pattern of ramifications vary between glomeruli from very dense to sparse, indicating a polarity with defined synaptic input and output regions. All type I LNs are GABAergic (Distler, 1989; Husch et al., 2009a). The nonspiking type II LNs do not have voltage-activated transient Na+ currents and cannot generate Na+-driven action potentials. They have comparatively large voltage-dependent Ca2+ conductances, which play a crucial role in mediating their active membrane properties (Fusca et al., 2013; Husch et al., 2009a; Husch et al., 2009b). Type II LNs consist of two main subtypes, type IIa and type IIb LNs. Type IIa LNs typically respond with complex, odor-specific patterns of excitation that can include periods of inhibition. Type IIa LNs can be further subdivided into type IIa1 and type IIa2. Type IIa1 LNs are cholinergic and can generate Ca2+-driven spikelets on top of odor-induced depolarizations (Fusca et al., 2013; Neupert et al., 2018). Type IIa2 LNs do not generate spikelets, and their primary transmitter is not known. Type IIb LNs have weak active membrane properties and respond to odor stimulation with sustained, relatively smooth depolarization. Their primary transmitter is unknown. All type II LNs are omniglomerular, with branches in virtually all glomeruli. The density and pattern of arborizations are similar in all glomeruli of a given type II LN but vary between different type II LNs (Husch et al., 2009a). In type IIa LNs, the ramifications are similar and evenly distributed over each glomerulus of an individual neuron. On the other hand, in type IIb neurons, the branches cover only parts of each glomerulus, often in a specific layer (Husch et al., 2009b).\n\nBased on their functional and morphological properties, it can be hypothesized that nonspiking type II LNs are primarily involved in intraglomerular signaling since the graded changes in membrane potentials can only spread within the same or electrotonically close glomeruli, as was proposed for nonspiking LNs in the rabbit olfactory bulb (Bufler et al., 1992b).\n\nThis study\u2019s rationale was based on the previously reported structural and functional differences between distinct LN types in the cockroach AL (Fusca et al., 2013; Fusca et al., 2015; Fusc\u00e0 and Kloppenburg, 2021; Husch et al., 2009a; Husch et al., 2009b; Pippow et al., 2009). Spiking type I LNs are GABAergic, inhibitory, and innervate many but not all glomeruli. While some glomeruli are densely innervated, others are more sparsely or not at all innervated (Figure 1A). It has been considered that this reflects an organization with distinctive input and output glomeruli (Galizia and Kimmerle, 2004; Husch et al., 2009a; Wilson and Laurent, 2005). In this model, synaptic input is integrated and triggers action potential firing. The action potentials propagate to the innervated glomeruli and provide a defined glomeruli array with inhibitory synaptic input. Glomeruli can interact independently of their spatial and electrotonic distance. In this scenario, one would expect that odor-evoked glomerular Ca2+ signals are dominated by Ca2+ influx through voltage-gated channels that are activated by the action potentials. Thus, odor-induced Ca2+ signals should be detectable and comparable in all innervated glomeruli.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65217/elife-65217-fig1-v1.jpg)\n\n**Figure 1.:** A spiking type I (A) and a nonspiking type II local interneuron (B) that were labeled with biocytin/streptavidin via the patch pipette. The glomeruli were visualized by synapsin-LIR. (A) Type I local interneuron. 13 \u00b5m stack of optical sections. The neuron innervates many but not all glomeruli and generates action potentials to an odorant stimulus (benzaldehyde). (B) Type II local interneuron. 15 \u00b5m stack of optical sections. The neuron innervated all glomeruli and responded to the odorant (benzaldehyde) with a graded depolarization. The stars mark the locations of the somata. Biocytin/streptavidin, magenta; synapsin-LIR, green; double-labeled pixels, white. NA: anterior, M: medial. Scale bars = 100 \u00b5m.\n\nIn contrast, nonspiking type II LNs have very similar branching patterns in all glomeruli (Figure 1B, Husch et al., 2009b), suggesting that both input and output can occur in every glomerulus. Due to the receptor and sensillum type-specific input configuration of the glomeruli in the AL (Fujimura et al., 1991; Watanabe et al., 2012), synaptic input during olfactory stimulation typically occurs only in a limited number of glomeruli (Sachse et al., 1999; Silbering et al., 2011). The resulting stimulus-evoked graded postsynaptic potentials can only spread within the same glomerulus or electrotonically nearby glomeruli. Since these neurons cannot generate Na+-driven action potentials, we hypothesize that the Ca2+ signals are dominated by odorant-evoked Ca2+ influx through excitatory ligand-gated channels (Oliveira et al., 2010).\n\nThis study investigated the role of spiking and nonspiking LNs for inter- and intraglomerular signaling during olfactory information processing. To this end, we combined whole-cell patch-clamp recordings with Ca2+ imaging to analyze the local Ca2+ dynamics of neurites in individual glomeruli as an indicator of signal processing in single LNs. The recordings were performed in the AL of the cockroach P. americana. This is an experimental system in which the olfactory system\u2019s circuitry has been analyzed in great detail on the physiological (Bradler C et al., 2016; Ernst and Boeckh, 1983; Husch et al., 2009a; Husch et al., 2009b; Lemon, 1997, Lemon and Getz, 1998, Lemon and Getz, 2000; Nishino et al., 2012, Nishino et al., 2018; Paeger et al., 2017; Paoli et al., 2020; Pippow et al., 2009; Strausfeld and Li, 1999; Warren and Kloppenburg, 2014; Watanabe et al., 2017), biochemical (Distler, 1989; Distler, 1990; Fusca et al., 2013; Fusca et al., 2015; Neupert et al., 2012; Neupert et al., 2018), and structural/ ultrastructural levels (Distler and Boeckh, 1997a; Distler and Boeckh, 1997b; Distler et al., 1998; Malun, 1991a; Malun, 1991b; Malun et al., 1993; Nishino et al., 2015; Watanabe et al., 2010), thus contributing very successfully to understanding olfactory information processing principles.\n\n## Results\n\nLNs of the insect AL are a heterogeneous group of neurons, consisting of different neuronal subpopulations with clearly defined, sometimes fundamentally different functional phenotypes. To study the role of spiking type I LNs and nonspiking type II LNs for inter- and intraglomerular signaling, we performed simultaneous whole-cell patch-clamp recordings and Ca2+ imaging in individual neurons. The investigated neuron was labeled with biocytin-streptavidin. This way, the cell types were unequivocally identified by their physiological and morphological characteristics. In the investigated LNs, we measured the intracellular Ca2+ dynamics of neurites during olfactory stimulation simultaneously in many individual glomeruli. To determine differences in the odor-induced Ca2+ signals between individual glomeruli, tuning curves were constructed from the odor-evoked glomerular Ca2+ signals by normalizing them to the maximum signal amplitude of each glomerulus. Overall, this study is based on 23 recordings of type I LNs and 18 recordings of type II LNs. For each recorded LN, between 9 and 25 distinct innervated glomeruli could be identified and individually imaged and analyzed. In the legends of Figure 2\u20135, we give the identifier of the analyzed neurons, which can be used to locate the respective data in Individual Neurons-Source data 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65217/elife-65217-fig2-v1.jpg)\n\n**Figure 2.:** (A, C) Transmitted light images of an investigated antennal lobes. The dotted lines mark the recorded glomeruli, and the insets show overlays of Ca2+ responses from three trials with the same odorant (hexanol). The gray bars mark the 500 ms odorant stimuli. (B, D) Areas under the curves of the Ca2+ signals that are shown in (A) and (C). The first 3 s after stimulus onset were analyzed. Hatched bars represent control signals to blank stimuli. AUC: area under the curve; Gl: glomerulus; VSG: ventrolateral somata group.\n\nIn the first set of experiments, we showed that the odor-induced Ca2+ dynamics were highly reproducible when the antennae were repeatedly stimulated with the same odorant (Figure 2). This is in line with previous electrophysiological studies, in which LNs responded very reproducibly to repeated olfactory stimulations (Husch et al., 2009a; Husch et al., 2009b; Olsen and Wilson, 2008). Hence, in subsequent experiments, we analyzed single-sweep optophysiological recordings rather than averaged data.\n\n### Uniform glomerular odor responses in spiking type I LNs\n\nAll recorded type I LNs displayed characteristic morphological features, that is, arborizations in multiple glomeruli with varying neurite densities between glomeruli (Figure 3). Electrophysiologically, type I LNs reacted to odor stimulation of the antennae with odorant-specific patterns of overshooting action potentials (Figure 3B). The glomerular Ca2+ signals were time-locked with the electrophysiological responses and matched the spike pattern of the electrophysiological recordings. While the absolute amplitudes of the Ca2+ signals during a given odorant varied between individual glomeruli, the time course and overall structure of the Ca2+ signals were very similar in all recorded glomeruli for a particular odorant (Figure 3B, Figure 3\u2014figure supplement 1), resulting in identical tuning curves for all glomeruli of a given neuron (Figure 3C). Accordingly, tuning curves of all imaged glomeruli of a given neuron always correlated with coefficients of ~1, with a mean correlation coefficient across all investigated spiking LNs of r = 0.95 \u00b1 0.06 (N = 16, Figure 3D\u2013F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65217/elife-65217-fig3-v1.jpg)\n\n**Figure 3.:** (A) Left: biocytin/streptavidin-labeled type I LN. The antennal lobe (AL) is outlined by the dotted line. The star marks the position of the soma. Scale bar: 100 \u00b5m. Right: transmitted light image of the same AL while the neuron was recorded. Orientation applies to both images. The outlined glomeruli mark the regions of interest (individual glomeruli) that were individually analyzed. (B) Electrophysiological responses to four odorants (top traces) and the corresponding Ca2+ dynamics of four glomeruli that are marked in (A). Gray bars represent the 500 ms odorant stimuli. The neuron responded to different odorants with odorant-specific spike trains. The time courses of the Ca2+ signals were similar in all glomeruli for a given odorant. (C) Tuning curves of glomerular responses. Areas under the curves of the odorant-evoked glomerular Ca2+ signals (first 3 s after stimulus onset) were calculated for a set of nine odorants and normalized to the maximum response in the respective glomerulus. Every glomerulus responded most strongly to isoamyl acetate and least to benzaldehyde. (D) Heatmap showing the correlations between the glomerular tuning curves of every imaged glomerulus. Numbers correspond to the glomeruli in (A). All tuning curves were well correlated with coefficients of ~1 (nonparametric Spearman correlation). (E) Mean correlation coefficient across all investigated type I LNs was 0.95 \u00b1 0.06 (N = 16) N values are given in brackets. (F) Heatmaps of correlations between glomerular tuning curves from six additional type I LNs (LNI # 7, 8, 12, 14, 15, 18). HX: hexanol; GE: geraniol; EU: eugenol; CO: citronellal; CA: citral; IO: ionone; IA: isoamylacetate; BA: benzaldehyde; PY: pyrrolidine.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65217/elife-65217-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Electrophysiological responses to all tested odorants. (B) Scaled overlays of the corresponding Ca2+ signals from all imaged glomeruli (n = 20). The odorant-induced Ca2+ signals were scaled to the same size. (C) Original odorant-induced Ca2+ signals from all glomeruli.\n\nThe large amplitude of the glomerular Ca2+ signals, their close match with the electrophysiological recordings, and their correlated dynamics suggest that the Ca2+ signals mainly reflect voltage-dependent Ca2+ influx induced by propagated action potentials. It seems likely that olfactory inputs from one or a few glomeruli are integrated and trigger action potentials that propagate to the innervated glomeruli, where they induce highly correlated voltage-activated Ca2+ signals.\n\n### Suppression of action potential firing in type I LNs decreases correlations of glomerular Ca2+ signals\n\nTo test whether the observed Ca2+ signals in type I LNs mainly reflect action potential-induced Ca2+ influx, we used two approaches to prevent the neurons from spiking. The neurons were hyperpolarized to membrane potentials between \u201380 mV and \u2013100 mV (Figure 4A, top trace) or firing was suppressed by intracellularly blocking Na+ channels with QX-314. When the generation of action potentials is inhibited, the remaining Ca2+ signals should mainly reflect Ca2+ influx via ligand-gated channels (e.g., cholinergic receptors, Oliveira et al., 2010).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65217/elife-65217-fig4-v1.jpg)\n\n**Figure 4.:** Data in (A\u2013C) are taken from the same type I local interneuron (LN) as in Figure 3. (A) Electrophysiological responses to odorants (top traces) and corresponding Ca2+ dynamics in the same four glomeruli as shown in Figure 3. The neuron was hyperpolarized to prevent the generation of action potentials upon stimulation with odorants. Electrophysiologically, the neuron responded with odorant-specific graded depolarizations. The high correlation of the glomerular Ca2+ signals shown in Figure 3 was inhibited. (B) The tuning curves of the glomerular responses (for details, see Figure 3C) varied considerably, whereby the odorant that triggered the maximum Ca2+ signal in each individual glomerulus was different for each glomerulus. (C) Heatmap demonstrating the heterogeneous correlations between glomerular tuning curves. Numbers correspond to glomeruli in Figure 3A. Correlation coefficients ranged between 0 and 0.95 (median = 0.56). (D; LNI #19) Heatmap demonstrating the variable correlations between glomerular tuning curves of a neuron that was treated with the intracellular NaV channel blocker QX-314. Correlation coefficients ranged between 0.2 and 1 (median = 0.7). (E) Mean correlation coefficients of hyperpolarized (0.75 \u00b1 0.19, N = 6, p=0.0073) and QX-314-treated (0.74 \u00b1 0.26, N = 5, p=0.0142) type I LNs were significantly decreased compared to the control group (Kruskal\u2013Wallis and Dunn\u2019s multiple comparisons test). Hyperpolarized and QX-314-treated type I LNs were not significantly different (p>0.9999). *p<0.05, **p<0.01. N values are given in brackets. Abbreviations as in Figure 3F.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65217/elife-65217-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Y-axes show normalized odor response. For details, see Figure 3C. Abbreviations as in Figure 3F.\n\nWhen action potential firing was prevented by hyperpolarization, odor stimulation still elicited Ca2+ signals in the glomeruli (Figure 4A). Besides a reduction in amplitude, the uniformity of the Ca2+ signals between different glomeruli disappeared. In turn, the tuning curves of the individual glomeruli became different from each other (Figure 4B, Figure 4\u2014figure supplement 1). Quantitatively, this is reflected in the glomerulus-specific odorant responses and the diverse correlations between the glomerular tuning curves, resulting in a decreased mean correlation coefficient across all hyperpolarized type I LNs of r = 0.75 \u00b1 0.19 (N = 6, Figure 4C\u2013E). Similar results were obtained when action potential firing was suppressed by intracellularly blocking Na+ channels with QX-314 (r = 0.74 \u00b1 0.26, N = 5, Figure 4D and E). Differences in mean correlation coefficients were significant between control and hyperpolarized type I LNs (p=0.0073) as well as between control and type I LNs that were treated with QX-314 (p=0.0142). Mean correlation coefficients of hyperpolarized and QX-314-treated type I LNs were not significantly different (p>0.999).\n\nThese experiments support the idea that the observed large Ca2+ signals are mediated mainly by voltage-gated Ca2+ channels, which are activated by the strong depolarizations of the action potentials propagating through the neuron into the innervated glomeruli. These large signals likely mask small local Ca2+ signals elicited by ligand-gated (postsynaptic) Ca2+ influx into the recorded neuron. Preventing the generation of action potentials selectively in the recorded neurons unmasked small local Ca2+ signals, which we interpret as solid evidence for localized excitatory input. Since we observed these signals in more than one glomerulus of a given neuron, we consider this to be physiological evidence that individual type I LNs receive excitatory input not only in one but in multiple glomeruli.\n\nTaken together, our results are in line with the conception that type I LNs integrate and transform their synaptic input to action potential firing to provide inhibitory synaptic input (lateral inhibition) to neurons in a defined array of glomeruli (Assisi et al., 2011; Fujiwara et al., 2014; Hong and Wilson, 2015; Nagel and Wilson, 2016; Olsen and Wilson, 2008; Sachse and Galizia, 2002; Wilson, 2013). Our results also provide physiological evidence that an individual type I LN receives excitatory input not only in one but in several glomeruli, which is in line with previous structural- and ultrastructural studies that reported evidence for both pre- and postsynaptic profiles in individual glomeruli (Berck et al., 2016; Distler and Boeckh, 1997b; Mohamed et al., 2019).\n\n### Heterogeneous glomerular odor responses in nonspiking type II LN\n\nIn contrast to the uniform Ca2+ dynamics during odor stimulation in type I LNs, we observed highly heterogeneous Ca2+ dynamics between the individual glomeruli in most type II LNs (Figure 5). All recorded type II LNs had the cell type-specific morphology characterized by innervation of all glomeruli with similar neurite densities in all glomeruli of a given neuron (Figure 5A and E). All type II LNs typically responded with graded changes in membrane potential to olfactory stimulation, with type IIa1 LNs also able to generate Ca2+-driven spikelets (Figure 5B and F, top traces). The amplitudes of the corresponding Ca2+ signals were in the range of the signals of type I LNs after the suppression of their action potentials. While the electrophysiological responses to different odorants were similar in a given neuron, the corresponding glomerular Ca2+ signals were odor specific and varied between glomeruli, resulting in distinct, glomerulus-specific tuning curves (Figure 5C,G and Figure 5\u2014figure supplement 1), which was also directly evident in a relatively low degree of correlation (Figure 5I; r = 0.56 \u00b1 0.21, N = 18). However, the correlation between tuning curves of individual glomeruli in a given neuron differed among type II LNs. While in 11 out of 18 nonspiking LNs the majority of glomeruli was individually tuned, in the other 7 neurons, groups of similarly tuned glomeruli were found. This is shown in the heatmaps showing highly correlated Ca2+ signals in groups of glomeruli as well as glomeruli that were not correlated (Figure 5G, H and J, Figure 5\u2014figure supplement 1B). Mechanistically, this could be caused by similar input to several glomeruli (Watanabe et al., 2012) or by coordinated activity, for example, via spikelets that were observed in a subtype of nonspiking neurons (type IIa1 LNs, Fusca et al., 2013).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65217/elife-65217-fig5-v1.jpg)\n\n**Figure 5.:** Data from a type IIb (A\u2013D, LNII #2) and a type IIa LN (E\u2013H, LNII #3). (A, E) Left: biocytin/streptavidin stainings of the investigated type II LNs. The antennal lobes (ALs) are outlined by the dotted lines. The position of the soma in (E) is marked by the star. Scale bar: 100 \u00b5m. Right: transmitted light images of the same ALs during the experiment. Outlined glomeruli were marked as regions of interest and individually analyzed. The orientations of the left and right images are similar. (B, F) Electrophysiological responses to four odorants (top traces) with the corresponding Ca2+ dynamics of four glomeruli that are marked in the images shown in (A) and (E). Gray bars represent the 500 ms odorant stimuli. (B\u2013D) Type IIb LN. (B) The neuron responded similarly to the different odorants with graded depolarizations that were followed by slow hyperpolarizations. The time course and amplitude of the corresponding Ca2+ signals varied in different glomeruli for the different odorants. (C) Tuning curves of glomerular Ca2+ signals (for details, see Figure 3C). The tuning curves of the different glomeruli varied considerably, while the maximum response was induced by different odorants in the different glomeruli. Some glomeruli were narrowly tuned (e.g., glomerulus 16); others were broadly tuned (e.g., glomerulus 23). (D) Heatmap showing the correlations between glomerular tuning curves of every imaged glomerulus. Numbers correspond to glomeruli shown in (A). Correlations between glomerular tuning curves were mostly low, with coefficients ranging between 0 and 0.97 (median = 0.23). (F\u2013H) Type IIa LN. (F) The neuron responded similarly to different odorants with graded depolarizations that could include spikelets (e.g., hexanol, isoamylacetate, arrows mark the spikelets), whereas the time course and amplitude of the corresponding Ca2+ signals mostly varied between different glomeruli for different odorants. (G) Tuning curves of the glomerular Ca2+ signals shown in (F) (for details, see Figure 3C). Groups of glomeruli showed similar tuning curves (e.g., glomeruli 1, 5, and 9), while other glomeruli were individually tuned (e.g., glomerulus 13). (H) Heatmap showing correlations between glomerular tuning curves of every imaged glomerulus. Numbers correspond to the glomeruli marked in (E). Glomerular tuning curves correlated strongly in a subset of glomeruli, while the correlation was low between other glomeruli. Coefficients ranged between 0.72 and 0.98 (median = 0.87). (I) The mean correlation coefficient of spiking type I LNs (0.95 \u00b1 0.06, N = 16) is significantly larger compared to nonspiking type IIa1 LNs that can generate spikelets (0.67 \u00b1 0.12, N = 6, p=0.01) and (pooled) type IIa2 and type IIb LNs, which do not generate spikelets (0.51 \u00b1 0.23, N = 12, p<0.001) (Kruskal\u2013Wallis and Dunn\u2019s multiple comparisons tests). Abbreviations as in Figure 3F. The mean correlation coefficient across all investigated type II LNs was 0.56 \u00b1 0.21 (N = 18). *p<0.05, ***p<0.001. N values are given in brackets. (J) Heatmaps of correlations between glomerular tuning curves from all additional type II LNs in descending order of mean correlation coefficient (upper row: LN II # 5, 4, 1, 7, 6, 9, 8, 10; lower row: LN II # 14, 12, 11, 13, 15, 16, 17, 18). AN: antennal nerve, all other abbreviations as in Figure 3F.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65217/elife-65217-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Tuning curves of all glomeruli from the neurons shown in Figure 5A\u2013D (A) and Figure 5E\u2013H (B). Y-axes show normalized odor response. For details, see Figure 3C. Abbreviations as in Figure 3F.\n\n## Discussion\n\nProcessing of sensory input by networks of spiking and nonspiking interneurons is a common principle in both invertebrate and vertebrate sensory systems, for example, structuring the signal pathway from sensory neurons (tactile hairs) to intersegmental and motor neurons in the insect thoracic ganglion (Burrows, 1989; Pearson and Fourtner, 1975) and the mammalian olfactory bulb (Bufler et al., 1992a; Bufler et al., 1992b; Wellis and Scott, 1990) and retina (Diamond, 2017). Nevertheless, in many systems, the role of nonspiking neurons is not well understood.\n\nLNs are key components of the insect olfactory system. They have fundamentally different functional phenotypes suggesting different tasks during odor information processing. To help elucidate mechanisms of odor processing on the level of individual LNs, this study assessed local Ca2+ dynamics in distinct functional compartments (ramifications in individual glomeruli) of spiking type I and nonspiking type II LNs during olfactory information processing. To this end, individual LNs were analyzed by combined whole-cell patch-clamp recordings and Ca2+ imaging. Local Ca2+ dynamics are likely to reflect the role of LNs in odor information processing, that is, for their potential role in intra- and interglomerular signaling, which depends crucially on signal propagation throughout individual LNs. In line with the electrophysiological properties, we found odorant-evoked Ca2+ signals that were homogeneous across the whole cell in spiking type I LNs and odor and glomerulus-specific Ca2+ signals in nonspiking type II LNs. This is also reflected in the highly correlated tuning curves in type I LNs and low correlations between tuning curves in type II LNs. In the following, we discuss whether and how this is consistent with previous studies, suggesting that spiking type I LNs play a role in lateral, interglomerular signaling and why this study assigns a role to nonspiking LNs in local, intraglomerular signaling.\n\n### Interglomerular signaling via spiking type I LNs\n\nProcessing of olfactory information in the AL involves complex interactions between the glomerular pathways and between different AL neurons. Previous studies in different insect species have suggested that GABAergic LNs can mediate lateral inhibition by providing inhibitory synaptic input to defined odor-specific arrays of glomeruli. This hypothesis agrees with the current study, where spiking type I LNs showed odorant-specific glomerular Ca2+ dynamics, which were always uniform in every imaged glomerulus as long as the generation of Na+-driven action potentials was not suppressed. Thus, it is plausible and likely that synaptic inputs to one or a few glomeruli are integrated and result in the firing of action potentials, which propagate to the neurites of all innervated glomeruli where they induce highly correlated voltage-activated Ca2+ signals. Since type I LNs express GABA-like immunoreactivity and provide inhibitory input to uPNs and other LNs in all innervated glomeruli (Distler, 1989; Distler and Boeckh, 1997b; Husch et al., 2009a; Warren and Kloppenburg, 2014), these neurons are likely part of an inhibitory network that mediates lateral inhibition and contrast enhancement (Sachse and Galizia, 2002; Wilson and Laurent, 2005). While the current study assigns a role to type I LNs in interglomerular signaling, it does not rule out the possibility that these neurons are also involved in intraglomerular signaling.\n\nIn this context, the experiments with suppressed action potential firing reveal an additional functional aspect of type I LNs. They indicate that the hypothesized polar organization of type I LNs with strictly defined (and separated) input and output glomeruli is not entirely correct. When type I LNs were prevented from spiking by hyperpolarization or intracellular block of Na+ channels, we observed distinct, glomeruli-specific Ca2+ dynamics during odor stimulation. It is likely that these signals originate from Ca2+ influx through Ca2+ permeable excitatory receptors such as cholinergic receptors, suggesting that each neuron can potentially receive excitatory olfactory input in many innervated glomerulus. This notion agrees with previous studies in the fly, which suggested that individual GABAergic LNs receive broad, but not uniform, spatial patterns of excitation by either OSNs or PNs (Wilson and Laurent, 2005).\n\n### Inter- and intraglomerular signaling via nonspiking type II LN\n\nThe nonspiking LNs that have been described in the AL of insects typically innervate all glomeruli (Husch et al., 2009a; Husch et al., 2009b; Tabuchi et al., 2015). In most of these neurons, we observed highly heterogeneous Ca2+ dynamics between the individual glomeruli resulting in distinct tuning curves for the individual glomeruli. These heterogeneous and glomerulus-specific Ca2+ dynamics imply that type II LNs have distinct functional domains that are (more or less) independent from each other. Accordingly, most nonspiking type II LNs might contribute to microcircuits within glomeruli and mediate intraglomerular signaling rather than interconnecting multiple glomeruli.\n\nIntraglomerular circuits are known from the mouse or rat olfactory bulb (for review, see Ennis et al., 2015), where periglomerular, external tufted, and short axon cells interact to modulate the output of Mitral/Tufted cells (Aungst et al., 2003; Liu et al., 2016; Najac et al., 2015; Wachowiak and Shipley, 2006). Periglomerular cells are uniglomerular LNs that mediate intraglomerular synaptic signaling. Unlike periglomerular cells, cockroach type II LNs innervate all glomeruli. Still, as these LNs have only weak active membrane properties, postsynaptic potentials just spread within the same glomerulus. Therefore, these neurons could serve similar purposes, and few omniglomerular type II LNs could perform similar functions as many PG uniglomerular cells.\n\nIn addition, it is important to consider that nonspiking type II LNs are not a homogenous neuron population (Fusca et al., 2013; Husch et al., 2009b). In a subpopulation of type II LNs, we observed correlated Ca2+ dynamics in subsets of glomeruli. In principle, this could be caused by various mechanisms, including simultaneous input to multiple glomeruli or interglomerular signaling. Note that subpopulations of type II LNs responded to odorant stimulations with strong depolarizations, including spikelets, which apparently can propagate, at least to some extent, to a set of glomeruli. Since this subpopulation of nonspiking type II LNs (type IIa1 LNs) was previously shown to be cholinergic (Fusca et al., 2013; Neupert et al., 2018), they are likely excitatory. The intrinsic electrophysiological properties of the cholinergic type IIa LNs suggest that they might be part of an excitatory network, which activates neurons in specific sets of glomeruli. This hypothesis is in line with previous studies in the fruit fly, where excitatory LNs, while being multiglomerular, only activate specific glomeruli, thereby providing distinct arrays of glomeruli with excitatory input and distributing odor\u2010evoked activity over an ensemble of PNs (Das et al., 2017; Huang et al., 2010; Olsen et al., 2007; Root et al., 2007; Shang et al., 2007; reviewed in Wilson, 2013).\n\nWhile type IIa1 are cholinergic and type II LNs generally express multiple neuropeptides (Fusca et al., 2015; Neupert et al., 2012; Neupert et al., 2018), the primary transmitter of most type II LNs is yet to be revealed. One candidate is glutamate, an inhibitory transmitter in the Drosophila AL (Liu and Wilson, 2013) and cockroach metathoracic motor neurons (Sattelle, 1992).\n\nWe conclude that in the cockroach AL sensory inputs are processed and computed in inter- and intraglomerular circuits, which are formed by spiking type I and nonspiking type II LNs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lidocaine N-ethyl chloride</td>\n      <td>Alomone</td>\n      <td>QX-314;#Q-150</td>\n      <td>Channel blocker</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>https://imagej.net/software/fiji/</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Oregon Green 488 BAPTA-1 hexapotassium salt</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat. # O6806</td>\n      <td>Calcium indicator</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals and materials\n\nP. americana were reared in crowded colonies at 27\u00b0C under a 13:11 hr light/dark photoperiod regimen on a diet of dry rodent food, oatmeal, and water. The experiments were performed with adult males. Unless stated otherwise, all chemicals were obtained from Applichem (Darmstadt, Germany) or Sigma-Aldrich (Taufkirchen, Germany) and had the purity level \u2018pro analysis.\n\n### Intact brain preparation\n\nThe brain preparation leaving the entire olfactory network intact has been described previously (Demmer and Kloppenburg, 2009; Husch et al., 2009a; Kloppenburg et al., 1999). Animals were anesthetized by CO2, placed in a custom-built holder, and the head was immobilized with tape (tesa ExtraPower Gewebeband, Tesa, Hamburg, Germany). The head capsule was opened by cutting a window between the two compound eyes and the antennae\u2019s bases. The brain with its antennal nerves and attached antennae was dissected in extracellular saline (see below) and pinned in a Sylgard-coated (Dow Corning Corp., Midland, MI) recording chamber. To get access to the recording site, we desheathed parts of the AL using fine forceps, and preparations were enzymatically treated with a combination of papain (0.3 mg\u00b7ml\u20131, P4762, Sigma) and L-cysteine (1 mg\u00b7ml\u20131, 30090, Fluka) dissolved in extracellular saline (~3 min, room temperature [RT], ~24\u00b0C). For electrophysiological recordings, the somata of the AL neurons were visualized with a fixed stage upright microscope (AxioExaminer, Carl Zeiss, Jena, Germany) using a 20\u00d7 water-immersion objective (20\u00d7 W Apochromat, NA = 1) with a 4\u00d7 magnification changer, and infrared differential interference contrast optics (Dodt and Zieglg\u00e4nsberger, 1994).\n\n### Identification of AL neurons\n\nThe prerequisite to study the physiology of identified neurons is the unequivocal identification of neuron types. The identification was performed as described by Fusca et al., 2013. Briefly, AL neurons were first preidentified by the size and location of their somata. Recordings were performed under visual control from cell bodies in the ventrolateral somata group (VSG, Distler, 1989), where different neuron types are located in separated clusters. This preidentification has a high success rate for the major neuron types (>90%) and was verified in each case by the physiological and morphological characterization during and after the recording using the following criteria: two main LN types were identified by their distinctive physiological properties: (1) spiking type I LNs that generated Na+-driven action potentials upon odor stimulation and (2) nonspiking type II LNs, in which odor stimulation evoked depolarizations, but no Na+-driven action potentials (Husch et al., 2009a; Husch et al., 2009b). Type I LNs had arborizations in many, but not all, glomeruli. The density of processes varied between glomeruli of a given type I LNs. Type II LN had processes in all glomeruli. The density and distribution of arborizations were similar in all glomeruli of a given type II LN, but varied between different type II LN. Two subtypes (type IIa and type IIb) can be distinguished by the branch patterns within the glomeruli, the size and branch pattern of low-order neurites, odor responses, and active membrane properties (Husch et al., 2009b). Type IIa LNs had strong Ca2+-dependent active membrane properties and responded with odor-specific elaborate patterns of excitation and periods of inhibition. In a subset of the type IIa neurons, which are cholinergic (type IIa1, Fusca et al., 2013), the excitation included Ca2+-driven \u2018spikelets\u2019 riding on the depolarization. In contrast, type IIb LNs responded mostly with sustained, relatively smooth depolarizations.\n\n### Whole-cell recordings\n\nWhole-cell recordings were performed at RT following the methods described by Hamill et al., 1981. Electrodes with tip resistances between 2 and 3 M\u03a9 were fashioned from borosilicate glass (inner diameter 0.86 mm, outer diameter 1.5 mm, GB150-8P, Science Products, Hofheim, Germany) with a vertical pipette puller (PP-830 or PC-10, Narishige, Japan). Recording pipettes were filled with intracellular solution containing (in mM): 218 K-aspartate, 10 NaCl, 2 MgCl2, 10 HEPES, and 0.8 Oregon Green 488 BAPTA-1 hexapotassium salt (OGB1, O6806, Thermo Fisher Scientific, Waltham, MA) adjusted to pH 7.2 with KOH. In some experiments, 2 mM lidocaine N-ethyl chloride (QX-314, #Q-150, Alomone, Jerusalem, Israel) was added to the intracellular solution. During the experiments, if not stated otherwise, the cells were superfused constantly with extracellular solution containing (in mM): 185 NaCl, 4 KCl, 6 CaCl2, 2 MgCl2, 10 HEPES, 35 D-glucose. The solution was adjusted to pH 7.2 with NaOH.\n\nWhole-cell current-clamp recordings were made with an EPC10 patch-clamp amplifier (HEKA-Elektronik, Lambrecht, Germany) controlled by the program Patchmaster (version 2.53, HEKA-Elektronik) running under Windows. The electrophysiological data were sampled at 10 kHz. The recordings were low-pass filtered at 2 kHz with a 4-pole Bessel-Filter. Compensation of the offset potential and capacitive currents was performed using the \u2018automatic mode\u2019 of the EPC10 amplifier. Whole-cell capacitance was determined by using the capacitance compensation (C-slow) of the amplifier. The liquid junction potential between intracellular and extracellular solution was also compensated (16.9 mV, calculated with Patcher\u2019s-Power-Tools plug-in [https://www3.mpibpc.mpg.de/groups/neher/index.php?page=aboutppt] for Igor Pro 6 [Wavemetrics, Portland, Oregon]). Voltage errors due to series resistance (RS) were minimized using the RS-compensation of the EPC10. RS was compensated between 60% and 70% with a time constant (\u03c4) of 10 \u00b5s.\n\n### Odor stimulation\n\nTo deliver the odorants, we used a continuous airflow system. Carbon-filtered, humidified air was guided across the antenna at a flow rate of ~2 l\u00b7min\u20131 (\u2018main airstream\u2019) through a glass tube (inner diameter 10 mm) that was placed perpendicular to and within 20\u201330 mm distance of the antennae. To apply odorants, 5 ml of odorant-containing solutions (either pure or diluted in mineral oil; M8410, Sigma) were transferred into 100 ml glass vessels. Strips of filter paper in the odorant solution were used to facilitate evaporation. The concentration of each odorant was adjusted to match the vapor pressure of the odorant with the lowest value (eugenol). Dilutions were as follows: \u03b1-ionone 40.9% (I12409, Aldrich), \u00b1citral 24.2% (C83007, Aldrich), 1-hexanol 2.4% (52830, Fluka), benzaldehyde (418099, Aldrich) 2.2%, citronellal 8.7% (C2513, Aldrich), eugenol 100% (E51791, Aldrich), geraniol 73.7% (48799, Fluka), isoamylacetate (112674, Aldrich) 13.7%, and pyrrolidine 0.035% (83241, Fluka). The headspace of pure mineral oil was the control stimulus (blank). During a 500 ms stimulus, ~17 ml of the vessel volume was injected into the main air stream. The solenoids were controlled by the D/A-interface of the EPC10 patch-clamp amplifier and the Patchmaster software. Odorant-containing air was quickly removed from the experimental setup with a vacuum funnel (inner diameter 3.5 cm) placed 5 cm behind the antennae. To allow for sensory recovery, consecutive odorant stimulations of the same preparation were performed after intervals of at least 60 s with non-odorant containing air.\n\n### Calcium imaging\n\nOdor-evoked calcium dynamics were measured with the Ca2+ indicator OGB1 (see the intracellular solution), a single wavelength, high-affinity dye suitable to monitor fast intracellular Ca2+ signals. The imaging setup consisted of a Zeiss AxioCam/MRm CCD camera with a 1388 \u00d7 1040 chip and a Polychromator V (Till Photonics, Gr\u00e4felfing, Germany) that was coupled via an optical fiber into the Zeiss AxioExaminer upright microscope. The camera and polychromator were controlled by the software Zen pro, including the module \u2018Physiology\u2019 (2012 blue edition, Zeiss). After establishing the whole-cell configuration, neurons were held in current-clamp mode, and a hyperpolarizing current (~\u2013200 pA) was injected for about 45\u201360 min to allow for dye loading. After loading, up to nine different odorants were applied as 500 ms pulses onto the ipsilateral antenna. Odor-induced Ca2+ transients in the OGB1-loaded neurons were monitored by images acquired at 488 nm excitation with 50 ms exposure time and a frame rate of ~18 Hz. The emitted fluorescence was detected through a 500\u2013550 nm bandpass filter (BP525/50), and data were acquired using 5 \u00d7 5 on-chip binning. Images were recorded in arbitrary units (AU) and analyzed as 16-bit grayscale images.\n\n### Analysis of odor-evoked calcium signals\n\nThe analysis was performed offline using ImageJ (version 2.0.0-rc-64/1.51 s) and Prism 7 or 9 (GraphPad, CA). Amplitudes and kinetics of the Ca2+ signals were calculated as means (in AU) of individual innervated glomeruli, which were defined as the respective regions of interest (ROIs). ROIs were defined on transmitted light images of the investigated ALs. The Ca2+ signals are given as relative fluorescence changes (\u0394F/F0). To correct for bleaching, biexponential fits to the time courses of the glomerular Ca2+ signals during the blank stimulus, which lacked the odorant-evoked Ca2+ influx, were used.\n\nFor statistical analysis of data obtained for the different cell types, nonparametric Kruskal\u2013Wallis tests with Dunn\u2019s multiple comparisons tests were performed in Prism 7 or 9. Correlation coefficients from matrices of glomerular tuning curves were calculated with a confidence interval of 95% and are given as nonparametric Spearman correlation r. For the heatmaps representing the correlation coefficients, negative r values were set to zero. A significance level of 0.05 was accepted for all tests. All calculated values are expressed as mean \u00b1 standard deviation. In the box plots, horizontal lines show the median of the data. The boxes indicate the 25th and 75th percentiles. The lower and upper whiskers were calculated according to the \u2018Tukey\u2019 method. *p<0.05, **p<0.01. ***p<0.001. N values are given in brackets. The numerical data for the box plots are given in the Source data for the respective figures. Individual data of each recorded neurons are given in Individual Neurons-Source data 1.\n\n### Single-cell and double-labeling and confocal microscopy\n\nTo label individual cells, 1% (w/v) biocytin (B4261, Sigma) was added to the pipette solution. After the electrophysiological recordings, the brains were fixed in Roti-Histofix (P0873, Carl Roth, Karlsruhe, Germany) overnight at 4\u00b0C. Subsequently, the brains were rinsed in 0.1 M phosphate buffered saline (PBS, 3 \u00d7 20 min and then for ~12 hr, RT). PBS contained (in mM) 72 Na2HPO4 \u00d7 2H2O, 28 NaH2PO4 \u00d7 H2O, resulting in pH 7.2. To facilitate streptavidin penetration, the samples were treated with a commercially available collagenase/dispase mixture (1 mg\u00b7ml\u20131, 269638, Roche Diagnostics, Mannheim, Germany) and hyaluronidase (1 mg\u00b7ml\u20131, H3506, Sigma-Aldrich) in PBS (1 hr, 37 \u00b0C), rinsed in PBS (3 \u00d7 10 min, 4\u00b0C) and then preincubated in blocking solution, consisting of PBS containing 1% (w/v) Triton X-100 (A1388, AppliChem) and 10% (v/v) normal goat serum (S-1000, Vector Labs, Burlingame, CA) for 1 hr at RT. The brains were then incubated with Alexa 633 conjugated streptavidin (1:400, S21375, Invitrogen, Eugene, OR) in PBS supplemented with 10% (v/v) normal goat serum for ~12 hr at 4\u00b0C, rinsed in PBS (3 \u00d7 10 min, RT), dehydrated, cleared, and mounted in methylsalicylate.\n\nIn some preparations, we used immunohistochemistry to label synapsin to mark the glomeruli. After preincubation in blocking solution and before the streptavidin incubation, these brains were incubated for 5 days at 4\u00b0C with a monoclonal primary mouse antibody against the presynaptic vesicle protein synapsin I (3C11, supernatant; obtained from the Developmental Studies Hybridoma Bank, University of Iowa, RRID:AB_528479), diluted 1:50 in blocking solution. Subsequently, the brains were rinsed in PBS-1% Triton X-100 (2 \u00d7 2 hr, RT), incubated in Alexa 488 conjugated goat anti-mouse secondary antibody for 5 days at 4\u00b0C (1:200 in blocking solution, 115-545-062, Dianova, Hamburg, Germany) and rinsed in PBS-1% Triton X-100 (2 \u00d7 2 hr, RT) and PBS (3 \u00d7 10 min, RT). 3C11 (anti-SYNORF1) was deposited to the DSHB by Buchner, E. (DSHB Hybridoma Product 3C11 [anti SYNORF1, Klagges et al., 1996]).\n\nFluorescence images were captured with confocal microscopes equipped with Plan-Apochromat 10\u00d7 (numerical aperture 0.45) and Plan-Apochromat 20\u00d7 (numerical aperture 0.75) objectives (LSM 510, Zeiss) or with a 20\u00d7 objective (SP8, Leica Microsystems, Wetzlar, Germany), respectively. Alexa 633 was excited at 633 nm, and emission was collected through a 650 nm long-pass filter. Alexa 488 was excited at 488 nm, and emission was collected through a 505\u2013530 nm bandpass filter. Confocal images were adjusted for contrast and brightness and overlaid in ImageJ. The final figures were prepared in Affinity Designer (Serif, Nottingham, UK).\n",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "8823d03c-6c17-4341-a726-19f81c04d461",
+      "submission_id": "4d89fcb5-abf3-4145-8ea3-570315d9dfdf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65217.sa1](https://doi.org/10.7554/eLife.65217.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis study addresses the computational significance of different types of inhibitory local interneurons (LNs) in olfactory circuits, an interesting question of significant general interest. Using in vivo physiology and calcium imaging of odorant responses, the work provides direct experimental support for distinct roles for spiking and non-spiking LNs present in the antennal lobe of the cockroach Periplaneta Americana. The authors' overall conclusion is that in type I spiking LNs, odors evoke calcium signals globally and relatively uniformly across glomeruli in the antennal lobe and LN neurites in each glomerulus are broadly tuned to odor. In contrast, in type II nonspiking LNs, the authors report odor-specific patterns of calcium signals, with LN neurites in different glomeruli displaying distinct local odor tuning. These results have implications for how inhibitory systems work in other olfactory systems as well as other brain regions.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Task-specific roles of local interneurons for inter- and intraglomerular signaling in the insect antennal lobe.\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Mani Ramaswami as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Ronald Calabrese as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. A major issue that needs to be addressed pertains to the different amplitudes of calcium signals observed in non-spiking and spiking LNs. Strong signals are naturally expected to be more visible across planes and across glomeruli compared to weak ones \u2013 and so the concentration of odor stimuli needs to adjusted to better match the magnitude of calcium signals between cell types that are being directly compared. In its current form, it remains possible that the conclusion for global- versus odor-specific signals will not hold when average LN calcium activity is matched.\n\n(Obviously two-photon imaging, which can provide better optical sectioning and alleviate biases introduced by out of plane signals would improve the study, but this would require easy access to such equipment)\n\n2. The use of an odorant that is known to narrowly activate just one or two glomeruli based on OSN innervation patterns could potentially help to clarify the roles of intra- versus interglomerular inhibition in each LN type. if an odor elicits LN calcium signals in only a subset of glomeruli, it's hard to know if those signals arise from direct local input to those glomeruli (purely intraglomerular inhibition), or whether ORN input to one glomerulus is eliciting calcium signals in another glomerulus (selective interglomerular inhibition). This would most easily clarified by comparing glomerular patterns of ORN input and LN activation. Alternatively, by using a odor that is mostly selective for a single glomerulus, one could evaluate the degree of signal spread in the LN neurite arbor to determine if LN signals are locally confined to the input glomerulus, as would be expected if the LNs function in intraglomerular inhibition. Perhaps such could be identified from knowledge of the chemical ecology of the cockroach? If this is not done, the authors may hypothesize that a function of nonspiking LNs is intraglomerular inhibition, but cannot 100% rule out selective interglomerular inhibition (which is potentially even more interesting). Thus, the language should be tempered down and duly qualified to acknowledge this possibility. (This may serve the authors well down the line if selective interglomerular inhibition ends up also being involved)\n\n3. The Results sections should also be enhanced to better clarify the hypotheses being tested and the likely interpretations of the observations.\n",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "615753e5-d676-4d8a-b6ab-d5bc74f3bd60",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C1",
+      "claim": "Local interneurons (LNs) mediate complex interactions within the antennal lobe, the primary olfactory system of insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Local interneurons (LNs) mediate complex interactions within the antennal lobe, the primary olfactory system of insects, and the functional analog of the vertebrate olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about LN function that draws from established scientific understanding of the insect olfactory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "6187df0b-e7e2-4c64-a464-92779d6f715a",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C2",
+      "claim": "The antennal lobe is the functional analog of the vertebrate olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "Local interneurons (LNs) mediate complex interactions within the antennal lobe, the primary olfactory system of insects, and the functional analog of the vertebrate olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established comparison in the field based on structural and functional similarities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "bb4abeaa-37ba-44cb-9b08-6089eab8abd6",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C3",
+      "claim": "In Periplaneta americana, several types of LNs with distinctive physiological and morphological properties can be defined.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cockroach Periplaneta americana, as in other insects, several types of LNs with distinctive physiological and morphological properties can be defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by previous research and is confirmed by the experimental observations in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "89b6e8f8-6758-411a-9145-e6d8c4346b52",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C4",
+      "claim": "Spiking GABAergic LNs reacted to odorant stimulation with a uniform rise in [Ca2+]i in the ramifications of all innervated glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiking GABAergic LNs reacted to odorant stimulation with a uniform rise in [Ca2+]i in the ramifications of all innervated glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly supported by the calcium imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "c7a5260a-0267-4bde-8407-bcbfd8d5deb7",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C5",
+      "claim": "In nonspiking LNs, glomerular Ca2+ signals were odorant specific and varied between glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in nonspiking LNs, glomerular Ca2+ signals were odorant specific and varied between glomeruli, resulting in distinct, glomerulus-specific tuning curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly supported by the calcium imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "dfeafab7-5d63-45a9-8378-189f831ef9ce",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C6",
+      "claim": "Nonspiking LNs exhibit distinct, glomerulus-specific tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in nonspiking LNs, glomerular Ca2+ signals were odorant specific and varied between glomeruli, resulting in distinct, glomerulus-specific tuning curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly supported by the calcium imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "e4f12a4e-e947-4cb8-8089-6928e8953104",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C7",
+      "claim": "Spiking LNs play a primary role in interglomerular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell type-specific differences in Ca2+ dynamics support the idea that spiking LNs play a primary role in interglomerular signaling, while they assign nonspiking LNs an essential role in intraglomerular signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observed calcium dynamics data and their functional implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "34503b2a-f3fa-4489-a44f-9de51a44f3bc",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C8",
+      "claim": "Nonspiking LNs play an essential role in intraglomerular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell type-specific differences in Ca2+ dynamics support the idea that spiking LNs play a primary role in interglomerular signaling, while they assign nonspiking LNs an essential role in intraglomerular signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observed calcium dynamics data and their functional implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "6b753a70-861a-4b1c-a89f-07668b64d6c1",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C9",
+      "claim": "The antennal lobe shows striking structural and functional similarities to the vertebrates' olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "The AL is the first synaptic relay in the insect olfactory system, showing striking structural and functional similarities to the vertebrates' olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established comparative neuroscience knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "5e997d88-174f-4d83-ae4b-01032ab87400",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C10",
+      "claim": "LNs in the antennal lobe are the functional equivalent of granule cells, periglomerular cells, and short axon cells in the vertebrate olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "In many regards, the LNs in the AL are the functional equivalent of granule cells, but also periglomerular and short axon cells in the vertebrate olfactory bulb (Ennis et al., 2015; Shepherd et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "ac1fe03b-a56f-4a6f-b315-71750aefe75a",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C11",
+      "claim": "LNs help to structure the odor representation in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "They help to structure the odor representation in the AL, ultimately shaping the tuning profiles of the olfactory projection (output) neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established understanding of LN function in olfactory processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "e2c588db-11b8-4aa1-a5f5-de23fd0a4fed",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C12",
+      "claim": "LNs shape the tuning profiles of olfactory projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "They help to structure the odor representation in the AL, ultimately shaping the tuning profiles of the olfactory projection (output) neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established understanding of LN function in olfactory processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "b77aae40-235f-4282-b0b7-76b4b2afd27c",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C13",
+      "claim": "LNs have been originally characterized as GABAergic and multiglomerular.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on initial studies, LNs originally have been characterized as GABAergic and multiglomerular (Distler, 1989; Hoskins et al., 1986; Waldrop et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited historical references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "7a7073d0-bfcd-40e5-9108-3e552aeab2e2",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C14",
+      "claim": "LNs can generate Na+-driven action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, they can generate Na+-driven action potentials (Chou et al., 2010; Christensen et al., 1993; Husch et al., 2009a; Seki et al., 2010) or Ca2+-driven spikelets (Laurent and Davidowitz, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "431ef288-8a2a-40d3-b6c7-0e30511d8646",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C15",
+      "claim": "LNs can generate Ca2+-driven spikelets.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, they can generate Na+-driven action potentials (Chou et al., 2010; Christensen et al., 1993; Husch et al., 2009a; Seki et al., 2010) or Ca2+-driven spikelets (Laurent and Davidowitz, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "81b6e7e4-7007-43d4-a8ce-fecf6604721f",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C16",
+      "claim": "LNs have been associated with inhibitory interglomerular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, these neurons have been associated with inhibitory interglomerular signaling, that is, with mediating lateral inhibition to enhance contrast and to control timing and synchronization of neuronal activity (Assisi and Bazhenov, 2012; Assisi et al., 2011; Christensen et al., 1998; Fujiwara et al., 2014; Hong and Wilson, 2015; MacLeod and Laurent, 1996; Nagel and Wilson, 2016; Olsen and Wilson, 2008; Sachse and Galizia, 2002; Wilson, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "8d3fb77f-5305-4212-9bca-2761a468ba8a",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C17",
+      "claim": "LNs mediate lateral inhibition to enhance contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, these neurons have been associated with inhibitory interglomerular signaling, that is, with mediating lateral inhibition to enhance contrast and to control timing and synchronization of neuronal activity (Assisi and Bazhenov, 2012; Assisi et al., 2011; Christensen et al., 1998; Fujiwara et al., 2014; Hong and Wilson, 2015; MacLeod and Laurent, 1996; Nagel and Wilson, 2016; Olsen and Wilson, 2008; Sachse and Galizia, 2002; Wilson, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "48927ae2-c37c-4275-9309-3534edfd468e",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C18",
+      "claim": "LNs control timing and synchronization of neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, these neurons have been associated with inhibitory interglomerular signaling, that is, with mediating lateral inhibition to enhance contrast and to control timing and synchronization of neuronal activity (Assisi and Bazhenov, 2012; Assisi et al., 2011; Christensen et al., 1998; Fujiwara et al., 2014; Hong and Wilson, 2015; MacLeod and Laurent, 1996; Nagel and Wilson, 2016; Olsen and Wilson, 2008; Sachse and Galizia, 2002; Wilson, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "14f6fcdc-72e5-43ab-8478-c409c3865821",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C19",
+      "claim": "LNs can synthesize neurotransmitters and neuromodulators other than GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies showed that LNs can also synthesize other potential neurotransmitters and neuromodulators (Berg et al., 2007; Chou et al., 2010; Das et al., 2011; Distler, 1990; Fusca et al., 2013; Fusca et al., 2015; Neupert et al., 2012; Shang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "9354e54d-7908-41ca-b033-0e7b077e47fa",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C20",
+      "claim": "LNs can be excitatory.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, they can be excitatory, distributing excitatory synaptic input to (projection) neurons in other glomeruli by chemical and electrical synapses (Assisi et al., 2012; Das et al., 2017; Huang et al., 2010; Olsen et al., 2007; Shang et al., 2007; Yaksi and Wilson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "576f2ef9-8f2b-4d04-bcbc-728a944bfb72",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C21",
+      "claim": "LNs distribute excitatory synaptic input to neurons in other glomeruli by chemical and electrical synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, they can be excitatory, distributing excitatory synaptic input to (projection) neurons in other glomeruli by chemical and electrical synapses (Assisi et al., 2012; Das et al., 2017; Huang et al., 2010; Olsen et al., 2007; Shang et al., 2007; Yaksi and Wilson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "2055a280-234f-47a5-9c32-774bfeb68db6",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C22",
+      "claim": "Nonspiking LNs with weak active membrane properties that do not generate Na+-driven action potentials have been described in both holo- and hemimetabolous insect species.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, nonspiking LNs with weak active membrane properties that do not generate Na+-driven action potentials have been described in both holo- and hemimetabolous insect species (Fusc\u00e0 and Kloppenburg, 2021; Husch et al., 2009a; Husch et al., 2009b; Tabuchi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "9a11044e-b5e3-4f9b-8c36-b7aa740e9804",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C23",
+      "claim": "The functional role of nonspiking LNs for odor information processing is not clear yet.",
+      "claim_type": "EXPLICIT",
+      "source": "While their functional role for odor information processing is not clear yet, it is plausible to assume that they are functionally highly relevant since they have been found across different insect species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "3a235acb-366c-4edd-850a-440faf32ece8",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C24",
+      "claim": "Nonspiking LNs are functionally highly relevant since they have been found across different insect species.",
+      "claim_type": "EXPLICIT",
+      "source": "While their functional role for odor information processing is not clear yet, it is plausible to assume that they are functionally highly relevant since they have been found across different insect species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on their widespread occurrence across species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "64c3c26a-6631-4449-97cc-057040f2f48a",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C25",
+      "claim": "In Periplaneta americana, two main LN types have been identified: spiking type I LNs and nonspiking type II LNs.",
+      "claim_type": "EXPLICIT",
+      "source": "In Periplaneta americana, two main LN types, each with distinct functional properties, have been identified: spiking type I LNs and nonspiking type II LNs (Fusca et al., 2013; Fusc\u00e0 and Kloppenburg, 2021; Husch et al., 2009a; Husch et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "742c533c-7d0e-4e83-92da-62a900d27e1c",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C26",
+      "claim": "Spiking type I LNs generate Na+-driven action potentials upon odor stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiking type I LNs generate Na+-driven action potentials upon odor stimulation and have a multiglomerular branching pattern with ramifications in many, but not all, glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characteristic feature of type I LNs supported by previous studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "0057d52f-8df6-4629-b3f5-9cd4015ad7c7",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C27",
+      "claim": "Type I LNs have a multiglomerular branching pattern with ramifications in many, but not all, glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiking type I LNs generate Na+-driven action potentials upon odor stimulation and have a multiglomerular branching pattern with ramifications in many, but not all, glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a morphological characteristic supported by previous studies and confirmed by the data in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "12114193-e3e0-47d0-b6fa-dd335af5a639",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C28",
+      "claim": "The density and pattern of ramifications vary between glomeruli in type I LNs from very dense to sparse.",
+      "claim_type": "EXPLICIT",
+      "source": "The density and pattern of ramifications vary between glomeruli from very dense to sparse, indicating a polarity with defined synaptic input and output regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a morphological observation that supports functional interpretations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "5af9b2e7-c811-4820-b08b-a62c5791eb42",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C29",
+      "claim": "The variable density of ramifications in type I LNs indicates a polarity with defined synaptic input and output regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The density and pattern of ramifications vary between glomeruli from very dense to sparse, indicating a polarity with defined synaptic input and output regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on morphological observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "3f3bac05-7cd3-4984-95d1-9037fb0da7eb",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C30",
+      "claim": "All type I LNs are GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "All type I LNs are GABAergic (Distler, 1989; Husch et al., 2009a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "1e140ad9-7c9c-49f5-9b20-cc440ed747b1",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C31",
+      "claim": "Nonspiking type II LNs do not have voltage-activated transient Na+ currents.",
+      "claim_type": "EXPLICIT",
+      "source": "The nonspiking type II LNs do not have voltage-activated transient Na+ currents and cannot generate Na+-driven action potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a physiological characteristic of type II LNs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "e4a59782-0cff-4aab-be33-f82751de12f4",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C32",
+      "claim": "Type II LNs cannot generate Na+-driven action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The nonspiking type II LNs do not have voltage-activated transient Na+ currents and cannot generate Na+-driven action potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a physiological characteristic of type II LNs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "267dc425-bfdb-457d-b52d-8b7f32e4ca94",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C33",
+      "claim": "Type II LNs have comparatively large voltage-dependent Ca2+ conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "They have comparatively large voltage-dependent Ca2+ conductances, which play a crucial role in mediating their active membrane properties (Fusca et al., 2013; Husch et al., 2009a; Husch et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "e17aecb8-8a14-4972-b25e-0db6f00857f4",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C34",
+      "claim": "Voltage-dependent Ca2+ conductances play a crucial role in mediating the active membrane properties of type II LNs.",
+      "claim_type": "EXPLICIT",
+      "source": "They have comparatively large voltage-dependent Ca2+ conductances, which play a crucial role in mediating their active membrane properties (Fusca et al., 2013; Husch et al., 2009a; Husch et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "443d6c51-47c8-4410-99bc-71b7e696a72e",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C35",
+      "claim": "Type II LNs consist of two main subtypes: type IIa and type IIb LNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Type II LNs consist of two main subtypes, type IIa and type IIb LNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification based on previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "bda64af6-c41c-430e-9ee1-1c386891406d",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C36",
+      "claim": "Type IIa LNs typically respond with complex, odor-specific patterns of excitation that can include periods of inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IIa LNs typically respond with complex, odor-specific patterns of excitation that can include periods of inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a physiological characteristic of type IIa LNs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "dd2c8435-08f4-4c07-ad3d-cfca51b98f19",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C37",
+      "claim": "Type IIa LNs can be further subdivided into type IIa1 and type IIa2.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IIa LNs can be further subdivided into type IIa1 and type IIa2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification based on previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "acf48571-05ef-4659-94ce-c353aff6be57",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C38",
+      "claim": "Type IIa1 LNs are cholinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IIa1 LNs are cholinergic and can generate Ca2+-driven spikelets on top of odor-induced depolarizations (Fusca et al., 2013; Neupert et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "b60220f9-7afd-4fc3-ae0c-6ba2f51e06ce",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C39",
+      "claim": "Type IIa1 LNs can generate Ca2+-driven spikelets on top of odor-induced depolarizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IIa1 LNs are cholinergic and can generate Ca2+-driven spikelets on top of odor-induced depolarizations (Fusca et al., 2013; Neupert et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "4026da7d-14bf-4ba1-8101-f129eeb12596",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C40",
+      "claim": "Type IIa2 LNs do not generate spikelets.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IIa2 LNs do not generate spikelets, and their primary transmitter is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a physiological characteristic of type IIa2 LNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "974071e6-e5e0-4ccf-906e-82165955bfd3",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C41",
+      "claim": "The primary transmitter of type IIa2 LNs is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IIa2 LNs do not generate spikelets, and their primary transmitter is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "7efb8f21-7f49-4c2c-a456-1558662a089b",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C42",
+      "claim": "Type IIb LNs have weak active membrane properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IIb LNs have weak active membrane properties and respond to odor stimulation with sustained, relatively smooth depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a physiological characteristic of type IIb LNs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "519e9df9-8f06-4695-89b4-3bac22ea07f5",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C43",
+      "claim": "Type IIb LNs respond to odor stimulation with sustained, relatively smooth depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IIb LNs have weak active membrane properties and respond to odor stimulation with sustained, relatively smooth depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a physiological characteristic of type IIb LNs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "b682aa76-da31-48b8-a919-b5a2b5caff29",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C44",
+      "claim": "The primary transmitter of type IIb LNs is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Their primary transmitter is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "a1bfee7b-6fea-4026-a03b-eccae0e4f5cb",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C45",
+      "claim": "All type II LNs are omniglomerular, with branches in virtually all glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "All type II LNs are omniglomerular, with branches in virtually all glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a morphological characteristic supported by previous studies and confirmed by the data in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "27516792-6d42-4a8c-8484-80d222815700",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C46",
+      "claim": "The density and pattern of arborizations are similar in all glomeruli of a given type II LN but vary between different type II LNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The density and pattern of arborizations are similar in all glomeruli of a given type II LN but vary between different type II LNs (Husch et al., 2009a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a morphological observation supported by a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "56bcc1d6-3f73-42e4-8aa9-474e8ee05cf7",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C47",
+      "claim": "In type IIa LNs, the ramifications are similar and evenly distributed over each glomerulus of an individual neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "In type IIa LNs, the ramifications are similar and evenly distributed over each glomerulus of an individual neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a morphological characteristic of type IIa LNs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "407d1f50-7c0b-4365-b015-08e006464ce7",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C48",
+      "claim": "In type IIb neurons, the branches cover only parts of each glomerulus, often in a specific layer.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in type IIb neurons, the branches cover only parts of each glomerulus, often in a specific layer (Husch et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a morphological characteristic supported by a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "c6880980-fc7a-43e4-a6ce-8694bd661935",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C49",
+      "claim": "Nonspiking type II LNs are primarily involved in intraglomerular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their functional and morphological properties, it can be hypothesized that nonspiking type II LNs are primarily involved in intraglomerular signaling since the graded changes in membrane potentials can only spread within the same or electrotonically close glomeruli, as was proposed for nonspiking LNs in the rabbit olfactory bulb (Bufler et al., 1992b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on functional and morphological properties, supported by a cited reference from a related system.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "480f8dca-34f9-43b5-bd3b-8dbb009b935b",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C50",
+      "claim": "Graded changes in membrane potentials in nonspiking LNs can only spread within the same or electrotonically close glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their functional and morphological properties, it can be hypothesized that nonspiking type II LNs are primarily involved in intraglomerular signaling since the graded changes in membrane potentials can only spread within the same or electrotonically close glomeruli, as was proposed for nonspiking LNs in the rabbit olfactory bulb (Bufler et al., 1992b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on biophysical principles and supported by a cited reference.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "f86e3034-7303-4c6f-b9cc-a5015d62633a",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C51",
+      "claim": "Type I LNs are GABAergic and inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiking type I LNs are GABAergic, inhibitory, and innervate many but not all glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous studies and is consistent with the data in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "d25480f5-05d2-4348-a374-81180f25c788",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C52",
+      "claim": "Type I LNs innervate many but not all glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiking type I LNs are GABAergic, inhibitory, and innervate many but not all glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a morphological characteristic confirmed by the data in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "b1872b06-541f-4e63-b995-bb549327b333",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C53",
+      "claim": "Some glomeruli are densely innervated by type I LNs, while others are more sparsely or not at all innervated.",
+      "claim_type": "EXPLICIT",
+      "source": "While some glomeruli are densely innervated, others are more sparsely or not at all innervated (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the morphological data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "0e6abc60-27cd-4238-9794-2f18ec93fae9",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C54",
+      "claim": "The variable innervation pattern of type I LNs reflects an organization with distinctive input and output glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been considered that this reflects an organization with distinctive input and output glomeruli (Galizia and Kimmerle, 2004; Husch et al., 2009a; Wilson and Laurent, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by cited references.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "9231aceb-6cd3-40fd-ac07-60b73ca06d1c",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C55",
+      "claim": "In type I LNs, synaptic input is integrated and triggers action potential firing.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, synaptic input is integrated and triggers action potential firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of a functional model based on the properties of type I LNs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "8b064165-e8f5-4cfa-bd2e-76ed21128ad8",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C56",
+      "claim": "Action potentials in type I LNs propagate to the innervated glomeruli and provide a defined glomeruli array with inhibitory synaptic input.",
+      "claim_type": "EXPLICIT",
+      "source": "The action potentials propagate to the innervated glomeruli and provide a defined glomeruli array with inhibitory synaptic input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of a functional model based on the properties of type I LNs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "94a2aa51-6817-4fd5-abda-b01b8f0e11aa",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C57",
+      "claim": "Glomeruli can interact independently of their spatial and electrotonic distance via type I LNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Glomeruli can interact independently of their spatial and electrotonic distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the action potential-mediated signaling in type I LNs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "d5e9f60d-0bd5-47ab-8e2f-b79cb3c13922",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C58",
+      "claim": "Odor-evoked glomerular Ca2+ signals in type I LNs are dominated by Ca2+ influx through voltage-gated channels activated by action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, one would expect that odor-evoked glomerular Ca2+ signals are dominated by Ca2+ influx through voltage-gated channels that are activated by the action potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the functional model, which is confirmed by the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "074286c3-68e1-4197-9e3a-16dee2be1616",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C59",
+      "claim": "Odor-induced Ca2+ signals in type I LNs should be detectable and comparable in all innervated glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, odor-induced Ca2+ signals should be detectable and comparable in all innervated glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the functional model, which is confirmed by the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "aebc525d-f2f5-4aaf-8558-4431905ed03a",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C60",
+      "claim": "Type II LNs have very similar branching patterns in all glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, nonspiking type II LNs have very similar branching patterns in all glomeruli (Figure 1B, Husch et al., 2009b), suggesting that both input and output can occur in every glomerulus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a morphological observation supported by Figure 1B and a cited reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "67d21995-9c2b-4188-b7f8-0ee8a99de63f",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C61",
+      "claim": "The similar branching patterns in type II LNs suggest that both input and output can occur in every glomerulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, nonspiking type II LNs have very similar branching patterns in all glomeruli (Figure 1B, Husch et al., 2009b), suggesting that both input and output can occur in every glomerulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on morphological observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "55aea763-f855-43f0-8029-600ff979ccda",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C62",
+      "claim": "Synaptic input during olfactory stimulation typically occurs only in a limited number of glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the receptor and sensillum type-specific input configuration of the glomeruli in the AL (Fujimura et al., 1991; Watanabe et al., 2012), synaptic input during olfactory stimulation typically occurs only in a limited number of glomeruli (Sachse et al., 1999; Silbering et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited references about the organization of olfactory input.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "cc42026a-4f2b-40cf-b75f-787f44ef760d",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C63",
+      "claim": "Stimulus-evoked graded postsynaptic potentials in type II LNs can only spread within the same glomerulus or electrotonically nearby glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting stimulus-evoked graded postsynaptic potentials can only spread within the same glomerulus or electrotonically nearby glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on biophysical principles of signal propagation in nonspiking neurons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "954db9a3-2538-4328-9d5f-a4cbff4947c3",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C64",
+      "claim": "Ca2+ signals in type II LNs are dominated by odorant-evoked Ca2+ influx through excitatory ligand-gated channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Since these neurons cannot generate Na+-driven action potentials, we hypothesize that the Ca2+ signals are dominated by odorant-evoked Ca2+ influx through excitatory ligand-gated channels (Oliveira et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the physiological properties of type II LNs, supported by a cited reference.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "d9af89f2-9427-45fa-ab32-20e6047db7f3",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C65",
+      "claim": "This study is based on 23 recordings of type I LNs and 18 recordings of type II LNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this study is based on 23 recordings of type I LNs and 18 recordings of type II LNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the sample size of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "3fc03f53-161b-4f45-9d26-92f5df5304c9",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C66",
+      "claim": "For each recorded LN, between 9 and 25 distinct innervated glomeruli could be identified and individually imaged and analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "For each recorded LN, between 9 and 25 distinct innervated glomeruli could be identified and individually imaged and analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology and data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "db4082e7-b8a0-4218-9e9e-4aa89a3f2d5a",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C67",
+      "claim": "The odor-induced Ca2+ dynamics were highly reproducible when the antennae were repeatedly stimulated with the same odorant.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first set of experiments, we showed that the odor-induced Ca2+ dynamics were highly reproducible when the antennae were repeatedly stimulated with the same odorant (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly demonstrated by the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "59738729-317b-44b9-9fc5-29665aa9fc70",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C68",
+      "claim": "LNs responded very reproducibly to repeated olfactory stimulations in previous electrophysiological studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with previous electrophysiological studies, in which LNs responded very reproducibly to repeated olfactory stimulations (Husch et al., 2009a; Husch et al., 2009b; Olsen and Wilson, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "5f343147-b556-4e0c-86ea-218ae8cdfbdb",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C69",
+      "claim": "All recorded type I LNs displayed characteristic morphological features with arborizations in multiple glomeruli with varying neurite densities between glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "All recorded type I LNs displayed characteristic morphological features, that is, arborizations in multiple glomeruli with varying neurite densities between glomeruli (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the morphological data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "9a7c9d5b-442c-452e-b3f0-b46ba15c00ef",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C70",
+      "claim": "Type I LNs reacted to odor stimulation with odorant-specific patterns of overshooting action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiologically, type I LNs reacted to odor stimulation of the antennae with odorant-specific patterns of overshooting action potentials (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the electrophysiological data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "9489358e-f318-4f67-a421-780d49a678c1",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C71",
+      "claim": "The glomerular Ca2+ signals in type I LNs were time-locked with the electrophysiological responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The glomerular Ca2+ signals were time-locked with the electrophysiological responses and matched the spike pattern of the electrophysiological recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the combined electrophysiological and imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "4c6f68b7-e867-46e9-b5fa-3468c4075cd0",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C72",
+      "claim": "The glomerular Ca2+ signals in type I LNs matched the spike pattern of the electrophysiological recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "The glomerular Ca2+ signals were time-locked with the electrophysiological responses and matched the spike pattern of the electrophysiological recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the combined electrophysiological and imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "e64dd469-9694-42d9-a21d-a46a0eae84f2",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C73",
+      "claim": "While the absolute amplitudes of the Ca2+ signals varied between individual glomeruli in type I LNs, the time course and overall structure of the Ca2+ signals were very similar in all recorded glomeruli for a particular odorant.",
+      "claim_type": "EXPLICIT",
+      "source": "While the absolute amplitudes of the Ca2+ signals during a given odorant varied between individual glomeruli, the time course and overall structure of the Ca2+ signals were very similar in all recorded glomeruli for a particular odorant (Figure 3B, Figure 3\u2014figure supplement 1), resulting in identical tuning curves for all glomeruli of a given neuron (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the imaging data shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "c7656bdd-c6fc-4610-9a90-a78e86f31dd3",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C74",
+      "claim": "The similar Ca2+ dynamics across glomeruli in type I LNs resulted in identical tuning curves for all glomeruli of a given neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "While the absolute amplitudes of the Ca2+ signals during a given odorant varied between individual glomeruli, the time course and overall structure of the Ca2+ signals were very similar in all recorded glomeruli for a particular odorant (Figure 3B, Figure 3\u2014figure supplement 1), resulting in identical tuning curves for all glomeruli of a given neuron (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the tuning curve data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "604dba71-86ee-462d-a244-c1eb0d3a98fb",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C75",
+      "claim": "Tuning curves of all imaged glomeruli of a given type I LN always correlated with coefficients of ~1.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, tuning curves of all imaged glomeruli of a given neuron always correlated with coefficients of ~1, with a mean correlation coefficient across all investigated spiking LNs of r = 0.95 \u00b1 0.06 (N = 16, Figure 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly calculated from the tuning curve data shown in Figure 3D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "a6e1b15f-33db-4d56-b68d-4bb1246ca6ff",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C76",
+      "claim": "The mean correlation coefficient across all investigated spiking type I LNs was r = 0.95 \u00b1 0.06 (N = 16).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, tuning curves of all imaged glomeruli of a given neuron always correlated with coefficients of ~1, with a mean correlation coefficient across all investigated spiking LNs of r = 0.95 \u00b1 0.06 (N = 16, Figure 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical summary of the correlation data shown in Figure 3D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "17b1b5b8-86f7-4643-b8ef-be4f0c02c63a",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C77",
+      "claim": "When action potential generation in type I LNs was inhibited by hyperpolarization, the neurons responded with odorant-specific graded depolarizations.",
+      "claim_type": "EXPLICIT",
+      "source": "When the generation of action potentials is inhibited, the remaining Ca2+ signals should mainly reflect Ca2+ influx via ligand-gated channels (e.g., cholinergic receptors, Oliveira et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction that is confirmed by the experimental data shown in Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "f192a8e8-7191-4673-89ef-1899a7771a04",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C78",
+      "claim": "When action potential firing was prevented by hyperpolarization in type I LNs, odor stimulation still elicited Ca2+ signals in the glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "When action potential firing was prevented by hyperpolarization, odor stimulation still elicited Ca2+ signals in the glomeruli (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the imaging data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "574ce73c-a685-457b-bac6-dbb96081918f",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C79",
+      "claim": "When action potential firing was prevented in type I LNs, the uniformity of the Ca2+ signals between different glomeruli disappeared.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides a reduction in amplitude, the uniformity of the Ca2+ signals between different glomeruli disappeared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "9ed54be7-0e2d-4290-924c-5536f7d193f6",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C80",
+      "claim": "When action potential firing was prevented in type I LNs, the tuning curves of the individual glomeruli became different from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, the tuning curves of the individual glomeruli became different from each other (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the tuning curve data shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "9f3aea59-1aa9-4797-894d-9b9f85763576",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C81",
+      "claim": "The mean correlation coefficient across all hyperpolarized type I LNs was r = 0.75 \u00b1 0.19 (N = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, this is reflected in the glomerulus-specific odorant responses and the diverse correlations between the glomerular tuning curves, resulting in a decreased mean correlation coefficient across all hyperpolarized type I LNs of r = 0.75 \u00b1 0.19 (N = 6, Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical summary of the correlation data shown in Figure 4C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "d00d7640-b26b-4111-87d3-cfd38b490396",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C82",
+      "claim": "When action potential firing was suppressed by intracellularly blocking Na+ channels with QX-314 in type I LNs, similar results were obtained as with hyperpolarization (r = 0.74 \u00b1 0.26, N = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained when action potential firing was suppressed by intracellularly blocking Na+ channels with QX-314 (r = 0.74 \u00b1 0.26, N = 5, Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical summary of the correlation data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "6108ea73-fd89-441f-94fb-777b0530918a",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C83",
+      "claim": "Differences in mean correlation coefficients were significant between control and hyperpolarized type I LNs (p=0.0073).",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in mean correlation coefficients were significant between control and hyperpolarized type I LNs (p=0.0073) as well as between control and type I LNs that were treated with QX-314 (p=0.0142).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the comparison of experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "425aae85-0177-4cf5-8725-2ae4d0312454",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C84",
+      "claim": "Differences in mean correlation coefficients were significant between control and type I LNs that were treated with QX-314 (p=0.0142).",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in mean correlation coefficients were significant between control and hyperpolarized type I LNs (p=0.0073) as well as between control and type I LNs that were treated with QX-314 (p=0.0142).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the comparison of experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "26dff730-03d3-4d22-8095-90275063d015",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C85",
+      "claim": "Mean correlation coefficients of hyperpolarized and QX-314-treated type I LNs were not significantly different (p>0.999).",
+      "claim_type": "EXPLICIT",
+      "source": "Mean correlation coefficients of hyperpolarized and QX-314-treated type I LNs were not significantly different (p>0.999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the comparison of experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "c85d092e-a927-4a52-82c0-9a785fdc74c9",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C86",
+      "claim": "The observed large Ca2+ signals in type I LNs are mediated mainly by voltage-gated Ca2+ channels activated by action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments support the idea that the observed large Ca2+ signals are mediated mainly by voltage-gated Ca2+ channels, which are activated by the strong depolarizations of the action potentials propagating through the neuron into the innervated glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental results with hyperpolarization and QX-314 treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "34875e83-3b29-4882-b519-6c666b48a831",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C87",
+      "claim": "Large Ca2+ signals in type I LNs likely mask small local Ca2+ signals elicited by ligand-gated (postsynaptic) Ca2+ influx.",
+      "claim_type": "EXPLICIT",
+      "source": "These large signals likely mask small local Ca2+ signals elicited by ligand-gated (postsynaptic) Ca2+ influx into the recorded neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results showing different Ca2+ dynamics when action potentials are suppressed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "ae4fe2a4-e27c-4433-a7c5-6bee679eb4e7",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C88",
+      "claim": "Preventing the generation of action potentials selectively in type I LNs unmasked small local Ca2+ signals, which are interpreted as evidence for localized excitatory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Preventing the generation of action potentials selectively in the recorded neurons unmasked small local Ca2+ signals, which we interpret as solid evidence for localized excitatory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results with hyperpolarization and QX-314 treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "923e617e-700e-4248-a443-cbca87629392",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C89",
+      "claim": "Individual type I LNs receive excitatory input in multiple glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we observed these signals in more than one glomerulus of a given neuron, we consider this to be physiological evidence that individual type I LNs receive excitatory input not only in one but in multiple glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observation of localized Ca2+ signals in multiple glomeruli when action potentials are suppressed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "acd55904-140b-49f8-8492-3392401efd8d",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C90",
+      "claim": "Type I LNs integrate and transform their synaptic input to action potential firing to provide inhibitory synaptic input (lateral inhibition) to neurons in a defined array of glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results are in line with the conception that type I LNs integrate and transform their synaptic input to action potential firing to provide inhibitory synaptic input (lateral inhibition) to neurons in a defined array of glomeruli (Assisi et al., 2011; Fujiwara et al., 2014; Hong and Wilson, 2015; Nagel and Wilson, 2016; Olsen and Wilson, 2008; Sachse and Galizia, 2002; Wilson, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results and supported by cited references.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "54147500-563b-43ca-b8d7-e9752f57505b",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C91",
+      "claim": "An individual type I LN receives excitatory input not only in one but in several glomeruli, which is in line with previous structural and ultrastructural studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also provide physiological evidence that an individual type I LN receives excitatory input not only in one but in several glomeruli, which is in line with previous structural- and ultrastructural studies that reported evidence for both pre- and postsynaptic profiles in individual glomeruli (Berck et al., 2016; Distler and Boeckh, 1997b; Mohamed et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental results and supported by cited references.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "8aa6e061-8158-4388-b23d-f763b5da2ec1",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C92",
+      "claim": "Highly heterogeneous Ca2+ dynamics were observed between individual glomeruli in most type II LNs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the uniform Ca2+ dynamics during odor stimulation in type I LNs, we observed highly heterogeneous Ca2+ dynamics between the individual glomeruli in most type II LNs (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "165eac83-9259-48b3-ae98-c1b73f822d44",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C93",
+      "claim": "All recorded type II LNs had the cell type-specific morphology characterized by innervation of all glomeruli with similar neurite densities in all glomeruli of a given neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "All recorded type II LNs had the cell type-specific morphology characterized by innervation of all glomeruli with similar neurite densities in all glomeruli of a given neuron (Figure 5A and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the morphological data shown in Figure 5A and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "e5c97cde-df70-4879-b6ae-c9fa7f238022",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C94",
+      "claim": "All type II LNs typically responded with graded changes in membrane potential to olfactory stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "All type II LNs typically responded with graded changes in membrane potential to olfactory stimulation, with type IIa1 LNs also able to generate Ca2+-driven spikelets (Figure 5B and F, top traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the electrophysiological data shown in Figure 5B and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "39c57ff1-05bd-440a-a787-0965b1e971ae",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C95",
+      "claim": "Type IIa1 LNs are able to generate Ca2+-driven spikelets.",
+      "claim_type": "EXPLICIT",
+      "source": "All type II LNs typically responded with graded changes in membrane potential to olfactory stimulation, with type IIa1 LNs also able to generate Ca2+-driven spikelets (Figure 5B and F, top traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the electrophysiological data shown in Figure 5B and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "1c6512bd-fd37-4be9-9c8e-6562596fcfda",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C96",
+      "claim": "The amplitudes of the Ca2+ signals in type II LNs were in the range of the signals of type I LNs after the suppression of their action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitudes of the corresponding Ca2+ signals were in the range of the signals of type I LNs after the suppression of their action potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the imaging data from type II LNs and hyperpolarized type I LNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "734757d8-3fbd-469b-97ed-524851887c58",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C97",
+      "claim": "While the electrophysiological responses to different odorants were similar in a given type II LN, the corresponding glomerular Ca2+ signals were odor specific and varied between glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "While the electrophysiological responses to different odorants were similar in a given neuron, the corresponding glomerular Ca2+ signals were odor specific and varied between glomeruli, resulting in distinct, glomerulus-specific tuning curves (Figure 5C,G and Figure 5\u2014figure supplement 1), which was also directly evident in a relatively low degree of correlation (Figure 5I; r = 0.56 \u00b1 0.21, N = 18).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the combined electrophysiological and imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "f3ccb9b2-ebdb-4afa-b0a0-fbbd3e72a563",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C98",
+      "claim": "The mean correlation coefficient across all investigated type II LNs was r = 0.56 \u00b1 0.21 (N = 18).",
+      "claim_type": "EXPLICIT",
+      "source": "While the electrophysiological responses to different odorants were similar in a given neuron, the corresponding glomerular Ca2+ signals were odor specific and varied between glomeruli, resulting in distinct, glomerulus-specific tuning curves (Figure 5C,G and Figure 5\u2014figure supplement 1), which was also directly evident in a relatively low degree of correlation (Figure 5I; r = 0.56 \u00b1 0.21, N = 18).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical summary of the correlation data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "5f731843-e4e6-4ab9-a6b3-c7d1e509296d",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C99",
+      "claim": "The correlation between tuning curves of individual glomeruli in a given type II LN differed among type II LNs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the correlation between tuning curves of individual glomeruli in a given neuron differed among type II LNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the variability of correlation patterns shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "363d1bc1-de3b-415f-a893-9921b6ab49ae",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C100",
+      "claim": "In 11 out of 18 nonspiking LNs, the majority of glomeruli was individually tuned.",
+      "claim_type": "EXPLICIT",
+      "source": "While in 11 out of 18 nonspiking LNs the majority of glomeruli was individually tuned, in the other 7 neurons, groups of similarly tuned glomeruli were found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the tuning curve analysis across all type II LNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "077d0783-fca3-4cab-93f6-213abb6ba14e",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C101",
+      "claim": "In 7 out of 18 nonspiking LNs, groups of similarly tuned glomeruli were found.",
+      "claim_type": "EXPLICIT",
+      "source": "While in 11 out of 18 nonspiking LNs the majority of glomeruli was individually tuned, in the other 7 neurons, groups of similarly tuned glomeruli were found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the tuning curve analysis across all type II LNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "7bdd4d9c-ee95-4c46-9e0f-1b13ffea7bf9",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C102",
+      "claim": "Groups of similarly tuned glomeruli in some type II LNs could be caused by similar input to several glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, this could be caused by similar input to several glomeruli (Watanabe et al., 2012) or by coordinated activity, for example, via spikelets that were observed in a subtype of nonspiking neurons (type IIa1 LNs, Fusca et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed correlation patterns, supported by cited references.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "bcdc016a-a362-4833-bf33-2db53a1c083b",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C103",
+      "claim": "Groups of similarly tuned glomeruli in some type II LNs could be caused by coordinated activity via spikelets.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, this could be caused by similar input to several glomeruli (Watanabe et al., 2012) or by coordinated activity, for example, via spikelets that were observed in a subtype of nonspiking neurons (type IIa1 LNs, Fusca et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed correlation patterns, supported by cited references.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "99abe174-5876-4aa0-96c3-754383b8905d",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C104",
+      "claim": "In the cockroach antennal lobe, sensory inputs are processed and computed in inter- and intraglomerular circuits formed by spiking type I and nonspiking type II LNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that in the cockroach AL sensory inputs are processed and computed in inter- and intraglomerular circuits, which are formed by spiking type I and nonspiking type II LNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "0c0bc0a0-3ae1-4b6c-93ba-36a8a5a99dfd",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C105",
+      "claim": "Processing of olfactory information in the antennal lobe involves complex interactions between the glomerular pathways and between different AL neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Processing of olfactory information in the AL involves complex interactions between the glomerular pathways and between different AL neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established understanding of olfactory processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "dacd5738-7163-4ec9-8908-07ee2621b0e1",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C106",
+      "claim": "GABAergic LNs can mediate lateral inhibition by providing inhibitory synaptic input to defined odor-specific arrays of glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in different insect species have suggested that GABAergic LNs can mediate lateral inhibition by providing inhibitory synaptic input to defined odor-specific arrays of glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous studies in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "c29e7e27-d719-43d4-91ae-4287f0a5b3dd",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C107",
+      "claim": "Type I LNs express GABA-like immunoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since type I LNs express GABA-like immunoreactivity and provide inhibitory input to uPNs and other LNs in all innervated glomeruli (Distler, 1989; Distler and Boeckh, 1997b; Husch et al., 2009a; Warren and Kloppenburg, 2014), these neurons are likely part of an inhibitory network that mediates lateral inhibition and contrast enhancement (Sachse and Galizia, 2002; Wilson and Laurent, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "63393f3b-8f17-4880-b70a-9dd704145de5",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C108",
+      "claim": "Type I LNs provide inhibitory input to uPNs and other LNs in all innervated glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Since type I LNs express GABA-like immunoreactivity and provide inhibitory input to uPNs and other LNs in all innervated glomeruli (Distler, 1989; Distler and Boeckh, 1997b; Husch et al., 2009a; Warren and Kloppenburg, 2014), these neurons are likely part of an inhibitory network that mediates lateral inhibition and contrast enhancement (Sachse and Galizia, 2002; Wilson and Laurent, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "0e1fa2a4-0e11-4b81-9915-c292108ad8a4",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C109",
+      "claim": "Type I LNs are likely part of an inhibitory network that mediates lateral inhibition and contrast enhancement.",
+      "claim_type": "EXPLICIT",
+      "source": "Since type I LNs express GABA-like immunoreactivity and provide inhibitory input to uPNs and other LNs in all innervated glomeruli (Distler, 1989; Distler and Boeckh, 1997b; Husch et al., 2009a; Warren and Kloppenburg, 2014), these neurons are likely part of an inhibitory network that mediates lateral inhibition and contrast enhancement (Sachse and Galizia, 2002; Wilson and Laurent, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of type I LNs and supported by cited references.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "08a0efda-18c4-4ef3-85e2-d6b1e41d6615",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C110",
+      "claim": "The current study does not rule out the possibility that type I LNs are also involved in intraglomerular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "While the current study assigns a role to type I LNs in interglomerular signaling, it does not rule out the possibility that these neurons are also involved in intraglomerular signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the study's conclusions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "9ed6e461-1f3f-4ad5-a327-3a5e9cafe230",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C111",
+      "claim": "The experiments with suppressed action potential firing reveal that the hypothesized polar organization of type I LNs with strictly defined input and output glomeruli is not entirely correct.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, the experiments with suppressed action potential firing reveal an additional functional aspect of type I LNs. They indicate that the hypothesized polar organization of type I LNs with strictly defined (and separated) input and output glomeruli is not entirely correct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental results with hyperpolarization and QX-314 treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "6dec5d35-98ef-42f0-85b8-65eb1b13736c",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C112",
+      "claim": "When type I LNs were prevented from spiking, distinct, glomeruli-specific Ca2+ dynamics were observed during odor stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "When type I LNs were prevented from spiking by hyperpolarization or intracellular block of Na+ channels, we observed distinct, glomeruli-specific Ca2+ dynamics during odor stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "8d8ee133-938e-4c89-a60e-8b893eef553a",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C113",
+      "claim": "The glomeruli-specific Ca2+ signals in hyperpolarized type I LNs likely originate from Ca2+ influx through Ca2+ permeable excitatory receptors such as cholinergic receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that these signals originate from Ca2+ influx through Ca2+ permeable excitatory receptors such as cholinergic receptors, suggesting that each neuron can potentially receive excitatory olfactory input in many innervated glomerulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results and supported by a cited reference.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "e22fe4e6-42cf-4438-a239-b48434d9a536",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C114",
+      "claim": "Each type I LN can potentially receive excitatory olfactory input in many innervated glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that these signals originate from Ca2+ influx through Ca2+ permeable excitatory receptors such as cholinergic receptors, suggesting that each neuron can potentially receive excitatory olfactory input in many innervated glomerulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "07f920d6-5d94-4560-a7c5-03051f0f40d5",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C115",
+      "claim": "Individual GABAergic LNs receive broad, but not uniform, spatial patterns of excitation by either OSNs or PNs.",
+      "claim_type": "EXPLICIT",
+      "source": "This notion agrees with previous studies in the fly, which suggested that individual GABAergic LNs receive broad, but not uniform, spatial patterns of excitation by either OSNs or PNs (Wilson and Laurent, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "dbbea6e6-22ab-44f9-b5b6-ae79a14aaf24",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C116",
+      "claim": "Most nonspiking type II LNs have distinct functional domains that are (more or less) independent from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "These heterogeneous and glomerulus-specific Ca2+ dynamics imply that type II LNs have distinct functional domains that are (more or less) independent from each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed heterogeneous Ca2+ dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "182d4fd7-b22d-4613-a404-a03ca14522ec",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C117",
+      "claim": "Most nonspiking type II LNs might contribute to microcircuits within glomeruli and mediate intraglomerular signaling rather than interconnecting multiple glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, most nonspiking type II LNs might contribute to microcircuits within glomeruli and mediate intraglomerular signaling rather than interconnecting multiple glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed heterogeneous Ca2+ dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "0cd0c14a-ffd8-4959-8a27-01cb21458576",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C118",
+      "claim": "Intraglomerular circuits are known from the mouse or rat olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "Intraglomerular circuits are known from the mouse or rat olfactory bulb (for review, see Ennis et al., 2015), where periglomerular, external tufted, and short axon cells interact to modulate the output of Mitral/Tufted cells (Aungst et al., 2003; Liu et al., 2016; Najac et al., 2015; Wachowiak and Shipley, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited references about the vertebrate olfactory bulb.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "4c4247d8-67c3-4000-985d-dae9eebe5711",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C119",
+      "claim": "Periglomerular, external tufted, and short axon cells interact to modulate the output of Mitral/Tufted cells in the vertebrate olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "Intraglomerular circuits are known from the mouse or rat olfactory bulb (for review, see Ennis et al., 2015), where periglomerular, external tufted, and short axon cells interact to modulate the output of Mitral/Tufted cells (Aungst et al., 2003; Liu et al., 2016; Najac et al., 2015; Wachowiak and Shipley, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited references about the vertebrate olfactory bulb.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "b6b0a847-b113-4b6f-b525-5a0d0358eec6",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C120",
+      "claim": "Periglomerular cells are uniglomerular LNs that mediate intraglomerular synaptic signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Periglomerular cells are uniglomerular LNs that mediate intraglomerular synaptic signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of the vertebrate olfactory bulb.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "b45c48a3-b8e1-45d9-aa3b-317d99141798",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C121",
+      "claim": "Cockroach type II LNs could serve similar purposes as periglomerular cells in the vertebrate olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike periglomerular cells, cockroach type II LNs innervate all glomeruli. Still, as these LNs have only weak active membrane properties, postsynaptic potentials just spread within the same glomerulus. Therefore, these neurons could serve similar purposes, and few omniglomerular type II LNs could perform similar functions as many PG uniglomerular cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative comparison based on functional similarities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "d07872bf-dc42-4cd2-8a04-ad22549e971c",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C122",
+      "claim": "Few omniglomerular type II LNs could perform similar functions as many PG uniglomerular cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike periglomerular cells, cockroach type II LNs innervate all glomeruli. Still, as these LNs have only weak active membrane properties, postsynaptic potentials just spread within the same glomerulus. Therefore, these neurons could serve similar purposes, and few omniglomerular type II LNs could perform similar functions as many PG uniglomerular cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative comparison based on functional similarities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "871e7cdd-7f61-4327-9863-54e525902713",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C123",
+      "claim": "Nonspiking type II LNs are not a homogenous neuron population.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is important to consider that nonspiking type II LNs are not a homogenous neuron population (Fusca et al., 2013; Husch et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "a11c975c-63b5-4ab4-abe0-2068e7311865",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C124",
+      "claim": "In a subpopulation of type II LNs, correlated Ca2+ dynamics were observed in subsets of glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "In a subpopulation of type II LNs, we observed correlated Ca2+ dynamics in subsets of glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "df57f9a5-3f56-4007-a21c-8e70dd55236b",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C125",
+      "claim": "Subpopulations of type II LNs responded to odorant stimulations with strong depolarizations, including spikelets, which can propagate to a set of glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that subpopulations of type II LNs responded to odorant stimulations with strong depolarizations, including spikelets, which apparently can propagate, at least to some extent, to a set of glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the electrophysiological and imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "2718e9df-840b-4530-adf5-9525d57fb251",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C126",
+      "claim": "Type IIa1 LNs are cholinergic and likely excitatory.",
+      "claim_type": "EXPLICIT",
+      "source": "Since this subpopulation of nonspiking type II LNs (type IIa1 LNs) was previously shown to be cholinergic (Fusca et al., 2013; Neupert et al., 2018), they are likely excitatory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the neurotransmitter identity, supported by cited references.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "78f8956c-985f-45e4-a539-089d739a7e46",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C127",
+      "claim": "Cholinergic type IIa LNs might be part of an excitatory network that activates neurons in specific sets of glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrinsic electrophysiological properties of the cholinergic type IIa LNs suggest that they might be part of an excitatory network, which activates neurons in specific sets of glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the physiological properties of type IIa LNs.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "2f2eb353-8ac3-4ba3-b29f-a22d46f8a9cb",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C128",
+      "claim": "Excitatory LNs in the fruit fly, while being multiglomerular, only activate specific glomeruli, providing distinct arrays of glomeruli with excitatory input.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is in line with previous studies in the fruit fly, where excitatory LNs, while being multiglomerular, only activate specific glomeruli, thereby providing distinct arrays of glomeruli with excitatory input and distributing odor\u2010evoked activity over an ensemble of PNs (Das et al., 2017; Huang et al., 2010; Olsen et al., 2007; Root et al., 2007; Shang et al., 2007; reviewed in Wilson, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "d26d3cd4-056a-4a4d-b446-6109a6554751",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C129",
+      "claim": "The primary transmitter of most type II LNs is yet to be revealed.",
+      "claim_type": "EXPLICIT",
+      "source": "While type IIa1 are cholinergic and type II LNs generally express multiple neuropeptides (Fusca et al., 2015; Neupert et al., 2012; Neupert et al., 2018), the primary transmitter of most type II LNs is yet to be revealed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "cbd9ad46-41ec-4a43-8bcc-5e266fbc88d9",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C130",
+      "claim": "Type II LNs generally express multiple neuropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "While type IIa1 are cholinergic and type II LNs generally express multiple neuropeptides (Fusca et al., 2015; Neupert et al., 2012; Neupert et al., 2018), the primary transmitter of most type II LNs is yet to be revealed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "f196e372-fbb3-48ac-93d2-4bb4987a2cde",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C131",
+      "claim": "Glutamate is a candidate primary transmitter for type II LNs.",
+      "claim_type": "EXPLICIT",
+      "source": "One candidate is glutamate, an inhibitory transmitter in the Drosophila AL (Liu and Wilson, 2013) and cockroach metathoracic motor neurons (Sattelle, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on cited references about glutamate function in related systems.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "2bf3b12f-71d4-47b9-bc5e-0aa3654c74ed",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C132",
+      "claim": "Glutamate is an inhibitory transmitter in the Drosophila antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "One candidate is glutamate, an inhibitory transmitter in the Drosophila AL (Liu and Wilson, 2013) and cockroach metathoracic motor neurons (Sattelle, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "4f6500d0-1a33-444c-a078-ecf898ea7c78",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C133",
+      "claim": "Glutamate is an inhibitory transmitter in cockroach metathoracic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "One candidate is glutamate, an inhibitory transmitter in the Drosophila AL (Liu and Wilson, 2013) and cockroach metathoracic motor neurons (Sattelle, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "07937b41-082f-4b8c-b532-5670ec066226",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C134",
+      "claim": "The olfactory system's circuitry in Periplaneta americana has been analyzed in great detail on the physiological, biochemical, and structural/ultrastructural levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an experimental system in which the olfactory system's circuitry has been analyzed in great detail on the physiological (Bradler C et al., 2016; Ernst and Boeckh, 1983; Husch et al., 2009a; Husch et al., 2009b; Lemon, 1997, Lemon and Getz, 1998, Lemon and Getz, 2000; Nishino et al., 2012, Nishino et al., 2018; Paeger et al., 2017; Paoli et al., 2020; Pippow et al., 2009; Strausfeld and Li, 1999; Warren and Kloppenburg, 2014; Watanabe et al., 2017), biochemical (Distler, 1989; Distler, 1990; Fusca et al., 2013; Fusca et al., 2015; Neupert et al., 2012; Neupert et al., 2018), and structural/ ultrastructural levels (Distler and Boeckh, 1997a; Distler and Boeckh, 1997b; Distler et al., 1998; Malun, 1991a; Malun, 1991b; Malun et al., 1993; Nishino et al., 2015; Watanabe et al., 2010), thus contributing very successfully to understanding olfactory information processing principles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerous cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "889edfe5-aa54-4907-a40c-eeb013e37bfb",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C135",
+      "claim": "The mean correlation coefficient of spiking type I LNs (0.95 \u00b1 0.06, N = 16) is significantly larger compared to nonspiking type IIa1 LNs that can generate spikelets (0.67 \u00b1 0.12, N = 6, p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean correlation coefficient of spiking type I LNs (0.95 \u00b1 0.06, N = 16) is significantly larger compared to nonspiking type IIa1 LNs that can generate spikelets (0.67 \u00b1 0.12, N = 6, p=0.01) and (pooled) type IIa2 and type IIb LNs, which do not generate spikelets (0.51 \u00b1 0.23, N = 12, p<0.001) (Kruskal\u2013Wallis and Dunn's multiple comparisons tests).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the comparison of different LN types shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "910d19de-864a-4b78-804e-ed37355ad53e",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C136",
+      "claim": "The mean correlation coefficient of spiking type I LNs (0.95 \u00b1 0.06, N = 16) is significantly larger compared to (pooled) type IIa2 and type IIb LNs, which do not generate spikelets (0.51 \u00b1 0.23, N = 12, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean correlation coefficient of spiking type I LNs (0.95 \u00b1 0.06, N = 16) is significantly larger compared to nonspiking type IIa1 LNs that can generate spikelets (0.67 \u00b1 0.12, N = 6, p=0.01) and (pooled) type IIa2 and type IIb LNs, which do not generate spikelets (0.51 \u00b1 0.23, N = 12, p<0.001) (Kruskal\u2013Wallis and Dunn's multiple comparisons tests).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the comparison of different LN types shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "cf24c6bf-2255-4033-ae09-2dfb4b9b6523",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C137",
+      "claim": "Processing of sensory input by networks of spiking and nonspiking interneurons is a common principle in both invertebrate and vertebrate sensory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Processing of sensory input by networks of spiking and nonspiking interneurons is a common principle in both invertebrate and vertebrate sensory systems, for example, structuring the signal pathway from sensory neurons (tactile hairs) to intersegmental and motor neurons in the insect thoracic ganglion (Burrows, 1989; Pearson and Fourtner, 1975) and the mammalian olfactory bulb (Bufler et al., 1992a; Bufler et al., 1992b; Wellis and Scott, 1990) and retina (Diamond, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited references from various sensory systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "bed5e558-f788-41e9-9dea-81cc1349dbd3",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "claim_id": "C138",
+      "claim": "In many systems, the role of nonspiking neurons is not well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, in many systems, the role of nonspiking neurons is not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current understanding across multiple systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c94d98ca-3582-4192-9084-63d07fdc2a31",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Odor-induced Ca2+ dynamics in local interneurons are highly reproducible across repeated stimulations with the same odorant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 demonstrates reproducibility directly through experimental data (Figure 2), and C68 confirms this finding is consistent with previous electrophysiological studies. The convergence of current imaging data with prior electrophysiological work provides strong support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "10e2d770-6eab-4b30-bb33-5a109b873720",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spiking type I LNs exhibit uniform Ca2+ dynamics across all innervated glomeruli during odor stimulation, with highly correlated tuning curves (r = 0.95 \u00b1 0.06).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C76 provide converging morphological, electrophysiological, and imaging evidence showing that type I LNs respond with uniform Ca2+ signals across glomeruli. The high correlation coefficient (C75, C76) quantitatively supports the uniformity claim. Sample size (N=16) is adequate for this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Suppression of action potentials in type I LNs by hyperpolarization or QX-314 treatment unmasks glomerulus-specific Ca2+ signals, revealing that these neurons receive excitatory input in multiple glomeruli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C85 provide experimental evidence from two independent methods (hyperpolarization and QX-314) showing decreased correlation coefficients when spiking is prevented. Statistical significance is demonstrated (C83, C84), and the two methods yield equivalent results (C85). Claims C86-C89 provide mechanistic interpretation supported by the data. The convergence of two independent experimental approaches strengthens this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "61cbe2cd-8b47-4a84-b9cc-204367b15076",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Type I LNs integrate synaptic input from multiple glomeruli and mediate lateral inhibition through GABAergic signaling to defined arrays of glomeruli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 synthesize the experimental findings with prior literature. Claims C107-C109 provide supporting evidence from previous studies about GABA expression and inhibitory function. The current data on Ca2+ dynamics (C4, C73-C76) combined with established GABAergic identity provides strong support for this functional interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nonspiking type II LNs exhibit heterogeneous, glomerulus-specific Ca2+ dynamics during odor stimulation, with lower correlation between glomerular tuning curves (r = 0.56 \u00b1 0.21) compared to type I LNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C101 provide comprehensive morphological, electrophysiological, and imaging evidence for heterogeneous Ca2+ dynamics in type II LNs. The quantitative comparison with type I LNs (C98) and the observation that 11/18 neurons showed individually tuned glomeruli (C100) support the heterogeneity claim. Sample size (N=18) is adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "050c0c9d-7804-47be-ae66-72fb345f8d03",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The mean correlation coefficient of type I LNs is significantly higher than both type IIa1 LNs (p=0.01) and type IIa2/IIb LNs (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C135-C136 provide statistical comparisons with appropriate tests (Kruskal-Wallis and Dunn's multiple comparisons) and clear p-values. The sample sizes are stated (N=16, 6, 12), and the statistical approach is appropriate for comparing multiple groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "09aa1dcd-d9a4-4717-b8aa-5518ae08f849",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spiking type I LNs play a primary role in interglomerular signaling, while nonspiking type II LNs mediate intraglomerular signaling through functionally independent glomerular domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C104 state the main conclusions, which are supported by the differential Ca2+ dynamics observed in type I (uniform, C4, C73-C76) versus type II LNs (heterogeneous, C92, C97). Claims C116-C117 provide mechanistic interpretation based on the observed Ca2+ patterns. The functional assignment is well-supported by the convergent experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "4f22ad06-fc71-4ea4-ab08-0e72e5be00c1",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The polar organization model of type I LNs with strictly separated input and output glomeruli is not entirely correct, as individual type I LNs can receive excitatory input in multiple glomeruli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C114 are supported by the hyperpolarization/QX-314 experiments (C78-C89) that revealed glomerulus-specific Ca2+ signals when spiking was prevented. Claim C115 provides supporting evidence from prior literature. This challenges previous models and is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "6b089986-5c64-4f92-90e0-c776638046a5",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A subpopulation of type II LNs (type IIa1) shows correlated Ca2+ dynamics in subsets of glomeruli, potentially functioning as part of an excitatory network through cholinergic signaling and Ca2+-driven spikelets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C124-C125 provide observational data on correlated Ca2+ dynamics and spikelets in a subpopulation. However, claims C102-C103 and C127 are explicitly speculative about mechanisms. While C126 establishes cholinergic identity from prior work, the functional interpretation as an excitatory network (C127) requires additional validation beyond the current observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "0b2ca3bd-c77e-4065-8a64-68485828c562",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cockroach type II LNs could perform similar functions to periglomerular cells in the vertebrate olfactory bulb, with few omniglomerular neurons functionally equivalent to many uniglomerular cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C121-C122 are explicitly speculative comparisons based on functional similarities. While the comparison is reasonable given the observed intraglomerular signaling properties, this remains a hypothesis requiring direct experimental validation. The evidence type is marked as 'SPECULATION' and 'INFERENCE'.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "85986933-cc58-47c1-85c8-8351eab62169",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Glutamate is a candidate primary transmitter for type II LNs, functioning as an inhibitory transmitter as in Drosophila antennal lobe and cockroach motor neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C131 is explicitly speculative, and while C132-C133 provide supporting evidence from other systems, no direct evidence is presented for glutamate function in cockroach type II LNs. This remains a hypothesis requiring experimental validation through immunohistochemistry or other methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "80194aec-678a-4197-85e7-b9fe4d615f71",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Two main types of local interneurons exist in Periplaneta americana: spiking type I LNs (GABAergic, multiglomerular with variable innervation density) and nonspiking type II LNs (omniglomerular with subtypes IIa and IIb having distinct properties).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C48 provide comprehensive characterization of LN types based on morphology, electrophysiology, and neurotransmitter identity. These claims are supported by both current data and extensive prior literature (multiple citations). The classification is well-established and confirmed by the current study's observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "a4922984-faf6-4b42-9048-b7c89bbd66a1",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Nonspiking type II LNs are hypothesized to mediate intraglomerular signaling because graded membrane potential changes can only spread within the same or electrotonically close glomeruli, with Ca2+ signals dominated by ligand-gated channel influx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 and C61-C64 present a mechanistic hypothesis based on biophysical principles and supported by prior work in rabbit olfactory bulb (C50). The hypothesis is consistent with the observed heterogeneous Ca2+ dynamics (C92, C97) and the lack of Na+-driven action potentials (C31-C32). While presented as a hypothesis, it is well-grounded in established principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "fea8402d-1502-4ecc-9339-7cd59935b73c",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Local interneurons mediate complex interactions in the insect antennal lobe, which is functionally analogous to the vertebrate olfactory bulb, and shape the tuning profiles of projection neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C9-C12 provide established background knowledge about LN function and the AL-olfactory bulb analogy. These are well-supported by the cited literature and represent consensus understanding in the field. The current study builds upon this foundation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "8da88bea-098d-401d-b4f2-2ba567794154",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study analyzed 23 type I LNs and 18 type II LNs, with 9-25 glomeruli imaged per neuron.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 provide methodological details about sample sizes and data collection. These are straightforward statements about the study design and are directly verifiable from the data. The sample sizes are adequate for the statistical analyses performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    },
+    {
+      "id": "0e1c6333-603c-4894-af3e-a4cf6f20171d",
+      "content_id": "e9ec617f-e037-4bfc-ab94-a5d49735f19f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The functional role of nonspiking LNs in odor information processing is not well understood, though their conservation across insect species suggests functional relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C138 acknowledge gaps in current understanding, while C24 provides a reasonable inference based on evolutionary conservation. This represents an honest assessment of the state of knowledge and provides motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:44:26.924882Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "db4082e7-b8a0-4218-9e9e-4aa89a3f2d5a",
+      "result_id": "c94d98ca-3582-4192-9084-63d07fdc2a31"
+    },
+    {
+      "claim_id": "59738729-317b-44b9-9fc5-29665aa9fc70",
+      "result_id": "c94d98ca-3582-4192-9084-63d07fdc2a31"
+    },
+    {
+      "claim_id": "89b6e8f8-6758-411a-9145-e6d8c4346b52",
+      "result_id": "10e2d770-6eab-4b30-bb33-5a109b873720"
+    },
+    {
+      "claim_id": "5f343147-b556-4e0c-86ea-218ae8cdfbdb",
+      "result_id": "10e2d770-6eab-4b30-bb33-5a109b873720"
+    },
+    {
+      "claim_id": "9a7c9d5b-442c-452e-b3f0-b46ba15c00ef",
+      "result_id": "10e2d770-6eab-4b30-bb33-5a109b873720"
+    },
+    {
+      "claim_id": "9489358e-f318-4f67-a421-780d49a678c1",
+      "result_id": "10e2d770-6eab-4b30-bb33-5a109b873720"
+    },
+    {
+      "claim_id": "4c6f68b7-e867-46e9-b5fa-3468c4075cd0",
+      "result_id": "10e2d770-6eab-4b30-bb33-5a109b873720"
+    },
+    {
+      "claim_id": "e64dd469-9694-42d9-a21d-a46a0eae84f2",
+      "result_id": "10e2d770-6eab-4b30-bb33-5a109b873720"
+    },
+    {
+      "claim_id": "c7656bdd-c6fc-4610-9a90-a78e86f31dd3",
+      "result_id": "10e2d770-6eab-4b30-bb33-5a109b873720"
+    },
+    {
+      "claim_id": "604dba71-86ee-462d-a244-c1eb0d3a98fb",
+      "result_id": "10e2d770-6eab-4b30-bb33-5a109b873720"
+    },
+    {
+      "claim_id": "a6e1b15f-33db-4d56-b68d-4bb1246ca6ff",
+      "result_id": "10e2d770-6eab-4b30-bb33-5a109b873720"
+    },
+    {
+      "claim_id": "f192a8e8-7191-4673-89ef-1899a7771a04",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "574ce73c-a685-457b-bac6-dbb96081918f",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "9ed54be7-0e2d-4290-924c-5536f7d193f6",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "9f3aea59-1aa9-4797-894d-9b9f85763576",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "d00d7640-b26b-4111-87d3-cfd38b490396",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "6108ea73-fd89-441f-94fb-777b0530918a",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "425aae85-0177-4cf5-8725-2ae4d0312454",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "26dff730-03d3-4d22-8095-90275063d015",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "c85d092e-a927-4a52-82c0-9a785fdc74c9",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "34875e83-3b29-4882-b519-6c666b48a831",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "ae4fe2a4-e27c-4433-a7c5-6bee679eb4e7",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "923e617e-700e-4248-a443-cbca87629392",
+      "result_id": "4a41be99-e1fe-4709-9fa4-1ce91d2674b9"
+    },
+    {
+      "claim_id": "acd55904-140b-49f8-8492-3392401efd8d",
+      "result_id": "61cbe2cd-8b47-4a84-b9cc-204367b15076"
+    },
+    {
+      "claim_id": "54147500-563b-43ca-b8d7-e9752f57505b",
+      "result_id": "61cbe2cd-8b47-4a84-b9cc-204367b15076"
+    },
+    {
+      "claim_id": "c29e7e27-d719-43d4-91ae-4287f0a5b3dd",
+      "result_id": "61cbe2cd-8b47-4a84-b9cc-204367b15076"
+    },
+    {
+      "claim_id": "63393f3b-8f17-4880-b70a-9dd704145de5",
+      "result_id": "61cbe2cd-8b47-4a84-b9cc-204367b15076"
+    },
+    {
+      "claim_id": "0e1fa2a4-0e11-4b81-9915-c292108ad8a4",
+      "result_id": "61cbe2cd-8b47-4a84-b9cc-204367b15076"
+    },
+    {
+      "claim_id": "c7a5260a-0267-4bde-8407-bcbfd8d5deb7",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "dfeafab7-5d63-45a9-8378-189f831ef9ce",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "8aa6e061-8158-4388-b23d-f763b5da2ec1",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "165eac83-9259-48b3-ae98-c1b73f822d44",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "e5c97cde-df70-4879-b6ae-c9fa7f238022",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "39c57ff1-05bd-440a-a787-0965b1e971ae",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "1c6512bd-fd37-4be9-9c8e-6562596fcfda",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "734757d8-3fbd-469b-97ed-524851887c58",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "f3ccb9b2-ebdb-4afa-b0a0-fbbd3e72a563",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "5f731843-e4e6-4ab9-a6b3-c7d1e509296d",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "363d1bc1-de3b-415f-a893-9921b6ab49ae",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "077d0783-fca3-4cab-93f6-213abb6ba14e",
+      "result_id": "dffdd9ef-1e9e-46c6-9bdf-1b5b009c35c9"
+    },
+    {
+      "claim_id": "889edfe5-aa54-4907-a40c-eeb013e37bfb",
+      "result_id": "050c0c9d-7804-47be-ae66-72fb345f8d03"
+    },
+    {
+      "claim_id": "910d19de-864a-4b78-804e-ed37355ad53e",
+      "result_id": "050c0c9d-7804-47be-ae66-72fb345f8d03"
+    },
+    {
+      "claim_id": "e4f12a4e-e947-4cb8-8089-6928e8953104",
+      "result_id": "09aa1dcd-d9a4-4717-b8aa-5518ae08f849"
+    },
+    {
+      "claim_id": "34503b2a-f3fa-4489-a44f-9de51a44f3bc",
+      "result_id": "09aa1dcd-d9a4-4717-b8aa-5518ae08f849"
+    },
+    {
+      "claim_id": "99abe174-5876-4aa0-96c3-754383b8905d",
+      "result_id": "09aa1dcd-d9a4-4717-b8aa-5518ae08f849"
+    },
+    {
+      "claim_id": "dbbea6e6-22ab-44f9-b5b6-ae79a14aaf24",
+      "result_id": "09aa1dcd-d9a4-4717-b8aa-5518ae08f849"
+    },
+    {
+      "claim_id": "182d4fd7-b22d-4613-a404-a03ca14522ec",
+      "result_id": "09aa1dcd-d9a4-4717-b8aa-5518ae08f849"
+    },
+    {
+      "claim_id": "9ed6e461-1f3f-4ad5-a327-3a5e9cafe230",
+      "result_id": "4f22ad06-fc71-4ea4-ab08-0e72e5be00c1"
+    },
+    {
+      "claim_id": "6dec5d35-98ef-42f0-85b8-65eb1b13736c",
+      "result_id": "4f22ad06-fc71-4ea4-ab08-0e72e5be00c1"
+    },
+    {
+      "claim_id": "8d8ee133-938e-4c89-a60e-8b893eef553a",
+      "result_id": "4f22ad06-fc71-4ea4-ab08-0e72e5be00c1"
+    },
+    {
+      "claim_id": "e22fe4e6-42cf-4438-a239-b48434d9a536",
+      "result_id": "4f22ad06-fc71-4ea4-ab08-0e72e5be00c1"
+    },
+    {
+      "claim_id": "07f920d6-5d94-4560-a7c5-03051f0f40d5",
+      "result_id": "4f22ad06-fc71-4ea4-ab08-0e72e5be00c1"
+    },
+    {
+      "claim_id": "7bdd4d9c-ee95-4c46-9e0f-1b13ffea7bf9",
+      "result_id": "6b089986-5c64-4f92-90e0-c776638046a5"
+    },
+    {
+      "claim_id": "bcdc016a-a362-4833-bf33-2db53a1c083b",
+      "result_id": "6b089986-5c64-4f92-90e0-c776638046a5"
+    },
+    {
+      "claim_id": "a11c975c-63b5-4ab4-abe0-2068e7311865",
+      "result_id": "6b089986-5c64-4f92-90e0-c776638046a5"
+    },
+    {
+      "claim_id": "df57f9a5-3f56-4007-a21c-8e70dd55236b",
+      "result_id": "6b089986-5c64-4f92-90e0-c776638046a5"
+    },
+    {
+      "claim_id": "2718e9df-840b-4530-adf5-9525d57fb251",
+      "result_id": "6b089986-5c64-4f92-90e0-c776638046a5"
+    },
+    {
+      "claim_id": "78f8956c-985f-45e4-a539-089d739a7e46",
+      "result_id": "6b089986-5c64-4f92-90e0-c776638046a5"
+    },
+    {
+      "claim_id": "b45c48a3-b8e1-45d9-aa3b-317d99141798",
+      "result_id": "0b2ca3bd-c77e-4065-8a64-68485828c562"
+    },
+    {
+      "claim_id": "d07872bf-dc42-4cd2-8a04-ad22549e971c",
+      "result_id": "0b2ca3bd-c77e-4065-8a64-68485828c562"
+    },
+    {
+      "claim_id": "f196e372-fbb3-48ac-93d2-4bb4987a2cde",
+      "result_id": "85986933-cc58-47c1-85c8-8351eab62169"
+    },
+    {
+      "claim_id": "2bf3b12f-71d4-47b9-bc5e-0aa3654c74ed",
+      "result_id": "85986933-cc58-47c1-85c8-8351eab62169"
+    },
+    {
+      "claim_id": "4f6500d0-1a33-444c-a078-ecf898ea7c78",
+      "result_id": "85986933-cc58-47c1-85c8-8351eab62169"
+    },
+    {
+      "claim_id": "64c3c26a-6631-4449-97cc-057040f2f48a",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "742c533c-7d0e-4e83-92da-62a900d27e1c",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "0057d52f-8df6-4629-b3f5-9cd4015ad7c7",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "12114193-e3e0-47d0-b6fa-dd335af5a639",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "5af9b2e7-c811-4820-b08b-a62c5791eb42",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "3f3bac05-7cd3-4984-95d1-9037fb0da7eb",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "1e140ad9-7c9c-49f5-9b20-cc440ed747b1",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "e4a59782-0cff-4aab-be33-f82751de12f4",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "267dc425-bfdb-457d-b52d-8b7f32e4ca94",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "e17aecb8-8a14-4972-b25e-0db6f00857f4",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "443d6c51-47c8-4410-99bc-71b7e696a72e",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "bda64af6-c41c-430e-9ee1-1c386891406d",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "dd2c8435-08f4-4c07-ad3d-cfca51b98f19",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "acf48571-05ef-4659-94ce-c353aff6be57",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "b60220f9-7afd-4fc3-ae0c-6ba2f51e06ce",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "4026da7d-14bf-4ba1-8101-f129eeb12596",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "974071e6-e5e0-4ccf-906e-82165955bfd3",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "7efb8f21-7f49-4c2c-a456-1558662a089b",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "519e9df9-8f06-4695-89b4-3bac22ea07f5",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "b682aa76-da31-48b8-a919-b5a2b5caff29",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "a1bfee7b-6fea-4026-a03b-eccae0e4f5cb",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "27516792-6d42-4a8c-8484-80d222815700",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "56bcc1d6-3f73-42e4-8aa9-474e8ee05cf7",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "407d1f50-7c0b-4365-b015-08e006464ce7",
+      "result_id": "80194aec-678a-4197-85e7-b9fe4d615f71"
+    },
+    {
+      "claim_id": "c6880980-fc7a-43e4-a6ce-8694bd661935",
+      "result_id": "a4922984-faf6-4b42-9048-b7c89bbd66a1"
+    },
+    {
+      "claim_id": "480f8dca-34f9-43b5-bd3b-8dbb009b935b",
+      "result_id": "a4922984-faf6-4b42-9048-b7c89bbd66a1"
+    },
+    {
+      "claim_id": "67d21995-9c2b-4188-b7f8-0ee8a99de63f",
+      "result_id": "a4922984-faf6-4b42-9048-b7c89bbd66a1"
+    },
+    {
+      "claim_id": "55aea763-f855-43f0-8029-600ff979ccda",
+      "result_id": "a4922984-faf6-4b42-9048-b7c89bbd66a1"
+    },
+    {
+      "claim_id": "cc42026a-4f2b-40cf-b75f-787f44ef760d",
+      "result_id": "a4922984-faf6-4b42-9048-b7c89bbd66a1"
+    },
+    {
+      "claim_id": "954db9a3-2538-4328-9d5f-a4cbff4947c3",
+      "result_id": "a4922984-faf6-4b42-9048-b7c89bbd66a1"
+    },
+    {
+      "claim_id": "615753e5-d676-4d8a-b6ab-d5bc74f3bd60",
+      "result_id": "fea8402d-1502-4ecc-9339-7cd59935b73c"
+    },
+    {
+      "claim_id": "6187df0b-e7e2-4c64-a464-92779d6f715a",
+      "result_id": "fea8402d-1502-4ecc-9339-7cd59935b73c"
+    },
+    {
+      "claim_id": "6b753a70-861a-4b1c-a89f-07668b64d6c1",
+      "result_id": "fea8402d-1502-4ecc-9339-7cd59935b73c"
+    },
+    {
+      "claim_id": "5e997d88-174f-4d83-ae4b-01032ab87400",
+      "result_id": "fea8402d-1502-4ecc-9339-7cd59935b73c"
+    },
+    {
+      "claim_id": "ac1fe03b-a56f-4a6f-b315-71750aefe75a",
+      "result_id": "fea8402d-1502-4ecc-9339-7cd59935b73c"
+    },
+    {
+      "claim_id": "e2c588db-11b8-4aa1-a5f5-de23fd0a4fed",
+      "result_id": "fea8402d-1502-4ecc-9339-7cd59935b73c"
+    },
+    {
+      "claim_id": "d9af89f2-9427-45fa-ab32-20e6047db7f3",
+      "result_id": "8da88bea-098d-401d-b4f2-2ba567794154"
+    },
+    {
+      "claim_id": "3fc03f53-161b-4f45-9d26-92f5df5304c9",
+      "result_id": "8da88bea-098d-401d-b4f2-2ba567794154"
+    },
+    {
+      "claim_id": "9a11044e-b5e3-4f9b-8c36-b7aa740e9804",
+      "result_id": "0e1c6333-603c-4894-af3e-a4cf6f20171d"
+    },
+    {
+      "claim_id": "3a235acb-366c-4edd-850a-440faf32ece8",
+      "result_id": "0e1c6333-603c-4894-af3e-a4cf6f20171d"
+    },
+    {
+      "claim_id": "bed5e558-f788-41e9-9dea-81cc1349dbd3",
+      "result_id": "0e1c6333-603c-4894-af3e-a4cf6f20171d"
+    }
+  ],
+  "comparisons": []
+}

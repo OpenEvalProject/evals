@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript establishes the clinical context for AKI research, stating that 1.2 million hospitalized patients in the US are affected annually, 20-50% progress to CKD with increased mortality risk, and no targeted therapies exist beyond supportive care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are background statements supported by citations to published literature and represent established knowledge in the field. These provide appropriate context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript reviews prior work showing that PT cell damage drives AKI-to-CKD transition, that damaged PT cells adopt heterogeneous states including reactivation of developmental genes and metabolic changes, and that repair outcomes depend on injury severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 are literature review statements supported by multiple citations. These establish the scientific foundation for the current study but represent prior knowledge rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript reviews the role of ferroptosis in AKI, including its definition as non-apoptotic cell death, the central role of the glutathione/GPX4 axis in defense, vulnerability of renal tubular cells, and evidence that pharmacological inhibition ameliorates AKI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22 are background statements supported by extensive citations to published literature. These establish the ferroptosis context for the study but are not novel findings. Claim C22 about necroptosis regulators having death-independent roles provides conceptual motivation for investigating similar roles for ferroptosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The study identifies a molecularly distinct damage-associated PT cell state that is differentially regulated during successful versus failed repair, and provides evidence that ferroptotic stress enhances this state beyond triggering cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 represent the core findings of the manuscript, supported by comprehensive single-cell transcriptomic data (Figures 1-6) and genetic experiments (Figures 7-9). The integration of computational and experimental approaches provides strong evidence for these central conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study establishes mouse models distinguishing successful (20 min ischemia) from failed (30 min ischemia) renal repair, with mild injury showing resolution of inflammation within 21 days and severe injury showing persistent damage and macrophage accumulation for at least 6 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by histological data in Figure 1 supplements. The models are well-characterized and provide the experimental foundation for subsequent analyses. The 10-minute difference in ischemia time effectively separates repair outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Single-cell RNA sequencing of 18,258 cells identified 21 distinct clusters including a damage-associated PT (DA-PT) cell state characterized by reduced homeostatic gene expression, enrichment of developmental and injury genes, proinflammatory signatures, and similarity to immature neonatal PT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 are supported by comprehensive scRNA-seq data (Figure 1 and supplements). The computational analyses are appropriate, using established methods (Seurat, UMAP). Validation by immunofluorescence (C36) and comparison to neonatal kidney data (C35) strengthen the findings. The characterization is thorough and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Computational trajectory analyses predict bidirectional plasticity of PT cells, with trajectories from differentiated PT to DA-PT (dedifferentiation) and from DA-PT back to differentiated PT (redifferentiation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by pseudotime (Monocle 3) and RNA velocity analyses shown in Figure 1F-G and supplements. The use of two complementary computational methods strengthens the conclusions. However, these are computational predictions that require experimental validation, which is provided in subsequent experiments (C39-C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Experimental validation shows transient induction of DA-PT markers (Sox9, Cdh6, Vcam1) after mild injury with resolution by day 21, but persistent elevation after severe injury lasting up to 6 months, accompanied by reduced homeostatic gene expression and fewer differentiated PT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by RT-PCR, immunofluorescence, and in situ hybridization data (Figure 2). The temporal dynamics clearly distinguish successful from failed repair. Claim C45 about human ACSM2B is a citation-supported correlation that contextualizes the mouse findings but doesn't add new data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Lineage tracing using Sox9-CreERT2 shows that severe injury leads to greater accumulation of Sox9-lineage cells with ~25% remaining VCAM1+ on day 21, indicating failed redifferentiation, while mild injury results in few VCAM1+ cells, indicating successful redifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by genetic lineage tracing data (Figure 3). The experimental design is appropriate and provides direct evidence for impaired redifferentiation after severe injury. The quantification is clear and statistically significant. Claim C49 is an inference that is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Computational prediction of intercellular interactions (NicheNet) identifies ligands from DA-PT cells (Icam1, Pdgfb, Apoe) that interact with receptors on macrophages/monocytes, with expression validated by RT-PCR showing increased levels in kidneys with DA-PT accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by NicheNet computational analysis (Figure 4A-E) and RT-PCR validation (Figure 4F). The approach appropriately identifies potential cell-cell interactions. Claims C52-C53 are citations providing context. The validation by RT-PCR strengthens the computational predictions, though direct functional testing of these interactions is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Gene ontology analyses reveal that glutathione metabolic processes and anti-oxidative stress pathways are enriched in differentiated PT cells (mouse and human), while oxidative stress-induced pathways (senescence, DNA damage) are enriched in DA-PT cells, leading to the proposal that glutathione-mediated responses maintain PT cell identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by gene ontology enrichment analyses (Figure 5A, supplements). The analyses are appropriate and show consistent patterns in mouse and human. Claims C58-C59 are explicitly stated as proposals/hypotheses, which is appropriate given they are inferences from the pathway analyses. These set up the mechanistic experiments that follow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "DA-PT cells show downregulation of glutathione/GPX4 pathway genes and upregulation of ferroptotic stress markers (Acsl4), with immunofluorescence confirming co-expression of SOX9 with MDA and ACSL4, and greater ferroptotic stress markers in SOX9+ cells after severe versus mild injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by scRNA-seq data (Figure 5C) and immunofluorescence validation (Figure 5D-G). The evidence clearly links DA-PT cells to ferroptotic stress. Claim C61 is appropriately stated as a suggestion/inference. Claim C63 is a citation. The quantification shows statistically significant differences between injury severities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "DA-PT cells (SOX9+VCAM1+) with ferroptotic stress (ACSL4+) emerge in multiple kidney injury models including aristolochic acid nephropathy and unilateral ureteral obstruction, suggesting this is a conserved response across injury etiologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by immunofluorescence data from AAN and UUO models (Figure 6A-C). The extension to multiple injury models strengthens the generalizability of the findings. The suggestion about conserved response (C67) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Analysis of human AKI kidney biopsies identifies a DA-PT-like cell population with similar molecular features to mouse DA-PT cells (SOX9+, VCAM1+, CDH6+, VIM+, reduced homeostatic genes), with trajectory analysis suggesting emergence from mature PT cells and decreasing glutathione signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by analysis of published human scRNA-seq data (GSE145927, Figure 6D-F and supplements). The identification of similar cell states in human AKI is important for translational relevance. However, the human data comes from only two transplant kidney biopsies with AKI, which limits generalizability. Claims C69-C71 involve computational inferences that are reasonable but would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Conditional deletion of Gpx4 in Sox9-lineage cells after mild ischemic injury (22 min) results in increased ferroptotic stress (ACSL4), kidney atrophy, tubular injury (KIM1+, KRT8+), inflammation (F4/80+ macrophages), fibrosis (\u03b1SMA+ myofibroblasts), and increased cell death (TUNEL+), mimicking the failed repair phenotype of severe injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 are supported by comprehensive data from the Gpx4 conditional knockout model (Figure 7 and supplements). The experimental design is rigorous with appropriate littermate controls. The genetic deletion is confirmed by immunofluorescence (C72). Multiple outcome measures consistently show failed repair. This is a key experiment demonstrating sufficiency of ferroptotic stress to drive maladaptive repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Gpx4 deletion leads to accumulation of damage-associated PT cells (VCAM1+EMCN-F4/80-) with increased expression of DA-PT markers (Sox9, Cdh6, Vcam1) and co-localization of Sox9-lineage with VCAM1 and ACSL4, supporting the model that ferroptotic stress drives DA-PT accumulation by preventing redifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by immunofluorescence, confocal imaging, RT-PCR, and in situ hybridization data (Figure 8). The careful quantification of VCAM1+EMCN-F4/80- cells (C80) addresses potential confounding from VCAM1 expression in other cell types. The lineage tracing (C81) directly links Gpx4-deficient Sox9-lineage cells to the DA-PT phenotype. Claim C85 is a well-supported conclusion from the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Pharmacological inhibition of ferroptosis with liproxstatin-1 in Gpx4 cKO mice prevents renal atrophy, reduces tubular injury markers (KIM1, KRT8), prevents accumulation of SOX9+VCAM1+ cells, reduces DA-PT marker expression (Sox9, Vcam1, Cdh6), and decreases cell death (TUNEL+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by comprehensive data from the liproxstatin-1 treatment experiment (Figure 9 and supplements). The pharmacological rescue experiment provides strong evidence that ferroptotic stress is causally involved in DA-PT accumulation and failed repair. The experimental design includes appropriate vehicle controls. Multiple outcome measures consistently show rescue of the phenotype. This is a critical experiment demonstrating that ferroptosis inhibition can prevent maladaptive repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The study concludes that ferroptotic stress has dual roles: triggering cell death (ferroptosis) and promoting accumulation of pathologic DA-PT cell states, with GPX4 serving as a key coordinator of PT cell fate during renal repair by preventing both outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are summary conclusions supported by the totality of evidence from the manuscript. The genetic deletion experiments (C72-C85) demonstrate that ferroptotic stress drives DA-PT accumulation, while the pharmacological rescue (C86-C91) shows this can be prevented. The TUNEL data (C78, C90) confirms the cell death role. These conclusions appropriately synthesize the major findings and represent a significant conceptual advance.",
+    "result_type": "MAJOR"
+  }
+]

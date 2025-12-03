@@ -1,0 +1,1918 @@
+{
+  "submission": {
+    "id": "9356f840-f8ad-446b-8686-221efa44336a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:12:05.884911Z",
+    "updated_at": "2025-12-03T12:12:05.884911Z"
+  },
+  "content": [
+    {
+      "id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "submission_id": "9356f840-f8ad-446b-8686-221efa44336a",
+      "content_type": "manuscript",
+      "content_text": "# Reprogramming and redifferentiation of mucosal-associated invariant T cells reveal tumor inhibitory activity\n\n## Authors\n\n- Chie Sugimoto<sup>1</sup> ([ORCID: 0000-0002-0488-2931](https://orcid.org/0000-0002-0488-2931))\n- Yukie Murakami<sup>1</sup>\n- Eisuke Ishii<sup>2</sup>\n- Hiroyoshi Fujita<sup>1</sup>\n- Hiroshi Wakao<sup>1</sup> ([ORCID: 0000-0001-7851-0711](https://orcid.org/0000-0001-7851-0711)) \u2020\n\n### Affiliations\n\n1. Host Defense Division, Research Center for Advanced Medical Science, Dokkyo Medical University Mibu Japan ([ROR:05k27ay38](https://ror.org/05k27ay38))\n2. Department of Dermatology, School of Medicine, Dokkyo Medical University Mibu Japan ([ROR:05k27ay38](https://ror.org/05k27ay38))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMucosal-associated invariant T (MAIT) cells belong to a family of innate-like T cells that bridge innate and adaptive immunities. Although MAIT cells have been implicated in tumor immunity, it currently remains unclear whether they function as tumor-promoting or inhibitory cells. Therefore, we herein used induced pluripotent stem cell (iPSC) technology to investigate this issue. Murine MAIT cells were reprogrammed into iPSCs and redifferentiated towards MAIT-like cells (m-reMAIT cells). m-reMAIT cells were activated by an agonist in the presence and absence of antigen-presenting cells and MR1-tetramer, a reagent to detect MAIT cells. This activation accompanied protein tyrosine phosphorylation and the production of T helper (Th)1, Th2, and Th17 cytokines and inflammatory chemokines. Upon adoptive transfer, m-reMAIT cells migrated to different organs with maturation in mice. Furthermore, m-reMAIT cells inhibited tumor growth in the lung metastasis model and prolonged mouse survival upon tumor inoculation through the NK cell-mediated reinforcement of cytolytic activity. Collectively, the present results demonstrated the utility and role of m-reMAIT cells in tumor immunity and provide insights into the function of MAIT cells in immunity.\n\n## Introduction\n\nMucosal-associated invariant T (MAIT) cells belong to a family of innate-like T cells harboring semi-invariant T-cell receptors (TCRs) and recognize vitamin B2 metabolites as antigens on major histocompatibility complex class I-related gene protein (MR1) (Godfrey et al., 2019). MAIT cells play a pivotal role in immunity by bridging innate and adaptive immunities. They are abundant in humans, but rare in mice, and are associated with a number of diseases, such as bacterial and viral infections, autoimmune, inflammatory, and metabolic diseases, asthma, and cancer (Godfrey et al., 2015; Godfrey et al., 2019; Toubal et al., 2019). Although previous studies implicated MAIT cells in various tumors, their role in tumor immunity remains obscure. An analysis of infiltrating immune cells revealed that the high infiltration of CD8+CD161+ T cells, largely comprising MAIT cells, type 17 CD8+ T cells (Tc17 cells), and stem cell-like memory cells, in tumors represented a favorable prognostic signature across a wide array of human cancers (Gentles et al., 2015; Konduri et al., 2021). In mucosal-associated cancers, including lung and colon cancers, increases in MAIT cells in tumors were concomitant with a decrease in the circulation (Ling et al., 2016; Sundstr\u00f6m et al., 2015; Won et al., 2016). While the high infiltration of MAIT cells in tumors negatively correlated with a favorable outcome in colorectal cancer (CRC) patients, the low infiltration of these cells in the tumors of hepatocellular carcinoma patients correlated with a poor prognosis, which is in contrast to the role of MAIT cells in tumor immunity (Zabijak et al., 2015; Zheng et al., 2017). Furthermore, the tumor microenvironment endowed by tumor-infiltrating lymphocytes, tumor-associated myeloid cells, and cancer-associated fibroblast plays a pivotal role in cancer progression and regression. Accordingly, tumor-residing MAIT cells exhibit an activated and/or exhausted phenotype as exemplified by the upregulation of CD39, PD-1, and CXCL13 upon the stimulation of TCR (Leng et al., 2019; Shaler et al., 2017; Yao et al., 2020). Consistent with these findings, tumor-infiltrating MAIT cells from CRC show the decreased production of cytokines that are pertinent to antitumor activity (Ling et al., 2016; Shaler et al., 2017; Sundstr\u00f6m et al., 2015). Nevertheless, it currently remains unclear whether these changes positively or negatively affect the function of MAIT cells in tumor immunity (Cogswell et al., 2021). However, a recent study based on single-cell RNA sequencing revealed that approximately 50% of Tc17 cells in tumor-infiltrating T cells comprised MAIT cells across various tumors, and these Tc17 cells were particularly enriched in hepatocellular carcinoma and cholangiocarcinoma (Zheng et al., 2021). In addition, the frequency of Tc17 cells in melanoma patients correlated with responsiveness to anti-PD-1 therapy (Sade-Feldman et al., 2019; Zheng et al., 2021). The latter findings argue the antitumor activity of MAIT cells.\n\nBased on these discrepancies, further studies are warranted to clarify the role of MAIT cells in tumor immunity in mice. However, difficulties are still associated with examining MAIT cells in mice for the following reasons. These cells are 10- to 100-fold less abundant in mice than in humans. Although the advent of MR1-tetramer (MR1-tet) has enabled the detection of murine MAIT cells, the paucity of these cells per se still hampers functional studies (Corbett et al., 2014; Rahimpour et al., 2015). Furthermore, there is a lack of appropriate mouse models to investigate the function of MAIT cells (Garner et al., 2018; Godfrey et al., 2019; Toubal et al., 2019). Although the development of MAIT cells is dependent on MR1, MR1-deficient mice do not necessarily reveal all aspects of MAIT cells because they are also devoid of other MR1-dependent cells and provide only limited information on immune cells that potentially interact with MAIT cells. Similarly, previous studies on MAIT cell-specific TCR transgenic mice revealed the protective roles of MAIT cells in bacterial infections, type I diabetes, and experimental autoimmune encephalitis (Chua et al., 2011; Croxford et al., 2006; Cui et al., 2015; Le Bourhis et al., 2010; Martin et al., 2009; Meierovics et al., 2013; Reantragoon et al., 2013; Sakala et al., 2015; Shalapour et al., 2012; Shimamura et al., 2011). However, the aberrant expression of transcription factors in MAIT cells impedes investigations on their precise roles in health and disease.\n\nWe herein used induced pluripotent stem cell (iPSC) technology to examine the role(s) of MAIT cells in immunity, particularly tumor immunity. We reprogrammed murine MAIT cells into iPSCs (referred to as MAIT-iPSCs), differentiated MAIT-iPSCs into MAIT-like cells (referred to as m-reMAIT cells), and adoptively transferred them into syngeneic immunocompetent mice to investigate their role. This approach not only allows us to assess the role of m-reMAIT cells as effector cells, it also provides insights into the interactions with other immune cells in tumor immunity.\n\nIn this study, we showed that 5-(2-oxopropylideneamino)-6-D-ribitylaminouracil (5-OP-RU), an agonist of MAIT cells, and 5-OP-RU-loaded murine MR1-tet (mMR1-tet) both activated m-reMAIT cells, while these reagents induced the production of a similar, but not identical, set of cytokines and chemokines in the absence of antigen-presenting cells (APCs). When adoptively transferred, m-reMAIT cells migrated to different organs concomitant with the acquisition of maturation and prolonged mouse survival upon tumor inoculation. This tumor inhibitory activity was mediated through enhancements in the cytolytic activity of m-reMAIT cells by NK cells.\n\nThe present results imply that the adoptive transfer of m-reMAIT cells has potential as a novel tool for examining the immune functions of MAIT cells in health and disease.\n\n## Results\n\n### MAIT cell reprogramming and redifferentiation/characterization of m-reMAIT cells\n\nFluorescent-activated cell sorting (FACS)-purified MAIT cells (defined as CD44+TCR\u03b2+mMR1-tet+ cells, purity >97%) from the lungs of C57BL/6 mice were reprogrammed with the Sendai virus vector KOSM302L (Wakao et al., 2013). Forty-six iPSCs were obtained with a reprogramming efficiency of 0.6%. Specific iPSCs were subjected to limiting dilutions, and clone L7-1 was used throughout the experiments unless otherwise indicated. Since TCR comprises \u03b1 and \u03b2 chains, the presence of rearranged Trav1-Traj33 specific for MAIT cells was detected by PCR followed by DNA sequencing and a Southern blot analysis with MAIT cell-derived iPSCs (MAIT-iPSCs) (Figure 1\u2014figure supplement 1A\u2013D). MAIT-iPSCs also harbored rearranged Trbv13-3, Trbv19, and Trbv12-1 (Table 1) and exhibited pluripotency, as evidenced by the ability to give rise to chimeric mice (Figure 1\u2014figure supplement 1E).\n\n**Table 1.**\n T-cell receptor \u03b2 (TCR\u03b2) repertoires of the mouse mucosal-associated invariant T (MAIT) cell-derived induced pluripotent stem cells (iPSCs).\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">iPS clones</th>\n      <th rowspan=\"2\">Congenic strain</th>\n      <th rowspan=\"2\">V\u03b2</th>\n      <th rowspan=\"2\">D</th>\n      <th rowspan=\"2\">J\u03b2</th>\n      <th colspan=\"5\">V-D-J junction</th>\n      <th colspan=\"2\">CDR3</th>\n    </tr>\n    <tr>\n      <th>V region end</th>\n      <th>V-D junction</th>\n      <th>D region</th>\n      <th>D-J junction</th>\n      <th>J region start</th>\n      <th>Nucleotide sequence</th>\n      <th>Translation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>L3-1</td>\n      <td rowspan=\"5\">Ly5.2</td>\n      <td>TRBV13-3*01</td>\n      <td>TRBD1*01</td>\n      <td>TRBJ2-3*01</td>\n      <td>TGATG</td>\n      <td>CTA</td>\n      <td>GGGACAGGG</td>\n      <td></td>\n      <td>GTGCA</td>\n      <td>GCCAGCAGTGATGCTAGGGACAGGGGTGCAGAAACGCTGTAT</td>\n      <td>ASSDARDRGAETLY</td>\n    </tr>\n    <tr>\n      <td>L7-1</td>\n      <td>TRBV13-3*01</td>\n      <td>TRBD1*01</td>\n      <td>TRBJ1-2*01</td>\n      <td>AGTGA</td>\n      <td></td>\n      <td>CAGGG</td>\n      <td>A</td>\n      <td>AAACT</td>\n      <td>GCCAGCAGTGACAGGGAAAACTCCGACTACACC</td>\n      <td>ASSDRENSDYT</td>\n    </tr>\n    <tr>\n      <td>L11-1</td>\n      <td>TRBV19*01, *03</td>\n      <td>TRBD2*01</td>\n      <td>TRBJ2-3*01</td>\n      <td>GCAGT</td>\n      <td></td>\n      <td>GGGACTGGGGGG</td>\n      <td>T</td>\n      <td>AGTGC</td>\n      <td>GCCAGCAGTGGACTGGGGGGTAGTGCAGAAACGCTGTAT</td>\n      <td>ASSGLGGSAETLY</td>\n    </tr>\n    <tr>\n      <td>L15-1</td>\n      <td>TRBV13-3*01</td>\n      <td>TRBD1*01</td>\n      <td>TRBJ1-6*01</td>\n      <td>AGCAG</td>\n      <td>CA</td>\n      <td>GACAGGG</td>\n      <td></td>\n      <td>CTATA</td>\n      <td>GCCAGCAGCAGACAGGGCTATAATTCGCCCCTCTAC</td>\n      <td>ASSRQGYNSPLY</td>\n    </tr>\n    <tr>\n      <td>L19-1</td>\n      <td>TRBV19*01, *03</td>\n      <td>TRBD2*01</td>\n      <td>TRBJ2-3*01</td>\n      <td>GCAGT</td>\n      <td></td>\n      <td>GGGACTGGGGGG</td>\n      <td>T</td>\n      <td>AGTGC</td>\n      <td>GCCAGCAGTGGACTGGGGGGTAGTGCAGAAACGCTGTAT</td>\n      <td>ASSGLGGSAETLY</td>\n    </tr>\n  </tbody>\n</table>\n\nThe differentiation of MAIT-iPSCs on OP9 ectopically expressing delta-like 1 (OP9-DLL1), a feeder cell for T-cell differentiation, resulted in m-reMAIT cells that were TCR\u03b2+mMR1-tet+CD8+CD4+CD44-CD25intPLZF-ROR\u03b3t+ (Figure 1A). Consistent with this result, other MAIT-iPSC clones, such as L3-1, L11-1, L15-1, and L19-1, showed similar expression profiles to m-reMAIT cells on day 23 (Figure 1\u2014figure supplement 1H). m-reMAIT cells multiplied more than 100-fold starting from MAIT-iPSCs with a doubling time of ~10.5 hr during the logarithmic phase of growth later in differentiation (Figure 1\u2014figure supplement 1F and G). m-reMAIT cells were activated in a manner that was dependent on both 5-OP-RU and MR1 in the presence of APCs, such as WT3, the mouse embryonic fibroblast cell line, WT3/mMR1, WT3-overexpressing murine MR1, CH27, a B1B lymphoma cell line expressing a low level of endogenous MR1 on the cell surface, and CH27/mMR1, CH27-overexpressing murine MR1 (Figure 1B), which was consistent with previous findings (Cheng et al., 1999; Huang et al., 2008; Miley et al., 2003). Similarly, 5-OP-RU dose-dependent activation was observed in the other m-reMAIT cell lines L3-1, L11-1, L15-1, and L19-1 (Figure 1\u2014figure supplement 1I). The activation of m-reMAIT cells in the presence of CH27 or CH27/mMR1 in turn induced the production of a battery of inflammatory cytokines and chemokines, such as IFN-\u03b3, TNF-\u03b1, IL-17A, CCL4 (MIP-1\u03b2), and CCL5 (RANTES), as well as IL-2 and the T helper (Th)2 cytokine IL-13, in a 5-OP-RU dose-dependent manner (Figure 1\u2014figure supplement 1J ). 5-OP-RU and mMR1-tet each activated m-reMAIT cells and promoted the production of a similar, but not identical, set of cytokines and chemokines in a dose-dependent manner in the absence of APCs. It is important to note that mMR1-tet was superior to 5-OP-RU at inducing TNF-\u03b1, Th2 cytokines, such as IL-6, IL-10, and IL-13, the Th17 cytokines, IL-17F, IL-22, and IL-23, and inflammatory chemokines, including CCL5, CCL2 (MCP-1), CXCL1, and CXCL6, irrespective of their similar abilities to upregulate CD69 (Figure 1D\u2013F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig1-v1.jpg)\n\n**Figure 1.:** (A) Flow cytometric profiles of m-reMAIT cells. mMR1-tet staining and expression of T-cell receptor \u03b2 (TCR\u03b2), CD4, CD8, CD25, and CD44 and the transcription factors PLZF and ROR\u03b3t in m-reMAIT cells on differentiation day 18. (B) 5-(2-oxopropylideneamino)-6-D-ribitylaminouracil (5-OP-RU) dose-dependent activation of m-reMAIT cells. The percentages of CD69+ cells among m-reMAIT cells challenged with the indicated concentration of 5-OP-RU in the presence of WT3 (\u25ef), WT3/mMR1 (\u25cf), CH27 (\u25a1), and CH27/mMR1(\u25a0). (C) MR1-dependent activation of m-reMAIT cells. The percentage of CD69+ cells among m-reMAIT cells cultured with CH27/mMR1, challenged as in (B) in the presence of the anti-MR1 antibody (\u25a0) or the isotype control antibody (\u25ef). (D) 5-OP-RU dose-dependent activation. The percentage of m-reMAIT cells expressing CD69 upon a challenge with various concentrations of 5-OP-RU. Representative data from two independent experiments are shown. (E) mMR1-tet dose-dependent activation. The percentage of m-reMAIT cells expressing CD69 upon a challenge with the indicated amounts of mMR1-tet. Representative data from two independent experiments are shown. (F) 5-OP-RU- and mMR1-tet-induced cytokines and chemokines. m-reMAIT cells were stimulated with various concentrations of 5-OP-RU (\u25ef) or mMR1-tet (\u25a0) and the resultant cytokines and chemokines were quantified with LegendPlex. The concentrations at which each reagent induced a similar degree of activation (% CD69) are shown as relative concentrations (0.1\u2013100 nM for 5-OP-RU and 0.01\u201310 \u03bcg/ml for mMR1-tet). The number on the X-axis corresponds to that in (D) and (E). (G) Tyrosine phosphorylation elicited with 5-OP-RU. A Western blot analysis with PY99 (anti-phosphotyrosine). Upon a challenge with different concentrations of 5-OP-RU for 30 min, the cell lysate from m-reMAIT cells was separated on SDS-PAGE (5 \u00d7 105/lane), and subjected to Western blotting. Lane 1, 0; lane 2, 0.1; lane 3, 1.0; lane 4, 10; lane 5, 100; lane 6, 1000; and lane 7, 10,000 (nM). Phosphorylated proteins are indicated with arrows. (H) Time course of tyrosine phosphorylation. A Western blot analysis with PY99. The cell lysate from m-reMAIT cells challenged with 100 nM of 5-OP-RU for the indicated time was separated on SDS-PAGE (5 \u00d7 105/lane) and subjected to Western blotting. Lane 1, 0; lane 2, 15; lane 3, 30; lane 4, 60; lane 5, 150; lane 6, 300 (min) . Arrows indicate phosphorylated proteins. (I) Linker for the activation of T cells (LAT) as a phosphorylated 37-kD protein. A Western blot analysis with PY99, anti-LAT, and anti-\u03b2-actin. The cell lysate prepared as described in (H) for 60 min was subjected to Western blotting. A blot with PY99 (upper panel), anti-LAT (middle panel), and anti-\u03b2-actin (lower panel). Phosphorylated LAT and LAT as well as \u03b2-actin are indicated (arrow). Lane 1, 0; lane 2, 0.1; lane 3, 1.0; lane 4, 10; lane 5, 100; lane 6, 1000; lane 7, 10,000 (nM). (J) Tyrosine phosphorylation induced by mMR1-tet. A Western blot analysis with PY99. The cell lysate from m-reMAIT cells challenged with the indicated amounts of unlabeled mMR1-tet for 60 min was subjected to Western blotting (5 \u00d7 105/lane). Lane 1, 0; lane 2, 0.43; lane 3, 1.3; lane 4, 4.3; lane 5, 13 (\u03bcg/ml). Arrows indicate phosphorylated proteins. MAIT: mucosal-associated invariant T cell.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Genomic configuration of TCR\u03b1 loci in MAIT-iPSCs. TCR\u03b1 loci in C57BL/6 (upper panel) and MAIT-iPSCs (middle panel). The primer set to detect rearranged Trav1-Traj33 (V\u03b119-J\u03b133) is shown with arrows (lower panel). (B) MAIT-iPSC detection by PCR. The results of PCR using the primer set shown in (A). Bands corresponding to rearranged Trav1-Traj33 are indicated by arrowheads. MAIT-iPSCs (L1\u2013L21) before the limiting dilution, the positive control, and negative control (ES cells) are shown. M: molecular weight marker. (C) Southern blot probe detecting the rearranged TCR\u03b1 locus. The genomic configuration of the TCR\u03b1 locus before (upper panel) and after (lower panel) the Trav1-Traj33 rearrangement. The positions of the Southern blot probe as well as BamHI sites are shown together with the primer sequences for probe synthesis. (D) Southern blot analysis of MAIT-iPSCs. The bands corresponding to the germline configuration (~8.5 kb) and those after the rearrangement (~6.5 kb) are shown by arrowheads. In the analysis, genomic DNA from MAIT-iPSCs after limiting dilutions was used. Mouse ES cells (cntrl). M: DNA size marker; L7 clones; L7-1\u2212L7-6; L11 clones; L11-1\u2212L11-4; L15 clones; L15-1\u2212L15-3; and L19 clones; L19-1\u2212L19-6. (E) Chimeric mice generated from MAIT-iPSCs. Chimeric mice from MAIT-iPSCs (L7) are shown. Chimerism ranged between 10% and 90%. (F) Expansion of MAIT-iPSCs during differentiation. Cell numbers at the indicated differentiation stage of L7-1 from iPSCs are plotted. Blast: lymphocyte progenitor cells; reMAIT: m-reMAIT cells defined as TCR\u03b2+mMR1-tet+. Data are shown as medians. Horizontal line: median; whiskers: minimum and maximum. (G) m-reMAIT cell doubling time during the logarithmic phase of expansion. The fluorescent intensity of CFSE-labeled m-reMAIT cells (L7-1) vs. the culture time is plotted to estimate the doubling time. (H) Flow cytometric profiles of m-reMAIT cells from different MAIT-iPSCs. mMR1-tet staining and the expression of TCR\u03b2, CD4, CD8, CD25, CD69, and CD44 in m-reMAIT cells (from L3-1, L7-1, L11-1, L15-1, and L19-1 MAIT-iPSCs) on differentiation day 23. (I) 5-OP-RU dose-dependent activation of m-reMAIT cells. The percentage of CD69+ cells among m-reMAIT cells (from L3-1, L11-1, L15-1, and L19-1 MAIT-iPSCs) challenged with the indicated concentration of 5-OP-RU in the presence of antigen-presenting cells (APCs), such as WT3, WT3/mMR1, CH27, and CH27/mMR1, is shown. (J) 5-OP-RU dose-dependent production of cytokines and chemokines. The indicated cytokines and chemokines in the culture supernatant from m-reMAIT cells (L7-1) cultured in the presence of CH27 (\u25a1) or CH27/mMR1 (\u25cf), and challenged with varying concentrations of 5-OP-RU are quantified with LegendPlex. Data are representative of two independent experiments.\n\nAlthough a TCR stimulation elicits an array of signaling cascades, including protein tyrosine kinases, phosphatases, GTP-binding proteins, and adaptor proteins, we herein focused on whether 5-OP-RU activated protein tyrosine kinases and induced tyrosine phosphorylation. The results obtained showed the dose- and time-dependent phosphorylation of proteins (Figure 1G and H). Linker for the activation of T cells (LAT) was identified as a TCR signaling component among phosphorylated proteins (Figure 1I). Unexpectedly, the addition of mMR1-tet, a reagent widely used to detect MAIT cells, engendered similar protein tyrosine phosphorylation, as was the case for 5-OP-RU (Figure 1G, H and J).\n\nThese results demonstrated that MAIT-iPSCs gave rise to m-reMAIT cells upon differentiation under T-cell permissive conditions, and m-reMAIT cells were activated by 5-OP-RU and mMR1-tet in the absence of APCs concomitant with protein tyrosine phosphorylation and the production of cytokines and chemokines.\n\n### m-reMAIT cell migration into different organs\n\nTo follow the dynamics of m-reMAIT cells, cells were adoptively transferred into mice and their migration and maturation status were examined. To distinguish donor cells from endogenous MAIT cells, C57BL/6 (Ly5.1) mice received m-reMAIT cells that were Ly5.2. m-reMAIT cells and endogenous MAIT cells were detected in the thymus, bone marrow, lung, liver, spleen, intestines, and the mediastinal and inguinal lymph nodes at various endogenous MAIT cell/m-reMAIT cell ratios (Figure 2A and D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig2-v1.jpg)\n\n**Figure 2.:** (A) m-reMAIT cell migration into different organs. m-reMAIT cells (Ly5.2) were adoptively transferred into C57BL/6 (Ly5.1) mice via an intraperitoneal injection (1 \u00d7 107 cells/mouse), and endogenous as well as exogenous TCR\u03b2+mMR1-tet+ cells were enriched 7 days later with mMR1-tet (left panel) and subjected to analyses of the expression of Ly5.1 and Ly5.2 (right panel). The number in the panel shows the percentage of Ly5.1 (endogenous) and Ly5.2 (exogenous) TCR\u03b2+mMR1-tet+ cells. Representative data from a pool of 3\u20134 mice per experiment are shown. (B) Time-dependent upregulation of CD44. CD44 expression in TCR\u03b2+mMR1-tet+ cells from the indicated tissues 7 and 14 days after m-reMAIT cell adoptive transfer. Isotype control (dotted line), endogenous mucosal-associated invariant T (MAIT) cells (Ly5.1+TCR\u03b2+mMR1-tet+ cells) (plain blue line), and exogenous m-reMAIT cells (Ly5.2+TCR\u03b2+mMR1-tet+ cells) (shaded in red). Representative data from a pool of 3\u20134 mice per experiment are shown. (C) Expression of molecules relevant to MAIT cells. The expression of molecules in m-reMAIT cells from the indicated tissues 14 days after adoptive transfer. Isotype control (dotted line), endogenous MAIT cells (Ly5.1+TCR\u03b2+mMR1-tet+ cells) (plain blue line), and exogenous m-reMAIT cells (Ly5.2+TCR\u03b2+mMR1-tet+ cells) (shaded in red). Representative data from a pool of 3\u20134 mice per experiment are shown. (D) Frequency of m-reMAIT cells. The frequency of m-reMAIT cells (m-reMAITs) among mMR1-tet+TCR\u03b2+ cells harvested on days 7 and 14 from the indicated organs is shown. Representative data from two experiments are indicated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** PCA on the whole transcripts in na\u00efve m-reMAIT cells (closed circle), in m-reMAIT cells from the spleen (green square), liver (green triangle), and LPL (green cross) upon adoptive transfer, and in endogenous mucosal-associated invariant T (MAIT) cells from the spleen (red square), liver (red triangle), and LPL (red cross).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Heatmap showing the transcriptional evolution of genes relevant to MAIT cell identity and function in na\u00efve m-reMAIT cells, m-reMAIT cells upon adoptive transfer and endogenous MAIT cells from the indicated organs. The numbers show the relative expression after scaling, and those in the brackets indicate expression level as defined log (FPKM).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Same as Figure 2\u2014figure supplement 2 except that the transcripts relevant to tissue repairing are shown.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Same as Figure 2\u2014figure supplement 2 except that the transcripts relevant to tissue residency are shown.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Same as Figure 2\u2014figure supplement 2 except that the transcripts relevant to V-D-J recombination are shown.\n\nSince CD44 levels reflect the degree of the functional maturation of T cells (Budd et al., 1987), we examined time-dependent changes in CD44 expression in m-reMAIT cells. In comparison with endogenous MAIT cells, m-reMAIT cells showed the time-dependent upregulation of CD44 in the spleen, liver, and lungs, and lower expression in the intestines (Figure 2B).\n\nAn analysis of other molecules relevant to the functionality of MAIT cells revealed quasi-equivalent IL-18R\u03b1 expression in the spleen, liver, and intestines to that in endogenous cells. Moreover, the expression of IL-7R\u03b1 and CXCR6 in all organs examined was lower than that in endogenous cells, while CD69 expression was quasi-equivalent to that in endogenous cells (Figure 2C). Furthermore, the frequency of m-reMAIT cells among mMR1-tet+TCR\u03b2+ cells in primary lymphoid organs decreased, while that in peripheral tissues increased over time (Figure 2D).\n\nWe then investigated the transcriptome in na\u00efve m-reMAIT cells, m-reMAIT cells adoptively transferred into syngeneic mice, and endogenous MAIT cells from the recipient mice to follow the evolution of transcripts by RNA sequencing. A principal component analysis (PCA) revealed that the transcriptome of na\u00efve m-reMAIT cells clustered upon adoptive transfer, which was similar to that of endogenous MAIT cells from lamina propria lymphocytes (Figure 2\u2014figure supplement 1). We then focused on the transcripts relevant to the identity and function of MAIT cells (Koay et al., 2019; Salou et al., 2019). We found that the expression of transcripts, such as Il7r, Il12rb, Il18r, Il18rap, Prf, Gzmb, Tnf, Ifng, Il22, Slamf7, Abcb1a (encoding the efflux pump), Zbtb16 (encoding PLZF), Tbx21 (encoding T-bet), and Zfp683 (encoding Hobbit), was upregulated upon the adoptive transfer of na\u00efve m-reMAIT cells, and the expression levels of some transcripts reached those in endogenous MAIT cells (Figure 2\u2014figure supplement 2). Similar results were obtained for transcripts pertinent to the tissue repairing and tissue residency signature (Figure 2\u2014figure supplements 3 and 4; Leng et al., 2019; Salou et al., 2019; Yanai et al., 2016). Transcripts relevant to the V-D-J recombination machinery, such as Rag1, Rag2, Hmgb1, Dntt, and Lig4, were silenced across the organs upon adoptive transfer (Figure 2\u2014figure supplement 5).\n\nThese results indicated that m-reMAIT cells migrated into different organs accompanying maturation upon adoptive transfer in immunocompetent mice.\n\n### Tumor inhibitory activity of m-reMAIT cells\n\nSince the role of MAIT cells in tumors has been a target for intensive scrutiny, we attempted to clarify whether m-reMAIT cells interfered with tumor metastasis and prolonged mouse survival (Godfrey et al., 2015; Toubal et al., 2019). A previous study on B16F10 melanoma suggested that MAIT cells induce tumor development in a manner that is dependent on MR1 and agonists, such as 5-OP-RU (Yan et al., 2020). While B16F10 significantly upregulated MR1 on the cell surface with the 5-OP-RU challenge, a similar change was not observed for Lewis lung carcinoma (LLC) (Figure 3A). Therefore, the use of LLC allows for assessments of the role of m-reMAIT cells in tumor immunosurveillance independent of the 5-OP-RU-MR1 axis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig3-v1.jpg)\n\n**Figure 3.:** (A) Time course of 5-(2-oxopropylideneamino)-6-D-ribitylaminouracil (5-OP-RU)-dependent MR1 expression. The indicated cancer cell lines were challenged with 5-OP-RU. MR1 expression levels on the cell surface at the indicated time point are shown as relative geometric mean fluorescent intensity (gMFI). Data are representative of three independent experiments. (B) m-reMAIT cell dose-dependent survival extension. C57BL/6 mice received the indicated amounts of m-reMAIT cells 6 days prior to the Lewis lung carcinoma (LLC) inoculation (3 \u00d7 105 cells/mouse i.v.), and survival was monitored (n = 10\u201312/group). Data are representative of three independent experiments. p-Values between the indicated group are shown (the log-rank test). (C) Effects of the multiple transfers of m-reMAIT cells on survival. The survival of C57BL/6 mice that received m-reMAIT cells (1 \u00d7 106 /mouse, i.p.) 6 days prior to the LLC inoculation (3 \u00d7 105 cells/mouse, i.v.), and of mice that received LLC and two more consecutive transfers of m-reMAIT cells (1 \u00d7 106/transfer/mouse) was monitored (n = 10\u201312/group). Sham-treated mice that only received LLC served as a control. Data are representative of two independent experiments. p-Values between the indicated groups are shown (the log-rank test). (D) Effects of m-reMAIT cells on in situ tumor growth. Growth curve of LLC. LLC (3 \u00d7 105 /mouse) was subcutaneously inoculated into the right flank of C57BL/6 mice 6 days after the m-reMAIT cell transfer (i.p.). Tumor size was plotted with time. Sham treated (\u25cf), 0.3 \u00d7 106 transferred (\u25a0), 1.0 \u00d7 106 transferred (\u25b2), and 3.0 \u00d7 106 m-reMAIT cells transferred (\u25bc). Data are shown as SEM (5\u20136 mice per group).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The number of m-reMAIT cells from the indicated tissues upon adoptive transfer in the recipient is shown. Tissue samples were prepared at the indicated time point with or without subcutaneous Lewis lung carcinoma (LLC) injection (n = 3\u20134). MAIT: mucosal-associated invariant T cell.\n\nThe adoptive transfer of m-reMAIT cells into mice followed by the LLC inoculation prolonged survival in a dose-dependent manner. While 3 \u00d7 105 m-reMAIT cells slightly prolonged survival over the control, more than 1 \u00d7 106 m-reMAIT cells significantly prolonged survival (Figure 3B). Nevertheless, multiple transfers of m-reMAIT cells failed to significantly prolong survival (Figure 3C). In contrast to these results, the adoptive transfer of m-reMAIT cells did not suppress tumor growth at any dose following the subcutaneous inoculation of LLC, which represents an in situ tumor growth model (Figure 3D), irrespective of the delayed emergence of m-reMAIT cells in the skin (Figure 3\u2014figure supplement 1).\n\nThese results implied that m-reMAIT cells inhibited tumor metastasis rather than suppressing tumor growth in situ.\n\n### Cytolytic activity of m-reMAIT cells in combination with NK cells\n\nWhile the above results indicated that m-reMAIT cells functioned to suppress metastasis, it currently remains unclear whether other immune cells are involved in this tumor inhibitory activity. NK cells are an essential innate sentinel in tumor immunosurveillance, and previous studies reported contradicting findings regarding the role of MAIT cells on NK cells in tumor immunity. Yan et al. demonstrated that MAIT cells promoted tumor growth by suppressing the activity of NK cells and T cells (Yan et al., 2020), while others suggested that the activation of MAIT cells in vivo strengthened antitumor activity concomitant with an enhanced NK cell response (Petley et al., 2021). Therefore, we investigated whether and how m-reMAIT cells and NK cells mutually affect their functions in tumor immunity. Interactions between NK cells and m-reMAIT cells were assessed in a coculture. While m-reMAIT cells were activated in an NK cell dose-dependent manner, the activation of NK cells was less prominent (Figure 4A). Moreover, the coculture led to the production of Th1 and Th17 cytokines as well as inflammatory chemokines in an NK cell dose-dependent manner (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70848/elife-70848-fig4-v1.jpg)\n\n**Figure 4.:** (A) Activation of m-reMAIT cells by NK cells. CD69 expression in m-reMAIT cells (reMAIT \u25cf) and NK cells (NK \u25ef) upon incubation at the indicated ratio. The percentage of cells expressing CD69 (left panel) and the intensity of CD69 in each cell population (right panel) are shown. (B) Cytokines and chemokines upon a coculture. Cytokines and chemokines released upon a coculture of m-reMAIT cells and NK cells at the indicated ratio are shown (reMAIT:NK). Amounts were quantified with LegendPlex. Representative data from two independent experiments are shown. (C) Transcripts relevant to cytolytic activity in m-reMAIT cells. Ifng, Gzma, Gzmb, Tbf, Gzmk, Pfr1, Fasl, Tnfsf10, Il6, Il17a, Il22, Ccl3, Ccl4, Ccl5, and Ccl22 in m-reMAIT cells cultured with NK cells were quantified with qRT-PCR. m-reMAIT cells and NK cells were sort-purified after the coculture (purity >98%) or cultured individually. The expression of each transcript was normalized with Gapdh, and fold changes in the relative expression of the transcript in m-reMAIT cells cultured with NK cells relative to that in m-reMAIT cells cultured alone are shown. Data are representative of three independent experiments. (D) Transcripts relevant to cytolytic activity in NK cells. Fold changes in the relative expression of the indicated transcript as described in (C) in NK cells cultured with m-reMAIT cells relative to that in NK cells alone are shown. Representative data from three independent experiments are shown. (E) Activation and degranulation of NK cells and m-reMAIT cells. The expression of CD69, an activation marker, and CD107a, a marker for the exocytosis of cytolytic granules, was assessed under various culture conditions. The percentages of CD69+ cells and CD69+CD107a+ cells among NK cells alone (control), NK cells cocultured with m-reMAIT cells (+reMAIT), NK cells cultured with Yac-1 (+Yac-1), and NK cells cocultured with m-reMAIT cells and Yac-1 (+reMAIT/Yac-1) (upper panels). The percentages of CD69+ cells and CD69+CD107a+ cells among m-reMAIT cells alone (control), m-reMAIT cells cocultured with NK cells (+NK), m-reMAIT cells cocultured with Yac-1 (+Yac-1), and m-reMAIT cells cocultured with NK cells and Yac-1 (+NK/Yac-1) (lower panels). Data are representative of three independent experiments. (F) Cytolytic activity against Yac-1. Cytolytic activity of m-reMAIT cells (reMAIT \u25ef), NK cells (NK \u25a1), and NK cells plus m-reMAIT cells (NK+reMAIT \u25cf). Cytolytic activities (% lysis) at different effector (NK cells, m-reMAIT cells, and NK cell+m-reMAIT cells)/Target (Yac-1) (E/T) ratios are shown. Representative data from three experiments are shown. The significance of differences between the groups at the indicated E/T ratio assessed with a two-way ANOVA is shown (*p<0.05, **p<0.01, ***p<0.005). From the top, NK+reMAIT vs. reMAIT, NK+reMAIT vs. NK, and reMAIT vs. NK. Data are representative of three independent experiments. (G) Cytolytic activity against Lewis lung carcinoma (LLC). The cytolytic activities of m-reMAIT cells (\u25ef), NK cells (\u25a1), and m-reMAIT cells plus NK cells (\u25cf) against LLC at the indicated E/T ratio are shown as % lysis. The significance of differences between the groups is calculated as in (E). Data are representative of three independent experiments. (H) NK cell-dependent extension of survival. C57BL/6 mice were divided into two groups, one that received 1 \u00d7 106 m-reMAIT cells (reMAIT) and another that was left untreated (n). Each group was further divided into two subgroups, one that received consecutive injections of anti-Asialo GM1 (AsG) (\u20131 and 16 days, 50 \u03bcg/mouse) after the LLC inoculation (3 \u00d7 105 i.v.) and another that was left untreated (n). Survival was monitored thereafter. Representative data from two independent experiments are shown (n = 10\u201314/group). p-Values between the indicated groups are shown (the log-rank test).\n\nTo obtain further insights into the molecular events underlying this interaction, NK cells and m-reMAIT cells were purified with FACS after the coculture and each subset was examined for transcripts relevant to cytolytic function (Figure 4C and D). Ifng was induced in m-reMAIT cells, but not in NK cells. Similarly, the coculture enhanced the transcripts for serine proteases, such as Grza, Grzb, and Tnf, in m-reMAIT cells and NK cells (Trapani and Smyth, 2002). In contrast, the expression of the transcripts for the TNF superfamily, including Fasl and Tnsf10, was only stimulated in m-reMAIT cells. Moreover, the expression of Ccl4 (Mip1b), Ccl5 (Rantes), Il17a, and Il6 was upregulated in m-reMAIT cells in contrast to only Ccl5 (Rantes) in NK cells.\n\nWe then investigated whether this change had an impact on CD69 and CD107a, a marker of cytolytic granule exocytosis. While the coculture with m-reMAIT cells did not markedly upregulate the expression of CD69 (CD69+ cells) in NK cells, the addition of Yac-1, an NK cell-sensitive tumor cell line (alone or in combination with m-reMAIT cells), increased the percentage of CD69+ cells. However, these combinations resulted in negligible changes in the percentage of CD69+CD107a+ cells (Figure 4E, upper panels). In contrast, incubation with NK cells or Yac-1 enhanced the percentage of CD69+ cells in m-reMAIT cells. Moreover, a coculture with NK cells together with Yac-1 resulted in further increases, and similar results were obtained for CD69+CD107a+ cells in m-reMAIT cells (Figure 4E, lower panels).\n\nWe then examined whether the above activation and/or expression of CD107a reflected lytic activity against tumor cells. m-reMAIT cells lysed Yac-1, an NK cell-sensitive tumor cell line, as efficaciously as NK cells, and these cells synergistically enhanced killing (Figure 4F). We extended our study to LLC, an NK cell-insensitive cell line. NK cells alone did not induce cell death in LLC, whereas m-reMAIT cells did. Moreover, the combination of these cells exhibited synergistically enhanced lytic activity (Figure 4G).\n\nWe then investigated the significance of the interaction between NK cells and m-reMAITs cell in vivo. To assess the role of NK cells in m-reMAIT cell-mediated anti-metastasis activity, NK cells were depleted in mice with an anti-Asialo GM1 antibody (AsG). This depletion did not significantly affect the survival of control mice. However, the AsG treatment abrogated the survival advantage of m-reMAIT cells, highlighting the stimulatory role of NK cells in m-reMAIT cell-mediated tumor inhibitory activity (Figure 4H).\n\nThese results demonstrated that the intrinsic cytolytic activity of m-reMAIT cells against tumors was bolstered by NK cells concomitant with the upregulation of the relevant arsenals.\n\n## Discussion\n\nThe present results revealed that m-reMAIT cells were competent in TCR signaling. The activation of m-reMAIT cells and subsequent production of cytokines and chemokines in the absence of APCs suggested that 5-OP-RU directly operated via MR1 in m-reMAIT cells (Figure 1D\u2013F). 5-OP-RU may be passively transported into cells, which in turn promotes the release of antigen-loaded MR1 from the endoplasmic reticulum (ER) onto the plasma membrane, thereby enabling signaling via TCR in m-reMAIT cells (referred to as a cis-acting signal) regardless of the apparent absence of MR1 on the cell surface (Figure 1B and D, Figure 1\u2014figure supplement 1I; McWilliam et al., 2016). In contrast, mMR1-tet directly binds to TCR on m-reMAIT cells and elicits signals (referred to as trans-acting signals). Therefore, 5-OP-RU and mMR1-tet may have elicited similar signals through serine/threonine and/or tyrosine phosphorylation or dephosphorylation via TCR, which ultimately resulted in a different profile of cytokine and chemokine production (Figure 1F\u2013H and J; Gaud et al., 2018; Nausch and Cerwenka, 2008). In this respect, the signaling pathway(s) responsible for the production of IL-2, IL-4, MIP1\u03b1 CCL3 (MIP-1\u03b1), and CCL4 (MIP-1\u03b2) may be common between 5-OP-RU and mMR1-tet. In contrast, mMR1-tet may have activated the signaling pathways pertinent to the activation of Th17 as evidenced by the production of Th17 cytokines, such as IL-17F, IL-22, and IL-23, concomitant with inflammatory chemokines, including CCL5, CCL2, CXCL1, and CXCL6, in addition to TNF-\u03b1 (Figure 1F). These results suggest that mMR1-tet signals, in part, through NF-\u03baB, while 5-OP-RU does not (Liu et al., 2017).\n\nWhile 5-OP-RU induced protein tyrosine phosphorylation, the identity of these proteins remains unclear, except for LAT (Figure 1G and H). Since LAT forms a hub that interacts with many signaling molecules, such as transmembrane receptors, phosphatases, kinases, guanine nucleotide exchange factors, GTP-activating proteins, ion channels, transporters, and ubiquitin ligases, further studies will provide insights into the proteins responsible for MAIT-TCR signaling and reveal the differences in signaling between conventional T cells and MAIT cells (Malissen et al., 2014).\n\nIt is important to note that the challenge with mMR1-tet induced the activation of m-reMAIT cells and production of cytokines and chemokines. This suggests that MAIT cells prepared from animals, including humans and mice, are unintentionally stimulated during experiments. Therefore, the interpretation of data requires caution (Figure 1E, F and J).\n\nAlthough a previous study suggested that MAIT cells comprise MAIT1 and MAIT17 subsets characterized by the Th1 and Th17 transcriptomes, respectively, the present results revealed that m-reMAIT cells produced Th1, Th2, and Th17 cytokines (Salou et al., 2019). This may reflect a developmental stage at which m-reMAIT cells are en route to functional maturation and m-reMAIT cells generated in vitro represent the most immature stage. Therefore, it is tempting to postulate that the interaction between nascent MAIT cells and double-positive thymocytes favors the differentiation of na\u00efve MAIT cells into MAIT1 and MAIT17 in vivo. The results on the adoptive transfer of m-reMAIT cells indicated that nascent MAIT cells egressed from the thymus migrate into any organs concomitant with the upregulation of CD44, a cell adhesion receptor, memory, and/or activation marker (Figure 2B; Benlagha et al., 2005). It is of interest that the expression of IL-7R\u03b1 in m-reMAIT cells became quasi-equivalent to that in endogenous cells in the intestines. Since IL-7 from intestinal epithelial cells plays a pivotal role in their homeostasis, the upregulation of IL-7R\u03b1 in m-reMAIT cells may mirror an intrinsic and primary role in this homeostasis and/or in the integrity of the intestinal epithelial barrier (Rouxel et al., 2017; Shalapour et al., 2012). Alternatively, it may reflect the role of MAIT cells in IL-17A and Th1 cytokine production, which is dependent on IL-7 (Tang et al., 2013). Taken together with the time-dependent upregulation of CD44, increases in IL-18R\u03b1 and CXCR6 across organs indicated that m-reMAIT cells matured in the host. Thus, na\u00efve m-reMAIT cells, defined as mMR1-tet+TCR\u03b2+ cells generated in vitro, may be promoted maturation in terms of transcriptional program upon adoptive transfer into the recipient mice, as evidenced by the acquisition of cytokine receptors, the effector molecules involved in cytotoxicity and tissue repairing, and those relevant to tissue residency (Figure 2\u2014figure supplements 2\u20134). Moreover, the silencing of transcripts relevant to V-D-J recombination may ensure the continuum of the identity of m-reMAIT cells in the recipient (Figure 2\u2014figure supplement 5). These results have important implications for future cell therapy with human iPSC-derived MAIT cells. Further studies are needed to clarify whether and how the adoptive transfer of na\u00efve m-reMAIT cells affects epigenetic states, and whether this change leads to the generation of bona fide MAIT cells.\n\nm-reMAIT cell dose-dependent mouse survival indicated their tumor inhibitory activity and function as effector cells in tumor surveillance (Figure 3B). However, since three consecutive injections of m-reMAIT cells failed to confer survival superiority, the niche for MAIT cells appeared to be saturated. Therefore, further studies are warranted to investigate whether a lymphopenia-inducing regimen, such as irradiation and/or cyclophosphamide, confers a difference in survival.\n\nThe failure of m-reMAIT cells to inhibit tumor growth in situ regardless of their mobilization to the skin indicated their poor infiltration into tumors rather than the loss of antitumor activity (Figure 3\u2014figure supplement 1). Therefore, future research that focuses on whether an intratumor injection of m-reMAIT cells inhibits tumor growth is needed.\n\nWhile the importance of NK cells in tumor surveillance is well known, that of MAIT cells remains elusive (Cogswell et al., 2021; Guillerey et al., 2016; Sharma et al., 2017). The present results showing the NK cell-dependent activation of m-reMAIT cells and the subsequent production of inflammatory cytokines and chemokines suggested that NK cells stimulated the tumor inhibitory effects of MAIT cells (Figure 4A and B). Moreover, the enhanced expression of transcripts relevant to the cytolytic function of m-reMAIT cells upon an interaction with NK cells in vitro indicated that m-reMAIT cells exhibited cytolytic activity in vivo (Figure 4C\u2013G). The upregulation of Grzb, Fasl, and Tnfsf10 in m-reMAIT cells suggested that cytolytic activity comprised exocytosis- as well as caspase-mediated killing (Rossin et al., 2019; Trapani and Smyth, 2002). NK cell depletion compromised the survival of mice, which is consistent with the above findings, further highlighting the role of NK cells in boosting the tumor inhibitory activity of m-reMAIT cells in vivo. While NK cells recognize NKG2D ligands and/or the lack of MHC I on tumor cells, the molecular mechanisms by which m-reMAIT cells recognize and eliminate tumor cells warrant further study (Nausch and Cerwenka, 2008).\n\nContrary to our results, MAIT cells have been shown to induce the metastasis of melanoma B16F10 (Yan et al., 2020). Although the reason for this discrepancy currently remains unclear, differences in the dynamics of MR1 shuttling between ER and the plasma membrane upon a 5-OP-RU challenge or putative ligand(s) present in the tumor milieu (TM) may be a key feature. Since LLC did not strongly upregulate MR1 on the cell surface when stimulated (Figure 4A), 5-OP-RU may have bolstered B16F10 tumorigenicity through MR1. The MR1-elicited signal may suppress the function of NK cells for B16F10, whereas that from putative ligand(s) present in TM via MR1 did not, thereby enhancing or preserving NK cell functions. Further studies are needed to elucidate the underlying mechanisms, which will provide a novel avenue for tumor immunotherapy with iPSC-derived MAIT cells.\n\nAlthough we showed that m-reMAIT cells exhibited cytolytic activity against LLC together with NK cells in vitro (Figure 4C and E\u2013G), difficulties are associated with demonstrating that m-reMAIT cells isolated from mice exhibit similar lytic activity ex vivo. This is due to the low recovery of m-reMAIT cells and the compulsory use of mMR1-tet in cell preparations, which may interfere with cytolytic activity. Furthermore, it currently remains unclear whether these results are applicable to other cancer cells, such as B16F10, if the use of 5-OP-RU enhances or inhibits the cytolytic activity of m-reMAIT cells. Furthermore, since the transcriptome in m-reMAIT cells upon adoptive transfer still differed from that in endogenous cells, caution is needed when extrapolating the present results to MAIT cells in vivo.\n\nIn summary, the adoptive transfer model with m-reMAIT cells used in this study opens a new avenue for exploiting the function of MAIT cells and providing insights into their interaction(s) with immune cells in immunity.\n\n## Materials and methods\n\n### Mice\n\nAll mouse experiments were performed with approval from the Institutional Animal Care and Use Committee of Dokkyo Medical University (permit number 1215). C57BL/6NJcl mice were purchased from CLEA Japan (Tokyo, Japan). C57BL/6 (Ly5.1) mice were obtained from the RIKEN Bioresource Center and bred in-house. All mice were housed in the Animal Research Center, Dokkyo Medical University, under specific pathogen-free conditions with controlled lighting and temperature with food and water provided ad libitum. Male C57BL/6NJcl mice aged 6 weeks were used to isolate MAIT cells for the generation of iPSCs. Male and female mice aged between 8 and 12 weeks were used in adoptive transfer experiments and tumor experiments.\n\n### Cell lines\n\nThe cell lines used in this study were obtained as described in the Key resources table. These cells were periodically checked for mycoplasma contamination with mycoplasma detection kit (Takara Bio, Japan). Mycoplasma was not detected throughout the experiments. OP9/DLL1 cells were maintained in \u03b1MEM supplemented with 20% FBS. The mouse cancer cell lines B16F10, CH27, CH27/mMR1, EL4, and LLC were cultured in DMEM supplemented with 10% FBS, while RL-\u26421, WT3, WT3/mMR1, and Yac-1 were cultured in RPMI 1640 supplemented with 10% FBS at 37\u00b0C in 5% CO2.\n\n### Antibodies\n\nThe antibodies used in this study are listed in the Key resources table.\n\n### Oligonucleotides\n\nThe oligonucleotides used in this study are summarized in the Key resources table.\n\n### Preparation of mouse immune cells\n\n#### Spleen, thymus, and lymph nodes\n\nTissues were prepared by mashing through a 40 \u00b5m mesh cell strainer with a syringe plunger. Single cells were suspended in RPMI 1640 supplemented with 10% FBS, 10 mM HEPES pH 7.0, 0.1 mM 2-mercaptoethanol, and 100 IU/ml of penicillin/streptomycin (referred to as cR10) and spun down at 400 \u00d7 g for 4 min. To lyse red blood cells, the cell pellet was suspended in autoclaved ice-cold MilliQ water for 15 s and immediately neutralized with 4% FBS in 2\u00d7 PBS. After centrifugation, cells were resuspended in cR10.\n\n#### Lungs and liver\n\nSingle-cell suspensions from the lungs and liver were prepared using enzymatic digestion. Briefly, tissues were placed into a GentleMACS C-tube (Miltenyi Biotec) and cut into approximately 5 mm3 pieces. 4 ml of tissue digestion solution (90 U/ml collagenase Yakult, 275 U/ml collagenase type II, 145 PU/ml Dispase II, and 4% BSA in HBSS) was added per tissue, and tissues were homogenized using the GentleMACS dissociator (Miltenyi Biotec) with the following program: m_lung_01_02 for the lungs and m_liver_03_01 for the liver. Suspensions were then incubated at 37\u00b0C for 30 min under gentle rotation, followed by dissociation with m_lung_02_01 for the lungs and m_liver_04_01 for the liver, and subjected to discontinuous density centrifugation over layers of 40 and 60% Percoll at 400 \u00d7 g for 20 min. Cells were recovered from the 40\u201360% Percoll interface, washed with PBS, and then suspended in cR10.\n\n#### Intestines\n\nThe intestines were longitudinally incised, and their contents were thoroughly washed out three times by vigorous shaking. Tissues dissected into 1 cm pieces were placed into a 50 ml conical tube and washed vigorously by shaking three times with PBS. After discarding the supernatant, the tissues were treated with 40 ml of intraepithelial lymphocyte-washing solution (HBSS containing 1 mM DTT, 5 mM EDTA, and 1% BSA) by shaking vigorously at 37\u00b0C for 30 min under gentle rotation. After washing three times with MACS buffer (PBS containing 2 mM EDTA and 0.5% BSA), the tissues were washed again with 40 ml HBSS. After removal of the supernatant, the tissues were placed into a GentleMACS C-tube (Miltenyi Biotec), cut into small pieces with scissors, and 4 ml of the tissue digestion solution (see above) was added. The tissues were processed using the program m_brain_01_02 and digested at 37\u00b0C for 30 min under gentle rotation followed by dissociation with the program m_intestine_01_01. Cell suspensions were subjected to Percoll discontinuous density centrifugation, and isolated cells were resuspended in cR10.\n\n#### Skin\n\nSkin samples were prepared on days 6 and 9 after adoptive transfer of m-reMAIT cells (intraperitoneally [i.p.] 1.0 \u00d7 107 cells/mouse) from the right flank (20 mm \u00d7 20 mm) without LLC or on day 9 with LLC (LLC was subcutaneously injected at the right flank 3 days post m-reMAIT cell transfer). Skins were incised and digested with HBSS containing collagenase II (1.2 mg/ml, Worthington), Yakult collagenase (0.8 mg/ml, Yakult), thermolysin (0.5 mg/ml, Sigma), DNase I (0.1 mg/ml, Roche), and BSA (40 mg/ml) at 37\u00b0C for 2 hr under gentle shaking, followed by filtration through the cell strainer (100 \u03bcm). MAIT cells and m-reMAIT cells were then enriched with APC-labeled mMR1-tet (NIH tetramer core facility) followed by anti-APC-Microbeads (Miltenyi Biotec), and stained with anti-CD45, -Ly5.1, -Ly5.2, and -TCR\u03b2 antibodies. The number of m-reMAIT cells (CD45+ Ly5.2+ TCR\u03b2+ mMR1-tet+) was measured with flow cytometry.\n\n### Generation of iPSCs from mouse MAIT cells\n\nSingle-cell suspensions from the lungs were stained with APC-labeled 5-OP-RU-loaded mouse MR1 tetramer (mMR1-tet) (NIH Tetramer Core Facility) before magnetic enrichment with anti-APC microbeads and LS or MS columns (Miltenyi Biotec) according to the manufacturer\u2019s instructions. Enriched cells were stained with FITC-CD44, PE-B220, PE-F4/80, and PE/Cy7-TCR\u03b2 and MAIT cells were then sorted as B220\u2212F4/80\u2212TCR\u03b2+CD44himMR1-tet+ cells with the FACSJazz cell sorter (BD Biosciences). Regarding transduction, purified MAIT cells (1800 \u2013 6300 cells) were placed into the wells of 96-well plastic plates coated with anti-CD3 and anti-CD28 antibodies (15 and 20 \u00b5g/ml, respectively) for 18 hr and then infected with Sendai virus KOSM302L at MOI of 25 at 37\u00b0C in 5% CO2 under gentle orbital shaking for 2.75 hr. After transduction, the virus-containing medium was removed by centrifugation at 400 \u00d7 g for 4 min. Cells were refed with mouse ES medium containing StemSure D-MEM (FUJIFILM Wako), 15% FBS (BioSera), 1\u00d7 nonessential amino acids (FUJIFILM Wako), 2 mM L-glutamine (Nacalai Tesque), 0.1 mM 2-mercaptoethanol (FUJIFILM Wako), 100 U penicillin/100 \u00b5g streptomycin (Lonza), 1000 U/ml mouse LIF (FUJIFILM Wako), and transferred to the wells of 6-well culture plates seeded with mitomycin C (MMC)-treated MEF. Medium was changed every 2\u20133 days. 3\u20134 weeks after infection, ES-like colonies were picked up and treated with 0.25% Trypsin-1 mM EDTA (TE) at 37\u00b0C for 10 min and individually transferred to the wells of 24-well culture dishes seeded with MMC-treated MEF. Among the 46 iPSCs isolated after reprogramming, 5 iPSCs (L3, L7, L11, L15, and L19) were subjected to limiting dilutions after 2\u20133 passages and a monoclonal iPSC line was generated and designated accordingly (e.g., L3-1, L7-1 to -8, L11-1 to -4, L15-1 to -3, and L19-1 to -6) (Figure 1\u2014figure supplement 1B and D). The established iPSC lines were maintained with mouse ES medium supplemented with 3 \u00b5M CHIR99021 (FUJIFILM Wako) and 10 \u00b5M PD0325901 (FUJIFILM Wako). The majority of experiments were performed with L7-1, except for the PCR analysis in Figure 1\u2014figure supplement 1A, in which the samples were used before limiting dilutions. Monoclonal iPSC lines were cryopreserved with serum-free cell culture freezing medium BAMBANKER (GC lymphotec) in liquid nitrogen.\n\n### PCR detection of the rearranged configuration of TCR loci in MAIT-iPSCs\n\nTo confirm that MAIT-iPSCs stemmed from MAIT cells, PCR detecting the rearranged configuration of Trav specific for MAIT cells was performed with the primer sets ADV19 and AJ33. Genomic DNA was prepared from MAIT-iPSCs with NaOH. To detect Trbv in MAIT-iPSCs, total RNA was prepared from m-reMAIT cells (days 20\u201328 of differentiation, varying according to the clones) using the RNeasy Mini kit (QIAGEN). cDNA was synthesized with the first-strand cDNA synthesis kit (Thermo Fisher Scientific) and subjected to PCR with the primer sets TRBV13 and TRBC-Rev, and TRBV19 and TRBC-Rev followed by DNA sequencing (Fasmac). The usage of TRBV-D-J was analyzed using IGBLAST (NCBI, NIH https://www.ncbi.nlm.nih.gov/igblast/).\n\n### Southern blot analysis to detect rearranged Trav\n\nGenomic DNA (3 \u03bcg) prepared from MAIT-iPSCs (L7\u22121 to -6, L11-1 to -4, L15-1 to -3, and L19-1 to -6) with NucleoSpin Tissue (MACHEREY-NAGEL) was digested with 40 U BamH1 (TOYOBO) at 37\u00b0C for 18 hr, separated by 0.9% agarose gel electrophoresis, and transferred onto Biodyne membranes (PALL Life Sciences). The membrane was pre-hybridized with PerfectHyb (TOYOBO) at 68\u00b0C for 60 min and hybridized with an \u03b1-32P-dCTP-labeled probe at 68\u00b0C for 18 hr. The probe was amplified with the primer set TRAV19 (forward) and TRAV19 (reverse) using genomic DNA from C57BL/6 as a template, and the resultant 350 bp PCR product was radiolabeled with the Random Primer DNA Labeling Kit version 2.0 (Takara) (Figure 1\u2014figure supplement 1D). The membrane was washed with 2\u00d7 saline sodium citrate (SSC) and then 0.1\u00d7 SSC buffer twice at 68\u00b0C, exposed to an imaging plate, and the signal was detected with a phosphoimager (Typhoon 7000, GE Healthcare).\n\n### Differentiation of MAIT-iPSCs into MR1 tetramer+ m-reMAIT cells\n\nOn day 0, 1.2 \u00d7 105 MAIT-iPSCs (L3-1, L7-1(L7), L11-1, L15-1, and L19-1) were seeded on a 10 cm culture dish containing 2\u20134 days post-confluent OP9/DLL1 in \u03b1MEM supplemented with 10% FBS (Corning). On day 3, culture medium was replaced with fresh medium. On day 5, cells were treated with 2 ml TE and 8 ml of \u03b1MEM containing 20% FBS (BioSera) was added and then suspended in wells. The dish was incubated at 37\u00b0C in 5% CO2 for 45 min. Floating cells were collected and passed through a 40 \u00b5m mesh cell strainer. After centrifugation, the cells were transferred to a new 10 cm culture dish filled with confluent OP9/DLL1 in \u03b1MEM containing 10% FBS (Corning) and 5 ng/ml human recombinant FLT3L. On day 8, loosely attached cells (cells containing lymphocyte progenitors) were harvested with gentle pipetting. After centrifugation, the cells were transferred to the wells of a 6-well culture plate containing confluent OP9/DLL1 in \u03b1MEM supplemented with 20% FBS (BioSera), 5 ng/ml human FLT3L, and 1 ng/ml mouse IL-7. On day 10 and later, culture medium was changed every other day (20% FBS containing \u03b1MEM supplemented with 5 ng/ml human FLT3L and 1 ng/ml mouse IL-7). Differentiated cells from iPSCs (m-reMAIT cells) were expanded on a new 10 cm culture dish filled with confluent OP9-DLL1 in \u03b1MEM supplemented with 20% FBS (BioSera) and mouse IL-7. m-reMAIT cells harvested on days 21\u201328 were used in the experiments unless otherwise indicated.\n\n### Preparation of 5-OP-RU\n\nAn aliquot of 5-A-RU (3.6 mM in DMSO) was incubated with three volumes of 1 mM methylglyoxal (MilliQ water) at 37\u00b0C for 30 min and used for assays. The appropriate synthesis of 5-OP-RU was confirmed with LC-MS/MS (Triple Quad 5500, Sciex).\n\n### m-reMAIT cell activation assay\n\nm-reMAIT cells (L3-1, L7-1(L7), L11-1, L15-1, and L19-1) were incubated with the indicated concentration of 5-OP-RU or mMR1-tet at 37\u00b0C in 5% CO2 for 18 hr in the presence or absence of equal numbers of CH27, CH27/mMR1, WT3, and WT3/mMR1, and then subjected to a CD69 expression analysis by flow cytometry. The culture supernatant was used for cytokine and chemokine quantification (see below). To examine whether the above activation of m-reMAIT cells was dependent on MR1, an anti-MR1 antibody (26.5) or isotype antibody (10 \u03bcg/ml) was added 1 hr prior to the addition of 5-OP-RU.\n\n### Doubling time estimation with CFSD-SE (CFSE)\n\nm-reMAIT cells (differentiation on days 18\u201323) were labeled with CFSE (1.0 \u03bcM) and cultured on OP9/DLL1 in \u03b1MEM containing 20% FBS (BioSera) and 1 ng/ml mouse IL-7. CFSE intensity in the cells was monitored daily by flow cytometry with 488 nm excitation and a bandpass filter of 530/30 nm. The proliferation rate of m-reMAIT cells was calculated from a logarithmical growth curve based on the intensity of CFSE.\n\n### Detection of tyrosine-phosphorylated proteins\n\nm-reMAIT cells (TCR\u03b2+mMR1-tet+ cells, >95% based on the flow cytometric analysis) were suspended in 20% FBS containing \u03b1MEM (1.0 \u00d7 106/ml) for the indicated time in the absence or presence of varying amounts of 5-OP-RU or unlabeled mMR1-tet. Cells were harvested by centrifugation at 600 \u00d7 g and lysed with lysis buffer (50 mM HEPES-NaOH pH 7.4, 150 mM NaCl, 1% [v/v] Triton-X100, 1 mM sodium vanadate, and 5 mM NaF) supplemented with \u00d71 protease and phosphatase inhibitor cocktail (FUJIFILM Wako) on ice for 60 min. Cell lysates were then centrifuged at 12,000 \u00d7 g at 4\u00b0C for 20 min, diluted with \u00d74 SDS sample buffer (240 mM Tris-HCl, pH 6.8, 8% SDS, 40% glycerol, 0.1% blue bromophenol, and 20% 2-mercaptoethanol), and heat-denatured at 97\u00b0C for 10 min. A cell lysate equivalent to 5 \u00d7 105 cells/lane was loaded onto a 10% SDS polyacrylamide gel (ePAGEL E-T10, Atto). After electrophoresis, proteins were blotted onto Immobilon-P (Millipore) with a semi-dry blotting apparatus (TRANS-BLOT SD, Bio-Rad). The membrane was blocked with TBS-T (50 mM Tris-HCl pH 7.5, 150 mM NaCl, and 0.05% [v/v] Tween-20) containing 5% BSA at 4\u00b0C for 18 hr. The membrane was incubated with the primary antibody in TBS-T containing 5% BSA (PY99: 1/1000; LAT: 1/1000; and \u03b2-actin: 1/2000 dilution) at room temperature for 60 min, then washed with TBS-T three times. The membrane was incubated with the secondary antibody (HRP-conjugated anti-mouse IgG, diluted 1/3000 in TBS-T containing 5% BSA) for 30 min and washed with TBS-T four times. Proteins and tyrosine-phosphorylated proteins were developed with SuperSignal Pico PLUS (Thermo Fisher) and visualized with a chemiluminometer (LuminoGraph 1, Atto).\n\n### Flow cytometry\n\nCells were stained with the antibodies listed in the Key sources table. 7-AAD or Zombie Violet (BioLegend) was used to discriminate between live/dead cells. To stain the transcription factors PLZF and ROR\u03b3t, cells stained with the surface markers were fixed and permeabilized with the Transcription Factor Buffer Set (BD Biosciences), and then stained with transcription factor antibodies. In CD107a staining, a fluorochrome- labeled CD107a antibody was added to the culture prior to the assay. Cells were analyzed with the MACSQuant cell analyzer (3 lasers, 10 parameters, Miltenyi Biotec) or the AttuneNxT acoustic focusing cytometer (4 lasers, 14 parameters, Thermo Fisher Scientific). Data were processed using FlowJo software (version 9 or 10, BD Biosciences). Cell sorting was performed using a FACSJazz cell sorter (two lasers, eight parameters, BD Biosciences).\n\n### Cytokine and chemokine quantification\n\nThe quantification of cytokines and chemokines was performed with the LegendPlex mouse Th cytokine panel, mouse cytokine panel 2, and mouse proinflammatory chemokine panel according to the protocol provided by the manufacturer (BioLegend).\n\n### Migration of m-reMAIT cells in syngeneic C57BL/6\n\nLy5.2-m-reMAIT cells (L7-1: 1.0 \u00d7 107 cells/mouse) were i.p. injected into C57BL/6 (Ly5.1) recipients, and the expression of markers in endogenous (Ly5.1) and exogenous MAIT cells (Ly5.2 m-reMAIT cells) was assessed using a combination of appropriate antibodies and mMR1-tet 7 and/or 14 days after their transfer unless otherwise indicated.\n\n### RNA-sequencing analysis\n\nNa\u00efve m-reMAIT cells (L7-1, 1.0 \u00d7 105 cells), sort-purified liver m-reMAIT cells (5.1 \u00d7 10 3 cells), spleen m-reMAIT cells (1.4 \u00d7 103 cells), and LPL m-reMAIT cells (2.3 \u00d7 103 cells) from the recipient mouse (Ly5.1) 14 days post-adoptive transfer were subjected to cDNA synthesis (SMART-seq v4, Takara) and RNA-sequencing (NovaSeq 6000, Illumina). Sort-purified endogenous MAIT cells (Ly5.1) from the corresponding organs (1.2 \u00d7 104 cells for liver, 2.5 \u00d7 104 cells for spleen, and 1.4 \u00d7 104 cells for LPL) were also processed.\n\n### Transcriptome analysis\n\nFPKM was calculated from the RNA-seq read count data (121,806 genes) and logarithmically converted and normalized based on the expression level of the housekeeping genes with RUV function in R package (Jacob et al., 2016). Genes exhibiting a constant expression level across the samples were considered to be housekeeping (108 genes). PCA was calculated with \u2018prcomp\u2019 and visualized with \u2018ggplot2\u2019 in R package using the above data. Then the genes relevant to MAIT cell identity, function, and development were categorized, and the heatmap was created with \u2018pheatmap\u2019 in R package. Only differentially expressed genes (na\u00efve m-reMAIT cell/endogenous MAIT cells or adoptively transferred m-reMAIT cells < 0.5 or > 2) are shown. Differentially expressed genes were analyzed with \u2018TCC\u2019 in R package (Kadota et al., 2012; McCarthy et al., 2012; Sun et al., 2013).\n\n### Time course of MR1 expression in cancer cell lines upon the 5-OP-RU challenge\n\nB16F10, EL4, LLC, RL\u26421, and Yac-1 were incubated with 600 nM of 5-OP-RU. Thereafter, the geometric mean fluorescent intensity (gMFI) of MR1 on the cell surface was followed by flow cytometry. gMFI at the indicated time point relative to that at the nontreated state (time 0) was calculated and shown as relative gMFI.\n\n### Tumor studies\n\nLLC suspended in HBSS was intravenously (i.v.) inoculated (3.0 \u00d7 105 cells/mouse) 6 days after the adoptive transfer of m-reMAIT cells (1.0 \u00d7 106 cells/mouse unless otherwise indicated, i.p.) or HBSS alone. In the survival assay, mice were considered to be dead when they showed a humane end point, such as acute weight loss, hypothermia, and severe gait and/or consciousness disturbance, and the survival time of mice was plotted as a Kaplan\u2013Meier curve. In the in situ tumor growth analysis, LLCs (3.0 \u00d7 105 cells/mouse) were subcutaneously inoculated 6\u20138 days after the adoptive transfer of m-reMAIT cells (0.3 \u00d7 106, 1.0 \u00d7 106, and 3.0 \u00d7 106 cells/mouse, i.p.) or HBSS alone. Tumor sizes were measured with calipers every 3 days. Tumor volumes were calculated using the following formula: v = (tumor width)2 \u00d7 (tumor length)/2.\n\n### Interaction between NK cells and m-reMAIT cells\n\nNK cells were isolated from C57BL/6 mice (male and female) with the MojoSort mouse NK cell isolation kit (BioLegend) (purity >85% based on the flow cytometric analysis with NK1.1 and CD49b antibodies) and cocultured with m-reMAIT cells at 37\u00b0C in 5% CO2 for 18 hr at the indicated ratio. In parallel, m-reMAIT cells and NK cells were cultured individually under the same conditions, and CD69 expression in NK cells (gated as NK1.1+CD49b+ cells) and m-reMAIT cells (gated as TCR\u03b2+mMR1-tet+ cells) was analyzed using flow cytometry. Cytokines and chemokines released in the culture were measured with LegendPlex at the indicated ratio. In CD69 and CD107a expression analyses, the above column-isolated NK cells (1 \u00d7 105 cells) and m-reMAIT cells (1 \u00d7 105 cells, purity >95%) were cultured individually or cocultured in the absence or presence of the same number of Yac-1 at 37\u00b0C in 5% CO2 for 18 hr. The percentages of CD69+ cells and CD69+CD107a+ cells among NK cells and m-reMAIT cells were then measured using the MACSQuant flow cytometer.\n\n### Semi-quantitative PCR\n\nNK cells cocultured with m-reMAIT cells (NK cells/m-reMAIT cells ratio = 1) were sort-purified as NK1.1+CD49b+ NK cells and TCR\u03b2+mMR1-tet+ m-reMAIT cells, respectively. RNA from each subpopulation was extracted with the RNeasy Mini kit (QIAGEN), and cDNA was synthesized with the first-strand cDNA synthesis kit (Thermo Fisher Scientific) and then subjected to semi-quantitative PCR. PCR was performed with CYBR Green reagent (Nippon Genetics) using the following program: at 95\u00b0C for 5 min (90\u00b0C for 15 s, 60\u00b0C for 60 s) \u00d7 50 cycles (Light/Cycler Nano, Roche). The primer sets used in this study are described in the Key resources table.\n\n### Cytolytic activity\n\nThe cytolytic activities of NK cells and m-reMAIT cells were measured with Yac-1 and LLC as target cells. Yac-1 cells (1.0 \u00d7 104 cells/assay) were labeled with CFSE 24 hr prior to the addition of effector cells, while LLC cells (1.0 \u00d7 104 cells/assay) were not labeled. Target cells were then incubated with the effector cells at the indicated E/T ratio at 37\u00b0C in 5% CO2 for 4 hr and 16 hr for Yac-1 cells and LLC cells, respectively. E/T ratios of 1/1, 1/3, and 1/10 in the assay using the combination of NK cells and m-reMAIT cells contained twice the number of effector cells than NK cells or m-reMAIT cells alone. Dying target cells were stained with the Zombie Flexible Viability kit according to the manufacturer\u2019s instructions. Percent lysis was calculated by the formula {(% of Zombie+ cells among target cells in the presence of effector cells) \u2212 (% of Zombie+ cells among target cells in the absence of effector cells)}/ 100 \u2212 (% of Zombie+ cells among target cells in the absence of effector cells)/100.\n\n### Quantification and statistical analysis\n\nStatistical analyses were conducted using Prism 9 for macOS (GraphPad). The log-rank test was used for survival analyses between the two indicated groups. A two-way ANOVA was employed to assess the significance of differences among the various effector cells (NK cell, m-reMAIT cells, and NK cells plus m-reMAIT cells) in lysis assays.\n\n### Data deposition\n\nSequencing data for Trbv of MAIT-iPSCs (Table 1) were deposited in DDJB under accession codes LC637403 for L3-1 clone, LC637404 for L7-1 clone, LC637405 for L11-1 clone, LC637406 for L15-1 clone, and LC637407 for L19-1 clone. RNA-seq data for na\u00efve m-reMAIT cells (L7), spleen m-reMAIT cells, liver m-reMAIT cells, LPL m-reMAIT cells, endogenous MAIT cells in Ly5.1 spleen, endogenous MAIT cells in Ly5.1 liver, and endogenous MAIT cells in Ly5.1 LP were deposited under the accession number DRA013350 (hwakao-0001_Submission).\n",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "fa2750f9-932f-44fb-8df3-b9a6cc0bf2b7",
+      "submission_id": "9356f840-f8ad-446b-8686-221efa44336a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ping-Chih Ho, https://ror.org/05qdwtz81 Ludwig Institute for Cancer Research Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70848.sa0](https://doi.org/10.7554/eLife.70848.sa0)\n\nThis study exploits a reprogramming approach to study MAIT cells that can partially overcome the current technological limitations. Overall, the reviewers found that this work is provocative and novel.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ping-Chih Ho, https://ror.org/05qdwtz81 Ludwig Institute for Cancer Research Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70848.sa1](https://doi.org/10.7554/eLife.70848.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Reprogramming and redifferentiation of mucosal\u2013associated invariant T cells reveals tumor inhibitory activity\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Carla Rothlin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Since transcriptomic and epigenetic events is affected by reprogramming and play important role in cell identity. It would be important to determine the transcriptome and chromatin accessibility in the reprogrammed MAITs and real MAITs from B6 mice. The comparisons will further strengthen the conclusion and allows the author more precisely interpret their results.\n\n2) Is the lack of anti\u2013tumor activity against subcutaneously injected LLC truly due to lack of reMAIT\u2013induced anti\u2013tumor immunity or potentially due to the absence or inefficient migration and residency of reMAIT cells into the skin? In this regard, a detailed analysis to elucidate the differences is needed.\n\nReviewer #1 (Recommendations for the authors):\n\nUnderstanding the biology of MAITs is a challenging for immunologists even though this cell type represent interesting functions in a variety of diseases. In this manuscript, the authors present an exciting approach with compelling data to indicate the power of reprogramming on studying MAITs as well as the therapeutic potential on harnessing MAITs for anti-tumor responses. Overall, it is well performed and aims to address interesting and important questions with excellent approaches. Although I find this manuscript interesting, I do have some concerns on the reprogramming approaches the authors applied on the detailed cellular identity. Since transcriptomic and epigenetic events are affected by reprogramming and play important role in cell identity, it would be important to determine the transcriptome and chromatin accessibility in the reprogrammed MAITs and real MAITs from B6 mice. The comparisons will further strengthen the conclusion and allows the author more precisely interpret their results.\n\nReviewer #2 (Recommendations for the authors):\n\na) Figure 3 contains a panel (E) that is the same as Figure 4 (H), which is the actual one used by the authors and discussed in the manuscript. The authors should be more careful to avoid this.\n\nb) The authors demonstrate in vitro that exposure to 5\u2013OP\u2013RU, an agonist for MAIT cells, does not significantly upregulate MR1 on LLC cell line compared to B16F10 in Figure 3A. This was consistent with their observation that reMAIT cells do not exhibit cytolytic activity against LLC in vitro (Figure 4). However, reMAIT cells showed comparable cytolytic activity against NK cell\u2013sensitive Yac\u20131 cell line, which showed a similar expression pattern of MR1 as LLC upon exposure to 5\u2013OP\u2013RU.\n\ni. Do Yac\u20131 cells express molecules that can commonly activate NK cells and reMAIT cells?\n\nii. Is this expected of any MAIT cells, such as TCR transgenic MAIT cells that are commercially available?\n\niii. What is their MR1 expression pattern once injected into mice?\n\nc) The authors demonstrated that adoptive transfer of reMAIT cells could significantly improve the survival of mice challenged with i.v. injection of LLC, an experimental model of lung metastasis. However, reMAIT cells did not enhance anti\u2013tumor immunity against the same LLC when it was injected subcutaneously. From such observations, the authors concluded that reMAIT cells are inhibiting the metastasis of LLC rather than inducing anti\u2013tumor immunity against them.\n\ni. Is the lack of anti\u2013tumor activity against subcutaneously injected LLC truly due to lack of reMAIT\u2013induced anti\u2013tumor immunity or potentially due to the absence or inefficient migration and residency of reMAIT cells into the skin? While the authors interrogated the distribution of transferred reMAIT cells in various organs, they did not show the skin where the frequency of MAIT cells among \u03b1\u03b2T cells is the highest as previously reported by the Belkaid group (PMID: 31649166). It is crucial to show the abundance of the transferred reMAIT cells in the organs relevant to the disease models used in the study.\n\nii. Perhaps using a luciferase\u2013expressing LLC cell line allows monitoring the metastasis and growth of i.v. injected LLC in the presence of reMAIT cells as well.\n\niii. Considering the clinical potential of these iPSC\u2013derived reMAIT cells, do reMAIT cells exhibit similar protective functions when transferred at a therapeutic time point rather than prophylactic transfer before the tumor challenge?\n\nd) Given that the transferred reMAIT cells showed migrations into various tissues as demonstrated in Figure 2, can reMAIT cells be generated from MAIT cells isolated from other organs than the lung, such as skin or intestines, and still exhibit a similar protective role against the lung tumor metastasis model?\n\ne) The authors nicely demonstrated that the tumor inhibitory function of reMAIT cells requires NK cells.\n\ni. However, the transition from the observations in Figure 3 to NK\u2013reMAIT interaction seems a little haste. It may be helpful if the authors could discuss in more depth the relevance between NK cells and MAIT cells in any context, whether cancer immunology or others, before presenting the data in Figure 4.\n\nii. Is the NK\u2013induced activation of reMAIT cells cell\u2013cell contact\u2013dependent? If so, is it possible to show the proximity of NK cells and reMAIT cells in the TME by using microscopy to investigate the existence of their communications in vivo?\n\nReviewer #3 (Recommendations for the authors):\n\nOverall this work is well performed and the conclusions are supported by the data. The manuscript is clear and easy to read, which is appreciated. However, considering the in vitro differentiated system and despite being an original model, I am a bit concerned how this could be translated into physiological settings regarding the real role of MAIT cells in cancer. In order to strengthen these claims, I think the study could really benefit from additional comparison between endogenous vs. regenerated MAIT cells (are all the surface markers and transcription factors conserved?) and/or in vitro activation assays including microbial\u2013associated antigens to mimic the tumor microenvironment.\n\nSpecific comments:\n\n\u2013 Can the authors elaborate more on the differences found between 5\u2013OP\u2013RU vs. mMR1\u2013tet induced stimulations? It is briefly mentioned in the discussion but more mechanistic hypothesis could be nice.\n\n\u2013 I think the discrepancies found in different human studies could be more discussed, because this remains one fundamental question in our poor understanding of how MAIT cells behave in cancer. For instance, they could comment on the differences found across cancer types, since one model only has been employed here for in vivo experiments. Would the authors expect to get the same response in a different tumor?\n\n\u2013 Figure 1D\u2013E: Activation of MAIT cells upon 5\u2013OP\u2013RU or mMR1\u2013tet challenges are measured through CD69. I wonder if murine MAIT cells will express CD39 upon TCR stimulation as shown in humans (Li et al., Cell Rep Med, 2020)?\n\n\u2013 The Figure 2 is quite interesting: can the authors discuss the distribution of regenerated MAIT cells in the different tissues upon adoptive transfer? Since they assessed CD44 expression at two time points, what is the frequency of reMAIT cells at these two timings? It would have been interesting to track/see how they populate the different organs.\n\n\u2013 Figure 3D: can the authors show the tumor volume in the IV LLC model? I think it is important discuss the differences found between the IV and subcutaneous model. If reMAIT cells could not inhibit tumor growth in situ, the authors should at least change the conclusions in the abstract that is misleading, or test additional tumor models.\n\n\u2013 It is a bit regretful that the authors generated this tool to explore interactions between MAIT vs. immune cells and only NK cells were studied. Since the role of NKT cells are quite well described in cancer and share a lot in terms of developmental and transcriptional pathways with MAIT cells, I wonder how they are affected in this system?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Reprogramming and redifferentiation of mucosal\u2013associated invariant T cells reveals tumor inhibitory activity\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Carla Rothlin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nSummary:\n\nThis study utilise a state\u2013of\u2013art approach, re\u2013differentiation of cells, to extend our understanding in MAIT cells. By using this approach, we will be able to gain more insight on MAIT cells with less concerns on cell number issue. Overall, reviewers all feel this study provide an interesting advance for MAIT cells and presents a strong platform for future works.\n\nEssential revisions:\n\n1) Please include in the discussion the limitations raised by in vitro redifferentiation of the MAIT cells in interpreting the data.\n\n2) Several redundancies and typos are still found in the manuscript, a careful reading will be needed before publication.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors replied to comments in a satisfactory manner and provided new data that improved the manuscript. The manuscript is now suitable for publication.\n\nReviewer #3 (Recommendations for the authors):\n\nOverall, the authors have provided additional analysis to help answer some of the key questions and have appropriately addressed most of the comments.\n\n\u2013 Please include in the discussion the limitations raised by in vitro redifferentiation of the MAIT cells in interpreting the data, as the transcriptomic analysis shows and confirms a clear different pattern for endogenous and redifferentiated cells.\n\n\u2013 I would suggest the authors to specify in the abstract that reMAIT cells inhibit tumour growth in a lung metastasis model.\n\n\u2013 Several redundancies and typos are still found in the manuscript, a careful reading will be needed before publication.\n",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0ea398cd-26ad-4df3-a53e-f87b100a3c6a",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C1",
+      "claim": "Mucosal-associated invariant T (MAIT) cells belong to a family of innate-like T cells that bridge innate and adaptive immunities.",
+      "claim_type": "EXPLICIT",
+      "source": "Mucosal-associated invariant T (MAIT) cells belong to a family of innate-like T cells that bridge innate and adaptive immunities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that references established scientific understanding about MAIT cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "819921f8-307f-4f31-8f82-5712acc57bd6",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C2",
+      "claim": "Murine MAIT cells were reprogrammed into iPSCs and redifferentiated towards MAIT-like cells (m-reMAIT cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Murine MAIT cells were reprogrammed into iPSCs and redifferentiated towards MAIT-like cells (m-reMAIT cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "153002eb-9774-4119-b6b5-09c014daef1f",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C3",
+      "claim": "m-reMAIT cells were activated by an agonist in the presence and absence of antigen-presenting cells and MR1-tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "m-reMAIT cells were activated by an agonist in the presence and absence of antigen-presenting cells and MR1-tetramer, a reagent to detect MAIT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "cea05967-a1e1-4e78-971e-4f3194908b46",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C4",
+      "claim": "Activation of m-reMAIT cells was accompanied by protein tyrosine phosphorylation and the production of Th1, Th2, and Th17 cytokines and inflammatory chemokines.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation accompanied protein tyrosine phosphorylation and the production of T helper (Th)1, Th2, and Th17 cytokines and inflammatory chemokines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "1e663c28-d918-4d29-af51-c99152a4b6c2",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C5",
+      "claim": "Upon adoptive transfer, m-reMAIT cells migrated to different organs with maturation in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon adoptive transfer, m-reMAIT cells migrated to different organs with maturation in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from adoptive transfer experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "6b98f528-d13f-42a2-9e44-f6bccd3da58b",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C6",
+      "claim": "m-reMAIT cells inhibited tumor growth in the lung metastasis model.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, m-reMAIT cells inhibited tumor growth in the lung metastasis model and prolonged mouse survival upon tumor inoculation through the NK cell-mediated reinforcement of cytolytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental results from tumor studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "a015fee4-ee5c-4b3e-bad6-0c32d63d448e",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C7",
+      "claim": "m-reMAIT cells prolonged mouse survival upon tumor inoculation through NK cell-mediated reinforcement of cytolytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, m-reMAIT cells inhibited tumor growth in the lung metastasis model and prolonged mouse survival upon tumor inoculation through the NK cell-mediated reinforcement of cytolytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental results showing the mechanism of tumor inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "a9002927-2811-4df1-99fa-aabfa700da30",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C8",
+      "claim": "MAIT cells recognize vitamin B2 metabolites as antigens on major histocompatibility complex class I-related gene protein (MR1).",
+      "claim_type": "EXPLICIT",
+      "source": "Mucosal-associated invariant T (MAIT) cells belong to a family of innate-like T cells harboring semi-invariant T-cell receptors (TCRs) and recognize vitamin B2 metabolites as antigens on major histocompatibility complex class I-related gene protein (MR1) (Godfrey et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Godfrey et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "e5d79554-e532-4d27-be3f-e79ccf9dbdc6",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C9",
+      "claim": "MAIT cells play a pivotal role in immunity by bridging innate and adaptive immunities.",
+      "claim_type": "EXPLICIT",
+      "source": "MAIT cells play a pivotal role in immunity by bridging innate and adaptive immunities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge about MAIT cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "ba3d0a2d-1199-43ff-aa68-6c27e7cbab45",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C10",
+      "claim": "MAIT cells are abundant in humans, but rare in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "They are abundant in humans, but rare in mice, and are associated with a number of diseases, such as bacterial and viral infections, autoimmune, inflammatory, and metabolic diseases, asthma, and cancer (Godfrey et al., 2015; Godfrey et al., 2019; Toubal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "8d2f99e0-1e85-4492-88ca-db2ccec8eca7",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C11",
+      "claim": "MAIT cells are associated with bacterial and viral infections, autoimmune, inflammatory, and metabolic diseases, asthma, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "They are abundant in humans, but rare in mice, and are associated with a number of diseases, such as bacterial and viral infections, autoimmune, inflammatory, and metabolic diseases, asthma, and cancer (Godfrey et al., 2015; Godfrey et al., 2019; Toubal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "21161463-2800-4063-8d21-cb2a637474b4",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C12",
+      "claim": "The high infiltration of CD8+CD161+ T cells in tumors represented a favorable prognostic signature across a wide array of human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of infiltrating immune cells revealed that the high infiltration of CD8+CD161+ T cells, largely comprising MAIT cells, type 17 CD8+ T cells (Tc17 cells), and stem cell-like memory cells, in tumors represented a favorable prognostic signature across a wide array of human cancers (Gentles et al., 2015; Konduri et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Gentles et al., 2015 and Konduri et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "4ac76eae-d530-4e44-8764-f9a8eef88181",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C13",
+      "claim": "In mucosal-associated cancers, increases in MAIT cells in tumors were concomitant with a decrease in the circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In mucosal-associated cancers, including lung and colon cancers, increases in MAIT cells in tumors were concomitant with a decrease in the circulation (Ling et al., 2016; Sundstr\u00f6m et al., 2015; Won et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "730fb47d-bd07-4213-a596-7291521168f5",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C14",
+      "claim": "The high infiltration of MAIT cells in tumors negatively correlated with a favorable outcome in colorectal cancer (CRC) patients.",
+      "claim_type": "EXPLICIT",
+      "source": "While the high infiltration of MAIT cells in tumors negatively correlated with a favorable outcome in colorectal cancer (CRC) patients, the low infiltration of these cells in the tumors of hepatocellular carcinoma patients correlated with a poor prognosis, which is in contrast to the role of MAIT cells in tumor immunity (Zabijak et al., 2015; Zheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Zabijak et al., 2015 and Zheng et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "2a733275-e3db-4835-a065-925606172e7b",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C15",
+      "claim": "The low infiltration of MAIT cells in the tumors of hepatocellular carcinoma patients correlated with a poor prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "While the high infiltration of MAIT cells in tumors negatively correlated with a favorable outcome in colorectal cancer (CRC) patients, the low infiltration of these cells in the tumors of hepatocellular carcinoma patients correlated with a poor prognosis, which is in contrast to the role of MAIT cells in tumor immunity (Zabijak et al., 2015; Zheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Zabijak et al., 2015 and Zheng et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "d58f06e9-68c8-4505-909c-7d4f308ccdd3",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C16",
+      "claim": "Tumor-residing MAIT cells exhibit an activated and/or exhausted phenotype as exemplified by the upregulation of CD39, PD-1, and CXCL13 upon the stimulation of TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, tumor-residing MAIT cells exhibit an activated and/or exhausted phenotype as exemplified by the upregulation of CD39, PD-1, and CXCL13 upon the stimulation of TCR (Leng et al., 2019; Shaler et al., 2017; Yao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "7ab95fd7-5939-4fb7-a623-b00fb6af648d",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C17",
+      "claim": "Tumor-infiltrating MAIT cells from CRC show the decreased production of cytokines that are pertinent to antitumor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, tumor-infiltrating MAIT cells from CRC show the decreased production of cytokines that are pertinent to antitumor activity (Ling et al., 2016; Shaler et al., 2017; Sundstr\u00f6m et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "d7c0e778-3c7f-4e62-88d9-fa45a96bfa0a",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C18",
+      "claim": "Approximately 50% of Tc17 cells in tumor-infiltrating T cells comprised MAIT cells across various tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a recent study based on single-cell RNA sequencing revealed that approximately 50% of Tc17 cells in tumor-infiltrating T cells comprised MAIT cells across various tumors, and these Tc17 cells were particularly enriched in hepatocellular carcinoma and cholangiocarcinoma (Zheng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Zheng et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "82400862-94b0-4f23-acdf-82b22f682734",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C19",
+      "claim": "Tc17 cells were particularly enriched in hepatocellular carcinoma and cholangiocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a recent study based on single-cell RNA sequencing revealed that approximately 50% of Tc17 cells in tumor-infiltrating T cells comprised MAIT cells across various tumors, and these Tc17 cells were particularly enriched in hepatocellular carcinoma and cholangiocarcinoma (Zheng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Zheng et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "949694d2-741d-4a53-b864-98f87956a92c",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C20",
+      "claim": "The frequency of Tc17 cells in melanoma patients correlated with responsiveness to anti-PD-1 therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the frequency of Tc17 cells in melanoma patients correlated with responsiveness to anti-PD-1 therapy (Sade-Feldman et al., 2019; Zheng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Sade-Feldman et al., 2019 and Zheng et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "02ed9f31-a7ca-4d7c-a2b7-4885bdb52c26",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C21",
+      "claim": "MAIT cells are 10- to 100-fold less abundant in mice than in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are 10- to 100-fold less abundant in mice than in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about MAIT cell abundance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "9d91a40f-b28f-4a51-8de4-607509361390",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C22",
+      "claim": "The advent of MR1-tetramer has enabled the detection of murine MAIT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the advent of MR1-tetramer (MR1-tet) has enabled the detection of murine MAIT cells, the paucity of these cells per se still hampers functional studies (Corbett et al., 2014; Rahimpour et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Corbett et al., 2014 and Rahimpour et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "505d8511-8fcf-4d7d-a8e9-498185f3687f",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C23",
+      "claim": "The development of MAIT cells is dependent on MR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the development of MAIT cells is dependent on MR1, MR1-deficient mice do not necessarily reveal all aspects of MAIT cells because they are also devoid of other MR1-dependent cells and provide only limited information on immune cells that potentially interact with MAIT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about MAIT cell development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "204c3eb8-d7b6-4a2a-b054-b93420f852cb",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C24",
+      "claim": "MR1-deficient mice are also devoid of other MR1-dependent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the development of MAIT cells is dependent on MR1, MR1-deficient mice do not necessarily reveal all aspects of MAIT cells because they are also devoid of other MR1-dependent cells and provide only limited information on immune cells that potentially interact with MAIT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of MR1-deficient mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "e1a451b1-52ca-43fa-92c8-449e9f38b571",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C25",
+      "claim": "MAIT cell-specific TCR transgenic mice revealed the protective roles of MAIT cells in bacterial infections, type I diabetes, and experimental autoimmune encephalitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, previous studies on MAIT cell-specific TCR transgenic mice revealed the protective roles of MAIT cells in bacterial infections, type I diabetes, and experimental autoimmune encephalitis (Chua et al., 2011; Croxford et al., 2006; Cui et al., 2015; Le Bourhis et al., 2010; Martin et al., 2009; Meierovics et al., 2013; Reantragoon et al., 2013; Sakala et al., 2015; Shalapour et al., 2012; Shimamura et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "be5f5c3d-fb0f-4dec-b7df-253fa2387a2c",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C26",
+      "claim": "FACS-purified MAIT cells from the lungs of C57BL/6 mice were reprogrammed with the Sendai virus vector KOSM302L.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent-activated cell sorting (FACS)-purified MAIT cells (defined as CD44+TCR\u03b2+mMR1-tet+ cells, purity >97%) from the lungs of C57BL/6 mice were reprogrammed with the Sendai virus vector KOSM302L (Wakao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure with a citation to Wakao et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "5712bb92-09b8-4d79-96ea-c1cd8863b535",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C27",
+      "claim": "Forty-six iPSCs were obtained with a reprogramming efficiency of 0.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-six iPSCs were obtained with a reprogramming efficiency of 0.6%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental results from the reprogramming procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "b01ba138-c73b-4182-8bea-ce89d3750621",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C28",
+      "claim": "MAIT-iPSCs harbored rearranged Trbv13-3, Trbv19, and Trbv12-1.",
+      "claim_type": "EXPLICIT",
+      "source": "MAIT-iPSCs also harbored rearranged Trbv13-3, Trbv19, and Trbv12-1 (Table 1) and exhibited pluripotency, as evidenced by the ability to give rise to chimeric mice (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "07dbc477-3b99-4808-8cec-869096defe2a",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C29",
+      "claim": "MAIT-iPSCs exhibited pluripotency, as evidenced by the ability to give rise to chimeric mice.",
+      "claim_type": "EXPLICIT",
+      "source": "MAIT-iPSCs also harbored rearranged Trbv13-3, Trbv19, and Trbv12-1 (Table 1) and exhibited pluripotency, as evidenced by the ability to give rise to chimeric mice (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "11ec7338-a9c9-4aa2-a270-d2ef13ed65e9",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C30",
+      "claim": "The differentiation of MAIT-iPSCs on OP9-DLL1 resulted in m-reMAIT cells that were TCR\u03b2+mMR1-tet+CD8+CD4+CD44-CD25intPLZF-ROR\u03b3t+.",
+      "claim_type": "EXPLICIT",
+      "source": "The differentiation of MAIT-iPSCs on OP9 ectopically expressing delta-like 1 (OP9-DLL1), a feeder cell for T-cell differentiation, resulted in m-reMAIT cells that were TCR\u03b2+mMR1-tet+CD8+CD4+CD44-CD25intPLZF-ROR\u03b3t+ (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "fdb73da6-a108-4015-a774-b281e565df10",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C31",
+      "claim": "m-reMAIT cells multiplied more than 100-fold starting from MAIT-iPSCs with a doubling time of ~10.5 hr during the logarithmic phase of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "m-reMAIT cells multiplied more than 100-fold starting from MAIT-iPSCs with a doubling time of ~10.5 hr during the logarithmic phase of growth later in differentiation (Figure 1\u2014figure supplement 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1\u2014figure supplement 1F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "92f51822-ba49-4d0b-bc6f-ed691db19dbe",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C32",
+      "claim": "m-reMAIT cells were activated in a manner that was dependent on both 5-OP-RU and MR1 in the presence of APCs.",
+      "claim_type": "EXPLICIT",
+      "source": "m-reMAIT cells were activated in a manner that was dependent on both 5-OP-RU and MR1 in the presence of APCs, such as WT3, the mouse embryonic fibroblast cell line, WT3/mMR1, WT3-overexpressing murine MR1, CH27, a B1B lymphoma cell line expressing a low level of endogenous MR1 on the cell surface, and CH27/mMR1, CH27-overexpressing murine MR1 (Figure 1B), which was consistent with previous findings (Cheng et al., 1999; Huang et al., 2008; Miley et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1B with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "972fa485-11fa-4c69-a8e9-001af56210c4",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C33",
+      "claim": "5-OP-RU dose-dependent activation was observed in the other m-reMAIT cell lines L3-1, L11-1, L15-1, and L19-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 5-OP-RU dose-dependent activation was observed in the other m-reMAIT cell lines L3-1, L11-1, L15-1, and L19-1 (Figure 1\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1\u2014figure supplement 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "311db3e7-64df-4baf-9c61-b5a4f32ffc48",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C34",
+      "claim": "The activation of m-reMAIT cells in the presence of CH27 or CH27/mMR1 induced the production of IFN-\u03b3, TNF-\u03b1, IL-17A, CCL4 (MIP-1\u03b2), CCL5 (RANTES), IL-2, and IL-13 in a 5-OP-RU dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of m-reMAIT cells in the presence of CH27 or CH27/mMR1 in turn induced the production of a battery of inflammatory cytokines and chemokines, such as IFN-\u03b3, TNF-\u03b1, IL-17A, CCL4 (MIP-1\u03b2), and CCL5 (RANTES), as well as IL-2 and the T helper (Th)2 cytokine IL-13, in a 5-OP-RU dose-dependent manner (Figure 1\u2014figure supplement 1J ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1\u2014figure supplement 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "aef81698-0913-4de5-869e-9f7419412627",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C35",
+      "claim": "5-OP-RU and mMR1-tet each activated m-reMAIT cells and promoted the production of a similar, but not identical, set of cytokines and chemokines in a dose-dependent manner in the absence of APCs.",
+      "claim_type": "EXPLICIT",
+      "source": "5-OP-RU and mMR1-tet each activated m-reMAIT cells and promoted the production of a similar, but not identical, set of cytokines and chemokines in a dose-dependent manner in the absence of APCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations comparing 5-OP-RU and mMR1-tet.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "d7462425-f503-4482-9b11-e505d2117eea",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C36",
+      "claim": "mMR1-tet was superior to 5-OP-RU at inducing TNF-\u03b1, Th2 cytokines (IL-6, IL-10, and IL-13), Th17 cytokines (IL-17F, IL-22, and IL-23), and inflammatory chemokines (CCL5, CCL2, CXCL1, and CXCL6).",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that mMR1-tet was superior to 5-OP-RU at inducing TNF-\u03b1, Th2 cytokines, such as IL-6, IL-10, and IL-13, the Th17 cytokines, IL-17F, IL-22, and IL-23, and inflammatory chemokines, including CCL5, CCL2 (MCP-1), CXCL1, and CXCL6, irrespective of their similar abilities to upregulate CD69 (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "d29814f2-7e06-463d-a247-e77baf0ea743",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C37",
+      "claim": "5-OP-RU elicited dose- and time-dependent phosphorylation of proteins in m-reMAIT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results obtained showed the dose- and time-dependent phosphorylation of proteins (Figure 1G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "fe4a4793-66ae-4685-abf7-9630857f2fee",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C38",
+      "claim": "Linker for the activation of T cells (LAT) was identified as a TCR signaling component among phosphorylated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Linker for the activation of T cells (LAT) was identified as a TCR signaling component among phosphorylated proteins (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "61671ba0-069d-4111-8d33-f1dad37f8694",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C39",
+      "claim": "The addition of mMR1-tet engendered similar protein tyrosine phosphorylation, as was the case for 5-OP-RU.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the addition of mMR1-tet, a reagent widely used to detect MAIT cells, engendered similar protein tyrosine phosphorylation, as was the case for 5-OP-RU (Figure 1G, H and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1G, H and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "cd838adf-755e-4b9e-a147-6639d545fbf4",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C40",
+      "claim": "m-reMAIT cells and endogenous MAIT cells were detected in the thymus, bone marrow, lung, liver, spleen, intestines, and the mediastinal and inguinal lymph nodes at various endogenous MAIT cell/m-reMAIT cell ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "m-reMAIT cells and endogenous MAIT cells were detected in the thymus, bone marrow, lung, liver, spleen, intestines, and the mediastinal and inguinal lymph nodes at various endogenous MAIT cell/m-reMAIT cell ratios (Figure 2A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 2A and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "4f59f2fb-94f4-4ed1-8000-b1898d10b4eb",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C41",
+      "claim": "m-reMAIT cells showed the time-dependent upregulation of CD44 in the spleen, liver, and lungs.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison with endogenous MAIT cells, m-reMAIT cells showed the time-dependent upregulation of CD44 in the spleen, liver, and lungs, and lower expression in the intestines (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "6cfeb617-4100-4ca4-8da8-ce2f1dd2a33f",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C42",
+      "claim": "m-reMAIT cells showed lower CD44 expression in the intestines compared to endogenous MAIT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison with endogenous MAIT cells, m-reMAIT cells showed the time-dependent upregulation of CD44 in the spleen, liver, and lungs, and lower expression in the intestines (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "0904ef3c-a7e6-415e-b99e-3192b588a915",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C43",
+      "claim": "The expression of IL-18R\u03b1 in m-reMAIT cells in the spleen, liver, and intestines was quasi-equivalent to that in endogenous cells.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of other molecules relevant to the functionality of MAIT cells revealed quasi-equivalent IL-18R\u03b1 expression in the spleen, liver, and intestines to that in endogenous cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "6d4f4179-0b23-4b95-a9af-1779acc1a4c2",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C44",
+      "claim": "The expression of IL-7R\u03b1 and CXCR6 in all organs examined was lower in m-reMAIT cells than in endogenous cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the expression of IL-7R\u03b1 and CXCR6 in all organs examined was lower than that in endogenous cells, while CD69 expression was quasi-equivalent to that in endogenous cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "9c4e69ee-c443-4304-ad25-71665bd7f2aa",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C45",
+      "claim": "CD69 expression in m-reMAIT cells was quasi-equivalent to that in endogenous cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the expression of IL-7R\u03b1 and CXCR6 in all organs examined was lower than that in endogenous cells, while CD69 expression was quasi-equivalent to that in endogenous cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "db3d60d7-a25b-4a43-8508-af097db1e5a1",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C46",
+      "claim": "The frequency of m-reMAIT cells among mMR1-tet+TCR\u03b2+ cells in primary lymphoid organs decreased over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the frequency of m-reMAIT cells among mMR1-tet+TCR\u03b2+ cells in primary lymphoid organs decreased, while that in peripheral tissues increased over time (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "faf163f7-ccb2-4165-8d5f-3e972893a9ef",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C47",
+      "claim": "The frequency of m-reMAIT cells among mMR1-tet+TCR\u03b2+ cells in peripheral tissues increased over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the frequency of m-reMAIT cells among mMR1-tet+TCR\u03b2+ cells in primary lymphoid organs decreased, while that in peripheral tissues increased over time (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "3e328612-60ae-4e79-8896-cdd23564e5b6",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C48",
+      "claim": "The transcriptome of na\u00efve m-reMAIT cells clustered upon adoptive transfer, which was similar to that of endogenous MAIT cells from lamina propria lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "A principal component analysis (PCA) revealed that the transcriptome of na\u00efve m-reMAIT cells clustered upon adoptive transfer, which was similar to that of endogenous MAIT cells from lamina propria lymphocytes (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results from RNA sequencing shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "4bca75bf-fe51-4cf4-bdf2-407aa8234d6a",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C49",
+      "claim": "The expression of transcripts such as Il7r, Il12rb, Il18r, Il18rap, Prf, Gzmb, Tnf, Ifng, Il22, Slamf7, Abcb1a, Zbtb16, Tbx21, and Zfp683 was upregulated upon the adoptive transfer of na\u00efve m-reMAIT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression of transcripts, such as Il7r, Il12rb, Il18r, Il18rap, Prf, Gzmb, Tnf, Ifng, Il22, Slamf7, Abcb1a (encoding the efflux pump), Zbtb16 (encoding PLZF), Tbx21 (encoding T-bet), and Zfp683 (encoding Hobbit), was upregulated upon the adoptive transfer of na\u00efve m-reMAIT cells, and the expression levels of some transcripts reached those in endogenous MAIT cells (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results from RNA sequencing shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "84c13a0e-a6d2-484f-8ab8-306ba7b3b87d",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C50",
+      "claim": "Transcripts relevant to the V-D-J recombination machinery, such as Rag1, Rag2, Hmgb1, Dntt, and Lig4, were silenced across the organs upon adoptive transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcripts relevant to the V-D-J recombination machinery, such as Rag1, Rag2, Hmgb1, Dntt, and Lig4, were silenced across the organs upon adoptive transfer (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results from RNA sequencing shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "d5817dd8-7fa6-4f52-a017-384898eb4349",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C51",
+      "claim": "B16F10 significantly upregulated MR1 on the cell surface with the 5-OP-RU challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "While B16F10 significantly upregulated MR1 on the cell surface with the 5-OP-RU challenge, a similar change was not observed for Lewis lung carcinoma (LLC) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "5c9591d5-f91f-45fd-848e-692a13734d05",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C52",
+      "claim": "Lewis lung carcinoma (LLC) did not significantly upregulate MR1 on the cell surface with the 5-OP-RU challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "While B16F10 significantly upregulated MR1 on the cell surface with the 5-OP-RU challenge, a similar change was not observed for Lewis lung carcinoma (LLC) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "35e2d8c4-9939-46c0-b321-942e41dffea0",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C53",
+      "claim": "The adoptive transfer of m-reMAIT cells into mice followed by the LLC inoculation prolonged survival in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The adoptive transfer of m-reMAIT cells into mice followed by the LLC inoculation prolonged survival in a dose-dependent manner. While 3 \u00d7 105 m-reMAIT cells slightly prolonged survival over the control, more than 1 \u00d7 106 m-reMAIT cells significantly prolonged survival (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "e766fff6-528a-4843-a717-120752aa2091",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C54",
+      "claim": "Multiple transfers of m-reMAIT cells failed to significantly prolong survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, multiple transfers of m-reMAIT cells failed to significantly prolong survival (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "170ba34a-724a-4b0a-9ccc-c12e5c93b8f1",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C55",
+      "claim": "The adoptive transfer of m-reMAIT cells did not suppress tumor growth at any dose following the subcutaneous inoculation of LLC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to these results, the adoptive transfer of m-reMAIT cells did not suppress tumor growth at any dose following the subcutaneous inoculation of LLC, which represents an in situ tumor growth model (Figure 3D), irrespective of the delayed emergence of m-reMAIT cells in the skin (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 3D and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "7eb59600-ed2d-4d5d-978a-119361ad3729",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C56",
+      "claim": "m-reMAIT cells were activated in an NK cell dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "While m-reMAIT cells were activated in an NK cell dose-dependent manner, the activation of NK cells was less prominent (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "5153a79d-2636-4899-8c70-1de4c33faf5c",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C57",
+      "claim": "The activation of NK cells by m-reMAIT cells was less prominent.",
+      "claim_type": "EXPLICIT",
+      "source": "While m-reMAIT cells were activated in an NK cell dose-dependent manner, the activation of NK cells was less prominent (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "09c9eb86-8913-4d0c-8497-fb53965f937e",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C58",
+      "claim": "The coculture of m-reMAIT cells and NK cells led to the production of Th1 and Th17 cytokines as well as inflammatory chemokines in an NK cell dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the coculture led to the production of Th1 and Th17 cytokines as well as inflammatory chemokines in an NK cell dose-dependent manner (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "10beb242-638c-416c-8e9c-c963ca53177a",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C59",
+      "claim": "Ifng was induced in m-reMAIT cells, but not in NK cells, upon coculture.",
+      "claim_type": "EXPLICIT",
+      "source": "Ifng was induced in m-reMAIT cells, but not in NK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from qRT-PCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "c9e4c70e-d4cc-430b-8482-7fb7b217e1ce",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C60",
+      "claim": "The coculture enhanced the transcripts for serine proteases, such as Grza, Grzb, and Tnf, in m-reMAIT cells and NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the coculture enhanced the transcripts for serine proteases, such as Grza, Grzb, and Tnf, in m-reMAIT cells and NK cells (Trapani and Smyth, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from qRT-PCR analysis with a citation to Trapani and Smyth, 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "ef9b03d0-d2ca-4d5a-9ad1-867741e36703",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C61",
+      "claim": "The expression of the transcripts for the TNF superfamily, including Fasl and Tnsf10, was only stimulated in m-reMAIT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the expression of the transcripts for the TNF superfamily, including Fasl and Tnsf10, was only stimulated in m-reMAIT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from qRT-PCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "7cf9f042-8b21-49a3-a4dc-c49fb72d7720",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C62",
+      "claim": "The expression of Ccl4 (Mip1b), Ccl5 (Rantes), Il17a, and Il6 was upregulated in m-reMAIT cells in contrast to only Ccl5 (Rantes) in NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the expression of Ccl4 (Mip1b), Ccl5 (Rantes), Il17a, and Il6 was upregulated in m-reMAIT cells in contrast to only Ccl5 (Rantes) in NK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from qRT-PCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "144392e7-c916-4bd7-85a8-677a066aa1a9",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C63",
+      "claim": "The coculture with m-reMAIT cells did not markedly upregulate the expression of CD69 in NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While the coculture with m-reMAIT cells did not markedly upregulate the expression of CD69 (CD69+ cells) in NK cells, the addition of Yac-1, an NK cell-sensitive tumor cell line (alone or in combination with m-reMAIT cells), increased the percentage of CD69+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "46986e1c-b4f1-4c08-829b-f76e93a02e66",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C64",
+      "claim": "The addition of Yac-1 increased the percentage of CD69+ cells in NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While the coculture with m-reMAIT cells did not markedly upregulate the expression of CD69 (CD69+ cells) in NK cells, the addition of Yac-1, an NK cell-sensitive tumor cell line (alone or in combination with m-reMAIT cells), increased the percentage of CD69+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "516a94bf-a759-40ee-adc8-c813817d5d14",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C65",
+      "claim": "Incubation with NK cells or Yac-1 enhanced the percentage of CD69+ cells in m-reMAIT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, incubation with NK cells or Yac-1 enhanced the percentage of CD69+ cells in m-reMAIT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "5ddb9dda-3c57-4838-b21e-b2cbf2079b9e",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C66",
+      "claim": "A coculture with NK cells together with Yac-1 resulted in further increases in CD69+ cells in m-reMAIT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a coculture with NK cells together with Yac-1 resulted in further increases, and similar results were obtained for CD69+CD107a+ cells in m-reMAIT cells (Figure 4E, lower panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "d7660443-e081-4137-a61d-369ecce08773",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C67",
+      "claim": "m-reMAIT cells lysed Yac-1 as efficaciously as NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "m-reMAIT cells lysed Yac-1, an NK cell-sensitive tumor cell line, as efficaciously as NK cells, and these cells synergistically enhanced killing (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "25ac740a-d84f-48a9-b8b8-e392d675caa0",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C68",
+      "claim": "m-reMAIT cells and NK cells synergistically enhanced killing of Yac-1.",
+      "claim_type": "EXPLICIT",
+      "source": "m-reMAIT cells lysed Yac-1, an NK cell-sensitive tumor cell line, as efficaciously as NK cells, and these cells synergistically enhanced killing (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "9669f77a-32a7-43b1-8b27-695cfbbdcb9b",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C69",
+      "claim": "NK cells alone did not induce cell death in LLC.",
+      "claim_type": "EXPLICIT",
+      "source": "NK cells alone did not induce cell death in LLC, whereas m-reMAIT cells did.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from cytolytic assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "52f2a478-1d5b-49bd-a1f1-78b55de30c0e",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C70",
+      "claim": "m-reMAIT cells induced cell death in LLC.",
+      "claim_type": "EXPLICIT",
+      "source": "NK cells alone did not induce cell death in LLC, whereas m-reMAIT cells did.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from cytolytic assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "c702fe59-96bc-4e8f-a166-8798a07e8e2a",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C71",
+      "claim": "The combination of NK cells and m-reMAIT cells exhibited synergistically enhanced lytic activity against LLC.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the combination of these cells exhibited synergistically enhanced lytic activity (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "f6b50535-314e-4a33-ad9f-9403f28184e1",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C72",
+      "claim": "NK cell depletion with anti-Asialo GM1 antibody did not significantly affect the survival of control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This depletion did not significantly affect the survival of control mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from survival studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "2cffd762-26e7-4a8f-94e1-d3c2078fd9cd",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C73",
+      "claim": "The anti-Asialo GM1 antibody treatment abrogated the survival advantage of m-reMAIT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the AsG treatment abrogated the survival advantage of m-reMAIT cells, highlighting the stimulatory role of NK cells in m-reMAIT cell-mediated tumor inhibitory activity (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "58414d17-b08b-4893-81e0-f8a2f74a6366",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C74",
+      "claim": "5-OP-RU may be passively transported into cells, which in turn promotes the release of antigen-loaded MR1 from the endoplasmic reticulum onto the plasma membrane.",
+      "claim_type": "IMPLICIT",
+      "source": "5-OP-RU may be passively transported into cells, which in turn promotes the release of antigen-loaded MR1 from the endoplasmic reticulum (ER) onto the plasma membrane, thereby enabling signaling via TCR in m-reMAIT cells (referred to as a cis-acting signal) regardless of the apparent absence of MR1 on the cell surface (Figure 1B and D, Figure 1\u2014figure supplement 1I; McWilliam et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the experimental results with a citation to McWilliam et al., 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "6431d6e6-a32e-4274-a655-7dfc53549ffa",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C75",
+      "claim": "mMR1-tet directly binds to TCR on m-reMAIT cells and elicits signals.",
+      "claim_type": "IMPLICIT",
+      "source": "In contrast, mMR1-tet directly binds to TCR on m-reMAIT cells and elicits signals (referred to as trans-acting signals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism of mMR1-tet action based on experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "ec7a9630-4421-485d-900a-04fc2076cdf6",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C76",
+      "claim": "mMR1-tet may have activated the signaling pathways pertinent to the activation of Th17.",
+      "claim_type": "IMPLICIT",
+      "source": "In contrast, mMR1-tet may have activated the signaling pathways pertinent to the activation of Th17 as evidenced by the production of Th17 cytokines, such as IL-17F, IL-22, and IL-23, concomitant with inflammatory chemokines, including CCL5, CCL2, CXCL1, and CXCL6, in addition to TNF-\u03b1 (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the experimental results shown in Figure 1F.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "95fbcd3b-0dbe-462a-80fe-03a3df1f2e4e",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C77",
+      "claim": "mMR1-tet signals, in part, through NF-\u03baB, while 5-OP-RU does not.",
+      "claim_type": "IMPLICIT",
+      "source": "These results suggest that mMR1-tet signals, in part, through NF-\u03baB, while 5-OP-RU does not (Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with a citation to Liu et al., 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "dee4fa00-c4d9-44d0-83e5-ed6bbca2afa1",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C78",
+      "claim": "MAIT cells prepared from animals are unintentionally stimulated during experiments when using mMR1-tet.",
+      "claim_type": "IMPLICIT",
+      "source": "This suggests that MAIT cells prepared from animals, including humans and mice, are unintentionally stimulated during experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that mMR1-tet activates MAIT cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "bb6766e6-f7ec-4c28-a5f0-8fff4a2abec8",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C79",
+      "claim": "m-reMAIT cells produced Th1, Th2, and Th17 cytokines, which may reflect a developmental stage at which m-reMAIT cells are en route to functional maturation.",
+      "claim_type": "IMPLICIT",
+      "source": "Although a previous study suggested that MAIT cells comprise MAIT1 and MAIT17 subsets characterized by the Th1 and Th17 transcriptomes, respectively, the present results revealed that m-reMAIT cells produced Th1, Th2, and Th17 cytokines (Salou et al., 2019). This may reflect a developmental stage at which m-reMAIT cells are en route to functional maturation and m-reMAIT cells generated in vitro represent the most immature stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental results with a citation to Salou et al., 2019.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "f7d0219b-cd62-45fa-b478-fb1b3c16ab38",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C80",
+      "claim": "The interaction between nascent MAIT cells and double-positive thymocytes may favor the differentiation of na\u00efve MAIT cells into MAIT1 and MAIT17 in vivo.",
+      "claim_type": "IMPLICIT",
+      "source": "Therefore, it is tempting to postulate that the interaction between nascent MAIT cells and double-positive thymocytes favors the differentiation of na\u00efve MAIT cells into MAIT1 and MAIT17 in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "97da07b5-0822-4c98-9706-413dd3565bf9",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C81",
+      "claim": "The upregulation of IL-7R\u03b1 in m-reMAIT cells may mirror an intrinsic and primary role in intestinal homeostasis and/or in the integrity of the intestinal epithelial barrier.",
+      "claim_type": "IMPLICIT",
+      "source": "Since IL-7 from intestinal epithelial cells plays a pivotal role in their homeostasis, the upregulation of IL-7R\u03b1 in m-reMAIT cells may mirror an intrinsic and primary role in this homeostasis and/or in the integrity of the intestinal epithelial barrier (Rouxel et al., 2017; Shalapour et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with citations to Rouxel et al., 2017 and Shalapour et al., 2012.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "6c8f01a9-eddb-4bd7-b78a-6cc60052dbc3",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C82",
+      "claim": "The upregulation of IL-7R\u03b1 may reflect the role of MAIT cells in IL-17A and Th1 cytokine production, which is dependent on IL-7.",
+      "claim_type": "IMPLICIT",
+      "source": "Alternatively, it may reflect the role of MAIT cells in IL-17A and Th1 cytokine production, which is dependent on IL-7 (Tang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with a citation to Tang et al., 2013.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "87206dfa-1e5d-4f11-bbd0-99efe020fda8",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C83",
+      "claim": "Na\u00efve m-reMAIT cells may be promoted maturation in terms of transcriptional program upon adoptive transfer into the recipient mice.",
+      "claim_type": "IMPLICIT",
+      "source": "Thus, na\u00efve m-reMAIT cells, defined as mMR1-tet+TCR\u03b2+ cells generated in vitro, may be promoted maturation in terms of transcriptional program upon adoptive transfer into the recipient mice, as evidenced by the acquisition of cytokine receptors, the effector molecules involved in cytotoxicity and tissue repairing, and those relevant to tissue residency (Figure 2\u2014figure supplements 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the RNA sequencing data shown in Figure 2\u2014figure supplements 2\u20134.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "08cfa71a-7cf3-4e33-a68d-1f361b13b5d1",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C84",
+      "claim": "The silencing of transcripts relevant to V-D-J recombination may ensure the continuum of the identity of m-reMAIT cells in the recipient.",
+      "claim_type": "IMPLICIT",
+      "source": "Moreover, the silencing of transcripts relevant to V-D-J recombination may ensure the continuum of the identity of m-reMAIT cells in the recipient (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the RNA sequencing data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "2996b2fd-116c-464a-8591-1ea78eae9667",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C85",
+      "claim": "The failure of three consecutive injections of m-reMAIT cells to confer survival superiority suggests that the niche for MAIT cells appeared to be saturated.",
+      "claim_type": "IMPLICIT",
+      "source": "However, since three consecutive injections of m-reMAIT cells failed to confer survival superiority, the niche for MAIT cells appeared to be saturated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observation that multiple transfers did not improve survival.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "3831c472-a0b9-4ff7-bca5-d654741e78d2",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C86",
+      "claim": "The failure of m-reMAIT cells to inhibit tumor growth in situ indicated their poor infiltration into tumors rather than the loss of antitumor activity.",
+      "claim_type": "IMPLICIT",
+      "source": "The failure of m-reMAIT cells to inhibit tumor growth in situ regardless of their mobilization to the skin indicated their poor infiltration into tumors rather than the loss of antitumor activity (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental results shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "c07c5bc1-8a5b-42a7-9a94-c426e1a36dd9",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C87",
+      "claim": "NK cells stimulated the tumor inhibitory effects of MAIT cells.",
+      "claim_type": "IMPLICIT",
+      "source": "The present results showing the NK cell-dependent activation of m-reMAIT cells and the subsequent production of inflammatory cytokines and chemokines suggested that NK cells stimulated the tumor inhibitory effects of MAIT cells (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental results shown in Figure 4A and B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "a1482cc4-e100-4ee7-9f28-cd7f88181caf",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C88",
+      "claim": "m-reMAIT cells exhibited cytolytic activity in vivo.",
+      "claim_type": "IMPLICIT",
+      "source": "Moreover, the enhanced expression of transcripts relevant to the cytolytic function of m-reMAIT cells upon an interaction with NK cells in vitro indicated that m-reMAIT cells exhibited cytolytic activity in vivo (Figure 4C\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental results shown in Figure 4C\u2013G.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "df82b1ef-b46a-48c6-9a2c-eacc4a34953b",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C89",
+      "claim": "Cytolytic activity of m-reMAIT cells comprised exocytosis- as well as caspase-mediated killing.",
+      "claim_type": "IMPLICIT",
+      "source": "The upregulation of Grzb, Fasl, and Tnfsf10 in m-reMAIT cells suggested that cytolytic activity comprised exocytosis- as well as caspase-mediated killing (Rossin et al., 2019; Trapani and Smyth, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the qRT-PCR results with citations to Rossin et al., 2019 and Trapani and Smyth, 2002.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "25b8da48-a0c4-4ab5-8222-5ba9f47e8f9b",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C90",
+      "claim": "Differences in the dynamics of MR1 shuttling between ER and the plasma membrane upon a 5-OP-RU challenge or putative ligand(s) present in the tumor milieu may be a key feature explaining discrepancies in MAIT cell function in different tumor models.",
+      "claim_type": "IMPLICIT",
+      "source": "Although the reason for this discrepancy currently remains unclear, differences in the dynamics of MR1 shuttling between ER and the plasma membrane upon a 5-OP-RU challenge or putative ligand(s) present in the tumor milieu (TM) may be a key feature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis to explain discrepancies between studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "08fa142b-5bff-47ba-b738-4b216c8b1288",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C91",
+      "claim": "5-OP-RU may have bolstered B16F10 tumorigenicity through MR1.",
+      "claim_type": "IMPLICIT",
+      "source": "Since LLC did not strongly upregulate MR1 on the cell surface when stimulated (Figure 4A), 5-OP-RU may have bolstered B16F10 tumorigenicity through MR1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the experimental results shown in Figure 4A.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "32a2b424-44db-4774-8e73-b679d2f3c27a",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C92",
+      "claim": "The MR1-elicited signal may suppress the function of NK cells for B16F10, whereas that from putative ligand(s) present in TM via MR1 did not.",
+      "claim_type": "IMPLICIT",
+      "source": "The MR1-elicited signal may suppress the function of NK cells for B16F10, whereas that from putative ligand(s) present in TM via MR1 did not, thereby enhancing or preserving NK cell functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis to explain differences in tumor models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "eb3ef9ea-618d-4dc4-a623-482a3da29732",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C93",
+      "claim": "The adoptive transfer model with m-reMAIT cells opens a new avenue for exploiting the function of MAIT cells and providing insights into their interaction(s) with immune cells in immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the adoptive transfer model with m-reMAIT cells used in this study opens a new avenue for exploiting the function of MAIT cells and providing insights into their interaction(s) with immune cells in immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement summarizing the implications of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "9748035f-4a95-4ceb-a30e-185073941edf",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "claim_id": "C94",
+      "claim": "The adoptive transfer of m-reMAIT cells has potential as a novel tool for examining the immune functions of MAIT cells in health and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The present results imply that the adoptive transfer of m-reMAIT cells has potential as a novel tool for examining the immune functions of MAIT cells in health and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the implications of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0d8075e3-43ab-4fac-83fe-7a4cc8a525c3",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MAIT cells from C57BL/6 mice were successfully reprogrammed into iPSCs with 0.6% efficiency, and the resulting MAIT-iPSCs harbored rearranged TCR genes and exhibited pluripotency as demonstrated by chimeric mouse generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 provide converging evidence for successful reprogramming: the methodology is clearly described (C26), quantitative efficiency is reported (C27), TCR rearrangements are confirmed by multiple methods including PCR, sequencing, and Southern blot (C28, Table 1, Figure 1\u2014figure supplement 1A-D), and pluripotency is functionally validated by chimeric mouse generation (C29, Figure 1\u2014figure supplement 1E). These data collectively support the successful generation of MAIT-iPSCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "7b29e5b5-ffc7-490e-9d16-d5367b5881ab",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MAIT-iPSCs differentiated on OP9-DLL1 feeder cells produced m-reMAIT cells with characteristic surface markers that expanded >100-fold and were activated by 5-OP-RU in an MR1-dependent manner, producing inflammatory cytokines and chemokines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 describe the differentiation and functional characterization of m-reMAIT cells. The phenotype is well-characterized by flow cytometry (C30, Figure 1A), expansion is quantified (C31, Figure 1\u2014figure supplement 1F-G), and functional activation is demonstrated across multiple iPSC clones with dose-response curves and MR1-dependence (C32-C34, Figure 1B, 1\u2014figure supplement 1I-J). The data are internally consistent and support the generation of functional m-reMAIT cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "29452497-5336-4d24-ae48-a4a186339558",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both 5-OP-RU and mMR1-tet activated m-reMAIT cells in the absence of APCs, inducing protein tyrosine phosphorylation including LAT, but mMR1-tet was superior at inducing Th2, Th17 cytokines and inflammatory chemokines compared to 5-OP-RU.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 demonstrate differential activation by 5-OP-RU versus mMR1-tet. The data show dose-dependent CD69 upregulation (Figure 1D-E), differential cytokine/chemokine production profiles (C36, Figure 1F), and protein phosphorylation including LAT identification (C37-C39, Figure 1G-J). The Western blot data clearly show phosphorylation patterns, and the cytokine data reveal quantitative differences between the two stimuli. This is an important methodological finding about mMR1-tet as a reagent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "129f6fa0-97b7-4520-86a6-cfe017cded40",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Upon adoptive transfer into syngeneic mice, m-reMAIT cells migrated to multiple organs including thymus, bone marrow, lung, liver, spleen, intestines, and lymph nodes, showing time-dependent upregulation of CD44 in most organs and differential expression of IL-18R\u03b1, IL-7R\u03b1, CXCR6, and CD69 compared to endogenous MAIT cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C47 describe the biodistribution and maturation of m-reMAIT cells in vivo. Flow cytometry data clearly show m-reMAIT cells (Ly5.2+) in multiple organs (C40, Figure 2A, 2D), with time-dependent changes in surface markers (C41-C45, Figure 2B-C). The frequency data show redistribution from primary to peripheral lymphoid organs over time (C46-C47, Figure 2D). The experimental design using congenic markers (Ly5.1 vs Ly5.2) is appropriate for tracking donor cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "9f1969be-f02d-44b9-b50f-f43c2559a526",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RNA-sequencing analysis revealed that upon adoptive transfer, na\u00efve m-reMAIT cells underwent transcriptional maturation with upregulation of genes relevant to MAIT cell identity and function (Il7r, Il18r, Gzmb, Ifng, Zbtb16, Tbx21) and silencing of V-D-J recombination genes (Rag1, Rag2, Dntt, Lig4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 describe transcriptomic changes during m-reMAIT cell maturation. PCA shows clustering of transferred m-reMAIT cells with endogenous MAIT cells (C48, Figure 2\u2014figure supplement 1), heatmaps demonstrate upregulation of MAIT-relevant genes (C49, Figure 2\u2014figure supplement 2), and silencing of recombination machinery (C50, Figure 2\u2014figure supplement 5). The RNA-seq data support the conclusion that m-reMAIT cells undergo maturation in vivo, though the authors acknowledge they don't fully reach endogenous MAIT cell transcriptional profiles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "034c7e8d-bb1f-4703-b330-0ce4f3b9c10c",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "m-reMAIT cells prolonged survival in a dose-dependent manner in the LLC lung metastasis model but not in the subcutaneous tumor growth model, with B16F10 and LLC showing differential MR1 upregulation in response to 5-OP-RU.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 describe tumor model experiments. The differential MR1 upregulation between B16F10 and LLC is clearly shown (C51-C52, Figure 3A). Survival data demonstrate dose-dependent effects with statistical significance at \u22651\u00d710^6 cells (C53, Figure 3B, p=0.031 and p=0.038), lack of benefit from multiple transfers (C54, Figure 3C), and no effect on subcutaneous tumor growth (C55, Figure 3D). The data support the conclusion that m-reMAIT cells inhibit metastasis but not in situ tumor growth, though the mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "10fac2d8-51eb-4c13-9fbc-30a626b093d5",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Coculture of m-reMAIT cells with NK cells resulted in NK cell dose-dependent activation of m-reMAIT cells with production of Th1 and Th17 cytokines and chemokines, while NK cell activation was less prominent. Transcriptional analysis revealed differential upregulation of cytolytic genes (Ifng, Grzb, Fasl, Tnfsf10) primarily in m-reMAIT cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 describe NK-MAIT cell interactions in vitro. Flow cytometry shows asymmetric activation with m-reMAIT cells responding more strongly than NK cells (C56-C57, Figure 4A), cytokine production is dose-dependent (C58, Figure 4B), and qRT-PCR data show differential gene expression patterns between the two cell types (C59-C62, Figure 4C-D). The data consistently support the conclusion that NK cells activate m-reMAIT cells more than the reverse, though the purity of NK cells (>85%) is somewhat lower than ideal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "b3d3a143-4a70-4594-9d73-fb48b12d63a0",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "m-reMAIT cells exhibited cytolytic activity against both Yac-1 and LLC tumor cells that was comparable to or exceeded NK cell activity, with synergistic enhancement when NK cells and m-reMAIT cells were combined, as evidenced by CD107a expression and direct cytotoxicity assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C71 describe cytolytic function. CD69 and CD107a expression data show activation and degranulation (C63-C66, Figure 4E), and direct cytotoxicity assays demonstrate killing of both Yac-1 (C67-C68, Figure 4F) and LLC (C69-C71, Figure 4G) with statistical significance for synergy. The data support cytolytic activity, though the authors acknowledge they couldn't demonstrate this ex vivo from transferred mice due to low cell recovery and potential mMR1-tet interference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "6b86fbd5-b246-4f4d-aa5f-f5b7b86abbdd",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NK cell depletion with anti-Asialo GM1 antibody abrogated the survival advantage conferred by m-reMAIT cells in the LLC lung metastasis model, demonstrating that NK cells are required for m-reMAIT cell-mediated tumor inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 provide critical mechanistic evidence. The survival data show that NK depletion eliminates the benefit of m-reMAIT cell transfer (Figure 4H, p=0.008 for reMAIT/n vs reMAIT/AsG), while not significantly affecting control mice (p=0.21 for n/n vs n/AsG). This demonstrates NK cell dependence of the anti-tumor effect. The experimental design is appropriate, though anti-Asialo GM1 may have off-target effects beyond NK cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "309431f4-72f8-4f10-97c0-f93565a1a55b",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that 5-OP-RU acts via cis-acting signals through intracellular MR1 transport to the cell surface, while mMR1-tet acts via trans-acting signals by directly binding TCR, with mMR1-tet potentially signaling through NF-\u03baB to induce Th17-associated cytokines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77 are mechanistic interpretations and speculations based on the differential cytokine profiles observed. While the differential effects of 5-OP-RU versus mMR1-tet are well-documented (C35-C36), the proposed mechanisms (C74-C77) are speculative and not directly tested. The citation to McWilliam et al., 2016 (C74) and Liu et al., 2017 (C77) provides some support, but the specific signaling pathways were not experimentally validated in this study. Further experiments (e.g., NF-\u03baB inhibition, MR1 trafficking studies) would be needed to confirm these mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "86c551ec-ecea-4820-a285-714fbe8ffc0d",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that mMR1-tet unintentionally stimulates MAIT cells during experiments, suggesting caution is needed when interpreting data from studies using this reagent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is a logical inference from the observation that mMR1-tet induces protein phosphorylation and cytokine production (C39, C36). This is an important methodological finding with broad implications for the field, as mMR1-tet is widely used for MAIT cell detection. The conclusion is well-supported by the experimental data showing activation by mMR1-tet in the absence of APCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "cc199bcd-3688-4ffe-bf75-4dadd4057467",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that m-reMAIT cells producing Th1, Th2, and Th17 cytokines may represent an immature developmental stage, and that interaction with double-positive thymocytes in vivo may drive differentiation into MAIT1 and MAIT17 subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 are speculative interpretations of the cytokine production data (C4, C34). While the observation that m-reMAIT cells produce multiple cytokine types is well-documented, the developmental interpretation is not directly tested. The authors cite Salou et al., 2019 regarding MAIT1/MAIT17 subsets, but don't provide experimental evidence for the proposed thymic interaction or developmental trajectory. This remains a hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "259eb449-0987-49b0-84dc-70932ffb22b8",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that upregulation of IL-7R\u03b1 in m-reMAIT cells in the intestines may reflect roles in intestinal homeostasis, epithelial barrier integrity, or IL-7-dependent cytokine production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C82 are speculative interpretations of the IL-7R\u03b1 expression data (C43-C44). While the observation of differential IL-7R\u03b1 expression is supported by flow cytometry (Figure 2C), the proposed functional roles are not experimentally tested. The citations to Rouxel et al., 2017, Shalapour et al., 2012, and Tang et al., 2013 provide context, but the specific functions of m-reMAIT cells in intestinal homeostasis were not investigated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "3ce91b4e-1f06-4a67-97b0-398b53cada62",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors infer that na\u00efve m-reMAIT cells undergo maturation upon adoptive transfer based on acquisition of cytokine receptors and effector molecules, and that silencing of V-D-J recombination genes ensures maintenance of m-reMAIT cell identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 are reasonable inferences from the RNA-seq data (C48-C50, Figure 2\u2014figure supplements 2-5). The upregulation of maturation markers and silencing of recombination machinery are clearly documented. However, the authors acknowledge that m-reMAIT cells don't fully reach the transcriptional profile of endogenous MAIT cells, suggesting incomplete maturation. The inference is supported but with caveats about the extent of maturation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "ad0f6c3f-b8af-44d4-842b-174f2129bfa6",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors infer that the MAIT cell niche is saturated based on the failure of multiple m-reMAIT cell transfers to improve survival beyond a single transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is an inference from the observation that three consecutive transfers didn't improve survival (C54, Figure 3C). While niche saturation is a plausible explanation, alternative explanations (e.g., immune rejection, exhaustion, suboptimal timing) were not ruled out. The authors suggest lymphodepletion as a future experiment, acknowledging that the mechanism is unclear. The inference is reasonable but not definitively supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "e644aa76-1ea3-4239-8f67-f1ae53e09753",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors infer that m-reMAIT cells' failure to inhibit subcutaneous tumor growth reflects poor tumor infiltration rather than loss of anti-tumor activity, based on delayed skin mobilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is an inference from the observation that m-reMAIT cells didn't suppress subcutaneous LLC growth (C55, Figure 3D) despite appearing in skin with delay (Figure 3\u2014figure supplement 1). While poor infiltration is a plausible explanation, the authors didn't directly measure tumor infiltration or test whether intratumoral injection would be effective. The inference is reasonable but requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "f7598ee1-1ed4-4b93-826a-a8131d1e59ac",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors infer that NK cells stimulate m-reMAIT cell tumor inhibitory effects and that m-reMAIT cells exhibit cytolytic activity in vivo through both exocytosis and caspase-mediated mechanisms based on in vitro transcriptional and functional data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 are inferences from the in vitro coculture data (C56-C62, C67-C71) and the in vivo NK depletion experiment (C72-C73). The NK depletion data provide strong in vivo evidence for NK cell involvement (Figure 4H), while the in vitro data show upregulation of cytolytic genes and functional killing. The inference that this reflects in vivo mechanisms is reasonable, though the authors acknowledge they couldn't directly demonstrate ex vivo cytolytic activity from transferred cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "cf89d5e1-1019-4482-912c-2c1de333ba18",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors speculate that differences in MR1 dynamics between B16F10 and LLC, and differential effects of 5-OP-RU versus tumor-derived ligands on NK cell function, may explain discrepancies between their results and prior studies showing MAIT cells promote B16F10 tumor growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C92 are speculative hypotheses to reconcile conflicting results with Yan et al., 2020. While the differential MR1 upregulation between B16F10 and LLC is documented (C51-C52, Figure 3A), the proposed mechanisms involving MR1 signaling effects on NK cells are not experimentally tested. These remain plausible hypotheses requiring further investigation to explain the apparent contradiction with prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "4b06966a-aebe-421c-be1d-2d69d396fa32",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors conclude that the adoptive transfer model with m-reMAIT cells provides a novel tool for investigating MAIT cell functions and interactions with immune cells in health and disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 are concluding statements about the utility of the model system. The study successfully demonstrates that m-reMAIT cells can be generated, transferred, and studied in vivo, providing functional data on tumor immunity and NK cell interactions. While m-reMAIT cells don't perfectly recapitulate endogenous MAIT cells (as acknowledged by the authors), the model does provide a valuable tool for studying MAIT cell biology, particularly given the scarcity of MAIT cells in mice. The conclusion is supported by the body of work presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "1c7b733a-b97d-42a8-963d-ff77188c8392",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors provide background on MAIT cells as innate-like T cells that recognize vitamin B2 metabolites on MR1, bridge innate and adaptive immunity, are abundant in humans but rare in mice, and are associated with various diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C11, C21, C23 are background statements supported by citations to established literature (Godfrey et al., 2015, 2019; Toubal et al., 2019). These are well-established facts in the field and appropriately cited. The claims provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    },
+    {
+      "id": "e635b29b-eb03-476b-b4e7-1e0836500572",
+      "content_id": "e0ea8074-0db8-4c95-ae4a-c15e56cf94a9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The authors review prior literature on MAIT cells in cancer, showing conflicting results regarding their role as tumor-promoting versus tumor-inhibiting cells, and discuss limitations of existing mouse models for studying MAIT cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C20, C22, C24-C25 summarize prior literature with appropriate citations. The review highlights contradictory findings about MAIT cells in different cancers (favorable prognosis in some contexts, unfavorable in others) and discusses technical challenges in studying murine MAIT cells. These claims provide important context and rationale for the current study. All statements are appropriately attributed to cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:12:05.884911Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "be5f5c3d-fb0f-4dec-b7df-253fa2387a2c",
+      "result_id": "0d8075e3-43ab-4fac-83fe-7a4cc8a525c3"
+    },
+    {
+      "claim_id": "5712bb92-09b8-4d79-96ea-c1cd8863b535",
+      "result_id": "0d8075e3-43ab-4fac-83fe-7a4cc8a525c3"
+    },
+    {
+      "claim_id": "b01ba138-c73b-4182-8bea-ce89d3750621",
+      "result_id": "0d8075e3-43ab-4fac-83fe-7a4cc8a525c3"
+    },
+    {
+      "claim_id": "07dbc477-3b99-4808-8cec-869096defe2a",
+      "result_id": "0d8075e3-43ab-4fac-83fe-7a4cc8a525c3"
+    },
+    {
+      "claim_id": "11ec7338-a9c9-4aa2-a270-d2ef13ed65e9",
+      "result_id": "7b29e5b5-ffc7-490e-9d16-d5367b5881ab"
+    },
+    {
+      "claim_id": "fdb73da6-a108-4015-a774-b281e565df10",
+      "result_id": "7b29e5b5-ffc7-490e-9d16-d5367b5881ab"
+    },
+    {
+      "claim_id": "92f51822-ba49-4d0b-bc6f-ed691db19dbe",
+      "result_id": "7b29e5b5-ffc7-490e-9d16-d5367b5881ab"
+    },
+    {
+      "claim_id": "972fa485-11fa-4c69-a8e9-001af56210c4",
+      "result_id": "7b29e5b5-ffc7-490e-9d16-d5367b5881ab"
+    },
+    {
+      "claim_id": "311db3e7-64df-4baf-9c61-b5a4f32ffc48",
+      "result_id": "7b29e5b5-ffc7-490e-9d16-d5367b5881ab"
+    },
+    {
+      "claim_id": "aef81698-0913-4de5-869e-9f7419412627",
+      "result_id": "29452497-5336-4d24-ae48-a4a186339558"
+    },
+    {
+      "claim_id": "d7462425-f503-4482-9b11-e505d2117eea",
+      "result_id": "29452497-5336-4d24-ae48-a4a186339558"
+    },
+    {
+      "claim_id": "d29814f2-7e06-463d-a247-e77baf0ea743",
+      "result_id": "29452497-5336-4d24-ae48-a4a186339558"
+    },
+    {
+      "claim_id": "fe4a4793-66ae-4685-abf7-9630857f2fee",
+      "result_id": "29452497-5336-4d24-ae48-a4a186339558"
+    },
+    {
+      "claim_id": "61671ba0-069d-4111-8d33-f1dad37f8694",
+      "result_id": "29452497-5336-4d24-ae48-a4a186339558"
+    },
+    {
+      "claim_id": "cd838adf-755e-4b9e-a147-6639d545fbf4",
+      "result_id": "129f6fa0-97b7-4520-86a6-cfe017cded40"
+    },
+    {
+      "claim_id": "4f59f2fb-94f4-4ed1-8000-b1898d10b4eb",
+      "result_id": "129f6fa0-97b7-4520-86a6-cfe017cded40"
+    },
+    {
+      "claim_id": "6cfeb617-4100-4ca4-8da8-ce2f1dd2a33f",
+      "result_id": "129f6fa0-97b7-4520-86a6-cfe017cded40"
+    },
+    {
+      "claim_id": "0904ef3c-a7e6-415e-b99e-3192b588a915",
+      "result_id": "129f6fa0-97b7-4520-86a6-cfe017cded40"
+    },
+    {
+      "claim_id": "6d4f4179-0b23-4b95-a9af-1779acc1a4c2",
+      "result_id": "129f6fa0-97b7-4520-86a6-cfe017cded40"
+    },
+    {
+      "claim_id": "9c4e69ee-c443-4304-ad25-71665bd7f2aa",
+      "result_id": "129f6fa0-97b7-4520-86a6-cfe017cded40"
+    },
+    {
+      "claim_id": "db3d60d7-a25b-4a43-8508-af097db1e5a1",
+      "result_id": "129f6fa0-97b7-4520-86a6-cfe017cded40"
+    },
+    {
+      "claim_id": "faf163f7-ccb2-4165-8d5f-3e972893a9ef",
+      "result_id": "129f6fa0-97b7-4520-86a6-cfe017cded40"
+    },
+    {
+      "claim_id": "3e328612-60ae-4e79-8896-cdd23564e5b6",
+      "result_id": "9f1969be-f02d-44b9-b50f-f43c2559a526"
+    },
+    {
+      "claim_id": "4bca75bf-fe51-4cf4-bdf2-407aa8234d6a",
+      "result_id": "9f1969be-f02d-44b9-b50f-f43c2559a526"
+    },
+    {
+      "claim_id": "84c13a0e-a6d2-484f-8ab8-306ba7b3b87d",
+      "result_id": "9f1969be-f02d-44b9-b50f-f43c2559a526"
+    },
+    {
+      "claim_id": "d5817dd8-7fa6-4f52-a017-384898eb4349",
+      "result_id": "034c7e8d-bb1f-4703-b330-0ce4f3b9c10c"
+    },
+    {
+      "claim_id": "5c9591d5-f91f-45fd-848e-692a13734d05",
+      "result_id": "034c7e8d-bb1f-4703-b330-0ce4f3b9c10c"
+    },
+    {
+      "claim_id": "35e2d8c4-9939-46c0-b321-942e41dffea0",
+      "result_id": "034c7e8d-bb1f-4703-b330-0ce4f3b9c10c"
+    },
+    {
+      "claim_id": "e766fff6-528a-4843-a717-120752aa2091",
+      "result_id": "034c7e8d-bb1f-4703-b330-0ce4f3b9c10c"
+    },
+    {
+      "claim_id": "170ba34a-724a-4b0a-9ccc-c12e5c93b8f1",
+      "result_id": "034c7e8d-bb1f-4703-b330-0ce4f3b9c10c"
+    },
+    {
+      "claim_id": "7eb59600-ed2d-4d5d-978a-119361ad3729",
+      "result_id": "10fac2d8-51eb-4c13-9fbc-30a626b093d5"
+    },
+    {
+      "claim_id": "5153a79d-2636-4899-8c70-1de4c33faf5c",
+      "result_id": "10fac2d8-51eb-4c13-9fbc-30a626b093d5"
+    },
+    {
+      "claim_id": "09c9eb86-8913-4d0c-8497-fb53965f937e",
+      "result_id": "10fac2d8-51eb-4c13-9fbc-30a626b093d5"
+    },
+    {
+      "claim_id": "10beb242-638c-416c-8e9c-c963ca53177a",
+      "result_id": "10fac2d8-51eb-4c13-9fbc-30a626b093d5"
+    },
+    {
+      "claim_id": "c9e4c70e-d4cc-430b-8482-7fb7b217e1ce",
+      "result_id": "10fac2d8-51eb-4c13-9fbc-30a626b093d5"
+    },
+    {
+      "claim_id": "ef9b03d0-d2ca-4d5a-9ad1-867741e36703",
+      "result_id": "10fac2d8-51eb-4c13-9fbc-30a626b093d5"
+    },
+    {
+      "claim_id": "7cf9f042-8b21-49a3-a4dc-c49fb72d7720",
+      "result_id": "10fac2d8-51eb-4c13-9fbc-30a626b093d5"
+    },
+    {
+      "claim_id": "144392e7-c916-4bd7-85a8-677a066aa1a9",
+      "result_id": "b3d3a143-4a70-4594-9d73-fb48b12d63a0"
+    },
+    {
+      "claim_id": "46986e1c-b4f1-4c08-829b-f76e93a02e66",
+      "result_id": "b3d3a143-4a70-4594-9d73-fb48b12d63a0"
+    },
+    {
+      "claim_id": "516a94bf-a759-40ee-adc8-c813817d5d14",
+      "result_id": "b3d3a143-4a70-4594-9d73-fb48b12d63a0"
+    },
+    {
+      "claim_id": "5ddb9dda-3c57-4838-b21e-b2cbf2079b9e",
+      "result_id": "b3d3a143-4a70-4594-9d73-fb48b12d63a0"
+    },
+    {
+      "claim_id": "d7660443-e081-4137-a61d-369ecce08773",
+      "result_id": "b3d3a143-4a70-4594-9d73-fb48b12d63a0"
+    },
+    {
+      "claim_id": "25ac740a-d84f-48a9-b8b8-e392d675caa0",
+      "result_id": "b3d3a143-4a70-4594-9d73-fb48b12d63a0"
+    },
+    {
+      "claim_id": "9669f77a-32a7-43b1-8b27-695cfbbdcb9b",
+      "result_id": "b3d3a143-4a70-4594-9d73-fb48b12d63a0"
+    },
+    {
+      "claim_id": "52f2a478-1d5b-49bd-a1f1-78b55de30c0e",
+      "result_id": "b3d3a143-4a70-4594-9d73-fb48b12d63a0"
+    },
+    {
+      "claim_id": "c702fe59-96bc-4e8f-a166-8798a07e8e2a",
+      "result_id": "b3d3a143-4a70-4594-9d73-fb48b12d63a0"
+    },
+    {
+      "claim_id": "f6b50535-314e-4a33-ad9f-9403f28184e1",
+      "result_id": "6b86fbd5-b246-4f4d-aa5f-f5b7b86abbdd"
+    },
+    {
+      "claim_id": "2cffd762-26e7-4a8f-94e1-d3c2078fd9cd",
+      "result_id": "6b86fbd5-b246-4f4d-aa5f-f5b7b86abbdd"
+    },
+    {
+      "claim_id": "58414d17-b08b-4893-81e0-f8a2f74a6366",
+      "result_id": "309431f4-72f8-4f10-97c0-f93565a1a55b"
+    },
+    {
+      "claim_id": "6431d6e6-a32e-4274-a655-7dfc53549ffa",
+      "result_id": "309431f4-72f8-4f10-97c0-f93565a1a55b"
+    },
+    {
+      "claim_id": "ec7a9630-4421-485d-900a-04fc2076cdf6",
+      "result_id": "309431f4-72f8-4f10-97c0-f93565a1a55b"
+    },
+    {
+      "claim_id": "95fbcd3b-0dbe-462a-80fe-03a3df1f2e4e",
+      "result_id": "309431f4-72f8-4f10-97c0-f93565a1a55b"
+    },
+    {
+      "claim_id": "dee4fa00-c4d9-44d0-83e5-ed6bbca2afa1",
+      "result_id": "86c551ec-ecea-4820-a285-714fbe8ffc0d"
+    },
+    {
+      "claim_id": "bb6766e6-f7ec-4c28-a5f0-8fff4a2abec8",
+      "result_id": "cc199bcd-3688-4ffe-bf75-4dadd4057467"
+    },
+    {
+      "claim_id": "f7d0219b-cd62-45fa-b478-fb1b3c16ab38",
+      "result_id": "cc199bcd-3688-4ffe-bf75-4dadd4057467"
+    },
+    {
+      "claim_id": "97da07b5-0822-4c98-9706-413dd3565bf9",
+      "result_id": "259eb449-0987-49b0-84dc-70932ffb22b8"
+    },
+    {
+      "claim_id": "6c8f01a9-eddb-4bd7-b78a-6cc60052dbc3",
+      "result_id": "259eb449-0987-49b0-84dc-70932ffb22b8"
+    },
+    {
+      "claim_id": "87206dfa-1e5d-4f11-bbd0-99efe020fda8",
+      "result_id": "3ce91b4e-1f06-4a67-97b0-398b53cada62"
+    },
+    {
+      "claim_id": "08cfa71a-7cf3-4e33-a68d-1f361b13b5d1",
+      "result_id": "3ce91b4e-1f06-4a67-97b0-398b53cada62"
+    },
+    {
+      "claim_id": "2996b2fd-116c-464a-8591-1ea78eae9667",
+      "result_id": "ad0f6c3f-b8af-44d4-842b-174f2129bfa6"
+    },
+    {
+      "claim_id": "3831c472-a0b9-4ff7-bca5-d654741e78d2",
+      "result_id": "e644aa76-1ea3-4239-8f67-f1ae53e09753"
+    },
+    {
+      "claim_id": "c07c5bc1-8a5b-42a7-9a94-c426e1a36dd9",
+      "result_id": "f7598ee1-1ed4-4b93-826a-a8131d1e59ac"
+    },
+    {
+      "claim_id": "a1482cc4-e100-4ee7-9f28-cd7f88181caf",
+      "result_id": "f7598ee1-1ed4-4b93-826a-a8131d1e59ac"
+    },
+    {
+      "claim_id": "df82b1ef-b46a-48c6-9a2c-eacc4a34953b",
+      "result_id": "f7598ee1-1ed4-4b93-826a-a8131d1e59ac"
+    },
+    {
+      "claim_id": "25b8da48-a0c4-4ab5-8222-5ba9f47e8f9b",
+      "result_id": "cf89d5e1-1019-4482-912c-2c1de333ba18"
+    },
+    {
+      "claim_id": "08fa142b-5bff-47ba-b738-4b216c8b1288",
+      "result_id": "cf89d5e1-1019-4482-912c-2c1de333ba18"
+    },
+    {
+      "claim_id": "32a2b424-44db-4774-8e73-b679d2f3c27a",
+      "result_id": "cf89d5e1-1019-4482-912c-2c1de333ba18"
+    },
+    {
+      "claim_id": "eb3ef9ea-618d-4dc4-a623-482a3da29732",
+      "result_id": "4b06966a-aebe-421c-be1d-2d69d396fa32"
+    },
+    {
+      "claim_id": "9748035f-4a95-4ceb-a30e-185073941edf",
+      "result_id": "4b06966a-aebe-421c-be1d-2d69d396fa32"
+    },
+    {
+      "claim_id": "0ea398cd-26ad-4df3-a53e-f87b100a3c6a",
+      "result_id": "1c7b733a-b97d-42a8-963d-ff77188c8392"
+    },
+    {
+      "claim_id": "a9002927-2811-4df1-99fa-aabfa700da30",
+      "result_id": "1c7b733a-b97d-42a8-963d-ff77188c8392"
+    },
+    {
+      "claim_id": "e5d79554-e532-4d27-be3f-e79ccf9dbdc6",
+      "result_id": "1c7b733a-b97d-42a8-963d-ff77188c8392"
+    },
+    {
+      "claim_id": "ba3d0a2d-1199-43ff-aa68-6c27e7cbab45",
+      "result_id": "1c7b733a-b97d-42a8-963d-ff77188c8392"
+    },
+    {
+      "claim_id": "8d2f99e0-1e85-4492-88ca-db2ccec8eca7",
+      "result_id": "1c7b733a-b97d-42a8-963d-ff77188c8392"
+    },
+    {
+      "claim_id": "02ed9f31-a7ca-4d7c-a2b7-4885bdb52c26",
+      "result_id": "1c7b733a-b97d-42a8-963d-ff77188c8392"
+    },
+    {
+      "claim_id": "505d8511-8fcf-4d7d-a8e9-498185f3687f",
+      "result_id": "1c7b733a-b97d-42a8-963d-ff77188c8392"
+    },
+    {
+      "claim_id": "21161463-2800-4063-8d21-cb2a637474b4",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "4ac76eae-d530-4e44-8764-f9a8eef88181",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "730fb47d-bd07-4213-a596-7291521168f5",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "2a733275-e3db-4835-a065-925606172e7b",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "d58f06e9-68c8-4505-909c-7d4f308ccdd3",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "7ab95fd7-5939-4fb7-a623-b00fb6af648d",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "d7c0e778-3c7f-4e62-88d9-fa45a96bfa0a",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "82400862-94b0-4f23-acdf-82b22f682734",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "949694d2-741d-4a53-b864-98f87956a92c",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "9d91a40f-b28f-4a51-8de4-607509361390",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "204c3eb8-d7b6-4a2a-b054-b93420f852cb",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    },
+    {
+      "claim_id": "e1a451b1-52ca-43fa-92c8-449e9f38b571",
+      "result_id": "e635b29b-eb03-476b-b4e7-1e0836500572"
+    }
+  ],
+  "comparisons": []
+}

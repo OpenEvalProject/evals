@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The study collected behavioral data from 561 individual male flies across six Drosophila species (D. mauritiana, D. melanogaster, D. santomea, D. sechellia, D. simulans, and D. yakuba), with multiple strains per species. Each fly was recorded for one hour at 100 Hz sampling rate under controlled conditions (age 7-12 days, within 4 hours of lights on).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly documented with explicit sample sizes per strain and species (C122-C127), standardized recording conditions (C3, C121), and appropriate phylogenetic coverage (C1). The total sample size of 561 flies (C2) provides reasonable statistical power for the multi-species comparison, though the manuscript acknowledges limitations regarding strain sampling (C43, C97).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46"
+    ],
+    "result": "An unsupervised behavioral mapping method identified 134 distinct stereotyped behaviors from video recordings, producing a two-dimensional behavioral map where different movement types (locomotion, idle/slow movements, anterior/posterior movements) are spatially segregated into distinct regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is well-established (citing Berman et al., 2014; Cande et al., 2018) and produces results consistent with prior work (C45). The watershed transform approach (C4) is appropriately cited, and the spatial organization of the behavioral map (C46) is visually confirmed in Figure 1A. The 134 behaviors represent a comprehensive quantification of the fly repertoire in this experimental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C27",
+      "C47",
+      "C10"
+    ],
+    "result": "Species-specific behavioral differences were observed in common behaviors like walking, running, and grooming. For example, D. mauritiana performs more fast locomotion while D. yakuba exhibits a species-unique slow locomotion pattern. These differences contain sufficient information to classify individuals to species with 89% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification accuracy of 89% (referenced in text) with no systematic misclassification bias (C9) demonstrates that behavioral vectors contain considerable species-specific information (C10). The specific examples (C5, C6) are supported by Figure 1B. The t-SNE visualization (C47, Figure 2A) shows species clustering, though with overlap, consistent with the classification performance. The claim that these are 'common' behaviors is supported by the experimental design excluding social contexts (C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C98",
+      "C99"
+    ],
+    "result": "The study modeled behavioral evolution using a Generalized Linear Mixed Model (GLMM) assuming behaviors are quantitative traits with additive random effects that evolved via a diffusion process with Gaussian noise along the known phylogenetic tree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling assumptions are clearly stated (C11, C12) and appropriately characterized as reasonable initial hypotheses (C99) citing Felsenstein, 1985. The authors acknowledge this is an assumption (C98) and discuss alternative models like Ornstein-Uhlenbeck processes (C101). The MCMC convergence is verified using Gelman-Rubin diagnostics with 20 chains (C130, Figure 3\u2014figure supplement 1), providing confidence in parameter estimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C50",
+      "C51"
+    ],
+    "result": "The full multi-trait model that allows behavioral co-evolution significantly outperforms a model where each behavioral trait evolves independently, as measured by Deviance Information Criterion (DIC: 114\u00b12 \u00d7 10\u00b3 vs 242\u00b12 \u00d7 10\u00b3). The full model successfully predicts inter- and intra-species covariances between dissimilar behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model comparison is rigorous, using appropriate information-theoretic criteria (DIC) for MCMC-fit models. The substantial difference in DIC values (>100,000 units) despite the independent model having ~17,500 fewer parameters strongly supports the co-evolution model (C13, C51). The predictive validation (C50, Figure 3\u2014figure supplement 3) demonstrates the model captures covariance structure not guaranteed by the independent model, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C129"
+    ],
+    "result": "The GLMM successfully reconstructed ancestral behavioral repertoires for intermediate ancestors along the phylogeny, with branch lengths estimated from published phylogenetic data (Seetharam and Stuart, 2013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model's ability to infer mean endpoint behavioral repertoires (C49, Figure 3\u2014figure supplement 2) provides validation that it is consistent with input data. The use of established phylogenetic branch lengths (C129) is appropriate. However, the manuscript correctly notes that ancestral reconstructions cannot be directly validated (stated in text), and uncertainty in these estimates could be better quantified beyond the variance mentioned in C96.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C55",
+      "C56"
+    ],
+    "result": "The intra-species covariance matrix exhibits a non-random modular structure where co-varying behavioral clusters are spatially contiguous in the behavioral map and hierarchically organized. Groups of similar behaviors tend to vary together in a stereotyped manner between individuals of the same species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modular structure is demonstrated through multiple independent analyses: information-based clustering (C16), spatial contiguity analysis (C17), and hierarchical organization (C18, Figure 4B). The statistical significance is established by comparing average within-cluster distances to random assignments (C55, Figure 4\u2014figure supplement 2). The robustness across different clustering methods (C62, Figure 4\u2014figure supplement 1) strengthens confidence in this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C23",
+      "C24",
+      "C58",
+      "C59",
+      "C62",
+      "C79",
+      "C80"
+    ],
+    "result": "The structure of intra-species behavioral covariance is linked to non-stationary behavioral dynamics and hidden behavioral states. Most individual variability reflects flies experiencing different long-timescale behavioral states (e.g., circadian state, hunger) rather than fixed genetic or environmental differences between individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The connection between intra-species covariance and non-stationarity is supported by multiple lines of evidence: (1) similarity to previously reported temporal structure in single-species studies (C79, citing Berman et al., 2016), (2) overlap between covariance-based clustering and temporally-predictive clustering via DIB (C23, C62), and (3) hierarchical organization reminiscent of ethological models (C58, C59). The interpretation regarding hidden states (C24, C80) is logical given the experimental design controlled many but not all variables. However, this remains somewhat inferential as hidden states were not directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "A normalization method was developed to control for non-stationary behavioral states by equalizing time spent in coarse-grained behavioral regions. This method improved behavioral phenotyping accuracy and substantially altered estimates of some species-specific behaviors, demonstrating the importance of accounting for hidden states in evolutionary studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The normalization method is mathematically defined (Equation in text) and its effects are demonstrated empirically (C65, C83, C84, Figure 5B-C). The rationale is well-supported by the preceding analysis of hidden states (C63, C64). The recommendation to account for non-stationary effects (C66) and measure multiple behaviors (C67) follows logically. However, the claim of 'improved accuracy' (C83) lacks a ground truth comparison\u2014it would be more accurate to say the method 'altered' estimates in ways consistent with controlling for state variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The phylogenetic covariance matrix reveals that phylogenetically co-varying behaviors are NOT spatially contiguous in the behavioral map, unlike intra-species covariance. The model predicts that many non-similar behaviors (e.g., side leg movements and certain locomotion gaits) are evolving in a correlated manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of spatial contiguity in phylogenetic covariance (C25, Figure 6A) contrasts sharply with the spatial contiguity observed for intra-species covariance (C17), suggesting fundamentally different organizational principles. The specific example of the two-cluster solution (C68) is clearly documented. This finding is important because it suggests co-evolution is not simply driven by biomechanical similarity but may reflect shared genetic, neural, or selective mechanisms (C70). The interpretation is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C87"
+    ],
+    "result": "The phylogenetic covariance matrix is low-rank, with six eigenmodes explaining almost all variance. Projecting behavioral vectors onto these eigenvectors produces 'meta-traits'\u2014linear combinations of phylogenetically linked behaviors\u2014that show significant differentiation between species and may be suitable targets for genetic and neurobiological studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The low-rank structure (C26, Figure 6B) is clearly demonstrated and the mathematical construction of meta-traits (C71) is sound. The examples showing species differentiation (C73, Figure 6D-F) provide proof-of-concept, though the authors appropriately note these were selected for showing differentiation (C73, C74). The suggestion that these are suitable for further study (C72, C87) is reasonable but speculative. The identification of multiple behavioral suites (C87) represents a concrete contribution for future experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Multiple mechanistic interpretations are proposed for phylogenetically correlated behaviors: shared neural circuitry with evolved outputs, pleiotropic genetic effects, or selection on behavioral suites. The courtship song example illustrates how mechanistically unrelated traits can co-evolve through selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The manuscript appropriately presents multiple alternative interpretations (C88, C89, C90, C91) without claiming to distinguish between them, which is honest given the observational nature of the study. The courtship song example (C92, C93) effectively illustrates co-evolution without mechanistic linkage. These interpretations are well-supported by citations and represent testable hypotheses for future work. This discussion appropriately frames the results as hypothesis-generating rather than mechanistically conclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "This work represents the first attempt to analyze full behavioral repertoires to gain insight into evolution, providing a new quantitative framework for characterizing behavioral evolution. The approach makes falsifiable predictions about mechanistic linkages between behaviors that can be tested experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim (C94) appears justified\u2014while ancestral state reconstruction and behavioral analysis exist separately, the integration of unsupervised behavioral mapping with phylogenetic comparative methods at this scale is novel. The framework's value (C116, C117) is supported by the concrete results obtained. The emphasis on falsifiable predictions (C119, C120) is a genuine strength, as the identified meta-traits and behavioral clusters provide specific targets for genetic and neural manipulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The introduction establishes that behavioral evolution is rapid and variable but genetically understudied compared to morphological evolution. Standard approaches focusing on single focal behaviors have identified genomic regions but progress in identifying individual genes has been slow. Recent advances in unsupervised behavioral quantification enable new approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish appropriate context and are well-supported by citations (C28-C40). The characterization of the field's challenges (C30, C32, C39) and the contrast with morphological evolution (C31) accurately reflects the literature. The discussion of potential mechanisms (C33-C35) and limitations of focal behavior approaches (C36-C39) provides clear motivation for the multi-behavior approach. The technological advancement claim (C40) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The six species were selected because their phylogenetic relationships are well-understood, genetic tools are available, and multiple strains per species were sampled to capture species-specific rather than strain-specific differences. Previous studies identified differences in specific behaviors like courtship between these species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The species selection criteria (C41, C42) are appropriate and well-justified with citations. The multi-strain sampling strategy (C43) is sound for distinguishing species-level from strain-level variation, though the manuscript acknowledges uncertainty about optimal sampling balance (C97). The reference to prior work (C44) appropriately contextualizes the study while distinguishing its broader scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Although the assay excluded social behaviors (courtship, aggression) and foraging, the observed behaviors (walking, running, grooming) are critical for survival and may have evolved under natural selection. The underlying mechanisms and neural circuitry controlling these behaviors must have evolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledgment of experimental limitations (C75) is appropriate and honest. The claim that observed behaviors are survival-critical (C76) is reasonable though not rigorously demonstrated. The speculation about natural selection (C77) is appropriately hedged. The conclusion about evolved mechanisms (C78) is logically sound\u2014if behaviors differ between species, the underlying control systems must differ, regardless of whether differences arose through selection or drift.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C85",
+      "C86"
+    ],
+    "result": "Many short-timescale behaviors (grooming, courtship, aggression movements) are performed mainly in the context of longer-lasting behavioral states. For focused studies, it may not be necessary to measure the full behavioral suite to normalize for state, as targeted studies often implicitly normalize by behavioral state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim about context-dependent behaviors (C81) is well-supported by multiple citations covering grooming, courtship, and aggression. The suggestion about focused studies (C85) is reasonable speculation based on the finding that states can be estimated from behavior subsets. The observation about implicit normalization in targeted studies (C86) is insightful and helps explain why some approaches succeed despite not explicitly measuring state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C101",
+      "C108",
+      "C118"
+    ],
+    "result": "The framework could in principle be applied to other multi-species behavioral datasets. Future improvements could include: adding more species to constrain evolutionary dynamics, optimizing sampling strategies, testing the diffusion assumption with deeper sampling, and incorporating alternative evolutionary models like Ornstein-Uhlenbeck processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These represent reasonable and well-considered suggestions for future work. The generalizability claim (C95) is appropriately hedged ('in principle'). The specific suggestions (C96, C97, C100, C101, C108, C118) are technically sound and cite relevant methods. The authors appropriately acknowledge current limitations while outlining paths forward. These claims are speculative but well-grounded in the current results and established methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Potential environmental confounds (temperature, humidity responses) are mitigated by two observations: no significant differences in overall activity levels between species, and agreement between the intra-species covariance matrix and previous single-species findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge a potential limitation (C103) and provide two lines of evidence against it (C104, C105). The activity level argument (C104) is reasonable\u2014environment-induced stress would likely affect overall activity. The agreement with prior single-species work (C105, citing Berman et al., 2016) suggests the covariance structure reflects genuine biological patterns rather than experimental artifacts. However, these arguments are somewhat indirect and don't completely rule out subtle environmental effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The current analysis ignores temporal structure and behavioral sequences, which may provide important information especially for courtship and aggression. Incorporating temporal structure would require substantially more parameters (already >18,000) and larger datasets, with additional complexity from the Perron-Frobenius coupling between transition probabilities and behavioral frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an honest and technically sophisticated discussion of a significant limitation (C106). The suggestion that temporal order matters (C107) is reasonable and appropriately cited. The technical challenges are accurately described: parameter explosion (C109), data requirements (C110), and the mathematical coupling issue (C111). The Perron-Frobenius point is particularly insightful\u2014it highlights a non-obvious challenge in distinguishing temporal structure changes from frequency changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Capturing full behavioral repertoires for many animals presents technological challenges, motivating the simplified environment used here. More complete understanding will require sophisticated methods for naturalistic settings. While deep learning has improved tracking, considerable hurdles remain for translating tracking data into analyzable behavioral representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledgment of technological limitations (C112) appropriately contextualizes the experimental design choices. The call for naturalistic settings (C113) is reasonable though challenging. The assessment of deep learning methods (C114, C115) is balanced\u2014acknowledging progress while recognizing remaining challenges. This is an honest appraisal of the field's current capabilities and limitations.",
+    "result_type": "MINOR"
+  }
+]

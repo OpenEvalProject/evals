@@ -1,0 +1,1762 @@
+{
+  "submission": {
+    "id": "40c39eb0-dc40-4ced-bd35-579b9e930a82",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:17:09.690203Z",
+    "updated_at": "2025-12-03T01:17:09.690203Z"
+  },
+  "content": [
+    {
+      "id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "submission_id": "40c39eb0-dc40-4ced-bd35-579b9e930a82",
+      "content_type": "manuscript",
+      "content_text": "# Adaptive evolution of nontransitive fitness in yeast\n\n## Authors\n\n- Sean W Buskirk<sup>1</sup> ([ORCID: 0000-0003-1213-8130](https://orcid.org/0000-0003-1213-8130))\n- Alecia B Rokes<sup>1</sup> ([ORCID: 0000-0001-9496-0296](https://orcid.org/0000-0001-9496-0296))\n- Gregory I Lang<sup>1</sup> ([ORCID: 0000-0002-7931-0428](https://orcid.org/0000-0002-7931-0428)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, Lehigh University Bethlehem United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA common misconception is that evolution is a linear \u2018march of progress\u2019, where each organism along a line of descent is more fit than all those that came before it. Rejecting this misconception implies that evolution is nontransitive: a series of adaptive events will, on occasion, produce organisms that are less fit compared to a distant ancestor. Here we identify a nontransitive evolutionary sequence in a 1000-generation yeast evolution experiment. We show that nontransitivity arises due to adaptation in the yeast nuclear genome combined with the stepwise deterioration of an intracellular virus, which provides an advantage over viral competitors within host cells. Extending our analysis, we find that nearly half of our ~140 populations experience multilevel selection, fixing adaptive mutations in both the nuclear and viral genomes. Our results provide a mechanistic case-study for the adaptive evolution of nontransitivity due to multilevel selection in a 1000-generation host/virus evolution experiment.\n\n## Introduction\n\nAdaptive evolution is a process in which selective events result in the replacement of less-fit genotypes with a more fit ones. Intuitively, a series of selective events, each improving fitness relative to the immediate predecessor, should translate into a cumulative increase in fitness relative to the ancestral state. However, whether or not this is borne out over long evolutionary time scales has long been the subject of debate (Ruse, 1993; Dawkins, 1997; Gould, 1997; Shanahan, 2000). The failure to identify broad patterns of progress over evolutionary time scales\u2014despite clear evidence of selection acting over successive short time intervals\u2014is what Gould, 1985 referred to as \u2018the paradox of the first tier'. This paradox implies that evolution exhibits nontransitivity, a property that is best illustrated by the Penrose staircase and the Rock\u2013Paper\u2013Scissors game. The Penrose staircase is a visual illusion of ascending sets of stairs that form a continuous loop such that\u2014although each step appears higher than the last\u2014no upward movement is realized. In the Rock\u2013Paper\u2013Scissors game each two-way interaction has a clear winner (paper beats rock, scissors beats paper, and rock beats scissors), yet due to the nontransitivity of these two-way interactions, no clear hierarchy exists among the three.\n\nIn ecology, nontransitive interactions among extant species are well\u00a0documented as contributors to biological diversity and community structure (Kerr et al., 2002; K\u00e1rolyi et al., 2005; Laird and Schamp, 2006; Reichenbach et al., 2007; Menezes et al., 2019) and arise by way of resource (Sinervo and Lively, 1996; Precoda et al., 2017) or interference competition (Kirkup and Riley, 2004). First put forward in the 1970s (Gilpin, 1975; Jackson and Buss, 1975; May and Leonard, 1975; Petraitis, 1979), the importance of nontransitivity in ecology has garnered extensive theoretical and experimental consideration over the last half century (e.g. Sinervo and Lively, 1996; Kerr et al., 2002; Allesina and Levine, 2011; Rojas-Echenique and Allesina, 2011; Soliveres et al., 2015; Liao et al., 2019).\n\nWhat is unknown is whether nontransitive interactions arise for direct descendants along a line of genealogical succession. This is the crux of Gould\u2019s paradox and has broad implications for our understanding of evolutionary processes. For instance, if an evolved genotype is found to be less fit in comparison to a distant ancestor, the adaptive landscape upon which the population is evolving may not contain true fitness maxima (Barrick and Lenski, 2013; Van den Bergh et al., 2018) and, more broadly, directionality and progress may be illusory (Gould, 1996). Testing the hypothesis that nontransitive interactions arise along lines of genealogical descent, however, is not possible in natural populations because it requires our ability to directly compete an organism against its immediate predecessor as well as against its extinct genealogical ancestors. Fortunately, laboratory experimental evolution, in which populations are preserved as a \u2018frozen fossil record\u2019, affords us with the unique opportunity to test for nontransitivity along a genealogical lineage by directly competing a given genotype against the extant as well as the extinct.\n\nAn early study of laboratory evolution of yeast in glucose-limited chemostats appeared to demonstrate that nontransitive interactions arise along a line of genealogical descent (Paquin and Adams, 1983). However, the specific events that led to nontransitivity in this case are unknown, and it is likely the case that the authors were measuring interactions between contemporaneous lineages in a population, rather than individuals along a direct line of genealogical descent, as they report (see Discussion). Indeed, adaptive diversification is common in experimental evolution due to spatial structuring (Rainey and Travisano, 1998; Frenkel et al., 2015) and metabolic diversification (Paquin and Adams, 1983; Helling et al., 1987; Turner et al., 1996; Spencer et al., 2008; Kinnersley et al., 2014), and is typically maintained by negative frequency-dependent selection, in which rare genotypes are favored. Collectively this work reinforces theory and observational evidence on the power of ecological nontransitivity as a driver and maintainer of diversity but is silent as to whether genealogical succession can also be nontransitive.\n\nHere we determine the sequence of events leading to the evolution of nontransitivity in a single yeast population during a 1000-generation evolution experiment. We show that nontransitivity arises through multilevel selection involving both the yeast nuclear genome and the population of a vertically\u00a0transmitted virus. Many fungi, including the yeast Saccharomyces cerevisiae, are host to non-infectious, double-stranded RNA \u2018killer\u2019 viruses (Wickner, 1976; Schmitt and Breinig, 2002; Schmitt and Breinig, 2006; Rowley, 2017). Killer viruses produce a toxin that kills non-killer containing yeasts. The K1 toxin gene contains four subunits (\u03b4, \u03b1, \u03b3,\u00a0and \u03b2), which are post-translationally processed and glycosylated to produce an active two-subunit (\u03b1, \u03b2) secreted toxin (Bostian et al., 1983). Immunity to the toxin is conferred by the pre-processed version of the toxin, thus requiring cells to maintain the virus for protection. We show that nontransitivity arises due to multilevel selection: adaptation in the yeast nuclear genome and the simultaneous stepwise deterioration of the killer virus. By expanding our study of host-virus genome evolution to over 100 additional yeast populations, we find that multilevel selection, and thus the potential for the evolution of nontransitive interactions, is a common occurrence given the conditions of our evolution experiment.\n\n## Results\n\n### Evolution of nontransivity along a line of genealogical descent\n\nPreviously we evolved\u00a0~600 haploid populations of yeast asexually for 1000 generations in rich glucose medium (Lang et al., 2011). We characterized extensively the nuclear basis of adaptation for a subset of these populations through whole-genome whole-population time-course sequencing (Lang et al., 2013) and/or fitness quantification of individual mutations (Buskirk et al., 2017).\n\nFor one population (BYS1-D08) we were surprised to observe that a 1000-generation clone lost in direct competition with a fluorescently\u00a0labeled version of the ancestor. To test the hypothesis that a nontransitive interaction arose during the adaptive evolution of this population, we isolated individual clones from three time\u00a0points: Generation 0 (Early), Generation 335 (Intermediate), and Generation 1000 (Late) (Figure 1A). These time\u00a0points were chosen, in part, to coincide with the completion of selective sweeps in the population (Lang et al., 2013). The Intermediate clone was isolated following a selective sweep that fixes three nuclear mutations including a beneficial mutation in YUR1. The Late clone was isolated following three more selective sweeps that fix an additional 10 nuclear mutations including a beneficial mutation in STE4.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig1-v2.jpg)\n\n**Figure 1.:** (A) Sequence evolution (from Lang et al., 2013) shows that population BYS1-D08 underwent four clonal replacements over 1000 generations. Mutations in the population that went extinct are not shown. The four selective sweeps are color-coded: red, mutations in yur1, rxt2, and an intergenic mutation; green, a single intergenic mutation; orange, mutations in mpt5, gcn2, iml2, ste4, mud1, and an intergenic mutation; blue, three intergenic mutations. The Intermediate clone isolated at Gen. 335 does not produce, but is resistant to, the killer toxin (K-I+). The Late clone, isolated at Generation 1000 does not produce, and is sensitive to, the killer toxin (K-I-). (B) Competition experiments demonstrate nontransitivity and positive frequency-dependent selection. Left: Relative fitness of Early (Gen. 0), Intermediate (Gen. 335), and Late (Gen. 1000) clones. Right: Relative fitness of the Early clone without ancestral virus or with the viral variant from the Intermediate clone. Fitness and starting frequency correspond to the later clone relative to the earlier clone during pairwise competitions.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Fitness of Late clone relative to Early clone, as a function of frequency. Stable fixed points indicated by closed black circles and unstable fixed point indicated by open black circle.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic of killer phenotypic assays. To assay killing ability, a tester (sensitive) strain is spread as a lawn, followed by a query strain spotted as a concentrated culture. After incubation, the production of a zone of clearing indicates that the query strain possesses killing ability. To assay sensitivity, a query strain is plated as a dilute spot, followed by a tester (killer) strain spotted as a concentrated culture. After incubation, the production of a zone of clearing indicates that the query strain possesses killing ability. (B) Halo assays demonstrate that the ancestor of the evolution experiment exhibits killing ability and immunity while the cured ancestor lacks killing ability and is sensitive to the toxin.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The killer phenotypes of Early, Intermediate, and Late clones from population BYS1-D08 were determined by halo assay.\n\nWe performed pairwise competition experiments between the Early, Intermediate, and Late clones at multiple starting frequencies. We find that the Intermediate clone is 3.8% more fit relative to the Early clone and that the Late clone is 1.2% more fit relative to the Intermediate clone (Figure 1B, left panel). The yur1 mutation in the Intermediate clone and the ste4 mutation in the late clone were previously estimated to provide a 4.6 \u00b1 0.5% and 2.6 \u00b1 0.4% fitness advantage, respectively (Buskirk et al., 2017), consistent with the fitness differences between the Intermediate and Early clones and the Late and Intermediate clones. The expectation, assuming additivity, is that the Late clone will be more fit than the Early clone, by roughly 5.0%. Surprisingly, we find that the Late clone is less fit than expected, to the extent that it often loses in pairwise competition with the Early clone (Figure 1B, left panel). Furthermore, the interaction between the Early and Late clones exhibits positive frequency-dependent selection, thus creating a bi-stable system where the fitness disadvantage of the Late clone can be overcome if it starts above a certain frequency relative to the Early clone (Figure 1\u2014figure supplement 1).\n\n### Evolution of nontransitivity is associated with changes to the killer virus\n\nPositive frequency-dependent selection is rare in experimental evolution and can only arise through a few known mechanisms. It has been observed previously in yeast that harbor killer viruses (Greig and Travisano, 2008), which are dsRNA viruses that encode toxin/immunity systems. Using a well-described halo assay (Woods and Bevan, 1968), we find that the ancestral strain of our evolved populations exhibits the phenotype expected of yeast that harbor the killer virus: it inhibits growth of a nearby sensitive strain and resists killing by a known killer strain (Figure 1\u2014figure supplement 2).\n\nWe asked if the observed nontransitivity in the BYS1-D08 lineage could be explained by evolution of the killer phenotype. Phenotyping of the isolated clones revealed that the Intermediate clone no longer exhibits killing ability (K-I+) and that the Late clone possesses neither killing ability nor immunity (K-I-, Figure 1A, Figure 1\u2014figure supplement 3). Killer toxin has been shown to impart frequency-dependent selection in structured environments due to a high local concentration of secreted toxin (Greig and Travisano, 2008). We hypothesized that a stepwise loss of killing ability followed by loss of immunity, along with the acquisition of beneficial yur1 and ste4 nuclear mutations, were responsible for the frequency-dependent and nontransitive interaction between Early and Late clones.\n\nTo determine if killer toxin production by the Early clone is necessary for it to outcompete the toxin-susceptible Late clone, we repeated the competition between the Early and Late clones using a virus-cured version of the Early clone. We find that removing the virus from the Early clone abolishes the frequency-dependent fitness advantage of the Early clone; the Late clone is 4.3% more fit than the cured Early clone at all frequencies (Figure 1B, right panel) due to the presence of adaptive mutations in the nuclear genome of the Late clone. Therefore the presence of killer virus in the Early clone and the subsequent loss of killer virus-associated phenotypes in the Late clone were necessary for the evolution of frequency\u00a0dependence and nontransitivity.\n\nTo determine if viral evolution alone is sufficient to account for the observed fitness gains in nontransitive interactions, we focused on the first step in the evolutionary sequence: the transition from the Early clone to Intermediate clone. We transferred the killer virus from the Intermediate clone to the cured Early clone and assayed fitness relative to the Early clone. Because the virus from the Intermediate clone no longer produces toxin, we suspected that it may provide a fitness benefit to the host. However, we find that the evolved killer virus from the Intermediate clone confers no significant effect on host fitness compared to the killer virus from the Early clone (Figure 1B, right panel). This shows that the fitness benefit of the Intermediate clone relative to the Early clone is due to adaptation in the nuclear genome. Taken together these experiments show that the sequence of events leading to the evolution of nontransitivity involves changes to both the host and viral genomes.\n\n### Changes to killer-associated phenotypes are common under our experimental conditions\n\nTo determine the extent of killer phenotype evolution across all populations, we assayed the killer phenotype of 142 populations that were founded by a single ancestor and propagated at the same bottleneck size as BYS1-D08 (Lang et al., 2011). We find that approximately half of all populations exhibit a loss or weakening of killing ability by Generation 1000, with\u00a0~10% of populations exhibiting neither killing ability nor immunity (Figure 2). Of note, we did not observe loss of immunity without loss of killing ability, an increase in killing ability or immunity, or reappearance of killing ability or immunity once it was lost from a population (Figure 2\u2014figure supplement 1), apart from the noise associated with scoring of population-level phenotypes. Several populations (i.e. BYS2-B09 and BYS2-B12) lost both killing ability and immunity simultaneously, suggesting that a single event can cause the loss of both the killer phenotypes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig2-v2.jpg)\n\n**Figure 2.:** (A) Loss of killing ability (top) and immunity (bottom) from evolving yeast populations over time. Killer phenotypes were monitored by halo assay (examples shown on right). (B) Breakdown of killer phenotypes for all populations at Generation 1000. Data point size corresponds to number of populations. Border and fill color indicate killing ability and immunity phenotypes, respectively, as in panel A.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Killer phenotype is shown according to scale in Figure 2. For each population, killing ability is shown in shades of red (top) and immunity in shades of blue (bottom).\n\nMutations in nuclear genes can affect killer-associated phenotypes. The primary receptors of the K1 killer toxin are \u03b2-glucans in the yeast cell wall (Pieczynska et al., 2013). We observe a statistical enrichment of mutations in genes involved in \u03b2-glucan biosynthesis (sixfold Gene Ontology [GO] Biological Process enrichment, p<0.0001). Furthermore, of the 714 protein-coding mutations dispersed across 548 genes, 40 occur within 11 of the 36 genes (identified by Pag\u00e9 et al., 2003) that, when deleted, confer a high level of resistance to the K1 toxin (\u03c72\u00a0=\u00a018.4, df\u00a0=\u00a01, p=1.8\u00a0\u00d7\u00a010\u22125). Nevertheless, the presence of mutations in nuclear genes that have been associated with high levels of resistance is not sufficient to account for the loss of killing ability (\u03c72\u00a0=\u00a01.037, df\u00a0=\u00a01, p=0.309) or immunity (\u03c72\u00a0=\u00a00.103, df\u00a0=\u00a01, p=0.748).\n\n### Standing genetic variation and de novo mutations drive phenotypic change\n\nWe sequenced viral genomes from our ancestral strain and a subset of yeast populations (n\u00a0=\u00a067) at Generation 1000 (Figure 3). We find that our ancestral strain, which was derived from the common lab strain W303-1a, contains the M1-type killer virus (encoding the K1-type killer toxin) with only minor differences from previously sequenced strains (Figure 3\u2014figure supplement 1). Our ancestral strain also possesses the L-A helper virus, which supplies the RNA-dependent RNA polymerase and capsid protein necessary for the killer virus, a satellite virus, to complete its life cycle (Ribas and Wickner, 1992). We sequenced viral genomes from 57 populations that changed killer phenotype and 10 control populations that retained the ancestral killer phenotypes. Viral genomes isolated from populations that lost killing ability possess 1\u20133 mutations in the M1 coding sequence \u2013 most being missense variants (Figure 3A). In contrast, only a single mutation, synonymous nonetheless, was detected in M1 across the 10 control populations that retained the killer phenotype. The correlation between the presence of mutations in the viral genome and the loss of killing ability (\u03c72\u00a0=\u00a059.3,\u00a0df\u00a0=\u00a01,\u00a0p=1.4\u00a0\u00d7\u00a010\u221213)\u00a0is strong evidence that viral mutations are responsible for the changes in killer phenotypes. We estimate that by Generation 1000 half of all populations have fixed viral variants that alter killer phenotypes (for comparison, IRA1, the most common nuclear target, fixed in\u00a0~25% of populations over the same time period).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig3-v2.jpg)\n\n**Figure 3.:** (A) Number of mutations in the K1 gene in yeast populations that retain or lose killing ability. Each data point represents a single yeast population. (B) Observed spectrum of point mutations across the K1 toxin in 67 evolved yeast populations. Mutations were detected in a single population unless otherwise noted. Large internal deletion variants from two yeast populations (BYS1-D06 and BYS2-E11). The deletions span the region indicated by the dashed gray line. VBS: viral binding site. TRE: terminal recognition element.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The viruses of our ancestral yeast strain diverged from previously published LA and M1 genomes by 19 nucleotides and 7 nucleotides, respectively. Solid lines represent nonsynonymous polymorphisms, labeled by amino acid substitution. Dashed lines represent synonymous/intergenic polymorphisms.\n\nOf the 57 populations that lost killing ability, 42 fixed one of three single nucleotide polymorphisms, resulting in amino acid substitutions D106G, D253N, and I292M and observed 13, 14, and 15 times, respectively (Supplementary file 1). Given their prevalence, these polymorphisms likely existed at low frequency in the shared ancestral culture (indeed, we can detect one of the common polymorphisms, D106G, in individual clones at the Early time point, indicating that this mutation was heteroplasmic in cells of the founding population). Killer phenotypes are consistent across populations that fixed a particular ancestral polymorphism (Supplementary file 1).\n\nIn addition to the three ancestral polymorphisms, we detect 34 putative de novo point mutations that arose during the evolution of individual populations (Supplementary file 1). Mutations are localized to the K1 coding sequence, scattered across the four encoded subunits, and skewed toward missense mutations relative to nonsense or frameshift (Figure 3B). Of the 78 identified mutations,\u00a014 are predicted to fall at or near sites of protease cleavage or post-translational modification necessary for toxin maturation. Overall, however, the K1 coding sequence appears to be under balancing selection (dN/dS\u00a0=\u00a00.90), indicating that certain amino acid substitutions (e.g. those that eliminate immunity but retain killing ability) are not tolerated. In addition, substitutions are extremely biased toward transitions over transversions (Supplementary file 2, R\u00a0=\u00a06.4, \u03c72\u00a0=\u00a044.2, df\u00a0=\u00a01, p<0.0001), a bias that is also present in other laboratory-derived M1 variants (R\u00a0=\u00a04.1) (Suzuki et al., 2015) and natural variation of the helper L-A virus (R\u00a0=\u00a03.0) (Diamond et al., 1989; Icho and Wickner, 1989). The transition:transversion bias appears specific to viral genomes as the ratio is much lower within evolved nuclear genomes (R\u00a0=\u00a00.8), especially in genes inferred to be under selection (R\u00a0=\u00a00.5), suggesting a mutational bias of the viral RNA-dependent RNA polymerase (Lang et al., 2013; Fisher et al., 2018; Marad et al., 2018).\n\nThough point mutations are the most common form of evolved variation, we also detected two viral genomes in which large portions of the K1 ORF are deleted (Figure 3B). Despite the loss of the majority of the K1 coding sequence, the deletion mutants maintain cis signals for replication and packaging (Ribas and Wickner, 1992; Ribas et al., 1994). Notably, the two populations that possess these deletion mutants also possess full-length viral variants. The deletion mutants we observe are similar to the ScV-S defective interfering particles that have been shown to outcompete full-length virus presumably due to their decreased replication time (Kane et al., 1979; Ridley and Wickner, 1983; Esteban and Wickner, 1988).\n\n### Host/virus co-evolutionary dynamics are complex and operate over multiple scales\n\nTo compare the dynamics of viral genome evolution, nuclear genome evolution, and phenotypic evolution we performed time-course sequencing of viral genomes from three yeast populations that lost killing ability and for which we have whole-population, whole-genome,\u00a0and time-course sequencing data for the nuclear genome (Lang et al., 2013). As with the evolutionary dynamics of the host genome, the dynamics of viral genome evolution feature clonal interference (competition between mutant genotypes), genetic hitchhiking (an increase in frequency of an allele due to genetic linkage to a beneficial mutation), and sequential sweeps (Figure 4, Figure 4\u2014figure supplement 1). Interestingly, viral sweeps often coincide with nuclear sweeps. Since the coinciding nuclear sweeps often contain known driver mutations, it is possible that the viral variants themselves are not driving adaptation but instead hitchhiking on the back of beneficial nuclear mutations. This is consistent with the observation that the introduction of the viral variant from the Intermediate clone did not affect the fitness of the Early clone (Figure 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig4-v2.jpg)\n\n**Figure 4.:** Killer phenotype of evolved populations is indicated by color according to the key. Nuclear dynamics (reported previously\u00a0in Lang et al., 2013) are represented as solid lines. Nuclear mutations that sweep before or during the loss of killing ability are indicated by black lines. All other mutations are indicated by gray lines. Viral mutations are indicated by purple dashed lines and labeled by amino acid change.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The K1 mutations detected in each population at Generation 1000 are indicated in the top-left of the plot. Trajectories of nuclear mutations were obtained from Lang et al., 2013. Black lines indicate nuclear mutations that swept up to and including the period of killer phenotypic change (all others nuclear mutations are gray). Mutational cohorts are labeled according to their putative driver or putative toxin resistance mutation. Killing ability and immunity are indicated in bar graph (bottom) by shades of red and blue, respectively.\n\nTo determine if the loss of killer phenotype is caused solely by mutations in the killer virus, we transferred the ancestral virus (K+I+) and five evolved viral variants into the virus-cured Early clone via cytoduction (Figure 5A). The five viral variants were selected to span the range of evolved killer phenotypes: one exhibited weak killing ability and full immunity (KwI+: D253N), three exhibited no killing ability and full immunity (K-I+: P47S, D106G, I292M), and one exhibited neither killing ability nor immunity (K-I-: \u22121 frameshift). Following cytoduction, we observed that the killer phenotype of each cytoductant matched the killer phenotype of the population of origin, which demonstrates that viral mutations are sufficient to explain changes in killer phenotypes (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig5-v2.jpg)\n\n**Figure 5.:** (A) Relative fitness of viral variants in pairwise competition with the ancestor (K+I+) and virus-cured ancestor (K-I-). Killer phenotype and identity of viral variant labeled above (Kw indicates weak killing ability). Killer phenotype of the ancestral competitor labeled below. Starting frequency indicated by color. (B) Change to killer phenotype during intracellular competitions between viral variants (by color) and ancestral virus. Replicate lines indicated by symbol. (C) Variant frequency during intracellular competitions. Colors and symbols consistent with panel B. Inset: frequency of the de novo G131D viral variant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Viral variants were transferred from evolved populations to a cured ancestor. Halo assays demonstrate that killer phenotypes were consistent between donor and recipient strains. Viruses were obtained from the following evolved populations at Generation 1000: BYS1-A03 (D253N), RMB1-A02 (P47S), BYB1-H06 (D106G), BYS1-A05 (I292M), and\u00a0BYS2-B09 (frameshift). Populations RMB1-A02 and BYS2-B09 appear mixed given the observed speckling pattern.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Intracellular competitions were tracked over time by both Sanger and Illumina sequencing.\n\nTo determine if any viral variants affect host fitness, we competed all five cytoductants against the killer-containing Early clone (K+I+) and the virus-cured Early clone (K-I-) in pairwise fashion. Frequency-dependent selection was observed in all cases in which one competitor exhibited killing ability and the other competitor lacked immunity (Figure 5A). For example, cytoductants containing either the ancestral virus or the weak-killing D253N variant exhibited a frequency dependent advantage over the virus-cured Early clone. However, in all competitions where the killer-associated phenotypes were compatible, host fitness was not impacted by the specific viral variant, or even by the presence of the virus itself. These data suggest that production of active toxin and maintenance of the virus have no detectable fitness costs to the host. These findings support previous theoretical and empirical studies (Pieczynska et al., 2016; Pieczynska et al., 2017) that claim that mycoviruses and their hosts have co-evolved to minimize cost.\n\n### Success of evolved viral variants is due to an intracellular fitness advantage\n\nBased on the lack of a measurable effect of viral mutations on host fitness when killing-mediated interactions are absent, we hypothesized that the evolved viral variants may have a selective advantage within the viral population of individual yeast cells. A within-cell advantage has been invoked to explain the invasion of internal deletion variants (e.g. ScV-S [Kane et al., 1979]) but has not been extended to point mutations. To test evolved viral variants for a within-cell fitness advantage, we generated a heteroplasmic diploid strain by mating the ancestor (with wild-type virus) with a haploid cytoductant containing either the I292M (K-I+) or \u22121 frameshift (K-I-) viral variant. The heteroplasmic diploids were propagated for seven single-cell bottlenecks every 48 hr to minimize among-cell selection. At each bottleneck, we assayed the yeast cells for killer phenotypes and we quantified the ratio of the intracellular viral variants by RT-PCR and sequencing. We find that killing ability was lost from all lines, suggesting that the evolved viral variants outcompeted the ancestral variant (Figure 5B). Sequencing confirmed that the derived viral variant fixed in most lines (Figure 5C). In some lines, however, the derived viral variant increased initially before decreasing late. Further investigation into one of these lines revealed that the decrease in frequency of the viral variant corresponded to the sweep of a de novo G131D variant (Figure 5C, inset). Viral variants therefore appear to constantly arise, and the evolutionary success of the observed variants results from their selective advantage over viral competitors within the context of an individual cell. We speculate that an intracellular competition between newly arising viral variants also explains the loss of immunity from populations that previously lost killing ability (Figure 2\u2014figure supplement 1), given the relaxed selection for the maintenance of functional immunity in those populations.\n\n## Discussion\n\nWe examined phenotypic and sequence co-evolution of an intracellular double-stranded RNA virus and the host nuclear genome over the course of 1000 generations of experimental evolution. We observe complex dynamics including genetic hitchhiking and clonal interference in the host populations as well as the intracellular viral populations. Phenotypic and genotypic changes including the loss of killing ability, mutations in the host-encoded cell-wall biosynthesis genes, and the virally encoded toxin genes occur repeatedly across replicate populations. The loss of killer-associated phenotypes\u2014killing ability and immunity to the killer toxin\u2014leads to three phenomena with implications for adaptive evolution: positive frequency-dependent selection, multilevel selection, and nontransitivity.\n\nFrequency-dependent selection can be either negative, where rare genotypes are favored, or positive, where rare genotypes are disfavored. Of the two, negative frequency-dependent selection is more commonly observed in experimental evolution, arising, for example, from nutrient cross-feeding (Helling et al., 1987; Turner et al., 1996; Spencer et al., 2008; Kinnersley et al., 2014; Plucain et al., 2014; Green et al., 2020) and spatial structuring (Rainey and Travisano, 1998; Frenkel et al., 2015). Positive frequency-dependent selection, in contrast, is not typically observed in experimental evolution. By definition, a new positive frequency-dependent mutation must invade an established population at a time when its fitness is at its minimum. Even in situations in which positive frequency-dependent selection is likely to occur, such as the evolution of cooperative group behaviors and interference competition (Chao and Levin, 1981), a mutation may be unfavorable at the time it arises. A crowded, structured environment provides an opportunity for allelopathies to offer a local advantage. Here we describe an alternative mechanism for the success of positive frequency-dependent mutations through multilevel selection of the host genome and a toxin-encoding intracellular virus. The likelihood of such a scenario occurring is aided by the large population size of the extrachromosomal element: each of the\u00a0~105 cells that comprise each yeast population contains\u00a0~102 viral particles (Bostian et al., 1983; Ridley and Wickner, 1983).\n\nNontransitivity in our experimental system is due, in part, to interference competition. The production of a killer toxin by the Early clone kills the toxin-susceptible Late clone in a frequency-dependent manner: higher starting frequencies of the Early clone result in higher concentrations of toxin in the environment. Interference competition can drive ecological nontransitivity (Kerr et al., 2002; Kirkup and Riley, 2004), suggesting that similar mechanisms may underlie both ecological and genealogical nontransitivity. The adaptive evolution of genealogical nontransitivity in our system does not follow the canonical model of a co-evolutionary arms race where the host evolves mechanisms to prevent the selfish replication of the virus and the virus evolves to circumvent the host\u2019s defenses (Daugherty and Malik, 2012; Rowley, 2017). Rather, mutations that fix in the viral and yeast populations do so because they provide a direct fitness advantage in their respective populations. Nontransitivity arises through the combined effect of beneficial mutations in the host genome (which improves the relative fitness within the yeast population, regardless of the presence or absence of the killer virus) and the adaptive loss of killing ability and degeneration of the intracellular virus (which provides an intracellular fitness advantage to the virus). The end result is a high-fitness yeast genotype (relative to the ancestral yeast genotype) that contains degenerate viruses, rendering their hosts susceptible to the virally\u00a0encoded toxin.\n\nThough we did not find an impact of nuclear mutations on killer-associated phenotypes, we do observe a statistical enrichment of mutations in genes involved in \u03b2-glucan biosynthesis and in genes that when deleted confer a high level of resistance to the killer toxin. Nearly all mutations in these toxin-resistance genes are nonsynonymous (18 nonsense/frameshift, 21 missense, one synonymous), indicating a strong signature of positive selection. This suggests that the nuclear genome adapts in response to the presence of the killer toxin; however, the effect of these mutations may be beyond the resolution of our fitness assay.\n\nAmong the viral variants we identified were two unique\u00a0~1 kb deletions; remnants of the killer virus that retain little more than the cis-acting elements necessary for viral replication and packaging. These defective interfering particles are thought to outcompete full-length virus due to their decreased replication time (Kane et al., 1979; Ridley and Wickner, 1983; Esteban and Wickner, 1988). Defective interfering particles are common to RNA viruses (Holland et al., 1982). Though there are several different killer viruses in yeast (e.g. K1, K2, K28, and\u00a0Klus), each arose independently and has a distinct mechanism of action (Rodr\u00edguez-Cousi\u00f1o et al., 2017). Nontransitive interactions may therefore arise frequently through cycles of gains and losses of toxin production and toxin immunity in lineages that contain RNA viruses.\n\nReports of nontransitivity arising along evolutionary lines of descent are rare (de Visser and Lenski, 2002; Beaumont et al., 2009). The first (and most widely cited) report of nontransitivity along a direct line of descent occurred during yeast adaptation in glucose-limited chemostats (Paquin and Adams, 1983). This experiment was correctly interpreted under the assumption\u2014generally accepted at the time\u2014that large asexual populations evolved by clonal replacement, where new beneficial mutations arise and quickly sweep to fixation. This strong selection/weak mutation model, however, is now known to be an oversimplification for large asexual populations, where multiple beneficial mutations arise and spread simultaneously through the population leading to extensive clonal interference (Gerrish and Lenski, 1998; Kvitek and Sherlock, 2013; Lang et al., 2013). In addition, the duration of the Paquin and Adams experiment was too short for the number of reported selective sweeps to have occurred (4 in 245 generations and 6\u00a0in 305 generations, for haploids and diploids, respectively). The strongest known beneficial mutations in glucose-limited chemostats, hexose transporter amplifications, provide a fitness advantage of\u00a0~30% (Gresham et al., 2008; Kvitek and Sherlock, 2011) and would require a minimum of\u00a0~150 generations to fix in a population size of 4 \u00d7 109 (Otto and Whitlock, 1997). We contend that Paquin and Adams observed nontransitive interactions among contemporaneous lineages\u2014ecological nontransitivity\u2014rather than nontransitivity among genealogical descendants. Apart from the present study, there are no other examples of nontransitivity arising along a line descent, but numerous examples of nontransitive interactions among contemporaneous lineages (Sinervo and Lively, 1996; Kerr et al., 2002; Kirkup and Riley, 2004; K\u00e1rolyi et al., 2005; Laird and Schamp, 2006; Reichenbach et al., 2007; Precoda et al., 2017; Menezes et al., 2019).\n\nHere we present a mechanistic case study on the evolution of nontransitivity along a direct line of genealogical descent. We determine the specific nuclear and viral changes that lead to nontransitivity in our focal population (Figure 6). Our results show that the continuous action of selection can give rise to genotypes that are less fit compared to a distant ancestor. We show that nontransitive interactions can arise quickly due to multilevel selection in a host/virus system. In the context of this experiment multi-level selection is common\u2014most yeast populations fix nuclear and viral variants by Generation 1000. Overall, our results demonstrate that adaptive evolution is capable of giving rise to nontransitive fitness interactions along an evolutionary lineage, even under simple laboratory conditions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig6-v2.jpg)\n\n**Figure 6.:** Nontransitivity arises through multilevel selection requiring adaptive mutations in both the nuclear and viral genomes. The Early clone (orange) produces, and is resistant to, killer toxin. Step 1: after 335 generations, the Intermediate clone (green) fixed three nuclear mutations including a beneficial mutation in yur1 and lost the ability to produce killer toxin due to intracellular competition between viral variants. Step 2: after another 665 generations, the Late clone (purple) fixed an additional 10 nuclear mutations including a beneficial mutation in ste4 and lost immunity to the killer toxin, which is no longer present in the environment. Step 3: when brought into competition with the Early clone (1000 generations removed), the Late clone loses in a frequency-dependent manner due to killer toxin produced by the Early clone. Positive frequency-dependent selection (PFDS) emerges in the competition because the fitness disadvantage of the Late clone can be overcome if it starts the competition at high frequency relative to the Early clone.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yGIL432</td>\n      <td>First reported in Lang et al., 2011</td>\n      <td>Early clone/Ancestor of evolution experiment</td>\n      <td>Lang Lab strain collection</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yGIL519</td>\n      <td>First reported in Lang et al., 2011</td>\n      <td>ymCitrine reference strain</td>\n      <td>Lang Lab strain collection</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yGIL1582</td>\n      <td>This paper</td>\n      <td>Intermediate clone</td>\n      <td>Lang Lab strain collection</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yGIL1042</td>\n      <td>This paper</td>\n      <td>Late clone</td>\n      <td>Lang Lab strain collection</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yGIL1097</td>\n      <td>This paper</td>\n      <td>Sensitive tester strain</td>\n      <td>Lang Lab strain collection</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yGIL1253</td>\n      <td>This paper</td>\n      <td>Early clone/Ancestor (M1 cured)</td>\n      <td>Lang Lab strain collection</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>yGIL1353</td>\n      <td>This paper</td>\n      <td>kar1\u220615 mating partner</td>\n      <td>Lang Lab strain collection</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMR1593</td>\n      <td>Mark Rose (Georgetown University)</td>\n      <td>kar1\u039415 integrating plasmid</td>\n      <td>ATCC (87710)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>M1_F1</td>\n      <td>This paper</td>\n      <td>PCR (Sanger sequencing)</td>\n      <td>TTGGCTATTACAGCGTGCCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>M1_F5</td>\n      <td>This paper</td>\n      <td>PCR (Sanger sequencing)</td>\n      <td>ATGACGAAGCCAACCCAAGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>M1_F7</td>\n      <td>This paper</td>\n      <td>PCR (Sanger sequencing)</td>\n      <td>CAGAAAAAGAGAGAACAGGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>M1_R3</td>\n      <td>This paper</td>\n      <td>cDNA synthesis, PCR (Sanger sequencing)</td>\n      <td>TGCTGTTGCATTAAACCAGGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>M1_R6</td>\n      <td>This paper</td>\n      <td>PCR (Sanger sequencing)</td>\n      <td>ATAGCCCGGTGCTCTGTAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LA_F2</td>\n      <td>This paper</td>\n      <td>PCR (Sanger sequencing)</td>\n      <td>ATCAGGTGATGCAGCGTTGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LA_F3</td>\n      <td>This paper</td>\n      <td>PCR (Sanger sequencing)</td>\n      <td>ACTCCCCATGCTAAGATTTGTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LA_R2</td>\n      <td>This paper</td>\n      <td>PCR (Sanger sequencing)</td>\n      <td>CGGCACCCTTACGGAGATAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LA_R3</td>\n      <td>This paper</td>\n      <td>PCR (Sanger sequencing)</td>\n      <td>GACCTGTAATGCCCGGAGTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LA_R6</td>\n      <td>This paper</td>\n      <td>PCR (Sanger sequencing)</td>\n      <td>AGTACTGAGCCCCAAGACCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>I292M_read1</td>\n      <td>This paper</td>\n      <td>PCR (Illumina sequencing)</td>\n      <td>CGTCGGCAGCGTCAGATGTGTATAAGAGACAGNNNNNNNNCCATGGTGTCGGCTAATGGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>I292M_read2</td>\n      <td>This paper</td>\n      <td>PCR (Illumina sequencing)</td>\n      <td>CGTGGGCTCGGAGATGTGTATAAGAGACAGAGGTCAGACACGATGCCCTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>frameshift_read1</td>\n      <td>This paper</td>\n      <td>PCR (Illumina sequencing)</td>\n      <td>CGTCGGCAGCGTCAGATGTGTATAAGAGACAGNNNNNNNNCCCGTCTGCGACAGTAGAAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>frameshift_read2</td>\n      <td>This paper</td>\n      <td>PCR (Illumina sequencing)</td>\n      <td>CGTGGGCTCGGAGATGTGTATAAGAGACAGTGTGTAAGAACTGCGTGGGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>i5_adapter</td>\n      <td>This paper</td>\n      <td>PCR (Illumina sequencing)</td>\n      <td>AATGATACGGCGACCACCGAGATCTACACNNNNNNNNTCGTCGGCAGCGTCAGATG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>i7_adapter</td>\n      <td>This paper</td>\n      <td>PCR (Illumina sequencing)</td>\n      <td>CAAGCAGAAGACGGCATACGAGATNNNNNNNNGTCTCGTGGGCTCGGAGATGTG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental evolution\n\nDetails of the evolution experiment have been described previously (Lang et al., 2011). Briefly, population BYS1-D08 is one of\u00a0~600 populations that were evolved for 1000 generations at 30\u00b0C in YPD + A and T (yeast extract, peptone, dextrose plus 100 \u03bcg/ml ampicillin and 25 \u03bcg/ml tetracycline to prevent bacterial contamination). Each day populations were diluted 1:210 into 128 \u03bcl of YPD + A and T in round-bottom 96-well plates using a BiomekFX liquid handler. The dilution scheme equates to 10 generations of growth per day at an effective population size of\u00a0~105.\n\n### Growth conditions and strain construction\n\nUnless otherwise\u00a0specified, yeast strains were propagated at 30\u00b0C in YPD + A and T. The ancestor and evolved populations were described previously (Lang et al., 2011). Early, Intermediate, and Late clones were isolated by resurrecting population BYS1-D08 at the Generation 0, 335, and 1000, respectively. These specific time\u00a0points were selected to coincide with the completion of a selective sweep (Lang et al., 2013), when the population is expected to be near clonal. For each time\u00a0point we isolated multiple clones from a YPD plate and assayed each one to verify that the killer phenotype was uniform.\n\nThe ancestral strain was cured of the M1 and LA viruses by streaking to single colonies on YPD agar and confirmed by halo assay, PCR, and sequencing. We integrated a constitutively\u00a0expressed fluorescent reporter (pACT1-ymCitrine) at the CAN1 locus in the cured ancestral strain as well as the Intermediate (Generation 335) and Late (Generation 1000) clones.\n\nKaryogamy mutants were constructed by introducing the kar1\u039415 allele by two-step gene replacement in the cured a\u00a0MAT\u03b1 version of the ancestor (Georgieva and Rothstein, 2002). The kar1\u039415-containing plasmid pMR1593 (Mark Rose, Georgetown University) was linearized with BglII prior to transformation and selection on -Ura. Mitotic excision of the integrated plasmid was selected for plating on 5-fluorotic acid (5-FOA). Then we replaced NatMX with KanMX to enable selection for recipients during viral transfer.\n\n### Fitness assays\n\nCompetitive fitness assays were performed as described previously (Lang et al., 2011; Lang et al., 2013). To investigate frequency dependence, competitors were mixed at various ratios at the initiation of the experiment. Competitions were performed for 50 generations under conditions identical to the evolution experiment (Lang et al., 2011). Every 10 generations, competitions were diluted 1:1000 in fresh media and an aliquot was sampled by BD FACS Canto II flow cytometer. Flow cytometry data was analyzed using FlowJo 10.3. Relative fitness was calculated as the slope of the change in the natural log ratio between the experimental and reference strain. To detect frequency-dependent selection, each 10-generation interval was analyzed independently to calculate starting frequency and fitness.\n\n### Halo assay\n\nKiller phenotype was measured using a high-throughput version of the standard halo assay (Crabtree et al., 2019) and a liquid handler (Biomek FX). Assays were performed using YPD agar that had been buffered to pH 4.5 (citrate-phosphate buffer), dyed with methylene blue (0.003%), and poured into a 1-well rectangular cell culture plate.\n\nKilling ability was assayed against a sensitive tester strain (yGIL1097) that was isolated from a separate evolution experiment initiated from the same ancestor. The sensitive tester was grown to saturation, diluted 1:10, and spread (150 \u00b5l) evenly on the buffered agar. Query strains were grown to saturation, concentrated 5\u00d7, and spotted (2 \u00b5l) on top of the absorbed lawn (Figure 1\u2014figure supplement 2, left).\n\nImmunity was assayed against the ancestral strain (yGIL432). Query strains were grown to saturation, diluted 1:32, and spotted (10 \u00b5l) on the buffered agar. The killer tester was grown to saturation, concentrated 5\u00d7, and spotted (2 \u00b5l) on top of the absorbed query strain (Figure 1\u2014figure supplement 2, right).\n\nPlates were incubated at room temperature for 2\u20133 days before assessment. Killer phenotype was scored according to the scale in shown in Figure 2.\n\n### Viral RNA isolation, cDNA Synthesis, and\u00a0PCR\n\nNucleic acids were isolated by phenol\u2013chloroform extraction and precipitated in ethanol. Isolated RNA was reverse-transcribed into cDNA using ProtoScript II First Strand cDNA Synthesis Kit (NEB) with either the enclosed Random Primer Mix or the M1-specific oligo M1_R3.\n\n### Sanger sequencing and bioinformatics analyses\n\nPCR was performed on cDNA using Q5 High-Fidelity Polymerase (NEB). The K1 ORF was amplified using primers M1_F1 or M1_F5 and M1_R6. The M1 region downstream of the polyA stretch was amplified using M1_F7 and M1_R3. The LA virus was amplified using LA_F2 and LA_R2, LA_F2 and LA_R3, or LA_F3 and LA_R6. PCR products were Sanger sequenced by Genscript.\n\nMutations were identified and peak height quantified using 4Peaks (nucleobytes). For intracellular competitions, mutation frequency was quantified by both Sanger and Illumina sequencing (see below), with both methods producing nearly identical results (Figure 5\u2014figure supplement 2).\n\nThe Sanger sequencing data was aligned to publicly\u00a0available M1 and LA references (GenBank Accession Numbers U78817 and J04692, respectively) using ApE (A plasmid Editor). The ancestral M1 and LA viruses differed from the references at 7 sites (including 3 K1 missense mutations) and 19 sites, respectively (Figure 3\u2014figure supplement 1).\n\n### Viral transfer\n\nViruses were transferred to MATa strains using the MAT\u03b1 karyogamy mutant as an intermediate. Viral donors (MATa, ura3, NatMX) were first transformed with the pRS426 (URA3, 2\u00b5 ORI) for future indication of viral transfer. Cytoduction was performed by mixing a viral donor with the karyogamy mutant recipient (MAT\u03b1, ura3, KanMX) at a 5:1 ratio on solid media. After a 6 hr incubation at 30\u00b0C, the cells were plated on media containing G418 to select for cells with the recipient nuclei. Recipients that grew on -Ura (indicator of cytoplasmic mixing) and failed to grow on ClonNat (absence of donor nuclei) then served as donors for the next cytoduction. These karyogamy mutant donors (MAT\u03b1, URA3, KanMX) were mixed with the selected recipient (MATa, ura3, NatMX) at a 5:1 ratio on solid media. After a 6 hr incubation at 30\u00b0C, the cells were plated on media containing ClonNat to select for cells with recipient nuclei. Recipients that grew on -Ura (indicator of cytoplasmic mixing) and failed to grow on G418 (absence of the donor nucleus) were then cured of the indicator plasmid by selection on 5-FOA. Killer phenotype was confirmed by halo assays and the presence of the viral variants in the recipient was verified by Sanger sequencing.\n\n### Illumina sequencing and bioinformatics analyses\n\nMultiplexed libraries were prepared using a two-step PCR. First, cDNA was amplified by Q5 High-Fidelity Polymerase (NEB) for 10 cycles using primers I292M_read1 and I292M_read2 or frameshift_read1 and frameshift_read2 to incorporate a random 8 bp barcode and sequencing primer binding sites. The resulting amplicons were further amplified by Q5 PCR for 15 cycles using primers i5_adapter and i7_adapter to incorporate the sequencing adaptors and indices. Libraries were sequenced on a NovaSeq 6000 (Illumina) at the Genomics Core Facility at Princeton University.\n\nRaw FASTQ files were demultiplexed using a dual-index barcode splitter (https://bitbucket.org/princeton_genomics/barcode_splitter) and trimmed using Trimmomatic (Bolger et al., 2014) with default settings for paired-end reads. Mutation frequencies were determined by counting the number of reads that contain the ancestral or evolved allele (mutation flanked by five nucleotides).\n\n### Intracellular competitions\n\nWithin-cell viral competitions were performed by propagating a heteroplasmic diploid and monitoring killer phenotype and viral variant frequency. Diploids were generated by crossing the ancestor with a cytoductant harboring either the I292M or \u22121 frameshift viral variant. For each viral variant, three diploid lines (each initiated by a unique mating event) were passaged every other day on buffered YPD media for a total of seven single-cell bottlenecks to minimize among-cell selection. A portion of each transferred colony was cryopreserved in 15% glycerol. Cryosamples were revived, assayed for killer phenotype, and harvested for RNA. Following RT-PCR, samples were sent for Sanger sequencing and Illumina sequencing. Variant frequency deviated from the expected frequency of 0.5 at the initial time\u00a0point, presumably due to an unavoidable delay between the formation of the heteroplasmic diploid and initiation of the intracellular competition from a single colony. Alternatively, viral copy number may vary between donor and recipient cells.\n",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "db72c749-a360-4cd2-993d-445841b52045",
+      "submission_id": "40c39eb0-dc40-4ced-bd35-579b9e930a82",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62238.sa1](https://doi.org/10.7554/eLife.62238.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWhilst non-transitive competitive interactions (where A beats B, B beats C, and C beats A) have been found in ecology, their occurrence within a single evolving lineage has not been shown rigorously before. Authors evolved yeast cells infected with a \"Killer\" virus, and found that selection occurring at multiple scales \u2013 among viruses within a cell \u2013 and between their host cells within a population \u2013 results in evolved populations that are less fit than the ancestors. This work demonstrates that evolution may not be a simple linear march of progress. Rather, progress over short time scales can sometimes lead to a reduction of fitness over the longer time scale due to the evolution of ecological interactions. For future work, we would like to know whether non-transitivity can also occur when selection acts only at one level, and how common non-transitivity is, what features predict its evolution, and at what evolutionary scale it acts.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Adaptive evolution of nontransitive fitness in yeast\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Naama Barkai as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Kristina Hillesland (Reviewer #3); Duncan Greig (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe findings presented in this manuscript are interesting. They show that selection is happening at multiple scales \u2013 among viruses within a cell \u2013 and between their host cells within a population. The conflict between these levels of selection results in evolved populations that are less fit than the ancestors. This work demonstrates that evolution may not be a simple linear march of progress. Rather, progress over short time scales can sometimes lead to a reduction of fitness over the longer time scale due to the evolution of ecological interactions.\n\nThe reviewers, who all identified themselves, have a range of points that they would like to see addressed, and for ease, the verbatim reviews are attached, including a summary of the discussion among the reviewers.\n\nReviewer #1:\n\nBuskirk et al. examined the evolution of nontransitive fitness effects in yeast. They showed that during evolution in rich glucose medium, a late clone (1000 generations) outcompeted an intermediate clone (300 generations), but lost in direct competition with the ancestor (in a frequency-dependent fashion: late clone when rare loses to ancestor and when abundant outcompetes ancestor). This is due to adaptation in the nuclear genome and intracellular killer virus. Essentially, the ancestor expresses both killing and immunity phenotypes (K+I+), the intermediate clone expresses immunity (K-I+), and the late clone expresses neither (K-I-). This trend is observed in many evolving populations. In the absence of the killing interaction, virus does not affect host fitness. That is, when killing interactions are absent, fitness changes are due to mutations in the nuclear genome. Changes in killing and immunity phenotypes are driven by intracellular competition of viruses where viruses defective in killing and/or immunity have an advantage over functional viruses.\n\nI find the work quite interesting, although I also find it a bit incomplete. If you have data that verify nuclear mutations that made intermediate clones more fit than ancestor and late clones more fit than intermediate clones, please include these. Experiments in yeast are very easy, and I think that giving one example for both cases will be helpful for molecular-oriented readers. For example, are those causative nuclear mutations completely independent of killer virus biology? However, upon discussing with the two other reviewers, I will not insist on this.\n\nA schematic summary figure will be helpful.\n\nReviewer #3:\n\nThe findings presented in this manuscript are really exciting. They show that selection is happening at multiple scales \u2013 among viruses within a cell \u2013 and between their host cells within a population. The conflict between these levels of selection results in evolved populations that are less fit than the ancestors. This result is exciting because it happens repeatedly in independently-evolving populations, showing that it can be a general result. It is also an example of how a non-transitive interaction can evolve de novo, as the authors claim in the manuscript. The experiments seem to rule out most alternative hypotheses. However, the authors could explain their reasoning more clearly in some cases.\n\n1) In particular I found it difficult to understand some of their conclusions in the \u2013subsection \u201cHost/virus co-evolutionary dynamics are complex and operate over multiple scales\u201d, without rereading, rewriting results, and lots of thinking. They state that production of active toxin or maintenance of the virus has no detectable fitness cost to the host. There are a lot of comparisons to think through here to get to that conclusion, and I think the average reader needs to be taken through that. Even though I have some experience thinking about costs and how they can be estimated, I still spent quite a lot of time trying to follow the logic from Figure 5A to that statement. In fact, I still do not understand how they are distinguishing between \u201cproduction of active toxin\u201d and \u201cmaintenance of the virus\u201d. I also had to spend a lot of time thinking through the results in Figure 3 and the conclusion stated in the aforementioned subsection\u201d.\n\n2) I think it would be helpful to the reader, and interesting, if there were more of an explanation about WHY K+I+ cells have positive frequency-dependent fitness relative to K-I- cells. Why is the presence of an active virus and immunity more beneficial at higher frequencies?\n\nReviewer #4:\n\nThis study shows how well mixed populations of yeast cells initially expressing both an anticompetitor toxin and resistance to it, first lose toxin production (because there is a cost but no benefit to toxin production when all cells are resistant) and then lose resistance (because there is a cost but no benefit to resistance when no cells produce toxin). Consequently, these evolved sensitive populations have lower fitness than their own toxin-producing (resurrected) ancestors, but only if the toxic ancestors are introduced at a high enough frequency, that is, there is positive frequency dependent selection. These results are quite intuitive and satisfying, and are well supported by rigorous experiments determining the causal mutations and their selective advantages both within intra-cellular populations of the virus, and between cells in a the evolving populations. This was really nice, thorough, and interesting work. However the overall result is not really surprising, as much similar work has been done before (and is properly cited) in which three types of competitors show non-transitive pairwise fitness relationships.\n\nThe main claim to originality is that the three types here are generated sequentially by two rounds of mutation, natural selection, and replacement/fixation: that is, there is genealogical nontransitivity between ancestors and descendants, rather than just ecological nontransitivity between contemporary co-existing variants. This demonstrates an important principle: that natural selection can produce a decline in overall relative fitness in a lineage over multiple rounds of mutation and fixation. The only other reported example of this in experimental evolution is the work of Paquin and Adams, 1983, but the authors here argue convincingly that the Paquin and Adams, lacking the benefit of sequencing to identify mutations and their frequencies, inadvertently competed ecological types that were co-existing in their evolving populations and had not fixed.\n\nMy only criticism, then, is that the example of non-transitivity demonstrated here is rather \"obvious\"; the result is entirely predictable, given the amount of previous work in similar microbial systems. However, this is countered by the fundamental nature of the question for evolutionary biology, and the lack of specific experimental examples, apart from the very old Paquin and Adams. Overall, then, I am satisfied that this paper is a significant step forward, and is appropriate for publication in eLife. I found it well written, interesting, and the conclusions were well supported by careful and thorough experiments.\n",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f5b7fa70-d1bc-4fb9-b85e-43a91e7f89ac",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C1",
+      "claim": "A nontransitive evolutionary sequence was identified in a 1000-generation yeast evolution experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we identify a nontransitive evolutionary sequence in a 1000-generation yeast evolution experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "f7279009-602d-4d7f-a3b1-7e2a771f98e9",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C2",
+      "claim": "Nontransitivity arises due to adaptation in the yeast nuclear genome combined with the stepwise deterioration of an intracellular virus.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that nontransitivity arises due to adaptation in the yeast nuclear genome combined with the stepwise deterioration of an intracellular virus, which provides an advantage over viral competitors within host cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data showing nuclear mutations and viral genome changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "b9fea43f-02c5-41b2-ab2e-33b41cbf1f03",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C3",
+      "claim": "Nearly half of ~140 populations experience multilevel selection, fixing adaptive mutations in both the nuclear and viral genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Extending our analysis, we find that nearly half of our ~140 populations experience multilevel selection, fixing adaptive mutations in both the nuclear and viral genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 2 showing killer phenotype changes across 142 populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "c3c2f620-0939-44bf-ab3f-7ae22357f3bb",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C4",
+      "claim": "A 1000-generation clone from population BYS1-D08 lost in direct competition with a fluorescently labeled version of the ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "For one population (BYS1-D08) we were surprised to observe that a 1000-generation clone lost in direct competition with a fluorescently labeled version of the ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated in the Results section and supported by competition data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "da67642b-83d2-4e85-a8e9-ed37ce2e83b5",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C5",
+      "claim": "The Intermediate clone (Generation 335) is 3.8% more fit relative to the Early clone (Generation 0).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the Intermediate clone is 3.8% more fit relative to the Early clone and that the Late clone is 1.2% more fit relative to the Intermediate clone (Figure 1B, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This fitness measurement is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "cea1bc3f-354a-480c-a9fa-0792fb0dccc4",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C6",
+      "claim": "The Late clone (Generation 1000) is 1.2% more fit relative to the Intermediate clone (Generation 335).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the Intermediate clone is 3.8% more fit relative to the Early clone and that the Late clone is 1.2% more fit relative to the Intermediate clone (Figure 1B, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This fitness measurement is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "0e82591f-d456-4b58-9908-783202b99d6b",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C7",
+      "claim": "The interaction between the Early and Late clones exhibits positive frequency-dependent selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the interaction between the Early and Late clones exhibits positive frequency-dependent selection, thus creating a bi-stable system where the fitness disadvantage of the Late clone can be overcome if it starts above a certain frequency relative to the Early clone (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and demonstrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "169b10b6-b245-420d-8754-fd29dce5e720",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C8",
+      "claim": "The ancestral strain exhibits the phenotype expected of yeast that harbor the killer virus: it inhibits growth of a nearby sensitive strain and resists killing by a known killer strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a well-described halo assay (Woods and Bevan, 1968), we find that the ancestral strain of our evolved populations exhibits the phenotype expected of yeast that harbor the killer virus: it inhibits growth of a nearby sensitive strain and resists killing by a known killer strain (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citation to the halo assay method and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "521a199c-dc80-4625-9156-bff611690d31",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C9",
+      "claim": "The Intermediate clone no longer exhibits killing ability (K-I+).",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotyping of the isolated clones revealed that the Intermediate clone no longer exhibits killing ability (K-I+) and that the Late clone possesses neither killing ability nor immunity (K-I-, Figure 1A, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This phenotype is stated in the text and shown in Figure 1A and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "131bd88d-a4a6-44a3-93f0-84090b8bd669",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C10",
+      "claim": "The Late clone possesses neither killing ability nor immunity (K-I-).",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotyping of the isolated clones revealed that the Intermediate clone no longer exhibits killing ability (K-I+) and that the Late clone possesses neither killing ability nor immunity (K-I-, Figure 1A, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This phenotype is stated in the text and shown in Figure 1A and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "42f034f6-2dd2-4a7e-9fe0-bd03218c6d34",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C11",
+      "claim": "Removing the virus from the Early clone abolishes the frequency-dependent fitness advantage of the Early clone.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that removing the virus from the Early clone abolishes the frequency-dependent fitness advantage of the Early clone; the Late clone is 4.3% more fit than the cured Early clone at all frequencies (Figure 1B, right panel) due to the presence of adaptive mutations in the nuclear genome of the Late clone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B, right panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "895e56c5-bd33-4721-961a-8ad26a9dca2f",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C12",
+      "claim": "The Late clone is 4.3% more fit than the cured Early clone at all frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that removing the virus from the Early clone abolishes the frequency-dependent fitness advantage of the Early clone; the Late clone is 4.3% more fit than the cured Early clone at all frequencies (Figure 1B, right panel) due to the presence of adaptive mutations in the nuclear genome of the Late clone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This fitness measurement is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "6a1475f4-9880-4aab-8b43-efd2fddc14f9",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C13",
+      "claim": "The killer virus from the Intermediate clone confers no significant effect on host fitness compared to the killer virus from the Early clone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find that the evolved killer virus from the Intermediate clone confers no significant effect on host fitness compared to the killer virus from the Early clone (Figure 1B, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "89a78126-1d1f-4269-8a3b-dc4e3f179118",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C14",
+      "claim": "The fitness benefit of the Intermediate clone relative to the Early clone is due to adaptation in the nuclear genome.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the fitness benefit of the Intermediate clone relative to the Early clone is due to adaptation in the nuclear genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experiment showing that the viral variant alone does not confer fitness benefit.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "026d28da-e7fb-478d-a641-892d15f7fd8f",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C15",
+      "claim": "Approximately half of all populations exhibit a loss or weakening of killing ability by Generation 1000.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that approximately half of all populations exhibit a loss or weakening of killing ability by Generation 1000, with ~10% of populations exhibiting neither killing ability nor immunity (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "971e6126-b6e4-4978-9082-c4bb3d0e10e8",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C16",
+      "claim": "Approximately 10% of populations exhibit neither killing ability nor immunity by Generation 1000.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that approximately half of all populations exhibit a loss or weakening of killing ability by Generation 1000, with ~10% of populations exhibiting neither killing ability nor immunity (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "c2091f57-5947-476e-9cf1-48affce6c909",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C17",
+      "claim": "Loss of immunity without loss of killing ability was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we did not observe loss of immunity without loss of killing ability, an increase in killing ability or immunity, or reappearance of killing ability or immunity once it was lost from a population (Figure 2\u2014figure supplement 1), apart from the noise associated with scoring of population-level phenotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated in the text and supported by Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "92d16366-3df4-4780-88c0-d024fc9058ed",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C18",
+      "claim": "There is a statistical enrichment of mutations in genes involved in \u03b2-glucan biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a statistical enrichment of mutations in genes involved in \u03b2-glucan biosynthesis (sixfold Gene Ontology [GO] Biological Process enrichment, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statistical enrichment is stated with a p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "6fbeeed1-0180-4b62-a133-f8151ec42d75",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C19",
+      "claim": "40 mutations occur within 11 of the 36 genes that, when deleted, confer a high level of resistance to the K1 toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, of the 714 protein-coding mutations dispersed across 548 genes, 40 occur within 11 of the 36 genes (identified by Pag\u00e9 et al., 2003) that, when deleted, confer a high level of resistance to the K1 toxin (\u03c72 = 18.4, df = 1, p=1.8 \u00d7 10\u22125).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with statistical support and a citation to Pag\u00e9 et al., 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "877a0eca-15de-43cd-a7cb-e1948ad31b54",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C20",
+      "claim": "The presence of mutations in nuclear genes associated with high levels of resistance is not sufficient to account for the loss of killing ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the presence of mutations in nuclear genes that have been associated with high levels of resistance is not sufficient to account for the loss of killing ability (\u03c72 = 1.037, df = 1, p=0.309) or immunity (\u03c72 = 0.103, df = 1, p=0.748).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with statistical support showing no significant association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "1aba955b-31c9-4631-818d-b15995e2af75",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C21",
+      "claim": "The ancestral strain contains the M1-type killer virus (encoding the K1-type killer toxin) with only minor differences from previously sequenced strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that our ancestral strain, which was derived from the common lab strain W303-1a, contains the M1-type killer virus (encoding the K1-type killer toxin) with only minor differences from previously sequenced strains (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "6bf0a985-0dfa-418c-a00f-e07c3473a086",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C22",
+      "claim": "The ancestral strain possesses the L-A helper virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ancestral strain also possesses the L-A helper virus, which supplies the RNA-dependent RNA polymerase and capsid protein necessary for the killer virus, a satellite virus, to complete its life cycle (Ribas and Wickner, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with a citation to Ribas and Wickner, 1992.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "4a8257e1-7b5a-4ac2-9869-37b8783819af",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C23",
+      "claim": "Viral genomes isolated from populations that lost killing ability possess 1\u20133 mutations in the M1 coding sequence, most being missense variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral genomes isolated from populations that lost killing ability possess 1\u20133 mutations in the M1 coding sequence \u2013 most being missense variants (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "7de5ca97-0986-4acf-85b6-337e53a1221f",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C24",
+      "claim": "Only a single synonymous mutation was detected in M1 across the 10 control populations that retained the killer phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only a single mutation, synonymous nonetheless, was detected in M1 across the 10 control populations that retained the killer phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as a contrast to populations that lost killing ability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "311d195b-cd2e-4758-8b72-5ed47056d4de",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C25",
+      "claim": "There is a strong correlation between the presence of mutations in the viral genome and the loss of killing ability.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the presence of mutations in the viral genome and the loss of killing ability (\u03c72 = 59.3, df = 1, p=1.4 \u00d7 10\u221213) is strong evidence that viral mutations are responsible for the changes in killer phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with strong statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "8081b531-5408-4493-9c34-3bf7c387b529",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C26",
+      "claim": "By Generation 1000, half of all populations have fixed viral variants that alter killer phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that by Generation 1000 half of all populations have fixed viral variants that alter killer phenotypes (for comparison, IRA1, the most common nuclear target, fixed in ~25% of populations over the same time period).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate stated in the text with a comparison to nuclear mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "b5a3dba1-eaee-4a68-b9de-92ab5ebdb872",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C27",
+      "claim": "42 of 57 populations that lost killing ability fixed one of three single nucleotide polymorphisms (D106G, D253N, and I292M).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 57 populations that lost killing ability, 42 fixed one of three single nucleotide polymorphisms, resulting in amino acid substitutions D106G, D253N, and I292M and observed 13, 14, and 15 times, respectively (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with reference to Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "4784a49a-23f9-4215-84ae-3145e9d16326",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C28",
+      "claim": "The three common polymorphisms (D106G, D253N, I292M) likely existed at low frequency in the shared ancestral culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their prevalence, these polymorphisms likely existed at low frequency in the shared ancestral culture (indeed, we can detect one of the common polymorphisms, D106G, in individual clones at the Early time point, indicating that this mutation was heteroplasmic in cells of the founding population).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the prevalence of these mutations and detection in early clones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "f332ebcd-3e39-4061-886f-e482eb8fa93e",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C29",
+      "claim": "34 putative de novo point mutations arose during the evolution of individual populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the three ancestral polymorphisms, we detect 34 putative de novo point mutations that arose during the evolution of individual populations (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with reference to Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "d9398ab0-b7d9-4228-8363-ca663067f579",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C30",
+      "claim": "The K1 coding sequence appears to be under balancing selection (dN/dS = 0.90).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, however, the K1 coding sequence appears to be under balancing selection (dN/dS = 0.90), indicating that certain amino acid substitutions (e.g. those that eliminate immunity but retain killing ability) are not tolerated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a dN/dS ratio indicating balancing selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "2ac2b7c8-8456-4907-b9ca-bdd2fb97490f",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C31",
+      "claim": "Substitutions in the K1 coding sequence are extremely biased toward transitions over transversions (R = 6.4).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, substitutions are extremely biased toward transitions over transversions (Supplementary file 2, R = 6.4, \u03c72 = 44.2, df = 1, p<0.0001), a bias that is also present in other laboratory-derived M1 variants (R = 4.1) (Suzuki et al., 2015) and natural variation of the helper L-A virus (R = 3.0) (Diamond et al., 1989; Icho and Wickner, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with statistical support and citations to other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "f0e677b2-3dbb-454a-bc12-fd0a6c22b67f",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C32",
+      "claim": "The transition:transversion bias appears specific to viral genomes as the ratio is much lower within evolved nuclear genomes (R = 0.8).",
+      "claim_type": "EXPLICIT",
+      "source": "The transition:transversion bias appears specific to viral genomes as the ratio is much lower within evolved nuclear genomes (R = 0.8), especially in genes inferred to be under selection (R = 0.5), suggesting a mutational bias of the viral RNA-dependent RNA polymerase (Lang et al., 2013; Fisher et al., 2018; Marad et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with comparison to nuclear genomes and citations to supporting studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "ad59f024-267a-4cce-83be-8af701d7d696",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C33",
+      "claim": "Two viral genomes were detected in which large portions of the K1 ORF are deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Though point mutations are the most common form of evolved variation, we also detected two viral genomes in which large portions of the K1 ORF are deleted (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "322c4201-bcb1-4c79-ac9c-73b6075f8389",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C34",
+      "claim": "The deletion mutants maintain cis signals for replication and packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the loss of the majority of the K1 coding sequence, the deletion mutants maintain cis signals for replication and packaging (Ribas and Wickner, 1992; Ribas et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Ribas and Wickner, 1992 and Ribas et al., 1994.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "03a9f82a-4e6d-4150-bfc4-df4637a4a762",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C35",
+      "claim": "The two populations that possess deletion mutants also possess full-length viral variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the two populations that possess these deletion mutants also possess full-length viral variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "26daf006-22b4-4489-9ab7-6cb09c2776fa",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C36",
+      "claim": "Viral sweeps often coincide with nuclear sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, viral sweeps often coincide with nuclear sweeps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated in the text and can be seen in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "ed025b05-cb91-482a-9860-234e9e696a5b",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C37",
+      "claim": "It is possible that the viral variants are not driving adaptation but instead hitchhiking on the back of beneficial nuclear mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the coinciding nuclear sweeps often contain known driver mutations, it is possible that the viral variants themselves are not driving adaptation but instead hitchhiking on the back of beneficial nuclear mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility based on the observation of coinciding sweeps.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "a4804ef1-5b12-43a7-aaee-08cac67662fe",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C38",
+      "claim": "Viral mutations are sufficient to explain changes in killer phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Following cytoduction, we observed that the killer phenotype of each cytoductant matched the killer phenotype of the population of origin, which demonstrates that viral mutations are sufficient to explain changes in killer phenotypes (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on cytoduction experiments shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "67d685dd-89ec-4e03-9d38-d0df2f25f2fc",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C39",
+      "claim": "Frequency-dependent selection was observed in all cases in which one competitor exhibited killing ability and the other competitor lacked immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequency-dependent selection was observed in all cases in which one competitor exhibited killing ability and the other competitor lacked immunity (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "07ced601-0432-4c6c-baf4-8809b9114d7d",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C40",
+      "claim": "In all competitions where the killer-associated phenotypes were compatible, host fitness was not impacted by the specific viral variant, or even by the presence of the virus itself.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in all competitions where the killer-associated phenotypes were compatible, host fitness was not impacted by the specific viral variant, or even by the presence of the virus itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on competition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "eff1e59a-a79d-4407-acc7-9f30c8862fef",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C41",
+      "claim": "Production of active toxin and maintenance of the virus have no detectable fitness costs to the host.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that production of active toxin and maintenance of the virus have no detectable fitness costs to the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the competition experiments showing no fitness impact.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "95875381-771f-4f35-bef1-8ee0921fbca4",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C42",
+      "claim": "Killing ability was lost from all heteroplasmic diploid lines during intracellular competition experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that killing ability was lost from all lines, suggesting that the evolved viral variants outcompeted the ancestral variant (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "abe82456-c6b3-4bfc-91f4-6ddc281ef077",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C43",
+      "claim": "The derived viral variant fixed in most lines during intracellular competition experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing confirmed that the derived viral variant fixed in most lines (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "4730d075-9300-4a77-a0e8-f33ecf2c9ad8",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C44",
+      "claim": "A de novo G131D viral variant arose and swept in one line during intracellular competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Further investigation into one of these lines revealed that the decrease in frequency of the viral variant corresponded to the sweep of a de novo G131D variant (Figure 5C, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5C inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "814103a8-ef37-400f-afaa-a311097b3812",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C45",
+      "claim": "The evolutionary success of the observed viral variants results from their selective advantage over viral competitors within the context of an individual cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral variants therefore appear to constantly arise, and the evolutionary success of the observed variants results from their selective advantage over viral competitors within the context of an individual cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the intracellular competition experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "02c3bc31-29a6-4485-85ca-2dcbad4efe02",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C46",
+      "claim": "The yur1 mutation in the Intermediate clone was previously estimated to provide a 4.6 \u00b1 0.5% fitness advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "The yur1 mutation in the Intermediate clone and the ste4 mutation in the late clone were previously estimated to provide a 4.6 \u00b1 0.5% and 2.6 \u00b1 0.4% fitness advantage, respectively (Buskirk et al., 2017), consistent with the fitness differences between the Intermediate and Early clones and the Late and Intermediate clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Buskirk et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "52b061a5-4969-4177-94d7-62ef2a5aeebd",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C47",
+      "claim": "The ste4 mutation in the Late clone was previously estimated to provide a 2.6 \u00b1 0.4% fitness advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "The yur1 mutation in the Intermediate clone and the ste4 mutation in the late clone were previously estimated to provide a 4.6 \u00b1 0.5% and 2.6 \u00b1 0.4% fitness advantage, respectively (Buskirk et al., 2017), consistent with the fitness differences between the Intermediate and Early clones and the Late and Intermediate clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Buskirk et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "783b7740-b63e-416d-8916-540cfbd8c6c8",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C48",
+      "claim": "Killer viruses are dsRNA viruses that encode toxin/immunity systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Many fungi, including the yeast Saccharomyces cerevisiae, are host to non-infectious, double-stranded RNA 'killer' viruses (Wickner, 1976; Schmitt and Breinig, 2002; Schmitt and Breinig, 2006; Rowley, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "edce0969-9535-4cc6-bd97-fd09d7f29f0f",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C49",
+      "claim": "Killer viruses produce a toxin that kills non-killer containing yeasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Killer viruses produce a toxin that kills non-killer containing yeasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about killer viruses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "65fff221-6829-4c3f-a31e-9f5ca7515ebb",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C50",
+      "claim": "The K1 toxin gene contains four subunits (\u03b4, \u03b1, \u03b3, and \u03b2), which are post-translationally processed and glycosylated to produce an active two-subunit (\u03b1, \u03b2) secreted toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "The K1 toxin gene contains four subunits (\u03b4, \u03b1, \u03b3, and \u03b2), which are post-translationally processed and glycosylated to produce an active two-subunit (\u03b1, \u03b2) secreted toxin (Bostian et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Bostian et al., 1983.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "e784bdc5-a542-4024-a57d-e5fac96ad9be",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C51",
+      "claim": "Immunity to the toxin is conferred by the pre-processed version of the toxin, thus requiring cells to maintain the virus for protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunity to the toxin is conferred by the pre-processed version of the toxin, thus requiring cells to maintain the virus for protection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the killer system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "48f13c62-036b-4cbc-9e6b-ed7129cabe03",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C52",
+      "claim": "The primary receptors of the K1 killer toxin are \u03b2-glucans in the yeast cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary receptors of the K1 killer toxin are \u03b2-glucans in the yeast cell wall (Pieczynska et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Pieczynska et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "8139d035-4cc3-4d4f-b143-e6fafb807584",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C53",
+      "claim": "Each yeast cell contains approximately 10^2 viral particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The likelihood of such a scenario occurring is aided by the large population size of the extrachromosomal element: each of the ~105 cells that comprise each yeast population contains ~102 viral particles (Bostian et al., 1983; Ridley and Wickner, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Bostian et al., 1983 and Ridley and Wickner, 1983.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "f285f0ee-8e57-4802-8dcd-80cf7a7b674d",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C54",
+      "claim": "Each yeast population contains approximately 10^5 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The likelihood of such a scenario occurring is aided by the large population size of the extrachromosomal element: each of the ~105 cells that comprise each yeast population contains ~102 viral particles (Bostian et al., 1983; Ridley and Wickner, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing the population size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "4a3ddea6-b43a-45c6-b682-4746c9df3a11",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C55",
+      "claim": "Approximately 600 haploid populations of yeast were evolved asexually for 1000 generations in rich glucose medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we evolved ~600 haploid populations of yeast asexually for 1000 generations in rich glucose medium (Lang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Lang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "8b10f129-d97f-442a-888d-c42f528b02b7",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C56",
+      "claim": "Population BYS1-D08 underwent four clonal replacements over 1000 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence evolution (from Lang et al., 2013) shows that population BYS1-D08 underwent four clonal replacements over 1000 generations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption with citation to Lang et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "408aaec8-8026-46c9-a12d-576397fdbaaf",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C57",
+      "claim": "Nontransitive interactions among extant species are well documented as contributors to biological diversity and community structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In ecology, nontransitive interactions among extant species are well documented as contributors to biological diversity and community structure (Kerr et al., 2002; K\u00e1rolyi et al., 2005; Laird and Schamp, 2006; Reichenbach et al., 2007; Menezes et al., 2019) and arise by way of resource (Sinervo and Lively, 1996; Precoda et al., 2017) or interference competition (Kirkup and Riley, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations to ecological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "66e26757-a273-4a3a-b8ee-00ef19957deb",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C58",
+      "claim": "The importance of nontransitivity in ecology was first put forward in the 1970s.",
+      "claim_type": "EXPLICIT",
+      "source": "First put forward in the 1970s (Gilpin, 1975; Jackson and Buss, 1975; May and Leonard, 1975; Petraitis, 1979), the importance of nontransitivity in ecology has garnered extensive theoretical and experimental consideration over the last half century (e.g. Sinervo and Lively, 1996; Kerr et al., 2002; Allesina and Levine, 2011; Rojas-Echenique and Allesina, 2011; Soliveres et al., 2015; Liao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to papers from the 1970s.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "31703b77-d0bb-421c-813b-3b1f06b77c72",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C59",
+      "claim": "Testing for nontransitive interactions along lines of genealogical descent is not possible in natural populations because it requires the ability to directly compete an organism against its extinct genealogical ancestors.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing the hypothesis that nontransitive interactions arise along lines of genealogical descent, however, is not possible in natural populations because it requires our ability to directly compete an organism against its immediate predecessor as well as against its extinct genealogical ancestors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical constraint on studying natural populations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "0f2c3583-9f62-4248-9ba5-1ebe48ea2028",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C60",
+      "claim": "Laboratory experimental evolution, in which populations are preserved as a 'frozen fossil record', affords the unique opportunity to test for nontransitivity along a genealogical lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Fortunately, laboratory experimental evolution, in which populations are preserved as a 'frozen fossil record', affords us with the unique opportunity to test for nontransitivity along a genealogical lineage by directly competing a given genotype against the extant as well as the extinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for using experimental evolution.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "9a1a4b74-bba7-4f70-a81d-9f91282c5312",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C61",
+      "claim": "An early study of laboratory evolution of yeast in glucose-limited chemostats appeared to demonstrate that nontransitive interactions arise along a line of genealogical descent.",
+      "claim_type": "EXPLICIT",
+      "source": "An early study of laboratory evolution of yeast in glucose-limited chemostats appeared to demonstrate that nontransitive interactions arise along a line of genealogical descent (Paquin and Adams, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Paquin and Adams, 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "16ef1f2d-6983-4722-bda7-62d40767b8d2",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C62",
+      "claim": "The specific events that led to nontransitivity in the Paquin and Adams study are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the specific events that led to nontransitivity in this case are unknown, and it is likely the case that the authors were measuring interactions between contemporaneous lineages in a population, rather than individuals along a direct line of genealogical descent, as they report (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a critique of the Paquin and Adams study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "572a42c5-25fe-429f-8ebb-3cfc8029e366",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C63",
+      "claim": "Adaptive diversification is common in experimental evolution due to spatial structuring and metabolic diversification.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, adaptive diversification is common in experimental evolution due to spatial structuring (Rainey and Travisano, 1998; Frenkel et al., 2015) and metabolic diversification (Paquin and Adams, 1983; Helling et al., 1987; Turner et al., 1996; Spencer et al., 2008; Kinnersley et al., 2014), and is typically maintained by negative frequency-dependent selection, in which rare genotypes are favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations to experimental evolution studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "b49610e1-8d1e-4b54-addc-13c784270b1b",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C64",
+      "claim": "Positive frequency-dependent selection is not typically observed in experimental evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive frequency-dependent selection, in contrast, is not typically observed in experimental evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation about experimental evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "7d50cbf2-8d9d-4e66-8484-563bffc86bf0",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C65",
+      "claim": "Negative frequency-dependent selection is more commonly observed in experimental evolution than positive frequency-dependent selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the two, negative frequency-dependent selection is more commonly observed in experimental evolution, arising, for example, from nutrient cross-feeding (Helling et al., 1987; Turner et al., 1996; Spencer et al., 2008; Kinnersley et al., 2014; Plucain et al., 2014; Green et al., 2020) and spatial structuring (Rainey and Travisano, 1998; Frenkel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "077a75ff-8795-4bab-853b-dffbadfdb003",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C66",
+      "claim": "A crowded, structured environment provides an opportunity for allelopathies to offer a local advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "A crowded, structured environment provides an opportunity for allelopathies to offer a local advantage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "cef23f38-2024-4bce-8810-8e57692b0657",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C67",
+      "claim": "Killer toxin has been shown to impart frequency-dependent selection in structured environments due to a high local concentration of secreted toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Killer toxin has been shown to impart frequency-dependent selection in structured environments due to a high local concentration of secreted toxin (Greig and Travisano, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Greig and Travisano, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "7c383a49-9aee-4ce1-9a52-a8da9a373c44",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C68",
+      "claim": "Nontransitivity in the experimental system is due, in part, to interference competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Nontransitivity in our experimental system is due, in part, to interference competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "fc988105-ee1a-4c02-8e69-c35c9abd9862",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C69",
+      "claim": "Interference competition can drive ecological nontransitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interference competition can drive ecological nontransitivity (Kerr et al., 2002; Kirkup and Riley, 2004), suggesting that similar mechanisms may underlie both ecological and genealogical nontransitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Kerr et al., 2002 and Kirkup and Riley, 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "f9ea5677-4671-4965-b199-448622ef14ee",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C70",
+      "claim": "The adaptive evolution of genealogical nontransitivity does not follow the canonical model of a co-evolutionary arms race.",
+      "claim_type": "EXPLICIT",
+      "source": "The adaptive evolution of genealogical nontransitivity in our system does not follow the canonical model of a co-evolutionary arms race where the host evolves mechanisms to prevent the selfish replication of the virus and the virus evolves to circumvent the host's defenses (Daugherty and Malik, 2012; Rowley, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Daugherty and Malik, 2012 and Rowley, 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "068e7520-28c4-4633-aa45-d7d311539a35",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C71",
+      "claim": "Mutations that fix in the viral and yeast populations do so because they provide a direct fitness advantage in their respective populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, mutations that fix in the viral and yeast populations do so because they provide a direct fitness advantage in their respective populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "fd821b21-6257-4acb-b60c-0bde2765d4e0",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C72",
+      "claim": "Nearly all mutations in toxin-resistance genes are nonsynonymous (18 nonsense/frameshift, 21 missense, one synonymous).",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly all mutations in these toxin-resistance genes are nonsynonymous (18 nonsense/frameshift, 21 missense, one synonymous), indicating a strong signature of positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with mutation counts indicating positive selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "3bdb41a8-916c-4469-8e38-4d194ce6d05c",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C73",
+      "claim": "The nuclear genome adapts in response to the presence of the killer toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the nuclear genome adapts in response to the presence of the killer toxin; however, the effect of these mutations may be beyond the resolution of our fitness assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enrichment of mutations in toxin-resistance genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "42cdba39-2648-42e4-8bd0-6c0ae8857df3",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C74",
+      "claim": "Defective interfering particles are thought to outcompete full-length virus due to their decreased replication time.",
+      "claim_type": "EXPLICIT",
+      "source": "These defective interfering particles are thought to outcompete full-length virus due to their decreased replication time (Kane et al., 1979; Ridley and Wickner, 1983; Esteban and Wickner, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Kane et al., 1979, Ridley and Wickner, 1983, and Esteban and Wickner, 1988.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "e80bd5e3-f71b-4d1e-b2e6-4afc0f991421",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C75",
+      "claim": "Defective interfering particles are common to RNA viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Defective interfering particles are common to RNA viruses (Holland et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Holland et al., 1982.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "8a3ffada-ed76-4dd8-b3e7-cffe94916747",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C76",
+      "claim": "There are several different killer viruses in yeast (e.g. K1, K2, K28, and Klus), each of which arose independently and has a distinct mechanism of action.",
+      "claim_type": "EXPLICIT",
+      "source": "Though there are several different killer viruses in yeast (e.g. K1, K2, K28, and Klus), each arose independently and has a distinct mechanism of action (Rodr\u00edguez-Cousi\u00f1o et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Rodr\u00edguez-Cousi\u00f1o et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "b6b44e6b-d445-44be-b326-dc2fad62e738",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C77",
+      "claim": "Nontransitive interactions may arise frequently through cycles of gains and losses of toxin production and toxin immunity in lineages that contain RNA viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Nontransitive interactions may therefore arise frequently through cycles of gains and losses of toxin production and toxin immunity in lineages that contain RNA viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "bbc4c302-3642-4ce0-ab41-66b808f3e6c8",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C78",
+      "claim": "Reports of nontransitivity arising along evolutionary lines of descent are rare.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports of nontransitivity arising along evolutionary lines of descent are rare (de Visser and Lenski, 2002; Beaumont et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to de Visser and Lenski, 2002 and Beaumont et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "28a709d0-0a83-49e6-82cb-efefaa305785",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C79",
+      "claim": "The Paquin and Adams experiment was correctly interpreted under the assumption that large asexual populations evolved by clonal replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment was correctly interpreted under the assumption\u2014generally accepted at the time\u2014that large asexual populations evolved by clonal replacement, where new beneficial mutations arise and quickly sweep to fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical context for the Paquin and Adams study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "e679a31f-b9a5-4d41-94d6-21380337fa85",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C80",
+      "claim": "The strong selection/weak mutation model is now known to be an oversimplification for large asexual populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This strong selection/weak mutation model, however, is now known to be an oversimplification for large asexual populations, where multiple beneficial mutations arise and spread simultaneously through the population leading to extensive clonal interference (Gerrish and Lenski, 1998; Kvitek and Sherlock, 2013; Lang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Gerrish and Lenski, 1998, Kvitek and Sherlock, 2013, and Lang et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "91af9488-1b7a-4f9e-8975-9d8894ccb596",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C81",
+      "claim": "The duration of the Paquin and Adams experiment was too short for the number of reported selective sweeps to have occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the duration of the Paquin and Adams experiment was too short for the number of reported selective sweeps to have occurred (4 in 245 generations and 6 in 305 generations, for haploids and diploids, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a critique of the Paquin and Adams study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "b4165430-e6f1-4eaf-a615-7435c45faaa0",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C82",
+      "claim": "The strongest known beneficial mutations in glucose-limited chemostats, hexose transporter amplifications, provide a fitness advantage of ~30%.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest known beneficial mutations in glucose-limited chemostats, hexose transporter amplifications, provide a fitness advantage of ~30% (Gresham et al., 2008; Kvitek and Sherlock, 2011) and would require a minimum of ~150 generations to fix in a population size of 4 \u00d7 109 (Otto and Whitlock, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Gresham et al., 2008, Kvitek and Sherlock, 2011, and Otto and Whitlock, 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "41630bb3-093a-45b8-b693-bd8c755bd94e",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C83",
+      "claim": "Paquin and Adams observed nontransitive interactions among contemporaneous lineages\u2014ecological nontransitivity\u2014rather than nontransitivity among genealogical descendants.",
+      "claim_type": "EXPLICIT",
+      "source": "We contend that Paquin and Adams observed nontransitive interactions among contemporaneous lineages\u2014ecological nontransitivity\u2014rather than nontransitivity among genealogical descendants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the authors' interpretation of the Paquin and Adams study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "eeb1777a-acbe-4632-860b-229cae9688a3",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C84",
+      "claim": "Apart from the present study, there are no other examples of nontransitivity arising along a line descent.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from the present study, there are no other examples of nontransitivity arising along a line descent, but numerous examples of nontransitive interactions among contemporaneous lineages (Sinervo and Lively, 1996; Kerr et al., 2002; Kirkup and Riley, 2004; K\u00e1rolyi et al., 2005; Laird and Schamp, 2006; Reichenbach et al., 2007; Precoda et al., 2017; Menezes et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations to studies of ecological nontransitivity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "9407b409-69fd-4d02-a5a3-7b679945ae3a",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C85",
+      "claim": "The continuous action of selection can give rise to genotypes that are less fit compared to a distant ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the continuous action of selection can give rise to genotypes that are less fit compared to a distant ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "10477cba-a4e5-4787-bf4b-af2626a37f37",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C86",
+      "claim": "Nontransitive interactions can arise quickly due to multilevel selection in a host/virus system.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that nontransitive interactions can arise quickly due to multilevel selection in a host/virus system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "0c3ce738-28f4-4a81-aa14-5949188f6fb5",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C87",
+      "claim": "Multi-level selection is common in the context of this experiment\u2014most yeast populations fix nuclear and viral variants by Generation 1000.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of this experiment multi-level selection is common\u2014most yeast populations fix nuclear and viral variants by Generation 1000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "1685a89d-9f77-4d79-9eca-071833df5f6f",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C88",
+      "claim": "Adaptive evolution is capable of giving rise to nontransitive fitness interactions along an evolutionary lineage, even under simple laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results demonstrate that adaptive evolution is capable of giving rise to nontransitive fitness interactions along an evolutionary lineage, even under simple laboratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "d654e5ef-caf7-463f-a3b3-61f79aecd1bc",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C89",
+      "claim": "Populations were diluted 1:210 into 128 \u03bcl of YPD + A and T in round-bottom 96-well plates using a BiomekFX liquid handler.",
+      "claim_type": "EXPLICIT",
+      "source": "Each day populations were diluted 1:210 into 128 \u03bcl of YPD + A and T in round-bottom 96-well plates using a BiomekFX liquid handler.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "523eae42-da2e-46ae-88a6-39f1dc3a65f6",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C90",
+      "claim": "The dilution scheme equates to 10 generations of growth per day at an effective population size of ~10^5.",
+      "claim_type": "EXPLICIT",
+      "source": "The dilution scheme equates to 10 generations of growth per day at an effective population size of ~105.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "e12d96bd-5452-4d46-9fb0-3e464404d0dd",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C91",
+      "claim": "Early, Intermediate, and Late clones were isolated by resurrecting population BYS1-D08 at Generation 0, 335, and 1000, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Early, Intermediate, and Late clones were isolated by resurrecting population BYS1-D08 at the Generation 0, 335, and 1000, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "0e2b3852-aec0-4cc4-991c-73d13bbae38d",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C92",
+      "claim": "The specific time points (Generation 0, 335, and 1000) were selected to coincide with the completion of a selective sweep.",
+      "claim_type": "EXPLICIT",
+      "source": "These specific time points were selected to coincide with the completion of a selective sweep (Lang et al., 2013), when the population is expected to be near clonal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with citation to Lang et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "68252410-bdde-4770-be40-942fa751dcca",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C93",
+      "claim": "Competitions were performed for 50 generations under conditions identical to the evolution experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitions were performed for 50 generations under conditions identical to the evolution experiment (Lang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with citation to Lang et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "1ce54409-4ca5-422d-b1d2-02a9878db5f0",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "claim_id": "C94",
+      "claim": "Relative fitness was calculated as the slope of the change in the natural log ratio between the experimental and reference strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative fitness was calculated as the slope of the change in the natural log ratio between the experimental and reference strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Nontransitive fitness interactions arose in population BYS1-D08 over 1000 generations. The Intermediate clone (Gen 335) is 3.8% fitter than the Early clone (Gen 0), and the Late clone (Gen 1000) is 1.2% fitter than the Intermediate clone, yet the Late clone exhibits frequency-dependent fitness disadvantage against the Early clone. This nontransitivity results from beneficial nuclear mutations (yur1, ste4) combined with stepwise viral deterioration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7, C11-C12, C14, C46-C47 provide converging evidence for nontransitivity through fitness measurements at multiple starting frequencies (Figure 1B), virus-curing experiments demonstrating the role of the killer virus, and consistency with previously measured effects of nuclear mutations. The mechanistic explanation linking nuclear adaptation and viral deterioration is well-supported by experimental manipulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "c7dc6fb8-73b6-402e-8c29-31b81c42f632",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The killer phenotype changed stepwise during evolution of BYS1-D08: the ancestral Early clone exhibits killing ability and immunity (K+I+), the Intermediate clone lost killing ability but retained immunity (K-I+), and the Late clone lost both killing ability and immunity (K-I-). Viral mutations are sufficient to explain these phenotypic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 document the phenotypic progression using halo assays (Figures 1A, 1\u2014figure supplement 2-3), and C38 demonstrates sufficiency through cytoduction experiments (Figure 5\u2014figure supplement 1) where transferred viral variants confer the expected phenotypes. The experimental design appropriately isolates viral from nuclear contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "50c6606c-900d-4e13-a1ef-46641e875634",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Approximately half of 142 evolved yeast populations lost or weakened killing ability by Generation 1000, with ~10% losing both killing and immunity. Loss of immunity without loss of killing was never observed. This indicates that multilevel selection (fixing both nuclear and viral mutations) is common under these experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 are directly supported by phenotypic screening data (Figure 2, Figure 2\u2014figure supplement 1) across 142 populations. Claims C3 and C87 extend this to conclude multilevel selection is common, which is well-supported by the high frequency of phenotypic changes attributable to viral evolution combined with known nuclear adaptation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "fc7171cc-58ec-4266-8865-17a20349f06d",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Viral genome sequencing revealed that populations losing killing ability possess 1-3 mutations in the M1 killer virus coding sequence (mostly missense), while control populations retaining the killer phenotype had only one synonymous mutation. There is strong statistical correlation (p=1.4\u00d710\u207b\u00b9\u00b3) between viral mutations and loss of killing ability, with an estimated half of all populations fixing phenotype-altering viral variants by Generation 1000.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 are supported by viral genome sequencing data from 67 populations (Figure 3A). The strong statistical correlation (C25) and stark contrast between experimental and control populations (C23-C24) provide compelling evidence. The estimate in C26 is reasonable given the data, though it relies on extrapolation from the sequenced subset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "896573a7-0c14-49b7-8c07-0dc88e4cbea1",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Among populations that lost killing ability, 42 of 57 fixed one of three single nucleotide polymorphisms (D106G, D253N, I292M), which likely existed at low frequency in the ancestral culture. An additional 34 putative de novo point mutations arose during evolution of individual populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by sequencing data (Supplementary file 1) and detection of D106G in early clones (C28). The inference that common polymorphisms were ancestral standing variation is reasonable given their high frequency and detection in founding populations. The distinction between standing variation and de novo mutations is appropriately made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "7d5fb849-9a4c-4217-937a-de3dee4f7b40",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The K1 coding sequence shows balancing selection (dN/dS = 0.90) and extreme transition:transversion bias (R = 6.4, p<0.0001). This bias appears specific to viral genomes, as nuclear genomes show much lower ratios (R = 0.8), suggesting a mutational bias of the viral RNA-dependent RNA polymerase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by mutational spectrum analysis (Supplementary file 2) with appropriate statistical tests. The comparison to nuclear genome mutation patterns (C32) and citation of similar patterns in other viral systems strengthens the interpretation. The dN/dS ratio and transition bias are clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "4f6063f8-72df-4047-b130-986be9de07f6",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Two viral genomes with large deletions in the K1 ORF were detected. These deletion mutants maintain cis signals for replication and packaging, and coexist with full-length viral variants in the same populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by sequencing data (Figure 3B) and appropriate citations for the functional requirements of deletion mutants (C34). The observation of coexistence (C35) is important for understanding within-host viral dynamics and is clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "22ea536a-e6d7-403d-9a40-17121746801f",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Viral sweeps often coincide with nuclear sweeps in time-course data. Since nuclear sweeps contain known driver mutations, viral variants may be hitchhiking rather than driving adaptation. Consistent with this, the Intermediate clone's viral variant confers no significant fitness effect compared to the ancestral virus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by time-course sequencing (Figure 4) showing temporal coincidence of sweeps. Claim C13 provides experimental support through virus-swapping experiments (Figure 1B). The hitchhiking hypothesis is appropriately presented as a possibility (C37) rather than certainty, and is well-supported by the lack of fitness effect in C13.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "27589bb9-72aa-4dd7-802b-968c22c46d6a",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Frequency-dependent selection was observed when one competitor had killing ability and the other lacked immunity. However, when killer phenotypes were compatible, host fitness was unaffected by viral variant identity or even virus presence, suggesting no detectable fitness cost of toxin production or virus maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by systematic competition experiments with cytoductants (Figure 5A). The experimental design appropriately tests different phenotypic combinations. The inference of no fitness cost (C41) is reasonable given the data, though the resolution of the fitness assay should be considered when interpreting negative results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "e5ebd269-1f64-48f1-b3cc-729d446df991",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In intracellular competition experiments using heteroplasmic diploids, evolved viral variants outcompeted ancestral variants, with derived variants fixing in most lines. A de novo G131D variant arose and swept in one line. This demonstrates that viral variants have selective advantage within individual cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by intracellular competition experiments with appropriate controls to minimize among-cell selection (Figure 5B-C). The use of both Sanger and Illumina sequencing (Figure 5\u2014figure supplement 2) strengthens confidence in frequency estimates. The observation of de novo variants arising during the experiment (C44) provides additional evidence for ongoing intracellular selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "9e5db5df-4d4d-423f-b845-632b04d24d84",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Nuclear genomes show statistical enrichment of mutations in \u03b2-glucan biosynthesis genes (6-fold, p<0.0001) and genes conferring K1 toxin resistance (40 mutations in 11 of 36 genes, p=1.8\u00d710\u207b\u2075). Nearly all mutations in toxin-resistance genes are nonsynonymous (18 nonsense/frameshift, 21 missense, 1 synonymous). However, these mutations are not sufficient to account for loss of killing ability or immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20, C72-C73 are supported by appropriate statistical tests and mutation counts. The enrichment analyses are properly conducted with significant p-values. Claim C20 appropriately notes that despite enrichment, these nuclear mutations don't explain the phenotypic changes, which is consistent with the viral mutation data. The signature of positive selection (C72) is clear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "9777af1e-08d5-49b0-834e-f260d9269309",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Nontransitivity in this system arises through interference competition rather than a co-evolutionary arms race. Mutations fix in viral and yeast populations because they provide direct fitness advantages in their respective populations, not through antagonistic host-virus coevolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 provide a mechanistic interpretation supported by the experimental data. The distinction from canonical arms race dynamics (C70) is appropriate given that viral deterioration (not increased virulence) is observed. The interpretation that mutations provide direct fitness benefits (C71) is supported by the intracellular competition data and lack of fitness costs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "14a6ee13-6776-4ba2-8182-a1078a2d46b2",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The continuous action of selection can give rise to genotypes less fit than distant ancestors. Nontransitive interactions can arise quickly through multilevel selection in host/virus systems. Adaptive evolution is capable of producing nontransitive fitness interactions along evolutionary lineages, even under simple laboratory conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86, C88 represent the main conclusions of the study and are well-supported by the comprehensive experimental evidence including fitness measurements, phenotypic tracking, genome sequencing, and mechanistic experiments. The demonstration spans multiple levels (nuclear and viral) and multiple populations, providing robust support for these broad conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "1118a3a1-184c-40db-b924-8e5b5a25be67",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors reinterpret the Paquin and Adams (1983) study, arguing that it likely observed ecological nontransitivity among contemporaneous lineages rather than genealogical nontransitivity. This reinterpretation is based on modern understanding of clonal interference and the implausibly short time for the reported number of selective sweeps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62, C79-C83 provide a critical reanalysis of prior work. The critique is well-reasoned, citing modern understanding of population genetics (C80) and providing quantitative arguments about sweep dynamics (C81-C82). The reinterpretation (C83) is appropriately presented as the authors' contention rather than definitive proof, and is supported by sound reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    },
+    {
+      "id": "06ad2ad2-4d1d-481b-9781-21477e235193",
+      "content_id": "8385116f-3675-4e63-af9a-7dcff7ec8f52",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methodological details of the evolution experiment and fitness assays are provided, including daily 1:210 dilutions (10 generations/day, effective population size ~10\u2075), clone isolation at generations coinciding with selective sweep completion, and 50-generation competition assays with fitness calculated from log-ratio slopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C94 describe methodological details that are clearly stated in the Materials and methods section with appropriate citations to previous work (Lang et al., 2011, 2013). These methods are standard for experimental evolution studies and are described with sufficient detail for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:17:09.690203Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f5b7fa70-d1bc-4fb9-b85e-43a91e7f89ac",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "f7279009-602d-4d7f-a3b1-7e2a771f98e9",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "c3c2f620-0939-44bf-ab3f-7ae22357f3bb",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "da67642b-83d2-4e85-a8e9-ed37ce2e83b5",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "cea1bc3f-354a-480c-a9fa-0792fb0dccc4",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "0e82591f-d456-4b58-9908-783202b99d6b",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "42f034f6-2dd2-4a7e-9fe0-bd03218c6d34",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "895e56c5-bd33-4721-961a-8ad26a9dca2f",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "89a78126-1d1f-4269-8a3b-dc4e3f179118",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "02c3bc31-29a6-4485-85ca-2dcbad4efe02",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "52b061a5-4969-4177-94d7-62ef2a5aeebd",
+      "result_id": "71bcf6e4-02be-4187-9cb2-ee781bc3c33e"
+    },
+    {
+      "claim_id": "169b10b6-b245-420d-8754-fd29dce5e720",
+      "result_id": "c7dc6fb8-73b6-402e-8c29-31b81c42f632"
+    },
+    {
+      "claim_id": "521a199c-dc80-4625-9156-bff611690d31",
+      "result_id": "c7dc6fb8-73b6-402e-8c29-31b81c42f632"
+    },
+    {
+      "claim_id": "131bd88d-a4a6-44a3-93f0-84090b8bd669",
+      "result_id": "c7dc6fb8-73b6-402e-8c29-31b81c42f632"
+    },
+    {
+      "claim_id": "a4804ef1-5b12-43a7-aaee-08cac67662fe",
+      "result_id": "c7dc6fb8-73b6-402e-8c29-31b81c42f632"
+    },
+    {
+      "claim_id": "026d28da-e7fb-478d-a641-892d15f7fd8f",
+      "result_id": "50c6606c-900d-4e13-a1ef-46641e875634"
+    },
+    {
+      "claim_id": "971e6126-b6e4-4978-9082-c4bb3d0e10e8",
+      "result_id": "50c6606c-900d-4e13-a1ef-46641e875634"
+    },
+    {
+      "claim_id": "c2091f57-5947-476e-9cf1-48affce6c909",
+      "result_id": "50c6606c-900d-4e13-a1ef-46641e875634"
+    },
+    {
+      "claim_id": "b9fea43f-02c5-41b2-ab2e-33b41cbf1f03",
+      "result_id": "50c6606c-900d-4e13-a1ef-46641e875634"
+    },
+    {
+      "claim_id": "0c3ce738-28f4-4a81-aa14-5949188f6fb5",
+      "result_id": "50c6606c-900d-4e13-a1ef-46641e875634"
+    },
+    {
+      "claim_id": "1aba955b-31c9-4631-818d-b15995e2af75",
+      "result_id": "fc7171cc-58ec-4266-8865-17a20349f06d"
+    },
+    {
+      "claim_id": "6bf0a985-0dfa-418c-a00f-e07c3473a086",
+      "result_id": "fc7171cc-58ec-4266-8865-17a20349f06d"
+    },
+    {
+      "claim_id": "4a8257e1-7b5a-4ac2-9869-37b8783819af",
+      "result_id": "fc7171cc-58ec-4266-8865-17a20349f06d"
+    },
+    {
+      "claim_id": "7de5ca97-0986-4acf-85b6-337e53a1221f",
+      "result_id": "fc7171cc-58ec-4266-8865-17a20349f06d"
+    },
+    {
+      "claim_id": "311d195b-cd2e-4758-8b72-5ed47056d4de",
+      "result_id": "fc7171cc-58ec-4266-8865-17a20349f06d"
+    },
+    {
+      "claim_id": "8081b531-5408-4493-9c34-3bf7c387b529",
+      "result_id": "fc7171cc-58ec-4266-8865-17a20349f06d"
+    },
+    {
+      "claim_id": "b5a3dba1-eaee-4a68-b9de-92ab5ebdb872",
+      "result_id": "896573a7-0c14-49b7-8c07-0dc88e4cbea1"
+    },
+    {
+      "claim_id": "4784a49a-23f9-4215-84ae-3145e9d16326",
+      "result_id": "896573a7-0c14-49b7-8c07-0dc88e4cbea1"
+    },
+    {
+      "claim_id": "f332ebcd-3e39-4061-886f-e482eb8fa93e",
+      "result_id": "896573a7-0c14-49b7-8c07-0dc88e4cbea1"
+    },
+    {
+      "claim_id": "d9398ab0-b7d9-4228-8363-ca663067f579",
+      "result_id": "7d5fb849-9a4c-4217-937a-de3dee4f7b40"
+    },
+    {
+      "claim_id": "2ac2b7c8-8456-4907-b9ca-bdd2fb97490f",
+      "result_id": "7d5fb849-9a4c-4217-937a-de3dee4f7b40"
+    },
+    {
+      "claim_id": "f0e677b2-3dbb-454a-bc12-fd0a6c22b67f",
+      "result_id": "7d5fb849-9a4c-4217-937a-de3dee4f7b40"
+    },
+    {
+      "claim_id": "ad59f024-267a-4cce-83be-8af701d7d696",
+      "result_id": "4f6063f8-72df-4047-b130-986be9de07f6"
+    },
+    {
+      "claim_id": "322c4201-bcb1-4c79-ac9c-73b6075f8389",
+      "result_id": "4f6063f8-72df-4047-b130-986be9de07f6"
+    },
+    {
+      "claim_id": "03a9f82a-4e6d-4150-bfc4-df4637a4a762",
+      "result_id": "4f6063f8-72df-4047-b130-986be9de07f6"
+    },
+    {
+      "claim_id": "26daf006-22b4-4489-9ab7-6cb09c2776fa",
+      "result_id": "22ea536a-e6d7-403d-9a40-17121746801f"
+    },
+    {
+      "claim_id": "ed025b05-cb91-482a-9860-234e9e696a5b",
+      "result_id": "22ea536a-e6d7-403d-9a40-17121746801f"
+    },
+    {
+      "claim_id": "6a1475f4-9880-4aab-8b43-efd2fddc14f9",
+      "result_id": "22ea536a-e6d7-403d-9a40-17121746801f"
+    },
+    {
+      "claim_id": "67d685dd-89ec-4e03-9d38-d0df2f25f2fc",
+      "result_id": "27589bb9-72aa-4dd7-802b-968c22c46d6a"
+    },
+    {
+      "claim_id": "07ced601-0432-4c6c-baf4-8809b9114d7d",
+      "result_id": "27589bb9-72aa-4dd7-802b-968c22c46d6a"
+    },
+    {
+      "claim_id": "eff1e59a-a79d-4407-acc7-9f30c8862fef",
+      "result_id": "27589bb9-72aa-4dd7-802b-968c22c46d6a"
+    },
+    {
+      "claim_id": "95875381-771f-4f35-bef1-8ee0921fbca4",
+      "result_id": "e5ebd269-1f64-48f1-b3cc-729d446df991"
+    },
+    {
+      "claim_id": "abe82456-c6b3-4bfc-91f4-6ddc281ef077",
+      "result_id": "e5ebd269-1f64-48f1-b3cc-729d446df991"
+    },
+    {
+      "claim_id": "4730d075-9300-4a77-a0e8-f33ecf2c9ad8",
+      "result_id": "e5ebd269-1f64-48f1-b3cc-729d446df991"
+    },
+    {
+      "claim_id": "814103a8-ef37-400f-afaa-a311097b3812",
+      "result_id": "e5ebd269-1f64-48f1-b3cc-729d446df991"
+    },
+    {
+      "claim_id": "92d16366-3df4-4780-88c0-d024fc9058ed",
+      "result_id": "9e5db5df-4d4d-423f-b845-632b04d24d84"
+    },
+    {
+      "claim_id": "6fbeeed1-0180-4b62-a133-f8151ec42d75",
+      "result_id": "9e5db5df-4d4d-423f-b845-632b04d24d84"
+    },
+    {
+      "claim_id": "877a0eca-15de-43cd-a7cb-e1948ad31b54",
+      "result_id": "9e5db5df-4d4d-423f-b845-632b04d24d84"
+    },
+    {
+      "claim_id": "fd821b21-6257-4acb-b60c-0bde2765d4e0",
+      "result_id": "9e5db5df-4d4d-423f-b845-632b04d24d84"
+    },
+    {
+      "claim_id": "3bdb41a8-916c-4469-8e38-4d194ce6d05c",
+      "result_id": "9e5db5df-4d4d-423f-b845-632b04d24d84"
+    },
+    {
+      "claim_id": "7c383a49-9aee-4ce1-9a52-a8da9a373c44",
+      "result_id": "9777af1e-08d5-49b0-834e-f260d9269309"
+    },
+    {
+      "claim_id": "fc988105-ee1a-4c02-8e69-c35c9abd9862",
+      "result_id": "9777af1e-08d5-49b0-834e-f260d9269309"
+    },
+    {
+      "claim_id": "f9ea5677-4671-4965-b199-448622ef14ee",
+      "result_id": "9777af1e-08d5-49b0-834e-f260d9269309"
+    },
+    {
+      "claim_id": "068e7520-28c4-4633-aa45-d7d311539a35",
+      "result_id": "9777af1e-08d5-49b0-834e-f260d9269309"
+    },
+    {
+      "claim_id": "9407b409-69fd-4d02-a5a3-7b679945ae3a",
+      "result_id": "14a6ee13-6776-4ba2-8182-a1078a2d46b2"
+    },
+    {
+      "claim_id": "10477cba-a4e5-4787-bf4b-af2626a37f37",
+      "result_id": "14a6ee13-6776-4ba2-8182-a1078a2d46b2"
+    },
+    {
+      "claim_id": "1685a89d-9f77-4d79-9eca-071833df5f6f",
+      "result_id": "14a6ee13-6776-4ba2-8182-a1078a2d46b2"
+    },
+    {
+      "claim_id": "9a1a4b74-bba7-4f70-a81d-9f91282c5312",
+      "result_id": "1118a3a1-184c-40db-b924-8e5b5a25be67"
+    },
+    {
+      "claim_id": "16ef1f2d-6983-4722-bda7-62d40767b8d2",
+      "result_id": "1118a3a1-184c-40db-b924-8e5b5a25be67"
+    },
+    {
+      "claim_id": "28a709d0-0a83-49e6-82cb-efefaa305785",
+      "result_id": "1118a3a1-184c-40db-b924-8e5b5a25be67"
+    },
+    {
+      "claim_id": "e679a31f-b9a5-4d41-94d6-21380337fa85",
+      "result_id": "1118a3a1-184c-40db-b924-8e5b5a25be67"
+    },
+    {
+      "claim_id": "91af9488-1b7a-4f9e-8975-9d8894ccb596",
+      "result_id": "1118a3a1-184c-40db-b924-8e5b5a25be67"
+    },
+    {
+      "claim_id": "b4165430-e6f1-4eaf-a615-7435c45faaa0",
+      "result_id": "1118a3a1-184c-40db-b924-8e5b5a25be67"
+    },
+    {
+      "claim_id": "41630bb3-093a-45b8-b693-bd8c755bd94e",
+      "result_id": "1118a3a1-184c-40db-b924-8e5b5a25be67"
+    },
+    {
+      "claim_id": "d654e5ef-caf7-463f-a3b3-61f79aecd1bc",
+      "result_id": "06ad2ad2-4d1d-481b-9781-21477e235193"
+    },
+    {
+      "claim_id": "523eae42-da2e-46ae-88a6-39f1dc3a65f6",
+      "result_id": "06ad2ad2-4d1d-481b-9781-21477e235193"
+    },
+    {
+      "claim_id": "e12d96bd-5452-4d46-9fb0-3e464404d0dd",
+      "result_id": "06ad2ad2-4d1d-481b-9781-21477e235193"
+    },
+    {
+      "claim_id": "0e2b3852-aec0-4cc4-991c-73d13bbae38d",
+      "result_id": "06ad2ad2-4d1d-481b-9781-21477e235193"
+    },
+    {
+      "claim_id": "68252410-bdde-4770-be40-942fa751dcca",
+      "result_id": "06ad2ad2-4d1d-481b-9781-21477e235193"
+    },
+    {
+      "claim_id": "1ce54409-4ca5-422d-b1d2-02a9878db5f0",
+      "result_id": "06ad2ad2-4d1d-481b-9781-21477e235193"
+    }
+  ],
+  "comparisons": []
+}

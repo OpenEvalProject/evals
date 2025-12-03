@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Flies exhibit a starvation-dependent switch in sugar preference: sated flies prefer the sweeter non-nutritive L-glucose over nutritive D-glucose, but after prolonged starvation (18 hr), they switch preference to D-glucose. This switch occurs independent of peripheral taste neurons and correlates with declining hemolymph sugar levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C21, and C22 are directly supported by binary food choice assay data in Figure 1A-B showing preference indices. Claim C3 is supported by data showing Gr64ab mutants (lacking peripheral sugar receptors) still switch preference. Claim C23 provides metabolic context from prior work. The experimental design is appropriate with adequate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The TRP\u03b3 channel is required for starved flies to select nutritive D-glucose over L-glucose. Two independent trp\u03b3 alleles (trp\u03b31 and trp\u03b3G4) eliminate the preference for D-glucose in starved flies, while sated trp\u03b3 mutants retain normal L-glucose preference. The phenotype is rescued by a genomic trp\u03b3+ transgene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24-C27 are well-supported by binary food choice assays (Figure 1A-C) showing consistent phenotypes across two independent alleles and genetic rescue. The use of multiple alleles and rescue experiments provides strong evidence that the phenotype is specifically due to loss of trp\u03b3 function rather than background mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The trp\u03b3 mutation does not impair peripheral taste responses. trp\u03b31 mutants show normal electrophysiological responses to sugars in taste sensilla, normal proboscis extension responses (PER) to both D-glucose and L-glucose in sated and starved conditions, and normal proboscis extension timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by tip recordings (Figure 1\u2014figure supplement 1A-B), PER assays (Figure 1\u2014figure supplement 1C-D), and timing measurements (Figure 1\u2014figure supplement 1E). These control experiments effectively rule out peripheral taste defects as the cause of the food selection phenotype, supporting a central (brain) role for TRP\u03b3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "TRP\u03b3 is expressed in DH44 neuroendocrine neurons in the pars intercerebralis (PI). The trp\u03b3 reporter is expressed broadly in the brain including the PI, and all six neurons with strongest trp\u03b3 reporter expression co-stain with anti-DH44. Since there are only six DH44 neurons in the PI, this indicates all DH44 neurons express trp\u03b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by immunohistochemistry data (Figure 1D-G) showing co-localization of the trp\u03b3 reporter with DH44. The inference that all DH44 neurons express trp\u03b3 (C34) is logical given the complete overlap observed. However, the authors acknowledge they lack independent verification that the GAL4 reporter fully recapitulates native trp\u03b3 expression, which introduces minor uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Inactivation of DH44 neurons or trp\u03b3 neurons impairs D-glucose preference in starved flies. Expressing Kir2.1 under Dh44-GAL4 or conditionally in trp\u03b3 neurons (using GAL80ts) eliminates D-glucose preference, while inactivating dILP2 neurons has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by binary food choice assays using Kir2.1-mediated neuronal silencing (Figure 1H, Figure 1\u2014figure supplement 1F). The temperature-shift experiments with GAL80ts (C38-C39) provide temporal control demonstrating that adult-specific inactivation is sufficient to produce the phenotype. The negative control with dILP2 neurons (C36) strengthens the specificity of the DH44 requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "TRP\u03b3 function in DH44 neurons is necessary and sufficient for proper D-glucose selection. Expressing trp\u03b3 in DH44 neurons fully rescues the preference deficit in trp\u03b3 mutants, while expression in chordotonal neurons does not. RNAi knockdown of trp\u03b3 specifically in DH44 cells impairs D-glucose selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by cell-type-specific rescue and knockdown experiments (Figure 1I, Figure 1\u2014figure supplement 1G). The rescue with Dh44-GAL4 but not iav-GAL4 (chordotonal neurons) demonstrates cell-type specificity. The RNAi knockdown provides additional evidence for necessity in DH44 neurons. Together, these experiments establish both necessity and sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "D-glucose induces Ca2+ responses in DH44 neurons, and these responses are paradoxically enhanced in trp\u03b3 mutants. While D-glucose (but not L-glucose) induces Ca2+ rises in control DH44 neurons, trp\u03b31 mutants show significantly higher peak Ca2+ responses to both 2.5 mM and 20 mM D-glucose, though oscillation frequencies remain similar to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by GCaMP6s Ca2+ imaging data (Figure 2A-F, Figure 2\u2014figure supplement 1). The finding that trp\u03b3 mutants show enhanced rather than reduced Ca2+ responses is surprising but well-documented. The use of heterozygous controls (trp\u03b31/+) showing normal responses strengthens the conclusion. However, the interpretation that higher Ca2+ necessarily reflects increased neuronal activity requires additional validation with voltage imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "TRP\u03b3 and Ca2+ influx maintain optimal basal neuronal activity in DH44 cells. Basal voltage signals (measured with ASAP2s) are significantly elevated in trp\u03b31 DH44 neurons compared to controls. When control neurons are placed in Ca2+-free buffer, they display elevated signals similar to trp\u03b31 mutants in Ca2+-containing buffer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by voltage imaging data using ASAP2s (Figure 3A). The Ca2+-free buffer experiments provide strong evidence that Ca2+ influx (presumably through TRP\u03b3) is required to maintain normal basal activity. The inference in C49 is well-supported by the data showing that removing either TRP\u03b3 or extracellular Ca2+ produces similar effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "TRP\u03b3 attenuates glucose-stimulated neuronal activity in DH44 neurons. D-glucose increases ASAP2s voltage signals in control cells (2.3-fold), but trp\u03b31 cells show significantly larger peak amplitudes. L-glucose has no effect in either genotype. The peak amplitude in trp\u03b31 is similar to responses in Ca2+-free conditions, while response latencies are unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by voltage imaging data (Figure 3B-G). The finding that TRP\u03b3 attenuates rather than enhances neuronal activity is counterintuitive but well-documented. The similarity between trp\u03b3 mutant responses and Ca2+-free conditions (C53) supports the model that Ca2+ influx through TRP\u03b3 dampens activity. The unchanged latencies (C54) indicate TRP\u03b3 affects response magnitude but not initiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "DH44 neuropeptide levels are reduced in trp\u03b3 mutants. Control DH44 cells show lower anti-DH44 immunofluorescence when stimulated with nutritive sugars (D-glucose, D-fructose) but not L-glucose. trp\u03b31 mutants show lower anti-DH44 signals than controls regardless of sugar stimulation, possibly reflecting higher basal activity and greater DH44 release even without stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by immunohistochemistry data (Figure 3\u2014figure supplement 1A-C). The interpretation that lower anti-DH44 staining reflects increased release (C58) is reasonable but indirect, as peptide release was not directly measured. The finding that trp\u03b3 mutants show reduced DH44 staining even without stimulation is consistent with the elevated basal activity observed in voltage imaging experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "TRP\u03b3 is required in DH44 neurons for maintaining normal cellular sugar levels. While hemolymph sugar levels are normal in trp\u03b3 and Dh44 mutants, cellular (whole-body) sugar levels are significantly reduced in both fed and starved conditions. This deficit is rescued by expressing trp\u03b3 in DH44 neurons (using Dh44-GAL4 or trp\u03b3-GAL4) but not in dilp2 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by biochemical measurements (Figure 4A-B, Figure 4\u2014figure supplement 1A). The distinction between normal hemolymph but reduced cellular sugars is important and well-documented. The cell-type-specific rescue experiments (C62-C63) demonstrate that TRP\u03b3 function specifically in DH44 neurons is required for normal cellular sugar homeostasis. The measurements appear technically sound with appropriate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "TRP\u03b3 in DH44 neurons is required for maintaining normal glycogen stores. Glycogen levels are diminished in both trp\u03b3 and Dh44 mutants. The reduction is rescued by expressing trp\u03b3 in DH44 neurons but not dilp2 neurons, and RNAi knockdown of trp\u03b3 in DH44 cells significantly decreases glycogen stores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by glycogen measurements (Figure 4C, Figure 4\u2014figure supplement 1B). The parallel deficits in trp\u03b3 and Dh44 mutants, combined with cell-type-specific rescue and knockdown experiments, provide strong evidence that TRP\u03b3 function in DH44 neurons is required for glycogen homeostasis. The consistency with the cellular sugar phenotype strengthens the overall metabolic story.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C10"
+    ],
+    "result": "TRP\u03b3 in DH44 neurons is required for survival during starvation. Control flies have an LT50 of 46.0 \u00b1 2.1 hr during starvation, while trp\u03b3 mutants (trp\u03b31: 34.0 \u00b1 2.9 hr; trp\u03b3G4: 30.0 \u00b1 3.2 hr) show significantly reduced survival. Expressing trp\u03b3 in DH44 neurons rescues survival (LT50 = 49.5 \u00b1 3.2 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 and C10 are supported by survival assay data (Figure 4\u2014figure supplement 1C). The reduced survival in trp\u03b3 mutants is consistent with their metabolic deficits (reduced cellular sugars and glycogen). The rescue by DH44-specific expression demonstrates that TRP\u03b3 function in these neurons is critical for starvation resistance. The use of Kaplan-Meier analysis and LT50 values is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TRP\u03b3 limits food consumption. The trp\u03b3 reporter is expressed in neuronal varicosities in the crop and intestine. trp\u03b3 mutants consume significantly more food than controls, with peak consumption at 15 min being 1.7-fold higher. After 30 min, internal food levels decline until reaching steady state by 90 min. Increased consumption occurs in both sated and starved trp\u03b3 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C72-C78 are supported by expression data (Figure 5A-B) and feeding assays using dye-labeled food (Figure 5C-D). The time-course measurements are well-controlled and show consistent elevation in trp\u03b3 mutants. The finding that increased feeding occurs in both sated and starved conditions (C78) indicates TRP\u03b3's role in feeding regulation is independent of metabolic state. The measurements appear technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "TRP\u03b3 function in DH44 neurons is required for limiting food consumption. Adult-specific inactivation of trp\u03b3 neurons with Kir2.1 causes excessive feeding. trp\u03b3 mutants consume more of both D-glucose and L-glucose. The increased feeding phenotype is rescued by expressing trp\u03b3 in DH44 neurons or with the genomic transgene. Inhibiting DH44 neurons also increases consumption, but Dh44 mutants show normal feeding levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by feeding assays with various genetic manipulations (Figure 5E-G, Figure 5\u2014figure supplement 1). The rescue experiments (C81-C82) demonstrate TRP\u03b3 function in DH44 neurons is sufficient to restore normal feeding. The discrepancy between DH44 neuron inactivation (increased feeding, C84) and Dh44 mutants (normal feeding, C85) suggests the neuropeptide itself may not be required, or compensation occurs in the mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "TRP\u03b3 in DH44 neurons regulates crop size in response to nutritional value. Control flies maintain intermediate crop sizes (score 3: 55.8%), with few fully extended crops (score 5: 9.7-13.0% for D-glucose, 27.4% for L-glucose). trp\u03b3 mutants show significantly more filled crops (score 5: 28.9% for sucrose) and fewer intermediate sizes. Unlike controls, trp\u03b3 mutants show similar crop distributions for D-glucose and L-glucose. The phenotype is rescued by expressing trp\u03b3 in DH44 neurons but not dilp2 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 are supported by crop size scoring data (Figure 6A-C, Figure 6\u2014figure supplement 1). The scoring system (1-5 scale) is clearly defined with representative images. The finding that trp\u03b3 mutants cannot distinguish between nutritive and non-nutritive sugars in crop filling (C93) parallels their deficit in food preference. The cell-type-specific rescue (C94) demonstrates TRP\u03b3 in DH44 neurons is required for proper crop size regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "TRP\u03b3 regulates crop contraction rates, but this function is independent of DH44 neurons. Control flies produce 20.0 \u00b1 0.6 contractions/min, with highest rates at intermediate crop sizes (score 3). trp\u03b3 mutants show significantly increased contraction rates regardless of sugar type, and unlike controls, show high contractions for both D-glucose and L-glucose. Despite higher contraction rates, crops contain more food. Dh44 mutants show normal contraction rates. The phenotype is rescued by trp\u03b3-GAL4 but not Dh44-GAL4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C103 are supported by crop contraction measurements (Figure 6D-G). The finding that crop contraction is regulated by TRP\u03b3 but not through DH44 neurons (C102-C103) indicates TRP\u03b3 has multiple independent functions. The observation that crops contain more food despite higher contractions (C100) suggests a regulatory defect in food transfer to the midgut, as the authors propose. The measurements appear technically sound with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "TRP\u03b3 regulates defecation, explaining why increased feeding does not lead to weight gain. Despite higher food intake, trp\u03b3 mutants show no weight differences from controls. Internal food levels in trp\u03b3 mutants decline after 15 min and equalize with controls by 90 min. trp\u03b3 mutants produce more excreta (higher number and larger size), resulting in increased total defecation. Dh44 mutants produce fewer but larger excreta, with normal total defecation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C113 are supported by weight measurements (Figure 7\u2014figure supplement 1), feeding time-course data (Figure 5C), and defecation assays (Figure 7A-D). The increased defecation in trp\u03b3 mutants provides a logical explanation for why increased feeding doesn't cause weight gain. The different phenotypes in trp\u03b3 versus Dh44 mutants (C108-C113) suggest complex regulation of defecation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "TRP\u03b3 regulation of defecation is independent of DH44 and dILP2 neurons. The increased defecation phenotype in trp\u03b3 mutants is rescued by the genomic transgene and trp\u03b3-GAL4-driven expression, but not by Dh44-GAL4 or dilp2-GAL4, indicating the effect is mediated by cells other than DH44 and dILP2 neuroendocrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by rescue experiments (Figure 7C-D). The failure of Dh44-GAL4 and dilp2-GAL4 to rescue defecation, while successfully rescuing other phenotypes, demonstrates that TRP\u03b3 regulates defecation through different neurons. This is consistent with the broad expression pattern of the trp\u03b3 reporter. The inference in C115 is well-supported by the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C122",
+      "C123"
+    ],
+    "result": "TRP\u03b3 in the brain is required for taste-independent food selection and metabolic responses to nutritive sugars under starvation. The starvation-induced switch from L-glucose to D-glucose represents a post-ingestive behavior occurring without peripheral sugar receptors. Mutations eliminating TRP\u03b3 disrupt this preference switch, and TRP\u03b3 plays a key role in both taste-independent food selection and metabolic responses to nutritive sugars during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118, C122-C123 represent the main conclusions of the study, stated in the Discussion. These conclusions are well-supported by the extensive experimental data throughout the manuscript, including food preference assays, expression patterns, rescue experiments, and metabolic measurements. The characterization as 'taste-independent' is justified by the normal peripheral taste responses in trp\u03b3 mutants and the brain-specific expression and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "TRP\u03b3 functions analogously to mammalian TRPC4 to attenuate neuronal firing through afterdepolarization. The authors propose that TRP\u03b3 holds DH44 neurons in an afterdepolarization state (reducing firing rate), and loss of this block in trp\u03b3 mutants underlies the higher ASAP2s signals and baseline activity. This afterdepolarization requires extracellular Ca2+, and excessive activity would deplete DH44 neuropeptide stores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C129 represent a mechanistic model proposed by analogy to TRPC4 in mammalian lateral septal neurons. While the voltage and Ca2+ imaging data (C47-C55) support that TRP\u03b3 attenuates neuronal activity in a Ca2+-dependent manner, the specific mechanism of 'afterdepolarization' (C126-C127) is speculative and not directly tested. The model is plausible and consistent with the data, but would require additional experiments (e.g., patch-clamp recordings) to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C130",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors propose that a key deficit in trp\u03b3 mutants is impaired glucose uptake, potentially mediated by DH44 release. They suggest the deficit in D-glucose selection may be partly due to impaired D-glucose metabolism, and that TRP\u03b3 promotes DH44 release, which in turn increases glucose uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130, C132-C133 represent hypotheses about the mechanism underlying the metabolic deficits. While the reduced cellular sugars and glycogen (C61, C64) are well-documented, glucose uptake was not directly measured (as the authors acknowledge in C130). The proposal that DH44 increases glucose uptake (C133) is supported by analogy to mammalian CRH but lacks direct evidence in flies. These are reasonable hypotheses requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "TRP\u03b3 is critical for establishing glycogen stores that enable survival during starvation. While trp\u03b3 and Dh44 mutants show similar deficits in multiple phenotypes (D-glucose selection, cellular sugars, glycogen, crop filling), Dh44 mutants do not show increased feeding, indicating the roles of DH44 and TRP\u03b3 are not identical despite TRP\u03b3 functioning in DH44 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 represent interpretations of the phenotypic data. C135 is well-supported by the correlation between reduced glycogen (C64) and reduced survival (C68). C136-C138 accurately describe the similarities and differences between trp\u03b3 and Dh44 mutant phenotypes, with C137 supported by Figure 5D. The interpretation that TRP\u03b3 and DH44 have overlapping but non-identical roles (C138) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "TRP\u03b3 has multiple functions in different cell types. While many TRP\u03b3 functions depend on expression in DH44 neurons, crop contraction rates and excretion size/number reflect roles in other cells. Consistent with this, Dh44 mutants exhibit normal crop contractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 are supported by the differential rescue patterns observed throughout the study. The failure of Dh44-GAL4 to rescue crop contractions (C102) and defecation (C114), while successfully rescuing other phenotypes, demonstrates TRP\u03b3 functions in multiple cell types. The normal crop contractions in Dh44 mutants (C141, Figure 6D, G) provides additional support. This is an important conclusion about the complexity of TRP\u03b3 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "The authors speculate that TRP channels in mammalian neuroendocrine cells might function similarly to TRP\u03b3 in flies, regulating taste-independent food selection and homeostatic control of metabolism in response to internal state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C145 represent speculation about potential mammalian parallels to the fly findings. While TRP channels are indeed expressed in mammalian neuroendocrine cells (C142), and the analogy to TRPC4 function is reasonable, these claims are explicitly speculative and not tested. They represent reasonable hypotheses for future investigation but are not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

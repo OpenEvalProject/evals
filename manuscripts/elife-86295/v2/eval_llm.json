@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C43",
+      "C44"
+    ],
+    "result": "Retrograde AAV tracing successfully labels cardiac-innervating neurons in the stellate ganglion. AAV-GFP injected into the myocardium labels neurons predominantly in the cranio-medial (cardiac pole) region of the stellate ganglion, with GFP+ nerve fibers co-labeled with PGP9.5 in cardiac sections confirming successful retrograde labeling. Validation by immunohistochemistry shows \u22646% of cells co-labeled with cardiac retrograde tracer when stained for non-cardiac subtype markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C28-C31, C43-C44 collectively demonstrate successful retrograde labeling methodology. The observation of GFP in cardiac nerve fibers (C30), regional specificity in the ganglion (C28), and low off-target labeling (C43-C44) provide converging evidence that the AAV tracing approach accurately identifies cardiac-innervating neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C18",
+      "C19",
+      "C20",
+      "C36",
+      "C37",
+      "C35"
+    ],
+    "result": "Single-cell RNA sequencing identifies three cardiac-innervating neuronal subtypes (NA1a, NA1b, NA3) and four paw-innervating subtypes (NA1a, NA1b, NA1c, NA3) among eight total stellate ganglion neuronal subtypes. The heart is innervated by three noradrenergic subtypes while paws are innervated by four, with subtypes largely segregated by NPY expression. No individual neurons were dual-labeled from both heart and paw.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by scRNAseq clustering analysis and retrograde labeling data shown in Figures 1B-D. The identification of specific subtypes innervating different tissues (C33-C34, C36-C37) and the absence of dual-labeled neurons (C35) provide clear evidence for the tissue-specific innervation patterns, though with overlapping subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Three of five adrenergic stellate ganglion neuronal subtypes innervate the heart, stratifying into two subpopulations based on NPY expression: high NPY-expressing (NA1a) and low NPY-expressing (NA1b and NA3) cells. These subpopulations exhibit distinct morphological, transcriptional, and electrophysiological characteristics despite all synthesizing catecholamines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C101-C103 summarize major findings supported by multiple lines of evidence including scRNAseq (C39-C40), morphological measurements (C74-C75), and electrophysiological recordings (C82-C86). The convergence of transcriptomic, morphological, and functional data strongly supports the existence of distinct cardiac neuronal subpopulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C58"
+    ],
+    "result": "Cardiac neuronal subtypes show significant transcriptomic differences with distinct expression patterns of neuropeptides, transcription factors, and receptors. NA1a neurons show high Npy expression while NA1b and NA3 show lower expression. Gene association analysis identified 114 genes positively and 527 genes negatively associated with Npy, including known (Gal, r=0.64) and novel (Col5a3, r=-0.52) correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C42, C50-C54, C58 are supported by scRNAseq analysis with appropriate statistical methods (FDR <0.05) and visualization in Figures 1E-H and 3A-G. The identification of Npy-associated genes and confirmation of known associations (C53) alongside novel findings (C54) demonstrates robust transcriptomic characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Pathway enrichment analysis reveals that high Npy expression is associated with dopamine neurotransmitter release cycle, inotropic activity of kainate receptors, and respiratory electron transport, suggesting NPY expression is linked to neuronal metabolism and excitability. These findings support that NA1a (high Npy) and NA1b/NA3 (low Npy) are distinct cardiac-innervating neuronal subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by gene set enrichment analysis shown in Figures 3H-J. The pathway analysis appropriately uses FDR correction and identifies biologically coherent pathways. However, the interpretation that NPY expression is causally linked to metabolism and excitability (C62) is inferential and would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Both NPY+ and NPY- neurons innervate the heart, with neurons from apex and base colocalizing to the craniomedial pole without spatial segregation. Most cardiac neurons are NPY+ (71.8\u00b120% for apex, 66\u00b122% for base, p<0.001), with approximately 70% of cardiac-innervating neurons expressing high Npy compared to 30% for paw. Some neurons innervate both apex and base, with NPY+ neurons more likely to be dual-labeled (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 are supported by retrograde labeling experiments in Npy-hrGFP mice with appropriate statistical analysis (Figure 4B-I). The quantification of NPY+ vs NPY- neurons (C67-C68) includes statistical significance testing, and the observation of dual-labeled neurons (C69-C70) provides evidence for broad myocardial innervation patterns. Sample sizes appear adequate (n=7 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "NPY+ cardiac neurons have significantly larger soma size than NPY- neurons (546\u00b1252 \u00b5m\u00b2 vs 342\u00b1170 \u00b5m\u00b2, p<0.0001), suggesting they may exhibit greater numbers of synapses, faster action potential propagation, and increased metabolic demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by morphological measurements with appropriate statistical testing (Figure 4J). However, claims C76-C78 are speculative interpretations based on citations to prior literature rather than direct measurements in this study. The soma size difference is well-documented, but the functional implications remain inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Electrophysiological characterization reveals that NPY+ and NPY- neurons have similar resting membrane potentials (-51.91\u00b13.14 mV vs -52.45\u00b12.45 mV, p=0.899), input resistance (106.9\u00b112.63 vs 103.5\u00b110.40 M\u03a9, p=0.839), and current-voltage relationships. However, NPY+ cells show significantly greater excitability at high current injections (400-700 pA), firing more action potentials than NPY- cells (p<0.001 at 400 and 500 pA), with 58% of NPY+ neurons showing tonic firing vs 0% of NPY- neurons at 500 pA (p=0.0046).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 are supported by patch-clamp recordings with appropriate sample sizes (n=11 per group) and statistical analyses (Figure 5). The finding that basic membrane properties are similar (C79-C81) but excitability differs at high currents (C82-C85) is internally consistent and well-documented. The conclusion that NPY+ neurons have distinct electrophysiological properties (C86) is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Chemogenetic ablation of NPY-expressing neurons in stellate ganglia results in significantly reduced heart rate responses to high-frequency (10 and 15 Hz) but not low-frequency (1 and 5 Hz) electrical stimulation. Baseline heart rates remain unchanged across stimulation frequencies. Maximum heart rate change difference between NPY-ablated (27.017\u00b111.888 bpm) and control mice (91.061\u00b12.628 bpm) occurs at 10 Hz (p=0.0009), suggesting NPY-expressing neurons are necessary for maximal cardiac sympathoexcitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by in vivo electrical stimulation experiments with appropriate controls (DIO-EGFP vs DIO-EGFP+Casp3-TEVp) and statistical analysis (Figure 6A-F). The frequency-dependent effect (high but not low frequencies) is consistent across multiple measurements. However, sample sizes are small (n=3 control, n=5 ablated), which may limit statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C27",
+      "C104"
+    ],
+    "result": "Genetic deletion of Npy (Npy-/-) or its receptor (Npy1r-/-) results in muted heart rate responses at high (10 and 15 Hz) but not low (1 and 5 Hz) stimulation frequencies compared to controls. These findings confirm that NPY-expressing neurons and NPY-NPY1R signaling are necessary for maximal cardiac sympathoexcitation at high stress states but not low stress states, supporting a tiered control mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99, C27, C104 are supported by electrical stimulation experiments in knockout mice with appropriate controls (Figure 6G-J). The consistency of findings across three different genetic manipulations (NPY neuron ablation, Npy knockout, Npy1r knockout) strengthens the conclusion. Sample sizes are adequate (n=8 for Npy, n=4 for Npy1r). The tiered control model is well-supported by the frequency-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C89",
+      "C100"
+    ],
+    "result": "The two NPY-based subpopulations provide differential control of cardiac responses to high and low stress states, with cardiac sympathetic regulation existing as a two-tiered system where low-level sympathoexcitation is mediated by NPY-low/negative neurons and high-level sympathoexcitation requires recruitment of NPY-expressing neurons. This tiered control may explain how cardiac responses are graded in response to sympathoexcitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C89, C100 synthesize findings from ablation and knockout experiments (C90-C99) with prior literature on frequency-dependent neurotransmitter release (C87-C88). The tiered control model is well-supported by the consistent frequency-dependent effects across multiple experimental approaches. However, the mechanistic explanation remains somewhat inferential as direct measurements of NPY release were not performed in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C45",
+      "C47"
+    ],
+    "result": "Cardiac-innervating neuronal subtypes identified in mice were validated in porcine and human stellate ganglia using specific marker combinations (NPY, CNTN5, CASZ1, VIM, FABP7), suggesting similar subtypes may innervate the heart in pigs and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C45, C47 are supported by immunohistochemistry in porcine and human tissue (Figure 2). The use of multiple markers to identify subtypes is appropriate. However, the inference that these subtypes have similar functions in pigs and humans (C47) is speculative without functional validation. The translation from mouse to large mammals is an important finding but requires cautious interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C107",
+      "C108"
+    ],
+    "result": "Similar neuronal subpopulations (NA1a, NA1b, NA3) innervate both heart and paws, with paws having an additional subtype (NA1c), suggesting that similar subsets of stellate ganglion neurons are responsible for neural control of various tissues rather than tissue-specific subtypes. Multiple SGN subtypes contribute to peripheral nervous system control of organs and tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C107, C108 are supported by scRNAseq analysis showing overlapping subtypes between cardiac and paw innervation (C33-C37). The interpretation that subtypes are not strictly tissue-specific is justified by the data, though the absence of dual-labeled neurons (C35) indicates individual neurons do innervate specific targets. The conclusion is consistent with prior work cited (C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Most neurons in NA1b and NA3 subtypes are NPY low or NPY negative, which is surprising given the established dogma that NPY and catecholamines coexist in the same cells but NPY-containing granules are released only during high stress states while catecholamines are released at low stress states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by scRNAseq data (Figure 3A). Claims C56-C57 accurately cite established dogma from prior literature. The observation that many catecholaminergic neurons lack NPY (C55) challenges the assumption that all sympathetic neurons contain both transmitters, which is an important finding. However, the authors appropriately frame this as surprising rather than contradictory to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that postganglionic sympathetic neurons innervating the heart reside in the stellate ganglion, undergo remodeling after cardiac injury contributing to dysfunction and arrhythmias, and are targeted by current therapies with limited efficacy. Prior work identified eight neuronal subtypes in stellate ganglia, but whether specific subtypes innervate the heart remained unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C16 are background statements supported by appropriate citations to prior literature. These establish the rationale and knowledge gaps motivating the current study. The citations appear appropriate and the knowledge gaps (C13, C16) are accurately stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C41",
+      "C48",
+      "C49",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Prior literature establishes that NPY is a potent modulator of cardiac function, is released as a co-transmitter with norepinephrine, has receptors expressed in the heart coupled to calcium signaling mechanisms, and is implicated in cardiac disease. Elevated circulating NPY is associated with adverse outcomes in heart failure, and combined NPY and beta-receptor antagonism raises ventricular fibrillation threshold more than beta-blockade alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C41, C48-C49, C110-C113 are background statements supported by appropriate citations. These establish the clinical and physiological relevance of NPY in cardiac function and disease, providing rationale for focusing on NPY-expressing neuronal subtypes. The citations appear appropriate and the statements accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Prior work shows that low frequency sympathetic ganglion stimulation induces cardiac norepinephrine release, while high frequency stimulation induces both norepinephrine and NPY release into the myocardium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 accurately cite prior work (Kluge et al., 2021) establishing frequency-dependent neurotransmitter release. This prior finding is appropriately integrated with the current study's results to support the tiered control model (C89).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C109"
+    ],
+    "result": "Prior work established that stellate ganglionic neurons innervate various tissue beds using cholinergic or adrenergic neurotransmitters, with neurons innervating nipple and pilo-erector muscles acquiring cell type specification during organogenesis via growth factor receptors and target-derived ligands. Whether SGN subtypes are restricted to particular tissue beds was not understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C109 accurately cite and summarize prior work (Furlan et al., 2016) that provides context for the current findings. The knowledge gap (C106) is appropriately stated and motivates the comparative analysis of cardiac vs paw innervation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Current therapies targeting the stellate ganglion show clinical benefit but target the entire ganglion with potential off-target consequences. The authors propose that specific targeting of cardiac-innervating neurons with stronger influence on sympathetic signaling is needed, and suggest coupling cell-specific targeting with localized delivery via minimally invasive approaches as a novel therapeutic avenue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C115 are supported by general knowledge and the study's findings. However, claims C116-C117 are speculative proposals for future therapeutic approaches based on the study's findings. While the rationale is sound, these represent future directions rather than demonstrated results. No experimental validation of targeted therapies is provided.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript reviews prior work on cell competition, distinguishing mechanical competition (where loser cells are more sensitive to crowding and die cell-autonomously) from biochemical competition (where signalling at the interface between cell types leads to apoptosis of loser cells only when in direct contact with winners).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1\u2013C8 are all supported by appropriate citations to prior work. These claims establish the conceptual framework and prior knowledge upon which the current study builds. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Prior experimental work showed that loser cell death in mechanical competition is influenced by local cell density, and that division of winner cells appears favoured in neighbourhoods with many loser cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 are supported by citation to Bove et al., 2017, which is the authors' own prior work. These observations motivate the current modeling study to understand the mechanisms underlying these phenomena.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C64"
+    ],
+    "result": "The multi-scale agent-based model can replicate competition when two distinct cell types are mixed, and calibration of model parameters separately for pure populations allowed quantitative reproduction of experimentally measured kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C64 describe the model's capabilities. The manuscript provides extensive comparison between simulations and experiments (Figures 2, 4) showing quantitative agreement in cell count, density, topology, and cumulative apoptosis/mitosis. The model successfully replicates experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript reviews biological mechanisms relevant to the model: MDCK cells follow an 'adder' mechanism for cell size homeostasis, contact inhibition of proliferation occurs above certain cell density, cell elimination can occur through live cell extrusions, and epithelia maintain a homeostatic density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19\u2013C26 are all supported by appropriate citations to prior experimental work. These biological mechanisms are incorporated into the computational model and are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The model replicates the return to homeostasis of pure populations of MDCKWT cells following a sudden increase in crowding, matching experimental observations from Eisenhoffer et al., 2012.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 are supported by Figure 3, which shows quantitative agreement between simulations and experimental data for the return to homeostatic density over ~6 hours following a perturbation. This validates a key aspect of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Cell apoptosis in response to crowding may be a cell-autonomous process rather than specific to cell competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 is presented as speculation ('raises the possibility'). While the model fitting suggests this interpretation, the claim acknowledges uncertainty and would require additional experimental validation to confirm. The speculation is reasonable but not definitively demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Differences in density-mediated apoptosis alone are sufficient to replicate the evolution of cell count and density observed in competition between MDCKWT and MDCKScrib, suggesting mechanical competition represents the dominant mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C31 are supported by Figure 4, which shows quantitative agreement between simulations (implementing only density-dependent apoptosis) and experiments for cell count, density, cumulative apoptosis/mitosis, and upregulation of winner division in loser neighborhoods. The model successfully reproduces experimental observations without implementing biochemical signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The growth rate G controls the time required for elimination and peak loser cell count but does not affect the outcome of competition, and heterotypic adhesion energy did not appear to change the kinetics or outcome of mechanical competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 are supported by Figure 5\u2014figure supplement 1A\u2013C, which shows systematic variation of these parameters. The results are consistent with prior theoretical work (Basan et al., 2009). These findings help identify which parameters are not critical for mechanical competition outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C14",
+      "C15"
+    ],
+    "result": "Mechanical competition is controlled by the difference in homeostatic density between cell types, while differences in growth rates and tissue organisation do not affect competition end result.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C14, and C15 are supported by the systematic parameter exploration shown in Figure 5. The manuscript demonstrates that varying contact inhibition parameter k (which controls homeostatic density difference) and relative stiffness \u039b determine competition outcome, while growth rate and tissue organization do not. This is a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C72",
+      "C73",
+      "C75",
+      "C77",
+      "C78"
+    ],
+    "result": "Model parametrisation suggests loser cells are more compressible than winners, leading to decreased apical areas and increased height in competition. Both contact inhibition and planar cell compressibility alter mechanical competition outcome by changing local density, and mechanical competition is primarily regulated by parameters controlling compressional mechanical energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C72, C73, C75, C77, and C78 are supported by the model results (Figure 5) and are consistent with experimental observations (Wagstaff et al., 2016). The manuscript provides a mechanistic explanation for how differences in mechanical properties lead to competition. The inference that mechanical competition is regulated by compressional mechanical energy is well-supported by the parameter exploration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The upregulation of winner cell division in loser neighbourhoods represents an emergent property of the simulation arising from higher growth rate and lower sensitivity to crowding in winners. The magnitude was smaller than in experiments, potentially pointing to additional signaling mechanisms. The interaction between MDCKWT and MDCKScrib can be entirely explained by mechanical competition alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C80, and C81 are supported by Figure 4G, which shows increased division probability for winners in contact with losers. The acknowledgment that the magnitude is smaller than experiments (C80) is appropriate scientific caution. The conclusion that mechanical competition alone is sufficient (C81) is supported by the quantitative agreement between model and experiments, though the speculation about additional mechanisms is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Biochemical competition is governed by tissue organisation. When loser cells are homogenously mixed with winners, they are eradicated, but when spatially separated, they coexist for long times. These findings suggest distinct biophysical origins for mechanical and biochemical modes of cell competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C16, C17, and C18 are supported by Figure 6, which shows dramatically different outcomes for biochemical competition depending on initial tissue organization (fully mixed, partially sorted, fully sorted). The contrast with mechanical competition (which is insensitive to tissue organization) supports the conclusion of distinct biophysical origins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In mechanical competition, loser cells are eliminated by 160 hr for all configurations. In biochemical competition, the outcome strongly depends on initial seeding conditions, with loser cells eliminated in fully mixed seeding but persisting in sorted configurations. The kinetics of biochemical competition is sensitive to tissue organisation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48\u2013C54 are supported by Figure 6A\u2013E, which shows the temporal evolution of loser cell counts for different initial configurations in both mechanical and biochemical competition. The data clearly demonstrate the sensitivity of biochemical competition to tissue organization, while mechanical competition outcome is independent of initial configuration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Entropy of mixing was highest in fully mixed seeding and lowest in fully sorted seeding. In fully mixed and partially sorted seedings, mixing entropy decreased after confluence, whereas for fully sorted seeding, mixing entropy stayed constant. Time to elimination increased with loser colony size, but no true steady-state coexistence was reached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55\u2013C59 are supported by Figure 6\u2014figure supplement 1A and Figure 6F. The entropy analysis provides a quantitative measure of tissue organization that correlates with competition kinetics. The finding that no true steady-state coexistence is reached is important for understanding the long-term dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The kinetics of biochemical competition is sensitive to parameters that lead to tissue reorganisation (such as heterotypic adhesion energy) and depends on the extent of heterotypic contact. Biochemical competition strongly depends on tissue organisation but is not affected by changes in cell compressibility or contact inhibition. Two parameters controlled biochemical competition: heterotypic contact energy and initial tissue organisation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C82\u2013C86 are supported by Figure 6\u2014figure supplement 1B\u2013D and the model implementation. The systematic variation of heterotypic adhesion energy shows its effect on competition kinetics through modulation of cell mixing. The contrast with mechanical competition (which is sensitive to mechanical parameters but not organization) is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Experimental evidence shows perturbations affecting cell cohesion and intercalation influence biochemical competition outcome. Clone shape and mixing is set by tension ratios. Initial tissue organisation strongly influenced elimination kinetics. Experiments in vivo have revealed a regime of coexistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C88, and C90 are supported by appropriate citations to prior work (Levayer et al., 2015; Bosveld et al., 2016). Claim C89 is supported by the model results shown in Figure 6. These claims connect the model findings to broader experimental observations and identify an important discrepancy (coexistence in vivo) that warrants future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Mechanical competition is governed by factors that reduce stored mechanical energy in the system, while biochemical competition is favoured by factors that increase cell intermixing and tissue reorganisation. Mechanical competition was not affected by tissue organisation, whereas biochemical competition was not sensitive to parameters that changed stored mechanical energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91\u2013C94 represent the main conclusions of the study, synthesizing the findings from the systematic parameter exploration. These conclusions are well-supported by the comprehensive modeling results shown in Figures 5 and 6, and Supplementary files 4 and 5. The clear separation of mechanical and biochemical competition mechanisms is a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C71"
+    ],
+    "result": "The increased sensitivity to crowding in loser cells is consistent with interplay between stress pathways. Mechanical competition may represent a cell-autonomous phenomenon where each cell type independently seeks to reach its homeostatic density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by citations to experimental work (Bove et al., 2017; Wagstaff et al., 2016; Kucinski et al., 2017). Claim C71 is presented as speculation ('may actually represent') but is a reasonable inference from the model results showing that density-dependent apoptosis alone is sufficient to explain competition. The speculation is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Experimental characterization of cell properties: MDCKScrib cells spread more than MDCKWT in pure populations but have diminished area in mixed populations. MDCKScrib do not express more integrins than MDCKWT. MDCKScrib cells grew significantly slower than MDCKWT cells. In competition, loser cell area became significantly smaller than winners post-confluence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95\u2013C99 are supported by experimental data shown in Figure 2\u2014figure supplement 2 and citations to prior work (Wagstaff et al., 2016; Bove et al., 2017). These experimental observations are used to parametrize the model and are important for understanding the biological basis of the competition.",
+    "result_type": "MINOR"
+  }
+]

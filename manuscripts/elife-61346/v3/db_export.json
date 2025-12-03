@@ -1,0 +1,1480 @@
+{
+  "submission": {
+    "id": "d21e17f5-c5ef-4269-ac36-f35342f6e4b6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:08:25.796675Z",
+    "updated_at": "2025-12-03T04:08:25.796675Z"
+  },
+  "content": [
+    {
+      "id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "submission_id": "d21e17f5-c5ef-4269-ac36-f35342f6e4b6",
+      "content_type": "manuscript",
+      "content_text": "# Optimal evolutionary decision-making to store immune memory\n\n## Authors\n\n- Oskar H Schnaack<sup>1</sup>\n- Armita Nourmohammad<sup>1</sup> ([ORCID: 0000-0002-6245-3553](https://orcid.org/0000-0002-6245-3553)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Dynamics and Self-organization G\u00f6ttingen Germany\n2. Department of Physics, University of Washington Seattle United States\n3. Fred Hutchinson Cancer Research Center Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe adaptive immune system provides a diverse set of molecules that can mount specific responses against a multitude of pathogens. Memory is a key feature of adaptive immunity, which allows organisms to respond more readily upon re-infections. However, differentiation of memory cells is still one of the least understood cell fate decisions. Here, we introduce a mathematical framework to characterize optimal strategies to store memory to maximize the utility of immune response over an organism\u2019s lifetime. We show that memory production should be actively regulated to balance between affinity and cross-reactivity of immune receptors for an effective protection against evolving pathogens. Moreover, we predict that specificity of memory should depend on the organism\u2019s lifespan, and shorter lived organisms with fewer pathogenic encounters should store more cross-reactive memory. Our framework provides a baseline to gauge the efficacy of immune memory in light of an organism\u2019s coevolutionary history with pathogens.\n\n## Introduction\n\nAdaptive immunity in vertebrates develops during the lifetime of an organism to battle a multitude of evolving pathogens. The central actors in our adaptive immune system are diverse B- and T-cells, whose unique surface receptors are generated through genomic rearrangement, mutation, and selection (Janeway et al., 2005). The diversity of receptors allows the immune system to mount specific responses against diverse pathogens. B-cell receptors (BCRs) in particular can specialize through a process of affinity maturation, which is a form of somatic Darwinian evolution within an individual to enhance the affinity of BCRs to pathogens. Several rounds of somatic mutation and selection during affinity maturation can increase binding affinities of BCRs up to 10,000 fold (Victora and Nussenzweig, 2012; Meyer-Hermann et al., 2012).\n\nBeside receptor diversity, immune cells also differentiate and specialize to take on different roles, including plasma B-cells, which are antibody factories, effector T-cells, which can actively battle infections, or memory cells. Memory responses are highly efficient because memory cells can be reactivated faster than naive cells and can mount a more robust response to an infection (McHeyzer-Williams et al., 2000; Tangye et al., 2003; Tangye and Hodgkin, 2004; Moens et al., 2016). Memory generation is a form of cell fate decision in the immune system, which can occur at different stages of an immune response. In B-cells, activated naive cells can differentiate into antibody-secreting long-lived plasma cells, a T-cell-independent un-hypermutated memory cells, or they can initiate a germinal center (Goodnow et al., 2010). B-cells that enter germinal centers differentiate during affinity maturation into high-affinity plasma cells or T-cell-dependent long-lived memory cells that circulate in the blood for antigen surveillance; see schematic Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61346/elife-61346-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic shows affinity maturation in germinal centers(right), where B-cell receptors acquire mutations and undergo selection, resulting in an increase in their affinity to an antigen (from light to dark receptors), indicated by the sharpening of receptors\u2019 affinity profiles (on left). (B) Upon infection, the immune system can initiate a novel response (top) or a memory response (bottom). A novel B-cell response could involve affinity maturation to generate memory or high-affinity plasma cells (pink) that can secrete antibodies to battle the pathogen. A novel response can take 1\u20132 weeks, during which pathogen can replicate within a host and a patient can show symptoms from the disease (top, left). During this time, the proliferation of pathogens within a host incurs a cost associated with a naive response $\u03a9_{\\tau}$, which is a monotonic function of the deliberation time \u03c4 (top, right). If the host carries memory from a previous infection or vaccination (bottom), the immune system can robustly and rapidly activate a memory response to battle the infection. The probability to mount such memory response $Q_{mem.}$ depends non-linearly on the relative utilities of memory versus na\u00efve responses against a given infection $\u0394\u2062U=U_{mem.}-U_{naive}$ (bottom, right). (C) Affinity profile $E_{\\alpha,\\theta}\u2062(r_{m},\u03c5)\u223c\\alpha\u2062exp\u2061[-(\\alpha\u2062d)^{\\theta}]$ of a memory receptor rm is shown in orange as a function of the distance $d=\u2225\u03c5_{r}^{*}-\u03c5\u2225$ in the antigenic shape space, between the receptor\u2019s cognate antigen $\u03c5_{r}^{*}$ (orange) and an evolved novel target $\u03c5_{i}$ (red). The affinity of a receptor decays with increasing distance between targets and its cognate antigen. The antigenic range over which a receptor is reactive inversely depends on its specificity \u03b1. The shape of the binding profile is tuned by the factor \u03b8, here shown for $\\theta=2$. The expected binding profile $E_{\\alpha,\\theta}^{(i)}\u2062(\u03c5)\u00af$ and the expected utility $\u27e8U\u27e9$ for an immune response are weighted averages of these quantities over memory and na\u00efve responses. The Kullback-Leibler distance between the expected profile $E_{\\alpha,\\theta}^{(i)}\u2062(\u03c5)\u00af$ and the profile centered around the infecting antigen $E_{\\alpha,\\theta}\u2062(r_{\u03c5_{i}},\u03c5)$, in units of the deliberation factor \u03b2, defines the sub-optimality of a response, that\u00a0is,, dissipation $K_{diss}$ (Equation 1). The net utility $U_{net}$ measures the goodness of a decision to mount a memory vs. naive response against an infection (Equation 2). (D) Antigenic evolution of the H3N2 influenza virus is shown over 40 years along its first (most variable) antigenic dimension (data from Bedford et al., 2014). The decision of an immune system to utilize memory or to mount a novel response (B,C) is determined by the specificity \u03b1 of receptors and the deliberation factor \u03b2. We characterize the optimal immune strategies ($\\alpha^{*},\\beta^{*}$) by maximizing the total net utility of immune responses against pathogens with different antigenic divergences, experienced over the lifetime of an organisms (Equation 3).\n\nThe basis for differentiation of B-cells into memory, especially during affinity maturation, is among the least understood in cell fate decision-making in the immune system (Goodnow et al., 2010). A long-standing view was that memory is continuously produced during affinity maturation (Blink et al., 2005). Memory receptors often have lower affinity compared to plasma cells (Smith et al., 1997), and therefore, if memory B-cells were to be generated continuously it should be able to proliferate without strong affinity-dependent selection (Goodnow et al., 2010; Victora and Nussenzweig, 2012). However, recent experiments indicate that memory differentiation is highly regulated (Paus et al., 2006; Weisel et al., 2016; Shinnakasu et al., 2016; Recaldin and Fear, 2016; Shinnakasu and Kurosaki, 2017; Viant et al., 2020), reflecting a temporal switch in germinal centers that preferentially produces memory at early stages and plasma at later stages of affinity maturation (Weisel et al., 2016). This active regulation introduces an affinity-dependent cell fate decision, leading to a preferential selection of low-affinity cells to the memory compartment. Low-affinity memory may be at a disadvantage in mounting a protective immune response since immune-pathogen recognition is largely determined by the binding affinity between an immune receptor and antigenic epitopes. On the other hand, immune-pathogen recognition is cross-reactive, which would allow memory receptors to recognize slightly evolved forms of the antigen, in response to which they were originally generated.\n\nWe propose that the program for differentiation of immune cells to memory should be viewed in light of the immune system\u2019s coevolution with pathogens. We have developed a theoretical framework that incorporates the kinetics and energetics of memory responses as ingredients of memory strategy, which we seek to optimize under various evolutionary scenarios. We propose that the hard-wired affinity-dependent regulatory measures for memory differentiation could be understood as a way to optimize the long-term utility of immune memory against evolving pathogens. Individuals encounter many distinct pathogens with varying evolutionary rates, ranging from relatively conserved pathogens like chickenpox to rapidly evolving viruses like influenza. To battle such a spectrum of evolving pathogens, we propose that an optimal immune system should store a combination of low-affinity memory with high cross-reactivity to counter evolving pathogens, and high-affinity and specific memory to counter the relatively conserved pathogens\u2014a strategy consistent with B-cell memory, which often involves storage of both cross-reactive IgM and high-affinity IgG receptors (Shlomchik, 2018; McHeyzer-Williams et al., 2018). Lastly, we study the impact of organisms\u2019 life expectancy on their evolved memory strategies and predict that cross-reactive memory should dominate the immune response in short-lived organisms that encounter only a few pathogens.\n\nPrevious work on theoretical modeling of cellular differentiation together with experiments has been instrumental in understanding immune memory generation; for\u00a0example see reviewed work in Perelson and Weisbuch, 1997; Altan-Bonnet et al., 2020. For example, mechanistic models have indicated the importance of signal integration at the cellular level (Laffleur et al., 2014) and the relevance of stochastic effects at the population level (Hawkins et al., 2007), to explain heterogeneous cell fate decisions for the generation of memory. Our statistical framework aims to characterize high-level features for an optimal memory strategy, without relying on mechanistic details of the underlying process, some of which are at least partially unknown (Bialek, 2012; Nourmohammad et al., 2013). In the case of the immune system, statistical models have provided an intuition for how an immune repertoire should be organized to optimally counter diverse pathogens (Perelson and Oster, 1979; Mayer et al., 2015; Bradde et al., 2020). In a similar fashion, optimal memory strategies identified by our model provide a baseline to gauge the performance of real immune systems in storing and utilizing memory.\n\n### Model\n\nThe efficacy of an immune response to a pathogen is determined by two key factors: (i) the affinity of immune-pathogen recognition (i.e. energetics) and (ii) the speed of response (i.e. kinetics) to neutralize an infection.\n\nRecognition of a pathogen (or its antigenic epitope) \u03c5 by an immune receptor $r$ is mediated by the affinity of the molecular interactions $E\u2062(r,\u03c5)$ between them. We describe cross-reactive immune-pathogen recognition in an immune shape space (Perelson and Oster, 1979), where receptors located near each other in shape space can recognize similar antigens, and in the complementary space, antigens that are close to each other can be recognized by the same immune receptor (Figure 1). We express the binding affinity between a receptor $r$ and an arbitrary target antigen \u03c5 in terms of the antigenic distance $d_{r}\u2062(\u03c5)=\u2225\u03c5-\u03c5_{r}^{*}\u2225$ between the receptor\u2019s cognate antigen $\u03c5_{r}^{*}$ and the target \u03c5: $E\u2062(r,\u03c5)\u2261E\u2062(d_{r}\u2062(\u03c5))$.\n\nPhysico-chemical constraints in protein structures can introduce a tradeoff between immune receptors\u2019 affinity and cross-reactivity. Although we lack a systematic understanding of these structural constraints, affinity-specificity tradeoffs have been reported repeatedly for B-cells and antibodies (Wedemayer et al., 1997; Frank, 2002; Li et al., 2003; Wu et al., 2017; Mishra and Mariuzza, 2018; Fern\u00e1ndez-Quintero et al., 2020). Specifically, while affinity maturation can significantly increase the binding affinity of a B-cell receptor, it also makes the receptor more rigid and specific to its cognate antigen (Wedemayer et al., 1997; Li et al., 2003; Mishra and Mariuzza, 2018; Fern\u00e1ndez-Quintero et al., 2020). Broadly neutralizing antibodies (bNAbs) appear to be an exception to this rule since they have high potency and can react to a broad range of viral strains. However, it should be noted that bNAbs often react to vulnerable regions of a virus where escape mutations are very deleterious, including the CD4 binding site of HIV or the stem proteins in influenza (Mascola and Haynes, 2013; Lee and Wilson, 2015). In other words, the majority of bNAbs are not cross-reactive per se, but they are exceptionally successful in targeting conserved epitopes in otherwise diverse viral strains.\n\nTo qualitatively capture this affinity-specificity tradeoff, we use a simple functional form: We assume that the binding affinity of a receptor $r$ to an antigen \u03c5 depends on the antigenic distance $d_{r}\u2062(\u03c5)$ through a kernel with a specificity factor \u03b1 and a shape factor \u03b8 such that, $E\u2062(r,\u03c5)\u2261E_{\\alpha,\\theta}\u2062(d_{r}\u2062(\u03c5))\u223c\\alpha\u2062exp\u2061[-(\\alpha\u2062d_{r}\u2062(\u03c5))^{\\theta}]$, with $\\theta\\geq0$. This affinity function defines a receptor\u2019s binding profile over the space of antigens. As specificity \u03b1 increases (or cross-reactivity $1/\\alpha$ decays), the binding affinity profile sharpens and binding becomes more restrictive to antigens closer to the receptor\u2019s cognate antigen (Figure 1). Moreover, the absolute strength of binding to the cognate antigen (i.e. a receptor\u2019s maximum affinity) increases with specificity \u03b1, resulting in a tradeoff between affinity and cross-reactivity. The parameter \u03b8 tunes the shape of the receptor\u2019s binding profile $E_{\\alpha,\\theta}\u2062(d_{r}\u2062(\u03c5))$, resulting in a flat function (i.e. no tradeoff) for $\\theta=0$, a double-sided exponential function for $\\theta=1$, a Gaussian (bell-curve) function for $\\theta=2$, and top-hat functions for $\\theta\u226b2$; see Materials and methods.\n\nUpon encountering a pathogen, the adaptive immune system mounts a response by activating the na\u00efve repertoire (i.e. a novel response) and/or by triggering previously stored immune receptors in the memory compartment. A memory receptor often shows a reduced affinity in interacting with an evolved form of the pathogen. Nonetheless, memory plays a central role in protecting against re-infections since even a suboptimal memory can be kinetically more efficient than a na\u00efve response, both in B-cells (Tangye and Hodgkin, 2004) and T-cells (Whitmire et al., 2008; Martin et al., 2012). Specifically, following an infection, memory B-cells initiate cell division about $1-2$ days earlier, and they are recruited to proliferate in $2-3$ times larger numbers compared to the na\u00efve population (Tangye et al., 2003; Tangye and Hodgkin, 2004; Blanchard-Rohner et al., 2009). Once recruited, however, memory and naive cells have approximately a similar doubling time of about $t_{1/2}\u22480.5-2$ days (Tangye et al., 2003; Macallan et al., 2005). Taken together, we can define an effective deliberation time $\\tau\u22481.5-5$ days for the naive population to reach an activity level (i.e. a clone size) comparable to the memory; see Materials and methods and Figure 1.\n\nThe decision to mount a na\u00efve or a memory response depends on the energetics and the kinetics of the immune machinery, including the cross-reactivity of memory to recognize evolved pathogens and the deliberation time to mount a naive response upon infection\u2014we refer to these choices as memory strategies. We expect that the biochemical machinery involved in making this decision upon an infection has been fine-tuned and selected over evolutionary time scales in order to utilize immune memory and mount an effective response against recurring pathogens. The theory of decision-making (von Neumann and Morgenstern, 1944; Ortega and Braun, 2013) enables us to characterize the response of the immune system as a rational decision-maker that chooses between two possible actions $a\\in{naive, memory}$ each contributing a utility $U_{a}$ (Materials and methods). Specifically, the action of a rational decision-maker should follow an optimal distribution $Q_{a}$, which maximizes the expected utility while satisfying the constraints in processing new information, for\u00a0example due to prior preferences (von Neumann and Morgenstern, 1944; Ortega and Braun, 2013). We assume that the immune system has no intrinsic prior for mounting a naive or a memory response against a given pathogen. In this case, the utility $U_{a}$ of an action (memory vs. naive) determines the type of response, and rational decisions follow a maximum entropy distribution $Q_{a}\u223cexp\u2061[\\beta\u2062U_{a}]$ (Jaynes, 1957), where \u03b2 is the efficacy of information processing (see Materials and methods). As \u03b2 increases, a rational decision-maker more readily chooses the action with the highest utility. The expected utility of the immune response to an infection is equal to the sum of the utilities of a naive and a memory response, weighted by their respective probabilities: $\u27e8U\u27e9=U_{mem}Q_{mem.}+U_{naive\u00a0}Q_{naive}$. If memory is effective, the utility difference between mounting a memory or a naive response is determined by the affinity of the interaction between the responding memory receptor rm and the infecting antigen \u03c5: $U_{mem}\u2212U_{naive}=E_{\\alpha,\\theta}(r_{m},\u03c5)$; see Figure 1 and Materials and methods for details.\n\nThe time lag (deliberation) between memory and naive response also plays a key role in the decision-making process. On the one hand, if memory is inefficient, long deliberations would allow pathogens to proliferate, incurring a larger cost $\u03a9_{\\tau}$ to a host prior to activation of a novel response; this cost can be interpreted as the negative utility of na\u00efve response $U_{naive}\u2261\u2212\u03a9_{\\tau}$. On the other hand, a long deliberation would allow the immune system to exploit the utility of a usable memory (i.e. process information), even if the available memory has only a slight advantage over a responsive naive receptor (see Materials and methods). Indeed, for a responsive memory, the information processing factor \u03b2 is equal to accumulated pathogenic load $\u0393_{\\tau}$ during the deliberation period \u03c4, and thus, we refer to \u03b2 as the deliberation factor.\n\nThe expected binding profile of stored memory $E_{\\alpha,\\theta}^{(i)}\u2062(\u03c5)\u00af$ after $i^{t\u2062h}$ round of re-infection with an antigen $\u03c5_{i}$ can be characterized as the superposition of the binding profiles following a memory or a naive response, weighted by the respective probability of each of these events (Figure 1 and Materials and methods). Since mounting a sub-optimal memory against evolved variants of a reinfecting pathogen can still be kinetically favorable, the expected profile can deviate from the optimal profile of the cognate receptor centered around the infecting pathogen $E_{\\alpha,\\theta}\u2062(r_{\u03c5_{i}},\u03c5)$ (Figure 1). This tradeoff between the kinetics and the energetics of immune response results in a non-equilibrium decision-making Grau-Moya et al., 2018 by the immune system (Materials and methods). In analogy to non-equilibrium thermodynamics, we express this deviation as a dissipative cost of memory response $K_{diss}(t_{i};\\alpha,\\theta)$ at the $i^{t\u2062h}$ round of re-infection (time point ti), which we quantify by the Kullback-Leibler distance between the expected and the optimal binding profiles $D_{K\u2062L}(E_{\\alpha,\\theta}^{(i)}\u2062(\u03c5)\u00af||E_{\\alpha,\\theta}(r_{\u03c5_{i}},\u03c5))$, in units of the deliberation factor \u03b2 (Figure 1),\n\n$$\nK_{diss}(t_{i})=\\frac{1}{\\beta}D_{KL}(E_{\\alpha,\\theta}^{(i)}(\u03c5)\u00af||E_{\\alpha,\\theta}(r_{\u03c5_{i}},\u03c5))=\\frac{1}{\\beta}\\sumantigens:\u00a0\u03c5E_{\\alpha,\\theta}^{(i)}(\u03c5)\u00aflog\u2061[\\frac{E_{\\alpha,\\theta}^{(i)}(\u03c5)\u00af}{E_{\\alpha,\\theta}(r_{\u03c5_{i}},\u03c5)}].\n$$\n\nAn optimal memory strategy should be chosen such that it maximizes the expected utility of the immune response $\u27e8U\u27e9$, while minimizing the dissipation cost due to the non-equilibrium response $K_{diss}$, over the lifetime of an organism. To infer an optimal strategy, we introduce net utility that accounts for the tradeoff between the expected utility and dissipation at a given round of infection at time point ti,\n\n$$\nU_{net}(t_{i})=\u27e8U(t_{i})\u27e9\u2212K_{diss}(t_{i})\n$$\n\nWe infer the optimal memory protocol (i.e. the optimal memory specificity $\\alpha^{*}$ and deliberation factor $\\beta^{*}$) by maximizing the total net utility of memory responses throughout the lifetime of an organism (Figure 1),\n\n$$\n(\\alpha^{*},\\beta^{*})=argmax\\alpha,\\beta\u2062\\sumi:infectionsU_{net}\u2062(t_{i}).\n$$\n\n## Results\n\nEfficient immune memory balances specificity and speed. The extent of cross-reactivity and deliberation needed for the memory to react to pathogens should be set by the amount of pathogenic evolution and more specifically, the antigenic divergence $\\delta^\u2261\\sqrt{\u27e8\u2225\u03c5_{i}-\u03c5_{i-1}\u2225^{2}\u27e9}$ that a pathogen traces between two infections. An example of such antigenic divergence is shown in Fig. Figure 1D for 40 years of H3N2 Influenza evolution along it first (most variable) evolutionary dimension (Bedford et al., 2014). We set to find an optimal immune protocol (i.e. specificity $\\alpha^{*}$ and deliberation $\\beta^{*}$) by maximizing the net utility $U_{net}$ of an immune system (Equation 3) that is trained to counter pathogens with a given antigenic divergence $\\delta^$; see Fig. Figure 1D and Materials and methods for details on the optimization procedure.\n\nTo battle slowly evolving pathogens ($\\delta^\\leq20%$) an optimal immune system stores highly specific memory receptors, with a specificity that approaches the upper bound $\\alpha_{max}$; see Figure 2A and Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3. Importantly, the dependency of optimal specificity on antigenic divergence is insensitive to the cost of deliberation $\u03a9$ prior to mounting a naive response (Figure 2A), the shape factor \u03b8 for the specificity profile (Figure 2\u2014figure supplement 2), and the specificity threshold $\\alpha_{max}$ (Figure 2\u2014figure supplement 3). For relatively conserved pathogens ($\\delta^\u22430$), the highly specific memory (with $\\alpha^^{*}\u2261\\alpha^{*}/\\alpha_{max}\u22431$) stored from a previous infection still has high affinity and remains centered and close to the reinfecting pathogens. Therefore, the immune system maintains a moderate level of deliberation to exploit this efficient memory during infections. However, as antigenic divergence grows, specific memory becomes less effective against future infections and therefore, the immune system reduces the deliberation factor to allow a timely novel response, once memory becomes inefficient (Figure 2B, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3). The magnitude of deliberation decays as the cost of deliberation $\u03a9$ increases but its overall dependency on antigenic divergence remains comparable for different cost functions (shown in Figure 2B for zero cost, and cost functions that grow linearly and quadratically with deliberation factor \u03b2). Overall, the net utility of the stored memory in response to slowly evolving pathogens is high (Figure 2C, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3), while its dissipation remains small $K_{{diss}}\u22430$ (Figure 2C, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3). Therefore, in analogy to thermodynamics, we term this immune strategy with low dissipation as equilibrium memory response; Figure 2C.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61346/elife-61346-fig2-v3.jpg)\n\n**Figure 2.:** (A) and (B) show the optimal specificity $\\alpha^^{*}\u2261\\alpha^{*}/\\alpha_{max}$ and deliberation factor $\\beta^^{*}\u2261\\beta^{*}/\\beta_{max}$, scaled by their respective upper bounds, as a function of the antigenic divergence per infection, scaled by the cross-reactive range (or inverse of maximum specificity) $\\delta^\u2261\\delta/(\\alpha_{max}^{-1})$. Colors/markers indicate different na\u00efve cost functions for deliberation, including no-cost $\u03a9^\u2261\u03a9/E_{max}=0$, linear cost $\u03a9^=\u03a9^_{0}\u2062\\beta^$, and quadratic cost $\u03a9^=\u03a9^_{0}\u2062\\beta^^{2}$, with varying amplitudes $\u03a9_{0}$. (C) The heat map shows the expected rescaled net utility $U^_{net}=U_{net}/E_{max}$ (Equation 2) per round of infection for an immune system with an optimal specificity $\\alpha^^{*}$, as a function of rescaled antigenic divergence $\\delta^$ and deliberation factor $\\beta^$. Rescaling by $E_{max}$ sets the magnitude of net utility to one, for a response to conserved antigens (with $\\delta^=0$) and in the limit of zero deliberation cost $\u03a9\u21920$. Boundaries indicate different levels of dissipation, with orange and blue encompassing regions of $\\geq40%$ and $\\geq70%$ of the maximum dissipation $K_{max}$, respectively. The three modes of immune response are indicate based on the magnitude of dissipation and net utility in each reagion: (i) equilibrium memory, (ii) non-equilibrium memory, and (iii) equilibrium naive. Simulation parameters, (A\u2013C): $\\alpha_{max}=4$, $\\beta_{max}=10$, and $\\theta=2$, (C): linear deliberation cost function $\u03a9^=\u03a9^_{0}\u2062\\beta^$ with $\u03a9^_{0}=0.1$. Results for other shape parameters \u03b8 and specificity thresholds $\\alpha_{max}$ are shown in Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61346/elife-61346-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Utility, dissipation, and usage of optimal memory. (A) and (B) show the scaled net utility $U^_{net}\u2261U_{net}/E_{max}$ (Equation 2) and dissipation $K^_{diss}\u2261K_{diss}/E_{max}$ (Equation 1) per round of infection as a function of the antigenic divergence $\\delta^$. Rescaling by $E_{max}$ sets the magnitude of net utility for a response to conserved antigens (with $\\delta^=0$), and in the limit of zero deliberation cost $\u03a9^\u21920$, to 1; see Figure 2 in the main text for comparison. (C) The expected number of rounds that a memory receptor is utilized prior to a novel response in an optimal system is shown to decay as the antigenic divergence $\\delta^$ increases. The results are evaluated for immune systems with optimized strategies ($\\alpha^^{*}$, $\\beta^^{*}$) against pathogens with a given scaled antigenic divergence $\\delta^$; the corresponding strategies are shown in Figure 2. Colors/markers indicate different na\u00efve cost functions for deliberation, including no-cost $\u03a9^\u2261\u03a9/E_{max}=0$, linear cost $\u03a9^=\u03a9^_{0}\u2062\\beta^$, and quadratic cost $\u03a9^=\u03a9^_{0}\u2062\\beta^^{2}$, with varying amplitudes $\u03a9^_{0}$. Simulation parameters: $\\alpha_{max}=4$, $\\beta_{max}=10$, and $\\theta=2$.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61346/elife-61346-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Optimal memory strategies for different specificity shape factors \u03b8. (A) Scaled specificity $\\alpha^^{*}\u2261\\alpha^{*}/\\alpha_{max}$, (B) scaled deliberation factor $\\beta^^{*}\u2261\\beta^{*}/\\beta_{max}$, (C) scaled net utility $U^_{net}\u2261U_{net}/E_{max}$, and (D) scaled dissipation are shown as a function of the scaled antigenic divergence per infection $\\delta^=\\delta/(\\alpha_{max}^{-1})$ (similar to Figure 2). Colors indicate different shape factors \u03b8 of the specificity function, ranging from a double-sided exponential ($\\theta=1$), to Gaussian for $\\theta=2$ (as in Figure 2), and top-hat functions $\\theta>2$. The dependence of memory strategies on antigenic divergence is qualitatively insensitive to the shape factor of the specificity function. Simulation parameters: linear deliberation cost function $\u03a9=\u03a9^_{0}\u2062\\beta^$ with $\u03a9^_{0}=0.1$, $\\alpha_{max}=4$, and $\\beta_{max}=10$.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/61346/elife-61346-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Optimal memory strategies for different specificity thresholds $\\alpha_{max}$.Optimal memory strategies for different specificity thresholds $\\alpha_{\ud835\udc26\ud835\udc1a\ud835\udc31}$. (A) Scaled specificity $\\alpha^^{*}\u2261\\alpha^{*}/\\alpha_{max}$, (B) scaled deliberation factor $\\beta^^{*}\u2261\\beta^{*}/\\beta_{max}$, (C) scaled net utility $U^_{net}\u2261U_{net}/E_{max}$, and (D) scaled dissipation are shown as a function of the scaled antigenic divergence per infection $\\delta^=\\delta/(\\alpha_{max}^{-1})$ (similar to Figure 2). Colors indicate different specificity thresholds $\\alpha_{max}$. Memory strategies are qualitatively insensitive to the specificity threshold. Simulation parameters: linear deliberation cost function $\u03a9=\u03a9^_{0}\u2062\\beta^$ with $\u03a9^_{0}=0.1$ and $\\beta_{max}=10$.\n\nTo battle moderately evolving pathogens (with $\\delta^\u224320%-60%$), an optimal immune system stores cross-reactive memory (i.e. with a lower specificity $\\alpha^$) that can recognize moderately evolved form of the primary antigen (Figure 2A, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3). However, cross-reactive receptors tend to have lower affinities (Wedemayer et al., 1997; Frank, 2002), which could lead to deficient responses against antigens. Importantly, activation of energetically sub-optimal yet cross-reactive memory could be detrimental as it may hinder a stronger novel response without providing protective immunity to the host\u2014a deficiency known as the original antigenic sin (Francis, 1960; Vatti et al., 2017). An optimal immune system can mitigate this problem by using kinetic optimization to tune the deliberation factor \u03b2 in order to avoid an elongated memory engagement prior to a naive response. This optimization results in a smaller deliberation factor \u03b2 (i.e. a faster naive response) compared to the scenario with slowly evolving pathogens, yet a long enough deliberation to allow the energetically suboptimal memory to react to an infection, whenever feasible (Figure 2B, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3). With this kinetic optimization, the immune system can utilize cross-reactive memories through multiple rounds of infection (Figure 2\u2014figure supplement 1C), yet with a declining efficiency and net utility as pathogens evolve away from the primary infection (Figure 2C, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3). The prominent memory response to moderately evolving pathogens is dissipative with $K_{diss}\u226b0$ (Figure 2C, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3), and in analogy with thermodynamics, we term this dissipative immune strategy as non-equilibrium memory response; Figure 2C.\n\nFor extremely rapidly evolving pathogens ($\\delta^>60%$), the immune system would not be able to store an efficient memory to battle future encounters, and hence, each infection would trigger a novel naive response \u2014 the reduced net utility of memory and the decay of memory usage in this regime are shown in Figure 2C, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3, respectively. Without a protective memory, a novel response is triggered to counter each infection and it maturates specifically around the infecting pathogen, resulting in a non-dissipative naive-dominated immune response with $K_{diss}\u22430$, which we term equilibrium naive response; Figure 2C.\n\nIt should be noted that when the cost of deliberation $\u03a9$ is very high, utilizing memory against pathogens with relatively high evolutionary rates becomes highly unfavorable. In this extreme case, the immune system switches into a state where it invariably mounts a novel response upon an infection (Figure 2\u2014figure supplement 1C), and it assures that memory is not utilized by setting the parameters for specificity \u03b1 and deliberation \u03b2 to zero (Figure 2A,B).\n\nOur analyses in Figure 2 indicate that a rational decision to become a memory or a plasma cell during an immune response should depend on the affinity of a cell\u2019s receptors and it should not be a stochastic choice with a constant rate throughout affinity maturation. Indeed, cell fate decision for B-cells during affinity maturation is highly regulated and dependent on receptors\u2019 affinity (Good-Jacobson and Shlomchik, 2010; Kometani et al., 2013; Shinnakasu et al., 2016; Weisel et al., 2016; Shinnakasu and Kurosaki, 2017; Shlomchik et al., 2019). Recent experiments have demonstrated that memory generation is highly correlated with the activity of the transcription factor Bach2 whose expression level is negatively regulated with the abundance of helper CD4+ T-cells (Kometani et al., 2013; Shinnakasu et al., 2016; Shinnakasu and Kurosaki, 2017). As the affinity of B-cell receptors increases during affinity maturation, more CD4+ T-cells are recruited to germinal centers, resulting in suppression of Bach2 and a hence, a decline in production of memory cells (Kometani et al., 2013; Shinnakasu et al., 2016; Shinnakasu and Kurosaki, 2017). In other words, our adaptive immune system has encoded a negative feedback mechanism to store memory with intermediate affinity and cross-reactivity to suppress the production of highly specific memory, which is likely to be impotent against evolved pathogens in future infections.\n\n### A mixture memory strategy is necessary to counter pathogens with a broad range of evolutionary rates\n\nThe decision to trigger an equilibrium or a non-equilibrium memory response depends on the extent of antigenic divergence that an immune system is trained to cope with (Figure 2, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3). Equilibrium memory is highly effective (i.e. it has high net utility) against relatively conserved pathogens, however, it fails to counter evolving pathogens (Figure 2C). On the other hand, cross-reactive non-equilibrium memory is more versatile and can counter a broader range of evolved pathogens but at a cost of reduced net utility in immune response; Figure 2C, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3.\n\nAn optimal immune system should have memory strategies to counter pathogens with varying evolutionary rates, ranging from relatively conserved pathogens like chickenpox to rapidly evolving viruses like influenza. We use our optimization protocol to find such memory strategies that maximize the net utility of an immune system that encounters evolving pathogens with (scaled) antigenic divergences uniformly drawn from a broad range of $\\delta^\\in[0 1.6]$; see Materials and methods. This optimization results in a bimodal distribution of optimal specificity for functional memory receptors $P\u2062(\\alpha)$, with separated peaks corresponding to equilibrium ($\\alpha^\u223c1$) and non-equilibrium ($\\alpha^\u223c0.5$) memory (Figure 3, Figure 3\u2014figure supplement 1). This result suggests that specific and cross-reactive memory strategies are complementary modes of immune response that cannot substitute each other. Moreover, non-equilibrium memory tends to be flexible and moderate values of cross-reactivity $1/\\alpha^$ can counter a range of antigenic divergences, without a need for fine-tuning. Therefore, upon production of memory, an optimal immune system should harvest both specific equilibrium memory and cross-reactive non-equilibrium memory, as it does not have a priori knowledge about the evolutionary rate of the infecting pathogen.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61346/elife-61346-fig3-v3.jpg)\n\n**Figure 3.:** Distribution of scaled optimized specificities $\\alpha^^{*}$ for functional memory (purple) is shown for an immune system with a fixed deliberation factor $\\beta^=0.2$. A mixture strategy with a bimodal distribution of specificities $P\u2062(\\alpha^)$ is established to counter pathogens with a broad range of antigenic divergences. The dashed bar indicates stored memory with specificity $\\alpha=0$, which is not further used in response to infections. The solid line indicates the probability $P_{usage}$ that a stored memory with a given specificity is utilized in future infections (Materials and methods). Optimization is done by maximizing the net utility of immune response averaged over encounters with 1000 independently evolving antigens with (scaled) antigenic divergences drawn uniformly from a range $\\delta^\\in(0,1.6)$ (Materials and methods). The distribution shows the ensemble statistics of functional memory accumulated from 200 independent optimizations, each starting from a flat prior for specificities (orange). The insert shows the optimized mixture strategy for one optimization with 3000 steps. Simulation parameters: $\\alpha_{max}=4$, $\\beta_{max}=10$, and $\\theta=2$.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61346/elife-61346-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Mixed memory strategy against pathogens for different deliberation factors $\\beta^$.Mixed memory strategy against pathogens for different deliberation factors $\\beta^$. Distribution of scaled optimized specificities $\\alpha^^{*}$ of functional memories is shown for an immune system with a fixed deliberation factor $\\beta^=0.2$, in which a mixture strategy with a bimodal distribution of specificities $P\u2062(\\alpha^)$ is established to counter pathogens with a broad range of antigenic divergences, drawn uniformly from a range $\\delta^\\in(0,1.6)$ (similar to Figure 3). The dashed bars indicate stored memory with specificity $\\alpha=0$, which is not further used in response to infections. Colors indicate different deliberation factors. Simulation parameters: $\\alpha_{max}=4$, and $\\beta_{max}=10$.\n\nInterestingly, the adaptive immune system stores a mixture of IgM and class-switched IgG isotypes of B-cell memory that show different levels of specificity. IgM memory is an earlier product of affinity maturation with higher cross-reactivity and a lower affinity to antigens, reflecting a non-equilibrium memory that can counter evolving pathogens. On the other hand, memory from class-switched (e.g. IgG) isotype is produced during later stages of affinity maturation and is highly specific to the infecting pathogen, reflecting equilibrium memory that is effective against relatively conserved pathogens (Weisel et al., 2016). Storing a mixture of IgM and class-switched IgG memory is consistent with our recipe for optimal immune strategies to counter pathogens with a broad range of evolutionary rates.\n\n### Cross-reactive memory dominates immune response in organisms that encounter fewer pathogens over a shorter lifetime\n\nSo far, our analysis has focused on maximizing the net utility of immune response, assuming that organisms encounter many such infections throughout their lifetime. This optimization provides a recipe for optimal immune strategies in response to commonly infecting pathogens. However, the expected frequency of infections is also an important factor that can inform immune strategies. For example, imagine the extreme case that an immune system expects to encounter a pathogen at most only once during an organism\u2019s lifetime, for\u00a0example in short-lived organisms. In this case, there is no benefit in keeping a memory even to counter extremely conserved pathogens, for which memory would be otherwise very beneficial.\n\nTo study the impact of infection frequency on immune strategies, we use our optimization procedure to maximize the net utility of immune response, while setting a bound on the number of infections throughout an organism\u2019s lifetime (see Materials and methods). Organisms with an unrealistically very short lifetime (measured in units of the number of infections) experience only a few infections, and therefore, a small (cumulative) antigenic drift from the primary infection during their lifetime $\\delta^\u2062\\sqrt{life time.}\u22721$. In this case, it would be sufficient for an optimal immune system to generate specific memory ($\\alpha^\u22481$), which can mount an effective response with only an intermediate deliberation ($\\beta^\u223c0.4$) upon reinfection (Figure 4A\u2013B), even for pathogens with a moderate evolutionary rate (Figure 4B). Organisms with moderately short lifetime experience evolutionary divergence of reinfecting antigens. In this regime, the immune system stores cross-reactive memory (smaller $\\alpha^$) and uses a larger deliberation factor $\\beta^$ such that this lower-affinity and often off-centered memory can mount an effective response to evolved infections (Figure 4A\u2013B). Since the organism is relatively short-lived, such cross-reactive memory could be sufficient throughout the whole lifetime of the organism, without a need for renewal.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/61346/elife-61346-fig4-v3.jpg)\n\n**Figure 4.:** (A,B) Memory strategies, that\u00a0is, optimal rescaled specificity $\\alpha^^{*}$ (green) and deliberation factor $\\beta^^{*}$ (orange) are shown as a function of the organism\u2019s life expectancy (bottom axis) and the corresponding expected antigenic divergence over the organism\u2019s life-time $\\delta^\u2062\\sqrt{lifetime}$ (top axis). Antigenic divergence (per encounter) of the infecting pathogen is $\\delta^=0.35$ in (A) and $\\delta^=0.5$ in (B). Memory is highly specific in organisms with very short lifetimes, during which re-infections with evolved forms of a pathogen are unlikely (i.e. when life-expected antigenic divergence is smaller than 1, indicated by a dotted pink line). Memory becomes more cross-reactive with a smaller deliberation in organisms with (realistic) short lifetimes, up to a transition point $c^{*}$ (indicated by dotted purple line), after which specificity increases again. (C) Scaled net utility $U^_{net}$ is shown as a function of organism\u2019s life span, whose immune strategies ($\\alpha^^{*}$, $\\beta^^{*}$) are optimized for a specified life expectancy (colors as indicated in the legend). Net utility for memory optimized against pathogens with antigenic divergence $\\delta^=0.35$ (panel A) and $\\delta^=0.5$ (panel B) are shown by full and dashed lines, respectively. Life span and life expectancy are measured in units of the number of pathogenic encounters during lifetime. Simulation parameters: linear deliberation cost function $\u03a9=\u03a9_{0}\u2062\\beta^$ with an amplitude $\u03a9^_{0}=0.1$, $\\alpha_{max}=4$, $\\beta_{max}=10$, and $\\theta=2$.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61346/elife-61346-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Pathogen encounter threshold to transition between cross-reactive and specific memory. (A) The encounter threshold $c^{*}$, shown in Figure 4A,B, decays as a function of the antigenic divergence (per encounter) $\\delta^$ and the amplitude of the naive cost $\u03a9^_{0}$ (colors). (B) The expected antigenic divergence for the duration of $c^{*}$ (threshold) encounters $\\delta^\u2062\\sqrt{c^{*}}$ is shown as a function of antigenic divergence (per encounter) $\\delta^$. Simulation parameters: linear deliberation cost function $\u03a9=\u03a9_{0}\u2062\\beta^$, $\\alpha_{max}=4$, $\\beta_{max}=10$, and $\\theta=2$.\n\nOrganisms with long lifetimes, with pathogen encounters that surpassing the threshold $c^{*}$, expect higher re-infections with pathogens that are highly diverged from the primary infection. In this case, an optimal immune strategy switches from storing and utilizing cross-reactive memory to generating more specific memory receptors (Figure 4A). This specific memory would not hinder activation of preventive novel responses against evolved pathogens (the problem known as original antigenic sin), resulting in continual renewal of memory during organisms\u2019 lifetime. In this regime, the deliberation factor also decreases to facilitate novel responses against antigens that are not readily recognized by memory (Figure 4A\u2013B). The increase in memory specificity from short- to long-lived organisms is more substantial for immune strategies optimized to counter relatively conserved pathogens, that\u00a0is the specific equilibrium memory (Figure 2C, Figure 4A), compared to the memory against evolving pathogens, that\u00a0is the cross-reactive non-equilibrium memory (Figure 2C, Figure 4B). The exact value of the transition threshold $c^{*}$ depends on the expected antigenic divergence \u03b4 during pathogenic evolution and the details of the immune machinery, and specifically the cost of deliberation $\u03a9\u2062(\\tau)$ due to an elevated level of pathogenic proliferation prior to a novel response (Figure 4\u2014figure supplement 1). However, the qualitative trend for cross-reactivity as a function of the organism\u2019s lifetime remain consistent across a range of parameters.\n\nThe results in Figure 4 predict that organisms with few pathogenic encounters or a shorter life-span should generate more cross-reactive and lower affinity (i.e. a naive-type) memory receptors. Indeed, consistent with our prediction, analysis of immune repertoire data indicates that sequence features of memory and na\u00efve B-cell receptors tend to be more similar to each other in mouse compared to humans that enjoy a longer life expectancy (Sethna et al., 2017). Nonetheless, more comprehensive data on cross-species comparison of immune strategies is needed to test our predictions.\n\nWith the increase in human life expectancy, a pressing question is how well our immune system could cope with a larger number of pathogenic challenges that we are now encountering throughout our lifetimes? Aging has many implications for our immune machinery and the history of infections throughout lifetime leaves a complex mark on immune memory that can have long-lasting consequences (Saule et al., 2006), which has also been studied through theoretical modeling (Mayer et al., 2019). In our framework, we can study one aspect of this problem and ask how an immune strategy optimized to battle a given number of infections would perform if the organism were to live longer or equivalently, to encounter pathogens more frequently. Figure 4C shows that cross-reactive memory generated by an immune system optimized to counter few infections (short life expectancy) becomes highly inefficient (i.e., with a lower net utility $U_{net}$) as the number of encounters increases beyond the organism\u2019s expectation (long life span)\u2014an effect that may be in part responsible for the observed decline in the efficacy of our adaptive immunity as we age.\n\n## Discussion\n\nMemory is central to our adaptive immunity by providing a robust and preventive response to reinfecting pathogens. In the presence of continually evolving pathogens, immune memory is only beneficial if receptors can recognize evolved antigens by cross-reactivity. However, biophysical constraints can impose a trade-off between affinity and cross-reactivity of antibodies. Specifically, as receptors undergo affinity maturation, their structures become more rigid and less cross-reactive, while affinity increases (Wedemayer et al., 1997; Frank, 2002; Li et al., 2003; Wu et al., 2017; Mishra and Mariuzza, 2018; Fern\u00e1ndez-Quintero et al., 2020). Consistent with recent experiments (Weisel et al., 2016; Shinnakasu et al., 2016; Recaldin and Fear, 2016; Shinnakasu and Kurosaki, 2017; Viant et al., 2020), we show that memory differentiation should be regulated to preferentially produce lower affinity receptors, which can allow cross-reactive recognition of evolved pathogens. To overcome the resulting energetic impediment of these memory receptors, we infer that the immune system should tune the kinetics of the immune response and allocate a longer deliberation time for memory to react before initiating a novel response\u2014a feature that is also in accordance with observations (Tangye et al., 2003; Tangye and Hodgkin, 2004; Blanchard-Rohner et al., 2009). Co-optimizing kinetics and energetics of memory ensures an effective response against evolving pathogens, throughout an organism\u2019s lifetime.\n\nOptimal cross-reactive immune memory provides a long-term advantage to an organism, yet it may seem energetically sub-optimal over short time scales (Figure 1). One important consequence of a sub-optimal memory response is known as original antigenic sin, where cross-reactive memory from primary infections could interfere with and suppress a protective novel response (Francis, 1960; Vatti et al., 2017). The viral exposure history and the original antigenic sin may have profound consequences on protective immunity against evolving viruses (Cobey and Hensley, 2017). For example, the 2009 H1N1 pandemic triggered memory responses in individuals with childhood exposures to seasonal H1N1 (Linderman and Hensley, 2016; Li et al., 2013; Hensley, 2014), which in some led to a highly focused antibody response toward the conserved epitopes of H1N1. This focus was a problem when in 2013\u20132014 the pandemic H1N1 acquired mutations in those epitopes (Linderman and Hensley, 2016), resulting in a disproportionate impact of infection on middle-aged individuals with pre-existing memory (Petrie et al., 2016). This recent example, among others, showcases how immune history and antigenic sin can impact a population\u2019s immune response to the a rapidly evolving virus like influenza.\n\nComposition of the immune memory coupled with the exposure history of the host should be taken into account when designing new vaccines (Cobey and Hensley, 2017). For example, current vaccine strategies against influenza use sera isolated from ferrets infected with the virus to measure the antigenic distance of circulating strains against the previous years (Smith et al., 2004). However, these ferrets have no immune history for influenza and the antibodies they produce may be distinct from the immune response in the adult population with prior memory, resulting in incorrect measures of antigenic distances (Hensley, 2014). This problem has been recognized by the World Health Organization and there is now an effort to choose vaccine strains based on human serology.\n\nThe impact of immune deficiency related to the original antigenic sin can even be more pronounced due to changes in an organism\u2019s life expectancy. Importantly, we show that immune strategies optimized to benefit short-lived organisms produce highly cross-reactive memory (Figure 4). If an organism\u2019s life-expectancy increases, which is the case for humans, it would be likely for individuals to encounter evolved forms of a pathogen at antigenic distances larger than expected by their immune systems. In this case, cross-reactive memory, optimized for a shorter lifetime, could still be activated but with lower efficacy, which could suppress a protective novel response, consistent with original antigenic sin. It is therefore important to consider sub-optimality of immune strategies in the face of extensive elongation of the human lifespan as one of the plausible factors responsible for immune deficiencies brought by aging.\n\nOne characteristic of memory B-cells, which is currently missing from our model, is their ability to seed secondary germinal centers and undergo further affinity maturation upon reinfection. Evolvability of memory B-cells can allow cross-reactive memory to further specialize against evolved pathogens, without a need to start a germinal center reaction from an un-mutated naive receptor. Interestingly, different experiments suggest that the capacity of memory to re-diversify depends on various factors including the memory isotype (IgM vs. class-switch receptors), the type of antigenic target (viruses vs. others) and the extent of memory maturation (Shlomchik, 2018; McHeyzer-Williams et al., 2018). Therefore, it is interesting to extend our model to study how evolvability of memory can influence its longterm utility to respond to evolving pathogens, and especially viruses.\n\nEvolvability of memory is also relevant for characterizing the dynamics of immune response to chronic viral infections like HIV. Analyses of immune repertoires in HIV patients over multiple years of infection have shown a rapid turnover and somatic evolution of B-cell clonal lineages to counter the evolution of the virus within hosts (Nourmohammad et al., 2019). It would be interesting to see how the constant pressure from the evolving HIV on a host\u2019s immune system impacts the dynamics and efficacy of immune memory over time. In addition, understanding the limits of memory re-diversification is instrumental in designing successive vaccination protocols with antigen cocktails to drive extensive affinity maturation of BCR lineages to elicit broadly neutralizing antibodies Wang et al., 2015; Shaffer et al., 2016; Stephenson et al., 2020\u2014an approach that is the current hope for universal vaccines against rapidly evolving viruses like HIV.\n\nAlthough mechanistically distinct from B-cells, T-cells also differentiate into effector and memory in response to infections. The T-cell response does not involve affinity maturation by hypermutations. However, competition among T-cells with varying receptor affinities acts as selection that leads to immuno-dominant responses by the high-affinity clones. Receptor affinity and the subsequent T-cell signaling determine the extent of clonal expansion and differentiation to an effector versus a memory T-cell population (Kim and Williams, 2010). Although it is still unresolved as how T-cell signaling determines cell fate decision, the process is known to be highly regulated (Rutishauser et al., 2009; Roychoudhuri et al., 2016). Notably, the transcription factor IRF4 selectively promotes expansion and differentiation of high-affinity cytotoxic T-cells into effectors. In contrast, low-affinity T-cells are lost or they could differentiate into early memory (Man et al., 2013). There is also accumulating evidence for the circulation of cross-reactive memory T-cells, which often result in protective immunity against evolving forms of a virus (Greenbaum et al., 2009; Sette and Crotty, 2020), but could also be detrimental by suppressing novel and specific responses\u2014an effect similar to the original antigenic sin by B-cells (Selin et al., 2004). Taken together, there are parallels between differentiation of T-cells and B-cells to memory, and it will be interesting to investigate the advantages of storing cross-reactive (and plausibly low-affinity) T-cell memory as a strategy to counter evolving pathogens.\n\n## Materials and methods\n\nAll codes for simulations and numerical analysis can be found at: https://github.com/StatPhysBio/ImmuneMemoryDM\u00a0(swh:1:rev:c71f7ab35ebcdd251e4a26fdf9628386fe404e86; Schnaack, 2021).\n\n### Numerical optimization\n\nNumerical optimization is performed on ensembles of immune systems that encounter evolving pathogens. Recognition of an evolved pathogen at the $i^{t\u2062h}$ round of infection $\u03c5_{i}$ by a memory that was stored in response to a primary infection $\u03c5_{0}$ ($0^{t\u2062h}$ round) depends on the antigenic distance $d_{i}=\u2225\u03c5_{i}-\u03c5_{0}\u2225$. We model pathogenic evolution as diffusion in the antigenic shape space. In this model, the expected antigenic distance between the primary infection $\u03c5_{0}$ and the evolved antigen $\u03c5_{i}$ can be characterized as, $\u27e8d_{i}^{2}\u27e9\u2261\u27e8\u2225\u03c5_{i}-\u03c5_{0}\u2225^{2}\u27e9=\u03b6^{2}\u2062(t_{i}-t_{0})=i\u2062\\delta^{2}$, where \u03b6 is the diffusion coefficient (i.e. the evolutionary rate) and \u03b4 is the (averaged) antigenic divergence per round of infection. Importantly, this relationship does not depend on the dimensionality of the antigenic shape space, which in general, is difficult to characterize. We simulate pathogenic evolution relative to a primary infection by drawing the corresponding antigenic distance di of the $i^{t\u2062h}$ round of infection from a normal distribution with mean $\\delta\u2062\\sqrt{i}$ and standard deviation $0.05\u2062\\delta\u2062\\sqrt{i}$. The width of this normal distribution characterizes the fluctuations in the mean divergence between infections and reflects how the evolutionary trajectory of a pathogen samples the multi-dimensional shape space surrounding the antigen from the primary infection. Nonetheless, our results are insensitive to the exact choice of this width.\n\nTo characterize optimal specificity $\\alpha^{*}$ and deliberation factor $\\beta^{*}$ (Figure 2, Figure 3, Figure 4), we simulate ensembles of immune systems with different immune strategies ($\\alpha,\\beta$), chosen uniformly from the range $\\alpha\\in[0,\\alpha_{max}]$ and $\\beta\\in[0,\\beta_{max}]$, with 500 increments in both parameters. Each immune system experiences successive rounds of infection with an evolving pathogen with a given antigenic divergence \u03b4. During each encounter, the immune system chooses between utilizing an existing memory or initiating a novel response according to Equation 6. The net utility of each encounter is calculated according to Equation 2. We estimate the expected net utility per encounter over a lifetime of 60 total encounters and repeat this experiment across 105 independent ensembles to find the optimal immune strategies $(\\alpha^{*},\\beta^{*})$ with the highest net utility. As shown in Figure 4, simulating up to 60 encounters is sufficient for the inference of optimal strategies in the asymptotic regime (i.e. a long lifetime).\n\nTo characterize optimal immune strategies against a mixture of pathogens with distinct levels of antigenic divergences, we define the mixture immune strategy by a set of specificities $\\alpha\u2192={\\alpha_{i}}=(with, i=1,\u2026,N_{m})$, where each $\\alpha_{i}$ is a degree of specificity that a stored memory receptor can potentially have, and $N_{m}$ is the number of possible specificity strategies that an immune system can choose from. The probability that an immune system with the mixture strategy $\\alpha\u2192$ recognizes a pathogen \u03c5 through a memory response follows from an extension of = Equation 6,\n\n$$\nP_{recog.}^{(m)}(\\alpha\u2192,\u03c5)=1\u2212\\prodspecificity:\u00a0\\alpha_{i}(1\u2212P_{recog.}^{(m)}(r_{m}^{\\alpha_{i}},\u03c5))=1\u2212\\prodspecificity:\u00a0\\alpha_{i}e^{\u2212E_{\\theta}(r_{m}^{\\alpha_{i}},\u03c5)\u0393(\\tau)}=1\u2212e^{\u2212\\sum\\alpha_{i}E_{\\theta}(r_{m}^{\\alpha_{i}},\u03c5)\u0393(\\tau)}\u22611\u2212e^{\u2212\\beta~E\u00af_{\\theta}(\u03c5)}\n$$\n\nwhere $E\u00af_{\\theta}\u2062(\u03c5)=\\frac{1}{N_{m}}\u2062\\sum_{r_{m}^{\\alpha}}E_{\\theta}\u2062(r_{m}^{\\alpha_{i}},\u03c5)$ is the expected affinity of memory (with distinct specificities) against antigen \u03c5 in an immune repertoire and $\\beta~\u2261N_{m}\u2062\\beta$ is an effective deliberation factor for all choices of specificity. It should be noted that this effective deliberation factor $\\beta~$ is an extensive quantity with respect to the number of specificity strategies that an immune system can choose from, and therefore, is comparable across immune systems with different numbers of strategies.\n\nWe set out to characterize the mixture strategy as the probability $P_{\\beta}\u2062(\\alpha)$ based on which an immune system with a given effective deliberation factor $\\beta~$ should store a memory receptor with specificity \u03b1, in order to optimally counter infecting pathogens with distinct antigenic divergences, drawn from a distribution $P\u2062(\\delta)$. We start our optimization by defining a uniform mixture strategy, where the elements of the immune specificity vector $\\alpha\u2192={\\alpha_{i}}$ (of size $N_{m}=20$), are drawn uniformly from the range $[0,\\alpha_{max}]$. Each optimization step aims to improve the specificity vector $\\alpha\u2192$ to maximize the net utility (per encounter) of the mixture immune response $U_{net}\u2062(\\alpha\u2192^{k})$ against 1000 independently evolving antigens whose (scaled) antigenic divergences are drawn uniformly from the range $\\delta^=[0,\\delta^_{max}]$. We use stochastic simulations to estimate the net utility of the mixture strategy $U_{net}\u2062(\\alpha\u2192^{k})$, whereby the relative affinity of memory receptors (with varying specificities), $E_{\\theta}\u2062(r_{m}^{\\alpha_{i}},\u03c5)/E\u00af_{\\theta}\u2062(\u03c5)$, determines the stochastic rate of their response to the infecting antigen \u03c5. The net utility (per encounter) of the immune response against each of the 1000 independently evolving antigens is estimated by averaging over a host\u2019s lifetime with 200 rounds of pathogenic encounters. We update the mixture strategy over 3000 steps, using local gradient ascent by sampling 100 points in the space of specificity vectors at each step to maximize net utility,\n\n$$\n\\alpha\u2192^{k+1}=\\alpha\u2192^{k}+\u03f5\u2062\\nabla\u2061U_{net}\u2062(\\alpha\u2192^{k})\n$$\n\nHere, $k$ indicates the optimization step and $\u03f5=0.1$ is a hyper-parameter for gradient ascent. We repeat the optimization process starting from 200 independently drawn initial uniform mixture strategies $\\alpha\u2192^{\u20090}$ to characterize the ensemble of optimal memory strategies $P_{\\beta}\u2062(\\alpha)$ against pathogens with distinct antigenic divergences drawn uniformly from a given range $\\delta^=[0,\\delta^_{max}]$, as shown in Figure 3. We also characterize the probability that a stored memory with a given specificity is utilized against future infections (solid line in Figure 3). To do so, we test the optimized ensemble of specificities $P_{\\beta}\u2062(\\alpha)$ against 5000 independent pathogens with antigenic divergences drawn uniformly from the range $\\delta^=[0,\\delta^_{max}]$. We evaluate the usage of a memory with a given specificity \u03b1 (solid line in Figure 3) as the conditional probability $P_{\\beta}\u2062(use \u2062\\alpha|produce \u2062\\alpha)$ for using that memory given that it is produced (i.e. drawn from the distribution $P_{\\beta}\u2062(\\alpha)$).\n\n### Model of evolutionary decision-making for adaptive immune response\n\n#### Kinetics of naive and memory immune response\n\nUpon encountering a pathogen, the adaptive immune system mounts a response by activating the na\u00efve repertoire (i.e. a novel response) and/or by triggering previously stored immune receptors in the memory compartment. A memory receptor often shows a reduced affinity in interacting with an evolved form of the pathogen. Nonetheless, memory plays a central role in protecting against re-infections since even a suboptimal memory can be kinetically more efficient than a naive response, both in B-cells (Tangye and Hodgkin, 2004) and T-cells (Whitmire et al., 2008; Martin et al., 2012). First, memory cells are fast responders and initiate cell division about $\\tau_{0}\u22481-2$ days before naive cells (Tangye et al., 2003; Tangye and Hodgkin, 2004; Blanchard-Rohner et al., 2009). Second, the number of memory cells that are recruited to proliferate and differentiate to effector cells is $b\u22482-3$ times larger than the number of naive cells (Tangye et al., 2003; Tangye and Hodgkin, 2004). Once recruited, however, memory and naive cells have approximately a similar doubling time of about $t_{1/2}\u22480.5-2$ days (Tangye et al., 2003; Macallan et al., 2005). Putting these kinetic factors together, we can define an effective deliberation time \u03c4 for the naive population to reach an activity level (i.e. a population size) comparable to the memory. Assuming an exponential growth during the early stages of memory and na\u00efve proliferation, the deliberation time can be estimated in terms of the kinetic factors by $\\tau=\\tau_{0}+t_{1/2}\u2062ln\u2061b/ln\u20612$ and it is within a range of $\\tau\u22481.5-5$ days; see Figure 1.\n\n#### Energetics of immune recognition\n\nWe assume that each immune receptor $r$ has a cognate antigen $\u03c5_{r}^{*}$ against which it has the highest affinity. We express the binding affinity between a receptor $r$ and an arbitrary target antigen \u03c5 in terms of the antigenic distance $d_{r}\u2062(\u03c5)=\u2225\u03c5-\u03c5_{r}^{*}\u2225$ between the receptor\u2019s cognate antigen $\u03c5_{r}^{*}$ and the target \u03c5: $E\u2062(r,\u03c5)\u2261E\u2062(d_{r}\u2062(\u03c5))$. This distance-dependent binding affinity is measured with respect to the affinity of unspecific antigen-receptor interactions, sufficient to trigger a generic na\u00efve response.\n\nPhysico-chemical constraints in protein structures can introduce a tradeoff between immune receptors\u2019 affinity and cross-reactivity (i.e. ability to equally react to multiple targets). Prior to affinity maturation, the structure of na\u00efve receptors is relatively flexible whereas hypermutations often reconfigure the active sites of a receptor and make them more specific so that they match their target antigens like a lock and key (Wedemayer et al., 1997; Frank, 2002). As a result, the IgM class of antibodies, which are the first line of defense in B-cell response, often have low affinities, yet they are cross-reactive and can recognize mutated forms of the same epitope. On the other hand, the high-affinity IgG class of antibodies, which are the late outcomes of affinity maturation in germinal centers, have higher affinities but bind very specifically to their cognate antigen (Frank, 2002). Broadly neutralizing antibodies (bNAbs) are exceptions to this rule since they often have high potency and can react to a broad range of viral strains. However, bNAbs often react to vulnerable regions of a virus where escape mutations are very deleterious (Mascola and Haynes, 2013). In other words, the majority of bNAbs are not cross-reactive per se, but they are exceptionally successful in targeting conserved epitopes in otherwise diverse viral strains. Nevertheless, an affinity-specificity tradeoff has been reported for a bNAb against the hemagglutinin epitope of influenza (Wu et al., 2017).\n\nWe use a simple functional form to qualitatively capture the tradeoff between cross-reactivity and affinity of antigen-receptor binding interactions: We assume that the binding affinity of a receptor $r$ to an antigen \u03c5 depends on the antigenic distance $d_{r}\u2062(\u03c5)=\u2225\u03c5-\u03c5_{r}^{*}\u2225$ through a kernel with a specificity factor \u03b1 and a shape factor \u03b8 such that, $E\u2062(r,\u03c5)\u2261E_{\\alpha,\\theta}\u2062(d_{r}\u2062(\u03c5))\u223c\\alpha\u2062exp\u2061[-(\\alpha\u2062\u2225\u03c5-\u03c5_{r}^{*}\u2225)^{\\theta}]$, with $\\theta\\geq0$. The width of this binding profile (i.e. the cross-reactivity) is set by the inverse of the specificity factor $1/\\alpha$ (Figure 1), which decays as the height of the function (i.e. the maximum affinity) increases. The parameter \u03b8 tunes the shape of the receptor\u2019s binding profile $E_{\\alpha,\\theta}\u2062(d_{r}\u2062(\u03c5))$, resulting in a flat function (i.e. no tradeoff) for $\\theta=0$, a double-sided exponential function for $\\theta=1$, a Gaussian (bell-curve) function for $\\theta=2$, and top-hat functions for $\\theta\u226b2$. Structural constraints and molecular features of protein receptors define a bound on the minimum cross-reactivity or equivalently, a maximum specificity $\\alpha_{max}$, achievable by a receptor. Using this bound, we define rescaled specificity $\\alpha^\u2261\\alpha/\\alpha_{max}$ to characterize the energetics of an immune response in a dimensionless form.\n\n#### Immune response to evolving pathogens\n\nUpon primary infection (i.e. an encounter with a novel pathogen) naive immune receptors with moderate affinity are activated to develop a specific response through affinity maturation (Figure 1). Since the naive repertoire is diverse enough to contain receptors of moderate affinity against different antigens, we assume that the affinity of responsive na\u00efve receptors, and hence, the strength of a primary immune response to be approximately the same for all pathogens. This simplification becomes less accurate as the immune system ages and the supply of effective receptors become more scarce.\n\nFollowing a naive response to a primary infection and the subsequent affinity maturation, the immune system stores memory cells with an enhanced affinity to use them against future infections (Janeway et al., 2005; see Figure 1). Therefore, the cognate antigen $\u03c5_{r_{m}}^{*}$ for a given memory receptor rm is an epitope derived from the primary infection that led to the formation of memory, which we denote by $\u03c5_{0}$ with a subscript that indicates round of infection. Thus, the binding profile $E_{\\alpha,\\theta}\u2062(r_{m},\u03c5)$ of the memory receptor rm is peaked around the primary antigenic epitope $\u03c5_{r_{m}}^{*}=\u03c5_{0}$ (Figure 1). As pathogens evolve globally to escape the immune challenge, drugs, or vaccination, they drift away from the primary antigen in antigenic space. We model this antigenic shift as a diffusion in shape space whereby a reinfecting pathogen at the $i^{t\u2062h}$ round of infection $\u03c5_{i}$ is on average at a distance $\\delta=\\sqrt{\u27e8\u2225\u03c5_{i}-\u03c5_{i-1}\u2225^{2}\u27e9}$ from the previous infection $\u03c5_{i-1}$. This antigenic shift is proportional to the rate of pathogen evolution $\u03b6_{\u03c5}$ and the average time between infections $\u0394\u2062t=t_{i}-t_{i-1}$, such that $\\delta\u221d\u03b6_{\u03c5}\u2062\\sqrt{\u0394}\u2062t$. A cross-reactive memory can mount a response to an evolved antigen, yet with a reduced affinity that decays with antigenic shift; see Figure 1. It should be noted that the minimum level of receptor\u2019s cross-reactivity (or maximum specificity) $(\\alpha_{max})^{-1}$ defines a natural scale against which we can measure antigenic divergence \u03b4 and hence, form a dimensionless measure of antigenic divergence $\\delta^\u2261\\delta/(\\alpha_{max})^{-1}$.\n\nImmune-pathogen recognition depends both on the binding affinity $E_{\\alpha,\\theta}\u2062(r,\u03c5)$ and the encounter rate $\\gamma_{\u03c5}\u2062(t)$ between an immune receptor $r$ and the antigen \u03c5 at a given time $t$. The encounter rate $\\gamma_{\u03c5}\u2062(t)$ depends on the abundance of the antigen and the immune receptor, and hence, can vary during an infection within a host. The probability that a receptor $r$ encounters and binds to an antigen \u03c5 in a short time interval $[t,t+d\u2062t]$ can be expressed by, $\u03c1\u2062(r,\u03c5,t)\u2062d\u2062t=\\gamma_{\u03c5}\u2062(t)\u2062E_{\\alpha,\\theta}\u2062(r,\u03c5)\u2062d\u2062t$; a similar notion of encounter rate has been previously used in Mayer et al., 2016. A memory response in an individual is triggered through the recognition of an antigen by a circulating memory receptor. If no such recognition occurs during the deliberation time $\\tau\u22481.5-5$ days, the immune system initiates a na\u00efve response. Therefore, the probability that an antigen is recognized through a novel naive response $P_{_{recog.}}^{(0)}$ can be expressed as the probability of the antigen not being recognized $1-P_{_{recog.}}^{(m)}$ by an available memory receptor rm over the deliberation period \u03c4,\n\n$$\nP_{recog.}^{(0)}\u2062(\u03c5)=1-P_{recog.}^{(m)}\u2062(r_{m},\u03c5)=e^{-\\int_{0}^{\\tau}\u03c1\u2062(\u03c5,t)\u2062d\u2062t}=e^{-E_{\\alpha,\\theta}\u2062(r_{m},\u03c5)\u2062\u0393\u2062(\u03c5,\\tau)}\n$$\n\nwhere $\u0393\u2062(\u03c5,\\tau)=\\int_{0}^{\\tau}\\gamma_{\u03c5}\u2062(t)\u2062\ud835\udc51t$ is the expected number of pathogenic encounters over the deliberation time \u03c4 and depends on the accumulated pathogenic load, as pathogens proliferate in the absence of an effective memory prior to a naive response. Here, we have assumed that the affinity of the memory receptor does not change over the response time, which is a simplification since memory receptor can undergo limited affinity maturation (Shlomchik, 2018; McHeyzer-Williams et al., 2018). To further simplify, we also assume that the accumulated pathogenic load is independent of the type of the pathogen $\u0393\u2062(\u03c5,\\tau)\u2261\u0393\u2062(\\tau)$. As pathogens evolve away from the primary infector, the binding affinity $E_{\\alpha,\\theta}\u2062(r_{m},\u03c5)$ of the stored memory receptor rm, and hence, the probability to mount a memory response $P_{recog.}^{(m)}\u2062(r_{m},\u03c5,\\tau)$ decays.\n\nThe deliberation time prior to a novel response provides a window for memory to react with an antigen and mount an immune response by initiating an irreversible cascade of downstream events. Although initiation of this pathogenic recognition can be modeled as an equilibrium process, the resulting immune response is a non-equilibrium and an irreversible process, the details of which are not included in our model.\n\n### Decision-making to mount a memory or naive response\n\nIn the theory of decision-making, a rational decision-maker chooses between two possible actions $a\\in{naive, memory}$ each contributing a utility $U_{a}$. If the decision-maker has prior preference for each action, which we denote by the prior probability distribution $Q_{0}\u2062(a)$, its decisions could be swayed by this knowledge. As a result, the constrained decision-maker should choose actions according to an optimized probability density $Q\u2062(a)$, which maximizes the expected utility while satisfying constraints due to the prior assumption (von Neumann and Morgenstern, 1944; Ortega and Braun, 2013),\n\n$$\nQ(a)=argmaxQ\u2062(a)(\\sumaU_{a}Q(a)-\\frac{1}{\\beta}D_{K\u2062L}(Q(a)||Q_{0}(a)))\n$$\n\nHere, $D_{K\u2062L}(Q(a)||Q_{0}(a))=\\sum_{a}Q(a)log(Q(a)/Q_{0}(a))$ is the Kullback-Leibler distance between the rational distribution $Q\u2062(a)$ and the prior distribution $Q_{0}\u2062(a)$ and $1/\\beta$ is a Lagrange multiplier that constrains the efficacy of a decision-maker to process new information and deviate from its prior assumption. The optimal solution for a rational yet constrained decision follows,\n\n$$\nQ\u2062(a)=\\frac{1}{Z}\u2062Q_{0}\u2062(a)\u2062e^{\\beta\u2062U_{a}}\n$$\n\nwhere $Z=\\sum_{a}Q_{0}\u2062(a)\u2062e^{\\beta\u2062U_{a}}$ is a normalization factor. If information processing is highly efficient (i.e. the bias factor $1/\\beta\u21920$) the rational decision-maker deterministically chooses the action with the highest utility. On the other hand, if the prior is strong (i.e. $1/\\beta\u2192\u221e$), the decision-maker hardly changes its opinion and acts according to its prior belief (i.e. $Q\u2062(a)=Q_{0}\u2062(a)$). Moreover, if the prior distribution is uniform across actions (i.e. no prior preference), rational decision maximizes the entropy of the system (Jaynes, 1957), resulting in the probability of actions $Q\u2062(a)\u223cexp\u2061[\\beta\u2062U_{a}]$. In our analysis, we consider the case of unbiased maximum entropy solution for decision-making. As a result the probability to utilize memory $Q_{mem.}$ or naive $Q_{naive}$ follows,\n\n$$\nQ_{mem.}=1\u2212Q_{naive}=\\frac{e^{\\betaU_{mem}}}{e^{\\betaU_{mem}}+e^{\\betaU_{naive}}}\n$$\n\nwhich is a sigmoidal function, dependent on the utility of each action.\n\nA decision to mount a memory or naive response $Q\u2062(a)$ based on their respective utilities (Equation 8) should be consistent with the biophysical description of the immune response through recognition of an antigen by either of these cell types (Equation 6). By equating these two descriptions of an immune response (Equation 6, Equation 8), we can specify the utility gain associated with mounting a memory or a na\u00efve response in terms of the biophysics and kinetics of receptor-antigen interactions,\n\n$$\nQ_{mem.}=P_{recog.}^{(m)}(r_{m},\u03c5)\u27f6\\frac{e^{\\betaU_{mem}}}{e^{\\betaU_{mem}}+e^{\\betaU_{naive}}}=1\u2212e^{\u2212E_{\\alpha,\\theta}(r_{m},\u03bd)\u0393(\u03bd,\\tau)}\u27f6\\beta(U_{mem.}\u2212U_{naive})=log\u2061[e^{E_{\\alpha,\\theta}(r_{m},\u03bd)\u0393(\u03bd,\\tau)}\u22121]\n$$\n\nImportantly, in the regime that memory is efficient and being utilized to mount a response (i.e. a low chance for naive recognition: $P_{recog.}^{(0)}=e^{-E\u2062(\u03c5)\u2062\u0393\u2062(\u03c5,\\tau)}\u226a1$), the sigmoid form for decision to use memory (Equation 9) is dominated by an exponential factor. Therefore, the utility gain by a memory or a na\u00efve response to an evolved antigen $\u03c5_{i}$ at an antigenic distance $d_{i}=\u2225\u03c5_{i}-\u03c5_{0}\u2225$ from the memory receptor\u2019s cognate antigen $\u03c5_{r_{m}}^{*}\u2261\u03c5_{0}$ follows (see Materials and methods),\n\n$$\nU_{mem}(\u2016\u03c5_{i}\u2212\u03c5_{0}\u2016;\\alpha,\\theta)=U_{naive}+E_{\\alpha,\\theta}(r_{m},\u03bd_{i})=\u2212\u03a9(\u0393_{\\tau})+E_{\\alpha,\\theta}(\u2016\u03bd_{i}\u2212\u03bd_{0}\u2016)\n$$\n\nHere, we introduce the cost for deliberation $\u03a9\u2062(\u0393_{\\tau})$ as the negative utility of the naive response $U_{na\u00efve}$. Deliberation cost $\u03a9\u2062(\u0393_{\\tau})$ is a monotonically increasing function of the cumulative pathogen load $\u0393_{\\tau}$ and reflects the damage (cost) incurred by pathogens as they proliferate during the deliberation time \u03c4 prior to activation of the novel naive response; see Figure 1. It is important to note that the difference in the memory and the na\u00efve utility $\u0394U=U_{mem}\u2212U_{naive}$ determines the decision to mount either of these responses.\n\nThe same consistency criteria between decision-making (Equation 8) and cellular recognition (Equation 6) indicates that the information processing factor \u03b2 in Equation 8 should be equal to the accumulated pathogenic load $\u0393\u2062(\\tau)$ during the deliberation period \u03c4: $\\beta=\u0393\u2062(\\tau)$. A longer deliberation, which on one hand leads to the accumulation of pathogens, would allow the immune system to exploit the utility of a usable memory (i.e. process information), even if the memory has only a slight advantage over a responsive naive receptor. As a result, we refer to \u03b2 as the deliberation factor. Moreover, this analogy relates the efficacy of information processing \u03b2, which plays the role of inverse temperature in thermodynamics, and the total accumulated pathogenic load $\u0393\u2062(\u03c5,\\tau)$, which acts as the sample size for memory receptors as they encounter and accumulate information about pathogens. Interestingly, previous work has drawn a similar correspondence between the inverse temperature in thermodynamics and the effect of sample size on statistical inference LaMont and Wiggins, 2019.\n\nThe deliberation factor in the immune system should be bounded $\\beta\\leq\\beta_{max}$ in order for the organism to survive new infections by mounting a novel response that can suppress an exponentially replicating pathogen before it overwhelms the host. Using this bound, we define rescaled deliberation factor $\\beta^\u2261\\beta/\\beta_{max}\\leq1$ to characterize the kinetics of an immune response in a dimensionless fashion.\n\nIt should be noted that our decision-making formalism assumes that if memory is available, it can be utilized much more efficiently and robustly than a naive response. Therefore, we do not consider scenarios where memory and naive responses are equally involved in countering an infection\u2014a possibility that could play a role in real immune responses. Nonetheless, since such mixed responses are relatively rare, we expect that including them in our model would only result in a slightly different interpretation of the deliberation factor \u03b2 and should not qualitatively impact our results.\n\nIf the immune system decides to mount a memory response against an evolved antigen $\u03c5_{i}$, the binding profile of memory against the target pathogen remains unchanged and equal to the profile $E_{\\alpha,\\theta}\u2062(r_{\u03c5_{0}},\u03c5)$ against the primary infection $\u03c5_{0}$. However, if the immune system mounts a na\u00efve response, a new memory receptor $r_{\u03c5_{i}}$ would be generated with a binding profile $E_{\\alpha,\\theta}\u2062(r_{\u03c5_{i}},\u03c5)$, centered around the latest infection $\u03c5_{i}$. As a result, the expected binding profile $E_{\\alpha,\\theta}^{(i)}\u00af\u2062(\u03c5)$ at the $i^{t\u2062h}$ round of infection is an interpolation between the profiles associated with memory and naive response, weighted by the likelihood of each decision (Equation 6),\n\n$$\nE_{\\alpha,\\theta}^{(i)}\u00af\u2062(\u03c5)=P_{recog.}^{(m)}\u2062(r_{\u03c5_{0}},\u03c5_{i})\u2062E_{\\alpha,\\theta}\u2062(r_{\u03c5_{0}},\u03c5)+P_{recog.}^{(0)}\u2062(\u03c5_{i})\u2062E_{\\alpha,\\theta}\u2062(r_{\u03c5_{i}},\u03c5)\n$$\n\nThe expected binding profile at the $i^{t\u2062h}$ round of infection $E_{\\alpha,\\theta}^{(i)}\u00af\u2062(\u03c5)$ (Equation 12) deviates from the optimal profile centered around the infecting pathogen $E_{\\alpha,\\theta}\u2062(r_{\u03c5_{i}},\u03c5)$ (i.e. memory profile stored following a novel response); see Figure 1. This deviation arises because an energetically sub-optimal memory response can still be favorable when time is of an essence and the decision has to be made on the fly with short deliberation. This tradeoff between the kinetics and the energetics of immune response results in a non-equilibrium decision-making Grau-Moya et al., 2018 by the immune system. In analogy to non-equilibrium thermodynamics, we express this deviation as a dissipative cost of memory response $K_{diss}(t_{i};\\alpha,\\theta)$ at the $i^{t\u2062h}$ round of infection (time point ti), which we quantify by the Kullback-Leibler distance between the expected and the optimal binding profiles, in units of the deliberation factor \u03b2,\n\n$$\nK_{diss}(t_{i};\\alpha,\\theta)=\\frac{1}{\\beta}D_{KL}(E_{\\alpha,\\theta}^{(i)}\u00af(\u03c5)||E_{\\alpha,\\theta}(r_{\u03c5_{i}},\u03c5))=\\frac{1}{\\beta}\\sumantigens:\u00a0\u03c5E_{\\alpha,\\theta}^{(i)}\u00af(\u03c5)log\u2061[\\frac{E_{\\alpha,\\theta}^{(i)}\u00af(\u03c5)}{E_{\\alpha,\\theta}(r_{\u03c5_{i}},\u03c5)}]\n$$\n\nwhere we ensure that binding profiles are normalized over the space of antigens. The dissipation $K_{diss}$ measures the sub-optimality (cost) of the mounted response through non-equilibrium decision-making and quantifies deviation from an equilibrium immune response Grau-Moya et al., 2018.\n\nAn optimal memory strategy should be chosen such that it maximizes the expected utility of the immune response $\u27e8U\u27e9=U_{mem}P_{recog.}^{(m)}+U_{naive}P_{recog.}^{(0)}$, while minimizing the dissipation cost due to the non-equilibrium response $K_{diss}$, over the lifetime of an organism. To infer an optimal strategy, we introduce net utility $U_{net}$ that accounts for the tradeoff between the expected utility and dissipation at a given round of infection at time point ti,\n\n$$\nU_{net}(t_{i};\\alpha,\\beta,\\theta)=\u27e8U_{\\alpha,\\beta,\\theta}(t_{i})\u27e9\u2212K_{diss}(t_{i};\\alpha,\\theta)\n$$\n\nNet utility can be interpreted as the extracted (information theoretical) work of a rational decision-maker that acts in a limited time, and hence, is constantly kept out of equilibrium (Grau-Moya et al., 2018). We infer the optimal memory protocol (i.e. the optimal memory specificity $\\alpha^{*}$ and deliberation factor $\\beta^{*}$) by maximizing the total net utility of memory responses throughout the lifetime of an organism,\n\n$$\n(\\alpha^{*},\\beta^{*})=argmax\\alpha,\\beta\u2062\\sumi:infectionsU_{net}\u2062(t_{i};\\alpha,\\beta,\\theta).\n$$\n\nWhile we do not model time limits to memory, we effectively model only one memory at a time. This effect is the consequence of modeling the memory as only being beneficial until a novel immune response is triggered resulting in the storage of an updated memory centered around a more recent antigen (Figure 1). After such an update, the old memory is no longer relevant as antigens have drifted away.\n\nIn our model, the characteristic time for a novel response (and memory update) is set by the expected antigenic divergence (Figure 2). Accordingly, cross-reactivity of memory is optimized so that the organism can mount effective responses against evolved forms of antigens in this window of time. However, if the lifetime of memory were to be shorter than this characteristic time of memory update, we expect the organism to store more specific memory since this memory would be utilized to counter a more limited antigenic evolution before it is lost. In other words, the shorter of either the memory lifetime or the characteristic time for memory updates determines the optimal cross-reactivity for immune memory.\n",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "a5e93dc3-7f13-4866-8ea3-b7d35dac4c3e",
+      "submission_id": "d21e17f5-c5ef-4269-ac36-f35342f6e4b6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arvind Murugan, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61346.sa1](https://doi.org/10.7554/eLife.61346.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper lies out an interesting framework to think about the consequences of immune memory. The central tension is one between memory cells with high affinity for a narrow range of antigens and lower affinity but broader spectrum that can deal with evolving pathogens better. The reviewers appreciated the combination of abstraction, involving thermodynamic and information theoretic frameworks and the grappling with specifics of immune memory.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Optimal evolutionary decision-making to store immune memory\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Kayla Sprenger (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. As promised in the introduction, the authors could comment on how their approach could be applied to memory T cells in future work, even if the dynamics of such memory is different. (Reviewer 1)\n\n2. Improve Figure 1 so it defines the model more comprehensively without the reader having to consult the Methods section. (Reviewer 1)\n\n3. Cross-reactive Abs are observed to take long to evolve. But the authors results seem to suggest that much cross-reactivity is evolved early in the affinity maturation. The authors should clarify. (Reviewer 2)\n\n4. How would the assumed lifetime of memory B cells affect your results? It appears you have assumed that memory B cells persist through the lifespan of the organism. A discussion of how your results would change if memory lasted for less time would be useful. (Reviewer 2)\n\nReviewer #1:\n\nIn this article, Schnaack and Nourmohammad explore the dynamic constraints in triggering optimal immune responses to eradicate infections. The optimization balances the need for higher affinity (higher specificity/efficacy in clearing pathogen) and cross-reactivity (better response to evolving pathogens). The key paradox being addressed here is that, depending on the speed of evolution of pathogens, the immune system can tune the specificity of the lymphocytes' receptor that are selected e.g. by adjusting the size of low-affinity of the memory lymphocyte compartment.\n\nGiven that the formalism is quite abstract (e.g. definition of antigenic distance in the shape space), it is hard to assess how experimentally testable the results are. The authors make a good attempt at discussing their main insight and it is certainly thought-provoking: they found that the number of exposures to a pathogen, as it relates to the age span of the organism under consideration, is a critical parameter to decide the amount of cross-reactivity stored in memory leukocytes. This is the strongest insight as it relates to experimental results.\n\nThere are theoretical surprises as well: the bimodality of receptor specificities that get selected when pathogens are very diverse at the antigen level is thought-provoking. The authors do point out that this may relate to experimental observations for B cells (mixed populations are selected with or without class switching).\n\nOverall, this is a very well written and insightful manuscript leveraging results from non-equilibrium statistical physics and accounting for varied strategies for the immune system.\n\nReviewer #2:\n\nThis manuscript features a novel mathematical model for investigating how the immune system optimally stores memory of B cell receptor-pathogen interactions in order to maximize protection against future pathogens with diverse evolutionary rates. Results support recent experimental findings that B cell differentiation into memory cells is strongly regulated during the affinity maturation process and that the kinetics and energetics of an immune response are simultaneously optimized to ensure an effective response. Unique insights are also provided into the immunological phenomenon of original antigenic sin, such as the effect on this phenomenon of organismal lifetime, which is also explored in the context of optimal memory storage strategies.\n\nStrengths:\n\nThe presented mathematical framework is rigorously constructed such that meaningful insights can be gleaned into the workings of the adaptive immune response to evolving pathogens. The framework combines fundamental concepts from information processing and equilibrium and non-equilibrium thermodynamics with concepts from probability and statistics in a unique and thoughtful way. The conclusions appear to be well-aligned with recent experimental findings, providing validity for the model and for the subsequent predictions that are made on optimal memory storage strategies for organisms with varying lifespans.\n\nThe results provide useful insights into longstanding questions in immunology, such as whether cell fate decisions on memory B cell differentiation are regulated during the process of affinity maturation, and into the origins of original antigenic sin from an immune response perspective and potential mitigation strategies. With regards to the former point, the model accurately reproduces recent experimental findings showing differentiation into memory B cells during affinity maturation is indeed highly regulated. This thus sets a bar for future computational models of immunological memory processes and affinity maturation to incorporate this feature, rather than assuming differentiation into memory B cells is stochastic and carried out at a constant rate throughout affinity maturation, which is currently a common assumption.\n\nBroad parameter regimes are explored, rendering the findings potentially relevant for infection scenarios with diverse pathogens.\n\nWeaknesses:\n\nTypically, cross-reactivity or equivalently breadth takes a long time to evolve, as evidenced by the fact that broadly neutralizing antibodies (bnAbs) arise only after many years of infection (or re-infection) by an evolving pathogen. Arguments are made by the authors that memory B cells are preferentially produced early on in the affinity maturation process, and that memory B cells are also preferentially stored with intermediate cross-reactivity, which would seem to imply that a good deal of cross-reactivity can be evolved early on in the maturation process. These arguments would seem to be at odds with the concept of bnAb evolution and thus warrant some clarity.\n\nTwo additional points that may warrant some clarity are:\n\n(1) How much the results, especially in the context of organisms of varying life spans, depend on the presumed assumptions that memory B cells have a lifespan that persists throughout the lifetime of the host (seems to still be somewhat of an open question) and that immunological memory does not decay with time, and;\n\n(2) the role of B cell precursor frequencies in the decision-making process of mounting a memory versus na\u00efve B cell response. The authors define an effective deliberation time for the na\u00efve B cell population to reach a level of activity that is similar to the memory B cell population, based on the argument that memory B cells \"can respond quicker and in larger numbers\" than na\u00efve B cells. However, one could imagine a scenario where the memory B cell response is quickly outcompeted and overshadowed by the na\u00efve B cell response due to the high precursor frequencies of the na\u00efve B cells.\n\nThe impact of the paper could potentially be heightened if some discussion of how the principles gleaned on optimal immune memory strategies could be translated to, e.g., vaccine design against fast-evolving pathogens.\n\nGeneral comments:\n\n1. Lines 60-61, It is stated that \"as in most molecular interactions, immune pathogen recognization is cross-reactive\". I am confused by this statement, as many molecular interactions are indeed not cross-reactive (e.g., lock-and-key binding of enzymes and ligands, etc.). Immune-pathogen recognition would also not typically appear to be cross-reactive unless the pathogen is highly mutable or there have been multiple infections of an evolved pathogen, so this sentence further confuses me. Please note that if the sentence is kept as is, I believe the authors meant to use \"recognition\" instead of \"recognization\".\n\n2. Besides the concept of original antigenic sin, could the concept of immune imprinting where immune memory is biased over the lifetime of an organism also be captured by or incorporated into this model somehow?\n\n3. As it appears to be defined, antigenic divergence characterizes two distinct infections by a given pathogen. How relevant is this model and its results for a pathogen like HIV that mutates within its host, where a range of antigenic distances/divergence values quickly become relevant for a single infection?\n\n4. Line 142: in what kinds of scenarios (or against what types of pathogens), might prior preferences be important to consider? To clarify, all of the analyses carried out here assume no prior preferences?\n\n5. In regard to Equation 2, it would seem that the same maximum net utility value could be obtained with either a particularly high expected utility or a particularly low Kdiss. Would the optimal memory protocol look different in these two cases, despite them having the same net utility value? Perhaps this is already addressed, but the answer is not immediately clear to me.\n\n6. Lines 215-218, it is stated that \"This optimization [for the case of moderately evolving pathogens] results in a smaller deliberation factor \ud835\udefd compared to the scenario with slowly evolving pathogens, yet a long enough deliberation to allow the energetically suboptimal memory to react to an infection\". This appears to be true for a range of \u03b4 about 0.1-0.5. Yet, still within in the defined range of \u03b4 for moderately evolving pathogens, \u03b4 values between about 0.6 and 0.8 for the lower amplitude cases appear to result in \ud835\udefd values above those for slowly evolving pathogens. Can the authors please clarify this?\n\n7. Line 104, it is not clear what is meant by the statement that \"Physico-chemical constraints in protein structures can introduce a tradeoff between immune receptors' affinity and cross-reactivity\". Is this tradeoff not determined by the antigenic divergence that an immune system encounters upon a new infection compared to a past infection?\n\n8. Lines 251-254, the last sentence seems to imply that a moderate amount of cross-reactivity or equivalently breadth is achieved early on in the affinity maturation process. This conflicts with my understanding of the evolution of broadly neutralizing antibodies, which typically arise only after many years of infection/pathogen mutation within a host. Can the authors please comment on this? In addition, I was under the impression that broadly neutralizing antibodies are typically class-switched, i.e., not of the IgM type. Is their evidence that the cross-reactivity of IgM receptors produced early on in affinity maturation is really effective at 'countering evolving pathogens' (lines 279-282)?\n\n9. In the last Results section on the effect of infection frequency, and perhaps in general throughout the manuscript, is the assumption made that memory B cells persist for the entire lifetime of an organism? Some studies have placed the half-life of memory B cells to be only between 8 and 10 weeks, and others up to or possibly beyond 2 years, and still others for the lifetime of the host but requiring constant renewal through antigen-specific stimulation. How might changes in the expected lifetime of memory B cells affect the optimal memory strategies that are presented?\n",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a41a0557-6f65-4dfb-b3a0-47c569457daa",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C1",
+      "claim": "The adaptive immune system provides a diverse set of molecules that can mount specific responses against a multitude of pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "The adaptive immune system provides a diverse set of molecules that can mount specific responses against a multitude of pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the adaptive immune system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "68897fde-211c-4fc7-a299-580f931a9d50",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C2",
+      "claim": "Memory is a key feature of adaptive immunity, which allows organisms to respond more readily upon re-infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory is a key feature of adaptive immunity, which allows organisms to respond more readily upon re-infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about immune memory function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "b912a549-1105-4ea7-aa3e-5ddcde840733",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C3",
+      "claim": "Differentiation of memory cells is one of the least understood cell fate decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, differentiation of memory cells is still one of the least understood cell fate decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "252074e2-ff8c-4188-bb1a-9e7ea7d99514",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C4",
+      "claim": "Memory production should be actively regulated to balance between affinity and cross-reactivity of immune receptors for effective protection against evolving pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that memory production should be actively regulated to balance between affinity and cross-reactivity of immune receptors for an effective protection against evolving pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "5ac8af70-eb94-4b3f-91b1-ade487903be7",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C5",
+      "claim": "Specificity of memory should depend on the organism's lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we predict that specificity of memory should depend on the organism's lifespan, and shorter lived organisms with fewer pathogenic encounters should store more cross-reactive memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "6c38d950-0a2b-4d75-b357-f83a34d3881b",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C6",
+      "claim": "Shorter lived organisms with fewer pathogenic encounters should store more cross-reactive memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we predict that specificity of memory should depend on the organism's lifespan, and shorter lived organisms with fewer pathogenic encounters should store more cross-reactive memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "e86dcb47-f880-407d-9c66-ea344b14b6e0",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C7",
+      "claim": "B- and T-cells have unique surface receptors generated through genomic rearrangement, mutation, and selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The central actors in our adaptive immune system are diverse B- and T-cells, whose unique surface receptors are generated through genomic rearrangement, mutation, and selection (Janeway et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "7307fe58-719a-47f1-9e1c-a751eff67bf5",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C8",
+      "claim": "The diversity of receptors allows the immune system to mount specific responses against diverse pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity of receptors allows the immune system to mount specific responses against diverse pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about immune receptor diversity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "784f29d4-fe5e-4e05-ad0d-e77f22e2d2cd",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C9",
+      "claim": "B-cell receptors can specialize through affinity maturation, which is a form of somatic Darwinian evolution within an individual.",
+      "claim_type": "EXPLICIT",
+      "source": "B-cell receptors (BCRs) in particular can specialize through a process of affinity maturation, which is a form of somatic Darwinian evolution within an individual to enhance the affinity of BCRs to pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about B-cell receptor maturation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "cc3f7982-21db-4eb8-b09b-1c81cce68039",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C10",
+      "claim": "Several rounds of somatic mutation and selection during affinity maturation can increase binding affinities of BCRs up to 10,000 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Several rounds of somatic mutation and selection during affinity maturation can increase binding affinities of BCRs up to 10,000 fold (Victora and Nussenzweig, 2012; Meyer-Hermann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "d4b7cd48-2637-48b3-afa4-5744ec147b07",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C11",
+      "claim": "Memory responses are highly efficient because memory cells can be reactivated faster than naive cells and can mount a more robust response to an infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory responses are highly efficient because memory cells can be reactivated faster than naive cells and can mount a more robust response to an infection (McHeyzer-Williams et al., 2000; Tangye et al., 2003; Tangye and Hodgkin, 2004; Moens et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "8bd33f70-1d30-485c-a1b5-c5078602356e",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C12",
+      "claim": "Memory generation is a form of cell fate decision in the immune system, which can occur at different stages of an immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory generation is a form of cell fate decision in the immune system, which can occur at different stages of an immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about immune memory generation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "c2de956b-5341-45c8-b1f4-af3c335ea9e9",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C13",
+      "claim": "Activated naive B-cells can differentiate into antibody-secreting long-lived plasma cells, T-cell-independent un-hypermutated memory cells, or they can initiate a germinal center.",
+      "claim_type": "EXPLICIT",
+      "source": "In B-cells, activated naive cells can differentiate into antibody-secreting long-lived plasma cells, a T-cell-independent un-hypermutated memory cells, or they can initiate a germinal center (Goodnow et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "4e4bcfda-dd0a-43ea-9e1d-12b21f22efc0",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C14",
+      "claim": "B-cells that enter germinal centers differentiate during affinity maturation into high-affinity plasma cells or T-cell-dependent long-lived memory cells that circulate in the blood for antigen surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "B-cells that enter germinal centers differentiate during affinity maturation into high-affinity plasma cells or T-cell-dependent long-lived memory cells that circulate in the blood for antigen surveillance; see schematic Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established scientific knowledge and is illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "518e6c56-6166-41fe-986f-59332f68cf77",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C15",
+      "claim": "Memory differentiation of B-cells is still one of the least understood cell fate decisions in the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "The basis for differentiation of B-cells into memory, especially during affinity maturation, is among the least understood in cell fate decision-making in the immune system (Goodnow et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "8137d87d-eeac-45b3-b094-4fd3a84a0d0d",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C16",
+      "claim": "A long-standing view was that memory is continuously produced during affinity maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "A long-standing view was that memory is continuously produced during affinity maturation (Blink et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "a98d6731-c9f5-4673-8d35-cd4498bad985",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C17",
+      "claim": "Memory receptors often have lower affinity compared to plasma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory receptors often have lower affinity compared to plasma cells (Smith et al., 1997), and therefore, if memory B-cells were to be generated continuously it should be able to proliferate without strong affinity-dependent selection (Goodnow et al., 2010; Victora and Nussenzweig, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "8d44bb10-d177-466f-b699-4d2a964f6467",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C18",
+      "claim": "Recent experiments indicate that memory differentiation is highly regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent experiments indicate that memory differentiation is highly regulated (Paus et al., 2006; Weisel et al., 2016; Shinnakasu et al., 2016; Recaldin and Fear, 2016; Shinnakasu and Kurosaki, 2017; Viant et al., 2020), reflecting a temporal switch in germinal centers that preferentially produces memory at early stages and plasma at later stages of affinity maturation (Weisel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to recent published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "4a0be73c-5fe1-48d7-8e2c-d3cbd7d32fb8",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C19",
+      "claim": "There is a temporal switch in germinal centers that preferentially produces memory at early stages and plasma at later stages of affinity maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent experiments indicate that memory differentiation is highly regulated (Paus et al., 2006; Weisel et al., 2016; Shinnakasu et al., 2016; Recaldin and Fear, 2016; Shinnakasu and Kurosaki, 2017; Viant et al., 2020), reflecting a temporal switch in germinal centers that preferentially produces memory at early stages and plasma at later stages of affinity maturation (Weisel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "db362c44-455a-447d-ab8f-9ac441fba7fa",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C20",
+      "claim": "Active regulation introduces an affinity-dependent cell fate decision, leading to a preferential selection of low-affinity cells to the memory compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "This active regulation introduces an affinity-dependent cell fate decision, leading to a preferential selection of low-affinity cells to the memory compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited experimental findings about memory differentiation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "4bb68899-d23e-4555-a451-7693d1b087ff",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C21",
+      "claim": "Immune-pathogen recognition is cross-reactive, which allows memory receptors to recognize slightly evolved forms of the antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, immune-pathogen recognition is cross-reactive, which would allow memory receptors to recognize slightly evolved forms of the antigen, in response to which they were originally generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about immune cross-reactivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "946238dc-00e2-47ba-89ab-215da62c7aba",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C22",
+      "claim": "The program for differentiation of immune cells to memory should be viewed in light of the immune system's coevolution with pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the program for differentiation of immune cells to memory should be viewed in light of the immune system's coevolution with pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal from the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "3cb89f62-29d9-4c3e-a8d8-d9a17c6be489",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C23",
+      "claim": "The hard-wired affinity-dependent regulatory measures for memory differentiation could be understood as a way to optimize the long-term utility of immune memory against evolving pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the hard-wired affinity-dependent regulatory measures for memory differentiation could be understood as a way to optimize the long-term utility of immune memory against evolving pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal from the authors based on their model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "f880110e-b95b-469b-8998-ba6fa55997b8",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C24",
+      "claim": "Individuals encounter many distinct pathogens with varying evolutionary rates, ranging from relatively conserved pathogens like chickenpox to rapidly evolving viruses like influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals encounter many distinct pathogens with varying evolutionary rates, ranging from relatively conserved pathogens like chickenpox to rapidly evolving viruses like influenza.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about pathogen diversity and evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "4aac86ff-91b4-4ca0-93a9-624bde425a85",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C25",
+      "claim": "An optimal immune system should store a combination of low-affinity memory with high cross-reactivity to counter evolving pathogens, and high-affinity and specific memory to counter relatively conserved pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "To battle such a spectrum of evolving pathogens, we propose that an optimal immune system should store a combination of low-affinity memory with high cross-reactivity to counter evolving pathogens, and high-affinity and specific memory to counter the relatively conserved pathogens\u2014a strategy consistent with B-cell memory, which often involves storage of both cross-reactive IgM and high-affinity IgG receptors (Shlomchik, 2018; McHeyzer-Williams et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal from the authors supported by citations to published research on B-cell memory.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "c0decff9-6b92-4467-9674-5dd39b8769ef",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C26",
+      "claim": "B-cell memory often involves storage of both cross-reactive IgM and high-affinity IgG receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "To battle such a spectrum of evolving pathogens, we propose that an optimal immune system should store a combination of low-affinity memory with high cross-reactivity to counter evolving pathogens, and high-affinity and specific memory to counter the relatively conserved pathogens\u2014a strategy consistent with B-cell memory, which often involves storage of both cross-reactive IgM and high-affinity IgG receptors (Shlomchik, 2018; McHeyzer-Williams et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "d6e01bde-d8ca-4458-af65-1f838d5c0668",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C27",
+      "claim": "Cross-reactive memory should dominate the immune response in short-lived organisms that encounter only a few pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we study the impact of organisms' life expectancy on their evolved memory strategies and predict that cross-reactive memory should dominate the immune response in short-lived organisms that encounter only a few pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "2a517e67-0dcb-45e6-a33e-e8e33962c711",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C28",
+      "claim": "The efficacy of an immune response to a pathogen is determined by the affinity of immune-pathogen recognition and the speed of response to neutralize an infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficacy of an immune response to a pathogen is determined by two key factors: (i) the affinity of immune-pathogen recognition (i.e. energetics) and (ii) the speed of response (i.e. kinetics) to neutralize an infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational assumption of the model based on established immunological principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "fa8c9316-ebb0-44ac-b2e6-b58080421c67",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C29",
+      "claim": "Physico-chemical constraints in protein structures can introduce a tradeoff between immune receptors' affinity and cross-reactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Physico-chemical constraints in protein structures can introduce a tradeoff between immune receptors' affinity and cross-reactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about protein structure-function relationships.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "1dcd1dfc-5eeb-444c-8e52-fbff1858fb74",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C30",
+      "claim": "Affinity-specificity tradeoffs have been reported repeatedly for B-cells and antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we lack a systematic understanding of these structural constraints, affinity-specificity tradeoffs have been reported repeatedly for B-cells and antibodies (Wedemayer et al., 1997; Frank, 2002; Li et al., 2003; Wu et al., 2017; Mishra and Mariuzza, 2018; Fern\u00e1ndez-Quintero et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "c0865fc4-b3a7-4458-94f6-117c61c26e57",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C31",
+      "claim": "While affinity maturation can significantly increase the binding affinity of a B-cell receptor, it also makes the receptor more rigid and specific to its cognate antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, while affinity maturation can significantly increase the binding affinity of a B-cell receptor, it also makes the receptor more rigid and specific to its cognate antigen (Wedemayer et al., 1997; Li et al., 2003; Mishra and Mariuzza, 2018; Fern\u00e1ndez-Quintero et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "1b1ffe00-6c18-4cc6-a945-af783e972aa4",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C32",
+      "claim": "Broadly neutralizing antibodies (bNAbs) appear to be an exception to the affinity-specificity tradeoff rule since they have high potency and can react to a broad range of viral strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly neutralizing antibodies (bNAbs) appear to be an exception to this rule since they have high potency and can react to a broad range of viral strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about bNAbs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "069b1a74-5307-46b1-bf49-1e7eaa232acf",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C33",
+      "claim": "bNAbs often react to vulnerable regions of a virus where escape mutations are very deleterious, including the CD4 binding site of HIV or the stem proteins in influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that bNAbs often react to vulnerable regions of a virus where escape mutations are very deleterious, including the CD4 binding site of HIV or the stem proteins in influenza (Mascola and Haynes, 2013; Lee and Wilson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "450ce5f4-8acb-40a0-b950-2b726a7cab63",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C34",
+      "claim": "The majority of bNAbs are not cross-reactive per se, but they are exceptionally successful in targeting conserved epitopes in otherwise diverse viral strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the majority of bNAbs are not cross-reactive per se, but they are exceptionally successful in targeting conserved epitopes in otherwise diverse viral strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited research about bNAbs.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "55d76d72-d370-496b-b2ea-16de4aae7614",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C42",
+      "claim": "As antigenic divergence grows, specific memory becomes less effective against future infections and therefore, the immune system reduces the deliberation factor to allow a timely novel response.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as antigenic divergence grows, specific memory becomes less effective against future infections and therefore, the immune system reduces the deliberation factor to allow a timely novel response, once memory becomes inefficient (Figure 2B, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "28edd9ac-9a02-478b-ac85-6a9a6f58400a",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C44",
+      "claim": "Cross-reactive receptors tend to have lower affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cross-reactive receptors tend to have lower affinities (Wedemayer et al., 1997; Frank, 2002), which could lead to deficient responses against antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "e51f2df3-08f7-430c-be45-39cfd50b64e5",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C45",
+      "claim": "Activation of energetically sub-optimal yet cross-reactive memory could be detrimental as it may hinder a stronger novel response without providing protective immunity to the host\u2014a deficiency known as the original antigenic sin.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, activation of energetically sub-optimal yet cross-reactive memory could be detrimental as it may hinder a stronger novel response without providing protective immunity to the host\u2014a deficiency known as the original antigenic sin (Francis, 1960; Vatti et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on original antigenic sin.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "e2e42470-2581-469b-90d0-7e6fede6d969",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C47",
+      "claim": "A rational decision to become a memory or a plasma cell during an immune response should depend on the affinity of a cell's receptors and it should not be a stochastic choice with a constant rate throughout affinity maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses in Figure 2 indicate that a rational decision to become a memory or a plasma cell during an immune response should depend on the affinity of a cell's receptors and it should not be a stochastic choice with a constant rate throughout affinity maturation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the model results shown in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "0cf877dd-14ee-43fd-bf93-e73e046fcbb9",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C48",
+      "claim": "Cell fate decision for B-cells during affinity maturation is highly regulated and dependent on receptors' affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cell fate decision for B-cells during affinity maturation is highly regulated and dependent on receptors' affinity (Good-Jacobson and Shlomchik, 2010; Kometani et al., 2013; Shinnakasu et al., 2016; Weisel et al., 2016; Shinnakasu and Kurosaki, 2017; Shlomchik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "b7d310b6-4c7e-4eaa-a387-8394773f01ef",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C49",
+      "claim": "Memory generation is highly correlated with the activity of the transcription factor Bach2 whose expression level is negatively regulated with the abundance of helper CD4+ T-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments have demonstrated that memory generation is highly correlated with the activity of the transcription factor Bach2 whose expression level is negatively regulated with the abundance of helper CD4+ T-cells (Kometani et al., 2013; Shinnakasu et al., 2016; Shinnakasu and Kurosaki, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "96687e4c-7fd4-427c-a186-8137f7d3322a",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C50",
+      "claim": "As the affinity of B-cell receptors increases during affinity maturation, more CD4+ T-cells are recruited to germinal centers, resulting in suppression of Bach2 and a decline in production of memory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As the affinity of B-cell receptors increases during affinity maturation, more CD4+ T-cells are recruited to germinal centers, resulting in suppression of Bach2 and a hence, a decline in production of memory cells (Kometani et al., 2013; Shinnakasu et al., 2016; Shinnakasu and Kurosaki, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "12e068aa-48be-40d1-b886-21aa5171482c",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C51",
+      "claim": "The adaptive immune system has encoded a negative feedback mechanism to store memory with intermediate affinity and cross-reactivity to suppress the production of highly specific memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, our adaptive immune system has encoded a negative feedback mechanism to store memory with intermediate affinity and cross-reactivity to suppress the production of highly specific memory, which is likely to be impotent against evolved pathogens in future infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited experimental findings and the model results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "0aea1500-4647-4696-ba8d-7a60fe3922d2",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C52",
+      "claim": "Equilibrium memory is highly effective against relatively conserved pathogens, however, it fails to counter evolving pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Equilibrium memory is highly effective (i.e. it has high net utility) against relatively conserved pathogens, however, it fails to counter evolving pathogens (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "088e4748-2c34-4c41-9d54-c7f0a333569d",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C53",
+      "claim": "Cross-reactive non-equilibrium memory is more versatile and can counter a broader range of evolved pathogens but at a cost of reduced net utility in immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, cross-reactive non-equilibrium memory is more versatile and can counter a broader range of evolved pathogens but at a cost of reduced net utility in immune response; Figure 2C, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "9e3d8bb0-4081-4547-a085-3751df57803a",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C55",
+      "claim": "Specific and cross-reactive memory strategies are complementary modes of immune response that cannot substitute each other.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that specific and cross-reactive memory strategies are complementary modes of immune response that cannot substitute each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results showing bimodal distribution.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "9cfea1d3-e623-4ca9-83c5-33f4adc7cb91",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C56",
+      "claim": "Upon production of memory, an optimal immune system should harvest both specific equilibrium memory and cross-reactive non-equilibrium memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, upon production of memory, an optimal immune system should harvest both specific equilibrium memory and cross-reactive non-equilibrium memory, as it does not have a priori knowledge about the evolutionary rate of the infecting pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "c20f82ae-b888-4e0d-8d7e-be5d31178bc2",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C57",
+      "claim": "The adaptive immune system stores a mixture of IgM and class-switched IgG isotypes of B-cell memory that show different levels of specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the adaptive immune system stores a mixture of IgM and class-switched IgG isotypes of B-cell memory that show different levels of specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about B-cell memory isotypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "4fa44a8c-2f5d-4bad-9ca0-ce3a7dab3a0d",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C58",
+      "claim": "IgM memory is an earlier product of affinity maturation with higher cross-reactivity and a lower affinity to antigens, reflecting a non-equilibrium memory that can counter evolving pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "IgM memory is an earlier product of affinity maturation with higher cross-reactivity and a lower affinity to antigens, reflecting a non-equilibrium memory that can counter evolving pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about IgM memory characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "cfb0b4b5-88b1-4923-9058-b78b10e9ca6f",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C59",
+      "claim": "Memory from class-switched IgG isotype is produced during later stages of affinity maturation and is highly specific to the infecting pathogen, reflecting equilibrium memory that is effective against relatively conserved pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, memory from class-switched (e.g. IgG) isotype is produced during later stages of affinity maturation and is highly specific to the infecting pathogen, reflecting equilibrium memory that is effective against relatively conserved pathogens (Weisel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "7a51cad9-762d-4ad3-a3b6-d730b10969b2",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C60",
+      "claim": "Storing a mixture of IgM and class-switched IgG memory is consistent with the recipe for optimal immune strategies to counter pathogens with a broad range of evolutionary rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Storing a mixture of IgM and class-switched IgG memory is consistent with our recipe for optimal immune strategies to counter pathogens with a broad range of evolutionary rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the model predictions to observed biological phenomena.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "2b70f8d4-3ff5-419c-8555-b76497e8ca36",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C65",
+      "claim": "Organisms with few pathogenic encounters or a shorter life-span should generate more cross-reactive and lower affinity memory receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The results in Figure 4 predict that organisms with few pathogenic encounters or a shorter life-span should generate more cross-reactive and lower affinity (i.e. a naive-type) memory receptors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the model shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "e9007827-4053-487d-8d5b-bb1baaf82236",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C66",
+      "claim": "Analysis of immune repertoire data indicates that sequence features of memory and na\u00efve B-cell receptors tend to be more similar to each other in mouse compared to humans that enjoy a longer life expectancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, consistent with our prediction, analysis of immune repertoire data indicates that sequence features of memory and na\u00efve B-cell receptors tend to be more similar to each other in mouse compared to humans that enjoy a longer life expectancy (Sethna et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research and is consistent with the model predictions.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "0899b489-8a44-451d-a94a-7ad76c8e59d3",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C68",
+      "claim": "Memory differentiation should be regulated to preferentially produce lower affinity receptors, which can allow cross-reactive recognition of evolved pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with recent experiments (Weisel et al., 2016; Shinnakasu et al., 2016; Recaldin and Fear, 2016; Shinnakasu and Kurosaki, 2017; Viant et al., 2020), we show that memory differentiation should be regulated to preferentially produce lower affinity receptors, which can allow cross-reactive recognition of evolved pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model that is consistent with cited experimental research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "eafcbdc8-d488-43f4-935d-758a0679218e",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C69",
+      "claim": "The immune system should tune the kinetics of the immune response and allocate a longer deliberation time for memory to react before initiating a novel response.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome the resulting energetic impediment of these memory receptors, we infer that the immune system should tune the kinetics of the immune response and allocate a longer deliberation time for memory to react before initiating a novel response\u2014a feature that is also in accordance with observations (Tangye et al., 2003; Tangye and Hodgkin, 2004; Blanchard-Rohner et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model that is consistent with cited observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "ab6619bd-acc4-463c-bc72-6b136e9490ed",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C70",
+      "claim": "The viral exposure history and the original antigenic sin may have profound consequences on protective immunity against evolving viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The viral exposure history and the original antigenic sin may have profound consequences on protective immunity against evolving viruses (Cobey and Hensley, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "3c55e7f5-6aee-4868-94bb-6c0c2e20e0d4",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C71",
+      "claim": "The 2009 H1N1 pandemic triggered memory responses in individuals with childhood exposures to seasonal H1N1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 2009 H1N1 pandemic triggered memory responses in individuals with childhood exposures to seasonal H1N1 (Linderman and Hensley, 2016; Li et al., 2013; Hensley, 2014), which in some led to a highly focused antibody response toward the conserved epitopes of H1N1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "0530151c-1ab0-48f6-bb9a-d819142bf76d",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C72",
+      "claim": "When the pandemic H1N1 acquired mutations in conserved epitopes in 2013-2014, it resulted in a disproportionate impact of infection on middle-aged individuals with pre-existing memory.",
+      "claim_type": "EXPLICIT",
+      "source": "This focus was a problem when in 2013\u20132014 the pandemic H1N1 acquired mutations in those epitopes (Linderman and Hensley, 2016), resulting in a disproportionate impact of infection on middle-aged individuals with pre-existing memory (Petrie et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "2d5a7640-fa24-445c-9a83-34cc6b098f60",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C73",
+      "claim": "Composition of the immune memory coupled with the exposure history of the host should be taken into account when designing new vaccines.",
+      "claim_type": "EXPLICIT",
+      "source": "Composition of the immune memory coupled with the exposure history of the host should be taken into account when designing new vaccines (Cobey and Hensley, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "eed58f33-be8a-445b-8ae7-4f70ba238092",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C74",
+      "claim": "Current vaccine strategies against influenza use sera isolated from ferrets infected with the virus to measure the antigenic distance of circulating strains against the previous years.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, current vaccine strategies against influenza use sera isolated from ferrets infected with the virus to measure the antigenic distance of circulating strains against the previous years (Smith et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "6899c5bf-1980-4c93-9285-85359c934420",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C75",
+      "claim": "Ferrets used for influenza vaccine development have no immune history for influenza and the antibodies they produce may be distinct from the immune response in the adult population with prior memory.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these ferrets have no immune history for influenza and the antibodies they produce may be distinct from the immune response in the adult population with prior memory, resulting in incorrect measures of antigenic distances (Hensley, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "401066a0-1fc2-4891-adc2-de946ee49905",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C76",
+      "claim": "The World Health Organization now has an effort to choose vaccine strains based on human serology.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem has been recognized by the World Health Organization and there is now an effort to choose vaccine strains based on human serology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current WHO practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "ae4ab458-a0cb-49c0-945a-3fb798a1147d",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C77",
+      "claim": "It is important to consider sub-optimality of immune strategies in the face of extensive elongation of the human lifespan as one of the plausible factors responsible for immune deficiencies brought by aging.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore important to consider sub-optimality of immune strategies in the face of extensive elongation of the human lifespan as one of the plausible factors responsible for immune deficiencies brought by aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the model results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "eb29ebd6-8265-43a2-90ad-76239f99c097",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C78",
+      "claim": "Memory B-cells can seed secondary germinal centers and undergo further affinity maturation upon reinfection.",
+      "claim_type": "EXPLICIT",
+      "source": "One characteristic of memory B-cells, which is currently missing from our model, is their ability to seed secondary germinal centers and undergo further affinity maturation upon reinfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about memory B-cell capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "b23462cb-d23d-4802-8c14-cd7f7a7091ed",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C79",
+      "claim": "The capacity of memory to re-diversify depends on various factors including the memory isotype, the type of antigenic target, and the extent of memory maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, different experiments suggest that the capacity of memory to re-diversify depends on various factors including the memory isotype (IgM vs. class-switch receptors), the type of antigenic target (viruses vs. others) and the extent of memory maturation (Shlomchik, 2018; McHeyzer-Williams et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "1226d385-6e53-4e8b-86f1-86ff9d09debb",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C80",
+      "claim": "Analyses of immune repertoires in HIV patients over multiple years of infection have shown a rapid turnover and somatic evolution of B-cell clonal lineages to counter the evolution of the virus within hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of immune repertoires in HIV patients over multiple years of infection have shown a rapid turnover and somatic evolution of B-cell clonal lineages to counter the evolution of the virus within hosts (Nourmohammad et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "8f69d765-baf4-4c7e-8e68-0bec82f6f91b",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C81",
+      "claim": "The T-cell response does not involve affinity maturation by hypermutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The T-cell response does not involve affinity maturation by hypermutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about T-cell responses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "2f371bad-cffb-4802-a82b-b60777144b0a",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C82",
+      "claim": "Competition among T-cells with varying receptor affinities acts as selection that leads to immuno-dominant responses by the high-affinity clones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, competition among T-cells with varying receptor affinities acts as selection that leads to immuno-dominant responses by the high-affinity clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about T-cell selection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "afb268d5-e4b9-434b-a54c-946063ec3128",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C83",
+      "claim": "Receptor affinity and the subsequent T-cell signaling determine the extent of clonal expansion and differentiation to an effector versus a memory T-cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor affinity and the subsequent T-cell signaling determine the extent of clonal expansion and differentiation to an effector versus a memory T-cell population (Kim and Williams, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "fdbb914d-d30f-43b8-8245-9f44e980e856",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C84",
+      "claim": "The transcription factor IRF4 selectively promotes expansion and differentiation of high-affinity cytotoxic T-cells into effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the transcription factor IRF4 selectively promotes expansion and differentiation of high-affinity cytotoxic T-cells into effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about IRF4 function in T-cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "e2d31954-ad89-4fb5-b21a-77bc830cca11",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C85",
+      "claim": "Low-affinity T-cells are lost or they could differentiate into early memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, low-affinity T-cells are lost or they could differentiate into early memory (Man et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "e9d20c80-0c9d-4287-bb18-f5acd7d30725",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C86",
+      "claim": "There is accumulating evidence for the circulation of cross-reactive memory T-cells, which often result in protective immunity against evolving forms of a virus.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also accumulating evidence for the circulation of cross-reactive memory T-cells, which often result in protective immunity against evolving forms of a virus (Greenbaum et al., 2009; Sette and Crotty, 2020), but could also be detrimental by suppressing novel and specific responses\u2014an effect similar to the original antigenic sin by B-cells (Selin et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "09996bd1-ded7-4a14-b3b6-5c7be369febc",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C87",
+      "claim": "Cross-reactive memory T-cells could be detrimental by suppressing novel and specific responses\u2014an effect similar to the original antigenic sin by B-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also accumulating evidence for the circulation of cross-reactive memory T-cells, which often result in protective immunity against evolving forms of a virus (Greenbaum et al., 2009; Sette and Crotty, 2020), but could also be detrimental by suppressing novel and specific responses\u2014an effect similar to the original antigenic sin by B-cells (Selin et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "aa08e109-d7c3-4c5d-85ee-4b2a0f6b0a37",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C88",
+      "claim": "A novel B-cell response could involve affinity maturation to generate memory or high-affinity plasma cells that can secrete antibodies to battle the pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "A novel B-cell response could involve affinity maturation to generate memory or high-affinity plasma cells (pink) that can secrete antibodies to battle the pathogen.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and represents established knowledge about B-cell responses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "bbe1e96e-ddfd-4884-aa0b-e8b756ff433c",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "claim_id": "C89",
+      "claim": "A novel immune response can take 1\u20132 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "A novel response can take 1\u20132 weeks, during which pathogen can replicate within a host and a patient can show symptoms from the disease (top, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and represents established knowledge about immune response kinetics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "36743dc1-2e92-4b7f-baec-5465c1f1d042",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes foundational knowledge about adaptive immunity, including the role of B- and T-cells with diverse receptors generated through genomic rearrangement, mutation, and selection, and the importance of memory cells in mounting faster and more robust responses to reinfections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 present well-established immunological knowledge supported by appropriate citations to the literature. These claims provide necessary background context for the theoretical work and accurately represent the current understanding of adaptive immunity, B-cell receptor diversity, affinity maturation, and memory cell function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "551ee259-fe42-4d69-adc0-68f6faabba7b",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews the evolving understanding of memory B-cell differentiation, noting that while historically viewed as continuous during affinity maturation, recent experiments indicate memory differentiation is highly regulated with a temporal switch favoring early memory production and later plasma cell production, introducing affinity-dependent cell fate decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C15-C20 accurately summarize the state of knowledge regarding memory differentiation, supported by multiple recent citations (Paus et al., 2006; Weisel et al., 2016; Shinnakasu et al., 2016; Recaldin and Fear, 2016; Shinnakasu and Kurosaki, 2017; Viant et al., 2020). The characterization of this as one of the least understood cell fate decisions and the description of the temporal switch are consistent with cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "606919e3-2450-467e-9356-9248eda6cdcc",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript establishes that immune-pathogen recognition is cross-reactive and that physico-chemical constraints introduce a tradeoff between affinity and cross-reactivity in immune receptors, with affinity maturation increasing binding affinity while making receptors more rigid and specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C29-C34, and C44 are well-supported by multiple citations to published research (Wedemayer et al., 1997; Frank, 2002; Li et al., 2003; Wu et al., 2017; Mishra and Mariuzza, 2018; Fern\u00e1ndez-Quintero et al., 2020). The discussion of broadly neutralizing antibodies as exceptions that target conserved epitopes is appropriately nuanced and supported by citations (Mascola and Haynes, 2013; Lee and Wilson, 2015).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "58a9ff38-a0d7-43d2-8dc9-14eea2cf6e60",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors propose that memory differentiation should be viewed in light of immune-pathogen coevolution and that an optimal immune system should store a combination of low-affinity cross-reactive memory for evolving pathogens and high-affinity specific memory for conserved pathogens, with cross-reactive memory dominating in short-lived organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C22-C27 represent theoretical proposals and predictions from the model rather than established findings. While C25 and C26 cite consistency with B-cell memory involving both IgM and IgG receptors (Shlomchik, 2018; McHeyzer-Williams et al., 2018), the core proposals about optimal strategies are speculative and require validation through the model results presented later in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "1b9c6f9f-fff6-4615-99af-adfad8ad81e0",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The theoretical model demonstrates that immune response efficacy depends on both affinity (energetics) and speed (kinetics), and that memory production should be actively regulated based on antigenic divergence. For slowly evolving pathogens, equilibrium memory with high specificity is optimal, while for moderately evolving pathogens, cross-reactive non-equilibrium memory is more versatile but has reduced net utility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C4, C42, C47, C52-C53 are supported by the model results shown in Figure 2 and supplementary figures. The model demonstrates clear relationships between antigenic divergence, optimal specificity, deliberation factor, and net utility. The distinction between equilibrium and non-equilibrium memory strategies is mathematically defined and consistently demonstrated across different parameter choices (Figure 2, Figure 2\u2014figure supplements 1-3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "cf90c98b-ecd3-4130-b05b-0b5364a4c839",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript connects model predictions to experimental observations showing that B-cell memory differentiation is highly regulated and affinity-dependent, mediated by the transcription factor Bach2, whose expression is negatively regulated by CD4+ T-cell abundance, creating a negative feedback mechanism that stores memory with intermediate affinity and cross-reactivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 appropriately connect the theoretical model to experimental mechanisms. The citations to experimental work (Good-Jacobson and Shlomchik, 2010; Kometani et al., 2013; Shinnakasu et al., 2016; Weisel et al., 2016; Shinnakasu and Kurosaki, 2017; Shlomchik et al., 2019) support the affinity-dependent regulation and Bach2-mediated mechanism. The inference about a negative feedback mechanism (C51) is reasonable given the cited evidence and model results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "f29e8088-e1f7-4bf3-9a49-aab928707400",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model predicts that specific and cross-reactive memory strategies are complementary and cannot substitute each other, leading to an optimal strategy of storing both types. This prediction is consistent with the biological observation that the immune system stores both IgM (cross-reactive, low-affinity) and IgG (specific, high-affinity) memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 are supported by the bimodal distribution of optimal specificities shown in Figure 3 and Figure 3\u2014figure supplement 1. The model demonstrates that optimization against pathogens with varying evolutionary rates produces two distinct peaks in specificity distribution. The connection to IgM and IgG memory isotypes (C57-C60) is appropriately presented as consistency with known biology rather than a prediction, with proper citations (Weisel et al., 2016; Shlomchik, 2018; McHeyzer-Williams et al., 2018).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "0f8756f2-5c28-44f1-a74a-bb862349579b",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model predicts that memory specificity should depend on organism lifespan, with shorter-lived organisms encountering fewer pathogens storing more cross-reactive, lower-affinity memory. This prediction is supported by immune repertoire data showing that memory and na\u00efve B-cell receptors are more similar in mice compared to humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C27, C65-C66 present a clear prediction from the model shown in Figure 4. The model demonstrates that optimal specificity increases with organism lifespan beyond a threshold. The supporting evidence from immune repertoire data (Sethna et al., 2017) comparing mice and humans is appropriately cited and consistent with the prediction, though the authors acknowledge that more comprehensive cross-species data would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "52185479-23cf-49cb-a707-2eda8c379448",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model shows that memory differentiation should be regulated to preferentially produce lower affinity receptors for cross-reactive recognition of evolved pathogens, and the immune system should tune kinetics by allocating longer deliberation time for memory to react before initiating a novel response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are supported by model results and are consistent with experimental observations cited (Weisel et al., 2016; Shinnakasu et al., 2016; Recaldin and Fear, 2016; Shinnakasu and Kurosaki, 2017; Viant et al., 2020 for C68; Tangye et al., 2003; Tangye and Hodgkin, 2004; Blanchard-Rohner et al., 2009 for C69). The model demonstrates the co-optimization of energetics (affinity) and kinetics (deliberation) as shown in Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "dd757253-61c2-4674-ba44-e7d779dbcc08",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript discusses implications of original antigenic sin and immune history for vaccine design, using the 2009 H1N1 pandemic as an example, and suggests that sub-optimality of immune strategies due to increased human lifespan may contribute to age-related immune deficiencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C70-C77 appropriately discuss implications of the model in the context of well-documented phenomena. The original antigenic sin concept (C45) is properly cited (Francis, 1960; Vatti et al., 2017). The H1N1 pandemic example (C71-C72) is supported by appropriate citations (Linderman and Hensley, 2016; Li et al., 2013; Hensley, 2014; Petrie et al., 2016). The discussion of vaccine design implications (C73-C76) and aging (C77) are appropriately presented as speculative implications of the model rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "b173429d-0681-470a-914e-26f5030f0622",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript discusses limitations of the current model and extensions to other immune contexts, including memory B-cell re-diversification, HIV immune repertoire evolution, and parallels with T-cell memory differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C87 appropriately acknowledge model limitations and discuss potential extensions. The discussion of memory B-cell re-diversification (C78-C79), HIV evolution (C80), and T-cell memory (C81-C87) is supported by appropriate citations and presented as future directions rather than current findings. This demonstrates appropriate scientific caution and awareness of the model's scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    },
+    {
+      "id": "11158e3b-a715-45c7-985e-09d4b995181f",
+      "content_id": "2181cf1b-411f-4a71-9ecd-1760c0ada2e5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript establishes that novel B-cell responses involve affinity maturation to generate memory or plasma cells and that novel immune responses take 1-2 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 present established immunological knowledge illustrated in Figure 1B. These are well-accepted timescales and processes in adaptive immunity and provide necessary context for the model's kinetic parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:08:25.796675Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a41a0557-6f65-4dfb-b3a0-47c569457daa",
+      "result_id": "36743dc1-2e92-4b7f-baec-5465c1f1d042"
+    },
+    {
+      "claim_id": "68897fde-211c-4fc7-a299-580f931a9d50",
+      "result_id": "36743dc1-2e92-4b7f-baec-5465c1f1d042"
+    },
+    {
+      "claim_id": "e86dcb47-f880-407d-9c66-ea344b14b6e0",
+      "result_id": "36743dc1-2e92-4b7f-baec-5465c1f1d042"
+    },
+    {
+      "claim_id": "7307fe58-719a-47f1-9e1c-a751eff67bf5",
+      "result_id": "36743dc1-2e92-4b7f-baec-5465c1f1d042"
+    },
+    {
+      "claim_id": "784f29d4-fe5e-4e05-ad0d-e77f22e2d2cd",
+      "result_id": "36743dc1-2e92-4b7f-baec-5465c1f1d042"
+    },
+    {
+      "claim_id": "cc3f7982-21db-4eb8-b09b-1c81cce68039",
+      "result_id": "36743dc1-2e92-4b7f-baec-5465c1f1d042"
+    },
+    {
+      "claim_id": "d4b7cd48-2637-48b3-afa4-5744ec147b07",
+      "result_id": "36743dc1-2e92-4b7f-baec-5465c1f1d042"
+    },
+    {
+      "claim_id": "8bd33f70-1d30-485c-a1b5-c5078602356e",
+      "result_id": "36743dc1-2e92-4b7f-baec-5465c1f1d042"
+    },
+    {
+      "claim_id": "c2de956b-5341-45c8-b1f4-af3c335ea9e9",
+      "result_id": "36743dc1-2e92-4b7f-baec-5465c1f1d042"
+    },
+    {
+      "claim_id": "4e4bcfda-dd0a-43ea-9e1d-12b21f22efc0",
+      "result_id": "36743dc1-2e92-4b7f-baec-5465c1f1d042"
+    },
+    {
+      "claim_id": "b912a549-1105-4ea7-aa3e-5ddcde840733",
+      "result_id": "551ee259-fe42-4d69-adc0-68f6faabba7b"
+    },
+    {
+      "claim_id": "518e6c56-6166-41fe-986f-59332f68cf77",
+      "result_id": "551ee259-fe42-4d69-adc0-68f6faabba7b"
+    },
+    {
+      "claim_id": "8137d87d-eeac-45b3-b094-4fd3a84a0d0d",
+      "result_id": "551ee259-fe42-4d69-adc0-68f6faabba7b"
+    },
+    {
+      "claim_id": "a98d6731-c9f5-4673-8d35-cd4498bad985",
+      "result_id": "551ee259-fe42-4d69-adc0-68f6faabba7b"
+    },
+    {
+      "claim_id": "8d44bb10-d177-466f-b699-4d2a964f6467",
+      "result_id": "551ee259-fe42-4d69-adc0-68f6faabba7b"
+    },
+    {
+      "claim_id": "4a0be73c-5fe1-48d7-8e2c-d3cbd7d32fb8",
+      "result_id": "551ee259-fe42-4d69-adc0-68f6faabba7b"
+    },
+    {
+      "claim_id": "db362c44-455a-447d-ab8f-9ac441fba7fa",
+      "result_id": "551ee259-fe42-4d69-adc0-68f6faabba7b"
+    },
+    {
+      "claim_id": "4bb68899-d23e-4555-a451-7693d1b087ff",
+      "result_id": "606919e3-2450-467e-9356-9248eda6cdcc"
+    },
+    {
+      "claim_id": "fa8c9316-ebb0-44ac-b2e6-b58080421c67",
+      "result_id": "606919e3-2450-467e-9356-9248eda6cdcc"
+    },
+    {
+      "claim_id": "1dcd1dfc-5eeb-444c-8e52-fbff1858fb74",
+      "result_id": "606919e3-2450-467e-9356-9248eda6cdcc"
+    },
+    {
+      "claim_id": "c0865fc4-b3a7-4458-94f6-117c61c26e57",
+      "result_id": "606919e3-2450-467e-9356-9248eda6cdcc"
+    },
+    {
+      "claim_id": "1b1ffe00-6c18-4cc6-a945-af783e972aa4",
+      "result_id": "606919e3-2450-467e-9356-9248eda6cdcc"
+    },
+    {
+      "claim_id": "069b1a74-5307-46b1-bf49-1e7eaa232acf",
+      "result_id": "606919e3-2450-467e-9356-9248eda6cdcc"
+    },
+    {
+      "claim_id": "450ce5f4-8acb-40a0-b950-2b726a7cab63",
+      "result_id": "606919e3-2450-467e-9356-9248eda6cdcc"
+    },
+    {
+      "claim_id": "28edd9ac-9a02-478b-ac85-6a9a6f58400a",
+      "result_id": "606919e3-2450-467e-9356-9248eda6cdcc"
+    },
+    {
+      "claim_id": "946238dc-00e2-47ba-89ab-215da62c7aba",
+      "result_id": "58a9ff38-a0d7-43d2-8dc9-14eea2cf6e60"
+    },
+    {
+      "claim_id": "3cb89f62-29d9-4c3e-a8d8-d9a17c6be489",
+      "result_id": "58a9ff38-a0d7-43d2-8dc9-14eea2cf6e60"
+    },
+    {
+      "claim_id": "f880110e-b95b-469b-8998-ba6fa55997b8",
+      "result_id": "58a9ff38-a0d7-43d2-8dc9-14eea2cf6e60"
+    },
+    {
+      "claim_id": "4aac86ff-91b4-4ca0-93a9-624bde425a85",
+      "result_id": "58a9ff38-a0d7-43d2-8dc9-14eea2cf6e60"
+    },
+    {
+      "claim_id": "c0decff9-6b92-4467-9674-5dd39b8769ef",
+      "result_id": "58a9ff38-a0d7-43d2-8dc9-14eea2cf6e60"
+    },
+    {
+      "claim_id": "d6e01bde-d8ca-4458-af65-1f838d5c0668",
+      "result_id": "58a9ff38-a0d7-43d2-8dc9-14eea2cf6e60"
+    },
+    {
+      "claim_id": "2a517e67-0dcb-45e6-a33e-e8e33962c711",
+      "result_id": "1b9c6f9f-fff6-4615-99af-adfad8ad81e0"
+    },
+    {
+      "claim_id": "252074e2-ff8c-4188-bb1a-9e7ea7d99514",
+      "result_id": "1b9c6f9f-fff6-4615-99af-adfad8ad81e0"
+    },
+    {
+      "claim_id": "55d76d72-d370-496b-b2ea-16de4aae7614",
+      "result_id": "1b9c6f9f-fff6-4615-99af-adfad8ad81e0"
+    },
+    {
+      "claim_id": "e2e42470-2581-469b-90d0-7e6fede6d969",
+      "result_id": "1b9c6f9f-fff6-4615-99af-adfad8ad81e0"
+    },
+    {
+      "claim_id": "0aea1500-4647-4696-ba8d-7a60fe3922d2",
+      "result_id": "1b9c6f9f-fff6-4615-99af-adfad8ad81e0"
+    },
+    {
+      "claim_id": "088e4748-2c34-4c41-9d54-c7f0a333569d",
+      "result_id": "1b9c6f9f-fff6-4615-99af-adfad8ad81e0"
+    },
+    {
+      "claim_id": "0cf877dd-14ee-43fd-bf93-e73e046fcbb9",
+      "result_id": "cf90c98b-ecd3-4130-b05b-0b5364a4c839"
+    },
+    {
+      "claim_id": "b7d310b6-4c7e-4eaa-a387-8394773f01ef",
+      "result_id": "cf90c98b-ecd3-4130-b05b-0b5364a4c839"
+    },
+    {
+      "claim_id": "96687e4c-7fd4-427c-a186-8137f7d3322a",
+      "result_id": "cf90c98b-ecd3-4130-b05b-0b5364a4c839"
+    },
+    {
+      "claim_id": "12e068aa-48be-40d1-b886-21aa5171482c",
+      "result_id": "cf90c98b-ecd3-4130-b05b-0b5364a4c839"
+    },
+    {
+      "claim_id": "9e3d8bb0-4081-4547-a085-3751df57803a",
+      "result_id": "f29e8088-e1f7-4bf3-9a49-aab928707400"
+    },
+    {
+      "claim_id": "9cfea1d3-e623-4ca9-83c5-33f4adc7cb91",
+      "result_id": "f29e8088-e1f7-4bf3-9a49-aab928707400"
+    },
+    {
+      "claim_id": "c20f82ae-b888-4e0d-8d7e-be5d31178bc2",
+      "result_id": "f29e8088-e1f7-4bf3-9a49-aab928707400"
+    },
+    {
+      "claim_id": "4fa44a8c-2f5d-4bad-9ca0-ce3a7dab3a0d",
+      "result_id": "f29e8088-e1f7-4bf3-9a49-aab928707400"
+    },
+    {
+      "claim_id": "cfb0b4b5-88b1-4923-9058-b78b10e9ca6f",
+      "result_id": "f29e8088-e1f7-4bf3-9a49-aab928707400"
+    },
+    {
+      "claim_id": "7a51cad9-762d-4ad3-a3b6-d730b10969b2",
+      "result_id": "f29e8088-e1f7-4bf3-9a49-aab928707400"
+    },
+    {
+      "claim_id": "5ac8af70-eb94-4b3f-91b1-ade487903be7",
+      "result_id": "0f8756f2-5c28-44f1-a74a-bb862349579b"
+    },
+    {
+      "claim_id": "6c38d950-0a2b-4d75-b357-f83a34d3881b",
+      "result_id": "0f8756f2-5c28-44f1-a74a-bb862349579b"
+    },
+    {
+      "claim_id": "d6e01bde-d8ca-4458-af65-1f838d5c0668",
+      "result_id": "0f8756f2-5c28-44f1-a74a-bb862349579b"
+    },
+    {
+      "claim_id": "2b70f8d4-3ff5-419c-8555-b76497e8ca36",
+      "result_id": "0f8756f2-5c28-44f1-a74a-bb862349579b"
+    },
+    {
+      "claim_id": "e9007827-4053-487d-8d5b-bb1baaf82236",
+      "result_id": "0f8756f2-5c28-44f1-a74a-bb862349579b"
+    },
+    {
+      "claim_id": "0899b489-8a44-451d-a94a-7ad76c8e59d3",
+      "result_id": "52185479-23cf-49cb-a707-2eda8c379448"
+    },
+    {
+      "claim_id": "eafcbdc8-d488-43f4-935d-758a0679218e",
+      "result_id": "52185479-23cf-49cb-a707-2eda8c379448"
+    },
+    {
+      "claim_id": "e51f2df3-08f7-430c-be45-39cfd50b64e5",
+      "result_id": "dd757253-61c2-4674-ba44-e7d779dbcc08"
+    },
+    {
+      "claim_id": "ab6619bd-acc4-463c-bc72-6b136e9490ed",
+      "result_id": "dd757253-61c2-4674-ba44-e7d779dbcc08"
+    },
+    {
+      "claim_id": "3c55e7f5-6aee-4868-94bb-6c0c2e20e0d4",
+      "result_id": "dd757253-61c2-4674-ba44-e7d779dbcc08"
+    },
+    {
+      "claim_id": "0530151c-1ab0-48f6-bb9a-d819142bf76d",
+      "result_id": "dd757253-61c2-4674-ba44-e7d779dbcc08"
+    },
+    {
+      "claim_id": "2d5a7640-fa24-445c-9a83-34cc6b098f60",
+      "result_id": "dd757253-61c2-4674-ba44-e7d779dbcc08"
+    },
+    {
+      "claim_id": "eed58f33-be8a-445b-8ae7-4f70ba238092",
+      "result_id": "dd757253-61c2-4674-ba44-e7d779dbcc08"
+    },
+    {
+      "claim_id": "6899c5bf-1980-4c93-9285-85359c934420",
+      "result_id": "dd757253-61c2-4674-ba44-e7d779dbcc08"
+    },
+    {
+      "claim_id": "401066a0-1fc2-4891-adc2-de946ee49905",
+      "result_id": "dd757253-61c2-4674-ba44-e7d779dbcc08"
+    },
+    {
+      "claim_id": "ae4ab458-a0cb-49c0-945a-3fb798a1147d",
+      "result_id": "dd757253-61c2-4674-ba44-e7d779dbcc08"
+    },
+    {
+      "claim_id": "eb29ebd6-8265-43a2-90ad-76239f99c097",
+      "result_id": "b173429d-0681-470a-914e-26f5030f0622"
+    },
+    {
+      "claim_id": "b23462cb-d23d-4802-8c14-cd7f7a7091ed",
+      "result_id": "b173429d-0681-470a-914e-26f5030f0622"
+    },
+    {
+      "claim_id": "1226d385-6e53-4e8b-86f1-86ff9d09debb",
+      "result_id": "b173429d-0681-470a-914e-26f5030f0622"
+    },
+    {
+      "claim_id": "8f69d765-baf4-4c7e-8e68-0bec82f6f91b",
+      "result_id": "b173429d-0681-470a-914e-26f5030f0622"
+    },
+    {
+      "claim_id": "2f371bad-cffb-4802-a82b-b60777144b0a",
+      "result_id": "b173429d-0681-470a-914e-26f5030f0622"
+    },
+    {
+      "claim_id": "afb268d5-e4b9-434b-a54c-946063ec3128",
+      "result_id": "b173429d-0681-470a-914e-26f5030f0622"
+    },
+    {
+      "claim_id": "fdbb914d-d30f-43b8-8245-9f44e980e856",
+      "result_id": "b173429d-0681-470a-914e-26f5030f0622"
+    },
+    {
+      "claim_id": "e2d31954-ad89-4fb5-b21a-77bc830cca11",
+      "result_id": "b173429d-0681-470a-914e-26f5030f0622"
+    },
+    {
+      "claim_id": "e9d20c80-0c9d-4287-bb18-f5acd7d30725",
+      "result_id": "b173429d-0681-470a-914e-26f5030f0622"
+    },
+    {
+      "claim_id": "09996bd1-ded7-4a14-b3b6-5c7be369febc",
+      "result_id": "b173429d-0681-470a-914e-26f5030f0622"
+    },
+    {
+      "claim_id": "aa08e109-d7c3-4c5d-85ee-4b2a0f6b0a37",
+      "result_id": "11158e3b-a715-45c7-985e-09d4b995181f"
+    },
+    {
+      "claim_id": "bbe1e96e-ddfd-4884-aa0b-e8b756ff433c",
+      "result_id": "11158e3b-a715-45c7-985e-09d4b995181f"
+    }
+  ],
+  "comparisons": []
+}

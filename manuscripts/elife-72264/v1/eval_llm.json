@@ -1,0 +1,408 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C19",
+      "C52"
+    ],
+    "result": "GtACR1 crystal structures show that Asp234 (3.2 \u00c5) and Glu68 (5.3 \u00c5) are positioned near the protonated Schiff base, with Asp234 being closer to the Schiff base than Glu68.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C19, and C52 are consistently supported by X-ray crystal structure data (PDB codes 6EDQ, Kim et al. 2018, Li et al. 2019) and are referenced with Figure 1. The distances are explicitly stated and based on structural measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C55",
+      "C67",
+      "C121"
+    ],
+    "result": "Computational calculations using the Poisson-Boltzmann equation indicate that Asp234 is deprotonated (pKa = -5) and Glu68 is protonated (pKa = 12) in the wild-type GtACR1 crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C55, C67, and C121 are supported by computational pKa calculations shown in Tables 1-3. The calculated pKa values are consistent across multiple MD-generated conformations, and the protonation pattern is robust even when starting from different initial protonation states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C83",
+      "C84"
+    ],
+    "result": "The D234E mutation shortens both the measured (10 nm) and calculated (6-12 nm) absorption wavelengths compared to wild-type GtACR1, which can only be explained by the presence of a deprotonated acidic residue at position 234.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C83, and C84 are supported by experimental measurements (Table 4, Figure 3) and QM/MM calculations. The wavelength shift is consistent between measurement and calculation, and control calculations forcing protonation of Asp234/Glu234 could not reproduce the observed shift (Supplementary file 1D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C85",
+      "C86",
+      "C87",
+      "C118"
+    ],
+    "result": "The E68Q/D234N double mutation lengthens the measured absorption wavelength by 7 nm and the calculated wavelength by 33 nm (without Cl\u207b) or 4 nm (with Cl\u207b), indicating that either Glu68 or Asp234 must be deprotonated in wild-type GtACR1, with Asp234 being more likely due to its proximity to the Schiff base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C85, C86, C87, and C118 are supported by experimental measurements (Table 4, Figure 3) and QM/MM calculations. The wavelength shift confirms the presence of a deprotonated acidic residue, and the structural proximity argument (3.2 \u00c5 vs 5.3 \u00c5) provides logical support for Asp234 being the deprotonated residue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C79",
+      "C119",
+      "C120"
+    ],
+    "result": "Multiple lines of evidence converge to support that Asp234 is deprotonated in wild-type GtACR1: the D234E mutation shortens the absorption wavelength, the calculated pKa is -5 (lower than Asp212 in BR at -2), and the absence of wavelength change upon D234N mutation does not necessarily indicate protonation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C79, C119, and C120 represent the central conclusion of the paper, supported by multiple independent lines of evidence including spectroscopy (C119), computational pKa calculations (C120), and mechanistic reasoning (C79). The convergence of experimental and computational data strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C69",
+      "C70",
+      "C71",
+      "C76",
+      "C123"
+    ],
+    "result": "MD simulations show that in the D234N mutant, deprotonated Glu68 reorients toward the Schiff base (compensating for the loss of Asp234), which explains why the calculated absorption wavelength remains unchanged despite the mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C69, C70, C71, C76, and C123 are supported by MD simulations (Figure 4, Table 5) and QM/MM calculations (Table 4). The reorientation mechanism is consistent with FTIR data showing deprotonated Glu68 in D234N (Dreier et al. 2021, C71) and explains the paradoxical lack of wavelength change.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Both experimental measurements and QM/MM calculations show that the absorption wavelengths are the same for wild-type and D234N GtACR1s, despite deprotonated Asp234 in the wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C75 are supported by experimental data (Table 4) consistent with prior studies (Kim et al. 2018, Sineshchekov et al. 2016, Yi et al. 2016) and by QM/MM calculations. The apparent paradox is resolved by the Glu68 reorientation mechanism (C76, C123).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In the E68Q/D234N double mutant, Cl\u207b is likely to exist near the protonated Schiff base to compensate for the loss of two acidic residues, as QM/MM calculations and MD simulations show more stable Cl\u207b binding in this mutant, and the calculated wavelength shift matches experimental data only when Cl\u207b is included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88, C89, C91, C92, and C93 are based on computational predictions (Figure 4\u2014figure supplement 2, Supplementary file 1E, Table 4) that show improved agreement with experimental data when Cl\u207b is included. However, experimental attempts to confirm Cl\u207b presence were unsuccessful due to sample denaturation. The hypothesis is plausible but lacks direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The E68Q mutation does not alter the absorption wavelength, suggesting that Glu68 is protonated in the presence of deprotonated Asp234 in wild-type GtACR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C95 are supported by experimental measurements (Table 4) consistent with prior studies (Sineshchekov et al. 2016, Yi et al. 2016) and by the calculated protonation pattern (Table 1). The lack of wavelength change is consistent with Glu68 being protonated and thus charge-neutral.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Structural comparison between GtACR1 and bacteriorhodopsin (BR) shows that key residues stabilizing the deprotonated counterion are conserved (Tyr72/Tyr57, Arg94/Arg82, Tyr207/Tyr185, Lys238/Lys216), but Asp85 in BR (which increases pKa by 6) is replaced with Ser97 in GtACR1, contributing to the exceptionally low pKa of -5 for Asp234 (compared to -2 for Asp212 in BR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 and C55-C62 are supported by structural comparisons with BR (Saito et al. 2012) and pKa calculations (Table 2). The conservation of stabilizing residues and the replacement of Asp85 with Ser97 provide a structural basis for the low pKa of Asp234. The calculations quantify the contributions of individual residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The electrostatic interaction between deprotonated Asp234 and Arg94 (contributing ~3 to pKa) exists in the ground state and may be absent in the D234N mutant, potentially explaining the loss of photocurrent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63, C64, and C65 are supported by pKa calculations (Table 2) and prior structural data (Li et al. 2021). However, C66 is speculative\u2014while the loss of the Asp234-Arg94 interaction is plausible, the claim that this explains photocurrent loss is not directly tested and remains a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The loss of photocurrent in the D234N mutant can be explained by the reorientation of deprotonated Glu68 toward the channel bottleneck, which interferes with anion conduction both structurally (by decreasing channel radius) and electrostatically (by introducing a negative charge in the pore).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 and C125-C128 are supported by MD simulations showing Glu68 reorientation (Figure 5) and channel radius analysis (Figure 5d). The mechanism explains prior experimental observations of photocurrent loss (Kim et al. 2018) and is consistent with the structural data. However, the mechanism is inferred from ground-state simulations, not direct observation of the conducting state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C107",
+      "C108",
+      "C109",
+      "C112",
+      "C113",
+      "C114",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The formation of a proton transfer pathway from the Schiff base via Asp234 to Glu68 is proposed as the basis of the gating mechanism, with Glu68 reorientation toward the channel bottleneck explaining the fast channel closing that corresponds to M-state formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12, C13, C107-C109, and C112-C114 propose a mechanistic model based on structural observations (Figure 5, Figure 6) and prior experimental data (Sineshchekov et al. 2015, 2016). While the model is consistent with available data and explains multiple observations (C129-C131), it remains speculative as it is based on ground-state structures and MD simulations rather than direct observation of the M-state or proton transfer events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "By analogy to C1C2 channelrhodopsin, where the Schiff base-Glu129 distance remains unchanged during the early photocycle, it is plausible that the Schiff base interacts electrostatically with Glu68 in the M-state of GtACR1, inhibiting anion conduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C106 draw an analogy between GtACR1 and C1C2 based on XFEL structures (Oda et al. 2021, C103). While the analogy is reasonable given structural similarities, the extrapolation to GtACR1's M-state (C102, C106) is speculative and not directly tested. The continuous channel in GtACR1's ground state (C105) differs from C1C2 (C104), which may limit the applicability of the analogy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Prior studies proposed that both Glu68 and Asp234 were protonated in GtACR1 based on unchanged absorption wavelengths upon E68Q and D234N mutations, unchanged C=C stretching frequency, and disappearance of C=O stretching frequencies in mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 and C115-C117 accurately summarize prior hypotheses from the literature (Kim et al. 2018, Sineshchekov et al. 2016, Yi et al. 2016, Kandori 2020) with appropriate citations. These claims represent the scientific context that the current study challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Recent work by Dreier et al. (2021) proposed that Asp234 is deprotonated based on FTIR measurements at 293 K (where C=O stretching frequencies for protonated Asp234 observed at 77 K were absent) and MD simulations showing stable H-bond networks with deprotonated Asp234.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 accurately summarize prior work (Dreier et al. 2021, Kojima et al. 2018) with appropriate citations. These claims provide important context showing that the hypothesis of deprotonated Asp234 was previously suggested, which the current study confirms and extends.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C110",
+      "C111"
+    ],
+    "result": "GtACR1 undergoes a photocycle with K, L, M, N, and O intermediates, where the L-state is the anion conducting state, the L-to-M transition involves Schiff base deprotonation and photocurrent decay, and Glu68 is likely to accept a proton from the Schiff base during M-state formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51, C53-C54, and C110-C111 summarize established knowledge about the GtACR1 photocycle from prior studies (Sineshchekov et al. 2015, 2016) with appropriate citations and reference to Figure 2. These claims provide essential background for understanding the gating mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C72"
+    ],
+    "result": "The Schiff base Lys238 is protonated in GtACR1, and the presence of a negative charge (deprotonated acidic residue) adjacent to the protonated Schiff base is a prerequisite for stabilization, as observed in other microbial rhodopsins including Chrimson and Rh-PDE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 and C72 are supported by resonance Raman spectroscopy (Yi et al. 2016, C33), general principles of electrostatic stabilization (C34), and comparisons to other rhodopsins (Tsujimura and Ishikita 2020, Vierock et al. 2017, Watari et al. 2019). These claims establish fundamental principles that guide the interpretation of GtACR1 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "No electron density corresponding to Cl\u207b is observed in GtACR1 crystal structures, and no spectral changes are reported upon deionization or buffer exchange from Cl\u207b to SO\u2084\u00b2\u207b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 are supported by X-ray crystallography data (Kim et al. 2018, Li et al. 2019) and spectroscopic measurements (Sineshchekov et al. 2016). These observations argue against Cl\u207b acting as a counterion in wild-type GtACR1, though the possibility remains for the E68Q/D234N mutant (C89, C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The high pKa of Glu68 (12) can be primarily attributed to the presence of anionic Asp234, whose deprotonated state is stabilized by the protonated Schiff base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by pKa calculations (Table 3) showing that Asp234 contributes +4.9 to pKa(Glu68). The electrostatic repulsion between two nearby negative charges (deprotonated Asp234 and deprotonated Glu68) explains the high pKa of Glu68.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "A similar conformation of Glu68 orienting toward the Schiff base was previously reported for the corresponding residues in GtACR2 (Glu64) and C. reinhardtii channelrhodopsin (Glu90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C78 are supported by citations to prior structural studies (Kojima et al. 2018, Volkov et al. 2017). This observation provides precedent for the Glu68 reorientation mechanism proposed in the D234N mutant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MD simulations show that the distance between Glu234 and the Schiff base in D234E (2.9 \u00c5) is shorter than between Asp234 and the Schiff base in wild-type (3.4 \u00c5), and shorter distances correspond to stronger electrostatic interactions and shorter absorption wavelengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C81, and C82 are supported by MD simulation data (Figure 4, Figure 4\u2014figure supplement 1) and established principles of rhodopsin spectroscopy (Tsujimura and Ishikita 2020). The distance-wavelength relationship provides a mechanistic explanation for the blue shift in D234E.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C122",
+      "C124"
+    ],
+    "result": "FTIR measurements show that Glu68 is deprotonated in the D234N mutant, and the charge compensation by Glu68 explains why the C=C stretching frequency of the retinal does not significantly change upon the D234N mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122 and C124 are supported by FTIR data (Dreier et al. 2021) and provide a mechanistic explanation for prior spectroscopic observations (Yi et al. 2016). The charge compensation mechanism reconciles apparently contradictory observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Asparagine mutation is not always equivalent to protonated aspartate, especially when the aspartate is directly involved in H-bonding with the focusing site or when another titratable residue exists nearby with linked protonation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 represents a general conclusion drawn from the GtACR1 case study. The D234N mutant demonstrates that asparagine substitution can lead to compensatory changes (Glu68 reorientation) that are not equivalent to simple protonation of the original aspartate. This is a valid methodological insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Natural ACRs were identified in Guillardia theta, hyperpolarize membranes through anion import, can be used as neural silencing tools in optogenetics, and microbial rhodopsins generally have acidic residues or Cl\u207b as counterions that play a major role in determining absorption wavelength and protein function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 provide general background information supported by appropriate citations (Govorunova et al. 2015, Wiegert et al. 2017, Miyazaki et al. 2019, Tsujimura and Ishikita 2020). These are well-established facts in the field.",
+    "result_type": "MINOR"
+  }
+]

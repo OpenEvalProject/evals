@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The RhIP assay was developed and validated to recapitulate cellular histone deposition. H3.1 was incorporated in a replication-dependent manner (detected in S phase cells), while H3.3 was incorporated irrespective of replication. The assay requires cellular extract containing essential components, and CAF-1 and HIRA remain in permeabilized cells to mediate H3.1 and H3.3 incorporation respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support the validity of the RhIP assay: differential incorporation patterns of H3.1 vs H3.3 (C29-C33), dependence on CAF-1 and HIRA (C36-C38), resistance to harsh washing indicating chromatin incorporation (C39-C40), requirement for cellular extract (C42, C45), and comparable efficiency to endogenous ChIP (C46). The convergence of immunostaining, ChIP, and knockdown experiments provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C34",
+      "C35"
+    ],
+    "result": "The RhIP assay demonstrates that H3.1 and H3.3 are incorporated into chromatin in replication-dependent and replication-independent manners, respectively. H3.3 was preferentially incorporated into transcriptionally active genes, consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 are directly supported by experimental data showing differential incorporation patterns. C34 demonstrates H3.3 preferential incorporation into active genes, which is validated by comparison with prior literature (C35). The consistency with established knowledge strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "H2A, H2A.X, and H2A.Z can all be incorporated in a replication-independent manner, but during S phase, H2A and H2A.X are preferentially incorporated at replication sites while H2A.Z is not. H2A is incorporated into replicating chromatin more efficiently than H2A.Z, and this efficiency does not change with replication timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by multiple experimental approaches: immunostaining showing differential colocalization with replication foci (C52-C53), RhIP-ChIP showing differential nascent DNA labeling (C57-C58), and replication timing experiments (C59-C60). The convergence of imaging and biochemical data provides strong support for the differential incorporation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Chromatin structure regulates histone incorporation: H2A and H2A.Z are predominantly incorporated into open chromatin regions in asynchronous cells, while closed chromatin suppresses incorporation. During late S phase, H2A (but not H2A.Z) incorporation into closed chromatin increases due to replication-coupled deposition, while incorporation into open chromatin decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by RhIP-ChIP-seq data showing correlation with DNaseI-seq (C61-C62), chromHMM analysis demonstrating preferential incorporation into open chromatin (C64), and cell cycle-dependent changes specific to H2A (C66-C69). The conclusion that replication allows H2A incorporation into closed chromatin (C70) is well-supported by the differential behavior in late S phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The distribution of incorporated H2A.Z in the RhIP assay overlaps well with steady-state H2A.Z localization determined by ChIP-seq. H2A.Z accumulates at TSS of expressed genes while H2A is relatively excluded from TSS. 97% of H2A.Z peaks from RhIP-ChIP-seq are present in ChIP-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis (C75, 0.31 Pearson correlation), heatmap analysis (C77-C79), and TSS enrichment patterns (C73-C74) collectively demonstrate that the RhIP assay recapitulates endogenous H2A.Z localization. The high overlap (97%) between RhIP-ChIP-seq and ChIP-seq peaks (C79) provides strong validation of the method's biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "H2A.Z deposition in the RhIP assay requires ANP32E-mediated eviction and ATP-dependent processes. ANP32E is extracted during permeabilization but present in cellular extract, and its knockdown decreases H2A.Z incorporation into active TSS and enhancers. ATP depletion has similar effects. Insulator regions are less affected, suggesting an alternative mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fractionation data (C81-C82), ANP32E knockdown experiments (C83-C84), and ATP depletion experiments (C85-C86) provide convergent evidence for the mechanism. The observation about insulator regions (C87-C88) is appropriately presented as suggestive rather than definitive. The use of spike-in normalization strengthens the quantitative conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C124"
+    ],
+    "result": "The M6 region (residues 92-102) of H2A.Z is responsible for H2A.Z-specific deposition, while the corresponding region (residues 89-100) of H2A is responsible for replication-coupled H2A deposition. The H2A.Z_M6 swap mutant shows incorporation patterns similar to H2A rather than H2A.Z.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The swap mutant experiment (C89-C90) provides direct functional evidence for the role of the M6 region. The observation that H2A.Z_M6 behaves like H2A in terms of deposition (C90-C91) supports the conclusion that this region determines deposition specificity (C92-C93). The experimental design is appropriate for testing the functional importance of this region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The RhIP assay offers methodological advantages over previous approaches: better time resolution than methods requiring histone synthesis/labeling, enables DNA sequence-level analysis via ChIP-seq, shows high reproducibility (0.95 Pearson correlation between replicates), better enrichment than standard ChIP-seq, and requires relatively few cells (~8\u00d710^6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are supported by quality control data (C96-C97) and practical considerations (C98). The comparison with previous methods (C94) is appropriately contextualized with citations. The high correlation between replicates and better S/N ratio compared to ChIP-seq provide objective validation of the method's technical performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C118",
+      "C123",
+      "C129"
+    ],
+    "result": "The main conclusion is that chromatin structure is the primary determinant of histone localization. H2A/H2A.X achieve genome-wide localization through both replication-independent incorporation into open chromatin and replication-coupled incorporation into closed chromatin. H2A.Z is eliminated from closed chromatin due to low histone exchange frequency and minimal replication-coupled incorporation. This mechanism maintains epigenetic chromatin states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C129) is well-supported by the collective experimental evidence showing differential incorporation patterns (C103-C104), rare histone exchange in closed chromatin (C105), and the mechanistic basis for H2A.Z exclusion from closed chromatin (C108, C110). The model integrates multiple experimental observations into a coherent framework for understanding histone localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "NAP1 promoted promiscuous H3.1 incorporation irrespective of DNA replication, while ASF1 facilitated H3.1 accumulation in nucleoli when used as replacements for cellular extract in the RhIP assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These observations demonstrate that individual histone chaperones cannot fully recapitulate the specificity achieved with cellular extract, supporting the conclusion that the extract contains essential components for proper targeting. The results are clearly described and appropriately interpreted as showing non-physiological incorporation patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Ectopic histone localizations were not observed in the RhIP assay, suggesting sufficient amounts of free histone chaperones are present under the assay conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation (C101) is straightforward, and the inference about chaperone availability (C102) is reasonable given the context of proper histone targeting. This addresses a potential concern about the method but is a relatively minor technical point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "H2A.Z incorporation in the RhIP assay agrees with steady-state ChIP-seq localization at TSS of expressed genes. The RhIP assay cannot assess histone recycling (re-deposition of evicted histones during transcription), which may explain some differences. ANP32E knockout mice show no apparent viability defects despite the importance of H2A.Z.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The agreement with ChIP-seq (C111) validates the assay. The acknowledgment of the limitation regarding histone recycling (C113) is appropriate and well-referenced. The citation of ANP32E knockout data (C112) provides relevant context for interpreting the moderate effects of ANP32E depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "H2A.Z incorporation into pericentric heterochromatin could not be analyzed by RhIP-ChIP-seq due to repetitive DNA sequences. However, pericentric regions are heterogeneous with both heterochromatic and euchromatic regions, and transcriptional activation accompanies structural changes, suggesting H2A.Z incorporation may occur in open chromatin regions of pericentric heterochromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The technical limitation (C114) is clearly stated. The speculation about H2A.Z incorporation in pericentric regions (C117) is appropriately tentative and based on prior knowledge about pericentric heterogeneity (C115-C116). However, without direct experimental evidence, this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Histones form pre-deposition complexes with transcription-related factors before incorporation. The deficiency of replication-independent histone exchange in closed chromatin may prevent accumulation of these transcription-related factors, thereby maintaining transcriptionally inactive states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of pre-deposition complexes (C119-C121) is well-supported by citations. The reasoning about why limited exchange in closed chromatin is important (C122-C123) is logical and integrates the experimental findings with prior knowledge. This provides a mechanistic explanation for the biological significance of the observed patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Known H2A chaperones (Spt16, Nap1) do not bind residues 88-100 of H2A, suggesting a chromatin protein involved in replication recognizes this region. The M6 region is essential for ANP32E-mediated H2A.Z eviction, and the H2A.Z_M6 mutant may not be removed from closed chromatin, potentially causing aberrant gene expression and developmental defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statement about chaperone binding (C125) is supported by citations. The speculation about a replication-associated factor (C126) is reasonable given the functional data. The connection to ANP32E (C127) is well-established by prior work. The speculation about H2A.Z_M6 consequences (C128) is appropriately tentative and provides a plausible explanation for the Drosophila lethality phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C48",
+      "C49",
+      "C109"
+    ],
+    "result": "Background knowledge claims about nucleosome structure, chromatin organization, histone variants, and histone chaperones are established in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge appropriately cited from the literature. They provide necessary context for the study but are not novel findings. All claims are properly attributed to prior work.",
+    "result_type": "MINOR"
+  }
+]

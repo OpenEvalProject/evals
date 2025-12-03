@@ -1,0 +1,2050 @@
+{
+  "submission": {
+    "id": "76f616a4-5de7-4e8e-9a67-1ecc03f5d1f6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:30:03.243577Z",
+    "updated_at": "2025-12-03T02:30:03.243577Z"
+  },
+  "content": [
+    {
+      "id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "submission_id": "76f616a4-5de7-4e8e-9a67-1ecc03f5d1f6",
+      "content_type": "manuscript",
+      "content_text": "# A remote sensing derived data set of 100 million individual tree crowns for the National Ecological Observatory Network\n\n## Authors\n\n- Ben G Weinstein<sup>1</sup> ([ORCID: 0000-0002-2176-7935](https://orcid.org/0000-0002-2176-7935)) \u2020\n- Sergio Marconi<sup>1</sup>\n- Stephanie A Bohlman<sup>2</sup>\n- Alina Zare<sup>3</sup> ([ORCID: 0000-0002-4847-7604](https://orcid.org/0000-0002-4847-7604))\n- Aditya Singh<sup>4</sup>\n- Sarah J Graves<sup>5</sup>\n- Ethan P White<sup>1</sup> ([ORCID: 0000-0001-6728-7745](https://orcid.org/0000-0001-6728-7745))\n\n### Affiliations\n\n1. Department of Wildlife Ecology and Conservation, University of Florida Gainesville United States\n2. School of Forest Resources and Conservation, University of Florida Gainesville United States\n3. Department of Electrical and Computer Engineering, University of Florida Gainesville United States\n4. Department of Agricultural & Biological Engineering, University of Florida Gainesville United States\n5. Nelson Institute for Environmental Studies, University of Wisconsin-Madison Madison United States\n6. Informatics Institute, University of Florida Gainesville United States\n7. Biodiversity Institute, University of Florida Gainesville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nForests provide biodiversity, ecosystem, and economic services. Information on individual trees is important for understanding forest ecosystems but obtaining individual-level data at broad scales is challenging due to the costs and logistics of data collection. While advances in remote sensing techniques allow surveys of individual trees at unprecedented extents, there remain technical challenges in turning sensor data into tangible information. Using deep learning methods, we produced an open-source data set of individual-level crown estimates for 100 million trees at 37 sites across the United States surveyed by the National Ecological Observatory Network\u2019s Airborne Observation Platform. Each canopy tree crown is represented by a rectangular bounding box and includes information on the height, crown area, and spatial location of the tree. These data have the potential to drive significant expansion of individual-level research on trees by facilitating both regional analyses and cross-region comparisons encompassing forest types from most of the United States.\n\n## Introduction\n\nTrees are central organisms in maintaining the ecological function, biodiversity, and the health of the planet. There are estimated to be over three trillion individual trees on earth (Crowther et al., 2015) covering a broad range of environments and geography (Hansen et al., 2013). Counting and measuring trees are central to understanding key environmental and economic issues and has implications for global climate, land management, and wood production. Field-based surveys of trees are generally conducted at local scales (~0.1\u2013100 ha) with measurements of attributes for individual trees within plots collected manually. Connecting these local scale measurements at the plot level to broad scale patterns is challenging because of spatial heterogeneity in forests. Many of the central processes in forests, including change in forest structure and function in response to disturbances such as hurricanes and pest outbreaks, and human modification through forest management and fire, occur at scales beyond those feasible for direct field measurement.\n\nSatellite data with continuous global coverage have been used to quantify important patterns in forest ecology and management such as global tree cover dynamics and disturbances in temperate forests (e.g., Bastin et al., 2018). However, the spatial resolution of satellite data makes it difficult to detect and monitor individual trees that underlie large scale patterns. Individual level data is important for forest ecology, ecosystem services, and forestry applications because it connects sets of remote sensing pixels to a fundamental ecological, evolutionary, and economic unit used in analysis. Without grouping to the crown level, it becomes difficult to compare remotely sensed and field-based measurements on individual trees, since field surveys have no corresponding concept of pixels. In addition, characteristics such as species identity, structural traits, growth, and carbon storage potential are properties of individuals rather than pixels. Delineation of crowns also serves as a first step in species classification (Fassnacht et al., 2016), foliar trait mapping (Zheng et al., 2021), and analyses of tree mortality (Stovall et al., 2019).\n\nHigh-resolution data from airborne sensors have become increasingly accessible, but converting the data into information on individual trees requires significant technical expertise and access to high-performance computing environments (Aubry-Kientz et al., 2019; Puliti et al., 2020). This prevents most ecologists, foresters, and managers from engaging with large scale data on individual trees, despite the availability of the underlying data products and broad importance for forest ecology and management. In response to the growing need for publicly available and standardized airborne remote sensing data over forested ecosystems, the National Ecological Observatory Network (NEON) is collecting multi-sensor data for more than 40 sites across the United\u00a0States. We combine NEON sensor data with a semi-supervised deep learning approach (Weinstein et al., 2019; Weinstein et al., 2020b) to produce a data\u00a0set on the location, height, and crown area of over 100 million individual canopy trees at 37 sites distributed across the United States. To make these data readily accessible, we are releasing easy to access data files to spur biological analyses and to facilitate model development for tasks that rely on individual tree prediction. We describe the components of this open-source data\u00a0set, compare predicted crowns with hand-labeled crowns for a range of forest types, and discuss how this data\u00a0set can be used in forest research.\n\n## Results\n\n### The NEON crowns data\u00a0set\n\nThe NEON Crowns data\u00a0set contains tree crowns for all canopy trees (those visible from airborne remote sensing) at 37 NEON sites. Since subcanopy trees are not visible from above, they are not included in this data\u00a0set. We operationally define \u2018trees\u2019 as plants over 3 m tall. The 37 NEON sites represent all NEON sites containing trees with co-registered RGB and LiDAR data from 2018 or 2019 (see Figure 1 and Appendix 1 for a list of sites and their locations). Predictions were made using the most recent year for which images were available for each site.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig1-v2.jpg)\n\n**Figure 1.:** Clockwise from bottom right: (1) OSBS: Ordway-Swisher Biological Station, Florida (2) DELA: Dead Lake, Alabama, (3) SJER: San Joaquin Experimental Range, California, (4) WREF: Wind River Experimental Forest, Washington, (5) BONA: Caribou Creek, Alaska and (6) BART: Bartlett Experimental Forest, New Hampshire. Each predicted crown is associated with the spatial position, crown area, maximum height estimates from co-registered LiDAR data, and a predicted confidence score.\n\nThe data\u00a0set includes a total of 104,675,304 crowns. Each predicted crown includes data on the spatial position of the crown bounding box, the area of the bounding box (an approximation of crown area), the 99th quantile of the height of LiDAR returns within the bounding box above ground level (an estimate of tree height), the year of sampling, the site where the tree is located, and a confidence score indicating the model confidence that the box represents a tree. The confidence score can vary from 0 to 1, but based on the\u00a0results from Weinstein et al., 2020b, boxes with less than 0.15 confidence were not included in the data\u00a0set.\n\nThe data\u00a0set is provided in two formats: (1) as 11,000 individual files each covering a single 1 km2 tile (geospatial \u2018shapefiles\u2019 in standard ESRI format); and (2) as 37 csv files, each covering an entire NEON site. Geospatial tiles have embedded spatial projection information and can be read in commonly available GIS software (e.g., ArcGIS, QGIS) and geospatial packages for most common programming languages used in data analysis (e.g., R, Python). All data are publicly available, openly licensed (CC-BY), and permanently archived on Zenodo (https://zenodo.org/record/3765872)\u00a0(Weinstein et al., 2020a; Weinstein et al., 2020c; Weinstein et al., 2020b).\n\nTo support the visualization of the data\u00a0set, we developed a web visualization tool using the ViSUS WebViewer (https://visus.org//) to allow users to view all of the trees at the full site scale with the ability to zoom and pan to examine individual groups of trees down to a scale of 20 m (see http://visualize.idtrees.org, Figure 2). This tool will allow the ecological community to assist in identifying areas in need of further refinement within the large area covered by the 37 sites.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig2-v2.jpg)\n\n**Figure 2.:** An example from Bartlett Forest, NH shows the ability to continuously zoom from landscape level to stand level views. A single 1 km tile is shown. NEON sites tend to have between 100\u00a0and 400 tiles in the full airborne footprint.\n\n## Materials and methods\n\n### Crown delineation\n\nThe location of individual tree crowns was estimated using a semi-supervised deep learning workflow (Figure 3) developed by Weinstein et al., 2020b, Weinstein et al., 2019, which is implemented in the \u2018DeepForest\u2019 Python package (Weinstein et al., 2020c). We extend the workflow by filtering trees using the LiDAR-derived canopy height model\u00a0(CHM) to remove objects identified by the model with heights of\u00a0<3 m (Supplementary material). The deep learning model uses a one-shot object detector with a convolutional neural network backbone to predict tree crowns in RGB imagery. The model was pre-trained first on ImageNet (Deng et al., 2009) and then using weak labels generated from a previous published LiDAR tree detection algorithm using NEON data from 30 sites (Silva et al., 2016). The model was then trained on 10,000 hand-annotated crowns from seven NEON sites (Figure 1). Hand-annotations included any vegetation over 3 m in height, including standing dead trees. The LiDAR derived 3 m threshold is important in sparsely vegetated landscapes, such as oak savannah and deserts, where it was difficult for the model to distinguish between trees and low shrubs in the RGB imagery. We chose this approach because it is flexible enough to allow the data\u00a0set to be updated and improved by integrating new data and modeling approaches and because it can be effectively applied at large scales with the remote sensing data available from NEON. This required a flexible method that: (1) avoided hand-tuned parameterizations for each site or ecosystem (Weinstein et al., 2020b), (2) accounted for the highly variable data spanning more than 10,000 tiles that included RGB artifacts and sparse LiDAR point densities, and (3) did not rely on site-specific or species information for allometric constraints on crown size (Duncanson et al., 2015; Fischer et al., 2020). For details of the underlying algorithms, see Weinstein et al., 2019, Weinstein et al., 2020b. Relaxing each of these constraints opens areas of future improvement, especially once species information is available for each label\u00a0(Maschler et al., 2018). For example, Duncanson and Dubayah, 2018 showed that site-specific allometric functions can be effective at Teakettle Canyon (TEAK) in predicting tree location and measuring growth over time.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig3-v2.jpg)\n\n**Figure 3.:** The workflow for model training and development are identical to Weinstein et al., 2020c with the exception of extracting heights from the canopy height model for each bounding box prediction.\n\n### Evaluation and validation\n\nThe DeepForest method has been compared with leading tree crown detection tools that use an array of sensor data and algorithmic approaches. Weinstein et al., 2020b compared the approach to three commonly used LiDAR algorithms (Coomes et al., 2017; Li et al., 2012; Silva et al., 2016) in the lidR package (Roussel et al., 2020) and showed that DeepForest generalized better across forest types with higher precision and recall. Weinstein et al., 2020c evaluated DeepForest using the data from a recent crown delineation comparison from a tropical forest in French Guiana (Aubry-Kientz et al., 2019). The original paper competed five leading methods (e.g., Ferraz et al., 2016; Hamraz et al., 2016; Williams et al., 2020b) with the authors submitting data to an evaluation data\u00a0set kept private by the evaluation team. We repeated this setup and found that DeepForest marginally outperformed all previously tested algorithms, despite the fact that the crown evaluation data used convex polygons and DeepForest used bounding boxes to delineate tree crowns.\n\nIn this paper, we further improved the delineation method by incorporating a 3 m height filter using the NEON LiDAR-derived canopy model (NEON ID: DP3.30015.001). To validate this addition, we compare predictions to the same set of image-annotated bounding boxes used in Weinstein et al., 2020b (21 NEON sites, 207 images, 6926 trees). Annotations were filtered to 3 m in height by comparing bounding boxes. In rare cases, there were obvious trees that were missed by the height threshold. We choose to maintain these rare occurrences as a measure of cross-sensor error when defining \u2018tree\u2019 based on an arbitrary lidar-derived height measure. We defined a true positive crown as a predicted bounding box with greater than 50% intersection-over-union (the area of box intersection divided the area of box union of the two boxes) between the predicted and ground truth (image-annotated) bounding box. From the true positives and the total number of samples we calculated crown recall and precision. Crown recall is the proportion of image-annotated crowns matched to a crown prediction and crown precision is the proportion of predictions that match image-annotated crowns. The workflow yielded a bounding box recall of 79.1% with a precision of 72.6%. Tests indicate that the model generalizes well across geographic sites and forest conditions (Figure 4; Weinstein et al., 2020c; Weinstein et al., 2020b). There is a general bias toward undersegmenting trees in dense stands where multiple individual trees with similar optical characteristics are grouped into a single delineation. Adding the LiDAR threshold in this implementation resulted in predictions that were 7.0% more precise, but 0.2% less accurate on average (Figure 4). The decrease in recall is due to sparse LiDAR coverage in the CHM model where trees in the evaluation data were clearly taller than 3 m were missed in the evaluation data\u00a0set.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig4-v2.jpg)\n\n**Figure 4.:** Evaluation is performed on 207 image-annotated images (6926 trees) in the NEONTreeEvaluation data\u00a0set (https://github.com/weecology/NeonTreeEvaluation). The small drop in recall in the LiDAR thresholding is due to the sparse nature of the LiDAR cloud which can occasionally miss valid trees over 3 m. Overlapping points show areas without change between the methods.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** To utilize LiDAR information in the post-processing step we decided on a single 3 m threshold to eliminate erroneous predictions of shrubs and bare ground as trees. This occurred in open sites, especially at the edges of marshy habitat, where the test of bare ground can appear similar to tree crowns due to low lying vegetation with sharp boundaries against water features. The figure demonstrates the LiDAR threshold for minimum predicted tree height using NEON plot ID OSBS_023 from Ordway Swisher Biological Station, Florida. Using the DeepForest algorithm (Weinstein et al., 2020c), in blue, several boxes were removed based on no LiDAR returns above 3 m (dotted orange). This step was key in open-ground areas in which the algorithm can confuse short vegetation with standing trees.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** During the training of the DeepForest model, we experimented with many approaches to include multiple sources of RGB and LiDAR information on tree presence and crown shape. LiDAR data provides information on canopy height and is therefore commonly used as the primary data source for crown delineation. We attempted to incorporate LiDAR directly into DeepForest by using NEON\u2019s canopy height model (CHM) as raster image alongside the three band RGB image to create a four-band stack. While this seems straightforward it changes the model weights so that they are no longer related to the three band pretraining using the ImageNet data\u00a0set. This means that the neural network must be instantiated with random weights. This requires the network to learn basic feature representations of colors, shapes, and lines rather than inheriting this kind of information from the pretrained model. Given the paucity of labeled data, this leads to overfitting of the network. For example, when tested on the 18 hand annotated plots for the TEAK NEON site, the RGB-only mAP score was 0.529, whereas the combined RGB + CHM score was 0.389. Informal testing on flat-topped canopies in forests such as MLBS and LENO showed a disconnect between the LiDAR prediction and RGB predictions. In general, the CHM\u00a0+\u00a0RGB stack did not offer meaningful improvements in predictions and is therefore not currently included in the model. This may be due in part to the point densities of much of NEON\u2019s LiDAR data. Most LiDAR based methods are evaluated on LiDAR data from a single forest type with point densities ranging from\u00a0~15 pts/m (e.g., Duncanson and Dubayah, 2018) to over 100 pts/m (e.g., Aubry-Kientz et al., 2019). In contrast, NEON\u2019s current continental airborne LiDAR program produces\u00a0~6 pts/m and these densities can be highly variable, with large areas containing less than 4\u00a0pts/m. This tradeoff is needed to cover the much larger areas than previous studies.\n\nWe also compared crowns delineated by the algorithm to field-collected stems from NEON\u2019s Woody Vegetation Structure data\u00a0set. This data product contains a single point for each tree with a stem diameter\u00a0\u226510 cm. We filtered the raw data to only include live trees likely to be visible in the canopy (see Figure 5\u2014figure supplement 1). These overstory tree field data help us analyze the performance of our workflow in matching crown predictions to individual trees by scoring the proportion of field stems that fall within a prediction. Field stems can only be applied to one prediction, so if two predictions overlap over a field stem, only one is considered a positive match. This test produces an overall stem recall rate at 69.4%, which is similar to the bounding box recall rate from the image-annotated data (Figure 5). The analysis of stem recall rate is conservative due to the challenge of aligning the field-collected spatial data with the remote sensing data (Figure 5\u2014figure supplement 1). We found several examples of good predictions that were counted as false positives due to errors in the position of the ground samples within the imagery. The two outliers in OSBS are trees whose most recent field data (2015\u20132017) are labeled \u2018Live\u2019 but have little discernable crowns during leaf-on flights in 2019. It is possible that these trees have since died. In the case of two of the 12 missed trees, they are labeled \u2018disease damaged\u2019 and are not recorded in subsequent surveys. Capturing mortality events remains an area of further work, as RGB-based detection requires visible crowns.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig5-v2.jpg)\n\n**Figure 5.:** Each data point is the recall rate for a field-collected plot. NEON plots are either 40m \u00d7 40 m \u2018tower\u2019 plots with two 20 \u00d7 20 m subplots, or a single 20\u00a0m \u00d7 20 m \u2018distributed\u2019 plot. See NEON sampling protocols for details. For site abbreviations see Appendix 1 for complete table.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Raw NEON tree stem data was processed from the NEON data portal to provide a data set to compare image derived heights to field measured heights. The following filters were applied to the raw NEON field data (ID: DP1.10098.001) after download. A reference tree must have (1) valid spatial coordinates,\u00a0(2) a unique height measurement per sampling period; individuals double recorded but with different heights were discarded, (3) height measurements in more than 1\u00a0year to verify height measurement, (4) changes in between-year field heights of less than 6 m, (5) a classification as alive, (6) a minimum height of 3 m to match the threshold in the remote sensing workflow, and\u00a0(7) be at least within 5 m of the canopy as measured by the LiDAR height model extracted at the stem location. This was used to prevent matching with understory trees in the event that overstory trees were eliminated due to failing in one of the above conditions, or not sampled by NEON. To match trees in the field and the NEON Crowns data\u00a0set, we took the closest height when two predictions and field stems overlapped. We also dropped CLBJ since only three points met these criteria. All other NEON sites did not have any data that met these criteria. In this figure we show stem recall for evaluation plot JERC_048 from Jones Ecological Resource Center, Georgia. Predicted tree bounding boxes in black. Filtered NEON field stems (see above for filtering criteria) in red. The green arrow shows the simplest scenario, a single prediction unambiguously overlaps a single collected stem. The black arrow shows a moderately challenging scenario in which a visually unambiguous crown only barely matches the field collected stem. This could occur due\u00a0to (1) the stem growing at an angle leading to a spatial mismatch between crown and stem, (2) spatial error in measuring the crown location,\u00a0and (3) spatial error in the georeferencing of the RGB image. The blue arrow shows a stem point that does not overlap with a prediction crown. We have written the stem recall evaluation to be conservative, allowing no tolerance for points outside of the prediction box. Therefore, the stem recall for this image was 4/6\u00a0=\u00a066.66%, which we believe is a conservative representation of the performance of the algorithm given the uncertainty in the field data and matching process.\n\nTo assess the utility of our approach for mapping forest structure, we compared remotely sensed predictions of maximum tree height to field measurements of tree height of overstory trees using NEON\u2019s Woody Plant Vegetation Structure Data. We used the same workflow described in Figure 5\u2014figure supplement 1 for determining overstory status for both the stem recall and height verification analysis. Predicted heights showed good correspondence with field-measured heights of reference trees. Using a linear-mixed model with a site-level random effect, the predicted crown height had a root mean squared error\u00a0(RMSE) of 1.73 m (Figure 6). The relationship is stronger in forests with more open canopies (SJER, OSBS) and predictably more prone to error in forests with denser canopies (BART, MLBS). There is a persistent trend of taller predictions from the remote sensing data as compared with field measured heights. This results in part from tree growth since field measurement due to the temporal gap between field data collection and remote sensing acquisition. For example, 73.8% of the field data for Bartlett Forest (BART; RMSE\u00a0=\u00a01.68 m) came from 2015 to 2017, but the remote sensing data is from 2019. In addition, previous work to compare field heights to remote sensing data usually first identify trees that are visible from an overhead perspective canopy (e.g., Puliti et al., 2020), whereas all the\u00a0trees above 10 cm are sampled in NEON plots. This makes it necessary to infer which crowns are visible (for details for implementation see Figure 5\u2014figure supplement 1). This process can lead to overestimation of heights if the tree identified in the field data is overtopped by a larger tree, leading to a higher predicted than measured field height. Given the data available, an average RMSE of 1.73 m suggests that overstory height measures are reasonably accurate across the data\u00a0set.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig6-v2.jpg)\n\n**Figure 6.:** Each point is an individual tree. See text and Figure 5\u2014figure supplement 1 for selection criteria and matching scheme for the field data. The root mean squared error (RMSE) of a mixed-effects model with a site level random effect is 1.73 m.\n\n## Discussion\n\n### Using the NEON crowns data\u00a0set for individual, landscape, and biogeographic scale applications\n\nThis data\u00a0set supports individual-level cross-scale ecological research that has not been previously possible. It provides the unique combination of information spanning the entire United States, with sites ranging from Puerto Rico to Alaska, with continuous individual-level data within sites at scales hundreds of times larger than what is possible using field-based survey methods. At the individual level, high-resolution airborne imagery can inform analysis of critical forest properties, such as tree growth and mortality (Clark et al., 2004; Stovall et al., 2019), foliar biochemistry (Chadwick and Asner, 2016; Wang et al., 2020), and landscape-scale carbon storage (Graves et al., 2018b). Because field data on these properties are measured on individual trees, individual level tree detection allows connecting field data directly to image data. In addition, growth, mortality, and changes in carbon storage occur on the scale of individual trees such that detection of individual crowns allows direct tracking of these properties across space and time. This allows researchers to understand questions like how individual level attributes relate to mortality in response to disturbance and pests and how the spatial configuration of individual trees within a landscape influences resilience. As a result, this individual level data may be useful for promoting fire resistance landscapes and combating large scale pest outbreaks. While it is possible to aggregate information solely at the stand level, we believe that individual level data opens new possibilities in large scale forest monitoring and provides richer insights into the underlying mechanisms that drive these patterns.\n\nAt landscape scales, research is often focused on the effect of environmental and anthropogenic factors on forest structure and biodiversity (Denslow, 1995). For example, understanding why tree biomass and traits vary across landscapes has direct applications to numerous ecological questions and economic implications (e.g., Laubhann et al., 2009). Often this requires sampling at a number of disparate locations and either extrapolation to continuous patterns at landscape scales, or assumptions that the range of possible states of the system are captured by the samples. Using the individual level data from this data\u00a0set, we can now produce continuous high-resolution maps across entire NEON sites for enabling landscape scale studies of multiple ecological phenomena (Figure 7). For example, previous work has found that functional and species diversity at local scales promotes biomass and tree growth (Barrufol et al., 2013; Liang et al., 2016). Similar findings have been reported for phylogenetic diversity at local scales (Satdichanh et al., 2019). Especially when combining with species data, using the crown data to investigate the scale and strength of these effects will inform the mechanisms of community assembly, ecological stability, and forest productivity. These landscape scale responses can then be combined with high resolution data on natural and anthropogenic drivers (e.g., topography, soils,\u00a0and fire management) to model forest dynamics at broad scales.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig7-v2.jpg)\n\n**Figure 7.:** For each 100 m2 pixel, the total number of predicted crowns were counted.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** With over 7000 1\u00a0km2 tiles, it is not possible to do a systematic check of data and predicted crowns. However, there are several general issues that we have encountered that are worth noting. Data quality errors include incomplete site coverage, image artifacts due to georectification, errors in orthomosaic stitching, and lighting changes among data collection events. (Top left) Patchy coverage at the site level can prevent broad scale analysis with large gaps in RGB data availability (NEON site GRSM). (Top right) RGB artifacts at the edge of images stem from the challenge of georectification of the RGB and LiDAR tiles leading to swirling in the RGB pixels (NEON site OSBS). (Bottom left) Seams in the flight-lines in the RGB images lead to gaps in local predictions (NEON site DELA). (Bottom right) Changes in illumination among data acquisition collections lead to stark changes in pixel values.\n\nBy focusing on detecting individual trees, this approach to landscape scale forest analysis does not require assumptions about spatial similarity, sufficiently extensive sampling, or consistent responses of the ecosystem to drivers across spatial gradients. This is important because the heterogeneity of forest landscapes makes it difficult to use field plot data on quantities such as tree density and biomass to extrapolate inference to broad scales (Marvin et al., 2014). To illustrate this challenge, we compared field-measured tree densities of NEON field plots to estimated densities of 10,000 remotely sensed plots of the same size placed randomly throughout the landscapes across footprints of the airborne data. We attempted to change the Woody Vegetation data as little as possible (i.e., compared with the more refined filtered data in previous analyses) in order to obtain estimates of tree cover in a plot from the field data. To be included in this analysis, trees needed to have valid spatial coordinates and a minimum height of 3 m. Some older data lacked height estimates, in which case we used a minimum DBH threshold of 15 cm. In each simulated plot, we then counted the total number of predicted tree crowns to create a distribution of tree densities at the site level (Figure 8). Comparing the field plot tree densities with the distribution from the full site shows deviations for most sites, with NEON field plots exhibiting higher tree densities than encountered on average in the airborne data for some sites (e.g.,\u00a0Teakettle Canyon, CA) and lower tree densities than from remote sensing in others (e.g., Ordway-Swisher Biological Station). While this kind of comparison is inherently difficult due to differing thresholds and filters for data inclusion in field versus remotely sensed data, it highlights that even well stratified sampling of large landscapes as was done with NEON plots (see NEON technical documents for NEON.DP1.10098) can produce differing tree attribute estimates than continuous sampling from remote sensing data. Combining representative field sampling with remote sensing to produce data products like the NEON Crowns data\u00a0set provides an approach to addressing this challenge to improve estimations of the abundance, biomass, and size distributions across large geographic areas.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig8-v2.jpg)\n\n**Figure 8.:** For the remote sensing data, 10,000 simulated 40 m2 plots were calculated for each site for the full AOP footprint for each year. To mimic NEON sampling, two quadrants were randomly sampled in each simulated plot. No plots on water, bare ground, or herbaceous land classes were included in the comparison. We selected three sites from three NEON domains to show a sample of sites across the continental United\u00a0States. Both distributed and tower NEON plots were used for these analyses.\n\nThe NEON Crowns data\u00a0set supports the assessment of cross-site patterns to help understand the influence of large-scale processes on forest structure at biogeographic scales. For example, ecologists are interested in how and why forest characteristics such as abundance, biomass, and allometric relationships vary among forest types (e.g., Jucker et al., 2017) and how these patterns covary across environmental gradients (Feldpausch et al., 2011). Understanding these relationships is important for inferring controls over forest stand structure, understanding individual tree biology, and assessing stand productivity. For example, are local patterns of density and structural biomass primarily the result of historical mechanisms, such as dispersal and adaptation, or local mechanisms such as nutrient availability? By providing standardized data that span near-continental scales, this data\u00a0set can help inform the fundamental mechanisms that shape forest structure and dynamics. For example, we can calculate tree allometries (e.g., the ratio of tree height to crown area) on a large number of individual trees across NEON sites and explore how allometry varies with stand density and vegetation type (Figure 9). This analysis shows a continental-scale relationship, with denser forests exhibiting trees with narrower crowns for the same tree height compared with less dense forests, but also clustering and variation in the relationship within vegetation types. For example, subalpine forests illustrate relationships between tree density and allometry that are distinct from other forest types. By defining both general biogeographic patterns, and deviations therein, this data\u00a0set will allow the investigation of factors shaping forest structure at macroecological scales.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/62922/elife-62922-fig9-v2.jpg)\n\n**Figure 9.:** For site abbreviations see Appendix 1. Crown area is calculated by multiplying the width and height of the predicted crown bounding box. Crown height is the 99th quantile of the LiDAR returns that fall inside the predicted crown bounding box. Sites are colored by the dominant forest type to illustrate the general macroecological relationship among sites in similar biomes.\n\nIn addition to these ecological applications, the NEON Crowns data\u00a0set can also act as a foundation for other machine learning and computer vision applications in forest informatics, such as tree health assessments, species classification, or foliar trait estimation both within NEON sites (Wang et al., 2020) and outside of NEON sites (Schneider et al., 2020). In each of these tasks, individual tree delineation is the first step to associate sensor data with ground measurements. However, delineation requires a distinct set of technical background and computational approaches and thus many ecological applications skip an explicit delineation step entirely (Williams et al., 2020a). In addition, the growing availability of continental scale data\u00a0sets of high resolution remote sensing imagery opens up the possibility for broad scale forest monitoring of individual trees (Brandt et al., 2020; Schneider et al., 2020) that can be supported by this data\u00a0set. Just as we used weak annotations generated from unsupervised LiDAR algorithms, future developers can use this data\u00a0set to train in the multiple data types provided by the NEON Airborne Observation Platform across a broad range of forest types. While our crown annotations are not perfect, they are specifically tailored to one of the largest data\u00a0sets that allows pairing individual tree detections with information on species identity, tree health, and leaf traits through NEONs field sampling, and we believe they are sufficiently robust to serve as the basis for broad scale analysis.\n\n### Limitations and further technical developments\n\nAn important limitation for this data\u00a0set is that it only provides information on sun-exposed tree crowns. It is therefore not appropriate for ecological analyses that depend on accurate characterization of subcanopy trees and the three-dimensional structure of forest stands. Fortunately, a number of the major questions and applications in ecology are primarily influenced by large individuals (Enquist et al., 2020). For example, biomass estimation is largely driven by the canopy in most ecosystems, rather than mid or understory trees that are likely to be missed by aerial surveys. Similarly, habitat classification and species abundance curves can depend on the dominant forest structure that can be inferred from coarse resolution airborne data (Shirley et al., 2013) and could be improved using this data\u00a0set. It may be possible to establish relationships between understory and canopy measures using field data that could allow this data\u00a0set to be used as part of a broader analysis (Bohlman, 2015; Duncanson et al., 2014; Fischer et al., 2020). However, this would require significant additional research to validate the potential for this type of approach at continental scales.\n\nWe experimented with avenues to combine RGB information and a LiDAR CHM to create a jointly learned input and found that no combination of data fusion outperformed the current pipeline (Figure 4\u2014figure supplement 2). The lack of improvement when directly incorporating LiDAR data into the CNN is likely due to a combination of geographic variation in tree shape and LiDAR coverage, sparse LiDAR point densities (~6 pts/m at many NEON sites), and a lack of joint RGB and LiDAR data for initial pretraining. Most LiDAR based methods are evaluated on data from a single forest type with point densities ranging from\u00a0~15 pts/m (e.g., Duncanson and Dubayah, 2018) to over 100 pts/m (e.g., Aubry-Kientz et al., 2019). As instrumentation improves to support collecting higher density LiDAR consistently at larger scales and algorithms are improved to allow generalization across forest types, we anticipate updating the data\u00a0set with improved delineation of the sunlit canopy and begin to add subcanopy trees.\n\nAn additional limitation is the uncertainty inherent in the algorithmic detection of crowns. While we found good correspondence between image-based crown annotations and those produced by the model for many sites, there remained substantial uncertainty across all sites and reasonable levels of error in some sites. It is important to consider how this uncertainty will influence the inference from research using this and similar data\u00a0sets. The model is biased toward undersegmentation, meaning that multiple trees are prone to being grouped as a single crown. It is also somewhat conservative in estimating crown extent wherein it tends to ignore small extensions of branches from the main crown. These biases could impact studies of tree allometry and biomass if the analysis is particularly sensitive to crown area. When making predictions for ecosystem features such as biomass, it will be important to propagate the uncertainty in individual crowns into downstream analyses. While confidence scores for individual detections are provided to aid uncertainty propagation, the use of additional ground truth data may also be necessary to infer reliability.\n\nOne aspect of individual crown uncertainty that we have not addressed is the uncertainty related to image-based crown annotations and measurement of trees in the field (Graves et al., 2018a). To allow training and evaluating the model across a broad range of forest types, we used image-based crown annotations. This approach assumes that crowns identifiable in remotely sensed imagery accurately reflect trees on the ground. This will not always be the case, as what appears to be a single crown from above may constitute multiple neighboring trees, and conversely, what appears to be two distinct crowns in an image may be two branches of a single large tree (Graves et al., 2018a). Distinguishing individual trees, especially when considering species with multi-bole stems, can be subjective, even during field surveys. Targeted field surveys will be always needed to validate these predictions and community annotation efforts will allow for assessment of this component of uncertainty. In particular, combining terrestrial LiDAR sampling with airborne sensors is a promising route to both validate the number of stems and establish subcanopy diversity (Calders et al., 2020). In addition, when co-registered hyperspectral data are available, it may help to separate neighboring trees in diverse forests, provided it does not cause lumping of neighboring trees of the same species. Weighing these tradeoffs across a range of forest types remains an open area of exploration.\n\nThe machine learning workflow used to generate this data\u00a0set also has several areas that could be improved for greater accuracy, transferability, and robustness. The current model contains a single class \u2018Tree\u2019 with an associated confidence score. This representation prevents the model from differentiating between objects that are not trees and objects for which sufficient training information is not available. For example, the model has been trained to ignore buildings and other vertical structures that may look like trees. However, when confronted by objects data that has never been encountered, it often produces unintuitive results. Examples of objects that did not appear in the training data, and as a result were erroneously predicted as trees, include weather stations, floating buoys, and oil wells. Designing models that can identify outliers, anomalies, and \u2018unknown\u2019 objects is an active area of research in machine learning and will be useful in increasing accuracy in novel environments. In addition, NEON data can sometimes be afflicted by imaging artifacts due to co-registration issues with LiDAR and raw RGB imagery (Figure 7\u2014figure supplement 1). This effect can lead to distorted imagery that appears fuzzy and swirled and lead to poor segmentation. An ideal model would detect these areas of poor quality and label them as \u2018unknown\u2019 rather than attempting to detect trees in these regions.\n\nGiven these limitations, we view this version of the data\u00a0set as the first step in an iterative process to improve cross-scale individual level data on trees. Ongoing assessment of these predictions using both our visualization tool and field-based surveys will be crucial to continually identify areas for improvements in both training data and modeling approaches. While iterative improvements are important, the accuracy of the current predictions illustrates that this data\u00a0set is sufficiently precise for addressing many cross-scale questions related to forest structure. By providing broad scale crown data we hope to highlight the promising integration between deep learning, remote sensing, and forest informatics, and provide access to the results of this next key step in ecological research to the broad range of stakeholders who can benefit from these data.\n",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "9f546729-958a-4831-a55d-46d3d4380708",
+      "submission_id": "76f616a4-5de7-4e8e-9a67-1ecc03f5d1f6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bernhard Schmid, University of Zurich Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62922.sa1](https://doi.org/10.7554/eLife.62922.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper presents a large data set of tree positions, heights and crown areas from 37 NEON sites across North America. Data obtained by remote sensing techniques about individual trees offer a large step forward from pixel-level data for ecologists interested in forest structure, size-density-diversity relationships and how these affect ecosystem functioning, arguably the most important topic in current forest research.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"NEON Crowns: a remote sensing derived dataset of 100 million individual tree crowns\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Bernhard Schmid as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Meredith Schuman as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional work is required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis paper presents a large data set of tree positions, heights and crown areas from 37 NEON sites across North America. The authors used airborne RGB data and a previously published Python software tool to delineate crowns of individual canopy trees. They then compared a subset of these crowns with crowns identified by visual inspection of the airborne pictures and with field-measured stem positions and height and crown data. The accuracy of the automatic detection was about 70 %. Lidar measurements were used to exclude trees or objects less than 3 m tall and to estimate the height of the trees with an accuracy of roughly 2 m RMSE.\n\nThe authors discuss some possible uses of the individual-level tree data, but clearly these potential uses could be much extended if the data set could be updated and improved as further information becomes available, which the authors point out. It is difficult to judge to which extent this would be possible with the particular approach used in the paper. The authors would have to provide at least a summary of the algorithms implemented in their software tool (e.g. as supplement), because even the previously published paper in Methods in Ecology and Evolution does not provide this information, nor could I find it on the website of the tool.\n\nEssential revisions:\n\nThe major issue that should be solved is that the LiDAR data should be included to improve the crown detection efficiency:\n\ni) The reviewers are very surprised that you do not to use the LiDAR data in the segmentation of the single tree crowns. There exists a large body of different LiDAR-based individual tree crown (ITC) approaches, a number of benchmarking studies and open-source benchmarking datasets for comparing new methods with older ones.\n\nii) If you use LiDAR based ITC methods, you could remedy some of the error sources of your current approach, i.e. shaded crowns and sub-dominant trees. The references to such approaches are missing, even in contexts directly related to some of the potential applications of the dataset, i.e., the ITC-related papers of Duncanson et al., working on two of the NEON sites and, for the first time, showing the potential of LiDAR ITC-based allometries.\n\niii) Why not use height as a fourth dimension besides RGB? For example, two neighboring trees with similar optical properties could be separated by height. Also in general, does this approach allow to add more bands as from multi- or hyperspectral sensors?\n\niv) Besides the important measures of stem density and crown size distributions, the dataset could also be used as a starting point to refine other individual tree crown detection methods, for example using lidar point cloud segmentation in 3D space.\n\nv) Finally, it's worth mentioning the various efforts for individual tree detection from airborne laser scanning data. It would be good to compare your results to point-cloud based segmentation, or also to test the use of this dataset for more extensive 3D segmentation algorithms, e.g. by using the tree locations as seed points for 3D segmentation of the point cloud.\n\nHere is a list of references on ITC from LIDAR/RGB Imagery:\n\n[1] Y. Wang, J. Hyyppa, X. Liang, H. Kaartinen, X. Yu, E. Lindberg, J. Holmgren, Y. Qin, C. Mallet, A. Ferraz, H. Torabzadeh, F. Morsdorf, L. Zhu, J. Liu, and P. Alho, \"International benchmarking of the individual tree detection methods for modeling 3-d canopy structure for silviculture and forest ecology using airborne laser scanning,\" IEEE Transactions on Geoscience and Remote Sensing, vol. 54, no. 9, pp. 5011-5027, 2016.\n\n[2] M. Parkan and D. Tuia, \"Individual tree segmentation in deciduous forests using geodesic voting,\" in 2015 IEEE International Geoscience and Remote Sensing Symposium (IGARSS), pp. 637-640, July 2015.\n\n[3] L. Duncanson, O. Rourke, and R. Dubayah, \"Small sample sizes yield biased allometric equations in temperate forests,\" Scientific Reports, vol. 5, no. 1, p. 17153, 2015.\n\n[4] L. Duncanson, R. Dubayah, B. Cook, J. Rosette, and G. Parker, \"The importance of spatial detail: Assessing the utility of individual crown information and scaling approaches for lidar-based biomass density estimation,\" Remote Sensing of Environment, vol. 168, pp. 102 \u2013 112, 2015.\n\n[5] L. Eysn, M. Hollaus, E. Lindberg, F. Berger, J.-M. Monnet, M. Dalponte, M. Kobal, M. Pellegrini, E. Lingua, D. Mongus, and N. Pfeifer, \"A benchmark of lidar-based single tree detection methods using heterogeneous forest data from the alpine space,\" Forests, vol. 6, no. 5, p. 1721, 2015.\n\n[6] L. Duncanson, B. Cook, G. Hurtt, and R. Dubayah, \"An efficient, multi-layered crown delineation algorithm for mapping individual tree structure across multiple ecosystems,\" Remote Sensing of Environment, vol. 154, pp. 378 \u2013 386, 2014.\n\n[7] A. Ferraz, F. Bretar, S. Jacquemoud, G. Gon?alves, L. Pereira, M. Tom?, and P. Soares, \"3-d mapping of a multi-layered mediterranean forest using als data,\" Remote Sensing of Environment, vol. 121, pp. 210-223, June 2012.\n\n[8] H. Kaartinen, J. Hyypp \u0308a, X. Yu, M. Vastaranta, H. Hyypp \u0308a, A. Kukko, M. Holopainen, C. Heipke, M. Hirschmugl, F. Morsdorf, E. N\u00e6sset, J. Pitk \u0308anen, S. Popescu, S. Solberg, B. M. Wolf, and J.-C. Wu, \"An international comparison of individual tree detection and extraction using airborne laser scanning,\" Remote Sensing, vol. 4, pp. 950-974, 2012.\n\n[9] J. Vauhkonen, L. Ene, S. Gupta, J. Heinzel, J. Holmgren, J. Pitk \u0308anen, S. Solberg, Y. Wang, H. Weinacker, K. M. Hauglin, V. Lien, P. Packal \u0301en, T. Gobakken, B. Koch, E. N\u00e6sset, T. Tokola, and M. Maltamo, \"Comparative testing of single-tree detection algorithms under different types of forest,\" Forestry, vol. 85, no. 1, pp. 27-40, 2012.\n\n[10] H. O. Orka, E. N\u00e6sset, and O. M. Bollandsas, \"Classifying species of individual trees by intensity and structure features derived from airborne laser scanner data,\" Remote Sensing of Environment, vol. 113, no. 6, pp. 1163 \u2013 1174, 2009.\n\n[11] J. Reitberger, P. Krzystek, and U. Stilla, \"Analysis of full waveform lidar data for the classification of deciduous and coniferous trees,\" International Journal of Remote Sensing, vol. 29, no. 5, pp. 1407-1431, 2008.[12] Y. Wang, H. Weinacker, and B. Koch, \"A lidar point cloud based procedure for vertical canopy structure analysis and 3d single tree modelling in forest,\" Sensors, vol. 8, no. 6, pp. 3938-3951, 2008.\n\n[13] S. Solberg, E. Naesset, and O. Bollandsas, \"Single tree segmentation using airborne laser scanner data in a structurally heterogeneous spruce forest,\" Photogrammetric Engineering and Remote Sensing, vol. 72, no. 12, pp. 1369-1378, 2006.\n\n[14] D. G. Leckie, F. A. Gougeon, S. Tinis, T. Nelson, C. N. Burnett, and D. Paradine, \"Automated tree recognition in old growth conifer stands with high resolution digital imagery,\" Remote Sensing of Environment, vol. 94, no. 3, pp. 311-326, 2004.\n\n[15] F. Morsdorf, E. Meier, B. K \u0308otz, K. I. Itten, M. Dobbertin, and B. Allg \u0308ower, \"Lidar-based geometric reconstruction of boreal type forest stands at single tree level for forest and wildland fire management,\" Remote Sensing of Environment, vol. 92, no. 3, pp. 353 \u2013 362, 2004. Forest Fire Prevention and Assessment.\n\n[16] T. Brandtberg, T. A. Warner, R. E. Landenberger, and J. B. McGraw, \"Detection and analysis of individual leaf-off tree crowns in small footprint, high sampling density lidar data from the eastern deciduous forest in north america,\" Remote Sens. Environ., vol. 85, no. 3, pp. 290-303, 2003.\n\n[17] H.-E. Andersen, S. E. Reutebuch, and G. F. Schreuder, \"Automated individual tree measurement through morphological analysis of a lidar-based canopy surface model,\" 2001.\n\n[18] J. Hyypp \u0308a, O. Kelle, M. Lehikoinen, and M. Inkinen, \"A segmentation-based method to retrieve stem volume estimates from 3-d tree height models produced by laser scanners,\" IEEE Transactions on Geoscience and Remote Sensing, vol. 39, pp. 969-975, 2001.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A remote sensing derived dataset of 100 million individual tree crowns for the National Ecological Observatory Network\" for further consideration by eLife. Your revised article has been evaluated by Meredith Schuman (Senior Editor) and Bernhard Schmid (Reviewing Editor).\n\nYour revisions are convincing. However, we find:\n\n1) you could still make it clearer why LiDAR currently could not further improve the detection of individual crowns (because of low resolution and inconsistencies across multiple sites in available LiDAR data) and what would be needed and hopefully will become available to include LiDAR more fully for future improvements of the data set (higher resolution data consistently available across all sites plus methods development).\n\n2) Although this is essentially a data paper, it would be good if you could add more concrete suggestions what could be done with the data. You do mention the value of individual data as opposed to pixel data in very general terms. But for example, even though you show a figure with densities, in the corresponding paragraph it is not really discussed why density is so extremely important in forest ecology (see e.g. Barrufol et al. cited in the previous review for just one example). Individuals are also important for estimating biodiversity once you can assign traits or even species identities to them, and biodiversity is probably the most important variable you eventually would like to assess with such a data set (see e.g. J. Liang et al., 2016 and Huang et al., Science 362, 80-83 (2018), DOI: 10.1126/science.aat6405).\n",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3a7e4c18-acf0-414a-8d1b-be770bd368c8",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C1",
+      "claim": "There are estimated to be over three trillion individual trees on earth.",
+      "claim_type": "EXPLICIT",
+      "source": "There are estimated to be over three trillion individual trees on earth (Crowther et al., 2015) covering a broad range of environments and geography (Hansen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Crowther et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "d792c90c-4a85-4051-8b9a-fa5eeda53093",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C2",
+      "claim": "Trees cover a broad range of environments and geography.",
+      "claim_type": "EXPLICIT",
+      "source": "There are estimated to be over three trillion individual trees on earth (Crowther et al., 2015) covering a broad range of environments and geography (Hansen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hansen et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "26ac2da9-1e07-4db1-976b-4d5cd04bc95b",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C3",
+      "claim": "The NEON Crowns data set contains tree crowns for all canopy trees at 37 NEON sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The NEON Crowns data set contains tree crowns for all canopy trees (those visible from airborne remote sensing) at 37 NEON sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the dataset composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "86d9aa4e-7228-460a-9673-9d818aed740e",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C4",
+      "claim": "Subcanopy trees are not visible from above and are not included in the NEON Crowns data set.",
+      "claim_type": "EXPLICIT",
+      "source": "Since subcanopy trees are not visible from above, they are not included in this data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about dataset limitations based on visibility constraints",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "c1ded372-e9db-410f-b66d-2d9ce5fb0d80",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C5",
+      "claim": "Trees are operationally defined as plants over 3 m tall in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We operationally define 'trees' as plants over 3 m tall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct methodological definition stated in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "54e5aea8-6e87-4dc4-b4b0-88e42c7ccedb",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C6",
+      "claim": "The 37 NEON sites represent all NEON sites containing trees with co-registered RGB and LiDAR data from 2018 or 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The 37 NEON sites represent all NEON sites containing trees with co-registered RGB and LiDAR data from 2018 or 2019 (see Figure 1 and Appendix 1 for a list of sites and their locations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about site selection criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "b3c7f1e9-41ae-4f22-b464-f993621bac3c",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C7",
+      "claim": "The data set includes a total of 104,675,304 crowns.",
+      "claim_type": "EXPLICIT",
+      "source": "The data set includes a total of 104,675,304 crowns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct quantitative statement about dataset size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "c0d3f1b9-9e97-41eb-9965-bbbb731854e4",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C8",
+      "claim": "Each predicted crown includes data on the spatial position of the crown bounding box, the area of the bounding box, the 99th quantile of the height of LiDAR returns within the bounding box above ground level, the year of sampling, the site where the tree is located, and a confidence score.",
+      "claim_type": "EXPLICIT",
+      "source": "Each predicted crown includes data on the spatial position of the crown bounding box, the area of the bounding box (an approximation of crown area), the 99th quantile of the height of LiDAR returns within the bounding box above ground level (an estimate of tree height), the year of sampling, the site where the tree is located, and a confidence score indicating the model confidence that the box represents a tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of data attributes included for each crown",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "9053abb7-79bc-4332-875f-ef3ac11b2e34",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C9",
+      "claim": "Boxes with less than 0.15 confidence were not included in the data set.",
+      "claim_type": "EXPLICIT",
+      "source": "The confidence score can vary from 0 to 1, but based on the results from Weinstein et al., 2020b, boxes with less than 0.15 confidence were not included in the data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about filtering threshold based on prior work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "dc8b2894-9fea-4e0f-bdbe-41d82348ea99",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C10",
+      "claim": "The data set is provided in two formats: as 11,000 individual files each covering a single 1 km2 tile and as 37 csv files, each covering an entire NEON site.",
+      "claim_type": "EXPLICIT",
+      "source": "The data set is provided in two formats: (1) as 11,000 individual files each covering a single 1 km2 tile (geospatial 'shapefiles' in standard ESRI format); and (2) as 37 csv files, each covering an entire NEON site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of data format and structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "1a78e265-7450-46a0-ab5a-38a216c6998c",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C11",
+      "claim": "All data are publicly available, openly licensed (CC-BY), and permanently archived on Zenodo.",
+      "claim_type": "EXPLICIT",
+      "source": "All data are publicly available, openly licensed (CC-BY), and permanently archived on Zenodo (https://zenodo.org/record/3765872) (Weinstein et al., 2020a; Weinstein et al., 2020c; Weinstein et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about data availability and licensing with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "381cfa9d-0942-4c86-b498-17e685fddbfe",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C12",
+      "claim": "The location of individual tree crowns was estimated using a semi-supervised deep learning workflow developed by Weinstein et al., 2020b, Weinstein et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of individual tree crowns was estimated using a semi-supervised deep learning workflow (Figure 3) developed by Weinstein et al., 2020b, Weinstein et al., 2019, which is implemented in the 'DeepForest' Python package (Weinstein et al., 2020c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement about methodology with citations to prior work",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "5ff5e528-d22e-4b35-ad2e-40706110b06b",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C13",
+      "claim": "The workflow was extended by filtering trees using the LiDAR-derived canopy height model (CHM) to remove objects identified by the model with heights of <3 m.",
+      "claim_type": "EXPLICIT",
+      "source": "We extend the workflow by filtering trees using the LiDAR-derived canopy height model (CHM) to remove objects identified by the model with heights of <3 m (Supplementary material).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about methodological extension",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "90197217-3edd-426e-aedd-1dbec9835172",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C14",
+      "claim": "The deep learning model uses a one-shot object detector with a convolutional neural network backbone to predict tree crowns in RGB imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "The deep learning model uses a one-shot object detector with a convolutional neural network backbone to predict tree crowns in RGB imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of model architecture",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "ff0f5420-726c-45e8-b955-741da8437fee",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C15",
+      "claim": "The model was pre-trained first on ImageNet and then using weak labels generated from a previous published LiDAR tree detection algorithm using NEON data from 30 sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was pre-trained first on ImageNet (Deng et al., 2009) and then using weak labels generated from a previous published LiDAR tree detection algorithm using NEON data from 30 sites (Silva et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about model training procedure with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "acd17160-e1f5-4785-96a1-95322c40309a",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C16",
+      "claim": "The model was then trained on 10,000 hand-annotated crowns from seven NEON sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was then trained on 10,000 hand-annotated crowns from seven NEON sites (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement about training data with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "841f1434-4a06-4b69-a364-ab21b816b786",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C17",
+      "claim": "Hand-annotations included any vegetation over 3 m in height, including standing dead trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Hand-annotations included any vegetation over 3 m in height, including standing dead trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about annotation criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "c6d7c7c6-1919-4e8f-9429-6fe7aa24b4ac",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C18",
+      "claim": "Weinstein et al., 2020b compared the DeepForest approach to three commonly used LiDAR algorithms and showed that DeepForest generalized better across forest types with higher precision and recall.",
+      "claim_type": "EXPLICIT",
+      "source": "Weinstein et al., 2020b compared the approach to three commonly used LiDAR algorithms (Coomes et al., 2017; Li et al., 2012; Silva et al., 2016) in the lidR package (Roussel et al., 2020) and showed that DeepForest generalized better across forest types with higher precision and recall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about prior comparison study with multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "e444a604-10cd-4949-8164-3d77aca515f8",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C19",
+      "claim": "DeepForest marginally outperformed all previously tested algorithms in the French Guiana tropical forest evaluation.",
+      "claim_type": "EXPLICIT",
+      "source": "We repeated this setup and found that DeepForest marginally outperformed all previously tested algorithms, despite the fact that the crown evaluation data used convex polygons and DeepForest used bounding boxes to delineate tree crowns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about comparative performance in evaluation study",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "3bd5728a-4497-46cd-a8fc-ab158b81a5c4",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C20",
+      "claim": "The workflow yielded a bounding box recall of 79.1% with a precision of 72.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "The workflow yielded a bounding box recall of 79.1% with a precision of 72.6%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct quantitative performance metrics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "6da76331-e33a-49cb-b4c0-2ef210b15062",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C21",
+      "claim": "Adding the LiDAR threshold resulted in predictions that were 7.0% more precise, but 0.2% less accurate on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding the LiDAR threshold in this implementation resulted in predictions that were 7.0% more precise, but 0.2% less accurate on average (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct quantitative comparison of methods with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "b93c07a5-c226-4b5c-aaab-67af18cf4c22",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C22",
+      "claim": "The decrease in recall is due to sparse LiDAR coverage in the CHM model where trees in the evaluation data were clearly taller than 3 m were missed in the evaluation data set.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in recall is due to sparse LiDAR coverage in the CHM model where trees in the evaluation data were clearly taller than 3 m were missed in the evaluation data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation provided for observed performance change",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "276ad059-d173-460c-9b0a-aeb4bdcb1503",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C23",
+      "claim": "The overall stem recall rate is 69.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "This test produces an overall stem recall rate at 69.4%, which is similar to the bounding box recall rate from the image-annotated data (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct quantitative performance metric with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "df61445e-af6e-4a5d-bf36-fe9b56ed4090",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C24",
+      "claim": "The analysis of stem recall rate is conservative due to the challenge of aligning the field-collected spatial data with the remote sensing data.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of stem recall rate is conservative due to the challenge of aligning the field-collected spatial data with the remote sensing data (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about methodological limitations with figure reference",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "a972d4c7-d6cc-42a7-8d3b-70f62abeeb37",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C25",
+      "claim": "Predicted heights showed good correspondence with field-measured heights of reference trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Predicted heights showed good correspondence with field-measured heights of reference trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General qualitative assessment of height prediction accuracy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "bd9b4efa-aa54-476e-9a17-3c11ab12f276",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C26",
+      "claim": "Using a linear-mixed model with a site-level random effect, the predicted crown height had a root mean squared error (RMSE) of 1.73 m.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a linear-mixed model with a site-level random effect, the predicted crown height had a root mean squared error (RMSE) of 1.73 m (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct quantitative performance metric with statistical model specification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "cbbb7ec3-9ffb-4c9c-9261-c2edf7c1cd6e",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C27",
+      "claim": "The relationship between predicted and field-measured heights is stronger in forests with more open canopies and more prone to error in forests with denser canopies.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship is stronger in forests with more open canopies (SJER, OSBS) and predictably more prone to error in forests with denser canopies (BART, MLBS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about variation in performance across forest types with examples",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "3124638b-f1c5-438e-a3db-28bafce31ac6",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C28",
+      "claim": "There is a persistent trend of taller predictions from the remote sensing data as compared with field measured heights.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a persistent trend of taller predictions from the remote sensing data as compared with field measured heights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of systematic bias in predictions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "b5e975cf-5517-4a93-809f-cd0e108aa59d",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C29",
+      "claim": "Tree growth since field measurement due to the temporal gap between field data collection and remote sensing acquisition partially explains the trend of taller predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in part from tree growth since field measurement due to the temporal gap between field data collection and remote sensing acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation provided for observed bias",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "aa66268e-d3df-4600-857c-ba55b683c66c",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C30",
+      "claim": "73.8% of the field data for Bartlett Forest (BART) came from 2015 to 2017, but the remote sensing data is from 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 73.8% of the field data for Bartlett Forest (BART; RMSE = 1.68 m) came from 2015 to 2017, but the remote sensing data is from 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific example with quantitative data about temporal mismatch",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "123342d4-c635-4855-8c62-948c1aae0b45",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C31",
+      "claim": "The model is biased toward undersegmentation, meaning that multiple trees are prone to being grouped as a single crown.",
+      "claim_type": "EXPLICIT",
+      "source": "The model is biased toward undersegmentation, meaning that multiple trees are prone to being grouped as a single crown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about systematic model bias",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "5137077a-83cc-42bb-a8e2-aa5770b26b07",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C32",
+      "claim": "The model is somewhat conservative in estimating crown extent wherein it tends to ignore small extensions of branches from the main crown.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also somewhat conservative in estimating crown extent wherein it tends to ignore small extensions of branches from the main crown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about model behavior",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "1ea03810-1737-470a-b820-8f28748de335",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C33",
+      "claim": "Most LiDAR based methods are evaluated on LiDAR data from a single forest type with point densities ranging from ~15 pts/m to over 100 pts/m.",
+      "claim_type": "EXPLICIT",
+      "source": "Most LiDAR based methods are evaluated on LiDAR data from a single forest type with point densities ranging from ~15 pts/m (e.g., Duncanson and Dubayah, 2018) to over 100 pts/m (e.g., Aubry-Kientz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about typical LiDAR point densities in other studies with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "f6a91ff1-6722-423c-b16f-4287f119940c",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C34",
+      "claim": "NEON's current continental airborne LiDAR program produces ~6 pts/m and these densities can be highly variable, with large areas containing less than 4 pts/m.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NEON's current continental airborne LiDAR program produces ~6 pts/m and these densities can be highly variable, with large areas containing less than 4 pts/m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about NEON LiDAR characteristics",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "219e97e9-f5a9-4c71-9d6d-bdb585dac1f8",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C35",
+      "claim": "Denser forests exhibit trees with narrower crowns for the same tree height compared with less dense forests.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows a continental-scale relationship, with denser forests exhibiting trees with narrower crowns for the same tree height compared with less dense forests, but also clustering and variation in the relationship within vegetation types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about observed allometric relationship across sites",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "f3a806a5-2644-4bea-ac3d-c8c1189f3fca",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C36",
+      "claim": "Subalpine forests illustrate relationships between tree density and allometry that are distinct from other forest types.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, subalpine forests illustrate relationships between tree density and allometry that are distinct from other forest types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about variation in allometric patterns by forest type",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "c9c129bc-d9f4-4ff1-9f58-08a0f4c4d229",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C37",
+      "claim": "The NEON Crowns data set only provides information on sun-exposed tree crowns.",
+      "claim_type": "EXPLICIT",
+      "source": "An important limitation for this data set is that it only provides information on sun-exposed tree crowns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about dataset limitation",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "1952db8b-b4e3-4ab0-9ed5-a7ced4d812ca",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C38",
+      "claim": "The data set is not appropriate for ecological analyses that depend on accurate characterization of subcanopy trees and the three-dimensional structure of forest stands.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore not appropriate for ecological analyses that depend on accurate characterization of subcanopy trees and the three-dimensional structure of forest stands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about dataset limitations for specific applications",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "545ac72c-fa03-4932-bfd9-29b55018c0e2",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C39",
+      "claim": "A number of the major questions and applications in ecology are primarily influenced by large individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Fortunately, a number of the major questions and applications in ecology are primarily influenced by large individuals (Enquist et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ecological importance of large trees with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "91b400c2-d8c0-48ce-b9b9-fb8962ceedee",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C40",
+      "claim": "Biomass estimation is largely driven by the canopy in most ecosystems, rather than mid or understory trees that are likely to be missed by aerial surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, biomass estimation is largely driven by the canopy in most ecosystems, rather than mid or understory trees that are likely to be missed by aerial surveys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about biomass distribution in forests",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "e4f91b18-be70-4dfb-a976-3a14b5b1f05a",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C41",
+      "claim": "No combination of data fusion outperformed the current pipeline when experimenting with avenues to combine RGB information and a LiDAR CHM.",
+      "claim_type": "EXPLICIT",
+      "source": "We experimented with avenues to combine RGB information and a LiDAR CHM to create a jointly learned input and found that no combination of data fusion outperformed the current pipeline (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about experimental results with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "33271c7d-56b2-4424-b36c-685f2c83dd43",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C42",
+      "claim": "The lack of improvement when directly incorporating LiDAR data into the CNN is likely due to a combination of geographic variation in tree shape and LiDAR coverage, sparse LiDAR point densities, and a lack of joint RGB and LiDAR data for initial pretraining.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of improvement when directly incorporating LiDAR data into the CNN is likely due to a combination of geographic variation in tree shape and LiDAR coverage, sparse LiDAR point densities (~6 pts/m at many NEON sites), and a lack of joint RGB and LiDAR data for initial pretraining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation provided for experimental results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "2741bcfa-fb46-407c-ae3e-20f529d4c888",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C43",
+      "claim": "A web visualization tool was developed using the ViSUS WebViewer to allow users to view all of the trees at the full site scale with the ability to zoom and pan to examine individual groups of trees down to a scale of 20 m.",
+      "claim_type": "EXPLICIT",
+      "source": "To support the visualization of the data set, we developed a web visualization tool using the ViSUS WebViewer (https://visus.org//) to allow users to view all of the trees at the full site scale with the ability to zoom and pan to examine individual groups of trees down to a scale of 20 m (see http://visualize.idtrees.org, Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement about visualization tool development with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "46eb1b57-26fb-436f-b4e6-66eb1106ed81",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C44",
+      "claim": "NEON sites tend to have between 100 and 400 tiles in the full airborne footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "NEON sites tend to have between 100 and 400 tiles in the full airborne footprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about typical site coverage",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "044a71b7-8a18-46d5-b90b-cbda8fed5148",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C45",
+      "claim": "Field-based surveys of trees are generally conducted at local scales (~0.1\u2013100 ha) with measurements of attributes for individual trees within plots collected manually.",
+      "claim_type": "EXPLICIT",
+      "source": "Field-based surveys of trees are generally conducted at local scales (~0.1\u2013100 ha) with measurements of attributes for individual trees within plots collected manually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about typical field survey characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "5dd24c39-14b8-4795-adfd-2747fc50b8a5",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C46",
+      "claim": "Connecting local scale measurements at the plot level to broad scale patterns is challenging because of spatial heterogeneity in forests.",
+      "claim_type": "EXPLICIT",
+      "source": "Connecting these local scale measurements at the plot level to broad scale patterns is challenging because of spatial heterogeneity in forests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about challenges in scaling field data",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "34995b6f-0cb5-4630-b913-c08835c8e6c2",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C47",
+      "claim": "The spatial resolution of satellite data makes it difficult to detect and monitor individual trees that underlie large scale patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the spatial resolution of satellite data makes it difficult to detect and monitor individual trees that underlie large scale patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of satellite data",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "e2f36f45-063d-4371-83f7-53a56c960e46",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C48",
+      "claim": "Individual level data is important for forest ecology, ecosystem services, and forestry applications because it connects sets of remote sensing pixels to a fundamental ecological, evolutionary, and economic unit used in analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual level data is important for forest ecology, ecosystem services, and forestry applications because it connects sets of remote sensing pixels to a fundamental ecological, evolutionary, and economic unit used in analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about importance of individual-level data",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "789bde02-cb84-4032-bf4b-28ce75599bea",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C49",
+      "claim": "Without grouping to the crown level, it becomes difficult to compare remotely sensed and field-based measurements on individual trees, since field surveys have no corresponding concept of pixels.",
+      "claim_type": "EXPLICIT",
+      "source": "Without grouping to the crown level, it becomes difficult to compare remotely sensed and field-based measurements on individual trees, since field surveys have no corresponding concept of pixels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about challenges in comparing remote sensing and field data",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "9b5be629-2f36-4876-bfbe-e800ce5a94d4",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C50",
+      "claim": "Characteristics such as species identity, structural traits, growth, and carbon storage potential are properties of individuals rather than pixels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, characteristics such as species identity, structural traits, growth, and carbon storage potential are properties of individuals rather than pixels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ecological properties being individual-level",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "a043b806-d092-4a7c-882f-5960b29e82ff",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C51",
+      "claim": "Delineation of crowns serves as a first step in species classification, foliar trait mapping, and analyses of tree mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Delineation of crowns also serves as a first step in species classification (Fassnacht et al., 2016), foliar trait mapping (Zheng et al., 2021), and analyses of tree mortality (Stovall et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about applications of crown delineation with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "ef64efd2-dcfe-4922-9a0b-53f015244439",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C52",
+      "claim": "Converting high-resolution airborne sensor data into information on individual trees requires significant technical expertise and access to high-performance computing environments.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution data from airborne sensors have become increasingly accessible, but converting the data into information on individual trees requires significant technical expertise and access to high-performance computing environments (Aubry-Kientz et al., 2019; Puliti et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about technical barriers with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "59c7321e-6833-45ce-8b98-f7d674764c2d",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C53",
+      "claim": "The technical requirements prevent most ecologists, foresters, and managers from engaging with large scale data on individual trees.",
+      "claim_type": "EXPLICIT",
+      "source": "This prevents most ecologists, foresters, and managers from engaging with large scale data on individual trees, despite the availability of the underlying data products and broad importance for forest ecology and management.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about accessibility barriers",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "e9ae4101-a7eb-40bf-b8ff-6680fe285a7c",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C54",
+      "claim": "NEON is collecting multi-sensor data for more than 40 sites across the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to the growing need for publicly available and standardized airborne remote sensing data over forested ecosystems, the National Ecological Observatory Network (NEON) is collecting multi-sensor data for more than 40 sites across the United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about NEON data collection program",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "8dbd0974-7c88-44a6-9fe7-20cf3e01596e",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C55",
+      "claim": "The data set contains over 100 million individual canopy trees at 37 sites distributed across the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "We combine NEON sensor data with a semi-supervised deep learning approach (Weinstein et al., 2019; Weinstein et al., 2020b) to produce a data set on the location, height, and crown area of over 100 million individual canopy trees at 37 sites distributed across the United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about dataset size and coverage",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "ee453fd5-f795-49b1-9de2-850b062e8c0c",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C56",
+      "claim": "The LiDAR derived 3 m threshold is important in sparsely vegetated landscapes, such as oak savannah and deserts, where it was difficult for the model to distinguish between trees and low shrubs in the RGB imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "The LiDAR derived 3 m threshold is important in sparsely vegetated landscapes, such as oak savannah and deserts, where it was difficult for the model to distinguish between trees and low shrubs in the RGB imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation for methodological choice with examples",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "14da828f-73d0-42b0-8bb5-1e02b937dad7",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C57",
+      "claim": "A true positive crown is defined as a predicted bounding box with greater than 50% intersection-over-union between the predicted and ground truth bounding box.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined a true positive crown as a predicted bounding box with greater than 50% intersection-over-union (the area of box intersection divided the area of box union of the two boxes) between the predicted and ground truth (image-annotated) bounding box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct methodological definition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "ab2cce27-e6d6-4e51-8927-d1a92bb0cd67",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C58",
+      "claim": "Crown recall is the proportion of image-annotated crowns matched to a crown prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Crown recall is the proportion of image-annotated crowns matched to a crown prediction and crown precision is the proportion of predictions that match image-annotated crowns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of evaluation metric",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "afd686d8-e5de-4189-af40-c47e103d310c",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C59",
+      "claim": "Crown precision is the proportion of predictions that match image-annotated crowns.",
+      "claim_type": "EXPLICIT",
+      "source": "Crown recall is the proportion of image-annotated crowns matched to a crown prediction and crown precision is the proportion of predictions that match image-annotated crowns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of evaluation metric",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "17002df8-0e56-4b7c-b113-8b56fe969571",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C60",
+      "claim": "Tests indicate that the model generalizes well across geographic sites and forest conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Tests indicate that the model generalizes well across geographic sites and forest conditions (Figure 4; Weinstein et al., 2020c; Weinstein et al., 2020b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about model performance with figure and citation references",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "8f9ca467-5a38-45af-94e3-06da622e558b",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C61",
+      "claim": "There is a general bias toward undersegmenting trees in dense stands where multiple individual trees with similar optical characteristics are grouped into a single delineation.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a general bias toward undersegmenting trees in dense stands where multiple individual trees with similar optical characteristics are grouped into a single delineation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about systematic model behavior",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "cfaeca4e-c80e-48be-b352-73ce1288194b",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C62",
+      "claim": "NEON's Woody Vegetation Structure data set contains a single point for each tree with a stem diameter \u226510 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "This data product contains a single point for each tree with a stem diameter \u226510 cm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about NEON field data characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "5ac5bc4e-941e-424c-89cf-04e3c86f8c86",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C63",
+      "claim": "Several examples of good predictions were counted as false positives due to errors in the position of the ground samples within the imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "We found several examples of good predictions that were counted as false positives due to errors in the position of the ground samples within the imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about evaluation challenges",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "668a594c-22c8-43f5-aac4-f163c434234b",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C64",
+      "claim": "An average RMSE of 1.73 m suggests that overstory height measures are reasonably accurate across the data set.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the data available, an average RMSE of 1.73 m suggests that overstory height measures are reasonably accurate across the data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of quantitative performance metric",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "5cdb676b-4169-4270-a572-dd7cee080f39",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C65",
+      "claim": "High-resolution airborne imagery can inform analysis of critical forest properties, such as tree growth and mortality, foliar biochemistry, and landscape-scale carbon storage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the individual level, high-resolution airborne imagery can inform analysis of critical forest properties, such as tree growth and mortality (Clark et al., 2004; Stovall et al., 2019), foliar biochemistry (Chadwick and Asner, 2016; Wang et al., 2020), and landscape-scale carbon storage (Graves et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about applications with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "c533490f-0ed9-456b-a806-de7233cbffe2",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C66",
+      "claim": "Individual level tree detection allows connecting field data directly to image data because field data on forest properties are measured on individual trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Because field data on these properties are measured on individual trees, individual level tree detection allows connecting field data directly to image data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about benefit of individual-level detection",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "00b92fdd-6117-4e6d-9ff0-e1ab8fcda433",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C67",
+      "claim": "Growth, mortality, and changes in carbon storage occur on the scale of individual trees such that detection of individual crowns allows direct tracking of these properties across space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, growth, mortality, and changes in carbon storage occur on the scale of individual trees such that detection of individual crowns allows direct tracking of these properties across space and time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ecological processes and monitoring",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "45cdd351-4e46-4225-8e44-a855239f7f6a",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C68",
+      "claim": "Individual level data may be useful for promoting fire resistance landscapes and combating large scale pest outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, this individual level data may be useful for promoting fire resistance landscapes and combating large scale pest outbreaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about potential applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "a7f859e2-9b1d-451b-bbb2-dc25f1c61c30",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C69",
+      "claim": "Understanding why tree biomass and traits vary across landscapes has direct applications to numerous ecological questions and economic implications.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, understanding why tree biomass and traits vary across landscapes has direct applications to numerous ecological questions and economic implications (e.g., Laubhann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about importance of understanding landscape patterns with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "0962928f-044f-4164-8c15-506c5cc0f1b8",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C70",
+      "claim": "Using the individual level data from this data set, continuous high-resolution maps can be produced across entire NEON sites for enabling landscape scale studies of multiple ecological phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the individual level data from this data set, we can now produce continuous high-resolution maps across entire NEON sites for enabling landscape scale studies of multiple ecological phenomena (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about data applications with figure reference",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "8201ef29-34dd-47ca-9922-d8d4042e6be0",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C71",
+      "claim": "Previous work has found that functional and species diversity at local scales promotes biomass and tree growth.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, previous work has found that functional and species diversity at local scales promotes biomass and tree growth (Barrufol et al., 2013; Liang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about prior research findings with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "2ff63c92-e02d-462a-a34a-5fb191d4265c",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C72",
+      "claim": "Similar findings have been reported for phylogenetic diversity at local scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar findings have been reported for phylogenetic diversity at local scales (Satdichanh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about prior research findings with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "982d7d17-b8d2-4bb3-817a-a96b21042757",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C73",
+      "claim": "The heterogeneity of forest landscapes makes it difficult to use field plot data on quantities such as tree density and biomass to extrapolate inference to broad scales.",
+      "claim_type": "EXPLICIT",
+      "source": "This is important because the heterogeneity of forest landscapes makes it difficult to use field plot data on quantities such as tree density and biomass to extrapolate inference to broad scales (Marvin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about challenges in scaling with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "38a914ad-8ed7-4438-a2a0-d76f4b977df1",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C74",
+      "claim": "Comparing the field plot tree densities with the distribution from the full site shows deviations for most sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the field plot tree densities with the distribution from the full site shows deviations for most sites, with NEON field plots exhibiting higher tree densities than encountered on average in the airborne data for some sites (e.g., Teakettle Canyon, CA) and lower tree densities than from remote sensing in others (e.g., Ordway-Swisher Biological Station).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about observed differences between field and remote sensing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "c8bdd01d-c9cf-4c25-8f51-d2ed52bf480b",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C75",
+      "claim": "Even well stratified sampling of large landscapes as was done with NEON plots can produce differing tree attribute estimates than continuous sampling from remote sensing data.",
+      "claim_type": "EXPLICIT",
+      "source": "While this kind of comparison is inherently difficult due to differing thresholds and filters for data inclusion in field versus remotely sensed data, it highlights that even well stratified sampling of large landscapes as was done with NEON plots (see NEON technical documents for NEON.DP1.10098) can produce differing tree attribute estimates than continuous sampling from remote sensing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about sampling differences",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "109a7b38-793e-4d58-995b-8a141de9f172",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C76",
+      "claim": "The NEON Crowns data set supports the assessment of cross-site patterns to help understand the influence of large-scale processes on forest structure at biogeographic scales.",
+      "claim_type": "EXPLICIT",
+      "source": "The NEON Crowns data set supports the assessment of cross-site patterns to help understand the influence of large-scale processes on forest structure at biogeographic scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data applications",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "1e12196f-5274-4130-a5b5-83ec406251c0",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C77",
+      "claim": "Understanding how forest characteristics vary among forest types and how these patterns covary across environmental gradients is important for inferring controls over forest stand structure, understanding individual tree biology, and assessing stand productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ecologists are interested in how and why forest characteristics such as abundance, biomass, and allometric relationships vary among forest types (e.g., Jucker et al., 2017) and how these patterns covary across environmental gradients (Feldpausch et al., 2011). Understanding these relationships is important for inferring controls over forest stand structure, understanding individual tree biology, and assessing stand productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about importance of understanding patterns with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "b1642d2f-a894-4057-8830-e810e1b48c4d",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C78",
+      "claim": "The NEON Crowns data set can act as a foundation for other machine learning and computer vision applications in forest informatics, such as tree health assessments, species classification, or foliar trait estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these ecological applications, the NEON Crowns data set can also act as a foundation for other machine learning and computer vision applications in forest informatics, such as tree health assessments, species classification, or foliar trait estimation both within NEON sites (Wang et al., 2020) and outside of NEON sites (Schneider et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about potential applications with citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "028b4e3f-49eb-402b-987e-3e154590e592",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C79",
+      "claim": "Individual tree delineation is the first step to associate sensor data with ground measurements in tasks such as tree health assessments, species classification, or foliar trait estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "In each of these tasks, individual tree delineation is the first step to associate sensor data with ground measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological workflow",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "d57102f0-9dbe-4fdc-bed4-4ca43d46cd09",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C80",
+      "claim": "Delineation requires a distinct set of technical background and computational approaches and thus many ecological applications skip an explicit delineation step entirely.",
+      "claim_type": "EXPLICIT",
+      "source": "However, delineation requires a distinct set of technical background and computational approaches and thus many ecological applications skip an explicit delineation step entirely (Williams et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about technical barriers with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "3c4d0501-9856-477a-8eeb-bdf46524e40f",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C81",
+      "claim": "The growing availability of continental scale data sets of high resolution remote sensing imagery opens up the possibility for broad scale forest monitoring of individual trees.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the growing availability of continental scale data sets of high resolution remote sensing imagery opens up the possibility for broad scale forest monitoring of individual trees (Brandt et al., 2020; Schneider et al., 2020) that can be supported by this data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about emerging opportunities with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "ba1e0b11-7279-4ba7-9fb8-b455904d6012",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C82",
+      "claim": "It may be possible to establish relationships between understory and canopy measures using field data that could allow this data set to be used as part of a broader analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be possible to establish relationships between understory and canopy measures using field data that could allow this data set to be used as part of a broader analysis (Bohlman, 2015; Duncanson et al., 2014; Fischer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential future work with citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "729a5c4c-8185-48a6-8c7c-496311b28e3f",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C83",
+      "claim": "Establishing relationships between understory and canopy measures would require significant additional research to validate the potential for this type of approach at continental scales.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this would require significant additional research to validate the potential for this type of approach at continental scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about research needs",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "35816aa5-41ef-4bd7-9f98-42c6c3547e11",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C84",
+      "claim": "As instrumentation improves to support collecting higher density LiDAR consistently at larger scales and algorithms are improved to allow generalization across forest types, the data set is anticipated to be updated with improved delineation of the sunlit canopy and begin to add subcanopy trees.",
+      "claim_type": "EXPLICIT",
+      "source": "As instrumentation improves to support collecting higher density LiDAR consistently at larger scales and algorithms are improved to allow generalization across forest types, we anticipate updating the data set with improved delineation of the sunlit canopy and begin to add subcanopy trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about anticipated future improvements",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "2b406035-d130-405b-9dba-254746cc5f69",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C85",
+      "claim": "When making predictions for ecosystem features such as biomass, it will be important to propagate the uncertainty in individual crowns into downstream analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "When making predictions for ecosystem features such as biomass, it will be important to propagate the uncertainty in individual crowns into downstream analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Recommendation for using the data",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "a1fb4837-ca4f-4c4e-834e-9c09cac5d008",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C86",
+      "claim": "What appears to be a single crown from above may constitute multiple neighboring trees, and conversely, what appears to be two distinct crowns in an image may be two branches of a single large tree.",
+      "claim_type": "EXPLICIT",
+      "source": "This will not always be the case, as what appears to be a single crown from above may constitute multiple neighboring trees, and conversely, what appears to be two distinct crowns in an image may be two branches of a single large tree (Graves et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ambiguity in crown identification with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "0063bba0-f89e-4cd3-8284-48e7db690be2",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C87",
+      "claim": "Distinguishing individual trees, especially when considering species with multi-bole stems, can be subjective, even during field surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinguishing individual trees, especially when considering species with multi-bole stems, can be subjective, even during field surveys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about challenges in tree identification",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "ed4c1e7a-b710-49f6-9b41-8da9c7d2770f",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C88",
+      "claim": "Targeted field surveys will be always needed to validate these predictions and community annotation efforts will allow for assessment of this component of uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted field surveys will be always needed to validate these predictions and community annotation efforts will allow for assessment of this component of uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about validation needs",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "14a25316-59b0-48e1-bc41-8a6984fcc9fe",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C89",
+      "claim": "Combining terrestrial LiDAR sampling with airborne sensors is a promising route to both validate the number of stems and establish subcanopy diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, combining terrestrial LiDAR sampling with airborne sensors is a promising route to both validate the number of stems and establish subcanopy diversity (Calders et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about promising methodological approach with citation",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "fc49a9f6-b35a-4aa6-9d3d-a9f0f0b43519",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C90",
+      "claim": "When co-registered hyperspectral data are available, it may help to separate neighboring trees in diverse forests, provided it does not cause lumping of neighboring trees of the same species.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when co-registered hyperspectral data are available, it may help to separate neighboring trees in diverse forests, provided it does not cause lumping of neighboring trees of the same species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential use of hyperspectral data",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "240657fa-8788-407a-a04b-97215ceeddf4",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C91",
+      "claim": "The current model contains a single class 'Tree' with an associated confidence score.",
+      "claim_type": "EXPLICIT",
+      "source": "The current model contains a single class 'Tree' with an associated confidence score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about model structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "1ff3504a-5f40-4a5b-bfb2-eaa31995cd6d",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C92",
+      "claim": "The single class representation prevents the model from differentiating between objects that are not trees and objects for which sufficient training information is not available.",
+      "claim_type": "EXPLICIT",
+      "source": "This representation prevents the model from differentiating between objects that are not trees and objects for which sufficient training information is not available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about model limitation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "d63ec76a-1f9b-40b0-adcd-61d15ba6377a",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C93",
+      "claim": "The model has been trained to ignore buildings and other vertical structures that may look like trees.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the model has been trained to ignore buildings and other vertical structures that may look like trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about model training",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "53af0d3c-bc3e-458b-8414-90de083128aa",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C94",
+      "claim": "When confronted by objects data that has never been encountered, the model often produces unintuitive results.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when confronted by objects data that has never been encountered, it often produces unintuitive results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about model behavior on novel data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "f2ac957a-6fcf-4e7d-b3f7-b558b2365861",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C95",
+      "claim": "Examples of objects that did not appear in the training data and were erroneously predicted as trees include weather stations, floating buoys, and oil wells.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of objects that did not appear in the training data, and as a result were erroneously predicted as trees, include weather stations, floating buoys, and oil wells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific examples of model errors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "40bf07e9-70b1-4ffa-8eb7-a4de870181cc",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C96",
+      "claim": "Designing models that can identify outliers, anomalies, and 'unknown' objects is an active area of research in machine learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Designing models that can identify outliers, anomalies, and 'unknown' objects is an active area of research in machine learning and will be useful in increasing accuracy in novel environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about current research directions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "88fb3e30-1994-4706-bef1-b7c5ecb2ca1c",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C97",
+      "claim": "NEON data can sometimes be afflicted by imaging artifacts due to co-registration issues with LiDAR and raw RGB imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, NEON data can sometimes be afflicted by imaging artifacts due to co-registration issues with LiDAR and raw RGB imagery (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about data quality issues with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "57bed687-e5ec-43f5-9543-56dc307e1450",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C98",
+      "claim": "Imaging artifacts can lead to distorted imagery that appears fuzzy and swirled and lead to poor segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect can lead to distorted imagery that appears fuzzy and swirled and lead to poor segmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about impact of data quality issues",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "3fca103c-9b32-4d6c-8b4d-88f097011cfb",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C99",
+      "claim": "An ideal model would detect areas of poor quality and label them as 'unknown' rather than attempting to detect trees in these regions.",
+      "claim_type": "EXPLICIT",
+      "source": "An ideal model would detect these areas of poor quality and label them as 'unknown' rather than attempting to detect trees in these regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about desired model capability",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "b1d58a1e-fedf-489b-b0bc-f955e7dbad04",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C100",
+      "claim": "The current version of the data set is viewed as the first step in an iterative process to improve cross-scale individual level data on trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these limitations, we view this version of the data set as the first step in an iterative process to improve cross-scale individual level data on trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data set development philosophy",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "6c7a9ef0-46d1-4c68-988b-206390d60f5e",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C101",
+      "claim": "Ongoing assessment of these predictions using both the visualization tool and field-based surveys will be crucial to continually identify areas for improvements in both training data and modeling approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Ongoing assessment of these predictions using both our visualization tool and field-based surveys will be crucial to continually identify areas for improvements in both training data and modeling approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about future validation needs",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "7e5ce7b6-c6dc-40a4-b76b-36e2bb469d67",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "claim_id": "C102",
+      "claim": "The accuracy of the current predictions illustrates that this data set is sufficiently precise for addressing many cross-scale questions related to forest structure.",
+      "claim_type": "EXPLICIT",
+      "source": "While iterative improvements are important, the accuracy of the current predictions illustrates that this data set is sufficiently precise for addressing many cross-scale questions related to forest structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessment of current data quality",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4829489b-2672-4d3e-9618-98e446b6eb28",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The NEON Crowns dataset contains 104,675,304 individual canopy tree crowns from 37 NEON sites across the United States, with each crown including spatial position, crown area, height, confidence score, and other attributes. The dataset is publicly available in multiple formats and excludes subcanopy trees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C11 and C55 provide consistent, detailed descriptions of the dataset composition, size, attributes, and availability. The quantitative metrics (104+ million crowns, 37 sites) are explicitly stated, the data attributes are clearly enumerated (C8), and the public availability is documented (C11). The limitation to canopy trees is acknowledged (C4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "e7923cfe-b2fc-4a99-ae0c-b4b25c8896ee",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Tree crowns were detected using a semi-supervised deep learning workflow (DeepForest) that employs a CNN-based object detector trained on ImageNet, weak labels from LiDAR algorithms, and 10,000 hand-annotated crowns from seven sites, with an additional 3m height filter applied using LiDAR data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 and C56 describe a coherent methodological pipeline with clear training stages, data sources, and rationale for the height threshold. The workflow is well-documented with citations to prior work (C12, C15) and specific training data quantities (C16). The 3m threshold justification (C56) addresses a specific use case.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "0bf30a1f-44ea-4f14-880a-3829071dd3da",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The DeepForest model achieved 79.1% recall and 72.6% precision on image-annotated data, outperforming previous LiDAR algorithms and generalizing well across forest types, though with a bias toward undersegmentation in dense stands. Adding the LiDAR height threshold increased precision by 7.0% but decreased recall by 0.2%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 and C57-C61 provide quantitative performance metrics with clear evaluation methodology (C57-C59). The comparison to prior methods (C18-C19) is supported by citations, and the tradeoffs of the LiDAR threshold are explicitly quantified (C21-C22). The acknowledged bias (C61) demonstrates appropriate recognition of limitations. Performance metrics are consistent across claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "95549dc5-a1ab-4237-8873-a61fe5678850",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Comparison with NEON field stem data yielded a 69.4% stem recall rate, though this analysis is conservative due to challenges in aligning field-collected spatial data with remote sensing data and errors in ground sample positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 and C62-C63 provide a quantitative validation metric (69.4% recall) while appropriately acknowledging methodological limitations. The conservative nature of the analysis is explicitly stated (C24) with specific examples of alignment challenges (C63). The field data characteristics are clearly described (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "bde9dcc7-5368-4d07-bdff-9e9f3e4073fa",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Predicted tree heights showed good correspondence with field measurements, with an RMSE of 1.73m using a linear mixed-effects model. Performance varied by forest type (better in open canopies) and predictions were systematically taller than field measurements, partially due to temporal gaps between field and remote sensing data collection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 and C64 provide quantitative validation (RMSE=1.73m) with appropriate statistical modeling (C26). The variation across forest types is documented (C27), systematic bias is acknowledged (C28), and a plausible explanation with specific example (C30) is provided. The interpretation (C64) is reasonable given the documented limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "67a65651-496b-457c-982b-01530092c939",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model exhibits systematic biases including undersegmentation (grouping multiple trees as one crown) and conservative crown extent estimation (ignoring small branch extensions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 explicitly describe two systematic model behaviors that are consistent with the undersegmentation bias mentioned in C61. These limitations are clearly stated and represent honest assessment of model performance characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "e1720b27-74a2-4856-b912-a2ed8d5dc2ce",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NEON's LiDAR data (~6 pts/m\u00b2) is sparser than typical research datasets (15-100+ pts/m\u00b2), and attempts to directly incorporate LiDAR CHM data into the CNN did not improve performance over the current RGB-based pipeline with post-hoc LiDAR filtering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 provide context on LiDAR point density with citations, while C41-C42 report negative experimental results with plausible explanations. The experimental finding (C41) is supported by figure reference, and the explanation (C42) considers multiple technical factors including the sparse point density documented in C34.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "dbe2e450-d287-4519-8ff1-3d7eecdfa51c",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Continental-scale analysis reveals that denser forests exhibit trees with narrower crowns for the same height compared to less dense forests, with variation by vegetation type including distinct patterns in subalpine forests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 describe allometric patterns observed across the dataset. While the general relationship is stated (C35), the variation and specific example (C36) demonstrate appropriate nuance. These are observational findings from the data analysis that appear consistent with ecological expectations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "32e23170-68f0-4949-b154-1b82c40419e5",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The dataset is limited to sun-exposed canopy trees and is not appropriate for analyses requiring accurate characterization of subcanopy trees or three-dimensional forest structure, though many ecological applications (e.g., biomass estimation) are primarily driven by canopy trees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 provide a balanced assessment of dataset limitations (C37-C38) and applicability (C39-C40). The limitation is clearly stated, the inappropriate use cases are identified, and the justification for why the dataset remains valuable despite this limitation is provided with citation (C39).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "8af89dc4-285c-4d18-90ef-bb05af880b12",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A web visualization tool was developed allowing users to view and explore all trees at full site scale with zoom capability down to 20m resolution, with typical NEON sites containing 100-400 tiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 describe a data product feature (visualization tool) with specific technical capabilities and typical data volumes. The tool development is explicitly stated (C43) with figure reference, and the site coverage information (C44) provides useful context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "ba8dbb8f-9f59-4497-a9a1-ecb0be1076f9",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Individual-level tree data addresses key challenges in forest ecology by bridging the gap between local-scale field surveys and broad-scale satellite data, enabling comparison of field and remote sensing measurements and supporting applications like species classification and mortality analysis, though technical barriers have limited accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C53 provide coherent motivation for the work, describing the scale mismatch problem (C45-C47), the value of individual-level data (C48-C51), and accessibility barriers (C52-C53). The arguments are logical and supported by citations where appropriate (C51-C52). This represents standard scientific context-setting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The dataset enables individual-level and landscape-scale ecological research including analysis of tree growth, mortality, carbon storage, and diversity-productivity relationships. Comparison of field plot densities with full-site remote sensing data reveals deviations, highlighting challenges in extrapolating from plot-based sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C77 describe applications and demonstrate dataset utility through specific analyses. The applications are well-supported by citations (C65, C69, C71-C73), and the field-vs-remote-sensing comparison (C74-C75) provides concrete evidence of the dataset's value. The biogeographic applications (C76-C77) are logical extensions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "0e38ef05-cc0a-438c-b62b-b0625e0f3e2a",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The dataset can serve as a foundation for machine learning applications in forest informatics (species classification, trait estimation, health assessment) and support emerging continental-scale forest monitoring efforts, as individual tree delineation is typically the first step in such analyses but requires specialized expertise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 describe potential applications with appropriate citations (C78, C80-C81). The role of delineation as a foundational step (C79) is logical, and the technical barrier justification (C80) is consistent with earlier claims (C52-C53). These represent reasonable projections of dataset utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "e74e2c27-cc4d-42d0-9d72-33ae73e01281",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Future work may establish relationships between understory and canopy measures to extend dataset utility, and improvements in LiDAR density and algorithms are anticipated to enable better delineation and inclusion of subcanopy trees, though significant additional research is required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 appropriately describe speculative future directions with citations (C82) while acknowledging uncertainty and research needs (C83). The anticipated improvements (C84) are conditional on technological advances. These represent reasonable forward-looking statements with appropriate caveats.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "c622507e-ad99-4683-8c05-d18dc281887b",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Users should propagate uncertainty in crown predictions into downstream analyses. Ambiguity exists in defining individual trees from aerial imagery, as apparent crowns may represent multiple trees or single trees may appear as multiple crowns. Validation through field surveys, terrestrial LiDAR, and potentially hyperspectral data is needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C90 provide important guidance on data use and validation needs. The uncertainty propagation recommendation (C85) is appropriate, the ambiguity in crown definition is acknowledged with citation (C86-C87), and validation approaches are suggested with citations (C89). The hyperspectral speculation (C90) includes appropriate caveats.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "90646814-eac6-42fb-acab-dfcfeee97ff5",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The model uses a single 'Tree' class that cannot differentiate between non-tree objects and objects lacking training data, leading to erroneous predictions on novel objects (weather stations, buoys, oil wells) despite training to ignore buildings. Developing models to identify unknown objects is an active research area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C96 describe a specific model limitation with concrete examples of failure cases (C95). The limitation is clearly explained (C91-C92), the training approach is described (C93), and the problem with novel objects is documented (C94). The research context (C96) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "f3b0cd94-0d88-4d1f-9631-b1265dd1d86d",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "NEON data can suffer from imaging artifacts due to co-registration issues between LiDAR and RGB imagery, leading to distorted imagery and poor segmentation. An ideal model would detect and label such poor-quality areas as 'unknown'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C99 identify a data quality issue with figure reference (C97), describe its impact (C98), and suggest a desirable model capability (C99). This represents honest acknowledgment of data limitations and their consequences for model performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "162c549d-3bed-42e4-ab09-94a4b7a3139f",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The current dataset version is viewed as the first step in an iterative improvement process. Ongoing assessment through visualization tools and field surveys is crucial for identifying areas for improvement, though current accuracy is sufficient for many forest structure questions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C102 provide a balanced perspective on dataset maturity and utility. The iterative development philosophy (C100) is reasonable, the validation needs are clearly stated (C101), and the current utility assessment (C102) is supported by the performance metrics documented earlier (C20, C23, C26).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    },
+    {
+      "id": "8dcde589-d686-4d3e-aac2-095a7f475e1e",
+      "content_id": "465531c3-0ac4-45cf-ae85-d4e0e8e499f4",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background context establishes that there are over 3 trillion trees on Earth covering diverse environments, and NEON is collecting multi-sensor data for 40+ sites across the United States to address the need for standardized airborne remote sensing data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C54 provide standard background context with appropriate citations (C1-C2). These are well-established facts that set the stage for the work but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:30:03.243577Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "26ac2da9-1e07-4db1-976b-4d5cd04bc95b",
+      "result_id": "4829489b-2672-4d3e-9618-98e446b6eb28"
+    },
+    {
+      "claim_id": "86d9aa4e-7228-460a-9673-9d818aed740e",
+      "result_id": "4829489b-2672-4d3e-9618-98e446b6eb28"
+    },
+    {
+      "claim_id": "c1ded372-e9db-410f-b66d-2d9ce5fb0d80",
+      "result_id": "4829489b-2672-4d3e-9618-98e446b6eb28"
+    },
+    {
+      "claim_id": "54e5aea8-6e87-4dc4-b4b0-88e42c7ccedb",
+      "result_id": "4829489b-2672-4d3e-9618-98e446b6eb28"
+    },
+    {
+      "claim_id": "b3c7f1e9-41ae-4f22-b464-f993621bac3c",
+      "result_id": "4829489b-2672-4d3e-9618-98e446b6eb28"
+    },
+    {
+      "claim_id": "c0d3f1b9-9e97-41eb-9965-bbbb731854e4",
+      "result_id": "4829489b-2672-4d3e-9618-98e446b6eb28"
+    },
+    {
+      "claim_id": "9053abb7-79bc-4332-875f-ef3ac11b2e34",
+      "result_id": "4829489b-2672-4d3e-9618-98e446b6eb28"
+    },
+    {
+      "claim_id": "dc8b2894-9fea-4e0f-bdbe-41d82348ea99",
+      "result_id": "4829489b-2672-4d3e-9618-98e446b6eb28"
+    },
+    {
+      "claim_id": "1a78e265-7450-46a0-ab5a-38a216c6998c",
+      "result_id": "4829489b-2672-4d3e-9618-98e446b6eb28"
+    },
+    {
+      "claim_id": "8dbd0974-7c88-44a6-9fe7-20cf3e01596e",
+      "result_id": "4829489b-2672-4d3e-9618-98e446b6eb28"
+    },
+    {
+      "claim_id": "381cfa9d-0942-4c86-b498-17e685fddbfe",
+      "result_id": "e7923cfe-b2fc-4a99-ae0c-b4b25c8896ee"
+    },
+    {
+      "claim_id": "5ff5e528-d22e-4b35-ad2e-40706110b06b",
+      "result_id": "e7923cfe-b2fc-4a99-ae0c-b4b25c8896ee"
+    },
+    {
+      "claim_id": "90197217-3edd-426e-aedd-1dbec9835172",
+      "result_id": "e7923cfe-b2fc-4a99-ae0c-b4b25c8896ee"
+    },
+    {
+      "claim_id": "ff0f5420-726c-45e8-b955-741da8437fee",
+      "result_id": "e7923cfe-b2fc-4a99-ae0c-b4b25c8896ee"
+    },
+    {
+      "claim_id": "acd17160-e1f5-4785-96a1-95322c40309a",
+      "result_id": "e7923cfe-b2fc-4a99-ae0c-b4b25c8896ee"
+    },
+    {
+      "claim_id": "841f1434-4a06-4b69-a364-ab21b816b786",
+      "result_id": "e7923cfe-b2fc-4a99-ae0c-b4b25c8896ee"
+    },
+    {
+      "claim_id": "ee453fd5-f795-49b1-9de2-850b062e8c0c",
+      "result_id": "e7923cfe-b2fc-4a99-ae0c-b4b25c8896ee"
+    },
+    {
+      "claim_id": "c6d7c7c6-1919-4e8f-9429-6fe7aa24b4ac",
+      "result_id": "0bf30a1f-44ea-4f14-880a-3829071dd3da"
+    },
+    {
+      "claim_id": "e444a604-10cd-4949-8164-3d77aca515f8",
+      "result_id": "0bf30a1f-44ea-4f14-880a-3829071dd3da"
+    },
+    {
+      "claim_id": "3bd5728a-4497-46cd-a8fc-ab158b81a5c4",
+      "result_id": "0bf30a1f-44ea-4f14-880a-3829071dd3da"
+    },
+    {
+      "claim_id": "6da76331-e33a-49cb-b4c0-2ef210b15062",
+      "result_id": "0bf30a1f-44ea-4f14-880a-3829071dd3da"
+    },
+    {
+      "claim_id": "b93c07a5-c226-4b5c-aaab-67af18cf4c22",
+      "result_id": "0bf30a1f-44ea-4f14-880a-3829071dd3da"
+    },
+    {
+      "claim_id": "14da828f-73d0-42b0-8bb5-1e02b937dad7",
+      "result_id": "0bf30a1f-44ea-4f14-880a-3829071dd3da"
+    },
+    {
+      "claim_id": "ab2cce27-e6d6-4e51-8927-d1a92bb0cd67",
+      "result_id": "0bf30a1f-44ea-4f14-880a-3829071dd3da"
+    },
+    {
+      "claim_id": "afd686d8-e5de-4189-af40-c47e103d310c",
+      "result_id": "0bf30a1f-44ea-4f14-880a-3829071dd3da"
+    },
+    {
+      "claim_id": "17002df8-0e56-4b7c-b113-8b56fe969571",
+      "result_id": "0bf30a1f-44ea-4f14-880a-3829071dd3da"
+    },
+    {
+      "claim_id": "8f9ca467-5a38-45af-94e3-06da622e558b",
+      "result_id": "0bf30a1f-44ea-4f14-880a-3829071dd3da"
+    },
+    {
+      "claim_id": "276ad059-d173-460c-9b0a-aeb4bdcb1503",
+      "result_id": "95549dc5-a1ab-4237-8873-a61fe5678850"
+    },
+    {
+      "claim_id": "df61445e-af6e-4a5d-bf36-fe9b56ed4090",
+      "result_id": "95549dc5-a1ab-4237-8873-a61fe5678850"
+    },
+    {
+      "claim_id": "cfaeca4e-c80e-48be-b352-73ce1288194b",
+      "result_id": "95549dc5-a1ab-4237-8873-a61fe5678850"
+    },
+    {
+      "claim_id": "5ac5bc4e-941e-424c-89cf-04e3c86f8c86",
+      "result_id": "95549dc5-a1ab-4237-8873-a61fe5678850"
+    },
+    {
+      "claim_id": "a972d4c7-d6cc-42a7-8d3b-70f62abeeb37",
+      "result_id": "bde9dcc7-5368-4d07-bdff-9e9f3e4073fa"
+    },
+    {
+      "claim_id": "bd9b4efa-aa54-476e-9a17-3c11ab12f276",
+      "result_id": "bde9dcc7-5368-4d07-bdff-9e9f3e4073fa"
+    },
+    {
+      "claim_id": "cbbb7ec3-9ffb-4c9c-9261-c2edf7c1cd6e",
+      "result_id": "bde9dcc7-5368-4d07-bdff-9e9f3e4073fa"
+    },
+    {
+      "claim_id": "3124638b-f1c5-438e-a3db-28bafce31ac6",
+      "result_id": "bde9dcc7-5368-4d07-bdff-9e9f3e4073fa"
+    },
+    {
+      "claim_id": "b5e975cf-5517-4a93-809f-cd0e108aa59d",
+      "result_id": "bde9dcc7-5368-4d07-bdff-9e9f3e4073fa"
+    },
+    {
+      "claim_id": "aa66268e-d3df-4600-857c-ba55b683c66c",
+      "result_id": "bde9dcc7-5368-4d07-bdff-9e9f3e4073fa"
+    },
+    {
+      "claim_id": "668a594c-22c8-43f5-aac4-f163c434234b",
+      "result_id": "bde9dcc7-5368-4d07-bdff-9e9f3e4073fa"
+    },
+    {
+      "claim_id": "123342d4-c635-4855-8c62-948c1aae0b45",
+      "result_id": "67a65651-496b-457c-982b-01530092c939"
+    },
+    {
+      "claim_id": "5137077a-83cc-42bb-a8e2-aa5770b26b07",
+      "result_id": "67a65651-496b-457c-982b-01530092c939"
+    },
+    {
+      "claim_id": "1ea03810-1737-470a-b820-8f28748de335",
+      "result_id": "e1720b27-74a2-4856-b912-a2ed8d5dc2ce"
+    },
+    {
+      "claim_id": "f6a91ff1-6722-423c-b16f-4287f119940c",
+      "result_id": "e1720b27-74a2-4856-b912-a2ed8d5dc2ce"
+    },
+    {
+      "claim_id": "e4f91b18-be70-4dfb-a976-3a14b5b1f05a",
+      "result_id": "e1720b27-74a2-4856-b912-a2ed8d5dc2ce"
+    },
+    {
+      "claim_id": "33271c7d-56b2-4424-b36c-685f2c83dd43",
+      "result_id": "e1720b27-74a2-4856-b912-a2ed8d5dc2ce"
+    },
+    {
+      "claim_id": "219e97e9-f5a9-4c71-9d6d-bdb585dac1f8",
+      "result_id": "dbe2e450-d287-4519-8ff1-3d7eecdfa51c"
+    },
+    {
+      "claim_id": "f3a806a5-2644-4bea-ac3d-c8c1189f3fca",
+      "result_id": "dbe2e450-d287-4519-8ff1-3d7eecdfa51c"
+    },
+    {
+      "claim_id": "c9c129bc-d9f4-4ff1-9f58-08a0f4c4d229",
+      "result_id": "32e23170-68f0-4949-b154-1b82c40419e5"
+    },
+    {
+      "claim_id": "1952db8b-b4e3-4ab0-9ed5-a7ced4d812ca",
+      "result_id": "32e23170-68f0-4949-b154-1b82c40419e5"
+    },
+    {
+      "claim_id": "545ac72c-fa03-4932-bfd9-29b55018c0e2",
+      "result_id": "32e23170-68f0-4949-b154-1b82c40419e5"
+    },
+    {
+      "claim_id": "91b400c2-d8c0-48ce-b9b9-fb8962ceedee",
+      "result_id": "32e23170-68f0-4949-b154-1b82c40419e5"
+    },
+    {
+      "claim_id": "2741bcfa-fb46-407c-ae3e-20f529d4c888",
+      "result_id": "8af89dc4-285c-4d18-90ef-bb05af880b12"
+    },
+    {
+      "claim_id": "46eb1b57-26fb-436f-b4e6-66eb1106ed81",
+      "result_id": "8af89dc4-285c-4d18-90ef-bb05af880b12"
+    },
+    {
+      "claim_id": "044a71b7-8a18-46d5-b90b-cbda8fed5148",
+      "result_id": "ba8dbb8f-9f59-4497-a9a1-ecb0be1076f9"
+    },
+    {
+      "claim_id": "5dd24c39-14b8-4795-adfd-2747fc50b8a5",
+      "result_id": "ba8dbb8f-9f59-4497-a9a1-ecb0be1076f9"
+    },
+    {
+      "claim_id": "34995b6f-0cb5-4630-b913-c08835c8e6c2",
+      "result_id": "ba8dbb8f-9f59-4497-a9a1-ecb0be1076f9"
+    },
+    {
+      "claim_id": "e2f36f45-063d-4371-83f7-53a56c960e46",
+      "result_id": "ba8dbb8f-9f59-4497-a9a1-ecb0be1076f9"
+    },
+    {
+      "claim_id": "789bde02-cb84-4032-bf4b-28ce75599bea",
+      "result_id": "ba8dbb8f-9f59-4497-a9a1-ecb0be1076f9"
+    },
+    {
+      "claim_id": "9b5be629-2f36-4876-bfbe-e800ce5a94d4",
+      "result_id": "ba8dbb8f-9f59-4497-a9a1-ecb0be1076f9"
+    },
+    {
+      "claim_id": "a043b806-d092-4a7c-882f-5960b29e82ff",
+      "result_id": "ba8dbb8f-9f59-4497-a9a1-ecb0be1076f9"
+    },
+    {
+      "claim_id": "ef64efd2-dcfe-4922-9a0b-53f015244439",
+      "result_id": "ba8dbb8f-9f59-4497-a9a1-ecb0be1076f9"
+    },
+    {
+      "claim_id": "59c7321e-6833-45ce-8b98-f7d674764c2d",
+      "result_id": "ba8dbb8f-9f59-4497-a9a1-ecb0be1076f9"
+    },
+    {
+      "claim_id": "5cdb676b-4169-4270-a572-dd7cee080f39",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "c533490f-0ed9-456b-a806-de7233cbffe2",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "00b92fdd-6117-4e6d-9ff0-e1ab8fcda433",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "45cdd351-4e46-4225-8e44-a855239f7f6a",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "a7f859e2-9b1d-451b-bbb2-dc25f1c61c30",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "0962928f-044f-4164-8c15-506c5cc0f1b8",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "8201ef29-34dd-47ca-9922-d8d4042e6be0",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "2ff63c92-e02d-462a-a34a-5fb191d4265c",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "982d7d17-b8d2-4bb3-817a-a96b21042757",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "38a914ad-8ed7-4438-a2a0-d76f4b977df1",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "c8bdd01d-c9cf-4c25-8f51-d2ed52bf480b",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "109a7b38-793e-4d58-995b-8a141de9f172",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "1e12196f-5274-4130-a5b5-83ec406251c0",
+      "result_id": "aa7a7913-3b8f-4284-b0ed-a2a32f1b5570"
+    },
+    {
+      "claim_id": "b1642d2f-a894-4057-8830-e810e1b48c4d",
+      "result_id": "0e38ef05-cc0a-438c-b62b-b0625e0f3e2a"
+    },
+    {
+      "claim_id": "028b4e3f-49eb-402b-987e-3e154590e592",
+      "result_id": "0e38ef05-cc0a-438c-b62b-b0625e0f3e2a"
+    },
+    {
+      "claim_id": "d57102f0-9dbe-4fdc-bed4-4ca43d46cd09",
+      "result_id": "0e38ef05-cc0a-438c-b62b-b0625e0f3e2a"
+    },
+    {
+      "claim_id": "3c4d0501-9856-477a-8eeb-bdf46524e40f",
+      "result_id": "0e38ef05-cc0a-438c-b62b-b0625e0f3e2a"
+    },
+    {
+      "claim_id": "ba1e0b11-7279-4ba7-9fb8-b455904d6012",
+      "result_id": "e74e2c27-cc4d-42d0-9d72-33ae73e01281"
+    },
+    {
+      "claim_id": "729a5c4c-8185-48a6-8c7c-496311b28e3f",
+      "result_id": "e74e2c27-cc4d-42d0-9d72-33ae73e01281"
+    },
+    {
+      "claim_id": "35816aa5-41ef-4bd7-9f98-42c6c3547e11",
+      "result_id": "e74e2c27-cc4d-42d0-9d72-33ae73e01281"
+    },
+    {
+      "claim_id": "2b406035-d130-405b-9dba-254746cc5f69",
+      "result_id": "c622507e-ad99-4683-8c05-d18dc281887b"
+    },
+    {
+      "claim_id": "a1fb4837-ca4f-4c4e-834e-9c09cac5d008",
+      "result_id": "c622507e-ad99-4683-8c05-d18dc281887b"
+    },
+    {
+      "claim_id": "0063bba0-f89e-4cd3-8284-48e7db690be2",
+      "result_id": "c622507e-ad99-4683-8c05-d18dc281887b"
+    },
+    {
+      "claim_id": "ed4c1e7a-b710-49f6-9b41-8da9c7d2770f",
+      "result_id": "c622507e-ad99-4683-8c05-d18dc281887b"
+    },
+    {
+      "claim_id": "14a25316-59b0-48e1-bc41-8a6984fcc9fe",
+      "result_id": "c622507e-ad99-4683-8c05-d18dc281887b"
+    },
+    {
+      "claim_id": "fc49a9f6-b35a-4aa6-9d3d-a9f0f0b43519",
+      "result_id": "c622507e-ad99-4683-8c05-d18dc281887b"
+    },
+    {
+      "claim_id": "240657fa-8788-407a-a04b-97215ceeddf4",
+      "result_id": "90646814-eac6-42fb-acab-dfcfeee97ff5"
+    },
+    {
+      "claim_id": "1ff3504a-5f40-4a5b-bfb2-eaa31995cd6d",
+      "result_id": "90646814-eac6-42fb-acab-dfcfeee97ff5"
+    },
+    {
+      "claim_id": "d63ec76a-1f9b-40b0-adcd-61d15ba6377a",
+      "result_id": "90646814-eac6-42fb-acab-dfcfeee97ff5"
+    },
+    {
+      "claim_id": "53af0d3c-bc3e-458b-8414-90de083128aa",
+      "result_id": "90646814-eac6-42fb-acab-dfcfeee97ff5"
+    },
+    {
+      "claim_id": "f2ac957a-6fcf-4e7d-b3f7-b558b2365861",
+      "result_id": "90646814-eac6-42fb-acab-dfcfeee97ff5"
+    },
+    {
+      "claim_id": "40bf07e9-70b1-4ffa-8eb7-a4de870181cc",
+      "result_id": "90646814-eac6-42fb-acab-dfcfeee97ff5"
+    },
+    {
+      "claim_id": "88fb3e30-1994-4706-bef1-b7c5ecb2ca1c",
+      "result_id": "f3b0cd94-0d88-4d1f-9631-b1265dd1d86d"
+    },
+    {
+      "claim_id": "57bed687-e5ec-43f5-9543-56dc307e1450",
+      "result_id": "f3b0cd94-0d88-4d1f-9631-b1265dd1d86d"
+    },
+    {
+      "claim_id": "3fca103c-9b32-4d6c-8b4d-88f097011cfb",
+      "result_id": "f3b0cd94-0d88-4d1f-9631-b1265dd1d86d"
+    },
+    {
+      "claim_id": "b1d58a1e-fedf-489b-b0bc-f955e7dbad04",
+      "result_id": "162c549d-3bed-42e4-ab09-94a4b7a3139f"
+    },
+    {
+      "claim_id": "6c7a9ef0-46d1-4c68-988b-206390d60f5e",
+      "result_id": "162c549d-3bed-42e4-ab09-94a4b7a3139f"
+    },
+    {
+      "claim_id": "7e5ce7b6-c6dc-40a4-b76b-36e2bb469d67",
+      "result_id": "162c549d-3bed-42e4-ab09-94a4b7a3139f"
+    },
+    {
+      "claim_id": "3a7e4c18-acf0-414a-8d1b-be770bd368c8",
+      "result_id": "8dcde589-d686-4d3e-aac2-095a7f475e1e"
+    },
+    {
+      "claim_id": "d792c90c-4a85-4051-8b9a-fa5eeda53093",
+      "result_id": "8dcde589-d686-4d3e-aac2-095a7f475e1e"
+    },
+    {
+      "claim_id": "e9ae4101-a7eb-40bf-b8ff-6680fe285a7c",
+      "result_id": "8dcde589-d686-4d3e-aac2-095a7f475e1e"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "DnaA levels decrease during carbon starvation in Caulobacter crescentus due to decreased translation rather than changes in proteolysis rate. Previous work established that constitutive Lon-mediated degradation combines with reduced translation to downregulate DnaA abundance when cells shift to glucose-limiting medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C78-C80 collectively establish the prior knowledge foundation for this study. The claims are supported by experimental data (C1, Figure 1A) and multiple citations to previous work (C2, C78-C80). This provides appropriate context for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The dnaA mRNA 5'UTR and N-terminal coding region (273 nt total) adopts a complex secondary structure with seven base-paired segments (P1-P7), as determined by combining computational predictions with experimental structural probing. This structure is conserved in Caulobacteraceae species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C14 describe comprehensive structural characterization using multiple complementary approaches (native PAGE, RNase probing, computational prediction, sequence conservation analysis). The experimental data in Figures 1 and supplements, combined with computational validation, provide strong support for the proposed secondary structure model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C32",
+      "C35",
+      "C36"
+    ],
+    "result": "The dnaA 5'UTR lacks a canonical Shine-Dalgarno sequence but contains a weak SD-like AGG motif (nt 143-145) buried in stem P5 that mediates translation initiation at the AUG start codon. A non-canonical upstream CUG codon is not functional in vivo despite forming pre-initiation complexes in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20, C32, C35-C36 combine computational predictions (C16), in vitro toeprinting data (C17-C19), and genetic experiments (C20, C35-C36) to establish the translation initiation mechanism. The convergence of multiple experimental approaches strongly supports the conclusions about the functional start site and SD-like sequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A fluorescent reporter system demonstrates that the dnaA 5'UTR-Nt region is required for starvation-dependent downregulation of translation. Substitution with a non-nutritionally controlled 5'UTR abolishes the regulatory response, as quantified by \u0394t and \u0394f parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 describe the development and validation of a quantitative reporter system with appropriate controls. The fluorescence kinetics data (Figure 2) clearly demonstrate differential regulation between constructs with and without the dnaA regulatory elements, supporting the conclusion that the 5'UTR-Nt region mediates nutritional control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Stem P5 stability affects basal translation efficiency but does not mediate starvation-dependent downregulation of DnaA. Mutations that stabilize or destabilize P5 alter eGFP expression levels during exponential growth but do not affect \u0394t or \u0394f values during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 present systematic mutational analysis of stem P5 with clear quantitative outcomes (Figure 3B-D). The data convincingly demonstrate that P5 stability influences translation initiation efficiency but is not involved in the starvation response, as \u0394t and \u0394f values remain unchanged across P5 mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Most of the dnaA 5'UTR is dispensable for nutritional downregulation of DnaA translation. Truncations T1-T5 and loop mutations do not substantially affect starvation response parameters, though they may influence basal expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 describe comprehensive truncation and loop mutation analysis (Figures 3E-H, supplements). The consistent lack of effect on \u0394t and \u0394f values across multiple deletions strongly supports the conclusion that the 5'UTR is not required for starvation-dependent regulation, contradicting earlier hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The mRNA region encoding the N-terminal 26 amino acids of DnaA (Nt) is necessary and sufficient for starvation-dependent translational control. Deletion of Nt abolishes the regulatory response, while duplication enhances it, independent of the upstream 5'UTR identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 present the key discovery through deletion, duplication, and 5'UTR substitution experiments (Figure 4). The data clearly demonstrate that Nt is both necessary (\u0394Nt abolishes regulation) and sufficient (works with heterologous 5'UTRs), with dose-dependent effects (2\u00d7Nt enhances response). This is a major mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The eGFP reporter protein is stable in both Nt-containing and Nt-deleted strains during starvation, and fluorescence increases in the \u0394Nt strain depend on ongoing translation. This excludes differential protein stability as an explanation for the observed regulatory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 address a critical alternative explanation through translation shut-off experiments with chloramphenicol (Figure 4 supplement 2). Both western blot and fluorescence-based assays demonstrate protein stability, while chloramphenicol treatment confirms translation-dependence. This appropriately rules out a confounding variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Analysis of published ribosome profiling data reveals medium-dependent ribosome pausing at the Nt-encoding region. In minimal medium (M2G), ribosomes accumulate at Nt with low occupancy downstream, while in rich medium (PYE) ribosome distribution is more uniform along dnaA mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 reanalyze published ribosome profiling data to provide independent support for the Nt-mediated mechanism (Figure 4 supplement 3). The differential ribosome occupancy patterns between growth conditions corroborate the genetic findings. However, this is reanalysis of existing data rather than new experiments, and the interpretation relies on inference from ribosome footprint patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "A double frameshift mutation that preserves mRNA secondary structure but alters the Nt peptide sequence abolishes starvation-dependent regulation, demonstrating that the native reading frame and amino acid sequence, not mRNA structure, are critical. The regulatory effect persists when Nt is moved downstream in the coding sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 present elegant frameshift experiments that distinguish between RNA structure and peptide sequence mechanisms (Figure 5A-C). The dfsNt mutant phenocopies \u0394Nt despite maintaining RNA structure, while dfsNt-Nt retains regulation when moved downstream. This strongly supports a nascent peptide-based mechanism rather than RNA-mediated regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The DnaA Nt amino acid sequence is highly conserved in Caulobacteraceae with characteristic hydrophobicity and alanine abundance. Deletion or substitution of a specific AAI motif (residues 14-16) significantly impairs starvation-dependent translational control, identifying critical amino acids for regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 combine sequence conservation analysis with targeted mutagenesis (Figure 5 supplement 2, Figure 5D-F). The identification of the AAI motif through systematic deletions and substitutions, supported by conservation data, provides strong evidence for specific amino acid requirements. The quantitative \u0394t and \u0394f measurements clearly distinguish functional from non-functional mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Synonymous codon mutations of the AAI motif do not affect starvation-dependent regulation, demonstrating that the amino acid sequence rather than codon identity or tRNA availability mediates the translational response. Translation elongation efficiency decreases in a sequence-dependent manner during Nt synthesis under carbon limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 use synonymous codon substitutions to distinguish between codon-based and amino acid-based mechanisms (Figure 5E-F). The lack of effect from codon changes (despite varying codon usage) strongly argues against tRNA availability as the primary mechanism and supports an amino acid-dependent nascent peptide mechanism. This is a critical mechanistic distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The Nt-mediated regulatory mechanism functions in the heterologous host E. coli. The Caulobacter Nt sequence confers starvation-dependent translational control in E. coli, independent of the 5'UTR, and relevant mutations produce similar effects as in Caulobacter, demonstrating that Nt is an autonomous regulatory element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 demonstrate conservation of the regulatory mechanism across species (Figure 6). The successful reconstitution in E. coli with appropriate controls (\u0394Nt, different 5'UTRs, key mutations) strongly supports the conclusion that Nt functions autonomously and does not require Caulobacter-specific factors. This significantly strengthens the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C94"
+    ],
+    "result": "The study identifies a novel mechanism where a nascent polypeptide sequence in the N-terminus of DnaA modulates translation elongation in response to nutrient availability. The peptide sequence, not mRNA structure or codon choice, is critical for this regulation, with specific amino acids tuning translational efficiency during carbon starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76, C81-C84, C94 summarize the main findings of the study. These conclusions are well-supported by the comprehensive experimental evidence including reporter assays, mutational analysis, frameshift experiments, ribosome profiling reanalysis, and heterologous expression. The convergence of multiple independent lines of evidence strongly supports the proposed nascent peptide-based mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The proposed model suggests that under optimal conditions, efficient DnaA translation supports DNA replication initiation, while during starvation, translation pauses at the Nt sequence causing ribosome traffic jams that lead to premature termination, reduced translation rates, and combined with Lon-mediated degradation, rapid DnaA clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C91 present a mechanistic model that integrates the experimental findings. While the model is consistent with the data (ribosome pausing, translation arrest, Lon degradation), several key aspects remain speculative: the precise mechanism of ribosome traffic jams (C87-C88), involvement of rescue systems (C87), effects on mRNA decay (C89), and the quantitative contribution of each proposed mechanism (C88-C91). The model is plausible but requires additional direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The AAI motif may interact with the ribosome exit tunnel similar to known arrest peptides, but represents the first example of a regulatory nascent polypeptide sequence in a protein's N-terminus that directly modulates its own translation efficiency in response to nutrient availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is explicitly speculative about the molecular mechanism. Claim C93 makes a novelty claim that depends on comprehensive knowledge of the literature. While the authors qualify this as 'to our knowledge,' the mechanism has not been structurally characterized, and the comparison to arrest peptides remains hypothetical. The novelty claim appears reasonable but cannot be definitively verified without exhaustive literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The nutrient-sensing mechanism likely involves global starvation-induced changes in translation strategy rather than Caulobacter-specific factors, potentially through reduced availability of translation machinery components or involvement of conserved trans-acting factors or metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 propose mechanisms for nutrient sensing. While C95 is supported by the E. coli heterologous expression data, the specific mechanisms in C96-C97 are speculative. The authors appropriately present these as possibilities ('could in principle,' 'alternatively'), but no direct experimental evidence is provided to distinguish between these or other potential mechanisms. Further work is needed to identify the actual sensing mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Although the 5'UTR is not required for starvation-dependent regulation, it may play other regulatory roles. The 5'UTR structure inhibits translation initiation, and modulation of SD-like sequence accessibility by trans-acting factors could regulate dnaA translation in response to other cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98, C100 are explicitly speculative about potential additional regulatory roles. Claim C99 is supported by the mutational data showing P5 affects basal expression. Claim C101 cites a computational prediction study. While these ideas are plausible and the 5'UTR clearly affects translation efficiency, the proposed regulatory mechanisms involving trans-acting factors remain hypothetical and require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The discovery that DnaA in Caulobacter is regulated at the translation elongation level reveals important new control mechanisms for this highly conserved and critical replication initiator protein that contributes to proper timing of DNA replication initiation in response to nutrient availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 emphasize the biological significance of the findings. These claims are supported by established knowledge about DnaA's importance (C103) and the novel mechanistic insights provided by this study. The significance is appropriately contextualized within the broader understanding of bacterial cell cycle control and nutrient-dependent regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The nascent peptide-based translational regulation mechanism described here might constitute a general strategy for modulating synthesis rates of other proteins during starvation, potentially helping to globally remodel the proteome when cells reallocate resources from growth to maintenance functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 speculate about broader implications beyond DnaA. While the mechanism is well-established for DnaA, the generalization to other proteins is speculative. The authors appropriately use cautious language ('consider it possible,' 'could help'), but no evidence is provided for similar mechanisms operating on other genes. This represents an interesting hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

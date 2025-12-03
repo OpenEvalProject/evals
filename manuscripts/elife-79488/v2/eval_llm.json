@@ -1,0 +1,426 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C32",
+      "C33"
+    ],
+    "result": "Small-RNA sequencing was performed on 212 mid-gestation human neocortical tissue samples (14-21 gestation weeks), measuring 907 expressed miRNAs including 111 novel miRNAs, and identifying 85 local-miRNA-eQTLs associated with 70 miRNAs through genetic association analysis with imputed genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C24-C25, and C32-C33 provide consistent, explicit descriptions of the study design and primary findings. The sample size (n=212), number of miRNAs measured (907), novel miRNAs discovered (111), and eQTLs identified (85) are clearly stated with methodological details provided in both text and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Differential miRNA expression analysis across gestation weeks identified 269 miRNAs positively correlated and 246 negatively correlated with gestation week (FDR<10%). Known developmental miRNAs miR-92b and miR-124 showed expected expression patterns, with miR-92b upregulated in early gestation (associated with progenitor proliferation) and miR-124 upregulated in late gestation (associated with neuronal differentiation), and their validated mRNA targets showed consistent expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C49 describe a coherent differential expression analysis with appropriate statistical thresholds (FDR<10%), clear results (269 positive, 246 negative correlations), and validation through known miRNAs (miR-92b, miR-124) and their targets. The findings are consistent with known cell-type compositions during cortical development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In addition to known miRNAs from miRBase release 22, the study quantified 72 miRNAs from Friedl\u00e4nder et al. and 7 from Nowakowski et al., and discovered 111 putatively novel miRNAs using miRge 2.0 and miRDeep2. These novel miRNAs showed sequencing read coverage consistent with known miRNAs and many were differentially expressed across gestation weeks, though they require validation to demonstrate miRNA function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 describe novel miRNA discovery with explicit numbers and appropriate caveats. The use of two annotation packages (miRge 2.0 and miRDeep2) and visual inspection of read coverage plots provides methodological rigor. The acknowledgment that validation is needed (C56) is scientifically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Following TOPMed mixed-ancestry imputation of genotypes from 212 diverse ancestry donors, 12.4 million genetic variants were tested for association with 907 miRNAs using a mixed-effects linear model controlling for population stratification (kinship matrix, 10 genotype PCs) and technical/biological covariates. This identified 70 emiRs with 85 conditionally independent local-miRNA-eQTLs (including 14 secondary and 1 tertiary eQTL) at stringent significance (FDR<5%), with variance explained ranging from 10.5-65.2% (mean=21.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 describe a rigorous eQTL analysis with appropriate statistical methods for mixed-ancestry populations, stringent multiple testing correction (local and global), and conditional analysis to identify independent signals. The variance explained is comparable to mRNA-eQTLs in the same tissue (C65), providing internal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "miRNA-eQTLs showed significant enrichment in active transcription start sites (TssA), strong transcription (Tx), weak transcription (TxWk), enhancers (Enh), and ZNF genes/repeats (ZNF/Rpts), with significant depletion in quiescent chromatin (Quies). These enrichments were robust to both stringent and relaxed multiple testing thresholds and are consistent with most miRNAs being located within or adjacent to genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 describe chromatin enrichment analysis using GARFIELD with appropriate controls for confounders (distance to TSS, LD, MAF). The enrichments are biologically plausible given miRNA genomic locations (C75), and robustness across thresholds (C74) strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Of 70 emiRs at stringent threshold, 49 are within host genes (100 of 153 at relaxed threshold). miRNA-eQTLs are often close to their emiRs regardless of host gene location. Colocalization analysis found 17 mRNA-eQTL and 12 mRNA-sQTL colocalizations. For emiRs within hosts without colocalization, miRNA and mRNA expression were often positively correlated, while the few emiRs with mRNA-eQTL colocalizations showed positive correlation and those with mRNA-sQTL colocalizations showed negative correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 describe the relationship between miRNA-eQTLs and host gene regulation with clear quantification. The differential correlation patterns for eQTL vs sQTL colocalizations (C84-C85) suggest distinct regulatory mechanisms, though the small numbers (3 eQTL, 4 sQTL colocalizations) limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A colocalization between miR-1307-5p miRNA-eQTL and ATP5MK mRNA-sQTL demonstrates miRNA biogenesis from host gene exons. Hsa-mir-1307 sits within exon 3 of ATP5MK's 5' UTR. The variant rs7911488 (alleles A/G) associates with both splice site utilization (SpliceA and SpliceD) and miR-1307-5p expression, where the G allele increases splice site inclusion but decreases miR-1307-5p expression, consistent with miRNA biogenesis from the exon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C95 describe a mechanistic example linking splicing and miRNA expression through genetic variation. The data show consistent directional effects (G allele increases splicing, decreases miRNA) supporting the proposed biogenesis mechanism (C93-C95). This provides biological insight into miRNA regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Comparison with blood miRNA-eQTLs shows high tissue specificity: of 76 blood and 70 brain emiRs, most are tissue-unique (65 blood, 54 brain), with only 11 shared emiRs. Of shared emiRs, only 3 have colocalized genetic signals, indicating tissue-specific regulatory mechanisms. The \u03c01 statistic (fraction of blood associations non-null in brain) was 0.23 for miRNA-eQTLs versus 0.51 for mRNA-eQTLs, demonstrating stronger tissue specificity for miRNA-eQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C106 provide rigorous comparison using appropriate statistical methods (\u03c01 statistic with bootstrap confidence intervals). The lower \u03c01 for miRNA-eQTLs (0.23) versus mRNA-eQTLs (0.51) with non-overlapping confidence intervals supports stronger tissue specificity for miRNAs. The comparison to published blood data (Huan et al., 2015) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Colocalization analysis between 85 miRNA-eQTLs and 21 GWAS identified one robust colocalization: miR-4707-3p eQTL (rs4981455, A/G) with educational attainment, brain size, and cortical surface area. This eQTL also colocalizes with HAUS4 mRNA-eQTL. Hsa-mir-4707 is in HAUS4's 5' UTR, and the A allele increases both miR-4707-3p and HAUS4 expression. The index variant is in high LD (r\u00b2>0.99) with rs2273626 in miR-4707-3p's seed sequence. No miR-4707-3p expression was detected in G/G samples, and allele-specific expression analysis showed consistently lower expression from the A allele (p=3.63\u00d710\u207b\u00b9\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C119 describe a well-characterized colocalization with multiple lines of evidence. The lack of expression in G/G samples (C114) is unlikely due to mapping bias given miRge 2.0's variant accounting (C115). Allele-specific expression analysis (C116-C118) provides additional validation. However, the biological interpretation is complex given the seed sequence variant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The miR-4707-3p eQTL colocalizes with educational attainment GWAS. Multiple analyses support this: conditional analysis shows decreased significance (C121), variant significance correlates between datasets (r=0.898, p=5.1\u00d710\u207b\u00b9\u2070\u2077), SMR finds single causal variant (p=7.26\u00d710\u207b\u2077), and HEIDI fails to reject single variant hypothesis (p=0.159 mixed-ancestry, p=0.120 European). Alleles increasing miR-4707-3p expression associate with decreased educational attainment, decreased cortical surface area, and decreased head size/intracranial volume, suggesting genetic risk for decreased brain size and cognitive abilities may be mediated through increased miR-4707-3p expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C130 provide multiple statistical validations of colocalization (conditional analysis, correlation, SMR, HEIDI) with consistent directional effects. The convergence of evidence from multiple brain size phenotypes strengthens the finding. However, the mechanistic interpretation (C130) remains speculative pending experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Few publications describe miR-4707-3p function, though HAUS4 (its host gene) plays roles in mitotic spindle assembly and proliferation regulation. This led to a hypothesis consistent with the radial unit hypothesis: increased miR-4707-3p expression may influence neural progenitor fate decisions during fetal cortical development, ultimately leading to decreased cortical surface area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C133 acknowledge limited prior knowledge of miR-4707-3p (C131) and propose a hypothesis (C133) based on host gene function (C132). While the hypothesis is plausible and appropriately framed as speculation, it requires experimental validation. The subsequent experimental results (see next result group) do not fully support this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Lentiviral transduction was used to overexpress miR-4707-3p in phNPCs from two donors (D54: G/G, D88: A/A at rs4981455) cultured in proliferation media with doxycycline-inducible expression. D88 cells endogenously expressed more miR-4707-3p than D54, consistent with genotypes. At 8 days post-transduction, miR-4707-3p overexpression increased EdU-positive nuclei (indicating increased proliferation) and increased expression of proliferation markers (MKI67, CCND1), progenitor markers (PAX6, SOX2), and neuronal markers (DCX, TUJ1) at days 4, 6, and 8. However, this experiment has limited interpretability for neurogenesis because growth factors in the media prevent differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C144 describe a technically sound proliferation experiment with appropriate controls and validation of overexpression. The increased proliferation is clearly demonstrated through EdU labeling and marker expression. The caveat about limited interpretability (C144) is appropriate and honest. The experiment addresses proliferation but not the full hypothesis about neurogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "DOX-inducible stable lines expressing miR-4707-3p or control were created from D54 phNPCs and differentiated for 1-2 weeks. miR-4707-3p was significantly upregulated in mir-4707 samples at both timepoints. Microarray analysis (after batch correction and outlier removal, n=22 samples) identified 1664 genes differentially expressed at week 1 and 430 at week 2. Of predicted TargetScan targets, 13 were consistently downregulated at both timepoints, including SLC6A1 (GABA transporter), NDRG2 and SORCS2 (neurite outgrowth), and TSPAN6 (synaptic transmission). Differentially expressed genes at week 2 were enriched in neuronal maturation ontologies including synapse maturation, neuron recognition, and negative regulation of signal transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C158 describe a well-controlled differentiation experiment with appropriate quality control (batch correction, outlier removal, PCA validation). The downregulation of predicted targets (C152) validates miRNA function. The enrichment in neuronal maturation ontologies (C157) and specific target genes with known synaptic functions (C153-C155) support the interpretation that miR-4707-3p influences synapse maturation (C156, C158).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Immunocytochemistry with NESTIN (progenitor marker) and TUJ1 (neuronal marker) showed miR-4707-3p overexpression significantly increased nuclei per well at both 1 and 2 weeks (consistent with increased proliferation). The fraction of neurons was lower in week 1 mir-4707 samples but showed no difference at week 2. These results confirm miR-4707-3p decreases expression of predicted targets, increases neural progenitor proliferation, and modulates synaptic/neuronal maturation genes. However, the decrease in neurogenesis at week 1 is not consistent with the radial unit hypothesis mechanism for cortical surface area decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C166 describe ICC results that are internally consistent with prior proliferation findings (C160 consistent with C139). The decreased neurogenesis at week 1 (C161) contradicts the initial hypothesis (C165), which the authors appropriately acknowledge. The overall conclusions about miR-4707-3p effects (C163-C164, C166) are supported by converging evidence from multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Small-RNA sequencing revealed robust miRNA expression in mid-gestation cortical tissue, a stage/tissue not previously captured in standard RNA-seq eQTL studies. Beyond known roles of miR-92b and miR-124, differential expression analysis suggests many other miRNAs play crucial roles in cortical development. Over 100 likely novel miRNAs were found with sequencing read coverage characteristic of known miRNAs and differential expression across gestation weeks like miRNAs with known neurogenesis roles. Investigating these miRNAs' functions during neuronal differentiation may yield new gene regulatory mechanisms in human neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C172 appropriately summarize the study's contributions to miRNA profiling in developing brain. The characterization of novel miRNAs (C169-C171) is supported by data, though functional validation is needed. The speculation about future research (C172) is reasonable given the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "85 local-miRNA-eQTLs were discovered in developing cortex at a developmental timepoint with known influence on brain structure and cognitive traits. Despite many emiRs residing within host genes, miRNA-eQTLs seldom colocalize with host mRNA-eQTLs, implying largely independent regulatory mechanisms and highlighting unique information from miRNA-eQTLs that would be missed in standard mRNA-eQTL analyses. The small subset with mRNA-eQTL colocalizations show positive correlation (common regulatory mechanism), while those with mRNA-sQTL colocalizations show negative correlation. These miRNA-eQTLs provide mostly unique mechanisms compared to mRNA-eQTL datasets and will be a continued resource for understanding GWAS loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C180 synthesize key findings about miRNA-eQTL characteristics and their relationship to host gene regulation. The independence from host mRNA regulation (C174-C176) is well-supported by colocalization data. The conclusion about unique information (C176, C179) is justified. The statement about future utility (C180) is reasonable speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "miRNA-eQTLs map less frequently to known brain disease loci compared to mRNA-eQTLs: only 1 colocalization versus 844 colocalizations across 18,667 mRNA-eQTLs in the same tissue despite similar sample sizes (n=212 vs n=235). This suggests genetically regulated miRNAs may not be major contributors to neuropsychiatric disorders, or current GWAS are underpowered to detect miRNA-mediated loci. This may reflect purifying selection on miRNAs, which have broad downstream effects on hundreds/thousands of mRNAs, leading to tighter regulation than mRNA expression (as shown for transcription factors). Rare variants, less subject to selective pressure, may govern miRNA expression but were not detectable with this study's methodology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C187 provide thoughtful interpretation of the limited GWAS colocalizations. The comparison to mRNA-eQTLs (C182) is appropriate and striking. The proposed explanations (purifying selection C184-C186, rare variants C187) are plausible and well-reasoned, appropriately framed as speculation. The acknowledgment of study limitations (C187) is scientifically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "One colocalization was found between miR-4707-3p eQTL and brain size/educational attainment GWAS, revealing a possible molecular mechanism linking genetic variation in fetal cortical miRNA expression to adult brain size and cognition. Experimental overexpression in proliferating phNPCs showed increased proliferative and neurogenic markers with increased proliferation rate. In differentiating phNPCs at 2 weeks, increased cell numbers were observed but no difference in neuron numbers. Based on the radial unit hypothesis, decreased proliferation or increased neurogenesis was expected to explain decreased cortical surface area, but in vitro observations do not support this mechanism. Similar studies have also seen results inconsistent with the radial unit hypothesis. Nevertheless, transcriptomic differences suggest miR-4707-3p may influence synaptogenesis or neuronal maturation, which may be better interrogated at later timepoints or with direct assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C188-C196 honestly acknowledge that experimental results (C190-C191) do not support the initial hypothesis based on the radial unit hypothesis (C192-C193). The citation of similar findings (C194) provides context. The alternative interpretation focusing on synaptogenesis/maturation (C195) is supported by transcriptomic data but requires additional validation (C196). The discrepancy between genetic associations and in vitro results highlights limitations of the model system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The miR-4707-3p locus features both a miRNA-eQTL and a HAUS4 mRNA-eQTL. HAUS4's known proliferation effects suggest increased expression would likely increase neural progenitor proliferation, though this is untested. It is unknown whether miR-4707-3p and HAUS4 have similar or opposing influences on neurogenesis. No miR-4707-3p expression was detected in G/G samples at rs4981455, implying the A allele turns on expression and G/G individuals have no miR-4707-3p in developing cortical tissue. This highlights the utility of miRNA-eQTLs, as discovering only the mRNA-eQTL would not reveal the full genetic mechanism underlying brain size and cognitive phenotype differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197-C202 appropriately discuss the complexity of the locus with both miRNA and mRNA regulation. The acknowledgment of unknowns (C199) is scientifically honest. The observation about G/G genotypes lacking miR-4707-3p expression (C200-C201) is striking and well-supported. The conclusion about miRNA-eQTL utility (C202) is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213"
+    ],
+    "result": "A biological mechanism linking genetic variation to educational attainment differences has been proposed, which warrants scrutiny given education's societal implications. Educational attainment loci may reflect direct brain effects, indirect genetic effects (e.g., parental behavior), or confounding from discriminatory practices. Evidence at this locus is consistent with direct brain effects given prenatal tissue measurement (reducing societal bias confounding) and experimental effects in neural progenitors. However, important caveats exist: (1) evidence is only for this one locus, not others; (2) this locus explains only 0.00802% of educational attainment variation; (3) GWAS were in European ancestry populations, so allele frequency differences cannot predict cross-population differences; (4) the study cannot directly test fetal miR-4707-3p influence on adult brain phenotypes, so genetic pleiotropy rather than mediation cannot be ruled out. Despite caveats, identifying mechanisms for educational attainment genetic variation will likely help understand psychiatric disorders given genetic correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C213 provide exceptionally thoughtful and responsible discussion of the educational attainment findings. The authors appropriately acknowledge the sensitive nature of this research (C204), consider alternative explanations (C205), present evidence for direct brain effects (C206), and enumerate important limitations (C207-C212). The small effect size (0.00802%, C209) and inability to rule out pleiotropy (C212) are critical caveats. The discussion demonstrates scientific integrity and awareness of potential misuse of genetic findings related to educational attainment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "The study highlights one example of how individual miRNA expression differences during fetal cortical development may lead to brain size and cognition differences through altered neurogenesis. More work is needed to uncover specific molecular pathways affected by miR-4707-3p, but cellular behavior effects are clear. The lengthening of neurogenesis and brain expansion are hallmarks of human-mammal evolutionary differences. Comparative genomic studies show human-specific gene regulatory differences in developing neocortex associate with neurogenesis, brain complexity, and disease, and primate-specific miRNAs regulate gene expression in these processes. This study provides further evidence that miRNAs expressed during neocortical development may ultimately influence human cognition. Continued work on miRNA expression patterns and regulatory networks during fetal brain development will be crucial for understanding molecular pathways leading to brain size or cognitive differences between individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C214-C220 provide appropriate synthesis and contextualization of findings within evolutionary and developmental neuroscience. The acknowledgment that more work is needed (C215) while stating cellular effects are clear is balanced. The evolutionary context (C216-C218) is well-supported by citations. The conclusions (C219) and future directions (C220) are reasonable given the study's findings.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TTP is poly-ubiquitinated on lysine residues in its zinc finger domain in a K48-linked manner, and this ubiquitination is required for its proteasomal degradation. All five lysine residues (K97, K115, K133, K135, K141) are functionally important and appear redundant for TTP degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C45 provide converging evidence from multiple experimental approaches: E1 inhibitor stabilizes TTP (C34-C35), ubiquitination is detected by IP (C36), the KtoR mutant is stabilized and less ubiquitinated (C37-C38), individual lysine mutations have minimal effect while combined mutations stabilize TTP (C39-C41), and K48-linked but not K63-linked ubiquitin chains are detected (C42-C43). The data consistently support ubiquitin-dependent degradation through the zinc finger lysines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "A genome-wide CRISPR screen identified HUWE1 as a strong regulator of TTP protein stability. HUWE1 knockout increases TTP protein half-life approximately 5-fold in endogenous conditions and 83% in exogenous expression, without affecting Zfp36 mRNA levels. This effect is conserved across mouse and human cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53-C71 demonstrate robust identification and validation of HUWE1 as a TTP regulator. The genetic screen (C53-C55) identified known TTP regulators as positive controls, validating the approach. Multiple orthogonal methods confirm HUWE1's role: western blot (C57), flow cytometry (C58), primary cells (C66-C67), and half-life measurements (C68-C69). The effect is specific to protein stability, not transcription (C59), and conserved across species (C64-C65, C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "HUWE1 controls TTP stability indirectly by regulating its phosphorylation through multiple stress kinases (p38, MK2, ERK, JNK). HUWE1 loss increases stress kinase activation at later time points (2-16 hr post-LPS), independent of the previously characterized S52/S178 phosphorylation pathway. The effect requires collective activity of multiple kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C85-C102 provide strong evidence for indirect regulation through kinase activity. HUWE1 loss increases kinase phosphorylation at later time points (C87-C89) without affecting early kinetics (C86) or inducing general stress (C91-C92). Pharmacological epistasis experiments (C94-C100) demonstrate that individual kinase inhibition doesn't block HUWE1 effects, but combined inhibition of all four kinases abolishes it (C100-C101), supporting a model of collective kinase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "HUWE1 regulates TTP phosphorylation through modulating PP1/2 phosphatase activity. Phosphatase inhibition with Calyculin A stabilizes TTP and abolishes the HUWE1 knockout effect, suggesting HUWE1 maintains PP1/2 cellular output to control both direct TTP dephosphorylation and stress kinase inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 demonstrate that phosphatase inhibition phenocopies and epistasizes HUWE1 loss. Calyculin A treatment stabilizes TTP (C103) and eliminates the difference between control and HUWE1 KO cells (C104), placing phosphatase activity downstream of HUWE1. The interpretation that HUWE1 regulates PP1/2 output (C105-C106) is a reasonable inference from the data, though the molecular mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Loss of HUWE1 increases bioactive TTP, resulting in enhanced degradation of TTP target mRNAs (Tnf, Il6) at 3-16 hr post-LPS stimulation. The effect is post-transcriptional (mature mRNA affected, not pre-mRNA), reduces mRNA half-life by 57%, and is at least partially TTP-dependent as shown by rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C82 demonstrate functional consequences of HUWE1 loss on TTP activity. The data show decreased inflammatory mRNA levels (C74), post-transcriptional mechanism (C75-C76), reduced mRNA stability (C78), partial rescue by TTP depletion (C79-C80), and decreased protein levels (C81). The convergence of mRNA and protein measurements, along with the rescue experiment, strongly supports that increased TTP stability leads to increased functional activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "HUWE1 effects on TTP stability are independent of S52/S178 phosphorylation and zinc finger domain integrity. The S52A/S178A mutant is still stabilized by HUWE1 loss, and a zinc finger disruption mutant (C116R/C139R) remains HUWE1-sensitive. HUWE1-dependent effects occur at later time points (3-16 hr) than S52/S178-mediated stabilization (0-3 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C134 demonstrate independence from known regulatory mechanisms. The KtoR mutant accumulates and is HUWE1-insensitive (C125-C127), while S52A/S178A and zinc finger mutants remain HUWE1-sensitive (C128-C132), indicating HUWE1 acts through different sites. The temporal separation (C133-C134) is supported by time-course data showing HUWE1 effects predominantly at later time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The TTP C-terminal region 234-278 is critical for HUWE1-dependent regulation. Deletion mapping identifies region 259-278 as a putative E3 ligase binding site (deletion stabilizes TTP and confers HUWE1 insensitivity) and region 234-258 as a putative phosphatase binding site (deletion causes hyperphosphorylation). The phosphorylated residues important for HUWE1-mediated stabilization likely reside in the 259-278 region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C150 present systematic deletion mapping data. N-terminal deletions have no effect (C137-C138), while specific C-terminal deletions show distinct phenotypes: \u0394C3 (259-278) stabilizes TTP and confers HUWE1 insensitivity (C140, C146), \u0394C4 (234-258) causes hyperphosphorylation (C141, C147), and \u0394C5/\u0394C6 stabilize without hyperphosphorylation (C142). The data support the proposed model of two functional regions (C148-C149), though direct binding studies would strengthen these inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "TTP and HUWE1 do not form detectable complexes in cells by co-immunoprecipitation or TurboID proximity labeling, suggesting HUWE1 effects on TTP are indirect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 report negative results from two independent interaction assays. While negative data cannot definitively rule out transient or weak interactions, the use of two complementary methods (co-IP and proximity labeling) strengthens the conclusion. This supports the indirect mechanism proposed in other results, though it leaves open whether HUWE1 might directly ubiquitinate TTP through transient interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Proteomics analysis shows HUWE1 ablation affects only a select number of proteins, unlike proteasome component Psmb7 knockout which affects many proteins. HUWE1 loss does not alter MAPK or PP1/2 protein levels but affects their activation. ZFP36L1, a TTP paralog, is also regulated by HUWE1, suggesting conserved regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C124 use comparative proteomics to distinguish HUWE1 effects from general proteasome dysfunction. The limited overlap between HUWE1 and Psmb7 targets (C107-C112) argues against general proteasome impairment. The lack of MAPK/PP1/2 protein level changes (C114-C116) supports the activity-based mechanism. ZFP36L1 regulation (C120-C121, C123) is well-documented by both mass spec and western blot. The inference of conserved regulation (C124) is reasonable but would benefit from functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "TTP protein is rapidly induced by LPS and rapidly degraded in the absence of protein synthesis. LPS stimulation initially stabilizes TTP (30 min), then facilitates its degradation at later time points (3-7 hr). Proteasome inhibition prevents degradation and causes accumulation of phosphorylated TTP species. The mCherry-TTP reporter recapitulates endogenous TTP behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C52 establish the basic regulatory dynamics of TTP. The biphasic response to LPS (initial stabilization followed by degradation) is demonstrated by multiple approaches including western blot (C28-C32) and the mCherry reporter system (C46-C47). Phosphatase treatment experiments (C48-C50) confirm phosphorylation status. These foundational observations are well-supported and consistent with prior literature, establishing the context for investigating HUWE1's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Phosphorylation in the TTP C-terminal 259-278 region, unlike S52/S178 phosphorylation, does not inhibit TTP functional activity. In HUWE1 knockout cells, increased phosphorylation in this region correlates with decreased levels of TTP target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 distinguish the functional consequences of C-terminal phosphorylation from N-terminal S52/S178 phosphorylation. The observation that HUWE1 loss increases both TTP phosphorylation and TTP-mediated mRNA degradation (C135) supports the inference that C-terminal phosphorylation doesn't inhibit activity (C136). This contrasts with the established model for S52/S178 and is an important mechanistic distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors propose a model where HUWE1 regulates TTP stability through phosphorylation-dependent control of E3 ligase access. Under physiological conditions, HUWE1 curtails stress kinase activation, limiting TTP phosphorylation in the 259-278 region. In HUWE1's absence, hyperphosphorylation in this region prevents E3 ligase binding, stabilizing TTP and reducing inflammatory output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C158 present an integrated model synthesizing the experimental findings. While the model is consistent with the data (ubiquitin-dependent degradation C151-C152, inverse correlation of phosphorylation and ubiquitination C157, functional regions identified C153-C154), several key aspects remain speculative (C153-C154, C158). The proposed E3 ligase binding site and phosphatase binding site are inferred from deletion studies but lack direct binding evidence. The mechanism by which phosphorylation prevents E3 ligase binding is speculative. The model provides a useful framework but requires additional validation.",
+    "result_type": "MAJOR"
+  }
+]

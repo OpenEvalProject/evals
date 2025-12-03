@@ -1,0 +1,1410 @@
+{
+  "submission": {
+    "id": "658c9a52-a8d6-4ff0-a35c-5e3a162d02ba",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:26:43.005741Z",
+    "updated_at": "2025-12-03T01:26:43.005741Z"
+  },
+  "content": [
+    {
+      "id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "submission_id": "658c9a52-a8d6-4ff0-a35c-5e3a162d02ba",
+      "content_type": "manuscript",
+      "content_text": "# ATP and large signaling metabolites flux through caspase-activated Pannexin 1 channels\n\n## Authors\n\n- Adishesh K Narahari<sup>1</sup> ([ORCID: 0000-0002-8708-9161](https://orcid.org/0000-0002-8708-9161)) \u2020\n- Alex JB Kreutzberger<sup>2</sup> ([ORCID: 0000-0002-9774-115X](https://orcid.org/0000-0002-9774-115X))\n- Pablo S Gaete<sup>3</sup> ([ORCID: 0000-0003-3373-9138](https://orcid.org/0000-0003-3373-9138))\n- Yu-Hsin Chiu<sup>1</sup> ([ORCID: 0000-0002-4730-8104](https://orcid.org/0000-0002-4730-8104))\n- Susan A Leonhardt<sup>2</sup>\n- Christopher B Medina<sup>4</sup>\n- Xueyao Jin<sup>2</sup>\n- Patrycja W Oleniacz<sup>1</sup>\n- Volker Kiessling<sup>2</sup> ([ORCID: 0000-0002-9388-5703](https://orcid.org/0000-0002-9388-5703))\n- Paula Q Barrett<sup>1</sup>\n- Kodi S Ravichandran<sup>4</sup>\n- Mark Yeager<sup>2</sup>\n- Jorge E Contreras<sup>3</sup> ([ORCID: 0000-0001-9203-1602](https://orcid.org/0000-0001-9203-1602))\n- Lukas K Tamm<sup>2</sup> ([ORCID: 0000-0002-1674-4464](https://orcid.org/0000-0002-1674-4464))\n- Douglas A Bayliss<sup>1</sup> ([ORCID: 0000-0002-5630-2572](https://orcid.org/0000-0002-5630-2572)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology, University of Virginia Charlottesville United States\n2. Department of Molecular Physiology and Biological Physics, University of Virginia Charlottesville United States\n3. Department of Pharmacology, Physiology, and Neuroscience, Rutgers New Jersey Medical School Newark United States\n4. Department of Microbiology, Immunology, and Cancer Biology, University of Virginia Charlottesville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPannexin 1 (Panx1) is a membrane channel implicated in numerous physiological and pathophysiological processes via its ability to support release of ATP and other cellular metabolites for local intercellular signaling. However, to date, there has been no direct demonstration of large molecule permeation via the Panx1 channel itself, and thus the permselectivity of Panx1 for different molecules remains unknown. To address this, we expressed, purified, and reconstituted Panx1 into proteoliposomes and demonstrated that channel activation by caspase cleavage yields a dye-permeable pore that favors flux of anionic, large-molecule permeants (up to ~1 kDa). Large cationic molecules can also permeate the channel, albeit at a much lower rate. We further show that Panx1 channels provide a molecular pathway for flux of ATP and other anionic (glutamate) and cationic signaling metabolites (spermidine). These results verify large molecule permeation directly through caspase-activated Panx1 channels that can support their many physiological roles.\n\n## Introduction\n\nPannexin 1 (Panx1) is a widely\u00a0expressed homo-heptameric membrane channel that plays a critical role in numerous physiological and pathophysiological processes. Among others, this includes cell clearance after apoptosis (Chekeni et al., 2010; Medina et al., 2020; Poon et al., 2014), blood pressure regulation (Billaud et al., 2011; Good et al., 2018a), stroke (Bargiotas et al., 2011; Good et al., 2018b; Thompson, 2015), and neuropathic pain (Bravo et al., 2014; Weaver et al., 2017; Zhang et al., 2015). Individual Panx1 subunits consist of a four-transmembrane \u03b1-helical bundle with a cytoplasmic loop between TM2 and TM3; the N- and C-termini also reside on the cytoplasmic surface (Baranova et al., 2004; Penuela et al., 2013). These channels are broadly similar to a subset of mammalian large-pore ion channels that include connexin gap junctions (Panchin et al., 2000), calcium homeostasis modulator 1 (CALHM1) (Siebert et al., 2013; Syrjanen et al., 2020), and SWELL1 (LRRC8) (Abascal and Zardoya, 2012; Deneka et al., 2018). Despite a conserved subunit topology, recent cryoEM structures revealed that these different channels exist in a variety of oligomeric states (from hexameric to undecameric) (Deng et al., 2020; Michalski et al., 2020). Of interest here, activation of these channels has been associated with both ionic current and large molecule permeation. In particular, channel activation is associated with release of metabolites (often ATP) that are critical for their roles in intercellular signaling (Bao et al., 2004; Chekeni et al., 2010; Lutter et al., 2017; Medina et al., 2020; Siebert et al., 2013; Taruno, 2018).\n\nIn the two decades since their discovery, much has been learned about the functional properties of Panx1 channels. Panx1 ionic currents have occasionally been detected under unstimulated conditions (Ma et al., 2012; Romanov et al., 2012; Ruan et al., 2020), but that basal activity does not appear to be associated with large molecule permeation (Romanov et al., 2012). By contrast, transmembrane permeation of large fluorescent dyes and ATP occurs when Panx1 is activated by various mechanisms (e.g., stretch, elevated external K+, ionotropic and metabotropic receptor signaling, and caspase-mediated cleavage at a C-terminal site) (Beckel et al., 2015; Chekeni et al., 2010; Chiu et al., 2017; Iglesias et al., 2008; Silverman et al., 2009; Weilinger et al., 2016). Among these, caspase-mediated activation is a well-characterized mechanism in which cleavage of the channel C-tails, as occurs during apoptosis or pyroptosis, is accompanied by uptake of dyes indicative of cell death (e.g., Yo-Pro-1\u00a0and To-Pro-3) and release of ATP and UTP that serve as \u2018find-me\u2019 signals to direct phagocytic clearance of cell corpses (Chekeni et al., 2010; Chiu et al., 2017; Poon et al., 2014; Qu et al., 2011; Yang et al., 2015). Moreover, Panx1 cleavage elicits efflux of additional metabolites from apoptotic cells, which function as local \u2018good-bye\u2019 signals with anti-inflammatory, wound healing, and cell proliferative actions (Medina et al., 2020). Notably, all studies to date have been performed using intact cells. Therefore, this previous work does not demonstrate that large molecule permeation occurs directly via the channel itself or exclude a secondary release mechanism. Moreover, recently\u00a0available Panx1 channel structures from both intact (inactive) and caspase-cleaved (activated) channels reveal a central pore with an extracellular constriction that has a diameter of\u00a0~9 \u00c5, which would appear to be too small to enable large molecule permeation (Deng et al., 2020; Jin et al., 2020; Michalski et al., 2020; Mou et al., 2020; Qu et al., 2020; Ruan et al., 2020). Thus, the ability of caspase-activated Panx1 to support metabolite release remains uncertain.\n\nIn this study, we developed a proteoliposome system for reconstitution of purified Panx1 and channel activation by caspase-mediated cleavage. By combining lipid bilayer electrophysiology, flow cytometry, total internal reflection fluorescence (TIRF) microscopy, and radioactive metabolite uptake assays, we characterized the large molecule permeation properties of cleavage-activated Panx1. We determined that the caspase-activated Panx1 channel forms a permeation pathway that favors anionic over cationic molecules and supports flux of ATP and other important signaling metabolites, such as glutamate and spermidine.\n\n## Results\n\nFor these studies, we used the Panx1 ortholog from Xenopus tropicalis (i.e., frog Panx1\u00a0and fPanx1) that has been examined in recent structural studies (Deng et al., 2020; Michalski et al., 2020).\n\n### Preparation of Panx1\u00a0proteoliposomes\n\nAn fPanx1-enhanced\u00a0green fluorescent protein\u00a0(eGFP) fusion construct, containing a thrombin cleavage site and a Strep-tag, was inserted into pFastBac for expression in Sf9 cells (Figure 1A) and purified by affinity chromatography and size-exclusion chromatography (SEC) (Figure 1\u2014figure supplement 1A,B). Purified fPanx1-eGFP was incorporated into proteoliposomes that appeared in fractions 1\u20133 of a co-floatation assay on a Nycodenz density gradient (Figure 1B,C; Hernandez et al., 2012). When analyzed by negative-stain electron microscopy, we observed a normal distribution of circular proteoliposomes in projection images, with the expected mean diameter of 97.3\u00a0\u00b1\u00a022 nm (Figure 1D, Figure 1\u2014figure supplement 1C). Panx1 cleavage by caspases is a prominent mechanism for channel activation. Therefore, we verified that purified fPanx1 incorporated into proteoliposomes was cleaved at the expected sites following overnight incubation with recombinant Caspase-3 (Casp3) (Figure 1E). Note that although the channel can be cleaved at multiple sites, cleavage at the C-terminal site is necessary and sufficient for channel activation (Chekeni et al., 2010; Chiu et al., 2017; Sandilos et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of recombinant fPanx1 construct incorporating a thrombin cleavage site, (eGFP), and a Strep-Tag. (B) Schematic of proteoliposomes containing fPanx1-eGFP fusion proteins, in either orientation. (C) fPanx1-containing fractions from Nycodenz co-floatation assay (fractions 1\u20133, 20 \u03bcL each) were run on a polyacrylamide gel and analyzed by silver stain. (D) Negative stain electron microscopy image of fPanx1-eGFP proteoliposomes extruded at 100 nm shown at 29,000\u00d7 magnification. (E) Western blot of fPanx1-eGFP from proteoliposomes after overnight incubation in the absence and presence of recombinant Caspase-3\u00a0(Casp3). The schematics illustrate the location of: caspase cleavage sites, N-terminally\u00a0directed \u03b1-Panx1 antibody, and corresponding cleavage products. Note that residual thrombin from activating recombinant caspase cleaves at its cognate C-terminal site. (F) Upper: Schematic of fPanx1-eGFP embedded in bilayer in recording chambers in NanIon Orbit mini; only channels in the orientation shown are activated by recombinant Casp3 added to the chamber. Positions of recording and ground electrodes are depicted. Lower: Recordings of purified fPanx1 channels in planar lipid bilayers at the indicated voltages following activation by recombinant Casp3; current levels are indicated that correspond to closed (C) state and apparent openings of one or two channels (O1, O2). (G) Unitary current voltage relationships for caspase-activated fPanx1 show two different conductance states (N\u00a0=\u00a03 bilayers with each conductance level). Numerical data for conductance measurements from lipid bilayer recordings are presented in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Size-exclusion chromatogram showing the purification of fPanx1-\u00a0(eGFP). (B) Simply blue-stained SDS-PAGE gel showing samples taken during the purification process: flow through after gravity flow chromatography (FT), low salt wash (W1), high salt wash (W2), desthiobiotin elution fractions (e1, e2, e3), blank, concentrated sample before size-exclusion\u00a0chromatography (SEC;\u00a0Pre), and concentrated sample after SEC\u00a0(Post). (C) Distribution of liposome diameters measured from negative stain EM images (97.3\u00a0\u00b1\u00a022 nm, 374 liposomes from 12 images). Diameters of liposomes are presented in Figure 1\u2014figure supplement 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Current\u2013voltage traces for fPanx1-eGFP expressed in HEK 293T with normal internal solution (A) and with recombinant Caspase-3\u00a0(Casp3) in the internal solution (B; 2 \u00b5g/mL). The current activated by Casp3 was inhibited by bath application of 50 \u03bcM CBX. (C) Normalized current\u2013voltage curves from whole-cell patch-clamp electrophysiology comparing hPANX1 and fPanx1-eGFP. (D) Schematic showing protocol for inside-out patch-clamp recordings of fPanx1-eGFP (upper) and channel activity evoked by Casp3 and inhibited by CBX. (E) Unitary current\u2013voltage relationship with estimated slope conductance from inside-out patches of fPanx1 (N\u00a0=\u00a03). Numerical data for current\u2013voltage traces of fPanx1-eGFP treated with or without Caspase-3 and comparison with hPANX1 are presented in Figure 1\u2014figure supplement 2\u2014source data 1. Numerical data for fPanx1 unitary conductance are presented in Figure 1\u2014figure supplement 2\u2014source data 2.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) \u2018Flickery\u2019 currents observed after addition of fPanx1 to lipid bilayers at +140 mV before addition of caspase. (B) Current recordings from DPhPC lipid bilayers with fPanx1, before (left) and after addition of Caspase-3\u00a0(Casp3; right) (N\u00a0=\u00a03). (C) Current recordings from DPhPC lipid bilayers without incorporation of fPanx1, before (left) and after addition of Casp3 (right) (N\u00a0=\u00a03).\n\n### Properties of caspase-activated fPanx1 in cells and lipid bilayers\n\nIn recordings from transfected HEK293T cells, we found that fPanx1 was basally silent and could be activated by intracellular dialysis with Casp3 to generate whole cell currents with an outwardly-rectifying current\u2013voltage profile (Figure 1\u2014figure supplement 2A,B) similar to that observed with cleavage-activated human Panx1 (hPANX1) channels (Figure 1\u2014figure supplement 2C; Chiu et al., 2017; Sandilos et al., 2012). These currents were blocked by the Panx1 inhibitor carbenoxolone (CBX). In addition, and also similar to hPANX1, single fPanx1 channels were silent in excised inside-out patches until activated by Casp3 (Chiu et al., 2017); the cleavage-activated channels were inhibited by CBX and displayed a unitary conductance of 91.4\u00a0\u00b1\u00a013.5 pS (N\u00a0=\u00a03, Figure 1\u2014figure supplement 2D,E). Thus, whole cell and single channel properties of fPanx1 are essentially identical to hPANX1 after caspase activation (Chiu et al., 2017).\n\nWe next used lipid bilayer recordings to characterize single channel properties of purified fPanx1 after caspase cleavage. The purified channels were added to DPhPC (1,2-diphytanoyl-sn-glycero-3-phosphocholine, 4ME16:0 PC) lipid bilayers and Casp3 was added to the bath to activate those channels with their C-terminus facing the cis side of the chamber (Figure 1F). Prior to application of caspase, large \u2018flickery\u2019 currents were occasionally observed at extreme potentials (e.g., +140 mV; Figure 1\u2014figure supplement 3A), and this often signified successful incorporation of fPanx1 into the bilayer. However, before caspase addition, fPanx1 channel activity was not observed at physiological potentials, even in a bath solution containing 200 mM K+ (Figure 1\u2014figure supplement 3B). After caspase addition, channel currents with discrete openings and closings became apparent across a wide range of physiological voltages (Figure 1F, Figure 1\u2014figure supplement 3B); this activity was not seen when caspase was applied to plain lipid bilayers (i.e., with no channel added; Figure 1\u2014figure supplement 3C), indicating that measured currents reflected cleavage activation of the bilayer-incorporated fPanx1 channels.\n\nThe properties of caspase-activated fPanx1 channels in bilayers were similar, but not identical, to those of heterologously\u00a0expressed recombinant fPanx1 channels recorded in mammalian cells (Figure 1\u2014figure supplement 2D,E). The individual bilayers usually included multiple active channels that presented with either of two distinct conductance levels: one set had a unitary conductance of\u00a0~100 pS, similar to that recorded in mammalian cells, and the second displayed a larger unitary conductance of\u00a0~189 pS (Figure 1G). For both, the open channel I-V relationships were approximately ohmic (Figure 1G), unlike the outwardly-rectifying single channel conductance observed for recombinant caspase-activated Panx1 in mammalian cells (Chiu et al., 2017). These differences may be due to species variants and/or the fact that the bilayer recordings were obtained in symmetrical solutions across a non-native membrane composed of non-physiological lipids (e.g., without cholesterol, phosphatidylinositol 4,5-bisphosphate (PIP2), etc.). Nevertheless, the purified fPanx1 channel is clearly activated by caspase.\n\n### Panx1 forms a dye permeable pore\n\nCaspase-mediated activation of Panx1 is associated with transmembrane flux of various metabolites and fluorescent dyes (Chekeni et al., 2010; Medina et al., 2020; Nielsen et al., 2020; Qu et al., 2011). Importantly, all previous experiments have been performed with Panx1 expressed in cells, either endogenously or heterologously. Therefore, a secondary mechanism of Panx1-dependent large molecule flux could not be excluded. To address this directly, we tested whether large molecule permeation can occur upon caspase cleavage-based activation of fPanx1 reconstituted in proteoliposomes (containing phosphatidylcholine, total brain lipid extract, cholesterol, and PIP2).\n\nIn a first set of studies, we examined whether caspase-cleaved fPanx1 is capable of forming a dye permeable pore. After overnight treatment with Casp3 (or buffer alone), liposomes were incubated with the anionic fluorescent dye, Sulforhodamine B (SR-B), and eluted through G25 spin columns for analysis on a fluorescence plate reader. Uptake of SR-B into liposomes was observed only when they contained fPanx1 and were treated with caspase. In addition, dye uptake was inhibited when caspase-treated fPanx1-containing proteoliposomes were treated with CBX before and during the dye incubation period (Figure 2\u2014figure supplement 1).\n\nTo quantify this dye uptake, and verify that the dye was indeed associated with proteoliposomes containing fPanx1-GFP, we analyzed SR-B uptake in Casp3-treated and control proteoliposomes by ImageStream flow cytometry (Figure 2A). As depicted in the representative images (Figure 2B), SR-B was only observed in proteoliposomes that were treated with Casp3. A high GFP signal was present in the proteoliposomes that were not exposed to caspase, verifying the presence of GFP-tagged fPanx1 in those proteoliposomes that did not accumulate SR-B. Normalized frequency histograms of the mean fluorescence intensity (MFI) for GFP and SR-B quantify results from this exemplar experiment. Compared to untreated proteoliposomes, a larger fraction of Casp3-treated proteoliposomes contained SR-B (83.6% vs. 20.4%; Figure 2C) and at\u00a0~10-fold higher MFI levels. We found a concomitant, albeit modest, leftward shift in the GFP signal after caspase treatment, reflecting cleavage of the outward-facing fPanx1 C-tail (exposed to caspase) and the associated removal of the C-terminal GFP tag (Figure 2C); the retained GFP signal in the caspase-treated proteoliposomes may reflect uncut channels or channels with their GFP-tagged C-tails oriented into the proteoliposome. In multiple independent experiments and proteoliposome preparations, Casp3 treatment of fPanx1 proteoliposomes resulted in a decrease in GFP signal and a concomitant increase in SR-B signal (Figure 2D, Figure 2\u2014figure supplement 2), indicating that caspase-cleaved fPanx1 channels generate a pore that is large enough for permeation of the SR-B dye.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig2-v2.jpg)\n\n**Figure 2.:** (A) Proteoliposomes containing fPanx1were incubated overnight with recombinant Caspase-3\u00a0(Casp3) and for 3 hr with sulforhodamine B (SR-B) dye prior to analysis by ImageStream flow cytometry. (B) Representative images of liposomes treated with vehicle (left) or Casp3 (right) viewed by brightfield, or on channels for\u00a0(GFP) and SR-B fluorescence. (C) Frequency distributions of fluorescence intensity show that proteoliposomes treated with recombinant Casp3 show a reduction in mean GFP intensity (left) and an increase in SR-B intensity (right), relative to vehicle treated proteoliposomes. (D) Mean fluorescence intensity (MFI) of GFP fluorescence (left) (p=0.0096) and SR-B fluorescence (right) (p=0.0104) before and after caspase treatment are shown with individual experiments depicted according to the color shown (N\u00a0=\u00a05). A paired t-test was performed. Numerical data for changes in GFP and SR-B MFI are presented in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic depicting experimental design for treating fPanx1-containing proteoliposomes with recombinant Caspase-3\u00a0(Casp3) overnight at 4\u00b0C before incubation with SR-B (B, 1 mM) for 3 hr and loading on a G-25 spin column. (B) SR-B fluorescence (mean \u00b1 SEM) in eluted proteoliposomes under the indicated conditions (nine assays:\u00a0>3 proteoliposome preparations). ANOVA (F4,34 = 5.95, p=0.001) and Tukey\u2019s multiple comparisons test (p-values from comparisons are shown). Numerical data for bulk dye uptake are presented in\u00a0Figure 2\u2014figure supplement 1\u2014source data 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Changes in GFP and SR-B fluorescence in individual experiments are shown (N\u00a0=\u00a05). (B\u2013F) Flow cytometry plots are shown for individual experiments from (A) (color-coded accordingly). Gray dots indicate proteoliposomes not treated with Caspase-3\u00a0(Casp3) and colored dots indicate proteoliposomes after treatment with Casp3. Only positive SR-B values are plotted on the logarithmic y-axis. Numerical data for change in GFP and SR-B MFI are presented in Figure 2\u2014figure supplement 2\u2014source data 1. Numerical data for flow cytometry dot-plots for individual experiments are presented in Figure 2\u2014figure supplement 2\u2014source data 2.\n\n### Panx1 is an anion-preferring molecular sieve\n\nWe exploited the dye permeation properties of fPanx1 channels to develop a single-particle assay, in which TIRF microscopy was used to characterize the kinetics of dye flux and the charge/size determinants of fPanx1 permeants in proteoliposomes (Figure 3A; Farsi et al., 2016).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of experimental design to assay dye release kinetics from caspase-treated fPanx1-containing proteoliposomes by total internal reflection fluorescence\u00a0(TIRF) microscopy.\u00a0(B) Example fluorescence intensity traces for sulforhodamine B (SR-B, anionic dye, 559 Da) and\u00a0(GFP) (caspase cleavage) over time in proteoliposomes after caspase treatment. Sample images of the proteoliposome fluorescence at the different time points are also provided. (C) Steady-state change in normalized fluorescence intensity for SR-B (left) and GFP (right) from fPanx1-GFP-containing proteoliposomes treated with either Caspase-3\u00a0(Casp3) or vehicle, or from empty liposomes (no fPanx1-GFP) treated with Casp3. Data from fPanx1-containing proteoliposomes were grouped according to whether they showed a reduction in GFP fluorescence (cleaved) or no change in GFP fluorescence (<10%, uncleaved) (N\u00a0=\u00a05 (+)Panx 1 (+)Casp3, N\u00a0=\u00a05 (+)Panx1 (\u2212)Casp3, N\u00a0=\u00a04 (\u2212)Panx1 (+)Casp3). (D,\u00a0E) Fluorescence intensity traces (D) and steady-state change in normalized fluorescence intensity (E) for Rhodamine B (RhB, cationic dye, 479 Da) and GFP, as described for (B,\u00a0C) (N\u00a0=\u00a05 (+)Panx1 (+)Casp3, N\u00a0=\u00a03 (+)Panx1 (\u2212)Casp3, N\u00a0=\u00a04 (\u2212)Panx1 (+)Casp3). (F) Efflux rates for SR-B and RhB were determined from fits of mono-exponential to the fluorescence intensity decay curves for individual caspase-treated proteoliposomes and plotted relative to the change in GFP fluorescence (i.e., fPanx1 cleavage); overlaid regression lines are depicted (with 95% confidence interval; slopes were significantly different, p=0.0014). Inset shows dye efflux rates for individual liposomes. Individual liposome dye efflux rates were analyzed by a Mann\u2013Whitney test (p<0.0001) (G) Steady-state change in normalized fluorescence intensity for Alexa594 (anionic, 880 Da), Alexa555 (anionic, 980 Da), ATTO550 (cationic, 1363 Da), and Dextran 3000 (anionic, 3000 Da) from fPanx-GFP-containing proteoliposomes treated with Casp3 (Alexa 594 N\u00a0=\u00a06, Alexa 555 N\u00a0=\u00a05, ATTO 550 N\u00a0=\u00a03, Dextran 3000 N\u00a0=\u00a05). (H) Efflux rates for the indicated dyes represented by associated regression lines (with 95% confidence interval), with pairwise comparison of slopes: SR-B vs. RhB (p=0.0014), SR-B vs. 594 (p=0.16), SR-B vs. 555 (p=0.0074), 594 vs. 555 (p=0.15), 594 vs. RhB (p=0.16), 555 vs. RhB (p=0.53). Inset shows dye efflux rates for individual liposomes (ANOVA: F3,267 = 36.18, p<0.0001; with Tukey\u2019s multiple comparisons test: ****p<0.0001; ***p=0.0002). (I) Relative change (upper) and rate (lower) of GFP fluorescence in cleaved fPanx1-containing proteoliposomes filled with the indicated dyes. Numerical data for all dye release data and GFP cleavage are provided in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Chemical structures, net charge, and molecular weight are shown for (A) Rhodamine B, (B) Sulforhodamine-B, (C) Alexa 594 Carboxylic Acid, (D) Alexa 555 Carboxylic Acid, (E) ATTO 550 Phallodin, and (F) Tetramethylrhodamine Dextran 3000. Note\u00a0that the precise site of the conjugate for proprietary dyes was not provided\u00a0and so the figures depict approximate structures, and the size of the dextran is approximate. The chemical structure of ATTO 550 Phallodin was provided by ATTO-TEC.\n\nFor these experiments, liposomes were pre-filled with SR-B and visualized by TIRF microscopy before and after the addition of Casp3 to the bath solution. For each liposome, we recorded changes in the fluorescence intensity of both GFP, representing fPanx1 C-tail channel cleavage, and SR-B, representing dye release from the proteoliposome (Figure 3B). In a prominent subset of fPanx1-containing proteoliposomes, both GFP and SR-B fluorescence decreased following Casp3 application (Figure 3B,C, purple). For other fPanx1-containing proteoliposomes, the GFP fluorescence was not reduced by Casp3, suggesting that the GFP-tagged fPanx1 C-tail was oriented into the proteoliposome and remained uncleaved; in those cases, the SR-B fluorescence was also unchanged (Figure 3C, green). Likewise, SR-B fluorescence was unaffected following Casp3 application in particles that were devoid of GFP fluorescence, likely representing liposomes that did not incorporate any fPanx1-GFP (Figure 3C, red). In other controls, SR-B fluorescence was retained in liposomes, either with or without GFP fluorescence (i.e., with or without fPanx1) when they were not exposed to Casp3; and SR-B fluorescence was also unaffected by Casp3 in liposomes that did not contain fPanx1 (i.e., empty liposomes) (Figure 3C). Thus, this TIRF-based assay verifies that caspase cleavage activation of fPanx1 elicits dye efflux from fPanx1-containing proteoliposomes.\n\nThe TIRF assay was also used to examine the kinetics of dye release from proteoliposomes, thereby enabling flux measurements between fluorescent dyes of different charge and size. To examine charge effects, we assessed the release of a cationic dye, Rhodamine B (RhB), which is slightly smaller than the anionic SR-B (480 Da vs. 559 Da; Figure 3\u2014figure supplement 1). Like SR-B, RhB was released from proteoliposomes, and this release was also dependent on caspase-mediated cleavage of fPanx1 (Figure 3D,E). The rate of dye efflux, obtained from fits to mono-exponential decay curves of the fluorescent signal for each proteoliposome, was positively correlated with the fraction of fPanx1 cleavage (i.e., reduction in GFP fluorescence) for both SR-B and RhB dyes (Figure 3F). Notably, despite the smaller size of RhB, the efflux rate was significantly slower than for SR-B due to the cationic charge (Figure 3F).\n\nTo examine the effect of size on efflux rates, we tested two additional anionic fluorescent dyes of increasing size, Alexa 594 and Alexa 555 (880 Da and 980 Da, respectively; Figure 3G, Figure 3\u2014figure supplement 1). These larger dyes permeated caspase-cleaved fPanx1 at rates substantially slower than the smaller SR-B (Figure 3H). Of note, however, despite being\u00a0approximately\u00a0two times larger, these anionic dyes transited the channel at rates comparable to the cationic dye RhB (Figure 3H). Finally, we also examined two larger dyes (ATTO 550 (+), 1363 Da; and Dextran 3000 (\u2212), 3000 Da; Figure 3\u2014figure supplement 1), and neither of those were able to permeate caspase-activated fPanx1 (Figure 3G). The permeation properties of these dyes were not related to the relative amounts of GFP cleavage, which were comparable in all cases (Figure 3I). Together, these data indicate that the channel favors anionic over cationic permeants and reveal that the pore size is sufficient to accommodate molecules up to 980 Da.\n\n### Panx1 is a conduit for anionic and cationic metabolites\n\nPanx1 is commonly characterized as an ATP-release channel (Chekeni et al., 2010; Chiu et al., 2017; Chiu et al., 2018; Dahl, 2015; Medina et al., 2020; Taruno, 2018) and recent work provides compelling evidence that caspase cleavage-based activation of Panx1 can also lead to release of multiple additional metabolites (e.g., spermidine) that mediate important intercellular signaling processes (Medina et al., 2020). To test whether ATP and other metabolites permeate directly through caspase-activated fPanx1 channels, we developed a filtration-based assay for uptake of radiolabeled metabolites in proteoliposomes (Figure 4A). We performed this assay with select metabolites that have been proposed to permeate cleavage-activated fPanx1 (Medina et al., 2020), including anionic (\u03b1-[32P]ATP and [3H]-glutamate) and cationic ([3H]-spermidine) metabolites (Figure 4\u2014figure supplement 1). Indeed, we found that uptake of \u03b1-[32P]ATP, [3H]-glutamate, and [3H]-spermidine into proteoliposomes required caspase-activated fPanx1; uptake was not observed when liposomes did not contain fPanx1 or when the channel was not activated by Casp3 (Figure 4B\u2013D). We also tested whether ATP and spermidine could flux via caspase-activated Panx1 when included together in the same assay, rather than independently. Under these conditions, we again found uptake of both ATP and spermidine into caspase-cleaved Panx1-containing proteoliposomes, albeit at slightly lower levels (Figure 4\u2014figure supplement 2). These data indicate that cleavage-activated fPanx1 itself is sufficient to form a membrane conduit capable of conducting ATP and other important signaling metabolites.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic depicting experimental design for treating fPanx1-containing proteoliposomes with recombinant Caspase-3\u00a0(Casp3) overnight at 4\u00b0C before incubation with 4 \u03bcCi each of \u03b1[32P]-ATP (B, 1 mM;~1:150000, hot:cold), [3H]-Glutamate (C, 0.8 mM;~1:2000), and [3H]-Spermidine (D, 8 \u00b5M;~1:24) for 3 hr and filtration using a Whatman GF/B filter. (B\u2013D) Metabolites taken up by proteoliposomes under the indicated conditions for \u03b1[32P]-ATP (N\u00a0=\u00a08), [3H]-Glutamate (N\u00a0=\u00a06), and [3H]-Spermidine (N\u00a0=\u00a05); molar quantities should not be compared between compounds due to different assay conditions. A box plot with the box depicting the quartiles/median, and lines drawn to points outside 25th/75th percentiles are shown. By repeated-measures one-way ANOVA (ATP: F3,28 = 14.18, p<0.0001; Glutamate: F3,20 = 18.29, p<0.0001; Spermidine: F3,16 = 40.50, p<0.0001), with p-values provided from Tukey\u2019s multiple comparisons tests. Numerical data for individual metabolite flux are shown in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Chemical structures, net charge, and molecular weight are shown for (A) adenosine triphosphate, (B) glutamate, and (C) spermidine.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64787/elife-64787-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Schematic depicting experimental design for treating Xenopus\u00a0Pannexin 1\u00a0(fPanx1)-containing proteoliposomes with recombinant Caspase-3\u00a0(Casp3) overnight at 4\u00b0C before concurrent incubation with 4 \u03bcCi each of \u03b1[32P]-ATP (B, 1 mM;\u00a0~1:150,000, hot:cold) and [3H]-Spermidine (C, 8 \u00b5M;\u00a0~1:24) for 3 hr and filtration using a Whatman GF/B filter. Orange boxes depict 95% confidence intervals of Casp3-treated fPanx1 proteoliposome metabolite uptake of compounds incubated individually (from Figure 4B,D). By repeated-measures one-way ANOVA (ATP: F3,19 = 15.14, p=0.0002; spermidine: F3,16 = 12.17, p<0.0006), with p-values provided from Tukey\u2019s multiple comparisons tests. Numerical data for ATP and spermidine concurrent flux are presented in Figure 4\u2014figure supplement 2\u2014source data 1.\n\n## Discussion\n\nPanx1 membrane channels are best known for their purported ability to support transmembrane flux of large molecules such as fluorescent dyes and, of more physiological relevance, metabolites and intercellular signaling molecules (e.g., most notably, ATP) (Chekeni et al., 2010; Chiu et al., 2017; Yang et al., 2015). The widespread acceptance of this idea is based on a wealth of data obtained from more intact systems, including those that implicated caspase-activated Panx1 as the likely transmembrane flux pathway for large molecule permeation (Chekeni et al., 2010; Chiu et al., 2017; Medina et al., 2020; Nielsen et al., 2020; Poon et al., 2014). In particular, the dye/metabolite permeation associated with apoptosis requires Panx1 expression, caspase activation, and an intact C-terminal caspase cleavage site; it is blocked by Panx1 channel inhibitors, indicating that ongoing channel activity is required (Chekeni et al., 2010; Chiu et al., 2017; Poon et al., 2014; Qu et al., 2011). This dye and metabolite permeation occurs not only during cell death, but is also observed when the channels are activated by C-terminal truncation independent of apoptosis (Chiu et al., 2017; Sandilos et al., 2012). In addition, ATP release and dye uptake closely parallel the quantized channel activation associated with individual subunit C-tail removal, further implicating the Panx1 channel as the permeation pathway for large molecules (Chiu et al., 2017). Despite this substantial body of evidence, this previous work was all based on experiments in intact cells, where secondary release mechanisms could not be excluded, and it has been suggested based on other channel properties (i.e., preferential anion selectivity\u00a0and single channel conductance) that caspase-cleaved Panx1 is not compatible with large molecule permeation (Wang and Dahl, 2018). The present data demonstrate dye and metabolite permeation directly through purified Panx1 channels reconstituted in proteoliposomes to convincingly dispel this conflicting idea and clearly establish that dye/metabolite flux can indeed occur directly through caspase-activated Panx1 channels.\n\n### Channel properties of Panx1 channels in bilayers and cells\n\nSimilar to electrophysiological measurements of fPanx1 and hPANX1 recorded in inside-out patches from mammalian cells, we found that fPanx1 was silent in planar lipid bilayers until activated by caspase cleavage. In native cell membranes, caspase-cleaved hPANX1 and fPanx1 generate outwardly-rectifying currents with a single channel conductance of\u00a0~90 pS at depolarized potentials (Chiu et al., 2017). However, different conductance levels for channels attributed to Panx1 have been observed in various cell systems after different forms of activation, reportedly up to\u00a0~500 pS (Bao et al., 2004; reviewed in Chiu et al., 2018; Wang et al., 2014). Here, we observed two main, non-rectifying conductance levels from purified fPanx1 channels in bilayers after caspase activation (~100 pS;\u00a0~190 pS). In lipid bilayer recordings of purified hPANX1 reported during preparation of this work, Mou et al. detected a\u00a0~\u00a030 pS channel in E. coli polar lipid extract, although these recordings were in the absence of any specific form of activation and were not accompanied by open-closed transitions; the C-tail-cleaved channels, by contrast, yielded a number of extremely large open channel conductance states (i.e., 750 pS, 1.3 nS, and 1.8 nS; at +100 mV) (Mou et al., 2020). There have been other reports of constitutive Panx1 channel activity (i.e., in the absence of stimulation), and although these channels display a unitary conductance similar to\u00a0that of channels stimulated by Casp3 cleavage (~70\u201380 pS), they do not appear to support ATP release (Ma et al., 2012; Romanov et al., 2012). It was recently proposed that a second permeation pathway, visible as a side tunnel in the structure of hPANX1, could support atomic ion flux through unstimulated and C-tail-intact channels in the absence of large molecule permeation (Ruan et al., 2020); this intriguing idea will need to be explored further (e.g., with single channel recordings of hPANX1 with intact C-termini). At this point, the mechanisms controlling basal and stimulated channel activity, and the factors that determine the vast range of reported Panx1 channel conductance levels, remain to be determined and may be related to any number of cell specific factors (e.g., channel-interacting proteins, different lipid composition in native cell membranes and bilayers).\n\n### A preference for anion versus cation selectivity\n\nIn ion substitution experiments, obvious shifts in reversal potential (Erev) were observed when Cl\u2212\u00a0was exchanged with other negatively charged counterions (Ma et al., 2012; Michalski et al., 2020; Romanov et al., 2012; Ruan et al., 2020; Wang and Dahl, 2018). These shifts in Erev were strongly affected by mutations in R75, a positively\u00a0charged residue next to W74, the narrowest pore constriction site identified in multiple recent structural reports (Deng et al., 2020; Michalski et al., 2020; Ruan et al., 2020). These results provide strong evidence for anion permeation through Panx1. By contrast, negligible changes in Erev accompany substitution with different positively\u00a0charged counterions (Michalski et al., 2020; Ruan et al., 2020). On this basis, it has been inferred that the channel is exclusively anion-selective and impermeable to cations (Ma et al., 2012). Our data likewise reveal permeation of anionic dyes and signaling molecules (ATP, glutamate), with a clear preference for anionic over cationic dyes. However, we also detected flux through the channel of a positively\u00a0charged dye (RhB) and metabolite (spermidine), indicating that cationic molecules can also traverse the channel. In addition, we observed simultaneous Panx1-mediated flux of both ATP and spermidine when assessed in combination. This supports the previous observation from apoptotic T cells that multiple important signaling metabolites can be released via caspase-activated channels in a complex milieu containing numerous permeants (Medina et al., 2020).\n\n### Permeant size considerations and pore architecture\n\nOur data reveal a negative correlation between dye size and permeation rate \u2013 larger dyes were associated with slower permeation. Previous studies have predicted the maximum size of a Panx1 permeant to be less than 1270 Da (7-AAD) (Chiu et al., 2017; Poon et al., 2014) or 1500 Da (PEG 1500) (Wang et al., 2007). We found that Alexa555 (980 Da) could transit via the cleavage-activated Panx1 channel while ATTO550 (1363 Da) was unable to permeate. This confirms that the pore of the activated channel must be able to accommodate a molecule at least up to\u00a0~1 kDa.\n\nA major breakthrough in the field was achieved with the recent determination of several high-resolution cryoEM structures of frog and human Panx1 by multiple groups (Deng et al., 2020; Jin et al., 2020; Michalski et al., 2020; Mou et al., 2020). The architecture and contours of the transmembrane pore were remarkably similar for all constructs analyzed, despite those including full length (presumably inactive) and C-terminal cleaved/truncated (presumably activated) (Deng et al., 2020; Michalski et al., 2020; Ruan et al., 2020). The narrowest pore constriction was formed by a ring of seven W74 residues on the extracellular surface of the channel, with a diameter of\u00a0~8\u201310 \u00c5. This constriction appears to be too small to accommodate large dyes or even hydrated ATP, although this may be influenced by the shape and flexibility of the permeant molecule and/or the pore itself. Moreover, upon activation by cleavage (or truncation) at the C-terminal caspase site, Panx1 transitions between open and closed states (Chiu et al., 2017). Thus, the available structures may have captured the channel in a state that is \u2018open\u2019 for atomic ions but remains \u2018closed\u2019 for large molecules. The possibility of multiple open conformations or separate permeation pathways for ions and large molecules in both Panx1 channels and in CALHM1 channels have been proposed (Gaete et al., 2020; Nielsen et al., 2020; Ruan et al., 2020; Wang et al., 2014). If those distinct conformations exist, the dye/metabolite flux we present indicates that Panx1 cleavage by caspase is permissive for conformations that allow large molecule permeation, perhaps by removing a physical block to pore access while allowing open-closed transitions (Sandilos et al., 2012).\n\n### Summary\n\nExamination of dye and metabolite flux through purified Panx1 channels reconstituted in proteoliposomes demonstrates directly that molecules up to\u00a0~1 kDa are capable of permeating caspase cleavage-activated fPanx1. Moreover, anionic and cationic metabolites and dyes can traverse caspase-activated Panx1 channels, albeit with a marked preference for anionic molecules. These data validate caspase-activated Panx1 as a direct conduit for release of ATP and other signaling molecules that facilitate immunologically\u00a0silent cell clearance in the context of caspase-dependent cell death (apoptosis, pyroptosis) (Chekeni et al., 2010; Medina et al., 2020; Qu et al., 2011; Yang et al., 2015).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Xenopus tropicalis)</td>\n      <td>fPanx1</td>\n      <td>GenBank</td>\n      <td>NM_001130256.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>hPANX1</td>\n      <td>GenBank</td>\n      <td>NM_015368.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>Sf9</td>\n      <td>Expression Systems, Davis, CA</td>\n      <td>Parent cell line: IPLB-Sf-21-AE, RRID:CVCL_0518</td>\n      <td>Clonal isolate derived from the parental cell line</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>CRL-3216, RRID:CVCL_0063</td>\n      <td>Negative for mycoplasma contamination at ATCC (obtained from Kodi Ravichandran lab)</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Homo sapiens)</td>\n      <td>Caspase-3</td>\n      <td>Kang et al.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human/mouse/rat Pannexin-1 (rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>D9M1C, RRID:AB_28000167</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Brain PC</td>\n      <td>Avanti Polar Lipids</td>\n      <td>840053</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Brain Total Lipid Extract</td>\n      <td>Avanti Polar Lipids</td>\n      <td>131101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Brain PI(4,5)P2</td>\n      <td>Avanti Polar Lipids</td>\n      <td>840046</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DPhPC</td>\n      <td>Avanti Polar Lipids</td>\n      <td>860337</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sulforhodamine-B</td>\n      <td>Sigma Aldrich</td>\n      <td>S1402</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rhodamine B</td>\n      <td>Sigma Aldrich</td>\n      <td>83689</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dextran, Tetramethylrhodamine,3000 MW,</td>\n      <td>ThermoFisher Scientific</td>\n      <td>D3307</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa 594 Carboxylic Acid, tris salt</td>\n      <td>ThermoFisher Scientific</td>\n      <td>A33082</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa 555 Carboxylic Acid, tris salt</td>\n      <td>ThermoFisher Scientific</td>\n      <td>A33080</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ATTO 550 Phallodin</td>\n      <td>ATTO-TEC</td>\n      <td>AD 550\u20138</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>\u03b1-32P-ATP</td>\n      <td>PerkinElmer</td>\n      <td>BLU003H250UC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>3H-Glutamate</td>\n      <td>PerkinElmer</td>\n      <td>NET490250UC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>3H-Spermidine</td>\n      <td>PerkinElmer</td>\n      <td>NET522001MC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LabView</td>\n      <td>Kiessling et al.</td>\n      <td></td>\n      <td>https://github.com/VolkerKirchheim/VK_TIRFsinglevesicleStep1 ;\u00a0Narahari, 2021;\u00a0(copy archived at 'swh:1:rev:79a55c09884d1fd3f4965ef1d1bf8f102711d828')</td>\n    </tr>\n  </tbody>\n</table>\n\n### Panx1\u00a0expression\n\nA cDNA encoding Xenopus tropicalis Panx1 (fPanx1; Genscript-OXa25378, Accession NM_001130256.1) was inserted upstream of a thrombin protease cleavable linker (LVPRGS), enhanced green fluorescent protein (eGFP), and a Strep II epitope (WSHPQFEK) in a modified pFastBacI vector (Invitrogen, Carlsbad, CA) by In-Fusion cloning (Takara Bio USA, Inc, Mountain View, CA). Briefly, a PCR amplicon containing fPANX1 with a 5\u2019 NotI and XhoI site at its 3\u2019 end was prepared using Pfu DNA polymerase and inserted into a modified pFastBacI vector that contained a unique XhoI site upstream of the thrombin proteolytic site. The Strep II tag was fused in frame to the C-terminus of eGFP. The construct was verified by DNA sequencing.\n\nThe Bac-to-Bac expression system (Invitrogen, Carlsbad, CA) was used to generate baculovirus for expression in Spodoptera frugiperda (Sf9) insect cells. Recombinant fPanx1-eGFP baculovirus was used to infect Sf9 insect cells grown at 27\u00b0C to a density of 2\u00a0\u00d7\u00a0106 mL\u22121, at a multiplicity of infection (MOI) of\u00a0~3. Cells were collected 48 hr after infection by low-speed centrifugation at 2000 \u00d7 g and stored at \u221280\u00b0C.\n\n### Panx1\u00a0protein purification\n\nTo isolate membrane-localized fPanx1-eGFP, Sf9 cell pellets were resuspended in low salt buffer (50 mM HEPES, pH 7.5, 50 mM NaCl, 0.5 mM EDTA, with protease inhibitor cocktails (Roche, Basel Switzerland) and lysed by Dounce homogenization (~30 strokes). Nucleic acids were digested by adding 2.5 mM MgCl2 and\u00a0~12.5 units of Benzonase (EMD Millipore, Burlington MA) per 1 mL lysate, with gentle stirring at 4\u00b0C for 10 min. Membranes were collected by ultracentrifugation at 100,000 \u00d7 g and washed with stepwise Dounce homogenization again in low salt buffer and twice in high salt buffer (50 mM HEPES, pH 7.5, 1 M NaCl, 0.5 mM EDTA, with protease inhibitor cocktails). Pellets were isolated by ultracentrifugation at 100,000 \u00d7 g between steps. Finally, membranes were resuspended (5 mL/g) in membrane freezing buffer (10 mM HEPES, pH 7.5, 20 mM KCl, 10 mM MgCl2, and 40% glycerol), flash frozen, and stored at \u221280\u00b0C.\n\nThe frozen membrane pellet was thawed and solubilized at 4\u00b0C for 3 hr with 1% (w/v) n-dodecyl-\u03b2-D-maltopyranoside (DDM; Anatrace, Maumee, OH) and 0.2% (w/v) cholesteryl hemisuccinate (CHS; Anatrace, Maumee, OH) in\u00a0~50 mL of buffer containing 50 mM HEPES, pH 7.5, 300 mM NaCl, 3 mM CaCl2, 2.5% glycerol and protease inhibitor cocktails. Insoluble material was removed by ultracentrifugation at 100,000 \u00d7 g, and the supernatant was incubated with\u00a0~1.0 mL of Strep-Tactin Superflow Plus resin (QIAGEN, Hilden, Germany) overnight at 4\u00b0C. The resin was packed in an Econo-column (1.0 \u00d7 10 cm; Bio-Rad, Hercules, CA) and washed with low salt buffer (50 mM HEPES, pH 7.5, 300 mM NaCl, 3 mM CaCl2, and 0.2% DDM with 0.04% CHS) for 20 column volumes/wash, high salt buffer (50 mM HEPES, pH 7.5, 1 M NaCl, 3 mM CaCl2, and 0.05% DDM with 0.01% CHS), for 20 column volumes/wash, and eluted with 2.5 mM Desthiobiotin (Sigma-Aldrich, St. Louis, MO) in buffer (50 mM HEPES, pH 7.5, 500 mM NaCl, 3 mM CaCl2, and 0.02% DDM with 0.004% CHS). The eluted protein was concentrated to\u00a0~500 \u03bcL using an 100 kDa Amicon ultracel-100 centrifugal filter unit (EMD Millipore, Burlington MA). Preparative SEC was performed on a Superose 6 Increase 10/300 GL column (GE Healthcare, Chicago, IL) interfaced to an AKTA Purifier 10 FPLC system (GE Healthcare, Chicago, IL), equilibrated with buffer (50 mM HEPES, pH 7.5, 500 mM NaCl, 3 mM CaCl2, and 0.02% DDM with 0.004% CHS). Fractions containing fPanx1-eGFP were collected and the protein was concentrated to\u00a0~2\u20133 mg mL\u22121 using a 100 kDa Amicon ultracel-100 centrifugal filter unit and stored at 4\u00b0C for proteoliposome reconstitution, or snap frozen and stored at \u221280\u00b0C for lipid bilayer recordings.\n\n### Liposome preparation and reconstitution of Panx1\n\nLiposomes were prepared from lipids of the following composition: 70% brain phosphatidylcholine (PC), 15% total brain lipid extract, 14% cholesterol, 1% phosphatidylinositol 4,5-bisphosphate (PIP2; all from Avanti Polar Lipids, Alabaster, AL), with 40 \u03bcL of methanol, dried under nitrogen flow with gentle agitation and then in a vacuum desiccator overnight. Dried lipids were resuspended in liposome buffer (20 mM Tris, 140 mM NaCl, pH 7.4), vortexed vigorously, incubated at room temperature for 45 min, and the lipid mixture was extruded at least 21 times through a LiposoFast-Basic extruder (Avestin Inc, Ottawa, Canada) with a 100 nm polycarbonate membrane. After extrusion, sodium cholate (3.9 mM final concentration) was added, and the solution was gently agitated for 3 hr. Purified detergent-solubilized fPanx1-eGFP (21.6 \u00b5M) was added in a 1:1000 protein:lipid molar ratio and gently agitated for 1 hr at room temperature. Following protein incubation, the proteoliposome-containing solution was transferred to 10 kDa dialysis cassettes (Slide-A-Lyzer; Thermo Scientific, Waltham, MA) and immersed in liposome buffer containing BioBeads (Bio-Rad, Hercules, CA) for detergent removal (5 L at 4\u00b0C, with gentle stirring), first for 5 hr and then overnight at 4\u00b0C with fresh BioBead-containing liposome buffer. Proteoliposomes were collected by 100,000 \u00d7 g spin for 60 min at 4\u00b0C and resuspended to 1 mL with liposome buffer and utilized immediately or snap frozen in liposome buffer containing 200 mM sucrose. After snap freezing in liquid N2, liposomes were stored at \u221280\u00b0C until use. For dye uptake experiments, proteoliposomes were thawed at 4\u00b0C, diluted 10\u00d7 in liposome buffer, spun at 100,000 \u00d7 g, and resuspended to desired volume.\n\nLiposomes for radiolabeled metabolite uptake were prepared as previously described (Johnson and Lee, 2015). Briefly, the dried lipid mixture described above was resuspended in liposome buffer (20 mM Tris, 140 mM NaCl, pH 7.4), incubated at room temperature for 45 min, vortexed vigorously, and sonicated in cycles of 1 min in a bath sonicator followed by 1 min on ice until the solution was clear. Liposomes were incubated with 3.9 mM Na Cholate (Sigma-Aldrich, St. Louis, MO) and rotated for 1 hr under nitrogen. After addition of fPanx1-eGFP (1:1000 protein:lipid molar ratio), the mixture was rotated for 2\u20133 hr at room temperature under nitrogen. The proteoliposome-containing solution was transferred to 10 kDa dialysis cassettes (Slide-A-Lyzer; Thermo Scientific, Waltham, MA) and immersed in liposome buffer containing BioBeads for detergent removal (5 L at 4\u00b0C, with gentle stirring), first for 5 hr and then overnight at 4\u00b0C with fresh BioBead-containing liposome buffer. Proteoliposomes were snap frozen in liquid N2 and stored at \u221280\u00b0C until use.\n\n### Nycodenz cofloatation assay\n\nNycodenz cofloatation was performed as previously described (Hernandez et al., 2012). Briefly, 50 \u03bcL proteoliposomes were mixed with 50 \u03bcL 80% w/v Nycodenz in liposome buffer. A 50 \u03bcL layer of 30% w/v Nycodez solution was applied on top of the liposome-Nycodenz mixture, and an additional 50 \u03bcL of liposome buffer layered on top. The density gradient was spun at 197,000 g for 90 min at 4\u00b0C in a TL-100 ultracentrifuge (TLS55 Rotor; Beckman-Coulter, Brea, CA). Upon completion, 20 \u03bcL fractions were collected and analyzed via SDS PAGE and silver staining.\n\n### Gel electrophoresis and silver staining\n\nSDS PAGE gels (BioRad AnyKD Mini-PROTEAN TGX; BioRad, Hercules, CA) were run at 120 mV for 45 min and gels were fixed in 50 mL of 40% methanol solution containing 0.0185% formaldehyde, washed in DI water (2 \u00d7 5 min), immersed in 0.02% sodium thiosulfate solution (1 min), and washed again with in DI water (2 \u00d7 20 s). The gel was incubated in 50 mL of 0.1% silver nitrate solution for 10 min. The gel was quickly washed with 10 mL of DI water and then washed with 10 mL of thiosulfate developing solution (0.0185% formaldehyde, 28.3 mM sodium carbonate, and 0.0004% sodium thiosulfate). The gel was incubated in 50 mL of thiosulfate developing solution until bands were visualized. A volume of 2.5 mL of 2.3 M citric acid was added for 10 min to stop developing. The gel was washed with water and imaged.\n\n### Negative stain electron microscopy\n\nFor negative staining, 3.5 \u03bcL of proteoliposomes were applied to a glow-discharged, carbon-coated, 300-mesh, copper grid (Electron Microscopy Sciences, Hatfield, PA) and stained with 2% uranyl acetate (Adair and Yeager, 2007). Low-dose EM was performed at the Molecular Electron Microscopy Core facility at UVA using a Tecnai F20 electron microscope (FEI, Hillsboro, OR), operating at 120 kV. Images were recorded at a nominal magnification of 29,000\u00d7 and a defocus of 3 \u03bcm using a 4\u00a0\u00d7\u00a04 K charge-coupled device camera (UltraScan 4000; Gatan, Pleasanton, CA), corresponding to a pixel size of 3.7 \u00c5 on the specimen. Proteoliposome diameters were obtained using ImageJ (NIH, Bethesda, MD) from the average of two measurements per proteoliposome.\n\n### Casp3 purification\n\nRecombinant Casp3 precursors were prepared as previously described (Kang et al., 2008). In brief, BL21(DE3) cells were transformed with the pro-Casp3 \u039428/175TS deletion in pET-22b (+) vector and treated with 1 mM IPTG (18\u00b0C, 18 hr). Cells were lysed using a microfluidizer, pro-Casp3 precursors were purified, and then activated by thrombin as previously described\u00a0(Kang et al., 2008).\n\n### Western blotting\n\nProteoliposomes (25 \u03bcL, 1:1000 protein:lipid ratio) were incubated with purified Casp3 (6 \u03bcL, kcat =\u00a0~1.9\u00a0\u00b1\u00a00.1) and analyzed via SDS PAGE electrophoresis (BioRad AnyKD Mini-PROTEAN TGX; BioRad, Hercules, CA). Samples were transferred to 0.45 \u03bcM nitrocellulose membranes (Perkin Elmer), which were blocked for 1 hr at room temperature in 5% non-fat milk, 10 mM Tris, 150 mM NaCl, 0.1% Tween 20, pH 7.4 and then incubated overnight at 4\u00b0C with fPanx1 antibody (Rabbit mAb #91137, 1:1000; Cell Signaling Technology, Danvers, MA). After three washes in a Tris-based buffer (10 mM Tris, 150 mM NaCl, 0.1% Tween 20, pH 7.4), the membranes were incubated with horseradish peroxidase-conjugated secondary antibody (Na9340; 1:10000;\u00a0Amersham, Little Chalfont, UK),\u00a0and immunoreactive signals were detected by enhanced chemiluminescence (Western Lightning Plus-ECL; PerkinElmer, Waltham, MA) and visualized using Amersham Hyperfilm ECL (GE Healthcare, Chicago, IL).\n\n### Planar lipid bilayer recordings\n\nSingle-channel activity was evaluated in planar lipid bilayers using the Orbit mini system (Nanion Technologies, Munich, Germany). Briefly, Multi Electrode Cavity Array (MECA4) chips (Ionera, Freiburg, Germany) were filled with 150 \u03bcL of solution containing 200 mM KCl, 5 mM HEPES, and 0.2 mM EDTA; adjusted to pH 7.6. Lipid bilayers were formed by painting the chips with 10 mg/mL 1,2-diphytanoyl-sn-glycero-3-phosphocholine (DPhPC; Avanti Polar Lipids, Alabaster, AL) dissolved in octane. Purified fPanx1-eGFP (2\u20135 \u03bcL) was added at the cis (ground) side of the bilayer. After channel reconstitution, the current was recorded in a range of voltages (\u00b1200 mV). Activity at extreme potentials (>140 mV) was indicative of channel presence in the bilayer. Then, 2 \u03bcL of Casp3 (~0.4 mg/mL) was added to the cis side of the bilayer. After channel activation, Casp3 was gently washed out to keep symmetrical ionic composition on both sides of the bilayer. After treatment with caspase, the current was recorded again in a range of voltages (\u00b1200 mV). Recordings were performed at 20 kHz using Element Data Recorder 3.8.0 software and further analyzed with Clampfit 10 software (Axon Instruments, San Jose, CA). Measurements were performed at 37\u00b0C using a temperature control unit (Nanion Technologies, Munich, Germany).\n\n### Whole cell recordings\n\nWhole cell voltage clamp recordings of fPanx1 and hPANX1 were performed in transiently transfected HEK293T cells (ATCC, Manassas, VA. Cells were authenticated originally by ATCC STR profiling and negative for mycoplasma at time of purchase), as described previously (Chiu et al., 2017). In short, expression plasmids for fPanx1-eGFP or hPANX-TEV and TEV protease (1:3) (Sandilos et al., 2012) were transfected into HEK293T cells using Lipofectamine 2000 (Thermo Fisher Scientific, Waltham, MA). After 16\u201318 hr, whole cell recordings were performed at room temperature using borosilicate glass micropipettes (Harvard Apparatus, Holliston, MA) that were pulled on a P-97 puller (Sutter Instrument Company, Novato, CA) to a resistance of 3\u20135 M\u03a9 and coated with Sylgard 184 (Dow Corning Corporation, Midland, MI). Recordings were obtained with an Axopatch 200B amplifier, a Digidata 1322 A board, and Clampex software (all Molecular Devices, San Jose, CA) with a HEPES-bath solution composed of (mM): 140 NaCl, 3 KCl, 2 MgCl2, 2 CaCl2, 10 HEPES, and 10 glucose (pH 7.3) and an internal solution composed of (mM): 100 CsMeSO4, 30 TEACl, 4 NaCl, 1 MgCl2, 10 HEPES, 10 EGTA, 3 ATP-Mg, and 0.3 GTP-Tris (pH 7.3). Purified and activated Casp3 was added in the internal solution (2 \u00b5g/mL) to cleave and activate fPanx1-eGFP before bath application of CBX (50 \u00b5M). CBX-sensitive currents from fPanx1-eGFP or hPANX-TEV were obtained from ramp voltage commands, and normalized to the peak current to compare current\u2013voltage relationships of fPanx1-eGFP and hPANX-TEV.\n\n### Single channel recordings\n\nWe examined single channel activity of caspase-activated fPanx1-GFP in transfected HEK293T cells (as above). For inside-out patch recordings, Sylgard-coated patch pipettes were pulled to a DC resistance of 7\u201310 M\u03a9 and filled with the HEPES-bath solution. After seal formation (\u226510 G\u03a9) and patch excision, the bath solution was exchanged to an inside-out solution containing 150 mM CsCl, 5 mM EGTA, 10 mM HEPES, and 1 mM MgCl2 (pH 7.3). Patches were held at +50 to +80 mV (\u0394 10 mV), and only those patches that were silent initially after excision were used (i.e., those without native channel activities). Purified Casp3 was applied in the proximity of the patch to a final bath concentration of\u00a0~1\u20132 \u00b5g/mL. Stable steady-state channel activity was recorded\u00a0~5\u201310 min after Casp3 addition before switching to an inside-out bath solution containing CBX (50 \u03bcM). Channel amplitudes were obtained from all-points amplitude histograms at multiple patch potentials using Clampfit 10 (Molecular Devices).\n\n### ImageStream flow cytometry\n\nProteoliposomes (50 \u03bcL) were incubated in liposome buffer with Casp3 (75 \u00b5g/mL final) overnight at 4\u00b0C. SR-B dye was added to the reaction and incubated for 3 hr. The reaction was diluted to obtain a final SR-B concentration of 100 \u00b5M prior to flow cytometry analysis. The entire mixture was loaded on to an Amnis ImageStream MkII imaging flow cytometer (Luminex Corporation, Austin, TX). The 488 nm laser was used to capture eGFP signal and the 560 nm laser was used to capture Sulforhodamine-B. Amnis IDEAS was utilized for data processing. A decrease in GFP fluorescence was used to verify caspase-mediated fPanx1-GFP cleavage for experiments included in the statistical analysis.\n\n### Dye loading into proteoliposomes\n\nProteoliposomes were filled with dye as previously described (Karasawa et al., 2017). Briefly, fPanx1-containing proteoliposomes or empty liposomes (i.e., without fPanx1) were incubated with each dye: Sulforhodamine B, Rhodamine B, (all 1 mM; Sigma Aldrich, St. Louis, MO); Alexa 594 Carboxylic Acid, Alexa 555 Carboxylic Acid, Dextran Tetramethylrhodamine 3000 MW (all 1 mM; Thermo Fisher Scientific, Waltham, MA); ATTO 550 Phallodin (25 \u03bcM ATTO-TEC, Siegen, Germany), and loaded by three sequential freeze-thaw cycles in liquid N2 and room temperature water bath. After the final thaw, the mixture was extruded through a 100 nm extruder (T and T Scientific, Knoxville, TN). The proteoliposomes containing dye were eluted through a GE Healthcare PD MiniTrap column containing G-25 resin equilibrated with liposome buffer (GE Healthcare, Chicago, IL). The eluant was spun at 100,000 \u00d7 g for 1\u00a0hr at 4\u00b0C. The proteoliposome/liposome pellet filled with dye was resuspended with cold liposome buffer.\n\n### TIRF microscopy\u00a0and data analysis of TIRF\n\nA Zeiss AxioObserver Z1 fluorescence microscope (Carl Zeiss, Oberkochen, Germany) with a 63\u00d7 water immersion objective (N.A.\u00a0=\u00a00.95) and a prism-based illumination was utilized. The light sources for excitation were an OBIS 488 LX and an OBIS 561 LS laser (Coherent Inc, Santa Clara, CA). An OptoSplit (Andor, Belfast, Northern Ireland) was used to separate two spectral fluorescence bands with band pass filters BP525/50 and BP607/70 (Idex-Semrock, Rochester, NY). Images were acquired every 10 s with an EMCCD iXon DV887ESC-BV (Andor). Laser intensity, shutter, and camera were controlled by homemade software written in LabVIEW (National Instruments, Austin, TX). Custom chambers were filled with liposomes (1:1000 liposome:buffer dilution) and injected with Casp3 diluted in liposome buffer (to\u00a0~0.01 mg/mL).\n\nImage series were analyzed by extracting the central pixel values from both spectral channels from regions of interests around each observed liposome by custom software written in LabVIEW (National Instruments; software has been made available: https://github.com/VolkerKirchheim/VK_TIRFsinglevesicleStep1) (copy archived at https://archive.softwareheritage.org/swh:1:rev:79a55c09884d1fd3f4965ef1d1bf8f102711d828/) (Kiessling, 2020; Kiessling et al., 2006). Efflux amounts were quantified by measuring the decrease of fluorescence intensity relative to the intensity before the onset of the decay and the background. Flux rates were determined by fitting mono exponential decay curves to the data starting at the onset of the decay over a range of 1200\u00a0s.\n\n### Bulk dye uptake assay\n\nProteoliposomes (50 \u00b5L) were incubated overnight with Casp3 (75 \u00b5g/mL) at 4\u00b0C in liposome buffer (20 mM Tris pH 7.4, 140 mM NaCl). Dye (1 mM SR-B) was added to the mixture (final volume 100 \u00b5L) and gently agitated at 4\u00b0C for 3 hr. CBX in liposome buffer was added to the liposome reaction (50 \u03bcM, in 200 \u03bcL final volume). The reaction was gently layered onto GE Healthcare PD MiniTrap columns containing G-25 resin pre-equilibrated with liposome buffer containing 100 \u03bcM CBX (GE Healthcare, Chicago, IL). The column was spun at 1000 \u00d7 g for 1 min at 4\u00b0C. The eluted liposomes were read on a FlexStation 3 Multi-Mode Microplate Reader (excitation 565 nm, emission 586 nm) (Molecular Devices, San Jose, CA).\n\n### Metabolite uptake assay\n\nAs previously described (Johnson and Lee, 2015), frozen liposomes were thawed on ice and subjected to three freeze/thaw cycles using liquid N2 and a room temperature water bath. Following the third freeze/thaw cycle, liposomes were extruded through 1.0 \u00b5m polycarbonate membranes in a Mini-Extruder (Avanti Polar Lipids Inc, Alabaster, AL). Proteoliposomes (100 \u00b5L) were incubated overnight with Casp3 (~75 \u00b5g/mL) at 4\u00b0C in liposome buffer (20 mM Tris pH 7.4, 140 mM NaCl). We examined uptake of each of the potential permeants independently. For this, metabolites were added to caspase-treated proteoliposome mixtures to final concentrations of 1 mM ATP, 0.8 mM glutamate, 8 \u00b5M spermidine, together with 0.02 \u00b5Ci/\u00b5L of 32P-ATP, 3H-Glutamate or 3H-Spermidine (200 \u00b5L final volume; all from PerkinElmer, Waltham, MA). Note that we used a 100-fold lower final concentration of spermidine to avoid potential disruption of the proteoliposomes (Creutz et al., 2012) and thus the hot:cold molar ratio for spermidine was\u00a0~100-fold greater than for glutamate. Following gentle agitation at room temperature for 3 hr, the radioactive mixture was diluted with ice cold liposome buffer containing unlabeled metabolite at the relevant final concentrations (to 1 mL) and filtered through a Whatman GF/B filter pre-equilibrated with liposome buffer containing unlabeled metabolite. The filter was washed three times with ice cold liposome buffer containing unlabeled metabolite, immersed in 5 mL of Ecoscint A (National Diagnostics, Atlanta, GA), and read with a LS6500 Multipurpose Scintillation Counter (Beckman Coulter, Brea, CA).\n\n### Chemical structures\n\nAll chemical structures were rendered in ChemDraw (Cambridgesoft, Cambridge, MA) with the base structures (carboxylic acids of Alexa 594 and Alexa 555) and the dextran conjugate of tetramethylrhodamine (Thermo Fisher Scientific; see Gebhardt et al., 2020); the precise site of the conjugate for these proprietary dyes was not provided\u00a0and so the figures depict approximate structures. The chemical structure of ATTO 550 Phallodin was provided by ATTO-TEC.\n",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "e68967bd-af48-4493-9c95-33cf52a2a203",
+      "submission_id": "658c9a52-a8d6-4ff0-a35c-5e3a162d02ba",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Baron Chanda, Washington University in St. Louis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64787.sa1](https://doi.org/10.7554/eLife.64787.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nPannexins are membrane channels that are found in many cell types. It has been suggested that these channels when activated can transport ATP and other bulky metabolites. However, those studies cannot rule out the possibility that these ions flux through secondary pathways that are stimulated by the channel. Here, using a purified reconstituted system, the authors provide the most definitive evidence that Pannexin 1 when activated by caspase can flux large bulky metabolites such as ATP and spermidine. This study resolves a key question and has important physiological significance.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Caspase-activated Pannexin 1 channels favor anionic molecules and support flux of ATP and other signaling metabolites\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Baron Chanda as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Kenton Swartz as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe manuscript by Narahari et al., reports comprehensive assessment of permeation properties of the frog Panx1 channel using liposomes reconstituted with purified fPanx1 proteins. In the past, much had been done using cell-based assay, however, there has not been any liposome based assays with purified protein. Such assays provide definitive characterization of the intrinsic functional properties of the protein. Here, the authors first conducted a lipid-bilayer electrophysiology by fusing the fPanx1 proteolipomes and clearly recapitulated caspase-3 cleavage dependent current formation. They also detected influxing of fluorescent dyes into the proteoliposomes and effluxing of fluorescent dyes from liposomes packaged from the proteoliposomes by TIRF microscopy (measurement of fluorescence decay from single proteoliposomes). The quality control of the experiments is excellent (e.g. verification of caspase cleavage, protein quality, detection of reconstitution, size estimation of proteoliposomes under electron microscopy, etc). This work represents the first solid case where Panx1 activity can be clearly measured using an in vitro liposome assay. Using these established assays, the authors assessed permeation of dyes with different sizes to measure pore sizes. Furthermore, the authors assessed uptake of tritiated ATP, glutamate, and spermidine to show that both cationic and anionic metabolites can permeate with higher selectivity to anionic metabolites. This work clearly addresses a key outstanding question in the field.\n\nEssential revisions:\n\nThe authors have placed an excessive emphasis on differences in permeability of cationic vs. anionic molecules by including this in the titles, since only one direct quantitative comparison was made. The observed differences between SR-B over positively charged RhB, while consistent with small anion selectivity assessed previously by electrophysiology, represent only a partial characterization and might be also reflect other reasons. This can be easily addressed by rewording the title. Please see our suggestions below.\n\n1) In Figure 1B, it is not clear from the single channel traces where the Closed state is in some of the traces in the right side. O1 is lined up right along with C in -80 and -100 mV traces.\n\n2) Figure 1G, the inward and outward conductance appear displaced relative to each other almost implying that they have different selectivity. I am assuming that there is a trivial reason I am overlooking.\n\n3) Figure 4. Related to the above point, it would be good for readers to have a sense of how much of the tritiated metabolites actually influxed into the proteoliposomes. For that reason, it is perhaps better to have Y-axis converted to \u201cmole\u201d not CPM.\n\n4) Introduction. Citation for the first CALHM1 structure, Syrjanen,. Furukawa, (2020), and LRRC8 structure, Deneka et al., (2018), should be cited here.\n\n5) Subsection \u201cPreparation of Pannexin 1 Proteoliposomes\u201d. Sf9 only minimally contain cholesterol/sterol. Could that affect functions of the purified Panx1? Alternatively, could the addition of cholesterol change conductance?\n\n6) In Figure 2D, comparison between the left and right panels is not simple. Can the authors indicate studies in the same sets of vesicles using similar colors? Can they generate a graph that shows a comparison of the changes of GFP and SRB for each set?\n\n7) Have the authors attempted an experiment like those in Figure 4 including both ATP and spermidine together (and separately counting 3H and 32P) to provide a direct comparison of the permeabilities of these two molecules?\n\n8) It would be nice if the authors included a short section in the Discussion considering why other investigators have previously found some permeation through un-cleaved Panx1 channels.\n\n9) Channel permeation does not depend only on the charge and mass of the permeant but also on its shape (second largest diameter). The authors might include a supplemental figure showing images of the size and shapes of the different permeants that they have tested. It could be briefly addressed in the Discussion.\n\n10) Title: How about \"ATP and bulky signaling metabolites can flux through Caspase activated Pannexin 1 channels\" or something along those lines.\n",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3ce1cdfa-63ae-406b-8ddc-b814dfc7988d",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C1",
+      "claim": "Pannexin 1 (Panx1) is a membrane channel implicated in numerous physiological and pathophysiological processes via its ability to support release of ATP and other cellular metabolites for local intercellular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Pannexin 1 (Panx1) is a membrane channel implicated in numerous physiological and pathophysiological processes via its ability to support release of ATP and other cellular metabolites for local intercellular signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about Panx1's role supported by established scientific knowledge and citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "d5b5f36b-39f5-4b01-a13f-fdf11d4193fe",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C2",
+      "claim": "To date, there has been no direct demonstration of large molecule permeation via the Panx1 channel itself.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to date, there has been no direct demonstration of large molecule permeation via the Panx1 channel itself, and thus the permselectivity of Panx1 for different molecules remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in the literature that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "570b041c-c9be-427b-b418-8d0e06d7f38d",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C3",
+      "claim": "Channel activation by caspase cleavage yields a dye-permeable pore that favors flux of anionic, large-molecule permeants (up to ~1 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we expressed, purified, and reconstituted Panx1 into proteoliposomes and demonstrated that channel activation by caspase cleavage yields a dye-permeable pore that favors flux of anionic, large-molecule permeants (up to ~1 kDa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from proteoliposome reconstitution and dye permeation assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "703fc3ea-645a-428b-a6c6-fd849106886a",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C4",
+      "claim": "Large cationic molecules can permeate the Panx1 channel, albeit at a much lower rate than anionic molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Large cationic molecules can also permeate the channel, albeit at a much lower rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing permeation rates of cationic and anionic dyes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "024299f2-94c0-4f21-98de-337cd2e305ff",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C5",
+      "claim": "Panx1 channels provide a molecular pathway for flux of ATP and other anionic (glutamate) and cationic signaling metabolites (spermidine).",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that Panx1 channels provide a molecular pathway for flux of ATP and other anionic (glutamate) and cationic signaling metabolites (spermidine).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by radiolabeled metabolite uptake assays shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "da4be0db-6131-4e77-b7f6-138dc5bfdde3",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C6",
+      "claim": "Panx1 plays a critical role in cell clearance after apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Among others, this includes cell clearance after apoptosis (Chekeni et al., 2010; Medina et al., 2020; Poon et al., 2014), blood pressure regulation (Billaud et al., 2011; Good et al., 2018a), stroke (Bargiotas et al., 2011; Good et al., 2018b; Thompson, 2015), and neuropathic pain (Bravo et al., 2014; Weaver et al., 2017; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "415753c4-e6f5-4bf5-9d37-955f8070644e",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C7",
+      "claim": "Individual Panx1 subunits consist of a four-transmembrane \u03b1-helical bundle with a cytoplasmic loop between TM2 and TM3.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual Panx1 subunits consist of a four-transmembrane \u03b1-helical bundle with a cytoplasmic loop between TM2 and TM3; the N- and C-termini also reside on the cytoplasmic surface (Baranova et al., 2004; Penuela et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "9acbd58d-5f05-40e9-aaf4-db4bb974c4f7",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C8",
+      "claim": "Panx1 channels are broadly similar to a subset of mammalian large-pore ion channels that include connexin gap junctions, CALHM1, and SWELL1 (LRRC8).",
+      "claim_type": "EXPLICIT",
+      "source": "These channels are broadly similar to a subset of mammalian large-pore ion channels that include connexin gap junctions (Panchin et al., 2000), calcium homeostasis modulator 1 (CALHM1) (Siebert et al., 2013; Syrjanen et al., 2020), and SWELL1 (LRRC8) (Abascal and Zardoya, 2012; Deneka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citations to studies on related channel families.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "296071d9-622b-4a4f-b5ad-5bbec521bffb",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C9",
+      "claim": "Recent cryoEM structures revealed that these different channels exist in a variety of oligomeric states (from hexameric to undecameric).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a conserved subunit topology, recent cryoEM structures revealed that these different channels exist in a variety of oligomeric states (from hexameric to undecameric) (Deng et al., 2020; Michalski et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citations to recent cryoEM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "5bd9cafe-fbff-4709-a8bb-6172df5c124e",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C10",
+      "claim": "Basal Panx1 activity does not appear to be associated with large molecule permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "Panx1 ionic currents have occasionally been detected under unstimulated conditions (Ma et al., 2012; Romanov et al., 2012; Ruan et al., 2020), but that basal activity does not appear to be associated with large molecule permeation (Romanov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous electrophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "6eac2033-2781-4051-9e0a-35d4475b813b",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C12",
+      "claim": "Caspase-mediated cleavage of Panx1 C-tails during apoptosis or pyroptosis is accompanied by uptake of dyes indicative of cell death and release of ATP and UTP that serve as 'find-me' signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, caspase-mediated activation is a well-characterized mechanism in which cleavage of the channel C-tails, as occurs during apoptosis or pyroptosis, is accompanied by uptake of dyes indicative of cell death (e.g., Yo-Pro-1 and To-Pro-3) and release of ATP and UTP that serve as 'find-me' signals to direct phagocytic clearance of cell corpses (Chekeni et al., 2010; Chiu et al., 2017; Poon et al., 2014; Qu et al., 2011; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on caspase-mediated activation and cell death signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "e235f2e8-20d4-49f5-adfe-1832dfbec44d",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C13",
+      "claim": "Panx1 cleavage elicits efflux of additional metabolites from apoptotic cells, which function as local 'good-bye' signals with anti-inflammatory, wound healing, and cell proliferative actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Panx1 cleavage elicits efflux of additional metabolites from apoptotic cells, which function as local 'good-bye' signals with anti-inflammatory, wound healing, and cell proliferative actions (Medina et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study on metabolite release from apoptotic cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "4a7517b4-7734-4fc9-8c94-624af875a0a3",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C14",
+      "claim": "All previous studies on Panx1 large molecule permeation have been performed using intact cells, not demonstrating that permeation occurs directly via the channel itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all studies to date have been performed using intact cells. Therefore, this previous work does not demonstrate that large molecule permeation occurs directly via the channel itself or exclude a secondary release mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a limitation in previous research that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "45dd86f5-879c-418e-ba09-160a7cc69659",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C15",
+      "claim": "Recently available Panx1 channel structures from both intact and caspase-cleaved channels reveal a central pore with an extracellular constriction that has a diameter of ~9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recently available Panx1 channel structures from both intact (inactive) and caspase-cleaved (activated) channels reveal a central pore with an extracellular constriction that has a diameter of ~9 \u00c5, which would appear to be too small to enable large molecule permeation (Deng et al., 2020; Jin et al., 2020; Michalski et al., 2020; Mou et al., 2020; Qu et al., 2020; Ruan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citations to multiple recent cryoEM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "64877b39-1703-41b2-b97e-3deac59efd28",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C16",
+      "claim": "The frog Panx1 (fPanx1) ortholog from Xenopus tropicalis was used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "For these studies, we used the Panx1 ortholog from Xenopus tropicalis (i.e., frog Panx1 and fPanx1) that has been examined in recent structural studies (Deng et al., 2020; Michalski et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system used, supported by citations to structural studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "5bb5461d-230b-4a1f-93e4-ff853ca8dde8",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C17",
+      "claim": "Purified fPanx1-eGFP was successfully incorporated into proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Purified fPanx1-eGFP was incorporated into proteoliposomes that appeared in fractions 1\u20133 of a co-floatation assay on a Nycodenz density gradient (Figure 1B,C; Hernandez et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B,C demonstrating successful reconstitution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "2291c87d-ea70-4076-be99-126cb5d58b21",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C18",
+      "claim": "Proteoliposomes had a mean diameter of 97.3 \u00b1 22 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "When analyzed by negative-stain electron microscopy, we observed a normal distribution of circular proteoliposomes in projection images, with the expected mean diameter of 97.3 \u00b1 22 nm (Figure 1D, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electron microscopy measurements shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "60ea1eb5-97a7-4f0e-8f43-373c35d6db1a",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C19",
+      "claim": "Purified fPanx1 incorporated into proteoliposomes was cleaved at the expected sites following overnight incubation with recombinant Caspase-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we verified that purified fPanx1 incorporated into proteoliposomes was cleaved at the expected sites following overnight incubation with recombinant Caspase-3 (Casp3) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "06016d6d-3467-4a6c-9ade-5ad1715bd8ba",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C20",
+      "claim": "Cleavage at the C-terminal site is necessary and sufficient for Panx1 channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that although the channel can be cleaved at multiple sites, cleavage at the C-terminal site is necessary and sufficient for channel activation (Chekeni et al., 2010; Chiu et al., 2017; Sandilos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on caspase cleavage sites.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "ae902e71-b5f2-49e8-9401-cc7af3ea2c69",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C21",
+      "claim": "fPanx1 was basally silent in HEK293T cells and could be activated by intracellular dialysis with Casp3 to generate whole cell currents with an outwardly-rectifying current\u2013voltage profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In recordings from transfected HEK293T cells, we found that fPanx1 was basally silent and could be activated by intracellular dialysis with Casp3 to generate whole cell currents with an outwardly-rectifying current\u2013voltage profile (Figure 1\u2014figure supplement 2A,B) similar to that observed with cleavage-activated human Panx1 (hPANX1) channels (Figure 1\u2014figure supplement 2C; Chiu et al., 2017; Sandilos et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "0412a6a7-b925-4dc5-82d0-df66aabfcbda",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C22",
+      "claim": "Caspase-activated fPanx1 currents were blocked by the Panx1 inhibitor carbenoxolone (CBX).",
+      "claim_type": "EXPLICIT",
+      "source": "These currents were blocked by the Panx1 inhibitor carbenoxolone (CBX).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data showing CBX inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "bbd9ac3f-ff92-4802-bd37-4ad00a6a8086",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C23",
+      "claim": "Single fPanx1 channels were silent in excised inside-out patches until activated by Casp3 and displayed a unitary conductance of 91.4 \u00b1 13.5 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, and also similar to hPANX1, single fPanx1 channels were silent in excised inside-out patches until activated by Casp3 (Chiu et al., 2017); the cleavage-activated channels were inhibited by CBX and displayed a unitary conductance of 91.4 \u00b1 13.5 pS (N = 3, Figure 1\u2014figure supplement 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel electrophysiological data shown in Figure 1\u2014figure supplement 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "8f2d0202-4d68-4e7f-9068-b2e2cb3f0cc4",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C24",
+      "claim": "Whole cell and single channel properties of fPanx1 are essentially identical to hPANX1 after caspase activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whole cell and single channel properties of fPanx1 are essentially identical to hPANX1 after caspase activation (Chiu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of electrophysiological data between fPanx1 and hPANX1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "e5843cc7-8887-4f5e-856e-9ad2128828fb",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C25",
+      "claim": "Prior to application of caspase, large 'flickery' currents were occasionally observed at extreme potentials in lipid bilayers containing fPanx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to application of caspase, large 'flickery' currents were occasionally observed at extreme potentials (e.g., +140 mV; Figure 1\u2014figure supplement 3A), and this often signified successful incorporation of fPanx1 into the bilayer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bilayer recording data shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "1d27b1a4-e78f-408e-a7bd-dcc2147a3dae",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C26",
+      "claim": "Before caspase addition, fPanx1 channel activity was not observed at physiological potentials in lipid bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, before caspase addition, fPanx1 channel activity was not observed at physiological potentials, even in a bath solution containing 200 mM K+ (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bilayer recording data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "7f69ee2f-2961-4b0e-829c-842f591b3dfd",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C27",
+      "claim": "After caspase addition, channel currents with discrete openings and closings became apparent across a wide range of physiological voltages in lipid bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "After caspase addition, channel currents with discrete openings and closings became apparent across a wide range of physiological voltages (Figure 1F, Figure 1\u2014figure supplement 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bilayer recording data shown in Figure 1F and Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "68737174-e4ad-4901-bbb0-94c7e28a4cb4",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C28",
+      "claim": "Caspase-activated fPanx1 channels in bilayers displayed two distinct conductance levels: ~100 pS and ~189 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "The individual bilayers usually included multiple active channels that presented with either of two distinct conductance levels: one set had a unitary conductance of ~100 pS, similar to that recorded in mammalian cells, and the second displayed a larger unitary conductance of ~189 pS (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by conductance measurements from bilayer recordings shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "7aa8d656-07fe-4be2-8c6c-7e655205390d",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C29",
+      "claim": "The open channel I-V relationships for caspase-activated fPanx1 in bilayers were approximately ohmic.",
+      "claim_type": "EXPLICIT",
+      "source": "For both, the open channel I-V relationships were approximately ohmic (Figure 1G), unlike the outwardly-rectifying single channel conductance observed for recombinant caspase-activated Panx1 in mammalian cells (Chiu et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by I-V relationship data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "8f4e5153-c144-4a24-b1f6-caa4b1eb6213",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C30",
+      "claim": "Uptake of SR-B into liposomes was observed only when they contained fPanx1 and were treated with caspase.",
+      "claim_type": "EXPLICIT",
+      "source": "Uptake of SR-B into liposomes was observed only when they contained fPanx1 and were treated with caspase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by dye uptake assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "28842286-df11-49b7-b6cc-f4e0a22dfb44",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C31",
+      "claim": "Dye uptake was inhibited when caspase-treated fPanx1-containing proteoliposomes were treated with CBX.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, dye uptake was inhibited when caspase-treated fPanx1-containing proteoliposomes were treated with CBX before and during the dye incubation period (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dye uptake assay data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "8aa38f0b-eb58-4ad8-89a8-2d9ad4b91fbe",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C32",
+      "claim": "SR-B was only observed in proteoliposomes that were treated with Casp3 as shown by ImageStream flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted in the representative images (Figure 2B), SR-B was only observed in proteoliposomes that were treated with Casp3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ImageStream flow cytometry data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "92736a7a-26f1-48a7-b898-62124cfe0c85",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C33",
+      "claim": "Compared to untreated proteoliposomes, a larger fraction of Casp3-treated proteoliposomes contained SR-B (83.6% vs. 20.4%) at ~10-fold higher MFI levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to untreated proteoliposomes, a larger fraction of Casp3-treated proteoliposomes contained SR-B (83.6% vs. 20.4%; Figure 2C) and at ~10-fold higher MFI levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative flow cytometry data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "ac17bd2e-e806-4e06-999f-8989ea22a6c8",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C34",
+      "claim": "A modest leftward shift in the GFP signal after caspase treatment reflects cleavage of the outward-facing fPanx1 C-tail and removal of the C-terminal GFP tag.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a concomitant, albeit modest, leftward shift in the GFP signal after caspase treatment, reflecting cleavage of the outward-facing fPanx1 C-tail (exposed to caspase) and the associated removal of the C-terminal GFP tag (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2C and is an inference from the experimental design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "3a1375df-ea18-4458-8186-dab5efc084e8",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C35",
+      "claim": "Caspase-cleaved fPanx1 channels generate a pore that is large enough for permeation of the SR-B dye.",
+      "claim_type": "EXPLICIT",
+      "source": "In multiple independent experiments and proteoliposome preparations, Casp3 treatment of fPanx1 proteoliposomes resulted in a decrease in GFP signal and a concomitant increase in SR-B signal (Figure 2D, Figure 2\u2014figure supplement 2), indicating that caspase-cleaved fPanx1 channels generate a pore that is large enough for permeation of the SR-B dye.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple independent experiments shown in Figure 2D and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "3ed16bbb-78e7-4249-8fa8-8f48de581793",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C36",
+      "claim": "RhB was released from proteoliposomes in a manner dependent on caspase-mediated cleavage of fPanx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Like SR-B, RhB was released from proteoliposomes, and this release was also dependent on caspase-mediated cleavage of fPanx1 (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TIRF microscopy data shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "c9a15447-a04d-46da-a1a2-e3a17388fc95",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C37",
+      "claim": "The rate of dye efflux was positively correlated with the fraction of fPanx1 cleavage for both SR-B and RhB dyes.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of dye efflux, obtained from fits to mono-exponential decay curves of the fluorescent signal for each proteoliposome, was positively correlated with the fraction of fPanx1 cleavage (i.e., reduction in GFP fluorescence) for both SR-B and RhB dyes (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of TIRF microscopy data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "cba46347-f504-4d52-a0a0-cfafd359227a",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C38",
+      "claim": "Despite the smaller size of RhB, the efflux rate was significantly slower than for SR-B due to the cationic charge.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, despite the smaller size of RhB, the efflux rate was significantly slower than for SR-B due to the cationic charge (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative analysis of dye efflux rates shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "86ecd1e3-03bc-4e2e-b7ee-a61e09a6d353",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C39",
+      "claim": "Larger anionic dyes (Alexa 594 and Alexa 555) permeated caspase-cleaved fPanx1 at rates substantially slower than the smaller SR-B.",
+      "claim_type": "EXPLICIT",
+      "source": "These larger dyes permeated caspase-cleaved fPanx1 at rates substantially slower than the smaller SR-B (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative dye efflux rate data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "53888fd0-e6c6-49ab-b99e-c4923225a1df",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C40",
+      "claim": "Despite being approximately two times larger, anionic dyes Alexa 594 and Alexa 555 transited the channel at rates comparable to the cationic dye RhB.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, however, despite being approximately two times larger, these anionic dyes transited the channel at rates comparable to the cationic dye RhB (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative dye efflux rate data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "b4257a92-49da-4831-86be-8ac2f7d160c5",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C41",
+      "claim": "ATTO550 (1363 Da) and Dextran 3000 (3000 Da) were unable to permeate caspase-activated fPanx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also examined two larger dyes (ATTO 550 (+), 1363 Da; and Dextran 3000 (\u2212), 3000 Da; Figure 3\u2014figure supplement 1), and neither of those were able to permeate caspase-activated fPanx1 (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dye permeation data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "7335095e-af9e-4cc4-9882-fb3aaea483a2",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C42",
+      "claim": "The channel favors anionic over cationic permeants.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that the channel favors anionic over cationic permeants and reveal that the pore size is sufficient to accommodate molecules up to 980 Da.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative dye permeation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "651c829a-2d9e-40f5-b196-04b4e1c1b9df",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C43",
+      "claim": "The pore size of caspase-activated fPanx1 is sufficient to accommodate molecules up to 980 Da.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that the channel favors anionic over cationic permeants and reveal that the pore size is sufficient to accommodate molecules up to 980 Da.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the dye permeation data showing Alexa 555 (980 Da) can permeate but ATTO 550 (1363 Da) cannot.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "b0f7b408-477c-4308-906f-e7f08128f7ab",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C44",
+      "claim": "Uptake of \u03b1-[32P]ATP, [3H]-glutamate, and [3H]-spermidine into proteoliposomes required caspase-activated fPanx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that uptake of \u03b1-[32P]ATP, [3H]-glutamate, and [3H]-spermidine into proteoliposomes required caspase-activated fPanx1; uptake was not observed when liposomes did not contain fPanx1 or when the channel was not activated by Casp3 (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiolabeled metabolite uptake assay data shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "e0fd7844-8192-4467-8379-787fe2c1eecd",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C45",
+      "claim": "Both ATP and spermidine can flux via caspase-activated Panx1 when included together in the same assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested whether ATP and spermidine could flux via caspase-activated Panx1 when included together in the same assay, rather than independently. Under these conditions, we again found uptake of both ATP and spermidine into caspase-cleaved Panx1-containing proteoliposomes, albeit at slightly lower levels (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by concurrent metabolite uptake assay data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "a2695119-6911-42d5-8a10-2c3cae937396",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C46",
+      "claim": "Cleavage-activated fPanx1 itself is sufficient to form a membrane conduit capable of conducting ATP and other important signaling metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that cleavage-activated fPanx1 itself is sufficient to form a membrane conduit capable of conducting ATP and other important signaling metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the metabolite uptake data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "ef5d4739-9fd7-4194-a60b-3136d635a0ae",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C47",
+      "claim": "Different conductance levels for channels attributed to Panx1 have been observed in various cell systems after different forms of activation, reportedly up to ~500 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, different conductance levels for channels attributed to Panx1 have been observed in various cell systems after different forms of activation, reportedly up to ~500 pS (Bao et al., 2004; reviewed in Chiu et al., 2018; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous electrophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "4e2be873-7976-4fc6-a644-8294add20b9e",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C48",
+      "claim": "In lipid bilayer recordings of purified hPANX1, Mou et al. detected a ~30 pS channel in E. coli polar lipid extract in the absence of specific activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In lipid bilayer recordings of purified hPANX1 reported during preparation of this work, Mou et al. detected a ~ 30 pS channel in E. coli polar lipid extract, although these recordings were in the absence of any specific form of activation and were not accompanied by open-closed transitions; the C-tail-cleaved channels, by contrast, yielded a number of extremely large open channel conductance states (i.e., 750 pS, 1.3 nS, and 1.8 nS; at +100 mV) (Mou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a concurrent study by Mou et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "ccb12d2f-ade4-4646-a870-de60339f97b6",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C49",
+      "claim": "Constitutive Panx1 channel activity displays a unitary conductance similar to that of channels stimulated by Casp3 cleavage (~70\u201380 pS) but does not appear to support ATP release.",
+      "claim_type": "EXPLICIT",
+      "source": "There have been other reports of constitutive Panx1 channel activity (i.e., in the absence of stimulation), and although these channels display a unitary conductance similar to that of channels stimulated by Casp3 cleavage (~70\u201380 pS), they do not appear to support ATP release (Ma et al., 2012; Romanov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on constitutive Panx1 activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "9349a01f-2d55-4542-80aa-04b7a93b9d1c",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C50",
+      "claim": "A second permeation pathway, visible as a side tunnel in the structure of hPANX1, could support atomic ion flux through unstimulated and C-tail-intact channels in the absence of large molecule permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently proposed that a second permeation pathway, visible as a side tunnel in the structure of hPANX1, could support atomic ion flux through unstimulated and C-tail-intact channels in the absence of large molecule permeation (Ruan et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal from a cited study that requires further exploration.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "2632a7f7-d8c1-40e2-8800-2089ca7e9aad",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C51",
+      "claim": "In ion substitution experiments, obvious shifts in reversal potential (Erev) were observed when Cl\u2212 was exchanged with other negatively charged counterions.",
+      "claim_type": "EXPLICIT",
+      "source": "In ion substitution experiments, obvious shifts in reversal potential (Erev) were observed when Cl\u2212 was exchanged with other negatively charged counterions (Ma et al., 2012; Michalski et al., 2020; Romanov et al., 2012; Ruan et al., 2020; Wang and Dahl, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous ion substitution studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "444ac780-0aed-4716-bc46-48359cde9f6d",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C52",
+      "claim": "Shifts in Erev were strongly affected by mutations in R75, a positively charged residue next to W74, the narrowest pore constriction site.",
+      "claim_type": "EXPLICIT",
+      "source": "These shifts in Erev were strongly affected by mutations in R75, a positively charged residue next to W74, the narrowest pore constriction site identified in multiple recent structural reports (Deng et al., 2020; Michalski et al., 2020; Ruan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to mutagenesis and structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "17c997e8-231e-4db5-bcc8-dcbb60353935",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C53",
+      "claim": "Negligible changes in Erev accompany substitution with different positively charged counterions.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, negligible changes in Erev accompany substitution with different positively charged counterions (Michalski et al., 2020; Ruan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to ion substitution studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "0e21036b-e09c-4d78-9e89-c8f4e3f38cb9",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C54",
+      "claim": "It has been inferred that the Panx1 channel is exclusively anion-selective and impermeable to cations.",
+      "claim_type": "EXPLICIT",
+      "source": "On this basis, it has been inferred that the channel is exclusively anion-selective and impermeable to cations (Ma et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previous inference from the literature that the current study challenges.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "f59e8ce8-e49b-4a59-af25-918b533d6954",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C55",
+      "claim": "Previous studies have predicted the maximum size of a Panx1 permeant to be less than 1270 Da (7-AAD) or 1500 Da (PEG 1500).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have predicted the maximum size of a Panx1 permeant to be less than 1270 Da (7-AAD) (Chiu et al., 2017; Poon et al., 2014) or 1500 Da (PEG 1500) (Wang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous permeability studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "2bc1c383-0a2a-4b6d-9a9e-448369fa265c",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C56",
+      "claim": "Alexa555 (980 Da) could transit via the cleavage-activated Panx1 channel while ATTO550 (1363 Da) was unable to permeate.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Alexa555 (980 Da) could transit via the cleavage-activated Panx1 channel while ATTO550 (1363 Da) was unable to permeate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by dye permeation data from TIRF microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "cd91a41a-5fdb-424f-8936-1bd1168d13f5",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C57",
+      "claim": "The pore of the activated Panx1 channel must be able to accommodate a molecule at least up to ~1 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that the pore of the activated channel must be able to accommodate a molecule at least up to ~1 kDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the dye permeation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "799fa091-6128-4198-a70d-f6d44dcaa2f5",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C58",
+      "claim": "The architecture and contours of the transmembrane pore were remarkably similar for all Panx1 constructs analyzed in recent cryoEM structures, despite including full length and C-terminal cleaved/truncated forms.",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture and contours of the transmembrane pore were remarkably similar for all constructs analyzed, despite those including full length (presumably inactive) and C-terminal cleaved/truncated (presumably activated) (Deng et al., 2020; Michalski et al., 2020; Ruan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple cryoEM structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "46691e01-dd23-4cb6-baa4-fcd363017965",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C59",
+      "claim": "The narrowest pore constriction was formed by a ring of seven W74 residues on the extracellular surface of the channel, with a diameter of ~8\u201310 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The narrowest pore constriction was formed by a ring of seven W74 residues on the extracellular surface of the channel, with a diameter of ~8\u201310 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is based on cryoEM structures cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "b606941c-2e85-4c63-811d-b62dc35c026a",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C60",
+      "claim": "The narrowest constriction appears to be too small to accommodate large dyes or even hydrated ATP, although this may be influenced by the shape and flexibility of the permeant molecule and/or the pore itself.",
+      "claim_type": "EXPLICIT",
+      "source": "This constriction appears to be too small to accommodate large dyes or even hydrated ATP, although this may be influenced by the shape and flexibility of the permeant molecule and/or the pore itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on structural data and the observed permeation properties.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "48886ee0-1d07-4fd0-88bd-07bd8007ee4b",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C61",
+      "claim": "Upon activation by cleavage at the C-terminal caspase site, Panx1 transitions between open and closed states.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, upon activation by cleavage (or truncation) at the C-terminal caspase site, Panx1 transitions between open and closed states (Chiu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous electrophysiological study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "d86cbe81-a9f3-47c5-80b7-529999d0523e",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C62",
+      "claim": "The available Panx1 structures may have captured the channel in a state that is 'open' for atomic ions but remains 'closed' for large molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the available structures may have captured the channel in a state that is 'open' for atomic ions but remains 'closed' for large molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation to reconcile structural and functional data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "ebb313a9-55c5-4230-8dd4-6babfd7232a1",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C63",
+      "claim": "The possibility of multiple open conformations or separate permeation pathways for ions and large molecules in both Panx1 channels and in CALHM1 channels have been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility of multiple open conformations or separate permeation pathways for ions and large molecules in both Panx1 channels and in CALHM1 channels have been proposed (Gaete et al., 2020; Nielsen et al., 2020; Ruan et al., 2020; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies proposing multiple conformational states.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "0f587aa2-78bf-4318-a1d5-264a0993e7bd",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C64",
+      "claim": "Panx1 cleavage by caspase is permissive for conformations that allow large molecule permeation, perhaps by removing a physical block to pore access while allowing open-closed transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "If those distinct conformations exist, the dye/metabolite flux we present indicates that Panx1 cleavage by caspase is permissive for conformations that allow large molecule permeation, perhaps by removing a physical block to pore access while allowing open-closed transitions (Sandilos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic speculation based on the experimental data and cited structural considerations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "57e70256-16da-4f7e-94c2-5ae5ba8bd0d0",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C65",
+      "claim": "Molecules up to ~1 kDa are capable of permeating caspase cleavage-activated fPanx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of dye and metabolite flux through purified Panx1 channels reconstituted in proteoliposomes demonstrates directly that molecules up to ~1 kDa are capable of permeating caspase cleavage-activated fPanx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the dye and metabolite permeation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "dc6c11fe-070e-45d1-be4a-ed873cdef76c",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C66",
+      "claim": "Anionic and cationic metabolites and dyes can traverse caspase-activated Panx1 channels, albeit with a marked preference for anionic molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, anionic and cationic metabolites and dyes can traverse caspase-activated Panx1 channels, albeit with a marked preference for anionic molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the comparative permeation data for charged molecules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "3b856b57-e0cd-42fa-a13e-ed777958f395",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "claim_id": "C67",
+      "claim": "These data validate caspase-activated Panx1 as a direct conduit for release of ATP and other signaling molecules that facilitate immunologically silent cell clearance in the context of caspase-dependent cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "These data validate caspase-activated Panx1 as a direct conduit for release of ATP and other signaling molecules that facilitate immunologically silent cell clearance in the context of caspase-dependent cell death (apoptosis, pyroptosis) (Chekeni et al., 2010; Medina et al., 2020; Qu et al., 2011; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion that integrates the current findings with previous studies on Panx1's physiological roles.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7855b5a6-a088-46b4-a850-4cb67cc19152",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully expressed, purified, and reconstituted frog Pannexin 1 (fPanx1) into proteoliposomes. The purified fPanx1-eGFP was incorporated into proteoliposomes with a mean diameter of 97.3 \u00b1 22 nm, and the reconstituted channels could be cleaved at expected sites by recombinant Caspase-3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 provide converging evidence for successful proteoliposome reconstitution. The co-floatation assay (C17), electron microscopy measurements (C18), and Western blot verification of caspase cleavage (C19) collectively demonstrate that fPanx1 was properly incorporated into proteoliposomes and remained functional. The experimental approach is well-documented with appropriate controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "652fcda6-0b1a-4ae3-9a07-e18eea7ef46a",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The functional properties of fPanx1 in mammalian cells are essentially identical to human PANX1 (hPANX1). fPanx1 is basally silent, can be activated by caspase-3 to generate outwardly-rectifying whole cell currents that are blocked by CBX, and displays a unitary conductance of 91.4 \u00b1 13.5 pS in inside-out patches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 provide comprehensive electrophysiological characterization demonstrating functional equivalence between fPanx1 and hPANX1. The data include whole-cell recordings, pharmacological inhibition, and single-channel measurements with appropriate controls. The comparison validates the use of fPanx1 as a model system for studying Panx1 channel properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "e4950adb-0bf6-4205-b4ad-0f250aca2ea7",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Purified fPanx1 channels reconstituted in lipid bilayers are silent at physiological potentials until activated by caspase cleavage, after which they display two distinct conductance levels (~100 pS and ~189 pS) with approximately ohmic I-V relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 demonstrate successful functional reconstitution of fPanx1 in artificial lipid bilayers. The observation of caspase-dependent activation and discrete conductance states provides strong evidence for channel activity. However, the ohmic I-V relationship differs from the outwardly-rectifying behavior in cells, which the authors appropriately attribute to differences in lipid composition and symmetrical recording conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "e02ad659-b6b8-43f5-ba5a-d4c25a0edc36",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Caspase-cleaved fPanx1 channels in proteoliposomes form a dye-permeable pore capable of SR-B uptake. Flow cytometry analysis showed that 83.6% of caspase-treated proteoliposomes contained SR-B at ~10-fold higher levels compared to untreated controls (20.4%), with concomitant reduction in GFP signal indicating C-terminal cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 provide the first direct demonstration of large molecule permeation through purified Panx1 channels. The ImageStream flow cytometry data with multiple controls (no caspase, no Panx1, CBX inhibition) convincingly show that dye uptake requires both fPanx1 and caspase activation. The correlation between GFP loss and SR-B uptake supports the mechanistic link to C-terminal cleavage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "74cb5166-c57b-4516-be2c-2ae78610b151",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TIRF microscopy analysis of dye efflux from proteoliposomes revealed that the rate of dye release is positively correlated with the extent of fPanx1 cleavage. Despite being smaller, the cationic dye RhB (479 Da) exhibited significantly slower efflux than the anionic dye SR-B (559 Da), demonstrating charge selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 establish charge-dependent permeation through caspase-activated Panx1 using single-particle TIRF microscopy. The positive correlation between cleavage and efflux rate (C37) provides quantitative support for the mechanism. The slower efflux of the smaller cationic dye (C38) directly demonstrates anion preference, which is a key finding for understanding Panx1 selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "6d55cf26-fd2e-406a-8734-35fc2f1c0f6a",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Size-dependent permeation analysis revealed that larger anionic dyes (Alexa 594, 880 Da; Alexa 555, 980 Da) permeate more slowly than SR-B but at rates comparable to the smaller cationic RhB. ATTO550 (1363 Da) and Dextran 3000 (3000 Da) could not permeate, establishing an upper size limit of ~1 kDa for Panx1 permeants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 systematically define the size and charge selectivity of caspase-activated Panx1. The comparison of multiple dyes with different sizes and charges provides strong evidence for both anion preference and a size cutoff around 1 kDa. The finding that larger anionic dyes permeate at rates similar to smaller cationic dyes (C40) reinforces the importance of charge over size within the permeable range.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "18990871-1dc5-400b-aa24-6a8fefb66b53",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Radiolabeled metabolite uptake assays demonstrated that caspase-activated fPanx1 is sufficient to conduct ATP, glutamate (anionic), and spermidine (cationic). Both ATP and spermidine can flux through the channel simultaneously when present together, albeit at slightly reduced levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 provide direct evidence that physiologically relevant metabolites permeate through purified Panx1 channels. The filtration-based assays with appropriate controls (no Panx1, no caspase) demonstrate that the channel itself is sufficient for metabolite flux without requiring cellular machinery. The concurrent flux experiment (C45) is particularly important for physiological relevance, showing that multiple metabolites can traverse the channel simultaneously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "a08faaf4-2ca2-4046-9cac-d6ec65235c49",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study validates that caspase-activated Panx1 serves as a direct conduit for molecules up to ~1 kDa, with marked preference for anionic over cationic molecules. This establishes Panx1 as the molecular pathway for ATP and other signaling molecule release during caspase-dependent cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 represent the main conclusions integrating all experimental findings. The data from proteoliposome reconstitution, dye permeation, and metabolite flux experiments collectively support these conclusions. This work definitively resolves the long-standing question of whether large molecules permeate directly through Panx1 channels, addressing the gap identified in C2 and C14.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "fc3e33c7-4d97-4463-82a5-2f213555bd1d",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Previous studies have reported variable conductance levels for Panx1 channels (up to ~500 pS) in different cell systems and activation conditions. Constitutive Panx1 activity (~70-80 pS) does not support ATP release, and recent bilayer recordings of hPANX1 showed both small (~30 pS) and very large (750 pS - 1.8 nS) conductance states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 accurately summarize prior literature on Panx1 conductance heterogeneity. These are appropriately cited background claims that contextualize the current findings. The authors correctly note the discrepancies in the field regarding conductance levels and their relationship to large molecule permeation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "ac5d1de3-e785-4946-9ee2-5a081ff12610",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous ion substitution experiments showed shifts in reversal potential with different anions but not cations, leading to the inference that Panx1 is exclusively anion-selective and impermeable to cations. These shifts were affected by mutations in R75, a positively charged residue near the W74 pore constriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 accurately represent prior electrophysiological studies on Panx1 ion selectivity. The authors appropriately cite this work to establish the prevailing view that Panx1 is anion-selective. Importantly, the current study challenges the conclusion of absolute cation impermeability (C54) by demonstrating cationic dye and metabolite permeation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "7a81df99-3051-42e5-a815-3b6c19ac2b83",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous studies predicted maximum Panx1 permeant size of 1270-1500 Da. The current study confirms that Alexa555 (980 Da) can permeate while ATTO550 (1363 Da) cannot, establishing that the pore accommodates molecules up to ~1 kDa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 appropriately contextualize the size selectivity findings within prior literature. The experimental determination of the size cutoff between 980 Da and 1363 Da (C56) provides more precise boundaries than previous estimates. This refinement is important for understanding which physiological molecules can permeate Panx1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "94b0438e-47f5-49d2-bda3-4d8ec3fddee4",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Recent cryoEM structures show that the transmembrane pore architecture is similar in full-length and C-terminal cleaved Panx1, with the narrowest constriction formed by W74 residues (~8-10 \u00c5 diameter). This constriction appears too small for large molecules, though molecular shape and flexibility may influence permeation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 accurately summarize structural findings from multiple cryoEM studies. The apparent discrepancy between the narrow pore diameter and observed large molecule permeation is appropriately noted as speculative (C60). This sets up the important question of how structural and functional data can be reconciled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "01b53ca4-213f-41b5-899e-2d88d1a5b8d5",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that caspase-activated Panx1 transitions between open and closed states, and that available structures may capture a state open for ions but closed for large molecules. Multiple open conformations or separate permeation pathways have been proposed, and caspase cleavage may permit conformations allowing large molecule permeation by removing a physical block.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C64 are largely speculative mechanistic proposals to reconcile structural and functional data. While C61 is supported by prior electrophysiology, C62-C64 are hypotheses without direct experimental validation in this study. The authors appropriately present these as possibilities rather than established facts, but they remain unproven mechanisms requiring future structural studies of the open state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "b2db6ace-15ec-4644-91da-063adc4c0452",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing that Panx1 is implicated in physiological processes through ATP release, has a four-transmembrane structure, is similar to other large-pore channels, and that previous studies in intact cells did not demonstrate direct permeation through the channel itself. Recent structures show a narrow pore (~9 \u00c5) that appears incompatible with large molecule permeation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 (excluding C3-C5 which are results) represent well-established background knowledge appropriately cited from the literature. These claims accurately frame the scientific context and identify the key gap (C2, C14) that the current study addresses. The structural information (C15) correctly represents the apparent paradox motivating this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "0736285d-b093-43e5-8ff3-d170fcff1211",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study demonstrates that caspase-activated Panx1 forms a dye-permeable pore favoring anionic large-molecule permeants up to ~1 kDa, though large cationic molecules can also permeate at lower rates. Panx1 provides a molecular pathway for flux of ATP, glutamate, and spermidine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 represent the core findings stated in the abstract. These are strongly supported by the comprehensive experimental evidence from proteoliposome reconstitution, bilayer recordings, flow cytometry, TIRF microscopy, and radiolabeled metabolite uptake assays. The multiple independent approaches converge on the same conclusions, providing robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "81897c5b-300e-44eb-8d33-f0d1d4281660",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Cleavage at the C-terminal caspase site is necessary and sufficient for Panx1 channel activation, though the channel can be cleaved at multiple sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is well-supported by citations to previous studies that systematically examined caspase cleavage sites. This established finding is important for interpreting the current results, as it justifies focusing on C-terminal cleavage as the activation mechanism. The Western blot in C19 confirms cleavage at expected sites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    },
+    {
+      "id": "069eca85-f88a-4d45-a0e0-775874ebfb0f",
+      "content_id": "0a735052-c2da-4233-ae2e-1f9815c2bb63",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A proposed alternative permeation pathway visible as a side tunnel in hPANX1 structure could support ion flux through unstimulated channels without large molecule permeation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C50 represents a hypothesis from cited work (Ruan et al., 2020) that the authors note requires further exploration. This is appropriately presented as speculative and is not directly tested in the current study. The proposal of separate pathways for ions versus large molecules remains an interesting but unproven hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:26:43.005741Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "64877b39-1703-41b2-b97e-3deac59efd28",
+      "result_id": "7855b5a6-a088-46b4-a850-4cb67cc19152"
+    },
+    {
+      "claim_id": "5bb5461d-230b-4a1f-93e4-ff853ca8dde8",
+      "result_id": "7855b5a6-a088-46b4-a850-4cb67cc19152"
+    },
+    {
+      "claim_id": "2291c87d-ea70-4076-be99-126cb5d58b21",
+      "result_id": "7855b5a6-a088-46b4-a850-4cb67cc19152"
+    },
+    {
+      "claim_id": "60ea1eb5-97a7-4f0e-8f43-373c35d6db1a",
+      "result_id": "7855b5a6-a088-46b4-a850-4cb67cc19152"
+    },
+    {
+      "claim_id": "ae902e71-b5f2-49e8-9401-cc7af3ea2c69",
+      "result_id": "652fcda6-0b1a-4ae3-9a07-e18eea7ef46a"
+    },
+    {
+      "claim_id": "0412a6a7-b925-4dc5-82d0-df66aabfcbda",
+      "result_id": "652fcda6-0b1a-4ae3-9a07-e18eea7ef46a"
+    },
+    {
+      "claim_id": "bbd9ac3f-ff92-4802-bd37-4ad00a6a8086",
+      "result_id": "652fcda6-0b1a-4ae3-9a07-e18eea7ef46a"
+    },
+    {
+      "claim_id": "8f2d0202-4d68-4e7f-9068-b2e2cb3f0cc4",
+      "result_id": "652fcda6-0b1a-4ae3-9a07-e18eea7ef46a"
+    },
+    {
+      "claim_id": "e5843cc7-8887-4f5e-856e-9ad2128828fb",
+      "result_id": "e4950adb-0bf6-4205-b4ad-0f250aca2ea7"
+    },
+    {
+      "claim_id": "1d27b1a4-e78f-408e-a7bd-dcc2147a3dae",
+      "result_id": "e4950adb-0bf6-4205-b4ad-0f250aca2ea7"
+    },
+    {
+      "claim_id": "7f69ee2f-2961-4b0e-829c-842f591b3dfd",
+      "result_id": "e4950adb-0bf6-4205-b4ad-0f250aca2ea7"
+    },
+    {
+      "claim_id": "68737174-e4ad-4901-bbb0-94c7e28a4cb4",
+      "result_id": "e4950adb-0bf6-4205-b4ad-0f250aca2ea7"
+    },
+    {
+      "claim_id": "7aa8d656-07fe-4be2-8c6c-7e655205390d",
+      "result_id": "e4950adb-0bf6-4205-b4ad-0f250aca2ea7"
+    },
+    {
+      "claim_id": "8f4e5153-c144-4a24-b1f6-caa4b1eb6213",
+      "result_id": "e02ad659-b6b8-43f5-ba5a-d4c25a0edc36"
+    },
+    {
+      "claim_id": "28842286-df11-49b7-b6cc-f4e0a22dfb44",
+      "result_id": "e02ad659-b6b8-43f5-ba5a-d4c25a0edc36"
+    },
+    {
+      "claim_id": "8aa38f0b-eb58-4ad8-89a8-2d9ad4b91fbe",
+      "result_id": "e02ad659-b6b8-43f5-ba5a-d4c25a0edc36"
+    },
+    {
+      "claim_id": "92736a7a-26f1-48a7-b898-62124cfe0c85",
+      "result_id": "e02ad659-b6b8-43f5-ba5a-d4c25a0edc36"
+    },
+    {
+      "claim_id": "ac17bd2e-e806-4e06-999f-8989ea22a6c8",
+      "result_id": "e02ad659-b6b8-43f5-ba5a-d4c25a0edc36"
+    },
+    {
+      "claim_id": "3a1375df-ea18-4458-8186-dab5efc084e8",
+      "result_id": "e02ad659-b6b8-43f5-ba5a-d4c25a0edc36"
+    },
+    {
+      "claim_id": "3ed16bbb-78e7-4249-8fa8-8f48de581793",
+      "result_id": "74cb5166-c57b-4516-be2c-2ae78610b151"
+    },
+    {
+      "claim_id": "c9a15447-a04d-46da-a1a2-e3a17388fc95",
+      "result_id": "74cb5166-c57b-4516-be2c-2ae78610b151"
+    },
+    {
+      "claim_id": "cba46347-f504-4d52-a0a0-cfafd359227a",
+      "result_id": "74cb5166-c57b-4516-be2c-2ae78610b151"
+    },
+    {
+      "claim_id": "86ecd1e3-03bc-4e2e-b7ee-a61e09a6d353",
+      "result_id": "6d55cf26-fd2e-406a-8734-35fc2f1c0f6a"
+    },
+    {
+      "claim_id": "53888fd0-e6c6-49ab-b99e-c4923225a1df",
+      "result_id": "6d55cf26-fd2e-406a-8734-35fc2f1c0f6a"
+    },
+    {
+      "claim_id": "b4257a92-49da-4831-86be-8ac2f7d160c5",
+      "result_id": "6d55cf26-fd2e-406a-8734-35fc2f1c0f6a"
+    },
+    {
+      "claim_id": "7335095e-af9e-4cc4-9882-fb3aaea483a2",
+      "result_id": "6d55cf26-fd2e-406a-8734-35fc2f1c0f6a"
+    },
+    {
+      "claim_id": "651c829a-2d9e-40f5-b196-04b4e1c1b9df",
+      "result_id": "6d55cf26-fd2e-406a-8734-35fc2f1c0f6a"
+    },
+    {
+      "claim_id": "b0f7b408-477c-4308-906f-e7f08128f7ab",
+      "result_id": "18990871-1dc5-400b-aa24-6a8fefb66b53"
+    },
+    {
+      "claim_id": "e0fd7844-8192-4467-8379-787fe2c1eecd",
+      "result_id": "18990871-1dc5-400b-aa24-6a8fefb66b53"
+    },
+    {
+      "claim_id": "a2695119-6911-42d5-8a10-2c3cae937396",
+      "result_id": "18990871-1dc5-400b-aa24-6a8fefb66b53"
+    },
+    {
+      "claim_id": "57e70256-16da-4f7e-94c2-5ae5ba8bd0d0",
+      "result_id": "a08faaf4-2ca2-4046-9cac-d6ec65235c49"
+    },
+    {
+      "claim_id": "dc6c11fe-070e-45d1-be4a-ed873cdef76c",
+      "result_id": "a08faaf4-2ca2-4046-9cac-d6ec65235c49"
+    },
+    {
+      "claim_id": "3b856b57-e0cd-42fa-a13e-ed777958f395",
+      "result_id": "a08faaf4-2ca2-4046-9cac-d6ec65235c49"
+    },
+    {
+      "claim_id": "ef5d4739-9fd7-4194-a60b-3136d635a0ae",
+      "result_id": "fc3e33c7-4d97-4463-82a5-2f213555bd1d"
+    },
+    {
+      "claim_id": "4e2be873-7976-4fc6-a644-8294add20b9e",
+      "result_id": "fc3e33c7-4d97-4463-82a5-2f213555bd1d"
+    },
+    {
+      "claim_id": "ccb12d2f-ade4-4646-a870-de60339f97b6",
+      "result_id": "fc3e33c7-4d97-4463-82a5-2f213555bd1d"
+    },
+    {
+      "claim_id": "2632a7f7-d8c1-40e2-8800-2089ca7e9aad",
+      "result_id": "ac5d1de3-e785-4946-9ee2-5a081ff12610"
+    },
+    {
+      "claim_id": "444ac780-0aed-4716-bc46-48359cde9f6d",
+      "result_id": "ac5d1de3-e785-4946-9ee2-5a081ff12610"
+    },
+    {
+      "claim_id": "17c997e8-231e-4db5-bcc8-dcbb60353935",
+      "result_id": "ac5d1de3-e785-4946-9ee2-5a081ff12610"
+    },
+    {
+      "claim_id": "0e21036b-e09c-4d78-9e89-c8f4e3f38cb9",
+      "result_id": "ac5d1de3-e785-4946-9ee2-5a081ff12610"
+    },
+    {
+      "claim_id": "f59e8ce8-e49b-4a59-af25-918b533d6954",
+      "result_id": "7a81df99-3051-42e5-a815-3b6c19ac2b83"
+    },
+    {
+      "claim_id": "2bc1c383-0a2a-4b6d-9a9e-448369fa265c",
+      "result_id": "7a81df99-3051-42e5-a815-3b6c19ac2b83"
+    },
+    {
+      "claim_id": "cd91a41a-5fdb-424f-8936-1bd1168d13f5",
+      "result_id": "7a81df99-3051-42e5-a815-3b6c19ac2b83"
+    },
+    {
+      "claim_id": "799fa091-6128-4198-a70d-f6d44dcaa2f5",
+      "result_id": "94b0438e-47f5-49d2-bda3-4d8ec3fddee4"
+    },
+    {
+      "claim_id": "46691e01-dd23-4cb6-baa4-fcd363017965",
+      "result_id": "94b0438e-47f5-49d2-bda3-4d8ec3fddee4"
+    },
+    {
+      "claim_id": "b606941c-2e85-4c63-811d-b62dc35c026a",
+      "result_id": "94b0438e-47f5-49d2-bda3-4d8ec3fddee4"
+    },
+    {
+      "claim_id": "48886ee0-1d07-4fd0-88bd-07bd8007ee4b",
+      "result_id": "01b53ca4-213f-41b5-899e-2d88d1a5b8d5"
+    },
+    {
+      "claim_id": "d86cbe81-a9f3-47c5-80b7-529999d0523e",
+      "result_id": "01b53ca4-213f-41b5-899e-2d88d1a5b8d5"
+    },
+    {
+      "claim_id": "ebb313a9-55c5-4230-8dd4-6babfd7232a1",
+      "result_id": "01b53ca4-213f-41b5-899e-2d88d1a5b8d5"
+    },
+    {
+      "claim_id": "0f587aa2-78bf-4318-a1d5-264a0993e7bd",
+      "result_id": "01b53ca4-213f-41b5-899e-2d88d1a5b8d5"
+    },
+    {
+      "claim_id": "3ce1cdfa-63ae-406b-8ddc-b814dfc7988d",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "d5b5f36b-39f5-4b01-a13f-fdf11d4193fe",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "da4be0db-6131-4e77-b7f6-138dc5bfdde3",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "415753c4-e6f5-4bf5-9d37-955f8070644e",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "9acbd58d-5f05-40e9-aaf4-db4bb974c4f7",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "296071d9-622b-4a4f-b5ad-5bbec521bffb",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "5bd9cafe-fbff-4709-a8bb-6172df5c124e",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "6eac2033-2781-4051-9e0a-35d4475b813b",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "e235f2e8-20d4-49f5-adfe-1832dfbec44d",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "4a7517b4-7734-4fc9-8c94-624af875a0a3",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "45dd86f5-879c-418e-ba09-160a7cc69659",
+      "result_id": "b2db6ace-15ec-4644-91da-063adc4c0452"
+    },
+    {
+      "claim_id": "570b041c-c9be-427b-b418-8d0e06d7f38d",
+      "result_id": "0736285d-b093-43e5-8ff3-d170fcff1211"
+    },
+    {
+      "claim_id": "703fc3ea-645a-428b-a6c6-fd849106886a",
+      "result_id": "0736285d-b093-43e5-8ff3-d170fcff1211"
+    },
+    {
+      "claim_id": "024299f2-94c0-4f21-98de-337cd2e305ff",
+      "result_id": "0736285d-b093-43e5-8ff3-d170fcff1211"
+    },
+    {
+      "claim_id": "06016d6d-3467-4a6c-9ade-5ad1715bd8ba",
+      "result_id": "81897c5b-300e-44eb-8d33-f0d1d4281660"
+    },
+    {
+      "claim_id": "9349a01f-2d55-4542-80aa-04b7a93b9d1c",
+      "result_id": "069eca85-f88a-4d45-a0e0-775874ebfb0f"
+    }
+  ],
+  "comparisons": []
+}

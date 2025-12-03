@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "SST neurons in the visual sector of the nRT preferentially project to dLGN, while PV neurons project more sparsely to dLGN and more densely to higher-order visual thalamus (LP) and somatosensory thalamus (VPM). Both SST and PV neurons are present and intermingled in the visual sector of nRT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C24-C31 are supported by comprehensive anatomical evidence including viral tracing (Figure 1B-D), confocal microscopy showing dense SST boutons and sparse PV boutons in dLGN, retrograde CTB labeling (Figure 1\u2014figure supplement 1), and quantification across multiple animals (n=2 Sst-Cre, n=3 Pvalb-Cre mice). The anatomical specificity is well-documented with appropriate controls and multiple complementary techniques.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Optogenetic activation of SST nRT neurons consistently and significantly reduces gamma power (30-80 Hz) in V1 across behavioral states (still and running), both with and without visual stimulation. This reduction in gamma power is the most consistent effect across all four recorded mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-C38 are supported by electrophysiological recordings from n=4 mice showing significant reduction in gamma power during SST nRT activation (Figure 2C-I, Table 1). Statistical significance is demonstrated (p<0.01 for gamma in both still and running states), and the effect is consistent across subjects. Effects on theta and beta bands were variable across mice, but gamma reduction was robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C48",
+      "C73"
+    ],
+    "result": "Optogenetic activation of SST nRT neurons significantly suppresses visual responses of both broad-spiking (BS) and narrow-spiking (NS) neurons in V1 across all cortical layers during both stationary and locomotion states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C48, C73 are supported by single-unit and multi-unit recordings showing significant reduction in firing rates for both BS and NS cells (Figure 2K, Table 1, p<0.003 for both cell types in still and running conditions). Current source density analysis confirmed effects across all cortical layers (Figure 2\u2014figure supplement 2). Sample sizes are adequate (n=134 BS, n=51 NS cells from 4 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Optogenetic activation of SST nRT neurons reduces visual information encoding in V1, as measured by both mutual information and decoding accuracy. This reduction occurs not only due to decreased firing rates but also due to altered spiking patterns, as decoding accuracy remains lower even when population spike counts are equalized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C55-C60 are supported by information-theoretic analysis and linear discriminant analysis showing reduced mutual information (Figure 6A,D) and decoding accuracy (98% to 81% for BS cells, 86% to 58% for NS cells, p<2e-11, Figure 6B,E). Critically, the equal spike count analysis (Figure 6C,F) demonstrates that information loss persists beyond simple rate reduction, indicating pattern changes. However, the LDA assumes independence between neurons, which may not hold, and the analysis would benefit from more sophisticated decoding methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C52"
+    ],
+    "result": "Optogenetic activation of PV nRT neurons produces minimal and often opposite effects compared to SST nRT activation, with non-significant changes in V1 gamma power and firing rates, and no effect on visual information encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C51-C52 are supported by data from n=4 mice showing non-significant effects of PV nRT activation on V1 (Figure 2\u2014figure supplement 3, Figure 3, Figure 6\u2014figure supplement 2). The opposite direction of effects (slight gamma increase vs. decrease) is consistent with the sparse anatomical projection from PV to dLGN. Statistical comparisons between SST and PV effects are provided (Figure 3, Table 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Optogenetic inhibition of SST nRT neurons increases firing rates of V1 neurons during running but does not significantly increase gamma power. Inhibition of PV nRT neurons has no significant effects on V1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by eNpHR experiments (Figure 5, Table 2, Figure 5\u2014figure supplements 1-2). SST inhibition increased firing rates during running (p<0.01) but gamma increase did not reach significance. PV inhibition had no significant effects. The asymmetry between activation and inhibition effects is noted but not fully explained, which is acknowledged as a known phenomenon in optogenetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C68",
+      "C69"
+    ],
+    "result": "Optogenetic activation of SST nRT neurons strongly suppresses both single-unit and multi-unit activity in dLGN, with dramatic reduction in field potentials across all frequency bands. Visual responses in dLGN are markedly reduced, and activation produces stronger effects than inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C68-C69 are supported by dLGN recordings from n=3 mice showing near-complete suppression of spiking activity (Figure 7, Figure 7\u2014figure supplement 1) and significant reduction in field potentials across all frequency bands (Figure 7\u2014source data 1). The asymmetry between activation and inhibition effects is documented (Figure 8B). These findings are consistent with the dense SST\u2192dLGN projection shown anatomically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Optogenetic activation of SST nRT neurons increases the coefficient of variation (CV) of dLGN responses to visual stimulation, indicating reduced reliability of visual information transmission. Inhibition does not significantly reduce CV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by CV analysis showing significant increase during SST activation (p=5.4e-7 for multi-units, Figure 7\u2014figure supplement 3A) but no significant decrease during inhibition (Figure 7\u2014figure supplement 3B). The CV analysis provides a measure of response reliability beyond simple rate changes. However, the effect was only significant for multi-unit recordings, not single-units, which may reflect statistical power issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Changes in LFP power produced by optogenetic manipulation of SST nRT neurons are not solely due to reduction in firing rate of V1 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by analysis showing weak or no correlation between percentage changes in firing rate and LFP power (Figure 2L, Table 1, Spearman's rho ranging from -0.12 to 0.19, all p>0.05). This suggests that network-level changes beyond simple rate modulation contribute to LFP power changes. However, the analysis is relatively simple and could be strengthened with more sophisticated approaches to relate spiking and LFP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "Locomotion increases gamma power and visual responses in V1 through VIP interneurons, and this modulatory system operates independently of SST nRT modulation, as SST nRT activation reduces gamma during both still and running states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72, C74 are supported by data showing locomotion increases gamma (Figure 2D, consistent with cited literature) and SST nRT activation reduces gamma in both behavioral states (Figure 2E,I). The independence is inferred from the additive/orthogonal effects across states. However, this is an inference rather than direct demonstration of independence\u2014formal interaction analysis or simultaneous manipulation would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establishing prior knowledge about gamma oscillations, attention, nRT function, visual pathways, and gaps in understanding regarding nRT's role in modulating gamma activity and visual information in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C23 are background/context claims supported by appropriate citations to prior literature. These establish the motivation and knowledge gaps addressed by the study. The citations appear appropriate and the characterization of prior work is reasonable. Claim C23 about uncertainty regarding gamma and information encoding in sensory cortex is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "SST nRT neurons receive mainly subcortical inputs and are positioned to exert bottom-up regulation of visual attention, while PV nRT neurons receive mainly cortical inputs. VIP interneurons mediating locomotion effects receive top-down inputs from higher cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 are supported by citation to prior work (Clemente-Perez et al., 2017) on somatosensory nRT, but the current study does not directly demonstrate input patterns to visual nRT neurons. Claims C77-C78 involve speculation about functional roles based on anatomical patterns. The inference about bottom-up vs. top-down regulation is reasonable but not directly tested. Additional experiments tracing inputs to visual sector SST/PV neurons would be needed to fully support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SST nRT neurons could be a therapeutic target for modulating visual attention, given associations between gamma power and attention, nRT dysfunction in attention disorders, and the demonstrated ability of SST nRT neurons to modulate gamma and visual information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C82 combine established findings from other studies (citations provided) with speculation about therapeutic potential. While the logic is reasonable\u2014SST nRT neurons modulate gamma and information encoding, and these are associated with attention\u2014the study does not directly test attention or demonstrate therapeutic potential. This is appropriately framed as a proposal/speculation, but would require behavioral attention experiments and disease model studies to be supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Discussion of comparative anatomy across species (carnivores, primates, humans) and speculation about functional implications, including potential relevance to human brain and attention switching mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C94 involve comparative anatomy and speculation about cross-species relevance and functional implications. The citations to prior anatomical work in other species appear appropriate (C83-C89). The inference about functional segregation in Galago (C90) is reasonable but speculative. Claims about relevance to humans (C94) and attention switching (C91-C92) are appropriately qualified as speculative but lack direct experimental support. These represent reasonable discussion points but would require additional comparative and functional studies to be fully supported.",
+    "result_type": "MINOR"
+  }
+]

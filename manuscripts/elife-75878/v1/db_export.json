@@ -1,0 +1,1572 @@
+{
+  "submission": {
+    "id": "a988ff54-46bc-4c7f-8946-d3bc6b432ed8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:26:13.197101Z",
+    "updated_at": "2025-12-03T18:26:13.197101Z"
+  },
+  "content": [
+    {
+      "id": "baff2d7e-a664-4956-b80c-578738925836",
+      "submission_id": "a988ff54-46bc-4c7f-8946-d3bc6b432ed8",
+      "content_type": "manuscript",
+      "content_text": "# Active morphogenesis of patterned epithelial shells\n\n## Authors\n\n- Diana Khoromskaia<sup>1</sup> ([ORCID: 0000-0003-2597-6336](https://orcid.org/0000-0003-2597-6336))\n- Guillaume Salbreux<sup>1</sup> ([ORCID: 0000-0001-7041-1292](https://orcid.org/0000-0001-7041-1292)) \u2020\n\n### Affiliations\n\n1. The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))\n2. University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))\n\n\u2020 Corresponding author\n\n## Abstract\n\nShape transformations of epithelial tissues in three dimensions, which are crucial for embryonic development or in vitro organoid growth, can result from active forces generated within the cytoskeleton of the epithelial cells. How the interplay of local differential tensions with tissue geometry and with external forces results in tissue-scale morphogenesis remains an open question. Here, we describe epithelial sheets as active viscoelastic surfaces and study their deformation under patterned internal tensions and bending moments. In addition to isotropic effects, we take into account nematic alignment in the plane of the tissue, which gives rise to shape-dependent, anisotropic active tensions and bending moments. We present phase diagrams of the mechanical equilibrium shapes of pre-patterned closed shells and explore their dynamical deformations. Our results show that a combination of nematic alignment and gradients in internal tensions and bending moments is sufficient to reproduce basic building blocks of epithelial morphogenesis, including fold formation, budding, neck formation, flattening, and tubulation.\n\n## Introduction\n\nMorphogenesis of embryos and the establishment of body shape rely on the three-dimensional deformation of epithelial sheets which undergo repeated events of expansion, contraction, convergence-extension, invagination, evagination, tubulation, and branching (Gilbert and Barresi, 2020). Tissue folding, for instance, is involved at different steps of embryogenesis (Kominami and Takata, 2004; Sui et al., 2018), organ (Sumigray et al., 2018), or entire organism development (Livshits et al., 2017; Braun and Keren, 2018). Recently, the growth of in vitro organoids, organ-like structures derived from stem cells capable of self-renewal and self-organisation, has revealed the intrinsic ability of biological systems to self-organise into complex structures from simple building blocks (Huch et al., 2017; Kamm et al., 2018; Rossi et al., 2018). Early steps in organoid self-organisation often start through the formation of a hollow, fluid-filled unpatterned sphere, undergoing spontaneous symmetry breaking (Ishihara and Tanaka, 2018) for example, in neural tube (Meinhardt et al., 2014) or intestinal (Serra et al., 2019; Yang et al., 2021) organoids. How this repertoire of shape changes and complex organisation emerges physically is a fundamental question.\n\nContinuum theories of active materials, treating the epithelium as an active liquid crystal, have proven highly successful to achieve an understanding of the mechanics and flows of cellular collective motion. Epithelia cultured in vitro exhibit patterns of orientational order and spontaneous flows which are consistent with predictions from hydrodynamic theories of active matter (Duclos et al., 2017; Duclos et al., 2018; Blanch-Mercader et al., 2021a). Constitutive equations involving a shear decomposition of tissue area and anisotropic elongation into cell shape changes, cell division, and cellular topological transitions can reproduce basic features of the developing Drosophila pupal wing (Etournay et al., 2015; Popovi\u0107 et al., 2017). Recently, several studies established a link between topological defects in tissue order, provided by cell elongation or internal anisotropic cellular structure, and morphogenetic events (Kawaguchi et al., 2017; Saw et al., 2017; Mueller et al., 2019; Maroudas-Sacks et al., 2021).\n\nHere, we propose a description of three-dimensional deformations of a patterned epithelial spheroid, considered as a shell of active liquid crystal. We consider an active elastic shell theory which takes into account in-plane tensions and internal bending moments (Lomholt, 2006; Maitra et al., 2014; Sahu et al., 2017; Salbreux and J\u00fclicher, 2017). Internal bending moments arise from an inhomogeneous distribution of stress across the tissue. Such inhomogeneities can arise from, for example, changes in cytoskeletal organisation along the epithelium apico-basal axis, or from apposed epithelial tissues with different mechanical properties (Braun and Keren, 2018; Maroudas-Sacks et al., 2021). Apico-basal gradients of contractility, for instance, play a key role in morphogenetic processes (Martin and Goldstein, 2014; Sui et al., 2018) and are effectively taken into account here by active bending moments.\n\nWe consider an initially spherically symmetric tissue subjected to spatially modulated internal forces. Our rationale is to consider a situation where chemical and mechanical processes are uncoupled, such that cell\u2013cell communication mechanisms ensure symmetry-breaking of the sphere, which is then converted into a pattern of mechanical forces (Ishihara and Tanaka, 2018). We consider a particularly simple pattern where the spherical tissue is decomposed into two regions, subjected to different active forces, and explore shape changes that result from this pattern (Figure 1a). We compare the situation where internal tensions and bending moments are isotropic to a situation where a nematic field, provided by cellular anisotropic structures, orients the internal tensions and bending moments.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75878/elife-75878-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic of an epithelial tissue with a cellular state pattern. (b) Parametrisation of the axially symmetric shell and its deformation with the flow $v$, and components of the tension and torque tensors. We note that $m^{\u03d5\u2062s}=m\u00af^{\u03d5\u2062\u03d5}\u2062x$ and $m^{s\u2062\u03d5}=-m\u00af^{s\u2062s}/x$. (c) Stresses integrated across the thickness of the sheet result in tensions $t_{i\u2062j}$ and bending moments $m_{i\u2062j}$ acting on the midsurface. Anisotropic and possibly different tensions (dark-blue arrow crosses) on the apical and basal sides of the epithelium result in anisotropies in $t_{i\u2062j}$ and $m\u00af_{i\u2062j}$, which can be captured by a nematic order parameter $Q_{i\u2062j}$ (e.g. blue rods on the top surface).\n\n## Model\n\n### Viscoelastic nematic active surface model for epithelial mechanics\n\nWe first discuss our mechanical description of the deforming tissue. We represent an epithelium as an active surface flowing with velocity $v$ (Salbreux and J\u00fclicher, 2017). The surface is taken to be elastic with respect to area changes, and fluid with respect to pure shear in the plane of the surface. Indeed, cellular rearrangements can fluidify in-plane epithelial flows by allowing cell elongation and cellular elastic stresses to relax on long time scales (Popovi\u0107 et al., 2017). Here, we consider such long enough time scales of hours to days which are relevant to organoid and developmental morphogenesis (Gilbert and Barresi, 2020). We also assume here that cell division and apoptosis or delamination are not occurring, such that elastic isotropic stresses do not relax (Ranft et al., 2010). Implicitly, we assume that cells have a preferred cell area.\n\nEpithelia typically have a non-negligible thickness compared to characteristic transverse dimensions, and the apical and basal surfaces have different structures and are regulated differently. Notably, the basal surface is in contact with the basal lamina, a layer of extracellular matrix (Khalilgharibi and Mao, 2021). Therefore, a purely two-dimensional representation of epithelial stresses would miss essential aspects of their mechanics. We therefore introduce here the tension tensor $t^{i\u2062j}$, but also the bending moment tensor $m^{i\u2062j}$ which captures internal torques arising from differential stresses acting along the surface cross section (Figure 1b and c). We assume that the surface possesses a bending rigidity, captured by a bending modulus $\u03ba$. When the curvature deviates from a flat layer, a bending moment results from the surface curvature (Equation 6). In addition, active bending moments can arise in the surface (Salbreux and J\u00fclicher, 2017), for instance, due to actomyosin-generated differential active stresses along the apicobasal axis (Messal et al., 2019; Fouchard et al., 2020).\n\nCellular force generating elements are not necessarily isotropic; for instance, because cytoskeletal structures exhibit a preferred orientation (Martin, 2020) or inhomogeneous distribution across cellular interfaces (Bertet et al., 2004), or because the epithelial cells themselves exhibit an elongation axis (Duclos et al., 2017). Therefore, we introduce a coarse-grained surface nematic order parameter $Q$ which quantifies the average level of orientational order in the tissue. We assume that the nematic order parameter is tangent to the active surface.\n\n#### Force balance\n\nOn a curved surface we define the rotated bending moment tensor $m\u00af^{i\u2062j}=-m^{i\u2062k}\u03f5_{k}^{j}$, which we adopt for convenience. The local force balance projected on the tangential and normal directions reads (Salbreux and J\u00fclicher, 2017)\n\n$$\n\u2207_{i}t^{ij}+C_{i}^{j}t_{n}^{i}=\u2212f^{ext,j}\n$$\n\n\n\n$$\n\u2207_{i}t_{n}^{i}\u2212C_{ij}t^{ij}=\u2212f_{n}^{ext}\u2212P,\n$$\n\nwhere notations of differential geometry are introduced in Appendix 1; briefly $C_{i\u2062j}$ is the curvature tensor, $g_{i\u2062j}$ denotes the metric tensor, and $\u03f5_{i\u2062j}$ the antisymmetric Levi-Civita tensor, $n$ the vector normal to the surface, $t^{i\u2062j}$ is the tangential contribution of the tension tensor and $t_{n}^{i}$ its normal contribution, and $\\nabla_{i}$ denotes the covariant derivative on the surface. The tangential and normal torque balance provide the transverse tension and antisymmetric part of the tangent tension tensor:\n\n$$\nt_{n}^{i}=\u2207_{k}m\u00af^{ki},\n$$\n\n\n\n$$\n\u03f5_{ij}t^{ij}=C_{ij}m^{ij}.\n$$\n\nWe assume an external force density $f^{ext}=f_{n}^{ext}n+f^{ext,j}e_{j}$ acting on the surface in addition to a difference of hydrostatic (uniform) pressure $P=P_{i\u2062n}-P_{o\u2062u\u2062t}$, but no external torques (Figure 1). Here, we consider situations at low Reynolds number, where inertial forces may be neglected, and where additional external forces are negligible, such that the surface as a whole is force-free, $\u222e_{S}dSf^{ext}=0$. Dissipative couplings to the external fluid are ignored here as the characteristic viscosity of a biological tissue ($\u223c10^{5}$ Pa s; Marmottant et al., 2009; Guevorkian et al., 2010) is several orders of magnitude larger than that of water ($10^{-3}$ Pa s).\n\n#### Constitutive equations\n\nIn line with our hypothesis describing the material properties of an epithelium, we use the following constitutive equations:\n\n$$\nt_{s}^{ij}=(2Ku+\u03b6+(\u03b7_{b}\u2212\u03b7)v_{k}^{k})g^{ij}+2\u03b7v^{ij}+\u03b6_{n}Q^{ij},\n$$\n\n\n\n$$\nm\u00af^{ij}=(2\u03baC_{k}^{k}+\u03b6_{c}+\u03b7_{cb}\\frac{D}{Dt}C_{k}^{k})g^{ij}+\u03b6_{cn}Q^{ij}.\n$$\n\nwhere $t_{s}^{i\u2062j}$ is the symmetric part of the tension tensor and, on a curved surface, the strain rate tensor $v^{i\u2062j}$ and the corotational time derivative of the curvature tensor $\\frac{D}{Dt}\u2062C^{i\u2062j}$ are given by (Salbreux and J\u00fclicher, 2017)\n\n$$\nv^{ij}=\\frac{1}{2}(\u2207^{i}v^{j}+\u2207^{j}v^{i})+C^{ij}v_{n},\n$$\n\n\n\n$$\n\\frac{D}{Dt}C^{ij}=\u2212\u2207^{i}(\u2202^{j}v_{n})\u2212v_{n}C^{i}_{k}C^{kj}+v_{k}\u2207^{k}C^{ij}+\\omega_{n}(\u03f5^{ik}C_{k}^{j}+\u03f5^{jk}C_{k}^{i}),\n$$\n\nwith $\\omega_{n}=\\frac{1}{2}\u2062\u03f5^{i\u2062j}\u2062\\nabla_{i}\u2061v_{j}$ the normal component of the vorticity. $u$ is the area strain, measuring local changes of area relative to a reference value; a precise definition is introduced in Equation 14. $Q^{i\u2062j}$ is a traceless, symmetric tensor characterising nematic orientational order on the surface.\n\nWe now discuss these constitutive equations. The surface elastic response is determined by the area elastic modulus $K$ and the bending modulus $\u03ba$. The dynamical deformations of the surface are characterised by the two-dimensional shear and bulk viscosities $\u03b7$ and $\u03b7_{b}$ and the bulk bending viscosity $\u03b7_{c\u2062b}$. While the shear and bulk viscosities penalise in-plane isotropic and anisotropic deformation rates, the bending viscosity penalises the rate of change of total surface curvature $C_{k}^{k}$. The bending viscosity dampens normal deformations and prevents bending modes, which would otherwise have no dissipative cost and could result in numerical instabilities.\n\nThe remaining contributions to Equations 5; 6 proportional to $\u03b6$, $\u03b6_{n}$, $\u03b6_{c}$, $\u03b6_{c\u2062n}$ correspond to active tensions and bending moments. $\u03b6$ is an isotropic active surface tension, $\u03b6_{n}$ is the in-plane nematic active stress, with $\u03b6_{n}>0$ usually referred to as the \u2018contractile\u2019 active stress and $\u03b6_{n}<0$ as the \u2018extensile\u2019 active stress (Marchetti et al., 2013). $\u03b6_{c}$ is the isotropic bending moment, which locally favours a spontaneous curvature $C_{k}^{k}=\u2212\u03b6_{c}/(2\u03ba)$. If the active surface corresponds simply to two parallel layers under surface tension $\\gamma_{a}$, $\\gamma_{b}$ (such as an epithelium with apical surface tension $\\gamma_{a}$ and basal surface tension $\\gamma_{b}$), and separated by a distance $h$, an active isotropic bending moment $\u03b6_{c}\u223ch\u2062(\\gamma_{a}-\\gamma_{b})/2$ emerges in the surface to lowest order in the curvature tensor. The term in $\u03b6_{c\u2062n}$ corresponds to an anisotropic active bending moment. In the bilayer picture, where the active surface corresponds to two layers $a$ and $b$, it could generally arise from differences between the two layers in the level of order $Q_{ij}^{a}$ and $Q_{ij}^{b}$ or in the level of nematic active stress $\u03b6_{n}^{a}$ and $\u03b6_{n}^{b}$. For example, such differences could stem from two contractile (respectively extensile) layers with perpendicular nematic orientations $+Q_{i\u2062j}$ and $-Q_{i\u2062j}$ (Figure 1c), or from two layers with parallel nematic order, but one subjected to contractile active stresses and the other to extensile active stresses.\n\nIn the absence of external forces, deformations of the epithelial shell are driven by distributions of active tensions and bending moments, which are prescribed on it through the isotropic profiles $\u03b6\u2062(s)$ and $\u03b6_{c}\u2062(s)$, the anisotropic components proportional to $\u03b6_{n}\u2062(s)$ and $\u03b6_{c\u2062n}\u2062(s)$, and the shape-dependent nematic order parameter.\n\nWe note that Equations 5 and 6 can be seen as generic constitutive equations for a nematic active surface with broken up-down symmetry but no broken chiral or planar-chiral symmetry, arising from an expansion in the curvature tensor and in the nematic order parameter $Q_{i\u2062j}$ of the tensor $t_{s}^{i\u2062j}$ and $m\u00af_{i\u2062j}$ (Salbreux and J\u00fclicher, 2017; Salbreux et al., 2022). For simplicity some allowed additional couplings entering the generic constitutive equations have not been taken into account here, notably active contributions to the tension tensor (Equation 5) and bending moment tensor (Equation 6) proportional to the curvature tensor $C_{i\u2062j}$. Salbreux et al., 2022 provide a more general list of possible couplings for active fluid nematic surfaces.\n\n#### Nematic order parameter\n\nFor simplicity here we assume that the nematic order parameter minimises an effective free energy, thus ignoring potential active effects on the ordering (Salbreux et al., 2022). We consider the following effective free energy of the nematic on a curved surface (De Gennes and Prost, 1995; Jiang et al., 2007; Kralj et al., 2011; Pearce et al., 2019):\n\n$$\nF=\\intdS(\\frac{k}{2}(\u2207_{i}Q^{jk})(\u2207^{i}Q_{jk})\u2212\\frac{a}{4}Q_{ij}Q^{ij}+\\frac{a}{16}(Q_{ij}Q^{ij})^{2}),\n$$\n\nwith the Frank elastic constant $k$, which is assumed to be equal for all distortions. The Landau\u2013de Gennes contribution is chosen such that for $k=0$ the aligned state with $Q_{ij}Q^{ij}=2$ is a minimiser for $a>0$. Additional coupling terms between the nematic and curvature tensor are not considered here for simplicity (Napoli and Vergori, 2012).\n\n### Deformations of a polarised active sphere\n\nWe now turn to describe axisymmetric deformations of a closed nematic active surface.\n\n#### Geometric setup\n\nThe epithelium is represented by a thin spherical shell undergoing axisymmetric deformations (Figure 1b). Its two-dimensional midsurface $X\u2062(\u03d5,s)\\in\u211d^{3}$ is parametrised by the arc length coordinate $s\\in[0,L]$ and the angle of rotation $\u03d5\\in[0,2\u2062\\pi]$ as\n\n$$\nX(\u03d5,s)=(x(s)cos\u2061\u03d5,x(s)sin\u2061\u03d5,z(s)).\n$$\n\nThe local tangent basis is given by ${e_{\u03d5},e_{s}}$, and $n$ is the outward-pointing surface normal. The geometry of axisymmetric surfaces is described further in Appendix 1. We require that the metric component $g_{s\u2062s}=1$, which implies relations between the tangent angle $\u03c8\u2062(s)\\in[0,\\pi]$ and the shape functions $x\u2062(s)$ and $z\u2062(s)$\n\n$$\n\u2202_{s}x=cos\u2061\u03c8,\n$$\n\n\n\n$$\n\u2202_{s}z=sin\u2061\u03c8,\n$$\n\nwhich, together with the meridional principal curvature\n\n$$\nC_{s}^{s}=\u2202_{s}\u03c8,\n$$\n\nare sufficient to reconstruct the surface shape from the curvature $C_{s}^{s}$. In this axisymmetric setup, the velocity field reads $v=v^{s}e_{s}+v_{n}n$, with $v^{s}$ the tangential and $v_{n}$ the normal velocities.\n\nThe undeformed initial surface is a sphere $S_{0}$ with radius $R_{0}$, and all quantities defined on it are denoted with a subscript \u20180\u2019. We define the area strain on a point of the surface as\n\n$$\nu=\\frac{dS\u2212dS_{0}}{dS_{0}},\n$$\n\nwhere $dS$ is the surface area element at the point considered on the surface, and $dS_{0}$ is the surface area element of the same material point on the sphere. With this definition, $u=0$ on the initial sphere. We denote $s_{0}\u2062(s)$ the arc length position on the undeformed sphere $S_{0}$ of a material point at arc length position $s$ on the deformed sphere. One then has $u=f_{\u03d5}\u2062f_{s}-1$ with $f_{s}=\\frac{d\u2062s}{d\u2062s_{0}}$ the meridional stretch and $f_{\u03d5}=\\frac{x}{x_{0}}$ the circumferential stretch. Integrating $f_{s}^{\u22121}=f_{\u03d5}/(u+1)$ yields the arc length reparametrisation $s_{0}\u2062(s)$ between the initial and the deformed surface. The Lagrangian time derivative of the area strain (Equation 14) is related to the flow through\n\n$$\n\\frac{D}{Dt}u=(1+u)v_{k}^{k}.\n$$\n\n#### Nematic order\n\nHere, with axial symmetry, the nematic tensor $Q_{i\u2062j}$ has the non-zero component $q=Q_{\u03d5}^{\u03d5}=-Q_{s}^{s}$. On the closed shell, the nematic director (Appendix 3), which represents the alignment, will have two +1 topological defects at the poles (Figure 3a) as a consequence of the Poincar\u00e9\u2013Hopf theorem (Hopf, 1927). The order parameter $q$ vanishes there, creating defect cores of size $l_{c}=\\sqrt{k/a}$, which is the characteristic nematic length. In this geometry the Euler\u2013Lagrange equation resulting from the free energy (Equation 9) is\n\n$$\n\u2202_{s}^{2}q=\\frac{1}{2l_{c}^{2}}q(q^{2}\u22121)+\\frac{cos\u2061\u03c8}{x}(4\\frac{cos\u2061\u03c8}{x}q\u2212\u2202_{s}q).\n$$\n\nAn example solution of Equation 16 on the sphere is shown in Figure 3b. From the two possible states with $q=\\pm1$ in the bulk, respectively, we choose $q=1$ for reference. This corresponds to circumferential alignment of the nematic order (Figure 3a, right). The sign of the tensions and bending moments is then only controlled by the $\u03b6$-prefactors. For example, a nematic tension with $\u03b6_{n}>0$ corresponds to circumferential active contraction, resulting in an elongated shape. For nematic bending moments, if one chooses $Q_{i\u2062j}$ to represent the order parameter on the outer side of the shell, the sign convention is such that $\u03b6_{cn}>0$, $q>0$ results in circumferential contraction on the outer side and contraction along the meridians on the inner side of the shell. We note that the shape is only influenced by the order parameter via the active tension $\u03b6_{n}\u2062Q^{i\u2062j}$ and the active moment $\u03b6_{c\u2062n}\u2062Q^{i\u2062j}$, but is otherwise insensitive to the nematic elastic energy (Equation 9). Minimisation of the Frank free energy by deformations of passive nematic surfaces has been previously discussed (Jiang et al., 2007).\n\n#### Active profiles\n\nWe consider initially spherical epithelial shells containing an active region that drives the deformation. For the steady-state analysis, this region is a circular patch of size $l_{a}\\leqL_{0}$ (Figure 1b), such that the active terms are given on $S_{0}$ by step-like profiles, for example\n\n$$\n\u03b6_{c}(s_{0})={\u03b6_{c}^{0}+\\delta\u03b6_{c},if\u00a0s_{0}\\in[0,l_{a}]\u03b6_{c}^{0},otherwise\n$$\n\nand similarly for $\u03b6\u2062(s_{0})$, $\u03b6_{n}\u2062(s_{0})$, and $\u03b6_{c\u2062n}\u2062(s_{0})$. The circular patch deforms with the material points, which reflects that the active properties are associated with a predefined group of cells. If not stated otherwise, the values outside the active region are $\u03b6^{0}=\u03b6_{c}^{0}=\u03b6_{n}^{0}=\u03b6_{c\u2062n}^{0}=0$. This passive part of the surface is governed by the constitutive equations 5 and 6, but with vanishing active terms.\n\nIn dynamical simulations, active tension and bending moment profiles are defined on the spherical surface at time $t=0$ using sigmoid functions $f\u2062(x,\\mu,\\sigma)$ of the form\n\n$$\nf(x,\\mu,\\sigma)=1\u2212(1+e^{\u2212\\frac{x\u2212\\mu}{\\sigma}})^{\u22121},\n$$\n\nfor their space and time dependence. For instance, the active bending moment profile is defined on $S_{0}$ as\n\n$$\n\u03b6_{c}(s_{0},t=0)=(1\u2212f(t=0,\\mu_{t},\\sigma_{t}))(\u03b6_{c}^{0}+\\delta\u03b6_{c}f(s_{0},l_{a},\\sigma_{s}))\n$$\n\nas a smooth version of the step-profile Equation 17, and $\u03b6$, $\u03b6_{n}$, and $\u03b6_{c\u2062n}$ are defined analogously. The profile is then advected with the material points (Figure 1b), while its intensity increases through the time-dependent sigmoid (e.g. Figure 2d).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75878/elife-75878-fig2-v1.jpg)\n\n**Figure 2.:** (a, e) Shape diagram. (b, f) Details of shape diagram illustrating different behaviours of solution branches. The ideal neck line (green) represents the bending moment difference required to create budded shapes consisting of two spheres with $u=0$, as given by Equation 24. (c) Examples of solution branches in the $(\\delta\u2062\u03b6_{c},V)$-plane corresponding to four different regions in (b). (g) Examples of solution branches in the $(\\delta\u2062\u03b6_{c},P)$-plane chosen from three different regions in (e). (d, h) Dynamic simulations of shape changes, for parameter values indicated in the shape diagrams (a, e). (i) Neck radius and curvatures at the neck as functions of $\\delta\u2062\u03b6_{c}$ for the example $l_{a}/L_{0}=0.04$ in (g). Other parameters: $K~=10^{3},\u03b7~_{c\u2062b}=10^{-2}$, $\u03b7~_{V}=10^{-4}$.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75878/elife-75878-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Details of the steady-state solutions with nearly closed necks formed by isotropic bending moments for free volume (a) and conserved volume (b), and $l_{a}/L_{0}=0.9$.The location of the neck, taken as the point where $C_{\u03d5}^{\u03d5}$ is maximal, is marked by a grey line in the plots. (a) The shape is characterised by $t_{s}^{s}=t_{n}^{s}=u=0$ and constant.$m\u00af_{s}^{s}$. (b) Here, $t_{s}^{s}$ changes sign and $m\u00af_{s}^{s}$ is continuous across the neck.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75878/elife-75878-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Maximal relative surface area of the steady-state shapes measured along a solution branch for each $l_{a}/L_{0}$ in the case of conserved volume, corresponding to shapes shown in Figure 2e\u2013g.\n\n#### Volume\n\nWe consider two possibilities for the volume enclosed by the epithelium. In one limit the tissue is assumed to be impermeable and the enclosed volume is treated as an incompressible fluid exerting hydrostatic pressure on the tissue. The volume is conserved when the shell deforms:\n\n$$\nV=V_{0},\n$$\n\nwith the pressure $P$ acting as the Lagrange multiplier.\n\nIn the other limit the tissue is fully permeable. At steady state, in this limit the volume can change freely and no pressure acts on the tissue, $P=0$. In dynamical simulations, we introduce a volume viscosity $\u03b7_{V}$ such that the pressure is coupled to the volume change via\n\n$$\nP=\u2212\u03b7_{V}\u2202_{t}V\n$$\n\nwhere $\u03b7_{V}$ is a parameter chosen to be small enough that the internal pressure is small compared to other forces.\n\n#### Stationary shapes\n\nFor given profiles of active tensions and bending moments, steady-state shapes are obtained as solutions of the mechanical equilibrium equations. Those are a system of non-linear ode\u2019s containing the force and torque balances Equations 1\u20134, the geometric Equations 11\u201313, the constitutive relations Equations 5\u20138 and Equation 14 with vanishing velocities $v^{s}=v_{n}=0$, and, if applicable, the nematic equilibrium Equation 16.\n\n#### Dynamical deformations\n\nIn the dynamical version of the model a given active profile generates a velocity $v(\u03d5,s,t)$, whose normal part deforms the surface (Figure 1b). The components ${v^{s},v_{n}}$ of this instantaneous velocity are obtained by solving the force and torque balance Equations 1\u20134 (derived for the axisymmetric surface in Equations 63\u201365), together with the constitutive Equations 5\u20138, on the shape $X\u2062(\u03d5,s,t)$. Since $u\u2062(s,t)$ and $Q_{i\u2062j}\u2062(s,t)$ are also given, these constitute a linear system of ode\u2019s. The shape is evolved in time in a Lagrangian approach, in which material points move according to the full-velocity vector $v$,\n\n$$\n\u2202_{t}X=v.\n$$\n\nSurface quantities, such as the active profiles and the area strain, are advected accordingly. The nematic order parameter evolves in time quasi-statically, where we assume that it relaxes instantaneously to the solution of Equation 16 written on the deformed surface at time $t$.\n\n#### Dimensionless variables\n\nThe equations are made dimensionless (marked by tilde) by rescaling tensions by $\u03ba/R_{0}^{2}$, bending moment densities by $\u03ba/R_{0}$, lengths by $R_{0}$, force densities by $\u03ba/R_{0}^{3}$, viscosities by the two-dimensional shear viscosity $\u03b7$ of the epithelium, times by the characteristic time scale $\\tau_{a}=\u03b7\u2062R_{0}^{2}/\u03ba$ , and velocities by $R_{0}/\\tau_{a}$. This leaves the dimensionless parameters $K~=K\u2062R_{0}^{2}/\u03ba$, $l~_{c}=l_{c}/R_{0}$, $\u03b7~_{b}=\u03b7_{b}/\u03b7$, $\u03b7~_{c\u2062b}=\u03b7_{c\u2062b}\u2062R_{0}^{2}/\u03b7$ and $\u03b7~_{V}=\u03b7_{V}\u2062R_{0}^{4}/\u03b7$ to be fixed. We choose to set $\u03b7~=\u03b7~_{b}=1$, $\u03b7~_{V}=10^{-4}$ for fast relaxation of the volume, and the nematic length scale is set to $l~_{c}=0.1$. Working under the assumptions of linear shell theory for a homogeneous thin shell (Reddy, 2006), one can relate the elastic moduli to each other via the thickness $h$ of the cell layer, and express $K~=12\u2062(R_{0}/h)^{2}$. In simulations we use $K~=1000$, corresponding to $h/R_{0}\u22480.1$, which covers a range of systems from gastrulating embryos (e.g. sea urchin Davidson et al., 1995) to organoids (Serra et al., 2019). Similarly, for the bulk bending viscosity we have $\u03b7~_{c\u2062b}\u223c(h/R_{0})^{2}=10^{-2}$.\n\n### Numerical methods\n\nFor both the steady-state computation and the dynamics, the resulting sets of ode\u2019s are integrated numerically with the boundary-value-problem solver bvp4c of MATLAB, which implements a fourth-order collocation method on an adaptive spatial grid (Kierzenka and Shampine, 2001). The equations are solved on the full interval $[0,L]$, and geometrical singularities at the poles are handled using analytical limits at $s=0,L$ (Appendix 6). Any integral constraint, such as volume conservation, is rewritten as a boundary value problem and added to the system of ode\u2019s to be solved.\n\nThe dynamics simulations start with a sphere at time $t~=0$. We study each of the four active effects separately. The corresponding active profile is switched on smoothly via a sigmoid function in time, such that it reaches its target intensity at $t~\u22480.02$. The time integration according to Equation 22 is done with an explicit Euler method with adaptive step size via\n\n$$\nX^{\u2032}(\u03d5,s,t+\\deltat)=X(\u03d5,s,t)+\\deltatv(\u03d5,s,t).\n$$\n\nIn order to keep the force and torque balance equations in the form given by Equations 63\u201365, the updated surface is reparametrised as $X^{\u2032}\u2062(\u03d5,s^{\u2032},t+\\delta\u2062t)$ in a new arc length $s^{\u2032}\u2062(s)$ which is calculated from the condition $g_{s^{\u2032}\u2062s^{\u2032}}=1$. The profiles and surface quantities are passed between time steps as spline interpolants.\n\nTo produce the diagrams of steady-state shapes, $l_{a}$ is fixed and the control parameter is the difference of the active profile value between the passive and the active regions of the shell, for example, for the profile given in Equation 17 it is $\\delta\u2062\u03b6_{c}$. A solution branch is found by starting from the spherical solution at zero difference of active profile, and calculating a sequence of steady-state shapes, progressively increasing the magnitude of the difference in activity. Two different methods are used to construct the solution branch for a sequence of control parameter values. For small values, starting from zero, the solution branch is obtained by making small increments in the control parameter. For larger values we switch to an implicit stepping method, which we developed based on a parametric representation of the solution branch (see Appendix 6 section \u2018Construction of solution branches\u2019). This second method allows us to continue the solution branches into regions where the steady-state shapes become non-unique in the control parameter.\n\nDetails of the numerical methods can be found in Appendices 6 and 7 for the steady state and the dynamics simulations, respectively.\n\n## Results\n\n### Epithelia as active membranes: Isotropic active tensions\n\nWe first consider deformations of an epithelial shell due to patterns of isotropic active tensions and bending moments. A spatially varying isotropic tension represents a change in the preferred area of the epithelium due to either changes in sheet thickness or cell number (Popovi\u0107 et al., 2017). However, one can show that a step-profile of positive (contractile) tension $\u03b6>0$ does not lead, at steady state, to a three-dimensional deformation of the shell away from a spherical shape, which is a consequence of the absence of shear elasticity in our model (Appendix 8). Instead, the epithelium remains spherical and regions with higher tension contract. This leads to a rescaling of the relative active region size $l_{a}/L_{0}$ and, if the volume is free to change, also to a decrease in shell radius (Appendix 8). If the tension becomes negative, a buckling of the surface may occur (Salbreux and J\u00fclicher, 2017). Here, we focus on positive tensions; therefore, if only isotropic active effects are considered, active internal bending moments are required to drive deformations away from the spherical shape.\n\n### Epithelia as active shells: Isotropic active bending moments\n\nWe now turn to deformations induced by an increasing active bending moment in a spherical cap. In Figure 2a and e, we plot a phase diagram of steady-state shapes as a function of the increased active bending moment $\\delta\u2062\u03b6_{c}$ and the size of the active region $l_{a}$. The steady-state deformed shapes are plotted with the active region shown in red and the \u2018passive\u2019 region, where $\u03b6_{c}=0$, shown in blue. We can contrast the situation where fluid is free to exchange across the surface and at steady state the difference of pressure across the surface vanishes, $P=0$ (Figure 2a\u2013d), to the case where the volume enclosed by the surface is constrained to a fixed value (Figure 2e\u2013i).\n\nAn isotropic active bending moment (term in $\u03b6_{c}$ in Equation 6) induces a preferred curvature $(C^{0})_{k}^{k}=-\\frac{\u03b6_{c}}{2\u2062\u03ba}$, such that regions of a spherical shell with $\u03b6_{c}>0$ can be expected to flatten or bend inwards. Specifically, a difference of $\\delta\u2062\u03b6_{c}$ applied at the boundary of the active cap induces a jump in meridional curvature $C_{s}^{s}$ and a local folding of the sheet. Due to the spherical topology, the shape of the whole shell is affected by this fold, as can be seen from the sequences of stationary shapes obtained by increasing $\\delta\u2062\u03b6_{c}$ for intermediate values of $l_{a}/L_{0}$ (Figure 2a). In particular, for the same value of $\\delta\u2062\u03b6_{c}$ the active region may bend inward or keep a positive curvature, depending on its size.\n\nWhen $l_{a}/L_{0}$ is small or close to 1, the resulting shape is characterised by the formation of a bud which form either inwards ($l_{a}\u226aL_{0}$) or outwards $(L_{0}-l_{a}\u226aL_{0})$. In these cases, for sufficiently large values of $\\delta\u2062\u03b6_{c}$ the steady-state solution is lost through the formation of a constricting neck. In our simulations the constricting neck is numerically resolved up to values of $\u223c10^{-3}\u2062R_{0}$; extrapolation indicates full constriction at a finite $\\delta\u2062\u03b6_{c}$ (Figure 2i). As the neck radius decreases the principal curvatures at the neck diverge as $C_{s}^{s},C_{\u03d5}^{\u03d5}\u2192\\pm\u221e$, such that $C_{k}^{k}$ remains finite (Figure 2i) and therefore the limiting, budded shape is a true steady-state solution. Such a transition is reminiscent of models of lipid membrane vesicles, which can be induced to form a budded shape consisting of two spheres connected by an infinitesimal region called the ideal neck (Seifert et al., 1991; J\u00fclicher and Lipowsky, 1993; Fourcade et al., 1994; J\u00fclicher and Lipowsky, 1996; Seifert, 1997). For lipid membranes the ideal neck condition gives the difference in spontaneous curvature between the two domains at which a vesicle will form two spheres, $1/R_{1}+1/R_{2}=C_{0}$ with $R_{1}$ and $R_{2}$ the radius of the two spheres and $C_{0}$ the spontaneous curvature (Seifert, 1997). Here the choice of constitutive Equations 5 and 6 does not correspond to the Helfrich model, and we find alternative matching conditions for the two regions connected by the infinitesimal neck: we find that $t_{s}^{s}$ changes sign across the neck, while $m\u00af_{s}^{s}$ is continuous. This result can be derived by a scaling analysis around the neck (Appendix 2). In the free volume case, these conditions are satisfied when the active and passive regions are separated by the neck, and have the shapes of spheres with vanishing strain ($u=0$) and radii $R_{a}$, $R_{p}$, related by the condition:\n\n$$\n\\frac{1}{R_{a}}\u2212\\frac{1}{R_{p}}=\u2212\\frac{\\delta\u03b6_{c}}{4\u03ba},\u2212\\frac{1}{R_{a}}\u2212\\frac{1}{R_{p}}=\u2212\\frac{\\delta\u03b6_{c}}{4\u03ba},\n$$\n\nwhere the change of sign in the second line arises because the active region deforms inward and form a sphere with a negative mean curvature. The additional condition of vanishing strain $u=0$ gives an additional relation for $R_{1}$ and $R_{2}$ as a function of $l_{a}/L_{0}$. Combining these conditions determine a curve in the parameter space $\\delta\u2062\u03b6_{c}\u2062R_{0}/\u03ba$, $l_{a}/L_{0}$, which matches with the numerically determined curve of neck constriction (Figure 2b). In the fixed volume case, the matching conditions do not result in such a simple shape solution; however, using the same condition as for the free volume case appears to still provide a good approximation of the constriction point for small ($l_{a}\u226aL_{0}$) and close to $L_{0}$ $(L_{0}-l_{a}\u226aL_{0})$ values of $l_{a}$ (Figure 2f). We conclude that infinitesimal neck formation can arise outside of the Helfrich model and that the ideal neck condition which is satisfied there does not generally extend to other models of surface mechanics.\n\nAt sufficiently large increase in the active bending moment difference $\\delta\u2062\u03b6_{c}$ and for intermediate values of $l_{a}/L_{0}$, a fold in the solution branch in the $(\\delta\u2062\u03b6_{c},V)$-plane appears (Figure 2c). For most values of $l_{a}/L_{0}$, this fold is associated to the loss of a continuously attainable solution with increasing $\\delta\u2062\u03b6_{c}$, and a shape transition (Figure 2b and c). We expect shapes obtained by following the continuous branch of shapes beyond the fold to be unstable (Appendix 9). The (potentially unstable) physical branch eventually stops either through a self-intersection of the sheet at the poles (Figure 2c, $l_{a}/L_{0}=0.35$) or through the constriction of a small neck that develops near the boundary of the passive and active regions and separates the shell into two smaller, approximately spherical compartments (Figure 2c, $l_{a}/L_{0}=0.31,0.7$). Alternatively the solution branch continues in a sequence of loops and the active region elongates (Figure 2c, $l_{a}/L_{0}=0.5$), forming an increasing number of bubble-like compartments.\n\nSince we follow continuous trajectories of steady-state shapes in parameter space, we cannot directly obtain alternative steady-state solution branches after the shape transition. Therefore, we turn to dynamic simulations where we explicitly calculate flow fields, starting from the reference spherical shape, and evolve the surface shape (Figure 2d) with parameters chosen to be away from the transition in parameter space (Figure 2a). This also allows to resolve the sequence of shapes and velocity fields leading to a given steady-state deformed shape (Figure 2h, $l_{a}/L_{0}=0.1,\\delta\u2062\u03b6_{c}=40\u2062\u03ba/R_{0}$). For parameters beyond the shape transition, we find that a small neck can form, separating roughly the active and passive regions, whose radius decreases to 0 over time (Figure 2d). Alternatively, the surface ends up self-intersecting (Figure 2d, $l_{a}/L_{0}=0.35,\\delta\u2062\u03b6_{c}=12.5\u2062\u03ba/R_{0}$). We do not find therefore alternative solution branches beyond the shape instability. Since intersection of the surface with itself is described by different physical interactions than considered here, our framework does not answer what would happen beyond the self-intersection line. However, assuming that self-intersection results in fusion and rupture of the apposed two surfaces, active isotropic bending moment difference could in principle drive a change in tissue topology, from one sphere to two ($l_{a}/L_{0}=0.85,\\delta\u2062\u03b6_{c}=15\u2062\u03ba/R_{0}$), or from a sphere to a torus via self-intersection ($l_{a}/L_{0}=0.35,\\delta\u2062\u03b6_{c}=12.5\u2062\u03ba/R_{0}$).\n\nWhen volume is conserved, deformations are broadly similar but tend to be more localised to the fold at the active boundary (Figure 2e\u2013i). For intermediate values of $l_{a}/L_{0}$, the shell deforms into locally folded shapes, which eventually self-intersect at large bending moment difference (Figure 2g, $l_{a}/L_{0}=0.3,0.7$, Figure 2h).\n\n### Nematic active tensions\n\nWe now introduce the nematic order parameter $Q_{i\u2062j}$ and consider shape changes driven by contractile or extensile active stress in the active region (Figure 3). As expected, solving for the nematic order parameter profile on the undeformed sphere results in maximal order at the equator and two defects at the poles where the nematic order parameter vanishes, $q=0$ (Figure 3). Two solutions with $q<0$ and $q>0$ can exist; in the following we take the convention that $Q_{\u03d5}^{\u03d5}=q>0$, $Q_{s}^{s}=\u2212q<0$, corresponding to circumferential alignment of the order parameter, such that a contractile active stress $(\u03b6_{n}>0)$ results in a positive circumferential tension, $t_{\u03d5}^{\u03d5}>0$. Due to invariance of the constitutive equation by exchange $Q_{i\u2062j}\u2192-Q_{i\u2062j}$, $\u03b6_{n}\u2192-\u03b6_{n}$, the same shape deformations occur when considering meridional alignment of the order parameter ($q<0$) and exchanging contractile $(\u03b6_{n}>0)$ and extensile $(\u03b6_{n}<0)$ active stresses.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75878/elife-75878-fig3-v1.jpg)\n\n**Figure 3.:** (a) Two possible configurations for the nematic order parameter $Q_{i\u2062j}$ on a sphere with a + 1 topological defect at each pole: meridional (left) or circumferential (right) alignment. The order parameter minimises an effective energy (Equation 9 with $l_{c}=0.1\u2062R_{0}$). (b) Order parameter $q\u2062(s)=Q_{\u03d5}^{\u03d5}\u2062(s)$ as a solution of the Euler\u2013Lagrange Equation 16 on a sphere with $R_{0}=1$ and $l_{c}=0.1R_{0};q=1$ at the equator and $q=0$ at the locations of the defects (poles). For uniform $\u03b6_{n}$, $\u03b6_{n}\u2062\\nabla_{i}\u2061Q^{i\u2062s}$ is the active nematic contribution to the tangential force balance (Equation 63) and, close to the equator, results in the elongation of the surface along the axis of symmetry for $\u03b6_{n}>0$, and its contraction for $\u03b6_{n}<0$.\n\nAs before, we study the cases of vanishing pressure difference across the shell (Figure 4a\u2013e) and constrained volume inside the shell (Figure 4f\u2013i). With a nematic tension profile on the surface, a deformation away from the spherical shape occurs even for homogeneous active nematic tension, $l_{a}/L_{0}=1$ (Figure 4a\u2013e).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75878/elife-75878-fig4-v1.jpg)\n\n**Figure 4.:** (a, e) Shape diagrams. (b, g) Details of shape diagram illustrating the behaviour of solution branches. (d) Curvature at the south pole for extensile stress. (c, e, h, i) Dynamic simulations of shell shape changes, for parameter values indicated in the phase diagrams (a, f). Other parameters: $K~=10^{3},\u03b7~_{c\u2062b}=10^{-2}$, $\u03b7~_{V}=10^{-4}$, $l~_{c}=0.1$.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75878/elife-75878-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Surface quantities are shown for the last plotted time step in Figure 4. The location of the neck, taken as the point where $C_{\u03d5}^{\u03d5}$ is maximal, is marked by a grey line in the plots. In (a, b) the radius at the equator, the volume, and the pole\u2013pole distance are shown as functions of time. In (c) the smooth sigmoidal pattern of $\u03b6_{n}\u2062(s)$ is visualised as two discrete regions (colour coded as red and blue) for simplicity. The parameter values correspond to the examples in Figure 4c, e and h in the main text.\n\nIn the extensile case $\u03b6_{n}<0$ (or in the contractile case $\u03b6_{n}>0$ if $q<0$), and no pressure difference across the shell, the surface progressively flattens into a flat, double-layered disc (Figure 4b, $l_{a}/L_{0}=1$, $\u03b6_{n}<0$). There is no shape transition occurring; instead, we find that the shape converges to a limit shape as $|\u03b6_{n}|\u2192\u221e$ (Appendix 4). The limit shape corresponds to two parallel flat discs of radius $R_{d}$, separated by a distance $2\u2062h$, connected by a narrow curved region. An asymptotic analysis (Appendix 4) shows that the radius of the disc and the separating distance obey the scaling relations, in the limit $\u03ba\u226aK\u2062l_{c}^{2}$:\n\n$$\nR_{d}\u223cl_{c},h\u223c(\\frac{\u03bal_{c}}{K})^{\\frac{1}{3}}\n$$\n\nThe first relation shows that the limit shape has the size of the characteristic nematic length $l_{c}$. Physically, for $l_{c}\u226aL_{0}$, the nematic active tension results in a contraction of the shape, until the shape is sufficiently close to the defect core for the nematic order to \u2018dissolve,\u2019 thus limiting further increase in the active tension.\n\nIn the contractile case ($\u03b6_{n}>0$), the shape elongates until a shape transition is reached, characterised by a fold in the solution branch (Figure 4b, $l_{a}/L_{0}=1$, $\u03b6_{n}>0$). Following the solution branch after the fold eventually gives rise to a sequence of presumably unstable shapes with the formation of a central constricting neck. Intrigued by this result, we performed dynamical simulations for contractile active tensions above the shape transition (Figure 4c and e; Figure 4\u2014figure supplement 1). Dynamic simulations show separation of the shape into two or more compartments via dynamical neck constrictions, with the neck radius vanishing over time (Figure 4\u2014figure supplement 1a). Within the neck, $q\u21920$ as a result of the diverging principal curvatures (as can be seen from the presence of a term $(\\frac{cos\u2061(\u03c8)}{x}\u2062q)^{2}$ term in the nematic free energy, Equation 102). In particular, for values close to the branch fold (Figure 4c) the dynamics is reminiscent of cell division; however, in contrast to existing models of cell division (Salbreux et al., 2009; Turlier et al., 2014), the constriction appearing here does not require a narrow peak of active stress around the equator to occur. At larger contractile stress (Figure 4e), a narrow, elongated tube forms around the equator. This tube thins out over time, and two symmetric necks emerge and constrict, suggesting that the shape would eventually separate into three topologically separated surfaces (Figure 4\u2014figure supplement 1b).\n\nFor $0<l_{a}/L_{0}<1$ and extensile stress in the active region $\\delta\u03b6_{n}<0$, the active region tends to flatten more and more strongly as $|\\delta\u2062\u03b6_{n}|$ is increased, and the total curvature vanishes at the south pole ($C_{k}^{k}\u21920$, Figure 4d). For $0<l_{a}/L_{0}<1$ and contractile stress $\\delta\u03b6_{n}>0$, a fold in the solution branch appears at large value of $\\delta\u2062\u03b6_{n}$ (Figure 4b and d). Following the solution branch beyond the fold results in a complex trajectory in parameter space, corresponding to successive additions of new bubbles to a linear chain of bubbles within the active region. This bubble chain is observed both with free or constrained volume (Figure 4b and g). Here, we cannot conclude however whether these shapes are unstable. Instead, we consider the shape dynamics for $\\delta\u2062\u03b6_{n}$ values larger than the shape transition, here at fixed internal volume (Figure 4h and i). Here, a neck forms within the active region and its constriction leads to the separation of a smaller bubble. For small enough $l_{a}$ the smaller bubble appears nematic-free and spherical (Figure 4h, Figure 4\u2014figure supplement 1b). This is consistent with restoration of isotropic state stability which can occur on a sphere whose size becomes smaller or comparable to $l_{c}$ (Appendix 3 section \u2018Stability of the isotropic state on a sphere\u2019).\n\n### Active nematic bending moments\n\nWe now turn to shape deformations resulting from active bending moments oriented along the nematic order $Q_{i\u2062j}$. As for nematic tension, we adopt the convention of nematic alignment along the circumference, $Q_{\u03d5}^{\u03d5}=q>0$; alignment along the meridians can be studied simply by changing the sign of the active coefficient $\u03b6_{c\u2062n}$.\n\nWe first discuss the case where the nematic active bending moment is homogeneous ($l_{a}/L_{0}=1$), where there is no difference of pressure across the surface, and where $\u03b6_{cn}=\\delta\u03b6_{cn}<0$ (Figure 5a\u2013c and g). We find that the sphere deforms into a shape with a central cylindrical part (Figure 5a and b). The length of the cylindrical part increases with increasing value of $|\u03b6_{c\u2062n}|$. To characterise this, we note that the corresponding steady-state shape solutions have vanishing tensions $t_{s}^{s}=0$ and $t_{n}^{s}=0$ everywhere (Figure 5\u2014figure supplement 1) and the force balances Equations 63 and 64 are trivially satisfied. The torque balance Equation 65 reads\n\n$$\n2\u03ba\u2202_{s}C_{k}^{k}\u2212\u03b6_{cn}\u2202_{s}q=2\u03b6_{cn}\\frac{cos\u2061\u03c8}{x}q.\n$$\n\nCombining Equations 26 and 48 one obtains that $L[C_{s}^{s}\u2212C_{\u03d5}^{\u03d5}\u2212\u03b6_{cn}q/(2\u03ba)]=0$, with the operator $\u2112=\\partial_{s}+2\u2062\\frac{cos\u2061\u03c8}{x}$. Solutions to $\u2112\u2062[f]=0$ have the form $f=A/x^{2}$ with A a constant. The boundary condition that the function $f$ should be finite at the poles requires $A=0$, such that\n\n$$\nC_{s}^{s}\u2212C_{\u03d5}^{\u03d5}=\\frac{q\u03b6_{cn}}{2\u03ba}\u00a0.\n$$\n\nAs a result, if the shape has a cylindrical part, in which $C_{s}^{s}=0$ and $q=1$, then the cylinder radius $R_{c}$ is given by\n\n$$\n\\frac{1}{R_{c}}=\u2212\\frac{\u03b6_{cn}}{2\u03ba},\n$$\n\nand since such solutions are area-preserving, with $u=0$, the length of the cylindrical part scales as $L_{c}\u223c1/R_{c}$. These relations are in excellent agreement with simulation results for large enough $|\u03b6_{c\u2062n}|$ (Figure 5g).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75878/elife-75878-fig5-v1.jpg)\n\n**Figure 5.:** (a, d) Shape diagrams. (b, e) Details of shape diagram illustrating the behaviour of solution branches. (c, f) Dynamic simulations of shell shape changes, for parameter values indicated in the phase diagrams (a, d). In both cases in (f) the dynamics results in self-intersection. (g) Comparison of curvature and length of the cylindrical tubes for $l_{a}/L_{0}=1,0.7,0.3$, $\\delta\u03b6_{cn}<0$ with analytical predictions. The tube length is measured on the steady-state shape as the arc length of the deformed active region, $s_{t\u2062u\u2062b\u2062e}=s\u2062(s_{0}=l_{a})$, and the tube curvature as $C_{\u03d5}^{\u03d5}(s_{tube}/2)$. Other parameters: $K~=1000,\u03b7~_{c\u2062b}=10^{-2}$, $\u03b7~_{V}=10^{-4}$, $l~_{c}=0.1$. In (c), (f), for $\\delta\u03b6_{cn},\u03b6_{cn}<0$ the orientation of the director field drawn on the surface (black lines) is set by $-Q_{i\u2062j}$.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75878/elife-75878-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Details of steady-state shapes resulting from nematic bending moments with $\u03b6_{cn}<0$ and free volume.(a) Closed cylinder; (b) shape with cylindrical appendage. Such solutions are characterised by $t_{s}^{s}=t_{n}^{s}=u=0$ everywhere, and a cylindrical part where $C_{s}^{s}=0$ and $m\u00af_{s}^{s}$ is constant.\n\nWhen $l_{a}<L_{0}$, the active region forms an outward cylindrical protrusion (Figure 5a, b and g) whose radius is still well described by Equation 28, replacing $\u03b6_{c\u2062n}$ by $\\delta\u2062\u03b6_{c\u2062n}$, the value of the active nematic bending moment in the active region (Figure 5g). Using that within the cylindrical protrusion $u=0$ so that the cylindrical protrusion has the same area as the original active domain and the relation Equation 85 for the size of the active domain, we find that the length of the active protrusion is now given by\n\n$$\nL_{c}\u2243\\frac{R_{0}^{2}}{R_{c}}(1\u2212cos\u2061\\frac{l_{a}}{R_{0}})=\u2212\\frac{\\delta\u03b6_{cn}R_{0}^{2}}{2\u03ba}(1\u2212cos\u2061\\frac{l_{a}}{R_{0}}),\n$$\n\nwhich is again in excellent agreement with numerical simulation for large $|\\delta\u2062\u03b6_{c\u2062n}|$ and for different values of $l_{a}/L_{0}$ (Figure 5g).\n\nFor $\u03b6_{cn}>0$ and $l_{a}/L_{0}=1$ we find erythrocyte-like shapes, where the indentations at the poles become stronger with $\u03b6_{c\u2062n}$ until the two poles touch (Figure 5b). This behaviour remains for $l_{a}<L_{0}$, resulting in a self-intersection line in the phase diagram (Figure 5a). Here, the shape can take the form of an inner tube entering the spherical shell (Figure 5b), reminiscent of epithelial shape changes observed during sea urchin gastrulation (Ettensohn, 1984).\n\nInterestingly, when $l_{a}/L_{0}<1$ and the volume is free to change, both signs of $\\delta\u2062\u03b6_{c\u2062n}$ result in a cylindrical appendage forming from the active region. The sign of $\\delta\u2062\u03b6_{c\u2062n}$ determines whether the cylinder forms outside or inside of the remaining, roughly spherical shape. Dynamics simulations confirm that the shapes described above are stable solutions (Figure 5c). At the tip of the emerging cylinder lies the +1 topological defect. For $\\delta\u03b6_{cn}<0$, when the protrusion grows towards the outside, such a situation is reminiscent of the observation of nematic defects in Hydra, where a set of topological defects, with +1 defects at the tip, have been observed in growing tentacles (Maroudas-Sacks et al., 2021). There, actin layers are perpendicular to each other, with circumferential alignment in the inner cell layer and longitudinal in the outer layer, which would indeed result in $\\delta\u03b6_{cn}<0$ with our sign convention if the layers are contractile.\n\nWe now describe surfaces with fixed volume (Figure 5d\u2013f). Here, we do not observe cylindrical shapes or protrusions as in the case of free volume. When $\u03b6_{cn}<0$ and $l_{a}=L_{0}$ the surface becomes spindle-like, narrowing at the poles with increasing $|\u03b6_{c\u2062n}|$. As in the free volume case, when $\u03b6_{cn}>0$ the two opposite poles come in contact with each other (Figure 5e); such that subsequent fusion of the poles would lead to an overall toroidal shape of the shell. The shapes become more complex for $l_{a}<L_{0}$. Shape transitions occur at large $|\\delta\u2062\u03b6_{c\u2062n}|$, for both $\\delta\u03b6_{cn}<0$ and $\\delta\u03b6_{cn}>0$ (Figure 5e). In the case $\\delta\u03b6_{cn}<0$, for increasing magnitude of the active bending moment, the shape becomes increasingly curved at the boundary between the passive and active regions, until the solution is lost. In the case $\\delta\u03b6_{cn}>0$, the shell indents within the active region and the solution branch has a fold. To the right of the fold line in the shape diagram, the steady-state solutions are eventually lost through the formation of a small neck that separates off a smaller, internalised compartment. In contrast to the case of isotropic bending moments, here the sign of $\\delta\u2062\u03b6_{cn}$ determines whether the active region folds inwards or outwards, independent of the initial size $l_{a}/L_{0}$. As before, we use dynamics simulations to study the deformations for large $|\\delta\u2062\u03b6_{cn}|$ (Figure 5f). For both signs of $\\delta\u2062\u03b6_{cn}$, these result in shapes that are self-intersecting either along a circle ($l_{a}/L_{0}=0.3,\\delta\u2062\u03b6_{cn}=-150\u2062\u03ba/R_{0}$) or at the poles ($l_{a}/L_{0}=0.5,\\delta\u2062\u03b6_{cn}=50\u2062\u03ba/R_{0}$).\n\n## Discussion\n\nIn this study of deformations of patterned nematic active surfaces, we have found a diverse zoology of possible shape changes (Figure 6), characterised by budding and neck constrictions, transition of sphere to cylinder, tubulation, and flattening. We find that introduction of a nematic field on the surface greatly increases the space of possible shapes. Overall our work contributes to the characterisation of the \u2018morphospace\u2019 which biological systems can explore.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75878/elife-75878-fig6-v1.jpg)\n\n**Figure 6.:** Active tensions and bending moments are present only in the red region of the surface. For $\u03b6_{cn}<0$ the director field orientation (black lines) is set by $-Q_{i\u2062j}$.\n\nSome of our findings recapitulate epithelial deformations observed in biological systems. The flattening observed for an extensile homogeneous nematic surface (Figure 4b, $l_{a}/L_{0}=1$) could in principle lead to merging of the two apposed surfaces into a double-layer for large $|\u03b6_{n}|$. Such a process of tissue planarisation appears to occur as an intermediate step in skin organoid formation, where epithelial cysts fuse and merge to form transient bilaterally symmetric structures (Lei et al., 2017). The formation of tubular appendages from nematic bending moments appears to recapitulate growth/regeneration of elongated bodies and tentacles in Hydra (Maroudas-Sacks et al., 2021) and, with an opposite sign, of epithelial invagination during sea urchin embryo gastrulation (Ettensohn, 1984).\n\nThe axisymmetric structure we have considered here naturally gives rise to two +1 nematic defects at the poles (Figure 3a). These defects then structure the nematic field and, as a result, the shape changes driven by nematic active tension or bending moments. Such an interplay between topological defect and shape changes is a recurring theme that may play a key role in morphogenesis (Frank and Kardar, 2008; Metselaar et al., 2019; Hoffmann et al., 2021; Blanch-Mercader et al., 2021a; Blanch-Mercader et al., 2021b). In practice +1 nematic defects are unstable to separation into two +1/2 defects; however, it is conceivable that a polar or additional weakly polar field stabilises the +1 defects (Amiri et al., 2022). Extension of the present work beyond axisymmetric structures will allow to distinguish more clearly the purely nematic and polar cases.\n\nContinuum theories for curved surfaces, such as the Helfrich theory, have been extremely successful to describe shape transformations of passive vesicles, including homogeneous or phase-separated vesicles with coexisting domains (Seifert et al., 1991; MacKintosh and Lubensky, 1991; J\u00fclicher and Lipowsky, 1993; Seifert, 1997; Allain et al., 2004; Sens and Turner, 2004; Bassereau et al., 2014). The effect of broken symmetry variables on passive surfaces, arising, for instance, from molecular tilt giving rise to polar order on a lipid membrane, has been considered theoretically (MacKintosh and Lubensky, 1991; Lubensky and Prost, 1992; Park et al., 1992). Continuum theories of active surfaces can similarly allow to study epithelial deformations (Salbreux and J\u00fclicher, 2017; Morris and Rao, 2019; Messal et al., 2019). We note some important differences between the active surface model described here and passive membranes. (i) Our constitutive equations for tensions and bending moments Equations 5 and 6 do not in general derive from a free energy (Salbreux and J\u00fclicher, 2017) and describe a system out-of-equilibrium; (ii) while lipid membranes are nearly incompressible and are usually treated as surfaces with constant area, cells within epithelial tissues can change their area significantly (Latorre et al., 2018), which prompted us to consider a finite area modulus $K$: for example, simulations with constant volume have relative area changes of up to 20% (Figure 2\u2014figure supplement 2); (iii) patterns of active tensions and bending moments imposed here also do not derive from an energy and are thought to respond to spatiotemporal chemical cues: in contrast, phase-separated domains in passive lipid vesicles obey equilibrium thermodynamics and their size is controlled, for instance, by line tension at the domain boundary (J\u00fclicher and Lipowsky, 1993). In some cases, however, a similarity appears between shape transformations obtained in the active model we study here and the passive Helfrich model. For instance, budding occurring in lipid membranes due to phase separation of domains with different spontaneous curvature (J\u00fclicher and Lipowsky, 1993) is similar to the budding we observe here for different regions with different active isotropic bending moments.\n\nWe find here that nematically oriented active bending moments can give rise to spontaneous cylindrical tubes, without external force application (Figure 5). Spontaneous formation of hollow cylindrical vesicles with polar order due to molecular tilt has been discussed Lubensky and Prost, 1992; there the cylindrical shapes are considered to be open and the gain in defect energy allows the open cylinder to be more stable than the spherical shape. In contrast, we find here active surfaces which spontaneously form tubes, but stay closed and keep their topological charge. It has also been reported that a supported bilayer membrane under compression can spontaneously form tubes under negative tension (Staykova et al., 2013). In this work we have chosen to consider only positive isotropic tension; negative isotropic tension could give rise to further buckling instabilities. Models for chiral lipid bilayers in a tilted fluid phase have also predicted tubular shapes (Helfrich and Prost, 1988; Selinger and Schnur, 1993; Selinger et al., 1996; Tu and Seifert, 2007). Here, we have not considered chiral effects. These effects could be introduced by generalising the constitutive Equations 5 and 6, including terms which appear for surfaces with broken planar-chiral or chiral symmetry (Salbreux and J\u00fclicher, 2017).\n\nIn contrast to purely elastic models of morphogenesis (H\u00f6hn et al., 2015; Haas et al., 2018), we have considered here morphogenetic events occurring on time scales long enough for shear elastic stresses to be relaxed by cell topological rearrangements, such that the tissue exhibits fluid behaviour (Popovi\u0107 et al., 2017). Whether a tissue behaves as an elastic or fluid material on time scales relevant to morphogenesis can in principle be probed experimentally (Mongera et al., 2018).\n\nWhile we have focused the interpretation of our results to epithelial mechanics, the constitutive Equations 5 and 6 we have considered here are generic and may also describe the large-scale behaviour of active nematics formed with cytoskeletal filaments and motors on a deformable surface (Keber et al., 2014). We considered here, however, a situation where the two-dimensional fluid has area elasticity, whereas cytoskeletal networks can in principle be fluid with respect to both shear and bulk shear due to the turnover of components.\n\nIn this study, we have considered chemical and mechanical processes to be uncoupled, except for the profile of active tension or torque being advected with the surface flow. Introducing additional couplings explicitly in this framework will extend the repertoire of shapes considered here. A natural choice is to consider the effect of a chemical undergoing reaction-diffusion on the surface and advected by the fluid, regulating active forces on the surface (Mietke et al., 2019a; Mietke et al., 2019b). Here, we assumed that orientational order relaxes quickly compared to other dynamical processes; in future work, this assumption could be lifted and one could study in particular how chemical regulation could influence the dynamics of orientational order in the tissue. Cells could also be sensing their own curvature and actively adapt their behaviour accordingly (Chen et al., 2019), which could lead to a dependency of the active coupling coefficients $\u03b6$, $\u03b6_{n}$, $\u03b6_{c}$ or $\u03b6_{c\u2062n}$ on the trace or determinant of the curvature tensor $C_{i\u2062j}$. It would be interesting to explore shapes arising from such a feedback. Volume conservation at cellular level could also be included explicitly, for instance, by introducing a tissue height field (Morris and Rao, 2019). Finally, we have considered here a tissue with a fixed preferred area, implicitly assuming that the epithelium is not growing. Tissue growth is a key aspect of biological development (Gokhale and Shingleton, 2015; Eder et al., 2017), and cell division and death can fluidify elastic stresses in an epithelium (Ranft et al., 2010); adding regulated growth in the model will be a step forward in our understanding of active morphogenesis of biological tissues.\n",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "1081054b-b0ba-4f7f-a03d-2ea761843a6b",
+      "submission_id": "a988ff54-46bc-4c7f-8946-d3bc6b432ed8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael M Kozlov, https://ror.org/04mhzgx49 Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75878.sa0](https://doi.org/10.7554/eLife.75878.sa0)\n\nThe article provides a physical description of shape transformations of epithelial tissues in three dimensions, subject to active forces generated within the cytoskeleton of the epithelial cells. The work is motivated by organoids and more generally by morphogenesis during development. Therefore, this study is useful not only for developmental biology but also for a general understanding of cellular properties, including membrane mechanics and cell shapes.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michael M Kozlov, https://ror.org/04mhzgx49 Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75878.sa1](https://doi.org/10.7554/eLife.75878.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Active morphogenesis of patterned epithelial shells\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Benoit Ladoux (Reviewer #1); Madan Rao (Reviewer #2); Jean-Francois Joanny (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAll three reviewers positively evaluated the results of the study and congratulated the authors with a good achievement. According to one reviewer's opinion, the work is more appealing to a physics rather than biological audience and, therefore, could have a better home in a professional physics journal. This is, however a suggestion rather than a requirement.\n\nThe specific comments, which have to be addressed before the article can be recommended for publication are:\n\n1. The authors consider the cases of contractile or extensile systems but biological systems can be composed of both particles. Could we find interesting properties by mixing contractile and extensile activities?\n\n2. The spheroids are composed by passive and active parts determined by the ratio la/Lo. Is the passive part described with the exact same equations keeping active parameters at 0?\n\n3. We could imagine that there are feedbacks between curvature and active stresses and bending moments with an evolution of the active parameters?\n\n4. Dzh\u00eata(cn) corresponds to the anisotropic active moment. It could come from various contributions either various activities at the basal versus the apical or various orders. I could imagine different configurations depending on these conditions. Could it be captured by the model? In particular, the authors could discuss the case where the nematic order on the apical versus is perpendicular to the one at the basal layer (as shown in the Figure 1). This may be important to understand the Hydra model where actin layers can be perpendicular to each other (See ref 22). Again, it would be interesting to imagine contractile and extensile layers at the basal and apical parts but may be beyond the scope of the current manuscript.\n\n5. I had some difficulty to understand the shapes obtained at fixed volume for active bending moments (Figures5 d-e). The authors could better explain the indentations.\n\n6. The concept of stress (tension) tensor and bending moment tensor has been used for sometime in the dynamics of curved passive membranes and active ones, see for instance, Sahu, A., Sauer, R. A., and Mandadapu, K. K., The irreversible thermodynamics of curved lipid membranes, Physical Review E, 96, 042409 (2017), and earlier papers by M. Lomholt.\n\n7. Since this is a fluid description over scales larger than the cell size, the material density of the active agents will diffuse and flow to even out gradients. This surface diffusion is being ignored. I didn't see a separate equation for this local material density field, which I would have expected have surface diffusion and a curvature dependent surface advection. I presume this subsumed in the dynamics of the area density? This should be elaborated. The dynamics of the patterned active patch could be explained more with an accompanying schematic.\n\n8. The trouble of taking the long length scale approach for the epithelial sheet context, is that this ignores the special physics of having individual cells, whose volume conservation needs to be preserved. This could result in changes in local thickness of the epithelium which contributes to additional elastic and dissipative stress components, and lead to other deformation modes.\n\n9. No dissipative coupling to a dynamical fluid outside or inside. How is this justified?\n\n10. Are there normal active stress components? The director field is in-plane. Again, it would help the reader to have all this stated, possibly pictorially.\n\n11. Mechanical equilibrium solutions are obtained by setting the time derivatives to zero? The resulting equations will have many solutions, how is a unique one chosen. Does this have to do with Initial conditions. In this case, are these solutions stable? These points should be explained clearly.\n\n12. Can the authors comment on the stability to nonaxisymmetric perturbations in this active dynamic context?\n\n13. The dynamics show neck formation associated with finite time singularities. Can the authors extract a finite time singularity scaling form? Are there any predictions that can be made? This section could include a discussion on the relevance to endocytosis.\n\n14. Could the authors comment on the existence of moving solutions? Ofcourse the authors don't have an external fluid or substrate onto which the cells can push on.\n\n15. Since this manuscript is relevant for both active epithelial sheets and active membranes, the authors should refer to several earlier papers on active membranes such as Lomholt; Maitra et al; Mandadapu et al.\n\n16. In principle the thin shell theory is a systematic expansion in powers of h/R_0 where h is the shell thickness and R_0 the radius of the undeformed tissue. At first order, one\n\nobtains the tensions and at second order the bending moments. Because of that, some of the parameters of the theory are related to one another: there are only two independent viscosities and two independent active stresses.\n\nThis should be made more clear from the begining and the terms which are neglected should be of higher order in the expansion parameter. Is that the case?\n\n17. The authors consider that the relaxation of the nematic order parameter is much faster than the relaxation of the shape. This is not obvious to me. Is there any reason to consider that the rotational viscosity is much smaller than the shear viscosity? If this is not true several terms must also be added in the force balance equations such as those related to the flow alignment parameter.\n\n18. A parameter that is not discussed is the thickness of the cell layer. Is it supposed to be constant and if not, does its variation play any role? I guess that this is somewhat hidden in the parameter u. Is the cell volume supposed to be constant?\n\n19. The constitutive equation 4 supposes that the longitudinal modes are elastic and the transverse modes are viscous. A more general theory would be to assume that the cell layer is a compressible liquid ie that the longitudinal modes are viscoelastic. Would that make any difference?\n\n20.In equation 19, it seems to me that the coefficient \\eta_V is proportional to the area of the cell layer and this can change significantly when the shape is deformed. Shouldn't that be taken into account?\n",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "63a2753f-1f2b-4fc6-8b82-418587518e73",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C1",
+      "claim": "Shape transformations of epithelial tissues in three dimensions are crucial for embryonic development or in vitro organoid growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Shape transformations of epithelial tissues in three dimensions, which are crucial for embryonic development or in vitro organoid growth, can result from active forces generated within the cytoskeleton of the epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general assertion in the abstract without specific experimental data in this manuscript, but draws on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "d71e3b56-dca5-470b-9fde-f4f1ee29f734",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C2",
+      "claim": "Shape transformations of epithelial tissues can result from active forces generated within the cytoskeleton of the epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Shape transformations of epithelial tissues in three dimensions, which are crucial for embryonic development or in vitro organoid growth, can result from active forces generated within the cytoskeleton of the epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational premise of the study, supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "b79b093f-fab9-47e4-829a-824e2531a8c1",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C3",
+      "claim": "A combination of nematic alignment and gradients in internal tensions and bending moments is sufficient to reproduce basic building blocks of epithelial morphogenesis, including fold formation, budding, neck formation, flattening, and tubulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that a combination of nematic alignment and gradients in internal tensions and bending moments is sufficient to reproduce basic building blocks of epithelial morphogenesis, including fold formation, budding, neck formation, flattening, and tubulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the computational modeling results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "c0a826db-8cf0-48be-81e9-1c423fb0c697",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C4",
+      "claim": "Morphogenesis of embryos and the establishment of body shape rely on the three-dimensional deformation of epithelial sheets.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphogenesis of embryos and the establishment of body shape rely on the three-dimensional deformation of epithelial sheets which undergo repeated events of expansion, contraction, convergence-extension, invagination, evagination, tubulation, and branching (Gilbert and Barresi, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gilbert and Barresi, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "8ef77aa7-ab95-46b8-9420-5bb46c5a71d1",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C5",
+      "claim": "Epithelial sheets undergo repeated events of expansion, contraction, convergence-extension, invagination, evagination, tubulation, and branching.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphogenesis of embryos and the establishment of body shape rely on the three-dimensional deformation of epithelial sheets which undergo repeated events of expansion, contraction, convergence-extension, invagination, evagination, tubulation, and branching (Gilbert and Barresi, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gilbert and Barresi, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "035fd565-90f9-4a55-8a62-1be7a10eedf7",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C6",
+      "claim": "Tissue folding is involved at different steps of embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue folding, for instance, is involved at different steps of embryogenesis (Kominami and Takata, 2004; Sui et al., 2018), organ (Sumigray et al., 2018), or entire organism development (Livshits et al., 2017; Braun and Keren, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kominami and Takata, 2004 and Sui et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "e0cd214f-500b-4d2a-92a4-3306cabd4875",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C7",
+      "claim": "Tissue folding is involved in organ development.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue folding, for instance, is involved at different steps of embryogenesis (Kominami and Takata, 2004; Sui et al., 2018), organ (Sumigray et al., 2018), or entire organism development (Livshits et al., 2017; Braun and Keren, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sumigray et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "d4de88ed-d5d2-445f-a557-839330bdbac4",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C8",
+      "claim": "Tissue folding is involved in entire organism development.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue folding, for instance, is involved at different steps of embryogenesis (Kominami and Takata, 2004; Sui et al., 2018), organ (Sumigray et al., 2018), or entire organism development (Livshits et al., 2017; Braun and Keren, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Livshits et al., 2017 and Braun and Keren, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "5e2b463b-a768-41f7-93a9-33b91aea725b",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C9",
+      "claim": "In vitro organoids are organ-like structures derived from stem cells capable of self-renewal and self-organisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the growth of in vitro organoids, organ-like structures derived from stem cells capable of self-renewal and self-organisation, has revealed the intrinsic ability of biological systems to self-organise into complex structures from simple building blocks (Huch et al., 2017; Kamm et al., 2018; Rossi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "de71acec-5f73-404d-8553-265add7fb99e",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C10",
+      "claim": "The growth of in vitro organoids has revealed the intrinsic ability of biological systems to self-organise into complex structures from simple building blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the growth of in vitro organoids, organ-like structures derived from stem cells capable of self-renewal and self-organisation, has revealed the intrinsic ability of biological systems to self-organise into complex structures from simple building blocks (Huch et al., 2017; Kamm et al., 2018; Rossi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Huch et al., 2017; Kamm et al., 2018; Rossi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "0a5b49fb-d8c4-4471-b80c-5addcc2cbce5",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C11",
+      "claim": "Early steps in organoid self-organisation often start through the formation of a hollow, fluid-filled unpatterned sphere, undergoing spontaneous symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "Early steps in organoid self-organisation often start through the formation of a hollow, fluid-filled unpatterned sphere, undergoing spontaneous symmetry breaking (Ishihara and Tanaka, 2018) for example, in neural tube (Meinhardt et al., 2014) or intestinal (Serra et al., 2019; Yang et al., 2021) organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ishihara and Tanaka, 2018; Meinhardt et al., 2014; Serra et al., 2019; Yang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "b1096e79-c0ac-4854-a81c-6fc82c1375ff",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C12",
+      "claim": "Continuum theories of active materials, treating the epithelium as an active liquid crystal, have proven highly successful to achieve an understanding of the mechanics and flows of cellular collective motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuum theories of active materials, treating the epithelium as an active liquid crystal, have proven highly successful to achieve an understanding of the mechanics and flows of cellular collective motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field, supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "6562177e-9f8d-4835-92de-d35bde05465c",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C13",
+      "claim": "Epithelia cultured in vitro exhibit patterns of orientational order and spontaneous flows which are consistent with predictions from hydrodynamic theories of active matter.",
+      "claim_type": "EXPLICIT",
+      "source": "Epithelia cultured in vitro exhibit patterns of orientational order and spontaneous flows which are consistent with predictions from hydrodynamic theories of active matter (Duclos et al., 2017; Duclos et al., 2018; Blanch-Mercader et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Duclos et al., 2017; Duclos et al., 2018; Blanch-Mercader et al., 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "722892b3-89ac-4b48-9a1d-b0e98f265083",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C14",
+      "claim": "Constitutive equations involving a shear decomposition of tissue area and anisotropic elongation into cell shape changes, cell division, and cellular topological transitions can reproduce basic features of the developing Drosophila pupal wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Constitutive equations involving a shear decomposition of tissue area and anisotropic elongation into cell shape changes, cell division, and cellular topological transitions can reproduce basic features of the developing Drosophila pupal wing (Etournay et al., 2015; Popovi\u0107 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Etournay et al., 2015 and Popovi\u0107 et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "90fb7084-af4b-4df1-bbc5-9abfa9e89994",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C15",
+      "claim": "Several studies established a link between topological defects in tissue order and morphogenetic events.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, several studies established a link between topological defects in tissue order, provided by cell elongation or internal anisotropic cellular structure, and morphogenetic events (Kawaguchi et al., 2017; Saw et al., 2017; Mueller et al., 2019; Maroudas-Sacks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kawaguchi et al., 2017; Saw et al., 2017; Mueller et al., 2019; Maroudas-Sacks et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "b42658a8-774b-4f1e-8a33-0c2e3ebc967b",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C16",
+      "claim": "Internal bending moments arise from an inhomogeneous distribution of stress across the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Internal bending moments arise from an inhomogeneous distribution of stress across the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement that is part of the model description.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "65f53607-213a-4042-b066-a40e1511562c",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C17",
+      "claim": "Inhomogeneities in stress distribution can arise from changes in cytoskeletal organisation along the epithelium apico-basal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such inhomogeneities can arise from, for example, changes in cytoskeletal organisation along the epithelium apico-basal axis, or from apposed epithelial tissues with different mechanical properties (Braun and Keren, 2018; Maroudas-Sacks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Braun and Keren, 2018 and Maroudas-Sacks et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "1901d39e-eb7b-4900-a0cd-ce685786192e",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C18",
+      "claim": "Inhomogeneities in stress distribution can arise from apposed epithelial tissues with different mechanical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Such inhomogeneities can arise from, for example, changes in cytoskeletal organisation along the epithelium apico-basal axis, or from apposed epithelial tissues with different mechanical properties (Braun and Keren, 2018; Maroudas-Sacks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Braun and Keren, 2018 and Maroudas-Sacks et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "d21916be-79f1-4b99-a183-f3443fc2b370",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C19",
+      "claim": "Apico-basal gradients of contractility play a key role in morphogenetic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Apico-basal gradients of contractility, for instance, play a key role in morphogenetic processes (Martin and Goldstein, 2014; Sui et al., 2018) and are effectively taken into account here by active bending moments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Martin and Goldstein, 2014 and Sui et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "88f06529-2756-4797-9277-1edc7c8803a7",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C21",
+      "claim": "The surface is taken to be elastic with respect to area changes, and fluid with respect to pure shear in the plane of the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The surface is taken to be elastic with respect to area changes, and fluid with respect to pure shear in the plane of the surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption based on the physical properties of epithelia.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "037efcfb-e848-4172-bb11-2b6a79967895",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C22",
+      "claim": "Cellular rearrangements can fluidify in-plane epithelial flows by allowing cell elongation and cellular elastic stresses to relax on long time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cellular rearrangements can fluidify in-plane epithelial flows by allowing cell elongation and cellular elastic stresses to relax on long time scales (Popovi\u0107 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Popovi\u0107 et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "2f5ff66c-e163-477c-906d-8e3c8052acdb",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C23",
+      "claim": "The study considers time scales of hours to days which are relevant to organoid and developmental morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we consider such long enough time scales of hours to days which are relevant to organoid and developmental morphogenesis (Gilbert and Barresi, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption supported by citation to Gilbert and Barresi, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "a97f12c5-61e5-4739-bfa9-bd9d74e881cc",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C24",
+      "claim": "The study assumes that cell division and apoptosis or delamination are not occurring.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assume here that cell division and apoptosis or delamination are not occurring, such that elastic isotropic stresses do not relax (Ranft et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption, with citation to Ranft et al., 2010 for context.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "af675834-7b01-4839-a300-919199d612af",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C25",
+      "claim": "Cells have a preferred cell area.",
+      "claim_type": "EXPLICIT",
+      "source": "Implicitly, we assume that cells have a preferred cell area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an implicit assumption of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "2bc6fc49-7865-474a-be3e-b38648836832",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C26",
+      "claim": "Epithelia typically have a non-negligible thickness compared to characteristic transverse dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Epithelia typically have a non-negligible thickness compared to characteristic transverse dimensions, and the apical and basal surfaces have different structures and are regulated differently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about epithelial structure based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "e01136a9-4768-4c5e-b2e4-2e968289534a",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C27",
+      "claim": "The apical and basal surfaces of epithelia have different structures and are regulated differently.",
+      "claim_type": "EXPLICIT",
+      "source": "Epithelia typically have a non-negligible thickness compared to characteristic transverse dimensions, and the apical and basal surfaces have different structures and are regulated differently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about epithelial structure based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "a9e20c77-b30d-4484-bbd8-4ee044f05fce",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C28",
+      "claim": "The basal surface is in contact with the basal lamina, a layer of extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the basal surface is in contact with the basal lamina, a layer of extracellular matrix (Khalilgharibi and Mao, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Khalilgharibi and Mao, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "0236f0aa-812f-49a8-ba36-ed3d6ae3717b",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C29",
+      "claim": "Active bending moments can arise in the surface due to actomyosin-generated differential active stresses along the apicobasal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, active bending moments can arise in the surface (Salbreux and J\u00fclicher, 2017), for instance, due to actomyosin-generated differential active stresses along the apicobasal axis (Messal et al., 2019; Fouchard et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Salbreux and J\u00fclicher, 2017; Messal et al., 2019; Fouchard et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "30bd791a-92c9-4d0d-90c6-0bd41b0f79db",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C30",
+      "claim": "Cellular force generating elements are not necessarily isotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular force generating elements are not necessarily isotropic; for instance, because cytoskeletal structures exhibit a preferred orientation (Martin, 2020) or inhomogeneous distribution across cellular interfaces (Bertet et al., 2004), or because the epithelial cells themselves exhibit an elongation axis (Duclos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Martin, 2020; Bertet et al., 2004; Duclos et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "1d31e492-4bf4-4a62-8815-65f4346af75a",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C36",
+      "claim": "Lipid membrane vesicles can be induced to form a budded shape consisting of two spheres connected by an infinitesimal region called the ideal neck.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a transition is reminiscent of models of lipid membrane vesicles, which can be induced to form a budded shape consisting of two spheres connected by an infinitesimal region called the ideal neck (Seifert et al., 1991; J\u00fclicher and Lipowsky, 1993; Fourcade et al., 1994; J\u00fclicher and Lipowsky, 1996; Seifert, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Seifert et al., 1991; J\u00fclicher and Lipowsky, 1993; Fourcade et al., 1994; J\u00fclicher and Lipowsky, 1996; Seifert, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "40e51738-b574-4431-9572-ea9070228b3d",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C40",
+      "claim": "Infinitesimal neck formation can arise outside of the Helfrich model.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that infinitesimal neck formation can arise outside of the Helfrich model and that the ideal neck condition which is satisfied there does not generally extend to other models of surface mechanics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "5b40c5ef-64ae-4f2a-874c-a0e2ecdad68b",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C41",
+      "claim": "The ideal neck condition which is satisfied in the Helfrich model does not generally extend to other models of surface mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that infinitesimal neck formation can arise outside of the Helfrich model and that the ideal neck condition which is satisfied there does not generally extend to other models of surface mechanics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "45205e84-c9c7-4a49-adda-8694f8b7c68e",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C44",
+      "claim": "Shapes obtained by following the continuous branch of shapes beyond the fold are expected to be unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect shapes obtained by following the continuous branch of shapes beyond the fold to be unstable (Appendix 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model analysis, with reference to Appendix 9.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "e043306d-1b62-42da-9da2-7405976058d2",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C45",
+      "claim": "When volume is conserved, deformations are broadly similar but tend to be more localised to the fold at the active boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "When volume is conserved, deformations are broadly similar but tend to be more localised to the fold at the active boundary (Figure 2e\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the numerical simulations, with reference to Figure 2e-i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "cfc18f85-f091-4e6b-aa34-b1d2386e0b03",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C55",
+      "claim": "Dynamic simulations show separation of the shape into two or more compartments via dynamical neck constrictions, with the neck radius vanishing over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic simulations show separation of the shape into two or more compartments via dynamical neck constrictions, with the neck radius vanishing over time (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the dynamic simulations, with reference to Figure 4\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "5745d881-030a-4cdf-8834-95f86c6aee77",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C57",
+      "claim": "For values close to the branch fold, the dynamics is reminiscent of cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, for values close to the branch fold (Figure 4c) the dynamics is reminiscent of cell division; however, in contrast to existing models of cell division (Salbreux et al., 2009; Turlier et al., 2014), the constriction appearing here does not require a narrow peak of active stress around the equator to occur.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulations, with citations to Salbreux et al., 2009 and Turlier et al., 2014 for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "2cb17d67-c2c2-4be5-aade-0be317ff6b00",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C58",
+      "claim": "The constriction appearing in the model does not require a narrow peak of active stress around the equator to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, for values close to the branch fold (Figure 4c) the dynamics is reminiscent of cell division; however, in contrast to existing models of cell division (Salbreux et al., 2009; Turlier et al., 2014), the constriction appearing here does not require a narrow peak of active stress around the equator to occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model, contrasted with existing models via citations to Salbreux et al., 2009 and Turlier et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "912922d2-2316-4ecf-b9c5-3197c150dfbd",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C59",
+      "claim": "At larger contractile stress, a narrow, elongated tube forms around the equator.",
+      "claim_type": "EXPLICIT",
+      "source": "At larger contractile stress (Figure 4e), a narrow, elongated tube forms around the equator.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the numerical simulations, with reference to Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "cc389912-4ee5-48f7-a0d5-cdd06ca3e086",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C60",
+      "claim": "The tube thins out over time, and two symmetric necks emerge and constrict, suggesting that the shape would eventually separate into three topologically separated surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "This tube thins out over time, and two symmetric necks emerge and constrict, suggesting that the shape would eventually separate into three topologically separated surfaces (Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the dynamic simulations, with reference to Figure 4\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "64d6b1ab-1bf3-4156-9b06-be6fd71d9dfb",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C63",
+      "claim": "Following the solution branch beyond the fold results in a complex trajectory in parameter space, corresponding to successive additions of new bubbles to a linear chain of bubbles within the active region.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the solution branch beyond the fold results in a complex trajectory in parameter space, corresponding to successive additions of new bubbles to a linear chain of bubbles within the active region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "6ae63c32-01cb-4a78-a5a1-d71ba6ec0597",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C64",
+      "claim": "This bubble chain is observed both with free or constrained volume.",
+      "claim_type": "EXPLICIT",
+      "source": "This bubble chain is observed both with free or constrained volume (Figure 4b and g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the numerical simulations, with reference to Figure 4b and g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "a5fd4e78-6440-4db4-860f-ae43ecb756c3",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C79",
+      "claim": "The shape can take the form of an inner tube entering the spherical shell, reminiscent of epithelial shape changes observed during sea urchin gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the shape can take the form of an inner tube entering the spherical shell (Figure 5b), reminiscent of epithelial shape changes observed during sea urchin gastrulation (Ettensohn, 1984).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations, with citation to Ettensohn, 1984 for biological comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "349be342-67c1-441b-9d50-6ba432a50a13",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C82",
+      "claim": "At the tip of the emerging cylinder lies the +1 topological defect.",
+      "claim_type": "EXPLICIT",
+      "source": "At the tip of the emerging cylinder lies the +1 topological defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "82de103a-65fa-4eea-ae2b-477c1271a204",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C85",
+      "claim": "With fixed volume, we do not observe cylindrical shapes or protrusions as in the case of free volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We now describe surfaces with fixed volume (Figure 5d\u2013f). Here, we do not observe cylindrical shapes or protrusions as in the case of free volume.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the numerical simulations, with reference to Figure 5d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "a214aeeb-cd74-4734-a796-594e76db4e3b",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C92",
+      "claim": "To the right of the fold line in the shape diagram, the steady-state solutions are eventually lost through the formation of a small neck that separates off a smaller, internalised compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "To the right of the fold line in the shape diagram, the steady-state solutions are eventually lost through the formation of a small neck that separates off a smaller, internalised compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "22429263-f27f-4ab5-a0f9-1ac524175920",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C95",
+      "claim": "Introduction of a nematic field on the surface greatly increases the space of possible shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that introduction of a nematic field on the surface greatly increases the space of possible shapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing results with and without nematic fields.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "26392379-b777-48ab-8ab3-ebc0c3b18bec",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C97",
+      "claim": "Such a process of tissue planarisation appears to occur as an intermediate step in skin organoid formation, where epithelial cysts fuse and merge to form transient bilaterally symmetric structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a process of tissue planarisation appears to occur as an intermediate step in skin organoid formation, where epithelial cysts fuse and merge to form transient bilaterally symmetric structures (Lei et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lei et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "c6a4fc2f-4a27-4bf1-a601-7d9bdc687264",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C98",
+      "claim": "The formation of tubular appendages from nematic bending moments appears to recapitulate growth/regeneration of elongated bodies and tentacles in Hydra.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of tubular appendages from nematic bending moments appears to recapitulate growth/regeneration of elongated bodies and tentacles in Hydra (Maroudas-Sacks et al., 2021) and, with an opposite sign, of epithelial invagination during sea urchin embryo gastrulation (Ettensohn, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to biological observations, with citation to Maroudas-Sacks et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "f30824db-0a9d-4faa-bcc4-285b08bddcce",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C99",
+      "claim": "The formation of tubular appendages from nematic bending moments appears to recapitulate epithelial invagination during sea urchin embryo gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of tubular appendages from nematic bending moments appears to recapitulate growth/regeneration of elongated bodies and tentacles in Hydra (Maroudas-Sacks et al., 2021) and, with an opposite sign, of epithelial invagination during sea urchin embryo gastrulation (Ettensohn, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to biological observations, with citation to Ettensohn, 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "b4954724-ae93-480f-bd10-53732babe9a4",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C100",
+      "claim": "The axisymmetric structure considered naturally gives rise to two +1 nematic defects at the poles.",
+      "claim_type": "EXPLICIT",
+      "source": "The axisymmetric structure we have considered here naturally gives rise to two +1 nematic defects at the poles (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the model, with reference to Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "556341b7-6a74-437a-9a57-77a336efbf40",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C101",
+      "claim": "These defects structure the nematic field and, as a result, the shape changes driven by nematic active tension or bending moments.",
+      "claim_type": "EXPLICIT",
+      "source": "These defects then structure the nematic field and, as a result, the shape changes driven by nematic active tension or bending moments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "cc405f00-c577-4980-91d8-e16ce08bc7d4",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C102",
+      "claim": "Such an interplay between topological defect and shape changes is a recurring theme that may play a key role in morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an interplay between topological defect and shape changes is a recurring theme that may play a key role in morphogenesis (Frank and Kardar, 2008; Metselaar et al., 2019; Hoffmann et al., 2021; Blanch-Mercader et al., 2021a; Blanch-Mercader et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Frank and Kardar, 2008; Metselaar et al., 2019; Hoffmann et al., 2021; Blanch-Mercader et al., 2021a; Blanch-Mercader et al., 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "61dc33bb-dcb5-44ee-94a2-ee581b3e2acb",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C103",
+      "claim": "+1 nematic defects are unstable to separation into two +1/2 defects.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice +1 nematic defects are unstable to separation into two +1/2 defects; however, it is conceivable that a polar or additional weakly polar field stabilises the +1 defects (Amiri et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about nematic defects, with citation to Amiri et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "6ff51e8c-fb5a-4e92-932b-1aecf5cfe772",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C104",
+      "claim": "It is conceivable that a polar or additional weakly polar field stabilises the +1 defects.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice +1 nematic defects are unstable to separation into two +1/2 defects; however, it is conceivable that a polar or additional weakly polar field stabilises the +1 defects (Amiri et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement, with citation to Amiri et al., 2022.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "0963f54a-3dd4-4c7b-b172-69151e73c666",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C105",
+      "claim": "Continuum theories for curved surfaces, such as the Helfrich theory, have been extremely successful to describe shape transformations of passive vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuum theories for curved surfaces, such as the Helfrich theory, have been extremely successful to describe shape transformations of passive vesicles, including homogeneous or phase-separated vesicles with coexisting domains (Seifert et al., 1991; MacKintosh and Lubensky, 1991; J\u00fclicher and Lipowsky, 1993; Seifert, 1997; Allain et al., 2004; Sens and Turner, 2004; Bassereau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Seifert et al., 1991; MacKintosh and Lubensky, 1991; J\u00fclicher and Lipowsky, 1993; Seifert, 1997; Allain et al., 2004; Sens and Turner, 2004; Bassereau et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "e23ba1b5-b308-4a2e-aa19-77511eddb1c0",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C106",
+      "claim": "The effect of broken symmetry variables on passive surfaces, arising from molecular tilt giving rise to polar order on a lipid membrane, has been considered theoretically.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of broken symmetry variables on passive surfaces, arising, for instance, from molecular tilt giving rise to polar order on a lipid membrane, has been considered theoretically (MacKintosh and Lubensky, 1991; Lubensky and Prost, 1992; Park et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to MacKintosh and Lubensky, 1991; Lubensky and Prost, 1992; Park et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "20effce7-eeb7-4186-ada5-d1a9538a3be7",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C107",
+      "claim": "Continuum theories of active surfaces can allow to study epithelial deformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuum theories of active surfaces can similarly allow to study epithelial deformations (Salbreux and J\u00fclicher, 2017; Morris and Rao, 2019; Messal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Salbreux and J\u00fclicher, 2017; Morris and Rao, 2019; Messal et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "b29d6949-f30d-46db-8f7b-f8f335fcbb87",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C108",
+      "claim": "The constitutive equations for tensions and bending moments do not in general derive from a free energy and describe a system out-of-equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "We note some important differences between the active surface model described here and passive membranes. (i) Our constitutive equations for tensions and bending moments Equations 5 and 6 do not in general derive from a free energy (Salbreux and J\u00fclicher, 2017) and describe a system out-of-equilibrium",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model, with citation to Salbreux and J\u00fclicher, 2017.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "95496578-9654-406c-b0e6-911b2148fd14",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C111",
+      "claim": "Simulations with constant volume have relative area changes of up to 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "for example, simulations with constant volume have relative area changes of up to 20% (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations, with reference to Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "39ff0ffe-6457-402e-b3d0-d81d2f49ff03",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C112",
+      "claim": "Patterns of active tensions and bending moments imposed do not derive from an energy and are thought to respond to spatiotemporal chemical cues.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) patterns of active tensions and bending moments imposed here also do not derive from an energy and are thought to respond to spatiotemporal chemical cues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "4c94d51a-a6ec-4004-a115-39dc1caf17b0",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C113",
+      "claim": "Phase-separated domains in passive lipid vesicles obey equilibrium thermodynamics and their size is controlled by line tension at the domain boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast, phase-separated domains in passive lipid vesicles obey equilibrium thermodynamics and their size is controlled, for instance, by line tension at the domain boundary (J\u00fclicher and Lipowsky, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to J\u00fclicher and Lipowsky, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "7ecd169f-00b8-4043-baf1-087459f8c259",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C114",
+      "claim": "Budding occurring in lipid membranes due to phase separation of domains with different spontaneous curvature is similar to the budding observed in the active model for different regions with different active isotropic bending moments.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, budding occurring in lipid membranes due to phase separation of domains with different spontaneous curvature (J\u00fclicher and Lipowsky, 1993) is similar to the budding we observe here for different regions with different active isotropic bending moments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the model results and passive membrane behavior, with citation to J\u00fclicher and Lipowsky, 1993.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "71f21506-352c-45cc-8d56-3c48f178a343",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C115",
+      "claim": "Nematically oriented active bending moments can give rise to spontaneous cylindrical tubes, without external force application.",
+      "claim_type": "EXPLICIT",
+      "source": "We find here that nematically oriented active bending moments can give rise to spontaneous cylindrical tubes, without external force application (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model, with reference to Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "cfa3ea7c-97d2-4e25-a889-52feddf173e6",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C116",
+      "claim": "Spontaneous formation of hollow cylindrical vesicles with polar order due to molecular tilt has been discussed.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous formation of hollow cylindrical vesicles with polar order due to molecular tilt has been discussed Lubensky and Prost, 1992; there the cylindrical shapes are considered to be open and the gain in defect energy allows the open cylinder to be more stable than the spherical shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lubensky and Prost, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "556dc338-75e6-49d7-bd72-187ac2b49f9a",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C117",
+      "claim": "In the active model, active surfaces spontaneously form tubes, but stay closed and keep their topological charge.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we find here active surfaces which spontaneously form tubes, but stay closed and keep their topological charge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model, contrasted with the case of passive vesicles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "b023369a-e5bc-44b1-8695-0b34c4ba899f",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C118",
+      "claim": "A supported bilayer membrane under compression can spontaneously form tubes under negative tension.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been reported that a supported bilayer membrane under compression can spontaneously form tubes under negative tension (Staykova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Staykova et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "b9ed4a68-6aae-4252-a602-7d3d240a73c3",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C119",
+      "claim": "Models for chiral lipid bilayers in a tilted fluid phase have predicted tubular shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Models for chiral lipid bilayers in a tilted fluid phase have also predicted tubular shapes (Helfrich and Prost, 1988; Selinger and Schnur, 1993; Selinger et al., 1996; Tu and Seifert, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Helfrich and Prost, 1988; Selinger and Schnur, 1993; Selinger et al., 1996; Tu and Seifert, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "96a19272-9c06-455f-86bc-6743bf1a09e6",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C120",
+      "claim": "The study has not considered chiral effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have not considered chiral effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scope of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "45131cd8-6cd2-421a-bd81-e827b10175cb",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C121",
+      "claim": "Chiral effects could be introduced by generalising the constitutive Equations 5 and 6, including terms which appear for surfaces with broken planar-chiral or chiral symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects could be introduced by generalising the constitutive Equations 5 and 6, including terms which appear for surfaces with broken planar-chiral or chiral symmetry (Salbreux and J\u00fclicher, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future work, with citation to Salbreux and J\u00fclicher, 2017.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "65d84b03-8888-40d1-9333-e6453accc2d3",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C122",
+      "claim": "The study has considered morphogenetic events occurring on time scales long enough for shear elastic stresses to be relaxed by cell topological rearrangements, such that the tissue exhibits fluid behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to purely elastic models of morphogenesis (H\u00f6hn et al., 2015; Haas et al., 2018), we have considered here morphogenetic events occurring on time scales long enough for shear elastic stresses to be relaxed by cell topological rearrangements, such that the tissue exhibits fluid behaviour (Popovi\u0107 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model assumptions, with citations to H\u00f6hn et al., 2015; Haas et al., 2018; Popovi\u0107 et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "60faad59-201b-4483-b0cf-872d3ae5dff1",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C123",
+      "claim": "Whether a tissue behaves as an elastic or fluid material on time scales relevant to morphogenesis can in principle be probed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether a tissue behaves as an elastic or fluid material on time scales relevant to morphogenesis can in principle be probed experimentally (Mongera et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mongera et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "bf8acbdf-52f7-4401-a53f-079a8bb0b8ec",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C124",
+      "claim": "The constitutive Equations 5 and 6 are generic and may also describe the large-scale behaviour of active nematics formed with cytoskeletal filaments and motors on a deformable surface.",
+      "claim_type": "EXPLICIT",
+      "source": "While we have focused the interpretation of our results to epithelial mechanics, the constitutive Equations 5 and 6 we have considered here are generic and may also describe the large-scale behaviour of active nematics formed with cytoskeletal filaments and motors on a deformable surface (Keber et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generality of the model, with citation to Keber et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "8b458393-6682-4396-9cc2-b07acd04287f",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C125",
+      "claim": "Cytoskeletal networks can in principle be fluid with respect to both shear and bulk shear due to the turnover of components.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered here, however, a situation where the two-dimensional fluid has area elasticity, whereas cytoskeletal networks can in principle be fluid with respect to both shear and bulk shear due to the turnover of components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the difference between the model and cytoskeletal networks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "69bffc46-25d2-4978-8e06-f96bf8120855",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C126",
+      "claim": "The study has considered chemical and mechanical processes to be uncoupled, except for the profile of active tension or torque being advected with the surface flow.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have considered chemical and mechanical processes to be uncoupled, except for the profile of active tension or torque being advected with the surface flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "f403e290-0f61-40c3-97ca-86ff75f42fa9",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C127",
+      "claim": "The study assumed that orientational order relaxes quickly compared to other dynamical processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we assumed that orientational order relaxes quickly compared to other dynamical processes; in future work, this assumption could be lifted and one could study in particular how chemical regulation could influence the dynamics of orientational order in the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model assumptions and suggestions for future work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "e5b78fe6-9fda-4e58-bd86-27168a483041",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C129",
+      "claim": "The study has considered a tissue with a fixed preferred area, implicitly assuming that the epithelium is not growing.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we have considered here a tissue with a fixed preferred area, implicitly assuming that the epithelium is not growing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "4daee26e-f6ec-437e-b03b-2802d88c3a3e",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C130",
+      "claim": "Tissue growth is a key aspect of biological development.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue growth is a key aspect of biological development (Gokhale and Shingleton, 2015; Eder et al., 2017), and cell division and death can fluidify elastic stresses in an epithelium (Ranft et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gokhale and Shingleton, 2015 and Eder et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "66af10ab-ea38-4eb0-8e8e-a99860056d72",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "claim_id": "C131",
+      "claim": "Cell division and death can fluidify elastic stresses in an epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue growth is a key aspect of biological development (Gokhale and Shingleton, 2015; Eder et al., 2017), and cell division and death can fluidify elastic stresses in an epithelium (Ranft et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ranft et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6e2b7e92-0ac8-4645-8978-f61c73781922",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context that epithelial tissue shape transformations are crucial for embryonic development and organoid growth, involving processes such as folding, invagination, and tubulation driven by active cytoskeletal forces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 are well-supported by established literature citations (Gilbert and Barresi 2020; Kominami and Takata 2004; Sui et al. 2018; Huch et al. 2017; Kamm et al. 2018; Rossi et al. 2018; Ishihara and Tanaka 2018; Meinhardt et al. 2014; Serra et al. 2019; Yang et al. 2021). These claims provide the biological motivation for the study and are appropriately referenced to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "b9ba0a1d-1610-474d-b480-15975e4a99a6",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior theoretical work showing that continuum theories of active materials and active liquid crystal models have successfully described epithelial mechanics, cellular flows, and the link between topological defects and morphogenetic events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 are supported by appropriate citations to prior work (Duclos et al. 2017, 2018; Blanch-Mercader et al. 2021a; Etournay et al. 2015; Popovi\u0107 et al. 2017; Kawaguchi et al. 2017; Saw et al. 2017; Mueller et al. 2019; Maroudas-Sacks et al. 2021). These claims establish the theoretical framework and prior successes of the modeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "85c2dd1c-7060-4029-b28f-d042ab2c2582",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript describes the physical basis for internal bending moments arising from inhomogeneous stress distributions across epithelial tissue thickness, including apico-basal differences in cytoskeletal organization and contractility, and the presence of anisotropic cellular structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 and C26-C30 are supported by appropriate citations (Braun and Keren 2018; Maroudas-Sacks et al. 2021; Martin and Goldstein 2014; Sui et al. 2018; Khalilgharibi and Mao 2021; Salbreux and J\u00fclicher 2017; Messal et al. 2019; Fouchard et al. 2020; Martin 2020; Bertet et al. 2004; Duclos et al. 2017). These claims establish the biological and physical rationale for the model components.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "1826ea27-c95c-463a-b267-a1219b763dd3",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript describes key modeling assumptions: the surface is elastic with respect to area changes but fluid with respect to shear, cellular rearrangements allow stress relaxation on long timescales (hours to days), cell division and apoptosis are not occurring, cells have a preferred area, and chemical and mechanical processes are uncoupled except for advection of active profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25, C126-C127, and C129 clearly state the modeling assumptions with appropriate justification and citations (Popovi\u0107 et al. 2017; Gilbert and Barresi 2020; Ranft et al. 2010). These assumptions are reasonable for the timescales and biological contexts considered, though they do limit the scope of the model. The assumptions are explicitly stated, which is appropriate for a theoretical study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "9a43b128-6a2f-4d4a-ac66-aa519a976932",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The manuscript's main finding is that a combination of nematic alignment and gradients in internal tensions and bending moments is sufficient to reproduce basic building blocks of epithelial morphogenesis (fold formation, budding, neck formation, flattening, and tubulation), and that introducing a nematic field greatly increases the space of possible shapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C95 represent the central results of the computational modeling study. These are supported by extensive numerical simulations presented in Figures 2-6 showing diverse morphological outcomes. The model successfully generates a range of biologically relevant shapes through systematic variation of parameters. The claim is appropriately qualified as 'sufficient' rather than 'necessary,' acknowledging that other mechanisms may also contribute to morphogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "f98abca8-c43c-4803-979d-c7bb505596f9",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript finds that infinitesimal neck formation (budding with two spheres connected by an infinitesimal neck) can arise outside of the Helfrich model for passive membranes, and that the ideal neck condition from the Helfrich model does not generally extend to other models of surface mechanics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C40, and C41 are supported by the numerical simulations and analytical scaling analysis presented in the manuscript (Figure 2, Appendix 2). The authors derive alternative matching conditions for neck formation in their active surface model and show that these differ from the Helfrich model's ideal neck condition. The comparison to passive membrane models (Seifert et al. 1991; J\u00fclicher and Lipowsky 1993; Fourcade et al. 1994; J\u00fclicher and Lipowsky 1996; Seifert 1997) is appropriate and the distinction is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "529ae33f-e855-4700-b93a-2d7356f8368f",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The manuscript finds that shapes obtained by following the continuous branch beyond fold points in parameter space are expected to be unstable, and that when volume is conserved, deformations are broadly similar to the free volume case but more localized to the fold at the active boundary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C45 are supported by the numerical simulations (Figure 2e-i) and stability analysis referenced in Appendix 9. The expectation of instability for shapes beyond fold points is a reasonable inference from bifurcation theory, though full stability analysis would require additional computation. The observation about volume conservation effects is directly supported by the simulation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "6ffd9961-9617-40d9-9aa4-28630dcf9e95",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dynamic simulations of nematic active tensions show that contractile stress can drive separation into multiple compartments via neck constrictions, with dynamics reminiscent of cell division but not requiring a narrow peak of active stress. At larger contractile stress, elongated tubes form that thin out and develop symmetric necks, potentially separating into three compartments. Following solution branches beyond folds results in bubble chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C57-C60, C63-C64 are supported by dynamic simulation results presented in Figures 4 and 4\u2014figure supplement 1. The comparison to cell division models (Salbreux et al. 2009; Turlier et al. 2014) is appropriate and highlights a novel mechanism. The observations about tube formation and bubble chains are directly shown in the simulation results. However, the claim that shapes 'would eventually separate' (C60) is somewhat speculative as simulations were not run to completion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "9246c59a-1efa-466b-8ad0-c267e4f3edf3",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For nematic active bending moments, the manuscript finds that shapes can form inner tubes entering the spherical shell (reminiscent of sea urchin gastrulation), with +1 topological defects at the tip of emerging cylinders. With fixed volume, cylindrical protrusions are not observed, and steady-state solutions can be lost through formation of small necks separating smaller internalized compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79, C82, C85, and C92 are supported by simulation results in Figure 5. The comparison to sea urchin gastrulation (Ettensohn 1984) is appropriate. The observation about topological defects at cylinder tips is consistent with the model's nematic field structure. The differences between free and fixed volume cases are clearly demonstrated in the simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "3388d852-239b-43ad-8e2c-5be5549e0c36",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The axisymmetric structure naturally gives rise to two +1 nematic defects at the poles, which structure the nematic field and resulting shape changes. This interplay between topological defects and shape changes may play a key role in morphogenesis. While +1 defects are typically unstable to separation into +1/2 defects, a polar field might stabilize them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C102 are well-supported by the model results (Figure 3a) and appropriate citations (Frank and Kardar 2008; Metselaar et al. 2019; Hoffmann et al. 2021; Blanch-Mercader et al. 2021a,b). The observation about +1 defects is a direct consequence of the Poincar\u00e9-Hopf theorem applied to the spherical topology. Claims C103-C104 appropriately acknowledge limitations and cite relevant work (Amiri et al. 2022) about defect stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "6a80012d-b803-493b-bbf6-3af32435b3f3",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript compares model results to biological observations: flattening appears similar to tissue planarization in skin organoid formation, and tubular appendage formation from nematic bending moments recapitulates Hydra tentacle growth/regeneration and sea urchin gastrulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C99 appropriately compare model predictions to biological observations with proper citations (Lei et al. 2017; Maroudas-Sacks et al. 2021; Ettensohn 1984). These comparisons are qualitative and appropriately cautious ('appears to'), acknowledging that the model captures certain geometric features without claiming to fully explain the biological mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "ea812232-8b22-4b0c-86fa-7e260d1acadc",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript discusses differences between the active surface model and passive membrane models: the constitutive equations do not derive from a free energy and describe out-of-equilibrium systems, area changes can be substantial (up to 20%), and active patterns respond to chemical cues rather than equilibrium thermodynamics. Despite differences, some similarities exist (e.g., budding behavior).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C108, C111-C114 provide appropriate context by comparing the active model to passive membrane theories with extensive citations (Seifert et al. 1991; MacKintosh and Lubensky 1991; J\u00fclicher and Lipowsky 1993; Seifert 1997; Allain et al. 2004; Sens and Turner 2004; Bassereau et al. 2014; Salbreux and J\u00fclicher 2017). The quantitative observation about area changes (C111) is supported by Figure 2\u2014figure supplement 2. The distinctions are clearly articulated and important for understanding the model's scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "3ba0328a-f75d-4209-bbc6-6f0fc6dd6a04",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript finds that nematically oriented active bending moments can spontaneously generate cylindrical tubes without external forces. Unlike passive vesicles with polar order that form open cylinders, active surfaces form closed tubes that maintain topological charge. This differs from other mechanisms of tube formation in passive systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C119 are supported by simulation results (Figure 5) and appropriate comparisons to prior work on passive systems (Lubensky and Prost 1992; Staykova et al. 2013; Helfrich and Prost 1988; Selinger and Schnur 1993; Selinger et al. 1996; Tu and Seifert 2007). The distinction between open and closed tubes is clearly demonstrated. The analytical predictions for cylinder radius and length (Equations 28-29) match simulation results well (Figure 5g).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    },
+    {
+      "id": "078b9bd1-0014-4c3a-9c1a-57dcaf0d0691",
+      "content_id": "baff2d7e-a664-4956-b80c-578738925836",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript discusses model limitations and scope: chiral effects were not considered but could be added, the model assumes fluid behavior on long timescales rather than elastic behavior, the constitutive equations are generic and may apply to cytoskeletal active nematics, and tissue growth was not included though it is important for development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C120-C125, C130-C131 appropriately discuss model limitations and scope with relevant citations (Salbreux and J\u00fclicher 2017; H\u00f6hn et al. 2015; Haas et al. 2018; Popovi\u0107 et al. 2017; Mongera et al. 2018; Keber et al. 2014; Gokhale and Shingleton 2015; Eder et al. 2017; Ranft et al. 2010). These claims demonstrate appropriate scientific caution and suggest directions for future work. The acknowledgment of limitations is important for proper interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:26:13.197101Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "63a2753f-1f2b-4fc6-8b82-418587518e73",
+      "result_id": "6e2b7e92-0ac8-4645-8978-f61c73781922"
+    },
+    {
+      "claim_id": "d71e3b56-dca5-470b-9fde-f4f1ee29f734",
+      "result_id": "6e2b7e92-0ac8-4645-8978-f61c73781922"
+    },
+    {
+      "claim_id": "c0a826db-8cf0-48be-81e9-1c423fb0c697",
+      "result_id": "6e2b7e92-0ac8-4645-8978-f61c73781922"
+    },
+    {
+      "claim_id": "8ef77aa7-ab95-46b8-9420-5bb46c5a71d1",
+      "result_id": "6e2b7e92-0ac8-4645-8978-f61c73781922"
+    },
+    {
+      "claim_id": "035fd565-90f9-4a55-8a62-1be7a10eedf7",
+      "result_id": "6e2b7e92-0ac8-4645-8978-f61c73781922"
+    },
+    {
+      "claim_id": "e0cd214f-500b-4d2a-92a4-3306cabd4875",
+      "result_id": "6e2b7e92-0ac8-4645-8978-f61c73781922"
+    },
+    {
+      "claim_id": "d4de88ed-d5d2-445f-a557-839330bdbac4",
+      "result_id": "6e2b7e92-0ac8-4645-8978-f61c73781922"
+    },
+    {
+      "claim_id": "5e2b463b-a768-41f7-93a9-33b91aea725b",
+      "result_id": "6e2b7e92-0ac8-4645-8978-f61c73781922"
+    },
+    {
+      "claim_id": "de71acec-5f73-404d-8553-265add7fb99e",
+      "result_id": "6e2b7e92-0ac8-4645-8978-f61c73781922"
+    },
+    {
+      "claim_id": "0a5b49fb-d8c4-4471-b80c-5addcc2cbce5",
+      "result_id": "6e2b7e92-0ac8-4645-8978-f61c73781922"
+    },
+    {
+      "claim_id": "b1096e79-c0ac-4854-a81c-6fc82c1375ff",
+      "result_id": "b9ba0a1d-1610-474d-b480-15975e4a99a6"
+    },
+    {
+      "claim_id": "6562177e-9f8d-4835-92de-d35bde05465c",
+      "result_id": "b9ba0a1d-1610-474d-b480-15975e4a99a6"
+    },
+    {
+      "claim_id": "722892b3-89ac-4b48-9a1d-b0e98f265083",
+      "result_id": "b9ba0a1d-1610-474d-b480-15975e4a99a6"
+    },
+    {
+      "claim_id": "90fb7084-af4b-4df1-bbc5-9abfa9e89994",
+      "result_id": "b9ba0a1d-1610-474d-b480-15975e4a99a6"
+    },
+    {
+      "claim_id": "b42658a8-774b-4f1e-8a33-0c2e3ebc967b",
+      "result_id": "85c2dd1c-7060-4029-b28f-d042ab2c2582"
+    },
+    {
+      "claim_id": "65f53607-213a-4042-b066-a40e1511562c",
+      "result_id": "85c2dd1c-7060-4029-b28f-d042ab2c2582"
+    },
+    {
+      "claim_id": "1901d39e-eb7b-4900-a0cd-ce685786192e",
+      "result_id": "85c2dd1c-7060-4029-b28f-d042ab2c2582"
+    },
+    {
+      "claim_id": "d21916be-79f1-4b99-a183-f3443fc2b370",
+      "result_id": "85c2dd1c-7060-4029-b28f-d042ab2c2582"
+    },
+    {
+      "claim_id": "2bc6fc49-7865-474a-be3e-b38648836832",
+      "result_id": "85c2dd1c-7060-4029-b28f-d042ab2c2582"
+    },
+    {
+      "claim_id": "e01136a9-4768-4c5e-b2e4-2e968289534a",
+      "result_id": "85c2dd1c-7060-4029-b28f-d042ab2c2582"
+    },
+    {
+      "claim_id": "a9e20c77-b30d-4484-bbd8-4ee044f05fce",
+      "result_id": "85c2dd1c-7060-4029-b28f-d042ab2c2582"
+    },
+    {
+      "claim_id": "0236f0aa-812f-49a8-ba36-ed3d6ae3717b",
+      "result_id": "85c2dd1c-7060-4029-b28f-d042ab2c2582"
+    },
+    {
+      "claim_id": "30bd791a-92c9-4d0d-90c6-0bd41b0f79db",
+      "result_id": "85c2dd1c-7060-4029-b28f-d042ab2c2582"
+    },
+    {
+      "claim_id": "88f06529-2756-4797-9277-1edc7c8803a7",
+      "result_id": "1826ea27-c95c-463a-b267-a1219b763dd3"
+    },
+    {
+      "claim_id": "037efcfb-e848-4172-bb11-2b6a79967895",
+      "result_id": "1826ea27-c95c-463a-b267-a1219b763dd3"
+    },
+    {
+      "claim_id": "2f5ff66c-e163-477c-906d-8e3c8052acdb",
+      "result_id": "1826ea27-c95c-463a-b267-a1219b763dd3"
+    },
+    {
+      "claim_id": "a97f12c5-61e5-4739-bfa9-bd9d74e881cc",
+      "result_id": "1826ea27-c95c-463a-b267-a1219b763dd3"
+    },
+    {
+      "claim_id": "af675834-7b01-4839-a300-919199d612af",
+      "result_id": "1826ea27-c95c-463a-b267-a1219b763dd3"
+    },
+    {
+      "claim_id": "69bffc46-25d2-4978-8e06-f96bf8120855",
+      "result_id": "1826ea27-c95c-463a-b267-a1219b763dd3"
+    },
+    {
+      "claim_id": "f403e290-0f61-40c3-97ca-86ff75f42fa9",
+      "result_id": "1826ea27-c95c-463a-b267-a1219b763dd3"
+    },
+    {
+      "claim_id": "e5b78fe6-9fda-4e58-bd86-27168a483041",
+      "result_id": "1826ea27-c95c-463a-b267-a1219b763dd3"
+    },
+    {
+      "claim_id": "b79b093f-fab9-47e4-829a-824e2531a8c1",
+      "result_id": "9a43b128-6a2f-4d4a-ac66-aa519a976932"
+    },
+    {
+      "claim_id": "22429263-f27f-4ab5-a0f9-1ac524175920",
+      "result_id": "9a43b128-6a2f-4d4a-ac66-aa519a976932"
+    },
+    {
+      "claim_id": "1d31e492-4bf4-4a62-8815-65f4346af75a",
+      "result_id": "f98abca8-c43c-4803-979d-c7bb505596f9"
+    },
+    {
+      "claim_id": "40e51738-b574-4431-9572-ea9070228b3d",
+      "result_id": "f98abca8-c43c-4803-979d-c7bb505596f9"
+    },
+    {
+      "claim_id": "5b40c5ef-64ae-4f2a-874c-a0e2ecdad68b",
+      "result_id": "f98abca8-c43c-4803-979d-c7bb505596f9"
+    },
+    {
+      "claim_id": "45205e84-c9c7-4a49-adda-8694f8b7c68e",
+      "result_id": "529ae33f-e855-4700-b93a-2d7356f8368f"
+    },
+    {
+      "claim_id": "e043306d-1b62-42da-9da2-7405976058d2",
+      "result_id": "529ae33f-e855-4700-b93a-2d7356f8368f"
+    },
+    {
+      "claim_id": "cfc18f85-f091-4e6b-aa34-b1d2386e0b03",
+      "result_id": "6ffd9961-9617-40d9-9aa4-28630dcf9e95"
+    },
+    {
+      "claim_id": "5745d881-030a-4cdf-8834-95f86c6aee77",
+      "result_id": "6ffd9961-9617-40d9-9aa4-28630dcf9e95"
+    },
+    {
+      "claim_id": "2cb17d67-c2c2-4be5-aade-0be317ff6b00",
+      "result_id": "6ffd9961-9617-40d9-9aa4-28630dcf9e95"
+    },
+    {
+      "claim_id": "912922d2-2316-4ecf-b9c5-3197c150dfbd",
+      "result_id": "6ffd9961-9617-40d9-9aa4-28630dcf9e95"
+    },
+    {
+      "claim_id": "cc389912-4ee5-48f7-a0d5-cdd06ca3e086",
+      "result_id": "6ffd9961-9617-40d9-9aa4-28630dcf9e95"
+    },
+    {
+      "claim_id": "64d6b1ab-1bf3-4156-9b06-be6fd71d9dfb",
+      "result_id": "6ffd9961-9617-40d9-9aa4-28630dcf9e95"
+    },
+    {
+      "claim_id": "6ae63c32-01cb-4a78-a5a1-d71ba6ec0597",
+      "result_id": "6ffd9961-9617-40d9-9aa4-28630dcf9e95"
+    },
+    {
+      "claim_id": "a5fd4e78-6440-4db4-860f-ae43ecb756c3",
+      "result_id": "9246c59a-1efa-466b-8ad0-c267e4f3edf3"
+    },
+    {
+      "claim_id": "349be342-67c1-441b-9d50-6ba432a50a13",
+      "result_id": "9246c59a-1efa-466b-8ad0-c267e4f3edf3"
+    },
+    {
+      "claim_id": "82de103a-65fa-4eea-ae2b-477c1271a204",
+      "result_id": "9246c59a-1efa-466b-8ad0-c267e4f3edf3"
+    },
+    {
+      "claim_id": "a214aeeb-cd74-4734-a796-594e76db4e3b",
+      "result_id": "9246c59a-1efa-466b-8ad0-c267e4f3edf3"
+    },
+    {
+      "claim_id": "b4954724-ae93-480f-bd10-53732babe9a4",
+      "result_id": "3388d852-239b-43ad-8e2c-5be5549e0c36"
+    },
+    {
+      "claim_id": "556341b7-6a74-437a-9a57-77a336efbf40",
+      "result_id": "3388d852-239b-43ad-8e2c-5be5549e0c36"
+    },
+    {
+      "claim_id": "cc405f00-c577-4980-91d8-e16ce08bc7d4",
+      "result_id": "3388d852-239b-43ad-8e2c-5be5549e0c36"
+    },
+    {
+      "claim_id": "61dc33bb-dcb5-44ee-94a2-ee581b3e2acb",
+      "result_id": "3388d852-239b-43ad-8e2c-5be5549e0c36"
+    },
+    {
+      "claim_id": "6ff51e8c-fb5a-4e92-932b-1aecf5cfe772",
+      "result_id": "3388d852-239b-43ad-8e2c-5be5549e0c36"
+    },
+    {
+      "claim_id": "26392379-b777-48ab-8ab3-ebc0c3b18bec",
+      "result_id": "6a80012d-b803-493b-bbf6-3af32435b3f3"
+    },
+    {
+      "claim_id": "c6a4fc2f-4a27-4bf1-a601-7d9bdc687264",
+      "result_id": "6a80012d-b803-493b-bbf6-3af32435b3f3"
+    },
+    {
+      "claim_id": "f30824db-0a9d-4faa-bcc4-285b08bddcce",
+      "result_id": "6a80012d-b803-493b-bbf6-3af32435b3f3"
+    },
+    {
+      "claim_id": "0963f54a-3dd4-4c7b-b172-69151e73c666",
+      "result_id": "ea812232-8b22-4b0c-86fa-7e260d1acadc"
+    },
+    {
+      "claim_id": "e23ba1b5-b308-4a2e-aa19-77511eddb1c0",
+      "result_id": "ea812232-8b22-4b0c-86fa-7e260d1acadc"
+    },
+    {
+      "claim_id": "20effce7-eeb7-4186-ada5-d1a9538a3be7",
+      "result_id": "ea812232-8b22-4b0c-86fa-7e260d1acadc"
+    },
+    {
+      "claim_id": "b29d6949-f30d-46db-8f7b-f8f335fcbb87",
+      "result_id": "ea812232-8b22-4b0c-86fa-7e260d1acadc"
+    },
+    {
+      "claim_id": "95496578-9654-406c-b0e6-911b2148fd14",
+      "result_id": "ea812232-8b22-4b0c-86fa-7e260d1acadc"
+    },
+    {
+      "claim_id": "39ff0ffe-6457-402e-b3d0-d81d2f49ff03",
+      "result_id": "ea812232-8b22-4b0c-86fa-7e260d1acadc"
+    },
+    {
+      "claim_id": "4c94d51a-a6ec-4004-a115-39dc1caf17b0",
+      "result_id": "ea812232-8b22-4b0c-86fa-7e260d1acadc"
+    },
+    {
+      "claim_id": "7ecd169f-00b8-4043-baf1-087459f8c259",
+      "result_id": "ea812232-8b22-4b0c-86fa-7e260d1acadc"
+    },
+    {
+      "claim_id": "71f21506-352c-45cc-8d56-3c48f178a343",
+      "result_id": "3ba0328a-f75d-4209-bbc6-6f0fc6dd6a04"
+    },
+    {
+      "claim_id": "cfa3ea7c-97d2-4e25-a889-52feddf173e6",
+      "result_id": "3ba0328a-f75d-4209-bbc6-6f0fc6dd6a04"
+    },
+    {
+      "claim_id": "556dc338-75e6-49d7-bd72-187ac2b49f9a",
+      "result_id": "3ba0328a-f75d-4209-bbc6-6f0fc6dd6a04"
+    },
+    {
+      "claim_id": "b023369a-e5bc-44b1-8695-0b34c4ba899f",
+      "result_id": "3ba0328a-f75d-4209-bbc6-6f0fc6dd6a04"
+    },
+    {
+      "claim_id": "b9ed4a68-6aae-4252-a602-7d3d240a73c3",
+      "result_id": "3ba0328a-f75d-4209-bbc6-6f0fc6dd6a04"
+    },
+    {
+      "claim_id": "96a19272-9c06-455f-86bc-6743bf1a09e6",
+      "result_id": "078b9bd1-0014-4c3a-9c1a-57dcaf0d0691"
+    },
+    {
+      "claim_id": "45131cd8-6cd2-421a-bd81-e827b10175cb",
+      "result_id": "078b9bd1-0014-4c3a-9c1a-57dcaf0d0691"
+    },
+    {
+      "claim_id": "65d84b03-8888-40d1-9333-e6453accc2d3",
+      "result_id": "078b9bd1-0014-4c3a-9c1a-57dcaf0d0691"
+    },
+    {
+      "claim_id": "60faad59-201b-4483-b0cf-872d3ae5dff1",
+      "result_id": "078b9bd1-0014-4c3a-9c1a-57dcaf0d0691"
+    },
+    {
+      "claim_id": "bf8acbdf-52f7-4401-a53f-079a8bb0b8ec",
+      "result_id": "078b9bd1-0014-4c3a-9c1a-57dcaf0d0691"
+    },
+    {
+      "claim_id": "8b458393-6682-4396-9cc2-b07acd04287f",
+      "result_id": "078b9bd1-0014-4c3a-9c1a-57dcaf0d0691"
+    },
+    {
+      "claim_id": "4daee26e-f6ec-437e-b03b-2802d88c3a3e",
+      "result_id": "078b9bd1-0014-4c3a-9c1a-57dcaf0d0691"
+    },
+    {
+      "claim_id": "66af10ab-ea38-4eb0-8e8e-a99860056d72",
+      "result_id": "078b9bd1-0014-4c3a-9c1a-57dcaf0d0691"
+    }
+  ],
+  "comparisons": []
+}

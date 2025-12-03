@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C91"
+    ],
+    "result": "The authors developed a single-molecule FISH (smFISH) method using 48 antisense DNA oligonucleotide probes targeting viral ORF1a to detect SARS-CoV-2 genomic RNA with 95% detection efficiency at single-molecule resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C91 collectively demonstrate the development and validation of the smFISH method. The probe design (C1), single-molecule detection (C2), specificity controls with RNase and RDV (C3), and dual-labeling validation showing 95% efficiency (C4) provide strong converging evidence for the method's sensitivity and specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C107"
+    ],
+    "result": "The smFISH method successfully detected SARS-CoV-2 gRNA in FFPE hamster lung tissue, showing variable intracellular RNA levels across the tissue, consistent with observations from single-cell RNA sequencing studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C107 demonstrate the applicability of smFISH to tissue samples. The detection in FFPE tissue (C5) and consistency with single-cell RNA-seq observations of variable vRNA levels (C107) support the method's utility for clinical and tissue-based studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "SARS-CoV-2 replication occurs within the first 2 hours of infection, with single gRNA molecules detected at 2 hpi (likely from incoming viral particles) and multi-gRNA foci (replication factories) appearing by 2 hpi and expanding through 8 and 24 hpi, localizing to the perinuclear region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C92-C95 provide time-course imaging data showing the progression from single gRNA molecules to multi-gRNA foci. The RDV sensitivity of multi-gRNA foci (C93) and co-localization with negative strand RNA and sgRNA (C94) support the interpretation that these represent active replication factories. The timing and localization are consistent with known coronavirus biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Subgenomic RNAs (sgRNAs) are more abundant than genomic RNAs (gRNAs) in infected cells at 6 hpi, with sgRNAs uniformly dispersed throughout the cytoplasm while gRNAs are enriched near the nucleus in clusters. N protein primarily co-localizes with gRNA rather than sgRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by dual-probe smFISH experiments and spatial distribution analysis. The differential localization patterns (C11-C12) are consistent with the known functions of sgRNAs as mRNAs and gRNAs for replication/packaging. The preferential co-localization of N protein with gRNA (C13) is consistent with viral assembly requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Negative sense gRNA is detected at lower levels than positive sense gRNA, with substantial overlap at multi-RNA spots representing active replication sites. Detection of negative strand gRNA requires chemical denaturation with DMSO, suggesting this replication intermediate is rich in dsRNA structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by strand-specific smFISH experiments with denaturation and RNase digestion controls. The requirement for DMSO denaturation (C18-C19) and differential sensitivity to RNaseT1 vs RNaseIII (C16-C17) provide strong evidence for dsRNA structures in the negative strand replication intermediate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C96"
+    ],
+    "result": "The J2 anti-dsRNA antibody underestimates SARS-CoV-2 infection frequency, detecting only 10% of infected cells at 6 hpi with signal comparable to uninfected cells, while smFISH detected >85% of infected cells at both 2 and 6 hpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 and C96 provide quantitative comparison between J2 antibody and smFISH detection methods. The data clearly demonstrate the superior sensitivity of smFISH for early infection detection, with statistical support from Figure 2F. This is an important methodological finding for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C33",
+      "C35",
+      "C36",
+      "C57",
+      "C58",
+      "C98"
+    ],
+    "result": "SARS-CoV-2 gRNA is highly stable in infected cells, with ~30 molecules per cell at 2 hpi (representing incoming viral particles based on RDV insensitivity) and a half-life of 6-8 hours in late infection. gRNA persists in RDV-treated cells for at least 8 hpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C33, C35-C36, C57-C58, and C98 are supported by time-course smFISH data with RDV treatment. The RDV insensitivity at 2 hpi (C26) supports the interpretation of incoming viral particles, while the persistence in RDV-treated cells (C33, C35, C57) and decay curve analysis (C36) support the stability conclusions. However, the half-life estimate acknowledges potential underestimation due to incomplete RDV inhibition and virus egress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Infected cells show heterogeneous susceptibility to SARS-CoV-2 replication, with three populations: 'partially resistant' (<10\u00b2 gRNA copies, 60%), 'permissive' (10\u00b2-10\u2075 copies, 30%), and 'super-permissive' (>10\u2075 copies, 10%). Super-permissive cells account for the majority of total gRNA and reach an upper limit of ~10\u2077 copies per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C101-C103 are supported by quantitative single-cell analysis across multiple timepoints. The classification into three populations is data-driven and the observation that super-permissive cells dominate total gRNA (C29, C103) has important implications for bulk RNA analysis methods (C30). The similar gRNA levels at 2 hpi across all cells (C102) argues against entry differences as the cause of heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C78",
+      "C79",
+      "C99",
+      "C100"
+    ],
+    "result": "Subgenomic RNA (sgRNA) is detected as early as 2 hpi (11 copies/cell in 63% of cells), implying rapid transcription that is RDV insensitive. The sgRNA/gRNA ratio ranges from 0.5 to 8, increasing between 2-10 hpi then declining at 24 hpi, indicating a shift toward gRNA synthesis in late infection for viral particle assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43, C78-C79, C99-C100 are supported by dual-probe smFISH quantification and RNA-seq validation. The early detection of sgRNA (C37) and inference of rapid transcription (C38) are logical given the requirement for negative strand template. The temporal dynamics of sgRNA/gRNA ratio (C40-C41) are consistent across methods and the interpretation regarding viral assembly (C43, C99-C100) is reasonable, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Viral replication factories increase from 1-2 per cell at 2 hpi to ~30 per cell by 10 hpi, with the average number of gRNA molecules per factory increasing over time. RDV treatment reduces both the number of factories and their RNA content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by quantitative analysis of multi-gRNA foci defined as viral factories. The time-course data (C44-C45) and RDV sensitivity (C46) are consistent with active replication sites. The definition of factories based on spatial clustering and comparison to DMV sizes from EM studies provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C104"
+    ],
+    "result": "Super-permissive cells (3-5% of population) are randomly distributed in Vero E6, A549-ACE2, and Calu-3 cells, consistent with an intrinsic cellular property determining susceptibility rather than cell-to-cell signaling or differential immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 and C104 are supported by spatial distribution analysis using nearest-neighbor statistics across multiple cell types. The random distribution pattern (C48) argues against clustering or uniform spacing that would suggest paracrine signaling (C50). The observation in cells with different immune capabilities (C104) strengthens the conclusion about intrinsic cellular properties (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C61",
+      "C110",
+      "C111"
+    ],
+    "result": "The B.1.1.7 variant shows slower replication kinetics than the VIC strain in Vero E6 cells, with similar viral entry at 2 hpi but lower gRNA and sgRNA levels at 6-8 hpi, fewer replication factories, lower gRNA per factory, and reduced frequency of super-permissive cells. This phenotype is replication-dependent (RDV-sensitive) and confirmed by RNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56, C59, C61, C110-C111 are supported by comprehensive smFISH analysis comparing B.1.1.7 and VIC strains across multiple parameters. The similar entry (C51, C53) but differential replication (C52, C54-C55, C61) is well-documented. The RDV sensitivity (C56) confirms the replication-dependent nature, and RNA-seq validation (C111) provides orthogonal confirmation. This is a major finding regarding variant biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "B.1.1.7-infected cells show differential sgRNA/gRNA ratios by cell type compared to VIC, and the spatial distribution of B.1.1.7 super-permissive cells changes from random at 8 hpi to non-random (clustered) at 24 hpi, while VIC remains random at all timepoints, suggesting B.1.1.7 may have higher capacity for local cell-to-cell spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C62-C64 are supported by spatial distribution analysis and sgRNA/gRNA ratio quantification. The shift from random to non-random distribution for B.1.1.7 at 24 hpi (C62) contrasts with VIC (C63) and suggests different infection kinetics. However, the interpretation of 'higher capacity for local spread' (C64) is somewhat speculative and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In A549-ACE2 cells, B.1.1.7 shows similar entry to VIC at 2 hpi but reduced gRNA and sgRNA burden at 8 and 24 hpi, fewer super-permissive cells, and modestly reduced infectious virus release, indicating slower replication and secretion rates despite higher transmission in human populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 extend the B.1.1.7 replication kinetics findings to human lung epithelial cells. The smFISH data (C65-C67) are supported by plaque assays showing reduced infectious virus (C68). The conclusion about slower replication/secretion (C69) is well-supported, though the contrast with higher transmission in populations highlights the complexity of transmission determinants beyond cellular replication rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C82"
+    ],
+    "result": "RNA-seq analysis confirms smFISH findings, showing similar vRNA levels at 2 hpi for both strains, but B.1.1.7 has notably lower vRNA at 8 and 24 hpi with delayed kinetics (minimal change 2-8 hpi, then dramatic increase at 24 hpi) compared to VIC's continuous increase. Negative sense vRNAs are detectable as early as 2 hpi and represent a small fraction of total vRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 and C82 provide RNA-seq validation of the smFISH observations. The orthogonal method confirms the differential replication kinetics between strains (C71-C73) and the early detection of negative strand RNA (C75) supports the rapid replication conclusion. The strand-specific analysis (C74, C76-C77) provides additional mechanistic insights into replication dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "RNA-seq reveals differential sgRNA/gRNA kinetics between strains, with B.1.1.7 showing lower ratio at 8 hpi but stable ratio 8-24 hpi (surpassing VIC). S-sgRNA dominates at 2 hpi while N-sgRNA becomes prevalent at 8-24 hpi, indicating a transition to viral particle assembly. B.1.1.7 shows delayed S-to-N transition consistent with slower replication kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 and C83-C85 are supported by RNA-seq analysis of sgRNA species. The temporal dynamics of S-to-N sgRNA switch (C83) and its interpretation regarding viral assembly (C84) are reasonable based on known viral biology. The differential kinetics in B.1.1.7 (C85) are consistent with the overall delayed replication phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "B.1.1.7 shows upregulation of sgRNAs encoding ORF9b (~0.13%) and N* (~1%), likely due to mutations creating novel transcriptional regulatory sequences (TRS-B). Analysis of VOCs reveals that mutations frequently accumulate at or near TRS motifs, suggesting these are evolutionary hotspots for modulating sgRNA expression and viral fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by RNA-seq data and sequence analysis. The upregulation of ORF9b and N* (C86) is consistent with recent studies (Parker et al., 2021; Thorne et al., 2021). The TRS mutation analysis (C87-C89) provides mechanistic insight, though the interpretation of evolutionary hotspots (C89) is somewhat speculative. The overall conclusion about differential sgRNA pools (C90) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34",
+      "C46"
+    ],
+    "result": "RDV treatment reduces the proportion of super-permissive cells and non-viable cells at 48 hpi, and reduces both the number of viral factories per cell and their RNA content, indicating inhibition of viral replication and viral-induced cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C46 demonstrate the efficacy of RDV as a control for replication-dependent phenotypes. The reduction in super-permissive cells and cell viability (C34) and factory metrics (C46) are consistent with RDV's mechanism as a polymerase inhibitor. These serve as important controls throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Co-staining SARS-CoV-2-infected cells with J2 antibody and smFISH probes showed partial overlap, suggesting that infection may induce changes in cellular dsRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is based on observed partial overlap between J2 and smFISH signals, but the interpretation that infection induces changes in cellular dsRNA is speculative. The partial overlap could have multiple explanations, and additional experiments would be needed to definitively establish changes in cellular dsRNA pools versus viral dsRNA detection issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The differential infection fitness may rely on intrinsic cellular properties including cell cycle stage, expression of individual antiviral sensors, or metabolic state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 is entirely speculative, proposing potential mechanisms for the observed heterogeneity without experimental evidence. While these are reasonable hypotheses, they remain untested and would require additional experiments to evaluate. This represents future work rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Single-cell RNA sequencing studies identified ciliated cells as primary targets of SARS-CoV-2, though only a minority contained vRNA, which may reflect low sequencing depth or cell-to-cell variation in susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 accurately report findings from cited single-cell RNA-seq studies and provide reasonable interpretations for the minority of vRNA-positive ciliated cells. The consistency with the authors' own smFISH observations in hamster lungs (C107) supports the cell-to-cell variation hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Most studies on VOCs have focused on Spike mutations affecting entry and antibody sensitivity, but many mutations map to other viral proteins including RNA polymerase components and non-coding regulatory regions like TRS that could impact replication and sgRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 accurately characterize the field's focus and identify an important gap. This provides context for why the authors' focus on replication kinetics and TRS mutations is novel and important. The claims are supported by general knowledge and sequence analysis of VOC mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "B.1.1.7 has been reported to have higher transmission fitness, and one study reported higher intracellular vRNA at 24-48 hpi using bulk RT-qPCR. The authors observe B.1.1.7 recovery at 24 hpi and suggest both variants may yield similar total RNA/protein but in different timeframes. Bulk RT-qPCR is biased toward super-permissive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 provide important context by comparing the authors' findings with prior literature. The acknowledgment of apparently contradictory findings (C113) and proposed reconciliation (C115) demonstrate scientific rigor. The critique of bulk methods (C116) is supported by the authors' own data on cellular heterogeneity. The citation of Thorne et al. regarding ORF9b (C117) provides additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Enhanced ORF9b expression and lower intracellular vRNA in B.1.1.7 may provide advantage for evading antiviral responses. Combined with Spike mutations, this could enable B.1.1.7's rapid dissemination. Clinical studies show B.1.1.7 is associated with longer infection duration and virus shedding, which may contribute to increased transmissibility and is consistent with slower replication allowing longer persistence before triggering host sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 and C123 are speculative mechanistic proposals that, while plausible, lack direct experimental support. Claims C120-C122 accurately report findings from clinical studies (Kissler et al., 2021; Calistri et al., 2021) showing longer infection duration. Claim C121 attempts to reconcile these observations with the authors' data, which is reasonable but remains speculative. Claim C124 is a general statement about the importance of the findings. Overall, this represents hypothesis generation rather than definitively supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1968 @@
+{
+  "submission": {
+    "id": "6bad2590-3e7b-4b92-9cfe-57a03098be34",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:24:03.641069Z",
+    "updated_at": "2025-12-03T19:24:03.641069Z"
+  },
+  "content": [
+    {
+      "id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "submission_id": "6bad2590-3e7b-4b92-9cfe-57a03098be34",
+      "content_type": "manuscript",
+      "content_text": "# ProteInfer, deep neural networks for protein functional inference\n\n## Authors\n\n- Theo Sanderson<sup>1</sup> ([ORCID: 0000-0003-4177-2851](https://orcid.org/0000-0003-4177-2851)) \u2020\n- Maxwell L Bileschi<sup>2</sup> ([ORCID: 0000-0001-6771-0590](https://orcid.org/0000-0001-6771-0590))\n- David Belanger<sup>2</sup> ([ORCID: 0000-0001-7115-9009](https://orcid.org/0000-0001-7115-9009))\n- Lucy J Colwell<sup>2</sup> ([ORCID: 0000-0003-3148-0337](https://orcid.org/0000-0003-3148-0337)) \u2020\n\n### Affiliations\n\n1. The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))\n2. Google AI Boston United States ([ROR:00njsd438](https://ror.org/00njsd438))\n3. University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPredicting the function of a protein from its amino acid sequence is a long-standing challenge in bioinformatics. Traditional approaches use sequence alignment to compare a query sequence either to thousands of models of protein families or to large databases of individual protein sequences. Here we introduce ProteInfer, which instead employs deep convolutional neural networks to directly predict a variety of protein functions \u2013 Enzyme Commission (EC) numbers and Gene Ontology (GO) terms \u2013 directly from an unaligned amino acid sequence. This approach provides precise predictions which complement alignment-based methods, and the computational efficiency of a single neural network permits novel and lightweight software interfaces, which we demonstrate with an in-browser graphical interface for protein function prediction in which all computation is performed on the user\u2019s personal computer with no data uploaded to remote servers. Moreover, these models place full-length amino acid sequences into a generalised functional space, facilitating downstream analysis and interpretation. To read the interactive version of this paper, please visit https://google-research.github.io/proteinfer/.\n\n## Introduction\n\nEvery day, more than a hundred thousand protein sequences are added to global sequence databases (UniProt Consortium, 2019a). However, these entries are of limited use to practitioners unless they are accompanied by functional annotations. While curators diligently extract annotations from the literature, assessing more than 60,000 papers each year (UniProt Consortium, 2019b), the time-consuming nature of this task means that only ~0.03% of publicly available protein sequences are manually annotated. The community has a long history of using computational tools to infer protein function directly from amino acid sequence. Starting in the 1980s, methods such as BLAST (Altschul et al., 1990) relied on pairwise sequence comparisons, where a query protein is assumed to have the same function as highly similar sequences that have already been annotated. Signature-based approaches were later introduced, with the PROSITE database (Bairoch, 1991) cataloguing short amino acid \u2018motifs\u2019 found in proteins that share a particular function. Subsequently, a crucial refinement of signature-based approaches was the development of profile hidden Markov models (HMMs) (Krogh et al., 1994; Eddy, 1998). These models collapse an alignment of related protein sequences into a model that provides likelihood scores for new sequences, which describe how well they fit the aligned set. Critically, profile HMMs allow for longer signatures and fuzzier matching and are currently used to update popular databases such as Interpro and Pfam (Bateman et al., 2019; Blum et al., 2021). Subsequent refinements have made these techniques more sensitive and computationally efficient (Altschul et al., 1997; Eddy, 2011; Bateman et al., 2019; S\u00f6ding, 2005; Steinegger et al., 2019), while their availability as web tools allows practitioners to easily incorporate them into workflows (Johnson et al., 2008; Soding et al., 2005; Potter et al., 2018; Bernhofer et al., 2021).\n\nThese computational modelling approaches have had great impact; however, one-third of bacterial proteins still cannot be annotated (even computationally) with a function (Price et al., 2018). It is therefore worthwhile examining how new approaches might complement existing techniques. First, current approaches conduct entirely separate comparisons for each comparator sequence or model, and thus may not fully exploit the features shared across different functional classes. An ideal classification system, for example, might have a modular ATP-binding region detector used in detection of both kinases and ABC transporters (Ramakrishnan et al., 2002). Separately modelling these targets in each family, like standard HMM approaches, increases the computational cost and may also be less accurate. In addition, the process of creating many of these signatures is not fully automated and requires considerable curatorial efforts (El-Gebali et al., 2018b; El-Gebali et al., 2018a), which at present are spread across an array of disparate but overlapping signature databases (Blum et al., 2021).\n\nDeep neural networks have recently transformed a number of labelling tasks, including image recognition \u2013 the early layers in these models build up an understanding of simple features such as edges, and later layers use these features to identify textures, and then entire objects. Edge-detecting filters can thus be trained with information from all the labelled examples, and the same filters can be used to detect, for instance, both oranges and lemons (Carter et al., 2019).\n\nIn response, recent work has contributed a number of deep neural network models for protein function classification (Dalkiran et al., 2018; Kulmanov et al., 2018; Cao et al., 2017; Almagro Armenteros et al., 2017; Schwartz et al., 2018; Sureyya Rifaioglu et al., 2019; Li et al., 2018; Hou et al., 2018; Littmann et al., 2021). These approaches train a single model to recognise multiple properties, building representations of different protein functions via a series of layers, which allow the same low-level features to be used for different high-level classifications. Of special note is the layer preceding the final layer of the network, which constructs an \u2018embedding\u2019 of the entire example in a high-dimensional vector space, and often captures semantic features of the input.\n\nBeyond functional annotation, deep learning has enabled significant advances in protein structure prediction (AlQuraishi, 2019; Senior et al., 2020; Yang et al., 2020; Du et al., 2019; Rao et al., 2021), predicting the functional effects of mutations (Riesselman et al., 2018; Rives et al., 2021; Rao et al., 2019; Frazer et al., 2021), and protein design (Yang et al., 2019; Mazurenko et al., 2020; Biswas et al., 2021; Madani et al., 2020; Elnaggar et al., 2020; Anishchenko et al., 2021; Bryant et al., 2021). A key departure from traditional approaches is that researchers have started to incorporate vast amounts of raw, uncurated sequence data into model training, an approach which also shows promise for functional prediction (Brandes et al., 2022).\n\nOf particular relevance to the present work is Bileschi et al., 2022, where it is shown that models with residual layers (He et al., 2015) of dilated convolutions (Yu and Koltun, 2015) can precisely and efficiently categorise protein domains. Dohan et al., 2021 provide additional accuracy improvements using uncurated data. However, these models cannot infer functional annotations for full-length protein sequences since they are trained on pre-segmented domains and can only predict a single label. The full-sequence task is of primary importance to biological practitioners.\n\nTo address this challenge we employ deep dilated convolutional networks to learn the mapping between full-length protein sequences and functional annotations. The resulting ProteInfer models take amino acid sequences as input and are trained on the well-curated portion of the protein universe annotated by Swiss-Prot (UniProt Consortium, 2019b). We find that (1) ProteInfer models reproduce curator decisions for a variety of functional properties across sequences distant from the training data, (2) attribution analysis shows that the predictions are driven by relevant regions of each protein sequence, and (3) ProteInfer models create a generalised mapping between sequence space and the space of protein functions, which is useful for tasks other than those for which the models were trained. We provide trained ProteInfer networks that enable other researchers to reproduce the analysis presented and explore embeddings of their proteins of interest via both a command line tool (https://github.com/google-research/proteinfer, copy archived at Sanderson et al., 2023), and also via an in-browser JavaScript implementation that demonstrates the computational efficiency of deep learning approaches.\n\n## Results\n\n### A neural network for protein function prediction\n\nIn a ProteInfer neural network (Figures 1 and 2), a raw amino acid sequence is first represented numerically as a one-hot matrix and then passed through a series of convolutional layers. Each layer takes the representation of the sequence in the previous layer and applies a number of filters, which detect patterns of features. We use residual layers, in which the output of each layer is added to its input to ease the training of deeper networks (He et al., 2015), and dilated convolutions (Yu and Koltun, 2015), meaning that successive layers examine larger sub-sequences of the input sequence. After building up an embedding of each position in the sequence, the model collapses these down to a single $n$-dimensional embedding of the sequence using average pooling. Since natural protein sequences can vary in length by at least three orders of magnitude, this pooling is advantageous because it allows our model to accommodate sequences of arbitrary length without imposing restrictive modelling assumptions or computational burdens that scale with sequence length. In contrast, many previous approaches operate on fixed sequence lengths: these techniques are unable to make predictions for proteins larger than this sequence length, and use unnecessary resources when employed on smaller proteins. Finally, a fully connected layer maps these embeddings to logits for each potential label, which are the input to an element-wise sigmoid layer that outputs per-label probabilities. We select all labels with predicted probability above a given confidence threshold, and varying this threshold yields a tradeoff between precision and recall. To summarise model performance as a single scalar, we compute the $F_{max}$ score, the maximum $F_{1}$ score (the geometric mean of precision and recall) across all thresholds (Radivojac et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig1-v2.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig2-v2.jpg)\n\n**Figure 2.:** Amino acids are one-hot encoded, then pass through a series of convolutions implemented within residual blocks. Successive filters are increasingly dilated, allowing the top residual layer of the network to build up a representation of high-order protein features. The positional embeddings in this layer are collapsed by mean-pooling to a single embedding of the entire sequence, which is converted into probabilities of each functional classification through a fully connected layer with sigmoidal activations.\n\nEach model was trained for about 60 hr using the Adam optimiser (Kingma and Ba, 2015) on 8 NVIDIA P100 GPUs with data parallelism (Jeffrey, 2012; Shallue et al., 2018). We found that using more than one GPU for training improved training time by allowing an increased batch size, but did not have a substantial impact on accuracy compared to training for longer with a smaller learning rate and smaller batch size on one GPU. The models have a small set of hyperparameters, such as the number of layers and the number of filters in each layer, which were tuned using random sampling to maximise $F_{max}$ on the random train-test split. Hyperparameter values are available in Table 1.\n\n**Table 1.**\n Hyperparameters used in convolutional neural networks.We note that hyperparameters for single-GPU training are available in github.com/google-research/proteinfer/blob/master/hparams_sets.py.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>CNN</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Concurrent batches (data parallelism)</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Batch size</td>\n      <td>40 (per each GPU)Dynamic based on sequence length</td>\n    </tr>\n    <tr>\n      <td>Dilation rate</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Filters</td>\n      <td>1100</td>\n    </tr>\n    <tr>\n      <td>First dilated layer</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Gradient clip</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Kernel size</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>Learning rate</td>\n      <td>1.5E-3</td>\n    </tr>\n    <tr>\n      <td>Learning rate decay rate</td>\n      <td>0.997</td>\n    </tr>\n    <tr>\n      <td>Learning rate decay steps</td>\n      <td>1000</td>\n    </tr>\n    <tr>\n      <td>Learning rate warmup steps</td>\n      <td>3000</td>\n    </tr>\n    <tr>\n      <td>Adam\u2009\u03b21</td>\n      <td>.9</td>\n    </tr>\n    <tr>\n      <td>Adam\u2009\u03b22</td>\n      <td>.999</td>\n    </tr>\n    <tr>\n      <td>Adam\u2009\u03f5</td>\n      <td>1E-8</td>\n    </tr>\n    <tr>\n      <td>Number of ResNet layers</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Pooling</td>\n      <td>Mean</td>\n    </tr>\n    <tr>\n      <td>ResNet bottleneck factor</td>\n      <td>0.5</td>\n    </tr>\n    <tr>\n      <td>Train steps</td>\n      <td>500,000</td>\n    </tr>\n  </tbody>\n</table>\n\n### A machine-learning-compatible dataset for protein function prediction\n\nThe UniProt database is the central global repository for information about proteins. The manually curated portion, Swiss-Prot, is constructed by assessing 60,000 papers each year to harvest 35% of the theoretically curatable information in the literature (UniProt Consortium, 2019b). We focus on Swiss-Prot to ensure that our models learn from human-curated labels, rather than labels generated by a computational annotation pipeline. Each protein in Swiss-Prot goes through a six-stage process of sequence curation, sequence analysis, literature curation, family-based curation, evidence attribution, and quality assurance. Functional annotation is stored in UniProt largely through database cross-references, which link a specific protein with a label from a particular ontology. These cross-references include Enzyme Commission (EC) numbers, representing the function of an enzyme; Gene Ontology (GO) terms relating to the protein\u2019s molecular function, biological process, or subcellular localisation; protein family information contained in the Pfam (Bateman et al., 2019), SUPFAM (Pandurangan et al., 2019), PRINTS (Attwood et al., 2003), TIGR (Haft et al., 2013), PANTHR (Mi et al., 2016) databases, or the umbrella database InterPro (Hunter et al., 2009), as well as other information including ortholog databases and references on PubMed. Here, we focus on EC and GO labels, though our model training framework can immediately extend to other label sets.\n\nWe use two methods to split data into training and evaluation sets. First, a random split of the data allows us to answer the following question: suppose that curators had randomly annotated only 80% of the sequences in Swiss-Prot. How accurately can ProteInfer annotate the remaining 20%? Second, we use UniRef50 (Suzek et al., 2015) clustering to split the data to model a challenging use case in which an unseen sequence has low sequence similarity to anything that has been previously annotated. Note that there are alternative methods for splitting (Brandes et al., 2022; Zhou et al., 2019; Gillis and Pavlidis, 2013), such as reserving the most recently annotated proteins for evaluating models. This approach, which is used in CAFA and CASP (Zhou et al., 2019; Gillis and Pavlidis, 2013), helps ensure a fair competition because labels for the evaluation data are not available to participants, or the scientific community at large, until after the competition submissions are due. Such a split is not available for EC classification, which is the primary focus of our analyses below. Finally, note that all of the above approaches typically lack reliable annotation for true negatives (Warwick Vesztrocy and Dessimoz, 2020).\n\nTo facilitate further development of machine learning methods, we provide TensorFlow (Abadi et al., 2016) TFrecord files for Swiss-Prot (https://console.cloud.google.com/storage/browser/brain-genomics-public/research/proteins/proteinfer/datasets/). Each example has three fields: the UniProt accession, the amino acid sequence, and a list of database cross-reference labels. UniProt annotations include only leaf nodes for hierarchical taxononomies such as EC and GO. To allow machine learning algorithms to model this hierarchy, we added all parental annotations to each leaf node during dataset creation.\n\n### Prediction of catalysed reactions\n\nWe initially trained a model to predict enzymatic catalytic activities from amino acid sequence. This data is recorded as EC numbers, which describe a hierarchy of catalytic functions. For instance, $\\beta$ amylase enzymes have an EC number of EC:3.2.1.2, which represents the leaf node in the following hierarchy (Scheme 1):\n\n![Scheme 1.](https://cdn.elifesciences.org/articles/80942/elife-80942-scheme1-v2.jpg)\n\nIndividual protein sequences can be annotated with zero (non-enzymatic proteins), one (enzymes with a single function), or many (multi-functional enzymes) leaf-level EC numbers. These are drawn from a total of 8162 catalogued chemical reactions. Our best $F_{max}$ was achieved by a model containing five residual blocks with 1100 filters each (full details in \u2018Materials and methods\u2019). For the dev set, $F_{max}$ converged within 500,000 training steps. On the random split, the model achieves  $F_{max}$ = 0.977 (0.976\u20130.978) on the held-out test data. At the corresponding confidence threshold, the model correctly predicts 96.7% of true labels, with a false-positive rate of 1.4%. Results from the clustered test set are discussed below. Performance was roughly similar across labels at the top of the EC hierarchy, with the highest $F_{max}$ score observed for ligases (0.993), and the lowest for oxidoreductases (0.963). For all classes, the precision of the network was higher than the recall at the threshold maximising $F_{max}$. Precision and recall can be traded off against each other by adjusting the confidence threshold at which the network outputs a prediction, creating the curves shown in Figure 3B.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-v2.jpg)\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp3-v2.jpg)\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp4-v2.jpg)\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp5-v2.jpg)\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (Gene Ontology [GO] label) in the clustered dataset.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp7-v2.jpg)\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp8-v2.jpg)\n\n![Figure 3\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp9-v2.jpg)\n\n![Figure 3\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp10-v2.jpg)\n\n![Figure 3\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp11-v2.jpg)\n\n![Figure 3\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig3-figsupp12-v2.jpg)\n\n**Figure 3\u2014figure supplement 12.:** We demonstrated this by additionally training a model for predicting Pfam families from full-length protein sequences, which is available through our CLI-tool, and performs as shown here.\n\nWe implemented an alignment-based baseline in which BLASTp is used to identify the closest sequence to a query sequence in the train set. Labels are then imputed for the query sequence by transferring those labels that apply to the annotated match from the train set. We produced a precision\u2013recall curve by using the bit-score of the closest sequence as a measure of confidence, varying the cutoff above which we retain the imputed labels (Zhou et al., 2019; Eddy, 2011). We also considered an ensemble of neural networks (Bileschi et al., 2022), where the average of the ensemble elements\u2019 predicted probabilities is used as a confidence score, and a naive control, where the number of proteins annotated with a specific term in the training set plays this role (Radivojac et al., 2013; see Figure 3B, Figure 3\u2014figure supplement 7, Figure 3\u2014figure supplement 8).\n\nWe found that BLASTp was able to achieve higher recall values than ProteInfer for lower precision values, while ProteInfer was able to provide greater precision than BLASTp at lower recall values. The high recall of BLAST is likely to reflect the fact that it has access to the entirety of the training set, rather than having to compress it into a limited set of neural network weights. In contrast, the lack of precision in BLAST could relate to reshuffling of sequences during evolution, which would allow a given protein to show high similarity to a trainining sequence in a particular subregion, despite lacking the core region required for that training sequence\u2019s function. We wondered whether a combination of ProteInfer and BLASTp could synergise the best properties of both approaches. We found that even the simple ensembling strategy of rescaling the BLAST bit-score by the averages of the ensembled CNNs\u2019 predicted probabilities gave a $F_{max}$ score (0.991, 95% confidence interval [CI]: 0.990\u20130.992) that exceeded that of BLAST (0.984, 95% CI: 0.983\u20130.985) or the ensembled CNN (0.981, 95% CI: 0.980\u20130.982) alone (see \u2018Materials and methods\u2019 for more details on this method). On the clustered train-test split based on UniRef50 (see clustered in Figure 3B), we see a performance drop in all methods: this is expected, as remote homology tasks are designed to challenge methods to generalise farther in sequence space. The $F_{max}$ score of a single neural network fell to 0.914 (95% CI: 0.913\u20130.915, precision: 0.959 recall: 0.875), substantially lower than BLAST (0.950, 95% CI: 0.950\u20130.951), though again an ensemble of both BLAST and ProteInfer outperformed both (0.979, 95% CI: 0.979\u20130.980). These patterns suggest that neural network methods learn different information about proteins to alignment-based methods, and so a combination of the two provides a synergistic result. All methods dramatically outperformed the naive frequency-based approach (Figure 3\u2014figure supplement 9).\n\nWe also examined the relationship between the number of examples of a label in the training dataset and the performance of the model. In an image recognition task, this is an important consideration since one image of, say, a dog, can be utterly different to another. Large numbers of labels are therefore required to learn filters that are able to predict members of a class. In contrast, for sequence data we found that even for labels that occurred less than five times in the training set, 58% of examples in the test set were correctly recalled, while achieving a precision of 88%, for an F1 of 0.7 (Figure 3\u2014figure supplement 12). High levels of performance are maintained with few training examples because of the evolutionary relationship between sequences, which means that one ortholog of a gene may be similar in sequence to another. The simple BLAST implementation described above also performs well, and better than a single neural network, likely again exploiting the fact that many sequence have close neighbours in sequence space with similar functions. We again find that ensembling the BLAST and ProteInfer outputs provides performance exceeding that of either technique used alone.\n\n### Deep models link sequence regions to function\n\nProteins that use separate domains to carry out more than one enzymatic function are particularly useful in interpreting the behaviour of our model. For example, Saccharomyces cerevisiae fol1 (accession Q4LB35) catalyses three sequential steps of tetrahydrofolate synthesis using three different protein domains (Figure 4A). This protein is in our held-out test set, so no information about its labels was directly provided to the model.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig4-v2.jpg)\n\n**Figure 4.:** (A) Ground-truth annotation of function on UniProt (UniProt Consortium, 2019b). (B) The three horizontal bars are the sequence region ProteInfer predicts are most involved in each corresponding reaction. This concurs with the known function localisation.\n\nTo investigate what sequence regions the neural network is using to make its functional predictions, we used class activation mapping (CAM) (Zhou et al., 2015) to identify the sub-sequences responsible for the model predictions. We found that separate regions of sequence cause the prediction of each enzymatic activity, and that these regions correspond to the known functions of these regions (Figure 4B). This demonstrates that our network identifies relevant elements of a sequence in determining function.\n\nWe then assessed the ability of this method to more generally localise function within a sequence, even though the model was not trained with any explicit localisation information. We selected all enzymes from Swiss-Prot that had two separate leaf-node EC labels for which our model predicted known EC labels, and these labels were mappable to corresponding Pfam labels. For each of these proteins, we obtained coarse-grained functional localisation by using CAM to predict the order of the domains in the sequence and compared to the ground-truth Pfam domain ordering (see Methods). We found that in 296 of 304 (97%) of the cases, we correctly predicted the ordering, though we note that the set of bifunctional enzymes for which this analysis is applicable is limited in its functional diversity (see \u2018Materials and methods\u2019). Although we did not find that fine-grained, per-residue functional localisation arose from our application of CAM, we found that it reliably provided coarse-grained annotation of domains\u2019 order, as supported by Pfam. This experiment suggests that this is a promising future area for research.\n\n### Neural networks learn a general-purpose embedding space for protein function\n\nWhereas InterProScan compares each sequence against more than 50,000 individual signatures and BLAST compares against an even larger sequence database, ProteInfer uses a single deep model to extract features from sequences that directly predict protein function. One convenient property of this approach is that in the penultimate layer of the network each protein is expressed as a single point in a high-dimensional space. To investigate to what extent this space is useful in examining enzymatic function, we used the ProteInfer EC model trained on the random split to embed each test set protein sequence into a 1100-dimensional vector. To visualise this space, we selected proteins with a single leaf-level EC number and used UMAP to compress their embeddings into two dimensions (McInnes et al., 2018).\n\nThe resulting representation captures the hierarchical nature of EC classification, with the largest clusters in embedding space corresponding to top level EC groupings (Figure 5A). These clusters in turn are further divided into sub-regions on the basis of subsequent levels of the EC hierarchy (Figure 5B). Exceptions to this rule generally recapitulate biological properties. For instance, Q8RUD6 is annotated as Arsenate reductase (glutaredoxin) (EC:1.20.4.1) (Chao et al., 2014) was not placed with other oxidoreductases (EC:1.-.-.-) but rather with sulfurtransferases (EC:2.8.1.-). Q8RUD6 can, however, act as a sulfurtransferase (Bartels et al., 2007).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig5-v2.jpg)\n\n**Figure 5.:** UMAP projection of embeddings for the subset of test set sequences which have only one leaf-level Enzyme Commission (EC) classification. Points are colour-coded at successive levels of the EC hierarchy in each panel. (A) colours denote top level EC groups, (B) colours denote second level EC groups within EC2*, (C) colours denote third level EC groups within EC:2.7*, and (D) colours depict terminal EC groups within EC:2.7.4*.\n\nNote that the model is directly trained with labels reflecting the EC hierarchy; the structure in Figure 5 was not discovered automatically from the data. However, we can also ask whether the embedding captures more general protein characteristics, beyond those on which it was directly supervised. To investigate this, we took the subset of proteins in Swiss-Prot that are non-enzymes, and so lack any EC annotations. The network would achieve perfect accuracy on these examples if it, for example, mapped all of them to a single embedding that corresponds to zero predicted probability for every enzymatic label. Do these proteins therefore share the same representation in embedding space? The UMAP projection of these sequences\u2019 embeddings revealed clear structure to the embedding space, which we visualised by highlighting several GO annotations which the network was never supervised on. For example, one region of the embedding space contained ribosomal proteins, while other regions could be identified containing nucleotide binding proteins, or membrane proteins (Figure 6). To quantitatively measure whether these embeddings capture the function of non-enzyme proteins, we trained a simple random forest classification model that used these embeddings to predict whether a protein was annotated with the intrinsic component of membrane GO term. We trained on a small set of non-enzymes containing 518 membrane proteins and evaluated on the rest of the examples. This simple model achieved a precision of 97% and recall of 60% for an F1 score of 0.74. Model training and data-labelling took around 15 s. This demonstrates the power of embeddings to simplify other studies with limited labelled data, as has been observed in recent work (Alley et al., 2019; Biswas et al., 2021).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig6-v2.jpg)\n\n**Figure 6.:** This figure shows Enzyme Commission (EC)-trained ProteInfer embeddings for all non-enzymatic sequences in the test set, projected using UMAP. To illustrate the structure contained in these embeddings, we highlight genes based on Gene Ontology (GO) labels (on which this network was never trained) - (a): Nucleotide binding, (b): Structural constituent of ribosome and (c): Intrinsic component of membrane .\n\n### Rapid client-side in-browser protein function prediction\n\nProcessing speed and ease of access are important considerations for the utility of biological software. An algorithm that takes hours or minutes is less useful than one that runs in seconds, both because of its increased computational cost, but also because it allows less immediate interactivity with a researcher. An ideal tool for protein function prediction would require minimal installation and would instantly answer a biologist\u2019s question about protein function, allowing them to immediately act on the basis of this knowledge. Moreover, there may be intellectual property concerns in sending sequence data to remote servers, so a tool that does annotation completely client-side may also be preferable.\n\nThere is arguably room for improvement in this regard from classical approaches. For example, the online interface to InterProScan can take 147 s to process a 1500 amino acid sequence (Protein used was Q77Z83. It should be noted that the individual databases that make up InterProScan may return matches faster, with the online interface to Pfam taking 14\u201320 s for a 1500 amino acid sequence.), while running the tool may make the search faster, doing so requires downloading a 9 GB file, with an additional 14 GB for the full set of signatures, which when installed exceeds 51 GB. Meanwhile, conducting a BLAST search against Swiss-Prot takes 34 s for a 1500 amino acid sequence (a target database with decreased redundancy could be built to reduce this search time, and other optimisations of BLAST have been developed).\n\nAn attractive property of deep learning models is that they can be run efficiently using consumer graphics cards for acceleration. Indeed, recently, a framework has been developed to allow models developed in TensorFlow to be run locally using simply a user\u2019s browser (Smilkov et al., 2019), but to our knowledge this has never been deployed to investigate biological sequence data. We therefore built a tool to allow near-instantaneous prediction of protein functional properties in the browser. When the user loads the tool, lightweight EC (5 MB) and GO model (7 MB) prediction models are downloaded and all predictions are then performed locally, with query sequences never leaving the user\u2019s computer. We selected the hyperparameters for these lightweight models by performing a tuning study in which we filtered results by the size of the model\u2019s parameters and then selected the best performing models. This approach uses a single neural network rather than an ensemble. Inference in the browser for a 1500 amino acid sequence takes <1.5 s for both models (see supplement).\n\n### Comparison to experimental data\n\nDespite its curated nature, SwissProt contains many proteins annotated only on the basis of electronic tools. To assess our model\u2019s performance using an experimentally validated source of ground truth, we focused our attention on a large set of bacterial genes for which functions have recently been identified in a high-throughput experimental genetic study (Price et al., 2018). In particular, this study listed newly identified EC numbers for 171 proteins, representing cases when there was previously either misannotation or inconsistent annotation in the SEED or KEGG databases. Therefore, this set of genes may be enriched for proteins whose functions are difficult to assess computationally. We examined how well our network was able to make predictions for this experimental dataset at each level of the EC hierarchy (Figure 7) using as a decision threshold the value that optimised F1 identified during tuning. The network had high accuracy for identification of broad enzyme class, with 90% accuracy at the top level of the EC hierarchy. To compute accuracy, we examined the subset of these 171 proteins for which there was a single enzymatic annotation from Price et al., 2018, giving us predictions for 119 enzymes. At the second level of the hierarchy, accuracy was 90% and the network declined to make a prediction for 12% of classes. Even at the third level, accuracy was 86% with the network making a prediction in 77% of cases. At the finest level of classification, the proportion of examples for which a prediction was made fell to 28%, with 42% of these predictions correct.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/80942/elife-80942-fig7-v2.jpg)\n\n**Figure 7.:** ProteInfer makes confident and largely accurate predictions at the earliest levels of the Enzyme Commission (EC) hierarchy. Accuracy falls at the finest levels of classification (for this set of challenging genes) but fortunately the network declines to make a prediction in most cases, with every label failing to meet the threshold for positive classification.\n\nAs an example, the Sinorhizobium meliloti protein Q92SI0 is annotated in UniProt as a Inosine-uridine nucleoside N-ribohydrolase (EC 3.2.2.1). Analysing the gene with InterProScan (Jones et al., 2014) also gives this prediction, but our model instead predicts it to be a uridine nucleosidase (EC 3.2.2.3), and this was indeed the result found in this experimental work. Similarly, Pseudomonas fluorescens A0A166Q345 was correctly classified by our model as a D-galacturonate dehydrogenase (EC 1.1.1.203) as opposed to a misannotation on UniProt and with InterProScan.\n\nIt was notable that for many of these proteins the network declined to make a prediction at the finest level of the EC hierarchy. This suggests that by training on this hierarchical data, the network is able to appropriately make broad or narrow classification decisions. This is similar to the procedure employed with manual annotation: when annotators are confident of the general class of reaction that an enzyme catalyses but not its specific substrate, they may leave the third or fourth position of the EC number blank (e.g. EC:1.1.-.-). Due to training on hierarchical data, our network is able to reproduce these effects by being more confident (with higher accuracy) at earlier levels of classification.\n\n### A model predicting the entire Gene Ontology\n\nGiven the high accuracy that our deep learning model was able to achieve on the more than 5000 enzymatic labels in Swiss-Prot, we asked whether our networks could learn to predict protein properties using an even larger vocabulary of labels, using a similar test-train setup. GO (Ashburner et al., 2000; Consortium, 2019; Carbon et al., 2009) terms describe important protein functional properties, with 32,109 such terms in Swiss-Prot that cover the molecular functions of proteins (e.g. DNA-binding, amylase activity), the biological processes they are involved in (e.g. DNA replication, meiosis), and the cellular components to which they localise (e.g. mitochondrion, cytosol). These terms are arranged in a complex directed acyclic graph, with some nodes having as many as 12 ancestral nodes.\n\nWe note that there has been extensive work in GO label prediction evaluated on a temporally split dataset (constructing a test set with the most recently experimentally annotated proteins), for example, Zhou et al., 2019, and stress that our comparison is based on the random and clustered splits of Swiss-Prot described above. This approach to splitting the data into train and test has advantages and disadvantages compared to a temporal split, which depend on the desired application for the method being evaluated.\n\nWe trained a single model to predict presence or absence for each of these terms and found that our network was able to achieve a precision of 0.918 and a recall of 0.854 for an F1 score of 0.885 (95% CI: 0.882\u20130.887).\n\nAn ensemble of multiple CNN elements was again able to achieve a slightly better result with an F1 score of 0.899 (95% CI: 0.897\u20130.901), which was exceeded by a simple transfer of the BLAST top pick at 0.902 (95% CI: 0.900\u20130.904), with an ensemble of both producing the best result of 0.908 (95% CI: 0.906\u20130.911).\n\nThe same trends for the relative performance of different approaches were seen for each of the direct-acyclic graphs that make up the GO (biological process, cellular component, and molecular function), but there were substantial differences in absolute performance (Figure 3\u2014figure supplement 10). Performance was highest for molecular function (max F1: 0.94), followed by biological process (max F1:0.86) and then cellular component (max F1:0.84).\n\nTo benchmark against a common signature-based methodology, we used InterProScan to assign protein family signatures to each test sequence. We chose InterProScan for its coverage of labels as well as its use of multiple profile-based annotation methods, including HMMER and PROSITE, mentioned above. We note that while InterProScan predicts GO labels directly, it does not do so for EC labels, which is why we did not use InterProScan to benchmark our work on predicting EC labels. We found that InterProScan gave good precision, but within this UniProt data had lower recall, giving it a precision of 0.937 and recall of 0.543 for an F1 score of 0.688. ProteInfer\u2019s recall at a precision of 0.937 is substantially higher (0.835) than InterProScan at assigning GO labels.\n\nThere are multiple caveats to these comparisons. One challenge is that the completeness of Swiss-Prot\u2019s GO term annotations varies (Jiang et al., 2014). As an extreme example, Pan paniscus (Pygmy Chimpanzee) and Pan troglodytes (Chimpanzee) have an identical Apolipoprotein A-II protein, (accessions P0DM95 and Q8MIQ5), where the first protein has 24 GO annotations, while the latter has 143 GO annotations (this count is done using not only the set of all labels that appear in Swiss-Prot, but also any parents of those labels). One way this is reflected in the performance of the models is that some BLAST matches that have extremely large bit-scores are not annotated identically, and thus reduce the precision of the BLAST model. It is also important to note that our model has the advantage of being specifically trained on the UniProt labelling schema upon which it is being evaluated. InterPro works quite differently, with GO terms being assigned to families, and so inconsistencies in terms of how these are assigned can explain reduced performance \u2013 for instance, InterPro families simply do not feature all of the GO terms found in UniProt. Thus these results should be seen as specific to the task of reproducing the curated results in UniProt.\n\nWe also tested how well our trained model was able to recall the subset of GO term annotations which are not associated with the \u2018inferred from electronic annotation\u2019 (IEA) evidence code, indicating either experimental work or more intensely curated evidence. We found that at the threshold that maximised F1 score for overall prediction, 75% of molecular function annotations could be successfully recalled, 61% of cellular component annotations, and 60% of biological process annotations.\n\n## Discussion\n\nWe have shown that neural networks trained and evaluated on high-quality Swiss-Prot data accurately predict functional properties of proteins using only their raw, unaligned amino acid sequences. Further, our models make links between the regions of a protein and the function that they confer, produce predictions that agree with experimental characterisations, and place proteins into an embedding space that captures additional properties beyond those on which the models were directly trained. We have provided a convenient browser-based tool, where all computation runs locally on the user\u2019s computer. To support follow-up research, we have also released our datasets, code for model training and evaluation, and a command-line version of the tool.\n\nUsing Swiss-Prot to benchmark our tool against traditional alignment-based methods has distinct advantages and disadvantages. It is desirable because the data has been carefully curated by experts, and thus it contains minimal false-positives. On the other hand, many entries come from experts applying existing computational methods, including BLAST and HMM-based approaches, to identify protein function. Therefore, the data may be enriched for sequences with functions that are easily ascribable using these techniques which could limit the ability to estimate the added value of using an alternative alignment-free tool. An idealised dataset would involved training only on those sequences that have themselves been experimentally characterised, but at present too little data exists than would be needed for a fully supervised deep-learning approach. Semi-supervised approaches that combine a smaller number of high-quality experimental labels with the vast set of amino acid sequences in TrEMBL may be a productive way forward.\n\nFurther, our work characterises proteins by assigning labels from a fixed, predefined set, but there are many proteins with functions that are not covered by this set. These categories of functions may not even be known to the scientific community yet. There is a large body of alternative work that identifies groups of related sequences (e.g. Li et al., 2003), where a novel function could be discovered, for example, using follow-up experiments.\n\nFinally, despite the successes of deep learning in many application domains, a number of troublesome behaviours have also been identified. For example, probabilities output by deep models are often over-confident, rather than well-calibrated (Guo et al., 2017), and networks perform poorly on out-of-distribution data without being aware that they are outside their own range of expertise (Amodei et al., 2016). Though these issues still need to be addressed and better understood by both the machine learning and bioinformatics communities, deep learning continues to make advances in a wide range of areas relating to the understanding protein function. We thus believe deep learning will have a central place in the future of this field.\n\nOur code, data, and notebooks reproducing the analyses shown in this work are available online at https://github.com/google-research/proteinfer (Sanderson et al., 2023) and https://console.cloud.google.com/storage/browser/brain-genomics-public/research/proteins/proteinfer/datasets/.\n\n## Materials and methods\n\n### Implementation details\n\n#### Label inheritance\n\nOur data processing pipeline takes as input UniProt XML entries and outputs training data for the neural network. Some types of annotations, such as GO terms and EC numbers, exist within directed acyclic graphs (which take the form of simple trees for EC numbers). Typically in such cases the annotation provided on UniProt is the most specific that is known. For example, if a protein is known to exhibit sequence-specific DNA binding (GO:0043565). It will not separately be annotated with the ancestral term DNA binding (GO:0003677); this is simply assumed from the ontology. Using such an annotation directly, however, is likely to be problematic in a deep learning setting. Failing to annotate an example with the parental term demands that the model predict that the example is negative for this term, which is not the effect we want. To address this, our datasets include labels for all ancestors of applied labels for EC, GO, and InterPro datasets. In the case of GO, we restrict these to is_a relationships.\n\n#### Class activation mapping\n\nMany proteins have multiple functional properties. For example, we analyse the case of the bifunctional dhfr/ts of Toxoplasma gondii. Such bifunctional enzymes are often not unique \u2013 it is functionally advantageous for these enzymes to be fused, which facilitates channelling of substrate between their active sites. Since there are a number of such examples within Swiss-Prot, the mere existence of a TS domain in a protein is (mild) evidence for possible DHFR function. To increase the interpretability of the network, we normalise the results of class-activation mapping for proteins with multiple predicted functions. We initially calculate first-pass localisations for each predicted function using class-activation mapping. Then we make the localisation of each function more specific by taking the score for each residue and subtracting the scores at the same residues for all other functions. In the case of DHFR-TS, the TS activations in the TS domain are much greater than the DHFR activations in the TS domain and so this subtraction prevents the TS domain from being associated with DHFR function, increasing interpretability.\n\n### Model architecture\n\nTo create an architecture capable of receiving a wide range of input sequences, with computational requirements determined for each inference by the length of the individual input sequence, we employed a dilated convolutional approach (Yu and Koltun, 2015). Computation for both training and prediction in such a model can be parallelised across the length of the sequence. By training on full-length proteins, in a multi-label training setting, we aimed to build networks that could extract functional information from raw amino acid sequences. One helpful feature of this architecture is its flexibility with regards to sequence length. Natural protein sequences can vary in length by at least three orders of magnitude, but some architectures have computational requirements that scale with the maximum sequence they are capable of receiving as input, rather than the sequence being currently examined. These fixed-length approaches reduce efficiency as well as place a hard limit on the length of sequences that can be examined.\n\n### Hyperparameters\n\nWe tuned over batch size, dilation rate, filters, first dilated layer, kernel size, learning rate, number of layers, mean vs. max pooling, and Adam $\\beta_{1}$, $\\beta_{2}$ and $\u03f5$ (Kingma and Ba, 2015) over a number of studies to determine the set of parameters that optimised $F_{max}$. We found, as in Bileschi et al., 2022, that the network was relatively unresponsive to slight changes in hyperparameters and that many of the hyperparameters that performed well in Bileschi et al., 2022 also performed well for this task. We chose to keep identical hyperparameters for the EC and GO tasks across both the random and clustered splits for simplicity, and we note that parameters with good performance on the random task performed respectively well on the clustered split.\n\n### Predicting coarse-grained functional localisation with CAM\n\nThe goal of this experimental methodology is to measure whether or not we correctly order the localisation of function in bifunctional enzymes. As such, first we have to identify a set of candidates for experimentation.\n\n#### Candidate set construction\n\nWe note that no functional localisation information was available to our models during training, so we can consider not just the dev and test sets, but instead the entirety of Swiss-Prot for our experimentation. As such, we take all examples from Swiss-Prot that have an EC label and convert these labels to Pfam labels using a set of 1515 EC-Pfam manually curated label correlations from InterPro (Mitchell et al., 2015), omitting unmapped labels. We then take the set of 3046 proteins where exactly two of their ground-truth labels map to corresponding Pfam labels. In our Swiss-Prot random test-train split test set, on bifunctional enzymes, we get 0.995 precision and 0.948 recall at a threshold of 0.5, so we believe this set is a reasonable test set for ordering analysis.\n\nWe then predict EC labels for these proteins with one of our trained convolutional neural network classifiers, considering only the most specific labels in the hierarchy. Then, we map these predicted EC labels to Pfam labels using the InterPro mapping again, and retain only the proteins on which we predict exactly two labels above a threshold of 0.5, and are left with 2679 proteins. In 2669 out of 2679 proteins, our predictions are identical to the Pfam-mapped ground-truth labels. We take these 2669 that have two true and predicted Pfam labels, and look at their current Pfam labels annotated in Swiss-Prot. Of these 2669 proteins, 304 of them contain both of the mapped labels. We note that this difference between 2669 and 304 is likely due in part to Pfam being conservative in calling family members, potential agreements at the Pfam clan vs. family level, as well as database version skew issues.\n\n#### Computation of domain ordering\n\nOn these 304 proteins, we have the same predicted-EC-to-Pfam labels and the same true-Pfam labels. For each of these proteins, we can get an ordering of their two enzymatic domains from Pfam, giving us a true ordering. It is now our task to produce a predicted ordering.\n\nWe use CAM to compute a confidence for each class at each residue for every protein in this set of 304. We then filter this large matrix of values and only consider the families for which our classifier predicted membership, giving us a matrix of shape sequence length by predicted classes (which is two in this case). For each class, we take the CAM output and compute a centre of mass. Then we order the two classes based on where their centre of mass lies. Further data is available in Table 2.\n\n**Table 2.**\n In our random split of the training data, we allocate about 80% to the training fold, 10% to the development fold, and 10% to the test fold.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Fold</th>\n      <th>Number of sequences</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Train</td>\n      <td>438,522</td>\n    </tr>\n    <tr>\n      <td>Dev</td>\n      <td>55,453</td>\n    </tr>\n    <tr>\n      <td>Test</td>\n      <td>54,289</td>\n    </tr>\n    <tr>\n      <td>All together</td>\n      <td>548,264</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n In our clustered split of the training data, we use UniRef50 and allocate approximately equal numbers of sequences to each fold.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Fold</th>\n      <th>Number of sequences</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Train</td>\n      <td>182,965</td>\n    </tr>\n    <tr>\n      <td>Dev</td>\n      <td>180,309</td>\n    </tr>\n    <tr>\n      <td>Test</td>\n      <td>183,475</td>\n    </tr>\n    <tr>\n      <td>All together</td>\n      <td>546,749</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Clustered dataset statistics for Enzyme Commission (EC) labels.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Type</th>\n      <th>Number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Train labels</td>\n      <td>3411</td>\n    </tr>\n    <tr>\n      <td>Test labels</td>\n      <td>3414</td>\n    </tr>\n    <tr>\n      <td>Impossible test labels</td>\n      <td>1043</td>\n    </tr>\n    <tr>\n      <td>Train example-label pairs</td>\n      <td>348,105</td>\n    </tr>\n    <tr>\n      <td>Test example-label pairs</td>\n      <td>348,755</td>\n    </tr>\n    <tr>\n      <td>Impossible test example-label pairs</td>\n      <td>3415</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 5.**\n Clustered dataset statistics for Gene Ontology (GO) labels.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Type</th>\n      <th>Number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Train labels</td>\n      <td>26,538</td>\n    </tr>\n    <tr>\n      <td>Test labels</td>\n      <td>26,666</td>\n    </tr>\n    <tr>\n      <td>Impossible test labels</td>\n      <td>3739</td>\n    </tr>\n    <tr>\n      <td>Train example-label pairs</td>\n      <td>8,338,584</td>\n    </tr>\n    <tr>\n      <td>Test example-label pairs</td>\n      <td>8,424,299</td>\n    </tr>\n    <tr>\n      <td>Impossible test example-label pairs</td>\n      <td>11,137</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 6.**\n Vocabulary sizes in models trained for Enzyme Commission (EC) and Gene Ontology (GO).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Vocabulary</th>\n      <th>Number of terms</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EC</td>\n      <td>5134</td>\n    </tr>\n    <tr>\n      <td>GO</td>\n      <td>32,109</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 7.**\n In Swiss-Prot, there are 16 candidate domain architectures available for our Enzyme Commission (EC) functional localisation experiment.Among these, all domain architectures with more than three instances in Swiss-Prot (seven of them) are 100% correctly ordered by our class activation mapping (CAM) method.Domain architecture diversity in bifunctional enzymes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>First domain</th>\n      <th>Second domain</th>\n      <th>Number ordered correctly</th>\n      <th>Number times seen</th>\n      <th>Percent correct</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EC:2.7.7.60</td>\n      <td>EC:4.6.1.12</td>\n      <td>94</td>\n      <td>94</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:4.1.99.12</td>\n      <td>EC:3.5.4.25</td>\n      <td>83</td>\n      <td>83</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:3.5.4.19</td>\n      <td>EC:3.6.1.31</td>\n      <td>59</td>\n      <td>59</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:1.8.4.11</td>\n      <td>EC:1.8.4.12</td>\n      <td>20</td>\n      <td>20</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:4.1.1.48</td>\n      <td>EC:5.3.1.24</td>\n      <td>18</td>\n      <td>18</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:5.4.99.5</td>\n      <td>EC:4.2.1.51</td>\n      <td>12</td>\n      <td>12</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:5.4.99.5</td>\n      <td>EC:1.3.1.12</td>\n      <td>4</td>\n      <td>4</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:4.2.1.10</td>\n      <td>EC:1.1.1.25</td>\n      <td>3</td>\n      <td>3</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:2.7.7.61</td>\n      <td>EC:2.4.2.52</td>\n      <td>0</td>\n      <td>3</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>EC:2.7.1.71</td>\n      <td>EC:4.2.3.4</td>\n      <td>0</td>\n      <td>2</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>EC:1.1.1.25</td>\n      <td>EC:4.2.1.10</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>EC:2.7.2.3</td>\n      <td>EC:5.3.1.1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:4.1.1.97</td>\n      <td>EC:1.7.3.3</td>\n      <td>1</td>\n      <td>1</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:4.1.3.1</td>\n      <td>EC:2.3.3.9</td>\n      <td>1</td>\n      <td>1</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>EC:5.1.99.6</td>\n      <td>EC:1.4.3.5</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>EC:1.8.4.12</td>\n      <td>EC:1.8.4.11</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n### Input data statistics\n\nWe use Swiss-Prot version 2019_01 in our analysis, which gives us 559,077 proteins, or 548,264 after filtering for only 20 standard amino acids and filtering fragments (Table 3). Because different protein functions have differing prevalence, we note the number of proteins that have a given function for Pfam, EC, and GO labels, as well as noting the number of labels per protein. Further statistics on dataset size for different data splits are provided in Tables 2, 4\u20137.\n\nWhen assigning examples to folds in our clustered dataset, we note that there are test examples that have labels that are never seen in the training data. We report these cases below as \u2018Impossible\u2019 test example-label pairs (Table 8).\n\n**Table 8.**\n Clustered dataset statistics for EC labels.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Type</th>\n      <th>Number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Train labels</td>\n      <td>3411</td>\n    </tr>\n    <tr>\n      <td>Test labels</td>\n      <td>3414</td>\n    </tr>\n    <tr>\n      <td>Impossible test labels</td>\n      <td>1043</td>\n    </tr>\n    <tr>\n      <td>Train example-label pairs</td>\n      <td>348,105</td>\n    </tr>\n    <tr>\n      <td>Test example-label pairs</td>\n      <td>348,755</td>\n    </tr>\n    <tr>\n      <td>Impossible test example-label pairs</td>\n      <td>3415</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Timing ProteInfer browser models\n\nWe timed the performance of the ProteInfer model by running the code found at https://github.com/google-research/proteinfer/blob/gh-pages/latex/timing_code.js in the browser console.\n\n#### Combining CNN and BLAST\n\nWe noticed a clear difference between the performance of CNN models and BLAST models. The CNN models were able make predictions with higher precision than BLAST for a given recall value, but achieved lower overall recall, while BLAST gave high recall at the expense of precision. This suggested that combining the two methods would be beneficial. A CNN, or an ensemble of CNNs, produces a metric that is notionally a probability (though often imperfectly calibrated), while BLAST bit-score produces a bit-score metric indicating the significance of the match. We reasoned that one approach to combining the two would simply be to multiply the values together \u2013 improving the precision of BLAST predictions by reducing bit-scores in cases where the CNN model lacked confidence in a prediction. This approach performed well and was the best that we evaluated. To implement this method, all labels associated with the top hit from BLAST with a sequence are initially assigned identical scores, determined by the bit-score of the top match, but these are then rescaled according to the output of the ProteInfer command-line interface.\n\nWhether this approach is worth the additional infrastructure required to maintain two different methods of prediction will depend on the scale of analysis being conducted. Further sophistication in how the CNN and BLAST are combined, perhaps with a learnt model, might further improve performance.\n",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "05c2893d-76c9-42bc-b735-defbd225546e",
+      "submission_id": "6bad2590-3e7b-4b92-9cfe-57a03098be34",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80942.sa0](https://doi.org/10.7554/eLife.80942.sa0)\n\nThe authors describe with the newly developed software, ProteInfer, an important new tool that analyses protein sequences to predict their functions. It is based on a single convolutional neural network scan for all known domains in parallel. This software provides a convincing approach for all computational scientists as well as experimentalists working near the interface of machine learning and molecular biology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80942.sa1](https://doi.org/10.7554/eLife.80942.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Deep neural networks for protein functional inference\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Volker D\u00f6tsch as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Max Staller (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Outline a better method for setting up a validation set. This should be using the experimental evidence codes: http://geneontology.org/docs/guide-go-evidence-codes/ in some fashion, as those are the proteins for which the function is known. They can enrich the pool by adding close homologs.\n\n2) Separate GO-based analyses to the different GO aspects: MFO, BPO, and CCO.\n\n3) Figure 3: Add baseline methods (BLAST and Naive) to all analyses.\n\n4) The difference between the single ProteInfer CNN and the ensemble ProteinInfer CNNs is unclear. Which one is being used on the website?\n\n5) In addition, please provide more guidance on how to use the \"ProteinInfer CNN scaled by Blast Score\" model. Are there heuristics for when the scaling is worth the extra effort?\n\n6) Figure S7 shows that combining Blast results with the CNN-Ensemble model was sometimes the best performing model, but it is unclear how the user could use the joint functionality.\n\n7) It would be helpful to add a short paragraph explaining how a wet lab biologist might most efficiently combine ProteinInfer, BLAST, and ProtCNN. For which problems is each best suited? This discussion might be beyond the scope of this work.\n\n8) How does this work differs from existing methods that seem very similar? This should be shown more clearly.\n\n9) Recommendation: report results on highly similar (e.g. >70% identical sequences between validation and training set) and less similar (<70% identity between training and validation) sequences.\n\n10) Recommendation: further integrate ProteInfer with Pfam-N (the ProtCNN model). It would be amazing to have both run in parallel with integrated results.\n\n11) Recommendation: I would suggest moving the comparison of precision vs recall for CNN vs BLASTp from the supplemental material to the main text, as this is a crucial aspect of the study. It would be useful to also discuss or hypothesize why CNN has higher precision at lower recall values, whereas BLAST has higher recall at lower precision values (and especially why precision plateaus if you decrease recall in BLAST).\n\nIn the same vein, it would help to motivate the conceptual utility of the high-dimensional embedding for protein sequences, for example by providing functional or phylogenetic insight into a sub-category of enzymes.\n",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "59a0ee75-0d1f-4400-8c84-2bd32d1fa3bf",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C1",
+      "claim": "More than a hundred thousand protein sequences are added to global sequence databases every day.",
+      "claim_type": "EXPLICIT",
+      "source": "Every day, more than a hundred thousand protein sequences are added to global sequence databases (UniProt Consortium, 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to UniProt Consortium, 2019a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "fe28b932-8d79-4c81-90bd-fea69fbd48d2",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C2",
+      "claim": "Curators assess more than 60,000 papers each year for protein annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "While curators diligently extract annotations from the literature, assessing more than 60,000 papers each year (UniProt Consortium, 2019b), the time-consuming nature of this task means that only ~0.03% of publicly available protein sequences are manually annotated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to UniProt Consortium, 2019b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "b14c76e8-91d5-46e4-ab53-d217899b6fb4",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C3",
+      "claim": "Only approximately 0.03% of publicly available protein sequences are manually annotated.",
+      "claim_type": "EXPLICIT",
+      "source": "While curators diligently extract annotations from the literature, assessing more than 60,000 papers each year (UniProt Consortium, 2019b), the time-consuming nature of this task means that only ~0.03% of publicly available protein sequences are manually annotated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to UniProt Consortium, 2019b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "d191cd03-f1a9-4cfb-bb92-830a4e48e3f6",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C4",
+      "claim": "BLAST was introduced in 1990 as a method for pairwise sequence comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting in the 1980s, methods such as BLAST (Altschul et al., 1990) relied on pairwise sequence comparisons, where a query protein is assumed to have the same function as highly similar sequences that have already been annotated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Altschul et al., 1990",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "76e5c08b-4348-4bdb-be1e-8ffa1fce8b2b",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C5",
+      "claim": "The PROSITE database was introduced in 1991 for cataloguing short amino acid motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Signature-based approaches were later introduced, with the PROSITE database (Bairoch, 1991) cataloguing short amino acid 'motifs' found in proteins that share a particular function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bairoch, 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "d01609e4-c132-4893-9e52-0a20713caf68",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C6",
+      "claim": "Profile hidden Markov models (HMMs) were developed in the 1990s.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, a crucial refinement of signature-based approaches was the development of profile hidden Markov models (HMMs) (Krogh et al., 1994; Eddy, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Krogh et al., 1994 and Eddy, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "75cc7a64-70da-4b4b-845b-c4c6ffb5604f",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C7",
+      "claim": "Profile HMMs allow for longer signatures and fuzzier matching compared to earlier methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, profile HMMs allow for longer signatures and fuzzier matching and are currently used to update popular databases such as Interpro and Pfam (Bateman et al., 2019; Blum et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bateman et al., 2019 and Blum et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "47b175e6-49f3-49d0-8318-d74d453ea6a0",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C8",
+      "claim": "One-third of bacterial proteins cannot be annotated with a function even computationally.",
+      "claim_type": "EXPLICIT",
+      "source": "These computational modelling approaches have had great impact; however, one-third of bacterial proteins still cannot be annotated (even computationally) with a function (Price et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Price et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "6bcf4c91-56bb-4f31-8581-110d604d4188",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C9",
+      "claim": "Current alignment-based approaches conduct entirely separate comparisons for each comparator sequence or model.",
+      "claim_type": "EXPLICIT",
+      "source": "First, current approaches conduct entirely separate comparisons for each comparator sequence or model, and thus may not fully exploit the features shared across different functional classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical reasoning about how alignment-based methods work",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "bd2df816-f361-4ce8-bccc-c7ecdc24099e",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C10",
+      "claim": "Deep neural networks have recently transformed image recognition tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep neural networks have recently transformed a number of labelling tasks, including image recognition \u2013 the early layers in these models build up an understanding of simple features such as edges, and later layers use these features to identify textures, and then entire objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by general knowledge and citation to Carter et al., 2019",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "52ac50b8-4fa2-41ee-a2c1-024428662faf",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C11",
+      "claim": "ProteInfer employs deep dilated convolutional networks to learn the mapping between full-length protein sequences and functional annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this challenge we employ deep dilated convolutional networks to learn the mapping between full-length protein sequences and functional annotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the method used in this work",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "ec57b96b-7add-4fdf-8e43-27771e40dd15",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C12",
+      "claim": "ProteInfer models are trained on Swiss-Prot, the manually curated portion of UniProt.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting ProteInfer models take amino acid sequences as input and are trained on the well-curated portion of the protein universe annotated by Swiss-Prot (UniProt Consortium, 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about training data with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "5853e6b8-5e3c-4875-b055-90ae6a24dd70",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C13",
+      "claim": "ProteInfer models reproduce curator decisions for a variety of functional properties across sequences distant from the training data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that (1) ProteInfer models reproduce curator decisions for a variety of functional properties across sequences distant from the training data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "8c9e3789-c1f5-41c8-868e-18e7524a6982",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C14",
+      "claim": "Attribution analysis shows that ProteInfer predictions are driven by relevant regions of each protein sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) attribution analysis shows that the predictions are driven by relevant regions of each protein sequence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "a46e45df-e6af-4df1-8c51-96df6ed4cb10",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C15",
+      "claim": "ProteInfer models create a generalised mapping between sequence space and the space of protein functions.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) ProteInfer models create a generalised mapping between sequence space and the space of protein functions, which is useful for tasks other than those for which the models were trained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "6fa3cf38-f619-4d4c-ab28-d60a6f450bab",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C16",
+      "claim": "ProteInfer uses residual layers with dilated convolutions.",
+      "claim_type": "EXPLICIT",
+      "source": "We use residual layers, in which the output of each layer is added to its input to ease the training of deeper networks (He et al., 2015), and dilated convolutions (Yu and Koltun, 2015), meaning that successive layers examine larger sub-sequences of the input sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model architecture with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "a5396b23-42bf-4ee7-8a97-f16766abdb4e",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C18",
+      "claim": "Natural protein sequences can vary in length by at least three orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Since natural protein sequences can vary in length by at least three orders of magnitude, this pooling is advantageous because it allows our model to accommodate sequences of arbitrary length without imposing restrictive modelling assumptions or computational burdens that scale with sequence length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about protein sequence length variation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "d506c75f-e369-414e-95a4-bec14bb5935f",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C19",
+      "claim": "Each ProteInfer model was trained for about 60 hours using the Adam optimizer on 8 NVIDIA P100 GPUs.",
+      "claim_type": "EXPLICIT",
+      "source": "Each model was trained for about 60 hr using the Adam optimiser (Kingma and Ba, 2015) on 8 NVIDIA P100 GPUs with data parallelism (Jeffrey, 2012; Shallue et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of training procedure with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "c8ddd893-96b6-4415-a217-91986ea35695",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C20",
+      "claim": "Swiss-Prot proteins go through a six-stage curation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Each protein in Swiss-Prot goes through a six-stage process of sequence curation, sequence analysis, literature curation, family-based curation, evidence attribution, and quality assurance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of Swiss-Prot curation process",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "8d929d85-efbd-4d0d-882a-153b9351e503",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C21",
+      "claim": "EC numbers represent the function of an enzyme in a hierarchical classification system.",
+      "claim_type": "EXPLICIT",
+      "source": "These cross-references include Enzyme Commission (EC) numbers, representing the function of an enzyme",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of EC number system",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "8d61c399-a1db-4416-8cff-9f9ddc69a70a",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C22",
+      "claim": "GO terms relate to a protein's molecular function, biological process, or subcellular localisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) terms relating to the protein's molecular function, biological process, or subcellular localisation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of GO term categories",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "ab1fe877-8c49-4cdb-b6ec-2f5262bc6cc9",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C23",
+      "claim": "The study uses two methods to split data into training and evaluation sets: random split and UniRef50 clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "We use two methods to split data into training and evaluation sets. First, a random split of the data allows us to answer the following question: suppose that curators had randomly annotated only 80% of the sequences in Swiss-Prot. How accurately can ProteInfer annotate the remaining 20%? Second, we use UniRef50 (Suzek et al., 2015) clustering to split the data to model a challenging use case in which an unseen sequence has low sequence similarity to anything that has been previously annotated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data splitting methodology with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "158a6204-394d-4be3-9255-b0a3c0884c77",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C24",
+      "claim": "There are 8162 catalogued chemical reactions represented by EC numbers in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "These are drawn from a total of 8162 catalogued chemical reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the number of EC numbers in the dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "891236cb-515c-4771-afd8-4d76a4d0f1c3",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C27",
+      "claim": "At the optimal confidence threshold, the EC prediction model correctly predicts 96.7% of true labels with a false-positive rate of 1.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "At the corresponding confidence threshold, the model correctly predicts 96.7% of true labels, with a false-positive rate of 1.4%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "628e4cc6-f339-44d2-a8e7-87d02f8cd729",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C31",
+      "claim": "BLASTp was able to achieve higher recall values than ProteInfer for lower precision values.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that BLASTp was able to achieve higher recall values than ProteInfer for lower precision values, while ProteInfer was able to provide greater precision than BLASTp at lower recall values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison result from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "88088fb6-ba79-496b-8a17-0ab0e3bcd89a",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C32",
+      "claim": "ProteInfer was able to provide greater precision than BLASTp at lower recall values.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that BLASTp was able to achieve higher recall values than ProteInfer for lower precision values, while ProteInfer was able to provide greater precision than BLASTp at lower recall values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison result from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "ec690761-1958-4c71-ae17-2aa4b8eab420",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C33",
+      "claim": "The high recall of BLAST likely reflects that it has access to the entirety of the training set rather than having to compress it into neural network weights.",
+      "claim_type": "EXPLICIT",
+      "source": "The high recall of BLAST is likely to reflect the fact that it has access to the entirety of the training set, rather than having to compress it into a limited set of neural network weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation based on reasoning about method differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "ba078586-ed35-41f7-9cb4-26c804211b08",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C34",
+      "claim": "The lack of precision in BLAST could relate to reshuffling of sequences during evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the lack of precision in BLAST could relate to reshuffling of sequences during evolution, which would allow a given protein to show high similarity to a trainining sequence in a particular subregion, despite lacking the core region required for that training sequence's function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of results",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "97388037-0ca2-41cb-a787-62abf5f0354a",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C39",
+      "claim": "Neural network methods learn different information about proteins compared to alignment-based methods.",
+      "claim_type": "EXPLICIT",
+      "source": "These patterns suggest that neural network methods learn different information about proteins to alignment-based methods, and so a combination of the two provides a synergistic result.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation based on experimental results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "ab3571ae-fe2d-437f-bde6-1a5618eb8124",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C40",
+      "claim": "For labels that occurred less than five times in the training set, 58% of examples in the test set were correctly recalled with 88% precision.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for sequence data we found that even for labels that occurred less than five times in the training set, 58% of examples in the test set were correctly recalled, while achieving a precision of 88%, for an F1 of 0.7 (Figure 3\u2014figure supplement 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Performance metric from experimental results with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "1a749df8-6406-4de1-9989-a3cc982f5b03",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C41",
+      "claim": "Saccharomyces cerevisiae fol1 (accession Q4LB35) catalyses three sequential steps of tetrahydrofolate synthesis using three different protein domains.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Saccharomyces cerevisiae fol1 (accession Q4LB35) catalyses three sequential steps of tetrahydrofolate synthesis using three different protein domains (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Example protein with known function referenced with figure",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "8b0931d9-a58a-4029-a625-0cc7b6c79843",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C42",
+      "claim": "Class activation mapping (CAM) was used to identify the sub-sequences responsible for model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate what sequence regions the neural network is using to make its functional predictions, we used class activation mapping (CAM) (Zhou et al., 2015) to identify the sub-sequences responsible for the model predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of method used with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "9de8d89b-ad86-4490-8523-48c3df853d07",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C43",
+      "claim": "Separate regions of sequence cause the prediction of each enzymatic activity in bifunctional enzymes, corresponding to known functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that separate regions of sequence cause the prediction of each enzymatic activity, and that these regions correspond to the known functions of these regions (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from CAM analysis with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "ebc27d9b-76bd-4eeb-8378-553aecc2f73b",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C44",
+      "claim": "In 296 of 304 (97%) bifunctional enzyme cases, ProteInfer correctly predicted the ordering of domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in 296 of 304 (97%) of the cases, we correctly predicted the ordering, though we note that the set of bifunctional enzymes for which this analysis is applicable is limited in its functional diversity (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from domain ordering analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "433b7e5d-f973-4345-85e7-4aa351c52b57",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C45",
+      "claim": "InterProScan compares each sequence against more than 50,000 individual signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas InterProScan compares each sequence against more than 50,000 individual signatures and BLAST compares against an even larger sequence database, ProteInfer uses a single deep model to extract features from sequences that directly predict protein function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of method characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "402042dd-4cdf-4df7-a5df-7dc9ae3099e0",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C46",
+      "claim": "In the penultimate layer of ProteInfer, each protein is expressed as a single point in a high-dimensional space.",
+      "claim_type": "EXPLICIT",
+      "source": "One convenient property of this approach is that in the penultimate layer of the network each protein is expressed as a single point in a high-dimensional space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model architecture property",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "63a11602-125a-4ef2-85c8-ee242db67339",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C47",
+      "claim": "The ProteInfer embedding space captures the hierarchical nature of EC classification.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting representation captures the hierarchical nature of EC classification, with the largest clusters in embedding space corresponding to top level EC groupings (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from embedding analysis with figure reference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "9b333465-e240-493d-9ef2-395507d81c10",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C48",
+      "claim": "Q8RUD6, annotated as Arsenate reductase (EC:1.20.4.1), was placed with sulfurtransferases (EC:2.8.1.-) rather than with other oxidoreductases.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Q8RUD6 is annotated as Arsenate reductase (glutaredoxin) (EC:1.20.4.1) (Chao et al., 2014) was not placed with other oxidoreductases (EC:1.-.-.-) but rather with sulfurtransferases (EC:2.8.1.-).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from embedding analysis with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "863b03d1-7867-40e7-a28a-476bef28bf9e",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C49",
+      "claim": "Q8RUD6 can act as a sulfurtransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "Q8RUD6 can, however, act as a sulfurtransferase (Bartels et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Functional information supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "655e0f92-d68e-40d2-beab-f2b0e3ea3e3f",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C50",
+      "claim": "A simple random forest classification model using ProteInfer embeddings achieved 97% precision and 60% recall (F1 of 0.74) for predicting membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple model achieved a precision of 97% and recall of 60% for an F1 score of 0.74.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from transfer learning experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "1f8a6399-46ef-4bd2-be58-d64d6f10f7e3",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C51",
+      "claim": "Model training and data-labelling for the membrane protein classifier took around 15 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Model training and data-labelling took around 15 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Timing measurement from experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "6aafd25b-cbd1-4afc-91e1-69bb4f3eb7c5",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C52",
+      "claim": "The online interface to InterProScan can take 147 seconds to process a 1500 amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the online interface to InterProScan can take 147 s to process a 1500 amino acid sequence (Protein used was Q77Z83. It should be noted that the individual databases that make up InterProScan may return matches faster, with the online interface to Pfam taking 14\u201320 s for a 1500 amino acid sequence.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Timing measurement from comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "e1b87e8d-f52d-4bc5-be58-d17f14335da4",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C53",
+      "claim": "Running InterProScan locally requires downloading a 9 GB file, with an additional 14 GB for the full set of signatures, which when installed exceeds 51 GB.",
+      "claim_type": "EXPLICIT",
+      "source": "while running the tool may make the search faster, doing so requires downloading a 9 GB file, with an additional 14 GB for the full set of signatures, which when installed exceeds 51 GB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Information about software requirements",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "e8e3d8d9-0f08-483c-808e-ec8f65edd6b7",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C54",
+      "claim": "Conducting a BLAST search against Swiss-Prot takes 34 seconds for a 1500 amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, conducting a BLAST search against Swiss-Prot takes 34 s for a 1500 amino acid sequence (a target database with decreased redundancy could be built to reduce this search time, and other optimisations of BLAST have been developed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Timing measurement from comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "c35eb464-4ba8-4836-9d92-0aee7372cfbd",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C55",
+      "claim": "The lightweight ProteInfer EC model is 5 MB and the GO model is 7 MB.",
+      "claim_type": "EXPLICIT",
+      "source": "When the user loads the tool, lightweight EC (5 MB) and GO model (7 MB) prediction models are downloaded and all predictions are then performed locally, with query sequences never leaving the user's computer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Information about model sizes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "efd2cda8-f8b1-4a75-b946-d63dcc73db40",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C56",
+      "claim": "Inference in the browser for a 1500 amino acid sequence takes less than 1.5 seconds for both EC and GO models.",
+      "claim_type": "EXPLICIT",
+      "source": "Inference in the browser for a 1500 amino acid sequence takes <1.5 s for both models (see supplement).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Timing measurement from browser implementation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "381a07af-9177-4259-bbea-8dd98f96efc1",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C57",
+      "claim": "A high-throughput experimental genetic study identified EC numbers for 171 bacterial proteins that were previously misannotated or inconsistently annotated.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, this study listed newly identified EC numbers for 171 proteins, representing cases when there was previously either misannotation or inconsistent annotation in the SEED or KEGG databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental dataset with reference to Price et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "3853240d-d3d6-43b1-977b-385e83f83904",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C58",
+      "claim": "The ProteInfer network had 90% accuracy at the top level of the EC hierarchy for the experimental dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The network had high accuracy for identification of broad enzyme class, with 90% accuracy at the top level of the EC hierarchy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric on experimental validation set",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "e13c55d6-2601-4f9a-92c4-292b0da41924",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C59",
+      "claim": "At the second level of the EC hierarchy, accuracy was 90% and the network declined to make a prediction for 12% of classes.",
+      "claim_type": "EXPLICIT",
+      "source": "At the second level of the hierarchy, accuracy was 90% and the network declined to make a prediction for 12% of classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric on experimental validation set",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "3bcf3b72-7635-44b3-aa8d-2044776c7043",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C60",
+      "claim": "At the third level of the EC hierarchy, accuracy was 86% with the network making a prediction in 77% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at the third level, accuracy was 86% with the network making a prediction in 77% of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric on experimental validation set",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "71597490-459f-436e-a34c-a9cc3694ca76",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C61",
+      "claim": "At the finest level of EC classification, the proportion of examples for which a prediction was made fell to 28%, with 42% of these predictions correct.",
+      "claim_type": "EXPLICIT",
+      "source": "At the finest level of classification, the proportion of examples for which a prediction was made fell to 28%, with 42% of these predictions correct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric on experimental validation set",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "d25b3631-c23d-4473-b243-0864d8dc5265",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C62",
+      "claim": "ProteInfer correctly classified Sinorhizobium meliloti protein Q92SI0 as a uridine nucleosidase (EC 3.2.2.3), while UniProt and InterProScan annotated it as Inosine-uridine nucleoside N-ribohydrolase (EC 3.2.2.1).",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, the Sinorhizobium meliloti protein Q92SI0 is annotated in UniProt as a Inosine-uridine nucleoside N-ribohydrolase (EC 3.2.2.1). Analysing the gene with InterProScan (Jones et al., 2014) also gives this prediction, but our model instead predicts it to be a uridine nucleosidase (EC 3.2.2.3), and this was indeed the result found in this experimental work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific example of correct prediction validated experimentally with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "b07d914a-b243-4d7d-a932-17549d1d1c47",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C63",
+      "claim": "Pseudomonas fluorescens A0A166Q345 was correctly classified by ProteInfer as a D-galacturonate dehydrogenase (EC 1.1.1.203) as opposed to a misannotation on UniProt and with InterProScan.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Pseudomonas fluorescens A0A166Q345 was correctly classified by our model as a D-galacturonate dehydrogenase (EC 1.1.1.203) as opposed to a misannotation on UniProt and with InterProScan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific example of correct prediction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "c8edbfae-ae42-4606-9c4e-c141883e92be",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C64",
+      "claim": "By training on hierarchical data, the ProteInfer network is able to appropriately make broad or narrow classification decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that by training on this hierarchical data, the network is able to appropriately make broad or narrow classification decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of model behavior",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "529f2919-7232-4184-a34f-501a3347d945",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C65",
+      "claim": "GO contains 32,109 terms in Swiss-Prot that cover molecular functions, biological processes, and cellular components.",
+      "claim_type": "EXPLICIT",
+      "source": "GO (Ashburner et al., 2000; Consortium, 2019; Carbon et al., 2009) terms describe important protein functional properties, with 32,109 such terms in Swiss-Prot that cover the molecular functions of proteins (e.g. DNA-binding, amylase activity), the biological processes they are involved in (e.g. DNA replication, meiosis), and the cellular components to which they localise (e.g. mitochondrion, cytosol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of GO with citations and dataset statistics",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "e85999c5-4ca9-48a7-bf7e-3e6596b681e7",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C66",
+      "claim": "GO terms are arranged in a complex directed acyclic graph, with some nodes having as many as 12 ancestral nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "These terms are arranged in a complex directed acyclic graph, with some nodes having as many as 12 ancestral nodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of GO structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "a117c424-860a-4d1d-aeaf-7664549ae280",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C67",
+      "claim": "For GO prediction, the ProteInfer network achieved a precision of 0.918 and a recall of 0.854 for an F1 score of 0.885 (95% CI: 0.882\u20130.887).",
+      "claim_type": "EXPLICIT",
+      "source": "We trained a single model to predict presence or absence for each of these terms and found that our network was able to achieve a precision of 0.918 and a recall of 0.854 for an F1 score of 0.885 (95% CI: 0.882\u20130.887).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "f4d9e842-7348-4f20-a955-9d4ad4eda2de",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C68",
+      "claim": "An ensemble of multiple CNN elements achieved an F1 score of 0.899 (95% CI: 0.897\u20130.901) for GO prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "An ensemble of multiple CNN elements was again able to achieve a slightly better result with an F1 score of 0.899 (95% CI: 0.897\u20130.901), which was exceeded by a simple transfer of the BLAST top pick at 0.902 (95% CI: 0.900\u20130.904), with an ensemble of both producing the best result of 0.908 (95% CI: 0.906\u20130.911).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "4a34e715-e73f-4d78-b79b-a2ca6d766061",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C69",
+      "claim": "BLAST achieved an F1 score of 0.902 (95% CI: 0.900\u20130.904) for GO prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "An ensemble of multiple CNN elements was again able to achieve a slightly better result with an F1 score of 0.899 (95% CI: 0.897\u20130.901), which was exceeded by a simple transfer of the BLAST top pick at 0.902 (95% CI: 0.900\u20130.904), with an ensemble of both producing the best result of 0.908 (95% CI: 0.906\u20130.911).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "56258275-da64-460b-a123-4e7974970e56",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C70",
+      "claim": "An ensemble of BLAST and ProteInfer achieved an F1 score of 0.908 (95% CI: 0.906\u20130.911) for GO prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "An ensemble of multiple CNN elements was again able to achieve a slightly better result with an F1 score of 0.899 (95% CI: 0.897\u20130.901), which was exceeded by a simple transfer of the BLAST top pick at 0.902 (95% CI: 0.900\u20130.904), with an ensemble of both producing the best result of 0.908 (95% CI: 0.906\u20130.911).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "67899964-9868-44dc-80ae-d2b650c40a1a",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C71",
+      "claim": "Performance for GO prediction was highest for molecular function (max F1: 0.94).",
+      "claim_type": "EXPLICIT",
+      "source": "Performance was highest for molecular function (max F1: 0.94), followed by biological process (max F1:0.86) and then cellular component (max F1:0.84).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "cae32e84-f2ee-49a1-9a42-798fb1cad50c",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C72",
+      "claim": "Performance for GO prediction was followed by biological process (max F1: 0.86).",
+      "claim_type": "EXPLICIT",
+      "source": "Performance was highest for molecular function (max F1: 0.94), followed by biological process (max F1:0.86) and then cellular component (max F1:0.84).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "9078a634-b61f-4014-8082-53ea4a8cd8de",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C73",
+      "claim": "Performance for GO prediction was lowest for cellular component (max F1: 0.84).",
+      "claim_type": "EXPLICIT",
+      "source": "Performance was highest for molecular function (max F1: 0.94), followed by biological process (max F1:0.86) and then cellular component (max F1:0.84).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "8908b73b-8c6c-4ab6-8a1e-b585bc8a2205",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C74",
+      "claim": "InterProScan gave a precision of 0.937 and recall of 0.543 for an F1 score of 0.688 for GO prediction on UniProt data.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that InterProScan gave good precision, but within this UniProt data had lower recall, giving it a precision of 0.937 and recall of 0.543 for an F1 score of 0.688.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric from comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "3ef0f1dc-3d18-4708-b6d8-503199196ffd",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C75",
+      "claim": "ProteInfer's recall at a precision of 0.937 is substantially higher (0.835) than InterProScan at assigning GO labels.",
+      "claim_type": "EXPLICIT",
+      "source": "ProteInfer's recall at a precision of 0.937 is substantially higher (0.835) than InterProScan at assigning GO labels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance comparison from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "c10eb7fa-8a53-4883-b378-5dd8733a3e1e",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C76",
+      "claim": "The completeness of Swiss-Prot's GO term annotations varies.",
+      "claim_type": "EXPLICIT",
+      "source": "There are multiple caveats to these comparisons. One challenge is that the completeness of Swiss-Prot's GO term annotations varies (Jiang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Caveat about data quality with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "5d266104-0bef-4f24-bc53-9657a625a591",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C77",
+      "claim": "Pan paniscus and Pan troglodytes have an identical Apolipoprotein A-II protein, where one has 24 GO annotations and the other has 143 GO annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "As an extreme example, Pan paniscus (Pygmy Chimpanzee) and Pan troglodytes (Chimpanzee) have an identical Apolipoprotein A-II protein, (accessions P0DM95 and Q8MIQ5), where the first protein has 24 GO annotations, while the latter has 143 GO annotations (this count is done using not only the set of all labels that appear in Swiss-Prot, but also any parents of those labels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Example illustrating annotation inconsistency",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "cff2a14a-6e27-460d-9c9c-79236bc82a71",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C78",
+      "claim": "At the threshold that maximised F1 score for overall GO prediction, 75% of molecular function annotations could be successfully recalled.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that at the threshold that maximised F1 score for overall prediction, 75% of molecular function annotations could be successfully recalled, 61% of cellular component annotations, and 60% of biological process annotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric for non-IEA annotations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "18efb3a2-2293-492a-88e2-33472c0a9289",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C79",
+      "claim": "At the threshold that maximised F1 score for overall GO prediction, 61% of cellular component annotations could be successfully recalled.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that at the threshold that maximised F1 score for overall prediction, 75% of molecular function annotations could be successfully recalled, 61% of cellular component annotations, and 60% of biological process annotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric for non-IEA annotations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "64c63c0b-d273-4bb0-8583-f7a2911eab99",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C80",
+      "claim": "At the threshold that maximised F1 score for overall GO prediction, 60% of biological process annotations could be successfully recalled.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that at the threshold that maximised F1 score for overall prediction, 75% of molecular function annotations could be successfully recalled, 61% of cellular component annotations, and 60% of biological process annotations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performance metric for non-IEA annotations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "8ba17182-dca2-403d-8afd-768b314d50f0",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C81",
+      "claim": "Using Swiss-Prot to benchmark has the advantage that the data has been carefully curated by experts and contains minimal false-positives.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Swiss-Prot to benchmark our tool against traditional alignment-based methods has distinct advantages and disadvantages. It is desirable because the data has been carefully curated by experts, and thus it contains minimal false-positives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of methodological choice",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "b5ef73b0-66d6-45f3-a933-71f4400fb0c7",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C82",
+      "claim": "Many Swiss-Prot entries come from experts applying existing computational methods, including BLAST and HMM-based approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, many entries come from experts applying existing computational methods, including BLAST and HMM-based approaches, to identify protein function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of data limitations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "e1d71e75-bc90-4173-bb65-cb5cf6bb38cf",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C83",
+      "claim": "The Swiss-Prot data may be enriched for sequences with functions that are easily ascribable using traditional computational techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the data may be enriched for sequences with functions that are easily ascribable using these techniques which could limit the ability to estimate the added value of using an alternative alignment-free tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of potential bias in evaluation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "a9522351-42d6-4ef1-a027-742d76ddfe5f",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C84",
+      "claim": "At present, too little experimentally characterized data exists for a fully supervised deep-learning approach.",
+      "claim_type": "EXPLICIT",
+      "source": "An idealised dataset would involved training only on those sequences that have themselves been experimentally characterised, but at present too little data exists than would be needed for a fully supervised deep-learning approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of data limitations",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "9af2b339-4c90-4d69-8c2a-259ceba63479",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C85",
+      "claim": "Semi-supervised approaches that combine a smaller number of high-quality experimental labels with the vast set of amino acid sequences in TrEMBL may be a productive way forward.",
+      "claim_type": "EXPLICIT",
+      "source": "Semi-supervised approaches that combine a smaller number of high-quality experimental labels with the vast set of amino acid sequences in TrEMBL may be a productive way forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future directions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "b6d65953-6555-4313-a122-50a32061cd8f",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C86",
+      "claim": "Probabilities output by deep models are often over-confident rather than well-calibrated.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, probabilities output by deep models are often over-confident, rather than well-calibrated (Guo et al., 2017), and networks perform poorly on out-of-distribution data without being aware that they are outside their own range of expertise (Amodei et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of known limitations with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "0365f79b-e83e-45b7-b8aa-58915bd6ba5b",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C87",
+      "claim": "Networks perform poorly on out-of-distribution data without being aware that they are outside their own range of expertise.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, probabilities output by deep models are often over-confident, rather than well-calibrated (Guo et al., 2017), and networks perform poorly on out-of-distribution data without being aware that they are outside their own range of expertise (Amodei et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of known limitations with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "e77edbd0-6e26-4bcd-b077-9af8f65ed24f",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C88",
+      "claim": "The study uses Swiss-Prot version 2019_01, which contains 559,077 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We use Swiss-Prot version 2019_01 in our analysis, which gives us 559,077 proteins, or 548,264 after filtering for only 20 standard amino acids and filtering fragments (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of dataset used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "908b67e3-9099-4b22-bb55-2266b0f34880",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C89",
+      "claim": "After filtering for only 20 standard amino acids and filtering fragments, 548,264 proteins remain in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We use Swiss-Prot version 2019_01 in our analysis, which gives us 559,077 proteins, or 548,264 after filtering for only 20 standard amino acids and filtering fragments (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of dataset preprocessing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "7059cb95-47ea-4d9c-9db1-1abf17474c1e",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C90",
+      "claim": "In the random split, approximately 80% of data is allocated to training, 10% to development, and 10% to test.",
+      "claim_type": "EXPLICIT",
+      "source": "In our random split of the training data, we allocate about 80% to the training fold, 10% to the development fold, and 10% to the test fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data splitting from Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "e43b1ec4-e96a-4c60-8cbe-a8b5e074154a",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C91",
+      "claim": "The training fold contains 438,522 sequences in the random split.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 2",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "7fd6b652-35e1-4f4e-9387-1f28fbe323ec",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C92",
+      "claim": "The development fold contains 55,453 sequences in the random split.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 2",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "ff021f95-c31a-4ac2-99a6-76c8e441f6f1",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C93",
+      "claim": "The test fold contains 54,289 sequences in the random split.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 2",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "32f5109f-0909-451f-b966-d04e5c4b5c90",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C94",
+      "claim": "In the clustered split, approximately equal numbers of sequences are allocated to each fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In our clustered split of the training data, we use UniRef50 and allocate approximately equal numbers of sequences to each fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data splitting from Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "2218c853-2246-4b9e-aa2c-de92f3767e6d",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C95",
+      "claim": "The training fold contains 182,965 sequences in the clustered split.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 3",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "b4370416-a295-4c57-a13b-f67a3b042b7c",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C96",
+      "claim": "The development fold contains 180,309 sequences in the clustered split.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 3",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "b4c7f9ef-6a73-426a-915d-f5776b6f2b4f",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C97",
+      "claim": "The test fold contains 183,475 sequences in the clustered split.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 3",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "a221dbc1-dbb0-4958-9dfc-01815b5eb6da",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C98",
+      "claim": "The EC vocabulary contains 5134 terms.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 6",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "172470f6-31fd-4e80-86ea-8c87226a126d",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C99",
+      "claim": "The GO vocabulary contains 32,109 terms.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 6",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "c2358f5b-5135-405b-b056-5a80d05545ca",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C100",
+      "claim": "ProteInfer uses a dilation rate of 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Hyperparameter from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "f607f26c-9a8f-4f2d-84db-04b5e435627c",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C101",
+      "claim": "ProteInfer uses 1100 filters.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Hyperparameter from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "10626152-e6a2-40c9-8857-afce34c40cd8",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C102",
+      "claim": "ProteInfer uses a kernel size of 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Hyperparameter from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "ab5f28a1-c89e-442e-9bc0-9c44cbb192d1",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C103",
+      "claim": "ProteInfer uses a learning rate of 1.5E-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Hyperparameter from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "5e054383-16d8-4ee4-b983-a2fc072435f3",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C104",
+      "claim": "ProteInfer uses 5 ResNet layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Hyperparameter from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "d9649b75-9ba9-440c-ad17-5237cb8e56ff",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C105",
+      "claim": "ProteInfer uses mean pooling.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Hyperparameter from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "ed990017-d97a-419e-b6f4-b4bee0a71ce8",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C106",
+      "claim": "ProteInfer was trained for 500,000 steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Training parameter from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "e8169fff-e9fa-4865-8b36-eb36b376db47",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C107",
+      "claim": "ProteInfer uses a batch size of 40 per GPU with dynamic adjustment based on sequence length.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Training parameter from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "486ee32d-81ab-4b98-8486-d3447b9ca838",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "claim_id": "C108",
+      "claim": "ProteInfer uses 8 concurrent batches for data parallelism.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Training parameter from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ba4ca35b-d6b5-4eac-af52-95bd18406a55",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the scale of the protein annotation challenge: over 100,000 protein sequences are added to databases daily, curators assess over 60,000 papers annually, yet only ~0.03% of publicly available protein sequences are manually annotated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are supported by citations to UniProt Consortium publications (2019a, 2019b). These statistics establish the motivation for computational annotation methods and are consistent with known database growth rates and curation bottlenecks.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "cc9daef8-91d2-49b5-95b8-0266d1ad79a4",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews the history of computational protein function prediction methods, from BLAST (1990) through PROSITE (1991) to profile HMMs (1990s), noting that despite their impact, one-third of bacterial proteins still cannot be computationally annotated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 provide historical context supported by appropriate citations (Altschul et al. 1990, Bairoch 1991, Krogh et al. 1994, Eddy 1998, Bateman et al. 2019, Price et al. 2018). These are well-established facts in the field and the citations appear appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "686e4dbc-7951-46cf-8546-ebbf3eff384f",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ProteInfer employs deep dilated convolutional neural networks with residual layers, trained on Swiss-Prot data using specific hyperparameters (5 ResNet layers, 1100 filters, kernel size 9, dilation rate 3, mean pooling) for approximately 60 hours on 8 NVIDIA P100 GPUs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C108 describe the model architecture and training procedure with specific technical details provided in Table 1 and the text. The architecture choices are well-documented and the training procedure is clearly specified with appropriate citations (He et al. 2015, Yu and Koltun 2015, Kingma and Ba 2015).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study uses Swiss-Prot version 2019_01 (559,077 proteins, filtered to 548,264) with two data splitting strategies: random split (80/10/10 train/dev/test) and UniRef50 clustering split (approximately equal distribution across folds).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C88-C97 describe the dataset and splitting methodology with specific numbers provided in Tables 2 and 3. The two splitting strategies address different evaluation scenarios (random annotation vs. remote homology), which is a sound experimental design. The data preprocessing steps are clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "c7621e47-3bca-4c58-9b00-e7afcfe83cda",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ProteInfer achieves high performance on EC number prediction with Fmax=0.977 on the random split test set, correctly predicting 96.7% of true labels with a 1.4% false-positive rate at the optimal threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C27 report the main performance metrics for EC prediction. The results are supported by Figure 3 and are consistent with the precision-recall curves shown. The confidence intervals are provided (0.976-0.978) and the performance is evaluated at multiple thresholds, which is appropriate for multi-label classification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "a7e675ea-654b-482a-92a2-b135a7d013ae",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Comparison with BLAST reveals complementary strengths: BLAST achieves higher recall at lower precision while ProteInfer provides greater precision at lower recall. The authors interpret this as neural networks learning different information than alignment-based methods, with ensemble approaches providing synergistic results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C39 describe the BLAST comparison with interpretations of the performance differences. The empirical observations (C31-C32) are supported by Figure 3B. The interpretations (C33-C34, C39) are reasonable hypotheses about why the methods differ, though C34 is explicitly speculative. The ensemble results support the claim of complementary information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "93cbbd58-4ca8-46d2-ae13-f5e76540a43f",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ProteInfer demonstrates strong performance even for rare labels, achieving 58% recall and 88% precision (F1=0.7) for labels occurring less than five times in the training set.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is supported by Figure 3\u2014figure supplement 12. This is an important result showing that the model can generalize from limited examples, likely due to evolutionary relationships between sequences. The performance metrics are clearly stated with appropriate reference to the figure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "e9df15fc-f2af-4c20-9ecb-3ae32c17be4e",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Class activation mapping (CAM) analysis on bifunctional enzymes shows that ProteInfer correctly localizes function to specific sequence regions, correctly predicting domain ordering in 296 of 304 (97%) bifunctional enzyme cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 describe the CAM analysis with specific examples (S. cerevisiae fol1) and quantitative results. The 97% accuracy for domain ordering is impressive, though the authors appropriately note limitations in functional diversity of the test set. Figure 4 provides visual evidence supporting the localization claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "67832360-a2d3-433a-999b-c234711f1316",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ProteInfer embeddings capture functional relationships beyond training labels: UMAP visualization shows hierarchical EC clustering, and embeddings enable rapid transfer learning (e.g., 97% precision, 60% recall for membrane protein prediction in 15 seconds).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 demonstrate that the learned embeddings capture general protein properties. Figure 5 shows clear hierarchical structure in EC space, and Figure 6 shows structure for non-enzyme GO terms. The transfer learning example (C50-C51) provides quantitative evidence with impressive speed, though the recall is modest. The biological example of Q8RUD6 (C48-C49) is well-supported by citation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "1fbe12d4-7e92-4373-89fa-fc162dc9bbb5",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ProteInfer offers computational efficiency advantages: the browser-based implementation (5-7 MB models) performs inference in <1.5 seconds for 1500 amino acid sequences, compared to 147 seconds for InterProScan online or 34 seconds for BLAST.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 provide timing comparisons showing ProteInfer's efficiency. The measurements are specific and include important caveats (e.g., InterProScan component databases may be faster, BLAST could be optimized). The browser implementation is a notable technical achievement, though the comparison is somewhat limited as it compares online tools with different computational resources.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "66975c10-eaea-4812-b8e0-b867a1447ed4",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Validation on 171 experimentally characterized bacterial proteins shows ProteInfer achieves 90% accuracy at EC hierarchy levels 1-2, 86% at level 3, and 42% at level 4 (when making predictions), with the network appropriately declining predictions at finer levels when uncertain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 describe validation against experimental data from Price et al. 2018. The hierarchical performance degradation is expected and the model's ability to abstain from fine-grained predictions is appropriate. Specific examples (Q92SI0, A0A166Q345) where ProteInfer outperforms existing annotations strengthen the validation. Figure 7 clearly shows the performance at different hierarchy levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "a2701fd4-9417-4612-a84b-14c09533bb1f",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "For GO term prediction across 32,109 terms, ProteInfer achieves F1=0.885 (single model) and 0.899 (ensemble), with BLAST at 0.902 and the combined ensemble at 0.908. Performance varies by GO category: molecular function (F1=0.94) > biological process (F1=0.86) > cellular component (F1=0.84).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C73 report comprehensive GO prediction results with confidence intervals. The performance hierarchy across GO categories is clearly documented. The results show that BLAST slightly outperforms individual ProteInfer models but the ensemble approach provides the best performance, consistent with the EC results. The scale of the task (32,109 terms) is impressive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "00948e26-410f-4198-8bd1-be5684a0834e",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Comparison with InterProScan shows ProteInfer achieves substantially higher recall (0.835 vs 0.543) at matched precision (0.937), though annotation completeness varies in Swiss-Prot (e.g., identical proteins with 24 vs 143 GO annotations). For non-IEA annotations, recall ranges from 60-75% depending on GO category.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C80 compare with InterProScan and acknowledge data quality issues. The dramatic example of identical proteins with different annotation counts (C77) illustrates a real problem in the evaluation. The authors appropriately caveat the comparison, noting that InterProScan and UniProt use different annotation schemas. The non-IEA analysis (C78-C80) provides additional validation on higher-quality annotations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "1517395d-8f28-405d-b3d1-2e1c781a61f5",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discuss limitations of using Swiss-Prot for benchmarking: while it provides high-quality curated data with minimal false positives, many entries derive from computational methods (BLAST, HMMs), potentially biasing evaluation toward functions easily identified by traditional techniques. They suggest semi-supervised approaches combining experimental labels with TrEMBL sequences as future directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 provide thoughtful discussion of methodological limitations. The authors appropriately acknowledge that Swiss-Prot curation includes computational predictions (C82), which could create circularity in evaluation (C83). The suggestion for semi-supervised approaches (C85) is reasonable given the limited experimental data (C84). This critical self-assessment strengthens the paper.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "b293c99a-9d38-449a-9d15-4c8e2813f5ae",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors acknowledge known limitations of deep learning models: probabilities are often over-confident rather than well-calibrated, and networks perform poorly on out-of-distribution data without recognizing they are outside their expertise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 cite known issues with deep learning (Guo et al. 2017, Amodei et al. 2016). These are important caveats that apply to ProteInfer, though the authors don't provide specific analysis of calibration or out-of-distribution performance for their models. The acknowledgment is appropriate but could be more thorough.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "6c0b6317-14c5-4d43-a09d-94fe7365b8ed",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Attribution analysis demonstrates that ProteInfer predictions are driven by relevant sequence regions, and the models create a generalized functional mapping useful for tasks beyond their training objectives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 are high-level summaries supported by the detailed CAM analysis (C42-C44) and embedding analysis (C46-C51). The evidence from bifunctional enzymes and transfer learning experiments substantiates these claims. These represent important findings about model interpretability and generalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "5d06b435-99db-4920-9879-fe6959368b23",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors motivate their approach by noting that current alignment-based methods conduct separate comparisons for each sequence/model and may not fully exploit shared features across functional classes, while deep neural networks have transformed image recognition by learning hierarchical features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 provide motivation for the deep learning approach. C9 is a reasonable characterization of alignment-based methods, though the claim about not exploiting shared features could be debated (HMMs do capture some shared structure). C10 is well-established with appropriate citation (Carter et al. 2019). These claims effectively motivate the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    },
+    {
+      "id": "e7f8aa25-58df-4834-a0e6-45bb7a2f34cd",
+      "content_id": "5d7fb5eb-7cf7-4764-9f6e-7536ef3af5d6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The manuscript provides background on protein sequence variation (3 orders of magnitude in length), Swiss-Prot curation (6-stage process), annotation systems (EC numbers for enzymatic function, GO terms for molecular function/biological process/cellular component), and dataset statistics (8162 EC reactions, 5134 EC terms, 32,109 GO terms, >50,000 InterProScan signatures).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C20-C22, C24, C45, C98-C99 provide essential background information and dataset statistics. These are well-established facts appropriately cited or derived from the data. The information is necessary context for understanding the methods and results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:24:03.641069Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "59a0ee75-0d1f-4400-8c84-2bd32d1fa3bf",
+      "result_id": "ba4ca35b-d6b5-4eac-af52-95bd18406a55"
+    },
+    {
+      "claim_id": "fe28b932-8d79-4c81-90bd-fea69fbd48d2",
+      "result_id": "ba4ca35b-d6b5-4eac-af52-95bd18406a55"
+    },
+    {
+      "claim_id": "b14c76e8-91d5-46e4-ab53-d217899b6fb4",
+      "result_id": "ba4ca35b-d6b5-4eac-af52-95bd18406a55"
+    },
+    {
+      "claim_id": "d191cd03-f1a9-4cfb-bb92-830a4e48e3f6",
+      "result_id": "cc9daef8-91d2-49b5-95b8-0266d1ad79a4"
+    },
+    {
+      "claim_id": "76e5c08b-4348-4bdb-be1e-8ffa1fce8b2b",
+      "result_id": "cc9daef8-91d2-49b5-95b8-0266d1ad79a4"
+    },
+    {
+      "claim_id": "d01609e4-c132-4893-9e52-0a20713caf68",
+      "result_id": "cc9daef8-91d2-49b5-95b8-0266d1ad79a4"
+    },
+    {
+      "claim_id": "75cc7a64-70da-4b4b-845b-c4c6ffb5604f",
+      "result_id": "cc9daef8-91d2-49b5-95b8-0266d1ad79a4"
+    },
+    {
+      "claim_id": "47b175e6-49f3-49d0-8318-d74d453ea6a0",
+      "result_id": "cc9daef8-91d2-49b5-95b8-0266d1ad79a4"
+    },
+    {
+      "claim_id": "52ac50b8-4fa2-41ee-a2c1-024428662faf",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "ec57b96b-7add-4fdf-8e43-27771e40dd15",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "6fa3cf38-f619-4d4c-ab28-d60a6f450bab",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "d506c75f-e369-414e-95a4-bec14bb5935f",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "c2358f5b-5135-405b-b056-5a80d05545ca",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "f607f26c-9a8f-4f2d-84db-04b5e435627c",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "10626152-e6a2-40c9-8857-afce34c40cd8",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "ab5f28a1-c89e-442e-9bc0-9c44cbb192d1",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "5e054383-16d8-4ee4-b983-a2fc072435f3",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "d9649b75-9ba9-440c-ad17-5237cb8e56ff",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "ed990017-d97a-419e-b6f4-b4bee0a71ce8",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "e8169fff-e9fa-4865-8b36-eb36b376db47",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "486ee32d-81ab-4b98-8486-d3447b9ca838",
+      "result_id": "686e4dbc-7951-46cf-8546-ebbf3eff384f"
+    },
+    {
+      "claim_id": "ab1fe877-8c49-4cdb-b6ec-2f5262bc6cc9",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "e77edbd0-6e26-4bcd-b077-9af8f65ed24f",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "908b67e3-9099-4b22-bb55-2266b0f34880",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "7059cb95-47ea-4d9c-9db1-1abf17474c1e",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "e43b1ec4-e96a-4c60-8cbe-a8b5e074154a",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "7fd6b652-35e1-4f4e-9387-1f28fbe323ec",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "ff021f95-c31a-4ac2-99a6-76c8e441f6f1",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "32f5109f-0909-451f-b966-d04e5c4b5c90",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "2218c853-2246-4b9e-aa2c-de92f3767e6d",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "b4370416-a295-4c57-a13b-f67a3b042b7c",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "b4c7f9ef-6a73-426a-915d-f5776b6f2b4f",
+      "result_id": "1720bc91-22db-47e8-82cc-40ff3e5bd3bc"
+    },
+    {
+      "claim_id": "5853e6b8-5e3c-4875-b055-90ae6a24dd70",
+      "result_id": "c7621e47-3bca-4c58-9b00-e7afcfe83cda"
+    },
+    {
+      "claim_id": "891236cb-515c-4771-afd8-4d76a4d0f1c3",
+      "result_id": "c7621e47-3bca-4c58-9b00-e7afcfe83cda"
+    },
+    {
+      "claim_id": "628e4cc6-f339-44d2-a8e7-87d02f8cd729",
+      "result_id": "a7e675ea-654b-482a-92a2-b135a7d013ae"
+    },
+    {
+      "claim_id": "88088fb6-ba79-496b-8a17-0ab0e3bcd89a",
+      "result_id": "a7e675ea-654b-482a-92a2-b135a7d013ae"
+    },
+    {
+      "claim_id": "ec690761-1958-4c71-ae17-2aa4b8eab420",
+      "result_id": "a7e675ea-654b-482a-92a2-b135a7d013ae"
+    },
+    {
+      "claim_id": "ba078586-ed35-41f7-9cb4-26c804211b08",
+      "result_id": "a7e675ea-654b-482a-92a2-b135a7d013ae"
+    },
+    {
+      "claim_id": "97388037-0ca2-41cb-a787-62abf5f0354a",
+      "result_id": "a7e675ea-654b-482a-92a2-b135a7d013ae"
+    },
+    {
+      "claim_id": "ab3571ae-fe2d-437f-bde6-1a5618eb8124",
+      "result_id": "93cbbd58-4ca8-46d2-ae13-f5e76540a43f"
+    },
+    {
+      "claim_id": "1a749df8-6406-4de1-9989-a3cc982f5b03",
+      "result_id": "e9df15fc-f2af-4c20-9ecb-3ae32c17be4e"
+    },
+    {
+      "claim_id": "8b0931d9-a58a-4029-a625-0cc7b6c79843",
+      "result_id": "e9df15fc-f2af-4c20-9ecb-3ae32c17be4e"
+    },
+    {
+      "claim_id": "9de8d89b-ad86-4490-8523-48c3df853d07",
+      "result_id": "e9df15fc-f2af-4c20-9ecb-3ae32c17be4e"
+    },
+    {
+      "claim_id": "ebc27d9b-76bd-4eeb-8378-553aecc2f73b",
+      "result_id": "e9df15fc-f2af-4c20-9ecb-3ae32c17be4e"
+    },
+    {
+      "claim_id": "402042dd-4cdf-4df7-a5df-7dc9ae3099e0",
+      "result_id": "67832360-a2d3-433a-999b-c234711f1316"
+    },
+    {
+      "claim_id": "63a11602-125a-4ef2-85c8-ee242db67339",
+      "result_id": "67832360-a2d3-433a-999b-c234711f1316"
+    },
+    {
+      "claim_id": "9b333465-e240-493d-9ef2-395507d81c10",
+      "result_id": "67832360-a2d3-433a-999b-c234711f1316"
+    },
+    {
+      "claim_id": "863b03d1-7867-40e7-a28a-476bef28bf9e",
+      "result_id": "67832360-a2d3-433a-999b-c234711f1316"
+    },
+    {
+      "claim_id": "655e0f92-d68e-40d2-beab-f2b0e3ea3e3f",
+      "result_id": "67832360-a2d3-433a-999b-c234711f1316"
+    },
+    {
+      "claim_id": "1f8a6399-46ef-4bd2-be58-d64d6f10f7e3",
+      "result_id": "67832360-a2d3-433a-999b-c234711f1316"
+    },
+    {
+      "claim_id": "6aafd25b-cbd1-4afc-91e1-69bb4f3eb7c5",
+      "result_id": "1fbe12d4-7e92-4373-89fa-fc162dc9bbb5"
+    },
+    {
+      "claim_id": "e1b87e8d-f52d-4bc5-be58-d17f14335da4",
+      "result_id": "1fbe12d4-7e92-4373-89fa-fc162dc9bbb5"
+    },
+    {
+      "claim_id": "e8e3d8d9-0f08-483c-808e-ec8f65edd6b7",
+      "result_id": "1fbe12d4-7e92-4373-89fa-fc162dc9bbb5"
+    },
+    {
+      "claim_id": "c35eb464-4ba8-4836-9d92-0aee7372cfbd",
+      "result_id": "1fbe12d4-7e92-4373-89fa-fc162dc9bbb5"
+    },
+    {
+      "claim_id": "efd2cda8-f8b1-4a75-b946-d63dcc73db40",
+      "result_id": "1fbe12d4-7e92-4373-89fa-fc162dc9bbb5"
+    },
+    {
+      "claim_id": "381a07af-9177-4259-bbea-8dd98f96efc1",
+      "result_id": "66975c10-eaea-4812-b8e0-b867a1447ed4"
+    },
+    {
+      "claim_id": "3853240d-d3d6-43b1-977b-385e83f83904",
+      "result_id": "66975c10-eaea-4812-b8e0-b867a1447ed4"
+    },
+    {
+      "claim_id": "e13c55d6-2601-4f9a-92c4-292b0da41924",
+      "result_id": "66975c10-eaea-4812-b8e0-b867a1447ed4"
+    },
+    {
+      "claim_id": "3bcf3b72-7635-44b3-aa8d-2044776c7043",
+      "result_id": "66975c10-eaea-4812-b8e0-b867a1447ed4"
+    },
+    {
+      "claim_id": "71597490-459f-436e-a34c-a9cc3694ca76",
+      "result_id": "66975c10-eaea-4812-b8e0-b867a1447ed4"
+    },
+    {
+      "claim_id": "d25b3631-c23d-4473-b243-0864d8dc5265",
+      "result_id": "66975c10-eaea-4812-b8e0-b867a1447ed4"
+    },
+    {
+      "claim_id": "b07d914a-b243-4d7d-a932-17549d1d1c47",
+      "result_id": "66975c10-eaea-4812-b8e0-b867a1447ed4"
+    },
+    {
+      "claim_id": "c8edbfae-ae42-4606-9c4e-c141883e92be",
+      "result_id": "66975c10-eaea-4812-b8e0-b867a1447ed4"
+    },
+    {
+      "claim_id": "529f2919-7232-4184-a34f-501a3347d945",
+      "result_id": "a2701fd4-9417-4612-a84b-14c09533bb1f"
+    },
+    {
+      "claim_id": "e85999c5-4ca9-48a7-bf7e-3e6596b681e7",
+      "result_id": "a2701fd4-9417-4612-a84b-14c09533bb1f"
+    },
+    {
+      "claim_id": "a117c424-860a-4d1d-aeaf-7664549ae280",
+      "result_id": "a2701fd4-9417-4612-a84b-14c09533bb1f"
+    },
+    {
+      "claim_id": "f4d9e842-7348-4f20-a955-9d4ad4eda2de",
+      "result_id": "a2701fd4-9417-4612-a84b-14c09533bb1f"
+    },
+    {
+      "claim_id": "4a34e715-e73f-4d78-b79b-a2ca6d766061",
+      "result_id": "a2701fd4-9417-4612-a84b-14c09533bb1f"
+    },
+    {
+      "claim_id": "56258275-da64-460b-a123-4e7974970e56",
+      "result_id": "a2701fd4-9417-4612-a84b-14c09533bb1f"
+    },
+    {
+      "claim_id": "67899964-9868-44dc-80ae-d2b650c40a1a",
+      "result_id": "a2701fd4-9417-4612-a84b-14c09533bb1f"
+    },
+    {
+      "claim_id": "cae32e84-f2ee-49a1-9a42-798fb1cad50c",
+      "result_id": "a2701fd4-9417-4612-a84b-14c09533bb1f"
+    },
+    {
+      "claim_id": "9078a634-b61f-4014-8082-53ea4a8cd8de",
+      "result_id": "a2701fd4-9417-4612-a84b-14c09533bb1f"
+    },
+    {
+      "claim_id": "8908b73b-8c6c-4ab6-8a1e-b585bc8a2205",
+      "result_id": "00948e26-410f-4198-8bd1-be5684a0834e"
+    },
+    {
+      "claim_id": "3ef0f1dc-3d18-4708-b6d8-503199196ffd",
+      "result_id": "00948e26-410f-4198-8bd1-be5684a0834e"
+    },
+    {
+      "claim_id": "c10eb7fa-8a53-4883-b378-5dd8733a3e1e",
+      "result_id": "00948e26-410f-4198-8bd1-be5684a0834e"
+    },
+    {
+      "claim_id": "5d266104-0bef-4f24-bc53-9657a625a591",
+      "result_id": "00948e26-410f-4198-8bd1-be5684a0834e"
+    },
+    {
+      "claim_id": "cff2a14a-6e27-460d-9c9c-79236bc82a71",
+      "result_id": "00948e26-410f-4198-8bd1-be5684a0834e"
+    },
+    {
+      "claim_id": "18efb3a2-2293-492a-88e2-33472c0a9289",
+      "result_id": "00948e26-410f-4198-8bd1-be5684a0834e"
+    },
+    {
+      "claim_id": "64c63c0b-d273-4bb0-8583-f7a2911eab99",
+      "result_id": "00948e26-410f-4198-8bd1-be5684a0834e"
+    },
+    {
+      "claim_id": "8ba17182-dca2-403d-8afd-768b314d50f0",
+      "result_id": "1517395d-8f28-405d-b3d1-2e1c781a61f5"
+    },
+    {
+      "claim_id": "b5ef73b0-66d6-45f3-a933-71f4400fb0c7",
+      "result_id": "1517395d-8f28-405d-b3d1-2e1c781a61f5"
+    },
+    {
+      "claim_id": "e1d71e75-bc90-4173-bb65-cb5cf6bb38cf",
+      "result_id": "1517395d-8f28-405d-b3d1-2e1c781a61f5"
+    },
+    {
+      "claim_id": "a9522351-42d6-4ef1-a027-742d76ddfe5f",
+      "result_id": "1517395d-8f28-405d-b3d1-2e1c781a61f5"
+    },
+    {
+      "claim_id": "9af2b339-4c90-4d69-8c2a-259ceba63479",
+      "result_id": "1517395d-8f28-405d-b3d1-2e1c781a61f5"
+    },
+    {
+      "claim_id": "b6d65953-6555-4313-a122-50a32061cd8f",
+      "result_id": "b293c99a-9d38-449a-9d15-4c8e2813f5ae"
+    },
+    {
+      "claim_id": "0365f79b-e83e-45b7-b8aa-58915bd6ba5b",
+      "result_id": "b293c99a-9d38-449a-9d15-4c8e2813f5ae"
+    },
+    {
+      "claim_id": "8c9e3789-c1f5-41c8-868e-18e7524a6982",
+      "result_id": "6c0b6317-14c5-4d43-a09d-94fe7365b8ed"
+    },
+    {
+      "claim_id": "a46e45df-e6af-4df1-8c51-96df6ed4cb10",
+      "result_id": "6c0b6317-14c5-4d43-a09d-94fe7365b8ed"
+    },
+    {
+      "claim_id": "6bcf4c91-56bb-4f31-8581-110d604d4188",
+      "result_id": "5d06b435-99db-4920-9879-fe6959368b23"
+    },
+    {
+      "claim_id": "bd2df816-f361-4ce8-bccc-c7ecdc24099e",
+      "result_id": "5d06b435-99db-4920-9879-fe6959368b23"
+    },
+    {
+      "claim_id": "a5396b23-42bf-4ee7-8a97-f16766abdb4e",
+      "result_id": "e7f8aa25-58df-4834-a0e6-45bb7a2f34cd"
+    },
+    {
+      "claim_id": "c8ddd893-96b6-4415-a217-91986ea35695",
+      "result_id": "e7f8aa25-58df-4834-a0e6-45bb7a2f34cd"
+    },
+    {
+      "claim_id": "8d929d85-efbd-4d0d-882a-153b9351e503",
+      "result_id": "e7f8aa25-58df-4834-a0e6-45bb7a2f34cd"
+    },
+    {
+      "claim_id": "8d61c399-a1db-4416-8cff-9f9ddc69a70a",
+      "result_id": "e7f8aa25-58df-4834-a0e6-45bb7a2f34cd"
+    },
+    {
+      "claim_id": "158a6204-394d-4be3-9255-b0a3c0884c77",
+      "result_id": "e7f8aa25-58df-4834-a0e6-45bb7a2f34cd"
+    },
+    {
+      "claim_id": "433b7e5d-f973-4345-85e7-4aa351c52b57",
+      "result_id": "e7f8aa25-58df-4834-a0e6-45bb7a2f34cd"
+    },
+    {
+      "claim_id": "a221dbc1-dbb0-4958-9dfc-01815b5eb6da",
+      "result_id": "e7f8aa25-58df-4834-a0e6-45bb7a2f34cd"
+    },
+    {
+      "claim_id": "172470f6-31fd-4e80-86ea-8c87226a126d",
+      "result_id": "e7f8aa25-58df-4834-a0e6-45bb7a2f34cd"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C89"
+    ],
+    "result": "The study recruited 30 participants who performed a near-threshold spatial detection task while MEG and respiration data were simultaneously recorded. The experimental design used an adaptive QUEST staircase to maintain performance near 60% hit rate, with 720 trials per run across 6 runs, including catch trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 and C89 provide comprehensive methodological details that are internally consistent and appropriately documented. The sample size (n=30), inclusion criteria, MEG acquisition parameters (275-channel system, 600 Hz sampling), respiration recording method (thoracic belt), task parameters (Gabor patches, 50 ms presentation, adaptive contrast), and trial structure (720 trials/run, 1/3 catch trials) are all clearly specified with measured outcomes (e.g., average hit rate 0.54\u00b10.05, breathing frequency 0.26\u00b10.08 Hz).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C48",
+      "C56"
+    ],
+    "result": "Respiration phase significantly modulates perceptual sensitivity in a near-threshold detection task. Adding respiration phase information to a model with stimulus contrast significantly enhanced mutual information (z=4.78, p<0.001), and the individual psychometric function threshold varied systematically across the respiratory cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C48, and C56 demonstrate a clear behavioral effect of respiration on perception using multiple complementary analyses. The mutual information analysis (C33) provides strong statistical evidence, while the psychometric function refitting approach (C34-C36, C56) characterizes the temporal dynamics of this modulation. The observed hit rate (0.54\u00b10.05) was close to the QUEST target (0.60), validating the experimental manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Perceptual thresholds showed systematic variations across the respiratory cycle, with significant lowering during the inspiratory phase (respiration angles between -128\u00b0 and -76\u00b0). The empirical regression weight from the LMEM was greater than all values from the randomization distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide converging evidence for respiration-locked threshold modulation using a sophisticated moving-window psychometric function refitting approach. The permutation testing (C35) and cluster-corrected analysis (C36) provide appropriate statistical controls. The specific phase window identified (-128\u00b0 to -76\u00b0) is clearly defined and statistically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C50"
+    ],
+    "result": "Prestimulus alpha power (8-13 Hz) over parieto-occipital sensors was significantly suppressed prior to detected versus undetected targets, persisting up to 1 second before target onset. This alpha suppression was localized to occipital and posterior parietal sensors and underscores the behavioral benefits of heightened excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C50 replicate well-established findings linking prestimulus alpha suppression to detection performance. The time-frequency analysis with cluster correction (C37), temporal extent characterization (C38), and spatial localization (C39) are methodologically sound. The post-stimulus alpha desynchronization (C40) is appropriately cited as confirmatory of prior work. These results establish alpha as a valid proxy for excitability in this paradigm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C49"
+    ],
+    "result": "Respiration phase significantly modulates posterior alpha power (8-13 Hz). Modulation index values were significant for a wide frequency range including the alpha band, tested against the 95th percentile of a null distribution with cluster correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C49 demonstrate respiration-alpha coupling using phase-amplitude coupling analysis with appropriate statistical controls (200 random phase shifts, cluster correction at \u03b1=0.05). This establishes a critical link in the proposed mechanism connecting respiration to excitability. The modulation index approach is well-validated for assessing cross-frequency coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C57"
+    ],
+    "result": "Both respiration phase and parieto-occipital alpha power significantly explained individual variation in perceptual sensitivity (PsychF threshold). The LMEM showed significant effects for alpha power (t(1794)=6.02, p<0.001) and a significant interaction between alpha power and the cosine of respiration (t(1794)=4.07, p<0.001). Adding alpha power significantly improved model fit (\u03c7\u00b2(3)=49.45, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C57 provide strong statistical evidence that both respiration and alpha power independently and interactively predict perceptual thresholds. The LMEM approach appropriately accounts for within-subject variability with random slopes. The likelihood ratio test (C44) demonstrates that alpha power explains substantial additional variance beyond respiration alone. The interaction term (C43) supports the proposed mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C58"
+    ],
+    "result": "Alpha power and PsychF threshold were significantly correlated during the inspiratory phase (between -90\u00b0 and -60\u00b0). Critically, the effect of alpha power on behavior peaked at a respiration phase lag of approximately -30\u00b0 (95% CI: [-33.17, 29.25] degrees), indicating that respiration-locked excitability changes temporally precede performance changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C51, and C58 provide the key temporal evidence supporting the proposed causal chain from respiration to excitability to behavior. The instantaneous correlation analysis (C45) establishes the phase window of coupling, while the lag analysis with bootstrapping (C46-C47) demonstrates temporal precedence. The confidence interval for the peak lag (C47) is appropriately narrow and excludes zero, supporting the temporal ordering. However, the authors correctly note this does not establish strict causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Beta oscillations (14-30 Hz) also contribute to explaining perceptual threshold variation. A third LMEM showed significant effects for both alpha (t(1790)=3.27, p<0.001) and beta power (t(1790)=4.83, p<0.001), with beta showing significant interactions with respiration and alpha power. Adding beta power significantly improved model fit (\u03c7\u00b2(4)=60.43, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 demonstrate that beta oscillations contribute additional explanatory power beyond alpha. The statistical evidence is strong, with significant main effects and interactions. The likelihood ratio test (C86) shows beta adds substantial predictive value. However, the beta effects appear at a slightly later phase than alpha (C87), and the topographic distribution overlaps with but is distinct from alpha (referenced in discussion). This suggests beta may play a complementary but secondary role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "No significant correlation between oscillatory power and respiration time courses were found for delta, theta, and gamma bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 reports appropriate negative controls demonstrating specificity of the respiration-oscillation coupling to alpha and beta bands. This strengthens the interpretation that the effects are not due to general arousal or non-specific coupling across all frequencies. The control analyses are consistent with the time-frequency results shown in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55",
+      "C82"
+    ],
+    "result": "The authors propose that respiration actively aligns sampling of sensory information with transient cycles of heightened excitability to facilitate performance, representing an extension of hierarchically organized oscillations to bodily rhythms and consistent with interoceptive inference accounts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C54, C55, and C82 present the overarching theoretical interpretation of the empirical findings. While these are inferential claims, they are well-supported by the convergent evidence from the behavioral (C33-C36), neural (C37-C41), and integrative analyses (C42-C47). The temporal precedence of alpha modulation (C46-C47) is particularly important for this interpretation. However, the authors appropriately acknowledge limitations regarding strict causal inference and the need for future work to test active modulation directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The introduction establishes the background on respiration physiology, respiration-brain coupling, and the relationship between alpha oscillations and excitability, drawing on extensive prior literature from animal and human studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 provide appropriate background context supported by relevant citations. These claims accurately represent prior work on respiratory control (C1-C5), neural oscillations as brain state markers (C6), respiration-brain coupling in animals and humans (C7-C12), excitability-alpha relationships (C13-C16), and respiration-locked behavioral and neural fluctuations (C17-C19). The citations appear appropriate and the characterizations are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The discussion reviews extensive evidence for the relationship between alpha oscillations, neural excitability, and behavior in the visual domain, including the neural mechanisms (inhibitory gating), cross-modal evidence (single-unit recordings, LFPs, BOLD), and behavioral consequences (reaction times, confidence, detection rates).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C59-C71 provide a comprehensive review of the alpha-excitability literature with appropriate citations. The characterization of alpha generators (C60-C61), inhibitory mechanisms (C62), inverse relationship with neural activity across multiple measurement modalities (C63-C66), and behavioral consequences (C67-C69) are all well-supported by the cited literature. The discussion of beta oscillations (C71) appropriately acknowledges recent work on top-down modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The discussion reviews evidence for respiration-brain coupling mechanisms, including animal intracranial recordings showing respiration modulates spike rates, computational models of cross-frequency coupling, proposed sources (olfactory bulb and brainstem), evidence from bulbectomy and oral breathing studies, and the 'master clock' conceptualization of respiration coordinating multiple sensorimotor channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 provide appropriate context for interpreting the current findings within the broader literature on respiration-brain coupling. The citations to animal work (C72, C76-C77), computational modeling (C73), proposed mechanisms (C74-C75), and theoretical frameworks (C78-C79) are relevant and accurately characterized. The comparison to cardiac coupling (C80) and attentional selection (C81) provides useful conceptual parallels for the active sensing interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Post-stimulus alpha desynchronization differences between detected and undetected targets are driven by stronger evoked responses for detected stimuli in near-threshold perception tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 appropriately characterizes prior work on post-stimulus alpha effects with relevant citations. This contextualizes the observed post-stimulus desynchronization (C40) within the established literature and distinguishes it from the prestimulus effects that are the primary focus of the study.",
+    "result_type": "MINOR"
+  }
+]

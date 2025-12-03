@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Long-read sequencing of 15 individuals identified 107,866 SVs, of which 83.4% were not found in short-read datasets (1KGP/HGDP). The long-read approach discovered 2.3-3.5\u00d7 more insertions than short-read methods, reflecting technical limitations of short-read sequencing for insertion detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence that long-read sequencing discovers substantially more SVs than short-read approaches, particularly insertions. The specific counts, percentages, and fold-changes are clearly stated with appropriate citations to comparison datasets and technical explanations for the observed differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C91",
+      "C92"
+    ],
+    "result": "Graph-based genotyping with Paragraph was applied to 2,504 1KGP samples, achieving precision/recall of 0.72/0.70 overall and 0.86/0.79 excluding repeats. Quality control filtering removed 15,580 SVs, retaining 92,286 variants for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C91-C92 describe the genotyping methodology and quality control with specific performance metrics cited from benchmarking studies. The filtering criteria and resulting variant counts are explicitly stated, providing a clear methodological foundation for downstream analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "27.3% of alternative SV alleles were absent from all 1KGP samples, while 1.2% were fixed, likely reflecting ultra-rare variation, imperfect recall, assembly errors, and rare reference genome variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 provide specific percentages with reasonable interpretations for both absent and fixed alleles. The explanations invoke known technical limitations (imperfect recall) and biological phenomena (rare variation), making the observations credible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Polymorphic SVs show negative correlation between length and minor allele frequency (\u03c4 = -0.140, p < 1\u00d710\u207b\u00b9\u2070), and deletions segregate at lower frequencies than insertions (\u03b2 = -0.555, p < 1\u00d710\u207b\u00b9\u2070), consistent with purifying selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 provide specific statistical test results with highly significant p-values supporting the inference of selection against longer SVs and deletions. The interpretation is consistent with evolutionary theory regarding deleterious variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "36-41% of SVs show strong LD (r\u00b2 > 0.8) with known SNPs/indels, with lowest LD in African populations. Nearly half (47.2%) of SVs intersect inaccessible genomic regions, and 4.8% overlap ENCODE-identified problematic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 quantify LD patterns and genomic accessibility with specific percentages and appropriate citations. The lower LD in African populations is consistent with known haplotype structure, and the high proportion in difficult regions explains technical challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "1,121 SV-gene pairs showed significant expression associations at 10% FDR, with 62% within 100 kb of TSS. Top associations include HLA genes and ERAP2. SVs intersecting enhancers show enrichment for expression associations, while those in quiescent regions show depletion. Eight of nine exon-intersecting deletions show dosage effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 describe eQTL mapping results with specific counts, percentages, and enrichment patterns. The findings are internally consistent (proximity to TSS, enhancer enrichment, dosage effects) and cite appropriate comparisons to previous studies. The mechanistic interpretations are reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Fine-mapping identified 345 loci (30.8%) where SVs fall within 90% credible causal sets, including 15 loci with \u22645 variants. Notable examples include a 37 kb deletion affecting MIF-AS1 (cancer-associated) and a 3 kb insertion affecting CSF2RB (pulmonary disease-associated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 provide specific fine-mapping results with appropriate caveats about credible set sizes. The highlighted examples include relevant disease associations from cited literature, though the authors appropriately note that SVs may still be underestimated as causal due to higher genotyping error rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Using an admixture-aware approach with 8 ancestry components, 220 SVs showed extreme frequency differentiation (99.9th percentile). Of these, 139 overlap genes (13 with exons), 7 are eQTLs, and 88 are among the top 10 most differentiated variants locally, suggesting potential causal targets of selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 describe a rigorous selection scan with appropriate methodology (Ohana), clear thresholds (99.9th percentile), and specific counts. The integration with eQTL data and local ranking provides multiple lines of evidence for adaptive significance. The approach addresses known limitations of traditional FST-based methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Known and novel adaptive loci were identified, including CCR5-\u039432 (14th most differentiated, 10.9% MAF in Europeans), a TMEM131 insertion (63% in Finns, 24% elsewhere), and a CLEC16A insertion (52.4% in PEL, rare elsewhere) associated with autoimmune disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 describe specific adaptive loci with detailed allele frequencies and functional context. The inclusion of CCR5-\u039432 (a known adaptive variant) validates the method, while novel findings are supported by functional annotations and independent replication (CLEC16A in Ebert et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The strongest selection signal is a 33 bp insertion in IGHG4 (immunoglobulin heavy chain) reaching 88% frequency in CDX and 65% in KHV but rare elsewhere. The second strongest signal is a nearby 135 bp deletion in IGHE (70% CDX, 54% KHV), located 33 kb away but showing low LD (r\u00b2 = 0.17) with the insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C54 provide detailed characterization of the top selection signals with specific frequencies, genomic context, and LD measurements. The low LD despite proximity is appropriately interpreted as evidence of recombination. The repetitive nature of the insertion sequence is documented, and the size revision (34\u219233 bp) is supported by realignment evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Multiple lines of evidence support Neanderthal introgression at the IGH locus: 26 highly differentiated SVs (12%) show LD with Sprime-inferred introgressed haplotypes; a 48 bp diagnostic sequence for the IGHG4 insertion is present in three Neanderthal genomes but absent from Denisovan; and 83-96% of highly differentiated SNPs match Neanderthal alleles (vs. 42% Denisovan).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C67 provide converging evidence from multiple independent analyses (LD with Sprime calls, direct sequence matching in ancient genomes, allele sharing patterns) all pointing to Neanderthal origin. The near-perfect matching with Vindija/Chagyrskaya Neanderthals (95-96%) versus modest Denisovan matching (42%) strongly supports the conclusion. The 80.7% masking of the IGH locus in prior studies explains why this signal was missed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The IGH haplotype shows four discrete LD blocks consistent with recombination. The tag SNP rs150526114 reaches 91% in CDX, 73% in KHV, 59% in CHS, but is absent from American populations (HGDP), supporting recent, geographically restricted selection post-dating the Americas split (~26 kya).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe haplotype structure and geographic distribution with specific frequencies. The absence from American populations provides a temporal constraint on selection timing, as these populations split from East Asians ~26 kya. The four LD blocks are consistent with recombination after the haplotype rose in frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C75",
+      "C84"
+    ],
+    "result": "Forward simulations with ABC estimate selection began 1,700-8,400 years ago with coefficient s = 0.02-0.12 (95% CI), comparable to other strong selection examples (LCT: 0.01-0.15, DARC: 0.08, HBB: 0.1). Selection timing and strength show negative correlation, but even lower bounds represent strong selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71, C75, C84 describe simulation-based parameter estimates with appropriate uncertainty intervals. However, the authors acknowledge substantial uncertainty in the demographic model (no migration, simplified population structure) and note the strong correlation between timing and strength parameters. The comparison to other selection examples is appropriate, but the wide credible intervals and model simplifications limit confidence in precise parameter values. The qualitative conclusion of strong, recent selection is better supported than specific parameter estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The IGH locus is highly polymorphic and undergoes V(D)J recombination to generate antibody diversity. Prior studies noted frequency outliers and Eurasian-wide introgressed haplotypes at IGH, but the southeast Asian-specific signal was missed. The delayed selection onset (relative to introgression at 47-65 kya) suggests introgressed variation provided an adaptive reservoir during environmental change, consistent with other examples of delayed adaptive introgression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 synthesize prior knowledge with current findings, appropriately citing previous work (1KGP, Browning et al. 2018) and explaining why the specific signal was missed (80.7% of locus masked). The interpretation of delayed selection is supported by citations to recent work on time lags (Yair et al., 2021) and pathogen-driven selection (COVID-19 associations, ancient viral epidemics). The speculation about environmental/pathogen drivers is appropriately hedged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "SVs impact more sequence than SNPs and may severely disrupt genes/regulatory elements. Short-read approaches achieve only 10-50% sensitivity, while long-read sequencing achieves high sensitivity by spanning SVs. Most human adaptation research has focused on SNPs/indels, overlooking SVs. Immune genes are common targets of local adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90, C93-C95 provide well-cited background establishing the importance and technical challenges of SV research. The statements about short-read limitations (10-50% sensitivity) and long-read advantages are supported by appropriate citations. The emphasis on immune genes as adaptation targets is well-established in the literature.",
+    "result_type": "MINOR"
+  }
+]

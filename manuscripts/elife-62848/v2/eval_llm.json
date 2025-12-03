@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C87"
+    ],
+    "result": "Ligand sensing alone can modulate bacterial flagellar motor speed through stator unit recruitment. Exposure to non-metabolizable 2Dg causes temporary increases in motor speed (4 Hz to 5.7 Hz) and stator unit fluorescence intensity (14% increase at 5 min), which return to baseline after ~5-10 minutes. This effect is independent of metabolism (no membrane potential change) and requires the Trg sensor (eliminated in \u0394trg mutants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38, C71-C74, and C87 provide converging evidence from tethered cell experiments, fluorescence measurements, membrane potential assays, and genetic knockouts. The temporal correlation between motor speed increases and stator intensity changes (C36, C40), absence of PMF changes (C41, C73), and loss of response in \u0394trg mutants (C74) strongly support the conclusion that sensing alone drives transient stator recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C34",
+      "C37",
+      "C42",
+      "C44",
+      "C45",
+      "C75",
+      "C76",
+      "C88"
+    ],
+    "result": "For metabolizable glucose, the combined effects of sensing and metabolism lead to greater and more sustained motor speed increases compared to 2Dg alone. Glucose exposure causes motor speed to increase from ~6 Hz to ~9 Hz with 20% increase in stator intensity at 10 min and 50% increase in run speed at 16.5 min, sustained over 15+ minutes due to increased PMF from metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C37, C42, C45, and C75 demonstrate that glucose produces larger magnitude and longer duration speed increases than 2Dg. The membrane potential measurements (C42, C44) confirm increased PMF with glucose but not 2Dg, supporting the interpretation that glucose effects combine sensing-mediated and metabolism-mediated stator recruitment. The temporal dynamics and quantitative differences are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C74"
+    ],
+    "result": "The Trg chemoreceptor is required for sensing-mediated motor speed modulation. \u0394trg mutants show no motor speed changes in response to 2Dg but retain ~30% speed increase with glucose (metabolism only), confirming that the Trg sensor specifically mediates the sensing pathway to motor speed control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 and C74 provide clear genetic evidence that Trg is necessary for 2Dg-induced speed changes but not for glucose metabolism effects. The \u0394trg mutant experiments effectively separate sensing from metabolic contributions, with membrane potential data (C55) confirming that glucose still increases PMF in the absence of Trg. This genetic dissection strongly supports the role of Trg in sensing-mediated speed modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C59",
+      "C78"
+    ],
+    "result": "The PTS pathway contributes to metabolism-mediated motor speed increases. \u0394 ptsI mutants show only marginal motor speed increases with glucose and no significant changes with 2Dg, with correspondingly reduced membrane potential compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C59, and C78 demonstrate that disrupting the PTS pathway (\u0394ptsI) eliminates most of the glucose-induced speed increase and reduces basal membrane potential. The correlation between reduced membrane potential and reduced motor speed (C59) supports the interpretation that PTS-mediated metabolism contributes to motor speed through PMF. However, the weak response could also reflect impaired chemotaxis pathway function as noted by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C83",
+      "C84",
+      "C94"
+    ],
+    "result": "Motor speed modulation by ligand sensing is independent of the CheY-mediated chemotaxis pathway. \u0394cheY mutants show motor speed responses to both glucose and 2Dg identical to wild-type, indicating that a separate signaling pathway links chemoreceptors to motor speed control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, C83, C84, and C94 provide strong genetic evidence that CheY is not required for sensing-mediated motor speed changes. The \u0394cheY mutant experiments (C60, C83) show preserved speed modulation despite locked CCW bias, demonstrating independence from the canonical chemotaxis pathway. This is a critical finding establishing a novel signaling pathway, though the molecular mechanism remains unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C56"
+    ],
+    "result": "Sensing-mediated stator recruitment enhances population-level swimming speed. Run speeds increase 26% with 2Dg (transient, peaking at 6.5 min) and 50% with glucose (sustained through 16.5 min), with no change in motility buffer controls. These population-level effects mirror single-motor observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 demonstrate that single-motor speed changes translate to population swimming behavior. The temporal dynamics match tethered cell data (transient for 2Dg, sustained for glucose), and controls show no change (C48). The \u0394trg mutant data (C56) confirms the sensing requirement at the population level. The consistency between single-motor and population measurements strengthens the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C80"
+    ],
+    "result": "Variance analysis of motor rotation provides independent confirmation of stator unit recruitment. Rotation speed variance decreases with 2Dg and decreases further with glucose, consistent with increased numbers of stator units producing smoother motor rotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 apply an established method (Samuel and Berg 1995, 1996) to independently assess stator numbers. The variance measurements show the expected pattern (lowest for glucose, intermediate for 2Dg, highest for MB) and temporal dynamics matching fluorescence and speed data. This orthogonal approach strengthens confidence in the stator recruitment interpretation, though the method is indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C73"
+    ],
+    "result": "Membrane potential measurements demonstrate that 2Dg-induced motor speed increases occur without changes in PMF. Membrane potential remains unchanged for 2Dg (similar to buffer control) while glucose significantly increases membrane potential, confirming that sensing effects are PMF-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 and C73 provide critical evidence distinguishing sensing from metabolic effects using DiOC2(3) fluorescence ratiometric measurements. The lack of membrane potential change with 2Dg (C41) combined with motor speed increases establishes PMF-independence. CCCP controls validate the measurement approach. This is essential evidence for the main conclusion, though the method measures population averages rather than single cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The observed motor speed increases could enhance chemotactic efficiency by 10-20% based on the RTBL model. According to this model, drift velocity depends on swimming speed, and even 10% speed increases could improve chemotactic velocity by 10-20% in small gradients where drift velocity scales with speed squared.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C93 apply the RTBL model (Rivero et al. 1989) to estimate functional consequences. While the model is established and the calculations appear correct (C91-C93), this remains theoretical extrapolation. The authors do not directly measure chemotactic drift velocity or efficiency in gradients. The prediction is plausible but requires experimental validation to confirm that speed modulation actually enhances chemotaxis under physiologically relevant conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript provides comprehensive background on E. coli chemotaxis, flagellar motor structure and function, stator unit dynamics, and glucose sensing pathways. This establishes the context for the novel finding that chemosensory systems can modulate motor speed, which contradicts the prevailing view (C2) that sensing only affects motor bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29 and C62-C69 accurately summarize established knowledge in the field, supported by appropriate citations to foundational and recent literature. Claim C2 correctly identifies the prevailing paradigm being challenged, and C24/C69 accurately state the knowledge gap. The background claims are well-supported by citations and represent consensus understanding, providing appropriate context for evaluating the novelty of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The YcgR/c-di-GMP system is known to inhibit motor speed but has not been shown to enhance speeds beyond baseline. The current results suggest a sophisticated signaling network with multiple strategies for motor regulation, though the molecular mechanism linking sensors to stator recruitment remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 appropriately discuss the YcgR system as a known speed modulation mechanism while noting it only inhibits (not enhances) speed (C96). Claim C97 offers a reasonable interpretation that multiple regulatory mechanisms exist, though this is somewhat speculative. The discussion appropriately acknowledges that the molecular pathway remains unidentified, which is an important limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The manuscript describes detailed experimental methods including bacterial strain construction, tethered cell assays, fluorescence measurements, swimming speed analysis, and membrane potential measurements. Methods are validated by comparison to prior work (C103) and include appropriate controls (C102, C106).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 describe methodological details that appear sound and well-controlled. Validation against published values (C103) supports measurement accuracy. The use of silicone oil (C101) and dye flow experiments (C102) demonstrate attention to technical details. Membrane potential methods (C104-C106) follow established protocols. However, some technical details are incomplete (e.g., sample sizes vary, statistical methods not fully specified for all comparisons).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "\u0394cheY mutants are locked in CCW rotation (run mode) while wild-type cells show transient CCW bias increases followed by adaptation, demonstrating normal chemotactic responses in wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C86 describe expected behaviors of \u0394cheY mutants and wild-type chemotactic responses. These are well-established phenotypes supported by decades of research. The observations confirm that the experimental system exhibits normal chemotaxis behavior, validating the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

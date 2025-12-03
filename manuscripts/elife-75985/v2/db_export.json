@@ -1,0 +1,1937 @@
+{
+  "submission": {
+    "id": "c16a8f14-8225-4246-8202-12cb483d2e86",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:03:17.010444Z",
+    "updated_at": "2025-12-03T13:03:17.010444Z"
+  },
+  "content": [
+    {
+      "id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "submission_id": "c16a8f14-8225-4246-8202-12cb483d2e86",
+      "content_type": "manuscript",
+      "content_text": "# Development and evaluation of a machine learning-based in-hospital COVID-19 disease outcome predictor (CODOP): A multicontinental retrospective study\n\n## Authors\n\n- Riku Kl\u00e9n<sup>1</sup>\n- Disha Purohit<sup>2</sup> ([ORCID: 0000-0002-1442-335X](https://orcid.org/0000-0002-1442-335X))\n- Ricardo G\u00f3mez-Huelgas<sup>3</sup>\n- Jos\u00e9 Manuel Casas-Rojo<sup>4</sup>\n- Juan Miguel Ant\u00f3n-Santos<sup>4</sup> ([ORCID: 0000-0003-3443-1100](https://orcid.org/0000-0003-3443-1100))\n- Jes\u00fas Mill\u00e1n N\u00fa\u00f1ez-Cort\u00e9s<sup>5</sup>\n- Carlos Lumbreras<sup>6</sup>\n- Jos\u00e9 Manuel Ramos-Rinc\u00f3n<sup>7</sup> ([ORCID: 0000-0002-6501-9867](https://orcid.org/0000-0002-6501-9867))\n- Noelia Garc\u00eda Barrio<sup>8</sup>\n- Miguel Pedrera-Jim\u00e9nez<sup>8</sup>\n- Antonio Lalueza Blanco<sup>6</sup>\n- Mar\u00eda Dolores Martin-Escalante<sup>9</sup>\n- Francisco Rivas-Ruiz<sup>10</sup>\n- Maria \u00c1ngeles Onieva-Garc\u00eda<sup>11</sup>\n- Pablo Young<sup>12</sup>\n- Juan Ignacio Ramirez<sup>12</sup>\n- Estela Edith Titto Omonte<sup>13</sup>\n- Rosmery Gross Artega<sup>14</sup>\n- Magdy Teresa Canales Beltr\u00e1n<sup>15</sup>\n- Pascual Ruben Valdez<sup>16</sup>\n- Florencia Pugliese<sup>16</sup>\n- Rosa Castagna<sup>16</sup>\n- Ivan A Huespe<sup>17</sup>\n- Bruno Boietti<sup>17</sup>\n- Javier A Pollan<sup>17</sup>\n- Nico Funke<sup>18</sup>\n- Benjamin Leiding<sup>19</sup>\n- David G\u00f3mez-Varela<sup>18</sup> ([ORCID: 0000-0003-2502-9419](https://orcid.org/0000-0003-2502-9419)) \u2020\n\n### Affiliations\n\n1. Turku PET Centre, University of Turku and Turku University Hospital Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))\n2. Max Planck Institute of Experimental Medicine G\u00f6ttingen Germany ([ROR:04a7f6w43](https://ror.org/04a7f6w43))\n3. Internal Medicine Department, Regional University Hospital of M\u00e1laga, Biomedical Research Institute of M\u00e1laga (IBIMA), University of M\u00e1laga (UMA) M\u00e1laga Spain ([ROR:036b2ww28](https://ror.org/036b2ww28))\n4. Internal Medicine Department, Infanta Cristina University Hospital Madrid Spain ([ROR:03nzegx43](https://ror.org/03nzegx43))\n5. Internal Medicine Department, Gregorio Mara\u00f1\u00f3n University Hospital Madrid Spain ([ROR:03nzegx43](https://ror.org/03nzegx43))\n6. Internal Medicine Department, 12 de Octubre University Hospital Madrid Spain ([ROR:03nzegx43](https://ror.org/03nzegx43))\n7. Internal Medicine Department, General University Hospital of Alicante, Alicante Institute for 22 Health and Biomedical Research (ISABIAL) Alicante Spain\n8. Data Science Unit, Research Institute Hospital 12 de Octubre Madrid Spain ([ROR:002x1sg85](https://ror.org/002x1sg85))\n9. Internal Medicine Department, Hospital Costa del Sol Marbella Spain ([ROR:0065mvt73](https://ror.org/0065mvt73))\n10. Hospital Costa del Sol. Research Unit Marbella Spain ([ROR:0065mvt73](https://ror.org/0065mvt73))\n11. Preventive Medicine Department, Hospital Costa del Sol Marbella Spain ([ROR:0065mvt73](https://ror.org/0065mvt73))\n12. Hospital Brit\u00e1nico of Buenos Aires Buenos Aires Argentina ([ROR:04djj4v98](https://ror.org/04djj4v98))\n13. Internal Medicine Service, Hospital Santa Cruz - Caja Petrolera de Salud Santa Cruz Bolivia\n14. Epidemiology Unit, Hospital of San Juan de Dios Santa Cruz Bolivia\n15. Instituto Hondureno of social security, Hospital Honduras Medical Centre Tegucigalpa Honduras\n16. Hospital Velez Sarsfield Buenos Aires Argentina\n17. Hospital Italiano de Buenos Aires Buenos Aires Argentina ([ROR:00bq4rw46](https://ror.org/00bq4rw46))\n18. Max Planck Institute for Experimental Medicine G\u00f6ttingen Germany ([ROR:04a7f6w43](https://ror.org/04a7f6w43))\n19. Institute for Software and Systems Engineering at TU Clausthal Clausthal Germany\n20. Systems Biology of Pain, Division of Pharmacology & Toxicology, Department of Pharmaceutical Sciences, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNew SARS-CoV-2 variants, breakthrough infections, waning immunity, and sub-optimal vaccination rates account for surges of hospitalizations and deaths. There is an urgent need for clinically valuable and generalizable triage tools assisting the allocation of hospital resources, particularly in resource-limited countries. We developed and validate CODOP, a machine learning-based tool for predicting the clinical outcome of hospitalized COVID-19 patients. CODOP was trained, tested and validated with six cohorts encompassing 29223 COVID-19 patients from more than 150 hospitals in Spain, the USA and Latin America during 2020\u201322. CODOP uses 12 clinical parameters commonly measured at hospital admission for reaching high discriminative ability up to 9 days before clinical resolution (AUROC: 0\u00b790\u20130\u00b796), it is well calibrated, and it enables an effective dynamic risk stratification during hospitalization. Furthermore, CODOP maintains its predictive ability independently of the virus variant and the vaccination status. To reckon with the fluctuating pressure levels in hospitals during the pandemic, we offer two online CODOP calculators, suited for undertriage or overtriage scenarios, validated with a cohort of patients from 42 hospitals in three Latin American countries (78\u2013100% sensitivity and 89\u201397% specificity). The performance of CODOP in heterogeneous and geographically disperse patient cohorts and the easiness of use strongly suggest its clinical utility, particularly in resource-limited countries.\n\n## Introduction\n\nSince the first reported case in Wuhan at the end of 2019, COVID-19 has exerted extreme pressure on hospitals throughout the globe. The World Health Organization (WHO) estimated the pandemic as the direct cause of more than six million deaths. Despite the decreased number of hospitalizations and deaths among vaccinated people, warning signs forecast a scenario with health systems under severe strains leading to a bigger number of COVID-19 related deaths. The appearance of viral variants that are more contagious and that carry a higher risk of hospitalization, (Twohig et al., 2022) the waning of the immune protection, the significant amount of infections in vaccinated individuals (breakthrough infections) (Shen, 2022) together with their ability to transmit the virus, and the slow and unequal rollout of vaccines worldwide, support recent models showing that a vaccine-alone exit strategy will likely not be sufficient to contain further outbreaks and their consequences (Moore et al., 2021) At the time of submission of this study, many countries are reaching record-high numbers of infections, hospitalizations and deaths. This new pandemic wave depicts a worrisome prospect for resource-limited countries with similar or lower vaccination rates and with fewer clinical tools.\n\nPrediction models that estimate the risk of death in hospitalized COVID-19 patients could be valuable both to clinicians and patients by assisting medical staff to stratify treatment strategies and by planning for the appropriate allocation of limited resources. Thus, numerous models have been developed to assist in triage decisions of hospitalized COVID-19 patients. However, independent evaluations have pointed out their lack of generalizability and their limited clinical use (Wynants et al., 2020; El-Solh et al., 2020) due to causes belonging to the \u2018dataset shift\u2019 problem (Subbaswamy and Saria, 2020). Moreover, the heterogeneity of the host-pathogen interaction (what results in more than 60 disease subtypes of COVID-19 DeMerle et al., 2021) together with the fast evolution of the pandemic makes COVID-19 outcome prediction a challenging endeavour, especially if a profound evaluation using patient cohorts from geographically distinct regions is not performed. Finally, the effectiveness of these predictive models in patients with diverse immune protection (due to natural infection or vaccination) and patients infected by different Variants Of Concern (VOC) is unknown.\n\nTo address this need, we used the largest and the most geographically extended patient dataset to date for developing and extensively validating a simple yet clinically useful machine learning-based online model for doctors to predict mortality in COVID-19 patients at any time during hospitalization. To assist the real clinical needs during different pandemic scenarios we offer two predictor subtypes suited for undertriage and overtriage situations (https://gomezvarelalab.em.mpg.de/codop/).\n\nThe collective effort presented here unveils the power of machine learning for helping clinicians and patients in this pandemic. Based on its easiness to use and its generalizability among geographically very distinct patient cohorts, we aim for CODOP to become a useful triage tool, particularly in resource-limited countries.\n\n## Materials and methods\n\n### Patient cohorts\n\nThe training and two test cohorts (Test 1 and Test 2) of this study are based on the SEMI (Sociedad Espanola de Medicina Interna) COVID-19 Registry (Casas-Rojo et al., 2020) It is an ongoing multicentre nationwide cohort of consecutive patients hospitalized for COVID-19 across different Spanish regions (109 hospitals). Eligibility criteria were age \u226518 years, confirmed diagnosis of COVID-19, defined as a positive result on real-time reverse-transcription-polymerase-chain-reaction (RT-PCR) for the presence of SARS-CoV-2 in nasopharyngeal swab specimens or sputum samples, first hospital admission for COVID-19, and hospital discharge or in-hospital death (Casas-Rojo et al., 2020).\n\nAn additional patient cohort (named Test 4 and composed of 2508 patients hospitalized in the 12 de Octubre and the Costa del Sol Spanish hospitals), was used for testing the influence of vaccination and the Delta and Omicron virus variants on the discriminative ability of CODOP for predicting in-hospital death, the need for mechanical ventilation and admission to the Intensive Care Unit (ICU).\n\nPersonal data are processed in strict compliance with Spanish Law 14/2007, of July 3, on Biomedical Research, Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, repealing Directive95/46/EC (General Data Protection Regulation), and Spanish Organic Law 3/2018, of December 5, on the Protection of Personal Data and the Guarantee of Digital Rights. The SEMI-COVID-19 Registry and the COVID registries of 12 de Octubre and the Costa del Sol hospitals has been approved by the Provincial Research Ethics Committee of Malaga (Spain; C.I.F. number: 0\u20139150013-B).\n\nIn accordance with applicable regulations, the Spanish Agency of Medicines and Medical Products (AEMPS, for its initials in Spanish) has ruled that due to its nature, the study only required the approval of the Ethics Committee and not the Autonomous Community, as in other studies.\n\nThe test cohort from New York (External Test 3) is based on the study from Del Valle et al., 2020 consisting of 2 021 COVID-19 patients hospitalized in the Mount Sinai Health System in New York City.\n\nThe cohorts used in the online validation of the two online CODOP subtypes were provided by a group of Argentinian hospitals composed by the Argentinian COVID-19 Network (4690 patients from 37 Argentinian hospitals), Hospital V\u00e9lez Sarsfield (100 patients, Buenos Aires, Argentina), and Hospital Brit\u00e1nico de Buenos Aires (150 patients, Buenos Aires, Argentina), the Honduras Medical Centre (45 patients, Tegucigalpa, Honduras), the Hospital Santa Cruz Caja Petrolera de Salud (30 patients, Santa Cruz de la Sierra, Bolivia), and the Hospital San Juan de Dios (93 patients, Santa Cruz, Bolivia). The Argentinian COVID-19 Network was also used for predicting ICU admission and the need for mechanical ventilation.\n\nProcess of personal data are in strict compliance with National Laws of personal data and in accordance with the principles of the Declaration of Helsinki. The release of anonymized clinical data used in this study has been reviewed by the institutional ethical review boards for each institution participating in this study (approval numbers: 1575, 5562, and 5606 for the Argentinian datasets, 143-CB-HE for Honduras Medical Centre). For the Hospital Santa Cruz Caja Petrolera de Salud and Hospital San Juan de Dios, please contact corresponding authors for additional details regarding the IRB approval documents. Informed consent to publish their de-identified clinical data for academic purposes was obtained from all the patients. When it was not possible to obtain informed consent in writing due to biosafety concerns or if the patient had already been discharged, informed consent was requested verbally and noted on the medical record.\n\n### Predictors and outcomes\n\nWe included patient characteristics and blood test values (see Table 1) that were present in all training and test cohorts, measured at different times during hospitalization, as potential predictors. We limited our potential predictors to variables that had less than 40% missing values. The percentage of missing values is listed in Table 1. Most of the variables have less than 5% of missing values. Missing values were imputed in all datasets using the mean value of original variables in the training cohort. We trained a binary classification model in which the outcome is patient mortality: 1, if the patient was deceased, or 0, if discharged.\n\n**Table 1.**\n Features used during CODOP development with the training cohort, the values used for imputation, and the percentage of missing values.Numerical variables are reported by median (Md) and interquartile range (IQR).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable</th>\n      <th>Imputed value</th>\n      <th>Md (IQR)</th>\n      <th>Missing %</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age (years)</td>\n      <td>66\u00b767,911</td>\n      <td>68 (56\u201379)</td>\n      <td>0\u00b70</td>\n    </tr>\n    <tr>\n      <td>Sex (male, female)</td>\n      <td>none</td>\n      <td>6 775 females and 9 127 males</td>\n      <td>0\u00b70</td>\n    </tr>\n    <tr>\n      <td>Hemoglobin (g/dL)</td>\n      <td>13\u00b733,201</td>\n      <td>13 (12\u201315)</td>\n      <td>1\u00b77</td>\n    </tr>\n    <tr>\n      <td>Platelet Count (x 106 /L)</td>\n      <td>250 097\u00b77</td>\n      <td>223,000 (164 000-311 000)</td>\n      <td>1\u00b78</td>\n    </tr>\n    <tr>\n      <td>Eosinophils (x 106 /L)</td>\n      <td>63\u00b781,817</td>\n      <td>10 (0\u2013100)</td>\n      <td>3\u00b70</td>\n    </tr>\n    <tr>\n      <td>Lymphocytes (x 106 /L)</td>\n      <td>1 243\u00b7575</td>\n      <td>1,000 (700-1 420)</td>\n      <td>1\u00b79</td>\n    </tr>\n    <tr>\n      <td>Neutrophils (x 106 /L)</td>\n      <td>5 525\u00b7894</td>\n      <td>4 490 (3 090-6 800)</td>\n      <td>2\u00b72</td>\n    </tr>\n    <tr>\n      <td>Monocytes (x 106 /L)</td>\n      <td>535\u00b78,804</td>\n      <td>470 (300\u2013660)</td>\n      <td>2\u00b77</td>\n    </tr>\n    <tr>\n      <td>C-Reactive Protein (mg/L)</td>\n      <td>74\u00b748,964</td>\n      <td>41 (12\u2013108)</td>\n      <td>4\u00b76</td>\n    </tr>\n    <tr>\n      <td>Creatinine (mg/dL)</td>\n      <td>1\u00b7156,574</td>\n      <td>1 (1\u20131)</td>\n      <td>2\u00b70</td>\n    </tr>\n    <tr>\n      <td>Lactate Dehydrogenase (U/L)</td>\n      <td>363\u00b79,083</td>\n      <td>306 (234\u2013424)</td>\n      <td>13\u00b70</td>\n    </tr>\n    <tr>\n      <td>Aspartate aminotransferase (U/L)</td>\n      <td>49\u00b727,098</td>\n      <td>35 (24\u201353)</td>\n      <td>18\u00b74</td>\n    </tr>\n    <tr>\n      <td>Alanine aminotransferase (U/L)</td>\n      <td>48\u00b799,699</td>\n      <td>32 (20\u201354)</td>\n      <td>7\u00b74</td>\n    </tr>\n    <tr>\n      <td>Total bilirrubin (mg/dL)</td>\n      <td>0\u00b76429202</td>\n      <td>1 (0\u20131)</td>\n      <td>26\u00b75</td>\n    </tr>\n    <tr>\n      <td>Serum Sodium (mmol/L)</td>\n      <td>138\u00b74,268</td>\n      <td>138 (136\u2013141)</td>\n      <td>2\u00b76</td>\n    </tr>\n    <tr>\n      <td>Serum Potassium (mmol/L)</td>\n      <td>4\u00b7178,441</td>\n      <td>4 (4\u20134)</td>\n      <td>3\u00b77</td>\n    </tr>\n    <tr>\n      <td>Glucose (mg/dL)</td>\n      <td>124\u00b72,852</td>\n      <td>108 (92\u2013135)</td>\n      <td>5\u00b72</td>\n    </tr>\n    <tr>\n      <td>Prothrombin time (s)</td>\n      <td>19\u00b799,798</td>\n      <td>13 (12\u201314)</td>\n      <td>35\u00b78</td>\n    </tr>\n    <tr>\n      <td>Fibrinogen (mg/dL)</td>\n      <td>608\u00b70043</td>\n      <td>601 (497\u2013713)</td>\n      <td>37\u00b70</td>\n    </tr>\n    <tr>\n      <td>Dimer (ng/mL)</td>\n      <td>2 122\u00b7158</td>\n      <td>672 (370\u20131 320)</td>\n      <td>21\u00b77</td>\n    </tr>\n  </tbody>\n</table>\n\nFor each cohort, the subjects were divided into two groups based on their survival status. The normality of each numerical variable in the groups was tested with the Shapiro-Wilk normality test. None of the variables was normally distributed. For each variable, statistical difference was tested between the two groups with the Wilcoxon rank-sum test for numerical variables and with the chi-squared test for categorical variables. The obtained p-values were adjusted for multiple testing by Benjamini-Hochberg Procedure.\n\nModels for both the need of mechanical ventilation and admission to the ICU were constructed in a similar fashion.\n\n### CODOP development\n\nCODOP was built using modified stable iterative variable selection (SIVS) (Mahmoudian et al., 2021) and linear regression with least absolute shrinkage and selection operator (lasso) regularisation (Friedman et al., 2010). In model building only the training cohort was used and models were built using 10-fold cross-validation. In the feature selection stage of SIVS, 100 models were built and for each model selected variables were recorded. For reducing the number of features to as few as possible (therefore, increasing the easiness of use of CODOP), we tuned the weighting function in SIVS (called variable importance scoring) so that only features occurring in all of the 100 models were selected for the final model building stage. This method has shown to be very efficient, especially when the ratio of positive and negative outcomes is imbalanced (Kl\u00e9n et al., 2019). Lasso models were built in R Development Core Team, 2010 (version 3.6.0) package glmnet (Friedman et al., 2010) (version 4.1\u20131). All predictions were done blinded to the final clinical outcome. For converting numeric prediction into binary prediction, Youden\u2019s J statistic was used (Youden, 2006). For building the two online CODOP subtypes, we used alternative thresholds, which were selected to be the largest threshold value in the training cohort with a sensitivity of 95% for CODOP-Ovt and specificity of 95% for CODOP-Unt. Calibration plots were created with R package caret (Kuhn, 2020) (version 6.0\u201386). Survival analysis was performed using univariable Cox proportional hazards regression model (Cox, 1972). Survival analysis and Kaplan-Meyer plots were produced with R packages survival (Therneau and Lumley, 2020) (R package version 3.2\u201311) and survminer (Alboukadel et al., 2018) (R package version 0.4.9). For horizon analyses, the data were considered separately for survival time of one to nine days.\n\nThe final model can be found in the Kl\u00e9n etal_Supplementary file 1 and it is freely accessible in the following Github addresses: https://github.com/TUC-Circular-Economy-Department/COvid-19-Disease-Outcome-Predictor#uir https://github.com/TUC-Circular-Economy-Department/COvid-19-Disease-Outcome-Predictor#documentation.\n\n### Benchmarking\n\nTo evaluate the performance of CODOP, we used three benchmark methods: COPE (van Klaveren et al., 2021), model by Zhang et al., 2020, and a univariable model. COPE model is a linear regression model, which uses variables age, respiratory rate, C-reactive protein, lactic dehydrogenase, albumin, and urea. Zhang et al. model is a logistic regression model, which uses variables age, sex, neutrophil count, lymphocyte, platelet, C-reactive protein, and creatinine. From the different models described in Zhang et al., model DL for prediction of death (Table S2 of Zhang et al.) was used for benchmarking purposes. Univariable analysis was performed in the training dataset for all variables. The best univariable model was selected based on the average ranking of AUROC, accuracy, sensitivity and specificity. Different models were evaluated using four evaluation metrics: area under receiver operating curves (AUROC), accuracy, sensitivity, and specificity. The metrics were calculated using R packages pROC (Robin et al., 2011) (version 1.17.0.1) and caret (Kuhn, 2020 R package version 6.0\u201386).\n\n### Online evaluation\n\nForty-two different Latin American hospitals provided the values for the 12 features used by CODOP that were measured in patients at two different time points between March 7th 2020 and October 16th 2021: during the time of hospitalization, and the worst values measured during hospitalization. The former datasets were used for calculating AUROC, calibration curves, and confusion matrices. Both times points were used for performing horizon analysis and risk-stratification. All predictions were done blinded to the final clinical outcome.\n\n### Role of the funding source\n\nThe Max Planck Society support the payment of the article processing fees. No other funding supported the study. The funders of the had no role in study design, data collection, data analysis, interpretation of data, writing of the report, or in the decision to submit the paper for publication.\n\n## Results\n\n### CODOP development, performance, and benchmark\n\nWe developed CODOP following a multistep process (Figure 1) using a training dataset with measurements of 20 features (18 blood biochemical parameters plus Age and Sex; Table 1) routinely measured during admission on 15902 COVID-19 patients hospitalized in 109 Spanish healthcare centres during the first COVID-19 wave that occurred in Spain between February 5th and July 6th 2020 (SEMI-COVID-19 Network database Casas-Rojo et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig1-v2.jpg)\n\nAs a first step, data pre-processing included standardization of the laboratory tests units and imputation of the missing test values, which is characteristic of real-world clinical practice (Table 1). Using linear Lasso, 10-fold cross-validation and SIVS, we obtained a final CODOP model using 11 blood biochemical parameters plus Age (Supplementary file 1 and Figure 2\u2014figure supplement 1). Detailed analysis indicated elevated values of Age, neutrophils, C-reactive protein, creatinine, lactate dehydrogenase, serum sodium, serum potassium, glucose and D-dimer, and reduced values of platelets, eosinophils and monocytes were positively correlated with in-hospital death, respectively (Supplementary file 1).\n\nNext, we benchmarked the performance of CODOP, using the same training dataset, against the predictor developed by Zhang et al., 2020, against the predictor COPE (van Klaveren et al., 2021), and against Age (as the univariable feature with more predictive power; Supplementary file 1). The two prognostic models were selected based on the availability of the model\u2019s details and their use of blood-based features. CODOP showed a superior discriminative ability in predicting in-hospital mortality (area under the receiver operating curves or AUROC: 0\u00b7889, 95% CI 0\u00b7885\u20130\u00b7894; Figure 2A) reaching 0\u00b784% and 0\u00b778% sensitivity and specificity, respectively (Supplementary file 1). In addition, CODOP has better calibration for all the different risk groups as reflected by a lower RMSE value (Figure 2B and Supplementary file 1). A detailed inspection of the calibration curves shows that the predictor published by Zhang et al. underestimated the probability of death for low-risk patients and overestimates the probability of death for high-risk patients. On the other side, while COPE underestimates the probability of death for all risk groups, Age showed a clear overestimation (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig2-v2.jpg)\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The mean squared error is plotted versus log of the Penalty parameter (\u03bb). Figure is produced by function cv.glmnet from R package glmnet.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig2-figsupp3-v2.jpg)\n\n### Influence of the geographical location, the vaccination status and the type of VOCs in the discriminative ability of CODOP\n\nThe size, demographic diversity (in terms of age, gender, ethnicity and comorbidities; see Table 1 of Casas-Rojo et al., 2020), and geographical spread of the training dataset, suggest the generalizability of the predictions made by CODOP. However, the rapid evolution of the pandemic challenges any prediction model that relies on past datasets. We investigated the discriminative ability and calibration of CODOP in geographical diverse patient cohorts having different vaccination statuses and infected with different VOCs.\n\nOn the one side, we used two time-sliced cohorts with COVID-19 patients hospitalized during consecutive COVID-19 waves that occurred in Spain between July 7th and December 6th 2020 (Test 1; 3118 patients), between December 7th 2020 and March 31st 2021 (Test 2; 566 patients). These cohorts are composed of non-vaccinated patients infected with the original Wuhan and the Alpha virus variants. ROC and calibration curves show that the performance metrics are preserved in these two cohorts (Figure 2\u2014figure supplement 2, Supplementary file 1). The generalizability of CODOP was also demonstrated on a separate test cohort (External Test (3) consisting of 2021 COVID-19 patients hospitalized in the Mount Sinai Health System in New York City between March 21st and April 28th, 2020 Del Valle et al., 2020; Figure 2\u2014figure supplement 2, Supplementary file 1).\n\nTo investigate the influence of the Delta and Omicron VOCs, we analysed a dataset collected in Spain between April 1st 2021 and February 27th 2022 (Test 4; 2508 patients). Our data demonstrate that the performance of CODOP is preserved when these two types of VOC were dominant (Figure 2\u2014figure supplement 2, Supplementary file 1). A detailed analysis shows that CODOP has the same discriminative ability in patients infected by Delta or by Omicron (Figure 2\u2014figure supplement 3). The lack of correlation between the percentage of deaths and the predictive ability of CODOP among the four test cohorts (Supplementary file 1), rules out an artefactual influence due to the time-sliced nature of these cohorts. Finally, CODOP overperformed both the benchmarked predictors and Age in the test cohorts (Figure 2\u2014figure supplement 2, Supplementary file 1).\n\nTo evaluate the discriminative ability of CODOP in the vaccinated population we analyzed data from hospitalized patients with two or three vaccination doses, belonging to the Test 4 cohort. Our data show that vaccination status has little influence on the ability of CODOP for predicting the risk of in-hospital death (Figure 2\u2014figure supplement 3 and Supplementary file 1).\n\nAltogether, our results show the stability of CODOP during the fluctuating scenario of the COVID-19 pandemic (the appearance of different VOCs, the different immune protection among the population, the use of more tailored clinical interventions), suggesting that CODOP captures key biomarkers involved in the physiological deterioration of COVID-19 hospitalized patients.\n\n### Estimation of fixed prediction horizons and dynamic risk-stratification\n\nMany patients of the different cohorts had multiple blood samples taken during their hospitalization. This offers a possibility for investigating the time window, before clinical resolution, at which CODOP can predict the death of hospitalized patients with high sensitivity.\n\nFor that, we compared the performance of CODOP at a fixed time before the clinical resolution using the training cohort. On average, CODOP predicted the outcome of all patients nine days in advance with an average sensitivity (at a fixed specificity of 75%) and AUROC values higher than 90% (Figure 3A and Supplementary file 1, respectively). In comparison to the other benchmarked predictors, CODOP maintained a stable sensitivity along the nine days horizon time significantly outperforming (Figure 3A; p < 0.01, paired two-sided T-test).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig3-v2.jpg)\n\n**Figure 3.:** In the horizon plot, x-axis represents the number of days at the hospital before clinical resolution, the bar plot is for the number of samples (the green colour is for survival and red for death), and lines are for sensitivity when the specificity was fixed at 75% in the training cohort (the black line is CODOP, the red line is COPE, the green line is Zhang et al., and the blue line is Age). In the survival analysis, the risk scores refer to the probability provided by CODOP.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Shade areas indicate 95% confidence intervals. The risk scores refer to the probability provided by CODOP.\n\nNext, we demonstrated that CODOP enables a continuous stratification of patients into a high-risk group over the course of the hospitalization, as patients with a higher risk score (which refers to the probability provided by CODOP), who were more likely to die over time (Figure 3B). We obtained similar stratification results when using other test cohorts (Figure 3\u2014figure supplement 1). Hence, CODOP represents an early and dynamic warning tool in the clinical status of COVID-19 patients.\n\n### Multinational evaluation of an online CODOP predictor\n\nDuring the COVID-19 pandemic, the availability of resources in hospitals around the world experiences significant fluctuations following successive infection waves. Thus, a clinically useful prediction tool needs to reckon with these dynamic scenarios for effectively assisting undertriage and overtriage decisions.\n\nWe developed and validated two subtypes of our predictor, CODOP-Ovt (from overtriage) and CODOP-Unt (from undertriage), intending to optimize the triage of patients at high risk of death upon arrival to the hospital and after their first blood analysis. CODOP-Ovt maximizes the negative predictive value or the detection of high-risk patients (high sensitivity) and it is meant for scenarios where overtriage is possible because hospital resources are not the main limitation. On the other side, CODOP-Unt maximizes the positive predictive value by trying to avoid the inclusion of false high-risk patients (high specificity) and it might be preferred in pandemic conditions when hospital resources are limited and undertriage needs to be considered.\n\nUsing the initial training cohort, CODOP-Ovt identified >95% of the patients that finally died in hospital nine days before clinical resolution (Figure 4\u2014figure supplement 1). As expected, this increase in sensitivity is concomitant with reduced specificity (60%\u201370%; Figure 4\u2014figure supplement 1). Notably, these metrics are within the range of recommended under- and overtriage levels ranging from 5% to 10% and 25% to 50%, respectively (van Rein et al., 2019) The opposite results were obtained with CODOP-Unt, where more than 95% of the patients that survived were correctly predicted as low-risk (Figure 4\u2014figure supplement 1) while 40%\u201350% of the patients that died in hospital were not detected in advance (Figure 4\u2014figure supplement 1). Confusion matrixes show similar overall performance for both CODOP subtypes in all test cohorts (Supplementary file 1).\n\nFollowing this, we constructed and evaluated an easy-to-use web-based application (https://gomezvarelalab.em.mpg.de/codop/) that offers the possibility to choose between CODOP-Ovt and CODOP-Unt. The web application includes a detailed description of the CODOP project and instructions on how to use the prediction tool. The web application has been tested using different devices, web browsers and operative systems (Supplementary file 1). In all cases, predictions were calculated in less than 2 s for datasets up to 2000 patients (data not shown). Further, the Data Protection Office of the Max Planck Society assisted in assuring the legal fit of the web application to the General Data Protection Regulation (GDPR).\n\nTo make a stringent external evaluation of this application with datasets collected from very different patient cohorts, we established a multinational collaboration with 42 hospitals from three Latin American countries (Figure 4A), which at the time of this evaluation were under a new surge of COVID-19 infections and admissions coinciding with the beginning of the Autumn-Winter season in the Southern Hemisphere. All these hospitals provided the values for the 12 features used by CODOP and measured in patients at the time of hospitalization between March 7th 2020 to October 16th 2021. Following, these data were uploaded to the two CODOP online subtypes and we obtained the mortality predictions that were compared to the real patient outcome (for which the online predictor was blinded).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig4-v2.jpg)\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75985/elife-75985-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The black solid line is CODOP-Ovt and black dotted line is CODOP-Unt.\n\nImportantly, AUROC values for CODOP-Ovt and CODOP-Unt demonstrate the generalizability of the predictor (Supplementary file 1). A detailed analysis of the results indicates that if these were a prospective study, CODOP-Ovt would have identified the majority of the patients that finally died during hospitalization albeit wrongly classifying them as high-risk a significant number of patients that finally survived (78\u2013100% sensitivity and 48\u201367% specificity, respectively; Figure 4B and Supplementary file 1). On the other side, the use of CODOP-Unt would have correctly triaged the vast majority of the survivors despite missing a significant number of patients that finally died (89\u201397% specificity and 19%\u201350% sensitivity, respectively; Figure 4B and Supplementary file 1). These results strongly suggest that the online version of CODOP could represent a useful clinical tool in the triage decision protocols.\n\n### Discussion\n\nThe differential access to COVID-19 vaccines, the emergence of new viral variants of concern, the waning of the immune protection, and the relaxation of mitigation measurements anticipate a longer period of health systems under pressure due to an increasing number of COVID-19 patients, particularly in resource-limited countries. A conflagration-like scenario will likely be the final set of the pandemic for many nations (Kofman et al., 2021) As a result of an altruistic multicontinental effort, we developed and evaluated CODOP, a machine-learning-based online tool able to assist in triage decisions in hospitalized COVID-19 patients. CODOP uses 12 clinical parameters easy to collect in most hospitals. Its predictive performance among cohorts of patients with different geographical locations, vaccination statuses and infected by diverse VOCs, strongly suggests its generalizability and supports its potential for improving patient care during this pandemic.\n\nCODOP satisfies the Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis principles (Collins et al., 2015) (TRIPOD; Supplementary file 1), follows the recently proposed MINimum Information for Medical AI Reporting (Hernandez-Boussard et al., 2020) (MINIMAR; Supplementary file 1), and it has been successfully checked for the risk of bias and applicability using the Prediction model study Risk of Bias Assessment Tool (Moons et al., 2019) (PROBAST; Supplementary file 1).\n\nThe use of such an early warning system as CODOP could potentially represent an important help in clinical decision-making including the prioritization of care and resource allocation. The novelty of the COVID-19 disease and its toll on the health systems has led to dozens of triage policies, many of them based on some form of Sequential Organ Failure Assessment (SOFA) scores. (Raschke et al., 2021) In addition, several machine learning-based prediction tools have been developed during this pandemic. However, independent validation studies have dismissed the clinical utility of all these models (Wynants et al., 2020; El-Solh et al., 2020) and have indicated common pitfalls to be avoided such as small sample size, use of variables not easily measurable in most hospitals, and lack of external evaluation datasets gathered in geographically different cohorts, etc. To avoid this \u2018dataset shift\u2019 problem and aim to increase the generalization of CODOP, we set to satisfy the so-called stability property (Subbaswamy and Saria, 2020) For this we used an initial training and test cohorts encompassing 24,345 patients from more than 110 hospitals spread over Spain and the USA and gathered during three pandemic waves. Both the size, heterogeneity of the patient population (in terms of age range, ethnicity, comorbidities, etc.), and the myriad of clinical and analytical procedures performed during the pandemic, ensures a significant number of perturbations (shifts) in how the data were generated. This strategy seems to be supported by the stable performance of our predictor on the external online evaluation performed with a patient cohort gathered in 42 hospitals in three Latin American countries. Importantly, we demonstrate that the discriminative ability of CODOP is not hampered by the different immune protection status (either by infection or by vaccination) or by the type of VOC, which suggests that the inflammatory process underlying the clinical manifestations is similar in most of the hospitalized patients independently of their vaccination status or the type of VOC.\n\nIn addition to the characteristics of our cohorts, we hypothesized that the higher performance achieved by CODOP when compared to published mortality risk scores is due to the use of a group of biochemical parameters representing the main biological pathways involved in the pathogenesis of SARS-CoV-2. A very common clinical manifestation in critical COVID-19 patients is composed of a deregulated immune response and a robust inflammatory reaction (known as \u2018hypercytokinemia\u2019 or \u2018cytokine storm\u2019), which ultimately leads to tissue injury (Chen and Quach, 2021) Recent reports show a downregulated type-I interferon response leading to an increase of neutrophils in severe COVID-19 patients (Zhang et al., 2021). These findings go in line with our data showing alterations in several myeloid cells (eosinophils, monocytes) including an upregulation in the number of neutrophils (Supplementary file 1b). Myeloid cells are crucial for mounting a successful immune response against viruses and for the existence of hypercytokinemia (Bordon et al., 2013) The increased level of CRP and LDH in our dataset and their predictive value could represent easy-to-measure hallmarks of the exacerbated inflammatory response associated with a high risk of COVID-19-related death. These and other model features linked to thromboembolic complications (i.e. D-dimer and Platelets) and organ failure (i.e. Creatinine), could represent a warning signature easy to evaluate at early stages of the infection, even before failure in major functions can be monitored.\n\nSeveral unique biomarkers have been suggested as surrogates for guiding clinical decisions in COVID-19 patients. As example, C-reactive Protein (CRP) is useful to recognize patients with an increased risk of mortality during hospitalization (Stringer et al., 2021). However, the 12 parameter CODOP model has higher predictive performance than the CRP when analyzed as univariate (Supplementary file 1). For other biomarkers (e.g. Interleukin 6 Coomes and Haghbayan, 2020 or suPAR Altintas et al., 2021), the elevated price of the analysis precludes its widely use in Emergency Departments, particularly in low-income countries. The advantage of a multi-parameter predictor like CODOP is based on its ability to represent the myriad of pathophysiological alterations (not only immune dysregulation) occurring during the evolution of the COVID-19 what might be the base for its good predictive capacity in a very diverse population. Further, CODOP is based on quantitative parameters that are very easy to obtain during the first examination of the patient. Of note, we analyzed the role of twelve patient comorbidities (Supplementary file 1) in the performance of CODOP. Interestingly, while six comorbidities were chosen together with the same 12 biochemical parameters, their addition to CODOP did not improve its discriminative ability (Supplementary file 1). The impossibility to evaluate this model with the six comorbidities in the external test and evaluation cohorts (due to the lack of these variables) made us decide not to include them in the final online predictor.\n\nThe quality, availability, and consistency of biomedical data make reproducibility very challenging for machine learning tools applied to health (McDermott et al., 2021) (MLH). The reproducibility of MLH is of critical importance as predictions can affect human health care. Careful analysis indicates that CODOP fulfils the main performance criteria reached in other machine learning subfields when analysing the three main reproducibility principles. In comparison to previous studies, CODOP excels in the \u2018Conceptual Reproducibility or Replicability\u2019 due to the use of geographically spread cohorts (McDermott et al., 2021).\n\nThe overall performance of CODOP has inherent limitations, some of them generalizable to any MLH. On the one side, the use of training and test datasets with a high degree of perturbations (see above) adds several sources of variability (Aarsand et al., 2019): pre-analytical due to differences in blood sampling, analytical due to different laboratory protocols, intra- and inter-individual, and inter-hospital and geographical differences in clinical practices. As an additional factor, the high diversity of COVID-19 encompassing more than 60 disease subtypes (DeMerle et al., 2021) sets a limitation in terms of the discriminability ability and the overall clinical utility of any MHL. In contrast to other predictors, CODOP does not take into account the level of care received by each patient (e.g. ICU versus basic care), which influences the outcome of the patient and perturbs the discrimination ability of CODOP (as predictions are made with the data from blood analyses at hospital admission).\n\nThe proposed objective of CODOP is not to indicate a specific clinical treatment or decision (e.g. yes/no admission to ICU), but rather to inform physicians about the monitoring needs of patients (i.e. a higher death risk score suggests a closer monitorization of the patient). In this line, the analysis of a small court of patients (belonging to the Test 4 and the Argentinian COVID-19 Network cohorts) shows that CODOP is less effective for predicting the admission of a patient to the ICU or the need for mechanical ventilation (Supplementary file 1t). Larger and more geographically diverse datasets are needed to find other parameters that could be the bases to better predict these clinical outcomes. Based on the ability of CODOP to stratify the severity of patients, CODOP could be an interesting tool to increase the number of expected critical events, therefore potentially reducing the sample size calculation. In the same line, CODOP could be useful for the analysis of observational studies.\n\nThe clinical utility of MHL has to take into account the changing pressure supported by hospitals during the successive pandemic waves. Our data support the strategy of using either CODOP-Unt or CODOP-Ovt as an effective first-line triage tool in the overall clinical decision procedure. We expect that future participation of more institutions from regions non-represented in our study (Africa, Asia) will improve the reproducibility and overall clinical utility of CODOP supporting subgroup-specific predictions (e.g. based on underlying comorbidities or ethnical background).\n\n### Data sharing\n\nThe raw patient data used in this study are not freely available due to legal restrictions of the ethical committees of the different hospitals. However, they can be accessed upon request to the Scientific Committees of these organisms. An exception to this is the patient data from the USA cohort, which has been published elsewhere (Del Valle et al., 2020).\n\nAll the model\u2019s numerical data necessary to generate all figures can be found in the submitted source data tables. Furthermore, all supplementary tables can be found in Supplementary file 1.\n",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "c9439a49-a13b-4017-a5c6-0f197c3619f7",
+      "submission_id": "c16a8f14-8225-4246-8202-12cb483d2e86",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Evangelos J Giamarellos-Bourboulis, https://ror.org/04gnjpq42 National and Kapodistrian University of Athens, Medical School Greece\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75985.sa0](https://doi.org/10.7554/eLife.75985.sa0)\n\nThis submission is dealing with the unmet need to generate a machine learning approach for the early and accurate estimation of the outcome of patients admitted to hospital with COVID-19. The presented data generate confidence on the validity since they have been developed based on a vast number of patients and the data are validated in cohorts from different geographical regions.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Evangelos J Giamarellos-Bourboulis, https://ror.org/04gnjpq42 National and Kapodistrian University of Athens, Medical School Greece\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75985.sa1](https://doi.org/10.7554/eLife.75985.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Development and evaluation of a machine learning-based in-hospital COVID-19 Disease Outcome Predictor (CODOP): a multicontinental retrospective study\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Evangelos J Giamarellos-Bourboulis as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jos Van der Meer as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Jesus Bermejo-Martin (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n\u2013 The figures in the core of the manuscript are much influenced from the IT output and may generate ambiguity to the non-expert clinician to which the study is addressed. Figure 3A does not offer much. Figure 3B should make clear that high-risk and low-risk refers to the probability provide by the machine output.\n\n\u2013 Supplementary Table 1 should move to the core of the text.\n\n\u2013 The authors need to explain how the algorithm is applied in real life and the time to result. Information is also needed on how user-friendly this approach is.\n\n\u2013 Can the authors provide some analysis if this risk identification approach surrogates for some specific treatment?\n\n\u2013 The authors chose only age and laboratory parameters; they should explain why no comorbidities were considered for the model. Second, it would be interesting to provide information about how the model performs with other adverse outcomes except for mortality, such as intubation and ICU admission.\n\n\u2013 The authors should discuss more about advantages/disadvantages of the model compared to single biomarkers of prediction (CRP, Il-6, sUPAR), some of which have been already used not only to predict but also to guide COVID-19 treatment (like sUPAR).\n\n\u2013 The authors developed two sub-models, CODOP-OVT and CODOP-Unt to be applied in two different contexts depending on the degree of pressure on the hospitals attending COVID-19 patients. In this particular regard, the performance of CODOP-Unt regarding sensibility is far to be acceptable for real applications in clinical practice. In consequence, I do not understand what CODOP-Unt could be useful for, in reality. Can the authors comment on this point?\n\n\u2013 Although the authors propose CODOP mostly to predict mortality and decide resources allocation, given the good performance of CODOP to stratify severity, it could also be useful in the design of clinical trials to include patients with similar severity in both the placebo or test groups. CODOP could serve thus as a kind of predictive enrichment tool in this scenario. Please discuss.\n\n\u2013 The work was developed in the pre-omicron era. Although multi-level, multinational validation of CODOP seems to ensure their potential application in this scenario, do the authors think that its performance could be affected by Omicron?\n\n\u2013 How the progressive extension of vaccination could affect the performance of CODOP, since vaccination could alter disease severity at clinical presentation?\n\n\u2013 I would suggest a sub-analysis depending on the vaccinations status, if available, or at least a comment considering the percentage of vaccination in the involved countries in the time when CODOP was derived.\n\n\u2013 It would be interesting to evaluate the performance of CODOP separately in men and women.\n",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4cb8afee-4488-462a-a6ae-e1aaab57bfed",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C1",
+      "claim": "New SARS-CoV-2 variants, breakthrough infections, waning immunity, and sub-optimal vaccination rates account for surges of hospitalizations and deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "New SARS-CoV-2 variants, breakthrough infections, waning immunity, and sub-optimal vaccination rates account for surges of hospitalizations and deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws on established knowledge about COVID-19 pandemic dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "c73799a0-ce8f-496a-85cb-6e15e50225f5",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C2",
+      "claim": "CODOP was trained, tested and validated with six cohorts encompassing 29223 COVID-19 patients from more than 150 hospitals in Spain, the USA and Latin America during 2020\u201322.",
+      "claim_type": "EXPLICIT",
+      "source": "CODOP was trained, tested and validated with six cohorts encompassing 29223 COVID-19 patients from more than 150 hospitals in Spain, the USA and Latin America during 2020\u201322.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the study's data collection and methodology described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "f2a365f1-f90a-4e41-bf42-28a1213ce937",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C3",
+      "claim": "CODOP uses 12 clinical parameters commonly measured at hospital admission for reaching high discriminative ability up to 9 days before clinical resolution (AUROC: 0\u00b790\u20130\u00b796).",
+      "claim_type": "EXPLICIT",
+      "source": "CODOP uses 12 clinical parameters commonly measured at hospital admission for reaching high discriminative ability up to 9 days before clinical resolution (AUROC: 0\u00b790\u20130\u00b796)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental results presented in the manuscript, including specific AUROC values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "acc9610c-c031-4a88-85d2-cac93d494671",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C4",
+      "claim": "CODOP maintains its predictive ability independently of the virus variant and the vaccination status.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CODOP maintains its predictive ability independently of the virus variant and the vaccination status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by testing CODOP on cohorts with different variants and vaccination statuses as described in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "51114043-15cc-47c7-a39b-7f2cf871b27f",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C5",
+      "claim": "CODOP calculators validated with a cohort of patients from 42 hospitals in three Latin American countries achieved 78\u2013100% sensitivity and 89\u201397% specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "validated with a cohort of patients from 42 hospitals in three Latin American countries (78\u2013100% sensitivity and 89\u201397% specificity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the external validation results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "384c4f9c-3c08-432d-9108-554ba56b33e4",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C6",
+      "claim": "The World Health Organization (WHO) estimated the pandemic as the direct cause of more than six million deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "The World Health Organization (WHO) estimated the pandemic as the direct cause of more than six million deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references WHO data, which is a citation to an external authoritative source.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "a3772413-84c4-4dbb-a6a9-fbb2ca18721c",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C7",
+      "claim": "Viral variants carry a higher risk of hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of viral variants that are more contagious and that carry a higher risk of hospitalization, (Twohig et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Twohig et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "c2feea02-5747-47ee-8743-7de31af13b80",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C8",
+      "claim": "A vaccine-alone exit strategy will likely not be sufficient to contain further outbreaks and their consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "support recent models showing that a vaccine-alone exit strategy will likely not be sufficient to contain further outbreaks and their consequences (Moore et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Moore et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "13304742-3dba-49ae-9ca1-e9b4da82dec8",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C9",
+      "claim": "Numerous models have been developed to assist in triage decisions of hospitalized COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, numerous models have been developed to assist in triage decisions of hospitalized COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "bf18fe06-ed0f-422b-8090-681e14725858",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C10",
+      "claim": "Independent evaluations have pointed out the lack of generalizability and limited clinical use of existing COVID-19 prediction models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, independent evaluations have pointed out their lack of generalizability and their limited clinical use (Wynants et al., 2020; El-Solh et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wynants et al., 2020 and El-Solh et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "a5f7e1b3-4ab9-4c72-9d16-118aee66e1bb",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C11",
+      "claim": "COVID-19 has more than 60 disease subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the heterogeneity of the host-pathogen interaction (what results in more than 60 disease subtypes of COVID-19 DeMerle et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to DeMerle et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "e5387936-ae62-452c-8216-96ebe0c20be9",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C12",
+      "claim": "The training cohort is based on the SEMI COVID-19 Registry.",
+      "claim_type": "EXPLICIT",
+      "source": "The training and two test cohorts (Test 1 and Test 2) of this study are based on the SEMI (Sociedad Espanola de Medicina Interna) COVID-19 Registry (Casas-Rojo et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Casas-Rojo et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "a3605b1e-caba-4744-a519-2a2a7803424a",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C13",
+      "claim": "The SEMI COVID-19 Registry is an ongoing multicentre nationwide cohort of consecutive patients hospitalized for COVID-19 across 109 hospitals in different Spanish regions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is an ongoing multicentre nationwide cohort of consecutive patients hospitalized for COVID-19 across different Spanish regions (109 hospitals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "015f3b52-468d-40db-b965-b49117657b9b",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C14",
+      "claim": "Eligibility criteria included age \u226518 years, confirmed diagnosis of COVID-19, first hospital admission for COVID-19, and hospital discharge or in-hospital death.",
+      "claim_type": "EXPLICIT",
+      "source": "Eligibility criteria were age \u226518 years, confirmed diagnosis of COVID-19, defined as a positive result on real-time reverse-transcription-polymerase-chain-reaction (RT-PCR) for the presence of SARS-CoV-2 in nasopharyngeal swab specimens or sputum samples, first hospital admission for COVID-19, and hospital discharge or in-hospital death (Casas-Rojo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the study's inclusion criteria and is supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "025b4937-b4bc-45f4-b7a9-6c6676375af5",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C15",
+      "claim": "Test 4 cohort was composed of 2508 patients hospitalized in the 12 de Octubre and the Costa del Sol Spanish hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional patient cohort (named Test 4 and composed of 2508 patients hospitalized in the 12 de Octubre and the Costa del Sol Spanish hospitals), was used for testing the influence of vaccination and the Delta and Omicron virus variants on the discriminative ability of CODOP for predicting in-hospital death, the need for mechanical ventilation and admission to the Intensive Care Unit (ICU).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the composition of Test 4 cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "e3b649b3-e50a-476d-b38a-fdb94fe84153",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C16",
+      "claim": "The test cohort from New York consisted of 2021 COVID-19 patients hospitalized in the Mount Sinai Health System in New York City.",
+      "claim_type": "EXPLICIT",
+      "source": "The test cohort from New York (External Test 3) is based on the study from Del Valle et al., 2020 consisting of 2 021 COVID-19 patients hospitalized in the Mount Sinai Health System in New York City.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the External Test 3 cohort and is supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "adc63873-a876-4c38-bf97-ed52907e5bc7",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C17",
+      "claim": "The online validation cohorts were provided by 42 hospitals from Argentina, Honduras, and Bolivia.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohorts used in the online validation of the two online CODOP subtypes were provided by a group of Argentinian hospitals composed by the Argentinian COVID-19 Network (4690 patients from 37 Argentinian hospitals), Hospital V\u00e9lez Sarsfield (100 patients, Buenos Aires, Argentina), and Hospital Brit\u00e1nico de Buenos Aires (150 patients, Buenos Aires, Argentina), the Honduras Medical Centre (45 patients, Tegucigalpa, Honduras), the Hospital Santa Cruz Caja Petrolera de Salud (30 patients, Santa Cruz de la Sierra, Bolivia), and the Hospital San Juan de Dios (93 patients, Santa Cruz, Bolivia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the online validation cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "c3f4b3a7-91b3-46fc-b283-54c1fcb65ed0",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C18",
+      "claim": "CODOP was developed using modified stable iterative variable selection (SIVS) and linear regression with lasso regularisation.",
+      "claim_type": "EXPLICIT",
+      "source": "CODOP was built using modified stable iterative variable selection (SIVS) (Mahmoudian et al., 2021) and linear regression with least absolute shrinkage and selection operator (lasso) regularisation (Friedman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the methodology and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "9f90408b-0230-4f97-a494-53fd48964fce",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C19",
+      "claim": "In model building only the training cohort was used and models were built using 10-fold cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "In model building only the training cohort was used and models were built using 10-fold cross-validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the model development methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "4f5fe742-78c7-4346-a4f6-d3559f1cc705",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C20",
+      "claim": "CODOP uses 11 blood biochemical parameters plus Age.",
+      "claim_type": "EXPLICIT",
+      "source": "Using linear Lasso, 10-fold cross-validation and SIVS, we obtained a final CODOP model using 11 blood biochemical parameters plus Age (Supplementary file 1 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the model development results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "1ca2ad8d-751c-4da2-907a-18d70e71d361",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C21",
+      "claim": "Elevated values of Age, neutrophils, C-reactive protein, creatinine, lactate dehydrogenase, serum sodium, serum potassium, glucose and D-dimer were positively correlated with in-hospital death.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed analysis indicated elevated values of Age, neutrophils, C-reactive protein, creatinine, lactate dehydrogenase, serum sodium, serum potassium, glucose and D-dimer, and reduced values of platelets, eosinophils and monocytes were positively correlated with in-hospital death, respectively (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis of the model features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "4961c87a-6f03-469b-9fa0-7a4ba96fc950",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C22",
+      "claim": "Reduced values of platelets, eosinophils and monocytes were positively correlated with in-hospital death.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed analysis indicated elevated values of Age, neutrophils, C-reactive protein, creatinine, lactate dehydrogenase, serum sodium, serum potassium, glucose and D-dimer, and reduced values of platelets, eosinophils and monocytes were positively correlated with in-hospital death, respectively (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis of the model features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "ff472f1d-1921-4322-8d80-274225a72ac5",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C23",
+      "claim": "CODOP showed a superior discriminative ability in predicting in-hospital mortality (AUROC: 0\u00b7889, 95% CI 0\u00b7885\u20130\u00b7894) compared to benchmarked predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "CODOP showed a superior discriminative ability in predicting in-hospital mortality (area under the receiver operating curves or AUROC: 0\u00b7889, 95% CI 0\u00b7885\u20130\u00b7894; Figure 2A) reaching 0\u00b784% and 0\u00b778% sensitivity and specificity, respectively (Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the benchmarking results and Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "f1163cfc-ea5d-454b-95a5-798cf226aaa6",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C24",
+      "claim": "CODOP reached 0\u00b784% sensitivity and 0\u00b778% specificity in the training cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "CODOP showed a superior discriminative ability in predicting in-hospital mortality (area under the receiver operating curves or AUROC: 0\u00b7889, 95% CI 0\u00b7885\u20130\u00b7894; Figure 2A) reaching 0\u00b784% and 0\u00b778% sensitivity and specificity, respectively (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the performance metrics in the training cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "e09783ad-258a-4866-8eb5-b3bdc5248175",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C25",
+      "claim": "CODOP has better calibration for all the different risk groups as reflected by a lower RMSE value compared to benchmarked predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CODOP has better calibration for all the different risk groups as reflected by a lower RMSE value (Figure 2B and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the calibration analysis and Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "b5071aeb-8ffe-45ac-aec4-e1b8e532bed8",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C26",
+      "claim": "The predictor published by Zhang et al. underestimated the probability of death for low-risk patients and overestimates the probability of death for high-risk patients.",
+      "claim_type": "EXPLICIT",
+      "source": "A detailed inspection of the calibration curves shows that the predictor published by Zhang et al. underestimated the probability of death for low-risk patients and overestimates the probability of death for high-risk patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of calibration curves comparing CODOP to Zhang et al.'s predictor.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "39ad7164-e785-40ad-9062-0a5ac17e51a8",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C27",
+      "claim": "COPE underestimates the probability of death for all risk groups.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other side, while COPE underestimates the probability of death for all risk groups, Age showed a clear overestimation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis of calibration curves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "4c6a3b54-87f9-4ac8-8e37-3cae894415f5",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C28",
+      "claim": "Age showed a clear overestimation of the probability of death.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other side, while COPE underestimates the probability of death for all risk groups, Age showed a clear overestimation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis of calibration curves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "09553354-8d4c-40a1-9514-3eed9c63421c",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C29",
+      "claim": "Test 1 cohort consisted of 3118 COVID-19 patients hospitalized during consecutive COVID-19 waves that occurred in Spain between July 7th and December 6th 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one side, we used two time-sliced cohorts with COVID-19 patients hospitalized during consecutive COVID-19 waves that occurred in Spain between July 7th and December 6th 2020 (Test 1; 3118 patients)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the Test 1 cohort composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "50d18690-9ee0-4a83-91ad-a3ba7c08cf23",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C30",
+      "claim": "Test 2 cohort consisted of 566 patients hospitalized between December 7th 2020 and March 31st 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "between December 7th 2020 and March 31st 2021 (Test 2; 566 patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the Test 2 cohort composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "d3c59df2-82b2-4524-9d6f-471a999ae4dc",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C31",
+      "claim": "Test 1 and Test 2 cohorts are composed of non-vaccinated patients infected with the original Wuhan and the Alpha virus variants.",
+      "claim_type": "EXPLICIT",
+      "source": "These cohorts are composed of non-vaccinated patients infected with the original Wuhan and the Alpha virus variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the characteristics of Test 1 and Test 2 cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "173ce5e1-9055-4845-b6fd-c0ef5a8841c6",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C32",
+      "claim": "The performance metrics of CODOP are preserved in Test 1 and Test 2 cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "ROC and calibration curves show that the performance metrics are preserved in these two cohorts (Figure 2\u2014figure supplement 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the ROC and calibration curves in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "f0ef1064-5d52-4568-a8b4-8c5d4a78c984",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C33",
+      "claim": "The generalizability of CODOP was demonstrated on External Test 3 consisting of 2021 COVID-19 patients hospitalized in the Mount Sinai Health System in New York City between March 21st and April 28th, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The generalizability of CODOP was also demonstrated on a separate test cohort (External Test (3) consisting of 2021 COVID-19 patients hospitalized in the Mount Sinai Health System in New York City between March 21st and April 28th, 2020 Del Valle et al., 2020; Figure 2\u2014figure supplement 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the results on External Test 3 and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "ec8f3fdf-4e7a-4fde-9ffd-9a057b968813",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C34",
+      "claim": "Test 4 dataset was collected in Spain between April 1st 2021 and February 27th 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the influence of the Delta and Omicron VOCs, we analysed a dataset collected in Spain between April 1st 2021 and February 27th 2022 (Test 4; 2508 patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the Test 4 cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "4b5abbe4-93f5-4b0b-bf29-d66c0f5a7d98",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C35",
+      "claim": "The performance of CODOP is preserved when Delta and Omicron VOCs were dominant.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that the performance of CODOP is preserved when these two types of VOC were dominant (Figure 2\u2014figure supplement 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of Test 4 cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "b30d83c8-b2c2-4a47-891e-87a68f81f329",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C36",
+      "claim": "CODOP has the same discriminative ability in patients infected by Delta or by Omicron.",
+      "claim_type": "EXPLICIT",
+      "source": "A detailed analysis shows that CODOP has the same discriminative ability in patients infected by Delta or by Omicron (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "55b7ec60-143d-40b3-b6c7-fe2164d2d020",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C37",
+      "claim": "There is no correlation between the percentage of deaths and the predictive ability of CODOP among the four test cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of correlation between the percentage of deaths and the predictive ability of CODOP among the four test cohorts (Supplementary file 1), rules out an artefactual influence due to the time-sliced nature of these cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of the relationship between death rates and CODOP performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "e14c6b3f-e39b-4b30-b525-1b1a815c188a",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C38",
+      "claim": "CODOP overperformed both the benchmarked predictors and Age in the test cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, CODOP overperformed both the benchmarked predictors and Age in the test cohorts (Figure 2\u2014figure supplement 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the benchmarking results in the test cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "4d0a8472-2437-447c-b3ce-f49d8ed4e86b",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C39",
+      "claim": "Vaccination status has little influence on the ability of CODOP for predicting the risk of in-hospital death.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that vaccination status has little influence on the ability of CODOP for predicting the risk of in-hospital death (Figure 2\u2014figure supplement 3 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of vaccinated patients in Test 4 cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "19530540-eac8-4ff2-8928-22ed02910b2c",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C40",
+      "claim": "CODOP captures key biomarkers involved in the physiological deterioration of COVID-19 hospitalized patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results show the stability of CODOP during the fluctuating scenario of the COVID-19 pandemic (the appearance of different VOCs, the different immune protection among the population, the use of more tailored clinical interventions), suggesting that CODOP captures key biomarkers involved in the physiological deterioration of COVID-19 hospitalized patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the stability of CODOP across different scenarios.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "bca447cd-a5ec-4c41-a21c-a4f787c2e775",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C41",
+      "claim": "CODOP predicted the outcome of all patients nine days in advance with an average sensitivity higher than 90% (at a fixed specificity of 75%).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, CODOP predicted the outcome of all patients nine days in advance with an average sensitivity (at a fixed specificity of 75%) and AUROC values higher than 90% (Figure 3A and Supplementary file 1, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the horizon analysis results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "9fe3a04d-b988-4c22-8d9e-3207af78a78b",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C42",
+      "claim": "CODOP predicted the outcome of all patients nine days in advance with AUROC values higher than 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, CODOP predicted the outcome of all patients nine days in advance with an average sensitivity (at a fixed specificity of 75%) and AUROC values higher than 90% (Figure 3A and Supplementary file 1, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the horizon analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "3065f656-5fe1-45b1-9d85-b9d0178e6b06",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C43",
+      "claim": "CODOP maintained a stable sensitivity along the nine days horizon time significantly outperforming other benchmarked predictors (p < 0.01, paired two-sided T-test).",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to the other benchmarked predictors, CODOP maintained a stable sensitivity along the nine days horizon time significantly outperforming (Figure 3A; p < 0.01, paired two-sided T-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical comparison shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "13a116c6-9a6d-4763-a694-a5f4e9137076",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C44",
+      "claim": "CODOP enables a continuous stratification of patients into a high-risk group over the course of the hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we demonstrated that CODOP enables a continuous stratification of patients into a high-risk group over the course of the hospitalization, as patients with a higher risk score (which refers to the probability provided by CODOP), who were more likely to die over time (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the survival analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "7d01b145-039d-4196-b9e7-9b188bb003fd",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C45",
+      "claim": "Patients with a higher CODOP risk score were more likely to die over time.",
+      "claim_type": "EXPLICIT",
+      "source": "as patients with a higher risk score (which refers to the probability provided by CODOP), who were more likely to die over time (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the survival analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "04cb9440-d359-4b63-9ced-969e42662c6c",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C46",
+      "claim": "CODOP represents an early and dynamic warning tool in the clinical status of COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, CODOP represents an early and dynamic warning tool in the clinical status of COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the horizon and survival analyses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "9a7b1bcb-1ff7-4b24-82c2-4f2c4bde51d4",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C47",
+      "claim": "CODOP-Ovt maximizes the negative predictive value or the detection of high-risk patients (high sensitivity).",
+      "claim_type": "EXPLICIT",
+      "source": "CODOP-Ovt maximizes the negative predictive value or the detection of high-risk patients (high sensitivity) and it is meant for scenarios where overtriage is possible because hospital resources are not the main limitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the design and purpose of CODOP-Ovt.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "0e6fdf32-ae05-4863-8126-c4cd27e1949b",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C48",
+      "claim": "CODOP-Unt maximizes the positive predictive value by trying to avoid the inclusion of false high-risk patients (high specificity).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other side, CODOP-Unt maximizes the positive predictive value by trying to avoid the inclusion of false high-risk patients (high specificity) and it might be preferred in pandemic conditions when hospital resources are limited and undertriage needs to be considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the design and purpose of CODOP-Unt.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "bf8e3960-93b3-4f0f-a8da-6f9c8510b64f",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C49",
+      "claim": "CODOP-Ovt identified >95% of the patients that finally died in hospital nine days before clinical resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the initial training cohort, CODOP-Ovt identified >95% of the patients that finally died in hospital nine days before clinical resolution (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of CODOP-Ovt shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "e48060e5-5229-4bbb-b367-43ca8f22e2c5",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C50",
+      "claim": "The increase in sensitivity of CODOP-Ovt is concomitant with reduced specificity (60%\u201370%).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this increase in sensitivity is concomitant with reduced specificity (60%\u201370%; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the performance metrics of CODOP-Ovt.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "ada4b9b3-0d58-4218-a263-a8c66753bc6e",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C51",
+      "claim": "The metrics of CODOP-Ovt are within the range of recommended under- and overtriage levels ranging from 5% to 10% and 25% to 50%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these metrics are within the range of recommended under- and overtriage levels ranging from 5% to 10% and 25% to 50%, respectively (van Rein et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares CODOP metrics to established guidelines and is supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "b29b4303-6372-40a4-8c43-9bf5f6eaabd1",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C52",
+      "claim": "CODOP-Unt correctly predicted more than 95% of the patients that survived as low-risk.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite results were obtained with CODOP-Unt, where more than 95% of the patients that survived were correctly predicted as low-risk (Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of CODOP-Unt.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "57246726-d24c-45d1-afd8-67a4feaae2c1",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C53",
+      "claim": "CODOP-Unt missed 40%\u201350% of the patients that died in hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "while 40%\u201350% of the patients that died in hospital were not detected in advance (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis of CODOP-Unt.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "6ab70e3c-7693-4c51-81d9-8f5bd3ab914d",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C54",
+      "claim": "Confusion matrixes show similar overall performance for both CODOP subtypes in all test cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Confusion matrixes show similar overall performance for both CODOP subtypes in all test cohorts (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the confusion matrix analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "ca60a3e8-17c4-47fc-a0a9-33f98acf70b3",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C55",
+      "claim": "A web-based application for CODOP was constructed and evaluated at https://gomezvarelalab.em.mpg.de/codop/.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this, we constructed and evaluated an easy-to-use web-based application (https://gomezvarelalab.em.mpg.de/codop/) that offers the possibility to choose between CODOP-Ovt and CODOP-Unt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the development of the web application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "5430381a-c765-45e0-9b37-ba87f02127ca",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C56",
+      "claim": "The web application has been tested using different devices, web browsers and operative systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The web application has been tested using different devices, web browsers and operative systems (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the testing of the web application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "8b109742-1830-410e-95e5-3b47bf9228e5",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C57",
+      "claim": "Predictions were calculated in less than 2 s for datasets up to 2000 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, predictions were calculated in less than 2 s for datasets up to 2000 patients (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on performance testing of the web application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "3ce2978d-bcc2-4549-af97-2a825edda739",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C58",
+      "claim": "The Data Protection Office of the Max Planck Society assisted in assuring the legal fit of the web application to the General Data Protection Regulation (GDPR).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the Data Protection Office of the Max Planck Society assisted in assuring the legal fit of the web application to the General Data Protection Regulation (GDPR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the legal compliance process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "addfd44d-e458-4c95-ae30-4b5203fa6796",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C59",
+      "claim": "Forty-two hospitals from three Latin American countries provided data for external evaluation between March 7th 2020 to October 16th 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "To make a stringent external evaluation of this application with datasets collected from very different patient cohorts, we established a multinational collaboration with 42 hospitals from three Latin American countries (Figure 4A), which at the time of this evaluation were under a new surge of COVID-19 infections and admissions coinciding with the beginning of the Autumn-Winter season in the Southern Hemisphere. All these hospitals provided the values for the 12 features used by CODOP and measured in patients at the time of hospitalization between March 7th 2020 to October 16th 2021.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the external validation cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "d57177f1-06de-46b4-857e-f8af45689d05",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C60",
+      "claim": "CODOP-Ovt achieved 78\u2013100% sensitivity and 48\u201367% specificity in the Latin American validation cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "A detailed analysis of the results indicates that if these were a prospective study, CODOP-Ovt would have identified the majority of the patients that finally died during hospitalization albeit wrongly classifying them as high-risk a significant number of patients that finally survived (78\u2013100% sensitivity and 48\u201367% specificity, respectively; Figure 4B and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the external validation results shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "5c811202-f95d-4064-8c04-68484fcd8dc3",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C61",
+      "claim": "CODOP-Unt achieved 89\u201397% specificity and 19%\u201350% sensitivity in the Latin American validation cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other side, the use of CODOP-Unt would have correctly triaged the vast majority of the survivors despite missing a significant number of patients that finally died (89\u201397% specificity and 19%\u201350% sensitivity, respectively; Figure 4B and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the external validation results shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "d8bddde3-00e1-4301-ba9b-d6929a26acaa",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C62",
+      "claim": "The online version of CODOP could represent a useful clinical tool in the triage decision protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that the online version of CODOP could represent a useful clinical tool in the triage decision protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the validation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "a8b2d538-7723-4ecf-8f6c-ae618fdd362e",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C63",
+      "claim": "CODOP satisfies the Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis principles (TRIPOD).",
+      "claim_type": "EXPLICIT",
+      "source": "CODOP satisfies the Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis principles (Collins et al., 2015) (TRIPOD; Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by adherence to reporting guidelines and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "9918b408-dbb2-4cf4-87b7-74746d7be358",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C64",
+      "claim": "CODOP follows the recently proposed MINimum Information for Medical AI Reporting (MINIMAR).",
+      "claim_type": "EXPLICIT",
+      "source": "follows the recently proposed MINimum Information for Medical AI Reporting (Hernandez-Boussard et al., 2020) (MINIMAR; Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by adherence to reporting guidelines and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "bc0b6205-7b1e-41f7-becb-f0dcd3a4b306",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C65",
+      "claim": "CODOP has been successfully checked for the risk of bias and applicability using the Prediction model study Risk of Bias Assessment Tool (PROBAST).",
+      "claim_type": "EXPLICIT",
+      "source": "and it has been successfully checked for the risk of bias and applicability using the Prediction model study Risk of Bias Assessment Tool (Moons et al., 2019) (PROBAST; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by bias assessment and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "054889a2-7494-45e0-9e1a-73a674947f73",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C66",
+      "claim": "Several machine learning-based prediction tools have been developed during the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several machine learning-based prediction tools have been developed during this pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "fa07134a-92fb-4a25-835c-3512b734fc35",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C67",
+      "claim": "Independent validation studies have dismissed the clinical utility of all existing COVID-19 prediction models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, independent validation studies have dismissed the clinical utility of all these models (Wynants et al., 2020; El-Solh et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to validation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "c402e33f-3a26-446c-9946-222e2d740de2",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C68",
+      "claim": "Common pitfalls of existing models include small sample size, use of variables not easily measurable in most hospitals, and lack of external evaluation datasets gathered in geographically different cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "and have indicated common pitfalls to be avoided such as small sample size, use of variables not easily measurable in most hospitals, and lack of external evaluation datasets gathered in geographically different cohorts, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited validation studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "f6880bfd-9761-4acd-b5c9-be3016f40d70",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C69",
+      "claim": "The initial training and test cohorts encompassed 24,345 patients from more than 110 hospitals spread over Spain and the USA.",
+      "claim_type": "EXPLICIT",
+      "source": "For this we used an initial training and test cohorts encompassing 24,345 patients from more than 110 hospitals spread over Spain and the USA and gathered during three pandemic waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the size and composition of the training and test cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "9e33e977-2de7-4f60-aa09-ce6db18482fe",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C70",
+      "claim": "The training and test cohorts were gathered during three pandemic waves.",
+      "claim_type": "EXPLICIT",
+      "source": "For this we used an initial training and test cohorts encompassing 24,345 patients from more than 110 hospitals spread over Spain and the USA and gathered during three pandemic waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the temporal coverage of the cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "8e3e0964-e5a1-4a70-803d-c784b66f5347",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C71",
+      "claim": "The size, heterogeneity of the patient population, and the myriad of clinical and analytical procedures performed during the pandemic ensures a significant number of perturbations (shifts) in how the data were generated.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the size, heterogeneity of the patient population (in terms of age range, ethnicity, comorbidities, etc.), and the myriad of clinical and analytical procedures performed during the pandemic, ensures a significant number of perturbations (shifts) in how the data were generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the characteristics of the dataset.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "7c2a7af6-b35e-4838-ba77-fc732393b481",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C72",
+      "claim": "The inflammatory process underlying the clinical manifestations is similar in most of the hospitalized patients independently of their vaccination status or the type of VOC.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we demonstrate that the discriminative ability of CODOP is not hampered by the different immune protection status (either by infection or by vaccination) or by the type of VOC, which suggests that the inflammatory process underlying the clinical manifestations is similar in most of the hospitalized patients independently of their vaccination status or the type of VOC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the stability of CODOP across different patient groups.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "dff6b51f-8d59-47b0-a935-21f93b138ec4",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C73",
+      "claim": "The higher performance achieved by CODOP when compared to published mortality risk scores is due to the use of a group of biochemical parameters representing the main biological pathways involved in the pathogenesis of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the characteristics of our cohorts, we hypothesized that the higher performance achieved by CODOP when compared to published mortality risk scores is due to the use of a group of biochemical parameters representing the main biological pathways involved in the pathogenesis of SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "09a56973-abf9-4f61-af60-6a6cc8969d32",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C74",
+      "claim": "A very common clinical manifestation in critical COVID-19 patients is composed of a deregulated immune response and a robust inflammatory reaction (known as 'hypercytokinemia' or 'cytokine storm'), which ultimately leads to tissue injury.",
+      "claim_type": "EXPLICIT",
+      "source": "A very common clinical manifestation in critical COVID-19 patients is composed of a deregulated immune response and a robust inflammatory reaction (known as 'hypercytokinemia' or 'cytokine storm'), which ultimately leads to tissue injury (Chen and Quach, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen and Quach, 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "a963835a-b20e-491b-bf6d-fee26022899d",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C75",
+      "claim": "Recent reports show a downregulated type-I interferon response leading to an increase of neutrophils in severe COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports show a downregulated type-I interferon response leading to an increase of neutrophils in severe COVID-19 patients (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "535f348e-918a-4c33-a35e-ea24a467898f",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C76",
+      "claim": "The data show alterations in several myeloid cells (eosinophils, monocytes) including an upregulation in the number of neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings go in line with our data showing alterations in several myeloid cells (eosinophils, monocytes) including an upregulation in the number of neutrophils (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "4c9c0e4f-92f2-4ccd-8461-88faa1536c17",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C77",
+      "claim": "Myeloid cells are crucial for mounting a successful immune response against viruses and for the existence of hypercytokinemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Myeloid cells are crucial for mounting a successful immune response against viruses and for the existence of hypercytokinemia (Bordon et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bordon et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "6e9a2cf1-873e-4672-b03a-3f19eecf3a5d",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C78",
+      "claim": "The increased level of CRP and LDH could represent easy-to-measure hallmarks of the exacerbated inflammatory response associated with a high risk of COVID-19-related death.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased level of CRP and LDH in our dataset and their predictive value could represent easy-to-measure hallmarks of the exacerbated inflammatory response associated with a high risk of COVID-19-related death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "b1b6d261-8d78-41d8-b922-97a9522c2cb4",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C79",
+      "claim": "Model features linked to thromboembolic complications (i.e. D-dimer and Platelets) and organ failure (i.e. Creatinine) could represent a warning signature easy to evaluate at early stages of the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "These and other model features linked to thromboembolic complications (i.e. D-dimer and Platelets) and organ failure (i.e. Creatinine), could represent a warning signature easy to evaluate at early stages of the infection, even before failure in major functions can be monitored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "cecfba2f-1e88-47e5-8892-7e1b5133e5ec",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C80",
+      "claim": "C-reactive Protein (CRP) is useful to recognize patients with an increased risk of mortality during hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "As example, C-reactive Protein (CRP) is useful to recognize patients with an increased risk of mortality during hospitalization (Stringer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stringer et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "db6e1bd3-a78d-4a0a-be3c-acbb22b0006b",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C81",
+      "claim": "The 12 parameter CODOP model has higher predictive performance than the CRP when analyzed as univariate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the 12 parameter CODOP model has higher predictive performance than the CRP when analyzed as univariate (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the univariate analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "d48a0326-dc44-45b2-9c7f-021afe5f832b",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C82",
+      "claim": "The elevated price of Interleukin 6 or suPAR analysis precludes its widely use in Emergency Departments, particularly in low-income countries.",
+      "claim_type": "EXPLICIT",
+      "source": "For other biomarkers (e.g. Interleukin 6 Coomes and Haghbayan, 2020 or suPAR Altintas et al., 2021), the elevated price of the analysis precludes its widely use in Emergency Departments, particularly in low-income countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge about the cost of these biomarkers and is supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "1036ddf0-7ab5-4801-bfa7-e7af47b44ba3",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C83",
+      "claim": "The advantage of a multi-parameter predictor like CODOP is based on its ability to represent the myriad of pathophysiological alterations occurring during the evolution of the COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of a multi-parameter predictor like CODOP is based on its ability to represent the myriad of pathophysiological alterations (not only immune dysregulation) occurring during the evolution of the COVID-19 what might be the base for its good predictive capacity in a very diverse population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about why CODOP performs well.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "57f451ee-b08e-48b8-8eb8-270893a0b8fe",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C84",
+      "claim": "Six comorbidities were chosen together with the same 12 biochemical parameters in an alternative model.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while six comorbidities were chosen together with the same 12 biochemical parameters, their addition to CODOP did not improve its discriminative ability (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis of comorbidities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "578d0fa9-e68c-4d9e-a40e-cdaa44f9f84d",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C85",
+      "claim": "The addition of six comorbidities to CODOP did not improve its discriminative ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while six comorbidities were chosen together with the same 12 biochemical parameters, their addition to CODOP did not improve its discriminative ability (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis of comorbidities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "86274261-47e9-47a6-8ee4-2ac61612557c",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C86",
+      "claim": "CODOP excels in the 'Conceptual Reproducibility or Replicability' due to the use of geographically spread cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to previous studies, CODOP excels in the 'Conceptual Reproducibility or Replicability' due to the use of geographically spread cohorts (McDermott et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an assessment of CODOP's reproducibility and is supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "f83fce21-39b6-443f-9ed6-e3a723a8ce1e",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C87",
+      "claim": "The use of training and test datasets with a high degree of perturbations adds several sources of variability including pre-analytical, analytical, intra- and inter-individual, and inter-hospital and geographical differences.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one side, the use of training and test datasets with a high degree of perturbations (see above) adds several sources of variability (Aarsand et al., 2019): pre-analytical due to differences in blood sampling, analytical due to different laboratory protocols, intra- and inter-individual, and inter-hospital and geographical differences in clinical practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim discusses limitations and is supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "8ceeb5bf-31af-4613-98cd-36ef198abcab",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C88",
+      "claim": "The high diversity of COVID-19 encompassing more than 60 disease subtypes sets a limitation in terms of the discriminability ability and the overall clinical utility of any MHL.",
+      "claim_type": "EXPLICIT",
+      "source": "As an additional factor, the high diversity of COVID-19 encompassing more than 60 disease subtypes (DeMerle et al., 2021) sets a limitation in terms of the discriminability ability and the overall clinical utility of any MHL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim discusses limitations and is supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "d42413e4-4278-4bc2-8b33-a4b80146b64a",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C89",
+      "claim": "CODOP does not take into account the level of care received by each patient (e.g. ICU versus basic care).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to other predictors, CODOP does not take into account the level of care received by each patient (e.g. ICU versus basic care), which influences the outcome of the patient and perturbs the discrimination ability of CODOP (as predictions are made with the data from blood analyses at hospital admission).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim discusses a limitation of CODOP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "9eaf2bc5-e28f-4924-bb69-06d3b0ead90c",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C90",
+      "claim": "The proposed objective of CODOP is not to indicate a specific clinical treatment or decision but rather to inform physicians about the monitoring needs of patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed objective of CODOP is not to indicate a specific clinical treatment or decision (e.g. yes/no admission to ICU), but rather to inform physicians about the monitoring needs of patients (i.e. a higher death risk score suggests a closer monitorization of the patient).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the intended use of CODOP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "cf4212bb-3520-4d8c-9642-f613b637d38a",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C91",
+      "claim": "CODOP is less effective for predicting the admission of a patient to the ICU or the need for mechanical ventilation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this line, the analysis of a small court of patients (belonging to the Test 4 and the Argentinian COVID-19 Network cohorts) shows that CODOP is less effective for predicting the admission of a patient to the ICU or the need for mechanical ventilation (Supplementary file 1t).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of ICU admission and mechanical ventilation prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "c97f1c45-b3eb-4140-9e99-a8be946a1566",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C92",
+      "claim": "CODOP could be an interesting tool to increase the number of expected critical events, therefore potentially reducing the sample size calculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the ability of CODOP to stratify the severity of patients, CODOP could be an interesting tool to increase the number of expected critical events, therefore potentially reducing the sample size calculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential uses of CODOP.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "4ece9cf3-9aff-4830-ba12-0a1dbe3b1958",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C93",
+      "claim": "CODOP could be useful for the analysis of observational studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same line, CODOP could be useful for the analysis of observational studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential uses of CODOP.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "86e59b81-7af9-4f18-bb5c-0675a12b3d4e",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C94",
+      "claim": "Future participation of more institutions from regions non-represented in the study (Africa, Asia) will improve the reproducibility and overall clinical utility of CODOP.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that future participation of more institutions from regions non-represented in our study (Africa, Asia) will improve the reproducibility and overall clinical utility of CODOP supporting subgroup-specific predictions (e.g. based on underlying comorbidities or ethnical background).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future improvements to CODOP.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "c9b27785-d214-447e-ab40-9ee25e0da160",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C95",
+      "claim": "The training cohort consisted of 15902 COVID-19 patients hospitalized in 109 Spanish healthcare centres during the first COVID-19 wave between February 5th and July 6th 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed CODOP following a multistep process (Figure 1) using a training dataset with measurements of 20 features (18 blood biochemical parameters plus Age and Sex; Table 1) routinely measured during admission on 15902 COVID-19 patients hospitalized in 109 Spanish healthcare centres during the first COVID-19 wave that occurred in Spain between February 5th and July 6th 2020 (SEMI-COVID-19 Network database Casas-Rojo et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the training cohort and is supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "4f71f1ca-42da-44cd-a1b7-45d74e5e57d0",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C96",
+      "claim": "The training dataset included measurements of 20 features (18 blood biochemical parameters plus Age and Sex).",
+      "claim_type": "EXPLICIT",
+      "source": "using a training dataset with measurements of 20 features (18 blood biochemical parameters plus Age and Sex; Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the features used in training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "2ce1c8aa-b958-4915-8a18-df5810547c0d",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "claim_id": "C97",
+      "claim": "Data pre-processing included standardization of the laboratory tests units and imputation of the missing test values.",
+      "claim_type": "EXPLICIT",
+      "source": "As a first step, data pre-processing included standardization of the laboratory tests units and imputation of the missing test values, which is characteristic of real-world clinical practice (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the data preprocessing steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CODOP was developed and validated using six cohorts encompassing 29,223 COVID-19 patients from more than 150 hospitals across Spain, the USA, and Latin America during 2020-22. The training cohort consisted of 15,902 patients from 109 Spanish hospitals during the first wave (Feb-July 2020), with multiple test cohorts representing different pandemic waves, variants, and geographic locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12-C17, C29-C31, C34, C59, C69-C70, and C95-C97 collectively describe the comprehensive data collection strategy with clear documentation of cohort sizes, geographic distribution, temporal coverage, and eligibility criteria. The multi-cohort design with geographically diverse populations provides strong evidence for the study's scope and generalizability testing framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "2b258812-7071-41d4-8bb4-8d0b11be6431",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CODOP was developed using modified stable iterative variable selection (SIVS) and linear regression with lasso regularization, employing 10-fold cross-validation on the training cohort. The final model uses 12 clinical parameters (11 blood biochemical parameters plus Age), with elevated values of age, neutrophils, CRP, creatinine, LDH, sodium, potassium, glucose, and D-dimer, and reduced values of platelets, eosinophils, and monocytes positively correlated with in-hospital death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 describe the model development methodology and feature selection results with appropriate citations and references to supplementary data. The use of established machine learning techniques (SIVS, lasso) with cross-validation represents sound methodological practice, and the identified biomarkers align with known COVID-19 pathophysiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "02fc94ba-b117-4cdf-8e23-da10e7f2e6e2",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CODOP demonstrated superior discriminative ability for predicting in-hospital mortality (AUROC: 0.889, 95% CI 0.885-0.894) with 84% sensitivity and 78% specificity in the training cohort, outperforming benchmarked predictors (COPE, Zhang et al., and Age alone). CODOP also showed better calibration across all risk groups with lower RMSE compared to other predictors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C23-C28 present comprehensive performance metrics with confidence intervals and comparative benchmarking. The AUROC values, sensitivity/specificity metrics, and calibration analyses (supported by Figure 2A-B) provide strong evidence for CODOP's superior performance. The calibration analysis identifying specific weaknesses in comparator models adds rigor to the evaluation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "acfd7fb3-ef41-4423-a4b2-d9ed575ec7cd",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CODOP's performance metrics were preserved across multiple test cohorts including Test 1 and Test 2 (Spanish hospitals, different pandemic waves), External Test 3 (New York), and CODOP outperformed benchmarked predictors in all test cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 and C38 demonstrate temporal and geographic generalizability through testing on independent cohorts from different time periods and locations. The preservation of performance metrics across diverse settings (supported by Figure 2\u2014figure supplement 2) provides strong evidence for model robustness and generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "2a4670e3-e2eb-413b-824d-1a14a404105f",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CODOP maintains its predictive ability independently of virus variant (Delta, Omicron) and vaccination status. Performance was preserved when Delta and Omicron VOCs were dominant, with similar discriminative ability for patients infected by either variant, and vaccination status had little influence on prediction accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C35-C36, and C39 address a critical question about model stability across evolving pandemic conditions. The analysis of Test 4 cohort (2,508 patients, April 2021-Feb 2022) with different variants and vaccination statuses, supported by Figure 2\u2014figure supplement 3, provides strong evidence that CODOP's performance is robust to these important confounders.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "027265d6-3ad7-4dca-939d-eed01f7af98c",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The lack of correlation between death percentage and CODOP's predictive ability across test cohorts rules out artifacts from time-slicing. The stability across different VOCs, vaccination statuses, and clinical interventions suggests CODOP captures key biomarkers involved in physiological deterioration and that the underlying inflammatory process is similar across hospitalized patients regardless of vaccination or variant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C40, and C72 present important mechanistic inferences about why CODOP performs consistently. While C40 and C72 involve inference, they are reasonably supported by the empirical stability data (C37) and align with biological understanding of COVID-19 pathophysiology. The correlation analysis (C37) provides evidence against time-slicing artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "f35201d1-dc95-4850-9017-8c5d90c5a5e5",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CODOP predicted patient outcomes nine days in advance with average sensitivity >90% (at fixed 75% specificity) and AUROC values >90%. CODOP maintained stable sensitivity along the nine-day horizon, significantly outperforming other benchmarked predictors (p < 0.01, paired two-sided T-test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 demonstrate CODOP's early warning capability with specific performance metrics and statistical significance testing. The horizon analysis (Figure 3A) provides clear visual and quantitative evidence for prediction stability over time, with appropriate statistical testing showing superiority over comparators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "a12c61cd-6245-4c43-96d9-4371b4eeb405",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CODOP enables continuous risk stratification during hospitalization, with patients having higher risk scores being more likely to die over time. This makes CODOP an early and dynamic warning tool for monitoring COVID-19 patient clinical status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 describe CODOP's dynamic risk stratification capability supported by survival analysis (Figure 3B). The Kaplan-Meier analysis showing clear separation between risk groups provides strong evidence for continuous monitoring utility. Claim C46 is a reasonable inference from the survival analysis results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "98da7f1e-3b37-415d-8e58-bc1086aed78c",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Two CODOP subtypes were developed for different triage scenarios: CODOP-Ovt (maximizing sensitivity >95%, specificity 60-70%) for overtriage scenarios, and CODOP-Unt (maximizing specificity >95%, sensitivity 40-50%) for undertriage scenarios. Both subtypes' metrics fall within recommended triage levels (5-10% undertriage, 25-50% overtriage), with similar overall performance across test cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C54 describe the development and validation of two clinically-oriented model variants with clear performance trade-offs. The metrics are well-documented (Figure 4\u2014figure supplement 1), and comparison to established triage guidelines (C51, van Rein et al., 2019) provides clinical context. The confusion matrix analysis (C54) supports consistent performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "69712690-550f-49b9-8ab7-8dfc024b75c7",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A web-based CODOP application was developed, tested across devices/browsers, and validated with 42 hospitals from three Latin American countries (5,108 patients). CODOP-Ovt achieved 78-100% sensitivity and 48-67% specificity, while CODOP-Unt achieved 89-97% specificity and 19-50% sensitivity. The application computes predictions in <2 seconds for up to 2,000 patients and complies with GDPR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C55-C62 describe the translation of CODOP into a practical clinical tool with extensive external validation. The multinational Latin American validation (Figure 4A-B) provides strong evidence for real-world applicability. Performance metrics align with the intended use cases for each subtype, and technical specifications (speed, compliance) support clinical feasibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "706a20f1-2687-4545-af72-f2aca19b5fe9",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CODOP satisfies TRIPOD reporting principles, follows MINIMAR guidelines for medical AI reporting, and has been successfully assessed for risk of bias and applicability using PROBAST.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 document adherence to established reporting and quality assessment frameworks with appropriate citations. While the actual checklists are in supplementary materials, the explicit statement of compliance with these recognized standards (TRIPOD, MINIMAR, PROBAST) supports methodological rigor and transparency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "e77ad20c-e431-491a-be4a-d1bfa57b1201",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors hypothesize that CODOP's superior performance is due to using biochemical parameters representing main biological pathways in SARS-CoV-2 pathogenesis. The model captures immune dysregulation (neutrophils, eosinophils, monocytes), inflammatory response (CRP, LDH), thromboembolic complications (D-dimer, platelets), and organ failure (creatinine), which align with known COVID-19 pathophysiology including cytokine storm and type-I interferon downregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C79 present a mechanistic hypothesis (C73) supported by established COVID-19 pathophysiology (C74-C77, with appropriate citations) and the study's own data (C76, C78-C79). While C73, C78, and C79 involve inference/speculation, they are well-grounded in both the empirical results and cited literature, providing a biologically plausible explanation for CODOP's performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "623a460f-2aa4-4c58-966c-ae1693ed3113",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "While individual biomarkers like CRP are useful for mortality prediction, CODOP's 12-parameter model outperforms CRP as a univariate predictor. Other biomarkers (IL-6, suPAR) are too expensive for widespread use in resource-limited settings. The advantage of CODOP's multi-parameter approach is its ability to represent multiple pathophysiological alterations beyond immune dysregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 provide context for CODOP's multi-parameter approach through comparison with single biomarkers. C80-C82 are supported by citations and univariate analysis data, while C83 presents a reasonable inference about why multi-parameter models may be superior. The cost consideration (C82) is particularly relevant for the stated goal of utility in resource-limited countries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "8228ec75-b97a-4fc1-83f7-29514dbdf40a",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "An alternative model including six comorbidities along with the 12 biochemical parameters was tested, but adding comorbidities did not improve CODOP's discriminative ability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 describe a negative result from testing comorbidity inclusion. This is supported by analysis in Supplementary file 1 and represents appropriate model refinement testing. The finding that comorbidities don't improve performance is scientifically valuable and supports the final model's parsimony.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "6d61b5ff-6e37-40d6-9532-829278088a88",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CODOP excels in conceptual reproducibility due to geographically spread cohorts, but has inherent limitations including variability from diverse data sources, COVID-19's heterogeneity (>60 subtypes), not accounting for level of care received, and reduced effectiveness for predicting ICU admission or mechanical ventilation needs. CODOP is intended to inform monitoring needs rather than dictate specific clinical decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91 provide a balanced assessment of CODOP's strengths and limitations. C86 is supported by citation and the study's multi-cohort design. C87-C89 acknowledge important limitations with appropriate citations. C90 clarifies intended use, and C91 presents data on reduced performance for other outcomes. This honest limitation discussion strengthens the overall evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "48807e35-6b7f-43dd-a245-97bdd43920ef",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that CODOP could be useful for reducing sample size calculations in clinical trials by stratifying patient severity, for analyzing observational studies, and that future participation from underrepresented regions (Africa, Asia) will improve reproducibility and enable subgroup-specific predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C94 are explicitly speculative about potential future applications and improvements. While these are reasonable hypotheses based on CODOP's demonstrated stratification ability, they represent untested possibilities rather than demonstrated results. No data are provided to support these specific applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    },
+    {
+      "id": "645063e2-d423-404a-90b0-d7c84e213995",
+      "content_id": "7bdcff8f-0c4a-4cb6-9796-ac2b4f4f1937",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript provides background context on the COVID-19 pandemic, including that variants carry higher hospitalization risk, vaccine-alone strategies are insufficient, numerous prediction models have been developed but independent evaluations have dismissed their clinical utility due to common pitfalls (small sample size, unmeasurable variables, lack of external validation), and COVID-19 has >60 disease subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C11, C66-C68 provide literature context and motivation for the study. These are supported by appropriate citations to WHO data, peer-reviewed studies, and systematic reviews. While these are background claims rather than study results, they accurately represent the state of knowledge and provide justification for CODOP's development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:03:17.010444Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c73799a0-ce8f-496a-85cb-6e15e50225f5",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "e5387936-ae62-452c-8216-96ebe0c20be9",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "a3605b1e-caba-4744-a519-2a2a7803424a",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "015f3b52-468d-40db-b965-b49117657b9b",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "025b4937-b4bc-45f4-b7a9-6c6676375af5",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "e3b649b3-e50a-476d-b38a-fdb94fe84153",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "adc63873-a876-4c38-bf97-ed52907e5bc7",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "09553354-8d4c-40a1-9514-3eed9c63421c",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "50d18690-9ee0-4a83-91ad-a3ba7c08cf23",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "d3c59df2-82b2-4524-9d6f-471a999ae4dc",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "ec8f3fdf-4e7a-4fde-9ffd-9a057b968813",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "addfd44d-e458-4c95-ae30-4b5203fa6796",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "f6880bfd-9761-4acd-b5c9-be3016f40d70",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "9e33e977-2de7-4f60-aa09-ce6db18482fe",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "c9b27785-d214-447e-ab40-9ee25e0da160",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "4f71f1ca-42da-44cd-a1b7-45d74e5e57d0",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "2ce1c8aa-b958-4915-8a18-df5810547c0d",
+      "result_id": "346f7690-ff2b-4cd2-8aaf-5a7b5fe69673"
+    },
+    {
+      "claim_id": "c3f4b3a7-91b3-46fc-b283-54c1fcb65ed0",
+      "result_id": "2b258812-7071-41d4-8bb4-8d0b11be6431"
+    },
+    {
+      "claim_id": "9f90408b-0230-4f97-a494-53fd48964fce",
+      "result_id": "2b258812-7071-41d4-8bb4-8d0b11be6431"
+    },
+    {
+      "claim_id": "4f5fe742-78c7-4346-a4f6-d3559f1cc705",
+      "result_id": "2b258812-7071-41d4-8bb4-8d0b11be6431"
+    },
+    {
+      "claim_id": "1ca2ad8d-751c-4da2-907a-18d70e71d361",
+      "result_id": "2b258812-7071-41d4-8bb4-8d0b11be6431"
+    },
+    {
+      "claim_id": "4961c87a-6f03-469b-9fa0-7a4ba96fc950",
+      "result_id": "2b258812-7071-41d4-8bb4-8d0b11be6431"
+    },
+    {
+      "claim_id": "f2a365f1-f90a-4e41-bf42-28a1213ce937",
+      "result_id": "02fc94ba-b117-4cdf-8e23-da10e7f2e6e2"
+    },
+    {
+      "claim_id": "ff472f1d-1921-4322-8d80-274225a72ac5",
+      "result_id": "02fc94ba-b117-4cdf-8e23-da10e7f2e6e2"
+    },
+    {
+      "claim_id": "f1163cfc-ea5d-454b-95a5-798cf226aaa6",
+      "result_id": "02fc94ba-b117-4cdf-8e23-da10e7f2e6e2"
+    },
+    {
+      "claim_id": "e09783ad-258a-4866-8eb5-b3bdc5248175",
+      "result_id": "02fc94ba-b117-4cdf-8e23-da10e7f2e6e2"
+    },
+    {
+      "claim_id": "b5071aeb-8ffe-45ac-aec4-e1b8e532bed8",
+      "result_id": "02fc94ba-b117-4cdf-8e23-da10e7f2e6e2"
+    },
+    {
+      "claim_id": "39ad7164-e785-40ad-9062-0a5ac17e51a8",
+      "result_id": "02fc94ba-b117-4cdf-8e23-da10e7f2e6e2"
+    },
+    {
+      "claim_id": "4c6a3b54-87f9-4ac8-8e37-3cae894415f5",
+      "result_id": "02fc94ba-b117-4cdf-8e23-da10e7f2e6e2"
+    },
+    {
+      "claim_id": "173ce5e1-9055-4845-b6fd-c0ef5a8841c6",
+      "result_id": "acfd7fb3-ef41-4423-a4b2-d9ed575ec7cd"
+    },
+    {
+      "claim_id": "f0ef1064-5d52-4568-a8b4-8c5d4a78c984",
+      "result_id": "acfd7fb3-ef41-4423-a4b2-d9ed575ec7cd"
+    },
+    {
+      "claim_id": "e14c6b3f-e39b-4b30-b525-1b1a815c188a",
+      "result_id": "acfd7fb3-ef41-4423-a4b2-d9ed575ec7cd"
+    },
+    {
+      "claim_id": "acc9610c-c031-4a88-85d2-cac93d494671",
+      "result_id": "2a4670e3-e2eb-413b-824d-1a14a404105f"
+    },
+    {
+      "claim_id": "4b5abbe4-93f5-4b0b-bf29-d66c0f5a7d98",
+      "result_id": "2a4670e3-e2eb-413b-824d-1a14a404105f"
+    },
+    {
+      "claim_id": "b30d83c8-b2c2-4a47-891e-87a68f81f329",
+      "result_id": "2a4670e3-e2eb-413b-824d-1a14a404105f"
+    },
+    {
+      "claim_id": "4d0a8472-2437-447c-b3ce-f49d8ed4e86b",
+      "result_id": "2a4670e3-e2eb-413b-824d-1a14a404105f"
+    },
+    {
+      "claim_id": "55b7ec60-143d-40b3-b6c7-fe2164d2d020",
+      "result_id": "027265d6-3ad7-4dca-939d-eed01f7af98c"
+    },
+    {
+      "claim_id": "19530540-eac8-4ff2-8928-22ed02910b2c",
+      "result_id": "027265d6-3ad7-4dca-939d-eed01f7af98c"
+    },
+    {
+      "claim_id": "7c2a7af6-b35e-4838-ba77-fc732393b481",
+      "result_id": "027265d6-3ad7-4dca-939d-eed01f7af98c"
+    },
+    {
+      "claim_id": "bca447cd-a5ec-4c41-a21c-a4f787c2e775",
+      "result_id": "f35201d1-dc95-4850-9017-8c5d90c5a5e5"
+    },
+    {
+      "claim_id": "9fe3a04d-b988-4c22-8d9e-3207af78a78b",
+      "result_id": "f35201d1-dc95-4850-9017-8c5d90c5a5e5"
+    },
+    {
+      "claim_id": "3065f656-5fe1-45b1-9d85-b9d0178e6b06",
+      "result_id": "f35201d1-dc95-4850-9017-8c5d90c5a5e5"
+    },
+    {
+      "claim_id": "13a116c6-9a6d-4763-a694-a5f4e9137076",
+      "result_id": "a12c61cd-6245-4c43-96d9-4371b4eeb405"
+    },
+    {
+      "claim_id": "7d01b145-039d-4196-b9e7-9b188bb003fd",
+      "result_id": "a12c61cd-6245-4c43-96d9-4371b4eeb405"
+    },
+    {
+      "claim_id": "04cb9440-d359-4b63-9ced-969e42662c6c",
+      "result_id": "a12c61cd-6245-4c43-96d9-4371b4eeb405"
+    },
+    {
+      "claim_id": "9a7b1bcb-1ff7-4b24-82c2-4f2c4bde51d4",
+      "result_id": "98da7f1e-3b37-415d-8e58-bc1086aed78c"
+    },
+    {
+      "claim_id": "0e6fdf32-ae05-4863-8126-c4cd27e1949b",
+      "result_id": "98da7f1e-3b37-415d-8e58-bc1086aed78c"
+    },
+    {
+      "claim_id": "bf8e3960-93b3-4f0f-a8da-6f9c8510b64f",
+      "result_id": "98da7f1e-3b37-415d-8e58-bc1086aed78c"
+    },
+    {
+      "claim_id": "e48060e5-5229-4bbb-b367-43ca8f22e2c5",
+      "result_id": "98da7f1e-3b37-415d-8e58-bc1086aed78c"
+    },
+    {
+      "claim_id": "ada4b9b3-0d58-4218-a263-a8c66753bc6e",
+      "result_id": "98da7f1e-3b37-415d-8e58-bc1086aed78c"
+    },
+    {
+      "claim_id": "b29b4303-6372-40a4-8c43-9bf5f6eaabd1",
+      "result_id": "98da7f1e-3b37-415d-8e58-bc1086aed78c"
+    },
+    {
+      "claim_id": "57246726-d24c-45d1-afd8-67a4feaae2c1",
+      "result_id": "98da7f1e-3b37-415d-8e58-bc1086aed78c"
+    },
+    {
+      "claim_id": "6ab70e3c-7693-4c51-81d9-8f5bd3ab914d",
+      "result_id": "98da7f1e-3b37-415d-8e58-bc1086aed78c"
+    },
+    {
+      "claim_id": "51114043-15cc-47c7-a39b-7f2cf871b27f",
+      "result_id": "69712690-550f-49b9-8ab7-8dfc024b75c7"
+    },
+    {
+      "claim_id": "ca60a3e8-17c4-47fc-a0a9-33f98acf70b3",
+      "result_id": "69712690-550f-49b9-8ab7-8dfc024b75c7"
+    },
+    {
+      "claim_id": "5430381a-c765-45e0-9b37-ba87f02127ca",
+      "result_id": "69712690-550f-49b9-8ab7-8dfc024b75c7"
+    },
+    {
+      "claim_id": "8b109742-1830-410e-95e5-3b47bf9228e5",
+      "result_id": "69712690-550f-49b9-8ab7-8dfc024b75c7"
+    },
+    {
+      "claim_id": "3ce2978d-bcc2-4549-af97-2a825edda739",
+      "result_id": "69712690-550f-49b9-8ab7-8dfc024b75c7"
+    },
+    {
+      "claim_id": "addfd44d-e458-4c95-ae30-4b5203fa6796",
+      "result_id": "69712690-550f-49b9-8ab7-8dfc024b75c7"
+    },
+    {
+      "claim_id": "d57177f1-06de-46b4-857e-f8af45689d05",
+      "result_id": "69712690-550f-49b9-8ab7-8dfc024b75c7"
+    },
+    {
+      "claim_id": "5c811202-f95d-4064-8c04-68484fcd8dc3",
+      "result_id": "69712690-550f-49b9-8ab7-8dfc024b75c7"
+    },
+    {
+      "claim_id": "d8bddde3-00e1-4301-ba9b-d6929a26acaa",
+      "result_id": "69712690-550f-49b9-8ab7-8dfc024b75c7"
+    },
+    {
+      "claim_id": "a8b2d538-7723-4ecf-8f6c-ae618fdd362e",
+      "result_id": "706a20f1-2687-4545-af72-f2aca19b5fe9"
+    },
+    {
+      "claim_id": "9918b408-dbb2-4cf4-87b7-74746d7be358",
+      "result_id": "706a20f1-2687-4545-af72-f2aca19b5fe9"
+    },
+    {
+      "claim_id": "bc0b6205-7b1e-41f7-becb-f0dcd3a4b306",
+      "result_id": "706a20f1-2687-4545-af72-f2aca19b5fe9"
+    },
+    {
+      "claim_id": "dff6b51f-8d59-47b0-a935-21f93b138ec4",
+      "result_id": "e77ad20c-e431-491a-be4a-d1bfa57b1201"
+    },
+    {
+      "claim_id": "09a56973-abf9-4f61-af60-6a6cc8969d32",
+      "result_id": "e77ad20c-e431-491a-be4a-d1bfa57b1201"
+    },
+    {
+      "claim_id": "a963835a-b20e-491b-bf6d-fee26022899d",
+      "result_id": "e77ad20c-e431-491a-be4a-d1bfa57b1201"
+    },
+    {
+      "claim_id": "535f348e-918a-4c33-a35e-ea24a467898f",
+      "result_id": "e77ad20c-e431-491a-be4a-d1bfa57b1201"
+    },
+    {
+      "claim_id": "4c9c0e4f-92f2-4ccd-8461-88faa1536c17",
+      "result_id": "e77ad20c-e431-491a-be4a-d1bfa57b1201"
+    },
+    {
+      "claim_id": "6e9a2cf1-873e-4672-b03a-3f19eecf3a5d",
+      "result_id": "e77ad20c-e431-491a-be4a-d1bfa57b1201"
+    },
+    {
+      "claim_id": "b1b6d261-8d78-41d8-b922-97a9522c2cb4",
+      "result_id": "e77ad20c-e431-491a-be4a-d1bfa57b1201"
+    },
+    {
+      "claim_id": "cecfba2f-1e88-47e5-8892-7e1b5133e5ec",
+      "result_id": "623a460f-2aa4-4c58-966c-ae1693ed3113"
+    },
+    {
+      "claim_id": "db6e1bd3-a78d-4a0a-be3c-acbb22b0006b",
+      "result_id": "623a460f-2aa4-4c58-966c-ae1693ed3113"
+    },
+    {
+      "claim_id": "d48a0326-dc44-45b2-9c7f-021afe5f832b",
+      "result_id": "623a460f-2aa4-4c58-966c-ae1693ed3113"
+    },
+    {
+      "claim_id": "1036ddf0-7ab5-4801-bfa7-e7af47b44ba3",
+      "result_id": "623a460f-2aa4-4c58-966c-ae1693ed3113"
+    },
+    {
+      "claim_id": "57f451ee-b08e-48b8-8eb8-270893a0b8fe",
+      "result_id": "8228ec75-b97a-4fc1-83f7-29514dbdf40a"
+    },
+    {
+      "claim_id": "578d0fa9-e68c-4d9e-a40e-cdaa44f9f84d",
+      "result_id": "8228ec75-b97a-4fc1-83f7-29514dbdf40a"
+    },
+    {
+      "claim_id": "86274261-47e9-47a6-8ee4-2ac61612557c",
+      "result_id": "6d61b5ff-6e37-40d6-9532-829278088a88"
+    },
+    {
+      "claim_id": "f83fce21-39b6-443f-9ed6-e3a723a8ce1e",
+      "result_id": "6d61b5ff-6e37-40d6-9532-829278088a88"
+    },
+    {
+      "claim_id": "8ceeb5bf-31af-4613-98cd-36ef198abcab",
+      "result_id": "6d61b5ff-6e37-40d6-9532-829278088a88"
+    },
+    {
+      "claim_id": "d42413e4-4278-4bc2-8b33-a4b80146b64a",
+      "result_id": "6d61b5ff-6e37-40d6-9532-829278088a88"
+    },
+    {
+      "claim_id": "9eaf2bc5-e28f-4924-bb69-06d3b0ead90c",
+      "result_id": "6d61b5ff-6e37-40d6-9532-829278088a88"
+    },
+    {
+      "claim_id": "cf4212bb-3520-4d8c-9642-f613b637d38a",
+      "result_id": "6d61b5ff-6e37-40d6-9532-829278088a88"
+    },
+    {
+      "claim_id": "c97f1c45-b3eb-4140-9e99-a8be946a1566",
+      "result_id": "48807e35-6b7f-43dd-a245-97bdd43920ef"
+    },
+    {
+      "claim_id": "4ece9cf3-9aff-4830-ba12-0a1dbe3b1958",
+      "result_id": "48807e35-6b7f-43dd-a245-97bdd43920ef"
+    },
+    {
+      "claim_id": "86e59b81-7af9-4f18-bb5c-0675a12b3d4e",
+      "result_id": "48807e35-6b7f-43dd-a245-97bdd43920ef"
+    },
+    {
+      "claim_id": "4cb8afee-4488-462a-a6ae-e1aaab57bfed",
+      "result_id": "645063e2-d423-404a-90b0-d7c84e213995"
+    },
+    {
+      "claim_id": "384c4f9c-3c08-432d-9108-554ba56b33e4",
+      "result_id": "645063e2-d423-404a-90b0-d7c84e213995"
+    },
+    {
+      "claim_id": "a3772413-84c4-4dbb-a6a9-fbb2ca18721c",
+      "result_id": "645063e2-d423-404a-90b0-d7c84e213995"
+    },
+    {
+      "claim_id": "c2feea02-5747-47ee-8743-7de31af13b80",
+      "result_id": "645063e2-d423-404a-90b0-d7c84e213995"
+    },
+    {
+      "claim_id": "13304742-3dba-49ae-9ca1-e9b4da82dec8",
+      "result_id": "645063e2-d423-404a-90b0-d7c84e213995"
+    },
+    {
+      "claim_id": "bf18fe06-ed0f-422b-8090-681e14725858",
+      "result_id": "645063e2-d423-404a-90b0-d7c84e213995"
+    },
+    {
+      "claim_id": "a5f7e1b3-4ab9-4c72-9d16-118aee66e1bb",
+      "result_id": "645063e2-d423-404a-90b0-d7c84e213995"
+    },
+    {
+      "claim_id": "054889a2-7494-45e0-9e1a-73a674947f73",
+      "result_id": "645063e2-d423-404a-90b0-d7c84e213995"
+    },
+    {
+      "claim_id": "fa07134a-92fb-4a25-835c-3512b734fc35",
+      "result_id": "645063e2-d423-404a-90b0-d7c84e213995"
+    },
+    {
+      "claim_id": "c402e33f-3a26-446c-9946-222e2d740de2",
+      "result_id": "645063e2-d423-404a-90b0-d7c84e213995"
+    }
+  ],
+  "comparisons": []
+}

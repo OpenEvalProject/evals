@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A high-throughput screen of 414 IFN\u03b3-induced ISGs identified three genes (IRF1, TRIM31, and RARRES3) that restrict T. gondii CTG strain infection in A549 cells. The screen achieved high transduction efficiency (86% of ISGs expressed in \u226550% of cells) and used automated microscopy to quantify infection parameters at 36 hours post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44-C50 describe the screening methodology and primary hits. The experimental design is clearly described with appropriate controls, statistical analysis (two-way ANOVA, p<0.0001), and high transduction efficiency documented. The identification of three restrictive ISGs is supported by quantitative imaging data shown in Figure 1E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Six ISGs (IL7R, IFITM1, MX1, DHX58, RNF19B, and CNDP2) significantly promoted parasite growth in the screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 reports ISGs that enhanced infection, identified with the same statistical rigor as restrictive ISGs. While not the focus of follow-up studies, this finding is supported by the screening data and represents a valid observation from the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "IDO1 does not play a major role in restricting T. gondii in A549 cells under the experimental conditions used (16 \u00b5g/ml tryptophan, high IFN\u03b3 doses).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 address why IDO1 was not identified in the screen. IDO1-/- cells showed no impairment in IFN\u03b3-mediated restriction (Figure 1F with western blot confirmation). The authors appropriately note that high tryptophan concentration may prevent IDO1-mediated depletion, providing context for the negative result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Validation experiments confirmed that RARRES3 and IRF1 ectopic expression restrict T. gondii infection without cytotoxicity, while TRIM31 showed no significant effect. RARRES3 and IRF1 reduced vacuole size at 36 hr and total infected area at 96 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 describe validation of screen hits. Cell viability data (Figure 2A-B) demonstrates lack of cytotoxicity. Quantitative infection data at 36 hr and 96 hr (Figure 2C-F) with appropriate statistical analysis confirms restriction by RARRES3 and IRF1. The negative result for TRIM31 is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNA-seq analysis revealed that IRF1 induces 160 genes while IFN\u03b3 induces 380 genes in A549 cells (FDR\u22640.05, \u22652-fold). The ISG library represented 41.1% of IRF1-induced and 53.8% of IFN\u03b3-induced genes, with better coverage of strongly induced genes (67-69% of top 100). Both treatments induced similar biological processes including IFN signaling and immune response. RARRES3 was strongly induced by both IRF1 and IFN\u03b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 present RNA-seq results with appropriate statistical thresholds (FDR\u22640.05, 2-fold change). The comparison with the ISG library is quantitative and shows reasonable coverage, particularly for highly induced genes. GO analysis (Figure 3D-E) supports functional similarity. The finding that RARRES3 is induced by both treatments connects to the screening results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "RARRES3 restricts infection independently of STAT1-mediated IFN\u03b3 signaling and does not modulate immune signaling pathways (NF-\u03baB, ISRE, GAS). The same restriction phenotypes were observed in STAT1-/- cells, and RARRES3 did not affect luciferase reporters for immune signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 demonstrate RARRES3 acts independently of canonical IFN signaling. Experiments in STAT1-/- cells (Figure 4C-F) with confirmed knockout (Figure 4A-B) show identical phenotypes. Luciferase reporter assays (Figure 4G-J) provide additional evidence that RARRES3 does not modulate immune signaling. The inference that RARRES3 plays a direct role is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The enzymatic (phospholipase) activity of RARRES3 is necessary for restriction of infection, as catalytic mutants (C113A, C113S) failed to restrict infection despite strong expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by experiments with catalytic mutants (Figure 5A-B). Both C113A and C113S mutants lost restrictive activity despite being expressed at higher levels than wild-type (western blot confirmation). This structure-function analysis provides mechanistic insight into RARRES3 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Endogenous RARRES3 contributes to IFN\u03b3-mediated restriction of CTG infection. RARRES3-/- cells showed partial alleviation of IFN\u03b3-mediated restriction that was complemented by RARRES3 expression. However, RARRES3 loss did not affect IRF1-mediated restriction, suggesting IRF1 acts through multiple factors or RARRES3 plays a redundant role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 demonstrate physiological relevance using RARRES3-/- cells. The partial rescue phenotype (Figure 5C-D) with complementation validates the knockout. The lack of effect on IRF1-mediated restriction (Figure 5E) is appropriately interpreted as evidence for redundancy or multiple pathways, consistent with the RNA-seq data showing IRF1 induces many genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "RARRES3 had no impact on infection by type I (RH88) or type II (Me49) T. gondii strains, suggesting strain-specific susceptibility possibly due to differential virulence factor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 report negative results for other strains (Figure 5\u2014supplement 1). The data clearly show no effect on RH88 or Me49. The speculation about virulence factors (C88) is appropriately presented as a hypothesis with supporting citations, not as a demonstrated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "RARRES3 induces premature parasite egress. RARRES3 expression increased LDH release during infection, which was blocked by Compound 1 (PKG inhibitor), indicating egress-dependent cell lysis. Live imaging confirmed parasites egressed significantly earlier in RARRES3-expressing cells (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 establish the premature egress mechanism. LDH assays (Figure 6A-B) show increased release blocked by Compound 1, and propidium iodide staining (Figure 6\u2014supplement 1A) confirms cells remain intact with PKG inhibition. Live imaging (Figure 6C, Videos 1-2) provides direct temporal evidence with appropriate statistics (two-way ANOVA). The inference that LDH release is due to egress is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "RARRES3-induced premature egress occurs independently of host cell death pathways. Compound 1 prevented cell loss during infection, and a panel of cell death inhibitors (targeting apoptosis, necroptosis, pyroptosis) failed to block LDH release, except GSK'872 which likely induced apoptosis. These findings indicate RARRES3 triggers egress through a mechanism distinct from cell death induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 systematically rule out cell death as the trigger for egress. Extended time course with Compound 1 (Figure 6E, Figure 6\u2014supplement 1B-C) shows no cell death even at 72 hr when egress is blocked. Comprehensive testing of cell death inhibitors (Figure 6F) with appropriate controls strengthens the conclusion. The interpretation that GSK'872 effects are due to RIP3 inhibition-induced apoptosis is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "RARRES3 restricts CTG infection in HFF cells and contributes to IFN\u03b3-dependent premature egress in this cell type. RARRES3-/- HFFs showed partial reduction in IFN\u03b3-dependent cell death and infection restriction. Compound 1 completely blocked cell death, confirming PKG-dependent egress causes cell lysis in HFFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 extend findings to a second cell line. Ectopic expression (Figure 7A-B) and knockout experiments (Figure 7C-D) show consistent restriction phenotypes. The partial phenotype in RARRES3-/- HFFs indicates RARRES3 is one of multiple factors in this cell type. Compound 1 experiments (Figure 7E, Figure 6\u2014supplement 1D-F) confirm the egress mechanism operates in HFFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "RARRES3 overexpression promotes premature parasite egress independently of host cell death pathways in multiple cell lines, which presumably stunts parasite growth leading to reduced infection overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 synthesize findings from A549 and HFF experiments. The conclusion that egress is cell death-independent is well-supported by data from both cell types. The inference that premature egress stunts growth (C108) is reasonable given the observed reduction in vacuole size and infection spread, though direct measurement of parasite numbers per vacuole would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C61",
+      "C113",
+      "C114"
+    ],
+    "result": "IRF1 restricts T. gondii infection likely through collective action of multiple downstream ISGs. IRF1-induced genes were largely a subset of IFN\u03b3-induced genes including RARRES3, but IRF1-mediated restriction was RARRES3-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C61, C113-C114 characterize IRF1's mechanism. The screen identified IRF1 as restrictive (Figure 1E), RNA-seq showed it induces a subset of IFN\u03b3 genes (Figure 3), and genetic experiments showed RARRES3-independence (Figure 5E). The inference that IRF1 works through multiple ISGs is well-supported by the RNA-seq data showing 160 induced genes and the lack of dependence on the single identified ISG (RARRES3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C115",
+      "C134"
+    ],
+    "result": "The limited number of ISGs capable of restricting T. gondii infection when individually expressed (only 2-3 out of 414) suggests that IFN\u03b3-mediated immunity to T. gondii is a complex, multifactorial process requiring cooperation of multiple ISGs or cellular proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C115, C134 interpret the overall screening results. The observation that only 2-3 ISGs out of 414 restrict infection when individually expressed is clearly documented. The inference that this indicates complexity and requirement for multiple factors is reasonable and consistent with the IRF1 results. This interpretation is strengthened by comparison to viral/bacterial screens that typically identify more hits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C116"
+    ],
+    "result": "Screens of ISGs against viruses and bacteria typically identify 2-3 times more restrictive factors than found in this T. gondii screen. This difference may reflect T. gondii's separation from host cytoplasm via the PVM, its relative autonomy from host machinery, or the complexity of controlling eukaryotic pathogens compared to viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133, C116 contextualize results through comparison with other pathogen screens. The comparison is supported by multiple citations to prior screens. The proposed explanations (PVM barrier, parasite autonomy, pathogen complexity) are presented as speculation with appropriate caveats. These are reasonable hypotheses that warrant future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The mechanism by which RARRES3 induces premature egress is unclear, though its phospholipase A1/A2 activity may alter cellular lipid pools. Increases in phosphatidic acid and lecithin:cholesterol acyltransferase activity have been shown to trigger T. gondii egress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C120 acknowledge knowledge gaps and propose mechanisms. C117 correctly states the mechanism is unclear. C118 is speculation about lipid pool alterations, supported by the requirement for catalytic activity but lacking direct evidence. C119-C120 cite prior work on lipid-triggered egress, providing context but not demonstrating RARRES3 acts through these pathways. Further experiments are needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Premature egress induced by RARRES3 would be expected to be protective in vivo by reducing parasite numbers per infection cycle, exposing parasites to immune recognition, and triggering proinflammatory responses. However, rapid egress could potentially promote spread to neighboring cells or dissemination by phagocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C127 speculate about in vivo consequences. The reasoning about protective effects (C121-C125) is logical and C124 is supported by citation, but these remain untested hypotheses. The alternative possibility of enhanced spread (C126-C127) is appropriately acknowledged with supporting citations. In vivo experiments are required to determine the actual outcome, as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "ISG15 and GBP1 were not identified in the screen despite prior evidence for roles in T. gondii restriction. This may reflect that individual ectopic expression is insufficient, as these proteins require multiple interacting partners (>200 genes involved in autophagy, >240 ISG15-interacting proteins) or additional factors for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C142 address apparent discrepancies with prior literature. The negative results for ISG15 and GBP1 in the screen are factual. The explanation that these proteins require multiple partners is well-supported by citations documenting complex interactions and autophagy requirements. This represents a thoughtful reconciliation of the screening results with prior knockout studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The ISG library may not be exhaustive, and other ISGs that restrict T. gondii could be identified using more focused libraries, different cell lines, or loss-of-function screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 acknowledge study limitations and suggest future directions. C143 correctly notes IDO1 doesn't operate in all cell types (supported by citations). C144-C145 appropriately suggest complementary approaches. These represent reasonable interpretations of the study's scope and appropriate suggestions for future work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The cryo-EM structure of SARS-CoV-2 M protein in lipid nanodiscs was determined to 3.5 \u00c5 resolution, revealing that M forms a 50 kDa homodimer. The structure shows M contains three transmembrane helices per subunit connected to a \u03b2-strand rich cytosolic domain, with specific architectural features including an ~70 \u00c5 height, flattened elliptical transmembrane arrangement, and a large hydrophobic interface between subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM structure determination is well-documented with appropriate resolution (C5), supported by gel filtration data confirming the homodimeric state (C38), and detailed structural descriptions are consistent with the reported density map quality and modeling (C42-C58). The experimental workflow from expression through structure determination follows standard protocols and the structural features are directly observable in the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C94"
+    ],
+    "result": "SARS-CoV-2 M protein is structurally related to the SARS-CoV-2 ORF3a viroporin, with ORF3a being the only structural homolog identified by Dali search. The proteins share similar fold topology and homodimeric assembly (RMSD 4.4 \u00c5 overall, 2.7 \u00c5 and 2.5 \u00c5 for isolated transmembrane and cytosolic domains), but M is wider and flatter than ORF3a due to differences in transmembrane helix packing and cytosolic domain orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural homology is supported by systematic Dali database comparison (C59) and quantitative RMSD measurements (C60-C61). The specific structural differences are well-documented with angular measurements (C65-C66) and detailed descriptions of conformational variations (C62-C64, C94). This represents a novel finding connecting two SARS-CoV-2 proteins through structural analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C9",
+      "C70",
+      "C72"
+    ],
+    "result": "Structural comparison reveals that M contains a small enclosed pocket (~840 \u00c5\u00b3) completely sealed from the surrounding environment, while ORF3a contains a larger open cavity (~1300 \u00c5\u00b3) with tunnels connecting to membrane and cytoplasm. In M, the gap between subunits is confined to the cytosolic domain region, whereas in ORF3a it extends halfway across the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cavity measurements are quantitative (C68) and supported by structural analysis using CASTp software (C69). The differences in pocket/cavity architecture are clearly described with specific structural features explaining the distinctions (C71-C72). The comparison provides mechanistic insight into functional differences between the two proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The structural features of M and ORF3a are consistent with their distinct functional roles: the small enclosed pocket in M supports a structural role, while the large open cavity in ORF3a is consistent with ion channel activity. Tight subunit association may be important for M's structural role, while loose association creating an open cavity may be essential for ORF3a's viroporin activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural observations are well-supported (C8-C9, C68-C72), the functional interpretations (C10-C11, C98-C99) are largely speculative inferences based on structural features and prior knowledge of ORF3a function (C97). No direct functional assays of M are presented to test the structural role hypothesis, making these mechanistic claims uncertain despite being structurally plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The cytosolic domain of M displays a strikingly electropositive surface contributed by 17 basic amino acids organized in three distinct patches, contrasting with ORF3a which presents mixed electrostatic character. The electropositive patches are located on the wide face (8 residues), narrow face (4 residues), and underside (5 residues) of the cytosolic domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrostatic surface characterization is supported by computational analysis (C73) with specific residues identified and mapped (C74-C77). The contrast with ORF3a is documented (C78). This is a direct structural observation from the determined structure with clear quantification of contributing residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C79",
+      "C103",
+      "C117",
+      "C118"
+    ],
+    "result": "The electropositive cytosolic surface of M may facilitate interactions with negatively charged partners including N protein, S protein, and viral RNA. M-N interactions may be mediated by electrostatic interactions between the N C-terminal domain and M's basic patches, and M and N together might facilitate VLP formation through a mechanism analogous to HIV Gag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative hypotheses (C13, C79, C103, C117, C118) based on the observed electropositive surface and general principles of electrostatic interactions. While the structural observation is solid (C12, C73-C77), no direct binding experiments, mutagenesis studies, or functional assays are presented to test these interaction models. The analogy to HIV Gag is purely speculative without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C102"
+    ],
+    "result": "Molecular dynamics simulations over 2 \u03bcs show that M adopts a stable structure with minimal conformational rearrangements at physiological temperature. The overall RMSD is 2.5 \u00c5 with the largest change being a subtle shift in TM1. Multiple structural metrics (C\u03b1 contacts, domain angles, distances, pocket size) remain stable throughout the simulation, and no specific lipid enrichment is observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulation is well-documented with appropriate duration (C81, C82-C83 provide context for timescale), and multiple quantitative metrics support structural stability (C85-C91). The simulation parameters and analysis methods are described. The conclusion of structural rigidity (C92, C102) is supported by the data, though the authors appropriately acknowledge limitations regarding rare conformational changes (C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C80"
+    ],
+    "result": "The structural rigidity observed in MD simulations and the large hydrophobic interface between subunits support a role for M homodimers in scaffolding viral assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural stability is well-demonstrated by MD simulations (C14, C84-C91), the inference that this supports a scaffolding role in viral assembly (C15, C80) is speculative. No assembly assays, VLP formation experiments with M mutants, or other functional data are presented to directly test the scaffolding hypothesis. This remains a plausible but unvalidated inference from structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "AlphaFold and RoseTTAFold predicted structures of M diverge substantially from the experimental structure, with TM1s swapped between subunits and differences in relative domain positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between experimental and predicted structures is documented with visual evidence (Figure 1\u2014figure supplement 3) and specific structural differences are described (C48). This represents an important validation of the experimental structure and highlights limitations of computational prediction for this particular protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C39",
+      "C40",
+      "C101"
+    ],
+    "result": "M does not form higher-order oligomers under experimental conditions similar to those where ORF3a forms stable tetramers. Surface characteristics of the M dimer, particularly the electropositive patches, support the possibility that M exists solely as a dimer in the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The absence of higher-order oligomerization is supported by multiple experimental approaches including fluorescence size exclusion chromatography and large-scale purifications (C39, C100). The contrast with ORF3a behavior is documented (C40). However, the inference that M exists solely as a dimer (C101) is somewhat speculative, as the authors acknowledge in discussion of the complementary study (C110-C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A complementary study reported two M conformations (short and long forms), with the short form similar to the structure reported here. The data suggest M in simple lipid mixtures predominantly adopts the short form, while the long form may be promoted by interactions with other viral components or lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This result integrates findings from another study (C104-C107) with the current work. While the comparison is appropriate, the claims about which form predominates (C108) and what promotes the long form (C109) are speculative inferences. The possibility of M-M interactions under certain conditions (C110-C111) is acknowledged but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Background information on SARS-CoV-2 structural proteins and M protein function, including established roles in viral assembly, interactions with other structural proteins, VLP formation requirements, immune modulation, and prior structural studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout (C1-C36, C112-C116). They provide necessary context for the study but are not novel findings from this work. The citations appear appropriate and the background accurately represents prior knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "M protein sequence is highly conserved across SARS-CoV-2 variants and shows 90.54% similarity between SARS-CoV-1 and SARS-CoV-2, reflecting its critical role in viral replication. M is immunogenic and modulates immune responses, making it an attractive therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence conservation data is supported by appropriate citations (C120-C122, C126-C127) and sequence analysis (Figure 1\u2014figure supplement 4). The immunogenicity claims are well-cited (C123-C124). However, the conclusion that M is an attractive therapeutic target (C125, C128) is more of an inference/opinion based on these properties rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Background on MD simulation timescales: major conformational changes typically occur on microsecond to second timescales, and microsecond simulations can capture large conformational changes of membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide methodological context for the MD simulations, supported by appropriate citations to prior simulation studies (C82-C83). This justifies the 2 \u03bcs simulation duration used in the study.",
+    "result_type": "MINOR"
+  }
+]

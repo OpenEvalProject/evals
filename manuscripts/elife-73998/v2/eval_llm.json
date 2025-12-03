@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Droplet-based scATAC-seq analysis of 15,255 thymic epithelial cells from 4-week-old mice identified 11 distinct cell clusters with differential chromatin accessibility patterns. Clusters were assigned to known TEC subtypes based on accessibility of marker genes: clusters 0 and 4 showed accessible Aire regulatory elements (Aire+ mTECs), cluster 6 showed Irga2 accessibility (tuft-like mTECs), clusters 1-3 represented mTEClo, cluster 7 represented cTECs, and cluster 10 was identified as thymocyte contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 describe scATAC-seq experimental design, clustering results, and cluster assignments based on chromatin accessibility of known marker genes. The data are presented in Figure 1 with appropriate visualization of accessibility patterns. The cluster assignments are logical inferences based on established marker genes and are consistent with prior knowledge of TEC biology. The reproducibility across two experiments (Figure 1\u2014figure supplement 2) strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Droplet-based scRNA-seq analysis of 11,475 thymic epithelial cells from 4-week-old mice identified 18 cell clusters. Clusters were assigned to TEC subtypes based on marker gene expression: R0, R1, R3, and R9 as Aire+ mTECs; R6 as tuft-like mTECs; R7 and R10 as post-Aire mTECs; R13 as Gp2+ TECs; R8 and R11 as cTECs; R15 as structural TECs; and R16 as ciliated TECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 describe scRNA-seq experimental design, clustering, and cluster assignments based on marker gene expression shown in Figure 2. The assignments are well-supported by expression data and consistent with prior literature (multiple citations to Bornstein et al., Dhalla et al., Baran-Gale et al.). Reproducibility between two experiments is demonstrated (Figure 2\u2014figure supplement 2), and integration with published datasets (Figure 2\u2014figure supplements 4-6) validates the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Integration of scATAC-seq and scRNA-seq data revealed correspondence between chromatin accessibility clusters and gene expression clusters. Cluster 0 in scATAC-seq transferred primarily to clusters R0 (56.8%) and R3 (12.9%) in scRNA-seq, while cluster 4 transferred mainly to R1 (57.1%). Cluster R9 appeared to represent a transitional state between R1 and R0, suggesting that TEC heterogeneity observed in gene expression reflects underlying differences in chromatin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe the integration analysis shown in Figure 3, which uses computational methods to transfer cell type labels between scATAC-seq and scRNA-seq datasets. The transfer percentages are quantitatively reported and visualized. The inference about R9 as a transitional state (C49) is reasonable based on its spatial position in UMAP space. The overall conclusion (C50) logically follows from the integration results, though it represents an interpretation rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Aire+ mTECs are divided into two subsets based on proliferation markers and chromatin accessibility. Cluster R1 in scRNA-seq expresses cell cycle-related genes and corresponds to cluster 4 in scATAC-seq. Despite both clusters 0 and 4 having accessible Aire enhancer elements, 269 genomic regions were significantly more accessible and 147 regions less accessible in cluster 4 compared to cluster 0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by gene expression data (Figure 2\u2014figure supplement 3B) and differential accessibility analysis (Supplementary file 3, Figure 3\u2014figure supplement 3). The identification of distinct chromatin states within Aire+ mTECs is a key finding. However, the statistical criteria for 'significantly' different accessibility (C53) should be explicitly stated in methods. The conclusion (C54) appropriately integrates the chromatin and expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "RNA velocity analysis predicted that cluster R1 differentiates into other Aire+ mTEC clusters (R0, R3, R9), and trajectory analysis of scATAC-seq data suggested a transition between clusters 4 and 0. These computational analyses support the hypothesis that the Aire+ mTEC subset expressing cell cycle genes (cluster 4/R1) represents transit-amplifying cells with distinct chromatin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe computational trajectory analyses shown in Figure 3\u2014figure supplement 4. RNA velocity and Monocle3 trajectory analyses are appropriate methods for inferring differentiation dynamics from single-cell data. The consistency with prior analyses (citation to Dhalla et al., 2020) strengthens C55. However, these are computational predictions that require experimental validation. The conclusion (C57) is a reasonable interpretation but represents a hypothesis rather than definitive proof of transit-amplifying cell identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Subclustering of proliferating cluster R1 revealed seven subclusters (R1A-R1G) with distinct gene expression and cell cycle profiles. Subclusters R1A-R1E expressed both Aire and Cd80, while R1F and R1G expressed Ccl21a but not Aire. Cell cycle analysis showed R1A, R1B, and R1F contained mainly G2M phase cells, while R1D, R1E, and R1G contained S phase cells, suggesting proliferating TECs consist of two distinct subsets distinguished by Aire and Ccl21a expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 describe subclustering analysis shown in Figure 4. The identification of seven subclusters with distinct marker expression (C59-C60) is supported by the data. Cell cycle scoring (C61-C62) is an established computational method. The conclusion (C63) appropriately synthesizes the findings. However, the biological significance of separating proliferating cells by cell cycle phase (G2M vs S) within the same lineage is unclear and may reflect technical variation in cell cycle synchronization rather than distinct cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Using Fucci2a reporter mice crossed with Aire-GFP mice, Venus+ (proliferating) cells were detected among CD80hi mTECs that also expressed GFP (Aire). Immunostaining confirmed nuclear localization of Aire protein in sorted Venus+ CD80hi mTECs and showed Venus+ cells localized in the thymic medulla, with some Aire+ mTECs being Venus+, confirming the presence of proliferating Aire+ CD80hi mTECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 describe Fucci reporter experiments shown in Figure 5 and Figure 5\u2014figure supplements 1-2. Flow cytometry (C64-C65), immunocytochemistry (C67), and tissue immunostaining (C68) provide converging evidence for proliferating Aire+ mTECs. The use of multiple orthogonal methods strengthens the conclusion (C69). A potential concern is spectral overlap between GFP and Venus mentioned in the text, which may affect quantitative comparisons of Aire expression levels, though this doesn't invalidate the qualitative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNA-seq analysis of Venus+ versus Venus\u2212 CD80hi mTECs from Fucci mice revealed considerably different gene expression profiles. Venus+ cells showed enrichment of cell cycle-related genes and expressed significantly lower levels of Aire-dependent TSAs compared to Venus\u2212 cells, while Aire-independent TSAs showed a smaller difference. These findings suggest proliferating Aire+CD80hi mTECs are phenotypically immature compared to quiescent Aire+CD80hi mTECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 describe bulk RNA-seq analysis shown in Figure 5E-G and Supplementary files 5-6. The differential expression is clearly demonstrated with appropriate visualizations (scatter plots, volcano plots, GSEA). The key finding that proliferating Aire+ cells express low TSA levels (C72) is well-supported and biologically significant. The conclusion (C74) appropriately interprets the data. Sample size (N=3) is adequate for bulk RNA-seq. Statistical methods (FDR correction) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "BrdU pulse-labeling experiments showed that 35% of mCherrylo CD80hi mTECs were labeled at day 0.5 versus 3% of mCherryhi cells, indicating faster cell cycle progression in mCherrylo. By day 3.5, BrdU+ cells in the mCherrylo fraction significantly decreased while BrdU+ cells in mCherryhi increased and plateaued through day 6.5. The BrdU mean fluorescence intensity in mCherryhi at day 3.5 was ~50% lower than in mCherrylo at day 0.5, suggesting mCherryhi cells were generated after cell division. These data indicate mCherrylo cells are transiently proliferating and convert to mCherryhi after division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 describe BrdU pulse-chase experiments shown in Figure 6. The experimental design is appropriate for tracking cell division and fate. The quantitative data (C75-C76, C80) support the conclusions. The decrease in BrdU+ mCherrylo cells (C78) and increase in BrdU+ mCherryhi cells (C79) provide strong evidence for conversion. The 50% reduction in BrdU MFI (C80) is consistent with one cell division. Statistical significance is reported (p-values in figure). Sample sizes (N=7 for day 0.5, N=3 for later timepoints) are reasonable. The conclusion (C81) is well-supported by the kinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Reaggregated thymic organ culture (RTOC) experiments showed that sorted mCherrylo cells cultured with wild-type embryonic thymic cells generated mCherryhi cells after 5 days, with Venus+mCherrylo cells being absent in RTOC. RNA-seq analysis showed mCherrylo expressed lower Aire-dependent TSAs than mCherryhi, but mCherryhi-RTOC cells showed higher TSA levels than the original mCherrylo. Genes highly expressed in mCherrylo, Venus+ cells, and cluster R1 were down-regulated in mCherryhi-RTOC, suggesting mCherrylo cells converted into mCherryhi in RTOC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 describe RTOC experiments shown in Figure 7 and Figure 7\u2014figure supplements 1-2. The experimental design appropriately tests differentiation capacity. The appearance of mCherryhi from mCherrylo cultures (C82) and absence of Venus+ cells (C83) support conversion. The requirement for syngeneic fetal thymus (C84) suggests TCR-MHC interactions are important. RNA-seq data (C85-C88) show appropriate molecular changes accompanying the phenotypic conversion. The conclusion (C89) is well-supported. However, RTOC is an artificial system and may not fully recapitulate in vivo differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Well-based scRamDA-seq analysis integrated with droplet-based scRNA-seq data showed that mCherryloCD80hi mTECs (36 cells) were assigned mainly to clusters R1 and R9, while mCherryhiCD80hi mTECs (35 cells) were more heterogeneous, assigned to clusters R0, R3, R5, R7, R10/15, and R13. After RTOC, mCherryhi-RTOC cells (65 cells) showed heterogeneous populations including R0, R3, R5, R6, R7, and R10/15, expressing high TSA levels. These data suggest mCherryloCD80hi mTECs differentiate into multiple mature mTEC subtypes including Aire+ mTECs, post-Aire mTECs, and tuft-like mTECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 describe well-based scRNA-seq analysis shown in Figure 7E-G and Supplementary file 8. The integration of well-based and droplet-based scRNA-seq is technically sound. The cell numbers are small (36-65 cells per condition) but adequate for well-based scRNA-seq. The assignment of cells to clusters (C90-C92) is clearly presented. The high TSA expression in RTOC-derived cells (C93) supports functional maturation. The conclusion (C94) appropriately interprets the multi-lineage differentiation potential. However, the small cell numbers limit statistical power for rare cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Flow cytometry analysis of Fucci Aire-GFP mice at 4, 8, and 19 weeks of age showed that Venus+ mTEChi cells expressing Aire genes were present in 19-week mice as well as younger mice, strongly suggesting that transit-amplifying TECs persist in the adult thymus as a source of mature mTECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 describe age-course experiments shown in Figure 8A. The presence of Venus+ Aire+ mTECs across multiple ages (C95-C96) is clearly demonstrated by flow cytometry. Sample size (N=4 per genotype) is adequate. The conclusion (C97) is reasonable but represents an inference rather than direct proof of function. Longitudinal tracking or ablation experiments would provide stronger evidence for the proposed role as a source of mature mTECs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Integrative analysis of scATAC-seq and scRNA-seq identified proliferating mTECs with specific chromatin structure expressing high levels of Aire and CD80 (Aire+CD80hi). Using Fucci technology, proliferating Aire+CD80hi mTECs were shown to express minimal Aire-dependent TSAs and convert into quiescent Aire+CD80hi mTECs expressing high TSA levels after transit amplification. These data provide evidence for transit-amplifying Aire+mTEC precursors in the postnatal thymus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 represent the main conclusions of the study, synthesizing findings from multiple experimental approaches. The integrative computational analysis (C5), Fucci reporter experiments (C6-C7), and lineage tracing experiments (C8) provide converging evidence. The conclusion (C9) is well-supported by the collective data. However, definitive proof of transit-amplifying identity would require demonstrating limited self-renewal capacity and obligate differentiation, which is not directly shown. The term 'transit-amplifying' is appropriately used based on the short-lived, proliferative nature and differentiation into multiple mature subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors propose a model where Aire+ TA-TECs are generated from Aire-negative progenitors, undergo cell division, and differentiate into quiescent Aire+ mTECs through a transition stage (cluster R9), accompanied by chromatin structure changes. Post-mitotic Aire+ mTECs then begin high-level TSA expression and further differentiate into post-Aire mTECs by closing the Aire enhancer region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 describe a proposed model shown in Figure 8B. These are explicitly stated as hypotheses ('we hypothesize' in C98) rather than demonstrated findings. While the model is consistent with the data presented, key aspects are not directly tested: the identity of Aire-negative progenitors (C98), the mechanistic basis of chromatin changes (C100), and the causal relationship between Aire enhancer closure and post-Aire differentiation (C101). The model represents a reasonable interpretation but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Although TA-TECs express AIRE protein, they show much lower expression of Aire-dependent TSAs than quiescent AIRE+ TECs, suggesting AIRE is necessary but not sufficient for TSA induction. Possible explanations include: AIRE requires other regulators for TSA expression, cell proliferation inhibits AIRE-induced TSA expression, or mechanisms exist that suppress AIRE function in TA-TECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is well-supported by RNA-seq data (Figure 5F-G). The inference that AIRE is necessary but not sufficient (C107) is logical given that AIRE is present but TSAs are low. However, claims C108-C110 are explicitly speculative explanations ('may be', 'another possibility') that are not tested experimentally. These represent reasonable hypotheses for future investigation but should not be considered supported results. The observation (C106-C107) is SUPPORTED, but the mechanistic explanations (C108-C110) are UNCERTAIN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors note a discrepancy with Wells et al. (2020), who proposed TA-TECs belong to MHC IIloAire\u2212 subsets, whereas the current study identifies CD80hi AIRE+ TA-TECs. The authors suggest this inconsistency may be due to slightly lower surface expression of MHC II and CD80 in TA-TECs compared to mature mTECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 appropriately acknowledge and discuss discrepancies with prior work. C103 accurately cites Wells et al. C104 correctly summarizes the current findings. The proposed explanation (C105) is speculative but reasonable given the flow cytometry data showing slightly lower CD80 in Venus+ cells (Figure 5\u2014figure supplement 1B). This represents appropriate scientific discussion of conflicting results rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Integration and splitting analysis suggested substantial reproducibility in both scRNA-seq and scATAC-seq analyses, with similar UMAP and clustering between experiments even without batch effect reduction. However, the authors note that only two droplet-based experiments may be less reliable for differential gene expression due to limited gene detection per cell, and recommend confirming single-cell results with orthogonal methods like flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by the reproducibility analyses shown in Figure 1\u2014figure supplement 2 and Figure 2\u2014figure supplement 2. The speculation about high-dimensional data explaining reproducibility (C121) is reasonable. The cautionary statements (C122-C123) demonstrate appropriate scientific rigor in acknowledging limitations. The authors appropriately followed their own recommendation by validating key findings with Fucci reporters, immunostaining, and bulk RNA-seq.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The introduction establishes background knowledge about mTEC biology, including their role in T cell tolerance through TSA expression regulated by AIRE and FEZF2, mTEC turnover dynamics, differentiation pathways, heterogeneity revealed by scRNA-seq, and the concept of transit-amplifying cells. The authors identify knowledge gaps regarding mechanisms of postnatal mTEC differentiation, correlation between gene expression heterogeneity and chromatin structure, and properties of candidate TA-TECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29 represent background knowledge and literature review from the introduction. These are appropriately cited to primary literature and accurately represent established knowledge in the field. The identification of knowledge gaps (C4, C14, C23, C29) appropriately motivates the study. These claims provide essential context but are not primary findings of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The discussion contextualizes findings within existing literature, proposes that mTEC differentiation may coordinate with cell cycle regulation, discusses the identity of mTEC progenitors, acknowledges failure to detect mTEC stem cells in adult scRNA-seq data, and suggests future research directions. The authors propose that understanding TEC differentiation mechanisms may aid development of therapies for thymus-related diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C126 represent discussion points, speculation, and future directions rather than primary findings. Some are reasonable interpretations (C102, C114), some acknowledge limitations (C116), and some are speculative about clinical relevance (C125-C126). These appropriately contextualize the work but do not constitute supported results. The failure to detect stem cells (C116) is a negative result that is honestly reported.",
+    "result_type": "MINOR"
+  }
+]

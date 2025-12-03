@@ -1,0 +1,2294 @@
+{
+  "submission": {
+    "id": "32aacb78-7d5e-4a9c-9012-7f465e3171c6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:13:01.992178Z",
+    "updated_at": "2025-12-03T16:13:01.992178Z"
+  },
+  "content": [
+    {
+      "id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "submission_id": "32aacb78-7d5e-4a9c-9012-7f465e3171c6",
+      "content_type": "manuscript",
+      "content_text": "# The evolution of manipulative cheating\n\n## Authors\n\n- Ming Liu<sup>1</sup> ([ORCID: 0000-0002-5170-8688](https://orcid.org/0000-0002-5170-8688)) \u2020\n- Stuart Andrew West<sup>1</sup> ([ORCID: 0000-0003-2152-3153](https://orcid.org/0000-0003-2152-3153))\n- Geoff Wild<sup>2</sup> ([ORCID: 0000-0001-7821-7304](https://orcid.org/0000-0001-7821-7304))\n\n### Affiliations\n\n1. Department of Biology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n2. Department of Mathematics, The University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n\n\u2020 Corresponding author\n\n## Abstract\n\nA social cheat is typically assumed to be an individual that does not perform a cooperative behaviour, or performs less of it, but can still exploit the cooperative behaviour of others. However, empirical data suggests that cheating can be more subtle, involving evolutionary arms races over the ability to both exploit and resist exploitation. These complications have not been captured by evolutionary theory, which lags behind empirical studies in this area. We bridge this gap with a mixture of game-theoretical models and individual-based simulations, examining what conditions favour more elaborate patterns of cheating. We found that as well as adjusting their own behaviour, individuals can be selected to manipulate the behaviour of others, which we term \u2018manipulative cheating\u2019. Further, we found that manipulative cheating can lead to dynamic oscillations (arms races), between selfishness, manipulation, and suppression of manipulation. Our results can help explain both variation in the level of cheating, and genetic variation in the extent to which individuals can be exploited by cheats.\n\n## Introduction\n\nMany social interactions involve a trade-off between investing in behaviours or traits that increase the productivity of the group, versus those that increase an individual\u2019s share of group productivity (Frank, 1998; Bourke, 2011; Queller and Strassmann, 2018; Figure 1a). A female social insect larva could become a queen or a worker (Hamilton, 1972). A slime mould cell could become a stalk or a spore within a fruiting body (Strassmann et al., 2000). A bacterial cell could invest costly resources into producing some \u2018public good\u2019 that benefits the local group of cells, such as iron scavenging siderophore molecules (Griffin et al., 2004).\n\nA standard assumption is that individuals can behave more selfishly by investing less in cooperative behaviours that benefit the group, and by taking a larger share of the available resources (Ghoul et al., 2014). For example, a slime mould lineage could \u2018cheat\u2019 by having a larger proportion of its cells develop into spore cells, or a bacterial cell could cheat by producing fewer siderophores (Strassmann et al., 2000; Jiricny et al., 2010). When cheats can invade, theory predicts that this will lead to either uniform cooperation at a lower level or the coexistence of cheats and cooperators (Queller, 1984; Frank, 1994; Frank, 1998; West and Buckling, 2003; MacLean and Gudelj, 2006; Ross-Gillespie et al., 2007; Gore et al., 2009; Frank, 2010c; Frank, 2010a; Frank, 2010b; Patel et al., 2019). Coexistence is only expected when some factor leads to the fitness of cheats being higher when they are less common (frequency-dependent selection).\n\nIn contrast, the empirical data suggests that there can be more complex forms of cheating and resistance to cheating within social groups. For example, in the slime Dictyostelium discoideum: (i) lineages appear to be able to evolve resistance to cheating, where they prevent other lineages from obtaining a higher proportion of spore cells (Buttery et al., 2009; Khare et al., 2009; Levin et al., 2015); (ii) genomic data suggests an ongoing evolutionary arms race, and not just selection towards an optimal level of cooperation (Ostrowski et al., 2015; Noh et al., 2018; Ostrowski, 2019). In some ant species, genetic variation appears to be maintained in the extent to which different patrilines contribute to the production of workers in a colony, a phenomenon termed \u2018royal cheating\u2019 (Hughes et al., 2003; Linksvayer, 2006; Anderson et al., 2008; Hughes and Boomsma, 2008; Mitchell et al., 2012; St\u00fcrup et al., 2014). In Pseudomonas bacteria, strains appear to vary in both the extent to which they can cheat by exploiting the siderophores produced by other strains and the extent to which they can be cheated by other strains (K\u00fcmmerli et al., 2009; Bruce et al., 2017; Butait\u0117 et al., 2017). In all these cases, cheating appears to involve doing more than just cooperating at a lower level. Other examples of more complex forms of cheating can be found in bacteria, viruses, and replicator RNA (Pollak et al., 2016; Furubayashi et al., 2020; Bruce et al., 2021; Mizuuchi et al., 2022).\n\nOur aim is to explain how these more complex forms of cheating can be maintained in a population. As mentioned above, most evolutionary models assume that an individual can control their own investment into selfish and cooperative behaviours \u2013 put simply, an individual cheats by investing less in cooperation (Queller, 1984; MacLean and Gudelj, 2006; Ross-Gillespie et al., 2007; Gore et al., 2009; Frank, 2010c; Patel et al., 2019). We investigate another possibility, that individuals can manipulate the behaviour of others. For example, an ant patriline may increase the likelihood that its own larvae are raised as queens, while reducing the likelihood that the larvae of other patrilines are reared. Or a bacteria cell lineage could increase the public goods produced by another lineage. Such \u2018manipulative cheating\u2019 could involve a variety of mechanisms, ranging from coercive communication to more direct influencing.\n\nWe develop a series of models to examine whether manipulative cheating can be favoured, and if it will lead to variation in the extent to which individuals can exploit others. In addition, we explore how once manipulation has evolved, there could be selection to evolve resistance or suppression of that cheating. We use a mixture of game theory and simulation, to examine scenarios where resistance can evolve relatively simply, or where there are multiple mechanisms of manipulative cheating that each require a different form of resistance. Our model assumes an asexual haploid population, but we also examine the consequences of recombination. We find that natural selection can maintain a variety of strategies at equilibrium, as well as the possibility for ongoing oscillating dynamics, such as evolutionary arms races. While our focus is on \u2018manipulation\u2019, our more general aim is to investigate scenarios where cheating is more than just \u2018cooperate less\u2019.\n\n## Materials and methods\n\n### Model overview\n\nOur aim is to investigate the general feasibility of manipulation, in a way that could be applicable across a range of species and does not rely on the specifics of any single species. Consequently, we have chosen a deliberately simple approach to maintain tractability. We use a combination of modelling approaches to examine the evolutionary stability and dynamics of manipulative cheating.\n\nFirst, we use an equilibrium game theoretical approach to examine under what conditions manipulative cheating could be favoured. Our model is based on the classic tragedy of the commons model (Frank, 1994; Frank, 1996; Frank, 1998; Dionisio and Gordo, 2006; Frank, 2010a; Frank, 2010b), where individuals can invest in their own selfish reproduction, or the productivity of the group (Figure 1a; Appendix 1\u20141.2). We extend this model by assuming that: (i) individuals can invest effort into manipulating the behaviour of others to make them cooperate at a higher rate (behave less selfishly; Figure 1b); and (ii) individuals can also invest effort into suppressing (blocking) the extent to which they are manipulated by others (Figure 1c). We then test the robustness of our game-theoretical results by comparing them with individual-based simulations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80611/elife-80611-fig1-v2.jpg)\n\n**Figure 1.:** Each individual can put effort into three actions: (a) invest resources into reproduction ($z_{i}$ ; represented by stripe texture) or group productivity (average cooperation; $1-z-$); (b) manipulate others ($x_{i}$ ; represented by the grid texture), to make them invest more into group productivity; and (c) suppress (block) the manipulation from others ($u_{i}$ ; represented by horizontal dashed texture).\n\nSecond, we examine the consequence of manipulative cheating when multiple different mechanisms of manipulation can evolve, which each requires a different mechanism to suppress. We consider cases where traits are introduced at the same time point or different time points (mutation) and focus on the temporal trait dynamics. As multiple mechanisms could generate complications between traits which cannot be easily presented by equilibrium analysis, we focus on dynamic results from individual-based simulations.\n\nOur general aim is to investigate scenarios where cheating can be more than just \u2018cooperate less\u2019. We do this by developing models focused on the special case of manipulation and its suppression. Other possibilities would include developing coevolutionary genetic models to look at genotype-specific cheating-resistance, analogous to gene-for-gene or matching alleles models of host-parasite coevolution, or to model a different form of coercion (Sasaki, 2000; Agrawal and Lively, 2002).\n\n### Model design\n\nWe assume a haploid and asexual population inhabiting an infinite number of identical habitat patches, where each patch supports a single social group and lets social interactions take place. We also assume the fitness of each individual is proportional to the productivity of the social group multiplied by the individual\u2019s share of group productivity, and all offspring compete globally for patches in the next generation. Within each social group, each individual divides its effort into cooperation with group members, which aids group productivity or selfishly reproducing (gaining a greater share of the group productivity). We consider three coevolving traits:\n\nSelfishness ($z$): We assume that when individuals put more effort into reproduction ($z$), they: (i) obtain a larger share of the group productivity; (ii) put less effort into cooperation, which reduces group productivity. Specifically, if a focal individual $i$ invests $z_{i}$ , into reproduction, and the group average of all individuals in the group is $z-$ ($0<z<1$). In other words, the parameter $z$ measures the level of \u2018selfishness\u2019 (Figure 1a; Frank, 1994; Frank, 1996; Frank, 1998; Dionisio and Gordo, 2006; Frank, 2010a; Frank, 2010b).\n\nManipulative cheating ($x$): We assume that a focal individual can invest $x$ in manipulation, which causes other individuals to invest fewer resources into their own reproduction, and instead invest those resources into the reproduction of the focal individual (manipulator; $0<x<1$; Figure 1b). This manipulation requires effort and so reduces the resources that the manipulator contributes to group productivity (by $x-$). Manipulation $x$ therefore takes reproduction from others, whereas selfishness $z$ shifts an individual\u2019s allocation between cooperation and reproduction. Consequently, manipulation is redistributing the share of all individual\u2019s reproduction while z is changing the effort spent in reproduction. For simplicity, we have assumed there is no \u2018loss\u2019 in reproductive effort during the process of manipulation, but we found similar results when manipulation also leads to a personal reproduction cost (Appendix 1\u20143).\n\nSuppression of manipulative cheating ($u$): We add the possibility for individuals to suppress (block) manipulation ($0<u<1$; Figure 1c). When suppression exists, a manipulator can only take a proportion $1-u^{b}$ of reproduction, where b is a shape parameter (see below). Like the other two traits, suppression takes effort and reduces the effort put into group productivity (by $u-)$.\n\nCombining the effects of all three traits lead to:\n\n$$\nw_{i}=\u00a0\\frac{z_{i}+(1\u2212u_{\u2212i}^{b})x_{i}^{a}z_{\u2212i}\u2212(1\u2212u_{i}^{b})x_{\u2212i}^{a}z_{i}}{z\u00af}(1\u2212z\u00af\u2212x\u00af\u2212u\u00af)\n$$\n\nwhere $z_{i}$ is the selfishness of the focal individual, $1-u_{-i}^{b}x_{i}^{a}z_{-i}$ is the gain from manipulating others, $1-u_{i}^{b}x_{-i}^{a}z_{i}$ is the loss from being manipulated, and $1\u2212z\u00af\u2212x\u00af\u2212u\u00af$ is the group productivity. Because the sum of gain and loss across all individuals in the group is zero, the average effort in reproduction is just $z\u00af$ . Thus, the first term is the relative share of group productivity of the focal individual (i.e. $\\frac{z_{i}+1-u_{-i}^{b}x_{i}^{a}z_{-i}-1-u_{i}^{b}x_{-i}^{a}z_{i}}{z-}$). In other words, our manipulative cheating trait involves an individual actor causing a recipient (other group members) to behave less selfishly (more cooperatively), in a way that is beneficial to the actor, but costly to the recipient. This contrasts with previous theory which examined the consequences of changing the benefit and cost of social behaviour (Frank, 1995), or when relatives are manipulated to perform a social behaviour that provides an indirect benefit to the actor (Gonz\u00e1lez-Forero and Gavrilets, 2013; Appendix 1\u20141.3). We provide a more detailed derivation of equation 1 in Appendix 1\u20141.1. In the special case of no manipulation or suppression, equation 1 simplifies to the classic tragedy of the commons model (Frank, 1994; Frank, 1996; Frank, 1998; West et al., 2002; Dionisio and Gordo, 2006; Frank, 2010a; Frank, 2010b).\n\nWe allow the effects of manipulation and suppression to be nonlinear by the shape parameters, $a$ and $b$. Nonlinearities can arise for a number of reasons, such as mechanisms of molecular diffusion, or interference between the behaviour of different individuals (M\u00fcller et al., 2006; Wiley, 2013; Rogers et al., 2017). The parameter $a$ determines whether the benefit from increased investment into manipulation is decelerating ($a<1$), linear ($a=1$) or accelerating ($a>1$). Similarly, the shape parameter $b$ determines the shape of the benefit of increased investment into suppression. We have focused on the decelerating forms because this will often be the case for biological traits (Appendix 1\u20145.1).\n\nWe use two approaches to analyse the model with different assumptions about recombination, or the degree of linkage, between traits. Our first analysis uses the neighbour modulated fitness of Taylor and Frank, 1996, where one trait is modified at a time to find the convergent stable strategy (Model Analysis and Appendix 1\u20141.1\u20131.2). The analysis assumes all three traits evolve independently; this is equivalent to a model that assumes a sexual diploid with additive interactions between alleles at a given locus and without recombination (Taylor, 1996; Day and Taylor, 1998; Kisdi and Geritz, 1999; Geritz and Kisdi, 2000). The second approach is through individual-based simulations, where recombination process can be explicitly modelled through how traits are inherited between generations (Appendix 1\u20147). The main simulation results also assume the absence of recombination. Nevertheless, we relax the assumption and include recombination by allowing haploid asexual individuals the chances to swap traits in Appendix 1\u20144.4 and 4.8.\n\nWe found it useful to think about manipulation, suppression, and equation 1 with a lottery-ticket metaphor. Imagine reproduction as the buying of a lottery ticket \u2013 producing an offspring, that has some chance of \u2018winning\u2019 (reproducing) in the next generation. Individuals can either invest resources into buying the lottery tickets produced by the group ($z$; selfish), or invest resources into helping the group produce more lottery tickets ($1-z$; cooperation). Each group produces its own lottery tickets and more tickets means a higher chance for the focal group to win. Being more selfish (higher $z$) means obtaining a larger fraction of the lottery tickets produced by the group, but also putting fewer resources into producing tickets (and so the group procures fewer tickets). In contrast, manipulation (higher $x$) allows individuals to steal lottery tickets from others within their group. Suppression, $u$, would involve blocking lottery tickets from being stolen. We consider biological examples of manipulation and suppression in the discussion section.\n\n## Results\n\n### Model analysis\n\nWe seek the evolutionarily stable strategy (ESS), which is the individual strategy that cannot be invaded by any other rare strategy. Using the neighbour-modulated fitness approach of Taylor and Frank, 1996, we find:\n\n$$\n{\u00a0\u00a0\u00a0\u00a0\u00a0\u0394W_{z}=(R\u00af_{\u2212i}\\frac{\u2212(\\frac{n\u22121}{n}\u2212x^{a}(1\u2212u^{b}))}{z}+\\frac{\\frac{n\u22121}{n}\u2212x^{a}(1\u2212u^{b})}{z})(1\u2212z\u2212x\u2212u)\u2212R\u00af\u0394W_{x}=(R\u00af_{\u2212i}(\u2212ax^{a\u22121})(1\u2212u^{b})+ax^{a\u22121}(1\u2212u^{b}))(1\u2212z\u2212x\u2212u)\u2212R\u00af\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u0394W_{u}=(R\u00af_{\u2212i}(\u2212x^{a})bu^{b\u22121}+x^{a}bu^{b\u22121})(1\u2212z\u2212x\u2212u)\u2212R\u00af\n$$\n\nwhere traits are analysed one at a time, where $\\DeltaW_{z}$ means the change in fitness due to a slight increase in selfishness in the focal individual, and analogous for $\\DeltaW_{x}$ and $\\DeltaW_{u}$ . In addition, $R-_{-i}$ denotes the relatedness of focal individual to all other group members, $R-$ indicate the whole-group relatedness (Pepper, 2000; Appendix 1\u20141.2). The two relatedness terms can be linked\u2014 for example, if the group size is $n$, then $R-=1/n+(n-1/n) R-_{-i}$ . For simplicity, we assume all traits only operate within the group so that $R-_{-i}$ does not differ between traits. More general form allowing for cases when different traits are at different social scales is considered in the derivation in Appendix 1\u20141. We also assume each trait evolves independently and there is no allele-level interaction between each trait. Our analyses identify the candidate ESS or convergently stable strategy (Eshel, 1983; Christiansen, 1991), which can be used to make comparative statics predictions (Frank, 1998).\n\nEach of the three equations in Equation 2 represents the change to the inclusive fitness of an individual that occurs when the individual increases the level at which it expresses the focal trait (Hamilton, 1964a; Hamilton, 1964b). Because all three expressions share similar structure, we can simplify them into\n\n$$\n\u0394W_{trait}=(R\u00af_{\u2212i}(\u2212A)+A)(1\u2212z\u2212x\u2212u)\u2212R\u00af\n$$\n\nwhere $A$ is different for each trait and subscript \u2018trait\u2019 means the type of trait we are analysing, which could be $z$, $x$, or $u$. The first term on the right, $-A$, represents the relatedness-weighted reduction in neighbours\u2019 share of group productivity due to an individual\u2019s selfishness or manipulation (an inclusive-fitness cost; e.g. $\\frac{-(\\frac{n-1}{n}-x^{a}1-u^{b})}{z}$ for selfishness). The second term, $A$, represents the increase in personal share of group productivity made by a selfish or manipulative individual (an inclusive-fitness benefit; e.g. $\\frac{\\frac{n-1}{n}-x^{a}1-u^{b}}{z}$ for selfishness). The third term, group productivity, represents a relatedness-weighted reduction in fitness of the average group member, self-included, owing to selfishness, manipulation, or suppression (i.e. $1-z-x-u$). The cost in group productivity is spread equally among all individuals in the group, including the actor. The last term, $R-$, represents the indirect cost of reducing the share of group productivity obtained by relatives.\n\nEquation 2 could not be solved analytically, and so we found solutions with an iterative numerical method (Figure 2; Appendix 1\u20146.2). We tested the robustness of our solutions with an individual-based simulation, which includes mutation and drift. Our simulations and numerical predictions showed close agreement (Figure 2; Appendix 1\u20147).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80611/elife-80611-fig2-v2.jpg)\n\n**Figure 2.:** The panels show the ESS predictions and simulation results for our three-trait model. The solid lines show the ESS predictions, and the dots show the results of our individual-based simulations ($a=b$=0.5). The black segments within each dot show the standard deviation of trait values of the last 10% duration of 10 repeated simulations (Appendix 1\u20147).\n\nWe found that the ESS selfishness, manipulation, and suppression are all predicted to show negative relationships with relatedness (Figure 2). At a lower relatedness, individuals are predicted to: (i) selfishly keep a higher fraction of their resources for themselves (as predicted by the classic tragedy of the commons model); (ii) invest more heavily in manipulating others to help them (as also predicted in a model without suppression; Appendix 1\u20142); (iii) invest more heavily in suppressing manipulation perpetrated by others (when manipulation is at higher levels). These predictions qualitatively hold for a broad range of parameter space, with linear or non-linear returns on increased investment in manipulation and suppression, and show that manipulative cheating as well as its suppression can be favoured by natural selection.\n\nWe predicted that the level of selfishness was greater than the level of manipulation, which was greater than the level of suppression ($z>x>u$). To a large extent this reflects that benefit of manipulation depends upon the level of selfishness, and the benefit of suppression depends upon the level of manipulation. However, the quantitative predictions depend on details such as the specific values of the shape parameters (see below), and these relations need not always hold. Our simulations, which involved mutations, led to relatively static predictions when there is only one mechanism to manipulate and suppress, in agreement with our analytical results, supporting the results as ESSs (dots versus lines in Figure 2).\n\nThe quantitative ESS predictions depend upon the shape parameters (Figure 3). When the shape parameter of manipulation, $a$, is more decelerating, selfishness becomes lower, suppression becomes higher, and manipulation becomes higher until suppression evolved (Figure 3a\u2013c). Secondly, when the shape parameter of suppression, $b$, is more decelerating, selfishness becomes higher, manipulation becomes lower, and suppression becomes higher until there is no manipulation to suppress (Figure 3g\u2013i). Thirdly, when the two shape parameters covary together, the impact on ESS trait values is a combination of the two forementioned effects (Figure 3d\u2013f). Both manipulation and suppression can be favoured across a wide range of parameter values.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80611/elife-80611-fig3-v2.jpg)\n\n**Figure 3.:** Panels (a), (b), and (c) show the predicted ESS level of selfishness ($z^{*}$), manipulation ($x^{*}$), and suppression ($u^{*}$) respectively, for different values of relatedness ($R$, x-axis). From top to bottom, each row of panels presents varying different parameters on y-axis: the shape parameter for manipulative cheating (a-c; $a$), both parameters (d-f; $a$ and $b$), and the shape parameter for suppression (g-i; $b$). The black triangle indicates the horizontal row where the parameter settings are identical to each other and to Figure 2. We have focused on decelerating function for shape parameters because it resembles the nature of communication (Appendix 1\u20146.1).\n\n### Multiple mechanisms for manipulative cheating and suppressing\n\nIn our above model, we have focused on evolutionary equilibrium, assuming there is only a single mechanism to manipulate others. In nature, manipulation could take many forms, and each requires a different form of suppression. This could lead to complicated dynamics, such as a genetic arms race, where different forms of manipulation arise and are then suppressed over time. Because the rise and fall of trait values are potentially transient, we move away from game-theoretical analysis and focus on non-equilibrium scenarios through individual-based simulations. We present two different cases here: one with multiple mechanisms where all are introduced at the same time, and the other with multiple mechanisms where new mechanisms are introduced to the population at different time points (via mutation).\n\nAssuming there are $k$ mechanisms to manipulate and suppress, fitness is given by\n\n$$\nw_{i}=(z_{i}+(1\u2212u_{1,\u2212i}^{b})z_{\u2212i}x_{1,i}^{a}\u2212(1\u2212u_{1,i}^{b})z_{i}x_{1,\u2212i}^{a}+(1\u2212u_{2,\u2212i}^{b})z_{\u2212i}x_{2,i}^{a}\u2212(1\u2212u_{2,i}^{b})z_{i}x_{2,\u2212i}^{a}+\u2026+(1\u2212u_{k,\u2212i}^{b})z_{\u2212i}x_{k,i}^{a}\u2212(1\u2212u_{k,i}^{b})z_{i}x_{k,\u2212i}^{a})\u00a0z\u00af^{\u22121}\u00a0(1\u2212z\u00af\u2212x\u00af_{1}\u2212u\u00af_{1}\u2212x\u00af_{2}\u2212u\u00af_{2}\u2212\u2026\u2212x\u00af_{k}\u2212u\u00af_{k})\n$$\n\nwhere $x_{1}, x_{2},\u2026, x_{n}$ denote the $n$ mechanisms of manipulation and $u_{1}, u_{2},\u2026, u_{n}$ represent suppression. Additional terms of gain and loss from manipulation and being manipulated are added to the first parenthesis, and group productivity can potentially be decreased by all the $2k+1$ traits.\n\nWe first examine this potentially non-equilibrium scenario by assuming all mechanisms are present from the beginning and consider the simplest case of two mechanisms ($k=2$). By simulating various combinations of shape parameters and relatedness, we found that levels of selfishness and manipulation do not always tend to a single equilibrium. Instead, they can oscillate in a periodic style (Figure 4a). Although the oscillation in suppression is less profound, it also fluctuates in a smaller amplitude in response to the changes in levels of manipulation. We used harmonic regression to test for periodic oscillations, as opposed to random noise (Figure 4b and Appendix 1\u20144.2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80611/elife-80611-fig4-v2.jpg)\n\n**Figure 4.:** (a) An example of oscillating dynamics when shape parameters are intermediate, and relatedness is relatively low ($R=1/8$; $a=b=0.7$). Broader analysis and more details are provided in Appendix 1\u20144. (b) The estimated amplitude of the time series of selfishness by harmonic regression. Harmonic regression is an analysis of time series to show the significance of periodic oscillation, where low period means frequent recurrent pattern, and high period means recurrence ager a long span. Here, 10 repeated simulations were used and only the last 75% of the 3000 generations was analysed, after selfishness is roughly stabilised. The analysis shows maximal amplitude is found at period of 815 generations with p-value of 1.8035x10\u20135. Mean estimation is shown in black curve whereas the 95% confidence interval is illustrated as the grey area (F-test; $\\mu\\pm2\\sigma$).\n\nWe found oscillations occur when relatedness is relatively low ($R<1/6$) and when shape parameters are intermediate decelerating ($0.6<a,b<0.85$). In these intermediate settings, the optimal levels of manipulation and selfishness are similar, which could lead to a similar pay-off between investing in them. Thus, any small perturbation in trait values could disturb the dynamics and generate oscillation. In support of the hypothesis that oscillation is a consequence of interactions between selfishness and manipulation, we found that oscillation can be prevented when selfishness cannot mutate (Appendix 1\u20144.3) or when there is no linkage between traits (Appendix 1\u20144.4).\n\nWe also found that oscillations can occur when there are more than two mechanisms to manipulate and supress (Appendix 1\u20144.5), becomes slower when mutation rate is smaller (Appendix 1\u20144.6), and less likely when there is a personal reproduction cost to manipulation and suppression (Appendix 1\u20144.7). The dynamics between cheats and cooperators can involve frequency dependent selection (Ross-Gillespie et al., 2007; Gore et al., 2009; Patel et al., 2019). In this model, we were examining evolution in a continuous trait space and so we were unable to test for frequency-dependent selection in the way that can be done with interactions between cheats and cooperator (i.e. 2 types, as opposed to continuous; Allison, 2005; Yurtsev et al., 2013).\n\nWe also found that recombination between traits could eliminate the oscillations (Appendix 1\u20144.4 and 4.8). We added recombination to our simulation in two ways. The first way is independently inheriting each trait when creating a new group founder for the next generation (Appendix 1\u20144.4). The second way is through allocating all founders in a founder pool and randomly grouped them into pairs. Each pair then exchange one random trait value with a recombination rate (Appendix 1\u20144.8). As a result, the first way is more discrete while the second way is more continuous. Because the group productivity term makes individuals with sum of all trait values exceeding 1 have no fitness, a positively deviated trait value cannot be protected by other traits simultaneously become negatively deviated under the presence of recombination. This finding coincides with previous literature that recombination prevents evolutionary branching into distinct genotypes, because it removes the linkage between strategies (linkage disequilibrium; Abrams et al., 1993; Dieckmann and Doebeli, 1999). Consequently, oscillations are more likely to be seen in asexual species.\n\nWe now consider a slightly different scenario (Figure 5). In the above analysis, we assumed that all manipulation and suppression mechanisms were available at the start of the simulation. An alternative possibility is that different mechanisms can arise over time, by mutation. When a manipulation trait arises, it could be selected for. Furthermore, once a form of manipulation becomes sufficiently common then a mutation that allows suppression of that manipulation could be selected for. These different forms of manipulation could involve very different traits, or new forms of an old trait, that would require a different suppression mechanism. This scenario could potentially lead to an evolutionary arms race where new forms of manipulation evolve and are then suppressed. We modelled this scenario by introducing mutations for new manipulative traits at random time points, and then mutations for the suppression of manipulation 400 generations afterwards for illustrative purpose.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80611/elife-80611-fig5-v2.jpg)\n\n**Figure 5.:** Selfishness is shown in the upper panel, the ten manipulative traits are shown in the middle panel, and the ten suppressive traits are shown in the bottom panel. The y-axis is scaled differently across the panels, to match the levels of variation. Each manipulative and suppressive trait are mutated to non-zero values in arbitrary time points for better visualisation. The shape parameters are set to $a=0.5$ for manipulation and $b=0.01$ for suppression, and the relatedness is $R=1/3$. All data are from a single representative simulation.\n\nWe found that this scenario also leads to a form of arms race (Figure 5). When a new form of manipulation arises, it initially spreads. This spread of manipulation favours lower levels of selfishness, because the manipulation reduces the benefit of selfishly investing in reproduction. In addition, once a manipulation is common, any mutation that allows suppression of that manipulation will be favoured, and hence increase in frequency. As suppression spreads, this selects for reduced investment in manipulation (which would just be blocked), and hence also increased selfish investment in reproduction (which won\u2019t be manipulated anymore) (Figure 5). Overall, this leads to a pattern of recurring dynamics whenever a new manipulative trait arises, and where individuals can show variable levels of selfishness, manipulation and suppression.\n\nFor illustrative purposes, our example in Figure 5 shows the gradual evolution of 10 different manipulation mechanisms and focuses on the parameter space where suppression can almost completely block manipulation in a very effective way ($a=0.5, b=0.01$)(Scott and West, 2019). We examine other scenarios in Appendix 1\u20145 (Appendix 1\u2014figure 14 & Appendix 1\u2014figure 15). The repeated invasion of different forms of manipulation, and their suppression, can be seen as a form of trait substitution sequence (Champagnat, 2006; M\u00e9l\u00e9ard and Tran, 2009). Recombination does not remove this arms race because it results from different traits spreading in turn, rather than oscillations of linked traits.\n\nAltogether, our results from the multiple mechanisms of manipulation suggest that: (i) multiple types of manipulation can arise and / or be maintained in a population; (ii) the manipulation traits and their suppression can sometimes show oscillating dynamics, where the levels of selfishness, manipulation, and/ or suppression oscillate. The oscillation originates either from interactions between coevolving traits (endogenous; Figure 4) or from the introduction of new mechanisms (exogenous; Figure 5). These results provide possible explanations for cases where there appears to be genetic variation for the extent or form of cheating and/or cheating suppression, such as the variance between ant patrilines (Hughes and Boomsma, 2008), slime moulds strains (clones; Buttery et al., 2009; Khare et al., 2009; Levin et al., 2015), or different bacteria strains (K\u00fcmmerli et al., 2009; Bruce et al., 2017; Butait\u0117 et al., 2017).\n\n## Discussion\n\nWe found that: (1) manipulative cheating can be favoured across a wide variety of conditions; (2) manipulation is more likely to be favoured when relatedness is relatively low; (3) suppression of manipulation can also be favoured. In addition, when we allowed for multiple mechanisms (types) of manipulation, we found that non-equilibrium dynamics could occur, such as oscillations. Oscillations could be generated in either (i) a coevolutionary interaction between selfishness and manipulation; or (ii) a genetic arms race between different forms of manipulative cheating and their specific suppressors. These non-equilibrium dynamics could help explain the genetic diversity that has been observed for both cheating and the response to cheating across the biological world (Hughes et al., 2003; Linksvayer, 2006; Anderson et al., 2008; Hughes and Boomsma, 2008; Buttery et al., 2009; Khare et al., 2009; K\u00fcmmerli et al., 2009; Mitchell et al., 2012; St\u00fcrup et al., 2014; Levin et al., 2015; Ostrowski et al., 2015; Pollak et al., 2016; Bruce et al., 2017; Butait\u0117 et al., 2017; Noh et al., 2018; Ostrowski, 2019; Furubayashi et al., 2020; Bruce et al., 2021; Mizuuchi et al., 2022).\n\nOur general aim was to investigate scenarios where cheating is characterised by more than just \u2018cooperate less\u2019. We did this by developing a theoretical model where individuals could manipulate others, to make them cooperate more. There is a range of other possibilities for more complex forms of cheating, such as obtaining a disproportionate share of some public good, where we suggest that a similar logic would apply (i.e. the evolution of \u2018more efficient\u2019 cheating). A key distinction here is that we are not modelling some evolutionarily stable signalling system which benefits the signaller and receiver (Maynard Smith and Harper, 2003). We have instead modelled coercion, which provides no benefit to the recipient of that coercion. Consequently, the response would be to evolve to suppress or ignore that coercion, rather than evolve to some evolutionarily stable mutually beneficial response. It would be useful to examine the consequences of different genetic systems, especially those with asymmetric inheritance such as haplodiploidy. Another useful extension would be to examine caste determination mechanism in social insect, and whether predictions depended upon whether castes are determined by environmental or genetic cues (Schwander et al., 2010).\n\nManipulative cheating could take many different forms in different species. In bacteria and other microorganisms, individuals could produce coercive molecules that make other cells invest more into the production of public goods, and invest less into reproduction. In species that form fruiting bodies, manipulation could cause the cells of other lineages to be more likely to become stalk cells (Buttery et al., 2009; Khare et al., 2009; Levin et al., 2015). In organisms such as social insects, the method of manipulation would depend upon how caste is determined (Schwander et al., 2010). In species where workers control the caste of offspring, manipulation could cause workers from other lineages (different queens or patrilines) to be less likely to rear their own offspring as reproductive, and be more likely to rear the offspring of the manipulating lineage as reproductive (Hamilton, 1972). In species where larvae control their own caste, manipulation could decrease the likelihood that other individuals develop as reproductive (Wenseleers and Ratnieks, 2004). Alternatively, manipulation could occur through more direct approaches, such as selectively killing the eggs from other lineages. These mechanisms all share the same concept that the \u2018more manipulative\u2019 lineage gains a greater share of group productivity.\n\nSimilarly, suppression could involve a variety of different mechanisms, from evolving to ignore coercion, to blocking behaviours that steal resources or kill individuals, to making fewer public goods. Experiments on slime moulds have found that strains can evolve to become more resistant to cheats (Levin et al., 2015). Bacteria appear to be able to produce more specific and less exploitable public goods (K\u00fcmmerli et al., 2009; Bruce et al., 2017; Butait\u0117 et al., 2017). Different lineages of cooperative RNA replicators can survive better against different cheating replicators (Mizuuchi et al., 2022). These cases share the same concept that cooperators can somewhat defend against or suppress the cheats. Other possible mechanisms are discussed elsewhere, for bacteria and viruses.\n\nPrevious theoretical work has focused on conflict suppression and hence how the tragedy of the commons could be avoided (Frank, 1995; West et al., 2002; Frank, 2003; Wenseleers et al., 2003; Wenseleers et al., 2004; Ratnieks et al., 2006). In these previous papers, selfishness could be selected against, by mechanisms such as policing, sanctions, and social reputation, which alter the costs and benefits of behaving selfishly (Frank, 1995; Milinski et al., 2002; Dionisio and Gordo, 2006; Dionisio and Gordo, 2007; El Mouden et al., 2010). In contrast, we have examined a different route to increased selfish behaviour \u2013 the manipulation of others via manipulative cheating. Furthermore, we have shown that if there are multiple manipulation traits, then genotypic diversity can be maintained for selfishness, manipulative cheating, and/or its suppression. This diversity result links to previous work on quorum sensing in bacteria, which has shown how cycles of \u2018cheating\u2019 and \u2018cheating immunity\u2019 can arise (Eldar, 2011; Pollak et al., 2016). Several theoretical models have examined the coevolution of offense and defence traits in ecological interactions (Press and Dyson, 2012; Hilbe et al., 2013) and in sexual conflict (Gavrilets, 2000; Gavrilets et al., 2001; Rowe et al., 2005). These models examined specific ecological scenarios, such as memory of previous interactions or runaway processes. Other recent models have examined a different manipulation question- how individuals can be favoured to manipulate relatives when this leads to an indirect fitness benefit to the manipulator, and the manipulated individual is not selected to resist (Gonz\u00e1lez-Forero and Gavrilets, 2013; Gonz\u00e1lez-Forero, 2014; Gonz\u00e1lez-Forero, 2015; Gonz\u00e1lez-Forero and Pe\u00f1a, 2021). Manipulation can also be favoured in mutualisms if it leads to better terms of trading (Wyatt et al., 2016). More generally, manipulation and counteradaptations to prevent elimination can arise in many forms of communication (Dawkins et al., 1979; Maynard Smith and Harper, 2003).\n\nTo conclude, we have shown how cheating can take more complex forms than just lower levels of cooperation. We have shown that individuals can also be selected to manipulate the behaviour of others, for their own selfish gain. Furthermore, this can lead to evolutionary arms races between attempts to manipulate and to suppress that manipulation. A major task for the future is to determine the extent to which more complex forms of cheating occur in the natural world (Pollak et al., 2016; Meir et al., 2020; Leeks et al., 2021). In many cases, this would require elucidation of the underlying mechanisms, which could be completely different across different species. The potential for manipulation and its suppression could arise at all levels of life, from RNA replicators to complex animal societies.\n",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "a14c3d1c-e4a4-40fa-bc0d-27838f659817",
+      "submission_id": "32aacb78-7d5e-4a9c-9012-7f465e3171c6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sara Mitri, https://ror.org/019whta54 University of Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80611.sa0](https://doi.org/10.7554/eLife.80611.sa0)\n\nThis theoretical paper examines the conditions under which manipulative cheating can evolve. Manipulative cheating is a form of coercion where individuals can benefit by actively manipulating others to help them at a cost to their own fitness. The paper seamlessly integrates a multilevel selective framework and inclusive fitness, with a rigorous analysis of the joint dynamics of selfishness, manipulation, and suppression of manipulation. The results are novel and important, as they help us to better understand the evolution of cooperation and the spectrum of social cheating, potentially opening up new directions for theoretical and empirical work.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sara Mitri, https://ror.org/019whta54 University of Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80611.sa1](https://doi.org/10.7554/eLife.80611.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The evolution of manipulative cheating\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Sara Mitri as the Reviewing Editor and Christian Rutz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this decision letter to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers agreed that the present article introduces a potentially valuable mathematical model that can contribute to a better understanding of the role of different cheating strategies. That said, they also highlighted several shortcomings. To address these, please implement the following revisions:\n\n1) Clearly state that the model is developed for haploid, asexual populations with no recombination. We recommend that you discuss an extension to sexual organisms in the Discussion section, including a statement on whether you expect your results to be specific to asexual populations, or generalise.\n\n2) Clarify how you define 'manipulative cheating' mathematically and how this can be distinguished from other forms of manipulation. Use this definition to highlight the novelty of your model with respect to previously published results on manipulation. Presumably, this is -- as one of the reviewers notes -- that you are connecting manipulation and cheating, but this needs to be better spelled out.\n\n3) Explain better the mechanism responsible for generating diversity between the different types, and how it relates to similar mechanisms documented in the literature.\n\n4) Improve the structure and clarity of the article, emphasizing its novelty and framing it better in the context of earlier work.\n\n5) Please also carefully address the other points that were raised in the reviewers' full reports, which are appended below.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Contrast and explain in the main text the result for a sexual population.\n\n2. The main findings of such an analysis should be announced in the Abstract and at the end of the Introduction.\n\n3. Instead of the simulations reported in section 4.4 of the appendix, couldn't the authors simply simulate a sexual population?\n\n4. Two rather distinct processes of diversification are discussed in the literature: trait substitution sequences that can lead to, for example, cyclic mean trait dynamics, and frequency-dependent selection. These two phenomena are typically characterized by distinct calculations, the first case not involving any concept of frequency dependence. To help readers better understand what is being done in the manuscript, it would be helpful to place their methods in the context of theoretical frameworks for the stability of co-evolving traits, even if formal criteria for stability are not evaluated.\n\n5. Moreover, despite sentences to the contrary, no \"ESS \"es are identified by the mathematical analysis, which only identifies trait values that cancel the selection gradient. For sure, it is not uncommon in the literature to use vague language, by which any type of equilibrium is called an ESS, and I am not terribly anxious that \"branching\" may occur here. But then again, the reader has to go through all the manuscript to make sure what is actually being calculated.\n\n6. Provide a mathematical criterion for distinguishing manipulative cheating from other forms of manipulation. Apply it to show that the previous models were indeed not manipulative cheating models.\n\nReviewer #2 (Recommendations for the authors):\n\nI really liked how this paper bridged MLS and inclusive fitness -- the population structure of the model was explicitly group structured and was a core driver of collective productivity (cooperation means increasing group productivity, which is precisely how the MLS models of the 80s onwards were formulated), but inclusive fitness was included in the fitness payoff equations to account for the impact of within-group social interactions.\n\nThis is a cool modeling paper with a lot to like. I thought the overall approach was quite elegant. I loved explicitly considering selfish cheating, manipulative cheating, and anti-manipulative suppression. As I said above, I liked the merging of MLS and inclusive fitness. I liked allowing for convex vs. concave payoffs to cheating and suppression. I thought the analyses were neat, and broadly made sense. Much of the detailed analysis was pushed into the appendices, which made the main paper easier to read. The theory was explained conceptually, as well as mathematically, making it easier to understand the logic of the equations.\n\nConceptually, I totally agree with the authors' point in the introduction that 'manipulative cheating' is not a new concept -- indeed, the term manipulation or coercion has been around for a long time, though I suspect they are right that this has so far not had much theoretical treatment. Had it just been about manipulation, I'm not sure how excited I'd be, but considering the joint evolution of manipulation with selfish cheating (the more canonical form of cheating) is really nice.\n\nI'm not sure whether this is possible, but it would be quite nice if the authors could connect any of their model parameters, or their specific results (i.e., oscillatory dynamics), to other systems. The introduction and discussion read a bit overly general to me -- describing the fields of social evolution at a high level but not really connecting them to the specifics of this paper very well. Any opportunities to connect the results of this model to prior data or models, i.e., increased manipulation at low relatedness, anything about the actual shape parameters of cheating, data on oscillatory behavior, etc. Basically, you've shown us that you can understand manipulation with theory -- how does your work help us better understand what we know about the world around us now?\n\nReviewer #3 (Recommendations for the authors):\n\nI have but a couple of recommendations:\n\n- Line 105: mention Steve Franks papers right there.\n\n- In the discussion, make a link to the theoretical/empirical work on the coevolution of offense and defense traits in ecological interactions (e.g., adaptive dynamics and such) and in sexual conflict (e.g., Gavrilets' papers).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The evolution of manipulative cheating\" for further consideration by eLife. Your revised article has been evaluated by Christian Rutz (Senior Editor) and Sara Mitri (Reviewing Editor), in consultation with two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed. Specifically, please address the points raised by Reviewer #1 below, including the updating of code that is made publicly available via Github.\n\nReviewer #1 (Recommendations for the authors):\n\nIt is difficult to understand some of the revisions. In the first version, it was stated that the population is assumed to be clonal and that in the only case where this assumption is relaxed, cyclic dynamics occur (section 4.4 of the appendix). This last result is still presented in the manuscript (Figure 9 in the Appendix). Yet, new simulations are presented (Figure 13 in the Appendix) to show that recombination has no effect on the level of selfishness, manipulation, and suppression. How are these two results related? I understand that one can have different levels of oscillation despite no effect on the average trait value, but it is not clear if this is what is happening in this case.\n\nThe revised simulation code, including the new recombination procedure, is not available for inspection (the github sources have not been updated).\n\nThe authors added the statement, \"There is no recombination, but our model is equivalent to one that assumes a sexual diploid with additive interactions between alleles at a given locus, with alleles at different loci segregating independently (Taylor 1996; Day and Taylor 1998).\" If this statement were actually true, then oscillations should not depend on the amount of recombination. The references given in the quoted sentence cannot be used to support such claims. What do they really say about the presence or absence of oscillations for different levels of recombination? Please write a clear argument rather than a reference whose relevance is unclear.\n\nl. 292 \u2013 \"Our simulations, which involved mutations, led to relatively static predictions, in agreement with our analytical results, supporting the results as ESSs (dots versus lines in Figure 2)\" and l.344 \"\u2026we found that levels of selfishness and manipulation do not always tend to a single equilibrium. Instead, they can oscillate in a periodic style [\u2026]\". I cannot reconcile these two statements. Please clarify.\n\nReviewer #2 (Recommendations for the authors):\n\nI am satisfied with the revised manuscript.\n",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b357b159-dcb8-48fa-9ada-cc7cbc1961dc",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C1",
+      "claim": "A social cheat is typically assumed to be an individual that does not perform a cooperative behaviour, or performs less of it, but can still exploit the cooperative behaviour of others.",
+      "claim_type": "EXPLICIT",
+      "source": "A social cheat is typically assumed to be an individual that does not perform a cooperative behaviour, or performs less of it, but can still exploit the cooperative behaviour of others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established understanding in the field of social evolution, as indicated by the framing as a 'typical assumption'.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "f9092b87-e499-4fff-8a06-45c3c44187cc",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C2",
+      "claim": "Empirical data suggests that cheating can involve evolutionary arms races over the ability to both exploit and resist exploitation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, empirical data suggests that cheating can be more subtle, involving evolutionary arms races over the ability to both exploit and resist exploitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references empirical data as support, though specific citations are not provided in this sentence.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "e7c143a6-5a20-4ff1-b584-7098c4f8f680",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C3",
+      "claim": "Evolutionary theory on cheating lags behind empirical studies in this area.",
+      "claim_type": "EXPLICIT",
+      "source": "These complications have not been captured by evolutionary theory, which lags behind empirical studies in this area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the state of the field based on the authors' review of literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "751eab62-b260-4409-893e-4714703a1373",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C4",
+      "claim": "Individuals can be selected to manipulate the behaviour of others.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that as well as adjusting their own behaviour, individuals can be selected to manipulate the behaviour of others, which we term 'manipulative cheating'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the authors' models presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3921239a-f3ef-4c6f-b090-07e5bafe8c91",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C5",
+      "claim": "Manipulative cheating can lead to dynamic oscillations (arms races) between selfishness, manipulation, and suppression of manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we found that manipulative cheating can lead to dynamic oscillations (arms races), between selfishness, manipulation, and suppression of manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the authors' models and simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "ee0a4677-33ef-48ea-a3db-2d4b6f4ffa87",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C6",
+      "claim": "Many social interactions involve a trade-off between investing in behaviours that increase group productivity versus those that increase an individual's share of group productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Many social interactions involve a trade-off between investing in behaviours or traits that increase the productivity of the group, versus those that increase an individual's share of group productivity (Frank, 1998; Bourke, 2011; Queller and Strassmann, 2018; Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multiple citations and illustrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "92b29abd-9d5d-4e74-97a9-58af7d2e8aaa",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C7",
+      "claim": "A female social insect larva could become a queen or a worker.",
+      "claim_type": "EXPLICIT",
+      "source": "A female social insect larva could become a queen or a worker (Hamilton, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hamilton, 1972.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "87e45218-2304-43c6-aebd-67b6e62f1543",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C8",
+      "claim": "A slime mould cell could become a stalk or a spore within a fruiting body.",
+      "claim_type": "EXPLICIT",
+      "source": "A slime mould cell could become a stalk or a spore within a fruiting body (Strassmann et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Strassmann et al., 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "49001467-c81e-447e-9116-a0d3fd044c11",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C9",
+      "claim": "A bacterial cell could invest costly resources into producing public goods like iron scavenging siderophore molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "A bacterial cell could invest costly resources into producing some 'public good' that benefits the local group of cells, such as iron scavenging siderophore molecules (Griffin et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Griffin et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "9bd7dcf3-cf3d-49ad-aafe-ef6fe9e38029",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C10",
+      "claim": "A standard assumption is that individuals can behave more selfishly by investing less in cooperative behaviours and taking a larger share of available resources.",
+      "claim_type": "EXPLICIT",
+      "source": "A standard assumption is that individuals can behave more selfishly by investing less in cooperative behaviours that benefit the group, and by taking a larger share of the available resources (Ghoul et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a standard assumption in the field, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "374345b9-6558-4e8a-9c77-3c78bf0afacd",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C11",
+      "claim": "A slime mould lineage could cheat by having a larger proportion of its cells develop into spore cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a slime mould lineage could 'cheat' by having a larger proportion of its cells develop into spore cells, or a bacterial cell could cheat by producing fewer siderophores (Strassmann et al., 2000; Jiricny et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This example is supported by citations to Strassmann et al., 2000 and Jiricny et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "a03a44ea-2784-4fec-8e08-822af47b7488",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C12",
+      "claim": "A bacterial cell could cheat by producing fewer siderophores.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a slime mould lineage could 'cheat' by having a larger proportion of its cells develop into spore cells, or a bacterial cell could cheat by producing fewer siderophores (Strassmann et al., 2000; Jiricny et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This example is supported by citations to Strassmann et al., 2000 and Jiricny et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "0d9f07bb-2a19-4807-aa3b-880f97bc100f",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C13",
+      "claim": "When cheats can invade, theory predicts this will lead to either uniform cooperation at a lower level or the coexistence of cheats and cooperators.",
+      "claim_type": "EXPLICIT",
+      "source": "When cheats can invade, theory predicts that this will lead to either uniform cooperation at a lower level or the coexistence of cheats and cooperators (Queller, 1984; Frank, 1994; Frank, 1998; West and Buckling, 2003; MacLean and Gudelj, 2006; Ross-Gillespie et al., 2007; Gore et al., 2009; Frank, 2010c; Frank, 2010a; Frank, 2010b; Patel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This theoretical prediction is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "9ae38339-3086-4b79-bb50-64105c4c9832",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C14",
+      "claim": "Coexistence of cheats and cooperators is only expected when some factor leads to the fitness of cheats being higher when they are less common (frequency-dependent selection).",
+      "claim_type": "EXPLICIT",
+      "source": "Coexistence is only expected when some factor leads to the fitness of cheats being higher when they are less common (frequency-dependent selection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical principle explained in the context of the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "61caa33d-1dd9-469f-9293-cbf2738b1674",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C15",
+      "claim": "In Dictyostelium discoideum, lineages appear to be able to evolve resistance to cheating, where they prevent other lineages from obtaining a higher proportion of spore cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the slime Dictyostelium discoideum: (i) lineages appear to be able to evolve resistance to cheating, where they prevent other lineages from obtaining a higher proportion of spore cells (Buttery et al., 2009; Khare et al., 2009; Levin et al., 2015);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This empirical observation is supported by citations to Buttery et al., 2009; Khare et al., 2009; Levin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "86e50bb1-16a0-45a4-885b-7a2589c161f6",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C16",
+      "claim": "Genomic data from Dictyostelium discoideum suggests an ongoing evolutionary arms race, not just selection towards an optimal level of cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) genomic data suggests an ongoing evolutionary arms race, and not just selection towards an optimal level of cooperation (Ostrowski et al., 2015; Noh et al., 2018; Ostrowski, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation of genomic data is supported by citations to Ostrowski et al., 2015; Noh et al., 2018; Ostrowski, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "b8c39aa6-918c-4a61-9844-f6a3ad1aed8b",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C17",
+      "claim": "In some ant species, genetic variation appears to be maintained in the extent to which different patrilines contribute to the production of workers in a colony, a phenomenon termed 'royal cheating'.",
+      "claim_type": "EXPLICIT",
+      "source": "In some ant species, genetic variation appears to be maintained in the extent to which different patrilines contribute to the production of workers in a colony, a phenomenon termed 'royal cheating' (Hughes et al., 2003; Linksvayer, 2006; Anderson et al., 2008; Hughes and Boomsma, 2008; Mitchell et al., 2012; St\u00fcrup et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This empirical observation is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "d4c5f3ad-429f-4376-8716-aee0076f9928",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C18",
+      "claim": "In Pseudomonas bacteria, strains appear to vary in both the extent to which they can cheat by exploiting siderophores produced by other strains and the extent to which they can be cheated by other strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In Pseudomonas bacteria, strains appear to vary in both the extent to which they can cheat by exploiting the siderophores produced by other strains and the extent to which they can be cheated by other strains (K\u00fcmmerli et al., 2009; Bruce et al., 2017; Butait\u0117 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This empirical observation is supported by citations to K\u00fcmmerli et al., 2009; Bruce et al., 2017; Butait\u0117 et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "5d67b9f9-67c6-48e6-97c5-50530bec592c",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C19",
+      "claim": "In empirical cases of complex cheating, cheating appears to involve doing more than just cooperating at a lower level.",
+      "claim_type": "EXPLICIT",
+      "source": "In all these cases, cheating appears to involve doing more than just cooperating at a lower level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the empirical examples discussed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "bbcdb844-43a1-487d-b88e-538ca99ff986",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C20",
+      "claim": "Other examples of more complex forms of cheating can be found in bacteria, viruses, and replicator RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Other examples of more complex forms of cheating can be found in bacteria, viruses, and replicator RNA (Pollak et al., 2016; Furubayashi et al., 2020; Bruce et al., 2021; Mizuuchi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pollak et al., 2016; Furubayashi et al., 2020; Bruce et al., 2021; Mizuuchi et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "ddae7bb2-7628-4b1f-862b-7c0013f49efe",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C21",
+      "claim": "Most evolutionary models assume that an individual can control their own investment into selfish and cooperative behaviours.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, most evolutionary models assume that an individual can control their own investment into selfish and cooperative behaviours \u2013 put simply, an individual cheats by investing less in cooperation (Queller, 1984; MacLean and Gudelj, 2006; Ross-Gillespie et al., 2007; Gore et al., 2009; Frank, 2010c; Patel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterization of existing models is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "6006403d-6ec6-408e-9ad9-172045a13e9e",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C22",
+      "claim": "An ant patriline may increase the likelihood that its own larvae are raised as queens, while reducing the likelihood that the larvae of other patrilines are reared.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an ant patriline may increase the likelihood that its own larvae are raised as queens, while reducing the likelihood that the larvae of other patrilines are reared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothetical example of manipulative cheating.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "c12746d4-155e-4f98-9b19-253dd688130a",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C23",
+      "claim": "A bacteria cell lineage could increase the public goods produced by another lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Or a bacteria cell lineage could increase the public goods produced by another lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothetical example of manipulative cheating.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "9a0fdd3e-fcb7-4db3-8c0f-154a7f3d002a",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C24",
+      "claim": "Manipulative cheating could involve a variety of mechanisms, ranging from coercive communication to more direct influencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Such 'manipulative cheating' could involve a variety of mechanisms, ranging from coercive communication to more direct influencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "bfef86a5-c0fe-424d-a01f-ea70c9597185",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C25",
+      "claim": "The model assumes an asexual haploid population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model assumes an asexual haploid population, but we also examine the consequences of recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "4c8141d9-a197-4326-a460-4f9e6466a254",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C26",
+      "claim": "Natural selection can maintain a variety of strategies at equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that natural selection can maintain a variety of strategies at equilibrium, as well as the possibility for ongoing oscillating dynamics, such as evolutionary arms races.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "db61911a-fd57-4fb3-9d9a-8e7fdc371c15",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C27",
+      "claim": "The model is based on the classic tragedy of the commons model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model is based on the classic tragedy of the commons model (Frank, 1994; Frank, 1996; Frank, 1998; Dionisio and Gordo, 2006; Frank, 2010a; Frank, 2010b), where individuals can invest in their own selfish reproduction, or the productivity of the group (Figure 1a; Appendix 1\u20141.2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the theoretical foundation of the model, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "bdd8c3f5-59a4-4a60-9411-19f0e2104203",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C28",
+      "claim": "The model assumes individuals can invest effort into manipulating the behaviour of others to make them cooperate at a higher rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We extend this model by assuming that: (i) individuals can invest effort into manipulating the behaviour of others to make them cooperate at a higher rate (behave less selfishly; Figure 1b);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a stated extension to the classic model, illustrated in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "8bf15a2b-c65e-44f2-9891-0fbf31214357",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C29",
+      "claim": "The model assumes individuals can invest effort into suppressing (blocking) the extent to which they are manipulated by others.",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) individuals can also invest effort into suppressing (blocking) the extent to which they are manipulated by others (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a stated extension to the classic model, illustrated in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "cc7cace8-3b1e-4ca2-92ba-c8425ece2821",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C30",
+      "claim": "The model assumes a haploid and asexual population inhabiting an infinite number of identical habitat patches.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume a haploid and asexual population inhabiting an infinite number of identical habitat patches, where each patch supports a single social group and lets social interactions take place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "47771e19-006a-42ab-9107-b1365a0db9d4",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C31",
+      "claim": "The fitness of each individual is proportional to the productivity of the social group multiplied by the individual's share of group productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assume the fitness of each individual is proportional to the productivity of the social group multiplied by the individual's share of group productivity, and all offspring compete globally for patches in the next generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "64ada76d-8fe7-4f6d-961d-bb6ada5efa1f",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C33",
+      "claim": "When individuals put more effort into reproduction (z), they put less effort into cooperation, which reduces group productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) put less effort into cooperation, which reduces group productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption about the selfishness trait in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "59d64915-acf9-4ac0-b36a-4593f051d6eb",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C37",
+      "claim": "Similar results were found when manipulation also leads to a personal reproduction cost.",
+      "claim_type": "EXPLICIT",
+      "source": "For simplicity, we have assumed there is no 'loss' in reproductive effort during the process of manipulation, but we found similar results when manipulation also leads to a personal reproduction cost (Appendix 1\u20143).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from additional analyses presented in the appendix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "30f9213d-1abd-4d21-81bf-7c4e3db84c8c",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C42",
+      "claim": "Nonlinearities can arise for reasons such as mechanisms of molecular diffusion or interference between the behaviour of different individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonlinearities can arise for a number of reasons, such as mechanisms of molecular diffusion, or interference between the behaviour of different individuals (M\u00fcller et al., 2006; Wiley, 2013; Rogers et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explanation is supported by citations to M\u00fcller et al., 2006; Wiley, 2013; Rogers et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "ac0223fa-aedc-42be-a840-cbca26d3f756",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C45",
+      "claim": "The analysis focuses on decelerating forms because this will often be the case for biological traits.",
+      "claim_type": "EXPLICIT",
+      "source": "We have focused on the decelerating forms because this will often be the case for biological traits (Appendix 1\u20145.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for the parameter choices, with reference to biological realism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "65923f86-0035-48a6-acb1-925f2c562554",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C46",
+      "claim": "The first analysis uses the neighbour modulated fitness approach where one trait is modified at a time to find the convergent stable strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our first analysis uses the neighbour modulated fitness of Taylor and Frank, 1996, where one trait is modified at a time to find the convergent stable strategy (Model Analysis and Appendix 1\u20141.1\u20131.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "565da1bf-3043-44fd-95be-a924a3a96a0f",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C47",
+      "claim": "The analysis assumes all three traits evolve independently, which is equivalent to a model that assumes a sexual diploid with additive interactions between alleles at a given locus and without recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis assumes all three traits evolve independently; this is equivalent to a model that assumes a sexual diploid with additive interactions between alleles at a given locus and without recombination (Taylor, 1996; Day and Taylor, 1998; Kisdi and Geritz, 1999; Geritz and Kisdi, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption of the analytical approach, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "fb0bbebd-91d5-40ce-ac7e-1dd915dfb422",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C48",
+      "claim": "The second approach uses individual-based simulations where recombination process can be explicitly modelled through how traits are inherited between generations.",
+      "claim_type": "EXPLICIT",
+      "source": "The second approach is through individual-based simulations, where recombination process can be explicitly modelled through how traits are inherited between generations (Appendix 1\u20147).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "cce5414d-ec8d-4572-a919-d05715c1f58e",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C49",
+      "claim": "The main simulation results assume the absence of recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "The main simulation results also assume the absence of recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the main simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "05e9624d-edca-46b1-bf8b-a5f016e9a062",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C50",
+      "claim": "Recombination is included by allowing haploid asexual individuals the chances to swap traits in Appendix 1\u20144.4 and 4.8.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we relax the assumption and include recombination by allowing haploid asexual individuals the chances to swap traits in Appendix 1\u20144.4 and 4.8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes additional analyses that relax the no-recombination assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3e3b1e54-9ce7-41bf-867d-f44ab7edd259",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C51",
+      "claim": "The ESS selfishness, manipulation, and suppression are all predicted to show negative relationships with relatedness.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the ESS selfishness, manipulation, and suppression are all predicted to show negative relationships with relatedness (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "28c36e92-02f8-48c8-8304-c29c5bec3b96",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C52",
+      "claim": "At lower relatedness, individuals are predicted to selfishly keep a higher fraction of their resources for themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "At a lower relatedness, individuals are predicted to: (i) selfishly keep a higher fraction of their resources for themselves (as predicted by the classic tragedy of the commons model);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "eca63f93-eafd-4745-a05d-1d95addab823",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C53",
+      "claim": "At lower relatedness, individuals are predicted to invest more heavily in manipulating others to help them.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) invest more heavily in manipulating others to help them (as also predicted in a model without suppression; Appendix 1\u20142);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "8c12ce51-3a62-499b-a920-20823783b482",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C54",
+      "claim": "At lower relatedness, individuals are predicted to invest more heavily in suppressing manipulation perpetrated by others (when manipulation is at higher levels).",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) invest more heavily in suppressing manipulation perpetrated by others (when manipulation is at higher levels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "456f0145-ef96-4a04-9c41-38f6b4829ad5",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C55",
+      "claim": "These predictions qualitatively hold for a broad range of parameter space, with linear or non-linear returns on increased investment in manipulation and suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "These predictions qualitatively hold for a broad range of parameter space, with linear or non-linear returns on increased investment in manipulation and suppression, and show that manipulative cheating as well as its suppression can be favoured by natural selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the robustness of the model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "42cb8d47-55fb-4235-963a-9a660104d355",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C57",
+      "claim": "The benefit of manipulation depends upon the level of selfishness, and the benefit of suppression depends upon the level of manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "To a large extent this reflects that benefit of manipulation depends upon the level of selfishness, and the benefit of suppression depends upon the level of manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the model results based on the structure of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "b84d541e-1218-413e-a252-1fd7b53026bd",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C58",
+      "claim": "The quantitative predictions depend on details such as the specific values of the shape parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the quantitative predictions depend on details such as the specific values of the shape parameters (see below), and these relations need not always hold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about the generality of the quantitative predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "d7496c7d-4364-4222-88d9-929a373d6131",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C59",
+      "claim": "Simulations involving mutations led to relatively static predictions when there is only one mechanism to manipulate and suppress, in agreement with analytical results.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations, which involved mutations, led to relatively static predictions when there is only one mechanism to manipulate and suppress, in agreement with our analytical results, supporting the results as ESSs (dots versus lines in Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations that validates the analytical results, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "c702eef5-6e9e-4966-a6f3-eb66bc0e70b5",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C66",
+      "claim": "When the two shape parameters covary together, the impact on ESS trait values is a combination of the effects of varying each parameter separately.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, when the two shape parameters covary together, the impact on ESS trait values is a combination of the two forementioned effects (Figure 3d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model analysis, shown in Figure 3d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "95310519-3ecd-4d10-905b-c71036a9e9a5",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C67",
+      "claim": "Both manipulation and suppression can be favoured across a wide range of parameter values.",
+      "claim_type": "EXPLICIT",
+      "source": "Both manipulation and suppression can be favoured across a wide range of parameter values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the parameter space exploration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "36c7f795-703c-431c-949d-6c48177b48dc",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C68",
+      "claim": "Levels of selfishness and manipulation do not always tend to a single equilibrium when all mechanisms are present from the beginning; they can oscillate in a periodic style.",
+      "claim_type": "EXPLICIT",
+      "source": "By simulating various combinations of shape parameters and relatedness, we found that levels of selfishness and manipulation do not always tend to a single equilibrium. Instead, they can oscillate in a periodic style (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations with multiple mechanisms, shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "75a2d8c0-60d4-48d3-b77b-18f63deb9fe8",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C69",
+      "claim": "Suppression fluctuates in a smaller amplitude in response to the changes in levels of manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the oscillation in suppression is less profound, it also fluctuates in a smaller amplitude in response to the changes in levels of manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulations with multiple mechanisms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "6d01e91c-0394-49a6-b4fb-f09c699f5ecb",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C70",
+      "claim": "Harmonic regression was used to test for periodic oscillations, as opposed to random noise.",
+      "claim_type": "EXPLICIT",
+      "source": "We used harmonic regression to test for periodic oscillations, as opposed to random noise (Figure 4b and Appendix 1\u20144.2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the statistical method used to analyze the oscillations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "2e9e44f6-da93-4258-a2b4-36f9fb7361d0",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C72",
+      "claim": "In intermediate settings, the optimal levels of manipulation and selfishness are similar, which could lead to a similar pay-off between investing in them.",
+      "claim_type": "EXPLICIT",
+      "source": "In these intermediate settings, the optimal levels of manipulation and selfishness are similar, which could lead to a similar pay-off between investing in them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for why oscillations occur in certain parameter ranges.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "d297457c-ea05-454b-8335-44fe53043890",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C73",
+      "claim": "Any small perturbation in trait values could disturb the dynamics and generate oscillation when optimal levels of manipulation and selfishness are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, any small perturbation in trait values could disturb the dynamics and generate oscillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the mechanism of oscillations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "9b1634f2-72e6-441b-9271-27225cc3db59",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C74",
+      "claim": "Oscillation can be prevented when selfishness cannot mutate.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the hypothesis that oscillation is a consequence of interactions between selfishness and manipulation, we found that oscillation can be prevented when selfishness cannot mutate (Appendix 1\u20144.3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from additional simulations that supports the explanation for oscillations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "8bf36de1-c6ad-4de9-81f1-b711f2549e93",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C75",
+      "claim": "Oscillation can be prevented when there is no linkage between traits.",
+      "claim_type": "EXPLICIT",
+      "source": "or when there is no linkage between traits (Appendix 1\u20144.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from additional simulations that supports the explanation for oscillations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "79a8ec4b-2c58-4614-b6b2-764cd691f699",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C76",
+      "claim": "Oscillations can occur when there are more than two mechanisms to manipulate and suppress.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that oscillations can occur when there are more than two mechanisms to manipulate and supress (Appendix 1\u20144.5),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from additional simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3484d11b-57d6-4dfb-a708-8434dd86e717",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C77",
+      "claim": "Oscillations become slower when mutation rate is smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "becomes slower when mutation rate is smaller (Appendix 1\u20144.6),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from additional simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "1cdea6e1-50ac-4a73-be52-6b2aa749725b",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C78",
+      "claim": "Oscillations are less likely when there is a personal reproduction cost to manipulation and suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "and less likely when there is a personal reproduction cost to manipulation and suppression (Appendix 1\u20144.7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from additional simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "7d032523-6dad-4ec6-a9e0-8f00188c641b",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C79",
+      "claim": "Recombination between traits could eliminate the oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that recombination between traits could eliminate the oscillations (Appendix 1\u20144.4 and 4.8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from simulations that included recombination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "fa0ffd0b-27eb-4a01-b3b8-e1372b117e00",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C80",
+      "claim": "Recombination prevents evolutionary branching into distinct genotypes because it removes the linkage between strategies (linkage disequilibrium).",
+      "claim_type": "EXPLICIT",
+      "source": "This finding coincides with previous literature that recombination prevents evolutionary branching into distinct genotypes, because it removes the linkage between strategies (linkage disequilibrium; Abrams et al., 1993; Dieckmann and Doebeli, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citations to Abrams et al., 1993; Dieckmann and Doebeli, 1999.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "56b61d77-aef4-42d7-9119-0afccfb65f50",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C81",
+      "claim": "Oscillations are more likely to be seen in asexual species.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, oscillations are more likely to be seen in asexual species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the finding that recombination eliminates oscillations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "7af286c6-1ca4-4286-9b50-120a6322c12f",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C82",
+      "claim": "When a manipulation trait arises, it could be selected for.",
+      "claim_type": "EXPLICIT",
+      "source": "When a manipulation trait arises, it could be selected for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the evolutionary dynamics when new traits arise.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3ec19cd7-955a-43d2-bf7a-018a4ce91a62",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C83",
+      "claim": "Once a form of manipulation becomes sufficiently common, a mutation that allows suppression of that manipulation could be selected for.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, once a form of manipulation becomes sufficiently common then a mutation that allows suppression of that manipulation could be selected for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the evolutionary dynamics following the spread of manipulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "ea38ab0b-eb1b-4ea2-95e9-99a5e783c568",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C84",
+      "claim": "Different forms of manipulation could involve very different traits, or new forms of an old trait, that would require a different suppression mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "These different forms of manipulation could involve very different traits, or new forms of an old trait, that would require a different suppression mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about the nature of multiple manipulation mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "d8401c42-03b4-441b-88c0-3605c65aae7a",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C85",
+      "claim": "The scenario of sequential mutation could potentially lead to an evolutionary arms race where new forms of manipulation evolve and are then suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "This scenario could potentially lead to an evolutionary arms race where new forms of manipulation evolve and are then suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the evolutionary dynamics under the sequential mutation scenario.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "92602293-95fc-475c-b4c8-252928eef430",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C86",
+      "claim": "When a new form of manipulation arises, it initially spreads.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this scenario also leads to a form of arms race (Figure 5). When a new form of manipulation arises, it initially spreads.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations with sequential introduction of traits, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3ea9061e-52d2-42b7-b041-02eb8ec84deb",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C87",
+      "claim": "The spread of manipulation favours lower levels of selfishness, because the manipulation reduces the benefit of selfishly investing in reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "This spread of manipulation favours lower levels of selfishness, because the manipulation reduces the benefit of selfishly investing in reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the dynamics observed in the simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "1e8ca000-1e91-4b23-9f7f-2d7c175d6caf",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C88",
+      "claim": "Once a manipulation is common, any mutation that allows suppression of that manipulation will be favoured, and hence increase in frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, once a manipulation is common, any mutation that allows suppression of that manipulation will be favoured, and hence increase in frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations with sequential introduction of traits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3515acf3-7d03-462a-ae90-13db296f9239",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C89",
+      "claim": "As suppression spreads, this selects for reduced investment in manipulation (which would just be blocked), and hence also increased selfish investment in reproduction (which won't be manipulated anymore).",
+      "claim_type": "EXPLICIT",
+      "source": "As suppression spreads, this selects for reduced investment in manipulation (which would just be blocked), and hence also increased selfish investment in reproduction (which won't be manipulated anymore) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations with sequential introduction of traits, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "38f14108-8775-4fde-bf71-a953c13988ae",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C90",
+      "claim": "The sequential mutation scenario leads to a pattern of recurring dynamics whenever a new manipulative trait arises, and where individuals can show variable levels of selfishness, manipulation and suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this leads to a pattern of recurring dynamics whenever a new manipulative trait arises, and where individuals can show variable levels of selfishness, manipulation and suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the dynamics observed in the sequential mutation simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3c3fbbad-de20-4035-8b02-e64520f48ea6",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C92",
+      "claim": "The repeated invasion of different forms of manipulation, and their suppression, can be seen as a form of trait substitution sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The repeated invasion of different forms of manipulation, and their suppression, can be seen as a form of trait substitution sequence (Champagnat, 2006; M\u00e9l\u00e9ard and Tran, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citations to Champagnat, 2006; M\u00e9l\u00e9ard and Tran, 2009.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "89dbd841-afb3-4c07-873a-c286f84ab70e",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C93",
+      "claim": "Recombination does not remove the arms race resulting from sequential trait invasion because it results from different traits spreading in turn, rather than oscillations of linked traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination does not remove this arms race because it results from different traits spreading in turn, rather than oscillations of linked traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for why recombination doesn't affect the sequential mutation scenario.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "2de9a475-0b1e-4f05-b064-173ac0f31c36",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C94",
+      "claim": "Multiple types of manipulation can arise and/or be maintained in a population.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results from the multiple mechanisms of manipulation suggest that: (i) multiple types of manipulation can arise and / or be maintained in a population;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the multiple mechanism analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "43309bda-f424-4dac-9c53-d0aba9cc3c76",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C95",
+      "claim": "The manipulation traits and their suppression can sometimes show oscillating dynamics, where the levels of selfishness, manipulation, and/or suppression oscillate.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) the manipulation traits and their suppression can sometimes show oscillating dynamics, where the levels of selfishness, manipulation, and/ or suppression oscillate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the multiple mechanism analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "45906dff-8852-4db0-97f0-639790b95e94",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C96",
+      "claim": "The oscillation originates either from interactions between coevolving traits (endogenous) or from the introduction of new mechanisms (exogenous).",
+      "claim_type": "EXPLICIT",
+      "source": "The oscillation originates either from interactions between coevolving traits (endogenous; Figure 4) or from the introduction of new mechanisms (exogenous; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the two sources of oscillations identified in the analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "845fca23-43aa-486a-a6a0-2fdeb36f7298",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C97",
+      "claim": "These results provide possible explanations for cases where there appears to be genetic variation for the extent or form of cheating and/or cheating suppression in ants, slime moulds, and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide possible explanations for cases where there appears to be genetic variation for the extent or form of cheating and/or cheating suppression, such as the variance between ant patrilines (Hughes and Boomsma, 2008), slime moulds strains (clones; Buttery et al., 2009; Khare et al., 2009; Levin et al., 2015), or different bacteria strains (K\u00fcmmerli et al., 2009; Bruce et al., 2017; Butait\u0117 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the model results to empirical observations, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "71a967dc-e70a-42e7-a41a-39cf688393c3",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C98",
+      "claim": "Manipulative cheating can be favoured across a wide variety of conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that: (1) manipulative cheating can be favoured across a wide variety of conditions;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the model analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "5e82c82b-ced5-40c2-b40c-af72f22fb20f",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C99",
+      "claim": "Manipulation is more likely to be favoured when relatedness is relatively low.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) manipulation is more likely to be favoured when relatedness is relatively low;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the model analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "70505977-daa1-43d3-b07d-17a158ea5a09",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C100",
+      "claim": "Suppression of manipulation can be favoured.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) suppression of manipulation can also be favoured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the model analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "f4e75d34-e415-4183-a59c-8fef4525d6b7",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C101",
+      "claim": "When multiple different mechanisms of manipulation are allowed, non-equilibrium dynamics such as oscillations could occur.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when we allowed for multiple mechanisms (types) of manipulation, we found that non-equilibrium dynamics could occur, such as oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the multiple mechanism analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "bea6c52b-0571-4536-bc46-25a320d006c0",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C102",
+      "claim": "Oscillations could be generated in a coevolutionary interaction between selfishness and manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillations could be generated in either (i) a coevolutionary interaction between selfishness and manipulation;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of one mechanism for generating oscillations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "d1f697e3-7d77-4474-9969-bcef4bb200af",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C103",
+      "claim": "Oscillations could be generated in a genetic arms race between different forms of manipulative cheating and their specific suppressors.",
+      "claim_type": "EXPLICIT",
+      "source": "or (ii) a genetic arms race between different forms of manipulative cheating and their specific suppressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of another mechanism for generating oscillations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3528f89c-ae82-4133-8b91-f450922debd7",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C104",
+      "claim": "Non-equilibrium dynamics could help explain the genetic diversity that has been observed for both cheating and the response to cheating across the biological world.",
+      "claim_type": "EXPLICIT",
+      "source": "These non-equilibrium dynamics could help explain the genetic diversity that has been observed for both cheating and the response to cheating across the biological world (Hughes et al., 2003; Linksvayer, 2006; Anderson et al., 2008; Hughes and Boomsma, 2008; Buttery et al., 2009; Khare et al., 2009; K\u00fcmmerli et al., 2009; Mitchell et al., 2012; St\u00fcrup et al., 2014; Levin et al., 2015; Ostrowski et al., 2015; Pollak et al., 2016; Bruce et al., 2017; Butait\u0117 et al., 2017; Noh et al., 2018; Ostrowski, 2019; Furubayashi et al., 2020; Bruce et al., 2021; Mizuuchi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the model results to empirical observations, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "919b04cb-5d67-40c4-a02a-c812704af1fc",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C105",
+      "claim": "The general aim was to investigate scenarios where cheating is characterised by more than just 'cooperate less'.",
+      "claim_type": "EXPLICIT",
+      "source": "Our general aim was to investigate scenarios where cheating is characterised by more than just 'cooperate less'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the research objective.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "74ef8af9-2639-4566-8669-e9dfb0ebb2c8",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C106",
+      "claim": "There is a range of other possibilities for more complex forms of cheating, such as obtaining a disproportionate share of some public good.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a range of other possibilities for more complex forms of cheating, such as obtaining a disproportionate share of some public good, where we suggest that a similar logic would apply (i.e. the evolution of 'more efficient' cheating).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about other forms of complex cheating.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "5a6db6a1-de07-4c66-afc5-de52d75a75a3",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C107",
+      "claim": "The model is not modelling some evolutionarily stable signalling system which benefits the signaller and receiver.",
+      "claim_type": "EXPLICIT",
+      "source": "A key distinction here is that we are not modelling some evolutionarily stable signalling system which benefits the signaller and receiver (Maynard Smith and Harper, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies what the model is not representing, with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "bee04ac4-724a-4329-ac1b-0d4348315609",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C108",
+      "claim": "The model has instead modelled coercion, which provides no benefit to the recipient of that coercion.",
+      "claim_type": "EXPLICIT",
+      "source": "We have instead modelled coercion, which provides no benefit to the recipient of that coercion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies what the model represents.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "1660acfa-342b-4cea-bf42-6b19eca37339",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C109",
+      "claim": "The response to coercion would be to evolve to suppress or ignore that coercion, rather than evolve to some evolutionarily stable mutually beneficial response.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the response would be to evolve to suppress or ignore that coercion, rather than evolve to some evolutionarily stable mutually beneficial response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of modeling coercion rather than mutualistic signaling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "5443385a-9a89-4f74-921f-b561076130a4",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C110",
+      "claim": "It would be useful to examine the consequences of different genetic systems, especially those with asymmetric inheritance such as haplodiploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be useful to examine the consequences of different genetic systems, especially those with asymmetric inheritance such as haplodiploidy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "c9791337-9d52-4e0e-bbb2-32944c38a329",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C111",
+      "claim": "Another useful extension would be to examine caste determination mechanism in social insects, and whether predictions depended upon whether castes are determined by environmental or genetic cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Another useful extension would be to examine caste determination mechanism in social insect, and whether predictions depended upon whether castes are determined by environmental or genetic cues (Schwander et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research, with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "eca63869-146f-4413-9204-d5f74360dc24",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C112",
+      "claim": "In bacteria and other microorganisms, individuals could produce coercive molecules that make other cells invest more into the production of public goods, and invest less into reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria and other microorganisms, individuals could produce coercive molecules that make other cells invest more into the production of public goods, and invest less into reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical example of how manipulative cheating could occur.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "7d8e9366-7311-4dce-97b1-a25ad607b8fd",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C113",
+      "claim": "In species that form fruiting bodies, manipulation could cause the cells of other lineages to be more likely to become stalk cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In species that form fruiting bodies, manipulation could cause the cells of other lineages to be more likely to become stalk cells (Buttery et al., 2009; Khare et al., 2009; Levin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical example of how manipulative cheating could occur, with citations to relevant empirical work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3145e9d4-48c9-4e77-8b71-73b409aa38ed",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C114",
+      "claim": "In social insects where workers control the caste of offspring, manipulation could cause workers from other lineages to be less likely to rear their own offspring as reproductive.",
+      "claim_type": "EXPLICIT",
+      "source": "In species where workers control the caste of offspring, manipulation could cause workers from other lineages (different queens or patrilines) to be less likely to rear their own offspring as reproductive, and be more likely to rear the offspring of the manipulating lineage as reproductive (Hamilton, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical example of how manipulative cheating could occur, with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "fd15766c-683b-4fbe-81ff-d7f40d531dd6",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C115",
+      "claim": "In social insects where larvae control their own caste, manipulation could decrease the likelihood that other individuals develop as reproductive.",
+      "claim_type": "EXPLICIT",
+      "source": "In species where larvae control their own caste, manipulation could decrease the likelihood that other individuals develop as reproductive (Wenseleers and Ratnieks, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical example of how manipulative cheating could occur, with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "b7e587e7-14b6-42d8-9f07-30b74539c066",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C116",
+      "claim": "Manipulation could occur through more direct approaches, such as selectively killing the eggs from other lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, manipulation could occur through more direct approaches, such as selectively killing the eggs from other lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical example of how manipulative cheating could occur.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "15806070-f193-434c-bd84-37227f94ed5e",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C117",
+      "claim": "All mechanisms of manipulation share the same concept that the 'more manipulative' lineage gains a greater share of group productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These mechanisms all share the same concept that the 'more manipulative' lineage gains a greater share of group productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about the common feature of different manipulation mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "161133cb-e89b-4a4b-af3b-1248ace5a790",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C118",
+      "claim": "Suppression could involve a variety of different mechanisms, from evolving to ignore coercion, to blocking behaviours that steal resources or kill individuals, to making fewer public goods.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, suppression could involve a variety of different mechanisms, from evolving to ignore coercion, to blocking behaviours that steal resources or kill individuals, to making fewer public goods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible suppression mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "08b2fe6e-2152-4194-ad1c-1949810ccc88",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C119",
+      "claim": "Experiments on slime moulds have found that strains can evolve to become more resistant to cheats.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments on slime moulds have found that strains can evolve to become more resistant to cheats (Levin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This empirical finding is supported by a citation to Levin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "47c2e847-af5a-4b5f-a862-978d13668774",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C120",
+      "claim": "Bacteria appear to be able to produce more specific and less exploitable public goods.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria appear to be able to produce more specific and less exploitable public goods (K\u00fcmmerli et al., 2009; Bruce et al., 2017; Butait\u0117 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This empirical observation is supported by citations to K\u00fcmmerli et al., 2009; Bruce et al., 2017; Butait\u0117 et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "eadfd801-aadf-42ea-8454-bc7acba4027b",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C121",
+      "claim": "Different lineages of cooperative RNA replicators can survive better against different cheating replicators.",
+      "claim_type": "EXPLICIT",
+      "source": "Different lineages of cooperative RNA replicators can survive better against different cheating replicators (Mizuuchi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This empirical finding is supported by a citation to Mizuuchi et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "68d5d7d1-eb4e-43a4-88b8-642dc07dc7cd",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C122",
+      "claim": "Cases of resistance to cheating share the same concept that cooperators can somewhat defend against or suppress the cheats.",
+      "claim_type": "EXPLICIT",
+      "source": "These cases share the same concept that cooperators can somewhat defend against or suppress the cheats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about the common feature of different suppression mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "623456e3-4a95-4a93-9dba-3972e5fff3b7",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C123",
+      "claim": "Previous theoretical work has focused on conflict suppression and how the tragedy of the commons could be avoided.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous theoretical work has focused on conflict suppression and hence how the tragedy of the commons could be avoided (Frank, 1995; West et al., 2002; Frank, 2003; Wenseleers et al., 2003; Wenseleers et al., 2004; Ratnieks et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterization of previous work is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3c35cd09-5017-4e24-983b-dbba99034a2b",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C124",
+      "claim": "In previous papers, selfishness could be selected against by mechanisms such as policing, sanctions, and social reputation, which alter the costs and benefits of behaving selfishly.",
+      "claim_type": "EXPLICIT",
+      "source": "In these previous papers, selfishness could be selected against, by mechanisms such as policing, sanctions, and social reputation, which alter the costs and benefits of behaving selfishly (Frank, 1995; Milinski et al., 2002; Dionisio and Gordo, 2006; Dionisio and Gordo, 2007; El Mouden et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterization of previous work is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "696a1c81-b621-4ec1-b8dc-1572cd7687ca",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C125",
+      "claim": "The current work has examined a different route to increased selfish behaviour \u2013 the manipulation of others via manipulative cheating.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we have examined a different route to increased selfish behaviour \u2013 the manipulation of others via manipulative cheating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This contrasts the current work with previous theoretical work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "9fc73b1c-d308-4517-84f2-4166d24c23c2",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C126",
+      "claim": "If there are multiple manipulation traits, then genotypic diversity can be maintained for selfishness, manipulative cheating, and/or its suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we have shown that if there are multiple manipulation traits, then genotypic diversity can be maintained for selfishness, manipulative cheating, and/or its suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the multiple mechanism analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "b175a9f7-4725-4a6a-9957-200910230300",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C127",
+      "claim": "This diversity result links to previous work on quorum sensing in bacteria, which has shown how cycles of 'cheating' and 'cheating immunity' can arise.",
+      "claim_type": "EXPLICIT",
+      "source": "This diversity result links to previous work on quorum sensing in bacteria, which has shown how cycles of 'cheating' and 'cheating immunity' can arise (Eldar, 2011; Pollak et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connection to previous work is supported by citations to Eldar, 2011; Pollak et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "ce7fd653-fb82-4a88-a937-a2144e123842",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C128",
+      "claim": "Several theoretical models have examined the coevolution of offense and defence traits in ecological interactions and in sexual conflict.",
+      "claim_type": "EXPLICIT",
+      "source": "Several theoretical models have examined the coevolution of offense and defence traits in ecological interactions (Press and Dyson, 2012; Hilbe et al., 2013) and in sexual conflict (Gavrilets, 2000; Gavrilets et al., 2001; Rowe et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterization of previous work is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "e7667056-b6e7-4846-a3a8-5b5ab4cf01ac",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C129",
+      "claim": "Previous models on offense and defence examined specific ecological scenarios, such as memory of previous interactions or runaway processes.",
+      "claim_type": "EXPLICIT",
+      "source": "These models examined specific ecological scenarios, such as memory of previous interactions or runaway processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the focus of previous models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "6960d03a-6e41-4871-b00a-f4217ecd311c",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C130",
+      "claim": "Other recent models have examined how individuals can be favoured to manipulate relatives when this leads to an indirect fitness benefit to the manipulator, and the manipulated individual is not selected to resist.",
+      "claim_type": "EXPLICIT",
+      "source": "Other recent models have examined a different manipulation question- how individuals can be favoured to manipulate relatives when this leads to an indirect fitness benefit to the manipulator, and the manipulated individual is not selected to resist (Gonz\u00e1lez-Forero and Gavrilets, 2013; Gonz\u00e1lez-Forero, 2014; Gonz\u00e1lez-Forero, 2015; Gonz\u00e1lez-Forero and Pe\u00f1a, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterization of previous work is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "4c842a45-a60a-400c-a144-c9bc5a987613",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C131",
+      "claim": "Manipulation can also be favoured in mutualisms if it leads to better terms of trading.",
+      "claim_type": "EXPLICIT",
+      "source": "Manipulation can also be favoured in mutualisms if it leads to better terms of trading (Wyatt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wyatt et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "09cdb6d6-da23-4e00-a2eb-aa93c7239109",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C132",
+      "claim": "Manipulation and counteradaptations to prevent elimination can arise in many forms of communication.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, manipulation and counteradaptations to prevent elimination can arise in many forms of communication (Dawkins et al., 1979; Maynard Smith and Harper, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This general statement is supported by citations to Dawkins et al., 1979; Maynard Smith and Harper, 2003.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "d4219895-b419-4f76-9cb2-1dc619d49ca7",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C133",
+      "claim": "Individuals can be selected to manipulate the behaviour of others, for their own selfish gain.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, we have shown how cheating can take more complex forms than just lower levels of cooperation. We have shown that individuals can also be selected to manipulate the behaviour of others, for their own selfish gain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "486d9be5-96fe-4873-9aa3-957c22ba05b9",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C134",
+      "claim": "Manipulative cheating can lead to evolutionary arms races between attempts to manipulate and to suppress that manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this can lead to evolutionary arms races between attempts to manipulate and to suppress that manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "8c191e8f-3f27-49ce-8b41-72bb8e06cf3b",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C135",
+      "claim": "A major task for the future is to determine the extent to which more complex forms of cheating occur in the natural world.",
+      "claim_type": "EXPLICIT",
+      "source": "A major task for the future is to determine the extent to which more complex forms of cheating occur in the natural world (Pollak et al., 2016; Meir et al., 2020; Leeks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research, with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "4658574c-4b92-40a1-914d-67543c562e9c",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C136",
+      "claim": "In many cases, determining the extent of complex cheating would require elucidation of the underlying mechanisms, which could be completely different across different species.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases, this would require elucidation of the underlying mechanisms, which could be completely different across different species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges of future research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "0820a0ea-852f-4c8f-8f26-e4145d5d4d54",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "claim_id": "C137",
+      "claim": "The potential for manipulation and its suppression could arise at all levels of life, from RNA replicators to complex animal societies.",
+      "claim_type": "EXPLICIT",
+      "source": "The potential for manipulation and its suppression could arise at all levels of life, from RNA replicators to complex animal societies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad concluding statement about the generality of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5d1eb2fd-98ce-4636-8a9d-a87b4e21e1b3",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the empirical and theoretical context for studying manipulative cheating. Claims C1-C3 describe the traditional view of cheating (C1), note that empirical data suggests more complex forms involving arms races (C2), and assert that evolutionary theory lags behind empirical studies (C3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are well-supported by the literature review and citations provided. Claim C3 is an assessment of the field that motivates the current work and is reasonable given the gap identified between empirical observations (C15-C20) and existing theory (C21). This provides appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "861335ee-9443-4a44-89f1-1cd6dcf23f7e",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The core finding is that individuals can be selected to manipulate others' behavior (manipulative cheating), and this can lead to evolutionary arms races involving selfishness, manipulation, and suppression. The model predicts manipulation is favored across wide conditions, especially at low relatedness, and suppression can also be favored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C98-C100 represent the main theoretical predictions from the game-theoretical model and simulations (C25-C59). The analytical approach (C46-C47) and simulations (C48-C50, C59) provide converging evidence. Figures 2-3 show ESS predictions match simulations. The mathematical framework (Equations 1-3) is clearly derived and the results are robust across parameter space (C55, C67).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "67b87b1c-0a75-43ab-a911-401f88c578d6",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ESS analysis predicts that selfishness, manipulation, and suppression all show negative relationships with relatedness. At lower relatedness, individuals invest more in selfishness, manipulation, and suppression. These predictions hold across broad parameter space and are validated by simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 present specific predictions from the ESS analysis shown in Figure 2. The analytical derivation (Equation 2) is mathematically sound and the neighbor-modulated fitness approach is appropriate. Simulation validation (C59) provides strong support. The robustness analysis (C55) and parameter exploration (Figure 3, C66-C67) demonstrate generality. The mechanistic explanation (C57) is logical given the model structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "c718c706-7233-4fb2-988a-0f472ac9d18d",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When multiple manipulation mechanisms are present simultaneously, the model predicts oscillating dynamics in selfishness, manipulation, and suppression under certain conditions (intermediate shape parameters, low relatedness). Oscillations arise from coevolutionary interactions between traits and can be prevented by eliminating selfishness mutation or trait linkage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C78 describe oscillatory dynamics observed in simulations with multiple mechanisms (Figure 4). The harmonic regression analysis (C70, Figure 4b) provides statistical evidence for periodic oscillations rather than noise. The mechanistic explanation (C72-C73) is plausible. Supporting analyses (C74-C78) test specific hypotheses about oscillation mechanisms. However, the conditions for oscillations are narrow (intermediate parameters), limiting generality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "3a3185bd-a4d7-46ed-b6b8-bd216e3085c3",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Recombination between traits eliminates oscillations arising from coevolutionary interactions (endogenous oscillations) by removing linkage disequilibrium, suggesting oscillations are more likely in asexual species. However, recombination does not affect arms races from sequential trait invasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by simulations with recombination (Appendix 1-4.4, 4.8). The interpretation (C80) is consistent with established theory on linkage disequilibrium and evolutionary branching, supported by appropriate citations. The conclusion about asexual species (C81) follows logically. The distinction between endogenous and exogenous oscillations (C93) is conceptually clear and mechanistically justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "38591b29-233a-4bad-ba79-d8db2fcd82ea",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When manipulation mechanisms arise sequentially through mutation, the model predicts evolutionary arms races where new forms of manipulation spread, then are suppressed, leading to recurring dynamics and variable levels of traits. This represents a trait substitution sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 describe dynamics from simulations with sequential trait introduction (Figure 5). The pattern is clear: manipulation spreads \u2192 selfishness decreases \u2192 suppression evolves \u2192 manipulation decreases and selfishness increases. The mechanistic explanations (C87, C89) are logical. The connection to trait substitution sequences (C92) is appropriate. However, Figure 5 shows only one illustrative example with specific parameters (a=0.5, b=0.01), and generality across parameter space is not fully demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "6ef74a76-4e4e-45b3-bce7-c4a7c9b957e1",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model results provide possible explanations for observed genetic variation in cheating and cheating suppression in ants, slime molds, and bacteria. Multiple manipulation types can be maintained, and non-equilibrium dynamics could explain genetic diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97, C104, and C126 connect theoretical predictions to empirical observations (C15-C18). While the model demonstrates mechanisms that could maintain variation, the connection to specific empirical systems is speculative. The model makes general predictions but does not directly test against empirical data or make quantitative predictions that could be validated. The claim that results 'provide possible explanations' is appropriately cautious but remains hypothetical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "4b0df809-ee09-4018-97ae-e3e24e740aac",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model extends the classic tragedy of the commons framework by adding manipulation and suppression traits. The model assumes asexual haploid populations with specific fitness structure and uses both analytical (neighbor-modulated fitness) and simulation approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C50 describe the model structure and analytical methods. The model is clearly specified with explicit assumptions (C25, C30-C31, C33). The extension to the classic model (C27-C29) is well-motivated. The analytical approach (C46-C47) is appropriate and properly cited. The simulation approach (C48-C50) allows exploration of dynamics. The treatment of nonlinearities (C42, C45) is justified. The robustness check with personal reproduction costs (C37) strengthens conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "aea8d48d-9c8c-4e90-a38c-dfd20ea6a1ec",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript reviews established theory on social cooperation and cheating, including the trade-off between group productivity and individual share, examples from social insects, slime molds, and bacteria, and predictions about coexistence of cheats and cooperators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C14 provide background on cooperation theory and are well-supported by appropriate citations. These claims accurately represent established knowledge in the field and provide necessary context for the current work. The examples (C7-C9, C11-C12) are standard and properly cited. The theoretical predictions (C13-C14) are correctly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "ca16a8c1-6cc7-4b90-a394-c97e6a282c92",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Empirical evidence from slime molds, ants, bacteria, and other systems shows complex forms of cheating involving resistance evolution, arms races, and variation in exploitation ability, suggesting cheating involves more than just reduced cooperation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 summarize empirical findings from the literature with appropriate citations. These observations motivate the theoretical work by demonstrating that real biological systems exhibit complexity not captured by simple 'cooperate less' models. The inference (C19) is reasonable given the cited examples. This establishes the empirical foundation for the theoretical investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "ee0ea0df-d7ce-4001-9561-50678a4bdd41",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Most evolutionary models assume individuals control their own investment in selfish vs. cooperative behaviors. The manuscript proposes manipulative cheating as an alternative, where individuals manipulate others' behavior through various mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 accurately characterizes existing models with appropriate citations. Claims C22-C24 present hypothetical examples of manipulative cheating to illustrate the concept. While speculative (C22-C24 are marked as speculation), these examples are plausible and help motivate the theoretical framework. The contrast with existing theory is clear and appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "af340ed3-a7e7-4d1f-b2ef-935836ad6834",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The quantitative ESS predictions depend on shape parameters. When shape parameters covary, effects combine. Both manipulation and suppression can be favored across wide parameter ranges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 describe parameter sensitivity analysis shown in Figure 3. The systematic exploration of shape parameters (a and b) demonstrates robustness of qualitative predictions while showing quantitative sensitivity. The analysis is thorough and appropriately presented. This strengthens confidence in the main results by showing they are not artifacts of specific parameter choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "0d70fa37-3e7c-49bc-a062-fcbc90e827e2",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study aims to investigate cheating beyond 'cooperate less' by modeling manipulation and coercion rather than mutualistic signaling. Future work should examine different genetic systems and caste determination mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C109 clarify the scope and conceptual framework of the study. The distinction between coercion and mutualistic signaling (C107-C109) is important and properly cited. Claims C110-C111 suggest reasonable future directions. These claims appropriately frame the work and acknowledge limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "dd442150-4a4d-4cee-87c3-fb35db34eee0",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript discusses potential biological mechanisms for manipulative cheating and suppression across different systems (bacteria, slime molds, social insects, RNA replicators), noting that specific mechanisms could vary but share common conceptual features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C118 present hypothetical mechanisms (appropriately marked as speculation) while C119-C122 cite empirical evidence for suppression mechanisms. The discussion appropriately distinguishes speculation from established findings. The conceptual synthesis (C117, C122) is reasonable. This section effectively connects abstract theory to potential biological implementations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "5c755e44-9d8e-499b-83ea-dec4f10523bc",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript situates the current work within existing literature on conflict suppression, coevolution of offense and defense, manipulation in kin groups, and communication. The current work examines a different route to selfishness through manipulation of non-kin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123-C132 provide appropriate literature context with proper citations. The distinctions drawn between the current work and previous models (C123-C125) are clear and accurate. The connections to related work (C127-C132) are appropriate. This demonstrates scholarly awareness and properly positions the contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "6a3b2555-fdfa-4145-af37-ee6752ebee7e",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Natural selection can maintain a variety of strategies at equilibrium and allow ongoing oscillating dynamics. When multiple manipulation mechanisms are allowed, non-equilibrium dynamics such as oscillations can occur.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C101 are high-level summaries of the main findings, supported by the detailed results in other claim groups. These represent accurate synthesis of the analytical and simulation results. The evidence from both ESS analysis and multiple-mechanism simulations supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    },
+    {
+      "id": "821ccf6b-c14e-4787-a0e9-bd81ea53881c",
+      "content_id": "9cf270f4-0549-4897-96a4-a10fa958a9b3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Future research should determine the extent of complex cheating in nature, which will require elucidating mechanisms that may differ across species. Manipulation and suppression could arise at all levels of life.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C135-C137 appropriately identify future research directions with relevant citations (C135). The acknowledgment of challenges (C136) is realistic. The broad concluding statement (C137) is appropriately speculative given the generality of the theoretical framework. These claims provide appropriate closure and perspective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:01.992178Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b357b159-dcb8-48fa-9ada-cc7cbc1961dc",
+      "result_id": "5d1eb2fd-98ce-4636-8a9d-a87b4e21e1b3"
+    },
+    {
+      "claim_id": "f9092b87-e499-4fff-8a06-45c3c44187cc",
+      "result_id": "5d1eb2fd-98ce-4636-8a9d-a87b4e21e1b3"
+    },
+    {
+      "claim_id": "e7c143a6-5a20-4ff1-b584-7098c4f8f680",
+      "result_id": "5d1eb2fd-98ce-4636-8a9d-a87b4e21e1b3"
+    },
+    {
+      "claim_id": "751eab62-b260-4409-893e-4714703a1373",
+      "result_id": "861335ee-9443-4a44-89f1-1cd6dcf23f7e"
+    },
+    {
+      "claim_id": "3921239a-f3ef-4c6f-b090-07e5bafe8c91",
+      "result_id": "861335ee-9443-4a44-89f1-1cd6dcf23f7e"
+    },
+    {
+      "claim_id": "71a967dc-e70a-42e7-a41a-39cf688393c3",
+      "result_id": "861335ee-9443-4a44-89f1-1cd6dcf23f7e"
+    },
+    {
+      "claim_id": "5e82c82b-ced5-40c2-b40c-af72f22fb20f",
+      "result_id": "861335ee-9443-4a44-89f1-1cd6dcf23f7e"
+    },
+    {
+      "claim_id": "70505977-daa1-43d3-b07d-17a158ea5a09",
+      "result_id": "861335ee-9443-4a44-89f1-1cd6dcf23f7e"
+    },
+    {
+      "claim_id": "d4219895-b419-4f76-9cb2-1dc619d49ca7",
+      "result_id": "861335ee-9443-4a44-89f1-1cd6dcf23f7e"
+    },
+    {
+      "claim_id": "486d9be5-96fe-4873-9aa3-957c22ba05b9",
+      "result_id": "861335ee-9443-4a44-89f1-1cd6dcf23f7e"
+    },
+    {
+      "claim_id": "3e3b1e54-9ce7-41bf-867d-f44ab7edd259",
+      "result_id": "67b87b1c-0a75-43ab-a911-401f88c578d6"
+    },
+    {
+      "claim_id": "28c36e92-02f8-48c8-8304-c29c5bec3b96",
+      "result_id": "67b87b1c-0a75-43ab-a911-401f88c578d6"
+    },
+    {
+      "claim_id": "eca63f93-eafd-4745-a05d-1d95addab823",
+      "result_id": "67b87b1c-0a75-43ab-a911-401f88c578d6"
+    },
+    {
+      "claim_id": "8c12ce51-3a62-499b-a920-20823783b482",
+      "result_id": "67b87b1c-0a75-43ab-a911-401f88c578d6"
+    },
+    {
+      "claim_id": "456f0145-ef96-4a04-9c41-38f6b4829ad5",
+      "result_id": "67b87b1c-0a75-43ab-a911-401f88c578d6"
+    },
+    {
+      "claim_id": "42cb8d47-55fb-4235-963a-9a660104d355",
+      "result_id": "67b87b1c-0a75-43ab-a911-401f88c578d6"
+    },
+    {
+      "claim_id": "b84d541e-1218-413e-a252-1fd7b53026bd",
+      "result_id": "67b87b1c-0a75-43ab-a911-401f88c578d6"
+    },
+    {
+      "claim_id": "d7496c7d-4364-4222-88d9-929a373d6131",
+      "result_id": "67b87b1c-0a75-43ab-a911-401f88c578d6"
+    },
+    {
+      "claim_id": "36c7f795-703c-431c-949d-6c48177b48dc",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "75a2d8c0-60d4-48d3-b77b-18f63deb9fe8",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "6d01e91c-0394-49a6-b4fb-f09c699f5ecb",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "2e9e44f6-da93-4258-a2b4-36f9fb7361d0",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "d297457c-ea05-454b-8335-44fe53043890",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "9b1634f2-72e6-441b-9271-27225cc3db59",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "8bf36de1-c6ad-4de9-81f1-b711f2549e93",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "79a8ec4b-2c58-4614-b6b2-764cd691f699",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "3484d11b-57d6-4dfb-a708-8434dd86e717",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "1cdea6e1-50ac-4a73-be52-6b2aa749725b",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "43309bda-f424-4dac-9c53-d0aba9cc3c76",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "45906dff-8852-4db0-97f0-639790b95e94",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "bea6c52b-0571-4536-bc46-25a320d006c0",
+      "result_id": "c718c706-7233-4fb2-988a-0f472ac9d18d"
+    },
+    {
+      "claim_id": "7d032523-6dad-4ec6-a9e0-8f00188c641b",
+      "result_id": "3a3185bd-a4d7-46ed-b6b8-bd216e3085c3"
+    },
+    {
+      "claim_id": "fa0ffd0b-27eb-4a01-b3b8-e1372b117e00",
+      "result_id": "3a3185bd-a4d7-46ed-b6b8-bd216e3085c3"
+    },
+    {
+      "claim_id": "56b61d77-aef4-42d7-9119-0afccfb65f50",
+      "result_id": "3a3185bd-a4d7-46ed-b6b8-bd216e3085c3"
+    },
+    {
+      "claim_id": "89dbd841-afb3-4c07-873a-c286f84ab70e",
+      "result_id": "3a3185bd-a4d7-46ed-b6b8-bd216e3085c3"
+    },
+    {
+      "claim_id": "7af286c6-1ca4-4286-9b50-120a6322c12f",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "3ec19cd7-955a-43d2-bf7a-018a4ce91a62",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "ea38ab0b-eb1b-4ea2-95e9-99a5e783c568",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "d8401c42-03b4-441b-88c0-3605c65aae7a",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "92602293-95fc-475c-b4c8-252928eef430",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "3ea9061e-52d2-42b7-b041-02eb8ec84deb",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "1e8ca000-1e91-4b23-9f7f-2d7c175d6caf",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "3515acf3-7d03-462a-ae90-13db296f9239",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "38f14108-8775-4fde-bf71-a953c13988ae",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "3c3fbbad-de20-4035-8b02-e64520f48ea6",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "2de9a475-0b1e-4f05-b064-173ac0f31c36",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "d1f697e3-7d77-4474-9969-bcef4bb200af",
+      "result_id": "38591b29-233a-4bad-ba79-d8db2fcd82ea"
+    },
+    {
+      "claim_id": "845fca23-43aa-486a-a6a0-2fdeb36f7298",
+      "result_id": "6ef74a76-4e4e-45b3-bce7-c4a7c9b957e1"
+    },
+    {
+      "claim_id": "3528f89c-ae82-4133-8b91-f450922debd7",
+      "result_id": "6ef74a76-4e4e-45b3-bce7-c4a7c9b957e1"
+    },
+    {
+      "claim_id": "9fc73b1c-d308-4517-84f2-4166d24c23c2",
+      "result_id": "6ef74a76-4e4e-45b3-bce7-c4a7c9b957e1"
+    },
+    {
+      "claim_id": "bfef86a5-c0fe-424d-a01f-ea70c9597185",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "db61911a-fd57-4fb3-9d9a-8e7fdc371c15",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "bdd8c3f5-59a4-4a60-9411-19f0e2104203",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "8bf15a2b-c65e-44f2-9891-0fbf31214357",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "cc7cace8-3b1e-4ca2-92ba-c8425ece2821",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "47771e19-006a-42ab-9107-b1365a0db9d4",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "64ada76d-8fe7-4f6d-961d-bb6ada5efa1f",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "59d64915-acf9-4ac0-b36a-4593f051d6eb",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "30f9213d-1abd-4d21-81bf-7c4e3db84c8c",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "ac0223fa-aedc-42be-a840-cbca26d3f756",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "65923f86-0035-48a6-acb1-925f2c562554",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "565da1bf-3043-44fd-95be-a924a3a96a0f",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "fb0bbebd-91d5-40ce-ac7e-1dd915dfb422",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "cce5414d-ec8d-4572-a919-d05715c1f58e",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "05e9624d-edca-46b1-bf8b-a5f016e9a062",
+      "result_id": "4b0df809-ee09-4018-97ae-e3e24e740aac"
+    },
+    {
+      "claim_id": "ee0a4677-33ef-48ea-a3db-2d4b6f4ffa87",
+      "result_id": "aea8d48d-9c8c-4e90-a38c-dfd20ea6a1ec"
+    },
+    {
+      "claim_id": "92b29abd-9d5d-4e74-97a9-58af7d2e8aaa",
+      "result_id": "aea8d48d-9c8c-4e90-a38c-dfd20ea6a1ec"
+    },
+    {
+      "claim_id": "87e45218-2304-43c6-aebd-67b6e62f1543",
+      "result_id": "aea8d48d-9c8c-4e90-a38c-dfd20ea6a1ec"
+    },
+    {
+      "claim_id": "49001467-c81e-447e-9116-a0d3fd044c11",
+      "result_id": "aea8d48d-9c8c-4e90-a38c-dfd20ea6a1ec"
+    },
+    {
+      "claim_id": "9bd7dcf3-cf3d-49ad-aafe-ef6fe9e38029",
+      "result_id": "aea8d48d-9c8c-4e90-a38c-dfd20ea6a1ec"
+    },
+    {
+      "claim_id": "374345b9-6558-4e8a-9c77-3c78bf0afacd",
+      "result_id": "aea8d48d-9c8c-4e90-a38c-dfd20ea6a1ec"
+    },
+    {
+      "claim_id": "a03a44ea-2784-4fec-8e08-822af47b7488",
+      "result_id": "aea8d48d-9c8c-4e90-a38c-dfd20ea6a1ec"
+    },
+    {
+      "claim_id": "0d9f07bb-2a19-4807-aa3b-880f97bc100f",
+      "result_id": "aea8d48d-9c8c-4e90-a38c-dfd20ea6a1ec"
+    },
+    {
+      "claim_id": "9ae38339-3086-4b79-bb50-64105c4c9832",
+      "result_id": "aea8d48d-9c8c-4e90-a38c-dfd20ea6a1ec"
+    },
+    {
+      "claim_id": "61caa33d-1dd9-469f-9293-cbf2738b1674",
+      "result_id": "ca16a8c1-6cc7-4b90-a394-c97e6a282c92"
+    },
+    {
+      "claim_id": "86e50bb1-16a0-45a4-885b-7a2589c161f6",
+      "result_id": "ca16a8c1-6cc7-4b90-a394-c97e6a282c92"
+    },
+    {
+      "claim_id": "b8c39aa6-918c-4a61-9844-f6a3ad1aed8b",
+      "result_id": "ca16a8c1-6cc7-4b90-a394-c97e6a282c92"
+    },
+    {
+      "claim_id": "d4c5f3ad-429f-4376-8716-aee0076f9928",
+      "result_id": "ca16a8c1-6cc7-4b90-a394-c97e6a282c92"
+    },
+    {
+      "claim_id": "5d67b9f9-67c6-48e6-97c5-50530bec592c",
+      "result_id": "ca16a8c1-6cc7-4b90-a394-c97e6a282c92"
+    },
+    {
+      "claim_id": "bbcdb844-43a1-487d-b88e-538ca99ff986",
+      "result_id": "ca16a8c1-6cc7-4b90-a394-c97e6a282c92"
+    },
+    {
+      "claim_id": "ddae7bb2-7628-4b1f-862b-7c0013f49efe",
+      "result_id": "ee0ea0df-d7ce-4001-9561-50678a4bdd41"
+    },
+    {
+      "claim_id": "6006403d-6ec6-408e-9ad9-172045a13e9e",
+      "result_id": "ee0ea0df-d7ce-4001-9561-50678a4bdd41"
+    },
+    {
+      "claim_id": "c12746d4-155e-4f98-9b19-253dd688130a",
+      "result_id": "ee0ea0df-d7ce-4001-9561-50678a4bdd41"
+    },
+    {
+      "claim_id": "9a0fdd3e-fcb7-4db3-8c0f-154a7f3d002a",
+      "result_id": "ee0ea0df-d7ce-4001-9561-50678a4bdd41"
+    },
+    {
+      "claim_id": "c702eef5-6e9e-4966-a6f3-eb66bc0e70b5",
+      "result_id": "af340ed3-a7e7-4d1f-b2ef-935836ad6834"
+    },
+    {
+      "claim_id": "95310519-3ecd-4d10-905b-c71036a9e9a5",
+      "result_id": "af340ed3-a7e7-4d1f-b2ef-935836ad6834"
+    },
+    {
+      "claim_id": "919b04cb-5d67-40c4-a02a-c812704af1fc",
+      "result_id": "0d70fa37-3e7c-49bc-a062-fcbc90e827e2"
+    },
+    {
+      "claim_id": "74ef8af9-2639-4566-8669-e9dfb0ebb2c8",
+      "result_id": "0d70fa37-3e7c-49bc-a062-fcbc90e827e2"
+    },
+    {
+      "claim_id": "5a6db6a1-de07-4c66-afc5-de52d75a75a3",
+      "result_id": "0d70fa37-3e7c-49bc-a062-fcbc90e827e2"
+    },
+    {
+      "claim_id": "bee04ac4-724a-4329-ac1b-0d4348315609",
+      "result_id": "0d70fa37-3e7c-49bc-a062-fcbc90e827e2"
+    },
+    {
+      "claim_id": "1660acfa-342b-4cea-bf42-6b19eca37339",
+      "result_id": "0d70fa37-3e7c-49bc-a062-fcbc90e827e2"
+    },
+    {
+      "claim_id": "5443385a-9a89-4f74-921f-b561076130a4",
+      "result_id": "0d70fa37-3e7c-49bc-a062-fcbc90e827e2"
+    },
+    {
+      "claim_id": "c9791337-9d52-4e0e-bbb2-32944c38a329",
+      "result_id": "0d70fa37-3e7c-49bc-a062-fcbc90e827e2"
+    },
+    {
+      "claim_id": "eca63869-146f-4413-9204-d5f74360dc24",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "7d8e9366-7311-4dce-97b1-a25ad607b8fd",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "3145e9d4-48c9-4e77-8b71-73b409aa38ed",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "fd15766c-683b-4fbe-81ff-d7f40d531dd6",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "b7e587e7-14b6-42d8-9f07-30b74539c066",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "15806070-f193-434c-bd84-37227f94ed5e",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "161133cb-e89b-4a4b-af3b-1248ace5a790",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "08b2fe6e-2152-4194-ad1c-1949810ccc88",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "47c2e847-af5a-4b5f-a862-978d13668774",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "eadfd801-aadf-42ea-8454-bc7acba4027b",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "68d5d7d1-eb4e-43a4-88b8-642dc07dc7cd",
+      "result_id": "dd442150-4a4d-4cee-87c3-fb35db34eee0"
+    },
+    {
+      "claim_id": "623456e3-4a95-4a93-9dba-3972e5fff3b7",
+      "result_id": "5c755e44-9d8e-499b-83ea-dec4f10523bc"
+    },
+    {
+      "claim_id": "3c35cd09-5017-4e24-983b-dbba99034a2b",
+      "result_id": "5c755e44-9d8e-499b-83ea-dec4f10523bc"
+    },
+    {
+      "claim_id": "696a1c81-b621-4ec1-b8dc-1572cd7687ca",
+      "result_id": "5c755e44-9d8e-499b-83ea-dec4f10523bc"
+    },
+    {
+      "claim_id": "b175a9f7-4725-4a6a-9957-200910230300",
+      "result_id": "5c755e44-9d8e-499b-83ea-dec4f10523bc"
+    },
+    {
+      "claim_id": "ce7fd653-fb82-4a88-a937-a2144e123842",
+      "result_id": "5c755e44-9d8e-499b-83ea-dec4f10523bc"
+    },
+    {
+      "claim_id": "e7667056-b6e7-4846-a3a8-5b5ab4cf01ac",
+      "result_id": "5c755e44-9d8e-499b-83ea-dec4f10523bc"
+    },
+    {
+      "claim_id": "6960d03a-6e41-4871-b00a-f4217ecd311c",
+      "result_id": "5c755e44-9d8e-499b-83ea-dec4f10523bc"
+    },
+    {
+      "claim_id": "4c842a45-a60a-400c-a144-c9bc5a987613",
+      "result_id": "5c755e44-9d8e-499b-83ea-dec4f10523bc"
+    },
+    {
+      "claim_id": "09cdb6d6-da23-4e00-a2eb-aa93c7239109",
+      "result_id": "5c755e44-9d8e-499b-83ea-dec4f10523bc"
+    },
+    {
+      "claim_id": "4c8141d9-a197-4326-a460-4f9e6466a254",
+      "result_id": "6a3b2555-fdfa-4145-af37-ee6752ebee7e"
+    },
+    {
+      "claim_id": "f4e75d34-e415-4183-a59c-8fef4525d6b7",
+      "result_id": "6a3b2555-fdfa-4145-af37-ee6752ebee7e"
+    },
+    {
+      "claim_id": "8c191e8f-3f27-49ce-8b41-72bb8e06cf3b",
+      "result_id": "821ccf6b-c14e-4787-a0e9-bd81ea53881c"
+    },
+    {
+      "claim_id": "4658574c-4b92-40a1-914d-67543c562e9c",
+      "result_id": "821ccf6b-c14e-4787-a0e9-bd81ea53881c"
+    },
+    {
+      "claim_id": "0820a0ea-852f-4c8f-8f26-e4145d5d4d54",
+      "result_id": "821ccf6b-c14e-4787-a0e9-bd81ea53881c"
+    }
+  ],
+  "comparisons": []
+}

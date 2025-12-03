@@ -1,0 +1,1390 @@
+{
+  "submission": {
+    "id": "d6a9696e-d443-4f2a-a9df-bbd667d42be6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:49:53.827242Z",
+    "updated_at": "2025-12-03T05:49:53.827242Z"
+  },
+  "content": [
+    {
+      "id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "submission_id": "d6a9696e-d443-4f2a-a9df-bbd667d42be6",
+      "content_type": "manuscript",
+      "content_text": "# Highly localized intracellular Ca2+ signals promote optimal salivary gland fluid secretion\n\n## Authors\n\n- Takahiro Takano<sup>1</sup>\n- Amanda M Wahl<sup>1</sup>\n- Kai-Ting Huang<sup>1</sup>\n- Takanori Narita<sup>2</sup> ([ORCID: 0000-0003-0295-5014](https://orcid.org/0000-0003-0295-5014))\n- John Rugis<sup>3</sup> ([ORCID: 0000-0002-8009-4152](https://orcid.org/0000-0002-8009-4152))\n- James Sneyd<sup>3</sup>\n- David I Yule<sup>1</sup> ([ORCID: 0000-0002-6743-0668](https://orcid.org/0000-0002-6743-0668)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology and Physiology, University of Rochester Rochester United States\n2. Department of Veterinary Medicine, College of Bioresource Sciences, Nihon University Fujisawa Japan\n3. Department of Mathematics, University of Auckland Auckland New Zealand\n\n\u2020 Corresponding author\n\n## Abstract\n\nSalivary fluid secretion involves an intricate choreography of membrane transporters to result in the trans-epithelial movement of NaCl and water into the acinus lumen. Current models are largely based on experimental observations in enzymatically isolated cells where the Ca2+ signal invariably propagates globally and thus appears ideally suited to activate spatially separated Cl and K channels, present on the apical and basolateral plasma membrane, respectively. We monitored Ca2+ signals and salivary secretion in live mice expressing GCamp6F, following stimulation of the nerves innervating the submandibular gland. Consistent with in vitro studies, Ca2+ signals were initiated in the apical endoplasmic reticulum. In marked contrast to in vitro data, highly localized trains of Ca2+ transients that failed to fully propagate from the apical region were observed. Following stimuli optimum for secretion, large apical-basal gradients were elicited. A new mathematical model, incorporating these data was constructed to probe how salivary secretion can be optimally stimulated by apical Ca2+ signals.\n\n## Introduction\n\nSalivary fluid secretion is vital to the health of the oral cavity (Pedersen et al., 2002). This is most clearly appreciated in disease states which result in hypofunction where patients experience difficulty chewing and swallowing food, speaking and are susceptible to oral infections that result in dental caries (Melvin, 1991). Fluid secretion from the salivary gland requires the trans epithelial movement of Cl- across polarized acinar cells (Foskett, 1990; Melvin, 1999; Melvin et al., 2005; Turner and Sugiya, 2002). The polarization of exocrine cells is a consequence of the presence of tight junction protein complexes which functionally separate the transport machinery in the apical PM from those in the functionally equivalent, basal and lateral PM (collectively termed basolateral PM). This structural specialization allows distinct proteins to be localized in each membrane to promote vectoral ion and fluid movement (Melvin et al., 2005). The current, widely accepted model for fluid secretion posits that Cl- are transported against their electrochemical gradient by the Na+/K+/2Cl- cotransporter, NKCC1 at the basolateral plasma membrane (PM) (Evans et al., 2000) and subsequently enters the lumen of the acinus across the apical PM through TMEM16a chloride channels (Romanenko et al., 2010a). Cl- accumulation imparts a negative potential to the lumen relative to the basolateral PM, which draws Na+ paracellularly through tight junctions (Melvin et al., 2005). Subsequently, water follows osmotically to generate the primary saliva which is modified by the ductal epithelia. An elevation in cytosolic [Ca2+] following neurotransmitter release plays a central role in the stimulation of fluid secretion from salivary gland acinar cells (Ambudkar, 2011; Ambudkar, 2016; Gallacher and Petersen, 1983; Putney, 1982; Weiss et al., 1982). Acetylcholine (ACh) is the primary neurotransmitter released following parasympathetic input to the major salivary glands after gustatory and olfactory stimulation (Matsui et al., 2000). ACh results in activation of muscarinic receptors, G-protein coupled stimulation of inositol 1,4,5 trisphosphate (IP3) production and subsequent Ca2+ release from endoplasmic reticulum stores via IP3 receptors (IP3R) (Futatsugi et al., 2005; Lee et al., 1997; Pages et al., 2019). The ER stores are subsequently refilled by store operated Ca2+ entry across the PM, which is required for sustained salivary secretion (Cheng et al., 2011a; Cheng et al., 2011b; Melvin et al., 1991; Takemura et al., 1989). To stimulate saliva flow, the primary effector of the increase in [Ca2+] are TMEM16a channels localized in the apical PM (Romanenko et al., 2010a; Arreola et al., 1996a; Arreola et al., 1996b; Begenisich and Melvin, 1998). As Cl- moves across the apical PM, the membrane potential approaches the equilibrium potential for Cl-; however, Ca2+ also increases the activity of K channels, conventionally thought to be localized predominantly at the basolateral PM, to maintain the membrane potential to favor continued Cl- exit and secretion (Maruyama et al., 1983; Nakamoto et al., 2008; Nakamoto et al., 2007; Romanenko et al., 2007; Romanenko et al., 2010b).\n\nOver the past several decades, the spatiotemporal properties of the agonist-stimulated Ca2+ signal have been described in preparations of enzymatically isolated preparations of salivary gland acinar cells or lobules (Park et al., 2012; Warner et al., 2008) loaded with fluorescent Ca2+ indicators and imaged by time resolved wide field or confocal microscopy. In total, these studies indicate that the agonist stimulated Ca2+ signals exhibit characteristics which appear ideally tuned to activate these spatially separated Ca2+-dependent ion channels required for secretion. For example, stimulation with muscarinic agonists, or more directly by photolysis of caged-IP3, invariably results in the Ca2+ signal initiating in the extreme apical ER followed by a rapid Ca2+ wave which results in globalization of the signal throughout the cytoplasm (Bruce et al., 2004; Bruce et al., 2002; Giovannucci et al., 2002; Larina and Thorn, 2005; Tojyo et al., 1997; Won et al., 2007). The initiation sites, termed the \u2018trigger zone\u2019, correspond to the localization of the majority of type-2/3 IP3R (Lee et al., 1997; Pages et al., 2019), in ER in close apposition to TMEM16a in the PM. The intimate association of apical ER and apical PM is emphasized by the apparent co-localization of IP3R and TMEM16a by confocal microscopy, despite their localization in different membranes. Super-resolution STED imaging does resolve distinct distributions of the two proteins, such that the distance between apical ER and PM is estimated to be ~50\u2013100 nm (Sneyd et al., 2021) and thus constitutes a region of privileged communication between messenger and effectors. The subsequent global spread is consistent with Ca2+-induced Ca2+ release through IP3R and ryanodine receptors (RyR) (Won et al., 2007) to allow the Ca2+ signal to efficiently activate the majority of K channels present on the basolateral PM. At low agonist concentrations, the cycle of apical Ca2+ release, global spread and subsequent Ca2+ sequestration is repeated, such that temporally, the Ca2+ signal is manifested as a series of oscillations with a relatively slow period (5\u20138/min) (Bruce et al., 2002). At higher concentrations of agonist, the initial globalization is maintained to produce a \u2018peak and plateau\u2019 type temporal response.\n\nWhile in vitro studies of Ca2+ signaling have provided a wealth of information to greatly inform our models of salivary secretion, there are general caveats which apply to these data. Primarily, the cells are studied out of a physiological context with no extracellular matrix, basement membrane and with probable disruption of cellular junctions as a result of the enzymatic isolation. A further complication is that isolated cells are typically exposed for a period of time to a constant concentration of agonist which in many cases is a non-hydrolysable analog, as opposed to the neural delivery of transmitter occurring in a pulsatile fashion that is subject in vivo to enzymatic degradation. Whether these factors influence the spatiotemporal characteristics of Ca2+ signals in salivary glands is unknown. Additionally, since only indirect measurements of fluid secretion inferred from volume changes can be made in isolated acinar cell preparations (Teos et al., 2016), it is unclear how the concentration-dependent characteristics of stimulated Ca2+ signals in vitro relate to the physiological stimulation of fluid secretion in vivo.\n\nIn this study, we generated mice expressing a genetically encoded Ca2+ indicator specifically in exocrine acinar cells and imaged the Ca2+ signals in submandibular glands in living mice by intravital multiphoton (MP) microscopy. Notably, stimulation of the endogenous neural input to the gland induces Ca2+ signals with major spatiotemporal properties which are distinct from those observed in isolated acinar cells. Specifically, following moderate stimulation, apically localized Ca2+ signals are generated which did not propagate globally. Furthermore, the apical signals consist of rapid oscillations. At stimulation intensities optimum for secretion, a significant apical-basal standing Ca2+ gradient was also established. These striking disparities suggest a modification of our previous model is necessary (Pages et al., 2019; Sneyd et al., 2014) to incorporate the characteristics of physiological Ca2+ signals in vivo and thus provide a revised framework to better understand salivary fluid secretion.\n\n## Results\n\nTo generate mice expressing a fluorescent Ca2+ indicator in exocrine acinar cells, homozygous mice expressing the fast genetically encoded Ca2+ indicator GCaMP6f (B6J.Cg-Gt(ROSA)26Sortm95.1(CAG-GCaMP6f)Hze/MwarJ) (Chen et al., 2013) floxed by a STOP cassette, were crossed with heterozygous tamoxifen-inducible Mist1 Cre mice (B6.129-Bhlha15tm3(cre/ERT2)Skz/J) (Maruyama et al., 2016). The STOP codon was subsequently excised following tamoxifen gavage (Figure 1A). The expression of GCaMP6f was investigated in vivo in anaesthetized mice following surgery to expose the submandibular salivary glands (SMG). One SMG was lifted and placed on a small platform with a coverslip placed on top of the gland (Figure 1B). Bipolar stimulation electrodes were inserted to the duct bundle connecting to the imaged SMG tissue, in order to stimulate nerves innervating the SMG. A cover glass was placed on top of the SMG to gently hold the tissue and to maintain a saline solution bathing the gland. MP imaging in serial z sections through the gland revealed expression of GCaMP6f exclusively in acinar cells. GCaMP6f expression was uniformly observed in essentially all acinar cells while GCaMP6f expression was not evident in any other cell type such as blood vessels, nerves, myoepithelial cells or ductal cells. As expected by the size of GCaMP6f, the probe was largely excluded from nuclei. Large voids with lack of expression of GCaMP6f were evident in z planes distal from the surface of the gland likely representing the localization of ductal structures (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig1-v2.jpg)\n\n**Figure 1.:** (A) Generation of transgenic mice expressing the GCaMP6f gene driven by Mist1 promotor. GCaMP6f is selectively expressed in acinar cells and appears uniformly through the cytoplasm but is largely excluded from the nucleus. (B) Animal preparation for in vivo imaging. A SMG was lifted and placed on a small platform, then held with a coverslip on top. Stimulation electrodes were inserted to a duct bundle that connect SMG to the body to stimulate nerves that innervate to SMG. (C) A series of z-projection images of SMG with GCaMP (green) expressed in acinar cells.\n\nWe next monitored changes in GCaMP6f fluorescence by intravital microscopy in live animals using MP excitation. Images were acquired at 30 frames per second (fps) as described in Materials\u00a0and\u00a0methods (each image a three frame average to result in acquisition at 10 fps). Under basal conditions, prior to stimulation, the cells were quiescent (Figure 2B). Electrical stimulation at various stimulus strengths delivered to nerves innervating the SMG (1\u2013100 Hz, 12 s initiated at 10 s) induced increases in intracellular [Ca2+] in acinar cells (Figure 2A,B). Following 1 Hz stimulation, a minority of the cells exhibited small, rapid changes in fluorescence, (n = 4 fields from four animals, Figure 2A,B), while most cells were refractory. Following higher frequency stimulation (3\u201310 Hz), the majority of the cells in the field responded and the amplitude of the [Ca2+] signal increased as the stimulation strength was increased (Figure 2A,B). During the 12 s of stimulation, overall fluorescence gradually increased and immediately returned to baseline after the termination of the stimulation (Figure 2A,B). The maximum [Ca2+] signal evoked during the 12 s stimulation progressively increased and was maintained from 1 to 10 Hz throughout the period of stimulation, but this trend did not hold following higher frequency stimulation (n = 4 fields from four animals, Figure 2C). Following stimulation at 30\u2013100 Hz, the [Ca2+] increase was not maintained for the duration of stimulation. Under these conditions, the [Ca2+] rapidly peaked in the initial 1\u20133 s then decreased thereafter (Figure 2A,B), probably as a result of exceeding the maximal firing rate of the neurons innervating the SMG. Of note, the stimulation likely led to increased neural activity specifically, rather than stimulating acinar cells directly, as a consequence of current leak through the saline depolarizing nerve endings, as the contralateral SMG were unresponsive to even the highest 100 Hz nerve bundle stimulation of the ipsilateral gland (p > 0.1 compared to without stimulation, n=4 fields from four animals, Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig2-v2.jpg)\n\n**Figure 2.:** (A) Time-course images of Ca2+ (baseline fluorescence was subtracted) in response to 1\u2013100 Hz stimulations. (B) Mean response of the entire field of view to stimulation at the indicated frequency. N = four fields from, four animals. (C) A summary of peak Ca2+ increases during each stimulation. Stimulation was only to the ipsilateral SMG, as the contralateral SMG failed to respond. N = 4 fields from four animals. Mean \u00b1 sem. *p <0.05 vs. contralateral gland, t test.\n\nTo further confirm the physiological consequence of nerve stimulation, we monitored saliva secretion under identical stimulus conditions. There was no significant secretion activated by 1\u20133 Hz nerve stimulation for 1 min (p > 0.05 compared to the absence of nerve stimulation, n = four animals), but saliva secretion progressively increased following 5\u201310 Hz nerve stimulation (p < 0.05 compared to the absence of stimulation, n = four animals) (Figure 3A). Higher frequency stimulation did not result in augmented secretion, likely reflecting failure to sustain the rise in [Ca2+] (Figure 2A). At moderate stimulation intensity (0\u201310 Hz), there was a linear correlation between the peak [Ca2+] increases by stimulation and saliva secretion (r2 = 0.995, n = four animals, Figure 3B). These stimulus paradigms (1\u201310 Hz), therefore likely represent the range of physiological stimulation of both evoked Ca2+ signals and the resulting saliva secretion and thus characterization of these signals, represent the focus of the remainder of the study.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig3-v2.jpg)\n\n**Figure 3.:** (A) A summary histogram of total saliva secretion following 1 min stimulations at the indicated frequency. N = four animals. Mean \u00b1 sem. (B) A correlation plot of peak Ca2+ (shown in Figure 2C) vs. saliva secretion, which showed a linear regression of R2 = 0.995 (black line) for stimulation frequency 1\u201310 Hz. *p <0.05 vs. no stimulation ANOVA with Dunnett test.\n\nSustained saliva secretion requires both Ca2+ release and subsequent Ca2+ influx (Ambudkar, 2011; Cheng et al., 2011b; Ambudkar et al., 2017). While the former is dependent on IP3-induced Ca2+ release, the latter phase is ultimately dependent on Orai based channels (Hong et al., 2011). To provide evidence that similar mechanisms operate in vivo, experiments were performed stimulating glands at 10 Hz for a more extended period of time (~5 min) and evaluating the effects of an Orai channel blocker, GSK7975A (Zhang et al., 2020) on the evoked Ca2+ signals. Stimulation resulted in an initial peak in [Ca2+]i which decayed to a new plateau level which was maintained throughout the 5 min of stimulation (Figure 4A, n\u00a0= four animals). Animals were subsequently injected with GSK7975A (20 mg/kg ip) and restimulated 20\u201370 mins later. No significant effect was observed on the magnitude of the initial peak, presumably because sufficient refilling of the ER Ca2+ store had occurred during exposure to blocker. However, the plateau measured following 5 min of stimulation was significantly attenuated in drug injected animals vs. vehicle (Figure 4A, pooled data in Figure 4B/C) suggesting a requirement for Orai channel dependent influx for sustained Ca2+ signals and secretion.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig4-v2.jpg)\n\n**Figure 4.:** (A) Continuous 10 Hz stimulation results in an initial peak followed by a sustained plateau. In animals injected with the Orai channel blocker GSK7975A following the initial stimulation, subsequent stimulation results in a substantial reduction in the sustained phase of the response monitored following 5 min of stimulation. (B/C) shows the pooled data showing the magnitude of [Ca2+] at initial peak (12 s after the initiation of stimulation, left) and sustained phase (5 min after the initiation, right) before and after 20\u201340 min of vehicle or GSK7975A administration. N = 3\u20135 from 3 to 5 animals. *p<0.05 paired t test.\n\nWe next investigated the characteristics of Ca2+ signals evoked by stimulation over this physiological range. Following nerve stimulation at low stimulation strengths (1\u20135 Hz), we observed both the recruitment of responding cells and an increase in the amplitude of the [Ca2+] response (Figure 5). To determine more closely how the increased stimulation intensity impacts the characteristics of Ca2+ responses to result in increased saliva secretion, a software-based work-flow was designed to post-process the image series. Imaged fields were sub-divided into 8 by 8 equal quadrants to yield 64 grid squares (Figure 5C,D). Each grid was 32 x 32 \u00b5m, and typically included a portion of an acinus consisting of 1\u20135 cells and was used to approximate the spatial and temporal behavior of individual cells or lobules in the field. In order to analyze the activity in each region, the image was then processed to show percent \u0394F/F for each time-lapse frame in the sub-divided regions (Figure 5D,E). Using this general scheme, we compared information obtained from 8 x 8 grids, 16 x 16 grids and randomly manually selected regions of interest representing either acinar clusters or single acinar cells. Each scheme produced essentially equivalent data, ultimately validating the use of the 8 x 8 grid (Figure 5\u2014figure supplement 1). At 1 Hz stimulation, the activity was sporadic, with the responding regions tending to give multiple responses while non-responding regions remained quiescent throughout the stimulus period (Figure 5F). Overall, 34.0 \u00b1 5.1% (n = 19 fields from eight animals) of the sub-regions showed significant responses during the stimulation (Figure 5G). Moreover, the increase in [Ca2+] in the responding regions exhibited a prolonged latency prior to the initial rise following stimulation (6.72 \u00b1 0.79 s, n = 19, Figure 5H). Stimulation at higher frequencies progressively recruited more grid regions and shortened the latency to the initial response (Figure 5G,H). At 10 Hz, virtually all regions responded to the stimulation (98.5 \u00b1 0.6%, n = 19) with minimal latency (1.70 \u00b1 0.27 s, n = 19) (Figure 5G,H). These data suggest that the increase in overall [Ca2+] and secretion by rising stimulation strength was at least in part due to the recruitment of responding cells and a faster time for cells to respond. Further, the amplitude of the maximal increase in [Ca2+] in the subdivided grids also increased as the strength of the stimulation was augmented (Figure 5I), indicating that enhancement of individual cellular [Ca2+] responses also contribute to the overall increase of [Ca2+] amplitudes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013B) An imaging field before (A) and during (B) a stimulation. (C\u2013D) An imaging field was divided to grids of 32 x 32 \u00b5m, to yield 64 regions. (E) The average intensity per grid was obtained in each time frame. (F) Representative time-course plots of all 64 grids before, during, and after 1\u201310 Hz stimulations. Thick colored line represents the mean of the 64 grids for each stimulation. (G) A summary plot of average percent of responding grids in a field by the stimulations. N = 19 fields from eight animals. Mean \u00b1 sem. (H) A summary plot of average latencies to initiation of Ca2+ increases in all grids. Non-responding grids were excluded for the data. Mean \u00b1 sem. N = 19 from eight animals. (I) A summary plot of average peak Ca2+ increases in all grids. Mean \u00b1 sem. N = 19 from eight animals. **p<0.01 ANOVA with Tukey test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) A representative imaging field. (B) 8x8 grids (1012 \u00b5m2 per grid) or 16x16 grids (253 \u00b5m2 per grid) were applied to the image. In addition, individual lobules (average = 1150 \u00b1 65 \u00b5m2) and acinar cells (average 212 \u00b1 12 \u00b5m2) were randomly chosen and manually selected as a reference. (C) Time-course traces of [Ca2+] in each grid/lobule before, during, and after 12 s stimulations. (D\u2013F) Analysis showing results obtained from 8x8 grids and 16x16 grids agreed with the results from the lobules/cells.\n\nWe observed that increased stimulus strength resulted in both a higher number of responding regions and a higher peak [Ca2+] amplitude in individual grids. We next examined whether grids which responded at lower stimulus intensity also strongly responded to higher frequency stimulation. Grids in an imaging field were ranked based on the peak [Ca2+] evoked by 5 Hz stimulation and then re-sorted based on progressively increasing amplitude (Figure 6A,B). We subsequently sorted the data obtained from 1, 3, and 10 Hz stimulation from the identical field in the grid rank order established for 5 Hz stimulation (Figure 6C). This analysis demonstrated a clear pattern whereby, at each stimulus strength, particular regions of the field of view were most susceptible to stimulation, such that grids giving the largest amplitude response at 1 Hz similarly responded by displaying the largest amplitude signals at 3, 5 and 10 Hz stimulation. (n\u00a0= 5 fields from four animals) (Figure 6D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig6-v2.jpg)\n\n**Figure 6.:** (A) An example image of a processed imaging field showing peak intensities during a stimulation in each grid. The grids consist of lowest intensity (arrow, grid A1) to highest (arrow, grid C7). (B) A representative plot of peak Ca2+ increases for each grid in a field to a 5 Hz stimulation. The grids in x axis were reordered from the lowest intensity to the left to the highest on the right. (C) Different stimulation strengths were applied to the same field, and the responses were plotted according to the order indexed by the responses to 5 Hz. (D) A summary plot of peak Ca2+ increases in each grid sorted by responses to 5 Hz. Mean \u00b1 sem. n\u00a0= 5 from four animals. (E) A correlation plot of sorted grid, from low peak Ca2+ to high, vs. degree of Ca2+ increases in response to higher stimulation. Linear regression with R2 = 0.920. N = 5 from four animals. (F) A summary plot of standard deviations of Ca2+ changes during stimulations in each grid sorted by responses to 5 Hz. N = 5 from four animals. Mean \u00b1 sem. (G) A correlation plot of sorted grids, from low peak Ca2+ to high, vs. degree of standard deviation of Ca2+ flux in response to higher stimulation. Linear regression with R2 = 0.866. N = 5 from four animals.\n\nThe extent of the increase in [Ca2+] following greater strengths of stimulation was not uniform throughout individual grids. High-responding grid regions showed linearly enhanced increases following stimulation (R2 = 0.9197, n = 4 fields from four animals), while the increase in Ca2+ signal following increased stimulation in less responsive regions was proportionately smaller (Figure 6E). This trend was not limited to the peak amplitude attained. During the 12 s stimulation, grid regions exhibited [Ca2+] fluctuations superimposed upon an elevated plateau (Figure 6F). We evaluated the extent of this fluctuation by comparing the standard deviation of the \u0394F/F signal occurring during the stimulation period. With this analysis, a higher standard deviation reflects greater variability in the stimulated change in [Ca2+]. When the 5 Hz data was sorted according to the peak [Ca2+] ranking as in Figure 6D, the variation of grids with 5 Hz stimulation also demonstrated that low-responding grids had smaller variability than high-responding grids (n = 4 fields from four animals) (Figure 6F). Likewise, the same trend was exhibited at each stimulation strength, with a linearly increasing rate of enhancement as intensity increased (R2 = 0.8664, n = 4) (Figure 6G). Therefore, an increased fluctuation in the response is also a property of sensitive, highly responsive regions.\n\nStimulation of salivary fluid secretion is predominantly mediated through parasympathetic input as a result of the action of ACh released from nerve endings acting on muscarinic M3 receptors on acinar cells (Matsui et al., 2000). To gain direct evidence that neural release of ACh was responsible for the changes in [Ca2+] observed, we systemically administered a cholinesterase inhibitor to block the clearance of ACh and effectively increase the local [ACh]. Physostigmine (0.1 mg/kg body weight IP) enhanced the peak amplitude of the Ca2+ signals following stimulation (Figure 7A\u2013D), indicating that acinar cell [Ca2+] changes reflect the extracellular availability of acetylcholine released by stimulation. The augmentation in the Ca2+ signal was not statistically significant at 1 Hz stimulation (p > 0.05, n = 5 fields from four animals), but became more prominent at 3 Hz with shorter latency, an increase in the number of responding grids and peak amplitude (p < 0.05 in % response and peak \u0394F/F, n = 5) and following 5 Hz stimulation (p < 0.05 in latency and peak \u0394F/F, n =\u00a05 fields from four animals) (Figure 7E\u2013G). At 10 Hz stimulation, no further increase in the grid responsiveness or latency was observed, reflecting the fact that all grids were active and exhibited minimal latency at this stimulus strength, however the peak \u0394F/F showed a robust enhancement (p < 0.01, n = 5) (Figure 7E\u2013G). While these data do not rule out the involvement of additional neurotransmitters, they confirm a prominent role for ACh in mediating the increase in [Ca2+] observed following neural stimulation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013D) Representative average traces from 64 grids of changes in Ca2+ responses in a same field before (black) and after (blue) physostigmine. (E) A summary plot of average percent of responding grids in a field by the stimulations in paired fields. N = 5 from four animals. Mean \u00b1 sem. (F) A summary plot of average latency to initiation of Ca2+ increases in all grids in paired experiments. Non-responding grids were excluded for the data. N = 5 from four animals. Mean \u00b1 sem. (G) A summary plot in paired experiments of average peak Ca2+ rise in all grids. N = 5 from four animals. Mean \u00b1 sem. *p<0.05; **p<0.01 Paired t test.\n\nWhile the previous grid-based analysis yielded important information relating to the general properties of the evoked signals within an imaged field, this approach was not suited to provide spatial information on a sub-acinus or lobule scale. To interrogate the subcellular spatial characteristics of the Ca2+ signals evoked by neural stimulation, we generated standard deviation (SD) images from the stimulated portion of the image series. This analysis revealed that at all physiological stimulus strengths the increase in [Ca2+]i was highly heterogeneous, with the largest increases in signal occurring in the apical aspects of acinar clusters, directly below the apical PM (Figure 8\u2014figure supplement 1). Figure 8A illustrates a field in which an acinar cluster is highlighted prior to neural stimulation at 5 Hz (red box and image series in Figure 8B). In marked contrast to in vitro experiments, analysis of the image series demonstrated that the signal consisted of brief (< 2 s in duration), repetitive increases in [Ca2+] (Figure 8B). The signals were highly localized, being initiated in, and almost entirely confined to the apical portions of individual cells, within a few \u03bcms of the apical PM (Figure 8B\u2013E), with only very rare, small elevations in the basal aspects of the cell. This localization is illustrated by SD images of the whole field (Figure 8D) and a topographical SD representation of the highlighted cluster (Figure 8D) together with analysis of the fluorescent changes in time from regions of interest manually assigned to an apical Region of Interest (ROI) (red box), cytoplasmic ROI (blue box), and a basal ROI (green box) (Figure 8E). Consistent with tight coupling between acinar cells by gap junctions, signals often appeared to invade the apical region of neighboring cells (see images time stamped between 30.8\u00a0and\u00a031.8 s in Figure 8B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig8-v2.jpg)\n\n**Figure 8.:** (A) A representative imaging field prior to stimulation. (B) Time-course images of a field containing an acinar cluster (red box in panel A) showing active Ca2+ signaling in the extreme apical portion in the cells. (C) A processed image mapping standard deviation values during stimulation period in the field shown in panel (A). (D) A 3D plot of the SD image of the acinar cluster in B, showing large fluctuations in [Ca2+] only in the apical domain with minimal Ca2+ signal transmission to the basal aspects of the cell. (E) Plot of Ca2+ changes in a single cell from the apical domain (red box in the in the right image), cytoplasmic (blue box in the right image) and basal (green box in right image).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** At all stimulus intensities, the largest changes in fluorescence are observed in the extreme apical region of the acinar cluster. At lower stimulus intensities, there is no appreciable propagation of the signal to the basal aspects of the cells. At higher intensities (10 Hz) a significant apical-basal gradient is established.\n\nAt 10 Hz stimulation, a rise in [Ca2+] was also rapidly initiated in the extreme apical ER, close to the apical PM (imaging field in Figure 9A with red box showing the highlighted cluster depicted in Figure 9B). In contrast to lower stimulus strengths, Ca2+ signals were observed in the basal aspects of the cell (Figure 9B\u2013E), but of considerably lower amplitude, approximately 20\u201330% of that observed in the apical domain. Effectively a standing apical-basal [Ca2+] gradient was established, as shown in the SD image of the field and the topographical representation of the SD of the highlighted region (Figure 9C/D), together with the analysis of manually positioned representative apical (red ROI), cytoplasmic (blue ROI) and basal regions (green ROI) (Figure 9E) to illustrate the magnitude of the gradient.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig9-v2.jpg)\n\n**Figure 9.:** (A) A representative imaging field prior to stimulation. (B) Time-course images of a field containing an acinar cluster (red box in panel A) depicting predominant Ca2+ changes in the apical portion of cells with smaller changes in the basal regions. (C) A processed image mapping standard deviation values during the stimulation period in the whole field shown in panel (A). (D) A 3D plot of the SD image for the acinar cluster shown in (B). (E) Tracings of Ca2+ changes in the apical domain (red box in the image at right), cytoplasmic (blue box in the image on the right) and basal aspects of a single cell from this cluster (green box in the image at right).\n\nTo further investigate this spatial heterogenicity, we performed MP line scans following stimulation at 3\u201310 Hz stimulation where the scanned line was orientated to interrogate changes in fluorescence originating in the apical region extending through the nucleus to the base of an individual cell. Figure 10A shows a representative field with the position of the scanned line. Figure 10BI,CI and DI show the changes in line fluorescence over time evoked by 3, 5, 10 Hz stimulation, respectively. Consistent with the previous data, following 3 and 5 Hz stimulation the changes in fluorescence were largely confined to regions close to the apical PM of the cell (defined as a 3 \u03bcm line in the kinetic from apical, cytoplasmic, and basal ROIs shown in Figure 10BII and CII and pooled data in Figure 10E/F). Stimulation at 10 Hz again resulted in large amplitude apical signals which diminished rapidly, such that the magnitude of the signal was ~25% of the apical signal in the extreme basal aspects of the cell distal to the nucleus (Figure 10DI, kinetic in 10 DII and pooled data from 11 line scans from 3 animals in 10E/F). The apical-basal gradient was further analyzed by plotting the amplitude of the maximum fluorescent change across the line profile which further reinforces that at each stimulus intensity the signal rapidly decays away from the apical initiation sites to the nucleus and is ~25% of the apical signal in the extreme base of the cell (Figure 10. BIII, CIII and DIII). In total, these data demonstrate that in contrast to experiments performed in in vitro preparations, physiological stimulation results in prominent, apical Ca2+ signals which do not propagate and globalize to result in a homogeneous [Ca2+]i throughout the cell, such that steep apical-basal gradients are established.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig10-v2.jpg)\n\n**Figure 10.:** (A) Shows a field of view where the boundaries of an acinus and individual cells have been delimited. The red line indicates the progression of the scan line. (BI, CI and DI)\u00a0Show consecutive lines stacked in time from left to right for 3, 5 and 10 Hz, respectively. The lower image for each stimulation is an expanded region encompassing the maximum increase in fluorescence for each stimulation. (BII, CII and DII)\u00a0Show kinetic plots for a 1 pixel 3 \u03bcm line placed in the apical, cytoplasmic (prior to the nucleus) and basal (distal to the nucleus) for 3, 5, 10 Hz stimulation, respectively. (BIII, CIII and DIII)\u00a0Show the profile of the fluorescence along the scan line for the maximum increase in fluorescence for each stimulation frequency expressed as a % of the maximum fluorescence observed at 10 Hz. (E) Shows the pooled data depicting the average increase in apical, cytoplasmic, and basal ROIs at each stimulation frequency. (F) Shows the pooled data for maximal Ca2+ in apical, cytoplasmic, and basal ROIs at each stimulation frequency. White scale bar is 5 \u03bcm. ***p<0.001; **p<0.01,* <p< 0.05. Two-way ANOVA with multiple comparisons.\n\nTo further analyze the neurally evoked apical Ca2+ signals, Python software scripts were written in the Jupyter lab notebook environment to automate the designation of apical ROIs from masks generated from average or SD images. These apical ROIs were then subsequently used to quantitate the magnitude and frequency of signals within these regions (see Materials\u00a0and\u00a0methods for details). Figure 11A shows an imaging field depicting the stimulated-basal average image for the field generated during the 12 s of stimulation at 5 Hz from which 79 apical ROIs were generated from masks shown in Figure 11B/C. Figure 11D shows representative responses from 4 of the 79 ROIs to stimulation over the range of physiological stimulus strengths. Consistent with the previous grid analysis, few apical regions responded to 1 Hz stimulation while the majority of ROIs responded to stimulation at 5\u201310 Hz (see Videos 1\u20134). At both 3 and 5 Hz stimulation, individual apical ROIs typically responded by generating a rapid train of oscillations. A peak counting algorithm was used to analyze the frequency of the oscillations for each ROI. This demonstrated that the frequency of oscillations was markedly faster (~1 Hz) when measured in vivo than previously described in isolated cells (~0.2 Hz, this study, Figure 12) and further modestly increased between 3 and 5 Hz stimulation (Figure 11E; 79 ROIs experiment shown in Figure 11A\u2013C and pooled data from 13 individual fields from five animals (Figure 11F)). In contrast to the robust correlation between saliva secretion and the magnitude of the evoked Ca2+ signal, the relationship between secretion and the frequency of Ca2+ oscillation was less strong (R2 =\u00a00.824, Figure 11G).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig11-v2.jpg)\n\n**Figure 11.:** (A) A representative image generated from averaging signal intensities during a 5 Hz stimulation, which highlights large fluorescence changes in the apical aspects of the cells. (B\u2013C) Mask generated from the image in panel A using Python scripts running in the Jupyter lab environment, as described in Methods. (D) Representative Ca2+ responses from 4 of the ROIs defined in the image in panel C following stimulation at 1\u201310 Hz. Black dots designate positions of oscillation peaks detected by automated peak detector software written in python. (E) A summary of oscillation frequency of all 79 ROIs from the image in panel A-D. Mean \u00b1 sem. (F) A summary plot of oscillation frequencies in response to 1\u201310 Hz stimulation. N = 13 fields from five animals. Mean \u00b1 sem. (G) A correlation plot of oscillation frequency vs. saliva secretion (shown in Figure 3A), which showed a linear regression with R2 = 0.824 (black line). ** p<0.01 ANOVA with Tukey test.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig12-v2.jpg)\n\n**Figure 12.:** (A) Cells were stimulated with increasing concentrations of CCh. (A) At concentrations greater than 25 nM, repetitive Ca2+ transients were evoked in a minority of cells. (B) Pooled data depicting changes in oscillation frequency with increasing concentrations of carbachol. (C) Pooled data depicting changes in maximum amplitude of CCh- induced Ca2+ signals. (D) Spatial changes in the Ca2+ signal evoked by 25 nM CCh illustrating that the Ca2+ signal is initiated in the extreme apical aspects of the cell and subsequently globalizes to reach the basal domain. (E) Shows a cartoon delimiting the cell shown in D and apical (red box) and basal (black box) ROIs. (F) Shows the kinetic illustrating the apical to basal Ca2+ wave. * p<0.05; **p<0.001 One-way ANOVA.\n\n![Figure 12\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig12-figsupp1-v2.jpg)\n\n**Figure 12\u2014figure supplement 1.:** (A) Images taken at the indicated times following stimulation with 100 nM CCh showing that Ca2+ signals are invariably global. (B) Shows the kinetic from an apical (red box) and a basal (black box) following stimulation with 100 nM CCh. (C) Kinetic of response of a single cell to 100 nM and 3 \u03bcM CCh. (D) Comparison of maximum amplitude evoked by 100 nM and 3 \u03bcM CCh at room temperature and 37\u00b0C. (E) Comparison of oscillation frequency evoked by 100 nM at room temperature and 37\u00b0C. Pooled data. *** p< 0.001. Welch\u2019s t test.\n\n![Video 1.](https://cdn.elifesciences.org/articles/66170/elife-66170-video1.mp4.jpg)\n\n**Video 1.:** Left panel shows \u0394F/F0 image series. Bottom right panel depicts the change in F/F0 for the apical ROIs automatically generated by the software described in Figure 11.\n\n![Video 2.](https://cdn.elifesciences.org/articles/66170/elife-66170-video2.mp4.jpg)\n\n**Video 2.:** Left panel shows \u0394F/F0 image series. Bottom right panel depicts the change in F/F0 for the apical ROIs automatically generated by the software described in Figure 11.\n\n![Video 3.](https://cdn.elifesciences.org/articles/66170/elife-66170-video3.mp4.jpg)\n\n**Video 3.:** Left panel shows \u0394F/F0 image series. Bottom right panel depicts the change in F/F0 for the apical ROIs automatically generated by the software described in Figure 11.\n\n![Video 4.](https://cdn.elifesciences.org/articles/66170/elife-66170-video4.mp4.jpg)\n\n**Video 4.:** Left panel shows \u0394F/F0 image series. Bottom right panel depicts the change in F/F0 for the apical ROIs automatically generated by the software described in Figure 11.\n\nAlthough GCaMP6f and fura-2 have similar affinities (Badura et al., 2014; Lewis and Cahalan, 1989), a possibility exists that the marked differences in the spatiotemporal properties of Ca2+ signals observed in vivo vs. reported in vitro are a function of the genetically encoded indicator or alternatively because the vitro studies were largely performed at room temperature. We therefore prepared small acinar clumps from Mist1+/\u2013 x GCaMP6f+/\u2013 animals by enzymatic digestion and monitored Ca2+ signals stimulated by the muscarinic agonist carbachol (CCh) by wide field imaging at 37\u00b0C. Individual acinar cells failed to respond to 5 nM CCh; however, at 25 nM CCh single cells within an acinus responded by evoking repetitive Ca2+ transients (Figure 12) with a frequency ~0.2 Hz. The period of the transients tended to increase with increasing CCh concentrations (Figure 12B). In response to increasing concentrations of CCh, the initial peak increased (Figure 12C, n=14\u201332 cells, three animals) and the oscillations dampened to generate an elevated plateau. Oscillations evoked even by threshold concentrations of CCh were initiated below the apical PM and invariably globalized with all CCh concentrations (Figure 12D\u2013F and Video 5). In experiments performed at room temperature in GCaMP6f expressing cells (~23\u00b0C), the spatiotemporal characteristics of the signal were identical to those previously reported with chemical indicators (Figure 12\u2014figure supplement 1A\u2013C). The peak [Ca2+]i evoked by CCh stimulation was similar at 37\u00b0C (Figure 12\u2014figure supplement 1D), while the oscillation frequency was significantly faster than observed at room temperature (Figure 12\u2014figure supplement 1E). In total, the spatiotemporal profile of the Ca2+ responses evoked in acutely isolated GCaMP6f expressing acini were strikingly similar to numerous reports documenting agonist-evoked Ca2+ responses with conventional chemical Ca2+ indicators and thus the properties of the genetically encoded indicator at physiological temperature per se do not explain the differences observed.\n\n![Video 5.](https://cdn.elifesciences.org/articles/66170/elife-66170-video5.mp4.jpg)\n\nWe have previously constructed a series of mathematical models to help understand and explain our experimental results and those from other groups (Pages et al., 2019; Sneyd et al., 2014; Alm\u00e1ssy et al., 2018; Sneyd et al., 2017a; Sneyd et al., 2017b; Vera-Sig\u00fcenza et al., 2019). Briefly, these multiscale models were based on cyclical global increases in [Ca2+] activating spatially separated ion channels required for sustained secretion in a 3D collection of seven acinar cells forming an acinus. In these older models, apical initiation of the Ca2+ signal resulted in activation of Cl- flux through TMEM16a Cl- channels and the Ca2+ signal was subsequently transmitted across the cell cytoplasm by a process of Ca2+-induced Ca2+ release (via RyR or IP3R). This led to periodic increases of [Ca2+] in the basal regions of the cell and hence activation of basal Ca2+ activated K+ (KCa) channels. Activation of the KCa channels is critical for maintenance of the electrochemical potential driving the efflux of Cl- and thus secretion. However, the spatiotemporal information from the current in vivo data is obviously not compatible with these older models. We have therefore constructed a new model, as shown in Figure 13. The apical region is defined as the domain within 3 \u03bcm of the apical PM, which is itself demarcated by the tight junctions. This region now includes all the components necessary for saliva secretion, with KCa channels and Na/K ATPases in addition to the TMEM16a channels (Figure 13) which are poised to respond to Ca2+ released from the apical ER, from IP3R that are situated in close proximity to the TMEM16A (Pages et al., 2019). We emphasise that, in the model, KCa channels and Na/K-ATPases are also present in the basal lateral membranes, and therefore the secretory machinery is not restricted to the apical PM. A more detailed description of the model can be found in methods and in Pages et al., 2019; Vera-Sig\u00fcenza et al., 2019; Vera-Sig\u00fcenza et al., 2020. The structure of the three-dimensional cell upon which our model is solved is shown in Figure 14\u2014figure supplement 1, from where it can be seen that the apical membrane is a fingered structure that partially wraps around the cell, whereas the basal membrane (including the lateral membrane) extends right to the edge of the apical membrane.\n\n![Figure 13.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig13-v2.jpg)\n\n**Figure 13.:** The mathematical model is based on the fluxes and processes shown here. In contrast to previous models, the apical region now contains all the machinery needed for saliva secretion, included KCa channels and Na/K ATPases. Ca2+ is released predominantly in the apical region, from IP3R that are situated in close proximity to TMEM16a, and there is no requirement for a propagated wave of increased [Ca2+] across the cell.\n\nFigure 14A shows the average apical [Ca2+] for a range of values of VPLC in the new model. VPLC controls the rate of production of IP3, and is thus a proxy for frequency of neural stimulation. Simulations with a pulsatile VPLC (to mimic oscillatory neural stimulation) give identical qualitative results. As VPLC increases, the [Ca2+] oscillation frequency increases and the latency decreases. At high stimulation levels, the [Ca2+] oscillation frequency is approximately 0.5\u20131 Hz, and the oscillations are superimposed on an increasing baseline, which is due to a decreasing cell volume as a result of saliva secretion. These features all agree well with experimental data. One aspect of the data not reproduced by the model is the appearance of very low frequency baseline [Ca2+] spikes at the lowest stimulation frequencies. These baseline spikes are highly likely to be due to stochastic properties of the IP3R, as described by Falcke and others (Thurley et al., 2012; Thurley et al., 2014; Thurley et al., 2011). Our model contains no stochastic components and is therefore, a priori, unable to reproduce such low-frequency baseline spiking.\n\n![Figure 14.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig14-v2.jpg)\n\n**Figure 14.:** (A) Average apical [Ca2+] in the new model for four different values of VPLC (which is a proxy for stimulation frequency).\u00a0The stimulus was applied at t=100 s. As the stimulus increases the model oscillations increase in frequency, and are superimposed on an increasing baseline, as seen experimentally.\u00a0(B) Fluid secretion in the new model compared to two versions of the old model of Vera-Sig\u00fcenza et al., 2019. When the propagating intracellular Ca2+ wave is removed from the old model (which has no apical KCa channels), secretion decreases significantly. (C and D) [Ca2+] traces averaged from three different regions of the cell in the new model and the old model of Vera-Sig\u00fcenza et al., 2019. (E) Line scan constructed from model simulations of the new model with VPLC = 0.008 \u03bcM/s. The stimulus was applied at t = 100 s. A line was drawn through the cell from the average of all the apical points to the average of all the basal points, and all grid points within 0.2 \u03bcm of this line were selected. The Ca2+ traces from each of these grid points was then plotted as a color density plot, and laid side by side in order of distance from the apical region. The limited spatial resolution is a result of the limited spatial resolution of the grid, as only 36 grid points were close enough to the apical/basal line to be included in the line scan plot. The Ca2+ responses are mostly confined to the apical region, although diffusion does cause a smaller basal response, as seen also in panel (F) Steady-state saliva secretion in the new model as a function of the relative density of apical KCa channels (relative to the density of basal KCa channels) at various vPLC. For all simulations the total number of KCa channels was the same. When there are no apical KCa channels (i.e. when the relative density is zero), fluid flow is decreased by approximately 35%. However, too many apical KCa channels also decreases secretion. Maximal secretion is attained approximately when the KCa channels have the same density in the apical and basal membranes. Note that, if the intracellular propagating Ca2+ wave is removed from the old model it has a similar structure to the new model with no apical KCa channels. However, because of the presence of RyR in the old model, and because of the Ca2+ dependence of PLC in the old model, there remain significant quantitative discrepancies between the old and new models even when they have a superficially similar structure.\n\n![Figure 14\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66170/elife-66170-fig14-figsupp1-v2.jpg)\n\n**Figure 14\u2014figure supplement 1.:** The surface of the cell is divided into two regions, one corresponding to the apical membrane (red) and the remainder corresponding to the basolateral membrane (blue). For all the computations here, the model makes no distinction between the basal and lateral membranes. This cell corresponds to cell 4 of Vera-Sig\u00fcenza et al., 2019. TMEM Cl- channels are present only on the apical membrane (at a constant density), while KCa channels are distributed on both the apical and basolateral membranes (at varying relative densities, as shown in Figure 14F). All other ion transporters and channels are distributed uniformly on the cell surface, although their spatial distribution is unimportant, as all ions except Ca2+ are assumed to be spatially uniform.\n\nFigure 14, panels B-D compare the new model with two older versions in which there were no apical KCa channels, but a Ca2+ wave was propagated from the apical ER, throughout the cell, thus allowing for activation of basal KCa. Figure 14B shows saliva secretion (with VPLC = 0.008 \u03bcM/s) in the new model (red curve) compared with the old model of Vera-Sig\u00fcenza et al., 2020 (green curve), which has no apical PM KCa but does exhibit a propagated [Ca2+] signal from apical ER throughout the cell, and also compared to a version of the old model (blue curve) which has neither apical KCa nor a propagated [Ca2+] wave. Note that the old model with no apical KCa is quantitatively different from the new model with no apical KCa. Fluid secretion in the new model with no apical KCa is slightly greater than that in the old model with no KCa, and is shown in panel F. These simulations show that absence of both a propagated [Ca2+] wave and apical KCa channels significantly decreases saliva secretion. The associated [Ca2+] traces, averaged from the apical and basal regions, as well as from the cytoplasmic region of the cell (representing a domain between these regions), are shown in Figure 14, C, D, using the same color scheme as in Figure 14B. In the new model (Figure 14C), basal [Ca2+] is between 25% and 35% of apical [Ca2+], as observed experimentally, while in the model of Vera-Sig\u00fcenza et al., 2020; Figure 14D basal [Ca2+] is a significantly greater fraction of apical [Ca2+]. The [Ca2+] traces for the model with neither apical KCa nor a propagated wave are very similar to those shown in Figure 14C, and so are not shown explicitly. The intracellular spatial gradient of [Ca2+] is illustrated by the model line scan shown in Figure 14E, which also agrees well with the experimental line scans, in that Ca2+ is largely restricted to the apical region of the cell. The experimental data show more spatial inhomogeneity (due to the presence of the nucleus and the mitochondria), features which are not included in the model.\n\nIt is important to note that, in the model, of the basal region, includes the lateral PM and extends right to the edge of the apical region, which is a thin, fingered region. Thus, even in the absence of a propagated [Ca2+] wave, diffusion of Ca2+ from the apical region will still activate a fraction of the KCa channels. This is illustrated in Figure 14F, in the new model and for a range of stimulation levels, which shows how saliva secretion depends on the relative density of KCa channels in the apical PM. Even when there are no apical KCa channels (i.e. a relative density of 0), diffusion of Ca2+ from the apical region can activate those basal KCa channels which are situated close to the apical membrane, and this is sufficient to cause significant fluid flow. Furthermore, consistently with previous theoretical work (Palk et al., 2012) there is an optimal density of apical KCa channels; if the apical membrane contains too high a fraction of the total number of KCa channels then fluid flow is hampered. Optimal fluid secretion occurs when the apical and basal KCa densities are approximately equal.\n\n## Discussion\n\nAn increase in [Ca2+] following neurotransmitter release from parasympathetic neurons is fundamentally important for the stimulation of salivary fluid secretion. It is also recognized that the spatiotemporal properties of intracellular Ca2+ signals in exocrine cells are pivotal for appropriately activating ion channels necessary for the underlying process (Almassy et al., 2012; Kasai and Augustine, 1990; Kidd and Thorn, 2000). Despite a wealth of information documenting agonist-stimulated Ca2+ signals, recorded in dissociated single cells, isolated acini or excised lobules, the properties of physiological Ca2+ signals in vivo following endogenous neural stimulation have not been reported. We therefore generated transgenic mice that express a genetically encoded Ca2+ indicator specifically in exocrine acinar cells and used MP microscopy in live mice to document the Ca2+ signals generated following stimulation of the submandibular nerve which innervates the SMG. By establishing stimulation parameters optimum for fluid secretion, we have inferred the spatiotemporal properties of Ca2+ signals that ultimately underlie the physiological stimulation of fluid secretion at the lobule level and subsequently at subcellular resolution.\n\nFollowing threshold stimulation, a small proportion of the imaged field responded after a prolonged latency by eliciting a single, or a few brief transients. These Ca2+ spikes were initiated in the extreme apical ER, consistent with the localization of the majority of IP3R and previous in vitro data (Lee et al., 1997; Pages et al., 2019; Won et al., 2007). In stark contrast however, these signals did not globalize and were confined to a few \u03bcms distant from the apical PM. This threshold stimulation resulted in minor measurable fluid secretion. At greater stimulus strengths, where secretion was readily evident, an increasingly larger proportion of the field was recruited with shorter latency to yield multiple Ca2+ transients with increasing peak magnitude. The increase reflecting an [Ca2+]i rise in all cells within individual responding acini. Strikingly, these signals were again predominantly localized to regions immediately juxtaposed to the apical PM with limited propagation toward the basal aspects of the cell. Upon optimal stimulation for secretion, essentially the entire field was recruited to produce a sustained increase with periodic fluctuations superimposed on the plateau after a minimal latent period. Notably, while the affinity of the indicator may have masked a greater magnitude of apical Ca2+ rise, or more prominent fluctuations in the signal at these higher stimulus strengths, a prominent apical to basal gradient was readily evident, such that the signal in the basal region reached only ~25\u201330% of that in the apical region. Further increases in the intensity of the stimulation resulted in a rapid peak followed by a gradual waning of the signal and consistent with the absence of a sustained Ca2+ signal, the rate of fluid secretion was diminished. This reduced secretion likely results from a \u2018tetanic\u2019 stimulus where either neurons fail to fire during their refractory period, neurotransmitter release is exhausted or acinar cell Ca2+ signaling is perturbed, during this likely non-physiological stimulation. Over the range of physiological stimulus strengths, the extent of fluid secretion was strongly correlated with the magnitude of the peak Ca2+ rise, rather than necessarily the frequency of Ca2+ transients. This conclusion is consistent with our previous modeling and experimental work that has indicated that the integrated increase in [Ca2+] during stimulation is the primary driving factor for efficient fluid secretion (Sneyd et al., 2014).\n\nLocal, non-propagating Ca2+ signals are observed in isolated pancreatic acinar cell in response to IP3, low concentrations of secretagogues and physiological concentrations of the gut hormone cholecystokinin (Ashby et al., 2003; Thorn et al., 1993; Thorn et al., 1996; Thorn and Petersen, 1993). It should be noted that the majority of these studies have been performed in whole-cell patch clamped isolated acinar cells. Ca2+ buffering is established by the internal pipette solution in these experiments and thus could conceivably alter the spatial characteristics of the signal. Future in vivo experiments in the pancreas will address whether the spatial properties of Ca2+ signals differ from those observed in acutely isolated cells. Nevertheless, the spatial characteristics of the Ca2+ signal observed in vivo in the present study represents a major difference to previous work in isolated salivary acinar cells. The failure of the signal to propagate and standing [Ca2+] gradients observed are presumably established by SERCA, PMCA and mitochondrial buffering to efficiently reduce the local [Ca2+] to levels that do not support substantial CICR through IP3R and RYR that are presumed to be localized in the ER distant from the apical trigger zone. An obvious question is, what factors or mechanisms underlie these differences? At the level of the SMG lobule, the polarity of individual cells and their organization within an acinus is vital for function. The complex architecture is maintained by junctional complexes and interactions with the extracellular matrix and stromal cells (Baker, 2010). Clearly, these interactions may be disturbed when cells are isolated from an excised gland by enzymic digestion. An apparent consequence may be a disruption of the exquisite polarity of acinar cells. Perturbed localization of the Ca2+ signaling machinery could disrupt the balance between Ca2+ release and clearance to ultimately result in an alteration of the spatiotemporal characteristics of the signal. Conceivably, alterations in the polarization of the ER, such that IP3R or SERCA are not maintained in the extreme apical ER (Pages et al., 2019), or a change in distribution of mitochondria (Bruce et al., 2004) to disrupt ER-mitochondrial junctions and effective Ca2+ sequestration from release sites could contribute to the altered Ca2+ signals observed in vitro.\n\nA further important consideration when interpreting the characteristics of these Ca2+ signals is the obvious difference in delivery of the secretagogue in these experiments. In contrast to superfusion of agonists in vitro, that results in a defined \u2018square\u2019 pulse of stimulating agent, in vivo, acinar cells likely experience a complex, stimulus intensity, and time-dependent gradient of neurotransmitter. In our studies, the concentration of ACh released from neurons would be predicted to rapidly increase and then decay as it is hydrolyzed by acetylcholinesterases. As the frequency of stimulation is increased, the residual concentration of ACh present in the vicinity of acinar cells would be predicted to increase with a \u2018saw-tooth\u2019 profile as the amount of ACh release exceeds the rate of degradation following more frequent, repetitive cycles of neurotransmitter exocytosis. In this scenario, when a threshold concentration of neurotransmitter is reached that generates sufficient IP3, an increase [Ca2+]i, will be triggered. The time to reach this threshold would define the latent period for that particular cell and the relative sensitivity to neurotransmitter will predicate whether an individual cell is responsive to a given stimulation. At optimum stimulation frequencies, the residual ACh concentration would further increase and remain above the threshold for the majority of acinar cells to respond. This would facilitate greater Ca2+ release manifested as an increased peak and Ca2+ oscillations by the entire field. Notably, neural stimulation does not simply \u2018pace\u2019 cells, as the frequency of oscillations does not correlate with the stimulus frequency. It is therefore likely, that the oscillations result from the inherent properties of IP3R and SERCA pumping activity but where the kinetics are influenced by the dynamic changes in neurotransmitter concentrations. This may contribute to the differences in oscillation frequency observed when comparing in vivo and in vitro data.\n\nWe observed considerable spatial heterogeneity in the responsiveness and peak amplitude of cells across the field of view. Specifically, there were sections of the field which exhibit the greatest sensitivity and largest responses at all stimulus intensities. Conceptually, this may reflect acini with expression of a higher density of cell surface receptors. Alternatively, highly responsive regions may represent cells physically closer to synapsing neurons and thus experiencing higher concentrations of ACh. The innervation of SMG lobules visualized in a reporter mouse expressing fluorescent protein in parasympathetic neurons has been reported to be fairly homogeneous (Sheu et al., 2017). Therefore, a further possibility is that spatial homogeneity arises in part because increasing numbers of axons are recruited to fire as stimulus intensity increases thus directly innervating a larger proportion of cells.\n\nClearly, our previous models describing how Ca2+ signals promote salivary secretion are not entirely consistent with the new in vivo data presented here. Fundamentally, if there is no obligatory global, propagating intracellular Ca2+ wave, activating the KCa channels in the basal PM would be predicted to be inefficient. Previously, however we have demonstrated, both functionally and physically, that the KCa channels, KCa3.1 (\u2018IK\u2019) and KCa1.1 (\u2018BK\u2019) together with Na/K ATPases are present in the apical PM of salivary acinar cells (Alm\u00e1ssy et al., 2018; Almassy et al., 2012). Notably, we reported that KCa3.1 colocalized with apical markers including IP3R3 and Zona occludens-1. Further, focal, highly localized uncaging of Ca2+, directly below the apical PM resulted in activation of a K+ conductance with pharmacology consistent with KCa3.1. Additionally, apical uncaging of Ca2+ evoked a smaller current in acini prepared from KCa1.1 knockout transgenic mice (Almassy et al., 2012). At the time these results were puzzling, as there was no obvious reason, according to the current model, why the apical PM should express these transport proteins. Nevertheless, a previous modeling study has suggested that expression of a proportion of KCa to the apical PM could optimize fluid secretion. The new data, together with the localization of apical KCa, combined with simulations by the new model, strongly suggests the physiological importance of the apical KCa and Na/K-ATPases. Specifically, as [Ca2+] elevations occur and are maintained at greater magnitude in close apposition to apical KCa channels, it would seem likely that their activation contributes to maintaining the electrochemical driving force for Cl- secretion. Given the localization of IP3R to apical ER, ~ 50\u2013100 nm from the apical PM (Sneyd et al., 2021), a tight coupling between Ca2+ release and activation of both major effectors would be reasonably predicted to promote efficient fluid secretion. The importance of apical KCa, while difficult to explicitly address experimentally, is supported by the new model which indicates that optimal secretion is achieved when KCa are expressed in both the apical and basolateral membranes. On the other hand, since the primary saliva has a low [K+], this K+ must be removed from the lumen. This is the proposed function of the Na/K-ATPase in the apical membrane.\n\nTaken together, the present studies describe the spatial and temporal characteristics of physiological Ca2+ signals driving salivary fluid secretion. Further, our findings highlight that caution should be exerted in extrapolating conclusions from ex vivo studies to physiological Ca2+ signals and function in vivo. Finally, it is envisioned that the present studies will provide a framework for investigating if Ca2+ signaling is disrupted in disease states such as Sj\u00f6gren's syndrome or radiation-induced xerostomia which result in pronounced hyposecretion of saliva (Teos et al., 2016; Baum et al., 2012).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (mouse)</td>\n      <td>B6J.Cg-Gt(ROSA)26Sortm95.1(CAG-GCaMP6f)Hze/MwarJ</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:028865</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (mouse)</td>\n      <td>B6.129-Bhlha15tm3(cre/ERT2)Skz/J</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:029228</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Physostigmine</td>\n      <td>Tocris Bioscience</td>\n      <td>0622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GSK7975A</td>\n      <td>Sigma-Aldrich</td>\n      <td>5.34351</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Carbachol</td>\n      <td>Sigma-Aldrich</td>\n      <td>1092009</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI/ImageJ</td>\n      <td>https://imagej.net/software/fiji/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Jupyter Notebook</td>\n      <td>Jupyter labhttps://jupyter.org/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SciPy</td>\n      <td>https://www.scipy.org/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>scikit-image</td>\n      <td>scikit-image https://scikit-image.org</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Tamoxifen</td>\n      <td>Sigma-Aldrich</td>\n      <td>T5648</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Collagenase Type II</td>\n      <td>Worthington Biochemical</td>\n      <td>LS004204</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nTamoxifen, corn oil, ketamine, and Xylazine were purchased from Sigma Chemical, St Louis, Mo. Physostigmine was purchased from Tocris Minneapolis, Mn.\n\n### Generation of mice expressing GCaMP6f in exocrine acinar cells\n\nAdult female GCaMP6fflox mice (Jackson Laboratory; Jax 028865) were crossed with male heterogenous Mist1CreERT2 (Jackson Laboratory; Jax 029228, kindly donated by Dr. Catherine Ovitt, University of Rochester) to generate Mist1+/\u2013 x GCaMP6f+/\u2013 transgenic mice. Tamoxifen (0.25 mg/g body weight) dissolved in corn oil was administered to mice at least 6 weeks old of either gender, by oral gavage once a day for 3 consecutive days. Imaging was carried out 1\u20134 weeks after the last tamoxifen administration. All animal procedures were approved by University Committee on Animal Resources (UCAR-2001-214E).\n\n### In vivo MP imaging\n\nThe animal was anesthetized with Ketamine (80 mg/kg body weight, i.p.) and Xylazine (10 mg/kg body weight, i.p.). The animal was restrained with the ventral side up, and the animal\u2019s body temperature was maintained at 37\u00b0C by a heat pad during surgery and imaging. A submandibular gland was exposed by making an incision in the skin on the ventral side of the neck. Connective tissue around the gland was teased away using forceps to allow the gland to be raised away from the body but remaining attached by a duct/nerve/blood vessels bundle. A pair of tungsten wires (WPI, Inc) was inserted to the bundle as stimulation electrodes. The lifted gland was placed on a 10 x 13 mm custom build small holder situated directly above the neck so that the position of the gland was not influenced by movement as a result of breathing. The gland was held by a cover glass to flatten the surface and to keep tissue moist with Hanks salt solution between the holder and the cover glass (Figure 1B). A 25x water immersion lens (Olympus XLPlan N 1.05 W MP) equipped with an objective heater (OKOLab COL2532) kept at 37\u00b0C was utilized for MP imaging. An upright two-photon microscope system (FVMPE-RS, Olympus) with an excitation laser (InSight X3, Spectra-Physics) tuned at 950 nm and emission collected at 495\u2013540 nm was utilized. Images were captured using Olympus FV31s-SW software at 30 fps framerate then averaged every three frames to achieve 10 fps image collection rate. Imaging depths between 10 and 55 \u00b5m from the surface of the gland were routinely utilized. PMT settings were fixed at 600V, 1x gain, and 3% black level, with excitation laser power adjusted per animal and according to imaging depth. Stimulation was generated by a stimulus isolator (Iso-flex, A.M.P.I.) set 5 mA, 200 \u03bcs, at the indicated frequency with train frequency and duration controlled by a train generator (DG2A, Warner Instruments). Images were captured typically for 30 s continuously. At least 1 min interval was given before imaging in the same field at a different stimulation strengths. In selected experiments, physostigmine (0.1 mg/kg body weight, i.p.) was administered to the animal on the microscope stage, at least 15 min prior to the imaging of post-physostigmine Ca2+ signals.\n\nFor line scan imaging, an acinar cell cluster that arranged in the image plane such that that apical and basal sides of the acinar cell could be clearly identified and the imaging plane depth crossed near the center of the cell. A line was drawn from the apical end, passing through a nucleus, to the basal end of an acinar cell. The scanning speed was 1\u20131.6 ms per line for 10 s duration. The apical, cytosolic, and basal region were defined as 3 \u00b5m wide line within each image, and fluorescent intensity before stimulation for each region served as baseline intensity (F0 = 0%).\n\n### Saliva secretion measurement\n\nAn anesthetized animal with stimulation electrodes attached to the duct bundle were gently held with ventral side up. A piece of filter paper, roughly 2 x 10 mm, were weighed before placing it in the animal\u2019s mouth. A stimulation of 0\u2013100 Hz was given to a gland for 1 min, and the paper was immediately removed and weighed. The difference of the weight of the paper represents the amount of saliva secreted out in the animal\u2019s mouth. A new paper was placed in the mouth for each stimulation train.\n\n### Acinar cell isolation and imaging\n\nSMG acinar cells were enzymatically isolated from 2- to 4-month-old, Mist1+/\u2013 x GCaMP6f+/\u2013 mice of both sexes. To isolate acinar cells, glands were extracted, connective tissue was removed, and glands were minced. Cells were placed in oxygenated dissociation media at 37\u00b0C for ~30 min with shaking. Dissociation media consisted of Hank\u2019s Balanced Salt Solution containing CaCl2 and MgCl2 (HBSS), bovine serum albumin (0.5%), and Collagenase Type II (0.2 mg/mL, Worthington). Cells were washed twice in HBSS with 0.5% BSA and resuspended in a HBSS solution containing 0.5% BSA and 0.02% trypsin inhibitor. Cells were then resuspended in imaging buffer (10 mM HEPES, 1.26 mM Ca2+, 137 mM NaCl, 4.7 mM KCl, 5.5 mM glucose, 1 mM Na2HPO4, 0.56 mM MgCl2, at pH 7.4) and seeded onto a coverslip to allow attachment of cells. Cells were then perfused with imaging buffer and stimulated with agonist. Ca2+ imaging was performed using an inverted epifluorescence Nikon microscope with a 40 X oil immersion objective (NA=1.3) equipped with an environmental chamber allowing control of experimental temperature. Cells were excited at 488 nm from a monochromator, and emission was monitored at 530 nm. Images were captured every 500 ms with an exposure of 10 ms and 4 \u00d7 four binning using a digital camera driven by TILL Photonics software. Image acquisition was performed using TILLvisION software and data was exported to Microsoft excel and analyzed in Prism (Graph Pad).\n\n### Image analysis\n\nAmplitude, latency, and percent of responding areas in fluorescence fields were analyzed using ImageJ software (NIH). Standard Deviation (SD) Images were generated from the image time series by using the Stacks Z project function in image J. XY drift during the imaging, when present, was corrected by applying the Descriptor-based series registration plugin (Stephan Preibisch). The imaging field was divided into 8 by eight grids to yield 64 regions of interest (ROIs) of dimension 32x32 \u00b5m square. The average intensity of each ROI grid was generated for each frame. The average of first 100 frames prior to stimulation served as baseline fluorescence (F0), and %\u0394F/F0 ((F\u2013 F0)/ F0 x 100) was calculated using the Image calculator function, so that the converted 32-bit image series represents [Ca2+] changes over time expressed as %\u0394F/F0 in 8x8 alley of grids in the XY dimension (Figure 5A). The standard deviation of the baseline 100 frames from grids in each image series provided an estimate of the noise level. A change greater than four times the standard deviation from the F0 value was considered as a stimulated Ca2+ signal and the ROI therefore designating a responding grid. To calculate latency prior to a response the time at the first incident Ca2+ signal meeting the criteria as a responding grid in each ROI after the initiation of the stimulation were recorded. Non-responding grids were excluded from this analysis. Statistical analyses were performed with paired t test, one-way ANOVA, and linear regression using Prism (GraphPad).\n\n### Subcellular image analysis\n\nA computer based, automated region-of-interest (ROI) detection method that specifically targets cellular regions with pronounced changes was developed since no off-the-shelf tool met our particular requirements to efficiently process the data (https://github.com/jrugis/cell_tools; Rugis, 2021; copy archived at swh:1:rev:c8fced9a9d8f3b7526a8f8eabfe547c618f2374b). The new software toolset consists of an assembly of Python (https://www.python.org) scripts deployed in a collection of Jupyter Lab (https://jupyter.org) \u2018notebooks\u2019. The notebooks were designed to automate repetitive analysis steps and give flexibility to interactively explore and analyze the image data sets and makes use of image processing algorithms in the scikit-image (https://scikit-image.org) package. ROI were identified by generating a difference image whereby the average image prior to stimulation was subtracted from the average image during the period of stimulation on a pixel-by-pixel basis (Figure 11A). An initial mask was created by simple pixel intensity thresholding (Figure 11B). Subsequent filtering by binary dilation and binary erosion removes undesired small regions and smooths the remaining regions (Figure 11C). The notebook then generates plots of pixel intensity over time for each ROI generated and utilizes the same mask for images sets generated from the same field at differing frequencies of stimulation (Figure 11D). A further script block was generated to objectively automate the identification of peaks generated by stimulation. For peak processing several signal processing operations from the scipy (https://www.scipy.org) package were employed. The script employs a sequence of signal resampling, low-pass zero phase filtering, high-pass zero phase filtering and a generic peak detector followed by a mapping back into the original response data. Detected peaks for each stimulation frequency were plotted in the notebook as black dots overlaid on region summary plots as shown in Figure 11D.\n\n### Model details\n\nThe model has two interconnected modules; a Ca2+ oscillation module and a fluid secretion module. The two modules are coupled via changes in cell volume, and by the activation of KCa and ClCa by Ca2+. The Ca2+ oscillation module is a reaction-diffusion equation and is solved in a three-dimensional domain reconstructed from experimental structural data (Vera-Sig\u00fcenza et al., 2020). All ions except Ca2+ are assumed to be homogeneously distributed in the cell, and are thus described by a system of ordinary differential equations. The apical membrane forms a fingered region that extends partially around the cell (Figure 14\u2014figure supplement 1) and all the remainder of the membrane is assumed to be basolateral. No functional distinction is made between the basal and lateral membranes. TMEM channels are restricted to the apical membrane and are assumed to have a constant density there, and the other ion channels and/or transporters are assumed to be distributed on the basolateral membrane with a constant density. KCa channels and Na/K ATPases are assumed to be distributed on both the apical and basolateral membranes. A first-order implicit-explicit finite element method is used to solve the reaction-diffusion for [Ca2+], and this is coupled to the ordinary differential equations for the other ions by a stepwise process in which the Matlab routine ode15s is first used to solve for the volume over a single time step, and that volume is then used to advance the reaction-diffusion equation for [Ca2+]. The individual models for the various transporters, channels and exchangers are all given in Vera-Sig\u00fcenza et al., 2020. The model equations were solved in a single, uncoupled cell (cell four in the notation of Vera-Sig\u00fcenza et al., 2020. Similar results were obtained from all the other cells). The volume of the cell is taken into account, not by a full remeshing at each time step, but simply by a volume scaling factor in the reaction diffusion equation. The activity of the TMEM and KCa channels on a particular patch of membrane (described by a triangle in the finite element method) was assumed to be a function only of the mean [Ca2+] in the tetrahedron containing that surface triangle. Thus, the KCa are spatially distributed and activated in a manner that depends directly on the spatial distribution of [Ca2+] as a result of Ca2+ release. We note that this means that Ca2+ released from the apical region (which, in the model, means Ca2+ release directly apposed to the surface triangles corresponding to the apical membrane) can diffuse a short distance to activate those KCa channels situated on the basolateral membrane close to the apical membrane. This is why the model exhibits substantial fluid flow even when there are no apical KCa channels; in the absence of apical KCa channels only a small proportion of the basolateral KCa channels will be activated by Ca2+ diffusing from the apical region, but that is sufficient to allow for some fluid flow.\n\nThe Ca2+ oscillation module is based on a closed-cell Class I model in which oscillations arise via sequential activation and inactivation of the IP3R. [Ca2+] buffering is assumed to be fast and linear, and the IP3R model is taken from Sneyd et al., 2017a. Ca2+ obeys a reaction-diffusion equation in the cell interior, but the effective diffusion coefficient of Ca2+ is small (due to buffering) which allows for localized increases in [Ca2+] which are not propagated throughout the cell. Because the IP3R are situated 50\u2013100 nm from the ClCa (which are on the apical membrane), release of Ca2+ through the IP3R is modeled as a boundary flux term, which avoids the necessity for a high-resolution finite element mesh in the apical region, which would greatly slow the calculations. The diffusion coefficient of IP3 is two orders of magnitude greater than that of Ca2+, and thus IP3 is effectively spatially homogeneous throughout the cell.\n\nIn the new model, all parameters and equations remain unchanged from those in the old model (Vera-Sig\u00fcenza et al., 2020) with the following exceptions.\n\nThe remaining parameters (taken directly from Vera-Sig\u00fcenza et al., 2020) have been derived from a variety of experimental data over the past decade. For example, the parameters of the IP3R model were determined by fitting to single-channel data (Cao et al., 2013; Cao et al., 2014; Siekmann et al., 2012), while the parameters of many of the ion transporters and exchangers were taken from a variety of published models by other groups, as described in Palk et al., 2010 and Vera-Sig\u00fcenza et al., 2019. The parameters of the apical KCa were determined by ensuring qualitative agreement with the experimental data of Almassy et al., 2012 while, similarly, the anion exchanger parameters were taken directly from the previous modeling work of Vera-Sig\u00fcenza et al., 2018.\n",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "da316422-fd41-444e-98ba-1f9e8e5da247",
+      "submission_id": "d6a9696e-d443-4f2a-a9df-bbd667d42be6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard S Lewis, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66170.sa1](https://doi.org/10.7554/eLife.66170.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper applies intravital 2-photon microscopy to describe the intracellular calcium signals that drive fluid secretion from salivary gland cells in vivo. Secretion of saliva depends on calcium-dependent chloride and potassium channels, and based on studies of isolated salivary gland cells in vitro, these were previously thought to reside in different regions of the cell and require a propagating calcium wave for their activation. This study reveals a much more localized pattern of calcium signals in the intact organ, providing the first view of how calcium is coupled to secretion in vivo and new insights into how ion channel activity is coordinated to optimize secretion.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The characteristics of intracellular Ca2+ signals in vivo necessitate a new model for salivary fluid secretion\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen Kenton Swartz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Peter Thorn (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe major significance of this work rests on the novel pattern of Ca2+ signals associated with secretion in vivo and demonstrating a consequent need for a revised model of apical K channel activation to maintain the driving force for Cl-efflux across the apical membrane and fluid secretion.\n\n1. Is a new model needed to describe secretion in vivo? The argument for a new model in which Ca2+ activates KCa channels in the apical membrane is based on the observation of low levels of secretion (<5 Hz stimulation) associated with apically localized Ca oscillations. However, these signals are not strictly localized to the apical membrane and would likely activate KCa channels in the basolateral membrane that are close to the tight junctions. In addition, a large increase in secretion is seen for stimuli (5-10 Hz) that propagate Ca to the basal pole, consistent with previous models incorporating activation of basal KCa channels. The contribution of KCa channels in the apical membrane needs to be demonstrated experimentally. This could be addressed by applying blockers to the apical surface, although this may be difficult. Overall, to justify the model, a need for apical KCa channels or evidence of their contribution to secretion, needs to be shown.\n\n2. The apical Ca signals are ascribed solely to release through IP3R, but Orai1 channels, known to be expressed in these cells, are likely to contribute as well. Preferably, Orai1 inhibitors applied systemically (as was done for the cholinesterase inhibitor) should be tested for effects on Ca2+ signals and secretion. At the least the contributions of Orai1 channels should be discussed, taking into account previously published work.\n\n3. The computational model does not adequately reproduce the main features of the Ca2+ response. It shows a large initial spike upon stimulation (Figure 11B) that is not seen experimentally (Figure 9). It also oscillates at a much lower frequency (<0.2 Hz, similar to in vitro) than measured in vivo (0.5-1 Hz). In addition, the model needs to be tested under more conditions to confirm that it can account for the experimental data; e.g., does it predict the intracellular [Ca2+]i gradients, and how increasing stimulation frequency changes the Ca2+ response? More data are needed to justify the choice of model parameter values.\n\n4. The absence of local apical Ca2+ signals in vitro is not the case for all exocrine acinar cells. The authors should acknowledge that local apical responses have been seen in other acinar cells (e.g. pancreatic acinar cells) in vitro, upon stimulation with physiological concentrations of hormones, low concentrations of neurotransmitter, or directly by IP3.\n\n5. The current data do not allow a fair comparison of the spatiotemporal aspects of Ca2+ signaling in vivo and in vitro. While the use of GCaMP6f is a good way to rule out effects of different indicators (e.g., fura-2), other factors are likely to contribute and can be easily tested:\n\n(a) The in vivo experiments were conducted at 37 deg C while the in vitro imaging seems to have been done at room temperature (temperature was not indicated in the Methods). Cooler temperature is likely to affect oscillation frequency as well as the rate of pumping or sequestration which could affect propagation.\n\n(b) The concentrations of ACh used in vitro may not relate to the neural stimulation frequencies in vivo. The 100 nM response in vitro is quite large, so it may not be fair to compare this with low- frequency stimulation in vivo where signals are confined to the apical pole. Perhaps more localized signals would result from lower ACh concentrations.\n\n6. The method for standard deviation (SD) image processing should be described. This approach highlights areas that oscillate, but may de-emphasize areas of tonic elevation which would also be expected to drive secretion. At 5 Hz stimulation it shows that oscillations are confined mostly to the apical region (Figure 7C), but at 10 Hz the cells don't seem to oscillate (Figure 8), so it is not clear why SD images are presented here. It would be more informative to plot a cross-section of GCaMP6 signal from apical to basal before and during stimulation.\n\nReviewer #1:\n\nThis work offers a new look at the calcium signals that drive secretion in salivary gland cells. Based on studies of isolated cells in vitro, the common view was that calcium signals originating in the apical pole of the cell propagate to the basal pole, so that chloride channels allow chloride ions to exit across the apical membrane while K channels in the basal membrane are opened to maintain the electrical driving force for chloride exit. Through an elegant use of 2-photon microscopy to monitor the spatial spread of calcium signals in intact glands in vivo, the authors describe a different pattern, in which the signals do not propagate but are much more confined to the apical pole of the cell, and they show that secretion occurs even without significant spread of calcium to the basal pole. These results are significant as they challenge current mechanistic models for secretion, and they imply a functional role for K channels in the apical membrane, which until now have been commonly considered to only function in the basolateral membrane.\n\nHowever, the paper has several shortcomings that need to be addressed to better support a need for revising the current secretion model. It is not clear whether KCa channels in proximal regions of the basolateral membrane are activated by the apically confined Ca2+ and therefore are sufficient to support secretion. A modified computational model intended to support the need for apical KCa channels does not offer strong support, as it does not faithfully reproduce several of the experimentally observed Ca2+ responses. Finally, the differences between the spatiotemporal aspects of Ca2+ signaling in vivo and in vitro are difficult to assess as critical conditions such as temperature and agonist concentration were not matched in the two experimental scenarios.\n\nReviewer #2:\n\nIn this study Dr. Yule and his colleagues describe very impressive and painstaking work in which they have monitored for the first time Ca2+ signals and salivary secretion in vivo in a mouse model which expressed the Ca2+ indicator protein, GCamp6F, in salivary glands. Previously reported studies measured fluid secretion in vivo by injecting the animals with pilocarpine and collecting the oral secretion or by using protocols where the gland is perfused. However, cytosolic [Ca2+] changes, which are correlated with, and required for, salivary fluid secretion have been predominantly measured in isolated acinar or cell cluster preparations and some in tissue slices. By using intravital multiphoton (MP) microscopy together with stimulation of the neural input to the gland, the authors were able to measure the spatiotemporal properties of Ca2+ signals within the acinar cells and collect saliva that is secreted into the oral cavity. Thus, this study is an important breakthrough in this field as it reveals the exact [Ca2+] changes associated with salivary gland fluid secretion.\n\nThis study shows that major spatiotemporal properties of the Ca2+ signals detected in vivo are markedly different from those previously reported using isolated acinar cells (by this group and others) which demonstrated that Ca2+ signals are initiated apically but propagate as a wave globally across the cell without generation of Ca2+ gradients. The present findings show that following moderate stimulation, apically localized oscillatory Ca2+ signals are generated that do not propagate globally and cause minimal secretion. However, at stimulation intensities optimum for secretion, there is a spread of Ca2+ across the cell although with an apical-basal standing Ca2+ gradient. Based on these differences the authors have proposed a revised model which suggests that the apical region contains all the machinery needed for saliva secretion and that Ca2+ released predominately in the apical region, via IP3R, can regulate the function of locally situated ion channels without requirement for a propagated wave of increased [Ca2+] across the cell. As I have noted above the data described in this manuscript provide new understanding of the physiological response of salivary gland to neuronal stimulation and how fine-tuning of the spatiotemporal properties of the Ca2+ signals regulate fluid secretion.\n\nThe main question I have is regarding stimulus strengths that induce optimal levels of secretion (10 and 30Hz) where there is propagation of Ca2+ across the cell and almost 3-fold higher secretion relative to that at 5Hz. While increase in % responding cells at higher stimulus strengths could result in higher total secretion, possible contribution of Ca2+ influx pathways in the spread of Ca2+ in individual acinar cells, e.g. via Orai1 that is localized in the apical region of the cell, cannot be ruled out. Also not clear is whether the spread enhances secretion. Thus, when stimulus is low, secretion is minimal and supported only by release and oscillatory apical [Ca2+]. At higher stimulus strengths there might be an additional Ca2+ influx component which is activated very early after stimulation, likely during IP3-mediated Ca2+ release. Since the basolateral membrane extends all the way to the tight junction, is it possible that several components shown basally localized in the model could actually be quite close to the apical membrane region, near the tight junctions.\n\nThus, it is important to distinguish between initial stimulation of secretion vs regulation of sustained secretion. For example; the last sentence in the abstract clearly, and correctly, states \"salivary secretion can be efficiently stimulated by apically localized Ca2+ signals\".\n\nReviewer #3:\n\nThis paper describes a nice set of experiments where the authors have measured calcium responses in salivary acinar cells from living animals and, importantly, correlated these with measures of salivary secretion. The work is very well performed and the data interesting and definitely an advance in the field. I cannot think of another study that combines, so well, cellular calcium responses with genuine physiological output.\n\nStrengths\n\nIntravital images are very good and the combination with fluid secretion gives a nice correlation between calcium responses and physiological output \u2013 something which is impossible in vitro.\n\nGood initial analysis of the images and convincing data where the calcium responses are further analysed.\n\nThe conclusions that local calcium responses can drive physiological responses is interesting in the context of salivary glands.\n\nWeaknesses\n\nThe authors claim that local responses are not seen in vitro is dependent on taking a very narrow view of exocrine cells. Local responses are readily seen in other exocrine cells, like pancreatic acinar cells. These local responses can be driven directly by IP3, low concentrations of neurotransmitter, or physiological concentrations of hormones. Furthermore, these responses drive enzyme secretion. Therefore, although these local responses have not been measured intravitally, it is highly likely that they are the native response in the pancreas.\n\nThe new model put forward is conjecture. It is built entirely around the observations of localised calcium responses but has no supporting data on changes in membrane potential or activation of specific channels.\n\nThe in vitro GCaMP data is not convincing. GCaMP and Fura have different affinities for calcium and so this is a serious potential confounder in their experiments. For the in vitro work, the isolated cells are clearly fragmented and the cell chosen is at the edge of the cell cluster. It would be expected that the cells will completely lose their polarisation and structural factors that might limit the calcium response.\n\nWhile I like the analysis, I think that much of it is unnecessary. The authors, for example, show that regions that respond well at low stimulation also respond well at high levels of stimulation. That's fine, but the authors then do not explore what the basis of these differences are.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The characteristics of intracellular Ca2+ signals in vivo necessitate a new model for salivary fluid secretion\" for further consideration by eLife. Your revised article has been evaluated by Kenton Swartz (Senior Editor) and a Reviewing Editor.\n\nThank you for the revised manuscript with the additional data and clarifications. Your responses have addressed most of the major concerns of the reviewers. The only remaining issue is whether KCa channels in the apical membrane are required for secretion. I think this is central to the significance of the paper. The study shows beautifully how Ca signals are mostly apical and do not propagate to the basal membrane in vivo, but the most interesting implication is that it necessitates having KCa channels near or in the apical membrane. To broaden the appeal of your paper to more than exocrine gland physiologists it will be important to establish this point clearly.\n\nWe understand that an experimental approach (luminal application of blockers) to establish the role of apical KCa channels is not feasible. Thus, the model offers the best opportunity to test this idea. The model needs a fuller description, not including all the details and equations, but rather a description of the salient features that will allow the reader to grasp how it works, and what assumptions it makes. The comments below summarize the uncertainties in the model's operation that need to be addressed:\n\n1. How are apical, cytoplasmic, and basal regions defined in the model, and how do they correspond to the same regions in the experimental data? Throughout the paper there are references to \"apical PM\" or \"apical region.\" The apical PM is the membrane bounded by tight junctions, but what does \"apical region\" mean \u2013 does this include lateral membrane between the apical PM and the nucleus? The model cartoon in Figure 13 does not explain the distinction between apical and basolateral. Likewise, on p. 12: \"We emphasise that, in the model, KCa channels and Na/K- ATPases are also present in the basal membrane, and thus the secretory machinery is not restricted to the apical membrane.\" Is \"basal\" here referring to lateral membrane as well? I imagine that some of this vagueness is because the anatomy is complex and the localization of channels is not precisely known, but this needs to be clarified, particularly for non-expert readers.\n\n2. How is the KCa current simulated? This is a crucial part of the model, but it is not clear how this was done. The only description is (p. 25) \"The apical/basal K+ current ratio was determined by the apical/basal surface area ratio.\" After Ca2+ is released from the ER, is it assumed to diffuse to the lateral membrane where it activates KCa channels? (lateral membrane is defined here as basolateral membrane between the tight junction and the nucleus, corresponding to the \"cytoplasmic\" region in the experimental Ca measurements.) Or is only the basal Ca2+ signal being used to determine KCa current? The data in Figure 10 show that there is significant Ca2+ elevation in the cytoplasmic region below the apical membrane even at low stimulation frequencies, which could activate channels in the lateral membrane. What spatial distribution of KCa channels is assumed in the model? These things need to be clearly and simply explained.\n\n3. The model shows that with no apical KCa channels (but the same total number) you still get ~80% of the maximal response (Figure 14F). This is almost maximal and implies only a modest effect of true apical PM channels. Figure 14F Y axis should be plotted from 0 rather than 60, in order to give a truer impression of the effect of KCa channel localization. There is also some confusion here: Figure 14B shows only 50% of max response if you remove apical KCa channels \u2013 but I assume that this is because the total number of channels was not constant in this case, resulting in fewer KCa channels than in Figure 14F. If so, that is not a fair comparison.\n\n4. On p. 17 there is a reference to Supp. Figure 4, but that figure was not included.\n\n5. I would suggest some rewording of the title, as it seems too focused on what was done, rather than the most significant result. Perhaps you can revise it to focus on localized calcium signaling that engages apical K channels in vivo.\n",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6d466a5c-3b08-4b98-b499-d939fb379290",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C1",
+      "claim": "Salivary fluid secretion involves an intricate choreography of membrane transporters to result in the trans-epithelial movement of NaCl and water into the acinus lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Salivary fluid secretion involves an intricate choreography of membrane transporters to result in the trans-epithelial movement of NaCl and water into the acinus lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about salivary secretion that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "c05bd0c8-3e4f-4383-87b1-2d51923d260a",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C2",
+      "claim": "Current models of salivary secretion are largely based on experimental observations in enzymatically isolated cells where the Ca2+ signal invariably propagates globally.",
+      "claim_type": "EXPLICIT",
+      "source": "Current models are largely based on experimental observations in enzymatically isolated cells where the Ca2+ signal invariably propagates globally and thus appears ideally suited to activate spatially separated Cl and K channels, present on the apical and basolateral plasma membrane, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior experimental work and models in the field, supported by citations throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "260a7377-1d53-4a36-bd38-fdecd89d6c29",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C3",
+      "claim": "Ca2+ signals were initiated in the apical endoplasmic reticulum following nerve stimulation in live mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with in vitro studies, Ca2+ signals were initiated in the apical endoplasmic reticulum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by experimental observations described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "74536c15-37b5-45d1-bbe4-a386b69277f2",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C4",
+      "claim": "Highly localized trains of Ca2+ transients that failed to fully propagate from the apical region were observed in vivo, in marked contrast to in vitro data.",
+      "claim_type": "EXPLICIT",
+      "source": "In marked contrast to in vitro data, highly localized trains of Ca2+ transients that failed to fully propagate from the apical region were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by imaging data presented in Figures 8-10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "def58127-4507-48de-8c83-591e7f5c5ee5",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C5",
+      "claim": "Large apical-basal Ca2+ gradients were elicited following stimuli optimum for secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Following stimuli optimum for secretion, large apical-basal gradients were elicited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by experimental data in Figures 9 and 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "2c39a0f3-ae2a-40d9-abfc-1d5c9c5c7a95",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C6",
+      "claim": "Salivary fluid secretion is vital to the health of the oral cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Salivary fluid secretion is vital to the health of the oral cavity (Pedersen et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Pedersen et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "1aa5f640-f4d9-435f-8769-44d2f4ed333b",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C7",
+      "claim": "Patients with salivary hypofunction experience difficulty chewing and swallowing food, speaking and are susceptible to oral infections that result in dental caries.",
+      "claim_type": "EXPLICIT",
+      "source": "This is most clearly appreciated in disease states which result in hypofunction where patients experience difficulty chewing and swallowing food, speaking and are susceptible to oral infections that result in dental caries (Melvin, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Melvin, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "02204e3e-16c7-47db-9ab0-5dfd02ad95cd",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C8",
+      "claim": "Fluid secretion from the salivary gland requires the trans epithelial movement of Cl- across polarized acinar cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluid secretion from the salivary gland requires the trans epithelial movement of Cl- across polarized acinar cells (Foskett, 1990; Melvin, 1999; Melvin et al., 2005; Turner and Sugiya, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "2157eb03-320f-4e1c-87c6-5f51fb28e69f",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C10",
+      "claim": "Cl- enters the lumen of the acinus across the apical PM through TMEM16a chloride channels.",
+      "claim_type": "EXPLICIT",
+      "source": "and subsequently enters the lumen of the acinus across the apical PM through TMEM16a chloride channels (Romanenko et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Romanenko et al., 2010a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "e8fb1338-0916-43ae-b019-f07fa9e0aac6",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C11",
+      "claim": "An elevation in cytosolic [Ca2+] following neurotransmitter release plays a central role in the stimulation of fluid secretion from salivary gland acinar cells.",
+      "claim_type": "EXPLICIT",
+      "source": "An elevation in cytosolic [Ca2+] following neurotransmitter release plays a central role in the stimulation of fluid secretion from salivary gland acinar cells (Ambudkar, 2011; Ambudkar, 2016; Gallacher and Petersen, 1983; Putney, 1982; Weiss et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "27732c47-6f81-4455-a508-671ac880795b",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C12",
+      "claim": "Acetylcholine (ACh) is the primary neurotransmitter released following parasympathetic input to the major salivary glands after gustatory and olfactory stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Acetylcholine (ACh) is the primary neurotransmitter released following parasympathetic input to the major salivary glands after gustatory and olfactory stimulation (Matsui et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Matsui et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "75ca09ec-64a8-4e07-859f-e00f40577f22",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C13",
+      "claim": "ACh results in activation of muscarinic receptors, G-protein coupled stimulation of inositol 1,4,5 trisphosphate (IP3) production and subsequent Ca2+ release from endoplasmic reticulum stores via IP3 receptors (IP3R).",
+      "claim_type": "EXPLICIT",
+      "source": "ACh results in activation of muscarinic receptors, G-protein coupled stimulation of inositol 1,4,5 trisphosphate (IP3) production and subsequent Ca2+ release from endoplasmic reticulum stores via IP3 receptors (IP3R) (Futatsugi et al., 2005; Lee et al., 1997; Pages et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "263faa5c-523e-4c32-b8b0-6b4d0b5d910d",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C14",
+      "claim": "ER stores are subsequently refilled by store operated Ca2+ entry across the PM, which is required for sustained salivary secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "The ER stores are subsequently refilled by store operated Ca2+ entry across the PM, which is required for sustained salivary secretion (Cheng et al., 2011a; Cheng et al., 2011b; Melvin et al., 1991; Takemura et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "b92986d8-05ca-4e57-8d5c-289a67c85dff",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C15",
+      "claim": "The primary effector of the increase in [Ca2+] to stimulate saliva flow are TMEM16a channels localized in the apical PM.",
+      "claim_type": "EXPLICIT",
+      "source": "To stimulate saliva flow, the primary effector of the increase in [Ca2+] are TMEM16a channels localized in the apical PM (Romanenko et al., 2010a; Arreola et al., 1996a; Arreola et al., 1996b; Begenisich and Melvin, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "d81cf1ab-ec80-4529-b5c7-ed1633964e8c",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C16",
+      "claim": "Ca2+ increases the activity of K channels, conventionally thought to be localized predominantly at the basolateral PM, to maintain the membrane potential to favor continued Cl- exit and secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "As Cl- moves across the apical PM, the membrane potential approaches the equilibrium potential for Cl-; however, Ca2+ also increases the activity of K channels, conventionally thought to be localized predominantly at the basolateral PM, to maintain the membrane potential to favor continued Cl- exit and secretion (Maruyama et al., 1983; Nakamoto et al., 2008; Nakamoto et al., 2007; Romanenko et al., 2007; Romanenko et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "d2934a7f-c977-46b9-b851-859f5565ee04",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C17",
+      "claim": "In isolated salivary gland acinar cells, agonist-stimulated Ca2+ signals are initiated in the extreme apical ER followed by a rapid Ca2+ wave which results in globalization of the signal throughout the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, stimulation with muscarinic agonists, or more directly by photolysis of caged-IP3, invariably results in the Ca2+ signal initiating in the extreme apical ER followed by a rapid Ca2+ wave which results in globalization of the signal throughout the cytoplasm (Bruce et al., 2004; Bruce et al., 2002; Giovannucci et al., 2002; Larina and Thorn, 2005; Tojyo et al., 1997; Won et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations describing in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "3f0ceb57-22fa-47c4-9650-11dd8883c986",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C18",
+      "claim": "The initiation sites of Ca2+ signals, termed the 'trigger zone', correspond to the localization of the majority of type-2/3 IP3R.",
+      "claim_type": "EXPLICIT",
+      "source": "The initiation sites, termed the 'trigger zone', correspond to the localization of the majority of type-2/3 IP3R (Lee et al., 1997; Pages et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Lee et al., 1997 and Pages et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "3b8880b3-651f-403f-b0c2-98a97ccce1d7",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C19",
+      "claim": "The distance between apical ER and PM is estimated to be ~50\u2013100 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Super-resolution STED imaging does resolve distinct distributions of the two proteins, such that the distance between apical ER and PM is estimated to be ~50\u2013100 nm (Sneyd et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Sneyd et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "3a5880da-1a25-4b1f-a6cc-e9b2ee88328c",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C20",
+      "claim": "At low agonist concentrations in vitro, the Ca2+ signal is manifested as a series of oscillations with a relatively slow period (5\u20138/min).",
+      "claim_type": "EXPLICIT",
+      "source": "At low agonist concentrations, the cycle of apical Ca2+ release, global spread and subsequent Ca2+ sequestration is repeated, such that temporally, the Ca2+ signal is manifested as a series of oscillations with a relatively slow period (5\u20138/min) (Bruce et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Bruce et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "d0e1fb19-d4a4-4685-8590-6241c55b1cde",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C21",
+      "claim": "Transgenic mice expressing GCaMP6f specifically in exocrine acinar cells were generated by crossing homozygous GCaMP6f mice with heterozygous tamoxifen-inducible Mist1 Cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate mice expressing a fluorescent Ca2+ indicator in exocrine acinar cells, homozygous mice expressing the fast genetically encoded Ca2+ indicator GCaMP6f (B6J.Cg-Gt(ROSA)26Sortm95.1(CAG-GCaMP6f)Hze/MwarJ) (Chen et al., 2013) floxed by a STOP cassette, were crossed with heterozygous tamoxifen-inducible Mist1 Cre mice (B6.129-Bhlha15tm3(cre/ERT2)Skz/J) (Maruyama et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used to generate the transgenic mice, with citations to the mouse strains.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "9c121981-1e6a-4e07-afd4-91eb9562b0bb",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C22",
+      "claim": "GCaMP6f expression was uniformly observed in essentially all acinar cells while GCaMP6f expression was not evident in any other cell type such as blood vessels, nerves, myoepithelial cells or ductal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GCaMP6f expression was uniformly observed in essentially all acinar cells while GCaMP6f expression was not evident in any other cell type such as blood vessels, nerves, myoepithelial cells or ductal cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and supported by imaging data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "5a619ebd-2225-4343-abf5-8a091c6da724",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C23",
+      "claim": "Electrical stimulation at various stimulus strengths (1\u2013100 Hz, 12 s) delivered to nerves innervating the SMG induced increases in intracellular [Ca2+] in acinar cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical stimulation at various stimulus strengths delivered to nerves innervating the SMG (1\u2013100 Hz, 12 s initiated at 10 s) induced increases in intracellular [Ca2+] in acinar cells (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "d171f746-c206-492a-b15e-a80a5149c9f4",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C24",
+      "claim": "Following 1 Hz stimulation, a minority of the cells exhibited small, rapid changes in fluorescence, while most cells were refractory.",
+      "claim_type": "EXPLICIT",
+      "source": "Following 1 Hz stimulation, a minority of the cells exhibited small, rapid changes in fluorescence, (n = 4 fields from four animals, Figure 2A,B), while most cells were refractory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "f92dd6f0-bad8-4f29-8f92-af138d8e4547",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C25",
+      "claim": "Following higher frequency stimulation (3\u201310 Hz), the majority of the cells in the field responded and the amplitude of the [Ca2+] signal increased as the stimulation strength was increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Following higher frequency stimulation (3\u201310 Hz), the majority of the cells in the field responded and the amplitude of the [Ca2+] signal increased as the stimulation strength was increased (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "88c10268-319e-44ee-a217-77e44e2a4803",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C27",
+      "claim": "The contralateral SMG were unresponsive to even the highest 100 Hz nerve bundle stimulation of the ipsilateral gland.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the stimulation likely led to increased neural activity specifically, rather than stimulating acinar cells directly, as a consequence of current leak through the saline depolarizing nerve endings, as the contralateral SMG were unresponsive to even the highest 100 Hz nerve bundle stimulation of the ipsilateral gland (p > 0.1 compared to without stimulation, n=4 fields from four animals, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "414c3143-4769-4894-b403-d2d19a25049f",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C28",
+      "claim": "There was no significant secretion activated by 1\u20133 Hz nerve stimulation for 1 min.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant secretion activated by 1\u20133 Hz nerve stimulation for 1 min (p > 0.05 compared to the absence of nerve stimulation, n = four animals)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "8d068ab8-1f61-4a74-93e1-d7cf10351a45",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C29",
+      "claim": "Saliva secretion progressively increased following 5\u201310 Hz nerve stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "but saliva secretion progressively increased following 5\u201310 Hz nerve stimulation (p < 0.05 compared to the absence of stimulation, n = four animals) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "8ab35e18-4813-4f27-a067-938348613ddb",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C30",
+      "claim": "At moderate stimulation intensity (0\u201310 Hz), there was a linear correlation between the peak [Ca2+] increases by stimulation and saliva secretion (r2 = 0.995).",
+      "claim_type": "EXPLICIT",
+      "source": "At moderate stimulation intensity (0\u201310 Hz), there was a linear correlation between the peak [Ca2+] increases by stimulation and saliva secretion (r2 = 0.995, n = four animals, Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "6d42a611-61d6-48c8-92db-a5377c937e02",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C31",
+      "claim": "Sustained saliva secretion requires both Ca2+ release and subsequent Ca2+ influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Sustained saliva secretion requires both Ca2+ release and subsequent Ca2+ influx (Ambudkar, 2011; Cheng et al., 2011b; Ambudkar et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "91063d94-7943-4a82-b4f2-272a60c0c62e",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C32",
+      "claim": "The Orai channel blocker GSK7975A significantly attenuated the plateau Ca2+ response measured following 5 min of 10 Hz stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the plateau measured following 5 min of stimulation was significantly attenuated in drug injected animals vs. vehicle (Figure 4A, pooled data in Figure 4B/C) suggesting a requirement for Orai channel dependent influx for sustained Ca2+ signals and secretion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "b82a7bfa-6298-4ffa-9157-cc6203caa628",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C33",
+      "claim": "GSK7975A had no significant effect on the magnitude of the initial peak Ca2+ response to 10 Hz stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant effect was observed on the magnitude of the initial peak, presumably because sufficient refilling of the ER Ca2+ store had occurred during exposure to blocker.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "3c486b33-b5ea-45de-9cdb-f9de125435b8",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C34",
+      "claim": "At 1 Hz stimulation, 34.0 \u00b1 5.1% of the sub-regions showed significant responses during the stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 34.0 \u00b1 5.1% (n = 19 fields from eight animals) of the sub-regions showed significant responses during the stimulation (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "8dd04053-2d90-4b1e-904b-e5f585a9cccb",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C35",
+      "claim": "At 1 Hz stimulation, the increase in [Ca2+] in the responding regions exhibited a prolonged latency prior to the initial rise following stimulation (6.72 \u00b1 0.79 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the increase in [Ca2+] in the responding regions exhibited a prolonged latency prior to the initial rise following stimulation (6.72 \u00b1 0.79 s, n = 19, Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "8e01fe8d-6f06-40ee-ae98-9f1f661db8df",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C36",
+      "claim": "At 10 Hz, virtually all regions responded to the stimulation (98.5 \u00b1 0.6%) with minimal latency (1.70 \u00b1 0.27 s).",
+      "claim_type": "EXPLICIT",
+      "source": "At 10 Hz, virtually all regions responded to the stimulation (98.5 \u00b1 0.6%, n = 19) with minimal latency (1.70 \u00b1 0.27 s, n = 19) (Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 5G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "2b29d2f7-b5bb-4ddd-85ea-e60a68af2889",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C37",
+      "claim": "The amplitude of the maximal increase in [Ca2+] in the subdivided grids increased as the strength of the stimulation was augmented.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the amplitude of the maximal increase in [Ca2+] in the subdivided grids also increased as the strength of the stimulation was augmented (Figure 5I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "c03906a9-74df-4faa-aa74-ecbcf3a51a67",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C38",
+      "claim": "Grids which responded at lower stimulus intensity also strongly responded to higher frequency stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis demonstrated a clear pattern whereby, at each stimulus strength, particular regions of the field of view were most susceptible to stimulation, such that grids giving the largest amplitude response at 1 Hz similarly responded by displaying the largest amplitude signals at 3, 5 and 10 Hz stimulation. (n = 5 fields from four animals) (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "afa1b0ce-a562-4491-afcd-7cd9c91727fc",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C39",
+      "claim": "High-responding grid regions showed linearly enhanced increases following stimulation (R2 = 0.9197).",
+      "claim_type": "EXPLICIT",
+      "source": "High-responding grid regions showed linearly enhanced increases following stimulation (R2 = 0.9197, n = 4 fields from four animals), while the increase in Ca2+ signal following increased stimulation in less responsive regions was proportionately smaller (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "2f3315f1-5f11-4705-a26f-959f53164333",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C40",
+      "claim": "Physostigmine enhanced the peak amplitude of the Ca2+ signals following stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Physostigmine (0.1 mg/kg body weight IP) enhanced the peak amplitude of the Ca2+ signals following stimulation (Figure 7A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 7A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "4ea0d9d4-a961-46d5-b26d-b71583a240aa",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C41",
+      "claim": "The augmentation in the Ca2+ signal by physostigmine was not statistically significant at 1 Hz stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The augmentation in the Ca2+ signal was not statistically significant at 1 Hz stimulation (p > 0.05, n = 5 fields from four animals)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 7E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "cf813603-3174-44f8-bc29-2725e6ea748f",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C42",
+      "claim": "Physostigmine augmentation became more prominent at 3 Hz with shorter latency, an increase in the number of responding grids and peak amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "but became more prominent at 3 Hz with shorter latency, an increase in the number of responding grids and peak amplitude (p < 0.05 in % response and peak \u0394F/F, n = 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 7E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "f72066ea-9203-4da7-8799-86ffc080dda0",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C43",
+      "claim": "At all physiological stimulus strengths the increase in [Ca2+]i was highly heterogeneous, with the largest increases in signal occurring in the apical aspects of acinar clusters, directly below the apical PM.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that at all physiological stimulus strengths the increase in [Ca2+]i was highly heterogeneous, with the largest increases in signal occurring in the apical aspects of acinar clusters, directly below the apical PM (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "29c6241f-e65a-4621-bd53-4a7f546df386",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C44",
+      "claim": "At 5 Hz stimulation, the signal consisted of brief (< 2 s in duration), repetitive increases in [Ca2+] that were highly localized, being initiated in, and almost entirely confined to the apical portions of individual cells, within a few \u03bcms of the apical PM.",
+      "claim_type": "EXPLICIT",
+      "source": "In marked contrast to in vitro experiments, analysis of the image series demonstrated that the signal consisted of brief (< 2 s in duration), repetitive increases in [Ca2+] (Figure 8B). The signals were highly localized, being initiated in, and almost entirely confined to the apical portions of individual cells, within a few \u03bcms of the apical PM (Figure 8B\u2013E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 8B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "8df7dd06-1ca8-49ee-958d-d2fdeb1d4347",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C45",
+      "claim": "At 10 Hz stimulation, a rise in [Ca2+] was rapidly initiated in the extreme apical ER, close to the apical PM, and Ca2+ signals were observed in the basal aspects of the cell but of considerably lower amplitude, approximately 20\u201330% of that observed in the apical domain.",
+      "claim_type": "EXPLICIT",
+      "source": "At 10 Hz stimulation, a rise in [Ca2+] was also rapidly initiated in the extreme apical ER, close to the apical PM (imaging field in Figure 9A with red box showing the highlighted cluster depicted in Figure 9B). In contrast to lower stimulus strengths, Ca2+ signals were observed in the basal aspects of the cell (Figure 9B\u2013E), but of considerably lower amplitude, approximately 20\u201330% of that observed in the apical domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "1168ff52-1646-484a-8d1f-fc13abc4ebbb",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C46",
+      "claim": "Line scan analysis demonstrated that at each stimulus intensity the signal rapidly decays away from the apical initiation sites to the nucleus and is ~25% of the apical signal in the extreme base of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The apical-basal gradient was further analyzed by plotting the amplitude of the maximum fluorescent change across the line profile which further reinforces that at each stimulus intensity the signal rapidly decays away from the apical initiation sites to the nucleus and is ~25% of the apical signal in the extreme base of the cell (Figure 10. BIII, CIII and DIII).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "8b5280ba-a0e9-4e11-94fd-6d2de268875d",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C47",
+      "claim": "The frequency of Ca2+ oscillations was markedly faster (~1 Hz) when measured in vivo than previously described in isolated cells (~0.2 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrated that the frequency of oscillations was markedly faster (~1 Hz) when measured in vivo than previously described in isolated cells (~0.2 Hz, this study, Figure 12)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 11 and Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "fa41c6b5-bd5d-4cb9-8d8a-7f65a42eea37",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C48",
+      "claim": "The frequency of oscillations modestly increased between 3 and 5 Hz stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "and further modestly increased between 3 and 5 Hz stimulation (Figure 11E; 79 ROIs experiment shown in Figure 11A\u2013C and pooled data from 13 individual fields from five animals (Figure 11F)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 11E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "90279c26-cf5a-4de6-96bc-85b71aa1444e",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C49",
+      "claim": "The relationship between secretion and the frequency of Ca2+ oscillation was less strong (R2 = 0.824) than the correlation between saliva secretion and the magnitude of the evoked Ca2+ signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the robust correlation between saliva secretion and the magnitude of the evoked Ca2+ signal, the relationship between secretion and the frequency of Ca2+ oscillation was less strong (R2 = 0.824, Figure 11G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 11G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "188438b1-6a15-4ed5-967f-ba0bb0f2f992",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C50",
+      "claim": "In acutely isolated GCaMP6f expressing acini, individual acinar cells failed to respond to 5 nM CCh; however, at 25 nM CCh single cells within an acinus responded by evoking repetitive Ca2+ transients with a frequency ~0.2 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual acinar cells failed to respond to 5 nM CCh; however, at 25 nM CCh single cells within an acinus responded by evoking repetitive Ca2+ transients (Figure 12) with a frequency ~0.2 Hz.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "52979696-8b18-4d53-9a34-d76a48004894",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C51",
+      "claim": "Oscillations evoked even by threshold concentrations of CCh were initiated below the apical PM and invariably globalized with all CCh concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillations evoked even by threshold concentrations of CCh were initiated below the apical PM and invariably globalized with all CCh concentrations (Figure 12D\u2013F and Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in Figure 12D-F and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "c9a14b4c-992f-4294-aefc-c5f6c372a0e2",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C52",
+      "claim": "The spatiotemporal profile of the Ca2+ responses evoked in acutely isolated GCaMP6f expressing acini were strikingly similar to numerous reports documenting agonist-evoked Ca2+ responses with conventional chemical Ca2+ indicators.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, the spatiotemporal profile of the Ca2+ responses evoked in acutely isolated GCaMP6f expressing acini were strikingly similar to numerous reports documenting agonist-evoked Ca2+ responses with conventional chemical Ca2+ indicators and thus the properties of the genetically encoded indicator at physiological temperature per se do not explain the differences observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the current in vitro data with previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "efa34caf-b5e2-4caa-8f3f-348227119445",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C53",
+      "claim": "A new mathematical model incorporating apical KCa channels and localized Ca2+ signals was constructed.",
+      "claim_type": "EXPLICIT",
+      "source": "A new mathematical model, incorporating these data was constructed to probe how salivary secretion can be optimally stimulated by apical Ca2+ signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and described in detail in the Results and Methods sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "52a9afd4-0be6-4a31-97d9-c829ccba4e70",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C54",
+      "claim": "In the new model, the apical region includes all the components necessary for saliva secretion, with KCa channels and Na/K ATPases in addition to the TMEM16a channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The apical region is defined as the domain within 3 \u03bcm of the apical PM, which is itself demarcated by the tight junctions. This region now includes all the components necessary for saliva secretion, with KCa channels and Na/K ATPases in addition to the TMEM16a channels (Figure 13)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and illustrated in Figure 13.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "5955c017-5fd7-4812-906d-c2d5b6fd13f2",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C55",
+      "claim": "Model simulations show that as VPLC increases, the [Ca2+] oscillation frequency increases and the latency decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "As VPLC increases, the [Ca2+] oscillation frequency increases and the latency decreases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by model simulations shown in Figure 14A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "f06fe44b-511a-4775-ab78-45d7514dc46b",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C56",
+      "claim": "Model simulations show that absence of both a propagated [Ca2+] wave and apical KCa channels significantly decreases saliva secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations show that absence of both a propagated [Ca2+] wave and apical KCa channels significantly decreases saliva secretion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by model simulations shown in Figure 14B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "fba7f6dd-22cf-4da6-8c10-5b533312b3d5",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C57",
+      "claim": "In the new model, basal [Ca2+] is between 25% and 35% of apical [Ca2+], as observed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "In the new model (Figure 14C), basal [Ca2+] is between 25% and 35% of apical [Ca2+], as observed experimentally",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by model simulations shown in Figure 14C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "d7c0bc63-4c4a-432d-921b-8316b08ff666",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C58",
+      "claim": "Model simulations show that optimal fluid secretion occurs when the apical and basal KCa densities are approximately equal.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimal fluid secretion occurs when the apical and basal KCa densities are approximately equal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by model simulations shown in Figure 14F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "744cb02a-a080-4958-9dc3-772bccab286f",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C59",
+      "claim": "KCa3.1 and KCa1.1 together with Na/K ATPases are present in the apical PM of salivary acinar cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, however we have demonstrated, both functionally and physically, that the KCa channels, KCa3.1 ('IK') and KCa1.1 ('BK') together with Na/K ATPases are present in the apical PM of salivary acinar cells (Alm\u00e1ssy et al., 2018; Almassy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "1c40b057-58e6-4685-b9e3-7940ef463ef2",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C60",
+      "claim": "KCa3.1 colocalized with apical markers including IP3R3 and Zona occludens-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we reported that KCa3.1 colocalized with apical markers including IP3R3 and Zona occludens-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "89c782f1-2aa3-4d95-a185-e427860b5639",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C61",
+      "claim": "Focal, highly localized uncaging of Ca2+, directly below the apical PM resulted in activation of a K+ conductance with pharmacology consistent with KCa3.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, focal, highly localized uncaging of Ca2+, directly below the apical PM resulted in activation of a K+ conductance with pharmacology consistent with KCa3.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "ffd6566c-d154-463c-8800-2af00fd8c7ae",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C62",
+      "claim": "Apical uncaging of Ca2+ evoked a smaller current in acini prepared from KCa1.1 knockout transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, apical uncaging of Ca2+ evoked a smaller current in acini prepared from KCa1.1 knockout transgenic mice (Almassy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "13149c5d-d024-467a-8ff3-ecdec7730860",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C63",
+      "claim": "Local, non-propagating Ca2+ signals are observed in isolated pancreatic acinar cell in response to IP3, low concentrations of secretagogues and physiological concentrations of the gut hormone cholecystokinin.",
+      "claim_type": "EXPLICIT",
+      "source": "Local, non-propagating Ca2+ signals are observed in isolated pancreatic acinar cell in response to IP3, low concentrations of secretagogues and physiological concentrations of the gut hormone cholecystokinin (Ashby et al., 2003; Thorn et al., 1993; Thorn et al., 1996; Thorn and Petersen, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "e5aa4d7b-3c50-42de-8f18-589fdb202b04",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C64",
+      "claim": "The failure of the signal to propagate and standing [Ca2+] gradients observed are presumably established by SERCA, PMCA and mitochondrial buffering to efficiently reduce the local [Ca2+] to levels that do not support substantial CICR through IP3R and RYR.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of the signal to propagate and standing [Ca2+] gradients observed are presumably established by SERCA, PMCA and mitochondrial buffering to efficiently reduce the local [Ca2+] to levels that do not support substantial CICR through IP3R and RYR that are presumed to be localized in the ER distant from the apical trigger zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation proposed by the authors based on their observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "d0bd18e5-ea82-49ef-ab04-47250a02f98f",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C65",
+      "claim": "The complex architecture of the SMG lobule is maintained by junctional complexes and interactions with the extracellular matrix and stromal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of the SMG lobule, the polarity of individual cells and their organization within an acinus is vital for function. The complex architecture is maintained by junctional complexes and interactions with the extracellular matrix and stromal cells (Baker, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Baker, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "3f6ec3b8-98e4-4951-8bdb-dabb9a399537",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "claim_id": "C66",
+      "claim": "Enzymic digestion may disrupt the exquisite polarity of acinar cells, leading to altered Ca2+ signaling characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, these interactions may be disturbed when cells are isolated from an excised gland by enzymic digestion. An apparent consequence may be a disruption of the exquisite polarity of acinar cells. Perturbed localization of the Ca2+ signaling machinery could disrupt the balance between Ca2+ release and clearance to ultimately result in an alteration of the spatiotemporal characteristics of the signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation proposed by the authors to explain differences between in vivo and in vitro observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "79054261-11dc-4a7a-a527-4ced3fffd858",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Transgenic mice expressing GCaMP6f specifically in exocrine acinar cells were successfully generated and validated, showing uniform expression in essentially all acinar cells with no expression in other cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C22 describe the generation and validation of the transgenic mouse model. The methodology is clearly described with appropriate citations (C21), and the specificity of expression is documented with imaging evidence (C22, Figure 1C). This provides a solid foundation for the in vivo imaging experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "b86b3e29-fb05-4d4e-adf3-86c8bd32dd01",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Electrical nerve stimulation at 1-100 Hz induced frequency-dependent increases in intracellular Ca2+ in acinar cells, with minimal response at 1 Hz, progressive recruitment at 3-10 Hz, and specificity confirmed by lack of contralateral gland response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 and C27 collectively demonstrate frequency-dependent Ca2+ responses with appropriate controls. The data show clear dose-response relationships (Figure 2A,B) and the contralateral control (C27) provides strong evidence for neural specificity rather than direct electrical stimulation of acinar cells. Sample sizes are stated (n=4 fields from 4 animals).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "d1c45e3f-87b5-4732-ac6c-36d8fb958895",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Saliva secretion was absent at 1-3 Hz stimulation, progressively increased at 5-10 Hz, and showed a strong linear correlation (r\u00b2=0.995) with peak Ca2+ increases at moderate stimulation intensities (0-10 Hz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 establish a clear relationship between stimulation frequency, Ca2+ signals, and functional output (saliva secretion). Statistical significance is reported with appropriate tests, sample sizes are provided (n=4 animals), and the strong correlation (r\u00b2=0.995) between Ca2+ and secretion is well-documented (Figure 3). This is a key functional validation of the physiological relevance of the Ca2+ signals observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "406badce-17de-4744-bace-c0f88d4d6ad9",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sustained saliva secretion requires both Ca2+ release and Orai-dependent Ca2+ influx, as demonstrated by GSK7975A significantly attenuating the plateau phase but not the initial peak of the Ca2+ response during prolonged 10 Hz stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 demonstrate the requirement for store-operated Ca2+ entry. The pharmacological approach using GSK7975A is appropriate, with vehicle controls included. The selective effect on the plateau phase (C32) versus the initial peak (C33) is consistent with the proposed mechanism. Data are shown in Figure 4 with statistical analysis (paired t-test, p<0.05, n=3-5 animals).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "68717826-0f1e-4bca-ab53-5d31a5e8ca37",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Grid-based analysis revealed that at 1 Hz stimulation, only 34% of sub-regions responded with prolonged latency (6.72\u00b10.79 s), while at 10 Hz virtually all regions (98.5%) responded with minimal latency (1.70\u00b10.27 s) and increased amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 describe detailed spatial and temporal characteristics of Ca2+ responses using a systematic grid-based analysis. The methodology is clearly described (8x8 grids, 32x32 \u03bcm), validated in supplementary data (Figure 5\u2014figure supplement 1), and shows progressive recruitment and amplitude increases with stimulation frequency. Sample sizes are adequate (n=19 fields from 8 animals) with appropriate statistics (ANOVA with Tukey test).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "0d575adc-5fc7-4320-8033-f30c287cd532",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Regions that responded strongly at low stimulus intensity (1 Hz) also showed the largest responses at higher frequencies, with high-responding regions exhibiting linearly enhanced increases (R\u00b2=0.9197) as stimulation strength increased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C39 demonstrate spatial heterogeneity in responsiveness across the tissue. The analysis showing that the same regions are most responsive across all frequencies (Figure 6D) and the linear relationship (R\u00b2=0.9197) are well-documented with appropriate sample sizes (n=4-5 fields from 4 animals). This reveals important spatial organization of the Ca2+ signaling system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "4b5efdd4-3ac1-4bd3-8a14-b4cc5e489a8d",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Physostigmine, a cholinesterase inhibitor, enhanced Ca2+ signal amplitude following nerve stimulation, with effects becoming statistically significant at 3 Hz and above, confirming acetylcholine as the primary mediator of the observed Ca2+ responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 provide pharmacological evidence for cholinergic mediation of the Ca2+ signals. The dose-response relationship and frequency-dependent effects are well-documented (Figure 7) with paired experimental design (n=5 fields from 4 animals) and appropriate statistics (paired t-test). This validates that the observed signals reflect physiological neurotransmitter release.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "d40f7108-0d75-44d6-a9bf-447f520ca330",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At physiological stimulus strengths (particularly 5 Hz), Ca2+ signals consisted of brief (<2 s), repetitive, highly localized increases confined to the apical portions of cells within a few micrometers of the apical plasma membrane, in marked contrast to in vitro observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C44 describe a key finding that distinguishes in vivo from in vitro Ca2+ signaling. The spatial localization is clearly demonstrated through standard deviation imaging and time-lapse analysis (Figure 8). This represents a major departure from the global Ca2+ waves typically observed in isolated cells and is central to the paper's main conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "38c70c91-6eeb-4eb9-af93-a79fe19a8eb1",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "At 10 Hz stimulation, Ca2+ signals initiated in the extreme apical ER established a standing apical-basal gradient, with basal Ca2+ reaching only ~20-30% (or ~25% by line scan analysis) of apical levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C46 quantify the spatial Ca2+ gradient at optimal secretion frequency. Multiple analytical approaches (standard deviation imaging, manual ROI analysis, line scans) converge on consistent measurements of the gradient (Figures 9 and 10). The line scan data (n=11 from 3 animals) with statistical analysis (two-way ANOVA) provide robust quantification of this key finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "c68b5cbc-e7e4-48e1-ac86-1fd1c479965c",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ca2+ oscillation frequency in vivo (~1 Hz) was markedly faster than in isolated cells (~0.2 Hz), modestly increased between 3 and 5 Hz stimulation, but showed weaker correlation with secretion (R\u00b2=0.824) compared to Ca2+ amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 characterize the temporal dynamics of Ca2+ oscillations using automated peak detection algorithms. The comparison between in vivo and in vitro frequencies is well-documented (Figures 11 and 12), with adequate sample sizes (n=13 fields from 5 animals for in vivo). The weaker correlation with secretion compared to amplitude (R\u00b2=0.824 vs 0.995) is an important mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "b4e8e9c3-9190-4041-b231-852781402c32",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In acutely isolated GCaMP6f-expressing acini at 37\u00b0C, carbachol evoked Ca2+ oscillations (~0.2 Hz) that invariably initiated apically and globalized, with spatiotemporal profiles strikingly similar to previous reports using chemical indicators, ruling out the genetically encoded indicator as the cause of in vivo/in vitro differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 provide critical control experiments demonstrating that GCaMP6f properties do not explain the in vivo/in vitro differences. The isolated cell experiments at 37\u00b0C (Figure 12) show global Ca2+ waves consistent with prior literature, directly addressing a potential confound. Sample sizes are adequate (n=14-32 cells from 3 animals) with appropriate statistics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "8db45afa-b29f-4951-9b11-3c070e9a93dc",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A new mathematical model incorporating apical KCa channels and localized Ca2+ signals was developed, showing that optimal fluid secretion occurs when apical and basal KCa densities are approximately equal, and that absence of both propagated Ca2+ waves and apical KCa significantly decreases secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 describe the development and key predictions of a revised mathematical model. The model incorporates the experimental findings (apical localization of Ca2+, presence of apical KCa channels) and makes testable predictions. The simulations show qualitative agreement with experimental data (oscillation frequency, spatial gradients, secretion rates). However, the model's predictive power would benefit from more quantitative experimental validation of specific predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "a0529f3b-2c84-45ce-b941-3d7a0b709f16",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous work by the authors demonstrated that KCa3.1 and KCa1.1 channels, along with Na/K ATPases, are present in the apical plasma membrane of salivary acinar cells, with functional evidence from localized Ca2+ uncaging experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 summarize prior published work by the authors that provides crucial context for the current model. These are appropriately cited claims (Alm\u00e1ssy et al., 2018; Almassy et al., 2012) that establish the presence and function of apical KCa channels, which is essential for interpreting the current in vivo findings. The claims are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "8ff88947-d47d-4210-973d-e7a25e8547f0",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The failure of Ca2+ signals to propagate and the establishment of standing Ca2+ gradients are presumably due to efficient Ca2+ clearance by SERCA, PMCA, and mitochondrial buffering, preventing substantial CICR through IP3R and RyR distant from the apical trigger zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 proposes a mechanistic explanation for the localized Ca2+ signals, but this is explicitly speculative (\"presumably\"). While the proposed mechanism is plausible and consistent with known Ca2+ handling mechanisms, no direct experimental evidence is provided in this study to test this hypothesis. Future experiments manipulating these Ca2+ clearance mechanisms would be needed to validate this explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "a764c4b8-e7a7-4c1b-857c-5ecfcd8ab6fa",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The complex architecture of the salivary gland lobule is maintained by junctional complexes and extracellular matrix interactions, and enzymatic digestion during cell isolation may disrupt cellular polarity, potentially explaining altered Ca2+ signaling characteristics in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65 and C66 propose that enzymatic isolation disrupts cellular architecture and polarity, leading to altered Ca2+ signaling. While C65 is supported by citation (Baker, 2010), C66 is explicitly speculative. The hypothesis is reasonable but lacks direct experimental evidence. Testing this would require comparing Ca2+ signaling machinery localization in intact versus isolated tissue, or using alternative isolation methods that preserve architecture.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establishing the current understanding of salivary secretion mechanisms, including the role of Ca2+ signaling, ion transporters, neurotransmitter pathways, and prior in vitro observations of global Ca2+ waves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C2, C6-C20) provide essential background and context from the literature. They are appropriately cited and accurately represent the current state of knowledge in the field. These establish the framework against which the novel in vivo findings are compared. The claims are well-supported by the cited literature and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "34fd61eb-c88a-4d04-8f9b-e87e32758567",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In vivo nerve stimulation in live mice revealed that Ca2+ signals initiate in the apical ER but, in marked contrast to in vitro data, consist of highly localized transients that fail to fully propagate, establishing large apical-basal gradients at optimal secretion stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 summarize the main findings of the study as stated in the abstract. These are well-supported by the detailed experimental data presented in the Results section (Figures 8-10) and represent the core novel contribution of the work. The contrast with in vitro observations is clearly demonstrated through direct comparison experiments (Figure 12).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    },
+    {
+      "id": "0ebef73a-05e0-48eb-ab96-53e846ca105e",
+      "content_id": "8a278a8e-6c21-427b-8dc0-85be60896924",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Local, non-propagating Ca2+ signals have been observed in isolated pancreatic acinar cells in response to IP3, low concentrations of secretagogues, and physiological concentrations of cholecystokinin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 cites prior work in pancreatic acinar cells showing localized Ca2+ signals. This is appropriately cited (Ashby et al., 2003; Thorn et al., 1993; Thorn et al., 1996; Thorn and Petersen, 1993) and provides important context that localized signals are not unprecedented in exocrine cells, though the authors note important caveats about those studies (patch-clamp conditions).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:49:53.827242Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d0e1fb19-d4a4-4685-8590-6241c55b1cde",
+      "result_id": "79054261-11dc-4a7a-a527-4ced3fffd858"
+    },
+    {
+      "claim_id": "9c121981-1e6a-4e07-afd4-91eb9562b0bb",
+      "result_id": "79054261-11dc-4a7a-a527-4ced3fffd858"
+    },
+    {
+      "claim_id": "5a619ebd-2225-4343-abf5-8a091c6da724",
+      "result_id": "b86b3e29-fb05-4d4e-adf3-86c8bd32dd01"
+    },
+    {
+      "claim_id": "d171f746-c206-492a-b15e-a80a5149c9f4",
+      "result_id": "b86b3e29-fb05-4d4e-adf3-86c8bd32dd01"
+    },
+    {
+      "claim_id": "f92dd6f0-bad8-4f29-8f92-af138d8e4547",
+      "result_id": "b86b3e29-fb05-4d4e-adf3-86c8bd32dd01"
+    },
+    {
+      "claim_id": "88c10268-319e-44ee-a217-77e44e2a4803",
+      "result_id": "b86b3e29-fb05-4d4e-adf3-86c8bd32dd01"
+    },
+    {
+      "claim_id": "414c3143-4769-4894-b403-d2d19a25049f",
+      "result_id": "d1c45e3f-87b5-4732-ac6c-36d8fb958895"
+    },
+    {
+      "claim_id": "8d068ab8-1f61-4a74-93e1-d7cf10351a45",
+      "result_id": "d1c45e3f-87b5-4732-ac6c-36d8fb958895"
+    },
+    {
+      "claim_id": "8ab35e18-4813-4f27-a067-938348613ddb",
+      "result_id": "d1c45e3f-87b5-4732-ac6c-36d8fb958895"
+    },
+    {
+      "claim_id": "6d42a611-61d6-48c8-92db-a5377c937e02",
+      "result_id": "406badce-17de-4744-bace-c0f88d4d6ad9"
+    },
+    {
+      "claim_id": "91063d94-7943-4a82-b4f2-272a60c0c62e",
+      "result_id": "406badce-17de-4744-bace-c0f88d4d6ad9"
+    },
+    {
+      "claim_id": "b82a7bfa-6298-4ffa-9157-cc6203caa628",
+      "result_id": "406badce-17de-4744-bace-c0f88d4d6ad9"
+    },
+    {
+      "claim_id": "3c486b33-b5ea-45de-9cdb-f9de125435b8",
+      "result_id": "68717826-0f1e-4bca-ab53-5d31a5e8ca37"
+    },
+    {
+      "claim_id": "8dd04053-2d90-4b1e-904b-e5f585a9cccb",
+      "result_id": "68717826-0f1e-4bca-ab53-5d31a5e8ca37"
+    },
+    {
+      "claim_id": "8e01fe8d-6f06-40ee-ae98-9f1f661db8df",
+      "result_id": "68717826-0f1e-4bca-ab53-5d31a5e8ca37"
+    },
+    {
+      "claim_id": "2b29d2f7-b5bb-4ddd-85ea-e60a68af2889",
+      "result_id": "68717826-0f1e-4bca-ab53-5d31a5e8ca37"
+    },
+    {
+      "claim_id": "c03906a9-74df-4faa-aa74-ecbcf3a51a67",
+      "result_id": "0d575adc-5fc7-4320-8033-f30c287cd532"
+    },
+    {
+      "claim_id": "afa1b0ce-a562-4491-afcd-7cd9c91727fc",
+      "result_id": "0d575adc-5fc7-4320-8033-f30c287cd532"
+    },
+    {
+      "claim_id": "2f3315f1-5f11-4705-a26f-959f53164333",
+      "result_id": "4b5efdd4-3ac1-4bd3-8a14-b4cc5e489a8d"
+    },
+    {
+      "claim_id": "4ea0d9d4-a961-46d5-b26d-b71583a240aa",
+      "result_id": "4b5efdd4-3ac1-4bd3-8a14-b4cc5e489a8d"
+    },
+    {
+      "claim_id": "cf813603-3174-44f8-bc29-2725e6ea748f",
+      "result_id": "4b5efdd4-3ac1-4bd3-8a14-b4cc5e489a8d"
+    },
+    {
+      "claim_id": "f72066ea-9203-4da7-8799-86ffc080dda0",
+      "result_id": "d40f7108-0d75-44d6-a9bf-447f520ca330"
+    },
+    {
+      "claim_id": "29c6241f-e65a-4621-bd53-4a7f546df386",
+      "result_id": "d40f7108-0d75-44d6-a9bf-447f520ca330"
+    },
+    {
+      "claim_id": "8df7dd06-1ca8-49ee-958d-d2fdeb1d4347",
+      "result_id": "38c70c91-6eeb-4eb9-af93-a79fe19a8eb1"
+    },
+    {
+      "claim_id": "1168ff52-1646-484a-8d1f-fc13abc4ebbb",
+      "result_id": "38c70c91-6eeb-4eb9-af93-a79fe19a8eb1"
+    },
+    {
+      "claim_id": "8b5280ba-a0e9-4e11-94fd-6d2de268875d",
+      "result_id": "c68b5cbc-e7e4-48e1-ac86-1fd1c479965c"
+    },
+    {
+      "claim_id": "fa41c6b5-bd5d-4cb9-8d8a-7f65a42eea37",
+      "result_id": "c68b5cbc-e7e4-48e1-ac86-1fd1c479965c"
+    },
+    {
+      "claim_id": "90279c26-cf5a-4de6-96bc-85b71aa1444e",
+      "result_id": "c68b5cbc-e7e4-48e1-ac86-1fd1c479965c"
+    },
+    {
+      "claim_id": "188438b1-6a15-4ed5-967f-ba0bb0f2f992",
+      "result_id": "b4e8e9c3-9190-4041-b231-852781402c32"
+    },
+    {
+      "claim_id": "52979696-8b18-4d53-9a34-d76a48004894",
+      "result_id": "b4e8e9c3-9190-4041-b231-852781402c32"
+    },
+    {
+      "claim_id": "c9a14b4c-992f-4294-aefc-c5f6c372a0e2",
+      "result_id": "b4e8e9c3-9190-4041-b231-852781402c32"
+    },
+    {
+      "claim_id": "efa34caf-b5e2-4caa-8f3f-348227119445",
+      "result_id": "8db45afa-b29f-4951-9b11-3c070e9a93dc"
+    },
+    {
+      "claim_id": "52a9afd4-0be6-4a31-97d9-c829ccba4e70",
+      "result_id": "8db45afa-b29f-4951-9b11-3c070e9a93dc"
+    },
+    {
+      "claim_id": "5955c017-5fd7-4812-906d-c2d5b6fd13f2",
+      "result_id": "8db45afa-b29f-4951-9b11-3c070e9a93dc"
+    },
+    {
+      "claim_id": "f06fe44b-511a-4775-ab78-45d7514dc46b",
+      "result_id": "8db45afa-b29f-4951-9b11-3c070e9a93dc"
+    },
+    {
+      "claim_id": "fba7f6dd-22cf-4da6-8c10-5b533312b3d5",
+      "result_id": "8db45afa-b29f-4951-9b11-3c070e9a93dc"
+    },
+    {
+      "claim_id": "d7c0bc63-4c4a-432d-921b-8316b08ff666",
+      "result_id": "8db45afa-b29f-4951-9b11-3c070e9a93dc"
+    },
+    {
+      "claim_id": "744cb02a-a080-4958-9dc3-772bccab286f",
+      "result_id": "a0529f3b-2c84-45ce-b941-3d7a0b709f16"
+    },
+    {
+      "claim_id": "1c40b057-58e6-4685-b9e3-7940ef463ef2",
+      "result_id": "a0529f3b-2c84-45ce-b941-3d7a0b709f16"
+    },
+    {
+      "claim_id": "89c782f1-2aa3-4d95-a185-e427860b5639",
+      "result_id": "a0529f3b-2c84-45ce-b941-3d7a0b709f16"
+    },
+    {
+      "claim_id": "ffd6566c-d154-463c-8800-2af00fd8c7ae",
+      "result_id": "a0529f3b-2c84-45ce-b941-3d7a0b709f16"
+    },
+    {
+      "claim_id": "e5aa4d7b-3c50-42de-8f18-589fdb202b04",
+      "result_id": "8ff88947-d47d-4210-973d-e7a25e8547f0"
+    },
+    {
+      "claim_id": "d0bd18e5-ea82-49ef-ab04-47250a02f98f",
+      "result_id": "a764c4b8-e7a7-4c1b-857c-5ecfcd8ab6fa"
+    },
+    {
+      "claim_id": "3f6ec3b8-98e4-4951-8bdb-dabb9a399537",
+      "result_id": "a764c4b8-e7a7-4c1b-857c-5ecfcd8ab6fa"
+    },
+    {
+      "claim_id": "6d466a5c-3b08-4b98-b499-d939fb379290",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "c05bd0c8-3e4f-4383-87b1-2d51923d260a",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "2c39a0f3-ae2a-40d9-abfc-1d5c9c5c7a95",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "1aa5f640-f4d9-435f-8769-44d2f4ed333b",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "02204e3e-16c7-47db-9ab0-5dfd02ad95cd",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "2157eb03-320f-4e1c-87c6-5f51fb28e69f",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "e8fb1338-0916-43ae-b019-f07fa9e0aac6",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "27732c47-6f81-4455-a508-671ac880795b",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "75ca09ec-64a8-4e07-859f-e00f40577f22",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "263faa5c-523e-4c32-b8b0-6b4d0b5d910d",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "b92986d8-05ca-4e57-8d5c-289a67c85dff",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "d81cf1ab-ec80-4529-b5c7-ed1633964e8c",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "d2934a7f-c977-46b9-b851-859f5565ee04",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "3f0ceb57-22fa-47c4-9650-11dd8883c986",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "3b8880b3-651f-403f-b0c2-98a97ccce1d7",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "3a5880da-1a25-4b1f-a6cc-e9b2ee88328c",
+      "result_id": "a5e4d52f-cf06-4081-9a8b-54cbee44e779"
+    },
+    {
+      "claim_id": "260a7377-1d53-4a36-bd38-fdecd89d6c29",
+      "result_id": "34fd61eb-c88a-4d04-8f9b-e87e32758567"
+    },
+    {
+      "claim_id": "74536c15-37b5-45d1-bbe4-a386b69277f2",
+      "result_id": "34fd61eb-c88a-4d04-8f9b-e87e32758567"
+    },
+    {
+      "claim_id": "def58127-4507-48de-8c83-591e7f5c5ee5",
+      "result_id": "34fd61eb-c88a-4d04-8f9b-e87e32758567"
+    },
+    {
+      "claim_id": "13149c5d-d024-467a-8ff3-ecdec7730860",
+      "result_id": "0ebef73a-05e0-48eb-ab96-53e846ca105e"
+    }
+  ],
+  "comparisons": []
+}

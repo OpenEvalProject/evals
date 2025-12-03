@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "H. pylori exhibit asymmetric swimming speeds in their two motility modes, with cells swimming faster (~1.5-1.6\u00d7 faster) when flagella rotate counterclockwise (pusher mode) compared to clockwise rotation (puller mode). This asymmetry was consistently observed across 250 cells using speed analysis and confirmed in 116 cells using surface-tracking methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C36-C38 establish speed asymmetry through direct experimental observation (Figure 1), while C42-C44 confirm this using hydrodynamic surface interactions (Figure 2). The convergence of two independent methods (speed binning and circular trajectory analysis) with consistent ratios (~1.5-1.6) across large sample sizes (n=250 and n=116) provides strong support. The anti-correlation pattern in alternate speed bins (C36) logically supports the inference of unequal mode speeds (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The pusher mode (CCW flagellar rotation with flagella lagging) corresponds to faster swimming, while the puller mode (CW flagellar rotation with body lagging) corresponds to slower swimming. This was determined by exploiting hydrodynamic interactions near surfaces where pushers exhibit CW circular trajectories and pullers exhibit CCW circular trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assignment of swimming modes relies on established hydrodynamic principles (C40-C41, supported by DiLuzio et al., 2005; Lauga et al., 2006) combined with the known left-handed, unipolar flagellar arrangement in H. pylori (C5). The experimental observation that CW trajectories near surfaces are consistently faster (C42) allows definitive mode assignment. This logical chain from established physics to experimental observation is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C48",
+      "C49",
+      "C87"
+    ],
+    "result": "The default direction of flagellar rotation in H. pylori is counterclockwise (CCW), as demonstrated by \u0394cheY mutant cells that exclusively exhibited CW circular trajectories near surfaces (indicating CCW flagellar rotation in the pusher mode).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The \u0394cheY mutant experiment (C48, C87, Figure 3B) provides direct genetic evidence. The observation of exclusively CW circular trajectories in >150 mutant cells near surfaces, combined with the established relationship between trajectory direction and flagellar rotation (C41), strongly supports CCW as the default rotation. This parallels E. coli (C49, supported by Ford et al., 2018; Liu et al., 2020), adding comparative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C88",
+      "C89"
+    ],
+    "result": "Wild-type H. pylori exhibit a basal CWbias of ~0.35 (motors spend ~35% of time rotating CW), similar to E. coli, with most cells preferring CCW rotation. The presence of CheY increases the probability of CW rotation compared to the \u0394cheY mutant (CWbias = 0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CWbias distribution (C45, C47, Figure 3A, n=240 cells) provides robust quantification. Comparison with \u0394cheY mutant (C30, C88) demonstrates CheY's role in promoting CW rotation (C89). The similarity to E. coli CWbias values (C45, supported by multiple citations) strengthens confidence. However, the inference about basal chemotactic output similarity (C46) is more speculative, as CWbias alone may not fully capture network output differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C52",
+      "C53",
+      "C81",
+      "C90"
+    ],
+    "result": "Upon exposure to the chemoattractant urea (20 mM), H. pylori cells decreased their CWbias to ~0 (swimming exclusively in pusher mode) and reduced their reversal frequency, indicating that attractant sensing reduces kinase activity and inhibits CW rotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The urea response experiments (C52, C90, Figure 3C-D, n=20 cells) show clear reduction in CWbias and reversal frequency compared to buffer-only controls with statistical significance (p<0.001). The response is consistent with prior reports on reversal frequency (C53, Machuca et al., 2017; Perkins et al., 2019). However, the sample size (n=20) is relatively small for the CWbias measurements, and the ~30-60s observation window may not capture full adaptation dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C91",
+      "C92",
+      "C120"
+    ],
+    "result": "The chemotaxis network in H. pylori controls CheY-P levels to modulate the probability of CW rotation in otherwise CCW-rotating flagellar motors, similar to the canonical E. coli chemotaxis mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion integrates multiple experimental observations: \u0394cheY mutant behavior (C30, C48), wild-type CWbias (C88), and attractant response (C90). The inference that CheY-P promotes CW rotation (C50, C91) is well-supported by the genetic and chemical perturbation data. The comparison to E. coli (C92, C120) is reasonable given the structural and network similarities (C9, C10, C117-C119), though direct CheY-P measurements were not performed in H. pylori.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C61",
+      "C62",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The relationship between reversal frequency and CWbias in H. pylori is unimodal, with maximum frequency at ~0.4 CWbias. This means reversal frequency does not uniquely report CWbias or kinase activity, making CWbias a better measure of chemotaxis output than reversal frequency alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The unimodal relationship (C61, C96, Figure 4C) is established by combining data across temperatures (n=972 cells), providing robust statistical support. The inference that reversal frequency is non-unique with respect to CWbias (C97) and kinase activity (C98) logically follows from the unimodal shape. The conclusion that CWbias is superior to reversal frequency for measuring chemotaxis output (C100) is well-reasoned, paralleling E. coli (C18, Cluzel et al., 2000). This challenges prior H. pylori studies focused solely on reversal frequency (C19, C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Temperature affects H. pylori motility: swimming speeds in both modes increase with temperature up to 37\u00b0C, while the speed ratio remains constant. Reversal frequency increases steadily to a maximum at 37\u00b0C, but CWbias varies only weakly with temperature, being lowest at room temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temperature-dependent measurements (Figure 4A-B, n\u226580 cells per temperature) show clear trends for speeds (C55), speed ratios (C56), and reversal frequencies (C58). The weak temperature dependence of CWbias (C59) is notable and well-documented. These observations are consistent with E. coli motor behavior (C57, Yuan and Berg, 2010; Turner et al., 1996, 1999). The experimental design allowing 5-10 min equilibration after temperature changes is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Assuming CheY-P levels are temperature-independent in H. pylori (as in E. coli), the weak temperature dependence of CWbias suggests the dissociation constant for CheY-P/switch interactions decreases with temperature, estimated at ~9 \u03bcM at 37\u00b0C (assuming [CheY-P] ~3 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This result relies on multiple assumptions: (1) CheY-P levels are temperature-independent in H. pylori (extrapolated from E. coli, C67), (2) [CheY-P] ~3 \u03bcM (from E. coli, Cluzel et al., 2000), and (3) the two-state model applies (C65). The calculation methodology follows Turner et al., 1999, but the assumptions are not validated for H. pylori. The estimate (C69) should be considered preliminary without direct CheY-P measurements in H. pylori.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C78",
+      "C79",
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "H. pylori reversal wait-times follow a Gamma distribution. Modeling and simulations show that the basal CWbias (~0.35) favoring the faster pusher mode enhances diffusive spread while retaining chemotaxis capability. Diffusion coefficient is inversely proportional to reversal frequency, suggesting cells spread slower at physiological temperature (37\u00b0C) where reversal frequency is maximal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Gamma distribution of wait-times (C75, Figure 5A, n=515 samples) is well-established experimentally. The diffusion model (Equation 1) appropriately extends prior work (Gro\u00dfmann et al., 2016) to asymmetric swimmers with Gamma-distributed intervals, validated by simulations (Figure 5C). The inference that basal CWbias ~0.35 optimizes diffusion while preserving chemotaxis response capability (C79, C83) is logical but somewhat speculative (C83 explicitly marked as speculation). The inverse relationship between diffusion and reversal frequency (C85, Figure 5E) follows from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "H. pylori motors switch synchronously during reversals, as evidenced by rare tumbling and ~180\u00b0 turn angles. This coordination may result from ultrasensitive flagellar switches responding to CheY-P fluctuations, combined with similar local CheY-P concentrations due to close motor proximity at the pole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental observations of rare tumbles (C102) and ~180\u00b0 turn angles (C103, Figure 1B) strongly support synchronous switching. The mechanistic explanations (C104-C106) are speculative but reasonable, drawing on E. coli ultrasensitivity (Cluzel et al., 2000) and H. pylori motor clustering (C24, Qin et al., 2017). However, direct measurements of switch cooperativity or local CheY-P gradients are lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Speed asymmetry in H. pylori persists even ~200 \u03bcm from surfaces, suggesting it is not merely a surface effect. The asymmetry most likely arises from differences in CW vs. CCW flagellar rotational speeds (as in E. coli), which depend on viscous load and may vary with filament length, viscosity, and flagellar gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of asymmetry far from surfaces (C109, Appendix 6) argues against pure surface effects (C110). The proposed mechanism involving differential CW/CCW motor speeds (C112) is well-supported by comparisons with E. coli and C. crescentus (Table 1, Yuan et al., 2010; Lele et al., 2016). The load-dependence (C113-C114) and gene expression sensitivity (C115) are reasonable speculations based on cited work. Alternative mechanisms (C111) are appropriately considered but deemed less likely.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Because H. pylori retrace their paths upon reversal (unlike E. coli's tumble-and-run), modulation of rotational bias may undermine chemotaxis when cells enter the puller mode. Successful chemotaxis likely requires additional mechanisms to rectify movements or feedback between motors and receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a logical inference (C121) about a potential problem for H. pylori chemotaxis, but it remains speculative (C122). The manuscript does not provide experimental evidence for or against such rectification mechanisms. This represents an important open question rather than a demonstrated result. The speculation is reasonable but requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C20",
+      "C26"
+    ],
+    "result": "H. pylori colonizes over half the human population and causes peptic ulcers and gastric cancer. Flagellar motility and chemotaxis are important for infection, with core networks similar to E. coli, but how the chemotaxis network modulates flagellar functions and key signaling features remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C3, C8-C11, C20, C26) are well-supported by the cited literature and establish the knowledge gap addressed by the study. The prevalence claim (C1) is general knowledge, disease associations (C2) are from Peek and Blaser 2002, and network similarities (C9-C10) are from multiple sources. The knowledge gaps (C11, C20, C26) appropriately motivate the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C39"
+    ],
+    "result": "Traditional methods for measuring CWbias (tethered cells, bead assays) are challenging in H. pylori due to difficulty visualizing flagella and the risk of tethering multiple closely-spaced flagella at the pole, which inhibits motor function. Prior attempts to determine the faster swimming mode had limited sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical challenges (C21, C24-C25) are well-documented in the cited literature (Constantino et al., 2016; Lowenthal et al., 2009a; Qin et al., 2017). The description of traditional methods (C22-C23) is accurate. The limitation of prior work (C39, Constantino et al., 2016) appropriately motivates the new approach. These claims effectively justify the methodological innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The speed asymmetry method is extensible to other run-reversing bacteria with asymmetric swimming. The study used H. pylori PMSS1, phase-contrast microscopy at 10\u00d7 magnification, 45 fps video recording, and particle-tracking analysis with custom MATLAB codes, enabling large sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C124-C130) are clearly documented and appropriate for the experiments. The low magnification approach (C126) enabling large sample sizes (C129) is a key innovation. The extensibility claim (C123) is a reasonable inference about the method's applicability. The experimental conditions (37\u00b0C, C128; controlled CO2, C125) are appropriate for H. pylori physiology.",
+    "result_type": "MINOR"
+  }
+]

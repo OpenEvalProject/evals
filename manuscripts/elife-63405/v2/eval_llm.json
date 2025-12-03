@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11"
+    ],
+    "result": "The study recruited 15 participants (9 male, 6 female, ages 18-32), with 13 participants unaware of the study purpose. Each participant completed approximately 1450 trials split equally among three sensory conditions (vestibular, visual, combined), with all procedures approved by the Institutional Review Board at Baylor College of Medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C11 provide complete methodological details about participant recruitment, blinding, ethical approval, and experimental design. These are standard reporting elements that are directly stated and internally consistent, establishing the basic experimental framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The experimental setup involved participants using a joystick to control linear and angular motion in a virtual environment while seated on a motion platform. The virtual environment consisted of a circular ground plane (37.5 m radius) with transiently appearing triangular texture elements that provided optic flow but could not serve as landmarks. Control dynamics were governed by Markov processes with time constants varying randomly across trials (\u03c4 = 0.6 s for velocity control, \u03c4 = 3 s for acceleration control).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 and C37-C47 comprehensively describe the experimental apparatus, virtual environment, and control dynamics. The descriptions are detailed, internally consistent, and supported by figures. The Markov dynamics framework and time constant manipulation are clearly specified with mathematical precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C48",
+      "C49",
+      "C146",
+      "C147",
+      "C162",
+      "C163"
+    ],
+    "result": "A novel motion-cueing (MC) algorithm was developed that exploits the tilt/translation ambiguity of the vestibular system to render self-motion stimuli while maintaining correspondence between visual and inertial cues. The algorithm achieved an almost perfect match between visual acceleration and platform gravito-inertial acceleration (GIA), representing a methodological departure from classical navigation research paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C48-C49, and C146-C147, C162-C163 describe the MC algorithm and its validation. The near-perfect correspondence between visual and platform GIA (C49) is demonstrated empirically. However, claims C148-C151 acknowledge limitations where high-frequency accelerations briefly exceeded detection thresholds, introducing potential confounds that are discussed but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "High-frequency accelerations at movement onset generated tilts that briefly exceeded the tilt-detection threshold of the semicircular canals (above 1 deg/s, compared to the conservative 8 cm/s\u00b2 motion detection threshold). While the duration was small, the authors cannot exclude the possibility that perceived tilt affected vestibular input interpretation, though overshooting predicted by one hypothesis was not observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C151 identify a potential confound in the MC algorithm where suprathreshold tilt stimulation occurred. The authors acknowledge this limitation (C149) and rule out one alternative explanation (C150), but cannot definitively determine whether this affected results. This represents an unresolved methodological concern that could impact interpretation of vestibular condition findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C32",
+      "C33"
+    ],
+    "result": "Participants exhibited substantial undershooting in the vestibular condition (mean radial gain: 0.76 \u00b1 0.25, angular gain: 0.79 \u00b1 0.22) compared to relatively unbiased performance in visual (radial: 0.88 \u00b1 0.23, angular: 0.98 \u00b1 0.14) and combined conditions (radial: 0.85 \u00b1 0.22, angular: 0.95 \u00b1 0.12). The undershooting in the vestibular condition was traced to shorter duration of joystick control inputs. No significant sex differences were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 and C32-C33 present the primary behavioral findings with quantitative data and statistical support. The response gains are well-characterized across conditions with appropriate measures of variability. The lack of sex differences (C56) is explicitly tested and reported, strengthening the generalizability of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C34"
+    ],
+    "result": "Control dynamics substantially influenced steering responses, with smaller time constants (velocity control) associated with smaller response gains. This relationship was most pronounced in the vestibular condition where larger time constants (acceleration control) resulted in better performance. Significant correlations between residual errors and time constants were found across trials (vestibular radial: r = 0.52 \u00b1 0.02, visual: 0.36 \u00b1 0.03, combined: 0.37 \u00b1 0.03), indicating participants did not fully adapt their steering to underlying dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 and C34 demonstrate the effect of control dynamics on performance through multiple complementary analyses. The correlations are statistically significant and consistently show stronger effects in the vestibular condition. The interpretation that participants failed to fully adapt (C63) is well-supported by the data showing systematic relationships between time constants and residual errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Partial correlation analysis revealed that the time constant contributed substantially to response gain by modulating radial and angular distance dependence, with significantly greater contribution in the vestibular condition (p < 10\u207b\u2074 for radial comparisons). Three independent analyses converged to show that control dynamics substantially influenced steering response gain, exposing participants' failure to adapt, with adaptation lowest in the vestibular condition and greater compensation when visual information was available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 synthesize findings from multiple analytical approaches (stratified gains, residual error correlations, partial correlations) that converge on the same conclusion. The statistical significance is strong (p < 10\u207b\u2074), and the pattern is consistent across analyses. The interpretation of failed adaptation is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Null-case simulations showed that true response gains in the vestibular condition were much closer to the no-adaptation case compared to visual/combined conditions, particularly for the radial component. Analysis of braking behavior revealed that while participants braked more for higher time constants in all conditions, this effect was weaker in the vestibular condition (r = 0.20 \u00b1 0.03) compared to visual (r = 0.62 \u00b1 0.04) and combined (r = 0.57 \u00b1 0.04) conditions, indicating minimal influence of dynamics on vestibular behavior but greater flexibility when optic flow was available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 provide converging evidence from simulation-based null models and behavioral analysis of braking. The null-case comparison (C68-C69) offers a principled baseline for evaluating adaptation, while the braking analysis (C70-C73) provides mechanistic insight into how control adjustments differ across conditions. All correlations are statistically significant (p \u2264 10\u207b\u2075).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C35",
+      "C109",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Visual and vestibular steering cues allowed comparable accuracies only when participants controlled their acceleration, suggesting that vestibular signals alone fail to support accurate path integration in the absence of sustained acceleration. Navigation is driven primarily by visual cues under velocity control conditions, with the dominance of vision suggesting much higher reliability of visual cues compared to vestibular cues generated by the motion platform. This interpretation is supported by the vestibular system's sensitivity to acceleration and higher-frequency motion, with less biased vestibular performance observed under acceleration control where accelerations are prolonged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C35, C109, and C118-C122 present the study's primary conclusion about sensory modality effects. The interpretation is well-supported by the behavioral data showing condition-dependent performance differences and is consistent with established knowledge about vestibular physiology (C120, citing Karmali et al., 2014). However, the conclusion is qualified by the motion platform limitations and potential confounds from suprathreshold tilt (C148-C151).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "While accumulating sensory noise over extended time (~10 s) leads to uncertainty causing undershooting, and differences in navigation performance across sensory modalities can be attributed to greater measurement noise in vestibular signals, neither instantaneous nor accumulated uncertainty differences can fully account for the influence of control dynamics (time constant). Simulations suggest that weak dependencies of travel duration and average velocity on time constant are consequences rather than causes of maladaptation to dynamics, with stronger dependence in the vestibular condition agreeing with simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 systematically rule out alternative explanations based on uncertainty accumulation. The authors cite their own prior work (C74) and recent findings (C76), conduct simulations to test alternative hypotheses (C80-C81), and show that velocity profile differences predict effects opposite to observations (C82). This thorough elimination of alternatives strengthens the main hypothesis about dynamics misestimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The data are well explained by strong prior expectations about motion dynamics that cause a bias in estimating the time constant. A Bayesian observer model showed that correlations between residual error and time constant were significantly smaller when computed using subjective (believed) rather than real stopping locations, with subjective residual errors completely uncorrelated with time constant. This suggests the Bayesian model accurately captures participants' beliefs and that the apparent influence of control dynamics on behavioral performance was entirely due to participants misestimating the time constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 present the core modeling result explaining the dynamics effect. The Bayesian model successfully eliminates correlations between subjective residual errors and time constants (C89-C90), providing strong evidence that the model captures participants' internal beliefs. The logic is sound: if participants correctly estimated dynamics, their believed stopping locations should be independent of time constant, which is what the model predicts and validates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "In the vestibular condition, all participants consistently misestimated \u03c4, exhibiting substantial regression toward the mean, while this effect was much weaker in the visual condition. The ratio of prior to likelihood standard deviations was significantly lower in the vestibular condition (\u03bb = 0.30 \u00b1 0.09) compared to visual (1.02 \u00b1 0.17) and combined (0.80 \u00b1 0.10) conditions, with the ratio close to one for visual/combined conditions suggesting equal weighting. Participants' estimates in the vestibular condition were plagued by a combination of strong prior and weak likelihood, explaining the stronger regression toward the mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 present the fitted Bayesian model parameters that mechanistically explain the behavioral differences across conditions. The parameter estimates are quantitative with error bars, and the interpretation linking parameter values to behavioral patterns (regression toward mean) is logically sound. The finding that \u03bb \u2248 1 for visual/combined conditions (C97) provides an internal consistency check on the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The performance of static and dynamic prior models was comparable in all conditions for both distance and angle, suggesting a static prior is adequate for explaining participants' behavior. In the dynamic model, the previous-trial prior received significantly more weight in the vestibular condition (0.93 \u00b1 0.03) compared to visual (0.48 \u00b1 0.10) and combined (0.61 \u00b1 0.09) conditions (p = 10\u207b\u2075 for vestibular vs. visual). The comparable goodness of static and dynamic prior models suggests sensory observations were not reliable enough to cause rapid changes in prior expectations during the experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 present model comparison results with appropriate statistical testing. The finding that static and dynamic priors perform comparably (C99) is important for model parsimony, while the dynamic model parameters (C100) provide additional insight into condition differences. The interpretation (C101) appropriately links model performance to the reliability of sensory observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Alternative models failed to explain the data: the fixed \u03c4 model strongly reversed correlations in visual/combined conditions and only performed comparably in the vestibular condition; the carry-over strategy failed to explain away correlations between radial subjective residual errors and time constant (p = 0.006 for visual, p = 0.02 for combined); and the sensory feedback control model predicted much stronger dependence on dynamics than observed. Overall, results suggest optic flow, but not vestibular signals, primarily contributes to inferring latent velocity dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 systematically evaluate and reject alternative models through quantitative comparison. Each alternative model is tested against the data and found wanting, with specific statistical evidence provided (C103-C104). The conclusion (C106) is well-justified by the pattern of model failures, particularly the success of Bayesian models only when visual information is available.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C107",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Performance in all conditions reflected a failure to fully adapt to changes in underlying control dynamics, well explained by bias in dynamics estimation. This demonstrates how an incorrect internal model of control dynamics affects navigation in volatile environments despite continuous sensory feedback. Participants can navigate using different sensory cues, with performance influenced by changing control dynamics in all conditions. Because dynamics varied trial-by-trial, sensory cues were crucial for inferring them. Observed responses are consistent with estimates biased toward the center of the experimental distribution, particularly strong in the vestibular condition where response gain substantially increased with acceleration control. Although dynamics were correlated across trials, participants did not exploit these correlations. This provides evidence for the importance of accurately inferring control dynamics in path integration and spatial navigation, with biased estimation leading to biased performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C107, C110-C114, C125-C127 synthesize the study's main findings and conclusions. These high-level claims are well-supported by the detailed behavioral analyses (response gains, residual errors, braking) and modeling results (Bayesian parameter estimates, model comparisons). The causal interpretation linking dynamics misestimation to biased performance (C127) is justified by the modeling framework that successfully predicts behavioral patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C123",
+      "C124"
+    ],
+    "result": "The paradigm allowed studying multisensory path integration in two dimensions with few constraints through active control of linear and angular motion, made possible by the MC algorithm that renders visual and vestibular cues synchronously or separately. This represents a departure from past studies that may be more limited in generalizing to real-world navigation. Experimental constraints in past navigation studies precluded examining control dynamics influence, though the importance of accurately inferring control dynamics has been studied extensively in limb control and motor adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117, C123-C124 position the current work relative to prior research. The methodological advantages are clearly articulated and justified by comparison to past paradigms (C18-C20). The claim about limited generalizability of past studies (C117) is appropriately qualified ('may be more limited') and supported by the cited methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Results are analogous to motor control findings: adaptation to dynamics occurs without performance feedback, relies on prior experience, and leads to systematic errors when dynamics knowledge is inaccurate. Participants try to exploit information that dynamics contain about self-motion to achieve desired displacement. A Bayesian estimator with static prior sufficiently explained participants' beliefs, with comparable results for a dynamic prior updated at every trial. This could be attributed to the random walk structure of control dynamics, as a static prior is less computationally demanding and potentially more suitable for fast changes. Alternative suboptimal models failed to explain behavior successfully, especially with optic flow available, strongly favoring underlying computations within the context of optimality in the presence of optic flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 connect findings to broader theoretical frameworks in motor control and optimal inference. The analogy to motor control (C128) is well-supported by appropriate citations. The model comparison results (C130, C133-C134) provide strong evidence for optimal computation when visual information is available, though the interpretation is appropriately qualified for the vestibular condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Task performance was substantially worse in the vestibular condition, suggesting vestibular inputs from motion cueing lack reliability to precisely estimate control dynamics on individual trials. Nevertheless, the vestibular system could facilitate inference by integrating trial history to build expectations about statistics. The mean of the prior distribution fit to data was very close to the mean of the true sampled distribution, suggesting participants possibly combine information about dynamics across trials to construct prior beliefs. This is consistent with findings where vestibular cues were used to infer patterns of motion magnitude across trials, though the measurement of dynamics differs between studies. If vestibular cues can support dynamics inference, a common processing mechanism could be shared across sensory modalities. This highlights the importance of incorporating control dynamics estimates in models of self-motion perception and path integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C141 interpret the vestibular condition results and connect them to prior work. The interpretation that vestibular cues support across-trial integration (C136-C137) is supported by the fitted prior parameters matching the sampling distribution. The comparison to Prsa et al. 2015 (C138-C139) appropriately notes both similarities and differences. The speculation about common mechanisms (C140) is appropriately qualified as conditional.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Motion platform restrictions limited the range of velocities tested, allowing only relatively small velocities, and restricted total displacement preventing testing of larger target distances, resulting in long trial durations. Results in visual and combined conditions are comparable to previous studies with larger velocities for similar travel times. However, it is unclear how larger velocities and accelerations would affect performance, especially in the vestibular condition, and whether present conclusions are representative of untested velocity regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145 acknowledge important limitations of the study. The platform constraints (C142-C143) are clearly stated, and the comparison to prior work (C144) provides some validation. The uncertainty about generalization to other velocity regimes (C145) is appropriately acknowledged, representing intellectual honesty about the scope of conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Future work should manipulate vestibular inputs (gain, noise) alone or with visual cues to clarify MC algorithm efficiency and precisely quantify vestibular contributions to path integration. The modeling approach could be expanded into a more normative framework using hierarchical Bayesian models to infer subjective position estimates by marginalizing over possible control dynamics. Interesting questions include whether feedback would eliminate inference bias, and whether jointly introducing sensory conflict and manipulating reliability could better disentangle sensory contributions during navigation. Since visual and vestibular signals differ in sensitivity to motion types, integration outcomes may depend on self-motion stimuli employed. Combined with hierarchical models considering control dynamics, it may be possible to develop an integrated, multi-level model of navigation while dramatically constraining hypothesized brain computations and neurophysiological correlates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C159 outline reasonable and well-motivated future directions based on the current findings and limitations. The suggestions are specific and actionable, addressing both methodological concerns (C152) and theoretical extensions (C154, C159). The acknowledgment of inconsistencies in prior cue combination literature (C157) appropriately motivates the suggested manipulations (C156).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Path integration is a sensorimotor computation for inferring latent dynamical states by integrating self-motion cues. Past tasks often involved passive motion along predetermined 1D trajectories, with responses reduced to single end-of-trial decisions, and failed to properly disentangle vestibular from motor cues, resulting in inconsistent findings on vestibular contributions. There is a tight link between path integration/spatial navigation and internal models/control dynamics. To accurately estimate self-motion, we rely on both momentary sensory evidence and knowledge of motion dynamics (internal model), which makes sensory consequences of actions predictable, allowing more dexterous steering. While there is extensive motor control research on dynamics and adaptation, studies of perceptual inference of latent dynamics during navigation have been limited. Prior work showed that history of linear and angular displacements affects sensory input processing, and false expectations about self-motion magnitude can drastically affect path integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C29 provide the theoretical and empirical background for the study. These claims are well-supported by appropriate citations and accurately represent the state of the field. The identification of gaps in the literature (C21, C26) is justified by the cited inconsistencies and limitations in prior work. The theoretical framework linking internal models to path integration (C22-C24) is established knowledge appropriately applied to the current context.",
+    "result_type": "MINOR"
+  }
+]

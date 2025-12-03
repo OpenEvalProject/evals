@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "A large-sized naive nanobody phage display library (diversity 7.5 x 10^10) was constructed from camelid B cells and screened against SARS-CoV-2 RBD to identify Nanosota-1, which underwent two rounds of affinity maturation to generate variants Nanosota-1A, -1B, and -1C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe the library construction and screening methodology with explicit data on library size and the affinity maturation process. The methods section provides detailed protocols, and Figure 1 illustrates the workflow. The sequential identification of variants with improved binding is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Affinity maturation produced Nanosota-1B with mutations in CDR3 and FR3, then Nanosota-1C with mutations in CDR2 and FR2. Nanosota-1C-Fc was constructed by adding an Fc tag to create a bivalent molecule with increased molecular weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 describe specific mutations identified through affinity maturation and the construction of the Fc-tagged variant. The text explicitly states the mutation locations, though the manuscript does not provide sequence-level validation or show that these specific mutations are responsible for improved binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Crystal structure analysis reveals that Nanosota-1C binds to the center of the SARS-CoV-2 RBM, with 6 of 14 RBM contact residues overlapping with ACE2 binding sites. Structural superposition shows significant clashes between ACE2 and Nanosota-1C, indicating competitive binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by the crystal structure (Table 2 provides refinement statistics) and structural analysis shown in Figure 2. The identification of contact residues and clash analysis are standard structural biology approaches. However, the resolution (3.19 \u00c5) is moderate, which may limit precision in identifying all contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Nanosota-1C can access the SARS-CoV-2 spike protein in both open and closed conformations without steric clashes, unlike ACE2 which can only access the open conformation due to clashes with the closed spike.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are supported by structural modeling using published spike structures (PDB codes provided). Figure 2 supplements show the superposition analyses. The conclusion that Nanosota-1C is superior to ACE2 in accessing different spike conformations is a logical inference from the structural data, though it has not been validated experimentally in the context of intact virions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Surface plasmon resonance measurements show progressive improvement in RBD binding affinity through affinity maturation (Nanosota-1A: 228 nM, -1B: 60.8 nM, -1C: 14.2 nM), with Nanosota-1C-Fc achieving picomolar affinity (15.7 pM), approximately 3000-fold tighter than ACE2 (44.2 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by SPR data in Table 1 and Figure 2 supplement 3. The measurements include kinetic parameters (kon, koff) and were performed in triplicate. The ~3000-fold improvement calculation is accurate based on the reported Kd values. The data demonstrate successful affinity maturation and the advantage of bivalent binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Protein pull-down assays and gel filtration chromatography demonstrate that Nanosota-1C and ACE2 bind competitively and mutually exclusively to the RBD, with Nanosota-1C-Fc showing stronger binding than ACE2. No ternary complex formation was detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by biochemical data in Figure 2 supplements 4A-C. The pull-down assays show dose-dependent competition, and gel filtration shows only binary complexes. These orthogonal approaches provide strong evidence for competitive, mutually exclusive binding. The experiments were performed in triplicate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Nanosota-1C-Fc potently neutralizes SARS-CoV-2 pseudovirus entry (ND50 = 0.27 \u03bcg/ml), showing ~10-fold improvement over monovalent Nanosota-1C and ~160-fold improvement over ACE2. It also neutralizes the D614G variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by pseudovirus neutralization data in Figure 3A and supplement 1. The assays were performed in quadruplicate with appropriate controls. The fold-improvement calculations are accurate. However, the D614G data (supplement 1) shows similar potency to wild-type, not enhanced activity against this variant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Nanosota-1C-Fc demonstrates potent neutralization of live SARS-CoV-2 infection (ND50 = 0.16 \u03bcg/ml), significantly outperforming monovalent Nanosota-1C (ND50 = 3.23 \u03bcg/ml) and ACE2 (ND50 = 980 \u03bcg/ml) in plaque reduction assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by live virus neutralization data in Figure 3B and supplement 2. The PRNT assay is the gold standard for measuring neutralization. The experiments were performed in BSL-3 facilities with appropriate replication. The dramatic improvement over ACE2 (~6000-fold) validates the therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In Syrian hamsters challenged with SARS-CoV-2, Nanosota-1C-Fc administered either 24 hr pre-challenge or 4 hr post-challenge (at 20 or 10 mg/kg) prevented weight loss and bronchioloalveolar hyperplasia, demonstrating both prophylactic and therapeutic efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by hamster challenge data in Figure 4A-B with n=6 per group. Statistical analysis shows significant differences (p<0.05) between treated and control groups. The pathology scoring is semi-quantitative but consistent with prior reports (C60 citation). Power analysis indicates adequate sample size for detecting the observed effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In K18-hACE2 transgenic mice challenged with SARS-CoV-2, Nanosota-1C-Fc treatment reduced lung viral titers by ~1000-fold (pre-challenge) or ~100-fold (post-challenge) and prevented lung pathology at 20 mg/kg, with dose-dependent effects at 10 mg/kg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by mouse challenge data in Figure 4C-D with n=5-7 per group. Viral titer reductions are statistically significant (p<0.01-0.05). Histopathology is qualitatively assessed but consistent with prior reports (C66 citation). The 10 mg/kg post-challenge group showed incomplete protection, indicating dose-response relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Nanosota-1C-Fc was produced in bacteria at 40 mg/L culture yield without optimization and purified to nearly 100% purity using protein A and gel filtration chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by production data in Figure 5A showing gel filtration profile and SDS-PAGE. The yield of 40 mg/L is good for bacterial expression without optimization. Purity assessment by SDS-PAGE and chromatography profile appears valid, though no quantitative purity analysis (e.g., densitometry) is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Nanosota-1C-Fc retained nearly all RBD-binding capacity after one week incubation at -80\u00b0C, 4\u00b0C, 25\u00b0C, or 37\u00b0C, demonstrating exceptional thermostability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by ELISA data in Figure 5B showing minimal loss of binding activity across temperatures. The assay was performed in quadruplicate. However, 'nearly all' is qualitative - the data show ~80-90% retention at 37\u00b0C, which is good but not 'nearly all'. The one-week timepoint is relatively short for assessing long-term stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Nanosota-1C-Fc retained significant RBD-binding capability after 10 days in vivo, while monovalent Nanosota-1C was stable for only several hours, demonstrating the advantage of the Fc-tagged construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by in vivo stability data in Figure 5C and supplement 1A-B. The ELISA-based detection in mouse sera shows clear differences between Fc-tagged and non-tagged versions. However, 'significant' binding at 10 days appears to be ~10% of initial, which may not be therapeutically relevant. Sample size is n=3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Biodistribution studies using 89Zr-labeled Nanosota-1C-Fc showed high levels in blood and SARS-CoV-2 target organs (lung, heart, kidney, liver, spleen) after 3 days, while Nanosota-1C showed poor biodistribution with high renal clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by biodistribution data in Figure 5D and supplement 1C with n=3 per timepoint. The radiolabeling approach is appropriate for quantitative biodistribution. The claim that these organs are SARS-CoV-2 targets (C76) is supported by citation. The contrast with monovalent Nanosota-1C validates the Fc-tag strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Nanobodies are 12-15 kDa antibodies derived from camelid heavy-chain-only antibodies that offer advantages including small size, ability to bind cryptic epitopes, high tissue permeability, ease of production, and thermostability, but are rapidly cleared by kidneys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 describe general nanobody properties supported by multiple citations to established literature (Muyldermans 2013, Steeland 2016, etc.). These are well-established facts in the field. The manuscript appropriately cites primary sources for these background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Nanobodies have been approved for clinical use (blood clotting disorder) and can be administered via inhalation (lung diseases) or ingestion (intestinal diseases). Multiple groups are developing nanobodies against SARS-CoV-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by appropriate citations to clinical approval (Scully 2019) and alternative delivery routes (Van Heeke 2017, Vega 2013). The claim about ongoing SARS-CoV-2 nanobody development (C13) is supported by multiple 2020 citations. These establish the clinical relevance and precedent for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Previous SARS-CoV-2 nanobody studies have not adequately evaluated therapeutic efficacy in vivo, with only two studies testing in animal models and none evaluating thermostability, in vivo stability, or biodistribution, making the current study among the most comprehensive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C79-C81 assess prior work and position the current study. The citations provided (Huo 2020, Hanke 2020, etc.) support that earlier studies lacked comprehensive in vivo characterization. However, 'adequately evaluated' (C14) is subjective. The claim of being 'most comprehensive' (C81) is reasonable given the scope but is self-assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The SARS-CoV-2 spike RBD is a prime therapeutic target that binds ACE2 with higher affinity than SARS-CoV-1 RBD due to structural changes in the RBM, and is more hidden in the spike protein as a possible immune evasion strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 describe established coronavirus biology supported by appropriate citations, including the authors' own prior work (Shang 2020a,b). The structural and functional characterization of SARS-CoV-2 RBD is well-documented. The immune evasion speculation (C20) is appropriately qualified as 'possible'.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C21",
+      "C83"
+    ],
+    "result": "To block SARS-CoV-2 binding to ACE2, a nanobody must bind RBD more tightly than ACE2, which is why ACE2 was selected as a comparison for evaluating antiviral potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C83 present logical reasoning about competitive inhibition. This is a sound mechanistic rationale supported by the competitive binding data (C45-C49). Using ACE2 as a benchmark is appropriate since it represents the natural receptor affinity that must be exceeded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Nanosota-1C-Fc's superior anti-SARS-CoV-2 potency compared to ACE2 is attributed to its small antigen-binding domain and ideal binding site, allowing access to RBD in both open and closed spike conformations, making it an ideal drug candidate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C84-C86 synthesize structural and functional data to explain mechanism of action. The explanation is logical and supported by structural data (C36-C39) and functional data (C50-C57). However, the contribution of bivalency versus conformational access to improved potency is not experimentally separated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Nanosota-1C-Fc (78 kDa) is above the kidney clearance threshold (60 kDa) but half the size of conventional antibodies (150 kDa), contributing to ease of production, thermostability, in vivo stability, and tissue bioavailability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 describe molecular weight considerations with appropriate citation for the kidney clearance threshold (Steeland 2016). The molecular weights are accurate. The inference that this 'ideal size' contributes to favorable properties (C90) is reasonable but not directly tested - the manuscript doesn't compare variants of different sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C78"
+    ],
+    "result": "The Nanosota-1 series bound potently to SARS-CoV-2 RBD, inhibited infection in vitro, and Nanosota-1C-Fc demonstrated prophylactic and therapeutic efficacy in animal models with high production yields, exceptional thermostability, and excellent pharmacokinetic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27, C78 summarize the main findings of the study. These summary claims are supported by the detailed results in other claim groups. This represents an appropriate high-level synthesis of the comprehensive dataset presented in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Based on its 10-day in vivo stability, Nanosota-1C-Fc could theoretically provide days-to-weeks of protection with a single dose, reducing viral spread. Given vaccine success, future development should focus on therapeutic rather than preventive applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 are speculative about clinical applications. While the 10-day stability data (C73) provides some basis, extrapolating to 'days or weeks' of protection in humans (C91) is highly speculative without human PK data. The recommendation to focus on therapeutics (C94) is reasonable strategic advice but not a scientific result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Nanosota-1 could be further developed against SARS-CoV-2 variants through additional affinity maturation, incorporated into cocktail therapies, or administered as an inhaler for respiratory infections or oral drug for intestinal infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 propose future development strategies. These are reasonable suggestions supported by citations for alternative delivery routes (Van Heeke 2017, Vega 2013, Nambulli 2021), but represent speculation about future work rather than demonstrated results. No data on variant binding, cocktail combinations, or alternative delivery routes are presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The global COVID-19 pandemic requires large-scale therapeutic manufacturing. Nanosota-1's high bacterial production yields and stability make it a promising candidate that, if validated in clinical trials, could help minimize COVID-19 mortality and morbidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 discuss translational potential and public health impact. While the production and stability data support scalability (C70-C73), the clinical impact claims (C101) are explicitly conditional on future clinical trial validation. These represent reasonable discussion points but not demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

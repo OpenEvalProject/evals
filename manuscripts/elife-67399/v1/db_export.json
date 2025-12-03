@@ -1,0 +1,2168 @@
+{
+  "submission": {
+    "id": "b5c5302a-d2a5-40c3-86af-fa38a28f903c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:57:39.277742Z",
+    "updated_at": "2025-12-03T05:57:39.277742Z"
+  },
+  "content": [
+    {
+      "id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "submission_id": "b5c5302a-d2a5-40c3-86af-fa38a28f903c",
+      "content_type": "manuscript",
+      "content_text": "# Loss of Tsc1 in cerebellar Purkinje cells induces transcriptional and translation changes in FMRP target transcripts\n\n## Authors\n\n- Jasbir Singh Dalal<sup>1</sup>\n- Kellen Diamond Winden<sup>1</sup> ([ORCID: 0000-0001-5816-3724](https://orcid.org/0000-0001-5816-3724))\n- Catherine Lourdes Salussolia<sup>1</sup> ([ORCID: 0000-0003-0168-3205](https://orcid.org/0000-0003-0168-3205))\n- Maria Sundberg<sup>1</sup> ([ORCID: 0000-0002-6623-4411](https://orcid.org/0000-0002-6623-4411))\n- Achint Singh<sup>1</sup>\n- Truc Thanh Pham<sup>1</sup>\n- Pingzhu Zhou<sup>2</sup>\n- William T Pu<sup>2</sup>\n- Meghan T Miller<sup>4</sup>\n- Mustafa Sahin<sup>1</sup> ([ORCID: 0000-0001-7044-2953](https://orcid.org/0000-0001-7044-2953)) \u2020\n\n### Affiliations\n\n1. Department of Neurology, Rosamund Stone Zander Translational Neuroscience Center, Kirby Neurobiology Center, Boston Children\u2019s Hospital Boston United States\n2. Department of Cardiology, Boston Children\u2019s Hospital Boston United States\n3. Harvard Medical School Boston United States\n4. Roche Pharma Research and Early Development, Neuroscience and Rare Diseases, Roche Innovation Center Basel Basel Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nTuberous sclerosis complex (TSC) is a genetic disorder that is associated with multiple neurological manifestations. Previously, we demonstrated that Tsc1 loss in cerebellar Purkinje cells (PCs) can cause altered social behavior in mice. Here, we performed detailed transcriptional and translational analyses of Tsc1-deficient PCs to understand the molecular alterations in these cells. We found that target transcripts of the Fragile X Mental Retardation Protein (FMRP) are reduced in mutant PCs with evidence of increased degradation. Surprisingly, we observed unchanged ribosomal binding for many of these genes using translating ribosome affinity purification. Finally, we found that multiple FMRP targets, including SHANK2, were reduced, suggesting that compensatory increases in ribosomal binding efficiency may be unable to overcome reduced transcript levels. These data further implicate dysfunction of FMRP and its targets in TSC and suggest that treatments aimed at restoring the function of these pathways may be beneficial.\n\n## Introduction\n\nTuberous sclerosis complex (TSC) is a neurocutaneous disorder caused by germline heterozygous loss-of-function mutations in TSC1 or TSC2. Among the neurological manifestations, approximately 50% of patients with TSC are diagnosed with autism spectrum disorder (ASD) (Jeste et al., 2008; Jeste et al., 2016; Capal et al., 2017). Disrupted development of the cerebellum is among a number of pathogenic processes that have been associated with ASD (Fatemi et al., 2012; Becker and Stoodley, 2013; Rogers et al., 2013), and cerebellar pathology has been identified in patients with TSC (Weber et al., 2000; Eluvathingal et al., 2006; Vaughn et al., 2013; Weisenfeld et al., 2013). We have previously demonstrated that loss of either one or both alleles of Tsc1 in cerebellar Purkinje cells (PCs) results in abnormal social behavior (Tsai et al., 2012; Tsai et al., 2018). Therefore, we evaluated the molecular targets that are dysregulated in TSC1-deficient PCs to understand the mechanism by which loss of TSC1 leads to PC dysfunction and abnormal social behavior.\n\nTSC1 and TSC2 form a protein complex (TSC1/2) that negatively regulates the mechanistic target of rapamycin (mTOR) pathway by inactivating RHEB. Both TSC1 and TSC2 are necessary for a functional TSC1/2 complex (Hoogeveen-Westerveld et al., 2011), and loss of either gene leads to the clinical manifestations of TSC that are indistinguishable from one another. Thus, loss of either TSC1 or TSC2 leads to unchecked activation of mTOR. mTOR is a kinase that regulates several cellular processes, including proliferation, protein synthesis, and autophagy (Lipton and Sahin, 2014; Liu and Sabatini, 2020). The phosphorylation targets of mTOR depend on its surrounding adapter proteins, which define either the mTOR complex 1 (mTORC1) or mTOR complex 2 (mTORC2). mTOR signaling from either complex may affect transcriptional regulation of several genes and pathways, and we previously observed that loss of TSC2 in cortical neurons caused upregulation of the transcription factor ATF3 (Nie et al., 2015). However, mTORC1 also facilitates translation initiation and elongation through phosphorylation of 4EBP1/2 and ribosomal protein S6 (Saxton and Sabatini, 2017). Therefore, loss of TSC1/2 can cause complex changes in protein expression through modulation of transcription and translation in neurons.\n\nIn this study, we sought to characterize the effects of loss of Tsc1 on PCs at both the level of transcription and translation. We performed RNA sequencing of total RNA from sorted PCs using FACS, and we used translating ribosome affinity purification (TRAP) to determine ribosomal binding of transcripts in PCs. By comparing these different levels of RNA regulation, we observed that many transcripts that bind to Fragile X Mental Retardation Protein\u00a0(FMRP) maintain ribosomal binding despite reduced levels of transcripts overall. For one gene, Shank2, we found that the result of these opposing effects was reduced levels at PC synapses. These data highlight a complex interplay between the effects of mTOR activation of the regulation of transcript levels and ribosomal binding and provide further insight into the dysfunction of PCs in TSC.\n\n## Results\n\n### Loss of Tsc1 in PCs leads to downregulation of gene expression\n\nTo assess the effect of loss of Tsc1 on the transcriptome of PCs, we designed an experimental paradigm that allowed us to isolate PCs and measured their gene expression. We utilized our previously characterized animal model where Tsc1 harbors loxP sites flanking exons 17 and 18, which leads to a null allele after Cre-mediated recombination (Kwiatkowski et al., 2002; Meikle et al., 2007). In this model, Cre is driven by the L7 (or PCP2) promoter that leads to expression of Cre specifically within PCs (Tsai et al., 2012). We then crossed these animals with an animal that expresses GFP under the same L7 promoter, leading to expression of GFP specifically within PCs (Tomomura et al., 2001). We performed immunostaining of control (Tsc1+/+ L7GFP) and mutant (Tsc1fl/fl L7Cre;L7GFP) animals. We observed that PCs were specifically labeled with GFP and that loss of Tsc1 led to increased soma size and phosphorylation of S6, consistent with mTORC1 activation (Figure 1a,b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67399/elife-67399-fig1-v1.jpg)\n\n**Figure 1.:** (a) Immunocytochemical characterization of wild-type control L7-GFP+ mouse PCs on P21 mouse cerebellum. Cell nuclei were stained with Hoechst. GFP+ PCs had dim expression of phosphorylated S6 (red). Scale bar 50 \u03bcm. (b) Immunocytochemical characterization of Tsc1fl/fl L7Cre+L7-GFP+ mouse PCs on P21 mouse cerebellum. Cell nuclei were stained with Hoechst. GFP+ PCs were strongly positive for pS6 (red). Scale bar 50 \u03bcm. (c) Heatmap of differentially expressed genes in mutant (Tsc1fl/fl;\u00a0N\u00a0=\u00a04) vs control (Tsc1+/+;\u00a0N\u00a0=\u00a04) PCs (FC > 2 and p-value<0.01; n\u00a0=\u00a0679 genes). Each row of the heatmap represents the scaled expression of one gene, where red corresponds to higher relative expression and blue corresponds to lower relative expression. (d) This volcano plot shows the relationship between fold change, calculated Mutant-Control, and p-value across all genes. A majority of genes in this dataset demonstrate downregulation in the mutant PCs compared to control.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67399/elife-67399-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The gating for isolation of GFP-positive PCs is shown for (a) Tsc1+/+ L7GFP and (b) Tsc1fl/fl L7Cre;L7GFP animals. Cells were identified from debris based on the forward and side scatter (P1). Single cells were identified using FSC-H (P2) and SSC-H/SSC-W (P3). Finally, GFP-positive cells were selected and sorted into separate tubes (gate:\u00a0POS).\n\nWe then dissociated the cerebellum of control (N\u00a0=\u00a04) and mutant (N\u00a0=\u00a04) animals into single-cell suspensions and performed fluorescence-activated cell sorting (FACS) to specifically isolate GFP-positive PCs. After removal of debris, doublets, and dead cells, we found that GFP-positive PCs comprised approximately 7.7-10.8% of total events (Figure 1\u2014figure supplement 1). We then isolated total RNA from these samples and performed RNA sequencing. Differential expression analysis between control and mutant animals identified 192 differentially expressed genes (FC > 2 and p-value<0.01; Supplementary file 1). Interestingly, most of the differentially expressed genes in this dataset were downregulated (72%) (Figure 1c). Indeed, we found that there was a bias toward downregulation in the overall gene expression, even among genes that did not show a significant change in gene expression (Figure 1d). This effect was more evident in genes with higher expression, and there was a statistically significant negative correlation between fold change and expression (r\u00a0= \u20130.14, p<2.2e-16, Pearson correlation). These data demonstrate that loss of Tsc1 results in a bias toward widespread transcriptional downregulation.\n\n### Increased degradation of downregulated transcripts in Tsc1fl/fl PCs\n\nWe hypothesized that the bias toward reduced levels of a majority of transcripts may reflect a change in RNA stability caused by loss of Tsc1. Therefore, we asked whether there was a systematic alteration in the coverage of transcripts from the RNA sequencing data to understand whether RNA degradation pathways might be altered in mutant PCs. We used the aligned RNA sequencing data to calculate the coverage of each nucleotide across each transcript, and we focused on transcripts that showed an average coverage of at least one read per nucleotide. We then divided each transcript into 100 equally sized intervals, and we calculated the fraction of reads within each interval compared to the total number of reads across the transcript. When we compared the median coverage across all transcripts between mutant and control PCs, we observed that mutant PCs showed reduced coverage at the 3\u2019 end of the transcript compared to control PCs (Figure 2a). These data show that there is a bias toward reduced coverage in the 3\u2019 region of transcripts in mutant PCs, suggesting that 3\u2019\u2013>5\u2019 RNA degradation pathways may be increased in mutant PCs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67399/elife-67399-fig2-v1.jpg)\n\n**Figure 2.:** (a) This plot shows the median coverage of reads across all downregulated transcripts. Each transcript was divided into 100 equally sized intervals and coverage was calculated across each of these intervals. The error bars show the SEM between five animals of each genotype, where mutant PCs are shown in red and control PCs are shown in blue. There is a bias for fewer reads across the 3\u2019 regions of transcripts in mutant PCs. (b) This bar plot shows the read coverage across different segments of each transcript for downregulated (blue) and upregulated (red) transcripts. Read coverage was calculated separately for the 5\u2019 UTR, coding sequence, and 3\u2019 UTR, and the error bars represent SEM. The 3\u2019 UTR of downregulated genes in mutant PCs demonstrate significantly reduced coverage compared to the 5\u2019 UTR and coding sequence (*p<0.001, ANOVA with Tukey\u2019s\u00a0post\u00a0hoc test). (c) This bar plot shows the enrichment of functional gene ontology categories among the downregulated transcripts with enhanced reduction in the 3\u2019 UTR. Several synapse-related categories are among the most enriched categories.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67399/elife-67399-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Barplot of observed/expected ratios for transcripts with reduced 3\u2019UTR expression in the following sets of genes associated with neurological disorders: (1) ASD \u2013 genes from SFARI (https://gene.sfari.org/) with a score of 1, (2) intellectual disability (ID) from Parikshak et al., 2013, and (3) schizophrenia (SCZ) from Wang et al., 2018. p-values were calculated using a hypergeometric probability. (b) ECDF plot of transcript length of transcripts with reduced 3\u2019UTR expression (red), a random set of transcripts with similar expression distribution (n\u00a0=\u00a02934) to those with reduced 3\u2019UTR expression (blue), and all transcripts (black). Genes with reduced 3\u2019UTR expression were significantly longer than similarly expressed genes (p=8.6e-5; Mann\u2013Whitney U-test) and all detected transcripts (p<2.2e-16; Mann\u2013Whitney U-test).\n\nTo further understand the dependence between overall transcript expression and coverage across the transcript, we identified all significantly up- and downregulated transcripts and analyzed the difference in coverage of these genes between mutant and control across the 5\u2019 UTR, the coding sequence, and the 3\u2019 UTR to determine whether changes in one of these regions was responsible for driving the change in expression of the transcript. The 3\u2019 UTR showed significantly reduced coverage in the mutant compared to the control PCs among the downregulated genes (Figure 2b). However, there was no significant difference between the regions of the upregulated genes. These data suggest that there may be distinct mechanisms driving up- and downregulation of genes within TSC1-deficient PCs.\n\nWe then searched through the downregulated transcripts for those that showed greater changes in the 3\u2019 UTR than the overall transcript expression, identifying 978 transcripts (Supplementary file 2). We reasoned that this may be a core group of transcripts that are strongly affected by increased RNA degradation in mutant PCs. To understand what functions are associated with this group, we performed gene ontology analysis and observed that these transcripts were strongly enriched in categories such as synapse, protein transport, and cytoskeletal binding (Figure 2c). In a prior study, we had observed that TSC2-deficient PCs that were derived from human-induced pluripotent stem cells showed downregulation of FMRP targets (Sundberg et al., 2018). Therefore, we examined this group of downregulated transcripts and found a highly significant enrichment of FMRP target genes (p=2.59e-55)\u00a0(Darnell et al., 2011). Given that FMRP has been associated with longer genes (Darnell et al., 2011; Ouwenga and Dougherty, 2015), we examined the length of this group of transcripts. We observed that transcripts with reduced 3\u2019 UTR were significantly longer than a random set of transcripts with a similar distribution of expression (p=8.6e-5; Mann\u2013Whitney U-test; Figure 2\u2014figure supplement 1). We then examined this set of transcripts to determine whether they might be enriched in genes associated with neurological and psychiatric disorders, including ASD, intellectual disability, and schizophrenia. Interestingly, we only observed a significant enrichment in ASD risk genes (p=0.0048; hypergeometric probability), but not in the other disorders (Figure 2\u2014figure supplement 1). Taken together, these data demonstrate that downregulated genes with alterations in the 3\u2019 UTR are FMRP targets with increased transcript length and are associated with synaptic functions and ASD susceptibility genes. Therefore, perturbation of RNA decay pathways in mutant PCs may substantially affect PC physiology.\n\n### TRAP of Tsc1fl/fl PCs does not reflect decreased total transcript levels\n\nmTOR also exerts strong effects at the level of translation, and therefore, we decided to evaluate ribosomal binding of transcripts within PCs to determine whether changes in translation mechanisms could compensate for or exacerbate the alterations that we had observed in the transcriptome. The TRAP paradigm utilizes a labeled ribosomal subunit (RPL10A-EGFP) that can be expressed in a subset of cells to specifically profile ribosomal binding of transcripts (Heiman et al., 2014). For these studies, we used animals that have a floxed-STOP RPL10A-EGFP in the constitutively active Rosa26 locus, which leads to EGFP-labeled ribosomes after Cre-mediated recombination (Figure 3a). We crossed these animals to the Tsc1/L7Cre animals described above. We then performed immunostaining of these animals, and we found that GFP was expressed specifically within calbindin-positive neurons, which is a known marker of PCs (Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67399/elife-67399-fig3-v1.jpg)\n\n**Figure 3.:** (a) Schematic of TRAP protocol for identifying ribosomally\u00a0bound transcripts specifically within PCs. (b) Anti-GFP immunofluorescence of in Rosa26fsTRAP L7Cre animals shows labeling of the PCs of the cerebellum. Sagittal sections from P56 Rosa-Trap animals expressing Cre under Pcp2 promoter (L7Cre) were stained with GFP (green), calbindin (red), and DAPI (blue). Scale bars, 10 \u00b5m. (c) Heatmap of TRAP levels of genes that were previously identified to be downregulated at the transcript level. Each row of the heatmap represents the scaled expression of one transcript, where red corresponds to higher relative expression and blue corresponds to lower relative expression. (d) This histogram shows the fold changes of the TRAP values for the previously identified downregulated transcripts between mutant and control PCs. Despite being downregulated at the total mRNA level, these transcripts generally show maintained ribosomal binding.\n\nWe performed RNA sequencing on TRAP samples from mutant (N\u00a0=\u00a03) and control PCs (N\u00a0=\u00a03). We then focused on genes that showed significant changes in ribosomal binding between mutant and control PCs. This analysis identified 165 differentially bound genes (FC > 2 and p-value<0.01;\u00a0Supplementary file 3). Interestingly, nearly equal numbers of genes showed increased and decreased ribosomal binding compared to control (Figure 3c). Consistent with these data, we found that there was no overall bias toward downregulation of ribosome bound mRNAs (Figure 3d), in contrast to the total RNA data obtained from sorted PCs.\n\n### Translation efficiency is increased in Tsc1fl/fl PCs\n\nmTOR is an important regulator of multiple aspects of translation, including initiation, elongation, and ribogenesis. Therefore, we examined ribosomal loading by calculating the translation efficiency (TE) for each gene, which is the difference between the ribosomal bound level of a gene and its total abundance in the cell (Thoreen et al., 2012). We then calculated the change in TE (\u0394TE) between mutant and control animals for each gene. To estimate the variability of TE and determine whether changes in TE were statistically significant, we calculated \u0394TE on subsets of the data and calculating the Z-score of each distribution. We found 1808 genes that showed a \u0394TE Z-score greater than 4, which corresponded to an uncorrected p-value<3.2e-5 (Supplementary file 4). A majority of these genes (1131) showed an increase in \u0394TE in mutant PCs compared to control (Figure 4a). These data demonstrate that activation of mTOR through loss of TSC in PCs leads to increased TE, consistent with known roles of the mTOR pathway in facilitating protein synthesis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/67399/elife-67399-fig4-v1.jpg)\n\n**Figure 4.:** (a) This histogram shows the \u0394TE between mutant and control PCs, and the vertical red line in the middle identifies the point where \u0394TE\u00a0=\u00a00. A majority of the genes are situated to the right of the red line demonstrating increased \u0394TE in mutant PCs. (b) These empiric cumulative distribution function (ECDF) plots show the distribution for all genes (black), known TOP genes from Thoreen et al. (red), and predicted TOP genes from Yamashita et al. (blue). There is a slight shift towards higher \u0394TE for Yamashita et al. predicted TOP genes compared to all genes (p=0.004, T-test). (c) ECDF plot of fold changes for the total RNA and TRAP data for the predicted TOP genes from Yamashita et al., demonstrating that these genes have a slightly higher ribosomal binding in CC PCs without a change in the total RNA levels. (d) ECDF plot of the 5\u2019 UTR length for all genes (black) and genes with significantly increased \u0394TE (red). There is no difference between these two groups of genes (p>0.05, Mann\u2013Whitney U-test). (e) Venn diagram showing the highly significant overlap between genes with significantly increased \u0394TE and downregulated transcripts with reduced coverage in the 3\u2019 UTR. (f) ECDF plot of fold changes for the total RNA and TRAP data for downregulated transcripts with reduced 3\u2019 UTR coverage. These data show that the increased \u0394TE of these genes is due to reduced total RNA levels with maintained ribosomal binding levels.\n\nKnown downstream targets of mTOR impact several aspects of protein synthesis in general, but studies have also found that mTOR can influence translation of specific transcripts. One specific motif that has been shown to increase translation in an mTOR related manner is the 5\u2019 terminal oligopyrimidine (5\u2019 TOP) motif, which is a pyrimidine rich motif near the transcription start site that is thought to facilitate initiation (Thoreen et al., 2012). In addition, reduction of FMRP has also been shown to potentiate ribosomal binding of TOP genes (Das Sharma et al., 2019). Therefore, we searched for 5\u2019 TOP motifs in the group of genes in mutant PCs that show increased TE. Although known TOP genes from one study (Thoreen et al., 2012) did not demonstrate a significant increase in TE, we found that all genes with a predicted TOP motif (Yamashita et al., 2008) displayed a significantly greater \u0394TE compared to all other genes (p=0.004, T-test; Figure 4b). Consistent with this increase in TE, we found that these predicted TOP genes showed an overall positive fold change in ribosomal binding without a clear shift in total RNA abundance (Figure 4c). Other studies have found that length and/or complexity in the 5\u2019 UTR region was an important feature of mTOR-regulated genes (Gandin et al., 2016). However, we found that there was no increase in the length of the 5\u2019 UTR of transcripts with increased \u0394TE (Figure 4d). We then examined the downregulated genes with exaggerated reduction of the 3\u2019 UTR identified above, and we found a remarkably significant overlap between these genes and those with significantly increased \u0394TE (Figure 4e; p=2.08e-133; Hypergeometric probability). Interestingly, as opposed to the predicted TOP genes, these genes display downregulation at the total transcript level and unchanged ribosomal binding, leading to their increased TE (Figure 4f). These data indicate that genes with enhanced downregulation of the 3\u2019 UTR, which are enriched in FMRP targets, show increased relative ribosomal binding with loss of TSC1.\n\n### Increased TE of FMRP targets in Tsc1fl/fl PCs\n\nGiven our observations that FMRP targets tended to be downregulated at the transcript level but maintain their ribosomal binding, we decided to more carefully examine FMRP targets in TSC1-deficient PCs. We identified a group of 150 FMRP target genes based on known FMRP binding in prior studies (Darnell et al., 2011) and decreased expression in Tsc1fl/fl L7Cre PCs, and we re-assessed their transcript level expression and RNA binding using amplicon-based quantification. We created amplicon-based libraries from total RNA from FACS PCs and TRAP RNA, so that these data would be directly comparable without technical confounding due to different library preparation methods. In addition, the use of amplicons allowed interrogation of the same region of the transcript in both total and TRAP RNA. Consistent with our prior data, we confirmed that most of the FMRP targets were downregulated in mutant PCs compared to control PCs (Figure 5a). However, these same genes showed no significant change in overall distribution in their ribosomal binding (Figure 5b). Therefore, these data confirm our observation of differential effects of loss of Tsc1 on FMRP targets at the transcript and ribosome-bound levels.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/67399/elife-67399-fig5-v1.jpg)\n\n**Figure 5.:** (a) This cumulative distribution function shows the distribution of total mRNA expression from sorted PCs for 150 FMRP target genes, previously found to be downregulated in mutant PCs, between mutant (red) and control (blue) PCs. (b) This cumulative distribution function shows the TRAP values for the same 150 genes between mutant (red) and control (blue) PCs. Despite the obvious downregulation of many genes at the total mRNA level, the ribosomal loading of these transcripts appears mostly unchanged.\n\n### Changes in protein expression in Tsc1fl/fl PCs\n\nPreviously, we had observed an increase in translation efficiency in predicted 5\u2019 TOP genes, and therefore, we decided to investigate the protein levels of these genes. We examined the expression of predicted 5\u2019 TOP genes with increased TE in the cerebellum using the Allen Brain Atlas, and we identified two potential candidates, Cdk16 and Rpl28, that appeared to be enriched in PCs. We then assayed the expression of these genes using immunoblotting on control and mutant whole cerebellum. Interestingly, we did not observe any significant changes in their expression at the protein level (Figure 6\u2014figure supplement 1).\n\nWe then investigated the resulting protein levels for several FMRP target genes because of the discrepant findings between gene expression and ribosomal binding. We carefully examined known FMRP targets with reduced mRNA expression and unchanged ribosomal binding for specific expression within PCs using the Allen Brain Atlas. We identified three targets to test for changes at the protein level, including Dlg3, Kif3c, and Shank2. We performed immunoblots of Tsc1fl/fl and Tsc1fl/fl L7Cre cerebellum at P42\u2013P45 (N\u00a0=\u00a06 animals of each genotype), and we observed a significant reduction of DLG3 and KIF3C at the protein level in mutant cerebellum (Figure 6a,b). We then performed immunohistochemistry of SHANK2 in the cerebellum of Tsc1+/+ and Tsc1fl/fl L7Cre;L7GFP animals (N\u00a0=\u00a04 animals of each genotype). We used confocal microscopy to identify GFP-positive PC dendrites in the molecular layer, and measured SHANK2+ punctae within these processes. Interestingly, we observed a significant decrease in the intensity of SHANK2+ punctae in mutant PCs compared to control (Figure 6c\u2013e). These data suggest that the increase ribosomal binding efficiency of these transcripts in Tsc1-deficient PCs is unable to overcome their overall down regulation, resulting in a decreased level of the protein.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/67399/elife-67399-fig6-v1.jpg)\n\n**Figure 6.:** Protein expression of (a) DLG3 and (b) KIF3C assessed by western blot of whole cerebellum lysates from control (Tsc1fl/fl) and mutant (Tsc1fl/fl L7Cre) animals (N\u00a0=\u00a06). Bands were quantified using densitometry, and p-values calculated using a paired T-test, where littermates were paired together. Confocal images of staining of SHANK2 in (c) Tsc1+/+ L7Cre/L7GFP and (d) Tsc1fl/fl L7Cre/L7GFP animals. SHANK2 is present in punctae along PC dendrites in the molecular layer, and GFP-labeled PCs are shown in green. Scale bars = 20 \u03bcm. (e) Bar plot showing the quantification of the intensity of SHANK2+ punctae in control and mutant animals. Each data point represents the mean value across 10 images from three\u2013four\u00a0independent slices from the same animal. N\u00a0=\u00a04 animals. p=0.047 (T-test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67399/elife-67399-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Western blot of GAPDH and total protein showing that GAPDH is unchanged between mutant and control cerebellum, verifying its use as a loading control. (b) Western blot of \u03b2-actin in mutant and control cerebellum showing no significant change between genotypes. (c) Western blot of the predicted 5\u2019 TOP gene, Cdk16, showing no significant change between mutant and control cerebellum. (d) Western blot of the predicted 5\u2019 TOP gene, Rpl28, showing no significant change between mutant and control cerebellum. Each protein was assessed in six animals per genotype, and p-values were calculated using a paired T-test by pairing littermates together.\n\n## Discussion\n\nThe cerebellum and PCs, in particular, have been implicated in the development of abnormal social behavior in TSC (Tsai et al., 2012; Tsai et al., 2018). Therefore, we have endeavored to understand the molecular abnormalities present in TSC1-deficient PCs. We observed that the majority of differentially expressed genes between mutant and control PCs were downregulated. We also found that these downregulated genes in mutant PCs were enriched in FMRP targets and showed reduced coverage at the 3\u2019 region, suggestive of increased RNA decay. In contrast, we did not observe a reduced ribosomal binding of these genes, implicating processes that facilitate more efficient loading of these transcripts onto ribosomes. Finally, we observed that several FMRP targets displayed reduced protein expression, implying that compensatory increases in ribosomal binding efficiency may be insufficient to overcome overall reduced transcript levels. These data suggest that dysregulation of FMRP target genes at the transcript level, rather than the ribosomal binding level, may drive molecular dysregulation in Tsc1 mutant PCs and underlie the development of synaptic abnormalities in these neurons.\n\nWe observed that there was a notable bias toward down-regulation of genes in mutant PCs, and we found that this was driven by exaggerated reduction of the coverage of the 3\u2019 region, especially the 3\u2019 UTR. Prior studies have reported that mTOR can affect RNA stability, but most of these studies showed that treatment with rapamycin reduced stability of certain transcripts (Banholzer et al., 1997; Hashemolhosseini et al., 1998; Albig and Decker, 2001). Rapamycin reduced the stability of specific transcripts in yeast through increasing the rate of deadenylation, although the mediator of this effect was not identified (Albig and Decker, 2001). Inhibition of mTORC1 with rapamycin was also shown to facilitate RNA degradation through the nonsense mediated decay pathway, but this effect was shown to be associated with alterations in translation machinery associated with the 5\u2019 cap (Martinez-Nunez et al., 2017). It is likely that our observations contradict these earlier studies because none of the prior studies assayed hyperactive mTORC1 or were performed in neurons, and the downstream machinery may be substantially different in mutant PCs. Canonically, RNA degradation is preceded by deadenylation of the transcript, rendering the molecule susceptible to exonuclease activity from either the 5\u2019 or 3\u2019 end (\u0141abno et al., 2016). We hypothesize that 3\u2019\u21925\u2019 decay activity is increased in mutant PCs because of the reduction in coverage in the 3\u2019 region of transcripts. The best characterized 3\u2019\u21925\u2019 exonucleases are Dis3, Dis3L, and Dis3L2, which differ in their association with the RNA exosome complex (\u0141abno et al., 2016; Dos Santos et al., 2018). Interestingly, 20 of 24 genes associated with the exosome show modest but non-significant increases in expression in Tsc1fl/fl PCs in this dataset (Supplementary file 5). DIS3 was also found to be upregulated due to ER stress in Caenorhabditis elegans (Sakaki et al., 2012), and we have found that TSC2-deficient neurons show evidence of ER stress (Di Nardo et al., 2009). In addition, the RNA exosome complex is involved in ribosomal RNA maturation (Koby\u0142ecki et al., 2018; Pirouz et al., 2019), and mTORC1 is known to increase ribosomal biogenesis (Gentilella et al., 2015). Therefore, it is possible that mTORC1 may induce the RNA exosome by stimulating the production of ribosomes, and the RNA decay phenomenon that we observe could be a side effect of this process.\n\nAnother striking finding of this study is the maintenance of ribosomal binding of transcripts despite down-regulation of the gene at the transcript level. These data suggest that the primary abnormality in mutant PCs may be at the transcript level, while the increase in relative ribosomal binding is a compensatory effect. Interestingly, the genes that show this pattern of reduced transcript level with maintained ribosomal binding are highly enriched in targets of FMRP. We also observed a similar decreased expression of FMRP target transcripts in iPSC-derived PCs with mutations in TSC2 (Sundberg et al., 2018), corroborating the findings of this study. FMRP is an RNA binding protein that is lost in Fragile X Syndrome, which is characterized by high rates of intellectual disability and ASD (Niu et al., 2017). FMRP is known to be a repressor of translation (Feng et al., 1997; Brown et al., 2001), but its effects on the ribosomal binding of specific transcripts are less clear (Thomson et al., 2017). In addition, FMRP can bind to ribosomes and reduce their ability to synthesize new proteins, suggesting a more general effect on translation (Chen et al., 2014). Therefore, it is possible that dysfunction in FMRP could facilitate binding of specific transcripts to ribosome despite their reduced abundance at the total transcript level. FMRP has also been shown to play a role in mRNA stability (Zalfa et al., 2007; De Rubeis and Bagni, 2010), which suggests that it could also contribute to the increased RNA degradation and downregulation of its target transcripts. A recent study demonstrated that loss of FMRP can preferentially destabilize transcripts in neurons based on their codon optimality (Shu et al., 2020). In contrast, another recent study that examined hippocampal slices from Tsc2+/\u2212 mice reported that the expression of FMRP targets was increased and their ribosomal binding was decreased (Hien et al., 2020). It is possible, and in fact likely, that there are cell type differences in the functions of TSC1/TSC2 and FMRP in the brain leading to the discrepancy between this prior study and our data. Our study further reinforces the connection between mTOR and FMRP and highlights the role of mTOR hyperactivation in altering both the total abundance and ribosomal binding of FMRP target genes.\n\nGiven the varied effects on gene expression and ribosomal binding, there are likely to be pleiotropic effects on Tsc1-deficient PCs. We did observe a subtle but significant increase in predicted 5\u2019 TOP genes, which is consistent with studies that have demonstrated that both mTOR activation and loss of FMRP can facilitate ribosomal binding of these mRNAs (Thoreen et al., 2012; Das Sharma et al., 2019). However, we were not able to observe these changes at the protein level. Given that these genes are involved in general cellular processes, it is possible that other cell types in the cerebellum contribute to their expression, diluting any change in expression in PCs. Therefore, further studies using more sensitive and specific techniques will be required to determine the consequences of increased ribosomal binding of 5\u2019 TOP genes in Tsc1-deficient PCs. In contrast, we observe reduced protein levels of several FMRP targets. Kif3c is an anterograde motor that is implicated in both axonal and dendritic trafficking (Davidovic et al., 2007; Gumy et al., 2013). In addition, Dlg3, which encodes for post-synaptic density protein 93, and Shank2 are scaffolding proteins present at the post-synaptic density and highly expressed in PCs (McGee et al., 2001; Eltokhi et al., 2018). Dlg3 is implicated in X-linked intellectual disability, while Shank2 is a known risk gene for ASD (Tarpey et al., 2004; Satterstrom et al., 2020); therefore, dysregulation of these genes may contribute to neurological and behavioral abnormalities. Deletion of Shank2 in PCs has been shown to alter levels of glutamate receptors in dendritic spines and lead to abnormal social behavior in these animals (Peter et al., 2016). Another study that deleted Shank2 in PCs found alterations in excitation onto PCs but did not observe abnormal social behavior (Ha et al., 2016). These data suggest that proper regulation of Shank2 in PCs is critical for normal function of cerebellar circuits. We found that the apparently compensated ribosomal binding each of these FMRP targets is insufficient to overcome its downregulation at the transcript level, leading to its downregulation at the protein level. Therefore, these data suggest that reduced expression of these synaptic proteins may contribute to the development of altered cerebellar circuitry and abnormal social behavior.\n\nIn this study, we performed profiling of the total transcriptome and ribosomally\u00a0bound transcripts in PCs with a deletion of Tsc1. We observed changes at the transcript level that suggest alterations in RNA degradation and compensatory changes at the ribosome level. These data indicate the presence of novel mechanisms underlying PC dysfunction in TSC, which may be associated with the development of abnormal social behavior. Further study of these pathways may provide new avenues for therapeutics for ASD in TSC and related neurodevelopmental disorders.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Tsc1fl/fl</td>\n      <td>Jackson Labs</td>\n      <td>(Stock# 005680)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Rosa26fsTRAP</td>\n      <td>Jackson Labs</td>\n      <td>(Stock# 022367)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>L7Cre</td>\n      <td>Jackson Labs</td>\n      <td>(Stock# 010536)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>L7GFP</td>\n      <td>Jackson Labs</td>\n      <td>(Stock# 004690)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (Mouse monoclonal)</td>\n      <td>Memorial Sloan Kettering Centre</td>\n      <td>HtzGFP-19F7 and HtzGFP-19C8</td>\n      <td>50 \u00b5g per IP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-DLG3 (PSD93) (Mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>818302</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-KIF3C (Rabbit polyclonal)</td>\n      <td>Proteintech</td>\n      <td>144333\u20131-AP</td>\n      <td>(1:800)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CDK16 (PCTAIRE) (Rabbit polyclonal)</td>\n      <td>Proteintech</td>\n      <td>10102\u20131-AP</td>\n      <td>(1:750)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rpl28 (Rabbit polyclonal)</td>\n      <td>Proteintech</td>\n      <td>16649\u20131-AP</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Gapdh (Mouse monoclonal)</td>\n      <td>ThermoFisher</td>\n      <td>AM4300</td>\n      <td>(1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-B Actin (Mouse Monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>3700</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (Chicken polyclonal)</td>\n      <td>ThermoFisher</td>\n      <td>A10262</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Shank2 (Rabbit polyclonal)</td>\n      <td>ThermoFisher</td>\n      <td>PA5-78652</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Purified Recombinant Biotinylated Protein L</td>\n      <td>Pierce</td>\n      <td>29997</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Streptavidin MyOne T1 Dynabeads</td>\n      <td>ThermoFisher</td>\n      <td>65601</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cycloheximide</td>\n      <td>Sigma Aldrich</td>\n      <td>01810\u20131G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RNasin</td>\n      <td>Promega</td>\n      <td>N2515</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Superasin</td>\n      <td>ThermoFisher</td>\n      <td>AM2694</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DHPC</td>\n      <td>Avanti Polar Lipids</td>\n      <td>850306</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TRIzol</td>\n      <td>ThermoFisher</td>\n      <td>15596026</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Papain</td>\n      <td>Worthington</td>\n      <td>LS003126</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DNase I</td>\n      <td>Worthington</td>\n      <td>LK003172</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNAeasy Minelute kit</td>\n      <td>Qiagen</td>\n      <td>74204</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R v4.0.2</td>\n      <td>https://cran.r-project.org/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism v9</td>\n      <td>GraphPad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Python v2.7</td>\n      <td>https://www.python.org/</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nAll animal procedures were carried out in accordance with the Guide for the Humane Use and Care of Laboratory Animals, and all procedures in this study were approved by the Animal Care and Use Committee of Boston Children\u2019s Hospital. All animals were kept in ARCH animal house facility under 12 hr light/dark cycle with food and water available ad libitum. Tsc1fl/fl mice possess loxP sites flanking exons 17 and 18 of the Tsc1 gene (stock# 005680) and were obtained from Jackson labs (Kwiatkowski et al., 2002). The Rosa26fsTRAP mouse line (stock# 022367) and the L7Cre mouse line (stock# 010536) were obtained from Jackson labs. The L7GFP line was also obtained from Jackson labs (stock# 004690). The L7GFP mice were on a C57BL/6J background and were bred with Tsc1fl/+ L7Cre animals to generate Tsc1fl/+ L7Cre;L7GFP animals, which were bred together to generate Tsc1fl/fl or Tsc1+/+ L7Cre;L7GFP animals. The Rosa26fsTRAP mice were on a C57BL/6 j background and were bred with Tsc1fl/+ L7Cre animals to generate Tsc1fl/+ L7Cre;Rosa26fsTRAP animals. These animals were bred together to generate either Tsc1fl/fl or Tsc1+/+ L7Cre;Rosa26fsTRAP animals.\n\n### Fluorescence-activated cell sorting\n\nFor isolation of PCs, we used Tsc1+/+ or Tsc1fl/fl L7Cre/L7GFP animals. The cerebellum was microdissected from either P21 or P42 animals and chopped into small pieces before incubation with papain digestion buffer (1\u00d7 HBSS medium containing 40 U/ml Papain [Worthington Biochemical, cat # LS003126], DNase I 100 units/ml [Worthington Biochemical, cat # LK003172], and 30 mM glucose) for 30\u201345 min at 37\u00b0C with 5% CO2. Tissue was dissociated into single cells by trituration with a fire-polished glass pipette. Cell suspensions were washed twice with papain wash buffer (1\u00d7 HBSS supplemented 30 mM glucose, and 10% FBS and 1\u00d7 penicillin/streptomycin antibiotic cocktail). Cells were then resuspended in FACS buffer (1\u00d7 HBSS with 1\u00d7 pen/strep solution and 2% BSA [sigma, cat # A9576]) and filtered through 40 \u00b5M cell strainer (Falcon). Cells were centrifuged 200 \u00d7\u00a0g for 3 min and suspended into FACS\u00a0buffer (1\u00d7 HBSS and 1% BSA). Cells were sorted with FACS-Aria II (BD Bioscience) using 100 \u00b5M nozzle setting. Cells were identified from debris based on the forward and side scatter, and doublets were removed using FSC-H and SSC-W/SSC-H. Cells that were GFP positive and Propidium Iodide (PI) negative were collected into FACS\u00a0buffer, and between 1\u00a0and\u00a02 million cells were collected per animal. Cells\u00a0were washed once with PBS and total RNA isolated using Qiagen mini Plus kit according to manufacturer\u2019s instructions (Qiagen). RNA quality and integrity were assessed by analysis in Bioanalyzer. RNA samples with RIN values >\u00a08 were used for library preparation according to manufacturer\u2019s instructions (SmartSeqv4 RNASeq kit, Clontech) or manual library preparation for Ampliseq analysis (Ion AmpliSeq Lib Kit Plus). From each mouse, an average of 1,500\u20131,000,000 GFP-positive cells were obtained.\n\n### Translating ribosome affinity purification\n\nTo purify ribosome-associated RNAs specifically from Purkinje neurons in the cerebellum from Tsc1fl/fl and Tsc1+/+ animals, we used TRAP methods as previously described (Heiman et al., 2014; Dougherty, 2017). Briefly, 12 \u03bcl of Purified Recombinant Biotinylated Protein L (Pierce, cat #29997, 1 \u03bcg/\u03bcl) was conjugated to 30 \u03bcl of Streptavidin MyOne T1 Dynabeads (Thermo Fischer Scientific, cat # 65601) at room temperature using gentle end-over-end rotation. The\u00a0beads were then\u00a0washed five times with PBS containing 3% BSA (Jackson Immunoresearch, cat #001-000-162). After collecting beads on the magnet, they were washed once with low KCl wash buffer (10 mM HEPES pH\u00a07.4, 5 mM MgCl2, 150 mM KCl, and 1% NP-40) and further incubated with 100 \u03bcg total of mouse anti-GFP antibodies (HtzGFP-19F7 and HtzGFP-19C8, Memorial Sloan Kettering Centre, 50 \u03bcg of each) for 1 hr at room temperature.\n\nTo prepare cerebellar lysates, Tsc1+/+ or Tsc1fl/fl L7Cre+/Rosa26fsTRAP+ animals were decapitated, and the cerebellum from each animal was homogenized in ice-cold homogenization buffer (10 mM HEPES pH 7.4, 5 mM MgCl2, 150 mM KCl, 0.5 mM DTT, 100 \u03bcg/ml cycloheximide, RNasin, Superasin, and 1\u00d7 protease inhibitors, cOmplete EDTA-free from Roche) using 12 strokes of Teflon-glass homogenizers. To clear the nuclei and debris, samples were centrifuged at 2000 \u00d7\u00a0g for 10 mins at 4\u00b0C. Polysomes were prepared by adding NP-40 (1%) and DHPC (30 mM), incubating on ice for 5 min, followed by centrifugation at 20,000 \u00d7\u00a0g for 15 min at 4\u00b0C. For input RNA, a 60 \u03bcl sample of the supernatant was removed, added to 190 \u03bcl of low KCl wash buffer and 750 \u03bcl of Trizol and stored at \u221280\u00b0C for RNA isolation. Remaining supernatant was incubated with GFP-coated Dynabeads overnight at 4\u00b0C with end-over-end rotation. After overnight incubation, anti-GFP beads were captured on the magnet, washed four times with high KCl wash buffer (10 mM HEPES pH 7.4, 5 mM MgCl2, 350 mM KCl, 1% NP-40, 0.5 mM DTT, RnasinRNasin, and 100 \u03bcg/ml cycloheximide), and resuspended in 250 \u03bcl of low KCl wash buffer and 750 \u03bcl of Trizol reagent. RNA was isolated using Trizol reagent protocol. To remove contaminating genomic DNA, DNase I (Qiagen, cat #) was used from Qiagen RNAeasy Minelute kit. RNA quality was assessed by Bioanalyzer analysis using Pico chip. TRAP RNA from each animal was used to make Illumina ready libraries at the Molecular Biology Core facility at the Dana Farber Cancer Institute.\n\n### RNA-Seq\n\nBarcoded and pooled libraries were sequenced on Illumina HiSeq 4000 to generate 75 base paired end reads. Quality of RNA-seq data was assessed initially using FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), and Trimmomatic (http://www.usadellab.org/cms/?page=trimmomatic) was used to remove adapters and low quality bases. Reads were mapped to the mouse genome (Ensembl GRCm38) using STAR. For sorted PCs, the transcriptome was assembled with Cufflinks. For the TRAP data, the transcriptome assembly from the sorted PCs was used. Gene and transcript quantification were performed using Cufflinks. These data were imported into R for further analysis.\n\nDifferential expression from both datasets was calculated using the LIMMA package. Differentially expressed transcripts were also identified using LIMMA using the transcript-specific data from Cufflinks. Thresholds for differential expression were p-value<0.01 and fold change > 2.\n\nExon coverage was determined directly from the mapped SAM files for each sample using custom Python scripts. This was then converted into transcript coverage by concatenating exons into transcripts that were identified by Cufflinks. Transcripts were then broken into 100 evenly spaced intervals and average number of reads across an interval were normalized to the total number of reads across the entire transcript. For up- and downregulated transcripts, the sequences were obtained using the UCSC Table Browser based on coordinates from Cufflinks. Coding and non-coding (5\u2019UTR and 3\u2019UTR) were extracted from these sequences by searching for the longest open reading frame within the sequence. Coverage was then calculated separately for each portion of the transcript (5\u2019UTR, CDS, 3\u2019UTR), and the difference between wild-type and mutant cells was calculated. Gene ontology was performed using DAVID (https://david.ncifcrf.gov/), and non-redundant categories from GO_FAT Cellular Compartment, Biological Process, and Molecular Function were selected. Datasets of disease risk genes used for comparison included (1) ASD genes \u2013 SFARI (https://gene.sfari.org/) genes with a score of 1, (2)\u00a0intellectual disability\u00a0genes (Parikshak et al., 2013), and (3) schizophrenia risk genes (Wang et al., 2018).\n\nTE was calculated as described in Thoreen et al., 2012. Briefly, counts from RNA and TRAP were transformed using log2(counts + 1), and \u0394TE = (TRAP Tsc1fl/fl \u2013 TRAP Tsc1+/+) \u2013 (RNA Tsc1fl/fl \u2013 RNA Tsc1+/+). Variance of the \u0394TE measure was estimated by recalculating \u0394TE 100 times per gene, while leaving one value out for each dataset. This distribution was summarized using a Z-score for each gene.\n\n### Western blotting\n\nTsc1fl/fl or Tsc1fl/fl L7Cre animals (N\u00a0=\u00a06 for each genotype) were sacrificed at P42\u201345, and the cerebellum was dissected. The whole cerebellum was lysed in RIPA buffer with protease inhibitors (Pierce) and homogenized and sonicated. Lysates were clarified by centrifuging at 18,000\u00a0x g for 15 min at 4\u00b0C, and the insoluble pellets were discarded. The supernatant was quantified using a BCA assay. Laemmli buffer was added to the supernatant and boiled at 95\u00b0C for 5 min prior to loading onto 10% polyacrylamide gels, which were transferred onto PVDF membranes. Antibodies for western blots included DLG3 (PSD93) (Biolegend 818302) 1:1000, KIF3C (Proteintech 14333\u20131-AP) 1:800, CDK16 (PCTAIRE) (Proteintech 10102\u20131-AP) 1:750, RPL28 (Proteintech 16649\u20131-AP) 1:1000, GAPDH (Thermo Fisher AM4300) 1:10,000, and \u03b2-actin (Cell Signaling 3700) 1:5000. GAPDH was verified as a stable loading control by comparing it to the REVERT Total Protein stain (Licor) (Figure 6\u2014figure supplement 1), and GAPDH was used for normalization for all other blots due to ease of quantification. Imaging was performed on a Licor fluorescent imager, and quantification was performed using ImageStudio (Licor).\n\n### Immunohistochemistry\n\nTsc1+/+ or Tsc1fl/fl L7Cre/L7GFP (N\u00a0=\u00a04 for each genotype) were perfused at P42 with saline and then 4% PFA. Brains were dissected, post-fixed in 4% PFA for 24 hr, and then placed in 30% sucrose for at least 24 hr. Floating sections (40 \u00b5m) were cut on a cryostat and stained with anti-GFP (Thermo Fisher A10262) and anti-SHANK2 (Thermo Fisher PA5-78652). Images were obtained on a spinning disk confocal microscope with 10 images per animal. Images were quantified using custom ImageJ macros. Briefly, GFP-positive dendrites were identified using a simple threshold, cell bodies were manually excluded, and this image was used as a mask to identify SHANK2-positive punctae. Intensity within each puncta was measured individually and averaged across the field of view.\n\n### Statistical methods\n\nCount data from RNA sequencing and TRAP were imported into R for further analysis. Differential expression from both datasets was calculated using the LIMMA package, and the thresholds for differential expression are indicated in the text. An ANOVA with Tukey\u2019s post hoc test was performed to find differences in coverage between sections of transcripts from up- and downregulated genes. . Other statistical tests were performed in R and are indicated in the text. For IHC and western blot data, the average protein expression was imported into PRISM, and the comparison between wild\u00a0type and mutant was performed using a T-test.\n",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "959e2dd6-d785-42db-8144-bb18fb6c4d2e",
+      "submission_id": "b5c5302a-d2a5-40c3-86af-fa38a28f903c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eunjoon Kim, Institute for Basic Science, Korea Advanced Institute of Science and Technology Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67399.sa1](https://doi.org/10.7554/eLife.67399.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis study reports that deletion of Tsc1 restricted to cerebellar Purkinje cells leads to reduced expression of FMRP target genes. Given the growing importance of mTOR signaling and cerebellar functions in ASD pathophysiology, the present work is an important and timely contribution to the field.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Loss of Tsc1 in cerebellar Purkinje cells induces transcriptional and translation changes in FMRP target transcripts\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Eric Klann (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The authors should examine the protein levels of at least one more FMRP target that has decreased RNA expression, but no change in ribosome-binding in the Tsc1 mutant PCs.\n\n2) They should examine the protein levels of at least two of the 5'TOP mRNAs that have increased translation efficiency. In addition, they should reference previous findings by Das Sharma et al. (Cell Rep. 26: 3313) showing increased ribosome-bound 5'TOP mRNAs in fragile X mice.\n\n3) Additional bioinformatic analysis should be done to determine whether any of the differentially regulated genes in either the RNA-seq or TRAP-seq data sets correspond to the length of the gene.\n\n4) The key goal of the present study is to understand the molecular mechanisms underlying TSC1 deletion-dependent Purkinje cell dysfunctions using unbiased transcriptomic and translation analyses. Although Shank2 is certainly an important target of FRMP and has been shown to regulate key functions of Purkinje cells, it would have been much informative if the authors could have tested additional FMRP targets in their assays. Specifically, they analyze Shank2 protein levels in the cerebellum through IHC experiments. Here, they could have tried additional FMRP targets that are expressed in the cerebellum. In addition, immunoblot experiments could be performed additionally to test protein levels of Shank2 and other FMRP-target proteins, and also some negative (non-FMRP-target) controls.\n\n5) The enrichment of the transcripts for FMRP targets is interesting. However, given that mTOR signaling is associated with various brain disorders, it would be nice if the authors could test enrichments for other gene sets (i.e. those associated with ASD and other brain disorders).\n\nReviewer #1 (Recommendations for the authors):\n\n1. The key goal of the present study is to understand the molecular mechanisms underlying TSC1 deletion-dependent Purkinje cell dysfunctions using unbiased transcriptomic and translation analyses. Although Shank2 is certainly an important target of FRMP and has been shown to regulate key functions of Purkinje cells, it would have been much informative if the authors could have tested additional FMRP targets in their assays. Specifically, they analyze Shank2 protein levels in the cerebellum through IHC experiments. Here, they could have tried additional FMRP targets that are expressed in the cerebellum. In addition, immunoblot experiments could be performed additionally to test protein levels of Shank2 and other FMRP-target proteins, and also some negative (non-FMRP-target) controls.\n\n2. The enrichment of the transcripts for FMRP targets is interesting. However, given that mTOR signaling is associated with various brain disorders, it would be nice if the authors could test enrichments for other gene sets (i.e. those associated with ASD and other brain disorders).\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors should consider doing some additional validation/examination of their RNA-seq data as suggested above. First, they should examine the protein levels of at least one more FMRP target that has decreased RNA expression, but no change in ribosome-binding in the Tsc1 mutant PCs. Second, they should examine the protein levels of at least two of the 5'TOP mRNAs that have increased translation efficiency. In addition, they should reference previous findings by Das Sharma et al. (Cell Rep. 26: 3313) showing increased ribosome-bound 5'TOP mRNAs in fragile X mice. Finally, additional bioinformatic analysis should be done to determine whether any of the differentially regulated genes in either the RNA-seq or TRAP-seq data sets correspond to the length of the gene.\n",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f0c40569-797a-4d31-8ae1-ee02c8382da5",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C1",
+      "claim": "Tuberous sclerosis complex (TSC) is a genetic disorder that is associated with multiple neurological manifestations.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuberous sclerosis complex (TSC) is a genetic disorder that is associated with multiple neurological manifestations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about TSC that draws from established scientific knowledge about the disorder.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "429919d5-4ef7-46b9-8de9-22d124a6be78",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C2",
+      "claim": "Tsc1 loss in cerebellar Purkinje cells can cause altered social behavior in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we demonstrated that Tsc1 loss in cerebellar Purkinje cells (PCs) can cause altered social behavior in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior work by the authors, supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "0b06e177-64cd-4b4f-80b7-bb01600dd676",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C3",
+      "claim": "Target transcripts of the Fragile X Mental Retardation Protein (FMRP) are reduced in Tsc1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that target transcripts of the Fragile X Mental Retardation Protein (FMRP) are reduced in mutant PCs with evidence of increased degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by RNA sequencing data and analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "b4a619d0-0a42-4add-bb1a-1918faf32629",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C4",
+      "claim": "FMRP target transcripts show evidence of increased degradation in Tsc1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that target transcripts of the Fragile X Mental Retardation Protein (FMRP) are reduced in mutant PCs with evidence of increased degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the coverage analysis showing reduced 3' UTR coverage in downregulated transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "ac1b43f3-1da8-4471-8dbc-806dc4a2764f",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C5",
+      "claim": "Many FMRP target genes show unchanged ribosomal binding despite reduced transcript levels in Tsc1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed unchanged ribosomal binding for many of these genes using translating ribosome affinity purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TRAP data comparing ribosomal binding to total RNA levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "b9489dc3-4afc-4949-88a6-3aa8adbef488",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C6",
+      "claim": "Multiple FMRP targets, including SHANK2, were reduced at the protein level in Tsc1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that multiple FMRP targets, including SHANK2, were reduced, suggesting that compensatory increases in ribosomal binding efficiency may be unable to overcome reduced transcript levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot and immunohistochemistry data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "76f8c35f-f6b8-4002-8bba-f5b7899d941b",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C7",
+      "claim": "Compensatory increases in ribosomal binding efficiency may be unable to overcome reduced transcript levels in Tsc1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that multiple FMRP targets, including SHANK2, were reduced, suggesting that compensatory increases in ribosomal binding efficiency may be unable to overcome reduced transcript levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the combined data from RNA-seq, TRAP, and protein expression measurements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "9c773842-03c9-485a-93f8-170b1be7b777",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C8",
+      "claim": "Treatments aimed at restoring the function of FMRP pathways may be beneficial for TSC.",
+      "claim_type": "EXPLICIT",
+      "source": "These data further implicate dysfunction of FMRP and its targets in TSC and suggest that treatments aimed at restoring the function of these pathways may be beneficial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential therapeutic approaches based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "512d04a9-6ae2-41f0-9103-26dbc3178dbc",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C9",
+      "claim": "Approximately 50% of patients with TSC are diagnosed with autism spectrum disorder (ASD).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the neurological manifestations, approximately 50% of patients with TSC are diagnosed with autism spectrum disorder (ASD) (Jeste et al., 2008; Jeste et al., 2016; Capal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior epidemiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "23a2c4c4-2ae0-49dd-9fd3-81ff7d01f6d2",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C10",
+      "claim": "Disrupted development of the cerebellum has been associated with ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupted development of the cerebellum is among a number of pathogenic processes that have been associated with ASD (Fatemi et al., 2012; Becker and Stoodley, 2013; Rogers et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research on cerebellar involvement in ASD.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "6583b223-93ca-4ea2-af29-bf90e579227a",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C11",
+      "claim": "Cerebellar pathology has been identified in patients with TSC.",
+      "claim_type": "EXPLICIT",
+      "source": "cerebellar pathology has been identified in patients with TSC (Weber et al., 2000; Eluvathingal et al., 2006; Vaughn et al., 2013; Weisenfeld et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "49d0dc29-0ed1-4259-a0e6-de323dc231a7",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C12",
+      "claim": "Loss of either one or both alleles of Tsc1 in cerebellar Purkinje cells results in abnormal social behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that loss of either one or both alleles of Tsc1 in cerebellar Purkinje cells (PCs) results in abnormal social behavior (Tsai et al., 2012; Tsai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "ee23ea74-5a7e-406c-ba90-c77ae2e0cdf2",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C13",
+      "claim": "TSC1 and TSC2 form a protein complex (TSC1/2) that negatively regulates the mechanistic target of rapamycin (mTOR) pathway by inactivating RHEB.",
+      "claim_type": "EXPLICIT",
+      "source": "TSC1 and TSC2 form a protein complex (TSC1/2) that negatively regulates the mechanistic target of rapamycin (mTOR) pathway by inactivating RHEB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the TSC1/2 complex function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "afb45486-10e6-48d3-a88e-94c4fde7a861",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C14",
+      "claim": "Both TSC1 and TSC2 are necessary for a functional TSC1/2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Both TSC1 and TSC2 are necessary for a functional TSC1/2 complex (Hoogeveen-Westerveld et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "17f92174-7b44-4ce3-93c7-9e4f8dc4543a",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C15",
+      "claim": "Loss of either TSC1 or TSC2 leads to the clinical manifestations of TSC that are indistinguishable from one another.",
+      "claim_type": "EXPLICIT",
+      "source": "loss of either gene leads to the clinical manifestations of TSC that are indistinguishable from one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about TSC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "44c6a776-ca0f-4b73-b570-2b3c034359d4",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C16",
+      "claim": "Loss of either TSC1 or TSC2 leads to unchecked activation of mTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loss of either TSC1 or TSC2 leads to unchecked activation of mTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of the TSC1/2 complex.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "96585d82-4579-4f0f-a8e5-3c706135e21c",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C17",
+      "claim": "mTOR is a kinase that regulates several cellular processes, including proliferation, protein synthesis, and autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "mTOR is a kinase that regulates several cellular processes, including proliferation, protein synthesis, and autophagy (Lipton and Sahin, 2014; Liu and Sabatini, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research on mTOR function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "a44a4eda-2d2a-4578-a7a0-0a013538bad9",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C18",
+      "claim": "Loss of TSC2 in cortical neurons caused upregulation of the transcription factor ATF3.",
+      "claim_type": "EXPLICIT",
+      "source": "we previously observed that loss of TSC2 in cortical neurons caused upregulation of the transcription factor ATF3 (Nie et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "2a2c8c8c-462a-4c4d-82e4-b85737c86338",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C19",
+      "claim": "mTORC1 facilitates translation initiation and elongation through phosphorylation of 4EBP1/2 and ribosomal protein S6.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mTORC1 also facilitates translation initiation and elongation through phosphorylation of 4EBP1/2 and ribosomal protein S6 (Saxton and Sabatini, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research on mTORC1 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "9fe05c35-8971-456d-b06a-4e65c6e63761",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C20",
+      "claim": "Loss of TSC1/2 can cause complex changes in protein expression through modulation of transcription and translation in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, loss of TSC1/2 can cause complex changes in protein expression through modulation of transcription and translation in neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known functions of mTOR in regulating both transcription and translation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "2a7969e6-4df5-47c3-a536-7ab54ec3a033",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C21",
+      "claim": "GFP-positive PCs had dim expression of phosphorylated S6 in control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP+ PCs had dim expression of phosphorylated S6 (red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunocytochemical data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "c86f1726-28b6-43bd-a216-3deec36e196a",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C22",
+      "claim": "GFP-positive PCs were strongly positive for pS6 in Tsc1fl/fl L7Cre+ animals.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP+ PCs were strongly positive for pS6 (red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunocytochemical data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "0407c3d4-fe68-4731-9a0b-1e577eae8fdc",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C23",
+      "claim": "Loss of Tsc1 led to increased soma size in Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that PCs were specifically labeled with GFP and that loss of Tsc1 led to increased soma size and phosphorylation of S6, consistent with mTORC1 activation (Figure 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunocytochemical data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "709d2ceb-8058-479f-852d-5c5513c86dec",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C24",
+      "claim": "Loss of Tsc1 led to increased phosphorylation of S6 in Purkinje cells, consistent with mTORC1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that PCs were specifically labeled with GFP and that loss of Tsc1 led to increased soma size and phosphorylation of S6, consistent with mTORC1 activation (Figure 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunocytochemical data shown in Figure 1 and is consistent with known mTORC1 signaling.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "04bd68c8-4355-43de-9f8e-f66a225ed4f3",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C25",
+      "claim": "GFP-positive PCs comprised approximately 7.7-10.8% of total events after FACS.",
+      "claim_type": "EXPLICIT",
+      "source": "After removal of debris, doublets, and dead cells, we found that GFP-positive PCs comprised approximately 7.7-10.8% of total events (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FACS data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "8cdf1026-a9a7-420a-b228-5d8ff7b55525",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C26",
+      "claim": "192 differentially expressed genes were identified between control and mutant PCs (FC > 2 and p-value<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis between control and mutant animals identified 192 differentially expressed genes (FC > 2 and p-value<0.01; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA sequencing data and differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "7e788daa-107f-4cd7-95ab-58275024ba52",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C27",
+      "claim": "Most of the differentially expressed genes in Tsc1-deficient PCs were downregulated (72%).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most of the differentially expressed genes in this dataset were downregulated (72%) (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA sequencing data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "bcaa3ba4-334f-4e74-a283-48a0da0e0711",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C28",
+      "claim": "There was a bias toward downregulation in the overall gene expression in Tsc1-deficient PCs, even among genes that did not show a significant change in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that there was a bias toward downregulation in the overall gene expression, even among genes that did not show a significant change in gene expression (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA sequencing data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "a3bfc572-e86c-48da-b829-3ff31af67f05",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C29",
+      "claim": "The bias toward downregulation was more evident in genes with higher expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was more evident in genes with higher expression, and there was a statistically significant negative correlation between fold change and expression (r = \u20130.14, p<2.2e-16, Pearson correlation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "66696da7-0fd1-4752-890c-e680b28bba25",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C30",
+      "claim": "There was a statistically significant negative correlation between fold change and expression (r = \u20130.14, p<2.2e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was more evident in genes with higher expression, and there was a statistically significant negative correlation between fold change and expression (r = \u20130.14, p<2.2e-16, Pearson correlation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "b3447d54-334c-4692-8405-e074f1cc280d",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C31",
+      "claim": "Loss of Tsc1 results in a bias toward widespread transcriptional downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that loss of Tsc1 results in a bias toward widespread transcriptional downregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the RNA sequencing data showing overall downregulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "e92956ba-8c8f-4395-b1fe-934edc9dfcaa",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C32",
+      "claim": "Mutant PCs showed reduced coverage at the 3' end of transcripts compared to control PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the median coverage across all transcripts between mutant and control PCs, we observed that mutant PCs showed reduced coverage at the 3' end of the transcript compared to control PCs (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coverage analysis of RNA sequencing data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "f49d67d1-9ff8-4aae-82d0-c79ddb6fc779",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C33",
+      "claim": "There is a bias toward reduced coverage in the 3' region of transcripts in mutant PCs, suggesting that 3'\u2013>5' RNA degradation pathways may be increased.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that there is a bias toward reduced coverage in the 3' region of transcripts in mutant PCs, suggesting that 3'\u2013>5' RNA degradation pathways may be increased in mutant PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the coverage analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "a4064613-564d-4c60-9bfd-bf2f9b6c06e4",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C34",
+      "claim": "The 3' UTR of downregulated genes in mutant PCs demonstrated significantly reduced coverage compared to the 5' UTR and coding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3' UTR showed significantly reduced coverage in the mutant compared to the control PCs among the downregulated genes (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 2b (*p<0.001, ANOVA with Tukey's post hoc test).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "33dd8c3d-d5d7-45c0-a408-ee45f480c35b",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C35",
+      "claim": "There was no significant difference between the regions of the upregulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no significant difference between the regions of the upregulated genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "606e0e3c-f99c-4d5f-a49d-53c08b024cae",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C36",
+      "claim": "There may be distinct mechanisms driving up- and downregulation of genes within TSC1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that there may be distinct mechanisms driving up- and downregulation of genes within TSC1-deficient PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential effects on 3' UTR coverage between up- and downregulated genes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "73f83b7b-cea8-4352-8b3c-f8071fb2a3c4",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C37",
+      "claim": "978 transcripts showed greater changes in the 3' UTR than the overall transcript expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We then searched through the downregulated transcripts for those that showed greater changes in the 3' UTR than the overall transcript expression, identifying 978 transcripts (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "ee0ff244-295b-4dc2-82c5-bd29cfc37b40",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C38",
+      "claim": "Downregulated transcripts with enhanced reduction in the 3' UTR were strongly enriched in categories such as synapse, protein transport, and cytoskeletal binding.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand what functions are associated with this group, we performed gene ontology analysis and observed that these transcripts were strongly enriched in categories such as synapse, protein transport, and cytoskeletal binding (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene ontology analysis shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "fbfcf8b8-dfd4-4539-883f-528d4aad0b8e",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C39",
+      "claim": "TSC2-deficient PCs derived from human-induced pluripotent stem cells showed downregulation of FMRP targets.",
+      "claim_type": "EXPLICIT",
+      "source": "In a prior study, we had observed that TSC2-deficient PCs that were derived from human-induced pluripotent stem cells showed downregulation of FMRP targets (Sundberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "315e0329-16dc-4ea8-96d4-872fdb0d89a9",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C40",
+      "claim": "Downregulated transcripts with reduced 3' UTR coverage showed a highly significant enrichment of FMRP target genes (p=2.59e-55).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we examined this group of downregulated transcripts and found a highly significant enrichment of FMRP target genes (p=2.59e-55) (Darnell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis comparing the gene list to known FMRP targets.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "f9f396f9-aea4-494a-bb50-882119d23ff4",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C41",
+      "claim": "FMRP has been associated with longer genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that FMRP has been associated with longer genes (Darnell et al., 2011; Ouwenga and Dougherty, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "d172a838-5fa9-4bc5-ae3b-a1dd0eedf21b",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C42",
+      "claim": "Transcripts with reduced 3' UTR were significantly longer than a random set of transcripts with a similar distribution of expression (p=8.6e-5).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that transcripts with reduced 3' UTR were significantly longer than a random set of transcripts with a similar distribution of expression (p=8.6e-5; Mann\u2013Whitney U-test; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "1455f68c-8228-4a65-b240-0b2a2f998b42",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C43",
+      "claim": "Transcripts with reduced 3' UTR showed a significant enrichment in ASD risk genes (p=0.0048).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we only observed a significant enrichment in ASD risk genes (p=0.0048; hypergeometric probability), but not in the other disorders (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "7bc4a433-2822-46e8-9a54-0da73b18d4c9",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C44",
+      "claim": "Transcripts with reduced 3' UTR did not show significant enrichment in intellectual disability or schizophrenia risk genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we only observed a significant enrichment in ASD risk genes (p=0.0048; hypergeometric probability), but not in the other disorders (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "fd97950f-31d4-47d6-a36f-b00244933dc6",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C45",
+      "claim": "Downregulated genes with alterations in the 3' UTR are FMRP targets with increased transcript length and are associated with synaptic functions and ASD susceptibility genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that downregulated genes with alterations in the 3' UTR are FMRP targets with increased transcript length and are associated with synaptic functions and ASD susceptibility genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on multiple analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "b50ed936-e457-4764-937b-58bd55a6c60e",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C46",
+      "claim": "Perturbation of RNA decay pathways in mutant PCs may substantially affect PC physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, perturbation of RNA decay pathways in mutant PCs may substantially affect PC physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the findings about RNA degradation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "7587c961-74de-4997-bd7e-27defd70cc03",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C47",
+      "claim": "GFP was expressed specifically within calbindin-positive neurons in Rosa26fsTRAP L7Cre animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed immunostaining of these animals, and we found that GFP was expressed specifically within calbindin-positive neurons, which is a known marker of PCs (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "c6fd0138-1a7a-4649-b06e-242bad684194",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C48",
+      "claim": "165 differentially bound genes were identified in TRAP samples between mutant and control PCs (FC > 2 and p-value<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified 165 differentially bound genes (FC > 2 and p-value<0.01; Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TRAP RNA sequencing data and differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "da05b011-1cde-4fb2-9953-c7e2a91b73e1",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C49",
+      "claim": "Nearly equal numbers of genes showed increased and decreased ribosomal binding compared to control in TRAP analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, nearly equal numbers of genes showed increased and decreased ribosomal binding compared to control (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TRAP data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "1b5928e3-be42-4601-8f8c-76828b68a622",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C50",
+      "claim": "There was no overall bias toward downregulation of ribosome bound mRNAs in Tsc1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these data, we found that there was no overall bias toward downregulation of ribosome bound mRNAs (Figure 3d), in contrast to the total RNA data obtained from sorted PCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TRAP data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "8c6a5c9d-cfec-415a-8d7e-14365750d1b2",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C51",
+      "claim": "1808 genes showed a \u0394TE Z-score greater than 4, which corresponded to an uncorrected p-value<3.2e-5.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 1808 genes that showed a \u0394TE Z-score greater than 4, which corresponded to an uncorrected p-value<3.2e-5 (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of translation efficiency data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "cc886f24-40fd-4331-952b-4e70fa1496c8",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C52",
+      "claim": "A majority of genes with significant \u0394TE (1131) showed an increase in \u0394TE in mutant PCs compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of these genes (1131) showed an increase in \u0394TE in mutant PCs compared to control (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by translation efficiency analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "1b051331-0e3f-4288-a436-6dc4949ee8d0",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C53",
+      "claim": "Activation of mTOR through loss of TSC in PCs leads to increased translation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that activation of mTOR through loss of TSC in PCs leads to increased TE, consistent with known roles of the mTOR pathway in facilitating protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on translation efficiency data and is consistent with known mTOR functions.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "9342ddf6-e8f7-43f6-bec5-eabfde2d99b4",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C54",
+      "claim": "Known TOP genes from Thoreen et al. did not demonstrate a significant increase in translation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Although known TOP genes from one study (Thoreen et al., 2012) did not demonstrate a significant increase in TE",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of translation efficiency for known TOP genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "93295eca-7309-45f9-97a0-56ad06eeadda",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C55",
+      "claim": "All genes with a predicted TOP motif displayed a significantly greater \u0394TE compared to all other genes (p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "we found that all genes with a predicted TOP motif (Yamashita et al., 2008) displayed a significantly greater \u0394TE compared to all other genes (p=0.004, T-test; Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "6334b2b8-6927-4752-8d4f-e6498866e581",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C56",
+      "claim": "Predicted TOP genes showed an overall positive fold change in ribosomal binding without a clear shift in total RNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this increase in TE, we found that these predicted TOP genes showed an overall positive fold change in ribosomal binding without a clear shift in total RNA abundance (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "83b5fcd7-dba3-4805-822f-41c4a15c0c8f",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C57",
+      "claim": "There was no increase in the length of the 5' UTR of transcripts with increased \u0394TE.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that there was no increase in the length of the 5' UTR of transcripts with increased \u0394TE (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "c57fa833-f9da-4e60-95f2-acbd95c7bfd4",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C58",
+      "claim": "There was a remarkably significant overlap between downregulated genes with exaggerated reduction of the 3' UTR and those with significantly increased \u0394TE (p=2.08e-133).",
+      "claim_type": "EXPLICIT",
+      "source": "We then examined the downregulated genes with exaggerated reduction of the 3' UTR identified above, and we found a remarkably significant overlap between these genes and those with significantly increased \u0394TE (Figure 4e; p=2.08e-133; Hypergeometric probability).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "2cd5b510-7627-4978-a908-b266dac573c8",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C59",
+      "claim": "Genes with enhanced downregulation of the 3' UTR display downregulation at the total transcript level and unchanged ribosomal binding, leading to their increased translation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, as opposed to the predicted TOP genes, these genes display downregulation at the total transcript level and unchanged ribosomal binding, leading to their increased TE (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "d3eb6ea0-30af-404b-97bd-af996da7afb9",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C60",
+      "claim": "Genes with enhanced downregulation of the 3' UTR, which are enriched in FMRP targets, show increased relative ribosomal binding with loss of TSC1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that genes with enhanced downregulation of the 3' UTR, which are enriched in FMRP targets, show increased relative ribosomal binding with loss of TSC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the combined analysis of RNA-seq and TRAP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "75ea3b7f-6145-40e0-97d0-4799ff51d9cd",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C61",
+      "claim": "Most of the FMRP targets were downregulated in mutant PCs compared to control PCs in amplicon-based quantification.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our prior data, we confirmed that most of the FMRP targets were downregulated in mutant PCs compared to control PCs (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by amplicon-based quantification data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "73a5b6cc-9f32-4826-8c2a-859da7c823f5",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C62",
+      "claim": "FMRP target genes showed no significant change in overall distribution in their ribosomal binding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these same genes showed no significant change in overall distribution in their ribosomal binding (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by amplicon-based TRAP data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "c89e2226-057e-4ec9-88f5-72618045f3b2",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C63",
+      "claim": "DLG3 showed a significant reduction at the protein level in mutant cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed immunoblots of Tsc1fl/fl and Tsc1fl/fl L7Cre cerebellum at P42\u2013P45 (N = 6 animals of each genotype), and we observed a significant reduction of DLG3 and KIF3C at the protein level in mutant cerebellum (Figure 6a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 6a with p=0.017.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "6dc6b6b2-2bb8-43e0-a3f5-ad4fc1eca572",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C64",
+      "claim": "KIF3C showed a significant reduction at the protein level in mutant cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed immunoblots of Tsc1fl/fl and Tsc1fl/fl L7Cre cerebellum at P42\u2013P45 (N = 6 animals of each genotype), and we observed a significant reduction of DLG3 and KIF3C at the protein level in mutant cerebellum (Figure 6a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 6b with p=0.023.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "13bcfe90-5620-4229-b971-9ecaa1a0ab45",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C65",
+      "claim": "There was a significant decrease in the intensity of SHANK2+ punctae in mutant PCs compared to control (p=0.047).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a significant decrease in the intensity of SHANK2+ punctae in mutant PCs compared to control (Figure 6c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 6c-e with p=0.047.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "edaa0abe-6d8c-426d-86e1-f64d4243d693",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C66",
+      "claim": "The increased ribosomal binding efficiency of FMRP target transcripts in Tsc1-deficient PCs is unable to overcome their overall downregulation, resulting in a decreased level of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the increase ribosomal binding efficiency of these transcripts in Tsc1-deficient PCs is unable to overcome their overall down regulation, resulting in a decreased level of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined data from RNA-seq, TRAP, and protein expression measurements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "0363f664-1138-43e9-a033-84177caf5c66",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C67",
+      "claim": "The majority of differentially expressed genes between mutant and control PCs were downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the majority of differentially expressed genes between mutant and control PCs were downregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the RNA sequencing findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "164f3f12-331b-45aa-a10a-5a9a502d3c92",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C68",
+      "claim": "Downregulated genes in mutant PCs were enriched in FMRP targets and showed reduced coverage at the 3' region, suggestive of increased RNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that these downregulated genes in mutant PCs were enriched in FMRP targets and showed reduced coverage at the 3' region, suggestive of increased RNA decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the coverage analysis findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "2ee36bf6-c281-4884-b1e1-72dbef61e568",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C69",
+      "claim": "Several FMRP targets displayed reduced protein expression in Tsc1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed that several FMRP targets displayed reduced protein expression, implying that compensatory increases in ribosomal binding efficiency may be insufficient to overcome overall reduced transcript levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot and immunohistochemistry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "2f121296-37a9-42bf-b308-ff99d8e92f34",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C70",
+      "claim": "Compensatory increases in ribosomal binding efficiency may be insufficient to overcome overall reduced transcript levels of FMRP targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed that several FMRP targets displayed reduced protein expression, implying that compensatory increases in ribosomal binding efficiency may be insufficient to overcome overall reduced transcript levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined data from RNA-seq, TRAP, and protein expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "c7df15bd-9839-4d20-b4fd-d17fb4b69e03",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C71",
+      "claim": "Dysregulation of FMRP target genes at the transcript level, rather than the ribosomal binding level, may drive molecular dysregulation in Tsc1 mutant PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that dysregulation of FMRP target genes at the transcript level, rather than the ribosomal binding level, may drive molecular dysregulation in Tsc1 mutant PCs and underlie the development of synaptic abnormalities in these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "423bbc8b-003a-4846-bf2c-0793c8a6b2fd",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C72",
+      "claim": "Dysregulation of FMRP target genes may underlie the development of synaptic abnormalities in Tsc1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that dysregulation of FMRP target genes at the transcript level, rather than the ribosomal binding level, may drive molecular dysregulation in Tsc1 mutant PCs and underlie the development of synaptic abnormalities in these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "1142de2d-edab-4575-8ca7-274dc94eb49c",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C73",
+      "claim": "Treatment with rapamycin reduced stability of certain transcripts in prior studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have reported that mTOR can affect RNA stability, but most of these studies showed that treatment with rapamycin reduced stability of certain transcripts (Banholzer et al., 1997; Hashemolhosseini et al., 1998; Albig and Decker, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "6333bda1-855b-4a3a-bf8d-8710750e58f3",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C74",
+      "claim": "Rapamycin reduced the stability of specific transcripts in yeast through increasing the rate of deadenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin reduced the stability of specific transcripts in yeast through increasing the rate of deadenylation, although the mediator of this effect was not identified (Albig and Decker, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "f43882f4-49d1-4ca5-8f4b-e428e0995907",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C75",
+      "claim": "Inhibition of mTORC1 with rapamycin was shown to facilitate RNA degradation through the nonsense mediated decay pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of mTORC1 with rapamycin was also shown to facilitate RNA degradation through the nonsense mediated decay pathway, but this effect was shown to be associated with alterations in translation machinery associated with the 5' cap (Martinez-Nunez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "d3c32220-a69e-44ea-a750-14b85d104be8",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C76",
+      "claim": "The observations in this study contradict earlier studies because none of the prior studies assayed hyperactive mTORC1 or were performed in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that our observations contradict these earlier studies because none of the prior studies assayed hyperactive mTORC1 or were performed in neurons, and the downstream machinery may be substantially different in mutant PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the discrepancy between current and prior findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "22bc6d36-9793-4d9d-a759-e7ddc8152f36",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C77",
+      "claim": "RNA degradation is canonically preceded by deadenylation of the transcript, rendering the molecule susceptible to exonuclease activity from either the 5' or 3' end.",
+      "claim_type": "EXPLICIT",
+      "source": "Canonically, RNA degradation is preceded by deadenylation of the transcript, rendering the molecule susceptible to exonuclease activity from either the 5' or 3' end (\u0141abno et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RNA degradation mechanisms, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "37725d3a-483b-4c52-96e4-c8294b20ff9e",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C78",
+      "claim": "3'\u21925' decay activity is hypothesized to be increased in mutant PCs because of the reduction in coverage in the 3' region of transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that 3'\u21925' decay activity is increased in mutant PCs because of the reduction in coverage in the 3' region of transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the coverage analysis data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "0ccc6dc6-6311-40f5-9071-0292dc028a5f",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C79",
+      "claim": "The best characterized 3'\u21925' exonucleases are Dis3, Dis3L, and Dis3L2, which differ in their association with the RNA exosome complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The best characterized 3'\u21925' exonucleases are Dis3, Dis3L, and Dis3L2, which differ in their association with the RNA exosome complex (\u0141abno et al., 2016; Dos Santos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RNA exonucleases, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "3b60f897-efd6-4770-9ccc-b8dea273bf6b",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C80",
+      "claim": "20 of 24 genes associated with the exosome show modest but non-significant increases in expression in Tsc1fl/fl PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 20 of 24 genes associated with the exosome show modest but non-significant increases in expression in Tsc1fl/fl PCs in this dataset (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "2d580c52-6394-474c-905d-a93ff57f16d5",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C81",
+      "claim": "DIS3 was found to be upregulated due to ER stress in Caenorhabditis elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "DIS3 was also found to be upregulated due to ER stress in Caenorhabditis elegans (Sakaki et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "d1f554d6-0df5-4198-9727-605f20126371",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C82",
+      "claim": "TSC2-deficient neurons show evidence of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "we have found that TSC2-deficient neurons show evidence of ER stress (Di Nardo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "3550579d-74e4-4489-a770-c039c1ae3c31",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C83",
+      "claim": "The RNA exosome complex is involved in ribosomal RNA maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the RNA exosome complex is involved in ribosomal RNA maturation (Koby\u0142ecki et al., 2018; Pirouz et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "adc005d0-d8a1-4707-a5ef-f047a3c4d5b0",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C84",
+      "claim": "mTORC1 is known to increase ribosomal biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC1 is known to increase ribosomal biogenesis (Gentilella et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "7f83a354-2055-49ba-abb3-a5923409b6e1",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C85",
+      "claim": "mTORC1 may induce the RNA exosome by stimulating the production of ribosomes, and the RNA decay phenomenon observed could be a side effect of this process.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that mTORC1 may induce the RNA exosome by stimulating the production of ribosomes, and the RNA decay phenomenon that we observe could be a side effect of this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the findings and prior knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "acc3fdbc-3783-4869-8f08-bfff92ceec88",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C86",
+      "claim": "The primary abnormality in mutant PCs may be at the transcript level, while the increase in relative ribosomal binding is a compensatory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the primary abnormality in mutant PCs may be at the transcript level, while the increase in relative ribosomal binding is a compensatory effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined RNA-seq and TRAP data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "2b80c36c-b6ba-44d8-8e91-ee39d7a5f9be",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C87",
+      "claim": "FMRP is an RNA binding protein that is lost in Fragile X Syndrome, which is characterized by high rates of intellectual disability and ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "FMRP is an RNA binding protein that is lost in Fragile X Syndrome, which is characterized by high rates of intellectual disability and ASD (Niu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about FMRP and Fragile X Syndrome, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "d207bed2-a4ec-4c44-85cc-73a5d05be495",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C88",
+      "claim": "FMRP is known to be a repressor of translation.",
+      "claim_type": "EXPLICIT",
+      "source": "FMRP is known to be a repressor of translation (Feng et al., 1997; Brown et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about FMRP function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "a83c43b0-01d2-4e0b-b81f-5f83ddcdaffc",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C89",
+      "claim": "The effects of FMRP on the ribosomal binding of specific transcripts are less clear.",
+      "claim_type": "EXPLICIT",
+      "source": "but its effects on the ribosomal binding of specific transcripts are less clear (Thomson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "2d1dba09-4be7-42dc-ae82-224758a6b00c",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C90",
+      "claim": "FMRP can bind to ribosomes and reduce their ability to synthesize new proteins, suggesting a more general effect on translation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, FMRP can bind to ribosomes and reduce their ability to synthesize new proteins, suggesting a more general effect on translation (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "62beca06-8870-4300-9809-6606b0fa34fc",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C91",
+      "claim": "Dysfunction in FMRP could facilitate binding of specific transcripts to ribosomes despite their reduced abundance at the total transcript level.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that dysfunction in FMRP could facilitate binding of specific transcripts to ribosome despite their reduced abundance at the total transcript level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the findings and known FMRP functions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "a57f86d1-10ca-4e93-bb68-38cfcde295b8",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C92",
+      "claim": "FMRP has been shown to play a role in mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "FMRP has also been shown to play a role in mRNA stability (Zalfa et al., 2007; De Rubeis and Bagni, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "37baf344-2c31-4cbd-8890-38c832cfbbff",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C93",
+      "claim": "FMRP could contribute to the increased RNA degradation and downregulation of its target transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "which suggests that it could also contribute to the increased RNA degradation and downregulation of its target transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on known FMRP functions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "7753b1a4-b68c-497d-8cb1-e0c369e2e6f9",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C94",
+      "claim": "Loss of FMRP can preferentially destabilize transcripts in neurons based on their codon optimality.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study demonstrated that loss of FMRP can preferentially destabilize transcripts in neurons based on their codon optimality (Shu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "969548f4-262f-40b4-bc34-d7bbf08a0b88",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C95",
+      "claim": "Hippocampal slices from Tsc2+/\u2212 mice showed increased expression of FMRP targets and decreased ribosomal binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, another recent study that examined hippocampal slices from Tsc2+/\u2212 mice reported that the expression of FMRP targets was increased and their ribosomal binding was decreased (Hien et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "41eabd3b-78ba-4ef5-a301-436b44b34e6f",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C96",
+      "claim": "There are likely cell type differences in the functions of TSC1/TSC2 and FMRP in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible, and in fact likely, that there are cell type differences in the functions of TSC1/TSC2 and FMRP in the brain leading to the discrepancy between this prior study and our data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for discrepancies between studies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "49fe672d-d767-428b-aea5-d3104ad04eee",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C97",
+      "claim": "The study reinforces the connection between mTOR and FMRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study further reinforces the connection between mTOR and FMRP and highlights the role of mTOR hyperactivation in altering both the total abundance and ribosomal binding of FMRP target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "016d8bcc-6b9d-45cb-9868-c1bf94f1fba3",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C98",
+      "claim": "mTOR hyperactivation alters both the total abundance and ribosomal binding of FMRP target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study further reinforces the connection between mTOR and FMRP and highlights the role of mTOR hyperactivation in altering both the total abundance and ribosomal binding of FMRP target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "27dcd2d6-94cb-4a17-8532-a802ffca650c",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C99",
+      "claim": "Both mTOR activation and loss of FMRP can facilitate ribosomal binding of 5' TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We did observe a subtle but significant increase in predicted 5' TOP genes, which is consistent with studies that have demonstrated that both mTOR activation and loss of FMRP can facilitate ribosomal binding of these mRNAs (Thoreen et al., 2012; Das Sharma et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research and is consistent with the study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "c643d327-f538-4d81-a901-564b6961a9d0",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C100",
+      "claim": "Changes in predicted 5' TOP genes at the protein level were not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were not able to observe these changes at the protein level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data showing no significant changes in Cdk16 and Rpl28.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "0576b723-f8ae-4d62-bb64-235441434303",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C101",
+      "claim": "Other cell types in the cerebellum may contribute to the expression of 5' TOP genes, diluting any change in expression in PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that these genes are involved in general cellular processes, it is possible that other cell types in the cerebellum contribute to their expression, diluting any change in expression in PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lack of protein-level changes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "88e6aa47-e1ef-449e-8f62-c98d25097344",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C102",
+      "claim": "Kif3c is an anterograde motor that is implicated in both axonal and dendritic trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Kif3c is an anterograde motor that is implicated in both axonal and dendritic trafficking (Davidovic et al., 2007; Gumy et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Kif3c function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "f0ad2b7a-e63f-4a0d-9518-5b19a386d234",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C103",
+      "claim": "Dlg3 encodes for post-synaptic density protein 93.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Dlg3, which encodes for post-synaptic density protein 93, and Shank2 are scaffolding proteins present at the post-synaptic density and highly expressed in PCs (McGee et al., 2001; Eltokhi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Dlg3, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "1ff96b71-d7fe-4413-92f8-63b6b0f6500e",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C104",
+      "claim": "Shank2 is a scaffolding protein present at the post-synaptic density and highly expressed in PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Dlg3, which encodes for post-synaptic density protein 93, and Shank2 are scaffolding proteins present at the post-synaptic density and highly expressed in PCs (McGee et al., 2001; Eltokhi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Shank2, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "11142fc2-dde1-445a-8791-dcb7ba88c36d",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C105",
+      "claim": "Dlg3 is implicated in X-linked intellectual disability.",
+      "claim_type": "EXPLICIT",
+      "source": "Dlg3 is implicated in X-linked intellectual disability, while Shank2 is a known risk gene for ASD (Tarpey et al., 2004; Satterstrom et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "ade9d2c1-9802-4d59-8def-cd6c86d26aa6",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C106",
+      "claim": "Shank2 is a known risk gene for ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "Dlg3 is implicated in X-linked intellectual disability, while Shank2 is a known risk gene for ASD (Tarpey et al., 2004; Satterstrom et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "37aa7246-43e7-4632-952f-043be100c15b",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C107",
+      "claim": "Dysregulation of Dlg3 and Shank2 may contribute to neurological and behavioral abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "therefore, dysregulation of these genes may contribute to neurological and behavioral abnormalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the known roles of these genes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "fd113f4a-b578-4210-8651-78bc29c67a75",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C108",
+      "claim": "Deletion of Shank2 in PCs has been shown to alter levels of glutamate receptors in dendritic spines and lead to abnormal social behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of Shank2 in PCs has been shown to alter levels of glutamate receptors in dendritic spines and lead to abnormal social behavior in these animals (Peter et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "37d3f29f-668f-4e2d-87a0-007c091ea398",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C109",
+      "claim": "Another study that deleted Shank2 in PCs found alterations in excitation onto PCs but did not observe abnormal social behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study that deleted Shank2 in PCs found alterations in excitation onto PCs but did not observe abnormal social behavior (Ha et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "f89353ea-a7fd-4d8d-b70e-589e8263dffe",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C110",
+      "claim": "Proper regulation of Shank2 in PCs is critical for normal function of cerebellar circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that proper regulation of Shank2 in PCs is critical for normal function of cerebellar circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited studies about Shank2 deletion.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "128b2064-cda5-4adf-8a58-160c52df12a1",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C111",
+      "claim": "Reduced expression of synaptic proteins may contribute to the development of altered cerebellar circuitry and abnormal social behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these data suggest that reduced expression of these synaptic proteins may contribute to the development of altered cerebellar circuitry and abnormal social behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings of reduced protein expression.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "7303b4b1-3bd2-4bf1-9c15-3c413de27fab",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C112",
+      "claim": "Changes at the transcript level suggest alterations in RNA degradation in Tsc1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed changes at the transcript level that suggest alterations in RNA degradation and compensatory changes at the ribosome level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the coverage analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "70fe70f1-7f75-4619-ba21-d0878bd9e504",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C113",
+      "claim": "There are compensatory changes at the ribosome level in Tsc1-deficient PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed changes at the transcript level that suggest alterations in RNA degradation and compensatory changes at the ribosome level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the TRAP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "aa93b5bb-a45a-4234-9b86-370f7357e894",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C114",
+      "claim": "The findings indicate the presence of novel mechanisms underlying PC dysfunction in TSC.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate the presence of novel mechanisms underlying PC dysfunction in TSC, which may be associated with the development of abnormal social behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the overall findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "b60d33f1-8371-47cf-b564-8cec574aa955",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C115",
+      "claim": "Novel mechanisms underlying PC dysfunction in TSC may be associated with the development of abnormal social behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate the presence of novel mechanisms underlying PC dysfunction in TSC, which may be associated with the development of abnormal social behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the overall findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "d22c9cd2-ab05-426f-b2fb-16d2d1ce6b87",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "claim_id": "C116",
+      "claim": "Further study of RNA decay and ribosomal binding pathways may provide new avenues for therapeutics for ASD in TSC and related neurodevelopmental disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Further study of these pathways may provide new avenues for therapeutics for ASD in TSC and related neurodevelopmental disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions and therapeutic potential.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9581eea6-5151-4fbb-9944-a99106bc8205",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Loss of Tsc1 in Purkinje cells leads to mTORC1 activation, as evidenced by increased soma size and phosphorylation of S6 in mutant PCs compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 provide converging immunocytochemical evidence from Figure 1a,b showing dim pS6 in control PCs and strong pS6 in mutant PCs, along with increased soma size. These observations are consistent with known mTORC1 signaling and validate the experimental model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "5bfd7dfe-65f8-4f9c-bbe8-106e54295bc8",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Loss of Tsc1 in PCs results in widespread transcriptional downregulation, with 72% of 192 differentially expressed genes being downregulated and a statistically significant negative correlation between fold change and expression level (r=-0.14, p<2.2e-16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 are supported by RNA-seq data from FACS-sorted PCs (N=4 per genotype) with appropriate statistical analysis. The bias toward downregulation is unexpected given mTORC1's known role in promoting transcription, but the data are clearly presented with statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "08e5c56c-de14-41f5-b350-c92fbc2d56ca",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Downregulated transcripts in Tsc1-deficient PCs show reduced coverage at the 3' UTR compared to 5' UTR and coding sequence, suggesting increased 3'\u21925' RNA degradation, while upregulated genes show no such regional differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by coverage analysis of RNA-seq data (Figure 2a,b) with statistical significance (p<0.001, ANOVA with Tukey's post hoc). The differential effects between up- and downregulated genes strengthen the interpretation of distinct regulatory mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "b15a70fd-52c1-47d8-9b40-331a17ee0f2f",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "978 transcripts with enhanced 3' UTR reduction are enriched for FMRP targets (p=2.59e-55), are significantly longer than similarly expressed genes (p=8.6e-5), are enriched in synaptic functions, and show specific enrichment in ASD risk genes (p=0.0048) but not intellectual disability or schizophrenia genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C45 are supported by multiple convergent analyses including gene ontology, FMRP target enrichment, transcript length analysis, and disease gene enrichment with appropriate statistical tests. The specificity for ASD genes is particularly notable and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "218d637f-267e-48a3-bd5d-457f0fab04d9",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TRAP analysis of Tsc1-deficient PCs identified 165 differentially bound genes with nearly equal numbers showing increased and decreased ribosomal binding, and no overall bias toward downregulation of ribosome-bound mRNAs, contrasting with total RNA data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are supported by TRAP RNA-seq data (N=3 per genotype) with appropriate validation of PC-specific GFP expression. The contrast between TRAP and total RNA results is clearly demonstrated and represents a key finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "6ee1c26b-993b-439f-9e31-f3483ce8942c",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "1808 genes showed significantly increased translation efficiency (\u0394TE Z-score >4, p<3.2e-5), with 1131 showing increased \u0394TE in mutant PCs, demonstrating that mTOR activation through Tsc1 loss leads to increased translation efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by translation efficiency analysis comparing TRAP and total RNA data. The statistical approach using Z-scores from resampling is appropriate, though the lack of multiple testing correction is a limitation. The conclusion is consistent with known mTOR functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "63459e07-c378-4458-ae0a-466211d849b0",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Predicted TOP genes (Yamashita et al.) showed significantly greater \u0394TE compared to all other genes (p=0.004) with increased ribosomal binding but unchanged total RNA abundance, while known TOP genes (Thoreen et al.) did not show significant increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by statistical analysis (Figure 4b,c). The discrepancy between predicted and known TOP genes is acknowledged and may reflect differences in TOP gene definitions or cell-type specificity. The p-value of 0.004 is modest and would not survive stringent multiple testing correction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "e178ffa3-5af5-471c-805a-7e466825cacf",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genes with enhanced 3' UTR reduction show remarkably significant overlap with genes showing increased \u0394TE (p=2.08e-133), displaying downregulation at the transcript level with unchanged ribosomal binding, indicating increased relative ribosomal binding efficiency for FMRP-enriched targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are strongly supported by the extremely significant overlap (p=2.08e-133) and data in Figure 4e,f. This represents a key mechanistic finding linking transcript degradation to compensatory ribosomal binding changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "3dddc1e2-4fbd-4750-aee9-0aa4f37eeaf1",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Amplicon-based validation confirmed that 150 FMRP target genes were downregulated at the total mRNA level in mutant PCs but showed no significant change in ribosomal binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by orthogonal amplicon-based quantification (Figure 5a,b), which validates the RNA-seq and TRAP findings using a different technical approach. This strengthens confidence in the primary observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "c9b1a279-26de-4139-b609-e4a6c077ecaa",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FMRP target proteins DLG3, KIF3C, and SHANK2 showed significant reductions at the protein level in mutant cerebellum (p=0.017, p=0.023, p=0.047 respectively), suggesting that compensatory increases in ribosomal binding efficiency cannot overcome reduced transcript levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by western blot (N=6 per genotype) and immunohistochemistry (N=4 per genotype) with statistical significance. However, the p-values are marginal and would benefit from larger sample sizes. The interpretation linking transcript, ribosome, and protein levels is logical but remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "2ff12b8b-68c6-483b-85b4-dbb66a668219",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Predicted 5' TOP genes (Cdk16, Rpl28) did not show significant changes at the protein level in mutant cerebellum, possibly due to dilution by expression in other cerebellar cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C100 is supported by western blot data (Figure 6\u2014figure supplement 1), but C101 is speculative. The lack of protein-level changes could reflect technical limitations (whole cerebellum lysates diluting PC-specific changes), true biological compensation, or insufficient statistical power. PC-specific protein measurements would be needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "4e995822-9307-419d-a3a6-f063ec73701c",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors hypothesize that increased 3'\u21925' RNA decay in mutant PCs may be mediated by the RNA exosome complex, potentially induced by mTORC1-stimulated ribosomal biogenesis, with 20 of 24 exosome-associated genes showing modest non-significant increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78, C80, and C85 are explicitly speculative hypotheses. While C80 provides some supporting data (modest increases in exosome genes), the increases are non-significant and the mechanistic link remains unproven. This represents a reasonable hypothesis for future investigation but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "4f6e493e-c720-454a-84a5-0a3147e70463",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that the primary abnormality is at the transcript level with compensatory ribosomal binding, potentially mediated by FMRP dysfunction facilitating transcript-ribosome binding despite reduced abundance and contributing to RNA degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86, C91, and C93 are interpretive inferences based on the data but remain mechanistically unproven. While the data show transcript reduction and maintained ribosomal binding, the causal relationships and role of FMRP dysfunction are speculative. Direct experiments manipulating FMRP or RNA degradation pathways would be needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "237f5273-538e-4008-9a91-4b9b465141e3",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors conclude that dysregulation of FMRP targets at the transcript level may drive PC dysfunction and synaptic abnormalities underlying abnormal social behavior in TSC, suggesting that treatments targeting FMRP pathways or RNA decay/ribosomal binding pathways may be beneficial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C71, C72, C107, C111, C114, C115, and C116 are speculative conclusions and therapeutic proposals. While the molecular findings are well-supported, the causal links to PC dysfunction, synaptic abnormalities, and behavioral phenotypes are inferential. No behavioral data are presented in this study, and the connection relies on prior work (C2, C12). Functional validation would be required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    },
+    {
+      "id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6",
+      "content_id": "9248e41a-915d-4f13-916e-b0ed1efa5e5f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background and contextual claims about TSC, mTOR signaling, FMRP function, RNA degradation mechanisms, and prior studies are presented to frame the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C9-C20, C39, C73-C77, C79, C81-C84, C87-C90, C92, C94-C96, C99, C102-C106, C108-C110) are supported by appropriate citations to prior literature and represent established knowledge or prior findings. They provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:57:39.277742Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2a7969e6-4df5-47c3-a536-7ab54ec3a033",
+      "result_id": "9581eea6-5151-4fbb-9944-a99106bc8205"
+    },
+    {
+      "claim_id": "c86f1726-28b6-43bd-a216-3deec36e196a",
+      "result_id": "9581eea6-5151-4fbb-9944-a99106bc8205"
+    },
+    {
+      "claim_id": "0407c3d4-fe68-4731-9a0b-1e577eae8fdc",
+      "result_id": "9581eea6-5151-4fbb-9944-a99106bc8205"
+    },
+    {
+      "claim_id": "709d2ceb-8058-479f-852d-5c5513c86dec",
+      "result_id": "9581eea6-5151-4fbb-9944-a99106bc8205"
+    },
+    {
+      "claim_id": "04bd68c8-4355-43de-9f8e-f66a225ed4f3",
+      "result_id": "5bfd7dfe-65f8-4f9c-bbe8-106e54295bc8"
+    },
+    {
+      "claim_id": "8cdf1026-a9a7-420a-b228-5d8ff7b55525",
+      "result_id": "5bfd7dfe-65f8-4f9c-bbe8-106e54295bc8"
+    },
+    {
+      "claim_id": "7e788daa-107f-4cd7-95ab-58275024ba52",
+      "result_id": "5bfd7dfe-65f8-4f9c-bbe8-106e54295bc8"
+    },
+    {
+      "claim_id": "bcaa3ba4-334f-4e74-a283-48a0da0e0711",
+      "result_id": "5bfd7dfe-65f8-4f9c-bbe8-106e54295bc8"
+    },
+    {
+      "claim_id": "a3bfc572-e86c-48da-b829-3ff31af67f05",
+      "result_id": "5bfd7dfe-65f8-4f9c-bbe8-106e54295bc8"
+    },
+    {
+      "claim_id": "66696da7-0fd1-4752-890c-e680b28bba25",
+      "result_id": "5bfd7dfe-65f8-4f9c-bbe8-106e54295bc8"
+    },
+    {
+      "claim_id": "b3447d54-334c-4692-8405-e074f1cc280d",
+      "result_id": "5bfd7dfe-65f8-4f9c-bbe8-106e54295bc8"
+    },
+    {
+      "claim_id": "e92956ba-8c8f-4395-b1fe-934edc9dfcaa",
+      "result_id": "08e5c56c-de14-41f5-b350-c92fbc2d56ca"
+    },
+    {
+      "claim_id": "f49d67d1-9ff8-4aae-82d0-c79ddb6fc779",
+      "result_id": "08e5c56c-de14-41f5-b350-c92fbc2d56ca"
+    },
+    {
+      "claim_id": "a4064613-564d-4c60-9bfd-bf2f9b6c06e4",
+      "result_id": "08e5c56c-de14-41f5-b350-c92fbc2d56ca"
+    },
+    {
+      "claim_id": "33dd8c3d-d5d7-45c0-a408-ee45f480c35b",
+      "result_id": "08e5c56c-de14-41f5-b350-c92fbc2d56ca"
+    },
+    {
+      "claim_id": "606e0e3c-f99c-4d5f-a49d-53c08b024cae",
+      "result_id": "08e5c56c-de14-41f5-b350-c92fbc2d56ca"
+    },
+    {
+      "claim_id": "73f83b7b-cea8-4352-8b3c-f8071fb2a3c4",
+      "result_id": "b15a70fd-52c1-47d8-9b40-331a17ee0f2f"
+    },
+    {
+      "claim_id": "ee0ff244-295b-4dc2-82c5-bd29cfc37b40",
+      "result_id": "b15a70fd-52c1-47d8-9b40-331a17ee0f2f"
+    },
+    {
+      "claim_id": "315e0329-16dc-4ea8-96d4-872fdb0d89a9",
+      "result_id": "b15a70fd-52c1-47d8-9b40-331a17ee0f2f"
+    },
+    {
+      "claim_id": "f9f396f9-aea4-494a-bb50-882119d23ff4",
+      "result_id": "b15a70fd-52c1-47d8-9b40-331a17ee0f2f"
+    },
+    {
+      "claim_id": "d172a838-5fa9-4bc5-ae3b-a1dd0eedf21b",
+      "result_id": "b15a70fd-52c1-47d8-9b40-331a17ee0f2f"
+    },
+    {
+      "claim_id": "1455f68c-8228-4a65-b240-0b2a2f998b42",
+      "result_id": "b15a70fd-52c1-47d8-9b40-331a17ee0f2f"
+    },
+    {
+      "claim_id": "7bc4a433-2822-46e8-9a54-0da73b18d4c9",
+      "result_id": "b15a70fd-52c1-47d8-9b40-331a17ee0f2f"
+    },
+    {
+      "claim_id": "fd97950f-31d4-47d6-a36f-b00244933dc6",
+      "result_id": "b15a70fd-52c1-47d8-9b40-331a17ee0f2f"
+    },
+    {
+      "claim_id": "7587c961-74de-4997-bd7e-27defd70cc03",
+      "result_id": "218d637f-267e-48a3-bd5d-457f0fab04d9"
+    },
+    {
+      "claim_id": "c6fd0138-1a7a-4649-b06e-242bad684194",
+      "result_id": "218d637f-267e-48a3-bd5d-457f0fab04d9"
+    },
+    {
+      "claim_id": "da05b011-1cde-4fb2-9953-c7e2a91b73e1",
+      "result_id": "218d637f-267e-48a3-bd5d-457f0fab04d9"
+    },
+    {
+      "claim_id": "1b5928e3-be42-4601-8f8c-76828b68a622",
+      "result_id": "218d637f-267e-48a3-bd5d-457f0fab04d9"
+    },
+    {
+      "claim_id": "8c6a5c9d-cfec-415a-8d7e-14365750d1b2",
+      "result_id": "6ee1c26b-993b-439f-9e31-f3483ce8942c"
+    },
+    {
+      "claim_id": "cc886f24-40fd-4331-952b-4e70fa1496c8",
+      "result_id": "6ee1c26b-993b-439f-9e31-f3483ce8942c"
+    },
+    {
+      "claim_id": "1b051331-0e3f-4288-a436-6dc4949ee8d0",
+      "result_id": "6ee1c26b-993b-439f-9e31-f3483ce8942c"
+    },
+    {
+      "claim_id": "9342ddf6-e8f7-43f6-bec5-eabfde2d99b4",
+      "result_id": "63459e07-c378-4458-ae0a-466211d849b0"
+    },
+    {
+      "claim_id": "93295eca-7309-45f9-97a0-56ad06eeadda",
+      "result_id": "63459e07-c378-4458-ae0a-466211d849b0"
+    },
+    {
+      "claim_id": "6334b2b8-6927-4752-8d4f-e6498866e581",
+      "result_id": "63459e07-c378-4458-ae0a-466211d849b0"
+    },
+    {
+      "claim_id": "c57fa833-f9da-4e60-95f2-acbd95c7bfd4",
+      "result_id": "e178ffa3-5af5-471c-805a-7e466825cacf"
+    },
+    {
+      "claim_id": "2cd5b510-7627-4978-a908-b266dac573c8",
+      "result_id": "e178ffa3-5af5-471c-805a-7e466825cacf"
+    },
+    {
+      "claim_id": "d3eb6ea0-30af-404b-97bd-af996da7afb9",
+      "result_id": "e178ffa3-5af5-471c-805a-7e466825cacf"
+    },
+    {
+      "claim_id": "75ea3b7f-6145-40e0-97d0-4799ff51d9cd",
+      "result_id": "3dddc1e2-4fbd-4750-aee9-0aa4f37eeaf1"
+    },
+    {
+      "claim_id": "73a5b6cc-9f32-4826-8c2a-859da7c823f5",
+      "result_id": "3dddc1e2-4fbd-4750-aee9-0aa4f37eeaf1"
+    },
+    {
+      "claim_id": "c89e2226-057e-4ec9-88f5-72618045f3b2",
+      "result_id": "c9b1a279-26de-4139-b609-e4a6c077ecaa"
+    },
+    {
+      "claim_id": "6dc6b6b2-2bb8-43e0-a3f5-ad4fc1eca572",
+      "result_id": "c9b1a279-26de-4139-b609-e4a6c077ecaa"
+    },
+    {
+      "claim_id": "13bcfe90-5620-4229-b971-9ecaa1a0ab45",
+      "result_id": "c9b1a279-26de-4139-b609-e4a6c077ecaa"
+    },
+    {
+      "claim_id": "edaa0abe-6d8c-426d-86e1-f64d4243d693",
+      "result_id": "c9b1a279-26de-4139-b609-e4a6c077ecaa"
+    },
+    {
+      "claim_id": "c643d327-f538-4d81-a901-564b6961a9d0",
+      "result_id": "2ff12b8b-68c6-483b-85b4-dbb66a668219"
+    },
+    {
+      "claim_id": "0576b723-f8ae-4d62-bb64-235441434303",
+      "result_id": "2ff12b8b-68c6-483b-85b4-dbb66a668219"
+    },
+    {
+      "claim_id": "37725d3a-483b-4c52-96e4-c8294b20ff9e",
+      "result_id": "4e995822-9307-419d-a3a6-f063ec73701c"
+    },
+    {
+      "claim_id": "3b60f897-efd6-4770-9ccc-b8dea273bf6b",
+      "result_id": "4e995822-9307-419d-a3a6-f063ec73701c"
+    },
+    {
+      "claim_id": "7f83a354-2055-49ba-abb3-a5923409b6e1",
+      "result_id": "4e995822-9307-419d-a3a6-f063ec73701c"
+    },
+    {
+      "claim_id": "acc3fdbc-3783-4869-8f08-bfff92ceec88",
+      "result_id": "4f6e493e-c720-454a-84a5-0a3147e70463"
+    },
+    {
+      "claim_id": "62beca06-8870-4300-9809-6606b0fa34fc",
+      "result_id": "4f6e493e-c720-454a-84a5-0a3147e70463"
+    },
+    {
+      "claim_id": "37baf344-2c31-4cbd-8890-38c832cfbbff",
+      "result_id": "4f6e493e-c720-454a-84a5-0a3147e70463"
+    },
+    {
+      "claim_id": "9c773842-03c9-485a-93f8-170b1be7b777",
+      "result_id": "237f5273-538e-4008-9a91-4b9b465141e3"
+    },
+    {
+      "claim_id": "c7df15bd-9839-4d20-b4fd-d17fb4b69e03",
+      "result_id": "237f5273-538e-4008-9a91-4b9b465141e3"
+    },
+    {
+      "claim_id": "423bbc8b-003a-4846-bf2c-0793c8a6b2fd",
+      "result_id": "237f5273-538e-4008-9a91-4b9b465141e3"
+    },
+    {
+      "claim_id": "37aa7246-43e7-4632-952f-043be100c15b",
+      "result_id": "237f5273-538e-4008-9a91-4b9b465141e3"
+    },
+    {
+      "claim_id": "128b2064-cda5-4adf-8a58-160c52df12a1",
+      "result_id": "237f5273-538e-4008-9a91-4b9b465141e3"
+    },
+    {
+      "claim_id": "aa93b5bb-a45a-4234-9b86-370f7357e894",
+      "result_id": "237f5273-538e-4008-9a91-4b9b465141e3"
+    },
+    {
+      "claim_id": "b60d33f1-8371-47cf-b564-8cec574aa955",
+      "result_id": "237f5273-538e-4008-9a91-4b9b465141e3"
+    },
+    {
+      "claim_id": "d22c9cd2-ab05-426f-b2fb-16d2d1ce6b87",
+      "result_id": "237f5273-538e-4008-9a91-4b9b465141e3"
+    },
+    {
+      "claim_id": "f0c40569-797a-4d31-8ae1-ee02c8382da5",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "512d04a9-6ae2-41f0-9103-26dbc3178dbc",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "23a2c4c4-2ae0-49dd-9fd3-81ff7d01f6d2",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "6583b223-93ca-4ea2-af29-bf90e579227a",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "49d0dc29-0ed1-4259-a0e6-de323dc231a7",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "ee23ea74-5a7e-406c-ba90-c77ae2e0cdf2",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "afb45486-10e6-48d3-a88e-94c4fde7a861",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "17f92174-7b44-4ce3-93c7-9e4f8dc4543a",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "44c6a776-ca0f-4b73-b570-2b3c034359d4",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "96585d82-4579-4f0f-a8e5-3c706135e21c",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "a44a4eda-2d2a-4578-a7a0-0a013538bad9",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "2a2c8c8c-462a-4c4d-82e4-b85737c86338",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "9fe05c35-8971-456d-b06a-4e65c6e63761",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "fbfcf8b8-dfd4-4539-883f-528d4aad0b8e",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "1142de2d-edab-4575-8ca7-274dc94eb49c",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "6333bda1-855b-4a3a-bf8d-8710750e58f3",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "f43882f4-49d1-4ca5-8f4b-e428e0995907",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "d3c32220-a69e-44ea-a750-14b85d104be8",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "22bc6d36-9793-4d9d-a759-e7ddc8152f36",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "0ccc6dc6-6311-40f5-9071-0292dc028a5f",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "2d580c52-6394-474c-905d-a93ff57f16d5",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "d1f554d6-0df5-4198-9727-605f20126371",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "3550579d-74e4-4489-a770-c039c1ae3c31",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "adc005d0-d8a1-4707-a5ef-f047a3c4d5b0",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "2b80c36c-b6ba-44d8-8e91-ee39d7a5f9be",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "d207bed2-a4ec-4c44-85cc-73a5d05be495",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "a83c43b0-01d2-4e0b-b81f-5f83ddcdaffc",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "2d1dba09-4be7-42dc-ae82-224758a6b00c",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "a57f86d1-10ca-4e93-bb68-38cfcde295b8",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "7753b1a4-b68c-497d-8cb1-e0c369e2e6f9",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "969548f4-262f-40b4-bc34-d7bbf08a0b88",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "41eabd3b-78ba-4ef5-a301-436b44b34e6f",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "27dcd2d6-94cb-4a17-8532-a802ffca650c",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "88e6aa47-e1ef-449e-8f62-c98d25097344",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "f0ad2b7a-e63f-4a0d-9518-5b19a386d234",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "1ff96b71-d7fe-4413-92f8-63b6b0f6500e",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "11142fc2-dde1-445a-8791-dcb7ba88c36d",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "ade9d2c1-9802-4d59-8def-cd6c86d26aa6",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "fd113f4a-b578-4210-8651-78bc29c67a75",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "37d3f29f-668f-4e2d-87a0-007c091ea398",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    },
+    {
+      "claim_id": "f89353ea-a7fd-4d8d-b70e-589e8263dffe",
+      "result_id": "2e47daa3-c11f-4abe-a0cd-4ff1185f32f6"
+    }
+  ],
+  "comparisons": []
+}

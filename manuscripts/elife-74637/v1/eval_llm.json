@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Photoactivation experiments using neurotransmitter-specific Gal4 driver lines revealed distinct anatomical clusters of LHNs with different neurotransmitter identities (cholinergic, GABAergic, glutamatergic, dopaminergic, and octopaminergic) positioned at specific locations relative to the LH. Glutamatergic LHNs comprised approximately 40 labeled somata in dorsomedial, ventrolateral, and ventral clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 describe photoactivation experiments that systematically identify LHN populations by neurotransmitter identity and anatomical location. The data are presented with appropriate anatomical landmarks (GH146-QF labeling) and include quantitative information (e.g., ~40 glutamatergic somata). The methodology is sound and the observations are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C31"
+    ],
+    "result": "The labeled glutamatergic LHNs likely comprise both LHLNs and LHONs, with the dorsomedial cluster presumed to correspond to the PD3a1 and PD3a2 neuron clusters described by Dolan et al., 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C7, and C31 are inferences based on anatomical features and citations of prior work. While the reasoning is plausible, these claims lack direct experimental validation in the current study. The identity assignments rely on circumstantial evidence (cell body position, neurite morphology, neurotransmitter identity) rather than definitive cell-type-specific markers or functional characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C97"
+    ],
+    "result": "Functional imaging revealed that each odor evoked specific, reproducible, and stereotyped activity patterns in glutamatergic LHNs across repeated trials and across individuals, as demonstrated by high correlation coefficients for repeated stimulations and cluster analysis showing odor-specific grouping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 and C97 are well-supported by functional imaging data with appropriate statistical analyses (correlation coefficients, cluster analysis with ANOSIM). The manuscript provides both qualitative (Figure 2A) and quantitative evidence (Figure 2C-F) for reproducibility and odor specificity. Sample sizes appear adequate (n=7) and the methodology is appropriate for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C54"
+    ],
+    "result": "uPNs exhibit significantly lower correlation coefficients between odor pairs compared to LHNs, indicating that odors are better segregated at the uPN level than at the third-order LHN level. Both uPNs and LHNs show stereotyped odor-specific response patterns confirmed by cluster analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, and C54 are supported by comparative functional imaging data with statistical testing (Figure 2E, 2G). The lower correlation coefficients in uPNs compared to LHNs are statistically significant (p<0.001) and consistent with the broader tuning expected from integration of multiple olfactory channels at the LHN level. The cluster analyses for both cell types are appropriately conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C51"
+    ],
+    "result": "Both glutamatergic LHNs and uPNs show valence-specific odor representations, with responses to odors of the same valence being more similar than responses across valences. Attractive and aversive odors are significantly segregated in both cell types (p<0.05 for LHNs, p<0.005 for uPNs by ANOSIM), and both respond more strongly to attractive than aversive odors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 and C51 are supported by PCA and ANOSIM analyses with appropriate statistical significance testing. The valence-specific segregation is demonstrated in both LHNs and uPNs with clear p-values. The response amplitude differences between attractive and aversive odors are shown across multiple focal planes (Figure 3C-F), providing robust evidence for valence coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C48",
+      "C49",
+      "C98"
+    ],
+    "result": "The response strength of glutamatergic LHNs is positively correlated with behavioral odor preference (Spearman rank correlation, p=0.01), with stronger LHN activity associated with attractive odors and weaker activity with aversive odors, indicating these neurons are mainly tuned to attractive odors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C48, C49, and C98 are supported by correlation analysis between functional imaging data and behavioral T-maze assays (Figure 3G). The significant correlation (p=0.01) provides evidence linking neural activity to behavior. However, the authors appropriately note this is correlational and does not establish causality. The behavioral assays appear properly conducted with adequate replicates (~20 per odor).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The response strength of uPNs did not correlate significantly with olfactory preference indices, despite showing valence-specific representation, suggesting that glutamatergic LHN activity may contribute more significantly to behavioral odor preferences than uPN activity alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 are supported by the lack of significant correlation between uPN responses and behavioral preference (Figure 3H), contrasting with the significant correlation observed for LHNs. The inference in C24 is appropriately cautious, noting this suggests rather than proves a functional role. The authors correctly acknowledge that causality would require manipulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C50"
+    ],
+    "result": "The differential activity in glutamatergic LHNs does not correlate with OSN-level activity (overall OSN activity or number of activated ORs), indicating that the observed LHN response properties arise from second-order neuronal processing rather than being inherited from the sensory level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C50 are supported by correlation analyses using OSN data from the DoOR database (Figure 3I-J). The lack of correlation with OSN activity provides evidence that LHN response properties emerge from central processing. However, the reliance on database values rather than direct measurements introduces some uncertainty, though the DoOR database is a well-established resource in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The comparison between uPN and LHN responses showed no correlation, suggesting that the differential activity in glutamatergic LHNs is not a simple relay of AL input through uPNs but involves processing by mPNs or other LHNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by correlation analysis (Figure 3K). The lack of correlation between uPN and LHN response strengths provides evidence against simple relay transmission. The inference about processing by mPNs or other LHNs is reasonable given the known connectivity, though the specific mechanisms remain to be determined by the subsequent experiments in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Immunohistochemistry with pre- and postsynaptic markers revealed that glutamatergic LHNs possess both presynaptic dendrites and postsynaptic axon terminals in the LH, indicating the population comprises both LHLNs and LHONs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C31 are supported by immunohistochemistry data showing both syp-GC3 (presynaptic) and homer-GC3 (postsynaptic) markers (Figure 4A). The presence of both marker types in the LH provides direct evidence for the mixed population. The inference about LHLNs and LHONs is reasonable given the polarity markers, though individual cell-type identification would require more specific labeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "CD4-GRASP experiments demonstrated clear neuronal connectivity between glutamatergic LHNs and both uPNs (using GH146-LexA) and mPNs (using MZ699-Gal4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 are supported by GRASP imaging data (Figure 4B). The clear GFP signals indicate physical proximity consistent with synaptic connectivity. However, the authors appropriately note that CD4-GRASP can produce false positives at non-synaptic locations, which is why they follow up with neurexin-GRASP for synaptic specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Neurexin-GRASP experiments showed that glutamatergic LHNs provide presynaptic output onto uPNs (implying feedback to the AL) and that mPNs form presynaptic and possibly postsynaptic connections with glutamatergic LHNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by neurexin-GRASP data (Figure 4C) which provides synaptic specificity. The GFP signals indicate synaptic connectivity, though the directionality inference for mPNs (C36) is somewhat uncertain since neurexin can be present at both pre- and postsynaptic sites. The feedback connection to uPNs (C35) is a reasonable inference but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Laser transection of the iACT tract completely abolished odor-evoked responses to vinegar and benzaldehyde in glutamatergic LHNs across all three focal planes, demonstrating that these neurons receive their major excitatory input from the AL through uPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C38 are strongly supported by functional imaging before and after laser ablation (Figure 5A-B). The complete abolition of responses provides compelling evidence for uPNs as the major excitatory input. Controls showing no effect in the untreated hemisphere (Figure 5\u2014figure supplement 1) strengthen the conclusion by ruling out non-specific damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C101"
+    ],
+    "result": "Transecting the mACT tract led to significant increases in odor-evoked responses in glutamatergic LHNs, with the effect being odor-selective: strongest for vinegar and acetophenone, moderate for benzaldehyde, and weak or absent for other odors, indicating odor-selective inhibition from mPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C101 are supported by functional imaging after mACT transection (Figure 5C-D, Figure 5\u2014figure supplement 2). The differential effects across odors provide evidence for odor-selective inhibition. Statistical testing shows significance for some odors (vinegar, acetophenone) but only trends for others, which is appropriately reported. The interpretation of odor-selective inhibition is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C53"
+    ],
+    "result": "Removal of mPN-mediated inhibition reduced the correlation coefficient for vinegar responses (indicating altered spatial patterns) but not for benzaldehyde, and increased the similarity between vinegar and benzaldehyde response patterns, demonstrating that mPN inhibition is crucial for generating distinct, odor-specific response patterns in the LH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C53 are supported by analysis of response patterns before and after mACT transection (Figure 6B-C). The differential effects on within-odor versus across-odor correlations provide strong evidence for the role of mPN inhibition in maintaining odor specificity. Statistical significance is shown (p<0.001 for across-odor comparison), and the logic connecting the observations to the functional role is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C52",
+      "C100",
+      "C102"
+    ],
+    "result": "The study demonstrates that glutamatergic LHNs respond in a reproducible, stereotypic, and odor-specific manner, receive major excitatory input from uPNs and odor-specific inhibitory input from mPNs (shown by GRASP and laser transection), and encode both hedonic valence and odor identity while retaining odor coding properties of second-order neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C52, C100, and C102 represent summary statements of the main findings. These are well-supported by the collective evidence from functional imaging, GRASP, and laser ablation experiments described in the manuscript. The conclusions appropriately integrate multiple lines of evidence and are consistent with the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "LHNs show improved categorization of odors based on behavioral significance, odor scene, or chemical group (citing prior studies), and the distinct odor-specific response map observed suggests that dimensionality of odor features may not be reduced but retains odor specificity at the third-order processing stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 relies entirely on citations of prior work and is not directly tested in this study. Claim C56 is an inference about dimensionality that goes beyond what the data directly show. While the observation of odor-specific patterns is supported, the specific claim about dimensionality reduction would require more direct analysis (e.g., dimensionality measurements, information theory approaches) to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The authors postulate that valence-specific activity in glutamatergic LHNs results from integrating inputs from multiple olfactory channels through second-order neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is explicitly labeled as a postulation/speculation in the manuscript. While this is a reasonable mechanistic hypothesis consistent with the data (lack of correlation with OSN activity, connectivity with both uPNs and mPNs, broader tuning than PNs), it remains an inference rather than a directly demonstrated mechanism. The claim is appropriately presented as a working model rather than established fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The introduction and discussion sections provide extensive background on insect olfactory systems, LH organization, PN-LHN connectivity patterns, and prior findings on odor coding and valence representation, citing numerous previous studies to contextualize the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C96 represent background knowledge and citations of prior work in the introduction and discussion. These are appropriately cited and accurately represent the state of the field. While not original findings of this study, they provide necessary context and are generally accurate representations of the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "LHNs receive input from similarly and differently tuned uPNs, and the topographic map of uPN axonal terminals is not clearly retained at the LHN level, contributing to broader tuning in LHNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C83 are inferences based on known connectivity patterns from prior studies and the observed broader tuning in LHNs compared to uPNs. While not directly demonstrated in this study, these are reasonable interpretations consistent with the data and with cited literature on PN-LHN connectivity. The loss of topographic organization is a logical consequence of convergent and divergent connectivity patterns.",
+    "result_type": "MINOR"
+  }
+]

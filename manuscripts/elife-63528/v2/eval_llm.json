@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Mitotic chromosome compaction in metazoan cells involves ~1000-fold linear compaction driven primarily by condensin complexes through a loop extrusion mechanism, which has been observed in single-molecule experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C12 establish the biological context and prior experimental evidence for condensin-mediated chromosome compaction through loop extrusion. These claims are well-supported by multiple citations to established experimental work and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C24"
+    ],
+    "result": "There is a gap between in vitro observations of condensin dynamics (including one-sided and asymmetric two-sided extrusion) and understanding how these properties achieve the 1000-fold compaction observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20, C24 identify the knowledge gap that motivates this study. The claims are supported by citations to recent experimental work (Ganji et al., 2018; Golfier et al., 2020; Kong et al., 2020) and prior theoretical work (Banigan and Mirny, 2019; Banigan et al., 2020) showing that observed one-sided extrusion is insufficient for full compaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C53",
+      "C55",
+      "C56",
+      "C58",
+      "C92"
+    ],
+    "result": "Asymmetric two-sided loop extrusion can achieve 1000-fold chromosome compaction if the slow side extrudes quickly enough to eliminate unlooped gaps between LEFs, even with large asymmetries observed in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C53, C55-C56, C58, C92 present simulation results showing that asymmetric two-sided LEFs can compact chromosomes provided \u03bb_slow/d > 1. The results are supported by simulation data (Figure 1) and are consistent with the theoretical requirement for gap closure. The finding that scenario 1 (50% one-sided LEFs) achieves only ~60-fold compaction while scenarios 2-3 (all asymmetric two-sided) achieve >1000-fold compaction demonstrates the importance of two-sidedness over symmetry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C70",
+      "C93",
+      "C97",
+      "C100",
+      "C183",
+      "C184"
+    ],
+    "result": "Mixtures of one- and two-sided LEFs can achieve 1000-fold compaction if two-sided LEFs have sufficiently long residence times, allowing them to extrude gaps left by short-lived one-sided LEFs. Even a small fraction (~20%) of long-lived two-sided LEFs may be sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C70, C93, C97, C100, C183-C184 present the key finding that long residence times for two-sided LEFs enable high compaction in mixtures. This is supported by simulation data (Figure 2) and theoretical analysis (Appendix 1). The phase diagram (Figure 2e) shows that 1000-fold compaction is achievable within physiologically relevant parameter ranges. The theoretical mechanism (transient barriers) is clearly explained and validated by simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C94",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "For mixtures of condensins I and II to achieve 1000-fold compaction, stable chromatin binding by condensin II must be coupled to two-sided extrusion, with the extra-stable subpopulation of condensin II performing two-sided extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C86-C87, C90-C91, C94, C102-C104 present simulation results for condensin I/II mixtures. The finding that coupling stable binding to two-sided extrusion is necessary is supported by simulation data (Figure 3). The simulations show that \u03c4_II = 3\u03c4_I alone gives only ~260-fold compaction, but adding extra-stable two-sided condensin II achieves >1000-fold compaction. This is consistent with the general principle established in the previous result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C188",
+      "C189"
+    ],
+    "result": "The authors hypothesize that condensin II complexes may dimerize in vivo to simultaneously enable two-sided extrusion and increase residence time, providing a molecular mechanism for the required coupling between these properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29, C112-C117, C124-C129, C188-C189 present a speculative hypothesis about condensin dimerization. While the hypothesis is motivated by simulation results and experimental observations (Kong et al., 2020 showing two-sided condensin I complexes are dimers), it remains speculative. The authors appropriately present this as a hypothesis requiring further experimental validation. The speculation is reasonable but not directly tested in this work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The hierarchical loop structure observed in metazoan chromosomes (large condensin II loops with nested smaller condensin I loops) naturally emerges from the loop extrusion model with LEFs having different residence times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132, C134-C138 show that the model reproduces the observed hierarchical chromosome structure. This is supported by simulation results (Figure 3\u2014figure supplement 1, Figure 2b) and is consistent with prior modeling work (Goloborodko et al., 2016a; Gibcus et al., 2018). The emergence of this structure from differences in residence times alone is a natural consequence of the model and is well-demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Chromosome morphology and compaction could be regulated by modulating the relative residence times of condensins I and II or the fraction performing one-sided versus two-sided extrusion, potentially through post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C145 present predictions about morphology regulation. While C139-C140 cite experimental observations, C141-C145 are speculative predictions based on the model. These predictions are logical extensions of the simulation results but have not been experimentally tested. The claims appropriately use conditional language ('could', 'might') indicating their speculative nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The kinetics of chromosome compaction in mixtures of condensins with different dynamics involves multiple timescales, with initial compaction occurring within ~1-2 residence times of short-lived LEFs and continued loop growth throughout mitosis as long-lived condensin II remains bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C154 present predictions about compaction kinetics based on the model and experimental residence times. The predictions are logical consequences of the model dynamics and are consistent with experimental observations (Nagasaka et al., 2016; Gibcus et al., 2018; Walther et al., 2018; Sun et al., 2018). The timescale analysis is sound and the predictions are testable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C167",
+      "C168",
+      "C170",
+      "C171"
+    ],
+    "result": "The principles established for mitotic chromosome compaction are generalizable to other chromosome organization scenarios, including TAD formation in interphase, where asymmetric two-sided LEFs and mixtures of LEFs might form TADs if the slow side is fast enough.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-C164, C167-C168, C170-C171 extend the findings to TAD formation. While the extension is logical and builds on prior work (Banigan et al., 2020), the predictions are speculative and have not been tested. The authors appropriately note that cohesin extrusion is largely symmetric (C167, C171), making some scenarios hypothetical. The predictions require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "For bacterial chromosome arm juxtaposition, asymmetric two-sided LEFs and mixtures of one- and two-sided LEFs are not expected to produce the observed Hi-C patterns because the loading site near the origin of replication breaks translational symmetry, requiring symmetric extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C180 present predictions about bacterial chromosome organization based on prior work (Banigan et al., 2020) and the current findings. The reasoning is sound: asymmetric extrusion would produce two non-perpendicular secondary diagonals in Hi-C maps, inconsistent with observations. Claims C181-C182 appropriately note that LEF traversal scenarios require further investigation. The predictions are logical extensions of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C44",
+      "C194",
+      "C198"
+    ],
+    "result": "The computational model represents chromosomes as one-dimensional polymer fibers with LEFs that have active and inactive subunits, bind randomly, extrude directionally, act as barriers to each other, and unbind stochastically, with simulations run at least twice for each parameter set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C35-C40, C42, C44, C194, C198 describe the computational model. The model is clearly defined with appropriate assumptions justified by experimental observations (e.g., C40, C42 cite experiments supporting random binding and orientation). The model builds on prior work (C31 cites previous models) and includes appropriate replication (C198). The model description is sufficient for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Complete chromosome compaction requires directed translocation to collect chromatin from both sides of the condensin complex; diffusive sliding combined with active translocation is insufficient to eliminate gaps and achieve 1000-fold compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C105-C107 establish a key mechanistic requirement. C47 is supported by prior theoretical work (Banigan and Mirny, 2019; Banigan et al., 2020). C105-C106 cite experimental (Ganji et al., 2018) and computational (Banigan et al., 2020) evidence that diffusive sliding is insufficient. C107 is a logical conclusion from these observations. This establishes an important constraint on possible mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "While the yeast kleisin Brn1 and Hawk Ycg1 can anchor condensin to DNA as a 'safety belt', this mechanism generates pure one-sided extrusion that is incompatible with metazoan mitotic chromosome compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 discuss the safety belt mechanism. C109-C110 cite experimental observations (Kschonsak et al., 2017; Terakawa et al., 2017; Ganji et al., 2018) showing that the safety belt generates one-sided extrusion. C111 cites prior theoretical work (Banigan and Mirny, 2019) showing this is insufficient for metazoan compaction. C108 is speculative but reasonable. The reasoning is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "While one hypothesis suggested condensin I performs one-sided extrusion and condensin II performs two-sided extrusion, recent single-molecule experiments show both human condensins I and II can perform either mode, with two-sided extrusion more frequent for condensin I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 discuss competing hypotheses about condensin I/II extrusion modes. C118 cites a prior hypothesis (Banigan and Mirny, 2020). C119-C121 cite experimental support for this hypothesis. However, C122-C123 cite more recent experiments (Kong et al., 2020) showing both condensins can perform either mode. This appropriately acknowledges conflicting evidence and updates the hypothesis based on new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Condensins I and II have different dynamic properties: condensin I remains bound for 2-3 min while condensin II has two subpopulations (15-40% with 5-8 min residence, remainder stably bound for much longer, possibly ~2 hr); condensin I extrudes approximately twice as fast as condensin II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 summarize experimental measurements of condensin dynamics. These are well-supported by multiple citations to FRAP experiments (Gerlich et al., 2006a; Walther et al., 2018), Hi-C analysis (Gibcus et al., 2018), and single-molecule experiments (Kong et al., 2020; Golfier et al., 2020). The measurements provide key parameters for the simulations. C68 appropriately infers that dynamics may depend on associated proteins or extrusion mode.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C190",
+      "C191"
+    ],
+    "result": "The mechanisms responsible for different extrusion dynamics remain to be determined, but the analysis suggests two-sided extrusion should be tightly coupled to stable chromatin binding. Further single-molecule, biochemical, and structural studies could clarify how molecular properties generate diverse SMC complex functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C187, C190-C191 appropriately identify open questions and suggest future research directions. C185 acknowledges what remains unknown. C186-C187 state a key conclusion from the analysis (supported by simulation results). C190-C191 suggest appropriate follow-up experiments. These claims appropriately distinguish between what has been established and what requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C21",
+      "C22",
+      "C23",
+      "C30",
+      "C60",
+      "C85",
+      "C101"
+    ],
+    "result": "The manuscript addresses how condensins with properties observed in single-molecule experiments (diverse dynamics including one-sided, symmetric two-sided, and asymmetric two-sided extrusion) can achieve the ~1000-fold compaction required for mitotic chromosomes, providing the first demonstration of this connection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6, C21-C23, C30, C60, C85, C101 frame the central question and main contribution of the manuscript. The claims are supported by citations to experimental observations (Golfier et al., 2020; Kong et al., 2020) and the simulation/theoretical results presented. C30 appropriately claims this as the first demonstration connecting single-molecule observations to chromosome-scale compaction. The novelty claim is justified given the gap identified in prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C203"
+    ],
+    "result": "The expected range of asymmetries for physiological conditions was calculated from symmetry scores measured by Golfier et al., 2020, with v_slow > 0.025 v_fast for two-thirds of condensin loop extrusion events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C203 describes how physiological asymmetry ranges were estimated. This is a straightforward calculation based on published experimental data (Golfier et al., 2020). The methodology is appropriate and the calculation is verifiable from the cited source. This provides important context for interpreting the simulation results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2080 @@
+{
+  "submission": {
+    "id": "3aa14c0e-a402-46dc-aaf5-dd11d0e552e8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:38:04.770631Z",
+    "updated_at": "2025-12-03T10:38:04.770631Z"
+  },
+  "content": [
+    {
+      "id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "submission_id": "3aa14c0e-a402-46dc-aaf5-dd11d0e552e8",
+      "content_type": "manuscript",
+      "content_text": "# A DCL3 dicing code within Pol IV-RDR2 transcripts diversifies the siRNA pool guiding RNA-directed DNA methylation\n\n## Authors\n\n- Andrew Loffer<sup>1</sup>\n- Jasleen Singh<sup>1</sup>\n- Akihito Fukudome<sup>1</sup> ([ORCID: 0000-0001-8924-1035](https://orcid.org/0000-0001-8924-1035))\n- Vibhor Mishra<sup>1</sup>\n- Feng Wang<sup>1</sup>\n- Craig S Pikaard<sup>1</sup> ([ORCID: 0000-0001-8204-7459](https://orcid.org/0000-0001-8204-7459)) \u2020\n\n### Affiliations\n\n1. Department of Biology and Department of Molecular and Cellular Biochemistry, Indiana University Bloomington Bloomington United States ([ROR:02k40bc56](https://ror.org/02k40bc56))\n2. Howard Hughes Medical Institute, Indiana University Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn plants, selfish genetic elements, including retrotransposons and DNA viruses, are transcriptionally silenced by RNA-directed DNA methylation. Guiding the process are short interfering RNAs (siRNAs) cut by DICER-LIKE 3 (DCL3) from double-stranded precursors of ~30 bp that are synthesized by NUCLEAR RNA POLYMERASE IV (Pol IV) and RNA-DEPENDENT RNA POLYMERASE 2 (RDR2). We show that Pol IV\u2019s choice of initiating nucleotide, RDR2\u2019s initiation 1\u20132 nt internal to Pol IV transcript ends and RDR2\u2019s terminal transferase activity collectively yield a code that influences which precursor end is diced and whether 24 or 23 nt siRNAs are produced. By diversifying the size, sequence, and strand specificity of siRNAs derived from a given precursor, alternative patterns of DCL3 dicing allow for maximal siRNA coverage at methylated target loci.\n\n## Introduction\n\nIn eukaryotes, short interfering RNAs (siRNAs) are used to suppress DNA transcription or mRNA translation, thereby playing important roles in gene regulation (Shabalina and Koonin, 2008; Ipsaro and Joshua-Tor, 2015; Martienssen and Moazed, 2015). Plant siRNAs range in size from 21 to 24 nt, with DCL3-dependent 23 and 24 nt siRNAs (Xie et al., 2004; Henderson et al., 2006) accounting for ~90% of the total siRNA pool (Kasschau et al., 2007; Zhang et al., 2007; Mosher et al., 2008). The 24 nt siRNAs stably associate with one of several Argonaute family proteins, primarily ARGONAUTE 4 (AGO4) (Zilberman et al., 2003; Qi et al., 2006), and guide resulting complexes to target loci via base-pairing interactions with long noncoding RNAs synthesized by multisubunit NUCLEAR RNA POLYMERASE V (Figure 1A; Wierzbicki et al., 2008; Wierzbicki et al., 2009). Protein-protein interactions between AGO4 and the C-terminal domain of the Pol V largest subunit, or Pol V-associated protein SPT5L, also contribute to AGO4 localization at target loci (El-Shami et al., 2007; He et al., 2009; Lahmy et al., 2016). Subsequent recruitment of the de novo DNA methyltransferase, DRM2 (Cao and Jacobsen, 2002; Zhong et al., 2014) and other chromatin modifying enzymes then leads to the establishment of repressive chromatin environments that inhibit promoter-dependent transcription by DNA-dependent RNA Polymerases I, II, or III (Matzke and Mosher, 2014; Wendte and Pikaard, 2017). In this way, RNA-directed DNA methylation (RdDM) facilitates transcriptional silencing at thousands of loci throughout plant genomes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig1-v2.jpg)\n\n**Figure 1.:** (A) A simplified model of RNA-directed DNA methylation (RdDM) highlighting the roles of Pol IV, Pol V, RDR2, DCL3, and AGO4. (B) Model depicting the hypothesis that DCL3 dicing of dsRNA precursors can yield a 24 nt siRNA from the 5\u2032 end of the Pol IV transcript paired to a 23 nt siRNA from the RDR2 3\u2032 end. Pol IV transcripts tend to begin with A or G and RDR2 transcripts often have an untemplated nucleotide (N) at their 3\u2032 termini. Green shading depicts DCL3 and its interaction with the left side of the dsRNA precursor. (C) A test of the model shown in (B). A 37 nt top strand was annealed to 37, 38, or 39 nt bottom strand to form dsRNA substrates with two blunt ends or a left-side 1 or 2 nt 3\u2032 overhang on the bottom strand (see Supplementary file 1 for RNA strand sequences). Resulting dsRNAs (50 nM) were then incubated with 25 nM of affinity purified recombinant DCL3 (see Figure 1\u2014figure supplement 1 \u2013 (A)). RNAs were then resolved by denaturing polyacrylamide gel electrophoresis (PAGE) and visualized using SYBR Gold staining. Lane 4 is a control that includes DCL3 but no RNA. (D) DCL3 prefers 3\u2032 overhangs. Dicing reactions were conducted as in (C), but with either the top strand (37 nt) or bottom strand (38 or 39 nt) 5\u2032 end-labeled with 32P and the final concentration of dsRNAs being 25 nM. In each case, a non-radioactive monophosphate is also present at the 5\u2032 end of the complementary strand. Following incubation with (lanes 3, 4, 7, and 8) or without (lanes 1, 2, 5, and 6) DCL3, RNAs were resolved by denaturing PAGE and visualized by phosphorimaging. A related experiment comparing time courses of DCL3 cleavage for substrates with 1 or 2 nt overhangs is shown in Figure 1\u2014figure supplement 1 \u2013 (B). (E) DCL3 cuts from both ends of precursors that have two blunt ends. Dicing reactions of 5\u2032 end-labeled dsRNAs were conducted as in (E) but with precursors that lack a 3\u2032 overhang at one end.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Recombinant wild-type (WT) DCL3 bearing a C-terminal FLAG tag was produced in insect cells and affinity purified using anti-FLAG resin. The purified protein was analyzed by SDS-PAGE and Coomassie Blue staining. (B) Time course comparison of DCL3 dicing of substrates with either 1 or 2 nt 3\u2032 overhangs. An end-labeled 37 nt top strand was annealed to 38 or 39 nt bottom strands to form dsRNA substrates with either 1 or 2 nt 3\u2032 overhangs. Resulting dsRNAs (50 nM) were then incubated with 25 nM of affinity purified recombinant DCL3 for 1, 5, 10, or 15 min. RNAs were then resolved by denaturing polyacrylamide gel electrophoresis (PAGE) and visualized using SYBR Gold staining. Lanes 1 and 2 are controls that contain the different dsRNAs but no protein.\n\nBiogenesis of siRNAs involved in RdDM begins with DNA transcription by Pol IV, a 12-subunit DNA-dependent RNA polymerase that evolved as a specialized form of Pol II (Ream et al., 2009). Pol IV associates with RDR2 (Law et al., 2011; Haag et al., 2012) via direct physical interaction (Mishra et al., 2021) to form a multi-functional enzyme complex. The transcription reactions of Pol IV and RDR2 are tightly coupled (Singh et al., 2019) with Pol IV\u2019s inability to maintain processivity through double-stranded DNA regions proposed to results in Pol IV arrest and backtracking, coincident with DNA template-nontemplate strand reannealing and extrusion of the nascent transcript\u2019s 3\u2032 end for engagement by RDR2 (Fukudome et al., 2021). Resulting double-stranded RNAs (dsRNAs), ranging in size from ~25 to 40 bp in vivo (Blevins et al., 2015; Zhai et al., 2015; Yang et al., 2016; Ye et al., 2016) are then diced by DCL3. Biogenesis of 23 and 24 nt siRNAs can be recapitulated in vitro upon incubating purified Pol IV, RDR2, and DCL3 with single-stranded bacteriophage M13 template DNA and nucleoside triphosphates, indicating that no other activities are needed (Singh et al., 2019).\n\nAlthough DCL3 generates both 23 and 24 nt siRNAs, immunoprecipitated AGO4 associates almost entirely with 24 nt siRNAs (Mi et al., 2008; Havecker et al., 2010), making the significance of 23 nt siRNAs unclear. We have proposed that when paired with 24 nt siRNAs, the 23 nt RNAs help specify the stable AGO4-association of the 24 nt strands (Singh et al., 2019). In this study, we investigated the rules of DCL3 dicing, revealing how Pol IV and RDR2-encoded cues program DCL3 dicing patterns and account for the biogenesis of either 23 or 24 nt siRNAs. We show that DCL3 preferentially binds dsRNAs with 3\u2032 overhangs and that overhangs are present at both ends of Pol IV-RDR2 dsRNA transcripts to facilitate dicing from either end, with two distinct activities of RDR2 accounting for these 3\u2032 overhangs. The choice of nucleotide incorporated at the 5\u2032 terminus of Pol IV transcripts also affects DCL3 activity, and which end of the dsRNA is diced. Our evidence indicates that DCL3 measures only one strand of its substrate dsRNAs, with RNase III domain B cutting the measured strand to produce 24 nt siRNAs and domain A cutting the non-measured strand to produce either 23 or 24 nt siRNAs. Collectively, our experiments reveal a code comprised of sequence and structural features intrinsic to paired Pol IV-RDR2 transcripts that programs alternative DCL3 dicing patterns, thereby diversifying the siRNA pool that guides RNA-directed DNA methylation to complementary target loci.\n\n## Results\n\n### DCL3 preferentially dices double-stranded RNAs with 3\u2032 overhangs\n\nAn untemplated nucleotide is often present at the 3\u2032 ends of RDR2 transcripts and is enriched among 23 nt, but not 24 nt siRNAs (Singh and Pikaard, 2019). RDR2\u2019s terminal transferase activity can account for the addition of these untemplated 3\u2032 terminal nucleotides (Blevins et al., 2015). These observations led to the model in Figure 1B in which DCL3 interacts with base-paired Pol IV-RDR2-transcripts, measures and cuts 24 nt from the 5\u2032 terminus of the Pol IV strand (shown as the top strand in Figure 1B and throughout this paper), and makes a second cut of the RDR2 strand that is offset by 2 nt from the Pol IV-strand cut site (Singh et al., 2019; Singh and Pikaard, 2019). Because of the untemplated nucleotide added to the 3\u2032 end of the RDR2 strand, the predicted dicing product is an asymmetric 24/23 nt siRNA duplex (Singh et al., 2019).\n\nTo test whether DCL3 can, in fact, carry out the hypothetical reaction of Figure 1B, recombinant DCL3 produced in insect cells was purified to near-homogeneity (Figure 1\u2014figure supplement 1 -panel A) and incubated with a dsRNA generated by annealing 37 and 38 nt RNA strands (see Supplementary file 1a for RNA strand sequences). This dsRNA has a 3\u2032 overhang of 1 nt on the left side, as drawn in Figure 1C, to mimic the overhang attributable to nucleotide addition by RDR2\u2019s terminal transferase activity. DCL3 cuts the 37/38 nt dsRNA to yield 23 and 24 nt products (Figure 1C, lanes 1 and 5) as predicted by the model. Similarly, DCL3 cuts a dsRNA with a 2 nt overhang, formed by annealing 37 and 39 nt RNAs, generating two 24 nt RNAs (Figure 1C, lanes 2 and 6). These results are consistent with the hypothesis that DCL3 measures and cuts 24 nt from the 5\u2032 end of the top strand, and makes an offset cut of the bottom strand to leave a 2 nt 3\u2032 overhang, as expected from prior studies (Zhang et al., 2004; Takeshita et al., 2007; Nagano et al., 2014). The results also suggest that the length of the bottom strand can vary, indicating that its 3\u2032 end is not anchored at a fixed position within DCL3.\n\nGiven a dsRNA substrate with two blunt ends, DCL3 generates dicing products of diverse sizes, including 21, 22, 24, and 25 nt RNAs (Figure 1C, compare lanes 3 and 7). Gel mobility depends on RNA sequence, thus RNAs of the same length, but from opposite strands of the dsRNA, differ in mobility, as is apparent in Figure 1C. Importantly, 21, 22, and 25 nt dicing products are not observed at significant levels among siRNAs produced in vitro by Pol IV, RDR2, and DCL3 (Singh et al., 2019), nor have RNAs of these sizes been attributed to DCL3 activity based on analysis of dcl3 mutants in vivo (Xie et al., 2004; Henderson et al., 2006). These considerations, combined with the results of Figure 1C, indicate that dsRNAs with 3\u2032 overhangs, not blunt ends, best account for the 23 and 24 nt siRNAs generated by DCL3.\n\nTo more definitively test whether DCL3 prefers 3\u2032 overhangs over blunt ends, we performed DCL3 cleavage assays using dsRNAs that have a 3\u2032 overhang on the left side and a blunt end on the right side, with either the top strand or bottom strand end-labeled with 32P (Figure 1D). If the 3\u2032 overhanging end is preferred by DCL3, a 24 nt 32P-labeled dicing product is expected from the 32P-labeled top strand and a 16 nt product is expected from the 32P-labeled bottom strand. This is observed, with dsRNA substrates that have 3\u2032 overhangs of 1 or 2 nt yielding nearly identical products (Figure 1D, compare lanes 1\u20134 to lanes 5\u20138) and reaction time-courses (Figure 1\u2014figure supplement 1 \u2013 (B)). In contrast, if DCL3 is incubated with a dsRNA with two blunt ends, DCL3 dices from both ends, generating 16 and 24 nt products from both strands (Figure 1E). Collectively, the results of Figure 1 show that DCL3 will cut dsRNAs with 3\u2032 overhanging ends or blunt ends but prefers 3\u2032 overhanging ends.\n\n### DCL3 measures 24 nt from the recessed 5\u2032 end of dsRNAs with 3\u2032 overhangs\n\nExperiments testing the dicing of dsRNAs formed by annealing RNA strands ranging in size from 22 to 25 nt yielded additional evidence that DCL3 measures only one strand of its dsRNA substrates (Figure 2). Using a duplex whose top strand was 24 nt and whose bottom strand was 25 nt, thus generating a 1 nt 3\u2032 overhang on the left side, the 24 nt top strand was not cut by DCL3, but the bottom strand was trimmed by 2 nt to yield a 23 nt product (Figure 2A). We next tested a duplex with two blunt ends, formed by annealing two 24 nt RNAs (Figure 2B; note that these 24 nt RNAs have different gel mobilities). Dicing by DCL3 occurred from the left or right sides, due to the absence of a 3\u2032 overhang to bias dicing to one side. In each case, one 24 nt strand was uncut whereas the paired strand was trimmed to 22 nt RNA (Figure 2B, lane 3; note that the alternative 22 nt RNAs also have different gel mobilities).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig2-v2.jpg)\n\n**Figure 2.:** In the experiments shown in each panel of the figure, RNA strands ranging in size from 22 to 25 nt were annealed in various permutations to form dsRNA substrates that were then tested for DCL3 dicing. RNA substrates and dicing products were then resolved by denaturing polyacrylamide gel electrophoresis and visualized by SYBR Gold staining. (A) Precursors as short as 24 and 25 nt can give rise to siRNAs. In this experiment, RNAs of 24 and 25 nt were annealed and tested for dicing. The diagram summarizes DCL3\u2019s trimming of 2 nt from the 3\u2032 end of the 25 nt RNA strand to generate a 24/23 nt dsRNA. (B) A recessed 5\u2032 end allows a 23 nt RNA to guide dicing consistent with the 24 nt measurement rule. RNAs of 24 or 23 nt RNAs were annealed to form a 24/24 nt (top strand/bottom strand) dsRNA with two blunt ends or a 23/24 nt dsRNA with a left-side 3\u2032 overhang. The diagram summarizes DCL3\u2019s trimming of 2 nt from the 5\u2032 end of either strand of 24/24 nt dsRNAs but trimming of 1 nt from the 24 nt strand of the 23/24 nt dsRNA substrate. (C) Predicted dicing products are not diced further by DCL3. Double-stranded RNAs with strands of 23 or 24 nt were annealed to generate 3\u2032 overhangs of 1 or 2 nt at each end. The 24/23 nt dsRNA mimics the digestion product introduced in Figure 1B. The 24/24 nt dsRNA mimics a product that might result from sequential dicing events or internal initiation by RDR2. (D) Duplexes in which both strands are 23 nt or shorter are not precisely diced but are digested by DCL3 into 17\u201322 nt products. Test substrates were 23/23 and 22/22 nt duplexes with two blunt ends, or a 22/23 nt duplex with a 1 nt 3\u2032 overhang on the bottom strand.\n\nAn informative dicing pattern was observed for a duplex formed by annealing a 23 nt top strand with a 24 nt bottom strand and having a 1 nt 3\u2032 overhang on the left side. Dicing of this substrate resulted in the 24 nt bottom strand being cut, but trimmed by only 1 nt (Figure 2B, lanes 4 and 5). This indicates that DCL3\u2019s measurement of an interval equivalent to 24 nt is a consequence of interaction with the recessed 5\u2032 end of the top strand. The bottom strand was cut at a position offset by 2 nt from where the 24th nucleotide would have been present in the top strand had the top strand been long enough.\n\nNext, we annealed a 24 nt top strand and a 23 nt bottom strand to generate a duplex with a 1 nt 3\u2032 overhang on the left side and a 2 nt 3\u2032 overhang on the right side (Figure 2C), which mimics the dicing product proposed in Figure 1B (and Singh et al., 2019) and verified in Figure 1C. DCL3 does not cut either stand of this duplex RNA (Figure 2C, compare lanes 2 and 3). This suggests that the asymmetric 24/23 nt dsRNA duplex fits into the enzyme with the RNase domains aligned with the pre-existing ends of the RNA strands. As a result, no cutting occurs. A 24/24 nt duplex having 2 nt 3\u2032 overhangs at both ends was also not cut by DCL3 (Figure 2C, compare lanes 4 and 5). These results indicate that DCL3 dicing products are not substrates for further dicing.\n\nUnlike 24/23 and 24/24 dicing products that are not diced further, duplexes formed by annealing 23 and 22 nt RNA strands, in various permutations, yielded a ladder of digestion products as short as 17 nt (Figure 2D). This suggests that dsRNAs whose strands are shorter than typical DCL3 dicing products do not fit into the enzyme in a way that fixes their position, allowing for cutting at variable positions. The results also raise the possibility that DCL3 could play a role in the cleavage and turnover of dsRNAs smaller than its dicing products in vivo.\n\n### Strand-cutting specificities of DCL3\u2019s RNase III domains\n\nTo determine how DCL3 is oriented on its dsRNA substrates, we mutated RNase III domains A and B by converting glutamates E1146 and/or E1329 to glutamines (Figure 3A). We then tested the cutting of a dsRNA formed by annealing 26 and 27 nt RNAs, with a 1 nt 3\u2032 overhang on the left side (Figure 3B). DCL3 with wild-type, unmutated RNase domains cut both strands of the dsRNA to yield 24 and 23 nt siRNAs (compare lanes 5 and 6). Mutating both RNase III domains abolished dicing (compare lanes 5 and 7). Mutating RNase III domain A, while leaving domain B unchanged, resulted in top strand (26 nt) cutting to 24 nt, but no bottom strand (27 nt) cutting (lane 8). Conversely, mutating domain B, but leaving domain A unchanged, allowed bottom strand cutting, to 23 nt (lane 9). Repeating these experiments using a dsRNA substrate with a 2 nt overhang, instead of a 1 nt overhang, yielded equivalent results, the only difference being the generation of a 24 nt product from the bottom strand due to the additional overhanging nucleotide (Figure 3\u2014figure supplement 1). Collectively, these results indicate that the PAZ domain binds the recessed 5\u2032 end of the top RNA strand, opposite the 3\u2032 overhang of the bottom strand, and cuts that strand using RNase III domain B at a distance equivalent to 24 nt. The paired strand is cut by RNase III domain A, with the 3\u2032 overhanging end of this strand not anchored at a fixed distance, allowing its diced products to vary in length (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig3-v2.jpg)\n\n**Figure 3.:** (A) Relative positions of helicase, PAZ, RNase III, and dsRNA binding domains within the 1580 amino acid sequence of DCL3. Positions of catalytic glutamate residues of RNase III domain A (E1146) and RNase III domain B (E1329) are highlighted. These glutamates were mutated to glutamine to generate catalytically inactive versions of DCL3. (B) Identification of dsRNA strands cut by the RNase IIIA and RNase III B domains of DCL3. A 26/27 nt dsRNA substrate, possessing a 1 nt 3\u2032 overhang, was subjected to dicing using wild-type DCL3 or the E1146Q and/or E1329Q mutant versions of DCL3. Lanes 1\u20134 are DCL3-only controls and lane 5 is a RNA-only control. DCL3 with wild-type RNase III domains A and B (denoted as +, +) was tested in lanes 1 and 6. DCL3 mutants with both RNase III domains mutated (denoted as \u2212, \u2212) were tested in lanes 2 and 7. Mutants with only wild-type RNase III domain were tested in lanes 3, 4, 8, and 9. (C) Model for DCL3 substrate recognition, 24 nt strand measurement, and dicing.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** This experiment was performed as in Figure 3 except that the dsRNA substrate has a 2 nt overhang rather than a 1 nt overhang. In this case, a dsRNA formed by annealing 26 and 28 nt RNAs was subjected to dicing using wild-type DCL3 or the E1146Q and/or E1329Q mutant versions of DCL3. Lanes 1\u20134 are DCL3-only controls and lane 5 is a RNA-only control. DCL3 with wild-type RNAse III domains A and B (denoted as +, +) was tested in lanes 1 and 6. DCL3 mutants with both RNase III domains mutated (denoted as \u2212, \u2212) were tested in lanes 2 and 7. Mutants with only wild-type RNase III domain were tested in lanes 3, 4, 8, and 9.\n\n### DCL3 substrate recognition is influenced by 5\u2032 terminal nucleotide and phosphorylation status\n\nPol IV transcripts tend to have a purine at their 5\u2032 ends (as denoted in Figure 1B), with A being more prevalent than G (Singh et al., 2019). However, pyrimidines can also serve as the initiating nucleotide, with C used more frequently than U (Singh et al., 2019). We thus tested whether the 5\u2032-terminal nucleotide affects DCL3 dicing using dsRNA substrates with a 1 nt 3\u2032 overhang on the left side, a blunt-end on the right side, and a top strand that begins with A, G, C, or U (Figure 4A). This experiment revealed that DCL3 cleaves dsRNA substrates whose top strands begin with 5\u2032 A or U (lanes 5\u201310) more efficiently than those beginning with C or G (lanes 11\u201316), in agreement with prior results comparing cell-free lysates of wild-type and dcl3 mutant plants (Nagano et al., 2014). The fact that A or U allows for similar dicing efficiency suggests that an AU or UA pair is preferred over a GC or CG pair at the precursor\u2019s terminus.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig4-v2.jpg)\n\n**Figure 4.:** (A) Test of top strand 5\u2032 nucleotide preference on dicing efficiency. Top strands of 37 nt that differ by having either A, U, C, or G at their 5\u2032 termini were 5\u2032 end-labeled with 32P and annealed to complementary 38 nt bottom strand RNAs to generate 1 nt 3\u2032 overhangs on the left side, as drawn. Following incubation with DCL3 for 1, 5, or 10 min, reaction products were resolved by non-denaturing PAGE and visualized by autoradiography. The diagram highlights the position of the labeled 24 nt dicing product measured in the assay. (B) Test of bottom strand 3\u2032 terminal nucleotide on dicing efficiency. This experiment was conducted as in (A) except that bottom strands had either A, U, C, or G at their 3\u2032 termini, which overhang the top strand (5\u2032 A) by 1 nt. (C) Test of top strand 5\u2032 end phosphorylation on dicing efficiency. Two 37 nt RNA strands with adenosines at their 5\u2032 termini were annealed to generate dsRNAs with 3\u2032 overhangs of 1 nt at either end, encouraging DCL3 to dice from either end. The top strand was end-labeled with a 32P monophosphate group whereas the 5\u2032-terminal adenosine of the bottom strand had either a hydroxyl group (OH), a monophosphate (P) or a triphosphate (PPP). Left-side versus right-side dicing was then assessed by the ratio of labeled 24 or 16 nt dicing products following non-denaturing PAGE and autoradiography.\n\nWe next tested whether DCL3 is affected by the nucleotide at the 3\u2032 overhanging position of the bottom strand (Figure 4B). No significant difference in cleavage efficiency was observed for bottom strands having A, U, C, or G as the overhanging nucleotide, indicating that although the presence of 3\u2032 overhang is important for dicing (Figure 1D), the identity of the overhanging nucleotide is unimportant.\n\nThe 5\u2032 terminal nucleotide of a nascent transcript is expected to possess a 5\u2032 triphosphate group, and biochemical evidence indicates that this is true for RDR2 transcripts (Singh et al., 2019). However, Pol IV-dependent transcripts generated in vivo or in vitro can be cloned via ligation reactions that require a 5\u2032 monophosphate, without prior enzymatic treatments (Blevins et al., 2015; Li et al., 2015; Zhai et al., 2015; Singh et al., 2019), suggesting the possibility of an intrinsic or associated pyrophosphatase activity. We tested whether monophosphate or triphosphate groups at the 5\u2032 end of a dsRNA substrate affect DCL3 dicing. For this experiment, dsRNA substrates had 1 nt 3\u2032 overhangs (uridines in each case) and 5\u2032 adenosines at each end (Figure 4C), making both ends similarly conducive to dicing. The top strand in all cases was 5\u2032 end-labeled with a 32P monophosphate. The 5\u2032 end of the bottom strand had either a triphosphate, a monophosphate, or a hydroxyl group. Dicing initiated by measuring 24 nt from the 5\u2032 end of the top strand yields a 24 nt labeled product, whereas dicing measured 24 nt from the 5\u2032 end of the bottom strand yields a 16 nt labeled product. The ratio of 24 versus 16 nt products thus provides a way to assess the relative affinity of DCL3 for dicing the alternative ends of the substrate dsRNA. This experiment revealed that if the bottom strand has a 5\u2032 hydroxyl group, a strong 24 nt signal and weak 16 nt signal (barely above background levels) are observed (Figure 4C, lane 4). This indicates that DCL3 preferentially engaged the left side of the dsRNA substrate, which has a 5\u2032 monophosphate, and disfavored the right side, which has a 5\u2032 hydroxyl. However, if the bottom strand also has a 5\u2032 monophosphate (lane 5), or a triphosphate (lane 6), more right-side dicing occurs suggesting that monophosphates or triphosphates are similarly conducive to DCL3 engagement, but with monophosphates slightly preferred.\n\n### DCL3 dicing does not require ATP\n\nDrosophila melanogaster Dicer-2 displays ATP-dependent activity for substrates with blunt-ends, but not overhanging ends (Sinha et al., 2018). Moreover, experiments comparing cell-free lysates of wild-type versus dcl3 mutant Arabidopsis plants suggested that binding, but not hydrolysis, of ATP is needed for DCL3 activity (Nagano et al., 2014). We thus tested whether dicing by purified DCL3 is ATP-dependent using dsRNA substrates formed by annealing a 37 nt top strand RNA, 5\u2032 end-labeled with 32P, to either an unlabeled 37 nt bottom strand, thereby generating a dsRNA with two blunt ends (Figure 5A), or to an unlabeled 38 nt bottom strand, thereby generating a dsRNA with a 1 nt overhang on the left side and a blunt end on the right side (Figure 5B). We also tested a dsRNAs with a 2 nt 3\u2032 overhang (Figure 5\u2014figure supplement 1). To preclude the potential involvement of ATP pre-associated with DCL3, we incubated FLAG-DCL3 with apyrase during affinity purification to hydrolyze any contaminating ATP to AMP and inorganic phosphate, as demonstrated in control reactions (see Figure 5\u2014figure supplement 2). We also used a 1:5 molar ratio of DCL3:dsRNA substrate such that complete dicing of the dsRNAs would require each DCL3 protein to carry out multiple dicing reactions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig5-v2.jpg)\n\n**Figure 5.:** (A) 37 nt top strands end-labeled with 32P were annealed to 37 nt bottom strands to generate dsRNAs with blunt ends. Resulting dsRNAs at a concentration of 25 nM were then incubated with 5 nM of apyrase-treated DCL3 in the presence or absence of ATP or the non-hydrolyzable ATP analog, ATP-\u03b3-S. DCL3 dicing was assayed at 1, 5, and 10 min. Production of labeled 24 nt dicing products was then assessed by denaturing PAGE and autoradiography. (B) 37 nt top strands end-labeled with 32P were annealed to 38 nt bottom strands to generate dsRNAs with a blunt end on the right side and a 3\u2032 overhang of 1 nt on the left side. DCL3 dicing assays were then performed as in (A).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Assays like those of Figure 5 were conducted but included an additional dsRNA substrate that has a 3\u2032 overhang of 2 nt. Reactions were incubated for 30 min.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Apyrase was incubated with gamma-32P-ATP then heat-inactivated. Aliquots of the apyrase reaction (lane 2) and the mock apyrase reaction (lane 1) were then subjected to thin-layer chromatography (TLC). Following buffer migration, the dried TLC plate was imaged using phosphorimaging. (B) T4 polynucleotide kinase (PNK)-mediated RNA end-labeling is prevented by apyrase-mediated hydrolysis of ATP. Using a 37 nt substrate RNA mixed with gamma-32P-ATP in PNK reaction buffer, reactions were incubated with buffer (lane 1) or apyrase (lane 2) for 10 min. PNK was then added and reactions were incubated for 30 min. The RNA was then subjected to denaturing PAGE and phosphorimaging.\n\nIn reactions containing 0 mM ATP, 5 mM ATP, or 5 mM ATP-\u03b3-S, a non-hydrolyzable form of ATP, no requirement of ATP for DCL3 activity was observed, as monitored by the generation of labeled 24 nt dicing products (lanes 2\u201310 of Figure 5A, B; see also Figure 5\u2014figure supplement 1). We conclude that Arabidopsis DCL3 does not require ATP binding or hydrolysis for dicing.\n\n### Overhangs at each end of dsRNAs substrates explain 24 and 23 nt siRNA biogenesis from either RNA strand\n\nThe model in Figure 1B, supported by the experiments of Figures 1\u20143, accounts for how DCL3 can produce a diced duplex consisting of a 23 nt siRNA derived from the RDR2-transcribed strand and a 24 nt siRNA derived from the Pol IV strand. However, the model does not account for our prior RNA-seq data revealing that 23 and 24 nt siRNAs are generated from both strands (Singh et al., 2019). This led us to deduce a new model (Figure 6A) in which DCL3\u2019s ability to dice from either the left or right side of a duplex and DCL3\u2019s penchant for 3\u2032 overhangs were considered. Scenario 1 of Figure 6A is the scenario of Figure 1B, with the left-side 3\u2032 overhang generated by RDR2\u2019s addition of an untemplated nucleotide (N). In scenarios 2 and 3, we hypothesized that 3\u2032 overhangs on the right side could occur if RDR2 initiates transcription 1 or 2 nt internal to the 3\u2032 end of the Pol IV transcript.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig6-v2.jpg)\n\n**Figure 6.:** (A) Hypotheses to account for 24 and 23 nt siRNAs derived from both the Pol IV and RDR2-transcribed strands of diced dsRNAs. Scenario 1 is the hypothesis of Figure 1B and Singh et al., 2019, accounting for 23 nt RDR2-strand siRNAs bearing an untemplated 3\u2032 terminal nucleotide paired with 24 nt siRNAs corresponding to the 5\u2032 end of Pol IV transcripts. Scenarios 2 and 3 show how RDR2 transcription initiating either 1 or 2 nt internal to the 3\u2032 end of Pol IV transcripts could generate 3\u2032 overhangs of 1 or 2 nt, respectively, promoting right-side dicing. In scenario 2, a 23 nt siRNA can be generated from the Pol IV strand and a 24 nt siRNA can be produced from the RDR2 strand. In scenario 3, 24 nt siRNAs are generated from both strands. (B) 3\u2032 overhangs are present at both termini of Pol IV-RDR2 transcribed dsRNAs. Pol IV-RDR2 transcription reactions were performed in either of two ways to selectively label either the Pol IV or RDR2 strand. To label Pol IV transcripts, a 32P-end-labeled RNA primer was used to initiate Pol IV transcription of a DNA template lacking thymidines (lanes 1\u20134). The presence of non-template DNA annealed to the template induces Pol IV arrest and RDR2 initiation of the complementary strand which can be selectively body-labeled using alpha-32P-ATP (lanes 5\u20138). Overhangs present in the dsRNA products generated by the coupled reactions of Pol IV and RDR2 are sensitive to digestion by S1 nuclease treatment (see diagram), generating the shorter labeled products observed for both Pol IV (lanes 2\u20134) and RDR2 (lanes 6\u20138) transcripts. Mock S1 nuclease treatment negative controls are shown in lanes 1 and 2. RNAs were resolved by denaturing PAGE and visualized by autoradiography. (C) RDR2 initiates transcription 1 or 2 nt internal to the 3\u2032 end of the template RNA strand. A 37 nt RNA labeled with 32P at its 5\u2032 end (50 nM) was used as template for second-strand synthesis by recombinant RDR2 (280 nM) (lanes 1 and 2). Half of the transcription reaction was then subjected to S1 nuclease digestion (lane 2). In parallel, controls in which the end-labeled template was hybridized with strands whose complementarity begins at the very end of the template or 1 or 2 nt internal were also generated and subjected to S1 nuclease digestion (lanes 3\u20138). RNAs were resolved by denaturing PAGE and visualized by autoradiography. (D) 24 nt siRNAs are diced from the 5\u2032 ends of Pol IV and RDR2 transcripts and 23 nt siRNAs are diced from their 3\u2032 ends. In vitro transcription reactions using the template, non-template, and primer diagrammed in (B) (see Supplementary file 1 for their sequences) were conducted in several ways in order to specifically end-label or body-label Pol IV or RDR2 transcripts. The reactions of lanes 1 and 2 were conducted with end-labeled primer in order to specifically label the 5\u2032 ends of Pol IV transcripts. The labeled band of ~25 nt in both lanes 1 and 2 is an RDR2-dependent, Pol IV- and DCL3-independent background RNA. In lanes 3\u20136, unlabeled primer was used to initiate dsRNA synthesis from the T-less DNA template, with Pol IV or RDR2 transcripts body-labeled with either 32P-UTP or 32P-ATP, respectively. In the reactions of lanes 7\u201310, an unlabeled primer with a 5\u2032 hydroxyl group was used to initiate Pol IV transcription from the T-less DNA template. In the reactions of lanes 7 and 8, RDR2-transcripts were body labeled using 32P-ATP (as in lanes 5 and 6). For the reactions in lanes 9 and 10, no labeled nucleotide was incorporated during transcription, but transcripts (lane 9) or dicing reactions (lane 10) were subsequently incubated with capping enzyme and alpha-32P-GTP to label the 5\u2032 end of RDR2 transcripts by capping.\n\nTo experimentally test for single-stranded overhangs at the ends of Pol IV and RDR2 transcripts, we conducted transcription reactions as in Singh et al., 2019, using 32P to specifically label either the Pol IV or RDR2 strands of their dsRNA products. We then treated the transcripts with S1 nuclease, which digests single-stranded nucleic acids (Figure 6B). For these experiments, Pol IV transcription was initiated using an RNA primer hybridized to a T-less (lacking thymidines) DNA template (see diagram in Figure 6B and Supplementary file 1b for oligonucleotide sequences). Downstream of the primer used to initiate transcription, a non-template DNA oligonucleotide is annealed to the template DNA to induce Pol IV arrest and RDR2 engagement of the Pol IV transcript\u2019s 3\u2032 end, enabling synthesis of the RDR2-transcribed strand (Singh et al., 2019). By 5\u2032 end-labeling the RNA primer, only first-strand RNAs synthesized by Pol IV are labeled and detected. Conversely, by using an unlabeled RNA primer and including alpha-labeled 32P-ATP in the reactions, second-strand RNAs synthesized by RDR2 are specifically labeled. Note that because adenosines are not present in first-strand RNAs generated by Pol IV transcription of a T-less DNA template, first strands are not labeled.\n\nTreatment of transcription reaction products with increasing amounts of S1 nuclease resulted in a progressive 1\u20132 nt shortening of labeled Pol IV transcripts (Figure 6B, lanes 1\u20134). Because the 32P label is at the 5\u2032 end of these Pol IV transcripts, S1 trimming must be occurring at their 3\u2032 ends. Body-labeled RDR2 transcripts were shortened by 1 nt upon digestion with S1 nuclease (Figure 6B, lanes 5\u20138), a result consistent with the removal of the single untemplated nucleotide added to the 3\u2032 end of RDR2 transcripts. Collectively, the data of Figure 6B indicate that the 3\u2032 ends of both the Pol IV transcripts and the RDR2 transcripts overhang the paired strand, fitting the predictions of the model in Figure 6A.\n\nBecause Pol IV transcripts within Pol IV-RDR2 dsRNAs are trimmed 1\u20132 nt by S1 nuclease at their 3\u2032 ends, this suggests that RDR2 initiates 1 or 2 nt internal to the ends of Pol IV transcripts. As a test of this hypothesis, we used a 5\u2032 end-labeled synthetic RNA as a template for recombinant RDR2 (Mishra et al., 2021) and subjected resulting dsRNA products to S1 nuclease digestion (Figure 6C). S1 trimmed the 5\u2032-labeled template strand of the RNA duplexes by 1\u20132 nt (lanes 1 and 2). As controls, we synthesized RNA strands with perfect complementarity to the template strand (lanes 3 and 4) or were shorter by 1 (lanes 5 and 6) or 2 nt (lanes 7 and 8) at their 5\u2032 ends, annealed these RNAs to the 5\u2032 end-labeled template RNA strand, and subjected resulting dsRNAs to S1 nuclease digestion. S1 digestion patterns for synthetic dsRNAs with 1 or 2 nt overhangs most closely resembled the digestion patterns observed for RDR2 transcription products (compare lanes 2, 6, and 8). We conclude that RDR2 initiates transcription 1 or 2o nt internal to the 3\u2032 ends of the Pol IV transcripts it uses as templates, consistent with the results of Figure 6B, scenarios 2 and 3 of Figure 6A, and the results of a different assay (Fukudome et al., 2021).\n\nLabeling Pol IV and RDR2 transcripts in different ways and observing how siRNAs were derived from the labeled precursor strands revealed that 24 and 23 nt siRNAs come from opposite ends of Pol IV and RDR2-transcribed RNA strands (Figure 6D). By initiating Pol IV-RDR2 transcription with an RNA primer labeled with 32P on its 5\u2032 end, only the Pol IV strands of resulting dsRNAs are labeled (as in Figure 6B). Upon dicing of these dsRNAs into siRNAs, only labeled 24 nt siRNA products are detected (Figure 6D, lane 2). Note that a labeled band of ~25 nt is also apparent in lanes 1 and 2, but this is a Pol IV- and DCL3-independent RNA that results from RDR2 transcription of the 16 nt RNA primer, generating an initial transcript that folds back on itself into a partial stem-loop structure, followed by further elongation upon transcription of the single-stranded portion of the stem.\n\nUnlike the dicing results obtained using end-labeled Pol IV strands, in which only labeled 24 nt siRNAs were detected following dicing, body-labeling of Pol IV or RDR2 strands yields labeled 24 and 23 siRNAs upon dicing (Figure 6D, lanes 4 and 6).\n\nIn a third labeling strategy, we initiated Pol IV transcripts using a dephosphorylated primer and unlabeled nucleotide triphosphates to generate Pol IV-RDR2 dsRNAs. Resulting dsRNAs were then diced by DCL3 and dicing products were subjected to capping reactions using vaccinia virus capping enzyme and 32P-GTP to label siRNAs that retain the triphosphorylated 5\u2032 end of the RDR2 strand. In this experiment, only 24 nt siRNAs were capped with 32P-GTP (Figure 6D, lane 10), suggesting that only 24 nt siRNAs come from the 5\u2032 ends of RDR2 transcripts.\n\nCollectively, the experiments of Figure 6D reveal that the siRNAs derived from the 5\u2032 ends of Pol IV transcripts and the 5\u2032 ends of RDR2 transcripts are 24 nt, consistent with DCL3 measuring and cutting 24 nt from the 5\u2032 end of either strand. We thus deduce that the 23 nt siRNA dicing products, which are observed only when Pol IV or RDR2 transcripts are body-labeled (lanes 4 and 6), come from the 3\u2032 ends of Pol IV and RDR2 transcripts.\n\n## Discussion\n\nIn vivo, highly abundant DCL3-dependent 24 and 23 nt siRNAs map to genomic loci subjected to RNA-directed DNA methylation, forming a swarm of overlapping siRNAs that make relationships between siRNAs of opposite polarity, or alternative size, very difficult to discern. Likewise, determining which siRNA precursor strands are synthesized by Pol IV and which are synthesized by RDR2 is problematic in vivo, as the enzymes work as a complex and are co-dependent (Blevins et al., 2015; Singh et al., 2019). Our in vitro biochemical experiments circumvent these uncertainties. Several important insights came from recapitulating siRNA biogenesis by incubating purified Pol IV, RDR2, and DCL3 with single-stranded bacteriophage M13 as the source of template DNA (Singh et al., 2019). These experiments showed definitively that Pol IV acts first, transcribing the single-stranded template DNA to generate RNA transcripts whose 5\u2032 to 3\u2032 polarity is opposite that of the DNA. RDR2 acts second, using the Pol IV transcripts as templates to generate complementary RNAs that are oriented in the same 5\u2032 to 3\u2032 polarity as the DNA template strand, and thus could not have been directly transcribed from the DNA. This ability to unambiguously discriminate the Pol IV transcripts from the RDR2 transcripts, based on their polarity relative to the template DNA, also allowed strand-specificities of DCL3-diced siRNAs to be assigned. These studies showed that 24 and 23 nt siRNAs are generated from both the Pol IV and the RDR2-transcribed strands of siRNA precursors, with 24 nt siRNAs outnumbering 23 nt siRNAs by several fold (Singh et al., 2019). Moreover, these studies showed that an untemplated nucleotide at the 3\u2032 terminus is a characteristic of RDR2 transcripts, but not Pol IV transcripts. The untemplated 3\u2032-terminal nucleotide persists in siRNAs derived from RDR2 transcripts and, importantly, is selectively enriched among 23 nt siRNAs but not 24 nt siRNAs (Singh et al., 2019). However, 23 nt siRNAs also come from the 3\u2032 ends of Pol IV transcripts (Figure 6D), helping explain why not all 23 nt siRNAs possess an untemplated nucleotide (Wang et al., 2016; Singh et al., 2019).\n\nThe occurrence of an untemplated nucleotide at the end of 23 nt siRNAs derived from RDR2 transcripts led to the model in Figure 1B. In this model, diced 23 nt siRNAs derived from the 3\u2032 ends of RDR2 transcripts are paired with 24 nt siRNAs derived from the 5\u2032 ends of Pol IV transcripts. However, the model did not account for how 24 nt siRNAs can come from the RDR2 strand, explain why RDR2-strand 24 nt siRNAs outnumber 23 nt siRNAs, or account for 23 nt siRNAs derived from the Pol IV strand (Singh et al., 2019). Our current study provides the answers to these questions. A key finding is that RDR2 does not initiate second strand RNA synthesis precisely at the 3\u2032 end of a Pol IV transcript, but instead initiates 1\u20132 nt internal to the transcript, as has also shown by a biochemical study of RDR2 transcription (Fukudome et al., 2021). As a result, a 3\u2032 overhang of 1\u20132 nt is generated upon RDR2 initiation. A second key finding is that the 3\u2032 overhangs, attributable to RDR2\u2019s mode of initiation or its terminal transferase activity, generate preferred DCL3 substrates. Pol IV-RDR2 dsRNAs are typically shorter than 40 bp, thus they can be diced only once (Blevins et al., 2015; Zhai et al., 2015), either from the left side or right side. Our experiments reveal that this left/right choice is influenced by the 5\u2032 terminal nucleotide at the recessed end of an overhang, with adenosines or uridines favored over guanosines or cytosines. Importantly, Pol IV transcription tends to begin with a purine, with adenosine used somewhat more frequently than guanosine (Singh et al., 2019). Collectively, our experiments suggest that if Pol IV initiates with an adenosine, left-side dicing is favored, with DCL3 generating a diced duplex consisting of a 24 nt siRNA from the 5\u2032 end of the Pol IV strand paired with a 23 nt siRNA from the 3\u2032 end of the RDR2 strand (Figure 7, dicing scenario 1). By contrast, if Pol IV transcription begins with a G, we propose that this encourages right-side dicing, especially if the RDR2 strand has a 5\u2032 A or U that is optimal for DCL3 engagement. Indeed, RNA-seq data have shown that RDR2 transcripts initiate most frequently with A or U (Singh et al., 2019). Moreover, consensus sequences of in vivo precursor 5\u2032 and 3\u2032 ends best matched consensus sequences for siRNA 5\u2032 and 3\u2032 ends by invoking left-side dicing for precursors that initiated with A and right-side dicing for precursors that initiated with G (Blevins et al., 2015). Our current study shows that it is this right-side dicing that accounts for 24 nt siRNAs derived from the RDR2 strand and 23 nt siRNAs derived from the Pol IV strand. There are two ways to generate 24 nt siRNAs from each strand and only one way to generate 23 nt siRNAs from each strand (Figures 6A and 7), which fits with the fact that 24 nt siRNAs are more abundant than 23 nt siRNAs, both in vivo and in vitro (Blevins et al., 2015; Singh et al., 2019).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/73260/elife-73260-fig7-v2.jpg)\n\nOur study also provides new insight into the minimum length of Pol IV or RDR2 transcripts that can serve as siRNA precursors or siRNAs. The experiments of Figure 2 indicate that Pol IV transcripts that are 24 nt or longer are sufficient to give rise to DCL3-dependent siRNAs. Moreover, if Pol IV were to generate a 24 nt transcript and RDR2 were to initiate 2 nt internal to this transcript and add an extra untemplated nucleotide to the 3\u2032 end of its transcript, the result would be a 24/23 nt dsRNA duplex. This duplex would not need to be diced by DCL3 because it is already indistinguishable from a dicing product (see Figure 2C). Importantly, in dcl2 dcl3 dcl4 triple mutants, we detected Pol IV-dependent 24 nt RNAs at ~7% of the level found in wild-type plants (Blevins et al., 2015). This may account for low levels of RNA-directed DNA methylation that persist in dicer mutants, suggesting an alternative explanation to putative dicer-independent pathways that have been proposed to be distinct from the canonical RNA-directed DNA methylation pathway yet remain unidentified (Yang et al., 2016; Ye et al., 2016).\n\nAnother prior finding in need of reconsideration is the observation that 24 nt siRNAs associated with AGO4 tend to begin with a 5\u2032 adenosine (Mi et al., 2008), a finding that has been interpreted as evidence that AGO4 actively selects siRNAs that begin with an adenosine. We have shown that Pol IV and RDR2 transcripts most frequently begin with adenosine (Singh et al., 2019) and our current study shows that DCL3 preferentially dices substrates with A at their 5\u2032 ends. Thus Pol IV, RDR2, and DCL3 activities could collectively account for much of the 5\u2032 A-enrichment among siRNAs that become loaded into AGO4. Consistent with this interpretation, 24 nt RNAs that have a 5\u2032 A, U, C, or G are assimilated into AGO4 with similar efficiency in vitro (Wang and Pikaard, unpublished).\n\nOur results illustrate how siRNAs of different lengths can be produced by a Dicer endonuclease that measures a fixed length of RNA, an apparent paradox. This fixed length presumably corresponds to the distance from a phosphorylated or triphosphorylated 5\u2032 terminal nucleotide, bound by the PAZ domain, as in other Dicers (Park et al., 2011; Tian et al., 2014; Sinha et al., 2018), to the RNase III domain B cleavage site of DCL3, a length equivalent to 24 nt. The siRNAs of alternative size (23 nt) come from the opposite strand of RNA. The 5\u2032 end of the non-measured strand is generated by the RNase III domain A cleavage reaction, but the 3\u2032 end of this strand is apparently not anchored at a set distance, unlike human dicer (Park et al., 2011), and can overhang the 5\u2032 end of the measured strand by 1 nt, to yield a 23 nt siRNA, or 2 nt to yield a 24 nt siRNA (see Figures 6A and 7). A structural study of DCL3 bound to dsRNA, published while our study was in review, supports this interpretation (Wang et al., 2021).\n\nOur study adds to our knowledge of how individual reactions within the RNA-directed DNA methylation pathway specify what will happen in the next step. Pol IV and RDR2 physically interact (Mishra et al., 2021) and their activities are tightly coupled such that Pol IV transcripts are channeled directly to RDR2 (Singh et al., 2019) by a proposed mechanism involving Pol IV backtracking (Fukudome et al., 2021). Lack of Pol IV-interaction explains why the other five RNA-dependent RNA polymerases in Arabidopsis thaliana are not redundant with RDR2. Our current study now shows that idiosyncrasies of Pol IV and RDR2 transcription, including the choice of nucleotide used to initiate transcription, the alternative start site positions of RDR2 internal to Pol IV transcripts, and the non-templated addition of a nucleotide at the 3\u2032 end of RDR2 transcripts, collectively inform DCL3 how to dice the dsRNAs at the next step of the pathway. This results in production of siRNAs that can be 23 or 24 nt, derived from either strand. Experimental evidence indicates that the specification of 23 and 24 nt siRNAs has functional significance, by specifying that the 24 nt RNA of a 23/24 nt RNA duplex becomes the siRNA stably associated with AGO4 (Wang and Pikaard, unpublished). Thus, by generating 24 and 23 nt siRNAs from either strand and either end of the Pol IV-RDR2 dsRNAs, DCL3 can diversify the set of siRNAs that can be derived from short dsRNA precursors, enabling siRNA base-pairing with Pol V transcripts transcribed from either strand of target loci DNA to maximize DNA methylation.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td>FLAG-DCL3</td>\n      <td>Singh et al., 2019</td>\n      <td></td>\n      <td>Synthetic gene codon-optimized for insect cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Trichoplusia ni)</td>\n      <td>High Five Cells in Express Five Medium</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat # B85502</td>\n      <td>For baculovirus replication and expression</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Escherichia coli)</td>\n      <td>pUC57-DCL3 (synthetic DCL3, codon optimized for insect cells)</td>\n      <td>Singh et al., 2019</td>\n      <td>N/A</td>\n      <td>Strain carrying cloned FLAG-DCL3 gene</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (T. ni)</td>\n      <td>pFastBacHT B-DCL3</td>\n      <td>Singh et al., 2019</td>\n      <td>N/A</td>\n      <td>Construct for baculovirus expression</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (T. ni)</td>\n      <td>pFastBacHT B-DCL3_E1146Q_E1329Q</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>RNase III domain A/B double mutant</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (T. ni)</td>\n      <td>pFastBacHT B-DCL3_E1146Q</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>RNase III domain mutant</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (T. ni)</td>\n      <td>pFastBacHT B-DCL3_E1329Q</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>RNase III domain mutant</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PMSF</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat # P7626</td>\n      <td>Protease inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GlycoBlue</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat # AM9515</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ribolock RNase Inhibitor</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat # EO0384</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RNase Inhibitor (Murine)</td>\n      <td>NEB</td>\n      <td>Cat # M0314</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>S1 nuclease</td>\n      <td>Promega</td>\n      <td>Cat # M5761</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Proteinase K, RNA grade</td>\n      <td>Invitrogen</td>\n      <td>Cat # 25530049</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>T4 Polynucleotide Kinase</td>\n      <td>NEB</td>\n      <td>Cat # M0201S</td>\n      <td>Enzyme for end-labeling RNA</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Adenosine 5\u2032-triphosphate magnesium salt</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat # A9187</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[\u03b332P]-ATP, 6000 Ci/mmol</td>\n      <td>PerkinElmer</td>\n      <td>Cat #BLU002Z250UC</td>\n      <td>Used for end-labeling RNA</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Apyrase</td>\n      <td>NEB</td>\n      <td>Cat # M0398L</td>\n      <td>Hydrolyzes ATP; used in Figure 5</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SYBR Gold Nucleic Acid Gel Stain (10,000\u00d7)</td>\n      <td>Invitrogen</td>\n      <td>Cat # S11494</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RNA Loading Dye (2\u00d7)</td>\n      <td>NEB</td>\n      <td>Cat # B0363S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2\u00d7 TBE-Urea Sample Buffer</td>\n      <td>Invitrogen</td>\n      <td>Cat # LC6876</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IPEGAL CA-630</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat # I8896</td>\n      <td>Dete</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Set of rATP, rUTP, rCTP, and rGTP</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat # A1388</td>\n      <td>Used for Pol IV-RDR2 transcription</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Anti-FLAG M2 affinity gel</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat # A2220</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Vaccinia capping system</td>\n      <td>NEB</td>\n      <td>Cat # M2080S</td>\n      <td>5\u2032 end-capping in Figure 6</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image Lab 6.0.1</td>\n      <td>Bio-Rad</td>\n      <td>Cat # 12012931</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Express FiveSFM</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat # 10486025</td>\n      <td>Serum-free medium for High Five cells</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Macherey-Nagel Polygram CEL 300 PEI/UV254 Polyester Sheets</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat # 10013021</td>\n      <td>For TLC assay of ATP hydrolysis</td>\n    </tr>\n  </tbody>\n</table>\n\n### Overexpression and purification of recombinant DCL3\n\nRecombinant FLAG epitope-tagged DCL3 was expressed and purified as previously described (Singh et al., 2019). Briefly, High Five insect cells (Thermo Fisher Scientific) grown in Express Five serum-free medium (Thermo Fisher Scientific) were used to produce DCL3 using baculovirus mediated protein expression. The High Five cells that had been infected with bavculovirus at a multiplicity of infection (MOI) of 1.5 were collected, pelleted at 500\u00d7g for 5 min, flash-frozen in liquid nitrogen, and stored at \u201380\u00b0C. To purify DCL3, High Five cell pellets (~5 ml) were thawed on ice for 10\u201315 min and lysed using 45 ml hypertonic lysis buffer (50 mM HEPES-KOH (pH 7.5), 400 mM NaCl, 5 mM MgSO4, 10% glycerol, 2 mM DTT, 1 mM PMSF, 1% protease inhibitor cocktail, and 0.01% IPEGAL CA-630 (Sigma-Aldrich)). The lysate was centrifuged at 50,000\u00d7g for 30 min at 4\u00b0C. The supernatant was incubated with 0.5 ml anti-FLAG M2 resin (Sigma-Aldrich) for 2 hr at 4\u00b0C. Beads were collected by centrifugation for 3 min at 300\u00d7g at 4\u00b0C and washed 3\u00d7 as follows: 1\u00d7 with 50 ml lysis buffer, 1\u00d7 with 50 ml lysis buffer +5 mM ATP\u00b7Mg2+ (Sigma-Aldrich), 1\u00d7 with 50 ml low salt wash buffer (50 mM HEPES-KOH (pH 7.5), 150 mM NaCl, 5 mM MgSO4, 10% glycerol, 1 mM DTT, and 0.01% IPEGAL CA-630). DCL3-bound FLAG resin was transferred to a small gravity-flow column, washed with 10 ml low salt buffer, and eluted 5\u00d7 with 1 volume elution buffer (0.5 mg/ml 3\u00d7 FLAG peptide, 50 mM HEPES-KOH (pH 7.5), 150 mM NaCl, 5 mM MgSO4, 10% glycerol, 1 mM DTT, and 0.01% IPEGAL CA-630). Eluted fractions were pooled and concentrated using a Centricon filter (EMD Millipore) with a 30 kDa cutoff size and analyzed by electrophoresis on a 4%\u201320% SDS-PAGE gel and Coomassie Blue staining. Recombinant DCL3 was stored at \u201320\u00b0C in storage buffer (50 mM HEPES-KOH (pH 7.5), 150 mM NaCl, 5 mM MgSO4, 45% glycerol, 1 mM DTT, and 0.01% IPEGAL CA-630).\n\nTo generate point mutations in the two RNase III domains, the wild-type DCL3 cDNA construct in pUC57 were mutated using site-directed, ligase independent mutagenesis. Resulting constructs were confirmed by sequencing. DCL3 sequences were then sub-cloned into the pFastBac HT B vector (Thermo Fisher Scientific) and bacmids and baculovirus were produced as previously described (Singh et al., 2019). Overexpression and purification of active-site mutants were performed for the wild-type version of the protein.\n\nFor the ATP-dependency test of Figure 5, DCL3 was expressed and purified as described above except that 5 mM ATP\u00b7Mg2+ was omitted from the second wash. Following the third wash, DCL3-bound anti-FLAG resin was transferred into a small gravity-flow column and washed with 4 ml 1\u00d7 Apyrase reaction buffer (NEB). The column was then capped and the resin was resuspended in 0.5 ml 1\u00d7 Apyrase reaction buffer (NEB) containing 10 units of Apyrase protein (NEB). The DCL3-bound FLAG resin was then incubated with Apyrase for 30 min at 24\u00b0C. The column was then uncapped and allowed to drain. To remove any residual Ca2+, the resin was then washed with 4 ml EGTA buffer (150 mM NaCl, 50 mM HEPES-KOH (pH 7.5), 20 mM EGTA, 10% glycerol, 1 mM DTT, and 0.01% IPEGAL CA-630). Following the EGTA wash, the DCL3-bound FLAG resin was washed with 10 ml low salt buffer (50 mM HEPES-KOH (pH 7.5), 150 mM NaCl, 5 mM MgSO4, 10% glycerol, 1 mM DTT, and 0.01% IPEGAL CA-630), and eluted with five successive additions of 1 volume of elution buffer (0.5 mg/ml 3\u00d7 FLAG peptide, 50 mM HEPES-KOH (pH 7.5), 150 mM NaCl, 5 mM MgSO4, 10% glycerol, 1 mM DTT, and 0.01% IPEGAL CA-630). Eluted fractions containing DCL3 were concentrated, analyzed, and stored as described above.\n\n### Synthetic nucleic aAcids used in dicing assays\n\nRNA oligonucleotides used in this study were purchased from Integrated DNA Technologies, Inc, except for the 5\u2032 triphosphorylated oligo used in Figure 4C, which was purchased from BioSynthesis, Inc Oligonucleotides used for dicing assays are listed in Supplementary file 1a.\n\nRNA oligonucleotides were gel-purified using 15% denaturing polyacrylamide gel electrophoresis. As necessary, RNAs were monophosphorylated on their 5\u2032 ends using T4 polynucleotide kinase (NEB) and either 3 mM unlabeled ATP (Sigma-Aldrich) or 25 \u00b5Ci of [\u03b332P]-ATP, 6000 Ci/mmol (PerkinElmer). Following PNK treatment, reactions were passed through Performa spin columns (EdgeBio) at 1000\u00d7g for 3 min. For non-radioactive dicing reactions, equimolar amounts of RNA oligos were mixed in annealing buffer (30 mM HEPES-KOH (pH 7.6), 100 mM potassium acetate), whereas for radioactive dicing reactions a 10% excess of unlabeled oligos were mixed with 32P-labeled oligos in annealing buffer. RNAs were incubated for 5 min in an 85\u00b0C water bath and annealed by allowing the water bath to cool to room temperature.\n\n### DCL3 dicing assays\n\nDouble-stranded RNA substrates were diced in 40 \u00b5l reactions containing either 25 nM (32P-labeled) or 50 nM (nonradioactive) dsRNA substrate, 25 nM DCL3, 50 mM HEPES-KOH (pH 7.5), 150 mM NaCl, 10 mM MgSO4, 10% glycerol, 1 mM DTT, 0.01% IPEGAL CA-630, and 0.4 U/\u00b5l RiboLock RNase Inhibitor (Thermo Fisher Scientific) for 30\u201360 min at room temperature and stopped by incubation at 72\u00b0C for 5 min. Reactions were then passed through Performa spin columns (EdgeBio) by centrifuging at 1000\u00d7g for 3 min and adjusted to 0.3 M sodium acetate (pH 5.2). 15 \u00b5g GlycoBlue(Thermo Fisher Scientific) was added and RNAs were precipitated with 3 volumes of isopropanol at \u201320\u00b0C overnight. Precipitated RNAs were pelleted by centrifugation at 16,000\u00d7g for 30 min, washed with 1 ml 70% ethanol, and resuspended in 10 \u00b5l 2\u00d7 RNA Loading Dye (NEB). Resuspended RNAs were incubated at 72\u00b0C for 5 min and resolved on 15% polyacrylamide 7 M urea gels. For radioactive assays, gels were transferred to filter paper, vacuum dried, and subjected to phosphorimaging using a Typhoon scanner (GE Healthcare). For non-radioactive assays, gels were stained with SYBR Gold (Invitrogen) in 0.5\u00d7 TBE for 30 min at room temperature.\n\nFor time-course assays, reactions were carried out as described above except 5 nM DCL3 was used and in 80\u2013110 \u00b5l reaction volumes, depending on the number of time points assayed. To collect and stop reactions at each time point, 25 \u00b5l of all reactions were transferred simultaneously using a multichannel pipette to tubes containing 2 \u00b5l 0.5 M EDTA (pH 8.0).\n\n### Pol IV-RDR2 transcription assays\n\nTo detect single-stranded regions of dsRNAs synthesized by Pol IV and RDR2, in vitro transcription reactions were performed as previously described (Singh et al., 2019). Oligonucleotides used for in vitro transcription reactions are listed in Supplementary file 1b. Resulting Pol IV-RDR2 dsRNAs were then subjected to the indicated amounts of S1 nuclease digestion for 10 min at 37\u00b0C using the manufacturer supplied S1 nuclease digestion buffer. Following this, RNAs were precipitated with 3 volumes of isopropanol, 1/10th volume of 3 M sodium acetate (pH 5.2), 20 \u00b5g of GlycoBlue (Thermo Fisher Scientific), and overnight incubation at \u201320\u00b0C. Precipitated RNAs were pelleted by centrifugation 16,000\u00d7g for 30 min, washed with 1 ml 70% ethanol, and resuspended in 2\u00d7 RNA Loading Dye (NEB). Resuspended RNAs were incubated at 72\u00b0C for 5 min and loaded onto a 15% polyacrylamide 7 M urea gel. Following electrophoresis, gels were transferred to filter paper, vacuum dried, and subjected to autoradiography using BioMax XAR film (Kodak).\n\nDicing and capping of siRNAs generated from in vitro Pol IV-RDR2-DCL3 reactions were performed as previously described (Singh et al., 2019).\n\n### RDR2 transcription assays\n\nRecombinant RDR2 was expressed and purified as previously described (Blevins et al., 2015).\n\nFor RDR2 transcription reactions, recombinant RDR2 (280 nM) was mixed with 5\u2032 32P-labeled template strand RNA (50 nM) in a 30 \u00b5l reaction containing 25 mM HEPES-KOH (pH 7.9), 20 mM ammonium acetate, 50 mM NaCl, 2 mM MgCl2, 0.4 U/\u00b5l RNase Inhibitor (NEB), 0.1 mM EDTA, 0.01% Triton X-100, 3% PEG8000, and 0.1 mM each of GTP, CTP, UTP, and ATP. Reactions were incubated at room temperature for 2 hr. Then, the reaction products were split into 10 \u00b5l aliquots and S1 nuclease 10\u00d7 reaction buffer (Promega) was added to 1\u00d7 concentration. Following this, S1 nuclease (Promega) or an equivalent amount of 1\u00d7 S1 nuclease reaction buffer was added. After incubation at 37\u00b0C for 15 min, reactions were stopped by addition of 50 \u00b5l of Proteinase K solution (100 mM Tris-HCl (pH 7.9), 250 mM NaCl, 1 mM MgCl2, 1% SDS, 0.4 mg/ml Proteinase K RNA grade (Invitrogen), 0.3 mg/ml GlycoBlue (Thermo Fisher Scientific)), and incubated for an additional 30 min at 37\u00b0C. RNAs were then precipitated by adding 180 \u00b5l 100% ethanol and incubating overnight at \u201320\u00b0C. Precipitated RNAs were pelleted by centrifugation at 16,000\u00d7g for 20 min, washed with 300 \u00b5l 70% ethanol, and resuspended in 10 \u00b5l 2\u00d7 TBE-Urea Sample Buffer (Invitrogen). Resuspended RNAs were incubated at 75\u00b0C for 5 min, snap-cooled on ice, and resolved on 15% polyacrylamide 7 M urea gels. Gels were transferred to filter paper, vacuum dried, and subjected to phosphorimaging using a Typhoon scanner (GE Healthcare).\n\n### Quantification and statistical analysis\n\nDCL3 assays were quantified using Image Lab version 6.0.1 software (Bio-Rad Laboratories). Substrate and diced RNA bands were boxed and diced band signal was calculated as the % of total signal. In Figure 4, means for triplicate reactions are plotted, with error bars showing the standard error of the mean.\n",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "d4933482-8724-4b86-b557-a7dfec9d01c7",
+      "submission_id": "3aa14c0e-a402-46dc-aaf5-dd11d0e552e8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daniel Zilberman, https://ror.org/03gnh5541 Institue of Science and Technology Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73260.sa0](https://doi.org/10.7554/eLife.73260.sa0)\n\nThe paper is of interest to RNA biologists, especially to those who study small RNAs. The findings deepen our understanding of the rules of DCL3 dicing and explain how 23-nt and 24-nt siRNAs in the RdDM pathway are produced.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Daniel Zilberman, https://ror.org/03gnh5541 Institue of Science and Technology Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73260.sa1](https://doi.org/10.7554/eLife.73260.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A DCL3 dicing code within Pol IV-RDR2 transcripts diversifies the siRNA pool guiding RNA-directed DNA methylation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by James Manley as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Toshiyuki Fukuhara (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The conclusion that DCL3 activity does not require ATP should be revised or supported by further data. Specifically, to exclude the possibility that the DCL3 preparation was contaminated with cellular ATP during protein purification, DCL3 protein can be treated with hexokinase to deplete ATP.\n\n2) The conclusion that Pol IV, RDR2 and DCL3 sequence preferences can account for the spectrum of sRNA bound to AGO4 should be revised or further supported. A plausible alternative is that Pol IV, DCL3 and AGO4 have co-evolved to increase specificity within the pathway.\n\nPlease also consider other Reviewer suggestions (especially those of Reviewer #2) for improving the manuscript.\n\nReviewer #1 (Recommendations for the authors):\n\nTwo conclusions would benefit from elaboration or clarification:\n\n1. The authors conclude that DCL3 activity does not require ATP. Can the authors exclude the possibility that their DCL3 preparations already contain ATP, for example pre-bound to DCL3?\n\n2. The authors conclude that Pol IV, RDR2 and DCL3 sequence preferences can account for the spectrum of sRNA bound to AGO4. Would it not make as much (or more?) sense if AGO4 also has binding preferences for the types of sRNA produced by Pol IV, RDR2 and DCL3, which would enhance specificity within the RdDM pathway?\n\nReviewer #2 (Recommendations for the authors):\n\nThe following comments should be addressed to improve the manuscript.\n\n1. Measurement of binding affinity of DCL3 to different types of dsRNA substrates (Figure 1C, Figure 4A, C) by EMSA or other methods will strengthen the conclusions drawn from the dicing assays.\n\n2. More time points between 30 sec and 5 min are suggested to be assayed with excessive amounts of substrates and initial processing rates can be calculated to measure the activity of DCL3 with different substrates (Figure 4A-C) or at different conditions (Figure 5).\n\n3. For Figure 5, in addition to repeating the experiment with more time points in the presence of excessive amounts of substrates, increasing amounts of ATP can be added to the reactions to test whether the addition of ATP increase the dicing activity. To exclude the possibility that DCL3 prep was contaminated with cellular ATP during protein purification, DCL3 protein can be treated with hexokinase to deplete ATP.\n\n4. Page 9, line 214, \"monophosphates or triphosphates are similarly conducive to DCL3 engagement\". It appears to me that monophosphate is more conducive to DCL3 engagement than triphosphate as more 16-nt products are produced when the bottom strand has a 5' monophosphate (Figure 4C, lane 5 and lane 6).\n\n5. In the discussion (page 14, line 371-377), the authors suggest that the selectivity of 5'A siRNAs by AGO4 needs to be reconsidered. The authors stated that Pol IV and RDR2 transcripts most frequently begin with adenosine (Singh et al., 2019) and DCL3 preferentially dices substrates with A (actually A or U as shown in Figure 4A) at their 5' ends, and thus Pol IV, RDR2 and DCL3 activities can collectively account for much of the 5' A-bias among siRNAs that become loaded into AGO4, independent of AGO4-mediated selection. I think that this statement needs to be reconsidered for the following reasons: (a) RDR2 initiates from 1-2 nt internal to PolIV transcript ends and it appears to me that there are no direct evidence that RDR2 transcripts predominantly start with an A, if RDR2 transcripts do not have a 5' A, the siRNAs produced via right-side dicing cannot be loaded into AGO4 due to its selectivity;\n\n(b) even if all siRNAs produced by Pol IV-RDR2-DCL3 have a 5' A, this only suggests that the initiation (production of 5' A siRNAs) and effector (specific binding to AGO4 that preferably accepts 5' A siRNAs) stages of RdDM have co-evolved to achieve the specificity of siRNA function. This is very similar to the case of miRNAs. miRNAs are processed from their precursors by DCL1 and predominantly have a 5' U. They are specifically loaded into AGO1 that has the highest binding affinity to 5' U sRNAs. Thus, sRNA precursor, DCLs and AGOs may have co-evolved to achieve the specificity of small RNA pathways.\n\n6. The authors introduced that 23-nt siRNAs function as passenger strands to specify loading of 24-nt siRNAs into AGO4 (The third paragraph of the introduction and Singh et al., 2019, Mol Cell). What happens when 24-nt siRNAs are produced from both strands (Dicing Scenario 2 in Figure 7)? Which strand is loaded into AGO4?\n\n7. The authors claimed that \"diversifying the size of siRNAs derived from a given precursor allows maximal siRNA coverage at methylated target loci\" (abstract). However, 23-nt siRNAs are not loaded into AGO4, as introduced by the authors, and may not direct DNA methylation.\n\n8. Page 3, line 36, the cited reference showed that AGO4 is required for DNA methylation, but did not show its association with 24-nt siRNAs. The papers showing their association should be cited.\n\n9. Page 3, line 41, He et al., 2009, Cell 137:498 should be also cited.\n\n10. Figure 7, \"Pol transcripts tend to initiate with A or G\" should be \"Pol IV transcripts\"?\n\n11. Page 18, line 495, \"0.5 M EDTA (8.0)\" should be \"0.5 M EDTA (pH 8.0)\", the letters \"pH\" are missing for most of the buffers.\n\nReviewer #3 (Recommendations for the authors):\n\nI have no major comments.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A DCL3 dicing code within Pol IV-RDR2 transcripts diversifies the siRNA pool guiding RNA-directed DNA methylation\" for further consideration by eLife. Your revised article has been reviewed by 1 peer reviewer and the evaluation has been overseen by James Manley as the Senior Editor, and a Reviewing Editor.\n\nThe manuscript has been significantly improved and no further experiments or revisions are required. However, please consider the comments of Reviewer #2 below to decide if the manuscript could be further improved.\n\nReviewer #2 (Recommendations for the authors):\n\nI am grateful that the authors have addressed most of my comments. Two concerns remain.\n\n1) In Figure 4C, Figure 5 and Figure 5-supplement 1, no excess amounts of dsRNA substrates were added.\n\n2) Discussion on the importance of the PolIV/RDR2/DCL3 specificity of making 5' A siRNA and AGO4 binding preference for 5' A siRNAs. I think that these two mechanisms are equally important for ensuring the efficiency and specificity of RdDM. I would suggest rewrite the whole paragraph as follows.\n\n\"We have shown that Pol IV and RDR2 transcripts most frequently begin with adenosine (Singh et al. 2019) and our current study shows that DCL3 preferentially dices substrates with A at their 5' ends. Thus Pol IV, RDR2 and DCL3 activities could collectively lead to the production of 5'-A-enriched siRNAs. Interestingly, a previous finding indicated that 24 nt siRNAs initiated with a 5' A are preferentially associated with AGO4 (Mi et al. 2008). This suggest that the initiation (production of 5' A siRNAs) and effector (specific binding to AGO4 that preferably accepts 5' A siRNAs) stages of RdDM have co-evolved to achieve the specificity of siRNA function\".\n",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7ffd7a7d-53b6-4c3c-8c43-934fcc0885b8",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C1",
+      "claim": "In plants, selfish genetic elements, including retrotransposons and DNA viruses, are transcriptionally silenced by RNA-directed DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, selfish genetic elements, including retrotransposons and DNA viruses, are transcriptionally silenced by RNA-directed DNA methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in plant biology supported by the citation context of the manuscript and general scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "8ae24b28-2f5f-4a64-992f-20873d07e9c7",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C2",
+      "claim": "siRNAs guiding RNA-directed DNA methylation are cut by DICER-LIKE 3 (DCL3) from double-stranded precursors of ~30 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Guiding the process are short interfering RNAs (siRNAs) cut by DICER-LIKE 3 (DCL3) from double-stranded precursors of ~30 bp that are synthesized by NUCLEAR RNA POLYMERASE IV (Pol IV) and RNA-DEPENDENT RNA POLYMERASE 2 (RDR2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and experimental data presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "8021c48a-4781-400f-b3d5-49817b9ebc3c",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C3",
+      "claim": "Double-stranded siRNA precursors are synthesized by NUCLEAR RNA POLYMERASE IV (Pol IV) and RNA-DEPENDENT RNA POLYMERASE 2 (RDR2).",
+      "claim_type": "EXPLICIT",
+      "source": "Guiding the process are short interfering RNAs (siRNAs) cut by DICER-LIKE 3 (DCL3) from double-stranded precursors of ~30 bp that are synthesized by NUCLEAR RNA POLYMERASE IV (Pol IV) and RNA-DEPENDENT RNA POLYMERASE 2 (RDR2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research cited in the manuscript and experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "60094ee5-7470-48ee-96db-3c5fb23826af",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C4",
+      "claim": "Pol IV's choice of initiating nucleotide influences which precursor end is diced by DCL3.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Pol IV's choice of initiating nucleotide, RDR2's initiation 1\u20132 nt internal to Pol IV transcript ends and RDR2's terminal transferase activity collectively yield a code that influences which precursor end is diced and whether 24 or 23 nt siRNAs are produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "4fda4beb-a8aa-484c-8e58-d6f4320b8aa0",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C5",
+      "claim": "RDR2 initiates transcription 1\u20132 nt internal to Pol IV transcript ends.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Pol IV's choice of initiating nucleotide, RDR2's initiation 1\u20132 nt internal to Pol IV transcript ends and RDR2's terminal transferase activity collectively yield a code that influences which precursor end is diced and whether 24 or 23 nt siRNAs are produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "80e43e25-999c-4b9d-97a8-c3a338d777df",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C6",
+      "claim": "RDR2's terminal transferase activity influences whether 24 or 23 nt siRNAs are produced.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Pol IV's choice of initiating nucleotide, RDR2's initiation 1\u20132 nt internal to Pol IV transcript ends and RDR2's terminal transferase activity collectively yield a code that influences which precursor end is diced and whether 24 or 23 nt siRNAs are produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and prior studies on RDR2's terminal transferase activity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "6a43a750-8394-4264-8953-5ddfb4d91093",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C7",
+      "claim": "Alternative patterns of DCL3 dicing allow for maximal siRNA coverage at methylated target loci by diversifying the size, sequence, and strand specificity of siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "By diversifying the size, sequence, and strand specificity of siRNAs derived from a given precursor, alternative patterns of DCL3 dicing allow for maximal siRNA coverage at methylated target loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings and supported by inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "011f08b5-a05b-4176-850a-a2cb0253cf74",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C8",
+      "claim": "Plant siRNAs range in size from 21 to 24 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "Plant siRNAs range in size from 21 to 24 nt, with DCL3-dependent 23 and 24 nt siRNAs (Xie et al., 2004; Henderson et al., 2006) accounting for ~90% of the total siRNA pool (Kasschau et al., 2007; Zhang et al., 2007; Mosher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "7f0e7408-23c8-413a-ab87-4f3b120dd050",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C9",
+      "claim": "DCL3-dependent 23 and 24 nt siRNAs account for ~90% of the total siRNA pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Plant siRNAs range in size from 21 to 24 nt, with DCL3-dependent 23 and 24 nt siRNAs (Xie et al., 2004; Henderson et al., 2006) accounting for ~90% of the total siRNA pool (Kasschau et al., 2007; Zhang et al., 2007; Mosher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "5386e1fb-8319-4963-90c5-0f16e62e0165",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C10",
+      "claim": "24 nt siRNAs stably associate with ARGONAUTE 4 (AGO4).",
+      "claim_type": "EXPLICIT",
+      "source": "The 24 nt siRNAs stably associate with one of several Argonaute family proteins, primarily ARGONAUTE 4 (AGO4) (Zilberman et al., 2003; Qi et al., 2006), and guide resulting complexes to target loci via base-pairing interactions with long noncoding RNAs synthesized by multisubunit NUCLEAR RNA POLYMERASE V (Figure 1A; Wierzbicki et al., 2008; Wierzbicki et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "46cab8f6-05d1-435d-9993-6e56269ea689",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C11",
+      "claim": "AGO4-siRNA complexes are guided to target loci via base-pairing interactions with long noncoding RNAs synthesized by NUCLEAR RNA POLYMERASE V.",
+      "claim_type": "EXPLICIT",
+      "source": "The 24 nt siRNAs stably associate with one of several Argonaute family proteins, primarily ARGONAUTE 4 (AGO4) (Zilberman et al., 2003; Qi et al., 2006), and guide resulting complexes to target loci via base-pairing interactions with long noncoding RNAs synthesized by multisubunit NUCLEAR RNA POLYMERASE V (Figure 1A; Wierzbicki et al., 2008; Wierzbicki et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "02091bb3-778e-4bfa-9f65-d43ab323c29f",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C12",
+      "claim": "Protein-protein interactions between AGO4 and the C-terminal domain of the Pol V largest subunit contribute to AGO4 localization at target loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein-protein interactions between AGO4 and the C-terminal domain of the Pol V largest subunit, or Pol V-associated protein SPT5L, also contribute to AGO4 localization at target loci (El-Shami et al., 2007; He et al., 2009; Lahmy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "8507231f-fce1-4060-bd2a-1ef309471d63",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C13",
+      "claim": "Protein-protein interactions between AGO4 and Pol V-associated protein SPT5L contribute to AGO4 localization at target loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein-protein interactions between AGO4 and the C-terminal domain of the Pol V largest subunit, or Pol V-associated protein SPT5L, also contribute to AGO4 localization at target loci (El-Shami et al., 2007; He et al., 2009; Lahmy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "98ede6ec-0111-432e-8c97-95cb31733921",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C14",
+      "claim": "AGO4 localization at target loci leads to recruitment of the de novo DNA methyltransferase DRM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent recruitment of the de novo DNA methyltransferase, DRM2 (Cao and Jacobsen, 2002; Zhong et al., 2014) and other chromatin modifying enzymes then leads to the establishment of repressive chromatin environments that inhibit promoter-dependent transcription by DNA-dependent RNA Polymerases I, II, or III (Matzke and Mosher, 2014; Wendte and Pikaard, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "30b19f20-b040-474e-a3db-6dbdc7e37290",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C15",
+      "claim": "RNA-directed DNA methylation establishes repressive chromatin environments that inhibit promoter-dependent transcription by DNA-dependent RNA Polymerases I, II, or III.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent recruitment of the de novo DNA methyltransferase, DRM2 (Cao and Jacobsen, 2002; Zhong et al., 2014) and other chromatin modifying enzymes then leads to the establishment of repressive chromatin environments that inhibit promoter-dependent transcription by DNA-dependent RNA Polymerases I, II, or III (Matzke and Mosher, 2014; Wendte and Pikaard, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "c52c0fcc-f3d9-4ff9-bf13-84507e415aca",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C16",
+      "claim": "RNA-directed DNA methylation facilitates transcriptional silencing at thousands of loci throughout plant genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, RNA-directed DNA methylation (RdDM) facilitates transcriptional silencing at thousands of loci throughout plant genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact supported by the broader context of the manuscript and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "92fc6057-6cb7-4e5e-ba42-7364854d7304",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C17",
+      "claim": "Pol IV associates with RDR2 via direct physical interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol IV associates with RDR2 (Law et al., 2011; Haag et al., 2012) via direct physical interaction (Mishra et al., 2021) to form a multi-functional enzyme complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "00738121-8de8-4c41-8c41-577b85945400",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C18",
+      "claim": "The transcription reactions of Pol IV and RDR2 are tightly coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription reactions of Pol IV and RDR2 are tightly coupled (Singh et al., 2019) with Pol IV's inability to maintain processivity through double-stranded DNA regions proposed to results in Pol IV arrest and backtracking, coincident with DNA template-nontemplate strand reannealing and extrusion of the nascent transcript's 3\u2032 end for engagement by RDR2 (Fukudome et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "e6c51e49-534d-4a52-a47c-b3b1bb647b21",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C19",
+      "claim": "Pol IV-RDR2 dsRNAs range in size from ~25 to 40 bp in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Resulting double-stranded RNAs (dsRNAs), ranging in size from ~25 to 40 bp in vivo (Blevins et al., 2015; Zhai et al., 2015; Yang et al., 2016; Ye et al., 2016) are then diced by DCL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "df0ead38-d639-425a-ada0-15a2c4801149",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C20",
+      "claim": "Biogenesis of 23 and 24 nt siRNAs can be recapitulated in vitro upon incubating purified Pol IV, RDR2, and DCL3 with single-stranded bacteriophage M13 template DNA and nucleoside triphosphates.",
+      "claim_type": "EXPLICIT",
+      "source": "Biogenesis of 23 and 24 nt siRNAs can be recapitulated in vitro upon incubating purified Pol IV, RDR2, and DCL3 with single-stranded bacteriophage M13 template DNA and nucleoside triphosphates, indicating that no other activities are needed (Singh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "8ab3ba8b-1b02-4da3-baa2-29628fb67141",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C21",
+      "claim": "Immunoprecipitated AGO4 associates almost entirely with 24 nt siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although DCL3 generates both 23 and 24 nt siRNAs, immunoprecipitated AGO4 associates almost entirely with 24 nt siRNAs (Mi et al., 2008; Havecker et al., 2010), making the significance of 23 nt siRNAs unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "00d2eabb-8801-4c20-998e-6a4d522203c8",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C22",
+      "claim": "23 nt siRNAs help specify the stable AGO4-association of 24 nt siRNAs when paired with them.",
+      "claim_type": "EXPLICIT",
+      "source": "We have proposed that when paired with 24 nt siRNAs, the 23 nt RNAs help specify the stable AGO4-association of the 24 nt strands (Singh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "888c5eb5-b73f-4da5-b94c-80f04d5646d5",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C23",
+      "claim": "An untemplated nucleotide is often present at the 3\u2032 ends of RDR2 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "An untemplated nucleotide is often present at the 3\u2032 ends of RDR2 transcripts and is enriched among 23 nt, but not 24 nt siRNAs (Singh and Pikaard, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "4f91c542-c013-4b4b-8c8f-a20e4e14ea21",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C24",
+      "claim": "The untemplated nucleotide at the 3\u2032 end of RDR2 transcripts is enriched among 23 nt siRNAs but not 24 nt siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "An untemplated nucleotide is often present at the 3\u2032 ends of RDR2 transcripts and is enriched among 23 nt, but not 24 nt siRNAs (Singh and Pikaard, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "10f94b26-004b-4778-bc92-a0d12402d3a7",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C25",
+      "claim": "RDR2's terminal transferase activity can account for the addition of untemplated 3\u2032 terminal nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "RDR2's terminal transferase activity can account for the addition of these untemplated 3\u2032 terminal nucleotides (Blevins et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "7a3828ac-e556-43c4-b76f-ce13cd453702",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C26",
+      "claim": "DCL3 cuts a 37/38 nt dsRNA with a 1 nt 3\u2032 overhang to yield 23 and 24 nt products.",
+      "claim_type": "EXPLICIT",
+      "source": "DCL3 cuts the 37/38 nt dsRNA to yield 23 and 24 nt products (Figure 1C, lanes 1 and 5) as predicted by the model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "2dbb907a-031b-477c-88bb-3a4af9931c7b",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C27",
+      "claim": "DCL3 cuts a dsRNA with a 2 nt overhang, formed by annealing 37 and 39 nt RNAs, generating two 24 nt RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, DCL3 cuts a dsRNA with a 2 nt overhang, formed by annealing 37 and 39 nt RNAs, generating two 24 nt RNAs (Figure 1C, lanes 2 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "1a67e96c-fd0f-4ce6-b189-f060dc219aca",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C28",
+      "claim": "DCL3 measures and cuts 24 nt from the 5\u2032 end of the top strand and makes an offset cut of the bottom strand to leave a 2 nt 3\u2032 overhang.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the hypothesis that DCL3 measures and cuts 24 nt from the 5\u2032 end of the top strand, and makes an offset cut of the bottom strand to leave a 2 nt 3\u2032 overhang, as expected from prior studies (Zhang et al., 2004; Takeshita et al., 2007; Nagano et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1C and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "46d21529-453d-4768-acaa-cadc63cd844c",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C29",
+      "claim": "The length of the bottom strand of a dsRNA substrate can vary, indicating that its 3\u2032 end is not anchored at a fixed position within DCL3.",
+      "claim_type": "EXPLICIT",
+      "source": "The results also suggest that the length of the bottom strand can vary, indicating that its 3\u2032 end is not anchored at a fixed position within DCL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "1428ae23-621e-4dc9-bec1-1caf26fea505",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C30",
+      "claim": "Given a dsRNA substrate with two blunt ends, DCL3 generates dicing products of diverse sizes, including 21, 22, 24, and 25 nt RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given a dsRNA substrate with two blunt ends, DCL3 generates dicing products of diverse sizes, including 21, 22, 24, and 25 nt RNAs (Figure 1C, compare lanes 3 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "d03b7bf4-cf74-411c-b02a-6eb0356fc5aa",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C31",
+      "claim": "21, 22, and 25 nt dicing products are not observed at significant levels among siRNAs produced in vitro by Pol IV, RDR2, and DCL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 21, 22, and 25 nt dicing products are not observed at significant levels among siRNAs produced in vitro by Pol IV, RDR2, and DCL3 (Singh et al., 2019), nor have RNAs of these sizes been attributed to DCL3 activity based on analysis of dcl3 mutants in vivo (Xie et al., 2004; Henderson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "1f354ea3-d5dc-4d24-b9f8-57b12ea6ed6b",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C32",
+      "claim": "RNAs of 21, 22, and 25 nt have not been attributed to DCL3 activity based on analysis of dcl3 mutants in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 21, 22, and 25 nt dicing products are not observed at significant levels among siRNAs produced in vitro by Pol IV, RDR2, and DCL3 (Singh et al., 2019), nor have RNAs of these sizes been attributed to DCL3 activity based on analysis of dcl3 mutants in vivo (Xie et al., 2004; Henderson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "45d632bd-3a4c-4daf-9872-3bc2c3f8e8b3",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C33",
+      "claim": "dsRNAs with 3\u2032 overhangs, not blunt ends, best account for the 23 and 24 nt siRNAs generated by DCL3.",
+      "claim_type": "EXPLICIT",
+      "source": "These considerations, combined with the results of Figure 1C, indicate that dsRNAs with 3\u2032 overhangs, not blunt ends, best account for the 23 and 24 nt siRNAs generated by DCL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and prior knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "b553b9cd-8acc-440d-b581-c865cf352fc2",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C34",
+      "claim": "DCL3 prefers 3\u2032 overhanging ends over blunt ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the results of Figure 1 show that DCL3 will cut dsRNAs with 3\u2032 overhanging ends or blunt ends but prefers 3\u2032 overhanging ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "2c0c9ed9-a8f5-48a3-a38c-e4ce316f6961",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C35",
+      "claim": "When DCL3 dices a dsRNA with a 3\u2032 overhang on the left side and a blunt end on the right side, it preferentially dices from the 3\u2032 overhanging end.",
+      "claim_type": "EXPLICIT",
+      "source": "If the 3\u2032 overhanging end is preferred by DCL3, a 24 nt 32P-labeled dicing product is expected from the 32P-labeled top strand and a 16 nt product is expected from the 32P-labeled bottom strand. This is observed, with dsRNA substrates that have 3\u2032 overhangs of 1 or 2 nt yielding nearly identical products (Figure 1D, compare lanes 1\u20134 to lanes 5\u20138) and reaction time-courses (Figure 1\u2014figure supplement 1 \u2013 (B)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "afd83778-9e86-4d91-8475-bbf0f40772fd",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C36",
+      "claim": "If DCL3 is incubated with a dsRNA with two blunt ends, DCL3 dices from both ends.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, if DCL3 is incubated with a dsRNA with two blunt ends, DCL3 dices from both ends, generating 16 and 24 nt products from both strands (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "74f77337-bd22-4f6a-a569-052185ccd066",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C37",
+      "claim": "DCL3 measures only one strand of its dsRNA substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments testing the dicing of dsRNAs formed by annealing RNA strands ranging in size from 22 to 25 nt yielded additional evidence that DCL3 measures only one strand of its dsRNA substrates (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "452a6d3b-b0a2-4a00-8354-c7c1c5622b60",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C38",
+      "claim": "Using a 24/25 nt duplex with a 1 nt 3\u2032 overhang, the 24 nt top strand was not cut by DCL3, but the bottom strand was trimmed by 2 nt to yield a 23 nt product.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a duplex whose top strand was 24 nt and whose bottom strand was 25 nt, thus generating a 1 nt 3\u2032 overhang on the left side, the 24 nt top strand was not cut by DCL3, but the bottom strand was trimmed by 2 nt to yield a 23 nt product (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "3269c836-ff92-4a29-831e-b13aa99a5895",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C39",
+      "claim": "Dicing of a 24/24 nt dsRNA with two blunt ends by DCL3 occurs from the left or right sides, with one 24 nt strand uncut and the paired strand trimmed to 22 nt RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested a duplex with two blunt ends, formed by annealing two 24 nt RNAs (Figure 2B; note that these 24 nt RNAs have different gel mobilities). Dicing by DCL3 occurred from the left or right sides, due to the absence of a 3\u2032 overhang to bias dicing to one side. In each case, one 24 nt strand was uncut whereas the paired strand was trimmed to 22 nt RNA (Figure 2B, lane 3; note that the alternative 22 nt RNAs also have different gel mobilities).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "8081bfed-8476-47b1-afb4-eb66780f11a8",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C40",
+      "claim": "DCL3's measurement of an interval equivalent to 24 nt is a consequence of interaction with the recessed 5\u2032 end of the top strand.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that DCL3's measurement of an interval equivalent to 24 nt is a consequence of interaction with the recessed 5\u2032 end of the top strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "0188fa20-09dd-42aa-bc1e-e958bbe1ea78",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C41",
+      "claim": "The bottom strand of a dsRNA substrate is cut by DCL3 at a position offset by 2 nt from where the 24th nucleotide would have been present in the top strand.",
+      "claim_type": "EXPLICIT",
+      "source": "The bottom strand was cut at a position offset by 2 nt from where the 24th nucleotide would have been present in the top strand had the top strand been long enough.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "fadab04d-6edf-4d6c-b850-440ca25b2c13",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C42",
+      "claim": "DCL3 does not cut either strand of a 24/23 nt duplex with a 1 nt 3\u2032 overhang on the left side and a 2 nt 3\u2032 overhang on the right side.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we annealed a 24 nt top strand and a 23 nt bottom strand to generate a duplex with a 1 nt 3\u2032 overhang on the left side and a 2 nt 3\u2032 overhang on the right side (Figure 2C), which mimics the dicing product proposed in Figure 1B (and Singh et al., 2019) and verified in Figure 1C. DCL3 does not cut either stand of this duplex RNA (Figure 2C, compare lanes 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "d614b2b8-5e6d-4386-ad73-078950629bae",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C43",
+      "claim": "The asymmetric 24/23 nt dsRNA duplex fits into DCL3 with the RNase domains aligned with the pre-existing ends of the RNA strands, resulting in no cutting.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the asymmetric 24/23 nt dsRNA duplex fits into the enzyme with the RNase domains aligned with the pre-existing ends of the RNA strands. As a result, no cutting occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "e55a993b-f529-453b-bb1e-977b753cc599",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C44",
+      "claim": "A 24/24 nt duplex having 2 nt 3\u2032 overhangs at both ends was not cut by DCL3.",
+      "claim_type": "EXPLICIT",
+      "source": "A 24/24 nt duplex having 2 nt 3\u2032 overhangs at both ends was also not cut by DCL3 (Figure 2C, compare lanes 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "627c0ba3-d41c-463f-9050-9c4d866fdfac",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C45",
+      "claim": "DCL3 dicing products are not substrates for further dicing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that DCL3 dicing products are not substrates for further dicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "898b3633-ec7e-496b-afcb-5397a0fc8466",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C46",
+      "claim": "Duplexes formed by annealing 23 and 22 nt RNA strands yield a ladder of digestion products as short as 17 nt when diced by DCL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike 24/23 and 24/24 dicing products that are not diced further, duplexes formed by annealing 23 and 22 nt RNA strands, in various permutations, yielded a ladder of digestion products as short as 17 nt (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "0f345092-1bc7-4150-99cd-88c7ac9c4220",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C47",
+      "claim": "dsRNAs whose strands are shorter than typical DCL3 dicing products do not fit into the enzyme in a way that fixes their position, allowing for cutting at variable positions.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that dsRNAs whose strands are shorter than typical DCL3 dicing products do not fit into the enzyme in a way that fixes their position, allowing for cutting at variable positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "e733853d-bf54-4e73-99e1-add6909e61dc",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C48",
+      "claim": "DCL3 could play a role in the cleavage and turnover of dsRNAs smaller than its dicing products in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The results also raise the possibility that DCL3 could play a role in the cleavage and turnover of dsRNAs smaller than its dicing products in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental results in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "0fb24e51-6e50-4888-89d6-55d214744c10",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C49",
+      "claim": "Mutating both RNase III domains of DCL3 abolishes dicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating both RNase III domains abolished dicing (compare lanes 5 and 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "adc220d5-bb68-4b50-922c-40ee367cdfeb",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C50",
+      "claim": "Mutating RNase III domain A of DCL3, while leaving domain B unchanged, results in top strand cutting to 24 nt, but no bottom strand cutting.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating RNase III domain A, while leaving domain B unchanged, resulted in top strand (26 nt) cutting to 24 nt, but no bottom strand (27 nt) cutting (lane 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "4b79662a-0a52-4b99-9dd0-fef666aadd09",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C51",
+      "claim": "Mutating RNase III domain B of DCL3, but leaving domain A unchanged, allows bottom strand cutting to 23 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, mutating domain B, but leaving domain A unchanged, allowed bottom strand cutting, to 23 nt (lane 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "4bab939a-797b-4586-8e47-ff5bc0edaea1",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C52",
+      "claim": "The PAZ domain of DCL3 binds the recessed 5\u2032 end of the top RNA strand and cuts that strand using RNase III domain B at a distance equivalent to 24 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that the PAZ domain binds the recessed 5\u2032 end of the top RNA strand, opposite the 3\u2032 overhang of the bottom strand, and cuts that strand using RNase III domain B at a distance equivalent to 24 nt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 3B and 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "d446ff6b-00ae-42d7-b345-e47c357aa9e7",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C53",
+      "claim": "The paired strand of a dsRNA substrate is cut by RNase III domain A of DCL3, with the 3\u2032 overhanging end of this strand not anchored at a fixed distance, allowing its diced products to vary in length.",
+      "claim_type": "EXPLICIT",
+      "source": "The paired strand is cut by RNase III domain A, with the 3\u2032 overhanging end of this strand not anchored at a fixed distance, allowing its diced products to vary in length (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental results in Figure 3B and 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "522fd96a-0f8b-4fc0-9a1d-6d2351fb4c22",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C54",
+      "claim": "DCL3 cleaves dsRNA substrates whose top strands begin with 5\u2032 A or U more efficiently than those beginning with C or G.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment revealed that DCL3 cleaves dsRNA substrates whose top strands begin with 5\u2032 A or U (lanes 5\u201310) more efficiently than those beginning with C or G (lanes 11\u201316), in agreement with prior results comparing cell-free lysates of wild-type and dcl3 mutant plants (Nagano et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4A and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "9361aa82-eb92-4767-9417-d3a4b913cc77",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C55",
+      "claim": "An AU or UA pair is preferred over a GC or CG pair at the precursor's terminus for DCL3 dicing.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that A or U allows for similar dicing efficiency suggests that an AU or UA pair is preferred over a GC or CG pair at the precursor's terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "93fa9baf-559a-4ca8-84ba-f2cd39fb7185",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C56",
+      "claim": "No significant difference in DCL3 cleavage efficiency was observed for bottom strands having A, U, C, or G as the overhanging nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested whether DCL3 is affected by the nucleotide at the 3\u2032 overhanging position of the bottom strand (Figure 4B). No significant difference in cleavage efficiency was observed for bottom strands having A, U, C, or G as the overhanging nucleotide, indicating that although the presence of 3\u2032 overhang is important for dicing (Figure 1D), the identity of the overhanging nucleotide is unimportant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "ff975485-ec8e-4a95-82b6-43c225bfd715",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C57",
+      "claim": "The presence of a 3\u2032 overhang is important for DCL3 dicing, but the identity of the overhanging nucleotide is unimportant.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference in cleavage efficiency was observed for bottom strands having A, U, C, or G as the overhanging nucleotide, indicating that although the presence of 3\u2032 overhang is important for dicing (Figure 1D), the identity of the overhanging nucleotide is unimportant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "5b43656b-9ca8-46cd-be6f-61c44e2d196e",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C58",
+      "claim": "The 5\u2032 terminal nucleotide of a nascent RDR2 transcript is expected to possess a 5\u2032 triphosphate group.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5\u2032 terminal nucleotide of a nascent transcript is expected to possess a 5\u2032 triphosphate group, and biochemical evidence indicates that this is true for RDR2 transcripts (Singh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "73c1ca2b-dd0e-4820-88aa-cb78d5fa4c53",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C59",
+      "claim": "Pol IV-dependent transcripts generated in vivo or in vitro can be cloned via ligation reactions that require a 5\u2032 monophosphate, without prior enzymatic treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Pol IV-dependent transcripts generated in vivo or in vitro can be cloned via ligation reactions that require a 5\u2032 monophosphate, without prior enzymatic treatments (Blevins et al., 2015; Li et al., 2015; Zhai et al., 2015; Singh et al., 2019), suggesting the possibility of an intrinsic or associated pyrophosphatase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "c0c11bd0-88b2-456c-9bef-4048a0031b9f",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C60",
+      "claim": "If the bottom strand of a dsRNA substrate has a 5\u2032 hydroxyl group, DCL3 preferentially engages the left side of the dsRNA substrate with a 5\u2032 monophosphate and disfavors the right side with a 5\u2032 hydroxyl.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment revealed that if the bottom strand has a 5\u2032 hydroxyl group, a strong 24 nt signal and weak 16 nt signal (barely above background levels) are observed (Figure 4C, lane 4). This indicates that DCL3 preferentially engaged the left side of the dsRNA substrate, which has a 5\u2032 monophosphate, and disfavored the right side, which has a 5\u2032 hydroxyl.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "b21374f2-2fdc-4879-8bfe-6781cb3bc1f9",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C61",
+      "claim": "If the bottom strand of a dsRNA substrate has a 5\u2032 monophosphate or a triphosphate, more right-side dicing occurs, suggesting that monophosphates or triphosphates are similarly conducive to DCL3 engagement, but with monophosphates slightly preferred.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if the bottom strand also has a 5\u2032 monophosphate (lane 5), or a triphosphate (lane 6), more right-side dicing occurs suggesting that monophosphates or triphosphates are similarly conducive to DCL3 engagement, but with monophosphates slightly preferred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "5b286f7c-3599-4483-8de6-2e6f866b8ede",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C62",
+      "claim": "Drosophila melanogaster Dicer-2 displays ATP-dependent activity for substrates with blunt-ends, but not overhanging ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila melanogaster Dicer-2 displays ATP-dependent activity for substrates with blunt-ends, but not overhanging ends (Sinha et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "d6e7f73b-750d-4cd0-8896-661eb3008945",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C63",
+      "claim": "Experiments comparing cell-free lysates of wild-type versus dcl3 mutant Arabidopsis plants suggested that binding, but not hydrolysis, of ATP is needed for DCL3 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, experiments comparing cell-free lysates of wild-type versus dcl3 mutant Arabidopsis plants suggested that binding, but not hydrolysis, of ATP is needed for DCL3 activity (Nagano et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "a789da44-ce20-451d-b308-4f6842a8c4a9",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C64",
+      "claim": "Arabidopsis DCL3 does not require ATP binding or hydrolysis for dicing.",
+      "claim_type": "EXPLICIT",
+      "source": "In reactions containing 0 mM ATP, 5 mM ATP, or 5 mM ATP-\u03b3-S, a non-hydrolyzable form of ATP, no requirement of ATP for DCL3 activity was observed, as monitored by the generation of labeled 24 nt dicing products (lanes 2\u201310 of Figure 5A, B; see also Figure 5\u2014figure supplement 1). We conclude that Arabidopsis DCL3 does not require ATP binding or hydrolysis for dicing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 5A, 5B, and 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "cefc91f8-0cb8-4dac-bcc8-6e4844056111",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C65",
+      "claim": "3\u2032 overhangs are present at both termini of Pol IV-RDR2 transcribed dsRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of transcription reaction products with increasing amounts of S1 nuclease resulted in a progressive 1\u20132 nt shortening of labeled Pol IV transcripts (Figure 6B, lanes 1\u20134). Because the 32P label is at the 5\u2032 end of these Pol IV transcripts, S1 trimming must be occurring at their 3\u2032 ends. Body-labeled RDR2 transcripts were shortened by 1 nt upon digestion with S1 nuclease (Figure 6B, lanes 5\u20138), a result consistent with the removal of the single untemplated nucleotide added to the 3\u2032 end of RDR2 transcripts. Collectively, the data of Figure 6B indicate that the 3\u2032 ends of both the Pol IV transcripts and the RDR2 transcripts overhang the paired strand, fitting the predictions of the model in Figure 6A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "31ae27d9-9a44-4cc1-84d2-d1a0bb9730ee",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C66",
+      "claim": "RDR2 initiates transcription 1 or 2 nt internal to the 3\u2032 ends of Pol IV transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "S1 trimmed the 5\u2032-labeled template strand of the RNA duplexes by 1\u20132 nt (lanes 1 and 2). As controls, we synthesized RNA strands with perfect complementarity to the template strand (lanes 3 and 4) or were shorter by 1 (lanes 5 and 6) or 2 nt (lanes 7 and 8) at their 5\u2032 ends, annealed these RNAs to the 5\u2032 end-labeled template RNA strand, and subjected resulting dsRNAs to S1 nuclease digestion. S1 digestion patterns for synthetic dsRNAs with 1 or 2 nt overhangs most closely resembled the digestion patterns observed for RDR2 transcription products (compare lanes 2, 6, and 8). We conclude that RDR2 initiates transcription 1 or 2o nt internal to the 3\u2032 ends of the Pol IV transcripts it uses as templates, consistent with the results of Figure 6B, scenarios 2 and 3 of Figure 6A, and the results of a different assay (Fukudome et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 6C and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "a1ffe1d9-e97f-4f00-8f3e-a6e4bbb6c0b2",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C67",
+      "claim": "24 nt siRNAs come from the 5\u2032 ends of Pol IV transcripts and the 5\u2032 ends of RDR2 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the experiments of Figure 6D reveal that the siRNAs derived from the 5\u2032 ends of Pol IV transcripts and the 5\u2032 ends of RDR2 transcripts are 24 nt, consistent with DCL3 measuring and cutting 24 nt from the 5\u2032 end of either strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "5993d08a-885d-4247-8206-ece2ebc06453",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C68",
+      "claim": "23 nt siRNAs come from the 3\u2032 ends of Pol IV and RDR2 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus deduce that the 23 nt siRNA dicing products, which are observed only when Pol IV or RDR2 transcripts are body-labeled (lanes 4 and 6), come from the 3\u2032 ends of Pol IV and RDR2 transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "5b01b1b1-00a3-41fc-87ed-ed4ec792e162",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C69",
+      "claim": "Pol IV acts first in siRNA biogenesis, transcribing single-stranded template DNA to generate RNA transcripts whose 5\u2032 to 3\u2032 polarity is opposite that of the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments showed definitively that Pol IV acts first, transcribing the single-stranded template DNA to generate RNA transcripts whose 5\u2032 to 3\u2032 polarity is opposite that of the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "28a6293e-b462-49a7-9ed0-a74ed6c6bea1",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C70",
+      "claim": "RDR2 acts second in siRNA biogenesis, using the Pol IV transcripts as templates to generate complementary RNAs that are oriented in the same 5\u2032 to 3\u2032 polarity as the DNA template strand.",
+      "claim_type": "EXPLICIT",
+      "source": "RDR2 acts second, using the Pol IV transcripts as templates to generate complementary RNAs that are oriented in the same 5\u2032 to 3\u2032 polarity as the DNA template strand, and thus could not have been directly transcribed from the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "c1dc9a6a-0450-464a-96c0-eda11f797136",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C71",
+      "claim": "24 and 23 nt siRNAs are generated from both the Pol IV and the RDR2-transcribed strands of siRNA precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies showed that 24 and 23 nt siRNAs are generated from both the Pol IV and the RDR2-transcribed strands of siRNA precursors, with 24 nt siRNAs outnumbering 23 nt siRNAs by several fold (Singh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "6886ef9e-386d-4119-b468-f362ccb90202",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C72",
+      "claim": "24 nt siRNAs outnumber 23 nt siRNAs by several fold.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies showed that 24 and 23 nt siRNAs are generated from both the Pol IV and the RDR2-transcribed strands of siRNA precursors, with 24 nt siRNAs outnumbering 23 nt siRNAs by several fold (Singh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "6e01a212-9cf3-4c44-a314-fec46ee09bff",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C73",
+      "claim": "An untemplated nucleotide at the 3\u2032 terminus is a characteristic of RDR2 transcripts, but not Pol IV transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these studies showed that an untemplated nucleotide at the 3\u2032 terminus is a characteristic of RDR2 transcripts, but not Pol IV transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "eb87d116-7fdc-441e-b287-e085be054d67",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C74",
+      "claim": "The untemplated 3\u2032-terminal nucleotide persists in siRNAs derived from RDR2 transcripts and is selectively enriched among 23 nt siRNAs but not 24 nt siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The untemplated 3\u2032-terminal nucleotide persists in siRNAs derived from RDR2 transcripts and, importantly, is selectively enriched among 23 nt siRNAs but not 24 nt siRNAs (Singh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "857dc86a-5dbb-4196-9912-afcdc4968034",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C75",
+      "claim": "23 nt siRNAs also come from the 3\u2032 ends of Pol IV transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 23 nt siRNAs also come from the 3\u2032 ends of Pol IV transcripts (Figure 6D), helping explain why not all 23 nt siRNAs possess an untemplated nucleotide (Wang et al., 2016; Singh et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 6D and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "fc7f1f56-60ce-4639-8c60-e766f675a281",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C76",
+      "claim": "Not all 23 nt siRNAs possess an untemplated nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 23 nt siRNAs also come from the 3\u2032 ends of Pol IV transcripts (Figure 6D), helping explain why not all 23 nt siRNAs possess an untemplated nucleotide (Wang et al., 2016; Singh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "a8cd4eed-bd32-4a13-ae18-f0b4d8064dc9",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C77",
+      "claim": "If Pol IV initiates with an adenosine, left-side dicing is favored, with DCL3 generating a diced duplex consisting of a 24 nt siRNA from the 5\u2032 end of the Pol IV strand paired with a 23 nt siRNA from the 3\u2032 end of the RDR2 strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our experiments suggest that if Pol IV initiates with an adenosine, left-side dicing is favored, with DCL3 generating a diced duplex consisting of a 24 nt siRNA from the 5\u2032 end of the Pol IV strand paired with a 23 nt siRNA from the 3\u2032 end of the RDR2 strand (Figure 7, dicing scenario 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental results and illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "63c79657-87cc-4455-8d0c-e1771c2f6f5f",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C78",
+      "claim": "If Pol IV transcription begins with a G, this encourages right-side dicing, especially if the RDR2 strand has a 5\u2032 A or U that is optimal for DCL3 engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, if Pol IV transcription begins with a G, we propose that this encourages right-side dicing, especially if the RDR2 strand has a 5\u2032 A or U that is optimal for DCL3 engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "139c9c1b-3f9a-4d4e-8ee7-9c43242ea332",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C79",
+      "claim": "RDR2 transcripts initiate most frequently with A or U.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, RNA-seq data have shown that RDR2 transcripts initiate most frequently with A or U (Singh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "34c645da-0f1e-40db-992b-4512da27ddda",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C80",
+      "claim": "Consensus sequences of in vivo precursor 5\u2032 and 3\u2032 ends best matched consensus sequences for siRNA 5\u2032 and 3\u2032 ends by invoking left-side dicing for precursors that initiated with A and right-side dicing for precursors that initiated with G.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, consensus sequences of in vivo precursor 5\u2032 and 3\u2032 ends best matched consensus sequences for siRNA 5\u2032 and 3\u2032 ends by invoking left-side dicing for precursors that initiated with A and right-side dicing for precursors that initiated with G (Blevins et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "c52df73b-6313-46bb-adb5-950d69db38cb",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C81",
+      "claim": "Right-side dicing accounts for 24 nt siRNAs derived from the RDR2 strand and 23 nt siRNAs derived from the Pol IV strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current study shows that it is this right-side dicing that accounts for 24 nt siRNAs derived from the RDR2 strand and 23 nt siRNAs derived from the Pol IV strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "b8ec7abe-7a8d-4ed1-9133-87a37a64e9d4",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C82",
+      "claim": "There are two ways to generate 24 nt siRNAs from each strand and only one way to generate 23 nt siRNAs from each strand.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two ways to generate 24 nt siRNAs from each strand and only one way to generate 23 nt siRNAs from each strand (Figures 6A and 7), which fits with the fact that 24 nt siRNAs are more abundant than 23 nt siRNAs, both in vivo and in vitro (Blevins et al., 2015; Singh et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the models in Figures 6A and 7 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "c7ec1be8-d072-46ca-801a-69d4673f64f8",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C83",
+      "claim": "Pol IV transcripts that are 24 nt or longer are sufficient to give rise to DCL3-dependent siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study also provides new insight into the minimum length of Pol IV or RDR2 transcripts that can serve as siRNA precursors or siRNAs. The experiments of Figure 2 indicate that Pol IV transcripts that are 24 nt or longer are sufficient to give rise to DCL3-dependent siRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "da607758-8018-4292-ba7a-6d66c0d67c3b",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C84",
+      "claim": "If Pol IV generates a 24 nt transcript and RDR2 initiates 2 nt internal to this transcript and adds an extra untemplated nucleotide to the 3\u2032 end of its transcript, the result would be a 24/23 nt dsRNA duplex that would not need to be diced by DCL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, if Pol IV were to generate a 24 nt transcript and RDR2 were to initiate 2 nt internal to this transcript and add an extra untemplated nucleotide to the 3\u2032 end of its transcript, the result would be a 24/23 nt dsRNA duplex. This duplex would not need to be diced by DCL3 because it is already indistinguishable from a dicing product (see Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental results in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "afd1660a-46e2-4aad-b565-176e9d3386fb",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C85",
+      "claim": "In dcl2 dcl3 dcl4 triple mutants, Pol IV-dependent 24 nt RNAs were detected at ~7% of the level found in wild-type plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in dcl2 dcl3 dcl4 triple mutants, we detected Pol IV-dependent 24 nt RNAs at ~7% of the level found in wild-type plants (Blevins et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "8815c4e2-063c-4ab3-a68b-1924223eed3c",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C86",
+      "claim": "Low levels of RNA-directed DNA methylation persist in dicer mutants, which may be accounted for by Pol IV-dependent 24 nt RNAs that do not require dicing.",
+      "claim_type": "EXPLICIT",
+      "source": "This may account for low levels of RNA-directed DNA methylation that persist in dicer mutants, suggesting an alternative explanation to putative dicer-independent pathways that have been proposed to be distinct from the canonical RNA-directed DNA methylation pathway yet remain unidentified (Yang et al., 2016; Ye et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental findings and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "54f4f538-971f-4d61-8358-4c02963f5846",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C87",
+      "claim": "24 nt siRNAs associated with AGO4 tend to begin with a 5\u2032 adenosine.",
+      "claim_type": "EXPLICIT",
+      "source": "Another prior finding in need of reconsideration is the observation that 24 nt siRNAs associated with AGO4 tend to begin with a 5\u2032 adenosine (Mi et al., 2008), a finding that has been interpreted as evidence that AGO4 actively selects siRNAs that begin with an adenosine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "2a3bcaca-3491-4dae-b83e-4dfc1af0fe99",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C88",
+      "claim": "Pol IV and RDR2 transcripts most frequently begin with adenosine.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that Pol IV and RDR2 transcripts most frequently begin with adenosine (Singh et al., 2019) and our current study shows that DCL3 preferentially dices substrates with A at their 5\u2032 ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "83338c92-5117-4669-90f4-e44b9eaecbbe",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C89",
+      "claim": "DCL3 preferentially dices substrates with A at their 5\u2032 ends.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that Pol IV and RDR2 transcripts most frequently begin with adenosine (Singh et al., 2019) and our current study shows that DCL3 preferentially dices substrates with A at their 5\u2032 ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "e3baa601-d0c4-4587-9cd5-13154dc84e43",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C90",
+      "claim": "Pol IV, RDR2, and DCL3 activities could collectively account for much of the 5\u2032 A-enrichment among siRNAs that become loaded into AGO4.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus Pol IV, RDR2, and DCL3 activities could collectively account for much of the 5\u2032 A-enrichment among siRNAs that become loaded into AGO4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and prior findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "889c00cc-e4cd-4117-b65b-8a3b740a2c9c",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C91",
+      "claim": "24 nt RNAs that have a 5\u2032 A, U, C, or G are assimilated into AGO4 with similar efficiency in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, 24 nt RNAs that have a 5\u2032 A, U, C, or G are assimilated into AGO4 with similar efficiency in vitro (Wang and Pikaard, unpublished).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is unpublished data from the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "9556c4b6-8c39-44b2-967f-4e521021bfda",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C92",
+      "claim": "DCL3 measures a fixed length of RNA equivalent to 24 nt, corresponding to the distance from a phosphorylated or triphosphorylated 5\u2032 terminal nucleotide bound by the PAZ domain to the RNase III domain B cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "This fixed length presumably corresponds to the distance from a phosphorylated or triphosphorylated 5\u2032 terminal nucleotide, bound by the PAZ domain, as in other Dicers (Park et al., 2011; Tian et al., 2014; Sinha et al., 2018), to the RNase III domain B cleavage site of DCL3, a length equivalent to 24 nt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and supported by citations to prior research on other Dicers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "7676628f-6f1f-4ae3-814f-00711d3e9031",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C93",
+      "claim": "The siRNAs of alternative size (23 nt) come from the opposite strand of RNA, with the 5\u2032 end generated by the RNase III domain A cleavage reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The siRNAs of alternative size (23 nt) come from the opposite strand of RNA. The 5\u2032 end of the non-measured strand is generated by the RNase III domain A cleavage reaction, but the 3\u2032 end of this strand is apparently not anchored at a set distance, unlike human dicer (Park et al., 2011), and can overhang the 5\u2032 end of the measured strand by 1 nt, to yield a 23 nt siRNA, or 2 nt to yield a 24 nt siRNA (see Figures 6A and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental results and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "baf9d7ce-76fe-4f19-b099-dd130b8cafe3",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C94",
+      "claim": "The 3\u2032 end of the non-measured strand is apparently not anchored at a set distance in DCL3, unlike human dicer.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5\u2032 end of the non-measured strand is generated by the RNase III domain A cleavage reaction, but the 3\u2032 end of this strand is apparently not anchored at a set distance, unlike human dicer (Park et al., 2011), and can overhang the 5\u2032 end of the measured strand by 1 nt, to yield a 23 nt siRNA, or 2 nt to yield a 24 nt siRNA (see Figures 6A and 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "56f4075a-4784-45f6-a458-08769d0d7e55",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C95",
+      "claim": "A structural study of DCL3 bound to dsRNA supports the interpretation that the 3\u2032 end of the non-measured strand is not anchored at a fixed distance.",
+      "claim_type": "EXPLICIT",
+      "source": "A structural study of DCL3 bound to dsRNA, published while our study was in review, supports this interpretation (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "3a11d9c8-9e3f-4367-b690-c34f825af82c",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C96",
+      "claim": "Pol IV and RDR2 physically interact.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol IV and RDR2 physically interact (Mishra et al., 2021) and their activities are tightly coupled such that Pol IV transcripts are channeled directly to RDR2 (Singh et al., 2019) by a proposed mechanism involving Pol IV backtracking (Fukudome et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "b73824cf-7d2a-4bab-9d85-f1baf5bdd461",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C97",
+      "claim": "Pol IV transcripts are channeled directly to RDR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol IV and RDR2 physically interact (Mishra et al., 2021) and their activities are tightly coupled such that Pol IV transcripts are channeled directly to RDR2 (Singh et al., 2019) by a proposed mechanism involving Pol IV backtracking (Fukudome et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "ce02c42b-30e3-43fb-bc37-89bdb7ead2a7",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C98",
+      "claim": "Lack of Pol IV-interaction explains why the other five RNA-dependent RNA polymerases in Arabidopsis thaliana are not redundant with RDR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Lack of Pol IV-interaction explains why the other five RNA-dependent RNA polymerases in Arabidopsis thaliana are not redundant with RDR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings and prior knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "e7a7bcd7-79e2-4896-b9a9-536e966e0d1b",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C99",
+      "claim": "Idiosyncrasies of Pol IV and RDR2 transcription inform DCL3 how to dice the dsRNAs at the next step of the pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current study now shows that idiosyncrasies of Pol IV and RDR2 transcription, including the choice of nucleotide used to initiate transcription, the alternative start site positions of RDR2 internal to Pol IV transcripts, and the non-templated addition of a nucleotide at the 3\u2032 end of RDR2 transcripts, collectively inform DCL3 how to dice the dsRNAs at the next step of the pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "4f0e2f27-73e4-45ed-a52e-89507c055155",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C100",
+      "claim": "The specification of 23 and 24 nt siRNAs has functional significance, by specifying that the 24 nt RNA of a 23/24 nt RNA duplex becomes the siRNA stably associated with AGO4.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental evidence indicates that the specification of 23 and 24 nt siRNAs has functional significance, by specifying that the 24 nt RNA of a 23/24 nt RNA duplex becomes the siRNA stably associated with AGO4 (Wang and Pikaard, unpublished).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is unpublished data from the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "394c571d-beca-4617-8efa-ef360d977f11",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C101",
+      "claim": "By generating 24 and 23 nt siRNAs from either strand and either end of the Pol IV-RDR2 dsRNAs, DCL3 can diversify the set of siRNAs that can be derived from short dsRNA precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by generating 24 and 23 nt siRNAs from either strand and either end of the Pol IV-RDR2 dsRNAs, DCL3 can diversify the set of siRNAs that can be derived from short dsRNA precursors, enabling siRNA base-pairing with Pol V transcripts transcribed from either strand of target loci DNA to maximize DNA methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "630bb08c-dd54-4c89-9433-97cf0bf5485c",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C102",
+      "claim": "Diversifying the siRNA pool enables siRNA base-pairing with Pol V transcripts transcribed from either strand of target loci DNA to maximize DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by generating 24 and 23 nt siRNAs from either strand and either end of the Pol IV-RDR2 dsRNAs, DCL3 can diversify the set of siRNAs that can be derived from short dsRNA precursors, enabling siRNA base-pairing with Pol V transcripts transcribed from either strand of target loci DNA to maximize DNA methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "a1234b3e-b933-4862-a694-a8f106e6cf6c",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C104",
+      "claim": "Pol IV is a 12-subunit DNA-dependent RNA polymerase that evolved as a specialized form of Pol II.",
+      "claim_type": "EXPLICIT",
+      "source": "Biogenesis of siRNAs involved in RdDM begins with DNA transcription by Pol IV, a 12-subunit DNA-dependent RNA polymerase that evolved as a specialized form of Pol II (Ream et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "258fd45f-866d-4c5d-a61b-57f8f3e7ca87",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "claim_id": "C105",
+      "claim": "Pol IV's inability to maintain processivity through double-stranded DNA regions is proposed to result in Pol IV arrest and backtracking.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription reactions of Pol IV and RDR2 are tightly coupled (Singh et al., 2019) with Pol IV's inability to maintain processivity through double-stranded DNA regions proposed to results in Pol IV arrest and backtracking, coincident with DNA template-nontemplate strand reannealing and extrusion of the nascent transcript's 3\u2032 end for engagement by RDR2 (Fukudome et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on RNA-directed DNA methylation (RdDM) in plants, describing the pathway by which Pol IV and RDR2 generate dsRNA precursors that are processed by DCL3 into 23 and 24 nt siRNAs, which then guide AGO4 complexes to target loci for DNA methylation and transcriptional silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C16 describe well-established background knowledge about the RdDM pathway in plants, supported by multiple citations to prior research. These claims provide the necessary context for the current study and are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "f2967474-03b2-4856-ac9f-c0f0de9264bf",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DCL3 preferentially dices dsRNA substrates with 3' overhangs rather than blunt ends, measuring 24 nt from the 5' end of one strand and making an offset cut on the paired strand to leave a 2 nt 3' overhang.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C36 are directly supported by experimental data in Figures 1C, 1D, and 1E, which demonstrate DCL3's preference for 3' overhangs and its dicing pattern. The experiments use synthetic dsRNA substrates with defined structures and show consistent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "7bcb4921-0ebb-4fc5-884e-b93161f25c16",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DCL3 measures only one strand of its dsRNA substrates, specifically the strand with the recessed 5' end opposite a 3' overhang, and DCL3 dicing products (24/23 or 24/24 nt duplexes with appropriate overhangs) are not substrates for further dicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C45 are supported by experiments in Figure 2 using dsRNA substrates of varying lengths (22-25 nt). The data clearly show that DCL3 measures from the recessed 5' end and that properly sized dicing products are not further processed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "83520184-9bcf-47ac-9974-c60b29b5d169",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "dsRNAs with strands shorter than 23 nt are imprecisely digested by DCL3 into products as short as 17 nt, suggesting DCL3 may play a role in turnover of small dsRNAs in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by experimental data in Figure 2D. However, C48 is speculative about in vivo function. The experimental observation is solid, but the biological significance remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "27569df5-1d19-4ac8-8b3b-b47d650c2c1e",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RNase III domain B of DCL3 cuts the measured strand (top strand with recessed 5' end) at 24 nt, while RNase III domain A cuts the paired strand at a variable position determined by the 3' overhang length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by mutagenesis experiments in Figure 3B and Figure 3\u2014figure supplement 1, which demonstrate the specific roles of each RNase III domain. The experiments use catalytically inactive mutants and show clear strand-specific cutting patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "242caee4-0998-4ece-90c8-b129301f23ed",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DCL3 preferentially cleaves dsRNA substrates whose top strands begin with 5' A or U over those beginning with C or G, while the identity of the 3' overhanging nucleotide does not affect cleavage efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by experimental data in Figure 4A and 4B. The experiments systematically test all four nucleotides at both positions and show clear preferences. The results are consistent with prior work (C54 cites Nagano et al., 2014).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "1d093714-124f-4c99-b1be-37a7cada1e75",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DCL3 preferentially engages dsRNA ends with 5' monophosphate or triphosphate groups over 5' hydroxyl groups, with monophosphates slightly preferred over triphosphates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 are supported by the competition assay in Figure 4C, which shows differential dicing based on 5' phosphorylation status. The experimental design is appropriate for testing relative preferences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "dacb2979-0762-47da-9f79-d0c61d4d2454",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Arabidopsis DCL3 does not require ATP binding or hydrolysis for dicing activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by experiments in Figures 5A, 5B, and Figure 5\u2014figure supplement 1, which show DCL3 activity in the absence of ATP and with non-hydrolyzable ATP analog. The apyrase treatment controls (Figure 5\u2014figure supplement 2) confirm ATP removal. This contradicts prior suggestions (C63) that ATP binding is required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "18fae567-35e5-4dc4-970c-9b537e1282b3",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "3' overhangs are present at both termini of Pol IV-RDR2 transcribed dsRNAs, with RDR2 initiating transcription 1-2 nt internal to the 3' ends of Pol IV transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by S1 nuclease digestion experiments in Figures 6B and 6C. The experiments use selective labeling strategies to distinguish Pol IV and RDR2 strands and show consistent trimming patterns. The results are also consistent with prior work (Fukudome et al., 2021).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "172a4add-f88a-444d-b2b8-4ca298f65dcf",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "24 nt siRNAs are derived from the 5' ends of both Pol IV and RDR2 transcripts, while 23 nt siRNAs come from the 3' ends of both strands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by experiments in Figure 6D using different labeling strategies (5' end-labeling, body-labeling, and capping) to determine which siRNA sizes come from which transcript ends. The logic is sound and the results are consistent across methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "9020cca1-70f7-482f-a776-9ea64f351622",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Pol IV's choice of initiating nucleotide, RDR2's internal initiation, and RDR2's terminal transferase activity collectively create a 'dicing code' that influences which end of the dsRNA precursor is diced and whether 23 or 24 nt siRNAs are produced, thereby diversifying the siRNA pool for maximal target coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7, C77-C78, C81-C82, C99, C101-C102 represent the central thesis of the manuscript. These claims are supported by the integration of multiple experimental findings (Figures 1-6) and prior RNA-seq data. The model in Figure 7 synthesizes these observations. However, C78 is somewhat speculative about G-initiated transcripts favoring right-side dicing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "54d0f5a1-8d47-456c-8f6a-afbd15765cbc",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Pol IV transcripts as short as 24 nt can give rise to siRNAs, and some 24/23 nt dsRNA duplexes may not require DCL3 dicing, potentially explaining residual DNA methylation in dicer mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 are supported by experiments in Figure 2. Claims C85-C86 cite prior work (Blevins et al., 2015) and offer a new interpretation. However, C86 is speculative about the mechanism of residual methylation in dicer mutants, as alternative explanations exist.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "12202ffe-c24f-4c52-a8cf-146ba565cc41",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The enrichment of 5' adenosine in AGO4-associated siRNAs can be largely explained by the combined activities of Pol IV, RDR2, and DCL3, rather than active selection by AGO4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 integrate current findings with prior observations to reinterpret the 5' A enrichment. C88-C89 cite prior work and current data (Figure 4A). C91 cites unpublished data showing AGO4 loads all four 5' nucleotides with similar efficiency. The logic is sound but relies partly on unpublished results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "02929b72-0aa6-40d3-a8a9-962f592388dc",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "DCL3 measures a fixed 24 nt distance from the PAZ domain-bound 5' end to the RNase III domain B cleavage site, while the 3' end of the non-measured strand is not anchored at a fixed distance, unlike human Dicer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 synthesize the experimental findings into a mechanistic model, supported by comparisons to other Dicers (Park et al., 2011; Tian et al., 2014; Sinha et al., 2018). C95 notes that a recent structural study (Wang et al., 2021) supports this interpretation, providing independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "f2f2ff03-6569-4555-80ba-28b2d8849466",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on Pol IV and RDR2: these enzymes physically interact, their activities are tightly coupled, and they generate dsRNA precursors of 25-40 bp that can be processed in vitro by DCL3 without additional factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20, C96-C97, C104-C105 provide background information supported by citations to prior research, including the authors' previous work. These are established facts that contextualize the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on siRNA characteristics: AGO4 associates primarily with 24 nt siRNAs; 23 nt siRNAs may help specify AGO4 loading; RDR2 adds untemplated nucleotides enriched in 23 nt siRNAs; both strands generate 23 and 24 nt siRNAs with 24 nt being more abundant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25, C69-C76, C79-C80 provide background information from prior studies, primarily the authors' previous work (Singh et al., 2019). These establish the context and prior observations that motivated the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "0866b1a8-3635-45e6-b8ef-c9816b71f613",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The specification of 23 and 24 nt siRNAs has functional significance in determining which RNA of a 23/24 nt duplex stably associates with AGO4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C100 cites unpublished data (Wang and Pikaard, unpublished) as evidence. While this may be true, the claim cannot be fully evaluated without access to the unpublished data. The functional significance is plausible given the other findings but requires published validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "276719de-a612-441a-b40a-4050d42118b1",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "DCL3 generates diverse product sizes (21, 22, 24, 25 nt) from blunt-ended dsRNA substrates, but these sizes are not observed in vivo or in vitro Pol IV-RDR2-DCL3 reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by experimental data (Figure 1C) and citations to prior work. This observation supports the conclusion that 3' overhangs, not blunt ends, are the physiologically relevant substrates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    },
+    {
+      "id": "ef64cf87-b73b-4e48-ad88-708ada4e2d78",
+      "content_id": "950c4b91-7eb5-44f6-8bcb-b82d83ca6dbc",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background on nucleotide modifications: RDR2 transcripts have 5' triphosphates; Pol IV transcripts can be cloned without dephosphorylation suggesting pyrophosphatase activity; prior studies on Drosophila Dicer-2 and Arabidopsis DCL3 suggested ATP requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59, C62-C63 provide background from prior research. These contextualize the ATP-independence experiments (C64) and the 5' phosphorylation experiments (C60-C61).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:38:04.770631Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7ffd7a7d-53b6-4c3c-8c43-934fcc0885b8",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "8ae24b28-2f5f-4a64-992f-20873d07e9c7",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "8021c48a-4781-400f-b3d5-49817b9ebc3c",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "011f08b5-a05b-4176-850a-a2cb0253cf74",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "7f0e7408-23c8-413a-ab87-4f3b120dd050",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "5386e1fb-8319-4963-90c5-0f16e62e0165",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "46cab8f6-05d1-435d-9993-6e56269ea689",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "02091bb3-778e-4bfa-9f65-d43ab323c29f",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "8507231f-fce1-4060-bd2a-1ef309471d63",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "98ede6ec-0111-432e-8c97-95cb31733921",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "30b19f20-b040-474e-a3db-6dbdc7e37290",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "c52c0fcc-f3d9-4ff9-bf13-84507e415aca",
+      "result_id": "bd249ae7-a0f1-4ad8-815a-29610b8c1524"
+    },
+    {
+      "claim_id": "7a3828ac-e556-43c4-b76f-ce13cd453702",
+      "result_id": "f2967474-03b2-4856-ac9f-c0f0de9264bf"
+    },
+    {
+      "claim_id": "2dbb907a-031b-477c-88bb-3a4af9931c7b",
+      "result_id": "f2967474-03b2-4856-ac9f-c0f0de9264bf"
+    },
+    {
+      "claim_id": "1a67e96c-fd0f-4ce6-b189-f060dc219aca",
+      "result_id": "f2967474-03b2-4856-ac9f-c0f0de9264bf"
+    },
+    {
+      "claim_id": "45d632bd-3a4c-4daf-9872-3bc2c3f8e8b3",
+      "result_id": "f2967474-03b2-4856-ac9f-c0f0de9264bf"
+    },
+    {
+      "claim_id": "b553b9cd-8acc-440d-b581-c865cf352fc2",
+      "result_id": "f2967474-03b2-4856-ac9f-c0f0de9264bf"
+    },
+    {
+      "claim_id": "2c0c9ed9-a8f5-48a3-a38c-e4ce316f6961",
+      "result_id": "f2967474-03b2-4856-ac9f-c0f0de9264bf"
+    },
+    {
+      "claim_id": "afd83778-9e86-4d91-8475-bbf0f40772fd",
+      "result_id": "f2967474-03b2-4856-ac9f-c0f0de9264bf"
+    },
+    {
+      "claim_id": "74f77337-bd22-4f6a-a569-052185ccd066",
+      "result_id": "7bcb4921-0ebb-4fc5-884e-b93161f25c16"
+    },
+    {
+      "claim_id": "452a6d3b-b0a2-4a00-8354-c7c1c5622b60",
+      "result_id": "7bcb4921-0ebb-4fc5-884e-b93161f25c16"
+    },
+    {
+      "claim_id": "3269c836-ff92-4a29-831e-b13aa99a5895",
+      "result_id": "7bcb4921-0ebb-4fc5-884e-b93161f25c16"
+    },
+    {
+      "claim_id": "8081bfed-8476-47b1-afb4-eb66780f11a8",
+      "result_id": "7bcb4921-0ebb-4fc5-884e-b93161f25c16"
+    },
+    {
+      "claim_id": "0188fa20-09dd-42aa-bc1e-e958bbe1ea78",
+      "result_id": "7bcb4921-0ebb-4fc5-884e-b93161f25c16"
+    },
+    {
+      "claim_id": "fadab04d-6edf-4d6c-b850-440ca25b2c13",
+      "result_id": "7bcb4921-0ebb-4fc5-884e-b93161f25c16"
+    },
+    {
+      "claim_id": "d614b2b8-5e6d-4386-ad73-078950629bae",
+      "result_id": "7bcb4921-0ebb-4fc5-884e-b93161f25c16"
+    },
+    {
+      "claim_id": "e55a993b-f529-453b-bb1e-977b753cc599",
+      "result_id": "7bcb4921-0ebb-4fc5-884e-b93161f25c16"
+    },
+    {
+      "claim_id": "627c0ba3-d41c-463f-9050-9c4d866fdfac",
+      "result_id": "7bcb4921-0ebb-4fc5-884e-b93161f25c16"
+    },
+    {
+      "claim_id": "898b3633-ec7e-496b-afcb-5397a0fc8466",
+      "result_id": "83520184-9bcf-47ac-9974-c60b29b5d169"
+    },
+    {
+      "claim_id": "0f345092-1bc7-4150-99cd-88c7ac9c4220",
+      "result_id": "83520184-9bcf-47ac-9974-c60b29b5d169"
+    },
+    {
+      "claim_id": "e733853d-bf54-4e73-99e1-add6909e61dc",
+      "result_id": "83520184-9bcf-47ac-9974-c60b29b5d169"
+    },
+    {
+      "claim_id": "0fb24e51-6e50-4888-89d6-55d214744c10",
+      "result_id": "27569df5-1d19-4ac8-8b3b-b47d650c2c1e"
+    },
+    {
+      "claim_id": "adc220d5-bb68-4b50-922c-40ee367cdfeb",
+      "result_id": "27569df5-1d19-4ac8-8b3b-b47d650c2c1e"
+    },
+    {
+      "claim_id": "4b79662a-0a52-4b99-9dd0-fef666aadd09",
+      "result_id": "27569df5-1d19-4ac8-8b3b-b47d650c2c1e"
+    },
+    {
+      "claim_id": "4bab939a-797b-4586-8e47-ff5bc0edaea1",
+      "result_id": "27569df5-1d19-4ac8-8b3b-b47d650c2c1e"
+    },
+    {
+      "claim_id": "d446ff6b-00ae-42d7-b345-e47c357aa9e7",
+      "result_id": "27569df5-1d19-4ac8-8b3b-b47d650c2c1e"
+    },
+    {
+      "claim_id": "522fd96a-0f8b-4fc0-9a1d-6d2351fb4c22",
+      "result_id": "242caee4-0998-4ece-90c8-b129301f23ed"
+    },
+    {
+      "claim_id": "9361aa82-eb92-4767-9417-d3a4b913cc77",
+      "result_id": "242caee4-0998-4ece-90c8-b129301f23ed"
+    },
+    {
+      "claim_id": "93fa9baf-559a-4ca8-84ba-f2cd39fb7185",
+      "result_id": "242caee4-0998-4ece-90c8-b129301f23ed"
+    },
+    {
+      "claim_id": "ff975485-ec8e-4a95-82b6-43c225bfd715",
+      "result_id": "242caee4-0998-4ece-90c8-b129301f23ed"
+    },
+    {
+      "claim_id": "c0c11bd0-88b2-456c-9bef-4048a0031b9f",
+      "result_id": "1d093714-124f-4c99-b1be-37a7cada1e75"
+    },
+    {
+      "claim_id": "b21374f2-2fdc-4879-8bfe-6781cb3bc1f9",
+      "result_id": "1d093714-124f-4c99-b1be-37a7cada1e75"
+    },
+    {
+      "claim_id": "a789da44-ce20-451d-b308-4f6842a8c4a9",
+      "result_id": "dacb2979-0762-47da-9f79-d0c61d4d2454"
+    },
+    {
+      "claim_id": "cefc91f8-0cb8-4dac-bcc8-6e4844056111",
+      "result_id": "18fae567-35e5-4dc4-970c-9b537e1282b3"
+    },
+    {
+      "claim_id": "31ae27d9-9a44-4cc1-84d2-d1a0bb9730ee",
+      "result_id": "18fae567-35e5-4dc4-970c-9b537e1282b3"
+    },
+    {
+      "claim_id": "a1ffe1d9-e97f-4f00-8f3e-a6e4bbb6c0b2",
+      "result_id": "172a4add-f88a-444d-b2b8-4ca298f65dcf"
+    },
+    {
+      "claim_id": "5993d08a-885d-4247-8206-ece2ebc06453",
+      "result_id": "172a4add-f88a-444d-b2b8-4ca298f65dcf"
+    },
+    {
+      "claim_id": "60094ee5-7470-48ee-96db-3c5fb23826af",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "4fda4beb-a8aa-484c-8e58-d6f4320b8aa0",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "80e43e25-999c-4b9d-97a8-c3a338d777df",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "6a43a750-8394-4264-8953-5ddfb4d91093",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "a8cd4eed-bd32-4a13-ae18-f0b4d8064dc9",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "63c79657-87cc-4455-8d0c-e1771c2f6f5f",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "c52df73b-6313-46bb-adb5-950d69db38cb",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "b8ec7abe-7a8d-4ed1-9133-87a37a64e9d4",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "e7a7bcd7-79e2-4896-b9a9-536e966e0d1b",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "394c571d-beca-4617-8efa-ef360d977f11",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "630bb08c-dd54-4c89-9433-97cf0bf5485c",
+      "result_id": "9020cca1-70f7-482f-a776-9ea64f351622"
+    },
+    {
+      "claim_id": "c7ec1be8-d072-46ca-801a-69d4673f64f8",
+      "result_id": "54d0f5a1-8d47-456c-8f6a-afbd15765cbc"
+    },
+    {
+      "claim_id": "da607758-8018-4292-ba7a-6d66c0d67c3b",
+      "result_id": "54d0f5a1-8d47-456c-8f6a-afbd15765cbc"
+    },
+    {
+      "claim_id": "afd1660a-46e2-4aad-b565-176e9d3386fb",
+      "result_id": "54d0f5a1-8d47-456c-8f6a-afbd15765cbc"
+    },
+    {
+      "claim_id": "8815c4e2-063c-4ab3-a68b-1924223eed3c",
+      "result_id": "54d0f5a1-8d47-456c-8f6a-afbd15765cbc"
+    },
+    {
+      "claim_id": "54f4f538-971f-4d61-8358-4c02963f5846",
+      "result_id": "12202ffe-c24f-4c52-a8cf-146ba565cc41"
+    },
+    {
+      "claim_id": "2a3bcaca-3491-4dae-b83e-4dfc1af0fe99",
+      "result_id": "12202ffe-c24f-4c52-a8cf-146ba565cc41"
+    },
+    {
+      "claim_id": "83338c92-5117-4669-90f4-e44b9eaecbbe",
+      "result_id": "12202ffe-c24f-4c52-a8cf-146ba565cc41"
+    },
+    {
+      "claim_id": "e3baa601-d0c4-4587-9cd5-13154dc84e43",
+      "result_id": "12202ffe-c24f-4c52-a8cf-146ba565cc41"
+    },
+    {
+      "claim_id": "889c00cc-e4cd-4117-b65b-8a3b740a2c9c",
+      "result_id": "12202ffe-c24f-4c52-a8cf-146ba565cc41"
+    },
+    {
+      "claim_id": "9556c4b6-8c39-44b2-967f-4e521021bfda",
+      "result_id": "02929b72-0aa6-40d3-a8a9-962f592388dc"
+    },
+    {
+      "claim_id": "7676628f-6f1f-4ae3-814f-00711d3e9031",
+      "result_id": "02929b72-0aa6-40d3-a8a9-962f592388dc"
+    },
+    {
+      "claim_id": "baf9d7ce-76fe-4f19-b099-dd130b8cafe3",
+      "result_id": "02929b72-0aa6-40d3-a8a9-962f592388dc"
+    },
+    {
+      "claim_id": "56f4075a-4784-45f6-a458-08769d0d7e55",
+      "result_id": "02929b72-0aa6-40d3-a8a9-962f592388dc"
+    },
+    {
+      "claim_id": "92fc6057-6cb7-4e5e-ba42-7364854d7304",
+      "result_id": "f2f2ff03-6569-4555-80ba-28b2d8849466"
+    },
+    {
+      "claim_id": "00738121-8de8-4c41-8c41-577b85945400",
+      "result_id": "f2f2ff03-6569-4555-80ba-28b2d8849466"
+    },
+    {
+      "claim_id": "e6c51e49-534d-4a52-a47c-b3b1bb647b21",
+      "result_id": "f2f2ff03-6569-4555-80ba-28b2d8849466"
+    },
+    {
+      "claim_id": "df0ead38-d639-425a-ada0-15a2c4801149",
+      "result_id": "f2f2ff03-6569-4555-80ba-28b2d8849466"
+    },
+    {
+      "claim_id": "3a11d9c8-9e3f-4367-b690-c34f825af82c",
+      "result_id": "f2f2ff03-6569-4555-80ba-28b2d8849466"
+    },
+    {
+      "claim_id": "b73824cf-7d2a-4bab-9d85-f1baf5bdd461",
+      "result_id": "f2f2ff03-6569-4555-80ba-28b2d8849466"
+    },
+    {
+      "claim_id": "ce02c42b-30e3-43fb-bc37-89bdb7ead2a7",
+      "result_id": "f2f2ff03-6569-4555-80ba-28b2d8849466"
+    },
+    {
+      "claim_id": "a1234b3e-b933-4862-a694-a8f106e6cf6c",
+      "result_id": "f2f2ff03-6569-4555-80ba-28b2d8849466"
+    },
+    {
+      "claim_id": "258fd45f-866d-4c5d-a61b-57f8f3e7ca87",
+      "result_id": "f2f2ff03-6569-4555-80ba-28b2d8849466"
+    },
+    {
+      "claim_id": "8ab3ba8b-1b02-4da3-baa2-29628fb67141",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "00d2eabb-8801-4c20-998e-6a4d522203c8",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "888c5eb5-b73f-4da5-b94c-80f04d5646d5",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "4f91c542-c013-4b4b-8c8f-a20e4e14ea21",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "10f94b26-004b-4778-bc92-a0d12402d3a7",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "5b01b1b1-00a3-41fc-87ed-ed4ec792e162",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "28a6293e-b462-49a7-9ed0-a74ed6c6bea1",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "c1dc9a6a-0450-464a-96c0-eda11f797136",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "6886ef9e-386d-4119-b468-f362ccb90202",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "6e01a212-9cf3-4c44-a314-fec46ee09bff",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "eb87d116-7fdc-441e-b287-e085be054d67",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "857dc86a-5dbb-4196-9912-afcdc4968034",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "fc7f1f56-60ce-4639-8c60-e766f675a281",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "139c9c1b-3f9a-4d4e-8ee7-9c43242ea332",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "34c645da-0f1e-40db-992b-4512da27ddda",
+      "result_id": "7b6614ea-e3ab-44f0-a2d3-684a2153cd62"
+    },
+    {
+      "claim_id": "4f0e2f27-73e4-45ed-a52e-89507c055155",
+      "result_id": "0866b1a8-3635-45e6-b8ef-c9816b71f613"
+    },
+    {
+      "claim_id": "1428ae23-621e-4dc9-bec1-1caf26fea505",
+      "result_id": "276719de-a612-441a-b40a-4050d42118b1"
+    },
+    {
+      "claim_id": "d03b7bf4-cf74-411c-b02a-6eb0356fc5aa",
+      "result_id": "276719de-a612-441a-b40a-4050d42118b1"
+    },
+    {
+      "claim_id": "1f354ea3-d5dc-4d24-b9f8-57b12ea6ed6b",
+      "result_id": "276719de-a612-441a-b40a-4050d42118b1"
+    },
+    {
+      "claim_id": "5b43656b-9ca8-46cd-be6f-61c44e2d196e",
+      "result_id": "ef64cf87-b73b-4e48-ad88-708ada4e2d78"
+    },
+    {
+      "claim_id": "73c1ca2b-dd0e-4820-88aa-cb78d5fa4c53",
+      "result_id": "ef64cf87-b73b-4e48-ad88-708ada4e2d78"
+    },
+    {
+      "claim_id": "5b286f7c-3599-4483-8de6-2e6f866b8ede",
+      "result_id": "ef64cf87-b73b-4e48-ad88-708ada4e2d78"
+    },
+    {
+      "claim_id": "d6e7f73b-750d-4cd0-8896-661eb3008945",
+      "result_id": "ef64cf87-b73b-4e48-ad88-708ada4e2d78"
+    }
+  ],
+  "comparisons": []
+}

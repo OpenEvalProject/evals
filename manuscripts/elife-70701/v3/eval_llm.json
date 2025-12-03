@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C78",
+      "C79",
+      "C80",
+      "C84",
+      "C199",
+      "C200",
+      "C201",
+      "C268",
+      "C269"
+    ],
+    "result": "CCC1 is a novel TGN/EE-localized ion transporter necessary for regulating TGN/EE pH and function, representing the first non-proton-transporting component of the TGN/EE pH regulatory machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this major finding: complementation experiments rescue ccc1 phenotypes (C78), pH measurements show CCC1 impacts luminal pH (C79, C179, C200), monensin swelling assays demonstrate ion regulation function (C176-C177, C202), and trafficking assays show functional consequences (C81-C82). The convergence of genetic, biochemical, and cell biological evidence strongly supports this central conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C231"
+    ],
+    "result": "CCC1 is ubiquitously expressed across all plant tissues and cell types, as demonstrated by promoter-reporter analysis using both Venus fluorescence and GUS staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression pattern is well-documented through two independent reporter systems (Venus and GUS) shown in Figure 1 (C88). The slight differences between methods are appropriately attributed to differential sensitivity (C89-C90), and the ubiquitous expression is consistent with the broad phenotypic effects observed in ccc1 mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C232",
+      "C233"
+    ],
+    "result": "Loss of CCC1 function causes severe growth defects including reduced shoot size, shorter roots, shorter root hairs, and complete absence of collet hairs, primarily due to defects in cell elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phenotypic characterization is thorough with quantitative measurements shown in Figure 2 (C91-C94). The cellular basis (reduced cell elongation, C92, C232) is directly demonstrated through microscopy. The connection between cell elongation defects and overall growth reduction (C233) is a reasonable inference supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C98",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C168",
+      "C206",
+      "C211"
+    ],
+    "result": "Functional GFP-CCC1 localizes to the TGN/EE, as demonstrated by complementation of ccc1 phenotypes, colocalization with TGN/EE marker VHAa1-RFP (73% \u00b1 9% colocalization), and BFA body accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization is well-established through multiple approaches: functional complementation proves the tagged protein is active (C98), quantitative colocalization analysis with established TGN/EE marker shows substantial overlap (C108-C111, Pearson's r=0.86), and pharmacological validation with BFA confirms TGN/EE identity (C112). This converging evidence strongly supports the localization claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C204"
+    ],
+    "result": "The TGN/EE luminal pH in ccc1 mutants is 0.3 pH units higher (pH 5.8) compared to wildtype (pH 5.5), representing a compartment-specific effect without changes in cytosolic or vacuolar pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pH measurements using the genetically-encoded pHusion sensor are quantitative and show consistent ~0.3 pH unit differences (C179, Figure 7B). The specificity is confirmed by showing no changes in cytosolic pH (C180) or vacuolar pH (Figure 7\u2014supplement 1), demonstrating this is not a general cellular pH defect. The measurements are technically sound with appropriate calibration curves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C202",
+      "C203"
+    ],
+    "result": "ccc1 TGN/EE exhibit hypersensitivity to monensin-induced osmotic swelling (52% \u00b1 16% increase vs 28% \u00b1 13% in wildtype), indicating CCC1 functions in ion efflux to counteract cation accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The monensin swelling assay provides functional evidence for CCC1's role in ion efflux (C176-C177, Figure 7A). The increased susceptibility in ccc1 is consistent with impaired ion efflux capacity. The interpretation that CCC1 mitigates monensin effects through K+/Cl- efflux (C178) is a reasonable mechanistic inference based on CCC1's known symporter function, though direct transport measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C156",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C167",
+      "C169"
+    ],
+    "result": "Loss of CCC1 causes defects in both exocytosis and endocytic trafficking, with reduced PIN2-GFP recovery after BFA washout and reduced FM4-64 trafficking to the vacuole, while endocytosis itself remains unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trafficking defects are demonstrated through multiple complementary assays shown in Figure 6: PIN2-GFP exocytosis is reduced after BFA washout (C156), FM4-64 endocytic trafficking is impaired with BFA (C161) but endocytosis without BFA is normal (C162), and vacuolar trafficking is reduced (C163-C164). The combination of cargo-specific (PIN2) and general (FM4-64) trafficking markers strengthens the conclusion of general trafficking defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C246"
+    ],
+    "result": "ccc1 mutants show increased tolerance to osmotic stress during germination, with higher germination rates on mannitol (79% vs 30% at 450 mM) and NaCl, and rescue of collet hair formation under high osmolarity conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The osmotic stress tolerance is well-documented with quantitative germination data across multiple concentrations and osmolytes (C123-C128, Figure 4). The rescue of collet hair formation on high osmolarity media (C129-C131) provides an independent phenotypic readout supporting improved performance under osmotic stress. The contrasting response compared to nhx5/nhx6 mutants (C246) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C253",
+      "C254"
+    ],
+    "result": "ccc1 root hairs elongate at half the rate of wildtype (0.47 vs 0.88 \u03bcm/min), but this defect is completely rescued by growth on 150 mM mannitol, where ccc1 elongation rate matches wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The root hair elongation kinetics are quantified through time-lapse microscopy (C137-C138, Figure 4G-H, Videos 3-6), providing direct measurements of growth rates. The complete rescue of elongation rate under osmotic stress (C139) is striking and well-documented. This result provides cellular-level evidence linking CCC1 function to osmotic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C193",
+      "C264"
+    ],
+    "result": "Wildtype plants exhibit a TGN/EE-specific pH response to osmotic stress, with pH increasing from 5.7 to 6.0 in response to both NaCl and mannitol, while cytosolic pH remains unchanged, indicating compartment-specific signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stress-induced pH changes are quantitatively measured using pHusion sensor (C184, Figure 7C). The response to both ionic (NaCl) and non-ionic (mannitol) osmolytes demonstrates this is an osmotic rather than ion-specific effect (C185). The lack of cytosolic pH changes (C186-C187) confirms compartment specificity. This represents a novel finding about TGN/EE pH dynamics during stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C192",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "ccc1 mutants lack the TGN/EE pH response to osmotic stress, maintaining pH ~6.0 under both control and stress conditions, suggesting pH 6.0 may represent an upper limit or stress-adapted state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The absence of pH response in ccc1 is clearly demonstrated (C192, Figure 7D). The interpretation that this unresponsiveness may relate to improved osmotic stress tolerance (C196) is a reasonable hypothesis connecting multiple observations, though the mechanistic basis remains speculative. The suggestion of pH 6.0 as an upper limit (C195) is appropriately presented as a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C258"
+    ],
+    "result": "ccc1 mutants show increased resistance to plasmolysis, requiring 45 mM higher mannitol concentration for 50% plasmolysis (277 mM vs 232 mM), despite having similar cell sap osmolality to wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The plasmolysis resistance is quantitatively demonstrated with dose-response curves and fitted IC50 values (C142-C144, Figure 5B-C). The exclusion of higher cell sap osmolality as the mechanism (C141, C145) is important for ruling out a simple explanation. However, the actual mechanism remains unclear, and alternative explanations (cell wall changes, altered transporter localization) are appropriately discussed as possibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C151"
+    ],
+    "result": "PIP2;1-GFP internalisation in response to osmotic stress is reduced in ccc1 compared to wildtype, potentially due to reduced rates of endomembrane trafficking rather than more efficient aquaporin removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reduced PIP2;1 internalization is demonstrated through quantitative imaging (C148, Figure 5D-E). The interpretation that this reflects reduced trafficking rates (C151) rather than enhanced PM retention is logical given the other trafficking defects observed. However, this remains somewhat inferential as direct trafficking rate measurements for PIP2;1 were not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C181",
+      "C182"
+    ],
+    "result": "Attempts to generate ccc1 \u00d7 det3 and ccc1 \u00d7 nhx5 \u00d7 nhx6 double/triple mutants were unsuccessful, with crosses yielding either non-viable plants or no combined mutants, suggesting genetic interactions between TGN/EE pH regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic cross results are clearly reported (C181, Supplementary file 1b, Figure 7\u2014supplement 3). The interpretation of genetic interaction and essential combined function (C182) is reasonable, though alternative explanations (e.g., tight genetic linkage, technical issues) cannot be completely excluded. The inability to obtain viable double mutants does suggest functional relationships between these transporters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C208"
+    ],
+    "result": "Multiple attempts to generate plants expressing terminally-tagged CCC1 under the native promoter were unsuccessful, suggesting that tagging may interfere with CCC1 function in embryonic or meristematic tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental challenges are documented (C100-C101, Supplementary file 1a), and the interpretation about tissue-specific sensitivity (C102, C208) is a reasonable hypothesis. The successful complementation with EXP7-driven GFP-CCC1 in mature root cells demonstrates the tag itself doesn't completely abolish function, supporting the idea of developmental stage-specific requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "EXP7-driven GFP-CCC1 rescues root hair length but not trichoblast patterning or collet hair formation, indicating different developmental requirements and gene networks for these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential rescue is clearly demonstrated (C104, C106, Figure 3\u2014supplement 1). The interpretation about timing of EXP7 expression relative to cell fate determination (C105) is consistent with known properties of this promoter. The inference about different gene networks for collet vs. root hairs (C107) is reasonable but remains somewhat speculative without additional supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "TEM analysis reveals no obvious morphological changes in TGN/EE ultrastructure in ccc1 mutants, suggesting defects manifest through altered luminal conditions rather than structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TEM observations are clearly reported (C116, Figure 3\u2014supplement 1). The interpretation that defects are functional rather than structural (C117) is a reasonable inference, though the TEM analysis appears qualitative rather than quantitative. More detailed morphometric analysis could strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C205",
+      "C73",
+      "C74"
+    ],
+    "result": "The current model of TGN/EE pH regulation should be updated to include CCC1 alongside V-H+-ATPase, NHX5/6, and CLCd, with CCC1 providing the previously missing cation/anion efflux pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents the synthesis of the study's findings into an updated mechanistic model (Figure 8). The proposal is well-supported by the collective evidence: CCC1 localization to TGN/EE, pH effects in ccc1 mutants, monensin sensitivity indicating ion efflux function, and phenotypic similarities to other TGN/EE pH regulator mutants. The model appropriately identifies the gap in previous understanding (C74) and proposes CCC1 as the solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C226",
+      "C227"
+    ],
+    "result": "CCC1 likely functions as a 1Cl-:1K+ symporter based on the ability of Arabidopsis to grow in near-absence of Na+ without showing ccc1 phenotype, which would tightly couple NHX5/6 and CLCd activities in the TGN/EE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The inference about K+/Cl- (rather than Na+/K+/Cl-) transport is logical based on growth in low Na+ conditions (C224-C225), but remains indirect. The proposed stoichiometric coupling with other transporters (C227) is a reasonable hypothesis but lacks direct experimental validation. The authors appropriately suggest this could be validated through heterologous expression studies, indicating this remains a working model rather than demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Previous studies have established that ccc1 mutants exhibit complex phenotypes including reduced size, increased branching, altered pathogen response, and changes in ion accumulation, particularly increased Cl- accumulation in shoots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-documented prior findings from multiple published studies (C40-C43), appropriately cited. This provides important context for the current work but represents established knowledge rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  }
+]

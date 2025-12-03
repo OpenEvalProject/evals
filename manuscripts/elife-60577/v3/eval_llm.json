@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In the absence of DSB, Rad52 exhibits two distinct diffusive behaviors with diffusion coefficients D1 = 1.16 \u00b1 0.08 \u03bcm\u00b2/s and D2 = 0.28 \u00b1 0.02 \u03bcm\u00b2/s, with approximately 2/3 of molecules being the slower population. These two populations are consistent with monomeric and multimeric forms of Rad52 based on Stokes-Einstein calculations using measured nuclear viscosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C36 provide converging evidence from displacement histogram analysis, MSD analysis at multiple time intervals, viscosity measurements, and theoretical predictions. The measured diffusion coefficients match predicted values for Rad52 monomers and multimers. The observation that diffusion is similar in G1 and S/G2 phases (C31) strengthens the interpretation by ruling out replication fork association as the explanation for two populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C4",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Inside repair foci, individual Rad52 molecules exhibit confined motion with a confinement radius of 124 \u00b1 3 nm and diffusion coefficient of 0.032 \u00b1 0.006 \u03bcm\u00b2/s, diffusing approximately 6.4 times faster than the whole focus itself (0.005 \u00b1 0.002 \u03bcm\u00b2/s). The whole focus exhibits anomalous diffusion with exponent 0.51 \u00b1 0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are well-supported by complementary MSD and displacement histogram analyses. The confined motion model fits the data better than anomalous diffusion (Figure 1\u2014figure supplement 4). The comparison between individual molecule and whole focus mobility is based on independent measurements using different tracking approaches, providing strong evidence for the differential dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C8",
+      "C76",
+      "C85"
+    ],
+    "result": "Rfa1 molecules inside foci are approximately 6 times less mobile than Rad52 molecules, exhibiting anomalous diffusion (\u03b1 = 0.56 \u00b1 0.05) similar to the whole focus, with an apparent diffusion coefficient of 0.006 \u00b1 0.001 \u03bcm\u00b2/s. This indicates that most Rad52 molecules are not bound to Rfa1-coated ssDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C8, C76, and C85 provide consistent evidence from displacement histograms and MSD analysis comparing Rad52 and Rfa1 mobility. The different types of motion (confined for Rad52 vs. anomalous for Rfa1) and the large difference in diffusion coefficients strongly support the conclusion that Rad52 and Rfa1 have fundamentally different behaviors within foci. The inference that most Rad52 is not bound to ssDNA (C85) is further supported by theoretical calculations (C88-C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C99"
+    ],
+    "result": "SUMOylated Rad52 exhibits slower confined diffusion inside foci (0.009 \u00b1 0.002 \u03bcm\u00b2/s) with a smaller confinement radius (83 \u00b1 12 nm) compared to wild-type (124 \u00b1 3 nm), and forms smaller, denser foci, suggesting a transition to a gel-like sub-compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 provide quantitative measurements showing significant differences between SUMOylated and wild-type Rad52. The measurements are internally consistent (smaller, denser foci correlate with reduced mobility and smaller confinement radius). However, C99 is speculative about the gel-like transition. The data support altered physical properties but the specific mechanism remains interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Foci induced by 2 DSBs are larger (170 \u00b1 20 nm vs. 116 \u00b1 20 nm) and contain more Rad52 molecules (2300 \u00b1 811 vs. 880 \u00b1 600) than single DSB foci, but maintain similar density. The Rad52 confinement radius scales with focus size (156 \u00b1 3 nm for 2 DSBs vs. 124 \u00b1 3 nm for 1 DSB), indicating that Rad52 explores the entire focus space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 and C5-C7 provide converging evidence from live PALM measurements of focus size and SPT measurements of confinement radius. The correlation between focus size measured by PALM and confinement radius measured by SPT (C67) is particularly strong evidence. Statistical significance is provided (p-values) for key comparisons. The scaling relationship supports the fusion model over the clustering model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Rad52 molecules exhibit rapid exchange with the nucleoplasm, with a mean residence time of ~240 ms inside foci (vs. 560 ms for Rfa1). 70% of Rad52 traces cross focus boundaries during 20s movies, and molecules sharply change their diffusion coefficient when entering or escaping foci, adopting the diffusive behavior of their local environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 provide multiple lines of evidence for dynamic exchange: survival probability analysis (C53-C54), trajectory classification (C55-C58), and displacement analysis of boundary-crossing trajectories (C59-C60). The sharp change in diffusion at boundaries (C59) is particularly compelling evidence. However, the exchange rates are specific to the 20s acquisition window and 20ms time resolution, which should be noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Rad52 foci, but not Rfa1 foci, are sensitive to 1.6-hexanediol treatment (percentage of cells with Rad52 foci decreases from 22 \u00b1 2% to 8 \u00b1 3%) and are not visible after fixation with classical methods, while Rfa1 foci are unaffected by both treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide clear differential responses to hexanediol and fixation treatments. The hexanediol result is consistent with cited work (Oshidari et al., 2020). The control experiment with Edc3 (Figure 4\u2014figure supplement 1) validates the hexanediol treatment efficacy. However, the interpretation that this definitively proves LLPS vs. other mechanisms is debated in the field (as acknowledged by the authors in C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C77",
+      "C78"
+    ],
+    "result": "There is a region of attraction for Rad52 molecules inside foci, with molecules near the boundary showing average movement toward the center. Rad52 molecules are retained by an attractive potential, supporting a model where DNA is dispensable to maintain phase separation once saturating concentration is reached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is supported by radial displacement analysis showing net inward movement near boundaries. However, the authors acknowledge that detection noise and low statistics make it difficult to distinguish between continuous and surface potentials. The interpretation in C78 about DNA being dispensable is highly speculative and goes beyond what the data directly show. The Gibbs free energy calculation (mentioned in text but not in claims) has significant uncertainties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Rad52 diffusion outside foci is not altered in response to DSB, suggesting molecules arrive at DSBs by simple diffusion rather than directed motion. The focus forms with a small seed of Rad52 bound to RPA-coated ssDNA, surrounded by a large cloud of rapidly diffusing Rad52.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by comparing diffusion outside foci before and after DSB (Figure 2F). Claims C72-C73 are reasonable inferences from C71. However, C74 is a proposed model rather than a directly demonstrated result. The model is consistent with the data but represents an interpretation that would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C11",
+      "C75"
+    ],
+    "result": "Rad52 foci exhibit many features of liquid-liquid phase separation (LLPS) at the microscopic level, including high density, dynamic exchange, confined diffusion that scales with focus size, and sensitivity to hexanediol, reflecting the existence of a liquid droplet around damaged DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C11, and C75 represent the main conclusion synthesizing multiple lines of evidence. The conclusion is well-supported by the collective data (mobility, confinement, scaling, hexanediol sensitivity, exchange dynamics). However, the authors appropriately acknowledge (C98) that some criteria used to define LLPS are debated and may not definitively distinguish LLPS from alternative mechanisms like PPPS. The conclusion is supported but with appropriate caveats about model certainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The high internal dynamics of Rad52 inside foci and the capacity to explore the whole focus are conserved in diploid cells where DNA damage can be repaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by data in Figure 2\u2014figure supplement 5 showing similar confined motion and confinement radius in diploid cells. This is important for demonstrating that the observations are not artifacts of the haploid system lacking a repair template. The diffusion coefficient is slightly lower in diploids, which is noted and discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The dynamic viscosity inside yeast nuclei is ~100 times higher than water (0.122 \u00b1 0.004 Pa.s), and viscosity inside repair foci is 8-20 times higher than the nucleus (1-2.4 Pa.s), similar to values found in human repair foci (~2.5 Pa.s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide viscosity estimates based on measured diffusion coefficients and Stokes-Einstein calculations. The nuclear viscosity measurement (C34, C81) is validated by comparison with prior FRAP studies. The focus viscosity calculations (C82) depend on assumptions about whether Rad52 is monomeric or multimeric inside foci. The comparison with human cells (C83) is based on a single citation and represents cross-species validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "If Rad52 were rapidly binding and unbinding to ssDNA, the dissociation constant would need to be very weak (Kd >> 2 \u03bcM), 20-400 times larger than in vitro values. The data suggest only a very small fraction of Rad52 is bound to ssDNA, which is unlikely to be captured in single molecule experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 provide theoretical analysis supporting the interpretation that most Rad52 is not bound to ssDNA. The calculation is based on the smoothness of displacement histograms and diffusion-limited binding assumptions. The comparison with in vitro Kd values (C89) strengthens the argument. This is solid theoretical support for the main conclusion, though it relies on several assumptions about binding kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Foci induced by 1 DSB and 2 DSBs exhibit similar mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by displacement histogram comparison (Figure 6B). This is consistent with prior observations that chromatin diffusion coefficients don't change with multiple DSBs despite increased confinement radius. This is a supporting observation for the focus fusion model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Rad52 might not be the main driving molecule responsible for LLPS at damaged sites, as over-expression experiments show behavior consistent with a 'client' protein, and DSBs coalesce independently of Rad52.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by over-expression data in Appendix 1. Claim C95 provides supporting evidence from a citation. Claim C96 notes that multicomponent LLPS may not have fixed saturation concentrations. This is an important caveat about the role of Rad52 in LLPS formation, though the over-expression data are in an appendix and not fully presented in the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background information on DNA repair: DSBs are highly genotoxic, repaired by NHEJ and HR, with HR involving multi-protein complexes including Rad52 (functional homolog of BRCA2 in yeast). Recent work suggests repair proteins may form liquid-like droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 represent established knowledge and literature context, appropriately cited. These provide necessary background but are not novel findings of this study. C1 correctly identifies Rad52 as the functional homolog of BRCA2 in yeast, which is established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The rapid exchange rate observed for Rad52 is consistent with FLIP experiments in yeast and FRAP experiments in mammalian cells showing differential exchange rates for different repair proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 provide literature validation for the exchange dynamics observed. These comparisons with prior work using different techniques (FLIP, FRAP) strengthen confidence in the SPT measurements, though they represent supporting evidence rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C97",
+      "C98"
+    ],
+    "result": "Background on LLPS models: In LLPS, proteins self-organize into droplets, with distinction between scaffold and client proteins. In human cells, DSB-induced transcription may stimulate phase separation. Some criteria for LLPS can be ambiguous and may not distinguish from PPPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C97-C98 provide conceptual framework and appropriate caveats about LLPS interpretation. These represent important context and acknowledgment of limitations in the field, but are not novel findings. The authors appropriately note the challenges in definitively proving LLPS vs. alternative mechanisms.",
+    "result_type": "MINOR"
+  }
+]

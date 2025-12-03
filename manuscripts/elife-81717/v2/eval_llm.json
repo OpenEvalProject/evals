@@ -1,0 +1,939 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "PASK inhibition preserves self-renewal and enhances differentiation potential in mouse embryonic stem cells (mESCs). PASKi treatment increased expression of stemness genes (Pou5f1, Sox2, Prex1) and maintained Rex1-GFP reporter expression comparable to 2i conditions. Upon PASKi withdrawal, cells showed enhanced embryoid body formation with increased cavitated structures (~52% vs ~12% for 2i).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are well-supported by RT-qPCR data (Figure 1A), flow cytometry (Figure 1B), and embryoid body formation assays (Figure 1\u2014figure supplement 1C). The data consistently demonstrate that PASKi maintains stemness markers and enhances differentiation potential upon withdrawal, with appropriate quantification and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "PASK inhibition blocks precocious myogenesis in isolated primary myoblasts. PASKi treatment robustly blocked myogenesis for up to 4 days post-isolation without affecting initial cell size or proliferation. PaskKO cells continued to proliferate at 48 hours while PaskWT cells formed nascent myotubes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by microscopy data (Figure 1C, Figure 1\u2014figure supplement 2B-D, Figure 1\u2014figure supplement 3B) showing blocked differentiation with PASKi treatment and delayed myotube formation in PaskKO cells. The observations are consistent across multiple time points and experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Genetic loss of PASK increases Pax7+ myoblast numbers and decreases committed progenitor generation in vitro. PaskKO MuSCs showed ~83% Pax7+ cells vs 30% in PaskWT at 48 hours, with reduced MyoD+ and MyoG+ cells and decreased fusion index. This phenotype was independent of isolation method (FACS, MACS, pronase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are well-supported by immunofluorescence and quantification data (Figure 1E-G, Figure 1\u2014figure supplement 3C-D). The dramatic increase in Pax7+ cells and corresponding decrease in differentiation markers is consistently observed across multiple isolation methods, strengthening the conclusion. Statistical significance is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Loss of PASK impairs regenerative myogenesis in vivo. PaskKO animals showed decreased eMHC+ myofiber numbers at 5 days post-injury and significant expansion of Pax7+ MuSC numbers compared to littermate controls, indicating impaired transition from stem cells to committed progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by in vivo data (Figure 1H-L) showing impaired muscle regeneration in PaskKO mice. The combination of decreased eMHC+ fibers and increased Pax7+ cells provides strong evidence for the proposed mechanism. However, the study would benefit from additional time points to fully characterize the regeneration kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "PASK inhibition preserves stemness gene expression across multiple differentiation conditions. Global transcriptomic analysis revealed strong enrichment of stemness and self-renewal genes at all time points when PASK is inhibited, even in culture conditions that normally stimulate differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by RNAseq data (Figure 1M, Figure 1\u2014figure supplement 4) showing consistent enrichment of stemness genes with PASKi treatment. The GSEA analysis provides robust statistical support. However, the claim would be strengthened by validation of key genes by RT-qPCR and functional assays demonstrating maintained differentiation capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "PASK exhibits dynamic subcellular localization during myoblast differentiation. In proliferating myoblasts, PASK localizes to cytoplasmic granules and is excluded from the nucleus. Upon differentiation induction, PASK redistributes to the nucleus with loss of granular staining pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are well-supported by immunofluorescence data (Figure 2A-C) and biochemical fractionation (Figure 2B, Figure 2\u2014figure supplement 1). The granular cytoplasmic localization in proliferating cells and nuclear redistribution during differentiation is clearly demonstrated in both cultured and primary myoblasts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "PASK nuclear translocation correlates with loss of Pax7 expression and creates heterogeneity in myoblast populations. Cells with cytoplasmic granular PASK are Pax7+, while cells with nuclear PASK lack Pax7 expression. Asymmetric nuclear distribution of PASK in dividing cells creates Pax7 expression heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are supported by immunofluorescence and quantification data (Figure 2D-J) showing strong correlation between PASK localization and Pax7 expression. The violin plots and quantification provide statistical support. The observation of asymmetric PASK distribution during mitosis (Figure 2I) is particularly compelling evidence for the proposed mechanism of generating heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PASK contains functional nuclear export sequences (NES) that regulate its cytoplasmic localization. NLS-tagging alone was insufficient for nuclear localization, and leptomycin B treatment modestly increased nuclear PASK. Truncation analysis identified NES regions between amino acids 400-660 and 660-737.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are supported by systematic truncation analysis (Figure 3A-C) showing size-dependent nuclear localization. The data clearly demonstrate that NLS alone is insufficient and that specific regions mediate nuclear export. However, the claim would be strengthened by direct mutagenesis of the predicted NES sequences to confirm their function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "L401-L409 (NES1) and L666-L671 (NES2) are functional nuclear export sequences in PASK. Bioinformatic analysis identified these sequences with similarity to known NES in PGC1-\u03b1 and PDK1. Mutation of both NES1 and NES2 in NLS-PASK resulted in robust nuclear retention in nearly 100% of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 are well-supported by bioinformatic analysis (Figure 3D, Figure 3\u2014figure supplement 1) and mutagenesis experiments (Figure 3E-F). The combined mutation of NES1+NES2 in NLS-PASK achieving nearly complete nuclear retention provides strong functional validation. The similarity to known NES sequences adds credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Serum stimulation regulates PASK nuclear translocation by weakening NES function. NLS-PASK was excluded from the nucleus in serum-starved cells despite LMB treatment, but serum stimulation increased nuclear accumulation and improved LMB effectiveness, suggesting serum weakens NES1/NES2 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by immunofluorescence data (Figure 3G) showing differential effects of serum and LMB on PASK localization. The observation that serum+LMB is more effective than LMB alone provides evidence for signal-regulated NES function. However, the mechanism by which serum weakens NES function requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Serum stimulation triggers PASK nuclear translocation independently of mTORC1. Both overexpressed GFP-hPASK and endogenous mouse PASK translocated to the nucleus within 2 hours of serum stimulation. Rapamycin treatment did not block serum-induced nuclear translocation, indicating mTORC1 is insufficient for this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by immunofluorescence data (Figure 4A, Figure 4\u2014figure supplement 1A) showing serum-induced nuclear translocation that is not blocked by rapamycin. This is an important finding that separates PASK activation (via mTOR) from PASK nuclear translocation. The data are clear and appropriately quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "PASK is acetylated in cells and tissues in a signal-dependent manner. Endogenous PASK acetylation was detected in C2C12 myoblasts treated with TSA, showed dose and time-dependent increase with serum stimulation, and was detected in regenerating muscle at days 3 and 5 post-injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by immunoprecipitation and western blot data (Figure 4B, Figure 4\u2014figure supplement 1B-D) demonstrating PASK acetylation in multiple contexts. The detection in vivo during muscle regeneration (Figure 4\u2014figure supplement 1D) is particularly important for physiological relevance. However, identification of specific acetylation sites would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "CBP/EP300 acetylates PASK and drives its nuclear translocation. A-485 (CBP/P300 inhibitor) nearly completely blocked serum-induced PASK acetylation in HEK293T cells. EP300 knockdown in C2C12 cells completely inhibited endogenous PASK acetylation. A-485 pretreatment blocked serum-induced PASK nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are well-supported by multiple lines of evidence including pharmacological inhibition (Figure 4C-D) and genetic knockdown (Figure 4\u2014figure supplement 1F). The convergence of chemical and genetic approaches provides strong support. The near-complete block of acetylation and nuclear translocation by A-485 is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Mitochondrial glutamine metabolism drives PASK acetylation via CBP/P300. UK5099 (MPC1 inhibitor) stimulated PASK acetylation more than serum alone, while BPTES (GLS1 inhibitor) resulted in near-complete loss of serum-induced PASK acetylation. Glutamine alone was sufficient to stimulate PASK acetylation, which was blocked by BPTES or A-485.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are strongly supported by systematic metabolic inhibitor studies (Figure 4F-H) demonstrating that glutamine metabolism is the primary driver of PASK acetylation. The data showing glutamine alone is sufficient (Figure 4G) and that both BPTES and A-485 block this effect (Figure 4H) provide compelling mechanistic evidence. The compensatory increase with UK5099 is consistent with known metabolic flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Glutamine signaling to CBP/EP300, but not mTOR, regulates PASK nuclear translocation via acetylation. Glutamine starvation resulted in nuclear exclusion of PASK, while glutamine addition alone stimulated robust nuclear translocation. This was blocked by A-485 but not by rapamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are well-supported by immunofluorescence data (Figure 4I) showing glutamine-dependent nuclear translocation that is CBP/EP300-dependent but mTOR-independent. This establishes a clear mechanistic pathway from glutamine metabolism through CBP/EP300-mediated acetylation to PASK nuclear translocation, independent of the mTOR-mediated activation pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Glutamine withdrawal reduces proliferation but increases Pax7+ myoblast numbers and reduces heterogeneity. Glutamine-withdrawn cells were enlarged and remained viable for 4 days with significantly reduced proliferation. Both cultured and primary myoblasts showed marked increase in Pax7+ cells and reduced heterogeneity in Pax7 expression upon glutamine withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 are supported by cell proliferation data (Figure 5A), immunofluorescence (Figure 5B-E), and quantification showing increased Pax7+ cells with reduced heterogeneity. The consistency across cultured and primary myoblasts strengthens the findings. However, the mechanism linking reduced proliferation to increased Pax7 expression requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Glutamine withdrawal reactivates Pax7 expression in Pax7lo MuSCs without cell proliferation. BrdU+ cells in glutamine-rich media showed heterogeneous Pax7 expression including Pax7lo and Pax7ab populations. Glutamine withdrawal blunted BrdU incorporation but increased Pax7hi cells due to increased staining intensity, resulting in increased Pax7+/BrdU+ ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 are supported by BrdU incorporation and Pax7 immunofluorescence data (Figure 5F-H). The increased Pax7+/BrdU+ ratio provides strong evidence for Pax7 reactivation independent of proliferation. This is an important mechanistic insight showing that glutamine withdrawal can reverse the loss of Pax7 expression in cycling cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Glutamine withdrawal enforces stemness preservation and induces quiescence markers while blocking differentiation. RT-qPCR showed increased Pax7, Cd34, Myf5, MyoD1, and Foxo3 (quiescence marker) upon glutamine withdrawal, while MKi67 (proliferation) was blunted and Myog (differentiation) was nearly completely lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 are supported by RT-qPCR data (Figure 5\u2014figure supplement 1A) showing coordinated changes in gene expression consistent with stemness preservation and quiescence induction. The near-complete loss of Myog indicates dependence on glutamine for generating committed progenitors. The data support a cell-autonomous mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Acute GLS1 inhibition by BPTES after early myogenesis increases Pax7+ cell numbers without affecting myofiber size. Three days of BPTES treatment starting at day 5 post-injury did not affect regenerative myofiber sizes but resulted in significant increase in Pax7+ cell numbers compared to DMSO-treated animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by in vivo data (Figure 5J-K) showing increased Pax7+ cells with BPTES treatment after early myogenesis. The experimental design appropriately tests the role of glutamine metabolism in the later phase of regeneration. However, longer-term effects on muscle regeneration and stem cell pool maintenance would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Glutamine metabolism links proliferation with passage from Pax7hi to Pax7lo/ab progenitors via alpha-ketoglutarate. Differentiating myoblasts showed increased glutamine and downstream metabolites. Glutamine depletion reduced alpha-ketoglutarate, citrate, and malate. Cell-permeable alpha-ketoglutarate reversed increased Pax7+ cells in glutamine-depleted conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are supported by metabolomics data (Figure 5L-N) and rescue experiments with alpha-ketoglutarate (Figure 5O-P). The metabolomics provides mechanistic insight into the metabolic changes, and the rescue experiment demonstrates that alpha-ketoglutarate is a key downstream metabolite. However, the relative contributions of alpha-ketoglutarate's roles in epigenetic regulation vs. PASK signaling require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "PASK selectively regulates stemness downstream of glutamine metabolism without affecting proliferation. Unlike glutamine withdrawal, PASKi did not affect proliferation rate or cell size but significantly increased Pax7+ myoblast numbers and reduced heterogeneity. PASKi increased Pax7+ cells without affecting BrdU incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 are supported by cell proliferation data (Figure 6\u2014figure supplement 1A), immunofluorescence (Figure 6A-B), and BrdU incorporation assays (Figure 6\u2014figure supplement 1B-C). The separation of proliferation from stemness regulation is an important finding that positions PASK specifically in the stemness pathway downstream of glutamine metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Genetic loss of PASK results in sustained expansion of Pax7+ MuSCs and compromised muscle regeneration. PaskKO mice showed elevated Pax7+ MuSC numbers at 14 days post-injury while PaskWT numbers declined, and showed smaller myofiber cross-sectional areas at 14 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 are supported by in vivo data (Figure 6C-E) showing sustained Pax7+ cell expansion and impaired regeneration in PaskKO mice. The data at 14 dpi provide important information about the long-term consequences of PASK loss. However, functional assessment of muscle strength and stem cell exhaustion in repeated injury would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "PASK inhibition blocks the effect of alpha-ketoglutarate on Pax7 expression, indicating glutamine-dependent PASK nuclear translocation is an additional pathway driving exit from self-renewal. PASKi rendered alpha-ketoglutarate ineffective in reducing Pax7+ stem cell numbers in glutamine-depleted conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 are supported by data (Figure 6F-G) showing that PASKi blocks the alpha-ketoglutarate rescue effect. This is an important experiment demonstrating that PASK acts downstream of or in parallel to alpha-ketoglutarate's epigenetic functions. The result suggests PASK-mediated signaling is a distinct pathway from alpha-ketoglutarate's role as a cofactor for demethylases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "Glutamine metabolism targets PASK subcellular distribution to generate a Pax7-negative population. Glutamine depletion results in increased cytoplasmic retention of PASK in isolated myoblasts with concomitant increase in Pax7+ myoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C148 are supported by immunofluorescence and violin plot data (Figure 6H-I) showing correlation between glutamine availability, PASK localization, and Pax7 expression. This provides direct evidence linking glutamine metabolism to PASK nuclear translocation and Pax7 downregulation in primary cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "PASK is a downstream target of glutamine metabolism that counters Pax7 expression, and nuclear localization is required for this function. Expression of WT or nuclear PASK reversed increased Pax7+ cells from PASK silencing, but only nuclear PASK reversed increased Pax7+ cells from glutamine depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 are supported by rescue experiments (Figure 6J-M) showing that nuclear PASK is specifically required to reverse the glutamine depletion phenotype. This is a critical experiment demonstrating that PASK nuclear translocation, not just PASK expression, is the key regulatory step downstream of glutamine metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C157"
+    ],
+    "result": "PASK interacts with WDR5 via a conserved WIN motif at R942, and this interaction is enhanced by mTOR phosphorylation. Multiple sequence alignment identified R942 as a conserved WIN motif residue. R942G mutation ablated PASK-WDR5 interaction, while S949E phosphomimetic mutation strengthened the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155, C157 are supported by sequence alignment (Figure 7A) and co-immunoprecipitation data (Figure 7B). The WIN motif identification and functional validation by mutagenesis provide strong evidence for direct PASK-WDR5 interaction. The phosphomimetic data confirm prior findings about mTOR regulation of this interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "PASK disrupts the WDR5-APC/C interaction in a catalytic activity and WIN motif-dependent manner during mitosis. WT-PASK reduced WDR5-APC/C co-precipitation, while WIN mutant or kinase-dead PASK strengthened it. S949E PASK further reduced the interaction compared to WT-PASK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C166 are well-supported by co-immunoprecipitation data from mitotic cells (Figure 7C-D). The systematic analysis of different PASK mutants provides strong mechanistic insight. The requirement for both WIN motif interaction and catalytic activity suggests PASK both binds to and phosphorylates WDR5 to disrupt WDR5-APC/C interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C168"
+    ],
+    "result": "WDR5 S49E phosphomimetic mutant completely disrupts the WDR5-APC/C interaction during mitosis, indicating PASK catalytic function regulates this interaction. WDR5S49E showed complete loss of APC/C co-precipitation in mitotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C168 is supported by co-immunoprecipitation data from mitotic cells (Figure 7\u2014figure supplement 1C). This is an important result showing that phosphorylation of WDR5 at S49 (the known PASK phosphorylation site) is sufficient to disrupt WDR5-APC/C interaction, providing a direct mechanistic link between PASK catalytic activity and WDR5-APC/C disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The WDR5-APC/C interaction is a target of glutamine metabolism during mitosis, with PASK relaying glutamine signaling. PASKi strengthened WDR5-APC/C interaction in glutamine-containing media during mitosis. Glutamine withdrawal was sufficient to strengthen the interaction, and PASKi had no additive effect in glutamine-depleted conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C172 are supported by co-immunoprecipitation data from synchronized mitotic cells (Figure 7F). The experimental design appropriately tests the role of glutamine and PASK in regulating WDR5-APC/C interaction specifically during mitosis. The lack of additive effect of PASKi in glutamine-depleted conditions provides strong evidence that PASK acts downstream of glutamine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "APC/C activity and PASK-WDR5 interaction are required for downregulating Pax7 expression. APC/C inhibition (proTAME) reduced Pax7+ cells after 30 hours, while PASKi increased Pax7+ cells. WT-PASK downregulated Pax7, but WIN mutant PASK failed to suppress Pax7 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C176 are supported by immunofluorescence and quantification data (Figure 7G-J). The opposing effects of APC/C inhibition and PASK inhibition on Pax7 expression, combined with the requirement for the WIN motif, provide strong evidence for the proposed mechanism. However, the paradoxical effect of APC/C inhibition reducing Pax7+ cells requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C177",
+      "C178"
+    ],
+    "result": "PASK and WDR5 have multifaceted functions acting with APC/C to regulate committed progenitor generation. APC/C inhibition induced Myog and Mylpf expression, while WDR5 or PASK inhibition (alone or with APC/C inhibitor) prevented committed progenitor establishment and blocked differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C177-C178 are supported by RT-qPCR data (Figure 7\u2014figure supplement 1D) and immunofluorescence (Figure 7G-H). However, the results reveal complex interactions that are not fully explained by the proposed model. The induction of differentiation markers by APC/C inhibition alone seems contradictory to the proposed role of WDR5-APC/C in maintaining stemness. Additional experiments are needed to resolve these apparent contradictions and fully elucidate the multifaceted functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C27"
+    ],
+    "result": "Glutamine metabolism induces CBP/EP300-dependent PASK acetylation, nuclear translocation, and disruption of WDR5-APC/C interaction to drive exit from self-renewal. This pathway generates a differentiation-primed progenitor population by countering the mitotic self-renewal network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C27 represent the central mechanistic model and are supported by the comprehensive data throughout the manuscript linking glutamine metabolism to PASK acetylation (Figure 4), nuclear translocation (Figure 4I), WDR5-APC/C disruption (Figure 7F), and Pax7 downregulation (Figures 5-6). The model is well-supported by convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Genetic or pharmacological inhibition of PASK or glutamine metabolism upregulates Pax7 expression, reduces stem cell heterogeneity, and blocks myogenesis in vitro and muscle regeneration in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 summarize key phenotypic observations supported by data throughout the manuscript. PASKi and glutamine withdrawal consistently increase Pax7+ cells (Figures 5-6), reduce heterogeneity (Figure 6A-B), block differentiation in vitro (Figure 1C, 5\u2014figure supplement 1), and impair regeneration in vivo (Figure 1H-J, 5J-K, 6C-E). The consistency across multiple experimental systems provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11"
+    ],
+    "result": "Quiescent stem cells are activated in response to injury and generate heterogeneous progenitor populations. Self-renewing stem cells rapidly reactivate expression of cell identity genes following cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11 represent established knowledge in stem cell biology cited in the introduction. While not experimentally demonstrated in this manuscript, these are well-accepted principles that provide context for the study. The manuscript's experimental findings are consistent with and build upon this established framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Mitotic recruitment of APC/C by WDR5 and H3K27ac mitotic bookmarking regulate post-mitotic reactivation of lineage-defining genes. The WDR5-APC/C interaction is enhanced during mitosis, and its disruption causes loss of pluripotency in ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 represent prior literature findings (Pelham-Webb et al., 2021; Liu et al., 2017; Oh et al., 2020) that provide the foundation for this study. The citations are appropriate and the prior work is accurately represented. This manuscript extends these findings by identifying PASK as a regulator of the WDR5-APC/C interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "PASK expression correlates with undifferentiated stem cell state and is required for differentiation programs downstream of nutrient signaling. PASK phosphorylates WDR5 in response to mTOR-dependent differentiation signaling, triggering chromatin remodeling and myogenesis. PASK is specifically required to establish initial committed progenitors but is dispensable to sustain myogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 represent prior work from the authors' laboratory (Kikani et al., 2019; Kikani et al., 2016; Karakkat et al., 2019) that provides essential background. The citations are appropriate and the prior findings are accurately represented. This manuscript builds on this foundation by identifying the upstream regulation of PASK by glutamine metabolism and acetylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Signaling cues from the regenerating niche facilitate MuSC activation and proliferation. Mitochondrial glutamine uptake sustains stem cell proliferation by generating ATP and maintaining redox balance. During muscle regeneration, macrophage-secreted glutamine sustains myoblast proliferation and promotes differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 represent prior literature (Ryall et al., 2015; Yu et al., 2019; Shang et al., 2020) providing context for the role of glutamine metabolism in muscle regeneration. The citations are appropriate and accurately represent the prior work. This manuscript provides mechanistic insight into how glutamine promotes differentiation through PASK signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "PASK is highly expressed in adult proliferating stem cells but negligible in quiescent MuSCs, with expression increasing rapidly upon activation and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by heatmap data (Figure 1\u2014figure supplement 2A) and citations to prior work (Kikani et al., 2016; Liu et al., 2013). The expression pattern is consistent with PASK's proposed role in regulating the transition from self-renewal to differentiation during the proliferative phase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Quiescent MuSCs express Pax7 but lack MyoD or Myf5 protein. Upon isolation, Pax7+ MuSCs rapidly activate MyoD translation and by 48 hours diverge into a heterogeneous population expressing combinations of Pax7, MyoD, and/or Myf5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by heatmap data (Figure 1\u2014figure supplement 2A), immunofluorescence (Figure 1D-E), and citation to prior work (Rocheteau et al., 2012). This describes the normal progression of MuSC activation and provides context for understanding how PASK loss affects this process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Acetylation of non-histone proteins plays an important role in controlling nucleo-cytoplasmic shuttling and cell fate decisions in stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 represents established knowledge (Choudhary et al., 2014) that provides context for the finding that PASK acetylation regulates its nuclear translocation. The citation is appropriate and the principle is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Kat2a and EP300 are two major histone acetyltransferases upregulated in MuSCs during regeneration and known to acetylate non-histone proteins during myogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 represents prior literature (Das et al., 2017; Puri et al., 1997a; Puri et al., 1997b; Sartorelli et al., 1999) providing context for identifying CBP/EP300 as the acetyltransferase for PASK. The citations are appropriate and accurately represent the prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "siRNA-mediated knockdown of Kat2a did not affect serum-induced acetylation of PASK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by immunoprecipitation and western blot data (Figure 4\u2014figure supplement 1E). This negative result helps narrow down the acetyltransferase responsible for PASK acetylation to CBP/EP300.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Serum-induced PASK acetylation was independent of signaling kinases PI-3K, mTOR, or Akt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by immunoprecipitation and western blot data (Figure 4\u2014figure supplement 1G) showing that inhibitors of these kinases do not prevent PASK acetylation. This is an important negative result that helps establish that PASK acetylation is regulated by metabolic signals rather than canonical growth factor signaling pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Glutamine depletion blocks myogenesis while inhibition of mitochondrial pyruvate import by UK5099 stimulates differentiation, likely via compensatory increase in glutaminolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by RT-qPCR and immunostaining data (Figure 5\u2014figure supplement 1B-C) and citation to prior work on compensatory glutaminolysis (Yang et al., 2014). The opposing effects of blocking different metabolic pathways provide insight into metabolic flexibility and the specific importance of glutamine metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "During early muscle regeneration, glutamine from the regenerating niche drives MuSC proliferation and is required for myogenic commitment. A quiescent, self-renewing population is established after early myogenesis (days 5-7 post-injury).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 represent prior literature (Shang et al., 2020; Cutler et al., 2021) providing temporal context for the role of glutamine metabolism during different phases of muscle regeneration. The citations are appropriate and help frame the experimental design for testing BPTES effects at different time points.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R46",
+    "claim_ids": [
+      "C144"
+    ],
+    "result": "Alpha-ketoglutarate functions as a co-factor in DNA and histone demethylation reactions and regulates cell fate in ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C144 represents established knowledge (Ryall et al., 2015; TeSlaa et al., 2016) about alpha-ketoglutarate's role in epigenetic regulation. This provides context for understanding that alpha-ketoglutarate may have multiple mechanisms of action, including both epigenetic effects and PASK signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R47",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "PASK and WDR5 show increased association at the onset of differentiation. WDR5 interacts with Pax7 and epigenetically maintains myoblast self-renewal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153 represent prior work (Kikani et al., 2016; Karakkat et al., 2019; McKinnell et al., 2008) establishing the PASK-WDR5 interaction and WDR5's role in maintaining self-renewal. These citations provide essential background for understanding how PASK disruption of WDR5-APC/C affects Pax7 expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R48",
+    "claim_ids": [
+      "C156"
+    ],
+    "result": "mTOR phosphorylates PASK at multiple sites to promote the PASK-WDR5 association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 represents prior work (Kikani et al., 2019) establishing mTOR regulation of PASK-WDR5 interaction. This provides context for understanding that PASK is regulated by both mTOR (for activation and WDR5 binding) and glutamine metabolism (for nuclear translocation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R49",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "WDR5 interacts with APC/C via a WIN motif during mitosis, and this interaction is required for rapid transcriptional reactivation of self-renewal genes following mitosis in ESCs. Disruption of WDR5-APC/C interaction reduces stem cell pluripotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159 represent prior literature (Oh et al., 2020) establishing the WDR5-APC/C interaction and its importance for stem cell pluripotency. This is the key prior finding that this manuscript builds upon by identifying PASK as a regulator of this interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R50",
+    "claim_ids": [
+      "C160"
+    ],
+    "result": "Human PASK rapidly enters the nucleus during mitosis, prior to nuclear membrane breakdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 is supported by time-lapse microscopy data (Figure 7\u2014figure supplement 1A). This observation is important for understanding when PASK can interact with and disrupt the WDR5-APC/C complex during the cell cycle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R51",
+    "claim_ids": [
+      "C161"
+    ],
+    "result": "APC2 is the only APC/C complex member that binds directly with WDR5 when proteins are purified in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C161 represents prior literature (Oh et al., 2020) that guided the experimental design to focus on APC2 and CDC20 in co-immunoprecipitation experiments. The citation is appropriate and accurately represents the prior finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R52",
+    "claim_ids": [
+      "C167"
+    ],
+    "result": "PASK phosphorylates WDR5 at S49, and the phosphomimetic mutant WDR5 S49E dramatically reduces Pax7 expression and induces precocious myogenesis under proliferating conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C167 represents prior work (Kikani et al., 2016) establishing S49 as a PASK phosphorylation site on WDR5 and its functional importance. This provides the mechanistic link between PASK catalytic activity and WDR5 function in regulating Pax7 expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R53",
+    "claim_ids": [
+      "C169"
+    ],
+    "result": "Acute glutamine stimulation strengthened the PASK-WDR5 interaction in proliferating myoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C169 is supported by co-immunoprecipitation data (Figure 7\u2014figure supplement 1B). This provides additional evidence linking glutamine metabolism to PASK-WDR5 interaction, complementing the nuclear translocation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R54",
+    "claim_ids": [
+      "C190"
+    ],
+    "result": "CBP/P300 acetylates other non-histone proteins, mainly transcription regulatory factors, during myogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C190 represents prior literature (Puri et al., 1997a; Puri et al., 1997b) establishing CBP/P300's role in acetylating non-histone proteins during myogenesis. This provides precedent for PASK being a CBP/P300 substrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R55",
+    "claim_ids": [
+      "C193"
+    ],
+    "result": "Glutamine is a major fuel early during the myogenesis program, coinciding with peak PASK expression in regenerating muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C193 is supported by citations to prior work (Kikani et al., 2016; Shang et al., 2020) establishing the temporal correlation between glutamine availability, PASK expression, and myogenesis. This temporal correlation supports the proposed model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R56",
+    "claim_ids": [
+      "C196",
+      "C197"
+    ],
+    "result": "WDR5 maintains self-renewal in ESCs and MuSCs via association with Oct4 and Pax7 transcription factors. WDR5 serves as substrate adaptor for APC/C during mitosis to ubiquitylate histone H2B and maintain open chromatin for rapid transcription of self-renewal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C197 represent prior literature (McKinnell et al., 2008; Ang et al., 2011; Oh et al., 2020) establishing WDR5's multiple functions in maintaining self-renewal. These citations provide important context for understanding the consequences of PASK-mediated disruption of WDR5-APC/C interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R57",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Previous high-throughput studies have shown interaction between human PASK and CRM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 cites prior high-throughput interaction data (K\u0131rl\u0131 et al., 2015) that supports the hypothesis that PASK is exported from the nucleus via CRM1. This provides precedent for investigating NES sequences in PASK.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R58",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C186"
+    ],
+    "result": "PASK is a novel sensory kinase integrating hormonal (mTOR) and metabolic (glutamine) signals into post-mitotic machinery to counter stem cell identity reestablishment. Glutamine metabolism's proliferative functions are co-opted by stem cells to establish fate via PASK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C183, C186 represent the overarching conceptual framework and are well-supported by the comprehensive data throughout the manuscript. The model integrates multiple levels of regulation (mTOR phosphorylation, glutamine-dependent acetylation, nuclear translocation, WDR5-APC/C disruption) into a coherent mechanism. The framework is supported by convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R59",
+    "claim_ids": [
+      "C184",
+      "C185"
+    ],
+    "result": "Glutamine stimulates proliferation to bring stem cells into mitosis and induces PASK acetylation to drive nuclear translocation, guiding exit from self-renewal and establishing the committed progenitor pool during early muscle regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C185 represent the proposed model for how glutamine metabolism coordinates proliferation with fate decisions. The model is supported by data showing glutamine is required for proliferation (Figure 5A, prior literature) and drives PASK acetylation/nuclear translocation (Figure 4) to regulate Pax7 expression (Figures 5-6). The temporal coordination is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R60",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "PASK subcellular localization must be carefully regulated to prevent unintended differentiation. Nuclear accumulation is signal-regulated, independent of mTOR but dependent on CBP/P300-induced acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C189 summarize key regulatory principles supported by the data. The careful regulation of PASK localization through NES sequences (Figure 3), signal-dependent nuclear translocation (Figures 3G, 4A), and the separation of mTOR-dependent activation from CBP/P300-dependent nuclear translocation (Figure 4A, 4D, 4I) are all well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R61",
+    "claim_ids": [
+      "C191",
+      "C192"
+    ],
+    "result": "PASK is a novel kinase target of CBP/P300 in MuSCs that drives differentiation by coordinating exit from self-renewal. Mitochondrial glutamine metabolism is the primary source of acetyl-CoA for PASK acetylation and nuclear translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C192 summarize key mechanistic findings supported by the data. CBP/P300-dependent PASK acetylation (Figure 4C-D, Figure 4\u2014figure supplement 1F) and the requirement for glutamine metabolism (Figure 4F-I) are well-established. The identification of PASK as a novel CBP/P300 kinase substrate is an important contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R62",
+    "claim_ids": [
+      "C194"
+    ],
+    "result": "Increased glutamine influx from the regenerating niche induces PASK acetylation and nuclear translocation to promote onset of myogenesis early during regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C194 is a speculation based on temporal correlation between glutamine availability, PASK expression, and myogenesis. While the in vitro data strongly support the mechanism, direct evidence for glutamine-induced PASK acetylation in vivo during regeneration is limited to the detection of acetylated PASK at days 3 and 5 post-injury (Figure 4\u2014figure supplement 1D). Additional experiments measuring glutamine levels and PASK acetylation/localization dynamics during regeneration would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R63",
+    "claim_ids": [
+      "C195"
+    ],
+    "result": "Glutamine and PASK act on the same downstream mechanisms to regulate self-renewal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C195 is supported by the similar phenotypes observed with glutamine withdrawal and PASK inhibition (increased Pax7+ cells, reduced heterogeneity), the requirement for PASK in alpha-ketoglutarate rescue (Figure 6F-G), and the lack of additive effect of PASKi in glutamine-depleted conditions on WDR5-APC/C interaction (Figure 7F). These data support a linear pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R64",
+    "claim_ids": [
+      "C198"
+    ],
+    "result": "In response to glutamine signaling, PASK disrupts the WDR5-APC/C interaction during mitosis, which is required for downregulating Pax7 expression and coordinating exit from self-renewal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C198 represents the central mechanistic model linking glutamine metabolism to Pax7 regulation via PASK-mediated disruption of WDR5-APC/C. This is supported by data showing glutamine-dependent PASK nuclear translocation (Figure 4I), PASK-mediated WDR5-APC/C disruption (Figure 7C-F), and the requirement for PASK-WDR5 interaction for Pax7 downregulation (Figure 7I-J). The model is well-supported by convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R65",
+    "claim_ids": [
+      "C199"
+    ],
+    "result": "The WDR5-APC/C interaction as a downstream target of PASK is a conserved feature among mESCs and MuSCs, suggesting generalizability of PASK function to stem cells of varied tissue origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C199 is supported by data showing similar PASK functions in both ESCs (Figure 1A-B, Figure 1\u2014figure supplement 1C) and MuSCs (Figures 1-7). The conservation of the WDR5-APC/C interaction in both cell types (Oh et al., 2020) and the similar effects of PASKi suggest the mechanism may be broadly applicable. However, direct demonstration in additional stem cell types would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R66",
+    "claim_ids": [
+      "C200"
+    ],
+    "result": "Transient PASK inhibition in mESCs and MuSCs increases the differentiation-capable progenitor population, providing potential rationale for therapeutic applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C200 is supported by data showing PASKi maintains stemness (Figure 1A-B) and enhances differentiation potential upon withdrawal in ESCs (Figure 1\u2014figure supplement 1C). The similar effects in MuSCs suggest potential therapeutic utility. However, this is primarily a forward-looking statement that would require additional validation in disease models and assessment of long-term effects on stem cell function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R67",
+    "claim_ids": [
+      "C179",
+      "C180"
+    ],
+    "result": "PASK and WDR5 have multifaceted functions acting with APC/C to regulate committed progenitor generation. Proper temporal transition of cell identity is required for successful terminal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C179-C180 represent important conceptual conclusions, but the data reveal complexities that are not fully resolved. The paradoxical effects of APC/C inhibition (reducing Pax7+ cells but inducing differentiation markers) suggest the relationships are more complex than a simple linear pathway. Additional experiments are needed to fully elucidate the temporal dynamics and multifaceted functions of these proteins.",
+    "result_type": "MAJOR"
+  }
+]

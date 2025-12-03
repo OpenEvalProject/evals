@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C72",
+      "C73",
+      "C74",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91",
+      "C188"
+    ],
+    "result": "The authors developed a multilayer network approach using a novel measure called multilayer eigenvector centrality (mlEVC) to identify the epileptogenic zone (EZ) from SEEG data during seizures. The algorithm successfully predicted electrodes inside the resected volume as EZ for 88% of 16 seizure-free patients, with a false-positive rate of 1.79%, showing reasonable consistency (41% overlap) with an existing method (Fingerprint).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C72-C87, and C188 collectively demonstrate successful EZ identification using the mlEVC approach. The 88% success rate (C5, C82) in seizure-free patients provides strong validation, though the actual ground truth is acknowledged as uncertain (C46, C87). The low false-positive rate (C80) and comparison with an independent method (C81-C84) strengthen the findings. The multilayer approach outperformed single-layer networks (C85, C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C108",
+      "C109",
+      "C110",
+      "C117",
+      "C119",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The study found significant and unique desynchronization between the EZ and the rest of the brain in high-frequency (80-200 Hz) during early to mid-seizure, followed by widespread synchronization during seizure termination. EZ-nR connectivity was significantly lower than RnEZ-nR (p=0.0108) and nR-nR (p<10\u207b\u2074) in mid-seizure, with substantial elevation during termination and post-ictal periods (p<10\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C108-C110, C117, C119, and C131-C134 present a coherent pattern of EZ desynchronization supported by statistical tests with appropriate corrections (Hochberg FDR, B=10\u2074 bootstraps). The findings are consistent with previous literature (C120, C133) and supported by visual evidence in Figure 4. The use of robust statistical methods (percentile bootstrap with one-step M-estimator) addresses potential outliers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C122",
+      "C123",
+      "C124",
+      "C127"
+    ],
+    "result": "Aging and duration of epilepsy intensify the desynchronization between EZ and non-resected areas. There was a strong negative correlation between patient age and normalized EZ synchronization (p<10\u207b\u2074, r=-0.414, n=39) and between epilepsy duration and EZ-nR connectivity (p=0.032, r=-0.229, n=39), potentially reflecting abnormal neuroplasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C122-C124, and C127 demonstrate statistically significant correlations using robust regression (Theil-Sen algorithm). The age correlation is particularly strong (r=-0.414, p<10\u207b\u2074), while the epilepsy duration correlation is weaker but significant (r=-0.229, p=0.032). The mechanistic interpretation involving abnormal neuroplasticity (C8, C124) is speculative but supported by citations. The normalization approach (subtracting overall synchronization) helps control for confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C138"
+    ],
+    "result": "Seizures evolve with various network topologies, with different brain states observed across seizures in the same patient. The multilayer analysis revealed that stereotypy in macroscopic high-frequency synchronization does not necessarily occur, suggesting the existence of different epileptogenic networks in each patient and the necessity of collecting multiple seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C104-C107, and C138 are supported by the analysis of right singular vectors and state transitions shown in Figure 3 and supplementary figures. The findings contrast with some previous studies suggesting stereotypy (C103, C106) but are consistent with literature showing multiple seizure categories in individual patients (C139-C141). The conclusion about data collection necessity (C12, C107, C142) logically follows from the observed variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C146",
+      "C150",
+      "C151",
+      "C153",
+      "C154",
+      "C155",
+      "C157"
+    ],
+    "result": "The study characterized seizure dynamics across frequency bands, showing early high-frequency desynchronization and low-frequency suppression in the EZ, followed by extensive increases in brain connectivity approaching seizure termination. The findings suggest seizures initiate with localized desynchronization but require widespread connectivity for termination, consistent with hysteresis behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C146, C150-C151, and C153-C157 present a coherent model of seizure evolution supported by both high-frequency (Figure 4) and low-frequency (Figure 6) connectivity analyses. The findings are consistent with multiple previous studies (C120, C151, C156) and supported by appropriate statistical testing. The interpretation regarding critical transitions and hysteresis is supported by citations (C69, C155, C156) though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Post-termination high-frequency synchrony is correlated with pre-termination low-frequency connectivity (p<0.02, r=0.452, n=34 after outlier removal), supporting the existence of hysteresis in the system and suggesting the brain state in the post-ictal period can be predicted from pre-termination conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C177-C179 demonstrate a significant correlation (r=0.452, p<0.02) after appropriate outlier removal using projection method and MAD-median rule. The correlation supports the hysteresis hypothesis (C69, C178) and is visualized in Figure 7. However, the moderate correlation coefficient and the need for outlier removal suggest some variability in this relationship. The interpretation is consistent with theoretical predictions (C156).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The multilayer network framework with adaptive interlayer coupling provides methodological advantages over single-layer analysis, including incorporation of neural dynamics continuity, ability to distinguish processes at different timescales, and reduced susceptibility to noise. The optimal coupling parameter varied between patients, and the approach outperformed single-layer networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C63 and C96-C101 establish the methodological rationale and advantages of the multilayer approach, supported by citations (C53, C57-C59, C63) and empirical observations (C96-C97). The eigenvalue analysis (C98-C100, Figure 2\u2014figure supplement 4) demonstrates how coupling affects network structure. The patient-specific optimal coupling (C96, C169) justifies the adaptive approach. However, the lack of cross-validation (C167-C170) limits generalizability assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Validation analyses demonstrated that phase-randomized SEEG signals lose characteristic connectivity patterns, and time-frequency analysis showed that non-spiking high-frequency oscillations (HFOs), rather than ictal spiking, are the main contributor to observed synchronization during seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 provide important validation of the approach. The phase-randomization null model (C92, Figure 2\u2014figure supplement 2) demonstrates that observed patterns are not artifacts. The time-frequency analysis (C93-C95, Figure 2\u2014figure supplement 3) distinguishes HFOs from spikes, though the authors acknowledge the need for more systematic spectral decomposition (C172-C176). Pre-ictal spikes were observed as expected (C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "The study employed rigorous signal processing methods including bipolar montage, lagged-coherence to eliminate volume conduction effects, element-wise normalization to the pre-ictal period, and appropriate filtering with zero-delay compensation. These methodological choices help ensure that findings reflect true neural connectivity rather than artifacts or distance effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C166 and C197-C209 describe comprehensive preprocessing and analysis methods. The use of bipolar montage and lagged-coherence (C162, C207) addresses volume conduction, a major confound in connectivity studies. The normalization approach (C165-C166, C209) controls for distance effects. Detailed filter specifications (C200-C204) enable reproducibility. However, the potential for false ripples from filtering (C172-C176) is acknowledged but not systematically addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The mlEVC algorithm showed 41% overlap with the Fingerprint method for EZ identification, with complementary performance: mlEVC identified EZ in two patients where Fingerprint failed (patients 6 and 16), while Fingerprint succeeded in two cases where mlEVC failed (patients 8 and 11). Overall, 67% of patients had common electrodes labeled as EZ by both methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 and C81-C84 provide important comparative validation. The 41% overlap and complementary performance patterns suggest the methods capture different but related aspects of the EZ. The 67% agreement on common electrodes within resected volumes is encouraging. However, the lack of true ground truth (C46) and the retrospective nature limit definitive conclusions about which method is more accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "The study acknowledges important limitations: cross-validation was not performed, parameters are patient-specific, and the algorithm's broader validity requires more rigorous investigation with data from different clinical centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C171 transparently acknowledge methodological limitations. The lack of cross-validation (C167) is justified by the unsupervised nature (C168) and patient-specific parameters (C169), but this limits assessment of generalizability. The call for future multi-center validation (C170-C171) is appropriate. These limitations are significant but do not invalidate the primary findings given the consistent results across 16 patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C127"
+    ],
+    "result": "The findings suggest the importance of early intervention in epilepsy and identify factors (age, epilepsy duration) that correlate with disease severity as measured by network abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C11 and C127 make clinical inferences from the correlation findings (C7, C122-C123). While the correlations are statistically significant, the causal interpretation regarding early intervention (C10) is speculative. The cross-sectional design cannot establish whether early intervention would prevent the observed network changes. Additional longitudinal studies would be needed to support this clinical recommendation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C124"
+    ],
+    "result": "The intensification of EZ desynchronization with age and epilepsy duration can be explained by abnormal neuroplasticity, where continuous recruitment of epileptogenic networks intensifies their anomaly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8 and C124 propose a mechanistic explanation for the observed correlations (C7, C122-C123). While supported by citation to previous work on abnormal neuroplasticity (Tavakol et al., 2019), this remains speculative. The cross-sectional design cannot distinguish abnormal neuroplasticity from other potential mechanisms (e.g., progressive neurodegeneration, cumulative effects of seizures). The mechanism is plausible but not directly tested.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1653 @@
+{
+  "submission": {
+    "id": "14e2df36-63d7-4e84-b00b-d8b55d9e2157",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:09:09.007760Z",
+    "updated_at": "2025-12-03T14:09:09.007760Z"
+  },
+  "content": [
+    {
+      "id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "submission_id": "14e2df36-63d7-4e84-b00b-d8b55d9e2157",
+      "content_type": "manuscript",
+      "content_text": "# Host-parasite coevolution promotes innovation through deformations in fitness landscapes\n\n## Authors\n\n- Animesh Gupta<sup>1</sup> ([ORCID: 0000-0003-4374-335X](https://orcid.org/0000-0003-4374-335X))\n- Luis Zaman<sup>2</sup>\n- Hannah M Strobel<sup>3</sup>\n- Jenna Gallie<sup>4</sup> ([ORCID: 0000-0003-2918-0925](https://orcid.org/0000-0003-2918-0925))\n- Alita R Burmeister<sup>5</sup>\n- Benjamin Kerr<sup>6</sup>\n- Einat S Tamar<sup>7</sup> ([ORCID: 0000-0001-8693-7176](https://orcid.org/0000-0001-8693-7176))\n- Roy Kishony<sup>7</sup> \u2020\n- Justin R Meyer<sup>3</sup> ([ORCID: 0000-0001-5566-8452](https://orcid.org/0000-0001-5566-8452)) \u2020\n\n### Affiliations\n\n1. Department of Physics, University of California San Diego La Jolla United States ([ROR:03aw5sn18](https://ror.org/03aw5sn18))\n2. Department of Ecology and Evolutionary Biology, University of Michigan Ann Arbor United States ([ROR:05hs6h993](https://ror.org/05hs6h993))\n3. Department of Ecology, Behavior and Evolution, University of California San Diego La Jolla United States ([ROR:03aw5sn18](https://ror.org/03aw5sn18))\n4. Department of Evolutionary Theory, Max Planck Institute for Evolutionary Biology Pl\u00f6n Germany ([ROR:0534re684](https://ror.org/0534re684))\n5. Department of Ecology and Evolutionary Biology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n6. Department of Biology, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n7. Department of Biology, Technion \u2013 Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring the struggle for survival, populations occasionally evolve new functions that give them access to untapped ecological opportunities. Theory suggests that coevolution between species can promote the evolution of such innovations by deforming fitness landscapes in ways that open new adaptive pathways. We directly tested this idea by using high-throughput gene editing-phenotyping technology (MAGE-Seq) to measure the fitness landscape of a virus, bacteriophage \u03bb, as it coevolved with its host, the bacterium Escherichia coli. An analysis of the empirical fitness landscape revealed mutation-by-mutation-by-host-genotype interactions that demonstrate coevolution modified the contours of \u03bb\u2019s landscape. Computer simulations of \u03bb\u2019s evolution on a static versus shifting fitness landscape showed that the changes in contours increased \u03bb\u2019s chances of evolving the ability to use a new host receptor. By coupling sequencing and pairwise competition experiments, we demonstrated that the first mutation \u03bb evolved en route to the innovation would only evolve in the presence of the ancestral host, whereas later steps in \u03bb\u2019s evolution required the shift to a resistant host. When time-shift replays of the coevolution experiment were run where host evolution was artificially accelerated, \u03bb did not innovate to use the new receptor. This study provides direct evidence for the role of coevolution in driving evolutionary novelty and provides a quantitative framework for predicting evolution in coevolving ecological communities.\n\n## Introduction\n\nA starting point for understanding how populations evolve is to assume that they exist in an unchanging world where they can adapt toward optimality (Orr, 2005; Pigliucci and M\u00fcller, 2010). However, even in static environments, populations never reach optimality because their circumstances continuously change as neighboring species coevolve with them (Valen, 1973). This more dynamic view of the evolutionary process opens the potential for unbounded evolution and creates new opportunities for evolutionary innovation (Doebeli, 2011; Thompson, 2005; Nahum et al., 2017; Thompson and Cunningham, 2002; Zaman et al., 2014). Darwin recognized this potential in the final pages of On the Origin of Species, where he wrote that, \u2018It is interesting to contemplate an entangled bank\u2019 of organisms evolving with one another to produce such a variety of forms and functions (Darwin, 1859). But he also realized the empirical challenges created by the richness of species interactions within ecological communities in his further description of \u2018these elaborately constructed forms, \u2026 dependent on each other in so complex a manner\u2026\u2019 (Darwin, 1859). The complexity arises because an organism\u2019s fitness is a function of its interactions with other species, and the strength and form of these interactions can continuously change as they coevolve. Furthermore, the coevolving traits of organisms are encoded within genomes by mutations that might interact with one another, a pervasive phenomenon called epistasis (Weinreich et al., 2006). This means that interactions at all levels must be considered; from mutation-by-mutation within a species (classical epistasis), to mutation-by-mutation between species (interspecific epistasis), and higher order phenomena such as the combination of classic and interspecific epistasis, where the within genome mutation-by-mutation interactions depend on the genotype of an interacting species.\n\nMany advances have been made over recent decades that enable us to tackle this combinatorial problem. Efficient genetic engineering methods permit the construction of genetic libraries with combinatorial sets of mutations that can be used to measure epistasis (Kosuri and Church, 2014; Fowler and Fields, 2014). Also available are convenient approaches to measure Darwinian fitness of the mutant libraries (Weinreich et al., 2006; Palmer et al., 2015; Khan et al., 2011; Chou et al., 2011). Coupling these two technologies allows the creation of extensive genotype-to-fitness maps, or fitness landscapes (Wright, 1932), that provide information important for predicting adaption (de Visser and Krug, 2014; de Visser et al., 2018; Lee et al., 2018). However, these maps alone are often not sufficient to predict evolution because their topographies can depend on abiotic environmental conditions (Ogbunugafor et al., 2016; Lindsey et al., 2013; Steinberg and Ostermeier, 2016; Flynn et al., 2013) and biotic interactions (Cervera et al., 2016; Fragata et al., 2019). Here, we take two significant steps forward in fitness landscape research. First, we build on the observation that landscape structures depend on species interactions by studying the interdependence of two species\u2019 landscapes and how they shift during coevolution. Second, we test whether these shifts facilitate the evolution of a key innovation, where the species evolves a new function that unlocks new ecological opportunities.\n\nAs a model system of coevolution, we studied the host-parasite interaction between bacteriophage \u03bb and its host, Escherichia coli, because of the extensive background research completed on their coevolution and the availability of well-developed molecular tools (Meyer et al., 2012; Maddamsetti et al., 2018). When \u03bb and E. coli are cocultured in the laboratory, one quarter of the \u03bb populations evolve to use a new receptor (Meyer et al., 2012). \u03bb\u2019s native receptor is E. coli\u2019s outer-membrane protein LamB, but through mutations in its host-recognition gene J, \u03bb evolves to use a second receptor protein, OmpF. While only four mutations are necessary for OmpF+ function (Maddamsetti et al., 2018), more J mutations typically evolve along the way (Meyer et al., 2012). \u03bb gains this new function after E. coli evolves resistance through malT mutations (Meyer et al., 2012) that cause reduced LamB expression (Boos and B\u00f6hm, 2000). Thus, it was hypothesized that the evolution of resistance in E. coli deformed \u03bb\u2019s fitness landscape in ways that promoted \u03bb\u2019s innovation (Thompson, 2012). In line with this, it was previously shown that four out of six \u03bb genotypes randomly chosen on the path to evolve OmpF+ had higher relative fitness when cultured with resistant malT\u2013 cells rather than ancestral cells (Burmeister et al., 2016), suggesting that the host\u2019s coevolution would promote key steps in \u03bb\u2019s evolution. However, one out of six genotypes had higher fitness in the presence of the ancestral host, and the last \u03bb\u2019s fitness was neutral to the host\u2019s genotype. Given the conflicting pattern and small sample size, it could not be concluded whether coevolution was responsible for the innovation. Here, we build on this study with high-throughput technologies capable of measuring the fitness of hundreds of \u03bb genotypes. The technology also produces combinatorial-mutation libraries of \u03bb genotypes that can be used to quantify epistasis. This allows us to establish the contours of \u03bb\u2019s adaptive landscape rather than simply studying isolated genotypes within the space. Given the efficiency of this method, we can now measure \u03bb\u2019s landscape repeatedly in different host contexts in order to test whether host-induced deformations that naturally arise during coevolution promote OmpF+ evolution. Although it has been shown that antagonistic coevolution can hasten molecular evolution of phages (Paterson et al., 2010) and lead them to broader host ranges (Hall et al., 2011), coevolution\u2019s role in unlocking unexplored regions of the fitness landscape has not been directly tested.\n\n## Results\n\n### \u03bb\u2019s fitness landscape at different stages of coevolution\n\nTo construct \u03bb\u2019s fitness landscape, we focused on 10 J mutations that were a subset of mutations \u03bb repeatedly evolved on its path to use OmpF (Meyer et al., 2012; Supplementary file 1a). Together, they form a 10-dimensional genotype space with a total of 1024 (210) unique variants of different combinations of the mutations including, the wild type (WT) allele configuration. Using Multiplexed Automated Genome Engineering (MAGE) (Wang et al., 2009), a technique that uses repeated cycles of homologous recombination in the \u03bb-red system to produce combinatorial genomic diversity, we were successful at engineering a library of 671 genotypes out of the possible 1024 (see Materials and methods). To measure the fitness of each genotype in this library, we competed the full library en masse and monitored their frequency changes using next-generation sequencing (Figure 1\u2014figure supplement 1; Kelsic et al., 2016; Russ et al., 2020). The fitness of each genotype was then calculated by comparing its change in frequency relative to the non-engineered ancestor. Fitness was measured in four replicate competitions for both the ancestral host and malT\u2013 host (see Materials and methods). To reduce the effect of sequencing errors and to overcome other methodological pitfalls, we modified the MAGE protocol by introducing neutral watermark mutations in the library construction and developed a high-throughput competition assay that yielded reproducible results (see Materials and methods, Figure 1\u2014figure supplement 2, Appendix 1). Overall, we were able to measure the fitness of 580 \u03bb genotypes cocultured with ancestral E. coli and 131 genotypes with malT\u2013 (Figure 1\u2014figure supplement 3). The reduced number of genotypes compared to the initial library was due to a combination of factors. The randomness of the MAGE editing process caused some genotypes to be rarely constructed and to have low frequencies in the initial library. If these genotypes did not possess disproportionately high fitness, then their frequency would fall below the limit of detection during the competition, removing them from the analysis. This effect was more pronounced in the malT\u2013 landscape, where fitness differences were even more extreme.\n\nVisual inspection of the two fitness landscapes reveals host-dependent structures; the landscape with the ancestral host has a standard diminishing-returns pattern (Khan et al., 2011; Chou et al., 2011; Kryazhimskiy et al., 2014; MacLean et al., 2010; Guerrero et al., 2019), while the landscape with the malT\u2014 host has an atypical sigmoidal shape that plateaus at a higher fitness than the first (Figure 1a and b). The non-linear relationship between mutation number and fitness suggests the presence of epistasis (mutation-by-mutation interactions), the differences in the magnitude of fitness effects between landscapes suggests mutation-by-host interactions, and different shapes suggest host-dependent epistasis (mutation-by-mutation-by-host interactions). To determine how much variation in fitness is explained by these interactions, we performed multiple linear regression analyses (see Materials and methods). We found pervasive epistasis in both landscapes (Figure 1c). For the ancestral landscape, 58.66% of the variation was explained by the direct effects of mutations and 24.69% by pairwise interactions ($R_{adj}^{2}=0.8172$, F55,439 = 39.97, p<0.0001). Similarly, 48.35% of the variance in the malT\u2014 landscape was explained by the direct mutation effects and 27.61% by the interaction terms ($R_{adj}^{2}=0.7072,$ F55,252 = 14.48, p<0.0001). To test for mutation-by-mutation-by-host interactions, we regressed another linear model that includes host as a predictor variable. In this model, we found significant mutation-by-host interactions (Figure 1d), and sizeable effects of the host-dependent epistasis (21 mutation-by-mutation-by-host interaction terms were significant out of 45 and 12.62% of the total variance in the data were attributable to these terms, Figure 1d). This three-way interaction term measures the extent to which the landscape structure is transformed by host evolution and suggests that \u03bb\u2019s evolutionary trajectory could depend on its host\u2019s genotype.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig1-v1.jpg)\n\n**Figure 1.:** Each node in (a) and (b) represents a unique genotype and two nodes are connected by edges if the corresponding genotypes are separated by one mutation. The node at zero mutations is ancestral \u03bb. Selection rate (per 4 hr competition experiment) is the difference of Malthusian growth rates of a given genotype i to ancestral \u03bb over 4 hr, calculated as $ln\u2061(\\lambda_{i, 4}\u2044\\lambda_{i,0})-ln\u2061(\\lambda_{anc, 4}\u2044\\lambda_{anc,0})$, where $\\lambda_{i, t}$ denotes the density of the given genotype at time t. (c) Statistical analysis of direct and interactive effects of mutations in both the landscapes. Colored cells represent statistically significant terms determined by multiple regression analysis after correction for multiple hypothesis testing (see Materials and methods). The diagonal elements of the matrix represent single mutation effects and all the off-diagonal terms represent pairwise epistatic interactions. See Supplementary file 1i for identity of mutations corresponding to different $G_{i}$ . (d) Statistical test of whether the two landscapes varied in topology. The additional variable, E, represents environment (host) to indicate mutation-by-host effects in the lower-left matrix and mutation-by-mutation-by-host (G\u00d7G\u00d7E) in the upper-right matrix. Light colored cells indicate terms present in the final AIC-optimized model out of the full-factorial model (F76,726 = 37.45, p<0.0001), and dark colored cells indicate statistically significant terms after controlling for rate of false positives (see Materials and methods).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) 24 independently evolved J alleles reported in Meyer et al., 2012. The white blocks indicate a location of a mutation not studied here, whereas colored blocks indicate mutations used to construct the genetic library. (b) Oligos were synthesized with focal mutations positioned in the center of the sequence. (c) MAGE was used to construct a combinatorial library of lambda lysogens integrated into E. coli\u2019s genome. (d) Lysogens were induced in order to generate a library of \u03bb particles with different combinations of mutations. (e) The \u03bb library was first mixed with the ancestor in 1:9 ratio, incubated with different types of hosts for 4 hr at 37\u00b0C, and then sequenced at both initial and final timepoints to calculate the selection rates of individual genotypes.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** For every replicate population in the competition (total eight, four for each host) we performed two separate amplifications and used a unique barcode for each. This allowed us to compare fitness calculations based on independent amplifications and to determine if the amplification step is repeatable and unbiased. Each point represents a unique \u03bb genotype presented in the fitness landscapes reported in Figure 1. The red line is a linear least-square fit. The regression fitting parameter and coefficient of determination are provided in the inset. The black line represents the vector, where fitness estimates from each barcode are equal.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) An ideal fitness landscape where all combinations of 10 mutations are present. (b and c) Empirical fitness landscapes with ancestral host and malT\u2014 host, respectively.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** SD does not correlate with mean fitness of a genotypes for both (a) ancestor host, and (b) malT\u2014 host; p-values in the insets indicate that the slope is not significantly different than zero. Uniform variance in fitness values permit the performance of analysis of variance to detect genotype by genotype by host interactions. Points with zero SD indicate presence of only one replicate population with a fitness value for that genotype.\n\n### The role of shifting landscapes in promoting \u03bb\u2019s innovation\n\nTo test whether changes in the structure of \u03bb\u2019s landscape opened trajectories to OmpF exploitation, we simulated \u03bb\u2019s evolution on the landscapes using a modified Wright-Fisher model (see Materials and methods, Figure 2\u2014figure supplement 1). Before running the simulations, we imputed the missing \u03bb genotypes\u2019 fitness values to complete the landscapes. We did this by successively choosing missing genotypes at random and assigning them the average fitness of their nearest neighbors. The simulations were run based on conservative estimates of the number of generations and population sizes from previously published (Meyer et al., 2012) and this study\u2019s coevolution experiments (960 generations; ~6.3\u00d7109 \u03bb particles, Figure 4\u2014figure supplement 1; Meyer et al., 2012) and \u03bb\u2019s intrinsic mutation rate (7.7\u00d710\u20138 base\u20131 replication\u20131) (Drake, 1991). We predicted that \u03bb would be more likely to evolve OmpF function (three specific mutations plus one additional Maddamsetti et al., 2018) in simulations that accounted for coevolution by shifting the population from one landscape to the next. We ran trials where \u03bb evolved on only one landscape at a time to establish a baseline for the frequency of OmpF+ evolution without coevolution. Next, we ran nine shifting landscape scenarios where we varied how many generations \u03bb evolved on the ancestral host landscape before switching to the malT\u2013 landscape. As anticipated, the switching protocol increased the frequency of OmpF+ evolution in all nine treatments above the single host simulations, but only seven out of nine treatments were found to be significantly higher (Figure 2; ANOVA: F-ratio=6.14, d.f.=99, p<0.0001, Supplementary file 1b). This result was robust to changes in population size and total number of generations, and when controlling for both, different number of genotypes measured in the two landscapes, and noise created by imputing missing data points (Figure 2\u2014figure supplement 2, Appendix 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig2-v1.jpg)\n\n**Figure 2.:** Each bar represents an average of 300 simulation runs. Error bars indicate 95% confidence intervals. OmpF evolution is favored when \u03bb evolves on shifting landscapes. The only two shifting landscape treatments that are not significantly higher than simulations on the constant malT\u2014 landscape are the 0.2 and 0.4 treatments (Supplementary file 1b).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Frequency of OmpF+ evolution when \u03bb population is evolved on different landscapes with different controls as compared with Figure 2 \u2014 (a) half the total number of generations, (b) twice the total number of generations, (c) with one-tenth of the population size, and (d) starting with only the genotypes whose fitness values were measured for both the landscapes. For all switching landscape treatments except two (switching fraction-time of 0.9 in (a), and 0.1 in (d)), the frequency of OmpF+ evolution was significantly higher (adjusted p-value<0.05) than the constant landscape treatments (ANOVA: F-ratio=6.62, $d.f. =99$, p<0.0001 for (a), F-ratio=8.22, $d.f. =99$, p<0.0001 for (b), and F-ratio=8.12, $d.f. =99$, p<0.0001 for (c), and F-ratio=36.04, $d.f. =109$, p<0.0001 for (d)). Each bar represents an average of 300 simulation runs and error bars indicate 95% confidence interval. The frequency of OmpF+ evolution in our simulations depends mainly on whether \u03bb spends any time on the ancestral landscape before shifting to malT\u2014 and there is little evidence of a relationship between the amount of time spend on each landscape and the probability of evolving OmpF+. However, we can reason that as the time spent on the ancestral landscape approaches zero, the frequency of OmpF+ will drop and approach the frequency caused by the constant malT\u2014 landscape. This transition must happen sometime between 0 and 10%. (e and g) show the frequency of OmpF+ evolution when shifting is done between the same hosts, and (f) and (h) show difference between this switching treatment, and the varying host treatment. The bars are the averages taken across all switching times. Statistics for two-sample t-tests: (f) $t=9.10,\u00a0d.f.\u00a0=169,\u00a0p<0.0001$; (h) $t=8.54,\u00a0d.f.\u00a0=161,\u00a0p<0.0001$.\n\n### Reconstructing coevolution in an experimental population\n\nThe simulation results suggest that the shifting landscape encourages \u03bb\u2019s evolution to gain the required mutations for OmpF function. In particular, the simulations show that the first steps along the path to the innovation are more likely if \u03bb first adapts to the ancestral bacterium, meanwhile the final steps are more likely to occur if the host coevolves resistance. To verify this result with laboratory experiments, we analyzed the path \u03bb took to OmpF+ in a single population cryopreserved from the previous coevolution study (population \u2018D7\u2019 in Meyer et al., 2012; Table S1). Population \u2018D7\u2019 was chosen because \u03bb evolved relatively few mutations in this population. We believed this choice was conservative and constitutes a strong test of our hypothesis since fewer \u03bb mutations would provide fewer opportunities to detect host-induced contingency. We sampled \u03bb strains from different timepoints of population \u2018D7\u2019 and sequenced their J gene (Figure 3a, Supplementary file 1c and Supplementary file 1d). Next, we ran pairwise competition experiments between \u03bb genotypes at different stages of evolution on the two hosts. We found that the first mutation on the line of descent to OmpF+ required ancestral E. coli to evolve, while the second mutation required malT\u2013 E. coli (Figure 3b and c). In addition, the eventual OmpF+ genotype with five J mutations only outcompeted the genotype with two mutations when provided with malT\u2013 hosts (Figure 3\u2014figure supplement 1). These findings show that the path \u03bb took in population D7 required it to sequentially adapt to both host types and that \u03bb\u2019s fitness landscape changed during coevolution in a way that ultimately facilitated evolutionary innovation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig3-v1.jpg)\n\n**Figure 3.:** (a) Phylogenetic reconstruction and relative abundance of \u03bb genotypes isolated through time from a previously coevolved community (Meyer et al., 2012). Each letter and star indicate a non-synonymous mutation in J (see Supplementary file 1c for labels\u2019 corresponding mutations). A genotype\u2019s relative abundance on a given day is denoted by the fraction of the total height of the y-axis that it occupies (e.g. on day 9, frequency of ABC is 0.2 and A**C is 0.8; see Supplementary file 1d). The lineage WT-A-ABC-ABCDE eventually evolves OmpF function and fixes in the population; resistance in E. coli through malT\u2014 rises to high frequencies between days 5 and 8 (Meyer et al., 2012). (b & c) Selection rates (per 24 hr) of phage genotypes on the two hosts. Each bar represents the mean of three experimental replicates. While mutation A is favored over wildtype (WT) \u03bb in the presence of the ancestral host and not malT\u2014, AB only outcompetes A in the presence of malT\u2014 and not the ancestral host. One tailed t-tests to test if the mean selection rate is significantly greater (or less) than zero: A vs WT with ancestor host- $t=98.76,\u00a0d.f.\u00a0=2,p<0.0001$; A vs WT with malT\u2014 - $t=\u22124.99,\u00a0d.f.\u00a0=2,p=0.0190$; AB vs A with ancestor- $t=3.4,\u00a0d.f.\u00a0=2,p=0.0383$; AB vs A with malT\u2014 - $t=\u22128.88,\u00a0d.f.\u00a0=2,p=0.0062$. (d) Selection rate (per 4 hr) of malT\u2013 E. coli relative to its ancestor in the presence of \u03bb from different stages of coevolution. Each competition was replicated three times. Lowercase letters denote significance via Tukey\u2019s honest significance test, see Supplementary file 1g for pairwise p-values (ANOVA: F-ratio=111.22, d.f.=11, p<0.0001). One tailed t-tests were also used to test if the selection rate of malT\u2014 was greater than zero WT: $t=2.44,\u00a0d.f.\u00a0=2,p=0.676$; A: $t=5.12,\u00a0d.f.\u00a0=2,p=0.0181$; ABC: $t=26.59,\u00a0d.f.\u00a0=2,p=0.0007$; A**C: $t=71.67,\u00a0d.f.\u00a0=2,p<0.0001$. This shows that malT\u2014 is unlikely to evolve in the presence of WT \u03bb but it becomes progressively more likely as \u03bb gains mutations. Asterisks over all the competitions indicate significance level corresponding to the p-values. Error bars in all bar graphs represent one sample SD.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Relative fitness of \u03bb with two mutations (AB) to an OmpF+ \u03bb with five mutations (ABCDE) on two host genotypes. This shows that AB outcompetes ABCDE in the presence of ancestral E. coli while ABCDE is favored over AB with malT\u2014 E. coli. Selection rate (per 4 hr) is the difference in Malthusian growth rates of the competitors over 1 day with a value of 0 indicating no difference in fitness. Each bar represents mean of three replicate trials and error bars indicate one sample SD. (One-tailed t-test to test if the selection rate is greater (or less) than zero\u2014 ABCDE vs AB with ancestor host: $t=\u221258.53,\u00a0d.f.\u00a0=2,p<0.0001$, ABCDE vs AB with malT\u2014: $t=13.09,\u00a0d.f.\u00a0=2,p=0.0029$. Asterisks over the bar graphs indicate significance level corresponding to the p-values).\n\nAt this point, we shifted the focus of our study to testing whether E. coli\u2019s resistance evolution was also impacted by \u03bb\u2019s evolution. Before reconstructing J evolution, it was believed that E. coli evolved resistance first and then J mutations evolved in response (Meyer et al., 2012, Figure 5). However, J evolved within a day, while malT\u2014 mutations were previously shown to fix between 5 and 8 days in the population (Meyer et al., 2012). The timing suggests that \u03bb improved infectivity and then applied pressure on E. coli to evolve resistance. To test whether \u03bb evolution promoted host resistance evolution, we ran competition experiments between ancestral and malT\u2013 hosts in the presence of phages isolated from four different time points. We found that malT\u2013 was not significantly more fit than the ancestral E. coli in the presence of the ancestral \u03bb, but it was more fit in the presence of the evolved \u03bbs (Figure 3d). This provides another example of interspecific epistasis, but this time the parasite\u2019s genotype alters the host\u2019s landscape. This result combined with the others suggests that there is an intricate coevolutionary feedback at play between \u03bb and E. coli: \u03bb evolves J mutations that better exploit E. coli, which in turn applies pressure on E. coli to evolve resistance. Once resistance evolves, new adaptive pathways become available to \u03bb that encourage the innovation. For the computer simulations, we arbitrarily chose timepoints to switch from one host to the other; however, in reality, the dynamics of the switch are dictated by the host-parasite coevolution.\n\n### Evolutionary replay experiments\n\nTo further test the role of coevolutionary processes at driving \u03bb\u2019s innovation, we ran replays of the coevolution experiment (Figure 4\u2014figure supplement 2). We initiated 12 populations with malT\u2013 host that already possessed resistance, and 12 populations with ancestral host where \u03bb and E. coli would coevolve normally. The former treatment should hinder the evolution of OmpF function because it denies \u03bb the opportunity to evolve first with ancestral E. coli. In line with our expectations, 0 of 12 replicates evolved OmpF use in the malT\u2013 treatment, meanwhile 3 out of 12 evolved the innovation in the ancestral treatment (Figure 4a and b). By sequencing J alleles of the resulting \u03bb genotypes, we found that fewer mutations evolved with malT\u2013 despite evolving for the same length of time. This suggests that \u03bb\u2019s evolution was stymied by starting with the resistant host (Supplementary file 1e), and by disrupting the coevolutionary process we interfered with \u03bb\u2019s ability to innovate.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig4-v1.jpg)\n\n**Figure 4.:** (a) Wildtype (WT) \u03bb with ancestral host, (b) WT \u03bb with malT\u2013, (c) \u03bb one mutation removed from evolving OmpF function with malT\u2014, and (d) identical setup as (c), but with \u03bb two mutations removed (see Supplementary file 1f for identity of mutations). (e) The bar graph provides the frequency of OmpF+ evolution compared to the frequency observed by Meyer et al., 2012. Given \u03bb\u2019s established one in four rates of OmpF+ with ancestral host, the probability of observing no OmpF+ evolution in 12 replicate populations is ~0.03. Thus, no positives for OmpF evolution in (b) shows that \u03bb\u2019s evolution to OmpF function is significantly hindered, when coevolution is initiated with malT\u2014 host. However, malT\u2014 does not impede OmpF+ evolution, when the coevolution is initiated with already evolved \u03bbs (p-values for Fisher\u2019s exact test: between (b) and (c) p=0.0261; between (b) and (d) p=0.0122). Notably, some \u03bb populations went extinct which is common for these experiments and was previously shown to be caused by the evolution of resistance mutations in E. coli\u2019s ManXYZ protein complex (Meyer et al., 2012).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Coevolution is initiated by coculturing \u03bb and E. coli in glucose media for 24 hr at 37\u00b0C. At the end of each day, 1% of the total population is transferred to fresh media to continue the coevolution and the spent media is discarded. A fraction of the community is also sampled for long-term storage at \u221280\u00b0C, to determine population densities and to check the status of \u03bb\u2019s OmpF use.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Timeseries of phage density of 12 replicates measured at the end of each day for cultures initiated with WT \u03bb and ancestor host or malT\u2014 host (corresponding to Figure 4a, b). The three \u03bb populations that evolved OmpF function in the ancestor host treatment are marked by solid lines. For the simulations, we used a populations size of 6.3 \u00d7 109 which is lower than the peak population density observed (~1010), but above the average population density (~6.3 \u00d7 108).\n\nLastly, we tested whether malT\u2013 would still promote the evolution of OmpF use if the replay experiments were initiated with \u03bb genotypes positioned further along the path to gaining OmpF function. We initiated two more replays: one with a \u03bb strain that was just a single mutation away from becoming OmpF+, and another that was two mutations away (see Supplementary file 1f for J alleles). 16 of 24 \u03bb populations evolved OmpF+ showing that whether malT\u2013 promotes OmpF+ evolution depends on where the \u03bb genotypes are located in the fitness landscape (Figure 4c and d).\n\nWhile the goal of these experiments was to test a specific hypothesis about \u03bb\u2019s innovation, the results have broader implications for coevolutionary dynamics and the repeatability of evolution. We showed that if the host outpaces the parasite (Figure 4b; \u03bbWT and malT\u2013 E. coli), then the parasite is unable to innovate. This is in line with a previous study showing that if the host evolves even higher levels of resistance than provided by the malT mutation, \u03bb loses the ability to innovate (Meyer et al., 2012). When specific pairs of host and parasite genotypes are combined that are at complementary steps in the coevolution, then the innovation becomes possible and even highly likely (Figure 4a, c and d; \u03bbWT and ancestral E. coli, \u03bb\u20131 and malT\u2013 E. coli, and \u03bb\u20132 and malT\u2013 E. coli). This suggests that the genotype of host and parasite that first encounter each other in nature, as well as the timing of their coevolution, play an important role in determining the dynamics and endpoints of their evolution.\n\n## Discussion\n\nThis study provides multiple direct tests of coevolution\u2019s role in driving innovation, as well as revealing a more complicated model of \u03bb and E. coli coevolution than previously published (Figure 5). \u03bb was thought to evolve OmpF use as a direct response to malT\u2013 resistance (Meyer et al., 2012); however, here we learned that key steps were missing from that model. \u03bb is initially poor at infecting its host, so it evolves mutations in J that enhance its infectivity. The new \u03bb genotypes apply pressure on E. coli to evolve resistance. When host-resistance increases in the community, \u03bb\u2019s fitness landscape is deformed in a way that promotes J evolution toward OmpF use, but only if it had already acquired some J mutations. Remarkably, the timing and coordination of each of these interdependent steps is facilitated by the reciprocity ingrained in host-parasite coevolution. Altogether, we were able to provide direct experimental evidence that fluctuating landscapes, also known as fitness seascapes (Merrell, 1994), can promote evolutionary innovations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76162/elife-76162-fig5-v1.jpg)\n\n**Figure 5.:** In the original model, E. coli evolves resistance by repressing \u03bb\u2019s receptor and then \u03bb evolves mutations that allow it to use a new receptor. The updated model describes a more involved dynamic where \u03bb evolves mutations that improve its ability to infect E. coli; with increased pressure to avoid infection, E. coli responds by evolving resistance, and then \u03bb evolves the remaining mutations that leads to the ability to infect using the new receptor.\n\nOur studies show that the fitness of a parasite depends on complex genetic interactions within its own genome and with the genomes of interacting hosts. These interdependencies result in highly contingent evolution, where \u03bb is unlikely to evolve an innovation unless it participates in a particular sequence of coevolutionary steps with its host. Despite the stochasticity that is expected to arise in systems with substantial historical contingency (Gould, 1989; Blount et al., 2018), \u03bb\u2019s evolution to use a new receptor is repeatable because the sequence is coordinated by coevolutionary feedback. While coevolution may yield tangled banks of interactions, we demonstrate how high-throughput technologies can be used to untangle them and to predict evolution. The ability to successfully predict evolution in any system represents a significant step forward, but it is particularly notable in conditions that incorporate species interactions. Our approach was data-intensive and relied on technologies that are not currently available for more natural and complex ecological systems; however, many efforts are underway to develop these technologies (Bergelson et al., 2021). This study shows that these efforts are worthwhile because even though the resulting data may appear to be an uninterpretable morass, computational analyses can be leveraged to penetrate the information to aid learning and prediction.\n\n### Ideas and speculation\n\nThis work was completed during the 2020\u201322 SARS-CoV-2 pandemic, raising the question of whether this research provides insight into strategies to prevent future pandemics. While it is difficult to extrapolate, there are general lessons that can be applied to understanding pandemics. First, natural coevolutionary processes can repeatedly drive the evolution of viruses to achieve difficult adaptations that underly host-range expansions. On one hand, this knowledge is alarming because it suggests that pandemics may be more likely than previously anticipated, but on the other hand, the repeatability provides an opportunity to study the process and develop intervention strategies. We also learned that shifting conditions can enhance the evolutionary potential of viruses, suggesting that there could be additional unexpected consequences of human-caused environmental changes.\n\n## Materials and methods\n\n### Bacterial and phage strains\n\nThe ancestral phage \u03bb strain in our study is cI26; it is a strictly lytic strain that was used in the previous coevolution study on which this paper builds (Meyer et al., 2012). \u03bb has two life cycles: lytic and lysogenic. In the lytic life cycle, \u03bb infects its host, creates multiple copies of its genome, and lyses the cell to produce new viral particles. This is unlike the lysogenic life cycle of \u03bb, where it stably integrates its genome into the host genome and is replicated along with the host (Hendrix, 1983). The \u03bb strain cI26 has a frameshift mutation in the cI gene that disrupts the regulatory protein cI required by \u03bb to switch to a lysogenic life cycle (Meyer et al., 2012). This renders cI26 obligatory lytic. The other \u03bb strain we used was cI857 (provided by Ing-Nang Wang, State University of New York, Albany) to construct our \u03bb genomic library using MAGE (discussed in \u2018Fitness landscapes\u2019 section). The advantage of using cI857 over cI26 is that it is able to form a lysogen and as a genomic complex with E. coli\u2019s genome, its genome can be easily edited with E. coli engineering methods. cI857 has an advantage over typical lysogenic \u03bb because it has a mutation in the cI gene that makes the repressor protein cI unfold at high temperatures (Meyer et al., 2016). This enables us to induce the lytic life cycle of cI857 from lysogens using heat shock treatments, which has fewer side effects compared to using mutagens that the typical strain requires for induction.\n\nWe used E. coli B strain REL606 for the ancestral-sensitive host and its derivative EcC4 for the evolved-resistant (malT\u2013) host to construct fitness landscapes (in Figure 1) and run competition assays (in Figure 3). REL606 was the ancestral host in the coevolution experiments performed by Meyer et al., 2012, and EcC4 was isolated from one of the coevolving populations that has a single mutation, a nonsense mutation (C\u2192T) at genome location 3,482,567 in malT gene (Table S5 in Meyer et al., 2012). MalT is a positive regulator of lamB, so a disruption in transcription of malT inhibits LamB expression (Boos and B\u00f6hm, 2000). Resistance to \u03bb in EcC4 due to this nonsense malT mutation has been shown to yield high levels of resistance, the equivalent of a nonsense mutation in lamB (Figure S5 in Chaudhry et al., 2018). We used another malT\u2014 mutant of REL606, named LR01, for our coevolutionary replay experiments (Figure 4). This strain has a 25 bp duplication at genome location 3,482,677 causing a frameshift in malT. LR01 was also isolated from a coevolving population of \u03bb and E. coli (Figure S3 in Meyer et al., 2012); however, unlike EcC4, LR01 has a high reversion rate to malT+ that results in \u2018leaky resistance\u2019 to \u03bb (Chaudhry et al., 2018). This allows \u03bb populations to sustain serial dilution transfers and thus was critical for the success of the coevolutionary replay experiments (Figure 4). We note that while we use the term \u2018resistant\u2019 to refer to malT\u2013 genotypes, this \u2018resistance\u2019 is specific to the OmpF\u2014 \u03bb in this study; these bacterial strains are susceptible to OmpF+ \u03bb phage.\n\nSeveral E. coli strains were used for culturing \u03bb. The most often used was DH5\u03b1, a lacZ\u03b1\u2013 derivative of E. coli K-12, because it is permissive to all \u03bb genotypes and it lacks lacZ which is used as a genetic marker to distinguish phage genotypes in competition assays (additional information in the \u2018Phage Competition Experiments\u2019 section). Two lamB\u2013 mutants of E. coli with non-functional LamB were used interchangeably to culture OmpF+ \u03bb on LB agar. One strain was a derivative of REL606 that has a 1 bp insertion of nucleotide T between base positions 610 and 611 in lamB (Meyer et al., 2012; Meyer et al., 2015), and the other strain was an E. coli K-12 derivative from the Keio collection (lamB\u2013 JW3996) (Baba et al., 2006). We found no difference in the efficiency of plaquing on the two strains.\n\nMAGE was performed in an E. coli K12 strain, HWEC106, provided by Harris Wang, Columbia University. The strain\u2019s mutS gene is deleted and it possesses the pKD46 plasmid with an inducible \u03bb-red recombineering system (Datsenko and Wanner, 2000). cI857 successfully integrated into this strain\u2019s canonical ATTB site located near the galK gene (Meyer et al., 2012; Maddamsetti et al., 2018; Petrie et al., 2018).\n\n### Media\n\nWe performed most experiments in conditions identical to the initial coevolution experiment (Meyer et al., 2012). For competition assays (low and high-throughput) and two of the four coevolutionary replay experiments (Figure 4a and b), bacteria and phage were cocultured in modified M9 Glucose (47.7 mM disodium phosphate, 22.0 mM potassium phosphate monobasic, 18.7 mM ammonium chloride, 8.6 mM sodium chloride, 0.1 mM calcium chloride, 10 mM magnesium sulfate, 5.55 mM glucose, and 0.2 mM of LB) as used in Meyer et al., 2012. A new medium was used for the remaining two coevolution replays (Figure 4c and d) that we call Tris DM Glucose: 1.6 mM potassium phosphate monobasic, 0.59 mM potassium phosphate dibasic, 0.2 mM of calcium chloride, 50 mM Tris base (pH 7.4), 10 mM of magnesium sulphate, 7.5 \u03bcM thiamine, 3.2 mM ammonium sulphate, and 5.55 mM glucose. This medium is improved over M9 Glucose because it is less prone to magnesium precipitation, and fortunately has no noticeable effect on the coevolution.\n\nFor isolation, estimating densities and initial culturing of bacteria and phage, four more media were used according to the following specifications\u2014(a) LB (Lennox Broth): 10 g tryptone, 5 g yeast extract, and 5 g sodium chloride per liter of water, (b) LBM9: 20 g tryptone, 10 g yeast extract, 12.8 g sodium phosphate heptahydrate, 3 g potassium phosphate monobasic, 0.5 g sodium chloride, 1 g ammonium chloride, 1.2 g magnesium sulfate, 22 mg calcium chloride per liter of water, (c) LB agar: 10 g tryptone, 5 g yeast extract, 5 g sodium chloride, and 16 g agar per liter of water, (d) soft agar: 10 g tryptone, 1 g yeast extract, 8 g sodium chloride, 7 g agar, 0.1 g glucose per liter of water, supplemented with a final concentration of 2 mM calcium chloride. The soft agar was also supplemented with 10 mM magnesium sulphate to improve plaquing of phage particles.\n\n### Isolation and culturing techniques\n\nMost strains were grown at 37\u00b0C, except for HWEC106, which was grown at 30\u00b0C because pKD46 has a temperature-sensitive origin of replication. To ensure uniform aeration and nutrient availability, 4 ml cultures were shaken at 220 rpm and 10 ml cultures at 120 rpm; different rpm was chosen to ensure comparable aeration in cultures (10 ml cultures were grown in 50 ml Erlenmeyer flasks and 4 ml in glass tubes). We used LBM9 to grow phage cultures and LB to grow bacteria cultures, unless otherwise indicated. All bacteria and phage stocks were stored by freezing 1 ml of culture with 15% glycerol at \u221280\u00b0C. We revived phage from freezer stocks by growing ~2 \u03bcl of frozen stocks on 100 \u03bcl of DH5\u03b1 overnight culture in 4 ml of LBM9. To harvest phage, cells were killed and separated by adding 100 \u03bcl of chloroform and centrifuging the solution at 3900 rpm for 10 min. The supernatant containing phage lysate was then stored with ~2% chloroform at 4\u00b0C. Bacteria were revived from \u221280\u00b0C by growing ~2 \u03bcl of the frozen stocks over night in 4 ml of LB.\n\nPhage strains were isolated from a population by infusing phage particles into bacterial lawns of DH5\u03b1 cells. We made these infused plates by mixing a small volume (between 10\u03bcl and 100 \u03bcl) of diluted phage and ~5 \u00d7 108 host cells to a 4 ml of molten soft agar at 55\u00b0C, and pouring the mixture over an LB agar plate (Sambrook and Russell, 2001). The soft agar was allowed to solidify and then incubated overnight at 37\u00b0C for phage particles to form plaques. A plaque is a near-circular clearing that forms on the bacterial lawn when nearby cells are killed by an infection that is initiated by a single phage particle. Phage dilutions were made in saline solution (8.5 g/L NaCl) and implemented to yield between 30 and 300 plaques. A single plaque was picked from the infused plates and clonal phage stocks were made by culturing the isolate overnight with DH5\u03b1 and extracting phage lysate using techniques similar to frozen \u03bb stocks.\n\n### Estimation of phage densities\n\nInfused plates with appropriate dilutions of phage in saline solution (8.5 g/L NaCl) were used to estimate phage densities for phage competition assays. We controlled the number of plaques on an infused plate so that individual plaques could be identified and counted. These counts were used to back-calculate the phage growth rate.\n\nTo estimate the phage densities in the coevolutionary replay experiments, serial dilutions of phage were spotted on a bacterial lawn of DH5\u03b1. We made the bacterial lawns by adding ~5 \u00d7 109 cells of DH5\u03b1 to 10 ml of molten soft agar at 55\u00b0C, and pouring it over a 150 mm diameter petri dish of LB agar base (Sambrook and Russell, 2001). After the soft agar solidified, 2 \u03bcl of eight different phage dilutions were added on top of the surface, let to dry, and incubated overnight at 37\u00b0C. The plaques were counted from the dilution where we could identify individual plaques. We then used these counts to calculate phage density in pfu per ml, where pfu is plaque forming units.\n\n### Sequencing for analyses of mutations in J\n\nWe routinely sequenced the J gene of \u03bb to verify the identity of stocks and to determine whether J evolved in the replay experiments. DNA samples were PCR amplified using Q5 high-fidelity 2 \u00d7 master mix (New England Biolabs) and primers described in Supplementary file 1h. Unpurified PCRs were submitted to Genewiz (La Jolla, CA) for Sanger sequencing.\n\n### Calculation of selection rate using Malthusian parameter\n\nSelection rate ($s$) was used to quantify the difference in fitness between pairs of strains (say X and Y) in a given environment. It is calculated as the difference of their Malthusian parameters:\n\n$$\ns=\\frac{ln\u2061\\frac{X_{T}}{X_{0}}-ln\u2061\\frac{Y_{T}}{Y_{0}}}{T}\n$$\n\nwhere $X_{t}$ and $Y_{t}$ are the densities of strains X and Y, respectively, at time $t$, and $T$ is the period of time over which strains are assessed (and the assay starts at $t=0$). Selection rate has units of inverse time; however, in all our figures, we report selection rate as per unit time period ($T$) of the assays. We reported the values this way because \u03bb does not strictly grow exponentially and it can be misleading to report normalized rates after dividing by $T$ because the rates cannot be extrapolated for different times in a straightforward way like for exponential growths. That being said, for readers who want the per hour rates, we have provided the value of $T$ in hours within each figure caption.\n\n### Construction of \u03bb genomic library using MAGE\n\nOur goal was to measure the fitness of a significant number of \u03bb genotypes to establish the basic structure of the landscape. To accomplish this, we generated a combinatorial library of genotypes made with 10 J mutations previously observed to evolve en route to OmpF+ (Supplementary file 1a). These mutations were chosen because they fell within two <100 base frames where adaptive mutations tended to evolve. We used a genetic engineering technique called MAGE to construct the library (Wang et al., 2009). This technique employs the \u03bb-red recombineering system that can efficiently recombine single-stranded DNA into E. coli\u2019s genomic DNA. To engineer \u03bb, \u03bb\u2019s genome is integrated into E. coli\u2019s genome, creating a lysogen. The \u03bb genome in the lysogen (a prophage) becomes dormant and can be treated as any other E. coli gene. Gene edits in this \u03bb lysogen are made by expressing \u03bb-red from a plasmid (pKD46) within E. coli cells (Datsenko and Wanner, 2000) and electroporating synthetic oligos with specific mutations written into the sequences. Multiple oligos can be combined into a single experiment in order to create a diverse library of different combinations of the mutations. The output of this procedure is a single sample with a library of genotypes mixed together.\n\nWe previously reported our MAGE protocol in Maddamsetti et al., 2018. The oligos used are in Table S1 of the manuscript listed under the subheading \u201810-mutation library\u2019. There are a few important aspects of the oligo and protocol design that we discuss here, but for more detailed information see the original paper.\n\nOur goal was to construct a genetic library with each combination of mutations represented equally, this means a 50/50 split of mutant and WT states at each site. To achieve this, we modified the typical MAGE protocol. First, when mutations were clustered near each other such that a single 90-mer used for MAGE editing encompassed multiple mutations, we designed multiple oligos with different combinations of the mutations at these nearby sites. Without doing this, edits would be correlated, creating an imbalance in the network representation, and limiting our ability to determine the effects of individual mutations. Second, we designed oligos with the WT state at the 10 positions. Including these oligos slowed the efficiency of MAGE to introduce mutations because sometimes they would overwrite an edit; however, it safeguarded the procedure from saturating the library with the 10 mutations. A third strategy was employed to even out the variation at these 10 sites. This was to perform MAGE starting from two orthogonal points in the genetic network; \u03bb that had none of the 10 mutations and one that we engineered in all 10 (Maddamsetti et al., 2018). Additionally, we ran MAGE on three separate replicates from each starting point in order to enhance the potential to explore more genetic space. Lastly, we ran the MAGE protocol for 50 cycles, which is the number of cycles a computer simulation of MAGE with an efficiency of 10% recombination efficiency per cycle predicted we would need to construct all variants. In the end, we mixed all six MAGE libraries together in equal frequencies to maximize diversity in the library.\n\nOur design also included measures to improve our ability to detect rare variants in the library. The next step of the fitness landscape protocol is amplicon sequencing with an Illumina MiSeq. This technology has relatively low rates of error (~10\u20133 per base sequenced); however, we anticipated that some of the genotypes in our library would fall below this frequency, making it impossible to distinguish between false positives and true reads. To improve our resolution, we edited a synonymous mutation adjacent to each focal mutation. We called this a watermark mutation because it helped us distinguish between a true genome edit and an error in sequencing. By only recording the presence of a focal mutation if it occurred alongside the watermark, we decreased our detection limit from ~10\u20133 to ~10\u20136.\n\nThe watermark strategy we employed was slightly more complicated than this. Most synonymous mutations at the C-terminal end of proteins, like our watermark mutations, have no fitness effects (Kelsic et al., 2016). Despite this, we designed a way to test for neutrality. For each focal mutation, we edited one of two different watermark mutations (see Supplementary file 1i for list of mutations). This allowed us to compare equivalent genotypes with distinct watermarks in order to test whether one of the synonymous mutations impacted \u03bb\u2019s fitness when compared to the other. We found that there was no significant fitness effect of the neutral mutations on the phage genotype (see Appendix 1).\n\n### Empirical fitness landscape resolved through one-pot competition experiment\n\nAfter creating the \u03bb genomic library, we measured the relative fitness of genotypes with respect to the WT \u03bb. To do this, we cocultured the \u03bb genomic library and ancestral \u03bb in a 1:9 ratio. This ratio was used so that the most abundant competitor remains the ancestor throughout the competition experiment. This means that the competitive fitness we measured is with respect to a single genotype. If we had not done this, then as the community of engineered \u03bb shifts during the competition, and more fit genotypes become enriched, they will change the mean fitness of the population and cause mildly fit genotypes to begin to decline, making them appear unfit. Flooding the flask with ancestral \u03bb and running competitions for a short time period (4 hr) solves this problem.\n\nHaving a disproportionate number of ancestral \u03bb has a pitfall. We measured \u03bb fitness by comparing the frequency changes of each genotype using amplicon sequencing (more information in the next section). The problem is that most of our sequencing effort would be spent on sequencing a single genotype, the ancestor. To avoid this, we engineered an ancestral genome with 6 synonymous mutations, where the reverse primer binds. These edits interfered with primer binding and caused selective amplification of the library \u03bbs. We edited 6 \u2018wobble\u2019 positions: 3381 (g\u2192t), 3384 (c\u2192a), 3387 (c\u2192a), 3390 (c\u2192t) 3393 (g\u2192a), and 3396 (c\u2192a). The engineering was done using MAGE with the oligo provided in Supplementary file 1j. These edits were made at the end of the protein (3399 nucleotide) and so they likely did not affect \u03bb fitness. We did not test this because this engineered strain acted as a standard competitor for all competition experiments and so it should have no effect on the relative fitness comparisons.\n\nWe ran eight competitions, four in the presence of ancestral E. coli and four with malT\u2013 E. coli. Competitions were inoculated with ~107 total \u03bb particles and ~2 \u00d7 108 cells into 10 ml of M9 glucose in 50 ml flasks. The cells were preconditioned in M9 glucose for 24 hr before the competition. Flasks were cultured for 4 hr at 37\u00b0C and shaking at 120 rpm. 1 ml samples were removed from the library before and after the competition for processing. Phage particles were concentrated using PEG precipitation (Sambrook and Russell, 2001). The pellet was resuspended in 25 \u03bcl of molecular grade water and then a two-step PCR reaction was performed in order to amplify just the region of interest, to attach barcodes to the amplicons so that we could multiplex samples into a single Illumina run, and attach adapters required for Illumina sequencing. The protocol was published by Kelsic et al., 2016. The primers we used are provided in Supplementary file 1k. As described in Kelsic et al., we ran two separate PCR reactions for each sample and used a unique barcode on each. This allowed us to test for amplification bias, which we did not detect (Figure 1\u2014figure supplement 2).\n\n### Sequencing\n\nAmplicon samples were pooled together and sequenced using an Illumina Mi-Seq maintained in the Systems Biology Department at Harvard Medical School. 100 base paired-end reads were run. We were able to extract on average 107,839 high quality reads per sample with standard deviation of 26,889. This provided considerable coverage to reliably estimate fitness for even rare genotypes.\n\n### Post-sequencing analysis and construction of fitness landscape\n\nAmplicon sequences were analyzed to calculate selection rates for each engineered genotype. These values were later used to construct the fitness landscapes. We used a combination of custom Python and MATLAB (version R2019b) scripts to read and concatenate the raw paired-end reads, identify the genotypes based on the focal mutations they possessed, and to count their abundances. All focal mutations were called only if either of the two corresponding watermark mutations were also present. We removed any reads that contained more than one mutation other than the focal and watermark mutations. This essentially acted as a quality filter and we did not have to filter based on the Illumina provided Q-score. For each competition, a mean of counts corresponding to the two barcodes used in PCR amplifications was taken for all the genotypes. If the counts for both, initial and final timepoints were available for a genotype, they were used to estimate the genotype\u2019s Malthusian growth rate, given by the calculation $\\frac{ln\u2061\\frac{_{\\lambda}i,T}{_{\\lambda}i,0}}{T}$ where $\\lambda_{i,t}$ is the density of the given genotype at time $t$ and T is the total time of the competition. Note that most genotypes performed poorly on malT\u2014 host and fell below detection limit at the final timepoint. We quantified the differences in fitness of all genotypes by calculating their selection rate with respect to the WT \u03bb (see \u2018Calculation of selection rate using Malthusian parameter\u2019 section). The final fitness landscapes (Figure 1a and b) were constructed by taking the mean of the selection rates obtained from the four replicate competition trials performed on the same host.\n\n### Statistical analysis of fitness landscapes\n\nWe used multiple linear regression models to quantify the genetic interactions in the fitness landscapes. We regressed fitness values on each landscape against individual effects of the mutations and the pairwise epistatic interactions between them (genotype-by-genotype or G\u00d7G interactions). This allowed us to estimate the contribution of epistasis toward explaining the observed fitness data. The fitness of each genotype in the regression model was thus described by 55 predictor variables (10 main effect terms for the 10 mutations +45 interaction terms):\n\n$$\ny=\\beta_{\u2217\u2217}+\\sumi\\beta_{i\u2217\u00a0}G_{i}+\\sumi<j\\beta_{ij}G_{i}G_{j}\n$$\n\nwhere $\\beta_{**}$ is the intercept, all other \u03b2s are regression coefficients, contribution of an individual mutation i is described by the term $G_{i}$ , and the effect of pair of mutations i and j are captured by terms $G_{i}G_{j}$ , where $G_{i}$ is an indicator variable that is equal to zero when the mutation i is absent and one when present. After fitting the model, we used Benjamini-Hochberg procedure (Benjamini and Hochberg, 1995) to control for false discovery rates and identify statistically significant terms in the model (see Figure 1c). All analyses were performed in R version 3.6.1 (R Development Core Team, 2019). The error in fitness estimates of the genotypes did not depend on the mean fitness value of the genotypes (Figure 1\u2014figure supplement 4).\n\nTo understand how \u03bb\u2019s landscape differed between the two hosts, we incorporated the host genotype as a predictor variable in the linear model and regressed the combined fitness data of both landscapes together. This allowed us to test if a mutation significantly interacted with the host (genotype-by-environment or G\u00d7E interaction) and whether interaction between pairs of mutations changed with the host genotype (genotype-by-genotype-by-environment or G\u00d7G\u00d7E interaction). The combined full-factorial model consisted of a total of 111 terms (10 G for individual mutation +1 E for host +45 G\u00d7G+10 G\u00d7E+45 G\u00d7G\u00d7E terms),\n\n$$\ny=\u00a0\\beta_{\u2217\u2217\u2217}+\\sumi\\beta_{i\u2217\u2217}G_{i}+\\beta_{\u2217\u2217+}E+\\sumi\\beta_{i\u2217+}G_{i}E+\\sumi<j\\beta_{ij\u2217}G_{i}G_{j}+\\sumi<j\\beta_{ij+}G_{i}G_{j}E\n$$\n\nwhere additional $E$ is an indicator variable for host type and other notations follow same scheme as in Equation 2. Since the fit of a model generally improves as the number of predictor variables increases, we tested for overfitting using Akaike information criterion (AIC) (Akaike, 1974). AIC is a penalized-likelihood criterion which penalizes a model for increasing number of parameters in it. The model with the greatest relative likelihood is considered to be the one with minimum AIC value. We minimized AIC value using the step function in R Development Core Team, 2019 to uncover subsets of predictor variables that have high predictive power. This resulted in a more parsimonious model (77 terms out of a total 111, see Figure 1d). A complimentary adjusted R-squared analysis came to the same conclusion, $R_{adj}^{2}=0.775$ for the reduced model and $R_{adj}^{2}=0.769$ for the full-factorial model (higher values indicate more predictive and parsimonious models). After model selection, we used Benjamini-Hochberg procedure to determine which variables were significantly predictive (Figure 1d). This procedure only controls for false positives and is susceptible to false negatives. In this way, it is conservative for our purposes.\n\n### Simulation of \u03bb\u2019s evolution on fitness landscapes\n\nTo test if the changes in \u03bb\u2019s fitness landscape facilitated its evolution to infect via OmpF, we simulated \u03bb\u2019s evolution on the two landscapes we measured and recorded whether OmpF+ genotypes arose to a high enough frequency that we would have detected them in the original laboratory evolution. We initiated \u03bb populations with no mutations and allowed them to evolve and mutate at any of the 10 focal sites used to construct the landscapes (Supplementary file 1a). For each treatment (Figure 2), we simulated 300 separate trials using a modified Wright-Fisher model with discrete generations and a fixed population size.\n\nFor each simulation, a new fitness landscape was constructed by assigning fitness values to all the genotypes (210=1024 genotypes). This was done in a way to account for error in estimating fitness and the error associated with imputing the values of missing data points. For the genotypes that had empirical fitness data available (Figure 1a and b), we did not simply average the values of the replicate fitness measurements but instead we performed a bootstrapping protocol in order to account for the error in the fitness estimate. We randomly resampled from the four replicate measurements (with replacement) and then computed the mean of the four. Some genotypes were not present in all four replicates, in these cases we resampled as many times as there were replicates. Genotypes with only one replicate data point were, thus, assigned the same corresponding fitness values in all the runs of the simulations. Next, we imputed fitness of the genotypes that were missing from the empirical landscape. A genotype with a missing fitness value was randomly chosen and assigned the mean of the fitness values of its nearest neighbors (one-mutation away genotypes) present in the landscape. This was iterated until the full genotypic space was complete. Note that the order in which genotypes are chosen can affect the value that is estimated for a given genotype. This is because as the landscape is filled in, each genotype will have more neighbors to draw values from. This means that if a genotype is randomly chosen early, its fitness will be based on fewer neighbors than if it were chosen later, and its value will be slightly different. Since missing genotypes are randomly chosen in each iteration, the order will vary from one simulation to the next. This method introduces an extra source of variation in the simulation runs and captures uncertainty associated with the imputation of fitness values.\n\nAfter constructing a complete fitness landscape, we evolved a \u03bb population through repeated cycles of reproduction, selection, and mutation. For each generation, reproduction in the population was simulated by a multinomial sampling where the number of trials was equal to the population size $N$ (set to ~6.3 \u00d7 109 based on Figure 4\u2014figure supplement 2) and the success probability associated with a genotype i was given by $p_{i}=n_{i}w_{i}/\\sum_{i}n_{i}w_{i}$ , where $n_{i}$ is the abundance of the genotype i, and $w_{i}$ is defined as the exponential of selection rate used in fitness landscape. Thus, the probability of $(k_{1},k_{2},k_{3},\u2026k_{m})$ offsprings for genotypes $1,2,3,..., m$ would be:\n\n$$\nNk_{1} k_{2} k_{3}\u2026k_{m}\\prodi=1m\\frac{n_{i}w_{i}}{\\sum_{j}n_{j}w_{j}}^{k_{i}}\n$$\n\nTo incorporate mutations, all genotypes whose frequencies increased were mutated as per \u03bb\u2019s mutation rate (7.7 \u00d7 10\u20138 per base per replication Drake, 1991). Consider a genotype (say i) that increased in abundance and let the number of additional individuals produced by this genotype be denoted by $z_{i}$ (with $z_{i}=k_{i}-n_{i}$). Each of these $z_{i}$ individuals retained its parent\u2019s genotype with a probability $e^{-\\mu}$ (assuming a Poisson distribution for mutations). Otherwise, the individual was assigned to a random neighboring (i.e. mutant) genotype. Given \u03bb\u2019s mutation rate, the probability of multiple mutations is very small and was ignored here. We simulated this modified Wright-Fisher cycle of reproduction and mutation for 960 generations. It is difficult to know how many generations phages undergo because the evolved phages have a high spontaneous death rate (Petrie et al., 2018) and can also experience other sources of mortality. Given this, we decided to run the simulation for a somewhat arbitrary amount of time, 960 generations which corresponds to two doublings per hour for the 20-day experiment we are trying to replicate Meyer et al., 2012. This is likely an overestimate, which is unintuitively conservative for our purposes because more cycles will cause additional evolution and exploration of the fitness landscape, enhancing the possibility of OmpF+ evolution in the negative controls, and reducing our ability to detect treatment differences.\n\nWe evaluated whether \u03bb evolved OmpF+ by examining the population for genotypes that had the necessary mutations to be OmpF+. Previous studies revealed that OmpF genotypes must have four mutations (Maddamsetti et al., 2018). They all possess two specific changes (A3034G) and (G3319A) and a third change that can occur at positions 3320 or 3321. For the 10 mutations we studied, T3321A is the only third mutation that satisfies this requirement, meaning all OmpF genotypes must have three specific changes (A3034G, G3319A, and T3321A). Many J mutations satisfy the last requirement (Maddamsetti et al., 2018), so we implemented what we call the \u20183+1\u2019 rule where genotypes are designated as OmpF+ if they have the three necessary J mutations plus any additional mutation (see Supplementary file 1i). If any such genotype crossed the threshold of 5000 \u03bb particles during the course of a simulation, the \u03bb population in that run was marked to have evolved OmpF-function. We based the threshold value on the detection limit of OmpF+ genotypes in the original laboratory coevolution experiments (~500 pfu/ml, see \u2018Coevolutionary Replay Experiments\u2019 section).\n\nWe implemented host switching by first evolving \u03bb on the landscape measured with ancestral E. coli, stopping the simulation early, and quantifying the frequency of each \u03bb genotype. Next, we would initiate evolution on the malT\u2014 for the remainder of the time but starting with genotypes at the frequencies recorded on the ancestral landscape. A total of 11 different coevolution treatments were run by varying how long \u03bb evolved on the ancestral host landscape and malT\u2014 landscape (Figure 2). 300 simulation trials were run for each treatment. We calculated error in the simulations in order to detect significant treatment differences by batching the runs into 30 and estimating the frequency of OmpF+ for each subset. This allowed us to calculate a 95% confidence interval using a Student\u2019s t distribution for the frequency of OmpF+ evolution in each treatment, and then to use an ANOVA coupled with Tukey\u2019s multiple comparison test to test for treatment differences.\n\n### Phage competition assays\n\nTo test whether \u03bb\u2019s path to innovation requires sequential adaptation to host genotypes isolated from different stages of their coevolution, we studied the dynamics of \u03bb evolution in much more depth than previously reported. We focused on a single experimental replicate reported on in Meyer et al., 2012; \u2018D7\u2019 that evolved to be OmpF+ on the 12th day. Daily samples of the population were preserved, so we were able to revive phages from the full time series. We isolated 66 phages in total (Supplementary file 1c and d) and sequenced the full-length J gene from each in order to reconstruct the evolutionary dynamics (Figure 3a).\n\nNext, we ran head-to-head competition experiments from key genotypes along the path to OmpF+, the WT and \u03bb with a single J mutation (A), double (AB), and quintuple (ABCDE) (Figure 3b and c, Figure 3\u2014figure supplement 1). Our first step was to mark key strains with a gene that caused the plaques to be visually distinguishable from unmarked phage. The gene is lacZ\u03b1, which in the presence of a 5-bromo-4-chloro-3-indolyl-b-D-galactopyranoside (X-gal), Isopropyl-\u03b2-D-thiogalactoside (IPTG), and a host cell like DH5\u03b1 that lacks lacZ\u03b1, produces blue plaques. To incorporate lacZ\u03b1 into \u03bb\u2019s genome, we used a gene fusion of lacZ\u03b1 with \u03bb\u2019s R gene (Burmeister et al., 2016; Shao and Wang, 2008). The fusion readily recombines into \u03bb\u2019s genome by the phage\u2019s endogenous recombination system, \u03bb-red (Ellis et al., 2001). The procedure is straightforward, infect an E. coli strain that has a plasmid with the lacZ fusion (strain: SYP042; plasmid: pSwtRlaczalphaZalpha +RZ xl1 Blue Amp Blue provided by Ing-Nang Wang, Albany, NY) and some fraction of the \u03bb produced will have recombined with the plasmid. The recombinants are isolated by picking blue plaques. WT and AB were each marked. The marker has been shown to have a slight fitness effect; however, this would not significantly influence our measurements of fitness since we observed such large differences between strains (Burmeister et al., 2016; Shao and Wang, 2008).\n\nWe competed three pairs of phages, WTlacZ vs A, A vs ABlacZ, and ABlacZ vs ABCDE, under two conditions: with ancestral E. coli or malT\u2013. Competitions were run for a single 24 hr period under identical conditions in which the phage evolved (Meyer et al., 2012). Initial \u03bb density was between 104 and 105 particles per ml and the relative frequency of the strains was sometimes skewed in order to start with more of the unfit genotype. Fitness differences were so large that the less fit genotype would be overwhelmed and its frequency undetectable if they did not start with a numerical advantage. ~5 \u00d7 106 exponentially growing cells were inoculated to each flask (5 \u00d7 105 per ml). The cells were preconditioned by growing them overnight in the competition medium. Three replicate competitions were run for each treatment. Phage densities of the unmarked and marked \u03bb were determined by plating in typical soft agar plates, where we added 0.5 mg/ml of X-gal and 0.25 mg/ml IPTG to the molten soft agar. Densities were measured at t=0 and t=24 hr.\n\n### Host competition assay\n\nThis competition experiment tested the role of \u03bb\u2019s evolution plays in promoting the evolution of host resistance. We competed the ancestral host (REL606) against the evolved-resistant host (EcC4) in the presence of different \u03bb genotypes that had increasing numbers of J mutations (Figure 3; WT (cI26), A (1-mutation), ABC (3-mutation), and A**C (4-mutation)). We initiated three replicate populations for each phage treatment. The competition was performed with identical conditions as the original evolution experiment and run for 4 hr to prevent \u03bb from evolving during the competition assay. Cells were preconditioned in modified M9 glucose for 24 hr before the competition. As with \u03bb, fitness was measured by observing the change in frequency of the competitors over time. Frequencies were determined by plating a subsample of the populations onto tetrazolium maltose (TMal) agar plates (Shuman and Silhavy, 2003). REL606 produces white colonies on the plates, while EcC4 produces smaller red colonies. Before plating, the phages were removed by centrifugation of the cells and then removing the supernatant that contained the phage. Cells were resuspended in saline solution and the centrifugation and resuspension were repeated once more.\n\n### Coevolutionary replay experiments\n\nWould \u03bb\u2019s evolution to OmpF innovation proceed without initially evolving on an ancestral host? We tested this by replaying \u03bb-E. coli coevolution but starting out with a host that already evolved resistance via a malT\u2014 mutation (strain LR01). We initiated 12 replicate populations with malT\u2014, and another 12 with REL606 as a positive control. The replay experiment was run nearly identically to the coevolution experiment performed by Meyer et al., 2012 with cI26 as the ancestor phage, and daily sampling was done to detect the presence of OmpF+ phage by spotting the phage on the bacterial lawn of lamB\u2014 cells (detection limit ~500 pfu per ml) (Figure 4\u2014figure supplement 1). The two differences were that the study was run longer (31 days) and daily estimates of \u03bb populations were made (Figure 4\u2014figure supplement 2). Twelve replicates were chosen in order to have enough statistical power to determine whether or not a treatment reduces the chances of OmpF+ evolution. In the previously reported study, only a quarter of populations (24 out of 96) evolved to use OmpF (Meyer et al., 2012); this result has also been replicated in our lab on two separate instances where 3 out of 12 populations gained OmpF-function. Assuming a binomial distribution and a true success rate of 0.25 for \u03bb\u2019s OmpF+ evolution with the ancestral host, the probability of observing no replicate evolving to be OmpF+ in 12 replicate populations is 0.03167. Thus, we can conclude that malT\u2014 treatment reduced \u03bb\u2019s ability to evolve the innovation as compared to when coevolution is initiated with ancestral host. Two isolates from each population were sampled on day 26, and the reactive region of their J genes were sequenced using the Sanger sequencing method.\n\nWe ran two additional replay experiments as a positive control for any unintended side effects of initiating an experiment with malT\u2014 host (LR01). A prediction from the fitness landscape simulation results was that if we started a replay with malT\u2014 and a phage isolated from a later-stage of the coevolution, then the phage should evolve OmpF use. To test this, we genetically modified an OmpF+ \u03bb by removing one mutation required for OmpF use (\u03bb\u20131), and then a second (\u03bb\u20132). The OmpF+ genotype was a lysogen (cI857) that we had previously edited in seven J mutations (Supplementary file 1f), which is reported about in Petrie et al., 2018. The two new edits were made using MAGE and the oligos are reported in Supplementary file 1j.\n\nThe replay experiments were run identically, except because of an oversight, these replays were run in a slightly different minimal glucose medium called Tris DM (compared to the original coevolution experiment run by Meyer et al., 2012). The key difference in the medium is the buffer, it is a Tris buffer, not a phosphate buffer. Both mediums impose carbon limitation and have the same concentration of the single carbon source, glucose, and so population and evolutionary dynamics should not have been affected. We confirmed in an additional replay experiment that the medium does not affect the timing or repeatability of OmpF+ evolution.\n\n### Data and code availability\n\nAmplicon sequencing data used to generate fitness landscapes in this study have been deposited in the NCBI Sequence Read Archive under BioProject PRJNA646809. The code and data that support the findings of this study are available at https://github.com/anigupta12/fitness-landscape-paper, copy archived at swh:1:rev:19292491a2768444bd009da8a3de6d25ce8ab18c (Gupta, 2021).\n\nSharing of biological material requires a material transfer agreement, described at http://blink.ucsd.edu/research/conducting-research/mta/index.html.\n",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "5d797694-79c0-47e7-9801-eb8c2d9f8831",
+      "submission_id": "14e2df36-63d7-4e84-b00b-d8b55d9e2157",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- C Brandon Ogbunugafor, https://ror.org/03v76x132 Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76162.sa0](https://doi.org/10.7554/eLife.76162.sa0)\n\nThis study uses the parlance and framing of the fitness landscape to articulate a co-evolution story between host and parasite. It utilizes a tractable system, bacteriophage \u03bb and E. coli, to ask questions that unite different pillars of evolutionary theory \u2013 evolutionary genetics (via the fitness landscape analogy), co-evolution, and host-parasite interactions. The findings will be relevant to a number of audiences, and will likely spawn downstream studies that further interrogate the molecular specifics that underlie host-parasite co-evolution.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- C Brandon Ogbunugafor, https://ror.org/03v76x132 Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76162.sa1](https://doi.org/10.7554/eLife.76162.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Host-parasite coevolution promotes innovation through deformations in fitness landscapes\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Nkrumah Grant (Reviewer #1), Jeremy Barr (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please pay close attention to comments from reviewers with respect to the choice of study sub-population (why did the authors choose population D7 from Meyer et al. 2012 )?\n\n2) Other stylistic and communication-based considerations as described by the reviewers. Some involve figure clarity. Also, please consider comments made with respect to items that are in the supplemental material.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Overall the manuscript is written well, but it could use some soft editing.\n\n2. Consider making the color scheme of the simulations and biological data different. For example, figure 2 shows simulation data in blue and yellow, whereas biological data is shown in figures, 3 (panels B and C) and 4.\n\n3. Please clarify why you chose population D7 from Meyer et al. 2012 to analyze further. Why only one population? How generalizable are your results?\n\n4. It would be extremely beneficial to readers if the figures describing your methods were expanded upon (add figure showing MAGE-seq and input/outputs of simulations).\n\nReviewer #2 (Recommendations for the authors):\n\n\u2022 I recommend including and potentially reworking supplemental figure 1 into the main text to provide a visual overview of the experimental system and also encourage the authors to visually recreate the \u03bb co-evolutionary mechanisms explained in text in lines 41-47 on pg2. This would help with the readability of the manuscript, especially for readers not familiar with this model system.\n\n\u2022 Similarly, the abstract appears intentionally vague and perhaps too broad at times. The authors could attempt to rework this to more clearly explain the co-evolutionary mechanisms that were seen in the study.\n\n\u2022 I don't understand the rationale for numbering the supplemental figures in the way the authors have done so. Having sub-supplemental figures for each main figure is not logical and I recommend simply labeling supplemental figures in order of appearance in the main text.\n\n\u2022 I really enjoyed the experimental design and approach to disentangling these co-evolutionary dynamics. This is more a comment rather than something to be addressed, but the phylogenetic reconstruction of \u03bb genotypes in Figure 3A shows the emergence of A**C and ABC genotypes from a similar genetic background. How likely do the authors think that the C genotype emergence twice simultaneously and have they instead considered recombination playing a role?\n",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "80c8aa06-d564-4eb8-af17-3228be08b94f",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C1",
+      "claim": "Bacteriophage \u03bb uses E. coli's outer-membrane protein LamB as its native receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03bb's native receptor is E. coli's outer-membrane protein LamB, but through mutations in its host-recognition gene J, \u03bb evolves to use a second receptor protein, OmpF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the manuscript as established background information about the \u03bb-E. coli system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "74fa3652-7ee5-4451-b466-7a0433a6652b",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C2",
+      "claim": "Through mutations in gene J, bacteriophage \u03bb can evolve to use OmpF as a second receptor protein.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03bb's native receptor is E. coli's outer-membrane protein LamB, but through mutations in its host-recognition gene J, \u03bb evolves to use a second receptor protein, OmpF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly and is supported by previous research cited in the manuscript (Meyer et al., 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "582637e1-07aa-4a91-bc6c-5330cf115a0c",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C3",
+      "claim": "Only four mutations are necessary for \u03bb to gain OmpF+ function.",
+      "claim_type": "EXPLICIT",
+      "source": "While only four mutations are necessary for OmpF+ function (Maddamsetti et al., 2018), more J mutations typically evolve along the way (Meyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Maddamsetti et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "bc30f4f9-0ebc-4c86-a882-ed3ff7003fad",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C4",
+      "claim": "E. coli evolves resistance to \u03bb through malT mutations that cause reduced LamB expression.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03bb gains this new function after E. coli evolves resistance through malT mutations (Meyer et al., 2012) that cause reduced LamB expression (Boos and B\u00f6hm, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Meyer et al., 2012 and Boos and B\u00f6hm, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "071d9f13-d7e0-463c-8771-34874e14524e",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C5",
+      "claim": "The fitness landscape of \u03bb with the ancestral host has a diminishing-returns pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of the two fitness landscapes reveals host-dependent structures; the landscape with the ancestral host has a standard diminishing-returns pattern (Khan et al., 2011; Chou et al., 2011; Kryazhimskiy et al., 2014; MacLean et al., 2010; Guerrero et al., 2019), while the landscape with the malT\u2014 host has an atypical sigmoidal shape that plateaus at a higher fitness than the first (Figure 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual inspection of Figure 1a and comparison to patterns described in cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "0e306335-2ff1-4dcb-b2cc-756265e80af8",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C6",
+      "claim": "The fitness landscape of \u03bb with the malT\u2212 host has an atypical sigmoidal shape that plateaus at a higher fitness than the ancestral host landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of the two fitness landscapes reveals host-dependent structures; the landscape with the ancestral host has a standard diminishing-returns pattern (Khan et al., 2011; Chou et al., 2011; Kryazhimskiy et al., 2014; MacLean et al., 2010; Guerrero et al., 2019), while the landscape with the malT\u2014 host has an atypical sigmoidal shape that plateaus at a higher fitness than the first (Figure 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual inspection of Figure 1b and comparison to the ancestral landscape.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "3fbd69f9-aa8f-4113-a568-1c49b3a0c08b",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C9",
+      "claim": "There are significant mutation-by-host interactions in \u03bb's fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, we found significant mutation-by-host interactions (Figure 1d), and sizeable effects of the host-dependent epistasis (21 mutation-by-mutation-by-host interaction terms were significant out of 45 and 12.62% of the total variance in the data were attributable to these terms, Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on regression analysis that included host as a predictor variable, with results shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "831372a4-0f5a-4626-96f5-d565829d8779",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C10",
+      "claim": "21 out of 45 mutation-by-mutation-by-host interaction terms were significant, accounting for 12.62% of total variance.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, we found significant mutation-by-host interactions (Figure 1d), and sizeable effects of the host-dependent epistasis (21 mutation-by-mutation-by-host interaction terms were significant out of 45 and 12.62% of the total variance in the data were attributable to these terms, Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of the combined fitness landscape model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "c22eb1c5-1a31-45f7-a1a0-c304285c70b8",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C11",
+      "claim": "A combinatorial library of 671 \u03bb genotypes out of a possible 1024 was successfully engineered using MAGE.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Multiplexed Automated Genome Engineering (MAGE) (Wang et al., 2009), a technique that uses repeated cycles of homologous recombination in the \u03bb-red system to produce combinatorial genomic diversity, we were successful at engineering a library of 671 genotypes out of the possible 1024 (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental outcome of the MAGE procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "38942cb1-fc28-49d4-8ffa-b3e954afe6fd",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C12",
+      "claim": "Fitness was measured for 580 \u03bb genotypes cocultured with ancestral E. coli and 131 genotypes with malT\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we were able to measure the fitness of 580 \u03bb genotypes cocultured with ancestral E. coli and 131 genotypes with malT\u2013 (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the number of genotypes successfully measured in each condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "ac030531-fffd-48d4-b20a-33cb42c75a65",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C13",
+      "claim": "Shifting landscape protocols increased the frequency of OmpF+ evolution above single host simulations in all nine treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, the switching protocol increased the frequency of OmpF+ evolution in all nine treatments above the single host simulations, but only seven out of nine treatments were found to be significantly higher (Figure 2; ANOVA: F-ratio=6.14, d.f.=99, p<0.0001, Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on simulation results shown in Figure 2 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "eb82cd9c-f4c1-412c-93b4-5010814f36ac",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C14",
+      "claim": "Seven out of nine shifting landscape treatments showed significantly higher OmpF+ evolution compared to single host simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, the switching protocol increased the frequency of OmpF+ evolution in all nine treatments above the single host simulations, but only seven out of nine treatments were found to be significantly higher (Figure 2; ANOVA: F-ratio=6.14, d.f.=99, p<0.0001, Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of simulation results with ANOVA and post-hoc testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "5ccc5c2b-9e3b-4719-95cd-fd566c05483a",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C15",
+      "claim": "The first mutation on the line of descent to OmpF+ (mutation A) required ancestral E. coli to evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the first mutation on the line of descent to OmpF+ required ancestral E. coli to evolve, while the second mutation required malT\u2013 E. coli (Figure 3b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pairwise competition experiments shown in Figure 3b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "79813cd6-8cca-4e8f-937a-e0002c522ebd",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C16",
+      "claim": "The second mutation on the line of descent to OmpF+ (mutation B) required malT\u2212 E. coli to evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the first mutation on the line of descent to OmpF+ required ancestral E. coli to evolve, while the second mutation required malT\u2013 E. coli (Figure 3b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pairwise competition experiments shown in Figure 3b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "031b82f2-d23f-489c-b845-d6972f1e6df1",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C18",
+      "claim": "malT\u2212 E. coli was not significantly more fit than ancestral E. coli in the presence of ancestral \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that malT\u2013 was not significantly more fit than the ancestral E. coli in the presence of the ancestral \u03bb, but it was more fit in the presence of the evolved \u03bbs (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on competition experiments between host genotypes in the presence of different \u03bb genotypes, shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "d598a579-3a30-49f2-b633-f5ba9b2614cd",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C19",
+      "claim": "malT\u2212 E. coli was more fit than ancestral E. coli in the presence of evolved \u03bb genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that malT\u2013 was not significantly more fit than the ancestral E. coli in the presence of the ancestral \u03bb, but it was more fit in the presence of the evolved \u03bbs (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on competition experiments shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "8c890622-02b2-4b7c-bc6e-bed1bbe3a440",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C20",
+      "claim": "Zero out of 12 replicate populations evolved OmpF use when coevolution was initiated with malT\u2212 host.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our expectations, 0 of 12 replicates evolved OmpF use in the malT\u2013 treatment, meanwhile 3 out of 12 evolved the innovation in the ancestral treatment (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of experimental outcomes from the replay experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "66b65952-f3d8-4317-b656-a130c671362c",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C21",
+      "claim": "Three out of 12 replicate populations evolved OmpF use when coevolution was initiated with ancestral host.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our expectations, 0 of 12 replicates evolved OmpF use in the malT\u2013 treatment, meanwhile 3 out of 12 evolved the innovation in the ancestral treatment (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of experimental outcomes from the replay experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "f8cb9450-9936-4665-a06d-80b0ec04b5ec",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C22",
+      "claim": "Fewer J mutations evolved in \u03bb when coevolution was initiated with malT\u2212 host compared to ancestral host.",
+      "claim_type": "EXPLICIT",
+      "source": "By sequencing J alleles of the resulting \u03bb genotypes, we found that fewer mutations evolved with malT\u2013 despite evolving for the same length of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequencing analysis of evolved \u03bb genotypes from the replay experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "1bf39232-5788-4aaa-ad39-bc06b17a3c79",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C23",
+      "claim": "16 of 24 \u03bb populations evolved OmpF+ when initiated with \u03bb strains positioned one or two mutations away from OmpF+ function.",
+      "claim_type": "EXPLICIT",
+      "source": "We initiated two more replays: one with a \u03bb strain that was just a single mutation away from becoming OmpF+, and another that was two mutations away (see Supplementary file 1f for J alleles). 16 of 24 \u03bb populations evolved OmpF+ showing that whether malT\u2013 promotes OmpF+ evolution depends on where the \u03bb genotypes are located in the fitness landscape (Figure 4c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of experimental outcomes from replay experiments with partially evolved \u03bb strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "b0097f04-72d7-46d8-93cf-5282754d6696",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C24",
+      "claim": "\u03bb initially evolves mutations in J that enhance its infectivity before E. coli evolves resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03bb is initially poor at infecting its host, so it evolves mutations in J that enhance its infectivity. The new \u03bb genotypes apply pressure on E. coli to evolve resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic reconstruction and competition experiments showing the temporal sequence of mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "4c5373fe-c030-4aa7-87a2-e1a5edaab356",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C25",
+      "claim": "The new \u03bb genotypes with enhanced infectivity apply pressure on E. coli to evolve resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "The new \u03bb genotypes apply pressure on E. coli to evolve resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the competition experiments showing that malT\u2212 becomes more fit in the presence of evolved \u03bb genotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "332191e6-95df-4909-b004-b07780fda4ca",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C26",
+      "claim": "When host-resistance increases in the community, \u03bb's fitness landscape is deformed in a way that promotes J evolution toward OmpF use, but only if \u03bb had already acquired some J mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "When host-resistance increases in the community, \u03bb's fitness landscape is deformed in a way that promotes J evolution toward OmpF use, but only if it had already acquired some J mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of simulation results, competition experiments, and replay experiments showing contingency on prior mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "2a7385f6-1580-4591-849d-f4836b40e717",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C27",
+      "claim": "The timing and coordination of coevolutionary steps is facilitated by the reciprocity ingrained in host-parasite coevolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the timing and coordination of each of these interdependent steps is facilitated by the reciprocity ingrained in host-parasite coevolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing the interdependence of host and parasite evolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "3ec83bcc-533b-496f-996d-81b43272de20",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C28",
+      "claim": "Coevolution can promote evolutionary innovations by deforming fitness landscapes in ways that open new adaptive pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Theory suggests that coevolution between species can promote the evolution of such innovations by deforming fitness landscapes in ways that open new adaptive pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as theoretical background and is tested by the experiments in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "3486126f-d331-49af-8af9-35d7813266d7",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C29",
+      "claim": "The probability of observing no OmpF+ evolution in 12 replicate populations with ancestral host is approximately 0.03, given \u03bb's established one in four rate of OmpF+ evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Given \u03bb's established one in four rates of OmpF+ with ancestral host, the probability of observing no OmpF+ evolution in 12 replicate populations is ~0.03.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical calculation based on a binomial distribution and previously established rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "ea27fc35-5be3-49b6-9fa1-edca87594faf",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C30",
+      "claim": "\u03bb's mutation rate is 7.7\u00d710\u22128 per base per replication.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations were run based on conservative estimates of the number of generations and population sizes from previously published (Meyer et al., 2012) and this study's coevolution experiments (960 generations; ~6.3\u00d7109 \u03bb particles, Figure 4\u2014figure supplement 1; Meyer et al., 2012) and \u03bb's intrinsic mutation rate (7.7\u00d710\u20138 base\u20131 replication\u20131) (Drake, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Drake, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "e3f52160-7b7d-4345-8fbd-2d3e45446ce8",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C31",
+      "claim": "OmpF+ genotypes must have three specific mutations: A3034G, G3319A, and T3321A, plus one additional mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "They all possess two specific changes (A3034G) and (G3319A) and a third change that can occur at positions 3320 or 3321. For the 10 mutations we studied, T3321A is the only third mutation that satisfies this requirement, meaning all OmpF genotypes must have three specific changes (A3034G, G3319A, and T3321A). Many J mutations satisfy the last requirement (Maddamsetti et al., 2018), so we implemented what we call the '3+1' rule where genotypes are designated as OmpF+ if they have the three necessary J mutations plus any additional mutation (see Supplementary file 1i).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous research (Maddamsetti et al., 2018) and defines the criteria used in the simulations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "cce3bfaa-aab0-4e54-a1fa-9d2ca3913941",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C32",
+      "claim": "The ancestral phage \u03bb strain used in the study is cI26, a strictly lytic strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The ancestral phage \u03bb strain in our study is cI26; it is a strictly lytic strain that was used in the previous coevolution study on which this paper builds (Meyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental materials used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "ba39af8c-1e16-4e77-a164-37d9127046af",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C33",
+      "claim": "The cI26 strain has a frameshift mutation in the cI gene that disrupts the regulatory protein cI required for lysogenic life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03bb strain cI26 has a frameshift mutation in the cI gene that disrupts the regulatory protein cI required by \u03bb to switch to a lysogenic life cycle (Meyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the strain used, with citation to Meyer et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "566a72da-542d-4de4-b94b-3958dc2434e6",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C34",
+      "claim": "E. coli B strain REL606 was used as the ancestral-sensitive host.",
+      "claim_type": "EXPLICIT",
+      "source": "We used E. coli B strain REL606 for the ancestral-sensitive host and its derivative EcC4 for the evolved-resistant (malT\u2013) host to construct fitness landscapes (in Figure 1) and run competition assays (in Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental materials used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "1ed66a6e-8b7d-4951-9090-d7005954f7ed",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C35",
+      "claim": "EcC4 has a single nonsense mutation (C\u2192T) at genome location 3,482,567 in the malT gene.",
+      "claim_type": "EXPLICIT",
+      "source": "REL606 was the ancestral host in the coevolution experiments performed by Meyer et al., 2012, and EcC4 was isolated from one of the coevolving populations that has a single mutation, a nonsense mutation (C\u2192T) at genome location 3,482,567 in malT gene (Table S5 in Meyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the strain, with citation to Meyer et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "b7a2634d-7860-41c6-b785-9de38961ac34",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C36",
+      "claim": "A disruption in transcription of malT inhibits LamB expression.",
+      "claim_type": "EXPLICIT",
+      "source": "MalT is a positive regulator of lamB, so a disruption in transcription of malT inhibits LamB expression (Boos and B\u00f6hm, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Boos and B\u00f6hm, 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "3a05564b-4699-4f73-a692-91000f4fa131",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C37",
+      "claim": "Watermark mutations were used to distinguish between true genome edits and sequencing errors.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve our resolution, we edited a synonymous mutation adjacent to each focal mutation. We called this a watermark mutation because it helped us distinguish between a true genome edit and an error in sequencing. By only recording the presence of a focal mutation if it occurred alongside the watermark, we decreased our detection limit from ~10\u20133 to ~10\u20136.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the methodological approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "5456763a-7965-4d1b-bfb9-5c405c49988f",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C38",
+      "claim": "The watermark strategy decreased the detection limit from approximately 10\u22123 to 10\u22126.",
+      "claim_type": "EXPLICIT",
+      "source": "By only recording the presence of a focal mutation if it occurred alongside the watermark, we decreased our detection limit from ~10\u20133 to ~10\u20136.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the improvement in detection sensitivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "1314ecb6-05ec-4c4c-9a62-582dd59370df",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C39",
+      "claim": "The \u03bb genomic library and ancestral \u03bb were cocultured in a 1:9 ratio for fitness measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we cocultured the \u03bb genomic library and ancestral \u03bb in a 1:9 ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "73215131-eb7e-4108-b640-a5461b8858e7",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C40",
+      "claim": "Competitions were run for 4 hours to measure \u03bb fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Flasks were cultured for 4 hr at 37\u00b0C and shaking at 120 rpm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "ca575cfb-9064-443a-bf7f-f1f2b60ab30a",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C41",
+      "claim": "An average of 107,839 high quality reads per sample were obtained from Illumina sequencing, with a standard deviation of 26,889.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to extract on average 107,839 high quality reads per sample with standard deviation of 26,889.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of sequencing data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "ce46decc-d4ad-4844-b553-1a3a02cd69f0",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C42",
+      "claim": "The simulations were run for 960 generations, corresponding to two doublings per hour for a 20-day experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this, we decided to run the simulation for a somewhat arbitrary amount of time, 960 generations which corresponds to two doublings per hour for the 20-day experiment we are trying to replicate Meyer et al., 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "7fe465ac-ffc9-4690-a900-2050deb01648",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C43",
+      "claim": "The population size used in simulations was approximately 6.3\u00d710^9 \u03bb particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations were run based on conservative estimates of the number of generations and population sizes from previously published (Meyer et al., 2012) and this study's coevolution experiments (960 generations; ~6.3\u00d7109 \u03bb particles, Figure 4\u2014figure supplement 1; Meyer et al., 2012) and \u03bb's intrinsic mutation rate (7.7\u00d710\u20138 base\u20131 replication\u20131) (Drake, 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on estimates from previous experiments and data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "7360a7d5-8008-443b-a3e6-cbdf2518b0a8",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C44",
+      "claim": "The threshold for detecting OmpF+ genotypes in simulations was set at 5000 \u03bb particles.",
+      "claim_type": "EXPLICIT",
+      "source": "If any such genotype crossed the threshold of 5000 \u03bb particles during the course of a simulation, the \u03bb population in that run was marked to have evolved OmpF-function. We based the threshold value on the detection limit of OmpF+ genotypes in the original laboratory coevolution experiments (~500 pfu/ml, see 'Coevolutionary Replay Experiments' section).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the simulation criteria based on experimental detection limits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "42db25be-8104-4fb8-85de-98b44f56683e",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C45",
+      "claim": "Population 'D7' from Meyer et al., 2012 was chosen for detailed analysis because \u03bb evolved relatively few mutations in this population.",
+      "claim_type": "EXPLICIT",
+      "source": "Population 'D7' was chosen because \u03bb evolved relatively few mutations in this population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the rationale for selecting this population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "b43e6941-cd73-44f0-ae26-bc7a3aaaf362",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C46",
+      "claim": "J evolved within a day in the coevolution experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, J evolved within a day, while malT\u2014 mutations were previously shown to fix between 5 and 8 days in the population (Meyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the phylogenetic reconstruction shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "cda6e662-b098-4422-b41f-f6282ab072d8",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C47",
+      "claim": "malT\u2212 mutations were previously shown to fix between 5 and 8 days in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, J evolved within a day, while malT\u2014 mutations were previously shown to fix between 5 and 8 days in the population (Meyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Meyer et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "cd126603-912b-47a7-ae6b-831e55b57efc",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C48",
+      "claim": "The lacZ\u03b1 marker has been shown to have a slight fitness effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The marker has been shown to have a slight fitness effect; however, this would not significantly influence our measurements of fitness since we observed such large differences between strains (Burmeister et al., 2016; Shao and Wang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Burmeister et al., 2016 and Shao and Wang, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "318943d2-d377-4eff-9145-d89bc8cebbeb",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C49",
+      "claim": "Coevolution's role in driving evolutionary novelty has not been directly tested before this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it has been shown that antagonistic coevolution can hasten molecular evolution of phages (Paterson et al., 2010) and lead them to broader host ranges (Hall et al., 2011), coevolution's role in unlocking unexplored regions of the fitness landscape has not been directly tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the literature that this study addresses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "dd566a09-f18f-46e0-9855-dda03dde9697",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C50",
+      "claim": "The study provides direct experimental evidence that fluctuating landscapes can promote evolutionary innovations.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we were able to provide direct experimental evidence that fluctuating landscapes, also known as fitness seascapes (Merrell, 1994), can promote evolutionary innovations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "837ff001-2628-4c09-98c2-d19972ce8f3a",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C51",
+      "claim": "\u03bb's evolution to use a new receptor is repeatable because the sequence is coordinated by coevolutionary feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the stochasticity that is expected to arise in systems with substantial historical contingency (Gould, 1989; Blount et al., 2018), \u03bb's evolution to use a new receptor is repeatable because the sequence is coordinated by coevolutionary feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing repeatability despite contingency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "5d696142-1946-4a9f-b319-870c36017e1d",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C52",
+      "claim": "Natural coevolutionary processes can repeatedly drive the evolution of viruses to achieve difficult adaptations that underlie host-range expansions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, natural coevolutionary processes can repeatedly drive the evolution of viruses to achieve difficult adaptations that underly host-range expansions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extrapolation from the study's findings to broader implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "7d44e0da-97dc-4bbb-9228-e95df36ee446",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C53",
+      "claim": "Shifting conditions can enhance the evolutionary potential of viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "We also learned that shifting conditions can enhance the evolutionary potential of viruses, suggesting that there could be additional unexpected consequences of human-caused environmental changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extrapolation from the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "dc2b7460-087b-425c-b328-dff157f0cb8f",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C54",
+      "claim": "The fitness of a parasite depends on complex genetic interactions within its own genome and with the genomes of interacting hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies show that the fitness of a parasite depends on complex genetic interactions within its own genome and with the genomes of interacting hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings regarding epistasis and interspecific interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "3ad06295-c280-4f24-884c-92901a4c63c8",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C55",
+      "claim": "\u03bb is unlikely to evolve an innovation unless it participates in a particular sequence of coevolutionary steps with its host.",
+      "claim_type": "EXPLICIT",
+      "source": "These interdependencies result in highly contingent evolution, where \u03bb is unlikely to evolve an innovation unless it participates in a particular sequence of coevolutionary steps with its host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the replay experiments and competition assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "4547a3e8-dc75-49d6-8521-fb821021b5ea",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C56",
+      "claim": "High-throughput technologies can be used to untangle complex species interactions and predict evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "While coevolution may yield tangled banks of interactions, we demonstrate how high-throughput technologies can be used to untangle them and to predict evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "32eb8f7a-b795-4df5-b4e0-d5cef85ba286",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C57",
+      "claim": "The genotype of host and parasite that first encounter each other, as well as the timing of their coevolution, play an important role in determining the dynamics and endpoints of their evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the genotype of host and parasite that first encounter each other in nature, as well as the timing of their coevolution, play an important role in determining the dynamics and endpoints of their evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the replay experiments showing different outcomes depending on initial conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "281239c0-2350-4ae5-b252-e742cb8bdfae",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C58",
+      "claim": "If the host outpaces the parasite in evolution, the parasite is unable to innovate.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that if the host outpaces the parasite (Figure 4b; \u03bbWT and malT\u2013 E. coli), then the parasite is unable to innovate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the replay experiment results shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "a7cd0295-bedd-4881-ac8e-a3a7639e5a96",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C59",
+      "claim": "When specific pairs of host and parasite genotypes are combined that are at complementary steps in coevolution, the innovation becomes possible and highly likely.",
+      "claim_type": "EXPLICIT",
+      "source": "When specific pairs of host and parasite genotypes are combined that are at complementary steps in the coevolution, then the innovation becomes possible and even highly likely (Figure 4a, c and d; \u03bbWT and ancestral E. coli, \u03bb\u20131 and malT\u2013 E. coli, and \u03bb\u20132 and malT\u2013 E. coli).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the replay experiment results shown in Figure 4a, c, and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "7eb80ea5-fad7-4cb9-8d30-8c0fc54768fd",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C60",
+      "claim": "The original coevolutionary model suggested E. coli evolves resistance first and then \u03bb evolves OmpF use as a direct response.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03bb was thought to evolve OmpF use as a direct response to malT\u2013 resistance (Meyer et al., 2012); however, here we learned that key steps were missing from that model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the previous understanding from Meyer et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "8b0102bf-c49c-4952-9dee-086a2a8712e7",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C61",
+      "claim": "The updated coevolutionary model shows \u03bb first evolves mutations that enhance infectivity, which then applies pressure on E. coli to evolve resistance, after which \u03bb's fitness landscape is deformed to promote OmpF evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03bb is initially poor at infecting its host, so it evolves mutations in J that enhance its infectivity. The new \u03bb genotypes apply pressure on E. coli to evolve resistance. When host-resistance increases in the community, \u03bb's fitness landscape is deformed in a way that promotes J evolution toward OmpF use, but only if it had already acquired some J mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the new model proposed based on the experimental findings of this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "3256f004-793b-40bf-a0f4-f8684b7ac499",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C62",
+      "claim": "MAGE was performed for 50 cycles to construct the combinatorial library.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we ran the MAGE protocol for 50 cycles, which is the number of cycles a computer simulation of MAGE with an efficiency of 10% recombination efficiency per cycle predicted we would need to construct all variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "ffb7a36d-e40a-4557-9c91-eabc92381275",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C63",
+      "claim": "Six MAGE libraries were mixed together in equal frequencies to maximize diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the end, we mixed all six MAGE libraries together in equal frequencies to maximize diversity in the library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "b5d057fd-68dc-4ae7-bf78-d902f8e5f7be",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C64",
+      "claim": "The ancestral \u03bb genome was engineered with 6 synonymous mutations at wobble positions to enable selective amplification of library \u03bbs.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid this, we engineered an ancestral genome with 6 synonymous mutations, where the reverse primer binds. These edits interfered with primer binding and caused selective amplification of the library \u03bbs. We edited 6 'wobble' positions: 3381 (g\u2192t), 3384 (c\u2192a), 3387 (c\u2192a), 3390 (c\u2192t) 3393 (g\u2192a), and 3396 (c\u2192a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "ec43f7a6-9794-447b-90e4-c39c4ce51b37",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C65",
+      "claim": "Two separate PCR reactions were run for each sample using unique barcodes to test for amplification bias.",
+      "claim_type": "EXPLICIT",
+      "source": "As described in Kelsic et al., we ran two separate PCR reactions for each sample and used a unique barcode on each. This allowed us to test for amplification bias, which we did not detect (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental protocol and results shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "f5259d77-b416-44db-8066-e96895ebb017",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C66",
+      "claim": "No amplification bias was detected in the PCR reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed us to test for amplification bias, which we did not detect (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the comparison shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "9ac1361a-b960-4973-b465-a9d5666be065",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C67",
+      "claim": "The error in fitness estimates of genotypes did not depend on the mean fitness value of the genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The error in fitness estimates of the genotypes did not depend on the mean fitness value of the genotypes (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "55add91a-3484-4cd0-9996-fa3f6694f70d",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C68",
+      "claim": "Benjamini-Hochberg procedure was used to control for false discovery rates in identifying statistically significant terms.",
+      "claim_type": "EXPLICIT",
+      "source": "After fitting the model, we used Benjamini-Hochberg procedure (Benjamini and Hochberg, 1995) to control for false discovery rates and identify statistically significant terms in the model (see Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "49303e60-80ae-4753-9c08-00ff80a79bbf",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C69",
+      "claim": "AIC was used to test for overfitting in the regression model.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the fit of a model generally improves as the number of predictor variables increases, we tested for overfitting using Akaike information criterion (AIC) (Akaike, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "53568bbf-fde6-4bf5-abb4-44cb92d9232d",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C70",
+      "claim": "The reduced model after AIC optimization had 77 terms out of a total 111 terms.",
+      "claim_type": "EXPLICIT",
+      "source": "We minimized AIC value using the step function in R Development Core Team, 2019 to uncover subsets of predictor variables that have high predictive power. This resulted in a more parsimonious model (77 terms out of a total 111, see Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the results of model selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "b9a4e09f-fcee-4449-b133-f6990fa4eefe",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C72",
+      "claim": "Missing genotype fitness values were imputed by assigning them the average fitness of their nearest neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "A genotype with a missing fitness value was randomly chosen and assigned the mean of the fitness values of its nearest neighbors (one-mutation away genotypes) present in the landscape. This was iterated until the full genotypic space was complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the imputation method used in simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "bb4ea97b-2b70-4e37-9ff6-82ece04deb91",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C73",
+      "claim": "300 simulation trials were run for each treatment in the Wright-Fisher model.",
+      "claim_type": "EXPLICIT",
+      "source": "300 simulation trials were run for each treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the simulation protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "183e1836-817d-4e6a-89c8-b833a1d1be04",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C75",
+      "claim": "66 phages were isolated in total from population D7 for phylogenetic reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "We isolated 66 phages in total (Supplementary file 1c and d) and sequenced the full-length J gene from each in order to reconstruct the evolutionary dynamics (Figure 3a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "5f77e642-3803-40ba-9f18-e849852dbc3a",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C76",
+      "claim": "Three replicate competitions were run for each treatment in the phage competition assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Three replicate competitions were run for each treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "097fe848-1206-4518-97b8-b9d83420542f",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C77",
+      "claim": "Competitions between phage genotypes were run for a single 24 hour period.",
+      "claim_type": "EXPLICIT",
+      "source": "We competed three pairs of phages, WTlacZ vs A, A vs ABlacZ, and ABlacZ vs ABCDE, under two conditions: with ancestral E. coli or malT\u2013. Competitions were run for a single 24 hr period under identical conditions in which the phage evolved (Meyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "2b84cf00-078b-4af2-9f71-9408f8669fe4",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C78",
+      "claim": "Host competition assays were run for 4 hours to prevent \u03bb from evolving during the competition.",
+      "claim_type": "EXPLICIT",
+      "source": "The competition was performed with identical conditions as the original evolution experiment and run for 4 hr to prevent \u03bb from evolving during the competition assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental protocol and its rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "0442bb0c-1ad9-4ab2-869b-f239021754b8",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C79",
+      "claim": "The coevolutionary replay experiments were run for 31 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The two differences were that the study was run longer (31 days) and daily estimates of \u03bb populations were made (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "2985f694-8aad-4124-b45c-bfd656e69077",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C80",
+      "claim": "Twelve replicate populations were initiated for each treatment in the replay experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We initiated 12 replicate populations with malT\u2014, and another 12 with REL606 as a positive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "636f6c13-5fbc-4c4f-8824-f069dcb08a27",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C81",
+      "claim": "The detection limit for OmpF+ genotypes in the original laboratory coevolution experiments was approximately 500 pfu/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "We based the threshold value on the detection limit of OmpF+ genotypes in the original laboratory coevolution experiments (~500 pfu/ml, see 'Coevolutionary Replay Experiments' section).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental detection limit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "55289b05-30d8-4813-ad2c-85b0fe130f33",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "claim_id": "C82",
+      "claim": "Amplicon sequencing data have been deposited in the NCBI Sequence Read Archive under BioProject PRJNA646809.",
+      "claim_type": "EXPLICIT",
+      "source": "Amplicon sequencing data used to generate fitness landscapes in this study have been deposited in the NCBI Sequence Read Archive under BioProject PRJNA646809.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "027c4261-a491-46ce-a1f2-f68c41ae971f",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The \u03bb-E. coli coevolution system involves \u03bb phage using LamB as its native receptor, evolving to use OmpF through mutations in gene J (requiring four mutations), while E. coli evolves resistance through malT mutations that reduce LamB expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the biological background of the system based on prior published work (Meyer et al., 2012; Maddamsetti et al., 2018; Boos and B\u00f6hm, 2000). These are well-established facts about the system that provide the foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "09209888-21aa-416a-8a88-429615953266",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The fitness landscapes of \u03bb differ between ancestral and malT\u2212 hosts: the ancestral host landscape shows a diminishing-returns pattern while the malT\u2212 host landscape has an atypical sigmoidal shape that plateaus at higher fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 are based on visual inspection of empirical fitness data (Figure 1a,b) and comparison to established patterns in the literature. The characterization is qualitative but supported by the data and subsequent quantitative analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "3ac0a098-3207-4e49-9a6e-c0dc16cfda70",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "There are significant mutation-by-host and mutation-by-mutation-by-host interactions in \u03bb's fitness landscape, with 21 of 45 three-way interaction terms significant and accounting for 12.62% of total variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 are based on rigorous statistical regression analysis with appropriate multiple testing correction (Benjamini-Hochberg procedure, C68). The analysis demonstrates host-dependent epistasis quantitatively, supporting the claim that coevolution deforms fitness landscapes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "7880345b-44c7-428d-b1e2-d20b5d35eab0",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A combinatorial library of 671 \u03bb genotypes was constructed using MAGE with watermark mutations to improve detection sensitivity, and fitness was measured for 580 genotypes with ancestral host and 131 with malT\u2212 host.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 and C37-C38 describe the successful implementation of MAGE technology with methodological innovations (watermark strategy) that improved detection limits from ~10^-3 to ~10^-6. The reduced coverage in malT\u2212 landscape is explained by fitness differences causing genotypes to fall below detection. Claims C62-C64 provide additional protocol details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "82fe4ebd-1270-4469-99e3-b09c558e6d21",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Shifting landscape simulations increased the frequency of OmpF+ evolution above single host simulations in all nine treatments, with seven of nine showing statistically significant increases (ANOVA: F=6.14, p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 are based on Wright-Fisher simulations with appropriate statistical testing (ANOVA with post-hoc comparisons). The result is robust to parameter variations (C42-C44, C72-C73) as shown in supplementary analyses. This provides computational evidence that landscape shifts promote innovation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "685abf3c-e5c5-4f6f-9034-7e9ee3f87635",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The first mutation (A) on the path to OmpF+ required ancestral E. coli to evolve, while the second mutation (B) required malT\u2212 E. coli, demonstrating sequential host-dependent selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 are based on pairwise competition experiments (Figure 3b,c) with appropriate statistical testing (one-tailed t-tests with significant p-values). The experiments directly test fitness advantages in different host contexts and support the hypothesis of sequential adaptation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "27e13f28-b9ad-4320-81c3-14cafbcfc3a1",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "malT\u2212 E. coli was not significantly more fit than ancestral E. coli in the presence of ancestral \u03bb, but was more fit in the presence of evolved \u03bb genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are based on host competition experiments (Figure 3d) with statistical testing showing that malT\u2212 fitness advantage depends on \u03bb genotype. This demonstrates reciprocal effects where \u03bb evolution promotes host resistance evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "ebc29182-eeb3-4f26-9060-e155ccf844fa",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "When coevolution was initiated with malT\u2212 host, 0 of 12 replicates evolved OmpF+ compared to 3 of 12 with ancestral host, and fewer J mutations evolved with malT\u2212 despite equal time, with probability ~0.03 of observing zero OmpF+ by chance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 and C29 report experimental replay results with appropriate statistical reasoning (binomial probability calculation). The result demonstrates that disrupting the normal coevolutionary sequence by starting with resistant host prevents innovation, supporting the landscape deformation hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "b0fab67f-f582-48b4-ae6e-f81ff409e75e",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "When replay experiments were initiated with \u03bb strains one or two mutations away from OmpF+ function, 16 of 24 populations evolved OmpF+, showing that malT\u2212 can promote innovation depending on \u03bb's position in the fitness landscape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 is based on experimental replays with partially evolved \u03bb strains. The high success rate (16/24) contrasts with the failure when starting with wildtype \u03bb (0/12, C20), demonstrating contingency on prior evolutionary steps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "15b2b0a3-e7e8-4c55-ba33-093ac002cc65",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "\u03bb initially evolves mutations enhancing infectivity, which applies pressure on E. coli to evolve resistance, after which \u03bb's fitness landscape is deformed to promote OmpF evolution (but only if \u03bb had already acquired some J mutations), with timing coordinated by coevolutionary reciprocity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 synthesize results from phylogenetic reconstruction (C46, C75), competition experiments (C15-C16, C18-C19), and replay experiments (C20-C23) into a coherent model. The inference is well-supported by converging lines of evidence demonstrating the sequential, interdependent nature of coevolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "779ed9ec-d6fb-45b1-9834-3c25765d674f",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Population D7 was chosen for detailed phylogenetic analysis because \u03bb evolved relatively few mutations; 66 phages were isolated and sequenced, revealing that J evolved within a day while malT\u2212 mutations fixed between 5-8 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 and C75 describe the experimental approach and temporal dynamics. The timing data (C46-C47) challenges the previous model where host resistance was thought to evolve first, providing key evidence for the revised coevolutionary model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "0a9b87ce-7e2f-4387-bf54-d64091ca3cb1",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study provides direct experimental evidence that fluctuating fitness landscapes promote evolutionary innovations through complex genetic interactions, resulting in highly contingent yet repeatable evolution coordinated by coevolutionary feedback, demonstrating how high-throughput technologies can untangle and predict coevolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 and C54-C56 represent the main conclusions synthesizing all experimental and computational results. The evidence from fitness landscapes (C5-C6, C9-C10), simulations (C13-C14), competition experiments (C15-C16, C18-C19), and replays (C20-C23) collectively support these broad conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "e26c5762-1427-4ff6-ab44-08277adc8422",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The genotype and timing of host-parasite encounters determine evolutionary outcomes: if the host outpaces the parasite, innovation fails, but when complementary genotypes meet at appropriate coevolutionary stages, innovation becomes highly likely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are inferences from the replay experiments (Figure 4) showing different outcomes depending on initial conditions. The experimental evidence directly demonstrates how starting genotypes and timing affect evolutionary trajectories and endpoints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "90d890a5-b461-46bc-b602-f6dd3a84404e",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The updated coevolutionary model revises the previous understanding: rather than \u03bb evolving OmpF use as a direct response to malT\u2212 resistance, \u03bb first evolves enhanced infectivity, which then promotes host resistance evolution, after which landscape deformation facilitates OmpF evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 contrast the previous model (Meyer et al., 2012) with the new model based on this study's findings. The revision is supported by temporal data (C46-C47), competition experiments (C15-C16, C18-C19), and the complete set of experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "6e7880b4-633d-44c6-a0fb-a494adc8a89d",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Theory suggests coevolution can promote innovations by deforming fitness landscapes, but this had not been directly tested before; the study provides evidence that natural coevolutionary processes can repeatedly drive viral host-range expansions, with implications for understanding pandemic risk and environmental change effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28 and C49 establish the theoretical background and knowledge gap. However, C52-C53 are speculative extrapolations to broader implications (pandemics, environmental change) that go beyond what the \u03bb-E. coli system can directly support. While the core finding is supported, the broader implications require additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "0492771f-34ba-45c8-825c-bb2902093bc4",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study used specific bacterial and phage strains with characterized mutations: cI26 \u03bb (strictly lytic), REL606 E. coli (ancestral), and EcC4/LR01 (malT\u2212 mutants), with OmpF+ requiring three specific mutations (A3034G, G3319A, T3321A) plus one additional mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 describe the biological materials and genetic requirements based on prior characterization (Meyer et al., 2012; Maddamsetti et al., 2018; Drake, 1991). These are well-documented facts about the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "63d1e5fd-3817-4b0b-affc-6baa3de13450",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Fitness measurements used a 1:9 ratio of library to ancestral \u03bb in 4-hour competitions, yielding an average of 107,839 high-quality reads per sample, with no amplification bias detected and uniform variance across fitness values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C65-C67 describe the experimental protocol and quality control measures. The lack of amplification bias (Figure 1\u2014figure supplement 2) and uniform variance (Figure 1\u2014figure supplement 4) validate the fitness measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "32245091-4ece-443b-b395-9a9a886a00a9",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Simulations used 960 generations, population size ~6.3\u00d710^9, detection threshold of 5000 \u03bb particles, with missing fitness values imputed from nearest neighbors, running 300 trials per treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C72-C73 describe simulation parameters based on experimental estimates and detection limits. The authors acknowledge the generation number is somewhat arbitrary but conservative (likely an overestimate), which strengthens rather than weakens the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "613f5ad8-d300-4500-94fd-59c49fe23e47",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Competition and replay experiments used appropriate protocols: phage competitions ran 24 hours, host competitions 4 hours (to prevent \u03bb evolution), replays ran 31 days with 12 replicates per treatment, with detection limit ~500 pfu/ml, and lacZ\u03b1 marker having slight but non-significant fitness effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C76-C81 describe experimental protocols with appropriate controls and justifications. The short duration of host competitions (C78) prevents confounding evolution, and the marker effect (C48) is acknowledged but deemed negligible given large fitness differences observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "53317aae-5bdf-476f-988f-0f1ff14304e5",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Statistical analyses used Benjamini-Hochberg procedure to control false discovery rates and AIC for model selection, resulting in a reduced model with 77 of 111 terms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 describe appropriate statistical methods for multiple testing correction and model selection. The use of both AIC and adjusted R-squared (mentioned in text) provides robust model validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    },
+    {
+      "id": "c6a79d59-140d-4ccb-992f-8e09387a567e",
+      "content_id": "08db9a9a-81cb-46c5-9a6a-515111377aa3",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Amplicon sequencing data have been deposited in NCBI Sequence Read Archive under BioProject PRJNA646809.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 states data availability, which is verifiable and supports reproducibility of the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:09:09.007760Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "80c8aa06-d564-4eb8-af17-3228be08b94f",
+      "result_id": "027c4261-a491-46ce-a1f2-f68c41ae971f"
+    },
+    {
+      "claim_id": "74fa3652-7ee5-4451-b466-7a0433a6652b",
+      "result_id": "027c4261-a491-46ce-a1f2-f68c41ae971f"
+    },
+    {
+      "claim_id": "582637e1-07aa-4a91-bc6c-5330cf115a0c",
+      "result_id": "027c4261-a491-46ce-a1f2-f68c41ae971f"
+    },
+    {
+      "claim_id": "bc30f4f9-0ebc-4c86-a882-ed3ff7003fad",
+      "result_id": "027c4261-a491-46ce-a1f2-f68c41ae971f"
+    },
+    {
+      "claim_id": "071d9f13-d7e0-463c-8771-34874e14524e",
+      "result_id": "09209888-21aa-416a-8a88-429615953266"
+    },
+    {
+      "claim_id": "0e306335-2ff1-4dcb-b2cc-756265e80af8",
+      "result_id": "09209888-21aa-416a-8a88-429615953266"
+    },
+    {
+      "claim_id": "3fbd69f9-aa8f-4113-a568-1c49b3a0c08b",
+      "result_id": "3ac0a098-3207-4e49-9a6e-c0dc16cfda70"
+    },
+    {
+      "claim_id": "831372a4-0f5a-4626-96f5-d565829d8779",
+      "result_id": "3ac0a098-3207-4e49-9a6e-c0dc16cfda70"
+    },
+    {
+      "claim_id": "c22eb1c5-1a31-45f7-a1a0-c304285c70b8",
+      "result_id": "7880345b-44c7-428d-b1e2-d20b5d35eab0"
+    },
+    {
+      "claim_id": "38942cb1-fc28-49d4-8ffa-b3e954afe6fd",
+      "result_id": "7880345b-44c7-428d-b1e2-d20b5d35eab0"
+    },
+    {
+      "claim_id": "3a05564b-4699-4f73-a692-91000f4fa131",
+      "result_id": "7880345b-44c7-428d-b1e2-d20b5d35eab0"
+    },
+    {
+      "claim_id": "5456763a-7965-4d1b-bfb9-5c405c49988f",
+      "result_id": "7880345b-44c7-428d-b1e2-d20b5d35eab0"
+    },
+    {
+      "claim_id": "3256f004-793b-40bf-a0f4-f8684b7ac499",
+      "result_id": "7880345b-44c7-428d-b1e2-d20b5d35eab0"
+    },
+    {
+      "claim_id": "ffb7a36d-e40a-4557-9c91-eabc92381275",
+      "result_id": "7880345b-44c7-428d-b1e2-d20b5d35eab0"
+    },
+    {
+      "claim_id": "b5d057fd-68dc-4ae7-bf78-d902f8e5f7be",
+      "result_id": "7880345b-44c7-428d-b1e2-d20b5d35eab0"
+    },
+    {
+      "claim_id": "ac030531-fffd-48d4-b20a-33cb42c75a65",
+      "result_id": "82fe4ebd-1270-4469-99e3-b09c558e6d21"
+    },
+    {
+      "claim_id": "eb82cd9c-f4c1-412c-93b4-5010814f36ac",
+      "result_id": "82fe4ebd-1270-4469-99e3-b09c558e6d21"
+    },
+    {
+      "claim_id": "5ccc5c2b-9e3b-4719-95cd-fd566c05483a",
+      "result_id": "685abf3c-e5c5-4f6f-9034-7e9ee3f87635"
+    },
+    {
+      "claim_id": "79813cd6-8cca-4e8f-937a-e0002c522ebd",
+      "result_id": "685abf3c-e5c5-4f6f-9034-7e9ee3f87635"
+    },
+    {
+      "claim_id": "031b82f2-d23f-489c-b845-d6972f1e6df1",
+      "result_id": "27e13f28-b9ad-4320-81c3-14cafbcfc3a1"
+    },
+    {
+      "claim_id": "d598a579-3a30-49f2-b633-f5ba9b2614cd",
+      "result_id": "27e13f28-b9ad-4320-81c3-14cafbcfc3a1"
+    },
+    {
+      "claim_id": "8c890622-02b2-4b7c-bc6e-bed1bbe3a440",
+      "result_id": "ebc29182-eeb3-4f26-9060-e155ccf844fa"
+    },
+    {
+      "claim_id": "66b65952-f3d8-4317-b656-a130c671362c",
+      "result_id": "ebc29182-eeb3-4f26-9060-e155ccf844fa"
+    },
+    {
+      "claim_id": "f8cb9450-9936-4665-a06d-80b0ec04b5ec",
+      "result_id": "ebc29182-eeb3-4f26-9060-e155ccf844fa"
+    },
+    {
+      "claim_id": "3486126f-d331-49af-8af9-35d7813266d7",
+      "result_id": "ebc29182-eeb3-4f26-9060-e155ccf844fa"
+    },
+    {
+      "claim_id": "1bf39232-5788-4aaa-ad39-bc06b17a3c79",
+      "result_id": "b0fab67f-f582-48b4-ae6e-f81ff409e75e"
+    },
+    {
+      "claim_id": "b0097f04-72d7-46d8-93cf-5282754d6696",
+      "result_id": "15b2b0a3-e7e8-4c55-ba33-093ac002cc65"
+    },
+    {
+      "claim_id": "4c5373fe-c030-4aa7-87a2-e1a5edaab356",
+      "result_id": "15b2b0a3-e7e8-4c55-ba33-093ac002cc65"
+    },
+    {
+      "claim_id": "332191e6-95df-4909-b004-b07780fda4ca",
+      "result_id": "15b2b0a3-e7e8-4c55-ba33-093ac002cc65"
+    },
+    {
+      "claim_id": "2a7385f6-1580-4591-849d-f4836b40e717",
+      "result_id": "15b2b0a3-e7e8-4c55-ba33-093ac002cc65"
+    },
+    {
+      "claim_id": "42db25be-8104-4fb8-85de-98b44f56683e",
+      "result_id": "779ed9ec-d6fb-45b1-9834-3c25765d674f"
+    },
+    {
+      "claim_id": "b43e6941-cd73-44f0-ae26-bc7a3aaaf362",
+      "result_id": "779ed9ec-d6fb-45b1-9834-3c25765d674f"
+    },
+    {
+      "claim_id": "cda6e662-b098-4422-b41f-f6282ab072d8",
+      "result_id": "779ed9ec-d6fb-45b1-9834-3c25765d674f"
+    },
+    {
+      "claim_id": "183e1836-817d-4e6a-89c8-b833a1d1be04",
+      "result_id": "779ed9ec-d6fb-45b1-9834-3c25765d674f"
+    },
+    {
+      "claim_id": "dd566a09-f18f-46e0-9855-dda03dde9697",
+      "result_id": "0a9b87ce-7e2f-4387-bf54-d64091ca3cb1"
+    },
+    {
+      "claim_id": "837ff001-2628-4c09-98c2-d19972ce8f3a",
+      "result_id": "0a9b87ce-7e2f-4387-bf54-d64091ca3cb1"
+    },
+    {
+      "claim_id": "dc2b7460-087b-425c-b328-dff157f0cb8f",
+      "result_id": "0a9b87ce-7e2f-4387-bf54-d64091ca3cb1"
+    },
+    {
+      "claim_id": "3ad06295-c280-4f24-884c-92901a4c63c8",
+      "result_id": "0a9b87ce-7e2f-4387-bf54-d64091ca3cb1"
+    },
+    {
+      "claim_id": "4547a3e8-dc75-49d6-8521-fb821021b5ea",
+      "result_id": "0a9b87ce-7e2f-4387-bf54-d64091ca3cb1"
+    },
+    {
+      "claim_id": "32eb8f7a-b795-4df5-b4e0-d5cef85ba286",
+      "result_id": "e26c5762-1427-4ff6-ab44-08277adc8422"
+    },
+    {
+      "claim_id": "281239c0-2350-4ae5-b252-e742cb8bdfae",
+      "result_id": "e26c5762-1427-4ff6-ab44-08277adc8422"
+    },
+    {
+      "claim_id": "a7cd0295-bedd-4881-ac8e-a3a7639e5a96",
+      "result_id": "e26c5762-1427-4ff6-ab44-08277adc8422"
+    },
+    {
+      "claim_id": "7eb80ea5-fad7-4cb9-8d30-8c0fc54768fd",
+      "result_id": "90d890a5-b461-46bc-b602-f6dd3a84404e"
+    },
+    {
+      "claim_id": "8b0102bf-c49c-4952-9dee-086a2a8712e7",
+      "result_id": "90d890a5-b461-46bc-b602-f6dd3a84404e"
+    },
+    {
+      "claim_id": "3ec83bcc-533b-496f-996d-81b43272de20",
+      "result_id": "6e7880b4-633d-44c6-a0fb-a494adc8a89d"
+    },
+    {
+      "claim_id": "318943d2-d377-4eff-9145-d89bc8cebbeb",
+      "result_id": "6e7880b4-633d-44c6-a0fb-a494adc8a89d"
+    },
+    {
+      "claim_id": "5d696142-1946-4a9f-b319-870c36017e1d",
+      "result_id": "6e7880b4-633d-44c6-a0fb-a494adc8a89d"
+    },
+    {
+      "claim_id": "7d44e0da-97dc-4bbb-9228-e95df36ee446",
+      "result_id": "6e7880b4-633d-44c6-a0fb-a494adc8a89d"
+    },
+    {
+      "claim_id": "ea27fc35-5be3-49b6-9fa1-edca87594faf",
+      "result_id": "0492771f-34ba-45c8-825c-bb2902093bc4"
+    },
+    {
+      "claim_id": "e3f52160-7b7d-4345-8fbd-2d3e45446ce8",
+      "result_id": "0492771f-34ba-45c8-825c-bb2902093bc4"
+    },
+    {
+      "claim_id": "cce3bfaa-aab0-4e54-a1fa-9d2ca3913941",
+      "result_id": "0492771f-34ba-45c8-825c-bb2902093bc4"
+    },
+    {
+      "claim_id": "ba39af8c-1e16-4e77-a164-37d9127046af",
+      "result_id": "0492771f-34ba-45c8-825c-bb2902093bc4"
+    },
+    {
+      "claim_id": "566a72da-542d-4de4-b94b-3958dc2434e6",
+      "result_id": "0492771f-34ba-45c8-825c-bb2902093bc4"
+    },
+    {
+      "claim_id": "1ed66a6e-8b7d-4951-9090-d7005954f7ed",
+      "result_id": "0492771f-34ba-45c8-825c-bb2902093bc4"
+    },
+    {
+      "claim_id": "b7a2634d-7860-41c6-b785-9de38961ac34",
+      "result_id": "0492771f-34ba-45c8-825c-bb2902093bc4"
+    },
+    {
+      "claim_id": "1314ecb6-05ec-4c4c-9a62-582dd59370df",
+      "result_id": "63d1e5fd-3817-4b0b-affc-6baa3de13450"
+    },
+    {
+      "claim_id": "73215131-eb7e-4108-b640-a5461b8858e7",
+      "result_id": "63d1e5fd-3817-4b0b-affc-6baa3de13450"
+    },
+    {
+      "claim_id": "ca575cfb-9064-443a-bf7f-f1f2b60ab30a",
+      "result_id": "63d1e5fd-3817-4b0b-affc-6baa3de13450"
+    },
+    {
+      "claim_id": "ec43f7a6-9794-447b-90e4-c39c4ce51b37",
+      "result_id": "63d1e5fd-3817-4b0b-affc-6baa3de13450"
+    },
+    {
+      "claim_id": "f5259d77-b416-44db-8066-e96895ebb017",
+      "result_id": "63d1e5fd-3817-4b0b-affc-6baa3de13450"
+    },
+    {
+      "claim_id": "9ac1361a-b960-4973-b465-a9d5666be065",
+      "result_id": "63d1e5fd-3817-4b0b-affc-6baa3de13450"
+    },
+    {
+      "claim_id": "ce46decc-d4ad-4844-b553-1a3a02cd69f0",
+      "result_id": "32245091-4ece-443b-b395-9a9a886a00a9"
+    },
+    {
+      "claim_id": "7fe465ac-ffc9-4690-a900-2050deb01648",
+      "result_id": "32245091-4ece-443b-b395-9a9a886a00a9"
+    },
+    {
+      "claim_id": "7360a7d5-8008-443b-a3e6-cbdf2518b0a8",
+      "result_id": "32245091-4ece-443b-b395-9a9a886a00a9"
+    },
+    {
+      "claim_id": "b9a4e09f-fcee-4449-b133-f6990fa4eefe",
+      "result_id": "32245091-4ece-443b-b395-9a9a886a00a9"
+    },
+    {
+      "claim_id": "bb4ea97b-2b70-4e37-9ff6-82ece04deb91",
+      "result_id": "32245091-4ece-443b-b395-9a9a886a00a9"
+    },
+    {
+      "claim_id": "cd126603-912b-47a7-ae6b-831e55b57efc",
+      "result_id": "613f5ad8-d300-4500-94fd-59c49fe23e47"
+    },
+    {
+      "claim_id": "5f77e642-3803-40ba-9f18-e849852dbc3a",
+      "result_id": "613f5ad8-d300-4500-94fd-59c49fe23e47"
+    },
+    {
+      "claim_id": "097fe848-1206-4518-97b8-b9d83420542f",
+      "result_id": "613f5ad8-d300-4500-94fd-59c49fe23e47"
+    },
+    {
+      "claim_id": "2b84cf00-078b-4af2-9f71-9408f8669fe4",
+      "result_id": "613f5ad8-d300-4500-94fd-59c49fe23e47"
+    },
+    {
+      "claim_id": "0442bb0c-1ad9-4ab2-869b-f239021754b8",
+      "result_id": "613f5ad8-d300-4500-94fd-59c49fe23e47"
+    },
+    {
+      "claim_id": "2985f694-8aad-4124-b45c-bfd656e69077",
+      "result_id": "613f5ad8-d300-4500-94fd-59c49fe23e47"
+    },
+    {
+      "claim_id": "636f6c13-5fbc-4c4f-8824-f069dcb08a27",
+      "result_id": "613f5ad8-d300-4500-94fd-59c49fe23e47"
+    },
+    {
+      "claim_id": "55add91a-3484-4cd0-9996-fa3f6694f70d",
+      "result_id": "53317aae-5bdf-476f-988f-0f1ff14304e5"
+    },
+    {
+      "claim_id": "49303e60-80ae-4753-9c08-00ff80a79bbf",
+      "result_id": "53317aae-5bdf-476f-988f-0f1ff14304e5"
+    },
+    {
+      "claim_id": "53568bbf-fde6-4bf5-abb4-44cb92d9232d",
+      "result_id": "53317aae-5bdf-476f-988f-0f1ff14304e5"
+    },
+    {
+      "claim_id": "55289b05-30d8-4813-ad2c-85b0fe130f33",
+      "result_id": "c6a79d59-140d-4ccb-992f-8e09387a567e"
+    }
+  ],
+  "comparisons": []
+}

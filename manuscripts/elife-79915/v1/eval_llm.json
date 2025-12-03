@@ -1,0 +1,417 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes background knowledge about human thymidylate synthase (hTS), including its essential role in DNA replication, status as a cancer therapeutic target, homodimeric structure (72 kDa), and enzymatic function in the de novo thymidine synthesis pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C14-C16 represent well-established biochemical and structural knowledge about hTS and thymidylate synthases in general. These are appropriately cited background claims that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes that hTS displays half-the-sites activity and positive cooperativity in dUMP binding, indicating that intersubunit communication plays a major role in enzyme regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by appropriate citations to previous literature (C17, C18, C19) and represent established properties of hTS that motivate the current investigation into the mechanism of cooperativity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior work suggested that apo hTS exchanges between active and inactive conformations, with the inactive conformation reported to be predominant based on fluorescence measurements and responsible for mRNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 accurately represent prior hypotheses and findings from the literature (appropriately cited). Notably, C23 is later contradicted by the current work (C88, C98), which is a key finding of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Global analysis of CPMG and CEST NMR data reveals that 10 probes in apo hTS undergo a concerted exchange process (240 \u00b1 7 s\u207b\u00b9, ~1.3% excited state population), with 8 showing 3-state exchange. These probes include residues in the active site loop (L187, L192) and extended loop (L101, L121, L131), regions that differ significantly between active and inactive crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C36 are well-supported by the CPMG and CEST experimental data (Figure 1, Figure 2, Supplementary files). The identification of specific residues involved in the concerted process and their structural locations is directly supported by the NMR analysis and comparison to crystal structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Upon dUMP binding, the slower concerted process is lost while faster motion persists. The chemical shift differences between apo (fast motion) and dUMP-bound states correlate significantly, suggesting similar configurations are accessed. This is consistent with the slower process being active-inactive exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by CPMG analysis of dUMP-bound hTS (Figure 2) and comparison to apo data. The correlation of chemical shifts (C39, Figure 2d) and the interpretation based on differential binding affinity (C41-C42, cited) provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Solvent PRE experiments reveal that many probes showing faster \u00b5s-ms motion have enhanced solvent exposure beyond what would be expected from their depth in the ground state structure, suggesting the faster motion involves localized excursions to 'exposed states'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by solvent PRE data (Figure 3) showing enhanced exposure for probes with faster motion. The interpretation as 'exposed states' (C45) is reasonable given the data, though it remains somewhat speculative about the exact nature of these states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C88",
+      "C98"
+    ],
+    "result": "RDC measurements demonstrate that the active conformation is the ground state of apo hTS (correlation coefficient 0.91 with active structure vs 0.68 with inactive), with the inactive conformation populated to only ~1.3%. This contradicts previous reports and indicates conformational selection contributes negligibly to binding cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C88, C98 are strongly supported by RDC data (Figure 4) showing excellent agreement with the active structure and poor agreement with the inactive structure. This is a key finding that refutes prior work (C23) and rules out conformational selection as the mechanism of cooperativity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Since apo active and dUMP-bound structures are very similar (RMSD = 0.84 \u00c5), there is no significant structural change upon dUMP binding, suggesting the origin of binding cooperativity is related to enzyme dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by structural comparison (cited RMSD value) and follow logically from the finding that the active conformation is the ground state. This sets up the investigation of dynamics as the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "Order parameter analysis from \u00b2H relaxation measurements shows an average increase of 0.027 \u00b1 0.006 upon dUMP binding, corresponding to a conformational entropy change of 10 \u00b1 3 kcal/mol\u2014about twice the 4.9 \u00b1 0.3 kcal/mol difference between the two binding events, suggesting this rigidification could explain the cooperativity if most occurs upon first binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C54, C55 are supported by \u00b2H relaxation data (Figure 5) and entropy meter calculations. The comparison to calorimetric data (C54, cited) provides important context. However, C55 is conditional ('if most...occurs upon first binding'), which has not been directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The most rigidified probes upon dUMP binding include L85, L88, L89, L121, V158, L192, L198, and L221, with much rigidification occurring around the mTHF binding site. There is considerable colocalization of probes rigidified on both \u00b5s-ms and ps-ns timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are directly supported by order parameter analysis (Figure 5) and comparison with CPMG data (Figure 6). The spatial distribution of rigidification is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "TMP binding to hTS is non-cooperative despite TMP differing from dUMP only by a methyl group. Chemical shift perturbations between TMP- and dUMP-bound forms are small and similar to those between dUMP-bound and apo forms, suggesting little structural change, though CSPs cluster at the dimer interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by NMR chemical shift analysis (Figure 7) and binding data (Appendix 1). The structural similarity (C62-C63) combined with non-cooperative binding (C61) provides an important control for the dynamics hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C92"
+    ],
+    "result": "TMP binding shows an average order parameter change of -0.006 \u00b1 0.006 (essentially no rigidification or slight increase in flexibility), lacking both binding cooperativity and the rigidification seen with dUMP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C92 are supported by \u00b2H relaxation measurements on hTS-TMP (Figure 5). This provides strong support for the correlation between rigidification and cooperativity by showing a non-cooperative case lacks rigidification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C93"
+    ],
+    "result": "\u039425 hTS (N-terminal truncation) binds dUMP non-cooperatively despite the N-terminus being absent in crystal structures. Chemical shifts show essentially no perturbation upon N-terminus removal, suggesting nearly identical structures, yet this truncation lacks both cooperativity and rigidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73, C93 are supported by binding data (Appendix 1), NMR spectra (Figure 7c), and dynamics measurements. This is a crucial control showing that a structurally similar variant lacking cooperativity also lacks rigidification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "\u039425 hTS binding dUMP shows only slight rigidification (average \u0394S\u00b2axis = 0.009 \u00b1 0.004, corresponding to 3 \u00b1 2 kcal/mol)\u2014less than 1/3 that of full-length hTS. The observed differences stem from the N-terminus' impact on the rest of the protein rather than the N-terminus itself, establishing a correlation between rigidification and cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by \u00b2H relaxation data on \u039425 hTS (Figure 5). The interpretation that differences arise from N-terminal effects on the rest of the protein (C77) is reasonable given that only one N-terminal residue (V3) is included in the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Thermodynamic cycle analysis reveals that the N-terminus has a larger impact on ps-ns dynamics of apo enzyme than dUMP-bound enzyme, suggesting N-terminal interactions with the protein surface are coupled to dUMP binding. These interactions make the apo enzyme more flexible and are responsible for the majority of the conformational entropy change upon binding (6 \u00b1 3 kcal/mol coupling vs 3 \u00b1 2 kcal/mol for truncated enzyme binding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 are supported by the thermodynamic cycle analysis (Figure 8) comparing full-length and \u039425 hTS in apo and dUMP-bound states. The logic of the thermodynamic cycle is sound, though the uncertainties are fairly large (acknowledged in C85). The conclusion that the flexible N-terminus enables rigidification (C87) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C96",
+      "C97",
+      "C122",
+      "C142"
+    ],
+    "result": "The intrinsically disordered N-terminus makes a key contribution to conformational entropy change upon dUMP binding via interactions with the protein surface that are perturbed by substrate binding. This represents a novel mechanism of dynamic allostery involving an unexpected role for a disordered region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C96-C97, C122, C142 represent the main mechanistic conclusion. This is well-supported by the combination of structural data (N-terminus absent in crystals), dynamics measurements (thermodynamic cycle), and comparison to known mechanisms (C120-C121). The novelty claim is justified given that previous disordered-region allostery involved folding upon binding, which is not the case here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C140"
+    ],
+    "result": "There is a correlation between hTS dynamics and binding thermodynamics, with differences in conformational entropy change upon each binding event being responsible for the observed cooperativity. The mechanism is primarily dynamic in nature rather than structural.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95, C140 represent the overarching conclusion about the mechanism of cooperativity. This is well-supported by the correlation between rigidification and cooperativity across multiple conditions (full-length dUMP, TMP, \u039425 dUMP), though direct measurement of the singly-bound state would strengthen this conclusion (acknowledged as future work).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Apo hTS undergoes faster, localized motion throughout much of the protein on the \u00b5s-ms timescale in addition to the active-inactive exchange. The sensitivity of MQ CPMG and CHD2 \u00b9\u00b3C CEST experiments enabled discrimination of 2- and 3-state exchange models. This faster motion likely contributes negligibly to cooperativity as it is present in both apo and dUMP-bound forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by CPMG/CEST data showing faster motions (Figure 2, Supplementary file 2). The conclusion that faster motion contributes negligibly to cooperativity (C104) is reasonable given its presence in both states, though this is somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Colocalization of regions with changes in \u00b5s-ms and ps-ns dynamics has been observed previously. Most probes involved in active-inactive switching are flexible on ps-ns timescale in apo hTS, but in \u039425 hTS (lacking active-inactive exchange), there is little change in order parameters of these residues, demonstrating that ps-ns motion alone is insufficient to produce slower concerted motions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by comparison of dynamics data (Figure 6, Figure 6\u2014figure supplement 2) and appropriate citations. The conclusion about ps-ns motion being insufficient (C110) is well-supported by the \u039425 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "hTS is exquisitely sensitive to the TMP methyl group in terms of dynamics. The rigidification of the folate binding helix upon dUMP binding may preorganize the mTHF binding site, while increased flexibility in the TMP-bound form may aid DHF release after the reaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 is supported by the dramatic difference in dynamics between dUMP and TMP binding despite minimal structural difference. However, C112 and C113 are speculative hypotheses about functional significance that lack direct experimental support, though they are reasonable interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The N-terminus is structurally poorly characterized (absent in crystal structures) but plays a role in enzymatic activity. NMR data show the N-terminus is highly flexible/disordered in both apo and dUMP-bound states with minimal perturbation upon dUMP binding and no increase in secondary structure propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 are supported by NMR measurements (Figure 8\u2014figure supplement 1) showing minimal chemical shift and relaxation changes in N-terminal residues upon dUMP binding. This characterization is important for interpreting the N-terminus' role in dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Three flexible insertions in hTS relative to E. coli TS (N-terminus, extended loop residues 115-126, second loop residues 146-153) are the only major structural differences between these highly conserved enzymes (55% identity). These regions are involved in active-inactive switching and their dynamics are coupled, with E. coli TS lacking both cooperativity and the inactive conformation. These insertions essentially introduce dUMP binding cooperativity into TS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C138 are supported by structural comparison, sequence analysis, and the dynamics data showing coupling of these regions. The conclusion that these insertions introduce cooperativity (C138) is well-supported by the comparison to E. coli TS, though it is somewhat simplified (as acknowledged).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The small population of the inactive conformation suggests it plays essentially no role in substrate binding thermodynamics/activity, with its only role possibly being to enable mRNA binding. Alternatively, the inactive population may be increased by post-translational modifications like phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is a reasonable inference from the low population (1.3%), but C100 and C101 are speculative. C100 is based on cited literature about mRNA binding but remains uncertain. C101 is pure speculation about potential regulation, though it cites relevant phosphorylation work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The observed rigidification may underestimate the true magnitude due to lack of probes within the dUMP binding site, which are likely also substantially rigidified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 is reasonable speculation based on the location of analyzed probes, but it remains speculative without direct measurements of probes within the binding site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "The entirety of rigidification of L192 and L221 is due to direct interactions between dUMP and hTS rather than N-terminal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is supported by the thermodynamic cycle analysis showing \u0394\u0394S\u00b2axis \u2248 0 for these probes, indicating no contribution from N-terminal coupling. These residues are near the substrate binding site, making this interpretation reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "Evolution may have utilized flexible insertions to introduce allosteric properties into other proteins as well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C139 is pure speculation about a general evolutionary mechanism based on the findings in hTS. While the idea is interesting, it lacks supporting evidence beyond this single system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "These results provide a rare depth of insight into the mechanism of substrate binding cooperativity in hTS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 is a summary statement that is justified given the comprehensive characterization of dynamics on multiple timescales, the use of multiple controls (TMP, \u039425), and the thermodynamic cycle analysis linking N-terminal dynamics to cooperativity.",
+    "result_type": "MINOR"
+  }
+]

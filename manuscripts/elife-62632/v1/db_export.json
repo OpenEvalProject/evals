@@ -1,0 +1,1771 @@
+{
+  "submission": {
+    "id": "63883fde-704a-4aed-9870-72f9005a8fa1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:05:29.310410Z",
+    "updated_at": "2025-12-03T03:05:29.310410Z"
+  },
+  "content": [
+    {
+      "id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "submission_id": "63883fde-704a-4aed-9870-72f9005a8fa1",
+      "content_type": "manuscript",
+      "content_text": "# Swarming bacteria undergo localized dynamic phase transition to form stress-induced biofilms\n\n## Authors\n\n- Iago Grobas<sup>1</sup> ([ORCID: 0000-0003-3609-8081](https://orcid.org/0000-0003-3609-8081))\n- Marco Polin<sup>1</sup> ([ORCID: 0000-0002-0623-3046](https://orcid.org/0000-0002-0623-3046)) \u2020\n- Munehiro Asally<sup>5</sup> ([ORCID: 0000-0002-8273-7617](https://orcid.org/0000-0002-8273-7617)) \u2020\n\n### Affiliations\n\n1. Warwick Medical School, Universityof Warwick Coventry United Kingdom\n2. Centre for Mechanochemical Cell Biology, University of Warwick Coventry United Kingdom\n3. Physics Department, University of Warwick Coventry United Kingdom\n4. Mediterranean Institute for Advanced Studies (IMEDEA UIB-CSIC), C/ Miquel Marqu\u00e9s Balearic Islands Spain\n5. Bio-Electrical Engineering Innovation Hub, University of Warwick Coventry United Kingdom\n6. Warwick Integrative Synthetic Biology Centre, University of Warwick Coventry United Kingdom\n7. School of Life Sciences, University of Warwick Coventry United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nSelf-organized multicellular behaviors enable cells to adapt and tolerate stressors to a greater degree than isolated cells. However, whether and how cellular communities alter their collective behaviors adaptively upon exposure to stress is largely unclear. Here, we investigate this question using Bacillus subtilis, a model system for bacterial multicellularity. We discover that, upon exposure to a spatial gradient of kanamycin, swarming bacteria activate matrix genes and transit to biofilms. The initial stage of this transition is underpinned by a stress-induced multilayer formation, emerging from a biophysical mechanism reminiscent of motility-induced phase separation (MIPS). The physical nature of the process suggests that stressors which suppress the expansion of swarms would induce biofilm formation. Indeed, a simple physical barrier also induces a swarm-to-biofilm transition. Based on the gained insight, we propose a strategy of antibiotic treatment to inhibit the transition from swarms to biofilms by targeting the localized phase transition.\n\n## Introduction\n\nThe ability to sense, respond, and adapt to varieties of chemical, physical, and environmental stresses is fundamental to the survival of organisms. In addition to general stress-response pathways at individual cell level, which activate target genes in response to a variety of stresses, multicellular systems can tolerate stresses through self-organization, the emergence of order in space and time resulting from local interactions between individual cells (Ben-Jacob et al., 2000; Kirschner et al., 2000; Schweisguth and Corson, 2019). Bacterial biofilm formation and swarming are ancient forms of multicellular adaptation (de la Fuente-N\u00fa\u00f1ez et al., 2013; Lyons and Kolter, 2015), where cells can coordinate their behaviors through chemical (Daniels et al., 2004; Xavier, 2011), mechanical (Grobas et al., 2020; Be'er and Ariel, 2019; Mazza, 2016), and bioelectrical (Benarroch and Asally, 2020; Prindle et al., 2015) interactions. Biofilm cells are much more tolerant to various stresses than genetically identical cells in isolation (Meredith et al., 2015), owing to the physicochemical properties of extracellular polysubstance (EPS) (Flemming and Wingender, 2010), metabolic coordination (Liu et al., 2015), slow cell growth (Costerton et al., 1999), and in the case of air-exposed biofilms, diffusion barrier by the archetypical wrinkled morphology (Epstein et al., 2011; Vlamakis et al., 2013).\n\nSwarming bacteria can also collectively tolerate antibiotic treatments that are lethal to planktonic cells \u2013\u00a0albeit only to a lesser degree than biofilms\u00a0\u2013 through motility-induced mixing and reduced small-molecule\u00a0absorption (Bhattacharyya et al., 2020; Butler et al., 2010; Lai et al., 2009). As a rapid mode of surface colonization (Kearns, 2010), a swarm\u2019s ability to withstand high antibiotic concentrations could therefore lead to the subsequent establishment of highly resilient biofilms in regions that could not have been reached otherwise. The formation of biofilms is linked to general stress response pathways (Lories et al., 2020; Nadezhdin et al., 2020); it has been reported that biofilms can be induced from free-swimming planktonic cells by a wide range of biochemical and mechanical stressors, such as aminoglycoside antibiotics (Hoffman et al., 2005; Jones et al., 2013), redox-active compounds (Wang et al., 2011), nutrient depletion (Zhang et al., 2014), and mechanical stress (Chu et al., 2018). However, whether swarming collectives may also transit into more resilient biofilms upon exposure to stressors, and -if so- how such a transition can be initiated within a self-organized swarm, are unknown.\n\nBiophysics of collective motion in bacteria, such as flocking and swarming, is a major topic within the rapidly growing research area of active matter (Bechinger et al., 2016; Geyer et al., 2019; Vicsek et al., 1995). Theoretical models of active matter have repeatedly predicted that at a sufficient concentration, a collection of motile particles, be it swimming cells or self-propelled artificial microswimmers, can spontaneously form high-density clusters (Barr\u00e9 et al., 2015; Gonnella et al., 2015). Indeed, this process has been implicated in the development of cell inhomogeneities leading to fruiting-body formation in M. xanthus (Liu et al., 2019). This transition, known as Motility Induced Phase Separation (MIPS), is based on feedback between the localized decrease in particles\u2019 speed at high concentration, caused by physical interactions, and the spontaneous accumulation of active particles in the clusters where their speed is lower (Gonnella et al., 2015). When the particles\u2019 speed is sufficiently high and their concentration is in the appropriate range (typical volume fractions of 0.3\u20130.8 or 0.6\u20130.7 for round or rod-shaped particles, respectively [Digregorio et al., 2018; van Damme et al., 2019]), inherent density fluctuations are amplified by the particles\u2019 slowing down, and the system effectively phase separates into high-density/low-motility clusters surrounded by a low-density/high-motility phase (Cates and Tailleur, 2015).\n\nThe theory of MIPS, then, suggests that persistent heterogeneity in cell density \u2013\u00a0the MIPS clusters\u00a0\u2013 can develop spontaneously when both cell speed and density are appropriate (Figure 1, gray U-shape region) (Cates et al., 2010). Such conditions should be achievable within a bacterial swarm. Given that cell-density heterogeneity can lead to the production of matrix and biofilm formation mediated by localized cell death (Asally et al., 2012; Ghosh et al., 2013), we hypothesized that the heterogeneity caused by putative MIPS-like clusters could in turn underpin a transition from bacterial swarms into biofilms (Figure 1). As MIPS-like clustering is an emergent phenomenon arising from physical interactions between individual agents, it may endow swarms with a collective response to a wide spectrum of stressors that cause changes in cell motility and/or density.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig1-v1.jpg)\n\n**Figure 1.:** B. subtilis cells swarm in a monolayer (stage 1). As cell density increases, cells form fast-moving rafts which can collide and form transient jams. Cells at the boundary between the colliding rafts are pushed upwards and protrude from the surrounding monolayer (stage 2). Further increase in surface coverage can promote the formation of dynamic MIPS-like islands where cells accumulate within the swarm while still being dynamic (stage 3). Eventually, this uneven distribution of cells gives rise to macroscopic spatial heterogeneity in cell density (stage 4), which can lead to the formation of biofilms (stage 5).\n\nHere, we show that Bacillus subtilis swarms can indeed transit into biofilms through a MIPS-like process, induced by physical or chemical stresses applied at the swarming front. When swarming cells are exposed to kanamycin, they activate the expression of the biofilm matrix operon, tapA-sipW-tasA, and eventually develop wrinkled biofilms. The transition is\u00a0initiated by a localized phase transition, where the expanding swarming monolayer generates multilayer clusters of cells as a consequence of motility- and stress-induced elevation of cell density. Based on the insights gained from our investigation, we show that targeting the multilayered region by administering a given amount of antibiotic in two separate doses is effective in inhibiting the formation of wrinkly biofilms from swarming cells.\n\n## Results\n\n### Swarming B. subtilis transits into a biofilm in presence of a spatial kanamycin gradient\n\nTo examine if a stressor triggers biofilm formation from a swarming collective, we performed swarming assays using B. subtilis with a spatial gradient of the aminoglycoside kanamycin. Specifically, a disk containing 30 \u03bcg of kanamycin was placed on the side of a swarming plate (0.5% agar) and allowed to rest for 24 hr to establish a space-dependent antibiotic concentration profile (Figure 2a and Figure 2\u2014figure supplement 1). An inoculum of B. subtilis culture was then placed at the center of the dish,\u00a0~4 cm away from the kanamycin source, and the plate was imaged while being kept at 30\u00b0C (Figure 2a). After\u00a0~2 hr of lag period, the cells formed a rapidly expanding swarming front (~4 mm/hr), which became progressively slower towards the source of kanamycin until it completely stopped\u00a0~0.3 cm away from the disk (Figure 2\u2014figure supplement 2 and Video 1). After further incubation at 30\u00b0C for 36 hr, the colony developed prominent wrinkles, the morphological hallmark of B. subtilis pellicles and colony biofilms (Cairns et al., 2014; Vlamakis et al., 2013), across a\u00a0~\u00a03 mm band\u00a0~1.3 cm away from the kanamycin disk (Figure 2b). The estimated level of kanamycin at the site was around the minimum inhibitory concentration (MIC) of planktonic cells (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig2-v1.jpg)\n\n**Figure 2.:** (a) Schematics of swarming bacteria expanding from the center of a 9-cm Petri dish toward a kanamycin-diffusive disk. Kanamycin disk was placed for 24 hr to form a spatial gradient (Figure 2\u2014figure supplement 1). (b, c, d) Swarming B. subtilis plates after 40\u00a0hr incubation. Wrinkles are formed at the region ~2 cm away from disk with (b) wildtype (WT), but not with (c) \u0394eps deletion strain. (d) WT swarming plate with a diffusive disk without antibiotics. Zoomed images show the colony surface. (e) Mean fluorescence intensity of PtapA-yfp was measured in the region just after the depletion zone created by the kanamycin-diffusive disk (green). A region in a similar location was measured in absence of kanamycin (yellow). The mean was taken from three independent experiments. The shady areas represent the s.e.m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The initial profile was made by placing a kanamycin-diffusive disk for 24 hr on the swarming agar plate. At this point, bacteria were inoculated in the center of the plate (t = 0 hr). The kanamycin concentration was measured again 20 and 44 hr later to check the evolution of the gradient with time. The MIC for B. subtilis (5 \u00b5g/ml) has been indicated with a dotted line. Data indicate the mean and s.e.m. of three independent replicates.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** In presence of antibiotic the front speed rapidly decays\u00a0and then halts completely before it reaches the disk. When a blank disk is placed the swarm invades the whole plate and no decay in speed is observed (green curve). The position which corresponds to the MIC (dotted line) was calculated by looking at the position of the MIC line in Figure 2\u2014figure supplement 1 for t\u00a0=\u00a00 hr.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Scatter plot of the wavelength of the wrinkles near the kanamycin disk (front), in the bulk of the plate (back) and in absence of kanamycin (blank). (b) Scatter plot of the roughness of the wrinkles in the same regions. The large horizontal line shows the mean of the distributions and the small bars the s.e.m.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The wrinkles appear further from the kanamycin disk with increasing concentration of the antibiotic. The data for 100 \u00b5g comes from three replicates in a single experiment. Data for 30 and 200 \u00b5g come at least from three different replicates.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig2-figsupp5-v1.jpg)\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** The colony spotted 2 cm away from kanamycin was inhibited and a wrinkly biofilm did not grow. Other two colonies on both sides were spotted so just part of the colony were affected by the kanamycin. Both of them showed partial inhibition of wrinkles in the sides closest to the kanamycin disk. The colony at the back in absence of antibiotic is a commonly wrinkly biofilm in LBGM.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** (a) Weak wrinkles appeared at the edges of the clearance zone made by kanamycin for the hard agar case in comparison to the swarming agar case. (b) In the blank disk case, there was a slight surface roughness and wrinkles were not formed in hard agar or weakly formed in swarming agar.\n\n![Video 1.](https://cdn.elifesciences.org/articles/62632/elife-62632-video1.mp4.jpg)\n\n**Video 1.:** Wild-type Bacillus subtilis was inoculated at the center of the plate. Eventually, bacteria at the swarming front halt due to the presence of the kanamycin-diffusive disk placed on a side of a 9-cm Petri Dish 24 hr prior\u00a0to inoculation. After the front stops, the swarm is still dynamic since multiple waves of swarming bacteria come from the center of the plate.\n\nTo quantify the degree of biofilm formation, we measured the characteristic wavelength and roughness of the wrinkles. In this study, the term biofilm is interpreted as wrinkly biofilm, and the wrinkles\u2019 wavelength is used as a convenient indirect quantification of biofilm formation since the wavelength has been reported to correlate with biofilm stiffness and extracellular matrix (Asally et al., 2012; Kesel et al., 2016; Yan et al., 2019). More specifically, the wavelength is smaller in colonies of matrix mutants and greater in hyper biofilm-forming mutants. The wrinkles appearing near the kanamycin disk had a wavelength of \u03bb\u00a0=\u00a0560 \u03bcm and roughness r\u00a0=\u00a010, indicating a much stiffer biofilm than the case without kanamycin, which only produced a faint small-wavelength surface roughness (\u03bb\u00a0=\u00a091 \u03bcm, r\u00a0=\u00a05.5; Figure 2\u2014figure supplement 3).\n\nTo further verify the association of these wrinkles to biofilms, we repeated the assay using \u0394eps, a mutant known to be impaired in biofilm formation (Nagorska et al., 2010; Branda et al., 2001) but capable of swarming (Video 2), and confirmed no wrinkles with this mutant (Figure 2c). Furthermore, we measured the expression of tasA, which encodes an essential matrix component for B. subtilis biofilm formation (Romero et al., 2010), using a strain carrying PtapA-yfp, a fluorescence reporter for the expression of the tapA-sipW-tasA operon (Vlamakis et al., 2008). The result showed a greater fluorescence signal from the promoter reporter when swarming cells were exposed to kanamycin (Figure 2e), suggesting that the exposure to kanamycin results in higher abundance in extracellular matrix and induces biofilm formation in a swarming colony on a soft-agar plate.\n\n![Video 2.](https://cdn.elifesciences.org/articles/62632/elife-62632-video2.mp4.jpg)\n\n**Video 2.:** Eventually, bacteria at the swarming front halt due to the presence of the kanamycin diffusive disk placed on a side of a 9 cm Petri dish 24 hr before inoculation.\n\nThe emergence of wrinkles across a\u00a0~\u00a03 mm-band away from kanamycin suggests that the swarm-to-biofilm transition corresponds to exposure to a certain concentration range of kanamycin. Indeed, increasing the initial concentration of antibiotic in the disk, wrinkles emerged further away from the disk (Figure 2\u2014figure supplement 4), while a disk without antibiotic did not promote wrinkle formation (Figure 2d and Figure 2\u2014figure supplement 5). Intriguingly, spotting individual colonies on hard agar plates (1.5%) typically used for biofilm colony assays, showed that kanamycin inhibited biofilm formation (Figure 2\u2014figure supplement 6). When cells were instead uniformly spread across the hard agar plate at concentrations similar to those of a swarming monolayer, the system developed only faint wrinkles around the antibiotic exclusion zone (Figure 2\u2014figure supplement 7). The fact that a kanamycin gradient promotes wrinkle formation significantly more in a swarming colony than a non-motile culture, pointed to a fundamental role played by cell motility and suggested the need to investigate the swarming dynamics in detail.\n\n### The emergence of the biofilm is templated by a localized\u00a0transition from mono- to multilayers at the\u00a0swarming front\n\nTo investigate the potential link between swarming dynamics and biofilm formation, we characterized the swarming dynamics at the single-cell level, with and without a kanamycin gradient. We combined time-lapse imaging at both microscopic (10\u00d7; 30 fps) and macroscopic (2\u00d7; 0.006 fps) scales to capture both swarming, which is microscopic and fast (~70 \u03bcm2 cell rafts; speed\u00a0~60 \u03bcm/s), and biofilm formation, which occurs at a macroscopic scale over hours to days. For the microscopic imaging, we focused on the cells at\u00a0~1 cm from the kanamycin disk, where wrinkles eventually appear and kanamycin level is around MIC for planktonic cells (Figure 2\u2014figure supplement 1). The cells displayed typical swarming dynamics during the expansion of the colony front (Figure 3a). As time progressed, we observed the local surface coverage of the monolayer swarm to progressively increase from initial values of\u00a0~20% to \u227360%, at which point the swarming rafts started displaying jamming events lasting\u00a0~1\u20132 s, during which cell speed was strongly reduced and groups of cells protruded temporarily from the swarming monolayer (typical size of jammed group\u00a0~500 \u00b5m2, see Video 3). Interestingly, in this area we did not observe a significant fraction of immotile cells, as previously reported for swarming in presence of a uniform concentration of kanamycin (Benisty et al., 2015).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig3-v1.jpg)\n\n**Figure 3.:** (a, b, c) Microscopy images of swarming bacteria and side-view illustrations at different levels of cell density ($\u03c1$). Timestamp is relative to the formation of dynamic multilayer islands. (a) When cell density is below a threshold $\u03c1_{c}$, cells swarm in a monolayer. Image is 57 min prior to islands formation. Inset is a zoomed image showing swarming rafts. (b) Increase in cell density leads to formation of second layers, that appear as darker regions in the swarm. These islands are highly dynamic, and cells are motile. The shape of the islands changes dynamically within 1 s (insert). See also Video 4. (c) Over time, the islands increase their size and merge together to form\u00a0double-layered regions, coexisting with mono-layered regions. Double-layered regions are seen darker than mono layered regions. (d, e) Images of swarming colony with and without kanamycin. The\u00a0diagram illustrates the regions of interest (ROI) used for\u00a0the panels. The dynamics of island formation are color coded using the lookup table. The origin of times is the appearance of island. The earliest islands correspond to the darkest colors whereas the new features correspond to the lightest ones. See also Video 6. (d) In the absence of kanamycin, multilayer regions are much grainer with no clear patterns of propagation. (e) In the presence of kanamycin, multilayered regions have a defined pattern, starting from the regions closer to kanamycin to form an elongated shape. These regions appear predominantly at ~7 mm away from kanamycin.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** For reference, in our kanamycin experiments the islands form within a band that goes from\u00a0~1.7 cm from the disk to just before the region where cells are immotile.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The average cell speed of the swarm was measured by PIV for three different multi-layered regions and for the monolayer surrounding them. The speed in the monolayer is almost double the multilayer case. Data comes from a single replicate.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The multilayer starts 0.7 cm away from the kanamycin disk. The formation of these islands marks where the multilayer first develops. Here, the number of layers continuously increases but it does not spread towards the center of the swarm giving rise to a gap in cell density between the swarming front and the center. The number of layers were measured by the number of times that a darker layer could be observed in the field of view. The origin of times is when the first island is seen in the field of view. Data taken from a single replicate.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** For both mutants the islands and the wrinkles were formed as in WT. The smaller clearance zone around kanamycin in the $\u0394$phrc case is due to its genetic resistance to neomycin.\n\n![Video 3.](https://cdn.elifesciences.org/articles/62632/elife-62632-video3.mp4.jpg)\n\n**Video 3.:** The speed plot shows the average speed in the field of view and the blue shade represents s.e.m. The vertical line in the graph indicates the frame of the time-lapse in which the average speed was calculated. It can be observed that the jam makes the overall speed to drop by half of the initial magnitude.\n\nThe jamming of aligned rafts has been predicted numerically for elongated self-propelled particles on a plane (Peruani et al., 2011; Weitz et al., 2015), although in that case the planar confinement precluded any possible excursion in the third dimension. With a slight further increase in local cell density, the temporary jams led to permanent isolated multilayered regions, which we call \u2018islands\u2019, typically\u00a0~27,000 \u03bcm2 in size and with constantly fluctuating boundaries (Figure 3b inset, Video 4). The islands did not appear to be related to any evident inhomogeneity of the underlying agar. Consistent with a previous study reporting the reduction in speed by kanamycin (Benisty et al., 2015), we observed the speed declined before island formation (Figure 3\u2014figure supplement 1). Within islands, cells were highly dynamic and appeared to meander across the layers albeit at a reduced speed (Figure 3\u2014figure supplement 2, Video 5). Cell movement within islands highlights the fact that these are formed by actively motile cells, rather than groups of immotile bacteria which spontaneously separate from the monolayer. In particular, we did not find any evidence for clusters of immotile cells templating the islands. Rather, motile cells were constantly exchanged between the multilayer and the surrounding monolayer. Following a continuous increase in cell density with time, islands grew in size and merged with each other, eventually forming a much larger multilayered region (Figure 3c, Video 6). The nucleation and merging of islands were observed up to four layers before we lost the ability to recognize further transitions due to a flattening of the image contrast (Figure 3\u2014figure supplement 3).\n\n![Video 4.](https://cdn.elifesciences.org/articles/62632/elife-62632-video4.mp4.jpg)\n\n**Video 4.:** The left panel shows swarming bacteria continuously jamming. The jams look like dark localized small regions in the field of view which continuously appear and disappear. The right panel shows the same scenario 10 min later, when the islands become more stable. Islands look like extended dark regions in the field of view which are highly dynamic and with highly fluctuating boundaries.\n\n![Video 5.](https://cdn.elifesciences.org/articles/62632/elife-62632-video5.mp4.jpg)\n\n**Video 5.:** The boundaries of the island continuously exchange cells with the monolayer surrounding it. Within the island, cell appear to meander across the layers.\n\n![Video 6.](https://cdn.elifesciences.org/articles/62632/elife-62632-video6.mp4.jpg)\n\n**Video 6.:** The multilayer starts forming in the region near the disk where multiple islands appear. The islands become very elongated at the front and they grow in size until they merge. The nucleation and merging of islands were observed up to four layers before we lost the ability to recognize further transitions due to a flattening of the image contrast. In the opposite side of the plate, away from kanamycin, the islands appear and merge homogeneously in the whole region.\n\nThe formation of islands was also observed by macroscopic time-lapse imaging. In absence of kanamycin, islands emerged simultaneously throughout the plate, forming an intricate granular pattern with a typical size of\u00a0~2000 \u00b5m2 (Figure 3d), a phenomenology reminiscent of spinodal decomposition in binary fluids (Qiu et al., 2001). In contrast, the process of islands formation and growth was markedly different in presence of kanamycin (Figure 3e). After the swarming front expansion was stopped due to inhibition by the antibiotic, well-defined, distinct islands first emerged within a\u00a0~\u00a05 mm-wide band just inside of the arrested swarming front, and then grew with a strongly anisotropic pattern oriented transversally to the front of the swarm (Video 6). This phenomenology is reminiscent of a binodal \u2013\u00a0rather than spinodal\u00a0\u2013 liquid-liquid phase separation in a temperature gradient (Bartolini et al., 2019) which here might reflect a kanamycin-induced speed gradient. The resulting macroscopic cell-density heterogeneity was followed by the subsequent formation of biofilm wrinkles,\u00a0~1 cm away from the disk (Figure 2b).\n\nSince quorum sensing is often associated with bacterial collective behavior, we wondered if quorum sensing may play a role in the emergence of islands and the ensuing multilayer. We therefore repeated the experiments with \u0394phrC and \u0394opp mutant strains, lacking the Phr quorum-sensing system in B. subtilis but still capable of swarming. In both cases, we observed the wild-type phenomenology of wrinkled biofilms and the emergence of islands (Figure 3\u2014figure supplement 4). The results indicated that this quorum-sensing system is not responsible for the multilayer transition, suggesting that exposure to kanamycin can promote cell-density heterogeneity by multilayer islands formation in a quorum-sensing independent manner.\n\n### Transition from monolayer to multilayer resembles motility induced phase separation\n\nTo address the mechanism of multilayer formation, we wondered if physical stresses may be responsible for this emergent collective behavior since single-to-multilayer transitions have been reported for confined bacterial aggregates, either growing or gliding, as a consequence of build-up of internal mechanical stresses (Takatori and Mandadapu, 2003; Grant et al., 2014; Su et al., 2012). In particular, we considered if the active matter model of MIPS for rod-shape particles (Cates and Tailleur, 2015) could act as a useful paradigm for understanding the emergence of multilayer regions. We therefore mapped our experimental results onto the typical phase space considered when studying MIPS transitions, where an active two-dimensional system is characterized by its surface coverage, \u03c6, and its rotational P\u00e9clet number, Per = u/LDr. The latter is defined in terms of the average speed u, characteristic size L, and rotational diffusivity Dr of the active particles. MIPS clusters are expected within a U-shaped region characterized by a sufficiently large Per and a range of surface coverages that, for rod-like particles like B. subtilis, is pushed to values higher than the\u00a0~50%, typical of circular particles, due to antagonistic effects of cell-to-cell alignment (Figure 4a, gray U-shape region shows the prediction for aspect ratio two from van Damme et al., 2019). We then quantified the cell density (surface coverage, \u03c6) and the rotational P\u00e9clet number from the different stages of the swarming process. Figure 4a shows these two quantities for cells in the monolayer (blue dots) and for bacterial jams (red dots). While bacteria in the monolayer corresponded overwhelmingly to points well outside the MIPS region (Figure 4a blue dots), bacterial jams \u2013\u00a0the first stage in the development of stable multilayer islands\u00a0\u2013 clustered around the area predicted for MIPS in two-dimensional self-propelled disks (Figure 4a, red dots; MIPS region from van Damme et al., 2019). Jamming events were also characterized by a sudden drop in cells\u2019 speed (Figure 4b and Video 3), consistent with the basic premise of MIPS. This is only a temporary slowing down due to cell-cell interactions rather than the persistent decrease in motility that can be induced by prolonged exposure to kanamycin (Benisty et al., 2015). Altogether, these results show that the mechanism leading to the development of multilayered islands is compatible with the MIPS process in active matter. Having established the similarities between MIPS and multilayer formation in the swarm, it is important to test the ability of the model to predict the results of new experiments.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig4-v1.jpg)\n\n**Figure 4.:** (a) Phase diagram of surface coverage and the rotational P\u00e9clet number ($P_{e_{r}}$). $P_{e_{r}}$ is proportional to cells' speed (see Materials\u00a0and\u00a0methods). Grayed region depicts motility-induced phase separation (MIPS) heterogeneity. Each data point represents a result of a 4-s single-cell time-lapse microscopy data. The time-lapse data in which jamming events are observed are shown in red (see Video 3). Jams appear exclusively under the conditions near the border of\u00a0the MIPS region. (b) The speed of motile cells drops by half during jamming (highlighted by dashed rectangle). Increase in jamming events lead to formation of islands (see Figure 2 and Video 4). (c, left) Illustrative diagram showing the accumulation of cells by UV irradiation. Cell speeds drop within the irradiated region (show by purple square), which elevates the surface coverage. (c, right) UV irradiation elevates surface coverage. The\u00a0graph shows the dynamics of surface coverage (black) and cell speed (cyan). Magenta is the period with UV light illumination (1.2 mW/mm2). Vertical dashed line shows the\u00a0onset\u00a0of jamming events. (d) Time evolution trajectories of surface coverage and rotational P\u00e9clet number with UV illumination experiment. Blue dots are before UV illumination and red dots are when jams appear. Increasing surface coverage by UV induces formation of jams at the border to MIPS region (gray).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) When a region approximately four times larger than our field of view is irradiated, the surface coverage within the field of view stays nearly constant and we can see a drop in cell speed over time. (b) Trajectories in the phase diagram for bacteria in the field of view, continuously irradiated with the conditions in (a). The systems\u00a0mainly just decrease their P\u00e9clet\u00a0number\u00a0and hence never approach the MIPS region.\n\n### Local accumulation of swarming cells induces multilayer transition and biofilm formation\n\nThe MIPS paradigm makes the experimentally testable prediction that it should be possible to induce multilayer formation by altering the local density of motile cells, thereby forcing the system to enter the MIPS region in phase space (Figure 4a, shaded region). We tested this in two ways: by UV irradiation, and through the use of a physical barrier to block front expansion. Near-UV light can decrease cell speed in gram-negative bacteria like E. coli and S. marcescens (Krasnopeeva et al., 2019; Yang et al., 2019) as well as, as we report here, in B. subtilis (Figure 4\u2014figure supplement 1). Locally slowing down motility by light can lead to a local increase in cell concentration through the accumulation of cells from non-irradiated regions (Figure 4c). We first verified that the illumination by UV light itself does not induce a multilayer transition, by illuminating an area\u00a0>200 fold greater than the field of view. This prevented cells outside of the irradiated area from accumulating within the field of view during the experiment. Accordingly, the surface coverage increased only marginally (\u03c6 \u2243 0.45 to \u03c6 \u2243 0.47 in 3 min; Figure 4\u2014figure supplement 1). The UV illumination caused an initial sudden drop in average speed from 65 to 50 \u03bcm/s (Figure 4\u2014figure supplement 1), followed by a nonlinear progressive slow down over the course of 3 min. Within the phase space picture (Figure 4a, Figure 4\u2014figure supplement 1b), this corresponds to a trajectory that essentially just moves towards progressively lower values of Per. This should not lead to either jams or island formation, which in fact were never observed (Figure 4a, Figure 4\u2014figure supplement 1b).\n\nWe next illuminated a region of size similar to the field of view. This arrangement allowed cells from the outer region to accumulate within the field of view due to UV-induced slow-down, a phenomenon which is a direct consequence of the active, out-of-equilibrium nature of the swarm with no counterpart in statistical systems in equilibrium (Arlt et al., 2018; Cates, 2012; Frangipane et al., 2018). As a consequence, the cell density increased significantly (\u03c6 \u2243 0.42 to \u03c6 \u2243 0.7 in 2 min; Figure 4c). For the first\u00a0~2 min, the average drop in cell speed was likely compensated by the density increase. It is well known, in fact, that cell density can enhance swarming motility through cooperative raft formation (Be'er and Ariel, 2019; Jeckel et al., 2019). Eventually, however, the increase in cell density resulted first in the formation of jams and finally of multilayer islands (Figure 4c, Video 7). Figure 4d shows the trajectories followed by the irradiated swarms in phase space. Jamming of swarming cells, the first step in island formation, occurs only for cell densities within a range that compares very well with predictions by MIPS for self-propelled rod-like particles (Figure 4d shaded region and van Damme et al., 2019). These results provide a direct support to the hypothesis that a biophysical MIPS-like process underpins the transition from swarming monolayers to multilayers in B. subtilis.\n\n![Video 7.](https://cdn.elifesciences.org/articles/62632/elife-62632-video7.mp4.jpg)\n\n**Video 7.:** Eventually, bacteria accumulation gives rise to the formation of localized islands, which appear as dark regions in the field of view, finally leading to a confluent second layer.\n\nTo further examine if a local cell-density increase is sufficient by itself to induce a localized transition from monolayer to multilayer, we used a physical barrier to impede the advance of the swam and locally increase cell density. Again, consistently with the MIPS picture, the arrest of the swarm front led to an increase in cell density and the subsequent emergence of multilayer islands near the barrier (Video 8). After 36 hr of further incubation, wrinkles developed near the physical barrier precisely in the region where the islands had started to appear initially (Figure 5a). As for the kanamycin case, also for the barrier the development of wrinkles is accompanied by a stronger local expression of tasA (Figure 5b and Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig5-v1.jpg)\n\n**Figure 5.:** (a) A physical barrier placed on agar triggers wrinkle formation. Wrinkles are formed at the region close to the barrier. A plate was incubated for 40 hr as in Figure 1. (b) Mean fluorescence intensity of PtapA-yfp measured just by the barrier for four different experiments and for two different experiments in the blank case. The shade indicates the s.e.m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The fluorescent profiles are very similar across the plate, indicating that the tapA-sipW-tasA operon is upregulated equally in the whole plate and not just next to the stressor (the physical barrier in this case).\n\n![Video 8.](https://cdn.elifesciences.org/articles/62632/elife-62632-video8.mp4.jpg)\n\n**Video 8.:** Islands start forming in the region closer to the barrier and then propagate towards the opposite direction. After the initial island formation, we can see that the swarm is still dynamic and keep forming multiple layers through island formation and merging.\n\nAltogether, these results show that B. subtilis swarms can undergo a single-to-multi-layer transition driven principally by a physical mechanism compatible with MIPS, which can be either global and spinodal-like, or localized and binodal-like. When this transition is localized, regardless of it being caused by antibiotics or physical confinements, the resultant macroscopic cell-density heterogeneity could determine the emergence of wrinkled biofilms.\n\n### Sequential administration of antibiotics reduces the emergence of biofilms from swarms\n\nWhile more complex signaling pathways regulating biofilm matrix production are likely involved in the passage from localized multi-layers to wrinkles, our results suggest that simply altering the expansion dynamics of a swarm promotes biofilm formation. This implies that exposing bacterial swarms to stressors, such as kanamycin, a physical barrier or UV light, may inadvertently increase their resilience by promoting the formation of biofilms that are much more difficult to eradicate. This is difficult to prevent by simply increasing the amount of antibiotics. In fact, when we used a\u00a0~\u00a0sevenfold greater dose of kanamycin in the diffusion disk (200 \u00b5g), wrinkles still appeared on the plate, although at a greater distance from the disk (Figure 2\u2014figure supplement 4). However, our findings suggest that the multi-layer band could be a good target for antibiotic treatment aimed at suppressing the emergence of biofilms. Such multilayer band happens at a concentration of antibiotic that bacteria can tolerate since the cells are still motile (Figure 3\u2014figure supplement 2, Video 5). We therefore wondered if a two-step sequential antibiotic administration could prevent biofilm formation, where the first administration induces multilayer formation and the second targets the multilayer area before completing biofilm formation. To test this conjecture, we decided to administer a total amount of 200 \u00b5g of kanamycin in two steps, an initial one when placing the disk on the plate, and the second as the swarming front stopped. We used a variation of the Kirby-Bauer assay to estimate the kanamycin profile over time at the regions where wrinkles would form and confirmed that the kanamycin concentration at the wrinkle location is compatible across the different dosage protocols (Figure 6a, Figure 6\u2014figure supplement 1). The emergence of wrinkles was greatly inhibited when kanamycin was administrated sequentially, despite keeping constant the total amount of antibiotic added to the disk (Figure 6b,c and Figure 6\u2014figure supplement 2). The effect was most evident when the second dose was greater than the first. These results thus propose a promising strategy for treating bacterial collectives with aminoglycosides while minimizing the emergence of biofilms.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig6-v1.jpg)\n\n**Figure 6.:** (a), (b), (c) Kanamycin was sequentially administered in two different doses to a disk while keeping the total amount\u00a0at 200 \u00b5g. The first administration was added as in other experiments, while the second was added to the disk as a 4 \u00b5l drop\u00a0when the islands were about to appear. (a) Concentration profile of kanamycin over time for the four concentrations of the sequential administration of antibiotic assay. The measurements were made using the modified Kirby-Bauer assay (see Materials\u00a0and\u00a0methods) at the distance from the kanamycin disk where the wrinkles are formed for the four different initial concentrations: 1.32 cm for 50 \u00b5g, 1.59 cm for 100 \u00b5g, 1.74 cm for 150 \u00b5g, and 1.85 cm for 200 \u00b5g. The time when the second dose of antibiotic is added is indicated with a dotted gray line (~7 hr after inoculation). (b) The wavelengths of wrinkles with respect to the doses of first (blue font) and second (gray font) administrations (\u00b5g). (c) Microscopy images of wrinkles induced by kanamycin. The first dose is in the blue shade and the second dose in the gray shade.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The profiles are measured at 0 hr, 20 hr, 44 hr, starting when the front propagation towards the kanamycin disk stopped.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62632/elife-62632-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Scatter plot for the roughness of the wrinkles when the kanamycin dose is split in two times. The first dose of kanamycin is in blue and the second dose in gray. The large bars are the mean of the roughness and the small bars are the s.e.m.\n\n## Discussion\n\nThis work reveals a biophysical mechanism underpinning the initial stage of the collective stress-induced transition from swarms to biofilm in B. subtilis, governed by motility and cell density. This is based on the halting of swarming expansion, which promotes the accumulation of cells at the front, resulting in the formation of MIPS-like multi-layered islands. Upon exposure to the aminoglycoside kanamycin, the swarming colony expresses the tapA-sipW-tasA operon and eventually develops a wrinkled biofilm. Consistent with this view, we demonstrate that different stressors, from antibiotics to UV and physical confinement, can all induce formation of islands. Moreover, based on our findings, we show that a sequential antibiotic monotherapy can be effective in reducing biofilm formation from a swarming colony in B. subtilis. As the underpinning mechanism of the transition is an emergent phenomenon driven by physical interactions between swarming cells, we believe similar transitions should also happen in other bacterial species. It would be interesting, for example, to examine if swarms of clinically relevant bacteria, such as Pseudomonas aeruginosa and Salmonella enterica, may also transit into biofilms through a similar process. Such investigations would be an important step forward to see if sequential antibiotic administrations could be effective in inhibiting, and eventually altogether preventing, stress-induced biofilm formation in pathogenic bacteria.\n\nThis study addresses a fundamental question about the mechanism by which cell collectives adapt their behavior in response to various physical and chemical stresses. In the present case, a local cell-density increase caused by the halting of the swarming front, may be part of a general collective stress response mechanism, which triggers a switch in the collective behavior from swarming to biofilm. For expansion in presence of kanamycin, these effects might compound with the anomalous motility that has been reported for prolonged exposure to low levels of the antibiotic (Benisty et al., 2015). The stress response mechanism that we observe at the collective level could allow the swarming colony to develop biofilms in response to various stressors, regardless of the stressors\u2019 exact molecular mode of action. We expect that further research will determine whether this form of environmental sensing and adaptation of cell collectives via cell-density increase is common to other biological systems. Interestingly, this idea is in line with recent advancements in the understanding of mechanochemical feedback in development and disease, where local cell density can determine the fates of cell collectives (Hannezo and Heisenberg, 2019). The connection we discovered could represent a primitive example of a collective mechanochemical feedback loop, underpinned by one of the most fundamental types of emergent phenomena (MIPS) in collections of motile agents either alive or synthetic. To this end, the gained biophysical insights may not only offer new biomedical treatment strategies against the rise of biofilm-associated antimicrobial resistance but may also contribute to our understanding of development and cell-fate determination.\n\nFollowing our discovery of stress-induced swarm-to-biofilm transition, we present a detailed characterization of the initial stage of the transition, namely development of multilayered islands. As with every discovery, this also brings a host of new questions. For example, it is unclear whether the molecular signaling mechanisms driving biofilm development from planktonic cells are identical to those from swarms. We show the activation of tasA gene during the kanamycin-induced transition from swarms to biofilms, suggesting the commonality between these processes. However, our data is inconclusive on this point in part due to the lack of single-cell level analysis of the expression dynamics. The expression of biofilm matrix genes is regulated by various complex pathways, where Spo0A, SinR and AbrB being central regulators (Vlamakis et al., 2013). If swarms develop biofilms through different pathways, elucidating the molecular regulatory machinery during the transition from swarm to biofilm may unveil new molecular pathways regulating biofilm formation.\n\nFrom the perspective of biofilm being a multicellular adaptation, it would be interesting to determine the stage at which a\u00a0swarming collective loses the ability to adapt to environmental changes. The biophysical transition that we report here would suggest that this happens once the ageing swarm cannot be driven anymore to within the putative MIPS region by the external stressor. It would be useful to explore this further within the general framework of biophysical models for cluster formation (Be\u2019er et al., 2020; Worlitzer et al., 2020), 3D architecture formation (Partridge et al., 2018) and motility-induced buckling within a bacterial swarm (Meacock et al., 2020; Takatori and Mandadapu, 2003). Another important question lies in the interplay between biophysical and molecular mechanisms regulating stress-induced biofilm development. Characterizing the gene expression profiles in the high-cell-density clusters resulting from multilayered islands, while simultaneously monitoring the mechanical interactions, would be an important step forward toward gaining a holistic understanding of collective stress response. We hope that our work will inspire new research in this area and look forward to further exciting results in the near future.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>NCIB3610</td>\n      <td>PMID:20374491</td>\n      <td></td>\n      <td>Gift from S\u00fcel lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Bacillus subtilis)</td>\n      <td>epsH:: tetR</td>\n      <td>PMID:11572999</td>\n      <td></td>\n      <td>Gift from Kolter lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Bacillus subtilis)</td>\n      <td>phrC::neoR</td>\n      <td>PMID:23012477</td>\n      <td></td>\n      <td>Gift from S\u00fcel lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Bacillus subtilis)</td>\n      <td>oppD::cmR</td>\n      <td>PMID:23012477</td>\n      <td></td>\n      <td>Gift from S\u00fcel lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Bacillus subtilis)</td>\n      <td>PtapA-yfp, sacA::PyqxM-trsA216-yfp, cmR</td>\n      <td>PMID:26196509</td>\n      <td></td>\n      <td>Gift from S\u00fcel lab</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Mounted LED</td>\n      <td>Thorlabs</td>\n      <td>M405L4</td>\n      <td>405 nm, 1000 mW</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Aspheric Condenser Lenses</td>\n      <td>Thorlabs</td>\n      <td>ACL25416U-B</td>\n      <td>\u00d81\u2019, f\u00a0=\u00a016.0 mm</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>25 mm SPUTTERED EDGEPASS FILTER</td>\n      <td>Thorlabs</td>\n      <td>FELH0450</td>\n      <td>Longpass 450 nm</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Retaining Ring</td>\n      <td>Thorlabs</td>\n      <td>CMRR</td>\n      <td>C-Mount (1.00\u2019\u221232)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Cage cube</td>\n      <td>Thorlabs</td>\n      <td>Cm1-dch</td>\n      <td>Dichroic Filter Mount</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Adapter</td>\n      <td>Thorlabs</td>\n      <td>Sm1a9</td>\n      <td>External C-Mount Threads and Internal SM1 Threads</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Leica DMI Microscope Camera Port Adapter</td>\n      <td>Thorlabs</td>\n      <td>Sm1a50</td>\n      <td>Internal SM1 Threads, External SM2 Threads</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Coupler, External Threads</td>\n      <td>Thorlabs</td>\n      <td>Sm1t2</td>\n      <td>0.5\u2019 Long</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Adapter</td>\n      <td>Thorlabs</td>\n      <td>Sm1a10</td>\n      <td>External SM1 Threads and Internal C-Mount Threads</td>\n    </tr>\n  </tbody>\n</table>\n\n### Kanamycin gradient assay\n\nGlycerol stock of Bacillus subtilis NCIB\u00a03610 wild-type strain (WT) was streaked on a lysogeny-broth (LB) 1.5% agar plate and grown overnight at 37\u00b0C. When specified in figure caption, a genetically modified strain (listed in key resource table) was used instead of WT. A single colony was picked from this plate and incubated in 1 ml of liquid LB for 3 hr at 37\u00b0C. A 4 \u00b5l inoculum from this culture was placed in the center of a 0.5% LB agar plate supplemented with 2% of glycerol and 0.1 mM MnSO4 (LBGM Shemesh and Chai, 2013) to favor biofilm formation. A kanamycin-diffusive disk (Oxoid 30\u00a0\u00b5g) was placed on a side of the plate 24 hr before inoculation to allow the antibiotic to diffuse at room temperature. The distance between the inoculum and the kanamycin disk was approximately 3.2 cm, and plates were incubated for additional 40 hr after inoculation at 30\u00b0C.\n\n### Images of swarming plates\n\nLow magnification images of the plates were acquired with a DSLR D5000 Nikon camera (lens AF-S Micro NIKKOR 40 MM 1.28) with an inhouse stand in a 30\u00b0C incubator (Kantsler et al., 2020). The incubator was covered by black tape to avoid reflections and the illumination was provided by a white LED placed on a side of the plate. Higher magnification images (e.g. of the wrinkles) were taken by an Olympus SZ61 microscope by placing the plates in a dark background with illumination coming from a LED ring attached to the microscope.\n\n### Quantification of the PtapA-yfp reporter\n\nBiofilm extracellular matrix production was characterized by using a modified strain carrying PtapA-yfp, a fluorescence reporter for the expression of tapA-sipW-tasA operon. The kanamycin gradient assay and the barrier experiments were repeated by inoculating this strain in LBGM (1.2% and 2% glycerol) swarming agar plates. The experiment was replicated three times for the kanamycin case with three different lenses and microscopes: 2x (Nikon Apo Lambda 2x UW, NA 0.1), 2x (Nikon Plan 2x UW, NA 0.06), 2.5x (Leica 2.5x N PLAN, NA 0.07); microscopes: two Nikon Eclipse Ti2 and a Leica DMi8. For the barrier case the experiment was repeated four times and it was performed in the Nikon Eclipse Ti2 using 2x (Nikon Plan 2x UW, NA 0.06). Images were taken every half an hour for a period of\u00a0~40 hr in a region of 3 \u00d7 9 cm2 going from the disk to the inoculum. The images were stitched using the \u2018Grid/Collection stitching\u2019 plugin (Preibisch et al., 2009) in Fiji (Schindelin et al., 2012). The experiment was repeated three times in absence of kanamycin with the first two microscopes and lenses. To calculate the fluorescent signal, a region of interest was drawn in Fiji surrounding the area where the wrinkles appeared, normally found just at the edge of the depletion region created by the kanamycin disk or just right next to the physical barrier. For the kanamycin assay, the signal was normalized by subtracting the minimum value of pixel intensity recorded in the time-lapse and dividing by the maximum of the signal for each of the microscopes to account for the difference in signal of each microscope. In the barrier case, all the experiments were performed with the same microscope and lens, so the raw signal is shown.\n\n### Raft and islands sizes\n\nThe size of the rafts within the swarm were obtained from three different experiments. A freehand line drawn with Fiji/imageJ (Schindelin et al., 2012) enclosing the raft was used to measure the area within the line. Measurements across different positions and time points were used to account for the variability in raft size within a swarm depending on the position and/or time after expansion begins (Jeckel et al., 2019). To measure the islands size, time-lapses of islands formation in presence and absence of kanamycin were used. The first frame (just before islands appeared) was subtracted to the time-lapse and then a gaussian filter was applied to remove noise. Finally, the time-lapse was thresholded and the initial size of the islands was measured by \u2018regionprops\u2019 in Matlab.\n\n### Characterization of island formation\n\nWe characterized the double layer using 2x (Nikon Plan 2x UW, NA 0.06), 2.5x (Leica 2.5x N PLAN, NA 0.07) and 10x (Nikon 10x PLAN FLUOR PH2 DLL, NA 0.3) magnifications in two different microscopes, Nikon Eclipse Ti2 and Leica DMi8. The images were acquired every 2 min in the Nikon Eclipse Ti2 and every 1 min in the Leica Dmi8 using brightfield illumination. Cell motility and cell density were recorded with a 40x objective (Nikon 40x LWD, NA 0.55) at 37\u00b0C. Cell motility was measured by adapting a Particle Image Velocimetry (PIV) code written in Matlab (Sveen, 2004). The surface coverage was measured by thresholding the images and dividing the area covered by bacteria by the total area of our field of view. The threshold was set by using the command \u2018imbinarize\u2019 in Matlab and adapting the sensitivity of its threshold to account for the best estimate of cells in the field of view.\n\n### Near UV experiments\n\nBacteria were irradiated by near UV-Violet light for 30 s using the inverted microscope DMi8 (Leica Microsystems) and the LED light source, SOLA SM II Light Engine (Lumencor), with an excitation filter 400/16 using a 40x objective (Leica 40x PH2 HC PL FLUO, NA 0.6) for approximately 3.5 min at an intensity of 1.2 to 5.3 mW/mm2. The light intensities were measured by placing a photodiode power sensor (Thorlabs S120C) on the microscope stage. To irradiate a larger area than the one with the epi-fluorescence set up, a Thorlabs 405 nm light LED was coupled to a cage cube (see key resources table for details about the components of the set up). The light coming from the LED was concentrated by an aspheric condenser lens and reflected by a 45\u00b0 dichroic mirror towards the sample. The area illuminated is roughly a circle of 2.5 mm radius at an intensity of 1.5 mW/mm2. The surface coverage was calculated by binarizing the time lapses applying a locally adaptive threshold in Matlab. The sensitivity of such threshold was changed along the time lapse when cell density was rapidly increasing and the same value of the threshold could not account for the total number of particles.\n\nThe trajectories of the swarming bacteria ensemble in the phase diagram were extracted by calculating the Per and the surface coverage as detailed in the previous section. In the case of UV exposure, trajectories are the result of continuous irradiation with either of the setups previously described. When illuminated by the epifluorescence the trajectories were plotted until a jamming of bacterial rafts was observed in the field of view. When shining UV from the condenser the trajectories were plotted until bacteria were completely immotile, as jamming events never happened (Figure 4\u2014figure supplement 1). Data for speed and surface coverage of bacteria has been smoothed over 8 and 100 points respectively by the \u2018smooth\u2019 function in Matlab.\n\n### Quorum-sensing experiments\n\nThe same protocol explained in the section on the \u2018kanamycin gradient assay\u2019 was also used to investigate the swarming behavior, the formation of islands and the biofilm development of the two quorum-sensing knockout strains: \u0394opp and \u0394hprc. Formation of islands and biofilm images were acquired as explained in previous sections.\n\n### Phase diagram\n\nTo calculate the phase diagram of rotational P\u00e9clet number (Per) with respect to surface coverage, time-lapses of swarming bacteria coming from six different experiments were analyzed. The \u2018jammed bacteria\u2019 data plotted in the diagram (Figure 4a) were calculated by analyzing the 4 s of the time lapse prior to jam formation. Videos were acquired at 29\u201333 fps.\n\nThe average speed within the swarm was calculated as described earlier and used to then calculate the Per, defined as:\n\n$$\nPe_{r}=\\frac{u}{LD_{r}}\n$$\n\nwhere u is the average cell speed within the swarm for a given time point, L=0.823\u00b10.16 \u00b5m the average width of the swarming cells -as used in van Damme et al., 2019- and Dr is the rotational diffusivity of the bacteria. For swarming cells, the rotational diffusivity cannot be measured directly. Therefore we decided to use, as estimate for Dr, a value such that the P\u00e9clet number of our system and that in van Damme et al., 2019 coincide at surface coverage 0.65. This returns Dr = 0.81 \u00b1 0.19 s\u22121, from an average of 13 different values from three independent experiments. To check whether this result was sensible, we then resuspended in water a sample of swarmer cells from a plate and extracted the rotational diffusivity of motile cells from a 10 s movie, with a Python-based tracking code which measures position and orientation of elongated objects (Mosby et al., 2020). The gradient of the angular mean-square displacement of the tracks returned a value of Dr = 0.35 s\u22121. Although this is slightly lower than the previous result, it should be kept in mind that the former estimate is for cells that are moving on an agar surface, which experience a higher drag than those swimming in a bulk fluid.\n\nNotice that, Per in van Damme et al., 2019 is obtained from instantaneous velocities of individual particles, which cannot be directly followed within a swarm. Therefore, we used an effective Per derived from the local average velocity within the swarm. This is likely to overestimate the value of Per of the experimental points.\n\n### Physical barrier\n\nA 3% agarose solution in water was autoclaved and then poured in a Petri dish. Once it solidified, a rectangular region (6 cm x 1 cm) was cut out and placed vertically on a molten swarming liquid LBGM (0.5% agar). After the system solidified, swarming bacteria were inoculated in the centre of the plate. Videos of the formation of islands were recorded under 2x (Nikon Plan 2x UW, NA 0.06) in a Nikon Eclipse Ti2 microscope.\n\n### Biofilm inhibition assay\n\nA total of 4 \u00b5l of the antibiotic kanamycin coming from four different stocks at concentrations of 50, 37.5, 25, and 12.5 \u00b5g/\u00b5l were added to four different diffusive disks. The diffusive disks were then placed on the side of different LBGM 0.5% agar plate for 24 hr. After bacteria inoculation, the plates were incubated at 30\u00b0C for roughly 6 hr until the swarming front halted. Then, additional 4 \u00b5l of the second stock concentrations of kanamycin were added to the initial ones. For the four concentrations above, these were respectively 0, 12.5, 25, and 37.5 \u00b5g/\u00b5l. As a result, the total amount of kanamycin administered was kept constant and equal to 200 \u00b5g.\n\n### Estimation of the kanamycin profile on the swarming plate\n\nThe concentration profile of the kanamycin in the plate (Figure 5a) was characterized by using a variation of the Kirby-Bauer assay (Bauer et al., 1966). A total of 800 \u00b5l of a 18 hr bacteria culture at 30\u00b0C was inoculated in three plates containing LB with 1.5% agar. Immediately after, disks containing 0.1, 0.2, 0.4, 0.78, 1.56, 3.13, 6.3, 12.5, 25, 50, 100, 150, and 200 \u00b5g of kanamycin were placed on the surface of separate confluent LB agar plates. After an incubation of 24 hr at 37\u00b0C, we measured the diameter of the clearance region around the disks. Each measurement was done in triplicates. The logarithm of the mass of kanamycin added was plotted against the difference between the diameter of the clearance region and the diameter of the disk. This calibration curve was then used to characterize the kanamycin profile in both the swarming and the biofilm-inhibition assays. For each replica agar plate, a 3 mm diameter biopsy puncher was used to extract 5 small samples in a range of 0\u20132 cm every 0.5 cm distance from the kanamycin diffusive disk. The agar punches were then placed on top of a confluent plate of WT B. subtilis and incubated overnight at 37\u00b0C. We then measured the clearance around the pads and used the linear fit to the calibration curve\u00a0(Bonev et al., 2008) to estimate the (logarithm of) total amount of kanamycin within the punch. This was then divided by the volume of the punch to estimate the concentration.\n\n### Wrinkle wavelength quantification\n\nTo measure the wavelength of the wrinkles we calculated the interdistance of nearest parallel wrinkles. When this was not possible, the wavelength was estimated by calculating the autocorrelation function of image intensity in space using a Fiji macro made by Michael Schmid (https://imagej.nih.gov/ij/macros/RadiallyAveragedAutocorrelation.txt) (2008) and then fitting the decay of that function to a double exponential of the form:\n\n$$\nf(x)=ae^{bx}+ce^{dx}.\n$$\n\nHere, the two characteristic wavelengths (1/b and 1/d) correspond to the image noise and the actual wrinkle wavelength respectively.\n\n### Calculation of the minimum inhibitory concentration (MIC)\n\nA single colony of Bacillus subtilis was incubated in 1 ml LB overnight in a shaking incubator at 37\u00b0C. The OD was measured 18 hr later and the culture was diluted down to an OD of 0.0085 and incubated for 18 hr in 5 concentrations of kanamycin from 1 to 5 \u00b5g/ml. The MIC was determined as the minimum concentration at which growth was not observed in the liquid culture. Each well plate had five replicates and the experiment was repeated at least three times for each concentration.\n\n### Roughness measurements for wrinkles\n\nA 50 pixels wide strip was drawn over the wrinkles and then the intensity profile was extracted using \u2018Plot profile\u2019 in ImageJ. The roughness of the profile was defined as:\n\n$$\nroughness=\\frac{\\sumiN|I_{i}\u2212I\u2212|}{N},\n$$\n\nwhere $I_{i}$ is the intensity of ith pixel in the profile, $I\u00af$ is the mean of the profile obtained using the \u2018smooth\u2019 function in Matlab and N, the total number of points in the profile.\n\n### Quantification of the speed at the swarming front\n\nTo calculate the speed at the swarming edge (Figure 2\u2014figure supplement 2), the position of the front closest to the diffusive disk was recorded over time with a DSLR camera (Nikon D5300; lens AF-S Micro NIKKOR 40 MM 1.28) at 37\u00b0C. Consecutive front positions were subtracted to highlight the position of the front. This was then used to estimate the front\u2019s speed on both the kanamycin side and the opposite side of the agar pad using the inter-frame time of 5 min. From these time lapses, we also extracted the distance at which the swarming front halts from the kanamycin disk.\n\n### Multilayer formation within the swarm\n\nTo investigate the spatial difference in multilayer formation throughout the swarm, videos of the bacteria were taken at \u00d72 magnification and one frame per minute, for 2 hr at 30\u00b0C (Video 6). The videos were acquired following a tiling of the rectangular region from the diffusive disk to the opposite end of the plate, with 12 sectors along the diameter and five across. The videos were then stitched together using the \u2018Grid/Collection stitching\u2019 plugin (Preibisch et al., 2009) in Fiji. To enhance the contrast of the different layers, the frame just before the multilayer appeared was subtracted from the rest of the time-lapse. The different layers appearing in the swarm were counted for four different positions and they were identified by a local increase in gray value in a wide area of the swarm (Figure 3\u2014figure supplement 3). After the fourth layer, the increase in gray value could not be further identified. Time is measured from the onset of the first islands within the field of view.\n\n### Distance from wrinkles to kanamycin disks of different concentration\n\nTo characterize how the distance between the kanamycin disk and the wrinkles depends on the initial antibiotic concentration within the disk (Figure 2\u2014figure supplement 4), diffusive disks containing 30, 100, and 200 \u00b5g of kanamycin were placed on 2-3% glycerol LBGM agar plates. To create the disks, Whatman filter paper was punched with a hole puncher (diameter 7 mm) and imbibed with 0.6, 2, or 4 \u00b5l of a 50 \u00b5g/\u00b5l kanamycin solution in water. The minimum distance between the kanamycin disk and the nearest wrinkles was measured in six different experiments for 30 \u00b5g and 200 \u00b5g of antibiotic and one experiment with three repliclates for 100 \u00b5g.\n\n### Biofilm formation in solid agar near the kanamycin\n\nTo check whether wrinkle formation was promoted also in absence of motility near the kanamycin diffusive disk, the kanamycin-diffusive assay was repeated in 1.5% agar. To do so, a kanamycin-diffusive disk was place on one side of the plate of the solid agar LBGM (2% glycerol) plate. The position was chosen to match the disk position in the swarming experiments. After 24 hr, a single colony of B. subtilis was incubated in 5 ml of LB for 3 hr. Of this culture, 700\u00a0\u00b5l\u00a0was spread on each solid agar plate and then incubated for 40 hr at 30\u00b0C.\n\nWe also check the wrinkle formation in 1.5% agar by spotting 4 \u00b5l of the bacteria culture without spreading them to see if wrinkles were promoted in the wrinkly biofilms that appear when bacteria are spotted in hard agar. In total, four different colonies were spotted on the plate: the closest one was spotted 2 cm away from the kanamycin disk, other two spots were placed 2 cm to the right and the left of this central spot and finally, a last colony was spotted 6 cm away from the kanamycin disk (Figure 2\u2014figure supplement 6).\n\n### Measuring the width of the band where wrinkles appear\n\nThe width of the band where wrinkles appeared around the kanamycin disk was measured for three independent experiments using 30 and 200 \u00b5g of kanamycin. The width was determined by drawing a line across the band where the wrinkles appeared.\n\n### Statistics\n\nData are reported as Mean\u00b1\u00a0s.e.m. calculated from at least three independent experiments unless otherwise indicated.\n",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "eeee85bd-6226-4c5f-ac4c-e269cecfd132",
+      "submission_id": "63883fde-704a-4aed-9870-72f9005a8fa1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Irene Giardina, Universit\u00e0 Sapienza Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62632.sa1](https://doi.org/10.7554/eLife.62632.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe paper presents very interesting results linking bacterial swarming to biofilm formation. It shows that swarming bacteria can initiate biofilm formation through a motility induced phase separation process.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Swarming bacteria undergo localized dynamic phase transition to form stress-induced biofilms\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis manuscript is based around a potentially very interesting finding that links bacterial swarming to biofilm formation. The authors suggest that swarming bacteria can initiate biofilm formation through a mobility induced phase separation (MIPS) like process. The authors demonstrate that biofilms form near areas of the plate where a kanamycin gradient is placed. They put forward the hypothesis that this is caused by a MIPS transition.\n\nBoth reviewers found the paper interesting, and results potentially relevant. However, they have raised a few major concerns.\n\nEssential revisions:\n\ni) Even though the data, in terms of jamming and island formation, appears consistent with a MIPS transition, there is less evidence that this transition plays a role in the formation of biofilms.\n\nii) Some of the claims based on the experimental results are not fully justified and additional control experiments are required.\n\nThe reviewers have listed a number of important issues to be addressed and have suggested experiments/analysis to solve them. All these issues must be solved before publication. Please do all the changes/additional work the reviewers ask for and reply to all their comments.\n\nReviewer #1:\n\nThe authors do not actually show that kanamycin reduces cell motility, even though this is a core assumption of their interpretation. Can the authors directly measure that the addition of certain concentrations of kanamycin reduce B. subtilis flagella-based motility (e.g. in liquid culture)? This appears to be a key control experiment. Furthermore, how do the authors rationalize that an aminoglycoside could reduce swarming motility?\n\nGiven that the swarm cannot expand beyond the swarming plate, the walls of the petri dish should also pose a barrier to it. Could the authors comment on why no biofilm formation can be observed in the case of a swarm growing in a regular petri dish, as they show in Figure 2D, E? Does this mean that a particular geometry of the barrier is required in order to trigger biofilm formation?\n\nFor the experiments using a physical barrier as well as a two-step antibiotic treatment, the authors use the existence of wrinkles and their wavelength as a measure for biofilm formation. These measures are more a quantification of the biofilm structure/architecture/morphology, and not a quantification of the biofilm formation capability. The more appropriate metric for quantifying biofilm amount is the biofilm biovolume or biomass (i.e. non motile cells that are bound in an extracellular matrix). Could the authors please modify their language accordingly, or provide a measurement of the biofilm biomass in some form?\n\nRegarding Figure 5, and the sequential application of kanamycin. The wording of the Results text is currently not justified by the data. The authors write \"sequential administration of antibiotics suppresses the emergence of biofilms from swarms\" and \"\u2026effective in preventing biofilm formation\u2026\". However, the data in Figure 5 only shows that the wrinkling wavelength is reduced. Therefore, the data show that biofilms are not suppressed, they are still there, they just have a different shape. Results in Figure 5 are interesting, but I think that the authors have to walk back their conclusions a little bit here, to more closely align with their data.\n\nThe following point may require a better explanation in the Discussion or in the Results: It is unclear to me while sometimes the cells can move on top of each other across the cell layers (see Results), and how the authors on the other hand argue that there is jamming when the cell density gets too high. What cell density then causes jamming if it is not achieved by complete surface coverage? Is it perhaps that once the cells start to produce extracellular matrix, the matrix produces a barrier that causes jamming? More careful wording of the relevant sections is required.\n\nReviewer #2:\n\nIt has been demonstrated for multiple bacteria that sub-inhibitory amounts of antibiotics, including kanamycin, can induce biofilm formation, under growth conditions that do not necessarily support a MIPS hypothesis (e.g. liquid culture (PMID: 24260549)). These previous works are not discussed in the paper and could point to a different mechanism of biofilm formation through antibiotic addition than a MIPS transition through swarming.\n\nThe data presented could be explained by a different hypothesis rather than a MIPS transition. For example, just the fact that biofilm formation requires high cell density. The experiments are carried out on biofilm inducing medium \u2013 this suggests that only high cell density is needed for biofilm formation and if the authors waited long enough biofilms would form under all the conditions tested (irrespective of antibiotic application or swarming). There is not a great deal of evidence that the MIPS transition is actually playing a role. For example, the authors use growth on hard agar (which does not support swarming) as evidence that swarming is required for biofilm formation. But the hard agar plates are made with biofilm promoting media, so presumably the only reason no biofilms are seen is that the cell density is not high enough. In the hard agar control, at the beginning of the experiment cells are spread across the whole plate.\n\nWhat happens with an inoculum started in the centre of the hard agar plate (similar to the swarming experiments) and a KAN disc placed nearby. Too many differences exist between the hard agar and swarming experiments (e.g. number of cells, placement of antibiotic disk in different location on dish, method for inoculum placement) to be able to say clearly that swarming is required for biofilm formation near the KAN gradient.\n\nThe double antibiotic experiment appears to have an issue. As I understand it the design of the experiment is as follows \u201cWe administer a total amount of 200 \u00b5g of kanamycin in two steps, an initial one when placing the disk on the plate, and the second as the swarming front stopped (Figure 5B, Figure 6\u2014figure supplement 2). The emergence of wrinkles was greatly suppressed when kanamycin was administrated sequentially, despite keeping the total amount of antibiotic constant (Figure 5B, C and Figure 6\u2014figure supplement 2).\u201d\n\nI am concerned that the authors do not know exactly how much antibiotic the cells are experiencing as the antibiotics will diffuse over time into the plate (as the authors show in Figure 2\u2014figure supplement 1). Are the authors sure that the cells at the edge of the disc are really experiencing the same amount of antibiotic if the antibiotic is added 24 h later? I would assume that the concentrations would be higher for the cells at the swarming front on the second application due to less time for the kanamycin to diffuse (as suggested by Figure 2\u2014figure supplement 1). Could this explain why the second application is so effective? Apologies if this is controlled for and I missed it.\n",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1bdc417e-9dd7-4a4e-b65a-0943e2e30e58",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C1",
+      "claim": "Self-organized multicellular behaviors enable cells to adapt and tolerate stressors to a greater degree than isolated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-organized multicellular behaviors enable cells to adapt and tolerate stressors to a greater degree than isolated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws from established scientific understanding about multicellular systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "07fd460a-12c8-44fc-80b0-e29d70ff9fd2",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C3",
+      "claim": "The initial stage of the swarm-to-biofilm transition is underpinned by a stress-induced multilayer formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial stage of this transition is underpinned by a stress-induced multilayer formation, emerging from a biophysical mechanism reminiscent of motility-induced phase separation (MIPS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental observations in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "da7fc1f4-237f-4e25-92b3-ec1e568ea5b7",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C4",
+      "claim": "The stress-induced multilayer formation emerges from a biophysical mechanism reminiscent of motility-induced phase separation (MIPS).",
+      "claim_type": "EXPLICIT",
+      "source": "The initial stage of this transition is underpinned by a stress-induced multilayer formation, emerging from a biophysical mechanism reminiscent of motility-induced phase separation (MIPS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of experimental data with MIPS theoretical predictions (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "bf6f47ed-ae39-4e72-ac3d-ea4419e0eec7",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C5",
+      "claim": "A simple physical barrier induces a swarm-to-biofilm transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a simple physical barrier also induces a swarm-to-biofilm transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "e9f60d0b-c106-4d78-9b5a-426d0d7518c7",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C6",
+      "claim": "Targeting the localized phase transition can inhibit the transition from swarms to biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the gained insight, we propose a strategy of antibiotic treatment to inhibit the transition from swarms to biofilms by targeting the localized phase transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on sequential antibiotic administration shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "c1674ee9-7bf4-4eb4-81dd-e4e5b466d001",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C7",
+      "claim": "Bacterial biofilm formation and swarming are ancient forms of multicellular adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial biofilm formation and swarming are ancient forms of multicellular adaptation (de la Fuente-N\u00fa\u00f1ez et al., 2013; Lyons and Kolter, 2015), where cells can coordinate their behaviors through chemical (Daniels et al., 2004; Xavier, 2011), mechanical (Grobas et al., 2020; Be'er and Ariel, 2019; Mazza, 2016), and bioelectrical (Benarroch and Asally, 2020; Prindle et al., 2015) interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "b0cfe3f5-9551-4a0a-bee4-ffd7d95fa059",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C8",
+      "claim": "Biofilm cells are much more tolerant to various stresses than genetically identical cells in isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Biofilm cells are much more tolerant to various stresses than genetically identical cells in isolation (Meredith et al., 2015), owing to the physicochemical properties of extracellular polysubstance (EPS) (Flemming and Wingender, 2010), metabolic coordination (Liu et al., 2015), slow cell growth (Costerton et al., 1999), and in the case of air-exposed biofilms, diffusion barrier by the archetypical wrinkled morphology (Epstein et al., 2011; Vlamakis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "5164f690-689f-4edc-8cbd-e6050cfa20e7",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C9",
+      "claim": "Swarming bacteria can collectively tolerate antibiotic treatments that are lethal to planktonic cells through motility-induced mixing and reduced small-molecule absorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Swarming bacteria can also collectively tolerate antibiotic treatments that are lethal to planktonic cells \u2013 albeit only to a lesser degree than biofilms \u2013 through motility-induced mixing and reduced small-molecule absorption (Bhattacharyya et al., 2020; Butler et al., 2010; Lai et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "f4bceb19-f2eb-4b64-a916-268666ebbe6f",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C10",
+      "claim": "Biofilms can be induced from free-swimming planktonic cells by aminoglycoside antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "it has been reported that biofilms can be induced from free-swimming planktonic cells by a wide range of biochemical and mechanical stressors, such as aminoglycoside antibiotics (Hoffman et al., 2005; Jones et al., 2013), redox-active compounds (Wang et al., 2011), nutrient depletion (Zhang et al., 2014), and mechanical stress (Chu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "31371d1a-c693-47f2-9f11-b57edc95ec8f",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C11",
+      "claim": "Biofilms can be induced from free-swimming planktonic cells by redox-active compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "it has been reported that biofilms can be induced from free-swimming planktonic cells by a wide range of biochemical and mechanical stressors, such as aminoglycoside antibiotics (Hoffman et al., 2005; Jones et al., 2013), redox-active compounds (Wang et al., 2011), nutrient depletion (Zhang et al., 2014), and mechanical stress (Chu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "e1f9baaa-aef4-4643-a0ad-ddf84ccc9033",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C12",
+      "claim": "Biofilms can be induced from free-swimming planktonic cells by nutrient depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "it has been reported that biofilms can be induced from free-swimming planktonic cells by a wide range of biochemical and mechanical stressors, such as aminoglycoside antibiotics (Hoffman et al., 2005; Jones et al., 2013), redox-active compounds (Wang et al., 2011), nutrient depletion (Zhang et al., 2014), and mechanical stress (Chu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "eb3c125a-77ed-41aa-ab8f-c2ab7d5f6fb8",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C13",
+      "claim": "Biofilms can be induced from free-swimming planktonic cells by mechanical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "it has been reported that biofilms can be induced from free-swimming planktonic cells by a wide range of biochemical and mechanical stressors, such as aminoglycoside antibiotics (Hoffman et al., 2005; Jones et al., 2013), redox-active compounds (Wang et al., 2011), nutrient depletion (Zhang et al., 2014), and mechanical stress (Chu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "fa27f536-37db-43c8-b0c7-4f38e6dba23a",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C14",
+      "claim": "At a sufficient concentration, a collection of motile particles can spontaneously form high-density clusters through motility-induced phase separation (MIPS).",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical models of active matter have repeatedly predicted that at a sufficient concentration, a collection of motile particles, be it swimming cells or self-propelled artificial microswimmers, can spontaneously form high-density clusters (Barr\u00e9 et al., 2015; Gonnella et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical models in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "923c5a95-ef15-47fd-9063-561a50bc25ce",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C15",
+      "claim": "MIPS has been implicated in the development of cell inhomogeneities leading to fruiting-body formation in M. xanthus.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this process has been implicated in the development of cell inhomogeneities leading to fruiting-body formation in M. xanthus (Liu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "eb1d5eb6-5c9c-4d4e-a79d-4ca0ec0c33dc",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C16",
+      "claim": "MIPS is based on feedback between the localized decrease in particles' speed at high concentration and the spontaneous accumulation of active particles in clusters where their speed is lower.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition, known as Motility Induced Phase Separation (MIPS), is based on feedback between the localized decrease in particles' speed at high concentration, caused by physical interactions, and the spontaneous accumulation of active particles in the clusters where their speed is lower (Gonnella et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to theoretical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "e51ed461-b4c9-41fd-887b-95bc86866802",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C17",
+      "claim": "MIPS occurs when particles' speed is sufficiently high and their concentration is in the appropriate range (typical volume fractions of 0.3\u20130.8 or 0.6\u20130.7 for round or rod-shaped particles, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "When the particles' speed is sufficiently high and their concentration is in the appropriate range (typical volume fractions of 0.3\u20130.8 or 0.6\u20130.7 for round or rod-shaped particles, respectively [Digregorio et al., 2018; van Damme et al., 2019]), inherent density fluctuations are amplified by the particles' slowing down, and the system effectively phase separates into high-density/low-motility clusters surrounded by a low-density/high-motility phase (Cates and Tailleur, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on MIPS theory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "bcaf5876-4e83-4485-b777-2f74885ebca1",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C18",
+      "claim": "Cell-density heterogeneity can lead to the production of matrix and biofilm formation mediated by localized cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that cell-density heterogeneity can lead to the production of matrix and biofilm formation mediated by localized cell death (Asally et al., 2012; Ghosh et al., 2013), we hypothesized that the heterogeneity caused by putative MIPS-like clusters could in turn underpin a transition from bacterial swarms into biofilms (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "cb05fcaf-b394-4ecb-8939-e2b059058871",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C19",
+      "claim": "After ~2 hr of lag period, B. subtilis cells formed a rapidly expanding swarming front (~4 mm/hr).",
+      "claim_type": "EXPLICIT",
+      "source": "After ~2 hr of lag period, the cells formed a rapidly expanding swarming front (~4 mm/hr), which became progressively slower towards the source of kanamycin until it completely stopped ~0.3 cm away from the disk (Figure 2\u2014figure supplement 2 and Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations and referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "c9aa66c0-864c-4847-98d3-0706016cf35c",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C20",
+      "claim": "The swarming front became progressively slower towards the source of kanamycin until it completely stopped ~0.3 cm away from the disk.",
+      "claim_type": "EXPLICIT",
+      "source": "After ~2 hr of lag period, the cells formed a rapidly expanding swarming front (~4 mm/hr), which became progressively slower towards the source of kanamycin until it completely stopped ~0.3 cm away from the disk (Figure 2\u2014figure supplement 2 and Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations and referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "01c6bd95-a463-4cba-88f3-4a1ff36269dd",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C21",
+      "claim": "After 36 hr incubation at 30\u00b0C, the colony developed prominent wrinkles across a ~ 3 mm band ~1.3 cm away from the kanamycin disk.",
+      "claim_type": "EXPLICIT",
+      "source": "After further incubation at 30\u00b0C for 36 hr, the colony developed prominent wrinkles, the morphological hallmark of B. subtilis pellicles and colony biofilms (Cairns et al., 2014; Vlamakis et al., 2013), across a ~ 3 mm band ~1.3 cm away from the kanamycin disk (Figure 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations and referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "b7809ada-b3f7-4331-a27c-460fd8651eb3",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C22",
+      "claim": "The estimated level of kanamycin at the site where wrinkles formed was around the minimum inhibitory concentration (MIC) of planktonic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated level of kanamycin at the site was around the minimum inhibitory concentration (MIC) of planktonic cells (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "00009ae1-f2af-4857-a6c7-55dfcf45275c",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C23",
+      "claim": "Wrinkles are the morphological hallmark of B. subtilis pellicles and colony biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "After further incubation at 30\u00b0C for 36 hr, the colony developed prominent wrinkles, the morphological hallmark of B. subtilis pellicles and colony biofilms (Cairns et al., 2014; Vlamakis et al., 2013), across a ~ 3 mm band ~1.3 cm away from the kanamycin disk (Figure 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "cf2fd97c-c452-4927-afa8-4d5b8fc5a221",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C24",
+      "claim": "Wrinkles appearing near the kanamycin disk had a wavelength of \u03bb = 560 \u03bcm and roughness r = 10.",
+      "claim_type": "EXPLICIT",
+      "source": "The wrinkles appearing near the kanamycin disk had a wavelength of \u03bb = 560 \u03bcm and roughness r = 10, indicating a much stiffer biofilm than the case without kanamycin, which only produced a faint small-wavelength surface roughness (\u03bb = 91 \u03bcm, r = 5.5; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "b9985357-5791-48fb-9236-0d1e202dce93",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C25",
+      "claim": "The case without kanamycin only produced a faint small-wavelength surface roughness (\u03bb = 91 \u03bcm, r = 5.5).",
+      "claim_type": "EXPLICIT",
+      "source": "The wrinkles appearing near the kanamycin disk had a wavelength of \u03bb = 560 \u03bcm and roughness r = 10, indicating a much stiffer biofilm than the case without kanamycin, which only produced a faint small-wavelength surface roughness (\u03bb = 91 \u03bcm, r = 5.5; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "81d6bf4f-1770-43e5-b927-0d06e97b1857",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C26",
+      "claim": "The \u0394eps mutant is impaired in biofilm formation but capable of swarming.",
+      "claim_type": "EXPLICIT",
+      "source": "To further verify the association of these wrinkles to biofilms, we repeated the assay using \u0394eps, a mutant known to be impaired in biofilm formation (Nagorska et al., 2010; Branda et al., 2001) but capable of swarming (Video 2), and confirmed no wrinkles with this mutant (Figure 2c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "4b8143a6-b7cb-41cc-b97f-e324e09301ba",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C27",
+      "claim": "The \u0394eps mutant showed no wrinkles when exposed to kanamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "To further verify the association of these wrinkles to biofilms, we repeated the assay using \u0394eps, a mutant known to be impaired in biofilm formation (Nagorska et al., 2010; Branda et al., 2001) but capable of swarming (Video 2), and confirmed no wrinkles with this mutant (Figure 2c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "a8c9c6de-7e37-4a58-8962-684d4497bfcf",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C28",
+      "claim": "Exposure to kanamycin results in higher abundance in extracellular matrix as measured by PtapA-yfp fluorescence reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed a greater fluorescence signal from the promoter reporter when swarming cells were exposed to kanamycin (Figure 2e), suggesting that the exposure to kanamycin results in higher abundance in extracellular matrix and induces biofilm formation in a swarming colony on a soft-agar plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "9c5e6e6f-7307-4087-beaa-ed1362c57b48",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C29",
+      "claim": "tasA encodes an essential matrix component for B. subtilis biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we measured the expression of tasA, which encodes an essential matrix component for B. subtilis biofilm formation (Romero et al., 2010), using a strain carrying PtapA-yfp, a fluorescence reporter for the expression of the tapA-sipW-tasA operon (Vlamakis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "067cad0c-2b43-4b18-b094-d76d36fe3fed",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C30",
+      "claim": "Increasing the initial concentration of antibiotic in the disk causes wrinkles to emerge further away from the disk.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, increasing the initial concentration of antibiotic in the disk, wrinkles emerged further away from the disk (Figure 2\u2014figure supplement 4), while a disk without antibiotic did not promote wrinkle formation (Figure 2d and Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "1a68aa52-6917-4d1d-ab70-f9a540aeb9a7",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C31",
+      "claim": "A disk without antibiotic did not promote wrinkle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, increasing the initial concentration of antibiotic in the disk, wrinkles emerged further away from the disk (Figure 2\u2014figure supplement 4), while a disk without antibiotic did not promote wrinkle formation (Figure 2d and Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "93c53f54-9c94-4b82-acb4-34bbc6ec8f50",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C32",
+      "claim": "Kanamycin inhibited biofilm formation when individual colonies were spotted on hard agar plates (1.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, spotting individual colonies on hard agar plates (1.5%) typically used for biofilm colony assays, showed that kanamycin inhibited biofilm formation (Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "7867ad6a-aa14-4bf1-bfb8-30b136165c4f",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C33",
+      "claim": "When cells were uniformly spread across hard agar plate at concentrations similar to those of a swarming monolayer, the system developed only faint wrinkles around the antibiotic exclusion zone.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were instead uniformly spread across the hard agar plate at concentrations similar to those of a swarming monolayer, the system developed only faint wrinkles around the antibiotic exclusion zone (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "d5cdeabf-d001-4617-95ed-04b46f805053",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C34",
+      "claim": "The fact that a kanamycin gradient promotes wrinkle formation significantly more in a swarming colony than a non-motile culture points to a fundamental role played by cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that a kanamycin gradient promotes wrinkle formation significantly more in a swarming colony than a non-motile culture, pointed to a fundamental role played by cell motility and suggested the need to investigate the swarming dynamics in detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations comparing swarming and non-motile cultures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "7c2bc0c3-c184-4c09-a352-bb6fd69bd767",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C35",
+      "claim": "Cells displayed typical swarming dynamics during the expansion of the colony front.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells displayed typical swarming dynamics during the expansion of the colony front (Figure 3a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microscopic observations shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "369ee11d-8e49-42f8-97ad-f3a57f427c8f",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C36",
+      "claim": "The local surface coverage of the monolayer swarm progressively increased from initial values of ~20% to \u227360%.",
+      "claim_type": "EXPLICIT",
+      "source": "As time progressed, we observed the local surface coverage of the monolayer swarm to progressively increase from initial values of ~20% to \u227360%, at which point the swarming rafts started displaying jamming events lasting ~1\u20132 s, during which cell speed was strongly reduced and groups of cells protruded temporarily from the swarming monolayer (typical size of jammed group ~500 \u00b5m2, see Video 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "c9da370c-b010-41bc-a591-7ce52aae0218",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C37",
+      "claim": "At surface coverage \u227360%, swarming rafts started displaying jamming events lasting ~1\u20132 s.",
+      "claim_type": "EXPLICIT",
+      "source": "As time progressed, we observed the local surface coverage of the monolayer swarm to progressively increase from initial values of ~20% to \u227360%, at which point the swarming rafts started displaying jamming events lasting ~1\u20132 s, during which cell speed was strongly reduced and groups of cells protruded temporarily from the swarming monolayer (typical size of jammed group ~500 \u00b5m2, see Video 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "0def56bd-0112-41e1-9ba8-698085f8f578",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C38",
+      "claim": "During jamming events, cell speed was strongly reduced and groups of cells protruded temporarily from the swarming monolayer.",
+      "claim_type": "EXPLICIT",
+      "source": "As time progressed, we observed the local surface coverage of the monolayer swarm to progressively increase from initial values of ~20% to \u227360%, at which point the swarming rafts started displaying jamming events lasting ~1\u20132 s, during which cell speed was strongly reduced and groups of cells protruded temporarily from the swarming monolayer (typical size of jammed group ~500 \u00b5m2, see Video 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "67a46d6d-237c-4fa9-8b9d-5a75d3436ac4",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C39",
+      "claim": "The typical size of jammed groups was ~500 \u00b5m2.",
+      "claim_type": "EXPLICIT",
+      "source": "As time progressed, we observed the local surface coverage of the monolayer swarm to progressively increase from initial values of ~20% to \u227360%, at which point the swarming rafts started displaying jamming events lasting ~1\u20132 s, during which cell speed was strongly reduced and groups of cells protruded temporarily from the swarming monolayer (typical size of jammed group ~500 \u00b5m2, see Video 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "ea5827e4-77cf-498b-9fc9-34eaecfaa3a1",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C40",
+      "claim": "In the area where wrinkles eventually appear, there was no significant fraction of immotile cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in this area we did not observe a significant fraction of immotile cells, as previously reported for swarming in presence of a uniform concentration of kanamycin (Benisty et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations and contrasted with prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "4b6e101b-f0df-4d60-8361-8d739b9e15fd",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C41",
+      "claim": "With a slight further increase in local cell density, the temporary jams led to permanent isolated multilayered regions called 'islands', typically ~27,000 \u03bcm2 in size.",
+      "claim_type": "EXPLICIT",
+      "source": "With a slight further increase in local cell density, the temporary jams led to permanent isolated multilayered regions, which we call 'islands', typically ~27,000 \u03bcm2 in size and with constantly fluctuating boundaries (Figure 3b inset, Video 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "dbf061c7-087d-4642-9030-0b8355e4ca71",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C42",
+      "claim": "Islands have constantly fluctuating boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "With a slight further increase in local cell density, the temporary jams led to permanent isolated multilayered regions, which we call 'islands', typically ~27,000 \u03bcm2 in size and with constantly fluctuating boundaries (Figure 3b inset, Video 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "edc838ef-d062-4320-a6d4-37fc4e477cba",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C43",
+      "claim": "Within islands, cells were highly dynamic and appeared to meander across the layers albeit at a reduced speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Within islands, cells were highly dynamic and appeared to meander across the layers albeit at a reduced speed (Figure 3\u2014figure supplement 2, Video 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in the referenced figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "2787154b-944b-4cb1-a7f7-7be4f789704e",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C44",
+      "claim": "Motile cells were constantly exchanged between the multilayer and the surrounding monolayer.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we did not find any evidence for clusters of immotile cells templating the islands. Rather, motile cells were constantly exchanged between the multilayer and the surrounding monolayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "a65dbc14-772b-4b60-bc09-2d0aed41b490",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C45",
+      "claim": "Following a continuous increase in cell density with time, islands grew in size and merged with each other, eventually forming a much larger multilayered region.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a continuous increase in cell density with time, islands grew in size and merged with each other, eventually forming a much larger multilayered region (Figure 3c, Video 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in the referenced figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "298c5aae-9556-43eb-9c12-0cb28b96085a",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C46",
+      "claim": "The nucleation and merging of islands were observed up to four layers before the ability to recognize further transitions was lost due to a flattening of the image contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleation and merging of islands were observed up to four layers before we lost the ability to recognize further transitions due to a flattening of the image contrast (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations and limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "3f27a47e-df24-43fc-a4ce-8e5cf778498e",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C47",
+      "claim": "In absence of kanamycin, islands emerged simultaneously throughout the plate, forming an intricate granular pattern with a typical size of ~2000 \u00b5m2.",
+      "claim_type": "EXPLICIT",
+      "source": "In absence of kanamycin, islands emerged simultaneously throughout the plate, forming an intricate granular pattern with a typical size of ~2000 \u00b5m2 (Figure 3d), a phenomenology reminiscent of spinodal decomposition in binary fluids (Qiu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "67652eb7-5a34-4826-a52c-8a3364987341",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C48",
+      "claim": "The island formation pattern in absence of kanamycin is reminiscent of spinodal decomposition in binary fluids.",
+      "claim_type": "EXPLICIT",
+      "source": "In absence of kanamycin, islands emerged simultaneously throughout the plate, forming an intricate granular pattern with a typical size of ~2000 \u00b5m2 (Figure 3d), a phenomenology reminiscent of spinodal decomposition in binary fluids (Qiu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with known physical phenomena, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "5264eb7d-5c64-449e-b5d8-847b553c198e",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C49",
+      "claim": "In presence of kanamycin, well-defined, distinct islands first emerged within a ~ 5 mm-wide band just inside of the arrested swarming front.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the process of islands formation and growth was markedly different in presence of kanamycin (Figure 3e). After the swarming front expansion was stopped due to inhibition by the antibiotic, well-defined, distinct islands first emerged within a ~ 5 mm-wide band just inside of the arrested swarming front, and then grew with a strongly anisotropic pattern oriented transversally to the front of the swarm (Video 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "5f6657dc-43fe-4386-a16f-c56268a9c916",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C50",
+      "claim": "Islands in presence of kanamycin grew with a strongly anisotropic pattern oriented transversally to the front of the swarm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the process of islands formation and growth was markedly different in presence of kanamycin (Figure 3e). After the swarming front expansion was stopped due to inhibition by the antibiotic, well-defined, distinct islands first emerged within a ~ 5 mm-wide band just inside of the arrested swarming front, and then grew with a strongly anisotropic pattern oriented transversally to the front of the swarm (Video 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "8a4cd4d0-d60e-4db4-9911-27276b703b9c",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C51",
+      "claim": "The phenomenology of island formation in presence of kanamycin is reminiscent of a binodal liquid-liquid phase separation in a temperature gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenology is reminiscent of a binodal \u2013 rather than spinodal \u2013 liquid-liquid phase separation in a temperature gradient (Bartolini et al., 2019) which here might reflect a kanamycin-induced speed gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with known physical phenomena, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "5ccaf162-fc1c-4626-965c-e8abb54c5f1b",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C52",
+      "claim": "The macroscopic cell-density heterogeneity was followed by the subsequent formation of biofilm wrinkles, ~1 cm away from the disk.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting macroscopic cell-density heterogeneity was followed by the subsequent formation of biofilm wrinkles, ~1 cm away from the disk (Figure 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "dd54261d-98b2-49ab-8c81-04521aa26c1c",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C53",
+      "claim": "The Phr quorum-sensing system is not responsible for the multilayer transition.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore repeated the experiments with \u0394phrC and \u0394opp mutant strains, lacking the Phr quorum-sensing system in B. subtilis but still capable of swarming. In both cases, we observed the wild-type phenomenology of wrinkled biofilms and the emergence of islands (Figure 3\u2014figure supplement 4). The results indicated that this quorum-sensing system is not responsible for the multilayer transition, suggesting that exposure to kanamycin can promote cell-density heterogeneity by multilayer islands formation in a quorum-sensing independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data with quorum-sensing mutants shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "c584b4e7-ed6e-48f9-a843-a5e762b2d702",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C54",
+      "claim": "Exposure to kanamycin can promote cell-density heterogeneity by multilayer islands formation in a quorum-sensing independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that this quorum-sensing system is not responsible for the multilayer transition, suggesting that exposure to kanamycin can promote cell-density heterogeneity by multilayer islands formation in a quorum-sensing independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results with quorum-sensing mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "e1eaed83-b9a8-4d1c-8f2d-2a64d67e4cb0",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C55",
+      "claim": "Single-to-multilayer transitions have been reported for confined bacterial aggregates as a consequence of build-up of internal mechanical stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "To address the mechanism of multilayer formation, we wondered if physical stresses may be responsible for this emergent collective behavior since single-to-multilayer transitions have been reported for confined bacterial aggregates, either growing or gliding, as a consequence of build-up of internal mechanical stresses (Takatori and Mandadapu, 2003; Grant et al., 2014; Su et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "7028b783-0129-4541-967e-71d9f31a8316",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C56",
+      "claim": "Bacteria in the monolayer corresponded overwhelmingly to points well outside the MIPS region in the phase diagram.",
+      "claim_type": "EXPLICIT",
+      "source": "While bacteria in the monolayer corresponded overwhelmingly to points well outside the MIPS region (Figure 4a blue dots), bacterial jams \u2013 the first stage in the development of stable multilayer islands \u2013 clustered around the area predicted for MIPS in two-dimensional self-propelled disks (Figure 4a, red dots; MIPS region from van Damme et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data plotted in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "3944c558-c030-4311-afac-8a147c1f0035",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C57",
+      "claim": "Bacterial jams clustered around the area predicted for MIPS in two-dimensional self-propelled disks.",
+      "claim_type": "EXPLICIT",
+      "source": "While bacteria in the monolayer corresponded overwhelmingly to points well outside the MIPS region (Figure 4a blue dots), bacterial jams \u2013 the first stage in the development of stable multilayer islands \u2013 clustered around the area predicted for MIPS in two-dimensional self-propelled disks (Figure 4a, red dots; MIPS region from van Damme et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data plotted in Figure 4a and comparison with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "b3170482-886b-472d-9b9e-79b93f224965",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C58",
+      "claim": "Jamming events were characterized by a sudden drop in cells' speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Jamming events were also characterized by a sudden drop in cells' speed (Figure 4b and Video 3), consistent with the basic premise of MIPS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "48d9249a-928f-44e7-8d70-45fe97c177aa",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C59",
+      "claim": "The mechanism leading to the development of multilayered islands is compatible with the MIPS process in active matter.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results show that the mechanism leading to the development of multilayered islands is compatible with the MIPS process in active matter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing agreement with MIPS predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "3b843716-0b73-49d5-a694-85bad0fd8461",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C60",
+      "claim": "Near-UV light can decrease cell speed in E. coli and S. marcescens.",
+      "claim_type": "EXPLICIT",
+      "source": "Near-UV light can decrease cell speed in gram-negative bacteria like E. coli and S. marcescens (Krasnopeeva et al., 2019; Yang et al., 2019) as well as, as we report here, in B. subtilis (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "ccad7596-64ea-42fe-9959-fe592efd6b17",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C61",
+      "claim": "Near-UV light can decrease cell speed in B. subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "Near-UV light can decrease cell speed in gram-negative bacteria like E. coli and S. marcescens (Krasnopeeva et al., 2019; Yang et al., 2019) as well as, as we report here, in B. subtilis (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "39bbd415-9bd1-4295-82df-928d1c9e80f3",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C62",
+      "claim": "Locally slowing down motility by light can lead to a local increase in cell concentration through the accumulation of cells from non-irradiated regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Locally slowing down motility by light can lead to a local increase in cell concentration through the accumulation of cells from non-irradiated regions (Figure 4c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "cfc9c6c7-f1b4-49fd-8746-5d52e5a55faa",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C63",
+      "claim": "When a large area is illuminated by UV light, the surface coverage increased only marginally (\u03c6 \u2243 0.45 to \u03c6 \u2243 0.47 in 3 min).",
+      "claim_type": "EXPLICIT",
+      "source": "This prevented cells outside of the irradiated area from accumulating within the field of view during the experiment. Accordingly, the surface coverage increased only marginally (\u03c6 \u2243 0.45 to \u03c6 \u2243 0.47 in 3 min; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "3369d10e-b8e4-4e20-964e-831c299929dd",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C64",
+      "claim": "When a large area is illuminated by UV light, jamming events and island formation were never observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the phase space picture (Figure 4a, Figure 4\u2014figure supplement 1b), this corresponds to a trajectory that essentially just moves towards progressively lower values of Per. This should not lead to either jams or island formation, which in fact were never observed (Figure 4a, Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "c90c69e4-3cef-4f14-b43f-1b00c1ec2e6f",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C65",
+      "claim": "When a region of size similar to the field of view is illuminated, the cell density increased significantly (\u03c6 \u2243 0.42 to \u03c6 \u2243 0.7 in 2 min).",
+      "claim_type": "EXPLICIT",
+      "source": "We next illuminated a region of size similar to the field of view. This arrangement allowed cells from the outer region to accumulate within the field of view due to UV-induced slow-down, a phenomenon which is a direct consequence of the active, out-of-equilibrium nature of the swarm with no counterpart in statistical systems in equilibrium (Arlt et al., 2018; Cates, 2012; Frangipane et al., 2018). As a consequence, the cell density increased significantly (\u03c6 \u2243 0.42 to \u03c6 \u2243 0.7 in 2 min; Figure 4c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "d2d3f038-12bb-4778-9c15-76ef4b108882",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C66",
+      "claim": "The increase in cell density by localized UV illumination resulted first in the formation of jams and finally of multilayer islands.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, however, the increase in cell density resulted first in the formation of jams and finally of multilayer islands (Figure 4c, Video 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 4c and Video 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "c9d7e462-9c5c-44d2-a65c-de87bfb058f6",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C67",
+      "claim": "Jamming of swarming cells occurs only for cell densities within a range that compares very well with predictions by MIPS for self-propelled rod-like particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4d shows the trajectories followed by the irradiated swarms in phase space. Jamming of swarming cells, the first step in island formation, occurs only for cell densities within a range that compares very well with predictions by MIPS for self-propelled rod-like particles (Figure 4d shaded region and van Damme et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4d and comparison with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "285e8bd1-2f14-438c-aeda-92fe9227c2a7",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C68",
+      "claim": "A physical barrier to impede the advance of the swarm led to an increase in cell density and the subsequent emergence of multilayer islands near the barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "To further examine if a local cell-density increase is sufficient by itself to induce a localized transition from monolayer to multilayer, we used a physical barrier to impede the advance of the swam and locally increase cell density. Again, consistently with the MIPS picture, the arrest of the swarm front led to an increase in cell density and the subsequent emergence of multilayer islands near the barrier (Video 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in Video 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "45d5a804-55d8-4871-8317-8f6f653f1b87",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C69",
+      "claim": "After 36 hr of incubation, wrinkles developed near the physical barrier precisely in the region where the islands had started to appear initially.",
+      "claim_type": "EXPLICIT",
+      "source": "After 36 hr of further incubation, wrinkles developed near the physical barrier precisely in the region where the islands had started to appear initially (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "7143db03-369b-4264-b515-0eda0e840b1a",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C70",
+      "claim": "For the barrier case, the development of wrinkles is accompanied by a stronger local expression of tasA.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the kanamycin case, also for the barrier the development of wrinkles is accompanied by a stronger local expression of tasA (Figure 5b and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "84ce9d74-5e3e-4378-8d40-a76039055cf0",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C71",
+      "claim": "B. subtilis swarms can undergo a single-to-multi-layer transition driven principally by a physical mechanism compatible with MIPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results show that B. subtilis swarms can undergo a single-to-multi-layer transition driven principally by a physical mechanism compatible with MIPS, which can be either global and spinodal-like, or localized and binodal-like.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference drawn from the experimental results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "fa7dcc2d-297c-4b53-81f8-6fea574a0720",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C72",
+      "claim": "When the single-to-multi-layer transition is localized, the resultant macroscopic cell-density heterogeneity could determine the emergence of wrinkled biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "When this transition is localized, regardless of it being caused by antibiotics or physical confinements, the resultant macroscopic cell-density heterogeneity could determine the emergence of wrinkled biofilms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "26669d4f-e951-43e2-aeb4-48de56225ff6",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C73",
+      "claim": "Exposing bacterial swarms to stressors such as kanamycin, a physical barrier or UV light, may inadvertently increase their resilience by promoting the formation of biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "While more complex signaling pathways regulating biofilm matrix production are likely involved in the passage from localized multi-layers to wrinkles, our results suggest that simply altering the expansion dynamics of a swarm promotes biofilm formation. This implies that exposing bacterial swarms to stressors, such as kanamycin, a physical barrier or UV light, may inadvertently increase their resilience by promoting the formation of biofilms that are much more difficult to eradicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "28ca099c-df81-4890-9890-2f56dd3a94c1",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C74",
+      "claim": "When a ~ sevenfold greater dose of kanamycin (200 \u00b5g) was used in the diffusion disk, wrinkles still appeared on the plate, although at a greater distance from the disk.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when we used a ~ sevenfold greater dose of kanamycin in the diffusion disk (200 \u00b5g), wrinkles still appeared on the plate, although at a greater distance from the disk (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "5b90ea09-a08f-4268-a9a0-27d14d56790a",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C75",
+      "claim": "The emergence of wrinkles was greatly inhibited when kanamycin was administrated sequentially, despite keeping constant the total amount of antibiotic added to the disk.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of wrinkles was greatly inhibited when kanamycin was administrated sequentially, despite keeping constant the total amount of antibiotic added to the disk (Figure 6b,c and Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "0c7b6205-1564-4ce0-8fbf-3a08b3910020",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C76",
+      "claim": "The effect of sequential antibiotic administration was most evident when the second dose was greater than the first.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect was most evident when the second dose was greater than the first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "dc9f7aa5-d24d-4f46-852f-de65954b8b7e",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C77",
+      "claim": "Sequential antibiotic administration proposes a promising strategy for treating bacterial collectives with aminoglycosides while minimizing the emergence of biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "These results thus propose a promising strategy for treating bacterial collectives with aminoglycosides while minimizing the emergence of biofilms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results on sequential antibiotic administration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "d7f0c4d5-d229-4518-8034-f04f8bd6da20",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C78",
+      "claim": "This work reveals a biophysical mechanism underpinning the initial stage of the collective stress-induced transition from swarms to biofilm in B. subtilis, governed by motility and cell density.",
+      "claim_type": "EXPLICIT",
+      "source": "This work reveals a biophysical mechanism underpinning the initial stage of the collective stress-induced transition from swarms to biofilm in B. subtilis, governed by motility and cell density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main findings supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "1f86df17-3569-4147-9e52-f29694a52878",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C79",
+      "claim": "The mechanism is based on the halting of swarming expansion, which promotes the accumulation of cells at the front, resulting in the formation of MIPS-like multi-layered islands.",
+      "claim_type": "EXPLICIT",
+      "source": "This is based on the halting of swarming expansion, which promotes the accumulation of cells at the front, resulting in the formation of MIPS-like multi-layered islands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the mechanism supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "7d5af448-5784-4358-8d72-600fa4131c09",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C80",
+      "claim": "Upon exposure to the aminoglycoside kanamycin, the swarming colony expresses the tapA-sipW-tasA operon and eventually develops a wrinkled biofilm.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon exposure to the aminoglycoside kanamycin, the swarming colony expresses the tapA-sipW-tasA operon and eventually develops a wrinkled biofilm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "4b58cf9d-262b-4c2b-aa1f-01d09f7e094e",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C81",
+      "claim": "A sequential antibiotic monotherapy can be effective in reducing biofilm formation from a swarming colony in B. subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, based on our findings, we show that a sequential antibiotic monotherapy can be effective in reducing biofilm formation from a swarming colony in B. subtilis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "44a6c8af-0586-4d3c-b95e-aeea02567580",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C82",
+      "claim": "Similar transitions should also happen in other bacterial species because the underpinning mechanism is an emergent phenomenon driven by physical interactions between swarming cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As the underpinning mechanism of the transition is an emergent phenomenon driven by physical interactions between swarming cells, we believe similar transitions should also happen in other bacterial species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the physical nature of the mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "c05eef6f-335c-46e8-822b-20cccb718487",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C83",
+      "claim": "It would be interesting to examine if swarms of clinically relevant bacteria, such as Pseudomonas aeruginosa and Salmonella enterica, may also transit into biofilms through a similar process.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be interesting, for example, to examine if swarms of clinically relevant bacteria, such as Pseudomonas aeruginosa and Salmonella enterica, may also transit into biofilms through a similar process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "aad2be3f-c748-4867-9412-dcb0e9351f2a",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C84",
+      "claim": "A local cell-density increase caused by the halting of the swarming front may be part of a general collective stress response mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present case, a local cell-density increase caused by the halting of the swarming front, may be part of a general collective stress response mechanism, which triggers a switch in the collective behavior from swarming to biofilm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the broader implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "45d7c73d-ecf5-4011-8891-95497fcdaadb",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C85",
+      "claim": "The stress response mechanism at the collective level could allow the swarming colony to develop biofilms in response to various stressors, regardless of the stressors' exact molecular mode of action.",
+      "claim_type": "EXPLICIT",
+      "source": "The stress response mechanism that we observe at the collective level could allow the swarming colony to develop biofilms in response to various stressors, regardless of the stressors' exact molecular mode of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the generality of the mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "93f9e102-7388-4fc7-8a6b-301fcad75606",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C86",
+      "claim": "This form of environmental sensing and adaptation of cell collectives via cell-density increase may be common to other biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that further research will determine whether this form of environmental sensing and adaptation of cell collectives via cell-density increase is common to other biological systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "c34ba0ee-267b-4a59-a327-ee015e40cd54",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C87",
+      "claim": "The connection discovered could represent a primitive example of a collective mechanochemical feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this idea is in line with recent advancements in the understanding of mechanochemical feedback in development and disease, where local cell density can determine the fates of cell collectives (Hannezo and Heisenberg, 2019). The connection we discovered could represent a primitive example of a collective mechanochemical feedback loop, underpinned by one of the most fundamental types of emergent phenomena (MIPS) in collections of motile agents either alive or synthetic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference connecting the findings to broader biological concepts, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "6cf6989d-c18e-4d5e-9aa0-9bfad4b6261e",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C88",
+      "claim": "The gained biophysical insights may offer new biomedical treatment strategies against the rise of biofilm-associated antimicrobial resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, the gained biophysical insights may not only offer new biomedical treatment strategies against the rise of biofilm-associated antimicrobial resistance but may also contribute to our understanding of development and cell-fate determination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "f070217e-fc09-40ee-bd23-645a8eccf5b7",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C89",
+      "claim": "It is unclear whether the molecular signaling mechanisms driving biofilm development from planktonic cells are identical to those from swarms.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is unclear whether the molecular signaling mechanisms driving biofilm development from planktonic cells are identical to those from swarms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of uncertainty about molecular mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "137f43fa-86ca-45f3-93d5-6e35a83a2182",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C90",
+      "claim": "The expression of biofilm matrix genes is regulated by various complex pathways, where Spo0A, SinR and AbrB are central regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of biofilm matrix genes is regulated by various complex pathways, where Spo0A, SinR and AbrB being central regulators (Vlamakis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "4d44a1df-643f-40f6-94a2-28e9c0984016",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C91",
+      "claim": "If swarms develop biofilms through different pathways, elucidating the molecular regulatory machinery during the transition from swarm to biofilm may unveil new molecular pathways regulating biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "If swarms develop biofilms through different pathways, elucidating the molecular regulatory machinery during the transition from swarm to biofilm may unveil new molecular pathways regulating biofilm formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future discoveries.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "9015d2f0-d70c-4d56-9d48-5d4ceda7b97c",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "claim_id": "C92",
+      "claim": "The biophysical transition suggests that the stage at which a swarming collective loses the ability to adapt to environmental changes happens once the ageing swarm cannot be driven anymore to within the putative MIPS region by the external stressor.",
+      "claim_type": "EXPLICIT",
+      "source": "From the perspective of biofilm being a multicellular adaptation, it would be interesting to determine the stage at which a swarming collective loses the ability to adapt to environmental changes. The biophysical transition that we report here would suggest that this happens once the ageing swarm cannot be driven anymore to within the putative MIPS region by the external stressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the MIPS framework.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b69516d1-545e-45af-80c4-c8c5f1a219f8",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Kanamycin exposure induces biofilm formation in swarming B. subtilis colonies. When exposed to a spatial gradient of kanamycin, swarming B. subtilis cells halt their expansion near the antibiotic source and subsequently develop prominent wrinkles characteristic of biofilms at a specific distance from the kanamycin disk, accompanied by increased expression of the biofilm matrix operon tapA-sipW-tasA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22, C24-C25, C28, C30-C31, and C80 collectively demonstrate kanamycin-induced biofilm formation with quantitative measurements of wrinkle wavelength, roughness, distance from antibiotic source, and gene expression. The data show dose-dependent spatial positioning of wrinkles and increased tasA expression (C28), providing converging evidence for the swarm-to-biofilm transition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "67c78fa3-ebfb-4cde-8cc2-538e15b49d53",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cell motility plays a fundamental role in kanamycin-induced biofilm formation. The \u0394eps mutant capable of swarming but impaired in biofilm formation showed no wrinkles when exposed to kanamycin, and kanamycin promoted wrinkle formation significantly more in swarming colonies than in non-motile cultures on hard agar.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 provide genetic evidence through the \u0394eps mutant, while C32-C34 provide comparative evidence between motile and non-motile conditions. Together, these claims establish that motility is essential for the kanamycin-induced swarm-to-biofilm transition, distinguishing this phenomenon from static biofilm formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Swarming B. subtilis undergoes a progressive transition from monolayer to multilayer through transient jamming events and formation of dynamic multilayered 'islands'. As surface coverage increases from ~20% to \u226560%, cells exhibit jamming events (~1-2 s duration) where cell speed drops and groups protrude from the monolayer. These jams lead to permanent multilayered islands (~27,000 \u03bcm\u00b2) with fluctuating boundaries where motile cells continuously exchange between layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C46 provide detailed temporal and spatial characterization of the monolayer-to-multilayer transition with quantitative measurements of surface coverage thresholds, jamming duration, island size, and cell dynamics. The observations are supported by microscopy data showing the progressive nature of the transition and the dynamic, motile character of cells within islands.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "89a6042a-c729-4303-b3d9-f5f4d42dfb46",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The spatial pattern of multilayer island formation differs dramatically in the presence versus absence of kanamycin. Without kanamycin, islands emerge simultaneously throughout the plate in a granular pattern (~2000 \u03bcm\u00b2) reminiscent of spinodal decomposition. With kanamycin, well-defined islands emerge within a ~5 mm band near the arrested swarming front and grow anisotropically, resembling binodal phase separation in a gradient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 describe distinct spatial patterns of island formation under different conditions, supported by macroscopic imaging data. The comparison to spinodal versus binodal phase separation (C48, C51) provides theoretical context, though these are inferences rather than direct demonstrations of these physical processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "e8d87063-1c6b-44cb-8673-b324ce5bd210",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Phr quorum-sensing system is not responsible for the multilayer transition. Both \u0394phrC and \u0394opp mutant strains lacking the Phr quorum-sensing system showed wild-type phenomenology of wrinkled biofilms and island emergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by experimental data with quorum-sensing mutants (Figure 3\u2014figure supplement 4). The observation that mutants lacking quorum sensing still form islands and biofilms provides evidence that this particular signaling system is not required for the transition, though other molecular pathways may still be involved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "32722e1c-a904-435b-ae35-ede02670f753",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The mechanism of multilayer island formation is compatible with motility-induced phase separation (MIPS). Bacterial jams cluster in the phase space region predicted for MIPS in two-dimensional self-propelled disks, characterized by appropriate surface coverage (\u226560%) and rotational P\u00e9clet number. Jamming events show sudden drops in cell speed consistent with MIPS predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59, C4, and C71 demonstrate agreement between experimental observations and MIPS theoretical predictions through phase diagram analysis (Figure 4a). The clustering of jams in the predicted MIPS region and the observed speed reduction during jamming provide quantitative support. However, the authors acknowledge using an 'effective' P\u00e9clet number from average velocities rather than individual particle tracking, which may overestimate values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "04e6cd66-15e7-468a-a180-474f32f24f3f",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "UV light-induced local cell accumulation can trigger multilayer island formation consistent with MIPS predictions. When a localized region is illuminated, cell density increases significantly (\u03c6 \u2243 0.42 to \u03c6 \u2243 0.7 in 2 min) through accumulation from non-irradiated regions, leading to jams and multilayer islands. Jamming occurs only for cell densities within the range predicted by MIPS theory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 provide experimental validation of the MIPS mechanism through controlled manipulation of cell density and speed using UV light. The experiments distinguish between global UV illumination (no island formation) and localized illumination (island formation), demonstrating that local density increase is sufficient to trigger the transition. The phase space trajectories (Figure 4d) support the MIPS interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "727887a0-701f-4752-9b83-93bca4ca3c51",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A physical barrier induces swarm-to-biofilm transition through local cell density increase. Blocking swarm expansion with a physical barrier led to multilayer island formation near the barrier, followed by wrinkle development after 36 hr incubation, accompanied by stronger local expression of tasA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C68-C70 demonstrate that a purely physical perturbation (barrier) can induce the same swarm-to-biofilm transition as chemical stress (kanamycin), supporting the hypothesis that local density increase is the key trigger. The observation of tasA upregulation (C70) links the physical transition to molecular biofilm pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "7056e0bb-7ec3-4ba1-8069-d165a3d5af1b",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sequential antibiotic administration reduces biofilm formation from swarming colonies. When 200 \u03bcg kanamycin was administered in two doses rather than all at once, wrinkle formation was greatly inhibited, with the effect most evident when the second dose was greater than the first.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 and C81 present a therapeutic strategy based on the mechanistic insights, supported by experimental data (Figure 6). The sequential dosing approach targets the multilayer region before biofilm completion. However, this is demonstrated only in B. subtilis on agar plates, and clinical applicability remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "143bee17-43a7-444e-949a-b04660a64493",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The initial stage of stress-induced swarm-to-biofilm transition is underpinned by a biophysical mechanism governed by motility and cell density. The mechanism is based on halting of swarming expansion, which promotes cell accumulation at the front, resulting in MIPS-like multilayered island formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C78-C79 summarize the main mechanistic finding supported by the collective experimental evidence. The biophysical mechanism is demonstrated through multiple stressors (kanamycin, UV, physical barrier) all producing similar multilayer transitions, and the compatibility with MIPS theory provides a unifying physical framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "632df190-d861-4286-8593-21bc9766415d",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Exposing bacterial swarms to stressors may inadvertently increase their resilience by promoting biofilm formation. The authors infer that stressors like kanamycin, physical barriers, or UV light could promote formation of biofilms that are more difficult to eradicate than swarms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is a logical inference from the experimental results showing that multiple stressors induce biofilm formation. This is supported by the established knowledge that biofilms are more stress-tolerant than swarms (C8-C9), though the specific resilience comparison for the induced biofilms versus the original swarms is not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "ac1a08c1-263a-4776-8f18-376ed0051222",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge from prior literature establishes the context for the study. This includes: multicellular behaviors enhance stress tolerance; biofilms and swarming are ancient forms of bacterial adaptation; biofilms are more stress-tolerant than isolated cells; various stressors can induce biofilms from planktonic cells; MIPS theory predicts spontaneous cluster formation in motile particle systems; and cell-density heterogeneity can lead to biofilm formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C18, C23, C29, C55, C60, and C90 represent established knowledge from prior literature, appropriately cited. These provide the scientific foundation and theoretical framework for the current study. The citations appear accurate and relevant to the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    },
+    {
+      "id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b",
+      "content_id": "bc494671-068d-4088-9a91-f46e6810d35a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate about broader implications and future directions. They suggest the mechanism may be general to other bacterial species, could represent a primitive mechanochemical feedback loop, may offer new treatment strategies, and raise questions about molecular pathways and adaptive capacity limits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C92 are explicitly speculative statements about future research directions and broader implications. While these are reasonable extrapolations from the findings, they are not tested in the current work. The speculation about clinical applications (C83, C88) and generality to other species (C82) would require additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:05:29.310410Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cb05fcaf-b394-4ecb-8939-e2b059058871",
+      "result_id": "b69516d1-545e-45af-80c4-c8c5f1a219f8"
+    },
+    {
+      "claim_id": "c9aa66c0-864c-4847-98d3-0706016cf35c",
+      "result_id": "b69516d1-545e-45af-80c4-c8c5f1a219f8"
+    },
+    {
+      "claim_id": "01c6bd95-a463-4cba-88f3-4a1ff36269dd",
+      "result_id": "b69516d1-545e-45af-80c4-c8c5f1a219f8"
+    },
+    {
+      "claim_id": "b7809ada-b3f7-4331-a27c-460fd8651eb3",
+      "result_id": "b69516d1-545e-45af-80c4-c8c5f1a219f8"
+    },
+    {
+      "claim_id": "cf2fd97c-c452-4927-afa8-4d5b8fc5a221",
+      "result_id": "b69516d1-545e-45af-80c4-c8c5f1a219f8"
+    },
+    {
+      "claim_id": "b9985357-5791-48fb-9236-0d1e202dce93",
+      "result_id": "b69516d1-545e-45af-80c4-c8c5f1a219f8"
+    },
+    {
+      "claim_id": "a8c9c6de-7e37-4a58-8962-684d4497bfcf",
+      "result_id": "b69516d1-545e-45af-80c4-c8c5f1a219f8"
+    },
+    {
+      "claim_id": "067cad0c-2b43-4b18-b094-d76d36fe3fed",
+      "result_id": "b69516d1-545e-45af-80c4-c8c5f1a219f8"
+    },
+    {
+      "claim_id": "1a68aa52-6917-4d1d-ab70-f9a540aeb9a7",
+      "result_id": "b69516d1-545e-45af-80c4-c8c5f1a219f8"
+    },
+    {
+      "claim_id": "7d5af448-5784-4358-8d72-600fa4131c09",
+      "result_id": "b69516d1-545e-45af-80c4-c8c5f1a219f8"
+    },
+    {
+      "claim_id": "81d6bf4f-1770-43e5-b927-0d06e97b1857",
+      "result_id": "67c78fa3-ebfb-4cde-8cc2-538e15b49d53"
+    },
+    {
+      "claim_id": "4b8143a6-b7cb-41cc-b97f-e324e09301ba",
+      "result_id": "67c78fa3-ebfb-4cde-8cc2-538e15b49d53"
+    },
+    {
+      "claim_id": "93c53f54-9c94-4b82-acb4-34bbc6ec8f50",
+      "result_id": "67c78fa3-ebfb-4cde-8cc2-538e15b49d53"
+    },
+    {
+      "claim_id": "7867ad6a-aa14-4bf1-bfb8-30b136165c4f",
+      "result_id": "67c78fa3-ebfb-4cde-8cc2-538e15b49d53"
+    },
+    {
+      "claim_id": "d5cdeabf-d001-4617-95ed-04b46f805053",
+      "result_id": "67c78fa3-ebfb-4cde-8cc2-538e15b49d53"
+    },
+    {
+      "claim_id": "7c2bc0c3-c184-4c09-a352-bb6fd69bd767",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "369ee11d-8e49-42f8-97ad-f3a57f427c8f",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "c9da370c-b010-41bc-a591-7ce52aae0218",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "0def56bd-0112-41e1-9ba8-698085f8f578",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "67a46d6d-237c-4fa9-8b9d-5a75d3436ac4",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "ea5827e4-77cf-498b-9fc9-34eaecfaa3a1",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "4b6e101b-f0df-4d60-8361-8d739b9e15fd",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "dbf061c7-087d-4642-9030-0b8355e4ca71",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "edc838ef-d062-4320-a6d4-37fc4e477cba",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "2787154b-944b-4cb1-a7f7-7be4f789704e",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "a65dbc14-772b-4b60-bc09-2d0aed41b490",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "298c5aae-9556-43eb-9c12-0cb28b96085a",
+      "result_id": "ed2247ab-3fd9-4aa9-8b32-44dda97f4a54"
+    },
+    {
+      "claim_id": "3f27a47e-df24-43fc-a4ce-8e5cf778498e",
+      "result_id": "89a6042a-c729-4303-b3d9-f5f4d42dfb46"
+    },
+    {
+      "claim_id": "67652eb7-5a34-4826-a52c-8a3364987341",
+      "result_id": "89a6042a-c729-4303-b3d9-f5f4d42dfb46"
+    },
+    {
+      "claim_id": "5264eb7d-5c64-449e-b5d8-847b553c198e",
+      "result_id": "89a6042a-c729-4303-b3d9-f5f4d42dfb46"
+    },
+    {
+      "claim_id": "5f6657dc-43fe-4386-a16f-c56268a9c916",
+      "result_id": "89a6042a-c729-4303-b3d9-f5f4d42dfb46"
+    },
+    {
+      "claim_id": "8a4cd4d0-d60e-4db4-9911-27276b703b9c",
+      "result_id": "89a6042a-c729-4303-b3d9-f5f4d42dfb46"
+    },
+    {
+      "claim_id": "5ccaf162-fc1c-4626-965c-e8abb54c5f1b",
+      "result_id": "89a6042a-c729-4303-b3d9-f5f4d42dfb46"
+    },
+    {
+      "claim_id": "dd54261d-98b2-49ab-8c81-04521aa26c1c",
+      "result_id": "e8d87063-1c6b-44cb-8673-b324ce5bd210"
+    },
+    {
+      "claim_id": "c584b4e7-ed6e-48f9-a843-a5e762b2d702",
+      "result_id": "e8d87063-1c6b-44cb-8673-b324ce5bd210"
+    },
+    {
+      "claim_id": "7028b783-0129-4541-967e-71d9f31a8316",
+      "result_id": "32722e1c-a904-435b-ae35-ede02670f753"
+    },
+    {
+      "claim_id": "3944c558-c030-4311-afac-8a147c1f0035",
+      "result_id": "32722e1c-a904-435b-ae35-ede02670f753"
+    },
+    {
+      "claim_id": "b3170482-886b-472d-9b9e-79b93f224965",
+      "result_id": "32722e1c-a904-435b-ae35-ede02670f753"
+    },
+    {
+      "claim_id": "48d9249a-928f-44e7-8d70-45fe97c177aa",
+      "result_id": "32722e1c-a904-435b-ae35-ede02670f753"
+    },
+    {
+      "claim_id": "da7fc1f4-237f-4e25-92b3-ec1e568ea5b7",
+      "result_id": "32722e1c-a904-435b-ae35-ede02670f753"
+    },
+    {
+      "claim_id": "84ce9d74-5e3e-4378-8d40-a76039055cf0",
+      "result_id": "32722e1c-a904-435b-ae35-ede02670f753"
+    },
+    {
+      "claim_id": "ccad7596-64ea-42fe-9959-fe592efd6b17",
+      "result_id": "04e6cd66-15e7-468a-a180-474f32f24f3f"
+    },
+    {
+      "claim_id": "39bbd415-9bd1-4295-82df-928d1c9e80f3",
+      "result_id": "04e6cd66-15e7-468a-a180-474f32f24f3f"
+    },
+    {
+      "claim_id": "cfc9c6c7-f1b4-49fd-8746-5d52e5a55faa",
+      "result_id": "04e6cd66-15e7-468a-a180-474f32f24f3f"
+    },
+    {
+      "claim_id": "3369d10e-b8e4-4e20-964e-831c299929dd",
+      "result_id": "04e6cd66-15e7-468a-a180-474f32f24f3f"
+    },
+    {
+      "claim_id": "c90c69e4-3cef-4f14-b43f-1b00c1ec2e6f",
+      "result_id": "04e6cd66-15e7-468a-a180-474f32f24f3f"
+    },
+    {
+      "claim_id": "d2d3f038-12bb-4778-9c15-76ef4b108882",
+      "result_id": "04e6cd66-15e7-468a-a180-474f32f24f3f"
+    },
+    {
+      "claim_id": "c9d7e462-9c5c-44d2-a65c-de87bfb058f6",
+      "result_id": "04e6cd66-15e7-468a-a180-474f32f24f3f"
+    },
+    {
+      "claim_id": "bf6f47ed-ae39-4e72-ac3d-ea4419e0eec7",
+      "result_id": "727887a0-701f-4752-9b83-93bca4ca3c51"
+    },
+    {
+      "claim_id": "285e8bd1-2f14-438c-aeda-92fe9227c2a7",
+      "result_id": "727887a0-701f-4752-9b83-93bca4ca3c51"
+    },
+    {
+      "claim_id": "45d5a804-55d8-4871-8317-8f6f653f1b87",
+      "result_id": "727887a0-701f-4752-9b83-93bca4ca3c51"
+    },
+    {
+      "claim_id": "7143db03-369b-4264-b515-0eda0e840b1a",
+      "result_id": "727887a0-701f-4752-9b83-93bca4ca3c51"
+    },
+    {
+      "claim_id": "28ca099c-df81-4890-9890-2f56dd3a94c1",
+      "result_id": "7056e0bb-7ec3-4ba1-8069-d165a3d5af1b"
+    },
+    {
+      "claim_id": "5b90ea09-a08f-4268-a9a0-27d14d56790a",
+      "result_id": "7056e0bb-7ec3-4ba1-8069-d165a3d5af1b"
+    },
+    {
+      "claim_id": "0c7b6205-1564-4ce0-8fbf-3a08b3910020",
+      "result_id": "7056e0bb-7ec3-4ba1-8069-d165a3d5af1b"
+    },
+    {
+      "claim_id": "dc9f7aa5-d24d-4f46-852f-de65954b8b7e",
+      "result_id": "7056e0bb-7ec3-4ba1-8069-d165a3d5af1b"
+    },
+    {
+      "claim_id": "4b58cf9d-262b-4c2b-aa1f-01d09f7e094e",
+      "result_id": "7056e0bb-7ec3-4ba1-8069-d165a3d5af1b"
+    },
+    {
+      "claim_id": "07fd460a-12c8-44fc-80b0-e29d70ff9fd2",
+      "result_id": "143bee17-43a7-444e-949a-b04660a64493"
+    },
+    {
+      "claim_id": "d7f0c4d5-d229-4518-8034-f04f8bd6da20",
+      "result_id": "143bee17-43a7-444e-949a-b04660a64493"
+    },
+    {
+      "claim_id": "1f86df17-3569-4147-9e52-f29694a52878",
+      "result_id": "143bee17-43a7-444e-949a-b04660a64493"
+    },
+    {
+      "claim_id": "26669d4f-e951-43e2-aeb4-48de56225ff6",
+      "result_id": "632df190-d861-4286-8593-21bc9766415d"
+    },
+    {
+      "claim_id": "1bdc417e-9dd7-4a4e-b65a-0943e2e30e58",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "c1674ee9-7bf4-4eb4-81dd-e4e5b466d001",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "b0cfe3f5-9551-4a0a-bee4-ffd7d95fa059",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "5164f690-689f-4edc-8cbd-e6050cfa20e7",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "f4bceb19-f2eb-4b64-a916-268666ebbe6f",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "31371d1a-c693-47f2-9f11-b57edc95ec8f",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "e1f9baaa-aef4-4643-a0ad-ddf84ccc9033",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "eb3c125a-77ed-41aa-ab8f-c2ab7d5f6fb8",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "fa27f536-37db-43c8-b0c7-4f38e6dba23a",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "923c5a95-ef15-47fd-9063-561a50bc25ce",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "eb1d5eb6-5c9c-4d4e-a79d-4ca0ec0c33dc",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "e51ed461-b4c9-41fd-887b-95bc86866802",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "bcaf5876-4e83-4485-b777-2f74885ebca1",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "00009ae1-f2af-4857-a6c7-55dfcf45275c",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "9c5e6e6f-7307-4087-beaa-ed1362c57b48",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "e1eaed83-b9a8-4d1c-8f2d-2a64d67e4cb0",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "3b843716-0b73-49d5-a694-85bad0fd8461",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "137f43fa-86ca-45f3-93d5-6e35a83a2182",
+      "result_id": "ac1a08c1-263a-4776-8f18-376ed0051222"
+    },
+    {
+      "claim_id": "44a6c8af-0586-4d3c-b95e-aeea02567580",
+      "result_id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b"
+    },
+    {
+      "claim_id": "c05eef6f-335c-46e8-822b-20cccb718487",
+      "result_id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b"
+    },
+    {
+      "claim_id": "aad2be3f-c748-4867-9412-dcb0e9351f2a",
+      "result_id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b"
+    },
+    {
+      "claim_id": "45d7c73d-ecf5-4011-8891-95497fcdaadb",
+      "result_id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b"
+    },
+    {
+      "claim_id": "93f9e102-7388-4fc7-8a6b-301fcad75606",
+      "result_id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b"
+    },
+    {
+      "claim_id": "c34ba0ee-267b-4a59-a327-ee015e40cd54",
+      "result_id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b"
+    },
+    {
+      "claim_id": "6cf6989d-c18e-4d5e-9aa0-9bfad4b6261e",
+      "result_id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b"
+    },
+    {
+      "claim_id": "f070217e-fc09-40ee-bd23-645a8eccf5b7",
+      "result_id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b"
+    },
+    {
+      "claim_id": "4d44a1df-643f-40f6-94a2-28e9c0984016",
+      "result_id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b"
+    },
+    {
+      "claim_id": "9015d2f0-d70c-4d56-9d48-5d4ceda7b97c",
+      "result_id": "5c23a9b0-7598-431b-88a3-9e98a7cb909b"
+    }
+  ],
+  "comparisons": []
+}

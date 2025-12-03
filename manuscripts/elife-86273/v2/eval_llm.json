@@ -1,0 +1,581 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "CGNs comprise more than 99% of all neurons and 85% of all cells in the cerebellum, making them a suitable model for studying neurodevelopment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are supported by citations to established literature (Consalez et al., 2021 and Altman and Bayer, 1997). These are well-established facts in the field that justify the use of CGNs as a model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Global H3K27me3 levels significantly increase from P7 to P14 and are maintained at P60 in mouse cerebellum, while H3K27ac levels decrease, consistent with PRC2-dependent restriction of cell potential upon terminal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 are supported by Western blot data with statistical significance (Figure 1B and Figure 1\u2014figure supplement 1A). The interpretation is consistent with established knowledge about PRC2 function during differentiation (van Mierlo et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Bidirectional changes in H3K27me3 distributions occur during postmitotic stages of neuronal maturation (P7-P60), with demethylated peaks overrepresented at promoters and methylated peaks distributed across genomic regions, suggesting H3K27me3 has functions beyond cell fate commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 are supported by ChIP-seq data with appropriate statistical thresholds (FDR <0.05, |L2FC|>2) and genomic annotation analysis (Figure 1C-E). The observation of continued H3K27me3 changes after cell fate commitment (P14-P60) provides strong evidence for postmitotic regulation. Three biological replicates were used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "3618 differential H3K27me3 peaks were identified across developmental time points, with 1805 at promoters. Specific genes like Grin2c lose H3K27me3 while Mycn gains it, inversely correlating with their expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by differential peak analysis using DESeq2 with strict cutoffs and specific examples shown in ChIP-seq tracks (Figure 1F). The inverse correlation between H3K27me3 changes and gene expression is demonstrated for specific genes with known expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Hierarchical clustering identified three major clusters of differential H3K27me3 at promoters: 'Up', 'Down (Fast)', and 'Down (Slow)'. Promoters gaining H3K27me3 show decreased H3K4me3, while those losing H3K27me3 show increased H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are supported by hierarchical clustering analysis (Figure 2A) and H3K4me3 ChIP-seq data from Yamada et al., 2014 (Figure 2B). The inverse relationship between H3K27me3 and H3K4me3 dynamics is statistically significant and consistent with bivalent chromatin biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Changes in H3K27me3 inversely correlate with H3K27ac enrichment and chromatin accessibility at the same promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by analysis of H3K27ac ChIP-seq and DNase-seq data (Figure 2\u2014figure supplement 1). The inverse correlation is consistent with the mutually exclusive nature of H3K27me3 and H3K27ac modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "H3K27me3 'Up' cluster is enriched for proliferation genes, while 'Down' clusters are enriched for neuronal genes. H3K27me3 dynamics at promoters correlate with gene expression changes, with 'Fast' and 'Slow' clusters differing in timing but not magnitude of expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 are supported by Gene Ontology analysis (Figure 2C) and correlation with RNA-seq data (Figure 2D-E). Statistical significance is demonstrated for the associations between H3K27me3 changes and gene expression. The timing-based distinction between Fast and Slow clusters is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "207 differential non-promoter H3K27me3 peaks overlap with H3K4me1, representing putative enhancers. These show inverse correlation with H3K27ac. Specific enhancers near Mycn and Grin2c were identified and validated by PLAC-seq, but the majority (~95%) of differential H3K27me3 peaks do not overlap enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 are supported by overlap analysis with H3K4me1 data from Ramirez et al., 2022 (Figure 3A-B) and validation with PLAC-seq data from Goodman et al., 2020. The finding that most differential H3K27me3 peaks are not at enhancers is an important observation about the genomic distribution of H3K27me3 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Only 214 (1.6%) of 13,409 differential H3K27ac peaks also show developmentally regulated H3K27me3, indicating that developmental changes in H3K27me3 at CGN regulatory elements are biased toward gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by overlap analysis between differential H3K27ac and H3K27me3 peaks (Figure 3\u2014figure supplement 1B). The low percentage of overlap provides strong evidence for the promoter bias of H3K27me3 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "RNA-seq shows a developmental switch between dominant H3K27 methyltransferases and demethylases, but overall expression levels remain stable. Kdm6b is transiently induced in newborn CGNs and its knockdown impairs expression of developmentally induced genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by RNA-seq data (Figure 4\u2014figure supplement 1) and previous experimental data from the authors' lab (Wijayatunge et al., 2018). Claim C54 is presented as a hypothesis to be tested, which is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Conditional knockout of Kdm6b in cerebellar GNPs results in 111 genes with elevated expression and 150 genes with reduced expression at P14. Genes elevated in Kdm6b-cKO are highest at P7 in controls, while reduced genes increase over development, indicating slowed transcriptional maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by RNA-seq analysis of Kdm6b-cKO mice (Figure 4\u2014figure supplement 2A). The experimental design is appropriate with proper controls (WT littermates). The interpretation that Kdm6b deletion slows transcriptional maturation is well-supported by the expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Kdm6b-cKO shows 250 upregulated and 327 downregulated H3K27me3 peaks at P14, with upregulated peaks enriched at promoters of neuronal genes. Gain of H3K27me3 at promoters is associated with significant loss of gene expression, suggesting KDM6B facilitates developmental H3K27me3 loss to promote gene induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 are supported by ChIP-seq analysis (Figure 4B-F) with appropriate statistical thresholds and correlation with RNA-seq data. The enrichment of upregulated H3K27me3 peaks at promoters and their association with reduced gene expression provides strong evidence for KDM6B's role in developmental demethylation. However, the causal relationship is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "BART analysis shows PRC2 components are enriched at all H3K27me3 promoters, but ZIC1/2 transcription factors are specifically enriched only at H3K27me3-Down promoters (both Fast and Slow clusters). The H3K27me3-Up cluster is enriched for different transcription factors including SOX3, FOXF1, SHOX2, POU3F2, and HDAC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by BART analysis (Figure 5A, Figure 5\u2014figure supplement 1A) using published ChIP-seq data. The differential enrichment of ZIC1/2 at demethylated versus methylated promoters is an important finding. The analysis is unbiased and uses appropriate computational methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ZIC1/2 enrichment increases most at genes with H3K27me3 Down. 56% of H3K27me3-Down genes are also ZIC-Up and enriched for neuronal GO terms, while 44% that are not ZIC-Up are enriched for generic cell-fate specification terms. Only 11% of H3K27me3-Up genes overlap with ZIC-Up genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by analysis of ZIC1/2 ChIP-seq data from Frank et al., 2015 (Figure 5A-B). The overlap analysis and GO term enrichment provide strong evidence for the association between ZIC binding and H3K27me3 demethylation at neuronal genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Gene promoters with H3K27me3 peaks 'Up in Kdm6b-cKO' show enrichment of ZIC1/2 binding (72% overlap), while 'Down in Kdm6b-cKO' promoters do not (9% overlap). Examples include Grin2c and Grm4, which are strongly enriched for ZIC1/2 at P60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by BART analysis of Kdm6b-cKO differential peaks (Figure 5\u2014figure supplement 1B-C) and ZIC ChIP-seq tracks (Figure 5C). The high overlap between H3K27me3 Up in Kdm6b-cKO and ZIC-Up genes provides strong evidence for ZIC involvement in KDM6B-mediated demethylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "There is high concordance of gene expression changes between cerebellar maturation in vivo and in culture at early time points, but weaker concordance at late time points, with 7DIV representing approximately P14 in vivo. Dynamic changes in key early and late maturation genes occur in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by RRHO analysis (Figure 6A) and RT-qPCR/RNA-seq data (Figure 6\u2014figure supplement 1A-B). The validation of the culture system is important for subsequent mechanistic experiments. The limitation that 7DIV represents an early stage is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In cultured CGNs, gains in H3K27me3 occur rapidly after cell cycle exit (1688 peaks DIV1-3), while demethylation occurs more gradually (477 peaks DIV1-3, 227 DIV3-5, 25 DIV5-7). Demethylation occurs primarily at promoters, while gains occur more uniformly across genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 are supported by CUT&RUN-seq analysis at multiple time points (Figure 6B-C). The temporal dynamics and genomic distribution patterns are consistent with in vivo observations, validating the culture system. Three biological replicates were used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Genes in the 'H3K27me3 Up from DIV1-7' cluster are associated with early CGN maturation GO terms, while 'Down' cluster genes are associated with functional neuronal terms. Specific genes like Mycn/Atoh1 gain H3K27me3 while Grin2c/Gabrd lose it, correlating with gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 are supported by hierarchical clustering (Figure 6D), GO analysis, CUT&RUN tracks (Figure 6E), and correlation with RNA-seq data. The findings recapitulate in vivo observations, strengthening the validity of both datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Promoters that lose or gain H3K27me3 in culture show corresponding changes in vivo. The culture system recapitulates H3K27me3 dynamics at Mycn and Grin2c enhancers, validating its use for mechanistic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by comparison of in vitro and in vivo H3K27me3 data (Figure 6\u2014figure supplement 1E) and CUT&RUN tracks at enhancers (Figure 6F). The concordance between culture and in vivo systems validates the use of cultures for subsequent pharmacological experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The IC50 of GSK-J4 in CGNs is ~3.07 \u00b5M and GSK-126 is ~7.32 \u00b5M. GSK-126 causes dose-dependent loss of H3K27me3 and increase in H3K27ac, but GSK-J4 fails to change H3K27me3 at non-toxic doses. The therapeutic range of GSK-J4 is too small for use in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 are supported by cell viability assays (Figure 7\u2014figure supplement 1A) and Western blot/CUT&RUN data (Figure 7A, Figure 7\u2014figure supplement 1B-E). The conclusion that GSK-J4 cannot be used in neurons is well-justified by the narrow therapeutic window. This is an important negative result that guides future experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Most regions showing differential methylation upon GSK-126 treatment have reduced H3K27me3, with a similar genomic distribution to overall H3K27me3 peaks. GSK-126-sensitive peaks are enriched for non-neuronal cell type GO terms. A large number of peaks remain unchanged, suggesting differential sensitivity to EZH2 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 are supported by CUT&RUN analysis after GSK-126 treatment (Figure 7B, Figure 7\u2014figure supplement 2B-D). The observation of differential sensitivity is important and suggests complexity in H3K27me3 regulation. Claim C115 about increases in H3K27me3 is appropriately noted as speculative regarding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Promoters that normally gain H3K27me3 over CGN differentiation are most strongly affected by GSK-126, indicating EZH2 is required for de novo acquisition. Unchanged promoters show some loss, suggesting EZH2 maintains H3K27me3. Promoters that normally lose H3K27me3 retain substantial signal unaffected by EZH2 inhibition, showing differential sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 are supported by metagene plot analysis comparing GSK-126 treated and control cells across different promoter classes (Figure 7C). The differential sensitivity of promoter classes to EZH2 inhibition is an important finding that reveals complexity in H3K27me3 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "GSK-126 treatment increases expression of genes like Mycn and Ebf3 that normally decrease during maturation and have EZH2-dependent H3K27me3 increases. Surprisingly, GSK-126 also reduces expression of late genes like Gabrd and Grin2c, even though H3K27me3 at their promoters/enhancers is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 are supported by RNA-seq and CUT&RUN analysis (Figure 7E-F). The unexpected finding that late genes are reduced despite unchanged H3K27me3 at their promoters is well-documented and represents an important observation about indirect effects of EZH2 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Genes whose promoters normally gain H3K27me3 show increased expression after GSK-126 treatment (DIV1-5), while genes that normally lose H3K27me3 show reduced expression. When GSK-126 is added at DIV3, early genes show no difference but late genes still show reduced expression, demonstrating that proper CGN maturation requires both KDM6B-dependent removal and EZH2-dependent addition of H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 are supported by RNA-seq analysis with different timing of GSK-126 treatment (Figure 7G). The temporal experiment (DIV1-5 vs DIV3-5) is well-designed to test whether early gene upregulation causes late gene downregulation. The conclusion that both demethylation and methylation are required is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Dynamic changes in H3K27me3 continue in postmitotic neurons at specific genomic sites to coordinate temporal gene expression programs underlying functional maturation. Increases occur rapidly after cell cycle exit while demethylation occurs gradually, with kinetics strongly correlating with regulated gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 summarize the main findings supported by multiple lines of evidence including ChIP-seq, CUT&RUN, RNA-seq, and genetic/pharmacological perturbations. The correlation between H3K27me3 turnover kinetics and gene expression is well-demonstrated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "A subset of transcriptional enhancers show developmental H3K27me3 regulation, but there is a bias toward gene promoters, especially for demethylation. Promoters gaining H3K27me3 are enriched for proliferation genes like Atoh1 and Myc, while demethylated promoters include synaptic genes like Grin2c and Grm4, suggesting H3K27me3 demethylation times functional synaptic maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 summarize key findings about genomic distribution and functional categories supported by overlap analysis with H3K4me1, genomic annotation, and GO analysis. The inference about timing of synaptic maturation is reasonable given the gene categories involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Conditional knockout of KDM6B impairs expression of genes induced during CGN maturation. Kdm6b is upregulated in newborn CGNs, potentially tipping the balance toward demethylation. Genes with increased H3K27me3 in Kdm6b-cKO overlap those showing developmental loss, consistent with KDM6B functioning enzymatically to demethylate histones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 are supported by RNA-seq and ChIP-seq analysis of Kdm6b-cKO mice and previous expression data. Claim C146 is appropriately presented as speculation. Claim C148 notes that the enzymatic function is inferred rather than directly proven, which is an appropriate caveat given that scaffolding functions are also possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Chromatin regulators including KDM6B have both scaffolding and enzymatic functions. GSK-J4 is a selective KDM6 inhibitor effective in macrophages at 9 \u00b5M, but causes 50% cytotoxicity in CGNs at 3.1 \u00b5M with no H3K27me3 changes at non-toxic doses. Genetic mutation of KDM6B's JmjC domain offers an alternative approach, and enzymatically dead KDM6B cannot rescue knockout lethality, suggesting enzymatic function is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C156 are supported by established literature (multiple citations), cell viability data, and Western blot/CUT&RUN analysis. The discussion of alternative approaches and previous genetic evidence for enzymatic requirement is appropriate and well-supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "KDM6B-regulated targets include genes encoding products important for synaptic maturation, including Grin2c, Grm4, Gabrd, and Nptxr. Impaired induction of these genes has implications for understanding how KDM6B mutations may lead to ASD behavioral phenotypes via altered neural circuit maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C161 are supported by identification of specific target genes and their known functions (supported by citations). The connection to ASD is reasonable given that KDM6B is a high-confidence ASD risk gene, though the mechanistic link is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C162",
+      "C163"
+    ],
+    "result": "Mutations in DNMT3A that impair DNA methylation appear to be partially compensated by H3K27me3 changes. Whether H3K27me3 modulation functions as a convergence point downstream of multiple ASD-associated chromatin regulators requires future study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C162 is supported by citation to Li et al., 2022. Claim C163 is appropriately presented as speculation requiring future research. This represents an interesting hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "H3K27me3 removal occurs at only a subset of developmentally induced genes. Promoters losing H3K27me3 are strongly enriched for ZIC1/2 binding. ZIC1/2 are strong drivers of CGN maturation and mutations cause cerebellar disorders. However, ZIC1/2 binding is likely a consequence rather than cause of H3K27me3 demethylation given the association with H3K27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C171 are supported by BART analysis, ZIC ChIP-seq data, and established literature about ZIC function. The inference that ZIC binding is a consequence rather than cause of demethylation (C171) is reasonable given the H3K27ac correlation, though this remains to be definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Measuring genome-wide KDM6B enrichment patterns is essential to identify binding partners and direct targets, but existing literature is sparse due to lack of validated antibodies. KDM6B has been shown to localize to promoters/enhancers of neurogenic genes in NSCs and muscle regeneration genes, potentially through interactions with transcription factors and chromatin remodeling complexes like BAF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C178 are supported by citations to relevant literature and acknowledge limitations in the field. The discussion of potential mechanisms for KDM6B targeting is appropriate and well-supported by citations. Claim C172 is presented as a recommendation for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "CGN transcriptional maturation requires both loss of H3K27me3 at late genes and addition at regions gaining this mark in newly postmitotic neurons. Rapid H3K27me3 increases are highly sensitive to EZH2 inhibition with GSK-126. Failure to gain H3K27me3 prevents downregulation of progenitor markers and impairs induction of late genes, though not through direct effects on late gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C185 are supported by CUT&RUN and RNA-seq analysis after GSK-126 treatment. The finding that late gene induction requires H3K27me3 addition elsewhere in the genome is an important and surprising result that is well-documented by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C186",
+      "C187"
+    ],
+    "result": "A prior study showed EZH2 knockout in postmitotic neurons results in loss of H3K27me3 at Prdm13 promoter and enhanced expression of this repressor, leading to reduced target gene expression. However, Prdm13 expression and promoter H3K27me3 are unaffected by EZH2 inhibition in DIV5 CGNs in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C186 is supported by citation to Buontempo et al., 2022. Claim C187 is supported by analysis of Prdm13 in the current study. The difference between studies is appropriately noted and suggests alternative mechanisms may be at play.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Developmental gains in H3K27me3 are split between promoters, gene bodies, and intergenic regions, with most non-promoter peaks not overlapping enhancers. H3K27me3 might contribute to gene regulation through chromatin architecture. PRC2-dependent H3K27me3 can anchor chromatin loops between enhancers and genes, potentially poising genes for later activation. Future studies using techniques like HiCAR could inform how H3K27me3 dynamics contribute to gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C188-C189 are supported by genomic annotation and overlap analysis. Claims C190-C193 are appropriately presented as speculation based on literature (C191 supported by citations). Claim C194 is a reasonable suggestion for future research. However, the proposed mechanism for how H3K27me3 gain enables late gene induction remains speculative and requires experimental validation.",
+    "result_type": "MAJOR"
+  }
+]

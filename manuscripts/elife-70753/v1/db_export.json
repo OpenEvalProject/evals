@@ -1,0 +1,1800 @@
+{
+  "submission": {
+    "id": "9f366a18-0e4a-4b97-a3ec-f347fd751b8b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:31:14.502396Z",
+    "updated_at": "2025-12-03T08:31:14.502396Z"
+  },
+  "content": [
+    {
+      "id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "submission_id": "9f366a18-0e4a-4b97-a3ec-f347fd751b8b",
+      "content_type": "manuscript",
+      "content_text": "# Disrupted PGR-B and ESR1 signaling underlies defective decidualization linked to severe preeclampsia\n\n## Authors\n\n- Tamara Garrido-Gomez<sup>1</sup> ([ORCID: 0000-0002-6584-4832](https://orcid.org/0000-0002-6584-4832)) \u2020\n- Nerea Castillo-Marco<sup>1</sup> ([ORCID: 0000-0002-4817-4777](https://orcid.org/0000-0002-4817-4777))\n- M\u00f3nica Clemente-Ciscar<sup>2</sup>\n- Teresa Cordero<sup>1</sup>\n- Irene Mu\u00f1oz-Blat<sup>1</sup>\n- Alicia Amadoz<sup>2</sup> ([ORCID: 0000-0003-3915-0404](https://orcid.org/0000-0003-3915-0404))\n- Jorge Jimenez-Almazan<sup>2</sup>\n- Rogelio Monfort-Ortiz<sup>3</sup> ([ORCID: 0000-0001-7931-8609](https://orcid.org/0000-0001-7931-8609))\n- Reyes Climent<sup>3</sup>\n- Alfredo Perales-Marin<sup>3</sup> ([ORCID: 0000-0002-2221-2560](https://orcid.org/0000-0002-2221-2560))\n- Carlos Simon<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Igenomix Foundation, INCLIVA Valencia Spain\n2. Igenomix Valencia Spain\n3. Department of Obstetrics and Gynecology, University and Polytechnic La Fe Hospital Valencia Spain\n4. Department of Obstetrics and Gynecology, School of Medicine, Valencia University Valencia Spain\n5. Obstetrics & Gynecology, BIDMC Harvard University Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Decidualization of the uterine mucosa drives the maternal adaptation to invasion by the placenta. Appropriate depth of placental invasion is needed to support a healthy pregnancy; shallow invasion is associated with the development of severe preeclampsia (sPE). Maternal contribution to sPE through failed decidualization is an important determinant of placental phenotype. However, the molecular mechanism underlying the in vivo defect linking decidualization to sPE is unknown.Methods:Global RNA sequencing was applied to obtain the transcriptomic profile of endometrial biopsies collected from nonpregnant women who suffer sPE in a previous pregnancy and women who did not develop this condition. Samples were randomized in two cohorts, the training and the test set, to identify the fingerprinting encoding defective decidualization in sPE and its subsequent validation. Gene Ontology enrichment and an interaction network were performed to deepen in pathways impaired by genetic dysregulation in sPE. Finally, the main modulators of decidualization, estrogen receptor 1 (ESR1) and progesterone receptor B (PGR-B), were assessed at the level of gene expression and protein abundance.Results:Here, we discover the footprint encoding this decidualization defect comprising 120 genes\u2014using global gene expression profiling in decidua from women who developed sPE in a previous pregnancy. This signature allowed us to effectively segregate samples into sPE and control groups. ESR1 and PGR were highly interconnected with the dynamic network of the defective decidualization fingerprint. ESR1 and PGR-B gene expression and protein abundance were remarkably disrupted in sPE.Conclusions:Thus, the transcriptomic signature of impaired decidualization implicates dysregulated hormonal signaling in the decidual endometria in women who developed sPE. These findings reveal a potential footprint that could be leveraged for a preconception or early prenatal screening of sPE risk, thus improving prevention and early treatments.Funding:This work has been supported by the grant PI19/01659 (MCIU/AEI/FEDER, UE) from the Spanish Carlos III Institute awarded to TGG. NCM was supported by the PhD program FDGENT/2019/008 from the Spanish Generalitat Valenciana. IMB was supported by the PhD program PRE2019-090770 and funding was provided by the grant RTI2018-094946-B-100 (MCIU/AEI/FEDER, UE) from the Spanish Ministry of Science and Innovation with CS as principal investigator. This research was funded partially by Igenomix S.L.\n\n## Introduction\n\nPreeclampsia (PE) is a severe complication of late pregnancy and is the second leading cause of maternal mortality in the US, affecting 8% of first-time pregnancies (Gifford, 2000). PE is characterized by the onset of hypertension, proteinuria, and other signs of maternal vascular damage that contributes to maternal and neonatal mortality and morbidity (Gifford, 2000). Severe preeclampsia (sPE) is diagnosed based on elevated blood pressure (systolic \u2265160 or diastolic of \u2265100 mm Hg) or thrombocytopenia, impaired liver function, progressive renal insufficiency, pulmonary edema, or the onset of cerebral or visual disturbances (Gynecologists ACoOa, Pregnancy TFoHi, 2013). sPE is a placental insufficiency syndrome mediated by early-deficient extravillous trophoblast (EVT) invasion of uterine decidua and spiral arterioles, leading to incomplete endovascular invasion and altered uteroplacental perfusion (Roberts and Cooper, 2001; Brosens et al., 2019; Staff et al., 2020). Why shallow EVTs invasion occurs, however, remains to be determined (Fisher, 2015).\n\nPregnancy health is dictated by the embryo, placenta, and the quality of the maternal decidua, where EVTs invasion and remodeling of maternal spiral arteries occur (Norwitz et al., 2001; Cha et al., 2012). Accumulated evidence suggests that the contribution of the decidua to the etiology of PE (Rabaglino et al., 2015), sPE (Garrido-Gomez et al., 2017; Garrido-Gomez et al., 2020; Garrido-G\u00f3mez et al., 2020), and placenta accreta (McNally et al., 2020) is significant, and cellular signaling in the decidua may determine whether these conditions develop. Decidualization is the remodeling of the endometrium initiated after ovulation that is necessary for adequate trophoblast invasion and subsequent placentation (Gellersen and Brosens, 2014). Defective decidualization (DD) entails the inability of the endometrial compartment to undertake tissue differentiation, leading to aberrations in placentation and compromising pregnancy health (Garrido-G\u00f3mez et al., 2020).\n\nIn humans and other great apes, the formation of the decidua is a conceptus-independent process driven by progesterone and the second messenger cyclic adenosine monophosphate (Brar et al., 1997) that stimulates synthesis of a complex network of intracellular and secreted proteins through progesterone receptor (PR) activation. Endometrial decidualization involves secretory transformation of uterine glands (Kelleher et al., 2018), influx of specialized immune cells, vascular remodeling, and morphological (Dunn et al., 2003; Ramathal et al., 2010), biochemical (Giudice et al., 1998; Jabbour and Critchley, 2001), and transcriptional reprogramming of the endometrial stromal compartment (Wang et al., 2020). We recently characterized the transcriptomics of human decidualization at single-cell resolution from secretory endometrial samples and showed that the process is initiated gradually after ovulation, with a direct interplay between stromal fibroblasts and lymphocytes (Wang et al., 2020). However, most knowledge on decidual function in health and disease comes from in vitro model systems (Ng et al., 2020; Zhou et al., 2013; Ganeff et al., 2009).\n\nIn the present study, we aimed to discern the preconception decidual transcriptomic signature associated with in vivo DD. We performed a comparative global transcriptional profiling of endometrium in women who developed sPE in a previous pregnancy. Initially, we identified 593 genes differentially expressed in sPE compared to control cases. Then, molecular DD fingerprint of 120 genes associated with the development of sPE was defined and evaluated as a diagnostic tool in an independent cohort of samples. Finally, we identified PR and estrogen receptor 1 (ER1) as targets of the DD fingerprint genes. Our findings indicate that an endometrial transcriptomic signature persists years after the affected pregnancy. This signature may be leveraged for a preconception or early prenatal screening strategy in assessing sPE risk and may inform the development of sPE therapies.\n\n## Methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Homo sapiens)</td>\n      <td>Endometrial biopsies</td>\n      <td>University and Polytechnic La Fe Hospital (Valencia, Spain)</td>\n      <td></td>\n      <td>Freshly isolated from human donors</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-progesterone receptor antibody [YR85] (rabbit monoclonal anti-human)</td>\n      <td>Abcam</td>\n      <td>Cat: AB32085RRID:AB_777452</td>\n      <td>Dilution: (1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-estrogen receptor alpha antibody (mouse monoclonal antibody)</td>\n      <td>Santa Cruz</td>\n      <td>Cat: sc-8002RRID:AB_627558</td>\n      <td>Dilution: (1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit IgG H&amp;L (Alexa Fluor 488) (goat polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat: ab150077RRID:AB_2630356</td>\n      <td>Dilution: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse IgG (H + L) Cro Alexa Fluor 488 (goat polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat: A-11001RRID:AB_2534069</td>\n      <td>Dilution: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RT-qPCR primers</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QIAsymphony RNA Kit</td>\n      <td>Qiagen</td>\n      <td>931636</td>\n      <td>Global RNA-seq library preparation</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Illumina TruSeq Stranded mRNA sample prep kit</td>\n      <td>Illumina</td>\n      <td>20020595</td>\n      <td>Global RNA-seq library preparation</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Kapa SYBR fast qPCR kit</td>\n      <td>Kapa Biosystems Inc</td>\n      <td>KK4602</td>\n      <td>Global RNA-seq library preparation</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TruSeq RNA CD Index Plate (96 indexes, 96 samples)</td>\n      <td>Illumina</td>\n      <td>20019792</td>\n      <td>RNA sequencing</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NextSeq 500/550 cartridge of 150 cycles</td>\n      <td>Illumina</td>\n      <td>FC-404-2002</td>\n      <td>RNA sequencing</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperScript VILO cDNA Synthesis Kit</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>11754250</td>\n      <td>RT-qPCR. cDNA preparation</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR</td>\n      <td>Dobin et al., 2013</td>\n      <td>URL: http://code.google.com/p/rna-star/RRID:SCR_004463</td>\n      <td>RNA-seq analysisRead alignerVersion 2.4.2a</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FastQC</td>\n      <td></td>\n      <td>URL: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/RRID:SCR_014583</td>\n      <td>RNA-seq analysisQuality of FASTQ file determinationVersion 0.11.2</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SAMtools</td>\n      <td>Li et al., 2009</td>\n      <td>URL: http://htslib.org/RRID:SCR_002105</td>\n      <td>RNA-seq analysisSAM and BAM manipulation files Version 1.1</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HTSeq</td>\n      <td>Anders et al., 2015</td>\n      <td>URL: http://htseq.readthedocs.io/en/release_0.9.1/RRID:SCR_005514</td>\n      <td>RNA-seq analysisTo count the number of reads per geneVersion 0.6.1p1</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BEDtools</td>\n      <td>Quinlan and Hall, 2010</td>\n      <td>URL: https://github.com/arq5x/bedtools2RRID:SCR_006646</td>\n      <td>RNA-seq analysisTo obtain gene coverageVersion 2.17.0</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>edgeR</td>\n      <td>Robinson et al., 2010</td>\n      <td>URL: http://bioconductor.org/packages/edgeR/RRID:SCR_012802</td>\n      <td>RNA-seq analysisTo analyze differentially expressed genesVersion 3.24.3</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>String</td>\n      <td>Jensen et al., 2009</td>\n      <td>URL: http://string.embl.de/RRID:SCR_005223</td>\n      <td>Interaction Network.</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cytoscape</td>\n      <td>Shannon et al., 2003</td>\n      <td>URL: http://cytoscape.orgSCR_003032</td>\n      <td>Interaction Network</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CytoHubba</td>\n      <td>Chin et al., 2014</td>\n      <td>URL: http://apps.cytoscape.org/apps/cytohubbaRRID:SCR_017677</td>\n      <td>Interaction Network</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Custom scripts</td>\n      <td></td>\n      <td>URL: https://github.com/mclemente-igenomix/garrido_et_al_2021</td>\n      <td>The specific script to run RNA-seq analysis</td>\n    </tr>\n  </tbody>\n</table>\n\n### Study design\n\nA total of 40 non-pregnant women who experienced a previous pregnancy were enrolled in this study for endometrial RNA-sequencing analysis. Endometrial samples were obtained for research purposes during late secretory phase in 24 women who had developed sPE in a previous pregnancy and in 16 women with no history of sPE with full term (n = 8) and preterm pregnancies (n = 8) as controls. sPE was clinically defined based on elevated blood pressure (systolic \u2265160 or diastolic of \u2265100 mm Hg) or thrombocytopenia, impaired liver function, progressive renal insufficiency, pulmonary edema, or the onset of cerebral or visual disturbances. Endometrial biopsies were processed to obtain RNA and then converted to cDNA for library generation to perform next-generation sequencing. The experimental design was based on a stratified random sampling with a 70:30 proportion in two cohorts: a training (n = 29) and validation (n = 11) set of samples. The training set of samples was analyzed by RNA-seq to identify the global transcriptomic profiling changes between control (n = 12) and sPE (n = 17) samples. Selection criteria were applied to define a transcriptomic fingerprinting associated with DD detected in sPE. Finally, targeted analysis of the DD signature was validated in the test set composed of controls (n = 4) and sPE (n = 7).\n\n### Human donors\n\nEndometrial samples were collected from women aged 18\u201342 without any medical condition who had been pregnant 1\u20138 years earlier. All participants had regular menstrual cycles (26\u201332 days) with no underlying gynecological pathological conditions and had not received hormonal therapy in the 3 months preceding sample collection. After the inclusion criteria were applied, endometrial biopsies were obtained by pipelle catheter (Genetics Hamont-Achel, Belgium) under sterile conditions in the late secretory phase (cycle days 22\u201332). Specimens were kept in preservation solution until processing. Maternal and neonatal characteristics of women with sPE and controls are summarized in Supplementary file 1. Biological and technical variables for each donor were considered to discard confounding effects on the transcriptomic profile (Supplementary file 2). This study was approved by the Clinical Research Ethics Committee of University and Polytechnic La Fe Hospital (Valencia, Spain; 2011/0383), and written informed consent was obtained from all participants before tissue collection and all samples were anonymized.\n\n### RNA extraction\n\nTotal RNA from endometrial biopsies was isolated using QIAsymphony RNA kit (Qiagen, Hilden, Germany) following the manufacturer\u2019s protocol. RNA concentrations were quantified using a Multiskan GO spectrophotometer (Thermo Fisher Scientific, Waltham, USA) at a wavelength of 260 nm. Integrity of the total RNA samples was evaluated by the RNA integrity number (RIN) and DV200 metrics using an Agilent high-sensitivity RNA ScreenTape in a 4200 TapeStation system (Agilent Technologies Inc, Santa Clara, CA). Samples used for the global RNA-seq showed RIN values ranging from 4.9 to 9.2.\n\n### Global RNA-seq library preparation and transcriptome sequencing\n\ncDNA libraries from total RNA samples (n = 40) were prepared using an Illumina TruSeq Stranded mRNA sample prep kit (Illumina, San Diego, CA) following a balanced batch-group design. 3 \u00b5g of total RNA were used as the RNA input according to the manufacturer\u2019s protocol. mRNAs were isolated from the total RNAs by purifying the poly-A containing molecules using poly-T oligo attached to magnetic beads. The RNA fragmentation, first- and second-strand cDNA syntheses, end repair, single \u2018A\u2019 base addition, adaptor ligation, and PCR amplification were performed according to the manufacturer\u2019s protocol. The average size of the cDNA libraries was approximately 350 bp (including the adapters). cDNA libraries were quantified using an Agilent D1000 ScreenTape in a 4200 TapeStation system (Agilent Technologies Inc). Libraries were normalized to 10 nM and pooled in equal volumes. The pool concentration was quantified by qPCR using the KAPA Library Quantification Kit (Kapa Biosystems Inc) before sequencing in a NextSeq 500/550 cartridge of 150 cycles (Illumina). Indexed and pooled samples were sequenced 150 bp paired-end reads by on the Illumina NextSeq 500/550 platform according to the Illumina protocol.\n\n### RNA-seq analysis\n\nReads were mapped to the hg19 human genome transcriptome using the STAR (version 2.4.2 a) read aligner (Dobin et al., 2013). FastQC (version 0.11.2) was used to determine the quality of FASTQ files. The manipulation of SAM and BAM files was done with the software SAMtools (version 1.1) (Li et al., 2009). To count the number of reads that could be assigned to each gene, we used HTSeq (version 0.6.1p1; Anders et al., 2015) and BEDtools software (version 2.17.0; Quinlan and Hall, 2010) to obtain gene coverage and work with bedFiles. Quality control filters in each program were used following the software package recommendations, and reads were filtered by mapping quality greater than 90%. Transcriptomic data were deposited in the Gene Expression Omnibus database (accession number GSE172381). The Bioconductor package edgeR (version 3.24.3; Robinson et al., 2010) was used to analyze differentially expressed genes (DEGs). The trimmed mean of M-values normalization method was applied to our gene expression values. The glmTreat function was used to find DEGs between groups. The p-value adjustment method was false discovery rate (FDR) with a cutoff of 0.05 (FDR < 0.05) and the fold-change (FC) threshold was 1.2. edgeR analysis was carried out in R version 3.5.1. A volcano plot was created to visualize DEGs. Custom scripts are available on GitHub at link https://github.com/mclemente-igenomix/garrido_et_al_2021.\n\n### Transcriptomic fingerprinting definition and validation\n\nGenes with assigned EntrezID with an FDR cutoff of 0.05 and an expression \u22651.4-fold higher in the sPE vs. control training set samples were selected to define a fingerprint associated with DD in sPE. Targeted analysis of fingerprinting genes was performed using the validation set of samples. PCA and unsupervised hierarchical clustering with a Canberra distance based on gene signature were performed comparing sPE to control specimens. Custom scripts are available on GitHub at https://github.com/mclemente-igenomix/garrido_et_al_2021.\n\n### Enrichment analysis\n\nGene Ontology (GO) analyses were conducted to obtain biological processes using the goana function in edgeR (Robinson et al., 2010). The input genes were those 120 included in the fingerprinting (Figure 3\u2014source data 1). The p-value adjustment method was FDR with a cutoff of 0.05 (FDR < 0.05; Figure 3\u2014source data 2). Custom scripts are available on GitHub at https://github.com/mclemente-igenomix/garrido_et_al_2021.\n\n### Interaction network\n\nAn interaction network between proteins encoded by DD fingerprinting genes was created using the functional analysis suite String (Jensen et al., 2009). To construct the network, the interactions included were from curated databases and included experimentally determined and predicted interactions, textmining, co-expression information. The clustering algorithm k-means was applied based on the distance matrix obtained from the String global scores. The network was visualized using Cytoscape software (Shannon et al., 2003). Hub genes were extracted using the maximal clique centrality (MCC) and maximum neighborhood component (MNC) of the cytoHubba plugin (Chin et al., 2014). The overlapping genes identified by the two topological analysis methods were selected as the hub genes.\n\n### qRT-PCR\n\nGene expression of IHH, MSX2, ESR1, and PGR isoforms in the endometrial tissue from a subset of women with prior sPE (n = 13) compared to controls (n = 9) was obtained by RT-qPCR. Specific primers for each gene are described in Supplementary file 3. cDNA was generated from 400 ng of RNA using the SuperScript VILO cDNA Synthesis Kit (Thermo Fisher Scientific). Template cDNA was diluted 5 in 20 and 1 \u00b5L was used in each PCR. Real-time PCR was performed in duplicate in 10 \u00b5L using commercially validated Kapa SYBR fast qPCR kit (Kapa Biosystems Inc, Basilea, Switzerland) and the Lightcycler 480 (Roche Molecular Systems, Inc, Pleasanton, CA) detection system. Samples were run in duplicate along with appropriate controls (i.e., no template, no RT). Cycling conditions were as follows: 95\u00b0C for 3 min, 40 cycles of 95\u00b0C for 10 s, 60\u00b0C for 20 s, and 72\u00b0C for 1 s. A melting curve was done following the product specifications. Data were analyzed using the comparative Ct method (2\u2212\u2206\u2206CT). Data were normalized to the housekeeping gene \u03b2-actin, and changes in gene expression were calculated using the \u0394\u0394CT method with the control group used as the calibrator; values are illustrated relative to median in the control group. The relative expression of PGR-A mRNA was calculated by subtracting the relative expression of PGR-B mRNA from that of PGR total.\n\n### Immunofluorescence of tissue sections\n\nEndometrial tissue samples were fixed in 4% paraformaldehyde and preserved in paraffin-embedded blocks. For immunostaining, tissue sections were deparaffinated and rehydrated. Antigen retrieval was performed with buffer citrate 1\u00d7 at 100\u00b0C for 10 min. Then, non-specific reactivity was blocked by incubation in 5% BSA/0.1% PBS-Tween 20 at room temperature for 30 min. Sections were incubated at room temperature for 1.5 hr with primary antibodies (1:50 rabbit monoclonal anti-human progesterone receptor, Abcam, Cambridge, UK) and 1:50 mouse monoclonal anti-human estrogen receptor 1 (Santa Cruz Biotechnology, CA) diluted in 3% BSA/0.1% PBS-Tween 20. Then, slides were washed two times for 10 min with 0.1% PBS-Tween 20 before they were incubated for 1 hr at room temperature with AlexaFluor-conjugated secondary antibodies diluted in 3% BSA/0.1% PBS-Tween 20 (1:1000). Finally, slides were washed two times in 0.1% PBS-Tween 20. To visualize nuclei, 4\u2032,6-diamidino-2-phenylindole at 400 ng/\u00b5L was used. Tissue sections were examined using a EVOS M5000 microscope.\n\n### Statistical analysis\n\nClinical data are expressed as mean \u00b1 standard error mean (SEM). Clinical data were evaluated by Wilcoxon test for comparisons between sPE and control samples. Statistical significance was set at p<0.05. Differential expression analysis was performed using the R package edgeR.\n\n## Results\n\n### Endometrial transcriptome alterations during decidualization in sPE\n\nTo identify transcriptomic alterations during decidualization in sPE, we applied global RNA sequencing (RNA-seq) to endometrial biopsies obtained in the late secretory phase from women who developed sPE in a previous pregnancy (n = 24) and controls who never had sPE (n = 16) (GSE172381). Clinical maternal and neonatal characteristics of the participants are summarized in Supplementary file 1. After quality trimming and filtering, reads were aligned to the reference genome hg19. The 40 samples produced 56,638 raw sequencing genes; after normalization, 18,301 genes were included in the analysis. Biological and technical variables for each donor were considered to discard confounding effects on the transcriptomic profile (Supplementary file 2). Controls included women who had a preterm birth with no signs of infection (n = 8) and women who gave birth at full term with normal obstetric outcomes (n = 8). Transcriptomic profiles were compared by differential expression analysis, revealing no significant changes in the endometrial transcriptome between preterm and term controls (FDR \u2265 0.05; Figure 1\u2014figure supplement 1A). Principal component analysis (PCA) supported that there was no underlying pattern of distribution depending on gestational age at delivery (Figure 1\u2014figure supplement 1B). Once we ruled out bias on controls, we randomly split samples into two cohorts, a training set (70%) and a test set (30%) (Figure 1A). Random sampling occurred within each class (sPE and controls), so overall class distribution of the data was preserved. The training set (n = 29) was used for the identification of molecular fingerprinting encoding DD in sPE, while the test set (n = 11) was used to confirm our findings. All samples in both cohorts were processed and sequenced in the same manner.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic drawing of the study design used to identify and validate defective decidualization (DD) fingerprinting in sPE. (B) Statistical significance (-log10 FDR) vs. gene expression log2 fold change (FC) is displayed as a volcano plot of global RNA-seq results. Label indicates: downregulated in sPE (blue dots); upregulated in sPE (red dots); not significant genes (grey dots). (C) Heatmap showing the 25 most upregulated and downregulated genes (total = 593; Figure 1\u2014source data 1) of control vs. sPE samples. See also Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Volcano plot showing there were no significant differentially expressed genes (DEGs) between controls according to gestational age at delivery. Labels show the two criteria that we used to define the DEGs: p-value adjusted (false discovery rate [FDR] < 0.05) and fold-change (FC \u2265 1.2). Legend: not significant (FDR \u2265 0.05). (B) Principal component analysis (PCA) based on 18,476 genes after filtering out lowly expressed genes does not demonstrate clustering based on gestational age.\n\nTranscriptional analysis in the training set was performed by comparing gene expression patterns in sPE (n = 17) and controls (n = 12). This comparison revealed 593 DEGs based on FDR < 0.05 and with at least 1.2 FC between groups (FC \u2265 1.2). DEGs are shown in the volcano plot through yellow dots (Figure 1B). A total of 155 upregulated and 438 downregulated DEGs were identified as being associated with DD in sPE (Figure 1C; complete list in Figure 1\u2014source data 1). Downregulated transcripts include those involved in decidualization, such as MMP3, PRL, IL-6, and IHH; and genes associated with signaling (e.g., NR4A3 and IL8), growth factors (e.g., FGF1 and FGF7), angiogenesis (e.g., EDN2 and TMEM215), and immune response (CCL20, CXCL3, and IGHG1). Upregulated genes are involved in amino acid metabolic/catabolic processes (IDO2 and CAPN3), transport, and oxidoreductase activity.\n\n### Comparison of DD transcriptomics in previous sPE in vivo vs. in vitro\n\nWe previously described DD in human endometrial stromal cells (hESCs) isolated from women with previous sPE compared to women with normal obstetric outcomes, but this finding was restricted to the stromal cell population using an in vitro decidualization cell culture model (Garrido-Gomez et al., 2017). Here, we compared DD overlapping between DEGs reported in vitro (n = 129) vs. in vivo (n = 593) in sPE compared to control women. Nine genes were overlapped between the two datasets (Figure 2A); one gene was upregulated (ERP27), and eight genes were downregulated (e.g., ISM1, MEST, MFAP2, and REEP2). The expression pattern of common genes is presented as a box plot using counts per million, corroborating significant differential expression between sPE and control (Figure 2B). Recently, in vivo transcriptomics of endometrium at single-cell resolution across the menstrual cycle were characterized (Wang et al., 2020). Transcriptome profiles of stromal fibroblasts from the late secretory phase allowed the identification of deregulated genes in sPE as associated to hESC. We found that 263 genes from the 593 DEGs in sPE vs. control are expressed by hESC (Figure 2C). Taken together, the in vivo assessment provides a broad spectrum of dysregulated transcripts comparing with previous in vitro findings, which includes a high concordance with in vivo hESC genes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig2-v1.jpg)\n\n**Figure 2.:** (A) Common genes between previous in vitro (left) and current in vivo approaches analyzing decidualization (right). Nine genes overlap in both approaches. (B) Box plot showing the average expression of the nine common genes between control (blue boxes) and severe preeclampsia (sPE) (orange boxes) samples. (C) From the 593 differentially expressed genes (DEGs) obtained by global RNA-seq, a subset of 263 DEGs were identified as genes with a human endometrial stromal cell (hESC) origin using the scRNA-seq data published by Wang et al., 2020. See also Figure 2\u2014source data 1.\n\n### Identification of the fingerprint encoding human endometrial DD\n\nTo formulate the transcriptomic signature that encodes DD detected in sPE in vivo, we selected genes with significant dysregulation (FDR < 0.05) and at least 1.4-fold increase (FC \u22651.4) between sPE and control with assigned EntrezID. A volcano plot shows 120 DEGs meeting these criteria included in the final DD signature (Figure 3A; complete list of genes is included in Figure 3\u2014source data 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig3-v1.jpg)\n\n**Figure 3.:** (A) Volcano plot showing downregulated (blue) and upregulated (red) genes in sPE from the DD fingerprint. Each point represents one gene; gray points are the rest of the genes obtained in the global RNA-seq analysis. (B) The three most highly downregulated biological process for each major category (red, cell cycle; yellow, DNA damage response; green, cell signaling; blue, cellular response; gray, cell motility; purple, extracellular matrix; pink, immune response; brown, reproductive process). Enrichment index was calculated by -log(p-value). (C) Clustering of DD fingerprint genes shown for reproductive process, response to bacterial molecules, extracellular matrix organization, regulation of receptor signaling, and response to hormones. See also Figure 3\u2014source data 1 and Figure 3\u2014source data 2.\n\nGO analysis of the gene signature associated with DD in sPE identified 151 enriched biological processes downregulated (FDR < 0.05). These pathways were associated with cell cycle, DNA damage response, cell signaling, cellular response, cell motility, extracellular matrix, immune response, and reproductive process (Figure 3B). All are hallmarks of impaired decidualization and sPE pathogenesis. We identified fingerprinting genes representative of the altered pathways in sPE, such as IL6 and TNF, regulating the response to bacterial molecules, MMP3 and MMP1 participating in the extracellular matrix organization, and TNF, IL8, and FGF1 implicated in the downregulated receptor signaling (Figure 3C). Functional analysis revealed that the 120 DEGs included in DD fingerprinting are implicated in pathways related to decidualization, corroborating the maternal contribution to sPE. Interestingly, the number of downregulated genes was higher than the number of upregulated genes in sPE compared to controls, suggesting that, in vivo, DD may be induced by the lack of expression of a subset of genes.\n\nBased on the 120 genes included in the DD signature, PCA showed that sPE and control samples clustered separately in two groups, except for three control samples (C20, C21, and C22) (Figure 4A). High variance between groups was effectively captured in the first two principal components. Unsupervised hierarchical clustering analysis confirmed that gene fingerprinting effectively segregated the two groups: one encompassing mainly controls and the other mainly sPE samples (Figure 4B). The same three controls clustered with the sPE group, recreating the PCA results.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig4-v1.jpg)\n\n**Figure 4.:** (A) Principal component analysis (PCA) based on 120 genes included in the fingerprinting in the training set. Each sample is represented as a colored point (blue, control; orange, sPE). (B) Heatmap dendrogram of expression of the 120 genes included in the final fingerprinting for each sample of the training set (control, n = 12; sPE, n = 17). (C) PCA based on the fingerprinting in the test set. Each sample is represented as a colored point (blue, control; orange, sPE). (D) Heatmap dendrogram of expression of the 120 genes included in the final fingerprinting for each sample of the test set (control, n = 4; sPE, n = 7). See also Figure 4\u2014source data 1.\n\nTo validate the DD gene signature in an independent cohort of samples (sPE [n = 7] vs. control [n = 4]), PCA based on these transcripts effectively segregated samples in two homogeneous groups (Figure 4C), corroborated by hierarchical clustering (Figure 4D). These genes successfully grouped 100% of controls and 85.7% of sPE cases supporting DD in sPE.\n\n### DD fingerprint in sPE is connected to ER1 and PR-B\n\nOf the 120 genes in the DD signature, 94 endometrial enriched genes encode for specific proteins reported by the Human Protein Atlas (Uhl\u00e9n et al., 2015). Interestingly, 45 of those genes (47.9%) were included in the transcriptome modulated by ESR1 (Hewitt et al., 2010), and 43 genes (45.7%) overlapped with the transcriptome and cistrome associated with PGR (Mazur et al., 2015; Figure 5A). Regarding target genes of ER1 and PR, the database of Human Transcription Factor Targets (hTFtarget) reported 17 genes responsive to ER1 and 50 target genes modulated by PR, based on epigenomic, CHIP-seq, or motif evidence (Zhang et al., 2020).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig5-v1.jpg)\n\n**Figure 5.:** (A) Venn diagram displaying genes included in the fingerprinting (120) predominantly expressed in the endometrium based on Human Protein Atlas data that overlap with genes modulated by ESR1 described by Hewitt et al., 2010 and genes associated with PGR silencing described by Mazur et al., 2015. (B) Network showing the connections between proteins codified by DD fingerprinting and the hormonal receptors, ER1 and PR. Shapes indicate different clusters established by String k-means method. Squares, cluster involved in gland morphogenesis and cell migration; circles, cluster involved in extracellular matrix organization and stromal cell differentiation; hexagons; cluster involved in cellular response to DNA damage and regulation of cell cycle. Color gradient indicate gene expression in terms of log2FC. Hub genes are shown with an asterisk. (C-H) Gene expression levels of IHH, MSX2, ESR1, PGR, PGR-A, and PGR-B assessed for sPE (n=13) vs. controls (n=9) by RT-qPCR (gray bars, control; green bars, sPE). RT-qPCR values are expressed as mean\u00b1 SE. *** p<0.001, ** p<0.01, *p<0.05. (I-J) Tissue sections of control (n=4) and sPE (n=4) endometrium during late secretory phase were immunostained with antibody against ER1 or PR. Nuclei were visualized with DAPI. Scale bar: 50 \u00b5M.\n\nWe evaluated the interaction between steroid receptor signaling and the proteins encoded by DD fingerprinting genes in sPE by building a dynamic network including ER1 and PR. String software (Jensen et al., 2009) was used to construct network connections visualized with Cytoscape software (Shannon et al., 2003). The interactome contained 117 nodes directly interconnected by 361 edges (Figure 5B). This DD fingerprint network showed a highly enriched protein\u2013protein interaction (PPI) in sPE; indeed, the interconnection between nodes was significantly higher than the 93 edges expected (PPI enrichment p<1.0e-16). Clustering revealed three main modules based on their connectivity degree, with functionally relevant genes involved in gland morphogenesis, cell migration, extracellular matrix organization, stromal cell differentiation, cellular response to DNA damage stimulus, and regulation of cell cycle. The hub genes were determined by overlapping the top 10 genes obtained using two topological analysis methods in the cytoHubba plugin (Chin et al., 2014), MCC, and MNC. Five genes were selected, all of which were downregulated. Interestingly, both ER1 and PR were strongly embedded in the network and highly connected with DD fingerprinting, highlighting the interaction of hormonal receptors with notable decidualization mediators such as IHH and MSX2 validated by RT-qPCR (Figure 5C and D). Furthermore, the interactome demonstrated a direct interaction between ER1 and PR. These results support the transcriptomic dysfunction of the genes present in the DD signature through imbalanced hormone receptor signaling in sPE.\n\nWe then analyzed the expression of ESR1 and PGR in the endometrial tissue from a subset of women with prior sPE (N = 13) compared to controls (N = 9) by RT-qPCR. We found reduced expression of transcripts encoding the hormone receptors ESR1 (p<0.05) and PGR (p<0.001) in sPE patients (Figure 5E and F). In-depth expression analyses revealed that the isoform PGR-B was significantly downregulated in sPE vs. controls (p<0.01), while the isoform PGR-A was unaffected (p>0.05) (Figure 5G and H). These results were confirmed at the protein level by immunohistochemical analysis of ER1 and PR-B in endometrial biopsies collected in the late secretory phase from women with previous sPE (n = 4) and controls (n = 4) (Figure 5I and J). Both receptors were highly expressed through the decidualized endometrium, especially in the secretory glands in controls. In contrast, their expression was greatly reduced or absent in sPE samples. These results suggest that the DD transcriptomic signature implicates dysregulated ER1 and PR-B signaling in the late secretory phase in sPE patients.\n\n## Discussion\n\nMost scientific and clinical diagnostic efforts in sPE focus on placental surrogates. In this context, shallow cytotrophoblast invasion induces deficient vascular remodeling and ultimately aberrant placentation. This leads to placental ischemia and the release of soluble factors that induce the maternal syndrome, including the imbalanced levels of soluble fms-like tyrosine kinase 1 (sFLT1) and placental growth factor (PlGF) (Rana et al., 2019; Powe et al., 2011). sFLT1 protein binds to PlGF, preventing its interaction with endothelial receptors and leading to endothelial dysfunction. Accordingly, sFLT1 is increased, while free PlGF is decreased in serum from women with PE (Levine et al., 2004). The sFLT1/PlGF ratio has been proposed as a biomarker showing a positive predictive value of 36.7%, with 66.2% sensitivity and 83.1% specificity but its application is effective only 4 weeks before PE symptoms manifest (Zeisler et al., 2016). Therefore, during the first trimester there is a lack of high sensitivity and specificity screening methods to detect sPE early and prevent mortality and morbidity.\n\nCurrent strategies based on placental dysfunction provide delayed results for preventive interventions and new approaches are urgently needed. Recent studies suggest that sPE might also be a disorder of the decidua, opening new avenues. In this sense, there may be a molecular signature associated with impaired endometrial maturation during early pregnancy in women who develop sPE (Rabaglino et al., 2015). Our previous work demonstrated that hESC isolated from patients with previous sPE failed to decidualize in vitro, suggesting a role of the maternal factor in the development of this disease (Garrido-Gomez et al., 2017). In addition, molecular pathways of dysregulated decidualization in PE are also found in endometrial disorders such as implantation failure, recurrent miscarriage, and endometriosis (Rabaglino and Conrad, 2019). Increasing evidence supports the detriment of inappropriate decidualization before pregnancy to reproductive outcomes, and the role of DD in the origin of sPE (Garrido-G\u00f3mez et al., 2020; Ng et al., 2020).\n\nIn the present study, we highlighted the underlying molecular defect that may explain in vivo decidualization failure as an important contributor to shallow placental invasion in sPE. For this purpose, we investigated the role of the decidua by leveraging global RNA-seq in late secretory endometrium. We identified 593 genes differentially expressed in sPE compared to controls, including genes involved in decidualization such as PRL, IL6, and IHH, as well as several novel genes. Nine of the DEGs overlapped with DEGs obtained in our previous in vitro decidualization study. In vivo endometrial biopsies include other cells in addition to hESC, and thus the expected degree of overlap between both in vitro and in vivo approaches should be modest as such was observed. However, we identified a large percentage of those DEGs that were associated with in vivo transcriptomic profile of hESC resolved at cell level from a healthy late secretory endometrium. Thus, the high number of our identified in vivo DEGs reflects the high complexity of decidualization at cellular heterogeneity in a physiological stage of women with previous sPE.\n\nPrevious reports of the decidual transcriptome in PE and sPE (Garrido-Gomez et al., 2017; L\u00f8set et al., 2011) revealed the gene expression profile associated with the condition at the time of delivery. Here, we analyzed samples collected years after the affected pregnancy; thus, it could be interesting to find dysregulated genes in common among these approaches. We compared our transcriptomic results and the previously reported dysregulated decidual genes, obtaining 1.3% (Garrido-Gomez et al., 2017) and 1.7% (L\u00f8set et al., 2011) overlap in affected genes. These discordances may not be unexpected and are consistent with recent results (Rabaglino and Conrad, 2019). The decidua basalis transcriptome at delivery was compared with the transcriptome of decidua at \u205311.5 gestational weeks and in vitro decidualized hESC from women who experienced sPE. Both analyses revealed little, if any, overlap between molecular signatures. In contrast, the signature encoding in vitro DD of hESC years after pregnancy overlapped significantly with the dysregulated profile found in decidual samples at the beginning of pregnancy (Rabaglino and Conrad, 2019). Thus, decidual gene expression patterns during the clinically active disease largely differ from those observed during endometrial decidualization at the end of the menstrual cycle and early pregnancy, perhaps reflecting a consequence rather than the origin of sPE.\n\nFrom the 593 genes differentially expressed in sPE compared to controls, we identified a DD signature comprising 120 genes associated with sPE. This sPE-DD signature includes genes that allowed us to segregate samples from the training set into sPE and control groups, which were confirmed by the test set. One sPE was misclustered in the test set, such that 90.9% of samples from an independent cohort were properly clustered in the dendrogram. Having controlled for confounding effects of biological and technical variables, we consider that this misclustering is consistent with the nature of decidualization and its inherent variability. Decidualization is a highly dynamic process governed by (1) inter-individual variability in the endometrial menstrual cycle supported by displacement of the window of implantation in one out of four patients experiencing recurrent implantation failure (Wang et al., 2020; Diaz-Gimeno et al., 2011), (2) the physiology of the spatial expansion of decidualization process starting in some areas around spiral arteries and extending to the entire endometrium during the last days of the menstrual cycle (Gellersen and Brosens, 2014), (3) and the random spatial sampling during the endometrial biopsy that could influences cell-type proportions, which is inherent to the experimental strategy used in our investigation. Decidua sample segregation is consistent with the results presented by Munchel et al., 2020, who classified PE patients based on circulating RNA (C-RNA). In our study, we determined that the gene expression associated with DD had the highest potential to segregate sPE.\n\nInterestingly, most of the DD fingerprint genes in sPE were related to the downregulation of ESR1 and PGR, specifically PGR-B. We hypothesize that low expression of PGR-B and ESR1 activates endometrial decidualization by dysregulating progesterone (P4) and estrogen (E2) action. Consequently, P4- and E2-related cellular signaling may be compromised, leading to the development of DD. Stromal cell differentiation, stromal\u2013epithelial crosstalk (Wang et al., 2017), extracellular matrix degradation (Itoh et al., 2012), immune system response, and endothelial function (Okada et al., 2018) may all be disrupted by low expression of PGR-B and ESR1. Remarkably, the local immune system appeared to be dysregulated due to the altered expression of interleukins, cytokines, chemokines, and immunoglobulin, which could disrupt the tolerant microenvironment at the maternal\u2013fetal interface in pregnancy and contribute to the development of sPE (Erlebacher, 2013; Harris et al., 2019).\n\nBased on our findings, we postulate that in non-sPE pregnancies balanced hormonal signaling leads to proper decidualization, which in turn interacts with immune and endothelial cells to control cytotrophoblast invasion (Figure 6A). P4 and E2 activate their receptors in the epithelium and signal to the stromal compartment. Likewise, stromal PR is activated by ER1, which induces target genes involved in decidualization such as MSX2, CCNB1, and IL6. In contrast, in sPE, endometrial ESR1 and IHH are downregulated, decreasing PGR expression (Figure 6B) and leading to compromised decidualization, endothelial dysfunction, and local immune dysregulation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig6-v1.jpg)\n\n**Figure 6.:** (A) Decidualization induced by P4 and E2 in control pregnancy including the interaction of immune response and endothelium. (B) Hypothetical network that could link DD and dysregulated hormone signaling in sPE. All genes were downregulated. Biological processes specified are candidates to be impaired based on functions associated with the observed dysregulation. Red arrows show the downregulation of decidualization modulators.\n\nIn sPE, we found evidence of impaired epithelial\u2013stromal crosstalk through IHH and FGF1, which could lead to an imbalance of hESC proliferation and differentiation (Cha et al., 2012; Wang et al., 2018). In support of this, we observed downregulated genes involved in stromal cell differentiation including IL6, CCNB1, CCNB2, and MSX2. Further, metalloproteinases such as MMP1, MMP7, and MMP11 were downregulated in sPE, which could be associated to defective cell motility and extracellular matrix degradation. Other transcriptomic deregulations in sPE are connected to endothelial and immune system dysfunction, such as EGR3 and MMP3, both of which are associated with altered angiogenesis (Chen et al., 2020; Frieling et al., 2020); TNF is involved in endothelial inflammation disbalance (Marcos-Ramiro et al., 2014) and influences the tolerant microenvironment at the maternal\u2013fetal interface (Li et al., 2018). Taken together, our findings reveal a DD transcriptomic fingerprint in sPE driven by an imbalance in ER1 and PR signaling.\n\nOur findings reveal significant gene expression dysregulation underlying DD in the late secretory phase in women who have had sPE. The potential origin of sPE may lie in the downregulation of ESR1 and PGR-B. Both receptors are strongly coordinated to regulate decidualization and PGR expression is induced by ER1, which is inhibited by PR (Patel et al., 2015). E2 and P4 act through ER1 and PR in the epithelium and stroma and modulate the transcriptome and to promote crosstalk between both compartments (Winuthayanon et al., 2010). ER1 in the epithelium regulates stromal decidualization via paracrine mechanisms mediated by leukemia inhibitory factor (LIF), which controls IHH expression that transduce the signal activation of PR in the stroma (Pawar et al., 2015). Also, stromal ER1 activates PR in the same compartment (Kaya Okur et al., 2016). These findings could inform the development of therapeutic targets to restore optimal decidualization in sPE. Further studies are needed to fully elucidate the hormone signaling pathways that become dysregulated in sPE and the role of DD in the manifestation of the condition.\n\nPreeclampsia is a syndrome in which different condition types might coexist; here, we focused on the maternal contribution to sPE through DD. We are not claiming that our findings are related to sPE heritability (DNA), but rather to the pathogenesis of the decidualization defect (RNA expression) involved in the origin of PE (Garrido-G\u00f3mez et al., 2020; Ng et al., 2020). Our findings reinforce a maternal cause for sPE through DD. This condition may result from an aberrant response to estrogen and progesterone mediated by ER1 and PR-B signaling. However, the primary driver of the predisposition to undergo decidualization resistance and its link with the main risk factors of sPE remain to be determined. Our work is an important step toward the development of new strategies that enable early assessment of risk for sPE and might prompt new therapeutic strategies to treat this enigmatic pathological condition. Future studies should focus on the translational potential of the DD fingerprinting to develop new noninvasive strategies based on circulating RNA to improve diagnosis and prognostication for women with sPE.\n",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "a72164a3-ab75-47b7-bab7-fb71451e8e9e",
+      "submission_id": "9f366a18-0e4a-4b97-a3ec-f347fd751b8b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- B\u00e9r\u00e9nice A Benayoun, University of Southern California United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70753.sa1](https://doi.org/10.7554/eLife.70753.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nGarrido-Gomez et al., generate a unique dataset profiling the transcriptomes late-stage endometrium of women with prior pregnancies leading to severe preeclampsia (sPE) compared to that of non-preeclamptic pregnancies. Although the question of molecular drivers preeclampsia has been explored at the molecular level directly in the placenta, this study provides a unique view in the endometrium of women years after the pregnancy in question, which is consistent with the fact that a previous preeclamptic pregnancy is one of the best predictors for a subsequent preeclamptic pregnancy.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Disrupted PGR-B and ESR1 signaling underlies preconceptional defective decidualization linked to severe preeclampsia\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kathryn Cheah as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAlthough the 3 reviewers noted the potential of the study, major concerns were raised about the soundness/clarity of the transcriptomics analysis, as well as lack of clarity on the study population. Specifically:\n\n1. The manuscript needs to undergo major revisions in the statistics and transcriptomics analyses (see specific points with details in reviewers 1 and 2 comments):\n\na. The use of fold-change thresholding needs to be removed/updated.\n\nb. Multiple hypothesis correction needs to be used prior to determining significance with genome-wide datasets. Please use FDR correction or other accepted methods.\n\nc. Only use Student t-tests when data normality can be confirmed, otherwise, use non-parametric tests.\n\nd. Since this study is done on endometria sampled years after actual pregnancy, it would be crucial to compare to public datasets on actual placentas, to determine overlap and differences.\n\ne. PCA cannot be used to determine clustering or lack thereof, as well as whether differences exist or not.\n\nf. There are concerns about batches and co-variates not taken into account (see reviewers 1 and 3 points) which could lead to the absence of DEGs. These need to be clearly stated and provided in a table. They also need to be corrected for, either using batch removal and/or multivariate modeling.\n\ng. A continuous GSEA-type analysis would be more informative than a thresholded approach for functional enrichment (i.e. GO) analysis.\n\nh. RT-qPCR (especially on the exact same sample set) is not an appropriate validation for robust RNA-seq datasets.\n\n2. The authors needs to substantially revise and improve the details on methodology (i.e. RIN threshold), as well as deposit all code and data to public databases for re-analysis. This is crucial for long-term reproducibility and use of this as a resource. Analytical choices against the general rule of the field (such as using hg19 and not the more recent better annotated hg38) should be justified or at least explicitly addressed.\n\n3. The patient population needs to be better defined (see reviewer 3 points, and to a lesser degree reviewer 1).\n\n4. Make sure to define all abbreviations, and avoid using non-standard abbreviations to improve readability.\n\nReviewer #1 (Recommendations for the authors):\n\n1. There are major concerns about the statistics in the analysis of the dataset.\n\na. Fold-change thresholding is used in multiple places in the analysis (e.g. line 94, 112, 128, etc.). This is a big problem, as it is known to lead to poor FDR control in the case of statistical tests not designed to take fold change into account (like edgeR used here). Thus, the practice of fold-change filtering without FDR control is considered problematic by statisticians (see PMID: 19176553). Thus, either the authors need to update their results after removing this problematic criteria to properly control for FDR, or all analyses should be rerun with a method that takes fold-change into account for FDR control (e.g. the TREAT method PMID: 19176553).\n\nb. For the GO enrichment analysis (line 133), the authors only indicate a p-value filter (p < 0.005). Was there not implementation of multiple testing correction? The data should be re-analyzed after proper multiple hypothesis correction control (native DEseq2 FDR, Bonferroni, or other). In addition, what was the gene list background used to compute enrichment? The nature of the background has been shown to hugely impact results and needs to be explicitly detailed in the methods.\n\nc. The authors reports using Student t-tests (section starting line 404). Unless normality is proven (e.g. with a Shapiro-Wilkes test), parametric tests that relie on normal distributions should never be used. We recommend that all tests be rerun with non-parametric equivalents (e.g. Wilcoxon or Mann Whitney) to guarantee these assumptions are not violated.\n\n2. With human sample studies, it is unlikely that all samples were processed exactly in parallel (i.e. all samples collected the same day, kept in stabilizer for the same amount of time, etc.), which all but guarantees the existence of batch effects. There are also a number of stated parameters (i.e. age of the donor, time since pregnancy 1-8 years, day in cycle 22-32, etc.) that could influence results without a relevant biological driver.\n\na. In addition to an aggregated table (Table 1), the authors should generate a table for each anonymized sample for key characteristics so that the resource can be analyzed with these caveats considered both in this current paper and to facilitate all future reanalysis attempts. This should include for each sample individually:\n\ni. age of the donor.\n\nii. time since last pregnancy.\n\niii. day of cycle for biopsy.\n\niv. date of processing/batch (including biopsy batch, library batch AND sequencing batch).\n\nv. RIN of RNA sample.\n\nvi. Sequencing depth (raw reads per library).\n\nvii. Percent reads mapping to the genome reference (here hg19).\n\nviii. Ethnicity of donor.\n\nb. The authors should implement a multivariate model to account for all these potential confounding effects so as to focus on the core biological signal. In addition, the use of a software like SVA or RUVseq is recommended to remove unwanted technical variation prior to analyses.\n\n3. Additional methodological information is needed for long-term reproducibility of analyses.\n\na. For reproducibility of code and analyses, all analytical code for this study should be deposited in a repository such as Github or made available as a Supplementary file.\n\nb. Please include all version numbers for all used software (e.g. R, etc.) packages and R packages (e.g. edgeR, goana, etc.), as well as all command parameters where relevant. The same should be applied to annotation databases (i.e. GO used here), and if a version number doesn't exist, date of access should be provided.\n\nc. There is no mention of the softwares (nor versions) used to trim RNA-seq reads, to map to the hg19 genome or to aggregate counts to genes. All used software should be clearly named and their use described with all necessary options for reproducibility.\n\nd. Line 84-88/Figure 1A, were the subtypes of \"control\" samples (pre vs. full-term) equally distributed in training vs. testing? Indeed, although the authors argue that the subtype made no difference on transcriptional profiles (i.e. Sup Figure 1A PCA), this reviews sees a general (if not clean separation) on PC1, that would probably be enhanced if sources of spurious variation (see point #2) were taken into account. In any case, the data provided cannot be used to support the statement \"demonstrated an absence of clustering\" (line 80), since the statistical tests used are not meant to prove the null hypothesis but to reject it when possible (i.e. confusion between type I and II error). Please amend the analysis to reflect this.\n\ne. cDNA library cannot be validated for RIN (line 330), as only total RNA samples can be. The entire method section needs to be completely rechecked and rewritten for accuracy to avoid this kind of errors.\n\nf. All used QC filters should be stated explicitly in the methods (see lines 338-342).\n\n4. Since RT-qpCR is known to be less sensitive and more prone to normalizing biases (due to the choice of control genes which may vary themselves) than RNA-seq (which performs unbiased normalization at the transcriptome-wide level), it is unclear why validation was performed on the same samples that were processed by RNA-seq (line 375-389). Unless the authors want to include RT-qPCR data on an INDEPENDENT cohort of patients, these results are circular and shouldn't be included in a revised manuscript. If RT-qPCR on a new cohort is included, make sure to include information on which normalizing amplicons were used for \u03b4 CT calculation.\n\n5. Can the authors explain why 3 specific samples (C20, 21, 22; line 147-152) do NOT cluster appropriately with their \"signature\"? Did they have any biological specificities (see need for sample-by-sample information as raised in point #2)? The fact that 3 control samples cluster with the sPE samples somewhat invalidate the signature as a signature of sPE, and may be the result of improper correction for batching or other technical (or irrelevant biological) noise. Please discuss explicitly what may be happening here in a revised manuscript.\n\nReviewer #2 (Recommendations for the authors):\n\nIn sum, I feel that this paper brings some interesting insights on the decidua status and preeclampsia; the degree of novelty is nevertheless unclear to me, and the clinical application seems far-fetched. There are several points that may be better presented and discussed.\n\nDetail of the recommendations to the authors:\n\n1. The study of the decidual transcriptome in preeclampsia has also already been performed by other teams in the past, rather at the moment of the disease than later. For instance, the paper of Mari Loset (Am J Obst Gynecol, 2011), is, I feel, an important base for comparison with the results presented here. So much so, that it used the same type of expressional approaches, and detected differential transcripts and cascades. I feel that the authors should analyze their own datasets in light of this type of seminal papers and discuss the commonalities and differences found.\n\n2. In the overrepresented pathways in the Loset's work, the regulation by ESR1 and PGR was not obvious. Does it mean that analyzing samples 3-4 years after the event (normal or pathological pregnancy) leads to remnants of the disease at the uterine level, or is there a genetic predisposition? This is a question that cannot be truly addressed by the present dataset, and is important if the objective is to define markers, as stated below.\n\nThe introduction gives the necessary details to understand the question raised, finding a signature that could help assessing the risk of preeclampsia.\n\n3. However, the genetic part of preeclampsia is estimated by a heritability of ~55%. The genetic decomposition of this heritability presented by Cnattingius and coworkers (2004) indicate that only part of this genetics is connected to the maternal genetic background (which concerns two organs: the uterus and thus the decidua) and the placenta for half of its genetics. Part of the genetics of preeclampsia is associated only to the paternal genetics (estimated at ~1/3 of the heritability), therefore, it is clear that the risk cannot systematically be found by analysis of the female (uterine-decidua) expression profile only. Alternatively, the difference observed by the authors may be a consequence of the previous preeclampsia not based on a predisposition, but if this is the case, it limits considerably the usefulness of the markers found since preeclampsia, and in particular severe preeclampsia is at 75% a disease of the first pregnancy. The authors should recognize this as an important limit as an early prenatal screening strategy.\n\nThe initial analysis is based upon the endometrial tissue of 24 women that had a severe preeclampsia, 16 controls (8 preterm and 8 term births). Gestational age at delivery had apparently no influence on the 'control' groups. Since the samples were not collected at the end of gestation, which means that the occurrence of preterm may be connected to the placenta and not to the maternal uterine situation.\n\n4. Nevertheless, there are only 8+8 samples so it is not possible to prove that in some case a decidual expression is not involved. In addition, using PCA to check that there is no clustering is not enough to certify that there are no differentially expressed genes that separate the two groups, it means only that the number of differential genes compared to the mass of genes that are not differentially expressed is not enough to cluster the groups, which may be the case if the percentage of genes changed is small. There are some published evidences that recurrent spontaneous abortion, pre-term birth and preeclampsia share common mechanisms. The observation here seems to indicate that the uterus of women with PTB is identical to the one of term pregnancies. From the clinical data, the authors acted wisely in taking PTB without hypertension. But it is not clear from the data that the women that had PTB had a recurrent occurrence in this (not mentioned in Table S1).\n\n5. In addition, the absence of DEG genes visible (Supplementary Figure 1B) is presented against FDR and not p-value which is unusual and I think a bot too stringent. Even random samples should give some significant genes (one out of 20) Using FDR leads to no significant genes, which is not a complete surprise. However, it does not mean that individual genes are not relevant for the difference between the two situations analyzed. Another interesting approach should be to check for enrichment of pathways using GSEA approaches, that do not rest on the establishment of thresholds that are always arbitrary. In sum excluding totally the existence of DEG between the two groups seem a bit rapid.\n\n6. In the legend of Suppl figure S1, I do not understand 'Plot based on 728 genes labeled as fc (blue) and 17,748 genes labeled as none (purple)'. Nevertheless, it is admissible that the differences due to preterm or term are negligible compared to the differences induced by sPE.\n\nThe decomposition of the samples between sets for simulations is unusual in the field, but mathematically sound. The authors discovered 859 DEG at a threshold of 2-fold, and some genes (9) were validated by qRT-PCR.\n\n7. It would be nice to analyze the data not only relative to a threshold of induction, but taking the complete dataset and using GSEA-like approaches to see whether they are consistent with the gene clusters found by threshold-volcano plots analyses.\n\nPrevious studies by the authors evaluate gene expression differences in decidualization either from human endometrial stromal cells (hESCs) from women with sPE versus normal. The authors identified 18 genes differentially expressed in vivo and in vitro in sPE compared to control.\n\n8. The authors do question the observation of having only 18 common genes between in vivo and in vitro, out of 129 or 859 (in vitro \u2013 previous study- and in vivo -present study- respectively), and base them upon cell composition that is much more complex in vivo, which is reasonable. However, in the search for a signature, which is one of the justifications of the work, it could mean that the in vivo dataset could contain more 'relevant' genes compared to a in vitro model. The comparison with the results of Wang, which is much better (and focused better on a simple cell model) on the single-cell transcriptome may belong rather to a discussion rather than a results part of the paper. The validation by qRT-PCR is good, but the choice of the genes leads to a very high correlation (2D), that may be due to the use of only one induced gene (and only 5 genes used). About the actin as a control housekeeping gene, it is not sure that it is the best reporter gene in the uterine context. Generally, it is advised to normalize against the geometric mean of two to four different reporter genes.\n\nA selection of 166 highly deregulated genes (>4 fold) is then selected, and were shown to be enough to separate efficiently the samples, which is not surprising, given that this corresponds to a semi-supervised analysis from genes found differential between the two gene sets.\n\n9. The identification of Estrogen/progesterone receptor is not a surprise, when uterus function is concerned. I would suggest that the authors complete their analyses using network analyses such as provided by the combination of Stringdb and Cytoscape. This would help to visualize the pivotal position of ESR1 and PGR more clearly, or maybe to find other important hubs that were overlooked in their current study. Also using GSEA or other tools on transcription factor binding sites databases, showing the actual involvement (through measuring the enrichment, and calculation of FDRs) of the Estrogen Responsive Element and Progesterone Responsive Element would be an essential element that must be shown to prove a genuine enrichment in these cascades\n\nReviewer #3 (Recommendations for the authors):\n\nThere is much debate on whether the risk of PE is higher/lower in women with male vs. female fetuses. Additionally, the maternal response to pregnancy differs based on the sex of the fetus. The manuscript should therefore report on this variable and whether it impacts the results of the analysis.\n\nPlease clarify whether biopsies were done for clinical or research purposes only.\n\nWhy did the authors choose to use hg19 as their reference genome and not the better annotated hg38?\n\nMethods (line 321) \u2013 What RIN value was defined as appropriate for making RNAseq libraries.\n\nI cannot find anywhere where DD is defined. Can the authors please clearly define what they mean when they use DD?\n\nIntroduction \u2013 PE also significantly contributes to maternal mortality, not just infant.\n\nFigure 3B \u2013 what is the axis label?\n\nFigure 4 \u2013 I believe the authors mean sPE (not Spe).\n\nData availability: authors state that the RNAseq data is available for download in GEO.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Disrupted PGR-B and ESR1 signaling underlies defective decidualization linked to severe preeclampsia\" for further consideration by eLife. Your revised article has been evaluated by Kathryn Cheah (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nEssential revisions:\n\nThe authors failed to properly respond to key reviewer concerns, which were considered to be necessary changes by the consensus of reviewer's discussion. Thus, the manuscript cannot be further considered until these points raised by the reviewers are appropriately addressed.\n\n1. The editor and reviewers understood the method used for fold change thresholding. No additional explanation was required. The method is still wrong, as post-FDR fold-change thresholding is the problem that was raised and cannot be used in a rigorous analysis. Thus, the authors should implement one of the previously given options so that this major problem is corrected: (i) get rid of fold-change thresholding completely, or (ii) use a method that does it, while appropriately controlling for FDR (e.g. TREAT).\n\n2. Similarly, using multiple corrections for GO and KEGG analysis is not a suggestion but a necessity for rigorous analysis, especially when performing so many tests. If term redundancy is a major concern for the authors in the GO database, they are advised to look at the GOSlim framework which was put together to specifically respond to this concern. In any case, enrichment results without FDR control are non-reproducible and not statistically supported.\n\n3. The authors have not responded to the requirement to upload all code/scripts generated for the study. They refer to the software repository (i.e. edgeR), but not the actual code for analysis. The specific scripts that were written to run all analyses need to be made available as well on GitHub or as a supplement, as per eLife policy.\n",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "af7a9746-7f64-4aa1-8d82-3446db9f7b4e",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C1",
+      "claim": "Preeclampsia is a severe complication of late pregnancy and is the second leading cause of maternal mortality in the US, affecting 8% of first-time pregnancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Preeclampsia (PE) is a severe complication of late pregnancy and is the second leading cause of maternal mortality in the US, affecting 8% of first-time pregnancies (Gifford, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gifford, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "7d220041-7d9c-4baa-8332-800d483cf073",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C2",
+      "claim": "PE is characterized by the onset of hypertension, proteinuria, and other signs of maternal vascular damage that contributes to maternal and neonatal mortality and morbidity.",
+      "claim_type": "EXPLICIT",
+      "source": "PE is characterized by the onset of hypertension, proteinuria, and other signs of maternal vascular damage that contributes to maternal and neonatal mortality and morbidity (Gifford, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gifford, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "f079e6b9-d76a-47b3-befe-69a1135be6b7",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C3",
+      "claim": "Severe preeclampsia is diagnosed based on elevated blood pressure (systolic \u2265160 or diastolic of \u2265100 mm Hg) or thrombocytopenia, impaired liver function, progressive renal insufficiency, pulmonary edema, or the onset of cerebral or visual disturbances.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe preeclampsia (sPE) is diagnosed based on elevated blood pressure (systolic \u2265160 or diastolic of \u2265100 mm Hg) or thrombocytopenia, impaired liver function, progressive renal insufficiency, pulmonary edema, or the onset of cerebral or visual disturbances (Gynecologists ACoOa, Pregnancy TFoHi, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to clinical guidelines",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "5962577c-a66c-4305-9ece-036cebf4ff95",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C4",
+      "claim": "sPE is a placental insufficiency syndrome mediated by early-deficient extravillous trophoblast invasion of uterine decidua and spiral arterioles, leading to incomplete endovascular invasion and altered uteroplacental perfusion.",
+      "claim_type": "EXPLICIT",
+      "source": "sPE is a placental insufficiency syndrome mediated by early-deficient extravillous trophoblast (EVT) invasion of uterine decidua and spiral arterioles, leading to incomplete endovascular invasion and altered uteroplacental perfusion (Roberts and Cooper, 2001; Brosens et al., 2019; Staff et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "2c3c7060-d68b-48f7-b0c6-8e5c808749ed",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C5",
+      "claim": "Pregnancy health is dictated by the embryo, placenta, and the quality of the maternal decidua, where EVTs invasion and remodeling of maternal spiral arteries occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Pregnancy health is dictated by the embryo, placenta, and the quality of the maternal decidua, where EVTs invasion and remodeling of maternal spiral arteries occur (Norwitz et al., 2001; Cha et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Norwitz et al., 2001 and Cha et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "991021e9-031a-4fa9-af56-35aa93435434",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C6",
+      "claim": "Accumulated evidence suggests that the contribution of the decidua to the etiology of PE, sPE, and placenta accreta is significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulated evidence suggests that the contribution of the decidua to the etiology of PE (Rabaglino et al., 2015), sPE (Garrido-Gomez et al., 2017; Garrido-Gomez et al., 2020; Garrido-G\u00f3mez et al., 2020), and placenta accreta (McNally et al., 2020) is significant, and cellular signaling in the decidua may determine whether these conditions develop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d055e6b0-6d41-4726-ba18-1f8dfaefcf93",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C7",
+      "claim": "Decidualization is the remodeling of the endometrium initiated after ovulation that is necessary for adequate trophoblast invasion and subsequent placentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Decidualization is the remodeling of the endometrium initiated after ovulation that is necessary for adequate trophoblast invasion and subsequent placentation (Gellersen and Brosens, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gellersen and Brosens, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "c98d886d-45f1-4ede-a271-571be55741eb",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C8",
+      "claim": "Defective decidualization entails the inability of the endometrial compartment to undertake tissue differentiation, leading to aberrations in placentation and compromising pregnancy health.",
+      "claim_type": "EXPLICIT",
+      "source": "Defective decidualization (DD) entails the inability of the endometrial compartment to undertake tissue differentiation, leading to aberrations in placentation and compromising pregnancy health (Garrido-G\u00f3mez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Garrido-G\u00f3mez et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "8f1c8c07-411d-468f-9835-94f7c8f9aa89",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C9",
+      "claim": "In humans and other great apes, the formation of the decidua is a conceptus-independent process driven by progesterone and the second messenger cyclic adenosine monophosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans and other great apes, the formation of the decidua is a conceptus-independent process driven by progesterone and the second messenger cyclic adenosine monophosphate (Brar et al., 1997) that stimulates synthesis of a complex network of intracellular and secreted proteins through progesterone receptor (PR) activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brar et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "2e04cd2b-0f25-4b6c-93c9-13f6acb832fb",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C10",
+      "claim": "Endometrial decidualization involves secretory transformation of uterine glands.",
+      "claim_type": "EXPLICIT",
+      "source": "Endometrial decidualization involves secretory transformation of uterine glands (Kelleher et al., 2018), influx of specialized immune cells, vascular remodeling, and morphological (Dunn et al., 2003; Ramathal et al., 2010), biochemical (Giudice et al., 1998; Jabbour and Critchley, 2001), and transcriptional reprogramming of the endometrial stromal compartment (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kelleher et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "098e82ed-e2ae-4f89-92c9-3993f405dad7",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C11",
+      "claim": "Endometrial decidualization involves influx of specialized immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Endometrial decidualization involves secretory transformation of uterine glands (Kelleher et al., 2018), influx of specialized immune cells, vascular remodeling, and morphological (Dunn et al., 2003; Ramathal et al., 2010), biochemical (Giudice et al., 1998; Jabbour and Critchley, 2001), and transcriptional reprogramming of the endometrial stromal compartment (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of decidualization process description",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "6181a44d-0287-4e1d-956c-81f955f3159a",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C12",
+      "claim": "Endometrial decidualization involves vascular remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Endometrial decidualization involves secretory transformation of uterine glands (Kelleher et al., 2018), influx of specialized immune cells, vascular remodeling, and morphological (Dunn et al., 2003; Ramathal et al., 2010), biochemical (Giudice et al., 1998; Jabbour and Critchley, 2001), and transcriptional reprogramming of the endometrial stromal compartment (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of decidualization process description",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "e7a9d529-ac82-4c63-8b59-5e85105db9de",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C13",
+      "claim": "Endometrial decidualization involves morphological reprogramming of the endometrial stromal compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Endometrial decidualization involves secretory transformation of uterine glands (Kelleher et al., 2018), influx of specialized immune cells, vascular remodeling, and morphological (Dunn et al., 2003; Ramathal et al., 2010), biochemical (Giudice et al., 1998; Jabbour and Critchley, 2001), and transcriptional reprogramming of the endometrial stromal compartment (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dunn et al., 2003 and Ramathal et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "e0282be0-88fe-4480-88fd-12cf101c96ae",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C14",
+      "claim": "Endometrial decidualization involves biochemical reprogramming of the endometrial stromal compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Endometrial decidualization involves secretory transformation of uterine glands (Kelleher et al., 2018), influx of specialized immune cells, vascular remodeling, and morphological (Dunn et al., 2003; Ramathal et al., 2010), biochemical (Giudice et al., 1998; Jabbour and Critchley, 2001), and transcriptional reprogramming of the endometrial stromal compartment (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Giudice et al., 1998 and Jabbour and Critchley, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "1a65bc2b-d971-4b50-93b8-ceed1f0e4d55",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C15",
+      "claim": "Endometrial decidualization involves transcriptional reprogramming of the endometrial stromal compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Endometrial decidualization involves secretory transformation of uterine glands (Kelleher et al., 2018), influx of specialized immune cells, vascular remodeling, and morphological (Dunn et al., 2003; Ramathal et al., 2010), biochemical (Giudice et al., 1998; Jabbour and Critchley, 2001), and transcriptional reprogramming of the endometrial stromal compartment (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "1f08af04-d290-4790-a499-f16edcf4e1cd",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C16",
+      "claim": "The transcriptomics of human decidualization at single-cell resolution from secretory endometrial samples showed that the process is initiated gradually after ovulation, with a direct interplay between stromal fibroblasts and lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently characterized the transcriptomics of human decidualization at single-cell resolution from secretory endometrial samples and showed that the process is initiated gradually after ovulation, with a direct interplay between stromal fibroblasts and lymphocytes (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "50f9bcae-7fc5-438e-8aa1-7385356aa50b",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C17",
+      "claim": "A total of 40 non-pregnant women who experienced a previous pregnancy were enrolled in this study for endometrial RNA-sequencing analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 40 non-pregnant women who experienced a previous pregnancy were enrolled in this study for endometrial RNA-sequencing analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in study design section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "c28047aa-50fb-443d-8f6a-fabdabb00d13",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C18",
+      "claim": "Endometrial samples were obtained during late secretory phase in 24 women who had developed sPE in a previous pregnancy and in 16 women with no history of sPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Endometrial samples were obtained for research purposes during late secretory phase in 24 women who had developed sPE in a previous pregnancy and in 16 women with no history of sPE with full term (n = 8) and preterm pregnancies (n = 8) as controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in study design section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "e273e304-6cbd-4145-b079-113022b09684",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C19",
+      "claim": "The experimental design was based on a stratified random sampling with a 70:30 proportion in two cohorts: a training (n = 29) and validation (n = 11) set of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental design was based on a stratified random sampling with a 70:30 proportion in two cohorts: a training (n = 29) and validation (n = 11) set of samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in study design section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "a6979216-9727-4595-b896-b07c6e917fd9",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C20",
+      "claim": "The training set of samples was analyzed by RNA-seq to identify the global transcriptomic profiling changes between control (n = 12) and sPE (n = 17) samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The training set of samples was analyzed by RNA-seq to identify the global transcriptomic profiling changes between control (n = 12) and sPE (n = 17) samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in study design section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "22578200-aff5-4273-9e21-037ef7fcdd2a",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C21",
+      "claim": "Transcriptional analysis in the training set revealed 593 DEGs based on FDR < 0.05 and with at least 1.2 FC between groups.",
+      "claim_type": "EXPLICIT",
+      "source": "This comparison revealed 593 DEGs based on FDR < 0.05 and with at least 1.2 FC between groups (FC \u2265 1.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from RNA-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "bb31a113-221e-4a9c-b852-8e55707374e2",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C22",
+      "claim": "A total of 155 upregulated and 438 downregulated DEGs were identified as being associated with DD in sPE.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 155 upregulated and 438 downregulated DEGs were identified as being associated with DD in sPE (Figure 1C; complete list in Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from RNA-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d149cef6-77c7-4b1a-8eb7-17fa8caf6be1",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C23",
+      "claim": "Downregulated transcripts include those involved in decidualization, such as MMP3, PRL, IL-6, and IHH.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulated transcripts include those involved in decidualization, such as MMP3, PRL, IL-6, and IHH; and genes associated with signaling (e.g., NR4A3 and IL8), growth factors (e.g., FGF1 and FGF7), angiogenesis (e.g., EDN2 and TMEM215), and immune response (CCL20, CXCL3, and IGHG1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from RNA-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "9c7da1f6-bfdf-4655-a6aa-24948bbdce83",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C24",
+      "claim": "Upregulated genes are involved in amino acid metabolic/catabolic processes (IDO2 and CAPN3), transport, and oxidoreductase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulated genes are involved in amino acid metabolic/catabolic processes (IDO2 and CAPN3), transport, and oxidoreductase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from RNA-seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "3b8aaab3-0e42-404e-804f-e79681a9dbbf",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C25",
+      "claim": "Nine genes were overlapped between in vitro DD (n = 129) and in vivo DD (n = 593) datasets in sPE compared to control women.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we compared DD overlapping between DEGs reported in vitro (n = 129) vs. in vivo (n = 593) in sPE compared to control women. Nine genes were overlapped between the two datasets (Figure 2A); one gene was upregulated (ERP27), and eight genes were downregulated (e.g., ISM1, MEST, MFAP2, and REEP2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated comparison result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "57297c1c-4ab8-4ef9-bea6-2270890a18b0",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C26",
+      "claim": "263 genes from the 593 DEGs in sPE vs. control are expressed by hESC.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 263 genes from the 593 DEGs in sPE vs. control are expressed by hESC (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from comparison with single-cell data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "1caa532c-dfeb-488a-8caa-4ff392df83b0",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C27",
+      "claim": "A transcriptomic signature encoding DD detected in sPE in vivo comprises 120 genes with significant dysregulation (FDR < 0.05) and at least 1.4-fold increase (FC \u22651.4) between sPE and control with assigned EntrezID.",
+      "claim_type": "EXPLICIT",
+      "source": "To formulate the transcriptomic signature that encodes DD detected in sPE in vivo, we selected genes with significant dysregulation (FDR < 0.05) and at least 1.4-fold increase (FC \u22651.4) between sPE and control with assigned EntrezID. A volcano plot shows 120 DEGs meeting these criteria included in the final DD signature (Figure 3A; complete list of genes is included in Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from gene selection criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "899b470b-4225-4846-bc61-519129e58656",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C28",
+      "claim": "GO analysis of the gene signature associated with DD in sPE identified 151 enriched biological processes downregulated (FDR < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "GO analysis of the gene signature associated with DD in sPE identified 151 enriched biological processes downregulated (FDR < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from GO analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d34db888-265e-4a34-a27f-a5aa9e685e81",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C29",
+      "claim": "The enriched biological processes were associated with cell cycle, DNA damage response, cell signaling, cellular response, cell motility, extracellular matrix, immune response, and reproductive process.",
+      "claim_type": "EXPLICIT",
+      "source": "These pathways were associated with cell cycle, DNA damage response, cell signaling, cellular response, cell motility, extracellular matrix, immune response, and reproductive process (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from GO analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "05c72419-5235-4019-95b2-7d23e03560b9",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C30",
+      "claim": "Based on the 120 genes included in the DD signature, PCA showed that sPE and control samples clustered separately in two groups, except for three control samples (C20, C21, and C22).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the 120 genes included in the DD signature, PCA showed that sPE and control samples clustered separately in two groups, except for three control samples (C20, C21, and C22) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from PCA analysis with reference to Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "1ab5cc42-82cd-4737-93db-5bf013e672da",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C31",
+      "claim": "Unsupervised hierarchical clustering analysis confirmed that gene fingerprinting effectively segregated the two groups: one encompassing mainly controls and the other mainly sPE samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised hierarchical clustering analysis confirmed that gene fingerprinting effectively segregated the two groups: one encompassing mainly controls and the other mainly sPE samples (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from hierarchical clustering with reference to Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "f041abdb-3337-41d6-a51c-439160ead856",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C32",
+      "claim": "In the validation set, PCA based on the DD gene signature effectively segregated samples in two homogeneous groups.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate the DD gene signature in an independent cohort of samples (sPE [n = 7] vs. control [n = 4]), PCA based on these transcripts effectively segregated samples in two homogeneous groups (Figure 4C), corroborated by hierarchical clustering (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from validation analysis with reference to Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "db26afb0-9ce5-4674-98d5-e13e674ad861",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C33",
+      "claim": "The DD gene signature successfully grouped 100% of controls and 85.7% of sPE cases in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes successfully grouped 100% of controls and 85.7% of sPE cases supporting DD in sPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "a87d2ca8-af6d-4afd-80ef-56f7ea6e02b7",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C34",
+      "claim": "Of the 120 genes in the DD signature, 94 endometrial enriched genes encode for specific proteins reported by the Human Protein Atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 120 genes in the DD signature, 94 endometrial enriched genes encode for specific proteins reported by the Human Protein Atlas (Uhl\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from database comparison",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "58e3d036-27df-456a-8005-a7872446c5c7",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C35",
+      "claim": "45 of the 94 endometrial enriched genes (47.9%) were included in the transcriptome modulated by ESR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 45 of those genes (47.9%) were included in the transcriptome modulated by ESR1 (Hewitt et al., 2010), and 43 genes (45.7%) overlapped with the transcriptome and cistrome associated with PGR (Mazur et al., 2015; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from comparison with ESR1 transcriptome data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "4f53b35d-5e00-4733-bde9-96d792f10371",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C36",
+      "claim": "43 of the 94 endometrial enriched genes (45.7%) overlapped with the transcriptome and cistrome associated with PGR.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 45 of those genes (47.9%) were included in the transcriptome modulated by ESR1 (Hewitt et al., 2010), and 43 genes (45.7%) overlapped with the transcriptome and cistrome associated with PGR (Mazur et al., 2015; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from comparison with PGR transcriptome data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "65aae96b-908f-467a-9464-b3b69f86edfe",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C37",
+      "claim": "The DD fingerprint network showed a highly enriched protein\u2013protein interaction in sPE with interconnection between nodes significantly higher than expected (PPI enrichment p<1.0e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "This DD fingerprint network showed a highly enriched protein\u2013protein interaction (PPI) in sPE; indeed, the interconnection between nodes was significantly higher than the 93 edges expected (PPI enrichment p<1.0e-16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from network analysis with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "90c79107-3e20-4394-a07a-a4e5916ac09e",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C38",
+      "claim": "Both ER1 and PR were strongly embedded in the network and highly connected with DD fingerprinting.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both ER1 and PR were strongly embedded in the network and highly connected with DD fingerprinting, highlighting the interaction of hormonal receptors with notable decidualization mediators such as IHH and MSX2 validated by RT-qPCR (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from network analysis with reference to validation by RT-qPCR",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "dfc2acad-ccbb-4439-a22c-d422d7990920",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C39",
+      "claim": "ESR1 gene expression was reduced in sPE patients compared to controls (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found reduced expression of transcripts encoding the hormone receptors ESR1 (p<0.05) and PGR (p<0.001) in sPE patients (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from RT-qPCR analysis with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d205ccfb-0c41-46ad-9aa4-fd888a29d722",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C40",
+      "claim": "PGR gene expression was reduced in sPE patients compared to controls (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We found reduced expression of transcripts encoding the hormone receptors ESR1 (p<0.05) and PGR (p<0.001) in sPE patients (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from RT-qPCR analysis with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "2bdeeb47-d602-41ec-bc2e-372e1ec53991",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C41",
+      "claim": "The isoform PGR-B was significantly downregulated in sPE vs. controls (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In-depth expression analyses revealed that the isoform PGR-B was significantly downregulated in sPE vs. controls (p<0.01), while the isoform PGR-A was unaffected (p>0.05) (Figure 5G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from RT-qPCR analysis with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "91c72542-070c-4641-b0bb-ba6201c47481",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C42",
+      "claim": "The isoform PGR-A was unaffected in sPE vs. controls (p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In-depth expression analyses revealed that the isoform PGR-B was significantly downregulated in sPE vs. controls (p<0.01), while the isoform PGR-A was unaffected (p>0.05) (Figure 5G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from RT-qPCR analysis with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "dcf596f3-d0be-41f3-927f-f732163e9892",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C43",
+      "claim": "ER1 and PR-B protein expression was highly expressed through the decidualized endometrium, especially in the secretory glands in controls, but greatly reduced or absent in sPE samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Both receptors were highly expressed through the decidualized endometrium, especially in the secretory glands in controls. In contrast, their expression was greatly reduced or absent in sPE samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from immunohistochemical analysis with reference to Figure 5I and J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "5cd3bef9-1ceb-45a0-81d5-fbf26deeecd1",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C44",
+      "claim": "The sFLT1/PlGF ratio has been proposed as a biomarker showing a positive predictive value of 36.7%, with 66.2% sensitivity and 83.1% specificity but its application is effective only 4 weeks before PE symptoms manifest.",
+      "claim_type": "EXPLICIT",
+      "source": "The sFLT1/PlGF ratio has been proposed as a biomarker showing a positive predictive value of 36.7%, with 66.2% sensitivity and 83.1% specificity but its application is effective only 4 weeks before PE symptoms manifest (Zeisler et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zeisler et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "1b57d47e-6bc1-43b7-be60-b75ab19c1493",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C45",
+      "claim": "There may be a molecular signature associated with impaired endometrial maturation during early pregnancy in women who develop sPE.",
+      "claim_type": "EXPLICIT",
+      "source": "In this sense, there may be a molecular signature associated with impaired endometrial maturation during early pregnancy in women who develop sPE (Rabaglino et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rabaglino et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "da7cf3ab-960a-4ae7-a3a7-5f8fb6568989",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C46",
+      "claim": "hESC isolated from patients with previous sPE failed to decidualize in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work demonstrated that hESC isolated from patients with previous sPE failed to decidualize in vitro, suggesting a role of the maternal factor in the development of this disease (Garrido-Gomez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Garrido-Gomez et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "ddba2742-7a76-439f-9b41-41868b05fe18",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C47",
+      "claim": "Molecular pathways of dysregulated decidualization in PE are also found in endometrial disorders such as implantation failure, recurrent miscarriage, and endometriosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, molecular pathways of dysregulated decidualization in PE are also found in endometrial disorders such as implantation failure, recurrent miscarriage, and endometriosis (Rabaglino and Conrad, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rabaglino and Conrad, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "7950cf8b-47fe-4af7-8073-659c3c3b926d",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C48",
+      "claim": "The decidua basalis transcriptome at delivery compared with the transcriptome of decidua at \u205311.5 gestational weeks and in vitro decidualized hESC from women who experienced sPE revealed little, if any, overlap between molecular signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "The decidua basalis transcriptome at delivery was compared with the transcriptome of decidua at \u205311.5 gestational weeks and in vitro decidualized hESC from women who experienced sPE. Both analyses revealed little, if any, overlap between molecular signatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated comparison result",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "b1f3d76f-881e-4dd7-8d4f-1a20d94930d5",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C49",
+      "claim": "The signature encoding in vitro DD of hESC years after pregnancy overlapped significantly with the dysregulated profile found in decidual samples at the beginning of pregnancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the signature encoding in vitro DD of hESC years after pregnancy overlapped significantly with the dysregulated profile found in decidual samples at the beginning of pregnancy (Rabaglino and Conrad, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rabaglino and Conrad, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "cc45a202-cc75-4a8b-91b5-6e893a6bf17c",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C50",
+      "claim": "Decidual gene expression patterns during the clinically active disease largely differ from those observed during endometrial decidualization at the end of the menstrual cycle and early pregnancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, decidual gene expression patterns during the clinically active disease largely differ from those observed during endometrial decidualization at the end of the menstrual cycle and early pregnancy, perhaps reflecting a consequence rather than the origin of sPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as inference from comparison results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "4ef6fadf-8556-411d-b695-1a9ed206bd7f",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C51",
+      "claim": "The sPE-DD signature includes genes that allowed segregation of samples from the training set into sPE and control groups, which were confirmed by the test set.",
+      "claim_type": "EXPLICIT",
+      "source": "This sPE-DD signature includes genes that allowed us to segregate samples from the training set into sPE and control groups, which were confirmed by the test set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "9eb4b10d-c100-409f-926c-20a21f6637de",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C52",
+      "claim": "90.9% of samples from an independent cohort were properly clustered in the dendrogram.",
+      "claim_type": "EXPLICIT",
+      "source": "One sPE was misclustered in the test set, such that 90.9% of samples from an independent cohort were properly clustered in the dendrogram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "1a97fba0-763f-44cd-84c2-406c6a1a051a",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C53",
+      "claim": "Most of the DD fingerprint genes in sPE were related to the downregulation of ESR1 and PGR, specifically PGR-B.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most of the DD fingerprint genes in sPE were related to the downregulation of ESR1 and PGR, specifically PGR-B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from network and expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "f99073c0-b65b-45ec-b333-1757601eb9ef",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C54",
+      "claim": "Low expression of PGR-B and ESR1 activates endometrial decidualization by dysregulating progesterone and estrogen action.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that low expression of PGR-B and ESR1 activates endometrial decidualization by dysregulating progesterone (P4) and estrogen (E2) action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as hypothesis based on findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "dc5bb0c3-22a3-4aa5-9e6d-b0be08b9c553",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C55",
+      "claim": "P4- and E2-related cellular signaling may be compromised, leading to the development of DD.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, P4- and E2-related cellular signaling may be compromised, leading to the development of DD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as inference from hypothesis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "749c2598-5a60-40ea-a735-e3bf059b1779",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C56",
+      "claim": "Stromal cell differentiation, stromal\u2013epithelial crosstalk, extracellular matrix degradation, immune system response, and endothelial function may all be disrupted by low expression of PGR-B and ESR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Stromal cell differentiation, stromal\u2013epithelial crosstalk (Wang et al., 2017), extracellular matrix degradation (Itoh et al., 2012), immune system response, and endothelial function (Okada et al., 2018) may all be disrupted by low expression of PGR-B and ESR1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as inference with supporting citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d252db4d-ddd4-47ef-89f9-a13f09bb52d8",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C57",
+      "claim": "The local immune system appeared to be dysregulated due to the altered expression of interleukins, cytokines, chemokines, and immunoglobulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the local immune system appeared to be dysregulated due to the altered expression of interleukins, cytokines, chemokines, and immunoglobulin, which could disrupt the tolerant microenvironment at the maternal\u2013fetal interface in pregnancy and contribute to the development of sPE (Erlebacher, 2013; Harris et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as observation from data with supporting citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "154f16ab-a4f8-48a2-be3e-6adf13621b55",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C58",
+      "claim": "In non-sPE pregnancies balanced hormonal signaling leads to proper decidualization, which in turn interacts with immune and endothelial cells to control cytotrophoblast invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our findings, we postulate that in non-sPE pregnancies balanced hormonal signaling leads to proper decidualization, which in turn interacts with immune and endothelial cells to control cytotrophoblast invasion (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as postulate based on findings with reference to Figure 6A",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "4badbdc1-9166-4f25-96e6-0751eaf8a001",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C59",
+      "claim": "P4 and E2 activate their receptors in the epithelium and signal to the stromal compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "P4 and E2 activate their receptors in the epithelium and signal to the stromal compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of proposed mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "57a94bba-94ee-4189-8109-35953ef58383",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C60",
+      "claim": "Stromal PR is activated by ER1, which induces target genes involved in decidualization such as MSX2, CCNB1, and IL6.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, stromal PR is activated by ER1, which induces target genes involved in decidualization such as MSX2, CCNB1, and IL6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of proposed mechanism",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d4917462-dfe2-46df-81aa-97f2b61570f7",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C61",
+      "claim": "In sPE, endometrial ESR1 and IHH are downregulated, decreasing PGR expression and leading to compromised decidualization, endothelial dysfunction, and local immune dysregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in sPE, endometrial ESR1 and IHH are downregulated, decreasing PGR expression (Figure 6B) and leading to compromised decidualization, endothelial dysfunction, and local immune dysregulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as proposed mechanism based on findings with reference to Figure 6B",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d356c7cf-9892-4be6-982a-67dd0c424c90",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C62",
+      "claim": "In sPE, there is evidence of impaired epithelial\u2013stromal crosstalk through IHH and FGF1, which could lead to an imbalance of hESC proliferation and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In sPE, we found evidence of impaired epithelial\u2013stromal crosstalk through IHH and FGF1, which could lead to an imbalance of hESC proliferation and differentiation (Cha et al., 2012; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as inference from data with supporting citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d6199e42-ccc2-4c78-96c8-d1aaf73ae10d",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C63",
+      "claim": "Downregulated genes involved in stromal cell differentiation in sPE include IL6, CCNB1, CCNB2, and MSX2.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, we observed downregulated genes involved in stromal cell differentiation including IL6, CCNB1, CCNB2, and MSX2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "e48ad98d-13fb-4bb7-a130-16c61e5bafec",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C64",
+      "claim": "Metalloproteinases such as MMP1, MMP7, and MMP11 were downregulated in sPE, which could be associated to defective cell motility and extracellular matrix degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, metalloproteinases such as MMP1, MMP7, and MMP11 were downregulated in sPE, which could be associated to defective cell motility and extracellular matrix degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as inference from data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "7cacc32d-0c9a-4716-843d-e33736da3430",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C65",
+      "claim": "EGR3 and MMP3 are connected to endothelial and immune system dysfunction in sPE and are associated with altered angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Other transcriptomic deregulations in sPE are connected to endothelial and immune system dysfunction, such as EGR3 and MMP3, both of which are associated with altered angiogenesis (Chen et al., 2020; Frieling et al., 2020); TNF is involved in endothelial inflammation disbalance (Marcos-Ramiro et al., 2014) and influences the tolerant microenvironment at the maternal\u2013fetal interface (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as inference from data with supporting citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "490ddf24-5714-4983-8060-c4fe70b55418",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C66",
+      "claim": "TNF is involved in endothelial inflammation disbalance and influences the tolerant microenvironment at the maternal\u2013fetal interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Other transcriptomic deregulations in sPE are connected to endothelial and immune system dysfunction, such as EGR3 and MMP3, both of which are associated with altered angiogenesis (Chen et al., 2020; Frieling et al., 2020); TNF is involved in endothelial inflammation disbalance (Marcos-Ramiro et al., 2014) and influences the tolerant microenvironment at the maternal\u2013fetal interface (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Marcos-Ramiro et al., 2014 and Li et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "84091bbc-f566-4b5b-b47d-ce91515ca566",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C67",
+      "claim": "The potential origin of sPE may lie in the downregulation of ESR1 and PGR-B.",
+      "claim_type": "EXPLICIT",
+      "source": "The potential origin of sPE may lie in the downregulation of ESR1 and PGR-B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as conclusion from findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "601e67a6-ec7d-403c-8cd3-7588970cd793",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C68",
+      "claim": "Both ESR1 and PGR receptors are strongly coordinated to regulate decidualization and PGR expression is induced by ER1, which is inhibited by PR.",
+      "claim_type": "EXPLICIT",
+      "source": "Both receptors are strongly coordinated to regulate decidualization and PGR expression is induced by ER1, which is inhibited by PR (Patel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Patel et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "bd39d5ee-05e5-42c2-a825-106fc6e3dc8c",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C69",
+      "claim": "E2 and P4 act through ER1 and PR in the epithelium and stroma and modulate the transcriptome and to promote crosstalk between both compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "E2 and P4 act through ER1 and PR in the epithelium and stroma and modulate the transcriptome and to promote crosstalk between both compartments (Winuthayanon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Winuthayanon et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "0f4b17f4-205f-4412-9935-2aaa5815d56c",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C70",
+      "claim": "ER1 in the epithelium regulates stromal decidualization via paracrine mechanisms mediated by leukemia inhibitory factor, which controls IHH expression that transduce the signal activation of PR in the stroma.",
+      "claim_type": "EXPLICIT",
+      "source": "ER1 in the epithelium regulates stromal decidualization via paracrine mechanisms mediated by leukemia inhibitory factor (LIF), which controls IHH expression that transduce the signal activation of PR in the stroma (Pawar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pawar et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "9dbd55f2-626e-4e91-af07-656621497eed",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C71",
+      "claim": "Stromal ER1 activates PR in the same compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, stromal ER1 activates PR in the same compartment (Kaya Okur et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kaya Okur et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "cd2af28e-8eba-40de-beab-3d4a9b4e9016",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C72",
+      "claim": "An endometrial transcriptomic signature persists years after the affected pregnancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that an endometrial transcriptomic signature persists years after the affected pregnancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as conclusion from findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "83b45e0e-5d23-4b34-8614-abd10d57eac1",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C73",
+      "claim": "This signature may be leveraged for a preconception or early prenatal screening strategy in assessing sPE risk.",
+      "claim_type": "EXPLICIT",
+      "source": "This signature may be leveraged for a preconception or early prenatal screening strategy in assessing sPE risk and may inform the development of sPE therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as potential application of findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "4d8270d2-6b51-4358-a79c-492c7348fddb",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C74",
+      "claim": "Transcriptomic profiles were compared by differential expression analysis, revealing no significant changes in the endometrial transcriptome between preterm and term controls (FDR \u2265 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptomic profiles were compared by differential expression analysis, revealing no significant changes in the endometrial transcriptome between preterm and term controls (FDR \u2265 0.05; Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from differential expression analysis with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "abb29417-22b2-4ed5-bcfe-da481f546b27",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C75",
+      "claim": "Principal component analysis supported that there was no underlying pattern of distribution depending on gestational age at delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) supported that there was no underlying pattern of distribution depending on gestational age at delivery (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from PCA with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "7ff8153e-726f-4379-a202-c7c3a2360715",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C76",
+      "claim": "The 40 samples produced 56,638 raw sequencing genes; after normalization, 18,301 genes were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The 40 samples produced 56,638 raw sequencing genes; after normalization, 18,301 genes were included in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from RNA-seq processing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "04719dc4-b2db-4541-a1dc-48ec29b70695",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C77",
+      "claim": "The interactome contained 117 nodes directly interconnected by 361 edges.",
+      "claim_type": "EXPLICIT",
+      "source": "The interactome contained 117 nodes directly interconnected by 361 edges (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated result from network analysis with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "ca6180ea-594e-4a0a-b151-33a561e18f64",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C78",
+      "claim": "Clustering revealed three main modules based on their connectivity degree, with functionally relevant genes involved in gland morphogenesis, cell migration, extracellular matrix organization, stromal cell differentiation, cellular response to DNA damage stimulus, and regulation of cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering revealed three main modules based on their connectivity degree, with functionally relevant genes involved in gland morphogenesis, cell migration, extracellular matrix organization, stromal cell differentiation, cellular response to DNA damage stimulus, and regulation of cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from network clustering analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "e72f66a6-dad7-44d9-b3b3-87c0a1fcfeed",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C79",
+      "claim": "Five hub genes were selected by overlapping the top 10 genes obtained using two topological analysis methods, all of which were downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "The hub genes were determined by overlapping the top 10 genes obtained using two topological analysis methods in the cytoHubba plugin (Chin et al., 2014), MCC, and MNC. Five genes were selected, all of which were downregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from hub gene analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "04860c3d-3988-4587-bbfc-bc7951847a24",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C80",
+      "claim": "The interactome demonstrated a direct interaction between ER1 and PR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the interactome demonstrated a direct interaction between ER1 and PR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from network analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "24704670-cb54-412d-b885-93bcb48588fe",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C81",
+      "claim": "The DD transcriptomic signature implicates dysregulated ER1 and PR-B signaling in the late secretory phase in sPE patients.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the DD transcriptomic signature implicates dysregulated ER1 and PR-B signaling in the late secretory phase in sPE patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as conclusion from expression and protein data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "e7ff93fd-b79a-4087-bace-e831d404297b",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C82",
+      "claim": "sFLT1 protein binds to PlGF, preventing its interaction with endothelial receptors and leading to endothelial dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "sFLT1 protein binds to PlGF, preventing its interaction with endothelial receptors and leading to endothelial dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d6d7be3a-2d6e-4128-957a-6c6950802f7e",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C83",
+      "claim": "sFLT1 is increased, while free PlGF is decreased in serum from women with PE.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, sFLT1 is increased, while free PlGF is decreased in serum from women with PE (Levine et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Levine et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "49d639ff-f0f6-48de-9ebd-2a419d983af6",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C84",
+      "claim": "During the first trimester there is a lack of high sensitivity and specificity screening methods to detect sPE early and prevent mortality and morbidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, during the first trimester there is a lack of high sensitivity and specificity screening methods to detect sPE early and prevent mortality and morbidity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as conclusion from biomarker limitations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "88b1bb20-71d1-4ce7-928c-ae8b2cae6890",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C85",
+      "claim": "The number of downregulated genes was higher than the number of upregulated genes in sPE compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the number of downregulated genes was higher than the number of upregulated genes in sPE compared to controls, suggesting that, in vivo, DD may be induced by the lack of expression of a subset of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated observation from data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "8bed3b66-c119-4337-bc6f-812d1149a91e",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C86",
+      "claim": "In vivo, DD may be induced by the lack of expression of a subset of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the number of downregulated genes was higher than the number of upregulated genes in sPE compared to controls, suggesting that, in vivo, DD may be induced by the lack of expression of a subset of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as inference from observation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "7ebe6c18-e5fd-4472-8e7a-c116b75e6071",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C87",
+      "claim": "The in vivo assessment provides a broad spectrum of dysregulated transcripts comparing with previous in vitro findings, which includes a high concordance with in vivo hESC genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the in vivo assessment provides a broad spectrum of dysregulated transcripts comparing with previous in vitro findings, which includes a high concordance with in vivo hESC genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as conclusion from comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "7df9b289-da26-43c1-bdb4-5406c11e13e6",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C88",
+      "claim": "Decidualization is a highly dynamic process governed by inter-individual variability in the endometrial menstrual cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Decidualization is a highly dynamic process governed by (1) inter-individual variability in the endometrial menstrual cycle supported by displacement of the window of implantation in one out of four patients experiencing recurrent implantation failure (Wang et al., 2020; Diaz-Gimeno et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2020 and Diaz-Gimeno et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d1d625ed-5ac8-4d92-8fe4-db8d260cacf6",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C89",
+      "claim": "The decidualization process starts in some areas around spiral arteries and extends to the entire endometrium during the last days of the menstrual cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) the physiology of the spatial expansion of decidualization process starting in some areas around spiral arteries and extending to the entire endometrium during the last days of the menstrual cycle (Gellersen and Brosens, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gellersen and Brosens, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "459fa8e1-1682-4d00-a5f4-4aa5504996b4",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "claim_id": "C90",
+      "claim": "Random spatial sampling during the endometrial biopsy could influence cell-type proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) and the random spatial sampling during the endometrial biopsy that could influences cell-type proportions, which is inherent to the experimental strategy used in our investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as methodological consideration",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c48bb41-c0f1-4498-b73e-76e6c060503d",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study enrolled 40 non-pregnant women (24 with previous sPE, 16 controls) and used stratified random sampling to create training (n=29) and validation (n=11) cohorts. Control groups (preterm vs. term) showed no significant transcriptomic differences (FDR \u22650.05), validating their pooling for analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 and C74-C76 describe the study design and validation of control group homogeneity. The lack of significant differences between preterm and term controls (C74, C75) appropriately justifies pooling these groups. Sample sizes and stratification approach are clearly documented with appropriate statistical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "76c919a6-3463-41b8-a53d-f5241511cf56",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RNA-seq analysis of the training set identified 593 differentially expressed genes (DEGs) between sPE and controls (FDR<0.05, FC\u22651.2), comprising 155 upregulated and 438 downregulated genes. Downregulated genes included decidualization markers (MMP3, PRL, IL-6, IHH) and genes involved in signaling, growth factors, angiogenesis, and immune response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 and C85 present the primary transcriptomic findings with appropriate statistical thresholds (FDR<0.05, FC\u22651.2). The identification of 593 DEGs with specific functional categories is supported by the data presented in Figure 1. The predominance of downregulated genes (438 vs. 155) is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "86b7d1da-00cb-4d3b-94a2-906c3c2bc738",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Comparison of in vitro and in vivo decidualization defects revealed limited overlap (9 genes) between the 129 in vitro DEGs and 593 in vivo DEGs. However, 263 of the 593 in vivo DEGs (44.3%) were expressed by human endometrial stromal cells (hESC) based on single-cell data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 and C87 describe the comparison between in vitro and in vivo approaches. The modest overlap (9 genes) is appropriately interpreted given the cellular heterogeneity differences between approaches. The identification of 263 hESC-associated genes provides validation that the in vivo signature captures stromal cell biology relevant to decidualization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "c3e4f5fc-4dcb-4d64-ab6a-6dcd6037cecd",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A refined transcriptomic signature of 120 genes was defined using stricter criteria (FDR<0.05, FC\u22651.4, assigned EntrezID). GO analysis identified 151 enriched biological processes (FDR<0.05) associated with cell cycle, DNA damage response, signaling, motility, extracellular matrix, immune response, and reproductive processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 describe the derivation of the DD fingerprint using more stringent fold-change criteria (FC\u22651.4 vs. 1.2). The GO enrichment analysis with appropriate FDR correction identifies biologically relevant pathways consistent with decidualization biology. The selection criteria and functional enrichment are well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "d3c52db8-3a9e-4aa5-8e74-066f476c65e3",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The 120-gene DD signature effectively segregated sPE from control samples in both training and validation cohorts using PCA and hierarchical clustering. In the validation set, the signature correctly classified 100% of controls and 85.7% of sPE cases (90.9% overall accuracy).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 and C51-C52 demonstrate validation of the DD signature in an independent cohort. The classification performance (85.7% sPE, 100% controls) is reasonable given biological variability. The authors appropriately acknowledge one misclassified sPE sample and discuss potential sources of variability (C88-C90). The validation approach using independent samples strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "eeca61ff-72da-4d66-8346-1291fd40bcc7",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Network analysis of the 120-gene DD signature revealed 94 endometrial-enriched genes, with 47.9% overlapping ESR1-modulated genes and 45.7% overlapping PGR-associated genes. The protein-protein interaction network showed significant enrichment (p<1.0e-16) with 117 nodes and 361 edges, organized into three functional modules. ESR1 and PGR were highly interconnected hub genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 and C77-C80 describe comprehensive network analysis linking the DD signature to hormonal regulation. The significant PPI enrichment (p<1.0e-16) and identification of ESR1/PGR as central nodes is well-supported. The overlap with published ESR1 and PGR target genes provides external validation. Network topology analysis using multiple methods (MCC, MNC) strengthens hub gene identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "4b9cf4d9-cd9f-4920-8497-5f04bdc75cbb",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RT-qPCR validation confirmed reduced expression of ESR1 (p<0.05) and PGR (p<0.001) in sPE patients. Isoform-specific analysis revealed significant downregulation of PGR-B (p<0.01) but not PGR-A (p>0.05). Immunofluorescence confirmed reduced ER1 and PR-B protein expression in sPE endometrium, particularly in secretory glands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 and C81 provide multi-level validation (mRNA and protein) of the key mechanistic finding. The isoform-specific analysis of PGR is particularly valuable, showing selective downregulation of PGR-B. Statistical significance is reported with appropriate p-values. Immunofluorescence provides spatial context showing glandular localization. The convergence of transcriptomic, RT-qPCR, and protein data strongly supports dysregulated hormonal signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "77b67121-de80-4684-ac5e-236fd3194b05",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that low expression of PGR-B and ESR1 drives defective decidualization in sPE by dysregulating progesterone and estrogen signaling, leading to impaired stromal-epithelial crosstalk, stromal cell differentiation, extracellular matrix degradation, immune dysregulation, and endothelial dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C65 and C67 present a mechanistic model linking hormonal receptor downregulation to DD. While the model is biologically plausible and supported by the observed gene expression patterns (C62-C65) and literature citations (C56), it remains largely speculative (C54, C55 explicitly stated as hypothesis). The correlative nature of the transcriptomic data cannot establish causality. Functional validation experiments (e.g., receptor knockdown/rescue) would be needed to definitively support this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "bca226d1-4a5f-4ee8-a117-76156514b67a",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparison with published decidual transcriptomes at delivery showed minimal overlap (1.3-1.7%) with the current late secretory phase signature. In contrast, in vitro DD signatures from hESC showed significant overlap with early pregnancy decidual samples, suggesting that gene expression during active disease differs from the pre-pregnancy decidualization defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 appropriately contextualize the findings by comparing with published data. The minimal overlap with delivery samples (C48) versus significant overlap of in vitro signatures with early pregnancy samples (C49) supports the interpretation that the late secretory phase signature reflects the origin rather than consequence of sPE (C50). This temporal distinction is important for understanding disease etiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "69718cb0-e7a5-4c34-b352-c6cc47962be0",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors conclude that an endometrial transcriptomic signature persists years after sPE pregnancy and propose it could be leveraged for preconception or early prenatal screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 is supported by the data showing persistent transcriptomic differences in non-pregnant women years after sPE. However, C73's proposal for clinical screening is speculative and would require prospective validation studies to assess predictive value, sensitivity, specificity, and clinical utility. The current study is retrospective (women with known sPE history) and cannot establish whether the signature predicts future sPE risk.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "811f537d-4dce-4dae-9477-e414aeb275d5",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge that decidualization is a dynamic process with inter-individual variability, spatial heterogeneity, and sampling variability that may contribute to the one misclassified sample in the validation set.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 provide appropriate methodological context and limitations. The acknowledgment of biological variability (C88, C89 with citations) and technical limitations (C90) demonstrates scientific rigor. This discussion appropriately contextualizes the 90.9% classification accuracy and explains potential sources of misclassification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "2fbac48f-7d5f-4e88-8f77-de243876cf96",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish that preeclampsia is a major pregnancy complication characterized by placental insufficiency and deficient trophoblast invasion, with accumulating evidence for decidual contribution to disease etiology through defective decidualization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C16 provide background context supported by appropriate citations. These establish the clinical significance of sPE (C1-C3), the placental insufficiency model (C4), the role of decidua (C5-C8), and the biology of decidualization (C9-C16). All claims are appropriately referenced to prior literature and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "e34c400b-90a2-4f70-b3b9-02062374175d",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Current sPE biomarkers (sFLT1/PlGF ratio) have limited predictive value and are only effective 4 weeks before symptom onset. Previous work suggests maternal decidual defects contribute to sPE etiology, with hESC from sPE patients showing in vitro decidualization failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 and C82-C84 establish the clinical need and prior evidence for the current study. The limitations of current biomarkers (C44, C84) are appropriately cited. The authors' previous work (C46) and related literature (C45, C47) provide rationale for investigating decidual contributions to sPE. These claims appropriately motivate the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "246cc43d-359d-48c8-9ee5-1f0fe4e87664",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ESR1 and PGR are coordinated regulators of decidualization, with PGR expression induced by ER1 and inhibited by PR. Hormones act through receptors in epithelium and stroma to promote compartmental crosstalk, with epithelial ER1 regulating stromal decidualization via paracrine mechanisms involving LIF and IHH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 describe established mechanisms of hormonal regulation in decidualization, all supported by appropriate citations to prior literature. These provide the mechanistic framework for interpreting the observed ESR1 and PGR-B downregulation in sPE. The claims accurately represent published knowledge about hormone receptor signaling in the endometrium.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "5ba95665-763d-49e2-a42d-a45e010485ab",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TNF is involved in endothelial inflammation and influences the maternal-fetal interface microenvironment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 describes the role of TNF with appropriate citations. This provides context for the observed TNF dysregulation in the DD signature and its potential contribution to sPE pathogenesis through endothelial and immune dysfunction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    },
+    {
+      "id": "73620947-8989-4576-9645-c4b59b64edf1",
+      "content_id": "558a37ed-47f4-4c1a-8225-a91659727c83",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors suggest that in vivo DD may be induced by lack of expression of a subset of genes, based on the predominance of downregulated genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is speculative inference from the observation in C85. While the predominance of downregulated genes (438 vs. 155) is clear, inferring that DD is specifically caused by loss of expression rather than the combined effect of up- and downregulation requires functional validation. The inference is reasonable but remains unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:31:14.502396Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "50f9bcae-7fc5-438e-8aa1-7385356aa50b",
+      "result_id": "0c48bb41-c0f1-4498-b73e-76e6c060503d"
+    },
+    {
+      "claim_id": "c28047aa-50fb-443d-8f6a-fabdabb00d13",
+      "result_id": "0c48bb41-c0f1-4498-b73e-76e6c060503d"
+    },
+    {
+      "claim_id": "e273e304-6cbd-4145-b079-113022b09684",
+      "result_id": "0c48bb41-c0f1-4498-b73e-76e6c060503d"
+    },
+    {
+      "claim_id": "a6979216-9727-4595-b896-b07c6e917fd9",
+      "result_id": "0c48bb41-c0f1-4498-b73e-76e6c060503d"
+    },
+    {
+      "claim_id": "4d8270d2-6b51-4358-a79c-492c7348fddb",
+      "result_id": "0c48bb41-c0f1-4498-b73e-76e6c060503d"
+    },
+    {
+      "claim_id": "abb29417-22b2-4ed5-bcfe-da481f546b27",
+      "result_id": "0c48bb41-c0f1-4498-b73e-76e6c060503d"
+    },
+    {
+      "claim_id": "7ff8153e-726f-4379-a202-c7c3a2360715",
+      "result_id": "0c48bb41-c0f1-4498-b73e-76e6c060503d"
+    },
+    {
+      "claim_id": "22578200-aff5-4273-9e21-037ef7fcdd2a",
+      "result_id": "76c919a6-3463-41b8-a53d-f5241511cf56"
+    },
+    {
+      "claim_id": "bb31a113-221e-4a9c-b852-8e55707374e2",
+      "result_id": "76c919a6-3463-41b8-a53d-f5241511cf56"
+    },
+    {
+      "claim_id": "d149cef6-77c7-4b1a-8eb7-17fa8caf6be1",
+      "result_id": "76c919a6-3463-41b8-a53d-f5241511cf56"
+    },
+    {
+      "claim_id": "9c7da1f6-bfdf-4655-a6aa-24948bbdce83",
+      "result_id": "76c919a6-3463-41b8-a53d-f5241511cf56"
+    },
+    {
+      "claim_id": "88b1bb20-71d1-4ce7-928c-ae8b2cae6890",
+      "result_id": "76c919a6-3463-41b8-a53d-f5241511cf56"
+    },
+    {
+      "claim_id": "3b8aaab3-0e42-404e-804f-e79681a9dbbf",
+      "result_id": "86b7d1da-00cb-4d3b-94a2-906c3c2bc738"
+    },
+    {
+      "claim_id": "57297c1c-4ab8-4ef9-bea6-2270890a18b0",
+      "result_id": "86b7d1da-00cb-4d3b-94a2-906c3c2bc738"
+    },
+    {
+      "claim_id": "7ebe6c18-e5fd-4472-8e7a-c116b75e6071",
+      "result_id": "86b7d1da-00cb-4d3b-94a2-906c3c2bc738"
+    },
+    {
+      "claim_id": "1caa532c-dfeb-488a-8caa-4ff392df83b0",
+      "result_id": "c3e4f5fc-4dcb-4d64-ab6a-6dcd6037cecd"
+    },
+    {
+      "claim_id": "899b470b-4225-4846-bc61-519129e58656",
+      "result_id": "c3e4f5fc-4dcb-4d64-ab6a-6dcd6037cecd"
+    },
+    {
+      "claim_id": "d34db888-265e-4a34-a27f-a5aa9e685e81",
+      "result_id": "c3e4f5fc-4dcb-4d64-ab6a-6dcd6037cecd"
+    },
+    {
+      "claim_id": "05c72419-5235-4019-95b2-7d23e03560b9",
+      "result_id": "d3c52db8-3a9e-4aa5-8e74-066f476c65e3"
+    },
+    {
+      "claim_id": "1ab5cc42-82cd-4737-93db-5bf013e672da",
+      "result_id": "d3c52db8-3a9e-4aa5-8e74-066f476c65e3"
+    },
+    {
+      "claim_id": "f041abdb-3337-41d6-a51c-439160ead856",
+      "result_id": "d3c52db8-3a9e-4aa5-8e74-066f476c65e3"
+    },
+    {
+      "claim_id": "db26afb0-9ce5-4674-98d5-e13e674ad861",
+      "result_id": "d3c52db8-3a9e-4aa5-8e74-066f476c65e3"
+    },
+    {
+      "claim_id": "4ef6fadf-8556-411d-b695-1a9ed206bd7f",
+      "result_id": "d3c52db8-3a9e-4aa5-8e74-066f476c65e3"
+    },
+    {
+      "claim_id": "9eb4b10d-c100-409f-926c-20a21f6637de",
+      "result_id": "d3c52db8-3a9e-4aa5-8e74-066f476c65e3"
+    },
+    {
+      "claim_id": "a87d2ca8-af6d-4afd-80ef-56f7ea6e02b7",
+      "result_id": "eeca61ff-72da-4d66-8346-1291fd40bcc7"
+    },
+    {
+      "claim_id": "58e3d036-27df-456a-8005-a7872446c5c7",
+      "result_id": "eeca61ff-72da-4d66-8346-1291fd40bcc7"
+    },
+    {
+      "claim_id": "4f53b35d-5e00-4733-bde9-96d792f10371",
+      "result_id": "eeca61ff-72da-4d66-8346-1291fd40bcc7"
+    },
+    {
+      "claim_id": "65aae96b-908f-467a-9464-b3b69f86edfe",
+      "result_id": "eeca61ff-72da-4d66-8346-1291fd40bcc7"
+    },
+    {
+      "claim_id": "90c79107-3e20-4394-a07a-a4e5916ac09e",
+      "result_id": "eeca61ff-72da-4d66-8346-1291fd40bcc7"
+    },
+    {
+      "claim_id": "04719dc4-b2db-4541-a1dc-48ec29b70695",
+      "result_id": "eeca61ff-72da-4d66-8346-1291fd40bcc7"
+    },
+    {
+      "claim_id": "ca6180ea-594e-4a0a-b151-33a561e18f64",
+      "result_id": "eeca61ff-72da-4d66-8346-1291fd40bcc7"
+    },
+    {
+      "claim_id": "e72f66a6-dad7-44d9-b3b3-87c0a1fcfeed",
+      "result_id": "eeca61ff-72da-4d66-8346-1291fd40bcc7"
+    },
+    {
+      "claim_id": "04860c3d-3988-4587-bbfc-bc7951847a24",
+      "result_id": "eeca61ff-72da-4d66-8346-1291fd40bcc7"
+    },
+    {
+      "claim_id": "dfc2acad-ccbb-4439-a22c-d422d7990920",
+      "result_id": "4b9cf4d9-cd9f-4920-8497-5f04bdc75cbb"
+    },
+    {
+      "claim_id": "d205ccfb-0c41-46ad-9aa4-fd888a29d722",
+      "result_id": "4b9cf4d9-cd9f-4920-8497-5f04bdc75cbb"
+    },
+    {
+      "claim_id": "2bdeeb47-d602-41ec-bc2e-372e1ec53991",
+      "result_id": "4b9cf4d9-cd9f-4920-8497-5f04bdc75cbb"
+    },
+    {
+      "claim_id": "91c72542-070c-4641-b0bb-ba6201c47481",
+      "result_id": "4b9cf4d9-cd9f-4920-8497-5f04bdc75cbb"
+    },
+    {
+      "claim_id": "dcf596f3-d0be-41f3-927f-f732163e9892",
+      "result_id": "4b9cf4d9-cd9f-4920-8497-5f04bdc75cbb"
+    },
+    {
+      "claim_id": "24704670-cb54-412d-b885-93bcb48588fe",
+      "result_id": "4b9cf4d9-cd9f-4920-8497-5f04bdc75cbb"
+    },
+    {
+      "claim_id": "f99073c0-b65b-45ec-b333-1757601eb9ef",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "dc5bb0c3-22a3-4aa5-9e6d-b0be08b9c553",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "749c2598-5a60-40ea-a735-e3bf059b1779",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "d252db4d-ddd4-47ef-89f9-a13f09bb52d8",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "154f16ab-a4f8-48a2-be3e-6adf13621b55",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "4badbdc1-9166-4f25-96e6-0751eaf8a001",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "57a94bba-94ee-4189-8109-35953ef58383",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "d4917462-dfe2-46df-81aa-97f2b61570f7",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "d356c7cf-9892-4be6-982a-67dd0c424c90",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "d6199e42-ccc2-4c78-96c8-d1aaf73ae10d",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "e48ad98d-13fb-4bb7-a130-16c61e5bafec",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "7cacc32d-0c9a-4716-843d-e33736da3430",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "84091bbc-f566-4b5b-b47d-ce91515ca566",
+      "result_id": "77b67121-de80-4684-ac5e-236fd3194b05"
+    },
+    {
+      "claim_id": "7950cf8b-47fe-4af7-8073-659c3c3b926d",
+      "result_id": "bca226d1-4a5f-4ee8-a117-76156514b67a"
+    },
+    {
+      "claim_id": "b1f3d76f-881e-4dd7-8d4f-1a20d94930d5",
+      "result_id": "bca226d1-4a5f-4ee8-a117-76156514b67a"
+    },
+    {
+      "claim_id": "cc45a202-cc75-4a8b-91b5-6e893a6bf17c",
+      "result_id": "bca226d1-4a5f-4ee8-a117-76156514b67a"
+    },
+    {
+      "claim_id": "cd2af28e-8eba-40de-beab-3d4a9b4e9016",
+      "result_id": "69718cb0-e7a5-4c34-b352-c6cc47962be0"
+    },
+    {
+      "claim_id": "83b45e0e-5d23-4b34-8614-abd10d57eac1",
+      "result_id": "69718cb0-e7a5-4c34-b352-c6cc47962be0"
+    },
+    {
+      "claim_id": "7df9b289-da26-43c1-bdb4-5406c11e13e6",
+      "result_id": "811f537d-4dce-4dae-9477-e414aeb275d5"
+    },
+    {
+      "claim_id": "d1d625ed-5ac8-4d92-8fe4-db8d260cacf6",
+      "result_id": "811f537d-4dce-4dae-9477-e414aeb275d5"
+    },
+    {
+      "claim_id": "459fa8e1-1682-4d00-a5f4-4aa5504996b4",
+      "result_id": "811f537d-4dce-4dae-9477-e414aeb275d5"
+    },
+    {
+      "claim_id": "af7a9746-7f64-4aa1-8d82-3446db9f7b4e",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "7d220041-7d9c-4baa-8332-800d483cf073",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "f079e6b9-d76a-47b3-befe-69a1135be6b7",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "5962577c-a66c-4305-9ece-036cebf4ff95",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "2c3c7060-d68b-48f7-b0c6-8e5c808749ed",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "991021e9-031a-4fa9-af56-35aa93435434",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "d055e6b0-6d41-4726-ba18-1f8dfaefcf93",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "c98d886d-45f1-4ede-a271-571be55741eb",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "8f1c8c07-411d-468f-9835-94f7c8f9aa89",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "2e04cd2b-0f25-4b6c-93c9-13f6acb832fb",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "098e82ed-e2ae-4f89-92c9-3993f405dad7",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "6181a44d-0287-4e1d-956c-81f955f3159a",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "e7a9d529-ac82-4c63-8b59-5e85105db9de",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "e0282be0-88fe-4480-88fd-12cf101c96ae",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "1a65bc2b-d971-4b50-93b8-ceed1f0e4d55",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "1f08af04-d290-4790-a499-f16edcf4e1cd",
+      "result_id": "2fbac48f-7d5f-4e88-8f77-de243876cf96"
+    },
+    {
+      "claim_id": "5cd3bef9-1ceb-45a0-81d5-fbf26deeecd1",
+      "result_id": "e34c400b-90a2-4f70-b3b9-02062374175d"
+    },
+    {
+      "claim_id": "1b57d47e-6bc1-43b7-be60-b75ab19c1493",
+      "result_id": "e34c400b-90a2-4f70-b3b9-02062374175d"
+    },
+    {
+      "claim_id": "da7cf3ab-960a-4ae7-a3a7-5f8fb6568989",
+      "result_id": "e34c400b-90a2-4f70-b3b9-02062374175d"
+    },
+    {
+      "claim_id": "ddba2742-7a76-439f-9b41-41868b05fe18",
+      "result_id": "e34c400b-90a2-4f70-b3b9-02062374175d"
+    },
+    {
+      "claim_id": "e7ff93fd-b79a-4087-bace-e831d404297b",
+      "result_id": "e34c400b-90a2-4f70-b3b9-02062374175d"
+    },
+    {
+      "claim_id": "d6d7be3a-2d6e-4128-957a-6c6950802f7e",
+      "result_id": "e34c400b-90a2-4f70-b3b9-02062374175d"
+    },
+    {
+      "claim_id": "49d639ff-f0f6-48de-9ebd-2a419d983af6",
+      "result_id": "e34c400b-90a2-4f70-b3b9-02062374175d"
+    },
+    {
+      "claim_id": "601e67a6-ec7d-403c-8cd3-7588970cd793",
+      "result_id": "246cc43d-359d-48c8-9ee5-1f0fe4e87664"
+    },
+    {
+      "claim_id": "bd39d5ee-05e5-42c2-a825-106fc6e3dc8c",
+      "result_id": "246cc43d-359d-48c8-9ee5-1f0fe4e87664"
+    },
+    {
+      "claim_id": "0f4b17f4-205f-4412-9935-2aaa5815d56c",
+      "result_id": "246cc43d-359d-48c8-9ee5-1f0fe4e87664"
+    },
+    {
+      "claim_id": "9dbd55f2-626e-4e91-af07-656621497eed",
+      "result_id": "246cc43d-359d-48c8-9ee5-1f0fe4e87664"
+    },
+    {
+      "claim_id": "490ddf24-5714-4983-8060-c4fe70b55418",
+      "result_id": "5ba95665-763d-49e2-a42d-a45e010485ab"
+    },
+    {
+      "claim_id": "8bed3b66-c119-4337-bc6f-812d1149a91e",
+      "result_id": "73620947-8989-4576-9645-c4b59b64edf1"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,583 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14"
+    ],
+    "result": "The manuscript argues that correlation analysis is insufficient for causal inference, as correlation can occur coincidentally and statistics alone cannot distinguish cause from effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C14 are well-established principles in causal inference literature, supported by citation to Pearl and Mackenzie, 2019. These foundational statements correctly characterize the limitations of correlation-based approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C152"
+    ],
+    "result": "Causal discovery is defined as a methodology that infers causal interactions from observational data without assuming specific relationships between variables or data distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15, and C152 provide consistent definitional statements about causal discovery that align with established literature. These are accurate characterizations of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C58",
+      "C59"
+    ],
+    "result": "The benchmarking results indicate that different causal discovery methods are optimal for different situations: continuous optimization-based methods (especially DAGMA-nonlinear) perform best with complete models and no missing values, while PC algorithm with kernel-based CI tests (especially DCC.gamma) performs best with incomplete models and missing values typical of scRNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C27, C28, C58, and C59 present the main benchmarking findings. These are supported by data from multiple simulated and real datasets (C26, C47), with specific performance metrics provided (C85-C87). The conclusions are appropriately qualified and context-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C33",
+      "C47"
+    ],
+    "result": "The study benchmarked 11 causal discovery methods, 10 conditional independence tests, and 9 feature selection algorithms using multiple simulated datasets, real scRNA-seq data, and signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C33, and C47 describe the scope of the benchmarking study. The comprehensive nature of the evaluation is documented in tables and appendices, providing appropriate methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C73",
+      "C173"
+    ],
+    "result": "Among feature selection algorithms, BAHSIC and SHS are identified as the best performers, with ExtraTrees and RandomForest outperforming XGBoost among ensemble methods, while Lasso-based methods are inferior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39, C73, and C173 present feature selection benchmarking results documented in Table 1 and Appendix 2 figures. The rankings are based on accuracy, time consumption, and scalability metrics, providing a reasonable basis for the recommendations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C100",
+      "C101",
+      "C102",
+      "C175"
+    ],
+    "result": "Among conditional independence tests, DCC.gamma and DCC.perm are the most accurate but time-consuming (suitable for small-scale inference), RCIT and RCoT are moderately accurate and fast (suitable for large-scale inference), and GaussCItest is fastest but least accurate (suitable only for Gaussian data).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57, C100-C102, and C175 characterize CI test performance based on benchmarking data in Table 2 and Figures 2-3. The trade-offs between accuracy and computational cost are well-documented with specific TPR values (C85-C87) and stability metrics (C88-C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Consensus network analysis shows that DCC.gamma, DCC.perm, HSIC.gamma, and HSIC.perm share the highest similarity, with DCC CI tests achieving TPRs of 68.9-70.2% compared to the consensus network, outperforming other methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 present specific quantitative results from Figure 2 comparing different CI tests. The consensus network approach and TPR calculations are clearly described and provide objective performance metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C94"
+    ],
+    "result": "Stability analysis demonstrates that 78% and 64.3% of interactions inferred by PC+DCC.gamma and PC+DCC.perm, respectively, occur stably in \u22654 out of 5 replicate networks, indicating high reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C89, and C94 present stability results from Figure 3. The quantitative metrics provide clear evidence for the reproducibility of the DCC-based methods, though the manuscript could benefit from more discussion of what constitutes acceptable stability thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C179",
+      "C180"
+    ],
+    "result": "Sample size recommendations indicate that 300 cells for Smart-seq2 and 600 cells for 10x Genomics data are sufficient for reliable inference of ~50 genes expressed in >50% of cells, with more cells needed for larger gene sets or lower expression frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C93, C179, and C180 provide specific sample size recommendations, but the manuscript references Appendices 3-4 without providing sufficient detail in the main text about how these thresholds were determined. The definition of 'reliable inference' (C91) as inferring 'key interactions' is somewhat circular and lacks objective validation criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The CausalCell platform integrates 4 causal discovery methods (PC, GES, GSP, DAGMA-nonlinear), 10 CI tests, and 9 feature selection algorithms, implemented using Docker and Shiny, with capabilities for data preprocessing, parallel processing, and flexible analysis options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 describe the technical implementation and features of the CausalCell platform. These are straightforward descriptive claims about the software tool that are illustrated in Figure 1 and can be verified through the online platform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Validation using NSCLC cell lines shows that inferred networks capture known features of cancer metabolism (reprogrammed glucose metabolism, increased nucleotide synthesis, pyrimidine metabolism) and agree with >50% of pathway annotations for non-small cell lung cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 present validation results comparing inferred networks to known biological pathways. The agreement with established cancer biology (C107-C108) and pathway databases provides reasonable validation, though the 50% agreement threshold (C111) suggests substantial room for improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Analysis of NSCLC cell lines reveals biologically plausible patterns (down-regulated genes weakly regulate targets, activation/repression correspond to up/down-regulation) and identifies a novel PRDX1\u2192TALDO1\u2192HSP90AA1\u2192NQO1\u2192PSMC4 cascade, with the NQO1\u2192PSMC4 interaction being previously unreported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C126 present biological findings from the NSCLC analysis. While many inferred interactions are supported by STRING database and literature (C118, C120), the novel NQO1\u2192PSMC4 interaction (C119, C121) lacks experimental validation. The mechanistic interpretation (C126) is speculative and requires follow-up experiments to confirm causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Analysis of macrophages in glioblastoma identifies CD74 regulation of MHC-II genes and the TYROBP\u2192TREM2\u2192A2M\u2192APOE\u2192APOC1 cascade, consistent with known biology and supported by literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C134 present findings from glioblastoma macrophage analysis. The inferred interactions align well with established biology (C128, C130) and are supported by multiple citations (C127, C128, C133, C134), providing good validation of the method's ability to recover known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Analysis of exhausted CD8 T cells reveals indirect TOX\u2192PDCD1 regulation via CXCL13 in exhausted cells (differing from direct regulation in mice) and potential feedback between PDCD1 and TOX, highlighting species and context-dependent differences in T cell exhaustion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C143 present findings on CD8 T cell exhaustion. While the heterogeneity of exhausted T cells is well-supported by citations (C135, C137), the indirect TOX\u2192PDCD1 pathway via CXCL13 (C138) represents a novel finding that differs from mouse studies. The biological interpretation is reasonable given recent findings on CXCL13 (C140), but the causal claims require experimental validation. The feedback mechanism (C142) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Analysis of CD4 T cell aging identifies conserved interactions (B2m\u2192H2-Q7, mitochondrial gene interactions) and the Gm9843\u2192Rps27rt\u2192Junb pathway, which may represent a mouse counterpart to JUNB regulation in human immune cell aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C149 present findings from CD4 T cell aging analysis. Many interactions are validated by STRING database (C145) and experimental findings (C146). The connection to human aging via JUNB (C148-C149) is appropriately presented as speculative (C149 uses 'could highlight'), acknowledging the cross-species inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C159",
+      "C183"
+    ],
+    "result": "A novel 'spike-in' method was developed to evaluate causal discovery reliability by integrating known gene interactions into test datasets, with clear separation of spike-in and case interactions indicating reliable inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114, C159, and C183 describe a novel quality control method inspired by RNA spike-ins (C112). The three-step procedure is clearly described (C113), and the interpretation criterion is defined (C114). This represents a useful methodological contribution, though more extensive validation of the method itself would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Single-cell causal discovery faces three key challenges: high-dimensional data, missing values, and incomplete models (missing variables). When applied to highly expressed or differentially expressed genes, the inferred networks represent indirect relationships rather than direct interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C160-C163 identify fundamental challenges in applying causal discovery to single-cell data. These are well-recognized issues in the field, and the distinction between direct and indirect relationships when using incomplete models (C162-C163) is an important caveat that is appropriately emphasized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Constraint-based methods cannot differentiate Markov equivalent networks, but this limitation can be partially addressed by combining PC with DAGMA-nonlinear, which better determines edge directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C166 identify a known limitation of constraint-based methods (C164) and propose a practical solution (C165-C166). The recommendation is reasonable based on the benchmarking results showing DAGMA-nonlinear's strengths, though the extent to which this 'solves' the problem is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Many existing methods assume linear relationships and Gaussian distributions, which the benchmarking results suggest should be viewed with caution. Causal discovery methods, which make no such assumptions, are better suited for single-cell analysis, with the time cost of kernel-based CI tests justified by improved accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C155 present a key argument for causal discovery over correlation-based methods. The critique of methods with restrictive assumptions (C150-C151) is supported by citations and benchmarking data. The trade-off between computational cost and accuracy (C154-C155) is well-documented in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C158"
+    ],
+    "result": "Dropouts and noise in scRNA-seq data can be well tolerated by PC with kernel-based CI tests if sample sizes are sufficiently large.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C158 makes an important assertion about robustness to scRNA-seq data quality issues, supported by citations. However, the manuscript does not provide systematic analysis of how dropout rates or noise levels affect performance, nor does it clearly define 'sufficiently large' sample sizes in this context. This claim would benefit from more explicit validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C174"
+    ],
+    "result": "Gene filtering before feature selection is necessary because transcriptome-wide feature selection is unreliable. Batch effects may influence differential expression analysis and should be addressed by users before analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 and C174 provide practical recommendations about data preprocessing. The necessity of gene filtering (C69, C174) is a reasonable inference based on the limitations of feature selection algorithms. The recommendation to handle batch effects externally (C71) is appropriate given the variety of batch correction methods available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C176",
+      "C177",
+      "C178",
+      "C181",
+      "C182",
+      "C184",
+      "C185"
+    ],
+    "result": "Best practices recommendations include: careful gene selection for different biological modules, multiple rounds of feature selection with different target genes, using DCC CI tests for consensus networks, RCIT/RCoT for large-scale inference, sub-sampling for large datasets, and caution when interpreting results from heterogeneous cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172, C176-C178, C181-C182, C184-C185 provide practical guidance based on the benchmarking results and analysis experience. These recommendations are appropriately qualified and represent reasonable best practices derived from the study's findings, though some are based on inference rather than systematic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Edge directionality in inferred networks is determined by Meek rules, with edge signs (activation/repression) determined by Pearson correlation coefficients, and edge thickness indicating CI test statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 describe the methodology for representing causal relationships in the inferred networks. The use of Meek rules is standard and properly cited (C78). However, using Pearson correlation to determine activation/repression (C80) is a simplification that may not capture complex regulatory relationships, and this limitation could be more explicitly discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Two approaches for constructing consensus networks are provided: taking the intersection of networks from multiple algorithms or taking the intersection of networks from multiple runs of the same algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe two consensus network construction strategies illustrated in Figures 2-3. These are straightforward methodological approaches that are clearly documented and provide reasonable ways to increase confidence in inferred interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Four key parameters influence causal discovery: alpha level (significance threshold), number of cells (sample size), cell sampling method (affecting reproducibility), and conditional set size (affecting topology and computation time).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 identify important parameters that users must consider. The effects of these parameters are clearly described, with appropriate caveats about reproducibility when using random sampling (C98). This provides useful practical guidance for platform users.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "PC+DCC.gamma and GSP+DCC.gamma have comparable performance, and both are more accurate but more time-consuming than GES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 compare different causal discovery algorithms, with results documented in Appendix 3 figures 4-5. The trade-off between accuracy and computational cost is consistent with the overall findings of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Traditional RNA-seq correlation methods cannot reveal single-cell causal interactions due to small sample sizes (<100), cell heterogeneity, and the emergent nature of cellular interactions, leaving most cell-specific causal interactions unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 establish the motivation for single-cell causal discovery by identifying limitations of bulk RNA-seq approaches. These are reasonable characterizations supported by appropriate citations (C7, C8) and logical inference about the effects of averaging across heterogeneous populations (C10).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The PC algorithm is a classic constraint-based causal discovery method that tests conditional independence between variables and can work with different CI tests. Kernel-based CI tests make no assumptions about relationships or data distributions, enabling inference of relationships between any genes and molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 and C40-C43 provide background on constraint-based causal discovery methods. These are accurate descriptions of established methods, properly cited (C17, C19, C41), and correctly characterize the key features that distinguish causal discovery from other network inference approaches (C23).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Beyond constraint-based methods, other causal discovery approaches include score-based methods (optimizing DAG scores via greedy search), hybrid methods (combining score-based and constraint-based approaches), and continuous optimization-based methods (converting combinatorial optimization to continuous programs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 provide background on alternative causal discovery methods, properly cited to original sources (Chickering 2003, Solus et al. 2021, Bello et al. 2022a, Zheng et al. 2018). These are accurate characterizations of different methodological approaches in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C24",
+      "C30"
+    ],
+    "result": "Kernel-based CI tests are highly time-consuming and thus infeasible for transcriptome-wide causal discovery, necessitating feature selection or gene filtering approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C30 identify a key computational limitation that motivates the workflow design. This is a reasonable characterization based on the computational complexity of kernel-based methods and is consistent with the benchmarking results on time consumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C72"
+    ],
+    "result": "Feature selection is defined as choosing a subset of genes based on one or several genes of interest, combining a search technique and evaluation measure to work upon response variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C72 provide definitional statements about feature selection. These are standard characterizations of feature selection methodology that accurately describe the approach used in the workflow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Best practices for feature selection include using two algorithms jointly (e.g., Random Forest+BAHSIC) for reliability, selecting 50-70 feature genes (depending on the causal discovery algorithm), and allowing manual gene addition/removal or selection without feature selection for specific biological questions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 provide practical recommendations for feature selection. The joint use of algorithms (C74) is a reasonable strategy for increasing confidence. The flexibility to manually adjust gene lists (C76-C77) is appropriate for hypothesis-driven research, though users should be cautious about confirmation bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "Causal discovery can infer either signaling networks or gene regulatory networks depending on the input genes, with gene regulatory networks inferred when TFs and their targets are included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 describe the flexibility of causal discovery methods to infer different types of biological networks. This is an accurate characterization, though the distinction between network types depends on the biological interpretation of the input genes rather than the algorithmic approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "Recent studies have clarified previously puzzling findings: exhausted CD8 T cells show high heterogeneity with multiple exhaustion paths, and aging impairs ribosomal protein synthesis efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 cite recent literature (Zheng et al. 2021, Stein et al. 2022) that helps interpret the causal discovery results. These appropriately acknowledge that biological interpretation of computational results requires integration with experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C6",
+      "C29"
+    ],
+    "result": "Inferred causal interactions in single cells provide valuable clues for investigating molecular interactions, gene regulations, identifying therapeutic targets, and designing interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C29 make broad statements about the utility of causal discovery results. While the potential applications are reasonable, these claims are largely speculative and not directly validated by the manuscript. The study demonstrates that networks can be inferred and show some agreement with known biology, but does not demonstrate that these inferences lead to successful experimental designs or therapeutic target identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Continuous optimization-based causal discovery methods have been recently reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is a factual statement about recent methodological developments, properly supported by citations to Bello et al. 2022a and Zheng et al. 2018.",
+    "result_type": "MINOR"
+  }
+]

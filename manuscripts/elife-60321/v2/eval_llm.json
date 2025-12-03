@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors developed CRF_ID, a probabilistic graphical model framework based on Conditional Random Fields that casts cell annotation as a structured prediction problem. The model optimizes cell-label dependencies by maximizing both intrinsic similarity (through pairwise geometrical relationship features) and extrinsic similarity (through unary features) between images and atlases, using Loopy Belief Propagation for approximate inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C39 establish the methodological framework with appropriate citations to CRF literature (C45, C47, C52-C54). The mathematical formulation is clearly described (C49-C51, C55-C56) with proper acknowledgment of computational complexity (C52) and use of approximate inference (C53-C54). The approach is theoretically sound and well-grounded in established methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C31",
+      "C32"
+    ],
+    "result": "CRF_ID leverages intrinsic similarity (geometrical relationships among cells) rather than extrinsic similarity (absolute positions) used by registration-based methods. This approach is more robust to position noise because geometrical relationships are preserved even when absolute positions vary, and it captures dependencies between cell label assignments that registration methods do not consider.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 establish the theoretical advantage of intrinsic similarity with appropriate citations (C33). The specific example (C36) and general principle (C35) are logically consistent. Claims C31-C32 correctly identify limitations of previous methods. The conceptual framework is sound and supported by cited literature on shape matching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C40",
+      "C79",
+      "C80",
+      "C81",
+      "C112",
+      "C114",
+      "C115"
+    ],
+    "result": "CRF_ID achieves higher accuracy than existing registration-based methods on both simulated and ground-truth experimental datasets, with superior robustness against position noise and count noise across all tested noise levels. The method maintains high accuracy even when up to 75% of cells in the atlas are missing from data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C40, C79-C81 are consistently supported by experimental comparisons shown in multiple figures (Figure 2C-E, supplements). The statistical significance is documented (p<0.001, Bonferroni tests). Claims C112, C114-C115 provide mechanistic explanations consistent with the theoretical framework. Sample sizes are adequate (n=9 experimental, n=190-200 synthetic runs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Data-driven atlases are critical for CRF_ID success, capturing experimental statistics of positional relationships rather than single observations. Using data-driven atlases built from only 8 annotated datasets, CRF_ID achieved 74% accuracy for top labels, 88% for top-3, and 94% for top-5 predictions. Building these atlases requires only simple averaging operations, making it computationally efficient and scalable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 establish the importance and computational efficiency of data-driven atlases with clear distinction from registration-based approaches (C61-C62). Claims C65-C67 provide specific accuracy metrics supported by experimental data (Figure 2A, n=9 animals). The computational efficiency claim (C64) is reasonable given the simple operations described. The leave-one-out validation approach is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Systematic analysis using synthetic data revealed that both position noise and count noise significantly affect accuracy, with position noise having a larger effect. Landmarks improve accuracy by ~10-15%, and eliminating count noise could improve accuracy by 10-15%. Results on synthetic data closely match experimental data, validating the synthetic data approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by simulations on synthetic data (Figure 2\u2014figure supplement 1C-E) with appropriate sample sizes (n=200-203 runs). Claim C75-C76 demonstrate good agreement between synthetic and experimental results, validating the simulation approach. The quantitative estimates (10-15% improvements) are specific and data-supported. Statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "In gene expression pattern analysis, CRF_ID generated candidate lists with 85% of cells having true identities within the top five labels (n=21 animals), significantly outperforming the registration method which achieved only 61% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by experimental results on gene expression data (Figure 3B). Sample size is adequate (n=21 animals). The comparison is fair as both methods used the same data. Statistical significance is documented (***p<0.001). This demonstrates practical utility for a specific application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "In multi-cell functional imaging experiments, CRF_ID identified neurons with 98% accuracy (n=35 animals), outperforming the registration method which achieved 88% accuracy even with a small label assignment space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by experimental results (Figure 4B) with adequate sample size (n=35 animals). Statistical significance is documented (***p<0.001). The comparison is fair and demonstrates superior performance even in a simpler scenario with fewer cells to identify.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In whole-brain imaging experiments, algorithm-assigned cell identities demonstrated expected behaviors: sensory neuron AWC showed known off-response to IAA, predicted interneurons showed known activity patterns, stimulus-tuned neurons were identified as known food-responsive sensory neurons, and neurons in SPC2 showed correlation with motion and included command interneurons and motor neurons that were activated ahead of motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 are supported by whole-brain imaging data (Figures 4E, 5C-I) with appropriate citations to known behaviors (C98-C99, C102). The mutual information analysis (C100), correlation analysis (C101), and cross-correlation analysis (C103) are appropriate methods. The biological validation through expected behaviors strengthens confidence in the predictions, though this is somewhat circular reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "For NeuroPAL data, the best performing model combined relative position features with color information (without registration), achieving 67.5% accuracy for top labels and 85.3% for top-3 labels using leave-one-out atlases. Color contributed little to accuracy improvement due to high variability in raw RGB values across animals, but a two-step color alignment method improved accuracy by 6%. Using data-driven atlases for both position and color improved accuracy to 81% (top labels) and 93% (top-3 labels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by method comparisons (Figure 6B, n=9 animals). Claims C106-C107 correctly identify the limitation of color features with data-supported explanation. Claim C108 documents improvement from the two-step method (Figure 6\u2014figure supplement 1D). Claim C109 shows substantial improvement with data-driven atlases. The progression from static to data-driven atlases is well-documented with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C116"
+    ],
+    "result": "CRF_ID predicts identities with sufficient accuracy for non-rigidly rotated animals, achieving 48.8% accuracy for top labels and 68.7% for top-3 labels with test data held out from atlases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110 and C116 are supported by experimental results on rotated animals (Figure 6E, n=7 animals). The accuracy is lower than for lateral orientation but described as \"reasonable for practical purposes.\" The challenge of non-rigid rotation is acknowledged. Sample size is adequate for this demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Feature selection experiments showed that angular relationship features, alone or combined with binary positional relationship features, performed best. Simulating missing neurons significantly increased prediction accuracy compared to assuming all cells are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by feature selection experiments (Figure 2\u2014figure supplement 4A-B). Statistical significance is documented (***p<0.001). The experiments systematically test different feature combinations and the effect of accounting for missing cells. Sample size is adequate (n=9 animals for experimental data).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Analysis of position variability showed that neuron positions are highly variable across animals, with cells deviating from atlas positions by more than the distance to their tenth nearest neighbor. However, most pairwise relationships are preserved despite this variability in absolute positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by data analysis (Figure 2\u2014figure supplement 6A-D) with citation to prior work (C82). The quantitative analysis of position deviations and preservation of pairwise relationships directly supports the theoretical motivation for using intrinsic similarity. This provides empirical validation of the approach's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "A hybrid objective function combining registration with relative position features corrupted annotation performance, likely due to competing effects, highlighting that higher accuracy is achieved by positional relationship features alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by experimental results (Figure 2\u2014figure supplement 5A). This negative result is informative, showing that combining approaches does not improve performance. The explanation of \"competing effects\" is reasonable though not rigorously tested. This supports the design choice to use intrinsic features without registration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "CRF_ID is computationally more expensive than registration methods but achieves reasonable runtime (0.1-10 seconds for 10-50 cells on desktop) when using full head ganglion atlas. Using the full atlas is important for unbiased annotation, and the combination of higher accuracy and reasonable speed makes CRF_ID favorable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by runtime measurements (Figure 2\u2014figure supplement 7A, n=10 runs). The computational cost is acknowledged but shown to be practical. Claims C89-C90 provide reasonable justification for using full atlas and overall favorability. The runtime analysis is appropriate though limited to desktop hardware.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Simulations on landmark locations showed that landmarks in the middle group and landmarks spatially distributed throughout the head performed equally well, while landmarks in anterior/posterior groups performed poorly for predicting cells in posterior/anterior regions respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by simulations (Figure 4\u2014figure supplement 2, n=200 runs per condition). The systematic testing of landmark locations provides practical guidance for experimental design. Sample size is adequate for these simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C7",
+      "C8",
+      "C57"
+    ],
+    "result": "CRF_ID can be easily extended by adding new features: spatially distributed landmark cells act as additional constraints improving accuracy, and data-driven atlases can be built from annotated data in a computationally efficient manner. The framework successfully incorporated landmark cells and spectral information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe two approaches to improve accuracy, both demonstrated in the paper. Claims C7-C8, C57 assert the ease of adding features, which is demonstrated by the incorporation of landmarks and color information. The modular design of the CRF framework supports this flexibility. The computational efficiency of atlas building (C43, C7) is supported by the simple averaging operations described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Automated annotation is unbiased because the framework can combine manual annotations from multiple users in data-driven atlases, removing individual biases and supporting researchers with no prior experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C70 make assertions about bias reduction and user support that are logical consequences of the method's design but are not directly validated experimentally. No comparison of annotations from different users or assessment of performance for inexperienced users is provided. These are reasonable inferences but lack empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Building data-driven atlases in CRF_ID requires only cheap mathematical operations, making it scalable and unbiased (no reference image concept). Atlases can be built incrementally from partially or fully annotated datasets, even from lines labeling distinct cell subsets, which registration-based methods cannot do. The framework can combine manually annotated data across different lines and researchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by the described methodology (simple averaging operations) and demonstrated by building atlases from various sources. Claims C120-C121 correctly identify limitations of registration methods and advantages of the CRF approach. The incremental atlas building is a logical consequence of the method's design, though not extensively demonstrated with diverse partial datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "CRF_ID offers flexibility to combine arbitrary unary and pairwise features. Experiments show that to utilize color information from NeuroPAL for automatic annotation, color consistency across animals needs to be maintained either experimentally or by post hoc corrections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is supported by the demonstrated incorporation of different feature types. Claim C123 is supported by the color variability analysis and the need for color alignment methods (Figure 6\u2014figure supplement 1C). This is a practical finding about the requirements for using color features effectively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript establishes the importance and difficulty of cell annotation in C. elegans whole-brain imaging, describing current methods (markers, atlases) and their limitations, and characterizing two types of noise (position noise and count noise) that make annotation challenging. Previous computational methods focused on sparse cells and did not address these challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C13 establish the importance of cell annotation with appropriate citations. Claims C14-C19 describe current methods and limitations, representing established knowledge. Claims C20-C24 define and quantify noise types with supporting citations (C23-C24). Claims C25-C29 describe limitations of previous methods with appropriate citations. This provides well-supported motivation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C113"
+    ],
+    "result": "The CRF_ID framework is suitable for fluorescently labeled cells in 3D images for many applications and significantly speeds up cell identification compared to manual labeling while reducing bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111 and C113 are supported by the diverse applications demonstrated (gene expression, multi-cell imaging, whole-brain imaging). The speed improvement over manual annotation is evident though not quantitatively measured. The bias reduction claim is supported by the unbiased nature of the automated approach, though not empirically validated against manual annotations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C44"
+    ],
+    "result": "The authors demonstrate cell annotation across multiple applications in C. elegans: gene-expression localization, multi-cellular functional imaging, and whole-brain functional imaging experiments across different strains and animal orientations. In whole-brain imaging, the framework enabled identification of two distinct groups of cells correlating with food sensation and locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C44 are supported by the experimental demonstrations in Figures 3-6. The diverse applications show broad utility. The identification of distinct cell groups (C44) is supported by the sparse PCA analysis (Figure 5E-I). The demonstrations are convincing though the whole-brain analysis is somewhat exploratory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors speculate that the framework should be easily modifiable for other organisms (Drosophila, zebrafish, mammalian brains) and other modalities (EM, live imaging, cleared tissues), incorporating features like cellular morphology and expected activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C126 are speculative statements about future applications with citations to work in other organisms (C125). While the generalizability is plausible given the framework's design, no validation in other organisms or modalities is provided. These are reasonable hypotheses but lack empirical support.",
+    "result_type": "MINOR"
+  }
+]

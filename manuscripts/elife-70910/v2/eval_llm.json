@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "A barcoded ExPEC library was constructed with ~1150 unique 20 nt barcodes integrated into the lacZ locus. The barcodes were stable for at least 50 generations without selection, did not affect bacterial growth rate in vitro, and the metrics Nr and Nb accurately quantified in vitro bottlenecks up to 10^5 CFU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 describe the construction and validation of the barcoded library. The stability data (C20), growth rate data (C21), and calibration curve data (C22) are all supported by figures and demonstrate that the barcoding system is technically sound and does not introduce artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The experimental design involved intravenous inoculation of mice with 10^7 CFU of barcoded ExPEC, followed by harvest of 12 organ compartments at 6 time points (4 hpi to 5 dpi), yielding 384 CFU measurements and 322 sequenced samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C23-C26 describe the experimental design in detail. The numbers are internally consistent and the comprehensive sampling strategy is clearly documented, providing the foundation for all subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "ExPEC bacterial burdens varied by organ and time. Blood and most organs showed highest CFU at 4 hpi with subsequent clearance. The liver showed the highest CFU at 5 dpi with bimodal distribution. Lungs retained several hundred bacteria at 5 dpi, suggesting lower clearance capacity. Rapid blood clearance likely reflects filtration by liver and spleen rather than blood-mediated killing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 describe organ-specific CFU dynamics supported by Figure 1F and supplements. The data show clear temporal and spatial patterns. The inference about blood clearance (C32) is reasonable given the supporting citation and observation that liver/spleen had highest burdens at 4 hpi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Hepatic bacterial burdens at 5 dpi were bimodal, with some mice containing ~10^6 bacteria with visible abscesses while littermates had ~10^4-fold fewer bacteria. Lobes without visible abscesses had low CFU, arguing against occult abscesses. High CFU were occasionally observed in other organs, and three animals had very high bile CFU (~10^7 CFU/ml).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 describe the variability in bacterial burden and presence of abscesses. The observations are supported by figures and the correlation between visible abscesses and high CFU (C36-C37) provides validation. The bimodal distribution is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "At early time points (4 hpi), Nr values approximated CFU in blood (~80 vs ~100), kidneys, and lungs, indicating minimal net bacterial replication in these organs. In the spleen, Nr values were ~10^4 at 4 hpi and decreased to ~20 by 5 dpi, with Nr approximating CFU, indicating minimal replication of remaining cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 use the relationship between Nr and CFU to infer replication dynamics. The logic is sound: when Nr \u2248 CFU, most bacteria have different barcodes, indicating little replication. This is supported by the figures and is consistent with the STAMPR methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Elevated hepatic CFU at 5 dpi were associated with clonal expansion, as Nr and Nb were orders of magnitude lower than CFU in animals with abscesses. Even at 1 dpi, two animals showed clonal expansion (Nr/Nb >1000) in multiple liver lobes. Despite variable CFU, all animals at 5 dpi had similar Nr values, indicating consistent bottlenecks. The wide variance in liver CFU is explained by focal, stochastic expansion of few clones within abscesses rather than general increased survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 demonstrate that clonal expansion drives high CFU variability. The consistency of Nr despite variable CFU (C47) is a key finding showing that bottlenecks are consistent but expansion is stochastic. The data in Figure 1 and supplements strongly support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Apart from the lung, founding population (FP) sizes decreased during the 5 days of observation, indicating that host forces restricting bacterial populations act throughout infection, not just during initial establishment. Each organ has a specific and distinct probability of yielding clonal expansion, likely reflecting underlying biological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe temporal dynamics of FP and organ-specific patterns. The decreasing FP over time (C51) supports the inference that host clearance is ongoing (C52). The organ-specific patterns (C53) are evident from the data presented across multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "At 4 hpi, all organs possessed highly similar bacterial populations sharing many barcodes. After 4 hpi, genetic distance (GD) between organs increased over time, suggesting limited dissemination and mixing. Expanded clones in liver at 1 dpi and abscesses at 4-5 dpi were locally confined, with distinct populations in different abscesses from the same animal. Surprisingly, multiple clones comprise a single abscess.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 use GD and barcode frequency analysis to track dissemination. The increasing GD over time (C61) and local confinement of liver clones (C62-C63) are supported by Figure 3 supplements. The finding that abscesses contain multiple clones (C65) is supported by Figure 4 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In contrast to the liver, bacterial expansion in other organs was associated with dissemination. The most significant spreading occurred when ExPEC reached the bile, where each of three animals harbored a single dominant clone (>99% of reads) that spread systemically to multiple organs in a stochastic pattern. FRD analysis confirmed that systemic organs possessed more abundant non-transferred populations than bile. FRD values decreased significantly over time, indicating that later relatedness resulted from dissemination of few clones rather than recent temporal separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 describe dissemination patterns, particularly from bile. The data in Figure 3B and supplements clearly show dominant clones in bile spreading to other organs. The FRD analysis (C69-C70) provides quantitative support for the interpretation that dissemination involves few clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Clearance failures and systemic dissemination are mostly attributable to ~0.0001% of the inoculum. The manifestation of clonal expansion and dissemination is highly variable across mice but falls into three trajectories: (1) complete clearance without dissemination, (2) clonal expansion without dissemination (e.g., liver abscesses), and (3) clonal expansion with dissemination (e.g., bile).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 synthesize the findings into a conceptual framework. The calculation that ~0.0001% of inoculum drives outcomes (C72) is consistent with the Nr data showing very few founding clones. The three trajectories (C73) are well-supported by the diverse patterns observed across animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "A fourfold increase in inoculum dose resulted in ~2.5-fold greater splenic CFU and significantly larger Nr and Nb values. In the liver, higher dose unexpectedly reduced median CFU due to fewer abscesses (2/9 vs 6/10 animals), but Nr was significantly higher at high dose. The scaling of FP with dose reveals that a fixed fraction, not number, of bacterial cells survive clearance. In the liver, dramatic clonal replication obscures the dose-CFU relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 describe dose-response experiments supported by Figure 5A. The finding that FP scales with dose (C78) while CFU does not in liver (C76-C77) demonstrates the value of barcode analysis. The interpretation that clonal expansion obscures CFU-based detection (C79) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Clodronate treatment increased splenic CFU at 5 dpi and increased FP sizes in liver, spleen, and kidneys. The significant increase in hepatic FP but not CFU after clodronate is explained by two control animals with dramatic clonal expansion. Since clodronate increased both FP and CFU, macrophage depletion widens bottlenecks. Both increased dose and macrophage depletion widened bottlenecks but did not increase bacterial replication levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 describe macrophage depletion experiments supported by Figure 5B. The finding that FP increases without CFU increase in liver (C82) again demonstrates how clonal expansion can obscure signals. The conclusion that both perturbations widen bottlenecks without increasing replication (C84) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Transposon screen identified cell envelope homeostasis genes (mlaFEDCB, ftsEX, envZ/ompR, LPS biosynthetic genes) and hexose metabolism genes (manA, nagAB, pgi) as underrepresented in liver at 1 dpi. Notably, nagK was not underrepresented, suggesting the host is the source of GlcNAc. The screen revealed that cell envelope homeostasis and fructose-6-phosphate metabolism are important for early liver survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe transposon screen results supported by Figure 6A. The coherent identification of related pathways (cell envelope, hexose metabolism) strengthens the findings. The inference about host-derived GlcNAc (C87) is logical given nagK was not underrepresented while nagA was.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Barcoded mutant validation at 1 dpi confirmed that all genes underrepresented in the transposon screen displayed fitness defects in the liver. The mlaC, ftsX, yejM, and nagA mutants showed pronounced defects, while manA showed modest defects. In lungs, \u0394manA and \u0394nagA were not different from \u0394nagK and WT, indicating organ-specific importance. The \u0394nagK negative control was identical to WT across all organs. The differential importance of nagA and nagK confirms that the host is the source of GlcNAc-6P.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 describe validation experiments supported by Figure 7. The confirmation of transposon screen hits (C89) validates the approach. The organ-specific effects (C91) and differential nagA/nagK phenotypes (C93) are well-documented and support the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "At 5 dpi, \u0394mlaC, \u0394ftsX, and \u0394yejM were significantly depleted in spleen, liver, and lungs, highlighting the essentiality of cell envelope processes. In contrast, \u0394nagA and \u0394manA, which had clear defects at 1 dpi, were indistinguishable from WT at 5 dpi in spleen and liver regardless of abscesses. Surprisingly, \u0394nagA was more abundant than WT in lungs at 5 dpi. These results reveal that pathogen factors required for initial establishment differ from those required for later survival or clonal expansion, with hexose metabolism distinguishing these processes in an organ-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 describe temporal and organ-specific genetic requirements supported by Figure 7. The differential requirements at 1 dpi vs 5 dpi (C95, C98-C99) are a key finding. The unexpected \u0394nagA phenotype in lungs (C96) adds complexity. The data clearly support the conclusion that establishment and persistence have distinct genetic requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Most organs continuously restricted pathogen populations over time (decreasing Nr). The lung was an exception, with FP plateauing by 2 dpi. Clodronate had no effect on lung CFU, and some liver-defective mutants were more abundant in lung. These three lines of evidence indicate the lung microenvironment is less hostile to ExPEC. The liver and lungs differ markedly: the liver is more permissive for replication, while the lung is more permissive for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 synthesize multiple observations about organ-specific dynamics. The lung's distinct behavior is supported by FP data (C101), clodronate data (C102), and mutant data (C91, C96). The conclusion about differential liver vs lung properties (C104) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Early stochastic clonal expansion was detected in every experiment using three independent libraries. These events underlie variation in infection outcomes and fall into two categories: dissemination-associated (e.g., bile) and non-dissemination-associated (e.g., liver abscesses). An apparent inverse correlation between dose and liver abscess formation suggests higher doses disproportionately clear bacteria. Apparent lobe and topological biases in liver abscess formation were observed. Clonal expansion explains high variability in ExPEC bacterial burden and may explain variability in other bacterial systemic infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 synthesize findings about clonal expansion. The consistency across experiments (C117) strengthens the conclusions. The inverse dose-abscess correlation (C120-C121) is intriguing but acknowledged as needing more animals for significance. The broader implications (C123) are reasonable given the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Several lines of evidence suggest causative genotypic changes are unlikely to be linked to clonal expansion in liver abscesses. Expanded clones arise as early as 1 dpi when little replication has occurred. Different barcodes expanded across three independent libraries. Liver abscesses are small and discrete but contain multiple clones, making it unlikely that causative mutations arose in different cells clustered in physical space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 address whether mutations drive clonal expansion. The arguments are logical: early timing (C125), different barcodes across libraries (C126), and multiple clones per abscess (C127) all argue against a mutational mechanism. However, the authors appropriately acknowledge they cannot definitively exclude this possibility (C124).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Founding population size (FP) quantifies the number of unique cells from the inoculum that give rise to the pathogen population at a sampling point, with higher FP indicating wider bottlenecks. FP can be measured using the Krimbas and Tsakas equation (output = Nb). STAMPR introduces Nr, an algorithmic adjustment to Nb that limits the influence of disproportionately abundant barcodes. The Nr/Nb ratio measures uniformity of barcode frequencies and is larger when few clones have markedly expanded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 define the key metrics used throughout the study. These are methodological definitions supported by prior work (C16-C17 cite appropriate sources). The metrics are validated by the calibration curve (C22) and are consistently applied throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Genetic distance (GD) is small when samples are highly related and large when unrelated. Low GD requires the same barcodes to be relatively abundant in both samples. Resilient genetic distance (RD) quantifies the number of barcodes contributing to similarity while accounting for all detected barcodes. Low RD and GD indicate few barcodes contribute to similarity, while high RD and low GD indicate many shared barcodes, often from recent temporal separation. Fractional RD (FRD) is a directional metric quantifying the extent to which shared barcodes represent all barcodes in a sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 define additional STAMPR metrics for comparing samples. These definitions are supported by citation to Hullahalli et al., 2021 (C56) and are consistently applied in the dissemination analysis. The metrics enable quantitative assessment of relatedness between organ samples.",
+    "result_type": "MINOR"
+  }
+]

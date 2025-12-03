@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C64",
+      "C65"
+    ],
+    "result": "Yeast CTPS filament assembly is pH-sensitive and intrinsic to the enzyme. At pH 7.4, both Ura7 and Ura8 assemble short single filaments, while pH 6.0 promotes assembly of much larger bundled filaments. This pH sensitivity is intrinsic to the purified enzyme and appears specific to yeast, as human CTPS2 polymerizes equally at pH 6.0 and 8.0. The pH-sensitive assembly mechanism is mediated by His360 interaction with D370, which is stabilized by protonation at low pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pH-sensitive assembly is well-demonstrated through multiple lines of evidence: negative stain EM showing differential assembly at different pHs (C47, C48), in vitro assembly of purified protein (C49, C50), comparison with human CTPS2 (C51-C53), and structural data identifying the His360-D370 interaction as the molecular basis (C64, C65). The combination of biochemical, structural, and comparative data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C66",
+      "C67"
+    ],
+    "result": "Yeast CTPS assembles as stacked tetramers using a completely different interaction interface than other species. Helix 356-370 in the glutaminase domain mediates interactions between tetramers, with the yeast interface shifted by two turns of the helix compared to animal CTPS, resulting in a larger buried surface area (706 \u00c5\u00b2 vs 492 \u00c5\u00b2 per monomer in product-bound filaments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The unique yeast filament interface is clearly demonstrated by cryo-EM structures (C62, C63) and direct structural comparison with human CTPS (C66). The buried surface area calculations (C67) provide quantitative support. The structural data at 2.8-3.8 \u00c5 resolution is sufficient to make these interface assignments with confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Yeast CTPS filaments stabilize an inactive enzyme conformation with a closed ammonia channel. The product-bound filament adopts the canonical inhibited conformation, while the substrate-bound filament structure is in an intermediate conformation with the ammonia channel remaining closed. In contrast, free tetramers at pH 7.4 adopt the canonical active conformation with an open ammonia channel. Filament assembly with symmetric contacts acts as a steric constraint to trap CTPS in a low activity conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conformational states are well-characterized by cryo-EM structures at 2.8-3.8 \u00c5 resolution (C68-C70). The incompatibility of the active state with filament assembly is demonstrated by modeling (C71). The mechanistic interpretation linking filament assembly to enzyme inhibition (C72) is well-supported by the structural data showing closed ammonia channels in filaments versus open channels in free tetramers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mutations at the assembly interface demonstrate that filament assembly directly inhibits enzyme activity. H360A blocks assembly and has threefold higher activity than wildtype at pH 6.0, while H360R assembles filaments at pH 7.4 in a pH-insensitive manner. At pH 7.4, Vmax varies inversely with the degree of filament assembly (H360A > wildtype > H360R), while KM values remain similar, indicating that filament assembly acts as an allosteric inhibitor reducing kcat without affecting substrate affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional consequences of assembly are rigorously demonstrated through engineered mutants with well-characterized assembly phenotypes (C73-C75) and quantitative enzyme kinetics (C76-C82). The inverse correlation between assembly and activity is clear, and the KM/Vmax analysis (C78-C79) properly distinguishes effects on substrate binding versus catalytic rate. The conclusion that assembly inhibits activity (C83) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CTPS filament assembly is critical for yeast growth and proliferation. Non-assembling H360A mutants do not form foci even under starvation stress. While single mutants (Ura7-H360A or Ura8-H360A) grow normally, the double mutant URA7-H360A/URA8-H360A has severe growth defects in both log phase and upon starvation recovery, indicating an important role for CTPS polymerization in proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cellular localization data (C84) confirms the in vitro assembly phenotypes. The growth phenotypes are clearly demonstrated through quantitative growth assays (C85-C86). The genetic redundancy between Ura7 and Ura8 is properly addressed by testing both single and double mutants, and the severe growth defect in the double mutant (C86) provides strong evidence for the functional importance of CTPS assembly (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The pH-insensitive H360R mutant exhibits dysregulated assembly/disassembly kinetics and reduced growth. H360R assembles more rapidly than wildtype upon starvation (foci in virtually all cells at 5 min vs 30 min for wildtype) and disassembles much more slowly upon recovery (no significant depolymerization at 1 hr vs 30 min for wildtype). This dysregulation results in slower growth than wildtype in both log phase and starvation recovery conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dysregulated kinetics are clearly demonstrated by live cell imaging with appropriate time resolution (C93-C97). The growth defects are shown by quantitative growth assays (C91). The interpretation that pH change is necessary but not sufficient for cellular assembly (C98) is a reasonable inference from the observation that H360R does not assemble during log phase despite being pH-insensitive in vitro. The data support the conclusion that proper regulation of assembly/disassembly is important for growth (C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "Yeast CTPS forms highly ordered filament bundles with ligand-dependent architectures. Ura8 structures were determined at 3.3 \u00c5 (substrates) and 3.7 \u00c5 (products), while Ura7 reached 6.6-7.0 \u00c5. Ura7 forms similar staggered bundles in both ligand conditions, while Ura8 substrate-bound bundles are staggered but product-bound bundles have filaments in register. A yeast-specific 7-residue insert (273-279) in the linker region mediates lateral interactions with substantial buried surface area (1676-2202 \u00c5\u00b2 per tetramer), comparable to longitudinal assembly contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bundle structures are well-characterized by cryo-EM at sufficient resolution to identify lateral contacts (C99-C103). The buried surface area calculations (C104) provide quantitative support for the stability of lateral interactions. The yeast-specific insert is clearly identified structurally (C105-C106) and its role in mediating lateral assembly is well-supported by the structural data. The uniqueness to yeast (C108) is supported by comparison with published structures of other species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Filament assembly does not protect CTPS from degradation during starvation. While wildtype Ura7 levels decrease during starvation, there is no difference in protein levels between wildtype and H360A or H360R mutants at 4 or 24 hr of starvation, indicating that the growth defects in non-assembling mutants arise from effects other than protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Western blot data (C88-C89) directly address whether filaments protect CTPS from degradation. The similar protein levels across genotypes at multiple time points provide clear evidence against a protective role. The inference that growth defects arise from other effects (C90) is reasonable given this data, though the specific alternative mechanisms are not identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Yeast CTPS assembly at pH 6 exhibits biphasic kinetics consistent with initial linear polymerization followed by lateral aggregation. Ura8 assembles much faster than Ura7, but both show biphasic assembly that cannot be fit with a single equation. Time-course negative stain EM of Ura7 shows single filaments at early time points and thicker bundles at later time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biphasic kinetics are clearly demonstrated by light scattering data (C54-C55) and the inability to fit with a single equation is appropriate. The time-course EM data (C56) provides direct visual evidence for the proposed mechanism. The interpretation that biphasic kinetics reflect linear polymerization followed by lateral aggregation (C57) is a reasonable inference well-supported by the EM data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Cryo-EM structures of yeast CTPS filaments were determined for both Ura7 and Ura8 isoforms. Ura8 yielded higher resolution structures at 2.8 \u00c5 (substrates) and 3.8 \u00c5 (products), while Ura7 reached 7.3 \u00c5 (substrates) and 3.7 \u00c5 (products). The overall structures of Ura7 and Ura8 filaments are indistinguishable at these resolutions, with all ligands clearly visible and bound as in other CTPS homologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The resolution values are clearly stated and supported by standard cryo-EM validation metrics (FSC curves, local resolution maps shown in supplementary figures). The ligand binding modes (C59) are validated by comparison with published structures. The similarity between Ura7 and Ura8 structures (C61) is appropriate given the lower resolution of Ura7 structures. The structural quality is sufficient for the conclusions drawn.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Ura7-GFP tagged at the endogenous locus forms foci upon nutrient deprivation and when cells are permeabilized with DNP to manipulate cytoplasmic pH, confirming that pH-regulated assembly occurs in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cellular localization data (C45-C46) is clearly shown by fluorescence microscopy with quantification. The DNP experiment (C46) provides direct evidence that pH manipulation is sufficient to trigger assembly in cells, supporting the physiological relevance of the pH-sensitive assembly mechanism characterized in vitro.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Budding yeast have two CTPS isoforms, Ura7 and Ura8, which share 78% sequence identity. Ura7 mRNA is twofold more abundant than Ura8 in vivo, but they are functionally overlapping as deletion of either gene results in slowed growth. Both isoforms form supramolecular structures in response to stress that colocalize in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about yeast CTPS isoforms supported by appropriate citations to prior literature (C39-C44). The sequence identity (C40) is a straightforward calculation. The functional overlap and colocalization are supported by cited studies. This provides important context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Human CTPS2 polymerizes equally robustly at pH 6.0 and 8.0, with filaments formed at different pHs having similar architectures, indicating no direct effect of pH on hCTPS2 assembly or structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pH-independence of human CTPS2 assembly is clearly demonstrated by negative stain EM at different pHs (C51-C52). The 2D class averages show similar architectures. This provides an important control demonstrating that pH-sensitive assembly is specific to yeast CTPS and not a general property of CTPS enzymes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Metabolic enzyme self-assembly into filaments is a widespread mechanism of metabolic organization and regulation. These assemblies have been found in glycolysis, fatty acid synthesis, amino acid synthesis, and nucleotide synthesis. Enzymes that form filaments are frequently at rate-limiting steps, and for most characterized enzyme polymers, assembly functions as allosteric regulation to tune activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are general statements about the field supported by appropriate citations to review articles and primary literature (C1, C2, C13-C19). They provide important context for understanding the significance of CTPS filament assembly. The claims are well-established in the literature and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "During starvation, yeast undergo cytoplasmic acidification which triggers assembly of many metabolic enzymes into filaments. This acidification is necessary and sufficient to trigger metabolic filament assembly and mount an effective stress response. The filaments are thought to increase cytoplasmic viscosity, limiting metabolite diffusion and slowing growth, while protecting cells and permitting rapid growth upon nutrient readdition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about yeast starvation response are supported by appropriate citations to prior literature (C3-C4, C32-C36). The mechanism of cytoplasmic acidification (C35) and its role in triggering filament assembly (C36) are well-established. The proposed function involving increased viscosity (C34) is appropriately presented as a hypothesis ('it is thought that'). This provides essential biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "CTPS catalyzes the final, rate-limiting step of de novo CTP biosynthesis. Each monomer consists of glutaminase and amido-ligase domains connected by a helical linker. Glutamine hydrolysis produces ammonia that is transferred through a channel to the amido-ligase domain where it is ligated to UTP to form CTP in an ATP-dependent process. CTPS assembles X-shaped D2 symmetric homotetramers through amido-ligase domain interactions, with multiple protomers participating in each binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about CTPS structure and function supported by appropriate citations and structural data (C20-C27). The domain organization (C21) and catalytic mechanism (C22-C25) are supported by prior structural and biochemical studies. The tetrameric assembly (C26-C27) is shown in Figure 1c and is consistent with all published CTPS structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Cellular CTPS filament assembly is widespread across bacteria, archaea, and eukaryotes, but there are striking differences in assembly mechanisms and filament architectures among species. Bacterial CTPS filaments allosterically inhibit the enzyme, while animal CTPS filaments increase activity and cooperativity of regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The widespread occurrence of CTPS filaments (C28) and diversity of architectures (C29) are supported by appropriate citations. The functional differences between bacterial and animal CTPS filaments (C30-C31) are supported by citations to prior functional studies. This provides important comparative context for understanding the unique features of yeast CTPS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Prior to this study, fluorescence microscopy studies demonstrated large CTPS foci or rods consistent with laterally associating filaments in yeast and other organisms, but there were no high-resolution structures of bundled metabolic enzymes in any organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The prior fluorescence studies (C37) are appropriately cited. The statement about lack of high-resolution bundle structures (C38) is a claim about the state of the field that can be verified by literature search and is consistent with the novelty claims of the current work. This establishes the significance of the bundle structures presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Budding yeast CTPS has acquired unique features for pH-responsive assembly. The enzyme assembles filaments with a distinct interface that maintains a low activity state through a closed ammonia channel. The pH-sensitivity is intrinsic to the purified enzyme and does not require other cellular factors. Yeast has a strong intrinsic propensity for lateral assembly driven by a yeast-specific linker insert.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary statements integrate multiple lines of evidence from the structural, biochemical, and cellular studies. The distinct interface (C109) is demonstrated by structures, the pH-responsiveness (C111-C112) by in vitro assembly, the low activity state (C113-C114) by structures and kinetics, and the lateral assembly propensity (C115) by bundle structures. These are well-supported integrative conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Upon glucose readdition after starvation, the cytoplasm returns to neutral pH over about 2 min, but CTPS filaments disassemble over about 30 min or longer, which may enable controlled ramping up of enzyme activity upon re-entering growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pH recovery kinetics (C117) are supported by citation to prior work. The filament disassembly kinetics (C118) are demonstrated by live cell imaging in Figure 5c. The interpretation about controlled reactivation is speculative ('may enable') but reasonable given the kinetic mismatch. This provides insight into the physiological function of pH-regulated assembly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The diversity of CTPS filament structure and function raises the question of whether this reflects modification of an ancestral filament structure or independent evolution of polymerization multiple times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as an open question (C110) rather than a conclusion. While the diversity of CTPS filament structures is well-documented, the manuscript does not provide data to address the evolutionary question. This is appropriate speculation about future directions but not a result that can be evaluated as supported or unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C119",
+      "C120"
+    ],
+    "result": "Disruption of CTPS polymerization likely results in disruption of nucleotide homeostasis with potential consequences for ribosome biosynthesis, DNA replication, and phospholipid biosynthesis. The low residual activity of tetrameric CTPS at low pH may be sufficient to imbalance nucleotide pools over prolonged starvation. Disrupting Ura7 is strongly mutagenic, particularly during stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative statements about potential mechanisms and consequences. The speculation about nucleotide pool imbalance (C116, C119) is reasonable given CTPS function but not directly tested. The mutagenicity claim (C120) is supported by citation but represents prior work rather than a result of this study. These provide context and suggest future directions but are not directly supported by the current data.",
+    "result_type": "MINOR"
+  }
+]

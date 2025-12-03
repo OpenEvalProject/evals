@@ -1,0 +1,2390 @@
+{
+  "submission": {
+    "id": "9a073fe1-2bbd-49b7-9965-660520670113",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:52:37.815128Z",
+    "updated_at": "2025-12-03T14:52:37.815128Z"
+  },
+  "content": [
+    {
+      "id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "submission_id": "9a073fe1-2bbd-49b7-9965-660520670113",
+      "content_type": "manuscript",
+      "content_text": "# SMAD4 and TGF\u03b2 are architects of inverse genetic programs during fate determination of antiviral CTLs\n\n## Authors\n\n- Karthik Chandiran<sup>1</sup> ([ORCID: 0000-0003-2118-7946](https://orcid.org/0000-0003-2118-7946))\n- Jenny E Suarez-Ramirez<sup>1</sup>\n- Yinghong Hu<sup>2</sup>\n- Evan R Jellison<sup>1</sup>\n- Zeynep Ugur<sup>1</sup>\n- Jun Siong Low<sup>3</sup>\n- Bryan McDonald<sup>4</sup>\n- Susan M Kaech<sup>4</sup>\n- Linda S Cauley<sup>1</sup> ([ORCID: 0000-0001-9488-0341](https://orcid.org/0000-0001-9488-0341)) \u2020\n\n### Affiliations\n\n1. Department of Immunology, University of Connecticut Health Center Farmington United States ([ROR:02kzs4y22](https://ror.org/02kzs4y22))\n2. Department of Microbiology and Immunology, Emory Vaccine Center, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))\n3. Department of Immunobiology, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n4. NOMIS Center for Immunobiology and Microbial Pathogenesis, Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransforming growth factor \u03b2 (TGF\u03b2) is an important differentiation factor for cytotoxic T lymphocytes (CTLs) and alters the expression levels of several of homing receptors during infection. SMAD4 is part of the canonical signaling network used by members of the transforming growth factor family. For this study, genetically modified mice were used to determine how SMAD4 and TGF\u03b2 receptor II (TGF\u03b2RII) participate in transcriptional programming of pathogen-specific CTLs. We show that these molecules are essential components of opposing signaling mechanisms, and cooperatively regulate a collection of genes that determine whether specialized populations of pathogen-specific CTLs circulate around the body, or settle in peripheral tissues. TGF\u03b2 uses a canonical SMAD-dependent signaling pathway to downregulate Eomesodermin (EOMES), KLRG1, and CD62L, while CD103 is induced. Conversely, in vivo and in vitro data show that EOMES, KLRG1, CX3CR1, and CD62L are positively regulated via SMAD4, while CD103 and Hobit are downregulated. Intravascular staining also shows that signaling via SMAD4 promotes formation of long-lived terminally differentiated CTLs that localize in the vasculature. Our data show that inflammatory molecules play a key role in lineage determination of pathogen-specific CTLs, and use SMAD-dependent signaling to alter the expression levels of multiple homing receptors and transcription factors with known functions during memory formation.\n\n## Introduction\n\nCytotoxic T lymphocytes (CTLs) make important contributions to protective immunity by eliminating cells that contain intracellular pathogens, however rapid mobilization to infected tissues is a decisive factor in immune control. Defining how activated CTLs differentiate into functionally specialized subsets of memory CD8 T cells is an important priority for vaccine development. Our study sheds new light on this important process by revealing how two intersecting signaling pathways control a major bifurcation in diffrentiation pathway of newly activated CTLs. Multiple subsets of CTLs can be distinguished using surface markers that influence their effector functions, survival properties, and capacity to localize in specific tissues. The major subsets include central memory CD8 T cells (TCM) that use the bloodstream to circulate through secondary lymphoid organs (SLOs), as well as some effector memory CD8 T cells (TEM) and tissue resident memory CD8 T cells (TRM) that distribute to peripheral tissues. Efforts to understand how this heterogeneity develops have inspired alternative models of CD8 T cell differentiation (Montacchiesi and Pace, 2021). Some studies suggest that antigen-specific CTLs follow a linear differentiation pathway by transitioning between subsets, while others favor a branching model of differentiation whereby multiple subsets of CTLs arise from pathways that diverge soon after antigen stimulation (Bannard et al., 2009). Although many studies show that environmental cues influence the transcriptional programs of pathogen-specific CTLs, the pathways that promote commitment to specific lineages are poorly defined. Our study focuses on a network of signaling pathways that are used by members of the transforming growth family (TGF). We show that two distinct signaling pathways influence the transcriptional programs of newly activated CTLs to provide customized responses during infections with different types of pathogens. The target genes are transcription factors and adhesion molecules that determine how CTLs distribute in different tissues.\n\nPathogen-specific CTLs express many homing receptors that are dynamically regulated during infection. Under resting conditions, SLOs are surveyed by naive CD8 T cells that search for antigen-presenting cells bearing pathogen-derived peptides. Circulating leukocytes enter resting lymph nodes from wide blood vessels known as high endothelial venules (HEVs) (Mionnet et al., 2011). CD62L (L-selectin) is an adhesion molecule that interacts with carbohydrates expressed on the surface of activated endothelial cells (Steeber et al., 1998). Naive CD8 T cells leave the bloodstream after CD62L initiates an adhesion cascade that results in transendothelial migration (Ding et al., 2000). Inside the lymph node, signals from antigen receptor and costimulatory molecules induce clonal expansion and CD62L is replaced with adhesion molecules that facilitate migration to the site of infection.\n\nCytokines that are released in infected tissues influence the transcriptional programs of activated CTLs. During the acute phase of infection, interleukin (IL)-12 works with other inflammatory molecules to promote formation of short-lived effector T cells (TEFF) that are primed for rapid effector functions (Chowdhury et al., 2011; Cui et al., 2009; Keppler et al., 2012). Some pathogens elicit robust inflammatory responses and generate large populations of terminally differentiated TEFF cells that express killer cell lectin-like receptor G1 (KLRG1) (Obar et al., 2011; Plumlee et al., 2013), which is a membrane-bound adhesion molecule with an immunoreceptor tyrosine-based inhibitory motif in the cytoplasmic tail (Ito et al., 2006; Rosshart et al., 2008; Tessmer et al., 2007). Although CTLs transiently express KLRG1 during antigen stimulation (Herndler-Brandstetter et al., 2018; Joshi et al., 2007), stable expression identifies CTLs that do not convert to a conventional memory phenotype (Dominguez et al., 2015; Plumlee et al., 2013). Most TEFF cells disappear as the infection resolves, leaving residual populations of memory CD8 T cells in the circulation and peripheral tissues. Intravascular (IV) staining shows that some surviving CTLs maintain KLRG1 expression inside the vasculature during the memory phase of infection (Hu et al., 2015). Similar populations of KLRG1+ CTLs that were detected after infections with other pathogens are referred to as long-lived effector cells (LLECs), or terminal effector memory CD8 T cells (TTEM) (Milner et al., 2020; Renkema et al., 2020). As inflammation resolves CD62L is reexpressed on TCM cells, while CD69+ TRM cells remain in the infected tissues (Mueller et al., 2013). How these subsets contribute to protective immunity varies according to the type of pathogen.\n\nTGF\u03b2 is an immunosuppressive cytokine with multiple functions during CD8 T cell differentiation. Members of the TGF cytokine family elicit cellular responses via both canonical and noncanonical signaling pathways (Derynck and Budi, 2019). Canonical signals are mediated by a cascade of structurally related molecules known as small (Sma) and mothers against decapentaplegic (Mad)-related (SMAD) proteins (Massagu\u00e9, 2012). SMAD4 is an adaptor molecule that chaperones phosphorylated receptor-activated SMAD proteins (R-SMADs) into the nucleus to modulate gene expression. We previously used genetically modified mice to explore how pathogen-specific CTLs distribute in the lungs during infection with influenza A virus (IAV) and discovered that several adhesion molecules were regulated via the canonical SMAD signaling cascade (Hu et al., 2015). Extensive phenotypic changes indicated that loss of signaling via SMAD4 caused defects during formation of TEFF and TCM cells (Cao et al., 2015; Hu et al., 2015). To further define that mechanism that was responsible for these changes, we used multiple strains of genetically modified mice to explore how the SMAD signaling network influences genetic programming of pathogen-specific CTLs during infection. Our data show that SMAD4 and TGF\u03b2 receptor II (TGF\u03b2RII) use alternative signaling mechanisms to alter the expression levels of the same genes in opposite directions. The target genes include the T-box transcription factor EOMES, which is normally expressed during formation of TCM cells and downregulated by TGF\u03b2 during TRM development (Intlekofer et al., 2005; Mackay et al., 2015). We show that during transcriptional programming of newly activated CTLs, SMAD4 positively regulates EOMES expression and induces phenotypic changes that indicate progression toward a central memory phenotype, while formation of TRM cells is inhibited.\n\n## Results\n\n### SMAD4 modifies homing-receptor expression in the absence of TGF\u03b2\n\nSeveral groups have used Cre-lox recombination to prevent expression of either SMAD4 (S4KO) or TGF\u03b2 receptor II (TR2KO) in peripheral CD8 T cells and found altered homing-receptor expression on antigen-experienced CTLs (Cao et al., 2015; Hu et al., 2015; Igalouzene et al., 2022; Wu et al., 2021; Zhang and Bevan, 2013). For these studies, different promoters were used to induce gene ablation which may account for some variations between the results. CD4-Cre, CD8-Cre, and the proximal Lck promoter (dLck-Cre) are all expressed during early stages of thymic development. When these promoters were to prevent SMAD4 expression in peripheral CD8 T cells, investigators reported modified effector responses after T cell activation (Cao et al., 2015; Liu et al., 2022; Wu et al., 2002). Since our goal was to avoid altering naive CD8 T cells during thymic development, we used the distal Lck promoter (dLck) to prevent SMAD4 expression. When we analyzed pathogen-specific CTLs during IAV infection, very few SMAD4-deficient CTLs expressed KLRG1 or CD62L, while abnormal CD103 expression was detected on CTLs in the spleen (Hu et al., 2015). These changes were unexpected, as CTLs displayed a reciprocal phenotype after the TGF\u03b2 receptor was ablated (Hu et al., 2015). We found that the mutation primarily influenced homing-receptor expression, since SMAD4-deficient CTLs proliferated and expressed IFN\u03b3 and TNF\u03b1 at similar levels as wildtype CTLs (Hu et al., 2015).\n\nSMAD4 and TGF\u03b2RII are components of an interconnected signaling network. To further understand how these molecules control homing-receptor expression, we intercrossed S4KO and TR2KO mice to produce CTLs with both mutations (S4TR2-DKO). The mice were further crossed with OTI mice that express a transgenic antigen receptor that is specific for a peptide (SIINFEKL) derived from chicken ovalbumin (OVA) presented on H-2Kb (Hogquist et al., 1994). To analyze homing-receptor expression during infection, the mice were infected with recombinant pathogens (X31-OVA and LM-OVA) that express the SIINFEKL peptide derived from chicken OVA (Jenkins et al., 2006; Pope et al., 2001).\n\nFor this study, two pathogens were used to compare homing-receptor expression under different inflammatory conditions. To elicit a mild inflammatory response in the lungs, mice were infected with IAV (X31-OVA) as neuraminidase activates TGF\u03b2 (Schultz-Cherry and Hinshaw, 1996). Other mice were infected with Listeria monocytogenes (LM) to elicit an inflammatory response that supports formation of CTLs that express KLRG1 (Plumlee et al., 2015). To monitor changes in homing-receptor expression during infection, congenically marked OTI-Ctrl (lack Cre), OTI-TR2KO; OTI-S4KO and OTI-S4TR2DKO cells were transferred to B6 mice 48 hr before infection. On different days post infection (dpi), donor cells in the lungs and spleens were analyzed for CD103, KLRG1, and CD62L expression (Figure 1A, B). Statistical comparisons are shown in the supplementary data (Supplementary file 2). Prior studies show that KLRG1 is negatively regulated by TGF\u03b2 (Sanjabi et al., 2009; Schwartzkopff et al., 2015). Since latent-TGF\u03b2 can be activated by viral neuraminidase (Schultz-Cherry and Hinshaw, 1996), only small numbers of OTI-TR2Ctrl cells expressed KLRG1 after IAV infection, whereas most OTI-TR2KO cells expressed KLRG1 at high levels (Figure 1A). In contrast, there was little difference between percentages OTI-TR2Ctrl and OTI-TR2KO that expressed KLRG1 during the early stages of infection with LM-OVA (Figure 1B), indicating minimal influence of TGF\u03b2 during bacterial infection. As the infection progressed, some OTI-TR2KO cells reexpressed CD62L indicating conversion to TCM phenotype. The OTI-S4KO cells mostly lacked KLRG1 and CD62L expression after infection with both pathogens, indicating a defect during formation of TEFF and TCM cells (Cao et al., 2015; Hu et al., 2015). The OTI-S4KO and OTI-S4TR2-DKO cells expressed KLRG1 and CD62L at similar levels, whereas the increase in CD103 expression was slightly more pronounced on S4KO cells than OTI-S4TR2-DKO cells. p values are shown in Supplementary file 2. These data are consistent with other studies and show that SMAD4 regulates activated CTLs via a TGF\u03b2-independent pathway (Igalouzene et al., 2022; Wu et al., 2021). We also compared cell proliferation during IAV infection using carboxyfluorescein succinimidyl ester (CFSE) dilution and 5-bromo-2-deoxyuridine (BrdU) incorporation (Figure 1\u2014figure supplement 1). The data show that OTI-S4TR2DKO and OTI-S4TR2Ctrl cells proliferated at similar rates, indicating normal T cell priming.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig1-v4.jpg)\n\n**Figure 1.:** (A, B) Naive donor cells from OTI-Ctrl, OTI-TR2KO, OTI-S4KO, and OTI-S4TR2-DKO were transferred to B6 mice before infection. Heatmaps show percentages of donor cells that expressed KLRG1, CD103, CD62L, and CD127 on different day post infection. Data are means \u00b1 standard deviation (SD) (n = 3/group). Two independent experiments gave similar results. p values were calculated using two-way ANOVA and statistical comparisons were made using Tukey\u2019s multiple comparisons test. (A) Donor cells in the lungs and spleens after i.n. infection with X31-OVA. (B) Donor cells in the spleens after i.v. infection with LM-OVA. (C, D) IV staining shows OTI-S4KO and OTI-S4Ctrl cells in the lungs at 34 dpi with LM-OVA given by i.n. inoculation. Data are means \u00b1 standard deviation (SD) (n = 3-4/group). Two independent experiments gave similar results. p values were calculated using Student\u2019s t tests (C) Histograms (percentages) and bar graphs (cell numbers) show all donor cells from OTI-S4KO (dashed) and OTI-S4Ctrl mice (continuous line). (D) Contour plots show donor cells in the bloodstream (right panel) and lung tissue (left panel).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig1-figsupp1-v4.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Histograms show CFSE dilution at 3.5 dpi. (B) OTI-S4TR2Ctrl (white fill) and OTI-S4TR2KO cells (gray fill) were transferred to C57BL/6 mice before infection with X31-OVA. 5-Bromo-2-deoxyuridine (BrdU) was administered by IP injection 3 hr before sacrifice. Bar graphs show percentages of BrdU+ donor cells at 6 dpi and 8 dpi. Data are means \u00b1 standard deviation (SD) (n = 3/group). Two independent experiments gave similar results. p values were calculated using Student\u2019s t tests.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig1-figsupp2-v4.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Antibodies (CD8\u03b2) were injected 3 min before sacrifice. Donor cells in spleens were analyzed for KLRG1 and GFP (CX3CR1) expression at 34 dpi. Histograms show total donor cells from OTI-S4KO (dashed line) and OTI-S4Ctrl mice (continuous line). Contour plots show donor cells in the white (left) and red (right) pulp of the spleen. Data are means \u00b1 standard deviation (SD) (n = 3-4/group). Two independent experiments gave similar results. p values were calculated using Student\u2019s t tests.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig1-figsupp3-v4.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Weight loss is shown as % change from baseline (day 0). Symbols indicate statistical comparisons with controls *p < 0.05, **p < 0.01. Combined data from two experiments are shown (n=7-9). Data are means \u00b1 S.D. p values were calculated using Student\u2019s t tests.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig1-figsupp4-v4.jpg)\n\n**Figure 1\u2014figure supplement 4.:** UP = unprimed mice. Combined data from two experiments are shown (n=7-9). Data are means \u00b1 S.D. p values were calculated using Student\u2019s t tests.\n\nWe previously used IV staining to analyze CTLs during IAV infection and found some KLRG1+ CTLs inside the blood vessels of the lungs >40 dpi (Hu et al., 2015). Since very few SMAD4-deficient CTLs expressed KLRG1 during infection with LM-OVA, we investigated whether these cells were located in the vasculature or peripheral tissues. Fractalkine (CX3CL1) is a chemoattractant with adhesive properties (Ostuni et al., 2020) that alters CD8 T cell migration. Prior studies indicate that CTLs in the vasculature express the fractalkine receptor (CX3CR1) at high levels (Nishimura et al., 2002). Several groups used reporter mice to monitor changes CX3CR1 expression during infection with different pathogens and found that terminally differentiated TEFF cells expressed KLRG1 and CX3CR1 at high levels (Gerlach et al., 2016; Jung et al., 2000). To explore whether CX3CR1 is regulated via SMAD4, we crossed the CX3CR1GFP+ reporter with OTI-S4KO mice for transfer experiments. Naive OTI-Ctrl and OTI-S4KO cells were mixed (1:1 ratio) and transferred to B6 mice before infection with LM-OVA. After 30 days, donor cells were analyzed for KLRG1 and GFP (surrogate for CX3CR1) expression (Figure 1C, D and Figure 1\u2014figure supplement 2). Fluorescently conjugated antibodies (CD8\u03b2) were injected 3 min before sacrifice, to distinguish CTLs in the blood vessels and peripheral tissues. The majority of OTI-Ctrl cells in the lungs expressed KLRG1 and GFP at high levels (overlaid histogram and bar graph) (Figure 1C) and were primarily located inside the blood vessels (Figure 1D). Conversely, OTI-SKO cells expressed KLRG1 and GFP at intermediate/low levels (Figure 1C), and some cells were located in the tissue (Figure 1D). Similar distributions of donor cells were found in the red and white pulp of the spleen (Figure 1\u2014figure supplement 2). Since small numbers of SMAD4-deficient CTLs expressed KLRG1 and CX3CR1 at high levels, the data indicate that SMAD4 acts as a catalyst for terminal differentiation.\n\nRodents lose large percentages of their body weight during IAV infection and the rate of recovery to normal size can be used to assess the severity of disease. After IAV infection, S4KO mice experienced more severe disease than the controls (Hu et al., 2015). Since OTI-S4KO and OTI-S4TR2-DKO cells displayed similar phenotypes during infection, we used weight loss to measure of protective immunity. S4TR2-DKO and S4TR2-Ctrl mice were infected with X31-OVA and weight changes were recorded daily (Figure 1\u2014figure supplement 3). As expected, the S4TR2-DKO mice lost more weight and recovered from infection more slowly than the controls. After 30 days, the immune mice (and uninfected controls) were challenged with different strain of IAV (WSN-OVAI) (Figure 1\u2014figure supplement 4). None of the immune mice experienced substantial weight loss after infection with WSN-OVAI, indicating that protection against reinfection was not dependent on SMAD4 or TGF\u03b2.\n\n### SMAD4 modifies homing-receptor expression independently of R-SMAD2/3\n\nThe TGF family includes two groups of cytokines, that signal via alternative branches of the SMAD cascade. TGF\u03b2 and activins signal via R-SMAD2/3, while bone morphogenic proteins and related growth differentiation factors signal via R-SMAD1/5/8 (Fink et al., 2003; Takimoto et al., 2010). SMAD4 facilitates signaling by both groups of cytokines and chaperones complexes of phosphorylated R-SMADs into the nucleus for gene regulation (Massagu\u00e9 et al., 2005). Since we found that SMAD4 was required for formation of TCM cells but not TRM cells, we used quantitive polymerase chain reaction (qPCR) to compare SMAD4 expression in these subsets and found only a moderate difference in transcript levels (Figure 2\u2014figure supplement 1).\n\nWhen CTLs are stimulated with TGF\u03b2, the receptor phosphorylates R-SMAD3 and induces CD103 expression (Yang et al., 1999). Prior studies show some redundancy within the SMAD signaling network. After cancer cells were stimulated with TGF\u03b2, R-SMAD2 and R-SMAD3 were phosphorylated and formed heterodimers that entered the nucleus in the absence of SMAD4 (Fink et al., 2003; Li et al., 2008). Since our data show that SMAD4-deficient CTLs maintained a consistent phenotype in the presence and absence of TGF\u03b2RII, we investigated whether R-SMAD2/3 were required to modify homing-receptor expression. Mice with flox sites in the genes for R-SMAD2 (Ju et al., 2006) and R-SMAD3 (Li et al., 2008) were used to generate CTLs that lack either R-SMAD2 (S2KO) or R-SMAD3 (S3KO), and both mutations (S23DKO). S3KO mice were further bred with S4KO mice to produce CTLs with both mutations (S34DKO). The respective Cre-deficient littermates were used as controls.\n\nTo study the effects of cytokine stimulation, naive CD8 T cells were isolated from SLO by negative selection and activated with plate-bound anti-CD3/CD28 plus recombinant IL-2 (20 u/ml). After 48 hr, the remaining CTLs were washed and cultured in fresh medium without T cell receptor (TcR) stimulation (48 hr). Replicate wells were supplemented with either rIL-2 alone or rIL-2 plus exogenous TGF\u03b2 (10 ng/ml). Selected wells were supplemented with an ALK5 inhibitor (SB431542) to block responses to any TGF\u03b2 in the media. At 96 hr after TcR stimulation, the cultured CTLs were analyzed for CD103 (Figure 2A) and CD62L expression (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig2-v4.jpg)\n\n**Figure 2.:** (A, B) Naive CD8 T cells from genetically modified mice were activated in vitro and stimulated with cytokines. Selected wells were supplemented with SB431542 (10 \u03bcM). Bars show CTLs stimulated with rIL-2 alone (no fill), rIL-2 plus SB431542 (gray fill), and rIL-2 plus transforming growth factor \u03b2 (TGF\u03b2) (hatched). Data are means \u00b1 standard deviation (SD) (3 mice per group). p values were calculated using Student\u2019s t tests. Two independent experiments produced similar results. (A) Percentages of CTLs that expressed CD103 at 96 hr after T cell receptor (TcR) stimulation. (B) Percentages of CTLs that expressed CD62L at 96 hr after TcR stimulation. (C, D) Different strains of genetically modified (empty squares) and control mice (filled circles) were infected (i.v.) with LM-OVA and at 8 dpi OVA-specific CTLs in the spleen were analyzed with MHCI tetramers. Data are means \u00b1 SD (n=3 per group). p values were calculated using two-way ANOVA and statistical comparisons were made using Tukey\u2019s multiple comparisons test. Two independent experiments produced similar results. (C) Scatter plot shows tetramer+ CTLs analyzed for KLRG1 expression. (D) Scatter plot shows tetramer+ CTLs analyzed for CD103 expression.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** qPCR was used to measure Smad4 transcripts. The data are means \u00b1 standard deviation (SD) (n = 3).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig2-figsupp2-v4.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Donor cells were analyzed for R-SMAD2/3 expression at 8 dpi. Overlaid histograms show similar R-SMAD2/3 intensity (left) and nuclear localization (right) for OTI-S4Ctrl (gray line) and OTI-S4KO (dashed line) cells.\n\nNaive CD8 T cells normally downregulate CD103 during antigen stimulation and expression returns when TRM cells are exposed to TGF\u03b2 (Suarez-Ramirez et al., 2019; Teraki and Shiohara, 2002). Consistently, the control CTLs did not express CD103 during culture with rIL-2 (plus and minus ALK5 inhibitor), while this marker was induced during stimulation with TGF\u03b2 (Figure 2A). The same pattern of CD103 expression was observed when CTLs lacked R-SMAD2 (S2KO) or R-SMAD3 (S3KO). In contrast, S23DKO and TR2KO cells both lacked CD103 expression under all conditions analyzed, whereas S4KO, S4TR2KO, and S34KO cells expressed CD103 at intermediate levels. Sloan Kettering Institute (SKI) protein is a nuclear proto-oncogene that inhibits TGF\u03b2 signaling through interactions with SMAD proteins (Sun et al., 1999). A prior report found that SMAD4 interacts with SKI and creates heterodimers that repress Itgae expression (\u03b1E integrin/CD103) in CTLs (Wu et al., 2021). Consistently, S4KO cells expressed CD103 at higher levels than S4Ctrl cells during stimulation with rIL-2. However, CD103 expression increased when S4KO cells were stimulated with TGF\u03b2. Conversely, CD103 expression did not change when S34KO and S4TR2-DKO cells were stimulated with TGF\u03b2. These data show that R-SMAD2/3 are required for TGF\u03b2 to upregulate CD103 in the absence of SMAD4. When R-SMAD2 is absent, R-SMAD3 cooperates with SMAD4 to upregulate CD103 expression. Imaging flow cytometry confirmed that R-SMAD2/3 entered the nucleus without SMAD4 (Figure 2\u2014figure supplement 2).\n\nOur in vivo data show that low frequencies of OTI-S4KO cells reexpress CD62L during the memory phase of infection, indicating a defect during formation of TCM cells. Since TGF\u03b2 inhibits TCM formation (Takai et al., 2013), we analyzed the cultured CTLs for CD62L (Figure 2B). Between 50% and 60% of the control CTLs reexpressed CD62L when cultured with rIL-2 alone, and the percentages increased to approximately 100% when the ALK5 inhibitor was used. Conversely, only 25% of control CTLs expressed CD62L when cultured with TGF\u03b2. Although 50% of S4KO, S34DKO, and S4TR2DKO cells expressed CD62L during culture with IL-2, the numbers did not change when the ALK5 inhibitor, or exogenous TGF\u03b2, was used. TR2KO and S23KO cells expressed CD62L at high levels under all conditions analyzed. These data indicate that SMAD4 has dual functions during regulation of CD62L, since blocking TGF\u03b2 signaling was not sufficient to restore CD62L expression in the absence of SMAD4.\n\nBecause recombinant cytokines are not sufficient to induce KLRG1 expression on cultured CTLs (Robbins et al., 2003), we infected the mutant mice with LM-OVA. The bacteria were administered by i.v. injection and MHCI tetramers were used to analyze OVA-specific CTLs in the spleens at 8 dpi (Figure 2C, D). Between 50% and 90% of the control CTLs expressed KLRG1 and the percentages did not change in the absence of either R-SMAD2 (S2KO) or R-SMAD3 (S3KO). Large percentages of CTLs expressed KLRG1 (80\u201390%) in the absence of R-SMAD2/3 (S23DKO), or a functional TGF\u03b2 receptor (TR2KO and ALK5KO), confirming that expression was repressed by TGF\u03b2 (Sanjabi et al., 2009). Conversely in the absence of SMAD4 (S4KO, S34DKO, and S4TR2DKO) only small percentages of CTLs expressed KLRG1, while the portion of CD103 expressing cells significantly increased (Figure 2D). The phenotypic changes in S34DKO cells were slightly less pronounced. The reason for this is unclear, but may reflect the influence of a feedback mechanism. Our data show that SMAD4 promotes formation of terminally differentiated TEFF cells via a mechanism that does not require TGF\u03b2, or R-SMAD2/3.\n\n### The transcriptional profile of SMAD4-deficient CTLs is similar to TRM cells\n\nTGF\u03b2 is an important regulatory factor during CTL development, but relatively little is known about the function of SMAD4 during transcriptional programming of activated CTLs. To address this question, we used RNA-sequencing to compare the transcriptional profiles of SMAD4-deficient and control CTLs during IAV infection. Early effector (EE) cells are partially differentiated CTLs that have not committed to a classical SLEC/MPEC phenotype, and can be identified using high CD44/CD11a expression in the absence of KLRG1, CD127, and CD103 (Plumlee et al., 2015). To compare similar populations of antigen-specific CTLs, naive OTI-S4KO and OTI-S4Ctrl cells were transferred to B6 mice before infection with X31-OVA and EE cells were isolated from the spleens at 6 dpi. Samples were analyzed in triplicate and mRNA-sequences were registered with the GEO repository (accession # GSE151637). Differentially expressed genes were ranked according to fold change in OTI-S4KO cells (Figure 3A and Figure 3\u2014source data 1). We found that OTI-S4KO cells expressed EOMES (Eomes) and CD62L (Sell) at lower levels than the controls, while Itgae was upregulated (Figure 3B). Since CD103 is expressed on large numbers of TRM cells in mucosal tissues, we used gene set enrichment analysis (GSEA) to compare the transcriptional profile of OTI-S4KO cells with previously published datasets. The GSEA plots show comparisons with TRM cells in the small intestine (Milner et al., 2017; Figure 3C) and other tissues (Figure 3D). Many signature genes that are associated with TRM cells in the small intestine were upregulated in OTI-S4KO cells. We found similar correlations with TRM cells isolated from the brain and liver, as well as CTLs that were stimulated with TGF\u03b2 in vitro (Mackay et al., 2016; Milner et al., 2017; Nath et al., 2019; Wakim et al., 2012). These correlations indicate that early signaling via SMAD4 impedes differentiation toward a resident memory phenotype.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig3-v4.jpg)\n\n**Figure 3.:** (A\u2013C) OTI-S4Ctrl and OTI-S4KO were transferred to B6 mice before infection with X31-OVA. Early effector (EE) cells were analyzed 6 dpi, using RNA isolated from pools of three spleens. Samples were analyzed in triplicate (total n = 9/group). (A) Differentially expressed genes are ranked according to fold change in OTI-S4KO cells. (B) OTI-S4KO cells expressed Eomes and Sell at reduced levels while Itgae was induced. (C, D) The transcriptional profile of OTI-S4KO cells was compared with published datasets. (C) Comparison with IEL analyzed 7 dpi (GSE107395). (D) Comparisons with TRM cells in brain (GSE39152), TRM, and TEM cells in liver (GSE70813), TCM cells in spleen (GSE70813), and in vitro activated CTLs (GSE125471). Color scale indicates normalized enrichment scores (NESs) and circles indicate false discovery rates (FDRs). (E) S4Ctrl (top graph) and S4KO cells (bottom graph) were analyzed for Itgae transcripts at 72 and 96 hr after T cell receptor (TcR) stimulation. Bars are cells stimulated with rIL-2 alone (filled bars) and rIL-2 plus transforming growth factor \u03b2 (TGF\u03b2) (hatched bars). Samples were analyzed in triplicate. Two independent experiments gave similar results. (F) Cultured CTLs were analyzed for Hobit transcripts at 96 hr after TcR stimulation. Bars show cells stimulated with rIL-2 alone (filled bars), and rIL-2 plus ALK5 inhibitor (white bars). Samples were analyzed in triplicate. Two independent experiments gave similar results. (G) qPCR was used to measure Klrg1 transcripts in OTI-S4KO and OTI-S4Ctrl cells at 8dpi with LM-OVA. Samples were analyzed in triplicate. Two independent experiments gave similar results. (H) Cultured CTLs were analyzed for Sell transcripts at 96 hr after TcR stimulation. Bars show CTLs stimulated with rIL-2 alone (filled bars) and rIL-2 plus TGF\u03b2 (hatched bars). Samples were analyzed in triplicate. Two independent experiments gave similar results. p values were calculated using Student\u2019s t tests.\n\nWe used qPCR to further confirm that SMAD4 altered Itgae expression in vitro. Naive CD8 T cells were activated with plate-bound anti-CD3/CD28 plus recombinant IL-2 (20 u/ml). After 48 hr, RNA was extracted from S4Ctrl cells to establish a baseline for gene expression. The remaining CTLs were cultured in fresh medium without TcR stimulation. Replicate wells were supplemented with either rIL-2 alone or rIL-2 plus exogenous TGF\u03b2 (10 ng/ml). RNA was extracted at 24 and 48 hr after cytokine stimulation (i.e., 72 and 96 hr after TcR stimulation, respectively) for qPCR analysis (Figure 3E). The graphs show relative changes in Itgae expression (log2 fold change) compared to the controls. As expected, the S4KO cells produced more Itgae transcripts than S4Ctrl cells during culture with IL-2 and expression increased when TGF\u03b2 was added.\n\nMany transcription factors have important functions during CD8 T cell differentiation. Notably, homolog of Blimp1 (Hobit) promotes formation of TRM cells (Mackay et al., 2016; Parga-Vidal et al., 2021) and EOMES is expressed in TCM cells (Intlekofer et al., 2005) and downregulated by TGF\u03b2 as TRM cells settle in peripheral tissues (Mackay et al., 2015). Since the sequencing data indicate that SMAD4-deficient CTLs are transcriptionally related to TRM cells, we used qPCR to measure Hobit transcripts in vitro. Naive S4KO and S4Ctrl cells were activated with antibodies (48 hr) and cultured with rIL-2 (48 hr) in the presence and absence of the ALK5 inhibitor. Samples were analyzed by qPCR at 96 hr after TcR stimulation (Figure 3F). The S4KO cells produced more Hobit transcripts than S4Ctrl cells during culture with IL-2. The numbers of Hobit transcripts in the S4Ctrl cells decreased when the ALK5 inhibitor was used, while expression in S4KO cells did not change. These data indicate that Hobit is induced by TGF\u03b2 and downregulated via SMAD4.\n\nBecause neuraminidase activates TGF\u03b2, small percentages of OTI-Ctrl cells expressed KLRG1 during infection with X31-OVA (Figure 1B). Consequently, we did not detect significant differences in the numbers of Klrg1 transcripts in OTI-S4KO and OTI-S4Ctrl cells by RNA-sequencing. To generate large populations of KLRG1+ CTLs, we transferred OTI-S4KO and OTI-S4Ctrl cells to B6 mice before infection with LM-OVA and analyzed donor cells in the spleen at 8 dpi using qPCR (Figure 3G). The data show that OTI-S4KO cells produced fewer Klrg1 transcripts than OTI-S4Ctrl cells during the TEFF response.\n\nL-selectin (CD62L) is required for naive and TCM cells to enter resting lymph nodes via HEV. Krupple-like factor 2 (KLF2) plays a central role in transcriptional regulation of CD62L during the CTL response (Takada et al., 2011). Since our data suggest that CD62L is regulated via SMAD4 (Cao et al., 2015; Hu et al., 2015), we measured Sell (CD62L) and Klf2 transcripts in cultured CTLs after cytokine stimulation (Figure 3H). Naive S4KO and S4Ctrl cells were activated (48 hr) and stimulated with rIL-2, or rIL-2 plus TGF\u03b2 (48 hr) as previously and RNA was extracted for qPCR analysis. S4KO cells produced fewer Sell transcripts than S4Ctrl cells during culture with rIL-2. The numbers of Sell transcripts in S4Ctrl cells decreased during stimulation TGF\u03b2, while expression in S4KO cells did not change. These data indicate that CD62L is induced via SMAD4, and downregulated by TGF\u03b2. The numbers of Klf2 transcripts were not modified by SMAD4 or TGF\u03b2.\n\n### EOMES is cooperatively regulated by TGF\u03b2 and SMAD4\n\nEOMES plays a major role in lineage specification of pathogen-specific CTLs. Our sequencing data show that OTI-S4KO cells produce fewer Eomes transcripts than OTI-S4Ctrl cells during IAV infection (Figure 3B). To confirm whether EOMES was induced via SMAD4, we activated S4KO and S4Ctrl cells in vitro (48 hr) and measured Eomes transcripts by qPCR (Figure 4A). The numbers of Eomes transcripts in S4Ctrl cells transiently decreased during culture with rIL-2 (72 hr after TcR stimulation) and returned to baseline at 96 hr. Eomes was downregulated by TGF\u03b2 at both time points. Importantly, S4KO cells produced very few Eomes transcripts that S4Ctrl cells during culture with IL-2 and did not respond to TGF\u03b2. These data confirmed that EOMES was induced via SMAD4 and downregulated by TGF\u03b2.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig4-v4.jpg)\n\n**Figure 4.:** (A) S4Ctrl (left) and S4KO (right) cells were analyzed for Eomes transcripts at 96 hr after T cell receptor (TcR) stimulation. Bars show cytotoxic T lymphocytes (CTLs) stimulated with rIL-2 alone (filled bars) and rIL-2 plus TGF\u03b2 (hatched bars). Samples were analyzed in triplicate. Two independent experiments gave similar results. p values were calculated using Student\u2019s t tests. (B, C) OTI-S4KO, OTI-S4Ctrl, OTI-S4TR2TKO, and OTI-S4TR2Ctrl cells were transferred to B6 mice before infection with LM-OVA. On different days after infection, donor cells in the spleens were analyzed for EOMES expression by intracellular staining. Data are mean \u00b1 standard deviation (SD) (n = 4/group). Two independent experiments gave similar results. p values were calculated using Student\u2019s t tests. (B) EOMES expression (MFI) in OTI-TR2KO (no fill) and OTI-TR2Ctrl (gray fill). (C) EOMES expression (MFI) in OTI-S4KO (hatched) and OTI-S4Ctrl (gray fill). (D\u2013F) Donor cell were transferred to B6 mice before i.n. infection with LM-OVA and analyzed by imaging flow cytometry at 8 dpi. Data are means \u00b1 SD, n = 3. (D) Representative staining for EOMES (yellow) and 7-AAD (red). (E) Histograms show EOMES intensity and similarity scores for OTI-S4Ctrl (gray line) and OTI-S4KO (dashed line) cells. (F) Histograms show EOMES intensity and similarity scores for OTI-TR2Ctrl (gray line) and OTI-TR2KO (dashed line) cells. (G) Published ChIP-Seq data from in vitro activated CTLs (GSE135533) were used to identify SMAD4-binding sites in the EOMES locus (8 kb).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig4-figsupp1-v4.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Graphs show EOMES expression (MFI) in OTI-S4KO (black fill) and OTI-TR2KO (cross hatch) cells, with the respective Cre-deficient controls (gray fill). Data are mean \u00b1 standard deviation (SD) (n = 4/group). p values were calculated using Student\u2019s t tests.\n\nWe next used transfer experiments to monitor changes in EOMES expression in vivo. Naive OTI-S4KO, OTI-S4Ctrl, OTI-TR2KO, and OTI-TR2Ctrl mice were transferred to B6 mice before infection with LM-OVA. On different dpi, donor cells in the spleens were analyzed for EOMES expression by intracellular staining (Figure 4B, C). OTI-TR2KO cells expressed EOMES at higher levels than OTI-TR2Ctrl cells at all time point analyzed (Figure 4B), whereas OTI-S4KO cells expressed EOMES at lower levels than OTI-S4Ctrl cells (Figure 4C). After infection with X31-OVA, the differences in EOMES expression were less pronounced, which may reflect the influence of virally induced TGF\u03b2 (Figure 4\u2014figure supplement 1). These EOMES are induced via SMAD4 and downregulated by TGF\u03b2.\n\nWhen CTLs were analyzed after LCMV infection, imaging flow cytometry showed that EOMES was concentrated in the nuclei of exhausted CTLs (McLane et al., 2021). We used imaging flow cytometry to determine whether EOMES translocated into the nuclei of OTI-S4KO cells during TEFF formation (Figure 4D-F). Donor cells were transferred to B6 mice before infection with LM-OVA and the spleens were analyzed at 8 dpi. The OTI-S4KO cells expressed EOMES at lower levels than OTI-S4Ctrl, and a smaller percentage of the protein was located in the nuclei where it could influence gene expression (Figure 4E). We analyzed TR2KO and TR2Ctrl cells for EOMES expression using a KLRG1 gate (Figure 4F). KLRG1+ CTLs from TR2KO and TR2Ctrl mice show similar patterns of EOMES expression. Gating on KLRG1-negative cells showed that TR2KO cells expressed EOMES at higher levels than the controls (Figure 4F). EOMES expression in KLRG1+ CTLs was not altered by TGFb. Since our data showed that EOMES was induced via SMAD4, we used published ChIP-Seq data (Wu et al., 2021) to determine whether the regulatory sequences in the Eomes gene include SMAD4-binding sites (Figure 4). The data show that the promoter region for the Eomes gene includes multiple SMAD4-binding sites.\n\n### Ectopic EOMES expression alters the ratios of CTLs that express CD103 and CD62L\n\nPrior studies indicate that EOMES must be downregulated before TRM cells express CD103 (Mackay et al., 2015). Since our data showed that OTI-S4KO cells consistently expressed EOMES at reduced levels, we reasoned that SMAD4 might indirectly influence homing-receptor expression by altering EOMES expression. To explore this possibility, we intercrossed S4KO and EOMES-deficient (EKO) mice to produce CTLs with both mutations (ES4KO). Cre-deficient littermates (ECtrl, S4Ctrl, and ES4Ctrl) were used as controls. Naive CD8 T cells were activated in vitro (48 hr) and stimulated with cytokines (48 hr) as previously. Selected wells were supplemented with the ALK5 inhibitor to prevent signaling via the TGF\u03b2 receptor. CTLs were analyzed for CD103 (Figure 5A) and CD62L expression (Figure 5B) at 96 hr after TcR stimulation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig5-v4.jpg)\n\n**Figure 5.:** (A, B) S4KO, EKO, ES4KO (gray), and control mice (black) were activated in vitro and stimulated with cytokines. Graphs show cytotoxic T lymphocytes (CTLs) analyzed 96 hr after T cell receptor (TcR) stimulation. Bars are CTLs stimulated with rIL-2 alone (filled bars), rIL-2 plus SB431542 (no fill), and rIL-2 plus transforming growth factor \u03b2 (TGF\u03b2) (hatched). Data are means \u00b1 standard deviation (SD) (3 mice per group). p values were calculated using Student\u2019s t tests. Two independent experiments produced similar results. (A) Percentages of CD8 T cells that expressed CD103. (B) Percentages of CD8 T cells that expressed CD62L. (C) S4KO, EKO, and ES4KO mice were infected with X31-OVA and anti-viral CTLs were analyzed with MHCI tetramers at 33 dpi. Anti-CD8 antibodies were injected 5 min before sacrifice. Contour plots show OVA-specific CTLs analyzed for CD103 and CD62L expression. (D, E) S4KO and S4Ctrl cells were activated in vitro (48 hr) and transduced with a retroviral vector encoding EOMES (Eomes-IRES-GFP) or the empty vector control (EV-IRES-GFP). (D) GFP+ cells were analyzed for CD103 and CD62L expression after 6 days in culture. (E) S4KO and S4Ctrl cells were transferred to B6 mice that were previously infected (24 hr) with X31-OVA. GFP+ cells in the lungs were analyzed for CD62L and CD103 expression at 35 dpi. Data are means \u00b1 SD (3 mice per group). Two independent experiments produced similar results.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig5-figsupp1-v4.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Data are means \u00b1 SD (3 mice per group). Two independent experiments produced similar results. p values were calculated using Student\u2019s t tests.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig5-figsupp2-v4.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Histograms show CD62L expression on different days after T cell receptor (TcR) stimulation.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig5-figsupp3-v4.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Overlaid histograms show EOMES expression in GFP+ cells at 2 days after transduction.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig5-figsupp4-v4.jpg)\n\n**Figure 5\u2014figure supplement 4.:** GFP+ cells were analyzed for CD103 (top) and CD62L (bottom) expression at 4 days after transduction.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig5-figsupp5-v4.jpg)\n\n**Figure 5\u2014figure supplement 5.:** GFP+ cells were analyzed for CD103 and CD62L expression at 4 days after transduction.\n\nAs expected, the control cells did not express CD103 during culture with IL-2 and this marker was induced by TGF\u03b2. The S4KO and EKO cells both expressed CD103 at intermediate levels during culture with rIL-2 and expression increased when TGF\u03b2 was added. Conversely, ES4KO cells expressed CD103 at high levels under all conditions analyzed. These data show that the Itgae gene was repressed by two different mechanisms. In wildtype mice, CD62L is present on naive CD8 T cells, then downregulated during TEFF formation and reexpressed on TCM cells. We analyzed naive CD8 T cells before activation and found similar levels of CD62L expression in each group of mice (Figure 5\u2014figure supplement 1). The control CTLs downregulated CD62L at 48 hr after TcR stimulation in vitro (Figure 5\u2014figure supplement 2), while a majority CTLs reexpressed CD62L during culture with rIL-2. When cultured cells were stimulated with cytokines, the percentages of control CTLs that expressed CD62L increased when the ALK5 inhibitor was present and decreased when TGF\u03b2 was used. In contrast, only 50% of S4KO and ES4KO cells expressed CD62L under all conditions analyzed (Figure 5B). These data confirmed that antigen-experienced CTLs downregulate CD62L in response to TGF\u03b2, and that SMAD4 is required for CTLs to reexpress CD62L during memory formation.\n\nTo compare homing-receptor expression in vivo, we infected S4KO, EKO, and ES4KO mice (plus littermate controls) with X31-OVA and analyzed CTLs at 30 dpi (Figure 5C). Anti-CD8 antibodies were given by i.v. injection 3 min before sacrifice. OVA-specific CTLs were analyzed using MHCI tetramers. The lungs and draining lymph nodes (MLN) from each group of mice contained some CD103+ TRM cells. Abnormal CD103 expression was detected on OVA-specific CTLs in the spleens of S4KO and ES4KO mice. Approximately 50% of OVA-specific CTLs in the ILNs from control mice expressed CD62L, indicating the presence of TCM cells. Smaller percentages of OVA-specific CTLs expressed CD62L in the ILNs of S4KO, EKO, and ES4KO mice (17\u201322%), supporting the idea that signaling via SMAD4 promotes formation of TCM cells.\n\nWe next explored whether ectopic EOMES expression altered the phenotype of S4KO cells. A murine stem cell virus (MSCV) vector that encodes green fluorescent protein (MSCV)-IRES-GFP (pMIG) was used to overexpress EOMES in antigen-experienced CTLs in vitro (Figure 5D) and in vivo (Figure 5E). The pMIG vector has been described previously (Pearce et al., 2003). Naive S4KO and EKO cells were stimulated with anti-CD3/28 and rIL-2 (48 hr), then transduced with either EOMES-IRES-GFP, or empty vector control (EV-IRES-GFP). At 96 hr after TcR stimulation, the GFP+ CTLs were analyzed for CD103 expression by flow cytometry. EKO cells were used to verify that the RV-EOMES-GFP vector was functional (overlaid histograms) (Figure 5\u2014figure supplement 3). When EOMES was expressed ectopically, smaller percentages of S4KO and S4Ctrl cells expressed CD103, while the percentages of CD62L+ CTLs increased (Figure 5D and Figure 5\u2014figure supplement 4). GFP+ cells in lungs expressed CD103 at reduced levels after transduction with the EOMES-IRES-GFP vector (Figure 5E). These experiments show that ectopic EOMES expression partially restored the phenotype of S4KO cells, and induced a shift toward a central memory phenotype. We also used the (MSCV)-IRES-GFP (pMIG) vector to express SMAD4 ectopically and also observed a shift toward a TCM phenotype in S4KO cells (Figure 5\u2014figure supplement 5).\n\n## Discussion\n\nDifferent approaches have been used to determine how specialized subsets of pathogen-specific CTLs acquire heritable traits. Several lines of evidence indicate that naive CD8 T cells are not a uniform cell population. Early studies used limiting-dilution assays and fate-mapping experiments to show that naive CD8 T cells give rise to mixed populations of TEFF and memory CD8 T cells (Plumlee et al., 2015; Stemberger et al., 2007). Others found unequal inheritance of genetic markers during TEFF formation, indicating that TEFF and memory CD8 T cells are products of asymmetric cell division (Chang et al., 2011; Pollizzi et al., 2016). Other studies indicate that the differentiation program for memory CD8 T cells begins soon after antigen stimulation, as the IL-7 receptor (CD127) is expressed CTLs that are predisposed toward memory formation and absent from TEFF cells that express KLRG1 (Kaech et al., 2003). Transcriptome analysis also revealed the presence of TRM precursors in a pool of circulating TEFF cells (Kok et al., 2020). Other data indicate that programming occurs at an early stage of diffrentiation, since migratory DCs that activate TGF\u03b2 can precondition naive CD8 T cells to become TRM cells that localize in peripheral tissues (Mani et al., 2019). Although many studies support diverging differentiation pathways, the question of whether specialized traits are genetically programmed, or induced by external stimuli has not been resolved. In an attempt to address this question, investigators used transfer experiments to track clonal populations of antigen-specific CD8 T cells during infections with different type of pathogens. The study showed that the population dynamics reflected the inflammatory environment that developed during infection (Plumlee et al., 2013). Large numbers of TEFF cells expressed KLRG1 during infection with LM, while this marker was less prevalent during infection with Vesicular Stomatitis Virus. Our study builds on this observation by revealing the requirement for SMAD-dependent sugnling pathways during fate-determination of pathogen-specific CTLs.\n\nSeveral cytokines are known to influence the \u2018fate decisions\u2019 of newly activated CTLs, including IL-12 which supports TEFF formation (Mescher et al., 2006), whereas TGF\u03b2 has anti-inflammatory properties and encourages TRM cells to settle in peripheral tissues (Skon et al., 2013). Several studies show that signaling via SMAD4 is required for formation of TEFF and TCM cells, whereas TGF\u03b2 creates a bias toward TRM development (Cao et al., 2015; Hu et al., 2015; Mackay et al., 2015). Our current study extends this work by showing that SMAD4 and TGF\u03b2 are essential components of two distinct signaling pathways that guide the fate decisions of newly activated CTLs using alternative genetic programs. Importantly, these opposing pathways control a key bifurcation in the differentiation pathway of antiviral CTLs, by regulating the same genes in opposite directions (Figure 6). We show that SMAD4 upregulates genes that are highly expressed in CTLs in the circulation, including EOMES, KLRG1, and CD62L. The same genes are downregulated by TGF\u03b2 as TRM cells settle in peripheral tissues (Mackay et al., 2015; Sanjabi et al., 2009). There is evidence that cell-state impacts susceptibility to TGF\u03b2, since we previously found that TCM cells did not upregulate CD103 during stimulation with TGF\u03b2 (Suarez-Ramirez et al., 2019) and our current study shows that KLRG1+ CTLs maintain EOMES expression in the presence of TGF\u03b2 (Figure 4F). Although studies show that SMAD4 acts independently of TGF\u03b2 to support commitment to TEFF and TCM lineages, further work is required to determine whether SMAD4-dependent epigenetic modifications are required for CTLs to become terminally differentiated.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76457/elife-76457-fig6-v4.jpg)\n\n**Figure 6.:** Diagram shows reciprocal changes in gene expression as CTLs are modified via SMAD-dependent signaling pathways.\n\nSMAD proteins modulate gene expression through interactions with numerous transcription factors, including the protooncogene SKI and forms heterodimers that repress the Itgae gene (CD103) (Wu et al., 2021). Our data show that CD103 is also downregulated via SMAD4-dependent induction of EOMES. Others used retroviral vectors to ectopically express T-box transcription factors in activated CTLs and found reduced numbers of TRM cells in the skin of HSV infected mice when EOMES and T-bet were expressed at high levels (Mackay et al., 2015). Consistently, others found that reduced EOMES and T-bet expression facilitated TRM development (Laidlaw et al., 2014). To further understand how these transcription factors support memory formation, we investigated whether EOMES was regulated via SMAD4. Our experiments confirmed that EOMES was induced via SMAD4 and downregulated by canonical TGF\u03b2 signaling. ChIP-Seq data show that there are multiple SMAD4-binding sites in the Eomes loci.\n\nMany transcription factors have important functions during CD8 T cell differentiation. The major players include Zeb1 and Zeb2, which are homologous proteins that serve opposing functions during memory formation and are inversely regulated by TGF\u03b2. Zeb1 expression increases in maturing memory CD8+ T cells during exposure to TGF\u03b2, whereas Zeb2 is downregulated (Dominguez et al., 2015; Guan et al., 2018). Other studies indicate that DNA-binding inhibitors Id2 and Id3 also have reciprocal functions during fate determination of activated CTLs (Ji et al., 2011; Omilusik et al., 2018; Yang et al., 2011). Whether SMAD4 alters the expression levels of these transcription factors, or other epigenetic regulators, during CD8 T cell differentiation needs to be further investigated.\n\n## Materials and methods\n\n### Mice and reagents\n\nMice were bred and housed at the University of Connecticut Health Center in accordance with institutional guidelines. Experiments were performed in accordance with protocols approved by the UCONN Health Institutional Animal Care and Use Committee (IACUC). Mice that express Cre-recombinase under the control of the distal-Lck promoter (dLck) were used to generate mice that lack R-SMAD2 (S2KO), R-SMAD3 (S3KO), co-SMAD4 (S4KO), EOMES (EKO), and TGF\u03b2 receptor II (TR2KO). S4KO and TR2KO were further crossed with OTI mice that express a transgenic antigen receptor specific for the SIINFEKL peptide presented on H-2Kb.\n\nVirus stocks were grown in fertilized chicken eggs (Charles River) and stored as described previously. Between 8 and 20 weeks after birth, anesthetized mice were infected intranasally (i.n.) with either 2 \u00d7 103 plaque-forming units (PFU) X31-OVA, or 5 \u00d7 103 colony-forming units (CFU) of recombinant L. monocytogenes expressing chicken ovalbumin (LM-OVA).\n\n### Sample preparation for adoptive transfer and flow cytometry\n\nNaive CD8 T cells were isolated from SLO using Mojosort isolation kits (Biolegend, Dedham MA). Mice received 5 \u00d7 103 congenically marked donor cells by intravenous (i.v.) injection given 48 hr before infection. To identify bloodborne CTLs by IV staining, mice were injected with 1 \u03bcg anti-CD8\u03b2 in 200 \u00b5l PBS and sacrificed 5 min later. For flow cytometry, chopped lung tissue was incubated at 37\u00b0C for 90 min in RPMI with 5% fetal bovine serum (FBS) and 150 U/ml collagenase (Life Technologies, Rockville, MD, USA). Nonadherent cells were enriched on Percoll density gradients (44/67%) spun at 1200 \u00d7 g for 20 min. Lymphocytes were incubated with antibodies that block Fc-receptors (15 min at RT). Antigen-experienced CD8 T cells were identified using high CD11a/CD44 expression and analyzed with antibodies specific for CD103, KLRG1, and CD62L. For intracellular staining, lymphocytes were analyzed using True Nuclear transcription factor buffer (Biolegend, Dedham, MA). Permeabilized cells were stained with antibodies specific for T-bet and EOMES. To monitor cell proliferation, cells were labeled with CFSE dye before transfer to C57BL/6 mice. Alternatively, mice received a single injection of BrdU by i.p. injection at 30 dpi and donor cells were analyzed 3\u20136 hr later, using BrdU analysis Kits (BD Pharmingen). Stained cells were analyzed using a BD LSRII with FACSDiva V8.0 (BD Biosciences) and processed using Flowjo and GraphPad Prism software. To visualize intracellular proteins by imaging cytometry, fixed cells were permeabilized using 90% ice-cold methanol for intracellular staining. CTLs were imaged at \u00d760 normal magnification using an Amnis ImagestreamX MKII flow cytometer. Similarity scores were calculated using Amnis Ideas V6.2 (Luminex) software. Higher similarity scores indicate protein translocation into the nucleus.\n\n### Cell culture\n\nNaive CD8 T cells were grown in RPMI with 10% FBS, L-glutamine, \u03b2-mercapthoethanol, sodium pyruvate, HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid), and antibiotics. For TcR stimulation, CTLs were stimulated with plate-bound anti-CD3/CD28 (1 \u03bcg/ml) and rIL-2 (20 U/ml). After 48 hr, CTLs were transferred to new wells for cytokine stimulation without TcR stimulation. Replicate wells were supplemented with rIL-2 (20 U/ml), ALK5 inhibitor (SB431542, 10 \u03bcM/ml), and TGF\u03b2 (10 ng/ml).\n\n### RNA-sequencing and GSEA\n\nMessenger-RNA was extracted from purified CTLs using RNAeasy Plus Mini Kits (Qiagen, Hilden Germany) and sequenced by Otogenetics Corporation (Atlanta, GA). RNA-sequences from OTI-S4KO and OTI-Ctrl cells are available in the GEO database (accession # GSE151637). Data were analyzed using Tophat2, Cufflinks, and Cuffdiff software (DNAnexus, Mountain View, CA). Transcriptional changes greater than twofold (Log2 fold change >1 or <\u22121, p < 0.05, false discovery rate <0.05) were used to select genes for Ingenuity pathway (Qiagen, Hilden Germany) and GSEA (Broad Institute, San Diego, CA) (Subramanian et al., 2005). Differentially expressed genes were compared with published datasets, using GEO accession #s GSE39152 (Wakim et al., 2012), GSE107281 (Milner et al., 2017), GSE70813 (Mackay et al., 2016), and GSE125471 (Nath et al., 2019). Normalized enrichment scores and false discovery rates were visualized using ggplot2 package in R.\n\n### ChIP-Seq data analysis\n\nPreviously published ChIP-Seq data of in vitro activated CD8 T cells (Accession number GSE135533) were obtained from Gene Expression Omnibus (GEO) repository at the National Center for Biotechnology Information (NCBI). The data were mapped to the mouse reference genome (mm39) using Bowtie2. The SAM files were further processed, sorted, and filtered for uniquely mapping reads using Samtools. Peakcalling was performed using MACS2. Files in bedGraph format were converted to bigWig using bedGraphToBigWig program from University of California, Santa Cruz (UCSC) genome browser and visualized using integrative genomics viewer (IGV).\n\n### RNA isolation for quantitative PCR analysis\n\nTotal RNA was extracted using Quick RNA MiniPrep Plus kit (Zymo Research). The quantity and quality of the RNA were analyzed using NanoDrop. Total RNA was reverse transcribed using M-MuLV reverse transcriptase (New England Biolabs) following the manufacturer\u2019s instruction. Quantitative real-time PCR was performed using 2\u00d7 SYBR green master mix (Bimake). Relative gene expression was determined using ddCt method with Ribosomal protein L9 (rpl9) as reference. Sequences for primers are shown in the supplementary data (Supplementary file 1).\n\n### Retroviral transduction\n\nAn MSCV-IRES-GFP (pMig)-EOMES vector (RV-EOMES-GFP) was used for ectopic gene expression in activated CD8 T cells (Pearce et al., 2003). Viruses were packaged in human embryonic kidney (HEK) 293 cells and viral supernatants were processed using Retro-X concentrators (Takara Bio. USA Inc). Naive CD8 T cells were purified by negative selection and stimulated in vitro with plate-bound anti-CD3/CD28. After 48 hr, activated CD8 T cells were spin infected (1800 \u00d7 g, 60 min, 30\u00b0C) using concentrated supernatants and polybrene (1 \u03bcg/ml). After 3 hr, the washed cells were cultured in complete RPMI.\n\n### Statistical analysis\n\nTo evaluate variability between biological replicates, p values were calculated using two-way ANOVA followed by Tukey\u2019s multiple comparison tests, using GraphPad Prism. Horizontal lines indicate comparisons between samples. For in vitro experiments, variability between technical replicates was evaluated using Student\u2019s t tests calculated using GraphPad Prism. Experiments were repeated two or three times, based on outcomes.\n",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "47147e33-d8ea-466e-ba17-1e8e42c1dbcc",
+      "submission_id": "9a073fe1-2bbd-49b7-9965-660520670113",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Urszula Krzych, https://ror.org/0145znz58 Walter Reed Army Institute of Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76457.sa0](https://doi.org/10.7554/eLife.76457.sa0)\n\nThis manuscript provides important information concerning the impact of TGFB and SMAD factors on antiviral CD8 T cell differentiation and memory formation. The new and interesting data from in vivo performed experiments provide solid evidence in support of their claims. Overall, this is an important study with an impressive amount of data. The only weak point is the clarity of the overall goal/message of the study as stated in the introduction.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Urszula Krzych, https://ror.org/0145znz58 Walter Reed Army Institute of Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76457.sa1](https://doi.org/10.7554/eLife.76457.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"SMAD4 and TGF\u03b2 are architects of inverse genetic programs during fate-determination of antiviral memory CD8 T cells\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nSpecifically, the authors are commended for their presentation of a rather extensive body of well performed experiments concerning reciprocal regulation of memory CD8 T cell development by SMAD4 and TGFbeta. Although most of the results support their conclusions, there is a critical absence of results from in vivo experiments that would yield results validating the in vitro observations. A potential impact of the different KO strains on naive T cell biology also needs to be investigated to obviate any possible bias towards differentiation of circulating Trm cells. While the gene expression regulation is of interest, the functional consequences of the regulation remain uncertain. For those reason, the current work has been considered as preliminary and it would require a serious effort (additional experiments) for it to be deemed meritorious for publication in eLife.\n\nReviewer #1 (Recommendations for the authors):\n\n1. As the authors found SAMD4 regulated CD103 expression, and controlled the Trm/Tcm cells differentiation, was there any difference of Smad4 expression in the Tcm, CD69+CD103+ Trm, and CD69+CD103- Trm?\n\n2. For most of times, the authors only showed percentage data, please include the cell number/magnitude of responses as well.\n\n3. The author should clarify if the CD8 T cells in Figure 1 were tissue resident distinguished with i.v. antibody injection, for the mixed circulating and resident CD8 T cells may not be completely distinguished with surface marker expression levels.\n\n4. The authors suggested that Smad4 altered homing receptor expression via a TGFb independent pathways by Figure 1A, however, I noticed that the DKO cells showed ameliorated features compared with the S4KO cells, and Figure 3 also suggested that TGFb signaling was involved in the phenotypes of S4KO cells.\n\n5. Did the S4KO affect the effector function of CD8 T cells?\n\n6. In the Figure 2F and 2G, the authors claimed that the EOMES expression downregulated in both spleen and lung, but T-bet rarely changed; however, I found the T-bet expression changed significantly in the lung, but EOMES didn't show much difference in the lung.\n\n7. SMAD2/3 are the downstream of TGFbR2, however, in the Figure 3C, why S4TR2 DKO cells showed different features with S34 DKO?\n\n8. Figure 3C and 3D showed the canonical TGFb pathways and SMAD4 cooperatively regulated CD103, was Eomes be regulated in the same way?\n\n9. I suggest the authors to examine the effects of SMAD4 expression in CD8 T cells to provide the gain-of-function data.\n\nReviewer #2 (Recommendations for the authors):\n\nThe work is nicely performed. Enthusiasm is dampened by the high number of studies that are performed in vitro. For instance, T cells transduced with LV overexpressing transcription factors (e.g. Eomes) could be transferred and tracked in vivo.\n\nThere is a major concern on the impact of the different KO strains on naive T cell biology, i.e., whether the naive cells are impacted compared to control cells, for instance if they are already biased towards differentiation to circulating of Trm cells. More investigation in this regard (flow cytometry of several molecules, especially activation, or RNA seq) would be appreciated. Has TGFbRII KO an impact (e.g., autoimmunite traits) on the function of peripheral T cells?\n\nBar graphs should show values referred to single animals, not aggregate data, so to appreciate variability\n\nFlow cytometry plots should have scales, so to check if gates are the same (for instance, it seems that different gates were used to define positive expression od CD103 in Figure 5B).\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 The introduction summarizes a wide range of information, but does not appear to contain a specific research question or goal. On the second page of the intro, a sentence states \"To further define how SMAD-dependent signaling pathway alter the migratory properties of pathogen-specific CTLs, we have used \u2026\". It seems like this might be the main aim of this study but migration/retention is never formally addressed. Further, the title seems to indicate the focus of the manuscript will be on differentiation of memory T cells, but much of the key experiments are performed in vitro with aCD3/CD28 activated cells. Specifying the goal of the research may help clarify the rationale and conclusions of the work.\n",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a6accc6d-524a-4bcd-8228-6f55ae41256c",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C1",
+      "claim": "TGF\u03b2 is an important differentiation factor for cytotoxic T lymphocytes (CTLs) and alters the expression levels of several homing receptors during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Transforming growth factor \u03b2 (TGF\u03b2) is an important differentiation factor for cytotoxic T lymphocytes (CTLs) and alters the expression levels of several of homing receptors during infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and is supported by the experimental data presented throughout the manuscript showing TGF\u03b2's effects on various homing receptors.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "0c7d507a-0857-4a91-932d-3e24ed40b205",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C2",
+      "claim": "SMAD4 is part of the canonical signaling network used by members of the transforming growth factor family.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD4 is part of the canonical signaling network used by members of the transforming growth factor family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is established knowledge about SMAD signaling pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "280d841a-fc2e-4dd8-97f4-45a28d1619a4",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C3",
+      "claim": "SMAD4 and TGF\u03b2RII are essential components of opposing signaling mechanisms that cooperatively regulate genes determining whether CTLs circulate or settle in peripheral tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that these molecules are essential components of opposing signaling mechanisms, and cooperatively regulate a collection of genes that determine whether specialized populations of pathogen-specific CTLs circulate around the body, or settle in peripheral tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the genetic experiments and phenotypic analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "b8cade6f-fe76-464f-8dbc-89a5f4d57a55",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C4",
+      "claim": "TGF\u03b2 uses a canonical SMAD-dependent signaling pathway to downregulate Eomesodermin (EOMES), KLRG1, and CD62L.",
+      "claim_type": "EXPLICIT",
+      "source": "TGF\u03b2 uses a canonical SMAD-dependent signaling pathway to downregulate Eomesodermin (EOMES), KLRG1, and CD62L, while CD103 is induced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vitro and in vivo experimental data showing the effects of TGF\u03b2 on these markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "ac4b415d-b53d-4dc5-94e5-0d4ffa4573fd",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C5",
+      "claim": "TGF\u03b2 induces CD103 expression via a canonical SMAD-dependent signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "TGF\u03b2 uses a canonical SMAD-dependent signaling pathway to downregulate Eomesodermin (EOMES), KLRG1, and CD62L, while CD103 is induced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through in vitro experiments with TGF\u03b2 stimulation and analysis of CD103 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "aff3aa33-53c2-4388-8f40-ca8407182319",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C6",
+      "claim": "EOMES, KLRG1, CX3CR1, and CD62L are positively regulated via SMAD4.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in vivo and in vitro data show that EOMES, KLRG1, CX3CR1, and CD62L are positively regulated via SMAD4, while CD103 and Hobit are downregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments comparing SMAD4-deficient and control CTLs both in vitro and in vivo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "61e9bfa7-b60d-4b22-894e-9932210de19a",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C7",
+      "claim": "CD103 and Hobit are downregulated via SMAD4.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in vivo and in vitro data show that EOMES, KLRG1, CX3CR1, and CD62L are positively regulated via SMAD4, while CD103 and Hobit are downregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through qPCR and flow cytometry analyses of SMAD4-deficient cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "5004f360-e6ab-4823-baa0-87ec551cf631",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C8",
+      "claim": "Signaling via SMAD4 promotes formation of long-lived terminally differentiated CTLs that localize in the vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "Intravascular staining also shows that signaling via SMAD4 promotes formation of long-lived terminally differentiated CTLs that localize in the vasculature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by intravascular staining experiments showing the localization of SMAD4-dependent CTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "c877eb57-6c49-40a7-997d-16b11d6dde19",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C9",
+      "claim": "CD62L (L-selectin) is an adhesion molecule that interacts with carbohydrates expressed on the surface of activated endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CD62L (L-selectin) is an adhesion molecule that interacts with carbohydrates expressed on the surface of activated endothelial cells (Steeber et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "ebbe7419-0bfe-4f8e-89f2-36ac6d168e4e",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C10",
+      "claim": "Naive CD8 T cells leave the bloodstream after CD62L initiates an adhesion cascade that results in transendothelial migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Naive CD8 T cells leave the bloodstream after CD62L initiates an adhesion cascade that results in transendothelial migration (Ding et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "42a1dae2-0863-4d77-945e-3667cda1051e",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C11",
+      "claim": "IL-12 works with other inflammatory molecules to promote formation of short-lived effector T cells (TEFF) during the acute phase of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "During the acute phase of infection, interleukin (IL)-12 works with other inflammatory molecules to promote formation of short-lived effector T cells (TEFF) that are primed for rapid effector functions (Chowdhury et al., 2011; Cui et al., 2009; Keppler et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "fc2463e8-1f4e-4bdf-a58a-909b7ed37b4b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C12",
+      "claim": "Some pathogens elicit robust inflammatory responses and generate large populations of terminally differentiated TEFF cells that express KLRG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Some pathogens elicit robust inflammatory responses and generate large populations of terminally differentiated TEFF cells that express killer cell lectin-like receptor G1 (KLRG1) (Obar et al., 2011; Plumlee et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "73c8d998-c9f4-4117-85d1-6f29ef9b9b0a",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C13",
+      "claim": "KLRG1 is a membrane-bound adhesion molecule with an immunoreceptor tyrosine-based inhibitory motif in the cytoplasmic tail.",
+      "claim_type": "EXPLICIT",
+      "source": "which is a membrane-bound adhesion molecule with an immunoreceptor tyrosine-based inhibitory motif in the cytoplasmic tail (Ito et al., 2006; Rosshart et al., 2008; Tessmer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "2e04ee45-4072-479e-94bd-97d1ed1e5dc1",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C14",
+      "claim": "Stable KLRG1 expression identifies CTLs that do not convert to a conventional memory phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CTLs transiently express KLRG1 during antigen stimulation (Herndler-Brandstetter et al., 2018; Joshi et al., 2007), stable expression identifies CTLs that do not convert to a conventional memory phenotype (Dominguez et al., 2015; Plumlee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d4ccca58-53c0-4bbd-b3ae-cc8849d4a44c",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C16",
+      "claim": "SMAD4 is an adaptor molecule that chaperones phosphorylated receptor-activated SMAD proteins (R-SMADs) into the nucleus to modulate gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD4 is an adaptor molecule that chaperones phosphorylated receptor-activated SMAD proteins (R-SMADs) into the nucleus to modulate gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SMAD4 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "603ae4c6-53a3-4065-b5c7-9b17a4506d23",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C17",
+      "claim": "Loss of signaling via SMAD4 caused defects during formation of TEFF and TCM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive phenotypic changes indicated that loss of signaling via SMAD4 caused defects during formation of TEFF and TCM cells (Cao et al., 2015; Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "b246c8a0-0915-44af-89e2-3aa4782881ec",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C18",
+      "claim": "SMAD4 positively regulates EOMES expression and induces phenotypic changes that indicate progression toward a central memory phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that during transcriptional programming of newly activated CTLs, SMAD4 positively regulates EOMES expression and induces phenotypic changes that indicate progression toward a central memory phenotype, while formation of TRM cells is inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "3982b088-4ac2-41c4-b6a9-d0621ceb4647",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C19",
+      "claim": "SMAD4 inhibits formation of TRM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that during transcriptional programming of newly activated CTLs, SMAD4 positively regulates EOMES expression and induces phenotypic changes that indicate progression toward a central memory phenotype, while formation of TRM cells is inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "103ee203-3ee3-4453-a3d1-74978169fdfc",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C20",
+      "claim": "Very few SMAD4-deficient CTLs expressed KLRG1 or CD62L during IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "When we analyzed pathogen-specific CTLs during IAV infection, very few SMAD4-deficient CTLs expressed KLRG1 or CD62L, while abnormal CD103 expression was detected on CTLs in the spleen (Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "defa7c94-c946-4736-8221-0ae5d41367f5",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C21",
+      "claim": "Abnormal CD103 expression was detected on SMAD4-deficient CTLs in the spleen during IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "When we analyzed pathogen-specific CTLs during IAV infection, very few SMAD4-deficient CTLs expressed KLRG1 or CD62L, while abnormal CD103 expression was detected on CTLs in the spleen (Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "b32e838b-6075-4a00-87d0-fecc6caf7922",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C22",
+      "claim": "SMAD4-deficient CTLs proliferated and expressed IFN\u03b3 and TNF\u03b1 at similar levels as wildtype CTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the mutation primarily influenced homing-receptor expression, since SMAD4-deficient CTLs proliferated and expressed IFN\u03b3 and TNF\u03b1 at similar levels as wildtype CTLs (Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "65f70415-d0d9-4997-873e-0c14264b5a56",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C23",
+      "claim": "Neuraminidase activates TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "To elicit a mild inflammatory response in the lungs, mice were infected with IAV (X31-OVA) as neuraminidase activates TGF\u03b2 (Schultz-Cherry and Hinshaw, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "efea4541-27f8-4b95-9c00-b1c129902a6b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C24",
+      "claim": "KLRG1 is negatively regulated by TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies show that KLRG1 is negatively regulated by TGF\u03b2 (Sanjabi et al., 2009; Schwartzkopff et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "31f49f53-6a38-411a-afff-6c2e455d06d6",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C25",
+      "claim": "Latent-TGF\u03b2 can be activated by viral neuraminidase.",
+      "claim_type": "EXPLICIT",
+      "source": "Since latent-TGF\u03b2 can be activated by viral neuraminidase (Schultz-Cherry and Hinshaw, 1996), only small numbers of OTI-TR2Ctrl cells expressed KLRG1 after IAV infection, whereas most OTI-TR2KO cells expressed KLRG1 at high levels (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature and supported by experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d1dc1f6b-c036-4b07-8e6b-97c8ca0f6570",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C26",
+      "claim": "Only small numbers of OTI-TR2Ctrl cells expressed KLRG1 after IAV infection, whereas most OTI-TR2KO cells expressed KLRG1 at high levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Since latent-TGF\u03b2 can be activated by viral neuraminidase (Schultz-Cherry and Hinshaw, 1996), only small numbers of OTI-TR2Ctrl cells expressed KLRG1 after IAV infection, whereas most OTI-TR2KO cells expressed KLRG1 at high levels (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "aa4ff0f8-10b1-46c3-84de-1eac424c847d",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C27",
+      "claim": "There was little difference between percentages of OTI-TR2Ctrl and OTI-TR2KO that expressed KLRG1 during the early stages of infection with LM-OVA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was little difference between percentages OTI-TR2Ctrl and OTI-TR2KO that expressed KLRG1 during the early stages of infection with LM-OVA (Figure 1B), indicating minimal influence of TGF\u03b2 during bacterial infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "21b829ba-8005-4c5b-aa41-4820ebc8c6e5",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C28",
+      "claim": "There is minimal influence of TGF\u03b2 during bacterial infection with LM-OVA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was little difference between percentages OTI-TR2Ctrl and OTI-TR2KO that expressed KLRG1 during the early stages of infection with LM-OVA (Figure 1B), indicating minimal influence of TGF\u03b2 during bacterial infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data showing similar KLRG1 expression in control and TGF\u03b2RII-deficient cells during LM infection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d8aab8a7-175f-4a50-8130-eec8e662ef16",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C29",
+      "claim": "OTI-S4KO cells mostly lacked KLRG1 and CD62L expression after infection with both X31-OVA and LM-OVA pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "The OTI-S4KO cells mostly lacked KLRG1 and CD62L expression after infection with both pathogens, indicating a defect during formation of TEFF and TCM cells (Cao et al., 2015; Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "864432d0-d313-40a8-8ce2-23ca9ecf7824",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C30",
+      "claim": "OTI-S4KO cells have a defect during formation of TEFF and TCM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The OTI-S4KO cells mostly lacked KLRG1 and CD62L expression after infection with both pathogens, indicating a defect during formation of TEFF and TCM cells (Cao et al., 2015; Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phenotypic data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "1987115a-c51d-4582-bc37-a23ab1e03e23",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C31",
+      "claim": "OTI-S4KO and OTI-S4TR2-DKO cells expressed KLRG1 and CD62L at similar levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The OTI-S4KO and OTI-S4TR2-DKO cells expressed KLRG1 and CD62L at similar levels, whereas the increase in CD103 expression was slightly more pronounced on S4KO cells than OTI-S4TR2-DKO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing the two cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "c364b328-7fad-41b7-91c4-a9c555e35b87",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C32",
+      "claim": "The increase in CD103 expression was slightly more pronounced on S4KO cells than OTI-S4TR2-DKO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The OTI-S4KO and OTI-S4TR2-DKO cells expressed KLRG1 and CD62L at similar levels, whereas the increase in CD103 expression was slightly more pronounced on S4KO cells than OTI-S4TR2-DKO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing the two cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "1ea89587-5b6d-47b5-bf29-23dadd67d6d1",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C33",
+      "claim": "SMAD4 regulates activated CTLs via a TGF\u03b2-independent pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with other studies and show that SMAD4 regulates activated CTLs via a TGF\u03b2-independent pathway (Igalouzene et al., 2022; Wu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "2e6ef829-87f3-4b1e-861c-6b56ab15305f",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C34",
+      "claim": "OTI-S4TR2DKO and OTI-S4TR2Ctrl cells proliferated at similar rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that OTI-S4TR2DKO and OTI-S4TR2Ctrl cells proliferated at similar rates, indicating normal T cell priming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by CFSE dilution and BrdU incorporation data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "931ad00f-47f5-4b32-9a7e-8b313b939b2b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C35",
+      "claim": "OTI-S4TR2DKO and OTI-S4TR2Ctrl cells show normal T cell priming.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that OTI-S4TR2DKO and OTI-S4TR2Ctrl cells proliferated at similar rates, indicating normal T cell priming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar proliferation rates observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d4796964-7ef6-4102-9db1-03dff092064e",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C36",
+      "claim": "The majority of OTI-Ctrl cells in the lungs expressed KLRG1 and GFP (CX3CR1) at high levels and were primarily located inside the blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of OTI-Ctrl cells in the lungs expressed KLRG1 and GFP at high levels (overlaid histogram and bar graph) (Figure 1C) and were primarily located inside the blood vessels (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by intravascular staining data shown in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "3512f121-53e9-4fed-ad4c-baa0da603b54",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C37",
+      "claim": "OTI-SKO cells expressed KLRG1 and GFP (CX3CR1) at intermediate/low levels, and some cells were located in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, OTI-SKO cells expressed KLRG1 and GFP at intermediate/low levels (Figure 1C), and some cells were located in the tissue (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by intravascular staining data shown in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "11ab06ff-22c5-4534-b893-d30e3838e74e",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C38",
+      "claim": "SMAD4 acts as a catalyst for terminal differentiation of CTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since small numbers of SMAD4-deficient CTLs expressed KLRG1 and CX3CR1 at high levels, the data indicate that SMAD4 acts as a catalyst for terminal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that SMAD4-deficient cells show reduced terminal differentiation markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "3913d00e-353d-4ee8-8659-4fa3e5d50fec",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C39",
+      "claim": "S4TR2-DKO mice experienced more severe disease than controls after IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "After IAV infection, S4KO mice experienced more severe disease than the controls (Hu et al., 2015). Since OTI-S4KO and OTI-S4TR2-DKO cells displayed similar phenotypes during infection, we used weight loss to measure of protective immunity. S4TR2-DKO and S4TR2-Ctrl mice were infected with X31-OVA and weight changes were recorded daily (Figure 1\u2014figure supplement 3). As expected, the S4TR2-DKO mice lost more weight and recovered from infection more slowly than the controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by weight loss data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "75629696-6957-4d8c-a634-c4b5e6930e14",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C40",
+      "claim": "Protection against reinfection with IAV was not dependent on SMAD4 or TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "After 30 days, the immune mice (and uninfected controls) were challenged with different strain of IAV (WSN-OVAI) (Figure 1\u2014figure supplement 4). None of the immune mice experienced substantial weight loss after infection with WSN-OVAI, indicating that protection against reinfection was not dependent on SMAD4 or TGF\u03b2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by challenge experiment data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "db68246b-69d7-425e-9560-a65899c862d3",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C41",
+      "claim": "TGF\u03b2 and activins signal via R-SMAD2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "TGF\u03b2 and activins signal via R-SMAD2/3, while bone morphogenic proteins and related growth differentiation factors signal via R-SMAD1/5/8 (Fink et al., 2003; Takimoto et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "24f8ebd5-36a0-475a-99ed-b5cf7d3a61c3",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C42",
+      "claim": "Bone morphogenic proteins and related growth differentiation factors signal via R-SMAD1/5/8.",
+      "claim_type": "EXPLICIT",
+      "source": "TGF\u03b2 and activins signal via R-SMAD2/3, while bone morphogenic proteins and related growth differentiation factors signal via R-SMAD1/5/8 (Fink et al., 2003; Takimoto et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "59fc00b3-30ad-48e9-84ef-622df6458b18",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C43",
+      "claim": "SMAD4 facilitates signaling by both TGF\u03b2/activins and bone morphogenic proteins by chaperoning complexes of phosphorylated R-SMADs into the nucleus for gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD4 facilitates signaling by both groups of cytokines and chaperones complexes of phosphorylated R-SMADs into the nucleus for gene regulation (Massagu\u00e9 et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "f008d8ae-f29d-45ca-b31d-bc81d75cbc4b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C44",
+      "claim": "When CTLs are stimulated with TGF\u03b2, the receptor phosphorylates R-SMAD3 and induces CD103 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "When CTLs are stimulated with TGF\u03b2, the receptor phosphorylates R-SMAD3 and induces CD103 expression (Yang et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "b8dca871-44ac-4fd0-bbda-f4e18b1e23c0",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C45",
+      "claim": "After cancer cells were stimulated with TGF\u03b2, R-SMAD2 and R-SMAD3 were phosphorylated and formed heterodimers that entered the nucleus in the absence of SMAD4.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies show some redundancy within the SMAD signaling network. After cancer cells were stimulated with TGF\u03b2, R-SMAD2 and R-SMAD3 were phosphorylated and formed heterodimers that entered the nucleus in the absence of SMAD4 (Fink et al., 2003; Li et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "dece4468-97f9-4965-9be6-82439a4a195c",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C46",
+      "claim": "Control CTLs did not express CD103 during culture with rIL-2, while this marker was induced during stimulation with TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the control CTLs did not express CD103 during culture with rIL-2 (plus and minus ALK5 inhibitor), while this marker was induced during stimulation with TGF\u03b2 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro culture data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "1b0d6080-3389-429a-bd5b-99ded9e6f22d",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C47",
+      "claim": "The same pattern of CD103 expression was observed when CTLs lacked R-SMAD2 (S2KO) or R-SMAD3 (S3KO).",
+      "claim_type": "EXPLICIT",
+      "source": "The same pattern of CD103 expression was observed when CTLs lacked R-SMAD2 (S2KO) or R-SMAD3 (S3KO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro culture data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "de94f175-8555-45e9-b32c-f1855f74b212",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C48",
+      "claim": "S23DKO and TR2KO cells both lacked CD103 expression under all conditions analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, S23DKO and TR2KO cells both lacked CD103 expression under all conditions analyzed, whereas S4KO, S4TR2KO, and S34KO cells expressed CD103 at intermediate levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro culture data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "0090f9e7-99e6-40f3-a01c-bc2fb745ab74",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C49",
+      "claim": "S4KO, S4TR2KO, and S34KO cells expressed CD103 at intermediate levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, S23DKO and TR2KO cells both lacked CD103 expression under all conditions analyzed, whereas S4KO, S4TR2KO, and S34KO cells expressed CD103 at intermediate levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro culture data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "2855438c-7d50-4eca-a69e-ae7b000b1596",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C50",
+      "claim": "SKI protein is a nuclear proto-oncogene that inhibits TGF\u03b2 signaling through interactions with SMAD proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Sloan Kettering Institute (SKI) protein is a nuclear proto-oncogene that inhibits TGF\u03b2 signaling through interactions with SMAD proteins (Sun et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "b2b35ccf-0cb8-4d5f-aa1e-94998780dffa",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C51",
+      "claim": "SMAD4 interacts with SKI and creates heterodimers that repress Itgae expression (\u03b1E integrin/CD103) in CTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "A prior report found that SMAD4 interacts with SKI and creates heterodimers that repress Itgae expression (\u03b1E integrin/CD103) in CTLs (Wu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "fe059292-53ca-4511-be45-b6eb7878d3df",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C52",
+      "claim": "S4KO cells expressed CD103 at higher levels than S4Ctrl cells during stimulation with rIL-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, S4KO cells expressed CD103 at higher levels than S4Ctrl cells during stimulation with rIL-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro culture data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "c0e14153-0d4b-4555-852d-035bde885c44",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C53",
+      "claim": "CD103 expression increased when S4KO cells were stimulated with TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CD103 expression increased when S4KO cells were stimulated with TGF\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro culture data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "475e125c-f593-4073-a004-24a22b0abfb8",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C54",
+      "claim": "CD103 expression did not change when S34KO and S4TR2-DKO cells were stimulated with TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, CD103 expression did not change when S34KO and S4TR2-DKO cells were stimulated with TGF\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro culture data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "60c84ee1-87fe-44fd-a629-777ef7d2fc46",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C55",
+      "claim": "R-SMAD2/3 are required for TGF\u03b2 to upregulate CD103 in the absence of SMAD4.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that R-SMAD2/3 are required for TGF\u03b2 to upregulate CD103 in the absence of SMAD4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that S34KO and S4TR2-DKO cells do not upregulate CD103 in response to TGF\u03b2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "f6646320-773b-4d36-9670-1a80e23c563b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C56",
+      "claim": "When R-SMAD2 is absent, R-SMAD3 cooperates with SMAD4 to upregulate CD103 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "When R-SMAD2 is absent, R-SMAD3 cooperates with SMAD4 to upregulate CD103 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing CD103 expression patterns in different mutant cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d4034133-2379-475d-9552-a3e8583f2d65",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C57",
+      "claim": "R-SMAD2/3 entered the nucleus without SMAD4.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging flow cytometry confirmed that R-SMAD2/3 entered the nucleus without SMAD4 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging flow cytometry data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "e5d18737-7637-483b-9c7d-a4b0964b6938",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C58",
+      "claim": "TGF\u03b2 inhibits TCM formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since TGF\u03b2 inhibits TCM formation (Takai et al., 2013), we analyzed the cultured CTLs for CD62L (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "2d08f42a-0157-4ade-9071-139d754e601f",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C59",
+      "claim": "Between 50% and 60% of the control CTLs reexpressed CD62L when cultured with rIL-2 alone, and the percentages increased to approximately 100% when the ALK5 inhibitor was used.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 50% and 60% of the control CTLs reexpressed CD62L when cultured with rIL-2 alone, and the percentages increased to approximately 100% when the ALK5 inhibitor was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro culture data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "755b9315-b44e-45e4-b98f-94ef48494d0b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C60",
+      "claim": "Only 25% of control CTLs expressed CD62L when cultured with TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, only 25% of control CTLs expressed CD62L when cultured with TGF\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro culture data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d68f59d0-07bd-4a0c-9fd6-a1fab8141f94",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C61",
+      "claim": "50% of S4KO, S34DKO, and S4TR2DKO cells expressed CD62L during culture with IL-2, but the numbers did not change when the ALK5 inhibitor, or exogenous TGF\u03b2, was used.",
+      "claim_type": "EXPLICIT",
+      "source": "Although 50% of S4KO, S34DKO, and S4TR2DKO cells expressed CD62L during culture with IL-2, the numbers did not change when the ALK5 inhibitor, or exogenous TGF\u03b2, was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro culture data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "7f6116e4-40b7-4d4a-bc9d-56b9886225c7",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C62",
+      "claim": "TR2KO and S23KO cells expressed CD62L at high levels under all conditions analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "TR2KO and S23KO cells expressed CD62L at high levels under all conditions analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro culture data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "0b9cb33d-d3b4-420b-944e-2b2482527893",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C63",
+      "claim": "SMAD4 has dual functions during regulation of CD62L, since blocking TGF\u03b2 signaling was not sufficient to restore CD62L expression in the absence of SMAD4.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that SMAD4 has dual functions during regulation of CD62L, since blocking TGF\u03b2 signaling was not sufficient to restore CD62L expression in the absence of SMAD4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that SMAD4-deficient cells do not restore CD62L expression when TGF\u03b2 signaling is blocked.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "6f972490-5b12-4b38-bb58-2426e8ec34aa",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C64",
+      "claim": "Between 50% and 90% of the control CTLs expressed KLRG1 at 8 dpi with LM-OVA and the percentages did not change in the absence of either R-SMAD2 (S2KO) or R-SMAD3 (S3KO).",
+      "claim_type": "EXPLICIT",
+      "source": "Between 50% and 90% of the control CTLs expressed KLRG1 and the percentages did not change in the absence of either R-SMAD2 (S2KO) or R-SMAD3 (S3KO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo infection data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "8ae3fb65-d0f7-4ea5-8f23-57de6c5beeed",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C65",
+      "claim": "Large percentages of CTLs expressed KLRG1 (80\u201390%) in the absence of R-SMAD2/3 (S23DKO), or a functional TGF\u03b2 receptor (TR2KO and ALK5KO).",
+      "claim_type": "EXPLICIT",
+      "source": "Large percentages of CTLs expressed KLRG1 (80\u201390%) in the absence of R-SMAD2/3 (S23DKO), or a functional TGF\u03b2 receptor (TR2KO and ALK5KO), confirming that expression was repressed by TGF\u03b2 (Sanjabi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo infection data shown in Figure 2C and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d1c77012-0839-4479-87a5-33a2c4253877",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C66",
+      "claim": "In the absence of SMAD4 (S4KO, S34DKO, and S4TR2DKO) only small percentages of CTLs expressed KLRG1, while the portion of CD103 expressing cells significantly increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely in the absence of SMAD4 (S4KO, S34DKO, and S4TR2DKO) only small percentages of CTLs expressed KLRG1, while the portion of CD103 expressing cells significantly increased (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo infection data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "27534a34-b9a0-48c4-aa27-70d5abcd7504",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C67",
+      "claim": "SMAD4 promotes formation of terminally differentiated TEFF cells via a mechanism that does not require TGF\u03b2, or R-SMAD2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that SMAD4 promotes formation of terminally differentiated TEFF cells via a mechanism that does not require TGF\u03b2, or R-SMAD2/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that SMAD4-deficient cells have reduced TEFF formation even in the absence of TGF\u03b2 signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d94b9b98-bb0a-4ad8-baf5-66b6754e7882",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C68",
+      "claim": "OTI-S4KO cells expressed EOMES (Eomes) and CD62L (Sell) at lower levels than the controls, while Itgae was upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that OTI-S4KO cells expressed EOMES (Eomes) and CD62L (Sell) at lower levels than the controls, while Itgae was upregulated (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-sequencing data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "fd22efc1-e8c1-4cb2-a437-d425be0cbea5",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C69",
+      "claim": "Many signature genes that are associated with TRM cells in the small intestine were upregulated in OTI-S4KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Many signature genes that are associated with TRM cells in the small intestine were upregulated in OTI-S4KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GSEA analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "51ba1431-d5f3-4c99-995f-3c66f1010ffa",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C70",
+      "claim": "The transcriptional profile of OTI-S4KO cells correlates with TRM cells isolated from the brain and liver, as well as CTLs that were stimulated with TGF\u03b2 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We found similar correlations with TRM cells isolated from the brain and liver, as well as CTLs that were stimulated with TGF\u03b2 in vitro (Mackay et al., 2016; Milner et al., 2017; Nath et al., 2019; Wakim et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GSEA analysis shown in Figure 3D and citations to published datasets.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "b4fa76e1-960b-49aa-9c98-940edaed2ab1",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C71",
+      "claim": "Early signaling via SMAD4 impedes differentiation toward a resident memory phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "These correlations indicate that early signaling via SMAD4 impedes differentiation toward a resident memory phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the GSEA data showing that SMAD4-deficient cells have a transcriptional profile similar to TRM cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "fec44401-efbe-47be-b92a-103229ac051c",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C72",
+      "claim": "S4KO cells produced more Itgae transcripts than S4Ctrl cells during culture with IL-2 and expression increased when TGF\u03b2 was added.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the S4KO cells produced more Itgae transcripts than S4Ctrl cells during culture with IL-2 and expression increased when TGF\u03b2 was added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "009a3e13-115b-4777-b650-32ed9ab98806",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C73",
+      "claim": "Hobit promotes formation of TRM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, homolog of Blimp1 (Hobit) promotes formation of TRM cells (Mackay et al., 2016; Parga-Vidal et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "16b279d7-7bf1-41e8-b60a-ee61f27f74ef",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C74",
+      "claim": "EOMES is expressed in TCM cells and downregulated by TGF\u03b2 as TRM cells settle in peripheral tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "and EOMES is expressed in TCM cells (Intlekofer et al., 2005) and downregulated by TGF\u03b2 as TRM cells settle in peripheral tissues (Mackay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "7687a37e-ca4a-42fb-992e-a2ee370c7a78",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C76",
+      "claim": "The numbers of Hobit transcripts in the S4Ctrl cells decreased when the ALK5 inhibitor was used, while expression in S4KO cells did not change.",
+      "claim_type": "EXPLICIT",
+      "source": "The numbers of Hobit transcripts in the S4Ctrl cells decreased when the ALK5 inhibitor was used, while expression in S4KO cells did not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "a4f24d19-4e96-4675-96c6-a2b51302dfdc",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C77",
+      "claim": "Hobit is induced by TGF\u03b2 and downregulated via SMAD4.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Hobit is induced by TGF\u03b2 and downregulated via SMAD4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the qPCR data showing differential Hobit expression in response to TGF\u03b2 and in SMAD4-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "ca22800c-fbea-4cd1-8c4c-bae8d2ec8b72",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C78",
+      "claim": "OTI-S4KO cells produced fewer Klrg1 transcripts than OTI-S4Ctrl cells during the TEFF response at 8 dpi with LM-OVA.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that OTI-S4KO cells produced fewer Klrg1 transcripts than OTI-S4Ctrl cells during the TEFF response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "a4f910f5-5436-4249-a40b-2ffbb3adf88b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C79",
+      "claim": "KLF2 plays a central role in transcriptional regulation of CD62L during the CTL response.",
+      "claim_type": "EXPLICIT",
+      "source": "Krupple-like factor 2 (KLF2) plays a central role in transcriptional regulation of CD62L during the CTL response (Takada et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "ae6a1223-d2dc-4842-acbe-ce14ab9c8c3f",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C80",
+      "claim": "S4KO cells produced fewer Sell transcripts than S4Ctrl cells during culture with rIL-2.",
+      "claim_type": "EXPLICIT",
+      "source": "S4KO cells produced fewer Sell transcripts than S4Ctrl cells during culture with rIL-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "6ee2a0ab-e25c-478e-aee3-1ab113e6bd40",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C81",
+      "claim": "The numbers of Sell transcripts in S4Ctrl cells decreased during stimulation with TGF\u03b2, while expression in S4KO cells did not change.",
+      "claim_type": "EXPLICIT",
+      "source": "The numbers of Sell transcripts in S4Ctrl cells decreased during stimulation TGF\u03b2, while expression in S4KO cells did not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "e456883a-390c-42d5-b563-6457b29cc176",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C82",
+      "claim": "CD62L is induced via SMAD4, and downregulated by TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that CD62L is induced via SMAD4, and downregulated by TGF\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the qPCR data showing differential Sell expression in response to TGF\u03b2 and in SMAD4-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "e3a4d094-8e39-4cd4-bc52-1a6c74d0ac04",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C83",
+      "claim": "The numbers of Klf2 transcripts were not modified by SMAD4 or TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The numbers of Klf2 transcripts were not modified by SMAD4 or TGF\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "fb8440f2-c8db-49b3-9f94-292435c8e3a7",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C84",
+      "claim": "OTI-S4KO cells produce fewer Eomes transcripts than OTI-S4Ctrl cells during IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our sequencing data show that OTI-S4KO cells produce fewer Eomes transcripts than OTI-S4Ctrl cells during IAV infection (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-sequencing data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "86aff903-a52f-48e6-b0a8-37ee71ad6453",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C85",
+      "claim": "The numbers of Eomes transcripts in S4Ctrl cells transiently decreased during culture with rIL-2 (72 hr after TcR stimulation) and returned to baseline at 96 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The numbers of Eomes transcripts in S4Ctrl cells transiently decreased during culture with rIL-2 (72 hr after TcR stimulation) and returned to baseline at 96 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "fdda9d82-f521-4077-942c-075932ceb1b4",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C86",
+      "claim": "Eomes was downregulated by TGF\u03b2 at 72 and 96 hr after TcR stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Eomes was downregulated by TGF\u03b2 at both time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "f5ea0ec4-411c-43f1-ab8e-26cdff377047",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C87",
+      "claim": "S4KO cells produced very few Eomes transcripts compared to S4Ctrl cells during culture with IL-2 and did not respond to TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, S4KO cells produced very few Eomes transcripts that S4Ctrl cells during culture with IL-2 and did not respond to TGF\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "23df333f-22e7-4c4b-aa8c-e0cdeca9f9b3",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C88",
+      "claim": "EOMES was induced via SMAD4 and downregulated by TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirmed that EOMES was induced via SMAD4 and downregulated by TGF\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the qPCR data showing differential Eomes expression in response to TGF\u03b2 and in SMAD4-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d9ea8503-f268-4a9b-ba75-dd768616a6a5",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C89",
+      "claim": "OTI-TR2KO cells expressed EOMES at higher levels than OTI-TR2Ctrl cells at all time points analyzed during LM-OVA infection.",
+      "claim_type": "EXPLICIT",
+      "source": "OTI-TR2KO cells expressed EOMES at higher levels than OTI-TR2Ctrl cells at all time point analyzed (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by intracellular staining data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "fef01a6c-2029-43a0-8c30-e006e7c1273a",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C90",
+      "claim": "OTI-S4KO cells expressed EOMES at lower levels than OTI-S4Ctrl cells during LM-OVA infection.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas OTI-S4KO cells expressed EOMES at lower levels than OTI-S4Ctrl cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by intracellular staining data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "ef8a2ec1-54e6-4d97-aedf-74b8f627c826",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C91",
+      "claim": "EOMES was concentrated in the nuclei of exhausted CTLs after LCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "When CTLs were analyzed after LCMV infection, imaging flow cytometry showed that EOMES was concentrated in the nuclei of exhausted CTLs (McLane et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "2f80d7f2-b5ab-4bad-b6c6-d8eb96c25a2c",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C92",
+      "claim": "OTI-S4KO cells expressed EOMES at lower levels than OTI-S4Ctrl at 8 dpi with LM-OVA, and a smaller percentage of the protein was located in the nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "The OTI-S4KO cells expressed EOMES at lower levels than OTI-S4Ctrl, and a smaller percentage of the protein was located in the nuclei where it could influence gene expression (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging flow cytometry data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "1807e6c8-b5f1-42ac-9090-1235291c58c2",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C93",
+      "claim": "KLRG1+ CTLs from TR2KO and TR2Ctrl mice show similar patterns of EOMES expression.",
+      "claim_type": "EXPLICIT",
+      "source": "KLRG1+ CTLs from TR2KO and TR2Ctrl mice show similar patterns of EOMES expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging flow cytometry data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "83787580-7076-4e49-80a9-4ae496616dff",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C94",
+      "claim": "TR2KO cells expressed EOMES at higher levels than the controls when gating on KLRG1-negative cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Gating on KLRG1-negative cells showed that TR2KO cells expressed EOMES at higher levels than the controls (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging flow cytometry data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "2dd014da-a880-4a24-ad78-121c61c1bef5",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C95",
+      "claim": "EOMES expression in KLRG1+ CTLs was not altered by TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "EOMES expression in KLRG1+ CTLs was not altered by TGFb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging flow cytometry data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "363b4c7a-03c1-4d42-8a7c-b17bb8860b17",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C96",
+      "claim": "The promoter region for the Eomes gene includes multiple SMAD4-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that the promoter region for the Eomes gene includes multiple SMAD4-binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-Seq data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "7a8344d1-0f06-4fba-a0e8-73940f4c886c",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C97",
+      "claim": "EOMES must be downregulated before TRM cells express CD103.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies indicate that EOMES must be downregulated before TRM cells express CD103 (Mackay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "4bdca710-3fc8-473a-b357-8ea7545755d6",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C98",
+      "claim": "Reduced EOMES and T-bet expression facilitated TRM development.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, others found that reduced EOMES and T-bet expression facilitated TRM development (Laidlaw et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "1a416a27-898c-4d1c-b02a-c1d17bb8df22",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C99",
+      "claim": "When EOMES was expressed ectopically, smaller percentages of S4KO and S4Ctrl cells expressed CD103, while the percentages of CD62L+ CTLs increased.",
+      "claim_type": "EXPLICIT",
+      "source": "When EOMES was expressed ectopically, smaller percentages of S4KO and S4Ctrl cells expressed CD103, while the percentages of CD62L+ CTLs increased (Figure 5D and Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by retroviral transduction experiments shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "96e94527-b74f-49a0-929f-8df2cb3878bf",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C100",
+      "claim": "GFP+ cells in lungs expressed CD103 at reduced levels after transduction with the EOMES-IRES-GFP vector.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP+ cells in lungs expressed CD103 at reduced levels after transduction with the EOMES-IRES-GFP vector (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo transduction experiments shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d86762c0-9ba3-4c58-93c6-8c0cda668bc6",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C101",
+      "claim": "Ectopic EOMES expression partially restored the phenotype of S4KO cells, and induced a shift toward a central memory phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments show that ectopic EOMES expression partially restored the phenotype of S4KO cells, and induced a shift toward a central memory phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the retroviral transduction experiments showing changes in CD103 and CD62L expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "8b8fa4c6-2664-456b-8185-dc625534812d",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C102",
+      "claim": "Ectopic SMAD4 expression induced a shift toward a TCM phenotype in S4KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also used the (MSCV)-IRES-GFP (pMIG) vector to express SMAD4 ectopically and also observed a shift toward a TCM phenotype in S4KO cells (Figure 5\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by retroviral transduction experiments shown in Figure 5\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "a0175100-2fd9-4fca-a0b6-f547c33f2718",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C103",
+      "claim": "Naive CD8 T cells are not a uniform cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "Several lines of evidence indicate that naive CD8 T cells are not a uniform cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "6c1c48a3-ef27-4eb3-864d-8ef02c08001c",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C104",
+      "claim": "Naive CD8 T cells give rise to mixed populations of TEFF and memory CD8 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies used limiting-dilution assays and fate-mapping experiments to show that naive CD8 T cells give rise to mixed populations of TEFF and memory CD8 T cells (Plumlee et al., 2015; Stemberger et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "00a7e21d-2dfd-4c86-a987-43cac394e800",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C105",
+      "claim": "TEFF and memory CD8 T cells are products of asymmetric cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Others found unequal inheritance of genetic markers during TEFF formation, indicating that TEFF and memory CD8 T cells are products of asymmetric cell division (Chang et al., 2011; Pollizzi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "93752afc-339a-459d-b0fc-1960c356fe3e",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C106",
+      "claim": "The differentiation program for memory CD8 T cells begins soon after antigen stimulation, as the IL-7 receptor (CD127) is expressed on CTLs that are predisposed toward memory formation and absent from TEFF cells that express KLRG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies indicate that the differentiation program for memory CD8 T cells begins soon after antigen stimulation, as the IL-7 receptor (CD127) is expressed CTLs that are predisposed toward memory formation and absent from TEFF cells that express KLRG1 (Kaech et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "a1f7db05-950f-4a67-b883-428b78f927d7",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C107",
+      "claim": "Transcriptome analysis revealed the presence of TRM precursors in a pool of circulating TEFF cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptome analysis also revealed the presence of TRM precursors in a pool of circulating TEFF cells (Kok et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "0be7285e-af65-45d3-abc3-a9b1da31c3d2",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C108",
+      "claim": "Migratory DCs that activate TGF\u03b2 can precondition naive CD8 T cells to become TRM cells that localize in peripheral tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Other data indicate that programming occurs at an early stage of diffrentiation, since migratory DCs that activate TGF\u03b2 can precondition naive CD8 T cells to become TRM cells that localize in peripheral tissues (Mani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "727e86ce-dd4c-4d75-be92-a2cd75d5eeae",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C109",
+      "claim": "The population dynamics of clonal populations of antigen-specific CD8 T cells reflected the inflammatory environment that developed during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The study showed that the population dynamics reflected the inflammatory environment that developed during infection (Plumlee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "83773db1-5d13-4c38-8dc7-07357b4cc495",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C110",
+      "claim": "Large numbers of TEFF cells expressed KLRG1 during infection with LM, while this marker was less prevalent during infection with Vesicular Stomatitis Virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Large numbers of TEFF cells expressed KLRG1 during infection with LM, while this marker was less prevalent during infection with Vesicular Stomatitis Virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "eb52d1e1-e58e-4eda-8ac2-e4db4bf58a7d",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C111",
+      "claim": "IL-12 supports TEFF formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Several cytokines are known to influence the 'fate decisions' of newly activated CTLs, including IL-12 which supports TEFF formation (Mescher et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "0cba819d-e5eb-4382-8cd7-602f1be6778b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C112",
+      "claim": "TGF\u03b2 has anti-inflammatory properties and encourages TRM cells to settle in peripheral tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas TGF\u03b2 has anti-inflammatory properties and encourages TRM cells to settle in peripheral tissues (Skon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "3caac45f-f76d-4fe8-8f5b-e5fa8140386b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C113",
+      "claim": "Signaling via SMAD4 is required for formation of TEFF and TCM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies show that signaling via SMAD4 is required for formation of TEFF and TCM cells, whereas TGF\u03b2 creates a bias toward TRM development (Cao et al., 2015; Hu et al., 2015; Mackay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "dd32d6ef-d8a0-43ee-8d3e-80c6ee2aa0b2",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C114",
+      "claim": "TGF\u03b2 creates a bias toward TRM development.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies show that signaling via SMAD4 is required for formation of TEFF and TCM cells, whereas TGF\u03b2 creates a bias toward TRM development (Cao et al., 2015; Hu et al., 2015; Mackay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "41623834-e3c1-48d8-9957-542c5359757d",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C115",
+      "claim": "SMAD4 and TGF\u03b2 control a key bifurcation in the differentiation pathway of antiviral CTLs, by regulating the same genes in opposite directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these opposing pathways control a key bifurcation in the differentiation pathway of antiviral CTLs, by regulating the same genes in opposite directions (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary conclusion supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "b22c80e8-4c9b-4d89-a2ab-9640a0b2ce66",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C116",
+      "claim": "Cell-state impacts susceptibility to TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that cell-state impacts susceptibility to TGF\u03b2, since we previously found that TCM cells did not upregulate CD103 during stimulation with TGF\u03b2 (Suarez-Ramirez et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "eb6113f8-cdbf-4b18-9c3b-d0f3ee1d8509",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C117",
+      "claim": "TCM cells did not upregulate CD103 during stimulation with TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that cell-state impacts susceptibility to TGF\u03b2, since we previously found that TCM cells did not upregulate CD103 during stimulation with TGF\u03b2 (Suarez-Ramirez et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "5cd31df6-d34e-46e7-a768-943fbee479e0",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C118",
+      "claim": "KLRG1+ CTLs maintain EOMES expression in the presence of TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "and our current study shows that KLRG1+ CTLs maintain EOMES expression in the presence of TGF\u03b2 (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging flow cytometry data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "13c7b747-0e1f-4cf5-9756-d62996eb92bc",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C119",
+      "claim": "SMAD proteins modulate gene expression through interactions with numerous transcription factors, including the protooncogene SKI.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD proteins modulate gene expression through interactions with numerous transcription factors, including the protooncogene SKI and forms heterodimers that repress the Itgae gene (CD103) (Wu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "74c123c9-4cc7-47be-b53f-321406c25d8b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C120",
+      "claim": "CD103 is downregulated via SMAD4-dependent induction of EOMES.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that CD103 is also downregulated via SMAD4-dependent induction of EOMES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "7534f0ca-8abb-4748-bfaa-fd324293f5f0",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C121",
+      "claim": "Reduced numbers of TRM cells were found in the skin of HSV infected mice when EOMES and T-bet were expressed at high levels using retroviral vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Others used retroviral vectors to ectopically express T-box transcription factors in activated CTLs and found reduced numbers of TRM cells in the skin of HSV infected mice when EOMES and T-bet were expressed at high levels (Mackay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "0a43576d-4c79-481c-bacf-7531285629a2",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C122",
+      "claim": "Zeb1 and Zeb2 are homologous proteins that serve opposing functions during memory formation and are inversely regulated by TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The major players include Zeb1 and Zeb2, which are homologous proteins that serve opposing functions during memory formation and are inversely regulated by TGF\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "049356c1-acc3-440d-8945-2775339624b9",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C123",
+      "claim": "Zeb1 expression increases in maturing memory CD8+ T cells during exposure to TGF\u03b2, whereas Zeb2 is downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb1 expression increases in maturing memory CD8+ T cells during exposure to TGF\u03b2, whereas Zeb2 is downregulated (Dominguez et al., 2015; Guan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d79aeea7-c1ff-4760-af9b-ab8c49c82753",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "claim_id": "C124",
+      "claim": "DNA-binding inhibitors Id2 and Id3 have reciprocal functions during fate determination of activated CTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies indicate that DNA-binding inhibitors Id2 and Id3 also have reciprocal functions during fate determination of activated CTLs (Ji et al., 2011; Omilusik et al., 2018; Yang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "467194b6-36ee-44e5-b66a-69f2148043f6",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SMAD4 and TGF\u03b2RII are essential components of opposing signaling mechanisms that cooperatively regulate genes determining CTL fate. TGF\u03b2 uses canonical SMAD-dependent signaling to downregulate EOMES, KLRG1, and CD62L while inducing CD103. Conversely, SMAD4 positively regulates EOMES, KLRG1, CX3CR1, and CD62L while downregulating CD103 and Hobit, thereby controlling whether CTLs circulate or settle in peripheral tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7, C18-C19, and C115 are supported by extensive in vitro and in vivo experimental data using multiple genetically modified mouse strains (Figures 1-5). The opposing regulatory patterns are demonstrated through flow cytometry, qPCR, RNA-seq, and functional assays across different infection models (IAV and LM-OVA). The data consistently show reciprocal regulation of the same genes by SMAD4 and TGF\u03b2 pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d4386b35-514e-4e74-af40-da69aa29917e",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Signaling via SMAD4 promotes formation of long-lived terminally differentiated CTLs that localize in the vasculature. SMAD4-sufficient CTLs expressed KLRG1 and CX3CR1 at high levels and were primarily located inside blood vessels, while SMAD4-deficient CTLs showed reduced expression and tissue localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C36-C38 are supported by intravascular staining experiments (Figure 1C-D) showing differential localization and marker expression between SMAD4-sufficient and -deficient CTLs. The use of CX3CR1-GFP reporter mice and IV antibody labeling provides direct evidence for vascular versus tissue localization patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "09c4b060-b6f0-4690-bc16-ed3ac1b3dfc7",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SMAD4 regulates activated CTLs via a TGF\u03b2-independent pathway. Double knockout cells (S4TR2-DKO) lacking both SMAD4 and TGF\u03b2RII showed similar phenotypes to S4KO cells alone, with defects in TEFF and TCM cell formation that were independent of TGF\u03b2 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C29-C32, and C67 are supported by experiments comparing single and double knockout cells during infection (Figure 1A-B). The similar phenotypes of S4KO and S4TR2-DKO cells demonstrate SMAD4 functions independently of TGF\u03b2RII. This is further supported by in vitro data showing SMAD4-deficient cells do not respond to TGF\u03b2 or ALK5 inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "0e02702a-1ab9-48f2-8cea-36383ecc729a",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "R-SMAD2/3 are required for TGF\u03b2 to upregulate CD103 in the absence of SMAD4, and can enter the nucleus without SMAD4. When R-SMAD2 is absent, R-SMAD3 cooperates with SMAD4 to upregulate CD103 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 and C46-C54 are supported by in vitro culture experiments with multiple R-SMAD knockout combinations (Figure 2A) and imaging flow cytometry (Figure 2\u2014supplement 2). The data show that S23DKO and TR2KO cells lack CD103 expression, while S4KO cells maintain intermediate expression that increases with TGF\u03b2, demonstrating R-SMAD2/3 can function independently of SMAD4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "8acea607-67b0-456f-bfd3-527c44b1df07",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SMAD4 has dual functions during regulation of CD62L: it is required for CD62L induction and blocking TGF\u03b2 signaling is not sufficient to restore CD62L expression in SMAD4-deficient cells. CD62L is induced via SMAD4 and downregulated by TGF\u03b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C59-C62, and C80-C82 are supported by in vitro culture experiments (Figure 2B) and qPCR data (Figure 3H) showing that SMAD4-deficient cells maintain only ~50% CD62L expression regardless of ALK5 inhibitor or TGF\u03b2 treatment, while control cells respond to both. This demonstrates SMAD4's TGF\u03b2-independent role in CD62L regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "cf1af90a-5657-4b0e-9b00-bc28d6719430",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "KLRG1 expression is regulated by both TGF\u03b2 and SMAD4 pathways. Large percentages of CTLs expressed KLRG1 in the absence of TGF\u03b2 signaling (TR2KO, S23DKO), while SMAD4-deficient cells showed reduced KLRG1 expression, demonstrating TGF\u03b2 represses and SMAD4 promotes KLRG1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 and C78 are supported by in vivo infection data (Figure 2C-D) and qPCR (Figure 3G) showing differential KLRG1 expression across multiple knockout strains. The data consistently demonstrate that TGF\u03b2 signaling represses KLRG1 while SMAD4 promotes its expression, independent of R-SMAD2/3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "8c06384b-31b9-4f1b-a8ee-b7b361b83744",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The transcriptional profile of SMAD4-deficient CTLs is similar to TRM cells. OTI-S4KO cells expressed EOMES and CD62L at lower levels while Itgae was upregulated, and many TRM signature genes were upregulated, indicating that early SMAD4 signaling impedes differentiation toward a resident memory phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are supported by RNA-sequencing data (Figure 3A-B) and GSEA analysis (Figure 3C-D) comparing S4KO cells to published TRM datasets from multiple tissues. The transcriptional correlations are statistically significant and consistent across multiple independent datasets, providing strong evidence for SMAD4's role in preventing TRM differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "84107ad7-ff80-4275-8c59-86dbda62cb6d",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EOMES is induced via SMAD4 and downregulated by TGF\u03b2. In vitro and in vivo experiments showed S4KO cells produced fewer Eomes transcripts and expressed EOMES protein at lower levels, while TR2KO cells expressed EOMES at higher levels than controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C90 are supported by RNA-seq (Figure 3B), qPCR (Figure 4A), and intracellular staining (Figure 4B-C) data showing consistent reciprocal regulation of EOMES by SMAD4 and TGF\u03b2 across multiple experimental systems and time points. The data demonstrate both transcript and protein level regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "8e642f32-8f6a-435c-bcd5-643b1f67e3d5",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SMAD4-deficient CTLs expressed EOMES at lower levels with reduced nuclear localization. However, KLRG1+ CTLs maintained EOMES expression in the presence of TGF\u03b2, while KLRG1-negative TR2KO cells expressed EOMES at higher levels than controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C95 and C118 are supported by imaging flow cytometry data (Figure 4E-F) showing both EOMES intensity and nuclear localization patterns. The data demonstrate that cell state (KLRG1 expression) impacts TGF\u03b2 responsiveness, with terminally differentiated KLRG1+ cells being resistant to TGF\u03b2-mediated EOMES downregulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "ef01780a-664f-4bd0-9b4e-50bc51748fa4",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The promoter region for the Eomes gene includes multiple SMAD4-binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is supported by ChIP-Seq data analysis (Figure 4G) from published datasets showing SMAD4 binding sites in the Eomes promoter region. This provides direct evidence for SMAD4-mediated transcriptional regulation of EOMES.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "faf26091-f777-4bf1-874f-60f8fd2c4ac6",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ectopic EOMES expression partially restored the phenotype of S4KO cells and induced a shift toward a central memory phenotype. Retroviral overexpression of EOMES reduced CD103 expression and increased CD62L expression in both S4KO and control cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 are supported by retroviral transduction experiments (Figure 5D-E and supplements) showing that ectopic EOMES expression alters homing receptor expression patterns in vitro and in vivo. The rescue experiments provide functional evidence that EOMES is a key downstream mediator of SMAD4's effects on CTL differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "de7cd35d-e41d-438d-84a1-7549fde91554",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Hobit is induced by TGF\u03b2 and downregulated via SMAD4. S4KO cells produced more Itgae and Hobit transcripts than controls, and Hobit expression in control cells decreased with ALK5 inhibitor treatment while S4KO cells did not respond.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C76-C77 are supported by qPCR data (Figure 3E-F) showing differential Itgae and Hobit expression in response to TGF\u03b2 and in SMAD4-deficient cells. The data demonstrate reciprocal regulation of these TRM-associated genes by SMAD4 and TGF\u03b2 pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "aae7a5a0-4b5f-44ae-8b93-c15b4e9a185c",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CD103 is downregulated via SMAD4-dependent induction of EOMES.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C120 is supported by the combination of data showing SMAD4 induces EOMES (C88) and ectopic EOMES expression reduces CD103 (C99-C100). This establishes EOMES as a mechanistic link between SMAD4 signaling and CD103 repression, complementing the previously reported SMAD4-SKI interaction mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "2367a9d7-1983-4304-ac10-b271a36eb64b",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TGF\u03b2 differentially regulates KLRG1 expression during viral versus bacterial infection. Few control CTLs expressed KLRG1 after IAV infection (where neuraminidase activates TGF\u03b2), while TR2KO cells expressed high KLRG1 levels. During LM-OVA infection, there was minimal difference between control and TR2KO cells, indicating minimal TGF\u03b2 influence during bacterial infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by in vivo infection data (Figure 1A-B) comparing KLRG1 expression during IAV versus LM-OVA infections. The pathogen-specific differences in TGF\u03b2 influence are consistent with the known activation of TGF\u03b2 by viral neuraminidase and provide context for understanding when TGF\u03b2 signaling impacts CTL differentiation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "7a76fb1c-0238-4450-925d-243de56c9645",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "OTI-S4TR2DKO and OTI-S4TR2Ctrl cells proliferated at similar rates, indicating normal T cell priming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are supported by CFSE dilution and BrdU incorporation data (Figure 1\u2014supplement 1) showing no significant differences in proliferation between double knockout and control cells. This control experiment demonstrates that the observed phenotypic differences are not due to defects in T cell activation or proliferation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "d2f119b2-2a9a-43b9-95a7-8a9437e4ca8a",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "S4TR2-DKO mice experienced more severe disease than controls after IAV infection, as measured by weight loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by weight loss data (Figure 1\u2014supplement 3) showing S4TR2-DKO mice lost more weight and recovered more slowly than controls. This demonstrates functional consequences of the combined SMAD4/TGF\u03b2RII deficiency during primary infection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "6a91048e-1a02-4b8e-9dd4-dddb6d7c3227",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Protection against reinfection with IAV was not dependent on SMAD4 or TGF\u03b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is supported by challenge experiment data (Figure 1\u2014supplement 4) showing immune mice did not experience substantial weight loss after heterologous IAV challenge regardless of genotype. This indicates that while SMAD4/TGF\u03b2 signaling affects primary response severity, memory-mediated protection is maintained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "eeea1bc8-f26e-42ce-bbe8-592ef8302296",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The numbers of Klf2 transcripts were not modified by SMAD4 or TGF\u03b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by qPCR data showing no significant changes in Klf2 expression across conditions. This negative result is important as it demonstrates that SMAD4 and TGF\u03b2 regulate CD62L expression through mechanisms independent of KLF2, despite KLF2's known role in CD62L transcriptional regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    },
+    {
+      "id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3",
+      "content_id": "a61a55b3-53cf-41cf-81dc-f89749da5395",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background knowledge and literature context establishing the roles of TGF\u03b2, SMAD signaling, homing receptors, transcription factors, and CTL differentiation pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C14, C16-C17, C20-C25, C41-C45, C50-C51, C58, C73-C74, C79, C91, C97-C98, and C103-C124 represent established knowledge from prior literature, appropriately cited throughout the manuscript. These claims provide necessary context for interpreting the current findings and are supported by appropriate citations to peer-reviewed publications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:52:37.815128Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "280d841a-fc2e-4dd8-97f4-45a28d1619a4",
+      "result_id": "467194b6-36ee-44e5-b66a-69f2148043f6"
+    },
+    {
+      "claim_id": "b8cade6f-fe76-464f-8dbc-89a5f4d57a55",
+      "result_id": "467194b6-36ee-44e5-b66a-69f2148043f6"
+    },
+    {
+      "claim_id": "ac4b415d-b53d-4dc5-94e5-0d4ffa4573fd",
+      "result_id": "467194b6-36ee-44e5-b66a-69f2148043f6"
+    },
+    {
+      "claim_id": "aff3aa33-53c2-4388-8f40-ca8407182319",
+      "result_id": "467194b6-36ee-44e5-b66a-69f2148043f6"
+    },
+    {
+      "claim_id": "61e9bfa7-b60d-4b22-894e-9932210de19a",
+      "result_id": "467194b6-36ee-44e5-b66a-69f2148043f6"
+    },
+    {
+      "claim_id": "b246c8a0-0915-44af-89e2-3aa4782881ec",
+      "result_id": "467194b6-36ee-44e5-b66a-69f2148043f6"
+    },
+    {
+      "claim_id": "3982b088-4ac2-41c4-b6a9-d0621ceb4647",
+      "result_id": "467194b6-36ee-44e5-b66a-69f2148043f6"
+    },
+    {
+      "claim_id": "41623834-e3c1-48d8-9957-542c5359757d",
+      "result_id": "467194b6-36ee-44e5-b66a-69f2148043f6"
+    },
+    {
+      "claim_id": "5004f360-e6ab-4823-baa0-87ec551cf631",
+      "result_id": "d4386b35-514e-4e74-af40-da69aa29917e"
+    },
+    {
+      "claim_id": "d4796964-7ef6-4102-9db1-03dff092064e",
+      "result_id": "d4386b35-514e-4e74-af40-da69aa29917e"
+    },
+    {
+      "claim_id": "3512f121-53e9-4fed-ad4c-baa0da603b54",
+      "result_id": "d4386b35-514e-4e74-af40-da69aa29917e"
+    },
+    {
+      "claim_id": "11ab06ff-22c5-4534-b893-d30e3838e74e",
+      "result_id": "d4386b35-514e-4e74-af40-da69aa29917e"
+    },
+    {
+      "claim_id": "1ea89587-5b6d-47b5-bf29-23dadd67d6d1",
+      "result_id": "09c4b060-b6f0-4690-bc16-ed3ac1b3dfc7"
+    },
+    {
+      "claim_id": "d8aab8a7-175f-4a50-8130-eec8e662ef16",
+      "result_id": "09c4b060-b6f0-4690-bc16-ed3ac1b3dfc7"
+    },
+    {
+      "claim_id": "864432d0-d313-40a8-8ce2-23ca9ecf7824",
+      "result_id": "09c4b060-b6f0-4690-bc16-ed3ac1b3dfc7"
+    },
+    {
+      "claim_id": "1987115a-c51d-4582-bc37-a23ab1e03e23",
+      "result_id": "09c4b060-b6f0-4690-bc16-ed3ac1b3dfc7"
+    },
+    {
+      "claim_id": "c364b328-7fad-41b7-91c4-a9c555e35b87",
+      "result_id": "09c4b060-b6f0-4690-bc16-ed3ac1b3dfc7"
+    },
+    {
+      "claim_id": "27534a34-b9a0-48c4-aa27-70d5abcd7504",
+      "result_id": "09c4b060-b6f0-4690-bc16-ed3ac1b3dfc7"
+    },
+    {
+      "claim_id": "60c84ee1-87fe-44fd-a629-777ef7d2fc46",
+      "result_id": "0e02702a-1ab9-48f2-8cea-36383ecc729a"
+    },
+    {
+      "claim_id": "f6646320-773b-4d36-9670-1a80e23c563b",
+      "result_id": "0e02702a-1ab9-48f2-8cea-36383ecc729a"
+    },
+    {
+      "claim_id": "dece4468-97f9-4965-9be6-82439a4a195c",
+      "result_id": "0e02702a-1ab9-48f2-8cea-36383ecc729a"
+    },
+    {
+      "claim_id": "1b0d6080-3389-429a-bd5b-99ded9e6f22d",
+      "result_id": "0e02702a-1ab9-48f2-8cea-36383ecc729a"
+    },
+    {
+      "claim_id": "de94f175-8555-45e9-b32c-f1855f74b212",
+      "result_id": "0e02702a-1ab9-48f2-8cea-36383ecc729a"
+    },
+    {
+      "claim_id": "0090f9e7-99e6-40f3-a01c-bc2fb745ab74",
+      "result_id": "0e02702a-1ab9-48f2-8cea-36383ecc729a"
+    },
+    {
+      "claim_id": "fe059292-53ca-4511-be45-b6eb7878d3df",
+      "result_id": "0e02702a-1ab9-48f2-8cea-36383ecc729a"
+    },
+    {
+      "claim_id": "c0e14153-0d4b-4555-852d-035bde885c44",
+      "result_id": "0e02702a-1ab9-48f2-8cea-36383ecc729a"
+    },
+    {
+      "claim_id": "475e125c-f593-4073-a004-24a22b0abfb8",
+      "result_id": "0e02702a-1ab9-48f2-8cea-36383ecc729a"
+    },
+    {
+      "claim_id": "d4034133-2379-475d-9552-a3e8583f2d65",
+      "result_id": "0e02702a-1ab9-48f2-8cea-36383ecc729a"
+    },
+    {
+      "claim_id": "0b9cb33d-d3b4-420b-944e-2b2482527893",
+      "result_id": "8acea607-67b0-456f-bfd3-527c44b1df07"
+    },
+    {
+      "claim_id": "2d08f42a-0157-4ade-9071-139d754e601f",
+      "result_id": "8acea607-67b0-456f-bfd3-527c44b1df07"
+    },
+    {
+      "claim_id": "755b9315-b44e-45e4-b98f-94ef48494d0b",
+      "result_id": "8acea607-67b0-456f-bfd3-527c44b1df07"
+    },
+    {
+      "claim_id": "d68f59d0-07bd-4a0c-9fd6-a1fab8141f94",
+      "result_id": "8acea607-67b0-456f-bfd3-527c44b1df07"
+    },
+    {
+      "claim_id": "7f6116e4-40b7-4d4a-bc9d-56b9886225c7",
+      "result_id": "8acea607-67b0-456f-bfd3-527c44b1df07"
+    },
+    {
+      "claim_id": "ae6a1223-d2dc-4842-acbe-ce14ab9c8c3f",
+      "result_id": "8acea607-67b0-456f-bfd3-527c44b1df07"
+    },
+    {
+      "claim_id": "6ee2a0ab-e25c-478e-aee3-1ab113e6bd40",
+      "result_id": "8acea607-67b0-456f-bfd3-527c44b1df07"
+    },
+    {
+      "claim_id": "e456883a-390c-42d5-b563-6457b29cc176",
+      "result_id": "8acea607-67b0-456f-bfd3-527c44b1df07"
+    },
+    {
+      "claim_id": "6f972490-5b12-4b38-bb58-2426e8ec34aa",
+      "result_id": "cf1af90a-5657-4b0e-9b00-bc28d6719430"
+    },
+    {
+      "claim_id": "8ae3fb65-d0f7-4ea5-8f23-57de6c5beeed",
+      "result_id": "cf1af90a-5657-4b0e-9b00-bc28d6719430"
+    },
+    {
+      "claim_id": "d1c77012-0839-4479-87a5-33a2c4253877",
+      "result_id": "cf1af90a-5657-4b0e-9b00-bc28d6719430"
+    },
+    {
+      "claim_id": "ca22800c-fbea-4cd1-8c4c-bae8d2ec8b72",
+      "result_id": "cf1af90a-5657-4b0e-9b00-bc28d6719430"
+    },
+    {
+      "claim_id": "d94b9b98-bb0a-4ad8-baf5-66b6754e7882",
+      "result_id": "8c06384b-31b9-4f1b-a8ee-b7b361b83744"
+    },
+    {
+      "claim_id": "fd22efc1-e8c1-4cb2-a437-d425be0cbea5",
+      "result_id": "8c06384b-31b9-4f1b-a8ee-b7b361b83744"
+    },
+    {
+      "claim_id": "51ba1431-d5f3-4c99-995f-3c66f1010ffa",
+      "result_id": "8c06384b-31b9-4f1b-a8ee-b7b361b83744"
+    },
+    {
+      "claim_id": "b4fa76e1-960b-49aa-9c98-940edaed2ab1",
+      "result_id": "8c06384b-31b9-4f1b-a8ee-b7b361b83744"
+    },
+    {
+      "claim_id": "fb8440f2-c8db-49b3-9f94-292435c8e3a7",
+      "result_id": "84107ad7-ff80-4275-8c59-86dbda62cb6d"
+    },
+    {
+      "claim_id": "86aff903-a52f-48e6-b0a8-37ee71ad6453",
+      "result_id": "84107ad7-ff80-4275-8c59-86dbda62cb6d"
+    },
+    {
+      "claim_id": "fdda9d82-f521-4077-942c-075932ceb1b4",
+      "result_id": "84107ad7-ff80-4275-8c59-86dbda62cb6d"
+    },
+    {
+      "claim_id": "f5ea0ec4-411c-43f1-ab8e-26cdff377047",
+      "result_id": "84107ad7-ff80-4275-8c59-86dbda62cb6d"
+    },
+    {
+      "claim_id": "23df333f-22e7-4c4b-aa8c-e0cdeca9f9b3",
+      "result_id": "84107ad7-ff80-4275-8c59-86dbda62cb6d"
+    },
+    {
+      "claim_id": "d9ea8503-f268-4a9b-ba75-dd768616a6a5",
+      "result_id": "84107ad7-ff80-4275-8c59-86dbda62cb6d"
+    },
+    {
+      "claim_id": "fef01a6c-2029-43a0-8c30-e006e7c1273a",
+      "result_id": "84107ad7-ff80-4275-8c59-86dbda62cb6d"
+    },
+    {
+      "claim_id": "2f80d7f2-b5ab-4bad-b6c6-d8eb96c25a2c",
+      "result_id": "8e642f32-8f6a-435c-bcd5-643b1f67e3d5"
+    },
+    {
+      "claim_id": "1807e6c8-b5f1-42ac-9090-1235291c58c2",
+      "result_id": "8e642f32-8f6a-435c-bcd5-643b1f67e3d5"
+    },
+    {
+      "claim_id": "83787580-7076-4e49-80a9-4ae496616dff",
+      "result_id": "8e642f32-8f6a-435c-bcd5-643b1f67e3d5"
+    },
+    {
+      "claim_id": "2dd014da-a880-4a24-ad78-121c61c1bef5",
+      "result_id": "8e642f32-8f6a-435c-bcd5-643b1f67e3d5"
+    },
+    {
+      "claim_id": "5cd31df6-d34e-46e7-a768-943fbee479e0",
+      "result_id": "8e642f32-8f6a-435c-bcd5-643b1f67e3d5"
+    },
+    {
+      "claim_id": "363b4c7a-03c1-4d42-8a7c-b17bb8860b17",
+      "result_id": "ef01780a-664f-4bd0-9b4e-50bc51748fa4"
+    },
+    {
+      "claim_id": "1a416a27-898c-4d1c-b02a-c1d17bb8df22",
+      "result_id": "faf26091-f777-4bf1-874f-60f8fd2c4ac6"
+    },
+    {
+      "claim_id": "96e94527-b74f-49a0-929f-8df2cb3878bf",
+      "result_id": "faf26091-f777-4bf1-874f-60f8fd2c4ac6"
+    },
+    {
+      "claim_id": "d86762c0-9ba3-4c58-93c6-8c0cda668bc6",
+      "result_id": "faf26091-f777-4bf1-874f-60f8fd2c4ac6"
+    },
+    {
+      "claim_id": "8b8fa4c6-2664-456b-8185-dc625534812d",
+      "result_id": "faf26091-f777-4bf1-874f-60f8fd2c4ac6"
+    },
+    {
+      "claim_id": "fec44401-efbe-47be-b92a-103229ac051c",
+      "result_id": "de7cd35d-e41d-438d-84a1-7549fde91554"
+    },
+    {
+      "claim_id": "7687a37e-ca4a-42fb-992e-a2ee370c7a78",
+      "result_id": "de7cd35d-e41d-438d-84a1-7549fde91554"
+    },
+    {
+      "claim_id": "a4f24d19-4e96-4675-96c6-a2b51302dfdc",
+      "result_id": "de7cd35d-e41d-438d-84a1-7549fde91554"
+    },
+    {
+      "claim_id": "74c123c9-4cc7-47be-b53f-321406c25d8b",
+      "result_id": "aae7a5a0-4b5f-44ae-8b93-c15b4e9a185c"
+    },
+    {
+      "claim_id": "d1dc1f6b-c036-4b07-8e6b-97c8ca0f6570",
+      "result_id": "2367a9d7-1983-4304-ac10-b271a36eb64b"
+    },
+    {
+      "claim_id": "aa4ff0f8-10b1-46c3-84de-1eac424c847d",
+      "result_id": "2367a9d7-1983-4304-ac10-b271a36eb64b"
+    },
+    {
+      "claim_id": "21b829ba-8005-4c5b-aa41-4820ebc8c6e5",
+      "result_id": "2367a9d7-1983-4304-ac10-b271a36eb64b"
+    },
+    {
+      "claim_id": "2e6ef829-87f3-4b1e-861c-6b56ab15305f",
+      "result_id": "7a76fb1c-0238-4450-925d-243de56c9645"
+    },
+    {
+      "claim_id": "931ad00f-47f5-4b32-9a7e-8b313b939b2b",
+      "result_id": "7a76fb1c-0238-4450-925d-243de56c9645"
+    },
+    {
+      "claim_id": "3913d00e-353d-4ee8-8659-4fa3e5d50fec",
+      "result_id": "d2f119b2-2a9a-43b9-95a7-8a9437e4ca8a"
+    },
+    {
+      "claim_id": "75629696-6957-4d8c-a634-c4b5e6930e14",
+      "result_id": "6a91048e-1a02-4b8e-9dd4-dddb6d7c3227"
+    },
+    {
+      "claim_id": "e3a4d094-8e39-4cd4-bc52-1a6c74d0ac04",
+      "result_id": "eeea1bc8-f26e-42ce-bbe8-592ef8302296"
+    },
+    {
+      "claim_id": "a6accc6d-524a-4bcd-8228-6f55ae41256c",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "0c7d507a-0857-4a91-932d-3e24ed40b205",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "c877eb57-6c49-40a7-997d-16b11d6dde19",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "ebbe7419-0bfe-4f8e-89f2-36ac6d168e4e",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "42a1dae2-0863-4d77-945e-3667cda1051e",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "fc2463e8-1f4e-4bdf-a58a-909b7ed37b4b",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "73c8d998-c9f4-4117-85d1-6f29ef9b9b0a",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "2e04ee45-4072-479e-94bd-97d1ed1e5dc1",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "d4ccca58-53c0-4bbd-b3ae-cc8849d4a44c",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "603ae4c6-53a3-4065-b5c7-9b17a4506d23",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "103ee203-3ee3-4453-a3d1-74978169fdfc",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "defa7c94-c946-4736-8221-0ae5d41367f5",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "b32e838b-6075-4a00-87d0-fecc6caf7922",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "65f70415-d0d9-4997-873e-0c14264b5a56",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "efea4541-27f8-4b95-9c00-b1c129902a6b",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "31f49f53-6a38-411a-afff-6c2e455d06d6",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "db68246b-69d7-425e-9560-a65899c862d3",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "24f8ebd5-36a0-475a-99ed-b5cf7d3a61c3",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "59fc00b3-30ad-48e9-84ef-622df6458b18",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "f008d8ae-f29d-45ca-b31d-bc81d75cbc4b",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "b8dca871-44ac-4fd0-bbda-f4e18b1e23c0",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "2855438c-7d50-4eca-a69e-ae7b000b1596",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "b2b35ccf-0cb8-4d5f-aa1e-94998780dffa",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "e5d18737-7637-483b-9c7d-a4b0964b6938",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "009a3e13-115b-4777-b650-32ed9ab98806",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "16b279d7-7bf1-41e8-b60a-ee61f27f74ef",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "a4f910f5-5436-4249-a40b-2ffbb3adf88b",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "ef8a2ec1-54e6-4d97-aedf-74b8f627c826",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "7a8344d1-0f06-4fba-a0e8-73940f4c886c",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "4bdca710-3fc8-473a-b357-8ea7545755d6",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "a0175100-2fd9-4fca-a0b6-f547c33f2718",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "6c1c48a3-ef27-4eb3-864d-8ef02c08001c",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "00a7e21d-2dfd-4c86-a987-43cac394e800",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "93752afc-339a-459d-b0fc-1960c356fe3e",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "a1f7db05-950f-4a67-b883-428b78f927d7",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "0be7285e-af65-45d3-abc3-a9b1da31c3d2",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "727e86ce-dd4c-4d75-be92-a2cd75d5eeae",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "83773db1-5d13-4c38-8dc7-07357b4cc495",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "eb52d1e1-e58e-4eda-8ac2-e4db4bf58a7d",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "0cba819d-e5eb-4382-8cd7-602f1be6778b",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "3caac45f-f76d-4fe8-8f5b-e5fa8140386b",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "dd32d6ef-d8a0-43ee-8d3e-80c6ee2aa0b2",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "b22c80e8-4c9b-4d89-a2ab-9640a0b2ce66",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "eb6113f8-cdbf-4b18-9c3b-d0f3ee1d8509",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "13c7b747-0e1f-4cf5-9756-d62996eb92bc",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "7534f0ca-8abb-4748-bfaa-fd324293f5f0",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "0a43576d-4c79-481c-bacf-7531285629a2",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "049356c1-acc3-440d-8945-2775339624b9",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    },
+    {
+      "claim_id": "d79aeea7-c1ff-4760-af9b-ab8c49c82753",
+      "result_id": "44721b9b-ac84-4b4c-9a98-781e7c2f54e3"
+    }
+  ],
+  "comparisons": []
+}

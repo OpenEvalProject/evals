@@ -1,0 +1,494 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C89"
+    ],
+    "result": "CCNF knockout fitness correlates with CDK-RB network genes in Cancer Dependency Map analysis. CCNF ranks 9th among genes correlated with CDK4, and CDK4, CDK6, CCND1, RBL1, and RBL2 are in the top 0.5% of genes correlated with CCNF knockout across 789 cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide convergent computational evidence from large-scale CRISPR screens. The bidirectional correlation analysis (CCNF\u2192CDK-RB and CDK-RB\u2192CCNF) strengthens the finding. GO term enrichment (C6) provides biological context. This is a hypothesis-generating result appropriately supported by the DepMap dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C14",
+      "C15",
+      "C16",
+      "C81",
+      "C82"
+    ],
+    "result": "Cyclin F regulates p130 protein levels: cyclin F overexpression specifically reduces p130 (but not other CDK-RB proteins) in breast cancer cells, while CCNF knockout or depletion increases p130 levels in multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 show specificity (p130 affected, not p107/CDK4/CDK6/cyclin D1) and reversibility with proteasome/neddylation inhibitors. Claims C14-C16 demonstrate the converse with loss-of-function approaches in multiple cell types. The bidirectional regulation strongly supports a direct regulatory relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Cyclin F and p130 exhibit inverse expression patterns during quiescence-proliferation transitions. In quiescent cells, cyclin F is low and p130 is high; upon cell cycle re-entry, cyclin F accumulates and p130 is degraded in a neddylation-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 demonstrate inverse correlation in three fibroblast lines and show that MLN4924 (neddylation inhibitor) blocks p130 degradation upon quiescence exit. This establishes physiological relevance and implicates cullin-RING E3 ligases. The temporal dynamics are well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "CCNF knockout or depletion does not significantly affect overall cell cycle distribution, and endogenous cyclin F co-immunoprecipitates with endogenous p130.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 shows that loss of cyclin F alone doesn't grossly perturb cell cycle (important negative control). Claim C18 demonstrates physical interaction between endogenous proteins in two cell lines, supporting a direct regulatory mechanism rather than indirect effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C24"
+    ],
+    "result": "Cyclin F specifically promotes p130 degradation in a dose-dependent manner through its canonical substrate-binding hydrophobic patch. Wild-type cyclin F, but not the M309A/L313A mutant or other F-box proteins (Skp2, Fbxw7, \u03b2TRCP1/2), reduces p130 levels, and this is reversed by proteasome or neddylation inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 establish dose-dependence, specificity among F-box proteins, and dependence on proteasome/neddylation. Claim C24 shows the substrate-binding mutant cannot degrade p130, demonstrating mechanism. Multiple controls and two cell lines strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C85"
+    ],
+    "result": "The cyclin F binding site in p130 maps to amino acids R680-L682 in the spacer region between pocket domains A and B. This RxL motif is necessary for cyclin F-mediated degradation and is evolutionarily conserved across vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 describe systematic domain mapping and mutagenesis identifying R680-L682 as critical. Only this motif (not R658-I660) confers degradation sensitivity. Claim C30 shows conservation across species, suggesting functional importance. The mapping is thorough with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Cyclin F and p130 interact directly through the R680-L682 motif in p130 and the M309-L313 hydrophobic patch in cyclin F, as demonstrated by reciprocal pulldown assays with purified proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 show bidirectional pulldowns (GST-p130 pulls cyclin F; FLAG-cyclin F pulls p130) and demonstrate that mutations in either binding partner (p130 AA or cyclin F M309A/L313A) abolish interaction. This establishes direct binding with defined molecular determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cyclin F-Skp1 binds directly to p130 peptide with Kd = 0.21 \u03bcM, and this binding is competed by wild-type but not mutant p130 protein. The p130 and E2F1 binding sites on cyclin F overlap, as shown by cross-competition experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 provide quantitative binding data with >50-fold difference between WT and AA mutant. Claims C37-C38 demonstrate overlapping binding sites through peptide competition. The fluorescence polarization anisotropy assays are appropriate for measuring direct binding and affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C84"
+    ],
+    "result": "SCF^Cyclin F ubiquitinates p130(WT) but not p130(AA) in a fully reconstituted in vitro system requiring NEDD8-Cul1-Roc1, Skp1-Cyclin F, and ARIH1/UBCH7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 demonstrate in vitro ubiquitination with purified components. Systematic omission of components (C41) and use of the AA mutant (C42) provide strong mechanistic evidence. This is the gold standard for demonstrating direct E3 ligase activity toward a substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C86"
+    ],
+    "result": "p130(WT) half-life is reduced by cyclin F overexpression, while p130(AA) is stable regardless of cyclin F presence, demonstrating that the R680-L682 motif is required for cyclin F-mediated degradation in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 show differential stability in cycloheximide chase experiments. The p130(AA) mutant is resistant to cyclin F-mediated degradation, directly linking the binding site to functional degradation. This validates the in vitro findings in a cellular context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "p130(WT) levels decrease during mitotic arrest (nocodazole synchronization) compared to p130(AA), indicating cell cycle-regulated degradation of p130 that depends on the cyclin F binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 show differential behavior of WT vs AA mutant during mitotic arrest in both inducible and endogenous contexts. This demonstrates physiological regulation during the cell cycle when cyclin F is known to be active (G2/M).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The R680A/L682A mutations do not impair p130 binding to cyclin A/E, CDK-dependent phosphorylation, DREAM complex association, or viral oncoproteins (T-antigen, E7), indicating the mutations specifically disrupt cyclin F binding without affecting other p130 functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 provide critical specificity controls showing the AA mutation is selective for cyclin F interaction. The mutant retains other known p130 functions (cyclin binding, phosphorylation, DREAM association, oncoprotein binding), ruling out global misfolding or loss of function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Expression of non-degradable p130(AA) causes severe proliferation defects in normal human fibroblasts. After 14 days, p130(AA) cells show 5.8-fold reduced viability (PrestoBlue) and 7.7-fold fewer cells than p130(WT) controls, with doubling time increasing from 33h to 48h.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 provide multiple quantitative measures of proliferation defects (viability assay, cell counting, doubling time) with statistical significance. Claims C60-C61 include appropriate vehicle controls and comparison to prior literature. The magnitude of effect is substantial and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "p130(AA)-expressing cells show significantly increased G0/G1 percentage and decreased S-phase at days 5 and 7, but this difference disappears by day 10, suggesting potential cellular adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 show clear G0/G1 arrest at early timepoints with flow cytometry. However, C65 notes loss of difference by day 10, which the authors interpret as adaptation but could reflect selection of cells with lower p130(AA) expression or other compensatory mechanisms. The interpretation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "p130(AA) expression causes decreased RB phosphorylation, increased p21, accumulation of cells with <4C DNA content, and increased nuclear localization of p130 at days 5-10, consistent with G0/G1 arrest and transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 use iterative immunofluorescence (4i) to provide single-cell resolution data on multiple cell cycle markers. The constellation of findings (hypophosphorylated RB, high p21, G1 DNA content, nuclear p130) is internally consistent with G0/G1 arrest. The 4i approach is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "p130(AA) expression significantly reduces mRNA levels of DREAM target genes (CCNF, CCNE1, CDC6, DHFR, E2F1, CDT1) compared to p130(WT), and protein levels of CDC6 and Cdt1 are correspondingly decreased, indicating enhanced DREAM-mediated transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 show coordinated downregulation of multiple DREAM targets at the mRNA level by RT-qPCR. Claim C73 validates this at the protein level for two targets using 4i. The inclusion of vehicle controls (C71) and multiple targets strengthens the conclusion that p130(AA) enhances DREAM activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "p130(AA)-expressing cells show markers of apoptosis (cleaved PARP at days 7/10/14, cleaved caspase-3 at days 7/10, increased Annexin V/PI staining at day 8) that are absent in p130(WT)-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 demonstrate apoptosis through multiple independent markers (cleaved PARP, cleaved caspase-3, Annexin V/PI) at multiple timepoints. The absence of these markers in p130(WT) cells (C76) provides an important control. The apoptosis is likely secondary to prolonged cell cycle arrest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "DNA damage markers (53BP1, phospho-Chk1, phospho-H2A.X) are downregulated in p130(AA)-expressing cells, suggesting that DNA damage is not the cause of apoptosis but rather reflects fewer cells in S-phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 rule out DNA damage as the mechanism of apoptosis by showing decreased (not increased) damage markers. This is consistent with fewer cells in S-phase where DNA damage typically occurs. The interpretation is logical given the G0/G1 arrest phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CCNF knockout correlates with sensitivity to CDK4/6 inhibitors (Palbociclib, Ribociclib) in Cancer Dependency Map drug screens. CCNF ranks 9th for Palbociclib correlation and Palbociclib ranks 1st among drugs correlated with CCNF knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 provide bidirectional correlation analysis between CCNF knockout and CDK4/6 inhibitor sensitivity across hundreds of cell lines. The validation that CCND1/CDK4 are top hits for Palbociclib (C90) confirms the approach. The strong correlation suggests CCNF and CDK4/6 function in the same pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Known cyclin F substrates E2F7 and FZR1 are identified among top CCNF-correlated genes in the Cancer Dependency Map.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 provides validation of the DepMap correlation approach by identifying known cyclin F substrates. This positive control strengthens confidence in the novel finding that CDK-RB network genes also correlate with CCNF.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80",
+      "C83",
+      "C88"
+    ],
+    "result": "p130 is a direct substrate of SCF^Cyclin F, and cyclin F functions as a regulator of the CDK-RB network by promoting p130 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C80, C83, C88) integrate multiple lines of evidence: DepMap correlations, physical interaction, in vitro ubiquitination, cellular degradation, and phenotypic consequences. The convergent evidence from computational, biochemical, and cell biological approaches strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C25"
+    ],
+    "result": "Cyclin F recognizes substrates through a hydrophobic patch (M309-L313) that binds RxL/I 'Cy motifs' in substrates, and mutations in this patch impair substrate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C22, C23, C25) cite prior published work establishing the cyclin F substrate recognition mechanism. This is appropriate background information that is well-established in the literature and provides context for the p130 binding site mapping.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "p130 protein levels are regulated during the cell cycle through ubiquitin-proteasome-mediated degradation, and the authors' findings suggest cyclin F-mediated degradation plays a significant role in promoting cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 cite established literature on p130 regulation. Claim C100 is the authors' interpretation integrating their findings with prior work. The interpretation is reasonable given the experimental evidence, though the relative contribution of cyclin F vs. other mechanisms (e.g., Skp2) remains to be fully quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "While prior studies implicated Skp2 in p130 degradation, p130 is still degraded in Skp2 knockout cells, and Skp2 overexpression had no effect on p130 levels in the current experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 accurately cite prior literature on Skp2 and p130. Claim C104 reports a negative result in the authors' hands. This is important for establishing that cyclin F is a distinct (and perhaps more important) E3 ligase for p130, though the discrepancy with some prior studies is not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Cyclin F has been previously linked to cell cycle gene transcription through regulation of B-MYB, SLBP, and multiple E2F family members (E2F1, E2F2, E2F3a, E2F7, E2F8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 accurately summarize prior published work on cyclin F substrates involved in transcriptional regulation. This provides important context showing that p130 regulation fits within a broader pattern of cyclin F controlling cell cycle transcription at multiple levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Cyclin F and p130 exist in a double negative feedback loop where cyclin F degrades p130 and p130 (as part of DREAM) represses cyclin F transcription. In response to DNA damage, cyclin F degradation may allow p130 accumulation to preserve cell cycle arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 integrates the authors' findings (cyclin F degrades p130) with the known fact that CCNF is a DREAM target gene. Claims C112-C113 cite prior work on cyclin F degradation after DNA damage and propose a speculative but logical model. The feedback loop is well-supported; the DNA damage model is reasonable speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Clinical studies show that low p130 expression correlates with worse prognosis in multiple cancer types (lung, endometrial, vulvar, oral, thyroid), while high p130 expression correlates with better outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 accurately cite multiple clinical studies establishing p130 as a tumor suppressor whose loss is associated with aggressive disease. This provides important clinical context for why understanding p130 regulation (including by cyclin F) is relevant to cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Since p130 mRNA is not cell cycle-regulated, enhanced p130 degradation in malignancies could contribute to dysregulated cell cycle gene expression. Blocking p130 degradation could phenocopy CDK4/6 inhibition and be therapeutically advantageous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C120 states p130 mRNA is not cell cycle-regulated (established knowledge). Claims C121-C122 are speculative proposals about therapeutic implications. While logical given the data, these are hypotheses requiring future testing. The speculation is reasonable but not yet supported by therapeutic experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Cyclin F mRNA peaks in G2/M and is not an E2F target at G1/S, but AKT can phosphorylate and stabilize cyclin F near G1/S. Hyper-activated PI3K-AKT signaling in cancer could promote p130 degradation through cyclin F activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C125 cite established knowledge and prior work from the authors' lab. Claims C126-C127 are speculative proposals linking PI3K-AKT signaling to p130 degradation via cyclin F. While this is an interesting hypothesis consistent with the data, it requires experimental validation (e.g., testing if AKT phosphorylation of cyclin F enhances p130 degradation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Background on RB family proteins: RB, p107, and p130 are tumor suppressors regulated by CDK phosphorylation that control cell cycle gene expression. p130 functions in the DREAM complex and cooperates with RB in tumor suppression. p130 mutations are rare, suggesting post-translational inactivation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C142 provide comprehensive background on RB family biology, citing extensive prior literature. This context is accurate and essential for understanding the significance of cyclin F-mediated p130 regulation. The observation that p130 mutations are rare (C142) motivates the search for post-translational mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Background on cyclin F: Cyclin F is a non-canonical cyclin and F-box protein that functions as a substrate receptor for SCF E3 ligase. Cyclin F levels oscillate during the cell cycle (accumulating at G1/S, peaking in G2) and it has been implicated in ubiquitinating multiple cell cycle proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C152 provide comprehensive background on cyclin F biology, accurately citing prior literature. This establishes cyclin F as a cell cycle-regulated E3 ligase component with multiple substrates, providing context for the novel finding that p130 is also a cyclin F substrate.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The auxin-inducible degron (AID) system enables rapid and robust depletion of TELO2 and TRRAP in HCT116 cells. Both TELO2AID and AIDTRRAP become undetectable after 4 hours of auxin treatment, and their depletion progressively decreases cell proliferation and affects downstream targets including PIKKs and known TRRAP-regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are well-supported by Western blot data (Figure 1A-B), proliferation assays (Figure 1C-D), and validation experiments showing expected effects on PIKK levels and TRRAP target genes (Figure 1\u2014figure supplement 1E-F). The experimental system is properly controlled with parental TIR1-expressing cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C4",
+      "C113"
+    ],
+    "result": "TELO2 promotes TRRAP assembly into SAGA and TIP60 complexes through cytoplasmic interactions. TELO2 is cytoplasmic while TRRAP is predominantly nuclear, and TELO2 specifically interacts with cytoplasmic TRRAP. TELO2 depletion reduces TRRAP incorporation into both SAGA (via SUPT3H) and TIP60 (via EP400) without affecting interactions among other SAGA subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 and C4, C113 are supported by cellular fractionation (Figure 1E), co-immunoprecipitation experiments (Figure 1F-H), and proper controls. The temporal design (24hr TELO2 depletion when TRRAP levels remain unchanged) strengthens the conclusion that TELO2 affects TRRAP assembly rather than just stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "TRRAP is not essential for SAGA integrity and function at UPR genes. While SAGA core subunit SUPT20H knockdown reduces CHOP and HERPUD induction during ER stress, TRRAP depletion does not affect their induction, suggesting TRRAP is dispensable for SAGA function at these genes despite being the largest subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by immunoprecipitation data showing intact SAGA subunit interactions without TRRAP (Figure 1G) and RT-qPCR showing normal UPR gene induction despite TRRAP depletion (Figure 1\u2014figure supplement 2). This is consistent with structural studies cited showing TRRAP's peripheral localization in SAGA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C60"
+    ],
+    "result": "TELO2 and TRRAP regulate overlapping but distinct sets of genes in HCT116 cells. RNA-seq analysis identified 470 TELO2-dependent and 2227 TRRAP-dependent transcripts (1% FDR), with positive correlation (r=0.66) between their effects. TRRAP regulates more genes and shows quantitatively stronger effects than TELO2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C60 are supported by RNA-seq data from three independent clones per genotype (Figure 2A-B, Figure 2\u2014figure supplement 1), with RT-qPCR validation of selected genes (Figure 2\u2014figure supplement 1E-H). The differences between TELO2 and TRRAP effects are appropriately attributed to incomplete TRRAP depletion at the TELO2 depletion timepoint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C5",
+      "C114"
+    ],
+    "result": "TELO2 and TRRAP activate MYC and E2F target genes in HCT116 CRC cells. GSEA analysis shows strong enrichment of MYC and E2F target genes among downregulated genes upon TELO2 or TRRAP depletion, with comparable enrichment scores, establishing TELO2 as a novel regulator of these oncogenic transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C5, C114 are supported by GSEA analysis (Figure 2C) and RT-qPCR validation of known MYC targets (Figure 2\u2014figure supplement 1E-F). The conclusion that TELO2 regulates MYC/E2F through TRRAP assembly is a reasonable inference from the combined biochemical and transcriptomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C6"
+    ],
+    "result": "TELO2 and TRRAP repress interferon-stimulated genes (ISGs) in unstimulated HCT116 cells. Nearly one-third of IFN\u03b1 response genes (28/97) are differentially expressed upon TELO2/TRRAP depletion, with most (23/28) being repressed. ISG response is the most enriched category among repressed genes (NES=2.51 for TELO2, 2.28 for TRRAP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 and C6 are supported by RNA-seq GSEA analysis (Figure 2C-D) and RT-qPCR validation of IRF7, OAS1, and IFIT1 (Figure 2E-F). Controls demonstrate ISG induction is specific to TELO2/TRRAP depletion and not due to auxin treatment itself (no AHR motifs in ISG promoters except IFIT3, parental cells unaffected).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "TRRAP depletion induces ISG expression without activating PRR or IFN-I signaling pathways. Western blot analysis shows no increase in IRF3 Ser396 or STAT1 Ser727 phosphorylation upon TRRAP depletion, while poly(I:C) treatment induces both, demonstrating that TRRAP acts downstream of these pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by Western blot data (Figure 3B) with appropriate positive controls (poly(I:C) treatment). The conclusion that TRRAP acts downstream of IRF3/IRF7 is a reasonable inference from the lack of pathway activation despite ISG induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Kinetic analysis reveals distinct temporal dynamics of ISG induction upon TRRAP depletion. IRF9 mRNA increases rapidly (2-fold by 5hr) and plateaus at 4-fold by 10hr, while IRF7 and downstream ISGs (RIG-I, OAS1, IFIT1, MX1) accumulate more gradually over 24hr, suggesting IRF9 is induced earlier than its target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by time-course RT-qPCR (Figure 3E) and Western blot data (Figure 3C-D) from multiple independent clones. The temporal ordering of events is appropriately inferred from the kinetic data, though the authors acknowledge this is correlative rather than mechanistic proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "TRRAP specifically represses U-ISGF3-dependent genes rather than ISGF3-dependent genes. IRF9 levels increase ~4-fold upon TRRAP depletion while STAT1/STAT2 levels remain unchanged. TRRAP regulates 39/113 ISGs (mostly negatively), with 20/28 U-ISGF3-dependent genes induced \u22651.5-fold but only 6/35 ISGF3-dependent genes affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 are supported by RNA-seq, RT-qPCR, and Western blot data (Figure 3C-E, Figure 4B, Supplementary file 2-3). The distinction between U-ISGF3 and ISGF3 target genes is based on published gene sets (Cheon et al., 2013) and the violin plot analysis clearly shows differential effects (Figure 4B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "ISRE and IRF7-binding motifs are enriched in TRRAP-regulated ISG promoters. ISRE is the most enriched motif and is recognized by IRF9 homo/heterodimers and ISGF3 complex. IRF7-binding sites are the second most enriched motif, consistent with progressive IRF7 protein accumulation upon TRRAP depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by motif enrichment analysis (Figure 2\u2014figure supplement 3) and Western blot/RNA-seq data showing IRF7 accumulation (Figure 3D, Supplementary file 2). The inference that IRF9 upregulation is sufficient to induce ISGs is reasonable given the ISRE enrichment and lack of pathway activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "CUT&RUN is an efficient method to profile genome-wide TRRAP occupancy in human cells. The method was validated using the MYC target gene MIR17-HG, showing ~60-fold enrichment over IgG controls and specific promoter binding. Genome-wide analysis identified 22,219 TRRAP peaks, predominantly within ~300bp of TSS (corresponding to nucleosome-depleted regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C148 are supported by CUT&RUN-qPCR validation (Figure 5\u2014figure supplement 1A-B), genome-wide sequencing data (Figure 5A), and appropriate controls (IgG, auxin depletion, parental cells). The comparison with published MYC CUT&RUN data and NOMe-seq data strengthens the validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Integration of CUT&RUN-seq and RNA-seq identifies ~1690 candidate direct TRRAP targets. TRRAP binds most detectably expressed genes with enrichment correlating positively with transcript levels. About 75% of TRRAP-regulated genes are bound by TRRAP, with 83% of activated genes but only 66% of repressed genes showing TRRAP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C156 are supported by integrated analysis of CUT&RUN-seq and RNA-seq data (Figure 5B-D, Supplementary file 4). The differential binding patterns between activated and repressed genes are clearly shown in heatmaps and Venn diagrams, though the authors appropriately note that binding alone doesn't prove direct regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "TRRAP directly binds to promoters of key ISG regulators IRF7 and IRF9. CUT&RUN-seq shows TRRAP binds 12/28 U-ISGs, including 8 genes whose expression increases \u22651.5-fold upon TRRAP depletion. TRRAP binds and represses DDX58 (RIG-I), IRF7, and IRF9, which are master regulators of ISG expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by CUT&RUN-seq data (Figure 5E-F, Supplementary file 3) showing specific binding peaks at IRF7 and IRF9 promoters that overlap with H3K27ac and H3K4me3 marks. The inference of direct repression is strengthened by the combination of binding and expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "TRRAP inhibits IRF7 and IRF9 mRNA synthesis. Metabolic labeling with 4-thiouridine shows newly synthesized IRF7 and IRF9 pre-mRNAs increase 1.8-fold and 1.6-fold respectively in TRRAP-depleted cells, demonstrating transcriptional repression rather than post-transcriptional effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by nascent RNA data (Figure 6A) using 4sU labeling and appropriate controls (OAS1 as positive control showing 8-fold increase). The conclusion of transcriptional repression is appropriately drawn from the nascent RNA measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C7",
+      "C115"
+    ],
+    "result": "TRRAP directly represses IRF7 and IRF9 transcription through promoter binding. ChIP-qPCR shows increased RNA Pol II recruitment at IRF7/IRF9 upon TRRAP depletion, while CUT&RUN-qPCR confirms TRRAP binding to their promoters. Kinetic analysis shows RNA Pol II increases by 7hr when TRRAP is already undetectable, indicating rapid transcriptional derepression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105, C7, C115 are supported by multiple orthogonal approaches: nascent RNA (Figure 6A), ChIP-qPCR (Figure 6B), and CUT&RUN-qPCR (Figure 6C). The temporal correlation between TRRAP loss and Pol II recruitment strengthens the direct repression model, though the mechanism of repression is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "TRRAP binding and ISG repression are reversible and dynamically anticorrelated. Upon auxin washout, TRRAP progressively reaccumulates within hours, TRRAP binding to IRF7/IRF9 promoters returns to control levels by 6hr, and IRF9 mRNA levels rapidly decrease while OAS1/IFIT1 levels stabilize, demonstrating dynamic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 are supported by auxin washout experiments with Western blot (Figure 7B), CUT&RUN-qPCR (Figure 7C), and RT-qPCR (Figure 7D). The reversibility experiments strengthen the conclusion of direct regulation and demonstrate the dynamic nature of TRRAP-mediated repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "TTT functional roles are conserved between yeast and mammals, and TRRAP shares dedicated chaperone machinery with active PIKKs despite lacking catalytic activity. The requirement for TTT explains evolutionary conservation of TRRAP's PIKK-like domain organization, and TTT-mediated assembly represents a general mechanism for transcription complex biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are supported by the experimental data showing TTT-dependent TRRAP assembly (Figures 1, 2) combined with citations to yeast studies and phylogenetic analyses. The evolutionary argument (C119) is speculative but reasonable given the data. The conclusion about transcription complex assembly (C120) is appropriately contextualized with other examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "TRRAP depletion relieves IRF9 repression, subsequently inducing IRF7 and other U-ISGs independently of IFN-I signaling. Seven additional U-ISGs (including RIG-I, MDA5, IFIT3, STAT1) are both bound and repressed by TRRAP and may be direct targets, potentially reinforcing TRRAP's inhibitory effect on the pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 are supported by the kinetic data (Figure 3E), binding data (Figure 5F), and lack of pathway activation (Figure 3B). The proposed sequential model (C123) is a reasonable inference from the temporal data, though alternative mechanisms cannot be excluded. The speculation about additional direct targets (C125) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "TRRAP functions by a distinct mechanism from other SAGA/TIP60 subunits in ISG regulation. Unlike GCN5/PCAF which inhibits TBK1 kinase, TRRAP represses ISGs without activating IFN signaling. The mechanism may involve TIP60-mediated H2A.Z regulation or be conserved with Drosophila E(Pc) function in JAK/STAT signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C134 combine established knowledge (C126-C130, citations) with the current findings (C134, supported by Figure 3B) and comparisons to other systems (C132-C133, citations). While the distinction from GCN5/PCAF is clear, the actual mechanism of TRRAP-mediated repression remains unknown. The authors appropriately acknowledge they did not detect H2A.Z changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C10",
+      "C116"
+    ],
+    "result": "TRRAP may contribute to colorectal tumorigenesis by repressing ISGs. TRRAP is overexpressed in CRC patient samples, and ISGs are normally repressed in CRC but upregulated upon acquiring therapy resistance. The TRRAP-repressed U-ISGs are virtually identical to the interferon-related DNA damage signature (IRDS) associated with treatment resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C139, C10, C116 combine patient data analysis (C135, stated but not shown), literature citations about ISG roles in CRC (C137), and comparison with published gene signatures (C138). While the overlap with IRDS is intriguing, the tumorigenic role (C10, C116, C136, C139) remains speculative without functional validation in tumor models or patient outcome correlations.",
+    "result_type": "MINOR"
+  }
+]

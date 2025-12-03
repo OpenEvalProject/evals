@@ -1,0 +1,501 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Genotoxic stress induced by ATM knockout, ATM inhibition, ATR inhibition, and topoisomerase poisoning (CPT and etoposide) causes increased protein aggregation in both U2OS and HEK293 cell lines. This aggregation is dose-dependent, occurs late (after 24 hours), and is a consequence of genotoxic stress rather than immediate drug effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C36 provide converging evidence from multiple experimental approaches (knockout, chemical inhibition, different drugs) showing consistent increases in protein aggregation. The time-course data (C34-C36) and dose-response relationships (C30) strengthen the conclusion that this is a late, specific consequence of genotoxic stress. The data are supported by silver staining and Western blot analyses across multiple independent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Proteomics analysis reveals that CPT treatment and ATM inhibition trigger aggregation of distinct but overlapping sets of proteins in HEK293T and U2OS cells. In HEK293T, 122 proteins aggregate more after CPT treatment and 39 after ATM inhibition, with minimal overlap. In U2OS, 210 proteins aggregate more in ATM KO cells and 106 after CPT treatment, with ~20% overlap. Cell-type-specific differences are substantial, with many proteins aggregating in one cell line but not the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C53 are supported by rigorous MS/MS proteomics with stringent statistical cutoffs (Benjamini-Hochberg corrected p<0.05, log2FC>1). The validation of specific proteins (MCM7, TUBA1A, HDAC1) by Western blot (C43-C45) confirms the MS/MS findings. The cell-type specificity is well-documented and reproducible across independent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "GO term analysis reveals that aggregating proteins are enriched for cytoskeleton-related components across conditions, with additional cell-type and treatment-specific enrichments including RNA binding (HEK293T CPT/ATM inhibition), mitochondrial components (HEK293T CPT), and cell adhesion/membrane processes (U2OS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by systematic GO term analysis of the MS/MS data. The enrichments are statistically significant and consistent with the biological functions expected to be vulnerable to proteostatic stress. The cell-type specificity adds biological insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "U2OS cells exhibit substantially higher baseline protein aggregation compared to HEK293T cells, with 66% of HEK293T baseline aggregating proteins also aggregating in U2OS. Importantly, 62% of proteins that aggregate after genotoxic stress in HEK293T are already part of the U2OS baseline aggregation, indicating a lower aggregation threshold in U2OS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by MS/MS proteomics and silver staining data showing quantitative differences in baseline aggregation between cell lines. The overlap analysis is rigorous and the Western blot validation of specific proteins (MCM7, TUBA1A, HDAC1) confirms the cell-type differences. This provides important context for interpreting the genotoxic stress responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Aggregating proteins after genotoxic stress are characterized by high abundance and supersaturation rather than high intrinsic aggregation propensity. Proteins that aggregate have equal or slightly lower TANGO scores compared to non-aggregating proteins, but are expressed at higher levels (both protein and transcript) and are more supersaturated. However, most supersaturated proteins do not become insoluble even after genotoxic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by comprehensive bioinformatics analysis combining MS/MS proteomics, RNA-seq, and computational predictions (TANGO, supersaturation calculations). The finding that intrinsic aggregation propensity is not elevated (C62) while abundance and supersaturation are increased (C63-C65) is counterintuitive but well-supported by the data. The observation that most supersaturated proteins remain soluble (C66) is an important caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Aggregating proteins are enriched for liquid-liquid phase separation (LLPS) propensity as measured by catGRANULE scores and PScore analysis. This enrichment is observed in both HEK293T (baseline, CPT, and ATM inhibitor-induced aggregation) and U2OS cells (baseline and ATM KO-induced aggregation). LLPS propensity appears to discriminate which supersaturated proteins aggregate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by systematic computational analysis using established LLPS prediction tools (catGRANULE, PScore). The statistical significance is demonstrated across multiple conditions and cell types. The finding that LLPS propensity distinguishes aggregating from non-aggregating supersaturated proteins (implicit in C67-C72) is biologically insightful and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The enhanced aggregation after genotoxic stress is driven by physicochemical characteristics of proteins rather than transcriptional changes. Only two transcripts were significantly altered after ATM inhibition in HEK293T cells, and there is minimal overlap between proteins that aggregate and proteins with altered expression. The consistent aggregation of specific proteins across independent experiments argues against random DNA sequence alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by RNA-seq data showing minimal transcriptional changes (C73) and lack of correlation between aggregation and expression changes (C76). The consistency across replicates (C75) is well-documented in the MS/MS data. This is a key mechanistic insight that the aggregation is not due to altered protein levels or genetic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Genotoxic conditions cause a global lowering of the protein aggregation threshold, allowing metastable proteins that are normally soluble to aggregate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a synthesis of the preceding findings (C62-C76) and is well-supported by the collective evidence showing that proteins with similar physicochemical properties aggregate consistently without changes in their own abundance or sequence. This represents the central mechanistic conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Proteins that aggregate after genotoxic stress overlap significantly with proteins that aggregate under heat stress and with stress granule constituents, indicating similarity to classic proteotoxic stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by systematic comparison with published datasets (Mymrikov et al. 2017 for heat stress, RNA granule database for stress granules). The enrichment analysis is statistically significant and provides important biological context linking genotoxic stress to proteotoxic stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Protein synthesis is reduced approximately threefold in CPT-treated cells, but newly synthesized proteins are not preferentially enriched in the aggregating fraction compared to control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by radioactive pulse-labeling experiments with appropriate controls. The finding that newly synthesized proteins are not enriched in aggregates despite being present (C81) is an important negative result that helps define the mechanism. The quantification appears rigorous with n=4 replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Proteins that aggregate after CPT treatment are highly enriched for constituents of disease-associated protein aggregates, with 67% (82/122) previously identified in TDP-43 aggregates, Lewy bodies, \u03b1-synuclein-induced aggregates, or aggregates from Huntington's or Alzheimer's disease brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by systematic comparison with multiple published disease-associated aggregation datasets. The 67% overlap is substantial and statistically significant. This is a key finding linking genotoxic stress-induced aggregation to neurodegenerative disease mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Genotoxic stress accelerates aggregation of polyglutamine (Q71) in a dose-dependent manner without increasing CAG repeat instability or total polyQ levels. Targeting ATM, ATR, and TOPs (but not TDP1) accelerates polyQ aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by filter trap assays with appropriate controls for protein levels and repeat length. The dose-dependence (C85) and exclusion of repeat instability as a mechanism (C86) strengthen the conclusion that this reflects a lowered aggregation threshold. The use of an established disease-relevant model substrate is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Transient targeting of ATM or TOP1 results in enrichment of luciferase-GFP (a folding-sensitive model substrate) in the aggregated fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by Western blot data showing enrichment of luciferase-GFP in aggregates. This provides additional evidence using a different model substrate that the aggregation threshold is lowered. However, only n=2 is noted, which is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Multiple chaperones aggregate after genotoxic stress in both HEK293T (ATM inhibition and CPT treatment) and U2OS cells (baseline and increased after ATM KO or CPT treatment), with cell-type-specific patterns of chaperone aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by MS/MS proteomics data identifying specific chaperones in the aggregated fractions. The cell-type specificity is well-documented. This is important evidence for chaperone sequestration as a mechanism of chaperone overload.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Aggregating proteins are enriched for chaperone clients and interactors. HSPA8 and HSPA1A clients are enriched among aggregating proteins, and all aggregating fractions show enrichment for chaperone interactors compared to non-aggregating proteins based on BioGRID database analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by systematic cross-referencing with published client databases (Ryu et al. 2020) and BioGRID interaction data. The enrichment is statistically significant and provides evidence that aggregating proteins are normally chaperone-dependent. The authors appropriately note limitations of interaction databases for capturing transient chaperone-client interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CPT treatment induces an upward shift in chaperone expression levels in HEK293T cells (16 up, 8 down by MS/MS; 11 up, 5 down by RNA-seq) accompanied by partial HSF1 activation. ATM inhibition results in only marginal HSF1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by both MS/MS and RNA-seq data showing consistent upregulation of chaperones, and Western blot data showing HSF1 phosphorylation. The convergence of protein and transcript data strengthens the conclusion. The differential response to ATM inhibition vs CPT (C94) is an interesting observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "U2OS cells express dramatically higher levels of specific chaperones compared to HEK293T cells: Clusterin (CLU) >100-fold, HSPA1A >150-fold, and HSPB5 >400-fold higher in U2OS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by RNA-seq data comparing the two cell lines. The magnitude of differences is substantial and provides important context for understanding the different baseline aggregation states and responses to genotoxic stress in the two cell lines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Mild HSP70 inhibition using VER-155008 after CPT treatment further increases CPT-induced protein aggregation without affecting aggregation in control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by silver staining and Western blot data. This is important functional evidence that chaperone capacity is limiting and that further reducing it exacerbates aggregation. The specificity to CPT-treated cells (no effect in controls) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Stable overexpression of HSPB5 drastically reduces enhanced protein aggregation in U2OS ATM KO cells, as measured by silver staining, ProteoStat aggresome staining, and reduction of cytoplasmic FUS puncta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by multiple complementary assays (silver staining, ProteoStat, immunofluorescence) showing consistent reduction in aggregation markers. The use of multiple readouts strengthens the conclusion. This is a key proof-of-principle that increasing chaperone capacity can rescue the aggregation phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "HSPB5 overexpression does not affect DNA repair kinetics (53BP1 foci formation/resolution) in U2OS cells, and HSPB5, HSP70, and HSP90 do not accumulate at DNA damage sites, indicating that chaperone overload is not due to sequestration at DNA damage sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by immunofluorescence data showing no effect on DNA repair and no chaperone localization to damage sites. This is an important control experiment that rules out a direct role of chaperones in DNA repair and supports the conclusion that chaperone overload occurs through a different mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "HSPB5 overexpression reduces enhanced protein aggregation in CPT-treated U2OS cells but has no effect on CPT-induced aggregation in HEK293 cells, demonstrating cell-type specificity of the rescue effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by silver staining data in both cell lines. The cell-type specificity is an important finding that relates to the different baseline chaperone expression profiles and aggregation states in the two cell lines. This suggests that the chaperone network context determines whether HSPB5 overexpression is effective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "TOP poisoning and functional impairment of ATM or ATR trigger widespread aggregation of LLPS-prone and supersaturated proteins as a consequence of chaperone system overload under genotoxic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 represent the central conclusions of the study, synthesizing the findings from C5-C106. These are well-supported by the collective evidence including proteomics, bioinformatics, functional assays with model substrates, and rescue experiments. The mechanistic link between genotoxic stress, chaperone overload, and aggregation of metastable proteins is convincingly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Despite a strong reduction in protein synthesis (a known response to proteotoxic stress that should reduce chaperone demand), genotoxic stress still leads to chaperone system overload and a shift in protein homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by the radioactive pulse-labeling data (C80-C81) and established knowledge about protein synthesis reduction during stress (C110). The inference that chaperone overload persists despite reduced synthesis (C111) is logical and well-supported, suggesting a substantial increase in chaperone demand.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The shift in protein homeostasis after genotoxic stress is reminiscent of chronic stress and age-related neurodegenerative disorders, where supersaturated proteins are overrepresented in disease-associated pathways and disease proteins exhibit LLPS behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by comparison with cited literature on chronic stress and neurodegeneration. The similarity in protein characteristics (supersaturation, LLPS propensity) and overlap with disease-associated aggregates (C82-C83) support this conclusion. This places the findings in important biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The authors hypothesize that chaperone system overload is largely caused by increased demand for chaperone activity in the proteome rather than altered chaperone capacity, though both mechanisms could contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C115 represent a hypothesis rather than a definitive conclusion. While the data showing chaperone upregulation (C92-C93), chaperone aggregation (C88-C89), and enrichment of chaperone clients among aggregating proteins (C90-C91) support increased demand, the relative contributions of altered capacity vs. increased demand are not definitively quantified. The authors appropriately frame this as a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The strong upregulation of small heat shock proteins in U2OS cells points to a rewiring of the chaperone network toward greater reliance on this chaperone class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by the RNA-seq data showing dramatic upregulation of small heat shock proteins in U2OS (C95-C97) and the effectiveness of HSPB5 overexpression in U2OS but not HEK293 cells (C105-C106). This is a reasonable inference about cell-type-specific chaperone network organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Cancer cells (U2OS) inherently exhibit elevated protein stress, and the increased chaperone demand from genotoxic conditions is independent of quantitative changes in aggregating proteins themselves or genetic alterations in their coding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is established knowledge supported by citations. Claim C118 is supported by the lack of correlation between aggregation and expression changes (C76) and the consistency of aggregation across replicates (C75). This helps explain the cell-type differences and mechanism of aggregation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The aggregation after genotoxic stress is enriched for RNA-binding proteins and can be mitigated by inhibiting PARylation, which regulates LLPS processes, suggesting a role for aberrant LLPS in the aggregation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is established knowledge. Claim C120 is supported by GO term analysis (C55). Claim C121 is supported by experimental data (C33) and citations linking PARylation to LLPS regulation. Together these support a mechanistic link between genotoxic stress, LLPS dysregulation, and protein aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Aberrant LLPS can drive protein aggregation, and chaperones (particularly small heat shock proteins like HSPB5 and HSPB1) play important roles in surveilling biomolecular condensates and preventing aberrant phase transitions. HSPB5 associates with nuclear speckles and maintains cytoskeleton stability, both of which involve LLPS processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 are established knowledge supported by appropriate citations. This provides important biological context for understanding why LLPS-prone proteins aggregate under genotoxic stress and why HSPB5 is effective at suppressing this aggregation. The connection to cytoskeleton (C127-C128) is relevant given the enrichment of cytoskeleton proteins in aggregates (C54).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "Genotoxic stress conditions can exacerbate the risk of aberrant progression of LLPS processes, which may trigger chaperone system overload.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 is a synthesis of the findings showing LLPS-prone protein aggregation (C67-C72), enrichment of RNA-binding proteins (C120), and the role of PARylation (C121). This represents a mechanistic model linking genotoxic stress to LLPS dysregulation to chaperone overload. The inference is well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The widespread aggregation caused by ATM loss follows a predictable pattern overlapping with neurodegenerative disorder aggregation, supporting the hypothesis that disrupted protein homeostasis is an important disease mechanism in ataxia-telangiectasia (A-T).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 connect the current findings to A-T disease mechanisms. C130 is supported by citation to recent work. C131 is established knowledge. C132 is supported by the overlap with disease-associated aggregates (C82-C83) and the characteristics of aggregating proteins (supersaturation, LLPS propensity). This is an important translational implication of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Other genotoxic conditions including chemotherapeutic TOP poisons have similar impacts on protein aggregation as ATM loss, pointing to a broader link between DNA damage and loss of protein homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by the similar aggregation patterns observed across different genotoxic conditions (C5-C7, C23-C36) and the overlap in aggregating proteins and their characteristics. This is a key conclusion extending the findings beyond ATM to a general principle linking genotoxic stress to proteostatic stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C27",
+      "C32",
+      "C33"
+    ],
+    "result": "TDP1 inhibition and PARP1-3 inhibition do not increase protein aggregation, but PARP inhibition can reduce CPT-induced aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C32 show negative results that help define the specificity of the genotoxic stress response. Claim C33 shows that PARP inhibition can suppress aggregation, consistent with the role of PARylation in LLPS regulation (C121). These are important controls and mechanistic insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C31"
+    ],
+    "result": "Background knowledge establishing that ATM loss impairs DNA damage response and causes A-T (characterized by neurodegeneration and cancer predisposition), that ATM loss is associated with protein aggregation, and that protein homeostasis is maintained by quality control systems that can be overwhelmed during stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C14-C22, C31 represent established scientific knowledge appropriately cited from the literature. These provide essential background context for the study but are not novel findings. The citations appear appropriate and accurate.",
+    "result_type": "MINOR"
+  }
+]

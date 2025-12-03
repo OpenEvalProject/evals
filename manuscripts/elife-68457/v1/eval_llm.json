@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Single-cell RNA sequencing of mouse DRG identified 19 distinct cell clusters from 25,154 cells, with SGC and macrophages representing the largest populations. The analysis achieved efficient recovery of non-neuronal cells, with neurons representing only ~12.5% of all cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide consistent technical details about the scRNAseq experiment including cell numbers, clustering methodology, and population distributions. The data is well-documented with appropriate quality metrics (reads per cell, genes per cell) and supported by figure references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Gene expression changes occurred in endothelial cells, pericytes, Schwann cells, macrophages, and SGC after all three injury types (SNC, DRC, SCI), with the magnitude of changes being largest after SNC. The percentage of SGC decreased while macrophages increased after all injuries compared to naive conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C38-C40 collectively demonstrate injury-induced transcriptional changes across multiple cell types with appropriate statistical thresholds (FDR \u22640.05, FC \u22652). The findings are supported by heatmap analysis and population distribution data with figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Cell-cell interaction network analysis revealed significant changes after SNC compared to naive, with distinct patterns from DRC, while SCI had limited influence on cellular network interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe cell-cell interaction analysis using CellPhoneDB, a validated computational method. The findings are consistent with the overall pattern of differential responses to peripheral versus central injuries observed throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Endothelial cells and pericytes showed different clustering patterns after SNC and DRC compared to naive and SCI conditions, with differential expression of tight junction genes suggesting altered blood-nerve barrier permeability. Cell cycle pathway enrichment after SNC and DRC suggests endothelial cell division may regulate angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C54-C56 present consistent findings about vascular cell responses to injury. The tight junction gene expression changes (C54-C55) provide molecular evidence for the inference about BNB permeability (C55), though direct permeability measurements are not provided. The cell cycle pathway enrichment (C56) appropriately cites supporting literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Schwann cells in the DRG undergo distinct transcriptional changes after peripheral versus central injuries. Key findings include downregulation of Ngf after all injuries, differential regulation of Vegfb, strong upregulation of Shh after DRC, and downregulation of the Hippo pathway (including Yap and Bmp5) specifically after DRC and SCI, suggesting that central injury may limit Schwann cell plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C70 present a coherent picture of Schwann cell responses with appropriate statistical thresholds and pathway analysis. The inference about limited plasticity after central injury (C70) is reasonably drawn from the Hippo pathway data, though it remains somewhat speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "DRG macrophages predominantly express snMac1 genes and share properties with endoneurial macrophages and CNS microglia. Macrophage numbers increased after SNC and to a lesser extent after DRC and SCI, with distinct gene expression profiles after SNC and DRC compared to naive and SCI conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 characterize DRG macrophage phenotypes using established marker genes. The data consistently show that DRG macrophages have mixed characteristics of peripheral and central immune cells, with appropriate figure references supporting the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "KEGG pathway analysis revealed upregulation of cell cycle and DNA replication pathways after SNC, while DRC and SCI showed upregulation of metabolic pathways. All injury conditions downregulated genes related to antigen processing and presentation, validated by qPCR. Macrophage responses appear complex and do not follow classical M1/M2 polarization, with Arg1 only detected after DRC and Nos2 not detected in any condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 present pathway analysis findings with appropriate statistical criteria and qPCR validation (C84, C88). The conclusion about complex macrophage responses (C85) is well-supported by the marker gene expression patterns showing mixed phenotypes rather than classical polarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Cell cycle and DNA replication pathways were upregulated specifically after SNC, with proliferation markers (Mki67, Cdk1, Top2a) showing higher expression in macrophages after SNC compared to central injuries. Immunostaining validation confirmed increased CD68+/MKI67+ cells after SNC, with 80% of MKI67+ cells also expressing CD68, indicating that macrophages represent a large proportion of proliferating cells in the DRG after nerve injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 provide converging evidence from pathway analysis, gene expression, qPCR validation, and immunostaining that macrophage proliferation is a key feature of the SNC response. The multi-modal validation strengthens the conclusion, though the relative contributions of proliferation versus recruitment remain to be fully determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A rare cell population termed 'Imoonglia' (cluster 13, ~1% of DRG cells) co-expresses macrophage markers (Cd68, Aif1, Cx3cr1) and SGC markers (Fabp7, Cadh19, Plp1). This population increases to ~2.5% after both peripheral and central injuries. Flow cytometry and immunostaining validated that genetically labeled SGC express macrophage/myeloid markers (CD11B, F4/80, CD45), and trajectory analysis positioned Imoonglia between SGC and macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C111 describe a novel cell population with multiple lines of supporting evidence including scRNAseq, flow cytometry, immunostaining, and trajectory analysis. The multi-modal validation approach strengthens the identification of this rare population, though the functional significance and developmental origin remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Comparative gene expression analysis revealed that Imoonglia share more genes with macrophages (863 shared genes) than SGC (61 shared genes). Imoonglia express macrophage/myeloid markers (Cd45, Cd206, Cd163, Cd14, Cd209, Cd38) and glial progenitor markers (Sox2, Dhh, Foxd3). KEGG pathway analysis showed Imoonglia and macrophages share immune-related pathways while Imoonglia and SGC share metabolic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 provide detailed molecular characterization of Imoonglia through comparative transcriptomics and pathway analysis. The data consistently support the conclusion that Imoonglia have predominantly macrophage-like characteristics with some glial features, though the biological significance of this mixed phenotype requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "SGC represent a diverse population with four distinct subtypes in naive DRG. Fabp7 was expressed in >90% of SGC, while other markers (Cadh19, Kcnj10, Glul) were expressed in ~50%. Cluster 3 shares genes with astrocytes (Glul, Kcnj10, Slc1a3), cluster 4 shares similarities with myelinating Schwann cells (enriched for Scn7a), while clusters 1 and 2 represent unique SGC subtypes. Some SGC express proliferation marker Mki67, with enrichment in cluster 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C131 demonstrate SGC heterogeneity through unbiased clustering and comparative analysis with other glial cell types. The use of reporter mice (Aldh1l1::Rpl10a-Egfp) provides validation for cluster 3 identity. The findings challenge the previous view of SGC as a uniform population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "SGC clustering analysis across injury conditions identified seven subclusters, with clusters 1-4 representing naive subtypes. After SNC, cluster 1 decreased while cluster 6 emerged and accounted for 40% of all SGC. After SCI, cluster 4 decreased and cluster 7 appeared specifically. The majority of gene expression changes occurred after SNC, with highest changes in subcluster 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C138 describe injury-induced changes in SGC subpopulations with appropriate clustering analysis and statistical criteria (FDR \u22640.05, FC \u22652). The emergence of injury-specific clusters (cluster 6 after SNC, cluster 7 after SCI) represents a key finding about differential SGC responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "GFAP expression was observed in cluster 6 after SNC and in clusters 2, 3, and 4 after DRC. Immunostaining confirmed ~25% of neurons were surrounded by GFAP+ SGC after both SNC and DRC, with no changes after SCI. This suggests GFAP is a marker for SGC injury but does not entirely relate to different axon regenerative capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 present GFAP expression data validated by immunostaining. The inference (C142) that GFAP expression doesn't correlate with regenerative capacity is reasonable given similar GFAP upregulation after both SNC (high regeneration) and DRC (low regeneration), though this remains somewhat speculative without functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Cluster 6 marker genes showed enrichment for pathways involved in axon regeneration, calcium signaling, and mineral absorption. Transcription factor analysis revealed enrichment for Rest, Trp53, Rad21, Ctcf, and Zeb1. Zeb1 controls epithelial-to-mesenchymal transition and Rest regulates pluripotency, suggesting cluster 6 adopts a more plastic state after SNC that might play a role in nerve regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C148 present pathway and transcription factor analysis for cluster 6. While the data on pathway enrichment and transcription factor binding sites are supported (C143-C145), the inference about increased plasticity and role in regeneration (C148) is speculative and based primarily on known functions of the transcription factors rather than direct functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "GO biological process analysis revealed that after SNC, SGC upregulate genes involved in macrophage chemotaxis and migration (Ccl5, Dock8, Cmklr1, Lbp), which might assist macrophage expansion. After DRC, SGC upregulate genes involved in negative regulation of axon extension and chemotaxis, which might relate to slow axonal regeneration. After SCI, SGC upregulate genes involved in ECM assembly, myelination, and synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149, C151, and C153 present GO analysis findings with appropriate figure references. However, the mechanistic interpretations (C150, C152) are speculative and not directly tested. The data show differential pathway activation but causative relationships to macrophage recruitment or regeneration rates remain to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "KEGG pathway analysis showed SGC upregulate fatty acid biosynthesis and PPAR\u03b1 signaling after SNC, with upregulation of PPAR\u03b1 target genes Hmgcs2 and Scd1. These pathways were not enriched after DRC, and PPAR\u03b1 signaling was downregulated after SCI. PPAR\u03b1 expression was enriched in SGC across all conditions, with highest distribution in subclusters 2, 3, and 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C157 present pathway analysis findings consistent with the authors' previous work (cited). The differential activation of PPAR\u03b1 signaling after peripheral versus central injuries represents a key mechanistic finding, with appropriate statistical support and figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "Fenofibrate treatment improved axon regeneration after dorsal root crush injury, as measured by both the length of the longest 10 axons and a regeneration index accounting for both length and number of regenerating axons. This indicates that lack of PPAR\u03b1 signaling in SGC after central axon injury contributes to decreased regenerative ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 present experimental evidence that PPAR\u03b1 activation with fenofibrate enhances regeneration after DRC. The use of two complementary measurement methods strengthens the finding. The inference (C161) is well-supported by combining the fenofibrate data with the gene expression findings showing lack of PPAR\u03b1 activation after central injuries. Statistical significance is reported (p-values in figures).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The study demonstrates major yet distinct molecular changes in non-neuronal cells in response to peripheral nerve injury and dorsal root injury, with more limited responses after SCI. The findings highlight that manipulating non-neuronal cells could lead to avenues to promote functional recovery after CNS injuries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162 and C164 represent appropriate summary conclusions drawn from the comprehensive scRNAseq analysis and fenofibrate experiment. Claim C163 acknowledges a limitation regarding the percentage of lesioned neurons, showing appropriate scientific caution. The therapeutic potential (C164) is supported by the fenofibrate data but remains to be fully validated in additional models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C211"
+    ],
+    "result": "SGC fail to activate the PPAR\u03b1 signaling pathway in response to dorsal root crush and downregulate this pathway in response to SCI, as shown by scRNAseq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, and C211 consistently report the lack of PPAR\u03b1 pathway activation after central injuries based on pathway analysis of scRNAseq data. This finding is central to the study's main conclusion and is supported by appropriate statistical analysis and figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "All injuries increased the proportion of Imoonglia cells that share features of both immune cells and glial cells, and a distinct subset of SGC (cluster 6) appeared specifically in response to peripheral nerve injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C6 summarize two major findings from the study: the identification of Imoonglia cells and the emergence of SGC cluster 6. Both are well-supported by the detailed analyses presented in multiple subsequent claims and figures.",
+    "result_type": "MAJOR"
+  }
+]

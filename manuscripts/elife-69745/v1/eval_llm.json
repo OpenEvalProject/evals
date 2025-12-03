@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Physarum polycephalum is a slime mold with a complex life cycle that forms a multinucleate syncytium (plasmodium) capable of diverse behaviors including maze-solving, anticipating stimuli, and optimizing cytoplasmic flow. The plasmodium forms network-like structures with interlaced tubes that respond to nutrient sources, and contains mobile nuclei that can move at speeds up to 1.3 mm/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 are well-supported by citations to prior literature (Dove et al., 2012; Boddy et al., 2009; Dussutour et al., 2010; Nakagaki et al., 2000a; Saigusa et al., 2008; B\u00e4uerle et al., 2020; Kramar and Alim, 2021; Howard, 1932; Schiebel, 1973; Earnshaw and Steer, 1983; Boussard et al., 2021; S Mogre et al., 2020; Kamiya, 1950). These claims establish the biological context and prior knowledge about Physarum polycephalum that forms the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Nuclei in Physarum plasmodia have a mean size of 5.65 \u03bcm and mean inter-nuclei distance of 6.63 \u03bcm, with 99.9% of nuclei within 12 \u03bcm of each other. Nuclei are heterogeneously distributed across the plasmodium, with significantly higher densities in growth front regions compared to network veins. Both mobile and immobile nuclei coexist, with mobile nuclei advected by shuttle flow in veins and growth fronts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 are supported by imaging data (Figures 1D-J, Videos 1-2) and computational analysis using convolutional neural networks (Weigert et al., 2020) for nuclei segmentation. The quantitative measurements of nuclei size, spacing, and density are derived from direct observations. The statistical significance of density differences (p=3.51 \u00d7 10\u207b\u00b9\u2070) between growth front and network regions is properly reported. The observations of mobile and immobile nuclei are documented in videos and supported by citations to prior work (Kamiya, 1950; Wolf and Sauer, 1982).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C38"
+    ],
+    "result": "Spatial RNA-seq of four plasmodia (SM1-4) from the same parent culture but under different growth conditions revealed distinct transcriptional profiles between plasmodia. SM3, which was actively extending toward an oat flake, showed the strongest differences driven by genes involved in signal transduction (DHKL), chemotaxis (GEFA), and cell shape polarity (TEA1), with unique GO enrichments for signal transduction pathways. Biological replicates SM1 and SM2 showed shared expression profiles, and batch correction identified genes shared across plasmodia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C38 are supported by spatial RNA-seq data from four biological replicates (SM1-4) with appropriate experimental controls (same parent culture, standardized starting conditions). The transcriptomic differences are demonstrated through dimensionality reduction (UMAP), clustering analysis, differential gene expression analysis, and GO enrichment analysis (Figures 2A-C, supplementary figures). The inference that SM3's transcriptomic differences are linked to chemotactic stimulus (C30) is reasonable given the experimental design and gene expression patterns, though the authors appropriately note that further experiments are needed to establish causation. The use of both annotated and unannotated transcripts for validation strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Within individual plasmodia, substantial intra-syncytium transcriptional heterogeneity was observed. SM1 showed enrichment of cell cycle-related genes (BUB1, MKI67, KIF3B) and unique GO terms for spindle assembly and chromosome segregation across all grids. Spatial mapping revealed a wave of nuclei division orchestration across the plasmodium, with different regions expressing markers for different cell cycle phases (G2/M transition, anaphase, spindle/cytokinesis), suggesting the wave initiated in the bottom-right region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are supported by spatial transcriptome data with appropriate dimensionality reduction and clustering analysis (Figures 2D-F, supplementary figures). The identification of cell cycle markers and GO terms is based on established methods (GOseq, Revigo) and supported by citations to prior work characterizing these genes (Tirosh et al., 2016; Fang et al., 1998; Roghi et al., 1998). The spatial wave pattern is visualized in Figure 2F and represents a molecular description of a phenomenon first observed a century ago (Howard, 1932; Schiebel, 1973). The inference about wave initiation (C42) is reasonable based on the spatial distribution of late mitotic markers, though it remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Spatial transcriptome analysis of SM4 revealed that clusters distinguish morphological structures (growth front vs. network). The network region was enriched for genes involved in cytoplasmic flow generation (SCP1, MYOD), while the fan region expressed genes regulating actin polymerization (racH) and growth control (MFSD8). Regions in direct contact with an oat flake showed enrichment of genes linked to nutrient uptake (CHX17, APRX) and glycogen/glycolysis pathways. Spatial proximity correlated with transcriptome similarity for SM1, SM2, and SM4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 are supported by spatial RNA-seq data with appropriate clustering, differential expression analysis, and GO enrichment analysis (Figures 2G-I, supplementary figures). The functional interpretations of genes are based on studies in related organisms (Hermann and Cox, 1995; Jung et al., 1996; Alim et al., 2013; Somesh et al., 2006; Kunkel et al., 2019; Cellier et al., 2004; Kodama et al., 2007; Maier et al., 2020), which is reasonable given the lack of complete annotation in Physarum. The correlation between spatial proximity and transcriptome similarity (C54) is quantitatively demonstrated with appropriate statistical analysis. The overall conclusion (C55) appropriately summarizes the spatial transcriptome findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Single-nucleus RNA-seq of two plasmodia (primary and secondary) revealed nuclei heterogeneity with gradients rather than discrete states. The primary plasmodium showed signatures of ongoing nuclei division, with a nuclei cluster expressing racH (a growth front-specific gene). Pseudotemporal ordering of cycling nuclei showed strong concordance with the spatial wave of mitotic gene expression observed in SM1, supporting that spatial gene expression heterogeneity can be observed at the single-nucleus level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 are supported by snRNA-seq data from two time points with appropriate experimental design (10x Genomics platform, FACS enrichment). The detection of 591 UMIs per nucleus (C59) is reasonable given the small nuclear size (5.6 \u03bcm). The observation of gradients rather than discrete states (C60) is consistent with the lack of compartmentalization in the syncytium and is demonstrated through UMAP visualization. The concordance between single-nucleus pseudotime and spatial pseudospace (C63) is quantitatively shown in Figure 3D, providing strong evidence that spatial heterogeneity reflects nuclear heterogeneity. The analysis appropriately accounts for unannotated transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The secondary plasmodium (sampled from fan and network regions) showed greater nuclei heterogeneity than the primary plasmodium. Nuclei clusters were dominated by either fan or network origins, with fan-enriched clusters marked by racH and network-enriched clusters marked by SCP1. A nuclei cluster expressing fruiting body-associated genes (GRLE, PTP2) showed enrichment for glycogen synthesis rather than sporulation genes, suggesting a nutrient response state. Correlation analysis between single-nucleus and spatial clusters allowed inference of nuclear location based on transcriptomic state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 are supported by snRNA-seq data with appropriate clustering and correlation analysis (Figures 3E-G, supplementary figures). The unequal mixing of nuclei from different regions (C66-C67) is quantitatively demonstrated and consistent with the spatial transcriptome data. The interpretation of cluster 3 (C68-C71) is appropriately cautious, noting the absence of sporulation markers while identifying glycogen synthesis enrichment. The correlation analysis (C72-C74) is methodologically sound, using pseudobulk estimates and appropriate gene sets. The overall conclusion (C75) appropriately summarizes the findings while acknowledging that causation remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Single-cell RNA-seq of haploid Physarum amoebae detected an average of 14,525 mRNA molecules per cell. Amoebae did not show greater gene diversity than plasmodium nuclei; instead, plasmodia used an increased repertoire of genes. Amoebae showed substantial transcriptome variation with at least six clusters, mostly linked to cell cycle phases. One cluster was marked by TOP6A, a meiosis-associated gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by scRNA-seq data with appropriate experimental design (10x Genomics platform) and analysis (Figures 4A-E, supplementary figures). The higher mRNA detection in amoebae vs. nuclei (C77) is appropriately explained by the presence of cytoplasm. The gene diversity comparison (C78-C79) is quantitatively demonstrated in Figure 4D using Venn diagrams with appropriate filtering. The identification of cell cycle-linked heterogeneity (C80) is supported by citation to prior work (Noegel et al., 1999). The interpretation of TOP6A expression (C81) as potentially meiotic is reasonable given citations to prior work (Ramesh et al., 2005; Dee, 1966), though the authors appropriately note this is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Comparative analysis of amoebae and plasmodia revealed differences in mitotic mechanisms. Amoebae undergo open/astral mitosis with centrosomes, while plasmodia undergo closed mitosis within the nucleus. Some genes (CDKA1, PATS1) increase expression toward late mitosis in both states, but tubulins and kinesins show differential expression. Specific tubulins (TBAN, TBB2, TBB4, TBE, TBG) and kinesin KIF1 are highly expressed in plasmodia. All amoeba cell cycle genes are also expressed in plasmodia, suggesting shared proteins but potentially different mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C91 are supported by comparative analysis of scRNA-seq and spatial RNA-seq data with appropriate integration methods (Seurat CCA anchoring) (Figures 4B, 4F-G). The characterization of open vs. closed mitosis is supported by citations to prior work (Solnica-Krezel et al., 1991; Havercroft and Gull, 1983; Tanaka, 1973; Heath, 1980). The differential expression of tubulins is quantitatively demonstrated and consistent with prior reports (Burland et al., 1988; Burland et al., 1983). The inference about differential tubulin usage orchestrating the mitotic switch (C89) is reasonable but appropriately presented as a suggestion. The speculation about shared proteins but different mechanisms (C91) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Amoebae showed specific expression of lifestyle-related genes including MYLI (phagocytosis/filopodia assembly), COMC (intercellular communication), and NGAP (chemotaxis), with functions inferred from studies in Dictyostelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by scRNA-seq data (Figure 4H) with appropriate citations to functional studies in related organisms (Tuxworth et al., 2001; Titus, 1999; Kibler et al., 2003; Xu et al., 2017). The inference of function from Dictyostelium is reasonable given the phylogenetic relationship, though the authors appropriately acknowledge the limitations of cross-species functional annotation in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose that Physarum's dynamic structure formation and environmental responses are coordinated through localized gene regulation, with nuclei serving as distributed processing units that receive local and systemic signals. Nuclei can be fixed in the ectoplasm for extended periods or advected through the endoplasm, enabling complex behavioral responses that vary across the syncytium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 represent interpretive conclusions based on the collective data from spatial RNA-seq, snRNA-seq, and imaging experiments. The observation of spatial gene expression differences (C96) is well-supported by the data. The correlation with structural components and environmental stimuli (C97) is demonstrated in the spatial transcriptome analysis. The model of nuclei as processing units (C98) is a reasonable interpretation of the combined findings, though it remains a hypothesis. The observations about nuclei mobility (C99) are supported by video data. The overall conclusion (C100) appropriately synthesizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors find transcriptome heterogeneity among nuclei within the same plasmodium, with different proportions of nuclear states in growth front vs. network regions. They hypothesize this could enable rapid access to different transcriptional programs, possibly through co-maintenance of multiple epigenetic states. They find no evidence that specialized nuclear states exist prior to plasmodium formation in amoebae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are well-supported by the snRNA-seq data. The hypothesis about maintaining different states for rapid response (C103-C104) is appropriately presented as speculation based on the observed heterogeneity. The lack of evidence for pre-existing specialized states in amoebae (C105) is supported by the scRNA-seq data showing primarily cell cycle-linked variation. These interpretations are reasonable given the data, though the mechanistic hypotheses require further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors observe intact nuclei in the endoplasm that shuttle at speeds up to 1.3 mm/s. The effective dispersion coefficient is four times smaller in fan regions compared to the core network, leading to extended dwelling times and increased trapping probability in growth fronts. They suggest this could enable nuclei from other locations to 'seed' gene expression modules at new locations, though they acknowledge this hypothesis requires further testing. The data strongly support nuclear adaptation to local environmental stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 are supported by imaging data and citations to prior work (Earnshaw and Steer, 1983; Kamiya, 1950; Alim et al., 2013; Nakagaki et al., 2000b). The dispersion coefficient difference (C108) is supported by citation to prior work (Marbach et al., 2016) and video observations. The inference about extended dwelling times (C109) is reasonable. However, the 'seeding' hypothesis (C110) is highly speculative and lacks direct experimental support. The authors appropriately acknowledge this limitation (C111), noting that while the data support nuclear adaptation to local stimuli, the seeding hypothesis requires further testing. The result is uncertain because the key mechanistic claim lacks experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Comparative analysis reveals that mechanisms for different types of nuclei division are encoded in the Physarum genome. Plasmodium-specific gene sets are used for syncytial nuclei division, while a core set of mitotic genes is shared between amoebae and plasmodia. The switch in mitotic behavior is suggested to occur through activation of additional genetic programs that reorganize core mitotic gene products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by the comparative analysis of scRNA-seq and spatial RNA-seq data showing both shared and plasmodium-specific gene expression. The inference about the mitotic switch mechanism (C114) is appropriately presented as a suggestion based on the differential gene expression patterns. While the mechanistic details remain to be elucidated, the data provide strong evidence for the existence of both shared and stage-specific genetic programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The wave of synchronized nuclei divisions in Physarum plasmodia is orchestrated across a gigantic syncytium, making it a unique model for studying syncytial behavior. Mitotic synchronicity breaks down when networks exceed a critical size, after approximately five generations, or when cytoplasmic flows are interrupted, suggesting a tight connection between network structure and mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is an interpretive statement about the significance of the findings that is reasonable given the data. Claims C116-C117 are supported by citations to prior work (Guttes et al., 1961; Mohberg, 1974; Wolf et al., 1979; Wolf and Sauer, 1982). The inference about a connection between network structure and mitosis (C117) is reasonable given the cited observations, though the mechanism remains unknown as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors suggest that the syncytial strategy may be advantageous in certain scenarios, including in multicellular organisms. Endoreplication supports rapid growth, and multinucleation may enhance plasticity in response to environmental stress. The data reveal that individual nuclei can process local signals while being shuttled, and maintaining a pool of nuclear states could provide rapid access to genetic programs throughout the syncytium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by citations to prior work (Gandarillas et al., 2018; Cookson et al., 2006) and represent reasonable contextualization of the findings. Claim C120 appropriately summarizes the key findings of the study regarding nuclear heterogeneity and mobility. These interpretive statements are well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors acknowledge limitations of their study, noting that the Physarum genome and transcriptome are not as well-annotated as other model systems, and that many hundreds of transcripts were not considered in their analyses. They conclude that slime molds offer extraordinary opportunities to explore fundamental principles of life including labor division, mitotic switching, specialization, and cooperation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 appropriately acknowledge important limitations of the study regarding genome annotation and the exclusion of unannotated transcripts from some analyses. Claim C123 is a reasonable concluding statement about the significance and potential of the work. These statements demonstrate appropriate scientific caution and perspective.",
+    "result_type": "MINOR"
+  }
+]

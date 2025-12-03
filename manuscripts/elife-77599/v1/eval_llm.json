@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C23",
+      "C24"
+    ],
+    "result": "GLMsingle is a scalable, automated toolbox that requires only fMRI time-series data and a design matrix as inputs, integrating three techniques (custom HRF identification, cross-validation-derived noise regressors, and ridge regression) to improve single-trial fMRI response estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C23-C24 collectively describe the GLMsingle toolbox's design and capabilities. The tool's availability, input requirements, algorithmic components, automation, and computational efficiency are all explicitly stated and documented in the methods section with empirical benchmarking data (C82-C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "GLMsingle substantially improves the reliability of beta estimates across visually-responsive cortex in all subjects in NSD and BOLD5000, with nearly uniform improvements in NSD and somewhat smaller but still substantial improvements in BOLD5000 due to lower SNR and longer inter-stimulus intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C30, C32-C35 are supported by empirical data shown in Figure 2. The reliability improvements are quantified using test-retest correlations, and the differences between datasets are explained by methodological factors (SNR, ISI). The analysis includes appropriate controls and statistical comparisons across subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "GLMsingle shows substantial and consistent improvements in reliability across subjects in the StudyForrest auditory dataset, with each component conferring added benefit, suggesting general applicability to diverse fMRI datasets beyond visual modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C50-C55 demonstrate generalizability through validation on an independent auditory dataset with different characteristics (smaller scale, different modality, jittered ISI). Figure 4 shows consistent improvements across 16 subjects with incremental benefits from each GLMsingle component, supporting the claim of broad applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The FitHRF procedure identifies optimal HRFs that exhibit structured spatial gradients in active voxels, are highly consistent across sessions, and capture voxel-wise differences in HRF shapes beyond subject-specific deviations, which is supported by biophysical principles related to vascular variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by Figure 2\u2014figure supplement 1 showing spatial structure and temporal stability of HRF selection. The interpretation is strengthened by citation to biophysical principles (C42). The analysis appropriately examines HRF consistency across sessions and relates findings to known vascular heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Fractional ridge regression yields more reliable signal estimates than LSS for both assumed and voxel-wise tailored HRFs, with improvements most pronounced in the most reliable voxels, because ridge regression flexibly tailors regularization to each voxel's SNR rather than applying uniform heavy regularization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by direct empirical comparison in Figure 3. The analysis includes both HRF conditions and shows consistent superiority of ridge regression over LSS. The mechanistic explanation (C45-C46) is reasonable given the known properties of these methods, though the claim about LSS degrading reliable voxels (C46) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "GLMsingle uses internal cross-validation to optimize hyperparameters, and the reliability improvements remain broadly unchanged when using completely independent data partitions for validation, confirming that improvements are not artifacts of the cross-validation procedure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 describe the cross-validation framework and validate it against potential circularity concerns. Figure 3b shows that results are qualitatively unchanged with strict data separation, addressing a key methodological concern. This validation strengthens confidence in the reported improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C61",
+      "C65",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "GLMsingle dramatically reduces temporal autocorrelation in beta estimates, helping to disentangle neural responses to nearby stimuli in event-related designs even with relatively slow presentation rates, as demonstrated by substantial decreases in off-diagonal correlations in temporal similarity matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C61, C65, C106-C108 are supported by Figure 5 showing temporal autocorrelation patterns. The analysis appropriately uses pseudorandom stimulus ordering as a baseline expectation (zero correlation) and quantifies deviations. The improvements are substantial and consistent across both NSD and BOLD5000 despite different ISIs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "GLMsingle enhances representational similarity between subjects within and across datasets (NSD and BOLD5000), revealing meaningful shared variance in neural responses, which is especially notable given the substantial methodological differences between datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C66-C68, C70-C72 are supported by RSA analyses in Figure 6. The logic is sound: noise should be stochastic across subjects, so denoising should increase cross-subject similarity. The cross-dataset result is particularly compelling given the 7T vs 3T difference and other methodological variations. GLMsingle was not optimized for this metric, making it a valid independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C76"
+    ],
+    "result": "GLMsingle substantially boosts one-versus-many MVPA decoding accuracy for visual stimuli, with mean accuracy approximately tripling in NSD and doubling in BOLD5000, and clarifies representational structure such as the animate/inanimate division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C76 are supported by Figure 7 showing dramatic improvements in challenging 82-class (NSD) and 20-class (BOLD5000) decoding tasks. The MDS visualization (Figure 7b) provides qualitative support for improved representational clarity. The improvements are substantial and consistent across reliability thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Large-scale fMRI datasets provide high-resolution brain responses to thousands of naturalistic stimuli but face challenges achieving sufficient SNR due to brief stimulus durations and few repetitions, with diverse noise sources limiting data quality especially in condition-rich designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C18 establish the scientific context and motivation for the work. These are well-supported by citations to relevant literature and represent established knowledge in the field. The characterization of the problem (low SNR in condition-rich designs) is accurate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "GLMsingle operates within the GLM framework for fMRI analysis, defining noise as variability across repeated conditions and seeking to maximize data quality at the individual voxel level in individual subjects for single-trial response estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 describe the analytical framework and design goals. These are clearly stated and consistent with standard GLM methodology. The operational definition of noise (C21) is appropriate for the cross-validation framework used. The focus on voxel-level, single-subject analysis is a stated design choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "GLMsingle was previously applied to NSD, and the current work extends validation to BOLD5000, which differs in field strength, event timing, spatial/temporal resolution, and number of within-session stimulus repetitions, requiring methodological adaptations for cross-session data grouping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 accurately describe the datasets and methodological adaptations. The differences between NSD and BOLD5000 are well-documented, and the need for session grouping in BOLD5000 (C28) is justified by the cross-validation requirements. This provides important context for interpreting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The HRF library used in GLMsingle consists of 20 regularly-spaced points derived from empirical BOLD timecourses via PCA, was previously used for NSD analysis, and is the default for all analyses, though GLMsingle requires repeated trials for cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 describe the HRF library construction and requirements. The derivation procedure is clearly documented with citation to the NSD paper. The requirement for repeated trials (C80) is a fundamental constraint of the cross-validation approach and is appropriately stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "GLMsingle returns beta weights in percent signal change units by default, can process large datasets efficiently (4.8 hours for one NSD session on a 32-core workstation with 38 GB peak RAM usage), and allows flexible parameter adjustment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 provide implementation details supported by empirical benchmarking data. The computational requirements (C82-C83) are documented with specific hardware and timing information. The flexibility claim (C84) is supported by the documented parameter options in the toolbox.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "NSD and BOLD5000 share overlapping COCO stimuli enabling direct comparison, were collected with different acquisition parameters (7T/1.8mm/1.6s TR vs 3T/2mm/2s TR) and trial structures (4s vs 10s), with BOLD5000 requiring session concatenation and global rescaling, and both datasets were z-scored within sessions before analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92, C94 provide detailed methodological information about data acquisition and preprocessing. These are factual descriptions of the datasets and analysis procedures, well-documented in the methods section. The preprocessing steps are appropriate and clearly justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The StudyForrest music-listening dataset includes 16 subjects listening to 25 six-second musical clips from 5 genres with 8 repetitions each, using jittered 4-8s delays and presenting each stimulus once per run, analyzed with default GLMsingle parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 accurately describe the StudyForrest dataset characteristics and analysis approach. These are factual descriptions consistent with the cited dataset paper and clearly documented in the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The nsdgeneral ROI is a manually-drawn liberal mask of visual cortex on fsaverage, and LSS is a popular technique for rapid event-related designs that fits separate GLMs for each stimulus, with an implementation included in GLMsingle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C102-C104 provide methodological details about the ROI definition and LSS comparison. The ROI description is factual with appropriate citation. The LSS description is accurate and well-cited, and its inclusion in GLMsingle enables direct comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "241 stimuli overlap between BOLD5000 and the first 10 NSD sessions for RSA analysis, with 82 classes used for NSD MVPA decoding and 20 classes for BOLD5000, excluding subject CSI4 from MVPA due to insufficient repetitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 provide specific details about the RSA and MVPA analyses. The numbers are clearly stated and the exclusion of CSI4 is appropriately justified. These details are important for understanding the scope and limitations of the decoding analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The relatively long timescale of temporal autocorrelations reflects the long timescale of hemodynamic responses (post-undershoot extending 30+ seconds) and/or slow physiological noise from cardiac and respiratory variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is explicitly speculative (\"We speculate that...\") and provides a plausible mechanistic explanation for observed autocorrelation patterns. While the explanation is consistent with known properties of BOLD responses and physiological noise, it is not directly tested or validated in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

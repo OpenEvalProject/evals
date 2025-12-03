@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors profiled 30 pairs (60 TFs) of WGD-retained transcription factor paralogs in budding yeast using ChEC-seq, representing ~35% of all TFs associated with a single WGD event ~100 million years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C71-C72 establish the study system and methodology. The WGD event timing and TF percentage are supported by literature citations (C1), the SGD database provides the initial list (C2), and successful profiling of 30 pairs is verified by high reproducibility (Pearson's r>0.95, C3). The methodology using ChEC-seq is well-established (C72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C46",
+      "C73",
+      "C90",
+      "C91",
+      "C106"
+    ],
+    "result": "Approximately 40% of WGD TF paralog pairs retained conserved binding preferences (Pearson's r>0.8), while ~60% evolved differential binding preferences, with divergence occurring at different rates between pairs and between individual promoters within pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C46, C73, C90-C91, C106 collectively demonstrate the spectrum of binding preference conservation and divergence. The quantitative thresholds (Pearson's r>0.8 for conservation) are consistently applied, and specific examples (Met31/Met32, Gzf3/Dal80, Ace2/Swi5) illustrate the range of behaviors. The data are reproducible and supported by multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Sequence analysis of DNA-binding domains (DBDs) revealed that specificity-conferring residues varied between zinc cluster family paralogs but remained largely invariant in C2H2 zinc finger family paralogs, with in vitro motif preferences often similar among paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C74-C76 are supported by systematic sequence analysis shown in Figure 3. The classification of residues into family-defining and specificity-conferring categories follows established methods (Lambert et al., 2019), and the differential conservation patterns between families are clearly documented. The observation about in vitro motif similarity (C74) is supported by analysis of published data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C47",
+      "C48",
+      "C92",
+      "C93"
+    ],
+    "result": "DBD-swapping experiments demonstrated that for most paralog pairs (12 of 16 tested), variations driving divergence in promoter-binding preferences are located outside the DBDs, with binding preferences remaining largely invariant (Pearson's r>0.8) to DBD swapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C47-C48, C92-C93 are supported by systematic DBD-swapping experiments across multiple paralog pairs. The experimental design is sound (swap DBDs and measure binding changes), and the results are quantified with correlation coefficients. The exception for zinc cluster TFs (C10-C11) is noted but doesn't contradict the main conclusion. The data are shown in Figures 4 and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C51",
+      "C52"
+    ],
+    "result": "Paralog deletion experiments revealed that strong interactions between TF paralogs are rare, with only 4 of 55 tested TFs showing large-scale effects. Cooperative and compensatory interactions were generally minor, and existing strong interactions tend to increase mutation fragility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19, C51-C52 are supported by systematic paralog deletion experiments across 55 TFs. The quantification of effects is clear (complete loss of binding for Pip2 and Hms2, loss of paralog targets for Dal80 and Tbs1), and the rarity of large-scale effects is documented in Figure 5. The inference about mutation fragility (C19) follows logically from the observation that cooperative interactions create dependencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C65"
+    ],
+    "result": "Phylogenetic sequence analysis revealed that C2H2 zinc finger paralogs evolved symmetrically (consistent with sub-functionalization), while paralogs of other families evolved asymmetrically (suggesting neo-functionalization), based on evolutionary rate analysis of non-DBD sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C65 are supported by phylogenetic analysis of non-DBD sequences across multiple species. The methodology is appropriate (maximum likelihood trees with constrained topology), and the interpretation follows established evolutionary theory (C65, supported by citations). The symmetric vs. asymmetric evolution patterns are quantified and shown in Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C49",
+      "C50",
+      "C83",
+      "C84",
+      "C104",
+      "C105"
+    ],
+    "result": "Analysis of K. lactis orthologs revealed that the prevalent route for diversification is biased neo/sub-functionalization: ancestral preferences split unevenly between duplicates, with the least conserved paralog preferentially acquiring new targets. In all 11 diverging cases, at least one paralog showed greater similarity to the K. lactis ortholog than to its S. cerevisiae paralog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26, C49-C50, C83-C84, C104-C105 are supported by systematic profiling of K. lactis orthologs expressed in S. cerevisiae. The experimental design is sound (using non-WGD orthologs as proxies for ancestral TFs), and the validation cases (Ixr1/Abf2, Rsf2/Tda9) support the approach. The quantification of divergence asymmetry and new target acquisition is clear, and the pattern holds across multiple paralog pairs (Figure 7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C85"
+    ],
+    "result": "In three of five diverging zinc cluster paralog pairs, differences in binding preferences correlated with differential motif preferences (spacing/orientation or CGG variation), with interactions occurring through heterodimerization (Hal9/Tbs1, Oaf1/Pip2) or competition (Pdr1/Pdr3). Zinc cluster paralogs showed greater dependence on DBD variations and were more likely to interact compared to other families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C60-C64, C85 are supported by detailed analysis of zinc cluster paralogs combining motif analysis, paralog deletion, and DBD-swapping experiments. The structural basis for zinc cluster TF binding (dimers recognizing spaced CGG sites, C60-C61) is well-established (MacPherson et al., 2006). The specific mechanisms (heterodimerization vs. competition) are supported by experimental data in Figure 8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "For Yrr1/Pdr8 and Upc2/Ecm22 zinc cluster paralogs, CGG-containing motifs did not distinguish between paralogs, but they localized to different promoters. Divergence was largely DBD-independent for Yrr1/Pdr8 but DBD-dependent competition for Upc2/Ecm22, with DBD-swapping revealing co-evolution of DBD and linker domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 are supported by combined motif analysis, DBD-swapping, and deletion experiments. The contrast between Yrr1/Pdr8 (DBD-independent) and Upc2/Ecm22 (DBD-dependent competition) is clearly demonstrated. The observation about co-evolution (C36) is supported by the finding that DBD-swapping retained binding at TF-specific sites but increased access to non-specific sites, with citation to supporting literature (Yang et al., 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C69"
+    ],
+    "result": "For the Gis1/Rph1 paralog pair, phylogenetic analysis revealed a two-step evolutionary scenario: first, Gis1 lost demethylase activity and specialized toward a subset of ancestral targets through DBD-independent evolution; second, mutations in Rph1's DBD prevented binding to Gis1-specialized sites, reducing paralog interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43, C69 are supported by integrated analysis combining deletion experiments, DBD-swapping, motif analysis, and phylogenetic sequence analysis. The loss of demethylase activity in Gis1 is supported by citation (Klose et al., 2006, C40), and the timing of DBD mutations in Rph1 is documented in the phylogeny (Figure 9E). The evolutionary scenario is a well-reasoned inference from multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "Analysis of multiple diverging paralog pairs suggests a common evolutionary path whereby DBD-independent divergence is complemented by asymmetric competition, limiting residual paralog interference. This pattern appears to apply broadly beyond the Gis1/Rph1 case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C86-C87, C89 extend the Gis1/Rph1 findings to other paralog pairs. The generalization is supported by analysis shown in Figure 9F and supplementary figures. The reasoning that divergence requires both acquisition of differential preferences and limiting cross-binding (C87) is sound. However, the claim is somewhat tentative ('might conform', 'suggests'), appropriately reflecting that not all cases were analyzed in equal detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors propose that DBD preferences may play a minor role in setting promoter-binding preferences but be primarily important for stabilizing binding, and that the gradual, promoter-specific divergence observed is better explained by models involving multiple specificity determinants within TFs recognizing multiple promoter features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C98 represent speculative interpretations and mechanistic proposals. While the observations of gradual, promoter-specific divergence are well-supported, the proposed model involving multiple specificity determinants (C97-C98) is presented as a hypothesis rather than a tested conclusion. The reasoning is logical, but direct experimental evidence for the proposed mechanism is limited to citations of the authors' own work on Msn2 and Yap1 (C99), which may not generalize to all TFs studied here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The authors cite their recent work showing that Msn2 and Yap1 TFs' promoter-binding depends on cumulative contributions of multiple specificity determinants distributed throughout long intrinsically disordered regions as a paradigm for the proposed model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by citations to the authors' published work (Jana et al., 2021; Brodsky et al., 2020; Brodsky et al., 2021). However, this represents prior work rather than a result of the current study, and its relevance as a general model for the TFs studied here remains to be established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors discuss implications for transcriptional network design, proposing that sub-functionalization confers hierarchical design while neo-functionalization supports distributed design, and that evolutionary trajectories of retained paralogs shape network architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C103 represent speculative discussion about broader implications. While C100 (duplication as major source of new TFs) is established knowledge, the specific proposals about hierarchical vs. distributed network design (C102-C103) are hypothetical and not directly tested in this study. These are reasonable inferences but lack experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The authors note that retention of ~40% of paralog pairs with identical binding sites must be due to properties other than binding divergence, possibly including beneficial dynamic properties from interactions between duplicates that cross-bind their own promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C108 represent speculative discussion. The observation that ~40% of paralogs have conserved binding (C107) is well-supported, but the proposed explanations (C108) are hypothetical. The tendency to cross-bind own promoters (C59) is documented, but whether this confers beneficial dynamic properties is speculation supported only by citations to general literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The authors note that TF binding is necessary but not sufficient for gene regulation, and that diverging binding preferences may not always translate into changes in transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 represent appropriate caveats based on established knowledge in the field (C109). The limitation that binding divergence may not equal functional divergence (C110) is a valid point, though it somewhat limits the functional interpretation of the binding data presented. This is acknowledged as a limitation requiring future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The introduction establishes background knowledge that gene duplication (particularly WGD) is the major source of new TFs, that TF paralogs can diverge through multiple mechanisms, and that TFs with similar in vitro binding can localize differently in vivo through poorly understood mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 represent well-established background knowledge supported by extensive literature citations. These provide appropriate context for the study but are not results of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C82",
+      "C88"
+    ],
+    "result": "Various supporting observations and contextual information are provided, including that many TFs bind their own or paralog promoters, specific functional information about individual TFs (Abf2, Ixr1, Rsf2/Tda9), and examples from prior work (Mcm1/Arg80, protein-protein interactions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C66-C68, C70, C82, C88 represent supporting observations and contextual information. These are appropriately documented with data (C59) or citations to literature (C66-C68, C82, C88), but represent minor supporting details rather than major findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors describe their experimental logic and reasoning, including the rationale for DBD-swapping experiments and potential mechanisms of paralog interaction (heterodimerization, competition) and their effects on mutation robustness/fragility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 represent experimental design rationale and theoretical framework. The logic is sound and appropriately guides the experimental approach. The reasoning about robustness vs. fragility (C81) is supported by citation to prior work on protein-protein interactions (Diss et al., 2017).",
+    "result_type": "MINOR"
+  }
+]

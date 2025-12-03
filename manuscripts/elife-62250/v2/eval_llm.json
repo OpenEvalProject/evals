@@ -1,0 +1,490 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ATAC-seq analysis of aging ISCs reveals overall stable chromatin accessibility with differential accessibility at Polycomb target gene promoters. Motif analysis identified enrichment for Trithorax-like (Trl) and Zeste (z) motifs in differentially accessible promoter regions across aging time-points, suggesting potential mis-regulation of PcG proteins in old ISCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36-C45 are supported by ATAC-seq data showing stable global chromatin accessibility (C36-C39) but differential accessibility at specific promoter regions (C40-C42) enriched for Trl and z motifs (C43-C44). The inference that this suggests PcG mis-regulation (C45) is reasonable given the known function of Trl and z in recruiting PcG proteins (C44). The data quality appears robust with appropriate replication and correlation analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "RNA-seq analysis reveals progressive transcriptional changes in aging ISCs with significant enrichment of enteroendocrine (EE) cell specification genes. Young ISCs cluster separately from mid-aged to geriatric ISCs, with increasing numbers of differentially expressed genes at old and geriatric time-points. GSEA shows consistent enrichment of EE genes in upregulated genes during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C56 are supported by RNA-seq data showing progressive transcriptional changes (C49-C52), enrichment of EE genes (C54-C55), and appropriate statistical analyses including Pearson correlation and PCA (C49-C50). The correlation between chromatin accessibility and gene expression changes is appropriately assessed (C46-C48). Sample sizes and statistical methods appear adequate with adjusted p-values reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Single-cell RNA-seq identifies age-specific cell states in the Drosophila midgut, including 'stressed ISC' and 'damaged cell' populations that are almost exclusively present in old flies. These populations show enrichment for stress response genes, DNA repair pathways, and are consistent with previously reported elevated stress signaling and DNA damage in the aged epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C69 are supported by scRNA-seq data showing distinct cell clusters (C58-C60), appropriate batch correction, and gene set enrichment analyses (C61, C64, C66). The characterization of 'stressed' and 'damaged' cell states is supported by GO and pathway analyses (C64, C66). The consistency with prior work (C67-C69) strengthens the interpretation. The pseudo-bulk analysis validates findings against bulk RNA-seq (C62-C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Trajectory analysis of EE progenitor cells reveals a significant increase in EE progenitor cell numbers in old samples, with increased expression of pro-neural genes including deadpan (dpn). The upregulation of EE genes in aged ISCs observed by bulk RNA-seq is driven by an increase in the number of EE-specified ISCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by trajectory analysis of scRNA-seq data (C70), quantification showing increased EE progenitor cells (C71), and expression analysis of pro-neural genes (C72-C73). The integration of bulk and single-cell RNA-seq data (C74) provides strong support for the conclusion that increased EE gene expression reflects increased EE-specified ISC numbers rather than per-cell expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Immunohistochemistry confirms a progressive increase in the proportion of EE cells and EE progenitor cells with age in the Drosophila intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by immunohistochemistry data using both genetic reporters and direct immunostaining (C75), with appropriate quantification and statistical analysis. The data validate the scRNA-seq findings using an orthogonal method. Sample sizes appear adequate (n=6-10 per group) with multiple independent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Aging ISCs accumulate H3K27me2, approaching levels observed in EE cells. Luminex xMAP analysis shows a 153% increase in H3K27me2 in old flies, and immunostaining confirms cell-type-specific increases in ISCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by two independent methods: Luminex xMAP technology for quantitative measurement (C77) and immunohistochemistry for cell-type-specific analysis (C78-C79). The convergence of these methods strengthens the conclusion. Statistical significance is reported with appropriate sample sizes. The observation that ISCs acquire EE-like H3K27me2 levels supports the lineage fidelity hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Loss of E(z) or Pc significantly reduces EE cell differentiation in ISC lineages without affecting ISC proliferative capacity. E(z) knockdown decreases H3K27me2 intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by clonal analysis showing reduced EE differentiation (C80), immunostaining confirming decreased H3K27me2 (C81), and proliferation assays showing no effect on ISC proliferation (C82). The use of two independent RNAi lines for each gene strengthens the conclusions. Statistical analyses show significance with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Loss of trithorax (trx) increases both EE cell numbers and ISC proliferation, demonstrating antagonistic functions of trx and Pc in ISC lineage specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by multiple genetic approaches: RNAi knockdown (C83, C85) and heterozygous mutant analysis (C84). The data show consistent increases in both EE differentiation and proliferation across different experimental systems. Statistical significance is demonstrated with appropriate controls. The antagonistic relationship with Pc is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Pc knockdown in ISCs decreases expression of EE specification genes (ase, Syt4, sc, phyl) and increases EC gene expression, suggesting Pc normally represses EC genes and is required for EE gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by RNA-seq data after Pc knockdown showing decreased EE gene expression (C87) and increased EC gene expression (C88). GSEA analysis supports the functional interpretation (C86). The inference that Pc represses EC genes and promotes EE gene expression (C89) is reasonable given the data, though the EC gene increase is noted as not statistically significant (C88), which appropriately tempers the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Trithorax (trx) knockdown results in significant upregulation of EE genes and cell cycle genes, with GSEA showing enrichment for neuron differentiation and EE cell fate-related GO terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by RNA-seq data showing upregulation of EE and cell cycle genes (C90) and GSEA analysis confirming enrichment of EE-related pathways (C91). The data are consistent with the antagonistic relationship between trx and Pc observed in the phenotypic analyses. Statistical significance is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Overexpression of scute (sc) rescues EE differentiation deficiency after Pc loss, indicating sc acts downstream of the Pc complex in regulating EE differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by genetic interaction experiments showing rescue of the Pc knockdown phenotype by sc overexpression (C92). The epistasis analysis appropriately supports the conclusion that sc acts downstream of Pc (C93). Statistical analysis shows significance with appropriate controls. This provides mechanistic insight into the Pc-mediated regulation of EE differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Re-balancing Pc and trx transcript levels in trans-heterozygous mutants restores EE numbers to wild-type proportions, highlighting the importance of maintaining stable stoichiometry between these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by genetic analysis of single and trans-heterozygous mutants showing that Pc1 heterozygotes have normal EE levels (C94), trxE2 heterozygotes have elevated EE levels (C95), and the double heterozygote restores normal levels (C96). This elegant genetic experiment demonstrates the importance of Pc/trx balance. Statistical analysis is appropriate with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Pc knockdown results in moderate decrease in global chromatin accessibility, with differential accessibility primarily in intergenic and intronic regions. Promoter analysis reveals decreased accessibility at ISC genes (esg, spdo, dpn) and increased accessibility at transcription factor genes (Abd-B, Lim1, chinmo).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are supported by ATAC-seq data after Pc knockdown showing global and region-specific changes in chromatin accessibility (C97-C101). The observation that EE gene promoters are not significantly affected (C102) is appropriately noted and suggests indirect regulation. The data provide mechanistic insight into Pc function, though the unexpected decrease in global accessibility (C97) warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Long-term Pc knockdown in ISCs prevents the age-related increase in EE cells and EE progenitors and reduces dysplasia in aged animals, suggesting increased EE cells contribute to age-related intestinal dysplasia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 are supported by long-term (28 day) Pc knockdown experiments showing reduced EE cell accumulation (C103), maintained ISC numbers (C104), reduced dysplasia (C105), and correlation between EE progenitor numbers and dysplasia levels (C107). The inference that increased EE cells contribute to dysplasia (C106) is well-supported by the correlation and rescue data. This demonstrates the functional significance of the age-related changes in lineage fidelity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Axenic aging significantly reduces the age-related increase in EE cells and EE progenitors compared to conventional aging, suggesting commensal dysbiosis contributes to the shift in ISC lineage fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by comparison of conventionally and axenically aged flies showing reduced EE cell accumulation in the absence of microbiota (C109). Appropriate controls and statistical analyses are included. This links the age-related changes in lineage fidelity to environmental factors (commensal dysbiosis) and suggests a mechanism involving inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "JNK pathway activation in ISCs (via puckered knockdown) increases the proportion of EE cells, supporting a role for age-related inflammation and stress signaling in influencing ISC lineage choice toward the EE fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by genetic manipulation of JNK signaling showing increased EE differentiation after puc knockdown (C110). The use of two different driver systems (esg-F/Ots and ISCts) strengthens the conclusion. The inference that age-related inflammation influences lineage choice (C111) is well-supported by integration with the axenic aging data. This provides a mechanistic link between environmental stress and lineage fidelity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study proposes a model where age-related deregulation of Pc function in ISCs, driven by chronic stress signaling and inflammation, causes loss of lineage fidelity resulting in increased EE differentiation that contributes to epithelial dysplasia through a vicious cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 represent the integrated model of the study. The model is well-supported by the convergence of multiple lines of evidence: ATAC-seq and RNA-seq showing Pc target deregulation (C2-C3), scRNA-seq showing increased EE progenitors (C71), immunohistochemistry confirming increased EE cells (C75), genetic experiments demonstrating Pc requirement (C80), rescue experiments preventing dysplasia (C105), axenic aging reducing EE accumulation (C109), and JNK activation promoting EE fate (C110). The proposed vicious cycle (C117) is a reasonable inference though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The scRNA-seq analysis identifies a 'stressed ISC' population that increases with age, is consistent with previous studies, and may represent a correlate to mammalian senescent cells based on gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 are supported by scRNA-seq data showing consistency with prior work (C118), overlap with bulk RNA-seq (C119), and appropriate characterization of the stressed ISC population (C120-C121). The speculation that this population may represent senescent cells (C122) is appropriately tentative and based on gene expression patterns (p53, DNA repair pathways upregulated; cell cycle genes repressed). This represents a valuable characterization of age-related ISC states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Neural stem cell (NSC) gene signatures are upregulated in old ISCs, similar to a neuroendocrine tumor model, suggesting this may contribute to age-related ISC phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 are supported by comparison with a previous tumor model study (C123) and bulk RNA-seq data showing NSC gene upregulation (C124). The functional significance of this observation remains unclear and requires further investigation. This represents an interesting observation that may warrant follow-up studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "ATAC-seq reveals moderate changes in chromatin organization in aging ISCs, but the significant increase in H3K27me2 levels supports a role for this modification in skewing ISC identity toward the EE fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 are supported by ATAC-seq data showing overall stability (C125) and H3K27me2 quantification showing increases in aging ISCs (C77-C79). The inference that H3K27me2 increases contribute to EE fate specification (C126) is supported by the observation that EEs have higher H3K27me2 than ISCs in young guts and that E(z) is required for EE specification. This provides mechanistic insight into the epigenetic basis of lineage fidelity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "The expression of Pc, E(z), and other PcG genes is not significantly altered in aging ISCs, suggesting aging affects their post-transcriptional regulation and/or function rather than expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by RNA-seq data showing no significant changes in PcG gene expression (C130). The inference that aging affects post-transcriptional regulation or function (C131) is reasonable given the observed changes in H3K27me2 levels and chromatin accessibility at Pc target genes. This is an important observation that focuses attention on regulatory mechanisms beyond transcription.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Pc activity regulates multiple aspects of ISC specification, with loss of Pc inducing EC gene expression, repressing EE gene expression, and decreasing chromatin accessibility at ISC identity genes, while ISC function remains largely intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 are supported by integration of RNA-seq (C87-C88), ATAC-seq (C99), and functional assays (C82, C104, C136) after Pc knockdown. The conclusion that Pc primarily regulates lineage commitment rather than ISC viability or proliferation (C137) is well-supported by the data. This provides a comprehensive view of Pc function in ISCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The antagonistic function of trx in EE differentiation is consistent with known trx-Pc antagonism, and trx loss also induces cell cycle genes and ISC proliferation, consistent with recent studies on TrxG factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 are supported by the trx knockdown data (C83-C85, C90) and consistency with prior work (C138, C140). The observation that trx affects both differentiation and proliferation (C139) suggests broader roles in ISC function. The consistency with recent studies (C140) strengthens the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C150"
+    ],
+    "result": "The interaction between JNK and Pc in the ISC lineage is complex, with JNK activation promoting EE specification while Pc knockdown inhibits EE specification, contrasting with previous reports of JNK suppressing Pc function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C150 is supported by the data showing opposite effects of JNK activation (C110) and Pc knockdown (C80) on EE specification. The observation that this differs from previous reports (C149) is appropriately noted. This suggests context-dependent interactions between JNK and Pc that warrant further mechanistic investigation. The apparent paradox is acknowledged but not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The study concludes that altered ISC cell states in old flies affect intestinal homeostasis and contribute to dysplasia, with age-associated deregulation of lineage fidelity due to elevated stress and Pc misregulation as key drivers. Pc group proteins are proposed as potential therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C163 represent well-supported summary conclusions based on the integrated data from the study. The proposal that Pc group proteins may represent therapeutic targets (C164) is appropriately speculative and based on the demonstrated functional importance of Pc in maintaining lineage fidelity and preventing dysplasia. This represents a reasonable extrapolation from the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The introduction establishes the biological context by reviewing established knowledge about stem cell lineage fidelity, epigenetic regulation, Polycomb and Trithorax group proteins, and the Drosophila intestinal stem cell system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C33 represent background knowledge and citations to previous work that establish the context for the study. These claims are appropriately supported by citations to relevant literature and reflect established knowledge in the field. They provide necessary background but do not represent novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "The experimental design uses FACS-purified ISCs from flies across their lifespan, with ISCs specifically labeled using the esg-Gal4, UAS-2xYFP; Su(H)-Gal80 system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 describe the experimental design and genetic labeling system used to isolate ISCs. The approach is well-established and appropriate for the study. The use of Su(H)-Gal80 to restrict expression to ISCs (excluding EBs) is a validated method. This represents sound experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C132",
+      "C133"
+    ],
+    "result": "Previous studies have shown that H3K27me2 regulates enhancer fidelity and transcription factor access in mammals and flies, and that age-related changes in H3K27 methylation occur in mammalian stem cells, suggesting evolutionarily conserved effects of aging on PRC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129, C132-C133 cite previous work on H3K27me2 function and age-related changes in H3K27 methylation. These claims appropriately contextualize the current findings within the broader literature and support the evolutionary conservation of the mechanisms identified. The inference of evolutionary conservation (C133) is reasonable given the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Previous studies in the mouse intestine have shown that PRC1 and PRC2 regulate ISC identity and lineage specification, with some discrepancies regarding PRC2's role under homeostatic conditions. Age-related changes in the mammalian intestine include increased secretory cell lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C148 cite previous work on PRC function in the mammalian intestine and age-related changes. These claims appropriately contextualize the current findings and note discrepancies in the literature (C144-C145) that have been reconciled by more recent work (C146). This provides important comparative context for interpreting the Drosophila findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The discussion contextualizes the findings within the broader literature on intestinal inflammation, EE cell function in disease, and PRC2 function in cancer, noting that Pc group proteins may represent therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C160 cite relevant literature on inflammation, EE cells in disease, and PRC2 in cancer to contextualize the findings. The discussion appropriately connects the Drosophila findings to mammalian biology and disease. The experimental demonstration that lowering EE numbers reduces dysplasia (C155) provides direct support for a pathological role of increased EE cells.",
+    "result_type": "MINOR"
+  }
+]

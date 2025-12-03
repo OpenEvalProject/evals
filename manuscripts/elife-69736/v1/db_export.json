@@ -1,0 +1,1741 @@
+{
+  "submission": {
+    "id": "449cf07a-244e-410d-8b68-c466b463db92",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:38:56.146002Z",
+    "updated_at": "2025-12-03T06:38:56.146002Z"
+  },
+  "content": [
+    {
+      "id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "submission_id": "449cf07a-244e-410d-8b68-c466b463db92",
+      "content_type": "manuscript",
+      "content_text": "# Causal neural mechanisms of context-based object recognition\n\n## Authors\n\n- Miles Wischnewski<sup>1</sup>\n- Marius V Peelen<sup>1</sup> ([ORCID: 0000-0002-4026-7303](https://orcid.org/0000-0002-4026-7303)) \u2020\n\n### Affiliations\n\n1. Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Netherlands\n2. Department of Biomedical Engineering, University of Minnesota Minneapolis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nObjects can be recognized based on their intrinsic features, including shape, color, and texture. In daily life, however, such features are often not clearly visible, for example when objects appear in the periphery, in clutter, or at a distance. Interestingly, object recognition can still be highly accurate under these conditions when objects are seen within their typical scene context. What are the neural mechanisms of context-based object recognition? According to parallel processing accounts, context-based object recognition is supported by the parallel processing of object and scene information in separate pathways. Output of these pathways is then combined in downstream regions, leading to contextual benefits in object recognition. Alternatively, according to feedback accounts, context-based object recognition is supported by (direct or indirect) feedback from scene-selective to object-selective regions. Here, in three pre-registered transcranial magnetic stimulation (TMS) experiments, we tested a key prediction of the feedback hypothesis: that scene-selective cortex causally and selectively supports context-based object recognition before object-selective cortex does. Early visual cortex (EVC), object-selective lateral occipital cortex (LOC), and scene-selective occipital place area (OPA) were stimulated at three time points relative to stimulus onset while participants categorized degraded objects in scenes and intact objects in isolation, in different trials. Results confirmed our predictions: relative to isolated object recognition, context-based object recognition was selectively and causally supported by OPA at 160\u2013200 ms after onset, followed by LOC at 260\u2013300 ms after onset. These results indicate that context-based expectations facilitate object recognition by disambiguating object representations in the visual cortex.\n\n## Introduction\n\nObjects are typically seen within a rich, structured, and familiar context, such as cars on a road and chairs in a living room. Decades of behavioral work have shown that context facilitates the recognition of objects (Bar, 2004; Biederman et al., 1982; Oliva and Torralba, 2007). This contextual facilitation is crucial for everyday behavior, allowing us to recognize objects under poor viewing conditions (Figure 1), at a distance, in clutter, and in the periphery where visual resolution is low. Yet despite the pervasive influence of context on object recognition, our knowledge of the neural mechanisms of object recognition almost exclusively comes from studies in which participants view clearly\u00a0visible isolated objects without context. These studies have shown that isolated object recognition results from the transformation of local, low-level features into view-invariant object representations along the ventral stream (DiCarlo et al., 2012; Liu et al., 2009; Riesenhuber and Poggio, 1999; Serre et al., 2007). Does a similar local-to-global hierarchy support context-based object recognition?\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69736/elife-69736-fig1-v1.jpg)\n\n**Figure 1.:** At night (top panels), the truck is easily recognized by participants when placed in context (left) but not when taken out of context (right). With sufficient light (bottom panels), the truck is easily recognized also when presented in isolation.\n\nOne possibility is that context-based object recognition is supported by the parallel feedforward processing of local object information in the ventral stream object pathway and global scene processing in a separate scene pathway (Henderson and Hollingworth, 1999; Park et al., 2011). Output of these pathways may then be combined in downstream decision-making regions, leading to contextual benefits in object recognition. Alternatively, context-based object recognition may be supported by feedback processing, with scene context providing a prior that is integrated with ambiguous object representations in the\u00a0visual cortex (Bar, 2004; Brandman and Peelen, 2017; de Lange et al., 2018). Neuroimaging studies have not been able to distinguish between these possibilities because the\u00a0contextual modulation of neural activity in object-selective cortex (Brandman and Peelen, 2017; Faivre et al., 2019; Gronau et al., 2008; R\u00e9my et al., 2014) could precede but also follow object recognition, for example reflecting post-recognition imagery (Dijkstra et al., 2018; Reddy et al., 2010).\n\nTo distinguish between these accounts, we used transcranial magnetic stimulation (TMS) to interfere with processing in right object-selective lateral occipital cortex (LOC; Grill-Spector, 2003; Malach et al., 1995) and right scene-selective occipital place area (OPA; Dilks et al., 2013; Grill-Spector, 2003) at three time points relative to stimulus onset. We additionally stimulated the\u00a0early visual cortex (EVC) to investigate the causal contribution of feedback processing in this region during both isolated object recognition\u00a0and context-based object recognition (Camprodon et al., 2010; Koivisto et al., 2011; Pascual-Leone and Walsh, 2001; Wokke et al., 2013). EVC stimulation was targeted around 2 cm above the inion, with the coil positioned such that TMS induced static phosphenes centrally in the visual field, where the stimuli were presented. This region corresponds primarily to V1 (Koivisto et al., 2010; Pascual-Leone and Walsh, 2001). The three regions were stimulated in separate pre-registered experiments (N=24 in each experiment; see\u00a0Materials and methods).\n\nBecause TMS effects are variable across individuals, for example, due to individual differences in functional coordinates but also skull thickness and subject-specific gyral folding patterns (Opitz et al., 2013), we used a TMS-based assignment procedure to ensure the effectiveness of TMS over each of the three stimulated regions at the individual participant level (van Koningsbruggen et al., 2013). To achieve this, all 72 participants in the current study first underwent a separate TMS session in which the effectiveness of TMS over the three regions was established using object and scene recognition tasks (for the full procedure and results of this screening experiment, see Wischnewski and Peelen, 2021). Only participants who showed reduced scene recognition performance after OPA stimulation were assigned to the OPA experiment (N=24), only participants who showed reduced object recognition performance after LOC stimulation were assigned to the LOC experiment (N=24), and only participants who experienced TMS-induced phosphenes after EVC stimulation were assigned to the EVC experiment (N=24). All 72 participants satisfied at least one of these criteria such that no participants had to be excluded.\n\nIn all experiments, participants performed an unspeeded eight-alternative forced-choice object recognition task, indicating whether a briefly presented stimulus belonged to one of the\u00a0eight categories (Figure 2). Participants performed this task for clearly visible isolated objects (isolated object recognition) as well as for degraded objects presented within a congruent scene context (context-based object recognition). In addition to the object recognition tasks, participants also performed a scene-alone task in which the object was cropped out and replaced with background. In this condition, participants had to guess the object category of the cropped-out object.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69736/elife-69736-fig2-v1.jpg)\n\n**Figure 2.:** (a) Schematic overview of a trial. Two TMS pulses (40 ms apart) were delivered on each trial at one of three time windows relative to stimulus onset (60\u2013100 ms, 160\u2013200 ms, and\u00a0260\u2013300 ms). The three TMS timings occurred in random order within each block. (b) Examples of each of the eight categories shown in the experiment, in the isolated object condition (left) and the context-based object condition (right). Note that the local degradation of the objects in the context-based object condition is not clearly visible from these small example images. This degradation strongly reduces object recognition when the degraded objects are presented out of scene context (see Brandman and Peelen, 2017). These conditions were presented in random order and participants performed the same categorization task on all stimuli. (c) Overview of the three TMS sites and the three time windows of stimulation. Shaded background colors indicate presumed time windows of inhibition for double-pulse TMS.\u00a0TMS, transcranial magnetic stimulation.\n\nPredictions (Figure 3a) were based on the findings of recent functional magnetic resonance imaging\u00a0(fMRI) and magnetoencephalography\u00a0(MEG) experiments investigating context-based object recognition (Brandman and Peelen, 2017). In those experiments, participants viewed degraded objects in scene context, degraded objects alone, and scenes alone. Behavioral results showed that the degraded objects were easy to recognize when presented in scene context (>70% correct in a nine-category task) but hard to recognize when presented alone (37% correct). fMRI results showed that the multivariate representation of the category of the degraded objects in LOC was strongly enhanced when the objects were viewed in scene context relative to when they were viewed alone. Importantly, the corresponding scenes presented alone did not evoke discriminable object category responses in LOC, providing evidence for supra-additive contextual facilitation. Interestingly, the contextual facilitation of object processing in LOC was correlated with concurrently\u00a0evoked activity in scene-selective regions, suggesting an interaction between scene- and object-selective regions. MEG results showed that the\u00a0information about the category of the degraded objects in scenes (derived from multivariate sensor patterns) peaked at two time points: at 160\u2013180 ms and at 280\u2013300 ms after stimulus onset. Crucially, only the later peak showed a significant contextual facilitation effect, with more information about the degraded objects in scenes than the degraded objects alone. Similar to the LOC results, at this time point, the scenes alone did not evoke discriminable object category responses, such that the contextual facilitation of object processing could not reflect the additive processing of scenes and objects. Taken\u00a0together, these results indicate that scenes\u2014processed in scene-selective cortex\u2014disambiguate object representations in LOC at around 300 ms after stimulus onset.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69736/elife-69736-fig3-v1.jpg)\n\n**Figure 3.:** (a) We hypothesized that isolated object recognition (top row) would be causally supported by EVC at 60\u2013100 ms (early time point in right plot), followed by LOC at 160\u2013200 ms (middle time point in central plot), reflecting feedforward processing of intact object features (Cichy et al., 2014). Scene-selective OPA (left plot) was not expected to contribute to isolated object recognition at any time point (Dilks et al., 2013; Wischnewski and Peelen, 2021). Similar to isolated object recognition, we hypothesized that context-based object recognition (middle row) would be causally supported by EVC at 60\u2013100 ms and by LOC at 160\u2013200 ms, reflecting feedforward processing. In contrast to isolated object recognition, we hypothesized that OPA would causally support context-based object recognition at 160\u2013200 ms (middle time point in left plot), reflecting scene processing. Crucially, scene-based expectations were hypothesized to reach LOC later in time, disambiguating object representations at 260\u2013300 ms (late time point in central plot; Brandman and Peelen, 2017). TMS over LOC at this time point should thus selectively disrupt context-based object recognition. EVC was hypothesized to receive feedback from LOC at 160\u2013200 ms (Camprodon et al., 2010; Koivisto et al., 2011; Murray et al., 2002; Wokke et al., 2013), which we expected to be most important for context-based object recognition, in which the object needs to be segregated from the background scene (Korjoukov et al., 2012; Lamme and Roelfsema, 2000; Scholte et al., 2008). Finally, OPA was predicted to causally support scene-alone recognition at 160\u2013200 ms (bottom row). (b) Results of three TMS experiments. Predictions were largely confirmed, except for feedback effects in EVC (at 160\u2013200 ms), which were specific to isolated object recognition rather than context-based object recognition. *p<0.05, **p<0.01, ***p<0.001, with error bars reflecting the SEM.\u00a0EVC,\u00a0early visual cortex;\u00a0LOC,\u00a0lateral occipital cortex;\u00a0OPA,\u00a0occipital place area;\u00a0TMS, transcranial magnetic stimulation.\n\nThe current TMS study was designed to provide causal evidence for this account. Differently from the neuroimaging studies, here we compared the recognition of degraded objects in scenes with the recognition of intact objects alone, rather than degraded objects alone. This was because the large accuracy difference between the recognition of degraded objects in scenes and degraded objects alone prevents a direct comparison of TMS effects between these conditions. Furthermore, this design allowed us to compare the causal neural mechanisms underlying object recognition based on scene context and local features, with the possibility to match the tasks in terms of recognition accuracy.\n\n## Results\n\nAcross all TMS conditions, objects were equally recognizable when presented in isolation (without degradation; 75.8%) and when presented degraded within a scene (76.7%; main effect of Task: F(1,71)=1.22, p=0.27), showing that scene context can compensate for the loss of object visibility induced by the local degradation (Brandman and Peelen, 2017). Importantly, despite the\u00a0equal performance, recognition in the two object recognition tasks was supported by different neural mechanisms in a time-specific manner (three-way interaction between Task [intact object recognition, context-based object recognition], Region [OPA, LOC, and\u00a0EVC], and Time [60\u2013100 ms, 160\u2013200 ms, and\u00a0260\u2013300 ms]; F(4,138)=14.37, p<0.001, \u03b7p\u00b2=0.294). This interaction was followed up by separate analyses for each of the stimulated regions.\n\nTMS did not significantly affect response time\u00a0(RT), with no interactions involving either TMS time or TMS region: Time\u00d7Region, F(4,138)=0.163, p=0.957; Task\u00d7Region, F(2,69)=0.81, p=0.450; Time\u00d7Task, F(2,142)=0.37, p=0.689; Time\u00d7Region\u00d7Task, F(4,138)=1.153, p=0.334. There were also no significant main effects of Time (F(2,142)=2.88, p=0.060) or Region (F(2,69)=0.82, p=0.447).\n\n### OPA experiment\n\nStimulation of scene-selective OPA differentially affected performance in the two tasks (Figure 3b, left panel; Task\u00d7Time interaction F(2,46)=8.21, p<0.001, \u03b7p\u00b2=0.263). For isolated object recognition, there was no effect of TMS time (F(2,46)=0.07, p=0.935, \u03b7p\u00b2=0.003), indicating that isolated object recognition was not influenced by TMS over OPA. By contrast, context-based object recognition was strongly modulated by TMS time (F(2,46)=19.54, p<0.001, \u03b7p\u00b2=0.459). As predicted, TMS selectively impaired context-based object recognition performance when OPA was stimulated 160\u2013200 ms after scene onset, both relative to earlier stimulation (t(23)=5.39, p<0.001, d=1.099) and relative to later stimulation (t(23)=5.36, p<0.001, d=1.095), with no significant difference between early and late stimulation (t(23)=0.26, p=0.795). These results show that OPA, a scene-selective region, is causally and selectively involved in (context-based) object recognition.\n\nThe pre-registration of the OPA experiment additionally included predictions for a third task, the scene-alone task (Figure 3a, bottom row). Similar to the context-based recognition task, we expected that OPA stimulation at 160\u2013200 ms after scene onset would impair accuracy in the scene-alone task. The Task\u00d7Time interaction reported above was also significant when including this condition as a third task in the ANOVA (F(4,92)=4.64, p=0.002, \u03b7p\u00b2=0.168). For the scene-alone task, accuracy was significantly affected by TMS time (F(2,46)=4.77, p=0.013, \u03b7p\u00b2=0.172). TMS impaired scene-alone accuracy when OPA was stimulated at\u00a0160\u2013200 ms after scene onset relative to later stimulation (t(23)=3.02, p=0.006, d=0.616), though not relative to earlier stimulation (t(23)=1.62, p=0.118). There was no significant difference between early and late stimulation (t(23)=\u22121.50, p=0.145). Together with the context-based object recognition results, these findings provide information about the causal time course of OPA\u2019s involvement in scene recognition, showing a selective OPA effect at 160\u2013200 ms after stimulus onset.\n\n### LOC experiment\n\nStimulation of object-selective LOC differentially affected performance in the two tasks (Figure 3b, middle panel; Task\u00d7Time interaction F(2,46)=12.99, p<0.001, \u03b7p\u00b2=0.361). For isolated object recognition, there was a main effect of TMS time (F(2,46)=15.50, p<0.001, \u03b7p\u00b2=0.403; Figure 3b). As predicted, TMS selectively impaired isolated object recognition performance when LOC was stimulated at\u00a0160\u2013200 ms after stimulus onset, both relative to earlier stimulation (t(23)=4.58, p<0.001, d=0.936) and relative to later stimulation (t(23)=5.39, p<0.001, d=1.101), with no significant difference between early and late stimulation (t(23)=\u22121.17, p=0.255). A different temporal profile was observed for context-based object recognition. For this task, TMS time also had a significant effect (F(2,46)=9.03, p<0.001, \u03b7p\u00b2=0.282; Figure 3b). In contrast to the isolated object condition, performance strongly decreased when TMS was applied later in time, at 260\u2013300 ms after stimulus onset, both relative to early stimulation (t(23)=4.01, p<0.001, d=0.818) and relative to middle stimulation (t(23)=2.26, p=0.034, d=0.461). Context-based object recognition accuracy was moderately reduced when TMS was applied at 160\u2013200 ms relative to earlier stimulation (t(23)=2.17, p=0.041, d=0.442). These findings confirm that LOC is causally involved in both isolated object recognition\u00a0and context-based object recognition at 160\u2013200 ms after stimulus onset. Crucially, LOC was causally involved in context-based object recognition at 260\u2013300 ms, confirming our hypothesis that contextual feedback to LOC supports context-based object recognition.\n\n### EVC experiment\n\nFinally, stimulation of EVC allowed us to test whether similar feedback effects could be observed earlier in the visual hierarchy. Results showed that the time of EVC stimulation differentially affected performance in the two tasks (Figure 3b, right panel; Task\u00d7Time interaction F(2,46)=14.42, p<0.001, \u03b7p\u00b2=0.385). For isolated object recognition, there was a main effect of TMS time (F(2,46)=13.27, p<0.001, \u03b7p\u00b2=0.366; Figure 3b). As predicted, TMS applied early in time impaired recognition performance relative to TMS late in time (t(23)=3.44, p=0.002, d=0.701). Interestingly, and contrary to our prediction, isolated object recognition was also impaired when TMS was applied at 160\u2013200 ms compared to late stimulation (t(23)=5.19, p<0.001, d=1.06). There was no difference in performance between TMS at early and intermediate time windows (t(23)=1.16, p=0.257). For context-based object recognition, there was a main effect of TMS time (F(2,46)=19.01, p<0.001, \u03b7p\u00b2=0.452; Figure 3b). As predicted, TMS applied early in time impaired recognition performance relative to TMS late in time (t(23)=5.41, p<0.001, d=1.105). Contrary to our prediction, context-based object recognition performance was not significantly reduced when TMS was applied at the middle time window relative to later stimulation (t(23)=0.99, p=0.334). These findings confirm that EVC is causally involved in initial visual processing, supporting both isolated object recognition and context-based recognition. In the 160\u2013200 ms time window, EVC was causally involved in isolated object recognition but not context-based object recognition.\n\n## Discussion\n\nAltogether, these results reveal distinct neural mechanisms underlying object recognition based on local features (isolated object recognition) and scene context (context-based object recognition). During feedforward processing, EVC and object-selective cortex supported both the recognition of objects in scenes and in isolation, while scene-selective cortex was uniquely required for context-based object recognition. Results additionally showed that feedback to EVC causally supported isolated object recognition, while feedback to object-selective cortex causally supported context-based object recognition. These results provide evidence for two routes to object recognition, each characterized by feedforward and feedback processing but involving different brain regions at different time points (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69736/elife-69736-fig4-v1.jpg)\n\n**Figure 4.:** Distinct cortical routes causally support isolated object recognition and context-based object recognition. Isolated object recognition (top row) was supported by EVC early in time (60\u2013100 ms), reflecting initial visual encoding. This was followed by LOC at 160\u2013200 ms, reflecting higher-level object processing. At this time window, EVC was still required for isolated object recognition, presumably reflecting feedback processing. Similar to isolated object recognition, context-based object recognition (bottom row) was supported by EVC at 60\u2013100 ms, followed by LOC at 160\u2013200 ms. However, context-based object recognition additionally required OPA at 160\u2013200 ms, reflecting scene processing. Finally, context-based object recognition causally depended on late processing (260\u2013300 ms) in LOC, reflecting contextual disambiguation (Brandman and Peelen, 2017). Note that the arrows do not necessarily reflect direct connections between brain regions.\u00a0EVC,\u00a0early visual cortex;\u00a0LOC,\u00a0lateral occipital cortex.\n\nThe finding that EVC (for isolated object recognition) and LOC (for context-based object recognition) causally supported object recognition well beyond the feedforward sweep suggests that feedback processing is required for accurate object recognition. Feedback processing in EVC and LOC may be explained under a common hierarchical perceptual inference framework (Friston, 2005; Haefner et al., 2016; Lee and Mumford, 2003; Rao and Ballard, 1999), in which a global representation provides a prior that allows for disambiguating relatively more local information. For context-based object recognition, the scene (represented in OPA) would be the global element, providing a prior for processing the relatively more local shape of the object (represented in LOC). For isolated object recognition, object shape would be the global element, providing a prior for processing the relatively more local inner object features (e.g., the eyes of a squirrel; represented in EVC). Feedback based on the more global representations thus serves to disambiguate the representation of more local representations. While feedback processing was hypothesized for LOC based on previous neuroimaging findings, we did not hypothesize that feedback to EVC would be required for recognizing isolated objects. Future studies are needed to test under what conditions feedback to EVC causally contributes to object recognition (Camprodon et al., 2010; Koivisto et al., 2011; Wokke et al., 2013). In line with the reverse hierarchy theory, we expect that the specific feedback that is useful for a given task\u2014and the brain regions involved\u2014depend on the available information in the image together with specific task demands (Hochstein and Ahissar, 2002).\n\nAn alternative interpretation of the relatively late causal involvement of EVC in isolated object recognition, and LOC in context-based object recognition, is that these effects reflect local recurrence rather than feedback. This interpretation cannot be ruled out based on the current results alone. However, based on previous findings, we think this is unlikely, at least for LOC. In the fMRI study that used a similar stimulus set as used here (Brandman and Peelen, 2017), representations of degraded objects in LOC were facilitated (relative to degraded objects alone) by the presence of scene context, indicating input from outside of LOC considering that LOC did not represent object information from scenes presented alone. Furthermore, the corresponding MEG study showed two peaks for degraded objects in scenes, one at 160\u2013180 ms and one at 280\u2013300 ms. The later peak showed a significant contextual facilitation effect in the MEG study, with better decoding of degraded objects in scenes than degraded objects alone. The present finding that TMS over LOC at 260\u2013300 ms selectively impaired context-based object recognition is fully in line with these fMRI and MEG findings, pointing to feedback processing rather than local recurrence.\n\nTaken together with previous findings, the current results are thus best explained by an account in which information from scenes (processed in scene-selective cortex) feeds back to LOC to disambiguate object representations. This mechanism may underlie the behavioral benefits previously observed for object recognition in semantically and syntactically congruent (vs. incongruent) scene context (Biederman et al., 1982; Davenport and Potter, 2004; Munneke et al., 2013; V\u00f5 and Wolfe, 2013), as predicted by interactive accounts that propose that contextual facilitation is supported by contextual expectations (Bar, 2004; Davenport and Potter, 2004), with quickly extracted global scene \u2018gist\u2019 priming the representation of candidate objects in the\u00a0visual cortex (Bar, 2004; Oliva and Torralba, 2007; Torralba, 2003). The current TMS results suggest that OPA is crucial for extracting this global scene information at around 160\u2013200 ms after scene onset, and that this information is integrated with local object information in LOC around 100 ms later. The current results do not speak to whether OPA-LOC connectivity is direct or indirect, for example involving additional brain regions such as other scene-selective regions or the orbitofrontal cortex (Bar, 2004).\n\nOur study raises the interesting question of what type of context-based expectations help to disambiguate object representations in LOC. The scenes in the current study provided multiple cues that may help to recognize the degraded objects. For example, the scenes provided information about the approximate real-world size of the objects as well as the objects\u2019 likely semantic category. Both of these cues may help to recognize objects (Biederman et al., 1982; Davenport and Potter, 2004; Munneke et al., 2013; V\u00f5 and Wolfe, 2013). Future experiments could test whether feedback to LOC is specifically related to one of these cues. For example, one could test whether similar effects are found when objects are presented in semantically uninformative scenes, with the scene only providing information about the approximate real-world size of the object.\n\nTo conclude, the current study provides causal evidence that context-based expectations facilitate object recognition by disambiguating object representations in the\u00a0visual cortex. More generally, results reveal that distinct neural mechanisms support object recognition based on local features and global scene context. Future experiments may extend our approach to include other contextual features such as co-occurring objects, temporal context, and input from other modalities.\n\n## Materials and methods\n\n### Participants\n\nPrior to experimentation, we decided to test 24 participants in all three experiments. Preregistrations can be found at https://aspredicted.org/cs4wz.pdf (OPA), https://aspredicted.org/yc969.pdf (LOC), and https://aspredicted.org/cy9fq.pdf (EVC). In total, 72 right-handed volunteers (43 females, mean age\u00a0\u00b1\u00a0SD\u00a0=\u00a023.33\u00a0\u00b1\u00a03.59, age range\u00a0=\u00a018\u201333) with normal or corrected-to-normal vision took part in the experiment, after participating in a TMS localization experiment (Wischnewski and Peelen, 2021). Participants were excluded if they reported to have one of the following: CNS-acting medication, previous neurosurgical treatments, metal implants in the head or neck area, migraine, epilepsy or previous cerebral seizures (also within their family), pacemaker, intracranial metal clips, cochlea implants, or pregnancy. Additionally, participants were asked to refrain from consuming alcohol and recreational drugs 72 hr before the experiment and refrain from consuming coffee 2 hr before the experiment. Participants were divided over three experiments, targeting three cortical areas, based on a previous experiment. All experiments included 24 participants (OPA experiment, 12 females, mean age\u00a0\u00b1\u00a0SD\u00a0=\u00a023.67\u00a0\u00b1\u00a03.92; LOC experiment, 14 females, mean age\u00a0\u00b1\u00a0SD\u00a0=\u00a023.50\u00a0\u00b1\u00a03.09; EVC experiment, 17 females, mean age\u00a0\u00b1\u00a0SD\u00a0=\u00a022.83\u00a0\u00b1\u00a03.81). Prior to the experimental session, participants were informed about the experimental procedures and gave written informed consent. The study procedures were approved by the \u2018Centrale Commissie voor Mensgebonden Onderzoek (CCMO)\u2019 and conducted in accordance with the Declaration of Helsinki.\n\n### Transcranial magnetic stimulation\n\nTMS was applied via a Cool-B65 figure-of-8 coil with an outer diameter of 75 mm, which received input from a Magpro-X-100 magnetic stimulator (MagVenture, Farum, Denmark). Two TMS pulses (biphasic, wavelength: 280 \u00b5s) separated by 40 ms (25 Hz) were applied to disrupt visual cortex activity. Given that latency of visual cortex activation varies across participants, a two-pulse TMS design was chosen since it allows for a broader time window of disruption while maintaining relatively good temporal resolution (O'Shea et al., 2004; Pitcher et al., 2007; Wokke et al., 2013). The\u00a0intensity of stimulation was adjusted to 85% of the individual phosphene threshold (PT). PT was established by increasing stimulator output targeting EVC until 50% of the pulses resulted in the perception of a phosphene while participants fixated on a black screen in a dimly lit room. The TMS coil was placed with the help of an infrared-based neuronavigation system (Localite, Bonn, Germany) using an individually adapted standard brain model over the right LOC, right OPA, or EVC. Each stimulation location was identified through Talairach coordinates set in the Localite neuronavigation system. The coordinates were 45,\u00a0\u201374, 0 for LOC (Pitcher et al., 2009) and 34,\u00a0\u201377, 21 for OPA (Julian et al., 2016). TMS was placed on EVC based on its anatomical location, 2 cm above the inion (Koivisto et al., 2010; Pascual-Leone and Walsh, 2001). We then established the optimal coil position in such a way that phosphenes were reported centrally in the visual field, where the stimuli were presented.\n\n### Experimental stimuli\n\nStimuli consisted of 128 scene photographs with a single object belonging to one of the following eight categories: airplane, bird, car, fish, human, mammal, ship, and train. For the isolated object recognition task, the object was cropped out of the scene and presented at its original location on a gray background. For the context-based object recognition task, the object was pixelated to remove local features. The experiment additionally included a scene-alone condition, in which the object was cropped out and replaced with background using a content-aware fill tool. In this condition, participants had to guess the object category of the cropped-out object.\n\nTo avoid that participants could recognize the degraded objects in scenes based on having seen their intact version, the stimulus set was divided into two halves: for each participant, half of\u00a0the stimuli were used in the context-based object condition, and the other half of the stimuli were used both in the isolated object condition and the scene-alone condition. This assignment was counterbalanced across participants. The scenes spanned a visual angle of 6\u00b0\u00d74.5\u00b0.\n\n### Main task\n\nBefore the experiment, participants received instructions and were presented with an example stimulus (which was not used in the main experiment). This example displayed how each stimulus variation (context-based, isolated object, and scene alone) was derived from an original photograph. For the main task, each trial started with a fixation cross (500 ms), followed by a stimulus presented for 33 ms. Next, a blank screen was shown for 500 ms. After this, participants were asked to respond by pressing one out of eight possible keys according to the object category presented (Figure 2). No limit on RT was given. However, participants were encouraged during the instructions to respond within 3 s. The response screen was presented until the participant responded. The next trial started after a 2 s inter-trial interval. This relatively long interval was chosen to prevent repetitive TMS effects. TMS was applied at one of three different time points, with randomized order. TMS pulses could be applied at 60\u00a0ms and 100 ms after stimulus onset, 160 ms\u00a0and 200 ms after stimulus onset, or 260 ms\u00a0and 300 ms after stimulus onset. In 2 participants out of the 72 (1 in the LOC experiment and 1 in the EVC experiment), each pulse was accidentally delivered 16 ms earlier than described above.\n\nEach stimulus was repeated three times, once for each TMS timing (60\u2013100 ms, 160\u2013200 ms, and\u00a0260\u2013300 ms). This resulted in a total of 576 trials, which were presented in a random order. To avoid fatigue, the task was divided into 12 blocks of 48 trials, each lasting approximately 4 min, with short breaks in between of approximately 1 min. Thus, completing the task took about 60 min. The\u00a0total duration of the experiment, including preparation and PT determination, was approximately 90 min.\n",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "50c337c9-e98c-4c0b-8fc9-a93caf7357a5",
+      "submission_id": "449cf07a-244e-410d-8b68-c466b463db92",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Redmond G O'Connell, Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69736.sa1](https://doi.org/10.7554/eLife.69736.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis study will be of interest to scientists involved in high-level vision. The data provide a compelling demonstration of the causal role of three key visual areas in context-based object recognition. The key claims of the manuscript are supported by the data, and are strengthened by the pre-registration of each of the three experiments.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Causal neural mechanisms of context-based object recognition\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Redmond G O\u2019Connell as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Joshua Gold as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Peter Kok (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The preregistration for this study commits to including the scene-only condition in the statistical analyses for the main experiment however only the object-based and context-based conditions were considered. The authors should either provide a strong justification for this deviation or else run and report the statistics as originally planned.\n\n2) More detail on the precise participant screening procedure is required. Exactly what tasks and stimuli were participants exposed to? What TMS SOAs were used? How many participants were excluded based on this procedure? A statement should be added to the main text flagging this procedure to the reader so that they are clear that the basic main effect of TMS to LOC object-based task performance was pre-ordained.\n\n3) The authors should provide greater discussion of alternative interpretations of their results. Currently the authors only entertain the possibility that the results reflect feedback effects but they should also consider the possibility of persistent/recurrent activity within visual areas reflecting extended processing of stimuli held in iconic memory.\n\nReviewer #1 (Recommendations for the authors):\n\nThe study hypotheses could be articulated more clearly. Citations should be provided to back up the hypothesised TMS SOA effects in each region. The legend of Figure 3 would seem a good place to lay out the predictions in more detail.\n\nThe area identified as EVA should be clarified in the Introduction. What visual regions does this area encompass? Just V1? Others?\n\nReviewer #2 (Recommendations for the authors):\n\n1. The authors argue that feedback based on more global representations (of the scene) serve to disambiguate more local representations (of the object).\n\nThe scene-only condition seems important to this interpretation, and I would suggest discussing this manipulation further in the main text. An alternative interpretation is that scene recognition simply reduces the epistemic priors of what the object could be (e.g., if the scene is grass, the object is unlikely to be a fish, ship, airplane, or train). Indeed, Figure S2 suggests that performance in the scene-only condition, although relatively poor (40-50%), is much higher than chance (12.5%). So scene recognition seems to filter the range of possible correct responses in the first place, and the effects that are observed may be separate to the capacity of scene recognition to disambiguate specific features of the object itself.\n\nI take the authors' point that the absent effect of TMS on accuracy in the scene-only condition argues against this as a possibility. Nevertheless, an informative condition may have been one in which the image was simply occluded by a shape (e.g., circle) that provided only information about the relative size of the object, but not about its internal features. Such a manipulation would have maintained a similarity with the context-based condition while eliminating the intrinsic perceptual features of the object that could be disambiguated by the scene (other than its approximate size, which provides information about the possible object category, but not the object itself). This may have allowed the authors to more clearly determine whether context-based object recognition is specifically driven by disambiguation of the perceptual features intrinsic to each object.\n\nI am not necessarily suggesting running an additional experiment, but further clarification/discussion on the above issues would be worthwhile.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 Why where these exact time windows chosen for stimulation (and hypotheses)? Can you provide a more concrete (neurophysiological) rationale?\n\n\u2013 The EVC results are opposite to the hypothesised ones, with later involvement for objects in isolation than those in context. The authors acknowledge this, but do not discuss in much depth why this might be. Alternatively, they might simply acknowledge that we do not know why this is, and more research is needed on this point.\n\n\u2013 Could you also draw the hypotheses that the parallel account yields, so that it can be clearly seen which data points distinguish the hypotheses? Is the late LOC stimulation effect in context vs. isolation the only crucial point?\n\n\u2013 Regarding this datapoint, could it be that late LOC stimulation interferes with object recognition in the context condition because the objects were degraded, rather than because they were presented in a scene context? In other words, because there is more (local) recurrence in LOC required to resolve degraded objects? This seems important to rule out (or acknowledge).\n\n\u2013 From Figure S1, it seems that participants were generally faster in the EVC experiment. Any idea why this might be?\n",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9023dd10-5082-4814-abad-935d3ceee9c2",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C1",
+      "claim": "Objects can be recognized based on their intrinsic features, including shape, color, and texture.",
+      "claim_type": "EXPLICIT",
+      "source": "Objects can be recognized based on their intrinsic features, including shape, color, and texture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about object recognition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "9f6e85eb-ffbc-4b11-9058-3ee097b69841",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C2",
+      "claim": "Object recognition can be highly accurate when objects are seen within their typical scene context, even when intrinsic features are not clearly visible.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, object recognition can still be highly accurate under these conditions when objects are seen within their typical scene context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "74900e68-9e8a-4fa1-bc85-fc0519f94a83",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C3",
+      "claim": "According to parallel processing accounts, context-based object recognition is supported by the parallel processing of object and scene information in separate pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "According to parallel processing accounts, context-based object recognition is supported by the parallel processing of object and scene information in separate pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a theoretical account from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "f33bd1f0-956f-4a0d-8a8d-8ec773701949",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C4",
+      "claim": "According to feedback accounts, context-based object recognition is supported by feedback from scene-selective to object-selective regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, according to feedback accounts, context-based object recognition is supported by (direct or indirect) feedback from scene-selective to object-selective regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an alternative theoretical account from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "24b471b3-8512-4223-bcc3-90ce3c1e7d7e",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C5",
+      "claim": "Scene-selective cortex causally and selectively supports context-based object recognition before object-selective cortex does.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, in three pre-registered transcranial magnetic stimulation (TMS) experiments, we tested a key prediction of the feedback hypothesis: that scene-selective cortex causally and selectively supports context-based object recognition before object-selective cortex does.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the key hypothesis tested in the experiments, with results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "51499a64-27fb-4f10-9539-5e9a022c51ad",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C6",
+      "claim": "Relative to isolated object recognition, context-based object recognition was selectively and causally supported by OPA at 160\u2013200 ms after onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Results confirmed our predictions: relative to isolated object recognition, context-based object recognition was selectively and causally supported by OPA at 160\u2013200 ms after onset, followed by LOC at 260\u2013300 ms after onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly supported by experimental data presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "b2ee7b92-00ca-4f9e-9ee8-d8084943e5be",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C7",
+      "claim": "Context-based object recognition was causally supported by LOC at 260\u2013300 ms after onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Results confirmed our predictions: relative to isolated object recognition, context-based object recognition was selectively and causally supported by OPA at 160\u2013200 ms after onset, followed by LOC at 260\u2013300 ms after onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly supported by experimental data presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "bc9f1640-72f4-42d3-99d8-ee087137c0de",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C8",
+      "claim": "Context-based expectations facilitate object recognition by disambiguating object representations in the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that context-based expectations facilitate object recognition by disambiguating object representations in the visual cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results, representing an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "e915ef64-09f5-41fb-bcbf-364d74eb01a8",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C9",
+      "claim": "Context facilitates the recognition of objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Decades of behavioral work have shown that context facilitates the recognition of objects (Bar, 2004; Biederman et al., 1982; Oliva and Torralba, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "85e45d9d-975c-4958-bbdd-214380ebecfa",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C10",
+      "claim": "Contextual facilitation is crucial for everyday behavior, allowing us to recognize objects under poor viewing conditions, at a distance, in clutter, and in the periphery where visual resolution is low.",
+      "claim_type": "EXPLICIT",
+      "source": "This contextual facilitation is crucial for everyday behavior, allowing us to recognize objects under poor viewing conditions (Figure 1), at a distance, in clutter, and in the periphery where visual resolution is low.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by general knowledge and illustrated by Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "6cf8bf93-7ada-41ab-8972-69260d406bba",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C11",
+      "claim": "Isolated object recognition results from the transformation of local, low-level features into view-invariant object representations along the ventral stream.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have shown that isolated object recognition results from the transformation of local, low-level features into view-invariant object representations along the ventral stream (DiCarlo et al., 2012; Liu et al., 2009; Riesenhuber and Poggio, 1999; Serre et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "513df53d-85ff-4102-9eac-188124719e61",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C12",
+      "claim": "Context-based object recognition may be supported by the parallel feedforward processing of local object information in the ventral stream object pathway and global scene processing in a separate scene pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that context-based object recognition is supported by the parallel feedforward processing of local object information in the ventral stream object pathway and global scene processing in a separate scene pathway (Henderson and Hollingworth, 1999; Park et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a theoretical possibility supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "6608d2e8-0fea-437e-89af-b42ec2c9226f",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C13",
+      "claim": "Context-based object recognition may be supported by feedback processing, with scene context providing a prior that is integrated with ambiguous object representations in the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, context-based object recognition may be supported by feedback processing, with scene context providing a prior that is integrated with ambiguous object representations in the visual cortex (Bar, 2004; Brandman and Peelen, 2017; de Lange et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an alternative theoretical possibility supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "5d6be6d4-e8a3-42fb-927f-a484721f8917",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C14",
+      "claim": "Neuroimaging studies have shown contextual modulation of neural activity in object-selective cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuroimaging studies have not been able to distinguish between these possibilities because the contextual modulation of neural activity in object-selective cortex (Brandman and Peelen, 2017; Faivre et al., 2019; Gronau et al., 2008; R\u00e9my et al., 2014) could precede but also follow object recognition, for example reflecting post-recognition imagery (Dijkstra et al., 2018; Reddy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior neuroimaging research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "f52980ce-378e-4823-b962-4c4e213ca444",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C15",
+      "claim": "TMS effects are variable across individuals due to individual differences in functional coordinates, skull thickness, and subject-specific gyral folding patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Because TMS effects are variable across individuals, for example, due to individual differences in functional coordinates but also skull thickness and subject-specific gyral folding patterns (Opitz et al., 2013), we used a TMS-based assignment procedure to ensure the effectiveness of TMS over each of the three stimulated regions at the individual participant level (van Koningsbruggen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "f55f6a81-e1fd-4c5b-a159-b41afd096b56",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C16",
+      "claim": "Objects were equally recognizable when presented in isolation (75.8%) and when presented degraded within a scene (76.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all TMS conditions, objects were equally recognizable when presented in isolation (without degradation; 75.8%) and when presented degraded within a scene (76.7%; main effect of Task: F(1,71)=1.22, p=0.27), showing that scene context can compensate for the loss of object visibility induced by the local degradation (Brandman and Peelen, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "ed59432f-b4f0-47ed-8113-1e576a46deb8",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C17",
+      "claim": "Scene context can compensate for the loss of object visibility induced by local degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all TMS conditions, objects were equally recognizable when presented in isolation (without degradation; 75.8%) and when presented degraded within a scene (76.7%; main effect of Task: F(1,71)=1.22, p=0.27), showing that scene context can compensate for the loss of object visibility induced by the local degradation (Brandman and Peelen, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data, also supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "f0722a7c-5d06-4d44-ba05-dc606aecbae8",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C18",
+      "claim": "Recognition in the two object recognition tasks was supported by different neural mechanisms in a time-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, despite the equal performance, recognition in the two object recognition tasks was supported by different neural mechanisms in a time-specific manner (three-way interaction between Task [intact object recognition, context-based object recognition], Region [OPA, LOC, and EVC], and Time [60\u2013100 ms, 160\u2013200 ms, and 260\u2013300 ms]; F(4,138)=14.37, p<0.001, \u03b7p\u00b2=0.294).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly supported by experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "240dd8dd-fa91-4136-ae41-b64794758370",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C19",
+      "claim": "TMS did not significantly affect response time.",
+      "claim_type": "EXPLICIT",
+      "source": "TMS did not significantly affect response time (RT), with no interactions involving either TMS time or TMS region: Time\u00d7Region, F(4,138)=0.163, p=0.957; Task\u00d7Region, F(2,69)=0.81, p=0.450; Time\u00d7Task, F(2,142)=0.37, p=0.689; Time\u00d7Region\u00d7Task, F(4,138)=1.153, p=0.334.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "7a1638ff-8a28-4079-a993-9f7ce96a3ab5",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C20",
+      "claim": "Stimulation of scene-selective OPA differentially affected performance in the two tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of scene-selective OPA differentially affected performance in the two tasks (Figure 3b, left panel; Task\u00d7Time interaction F(2,46)=8.21, p<0.001, \u03b7p\u00b2=0.263).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding directly supported by experimental data with statistical analysis and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "52201118-a879-4920-9a8b-8aa8b15e76e2",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C21",
+      "claim": "Isolated object recognition was not influenced by TMS over OPA.",
+      "claim_type": "EXPLICIT",
+      "source": "For isolated object recognition, there was no effect of TMS time (F(2,46)=0.07, p=0.935, \u03b7p\u00b2=0.003), indicating that isolated object recognition was not influenced by TMS over OPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "b7988408-4eb2-4bb2-95d9-439b0afd28ba",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C22",
+      "claim": "Context-based object recognition was strongly modulated by TMS time over OPA.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, context-based object recognition was strongly modulated by TMS time (F(2,46)=19.54, p<0.001, \u03b7p\u00b2=0.459).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "e9122f98-e2f5-4718-b703-baf524424fa4",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C23",
+      "claim": "TMS selectively impaired context-based object recognition performance when OPA was stimulated 160\u2013200 ms after scene onset.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, TMS selectively impaired context-based object recognition performance when OPA was stimulated 160\u2013200 ms after scene onset, both relative to earlier stimulation (t(23)=5.39, p<0.001, d=1.099) and relative to later stimulation (t(23)=5.36, p<0.001, d=1.095), with no significant difference between early and late stimulation (t(23)=0.26, p=0.795).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly supported by experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "af133a02-ed93-4eb1-bf33-344e89bab7f6",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C24",
+      "claim": "OPA, a scene-selective region, is causally and selectively involved in context-based object recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that OPA, a scene-selective region, is causally and selectively involved in (context-based) object recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "6daf5c0b-98ce-4dc4-9076-918bcd588934",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C25",
+      "claim": "OPA stimulation at 160\u2013200 ms after scene onset impaired accuracy in the scene-alone task relative to later stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the scene-alone task, accuracy was significantly affected by TMS time (F(2,46)=4.77, p=0.013, \u03b7p\u00b2=0.172). TMS impaired scene-alone accuracy when OPA was stimulated at 160\u2013200 ms after scene onset relative to later stimulation (t(23)=3.02, p=0.006, d=0.616), though not relative to earlier stimulation (t(23)=1.62, p=0.118).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "d5ac7221-c47a-49a5-9923-84630b43a841",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C26",
+      "claim": "Stimulation of object-selective LOC differentially affected performance in the two tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of object-selective LOC differentially affected performance in the two tasks (Figure 3b, middle panel; Task\u00d7Time interaction F(2,46)=12.99, p<0.001, \u03b7p\u00b2=0.361).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding directly supported by experimental data with statistical analysis and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "b6aa40f9-b7be-44e5-b508-24aba5c8f887",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C27",
+      "claim": "TMS selectively impaired isolated object recognition performance when LOC was stimulated at 160\u2013200 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, TMS selectively impaired isolated object recognition performance when LOC was stimulated at 160\u2013200 ms after stimulus onset, both relative to earlier stimulation (t(23)=4.58, p<0.001, d=0.936) and relative to later stimulation (t(23)=5.39, p<0.001, d=1.101), with no significant difference between early and late stimulation (t(23)=\u22121.17, p=0.255).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly supported by experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "bddb3c68-ca27-42ae-9120-07d803d30638",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C28",
+      "claim": "Context-based object recognition performance strongly decreased when TMS was applied to LOC at 260\u2013300 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the isolated object condition, performance strongly decreased when TMS was applied later in time, at 260\u2013300 ms after stimulus onset, both relative to early stimulation (t(23)=4.01, p<0.001, d=0.818) and relative to middle stimulation (t(23)=2.26, p=0.034, d=0.461).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly supported by experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "b24bee22-b815-49f8-811f-72fa5550498d",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C29",
+      "claim": "Context-based object recognition accuracy was moderately reduced when TMS was applied to LOC at 160\u2013200 ms relative to earlier stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Context-based object recognition accuracy was moderately reduced when TMS was applied at 160\u2013200 ms relative to earlier stimulation (t(23)=2.17, p=0.041, d=0.442).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "db89af27-51ed-4f34-a811-750f45294eac",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C30",
+      "claim": "LOC is causally involved in both isolated object recognition and context-based object recognition at 160\u2013200 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings confirm that LOC is causally involved in both isolated object recognition and context-based object recognition at 160\u2013200 ms after stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "871cac90-049f-4c05-96d3-7770acf5ae93",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C31",
+      "claim": "LOC was causally involved in context-based object recognition at 260\u2013300 ms, confirming the hypothesis that contextual feedback to LOC supports context-based object recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, LOC was causally involved in context-based object recognition at 260\u2013300 ms, confirming our hypothesis that contextual feedback to LOC supports context-based object recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results in relation to the hypothesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "12b7ea3b-678e-4c25-8a47-12923c3ad072",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C32",
+      "claim": "The time of EVC stimulation differentially affected performance in the two tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that the time of EVC stimulation differentially affected performance in the two tasks (Figure 3b, right panel; Task\u00d7Time interaction F(2,46)=14.42, p<0.001, \u03b7p\u00b2=0.385).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding directly supported by experimental data with statistical analysis and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "86c8c474-e03b-4fd8-b989-0b577fb70a2b",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C33",
+      "claim": "TMS applied early in time to EVC impaired isolated object recognition performance relative to TMS late in time.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, TMS applied early in time impaired recognition performance relative to TMS late in time (t(23)=3.44, p=0.002, d=0.701).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "e9b8173b-a48a-4d48-a2cf-5bf2a3a2064f",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C34",
+      "claim": "Isolated object recognition was impaired when TMS was applied to EVC at 160\u2013200 ms compared to late stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, and contrary to our prediction, isolated object recognition was also impaired when TMS was applied at 160\u2013200 ms compared to late stimulation (t(23)=5.19, p<0.001, d=1.06).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "b55cd2b1-78f7-4010-acd3-75a54afea159",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C35",
+      "claim": "TMS applied early in time to EVC impaired context-based object recognition performance relative to TMS late in time.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, TMS applied early in time impaired recognition performance relative to TMS late in time (t(23)=5.41, p<0.001, d=1.105).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "52c0dc08-450b-4a22-ad71-ec36fe46f098",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C36",
+      "claim": "Context-based object recognition performance was not significantly reduced when TMS was applied to EVC at the middle time window relative to later stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to our prediction, context-based object recognition performance was not significantly reduced when TMS was applied at the middle time window relative to later stimulation (t(23)=0.99, p=0.334).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "8350a9dc-2714-40ec-b9f2-4c76eecf61fa",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C37",
+      "claim": "EVC is causally involved in initial visual processing, supporting both isolated object recognition and context-based recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings confirm that EVC is causally involved in initial visual processing, supporting both isolated object recognition and context-based recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "152f3ff2-c987-49ff-a7a4-39c22c556cae",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C38",
+      "claim": "In the 160\u2013200 ms time window, EVC was causally involved in isolated object recognition but not context-based object recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 160\u2013200 ms time window, EVC was causally involved in isolated object recognition but not context-based object recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "7dc0c1e2-5e3d-4db3-b5a6-efcfbd0947b3",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C39",
+      "claim": "Distinct neural mechanisms underlie object recognition based on local features (isolated object recognition) and scene context (context-based object recognition).",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results reveal distinct neural mechanisms underlying object recognition based on local features (isolated object recognition) and scene context (context-based object recognition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "05e17988-b4f5-4e53-baae-676ff47dd7a5",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C40",
+      "claim": "During feedforward processing, EVC and object-selective cortex supported both the recognition of objects in scenes and in isolation, while scene-selective cortex was uniquely required for context-based object recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "During feedforward processing, EVC and object-selective cortex supported both the recognition of objects in scenes and in isolation, while scene-selective cortex was uniquely required for context-based object recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "913fc1fd-13a1-425b-bb16-6d371a295455",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C41",
+      "claim": "Feedback to EVC causally supported isolated object recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Results additionally showed that feedback to EVC causally supported isolated object recognition, while feedback to object-selective cortex causally supported context-based object recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "9ba21d98-3362-4489-a5be-13d76616927c",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C42",
+      "claim": "Feedback to object-selective cortex causally supported context-based object recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Results additionally showed that feedback to EVC causally supported isolated object recognition, while feedback to object-selective cortex causally supported context-based object recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "345c00ef-4eff-4273-ace9-81ed0d35b3e3",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C43",
+      "claim": "There are two routes to object recognition, each characterized by feedforward and feedback processing but involving different brain regions at different time points.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide evidence for two routes to object recognition, each characterized by feedforward and feedback processing but involving different brain regions at different time points (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary interpretation of the experimental results, illustrated in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "2d5f4a83-16b4-4d97-a549-e5d8877e13b8",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C44",
+      "claim": "Feedback processing is required for accurate object recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that EVC (for isolated object recognition) and LOC (for context-based object recognition) causally supported object recognition well beyond the feedforward sweep suggests that feedback processing is required for accurate object recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "ecca1db5-03ae-4c41-9329-aaf2b5f99f8e",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C45",
+      "claim": "Feedback processing in EVC and LOC may be explained under a hierarchical perceptual inference framework, in which a global representation provides a prior that allows for disambiguating relatively more local information.",
+      "claim_type": "EXPLICIT",
+      "source": "Feedback processing in EVC and LOC may be explained under a common hierarchical perceptual inference framework (Friston, 2005; Haefner et al., 2016; Lee and Mumford, 2003; Rao and Ballard, 1999), in which a global representation provides a prior that allows for disambiguating relatively more local information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation supported by citations to prior frameworks.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "f0e869dd-30fa-4439-80b0-461e2495ab0c",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C46",
+      "claim": "For context-based object recognition, the scene (represented in OPA) provides a prior for processing the shape of the object (represented in LOC).",
+      "claim_type": "EXPLICIT",
+      "source": "For context-based object recognition, the scene (represented in OPA) would be the global element, providing a prior for processing the relatively more local shape of the object (represented in LOC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental results within a theoretical framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "4033152e-4c2f-4bcc-876f-969a0adc457a",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C47",
+      "claim": "For isolated object recognition, object shape provides a prior for processing the relatively more local inner object features (represented in EVC).",
+      "claim_type": "EXPLICIT",
+      "source": "For isolated object recognition, object shape would be the global element, providing a prior for processing the relatively more local inner object features (e.g., the eyes of a squirrel; represented in EVC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental results within a theoretical framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "eff94d1e-63bf-46d7-94fc-686b61cdd6a5",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C48",
+      "claim": "Feedback based on more global representations serves to disambiguate the representation of more local representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Feedback based on the more global representations thus serves to disambiguate the representation of more local representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental results within a theoretical framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "1f1aba51-f95b-4e24-ba56-e10f7b5d95f9",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C49",
+      "claim": "In the fMRI study by Brandman and Peelen (2017), representations of degraded objects in LOC were facilitated by the presence of scene context.",
+      "claim_type": "EXPLICIT",
+      "source": "In the fMRI study that used a similar stimulus set as used here (Brandman and Peelen, 2017), representations of degraded objects in LOC were facilitated (relative to degraded objects alone) by the presence of scene context, indicating input from outside of LOC considering that LOC did not represent object information from scenes presented alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "cef761a8-303f-45be-8423-e57df39ce13c",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C50",
+      "claim": "The MEG study by Brandman and Peelen (2017) showed two peaks for degraded objects in scenes, one at 160\u2013180 ms and one at 280\u2013300 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the corresponding MEG study showed two peaks for degraded objects in scenes, one at 160\u2013180 ms and one at 280\u2013300 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "33f2e0b1-85a5-4c10-be05-cd6bd2c1601b",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C51",
+      "claim": "The later peak (280\u2013300 ms) in the MEG study showed a significant contextual facilitation effect, with better decoding of degraded objects in scenes than degraded objects alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The later peak showed a significant contextual facilitation effect in the MEG study, with better decoding of degraded objects in scenes than degraded objects alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "1cdea1d5-083f-49d7-8333-3c98be9aeeec",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C52",
+      "claim": "The current results are best explained by an account in which information from scenes (processed in scene-selective cortex) feeds back to LOC to disambiguate object representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with previous findings, the current results are thus best explained by an account in which information from scenes (processed in scene-selective cortex) feeds back to LOC to disambiguate object representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results in the context of prior findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "123f44ee-203a-4c87-a654-a95d8158a5c2",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C53",
+      "claim": "This mechanism may underlie the behavioral benefits previously observed for object recognition in semantically and syntactically congruent (vs. incongruent) scene context.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism may underlie the behavioral benefits previously observed for object recognition in semantically and syntactically congruent (vs. incongruent) scene context (Biederman et al., 1982; Davenport and Potter, 2004; Munneke et al., 2013; V\u00f5 and Wolfe, 2013), as predicted by interactive accounts that propose that contextual facilitation is supported by contextual expectations (Bar, 2004; Davenport and Potter, 2004), with quickly extracted global scene 'gist' priming the representation of candidate objects in the visual cortex (Bar, 2004; Oliva and Torralba, 2007; Torralba, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative connection to prior research findings, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "b631ad27-1ada-4ea6-8136-53276f2d018c",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C54",
+      "claim": "OPA is crucial for extracting global scene information at around 160\u2013200 ms after scene onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The current TMS results suggest that OPA is crucial for extracting this global scene information at around 160\u2013200 ms after scene onset, and that this information is integrated with local object information in LOC around 100 ms later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "eb2debd1-c700-461f-b084-79165a469645",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C55",
+      "claim": "Scene information from OPA is integrated with local object information in LOC around 100 ms after OPA processing (i.e., at 260\u2013300 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "The current TMS results suggest that OPA is crucial for extracting this global scene information at around 160\u2013200 ms after scene onset, and that this information is integrated with local object information in LOC around 100 ms later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "48d75405-5090-4e7a-885c-51e52d7de6d7",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C56",
+      "claim": "The current results do not speak to whether OPA-LOC connectivity is direct or indirect.",
+      "claim_type": "EXPLICIT",
+      "source": "The current results do not speak to whether OPA-LOC connectivity is direct or indirect, for example involving additional brain regions such as other scene-selective regions or the orbitofrontal cortex (Bar, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit acknowledgment of a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "e25dba68-72dd-4b66-acaf-468df3cd3a03",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C57",
+      "claim": "The study provides causal evidence that context-based expectations facilitate object recognition by disambiguating object representations in the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, the current study provides causal evidence that context-based expectations facilitate object recognition by disambiguating object representations in the visual cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main conclusion, supported by the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "24779619-2df0-4355-a25f-80cfcfed9d3a",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C58",
+      "claim": "Distinct neural mechanisms support object recognition based on local features and global scene context.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, results reveal that distinct neural mechanisms support object recognition based on local features and global scene context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main conclusion, supported by the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "b623bea7-0ef8-4b81-a5d0-91ea80511107",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C59",
+      "claim": "72 right-handed volunteers participated in the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 72 right-handed volunteers (43 females, mean age \u00b1 SD = 23.33 \u00b1 3.59, age range = 18\u201333) with normal or corrected-to-normal vision took part in the experiment, after participating in a TMS localization experiment (Wischnewski and Peelen, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "47734159-8a1f-4521-9f3f-cb33486c3607",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C60",
+      "claim": "The study procedures were approved by the 'Centrale Commissie voor Mensgebonden Onderzoek (CCMO)' and conducted in accordance with the Declaration of Helsinki.",
+      "claim_type": "EXPLICIT",
+      "source": "The study procedures were approved by the 'Centrale Commissie voor Mensgebonden Onderzoek (CCMO)' and conducted in accordance with the Declaration of Helsinki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "a1c1f6bb-35e0-4b18-a0ba-f833dbe6cfab",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C61",
+      "claim": "Two TMS pulses separated by 40 ms (25 Hz) were applied to disrupt visual cortex activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Two TMS pulses (biphasic, wavelength: 280 \u00b5s) separated by 40 ms (25 Hz) were applied to disrupt visual cortex activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "8e8b3558-2859-4b9c-a2f5-014aa6e4d5ac",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C62",
+      "claim": "A two-pulse TMS design allows for a broader time window of disruption while maintaining relatively good temporal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that latency of visual cortex activation varies across participants, a two-pulse TMS design was chosen since it allows for a broader time window of disruption while maintaining relatively good temporal resolution (O'Shea et al., 2004; Pitcher et al., 2007; Wokke et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "e71db813-524c-40ba-a402-1c3ea92a0b82",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C63",
+      "claim": "The intensity of stimulation was adjusted to 85% of the individual phosphene threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "The intensity of stimulation was adjusted to 85% of the individual phosphene threshold (PT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "80e41fe5-68af-49ca-9d30-a703332c9bff",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C64",
+      "claim": "The Talairach coordinates for LOC were 45, \u201374, 0.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordinates were 45, \u201374, 0 for LOC (Pitcher et al., 2009) and 34, \u201377, 21 for OPA (Julian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental method, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "7079850f-3d27-40c0-a75f-11ccc851fc01",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C65",
+      "claim": "The Talairach coordinates for OPA were 34, \u201377, 21.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordinates were 45, \u201374, 0 for LOC (Pitcher et al., 2009) and 34, \u201377, 21 for OPA (Julian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental method, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "d2b5d369-c76f-4d01-b5d1-d603620d1a27",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C66",
+      "claim": "TMS was placed on EVC 2 cm above the inion.",
+      "claim_type": "EXPLICIT",
+      "source": "TMS was placed on EVC based on its anatomical location, 2 cm above the inion (Koivisto et al., 2010; Pascual-Leone and Walsh, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental method, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "3dedd9bf-7142-4c6f-bbc4-f2743063bc62",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C67",
+      "claim": "Stimuli consisted of 128 scene photographs with a single object belonging to one of eight categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli consisted of 128 scene photographs with a single object belonging to one of the following eight categories: airplane, bird, car, fish, human, mammal, ship, and train.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "1ea1ac45-fdac-4e82-be2f-6cb1de2bd63d",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C68",
+      "claim": "The scenes spanned a visual angle of 6\u00b0\u00d74.5\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The scenes spanned a visual angle of 6\u00b0\u00d74.5\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "a481a653-67c7-48ba-a046-c971f67c9fce",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C69",
+      "claim": "Each stimulus was repeated three times, once for each TMS timing.",
+      "claim_type": "EXPLICIT",
+      "source": "Each stimulus was repeated three times, once for each TMS timing (60\u2013100 ms, 160\u2013200 ms, and 260\u2013300 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "9209c394-eca9-4214-9c3f-6623d236ff32",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C70",
+      "claim": "The task resulted in a total of 576 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a total of 576 trials, which were presented in a random order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "b74919f2-3b03-44df-81ce-e906e0a3cddf",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C71",
+      "claim": "The task was divided into 12 blocks of 48 trials, each lasting approximately 4 min.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid fatigue, the task was divided into 12 blocks of 48 trials, each lasting approximately 4 min, with short breaks in between of approximately 1 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "d9e612c5-f8bd-4e6e-b752-be557c3c56a2",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C72",
+      "claim": "The total duration of the experiment was approximately 90 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The total duration of the experiment, including preparation and PT determination, was approximately 90 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "6fb4d41a-be12-4f16-bf3b-f5072408c858",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C73",
+      "claim": "At night, the truck is easily recognized by participants when placed in context but not when taken out of context.",
+      "claim_type": "EXPLICIT",
+      "source": "At night (top panels), the truck is easily recognized by participants when placed in context (left) but not when taken out of context (right).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is a description of Figure 1, illustrating the contextual facilitation effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "a476a964-b5ec-4a4a-b882-8055bc755ce4",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C74",
+      "claim": "With sufficient light, the truck is easily recognized also when presented in isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "With sufficient light (bottom panels), the truck is easily recognized also when presented in isolation.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is a description of Figure 1, illustrating object recognition under good viewing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "54fa2712-1874-4d0f-8eef-c59f871f2d5b",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C75",
+      "claim": "The local degradation of objects in the context-based object condition strongly reduces object recognition when the degraded objects are presented out of scene context.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the local degradation of the objects in the context-based object condition is not clearly visible from these small example images. This degradation strongly reduces object recognition when the degraded objects are presented out of scene context (see Brandman and Peelen, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the stimulus properties, supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "6069902c-a579-4905-a28f-4c6fa78abc70",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C76",
+      "claim": "In previous fMRI and MEG experiments, degraded objects were easy to recognize when presented in scene context (>70% correct in a nine-category task) but hard to recognize when presented alone (37% correct).",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral results showed that the degraded objects were easy to recognize when presented in scene context (>70% correct in a nine-category task) but hard to recognize when presented alone (37% correct).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "59ea46c6-d363-407f-b366-53d615e8bdd8",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C77",
+      "claim": "In previous fMRI experiments, the multivariate representation of the category of degraded objects in LOC was strongly enhanced when the objects were viewed in scene context relative to when they were viewed alone.",
+      "claim_type": "EXPLICIT",
+      "source": "fMRI results showed that the multivariate representation of the category of the degraded objects in LOC was strongly enhanced when the objects were viewed in scene context relative to when they were viewed alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "164e3a8e-6e78-41ec-9735-dc7d8084212a",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C78",
+      "claim": "In previous fMRI experiments, scenes presented alone did not evoke discriminable object category responses in LOC, providing evidence for supra-additive contextual facilitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the corresponding scenes presented alone did not evoke discriminable object category responses in LOC, providing evidence for supra-additive contextual facilitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "6b838e61-7419-4ecb-8ef7-2d1812ffa336",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C79",
+      "claim": "In previous fMRI experiments, the contextual facilitation of object processing in LOC was correlated with concurrently evoked activity in scene-selective regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the contextual facilitation of object processing in LOC was correlated with concurrently evoked activity in scene-selective regions, suggesting an interaction between scene- and object-selective regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "8f205b1d-a9de-4d8b-91b2-770455f50c3c",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C80",
+      "claim": "In previous MEG experiments, information about the category of degraded objects in scenes peaked at 160\u2013180 ms and at 280\u2013300 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "MEG results showed that the information about the category of the degraded objects in scenes (derived from multivariate sensor patterns) peaked at two time points: at 160\u2013180 ms and at 280\u2013300 ms after stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "2f7b8250-56a1-4fde-a027-b2224d220269",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C81",
+      "claim": "In previous MEG experiments, only the later peak (280\u2013300 ms) showed a significant contextual facilitation effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, only the later peak showed a significant contextual facilitation effect, with more information about the degraded objects in scenes than the degraded objects alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "e737e875-b84e-4a44-94fc-a50f6246820a",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C82",
+      "claim": "In previous MEG experiments, at 280\u2013300 ms, scenes alone did not evoke discriminable object category responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the LOC results, at this time point, the scenes alone did not evoke discriminable object category responses, such that the contextual facilitation of object processing could not reflect the additive processing of scenes and objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "c0a583d3-9135-4902-aa2a-c4b04127242c",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "claim_id": "C83",
+      "claim": "Previous neuroimaging results indicate that scenes\u2014processed in scene-selective cortex\u2014disambiguate object representations in LOC at around 300 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that scenes\u2014processed in scene-selective cortex\u2014disambiguate object representations in LOC at around 300 ms after stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of prior research findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e53fc4de-3850-4df1-9f2c-8433b7ab6523",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Objects were equally recognizable when presented in isolation (75.8%) and when degraded within a scene (76.7%), demonstrating that scene context compensates for loss of object visibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C17 are directly supported by experimental data with appropriate statistical analysis (F(1,71)=1.22, p=0.27). The equal performance across conditions with matched accuracy validates the experimental design and demonstrates contextual compensation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "2b524b24-66a9-4c7b-b0da-769a20893626",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Recognition in isolated object and context-based object tasks was supported by distinct neural mechanisms in a time-specific manner, revealing two routes to object recognition involving different brain regions at different time points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 reports a significant three-way interaction (F(4,138)=14.37, p<0.001, \u03b7p\u00b2=0.294) demonstrating differential neural mechanisms. Claims C39, C40, C43, and C58 are interpretations well-supported by the convergent experimental findings across all three TMS experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "f53c48a6-a963-4639-bc9a-ab418399f98d",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "OPA causally and selectively supports context-based object recognition at 160-200 ms after stimulus onset, but does not contribute to isolated object recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 are supported by robust statistical evidence showing a Task\u00d7Time interaction (F(2,46)=8.21, p<0.001) with selective impairment of context-based recognition at 160-200 ms (t(23)=5.39, p<0.001, d=1.099). The lack of effect on isolated object recognition (F(2,46)=0.07, p=0.935) confirms selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "401cdb4c-4535-4b05-a88d-8919b52786f8",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "OPA stimulation at 160-200 ms impaired scene-alone task accuracy relative to later stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by statistical evidence (F(2,46)=4.77, p=0.013; t(23)=3.02, p=0.006, d=0.616). This finding confirms OPA's role in scene processing at the predicted time window, though the effect relative to early stimulation was not significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "1149f5bd-a286-4b50-8694-b6bc8d8152a0",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LOC is causally involved in both isolated and context-based object recognition at 160-200 ms after stimulus onset during feedforward processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 and C30 are supported by strong statistical evidence showing Task\u00d7Time interaction (F(2,46)=12.99, p<0.001) and selective impairment of isolated object recognition at 160-200 ms (t(23)=4.58, p<0.001, d=0.936; t(23)=5.39, p<0.001, d=1.101). The interpretation in C30 is consistent with feedforward processing models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "39b6ac29-fc7c-449d-907b-66c20af1e840",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LOC causally supports context-based object recognition at 260-300 ms through feedback processing that disambiguates object representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 report strong statistical evidence for late LOC involvement (t(23)=4.01, p<0.001, d=0.818; t(23)=2.26, p=0.034, d=0.461). Claims C31 and C42 interpret this as feedback processing, which is well-supported by the temporal profile and prior neuroimaging findings (C49-C52).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "09dd9a3f-7f99-477b-aedf-a314d3f506b7",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "EVC is causally involved in initial visual processing at 60-100 ms, supporting both isolated and context-based object recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 and C37 are supported by statistical evidence showing Task\u00d7Time interaction (F(2,46)=14.42, p<0.001) and early impairment effects (t(23)=3.44, p=0.002, d=0.701; t(23)=5.41, p<0.001, d=1.105). The interpretation of initial visual processing is consistent with known EVC function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "0f1c1d09-b328-41a2-82b9-21a7e582c991",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EVC causally supports isolated object recognition at 160-200 ms through feedback processing, but not context-based object recognition at this time window.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 reports unexpected but statistically significant impairment (t(23)=5.19, p<0.001, d=1.06). Claim C36 shows no effect for context-based recognition at this time (t(23)=0.99, p=0.334). Claims C38 and C41 interpret this as feedback specific to isolated object recognition, which is supported by the differential temporal profiles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "ecd92256-ebcd-4eab-bdaa-4674ea993403",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For context-based object recognition, EVC is required early (60-100 ms) but not at the middle time window (160-200 ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are directly supported by statistical evidence showing early impairment (t(23)=5.41, p<0.001, d=1.105) but no significant effect at 160-200 ms (t(23)=0.99, p=0.334). This temporal profile differs from isolated object recognition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "d78b6475-0989-49fb-b64f-23619e53faf3",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Scene-selective cortex (OPA) causally and selectively supports context-based object recognition before object-selective cortex (LOC), with context-based expectations facilitating recognition by disambiguating object representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 summarize the main findings supported by the experimental data. Claim C5 states the tested hypothesis, which was confirmed. Claims C8 and C57 provide the mechanistic interpretation, which is well-supported by the temporal sequence (OPA at 160-200 ms, LOC at 260-300 ms) and convergent evidence from prior neuroimaging studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "94283308-f65b-4c29-acc7-3572192bc9c3",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Feedback processing is required for accurate object recognition and can be explained by a hierarchical perceptual inference framework where global representations provide priors to disambiguate local information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by the late causal involvement of EVC and LOC beyond feedforward processing. Claims C45-C48 provide a theoretical framework supported by citations and consistent with the experimental findings showing differential feedback patterns for isolated vs. context-based recognition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "0f1755dd-f769-4d92-9f11-837ea799e723",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Current TMS results are consistent with prior fMRI and MEG findings showing that OPA extracts scene information at 160-200 ms, which is then integrated with object information in LOC around 100 ms later (260-300 ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 accurately cite prior research findings. Claims C52, C54-C55 integrate current results with prior findings, providing a coherent interpretation. The temporal correspondence between MEG peaks (160-180 ms, 280-300 ms) and TMS effects (160-200 ms, 260-300 ms) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "bda2f219-173f-4692-8608-bd897a381ccd",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study cannot determine whether OPA-LOC connectivity is direct or indirect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 appropriately acknowledges a limitation of the TMS approach. The study demonstrates temporal sequence and causal involvement but cannot resolve anatomical connectivity, which would require different methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "7389ab72-a8a0-43d0-9e1d-d5d08d01dbc1",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TMS did not significantly affect response time across any conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is supported by comprehensive statistical analysis showing no significant interactions or main effects involving TMS time or region on response time. This indicates TMS effects were specific to accuracy rather than general performance disruption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "32a57c38-2919-431a-bd26-ac40c3bec7ec",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The feedback mechanism from scene-selective to object-selective cortex may underlie behavioral benefits for object recognition in congruent scene contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 is speculative, connecting current findings to prior behavioral studies. While the connection is plausible and supported by citations, the current study did not directly test semantic or syntactic congruency effects, making this interpretation uncertain without additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study employed appropriate methods including 72 participants across three pre-registered experiments, TMS targeting three brain regions at three time windows, and a well-controlled experimental design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C72 describe methodological details that are clearly reported and appropriately justified. The pre-registration, sample size (N=24 per experiment), TMS parameters, and experimental design are well-documented. The use of individualized TMS targeting based on prior screening (C15) strengthens the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "d9320246-6ab4-46bc-86f4-89e0c4a15a26",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Context facilitates object recognition, which is crucial for everyday behavior under poor viewing conditions, while isolated object recognition relies on ventral stream processing of local features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C9-C11 describe established knowledge supported by appropriate citations and general scientific consensus. Claim C10 is illustrated by Figure 1 (C73-C74). These claims provide necessary background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "9a0b7ed6-da64-4c42-8034-898de6dc07c9",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Two competing theoretical accounts exist for context-based object recognition: parallel processing accounts and feedback accounts, which prior neuroimaging studies could not distinguish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C12-C14 accurately describe theoretical frameworks from the literature with appropriate citations. Claim C14 correctly identifies the limitation of prior neuroimaging approaches that motivated the current TMS study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "b5c1e22a-4e83-4d5f-8e06-bb3c6bbda407",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "TMS effects vary across individuals due to differences in functional coordinates, skull thickness, and gyral folding patterns, necessitating individualized targeting procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is supported by citation and represents established knowledge about TMS variability. This justifies the individualized assignment procedure used in the study, strengthening the methodological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    },
+    {
+      "id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf",
+      "content_id": "ef38dd6b-7b16-4f0f-9b74-c0350f0e1a5e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior research using the same stimulus set demonstrated that scene context facilitates recognition of degraded objects, with fMRI and MEG evidence suggesting scene-selective cortex disambiguates object representations in LOC around 300 ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C83 accurately describe prior research findings (Brandman and Peelen, 2017) that motivated the current study. The citations are appropriate and the interpretation (C83) is consistent with the prior findings. These claims establish the empirical foundation for the current hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:38:56.146002Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f55f6a81-e1fd-4c5b-a159-b41afd096b56",
+      "result_id": "e53fc4de-3850-4df1-9f2c-8433b7ab6523"
+    },
+    {
+      "claim_id": "ed59432f-b4f0-47ed-8113-1e576a46deb8",
+      "result_id": "e53fc4de-3850-4df1-9f2c-8433b7ab6523"
+    },
+    {
+      "claim_id": "f0722a7c-5d06-4d44-ba05-dc606aecbae8",
+      "result_id": "2b524b24-66a9-4c7b-b0da-769a20893626"
+    },
+    {
+      "claim_id": "7dc0c1e2-5e3d-4db3-b5a6-efcfbd0947b3",
+      "result_id": "2b524b24-66a9-4c7b-b0da-769a20893626"
+    },
+    {
+      "claim_id": "05e17988-b4f5-4e53-baae-676ff47dd7a5",
+      "result_id": "2b524b24-66a9-4c7b-b0da-769a20893626"
+    },
+    {
+      "claim_id": "345c00ef-4eff-4273-ace9-81ed0d35b3e3",
+      "result_id": "2b524b24-66a9-4c7b-b0da-769a20893626"
+    },
+    {
+      "claim_id": "24779619-2df0-4355-a25f-80cfcfed9d3a",
+      "result_id": "2b524b24-66a9-4c7b-b0da-769a20893626"
+    },
+    {
+      "claim_id": "7a1638ff-8a28-4079-a993-9f7ce96a3ab5",
+      "result_id": "f53c48a6-a963-4639-bc9a-ab418399f98d"
+    },
+    {
+      "claim_id": "52201118-a879-4920-9a8b-8aa8b15e76e2",
+      "result_id": "f53c48a6-a963-4639-bc9a-ab418399f98d"
+    },
+    {
+      "claim_id": "b7988408-4eb2-4bb2-95d9-439b0afd28ba",
+      "result_id": "f53c48a6-a963-4639-bc9a-ab418399f98d"
+    },
+    {
+      "claim_id": "e9122f98-e2f5-4718-b703-baf524424fa4",
+      "result_id": "f53c48a6-a963-4639-bc9a-ab418399f98d"
+    },
+    {
+      "claim_id": "af133a02-ed93-4eb1-bf33-344e89bab7f6",
+      "result_id": "f53c48a6-a963-4639-bc9a-ab418399f98d"
+    },
+    {
+      "claim_id": "6daf5c0b-98ce-4dc4-9076-918bcd588934",
+      "result_id": "401cdb4c-4535-4b05-a88d-8919b52786f8"
+    },
+    {
+      "claim_id": "d5ac7221-c47a-49a5-9923-84630b43a841",
+      "result_id": "1149f5bd-a286-4b50-8694-b6bc8d8152a0"
+    },
+    {
+      "claim_id": "b6aa40f9-b7be-44e5-b508-24aba5c8f887",
+      "result_id": "1149f5bd-a286-4b50-8694-b6bc8d8152a0"
+    },
+    {
+      "claim_id": "db89af27-51ed-4f34-a811-750f45294eac",
+      "result_id": "1149f5bd-a286-4b50-8694-b6bc8d8152a0"
+    },
+    {
+      "claim_id": "bddb3c68-ca27-42ae-9120-07d803d30638",
+      "result_id": "39b6ac29-fc7c-449d-907b-66c20af1e840"
+    },
+    {
+      "claim_id": "b24bee22-b815-49f8-811f-72fa5550498d",
+      "result_id": "39b6ac29-fc7c-449d-907b-66c20af1e840"
+    },
+    {
+      "claim_id": "871cac90-049f-4c05-96d3-7770acf5ae93",
+      "result_id": "39b6ac29-fc7c-449d-907b-66c20af1e840"
+    },
+    {
+      "claim_id": "9ba21d98-3362-4489-a5be-13d76616927c",
+      "result_id": "39b6ac29-fc7c-449d-907b-66c20af1e840"
+    },
+    {
+      "claim_id": "12b7ea3b-678e-4c25-8a47-12923c3ad072",
+      "result_id": "09dd9a3f-7f99-477b-aedf-a314d3f506b7"
+    },
+    {
+      "claim_id": "86c8c474-e03b-4fd8-b989-0b577fb70a2b",
+      "result_id": "09dd9a3f-7f99-477b-aedf-a314d3f506b7"
+    },
+    {
+      "claim_id": "8350a9dc-2714-40ec-b9f2-4c76eecf61fa",
+      "result_id": "09dd9a3f-7f99-477b-aedf-a314d3f506b7"
+    },
+    {
+      "claim_id": "e9b8173b-a48a-4d48-a2cf-5bf2a3a2064f",
+      "result_id": "0f1c1d09-b328-41a2-82b9-21a7e582c991"
+    },
+    {
+      "claim_id": "152f3ff2-c987-49ff-a7a4-39c22c556cae",
+      "result_id": "0f1c1d09-b328-41a2-82b9-21a7e582c991"
+    },
+    {
+      "claim_id": "913fc1fd-13a1-425b-bb16-6d371a295455",
+      "result_id": "0f1c1d09-b328-41a2-82b9-21a7e582c991"
+    },
+    {
+      "claim_id": "b55cd2b1-78f7-4010-acd3-75a54afea159",
+      "result_id": "ecd92256-ebcd-4eab-bdaa-4674ea993403"
+    },
+    {
+      "claim_id": "52c0dc08-450b-4a22-ad71-ec36fe46f098",
+      "result_id": "ecd92256-ebcd-4eab-bdaa-4674ea993403"
+    },
+    {
+      "claim_id": "51499a64-27fb-4f10-9539-5e9a022c51ad",
+      "result_id": "d78b6475-0989-49fb-b64f-23619e53faf3"
+    },
+    {
+      "claim_id": "b2ee7b92-00ca-4f9e-9ee8-d8084943e5be",
+      "result_id": "d78b6475-0989-49fb-b64f-23619e53faf3"
+    },
+    {
+      "claim_id": "24b471b3-8512-4223-bcc3-90ce3c1e7d7e",
+      "result_id": "d78b6475-0989-49fb-b64f-23619e53faf3"
+    },
+    {
+      "claim_id": "bc9f1640-72f4-42d3-99d8-ee087137c0de",
+      "result_id": "d78b6475-0989-49fb-b64f-23619e53faf3"
+    },
+    {
+      "claim_id": "e25dba68-72dd-4b66-acaf-468df3cd3a03",
+      "result_id": "d78b6475-0989-49fb-b64f-23619e53faf3"
+    },
+    {
+      "claim_id": "2d5f4a83-16b4-4d97-a549-e5d8877e13b8",
+      "result_id": "94283308-f65b-4c29-acc7-3572192bc9c3"
+    },
+    {
+      "claim_id": "ecca1db5-03ae-4c41-9329-aaf2b5f99f8e",
+      "result_id": "94283308-f65b-4c29-acc7-3572192bc9c3"
+    },
+    {
+      "claim_id": "f0e869dd-30fa-4439-80b0-461e2495ab0c",
+      "result_id": "94283308-f65b-4c29-acc7-3572192bc9c3"
+    },
+    {
+      "claim_id": "4033152e-4c2f-4bcc-876f-969a0adc457a",
+      "result_id": "94283308-f65b-4c29-acc7-3572192bc9c3"
+    },
+    {
+      "claim_id": "eff94d1e-63bf-46d7-94fc-686b61cdd6a5",
+      "result_id": "94283308-f65b-4c29-acc7-3572192bc9c3"
+    },
+    {
+      "claim_id": "1f1aba51-f95b-4e24-ba56-e10f7b5d95f9",
+      "result_id": "0f1755dd-f769-4d92-9f11-837ea799e723"
+    },
+    {
+      "claim_id": "cef761a8-303f-45be-8423-e57df39ce13c",
+      "result_id": "0f1755dd-f769-4d92-9f11-837ea799e723"
+    },
+    {
+      "claim_id": "33f2e0b1-85a5-4c10-be05-cd6bd2c1601b",
+      "result_id": "0f1755dd-f769-4d92-9f11-837ea799e723"
+    },
+    {
+      "claim_id": "1cdea1d5-083f-49d7-8333-3c98be9aeeec",
+      "result_id": "0f1755dd-f769-4d92-9f11-837ea799e723"
+    },
+    {
+      "claim_id": "b631ad27-1ada-4ea6-8136-53276f2d018c",
+      "result_id": "0f1755dd-f769-4d92-9f11-837ea799e723"
+    },
+    {
+      "claim_id": "eb2debd1-c700-461f-b084-79165a469645",
+      "result_id": "0f1755dd-f769-4d92-9f11-837ea799e723"
+    },
+    {
+      "claim_id": "48d75405-5090-4e7a-885c-51e52d7de6d7",
+      "result_id": "bda2f219-173f-4692-8608-bd897a381ccd"
+    },
+    {
+      "claim_id": "240dd8dd-fa91-4136-ae41-b64794758370",
+      "result_id": "7389ab72-a8a0-43d0-9e1d-d5d08d01dbc1"
+    },
+    {
+      "claim_id": "123f44ee-203a-4c87-a654-a95d8158a5c2",
+      "result_id": "32a57c38-2919-431a-bd26-ac40c3bec7ec"
+    },
+    {
+      "claim_id": "b623bea7-0ef8-4b81-a5d0-91ea80511107",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "47734159-8a1f-4521-9f3f-cb33486c3607",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "a1c1f6bb-35e0-4b18-a0ba-f833dbe6cfab",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "8e8b3558-2859-4b9c-a2f5-014aa6e4d5ac",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "e71db813-524c-40ba-a402-1c3ea92a0b82",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "80e41fe5-68af-49ca-9d30-a703332c9bff",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "7079850f-3d27-40c0-a75f-11ccc851fc01",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "d2b5d369-c76f-4d01-b5d1-d603620d1a27",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "3dedd9bf-7142-4c6f-bbc4-f2743063bc62",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "1ea1ac45-fdac-4e82-be2f-6cb1de2bd63d",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "a481a653-67c7-48ba-a046-c971f67c9fce",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "9209c394-eca9-4214-9c3f-6623d236ff32",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "b74919f2-3b03-44df-81ce-e906e0a3cddf",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "d9e612c5-f8bd-4e6e-b752-be557c3c56a2",
+      "result_id": "76f1a6a0-2aef-4b1c-a794-5a3188ee4b30"
+    },
+    {
+      "claim_id": "9023dd10-5082-4814-abad-935d3ceee9c2",
+      "result_id": "d9320246-6ab4-46bc-86f4-89e0c4a15a26"
+    },
+    {
+      "claim_id": "9f6e85eb-ffbc-4b11-9058-3ee097b69841",
+      "result_id": "d9320246-6ab4-46bc-86f4-89e0c4a15a26"
+    },
+    {
+      "claim_id": "e915ef64-09f5-41fb-bcbf-364d74eb01a8",
+      "result_id": "d9320246-6ab4-46bc-86f4-89e0c4a15a26"
+    },
+    {
+      "claim_id": "85e45d9d-975c-4958-bbdd-214380ebecfa",
+      "result_id": "d9320246-6ab4-46bc-86f4-89e0c4a15a26"
+    },
+    {
+      "claim_id": "6cf8bf93-7ada-41ab-8972-69260d406bba",
+      "result_id": "d9320246-6ab4-46bc-86f4-89e0c4a15a26"
+    },
+    {
+      "claim_id": "74900e68-9e8a-4fa1-bc85-fc0519f94a83",
+      "result_id": "9a0b7ed6-da64-4c42-8034-898de6dc07c9"
+    },
+    {
+      "claim_id": "f33bd1f0-956f-4a0d-8a8d-8ec773701949",
+      "result_id": "9a0b7ed6-da64-4c42-8034-898de6dc07c9"
+    },
+    {
+      "claim_id": "513df53d-85ff-4102-9eac-188124719e61",
+      "result_id": "9a0b7ed6-da64-4c42-8034-898de6dc07c9"
+    },
+    {
+      "claim_id": "6608d2e8-0fea-437e-89af-b42ec2c9226f",
+      "result_id": "9a0b7ed6-da64-4c42-8034-898de6dc07c9"
+    },
+    {
+      "claim_id": "5d6be6d4-e8a3-42fb-927f-a484721f8917",
+      "result_id": "9a0b7ed6-da64-4c42-8034-898de6dc07c9"
+    },
+    {
+      "claim_id": "f52980ce-378e-4823-b962-4c4e213ca444",
+      "result_id": "b5c1e22a-4e83-4d5f-8e06-bb3c6bbda407"
+    },
+    {
+      "claim_id": "6fb4d41a-be12-4f16-bf3b-f5072408c858",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    },
+    {
+      "claim_id": "a476a964-b5ec-4a4a-b882-8055bc755ce4",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    },
+    {
+      "claim_id": "54fa2712-1874-4d0f-8eef-c59f871f2d5b",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    },
+    {
+      "claim_id": "6069902c-a579-4905-a28f-4c6fa78abc70",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    },
+    {
+      "claim_id": "59ea46c6-d363-407f-b366-53d615e8bdd8",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    },
+    {
+      "claim_id": "164e3a8e-6e78-41ec-9735-dc7d8084212a",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    },
+    {
+      "claim_id": "6b838e61-7419-4ecb-8ef7-2d1812ffa336",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    },
+    {
+      "claim_id": "8f205b1d-a9de-4d8b-91b2-770455f50c3c",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    },
+    {
+      "claim_id": "2f7b8250-56a1-4fde-a027-b2224d220269",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    },
+    {
+      "claim_id": "e737e875-b84e-4a44-94fc-a50f6246820a",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    },
+    {
+      "claim_id": "c0a583d3-9135-4902-aa2a-c4b04127242c",
+      "result_id": "6965cb3a-83a6-496f-8c8e-ea1aaa87eacf"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2550 @@
+{
+  "submission": {
+    "id": "447217ee-9e30-43b2-be56-81db51b3279f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:42:01.688897Z",
+    "updated_at": "2025-12-03T19:42:01.688897Z"
+  },
+  "content": [
+    {
+      "id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "submission_id": "447217ee-9e30-43b2-be56-81db51b3279f",
+      "content_type": "manuscript",
+      "content_text": "# Genetic dissection of mutual interference between two consecutive learning tasks in Drosophila\n\n## Authors\n\n- Jianjian Zhao<sup>1</sup>\n- Xuchen Zhang<sup>1</sup>\n- Bohan Zhao<sup>1</sup> ([ORCID: 0000-0002-9177-1278](https://orcid.org/0000-0002-9177-1278))\n- Wantong Hu<sup>1</sup>\n- Tongxin Diao<sup>1</sup>\n- Liyuan Wang<sup>1</sup>\n- Yi Zhong<sup>1</sup> ([ORCID: 0000-0002-7927-5976](https://orcid.org/0000-0002-7927-5976))\n- Qian Li<sup>1</sup> ([ORCID: 0000-0001-7317-1570](https://orcid.org/0000-0001-7317-1570)) \u2020\n\n### Affiliations\n\n1. School of Life Sciences, IDG/McGovern Institute for Brain Research, MOE Key Laboratory of Protein Sciences, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))\n2. Tsinghua-Peking Center for Life Sciences Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimals can continuously learn different tasks to adapt to changing environments and, therefore, have strategies to effectively cope with inter-task interference, including both proactive interference (Pro-I) and retroactive interference (Retro-I). Many biological mechanisms are known to contribute to learning, memory, and forgetting for a single task, however, mechanisms involved only when learning sequential different tasks are relatively poorly understood. Here, we dissect the respective molecular mechanisms of Pro-I and Retro-I between two consecutive associative learning tasks in Drosophila. Pro-I is more sensitive to an inter-task interval (ITI) than Retro-I. They occur together at short ITI (<20 min), while only Retro-I remains significant at ITI beyond 20 min. Acutely overexpressing Corkscrew (CSW), an evolutionarily conserved protein tyrosine phosphatase SHP2, in mushroom body (MB) neurons reduces Pro-I, whereas acute knockdown of CSW exacerbates Pro-I. Such function of CSW is further found to rely on the \u03b3 subset of MB neurons and the downstream Raf/MAPK pathway. In contrast, manipulating CSW does not affect Retro-I as well as a single learning task. Interestingly, manipulation of Rac1, a molecule that regulates Retro-I, does not affect Pro-I. Thus, our findings suggest that learning different tasks consecutively triggers distinct molecular mechanisms to tune proactive and retroactive interference.\n\n## Introduction\n\nContinual learning is a natural ability of animals ranging from invertebrates to vertebrates but a great challenge for artificial intelligence (Fayek et al., 2020; Kudithipudi et al., 2022; Parisi et al., 2019; Wang et al., 2023). To achieve continual learning, the mutual interference between learning tasks, including proactive and retroactive interference, needs to be properly tuned. The interference from the previous task on the learning and memory of the current task is called Pro-I, while the interference from the current task on the memory of the following task is named Retro-I (Bouton, 1993; Miller, 2021; Wixted, 2004). Although, we have much understanding of the molecular mechanisms of learning and memory for a single learning task (Johansen et al., 2011; Kandel et al., 2014), the molecular mechanisms that modulate the interferences between different tasks remain unclear.\n\nDrosophila is a well-studied and highly tractable genetic model organism for understanding molecular mechanisms underlying a single learning task (Davis, 2005; Noyes et al., 2021; Waddell and Quinn, 2001) as well as related human diseases (Mariano et al., 2020; Pandey and Nichols, 2011; van Alphen and van Swinderen, 2013). In recent years, Drosophila has also emerged as an excellent model for studying interference mechanisms between two associative learning tasks. Several molecules, including Rac1, Foraging, Scribble, SLC22A, Fmr1, SCAR, and Dia, have been reported to regulate Retro-I (Cervantes-Sandoval et al., 2016; Dong et al., 2016; Gai et al., 2016; Gao et al., 2019; Reaume et al., 2011; Shuai et al., 2010). Of these molecules, Scribble and SLC22A, have also been reported to regulate Pro-I (Cervantes-Sandoval et al., 2016; Gai et al., 2016). It indicates that Retro-I and Pro-I may have shared regulatory molecules. Previous studies reported that resistance to Pro-I and Retro-I is very different in patients with autism (Mottron et al., 1998), schizophrenia (Torres et al., 2001), and ADHD (Orban et al., 2022). It raises a possibility that Pro-I and Retro-I may have distinct molecular mechanisms. Of note, all reported molecules in regulating Retro-I or Pro-I also play important roles in the learning or memory of a single learning task (Cervantes-Sandoval et al., 2016; Dong et al., 2016; Gai et al., 2016; Gao et al., 2019; Reaume et al., 2011; Shuai et al., 2010). Whether there are molecules specifically responsible for modulating memory interference without affecting a single learning task remains to be determined.\n\n## Results\n\nPsychological studies have shown that Pro-I is closely related to content similarity, context similarity, and the time interval between the proactive task and the target task (Kliegl and B\u00e4uml, 2021). In Drosophila, it has been known that an aversive associative learning task produces significant Pro-I on another similar task immediately following (Cervantes-Sandoval et al., 2016; Gai et al., 2016). However, the requirements for the generation of such Pro-I have not been systematically investigated, such as content similarity, context similarity, and the time interval between tasks.\n\n### Pro-I is affected by content similarity and context similarity between tasks\n\nConsistent with previous studies (Cervantes-Sandoval et al., 2016; Gai et al., 2016), significant Pro-I was observed between two consecutive aversive tasks (Figure 1A; Associative group). This Pro-I phenomenon was still evident 1 hr later (Figure 1\u2014figure supplement 1A) and was not affected by changing the order of the two tasks (Figure 1\u2014figure supplement 1B). To reduce content similarity between tasks, we changed the proactive task into non-associative stimuli (Mo et al., 2022; Tully and Quinn, 1985; Zhang et al., 2018) or an appetitive learning task (Liu et al., 2012; Perisse et al., 2013; Pribbenow et al., 2022), which was less similar to the target task. With such changes, no significant Pro-I was observed (Figure 1A and B). Then, we changed the learning context of the two aversive tasks to reduce context similarity (Figure 1C). When both tasks were learned in the same context, the Pro-I was evident. In contrast, when the two tasks were learned in different contexts, the Pro-I was no longer observed. In addition, recent studies have found that a single aversive learning task can produce two opposing memory components: avoidance memory and approach memory (Jacob and Waddell, 2020; Naganos et al., 2022; Zhao et al., 2021). Here, we found that the Pro-I only affected avoidance memory (Figure 1\u2014figure supplement 1C). Together, these data suggest that reducing inter-task similarity by changing learning content or context can release Pro-I in Drosophila, which is consistent with psychological studies (Kliegl and B\u00e4uml, 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83516/elife-83516-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left: schematic of the experiment. No stimuli (Control), non-associative stimuli (Odor Alone, Shock Alone, and Backward), or associative learning (Associative) were used as the proactive task. Aversive associative learning was used as the target task. Right: Comparison of immediate memory performance of the target task of different groups. Compared with the \u2018Control\u2019 group, significant Pro-I was observed in the \u2018Associative\u2019 group, but not in non-associative groups. n=8. (B) Left: schematic of the experiment. In the \u2018Aversive learning (AV)\u2019 or \u2018Appetitive learning (AP)\u2019 group, the immediate performance of a single task was tested; in the \u2018Proactive interference (AP\u2192AV)\u2019 group, the proactive task was an appetitive learning and the target task was an aversive learning. Right: Comparison of immediate memory performance of different groups. Compared with the AV group, no significant Pro-I was observed in the \u2018Proactive interference (AP\u2192AV)\u2019 group. n=8. (C) Left: schematic of the experiment. In the \u2018Control\u2019 group, there was no proactive task; in the \u2018Same context\u2019 group, the proactive task and the target task were performed in the same context (blue light); in the \u2018Different context\u2019 group, the proactive task was performed in the green light context, while the target task was performed in the blue light context. Right: Comparison of immediate memory performance of the target task of different groups. Compared with the \u2018Control\u2019 group, significant Pro-I was observed in the \u2018Same context\u2019 group, but not in the \u2018Different context\u2019 group. n=8. Statistics: ordinary one-way ANOVA with Dunnett\u2019s multiple comparisons tests. Results with error bars are means \u00b1 SEM. *p<0.05. n.s., non-significant. Also see Figure 1\u2014figure supplement 1, Figure 1\u2014source data 1, and Figure 1\u2014figure supplement 1\u2014source data 1 information.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83516/elife-83516-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Left: schematic of the experiment. No stimuli (Control), non-associative stimuli (Odor Alone, Shock Alone, and Backward), or associative learning (Associative) were used as the proactive task. Aversive associative learning was used as the target task. Right: Comparison of 1 hr memory performance of the target task of different groups. Compared with the \u2018Control\u2019 group, significant Pro-I was observed in the \u2018Associative\u2019 group, but not in non-associative control groups. n=8\u20139. (B) Left: schematic of the experiment. Odors of A and B were used in the proactive task, while odors of X and Y were used in the target task. Right: Comparison of the immediate memory performance of the target task of different groups. Compared with the \u2018Control\u2019 group, significant Pro-I was observed in the \u2018Associative\u2019 group. n=8. (C) Left: schematic of the experiment. Odors of E and F were used in the proactive task. Odors of A and X were used in the target task to test CS +memory, and odors of X and B were used in the target task to test CS\u2013 memory. Right: Comparison of the immediate memory performance of the target task of different groups. Compared to the \u2018Pro-I\u2013\u2019 group, significant Pro-I was observed in the \u2018Pro-I+\u2019 group when testing CS + memory but not CS\u2013 memory. n=8\u201310. Statistics: Kruskal-Wallis test with Dunn\u2019s multiple comparisons tests (A-mid panel); ordinary one-way ANOVA with Dunnett\u2019s multiple comparisons tests (A-right panel); Mann-Whitney test (B); two-way ANOVA with Bonferroni\u2019s multiple comparisons tests (C). Results with error bars are means \u00b1 SEM. *p<0.05. n.s., non-significant.\n\n### Pro-I and Retro-I differ in time interval sensitivity and regulatory molecules\n\nWe next tested the relationship between the Pro-I and ITI (Figure 2A\u2013C). Flies showed significant Pro-I when the ITI was 15 min or less (0, 5, 10, and 15 min). If the ITI was 20 min or more (20, 30, and 60 min), no significant Pro-I was observed. In contrast, when the ITI was gradually increased from 0 to 60 min (0, 20, 30, and 60 min), the flies consistently exhibited significant Retro-I (Figure 2D and E). This result is consistent with previous studies on Retro-I (Cervantes-Sandoval et al., 2016; Dong et al., 2016; Gai et al., 2016; Gao et al., 2019; Reaume et al., 2011; Shuai et al., 2010).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83516/elife-83516-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) The paradigm (A) and behavioral results (B and C) of Pro-I experiments. The time interval between the proactive task and the target task was changed from 0 to 60 min. Pro-I was significant when the time interval was less than 20 min (0 min, 5 min, 10 min, or 15 min) in wild-type flies. n=8. (D and E) The paradigm (D) and the behavioral result (E) of theRetro-I experiment. Retro-I was significant when the time interval between the target and the retroactive task was 0 min, 20 min, 30 min, and 60 min. n=8\u20139. (F) The behavioral performance of transgenic flies with retroactive or Pro-I. Compared to the control group (MB-GS/+, RU486+), Rac1-CA-expressing flies (MB-GS/UAS-Rac1-CA, RU486+) showed a significantly lower performance index, while Rac1-DN-expressing flies (MB-GS/UAS-Rac1-DN, RU486+) exhibited a higher memory index in Retro-I. No significant difference was observed in all groups with Pro-I. n=12. Statistics: ordinary one-way ANOVA with Dunnett\u2019s multiple comparisons tests (B and C); two-way ANOVA with Bonferroni\u2019s multiple comparisons tests (E and F). Results with error bars are means \u00b1 SEM. *p<0.05. n.s., non-significant. Also see Figure 2\u2014source data 1 for additional information.\n\nGiven that Scribble and SLC22A regulate both Pro-I and Retro-I (Cervantes-Sandoval et al., 2016; Gai et al., 2016), other regulators of Retro-I may also affect Pro-I. Rac1 is required to mediate Retro-I when the ITI is 1.5 hr (Shuai et al., 2010). We next tested whether Rac1 also affects Retro-I with 0 min ITI and explored whether Rac1 plays a role in Pro-I (Figure 2F). The transgene dominant-negative Rac1 (Rac1-DN) or constitutively active Rac1 (Rac1-CA) was used to inhibit or increase Rac1 activity, respectively (Luo et al., 1994). Since acute manipulation of Rac1 activity in mushroom body (MB) neurons is sufficient to regulate memory performance (Gao et al., 2019; Shuai et al., 2010), Rac1 transgenes were expressed using MB-GS, a Gene-Switch (GS) tool capable of inducing transgene expression specifically in the MB only on administration of the drug RU486 (Mao et al., 2004). Suppressing (MB-GS/UAS-Rac1-DN, RU486+) or increasing (MB-GS/UAS-Rac1-CA, RU486+) Rac1 activity in MB neurons significantly mitigated or aggravated the Retro-I, respectively. However, the same manipulations did not affect the Pro-I, indicating that there is a different molecular mechanism underlying the Pro-I.\n\n### Pro-I, but not Retro-I, is bidirectionally regulated by CSW\n\nSince the difference between Pro-I and Retro-I lies in the sensitivity to inter-task time intervals, we speculate that molecules that modulate \u2018time interval\u2019 effects may specifically regulate Pro-I. Given that CSW, an evolutionarily conserved protein tyrosine phosphatase SHP2, has been reported to regulate the \u2018time interval\u2019 effect in long-term memory (LTM) formation in Drosophila (Pagani et al., 2009), we tested the role of CSW in Pro-I. Compared to the parental control group (MB-GS/+, RU486+), acutely knocking down CSW in MB neurons using two independent RNAi lines (MB-GS/UAS-csw-RNAi-1 and MB-GS/UAS-csw-RNAi-2; RU486+) showed more severe Pro-I, which can be better reflected by the Pro-I+/Pro-I\u2013 ratio (Figure 3A). To further determine this result, we added a comparison with uninduced control groups (Figure 3B) or genetic control groups (Figure 3\u2014figure supplement 1A and 1D) and obtained consistent results. When the ITI was 20 min, Pro-I was no longer observed in control flies but was still present in flies with acute knockdown of CSW (Figure 3C; Figure 3\u2014figure supplement 1B). Conversely, acute overexpression of CSW in MB neurons (MB-GS/UAS-csw, RU486+) reduced Pro-I by using a newly constructed transgenic strain (Figure 3D and E; Figure 3\u2014figure supplement 1C and E) and a previously reported strain (Botham et al., 2008; Figure 3\u2014figure supplement 1F). Of note, bidirectional manipulation of CSW expression in MB neurons did not affect Retro-I (Figure 3F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83516/elife-83516-fig3-v2.jpg)\n\n**Figure 3.:** (A and B) The behavioral performance of transgenic flies with proactive interference (Pro-I) (0 min interval). Acute knockdown of CSW in mushroom body neurons (MB-GS/UAS-csw-RNAi-1 or MB-GS/UAS-csw-RNAi-2; RU486+) led to more severe Pro-I relative to the genetic control group (MB-GS/+, RU486+) (A) and uninduced controls (RU486\u2013) (B). n=8. (C) The behavioral performance of transgenic flies with Pro-I (20 min interval). csw-RNAi-expressing flies (MB-GS/UAS-csw-RNAi-1, RU486+) but not control flies (MB-GS/+, RU486+) showed significant Pro-I. n=10. (D and E) The behavioral performance of transgenic flies with Pro-I (0 min interval). Acute overexpression of CSW in mushroom body neurons (MB-GS/UAS-csw; RU486+) prevented Pro-I (D) and was more resistant to Pro-I than uninduced control (RU486\u2013) (E). n=7\u20138. (F) The behavioral performance of transgenic flies with Retro-I (0 min interval). Acute knockdown (MB-GS/UAS-csw-RNAi-1, RU486+) or overexpression (MB-GS/UAS-csw, RU486+) of CSW in mushroom body neurons did not affect Retro-I compared with uninduced controls. n=10. (G) Significant Pro-I was found in flies with acute overexpression of CSW in MB \u03b1/\u03b2 neurons (C739/+; Gal80ts/UAS-csw) and genetic control flies (C739/+; Gal80ts/+). n=8. (H) Significant Pro-I was found in genetic control flies (Gal80ts/+; 5-HT1B/+) but not flies with acute overexpression of CSW in MB \u03b3 neurons (Gal80ts/+; 5-HT1B/UAS-csw). n=8. (I) Acute knockdown of CSW in MB \u03b3 neurons (Gal80ts/+; 5-HT1B/UAS-csw-RNAi-1) increased Pro-I relative to the genetic control group (Gal80ts/+; 5-HT1B/+). n=8\u20139. Statistics: two-way ANOVA with Bonferroni\u2019s multiple comparisons tests (A-left panel, B, D-H, and I-left panel); Kruskal-Wallis test with Dunn\u2019s multiple comparisons tests (A-right panel);. Mann-Whitney test (C); unpaired t-test (I-right panel). Results with error bars are means \u00b1 SEM. *p<0.05. n.s., non-significant. Also see Figure 3\u2014figure supplement 1, Figure 3\u2014source data 1, and Figure 3\u2014figure supplement 1\u2014source data 1 for additional information.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83516/elife-83516-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The immediate memory performance with or without proactive interference (Pro-I) was tested in different transgenic flies (A\u2013I). The inter-task interval (ITI) was 0 min (A, C, and D-I) or 20 min (B). (A) An alternative representation of the data in Figure 3B. n=8. (B) An alternative representation of the data in Figure 3C. n=10. (C) An alternative representation of the data in Figure 3E. n=7\u20138. (D) Acute knockdown of Corkscrew (CSW) in mushroom body neurons (MB-GS/UAS-csw-RNAi-1, RU486+) led to more severe Pro-I relative to the genetic control group (+/UAS-csw-RNAi-1, RU486+). n=8. (E) Acute overexpression of CSW in mushroom body neurons (MB-GS/UAS-csw; RU486+) reduced Pro-I compared with the genetic control group (+/UAS-csw, RU486+). n=8. (F) Acutely overexpressing CSW in mushroom body (MB) neurons (MB-GS/UAS-csw (23878), RU486+) reduced the Pro-I compared with its uninduced control group. n=8. (G) Left: expression patterns of different drivers. Scale bar, 50 \u03bcm. Right: flies with overexpression of CSW in MB \u03b3 neurons (5-HT1B>UAS csw) and \u03b1/\u03b2 neurons (C739 >UAS csw) showed higher memory performance than their genetic control group. n=8. (H) Effects of Pro-I without transgene induction. n=7\u20138. (I) Acutely knocking down CSW in MB neurons (MB-GS/UAS-csw-RNAi-1, RU486+) did not significantly affect Pro-I when the proactive task (green light) was in a different context with the target task (blue light). n=8. Statistics: two-way ANOVA with Bonferroni\u2019s multiple comparisons tests (A, C, D, F, and I); Mann-Whitney test (B, E, G, and H). Results with error bars are means \u00b1 SEM. *p<0.05. n.s., non-significant.\n\nThe MB contains ~2000 intrinsic neurons called Kenyon cells (KCs), which are further divided into three major types: \u03b3 neurons (~675), \u03b1/\u03b2 neurons (~990), and \u03b1\u2019/\u03b2\u2019neurons (~350) (Aso et al., 2014). We next sought to determine whether the modulatory effects of CSW on Pro-I could be narrowed to a certain type of MB neurons. 5-HT1B-Gal4 (Gao et al., 2019; Shyu et al., 2017; Yuan et al., 2005), VT30604-Gal4 (Wu et al., 2013), and C739-Gal4 (O\u2019Dell et al., 1995) were used to drive transgene expression in \u03b3 neurons, \u03b1\u2019/\u03b2\u2019 neurons, and \u03b1/\u03b2 neurons, respectively. Overexpressing CSW in \u03b3 neurons or \u03b1/\u03b2 neurons, but not in \u03b1\u2019/\u03b2\u2019 neurons showed higher performance with Pro-I when compared with their respective genetic controls (Figure 3\u2014figure supplement 1G). To rule out possible developmental effects, as there is no available GS tool for subtypes of MB neurons, we employed another inducible expression system called TARGET, which relies on a temperature shift to induce transgene expression (McGuire et al., 2003). Acute overexpression of CSW in \u03b3 neurons (Gal80ts/+; 5-HT1B/UAS-csw, induced), but not in the \u03b1/\u03b2 neurons (C739/+; Gal80ts/UAS-csw, induced), significantly reduced the Pro-I compared with their respective controls (Figure 3G and H). In contrast, acute knockdown of CSW in \u03b3 neurons increased the Pro-I (Figure 3I). In uninduced flies, Pro-I was not affected (Figure 3\u2014figure supplement 1H). These data suggest that CSW regulates Pro-I in MB \u03b3 neurons. In addition, the result in Figure 1C shows that no Pro-I occurred when the two tasks were learned in different contexts. In this case, knocking down the CSW remained ineffective (Figure 3\u2014figure supplement 1I).\n\n### The Raf/MAPK pathway acts downstream of the CSW to regulate Pro-I\n\nCSW is generally considered as a positive regulator of Ras/MAPK signaling (Perkins et al., 1996). And the regulation of CSW on the \u2018time interval\u2019 effect in LTM formation is also thought to be via the MAPK pathway (Pagani et al., 2009). So, we further explored whether CSW affects Pro-I through the MAPK pathway. Feeding U0126, a widely used inhibitor of the MAPK pathway (Thomas and Huganir, 2004), did not affect single-task learning, but significantly exacerbated Pro-I when learning two consecutive tasks (Figure 4A). Flies with acute genetic knockdown of MAPK in MB neurons (MB-GS/UAS-MAPK-RNAi, RU486+) also exhibited more severe Pro-I than uninduced and parental control flies (Figure 4B; Figure 4\u2014figure supplement 1A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83516/elife-83516-fig4-v2.jpg)\n\n**Figure 4.:** The immediate memory performance with or without Pro-I (Pro-I, 0 min interval) was tested in wild-type and different transgenic flies (A\u2013E). (A) Pharmacological inhibition of MAPK by feeding U0126 inhibitor aggravated the Pro-I in wild-type flies. n=9. (B) Flies with acute knockdown of MAPK in mushroom body (MB) neurons (MB-GS/UAS-MAPK-RNAi, RU486+) exhibited more severe Pro-I compared with uninduced control flies. n=8. (C) Acute knockdown of Raf in MB neurons (MB-GS/UAS-Raf-RNAi, RU486+) aggravated the Pro-I relative to the uninduced control. n=8. (D) Acutely overexpressing Raf-GOF in MB neurons (MB-GS/UAS-Raf-GOF, RU486+) reduced the Pro-I compared with its uninduced control group. n=9\u201310. (E) Acute overexpression of Raf-GOF (MB-GS/UAS-Raf-GOF, RU486+) dominated the effect of CSW knockdown (MB-GS/UAS-csw-RNAi, RU486+) on Pro-I. No significant difference was found between uninduced groups without RU486 feeding. n=8\u201310. (F) Model of molecular mechanisms underlying proactive and retroactive interference. Statistics: Mann-Whitney test (A and D); two-way ANOVA with Bonferroni\u2019s multiple comparisons tests (B, C, and E). Results with error bars are means \u00b1 SEM. *p<0.05. n.s., non-significant. Also see Figure 4\u2014figure supplement 1, Figure 4\u2014source data 1, and Figure 4\u2014figure supplement 1\u2014source data 1 for additional information.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83516/elife-83516-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) An alternative representation of the data in Figure 4B. n=8. (B) Learning performance. Acute knockdown or overexpression of Corkscrew (CSW) in mushroom body (MB) neurons did not affect the learning of a single task. n=7. (C) 3 hr memory performance. Acute knockdown or overexpression of CSW in MB neurons did not affect the 3 hr memory performance of a single task. n=8. (D) Learning and 3 hr memory performance. Acutely overexpressing Raf-GOF increased 3 hr memory performance without affecting learning. n=7. (E) Acute knockdown of Sqh in MB neurons (MB-GS/UAS-sqh-RNAi, RU486+) did not significantly affect Pro-I. n=8. Statistics: two-way ANOVA with Bonferroni\u2019s multiple comparisons tests (A\u2013C); Mann-Whitney test (D). Results with error bars are means \u00b1 SEM. *p<0.05. n.s., non-significant.\n\nConsistent with these results, Raf kinase, a classical upstream regulator of MAPK (Thomas and Huganir, 2004), was found to bidirectionally regulate the Pro-I in MB neurons like CSW (Figure 4C and D). Acutely knocking down Raf significantly exacerbated the Pro-I, while acute overexpression of Raf-GOF, which encodes a constitutively active Raf kinase (Brand and Perrimon, 1994), significantly reduced Pro-I. When Raf-GOF and CSW-RNAi were co-expressed, Raf-GOF expression dominated the effect on Pro-I, indicating that Raf acts downstream of CSW (Figure 4E). Thus, our data support that CSW regulates Pro-I through Raf/MAPK pathway.\n\nOur previous study found that the Raf/MAPK pathway is activated by learning to protect memory retention via non-muscle myosin \u2161 Sqh after single-task learning (Zhang et al., 2018). Although the regulatory effect of CSW on Pro-I in two consecutive task learning was also through the Raf/MAPK pathway, manipulating CSW did not affect the learning and memory of a single task (Figure 4\u2014figure supplement 1B and C), unlike Raf (Figure 4\u2014figure supplement 1D; Zhang et al., 2018). Interestingly, as a downstream molecule of the Raf/MAPK pathway in regulating single-task memory (Zhang et al., 2018), Sqh did not participate in the Pro-I between the two tasks (Figure 4\u2014figure supplement 1E). These results suggest that learning two different tasks consecutively may specifically recruit CSW to activate the Raf/MAPK pathway to reduce Pro-I through downstream molecules different from Sqh, a mechanism that differs from the memory protection mechanism triggered by a single learning task.\n\n## Discussion\n\nOur findings support a model for understanding molecular mechanisms of mutual interference between two successive learning tasks in Drosophila (Figure 4F). First, in learning two different associative tasks in succession, Pro-I and Retro-I occur simultaneously when the time distance between tasks is close (<20 min), while only Retro-I could be observed when the time distance was far (>20 min). Second, we identify a molecular pathway that specifically regulates Pro-I: the CSW/Raf/MAPK pathway. The upstream signaling molecule CSW of this pathway is not involved in single-task learning and memory. In learning two different tasks close in time, although Pro-I and Retro-I occurred simultaneously, CSW was only involved in regulating Pro-I. Third, Rac1 specifically regulates Retro-I without affecting Pro-I when two different tasks are temporally close. Consistently, the Rac1/SCAR/Dia pathway has been reported to regulate Retro-I when the two tasks are temporally distant (1.5 hr interval) (Gao et al., 2019; Shuai et al., 2010).\n\nAccording to our data, Pro-I is no longer evident when two aversive olfactory learning tasks are separated by more than 20 min (Figure 2B and C). After 20 min, the memory performance of the proactive task partially declines and a consolidated memory component called anesthesia-resistant memory (ARM) is largely formed (Quinn and Dudai, 1976; Tully et al., 1994; Tully and Quinn, 1985; Zhang et al., 2016). It raises a possibility that the decay or consolidation of the proactive task may release Pro-I. Based on this possibility, the reason why the CSW/Raf/MAPK pathway can bidirectionally regulate Pro-I can be explained because of the ability to modulate the decay or consolidation of proactive task memory. However, it is not supported by the following experimental results. First, acute knockdown or overexpression of CSW in MB neurons did not affect the immediate and early memory performance of a single task (Figure 4\u2014figure supplement 1B and C). Second, in the Retro-I paradigm, the proactive task in the Pro-I paradigm became the target task and was directly examined, however, its performance was not affected by manipulating CSW (Figure 3F). Third, manipulating Raf/MAPK pathway in MB neurons during the adult stage did not affect immediate memory and ARM performance after a single aversive learning task (Zhang et al., 2018).\n\nOur current findings suggest that inter-task similarity from different dimensions contributes to Pro-I. First, the content similarity between tasks can influence Pro-I. Two similar aversive associative tasks could produce significant Pro-I. However, Pro-I was not observed after reducing the inter-task content similarity by replacing the proactive task with non-associative stimuli or an appetitive associative task (Figure 1A and B). Due to the similarity of content, both tasks are more likely to use the same neural circuit thus increasing the possibility of Pro-I. Second, the similarity of environmental contexts between tasks plays an important role in Pro-I. By using different colors of light, we changed the environmental context similarity of the two tasks during the learning stage without affecting the content similarity. Pro-I was significantly released when the similarity of environmental contexts between tasks was reduced (Figure 1C). Third, the similarity of time contexts between tasks also contributes to Pro-I. Time is also considered as a context (Bouton, 1993). When the ITI was increased to more than 20 min, the Pro-I is no longer significant (Figure 2A\u2013C). This phenomenon can be explained as the 20 min ITI might make the time contexts of the two tasks significantly different, thus reducing the inter-task similarity. According to this explanation, the CSW/Raf/MAPK pathway can regulate Pro-I probably by affecting time context similarity between tasks. Aversive learning can induce MAPK activation that peaks at around 20 min, which can be modulated by CSW and Raf (Pagani et al., 2009; Zhang et al., 2018). Overexpression of CSW in MB neurons is reported to accelerate MAPK activation (Pagani et al., 2009) and can reduce Pro-I (Figure 3D, E and H). Knocking down Raf in MB neurons shortens the duration of MAPK activation (Zhang et al., 2018) and can exacerbate Pro-I (Figure 4C). With these findings, an interesting idea is that MAPK activation can help distinguish the time contexts of the two tasks. Thus, the CSW/Raf/MAPK pathway can bidirectionally regulate Pro-I by affecting the similarity of time contexts between tasks. These properties of Pro-I that we obtained using the Drosophila model are consistent with psychological studies (Kliegl and B\u00e4uml, 2021).\n\nAlthough Pro-I in the current work only occurs when the interval between two tasks is less than 20 min, the phenomenon of Pro-I varies across biological learning systems and tasks (Crossley et al., 2019; Epp et al., 2016; Jonides and Nee, 2006). Future works are required to determine whether orthologues of CSW also participate in other forms of Pro-I. Interestingly, the molecules regulating Pro-I and Retro-I in Drosophila are involved in different diseases with varying levels of intellectual disability. Rac1 and Fmr1, which regulate Retro-I in Drosophila, are high-risk genes for autism (Lord et al., 2020). Mutations in PTPN11, a human orthologue of csw, account for more than half of Noonan syndrome (Roberts et al., 2013). Therefore, further studies on the molecular mechanisms underlying Pro-I and Retro-I may also contribute to the understanding of the pathogenesis of autism and Noonan syndrome. In addition, studies of Pro-I and Retro-I from the synaptic and neural circuit levels may also inspire continual learning in artificial intelligence (Wang et al., 2021; Wang et al., 2022).\n\n## Materials and methods\n\n### Fly stocks\n\nFlies (Drosophila melanogaster) were cultured at 23\u2103 and 60% relative humidity with standard medium under a 12 hr light-dark cycle. The standard medium consisted of 50 L of tap water, 1605 g of yeast, 530 g of agar, 438 g of potassium sodium tartrate, 36.3 g of calcium chloride, 1581 g of sucrose, 3160 g of glucose, 3885 g of corn flour, 142 g of preservatives, 1.875 g of penicillin, 1.875 g of chloramphenicol, 1.875 g of doxycycline, 3.71 g of amoxicillin, and 16.07 g of edible alkali. Flies using the TARGET system were raised at 18\u2103. MB-GS was a gift from Dr. Ronald L. Davis (Mao et al., 2004). VT30604-Gal4 was a gift from Dr. Ann-Shyn Chiang (Wu et al., 2013). Canton-S (#64349), UAS-Rac1-CA (#6291), UAS-Rac1-DN (#6292), UAS-csw (#23878), UAS-csw-RNAi-1 (#31760), UAS-csw-RNAi-2 (#33619), UAS-Raf-GOF (#2033), UAS-MAPK-RNAi (#31524), 5-HT1B-Gal4 (#27637), UAS-mCD8-::GFP (#32186), and Gal80ts (#7019 and #7017) were obtained from Bloomington Stock Center. The UAS-Raf-RNAi (#5796) and UAS-sqh-RNAi (#1223) were acquired from Tsinghua Fly Center. The C739-Gal4 (O\u2019Dell et al., 1995) was the extant stock in our lab.\n\n### Generation of transgenic flies\n\nSince the insertion site of UAS-csw in the transgenic line (#23878) acquired from Bloomington Storck Center is the X chromosome, a distinction between male and female flies needs to be made when counting behavioral results. For experimental convenience, we constructed a new transgenic strain (UAS-csw, insertion on chromosome III) and used it mainly in this study. Construction of this strain was performed at Fungene Biotech (http://www.fungene.tech). NotI/XbaI PCR fragment of coding sequences of csw-RA was inserted into the NotI/XbaI sites of pJFRC28-10XUAS-IVS-GFP-p10 vector (Addgene Plasmid #36431), and then the construct was inserted into attp2 site.\n\n### Behavioral assays\n\nFlies from 2 to 6 days old were reared for behavioral experiments under the Pavlovian olfactory conditioning procedure (Tully et al., 1994; Tully and Quinn, 1985). Odors used were OCT (3-octanol, 1.5 \u00d7 10\u20133 in dilution, Aldrich), MCH (4-methylcyclohexanol, 1.0 \u00d7 10\u20133 in dilution, Fluka), EA (ethyl acetate, 2 \u00d7 10\u20133 in dilution, Alfa Aesar), IA (isoamyl acetate, 2 \u00d7 10\u20133 in dilution, Alfa Aesar), EL (Ethyl lactate, 1.5 \u00d7 10\u20133 in dilution, Sigma-Aldrich), and PA (Pentyl acetate, 1.0 \u00d7 10\u20133 in dilution, Sigma-Aldrich). OCT, MCH, EA, IA, EL, and PA were labeled as A, B, X, Y, E, and F in the figures, respectively. The flies were first transferred to a behavior room at 23 \u00b0C and 60% relative humidity for 30 min to adapt. The training time for each associative task was 5 min. About 100 flies were subjected to 90 s of air, 60 s of odor exposure accompanied by 12 pulses of electric shock at 60 V (conditioned stimulus +, CS+), 45 s of air, 60 s of another different odor (conditioned stimulus \u2013, CS\u2013) and 45 s of air. To test memory, trained flies were placed in a T-maze to choose between two odors, CS +and CS\u2013. After 1 min of the choice, the performance index (PI) can be calculated based on the distribution of the flies between the two odors. A PI of 100 indicates that all flies escape CS +odor, while a PI of 0 means that flies have no preference for CS +and CS\u2013. In particular, to test CS +or CS\u2013 memory components (Figure 1\u2014figure supplement 1C), flies were allowed to choose between CS +and novel odor or between CS\u2013 and novel odor. For Figure 1B, an appetitive learning experiment was performed as described previously (Yang et al., 2023). Flies were placed in glass vials containing two pieces of 2 \u00d7 2 cm Watmann 3 MM filter paper soaked with distilled water and starved for 24 hr before training. The flies were then transferred to a behavior room at 23 \u00b0C and 60% relative humidity for 30 min to adapt. About 100 flies were sequentially exposed to a CS\u2013 odor for 2 min, air for 1 min, and a CS +odor accompanied by dry sucrose for 2 min. The memory was tested in the same way as aversive memory. For Figure 1C, the green or blue light context was provided by six manually controlled LEDs (12V5050RGB, Shenzhen Jinrui Photoelectric Co. LTD).\n\n### Drug feeding treatment\n\nFlies were fed with drugs as previously described (Zhang et al., 2018). Control flies (RU486\u2013 or U0126\u2013) was fed a control solution containing 5% glucose and 3% ethanol. Flies were fed with 500 \u00b5M RU486 (Mifepristone, J&K) dissolved in a control solution in RU486 +groups. Flies were fed with 20 \u00b5M U0126 (Cell Signaling Technology) dissolved in a control solution for 16 hr before training.\n\n### Transgene induction\n\nIn this study, two inducible systems, GeneSwitch (Mao et al., 2004) and TARGET (McGuire et al., 2003), were used for transgene expression. In the GeneSwitch system, the transgene expression was induced by RU486 feeding for two days. In the TARGET system, flies raised at 18\u2103 were transferred to a 31\u2103 incubator for three days to induce the transgene expression.\n\n### Immunofluorescence\n\nAdult flies were acutely ice anesthetized. Brains were dissected in ice-cold PBS (phosphate-buffered saline) and fixed in 4% paraformaldehyde for 55 min at room temperature. After three washes (10 min each) in PBT (0.5% Triton X-100 in PBS), samples were blocked in PBT containing 5% normal goat serum (NGS) for 90 min at room temperature. The brains were then transferred to a primary antibody solution (PBT containing the primary antibody and 5% NGS) and incubated for at least 24 hr at 4 \u00b0C. Chicken anti-GFP (1:1000, Abcam, Cat# ab13970; RRID: AB_300798) and mouse anti-Brp (1:10, nc82, DSHB; RRID: AB_2314866) were used as primary antibodies. Brains were then washed three times (10 min each) in PBT, transferred to secondary antibody solution (PBT with secondary antibody and 5% NGS), and incubated overnight at 4 \u00b0C. Goat anti-chicken IgG Alexa Fluor 488 (1:200, A-11039, Thermo Fisher Scientific; RRID:AB_2534096) and goat anti-mouse IgG Alexa Fluor 647 (1:200, A-21235, Thermo Fisher Scientific; RRID:AB_2535804) were used as secondary antibodies. Images were acquired using a Zeiss LSM710META confocal microscope and processed using Zen 2.6 blue edition.\n\n### Statistics\n\nStatistical analysis was performed using Prism (GraphPad). Normality tests were performed using D'Agostino and Pearson tests (n\u22658) or Shapiro-Wilk tests (n<8). For normally distributed data, comparisons between two groups were performed using the unpaired t-test, and comparisons of multiple groups were performed using ordinary one-way ANOVA with Dunnett\u2019s multiple comparisons test or two-way ANOVA with Bonferroni\u2019s multiple comparisons tests. For non-Gaussian distributed data, comparisons between two groups were performed using the Mann-Whitney test, and comparisons of multiple groups were performed using the Kruskal-Wallis test with Dunn\u2019s multiple comparison test. p-values <0.05 were considered statistically significant and marked with *, and n.s. means non-significant differences (p>0.05).\n",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "bf13c7cb-25e6-4c55-86ea-ee7778650bb8",
+      "submission_id": "447217ee-9e30-43b2-be56-81db51b3279f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hiromu Tanimoto, https://ror.org/03ap2av50 Max-Planck Institut f\u00fcr Neurobiologie Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83516.sa0](https://doi.org/10.7554/eLife.83516.sa0)\n\nThis fundamental study substantially advances our understanding of interactions of consecutive memory tasks by identifying responsible molecules and neurons. The evidence supporting the claims of the authors is solid. The work will be of broad interest to neuroscientists working on learning and memory as well as learning psychologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Hiromu Tanimoto, https://ror.org/03ap2av50 Max-Planck Institut f\u00fcr Neurobiologie Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83516.sa1](https://doi.org/10.7554/eLife.83516.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Genetic Dissection of Mutual Interference between Two Consecutively Learned Tasks in Drosophila\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Emmanuel Perisse (Reviewer #1); Pedro F Jacob (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Appropriate controls and results description: To properly measure the effect of genetic manipulation, the performances of the experimental groups need to be compared to the corresponding parental control groups (cf. point 1 and last part of reviewers 1 and 2, respectively).\n\n2) Putting the results of proactive interference into the context of existing literature: (related to point 2 and points 1-5 in reviewers 1 and 2, respectively). To address some of these points, further behavioural characterization is necessary.\n\nReviewer #1 (Recommendations for the authors):\n\n1. In all the Figures, there is no UAS-\u2026 background control that must be used to conclude the effect of the genetic tool used. Why use only one background genetic control?\n\n2. The authors could do some experiments and discuss a bit more on how (especially Pro) interference really happens. Considering the role of MB \u03b3 neurons in the acquisition of aversive memory their results are not surprising on the effect of proactive interference during memory retrieval between the trained odour versus the untrained odour. It will be interesting to understand a bit more about the proactive interference in the acquisition of both trained and untrained odours as they have meaningful information assigned during learning (negative and positive value, respectively; see Zhao et al., 2021; Nagano et al., 2022, and Jacob and Waddell, 2020). During the test, the authors could test each trained odour against a new odour. The reason why the performance index is low (or high) during the test may have different reasons. One of them could be that there is more (or less) generalization between the CS+ and the CS- in the trained task which they could test. Another could be that only CS+ and not CS- is learned which they could test. Why choose IA and EA as odours of interference learning? Do flies learn well this odour combination? Is the effect observed due to this odour combination? Can a different type of interference task induce the same proI effect, like appetitive learning?\n\nReviewer #2 (Recommendations for the authors):\n\nIn the current manuscript, the authors focus on a particular task of interference that might account for forgetting. As far as I am aware this is the first paper that tries to focus only on describing this task in more detail in Drosophila. However, this description of the phenomenon of Pro-I is limited and is focused only on applying previous knowledge. Therefore, in the current format, I believe that the manuscript requires more context (and experiments) within the interference literature.\n\nSome examples:\n\n1) In one of the senior author's (Yi Zhong) labs it was recently suggested that after a single conditioning event, two types of associative memories are encoded; one is context-independent (in the mushroom body) and the other is context-dependent (in the lateral horn). Substantial literature in the interference field has shown that Pro-I is a context-dependent phenomenon, and changing the context is a way to release from Pro-I. The authors in this manuscript show that the mushroom body is necessary for Pro-I, so how is this integrated with the fact that this memory is context-dependent but in the previous research of the authors, context is encoded in the lateral horn?\n\na. Further experiments are suggested to show that the observed task is indeed a classical example of Pro-I, and by changing the context of the two tasks, learning is no longer impaired. Furthermore, how is the manipulation of the expression of Corkscrew in \u03b3 Kenyon Cells influencing these tasks, after changing context?\n\n2) The presence of Pro-I is circuit dependent both in invertebrates and vertebrates. Release of Pro-I can occur when two memories that require different circuits are sequentially learned since they can be consolidated in parallel. In Drosophila different types of memories (appetitive and aversive) require different circuits and can be formed in parallel.\n\na. Is Pro-I in Drosophila, also circuit-dependent? Given that aversive and appetitive memories require different compartments of the \u03b3 lobe of the mushroom body. This circuit dependency is a relevant part of the described work.\n\nb. A more distinct proactive task from the target task is suggested to release Pro-I, since, on a posthoc basis, the target task can be more easily filtered out from the proactive set.\n\n3) The observed Pro-I occurs within a time window (< 20 min), where the new learning (target task) occurs during the consolidation of the old memory (proactive task).\n\na. Contextualization within the memory consolidation is required. How passive decay of the memory for the proactive task might influence the reduced impairment of the target task in longer time intervals.\n\n4) Over decades an important debate is how to explain Pro-I effect, some attribute Pro-I to a problem at the retrieval stage and others to a problem at the encoding stage.\n\na. Further contextualization of the current findings within this debate would be interesting.\n\n5) A more general question, which stimulus/task dimensions (e.g. lag between tasks; different lengths of memory, short, mid, long-term; similarity of stimulus/tasks) influence Pro-I in Drosophila?\n\nThe manuscript would benefit from a brief introduction for the general audience of the tasks used at the beginning of the Results section.\n\nIn line 122. It should read Figure 2G instead of Figure 3G.\n\nThe overall reporting of the statistics needs to be improved across the manuscript, for example in lines 148 to 150 it is stated:\n\n\"Flies with acute genetic knockdown of MAPK in MB neurons (MB-GS/UAS-MAPK-RNAi, RU486+) also exhibited more severe Pro-I than uninduced and parental control flies (Figure 4B).\"\n\nThe description of the statistics is always mentioned in this way in the manuscript, which might lead to erroneous interpretations from the readers. For example, here the MB-GS/UAS-MAPK-RNAi induced with RU486 after Pro-I was compared to MB-GS/UAS-MAPK-RNAi induced with RU486 without Pro-I, and never to the parental controls.\n\nIn figure 3, the authors start to present the data of overexpressing Corkscrew constitutively in the different subpopulations of Kenyon cells (Figure 3a) and correctly try to rule out possible development effects by only overexpressing Corkscrew in the adult. The authors conclude that the initial effect in \u03b3 Kenyon Cells is adult-specific (Figure 3b), whereas the effect in the \u03b1/\u03b2 Kenyon cells is not (Figure 3c). All the manipulations should have been done in the adult only (additionally \u03b1\u2032/\u03b2\u2032 Kenyon Cells possibly, for sake of completion), and the presentation of the data in Figure 3a is no longer relevant because the initial effect in the \u03b1/\u03b2 Kenyon cells is not reproduced in the adult. Therefore, Figure 3a should be removed, and completed with adult-specific manipulation of \u03b1\u2032/\u03b2\u2032 Kenyon Cells.\n\nGiven these effects during development after overexpression of Corkscrew, appropriate sensory acuity tests (for shock and odour) should be presented. This should be done for the genotypes that show statistical differences.\n\nThe n of 6/7 in some of the experiments is below the typical in the field (n=8 to 12).\n\nThe formatting of some references is different from the majority. For example Bouton (1993); Brand and Perrimon (1994), Luo et al., (1994), and McGuire et al., (2003).\n",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9a998b7e-b8bb-48c7-abfc-03e5f5ca6cdd",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C1",
+      "claim": "Animals can continuously learn different tasks to adapt to changing environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals can continuously learn different tasks to adapt to changing environments and, therefore, have strategies to effectively cope with inter-task interference, including both proactive interference (Pro-I) and retroactive interference (Retro-I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about animal learning capabilities presented in the abstract without specific experimental data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "23d534c5-3f41-4ebe-bf53-71fe81701108",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C2",
+      "claim": "Animals have strategies to effectively cope with inter-task interference, including both proactive interference (Pro-I) and retroactive interference (Retro-I).",
+      "claim_type": "EXPLICIT",
+      "source": "Animals can continuously learn different tasks to adapt to changing environments and, therefore, have strategies to effectively cope with inter-task interference, including both proactive interference (Pro-I) and retroactive interference (Retro-I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about animal learning capabilities presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "52874197-9a5d-45d8-afa4-5b784e717a32",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C3",
+      "claim": "Many biological mechanisms are known to contribute to learning, memory, and forgetting for a single task.",
+      "claim_type": "EXPLICIT",
+      "source": "Many biological mechanisms are known to contribute to learning, memory, and forgetting for a single task, however, mechanisms involved only when learning sequential different tasks are relatively poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references existing knowledge in the field without specific citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "0f986092-70e7-4135-88e1-ea52cc2ce268",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C4",
+      "claim": "Mechanisms involved only when learning sequential different tasks are relatively poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Many biological mechanisms are known to contribute to learning, memory, and forgetting for a single task, however, mechanisms involved only when learning sequential different tasks are relatively poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in current knowledge that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "82b2d15d-0bf1-4327-acfa-c2ceb7c8bf71",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C5",
+      "claim": "Pro-I is more sensitive to an inter-task interval (ITI) than Retro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Pro-I is more sensitive to an inter-task interval (ITI) than Retro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A-E comparing Pro-I and Retro-I at different ITIs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "e7d7e80e-543a-4636-a0b2-95b6505f5611",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C6",
+      "claim": "Pro-I and Retro-I occur together at short ITI (<20 min).",
+      "claim_type": "EXPLICIT",
+      "source": "They occur together at short ITI (<20 min), while only Retro-I remains significant at ITI beyond 20 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2 showing both types of interference at short intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "1e3c2298-3913-4259-97ab-ae6f72067fad",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C7",
+      "claim": "Only Retro-I remains significant at ITI beyond 20 min.",
+      "claim_type": "EXPLICIT",
+      "source": "They occur together at short ITI (<20 min), while only Retro-I remains significant at ITI beyond 20 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2 showing persistence of Retro-I but not Pro-I at longer intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "d6b8b8be-b005-48ea-85ba-ac1d46d4976f",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C8",
+      "claim": "Acutely overexpressing Corkscrew (CSW) in mushroom body (MB) neurons reduces Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Acutely overexpressing Corkscrew (CSW), an evolutionarily conserved protein tyrosine phosphatase SHP2, in mushroom body (MB) neurons reduces Pro-I, whereas acute knockdown of CSW exacerbates Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 3D, E, and H showing reduced Pro-I with CSW overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "d0e9014c-0e5e-4e3e-b25e-cf80bf9ec2b4",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C9",
+      "claim": "CSW is an evolutionarily conserved protein tyrosine phosphatase SHP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Acutely overexpressing Corkscrew (CSW), an evolutionarily conserved protein tyrosine phosphatase SHP2, in mushroom body (MB) neurons reduces Pro-I, whereas acute knockdown of CSW exacerbates Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the identity and conservation of CSW.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "f72ab00a-a8cf-4b7c-8d84-9eb11e3a4f0f",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C10",
+      "claim": "Acute knockdown of CSW exacerbates Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Acutely overexpressing Corkscrew (CSW), an evolutionarily conserved protein tyrosine phosphatase SHP2, in mushroom body (MB) neurons reduces Pro-I, whereas acute knockdown of CSW exacerbates Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 3A, B, and C showing increased Pro-I with CSW knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "cf099139-2710-4f8a-b13f-d9eb5b777247",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C11",
+      "claim": "The function of CSW in regulating Pro-I relies on the \u03b3 subset of MB neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Such function of CSW is further found to rely on the \u03b3 subset of MB neurons and the downstream Raf/MAPK pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 3G, H, and I showing CSW effects specifically in \u03b3 neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "ac3ecbf4-c16d-46c8-b36a-31b8ca6f4deb",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C12",
+      "claim": "The function of CSW in regulating Pro-I relies on the downstream Raf/MAPK pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Such function of CSW is further found to rely on the \u03b3 subset of MB neurons and the downstream Raf/MAPK pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 4 showing that Raf/MAPK pathway components regulate Pro-I and that Raf acts downstream of CSW.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "7b4b3f13-4c20-4086-a280-149120c71cf3",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C13",
+      "claim": "Manipulating CSW does not affect Retro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, manipulating CSW does not affect Retro-I as well as a single learning task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 3F showing no effect of CSW manipulation on Retro-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "3d8f6ae5-d1ba-4052-aa05-abcac9d9b961",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C14",
+      "claim": "Manipulating CSW does not affect a single learning task.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, manipulating CSW does not affect Retro-I as well as a single learning task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 4\u2014figure supplement 1B and C showing no effect on single-task learning and memory.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "460c7863-1bf6-4904-879f-9dcfa5d779b6",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C15",
+      "claim": "Manipulation of Rac1 regulates Retro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, manipulation of Rac1, a molecule that regulates Retro-I, does not affect Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2F showing that Rac1 manipulation affects Retro-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "992bf564-5f03-4b3e-858d-445544e2c6d9",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C16",
+      "claim": "Manipulation of Rac1 does not affect Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, manipulation of Rac1, a molecule that regulates Retro-I, does not affect Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2F showing no effect of Rac1 manipulation on Pro-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "dd338ce8-77c1-4ca9-bbf2-ab69128e5751",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C17",
+      "claim": "Learning different tasks consecutively triggers distinct molecular mechanisms to tune proactive and retroactive interference.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings suggest that learning different tasks consecutively triggers distinct molecular mechanisms to tune proactive and retroactive interference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the differential effects of CSW on Pro-I vs Retro-I and Rac1 on Retro-I vs Pro-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "223c4514-e1e5-440d-b272-3d5aa820af47",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C18",
+      "claim": "Continual learning is a natural ability of animals ranging from invertebrates to vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Continual learning is a natural ability of animals ranging from invertebrates to vertebrates but a great challenge for artificial intelligence (Fayek et al., 2020; Kudithipudi et al., 2022; Parisi et al., 2019; Wang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "a1852835-27b4-43fa-a327-200ccca98632",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C19",
+      "claim": "Continual learning is a great challenge for artificial intelligence.",
+      "claim_type": "EXPLICIT",
+      "source": "Continual learning is a natural ability of animals ranging from invertebrates to vertebrates but a great challenge for artificial intelligence (Fayek et al., 2020; Kudithipudi et al., 2022; Parisi et al., 2019; Wang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature on AI and continual learning.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "c5c90bd4-1d74-465e-932f-56ca8b604999",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C20",
+      "claim": "The interference from the previous task on the learning and memory of the current task is called Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "The interference from the previous task on the learning and memory of the current task is called Pro-I, while the interference from the current task on the memory of the following task is named Retro-I (Bouton, 1993; Miller, 2021; Wixted, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "260c88d9-9eb3-443c-8de8-503c26db76b0",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C21",
+      "claim": "The interference from the current task on the memory of the following task is named Retro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "The interference from the previous task on the learning and memory of the current task is called Pro-I, while the interference from the current task on the memory of the following task is named Retro-I (Bouton, 1993; Miller, 2021; Wixted, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "a9b15949-3721-422c-8b53-a57f471fd50f",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C22",
+      "claim": "We have much understanding of the molecular mechanisms of learning and memory for a single learning task.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, we have much understanding of the molecular mechanisms of learning and memory for a single learning task (Johansen et al., 2011; Kandel et al., 2014), the molecular mechanisms that modulate the interferences between different tasks remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature on learning and memory mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "06fcbeed-6a73-4220-a972-a7c8f198fce7",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C23",
+      "claim": "The molecular mechanisms that modulate the interferences between different tasks remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, we have much understanding of the molecular mechanisms of learning and memory for a single learning task (Johansen et al., 2011; Kandel et al., 2014), the molecular mechanisms that modulate the interferences between different tasks remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a knowledge gap that motivates the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "8332f502-0f70-480d-aefa-fd23d0ea7a50",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C24",
+      "claim": "Drosophila is a well-studied and highly tractable genetic model organism for understanding molecular mechanisms underlying a single learning task.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila is a well-studied and highly tractable genetic model organism for understanding molecular mechanisms underlying a single learning task (Davis, 2005; Noyes et al., 2021; Waddell and Quinn, 2001) as well as related human diseases (Mariano et al., 2020; Pandey and Nichols, 2011; van Alphen and van Swinderen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature on Drosophila as a model organism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "bcce4361-95ba-4bdc-9a60-aab9c03d6184",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C25",
+      "claim": "Drosophila is a model organism for studying related human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila is a well-studied and highly tractable genetic model organism for understanding molecular mechanisms underlying a single learning task (Davis, 2005; Noyes et al., 2021; Waddell and Quinn, 2001) as well as related human diseases (Mariano et al., 2020; Pandey and Nichols, 2011; van Alphen and van Swinderen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature on Drosophila disease models.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "be4540a6-b373-4c34-8d68-4d7937b407c4",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C26",
+      "claim": "Drosophila has emerged as an excellent model for studying interference mechanisms between two associative learning tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, Drosophila has also emerged as an excellent model for studying interference mechanisms between two associative learning tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the subsequent citations to studies on interference in Drosophila.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "304d7764-407a-419e-a1fc-0e25ca2dba9c",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C27",
+      "claim": "Several molecules, including Rac1, Foraging, Scribble, SLC22A, Fmr1, SCAR, and Dia, have been reported to regulate Retro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Several molecules, including Rac1, Foraging, Scribble, SLC22A, Fmr1, SCAR, and Dia, have been reported to regulate Retro-I (Cervantes-Sandoval et al., 2016; Dong et al., 2016; Gai et al., 2016; Gao et al., 2019; Reaume et al., 2011; Shuai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies identifying these molecules.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "f4d91804-91d4-4aa2-95b9-7b87171f3834",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C28",
+      "claim": "Scribble and SLC22A have been reported to regulate Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these molecules, Scribble and SLC22A, have also been reported to regulate Pro-I (Cervantes-Sandoval et al., 2016; Gai et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "4a9b4d5f-5aa6-41ef-8fd1-d77318148d26",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C29",
+      "claim": "Retro-I and Pro-I may have shared regulatory molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "It indicates that Retro-I and Pro-I may have shared regulatory molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Scribble and SLC22A regulate both types of interference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "13a2857c-2960-4e2d-b472-9723ddd32414",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C30",
+      "claim": "Resistance to Pro-I and Retro-I is very different in patients with autism.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported that resistance to Pro-I and Retro-I is very different in patients with autism (Mottron et al., 1998), schizophrenia (Torres et al., 2001), and ADHD (Orban et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "c825ba02-6690-4254-a8a7-470f8431fb93",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C31",
+      "claim": "Resistance to Pro-I and Retro-I is very different in patients with schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported that resistance to Pro-I and Retro-I is very different in patients with autism (Mottron et al., 1998), schizophrenia (Torres et al., 2001), and ADHD (Orban et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "5c79b5f4-72b7-43da-98d7-87915d12c536",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C32",
+      "claim": "Resistance to Pro-I and Retro-I is very different in patients with ADHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported that resistance to Pro-I and Retro-I is very different in patients with autism (Mottron et al., 1998), schizophrenia (Torres et al., 2001), and ADHD (Orban et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "102fb549-4098-42e8-ab25-b8c7053ad2a1",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C33",
+      "claim": "Pro-I and Retro-I may have distinct molecular mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "It raises a possibility that Pro-I and Retro-I may have distinct molecular mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential resistance patterns in clinical populations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "2d6a9680-d69a-41b5-8e9e-1c90ae7f6664",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C34",
+      "claim": "All reported molecules in regulating Retro-I or Pro-I also play important roles in the learning or memory of a single learning task.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, all reported molecules in regulating Retro-I or Pro-I also play important roles in the learning or memory of a single learning task (Cervantes-Sandoval et al., 2016; Dong et al., 2016; Gai et al., 2016; Gao et al., 2019; Reaume et al., 2011; Shuai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "2a68e645-2f68-43f0-831e-e3eb52049c54",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C35",
+      "claim": "Pro-I is closely related to content similarity, context similarity, and the time interval between the proactive task and the target task.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychological studies have shown that Pro-I is closely related to content similarity, context similarity, and the time interval between the proactive task and the target task (Kliegl and B\u00e4uml, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to psychological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "1459890c-119f-4e86-aeec-c1c1dc78f12d",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C36",
+      "claim": "An aversive associative learning task produces significant Pro-I on another similar task immediately following in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, it has been known that an aversive associative learning task produces significant Pro-I on another similar task immediately following (Cervantes-Sandoval et al., 2016; Gai et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous Drosophila studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "c7a9e3fe-25a6-4f35-b908-2491ee1e3d6b",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C37",
+      "claim": "Significant Pro-I was observed between two consecutive aversive tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Cervantes-Sandoval et al., 2016; Gai et al., 2016), significant Pro-I was observed between two consecutive aversive tasks (Figure 1A; Associative group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "1c8c0ffd-1e68-47bb-a355-aca22b422ef3",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C38",
+      "claim": "Pro-I phenomenon was still evident 1 hr later.",
+      "claim_type": "EXPLICIT",
+      "source": "This Pro-I phenomenon was still evident 1 hr later (Figure 1\u2014figure supplement 1A) and was not affected by changing the order of the two tasks (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "38a3fda0-54d7-49ea-912d-408472a31e02",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C39",
+      "claim": "Pro-I was not affected by changing the order of the two tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "This Pro-I phenomenon was still evident 1 hr later (Figure 1\u2014figure supplement 1A) and was not affected by changing the order of the two tasks (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "dd50da12-d220-4cb2-b606-e21488b28986",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C40",
+      "claim": "No significant Pro-I was observed when the proactive task was changed into non-associative stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "With such changes, no significant Pro-I was observed (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A comparing associative vs non-associative proactive tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "ed019289-d970-4291-8389-64a79374ae3b",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C41",
+      "claim": "No significant Pro-I was observed when the proactive task was changed into an appetitive learning task.",
+      "claim_type": "EXPLICIT",
+      "source": "With such changes, no significant Pro-I was observed (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B comparing aversive vs appetitive proactive tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "f78d52d7-511f-4923-b81c-c7267c238325",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C42",
+      "claim": "When both tasks were learned in the same context, the Pro-I was evident.",
+      "claim_type": "EXPLICIT",
+      "source": "When both tasks were learned in the same context, the Pro-I was evident. In contrast, when the two tasks were learned in different contexts, the Pro-I was no longer observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C comparing same vs different context conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "c2967f8b-dbaf-4dd8-a5c2-734a3281d154",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C43",
+      "claim": "When the two tasks were learned in different contexts, the Pro-I was no longer observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When both tasks were learned in the same context, the Pro-I was evident. In contrast, when the two tasks were learned in different contexts, the Pro-I was no longer observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C comparing same vs different context conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "5d267786-2313-479c-b3a9-26affd33b0e2",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C44",
+      "claim": "A single aversive learning task can produce two opposing memory components: avoidance memory and approach memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent studies have found that a single aversive learning task can produce two opposing memory components: avoidance memory and approach memory (Jacob and Waddell, 2020; Naganos et al., 2022; Zhao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "a44775c3-af9d-4409-90b8-e8ab9b865e36",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C45",
+      "claim": "Pro-I only affected avoidance memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the Pro-I only affected avoidance memory (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "15082be8-c2b2-4483-9929-cc454c79e4e3",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C46",
+      "claim": "Reducing inter-task similarity by changing learning content or context can release Pro-I in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that reducing inter-task similarity by changing learning content or context can release Pro-I in Drosophila, which is consistent with psychological studies (Kliegl and B\u00e4uml, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 1 and is consistent with cited psychological studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "b364e50c-9110-4dd7-abe7-28771d6255f4",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C47",
+      "claim": "Flies showed significant Pro-I when the ITI was 15 min or less (0, 5, 10, and 15 min).",
+      "claim_type": "EXPLICIT",
+      "source": "Flies showed significant Pro-I when the ITI was 15 min or less (0, 5, 10, and 15 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "2b99cb41-e079-48d3-9897-875434b8f905",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C48",
+      "claim": "If the ITI was 20 min or more (20, 30, and 60 min), no significant Pro-I was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "If the ITI was 20 min or more (20, 30, and 60 min), no significant Pro-I was observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "e6dd6390-fece-4cba-831e-a2a388e6d6d3",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C49",
+      "claim": "When the ITI was gradually increased from 0 to 60 min (0, 20, 30, and 60 min), the flies consistently exhibited significant Retro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the ITI was gradually increased from 0 to 60 min (0, 20, 30, and 60 min), the flies consistently exhibited significant Retro-I (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "121065af-4c64-4c4b-939f-4e1e5f44fcfa",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C50",
+      "claim": "The result on Retro-I is consistent with previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with previous studies on Retro-I (Cervantes-Sandoval et al., 2016; Dong et al., 2016; Gai et al., 2016; Gao et al., 2019; Reaume et al., 2011; Shuai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement compares current findings to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "451d38aa-891f-4be6-801a-d0476afbdae3",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C51",
+      "claim": "Rac1 is required to mediate Retro-I when the ITI is 1.5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Rac1 is required to mediate Retro-I when the ITI is 1.5 hr (Shuai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "dfb7a09b-41b4-4021-a738-9b0363a66f3e",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C52",
+      "claim": "Acute manipulation of Rac1 activity in mushroom body (MB) neurons is sufficient to regulate memory performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Since acute manipulation of Rac1 activity in mushroom body (MB) neurons is sufficient to regulate memory performance (Gao et al., 2019; Shuai et al., 2010), Rac1 transgenes were expressed using MB-GS, a Gene-Switch (GS) tool capable of inducing transgene expression specifically in the MB only on administration of the drug RU486 (Mao et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "3f45e403-2fc0-4ae2-9b79-87cefe6adad7",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C53",
+      "claim": "Suppressing Rac1 activity in MB neurons significantly mitigated the Retro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppressing (MB-GS/UAS-Rac1-DN, RU486+) or increasing (MB-GS/UAS-Rac1-CA, RU486+) Rac1 activity in MB neurons significantly mitigated or aggravated the Retro-I, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "f7c52638-d6c5-4977-b2bf-a82422a95589",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C54",
+      "claim": "Increasing Rac1 activity in MB neurons significantly aggravated the Retro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppressing (MB-GS/UAS-Rac1-DN, RU486+) or increasing (MB-GS/UAS-Rac1-CA, RU486+) Rac1 activity in MB neurons significantly mitigated or aggravated the Retro-I, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "14591d2c-516a-4aa1-812e-ddef0d8a8020",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C55",
+      "claim": "Manipulations of Rac1 activity did not affect the Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same manipulations did not affect the Pro-I, indicating that there is a different molecular mechanism underlying the Pro-I.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "3cb612fe-ac73-464e-a237-78356e1ab145",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C56",
+      "claim": "There is a different molecular mechanism underlying the Pro-I compared to Retro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same manipulations did not affect the Pro-I, indicating that there is a different molecular mechanism underlying the Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of Rac1 manipulation on Pro-I vs Retro-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "09395fa8-c782-4aca-b29f-0303845f8576",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C57",
+      "claim": "CSW has been reported to regulate the 'time interval' effect in long-term memory (LTM) formation in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that CSW, an evolutionarily conserved protein tyrosine phosphatase SHP2, has been reported to regulate the 'time interval' effect in long-term memory (LTM) formation in Drosophila (Pagani et al., 2009), we tested the role of CSW in Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "2692e126-5b7e-436d-9bd4-ccc481cb5d4b",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C58",
+      "claim": "Acutely knocking down CSW in MB neurons using two independent RNAi lines showed more severe Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the parental control group (MB-GS/+, RU486+), acutely knocking down CSW in MB neurons using two independent RNAi lines (MB-GS/UAS-csw-RNAi-1 and MB-GS/UAS-csw-RNAi-2; RU486+) showed more severe Pro-I, which can be better reflected by the Pro-I+/Pro-I\u2013 ratio (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "45e219f8-a4eb-47a2-bf85-9e92823c4a4b",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C59",
+      "claim": "Pro-I was no longer observed in control flies when the ITI was 20 min.",
+      "claim_type": "EXPLICIT",
+      "source": "When the ITI was 20 min, Pro-I was no longer observed in control flies but was still present in flies with acute knockdown of CSW (Figure 3C; Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "926754f9-c2b6-4cec-82ec-ffb6361b0f53",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C60",
+      "claim": "Pro-I was still present in flies with acute knockdown of CSW when the ITI was 20 min.",
+      "claim_type": "EXPLICIT",
+      "source": "When the ITI was 20 min, Pro-I was no longer observed in control flies but was still present in flies with acute knockdown of CSW (Figure 3C; Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "5ec0e137-416b-4ae9-a8aa-ddeeb0934f6a",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C61",
+      "claim": "Acute overexpression of CSW in MB neurons reduced Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, acute overexpression of CSW in MB neurons (MB-GS/UAS-csw, RU486+) reduced Pro-I by using a newly constructed transgenic strain (Figure 3D and E; Figure 3\u2014figure supplement 1C and E) and a previously reported strain (Botham et al., 2008; Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D, E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "0ce47289-721b-4b46-93e7-ea990badab36",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C62",
+      "claim": "Bidirectional manipulation of CSW expression in MB neurons did not affect Retro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, bidirectional manipulation of CSW expression in MB neurons did not affect Retro-I (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "f98f17e8-628c-4aab-bff3-e1730d044f5c",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C63",
+      "claim": "The MB contains ~2000 intrinsic neurons called Kenyon cells (KCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The MB contains ~2000 intrinsic neurons called Kenyon cells (KCs), which are further divided into three major types: \u03b3 neurons (~675), \u03b1/\u03b2 neurons (~990), and \u03b1'/\u03b2'neurons (~350) (Aso et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study on MB anatomy.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "85aa4048-2749-4e79-9204-1a996a82c6be",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C64",
+      "claim": "Kenyon cells are divided into three major types: \u03b3 neurons (~675), \u03b1/\u03b2 neurons (~990), and \u03b1'/\u03b2'neurons (~350).",
+      "claim_type": "EXPLICIT",
+      "source": "The MB contains ~2000 intrinsic neurons called Kenyon cells (KCs), which are further divided into three major types: \u03b3 neurons (~675), \u03b1/\u03b2 neurons (~990), and \u03b1'/\u03b2'neurons (~350) (Aso et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study on MB anatomy.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "9659b844-6f62-4631-97d8-5991c4175afe",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C65",
+      "claim": "Overexpressing CSW in \u03b3 neurons showed higher performance with Pro-I when compared with their respective genetic controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing CSW in \u03b3 neurons or \u03b1/\u03b2 neurons, but not in \u03b1'/\u03b2' neurons showed higher performance with Pro-I when compared with their respective genetic controls (Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "ba0ddd46-e406-4b05-bb48-2ed06db44142",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C66",
+      "claim": "Overexpressing CSW in \u03b1/\u03b2 neurons showed higher performance with Pro-I when compared with their respective genetic controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing CSW in \u03b3 neurons or \u03b1/\u03b2 neurons, but not in \u03b1'/\u03b2' neurons showed higher performance with Pro-I when compared with their respective genetic controls (Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "85bfc0d2-42cc-4864-a609-63115f1165cd",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C67",
+      "claim": "Overexpressing CSW in \u03b1'/\u03b2' neurons did not show higher performance with Pro-I when compared with their respective genetic controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing CSW in \u03b3 neurons or \u03b1/\u03b2 neurons, but not in \u03b1'/\u03b2' neurons showed higher performance with Pro-I when compared with their respective genetic controls (Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "971805d9-d542-4dce-8ae1-eeaa51f89843",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C68",
+      "claim": "Acute overexpression of CSW in \u03b3 neurons significantly reduced the Pro-I compared with their respective controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute overexpression of CSW in \u03b3 neurons (Gal80ts/+; 5-HT1B/UAS-csw, induced), but not in the \u03b1/\u03b2 neurons (C739/+; Gal80ts/UAS-csw, induced), significantly reduced the Pro-I compared with their respective controls (Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "6dcc6907-481d-4bf2-9aa2-e4f3f9a086e7",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C69",
+      "claim": "Acute overexpression of CSW in \u03b1/\u03b2 neurons did not significantly reduce the Pro-I compared with their respective controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute overexpression of CSW in \u03b3 neurons (Gal80ts/+; 5-HT1B/UAS-csw, induced), but not in the \u03b1/\u03b2 neurons (C739/+; Gal80ts/UAS-csw, induced), significantly reduced the Pro-I compared with their respective controls (Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "b21f19d7-bcbd-4c5a-ac2f-ad09996df2ff",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C70",
+      "claim": "Acute knockdown of CSW in \u03b3 neurons increased the Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, acute knockdown of CSW in \u03b3 neurons increased the Pro-I (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "b8420918-866d-4c06-9377-fd25063c912f",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C71",
+      "claim": "CSW regulates Pro-I in MB \u03b3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that CSW regulates Pro-I in MB \u03b3 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing CSW effects specifically in \u03b3 neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "8249064a-97c8-4077-a7ed-6f897f21aee5",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C72",
+      "claim": "No Pro-I occurred when the two tasks were learned in different contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the result in Figure 1C shows that no Pro-I occurred when the two tasks were learned in different contexts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This refers back to experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "2b653895-4889-486d-ac67-f05f802ebbd3",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C73",
+      "claim": "Knocking down the CSW remained ineffective when the two tasks were learned in different contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, knocking down the CSW remained ineffective (Figure 3\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "6757f88e-f44f-472c-908b-a76ee860d946",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C74",
+      "claim": "CSW is generally considered as a positive regulator of Ras/MAPK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "CSW is generally considered as a positive regulator of Ras/MAPK signaling (Perkins et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "a16e6ccd-017a-4eee-9a5b-7e29c60652e1",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C75",
+      "claim": "The regulation of CSW on the 'time interval' effect in LTM formation is thought to be via the MAPK pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "And the regulation of CSW on the 'time interval' effect in LTM formation is also thought to be via the MAPK pathway (Pagani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "256c9f2c-974b-4cb1-b65d-7503ee26b8e4",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C76",
+      "claim": "Feeding U0126 did not affect single-task learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding U0126, a widely used inhibitor of the MAPK pathway (Thomas and Huganir, 2004), did not affect single-task learning, but significantly exacerbated Pro-I when learning two consecutive tasks (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "97ec23ef-55cd-4326-acc5-6645c8192614",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C77",
+      "claim": "Feeding U0126 significantly exacerbated Pro-I when learning two consecutive tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding U0126, a widely used inhibitor of the MAPK pathway (Thomas and Huganir, 2004), did not affect single-task learning, but significantly exacerbated Pro-I when learning two consecutive tasks (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "ed56e508-252a-4018-964b-07caf9d62480",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C78",
+      "claim": "Flies with acute genetic knockdown of MAPK in MB neurons exhibited more severe Pro-I than uninduced and parental control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies with acute genetic knockdown of MAPK in MB neurons (MB-GS/UAS-MAPK-RNAi, RU486+) also exhibited more severe Pro-I than uninduced and parental control flies (Figure 4B; Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "d3d441cb-a1db-46b0-9641-07f862d89fd8",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C79",
+      "claim": "Acute knockdown of Raf significantly exacerbated the Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, Raf kinase, a classical upstream regulator of MAPK (Thomas and Huganir, 2004), was found to bidirectionally regulate the Pro-I in MB neurons like CSW (Figure 4C and D). Acutely knocking down Raf significantly exacerbated the Pro-I, while acute overexpression of Raf-GOF, which encodes a constitutively active Raf kinase (Brand and Perrimon, 1994), significantly reduced Pro-I.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "9ea200d0-34a7-426e-803c-7165544acada",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C80",
+      "claim": "Acute overexpression of Raf-GOF significantly reduced Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, Raf kinase, a classical upstream regulator of MAPK (Thomas and Huganir, 2004), was found to bidirectionally regulate the Pro-I in MB neurons like CSW (Figure 4C and D). Acutely knocking down Raf significantly exacerbated the Pro-I, while acute overexpression of Raf-GOF, which encodes a constitutively active Raf kinase (Brand and Perrimon, 1994), significantly reduced Pro-I.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "ade70721-e5fe-46cc-b2fe-a27382541ffd",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C81",
+      "claim": "Raf kinase is a classical upstream regulator of MAPK.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, Raf kinase, a classical upstream regulator of MAPK (Thomas and Huganir, 2004), was found to bidirectionally regulate the Pro-I in MB neurons like CSW (Figure 4C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "f989a517-c82e-4c6b-bb5b-f6bb2ea3326e",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C82",
+      "claim": "Raf-GOF encodes a constitutively active Raf kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Acutely knocking down Raf significantly exacerbated the Pro-I, while acute overexpression of Raf-GOF, which encodes a constitutively active Raf kinase (Brand and Perrimon, 1994), significantly reduced Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "bf28a30b-6ec8-4bda-ab4e-dac4c0f26652",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C83",
+      "claim": "When Raf-GOF and CSW-RNAi were co-expressed, Raf-GOF expression dominated the effect on Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "When Raf-GOF and CSW-RNAi were co-expressed, Raf-GOF expression dominated the effect on Pro-I, indicating that Raf acts downstream of CSW (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "7ff82514-b931-413c-9625-6caadf0e6e6e",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C84",
+      "claim": "Raf acts downstream of CSW.",
+      "claim_type": "EXPLICIT",
+      "source": "When Raf-GOF and CSW-RNAi were co-expressed, Raf-GOF expression dominated the effect on Pro-I, indicating that Raf acts downstream of CSW (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the epistasis experiment showing Raf-GOF dominates over CSW-RNAi.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "e4d79a68-8c92-4011-8c6f-dd16e0be4be5",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C85",
+      "claim": "CSW regulates Pro-I through Raf/MAPK pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data support that CSW regulates Pro-I through Raf/MAPK pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing CSW, Raf, and MAPK all regulate Pro-I and their epistatic relationships.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "19b90920-c698-4ff9-af5c-772019c135be",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C86",
+      "claim": "The Raf/MAPK pathway is activated by learning to protect memory retention via non-muscle myosin \u2161 Sqh after single-task learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study found that the Raf/MAPK pathway is activated by learning to protect memory retention via non-muscle myosin \u2161 Sqh after single-task learning (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to findings from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "4dcc8f66-e30a-433a-a485-4570e0d1b9d3",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C87",
+      "claim": "Manipulating CSW did not affect the learning and memory of a single task.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the regulatory effect of CSW on Pro-I in two consecutive task learning was also through the Raf/MAPK pathway, manipulating CSW did not affect the learning and memory of a single task (Figure 4\u2014figure supplement 1B and C), unlike Raf (Figure 4\u2014figure supplement 1D; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "3f294450-b0b7-4b6e-be8c-0da37ebea0c2",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C88",
+      "claim": "Sqh is a downstream molecule of the Raf/MAPK pathway in regulating single-task memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, as a downstream molecule of the Raf/MAPK pathway in regulating single-task memory (Zhang et al., 2018), Sqh did not participate in the Pro-I between the two tasks (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "fb7bfa2e-7fec-460e-8eb6-1ede3b4f9de1",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C89",
+      "claim": "Sqh did not participate in the Pro-I between the two tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, as a downstream molecule of the Raf/MAPK pathway in regulating single-task memory (Zhang et al., 2018), Sqh did not participate in the Pro-I between the two tasks (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "14c7f90d-1e6f-4b2d-9713-bc21d32fa77e",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C90",
+      "claim": "Learning two different tasks consecutively may specifically recruit CSW to activate the Raf/MAPK pathway to reduce Pro-I through downstream molecules different from Sqh.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that learning two different tasks consecutively may specifically recruit CSW to activate the Raf/MAPK pathway to reduce Pro-I through downstream molecules different from Sqh, a mechanism that differs from the memory protection mechanism triggered by a single learning task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential roles of CSW and Sqh in two-task vs single-task learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "25dfcad5-ba87-485d-989e-c1c664807b97",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C91",
+      "claim": "The mechanism by which CSW regulates Pro-I differs from the memory protection mechanism triggered by a single learning task.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that learning two different tasks consecutively may specifically recruit CSW to activate the Raf/MAPK pathway to reduce Pro-I through downstream molecules different from Sqh, a mechanism that differs from the memory protection mechanism triggered by a single learning task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that CSW affects Pro-I but not single-task memory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "f49abe4a-8b69-4d28-b560-9b236605bcd1",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C92",
+      "claim": "In learning two different associative tasks in succession, Pro-I and Retro-I occur simultaneously when the time distance between tasks is close (<20 min).",
+      "claim_type": "EXPLICIT",
+      "source": "First, in learning two different associative tasks in succession, Pro-I and Retro-I occur simultaneously when the time distance between tasks is close (<20 min), while only Retro-I could be observed when the time distance was far (>20 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "6f8ed56a-1b30-4007-bbce-e507d328794d",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C93",
+      "claim": "Only Retro-I could be observed when the time distance between tasks was far (>20 min).",
+      "claim_type": "EXPLICIT",
+      "source": "First, in learning two different associative tasks in succession, Pro-I and Retro-I occur simultaneously when the time distance between tasks is close (<20 min), while only Retro-I could be observed when the time distance was far (>20 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "1f1e1d63-e4b4-4e99-b8ce-01d9d4e535e7",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C94",
+      "claim": "The CSW/Raf/MAPK pathway specifically regulates Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we identify a molecular pathway that specifically regulates Pro-I: the CSW/Raf/MAPK pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figures 3 and 4 showing this pathway regulates Pro-I but not Retro-I or single-task learning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "caf233f2-331b-49d7-806e-6ea4fbd7f709",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C95",
+      "claim": "The upstream signaling molecule CSW of this pathway is not involved in single-task learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "The upstream signaling molecule CSW of this pathway is not involved in single-task learning and memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 4\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "6004a544-431e-4741-844f-ee3a726aa76a",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C96",
+      "claim": "In learning two different tasks close in time, although Pro-I and Retro-I occurred simultaneously, CSW was only involved in regulating Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "In learning two different tasks close in time, although Pro-I and Retro-I occurred simultaneously, CSW was only involved in regulating Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 3F showing CSW does not affect Retro-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "eb47c1a9-286b-43db-af58-13767d8b4f35",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C97",
+      "claim": "Rac1 specifically regulates Retro-I without affecting Pro-I when two different tasks are temporally close.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, Rac1 specifically regulates Retro-I without affecting Pro-I when two different tasks are temporally close.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "be80c92a-e66e-4aae-b540-76c2cbf4b8af",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C98",
+      "claim": "The Rac1/SCAR/Dia pathway has been reported to regulate Retro-I when the two tasks are temporally distant (1.5 hr interval).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the Rac1/SCAR/Dia pathway has been reported to regulate Retro-I when the two tasks are temporally distant (1.5 hr interval) (Gao et al., 2019; Shuai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "7d9fb9cc-c8fa-4cab-a76b-76e711813a6f",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C99",
+      "claim": "After 20 min, the memory performance of the proactive task partially declines and a consolidated memory component called anesthesia-resistant memory (ARM) is largely formed.",
+      "claim_type": "EXPLICIT",
+      "source": "After 20 min, the memory performance of the proactive task partially declines and a consolidated memory component called anesthesia-resistant memory (ARM) is largely formed (Quinn and Dudai, 1976; Tully et al., 1994; Tully and Quinn, 1985; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies on memory dynamics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "9207e644-e768-443e-b187-57fbd0a587d1",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C100",
+      "claim": "The decay or consolidation of the proactive task may release Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "It raises a possibility that the decay or consolidation of the proactive task may release Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from the temporal dynamics of Pro-I and memory consolidation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "b097af55-f2ff-4c4c-aba9-a02aaa327d64",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C101",
+      "claim": "Acute knockdown or overexpression of CSW in MB neurons did not affect the immediate and early memory performance of a single task.",
+      "claim_type": "EXPLICIT",
+      "source": "First, acute knockdown or overexpression of CSW in MB neurons did not affect the immediate and early memory performance of a single task (Figure 4\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "125dba46-ac80-44e3-ad3c-6748b8b698d2",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C102",
+      "claim": "In the Retro-I paradigm, the proactive task in the Pro-I paradigm became the target task and was directly examined, however, its performance was not affected by manipulating CSW.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, in the Retro-I paradigm, the proactive task in the Pro-I paradigm became the target task and was directly examined, however, its performance was not affected by manipulating CSW (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "b94e5a46-8d55-489a-bc59-07565c43b5f9",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C103",
+      "claim": "Manipulating Raf/MAPK pathway in MB neurons during the adult stage did not affect immediate memory and ARM performance after a single aversive learning task.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, manipulating Raf/MAPK pathway in MB neurons during the adult stage did not affect immediate memory and ARM performance after a single aversive learning task (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "cf92b30a-d3c3-4fba-aac6-32a204e8dc87",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C104",
+      "claim": "Inter-task similarity from different dimensions contributes to Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current findings suggest that inter-task similarity from different dimensions contributes to Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results in Figure 1 showing effects of content, context, and temporal similarity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "7d0fffb0-8fc3-4a29-aa04-30c4a8fb5a9f",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C105",
+      "claim": "The content similarity between tasks can influence Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the content similarity between tasks can influence Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "ac663b38-2059-4478-9ff7-4eeab95a9cfb",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C106",
+      "claim": "Two similar aversive associative tasks could produce significant Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Two similar aversive associative tasks could produce significant Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "137a865f-8d37-4604-90a9-3acf3dbca84c",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C107",
+      "claim": "Pro-I was not observed after reducing the inter-task content similarity by replacing the proactive task with non-associative stimuli or an appetitive associative task.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Pro-I was not observed after reducing the inter-task content similarity by replacing the proactive task with non-associative stimuli or an appetitive associative task (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "c8583e73-4fc6-4e5d-88bd-93e4f4cdb9af",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C108",
+      "claim": "Due to the similarity of content, both tasks are more likely to use the same neural circuit thus increasing the possibility of Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the similarity of content, both tasks are more likely to use the same neural circuit thus increasing the possibility of Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic inference about why content similarity affects Pro-I.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "0c0f69ae-53e7-4057-9c2d-d8b91c92a620",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C109",
+      "claim": "The similarity of environmental contexts between tasks plays an important role in Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the similarity of environmental contexts between tasks plays an important role in Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "bf908190-2a69-42ca-9b1c-a545efd4640b",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C110",
+      "claim": "Pro-I was significantly released when the similarity of environmental contexts between tasks was reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Pro-I was significantly released when the similarity of environmental contexts between tasks was reduced (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "c1b4f1d0-037f-4b47-bd19-387bcd9082f7",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C111",
+      "claim": "The similarity of time contexts between tasks also contributes to Pro-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the similarity of time contexts between tasks also contributes to Pro-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2 showing ITI effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "bd3d4c34-56cf-40bd-bf25-083fed254d4c",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C112",
+      "claim": "Time is considered as a context.",
+      "claim_type": "EXPLICIT",
+      "source": "Time is also considered as a context (Bouton, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "7d03c7a4-b804-4b9a-ac35-9fd826e6a245",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C113",
+      "claim": "When the ITI was increased to more than 20 min, the Pro-I is no longer significant.",
+      "claim_type": "EXPLICIT",
+      "source": "When the ITI was increased to more than 20 min, the Pro-I is no longer significant (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "48aa6b14-6a1b-41df-b178-63edd4287e90",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C114",
+      "claim": "The 20 min ITI might make the time contexts of the two tasks significantly different, thus reducing the inter-task similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon can be explained as the 20 min ITI might make the time contexts of the two tasks significantly different, thus reducing the inter-task similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the ITI effect on Pro-I.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "677c52e9-b77d-4798-b237-ba3113d99b89",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C115",
+      "claim": "The CSW/Raf/MAPK pathway can regulate Pro-I probably by affecting time context similarity between tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this explanation, the CSW/Raf/MAPK pathway can regulate Pro-I probably by affecting time context similarity between tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis about how CSW/Raf/MAPK regulates Pro-I.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "29b8e378-b758-481e-872d-6a9bf5f643f0",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C116",
+      "claim": "Aversive learning can induce MAPK activation that peaks at around 20 min, which can be modulated by CSW and Raf.",
+      "claim_type": "EXPLICIT",
+      "source": "Aversive learning can induce MAPK activation that peaks at around 20 min, which can be modulated by CSW and Raf (Pagani et al., 2009; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "258077b9-2ed0-41ed-aece-9c0abeb71cc2",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C117",
+      "claim": "Overexpression of CSW in MB neurons is reported to accelerate MAPK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of CSW in MB neurons is reported to accelerate MAPK activation (Pagani et al., 2009) and can reduce Pro-I (Figure 3D, E and H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "340e1c21-9ddd-4066-8e02-6eea2a6f3386",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C118",
+      "claim": "Knocking down Raf in MB neurons shortens the duration of MAPK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down Raf in MB neurons shortens the duration of MAPK activation (Zhang et al., 2018) and can exacerbate Pro-I (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "6a74973a-785e-4487-a8e7-6faedaec528d",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C119",
+      "claim": "MAPK activation can help distinguish the time contexts of the two tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "With these findings, an interesting idea is that MAPK activation can help distinguish the time contexts of the two tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the mechanism by which MAPK affects Pro-I.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "53ac12d2-29b0-4def-9e4a-f72b880eca4d",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C120",
+      "claim": "The CSW/Raf/MAPK pathway can bidirectionally regulate Pro-I by affecting the similarity of time contexts between tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the CSW/Raf/MAPK pathway can bidirectionally regulate Pro-I by affecting the similarity of time contexts between tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis synthesizing the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "58e51e1d-c4e5-4ce2-8efa-a7b065ea81a9",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C121",
+      "claim": "The properties of Pro-I obtained using the Drosophila model are consistent with psychological studies.",
+      "claim_type": "EXPLICIT",
+      "source": "These properties of Pro-I that we obtained using the Drosophila model are consistent with psychological studies (Kliegl and B\u00e4uml, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement compares current findings to previous psychological literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "1415e2cd-f588-4b34-b66a-6fb7311e9032",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C122",
+      "claim": "Pro-I in the current work only occurs when the interval between two tasks is less than 20 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Pro-I in the current work only occurs when the interval between two tasks is less than 20 min, the phenomenon of Pro-I varies across biological learning systems and tasks (Crossley et al., 2019; Epp et al., 2016; Jonides and Nee, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2 and citations to literature showing variability.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "c5f44995-0634-4078-ac2e-559f440dca2a",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C123",
+      "claim": "The phenomenon of Pro-I varies across biological learning systems and tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Pro-I in the current work only occurs when the interval between two tasks is less than 20 min, the phenomenon of Pro-I varies across biological learning systems and tasks (Crossley et al., 2019; Epp et al., 2016; Jonides and Nee, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "f76d5bdc-f87a-49d3-abd3-7cf090842207",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C124",
+      "claim": "The molecules regulating Pro-I and Retro-I in Drosophila are involved in different diseases with varying levels of intellectual disability.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the molecules regulating Pro-I and Retro-I in Drosophila are involved in different diseases with varying levels of intellectual disability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the subsequent statements about Rac1, Fmr1, and PTPN11 in disease.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "6a6ac2a6-c397-4f07-9a48-c0e31dd18511",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C125",
+      "claim": "Rac1 and Fmr1, which regulate Retro-I in Drosophila, are high-risk genes for autism.",
+      "claim_type": "EXPLICIT",
+      "source": "Rac1 and Fmr1, which regulate Retro-I in Drosophila, are high-risk genes for autism (Lord et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature on autism genetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "aa2ac7a9-c7ce-4b7a-a9d8-1e2c9a60ecdb",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C126",
+      "claim": "Mutations in PTPN11, a human orthologue of csw, account for more than half of Noonan syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in PTPN11, a human orthologue of csw, account for more than half of Noonan syndrome (Roberts et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature on Noonan syndrome.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "aee8007a-af5a-4ca2-8549-e7d2a23ad380",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C127",
+      "claim": "Further studies on the molecular mechanisms underlying Pro-I and Retro-I may contribute to the understanding of the pathogenesis of autism and Noonan syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, further studies on the molecular mechanisms underlying Pro-I and Retro-I may also contribute to the understanding of the pathogenesis of autism and Noonan syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential translational relevance of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "4e150bf6-6603-4e51-bc40-f1497e240c72",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C128",
+      "claim": "Studies of Pro-I and Retro-I from the synaptic and neural circuit levels may inspire continual learning in artificial intelligence.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, studies of Pro-I and Retro-I from the synaptic and neural circuit levels may also inspire continual learning in artificial intelligence (Wang et al., 2021; Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "3ca62119-6f59-4786-8cce-8e8632c5a6df",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C129",
+      "claim": "Flies were cultured at 23\u2103 and 60% relative humidity with standard medium under a 12 hr light-dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies (Drosophila melanogaster) were cultured at 23\u2103 and 60% relative humidity with standard medium under a 12 hr light-dark cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "5bf8ad9e-c189-4e68-bf77-8a9992a89b8b",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C130",
+      "claim": "MB-GS was a gift from Dr. Ronald L. Davis.",
+      "claim_type": "EXPLICIT",
+      "source": "MB-GS was a gift from Dr. Ronald L. Davis (Mao et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of a reagent with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "a30b1031-1557-4abf-a582-a6bc88aa7f1b",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C131",
+      "claim": "The insertion site of UAS-csw in the transgenic line (#23878) acquired from Bloomington Stock Center is the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the insertion site of UAS-csw in the transgenic line (#23878) acquired from Bloomington Storck Center is the X chromosome, a distinction between male and female flies needs to be made when counting behavioral results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration based on the genetic properties of the fly line.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "f0cef069-08b6-4117-9a00-cbf5c9ddf14a",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "claim_id": "C132",
+      "claim": "A new transgenic strain (UAS-csw, insertion on chromosome III) was constructed for experimental convenience.",
+      "claim_type": "EXPLICIT",
+      "source": "For experimental convenience, we constructed a new transgenic strain (UAS-csw, insertion on chromosome III) and used it mainly in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "842b94c9-b599-40cd-a252-877f2f8254f6",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Pro-I is affected by content similarity and context similarity between tasks. Significant Pro-I was observed between two consecutive aversive associative tasks, but not when the proactive task was changed to non-associative stimuli or appetitive learning. Pro-I was also eliminated when tasks were learned in different contexts, and only affected avoidance memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43, C45, C105-C107, C109-C110 are supported by experimental data in Figure 1 showing that Pro-I depends on content and context similarity. The experiments include appropriate controls (non-associative stimuli, appetitive learning, different contexts) and demonstrate specificity for avoidance memory. Statistical significance is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pro-I is more sensitive to inter-task interval (ITI) than Retro-I. Pro-I occurs at ITI \u226415 min but not at ITI \u226520 min, while Retro-I persists at all tested intervals (0-60 min). Both types of interference occur simultaneously at short ITI (<20 min).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C47-C49, C92-C93, C111, C113, C122 are well-supported by experimental data in Figure 2A-E showing differential temporal sensitivity of Pro-I and Retro-I. Multiple time points were tested with appropriate statistical analysis, and results are consistent with the 20 min threshold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "ad2a9635-9cc2-4684-9401-c9ee74a9758a",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Rac1 specifically regulates Retro-I without affecting Pro-I. Suppressing Rac1 activity mitigated Retro-I while increasing Rac1 activity aggravated Retro-I, but neither manipulation affected Pro-I, indicating distinct molecular mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16, C53-C55, C97 are supported by experimental data in Figure 2F showing bidirectional effects of Rac1 manipulation on Retro-I but not Pro-I. The use of both dominant-negative and constitutively active forms provides strong evidence for specificity. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "21ce1497-2cde-4287-963b-20a2dcef5bbf",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CSW bidirectionally regulates Pro-I but not Retro-I, specifically in MB \u03b3 neurons. Acute knockdown of CSW exacerbated Pro-I while overexpression reduced Pro-I. This effect was specific to \u03b3 neurons and did not affect Retro-I or single-task learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C10, C58-C62, C68-C71 are well-supported by extensive experimental data in Figure 3 using multiple independent RNAi lines, different transgenic strains, and cell-type-specific manipulations. The specificity for \u03b3 neurons is demonstrated using both constitutive and inducible systems. Controls are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Raf/MAPK pathway acts downstream of CSW to regulate Pro-I. Pharmacological and genetic inhibition of MAPK or Raf exacerbated Pro-I, while Raf overexpression reduced Pro-I. Epistasis experiments showed Raf acts downstream of CSW.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C76-C80, C83-C85, C94 are supported by convergent evidence from pharmacological (U0126) and genetic manipulations in Figure 4. The epistasis experiment (C83-C84) provides strong evidence for pathway ordering. Multiple pathway components were tested with consistent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "26984f18-0267-418f-8cb9-eabfc28a2b40",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CSW manipulation does not affect Retro-I or single-task learning and memory. Bidirectional manipulation of CSW in MB neurons had no effect on Retro-I, immediate memory, or early memory of a single task.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14, C87, C95, C101-C102 are supported by experimental data in Figures 3F and 4\u2014figure supplement 1B-C. The specificity of CSW for Pro-I (but not Retro-I or single-task memory) is a key finding that distinguishes it from other molecules and is well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "918e658d-8a49-4b0a-9fb0-39d50b0a9300",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Learning different tasks consecutively triggers distinct molecular mechanisms to tune Pro-I and Retro-I. The CSW/Raf/MAPK pathway specifically regulates Pro-I through a mechanism distinct from single-task memory and from Retro-I regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C33, C56, C90-C91, C104 represent the main conclusion synthesized from the differential effects of CSW on Pro-I vs Retro-I and Rac1 on Retro-I vs Pro-I. This is well-supported by the convergent experimental evidence showing molecular specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "939ae2c1-cedc-4e3f-a363-baa93ccbba51",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sqh, a downstream molecule of Raf/MAPK in single-task memory, does not participate in Pro-I regulation. This indicates that the CSW/Raf/MAPK pathway uses different downstream effectors for Pro-I versus single-task memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89 and C103 are supported by experimental data in Figure 4\u2014figure supplement 1E showing no effect of Sqh manipulation on Pro-I, and citation to prior work showing Sqh's role in single-task memory. This demonstrates pathway branching and context-dependent signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "02cc7215-b007-4568-8607-da650904504f",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that the CSW/Raf/MAPK pathway regulates Pro-I by affecting time context similarity between tasks, potentially through MAPK activation helping to distinguish temporal contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100, C108, C114-C115, C119-C120 are mechanistic hypotheses and speculations not directly tested. While consistent with the data showing ITI sensitivity and MAPK dynamics from prior studies, these claims lack direct experimental validation of the proposed mechanism. They represent reasonable interpretations but require further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing the context and motivation for the study, including definitions of Pro-I and Retro-I, the knowledge gap regarding mechanisms of inter-task interference, and the utility of Drosophila as a model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C18-C26 are general background statements supported by appropriate citations to prior literature. These establish the scientific context and are not novel findings of this study but are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "6bd62571-0ca7-496a-a7a2-0f928dfaf0a3",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has identified molecules regulating Retro-I and Pro-I in Drosophila, with some molecules (Scribble, SLC22A) regulating both. Clinical studies show differential resistance to Pro-I and Retro-I in neuropsychiatric disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C36 accurately summarize prior literature with appropriate citations. These establish the state of knowledge before the current study and motivate the investigation of distinct mechanisms. The citations appear accurate based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge claims about Drosophila neurobiology, memory components, and prior findings on CSW, Rac1, MAPK pathway, and memory dynamics that inform the current study's design and interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C51-C52, C57, C63-C64, C74-C75, C81-C82, C86, C88, C99, C112, C116-C118 are supported by appropriate citations to prior literature. These provide necessary background on the biological system and prior findings that contextualize the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "73a8f9f4-afe9-48ef-957b-7b7f1b48fbb4",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Constitutive overexpression of CSW in \u03b3 or \u03b1/\u03b2 neurons (but not \u03b1'/\u03b2' neurons) showed higher performance with Pro-I compared to genetic controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C67 from Figure 3\u2014figure supplement 1G show effects with constitutive expression that differ from the acute manipulation results. The manuscript notes this was done to identify candidate neuron types, but the constitutive expression may have developmental effects that complicate interpretation. The acute experiments (C68-C70) provide clearer evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "71d864d4-7a63-4895-a10b-e7b1cf5b88f8",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CSW knockdown had no effect on Pro-I when tasks were learned in different contexts, consistent with the absence of Pro-I under these conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 are supported by data in Figure 3\u2014figure supplement 1I showing that CSW manipulation is ineffective when Pro-I is already absent due to context differences. This is a logical control demonstrating that CSW specifically affects Pro-I rather than general task performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "258d9e42-e5d8-4d32-ae13-c8392080f0af",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The properties of Pro-I observed in Drosophila are consistent with psychological studies in other systems, validating the model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C50, C121 compare current findings to prior psychological literature with appropriate citations. The consistency with established principles (content, context, temporal effects) supports the validity of the Drosophila model for studying these phenomena.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "c875dcd9-8ca5-42f4-9fa7-b34373ebfd9f",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion of broader implications including variability of Pro-I across systems, disease relevance (autism, Noonan syndrome), and potential applications to artificial intelligence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C123-C128 are speculative statements about broader implications and future directions. While C123-C126 cite relevant literature on disease associations, C127-C128 are speculations about potential future contributions that are not directly tested. These are reasonable but uncertain extrapolations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "1e39ac78-792a-46d2-959a-f1ae086487eb",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Methodological details about fly culture conditions, reagent sources, and construction of new transgenic lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C129-C132 are methodological descriptions that appear accurate and appropriately detailed. The construction of a new UAS-csw line on chromosome III (C132) to avoid sex-linkage issues (C131) demonstrates good experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    },
+    {
+      "id": "59633120-27f7-498c-899e-a0ff2b1cfc90",
+      "content_id": "cad7d2bb-19c1-483b-8064-a0529d4efe92",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background knowledge about protein identities and prior findings: CSW is the Drosophila orthologue of SHP2, and the Rac1/SCAR/Dia pathway regulates Retro-I at longer intervals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C98, C103 are factual statements about protein identities and prior findings supported by appropriate citations. These provide necessary context for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:42:01.688897Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c7a9e3fe-25a6-4f35-b908-2491ee1e3d6b",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "1c8c0ffd-1e68-47bb-a355-aca22b422ef3",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "38a3fda0-54d7-49ea-912d-408472a31e02",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "dd50da12-d220-4cb2-b606-e21488b28986",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "ed019289-d970-4291-8389-64a79374ae3b",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "f78d52d7-511f-4923-b81c-c7267c238325",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "c2967f8b-dbaf-4dd8-a5c2-734a3281d154",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "a44775c3-af9d-4409-90b8-e8ab9b865e36",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "15082be8-c2b2-4483-9929-cc454c79e4e3",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "7d0fffb0-8fc3-4a29-aa04-30c4a8fb5a9f",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "ac663b38-2059-4478-9ff7-4eeab95a9cfb",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "137a865f-8d37-4604-90a9-3acf3dbca84c",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "0c0f69ae-53e7-4057-9c2d-d8b91c92a620",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "bf908190-2a69-42ca-9b1c-a545efd4640b",
+      "result_id": "842b94c9-b599-40cd-a252-877f2f8254f6"
+    },
+    {
+      "claim_id": "82b2d15d-0bf1-4327-acfa-c2ceb7c8bf71",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "e7d7e80e-543a-4636-a0b2-95b6505f5611",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "1e3c2298-3913-4259-97ab-ae6f72067fad",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "b364e50c-9110-4dd7-abe7-28771d6255f4",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "2b99cb41-e079-48d3-9897-875434b8f905",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "e6dd6390-fece-4cba-831e-a2a388e6d6d3",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "f49abe4a-8b69-4d28-b560-9b236605bcd1",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "6f8ed56a-1b30-4007-bbce-e507d328794d",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "c1b4f1d0-037f-4b47-bd19-387bcd9082f7",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "7d03c7a4-b804-4b9a-ac35-9fd826e6a245",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "1415e2cd-f588-4b34-b66a-6fb7311e9032",
+      "result_id": "7f8db78a-12fc-4061-ad2a-e3f4a3d7926a"
+    },
+    {
+      "claim_id": "460c7863-1bf6-4904-879f-9dcfa5d779b6",
+      "result_id": "ad2a9635-9cc2-4684-9401-c9ee74a9758a"
+    },
+    {
+      "claim_id": "992bf564-5f03-4b3e-858d-445544e2c6d9",
+      "result_id": "ad2a9635-9cc2-4684-9401-c9ee74a9758a"
+    },
+    {
+      "claim_id": "3f45e403-2fc0-4ae2-9b79-87cefe6adad7",
+      "result_id": "ad2a9635-9cc2-4684-9401-c9ee74a9758a"
+    },
+    {
+      "claim_id": "f7c52638-d6c5-4977-b2bf-a82422a95589",
+      "result_id": "ad2a9635-9cc2-4684-9401-c9ee74a9758a"
+    },
+    {
+      "claim_id": "14591d2c-516a-4aa1-812e-ddef0d8a8020",
+      "result_id": "ad2a9635-9cc2-4684-9401-c9ee74a9758a"
+    },
+    {
+      "claim_id": "3cb612fe-ac73-464e-a237-78356e1ab145",
+      "result_id": "ad2a9635-9cc2-4684-9401-c9ee74a9758a"
+    },
+    {
+      "claim_id": "eb47c1a9-286b-43db-af58-13767d8b4f35",
+      "result_id": "ad2a9635-9cc2-4684-9401-c9ee74a9758a"
+    },
+    {
+      "claim_id": "d6b8b8be-b005-48ea-85ba-ac1d46d4976f",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "f72ab00a-a8cf-4b7c-8d84-9eb11e3a4f0f",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "2692e126-5b7e-436d-9bd4-ccc481cb5d4b",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "45e219f8-a4eb-47a2-bf85-9e92823c4a4b",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "926754f9-c2b6-4cec-82ec-ffb6361b0f53",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "5ec0e137-416b-4ae9-a8aa-ddeeb0934f6a",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "0ce47289-721b-4b46-93e7-ea990badab36",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "971805d9-d542-4dce-8ae1-eeaa51f89843",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "6dcc6907-481d-4bf2-9aa2-e4f3f9a086e7",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "b21f19d7-bcbd-4c5a-ac2f-ad09996df2ff",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "b8420918-866d-4c06-9377-fd25063c912f",
+      "result_id": "21ce1497-2cde-4287-963b-20a2dcef5bbf"
+    },
+    {
+      "claim_id": "ac3ecbf4-c16d-46c8-b36a-31b8ca6f4deb",
+      "result_id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b"
+    },
+    {
+      "claim_id": "256c9f2c-974b-4cb1-b65d-7503ee26b8e4",
+      "result_id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b"
+    },
+    {
+      "claim_id": "97ec23ef-55cd-4326-acc5-6645c8192614",
+      "result_id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b"
+    },
+    {
+      "claim_id": "ed56e508-252a-4018-964b-07caf9d62480",
+      "result_id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b"
+    },
+    {
+      "claim_id": "d3d441cb-a1db-46b0-9641-07f862d89fd8",
+      "result_id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b"
+    },
+    {
+      "claim_id": "9ea200d0-34a7-426e-803c-7165544acada",
+      "result_id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b"
+    },
+    {
+      "claim_id": "bf28a30b-6ec8-4bda-ab4e-dac4c0f26652",
+      "result_id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b"
+    },
+    {
+      "claim_id": "7ff82514-b931-413c-9625-6caadf0e6e6e",
+      "result_id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b"
+    },
+    {
+      "claim_id": "e4d79a68-8c92-4011-8c6f-dd16e0be4be5",
+      "result_id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b"
+    },
+    {
+      "claim_id": "1f1e1d63-e4b4-4e99-b8ce-01d9d4e535e7",
+      "result_id": "2aa1b4c6-bbfc-4ec5-a698-bdd86ff5f84b"
+    },
+    {
+      "claim_id": "7b4b3f13-4c20-4086-a280-149120c71cf3",
+      "result_id": "26984f18-0267-418f-8cb9-eabfc28a2b40"
+    },
+    {
+      "claim_id": "3d8f6ae5-d1ba-4052-aa05-abcac9d9b961",
+      "result_id": "26984f18-0267-418f-8cb9-eabfc28a2b40"
+    },
+    {
+      "claim_id": "4dcc8f66-e30a-433a-a485-4570e0d1b9d3",
+      "result_id": "26984f18-0267-418f-8cb9-eabfc28a2b40"
+    },
+    {
+      "claim_id": "caf233f2-331b-49d7-806e-6ea4fbd7f709",
+      "result_id": "26984f18-0267-418f-8cb9-eabfc28a2b40"
+    },
+    {
+      "claim_id": "b097af55-f2ff-4c4c-aba9-a02aaa327d64",
+      "result_id": "26984f18-0267-418f-8cb9-eabfc28a2b40"
+    },
+    {
+      "claim_id": "125dba46-ac80-44e3-ad3c-6748b8b698d2",
+      "result_id": "26984f18-0267-418f-8cb9-eabfc28a2b40"
+    },
+    {
+      "claim_id": "dd338ce8-77c1-4ca9-bbf2-ab69128e5751",
+      "result_id": "918e658d-8a49-4b0a-9fb0-39d50b0a9300"
+    },
+    {
+      "claim_id": "102fb549-4098-42e8-ab25-b8c7053ad2a1",
+      "result_id": "918e658d-8a49-4b0a-9fb0-39d50b0a9300"
+    },
+    {
+      "claim_id": "3cb612fe-ac73-464e-a237-78356e1ab145",
+      "result_id": "918e658d-8a49-4b0a-9fb0-39d50b0a9300"
+    },
+    {
+      "claim_id": "14c7f90d-1e6f-4b2d-9713-bc21d32fa77e",
+      "result_id": "918e658d-8a49-4b0a-9fb0-39d50b0a9300"
+    },
+    {
+      "claim_id": "25dfcad5-ba87-485d-989e-c1c664807b97",
+      "result_id": "918e658d-8a49-4b0a-9fb0-39d50b0a9300"
+    },
+    {
+      "claim_id": "cf92b30a-d3c3-4fba-aac6-32a204e8dc87",
+      "result_id": "918e658d-8a49-4b0a-9fb0-39d50b0a9300"
+    },
+    {
+      "claim_id": "fb7bfa2e-7fec-460e-8eb6-1ede3b4f9de1",
+      "result_id": "939ae2c1-cedc-4e3f-a363-baa93ccbba51"
+    },
+    {
+      "claim_id": "b94e5a46-8d55-489a-bc59-07565c43b5f9",
+      "result_id": "939ae2c1-cedc-4e3f-a363-baa93ccbba51"
+    },
+    {
+      "claim_id": "9207e644-e768-443e-b187-57fbd0a587d1",
+      "result_id": "02cc7215-b007-4568-8607-da650904504f"
+    },
+    {
+      "claim_id": "c8583e73-4fc6-4e5d-88bd-93e4f4cdb9af",
+      "result_id": "02cc7215-b007-4568-8607-da650904504f"
+    },
+    {
+      "claim_id": "48aa6b14-6a1b-41df-b178-63edd4287e90",
+      "result_id": "02cc7215-b007-4568-8607-da650904504f"
+    },
+    {
+      "claim_id": "677c52e9-b77d-4798-b237-ba3113d99b89",
+      "result_id": "02cc7215-b007-4568-8607-da650904504f"
+    },
+    {
+      "claim_id": "6a74973a-785e-4487-a8e7-6faedaec528d",
+      "result_id": "02cc7215-b007-4568-8607-da650904504f"
+    },
+    {
+      "claim_id": "53ac12d2-29b0-4def-9e4a-f72b880eca4d",
+      "result_id": "02cc7215-b007-4568-8607-da650904504f"
+    },
+    {
+      "claim_id": "9a998b7e-b8bb-48c7-abfc-03e5f5ca6cdd",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "23d534c5-3f41-4ebe-bf53-71fe81701108",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "52874197-9a5d-45d8-afa4-5b784e717a32",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "0f986092-70e7-4135-88e1-ea52cc2ce268",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "223c4514-e1e5-440d-b272-3d5aa820af47",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "a1852835-27b4-43fa-a327-200ccca98632",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "c5c90bd4-1d74-465e-932f-56ca8b604999",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "260c88d9-9eb3-443c-8de8-503c26db76b0",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "a9b15949-3721-422c-8b53-a57f471fd50f",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "06fcbeed-6a73-4220-a972-a7c8f198fce7",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "8332f502-0f70-480d-aefa-fd23d0ea7a50",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "bcce4361-95ba-4bdc-9a60-aab9c03d6184",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "be4540a6-b373-4c34-8d68-4d7937b407c4",
+      "result_id": "c1fc866b-405b-4a7b-9e03-5e70621dcdf6"
+    },
+    {
+      "claim_id": "304d7764-407a-419e-a1fc-0e25ca2dba9c",
+      "result_id": "6bd62571-0ca7-496a-a7a2-0f928dfaf0a3"
+    },
+    {
+      "claim_id": "f4d91804-91d4-4aa2-95b9-7b87171f3834",
+      "result_id": "6bd62571-0ca7-496a-a7a2-0f928dfaf0a3"
+    },
+    {
+      "claim_id": "4a9b4d5f-5aa6-41ef-8fd1-d77318148d26",
+      "result_id": "6bd62571-0ca7-496a-a7a2-0f928dfaf0a3"
+    },
+    {
+      "claim_id": "13a2857c-2960-4e2d-b472-9723ddd32414",
+      "result_id": "6bd62571-0ca7-496a-a7a2-0f928dfaf0a3"
+    },
+    {
+      "claim_id": "c825ba02-6690-4254-a8a7-470f8431fb93",
+      "result_id": "6bd62571-0ca7-496a-a7a2-0f928dfaf0a3"
+    },
+    {
+      "claim_id": "5c79b5f4-72b7-43da-98d7-87915d12c536",
+      "result_id": "6bd62571-0ca7-496a-a7a2-0f928dfaf0a3"
+    },
+    {
+      "claim_id": "2d6a9680-d69a-41b5-8e9e-1c90ae7f6664",
+      "result_id": "6bd62571-0ca7-496a-a7a2-0f928dfaf0a3"
+    },
+    {
+      "claim_id": "2a68e645-2f68-43f0-831e-e3eb52049c54",
+      "result_id": "6bd62571-0ca7-496a-a7a2-0f928dfaf0a3"
+    },
+    {
+      "claim_id": "1459890c-119f-4e86-aeec-c1c1dc78f12d",
+      "result_id": "6bd62571-0ca7-496a-a7a2-0f928dfaf0a3"
+    },
+    {
+      "claim_id": "5d267786-2313-479c-b3a9-26affd33b0e2",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "451d38aa-891f-4be6-801a-d0476afbdae3",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "dfb7a09b-41b4-4021-a738-9b0363a66f3e",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "09395fa8-c782-4aca-b29f-0303845f8576",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "f98f17e8-628c-4aab-bff3-e1730d044f5c",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "85aa4048-2749-4e79-9204-1a996a82c6be",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "6757f88e-f44f-472c-908b-a76ee860d946",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "a16e6ccd-017a-4eee-9a5b-7e29c60652e1",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "ade70721-e5fe-46cc-b2fe-a27382541ffd",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "f989a517-c82e-4c6b-bb5b-f6bb2ea3326e",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "19b90920-c698-4ff9-af5c-772019c135be",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "3f294450-b0b7-4b6e-be8c-0da37ebea0c2",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "7d9fb9cc-c8fa-4cab-a76b-76e711813a6f",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "bd3d4c34-56cf-40bd-bf25-083fed254d4c",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "29b8e378-b758-481e-872d-6a9bf5f643f0",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "258077b9-2ed0-41ed-aece-9c0abeb71cc2",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "340e1c21-9ddd-4066-8e02-6eea2a6f3386",
+      "result_id": "dfd7e10d-402c-4f4e-943c-0a5fe10600d9"
+    },
+    {
+      "claim_id": "9659b844-6f62-4631-97d8-5991c4175afe",
+      "result_id": "73a8f9f4-afe9-48ef-957b-7b7f1b48fbb4"
+    },
+    {
+      "claim_id": "ba0ddd46-e406-4b05-bb48-2ed06db44142",
+      "result_id": "73a8f9f4-afe9-48ef-957b-7b7f1b48fbb4"
+    },
+    {
+      "claim_id": "85bfc0d2-42cc-4864-a609-63115f1165cd",
+      "result_id": "73a8f9f4-afe9-48ef-957b-7b7f1b48fbb4"
+    },
+    {
+      "claim_id": "8249064a-97c8-4077-a7ed-6f897f21aee5",
+      "result_id": "71d864d4-7a63-4895-a10b-e7b1cf5b88f8"
+    },
+    {
+      "claim_id": "2b653895-4889-486d-ac67-f05f802ebbd3",
+      "result_id": "71d864d4-7a63-4895-a10b-e7b1cf5b88f8"
+    },
+    {
+      "claim_id": "15082be8-c2b2-4483-9929-cc454c79e4e3",
+      "result_id": "258d9e42-e5d8-4d32-ae13-c8392080f0af"
+    },
+    {
+      "claim_id": "121065af-4c64-4c4b-939f-4e1e5f44fcfa",
+      "result_id": "258d9e42-e5d8-4d32-ae13-c8392080f0af"
+    },
+    {
+      "claim_id": "58e51e1d-c4e5-4ce2-8efa-a7b065ea81a9",
+      "result_id": "258d9e42-e5d8-4d32-ae13-c8392080f0af"
+    },
+    {
+      "claim_id": "c5f44995-0634-4078-ac2e-559f440dca2a",
+      "result_id": "c875dcd9-8ca5-42f4-9fa7-b34373ebfd9f"
+    },
+    {
+      "claim_id": "f76d5bdc-f87a-49d3-abd3-7cf090842207",
+      "result_id": "c875dcd9-8ca5-42f4-9fa7-b34373ebfd9f"
+    },
+    {
+      "claim_id": "6a6ac2a6-c397-4f07-9a48-c0e31dd18511",
+      "result_id": "c875dcd9-8ca5-42f4-9fa7-b34373ebfd9f"
+    },
+    {
+      "claim_id": "aa2ac7a9-c7ce-4b7a-a9d8-1e2c9a60ecdb",
+      "result_id": "c875dcd9-8ca5-42f4-9fa7-b34373ebfd9f"
+    },
+    {
+      "claim_id": "aee8007a-af5a-4ca2-8549-e7d2a23ad380",
+      "result_id": "c875dcd9-8ca5-42f4-9fa7-b34373ebfd9f"
+    },
+    {
+      "claim_id": "4e150bf6-6603-4e51-bc40-f1497e240c72",
+      "result_id": "c875dcd9-8ca5-42f4-9fa7-b34373ebfd9f"
+    },
+    {
+      "claim_id": "3ca62119-6f59-4786-8cce-8e8632c5a6df",
+      "result_id": "1e39ac78-792a-46d2-959a-f1ae086487eb"
+    },
+    {
+      "claim_id": "5bf8ad9e-c189-4e68-bf77-8a9992a89b8b",
+      "result_id": "1e39ac78-792a-46d2-959a-f1ae086487eb"
+    },
+    {
+      "claim_id": "a30b1031-1557-4abf-a582-a6bc88aa7f1b",
+      "result_id": "1e39ac78-792a-46d2-959a-f1ae086487eb"
+    },
+    {
+      "claim_id": "f0cef069-08b6-4117-9a00-cbf5c9ddf14a",
+      "result_id": "1e39ac78-792a-46d2-959a-f1ae086487eb"
+    },
+    {
+      "claim_id": "d0e9014c-0e5e-4e3e-b25e-cf80bf9ec2b4",
+      "result_id": "59633120-27f7-498c-899e-a0ff2b1cfc90"
+    },
+    {
+      "claim_id": "be80c92a-e66e-4aae-b540-76c2cbf4b8af",
+      "result_id": "59633120-27f7-498c-899e-a0ff2b1cfc90"
+    },
+    {
+      "claim_id": "b94e5a46-8d55-489a-bc59-07565c43b5f9",
+      "result_id": "59633120-27f7-498c-899e-a0ff2b1cfc90"
+    }
+  ],
+  "comparisons": []
+}

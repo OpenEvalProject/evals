@@ -1,0 +1,1575 @@
+{
+  "submission": {
+    "id": "6c24632c-7500-44b5-a0a7-ff1acda6e81f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:43:21.733460Z",
+    "updated_at": "2025-12-03T09:43:21.733460Z"
+  },
+  "content": [
+    {
+      "id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "submission_id": "6c24632c-7500-44b5-a0a7-ff1acda6e81f",
+      "content_type": "manuscript",
+      "content_text": "# Behavioral evidence for nested central pattern generator control of Drosophila grooming\n\n## Authors\n\n- Primoz Ravbar<sup>1</sup> ([ORCID: 0000-0001-7769-8687](https://orcid.org/0000-0001-7769-8687)) \u2020\n- Neil Zhang<sup>1</sup> ([ORCID: 0000-0003-3397-5974](https://orcid.org/0000-0003-3397-5974))\n- Julie H Simpson<sup>1</sup> ([ORCID: 0000-0002-6793-7100](https://orcid.org/0000-0002-6793-7100)) \u2020\n\n### Affiliations\n\n1. Molecular Cellular and Developmental Biology and Neuroscience Research Institute, University of California, Santa Barbara Santa Barbara United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCentral pattern generators (CPGs) are neurons or neural circuits that produce periodic output without requiring patterned input. More complex behaviors can be assembled from simpler subroutines, and nested CPGs have been proposed to coordinate their repetitive elements, organizing control over different time scales. Here, we use behavioral experiments to establish that Drosophila grooming may be controlled by nested CPGs. On a short time scale (5\u20137 Hz, ~ 200 ms/movement), flies clean with periodic leg sweeps and rubs. More surprisingly, transitions between bouts of head sweeping and leg rubbing are also periodic on a longer time scale (0.3\u20130.6 Hz, ~2 s/bout). We examine grooming at a range of temperatures to show that the frequencies of both oscillations increase\u2014a hallmark of CPG control\u2014and also that rhythms at the two time scales increase at the same rate, indicating that the nested CPGs may be linked. This relationship holds when sensory drive is held constant using optogenetic activation, but oscillations can decouple in spontaneously grooming flies, showing that alternative control modes are possible. Loss of sensory feedback does not disrupt periodicity but slow down the longer time scale alternation. Nested CPGs simplify the generation of complex but repetitive behaviors, and identifying them in Drosophila grooming presents an opportunity to map the neural circuits that constitute them.\n\n## Introduction\n\nAnimals combine simpler movements into complex routines, forming behaviors with organization across multiple time scales. We have observed lobsters moving antennal segments at different speeds, and marveled at pianists playing Rachmaninoff moving their fingers blindingly fast, hands at a slower pace, while arms and body are swinging, all nearly perfectly orchestrated. We wondered how a complex behavior can be assembled from simpler movements in such a harmonious manner.\n\nCentral pattern generators (CPGs) are neural circuits that produce rhythmic motor outputs in response to a trigger without requiring ongoing descending drive or patterned sensory inputs; CPGs control short stereotypic actions in cat walking, crayfish swimming, locust flight, leech heartbeat, and the stomatogastric and pyloric rhythms of crustaceans (reviewed in Berkowitz, 2019; Harris-Warrick and Ramirez, 2017 ; Grillner, 2006; Marder and Calabrese, 1996; Mulloney and Smarandache, 2010; Selverston, 2010). However, CPGs may also contribute to control of more complex behaviors. When the movements that compose a behavior repeat, it is inefficient to initiate each step with a separate decision. Automating the sequence by calling its actions in series produces reliable execution. Increasingly complex sequences can be assembled from shorter elements, suggesting hierarchical control. When repetitive subroutines are themselves composed of simpler periodic movements, they may be controlled by nested CPGs, hierarchically organized so that a \u2018high-level\u2019 slow CPG controls the behavior on coarse scale and a \u2018lower-level\u2019 fast CPG adds the fine structure (Berkowitz, 2019). In other words, the slow CPG controls alternations between subroutines and the fast CPG controls alternations within these subroutines. Various combinations of coarse and fine oscillators could produce behaviors of arbitrary complexity while still keeping them well-timed, stereotyped, and coherent. Bird song, for example, contains sound syllables executed in sequences. The syllables are short repeating elements, and sequences of syllables make phrases or words that also repeat, creating structure over several time scales. Ingenious local cooling experiments of specific brain regions cause the whole song to slow down, indicating that it is governed by central pattern generating circuits (Long and Fee, 2008). Temporally nested, hierarchical patterns of neural activity have also recently been found during locomotion in Caenorhabditis elegans (Kaplan et al., 2020).\n\nHere, we show that Drosophila grooming behavior contains periodic elements over several time scales of which we explore two: a fast repeat of individual leg movements (including head sweeps and front leg rubs) and a slow alternation between bouts of head cleaning and front leg rubbing. We demonstrate that both of these repeated elements show evidence of CPG control, and that the two rhythms are usually coordinated, establishing fly grooming as a model system for understanding the circuit architecture of nested CPGs.\n\n## Results\n\n### Two time scales of grooming are periodic\n\nWhen flies are covered in dust, they initially groom anterior body parts using their front legs (Seeds et al., 2014). They alternate between bouts of head sweeps, where the legs move synchronously, and bouts of leg rubbing, where the legs move in opposition to each other, scraping the dust off. These movements are shown schematically in Figure 1A: the purple and orange arrows indicate synchronous in-phase head sweeps and opposing out-of-phase leg rubs, respectively; the thicker light blue arrows show alternation between these two leg coordination modes. Bouts of head sweeping (h) are indicated in purple and front leg rubbing (f) in orange on the ethogram (record of behavior actions over time) shown in Figure 1B.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of anterior grooming behavior. The out-of-phase motion of leg rubbing is indicated by the orange arrows and in-phase head cleaning movements are indicated by the purple arrows (the short time scale). The blue arrows indicate alternations between the leg rubbing and head cleaning subroutines (the long time scale). (B) Ethogram showing alternations between bouts of front leg rubbing (f) and head cleaning (h) in dust-covered flies recorded at 18\u00b0C. (C) Example leg sweep and rub frequencies measured in the 30 s of anterior grooming behavior shown in the ethogram above. Purple and orange dots indicate front leg rubbing (f) and head cleaning (h) as detected by the Automatic Behavior Recognition System. (D) Bouts of front leg rubbing (f) or head cleaning (h) are identified by their probabilities (from the output of the Convolutional Neural Network). When we subtract the probability of h-bouts from that of f-bouts, we obtain the confidence of behavior curve shown here (see Materials and methods). Purple and orange dots indicate maxima and minima of confidence in behavior identification, corresponding to the centers of the f- and h-bouts, respectively. (E) Enlarged segment taken from (D) showing the definitions of ff-cycle and hh-cycle and f-/h-bouts. (F) Samples of autocorrelation functions (ACFs) computed over 3 min of movies when the fly was engaged in front leg rubbing or head sweeps (G). The thick black lines indicate the average of these samples, while thinner purple and orange lines represent each individual ACF contributing to this average; see Materials and methods for details. (H) ACF of the alternation of f-bout and h-bout from the example of ff-cycles shown in (D) also reveals periodic signal.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Smoothed derivatives from matrix (D) described in Materials and methods. (B) Autocorrelation functions (ACFs) computed from the matrix (D).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Examples of autocorrelation functions (ACFs) of the long time scale as they evolve over 20 min (top), the corresponding classification of periodic (Chardonnay color) and non-periodic behaviors (Pinot Noir color) (middle) and the PIs of the periodic behaviors (bottom). (B) Examples of ACFs computed from non-periodic (left) and periodic (right) long time scale behaviors. The blue and red bars indicate the heights of the central peak and its nearest neighbor, respectively. PI is only defined for behaviors classified as periodic (right). A sine wave would have the PI of 1. Less periodic behaviors have the PI approaching zero.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Periodicity Indexes for the short time scale of dust-stimulated flies across the seven temperatures (top: leg rubbing, bottom: head cleaning). (B) Similar as in (A) but for the spontaneously grooming flies. (C\u2013E) Periodicity Indexes for the long time scale of dust-stimulated, spontaneously grooming flies and optogenetically stimulated flies, respectively. (F\u2013H) Ratios of periodic to non-periodic long time scale behaviors of dust-stimulated, spontaneously grooming and optogenetically stimulated flies, respectively.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Examples of time-traces of angle changes of two joints from opposite front legs (red and blue traces) from flies recorded at three different temperatures (18\u00b0C, 24\u00b0C, and 30\u00b0C). (B) Autocorrelation functions (ACFs) of the time-traces sampled from same three temperatures. Orange = presumptive front-leg rubbing, purple = presumptive head-sweeps. (C) Spectra of the same data as in (B). Flies in (A), (B) and (C) were optogenetically stimulated. (D) ACFs of the long time scale plotted across time of dust-stimulated flies at the three temperatures. The input for the autocorrelation analysis was a signal constructed from the joint positions as described in the Materials and methods. (E) Same data as in (D) but shown as overlaid ACFs. Notice the increase of the number of side-peaks with temperature indicating an increase of frequency. (F) Spectra of the long time scale (same data as in (D) and (E)) showing the temperature-dependent max frequency increase.\n\nThe individual leg sweeps and rubs are stereotyped: these movements are recognizable by human observers or machine vision algorithms (Mathis et al., 2018; Ravbar et al., 2019), and they represent the short time scale we consider here. We first count individual leg movements from raw videos as they are processed for our Automatic Behavior Recognition System (ABRS) pipeline (see Materials and methods and Figure 1\u2014figure supplement 1) and compute their frequencies. In Figure 1C, we show an example of frequencies of leg sweeps and rubs during the same one-minute period as Figure 1B. At 18\u00b0C, leg rubs and sweeps have a characteristic frequency ~6 Hz. This means that each leg movement takes approximately 150 ms to complete, which is consistent with our observations using higher resolution video recordings (see below).\n\nGrooming is not a fixed action pattern and flies choose subroutines such as head sweeps or wing cleaning stochastically, but with different levels of prioritization (Seeds et al., 2014). During anterior grooming, flies typically make several head sweeps in a row, followed by repeated leg rubbing movements; we call these periods where a single type of action is repeated bouts. We use ABRS (Ravbar et al., 2019) to automatically classify different grooming actions and to identify the time points of maximum behavior identification confidence as the centers of bouts (orange and purple circles in the time series shown in Figure 1D). Head cleaning bouts and front leg rubbing bouts alternate: we define the time between two head cleaning bouts as a hh-cycle while the time between two consecutive front leg rubbing bouts is an ff-cycle. Either cycle will include both leg rubs and head sweeps, which is why we consider the average frequency of both types of leg movements in our analysis. These terms are illustrated in Figure 1E, and the cycles are the long time scale we investigate here.\n\nWe demonstrate the periodicity of head sweeps and leg rubs (short time scale) using autocorrelation analysis (Figure 1F and G). Although previous work revealed some syntactic organization at the bout level\u2014both identity and duration of current action influence the identity and duration of the next (Mueller et al., 2019)\u2014we were surprised to find that the alternation of head cleaning and front leg rubbing bouts is also periodic. Autocorrelation analysis of the time series shown in Figure 1H illustrates signal at ~0.33 Hz, corresponding to approximately 2 s between the mid-point of consecutive bouts of front leg rubbing.\n\nTo quantify the strength of periodicity, we computed the ratio between the heights of the prominent peak nearest to zero lag and the central peak (at zero lag) of the autocorrelation function (ACF) (Figure 1\u2014figure supplement 2); we call the ratio of these peak heights the Periodicity Index (PI). More periodic movements have high shoulder peaks: a perfect sine wave would have a PI of 1, while in more weakly periodic data, this index would approach 0. The weakest periodic grooming movements we observe have values ~0.2. Non-periodic signals have poorly defined shoulder peaks and fall below our threshold for peak detection; therefore, the PI is not computed for non-periodic behaviors (see Materials and methods). Using this metric, head sweeps and leg rubbing movements of dusted flies grooming at 18\u00b0C have a mean PI of 0.31 (s.d.=0.02) and 0.31 (s.d.=0.01), respectively; the alternation between bouts (the long time scale) at 18\u00b0C has a mean PI of 0.36 (s.d.=0.02). We also quantify the amount of periodic behavior as a ratio of time spent in periodic versus non-periodic movements, as shown in Figure 1\u2014figure supplement 2. Using these ratios, we found that overall the amount of periodic behavior for the long time scale is 80% (s.d.=8%) at 18\u00b0C. For a comprehensive comparison of PI values and the overall amounts of periodic behaviors for the different conditions evaluated throughout this project see Figure 1\u2014figure supplement 3. Illustrative examples of animals engaged in periodic or non-periodic behaviors, sampled from different groups studied, are shown in Figure 6\u2014figure supplement 2.\n\nWe confirm the frequency and periodicity of leg movements during grooming using Deep Lab Cut (DLC) to analyze an independent video data set. DLC is a method developed for tracking of individual body parts (Mathis et al., 2018). Figure 1\u2014figure supplement 4 shows the changes of joint angles (resulting from leg movements) over 2 s of grooming behavior: at 18\u00b0C, the movement frequencies for the short time scale and long time scale are 4.5 Hz and 0.22 Hz, respectively, similar to our original measurements using ABRS. The PI values are ~0.34 and the prominence of shoulder peaks is above our threshold for periodic behaviors. The discovery that both short time scale and long time scale subroutines within grooming behavior show periodicity suggests the possibility that they may both be controlled by central pattern generating circuits.\n\n### The period lengths of both time scales contract with increasing temperature\n\nA key feature of CPGs is that they oscillate faster at higher temperatures (Deliagina et al., 1983; Tang et al., 2012). To determine whether temperature affects the periodicity of leg sweeps and rubs (short time scale) or the alternation between bouts of head sweeps and leg rubs (ff/hh-cycles; long time scale), we recorded the grooming behavior of dust-covered flies at a range of temperatures between 18\u00b0C and 30\u00b0C. Examples of ethograms from the extreme temperatures are shown in Figure 2A, and ethograms from the entire data set arranged from coolest to warmest temperature of 84 individual flies at seven temperatures recorded for 13 min each are displayed in Figure 2B.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig2-v1.jpg)\n\n**Figure 2.:** (A) Examples of ethograms recorded at 18\u00b0C (top) and 30\u00b0C (bottom). (B) Ethograms of 84 dust-stimulated flies recorded at different temperatures (18\u201330\u00b0C). Colors represent behaviors as indicated in the color legend on the right. (C \u2013E) The frequency of individual leg movements increases with temperature. Part (C) shows example frequency time series from 30 s of grooming at 18\u00b0C (top, blue outline) and 30\u00b0C (bottom, red outline). Gray dashed line = mean of this sample; green dashed line = reference at 6 Hz. (D) Histogram of leg movement frequencies, sampled from seven temperatures (18\u201330\u00b0C.) Lower temperatures are indicated in blue and higher ones in red. Thin lines\u2014individual histograms; thick lines\u2014average of samples at each temperature. All histograms are computed from the 84 ethograms of dust-stimulated flies in (B). (E) Box plots of leg sweep frequencies. Dots show individual fly averages, while the blue bars show the mean frequency, the red bars mark median and the green shaded areas indicate standard deviation (SD) and error (Blue/red bars in box plots \u2013 mean/median; shaded areas \u2013 SD and SE). (F\u2013H) The frequency of the long time scale (ff-cycles + hh-cycles) also increases with temperature. (F) As described in Figure 1D, this plot shows the confidence in samples recorded at 18\u00b0C (top) and 30\u00b0C (bottom). (G , H) Similar to the panels (D , E) but showing the increase of ff-cycle frequency with temperature computed from the 84 dust-stimulated flies.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Separating the individual leg movements into leg rubs and head sweeps shows that the frequency of both increases with temperature at a similar rate.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Histograms of mean frequencies at cool (blue) and warm (red) temperatures, and (B) box plots of the increase in leg movement frequency with temperature; plots and statistics as described in Figure 2D and E. (C) Long time scale hh-cycle analysis comparable to Figure 2G and H.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Samples of five flies recorded at low temperature (18\u00b0C, blue frame), showing behavior confidence curves with several ff-/hh-cycles. Purple and orange circles indicate the times of h- and f-peaks. (B) Autocorrelation function (ACF) curves of behavior confidence sampled from 18\u00b0C flies, indicating strong periodicity of the signals (side peaks). (C) Samples of ACFs computed from over 8 min of a movie when the fly was engaged in front leg rubbing or head sweeps. (D\u2013F) Same as (A\u2013C) but for high temperature (30\u00b0C).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Autocorrelation functions (ACFs) computed from 0.5 s windows of raw videos of dusted flies are stacked together as columns into matrices across \u223c17 s of a movie. Each matrix is showing the change of ACF shape across the \u223c17 s. Note the modulation of the side-band positions and their numbers which is reflective of frequency modulation on the short time scale (y-axis). Also note the modulation of the longer time scales (x-axis). The three matrices shown are taken from different temperatures. Note that at the highest temperature, the y-axis becomes \u2018denser\u2019 (more side-bands) and that the episodes of harmonic bouts become shorter (x-axis). This way, we can observe simultaneous transformation of x-axis and y-axis as a result of temperature increase. The ethograms on top of the matrices are used as a reference.\n\nTemperature increase causes faster individual leg movements (short time scale) (Figure 2C\u2013D) and the frequency shows a linear increase from 5.7 Hz to 6.6 Hz (R2=0.99, p<0.001; Figure 2E). This analysis combines sweeps and rubs, but when the different leg movements are considered separately, both show a similar increase with temperature (Figure 2\u2014figure supplement 1).\n\nThe period of long time scale movements is also compressed by temperature. The ff/hh-cycle frequency increases from 0.42 Hz (s.d.=0.02) at 18\u00b0C to 0.49 Hz (s.d.=0.04) at 30\u00b0C, also in a linear manner (R2=0.96, p<0.001; Figure 2F\u2013H). The frequencies of hh-cycles show a very similar trend (Figure 2\u2014figure supplement 2). Autocorrelations for the long time scale are more variable at higher temperatures, but the alternation remains periodic across the entire range of temperatures (Figure 1\u2014figure supplement 3F, Figure 2\u2014figure supplement 3). A full spectral analysis of the effect of temperature on the ACF shows complex structure over several time scales (Figure 2\u2014figure supplement 4).\n\nIncreasing temperature shortens the cycle period of both the short time scale leg sweeps and rubs and the long time scale alternation between bouts of head cleaning and front leg rubbing. Next, we asked if behaviors at the two time scales contract with temperature by the same amount, which could suggest a linkage between them.\n\n### Two time scales contract together with temperature elevation\n\nSeveral metrics indicate that the short and long time scale oscillations contract at the same rate as temperature increases. We noticed that the number of leg movements within an ff/hh-cycle is fairly consistent, averaging ~15: means range from 13.2 to 15.8 and s.d. range from 0.75 to 1.95 across temperatures (Figure 3A). At 18\u00b0C, there are 15 leg movements of 175 ms for an ff/hh-cycle duration of 2.38 s, while at 30\u00b0C there are 15 leg movements of 152 ms for an ff/hh-cycle duration of 2.04 s. Thus, the average number of leg movements per ff/hh-cycle remains constant even as the cycle duration shortens with increasing temperature (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig3-v1.jpg)\n\n**Figure 3.:** (A) Histograms of numbers of leg movements per ff/hh-cycle in cooler temperatures (blue) and warmer temperatures (red). (B) Box plots of leg movement counts per ff/hh-cycle across the seven temperatures; statistics as in Figure 2E. (C) The frequency of individual leg movements and bout alternations (ff/hh-cycles) increases roughly linearly with temperature but over different time scales (ms vs. s; 7 Hz vs. 0.5 Hz). To see if they increase at the same rate, we compare them in arbitrary units. Frequencies were normalized by dividing each mean value from Figure 2E by the lowest value recorded: this produces the rate of change, where 1.0 means no change and values above 1.0 reflect the increased rate. See Figure 3\u2014figure supplement 1 for similar effects in hh-cycles.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Histograms of numbers of leg movements per hh-cycle in cooler temperatures (blue) and warmer temperatures (red). (B) Box plots of leg movement counts per hh-cycle across the seven temperatures; statistics as in Figure 2E. (C) The frequency of individual leg movements and bout alternations (hh-cycles) increases roughly linearly with temperature but over different time scales (msvs. s; 7 Hz vs. 0.5 Hz).\n\nAn alternative way to determine whether the two time scales contract together with temperature is to plot their contraction rates. Normalizing by their minimal frequencies, we can visualize the slope of temperature dependence for each time scale and the correlation between them is striking (R2=0.96, p<0.001; Figure 3C). Both time scales contract at the same rate, with R2 values of 0.995 and 0.956, respectively. This analysis combined both head sweeps and leg rubs for the short time scale and ff/hh-cycles for the longer one, but when only head sweeps and hh-cycles are considered, a similar correlated contraction with temperature is also observed (Figure 3\u2014figure supplement 1).\n\nIt is possible that temperature will affect both time scales of grooming behaviors at the same rate just because increased temperature tends to speed up all behaviors through its effect on neural activity, making the apparent coupling between grooming CPGs an epiphenomenon. We consider this unlikely because the two time scales can be decoupled in spontaneously grooming flies, where they respond differently to temperature, as described below.\n\n### Periodicity and correlation between time scales persist when sensory stimulation is constant\n\nSo far, we have shown that two hallmarks of CPGs\u2014periodicity and temperature-dependent frequency increase\u2014hold for both short time scale leg sweeps or rubs and long time scale alternations between bouts of leg rubbing and head cleaning. An additional criterion for determining if a behavior is controlled by a CPG is that rhythmic output does not require rhythmic input. It is challenging to isolate the contribution of sensory input or feedback to the rhythms we observe in grooming. There are mechanosensory bristle neurons that detect dust and induce grooming, and proprioceptive sensors that detect limb position or movement during grooming. If these sensory inputs are rhythmic, they could contribute to both short and long time scale rhythms.\n\nWhen flies are covered in dust, their own grooming actions alter sensory input stimuli. The faster their legs sweep, the more quickly dust is removed. Perhaps the coupling between time scales can be explained because faster leg sweeps result in more dust removal, which reduces sensory drive and thus shortens grooming bouts. In other words, the rhythmic behavioral output could result in similarly rhythmic sensory input\u2014thus not excluding a reflex chain explanation of the observed periodicity (Harris-Warrick and Ramirez, 2017). What happens to the periodicity of the long time scale grooming rhythms, across temperatures, if the sensory drive is held constant? We predict that if it is indeed CPG-controlled, it should still contract with increasing temperature. We test this using optogenetic activation of all mechanosensory bristle neurons.\n\nWe previously demonstrated that this manipulation induces grooming, beginning with the anterior body parts, and causing alternation between bouts of head cleaning and front leg rubbing (Hampel et al., 2017; Zhang et al., 2020). Here, we combine optogenetic activation for constant sensory input with changing temperature to show that both individual leg movements and bout-level alternations increase in frequency with temperature and that they do so in a correlated manner. The expression pattern used to activate mechanosensory bristle neurons is shown in Figure 4\u2014figure supplement 1. Representative ethograms at 18\u00b0C and 30\u00b0C show characteristic alternation between bouts of head cleaning and front leg rubbing (Figure 4A). The entire behavioral data set of optogenetically induced grooming over a range of temperatures is shown in Figure 4B.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig4-v1.jpg)\n\n**Figure 4.:** Undusted flies expressing the optogenetic activator UAS-Chrimson in mechanosensory bristles were stimulated with red light to induce anterior grooming behavior. Examples ethograms recorded at 18\u00b0C (top) and 30 \u00b0C (bottom) are shown in (A), while (B) shows the whole data set of ethograms representing 56 flies across the range of temperatures, similar to Figure 2B. The green bars represent the periods of light activation, lasting 2 min each, to optogenetically induce grooming. (C) Examples of leg movement frequencies at 18\u00b0C (top) and 30\u00b0C (bottom), (D) histograms of mean frequencies at cool (blue) and warm (red) temperatures, and (E) box plots of the increase in leg movement frequency with temperature; plots and statistics as described in Figure 2C, D and E; compare to short time scale effects where grooming is induced by dust. (F\u2013H) Long time scale ff-cycle + hh-cycle analysis same as in Figure 2F, G and H. (I) Histograms and box plots (J) of median leg movement counts per ff-cycle and hh-cycle across the seven temperatures, quantified as in Figure 3A and B. (K) The rate of temperature-driven increase in frequency is shown by normalization as in Figure 3C.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Expression pattern of R74C07-GAL4 in central nervous system. Magenta: anti-Bruchpilot. Green: anti-GFP. Scale bars, 100 \u00b5m. (B\u2013E) Expression pattern of R74C07-GAL4 in eye bristles (B), leg bristles (C), wing bristles (D), and abdominal bristles (E). Magenta: cuticle autofluorescence. Green: innate GFP fluorescence. Scale bars, 50 \u00b5m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Autocorrelation function curves of behavior confidence sampled from 18\u00b0C flies, indicating strong periodicity of the signals (side peaks). The mean Periodicity Index (PI)=0.34 (s.d.=0.08). (B) Same as (A) but for high temperature (30\u00b0C). The mean PI=0.22 (s.d.=0.10).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Ethograms representing 32 flies stimulated with different light intensities (0.34, 0.68, 1.02, and 1.36 mW/cm2). The green bars represent the periods of light activation, lasting 2 min each, to optogenetically induce grooming. (B) Ethograms showing periodic f-h alternations (beige color), non-periodic f-h alternations (purple), and other (non-anterior grooming) behaviors (black). (C , D) Periodicity Indexes (PIs) for head sweeps and leg rubs, respectively, across the four light intensities. (E) Frequencies of leg rubs across the light intensity levels. (F) PIs for the long time scale. (G) Periodic to non-periodic behavior ratio (for the long time scale) across the four light intensities. (H) Similar as in (E) but for the long time scale.\n\nUniform sensory input still evokes rhythmic output at both short and long time scales (Figure 4\u2014figure supplement 2). For example, the PIs at 18\u00b0C for short and long time scales are 0.29 (s.d.=0.03) and 0.35 (s.d.=0.03), respectively (Figure 1\u2014figure supplement 3E), and the amount of periodic behavior, considering the long time scale alterations, is 62% (s.d.=10%) (Figure 1\u2014figure supplement 3H). This amount of periodic behavior is less than the 80% (s.d.=8%) in the dusted flies, and the long time scale rhythm also appears more ragged. We propose that sensory feedback may be needed to stabilize rhythms but not necessarily to generate them in the first place. The period of the optogenetically induced rhythms gets shorter with temperature (Figure 4C\u2013H). The frequencies are similar to dust-induced grooming, and the average number of leg movements per ff/hh-cycle is also preserved across the range of temperatures (Figure 4I\u2013J). As with dusted flies, the rate of contraction of the two time scales is correlated (Figure 4K), supporting the hypothesis that the short time scale leg movements and the long time scale bout alternations are both controlled by CPGs, and that these circuits are yoked together, even under constant sensory stimulation.\n\nOptogenetic activation of mechanosensory neurons does not precisely mimic the physical stimulus of dust itself, and the response of the optogenetically stimulated flies to temperature reflects this. Both short and long time scale behaviors occur with somewhat shorter periods at lower temperature than their dust-evoked counterparts, and they stop increasing beyond 26\u201328\u00b0C (compare Figures 2E, H ,, 4E and H). One possible explanation is that the optogenetic stimulation is \u2018maxing out\u2019 the sensory input: it may be driving the fastest leg movements biomechanically possible, or the upper bound of the CPGs\u2019 frequency range may be reached at a lower temperature. We investigated this possibility by activating the mechanosensory bristle neurons at a constant temperature but with a range of light intensities: the frequencies of movements induced remain constant (Figure 4\u2014figure supplement 3). Even starting from this higher frequency baseline, the two time scales still increase with temperature at similar rates (Figure 4K), indicating that optogenetic activation does not immediately induce maximum movement speeds.\n\n### Periodicity of both time scales is preserved under reduced sensory feedback\n\nOptogenetic activation may mask acute changes in sensory feedback as the legs contact the body or each other during grooming movements, but removing or silencing sensory neurons is a more direct test of this potential contribution to rhythmicity. To determine if leg rubs and head sweeps remain rhythmic when sensory feedback is reduced, we amputated one front leg between the femur and tibia, similar to Berendes et al., 2016. This eliminates distal proprioceptive feedback from the amputated leg, as well as the usual mechanosensation provided by contact between the legs or the leg and the head during rubs and sweeps. We then employed the DLC software to track the position of the stump and of the intact front leg (Figure 5\u2014figure supplement 1). We found that movements of both the intact leg and the stump remained periodic, with frequencies and PIs similar to those of intact legs in dusted flies. This result further supports that at least the short time scale leg movements are indeed controlled by CPGs.\n\nWe also attempted to reduce sensory feedback using genetic reagents. We blocked chemical synaptic transmission in leg mechanosensory neurons by expressing tetanus toxin as described in Mendes et al., 2013 observed grooming behavior in response to dust. Figure 5A shows ethograms of grooming behaviors for both the experimental (TNT) and control (GFP) groups; Figure 5B\u2013C shows the neurons that have been genetically inhibited. The frequency of rubs is lower in the TNT group than in the control (p< 0.001) (Figure 5D) while the frequency of sweeps is similar for both (Figure 5E). The long time scale oscillations are significantly slower in the TNT group (p<0.003) (Figure 5H, also ethograms in Figure 5A) and so are the numbers of leg movements per ff/hh-cycle (Figure 5F\u2013G). Both groups exhibited periodic behaviors on both the long and short time scales (Figure 5I and J). The sensory inhibited flies also performed less overall periodic behavior on the long time scale (Figure 5K). Taken together, these results suggest that grooming behaviors do not require sensory input for periodicity, but do utilize it for timing, modulation, and perhaps stabilization of the motor output, especially on the longer time scale.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig5-v1.jpg)\n\n**Figure 5.:** (A) Ethograms of grooming behavior flies with inhibited proprioception (TNT, red bar) versus the ethograms of the control group (GFP, green bar). (B) Expression pattern of the leg mechanosensory neurons driver line used in TNT inhibition experiments. Expression pattern of 540-GAL4, DacRE-flp > 10X-stop-mCD8-GFP in central nervous system. Magenta: anti-Bruchpilot. Green: anti-GFP. Scale bars, 100 \u03bcm. (C) Expression pattern of 540-GAL4, DacRE-flp > 10X-stop-mCD8-GFP in leg sensory neurons. Magenta: cuticle autofluorescence. Green: innate GFP fluorescence. Scale bars, 200 \u03bcm. (D , E) Box plots of leg-rub and head-cleaning frequencies, respectively. (F , G) Similar as in (D , E) but for the count of rubs and sweeps per ff-cycle. (H) Frequencies of the long time scale (computed from ff-cycles and hh-cycles as in Figure 2G and H) for both groups. (I) Box plots of Periodicity Indexes for the short time scale of the control (GFP) and the experimental (TNT) flies. (J) Similar as in (I) but for the long time scale. (K) Ratios of periodic versus non-periodic long time scale oscillations in control and experimental groups. See also Figure 5\u2014figure supplement 1 for removal of sensory cues by amputation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Top: positions of joints and the stump (orange) annotated by Deep Lab Cut (DLC). Bottom: positions of a joint on the intact front leg (blue) and stump (orange) as they change over time. (B) Spectra of position traces (over time) for the intact leg\u2019s joint (top) and the stump (bottom). Gold and purple spectra correspond to the presumptive front-leg rubbing and head cleaning behaviors, respectively. (C) Autocorrelation functions (ACFs) computed from the intact leg position traces (top) and from stump traces. (D) Cross-correlations between the intact leg and the stump (top), same ACFs as in (C) (middle) and the corresponding Periodicity Indexes (bottom) over 70 s.\n\n### Nested CPGs can be decoupled in spontaneously grooming flies\n\nFlies groom robustly in response to dust or optogenetically controlled mechanosensory stimulation, but they also groom spontaneously. The leg movements they perform are recognizable sweeps and rubs, and they occasionally produce alternating bouts of head cleaning and front leg rubbing as well (Figure 6A and B). These flies have no experimentally applied sensory stimuli\u2014only what they generate themselves by contact between their legs and bodies, and the associated proprioceptive feedback\u2014so these motor patterns are most likely to be generated by internal circuits. We analyzed the temperature response of both time scales of grooming movements in these spontaneously grooming flies.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig6-v1.jpg)\n\n**Figure 6.:** Spontaneous grooming was recorded in undusted flies at a range of temperatures between 18\u00b0C and 30 \u00b0C. Examples are shown in (A) and the whole data set of 80 flies recorded for 13 min is shown in (B). (C) Examples of spontaneous leg movement frequencies at 18\u00b0C (top) and 30\u00b0C (bottom), (D) histograms of mean frequencies at cool (blue) and warm (red) temperatures, and (E) box plots of the increase in leg movement frequency with temperature; plots and statistics as described in Figures 2, 3C and D, and (E); compare to short time scale effects where grooming is induced by dust. (F\u2013H) Long time scale (ff-cycle + hh-cycle) analysis comparable to Figure 2, Figure 3F, G, and H. (I) Histograms and box plots (J) of median movement counts per ff-cycle and hh-cycle across the seven temperatures, quantified as in Figure 3A and B. (K) The rate of temperature-driven increase in frequency is shown by normalization as in Figure 3C. See also Figure 6\u2014figure supplements 1 and 2, and 3 for evidence of periodicity and response to temperature.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Grooming and walking ethograms of unstimulated flies across the temperatures. (B) Ethograms showing periodic f-h alternations (beige color), non-periodic f-h alternations (purple), and other (non-anterior grooming) behaviors (black). (C) Box plots of long time scale frequencies (as in Figure 2E) selected for the periodic f-h alternations (p=0.11, R2=0.64). (D) Same as (C) but for non-periodic f-h alternations (p=0.09, R2=0.68). (E) Normalized frequencies of leg movements and ff-cycle freq (similar as in Figure 3C) sampled from periodic grooming motifs. (F) Same as (E) but sampled from non-periodic grooming motifs.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) An example of autocorrelation functions from a 13-min video of a dusted fly at 18\u00b0C. Ethograms placed underneath are showing periodic f-h alternations (Chardonnay color), non-periodic f-h alternations (Pinot Noir color), and other (non-anterior grooming) behaviors (black). (B\u2013D) Same as (A) but for a spontaneous grooming fly, a TNT-GFP control, and TNT experimental fly (see Figure 5). The (C , D) were recorded at 24\u00b0C.\n\nAlthough these flies groom less than dusted or optogenetically activated flies, they show characteristic sweep and rub frequencies that increase with temperature, albeit with higher variance, ranging from 5.85 Hz to 7.15 Hz. (Figure 6C\u2013E). The ff/hh-cycles are rarer, and when they occur, the temperature-dependent contraction of the long time scale is less pronounced than in the stimulated flies (R2=0.86; p=0.012) (Figure 6F\u2013H). Perhaps most strikingly, although the number of leg movements per ff/hh-cycle is similar to stimulated flies (~17; with higher variation across the temperature range, Figure 6I and J), the correlated temperature-dependent contraction of the short and long time scales observed in the dusted and optogenetically activated flies is not seen in the spontaneously grooming ones (R2=0.43; p=0.332) (compare Figure 6K to Figures 3K and 4K). The frequency of leg rubs and sweeps increases with temperature at a greater rate than the frequency of ff/hh-cycles (Figure 6K), suggesting that the pattern-generating circuits that control the two time scales of movements may be dissociated in spontaneous grooming.\n\nPerhaps, in spontaneously grooming flies, the two levels of nested CPG are linked only sporadically, when the flies engage in more periodic behaviors. To explore this possibility, we separated the periodic long time scale oscillations from the non-periodic ones using a threshold of ACF shoulder peak prominence (see Materials and methods and Figure 1\u2014figure supplement 2). We hypothesized that if the periodic behaviors are CPG-driven and the non-periodic behaviors are not, then the periodic behaviors should scale with temperature more strongly than non-periodic ones. However, we found that neither periodic nor non-periodic behaviors changed frequency with temperature (Figure 6\u2014figure supplement 1C and D) and there was no significant correlation between the two time scales (Figure 6\u2014figure supplement 1E and F), or between the two levels of the nested CPG, in spontaneously grooming flies.\n\n## Discussion\n\nTemperature manipulations have been instrumental in identifying behaviors controlled by CPGs and for locating where those circuits reside. Robust rhythms are retained across a range of temperatures in the crustacean stomatogastric ganglia, where the relative timing of events is preserved even as the sequence itself changes speeds (Alonso and Marder, 2020; Rinberg et al., 2013; Tang et al., 2012). Local cooling of the cat spinal cord demonstrated which segments contain locomotion control circuits (Deliagina et al., 1983), and local warming showed that cricket chirping is governed by thoracic rather than brain ganglia (Pires and Hoy, 1992a; Pires and Hoy, 1992b). The role of CPGs in bird song, and the importance of the HVC brain region for sequence timing, was shown because local cooling expands the entire song without changing the relative durations of the syllables and sub-syllabic components (Armstrong and Abarbanel, 2016; Long and Fee, 2008). In frogs (Xenopus laevis), both local cooling and ambient temperature affect the frequencies of vocalization patterns (Yamaguchi et al., 2008). Here, we follow this tradition to examine fly grooming behavior at different temperatures, demonstrating that both its short and long time scale components show evidence of CPG control. Although here we change the temperature of the whole fly, our study opens the way to use anatomical and genetic tools to map underlying neural circuits in future experiments.\n\nFly grooming is an innate motor sequence with both repetition and flexibility. Behavior analysis has shown organization over several time scales, from single stereotyped leg movements and alternations between bouts of repeated actions targeting specific body parts (Mueller et al., 2019), to a gradual and probabilistic progression from anterior toward posterior grooming (Seeds et al., 2014). Here, we investigate what aspects of fly grooming are periodic, demonstrating that the short time scale leg sweeps and rubs repeat at characteristic frequencies, in the absence of patterned sensory input, and in a temperature-dependent manner (Figure 2D\u2013E), consistent with control by CPGs. Since the neural circuits that constitute the CPGs controlling these periodic leg movements are likely to overlap with those proposed to coordinate walking (Bidaye et al., 2018), this was not unexpected.\n\nBut our more surprising discovery was that the alternation between bouts of head cleaning and front leg rubbing is also periodic (Figure 1\u2014figure supplement 4A). While this oscillation is more variable, it too, is independent of patterned sensory input, and increases in frequency with temperature (Figures 2G\u2013H\u20134G\u2013H)\u2014suggesting that there may be an additional CPG operating at this longer time scale. This high-level, overarching, CPG can control the alternations between leg rubs and sweeps that are themselves governed by faster, low-level CPGs. The idea that multiple CPGs coordinate movements is not new: CPGs may control each leg joint, regulating the interaction between flexor and extensor muscles, governing the way coxa-trochanter and femur-tibia joints are coordinated to produce forward or backward walking, or mediating interactions among limbs (Feng et al., 2020; Mantziaris et al., 2020). In the vertebrate spinal cord, inhibitory and excitatory commissural neurons can cause the CPGs controlling the legs to synchronize for a hopping gait or operate out-of-phase for walking (Kiehn, 2016). CPGs in frogs have been shown to act on different time scales (sequentially) to govern their vocal behaviors (Zornik et al., 2010), and leeches can alternate between different CPG-driven behaviors (Esch et al., 2002). The concept of nested CPGs has recently been extended to explain the flexible coordination of behaviors ranging from fish swimming to bird song (Berkowitz, 2019). We map fly grooming behavior into this nested CPG framework as shown in Figure 7.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig7-v1.jpg)\n\n**Figure 7.:** This diagram illustrates how the lower level CPG modes controlling individual leg rubbing (f) and head cleaning (h) oscillations (small orange and purple arrows) can be coordinated by an over-arching, high-level, CPG controlling the alternation between the front leg rubbing and head cleaning bouts (large blue arrows). The probability of f versus h is indicated by the thickness of their corresponding colors (orange vs. purple) at each angle of the circle. For example, at 5 o'clock the probability of f is higher than that of h and at 11 o'clock probability of h is higher than that of f, and so on. CPG, central pattern generator.\n\nIn a recent publication, nested CPGs similar to the one we are proposing here have been described in the crab stomatogastric ganglion, where fast pyloric and slow gastric mill rhythms are coupled and compensate for temperature changes (Powell et al., 2020). The combination of two rhythmic behaviors raises the possibility that the governing circuits interact, like meshed gears of different sizes, to simplify control of a repetitive behavior on multiple time scales. Just as the relative number of rotations between different gears is the same regardless of the absolute speed of the mechanism, so the phase of different components of CPGs is conserved across a range of temperatures (Harris-Warrick and Ramirez, 2017). In the case of fly grooming, this relationship between fast and slow components of the system may be reflected in the constant number of leg movements within each grooming bout across a range of temperatures (Figure 3). The fast and slow components of the nested CPG can be coupled (in stimulated flies) or decoupled (in spontaneously grooming flies). It is also possible that coupling can occur dynamically over the period of behavior execution, resulting in alternation between periodic and non-periodic behaviors on the long time scale (Figure 6\u2014figure supplement 2B). However, in spontaneously grooming flies, we saw no coupling between the two time scales in either periodic or non-periodic behavioral episodes (Figure 6\u2014figure supplement 1). The neural circuit implementation of nested CPGs, and the potential \u2018clutch\u2019 mechanisms that engage and disengage their connections, remain to be determined.\n\nDust-induced grooming can be routine, rhythmic, repetitive, and governed by CPGs, but spontaneous grooming may have more varied control architecture. Fast walking insects may be more likely to engage CPGs, while slower ones may rely more on sensory feedback and reflex chains (Mantziaris et al., 2020). Just as you can walk a straight path without thinking about it or you can carefully place each foot on icy terrain, flies may have alternative ways to produce movement sequences. Disturbing a single bristle elicits a single directed leg sweep (Kays et al., 2014; Vandervorst and Ghysen, 1980), while covering the fly in dust evokes an entire grooming program with bouts of several leg sweeps and rubs, alternation between the bouts, and slow gradual anterior-to-posterior progression (Phillis et al., 1993; Seeds et al., 2014). Our observation that spontaneous grooming shows less periodicity at the long time scale (Figure 6\u2014figure supplement 2B) can be interpreted as effective decoupling of the two levels of the nested CPG in those flies when they engage in more sporadic and shorter episodes of grooming.\n\nIn both optogenetically stimulated flies and in flies where sensory feedback was inhibited, we observe less periodicity of the long time scale than in the dust-stimulated flies (Figure 1\u2014figure supplement 2H and Figure 5K). We speculate that sensory feedback is needed to stabilize and modulate the rhythmic behavior, even though it is not necessary to produce it. For example, a fly could produce in-phase rhythms to provide the general control of head-cleaning movements but the sensory feedback from various parts of the head could adjust these movements to optimize the efficiency of cleaning of those parts. The concept of sensory feedback playing a role in stabilizing and adjusting rhythmic behaviors has been explored in walking mice (Mayer and Akay, 2018, Santuz et al., 2019) and flies (Mendes et al., 2013), as well as in robotics (Wang et al., 2014, Sartoretti et al., 2018) and computational modeling of CPGs (Yu and Thomas, 2021).\n\nNested CPGs can be implemented to generate arbitrarily complex behaviors that are also periodic and well-coordinated. Many different time scales of simple periodic movements can be combined into a more complex periodic behaviors the way different frequencies of sine waves can be combined to create arbitrarily complex shapes in Inverse Fourier Transformation. If CPGs can operate across various time scales in this fashion, then all that is needed to create arbitrarily complex yet highly reproducible behavior is to adjust the weight of each contributor to a multi-level nested CPG.\n\nThe specific neural circuits that constitute CPGs have been challenging to identify in most preparations and even the best characterized would benefit from more comparators. The electrophysiological recordings that have been so critical in CPG analysis in other preparations are possible but challenging in Drosophila, but the real strength of the system is the ability to demonstrate that specific neurons have a causal connection to rhythm generation. New anatomical resources to map neural circuits, especially the complete electron microscopy data set covering the ventral nerve cord (Phelps et al., 2021), will enable the identification of the pre-motor neurons most likely to participate in CPGs and the commissural connections that may mediate among them. Functional imaging of neural activity in dissected, fictive preparations (Pulver et al., 2015) and even in behaving flies (Chen et al., 2018) is another promising approach to identify neurons with rhythmic activity that may constitute parts of the CPGs. The genetically encoded calcium indicators and new voltage sensors have fast enough onset and offset kinetics to capture rhythmicity on the expected time scales (Simpson and Looger, 2018). For example, whole nervous system monitoring of neural activity was recently described in C. elegans to identify hierarchical and dynamic control of nested locomotion patterns (Kaplan et al., 2020).\n\nRhythmic activity and circuit connectivity may suggest candidate neurons, while genetic tools to target specific neurons (Jenett et al., 2012) and optogenetic methods to impose altered activity patterns (Klapoetke et al., 2014) present a way to causally connect them to control of rhythmic behaviors. The behavioral evidence presented here suggests that a two-level nested CPG can control aspects of fly grooming over at least two time scales. Identifying what circuits constitute these CPGs and mapping the neurons that coordinate their interactions is feasible, now that we know we ought to be looking for them.\n\n## Materials and methods\n\n### Fly stocks and husbandry\n\nDrosophila melanogaster was reared on common cornmeal food in a 25\u00b0C incubator on a 12-hr light/dark cycle. Three to five days, CantonS males were used for dusting and spontaneous grooming experiments. For optogenetic experiments, larvae were raised on normal food. After eclosion, 1-day-old adults were transferred into food containing 0.4 mM all-trans-retinal and reared in the dark for another 2 days.\n\nR74C07-GAL4 (Bloomington Stock Center 39847), 20XUAS-IVS-CsChrimson.mVenus (Bloomington Stock Center 55134), 5\u201340 GAL4 (Hughes and Thomas, 2007), DacRE-FLP (Mendes et al., 2013), UAS>stop>TNT (Stockinger et al., 2005), and 10XUAS>stop>myr-GFP (Bloomington Stock Center 55811) were used in the paper. Ten-day-old males were used in TNT inhibition experiments. Three- to five-day-old males were used in other experiments.\n\n### Behavior experiments with temperature control\n\nBehavior videos were recorded inside New Brunswick I2400 incubator shaker or DigiTherm DT2-MP-47L heating/cooling incubator. Experiments were performed every 2\u00b0C between 18\u00b0C and 30\u00b0C. Temperature was monitored by a Govee H5072 Bluetooth thermometer. For dusting experiments, the room temperature was also adjusted to the target temperature to make sure flies stay at the same temperature during fly dusting. Each fly was tested once in one condition. Three types of chambers were used in fly dusting assay: dusting chamber (24-well corning tissue culture plate #3524), transfer chamber, and recording chamber. Flies were anesthetized on ice and transferred to the middle four wells of the transfer chamber. Transfer chamber with flies was then kept in the incubator set to the target temperature for 15 min. For fly dusting, around 5 mg Reactive Yellow 86 dust was added into each of the four middle wells of the dusting chamber. Transfer chamber was aligned with the dusting chamber. Flies were tapped into the dusting chamber and shaken 10 times. After dusting, flies and dust were transferred back into the transfer chamber. Transfer chamber was banged against an empty pipette tip box to remove extra dust. Dusted flies were then immediately tapped into the recording chamber for video recording. The whole dusting process was performed in a Misonix WS-6 downflow hood.\n\nFor optogenetics and spontaneous grooming experiments, ice-anesthetized flies were put into the recording chamber directly. Recording chamber with flies was then kept in the incubator set to the target temperature for 15 min before the experiment. In spontaneous grooming experiments, flies were shaken five times after the 15 min incubation. They were then rested in the incubator for another 3 min before recording.\n\n60 Hz videos were recorded for 9 min in optogenetics experiments, 13 min in dusting, and spontaneous grooming experiments with a FLIR Blackfly S USB3 camera. Each video is recorded from the top and it captures flies in four chambers. Infrared backlight was used for all experiments. Custom-made LED panels (LXM2-PD01-0050, 625 nm) were used for optogenetic activation from below. 20 Hz 20% light duty cycle was used in optogenetics experiments. Red light intensity was adjusted to 0.85 mW/cm2. Before the video analysis, the frames were split into four quadrants corresponding to the four chambers.\n\nFor all experiments described above, 8\u201312 flies were used per temperature or per experimental group (for the TNT inhibition experiment). Occasionally a recording chamber was empty or the fly was visibly damaged or dead. Those chambers were excluded from further analysis. These numbers were sufficient to extract the quantities we use in this work such as ff/hh-cycle periods.\n\n### High-resolution videos recording\n\nFor high-resolution videos used for leg tracking, flies were put in a 10-mm diameter quartz chamber, and 100 Hz videos were recorded from below. An FLDR-i132LA3 red ring light (626 nm) was used for optogenetics activation. For leg amputation experiments, one front leg was amputated at the middle of the femur. Flies were recovered for 3 days before the experiments. The dusting procedure is the same as what is described above.\n\n### Leg movements counting from video\n\nWe did not track individual legs or joints so the frequencies of leg movements during grooming were estimated from frame-to-frame changes in pixel values. When flies are walking or engaged in other non-grooming behaviors, such measurements would not be very useful. However, during grooming, flies are standing in one place and the most intense pixel value differences roughly correspond to those created by leg movements (rather than whole body translations).\n\nRegions of interest were cropped around the animals to produce 80\u00d780 arrays of pixels (F). The F arrays were reshaped into 1600 columns and 32 rows, corresponding to 32 consecutive frames (~0.5 s window at 60 Hz), and were stacked together to obtain 32\u00d71600 array of pixel values (W).\n\nThe derivatives of W across time were computed using Numpy.gradient() function to obtain matrix of frame-to-frame differences D. The matrix D was smoothed using Gaussian filter (scipy.ndimage.filters.gaussian_filter). Sigma=[2, 5]. This was done to denoise the signal\u2014to remove non-biological high-frequency changes (temporal smoothing) and to reduce spatial resolution (so that more neighboring pixels capture the same signal). All the values of D where cumulative change of pixel values was less than threshold (\u03b8=5.0) were converted to zeros to retain only those pixels where significant movement occurred. An example of D matrix is shown in Figure 1\u2014figure supplement 1.\n\nNotice in the figure the several non-zero columns (corresponding to pixels) that appear sinusoidal. These columns contain the signals that have been smoothed to remove the high-frequency noise and are prominent enough to \u2018survive\u2019 the thresholding. Therefore, we assume that the movements represented in these columns correspond to relatively large, periodic actions that occur while the animal is standing (otherwise the sinusoidal signals would not stay in one column over the time window). Also, only the frames where grooming behavior was detected by the ABRS were considered for leg movement counting. This assumption leads us to conclude that the periodic signals are caused by periodic leg movements during grooming. So the counting the peaks across the columns of matrix D would then result in the number of times a leg crossed a particular pixel. The peaks were found applying the scipy.signal.find_peaks() function across the rows on the matrix D. The peaks were then counted for each column in D and the median of all the counts was finally taken to be the number of leg sweeps or rubs that occurred in that time window (0.5 s). Note that at the frame rate of 60 Hz, we should be able to detect frequencies of periodic signals below 30 Hz and the highest frequency of leg movements we observed was below 7 Hz.\n\nThe number of leg movements per second was used as the leg movement frequency.\n\n### Automatic behavior recognition from videos\n\nProbabilities and ethograms of grooming behaviors were extracted from raw videos using ABRS. For detailed description see Ravbar et al., 2019 and for the most updated version see ABRS (https://github.com/AutomaticBehaviorRecognitionSystem/ABRS; Ravbar, 2021; copy archived at swh:1:rev:7c558561ae82b62bfcc5337a334b07efcbb18da2).\n\nBriefly, ABRS pre-processes video data by compressing it into spatio-temporal features in the form of three-channel space-time images (3CST images, shape=80\u00d780\u00d73) where the first channel [0] contains raw video frame pixel values [80\u00d780], the second channel [1] contains spectral features of pixel value dynamics over a time window of 16 frames, and the third channel [2] contains frame-to-frame difference (frame subtraction). The 3CST images are classified into seven behavioral categories (front leg rubbing, head cleaning, back leg rubbing, abdominal cleaning, wing cleaning, and whole-body movements [walking]) by ConvNet (Covolutional Neural Network \u2013 CNN) implemented in Tensor Flow (in Python) (https://www.tensorflow.org), using a model trained with diverse set of videos of fly grooming behaviors. In the final output layer of the CNN are the probabilities of the grooming behaviors. In this work, we focus entirely on the probabilities of front leg rubbing and head cleaning behaviors: P(f) and P(h).\n\n### Behavioral confidence\n\nThe long time scale oscillations are quantified as probabilities of behaviors obtained from the ABRS CNN described above. Behavioral confidence (BC) is computed as:\n\n$$\nBC=P(f)\u2212P(h)\n$$\n\nThe BC signal is smoothed two consecutive times with time window of 31 frames (0.5 s) using the scipy.signal.savgol_filter function to remove high-frequency noise.\n\n### Autocorrelation and periodicity analysis\n\nACFs were computed from a 0.5-s time window for individual leg movements (leg rubs and sweeps). The signal for autocorrelation was extracted from raw movies as follows: (1) Matrix D was obtained as described above (Leg movements counting from video); (2) ACFs were computed for every column of D (an example of the ACFs and the matrix D are shown in Figure 1\u2014figure supplement 1); and (3) All the ACFs were averaged to obtain the mean ACF for that time window. The mean ACFs were stacked to obtain the ACF array with dimensions 60\u00d7F, where F is the number of frames in the movie. The AFCs were computed using scipy.signal.correlate function from SciPy library.\n\nACFs for the long time scale (the oscillations between bouts of leg rubbing and head cleaning) were computed from the BC time-traces described in Equation 1, in the time window of 999 frames (16.6 s), also using the scipy.signal.correlate function.\n\nTo quantify the periodicity of each time scale, we computed the PI from the ACFs, defined as the ratio between the height of the prominent peak nearest to zero lags and the height of the central peak (at zero lags) of an ACF (Figure 1\u2014figure supplement 2). The peaks were detected by scipy.signal.find_peaks function. The threshold for \u2018prominence\u2019 was set at 0.2. The threshold for height was set to 0.2. We used the same method and parameter settings for both time scales to compute the PI.\n\nWe managed to separate periodic behaviors from the non-periodic by using the scipy.signal.find_peaks function. If the first neighbor of the central peak of the ACF fell below the 0.2 \u2018prominence\u2019 threshold we classified the pertaining behavior as non-periodic and as periodic otherwise. This is shown in Figure 1\u2014figure supplement 2B.\n\n### Frequency computations for the long time scales\n\nBC traces were used to compute the frequencies of the long time scale.\n\nIn Eq. 2, the L is a vector containing the lengths of periods measured from the BC traces. The peaks and valleys were detected by scipy.signal.find_peaks function, where the \u2018prominence\u2019 was set at 0.1 and the minimum height was set at 0.05 (valleys were found from the same signal as the peaks but multiplied by [\u20131] to invert it). The periods were measured either between two peaks of the BC traces (ff-cycles) or between two valleys (hh-cycles), or we combined the periods from both, the ff-cycle and hh-cycle (also see Figure 1E for illustration). To avoid capturing very long transitions between the peaks/valleys (which occur between episodes of grooming behavior and walking or standing), we set the maximum duration of ff/hh-cycles to be 280 frames (~4.7 s). In the sensory inhibition experiment where we compare the TNT mutants to the control we increased the duration threshold to 380 frames (~6.3 s) because the ff/hh-cycles are extraordinarily long (see Figure 5A).\n\nThis produced a vector of frequencies of dimensions 1\u00d7F, where F is the number of frames in a movie, corresponding to one fly. The mean and median frequencies for each fly were computed as means/medians of vector f.\n\n### High-resolution behavior analysis\n\nTo confirm our observations of grooming behavior, its periodicity and the effect of temperature, we used an independent method for limb tracking, the DLC (Mathis et al., 2018) on a small sample of high-resolution videos described in the previous section. The DLC allowed us to label (virtually) three body parts on each front leg and a reference point (see Figure 5\u2014figure supplement 1 A showing the labels on the intact front leg). We could then track these labels across time. For each leg, we computed the angle between Tibia and Femur and tracked the derivatives of these angles across time\u2014examples are shown in Figure 1\u2014figure supplement 4A. On these time-traces, we applied the autocorrelation analysis and FFT to compute ACFs and their spectra. (For the amputated fly, we used the relative positions of the joints and the stump instead of the angles.) We computed the PI from the ACFs.\n\nIn these analyses, we did not have access to the BC (see the section above) so, in order to examine the periodicity and frequencies of the long time scale, we computed the equivalent to BC as follows: the distance between tarsal segments was used as the \u2018confidence of head cleaning\u2019 and the angle between Tibia and Femur was used as the \u2018confidence of front leg rubbing.\u2019 We obtained the behavior confidence signal by subtracting the latter from the former. We applied autocorrelation and FFT analysis this \u2018behavior confidence\u2019 to estimate the PI and the frequency of the long time scale. Due to cumbersome nature of these analysis and the lack of behavioral recognition, we performed them only on three different movies from the dust-stimulated flies (Figure 1\u2014figure supplement 4D-F).\n\n### Handling of outliers and missing data points\n\nWe found and did not eliminate an outlier in optogenetically stimulated flies (leg movement frequencies at 20\u00b0C). In cases where there were missing data points (no fly was in the recording chamber), those were not counted in the statistics.\n",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "3bc90da6-ec48-4853-84e4-7593e259e501",
+      "submission_id": "6c24632c-7500-44b5-a0a7-ff1acda6e81f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71508.sa0](https://doi.org/10.7554/eLife.71508.sa0)\n\nThis study presents an intriguing example of natural rhythmic leg movement oscillations at a fast time scale embedded within a slower rhythmic behavioral oscillation and the similar effects of temperature on the rates of the two rhythms. The data and the writing are both exceptionally clear and advance our understanding,\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71508.sa1](https://doi.org/10.7554/eLife.71508.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Behavioral evidence for nested central pattern generator control of Drosophila grooming\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, the consensus view is that additional experiments would be required to address major concerns. As these experiments would likely require more than a two month timeframe, we are turning the submission dowm in its current form. If it is possible to address the major concerns outlined below, we would consider a fresh submission, if you would like to consider eLife.\n\nThe reviewers agreed that the notion of nested CPGs for coordination of grooming is important but that stronger demonstration is required that the rhythms are indeed generated by a CPG in the absence of sensory feedback. In addition, better evidence that the two rhythms are coupled would significantly strengthen the study. Key experimental suggestions are below. Full comments of the reviewers are attached to provide further guidance.\n\n1) Better quantification of rhythms:\n\na) High res leg tracking will help quantify both rhythms with more accuracy. It could also be used to better describe the coupling between the two rhythms (Figure 3 and 4, what are the \"leg movements\" that are invariant across temp).\n\nb) Poor confidence levels of the slow rhythm in Figure 4 and 5 need to be addressed with supporting videos, complementary analysis or new data from high res tracking.\n\n2) Role of proprioceptive feedback in rhythm generation:\n\nProprioceptive feedback from the legs could be the major rhythmic input that drives both rhythms and its role should be explored by neuronal silencing (e.g. Mendes et al., 2013 eLife).\n\nReviewer #1:\n\nRavbar et al. have carried out behavioral analysis of Drosophila grooming behavior and have proposed that nested CPG modules are involved in generating the sub-routines during anterior grooming. It is a conceptually exciting hypothesis and is supported by authors' observation of two nested behavioral rhythms, a fast leg movement rhythm (5-7Hz) and a slower behavioral state switch rhythm (0.3-0.6Hz). The authors then use temperature change as a tool to prove existence and coupling of the underlying nested CPG modules that govern these rhythms.\n\nThis work is conceptually interesting with a potential for broad interest, and I'm in favor of its publication provided the authors address the major points.\n\n1) The authors use temperature change as a tool to prove the existence and coupling of nested CPGs. Although there is a certain simplicity and elegance in this approach, it needs some more justification. Temperature directly influences neural activity (not restricted to CPGs). The authors cite important studies where temperature was used to pinpoint CPGs, but in these studies local heating/cooling of specific parts of the nervous system was used as a tool to increase/decrease neural activity in those areas and thereby locate the position of CPGs (e.g. Long and Fee 2008)). Global heating/cooling (as conducted in the current study) was only used in StG papers (Marder lab) to characterize the effect of temperature on previously well-described CPG networks. Given the pivotal role of these temperature change experiments in supporting central results of this paper, it needs more justification, both at a descriptive level as well as more characterization. E.g. it would be interesting to see how other attributes already tracked in these experiments (walking, hind grooming etc) are affected by temperature. Is there any behavior that is not proportionally affected by temperature and what does it tell us that is special about the anterior grooming rhythms? Also, given global heating will affect all neurons similarly, proportional changes in the two rhythms need not indicate \"coupled\" rhythms. This caveat should be discussed while discussing results from Figure 3.\n\n2) A more direct evidence for CPGs would be to show that rhythmic motor output could be achieved without rhythmic sensory input and the authors also claim to have addressed this using optogenetics (Figure 4). The authors suggest that the changing quantity of dust on the fly's body as it grooms, could be a rhythmic input. This could be better explained. I'm guessing what matters is the difference in sensory input coming from head (H) versus front legs (F). If H>F then the fly does behavior \"h\", else it does \"f\". Doing behavior \"h\" reduces sensory input \"H\". With this assumption, the H-F input could indeed be rhythmic, and then the opto experiment rationale seems justified. However, for the fast rhythm (leg sweeps), the major rhythmic input is likely the proprioceptive input from the moving legs and not the continuously decreasing quantity of dust on the fly's body and hence this rhythm is not really addressed by the opto experiment. In fact the proprioceptive input from the legs could also be the defining input for the slower rhythm given that \"number of leg movements\" remain constant across temperatures (Figure 3 and 4K). One way to investigate pure centrally driven rhythms could be to eliminate rhythmic sensory feedback by leg amputation (e,g Berendes et al., J.Exp.Biol, 2016) or neuronal silencing (Mendes et al., eLife, 2013) and then apply dust/opto-stim and see if both fast and slow rhythms still persist.\n\n3) Finally, the authors describe an interesting \"decoupling\" of the two rhythms during spontaneous grooming. The authors observe similar leg movement frequencies, however the longer f-f and h-h rhythms seem very rare and variable. So the \"decoupling\" between the two rhythms is in fact driven by \"absence\" of the slower rhythm in the experimental conditions. This is also interesting but should be discussed appropriately. Looking at the full ethogram in Figure 5B, it is apparent that as temperature increases, flies spend more time walking versus grooming and so the grooming bouts are likely too short to show any slow rhythms. So in theory, the rhythms could be still coupled, just now more disrupted because of a competing \"walking\" state.\n\n4) The leg movement analysis needs to be justified more than what it is in the Methods section. The authors acquire videos of grooming flies at 60 Hz, then select frames containing anterior grooming bouts and in these selected frames, they then use pixel difference in consecutive frames and use the frames depicting the largest movement for quantifying frequency. It is unclear what aspect of leg movement the authors are quantifying in this analysis and whether it is affected by video frame-rate or camera angle. What motor action is represented by the \"leg movement\" frequency? Why is this frequency value higher for \"f\" bouts versus \"h\" bouts? Would the authors get the same results if videos were captured at a higher frame rate? It is important to disambiguate this, because the authors use \"number of leg movements\" as an attribute in Figure 3 to prove coupling between the CPGs. The authors could acquire some additional videos, preferably at a high frame rate, and use one of the recent tools (Pereira et al., 2019, Mathis et al., 2018) to track the legs during anterior grooming, as has been done for leg movement rhythm quantification during walking. If this type of high resolution analysis also suggests a similar leg sweep frequency, the current analysis framework of the authors will be justified. Moreover, it could provide a better understanding of results in Figure 3 and 4K.\n\n5) For the slow f-f and h-h rhythm quantification the authors use an interesting approach (P(f)-P(h)). Although this looks promising in Figures 1D, 2F and supp Figure 2, many of the peak/trough values tend to be very close to zero in Figures 4F, 5F making it unclear what rhythms does this really represent in terms of actual behavior. Are we still talking about clear rhythms between 2 states as depicted in Figure 1A? Performing oscillation analysis using confidence values between artificially defined binary states can enforce the output to look like an oscillation and hence it is important to explicitly discuss this.\n\nReviewer #2:\n\nThis manuscript uses temperature and optogenetic manipulations to alter the speed of grooming behaviors and examines the resulting changes in fast- and slow-time scale behavioral structure. The authors find that temperature increases the frequency both of individual leg movements, and the alteration between bouts leg rubbing and head grooming, such that the number of leg cycles per bout is approximately the same across a range of temperatures. A similar results is found when grooming is elicited by optogenetic stimulation of mechanosensory bristles, rather than by dust. Finally, the authors show that coordination between these two levels of behavioral organization breaks down during spontaneous grooming. The authors draw conclusions about the control of these behaviors by nested central patterns generators. The behavioral observations presented here are interesting but I felt that more analysis of genetic or circuit manipulations would be required to firmly draw the conclusions the authors would like to about the neural control of these behaviors.\n\nA central claim of the manuscript is that Drosophila grooming may be controlled by nested CPGs. As currently presented the evidence is not especially strong, as it is not clear what the alternative to central pattern generator control of these behaviors would be. The manuscript would be stronger if the authors identified neurons whose activation or inactivation altered behavioral rhythms or the coupling between fast and slow-time scale structure in the behavior.\n\nIn the case of high temperature + constant sensory stimulation the behaviors seem much more variable and irregular but this is not noted or discussed.\n\nLine 35-36: \"Automating the sequence by calling it actions in series produces reliable control\" This seems like a bit of straw man. Most rhythmic behaviors such as walking, breathing, etc, are assumed or known to arise from central pattern generators, and not from individual cycle-by-cycle decision, although of course each behavior can be modulated on a cycle-by-cycle basis.\n\nLine 73: \"characteristic frequency of 6Hz.\" It seems in 1C that the characteristic frequency of head grooming and leg rubbing are slightly different. Can those averages be shown or given here and are they significantly different?\n\nLine 125 + figure 2C/4C. The authors note that the behavior becomes more ragged at high temperatures and stronger deviations from the characteristic frequency are seen at 30{degree sign}, especially in figure 4C. The authors should discuss how these deviations impact their analysis of characteristic frequency.\n\nLine 124 and 132: \"suggests that CPGs may be involved\u2026both time-scales are controlled by two nested levels of CPGs\" these both seem like interpretations of the data and not things that are directly demonstrated by the data shown.\n\nFigure 4A: It seems in this example that the relative durations of head grooming and leg rubbing, as well as the regularity of the behavior are altered at 30{degree sign}. The authors should address this. Behavioral confidence is also much lower under these conditions- is this an issue?\n\nLine 248: \"Our more surprising discovery was that the alternation between bouts of head cleaning and front leg rubbing is also periodic.\" I am not sure quite how surprising this is. I think it would equally surprising if there were no correlations in these measurements. I think it would help to have some measure of regularity/irregularity in these alterations.\n\nReviewer #3:\n\nThis study presents an intriguing example of rhythmic behavioral oscillations at a fast time scale embedded within a slower rhythmic behavioral oscillation and the similar effects of temperature on the rates of the two rhythms. The data and the writing are both exceptionally clear.\n\n1) It is not clear why the authors use an unpublished example of different rates of oscillation in the first paragraph of the Introduction instead of using a published example, of which there are probably many to choose from.\n\n2) At first, I was somewhat concerned that the temperature manipulation could not be used to assess the contribution of CPGs to the behaviors because temperature changes in these experiments affect both the CNS and the legs, the latter of which contain sensory neurons activated by leg movements. But then I realized that the \"movement-related sensory feedback\" for the slow rhythm would not be leg sensory feedback, but instead (possibly) the amount of dust on the head. I now think that generating constant bristle stimulation optogenetically indeed should make the likely sensory feedback for the slow rhythm constant, so the effect of temperature on the slow rhythm in this experiment does suggest a CPG for the slow rhythm.\n\n3) Nonetheless, I think the first paragraph of the Discussion obscures rather than clarifies distinctions between effects on the CNS and PNS. It cites a series of studies that used localized cooling to implicate a CPG within a particular part of the CNS, as if the current experimental design is comparable to this, though in the current experiments the entire animal was warmed or cooled. It might be helpful to explicitly acknowledge that in the current study temperature was simultaneously manipulated in both the central and the peripheral nervous system, so the change in rhythm rate does not in itself eliminate the possibility that movement-related sensory feedback contributes to the rate, at least for the fast rhythm.\n\n4) The sentence (lines 202-203), \"These flies have no sensory stimuli except what they generate themselves by contact between their legs and bodies\u2026\" also seems misleading because it leaves out 1) any dust, etc. that happens to collect on their heads that was not put there by the experimenters and 2) leg proprioceptive input (i.e., not from contact).\n\n5) Also, on line 241, the authors assert that the fast rhythm occurs \"in the absence of patterned sensory input.\" This is misleading, because leg proprioceptors presumably provide patterned sensory feedback that could be used on this time scale. These statements should probably be revised to clarify.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Behavioral evidence for nested central pattern generator control of Drosophila grooming\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. This is a strong paper now and the revisions are for enhancing clarity and presentation.\n\nEssential revisions:\n\n1) The apparent finding that the leg mechanosensory genetic ablation slows the slow rhythm, but not the fast rhythms, is intriguing, if true because it would indicate that the two rhythms can be independently modulated, which would suggest that they are independent CPGs, even though the slow one may trigger the fast one. (The differential effects of temperature on aspects of spontaneous grooming also suggest this.) But this conclusion rests on Figure 5D-E and H. Figure 5E shows what looks like no change in sweep frequency, but 5D shows what looks like a slowing of rub frequency; whether this apparent slowing is statistically significant or not is unclear. Figure 5H, for the slow rhythm, is a different kind of plot, so we have an \"apples-to-oranges\" comparison-there is no frequency power spectrum plot for the slow rhythm and no box plot of frequency for rubbing. So we are not certain that the slow rhythm slowed without the rub frequency also slowing. It would help to add the missing plots, allowing \"apples-to-apples\" comparisons, as well as statistical comparisons between control and tetanus toxin for each measure. This would be important for readers to be persuaded that the slow and fast rhythms can be independently modulated.\n\n2) In this revised submission the authors introduce a new metric, Periodicity Index (PI) to quantify the periodicity of a time series (ratio of highest peak and most prominent shoulder). Although this seems intuitively logical it would help if there was a reference or (mathematical) justification for its use as a measure of periodicity.\n\n3) Authors define a threshold (most prominent shoulder peak in ACF >0.2) for calling a behavior as periodic. This seems reasonable. But looking at the selected ACF samples for fast rhythms in Figure 1F and G, it seems like most of the prominent shoulder peaks fall below the 0.2 threshold. Unless we are mistaken, the authors seem to have chosen a particularly bad example to depict fast rhythms in Figure 1 of the paper.\n\n4) The usage of P(f)-P(h) as explained by the authors in the rebuttal is understood; but not what the fly would be actually doing when this value approaches 0 (as happens a lot in Figures 4F and 6F). It would really help if the authors included sample videos corresponding to Figures 1D, 4F, and 6F.\n\nReviewer #1:\n\nThis study demonstrates that fruit flies have regular rhythms of head and leg grooming movements when dust is applied to the head and that they also alternate head and leg grooming with a regular, slower rhythm. These rhythms all increase with temperature and continue when head bristle stimulation is constant and when sensory feedback from the moving legs is reduced or eliminated. All of this suggests that the fly's central nervous system contains circuits-central pattern generators-for both the fast leg movements during grooming of either the head or the other leg and for the slow alternation between these two kinds of grooming. This suggests that central pattern generators can be nested within another central pattern generator at a higher hierarchical level, which is important for understanding how central nervous systems control movements generally.\n\nfrom 2020: It is not clear why the authors use an unpublished example of different rates of oscillation in the first paragraph of the Introduction instead of using a published example, of which there are probably many to choose from.\n\nAuthors' response: We looked for an appropriate published example but came up blank. Crustacean antenna have historical contributions to ethology including grooming behavior, e.g.Vedel, J. P., 1982 and Barbato, J. C, 1997, and seemed an aesthetic example to illustrate how simple oscillators with different frequencies (and amplitudes) can create beautiful complex behaviors. This is anecdotal but reflects one author's fieldwork living next to the ocean. We can delete this example or exchange for a substitute if an alternative is proposed. Barbato, J. C., and Daniel, P. C. (1997). Chemosensory activation of an antennular grooming behavior in the spiny lobster, Panulirus argus, is tuned narrowly to L-glutamate. The Biological Bulletin, 193(2), 107-115. VEDEL, J. P. (1982). Reflex reversal resulting from active movements in the antenna of the rock lobster. Journal of Experimental Biology, 101(1), 121- 133.\n\nMy response to the authors' response:\n\nFYI, some other examples of pairs of slow and fast CPG-driven (or apparently CPG-driven) rhythms that are coordinated across time scales (though this does not mean that one CPG triggers the other) are in:\n\nBrown (1911) Quart J Exp Physiol 4:151-182 (rabbit hopping and scratching)\n\nCarter and Smith (1986) J Neurophysiol 56:171-183 and 56:184-195 (cat walking and paw-shaking)\n\nWeimann et al. (1991) J Neurophysiol 65:111-122 (crab gastric mill and pyloric rhythms)\n\nBartos et al. (1999) J Neurosci 19:6650-6660 (crab gastric mill and pyloric rhythms)\n\nEsch et al. (2002) J Neurosci 22:11045-54 (leech crawling and swimming)\n\nZornik et al. (2010) J Neurophysiol 103: 3501-3515 (frog advertisement call sequence of fast and slow trills)\n",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "df220195-0266-49b2-8b9a-147e3503c32f",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C1",
+      "claim": "Central pattern generators (CPGs) are neurons or neural circuits that produce periodic output without requiring patterned input.",
+      "claim_type": "EXPLICIT",
+      "source": "Central pattern generators (CPGs) are neurons or neural circuits that produce periodic output without requiring patterned input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement provided in the abstract that establishes what CPGs are.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "7fd264b9-a6f6-4267-84d8-bc333096fb4f",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C2",
+      "claim": "Nested CPGs have been proposed to coordinate repetitive elements of complex behaviors, organizing control over different time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "More complex behaviors can be assembled from simpler subroutines, and nested CPGs have been proposed to coordinate their repetitive elements, organizing control over different time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references the concept of nested CPGs as a proposed framework in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "135e7aec-9041-440a-81fd-e1a0490722da",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C3",
+      "claim": "Drosophila grooming involves periodic leg sweeps and rubs on a short time scale of 5\u20137 Hz (~200 ms/movement).",
+      "claim_type": "EXPLICIT",
+      "source": "On a short time scale (5\u20137 Hz, ~ 200 ms/movement), flies clean with periodic leg sweeps and rubs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the frequency and period of short time scale movements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "e5642ecf-7f96-4932-a3e2-176752e46b55",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C4",
+      "claim": "Transitions between bouts of head sweeping and leg rubbing in Drosophila grooming are periodic on a longer time scale of 0.3\u20130.6 Hz (~2 s/bout).",
+      "claim_type": "EXPLICIT",
+      "source": "More surprisingly, transitions between bouts of head sweeping and leg rubbing are also periodic on a longer time scale (0.3\u20130.6 Hz, ~2 s/bout).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the frequency and period of long time scale oscillations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "4f9ece17-9cc9-40a9-86d6-59e759dc727a",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C5",
+      "claim": "The frequencies of both short and long time scale oscillations in Drosophila grooming increase with temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We examine grooming at a range of temperatures to show that the frequencies of both oscillations increase\u2014a hallmark of CPG control",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that both oscillation frequencies increase with temperature, which is demonstrated in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "ab514290-bad8-49d3-9311-9a3ea1437e15",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C6",
+      "claim": "Temperature-dependent frequency increase is a hallmark of CPG control.",
+      "claim_type": "EXPLICIT",
+      "source": "We examine grooming at a range of temperatures to show that the frequencies of both oscillations increase\u2014a hallmark of CPG control",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about CPG characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "2b7c27e0-fe78-4146-ba8e-000bb978b65c",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C7",
+      "claim": "The rhythms at the two time scales increase at the same rate, indicating that the nested CPGs may be linked.",
+      "claim_type": "EXPLICIT",
+      "source": "rhythms at the two time scales increase at the same rate, indicating that the nested CPGs may be linked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this relationship and provides it as evidence for linkage between CPGs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "d00551b7-5827-4ab9-8cd8-32184e3a2eaa",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C8",
+      "claim": "The relationship between the two time scales holds when sensory drive is held constant using optogenetic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship holds when sensory drive is held constant using optogenetic activation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "933d8603-89e0-44a1-9ccb-3ea98c761f42",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C9",
+      "claim": "Oscillations can decouple in spontaneously grooming flies, showing that alternative control modes are possible.",
+      "claim_type": "EXPLICIT",
+      "source": "but oscillations can decouple in spontaneously grooming flies, showing that alternative control modes are possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this observation and its interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "f0aeea08-d7d7-4656-a17c-ee4d27636815",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C10",
+      "claim": "Loss of sensory feedback does not disrupt periodicity but slows down the longer time scale alternation.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of sensory feedback does not disrupt periodicity but slow down the longer time scale alternation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "126f0025-712e-443c-985a-087d6d55d52c",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C11",
+      "claim": "CPGs control short stereotypic actions in cat walking, crayfish swimming, locust flight, leech heartbeat, and the stomatogastric and pyloric rhythms of crustaceans.",
+      "claim_type": "EXPLICIT",
+      "source": "CPGs control short stereotypic actions in cat walking, crayfish swimming, locust flight, leech heartbeat, and the stomatogastric and pyloric rhythms of crustaceans (reviewed in Berkowitz, 2019; Harris-Warrick and Ramirez, 2017 ; Grillner, 2006; Marder and Calabrese, 1996; Mulloney and Smarandache, 2010; Selverston, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "3ab8b4eb-5403-4896-a285-9d55fdbd10bc",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C12",
+      "claim": "When flies are covered in dust, they initially groom anterior body parts using their front legs.",
+      "claim_type": "EXPLICIT",
+      "source": "When flies are covered in dust, they initially groom anterior body parts using their front legs (Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Seeds et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "7c54edf5-b3cd-47a0-9a34-5b93742149cb",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C13",
+      "claim": "Flies alternate between bouts of head sweeps, where the legs move synchronously, and bouts of leg rubbing, where the legs move in opposition to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "They alternate between bouts of head sweeps, where the legs move synchronously, and bouts of leg rubbing, where the legs move in opposition to each other, scraping the dust off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation described in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "f9d3a04a-4653-4c32-ae8f-3caa22a2a832",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C14",
+      "claim": "At 18\u00b0C, leg rubs and sweeps have a characteristic frequency of approximately 6 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "At 18\u00b0C, leg rubs and sweeps have a characteristic frequency ~6 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a measured frequency from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "cf46ac34-b035-4e09-aefb-98bb326cc966",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C15",
+      "claim": "Each leg movement takes approximately 150 ms to complete at 18\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that each leg movement takes approximately 150 ms to complete, which is consistent with our observations using higher resolution video recordings (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the frequency data and confirmed by high-resolution video.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "df05ee29-f709-4100-afad-bb538a248947",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C16",
+      "claim": "The alternation of head cleaning and front leg rubbing bouts is periodic with a frequency of approximately 0.33 Hz at 18\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Autocorrelation analysis of the time series shown in Figure 1H illustrates signal at ~0.33 Hz, corresponding to approximately 2 s between the mid-point of consecutive bouts of front leg rubbing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result from autocorrelation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "b096be19-a8b3-42a9-86bd-c74bfd934bb9",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C17",
+      "claim": "Head sweeps and leg rubbing movements of dusted flies grooming at 18\u00b0C have a mean Periodicity Index (PI) of 0.31.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this metric, head sweeps and leg rubbing movements of dusted flies grooming at 18\u00b0C have a mean PI of 0.31 (s.d.=0.02) and 0.31 (s.d.=0.01), respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement reported from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "15d7a706-0aba-4c81-a131-f88956741d83",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C18",
+      "claim": "The alternation between bouts (the long time scale) at 18\u00b0C has a mean Periodicity Index of 0.36.",
+      "claim_type": "EXPLICIT",
+      "source": "the alternation between bouts (the long time scale) at 18\u00b0C has a mean PI of 0.36 (s.d.=0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement reported from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "ec6eea4c-0484-464f-9e36-6e730a4b39da",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C19",
+      "claim": "The amount of periodic behavior for the long time scale is 80% at 18\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these ratios, we found that overall the amount of periodic behavior for the long time scale is 80% (s.d.=8%) at 18\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement reported from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "942cde5b-22dc-47e4-a6bf-08234353771c",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C20",
+      "claim": "A key feature of CPGs is that they oscillate faster at higher temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "A key feature of CPGs is that they oscillate faster at higher temperatures (Deliagina et al., 1983; Tang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "049fa217-2e3a-47c4-9615-d0614b29ef66",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C21",
+      "claim": "The frequency of individual leg movements increases linearly with temperature from 5.7 Hz to 6.6 Hz (R2=0.99, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "the frequency shows a linear increase from 5.7 Hz to 6.6 Hz (R2=0.99, p<0.001; Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the temperature manipulation experiment, with reference to Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "fe4db04e-b2cc-4d8d-bfba-58e621b89341",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C22",
+      "claim": "The ff/hh-cycle frequency increases from 0.42 Hz at 18\u00b0C to 0.49 Hz at 30\u00b0C in a linear manner (R2=0.96, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The ff/hh-cycle frequency increases from 0.42 Hz (s.d.=0.02) at 18\u00b0C to 0.49 Hz (s.d.=0.04) at 30\u00b0C, also in a linear manner (R2=0.96, p<0.001; Figure 2F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the temperature manipulation experiment, with reference to Figure 2F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "c3665bd4-386f-4edb-a673-e695760ac74a",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C23",
+      "claim": "The average number of leg movements per ff/hh-cycle is fairly consistent, averaging approximately 15 across temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that the number of leg movements within an ff/hh-cycle is fairly consistent, averaging ~15: means range from 13.2 to 15.8 and s.d. range from 0.75 to 1.95 across temperatures (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the data analysis, with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "eaa8f872-558a-4e82-ad31-5f9da7cc0369",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C24",
+      "claim": "At 18\u00b0C, there are 15 leg movements of 175 ms for an ff/hh-cycle duration of 2.38 s.",
+      "claim_type": "EXPLICIT",
+      "source": "At 18\u00b0C, there are 15 leg movements of 175 ms for an ff/hh-cycle duration of 2.38 s",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific calculation from the data at 18\u00b0C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "7adfdc28-7777-4ce0-834f-53f03f277240",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C25",
+      "claim": "At 30\u00b0C, there are 15 leg movements of 152 ms for an ff/hh-cycle duration of 2.04 s.",
+      "claim_type": "EXPLICIT",
+      "source": "while at 30\u00b0C there are 15 leg movements of 152 ms for an ff/hh-cycle duration of 2.04 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific calculation from the data at 30\u00b0C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "a898b53c-8d59-4b36-b4f8-8d3ae0e70054",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C26",
+      "claim": "The average number of leg movements per ff/hh-cycle remains constant even as the cycle duration shortens with increasing temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the average number of leg movements per ff/hh-cycle remains constant even as the cycle duration shortens with increasing temperature (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data showing the relationship between temperature and cycle composition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "4388a1f8-1329-4eda-b30d-430305c25ee4",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C27",
+      "claim": "The correlation between the contraction rates of the two time scales is striking (R2=0.96, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Normalizing by their minimal frequencies, we can visualize the slope of temperature dependence for each time scale and the correlation between them is striking (R2=0.96, p<0.001; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result showing the correlation between the two time scales.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "560d9590-a38e-4d2d-acec-4bfba7fa8339",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C28",
+      "claim": "Both time scales contract at the same rate, with R2 values of 0.995 and 0.956, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Both time scales contract at the same rate, with R2 values of 0.995 and 0.956, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result quantifying the rate of contraction for each time scale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "f604ac12-b37c-41b9-b8af-8d536c7475da",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C29",
+      "claim": "An additional criterion for determining if a behavior is controlled by a CPG is that rhythmic output does not require rhythmic input.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional criterion for determining if a behavior is controlled by a CPG is that rhythmic output does not require rhythmic input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established criterion for CPG identification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "88712403-6f92-4905-b9f5-9303a393e79e",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C30",
+      "claim": "Optogenetic activation of mechanosensory bristle neurons induces grooming, beginning with the anterior body parts, and causing alternation between bouts of head cleaning and front leg rubbing.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that this manipulation induces grooming, beginning with the anterior body parts, and causing alternation between bouts of head cleaning and front leg rubbing (Hampel et al., 2017; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previously demonstrated result, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "87221425-aa6d-4302-914d-4a9bd8e742ea",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C31",
+      "claim": "Under optogenetic activation, both individual leg movements and bout-level alternations increase in frequency with temperature and do so in a correlated manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we combine optogenetic activation for constant sensory input with changing temperature to show that both individual leg movements and bout-level alternations increase in frequency with temperature and that they do so in a correlated manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "c9e77d8a-a20a-4f8a-9786-cd86169da510",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C32",
+      "claim": "The PIs at 18\u00b0C for short and long time scales under optogenetic stimulation are 0.29 and 0.35, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the PIs at 18\u00b0C for short and long time scales are 0.29 (s.d.=0.03) and 0.35 (s.d.=0.03), respectively (Figure 1\u2014figure supplement 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "19827cf8-1e81-4e90-ace3-9a33a4be4a77",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C33",
+      "claim": "The amount of periodic behavior for the long time scale under optogenetic stimulation is 62% at 18\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "and the amount of periodic behavior, considering the long time scale alterations, is 62% (s.d.=10%) (Figure 1\u2014figure supplement 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "909caa6d-8412-4e04-b2f4-34d080c89a3c",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C34",
+      "claim": "The amount of periodic behavior under optogenetic stimulation (62%) is less than in dusted flies (80%).",
+      "claim_type": "EXPLICIT",
+      "source": "This amount of periodic behavior is less than the 80% (s.d.=8%) in the dusted flies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between two experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "dd784d64-702e-4ffa-b837-767b4342bdee",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C35",
+      "claim": "Sensory feedback may be needed to stabilize rhythms but not necessarily to generate them in the first place.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that sensory feedback may be needed to stabilize rhythms but not necessarily to generate them in the first place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation of the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "15e85dd3-8580-40ee-b3d6-a146605dfa30",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C36",
+      "claim": "The frequencies of optogenetically induced rhythms get shorter with temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "The period of the optogenetically induced rhythms gets shorter with temperature (Figure 4C\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "2bc1c084-5385-4855-a1aa-674e1b439a89",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C37",
+      "claim": "The average number of leg movements per ff/hh-cycle is preserved across the range of temperatures under optogenetic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequencies are similar to dust-induced grooming, and the average number of leg movements per ff/hh-cycle is also preserved across the range of temperatures (Figure 4I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "2d21e769-080a-40df-82d5-683315bee46d",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C38",
+      "claim": "The rate of contraction of the two time scales is correlated under optogenetic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As with dusted flies, the rate of contraction of the two time scales is correlated (Figure 4K)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "6897263b-7dd4-4c23-92e8-642064ffc2d8",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C39",
+      "claim": "Movements of both the intact leg and the stump remained periodic after leg amputation, with frequencies and PIs similar to those of intact legs in dusted flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that movements of both the intact leg and the stump remained periodic, with frequencies and PIs similar to those of intact legs in dusted flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the leg amputation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "58eb67a8-f4ff-4de6-98b9-2ca3ebfc7524",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C40",
+      "claim": "The frequency of rubs is lower in the TNT group than in the control (p< 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of rubs is lower in the TNT group than in the control (p< 0.001) (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the TNT inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "ae1dc230-1a7f-4d80-9d96-6d07eedc1866",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C41",
+      "claim": "The frequency of sweeps is similar for both TNT and control groups.",
+      "claim_type": "EXPLICIT",
+      "source": "while the frequency of sweeps is similar for both (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the TNT inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "ab202fc8-aa7c-4a8e-b9cf-b15b86517448",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C42",
+      "claim": "The long time scale oscillations are significantly slower in the TNT group (p<0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "The long time scale oscillations are significantly slower in the TNT group (p<0.003) (Figure 5H, also ethograms in Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the TNT inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "d51e33bf-0658-4382-b01d-2124d309901f",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C43",
+      "claim": "The numbers of leg movements per ff/hh-cycle are slower in the TNT group.",
+      "claim_type": "EXPLICIT",
+      "source": "and so are the numbers of leg movements per ff/hh-cycle (Figure 5F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the TNT inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "7246c7e0-2173-4e8c-8037-1b8e3a858f53",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C44",
+      "claim": "Both TNT and control groups exhibited periodic behaviors on both the long and short time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Both groups exhibited periodic behaviors on both the long and short time scales (Figure 5I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the TNT inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "bb574ed3-7388-4c8c-a0ef-6d12a8d76d2f",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C45",
+      "claim": "The sensory inhibited flies performed less overall periodic behavior on the long time scale.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensory inhibited flies also performed less overall periodic behavior on the long time scale (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the TNT inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "7201488b-a8ab-4e30-bc29-07733e98140d",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C46",
+      "claim": "Grooming behaviors do not require sensory input for periodicity, but do utilize it for timing, modulation, and perhaps stabilization of the motor output, especially on the longer time scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that grooming behaviors do not require sensory input for periodicity, but do utilize it for timing, modulation, and perhaps stabilization of the motor output, especially on the longer time scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results from the sensory manipulation experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "dc980e6c-f681-4526-9d02-5b09af757e2a",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C47",
+      "claim": "Spontaneous grooming shows less periodicity at the long time scale than dust-induced grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation that spontaneous grooming shows less periodicity at the long time scale (Figure 6\u2014figure supplement 2B) can be interpreted as effective decoupling of the two levels of the nested CPG in those flies when they engage in more sporadic and shorter episodes of grooming.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the spontaneous grooming experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "9dcf5acf-9622-479d-8c62-fdb053c31279",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C48",
+      "claim": "In spontaneously grooming flies, the temperature-dependent contraction of the long time scale is less pronounced than in the stimulated flies (R2=0.86; p=0.012).",
+      "claim_type": "EXPLICIT",
+      "source": "The ff/hh-cycles are rarer, and when they occur, the temperature-dependent contraction of the long time scale is less pronounced than in the stimulated flies (R2=0.86; p=0.012) (Figure 6F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the spontaneous grooming experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "c179a9f5-b138-4a64-9d63-69c79671a11d",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C49",
+      "claim": "The correlated temperature-dependent contraction of the short and long time scales observed in the dusted and optogenetically activated flies is not seen in the spontaneously grooming ones (R2=0.43; p=0.332).",
+      "claim_type": "EXPLICIT",
+      "source": "the correlated temperature-dependent contraction of the short and long time scales observed in the dusted and optogenetically activated flies is not seen in the spontaneously grooming ones (R2=0.43; p=0.332) (compare Figure 6K to Figures 3K and 4K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result comparing spontaneous grooming to other conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "acd99aba-6f30-490c-9afd-373cb5f3cbec",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C50",
+      "claim": "The frequency of leg rubs and sweeps increases with temperature at a greater rate than the frequency of ff/hh-cycles in spontaneously grooming flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of leg rubs and sweeps increases with temperature at a greater rate than the frequency of ff/hh-cycles (Figure 6K), suggesting that the pattern-generating circuits that control the two time scales of movements may be dissociated in spontaneous grooming.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the spontaneous grooming experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "e473655f-b038-4aa6-a1ef-f6bfff5d2052",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C51",
+      "claim": "Neither periodic nor non-periodic behaviors in spontaneously grooming flies changed frequency with temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that neither periodic nor non-periodic behaviors changed frequency with temperature (Figure 6\u2014figure supplement 1C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from analyzing periodic vs non-periodic spontaneous grooming.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "a5919865-7611-41be-a714-e543e1b4ba43",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C52",
+      "claim": "There was no significant correlation between the two time scales in spontaneously grooming flies.",
+      "claim_type": "EXPLICIT",
+      "source": "and there was no significant correlation between the two time scales (Figure 6\u2014figure supplement 1E and F), or between the two levels of the nested CPG, in spontaneously grooming flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from analyzing spontaneous grooming.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "a7d534f0-ccc0-4c9f-8e95-d0c7f912b5a5",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C53",
+      "claim": "Local cooling of the cat spinal cord demonstrated which segments contain locomotion control circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Local cooling of the cat spinal cord demonstrated which segments contain locomotion control circuits (Deliagina et al., 1983)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established finding supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "78be6455-a527-4afd-8d29-c68302ce8ba0",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C54",
+      "claim": "Local warming showed that cricket chirping is governed by thoracic rather than brain ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "and local warming showed that cricket chirping is governed by thoracic rather than brain ganglia (Pires and Hoy, 1992a; Pires and Hoy, 1992b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established finding supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "6013b80f-c03b-47b5-95ec-1532d70efbdb",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C55",
+      "claim": "Local cooling of the HVC brain region in birds expands the entire song without changing the relative durations of the syllables and sub-syllabic components.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of CPGs in bird song, and the importance of the HVC brain region for sequence timing, was shown because local cooling expands the entire song without changing the relative durations of the syllables and sub-syllabic components (Armstrong and Abarbanel, 2016; Long and Fee, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established finding supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "75822c69-94d6-4b41-8a1e-093bd228a6f9",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C56",
+      "claim": "In frogs (Xenopus laevis), both local cooling and ambient temperature affect the frequencies of vocalization patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In frogs (Xenopus laevis), both local cooling and ambient temperature affect the frequencies of vocalization patterns (Yamaguchi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established finding supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "a6cece93-c745-44f7-8d92-c2e0012aa2e9",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C57",
+      "claim": "Fly grooming is an innate motor sequence with both repetition and flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Fly grooming is an innate motor sequence with both repetition and flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of fly grooming behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "98b05b49-0828-4cf9-924d-f5d02c561c2d",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C58",
+      "claim": "Behavior analysis has shown organization over several time scales in fly grooming, from single stereotyped leg movements and alternations between bouts of repeated actions targeting specific body parts, to a gradual and probabilistic progression from anterior toward posterior grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavior analysis has shown organization over several time scales, from single stereotyped leg movements and alternations between bouts of repeated actions targeting specific body parts (Mueller et al., 2019), to a gradual and probabilistic progression from anterior toward posterior grooming (Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "90c0dbb8-5095-4712-b527-5312b7f78f27",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C59",
+      "claim": "The neural circuits that constitute the CPGs controlling periodic leg movements are likely to overlap with those proposed to coordinate walking.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the neural circuits that constitute the CPGs controlling these periodic leg movements are likely to overlap with those proposed to coordinate walking (Bidaye et al., 2018), this was not unexpected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a reasonable expectation based on cited work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "46fdc4e2-f4c6-4604-be59-bd3183bd1c73",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C60",
+      "claim": "CPGs may control each leg joint, regulating the interaction between flexor and extensor muscles, governing the way coxa-trochanter and femur-tibia joints are coordinated to produce forward or backward walking, or mediating interactions among limbs.",
+      "claim_type": "EXPLICIT",
+      "source": "CPGs may control each leg joint, regulating the interaction between flexor and extensor muscles, governing the way coxa-trochanter and femur-tibia joints are coordinated to produce forward or backward walking, or mediating interactions among limbs (Feng et al., 2020; Mantziaris et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "bbfb9389-b115-4093-bdd9-a12c4d8b9144",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C61",
+      "claim": "In the vertebrate spinal cord, inhibitory and excitatory commissural neurons can cause the CPGs controlling the legs to synchronize for a hopping gait or operate out-of-phase for walking.",
+      "claim_type": "EXPLICIT",
+      "source": "In the vertebrate spinal cord, inhibitory and excitatory commissural neurons can cause the CPGs controlling the legs to synchronize for a hopping gait or operate out-of-phase for walking (Kiehn, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "c8e12a8e-781c-4710-b8b1-a092d5e9e2e7",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C62",
+      "claim": "CPGs in frogs have been shown to act on different time scales (sequentially) to govern their vocal behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "CPGs in frogs have been shown to act on different time scales (sequentially) to govern their vocal behaviors (Zornik et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "cd91bb3c-8a8e-4ddd-b504-18d1ad6d967d",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C63",
+      "claim": "Leeches can alternate between different CPG-driven behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "and leeches can alternate between different CPG-driven behaviors (Esch et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "fec4712d-342c-4994-a460-f309fc097652",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C64",
+      "claim": "The concept of nested CPGs has recently been extended to explain the flexible coordination of behaviors ranging from fish swimming to bird song.",
+      "claim_type": "EXPLICIT",
+      "source": "The concept of nested CPGs has recently been extended to explain the flexible coordination of behaviors ranging from fish swimming to bird song (Berkowitz, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as recent work supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "2aeca788-00b0-4662-b10f-1eb5fa432966",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C65",
+      "claim": "Nested CPGs similar to the one proposed for fly grooming have been described in the crab stomatogastric ganglion, where fast pyloric and slow gastric mill rhythms are coupled and compensate for temperature changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent publication, nested CPGs similar to the one we are proposing here have been described in the crab stomatogastric ganglion, where fast pyloric and slow gastric mill rhythms are coupled and compensate for temperature changes (Powell et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recent finding supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "e29e0de2-b1c2-4744-a4a9-391d5420c71b",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C66",
+      "claim": "The phase of different components of CPGs is conserved across a range of temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Just as the relative number of rotations between different gears is the same regardless of the absolute speed of the mechanism, so the phase of different components of CPGs is conserved across a range of temperatures (Harris-Warrick and Ramirez, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "e7c4a610-44d8-4c76-8b43-7b72584e3550",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C67",
+      "claim": "Disturbing a single bristle elicits a single directed leg sweep.",
+      "claim_type": "EXPLICIT",
+      "source": "Disturbing a single bristle elicits a single directed leg sweep (Kays et al., 2014; Vandervorst and Ghysen, 1980)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "f0d350fb-704a-409a-af45-ed1c9bc79346",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C68",
+      "claim": "Covering the fly in dust evokes an entire grooming program with bouts of several leg sweeps and rubs, alternation between the bouts, and slow gradual anterior-to-posterior progression.",
+      "claim_type": "EXPLICIT",
+      "source": "while covering the fly in dust evokes an entire grooming program with bouts of several leg sweeps and rubs, alternation between the bouts, and slow gradual anterior-to-posterior progression (Phillis et al., 1993; Seeds et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "195e936b-1100-462a-8948-14cdd0623781",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C69",
+      "claim": "Sensory feedback plays a role in stabilizing and adjusting rhythmic behaviors in walking mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The concept of sensory feedback playing a role in stabilizing and adjusting rhythmic behaviors has been explored in walking mice (Mayer and Akay, 2018, Santuz et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "9294a7af-7f0d-4f87-8d15-9073da044364",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C70",
+      "claim": "Sensory feedback plays a role in stabilizing and adjusting rhythmic behaviors in walking flies.",
+      "claim_type": "EXPLICIT",
+      "source": "and flies (Mendes et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "56b588df-31cc-4c9d-8b0e-2faa7bdeb276",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C71",
+      "claim": "The complete electron microscopy data set covering the ventral nerve cord will enable the identification of the pre-motor neurons most likely to participate in CPGs and the commissural connections that may mediate among them.",
+      "claim_type": "EXPLICIT",
+      "source": "New anatomical resources to map neural circuits, especially the complete electron microscopy data set covering the ventral nerve cord (Phelps et al., 2021), will enable the identification of the pre-motor neurons most likely to participate in CPGs and the commissural connections that may mediate among them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future possibilities based on new resources.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "3d93b3e8-0700-4690-8c86-88ca89b81fc7",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C72",
+      "claim": "Functional imaging of neural activity in dissected, fictive preparations is a promising approach to identify neurons with rhythmic activity that may constitute parts of the CPGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional imaging of neural activity in dissected, fictive preparations (Pulver et al., 2015) and even in behaving flies (Chen et al., 2018) is another promising approach to identify neurons with rhythmic activity that may constitute parts of the CPGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about promising approaches supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "f88d4b37-4940-4bab-ab94-2ad7f115d6e6",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C73",
+      "claim": "Whole nervous system monitoring of neural activity was recently described in C. elegans to identify hierarchical and dynamic control of nested locomotion patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, whole nervous system monitoring of neural activity was recently described in C. elegans to identify hierarchical and dynamic control of nested locomotion patterns (Kaplan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recent finding supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "484bc9c3-bc28-4ffc-a3cd-4f4193a9d378",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C74",
+      "claim": "Identifying what circuits constitute the grooming CPGs and mapping the neurons that coordinate their interactions is feasible.",
+      "claim_type": "EXPLICIT",
+      "source": "Identifying what circuits constitute these CPGs and mapping the neurons that coordinate their interactions is feasible, now that we know we ought to be looking for them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the feasibility of future research based on the current findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "a823ac44-dbbc-4992-b24f-abba0b92f75b",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C75",
+      "claim": "Drosophila melanogaster was reared on common cornmeal food in a 25\u00b0C incubator on a 12-hr light/dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila melanogaster was reared on common cornmeal food in a 25\u00b0C incubator on a 12-hr light/dark cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "5dbe2450-7a20-4638-a82a-2cf2902eff92",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C76",
+      "claim": "Three to five days old CantonS males were used for dusting and spontaneous grooming experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Three to five days, CantonS males were used for dusting and spontaneous grooming experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "026180fc-cbb7-4893-a2e2-57c6bf4cc3ef",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C77",
+      "claim": "For optogenetic experiments, larvae were raised on normal food and after eclosion, 1-day-old adults were transferred into food containing 0.4 mM all-trans-retinal and reared in the dark for another 2 days.",
+      "claim_type": "EXPLICIT",
+      "source": "For optogenetic experiments, larvae were raised on normal food. After eclosion, 1-day-old adults were transferred into food containing 0.4 mM all-trans-retinal and reared in the dark for another 2 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "96c6845b-eb78-4fe0-93ee-8116fe939a5f",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C78",
+      "claim": "Behavior videos were recorded inside New Brunswick I2400 incubator shaker or DigiTherm DT2-MP-47L heating/cooling incubator.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavior videos were recorded inside New Brunswick I2400 incubator shaker or DigiTherm DT2-MP-47L heating/cooling incubator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "69309e69-ba98-4256-9be5-52ff50216130",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C79",
+      "claim": "Experiments were performed every 2\u00b0C between 18\u00b0C and 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were performed every 2\u00b0C between 18\u00b0C and 30\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "37f6c7ec-0ad0-47c0-af61-fe76008595e9",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C80",
+      "claim": "60 Hz videos were recorded for 9 min in optogenetics experiments, 13 min in dusting, and spontaneous grooming experiments with a FLIR Blackfly S USB3 camera.",
+      "claim_type": "EXPLICIT",
+      "source": "60 Hz videos were recorded for 9 min in optogenetics experiments, 13 min in dusting, and spontaneous grooming experiments with a FLIR Blackfly S USB3 camera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "4508571c-ce52-417c-9be9-d7a0e6496328",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "claim_id": "C81",
+      "claim": "8\u201312 flies were used per temperature or per experimental group for all experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "For all experiments described above, 8\u201312 flies were used per temperature or per experimental group (for the TNT inhibition experiment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0bbdd73a-b480-463f-8412-1ed1beb9c42a",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Drosophila grooming behavior exhibits periodicity at two distinct time scales: a short time scale of individual leg movements (5\u20137 Hz, ~150\u2013200 ms/movement) and a long time scale of alternations between head sweeping and leg rubbing bouts (0.3\u20130.6 Hz, ~2 s/bout). Quantitative analysis using Periodicity Index (PI) shows mean values of ~0.31 for short time scale movements and 0.36 for long time scale alternations at 18\u00b0C, with 80% of behavior classified as periodic on the long time scale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3\u2013C19 provide converging evidence from multiple analytical approaches (frequency analysis, autocorrelation, PI quantification) demonstrating periodicity at both time scales. The measurements are internally consistent, with frequencies confirmed by independent methods (ABRS and DLC tracking in C14\u2013C15), and the PI metric provides quantitative support for the qualitative observation of periodicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "76849685-6aa3-4a14-9f28-bd117ecb13cb",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both short and long time scale grooming oscillations increase in frequency with temperature in a linear manner. Short time scale leg movements increase from 5.7 Hz to 6.6 Hz (R\u00b2=0.99, p<0.001), and long time scale ff/hh-cycles increase from 0.42 Hz to 0.49 Hz (R\u00b2=0.96, p<0.001) across the temperature range of 18\u201330\u00b0C. This temperature dependence is consistent with CPG control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C21, and C22 provide strong statistical evidence (high R\u00b2 values, significant p-values) for linear temperature-dependent frequency increases at both time scales. This is consistent with the established CPG criterion cited in C6 and C20. The experimental design with seven temperature points provides adequate resolution to establish linearity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "4db64c01-366a-4f08-9e64-a57d7dd33bbf",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The two time scales of grooming behavior contract at the same rate with increasing temperature, maintaining a constant ratio of approximately 15 leg movements per ff/hh-cycle across temperatures. Normalized frequency analysis shows striking correlation (R\u00b2=0.96, p<0.001) between the temperature-dependent contraction rates of the two time scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23\u2013C28 demonstrate coupling between time scales through multiple complementary analyses: constant leg movement counts per cycle (C23, C26) and correlated normalized frequency changes (C27, C28). The high correlation coefficient and statistical significance support the interpretation of linked nested CPGs, though alternative explanations (e.g., general temperature effects on neural activity) are acknowledged but considered unlikely based on spontaneous grooming data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "ad1e1508-42cb-498c-b594-ed1065c878f9",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Under constant sensory drive via optogenetic activation of mechanosensory bristle neurons, both time scales remain periodic and continue to show temperature-dependent frequency increases with correlated contraction rates. However, the amount of periodic behavior (62%) is reduced compared to dust-stimulated flies (80%), suggesting sensory feedback may stabilize but not generate rhythms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31\u2013C38 demonstrate that periodicity and temperature dependence persist under constant optogenetic stimulation, supporting CPG control independent of rhythmic sensory input (criterion C29). The reduced periodicity (C33\u2013C34) compared to dust stimulation is appropriately interpreted as evidence for sensory feedback's role in stabilization (C35), though this interpretation is speculative and marked as such in C35.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "bec5b327-a880-4d59-bcdc-79089c91f7d0",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In spontaneously grooming flies, the two time scales can decouple, showing reduced periodicity on the long time scale and loss of correlated temperature-dependent contraction (R\u00b2=0.43, p=0.332). The frequency of leg movements increases with temperature at a greater rate than ff/hh-cycle frequency, suggesting dissociation of the pattern-generating circuits controlling the two time scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47\u2013C52 demonstrate that the coupling between time scales observed in stimulated flies is not obligatory, as spontaneous grooming shows decoupling. The loss of correlation (C49, C52) and differential temperature responses (C50) provide evidence for alternative control modes. However, the analysis separating periodic from non-periodic behaviors (C51) did not reveal the expected pattern, which somewhat weakens but does not invalidate the overall conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "3c2a441d-702d-4645-acf2-6452934ea4b8",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Reduction of sensory feedback through leg amputation or genetic silencing of leg mechanosensory neurons does not eliminate periodicity but affects timing and stability. TNT-mediated sensory inhibition significantly slows long time scale oscillations (p<0.003) and reduces the amount of periodic behavior, while maintaining periodicity at both time scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39\u2013C46 provide converging evidence from two independent methods (amputation and genetic silencing) that sensory feedback is not required for periodicity but modulates timing and stability. The statistical significance of effects on frequency (C40, C42) and periodicity amount (C45) supports the interpretation in C46, though the interpretation involves some inference beyond the direct data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "663396a3-5cab-4549-b2a3-0990c0b02f17",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The manuscript establishes the conceptual framework of CPGs and nested CPGs, defining CPGs as circuits producing periodic output without patterned input, and citing temperature-dependent frequency increase and independence from rhythmic input as key criteria for CPG identification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C6, C11, C20, and C29 accurately represent established knowledge about CPGs, supported by appropriate citations to the literature. These definitional and background claims provide the conceptual foundation for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "81faf194-e305-4536-8290-241f35382ac2",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes the current work within the broader literature on CPGs across species and behaviors, citing examples from vertebrates, invertebrates, and other systems where temperature manipulations or nested CPG architectures have been demonstrated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53\u2013C70 accurately represent prior work as supported by citations. These claims establish the precedent for using temperature manipulations to identify CPGs and for the concept of nested CPGs in other systems, providing appropriate context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "b7f2a020-7611-42f7-bd8f-a3f27e1cdfc4",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript discusses future directions for identifying the neural circuits underlying grooming CPGs, citing new anatomical resources (electron microscopy connectome) and functional imaging approaches as promising methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71\u2013C74 are speculative statements about future work possibilities. While the cited resources and approaches are real and appropriately referenced, these claims cannot be evaluated as supported or unsupported since they make predictions about future feasibility rather than current findings. The speculation is appropriately marked in the evidence type.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    },
+    {
+      "id": "3fe27d4d-c675-4320-9b4f-da7f7f4fc88c",
+      "content_id": "5d64bead-3b78-4b71-8cdc-e059f36b0314",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The experimental methods describe fly husbandry, temperature control, video recording parameters, and sample sizes (8\u201312 flies per condition) used across experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75\u2013C81 provide methodological details that are internally consistent and appropriate for the experiments described. The sample sizes (C81) are stated to be sufficient for extracting the reported measurements, though formal power analyses are not provided. The methods are adequately described for the analyses performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:43:21.733460Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "135e7aec-9041-440a-81fd-e1a0490722da",
+      "result_id": "0bbdd73a-b480-463f-8412-1ed1beb9c42a"
+    },
+    {
+      "claim_id": "e5642ecf-7f96-4932-a3e2-176752e46b55",
+      "result_id": "0bbdd73a-b480-463f-8412-1ed1beb9c42a"
+    },
+    {
+      "claim_id": "7c54edf5-b3cd-47a0-9a34-5b93742149cb",
+      "result_id": "0bbdd73a-b480-463f-8412-1ed1beb9c42a"
+    },
+    {
+      "claim_id": "f9d3a04a-4653-4c32-ae8f-3caa22a2a832",
+      "result_id": "0bbdd73a-b480-463f-8412-1ed1beb9c42a"
+    },
+    {
+      "claim_id": "cf46ac34-b035-4e09-aefb-98bb326cc966",
+      "result_id": "0bbdd73a-b480-463f-8412-1ed1beb9c42a"
+    },
+    {
+      "claim_id": "df05ee29-f709-4100-afad-bb538a248947",
+      "result_id": "0bbdd73a-b480-463f-8412-1ed1beb9c42a"
+    },
+    {
+      "claim_id": "b096be19-a8b3-42a9-86bd-c74bfd934bb9",
+      "result_id": "0bbdd73a-b480-463f-8412-1ed1beb9c42a"
+    },
+    {
+      "claim_id": "15d7a706-0aba-4c81-a131-f88956741d83",
+      "result_id": "0bbdd73a-b480-463f-8412-1ed1beb9c42a"
+    },
+    {
+      "claim_id": "ec6eea4c-0484-464f-9e36-6e730a4b39da",
+      "result_id": "0bbdd73a-b480-463f-8412-1ed1beb9c42a"
+    },
+    {
+      "claim_id": "4f9ece17-9cc9-40a9-86d6-59e759dc727a",
+      "result_id": "76849685-6aa3-4a14-9f28-bd117ecb13cb"
+    },
+    {
+      "claim_id": "ab514290-bad8-49d3-9311-9a3ea1437e15",
+      "result_id": "76849685-6aa3-4a14-9f28-bd117ecb13cb"
+    },
+    {
+      "claim_id": "942cde5b-22dc-47e4-a6bf-08234353771c",
+      "result_id": "76849685-6aa3-4a14-9f28-bd117ecb13cb"
+    },
+    {
+      "claim_id": "049fa217-2e3a-47c4-9615-d0614b29ef66",
+      "result_id": "76849685-6aa3-4a14-9f28-bd117ecb13cb"
+    },
+    {
+      "claim_id": "fe4db04e-b2cc-4d8d-bfba-58e621b89341",
+      "result_id": "76849685-6aa3-4a14-9f28-bd117ecb13cb"
+    },
+    {
+      "claim_id": "2b7c27e0-fe78-4146-ba8e-000bb978b65c",
+      "result_id": "4db64c01-366a-4f08-9e64-a57d7dd33bbf"
+    },
+    {
+      "claim_id": "c3665bd4-386f-4edb-a673-e695760ac74a",
+      "result_id": "4db64c01-366a-4f08-9e64-a57d7dd33bbf"
+    },
+    {
+      "claim_id": "eaa8f872-558a-4e82-ad31-5f9da7cc0369",
+      "result_id": "4db64c01-366a-4f08-9e64-a57d7dd33bbf"
+    },
+    {
+      "claim_id": "7adfdc28-7777-4ce0-834f-53f03f277240",
+      "result_id": "4db64c01-366a-4f08-9e64-a57d7dd33bbf"
+    },
+    {
+      "claim_id": "a898b53c-8d59-4b36-b4f8-8d3ae0e70054",
+      "result_id": "4db64c01-366a-4f08-9e64-a57d7dd33bbf"
+    },
+    {
+      "claim_id": "4388a1f8-1329-4eda-b30d-430305c25ee4",
+      "result_id": "4db64c01-366a-4f08-9e64-a57d7dd33bbf"
+    },
+    {
+      "claim_id": "560d9590-a38e-4d2d-acec-4bfba7fa8339",
+      "result_id": "4db64c01-366a-4f08-9e64-a57d7dd33bbf"
+    },
+    {
+      "claim_id": "d00551b7-5827-4ab9-8cd8-32184e3a2eaa",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "f604ac12-b37c-41b9-b8af-8d536c7475da",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "88712403-6f92-4905-b9f5-9303a393e79e",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "87221425-aa6d-4302-914d-4a9bd8e742ea",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "c9e77d8a-a20a-4f8a-9786-cd86169da510",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "19827cf8-1e81-4e90-ace3-9a33a4be4a77",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "909caa6d-8412-4e04-b2f4-34d080c89a3c",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "dd784d64-702e-4ffa-b837-767b4342bdee",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "15e85dd3-8580-40ee-b3d6-a146605dfa30",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "2bc1c084-5385-4855-a1aa-674e1b439a89",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "2d21e769-080a-40df-82d5-683315bee46d",
+      "result_id": "ad1e1508-42cb-498c-b594-ed1065c878f9"
+    },
+    {
+      "claim_id": "933d8603-89e0-44a1-9ccb-3ea98c761f42",
+      "result_id": "bec5b327-a880-4d59-bcdc-79089c91f7d0"
+    },
+    {
+      "claim_id": "dc980e6c-f681-4526-9d02-5b09af757e2a",
+      "result_id": "bec5b327-a880-4d59-bcdc-79089c91f7d0"
+    },
+    {
+      "claim_id": "9dcf5acf-9622-479d-8c62-fdb053c31279",
+      "result_id": "bec5b327-a880-4d59-bcdc-79089c91f7d0"
+    },
+    {
+      "claim_id": "c179a9f5-b138-4a64-9d63-69c79671a11d",
+      "result_id": "bec5b327-a880-4d59-bcdc-79089c91f7d0"
+    },
+    {
+      "claim_id": "acd99aba-6f30-490c-9afd-373cb5f3cbec",
+      "result_id": "bec5b327-a880-4d59-bcdc-79089c91f7d0"
+    },
+    {
+      "claim_id": "e473655f-b038-4aa6-a1ef-f6bfff5d2052",
+      "result_id": "bec5b327-a880-4d59-bcdc-79089c91f7d0"
+    },
+    {
+      "claim_id": "a5919865-7611-41be-a714-e543e1b4ba43",
+      "result_id": "bec5b327-a880-4d59-bcdc-79089c91f7d0"
+    },
+    {
+      "claim_id": "f0aeea08-d7d7-4656-a17c-ee4d27636815",
+      "result_id": "3c2a441d-702d-4645-acf2-6452934ea4b8"
+    },
+    {
+      "claim_id": "6897263b-7dd4-4c23-92e8-642064ffc2d8",
+      "result_id": "3c2a441d-702d-4645-acf2-6452934ea4b8"
+    },
+    {
+      "claim_id": "58eb67a8-f4ff-4de6-98b9-2ca3ebfc7524",
+      "result_id": "3c2a441d-702d-4645-acf2-6452934ea4b8"
+    },
+    {
+      "claim_id": "ae1dc230-1a7f-4d80-9d96-6d07eedc1866",
+      "result_id": "3c2a441d-702d-4645-acf2-6452934ea4b8"
+    },
+    {
+      "claim_id": "ab202fc8-aa7c-4a8e-b9cf-b15b86517448",
+      "result_id": "3c2a441d-702d-4645-acf2-6452934ea4b8"
+    },
+    {
+      "claim_id": "d51e33bf-0658-4382-b01d-2124d309901f",
+      "result_id": "3c2a441d-702d-4645-acf2-6452934ea4b8"
+    },
+    {
+      "claim_id": "7246c7e0-2173-4e8c-8037-1b8e3a858f53",
+      "result_id": "3c2a441d-702d-4645-acf2-6452934ea4b8"
+    },
+    {
+      "claim_id": "bb574ed3-7388-4c8c-a0ef-6d12a8d76d2f",
+      "result_id": "3c2a441d-702d-4645-acf2-6452934ea4b8"
+    },
+    {
+      "claim_id": "7201488b-a8ab-4e30-bc29-07733e98140d",
+      "result_id": "3c2a441d-702d-4645-acf2-6452934ea4b8"
+    },
+    {
+      "claim_id": "df220195-0266-49b2-8b9a-147e3503c32f",
+      "result_id": "663396a3-5cab-4549-b2a3-0990c0b02f17"
+    },
+    {
+      "claim_id": "7fd264b9-a6f6-4267-84d8-bc333096fb4f",
+      "result_id": "663396a3-5cab-4549-b2a3-0990c0b02f17"
+    },
+    {
+      "claim_id": "ab514290-bad8-49d3-9311-9a3ea1437e15",
+      "result_id": "663396a3-5cab-4549-b2a3-0990c0b02f17"
+    },
+    {
+      "claim_id": "126f0025-712e-443c-985a-087d6d55d52c",
+      "result_id": "663396a3-5cab-4549-b2a3-0990c0b02f17"
+    },
+    {
+      "claim_id": "942cde5b-22dc-47e4-a6bf-08234353771c",
+      "result_id": "663396a3-5cab-4549-b2a3-0990c0b02f17"
+    },
+    {
+      "claim_id": "f604ac12-b37c-41b9-b8af-8d536c7475da",
+      "result_id": "663396a3-5cab-4549-b2a3-0990c0b02f17"
+    },
+    {
+      "claim_id": "a7d534f0-ccc0-4c9f-8e95-d0c7f912b5a5",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "78be6455-a527-4afd-8d29-c68302ce8ba0",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "6013b80f-c03b-47b5-95ec-1532d70efbdb",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "75822c69-94d6-4b41-8a1e-093bd228a6f9",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "a6cece93-c745-44f7-8d92-c2e0012aa2e9",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "98b05b49-0828-4cf9-924d-f5d02c561c2d",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "90c0dbb8-5095-4712-b527-5312b7f78f27",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "46fdc4e2-f4c6-4604-be59-bd3183bd1c73",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "bbfb9389-b115-4093-bdd9-a12c4d8b9144",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "c8e12a8e-781c-4710-b8b1-a092d5e9e2e7",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "cd91bb3c-8a8e-4ddd-b504-18d1ad6d967d",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "fec4712d-342c-4994-a460-f309fc097652",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "2aeca788-00b0-4662-b10f-1eb5fa432966",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "e29e0de2-b1c2-4744-a4a9-391d5420c71b",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "e7c4a610-44d8-4c76-8b43-7b72584e3550",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "f0d350fb-704a-409a-af45-ed1c9bc79346",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "195e936b-1100-462a-8948-14cdd0623781",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "9294a7af-7f0d-4f87-8d15-9073da044364",
+      "result_id": "81faf194-e305-4536-8290-241f35382ac2"
+    },
+    {
+      "claim_id": "56b588df-31cc-4c9d-8b0e-2faa7bdeb276",
+      "result_id": "b7f2a020-7611-42f7-bd8f-a3f27e1cdfc4"
+    },
+    {
+      "claim_id": "3d93b3e8-0700-4690-8c86-88ca89b81fc7",
+      "result_id": "b7f2a020-7611-42f7-bd8f-a3f27e1cdfc4"
+    },
+    {
+      "claim_id": "f88d4b37-4940-4bab-ab94-2ad7f115d6e6",
+      "result_id": "b7f2a020-7611-42f7-bd8f-a3f27e1cdfc4"
+    },
+    {
+      "claim_id": "484bc9c3-bc28-4ffc-a3cd-4f4193a9d378",
+      "result_id": "b7f2a020-7611-42f7-bd8f-a3f27e1cdfc4"
+    },
+    {
+      "claim_id": "a823ac44-dbbc-4992-b24f-abba0b92f75b",
+      "result_id": "3fe27d4d-c675-4320-9b4f-da7f7f4fc88c"
+    },
+    {
+      "claim_id": "5dbe2450-7a20-4638-a82a-2cf2902eff92",
+      "result_id": "3fe27d4d-c675-4320-9b4f-da7f7f4fc88c"
+    },
+    {
+      "claim_id": "026180fc-cbb7-4893-a2e2-57c6bf4cc3ef",
+      "result_id": "3fe27d4d-c675-4320-9b4f-da7f7f4fc88c"
+    },
+    {
+      "claim_id": "96c6845b-eb78-4fe0-93ee-8116fe939a5f",
+      "result_id": "3fe27d4d-c675-4320-9b4f-da7f7f4fc88c"
+    },
+    {
+      "claim_id": "69309e69-ba98-4256-9be5-52ff50216130",
+      "result_id": "3fe27d4d-c675-4320-9b4f-da7f7f4fc88c"
+    },
+    {
+      "claim_id": "37f6c7ec-0ad0-47c0-af61-fe76008595e9",
+      "result_id": "3fe27d4d-c675-4320-9b4f-da7f7f4fc88c"
+    },
+    {
+      "claim_id": "4508571c-ce52-417c-9be9-d7a0e6496328",
+      "result_id": "3fe27d4d-c675-4320-9b4f-da7f7f4fc88c"
+    }
+  ],
+  "comparisons": []
+}

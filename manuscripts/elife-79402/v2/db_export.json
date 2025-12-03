@@ -1,0 +1,1673 @@
+{
+  "submission": {
+    "id": "47afb1fe-7917-4453-bb57-926ee65e5e86",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:59:33.046516Z",
+    "updated_at": "2025-12-03T18:59:33.046516Z"
+  },
+  "content": [
+    {
+      "id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "submission_id": "47afb1fe-7917-4453-bb57-926ee65e5e86",
+      "content_type": "manuscript",
+      "content_text": "# Motor processivity and speed determine structure and dynamics of microtubule-motor assemblies\n\n## Authors\n\n- Rachel A Banks<sup>1</sup> ([ORCID: 0000-0003-2028-2925](https://orcid.org/0000-0003-2028-2925))\n- Vahe Galstyan<sup>1</sup> ([ORCID: 0000-0001-7073-9175](https://orcid.org/0000-0001-7073-9175))\n- Heun Jin Lee<sup>2</sup>\n- Soichi Hirokawa<sup>2</sup> ([ORCID: 0000-0001-5584-2676](https://orcid.org/0000-0001-5584-2676))\n- Athena Ierokomos<sup>3</sup>\n- Tyler D Ross<sup>4</sup>\n- Zev Bryant<sup>5</sup>\n- Matt Thomson<sup>1</sup>\n- Rob Phillips<sup>1</sup> ([ORCID: 0000-0003-3082-2809](https://orcid.org/0000-0003-3082-2809)) \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))\n2. Department of Applied Physics, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))\n3. Biophysics Program, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n4. Department of Computing and Mathematical Science, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))\n5. Department of Bioengineering, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n6. Department of Physics, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))\n\n\u2020 Corresponding author\n\n## Abstract\n\nActive matter systems can generate highly ordered structures, avoiding equilibrium through the consumption of energy by individual constituents. How the microscopic parameters that characterize the active agents are translated to the observed mesoscopic properties of the assembly has remained an open question. These active systems are prevalent in living matter; for example, in cells, the cytoskeleton is organized into structures such as the mitotic spindle through the coordinated activity of many motor proteins walking along microtubules. Here, we investigate how the microscopic motor-microtubule interactions affect the coherent structures formed in a reconstituted motor-microtubule system. This question is of deeper evolutionary significance as we suspect motor and microtubule type contribute to the shape and size of resulting structures. We explore key parameters experimentally and theoretically, using a variety of motors with different speeds, processivities, and directionalities. We demonstrate that aster size depends on the motor used to create the aster, and develop a model for the distribution of motors and microtubules in steady-state asters that depends on parameters related to motor speed and processivity. Further, we show that network contraction rates scale linearly with the single-motor speed in quasi-one-dimensional contraction experiments. In all, this theoretical and experimental work helps elucidate how microscopic motor properties are translated to the much larger scale of collective motor-microtubule assemblies.\n\n## Introduction\n\nA signature feature of living organisms is their ability to create beautiful, complex patterns of activity, as exemplified in settings as diverse as the famed flocks of starlings in Rome or the symmetrical and dazzling microtubule arrays that separate chromosomes in dividing cells (Popkin, 2016). While such organization in nature has long captured the attention of artists and scientists alike, many questions remain about how the patterns and structures created by living organisms arise. In active systems such as bird flocks or microtubule-motor arrays, energy is consumed at the local level of the individual actors, and constituents move based on interactions with their neighbors. These local actions create patterns at scales hundreds to thousands of times larger than the individual constituent. How the specific microscopic activity of each individual leads to the final large-scale assembly formed remains an open question in these systems from the molecular to organismal level.\n\nThe motor-microtubule system is an excellent system in which to test this question, as many motor proteins with a variety of properties, such as speeds, stall and detachment forces, processivities, and directionalities, exist in nature. These motors play a variety of roles in cells; some transport cargo while others localize to distinct regions of the mitotic spindle (Wickstead and Gull, 2006; Mann and Wadsworth, 2019; Endow et al., 1994; Pavin and Toli\u0107, 2021; Anjur-Dietrich et al., 2021). Studies have investigated how the microscopic properties of these motors makes them uniquely suited to their cellular role. For example, kinesin-1s high speed and processivity make it excellent at transporting cargo (Grover et al., 2016; Hirokawa et al., 1991). However, in in vitro systems, kinesin-1 tetramers are able to form asters, extensile networks, and contractile networks (Surrey et al., 2001; Sanchez et al., 2012; DeCamp et al., 2015; Ross et al., 2019). Ncd (kinesin-14) and Kif11 (kinesin-5) have similarly been shown to form asters in vitro, yet it remains unclear how the properties of these motors affect the structure and dynamics of the assemblies created (Surrey et al., 2001; Sanchez et al., 2012; DeCamp et al., 2015; Ross et al., 2019; Roostalu et al., 2018).\n\nIn this work, we create motor-microtubule structures with a variety of motors and develop theoretical models to connect the motor properties to the organization and dynamics of the assemblies. Our recently developed optogenetic in vitro motor-microtubule system demonstrated the formation of asters and other contractile networks with kinesin-1 (K401) upon light activation (Ross et al., 2019). Briefly, we fused K401 motors to an optogenetic pair of light-dimerizable proteins, such that in the presence of light the optogenetic pair bind, acting as a crosslink between microtubules that the motor heads are walking along. Previously, we showed that this scheme enabled us to form microtubule structures with spatiotemporal control by illuminating regions of the sample at will. We now show how this system can be re-purposed to ask a new set of questions with kinesin-5 (Kif11) and kinesin-14 (Ncd), and form asters of varying sizes with each motor, demonstrating light-controlled aster formation with these motors for the first time. Our controlled structure formation with these various motors enabled us to develop a theoretical model connecting the distribution of motors and microtubules in asters that depends on microscopic motor properties. We find that calculated motor distributions in an aster depend on the motor properties and fit with our experimental data. Further, by using motors with different speeds, we find that contraction rates in quasi-one-dimensional microtubule networks directly depend on the single-motor velocity. This theoretical and experimental work sheds light on the ways that microscopic motor properties are reflected in the 1000-fold larger length scale of motor-microtubule assemblies.\n\n## Results\n\n### Aster size depends on motor used\n\nWe build on the foundational work that demonstrated the ability to control motor-microtubule systems with light (Ross et al., 2019) to consider a new set of motors with different fundamental properties. In brief, kinesin motors are fused to the light-dimerizable pair iLid and micro. In the absence of light, motor dimers walk along microtubules but do not organize them; upon activation with light, the motor dimers couple together to form tetramers, crosslinking the microtubules they are walking along as shown in Figure 1A. The optogenetic bond lasts for about 20 s before reverting to the undimerized state, thus in our experiments, we repeatedly illuminate the sample every 20 s (Guntas et al., 2015). As demonstrated by Ross et al., projecting a cylinder of light on the sample results in the formation of an aster, and different structures can be formed and manipulated by illumination with different light patterns. For the purposes of this study, we were careful to remain in a regime of motor and microtubule concentrations that produced a single aster upon illumination. However, by varying concentrations of the motors and microtubules, it is possible to form multiple smaller asters within the region, a few examples of which are shown in Figure 1\u2014figure supplement 1. How varying the composition of the reaction mixture impacts the resulting structures warrants further investigation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79402/elife-79402-fig1-v2.jpg)\n\n**Figure 1.:** (A) Motor heads are fused to optogenetic proteins such that activation with light causes the formation of motor tetramers (dimer of dimers). Motors are shown walking toward the microtubule plus-end. K401 and Kif11 walk in this direction, however Ncd is minus-end directed. (B) Images of the microtubule fluorescence for asters formed with each of the motors excited with a disk either 50 or 600 \u03bcm in diameter. (C) Image of the microtubule fluorescence from an aster with the measured size represented with the outer black circle. The plot on the right shows the radial microtubule concentration as revealed by fluorescence intensity; the threshold concentration used to determine the aster size is shown as a black horizontal line. (D) Mean aster size (n \u2248 5 asters for each condition) for the three motors and different excitation diameters; the error bars represent the standard deviation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79402/elife-79402-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Left, many mini asters are seen before light activation. Center, activation results in a few asters within the illuminated region. Right, activation results in many small asters within the illuminated region.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79402/elife-79402-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The yellow circle indicates a visual measurement size of the aster.\n\nIn this work, we aim to determine how the properties of the motor affect the resulting structures. While experiments with this system were previously performed with Drosophila melanogaster kinesin-1 motors (K401) (Ross et al., 2019), in the present work, we investigate if other kinesin motor species with different intrinsic properties such as speed and processivity would lead to light-inducded microtubule organization. Toward this end, we use the same light-dimerizable scheme to form microtubule structures with two other motors: Ncd (D. melanogaster kinesin-14) and Kif11 (Homo sapiens kinesin-5). The single-molecule properties of all three motors we use are summarized in Table 1. We measure the speed of each motor species by gliding assays (SI section \u2018Gliding assay\u2019); the processivities are based on literature values. Further, we fluorescently label the motors using mVenus or mCherry to visualize the motors and microtubules in separate imaging channels within the same assay (see Supplementary file 1).\n\n**Table 1.**\n Properties of motor proteins used in this study.Speeds were measured by us by gliding assay, the processivity and directionality are literature values.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Motor</th>\n      <th>Speed</th>\n      <th>Processivity</th>\n      <th>Direction</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>K401</td>\n      <td>\u2248 600 nm/s</td>\n      <td>\u2248100 steps (Belmonte et al., 2017)</td>\n      <td>Plus (Hirokawa et al., 1991)</td>\n    </tr>\n    <tr>\n      <td>Ncd236</td>\n      <td>\u2248115 nm/s</td>\n      <td>Not processive (Hentrich and Surrey, 2010, N\u00e9d\u00e9lec et al., 2001, Lee and Kardar, 2001)</td>\n      <td>Minus (Sankararaman et al., 2004)</td>\n    </tr>\n    <tr>\n      <td>Kif11(513)</td>\n      <td>\u224870 nm/s</td>\n      <td>\u224810 steps (Aranson and Tsimring, 2006)</td>\n      <td>Plus (Aranson and Tsimring, 2006)</td>\n    </tr>\n  </tbody>\n</table>\n\nAs seen in Figure 1B and Figure 1\u2014figure supplement 2, each of these motors is able to form asters of varying sizes in our system. It was previously unclear whether there were limits to speed, processivity, or stall force that might prevent any of these motors from forming asters in our light-controlled system, although Ncd has previously been shown to form asters as constitutive oligomers (Belmonte et al., 2017; Hentrich and Surrey, 2010). We found that all were able to form asters upon illumination by various excitation diameters ranging from 50 to 600 \u03bcm. Interestingly, the dynamics of aster formation by these motors seemed to roughly scale with the motor speeds \u2013 K401 formed asters the quickest, followed by Ncd236, and Kif11 took the most time to form an aster.\n\nWe sought to determine if there are discernible differences between the asters formed with the various motors. First, we measured the size of the asters using the distribution of fluorescently labeled microtubules, which peaks in the center of the aster and generally decreases moving outward, as shown in Figure 1C. We tend to observe a shoulder in the microtubule distribution (around 20 in the example in Figure 1C). This is around the size of the disordered aster core, which is discussed in SI section \u2018Disordered aster core\u2019. We defined the outer radius of the aster as the radius at which the microtubule fluorescence is twice the background microtubule concentration (see Figure 1C for an example aster outer radius determination). We found that this method agreed well with a visual inspection of the asters (Figure 1\u2014figure supplement 2).\n\nWe found that aster size increases with excitation diameter, as shown in Figure 1B, D, consistent with what was shown by Ross et al. for K401 (Ross et al., 2019). In Ross et al., it was determined that the aster size roughly scaled with the volume of the excitation area, suggesting that the number of microtubules limits the size of the aster. This hints that there may be a density limit to the microtubules in an aster. Interestingly, we find that the size of the asters also depends on the motor used. For each excitation diameter, except for the 50 \u03bcm case, K401 formed the largest asters and Ncd formed the smallest, with Kif11 producing asters of intermediate size (Figure 1D). What is it about the different motors that confers these different structural outcomes? We found that this trend correlates with motor processivity; K401 is the most processive, followed by Kif11, and then Ncd. This is similar to the findings in Surrey et al., 2001, in which intensity of aster formation was related to motor processivity. Other factors could also be contributing to aster size such as the ratio of microtubules to motors as was suggested by Surrey et al., 2001, but not investigated in the present work, or the motor stall force.\n\n### Spatial distribution of motors in asters\n\nThe nonuniform distribution of filaments and motors in an aster is a key feature of its organization and has been the subject of previous studies. In these studies, continuum models were developed for motor-filament mixtures which predicted the radial profile of motors in confined two-dimensional systems (N\u00e9d\u00e9lec et al., 2001; Lee and Kardar, 2001; Sankararaman et al., 2004; Aranson and Tsimring, 2006). A notable example is the power-law decay prediction by Ndlec et al., who obtained it for a prescribed organization of microtubules obeying a $1/r$ decay law (N\u00e9d\u00e9lec et al., 2001). Measuring the motor profiles in asters formed in a quasi-two-dimensional geometry (with the $z$-dimension of the sample being only a few microns deep) and fitting them to a power-law decay, the authors found a reasonable yet noisy match between the predicted and measured trends in the decay exponent.\n\nIn our work, we also develop and test a minimal model that predicts the motor profile from the microtubule distribution and the microscopic properties of the motor. Our well-defined asters of various sizes shown above, created with varying motor properties yields an opportunity for us to test how our model and assess how the microscopic motor properties are translated to the aster scale. Additionally, in contrast to the earlier study (N\u00e9d\u00e9lec et al., 2001), asters formed in our experiments are three-dimensional due to the much larger depth of the flow cells (roughly 100 \u03bcm), and are thus more similar to the structures observed in cells. While the largest asters we form are likely partially compressed in the $z$-direction, we assume that this effect does not significantly alter the protein distributions in the central $z$-slice. For modeling purposes, then, we consider our asters to be radially symmetric outside the central disordered region (which we refer to as the aster core, as depicted schematically in Figure 2A). The core has a typical radius of $\u224815$ \u03bcm, beyond which microtubules have a predominantly polar organization (see SI section \u2018Disordered aster core\u2019 for the discussion of the two aster regions and an example Pol-Scope image that demonstrates their distinction).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79402/elife-79402-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of the radial microtubule organization in an aster. Modeling applies to locations outside the disordered core region at the aster center. Components of the schematic are not drawn to scale. (B) Motor states and transitions between them. (C) Governing equations for the bound and free motor populations, along with our solution for the total motor distribution at steady state, expressed via effective parameters $K_{d}=k_{off}/k_{on}$ and $\\lambda_{0}=D/v$ (see SI section \u2018Model formulation\u2019 for details). (D) Demonstration of the model fitting procedure on an example Kif11 aster. Fits to the average motor profile as well as to 5 out of 16 wedge profiles are shown. The outlier case with a lower concentration corresponds to wedge 13 in the fluorescence images. (E) Mean fitting errors for all asters calculated from the fits to the wedge profiles. The error is defined as the ratio of the mean residual to the concentration value at the inner boundary. (F) Inferred parameters $K_{d}$ and $\\lambda_{0}$ grouped by the kind of motor. Box plots indicate the quartiles of the inferred parameter sets. The fitting error and the inferred parameters for the Kif11 aster in panel (D) are shown as white dots in panels (E) and (F).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79402/elife-79402-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The green and blue dots represent the radially averaged motor and tubulin concentrations. The solid black lines represent the model fits.\n\nSimilar to the treatment in earlier works (N\u00e9d\u00e9lec et al., 2001; Sankararaman et al., 2004; Aranson and Tsimring, 2006), we introduce two states of the motor \u2013 an unbound state where the motor can freely diffuse with a diffusion constant $D$ and a bound state where the motor walks toward the aster center with a speed $v$, depicted in Figure 2B. In the steady state of the system, which we assume our asters have reached at the end of the experiment, microtubules on average have no radial movement and hence, do not contribute to motor speed. To assess the validity of this assumption, we performed fluorescence recovery after photobleaching (FRAP) experiments of steady-state asters, and observe little radial flux of the microtubules, an example is shown in Appendix 1\u2014figure 4. They are still dynamic, as can be seen by the angular motion that leads to the recovery of fluorescence in the photobleached areas. We denote the rates of motor binding and unbinding by $k_{on}$ and $k_{off}$, respectively. When defining the first-order rate of motor binding, namely, $k_{on}\u2062\u03c1_{_{MT}}\u2062(r)$, we explicitly account for the local microtubule concentration $\u03c1_{_{MT}}\u2062(r)$ extracted from fluorescence images. This is unlike the previous models which imposed specific functional forms on the microtubule distribution (e.g., a constant value [Lee and Kardar, 2001; Sankararaman et al., 2004] or a power-law decay [N\u00e9d\u00e9lec et al., 2001]), rendering them unable to capture the specific features often seen in our measured microtubule profiles, such as the presence of an inflection point (see Figure 1C for an example).\n\nFrom these assumptions, the governing equations for the bound ($m_{b}$) and free ($m_{f}$) motor concentrations are shown in Figure 2C. They involve binding and unbinding terms, as well as a separate flux divergence term for each population. Solving these equations at steady state, we arrive at an equation for the total local concentration of motors defined as $m_{tot}\u2062(r)=m_{b}\u2062(r)+m_{f}\u2062(r)$. The derivation of this result can be found in SI section \u2018Model formulation\u2019. As seen in the equation for $m_{tot}\u2062(r)$ (Figure 2C), knowing the microtubule distribution $\u03c1_{_{MT}}\u2062(r)$ along with two effective microscopic parameters, namely, the effective dissociation constant $K_{d}=k_{off}/k_{on}$ and the length scale $\\lambda_{0}=D/v$, we can obtain the motor distribution up to a multiplicative constant ($C$ in the equation). Note that in the special case where the motors do not move ($v\u21920$ or $\\lambda_{0}\u2192\u221e$), the exponential term becomes 1 and an equilibrium relation between the motor and microtubule distributions dependent only on $K_{d}$ is recovered, as we would expect for an equilibrium system.\n\nTo test this model, we extract the average radial distributions of microtubule and motor concentrations for each aster. Then, using the microtubule profile as an input, we fit our model to the motor data and infer the effective parameters $K_{d}$ and $\\lambda_{0}$ (see SI sections \u2018Extraction of concentration profiles from raw images\u2019 and \u2018Model fitting\u2019 for details). A demonstration of this procedure on an example Kif11 aster is shown in Figure 2D where a good fit to the average motor data can be observed. As a validation of our inference method, we additionally extract the radial concentration profiles inside separate wedges of the aster and show that they can be accurately captured by only choosing an appropriate multiplicative constant $C$ for each wedge, while keeping the pair $(K_{d},\\lambda_{0})$ inferred from average profile fixed. Fits to 5 out of 16 different wedge profiles are shown in Figure 2D for clarity. The fitting error for other asters is similarly low (Figure 2E, see Figure 2\u2014figure supplement 1 for the collection of fitted profiles).\n\nPlotting the inferred parameters $K_{d}$ and $\\lambda_{0}$ from all fits, shown in Figure 2F, we find that they are clustered around single values for each motor type and vary between the motors. Based on the single-molecule motor properties in Table 1 and the reported motor binding rates (Valentine and Gilbert, 2007), our expectation was that the $K_{d}$ values for Kif11 and K401 would have a ratio of $\u22484.6:1$ (see SI section \u2018Expected ratio of Kd values for K401 and Kif11 motors\u2019), while $K_{d}$ for Ncd would be the highest due to its non-processivity. The ratio of median inferred $K_{d}$ values for Kif11 and K401 is $\u22485.6:1$ \u2013 close to our expectation. However, the inferred $K_{d}$ values for Ncd are low and comparable to those for K401.\n\nOne possible resolution of this discrepancy comes from the finding of an in vitro study suggesting a substantial increase in the processivity of Ncd motors that act collectively (Furuta et al., 2013). Specifically, a pair of Ncd motors coupled through a DNA scaffold was shown to have a processivity reaching 1 \u03bcm (or, $\u2248100$ steps) \u2013 a value close to that reported for K401 motors. A highly processive movement was similarly observed for clusters of HSET (human kinesin-14) (Norris et al., 2018) and plant kinesin-14 motors (Jonsson et al., 2015).\n\nThis collective effect, likely realized for Ncd tetramers clustered on microtubules in highly concentrated aster structures, is therefore a possible cause for the low inferred values of their effective $K_{d}$. We also note that while a similar collective effect on processivity was observed for K401 motors (Furuta et al., 2013), it is far less dramatic since their single-motor processivity is already about the length of our microtubules, and therefore would have a small effect on the effective $K_{d}$.\n\nNext, looking at the inference results for the $\\lambda_{0}$ parameter (Figure 2F), we can see that Kif11 and Ncd motors have an average $\\lambda_{0}$ value of $\u224810-20$ \u03bcm, while the average value for K401 motors is $\u224840$ \u03bcm. From the measured diffusion coefficient of $D\u22481$ \u03bcm2/s for tagged kinesin motors (Grover et al., 2016) and the single-molecule motor speeds reported in Table 1, our rough estimate for the $\\lambda_{0}$ parameter for Kif11 and Ncd motors was $\u224810-15$ \u03bcm, and $\u22482$ \u03bcm for K401. While the inferred values for the two slower motors are well within the order-of-magnitude of our guess, the inferred $\\lambda_{0}$ for the faster K401 motor is much higher than what we anticipated. This suggests a significant reduction in the effective speed. One contributor to this reduction is the stalling of motors upon reaching the microtubule ends. Recall that in our model formulation (Figure 2B) we assumed an unobstructed walk for bound motors. Since the median length of microtubules ($\u22481.6$ \u03bcm) is comparable to the processivity of K401 motors ($\u22481$ \u03bcm), stalling events at microtubule ends will be common, leading to a reduction of their effective speed in the bound state by a factor of $\u22481.5$ (see SI section \u2018Accounting for finite MT lengths\u2019 for details). This correction alone, however, is not sufficient to capture the factor of $\u224825$ discrepancy between our inference and the estimate of $\\lambda_{0}$. We hypothesize that an additional contribution may come from the jamming of K401 motors in dense aster regions. This is motivated by the experiments which showed that K401 motors would pause when encountering obstructions during their walk (Ferro et al., 2019; Schneider et al., 2015). In contrast, for motors like Ncd and Kif11 which take fewer steps before unbinding and have a larger effective Kd, jamming would have a lesser effect on their effective speed as they would unbind more readily upon encountering an obstacle. Overall, our study shows that the minimal model of motor distributions proposed in Figure 2 is able to capture the distinctions in aster structure through motor-specific effective parameters, although more work needs to be done to explain the emergence of higher-order effects such as motor clustering and jamming, and their contribution to these effective parameters.\n\nOur model also provides insights on the observation that the distribution of microtubules is generally broader than that of the motors. This feature can be observed by comparing the two example profiles in Figure 2D, and it also holds for the profiles extracted from other asters (Figure 2\u2014figure supplement 1). In SI section \u2018Broader spread of the tubulin profile\u2019, we use our model to demonstrate this feature in a special analytically tractable case, and discuss its generality across asters in greater detail. We found that the relative width of the motor distribution compared to the microtubule distribution is fairly constant among asters, with their difference being the largest for Ncd motors, consistent with our model predictions. This relationship between the shapes of the distributions may be an important factor in the spatial organization of end-directed motors in the spindle where their localization to the spindle pole is of physiological importance.\n\n### Contraction rate scales with motor speed\n\nBesides the steady-state structure of motor-microtubule assemblies, it is also of great interest to understand their dynamics. Ross et al. demonstrated the formation of quasi-one-dimensional contractile networks by creating two asters that are initially separated by a given distance, then activating a thin rectangular region between them to form a network connecting the asters that pulls them together (Ross et al., 2019). Example images of microtubule fluorescence during one of these experiments are shown in Figure 3a. In these experiments, an increase in maximum aster merger speed with greater initial separation was observed. We aimed to confirm this behavior with our various motors and to test the relationship between aster merger speed and single-motor speed.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79402/elife-79402-fig3-v2.jpg)\n\n**Figure 3.:** (a) Images of microtubule fluorescence during aster merger. Regions of light activation are shown in orange. (b) Example profile of speeds in an aster merger as a function of linear distance. Each dot is the mean speed measured at that x-position within the network. (c) Maximum merger speed, measured at the ends of the network for each initial separation, and motor. Each dot is a single experiment and the lines are best fits to the data.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79402/elife-79402-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The contractile network between two merging asters is composed of contractile units (bundles of microtubules) of length $\u2113$, each contracting with speed $\u03bd$. The speed measured at the end of the network is the number of contractile units times their contractile speed, or (L/$\u2113$)$\u03bd$.\n\nFirst, we tested the relationship between distance and speed in our experiments. Using optical flow to measure the contraction speed throughout the network, we observe a linear increase in contractile speed with distance from the center of the network, as shown in Figure 3b. This relationship suggests that the contractile network can be thought of as a series of connected contractile units. These findings are in agreement with results from several studies of contractile rates in actomyosin networks, that suggested telescoping models of contraction, and suggest that this may be a common mechanism across cytosketetal networks (Thoresen et al., 2011; Linsmeier et al., 2016; Schuppler et al., 2016). Independent contraction of each unit would generate the observed linear increase in speed because more contractile units are added with distance from the center of the network.\n\nNext, we investigated how contractile speeds vary by motor in aster merger experiments. We repeated aster merger experiments with each motor and with various initial separations between the asters. Figure 3c shows the results, where each point represents the maximum aster speed measured in a single experiment by tracking the aster, and the lines are linear fits to the data for each motor (see SI section \u2018Merger analysis\u2019 for details on measuring the aster speeds). Interestingly, the ratios of the slopes of these lines match the ratios of motor speeds from Table 1. For example, the slope of the best fit line for Ncd is $\u22480.0023\u2062s^{-1}$ and the best fit slope for Kif11 is $\u22480.0013\u2062s^{-1}$. The ratio of these (Ncd/Kif11) is $\u22481.8$, which closely matches the ratio of their single-motor speeds ($\u22481.6$). Similar calculations can be done with these two motors and K401, with the same result. Thus, we conclude that the rate of contraction in the network is set by the motor speed and the increase of network speed with distance is due to adding more connected contractile units (Figure 3\u2014figure supplement 1). It is important to note that we only measure the initial contraction rate in these experiments, over the first \u2248100 s. On this time scale, we think of the network as an elastic material, since the time for motor unbinding and rearrangement should be longer than this. The time scale for the optogenetic pair to unbind is about 20 s (Guntas et al., 2015); since binding events are independent then the average time for two to unbind is about 400 s. There are likely several motors bound between any two microtubules within the network, thus the relaxation time, or the time to observe the viscous properties of the system, will be the time for multiple motors to unbind or optogenetic links to rearrange. Therefore, to account for the change in contraction rate throughout the process, one would likely need to account for these viscous effects.\n\n## Discussion\n\nIn this work, we examined how the properties of kinesin motors determine the mesoscopic properties of the structures they create. The way in which quantities such as motor speed and processivity govern the nature of the resulting motor-microtubule structures has been an open question. Previous attempts have been made to address this question, however most of these are in the context of a single motor. While models could be developed that fit the properties they measure, these models could not be systematically tested since they did not vary the speed or processivity of the motor (N\u00e9d\u00e9lec et al., 2001; Lee and Kardar, 2001; Sankararaman et al., 2004; Aranson and Tsimring, 2006). By varying motor speeds, processivities, and directionalities, we were able to quantify and model how these microscopic parameters connect to the properties of mesoscopic structures.\n\nWe demonstrate light-controlled aster formation with three different motors. Interestingly, the final aster size from a given illumination region varied depending upon which motor was used. Our leading hypothesis is that the key control variable is the processivity of the motors. Future work needs to be done to understand this effect and build models to explain it. Early work by Surrey et al. found that processivity affected the intensity of aster formation in simulations, which may be related to our observations, but to the best of our knowledge no model of this effect has been developed (Surrey et al., 2001). Further, we assess the distribution of motors and microtubules in the asters we form and develop a model of the steady-state aster that predicts the motor distribution given the measured microtubule distribution, with parameters that relate to the motor speed and processivity. Interestingly, the parameters we infer in some cases differ from those we would expect from the single-molecule properties of the motors, indicating that higher-order effects such as cooperativity in collections of motors increasing the processivity of the collective, are playing important roles. In addition, we measure contraction speeds in pseudo-one-dimensional networks and find that the speeds are related to the single-motor speed. In all, this work takes a step toward a mechanistic understanding of motor-microtubule assemblies, translating microscopic properties of individual interactions to the observed properties of the much larger-scale assemblies. This begins to open the door to understanding how different motors and tubulins interact to form cellular scale structures with varying properties, a critical question in evolutionary biology.\n\n## Materials and methods\n\n### Cloning of motor proteins\n\nHuman kinesin-5 (Kif11/Eg5) 5\u2013513 was PCR amplified from mCherry-Kinesin11-N-18 plasmid (gift from Michael Davidson, Addgene # 55067). This fragment was previously shown to form functional dimers (Valentine et al., 2006). Kinesin 1 1\u2013401 (K401) was PCR amplified from pWC2 plasmid (Addgene # 15960). Ncd 236\u2013701 was PCR amplified from a plasmid gifted by Andrea Serra-Marques.\n\nThe optogenetic proteins, iLid, and Micro were PCR amplified from pQE-80L iLid (Addgene # 60408, gift from Brian Kuhlman) and pQE-80L MBP-SspB Micro (Addgene # 60410). mCherry was PCR amplified from mCherry-Kinesin11-N-18 and mVenus was PCR amplified from mVenus plasmid (Addgene # 27793).\n\nConstructs were assembled by Gibson assembly of the desired motor protein, optogenetic protein, and fluorophore in order to make the plasmids listed in Supplementary file 1.\n\n### Protein expression and purification\n\nProtein expression and purification was done in SF9 cells. Cells were seeded at a density of 1,000,000 cells per mL in a 15 mL volume and transiently transfected with the desired plasmid using Escort IV transfection reagent, then incubated for 72 hr before purification. Cells were collected for purification by centrifugation at 500 \u00d7 g for 12 min, and the pellet was resuspended in lysis buffer (200 mM NaCl, 4 mM MgCl2, 0.5 mM EDTA, 1.0 mM EGTA 0.5% Igepal, 7% sucrose by weight, 20 mM imidazole pH 7.5, 10 g/mL aprotinin, 10 g/mL leupeptin, 2 mM ATP, 5 mM DTT, 1 mM PMSF) and incubated on ice for 30 min. The lysate was then clarified by centrifugation at 200,000 \u00d7 g for 30 min at 4\u00b0C. Clarified supernatant was incubated with 40 L anti-FLAG M2 affinity gel (Sigma-Aldrich A2220) for 3 hr at 4\u00b0C. To wash out unbound protein, the resin (with bound protein) was collected by centrifugation at 2000 \u00d7 g for 1 min, the supernatant was removed and the resin was washed with wash buffer (for Ncd and Kif11: 150 mM KCl, 5 mM MgCl2, 1 mM EDTA, 1 mM EGTA, 20 mM imidazole pH 7.5, 10 g/mL aprotinin, 10 g/mL leupeptin, 3 mM DTT, 3 mM ATP; for K401: M2B with 10 g/mL aprotinin, 10 g/mL leupeptin, 3 mM DTT, 3 mM ATP). This was repeated two more times with decreasing ATP concentration (0.3 and 0.03 mM ATP) for a total of three washes. After the third wash, about 100 L supernatant was left and the bound protein was eluted by incubation with 10 L FLAG peptide (Sigma-Aldrich F3290) at 4\u00b0C for 3 hr. The resin was then spun down by centrifugation at 2000 \u00d7 g for 1 min and the supernatant containing the purified protein was collected. Purified protein was then concentrated to a volume of 10\u201320 L by centrifugation in mini spin filters (Millipore 50 kDa molecular weight cut-off). Protein was kept at 4\u00b0C and used the same day as purification or stored in 50% glycerol at \u201320\u00b0C for longer storage. Protein concentration was determined with QuBit Protein Assay Kit (Thermo Fisher Q33212).\n\n### Microtubule polymerization\n\nMicrotubules were polymerized as reported previously (Ross et al., 2019) and originally from the Mitchison lab website (Georgoulia, 2012). In brief, 75 \u03bcM unlabeled tubulin (Cytoskeleton) and 5 \u03bcM tubulin-Alexa Fluor 647 (Cytoskeleton) were combined with 1 mM DTT and 0.6 mM GMP-CPP in M2B buffer and incubated spun at 300,000 \u00d7 g to remove aggregates, then the supernatant was incubated at 37\u00b0C for 1 hr to form GMP-CPP stabilized microtubules.\n\n### Microtubule length\n\nThe GMP-CPP stabilized microtubules were imaged with TIRF microscopy to determine their length. A flow chamber was made using a KOH cleaned slide, KOH cleaned coverslip (optionally coated with polyacrylamide), and parafilm cut into chambers. The flow cell was incubated with poly-L-lysine for 10 min, washed with M2B, then microtubules were flown in. The chamber was sealed with Picodent and imaged with TIRF microscopy.\n\nMicrotubules were segmented using home-written Python code and histogrammed to determine the distribution of microtubule lengths (Appendix 1\u2014figure 1).\n\n### Sample chamber preparation\n\nSlides and coverslips were cleaned with Helmanex, ethanol, and KOH, silanized, and coated with polyacrylamide as in Ross et al., 2019. Just before use, slides and coverslips were rinsed with MilliQ water and dried with compressed air. Flow chambers (3 mm wide) were cut out of Parafilm M and melted using a hotplate at 65\u00b0C to seal the slide and coverglass together, forming chambers that are $\u224870-100$ \u03bcm in height and contain \u22487 \u03bcL.\n\n### Reaction mixture preparation\n\nThe reaction mixture consisted of kinesin motors ($\u223c250\u2062nM$), microtubules (\u223c1 \u03bcM tubulin), and energy mix that contained ATP, an ATP recycling system, a system to reduce photobleaching, F-127 pluronic to reduce interactions with the glass surfaces, and glycerol (Ross et al., 2019). To prevent pre-activation of the optogenetic proteins and photobleaching of the fluorophores, the motors and microtubules were always handled in a dark room where wavelengths of light below 520 nm were blocked with a filter or a red light was used to illuminate. The reaction mixture was prepared right before loading into the flow cell and then sealed with Picodent Speed.\n\n### Microscope instrumentation\n\nWe performed the experiments with an automated widefield epifluorescence microscope (Nikon TE2000). We custom modified the scope to provide two additional modes of imaging: epi-illuminated pattern projection and LED gated transmitted light. We imaged light patterns from a programmable DLP chip (EKB TEchnologies DLP LightCrafter E4500 MKIITM Fiber Couple) onto the sample through a user-modified epi-illumination attachment (Nikon T-FL). The DLP chip was illuminated by a fiber coupled 470 nm LED (ThorLabs M470L3). The epi-illumination attachment had two light-path entry ports, one for the projected pattern light path and the other for a standard widefield epi-fluorescence light path. The two light paths were overlapped with a dichroic mirror (Semrock BLP01-488R-25). The magnification of the epi-illuminating system was designed so that the imaging sensor of the camera (FliR BFLY-U3-23S6M-C) was fully illuminated when the entire DLP chip was on. Experiments were run with Micro-Manager (Edelstein et al., 2010), running custom scripts to controlled pattern projection and stage movement.\n\n### Activation and imaging protocol\n\nFor the experiments in which we make asters with excitation disks of different sizes, we use five positions within the same flow cell simultaneously in order to control for variation within flow cells and over time. Each position is illuminated with a different sized excitation region: 50, 100, 200, 400, or 600 \u03bcm diameter cylinder. Each position was illuminated with the activation light for $\u223c50-200$ ms and both the microtubules (Cy5 labeled) and motors (mVenus labeled) were imaged at \u00d710 magnification every 15 s. After an hour of activation, a z-stack of the microtubule and motor fluorescence throughout the depth of the flow chamber was taken at 5 \u03bcm increments in each position. Typically, one experiment was run per flow chamber. We placed the time limitations on the sample viewing to minimize effects related to cumulative photobleaching, ATP depletion, and global activity of the light-dimerizable proteins. After several hours, inactivated dark regions of the sample begin to show bundling of microtubules.\n\nFor the aster merger experiments, two 50 \u03bcm disks are illuminated at different distances apart. Again, five positions within the same flow cell are chosen, and the separation between the two disks varies for each position: 200, 400, 600, 800, or 1000 \u03bcm apart. For K401 and Ncd experiments, the disks are illuminated for 30 frames, for Kif11 experiments, the disks are illuminated for 60 frames (frames are every 15 s). Then, a bar \u22485 \u03bcm wide connecting the disks is illuminated to merge the asters.\n\n### Gliding assay\n\nMotor speeds were determined by gliding assay. Glass slides and coverslips were Helmanex, ethanol, and KOH cleaned. Flow cells with \u224810 L volume were created with double sided sticky tape, and rinsed with M2B buffer. Then, anti-GFP antibody was applied and incubated for 10 min. The flow cell was then rinsed with M2B and then mVenus labeled motor proteins (at $\u223c5$ nM in M2B) were flowed in and incubated for 10 min. The flow cell was rinsed with M2B to remove unbound motors and microtubules (in M2B with 3 mM ATP and 1 mM DTT) were flowed in. Microtubules were then imaged using total internal reflection fluorescence (TIRF) microscopy at a rate of one frame per second. Individual microtubules were tracked using custom-written Python code to determine their speed. The mean microtubule speed (excluding those that were not moving) was determined as the motor speed. Appendix 1\u2014figure 2 shows the histogram of speeds obtained for K401 motors purified from SF9 cells.\n\n### Forming a single aster\n\nThe experiments for this study were performed in a regime in which we obtained a single aster, in order to measure properties of the structure and compare between various motors. However, by varying concentrations of components within the system such as motor and microtubule concentration, it is possible to obtain different results. Some examples include mini asters everywhere in the sample before activation, a few asters within the activation region, or many small asters within the activation region. Example images of these cases are shown in Figure 1\u2014figure supplement 1. The various possible resulting structures, and the perturbations to the system to obtain them, warrant further study in the future.\n\n### Disordered aster core\n\nWe observe that the asters we create have centers that are very dense with motors and microtubules. By fluorescence microscopy, we do not observe organized aster arms in this region and hypothesized that the microtubules are disordered in this region. To assess the extent of microtubule organization in our asters, we imaged asters with a polarized light microscope (Pol-Scope). This microscope utilizes polarized white light to image birefringent substances. Microtubules are birefringent due to their aspect ratio; they interact differently with light polarized parallel to their long axes compared to light polarized perpendicular to their long axes. Thus, the Pol-Scope allows determination of the alignment of microtubules, but not their plus/minus end polarity (Oldenbourg and Mei, 1995). When imaged with a Pol-Scope, the arms of our asters are bright, indicating high alignment, and their azimuthal angle confirms that they are radially symmetric around the center (Appendix 1\u2014figure 3). The center of the aster is dark, which we interpret to mean that this region is disordered. It is possible that the microtubules in the center could be aligned pointing in the z-direction, which could also result in the center being dark. A disordered center may be a result from steric hindrance due to a high density of microtubules in that region, which prevents the motors from aligning the microtubules. Due to the disorder in the aster center, we exclude this region from our theoretical analysis.\n\n### Steady-state aster\n\nWhen we measure aster size and the distributions of motors and microtubules, we do so once the aster has reached a dynamic steady state. To assess this notion, we performed FRAP experiments. We photobleached the microtubules in a fully formed aster in a grid pattern and took images of the recovery, shown in Appendix 1\u2014figure 4. From these images, it is clear that there is little to no net radial movement of the microtubules, and slow angular motion. Therefore, at this point, the aster is no longer contracting, but the microtubules are still dynamic. We attempted similar experiments with the motors, but they recover very quickly.\n\n### Aster size\n\nWe formed asters of various sizes using cylindrical illumination regions, ranging in diameter from 50 to 600 \u03bcm. Figure 1\u2014figure supplement 2 shows representative images of the microtubule fluorescence of asters formed with each motor and each excitation diameter. The yellow circles are by-hand determination of the outer boundary of the aster. It can be seen in these images that for the smallest asters, the aster size can be larger than the illumination region. We believe this is due to diffusion of dimerized motors outside of the activation region, where they can bind microtubules in the background region and incorporate them into the asters. For larger excitation diameters, the microtubules in the activated region get concentrated in the aster, leaving a region depleted of microtubules between the aster and the background region. In order to measure the size of asters in a more systematic way, we used the measured microtubule distribution, as shown in Figure 1C. Outside of the central core region of the aster, microtubule fluorescence decreases monotonically before rising again to the background level outside of the activation region. We chose to define the outer radius of the aster as the radius at which the median microtubule fluorescence is twice the background fluorescence. This metric agrees well with a visual inspection of the asters.\n",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "07c87d82-ad0b-4773-a523-fa953b892c3d",
+      "submission_id": "47afb1fe-7917-4453-bb57-926ee65e5e86",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karsten Kruse, https://ror.org/01swzsf04 University of Geneva Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79402.sa0](https://doi.org/10.7554/eLife.79402.sa0)\n\nBanks et al. demonstrate that the organization and dynamics of microtubule/kinesin asters depend upon the speed and processivity of motors. By combining in vitro reconstitutions with theory, they are able to extract parameters that relate to the dynamics of the motors. This study is of interest to readers working on microtubules, motors, and in the active matter physics field.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Karsten Kruse, https://ror.org/01swzsf04 University of Geneva Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79402.sa1](https://doi.org/10.7554/eLife.79402.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Motor processivity and speed determine structure and dynamics of motor-microtubule assemblies\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Several of your observations seem to be at odds with previous results. Specifically, it has been shown that cooperative effects between kinesin-1 do not increase their walking speed. You find that the cooperativity of the motors (including kinesin-1) leads to increased speed of two merging asters. It is not clear from the experimental or theoretical data how the contractile speeds of two merging asters can move up to 4-times faster than an individual motor protein. In the text above you mentioned that processivity and speed might be hindered by obstacles and crowding of motors, why is then the speed so high? Previous studies have shown that increasing the number of kinesins on a bead does not increase the speed of the bead. How does this result fit to your observation? Please, comment on these points in your revised manuscript.\n\n2) Some questions came up about the general behavior of the aster organization. Why does only one and not multiple asters form if the region of excitation is over 10x the size? Furthermore, a much larger excitation diameter than the size of the resultant structure suggests the amount of dimeric motor is not limiting. Why then does the size of the aster increase with excitation diameter? Please, comment on these questions in your revised manuscript.\n\n3) Asters sizes that vary with speed/processivity likely vary in their connectivity and thereby viscoelasticity. You draw analogies to contractile units, presumably in analogy to muscle. Are viscoelastic materials with variable processivity-dependent connectivity consistent with the picture of elastic, well-connected contractile units? Comment on the geometric/mechanical pre-requisites for this comparison.\n\nReviewer #1 (Recommendations for the authors):\n\nThe dynamics of contractile microtubule-kinesin and actomyosin networks has been studied previously and yielded the conclusion that the contraction speed increased towards the boundaries which correspond to the aster cores in the present work. The authors might consider mentioning this in their manuscript.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 \"Thus, we conclude that the rate of contraction in the network is set by the motor speed and the increase of network speed with distance is due to adding more connected contractile units.\" Do you have an experimental or theoretical approach to test you hypothesis? If contraction is set by the motor speed should the maximum contraction speed not equal the speed of a single motor? In the text above you mentioned that processivity and speed might be hindered by obstacles and crowding of motors, why is than the speed so high? Previous studies have shown that increasing the number of kinesins on a bead does not increase the speed of the bead. How does this result fit to your observation?\n\n\u2013 At steady-state of the system the microtubules have on average no radial movement. Did you ever perform a FRAP of the aster? I would like to know if the microtubules in the aster at steady state are still dynamic, and if the dynamic properties change before and at steady-state. Same for the motors.\n\n\u2013 Between the three different motor-induced asters is there a different behavior of the aster at steady-state and before? What is the timing to reach steady-state for the asters with the different motors? Are the dynamic properties of the asters different? Is the nucleation of the aster different?\n\n\u2013 \"While the inferred values for the two slower motors are well within the order-of-magnitude of our guess, the inferred \u03bb0 for the faster K401 motor is much higher than what we anticipated. \" You explain this by Kinesin-1 stalling at the microtubule end, however Kinesin-1 is not known to stall at the microtubule end, but just falls of without stopping. Further you consider that the median MT length is 1.6\u00b5m, but your mean length is around 7 \u00b5m. Do you have any alternative explanation why K401 inferred \u03bb0 is so much higher? Please, could also add a size distribution blot of the stabilized microtubules used for the experiments?\n\n\u2013 Figure 1C: Multiple peaks of FI are visible. Are there periodic rings of high tubulin intensity forming? Do they cluster with the motor concentration? Is the number of peaks dependent on the aster size, or the motor?\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors succeed in demonstrating how the microscopic properties of motors can determine large-scale material structure. This is the putative principal impact of the work. However, some of these results have been seen in other motor/filament systems, such as actomyosin. An example is the relationship between contractile velocity and the dimension of the assembly (e.g. Thoresen, BJ, 2011, Linsmier et al., Nat Comm, 2016, Schuppler, Nat Comm, 2016). While similar relationships observed in microtubule /kinesin systems are notable, due to differences in motor proteins parameters, filament mechanics, etc, these prior works should be mentioned in light of the contributions of the present work.\n",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7a8c752d-b5a0-45ce-bc6a-02e3fa8997d1",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C1",
+      "claim": "Active matter systems can generate highly ordered structures by consuming energy at the level of individual constituents.",
+      "claim_type": "EXPLICIT",
+      "source": "Active matter systems can generate highly ordered structures, avoiding equilibrium through the consumption of energy by individual constituents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about active matter systems presented in the abstract as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "8eb41ce3-3e46-4345-a6ce-b1383e018b87",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C2",
+      "claim": "The cytoskeleton is organized into structures such as the mitotic spindle through the coordinated activity of many motor proteins walking along microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "in cells, the cytoskeleton is organized into structures such as the mitotic spindle through the coordinated activity of many motor proteins walking along microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cellular organization cited as background.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "f56c139f-dc0b-47e5-b4d1-d24db8c4e6b1",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C3",
+      "claim": "Aster size depends on the motor used to create the aster.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that aster size depends on the motor used to create the aster",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "5e543105-c004-4993-a94c-f4ff7a3bcbba",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C4",
+      "claim": "Network contraction rates scale linearly with the single-motor speed in quasi-one-dimensional contraction experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that network contraction rates scale linearly with the single-motor speed in quasi-one-dimensional contraction experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "2023464a-416c-4e95-8db4-0aec754fffea",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C5",
+      "claim": "Many motor proteins exist in nature with a variety of properties such as speeds, stall and detachment forces, processivities, and directionalities.",
+      "claim_type": "EXPLICIT",
+      "source": "The motor-microtubule system is an excellent system in which to test this question, as many motor proteins with a variety of properties, such as speeds, stall and detachment forces, processivities, and directionalities, exist in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about motor protein diversity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "26227bf2-d4e5-4237-90fa-313c28af3f49",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C6",
+      "claim": "Motor proteins play a variety of roles in cells including transporting cargo and localizing to distinct regions of the mitotic spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "These motors play a variety of roles in cells; some transport cargo while others localize to distinct regions of the mitotic spindle (Wickstead and Gull, 2006; Mann and Wadsworth, 2019; Endow et al., 1994; Pavin and Toli\u0107, 2021; Anjur-Dietrich et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "8fc38e60-21fa-44ff-a198-274a79b4cd81",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C7",
+      "claim": "Kinesin-1's high speed and processivity make it excellent at transporting cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, kinesin-1s high speed and processivity make it excellent at transporting cargo (Grover et al., 2016; Hirokawa et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "bf20ba85-64a3-4a94-b3c6-36e819e73d27",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C8",
+      "claim": "Kinesin-1 tetramers can form asters, extensile networks, and contractile networks in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in in vitro systems, kinesin-1 tetramers are able to form asters, extensile networks, and contractile networks (Surrey et al., 2001; Sanchez et al., 2012; DeCamp et al., 2015; Ross et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "8645be09-d3c7-4f1c-b8d9-99c460e1f553",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C9",
+      "claim": "Ncd (kinesin-14) and Kif11 (kinesin-5) have been shown to form asters in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Ncd (kinesin-14) and Kif11 (kinesin-5) have similarly been shown to form asters in vitro, yet it remains unclear how the properties of these motors affect the structure and dynamics of the assemblies created (Surrey et al., 2001; Sanchez et al., 2012; DeCamp et al., 2015; Ross et al., 2019; Roostalu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "ee8f8ce3-5d93-4641-8046-9f25de5c7270",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C10",
+      "claim": "An optogenetic in vitro motor-microtubule system demonstrated the formation of asters and other contractile networks with kinesin-1 (K401) upon light activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recently developed optogenetic in vitro motor-microtubule system demonstrated the formation of asters and other contractile networks with kinesin-1 (K401) upon light activation (Ross et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a literature citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "80dae8b5-a313-44fc-97e3-2ba156cb72a7",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C11",
+      "claim": "In the optogenetic system, K401 motors are fused to light-dimerizable proteins such that in the presence of light the optogenetic pair bind, acting as a crosslink between microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, we fused K401 motors to an optogenetic pair of light-dimerizable proteins, such that in the presence of light the optogenetic pair bind, acting as a crosslink between microtubules that the motor heads are walking along.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "34c99fb7-fb8d-4efb-b96f-98bb5c2898b8",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C12",
+      "claim": "The optogenetic system enabled formation of microtubule structures with spatiotemporal control by illuminating regions of the sample at will.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that this scheme enabled us to form microtubule structures with spatiotemporal control by illuminating regions of the sample at will.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior experimental results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "6e5139e8-2595-4700-9cc6-b98e93d69197",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C13",
+      "claim": "Light-controlled aster formation with kinesin-5 (Kif11) and kinesin-14 (Ncd) is demonstrated for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "We now show how this system can be re-purposed to ask a new set of questions with kinesin-5 (Kif11) and kinesin-14 (Ncd), and form asters of varying sizes with each motor, demonstrating light-controlled aster formation with these motors for the first time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the current work supported by experimental data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "6c1afdab-8485-4511-87c1-f90bb352eea2",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C14",
+      "claim": "Calculated motor distributions in an aster depend on motor properties and fit with experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that calculated motor distributions in an aster depend on the motor properties and fit with our experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the model and experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "02c1b2cd-27e1-4c7a-9734-fc815635b796",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C15",
+      "claim": "Contraction rates in quasi-one-dimensional microtubule networks directly depend on the single-motor velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, by using motors with different speeds, we find that contraction rates in quasi-one-dimensional microtubule networks directly depend on the single-motor velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "ed449c8e-fc4d-41ae-8744-106a8a4f97bc",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C16",
+      "claim": "Kinesin motors are fused to the light-dimerizable pair iLid and micro.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, kinesin motors are fused to the light-dimerizable pair iLid and micro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "c89405b9-7efc-40b4-8be3-ee5d210aaa1f",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C17",
+      "claim": "In the absence of light, motor dimers walk along microtubules but do not organize them.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of light, motor dimers walk along microtubules but do not organize them",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavior of the experimental system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "62134c63-3819-4931-a5bd-fabbbbf64888",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C18",
+      "claim": "Upon activation with light, motor dimers couple together to form tetramers, crosslinking the microtubules they are walking along.",
+      "claim_type": "EXPLICIT",
+      "source": "upon activation with light, the motor dimers couple together to form tetramers, crosslinking the microtubules they are walking along as shown in Figure 1A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the behavior of the experimental system and is illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "024fac89-55c5-48d4-8703-8c434fd1a8d6",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C19",
+      "claim": "The optogenetic bond lasts for about 20 s before reverting to the undimerized state.",
+      "claim_type": "EXPLICIT",
+      "source": "The optogenetic bond lasts for about 20 s before reverting to the undimerized state, thus in our experiments, we repeatedly illuminate the sample every 20 s (Guntas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "c2303cb1-eae7-49dd-b641-e97e969e888a",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C20",
+      "claim": "Projecting a cylinder of light on the sample results in the formation of an aster.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated by Ross et al., projecting a cylinder of light on the sample results in the formation of an aster, and different structures can be formed and manipulated by illumination with different light patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "b0120fc2-1a9a-436d-b938-53cc2297868b",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C21",
+      "claim": "By varying concentrations of motors and microtubules, it is possible to form multiple smaller asters within the region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by varying concentrations of the motors and microtubules, it is possible to form multiple smaller asters within the region, a few examples of which are shown in Figure 1\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "7a95c1d7-c28c-49e9-8126-26ce42b2ee06",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C22",
+      "claim": "K401 has a speed of approximately 600 nm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "K401\t\u2248 600 nm/s",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured data from gliding assays as stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "c9d3c517-d69f-404d-bac6-21e6a6430c93",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C25",
+      "claim": "Ncd236 has a speed of approximately 115 nm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Ncd236\t\u2248115 nm/s",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured data from gliding assays as stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "4b8ed646-7527-454d-985d-e855b5b03338",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C28",
+      "claim": "Kif11(513) has a speed of approximately 70 nm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Kif11(513)\t\u224870 nm/s",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured data from gliding assays as stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "07d2b84a-5c8b-4439-b426-78439d19ee77",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C31",
+      "claim": "Each of the three motors (K401, Ncd236, Kif11) is able to form asters of varying sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 1B and Figure 1\u2014figure supplement 2, each of these motors is able to form asters of varying sizes in our system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "89d5026f-53d9-42fe-a514-8696fcc6f76c",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C32",
+      "claim": "Ncd has previously been shown to form asters as constitutive oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "although Ncd has previously been shown to form asters as constitutive oligomers (Belmonte et al., 2017; Hentrich and Surrey, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "7a6fab9d-5bc5-45dc-a91b-746ab469f3b4",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C33",
+      "claim": "All three motors were able to form asters upon illumination by various excitation diameters ranging from 50 to 600 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all were able to form asters upon illumination by various excitation diameters ranging from 50 to 600 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "19a8359d-d98b-46f4-b1b0-81bb9a41d248",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C34",
+      "claim": "The dynamics of aster formation by these motors roughly scale with the motor speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the dynamics of aster formation by these motors seemed to roughly scale with the motor speeds \u2013 K401 formed asters the quickest, followed by Ncd236, and Kif11 took the most time to form an aster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "bf1bc703-23c4-4747-9203-bafc8791232d",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C35",
+      "claim": "Aster size increases with excitation diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that aster size increases with excitation diameter, as shown in Figure 1B, D, consistent with what was shown by Ross et al. for K401 (Ross et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B, D and a literature citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "bcda9f07-5cbd-45f8-a046-06ac3f96234e",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C36",
+      "claim": "The aster size roughly scaled with the volume of the excitation area, suggesting that the number of microtubules limits the size of the aster.",
+      "claim_type": "EXPLICIT",
+      "source": "In Ross et al., it was determined that the aster size roughly scaled with the volume of the excitation area, suggesting that the number of microtubules limits the size of the aster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation and inference from prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "6a96b291-8787-4e35-879c-5ccfbf1c2780",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C37",
+      "claim": "For each excitation diameter except 50 \u03bcm, K401 formed the largest asters and Ncd formed the smallest, with Kif11 producing asters of intermediate size.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that the size of the asters also depends on the motor used. For each excitation diameter, except for the 50 \u03bcm case, K401 formed the largest asters and Ncd formed the smallest, with Kif11 producing asters of intermediate size (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "cb567b58-0420-4b30-899b-1a35c12d9aaf",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C38",
+      "claim": "The trend in aster size correlates with motor processivity, with K401 being the most processive, followed by Kif11, and then Ncd.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this trend correlates with motor processivity; K401 is the most processive, followed by Kif11, and then Ncd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing experimental data with known motor properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "595dfa4b-bf09-4b5e-bee1-3eb5d4235a4f",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C39",
+      "claim": "Intensity of aster formation was related to motor processivity in prior work by Surrey et al., 2001.",
+      "claim_type": "EXPLICIT",
+      "source": "This is similar to the findings in Surrey et al., 2001, in which intensity of aster formation was related to motor processivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "ef5c6432-9411-42d6-bc4c-549a0f701d3a",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C40",
+      "claim": "Continuum models were developed for motor-filament mixtures which predicted the radial profile of motors in confined two-dimensional systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies, continuum models were developed for motor-filament mixtures which predicted the radial profile of motors in confined two-dimensional systems (N\u00e9d\u00e9lec et al., 2001; Lee and Kardar, 2001; Sankararaman et al., 2004; Aranson and Tsimring, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "4194f347-15c6-415c-b54d-3dc2aaada168",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C42",
+      "claim": "Asters formed in the current experiments are three-dimensional due to the much larger depth of the flow cells (roughly 100 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in contrast to the earlier study (N\u00e9d\u00e9lec et al., 2001), asters formed in our experiments are three-dimensional due to the much larger depth of the flow cells (roughly 100 \u03bcm), and are thus more similar to the structures observed in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup and compares it to prior work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "73f040d2-5647-4f6a-92e5-90582d799db5",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C43",
+      "claim": "The asters are assumed to be radially symmetric outside the central disordered region (aster core).",
+      "claim_type": "EXPLICIT",
+      "source": "For modeling purposes, then, we consider our asters to be radially symmetric outside the central disordered region (which we refer to as the aster core, as depicted schematically in Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a modeling assumption based on experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "02f61009-ce87-4b33-9240-def4b0557611",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C46",
+      "claim": "In the steady state of the system, microtubules on average have no radial movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In the steady state of the system, which we assume our asters have reached at the end of the experiment, microtubules on average have no radial movement and hence, do not contribute to motor speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption validated by FRAP experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "9e5a7700-8a1d-4d7c-b587-d4f543adc1a4",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C47",
+      "claim": "FRAP experiments of steady-state asters show little radial flux of the microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the validity of this assumption, we performed fluorescence recovery after photobleaching (FRAP) experiments of steady-state asters, and observe little radial flux of the microtubules, an example is shown in Appendix 1\u2014figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "c616e9cb-50b6-4e84-b67d-a848e6ffb2b2",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C49",
+      "claim": "The model can capture specific features often seen in measured microtubule profiles, such as the presence of an inflection point.",
+      "claim_type": "EXPLICIT",
+      "source": "This is unlike the previous models which imposed specific functional forms on the microtubule distribution (e.g., a constant value [Lee and Kardar, 2001; Sankararaman et al., 2004] or a power-law decay [N\u00e9d\u00e9lec et al., 2001]), rendering them unable to capture the specific features often seen in our measured microtubule profiles, such as the presence of an inflection point (see Figure 1C for an example).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an advantage of the current model over prior models, with reference to data in Figure 1C.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "2091bea6-28ad-4ca5-a909-3177295a64d1",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C50",
+      "claim": "The model fits well to the average motor data for a Kif11 aster.",
+      "claim_type": "EXPLICIT",
+      "source": "A demonstration of this procedure on an example Kif11 aster is shown in Figure 2D where a good fit to the average motor data can be observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the fit shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "fec5fe60-5ecd-4b1d-a97f-524e225d91d2",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C52",
+      "claim": "The fitting error for asters is low.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitting error for other asters is similarly low (Figure 2E, see Figure 2\u2014figure supplement 1 for the collection of fitted profiles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2E and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "ddccb670-b82d-48fc-bf6c-b074e3be47c3",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C58",
+      "claim": "Highly processive movement was observed for clusters of HSET (human kinesin-14).",
+      "claim_type": "EXPLICIT",
+      "source": "A highly processive movement was similarly observed for clusters of HSET (human kinesin-14) (Norris et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "5172a42a-c96e-42d8-a74b-47a6356842d2",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C59",
+      "claim": "Highly processive movement was observed for plant kinesin-14 motors.",
+      "claim_type": "EXPLICIT",
+      "source": "and plant kinesin-14 motors (Jonsson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "669b8e9d-a3e5-4b16-8cdc-49aa7124256d",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C66",
+      "claim": "Stalling of motors upon reaching the microtubule ends contributes to reduction in effective speed.",
+      "claim_type": "EXPLICIT",
+      "source": "One contributor to this reduction is the stalling of motors upon reaching the microtubule ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on inference from the model and experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "82e2512f-8e5b-4bee-81b3-73fed91a209e",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C69",
+      "claim": "Jamming of K401 motors in dense aster regions may contribute to the discrepancy between inferred and estimated \u03bb0.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that an additional contribution may come from the jamming of K401 motors in dense aster regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on inference from literature and experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "bbf7b828-5d83-41df-837e-84bb324a8e73",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C70",
+      "claim": "K401 motors pause when encountering obstructions during their walk.",
+      "claim_type": "EXPLICIT",
+      "source": "This is motivated by the experiments which showed that K401 motors would pause when encountering obstructions during their walk (Ferro et al., 2019; Schneider et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "ef73c90b-25f7-4a40-af4d-221593ea9172",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C71",
+      "claim": "The minimal model of motor distributions is able to capture the distinctions in aster structure through motor-specific effective parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our study shows that the minimal model of motor distributions proposed in Figure 2 is able to capture the distinctions in aster structure through motor-specific effective parameters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the model fitting to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "4e6f4483-ff47-477f-b3bf-fbb3f9bf20e4",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C72",
+      "claim": "The distribution of microtubules is generally broader than that of the motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also provides insights on the observation that the distribution of microtubules is generally broader than that of the motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "848bb0fa-e925-446e-95a5-02f2446d4d35",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C73",
+      "claim": "The relative width of the motor distribution compared to the microtubule distribution is fairly constant among asters.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative width of the motor distribution compared to the microtubule distribution is fairly constant among asters, with their difference being the largest for Ncd motors, consistent with our model predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of experimental data and model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "e41aece5-7932-475f-b12a-9297622c94f8",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C74",
+      "claim": "Ross et al. demonstrated the formation of quasi-one-dimensional contractile networks by creating two asters that are initially separated by a given distance, then activating a thin rectangular region between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Ross et al. demonstrated the formation of quasi-one-dimensional contractile networks by creating two asters that are initially separated by a given distance, then activating a thin rectangular region between them to form a network connecting the asters that pulls them together (Ross et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "8a71d03c-c0a0-464d-8d92-d8b19f7ac390",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C75",
+      "claim": "An increase in maximum aster merger speed with greater initial separation was observed in prior work.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, an increase in maximum aster merger speed with greater initial separation was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to observations from prior work (Ross et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "aac3f18c-b5c7-4835-8a36-b15563502ef6",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C76",
+      "claim": "A linear increase in contractile speed with distance from the center of the network is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Using optical flow to measure the contraction speed throughout the network, we observe a linear increase in contractile speed with distance from the center of the network, as shown in Figure 3b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "427c1783-3214-4389-b55d-3fc266e78f83",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C77",
+      "claim": "The linear relationship between speed and distance suggests that the contractile network can be thought of as a series of connected contractile units.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship suggests that the contractile network can be thought of as a series of connected contractile units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "4f5d4418-9497-4a93-8cac-9e3b3513c26d",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C78",
+      "claim": "The findings are in agreement with results from several studies of contractile rates in actomyosin networks that suggested telescoping models of contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in agreement with results from several studies of contractile rates in actomyosin networks, that suggested telescoping models of contraction, and suggest that this may be a common mechanism across cytosketetal networks (Thoresen et al., 2011; Linsmeier et al., 2016; Schuppler et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by literature citations and inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "74437ac3-d1d4-45bb-9b23-3ab784fa702e",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C79",
+      "claim": "The ratios of the slopes of the best fit lines for merger speed vs. separation match the ratios of motor speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the ratios of the slopes of these lines match the ratios of motor speeds from Table 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of experimental data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "ad1c5eac-de01-4f52-ac38-c5ab66adc472",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C84",
+      "claim": "The rate of contraction in the network is set by the motor speed and the increase of network speed with distance is due to adding more connected contractile units.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that the rate of contraction in the network is set by the motor speed and the increase of network speed with distance is due to adding more connected contractile units (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on experimental data and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "a3e02c3b-ca55-467c-870c-dd6822f5e5f0",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C85",
+      "claim": "Only the initial contraction rate is measured in the merger experiments, over the first approximately 100 s.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that we only measure the initial contraction rate in these experiments, over the first \u2248100 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental measurement protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "350455b5-2fa0-4a9c-95ad-09fdbb5d8ce5",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C86",
+      "claim": "On the time scale of approximately 100 s, the network is thought of as an elastic material.",
+      "claim_type": "EXPLICIT",
+      "source": "On this time scale, we think of the network as an elastic material, since the time for motor unbinding and rearrangement should be longer than this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption based on inference about time scales.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "454c8edf-9a15-40e9-ba72-30f912768f6f",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C87",
+      "claim": "The time scale for the optogenetic pair to unbind is about 20 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The time scale for the optogenetic pair to unbind is about 20 s (Guntas et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "68be79d6-f392-42f5-be17-c49d6bf39393",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C88",
+      "claim": "The average time for two optogenetic pairs to unbind is about 400 s.",
+      "claim_type": "EXPLICIT",
+      "source": "since binding events are independent then the average time for two to unbind is about 400 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on statistical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "cdf0dfbd-e143-494a-9d1a-7bdcb16d0e98",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C89",
+      "claim": "Processivity is the key control variable for aster size.",
+      "claim_type": "EXPLICIT",
+      "source": "Our leading hypothesis is that the key control variable is the processivity of the motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "58c7ff30-37a4-49e1-b3aa-b66957fd8fd6",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C90",
+      "claim": "Surrey et al. found that processivity affected the intensity of aster formation in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Early work by Surrey et al. found that processivity affected the intensity of aster formation in simulations, which may be related to our observations, but to the best of our knowledge no model of this effect has been developed (Surrey et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "368a62eb-88fb-4882-9082-e7425a0ae4fe",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C91",
+      "claim": "The parameters inferred from the model in some cases differ from those expected from the single-molecule properties of the motors, indicating that higher-order effects are playing important roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the parameters we infer in some cases differ from those we would expect from the single-molecule properties of the motors, indicating that higher-order effects such as cooperativity in collections of motors increasing the processivity of the collective, are playing important roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing model results with expected values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "0d5d943a-f558-415e-be89-24fa8012ce15",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C92",
+      "claim": "Contraction speeds measured in pseudo-one-dimensional networks are related to the single-motor speed.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we measure contraction speeds in pseudo-one-dimensional networks and find that the speeds are related to the single-motor speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "4ed92094-e185-4cfc-89a6-949b52e1afc0",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C93",
+      "claim": "Human kinesin-5 (Kif11/Eg5) 5\u2013513 was PCR amplified from mCherry-Kinesin11-N-18 plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Human kinesin-5 (Kif11/Eg5) 5\u2013513 was PCR amplified from mCherry-Kinesin11-N-18 plasmid (gift from Michael Davidson, Addgene # 55067).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "f5d9245e-701d-493c-8165-05f83e719bbd",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C94",
+      "claim": "The Kif11 5-513 fragment was previously shown to form functional dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "This fragment was previously shown to form functional dimers (Valentine et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "cfe1ac26-cb1b-422d-9d38-707a953219ab",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C95",
+      "claim": "Kinesin 1 1\u2013401 (K401) was PCR amplified from pWC2 plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin 1 1\u2013401 (K401) was PCR amplified from pWC2 plasmid (Addgene # 15960).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "4063659e-96b3-40b1-a822-3255dff6b422",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C96",
+      "claim": "Ncd 236\u2013701 was PCR amplified from a plasmid gifted by Andrea Serra-Marques.",
+      "claim_type": "EXPLICIT",
+      "source": "Ncd 236\u2013701 was PCR amplified from a plasmid gifted by Andrea Serra-Marques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "c00223e1-4851-4104-b5c2-37f1cd09e9fc",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C97",
+      "claim": "Protein expression and purification was done in SF9 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein expression and purification was done in SF9 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "2d0c65d4-48f9-4fcb-a2c4-19ec79548301",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C98",
+      "claim": "Microtubules were polymerized with 75 \u03bcM unlabeled tubulin and 5 \u03bcM tubulin-Alexa Fluor 647.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, 75 \u03bcM unlabeled tubulin (Cytoskeleton) and 5 \u03bcM tubulin-Alexa Fluor 647 (Cytoskeleton) were combined with 1 mM DTT and 0.6 mM GMP-CPP in M2B buffer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "0371bd4f-9316-4069-af70-6366d9a733d0",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C99",
+      "claim": "GMP-CPP stabilized microtubules were formed by incubation at 37\u00b0C for 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "then the supernatant was incubated at 37\u00b0C for 1 hr to form GMP-CPP stabilized microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "be0a558b-3d51-4ff6-94b7-95c25366b308",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C102",
+      "claim": "Experiments were run with Micro-Manager, running custom scripts to control pattern projection and stage movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were run with Micro-Manager (Edelstein et al., 2010), running custom scripts to controlled pattern projection and stage movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods and cites the software used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "5ea1a8f5-ec43-421c-949f-07b5ad2a9233",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C104",
+      "claim": "After an hour of activation, a z-stack of the microtubule and motor fluorescence throughout the depth of the flow chamber was taken at 5 \u03bcm increments in each position.",
+      "claim_type": "EXPLICIT",
+      "source": "After an hour of activation, a z-stack of the microtubule and motor fluorescence throughout the depth of the flow chamber was taken at 5 \u03bcm increments in each position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "85152c29-55d4-4ea5-b560-12bec278b388",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C105",
+      "claim": "Motor speeds were determined by gliding assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor speeds were determined by gliding assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "bcc5382c-3449-494d-a197-724828dba1e2",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C106",
+      "claim": "Individual microtubules were tracked using custom-written Python code to determine their speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual microtubules were tracked using custom-written Python code to determine their speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "a635af80-adef-4f38-8fdc-51960d399a7f",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C107",
+      "claim": "The asters have centers that are very dense with motors and microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that the asters we create have centers that are very dense with motors and microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "a2b47fcb-8aa7-459b-b8d1-84f023e73820",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C108",
+      "claim": "By fluorescence microscopy, organized aster arms are not observed in the dense central region.",
+      "claim_type": "EXPLICIT",
+      "source": "By fluorescence microscopy, we do not observe organized aster arms in this region and hypothesized that the microtubules are disordered in this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "af70ebd6-a217-4d76-8c09-93bba7f1123f",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C109",
+      "claim": "When imaged with a Pol-Scope, the arms of the asters are bright, indicating high alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "When imaged with a Pol-Scope, the arms of our asters are bright, indicating high alignment, and their azimuthal angle confirms that they are radially symmetric around the center (Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Appendix 1\u2014figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "b4fa2330-d018-4430-a30b-e2aa307369fe",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C110",
+      "claim": "The center of the aster is dark in Pol-Scope imaging, which is interpreted to mean that this region is disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "The center of the aster is dark, which we interpret to mean that this region is disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "9a6d7404-cf7a-467a-a319-da3883de745f",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C111",
+      "claim": "A disordered center may result from steric hindrance due to a high density of microtubules in that region.",
+      "claim_type": "EXPLICIT",
+      "source": "A disordered center may be a result from steric hindrance due to a high density of microtubules in that region, which prevents the motors from aligning the microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on inference from experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "d724e159-4ba9-46f9-806d-2b8b6c98cdab",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C112",
+      "claim": "FRAP experiments show there is little to no net radial movement of the microtubules, and slow angular motion.",
+      "claim_type": "EXPLICIT",
+      "source": "From these images, it is clear that there is little to no net radial movement of the microtubules, and slow angular motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data shown in Appendix 1\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "8afc7ee6-3e7f-444d-8b6c-94bffe3e0698",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C113",
+      "claim": "For the smallest asters, the aster size can be larger than the illumination region.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be seen in these images that for the smallest asters, the aster size can be larger than the illumination region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "0b305807-a53a-410b-9cf2-b7229f66ff55",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C114",
+      "claim": "Diffusion of dimerized motors outside of the activation region allows them to bind microtubules in the background region and incorporate them into the asters.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe this is due to diffusion of dimerized motors outside of the activation region, where they can bind microtubules in the background region and incorporate them into the asters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on inference from experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "aebfc6ca-f254-48b0-91f7-4b105563ecbc",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C115",
+      "claim": "For larger excitation diameters, the microtubules in the activated region get concentrated in the aster, leaving a region depleted of microtubules between the aster and the background region.",
+      "claim_type": "EXPLICIT",
+      "source": "For larger excitation diameters, the microtubules in the activated region get concentrated in the aster, leaving a region depleted of microtubules between the aster and the background region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "eff0310a-9449-4147-96aa-d9a2ec06390e",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "claim_id": "C116",
+      "claim": "The outer radius of the aster is defined as the radius at which the median microtubule fluorescence is twice the background fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to define the outer radius of the aster as the radius at which the median microtubule fluorescence is twice the background fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4c559564-1636-4183-a9ef-55a1c4235bf9",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Light-controlled aster formation is demonstrated for the first time with kinesin-5 (Kif11) and kinesin-14 (Ncd), in addition to kinesin-1 (K401). All three motors form asters upon illumination with excitation diameters ranging from 50 to 600 \u03bcm, with measured speeds of ~600 nm/s (K401), ~115 nm/s (Ncd236), and ~70 nm/s (Kif11).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C31, and C33 are directly supported by experimental data in Figure 1B and Figure 1\u2014figure supplement 2. Motor speeds (C22, C25, C28) are measured by gliding assays (C105, C106) and reported in Table 1. This represents a novel technical achievement extending prior work with K401 to two additional motor types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "66799fab-0d1c-484c-a375-9d2edb7f9f6a",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Aster size depends on the motor used and increases with excitation diameter. K401 forms the largest asters, Ncd forms the smallest, and Kif11 produces intermediate-sized asters (except at 50 \u03bcm excitation). This trend correlates with motor processivity, with the number of microtubules limiting aster size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C35, and C37 are directly supported by quantitative data in Figure 1D showing aster size measurements across motors and excitation diameters. The correlation with processivity (C38) is a reasonable inference from known motor properties. The microtubule limitation hypothesis (C36) is supported by prior work (Ross et al., 2019).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "8e7a0b5d-5b86-4948-b5fc-7e215099d504",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The dynamics of aster formation roughly scale with motor speeds, with K401 forming asters quickest, followed by Ncd236, then Kif11.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C34 is a qualitative observation without quantitative measurements or statistical analysis. While the observation is plausible given the measured motor speeds, no kinetic data or formation time measurements are provided to support this claim rigorously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "f810b12b-7568-430a-8094-10f2054778e6",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A minimal model predicts motor distributions in steady-state asters based on microtubule distributions and motor-specific effective parameters (Kd and \u03bb0). The model fits experimental data well across all three motor types, capturing features like inflection points in microtubule profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C52 show good model fits to experimental data (Figure 2D, 2E, Figure 2\u2014figure supplement 1). The model assumptions (C43, C46) are validated by FRAP experiments (C47, Appendix 1\u2014figure 4). The model's ability to capture specific profile features (C49) represents an improvement over prior models. Overall conclusion C71 is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "4b14508b-25f4-4197-92d0-daa1dcd5bc44",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The inferred effective speed parameter \u03bb0 for K401 is much higher than expected from single-motor properties, potentially due to motor stalling at microtubule ends and jamming in dense aster regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66 and C69 are explicitly labeled as speculation and hypotheses. While C70 cites literature support for K401 pausing behavior, the quantitative contribution of stalling and jamming to the observed discrepancy remains unvalidated. The ~25-fold discrepancy between inferred and estimated \u03bb0 is acknowledged but not fully explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "f0172f8c-e0ad-4731-8a22-ea8fd6fc564e",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The unexpectedly low inferred Kd for Ncd motors may be explained by collective effects increasing processivity, as observed in prior studies of clustered kinesin-14 motors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C58 and C59 cite literature showing increased processivity for clustered kinesin-14 motors, this explanation for the low Ncd Kd values remains speculative. No direct experimental evidence is provided in the current work to demonstrate that Ncd tetramers exhibit enhanced processivity in these asters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "8d677a4d-e3cf-4926-b9f7-b7f4bc1b1bd1",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Microtubule distributions are generally broader than motor distributions, with the relative width being fairly constant among asters and largest for Ncd motors, consistent with model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is directly observable in Figure 2D and Figure 2\u2014figure supplement 1. Claim C73 is supported by analysis of experimental data and agreement with model predictions. This represents a testable prediction of the model that is confirmed experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "441cebfd-7925-4bd8-ad2f-8453f45f8088",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Network contraction rates in quasi-one-dimensional experiments scale linearly with single-motor speed. Contraction speed increases linearly with distance from the network center, suggesting a telescoping model where the network consists of connected contractile units.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76 and C79 are directly supported by experimental data in Figure 3b and 3c. The linear relationship between merger speed and separation, with slopes matching motor speed ratios, provides strong quantitative support. The telescoping model interpretation (C77, C84) is a reasonable inference consistent with prior actomyosin studies (C78).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "f1dfe92b-c0d1-4c0c-b0fd-39b6c73b8edc",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Only initial contraction rates (~100 s) are measured, during which the network behaves as an elastic material since motor unbinding timescales (~400 s for two optogenetic pairs) are longer than the measurement period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 clearly states the experimental limitation. The elastic material assumption (C86) is justified by comparing measurement timescale to unbinding timescales. The 20 s unbinding time (C87) is literature-supported, and the 400 s calculation (C88) follows from statistical reasoning about independent binding events.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "bd8d3bb8-29e7-4306-85e3-0d5fec57c6f7",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Processivity is hypothesized to be the key control variable for aster size, with higher-order effects like motor cooperativity playing important roles, as evidenced by discrepancies between inferred and expected single-molecule parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is explicitly labeled as a hypothesis. While C90 cites prior work suggesting processivity affects aster formation, and C91 notes parameter discrepancies suggesting higher-order effects, no mechanistic model or direct experimental validation of the processivity hypothesis is provided. This remains an important open question requiring future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "74339ccf-116a-4a9c-8684-16ed08990756",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The optogenetic system uses light-dimerizable proteins (iLid and micro) fused to kinesin motors. In darkness, motor dimers walk along microtubules without organizing them; upon light activation, dimers couple to form tetramers that crosslink microtubules. The optogenetic bond lasts ~20 s before reverting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 describe the experimental system design, illustrated in Figure 1A. Claim C19 is supported by literature citation (Guntas et al., 2015). This system description is consistent with prior work (C10, C12) and provides the foundation for all experiments in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "d945ee67-e205-4dce-a800-fe037ad501bc",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Aster centers are very dense with motors and microtubules and appear disordered by fluorescence microscopy. Pol-Scope imaging shows bright, aligned arms but a dark center, interpreted as a disordered core possibly due to steric hindrance at high microtubule density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C110 are supported by experimental observations from fluorescence and Pol-Scope imaging (Appendix 1\u2014figure 3). The steric hindrance explanation (C111) is reasonable speculation. This justifies excluding the core region from the radial symmetry model (C43).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "40327c48-a8ae-4a87-9d71-a249f917faca",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FRAP experiments demonstrate that steady-state asters have little to no net radial movement of microtubules, with slow angular motion, validating the steady-state assumption in the model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112 and C47 are directly supported by FRAP experimental data shown in Appendix 1\u2014figure 4. This validates a key modeling assumption (C46) that microtubules have no average radial movement at steady state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "4cf20c92-dfa2-4a6f-9d01-bca90e96bb74",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "For small excitation diameters, aster size can exceed the illumination region, likely due to motor diffusion recruiting background microtubules. For larger diameters, microtubules concentrate in the aster, creating a depleted region. Aster outer radius is defined as where microtubule fluorescence is twice background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C113 is an observation from Figure 1\u2014figure supplement 2. The diffusion explanation (C114) is reasonable speculation. Claim C115 is an experimental observation. The size definition (C116) is a methodological choice that agrees with visual inspection (Figure 1\u2014figure supplement 2).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Motor constructs were cloned and expressed in SF9 cells, microtubules were polymerized with GMP-CPP, experiments were conducted using custom microscopy with pattern projection controlled by Micro-Manager, and motor speeds were measured by gliding assays with custom Python tracking code.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C93-C106) describe standard molecular biology, biochemistry, and microscopy methods. The methods are sufficiently detailed and cite appropriate sources (e.g., Addgene plasmids, Micro-Manager software). These are routine techniques appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "45b4f0d4-13cc-481e-b2cd-5989cc7c2ad6",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "By varying motor and microtubule concentrations, it is possible to form multiple smaller asters within the illumination region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 is supported by experimental observations in Figure 1\u2014figure supplement 1, showing examples of different aster formation patterns. However, the authors note this phenomenon warrants further investigation, indicating it is not fully characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    },
+    {
+      "id": "197e5d08-bf94-40ca-aabf-d66d2c2c0b3c",
+      "content_id": "8d3aabe2-70d5-4fed-bddb-d9fea1ca9925",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The findings are in agreement with telescoping models of contraction from actomyosin network studies, suggesting this may be a common mechanism across cytoskeletal networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 appropriately cites relevant literature (Thoresen et al., 2011; Linsmeier et al., 2016; Schuppler et al., 2016) and makes a reasonable inference about common mechanisms. This contextualizes the current findings within the broader field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:59:33.046516Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6e5139e8-2595-4700-9cc6-b98e93d69197",
+      "result_id": "4c559564-1636-4183-a9ef-55a1c4235bf9"
+    },
+    {
+      "claim_id": "07d2b84a-5c8b-4439-b426-78439d19ee77",
+      "result_id": "4c559564-1636-4183-a9ef-55a1c4235bf9"
+    },
+    {
+      "claim_id": "7a6fab9d-5bc5-45dc-a91b-746ab469f3b4",
+      "result_id": "4c559564-1636-4183-a9ef-55a1c4235bf9"
+    },
+    {
+      "claim_id": "7a95c1d7-c28c-49e9-8126-26ce42b2ee06",
+      "result_id": "4c559564-1636-4183-a9ef-55a1c4235bf9"
+    },
+    {
+      "claim_id": "c9d3c517-d69f-404d-bac6-21e6a6430c93",
+      "result_id": "4c559564-1636-4183-a9ef-55a1c4235bf9"
+    },
+    {
+      "claim_id": "4b8ed646-7527-454d-985d-e855b5b03338",
+      "result_id": "4c559564-1636-4183-a9ef-55a1c4235bf9"
+    },
+    {
+      "claim_id": "f56c139f-dc0b-47e5-b4d1-d24db8c4e6b1",
+      "result_id": "66799fab-0d1c-484c-a375-9d2edb7f9f6a"
+    },
+    {
+      "claim_id": "bf1bc703-23c4-4747-9203-bafc8791232d",
+      "result_id": "66799fab-0d1c-484c-a375-9d2edb7f9f6a"
+    },
+    {
+      "claim_id": "6a96b291-8787-4e35-879c-5ccfbf1c2780",
+      "result_id": "66799fab-0d1c-484c-a375-9d2edb7f9f6a"
+    },
+    {
+      "claim_id": "cb567b58-0420-4b30-899b-1a35c12d9aaf",
+      "result_id": "66799fab-0d1c-484c-a375-9d2edb7f9f6a"
+    },
+    {
+      "claim_id": "bcda9f07-5cbd-45f8-a046-06ac3f96234e",
+      "result_id": "66799fab-0d1c-484c-a375-9d2edb7f9f6a"
+    },
+    {
+      "claim_id": "19a8359d-d98b-46f4-b1b0-81bb9a41d248",
+      "result_id": "8e7a0b5d-5b86-4948-b5fc-7e215099d504"
+    },
+    {
+      "claim_id": "6c1afdab-8485-4511-87c1-f90bb352eea2",
+      "result_id": "f810b12b-7568-430a-8094-10f2054778e6"
+    },
+    {
+      "claim_id": "73f040d2-5647-4f6a-92e5-90582d799db5",
+      "result_id": "f810b12b-7568-430a-8094-10f2054778e6"
+    },
+    {
+      "claim_id": "02f61009-ce87-4b33-9240-def4b0557611",
+      "result_id": "f810b12b-7568-430a-8094-10f2054778e6"
+    },
+    {
+      "claim_id": "9e5a7700-8a1d-4d7c-b587-d4f543adc1a4",
+      "result_id": "f810b12b-7568-430a-8094-10f2054778e6"
+    },
+    {
+      "claim_id": "c616e9cb-50b6-4e84-b67d-a848e6ffb2b2",
+      "result_id": "f810b12b-7568-430a-8094-10f2054778e6"
+    },
+    {
+      "claim_id": "2091bea6-28ad-4ca5-a909-3177295a64d1",
+      "result_id": "f810b12b-7568-430a-8094-10f2054778e6"
+    },
+    {
+      "claim_id": "fec5fe60-5ecd-4b1d-a97f-524e225d91d2",
+      "result_id": "f810b12b-7568-430a-8094-10f2054778e6"
+    },
+    {
+      "claim_id": "ef73c90b-25f7-4a40-af4d-221593ea9172",
+      "result_id": "f810b12b-7568-430a-8094-10f2054778e6"
+    },
+    {
+      "claim_id": "669b8e9d-a3e5-4b16-8cdc-49aa7124256d",
+      "result_id": "4b14508b-25f4-4197-92d0-daa1dcd5bc44"
+    },
+    {
+      "claim_id": "82e2512f-8e5b-4bee-81b3-73fed91a209e",
+      "result_id": "4b14508b-25f4-4197-92d0-daa1dcd5bc44"
+    },
+    {
+      "claim_id": "bbf7b828-5d83-41df-837e-84bb324a8e73",
+      "result_id": "4b14508b-25f4-4197-92d0-daa1dcd5bc44"
+    },
+    {
+      "claim_id": "ddccb670-b82d-48fc-bf6c-b074e3be47c3",
+      "result_id": "f0172f8c-e0ad-4731-8a22-ea8fd6fc564e"
+    },
+    {
+      "claim_id": "5172a42a-c96e-42d8-a74b-47a6356842d2",
+      "result_id": "f0172f8c-e0ad-4731-8a22-ea8fd6fc564e"
+    },
+    {
+      "claim_id": "4e6f4483-ff47-477f-b3bf-fbb3f9bf20e4",
+      "result_id": "8d677a4d-e3cf-4926-b9f7-b7f4bc1b1bd1"
+    },
+    {
+      "claim_id": "848bb0fa-e925-446e-95a5-02f2446d4d35",
+      "result_id": "8d677a4d-e3cf-4926-b9f7-b7f4bc1b1bd1"
+    },
+    {
+      "claim_id": "5e543105-c004-4993-a94c-f4ff7a3bcbba",
+      "result_id": "441cebfd-7925-4bd8-ad2f-8453f45f8088"
+    },
+    {
+      "claim_id": "02c1b2cd-27e1-4c7a-9734-fc815635b796",
+      "result_id": "441cebfd-7925-4bd8-ad2f-8453f45f8088"
+    },
+    {
+      "claim_id": "aac3f18c-b5c7-4835-8a36-b15563502ef6",
+      "result_id": "441cebfd-7925-4bd8-ad2f-8453f45f8088"
+    },
+    {
+      "claim_id": "427c1783-3214-4389-b55d-3fc266e78f83",
+      "result_id": "441cebfd-7925-4bd8-ad2f-8453f45f8088"
+    },
+    {
+      "claim_id": "74437ac3-d1d4-45bb-9b23-3ab784fa702e",
+      "result_id": "441cebfd-7925-4bd8-ad2f-8453f45f8088"
+    },
+    {
+      "claim_id": "ad1c5eac-de01-4f52-ac38-c5ab66adc472",
+      "result_id": "441cebfd-7925-4bd8-ad2f-8453f45f8088"
+    },
+    {
+      "claim_id": "0d5d943a-f558-415e-be89-24fa8012ce15",
+      "result_id": "441cebfd-7925-4bd8-ad2f-8453f45f8088"
+    },
+    {
+      "claim_id": "a3e02c3b-ca55-467c-870c-dd6822f5e5f0",
+      "result_id": "f1dfe92b-c0d1-4c0c-b0fd-39b6c73b8edc"
+    },
+    {
+      "claim_id": "350455b5-2fa0-4a9c-95ad-09fdbb5d8ce5",
+      "result_id": "f1dfe92b-c0d1-4c0c-b0fd-39b6c73b8edc"
+    },
+    {
+      "claim_id": "454c8edf-9a15-40e9-ba72-30f912768f6f",
+      "result_id": "f1dfe92b-c0d1-4c0c-b0fd-39b6c73b8edc"
+    },
+    {
+      "claim_id": "68be79d6-f392-42f5-be17-c49d6bf39393",
+      "result_id": "f1dfe92b-c0d1-4c0c-b0fd-39b6c73b8edc"
+    },
+    {
+      "claim_id": "cdf0dfbd-e143-494a-9d1a-7bdcb16d0e98",
+      "result_id": "bd8d3bb8-29e7-4306-85e3-0d5fec57c6f7"
+    },
+    {
+      "claim_id": "58c7ff30-37a4-49e1-b3aa-b66957fd8fd6",
+      "result_id": "bd8d3bb8-29e7-4306-85e3-0d5fec57c6f7"
+    },
+    {
+      "claim_id": "368a62eb-88fb-4882-9082-e7425a0ae4fe",
+      "result_id": "bd8d3bb8-29e7-4306-85e3-0d5fec57c6f7"
+    },
+    {
+      "claim_id": "ed449c8e-fc4d-41ae-8744-106a8a4f97bc",
+      "result_id": "74339ccf-116a-4a9c-8684-16ed08990756"
+    },
+    {
+      "claim_id": "c89405b9-7efc-40b4-8be3-ee5d210aaa1f",
+      "result_id": "74339ccf-116a-4a9c-8684-16ed08990756"
+    },
+    {
+      "claim_id": "62134c63-3819-4931-a5bd-fabbbbf64888",
+      "result_id": "74339ccf-116a-4a9c-8684-16ed08990756"
+    },
+    {
+      "claim_id": "024fac89-55c5-48d4-8703-8c434fd1a8d6",
+      "result_id": "74339ccf-116a-4a9c-8684-16ed08990756"
+    },
+    {
+      "claim_id": "80dae8b5-a313-44fc-97e3-2ba156cb72a7",
+      "result_id": "74339ccf-116a-4a9c-8684-16ed08990756"
+    },
+    {
+      "claim_id": "a635af80-adef-4f38-8fdc-51960d399a7f",
+      "result_id": "d945ee67-e205-4dce-a800-fe037ad501bc"
+    },
+    {
+      "claim_id": "a2b47fcb-8aa7-459b-b8d1-84f023e73820",
+      "result_id": "d945ee67-e205-4dce-a800-fe037ad501bc"
+    },
+    {
+      "claim_id": "af70ebd6-a217-4d76-8c09-93bba7f1123f",
+      "result_id": "d945ee67-e205-4dce-a800-fe037ad501bc"
+    },
+    {
+      "claim_id": "b4fa2330-d018-4430-a30b-e2aa307369fe",
+      "result_id": "d945ee67-e205-4dce-a800-fe037ad501bc"
+    },
+    {
+      "claim_id": "9a6d7404-cf7a-467a-a319-da3883de745f",
+      "result_id": "d945ee67-e205-4dce-a800-fe037ad501bc"
+    },
+    {
+      "claim_id": "d724e159-4ba9-46f9-806d-2b8b6c98cdab",
+      "result_id": "40327c48-a8ae-4a87-9d71-a249f917faca"
+    },
+    {
+      "claim_id": "9e5a7700-8a1d-4d7c-b587-d4f543adc1a4",
+      "result_id": "40327c48-a8ae-4a87-9d71-a249f917faca"
+    },
+    {
+      "claim_id": "8afc7ee6-3e7f-444d-8b6c-94bffe3e0698",
+      "result_id": "4cf20c92-dfa2-4a6f-9d01-bca90e96bb74"
+    },
+    {
+      "claim_id": "0b305807-a53a-410b-9cf2-b7229f66ff55",
+      "result_id": "4cf20c92-dfa2-4a6f-9d01-bca90e96bb74"
+    },
+    {
+      "claim_id": "aebfc6ca-f254-48b0-91f7-4b105563ecbc",
+      "result_id": "4cf20c92-dfa2-4a6f-9d01-bca90e96bb74"
+    },
+    {
+      "claim_id": "eff0310a-9449-4147-96aa-d9a2ec06390e",
+      "result_id": "4cf20c92-dfa2-4a6f-9d01-bca90e96bb74"
+    },
+    {
+      "claim_id": "4ed92094-e185-4cfc-89a6-949b52e1afc0",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "f5d9245e-701d-493c-8165-05f83e719bbd",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "cfe1ac26-cb1b-422d-9d38-707a953219ab",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "4063659e-96b3-40b1-a822-3255dff6b422",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "c00223e1-4851-4104-b5c2-37f1cd09e9fc",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "2d0c65d4-48f9-4fcb-a2c4-19ec79548301",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "0371bd4f-9316-4069-af70-6366d9a733d0",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "be0a558b-3d51-4ff6-94b7-95c25366b308",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "5ea1a8f5-ec43-421c-949f-07b5ad2a9233",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "85152c29-55d4-4ea5-b560-12bec278b388",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "bcc5382c-3449-494d-a197-724828dba1e2",
+      "result_id": "bc73f791-fe1f-4b00-a5f1-e178aa0b934b"
+    },
+    {
+      "claim_id": "b0120fc2-1a9a-436d-b938-53cc2297868b",
+      "result_id": "45b4f0d4-13cc-481e-b2cd-5989cc7c2ad6"
+    },
+    {
+      "claim_id": "4f5d4418-9497-4a93-8cac-9e3b3513c26d",
+      "result_id": "197e5d08-bf94-40ca-aabf-d66d2c2c0b3c"
+    }
+  ],
+  "comparisons": []
+}

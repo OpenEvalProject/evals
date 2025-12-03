@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "TgTRPPL-2 (TgGT1_310560) is expressed in T. gondii tachyzoites, localizes to both the plasma membrane and endoplasmic reticulum, and is likely post-translationally cleaved. The protein shows high structural homology to human PC2 despite low sequence homology (21.7%), with a predicted molecular weight of 237 kDa but observed at ~150 kDa, suggesting cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C47 are well-supported by multiple complementary approaches including bioinformatic analysis (C35-C38), western blot showing the cleaved product (C39-C40), immunofluorescence with both tagged and antibody-based detection (C41-C45), and super-resolution microscopy (C45). The dual localization to PM and ER is confirmed by co-localization with SAG1 and TgSERCA markers. The cleavage inference is reasonable given the molecular weight discrepancy and is consistent with known TRP channel biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Deletion of TgTRPPL-2 (\u0394TgTRPPL-2 mutant) results in defects in parasite growth, invasion, and egress. The mutant shows reduced plaque size, decreased invasion rate (particularly at high extracellular Ca2+), and delayed egress (taking twice as long as parental strain). Complementation partially restores the phenotype, though overexpression may mask full rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C58 are supported by appropriate genetic controls (PCR, qPCR showing transcript reduction), functional assays (plaque assays, red-green invasion assays, egress assays with saponin and Zaprinast), and complementation experiments. The partial rescue in the complemented line is acknowledged and explained by potential overexpression effects (C51). Statistical significance is reported for key comparisons. The calcium-dependence of invasion (C52-C54) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "TgTRPPL-2 is essential for Ca2+ influx at the plasma membrane in T. gondii. The \u0394TgTRPPL-2 mutant shows ~50% reduction in Ca2+ influx, reduced constitutive Ca2+ leakage, and complete loss of Ca2+-activated Ca2+ entry (CACE). The complemented strain restores and exceeds wild-type Ca2+ influx, consistent with overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C60-C75 are well-supported by systematic Fura-2 calcium imaging experiments testing multiple conditions: basal Ca2+ influx (C61-C62), constitutive leakage (C63-C64), and CACE with thapsigargin and Zaprinast (C68-C73). The resting Ca2+ concentration is unchanged (C60), indicating the defect is specific to influx mechanisms. The dose-response relationship and complementation data strengthen the conclusions. Statistical analyses are provided for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "TgTRPPL-2 functions as a Ca2+-conducting cation channel with properties distinct from its human homolog PC2. When expressed in HEK-3KO cells, TgTRPPL-2 shows linear current-voltage relationship (not voltage-dependent like PC2), conductance of ~55 pS, inhibition by high luminal Ca2+ (10 mM), and activation by cytosolic Ca2+ (100 nM to 10 \u03bcM, increasing conductance 2.5-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C76-C89 are supported by rigorous patch-clamp electrophysiology using the cytosolic-side-out configuration on nuclear membranes from HEK-3KO cells. The comparison with PC2 as a positive control (C80-C81) validates the approach. Multiple experimental conditions test Ca2+ modulation from both sides of the membrane (C83-C88). The conductance values are within the range reported for PC2 in other studies (C81). The use of HEK-3KO cells (lacking endogenous IP3 receptors) reduces background currents. Statistical analyses are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "TgTRPPL-2 is a non-selective cation channel capable of conducting Ca2+. The channel conducts currents in both KCl and CsCl solutions with similar conductance (~52 pS in KCl, ~41 pS in CsCl), though with different kinetics at higher voltages. Ca2+ imaging experiments confirm Ca2+ permeation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are supported by patch-clamp experiments comparing KCl and CsCl solutions (C90-C93) and complementary Ca2+ imaging using gCaMPer indicator (C95-C96). The use of cesium (which blocks potassium channels) demonstrates that the observed currents are not due to potassium permeation alone. The fluorescence decrease in TgTRPPL-2-expressing cells confirms Ca2+ flux. However, the authors appropriately note that ionic selectivity was not fully determined (C161), so the channel is characterized as 'cation-permeable capable of conducting Ca2+' rather than Ca2+-selective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "TgTRPPL-2 mediates both plasma membrane Ca2+ influx and ER Ca2+ efflux, both sensitive to the TRP channel inhibitor ACA. ACA inhibits 40-50% of Ca2+ influx in parental cells but has no additional effect on the \u0394TgTRPPL-2 mutant. ACA also inhibits ER Ca2+ efflux triggered by thapsigargin and abolishes Ca2+-activated Ca2+ entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C97-C109 are supported by systematic pharmacological experiments using ACA and nifedipine on both parental and \u0394TgTRPPL-2 strains. The lack of additional ACA effect on the mutant (C98) provides strong evidence for specificity. The dual effect on PM influx and ER efflux (C103-C109) is consistent with the dual localization of TgTRPPL-2. The experiments testing CACE (C105-C107) demonstrate loss of Ca2+ modulation in the mutant. Statistical analyses support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Pharmacological inhibitors of TgTRPPL-2 (ACA and benzamil) block channel activity, inhibit parasite growth, and show specificity for TgTRPPL-2. ACA reduces conductance by ~50%, open probability, and dwell time; benzamil reduces conductance by ~67% and open probability. Both inhibitors significantly reduce plaque formation in parental but not \u0394TgTRPPL-2 parasites (IC50 for ACA = 1.4 \u00b1 0.4 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C110-C120 are supported by patch-clamp experiments showing direct inhibition of TgTRPPL-2 currents (C110-C114) and plaque assays demonstrating growth inhibition (C115-C117). The specificity is demonstrated by lack of effect on the \u0394TgTRPPL-2 mutant (C117). The use of cilnidipine as a control (C118) shows that the L-type Ca2+ channel contributes to residual growth in the mutant. The IC50 determination (C116) provides quantitative assessment of potency. The mechanism of action differs between ACA and benzamil (C111-C113), consistent with their known modes of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C173",
+      "C174"
+    ],
+    "result": "This study represents the first biophysical characterization of an ion channel in T. gondii and the first report of an apicomplexan ion channel that conducts Ca2+. TgTRPPL-2 is the first identified molecule mediating Ca2+ influx at both the plasma membrane and ER in T. gondii.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C173-C174 are supported by the comprehensive characterization presented in the manuscript, including localization, functional genetics, electrophysiology, and pharmacology. The novelty claims are consistent with the literature review showing that TRP channels have not been previously studied in apicomplexan parasites (C2) and that the molecular identity of Ca2+ channels in T. gondii was unknown (C22, C24, C171). The biophysical characterization using patch-clamp is indeed the first for T. gondii channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "TgTRPPL-2 may initiate Ca2+ signaling cascades that stimulate motility, invasion, and egress, and represents a potential therapeutic target for toxoplasmosis. The ~50% reduction in Ca2+ influx correlates with reduced invasion, and delayed egress may result from defective ER Ca2+ efflux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C126-C128 represent reasonable inferences from the data showing that TgTRPPL-2 deletion impairs invasion and egress (C52-C57), reduces Ca2+ influx and ER efflux (C61-C73), and that pharmacological inhibitors block both channel activity and parasite growth (C115-C120). The correlation between Ca2+ influx reduction and invasion defect (C126) is quantitatively supported. However, these are mechanistic inferences rather than direct demonstrations of causality. The therapeutic potential (C11) is supported by the growth inhibition data and IC50 determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C135",
+      "C142",
+      "C143",
+      "C147",
+      "C151",
+      "C152"
+    ],
+    "result": "TgTRPPL-2 functions at both the plasma membrane and ER to mediate Ca2+ influx into the cytosol. The channel conducts currents in high calcium solutions, is not voltage-dependent, is modulated by Ca2+ itself, and is inhibited by broad-spectrum TRP inhibitors. Deletion impacts invasion, egress, and growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125, C135, C142-C143, C147, C151-C152 represent summary statements that integrate findings from multiple experimental approaches. These are well-supported by the comprehensive dataset including localization (Figure 1), functional genetics (Figure 2), calcium imaging (Figure 3), electrophysiology (Figures 4-5), and pharmacology (Figures 6-7). The dual localization and function at PM and ER is a key finding supported by multiple lines of evidence. The comparison with human TRP channels (C152) validates the characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The incomplete phenotypes in the \u0394TgTRPPL-2 mutant suggest multiple Ca2+ channels function at both the plasma membrane and ER. A nifedipine-sensitive channel likely accounts for residual PM Ca2+ influx, and an IP3-responsive channel may contribute to ER Ca2+ release alongside TgTRPPL-2's constitutive leak function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 are reasonable interpretations of the partial phenotypes observed in the \u0394TgTRPPL-2 mutant. The ~50% residual Ca2+ influx (C61), partial growth defect (C49), and incomplete inhibition by nifedipine in the mutant (C101) support the existence of additional channels. The hypothesis of a nifedipine-sensitive channel (C130) is supported by prior work (C20, C99-C101). The speculation about an IP3-responsive channel (C131) is consistent with prior literature (C23) and the incomplete ER efflux phenotype. These are appropriately framed as hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C65"
+    ],
+    "result": "Overexpression of TgTRPPL-2 in the complemented strain (\u0394TgTRPPL-2-trppl2) likely affects parasite fitness, explaining the partial rescue of growth and the elevated Ca2+ influx observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C65 provide a reasonable explanation for the partial complementation phenotype. The qPCR data shows elevated TgTRPPL-2 expression in the complemented strain (C48, C62), and the Ca2+ influx exceeds wild-type levels (C62). The partial growth rescue despite restored Ca2+ influx (C50) suggests that excessive Ca2+ influx may be detrimental. This interpretation is consistent with the known importance of Ca2+ homeostasis. However, this remains speculative without direct testing of expression levels or dose-response relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "TgTRPPL-2 is modulated by Ca2+ from both sides of the membrane: high luminal Ca2+ (10 mM) inhibits currents, while elevated cytosolic Ca2+ (10 \u03bcM) increases conductance 2.5-fold. Although cytosolic Ca2+ is unlikely to reach \u03bcM levels physiologically, Ca2+ microdomains near the channel exit could create local high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 are supported by patch-clamp data showing bidirectional Ca2+ modulation (Figures 4F-H). The speculation about Ca2+ microdomains (C158) is reasonable and supported by citations to established literature on Ca2+ microdomain formation. This provides a plausible mechanism for how the channel could be physiologically modulated by Ca2+ despite the high concentrations used in the experiments. The caveat about physiological relevance is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C161",
+      "C163",
+      "C164"
+    ],
+    "result": "The ionic selectivity of TgTRPPL-2 was not fully determined, so it can only be characterized as a cation-permeable channel capable of conducting Ca2+. The conductance (~55 pS) is within the range reported for PC2 in other cells (30-157 pS), though channel properties depend on experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161, C163-C164 appropriately acknowledge limitations of the study. The authors correctly note that without full selectivity measurements, TgTRPPL-2 should be characterized as 'cation-permeable' rather than 'Ca2+-selective' (C161). The comparison with PC2 conductance values (C163) validates the measurements, and the caveat about experimental conditions (C164) is an important consideration for interpreting channel properties. This represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C168",
+      "C169"
+    ],
+    "result": "ACA and benzamil specifically target TgTRPPL-2, as evidenced by their effects on channel currents (reducing open probability and dwell time) and their lack of additional effect on the already-reduced growth and Ca2+ influx of the \u0394TgTRPPL-2 mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C169 are supported by the combination of electrophysiology showing direct channel inhibition (C110-C114) and the genetic specificity demonstrated by lack of effect on the \u0394TgTRPPL-2 mutant (C117, C168). This genetic-pharmacological approach provides strong evidence for target specificity. However, as broad-spectrum TRP inhibitors, ACA and benzamil may have additional targets in the parasite, which is appropriately acknowledged by the authors' careful wording.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C132",
+      "C133",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C148",
+      "C153",
+      "C154",
+      "C155",
+      "C159",
+      "C162",
+      "C165",
+      "C166",
+      "C167",
+      "C170"
+    ],
+    "result": "Background knowledge claims about TRP channels, Ca2+ signaling, T. gondii biology, and prior work on Ca2+ channels in parasites. These establish the context and rationale for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C18, C25-C32, C132-C133, C136-C141, C148, C153-C155, C159, C162, C165-C167, C170 represent established knowledge supported by appropriate citations. These provide necessary background on TRP channel biology, Ca2+ signaling mechanisms, T. gondii lytic cycle, and prior work on Ca2+ in apicomplexan parasites. The citations appear appropriate and the knowledge claims are consistent with the field. These contextual claims support the rationale for studying TgTRPPL-2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C24",
+      "C33",
+      "C34",
+      "C171",
+      "C172"
+    ],
+    "result": "Prior to this work, TRP channels had not been studied in T. gondii or other apicomplexan parasites, and the molecular identity of Ca2+ channels at the plasma membrane and ER remained unknown. Two hypothetical genes with TRPP homology were previously identified by genome analysis, with TgTRPPL-1 localized to the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22, C24, C33-C34, C171-C172 accurately describe the state of knowledge prior to this study. The genome analysis identifying TgTRPPL-1 and TgTRPPL-2 (C33) is appropriately cited to Prole and Taylor, 2011. The prior localization of TgTRPPL-1 (C34) is cited to the authors' previous work. These claims establish the knowledge gap that this study addresses and are consistent with the literature review presented in the introduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C59",
+      "C67",
+      "C71",
+      "C99",
+      "C134",
+      "C145",
+      "C146"
+    ],
+    "result": "Prior work from the authors' laboratory established that T. gondii has Ca2+ entry activity at the plasma membrane (functional in extracellular and intracellular tachyzoites), partially inhibited by nifedipine (~80%), with residual activity suggesting multiple channels. Ca2+ influx is modulated by cytosolic Ca2+ (Ca2+-activated Ca2+ entry) but does not operate as store-operated Ca2+ entry (SOCE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C23, C59, C67, C71, C99, C134, C145-C146 accurately describe prior work from the authors' laboratory, appropriately cited to Pace et al., 2014 and other publications. These establish the functional characterization of Ca2+ influx that preceded the molecular identification of TgTRPPL-2. The claims about CACE (C67, C71) and lack of SOCE (C145-C146) provide important mechanistic context. These prior findings motivated the search for the molecular identity of the channels.",
+    "result_type": "MINOR"
+  }
+]

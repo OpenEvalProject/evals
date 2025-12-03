@@ -1,0 +1,1792 @@
+{
+  "submission": {
+    "id": "f4c7093b-70e7-4b69-82bf-e6eb5bbdeaa8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:34:58.567505Z",
+    "updated_at": "2025-12-03T06:34:58.567505Z"
+  },
+  "content": [
+    {
+      "id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "submission_id": "f4c7093b-70e7-4b69-82bf-e6eb5bbdeaa8",
+      "content_type": "manuscript",
+      "content_text": "# Adipocyte NR1D1 dictates adipose tissue expansion during obesity\n\n## Authors\n\n- Ann Louise Hunter<sup>1</sup> ([ORCID: 0000-0002-3874-4852](https://orcid.org/0000-0002-3874-4852))\n- Charlotte E Pelekanou<sup>1</sup>\n- Nichola J Barron<sup>1</sup>\n- Rebecca C Northeast<sup>1</sup> ([ORCID: 0000-0002-3121-2802](https://orcid.org/0000-0002-3121-2802))\n- Magdalena Grudzien<sup>1</sup>\n- Antony D Adamson<sup>1</sup>\n- Polly Downton<sup>1</sup> ([ORCID: 0000-0002-1617-6153](https://orcid.org/0000-0002-1617-6153))\n- Thomas Cornfield<sup>2</sup>\n- Peter S Cunningham<sup>1</sup>\n- Jean-Noel Billaud<sup>3</sup>\n- Leanne Hodson<sup>2</sup>\n- Andrew SI Loudon<sup>1</sup>\n- Richard D Unwin<sup>4</sup>\n- Mudassar Iqbal<sup>5</sup>\n- David W Ray<sup>2</sup>\n- David A Bechtold<sup>1</sup> ([ORCID: 0000-0001-8676-8704](https://orcid.org/0000-0001-8676-8704)) \u2020\n\n### Affiliations\n\n1. Centre for Biological Timing, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom\n2. Oxford Centre for Diabetes, Endocrinology and Metabolism, University of Oxford, and NIHR Oxford Biomedical Research Centre, John Radcliffe Hospital Oxford United Kingdom\n3. Digital Insights, Qiagen Redwood City United States\n4. Stoller Biomarker Discovery Centre, Division of Cancer Sciences, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom\n5. Division of Informatics, Imaging and Data Sciences, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe circadian clock component NR1D1 (REVERB\u03b1) is considered a dominant regulator of lipid metabolism, with global Nr1d1 deletion driving dysregulation of white adipose tissue (WAT) lipogenesis and obesity. However, a similar phenotype is not observed under adipocyte-selective deletion (Nr1d1Flox2-6:AdipoqCre), and transcriptional profiling demonstrates that, under basal conditions, direct targets of NR1D1 regulation are limited, and include the circadian clock and collagen dynamics. Under high-fat diet (HFD) feeding, Nr1d1Flox2-6:AdipoqCre mice do manifest profound obesity, yet without the accompanying WAT inflammation and fibrosis exhibited by controls. Integration of the WAT NR1D1 cistrome with differential gene expression reveals broad control of metabolic processes by NR1D1 which is unmasked in the obese state. Adipocyte NR1D1 does not drive an anticipatory daily rhythm in WAT lipogenesis, but rather modulates WAT activity in response to alterations in metabolic state. Importantly, NR1D1 action in adipocytes is critical to the development of obesity-related WAT pathology and insulin resistance.\n\n## Introduction\n\nThe mammalian circadian clock directs rhythms in behaviour and physiology to coordinate our biology with predictable changes in food availability and daily alternations between fasted and fed states. In this way, profound cycles in nutrient availability and internal energy state can be managed across multiple organ systems. A central circadian clock in the suprachiasmatic nuclei (SCN) drives daily rhythms in our behaviour (e.g. sleep/wake cycles) and physiology (e.g. body temperature), and orchestrates rhythmic processes in tissue systems across the body (Dibner et al., 2010; West and Bechtold, 2015). The molecular clock mechanism is also present in most cell types. The rhythmic transcriptome that defines cells and tissues is shaped by both local tissue clock activity and input from the central clock and rhythmic systemic signals (Guo et al., 2005; Hughes et al., 2012; Kornmann et al., 2007; Koronowski et al., 2019; Lamia et al., 2008; Hunter et al., 2020). The relative importance of these intrinsic and systemic factors remains ill-defined. Mounting evidence suggests that systemic signalling (e.g. SCN and/or behaviour-driven rhythmicity) is highly dominant in setting daily rhythms, while local clocks serve to buffer tissue/cell responses based on time of day. Nevertheless, it is clear that our rhythmic physiology and metabolic status reflects the interaction of clocks across the brain and body (West and Bechtold, 2015). Disturbance of this interaction, as occurs with shift work and irregular eating patterns, is increasingly recognised as a risk factor for metabolic disease and obesity (Broussard and Van Cauter, 2016;\u00a0Kim et al., 2020).\n\nExtensive work over the past 20 years has demonstrated that circadian clock function and its component factors are closely tied into energy metabolism (Bass and Takahashi, 2010;\u00a0Reinke and Asher, 2019), with strong rhythmicity evident in cellular and systemic metabolic processes. Clock-metabolic coupling in peripheral tissues is adaptable, as demonstrated by classical food-entrainment studies (Damiola et al., 2000;\u00a0Mistlberger, 1994), and by recent work showing that systemic perturbations such as cancer and high-fat diet (HFD)\u00a0feeding can reprogramme circadian control over liver metabolism (Dyar et al., 2018;\u00a0Masri et al., 2016). Plasticity therefore exists within the system, and the role of the clock in tissue and systemic responses to acute and chronic metabolic perturbation remains a critical question. The nuclear receptor NR1D1 (REVERB\u03b1) is a core clock component, and has been highlighted as a key link between the clock and metabolism. NR1D1 is a constitutive repressor, with peak expression in the latter half of the inactive phase (daytime in the nocturnal animal). In liver, NR1D1 exerts repressive control over programmes of lipogenesis by recruiting the NCOR/HDAC3 co-repressor complex to metabolic target genes, such that global loss of NR1D1 or liver-specific deletion of HDAC3 results in hepatosteatosis (Feng et al., 2011;\u00a0Zhang et al., 2015); (Zhang et al., 2016). Importantly, we recently showed that NR1D1 regulation of hepatic metabolism is state-dependent, with minimal impact under basal conditions yet increased transcriptional influence in response to mistimed feeding (Hunter et al., 2020). The selective functions of NR1D1 in white adipose tissue (WAT) are not well\u00a0established and remain poorly understood. Early studies implicated an essential role of Nr1d1 in adipocyte differentiation (Chawla and Lazar, 1993;\u00a0Kumar et al., 2010); however, these findings are difficult to align with in vivo evidence. Indeed, pronounced adiposity and adipocyte hypertrophy are evident in Nr1d1-/- mice, even under normal feeding conditions (Delezie et al., 2012;\u00a0Hand et al., 2015); (Zhang et al., 2015). Daily administration of NR1D1 agonists has also been shown to reduce fat mass and WAT lipogenic gene expression in mice (Solt et al., 2012), although these agents do have significant off-target actions (Dierickx et al., 2019). Given the links between circadian disruption and obesity, and the potential of NR1D1 as a pharmacological target, we now define the role of NR1D1 in dictating WAT metabolism.\n\nTranscriptomic and proteomic profiling of WAT in global Nr1d1-/- mice revealed an expected de-repression of lipid synthesis and storage programmes. However, in contrast, selective deletion of Nr1d1 in adipocytes did not result in dysregulation of WAT metabolic pathways. Loss of NR1D1 activity in WAT did, however, significantly enhance adipose tissue expansion in response to HFD feeding; yet despite exaggerated obesity, adipocyte-specific knockout\u00a0(KO) mice were spared the anticipated obesity-related pathology. Integration of transcriptomic data with the WAT NR1D1 cistrome demonstrates that, under basal conditions, NR1D1 activity is limited to a small set of direct target genes (enriched for extracellular matrix [ECM] processes). However, NR1D1\u00a0regulatory control broadens to include lipid and mitochondrial metabolism pathways under conditions of obesity. Our data recast the role of NR1D1 as a regulator responsive to the metabolic state of the tissue, rather than one which delivers an anticipatory daily oscillation to the WAT metabolic programme.\n\n## Results\n\n### Adiposity and up-regulation of WAT lipogenic pathways in Nr1d1-/- mice\n\nWe first examined the body composition of age-matched Nr1d1 global KO (Nr1d1-/-) mice and littermate controls (wild\u00a0type\u00a0[WT]). In keeping with previous reports (Delezie et al., 2012;\u00a0Hand et al., 2015), Nr1d1-/- mice are of similar body weight to littermate controls (Figure 1A), yet carry an increased proportion of fat mass (KO: 24.2 \u00b1 3.0% of body weight; WT: 10.8 \u00b1 1.4%; mean \u00b1\u00a0SEM, p<0.01 Student\u2019s t-test, n=12\u201314/group) and display adipocyte hypertrophy (Figure 1B), even when maintained on a standard chow diet. Metabolic phenotyping demonstrated expected day-night differences in food intake, energy expenditure, activity, and body temperature in both KO and WT controls, although genotype differences in day/night activity and temperature levels suggest some dampening of rhythmicity in the Nr1d1-/- mice (Figure 1\u2014figure supplement 1A\u2013E). However, this is unlikely to account for the increased adiposity in these animals, and a previous study did not report significant genotype differences in these parameters (Delezie et al., 2012). This favours instead an altered energy partitioning within these mice, with a clear bias towards storing energy as lipid.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Nr1d1-/- mice exhibit significantly greater fat mass relative to wild-type\u00a0(WT) littermate controls. Body weight, fat mass, and lean mass of 13-week-old males (n=12\u201314/group). (B) Increased fat mass in Nr1d1-/- mice is reflected in adipocyte hypertrophy in gonadal white adipose tissue (gWAT) (representative 10\u00d7 H and E images shown). (C,\u00a0D) gWAT from Nr1d1-/- mice exhibits a programme of increased lipid synthesis. Proteomic profiling of gWAT depots (Nr1d1-/- mice plotted relative to their respective weight-matched littermate controls, n=6/group (C)) shows deregulation of metabolic regulators and enrichment (D) of metabolic pathways (up- and down-regulated proteins shown in blue and red, respectively). Top five (by protein count) significantly enriched Reactome terms shown. (E) Analyses of fatty acid (FA) composition reveal increased de novo lipogenesis (reflected by C16:0/C18:2 n ratio) and FA desaturation (reflected by C16:1 n-7/C16:0 ratio) in gWAT of Nr1d1-/-. n=6/group. Data presented as mean with individual data points (A, E). *p<0.05, **p<0.01, unpaired two-tailed t-test (A, E). Source data for panels C, D available in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013E) Under light:dark conditions, Nr1d1-/- maintain robust diurnal rhythms in physiology and behaviour. Day/night food intake (A) (n=12\u201314/group) and energy expenditure (B) (n=3\u20134/group). Diurnal activity profile, mean activity (C), and body temperature (D) of adult male Nr1d1-/- mice (activity is reported as the percentage of daily activity, n=9\u201313/group). Diurnal profiles in oxygen consumption (VO2) and carbon dioxide production (VCO2) (E) (n=9\u201313/group). (F) Western blot showing NR1D1 expression in adipose tissue over 24 hr. (G) Molar percentages of fatty acid species in wild-type\u00a0(WT) and Nr1d1-/- gonadal white adipose tissue\u00a0(gWAT). n=6/group. ap<0.05. (H) Daytime (ZT6) fasted blood glucose levels (n=11/group). (I) Nr1d1-/- mice are highly susceptible to diet-induced obesity, showing significantly higher body weights and fat mass than control mice after 10 weeks of high-fat diet (HFD) feeding (n=6/group). (J) In a separate study, food intake was tracked for individual mice over 3 weeks of HFD feeding (n=13/group). Mean daily food intake in Nr1d1-/- mice showed a significant positive correlation with body weight. Data presented as individual data points with mean (A\u2013D, H, I), as mean \u00b1\u00a0SEM (E), or as individual data points with line of best fit (J). **p<0.01, two-way ANOVA with Tukey\u2019s multiple comparisons tests (A\u2013D), unpaired t-tests with correction for multiple testing (G), unpaired two-tailed t-tests (H,\u00a0I), linear regression (J).\n\nTo explore further the lipid storage phenotype, we undertook proteomic analysis of gonadal white adipose tissue (gWAT) collected at ZT8 (zeitgeber time, 8 hr after lights on), the time of normal peak in NR1D1 expression in this tissue (Figure 1\u2014figure supplement 1F). Isobaric tag (iTRAQ) labelled LC-MS/MS identified 2257 proteins, of which 182 demonstrated differential regulation (FDR<0.05) between WT and Nr1d1-/- gWAT samples (n=6 weight-matched, 13-week-old male mice/group) (Figure 1C). Differentially expressed\u00a0(DE) proteins included influential metabolic enzymes, with up-regulation of metabolic processes detected on pathway enrichment analysis (Figure 1D). Importantly, and in line with the phenotype observed, increased NADPH regeneration (e.g. ME1, G6PDX), enhancement of glucose metabolism (also likely reflecting increased glyceroneogenesis, e.g. PFKL, ALDOA), and up-regulation of fatty acid synthesis (e.g. ACYL, FAS, ACACA) all support a shunt towards synthesis and storage of fatty acids and triglyceride in the KO mice. To validate this putative increase in local lipid synthesis, we quantified fatty acid species in gWAT, and indeed, the ratio of palmitic to linoleic acid (C16:0/C18:2n6), a marker of de novo lipogenesis, was significantly elevated in Nr1d1-/- samples (Figure 1E, Figure 1\u2014figure supplement 1G). Fatty acid profiling also revealed evidence of increased SCD1 activity (C16:1 n-7/C16:0). Enhanced fatty acid synthesis in gWAT of mice lacking NR1D1 may be in part driven by increased glucose availability and adipose tissue uptake as previously suggested (Delezie et al., 2012), although we do not observe elevated blood glucose levels in the Nr1d1-/- animals (Figure 1\u2014figure supplement 1H). The propensity to lipid storage is further highlighted by the substantial obesity, compared to littermate controls, displayed by Nr1d1-/- mice when challenged with 10 weeks of HFD (Figure 1\u2014figure supplement 1I; Delezie et al., 2012;\u00a0Hand et al., 2015). Interestingly, we observed a strong positive correlation between body weight and daily intake of HFD in the Nr1d1-/- mice (Figure 1\u2014figure supplement 1J), suggesting that HFD-induced hyperphagia exacerbates weight gain and obesity in the Nr1d1-/- mice.\n\n### Limited impact of adipocyte-selective Nr1d1 deletion under basal conditions\n\nTo define the role of NR1D1 specifically within WAT, we generated a new mouse line with loxP sites flanking Nr1d1 exons 2\u20136 (Nr1d1Flox2-6), competent for Cre-mediated conditional deletion (Hunter et al., 2020). We crossed this mouse with the well-established adiponectin Cre-driver line (AdipoCre; Eguchi et al., 2011;\u00a0Jeffery et al., 2014) to delete Nr1d1 selectively in adipocytes. This new line results in loss of Nr1d1 mRNA (Figure 2A) and protein (Figure 2B) expression in adipose tissue depots, as well as coordinate de-repression of Arntl (Bmal1), upon Cre-mediated recombination. In marked contrast to global Nr1d1-/- mice, adult Nr1d1Flox2-6:AdipoqCre mice did not show an increase in adiposity when maintained on a standard chow diet (Figure 2C; n=7/group), with no differences in mean body weight, fat, and lean mass observed. In parallel with this, we saw no differences in daily patterns of food intake, energy expenditure, activity levels, or body temperature in matched Nr1d1Flox2-6:AdipoqCre and control (Nr1d1Flox2-6) mice (Figure 2D\u2013F). As brown adipose tissue (BAT) makes an important contribution to whole body energy metabolism, we studied thermoregulation in Nr1d1Flox2-6:AdipoqCre mice in greater detail. It has previously been proposed that NR1D1 is key in conferring circadian control over thermogenesis, through its repression of uncoupling protein 1 (UCP1) expression (Gerhart-Hines et al., 2013). However, we saw no evidence of genotype differences in thermoregulation between Nr1d1Flox2-6:AdipoqCre and Nr1d1Flox2-6 mice (Figure 2\u2014figure supplement 1A\u2013E). Despite increased BAT UCP1 expression in the Cre+ve mice, no differences in body temperature profiles were observed between Cre-ve and Cre+ve mice when housed under normal laboratory temperature (22\u00b0C) nor when placed under thermoneutral conditions (29\u00b0C) for >14 days. Moreover, Cre-ve and Cre+ve mice did not differ in their thermogenic response to an acute cold challenge (4\u00b0C for 6 hr) (Figure 2\u2014figure supplement 1F\u2013H). These data support our overall findings that adipocyte-selective deletion of Nr1d1 does not have a significant impact on metabolic phenotype under normal chow\u00a0(NC) feeding conditions. Together, our data also suggest that the lack of adiposity phenotype in the Cre+ve mice is not driven by an increase in locomotor activity, energy expenditure, or thermogenesis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Nr1d1 and Arntl (Bmal1) gene expression in gonadal white adipose tissue\u00a0(gWAT), brown adipose (BAT), liver and lung in Nr1d1Flox2-6 (Cre-ve), and Nr1d1Flox2-6:AdipoqCre (Cre+ve) mice (n=4\u20135/group). (B) NR1D1 protein expression (arrowhead) in Cre-ve and targeted Cre+ve mice. Lower blot shows Ponceau S protein staining. (C) Body weight, fat mass, and lean mass in 13-week-old Cre-ve and Cre+ve male mice (n=7/group). (D\u2013F) Both Nr1d1Flox2-6:AdipoqCre Cre+ve and Cre-ve mice demonstrate diurnal rhythms in behaviour and physiology, with no genotype differences observed in food intake (D), energy expenditure and daily activity (E) or body temperature (F) in 13-week-old males (n=4\u20137/group). Data presented as mean \u00b1\u00a0SEM (A) or as mean with individual data points (C\u2013F). *p<0.05, **p<0.01, unpaired t-tests corrected for multiple comparisons (A), unpaired t-tests (C), two-way ANOVA with Tukey\u2019s multiple comparisons tests (D\u2013F).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B) Housing under standard laboratory conditions did not alter daily profiles in body temperature in the Nr1d1Flox2-6:AdipoqCre Cre+ve mice, when compared to control Cre-ve littermate controls (A; n=5\u20136/group), despite showing increased uncoupling protein 1 (UCP1) expression (B; n=3/group). (C) No genotype differences were observed in body temperature profiles recorded from mice housed under thermoneutral conditions (28\u201330\u00b0C) for 3 weeks (n=5\u20136/group). (D\u2013E) Brown adipose tissue (BAT) gene expression studies (qPCR) demonstrated expected de-repression of Arntl expression in Cre+ve mice, and expected reduction in Ucp1 expression at thermoneutral conditions in both genotypes (compared to room temperature) (n=5\u20136/group). (F) Nr1d1Flox2-6:AdipoqCre Cre+ve mice and control littermates were exposed to an acute cold challenge (4\u00b0C for 6 hr) with body temperature recording throughout (n=5\u20136/group). No genotype difference in thermogenic response was observed. (G\u2013H) As previously reported, Nr1d1 expression was reduced by cold exposure; however, no genotype differences were observed cold-induced increases in Ucp1 or Dio2 gene expression (n=5\u20136/group). Data presented as mean \u00b1\u00a0SEM. *p<0.05, **p<0.01, Student\u2019s t-test (B), two-way ANOVA with Tukey\u2019s multiple comparisons tests (D, E, G, H).\n\n### In normal WAT, NR1D1\u00a0regulated targets are limited to clock and collagen genes\n\nTo investigate adipocyte-specific Nr1d1 activity, we performed RNA-seq at ZT8 (n=6/group) in both Nr1d1-/- and Nr1d1Flox2-6:AdipoqCre mouse lines. Global Nr1d1 deletion had a large effect on the gWAT transcriptome, with 4163 genes showing significant differential expression (FDR\u00a10.05) between Nr1d1-/- mice and age- and weight-matched WT littermate controls (Figure 3A). Pathway enrichment analysis demonstrated that these changes are dominated by metabolic genes (Figure 3B), with lipid metabolism and the TCA cycle emerging as prominent processes (Figure 3B). Thus, the gWAT transcriptome in Nr1d1-/- mice is concordant with the phenotype, and the gWAT proteome, in demonstrating up-regulation of lipid accumulation and storage processes. By contrast, and consistent with the absence of an overt phenotype, only a small genotype effect on the transcriptome was observed when comparing gWAT RNA-seq from Nr1d1Flox2-6:AdipoqCre and Nr1d1Flox2-6 littermates (Figure 3C; n=6/group). Here, 231 genes showed significant differential expression between genotypes, of which 126 were also differentially regulated in the WAT analysis of global Nr1d1-/- mice (Figure 3D). These 126 common genes included circadian clock components (Arntl, Clock, Cry2, Nfil3), whilst pathway analysis also revealed collagen formation/biosynthesis processes to be significantly enriched (Figure 3E). Regulation of the molecular clock is expected, but the discovery of collagen dynamics as a target of NR1D1 regulatory action in adipocytes has not been previously recognised. We validated consistent up-regulation of collagen and collagen-modifying genes in Nr1d1-/- and Nr1d1Flox2-6:AdipoqCre gWAT by qPCR (Figure 3F). It is notable that Nr1d1Flox2-6:AdipoqCre mouse gWAT exhibits neither enrichment of lipid metabolic pathways nor de-regulation of individual key lipogenic genes, previously identified as NR1D1 targets (Figure 3E,G;\u00a0Feng et al., 2011;\u00a0Zhang et al., 2015;\u00a0Zhang et al., 2016). These findings suggest that\u00a0lipogenic gene regulation may be a response to system-wide changes in energy metabolism in the Nr1d1-/- animals and challenge current understanding of NR1D1 action. These findings parallel our recent observations in hepatocyte-selective deletion of Nr1d1 (Hunter et al., 2020).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Nr1d1-/- gonadal white adipose tissue\u00a0(gWAT) demonstrates extensive remodelling of the transcriptome and up-regulation of metabolic pathways. Mean\u00a0difference (MD) plot (A) showing significantly (FDR<0.05) up- (blue) and down- (red) regulated genes in gWAT of Nr1d1-/- mice compared to littermate controls (n=6/group). Pathway analysis (B) of significantly differentially expressed\u00a0(DE) genes (FDR<0.05): top five (by gene count) significantly enriched Reactome terms shown (left panel), top five (by gene count) metabolic pathways shown (right panel). Up-regulated genes in blue, down-regulated in red. ODC = ornithine decarboxylase. (C) By contrast, RNA-seq demonstrates modest remodelling of the transcriptome in gWAT of Nr1d1Flox2-6:AdipoqCre mice. MD plot, n=6/group. (D) Venn diagram showing overlap of DE genes in Nr1d1Flox2-6:AdipoqCre and Nr1d1-/- gWAT. (E) Pathway analysis of 126 commonly DE genes. Top five (by gene count) significantly enriched Reactome terms shown. (F,\u00a0G) Collagen genes are commonly up-regulated in both genotypes (F), whilst genes of lipid metabolism are not DE in Nr1d1Flox2-6:AdipoqCre (G). gWAT qPCR, n=6\u20137/group. Data presented as mean \u00b1\u00a0SEM (F, G). *p<0.05, **p<0.01, unpaired t-tests corrected for multiple comparisons (F, G). Source data for panels A\u2013E available in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B) Double knockdown of Nr1d1 and Nr1d2 in differentiated 3T3-L1 cells (A) results in marked de-repression of Arntl expression but minimal effects on expression of typically pro-lipogenic genes (B) (data compiled from three replicated knockdown experiments, n=8\u20139/treatment group). Data presented as mean \u00b1\u00a0SEM. *p<0.05, **p<0.01, one-way ANOVA with Dunnett\u2019s multiple comparisons tests (A, B).\n\nWork in liver has suggested that the NR1D1 paralogue, NR1D2 (REVERB\u03b2), contributes to the suppression of lipogenesis, and that concurrent NR1D2 deletion amplifies the impact of NR1D1 loss (Bugge et al., 2012). We therefore performed double knockdown of Nr1d1 and Nr1d2 in differentiated 3T3-L1 cells (Figure 3\u2014figure supplement 1A). Whilst double knockdown produced greater Arntl de-repression than either Nr1d1 or Nr1d2 knockdown alone, it did not lead to de-repression of lipogenic genes previously considered NR1D1 targets (Figure 3\u2014figure supplement 1B). We observed a similar pattern when comparing the liver transcriptome of liver-specific Nr1d1/Nr1d2 dual-deletion mice with that of global Nr1d1-/- KO; double knockdown produces a greater effect than loss of Nr1d1 alone, but does not lead to de-repression of metabolic genes (Hunter et al., 2020). Moreover, any potential compensation by NR1D2 does not prevent adipose lipid accumulation in the global Nr1d1-/- mice. Thus, although it cannot be ruled out, these findings suggest that compensation by NR1D2 does not underlie the mild phenotype observed in the Nr1d1Flox2-6:AdipoqCre mice.\n\nTherefore, whilst global NR1D1 targeting produces an adiposity phenotype with up-regulation of WAT lipogenesis and lipid storage, this is not seen when NR1D1 is selectively targeted in adipose alone. The distinction is not due to loss of Nr1d1 expression in brown adipose, and is not due to compensatory NR1D2 action. Taken together, our data suggest that under a basal metabolic state, the adipose transcriptional targets under direct NR1D1 control are in fact limited to core clock function and collagen dynamics. NR1D1 is not a major repressor of lipid metabolism in this setting. This also suggests that the enhanced lipid accumulation phenotype of Nr1d1-/- adipose tissue is either independent from adipose NR1D1 entirely or that the action of NR1D1 in adipose is context-dependent.\n\n### Diet-induced obesity reveals a broader WAT phenotype in tissue-specific NR1D1 deletion\n\nStudies in liver tissue have demonstrated reprogramming of both nuclear receptor and circadian clock factor activity by metabolic challenge (Eckel-Mahan et al., 2013;\u00a0Goldstein et al., 2017;\u00a0Guan et al., 2018;\u00a0Quagliarini et al., 2019). Both our data here, and previous reports (Delezie et al., 2012;\u00a0Feng et al., 2011;\u00a0Hand et al., 2015;\u00a0Le Martelot et al., 2009;\u00a0Preitner et al., 2002), highlight that the NC-fed Nr1d1-/- mouse is metabolically abnormal. The emergence of the collagen dynamics as a direct NR1D1 target and exaggerated diet-induced obesity evident in Nr1d1-/- mice supports a role for NR1D1 in regulating adipose tissue expansion under obesogenic conditions. To test this, Nr1d1Flox2-6:AdipoqCre and Nr1d1Flox2-6 mice were provided with HFD for 16 weeks to drive obesity and WAT expansion. Indeed, compared to their controls, Nr1d1Flox2-6:AdipoqCre mice exhibited greater weight gain and adiposity in response to HFD feeding (Figure 4A,B). Of note, divergence between control and Nr1d1Flox2-6:AdipoqCre mice became clear only after long-term HFD\u00a0feeding (beyond 13 weeks), a time at which body weight gain plateaus in control mice. This contrasts substantially with Nr1d1-/- mice, which show rapid and profound weight gain from the start of HFD feeding (Hand et al., 2015). The stark difference in progression and severity of diet-induced obesity is likely due (at least in part) to the HFD-induced hyperphagia, which is observed in Nr1d1-/- mice (WT food intake 2.92\u00b10.10 g HFD/day/mouse; KO 3.74\u00b10.21 g, p=0.0014, Student\u2019s t-test, n=21/genotype), but not in Nr1d1Flox2-6:AdipoqCre mice (Cre-ve 2.99\u00b10.61 g HFD/day/mouse; Cre+ve 3.01\u00b10.60 g, p>0.05, n=8/genotype). Nevertheless, both models highlight that loss of NR1D1 increases capacity for increased lipid storage and adipose tissue expansion under obesogenic conditions. Despite the enhanced diet-induced obesity, HFD-fed Nr1d1Flox2-6:AdipoqCre mice showed little evidence of typical obesity-related pathology. Histological assessment of gWAT after 16 weeks of HFD feeding revealed widespread adipose tissue fibrosis (Picrosirius Red staining of collagen deposition under normal and polarised light) and macrophage infiltration (F4/80 immunohistochemistry) in obese control mice, but these features were not seen in Nr1d1Flox2-6:AdipoqCre mice (Figure 4C,D). Furthermore, we saw evidence of preserved insulin sensitivity in the HFD-fed Nr1d1Flox2-6:AdipoqCre mice, with neither circulating glucose nor insulin being higher than Nr1d1Flox2-6 littermate controls (Figure 4E), despite carrying significantly greater fat mass. Indeed, on insulin tolerance testing, HFD-fed Nr1d1Flox2-6:AdipoqCre mice demonstrated a significantly greater hypoglycaemic response than that observed in HFD-fed controls (Figure 4F). We saw no differences in adipocyte size between the two genotypes, indicating that our observations did not simply reflect greater adipocyte hypertrophy in the Nr1d1Flox2-6:AdipoqCre mice (Figure 4\u2014figure supplement 1A). In line with a pronounced increase in fat mass, both gWAT and inguinal white adipose tissue depots (iWAT) were substantially larger in obese Nr1d1Flox2-6:AdipoqCre mice than in obese Nr1d1Flox2-6 controls (Figure 4\u2014figure supplement 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) High-fat diet\u00a0(HFD) leads to exaggerated adiposity in Nr1d1Flox2-6:AdipoqCre mice. Body weight track of Cre-ve and Cre+ve male mice on HFD (solid line) or normal chow\u00a0(NC) (dashed line) (A) (ap<0.05: Cre+ve NC vs. HFD; bp<0.05, Cre-ve NC vs. HFD; cp<0.05, Cre+ve HFD vs. Cre-ve HFD); total body, fat, and lean weight after 16 weeks in the high-fat diet group (B). (C,\u00a0D) On histological examination of gonadal white adipose tissue\u00a0(gWAT), HFD-fed Cre+ve mice display less fibrosis and inflammation than Cre-ve littermates. Representative Picrosirius Red and F4/80 immunohistochemistry images (20\u00d7 magnification) (C), quantification of staining across groups, each data point represents the mean value for each individual animal (D). (E, F) Despite increased adiposity, HFD-fed Cre+ve mice display greater insulin sensitivity than Cre-ve controls. Terminal blood glucose and insulin levels (animals culled 2 hr after food withdrawal) in NC and HFD-fed in Nr1d1Flox2-6:AdipoqCre Cre-ve (black) and Cre-ve (orange) mice (E). Blood glucose values for individual animals and area under curve (change from baseline) for 16-week HFD-fed Nr1d1Flox2-6:AdipoqCre Cre-ve and Cre-ve mice undergoing insulin tolerance testing (ITT) (F). Data presented as mean \u00b1\u00a0SEM (A) or as individual data points with mean (B, D, E, F). *p<0.05, **p<0.01, two-way repeated-measures ANOVA with Tukey\u2019s multiple comparisons tests (A), two-way ANOVA with Sidak\u2019s multiple comparisons tests (D, E), unpaired two-tailed t-test (B, F). n=4\u201311/group for all panels. Picrosirius Red images for each animal available in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of gonadal white adipose tissue\u00a0(gWAT) adipocyte size in normal\u00a0chow\u00a0(NC)- and high-fat diet (HFD)-fed Nr1d1Flox2-6 (Cre-ve) and Nr1d1Flox2-6:AdipoqCre (Cre+ve) mice demonstrates no between-genotype differences in size distribution. n=4\u20136/group. (B) Wet pad weights for gWAT and subcutaneous inguinal WAT (iWAT) for NC- and HFD-fed Cre-ve and Cre+ve mice. n=6\u20138/group. Data presented as mean (A), or as individual data points plus mean (B). Two-way ANOVA with Tukey\u2019s multiple comparisons tests (A, B).\n\nTherefore, under long-term HFD-feeding conditions, adipose-targeted Nr1d1 deletion results in continued adipose tissue expansion accompanied by a healthier metabolic phenotype with reduced adipose inflammation and fibrosis, and preserved systemic insulin sensitivity. Importantly, these findings also suggest that the regulatory influence of NR1D1 is context-dependent, with the metabolic impact of adipose-targeted Nr1d1 deletion revealed by transition to an obese state.\n\n### NR1D1-dependent gene regulation is reprogrammed by obesity\n\nWe next performed RNA-seq on gWAT collected at ZT8 from Nr1d1Flox2-6:AdipoqCre and Nr1d1Flox2-6 littermate controls fed either NC or HFD for 16 weeks (NC, n=4/group; HFD, n=6/group). As expected, HFD\u00a0feeding had a substantial impact on the gWAT transcriptome in both Cre-ve and Cre+ve animals (i.e. NC vs. HFD comparison within each genotype; Figure 5A). Under NC feeding conditions, we again observed only a small genotype effect on the transcriptome, and as before, DE genes included core clock genes (Arntl, Nfil3, Npas2, Clock) and those of collagen synthesis pathways (Figure 5B). However, obesity revealed a substantial genotype effect, with 3061 genes DE (1706 up, 1355 down) in HFD-fed Nr1d1Flox2-6:AdipoqCre mice vs. HFD-fed Nr1d1Flox2-6 controls (Figure 5B), and 1704 genes showing a significant (\u03b1<0.05) diet-genotype interaction (stageR-specific interaction analysis; Van den Berge et al., 2017). Of these 1704 genes, those up-regulated in obese Nr1d1-deficient adipose were strongly enriched for metabolic pathways, whilst down-regulated genes showed weak enrichment of ECM organisation processes (Figure 5C). To examine how loss of Nr1d1 alters adipose tissue response to diet-induced obesity, we compared directly those processes which showed significant obesity-related dysregulation in control mice (Figure 5D). While HFD\u00a0feeding caused a profound down-regulation (vs. NC conditions) of metabolic pathways in the WAT of control mice, this was not observed in Nr1d1Flox2-6:AdipoqCre mice. HFD\u00a0feeding led to an up-regulation of immune pathways in both genotypes (Figure 5D); however, as highlighted by Ingenuity Pathway Analysis (IPA) of differentially regulated genes in gWAT, inflammation and immune-related processes were widely and markedly attenuated in the HFD-fed Cre+ve mice when compared to HFD-fed controls (Figure 5\u2014source data 1). Thus, transcriptomic profiling correlates with phenotype in suggesting that WAT function and metabolic activity is protected from obesity-related dysfunction in the Nr1d1Flox2-6:AdipoqCre mice, and that the impact of adipose Nr1d1 deletion is dependent on system-wide metabolic state.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig5-v2.jpg)\n\n**Figure 5.:** (A) High-fat diet\u00a0(HFD) dramatically remodels the white adipose tissue\u00a0(WAT) transcriptome. RNA-seq (n=4\u20136/group) was performed in gonadal WAT\u00a0(gWAT) from Cre-ve and Cre+ve male mice fed normal chow (NC) or HFD\u00a0for 16 weeks. Mean\u00a0difference\u00a0(MD) plots show genes significantly (FDR<0.05) up-regulated (blue) or down-regulated (red) by HFD in each genotype. (B) With HFD, the NR1D1-responsive gWAT transcriptome broadens. MD plots show effect of genotype in NC (top panel) and HFD (lower panel) feeding conditions. Genes where stageR detects a significant (\u03b1=0.05) genotype-diet interaction highlighted in orange. (C) Reactome pathway analysis of genes up- or down-regulated in Cre+ve gWAT under HFD conditions, where this diet-genotype interaction is also detected. Top five (by gene count) significantly enriched terms shown. (D) Adipose-targeted deletion of Nr1d1 attenuates the normal HFD-induced down-regulation of metabolic pathways. Heatmaps show enrichment (-log10(padj)) of Reactome pathways in genes up-regulated (left) or down-regulated (right) by HFD feeding in Cre-ve and Cre+ve gWAT. Top 20 (by gene count in Cre-ve group) significantly enriched terms shown. Lines indicate related terms. Source data for panels A\u2013D available in Figure 5\u2014source data 1.\n\n### Integration of differential gene expression with the WAT cistrome reveals state-dependent regulation of metabolic targets by NR1D1\n\nTo understand this protective effect of Nr1d1 deletion, we profiled the gWAT NR1D1 cistrome using HaloTag-based technology. This permits antibody-independent capture of the NR1D1 cistrome, offering superior sensitivity and specificity to antibody-based approaches (Hunter et al., 2020). HaloChIP-seq was performed in gWAT tissue collected from NC-fed HaloNr1d1 mice at ZT8 and at ZT20, and from WT mice at ZT8. ZT8 and ZT20 are the expected peak and nadir of NR1D1 recruitment to the genome, respectively (Cho et al., 2012;\u00a0Feng et al., 2011). We identified 4474 ZT8 HaloNR1D1 peaks (MACS2, q<0.01) commonly called against both Halo ZT20 and WT ZT8 libraries (Figure 6A). As anticipated, we saw clear evidence of NR1D1 binding in proximity to core clock genes (Figure 6\u2014figure supplement 1A), with this signal not seen in controls. Motif analysis of this high-confidence peak set detected strong enrichment of RORE and RevDR2 motifs (Figure 6\u2014figure supplement 1B), again supporting the specificity of our cistrome.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig6-v2.jpg)\n\n**Figure 6.:** (A) Calling peaks against both wild-type\u00a0(WT) ZT8\u00a0(zeitgeber time,\u00a08\u00a0hr\u00a0after lights on) and HaloNr1d1 ZT20 samples detects 4474 high-confidence regions of HaloNR1D1 binding in gonadal white adipose tissue\u00a0(gWAT). (B, C) Genes commonly up-regulated in normal chow (NC)-fed Nr1d1Flox2-6:AdipoqCre and Nr1d1-/- gWAT (compared to littermate controls) are significantly enriched in proximity to HaloNR1D1 ChIP-seq peaks (B), as too are genes commonly up-regulated in high-fat diet (HFD)-fed Nr1d1Flox2-6:AdipoqCre and Nr1d1-/- gWAT (C). Genes commonly down-regulated are not. Venn diagrams show intersection of up- and down-regulated genes in the two models of Nr1d1 deletion. Plots shows enrichment (over all genes in the genome) of gene clusters of interest at increasing distances (\u03bb) from HaloNR1D1 peaks. Up-regulated genes in blue, down-regulated in red. (D) Integrative Genomics Viewer\u00a0(IGV) visualisations show HaloNR1D1 peaks in proximity to exemplar genes only up-regulated by Nr1d1 deletion in obese adipose. Uniform y-axes within each panel. (E) NR1D1 targets are also down-regulated in obesity. Volcano plot highlighting effect of HFD (in intact (Cre-ve) animals) of the 863 NR1D1 target genes from (C). NR1D1 target genes shown in purple; 495 NR1D1 target genes also within 100\u00a0kbp of a HaloNR1D1 peak outlined in black. (F) Metabolic map illustrating NR1D1 targets. Genes with a transcription start site\u00a0(TSS) within 100\u00a0kbp of a HaloNR1D1 ChIP-seq peak are starred*. Source data for panels A\u2013C available in Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63324/elife-63324-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Gonadal white adipose tissue\u00a0(gWAT) ChIP-seq demonstrates HaloNR1D1 binding in proximity to core clock genes in HaloNr1d1 mice at ZT8\u00a0(zeitgeber time,\u00a08\u00a0hr\u00a0after lights on), but not in wild-type mice nor in HaloNr1d1 mice at ZT20. Integrative Genomics Viewer\u00a0(IGV) visualisations show HaloNR1D1 signal in the four libraries sequenced; uniform y-axes within each panel. (B) De novo motif analysis (top) of the 4474 high-confidence HaloNR1D1 peaks finds enrichment of RORE, CEBP, and RevDR2-like motifs (three motifs with lowest p-values); these results are echoed by known motif analysis (bottom). (C) Adiponectin gene expression in mature adipocyte (MA) and stromal vascular fractions (SVF) of collagenase-digested gWAT, as measured by qPCR. (D) De-repression of NR1D1 metabolic target genes (compared to Cre-ve controls) is evident in the mature adipocyte fraction of Nr1d1Flox2-6:AdipoqCre Cre+ve mice under high-fat diet conditions, but not with normal chow feeding. qPCR, n=5\u20138/group. (E) Proposed model. In normal conditions, there is a large number of genes over which NR1D1 repressive control is not apparent, likely because the regulatory environment (chromatin state, presence of other regulators) blocks this interaction or renders it redundant. In obese adipose, alterations to the regulatory environment (e.g. chromatin remodelling) are permissive to NR1D1 activity. Data shown as mean \u00b1\u00a0SEM (C D). Unpaired t-test (C), unpaired t-tests corrected for multiple comparisons (FDR) (D). *p<0.05, **p<0.01.\n\nThe NR1D1 cistrome spanning >4000 binding sites contrasts with the small number of DE genes observed between Nr1d1Flox2-6:AdipoqCre and control gWAT under NC conditions (231 genes in the first RNA-seq experiment; Figure 3C, and 138 genes in the second; Figure 5B), but is compatible with the larger number of DE genes revealed under HFD conditions (Figure 3A, Figure 5A). We next used this NR1D1 cistrome to define the relationship between direct chromatin binding and altered gene expression under different genetic and/or dietary challenge. For this, we employed a custom Python script that calculates the enrichment of DE gene sets in spatial relation to identified transcription factor binding sites, over all genes in the genome (Briggs et al., 2021b;\u00a0Hunter et al., 2020;\u00a0Yang et al., 2019). We identified putative NR1D1 target genes by comparing gene sets which changed in both Nr1d1Flox2-6:AdipoqCre gWAT (relative to control mice, under both NC and HFD conditions) and in Nr1d1-/- gWAT (relative to WT littermates). Under NC conditions, only small sets of genes were up- or down-regulated in both Nr1d1Flox2-6:AdipoqCre and Nr1d1-/- tissues (vs. their respective controls) (Figure 6B). Extending out from NR1D1 ChIP-seq peaks by increasing distances (\u03bb), we found transcription start sites (TSSs) of genes up-regulated in Nr1d1Flox2-6:AdipoqCre and Nr1d1-/- gWAT to be significantly enriched (above all genes in the genome) at distances up to 100\u00a0kbp (Figure 6B). This is consistent with repression mediated directly by DNA-bound NR1D1 and strongly suggests that this gene cluster (clock and collagen genes) represents direct targets of NR1D1 repression in WAT under NC conditions. In contrast, no enrichment of genes with decreased expression in Nr1d1Flox2-6:AdipoqCre or Nr1d1-/- WAT was evident at any distance from NR1D1 peaks (Figure 6B). Thus, NR1D1 activation of transcription involves a different mechanism of regulation, likely involving secondary or indirect mechanisms (e.g. de-repression of another repressor), as previously proposed to explain NR1D1 transactivation (Le Martelot et al., 2009).\n\nHFD\u00a0-feeding of Nr1d1Flox2-6:AdipoqCre mice greatly increased the overlap of DE genes with those DE in Nr1d1-/- WAT (Figure 6C). Critically, we observed a highly significant proximity enrichment of these commonly up-regulated genes (863) to sites of NR1D1 chromatin binding (Figure 6C,D), but again, saw no enrichment of the commonly down-regulated genes (Figure 6C). Thus, this integration of transcriptome and cistrome profiling suggests that these commonly up-regulated genes represent direct NR1D1 targets unmasked by the abnormal environment of obese adipose, and that NR1D1\u2019s exertion of direct repressive control is dependent on metabolic state.\n\nConsistent with the healthier metabolic phenotype observed in obese Nr1d1Flox2-6:AdipoqCre mice, we found that the large majority of the 863 NR1D1 gene targets unmasked by HFD\u00a0feeding are normally repressed in obesity (Figure 6E), with 551 (63.8%) showing a significant down-regulation in obese control (Cre-ve) animals (chronic HFD compared to NC-fed state). Furthermore, 495 of these genes were found to lie within 100\u00a0kbp of a NR1D1 binding site (Figure 6E). These genes include important regulators of lipid and mitochondrial metabolism (Figure 6F) \u2013 including Fasn, Scd1, Acsl1, Cs \u2013 and FGF-21 co-receptor Klb, a previously\u00a0identified NR1D1 target gene (Jager et al., 2016). Importantly, obesity-dependent de-repression of these genes was also observed in isolated mature adipocytes\u00a0(MA) collected from NC or HFD-fed mice (Figure 6\u2014figure supplement 1C,D). This provides further evidence that they are regulated by adipocyte NR1D1, and that this regulation is direct.\n\nConsidered together, these findings suggest that the healthy adiposity phenotype in HFD-fed Nr1d1Flox2-6:AdipoqCre mice results from de-repression of NR1D1-controlled adipocyte pathways which allow continued and efficient lipid synthesis and storage, thus permitting greater expansion of the adipose bed, and attenuation of obesity-related dysfunction.\n\n## Discussion\n\nWe set out to define the role of NR1D1 in the regulation of WAT metabolism and subsequently reveal a new understanding of NR1D1 function. Together, our data show NR1D1 to be a state-dependent regulator of WAT metabolism, with its widespread repressive action only unmasked by diet-induced obesity. Surprisingly, Nr1d1 expression in WAT appears to limit the energy-buffering function of the tissue. This finding parallels our recent work in the liver (Hunter et al., 2020). Hepatic-selective loss of NR1D1 carries no metabolic consequence, with NR1D1-dependent control over hepatic energy metabolism revealed only upon altered feeding conditions. Contrary to current understanding, our findings therefore suggest that NR1D1 (and potentially other components of the peripheral clock) does not impose rhythmic repression of metabolic circuits under basal conditions but rather determines tissue responses to altered metabolic state. As reported previously by us and others (Delezie et al., 2012;\u00a0Hand et al., 2015), global deletion of Nr1d1 leads to an increase in lipogenesis, adipose tissue expansion, and an exaggerated response to diet-induced obesity. How the loss of NR1D1 specifically in WAT contributes to this phenotype has not previously been addressed. Here, we use proteomic, transcriptomic, and lipid profiling studies to show a clear bias towards fatty acid synthesis and triglyceride storage within Nr1d1-/- WAT. Adipocyte-targeted deletion of Nr1d1 reveals only a modest phenotype, and a relatively selective set of gene targets, limited to clock processes and collagen dynamics. These genes are concurrently de-regulated in Nr1d1-/- adipose, and are found in proximity to NR1D1 binding sites, strongly implicating them as direct targets of NR1D1 repressive activity.\n\nThe reduced inflammation seen in obese Nr1d1Flox2-6:AdipoqCre mice is likely multifactorial, but may be secondary to a reduction in the pro-inflammatory free fatty acid pool, resulting from de-repression of lipogenic and mitochondrial metabolism pathways, or the absence of signals from dead/dying adipocytes. It is of note that improved metabolic flexibility is beneficial in other mouse models of metabolic disease (Jonker et al., 2012;\u00a0Kim et al., 2007;\u00a0Virtue et al., 2018) and in human obesity (Aucouturier et al., 2011;\u00a0Begaye et al., 2020). Whilst the clock has been linked to ECM remodelling in other tissues (Chang et al., 2020;\u00a0Dudek et al., 2016;\u00a0Sherratt et al., 2019), where it is thought to coordinate ECM dynamics, collagen turnover, and secretory processes (Chang et al., 2020), we now identify ECM as a direct target of adipose NR1D1 action; altered regulation of WAT collagen production and modification likely contributing to the rapid and continued adipose tissue expansion observed in Nr1d1-targeted adipose. The diminished adipose fibrosis seen in Nr1d1Flox2-6:AdipoqCre mice may well reflect alteration in multiple processes, some of which may be under direct/indirect NR1D1 control. Adipose-specific deletion of Nr1d1 thus provides a unique model to explore the complex ECM responses which accompany obesity-related tissue hypertrophy and development of fibrosis.\n\nA role for the clock in the regulation of WAT function has been reported in the literature (Barnea et al., 2015;\u00a0Paschos et al., 2012;\u00a0Shostak et al., 2013), perhaps implying that it is the rhythmicity conferred by the clock which is important for WAT metabolism. However, despite robust rhythms of clock genes persisting, rhythmic gene expression in gWAT is largely attenuated following genetic disruption of SCN function (Kolbe et al., 2016). This supports the alternative notion that an intact local clock is not the primary driver of rhythmic peripheral tissue metabolism. Indeed, metabolic processes, including lipid biosynthesis, were highly enriched in the cohort of SCN-dependent rhythmic genes from this study (Kolbe et al., 2016), implying that feeding behaviour and WAT responses to energy flux are more important than locally\u00a0generated rhythmicity for adipose function.\n\nThe modest impact of adipose-selective Nr1d1 deletion is both at odds with the large effect of global Nr1d1 deletion, and with the extensive WAT cistrome we have identified for NR1D1. This suggests that the tissue-specific actions of NR1D1 are necessary, but not sufficient, and require additional regulation from the metabolic state. Although not explored to the same extent, a lipogenic phenotype of liver-specific ROR\u03b1/\u03b3 deletion has previously been shown to be unmasked by HFD\u00a0feeding (Zhang et al., 2017). By driving adipose tissue hypertrophy through HFD\u00a0feeding of the Nr1d1Flox2-6:AdipoqCre, we observed a stark difference in the adipose phenotype of targeted mice and littermate controls. WAT tissue lacking Nr1d1 showed significantly increased tissue expansion, but little evidence of normal obesity-related pathology (tissue fibrosis and immune cell infiltration/inflammation). Genes controlling mitochondrial activity, lipogenesis, and lipid storage were relatively spared from the obesity-related down-regulation observed in control mouse tissue, and were associated with the WAT NR1D1 cistrome. Thus, in response to HFD\u00a0feeding, NR1D1 acts to repress metabolic activity in the adipocyte and limit tissue expansion (albeit at the eventual cost of tissue dysfunction, inflammation, and development of adipose fibrosis).\n\nThe broadening of NR1D1\u2019s regulatory influence in response to obesity likely reflects a change to the chromatin environment in which NR1D1 operates (Figure 6\u2014figure supplement 1E). The majority of emergent NR1D1 target genes are repressed in obese adipose when Nr1d1 expression is intact (Figure 6E). As these genes are not de-repressed by Nr1d1 loss in normal adipose, NR1D1 activity must be redundant or ineffective in a \u2018basal\u2019 metabolic state. Subsequent emergence of NR1D1\u2019s transcriptional control may reflect alterations in chromatin accessibility or organisation, and/or the presence of transcriptional repressors and accessory factors required for full activity. As NR1D1 is itself proposed to regulate enhancer-promoter loop formation (Kim et al., 2018), modulation of Nr1d1 expression would be a further important variable here. Such reshaping of the regulatory landscape likely occurs across tissues, and may explain why, with metabolic challenge, emergent circadian rhythmicity is observed in gene expression (Eckel-Mahan et al., 2013;\u00a0Kinouchi et al., 2018;\u00a0Tognini et al., 2017), and in circulating and tissue metabolites (Dyar et al., 2018;\u00a0Eckel-Mahan et al., 2013).\n\nHere, we now uncover a role for NR1D1 in limiting the energy-buffering role of WAT, a discovery which may present therapeutic opportunity as we cope with an epidemic of human obesity. Despite recent findings which have cast doubt on the utility of some of the small molecule NR1D1 ligands (Dierickx et al., 2019), antagonising WAT NR1D1 now emerges as a potential target in metabolic disease. Finally, our study suggests that a functioning circadian clock may be beneficial in coping with acute mistimed metabolic cues but, that under chronic energy excess, may contribute to metabolic dysfunction and obesity-related pathology.\n\n## Materials and methods\n\n### Animal experiments\n\nAll experiments described here were conducted in accordance with local requirements and licenced under the UK Animals (Scientific Procedures) Act 1986, project licence number 70/8558 (DAB). Procedures were approved by the University of Manchester Animal Welfare and Ethical Review Body (AWERB). Unless otherwise specified, all animals had ad libitum access to standard laboratory chow and water, and were group-housed on 12 hr:12 hr light:dark cycles and ambient temperature of 22\u00b11.5\u00b0C. Unless otherwise stated, male mice (Mus musculus) were used for all experimental procedures. All proteomics studies were carried out on 13-week-old weight-matched males. RNA-seq studies for Figure 3 were carried out on 12-\u00a0to\u00a014-week-old weight-matched males; the RNA-seq study for Figure 5 was carried out on 28-week-old males (following 16 weeks of HFD or NC feeding). HaloChIP-seq was carried out on males aged 12\u201321 weeks.\n\nFor group allocation, we employed a timed breeding approach, so that cohorts of mice were produced within a narrow time window. All studies compared littermate control and transgenic mice, which inherently confers group allocation and randomisation in cage housing (and thus diet regime). The\u00a0n numbers, and overall experimental design, were determined on the basis of extensive experience with the models, and power analyses incorporating previous results (based on achieving 80% power with 5% type I error). Blinding was facilitated by animal numbering, numbered coding of samples at collection, and use of automated analyses where possible.\n\n#### Nr1d1-/-\n\nNr1d1-/- mice were originally generated by Ueli Schibler (University of Geneva) (Preitner et al., 2002). These mice were created by replacing exons 2\u20135 of the Nr1d1 gene by an in-frame LacZ allele. Mice were then imported to the University of Manchester and backcrossed to C57BL/6J mice.\n\n#### Nr1d1Flox2-6\n\nA CRISPR-Cas9 approach was used to generate a conditional knock allele for Nr1d1 -, as described (Hunter et al., 2020). LoxP sites were integrated, in a two-step process, at intron 2 and intron 6, taking care to avoid any previously described transcriptional regulatory sites (Yamamoto et al., 2004). A founder animal with successful integration of both the 5' and 3' loxP sites, transmitting to the germline, was identified and bred forward to establish a colony.\n\n#### Nr1d1Flox2-6:AdipoqCre\n\nAdiponectin-driven Cre-recombinase mice (Eguchi et al., 2011;\u00a0Jeffery et al., 2014) were purchased from the Jackson Laboratory and subsequently bred against the Nr1d1Flox2-6at the University of Manchester.\n\n#### HaloNr1d1\n\nHaloNr1d1 mice were generated by the University of Manchester Genome Editing Unit, as described (Hunter et al., 2020).\n\n### In vivo phenotyping\n\nBody composition of mice was analysed prior to cull by quantitative magnetic resonance (EchoMRI 900). Energy expenditure was measured via indirect calorimetry using CLAMS (Columbus Instruments) for 10-\u00a0to\u00a012-week-old male mice. Mice were allowed to acclimatise to the cages for 2 days, prior to an average of 5 days of recordings being collected. Recording of body temperature and activity was carried out via surgically implanted radiotelemetry devices (TA-F10, Data Sciences International). Data is shown as a representative day average of single-housed age-matched males. For the diet challenge, male mice were fed HFD (60% energy from fat; DIO Rodent Purified Diet, IPS Ltd) for a period of 10\u201316 weeks from 12 weeks of age. Blood glucose was measured from tail blood using the Aviva Accuchek meter (Roche). For the insulin tolerance test, mice were fasted from ZT0, then injected with 0.75 IU/kg human recombinant insulin (I2643, Sigma-Aldrich) at ZT6 (time \u20180 min\u2019).\n\n### Insulin ELISA\n\nInsulin concentrations were measured by ELISA (EZRMI-13K Rat/Mouse insulin ELISA, Merck Millipore) according to the manufacturer\u2019s instructions. Samples were diluted in matrix solution to fall within the range of the assay. Internal controls supplied with the kit were run alongside the samples and were in the expected range.\n\n### Histology\n\ngWAT was collected and immediately fixed in 4% paraformaldehyde for 24 hr, transferred into 70% ethanol, and processed using a Leica ASP300 S tissue processor; 5 \u03bcm sections underwent H and E staining (Alcoholic Eosin Y solution [HT110116] and Harris Haematoxylin solution [HHS16], Sigma-Aldrich), Picrosirius Red staining (see below), or F4/80 immunohistochemistry (see below). Images were collected on an Olympus BX63 upright microscope using 10\u00d7/0.40 UPlan SAPo and 20\u00d7/0.75 UApo/340 objectives. Percentage area stained was quantified using ImageJ (version 1.52a) as detailed in the online ImageJ documentation, with 5\u201312 images quantified per animal. Adipocyte area was quantified using the Adiposoft ImageJ plug-in (version 1.16).\n\nFor Picrosirius Red staining, sections were dewaxed and rehydrated using the Leica ST5010 Autostainer XL. Sections were washed in distilled water and then transferred to Picrosirius Red (Direct Red 80, Sigma-Aldrich) (without the counterstain) for 1 hr. Sections were then washed briefly in 1% acetic acid. Sections were then dehydrated, cleared, and mounted using the Leica ST5010 Autostainer XL.\n\nFor F4/80 immunohistochemistry, sections were dewaxed and rehydrated prior to enzymatic antigen retrieval (trypsin from porcine pancreas [T7168, Sigma]). Sections were treated with 3% hydrogen peroxide to block endogenous peroxidase activity followed by further blocking with 5% goat serum. Rat mAb to F4/80 (1:500) (ab6640, Abcam) was added and sections were incubated overnight at 4\u00b0C. Sections were washed before addition of the biotinylated anti-rat IgG (BA-9400, H and L) secondary antibody (1:1500) for 1 hr. Sections were developed using VECTAstain Elite ABC kit peroxidase, followed by DAB Peroxidase substrate (Vector Labs) and counterstained with haematoxylin. Slides were then dehydrated, cleared, and mounted.\n\n### Lipid extraction and gas chromatography\n\nTotal lipid was extracted from tissue lysates using chloroform-methanol (2:1; v/v) according to the Folch method (Folch et al., 1957). An internal standard (tripentadecanoin glycerol [15:0]) of known concentration was added to samples for quantification of total triacylglyceride. Lipid fractions were separated by solid-phase extraction and fatty acid methyl esters (FAMEs) were prepared as previously described (Heath et al., 2003). Separation and detection of total triglyceride FAMEs was achieved using a 6890N Network GC System (Agilent Technologies,\u00a0Santa\u00a0Clara, CA) with flame ionisation detection. FAMEs were identified by their retention times compared to a standard containing 31 known fatty acids and quantified in micromolar from the peak area based on their molecular weight. The micromolar quantities were then totalled and each fatty acid was expressed as a percentage of this value (molar percentage, mol%).\n\n### Proteomics\n\nMice were culled by cervical dislocation and the gWAT was immediately removed and washed twice in ice-cold PBS and then once in ice-cold 0.25\u00a0M sucrose, prior to samples being snap-frozen in liquid nitrogen and stored at \u221280\u00b0C. To extract the protein, the samples were briefly defrosted on ice and then cut into 50 mg pieces and washed again in ice-cold PBS. The sample was then lysed in 200 \u03bcl of 1\u00a0M triethylammonium bicarbonate buffer (Sigma) with 0.1% (w/v) sodium dodecyl sulphate with a Tissue Ruptor (Qiagen). Samples were centrifuged for 5 min, full speed, at 4\u00b0C and the supernatant collected into a clean tube. A Bio-Rad Protein Assay (Bio-Rad) was used to quantify the protein and Coomassie protein stain (InstantBlue Protein Stain Instant Blue, Expedeon) to check the quality of extraction. Full methods of subsequent iTRAQ proteomic analysis including bioinformatic analysis has been published previously (Kassab et al., 2019;\u00a0Xu et al., 2019). Here, the raw data was searched against the mouse Swissprot database (release October 2017) using the paragon algorithm on Protein-Pilot (version 5.0.1, AB SCIEX). A total of 33,847 proteins were searched. As described (Xu et al., 2019), Bayesian protein-level differential quantification was performed by Andrew Dowsey (University of Bristol) using their own BayesProt (version 1.0.0), with default choice of priors and MCMC settings. Expression fold change relative to the control groups was determined and proteins with a global false discovery rate of <0.05 were deemed significant.\n\n### Adipose tissue fractionation\n\nFollowing a method adapted from Collins et al., 2010, gWAT was collected from adult male mice and washed in Hanks\u2019 Balanced Salt Solution (Sigma). Next, tissue was minced and digested in 1 mg/ml collagenase (Collagenase H, Sigma) for 30\u00a0min in a shaking incubator at 170 rpm, 37\u00b0C. The sample was then centrifuged at 1000 rpm for 5\u00a0min at 4\u00b0C. MA (floating layer) and stromal vascular fraction\u00a0(SVF) (cell pellet) were collected separately, lysed in TRIzol Reagent (Invitrogen), and stored at \u221280\u00b0C before proceeding to RNA extraction.\n\n### 3T3-L1 cells\n\nThe 3T3-L1 cell line was purchased from ATCC (authentication and mycoplasma testing status as per ATCC documentation). Cells were maintained in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) \u2013 high glucose (D6429, Sigma-Aldrich) supplemented with 10% foetal bovine serum (FBS) and 1% penicillin/streptomycin (P/S) at 37\u00b0C/5% CO2. Cells were grown until confluent, passaged and plated into 12-well tissue culture plates for differentiation. The differentiation protocol was initiated 5 days later. Cells were treated with 10 \u03bcg/ml insulin (Sigma-Aldrich), 1 \u03bcM dexamethasone (Sigma-Aldrich), 1 \u03bcM rosiglitazone (AdooQ Bioscience), and 0.5 mM IBMX (Sigma-Aldrich) prepared in DMEM + 10% FBS + 1% P/S for 3 days. On day 3 and day 5, the cell culture media was changed to 10 \u03bcg/ml insulin and 1 \u03bcM rosiglitazone in DMEM + 10% FBS + 1% P/S. On day 7, the cell culture media was changed to 10 \u03bcg/ml insulin in DMEM + 10% FBS + 1% P/S. Finally on day 10, the cell culture media was changed to DMEM + 10% FBS + 1% P/S without any additional differentiation mediators. Cells were used from day 11 onwards. Lipid droplets were visible by day 5.\n\nFor knockdown studies, mature 3T3-L1 adipocytes were transfected with SiControl (Control ON-TARGETplus siRNA, Dharmacon), SiNr1d1 (Mouse NR1D1 ON-TARGETplus siRNA, Dharmacon), or SiNr1d2 (Mouse NR1D2 ON-TARGETplus siRNA, Dharmacon) at 50 nM concentration using Lipofectamine RNAiMAX (Invitrogen) as a transfection reagent. Briefly, 12-well plates were coated with poly-L-lysine hydrobromide (Sigma) and incubated for 20\u201330 min prior to excess poly-L-lysine being removed and the plates allowed to dry. SiRNAs and RNAiMAX transfection reagent were separately mixed with reduced serum media (Opti-MEM, Gibco). The control or Nr1d1/\u03b2 siRNA was then added to each well and mixed with an equal quantity of RNAiMAX and then incubated for 5 min at room temperature. Mature 3T3-L1 adipocytes were trypsinised (trypsin-EDTA solution, Sigma) and resuspended in FBS without P/S prior to being re-plated into the wells containing the SiRNA. After 24 hr the transfection mix was removed and replaced with DMEM without FBS or P/S. The cells were then collected 48 hr after transfection.\n\n### RNA extraction (cells)\n\nRNA was extracted from cells using the ReliaPrep RNA Cell Miniprep system (Promega UK), following manufacturer\u2019s instructions. RNA concentration and quality was determined with the use of a NanoDrop spectrophotometer and then stored at \u221280\u00b0C.\n\n### RNA extraction (tissue)\n\nFrozen adipose tissue was homogenised in TRIzol Reagent (Invitrogen) using Lysing Matrix D tubes (MP Biomedicals) and total RNA extracted according to the manufacturer\u2019s TRIzol protocol. To remove excess lipid, samples underwent an additional centrifugation (full speed, 5 min, room temperature) prior to chloroform addition. For the RNA sequencing samples, the isopropanol phase of TRIzol extraction was transferred to Reliaprep tissue Miniprep kit (Promega, Madison, WI) columns to ensure high-quality RNA samples were used. The column was then washed, DNAse treated, and RNA eluted as per protocol. RNA concentration and quality was determined with the use of a NanoDrop spectrophotometer and then stored at \u221280\u00b0C. For RNA-seq, RNA was diluted to 1000 ng in nuclease-free water to a final volume of 20 \u03bcl.\n\n### RNA extraction (adipose fractions)\n\nMA and SVF were suspended in TRIzol Reagent (Invitrogen), and pipetted up and down to ensure cells were fully lysed. To remove excess lipid from MA fractions, samples were centrifuged (full speed, 5 min, room temperature) prior to chloroform addition. RNA extraction was then carried out as per the manufacturer\u2019s TRIzol protocol, up to the stage of removing the isopropranol phase, which was transferred to Reliaprep columns (Promega) for on-column DNase treatment, clean-up, and elution as per manufacturer\u2019s protocol.\n\n### RT-qPCR\n\nFor RT-qPCR, samples were DNase-treated (RQ1 RNase-Free DNase, Promega, Madison, WI) prior to cDNA conversion High Capacity RNA-to-cDNA kit (Applied Biosystems). qPCR was performed using a GoTaq qPCR Master Mix (Promega, Madison, WI) and primers listed in Appendix Adipocyte NR1D1 dictates adipose tissue expansion during obesity using a Step One Plus (Applied Biosystems) qPCR machine. Relative quantities of gene expression were determined using the [delta][delta] Ct method and normalised with the use of a geometric mean of the housekeeping genes Hprt, Ppib, and Actb (housekeeping gene Ppia used for Figure 4\u2014figure supplement 1B,D, Figure 6\u2014figure supplement 1D). The fold difference of expression was calculated relative to the values of control groups.\n\n### RNA-seq\n\nAdipose tissue was collected from adult male mice (n=6\u20138/group) at ZT8 and flash-frozen. Total RNA was extracted and DNase-treated as described above. Biological replicates were taken forward individually to library preparation and sequencing. For library preparation, total RNA was submitted to the Genomic Technologies Core Facility (GTCF). Quality and integrity of the RNA samples were assessed using a 2200 TapeStation (Agilent Technologies) and then libraries generated using the TruSeq Stranded mRNA assay (Illumina, Inc) according to the manufacturer\u2019s protocol. Briefly, total RNA (0.1\u20134 \u03bcg) was used as input material from which polyadenylated mRNA was purified using poly-T, oligo-attached, magnetic beads. The mRNA was then fragmented using divalent cations under elevated temperature and then reverse-transcribed into first strand cDNA using random primers. Second strand cDNA was then synthesised using DNA Polymerase I and RNase H. Following a single \u2018A\u2019 base addition, adapters were ligated to the cDNA fragments, and the products then purified and enriched by PCR to create the final cDNA library. Adapter indices were used to multiplex libraries, which were pooled prior to cluster generation using a cBot instrument. The loaded flow\u00a0cell was then paired-end sequenced (76 + 76 cycles, plus indices) on an Illumina HiSeq4000 instrument. Finally, the output data was demultiplexed (allowing one mismatch) and BCL-to-Fastq conversion performed using Illumina\u2019s bcl2fastq software, version 2.17.1.14.\n\n### RNA-seq data processing and differential gene expression analysis\n\nPaired-end RNA-seq reads were quality-assessed using FastQC (version 0.11.3), FastQ Screen (version 0.9.2) (Wingett and Andrews, 2018). Reads were processed with Trimmomatic (version 0.36) (Bolger et al., 2014) to remove any remaining sequencing adapters and poor quality bases. RNA-seq reads were then mapped against the reference genome (mm10) using STAR (version 2.5.3a) (Dobin et al., 2013). Counts per gene (exons) were calculated by STAR using the genome annotation from GENCODEM16. Differential expression analysis was then performed with edgeR (Robinson et al., 2010) using QLF\u00a0tests based on published code (Chen et al., 2016). Changes were considered significant if they reached an FDR cut-off of <0.05. Transcripts with \u2018NA\u2019 gene ID are not included in gene numbers described. Interaction analysis was performed with stageR (Van den Berge et al., 2017) in conjunction with Limma voom (Law et al., 2014), setting alpha at 0.05.\n\n### HaloChIP-seq\n\nNR1D1 HaloChIP-seq was performed using a protocol based on Hunter et al., 2020, with modifications informed by Castellano-Castillo et al., 2018. Reagents were from the ChIP-IT High Sensitivity Chromatin Preparation kit (Active Motif 53046) and the HaloCHIP System (Promega G9410), unless otherwise specified. Freshly\u00a0harvested gWAT was finely minced and dual-crosslinked in 10 ml 0.5\u00a0M disuccinimidyl glutarate (Thermo\u00a0Fisher\u00a0Scientific 20593) followed by 10 ml 1% formaldehyde-PBS. After quenching with glycine, tissue pieces were washed 2\u00d7 in ice-cold ChIP wash buffer (Active Motif), then resuspended in 5 ml freshly\u00a0made adipose lysis buffer (10 mM Tris HCl, 140 mM NaCl, 5 mM EDTA, 1% NP-40) supplemented with a HaloChIP-compatible protease inhibitor cocktail (Promega G6521). Fixation and wash solutions were changed by centrifuging tissue suspensions at 1250 g for 3 min (4\u00b0C), and removing the infranatant from below the floating adipose tissue pieces with glass Pasteur pipettes. Tissue was disrupted mechanically with the Qiagen TissueRuptor, then incubated on ice for 30 min to lyse cells. Following centrifugation (2780 g for 3 min, 4\u00b0C), the lipid layer and supernatant were carefully removed, and the nuclei pellet resuspended in 650 \u00b5l Mammalian Lysis Buffer (Promega), supplemented with protease inhibitor cocktail. Suspensions were once again incubated on ice (15 min) prior to low-amplitude probe sonication (Active Motif) (8\u00d7 2 min cycles of 30 s on/30 s off, 20% amplitude). Cellular debris was pelleted by spinning at 21,000 g for 3 min (4\u00b0C), and 600 \u00b5l of the chromatin suspension added to HaloLink Resin, prepared as per manufacturer\u2019s instructions. Pull-down reactions were rotated for 3 hr at room temperature, subsequent to wash and elution steps as per manufacturer\u2019s HaloCHIP System instructions. Eluted ChIP DNA was purified with the ChIP DNA Clean and Concentrator kit (Zymo D5205). ChIP DNA was quantified with the Qubit dsDNA HS Assay Kit (Invitrogen Q32851). For experimental samples, tissue was collected from male homozygous HaloNr1d1 mice at ZT8; for control samples, tissue was collected from male homozygous HaloNr1d1 mice at ZT20, and from male WT mice (related colony) at ZT8. For each ChIP-seq library preparation, ChIP DNA from three to seven mice was pooled to total 5 ng ChIP DNA. ChIP DNA pools (2\u00d7 ZT8 HaloNr1d1 pools, 1\u00d7 ZT20 HaloNr1d1 pool, 1\u00d7 ZT8 WT pool) were submitted to the University of Manchester GTCF for TruSeq ChIP library preparation (Illumina) as per manufacturer\u2019s instructions and paired-end sequencing (HiSeq 4000).\n\n### HaloChIP-seq data processing\n\nAdapter trimming was performed with Trimmomatic v0.38.1 (5) using Galaxy version 20.01, specifying the following parameters: ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:20 MINLEN:36. Paired reads were aligned to the mm10 genome with Bowtie 2 v2.3.4.3+galaxy0 (Langmead and Salzberg, 2012) using default settings. Duplicates were removed with Picard v2.18.2.1 (Broad Institute) with \u2013REMOVE_DUPLICATES = true. Resulting mean library size was 89.5M reads.\n\n### HaloChIP-seq data analysis\n\nPeaks were called using MACS2 v2.2.7.1 (Zhang et al., 2008), using: macs2 callpeak \u2013t BAM_FILES \u2013c BAM_FILES \u2013g mm \u2013f BAMPE \u2013q 0.01. Peaks were called from the ZT8 HaloNr1d1 libraries using either ZT8 WT or ZT20 HaloNr1d1 libraries as controls. Peaks commonly called by both strategies were identified using bedtools v2.19.1 (Quinlan, 2014) intersect tool. Motif analysis was performed using HOMER v4.9.1 (Heinz et al., 2010), running: findMotifsGenome.pl BED_FILE mm10 \u2013size 200 \u2013mask ChIP data was visualised with Integrative Genomics Viewer v2.4.6 (Thorvaldsd\u00f3ttir et al., 2013).\n\n### Integrating RNA-seq and ChIP-seq\n\nIn order to calculate enrichment of RNA-seq-based gene clusters with respect to ChIP-seq peaks, we used our in-house custom tool (Briggs et al., 2021b;\u00a0Yang et al., 2019) which calculates gene cluster enrichment within specified distances from the centre of peaks (see also Code Availability statement below). This Peak-set Enrichment of Gene-sets (PEGS) tool extends peaks in both directions for the given distances and extracts all genes whose TSSs overlap with the extended peaks. Given these genes, the inputted RNA-seq-based gene cluster, and the overlap of these two groups, it performs a hypergeometric test with the total number of genes in the mm10 genomes as background. Parameters were set as: pegs refGene mm10_intervals.bed BED_FILES/ GENE_LISTS/ 100 500 1000 5000 10000 50000 100000 500000 1000000 5000000 10000000.\n\n### Pathway analysis\n\nPathway enrichment analysis of gene identifiers, either extracted from RNA-seq or proteomics data, was carried out using IPA (Qiagen) as described in Kr\u00e4mer et al., 2014, or using the R Bioconductor package ReactomePA (Yu and He, 2016). For ReactomePA, the enrichPathway tool was used with the following parameters: organism = \u2018mouse\u2019, pAdjustMethod = \u2018BH\u2019, maxGSSize = 2000, readable = FALSE. We considered pathways with a padj<0.01 to be significantly enriched.\n\n### Protein extraction and Western blotting\n\nSmall pieces (<100 mg) of tissue were homogenised with the FastPrep Lysing Matrix D system (MP Biomedicals) in T-PER (Thermo Fisher Scientific), supplemented with protease inhibitor cocktail (Promega) at 1:50 dilution. Benzonase nuclease (EMD Millipore) was added (2 \u03bcl), the homogenate briefly vortexed, then incubated on ice for 10 min. Homogenates were then centrifuged for 8 min at 10,000 g, at 4\u00b0C, and the supernatant removed (avoiding any lipid layer). Protein concentration was quantified using the Bio-Rad Protein Assay (Bio-Rad). For Western blotting, equal quantities (75 \u03bcg for detection of NR1D1) of protein were added to 4\u00d7 NuPAGE LDS sample buffer (Invitrogen), NuPAGE sample reducing agent (dithiothreitol) (Invitrogen) and water, and denatured at 70\u00b0C for 10 min. Samples were run on 4\u201320% Mini-PROTEAN TGX Precast Protein Gels (Bio-Rad) before wet transfer to nitrocellulose membranes. Membranes were blocked with Protein-Free Blot Blocking Buffer (Azure Biosystems), and subsequent incubation and wash steps carried out following manufacturer\u2019s instructions. Primary and secondary antibodies used were as listed\u00a0in the Key resources table, with primary antibodies being used at a 1:1000 dilution and secondary antibodies at 1:10,000. Membranes were imaged using chemiluminescence or the LI-COR Odyssey system. Uncropped blot images are provided in the Source Data Files.\n\n### Statistics\n\nTo compare two or more groups, t-tests or ANOVAs were carried out using GraphPad Prism (v.8.4.0). For all of these, the exact statistical test used and n numbers are indicated in the figure legends. All n numbers refer to individual biological replicates (i.e. individual animals). Cell line experiments were replicated three times; animal experiments were typically performed only once. Notable exceptions included two independent assessments of HFD\u00a0feeding in the Nr1d1Flox2-6:AdipoqCre mice, and the two independent RNA-seq experiments comparing Nr1d1Flox2-6:AdipoqCre Cre-ve and Cre+ve mice on NC (Figure 3C, Figure 5B). Unless otherwise specified, bar height is at mean, with error bars indicating \u00b1\u00a0SEM. In these tests, significance is defined as *p<0.05 or **p<0.01 (p-values below 0.01 were not categorised separately, i.e. no more than two stars were used, as we deemed this to be a meaningful significance cut-off). Statistical analyses of proteomics, RNA-seq, and ChIP-seq data were carried out as described above in Materials\u00a0and\u00a0methods, using the significance cut-offs mentioned. Plots were produced using GraphPad Prism or R package ggplot2.\n\n### Code availability\n\nThe custom Python code (Briggs et al., 2021b;\u00a0Yang et al., 2019) used to carry out the peaks-genes enrichment analysis in this study is available as the PEGS package at https://github.com/fls-bioinformatics-core/pegs (Briggs, 2021a)\u00a0and through the Python Package Index (PyPI).\n",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "119ef794-0d18-4543-bd22-77869d28c9e5",
+      "submission_id": "f4c7093b-70e7-4b69-82bf-e6eb5bbdeaa8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Tontonoz, University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63324.sa1](https://doi.org/10.7554/eLife.63324.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript clarifies the role of NR1D1/REVERBa in transcriptional regulation in adipose tissue. The authors show that the phenotype resulting from adipose NRD1 knockout is distinct to what was previously reported in a global knockout model. The findings reveal that loss of adipose REVERBa leads to healthy adipose expandability with systemic metabolic benefits.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Adipocyte REVERB\u03b1 dictates adipose tissue expansion during obesity\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by David James as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThe manuscript by Hunter et al., identifies a dominant metabolic role for REVERBa in adipose tissue. By using an adipose-specific REVERBa knockout mouse model, the authors describe a metabolic phenotype distinct from that previously reported in a global model. Convincing data is presented supporting a role for REVERBa in regulating the circadian clock and collagen dynamics, the latter of which was not previously recognized. The authors further show that loss of adipose REVERBa leads to healthy adipose expandability with added systemic metabolic benefit. Overall, the results supporting a broader role for REVERBa to include lipid and mitochondrial metabolic pathways in the context of obesity are of interest. However, the reviewers also identified a number of areas where the current data do not fully support the conclusions drawn.\n\nEssential revisions:\n\n1) The authors are encouraged to provide mechanistic insights detailing altered REVERBa repressive activity upon high fat-feeding. Is activity of REVERBa physiologically regulated in response to HFD, e.g., by altered post-translational modifications and/or by altered co-repressor complex interactions? Also, is adipose REVERBa expression by itself affected during obesity?\n\n2) Prior publications have shown that the metabolic gene regulation mediated by REVERBa tends to also involve HDAC3. They should consider further mechanistic studies of REVERBa and HDAC3 in this mouse line.\n\n3) One major issue with this study is the lack of cellular specificity. The authors generate mice with an adipocyte-specific knockout of REVERBa, but then do RNA-seq of the entire gonadal fat pad. Since only about 50% of the cells in the tissue are adipocytes, there is thus no way to know whether the gene expression changes seen are due to direct loss of REVERBa in adipocytes or secondary effects on other cell types within adipose tissue. The authors could partly address this concern by either (a) fractionating adipose tissue into mature adipocytes and stromal vascular fraction to verify which cell types are demonstrating the expression changes or (b) isolating SVF from control and adipocyte-specific knockout animals and differentiating them in vitro to determine cell intrinsic effects of REVERBa deletion.\n\n4) The lack of specificity also becomes an issue with the analyses done in Figure 6 in which they have overlaid their RNA-Seq data with previously published ChIP-seq data. They then use bioinformatics to predict which genes are direct targets of REVERBa. This analysis would be strengthened if they first knew which of their transcriptional changes represented expression differences in adipocytes and if they then either did their own ChIP-seq study or at least validated some candidate genes by ChIP-PCR to actually confirm REVERBa binding.\n\n5) In Figure 3, the authors highlight that adipocyte-specific knockout of REVERBa results in increased collagen gene expression (Figure 3). However, on a high fat diet, mutant animals actually have decreased fibrosis. How do the authors explain this seeming contradiction? At a minimum, they should measure the same panel of collagen genes they propose to be regulated by REVERBa to see if they are altered in high fat fed gWAT.\n\n6) Some of the claims made on the metabolic phenotyping are overstatements:\n\na) The data presented on acute cold exposure and REVERBb compensation in 3T3-L1 adipocytes are not at all sufficient to claim that the phenotypes seen here are not due to effects in brown fat or due to compensatory action by REVERBb.\n\nb) Isolated sections with F4/80 alone are not sufficient to make a broad claim about inflammation. This would be more convincing if supported by flow cytometry data and inflammatory gene expression.\n\nc) The legend for Figure 4 says that mutant mice have \"greater insulin sensitivity\". However, the curves in Figure 4F look very similar. Moreover, they calculate the area within the curve. I am not sure if they mean the area under the curve, which is more typically done, but this is confusing and needs to be clarified.\n",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "06b60466-14e0-418d-b6d1-4c7d2e1bda49",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C1",
+      "claim": "Nr1d1-/- mice carry an increased proportion of fat mass (24.2 \u00b1 3.0% of body weight) compared to wild type controls (10.8 \u00b1 1.4%)",
+      "claim_type": "EXPLICIT",
+      "source": "Nr1d1-/- mice are of similar body weight to littermate controls (Figure 1A), yet carry an increased proportion of fat mass (KO: 24.2 \u00b1 3.0% of body weight; WT: 10.8 \u00b1 1.4%; mean \u00b1 SEM, p<0.01 Student's t-test, n=12\u201314/group)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental measurements of body composition in Nr1d1-/- mice and wild type controls, with statistical analysis showing p<0.01.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "903de380-d2be-4456-a52c-ea3fffcd7c12",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C2",
+      "claim": "Nr1d1-/- mice display adipocyte hypertrophy when maintained on a standard chow diet",
+      "claim_type": "EXPLICIT",
+      "source": "Nr1d1-/- mice are of similar body weight to littermate controls (Figure 1A), yet carry an increased proportion of fat mass (KO: 24.2 \u00b1 3.0% of body weight; WT: 10.8 \u00b1 1.4%; mean \u00b1 SEM, p<0.01 Student's t-test, n=12\u201314/group) and display adipocyte hypertrophy (Figure 1B), even when maintained on a standard chow diet.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological examination shown in Figure 1B and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "aa9abada-a4e5-4504-83eb-c2e610370366",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C3",
+      "claim": "Proteomic profiling of gWAT depots from Nr1d1-/- mice shows deregulation of metabolic regulators and enrichment of metabolic pathways",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomic profiling of gWAT depots (Nr1d1-/- mice plotted relative to their respective weight-matched littermate controls, n=6/group (C)) shows deregulation of metabolic regulators and enrichment (D) of metabolic pathways (up- and down-regulated proteins shown in blue and red, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by proteomic analysis data presented in Figure 1C and 1D, showing differential protein expression and pathway enrichment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "6da751f3-fc4c-42e2-851a-529dfd6159f0",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C4",
+      "claim": "The ratio of palmitic to linoleic acid (C16:0/C18:2n6), a marker of de novo lipogenesis, was significantly elevated in Nr1d1-/- gWAT samples",
+      "claim_type": "EXPLICIT",
+      "source": "To validate this putative increase in local lipid synthesis, we quantified fatty acid species in gWAT, and indeed, the ratio of palmitic to linoleic acid (C16:0/C18:2n6), a marker of de novo lipogenesis, was significantly elevated in Nr1d1-/- samples (Figure 1E, Figure 1\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fatty acid profiling data showing increased C16:0/C18:2n6 ratio in Nr1d1-/- samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "034b651a-a0f2-4eac-8571-703c7c277e19",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C5",
+      "claim": "Fatty acid profiling revealed evidence of increased SCD1 activity (C16:1 n-7/C16:0) in Nr1d1-/- gWAT",
+      "claim_type": "EXPLICIT",
+      "source": "Fatty acid profiling also revealed evidence of increased SCD1 activity (C16:1 n-7/C16:0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by fatty acid profiling data showing increased C16:1 n-7/C16:0 ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "62582095-6e56-40a1-94f7-6b999ad01314",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C6",
+      "claim": "Nr1d1-/- mice display substantial obesity compared to littermate controls when challenged with 10 weeks of high-fat diet",
+      "claim_type": "EXPLICIT",
+      "source": "The propensity to lipid storage is further highlighted by the substantial obesity, compared to littermate controls, displayed by Nr1d1-/- mice when challenged with 10 weeks of HFD (Figure 1\u2014figure supplement 1I; Delezie et al., 2012; Hand et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by body weight and composition data from HFD-fed mice shown in Figure 1\u2014figure supplement 1I, and is also supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "e540e688-83e4-4e80-9c50-b148628f87b6",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C7",
+      "claim": "A strong positive correlation exists between body weight and daily intake of HFD in Nr1d1-/- mice",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a strong positive correlation between body weight and daily intake of HFD in the Nr1d1-/- mice (Figure 1\u2014figure supplement 1J), suggesting that HFD-induced hyperphagia exacerbates weight gain and obesity in the Nr1d1-/- mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 1\u2014figure supplement 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "abf87ae2-6f06-4290-9db0-08f9e87c7fa8",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C8",
+      "claim": "Adult Nr1d1Flox2-6:AdipoqCre mice did not show an increase in adiposity when maintained on a standard chow diet",
+      "claim_type": "EXPLICIT",
+      "source": "In marked contrast to global Nr1d1-/- mice, adult Nr1d1Flox2-6:AdipoqCre mice did not show an increase in adiposity when maintained on a standard chow diet (Figure 2C; n=7/group), with no differences in mean body weight, fat, and lean mass observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by body composition measurements shown in Figure 2C comparing Nr1d1Flox2-6:AdipoqCre mice to controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "ad89dd07-db66-47cf-bdbd-2e668fb2f9c6",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C9",
+      "claim": "No differences in daily patterns of food intake, energy expenditure, activity levels, or body temperature were observed in matched Nr1d1Flox2-6:AdipoqCre and control mice",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel with this, we saw no differences in daily patterns of food intake, energy expenditure, activity levels, or body temperature in matched Nr1d1Flox2-6:AdipoqCre and control (Nr1d1Flox2-6) mice (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by metabolic phenotyping data shown in Figures 2D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "8000b754-b12f-4581-8048-52e578376a46",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C10",
+      "claim": "No genotype differences in thermoregulation were observed between Nr1d1Flox2-6:AdipoqCre and Nr1d1Flox2-6 mice",
+      "claim_type": "EXPLICIT",
+      "source": "However, we saw no evidence of genotype differences in thermoregulation between Nr1d1Flox2-6:AdipoqCre and Nr1d1Flox2-6 mice (Figure 2\u2014figure supplement 1A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by body temperature measurements under various conditions shown in Figure 2\u2014figure supplement 1A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "3781e330-c377-43cb-b362-8b58b6a7dc2f",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C11",
+      "claim": "Despite increased BAT UCP1 expression in the Cre+ve mice, no differences in body temperature profiles were observed between Cre-ve and Cre+ve mice when housed under normal laboratory temperature (22\u00b0C) nor when placed under thermoneutral conditions (29\u00b0C) for >14 days",
+      "claim_type": "EXPLICIT",
+      "source": "Despite increased BAT UCP1 expression in the Cre+ve mice, no differences in body temperature profiles were observed between Cre-ve and Cre+ve mice when housed under normal laboratory temperature (22\u00b0C) nor when placed under thermoneutral conditions (29\u00b0C) for >14 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by body temperature measurements and UCP1 expression data under different temperature conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "503a5d7b-242d-4098-b1c2-2e7db8efd2f6",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C12",
+      "claim": "Cre-ve and Cre+ve mice did not differ in their thermogenic response to an acute cold challenge (4\u00b0C for 6 hr)",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Cre-ve and Cre+ve mice did not differ in their thermogenic response to an acute cold challenge (4\u00b0C for 6 hr) (Figure 2\u2014figure supplement 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by body temperature measurements during cold challenge shown in Figure 2\u2014figure supplement 1F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "6cb06332-08cc-403b-b983-cf87f7cd473f",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C13",
+      "claim": "Global Nr1d1 deletion had a large effect on the gWAT transcriptome, with 4163 genes showing significant differential expression (FDR<0.05) between Nr1d1-/- mice and age- and weight-matched WT littermate controls",
+      "claim_type": "EXPLICIT",
+      "source": "Global Nr1d1 deletion had a large effect on the gWAT transcriptome, with 4163 genes showing significant differential expression (FDR\u00a10.05) between Nr1d1-/- mice and age- and weight-matched WT littermate controls (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data showing differential gene expression in Nr1d1-/- gWAT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "72484cb0-be2c-4898-b0cd-476d41f076ee",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C14",
+      "claim": "Pathway enrichment analysis of differentially expressed genes in Nr1d1-/- gWAT demonstrated that changes are dominated by metabolic genes, with lipid metabolism and the TCA cycle emerging as prominent processes",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway enrichment analysis demonstrated that these changes are dominated by metabolic genes (Figure 3B), with lipid metabolism and the TCA cycle emerging as prominent processes (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis of RNA-seq data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "0d893df9-e541-4778-9e23-491206e1aec9",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C15",
+      "claim": "Only 231 genes showed significant differential expression between Nr1d1Flox2-6:AdipoqCre and Nr1d1Flox2-6 littermates in gWAT",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, and consistent with the absence of an overt phenotype, only a small genotype effect on the transcriptome was observed when comparing gWAT RNA-seq from Nr1d1Flox2-6:AdipoqCre and Nr1d1Flox2-6 littermates (Figure 3C; n=6/group). Here, 231 genes showed significant differential expression between genotypes, of which 126 were also differentially regulated in the WAT analysis of global Nr1d1-/- mice (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data comparing Nr1d1Flox2-6:AdipoqCre and control mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "21d760ef-6910-4f7f-9cd3-016aa787cdf9",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C16",
+      "claim": "126 genes were commonly differentially expressed in both Nr1d1Flox2-6:AdipoqCre and Nr1d1-/- gWAT, including circadian clock components (Arntl, Clock, Cry2, Nfil3)",
+      "claim_type": "EXPLICIT",
+      "source": "Here, 231 genes showed significant differential expression between genotypes, of which 126 were also differentially regulated in the WAT analysis of global Nr1d1-/- mice (Figure 3D). These 126 common genes included circadian clock components (Arntl, Clock, Cry2, Nfil3), whilst pathway analysis also revealed collagen formation/biosynthesis processes to be significantly enriched (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data showing overlap of differentially expressed genes between the two models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "eddb5754-ec60-42dc-8981-b67ecd3a477a",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C17",
+      "claim": "Pathway analysis of the 126 commonly differentially expressed genes revealed collagen formation/biosynthesis processes to be significantly enriched",
+      "claim_type": "EXPLICIT",
+      "source": "These 126 common genes included circadian clock components (Arntl, Clock, Cry2, Nfil3), whilst pathway analysis also revealed collagen formation/biosynthesis processes to be significantly enriched (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis of RNA-seq data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "e5ae3086-a08f-40de-a48e-3489b60cd33f",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C18",
+      "claim": "Nr1d1Flox2-6:AdipoqCre mouse gWAT exhibits neither enrichment of lipid metabolic pathways nor de-regulation of individual key lipogenic genes previously identified as NR1D1 targets",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that Nr1d1Flox2-6:AdipoqCre mouse gWAT exhibits neither enrichment of lipid metabolic pathways nor de-regulation of individual key lipogenic genes, previously identified as NR1D1 targets (Figure 3E,G; Feng et al., 2011; Zhang et al., 2015; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data and pathway analysis, and contrasts with findings from cited previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "6e854648-cf88-48b5-9670-1fffa0b5926f",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C19",
+      "claim": "Double knockdown of Nr1d1 and Nr1d2 in differentiated 3T3-L1 cells produced greater Arntl de-repression than either Nr1d1 or Nr1d2 knockdown alone, but did not lead to de-repression of lipogenic genes previously considered NR1D1 targets",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst double knockdown produced greater Arntl de-repression than either Nr1d1 or Nr1d2 knockdown alone, it did not lead to de-repression of lipogenic genes previously considered NR1D1 targets (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data from knockdown experiments in 3T3-L1 cells shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "af46d3bd-538f-4288-a68c-cfe92641e202",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C20",
+      "claim": "Nr1d1Flox2-6:AdipoqCre mice exhibited greater weight gain and adiposity in response to HFD feeding compared to their controls",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, Nr1d1Flox2-6:AdipoqCre and Nr1d1Flox2-6 mice were provided with HFD for 16 weeks to drive obesity and WAT expansion. Indeed, compared to their controls, Nr1d1Flox2-6:AdipoqCre mice exhibited greater weight gain and adiposity in response to HFD feeding (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by body weight and composition measurements during HFD feeding shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "a4a5fde1-7219-4afb-b015-637779f24bcc",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C21",
+      "claim": "Divergence between control and Nr1d1Flox2-6:AdipoqCre mice became clear only after long-term HFD feeding (beyond 13 weeks), a time at which body weight gain plateaus in control mice",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, divergence between control and Nr1d1Flox2-6:AdipoqCre mice became clear only after long-term HFD feeding (beyond 13 weeks), a time at which body weight gain plateaus in control mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by longitudinal body weight tracking data during HFD feeding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "49fe876a-515e-49a2-8380-9811525ac93b",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C22",
+      "claim": "HFD-induced hyperphagia is observed in Nr1d1-/- mice (WT food intake 2.92\u00b10.10 g HFD/day/mouse; KO 3.74\u00b10.21 g, p=0.0014) but not in Nr1d1Flox2-6:AdipoqCre mice (Cre-ve 2.99\u00b10.61 g HFD/day/mouse; Cre+ve 3.01\u00b10.60 g, p>0.05)",
+      "claim_type": "EXPLICIT",
+      "source": "The stark difference in progression and severity of diet-induced obesity is likely due (at least in part) to the HFD-induced hyperphagia, which is observed in Nr1d1-/- mice (WT food intake 2.92\u00b10.10 g HFD/day/mouse; KO 3.74\u00b10.21 g, p=0.0014, Student's t-test, n=21/genotype), but not in Nr1d1Flox2-6:AdipoqCre mice (Cre-ve 2.99\u00b10.61 g HFD/day/mouse; Cre+ve 3.01\u00b10.60 g, p>0.05, n=8/genotype).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by food intake measurements in both mouse models with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "54d9751e-552f-45b6-b3f5-b92e9f8a94f7",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C23",
+      "claim": "Histological assessment of gWAT after 16 weeks of HFD feeding revealed widespread adipose tissue fibrosis and macrophage infiltration in obese control mice, but these features were not seen in Nr1d1Flox2-6:AdipoqCre mice",
+      "claim_type": "EXPLICIT",
+      "source": "Histological assessment of gWAT after 16 weeks of HFD feeding revealed widespread adipose tissue fibrosis (Picrosirius Red staining of collagen deposition under normal and polarised light) and macrophage infiltration (F4/80 immunohistochemistry) in obese control mice, but these features were not seen in Nr1d1Flox2-6:AdipoqCre mice (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological analysis shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "e5290a8d-9daa-4a64-b5fd-e266e94370da",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C24",
+      "claim": "HFD-fed Nr1d1Flox2-6:AdipoqCre mice showed evidence of preserved insulin sensitivity, with neither circulating glucose nor insulin being higher than Nr1d1Flox2-6 littermate controls despite carrying significantly greater fat mass",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we saw evidence of preserved insulin sensitivity in the HFD-fed Nr1d1Flox2-6:AdipoqCre mice, with neither circulating glucose nor insulin being higher than Nr1d1Flox2-6 littermate controls (Figure 4E), despite carrying significantly greater fat mass.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by blood glucose and insulin measurements shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "c0669280-fa5a-460c-a7e9-1ce30bbbfc3e",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C25",
+      "claim": "On insulin tolerance testing, HFD-fed Nr1d1Flox2-6:AdipoqCre mice demonstrated a significantly greater hypoglycaemic response than that observed in HFD-fed controls",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, on insulin tolerance testing, HFD-fed Nr1d1Flox2-6:AdipoqCre mice demonstrated a significantly greater hypoglycaemic response than that observed in HFD-fed controls (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by insulin tolerance test data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "6bb282ee-bd42-4329-8f60-d3c89cdb3415",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C26",
+      "claim": "No differences in adipocyte size were observed between Nr1d1Flox2-6:AdipoqCre and control genotypes",
+      "claim_type": "EXPLICIT",
+      "source": "We saw no differences in adipocyte size between the two genotypes, indicating that our observations did not simply reflect greater adipocyte hypertrophy in the Nr1d1Flox2-6:AdipoqCre mice (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by adipocyte size quantification shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "885c0347-9896-4885-91c4-339ff9b31dfd",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C27",
+      "claim": "Both gWAT and inguinal white adipose tissue depots (iWAT) were substantially larger in obese Nr1d1Flox2-6:AdipoqCre mice than in obese Nr1d1Flox2-6 controls",
+      "claim_type": "EXPLICIT",
+      "source": "In line with a pronounced increase in fat mass, both gWAT and inguinal white adipose tissue depots (iWAT) were substantially larger in obese Nr1d1Flox2-6:AdipoqCre mice than in obese Nr1d1Flox2-6 controls (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by adipose tissue depot weight measurements shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "94090a4c-c668-4e8d-bcff-c4ac9f63b793",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C28",
+      "claim": "HFD feeding had a substantial impact on the gWAT transcriptome in both Cre-ve and Cre+ve animals",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, HFD feeding had a substantial impact on the gWAT transcriptome in both Cre-ve and Cre+ve animals (i.e. NC vs. HFD comparison within each genotype; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data comparing NC and HFD conditions shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "501b6b17-3616-4b35-b9fd-10fdbcad199e",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C29",
+      "claim": "Under NC feeding conditions, only a small genotype effect on the transcriptome was observed, with DE genes including core clock genes (Arntl, Nfil3, Npas2, Clock) and those of collagen synthesis pathways",
+      "claim_type": "EXPLICIT",
+      "source": "Under NC feeding conditions, we again observed only a small genotype effect on the transcriptome, and as before, DE genes included core clock genes (Arntl, Nfil3, Npas2, Clock) and those of collagen synthesis pathways (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data comparing genotypes under NC conditions shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "6936b1fd-b2d4-4821-8ac5-9c4593a07a66",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C30",
+      "claim": "Obesity revealed a substantial genotype effect, with 3061 genes DE (1706 up, 1355 down) in HFD-fed Nr1d1Flox2-6:AdipoqCre mice vs. HFD-fed Nr1d1Flox2-6 controls",
+      "claim_type": "EXPLICIT",
+      "source": "However, obesity revealed a substantial genotype effect, with 3061 genes DE (1706 up, 1355 down) in HFD-fed Nr1d1Flox2-6:AdipoqCre mice vs. HFD-fed Nr1d1Flox2-6 controls (Figure 5B), and 1704 genes showing a significant (\u03b1<0.05) diet-genotype interaction (stageR-specific interaction analysis; Van den Berge et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data and interaction analysis comparing genotypes under HFD conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "ad54f67e-6c7c-4709-9cee-deabd372fef7",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C31",
+      "claim": "Of 1704 genes showing significant diet-genotype interaction, those up-regulated in obese Nr1d1-deficient adipose were strongly enriched for metabolic pathways, whilst down-regulated genes showed weak enrichment of ECM organisation processes",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 1704 genes, those up-regulated in obese Nr1d1-deficient adipose were strongly enriched for metabolic pathways, whilst down-regulated genes showed weak enrichment of ECM organisation processes (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis of genes with diet-genotype interaction shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "99a11816-c014-46a1-9f69-978fb9260bf0",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C32",
+      "claim": "While HFD feeding caused a profound down-regulation of metabolic pathways in the WAT of control mice, this was not observed in Nr1d1Flox2-6:AdipoqCre mice",
+      "claim_type": "EXPLICIT",
+      "source": "While HFD feeding caused a profound down-regulation (vs. NC conditions) of metabolic pathways in the WAT of control mice, this was not observed in Nr1d1Flox2-6:AdipoqCre mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pathway analysis comparing HFD and NC conditions in both genotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "59cd372c-15f1-4c76-8a61-2b5bd0b73d63",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C33",
+      "claim": "HFD feeding led to an up-regulation of immune pathways in both genotypes",
+      "claim_type": "EXPLICIT",
+      "source": "HFD feeding led to an up-regulation of immune pathways in both genotypes (Figure 5D); however, as highlighted by Ingenuity Pathway Analysis (IPA) of differentially regulated genes in gWAT, inflammation and immune-related processes were widely and markedly attenuated in the HFD-fed Cre+ve mice when compared to HFD-fed controls (Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway analysis of RNA-seq data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "2ee08944-b9a8-4428-8684-7d0589b02c26",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C34",
+      "claim": "Inflammation and immune-related processes were widely and markedly attenuated in the HFD-fed Cre+ve mice when compared to HFD-fed controls",
+      "claim_type": "EXPLICIT",
+      "source": "HFD feeding led to an up-regulation of immune pathways in both genotypes (Figure 5D); however, as highlighted by Ingenuity Pathway Analysis (IPA) of differentially regulated genes in gWAT, inflammation and immune-related processes were widely and markedly attenuated in the HFD-fed Cre+ve mice when compared to HFD-fed controls (Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by IPA analysis of differentially regulated genes in gWAT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "d9284035-3cb7-48d8-9ab3-6a3fcff44c80",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C35",
+      "claim": "4474 ZT8 HaloNR1D1 peaks were identified (MACS2, q<0.01) commonly called against both Halo ZT20 and WT ZT8 libraries",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 4474 ZT8 HaloNR1D1 peaks (MACS2, q<0.01) commonly called against both Halo ZT20 and WT ZT8 libraries (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-seq peak calling analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "54b54046-53c8-46b4-8356-f963e6d12507",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C36",
+      "claim": "Clear evidence of NR1D1 binding in proximity to core clock genes was observed, with this signal not seen in controls",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, we saw clear evidence of NR1D1 binding in proximity to core clock genes (Figure 6\u2014figure supplement 1A), with this signal not seen in controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-seq data showing NR1D1 binding near clock genes in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "a315c0a5-8625-4319-bf35-df9afc802bed",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C37",
+      "claim": "Motif analysis of the high-confidence peak set detected strong enrichment of RORE and RevDR2 motifs",
+      "claim_type": "EXPLICIT",
+      "source": "Motif analysis of this high-confidence peak set detected strong enrichment of RORE and RevDR2 motifs (Figure 6\u2014figure supplement 1B), again supporting the specificity of our cistrome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by motif analysis of ChIP-seq peaks shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "9e7e31c0-7494-435c-848e-8ebe48f2f87a",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C38",
+      "claim": "Genes commonly up-regulated in NC-fed Nr1d1Flox2-6:AdipoqCre and Nr1d1-/- gWAT are significantly enriched in proximity to HaloNR1D1 ChIP-seq peaks",
+      "claim_type": "EXPLICIT",
+      "source": "Extending out from NR1D1 ChIP-seq peaks by increasing distances (\u03bb), we found transcription start sites (TSSs) of genes up-regulated in Nr1d1Flox2-6:AdipoqCre and Nr1d1-/- gWAT to be significantly enriched (above all genes in the genome) at distances up to 100 kbp (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by integration of RNA-seq and ChIP-seq data showing enrichment of up-regulated genes near NR1D1 binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "e1662bf8-9612-4fc8-be06-7c8a252ea858",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C39",
+      "claim": "No enrichment of genes with decreased expression in Nr1d1Flox2-6:AdipoqCre or Nr1d1-/- WAT was evident at any distance from NR1D1 peaks",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no enrichment of genes with decreased expression in Nr1d1Flox2-6:AdipoqCre or Nr1d1-/- WAT was evident at any distance from NR1D1 peaks (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by integration of RNA-seq and ChIP-seq data showing lack of enrichment for down-regulated genes near NR1D1 binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "6265ef6f-cabc-4494-bdbe-057178f318d4",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C40",
+      "claim": "HFD-feeding of Nr1d1Flox2-6:AdipoqCre mice greatly increased the overlap of DE genes with those DE in Nr1d1-/- WAT",
+      "claim_type": "EXPLICIT",
+      "source": "HFD -feeding of Nr1d1Flox2-6:AdipoqCre mice greatly increased the overlap of DE genes with those DE in Nr1d1-/- WAT (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of RNA-seq data from HFD-fed mice shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "7713fc82-71a9-48d4-aebf-23ba29a65105",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C41",
+      "claim": "A highly significant proximity enrichment of commonly up-regulated genes (863) to sites of NR1D1 chromatin binding was observed in HFD-fed mice",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, we observed a highly significant proximity enrichment of these commonly up-regulated genes (863) to sites of NR1D1 chromatin binding (Figure 6C,D), but again, saw no enrichment of the commonly down-regulated genes (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by integration of RNA-seq and ChIP-seq data showing enrichment of up-regulated genes near NR1D1 binding sites in HFD conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "9962bcc7-46b8-429e-8f70-8267dd61180f",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C42",
+      "claim": "The large majority of the 863 NR1D1 gene targets unmasked by HFD feeding are normally repressed in obesity, with 551 (63.8%) showing a significant down-regulation in obese control animals",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the healthier metabolic phenotype observed in obese Nr1d1Flox2-6:AdipoqCre mice, we found that the large majority of the 863 NR1D1 gene targets unmasked by HFD feeding are normally repressed in obesity (Figure 6E), with 551 (63.8%) showing a significant down-regulation in obese control (Cre-ve) animals (chronic HFD compared to NC-fed state).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of gene expression changes in response to HFD feeding shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "9b751aa0-4d5e-4902-b1ca-3c67ac0d45e4",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C43",
+      "claim": "495 of the 863 NR1D1 target genes were found to lie within 100 kbp of a NR1D1 binding site",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 495 of these genes were found to lie within 100 kbp of a NR1D1 binding site (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by integration of RNA-seq and ChIP-seq data showing proximity of target genes to NR1D1 binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "02f625ec-57d3-405f-ba05-7d2edf2b96f0",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C44",
+      "claim": "NR1D1 target genes include important regulators of lipid and mitochondrial metabolism including Fasn, Scd1, Acsl1, Cs, and FGF-21 co-receptor Klb",
+      "claim_type": "EXPLICIT",
+      "source": "These genes include important regulators of lipid and mitochondrial metabolism (Figure 6F) \u2013 including Fasn, Scd1, Acsl1, Cs \u2013 and FGF-21 co-receptor Klb, a previously identified NR1D1 target gene (Jager et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by identification of specific genes in the NR1D1 target gene set, with Klb also supported by citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "43f5cc19-28a5-49ef-acdd-67ebef976984",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C45",
+      "claim": "Obesity-dependent de-repression of NR1D1 target genes was also observed in isolated mature adipocytes collected from NC or HFD-fed mice",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, obesity-dependent de-repression of these genes was also observed in isolated mature adipocytes (MA) collected from NC or HFD-fed mice (Figure 6\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data from isolated mature adipocytes shown in Figure 6\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "cc6e324b-6aca-4cab-8fc4-4f596a7b81d9",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C46",
+      "claim": "NR1D1 is a constitutive repressor, with peak expression in the latter half of the inactive phase (daytime in the nocturnal animal)",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear receptor NR1D1 (REVERB\u03b1) is a core clock component, and has been highlighted as a key link between the clock and metabolism. NR1D1 is a constitutive repressor, with peak expression in the latter half of the inactive phase (daytime in the nocturnal animal).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about NR1D1 function and expression patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "af955a5b-6a1a-497a-b584-471caeb07225",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C47",
+      "claim": "In liver, NR1D1 exerts repressive control over programmes of lipogenesis by recruiting the NCOR/HDAC3 co-repressor complex to metabolic target genes",
+      "claim_type": "EXPLICIT",
+      "source": "In liver, NR1D1 exerts repressive control over programmes of lipogenesis by recruiting the NCOR/HDAC3 co-repressor complex to metabolic target genes, such that global loss of NR1D1 or liver-specific deletion of HDAC3 results in hepatosteatosis (Feng et al., 2011; Zhang et al., 2015); (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies showing NR1D1's mechanism of action in liver.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "f59abf0d-b422-4070-9f53-655c4a981bd2",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C48",
+      "claim": "Global loss of NR1D1 or liver-specific deletion of HDAC3 results in hepatosteatosis",
+      "claim_type": "EXPLICIT",
+      "source": "In liver, NR1D1 exerts repressive control over programmes of lipogenesis by recruiting the NCOR/HDAC3 co-repressor complex to metabolic target genes, such that global loss of NR1D1 or liver-specific deletion of HDAC3 results in hepatosteatosis (Feng et al., 2011; Zhang et al., 2015); (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "57771e75-586d-4282-a904-afae66472178",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C49",
+      "claim": "NR1D1 regulation of hepatic metabolism is state-dependent, with minimal impact under basal conditions yet increased transcriptional influence in response to mistimed feeding",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we recently showed that NR1D1 regulation of hepatic metabolism is state-dependent, with minimal impact under basal conditions yet increased transcriptional influence in response to mistimed feeding (Hunter et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a recent study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "4ae135dc-182e-4488-801a-929824fbd7e1",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C50",
+      "claim": "Pronounced adiposity and adipocyte hypertrophy are evident in Nr1d1-/- mice, even under normal feeding conditions",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, pronounced adiposity and adipocyte hypertrophy are evident in Nr1d1-/- mice, even under normal feeding conditions (Delezie et al., 2012; Hand et al., 2015); (Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "be993226-eae4-4642-9b1a-2b8e1e2c5aa9",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C51",
+      "claim": "Daily administration of NR1D1 agonists has been shown to reduce fat mass and WAT lipogenic gene expression in mice",
+      "claim_type": "EXPLICIT",
+      "source": "Daily administration of NR1D1 agonists has also been shown to reduce fat mass and WAT lipogenic gene expression in mice (Solt et al., 2012), although these agents do have significant off-target actions (Dierickx et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies, with a caveat about off-target effects also cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "706e88f2-69d4-494a-9e5f-246b7e6ce5d8",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C52",
+      "claim": "The mammalian circadian clock directs rhythms in behaviour and physiology to coordinate our biology with predictable changes in food availability and daily alternations between fasted and fed states",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian circadian clock directs rhythms in behaviour and physiology to coordinate our biology with predictable changes in food availability and daily alternations between fasted and fed states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about circadian clock function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "76fea2e0-0cce-4f07-bb59-88b3d5b00339",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C53",
+      "claim": "A central circadian clock in the suprachiasmatic nuclei (SCN) drives daily rhythms in our behaviour and physiology, and orchestrates rhythmic processes in tissue systems across the body",
+      "claim_type": "EXPLICIT",
+      "source": "A central circadian clock in the suprachiasmatic nuclei (SCN) drives daily rhythms in our behaviour (e.g. sleep/wake cycles) and physiology (e.g. body temperature), and orchestrates rhythmic processes in tissue systems across the body (Dibner et al., 2010; West and Bechtold, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the SCN and circadian system, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "617068c7-9792-463b-8985-da7157342ad4",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C54",
+      "claim": "The molecular clock mechanism is present in most cell types",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular clock mechanism is also present in most cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the ubiquity of molecular clocks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "e782e9ce-e774-456d-b0be-b35e4f9c9453",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C55",
+      "claim": "The rhythmic transcriptome that defines cells and tissues is shaped by both local tissue clock activity and input from the central clock and rhythmic systemic signals",
+      "claim_type": "EXPLICIT",
+      "source": "The rhythmic transcriptome that defines cells and tissues is shaped by both local tissue clock activity and input from the central clock and rhythmic systemic signals (Guo et al., 2005; Hughes et al., 2012; Kornmann et al., 2007; Koronowski et al., 2019; Lamia et al., 2008; Hunter et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "ce3612d5-d9c9-4d4f-81fa-66fe36319ae1",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C56",
+      "claim": "Disturbance of circadian rhythms, as occurs with shift work and irregular eating patterns, is increasingly recognised as a risk factor for metabolic disease and obesity",
+      "claim_type": "EXPLICIT",
+      "source": "Disturbance of this interaction, as occurs with shift work and irregular eating patterns, is increasingly recognised as a risk factor for metabolic disease and obesity (Broussard and Van Cauter, 2016; Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "4403087f-8fad-48c9-b3be-a65f54edaf05",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C57",
+      "claim": "Circadian clock function and its component factors are closely tied into energy metabolism",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive work over the past 20 years has demonstrated that circadian clock function and its component factors are closely tied into energy metabolism (Bass and Takahashi, 2010; Reinke and Asher, 2019), with strong rhythmicity evident in cellular and systemic metabolic processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to review articles summarizing extensive previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "816f27f4-7547-426e-9436-a6d564b40f2d",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C58",
+      "claim": "Systemic perturbations such as cancer and high-fat diet feeding can reprogramme circadian control over liver metabolism",
+      "claim_type": "EXPLICIT",
+      "source": "Clock-metabolic coupling in peripheral tissues is adaptable, as demonstrated by classical food-entrainment studies (Damiola et al., 2000; Mistlberger, 1994), and by recent work showing that systemic perturbations such as cancer and high-fat diet (HFD) feeding can reprogramme circadian control over liver metabolism (Dyar et al., 2018; Masri et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "65b67ff6-fbbd-4f54-881e-0e4346f960fe",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C59",
+      "claim": "Under long-term HFD-feeding conditions, adipose-targeted Nr1d1 deletion results in continued adipose tissue expansion accompanied by a healthier metabolic phenotype with reduced adipose inflammation and fibrosis, and preserved systemic insulin sensitivity",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, under long-term HFD-feeding conditions, adipose-targeted Nr1d1 deletion results in continued adipose tissue expansion accompanied by a healthier metabolic phenotype with reduced adipose inflammation and fibrosis, and preserved systemic insulin sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary inference based on multiple experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "34df37fe-3b1f-4189-9b72-eb226f6f556a",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C60",
+      "claim": "The regulatory influence of NR1D1 is context-dependent, with the metabolic impact of adipose-targeted Nr1d1 deletion revealed by transition to an obese state",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these findings also suggest that the regulatory influence of NR1D1 is context-dependent, with the metabolic impact of adipose-targeted Nr1d1 deletion revealed by transition to an obese state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the differential effects observed under NC versus HFD conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "f23a852b-9575-4647-9676-0dca6f6b9757",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C61",
+      "claim": "The healthy adiposity phenotype in HFD-fed Nr1d1Flox2-6:AdipoqCre mice results from de-repression of NR1D1-controlled adipocyte pathways which allow continued and efficient lipid synthesis and storage, thus permitting greater expansion of the adipose bed, and attenuation of obesity-related dysfunction",
+      "claim_type": "EXPLICIT",
+      "source": "Considered together, these findings suggest that the healthy adiposity phenotype in HFD-fed Nr1d1Flox2-6:AdipoqCre mice results from de-repression of NR1D1-controlled adipocyte pathways which allow continued and efficient lipid synthesis and storage, thus permitting greater expansion of the adipose bed, and attenuation of obesity-related dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference integrating multiple experimental findings to propose a mechanistic explanation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "7a0ad5fc-0fa6-4932-9834-f9c123fb6700",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C62",
+      "claim": "NR1D1 is a state-dependent regulator of WAT metabolism, with its widespread repressive action only unmasked by diet-induced obesity",
+      "claim_type": "EXPLICIT",
+      "source": "We set out to define the role of NR1D1 in the regulation of WAT metabolism and subsequently reveal a new understanding of NR1D1 function. Together, our data show NR1D1 to be a state-dependent regulator of WAT metabolism, with its widespread repressive action only unmasked by diet-induced obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on the integration of multiple experimental findings throughout the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "6176c821-480c-48ee-8406-24fa3d6f7fa9",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C63",
+      "claim": "Nr1d1 expression in WAT appears to limit the energy-buffering function of the tissue",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Nr1d1 expression in WAT appears to limit the energy-buffering function of the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the observation that loss of Nr1d1 allows greater adipose expansion and lipid storage.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "da23de33-a542-494e-bb19-8b0cf481e5e2",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C64",
+      "claim": "Hepatic-selective loss of NR1D1 carries no metabolic consequence, with NR1D1-dependent control over hepatic energy metabolism revealed only upon altered feeding conditions",
+      "claim_type": "EXPLICIT",
+      "source": "This finding parallels our recent work in the liver (Hunter et al., 2020). Hepatic-selective loss of NR1D1 carries no metabolic consequence, with NR1D1-dependent control over hepatic energy metabolism revealed only upon altered feeding conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a recent study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "bcde38ac-cad4-4cee-9703-50e012c521ea",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C65",
+      "claim": "NR1D1 (and potentially other components of the peripheral clock) does not impose rhythmic repression of metabolic circuits under basal conditions but rather determines tissue responses to altered metabolic state",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to current understanding, our findings therefore suggest that NR1D1 (and potentially other components of the peripheral clock) does not impose rhythmic repression of metabolic circuits under basal conditions but rather determines tissue responses to altered metabolic state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference that challenges current understanding based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "10b0cce0-08c4-4010-ac76-da471e89beb7",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C66",
+      "claim": "Under basal conditions, the adipose transcriptional targets under direct NR1D1 control are limited to core clock function and collagen dynamics",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that under a basal metabolic state, the adipose transcriptional targets under direct NR1D1 control are in fact limited to core clock function and collagen dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on integration of RNA-seq and ChIP-seq data under NC conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "ef0d57d0-d77d-4e64-8480-b950d5dc38c5",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C67",
+      "claim": "NR1D1 is not a major repressor of lipid metabolism in basal metabolic state",
+      "claim_type": "EXPLICIT",
+      "source": "NR1D1 is not a major repressor of lipid metabolism in this setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the lack of lipogenic gene dysregulation in adipocyte-specific Nr1d1 deletion under NC conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "4234dc88-6937-44b4-8a8f-8569eea15356",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C68",
+      "claim": "The enhanced lipid accumulation phenotype of Nr1d1-/- adipose tissue is either independent from adipose NR1D1 entirely or the action of NR1D1 in adipose is context-dependent",
+      "claim_type": "EXPLICIT",
+      "source": "This also suggests that the enhanced lipid accumulation phenotype of Nr1d1-/- adipose tissue is either independent from adipose NR1D1 entirely or that the action of NR1D1 in adipose is context-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference based on the discrepancy between global and adipocyte-specific deletion phenotypes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "e0f8dcaa-08e9-46b7-bf11-5782f2fc7d06",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C69",
+      "claim": "The broadening of NR1D1's regulatory influence in response to obesity likely reflects a change to the chromatin environment in which NR1D1 operates",
+      "claim_type": "EXPLICIT",
+      "source": "The broadening of NR1D1's regulatory influence in response to obesity likely reflects a change to the chromatin environment in which NR1D1 operates (Figure 6\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a speculative inference to explain the state-dependent activity of NR1D1.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "e6be032a-9a6a-44dd-b5ef-a83ec9dc97de",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C70",
+      "claim": "Emergence of NR1D1's transcriptional control may reflect alterations in chromatin accessibility or organisation, and/or the presence of transcriptional repressors and accessory factors required for full activity",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent emergence of NR1D1's transcriptional control may reflect alterations in chromatin accessibility or organisation, and/or the presence of transcriptional repressors and accessory factors required for full activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference proposing potential mechanisms for state-dependent NR1D1 activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "776b2cc5-3111-47fb-a149-1eaed0b050ca",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C71",
+      "claim": "Antagonising WAT NR1D1 emerges as a potential target in metabolic disease",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we now uncover a role for NR1D1 in limiting the energy-buffering role of WAT, a discovery which may present therapeutic opportunity as we cope with an epidemic of human obesity. Despite recent findings which have cast doubt on the utility of some of the small molecule NR1D1 ligands (Dierickx et al., 2019), antagonising WAT NR1D1 now emerges as a potential target in metabolic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference about potential therapeutic applications based on the study findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "3eb5ae74-02fd-467f-ac42-b6bd856d243d",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C72",
+      "claim": "A functioning circadian clock may be beneficial in coping with acute mistimed metabolic cues but, under chronic energy excess, may contribute to metabolic dysfunction and obesity-related pathology",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our study suggests that a functioning circadian clock may be beneficial in coping with acute mistimed metabolic cues but, that under chronic energy excess, may contribute to metabolic dysfunction and obesity-related pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference about the broader implications of the findings for circadian clock function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "3b5b9899-cab2-4e99-a54d-bd15cd53e8bc",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C73",
+      "claim": "The reduced inflammation seen in obese Nr1d1Flox2-6:AdipoqCre mice is likely multifactorial, but may be secondary to a reduction in the pro-inflammatory free fatty acid pool, resulting from de-repression of lipogenic and mitochondrial metabolism pathways, or the absence of signals from dead/dying adipocytes",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced inflammation seen in obese Nr1d1Flox2-6:AdipoqCre mice is likely multifactorial, but may be secondary to a reduction in the pro-inflammatory free fatty acid pool, resulting from de-repression of lipogenic and mitochondrial metabolism pathways, or the absence of signals from dead/dying adipocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference proposing potential mechanisms for the reduced inflammation phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "2097a113-616c-49f0-95af-e3cfec093554",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C74",
+      "claim": "Improved metabolic flexibility is beneficial in other mouse models of metabolic disease and in human obesity",
+      "claim_type": "EXPLICIT",
+      "source": "It is of note that improved metabolic flexibility is beneficial in other mouse models of metabolic disease (Jonker et al., 2012; Kim et al., 2007; Virtue et al., 2018) and in human obesity (Aucouturier et al., 2011; Begaye et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies in both mouse models and humans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "0fdc301a-bad2-45df-9c38-1922fd9b1c66",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C75",
+      "claim": "The clock has been linked to ECM remodelling in other tissues, where it is thought to coordinate ECM dynamics, collagen turnover, and secretory processes",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the clock has been linked to ECM remodelling in other tissues (Chang et al., 2020; Dudek et al., 2016; Sherratt et al., 2019), where it is thought to coordinate ECM dynamics, collagen turnover, and secretory processes (Chang et al., 2020), we now identify ECM as a direct target of adipose NR1D1 action",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies in other tissues.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "1d2e0645-d8e4-4497-8e5f-415c367ee944",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C76",
+      "claim": "ECM is a direct target of adipose NR1D1 action",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the clock has been linked to ECM remodelling in other tissues (Chang et al., 2020; Dudek et al., 2016; Sherratt et al., 2019), where it is thought to coordinate ECM dynamics, collagen turnover, and secretory processes (Chang et al., 2020), we now identify ECM as a direct target of adipose NR1D1 action",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the identification of collagen genes as direct NR1D1 targets through integration of RNA-seq and ChIP-seq data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "5588577c-c0c2-4198-83c5-e4aab09e9f71",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C77",
+      "claim": "Altered regulation of WAT collagen production and modification likely contributes to the rapid and continued adipose tissue expansion observed in Nr1d1-targeted adipose",
+      "claim_type": "EXPLICIT",
+      "source": "altered regulation of WAT collagen production and modification likely contributing to the rapid and continued adipose tissue expansion observed in Nr1d1-targeted adipose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference linking collagen regulation to the adipose expansion phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "cf9a4efe-b90f-4ff7-ac3a-0dcbd6dd6dfb",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C78",
+      "claim": "The diminished adipose fibrosis seen in Nr1d1Flox2-6:AdipoqCre mice may reflect alteration in multiple processes, some of which may be under direct/indirect NR1D1 control",
+      "claim_type": "EXPLICIT",
+      "source": "The diminished adipose fibrosis seen in Nr1d1Flox2-6:AdipoqCre mice may well reflect alteration in multiple processes, some of which may be under direct/indirect NR1D1 control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference about the mechanisms underlying the fibrosis phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "9eea8132-ca88-422d-907a-58a9896d7376",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C79",
+      "claim": "Adipose-specific deletion of Nr1d1 provides a unique model to explore the complex ECM responses which accompany obesity-related tissue hypertrophy and development of fibrosis",
+      "claim_type": "EXPLICIT",
+      "source": "Adipose-specific deletion of Nr1d1 thus provides a unique model to explore the complex ECM responses which accompany obesity-related tissue hypertrophy and development of fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference about the utility of the mouse model for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "c83586af-509f-4f49-8f99-e67cb033d32d",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C80",
+      "claim": "A role for the clock in the regulation of WAT function has been reported in the literature",
+      "claim_type": "EXPLICIT",
+      "source": "A role for the clock in the regulation of WAT function has been reported in the literature (Barnea et al., 2015; Paschos et al., 2012; Shostak et al., 2013), perhaps implying that it is the rhythmicity conferred by the clock which is important for WAT metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "4ee2ffe2-1263-4b95-b7da-012d4de06097",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C81",
+      "claim": "Despite robust rhythms of clock genes persisting, rhythmic gene expression in gWAT is largely attenuated following genetic disruption of SCN function",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite robust rhythms of clock genes persisting, rhythmic gene expression in gWAT is largely attenuated following genetic disruption of SCN function (Kolbe et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "78476c61-f583-470d-8594-ee8c8ceee634",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C82",
+      "claim": "Metabolic processes, including lipid biosynthesis, were highly enriched in the cohort of SCN-dependent rhythmic genes",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, metabolic processes, including lipid biosynthesis, were highly enriched in the cohort of SCN-dependent rhythmic genes from this study (Kolbe et al., 2016), implying that feeding behaviour and WAT responses to energy flux are more important than locally generated rhythmicity for adipose function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study, with an inference about the implications.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "c6c767ed-d173-4804-8ec6-0de6a2d993bc",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C83",
+      "claim": "A lipogenic phenotype of liver-specific ROR\u03b1/\u03b3 deletion has been shown to be unmasked by HFD feeding",
+      "claim_type": "EXPLICIT",
+      "source": "Although not explored to the same extent, a lipogenic phenotype of liver-specific ROR\u03b1/\u03b3 deletion has previously been shown to be unmasked by HFD feeding (Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "340cdfff-98d0-4755-b35f-e7a754268a17",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C84",
+      "claim": "In response to HFD feeding, NR1D1 acts to repress metabolic activity in the adipocyte and limit tissue expansion (albeit at the eventual cost of tissue dysfunction, inflammation, and development of adipose fibrosis)",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in response to HFD feeding, NR1D1 acts to repress metabolic activity in the adipocyte and limit tissue expansion (albeit at the eventual cost of tissue dysfunction, inflammation, and development of adipose fibrosis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the integration of multiple experimental findings in HFD-fed mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "f3bab25a-e160-4de9-9121-b6f0e72f1c2b",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C85",
+      "claim": "NR1D1 is itself proposed to regulate enhancer-promoter loop formation",
+      "claim_type": "EXPLICIT",
+      "source": "As NR1D1 is itself proposed to regulate enhancer-promoter loop formation (Kim et al., 2018), modulation of Nr1d1 expression would be a further important variable here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "d8983a52-0259-4272-895a-63003a095218",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "claim_id": "C86",
+      "claim": "With metabolic challenge, emergent circadian rhythmicity is observed in gene expression and in circulating and tissue metabolites",
+      "claim_type": "EXPLICIT",
+      "source": "Such reshaping of the regulatory landscape likely occurs across tissues, and may explain why, with metabolic challenge, emergent circadian rhythmicity is observed in gene expression (Eckel-Mahan et al., 2013; Kinouchi et al., 2018; Tognini et al., 2017), and in circulating and tissue metabolites (Dyar et al., 2018; Eckel-Mahan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e97870ff-27eb-491b-8cea-73ead1bed3d9",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Global Nr1d1-/- mice exhibit increased adiposity with adipocyte hypertrophy, elevated de novo lipogenesis markers, and up-regulation of metabolic pathways in white adipose tissue under normal chow conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide converging evidence from body composition measurements (C1), histology (C2), proteomics (C3), and fatty acid profiling (C4, C5) demonstrating increased adiposity and lipogenic activity in Nr1d1-/- mice. All measurements include appropriate statistical analyses and controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "b0b81566-9b67-49e5-9c1a-fc05d0ced498",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nr1d1-/- mice display exaggerated diet-induced obesity when challenged with high-fat diet, with a positive correlation between body weight and food intake suggesting HFD-induced hyperphagia contributes to the phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 demonstrate that Nr1d1-/- mice are susceptible to diet-induced obesity with supporting data from body composition measurements and correlation analysis. The correlation analysis (C7) provides mechanistic insight into the obesity phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "414fd088-ad36-495f-81bd-ff46274663b9",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adipocyte-specific deletion of Nr1d1 (Nr1d1Flox2-6:AdipoqCre) does not produce an adiposity phenotype under normal chow conditions, with no differences in body composition, metabolic parameters, or thermoregulation compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 consistently demonstrate the absence of a metabolic phenotype in adipocyte-specific Nr1d1 deletion under basal conditions, supported by comprehensive metabolic phenotyping including body composition, energy expenditure, activity, temperature, and thermoregulation measurements across multiple conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "72351cab-9883-4812-b786-2040c7957293",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Under normal chow conditions, global Nr1d1 deletion causes widespread transcriptomic changes enriched for metabolic pathways, while adipocyte-specific deletion affects only a small set of genes enriched for clock components and collagen pathways, with no enrichment of lipogenic pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 demonstrate a clear contrast between global and adipocyte-specific Nr1d1 deletion effects through RNA-seq analysis. The data show appropriate statistical thresholds (FDR<0.05), pathway enrichment analyses, and identification of commonly regulated genes. The lack of lipogenic gene dysregulation in adipocyte-specific deletion (C18) is particularly well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "3d0cd049-e50f-4ab2-912f-46603b9100d9",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Double knockdown of Nr1d1 and Nr1d2 in 3T3-L1 adipocytes produces greater Arntl de-repression than single knockdowns but does not lead to de-repression of lipogenic genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is supported by gene expression data from knockdown experiments in differentiated 3T3-L1 cells, providing evidence that NR1D2 compensation does not explain the lack of lipogenic phenotype in adipocyte-specific deletion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "c2cc24b2-b05a-47fa-859a-8cd08d3dc301",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Under high-fat diet conditions, Nr1d1Flox2-6:AdipoqCre mice exhibit greater weight gain and adiposity than controls after long-term feeding (>13 weeks), but unlike global Nr1d1-/- mice, they do not display HFD-induced hyperphagia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 demonstrate the context-dependent effect of adipocyte-specific Nr1d1 deletion, with appropriate longitudinal tracking and food intake measurements. The statistical analysis clearly distinguishes the phenotypes of the two models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "9dc224d1-f69e-4f57-bb5b-36d1acd4a927",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Despite increased adiposity under HFD conditions, Nr1d1Flox2-6:AdipoqCre mice are protected from obesity-related pathology, showing reduced adipose fibrosis and inflammation, preserved insulin sensitivity, and greater adipose depot expansion without adipocyte hypertrophy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 provide comprehensive evidence of a 'healthy obesity' phenotype through histological analysis (C23), glucose/insulin measurements (C24), insulin tolerance testing (C25), adipocyte size quantification (C26), and depot weight measurements (C27). The data consistently support protection from metabolic dysfunction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "05f4904f-1c2f-40b9-b2d8-a5025ca0cd76",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HFD feeding reveals a substantial genotype effect in Nr1d1Flox2-6:AdipoqCre mice, with 3061 differentially expressed genes enriched for metabolic pathways that are normally down-regulated by obesity in controls, and attenuated inflammatory responses compared to obese controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 demonstrate state-dependent NR1D1 function through comprehensive RNA-seq analysis including diet-genotype interaction analysis (C30), pathway enrichment (C31), and comparison of obesity responses between genotypes (C32-C34). The statistical approaches including stageR interaction analysis are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "df0a5347-7f87-4d56-a6ca-603d50a517f7",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HaloChIP-seq identified 4474 high-confidence NR1D1 binding sites in white adipose tissue, with expected binding near clock genes and enrichment of RORE and RevDR2 motifs, validating the specificity of the cistrome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 establish a high-quality NR1D1 cistrome using appropriate controls (ZT20 and WT samples), peak calling methods (MACS2, q<0.01), and validation through expected clock gene binding and motif enrichment analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "4d6a4b85-b3f8-4f48-800b-83ab5edc4447",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Integration of RNA-seq and ChIP-seq data reveals that genes up-regulated in both Nr1d1Flox2-6:AdipoqCre and Nr1d1-/- mice are significantly enriched near NR1D1 binding sites, with this enrichment greatly increased under HFD conditions, while down-regulated genes show no such enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 demonstrate rigorous integration of transcriptomic and cistromic data using appropriate enrichment analysis methods. The proximity enrichment analysis at multiple distances (up to 100 kbp) and the contrast between up- and down-regulated genes provide strong evidence for direct NR1D1 repression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "a68f3087-3706-442f-9525-86040495b9ce",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The 863 NR1D1 target genes unmasked by HFD feeding are normally repressed in obesity (63.8% down-regulated in obese controls), include key metabolic regulators (Fasn, Scd1, Acsl1, Cs, Klb), and show obesity-dependent de-repression in isolated mature adipocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 characterize the NR1D1 target gene set with appropriate quantification (C42), proximity analysis (C43), identification of specific metabolic genes (C44), and validation in isolated adipocytes (C45). The data support the conclusion that these are direct NR1D1 targets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "abb49715-bbee-4b2e-ac62-6aa8a01c6919",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "NR1D1 functions as a state-dependent regulator of WAT metabolism, with adipose-targeted deletion resulting in healthy adiposity under HFD conditions through de-repression of metabolic pathways that allow continued lipid storage and adipose expansion, revealing that NR1D1 limits the energy-buffering function of adipose tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 represent the major conclusions of the study, integrating multiple lines of evidence from phenotypic, transcriptomic, and cistromic analyses. The state-dependent function is well-supported by the contrast between NC and HFD conditions across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "0fb8ca97-758d-4d35-85ed-81bc7f71cbca",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Under basal conditions, direct NR1D1 targets in adipose tissue are limited to core clock function and collagen dynamics, with NR1D1 not acting as a major repressor of lipid metabolism, and altered collagen regulation likely contributing to adipose tissue expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C67, C76, and C77 are well-supported by the integration of RNA-seq and ChIP-seq data under NC conditions, showing limited transcriptional effects focused on clock and collagen genes. However, C77 is somewhat speculative regarding the mechanistic link to tissue expansion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "07801f8c-0979-4b46-b0ec-a3475a77f7f8",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The state-dependent activity of NR1D1 likely reflects changes in chromatin environment, accessibility, or the presence of required co-factors, with the enhanced lipid accumulation in global Nr1d1-/- mice potentially independent of adipose NR1D1 or reflecting context-dependent action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C70 are largely speculative inferences about mechanisms underlying state-dependent NR1D1 activity. While the observations of state-dependence are well-supported, the proposed mechanisms (chromatin remodeling, co-factor availability) lack direct experimental evidence in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "8bf06ed4-03ae-4123-a1f0-642be4d57cef",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The reduced inflammation and fibrosis in obese Nr1d1Flox2-6:AdipoqCre mice may result from multiple mechanisms including reduced pro-inflammatory free fatty acids, improved metabolic flexibility, and altered ECM regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73 and C78 propose mechanistic explanations for the reduced inflammation and fibrosis phenotypes, but these remain speculative as the study does not directly test these mechanisms. The phenotypes themselves are well-documented, but the proposed mechanisms require further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "6b02ec34-d1df-4a88-a088-b98989916038",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The findings parallel observations in liver showing state-dependent NR1D1 function, suggesting that NR1D1 and potentially other clock components determine tissue responses to altered metabolic state rather than imposing rhythmic repression under basal conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64 and C65 are supported by citation to the authors' previous liver study (C64) and represent a reasonable inference from the current findings (C65). However, C65 extends beyond the data to suggest this may apply to other clock components, which is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "ad6ff63a-3250-4ba4-98df-b2f64b75655b",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The findings suggest potential therapeutic applications for antagonizing WAT NR1D1 in metabolic disease and provide a unique model for studying ECM responses in obesity, while raising questions about whether circadian clock function may contribute to metabolic dysfunction under chronic energy excess.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71, C72, and C79 represent speculative inferences about therapeutic potential and broader implications. While based on solid experimental findings, these claims about future applications and the role of the clock in chronic obesity lack direct experimental support in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "f1e11968-0986-4ce6-8992-9047c416995b",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background context establishes that NR1D1 is a constitutive repressor and core clock component that regulates hepatic lipogenesis in a state-dependent manner, with global Nr1d1 deletion causing adiposity, and that circadian disruption is linked to metabolic disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C58 provide established background knowledge supported by appropriate citations to previous literature. These claims establish the context for the current study and are well-documented in the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "5bbcb6ec-4e4b-4a58-9b95-0df45e0e0292",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Previous studies have shown that improved metabolic flexibility is beneficial in obesity, the clock regulates ECM in other tissues, WAT rhythmic gene expression depends on SCN function, and metabolic challenge can induce emergent circadian rhythmicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C75, C80-C83, C85, and C86 cite relevant previous literature that provides context for interpreting the current findings. The citations appear appropriate and support the stated claims about prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    },
+    {
+      "id": "0e25ac67-32ef-4b32-8e5d-d1577d8e03fd",
+      "content_id": "77123d43-6cec-4b3c-b8e2-1ce0f00cf07a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "In response to HFD feeding, NR1D1 acts to repress metabolic activity in adipocytes and limit tissue expansion, albeit at the cost of tissue dysfunction, inflammation, and fibrosis development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 represents a well-supported inference integrating multiple experimental findings from HFD-fed mice, including transcriptomic changes, phenotypic observations, and cistromic data showing NR1D1 repression of metabolic genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:34:58.567505Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "06b60466-14e0-418d-b6d1-4c7d2e1bda49",
+      "result_id": "e97870ff-27eb-491b-8cea-73ead1bed3d9"
+    },
+    {
+      "claim_id": "903de380-d2be-4456-a52c-ea3fffcd7c12",
+      "result_id": "e97870ff-27eb-491b-8cea-73ead1bed3d9"
+    },
+    {
+      "claim_id": "aa9abada-a4e5-4504-83eb-c2e610370366",
+      "result_id": "e97870ff-27eb-491b-8cea-73ead1bed3d9"
+    },
+    {
+      "claim_id": "6da751f3-fc4c-42e2-851a-529dfd6159f0",
+      "result_id": "e97870ff-27eb-491b-8cea-73ead1bed3d9"
+    },
+    {
+      "claim_id": "034b651a-a0f2-4eac-8571-703c7c277e19",
+      "result_id": "e97870ff-27eb-491b-8cea-73ead1bed3d9"
+    },
+    {
+      "claim_id": "62582095-6e56-40a1-94f7-6b999ad01314",
+      "result_id": "b0b81566-9b67-49e5-9c1a-fc05d0ced498"
+    },
+    {
+      "claim_id": "e540e688-83e4-4e80-9c50-b148628f87b6",
+      "result_id": "b0b81566-9b67-49e5-9c1a-fc05d0ced498"
+    },
+    {
+      "claim_id": "abf87ae2-6f06-4290-9db0-08f9e87c7fa8",
+      "result_id": "414fd088-ad36-495f-81bd-ff46274663b9"
+    },
+    {
+      "claim_id": "ad89dd07-db66-47cf-bdbd-2e668fb2f9c6",
+      "result_id": "414fd088-ad36-495f-81bd-ff46274663b9"
+    },
+    {
+      "claim_id": "8000b754-b12f-4581-8048-52e578376a46",
+      "result_id": "414fd088-ad36-495f-81bd-ff46274663b9"
+    },
+    {
+      "claim_id": "3781e330-c377-43cb-b362-8b58b6a7dc2f",
+      "result_id": "414fd088-ad36-495f-81bd-ff46274663b9"
+    },
+    {
+      "claim_id": "503a5d7b-242d-4098-b1c2-2e7db8efd2f6",
+      "result_id": "414fd088-ad36-495f-81bd-ff46274663b9"
+    },
+    {
+      "claim_id": "6cb06332-08cc-403b-b983-cf87f7cd473f",
+      "result_id": "72351cab-9883-4812-b786-2040c7957293"
+    },
+    {
+      "claim_id": "72484cb0-be2c-4898-b0cd-476d41f076ee",
+      "result_id": "72351cab-9883-4812-b786-2040c7957293"
+    },
+    {
+      "claim_id": "0d893df9-e541-4778-9e23-491206e1aec9",
+      "result_id": "72351cab-9883-4812-b786-2040c7957293"
+    },
+    {
+      "claim_id": "21d760ef-6910-4f7f-9cd3-016aa787cdf9",
+      "result_id": "72351cab-9883-4812-b786-2040c7957293"
+    },
+    {
+      "claim_id": "eddb5754-ec60-42dc-8981-b67ecd3a477a",
+      "result_id": "72351cab-9883-4812-b786-2040c7957293"
+    },
+    {
+      "claim_id": "e5ae3086-a08f-40de-a48e-3489b60cd33f",
+      "result_id": "72351cab-9883-4812-b786-2040c7957293"
+    },
+    {
+      "claim_id": "6e854648-cf88-48b5-9670-1fffa0b5926f",
+      "result_id": "3d0cd049-e50f-4ab2-912f-46603b9100d9"
+    },
+    {
+      "claim_id": "af46d3bd-538f-4288-a68c-cfe92641e202",
+      "result_id": "c2cc24b2-b05a-47fa-859a-8cd08d3dc301"
+    },
+    {
+      "claim_id": "a4a5fde1-7219-4afb-b015-637779f24bcc",
+      "result_id": "c2cc24b2-b05a-47fa-859a-8cd08d3dc301"
+    },
+    {
+      "claim_id": "49fe876a-515e-49a2-8380-9811525ac93b",
+      "result_id": "c2cc24b2-b05a-47fa-859a-8cd08d3dc301"
+    },
+    {
+      "claim_id": "54d9751e-552f-45b6-b3f5-b92e9f8a94f7",
+      "result_id": "9dc224d1-f69e-4f57-bb5b-36d1acd4a927"
+    },
+    {
+      "claim_id": "e5290a8d-9daa-4a64-b5fd-e266e94370da",
+      "result_id": "9dc224d1-f69e-4f57-bb5b-36d1acd4a927"
+    },
+    {
+      "claim_id": "c0669280-fa5a-460c-a7e9-1ce30bbbfc3e",
+      "result_id": "9dc224d1-f69e-4f57-bb5b-36d1acd4a927"
+    },
+    {
+      "claim_id": "6bb282ee-bd42-4329-8f60-d3c89cdb3415",
+      "result_id": "9dc224d1-f69e-4f57-bb5b-36d1acd4a927"
+    },
+    {
+      "claim_id": "885c0347-9896-4885-91c4-339ff9b31dfd",
+      "result_id": "9dc224d1-f69e-4f57-bb5b-36d1acd4a927"
+    },
+    {
+      "claim_id": "94090a4c-c668-4e8d-bcff-c4ac9f63b793",
+      "result_id": "05f4904f-1c2f-40b9-b2d8-a5025ca0cd76"
+    },
+    {
+      "claim_id": "501b6b17-3616-4b35-b9fd-10fdbcad199e",
+      "result_id": "05f4904f-1c2f-40b9-b2d8-a5025ca0cd76"
+    },
+    {
+      "claim_id": "6936b1fd-b2d4-4821-8ac5-9c4593a07a66",
+      "result_id": "05f4904f-1c2f-40b9-b2d8-a5025ca0cd76"
+    },
+    {
+      "claim_id": "ad54f67e-6c7c-4709-9cee-deabd372fef7",
+      "result_id": "05f4904f-1c2f-40b9-b2d8-a5025ca0cd76"
+    },
+    {
+      "claim_id": "99a11816-c014-46a1-9f69-978fb9260bf0",
+      "result_id": "05f4904f-1c2f-40b9-b2d8-a5025ca0cd76"
+    },
+    {
+      "claim_id": "59cd372c-15f1-4c76-8a61-2b5bd0b73d63",
+      "result_id": "05f4904f-1c2f-40b9-b2d8-a5025ca0cd76"
+    },
+    {
+      "claim_id": "2ee08944-b9a8-4428-8684-7d0589b02c26",
+      "result_id": "05f4904f-1c2f-40b9-b2d8-a5025ca0cd76"
+    },
+    {
+      "claim_id": "d9284035-3cb7-48d8-9ab3-6a3fcff44c80",
+      "result_id": "df0a5347-7f87-4d56-a6ca-603d50a517f7"
+    },
+    {
+      "claim_id": "54b54046-53c8-46b4-8356-f963e6d12507",
+      "result_id": "df0a5347-7f87-4d56-a6ca-603d50a517f7"
+    },
+    {
+      "claim_id": "a315c0a5-8625-4319-bf35-df9afc802bed",
+      "result_id": "df0a5347-7f87-4d56-a6ca-603d50a517f7"
+    },
+    {
+      "claim_id": "9e7e31c0-7494-435c-848e-8ebe48f2f87a",
+      "result_id": "4d6a4b85-b3f8-4f48-800b-83ab5edc4447"
+    },
+    {
+      "claim_id": "e1662bf8-9612-4fc8-be06-7c8a252ea858",
+      "result_id": "4d6a4b85-b3f8-4f48-800b-83ab5edc4447"
+    },
+    {
+      "claim_id": "6265ef6f-cabc-4494-bdbe-057178f318d4",
+      "result_id": "4d6a4b85-b3f8-4f48-800b-83ab5edc4447"
+    },
+    {
+      "claim_id": "7713fc82-71a9-48d4-aebf-23ba29a65105",
+      "result_id": "4d6a4b85-b3f8-4f48-800b-83ab5edc4447"
+    },
+    {
+      "claim_id": "9962bcc7-46b8-429e-8f70-8267dd61180f",
+      "result_id": "a68f3087-3706-442f-9525-86040495b9ce"
+    },
+    {
+      "claim_id": "9b751aa0-4d5e-4902-b1ca-3c67ac0d45e4",
+      "result_id": "a68f3087-3706-442f-9525-86040495b9ce"
+    },
+    {
+      "claim_id": "02f625ec-57d3-405f-ba05-7d2edf2b96f0",
+      "result_id": "a68f3087-3706-442f-9525-86040495b9ce"
+    },
+    {
+      "claim_id": "43f5cc19-28a5-49ef-acdd-67ebef976984",
+      "result_id": "a68f3087-3706-442f-9525-86040495b9ce"
+    },
+    {
+      "claim_id": "65b67ff6-fbbd-4f54-881e-0e4346f960fe",
+      "result_id": "abb49715-bbee-4b2e-ac62-6aa8a01c6919"
+    },
+    {
+      "claim_id": "34df37fe-3b1f-4189-9b72-eb226f6f556a",
+      "result_id": "abb49715-bbee-4b2e-ac62-6aa8a01c6919"
+    },
+    {
+      "claim_id": "f23a852b-9575-4647-9676-0dca6f6b9757",
+      "result_id": "abb49715-bbee-4b2e-ac62-6aa8a01c6919"
+    },
+    {
+      "claim_id": "7a0ad5fc-0fa6-4932-9834-f9c123fb6700",
+      "result_id": "abb49715-bbee-4b2e-ac62-6aa8a01c6919"
+    },
+    {
+      "claim_id": "6176c821-480c-48ee-8406-24fa3d6f7fa9",
+      "result_id": "abb49715-bbee-4b2e-ac62-6aa8a01c6919"
+    },
+    {
+      "claim_id": "10b0cce0-08c4-4010-ac76-da471e89beb7",
+      "result_id": "0fb8ca97-758d-4d35-85ed-81bc7f71cbca"
+    },
+    {
+      "claim_id": "ef0d57d0-d77d-4e64-8480-b950d5dc38c5",
+      "result_id": "0fb8ca97-758d-4d35-85ed-81bc7f71cbca"
+    },
+    {
+      "claim_id": "1d2e0645-d8e4-4497-8e5f-415c367ee944",
+      "result_id": "0fb8ca97-758d-4d35-85ed-81bc7f71cbca"
+    },
+    {
+      "claim_id": "5588577c-c0c2-4198-83c5-e4aab09e9f71",
+      "result_id": "0fb8ca97-758d-4d35-85ed-81bc7f71cbca"
+    },
+    {
+      "claim_id": "4234dc88-6937-44b4-8a8f-8569eea15356",
+      "result_id": "07801f8c-0979-4b46-b0ec-a3475a77f7f8"
+    },
+    {
+      "claim_id": "e0f8dcaa-08e9-46b7-bf11-5782f2fc7d06",
+      "result_id": "07801f8c-0979-4b46-b0ec-a3475a77f7f8"
+    },
+    {
+      "claim_id": "e6be032a-9a6a-44dd-b5ef-a83ec9dc97de",
+      "result_id": "07801f8c-0979-4b46-b0ec-a3475a77f7f8"
+    },
+    {
+      "claim_id": "3b5b9899-cab2-4e99-a54d-bd15cd53e8bc",
+      "result_id": "8bf06ed4-03ae-4123-a1f0-642be4d57cef"
+    },
+    {
+      "claim_id": "cf9a4efe-b90f-4ff7-ac3a-0dcbd6dd6dfb",
+      "result_id": "8bf06ed4-03ae-4123-a1f0-642be4d57cef"
+    },
+    {
+      "claim_id": "da23de33-a542-494e-bb19-8b0cf481e5e2",
+      "result_id": "6b02ec34-d1df-4a88-a088-b98989916038"
+    },
+    {
+      "claim_id": "bcde38ac-cad4-4cee-9703-50e012c521ea",
+      "result_id": "6b02ec34-d1df-4a88-a088-b98989916038"
+    },
+    {
+      "claim_id": "776b2cc5-3111-47fb-a149-1eaed0b050ca",
+      "result_id": "ad6ff63a-3250-4ba4-98df-b2f64b75655b"
+    },
+    {
+      "claim_id": "3eb5ae74-02fd-467f-ac42-b6bd856d243d",
+      "result_id": "ad6ff63a-3250-4ba4-98df-b2f64b75655b"
+    },
+    {
+      "claim_id": "9eea8132-ca88-422d-907a-58a9896d7376",
+      "result_id": "ad6ff63a-3250-4ba4-98df-b2f64b75655b"
+    },
+    {
+      "claim_id": "cc6e324b-6aca-4cab-8fc4-4f596a7b81d9",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "af955a5b-6a1a-497a-b584-471caeb07225",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "f59abf0d-b422-4070-9f53-655c4a981bd2",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "57771e75-586d-4282-a904-afae66472178",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "4ae135dc-182e-4488-801a-929824fbd7e1",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "be993226-eae4-4642-9b1a-2b8e1e2c5aa9",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "706e88f2-69d4-494a-9e5f-246b7e6ce5d8",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "76fea2e0-0cce-4f07-bb59-88b3d5b00339",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "617068c7-9792-463b-8985-da7157342ad4",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "e782e9ce-e774-456d-b0be-b35e4f9c9453",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "ce3612d5-d9c9-4d4f-81fa-66fe36319ae1",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "4403087f-8fad-48c9-b3be-a65f54edaf05",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "816f27f4-7547-426e-9436-a6d564b40f2d",
+      "result_id": "f1e11968-0986-4ce6-8992-9047c416995b"
+    },
+    {
+      "claim_id": "2097a113-616c-49f0-95af-e3cfec093554",
+      "result_id": "5bbcb6ec-4e4b-4a58-9b95-0df45e0e0292"
+    },
+    {
+      "claim_id": "0fdc301a-bad2-45df-9c38-1922fd9b1c66",
+      "result_id": "5bbcb6ec-4e4b-4a58-9b95-0df45e0e0292"
+    },
+    {
+      "claim_id": "c83586af-509f-4f49-8f99-e67cb033d32d",
+      "result_id": "5bbcb6ec-4e4b-4a58-9b95-0df45e0e0292"
+    },
+    {
+      "claim_id": "4ee2ffe2-1263-4b95-b7da-012d4de06097",
+      "result_id": "5bbcb6ec-4e4b-4a58-9b95-0df45e0e0292"
+    },
+    {
+      "claim_id": "78476c61-f583-470d-8594-ee8c8ceee634",
+      "result_id": "5bbcb6ec-4e4b-4a58-9b95-0df45e0e0292"
+    },
+    {
+      "claim_id": "c6c767ed-d173-4804-8ec6-0de6a2d993bc",
+      "result_id": "5bbcb6ec-4e4b-4a58-9b95-0df45e0e0292"
+    },
+    {
+      "claim_id": "f3bab25a-e160-4de9-9121-b6f0e72f1c2b",
+      "result_id": "5bbcb6ec-4e4b-4a58-9b95-0df45e0e0292"
+    },
+    {
+      "claim_id": "d8983a52-0259-4272-895a-63003a095218",
+      "result_id": "5bbcb6ec-4e4b-4a58-9b95-0df45e0e0292"
+    },
+    {
+      "claim_id": "340cdfff-98d0-4755-b35f-e7a754268a17",
+      "result_id": "0e25ac67-32ef-4b32-8e5d-d1577d8e03fd"
+    }
+  ],
+  "comparisons": []
+}

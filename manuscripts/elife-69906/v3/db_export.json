@@ -1,0 +1,1724 @@
+{
+  "submission": {
+    "id": "46b0c619-941f-49ae-8016-aba6dbc196eb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:02:11.667142Z",
+    "updated_at": "2025-12-03T10:02:11.667142Z"
+  },
+  "content": [
+    {
+      "id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "submission_id": "46b0c619-941f-49ae-8016-aba6dbc196eb",
+      "content_type": "manuscript",
+      "content_text": "# RNA N6-methyladenosine modulates endothelial atherogenic responses to disturbed flow in mice\n\n## Authors\n\n- Bochuan Li<sup>1</sup>\n- Ting Zhang<sup>2</sup>\n- Mengxia Liu<sup>2</sup>\n- Zhen Cui<sup>1</sup>\n- Yanhong Zhang<sup>1</sup>\n- Mingming Liu<sup>1</sup>\n- Yanan Liu<sup>1</sup>\n- Yongqiao Sun<sup>2</sup>\n- Mengqi Li<sup>1</sup>\n- Yikui Tian<sup>1</sup>\n- Ying Yang<sup>2</sup> ([ORCID: 0000-0002-8104-5985](https://orcid.org/0000-0002-8104-5985)) \u2020\n- Hongfeng Jiang<sup>5</sup> \u2020\n- Degang Liang<sup>1</sup> ([ORCID: 0000-0003-2618-6651](https://orcid.org/0000-0003-2618-6651)) \u2020\n\n### Affiliations\n\n1. Tianjin Key Laboratory of Metabolic Diseases, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), Collaborative Innovation Center of Tianjin for Medical Epigenetics and Department of Physiology and Pathophysiology, Department of Cardiovascular Surgery, Tianjin Medical University General Hospital, Tianjin Medical University Tianjin China ([ROR:003sav965](https://ror.org/003sav965))\n2. CAS Key Laboratory of Genomic and Precision Medicine, Collaborative Innovation Center of Genetics and Development, College of Future Technology, Beijing Institute of Genomics, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))\n3. China National Center for Bioinformation Beijing China\n4. University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))\n5. Key Laboratory of Remodeling-Related Cardiovascular Diseases (Ministry of Education), Beijing Collaborative Innovation Center for Cardiovascular Disorders, Beijing Institute of Heart Lung and Blood Vessel Diseases, Beijing Anzhen Hospital, Capital Medical University Beijing China ([ROR:013xs5b60](https://ror.org/013xs5b60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAtherosclerosis preferentially occurs in atheroprone vasculature where human umbilical vein endothelial cells are exposed to disturbed flow. Disturbed flow is associated with vascular inflammation and focal distribution. Recent studies have revealed the involvement of epigenetic regulation in atherosclerosis progression. N6-methyladenosine (m6A) is the most prevalent internal modi\ufb01cation of eukaryotic mRNA, but its function in endothelial atherogenic progression remains unclear. Here, we show that m6A mediates the epidermal growth factor receptor (EGFR) signaling pathway during EC activation to regulate the atherosclerotic process. Oscillatory stress (OS) reduced the expression of methyltransferase like 3 (METTL3), the primary m6A methyltransferase. Through m6A sequencing and functional studies, we determined that m6A mediates the mRNA decay of the vascular pathophysiology gene EGFR which leads to EC dysfunction. m6A modification of the EGFR 3\u2019 untranslated regions (3\u2019UTR) accelerated its mRNA degradation. Double mutation of the EGFR 3\u2019UTR abolished METTL3-induced luciferase activity. Adenovirus-mediated METTL3 overexpression significantly reduced EGFR activation and endothelial dysfunction in the presence of OS. Furthermore, thrombospondin-1 (TSP-1), an EGFR ligand, was specifically expressed in atheroprone regions without being affected by METTL3. Inhibition of the TSP-1/EGFR axis by using shRNA and AG1478 significantly ameliorated atherogenesis. Overall, our study revealed that METTL3 alleviates endothelial atherogenic progression through m6A-dependent stabilization of EGFR mRNA, highlighting the important role of RNA transcriptomics in atherosclerosis regulation.\n\n## Introduction\n\nN6-methyladenosine (m6A) is the most prevalent post-transcriptional modi\ufb01cation of eukaryotic mRNAs (Roundtree et al., 2017). This modification is reversible and is catalyzed by a multicomponent methyltransferase complex consisting of various methyltransferases including methyltransferase like 3 (METTL3), METTL14, Wilms tumor 1-associated protein (WTAP), and KIAA1429 (Virilizer), and is erased by demethylases such as fat mass and obesity-associated protein or \u03b1-ketoglutarate-dependent dioxygenase alk B homolog 5 (Shi et al., 2019; Huang et al., 2021). As previously reported, m6A on mRNAs plays an important role in regulating cellular processes, including RNA stability, translation ef\ufb01ciency, RNA secondary structure, subcellular localization, alternative polyadenylation, and splicing (Liu et al., 2015; Wang et al., 2015; Zaccara et al., 2019). In the methyltransferase complex, METTL14 functions as the target recognition subunit by binding to RNA and then recruits METTL3 to catalyze m6A formation. Wilms tumor 1-associated protein (WTAP) is a regulatory subunit required for the accumulation of METTL3 and METTL14 into nuclear speckles (Ping et al., 2014). KIAA1429 guides region-selective m6A methylation (Yue et al., 2018). As the core methyltransferase subunit, METTL3 has been demonstrated to modulate key physiological processes, including spermatogenesis (Xu et al., 2017), cell reprogramming (Chen et al., 2015), and embryonic stem cell chromatin modification (Liu et al., 2021; Xu et al., 2021). However, its function in human cardiovascular disease (CVD) remains elusive.\n\nAtherosclerosis, resulted from endothelial dysregulation in the arterial wall (Geovanini and Libby, 2018), is the leading cause of CVD resulting in high rate of mortality in the population. Atherosclerosis preferentially develops at branches and curvatures in the arterial tree where flow is disturbed (Davies, 2009). Disturbed flow pattern increases inflammatory response in ECs, including the expression of intercellular adhesion molecule 1 and vascular adhesion molecule 1 (VCAM-1) (Humphrey et al., 2014). Recent studies have reported that oscillatory stress (OS) could modulate atherosclerosis development by inducing the expression of DNA methyltransferases (Dunn et al., 2014) and histone modifications (Hastings et al., 2007), indicating the involvement of epigenetic mechanisms in the regulation of atherogenesis. In this study, we focused on exploring the function of RNA m6A modification under OS in ECs, which may provide a better understanding of atherogenesis.\n\nNumerous studies have shown that thrombospondin-1 (TSP-1, encoded by THBS1) is a shear-sensitive protein important for the regulation of vascular remodeling (Ni et al., 2010). Notably, TSP-1 can induce dysregulated blood flow, impaired vessel dilation, and increased vascular tone Cs\u00e1nyi et al., 2012 followed by arterial stiffening (Kim et al., 2017). In addition, Thbs 1 deficiency prevented lesion formation in Apoe-/- mice (Ganguly et al., 2017). As a receptor of TSP-1, epidermal growth factor receptor (EGFR) has been reported to be involved in vascular pathophysiology and pathogenesis of atherosclerosis in macrophages (Wang et al., 2017). Moreover, EGFR-selective tyrphostin, AG1478, can reverse the phosphorylation of EGFR tyrosine-1068 induced by TSP-1 activation (Liu et al., 2009), indicating the complicated regulation between TSP-1 and EGFR with respect to vascular function.\n\nIn this study, we generated tamoxifen-inducible endothelial-specific Mettl3-deficient (EC-Mettl3KO) mice to investigate the regulation of Mettl3-mediated m6A on atherogenesis. Our data revealed that downregulation of METTL3 and hypomethylation mediate OS-induced endothelial dysfunction and atherogenesis both in vivo and in vitro, indicating that the THBS1/EGFR axis is a key regulatory target of METTL3-dependent EC activation. These results illuminate a critical mechanism of m6A modification in regulating atherosclerosis.\n\n## Results\n\n### METTL3 is decreased in atheroprone regions\n\nTo explore the functions of m6A modification under OS, we first detected m6A level changes in response to OS (0.5 \u00b1 4 dyn/cm2, 1 Hz) for 6 hr in human umbilical vein ECs (HUVECs) through UHPLC-MRM-MS (ultra-high-performance liquid chromatography-triple quadrupole mass spectrometry coupled with multiple-reaction monitoring) analysis. The results showed that OS significantly decreased m6A modification in HUVECs (Figure 1A). To further investigate the effects of OS on the pattern of m6A modulators, we examined methyltransferase components including METTL3, METTL14, METTL16, WTAP, and Virilizer. Western blot analysis detected a significantly decrease of METTL3 and Virillizer after OS stimulation, without affecting other m6A modulators (Figure 1B\u2013E). Furthermore, to analyze the m6A modulators in atheroprone (aortic arch [AA]) and atheroprotective (thoracic aorta [TA]) regions, we performed western blot analysis and found that METTL3 and Virilizer were significantly decreased in AA tissue lysates than in TA region, whereas METTL14 and WTAP were not changed (Figure 1\u2014figure supplement 1A and B). Consistently, in outer curvature of AA and TA, where blood flow is laminar, METTL3 was highly expressed in both regions but only displayed specific nuclear localization in outer curvature of AA. Conversely, in the inner curvature and bifurcation of AA, where blood flow is disturbed, METTL3 was dramatically decreased (Figure 1F and G; Figure 1\u2014figure supplement 1C). Next, to further test the expression of METTL3, we used Apoe-/- mice with partial ligation and performed carotid Doppler ultrasonography to verify disturbed flow induction in the partially ligated left common carotid artery (LCA) at 7th and 14th days after the procedure compared with stable flow in those at day 0 (Figure 1\u2014figure supplement 1D). Consistent with the AA, as compared with right common carotid artery (RCA), METTL3 was weakly expressed in LCA after 1 and 2 weeks (Figure 1\u2014figure supplement 1E and F). Collectively, METTL3 is decreased in atheroprone regions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig1-v3.jpg)\n\n**Figure 1.:** Human umbilical vein endothelial cells (HUVECs) and mouse aortic endothelial cells (mAECs) were exposed to OS (0.5 \u00b1 4 dyn/cm2) for 6 hr. Cells with static treatment (ST) were a control. (A) Ultra-high-performance liquid chromatography-triple quadrupole mass spectrometry coupled with multiple-reaction monitoring analysis of m6A levels in mRNAs extracted from HUVECs exposed to ST and OS. Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (Student\u2019s t test). n = 3. (B\u2013E) Western blot analysis of METTL3, METTL14, METTL16, Wilms tumor 1-associated protein, and Virillizer expression in HUVECs (B\u2013C) and mAECs (D\u2013E) response to ST and OS. Data are mean \u00b1 SEM, *p<0.05 (Student\u2019s t test). n = 6. (F) Aortas from 6- to 8-week-old Apoe-/- mice underwent immunofluorescence staining for indicated proteins. AA inner, inner curvature of aortic arch; AA outer, outer curvature of aortic arch; TA, thoracic aorta. Scale bar, 20 \u03bcm. (G) Quantification of protein expression in (F). Data are mean \u00b1 SEM, *p<0.05 (one-way ANOVA with Bonferroni multiple comparison post-test). n = 6.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) Protein was extracted from the aortic arch (AA) and thoracic aorta (TA) of 8-week-old C57BL/6 mice. (A) Western blot analysis of expression of METTL3, METTL14, Wilms tumor 1-associated protein, Virillizer, and GAPDH (glyceraldehyde-3-phosphate dehydrogenase) in the tissue lysates of AA and TA. (B) Quantification of protein expression in (A). Data are mean \u00b1 SEM, *p<0.05 (Student\u2019s t test). n = 6. (C) Aortas from 6- to 8-week-old Apoe-/- mice underwent immunofluorescence staining for indicated proteins. BIF, bifurcation of aortic arch; inner, inner curvature of aortic arch; outer, outer curvature of aortic arch; straight, straight of aorta; L, lumen. Represent images are shown. n = 6. Scale bar, 80 \u03bcm. Male Apoe-/- mice underwent partial ligation of the carotid artery for indicated weeks. (D) Ultrasound images showing flow velocity profiles and revealing that partial ligation induces flow reversal (indicated by arrows) in ligated coronary artery (LCA) during diastole. Representative images at 0, 7th and 14th day after surgery were shown. n = 6. (E) Shows enface immunofluorescence staining of the expression of METTL3 in ECs of the carotid artery of mice. Scale bar, 20 \u03bcm. (F) Quantification of relative fluorescent intensity of METTL3. Data are mean \u00b1 SEM, *p<0.05 (one-way ANOVA with Bonferroni multiple comparison post-test). n = 6.\n\n### Endothelial activation arises in EC-specific METTL3-deficient mice\n\nNext, to clarify whether METTL3 deficiency induces endothelial dysfunction, we crossed tamoxifen-inducible endothelial-specific Mettl3-deficient (EC-Mettl3KO) mice (Figure 2\u2014figure supplement 1A and B). METTL3 was used as a marker of knockout efficiency. The protein levels of METTL3 were decreased in AA intima tissue lysates compared to TA in Mettl3flox/flox mice. The level of the EC activation marker VCAM-1 was significantly increased in AA intima tissue lysates compared to TA intima lysates in both Mettl3flox/flox mice and EC-Mettl3KO mice (Figure 2A\u2013C). Next, we used EC-Mettl3KO mice and Mettl3flox/flox mice with partial ligation to further test the expression of METTL3. En face immunofluorescence staining of LCA revealed reduced protein levels of METTL3 and enhanced levels of VCAM-1 in EC-Mettl3KO mice compared to RCA 2 weeks after ligation (Figure 2D and E). Overexpression of METTL3 in ECs by adeno-associated virus (AAV9-METTL3 OE) inhibited VCAM-1 expression induced by partial ligation in LCA endothelium (Figure 2F and G; Figure 2\u2014figure supplement 1C and D). These results indicate that METTL3 depletion is associated with EC activation in response to OS.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig2-v3.jpg)\n\n**Figure 2.:** (A\u2013C) Protein was extracted from the AA and TA of 8-week-old EC-Mettl3KO and Mettl3flox/flox mice. (A) Western blot analysis of the expression of METTL3, vascular adhesion molecule (VCAM-1), CD31, SMA (smooth muscle actin), and GAPDH in tissue lysates of AA and TA intima. AA, aortic arch; TA, thoracic aorta. (B\u2013C) Quantification of protein expression in (A). Data are shown as the mean \u00b1 SEM, *p<0.05 (two-way ANOVA with Bonferroni multiple comparison post hoc test). Protein extracts of intima from three mice were pooled as one sample, n = 3. (D) EC-Mettl3KO and Mettl3flox/flox mice underwent partial ligation of the carotid artery for 2 weeks. En face immunofluorescence staining for the expression of VCAM-1 and METTL3 in ECs of the carotid artery of mice. Scale bar, 20 \u03bcm. (E) Quantification of the relative fluorescence intensity of VCAM-1 and METTL3. Data are shown as the mean \u00b1 SEM, *p<0.05 (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 6 mice. (F) Male mice underwent partial ligation of the carotid artery. During ligation, carotid arteries were infused with the indicated adeno-associated virus. Immunofluorescence staining of VCAM-1 and vWF in ECs of the RCA and LCA of mice. RCA, right carotid artery; LCA, left carotid artery. Scale bar, 20 \u03bcm. (G) Quantification of the relative fluorescence intensity of VCAM-1. Data are shown as the mean \u00b1 SEM, *p<0.05 (one-way ANOVA with Bonferroni multiple comparison post hoc test). n = 5 mice.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Genotyping of mice. PCR indicated that tamoxifen-stimulated Cdh5-Cre recombination in tail preparations of mice as follows: wild-type mice and Mettl3flox/-, Mettl3flox/flox, and EC-Mettl3KO mice. (B) Body weight of 8-week-old EC-Mettl3KO and Mettl3flox/flox mice. Data are shown as the mean \u00b1 SEM, NS, not significant (Student\u2019s t test). n = 5. (C) Male EC-Mettl3KO mice underwent partial ligation of the carotid artery. During ligation, carotid arteries were infused with the indicated adeno-associated viruses. Immunofluorescence staining for expression of Mettl3 and vWF in ECs of the carotid artery of mice. Scale bar, 20 \u03bcm. (D) Quantification of the relative fluorescence intensity of Mettl3. Data are shown as the mean \u00b1 SEM, *p<0.05 (Student\u2019s t test). n = 5 mice.\n\n### OS-abolished m6A prevents EGFR mRNA degradation\n\nAs a core subunit of the m6A methyltransferase complex, the downregulation of METTL3 expression in response to OS suggests the potential regulation of m6A modification. First, we conducted m6A-specific methylated RNA immunoprecipitation combined with high-throughput sequencing (MeRIP-seq) to compare the landscape of m6A in static treatment (ST) and OS. We identified 10,515 and 10,580 m6A peaks in ST and OS, respectively, all of which were enriched in coding regions, 3\u2019 untranslated regions (3\u2019UTRs), and near stop codons (Figure 3A; Figure 3\u2014figure supplement 1A). Interestingly, we found that the m6A motifs identified in OS and ST were significantly enriched in GGACU (Figure 3B). Furthermore, we identified thousands of dysregulated m6A peaks induced by OS (Figure 3\u2014figure supplement 1B; Supplementary file 1), and genes with downregulated m6A peaks were significantly enriched in transcription regulation- and cell-cell and membrane adhesion-related pathways (Figure 3\u2014figure supplement 1C, upper panel). Overall, we found that METTL3 may mediate the dynamic change in m6A landscapes between ST and OS.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig3-v3.jpg)\n\n**Figure 3.:** (A) Distribution of m6A peaks along the 5\u2019 untranslated regions (5\u2019UTR), CDS (coding sequence), and 3\u2019UTR regions of mRNA in static treatment (ST) and OS. (B) m6A motif identified from human umbilical vein endothelial cells (HUVECs) under ST and OS treatments. (C) Integrative genomics viewer tracks displaying the results of IP vs. input read distributions in EGFR 3\u2019UTR mRNA of HUVECs under ST and OS treatments. (D) qPCR analysis of EGFR mRNA levels in ST and OS. Data are shown as the mean \u00b1 SEM, *p<0.05 (Student\u2019s t test). n = 6. (E) MeRIP-qPCR detection of m6A enrichment on EGFR mRNA in ST and OS. Data are shown as the mean \u00b1 SEM, *p<0.05 (Student\u2019s t test). n = 5. (F\u2013H) qPCR analysis showing delayed EGFR mRNA degradation upon methyltransferase like 3 (Mettl3)-overexpression (F); si-Mettl3 (G); and OS treatment (H). HUVECs were treated with actinomycin D for 4 and 6 hr. Data are shown as the mean \u00b1 SEM, *p<0.05 (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 6. (I) Schematic representation of the mutated (RRACH to RRTCH) 3\u2019 UTR of EGFR plasmids. (J) Relative activity of the wild-type or mutant EGFR 3\u2019UTR \ufb01re\ufb02y luciferase reporter in K293 cells treated with green fluorescent protein (GFP)- or GFP-Mettl3-overexpressing adenovirus. Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (Student\u2019s t test). n = 8. RNA-seq and MeRIP-seq data generated in this study have been deposited to the Genome Sequence Archive in BIG Data Center under accession number PRJCA004746.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Pie charts showing the m6A peak distribution in different RNA regions (CDS, stop codon, TSS (transcriptional start site), 5\u2019 untranslated regions [5\u2032 UTR], 3\u2032 UTR) in ST and OS. (B) Scatter plots showing m6A enrichment of peaks in ST and OS. (C) Bubble diagram showing gene ontology (GO) enrichment analysis of upregulated (up) and downregulated (down) m6A-modified genes in ST and OS. (D) Schematic of m6A downstream analysis. 1.5-fold expression change, p<0.05. (E) Gene expression was highly correlated in RNA-seq and input from MeRIP-seq for both ST and OS conditions. (F) Overlay of differentially expressed genes of RNA-seq and input from ST and OS treatments. (G) GO enrichment analysis of downregulated genes (left) and upregulated genes (right).\n\nAs reported, m6A modification plays a very important role in regulating RNA abundance (Wang et al., 2014). To investigate the molecular mechanisms of m6A function in endothelial activation, RNA-seq was performed using ECs treated with ST and OS. We identified 547 consistently upregulated genes (Figure 3\u2014figure supplement 1D-F) upon OS. Consistent with the MeRIP-seq data, these upregulated genes were also significantly enriched in transcription regulation- and cell adhesion-associated pathways (Figure 3\u2014figure supplement 1G, right panel). Therefore, we hypothesized that METTL3 regulates the degradation of these genes in response to OS. Furthermore, we analyzed the upstream regulators of methylation-downregulated but expression-upregulated genes using IPA software. According to the IPA analysis, we identified EGFR as a potential key regulator participating in OS-enhanced gene ontology (GO) pathways (Figure 3\u2014figure supplement 1D; Supplementary file 2), which was further confirmed by the reduced ratio of EGFR (IP/input) in OS compared to ST (Figure 3C). We also validated the significantly increased EGFR mRNA levels (Figure 3D) and decreased m6A enrichment in OS compared to ST by MeRIP-quantitative PCR (qPCR) (Figure 3E). To further test whether METTL3-mediated m6A regulates EGFR mRNA decay, we measured EGFR mRNA levels in ECs after treatment with the transcriptional inhibitor actinomycin D. Compared to the green fluorescent protein (GFP) control, METTL3 overexpression significantly decreased the remaining EGFR mRNA levels due to accelerated mRNA decay in the presence of functional m6A modification by overexpression of METTL3 (Figure 3F). As expected, EGFR mRNA showed a slower decay rate in response to METTL3 knockdown or OS treatment (Figure 3G and H). As we found that the 3\u2019UTR of EGFR is a key region regulating m6A modification, we mutated two nearby potential m6A motifs AGACA and GGACT to AGTCA and GGTCT. Notably, the 3\u2019UTR mutants did not respond to the decrease in luciferase activity caused by overexpression of METTL3 (Figure 3I and J). Collectively, these results suggest that OS-induced EC activation was mediated by m6A modification on EGFR.\n\n### TSP-1/EGFR pathway participates in EC inflammation induced by METTL3 inhibition in response to OS\n\nEGFR ligands that specifically activate EGFR include epidermal growth factor (EGF), transforming growth factor \u03b1 (TGF-\u03b1), and TSP-1 (Liu et al., 2009). TSP-1 is a multidomain protein that contains EGF-like repeats that indirectly activate EGFR and selected downstream signaling pathways (Garg et al., 2011; Liu et al., 2009). TSP-1 is activated in shear-mediated arterial stiffening (Kim et al., 2017). To study the function of the endothelial TSP-1/EGFR axis in EC activation, we first treated wildtype and METTL3-overexpressed ECs with or without OS. Overexpression of METTL3 abolished phosphorylation of EGFR (Tyr-1068), AKT, and ERK, as well as total EGFR and VCAM-1 levels in response to OS (Figure 4A and B; Figure 4\u2014figure supplement 1A). Furthermore, TSP-1 was significantly increased at both the mRNA and protein levels under OS (Figure 4\u2014figure supplement 1B). Supplementation with recombinant human TSP-1 didn\u2019t change EGFR protein levels but enhanced EGFR phosphorylation which could be abolished by METTL3 overexpression (Figure 4C and D). Next, ECs were subjected to OS or METTL3 siRNA in the presence of the EGFR-selective tyrphostin AG1478, which blocked both OS and siMETTL3-mediated phosphorylation of EGFR, AKT, and ERK and VCAM-1 levels, had no effect on total EGFR expression (Figure 4E\u2013H). The increased number of THP-1 (human myeloid leukemia mononuclear) cells adhering to HUVECs by OS or siMETTL3 was relieved in the presence of overexpression of METTL3 or AG1478 (Figure 4F and H; Figure 4\u2014figure supplement 1C-D). These results suggest that METTL3 inhibits the transcriptional level of EGFR and downstream signaling events and cellular responses.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig4-v3.jpg)\n\n**Figure 4.:** (A) Western blot analysis of p-EGFR, EGFR, p-AKT, t-AKT, p-ERK, t-ERK, FLAG (tag of METTL3), and vascular adhesion molecule 1 (VCAM-1) expression. GAPDH is the protein loading control. Human umbilical vein endothelial cells (HUVECs) were infected with the indicated adenoviruses for 24 hr with or without exposure to OS or static treatment (ST) for another 6 or 12 hr. (B) Quantification of the expression of the indicated proteins in (A). Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 6. (C) HUVECs were infected with the indicated adenoviruses for 24 hr with or without TSP-1 (10 \u00b5g/ml) treatment. Western blot analysis of p-EGFR, EGFR, and GAPDH. (D) Quantification of the expression of the indicated proteins in (C). Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 6. (E) HUVECs were exposed to OS or ST for 6 or 12 hr with or without pretreatment with AG1478 (10 \u03bcmol/L). Western blot analysis of p-EGFR, EGFR, p-AKT, t-AKT, p-ERK, t-ERK, VCAM-1, and GAPDH. (F) Quantification of the expression of the indicated proteins in (E). Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 9. (G) HUVECs were infected with METTL3 siRNA for 24 hr with or without treatment with AG1478 (10 \u03bcmol/L). Western blot analysis of p-EGFR, EGFR, p-AKT, t-AKT, p-ERK, t-ERK, VCAM-1, METTL3, and GAPDH. (H) Quantification of the expression of the indicated proteins in (G). Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (two-way ANOVA with Bonferroni multiple comparison posttest). n = 9. THP-1 cells were labeled with \ufb02uorescence dye, and then a cell adhesion assay was performed. The number of adherent cells was normalized to that of HUVECs as a control (statistical chart in F, H). Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 6.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of expression of vascular adhesion molecule 1 in human umbilical vein endothelial cells (HUVECs) upon different treatments. Cells were infected with the indicated adenoviruses for 24 hr with or without exposure to oscillatory stress (OS) or static treatment (ST) for another 12 hr. Data are shown as the mean \u00b1 SEM, *p<0.05 (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 6. (B) Western blot analysis of TSP-1 and qPCR analysis of THBS1 mRNA levels in ST and OS conditions. Data are shown as the mean \u00b1 SEM, *p<0.05 (Student\u2019s t test). n = 6. (C\u2013F) HUVECs were exposed to the indicated treatments. Representative images of adhesive cells. Scale bar, 500 \u03bcm. Cell numbers from five random fields with a 10\u00d7 objective were counted in each well. The number of adherent cells was normalized to that of HUVECs as a control. Data are shown as the mean \u00b1 SEM, *p<0.05 (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 6.\n\n### EC Mettl3 deficiency accelerates atherosclerosis in partial carotid artery ligated Apoe-/- mice\n\nTo further verify the effect of EGFR and TSP-1 on endothelial function, we first evaluated EGFR and TSP-1 protein levels in partially ligated carotid arteries with or without AAV9-METTL3 OE infection and performed cross sections immunofluorescence staining after 2 weeks. Overexpression of METTL3 inhibited EGFR expression induced by EC Mettl3 deficiency in partially ligated carotid artery but had no effect on TSP-1 levels with partial ligation (Figure 5A\u2013D; Figure 2\u2014figure supplement 1C and D). The knockdown efficiency of METTL3 was approximately 95%, as confirmed by en face staining (Figure 2A; Figure 5\u2014figure supplement 1A and B). Next, we performed partial ligation in Apoe-/- EC-Mettl3KO and Apoe-/- Mettl3flox/flox mice fed a Western-type diet (WTD) immediately after the surgery. Carotid Doppler ultrasonography verified stronger signals in the partially ligated LCA when fed a WTD compared to previous data in Figure 1\u2014figure supplement 1D (Figure 5\u2014figure supplement 1C). The lesion areas in the ligated carotid artery were more serious in Apoe-/- EC-Mettl3KO mice than in Apoe-/- Mettl3flox/flox mice at both 2 and 4 weeks (Figure 5E and F). The levels of plasma triglyceride and cholesterol and body weight did not change among the groups (Figure 5\u2014figure supplement 1D and E). Thus, EC Mettl3 deficiency in partially carotid artery ligated mice triggers EGFR expression and EC activation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013B) EC-Mettl3KO and Mettl3flox/flox mice underwent partial ligation of the carotid artery for 2 weeks were infused with the indicated adeno-associated virus. Immunofluorescence staining for expression of EGFR, thrombospondin-1 (TSP-1) in ECs of the carotid artery of mice. Scale bar, 80 \u03bcm. (C\u2013D) Quantification of the relative fluorescence intensity of EGFR and TSP-1. Data are shown as the mean \u00b1 SEM, *p<0.05 (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 5 mice. (E) Eight-week-old male Apoe\u2013/\u2013Mettl3flox/flox and Apoe\u2013/\u2013 EC-Mettl3KO mice with 2 or 4 weeks of partial ligation were fed a Western-type diet, and arterial tissues were isolated to examine atherosclerotic lesions. Scale bar: 1.5 mm. Ligated coronary arteries were sectioned for hematoxylin-eosin staining. Scale bar: 100 \u03bcm. L, lumen; P, plaque. (F) Quantification of lesion area. Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (one-way ANOVA with Bonferroni multiple comparison post hoc test). n = 5 mice.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) EC-Mettl3KO and Mettl3flox/flox mice underwent partial ligation of the carotid artery for 2 weeks. En face immunofluorescence staining of methyltransferase like 3 (METTL3) expression in ECs of the carotid artery of mice. Scale bar, 20 \u03bcm. (B) Quantification of the relative fluorescence intensity of METTL3. Data are shown as the mean \u00b1 SEM, *p<0.05 (one-way ANOVA with Bonferroni multiple comparison post hoc test). n = 5 mice. (C) Ultrasound images showing flow velocity profiles and revealing that partial ligation induces flow reversal (indicated by arrows) in the ligated coronary artery during diastole. Representative images at 0, 7th and 14th day after surgery are shown. n = 6. (D) Body weight of Apoe\u2013/\u2013Mettl3flox/flox and Apoe\u2013/\u2013 EC-Mettl3KO mice. Data are shown as the mean \u00b1 SEM, NS, not significant (Student\u2019s t test). n = 5. (E) Plasma levels of TG, CHO, LDL-C, and HDL-C. TG, triglycerides; CHO, total cholesterol; LDL-C, low-density lipoprotein-cholesterol; HDL-C, high-density lipoprotein-cholesterol. Data are shown as the mean \u00b1 SEM. n = 4.\n\n### Mettl3-deficient ECs accelerates atherosclerosis in Apoe-/- mice\n\nTo further detect the proatherogenic role of endothelial METTL3, we carried out a standard atherosclerosis study in Apoe-/- EC-Mettl3KO mice and Apoe-/- Mettl3flox/flox mice. After 12 weeks of WTD, Oil Red O staining of aortas revealed that, in comparison with Apoe-/- Mettl3flox/flox mice, Mettl3-deficient ECs significantly increased the total and AA atherosclerotic area in aortas (Figure 6A and B). Aortic root staining showed that Mettl3 deficiency increased the lesion area, lipid deposition, and macrophage infiltration, as well as EGFR and VCAM-1 expression, but had minimal effects on collagen fiber or vascular smooth muscle cell content (Figure 6C\u2013H). These results indicate that METTL3 is an important effector in EC activation and atherogenesis.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig6-v3.jpg)\n\n**Figure 6.:** Apoe-/-EC-Mettl3KO and Apoe-/-Mettl3flox/flox mice were fed a Western-type diet for 12 weeks. (A) Oil Red O staining of aortas. (B) Plaque area as a percentage of total area. AA, aortic arch; TA, thoracic aorta. Data are shown as the mean \u00b1 SEM, *p<0.05 (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 10. (C\u2013D) HE, Oil Red O, and Sirius Red immunofluorescence staining of aortic roots. White dashed line indicates the size of plaque. Quantification of plaque size, Oil Red O-positive area in plaque size, Oil Red O-positive area in plaque and collagen fiber (Sirius Red). Data are shown as the mean \u00b1 SEM, *p<0.05 (Student\u2019s t test). n = 8. (E and G) Epidermal growth factor receptor (EGFR), vascular adhesion molecule 1 (VCAM-1), vWF, \u03b1-SMA, and CD68 immunofluorescence staining of aortic roots. Scale bar, 20 \u03bcm. (F and H) Quantification of the relative fluorescence intensity of VCAM-1, EGFR, \u03b1-SMA, and CD68. Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (Student\u2019s t test). n = 5.\n\n### TSP1/EGFR signaling is involved in atherosclerosis\n\nTo investigate the function of the endothelial TSP1/EGFR axis in atherogenesis, the endothelium of Apoe-/- EC-Mettl3KO and Apoe-/- Mettl3flox/flox mice with a partially ligated carotid artery was infected with lentivirus-mediated Thbs1 shRNA. The knockdown efficiency of Thbs1 shRNA was confirmed by en face staining (Figure 7\u2014figure supplement 1A-B). Two weeks after ligation, the lesion area in Apoe-/- EC-Mettl3KO mice was significantly increased by 2.5-fold compared to that in Apoe-/- Mettl3flox/flox mice. However, Thbs1 knockdown successfully reversed the lesion area in both genotypes of mice (Figure 7A and B). The EGFR-selective tyrphostin AG1478 significantly reduced the phosphorylation of EGFR without affecting the total EGFR levels in both genotypes of mice (Figure 7\u2014figure supplement 1C-E). Consistent with Thbs1 knockdown, AG1478 exerted the same anti-atherosclerotic effect (Figure 7A and B). Both of them inhibited the expression of VCAM-1 induced by EC Mettl3 deficiency in partially ligated carotid artery (Figure 7C and D). The levels of plasma triglyceride and cholesterol were unchanged among the groups (Figure 7\u2014figure supplement 1F). These data indicate that endothelial Mettl3-mediated m6A in atheroprone regions is dependent upon TSP-1/EGFR in vivo.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig7-v3.jpg)\n\n**Figure 7.:** (A) An 8-week-old male Apoe\u2013/\u2013 Mettl3flox/flox and Apoe\u2013/\u2013 EC-Mettl3KO mice with 2 weeks of partial ligation were infused with the indicated lentiviruses or pretreated with AG1478 (AG, 10 mg/kg/day) for 7 days, and arterial tissues were isolated to examine atherosclerotic lesions. Scale bar: 1.5 mm. Ligated coronary arteries (LCAs) were sectioned for hematoxylin-eosin (H&E) staining. Scale bar: 100 \u03bcm. L, lumen; P, plaque. (B) Quantification of lesion area. Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 5 mice. (C) Apoe\u2013/\u2013 Mettl3flox/flox and Apoe\u2013/\u2013 EC-Mettl3KO mice with 2 weeks of partial ligation were infused with the indicated lentiviruses or pretreated with AG1478 (AG, 10 mg/kg/day) for 7 days. En face immunofluorescence staining of the expression of vascular adhesion molecule (VCAM-1) in ECs of the carotid artery of mice. Scale bar, 20 \u03bcm. (D) Quantification of the relative fluorescence intensity of VCAM-1. Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 6.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69906/elife-69906-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013B) EC-Mettl3KO and Mettl3flox/flox mice underwent partial ligation of the carotid artery for 2 weeks. During ligation, carotid arteries were infused with the indicated lentiviruses. En face GFP and immunofluorescence staining of the expression of thrombospondin-1 (TSP-1). Scale bar, 20 \u03bcm. (B) Quantification of the relative fluorescence intensity of TSP-1. Data are shown as the mean \u00b1 SEM, *p<0.05 (one-way ANOVA with Bonferroni multiple comparison post hoc test). n = 6. (C\u2013D) Apoe\u2013/\u2013Mettl3flox/flox and Apoe\u2013/\u2013 EC-Mettl3KO mice with 2 weeks of partial ligation were infused with the indicated lentiviruses or pretreated with AG1478 (AG, 10 mg/kg/day) for 7 days. En face immunofluorescence staining of the expression of p-EGFR and EGFR in ECs of the carotid artery of mice. Scale bar, 20 \u03bcm. (E) Quantification of the relative fluorescence intensity of p-EGFR and EGFR. Data are shown as the mean \u00b1 SEM, *p<0.05, NS, not significant (two-way ANOVA with Bonferroni multiple comparison post hoc test). n = 6. (F) Plasma levels of TG, CHO, LDL-C, and HDL-C. TG, triglycerides; CHO, total cholesterol; LDL-C, low-density lipoprotein-cholesterol; HDL-C, high-density lipoprotein-cholesterol. Data are expressed as the mean \u00b1 SEM. n = 6.\n\n## Discussion\n\nOur results reveal that RNA m6A modification plays an important role in regulating endothelial activation and the atherogenesis response to oscillatory flow. First, we found that m6A modification levels were reduced concomitant with downregulation of METTL3 in atheroprone regions. Second, oscillatory flow-derived MeRIP-seq analysis revealed that m6A modification of the EGFR 3\u2019UTR contributes to atherogenesis. Third, overexpression of METTL3 restored m6A modification and reversed VCAM-1 expression and the monocyte adhesion ability response to OS. Finally, TSP-1/EGFR inhibition prevented the development of atherosclerosis, suggesting a novel therapeutic method for atherosclerosis patients. Together, our findings demonstrate that METTL3 and m6A modifications could alleviate endothelial activation and atherogenesis through accelerated degradation of oscillatory flow-induced EGFR mRNA expression.\n\nAtherosclerotic plaques tend to develop in the vasculature locations with increased shear stress and OS. EC activation in response to oscillatory flow plays important roles in regulating circulatory functions and atherosclerosis development, which is involved in the expression of various genes (Li et al., 2019; Zhou et al., 2014). Recently, increasing evidence has suggested that m6A mRNA modi\ufb01cation participates in a number of biological functions and in progression of ECs (Shi et al., 2019; Wang et al., 2014; Xiang et al., 2017). In this study, we generated tamoxifen-inducible endothelium-specific Mettl3 deficiency mice with or without Apoe-/- background. Western blot analysis of arterial intima revealed decreased METTL3 in AA compared to TA in mice of both genotypes (Figure 2A). Overexpression of Mettl3 has potential protective effects on endothelial activation in atheroprone regions (Figure 2F), indicating the involvement of both m6A modification and METTL3 in atherogenesis.\n\nAs the core methyltransferase subunit, METTL3 has been reported to modulate embryonic development (Aguilo et al., 2015) and spermatogenesis (Xu et al., 2017), and its deletion in mice causes early embryonic lethality (Geula et al., 2015). METTL3 also plays a central role in osteogenic differentiation and inflammatory response (Wu et al., 2018; Zhang et al., 2019), which act similarly in ECs. METTL3 expression is upregulated during osteoblast differentiation and downregulated after LPS (lipopolysaccharide) stimulation, while its depletion enhances the expression of Smad genes and proinflammatory cytokine expression in MAPK and NF-\u03baB signaling pathways (Zhang et al., 2019). Chien et al. proposed that METTL3 is increased after long term of disturbed flow for 48 hr (Chien et al., 2021). We performed a short term of disturbed flow for 6 hr, and the mechanism research in genotype mice limited in 2 or 4 weeks. Furthermore, most evidence was demonstrated in EC-specific Mettl3 knockout mice. We presume a possibility that the differential expression of METTL3 is attributed to variations in the stimulus, such as treatment time and strength. The development of hematopoietic stem cells (HSPCs) also requires METTL3-mediated m6A modi\ufb01cation, and mettl3 deficiency in arterial endothelial cells blocks endothelial-to-hematopoietic transition, followed by suppression of the generation of HSPCs through activation of Notch signaling (Zhang et al., 2017). METTL3 plays a similar role in cerebral arteriovenous malformation, and deletion of METTL3 in ECs significantly affects angiogenesis by reducing heterodimeric Notch E3 ubiquitin ligase formed by DTX1 and DTX3L (Wang et al., 2020). METTL3 seems to be essential for maintaining endothelial function. Here, we analyzed RNA-seq and MeRIP-seq to reveal declined methylation and increased expression of cell adhesion- and migration-related pathways. Our results describe the role of m6A and METTL3 in atherogenic progression and identify therapeutic strategies against atherosclerosis through m6A modi\ufb01cation and its related targets.\n\nIt has been reported that EGFR plays a role in foam cell transformation and accelerates atherosclerotic lesions characterized by accumulation of smooth muscle cells and macrophages (Wang et al., 2017). Although EGFR is expressed at low levels in ECs, explosive elevation of transcription and phosphorylation of EGFR were detected after OS treatment (Figure 3D and Figure 4), consistent with a report from Rizvi et al., 2013. METTL3 binds to EGFR mRNA near the stop codon and is responsible for its m6A modification, modulating EGFR mRNA stability in human cancer cells (Lin et al., 2016). Chien et al. also pointed out EGFR as a hypomethylated gene in METTL3 knockdown under OS (Chien et al., 2021). Our results demonstrated that the EGFR 3\u2019UTR response to OS and double mutation of the 3\u2019UTR abolished the reduction induced by METTL3 overexpression in ECs (Figure 3), indicating that EGFR is responsible for m6A modification in response to OS treatment. EGFR is activated in response to its EGF-like repeats, such as TSP1, which require matrix metalloprotease activity, and the ligand-binding portion of the EGFR ectodomain (Liu et al., 2009). The EGFR signaling pathway was blocked by overexpression of METTL3 in response to OS and supplementation with TSP-1 (Figure 4A\u2013D). However, TSP-1 was not affected by METTL3 intervention, and we presume that TSP-1 acts as a specific ligand that activates EGFR after OS treatment. Moreover, the EGFR selective tyrphostin AG1478 inhibited EGFR phosphorylation at tyrosine 1068 without affecting the total levels of EGFR (Garg et al., 2011; Wang et al., 2017) and had an atheroprotective role (Wang et al., 2017). AG1478 reduced levels of p-EGFR and downstream proteins in the presence of OS, and Thbs1 shRNA and AG1478 reversed atherogenesis in partially ligated arteries in EC-Mettl3KO mice (Figure 4 and Figure 7).\n\nIn summary, we provide both in vitro and in vivo evidence demonstrating that m6A RNA modification regulates progression of EC activation in response to the onset of OS and subsequently, early atherogenesis. It should be noted that METTL3-modi\ufb01ed EGFR mRNA participates in the pathogenic mechanism of atherogenesis. The TSP-1/EGFR axis may contribute to m6A-modified atherogenesis, and inhibition of the axis helps to retard atherosclerosis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-METTL3(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 96,391</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-METTL14(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 51,104</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-METTL16(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 17,676</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-WTAP(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 56,501</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Virillizer(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 88,358</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-phospho-EGFR(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 3,777</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-EGFR(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 4,267</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-VCAM-1(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 15,631</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-VCAM-1(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 39,036</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-thrombospondin-1(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 37,879</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-\u03b1SMA(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 19,245</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-phospho-ERK(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 8,544</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-phospho-AKT(Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 5,012</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ERK(Mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Cat# sc-271269</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-AKT(Mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Cat# sc-5298</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- METTL3(Rabbit monoclonal)</td>\n      <td>Proteintech</td>\n      <td>Cat# 15073\u20131-AP</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- GFP(Rabbit monoclonal)</td>\n      <td>Proteintech</td>\n      <td>Cat# 50430\u20132-AP</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- GAPDH (Rabbit monoclonal)</td>\n      <td>Proteintech</td>\n      <td>Cat# 60004\u20131-Ig</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- EGFR (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab52894</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- VE-cadherin (Rat monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab33168</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- CD31(Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab24590</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- CD68(Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab955</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- vWF(Sheep monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab11713</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-thrombospondin-1(Mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab1823</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- thrombospondin-1 (Mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab1823</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alex 488-conjugated goat anti-rabbit antibody</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A-11008</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alex 594-conjugated goat anti-mouse antibody</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A-11008</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alex 488-conjugated goat anti-rabbit antibody</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A-11005</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alex 594-conjugated donkey anti-sheep antibody</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A-11016</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>AG1478</td>\n      <td>Selleck</td>\n      <td>Cat# S2728</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Recombinant Human Thrombospondin-1</td>\n      <td>Absin</td>\n      <td>Cat# abs 04665</td>\n      <td>1.03 mg/ml</td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>Human EGFR-3utr</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Sequences in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>Human EGFR</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Sequences in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>Human THBS1</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Sequences in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>Human GAPDH</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Sequences in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Ingenuity Pathway Analysis</td>\n      <td>National Clinical Research Center for Blood Diseases</td>\n      <td>http://www.ingenuity.com/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Prism version 8.0</td>\n      <td>GraphPadSoftware Inc</td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell Culture and Shear Stress Experiments\n\nHUVECs were isolated and cultured as described (He et al., 2018; Li et al., 2019). Mouse aortic endothelial cells (catalog no. CP-M075) and specific medium (CM-M075) were purchased from Procell (Wuhan, China). For flow experiments, confluent monolayers of HUVECs were seeded on glass slides, and a parallel plate flow system was used to impose oscillatory flow (0.5 \u00b1 4 dyn/cm2). THP-1 cells (ATCC, catalog TIB-202) were cultured with 1640 medium supplemented with 10% fetal bovine serum. The flow system was enclosed in a chamber held at 37\u00b0C and ventilated with 95% humidified air plus 5% CO2.\n\n### Recombinant Mettl3 adenovirus, adeno-associated virus, and THBS1 lentivirus construction\n\nAdenoviruses expressing green fluorescent protein and Ad-Flag-tagged human METTL3 (Ad-METTL3) were purchased from GeneChem (Shanghai, China). Recombinant AAV serotype nine vectors carrying METTL3 or empty vector were manufactured by GeneChem Co, Ltd (Shanghai, China). Lentiviruses carrying short hairpin RNA (shRNA) targeting Thbs1 (LV-shThbs1) and nonspecific shRNA (LV-shCtrl) were constructed by Shanghai Genechem Co (Shanghai). HUVECs were infected with adenovirus at a multiplicity of infection (MOI) of 10, and no detectable cellular toxicity was observed.\n\n### Western blot analysis\n\nCells or tissues were homogenized in cold RIPA lysis buffer supplemented with complete protease inhibitor cocktail and phosSTOP phosphatase inhibitor (Roche). Proteins were resolved by SDS-PAGE and transferred to NC membranes (Bio-Rad). Target proteins were detected using specific primary antibodies (1:1000). Bound antibodies were detected by horseradish peroxidase-conjugated secondary antibody (1:5000) and visualized by enhanced chemiluminescence (Cell Signaling Technology).\n\n### Cell adhesion assay\n\nTHP-1 cells were labeled with CellTrace calcein red-orange AM (Thermo Fisher catalog C34851) and then plated onto HUVEC plates at 2 \u00d7 106 cells/well. After incubation for 60 min at 37\u00b0C, nonadherent cells were removed by three washes with phosphate buffered saline (PBS). The numbers of stained adherent cells in five random fields were counted for each group under a fluorescence microscope.\n\n### Immunofluorescence staining\n\nArteries or aorta sections were fixed with 4% paraformaldehyde for 15 min. After permeabilization/blocking in 0.05% Triton X-100 (in PBS) and 1% bovine serum albumin (BSA) for 30 min at room temperature, aortas were incubated at 4\u00b0C overnight in incubation buffer containing 1% BSA and primary antibodies (1:100) against METTL3, p-EGFR, EGFR, VCAM-1, GFP, \u03b1SMA, CD68, vWF, TSP-1, and CD31. After washing in PBS three times, aortas were incubated with Alexa Fluor 488- or Alexa Fluor 594-conjugated secondary antibodies (1:200) for 1 hr at room temperature. Fluorescent signals were detected by using a Zeiss confocal laser scanning microscope.\n\n### Animals\n\nWe established tamoxifen-inducible EC-specific Mettl3-deficient (EC-Mettl3KO) and littermate control (Mettl3flox/flox) mice. Mice carrying the floxed Mettl3 allele mice were crossed with mice harboring Cre recombinase under the control of the Cdh5 promoter, which contained a tamoxifen-inducible EC-specific Cre. Tamoxifen was administered once every 24 hr for five consecutive days. All mice were on a C57BL/6 J background and were maintained under a 12:12 hr light/dark cycle (lights on at 7:00 and lights off at 19:00). The investigation conformed to the Guide for the Care and Use of Laboratory Animals by the US National Institutes of Health (NIH Publication No. 85\u201323, revised in 2011). All study protocols and the use of animals were approved by the Institutional Animal Care and Use Committee of Tianjin Medical University.\n\n### Animal experiments\n\nPartial ligation of carotid artery was performed as described (Zhang et al., 2020). The indicated mice were anesthetized by using isoflurane (2\u20133%). Carotid arteries of both sides were exposed by creating a ventral midline incision (4\u20135 mm) in the neck. The left external carotid, internal carotid, and occipital arteries were ligated and right external carotid as sham; the superior thyroid artery was left intact. Mice were monitored until recovery in a chamber on a heating pad after surgery. Mice were fed WTD for 2 and 4 weeks. For lentivirus infection studies, a single exposure of 5 \u00d7 105 TU adenovirus was lumenally delivered to the left carotid artery and kept inside for 40 min to allow for sufficient infection. The lentivirus solution was subsequently removed and blood flow was restored. For AAV9 infection studies, AAV9-TIEp-METTL3/empty vectors (3 \u00d7 1011 vector genomes/mice) were delivered by intravenous injection. One week after AAV9 delivery, partial ligation was performed. Mice were fed WTD immediately after the surgery for 2 weeks.\n\n### Quantification of lipid levels\n\nBlood samples were collected by tail bleeding into heparin-coated tubes. Plasma was separated by centrifugation. Total plasma cholesterol, triglycerides, low-density lipoprotein-cholesterol, and high-density lipoprotein-cholesterol levels were measured by using kits from BioSino Bio-Technology and Science Inc (Beijing, China).\n\n### Total RNA extraction and real-time quantitative PCR analysis\n\nTotal RNA was extracted from tissue and HUVECs using RNA extraction kits (TransGen Biotech, ER501-01, China). Complementary DNA was synthesized using reverse transcription using SuperScript III and random primers (Thermo Fisher, catalog 12574035, MA). Real-time qPCR was performed using the Brilliant II SYBR Green qPCR Master Mix (Stratagene, CA) and the ABI 7900HT Real-Time PCR System (Life Technologies, CA). The results were normalized to those of 18 S. Data were calculated using comparative Ct values. The primer sequences are listed in Supplementary file 3.\n\n### RNA purification and mRNA purification\n\nTotal RNA was extracted using TRIzol (Thermo Fisher), treated with Turbo DNase (Thermo Fisher), and then subjected to mRNA purification with the Dynabeads protein A mRNA purification kit (Thermo Fisher) following the manufacturer\u2019s instructions.\n\n### UHPLC-MRM-MS/MS analysis of mononucleotides\n\nAn amount of 200 ng purified mRNA of each sample was digested with 0.1 U Nuclease P1 (Sigma, catalog N863) and 1.0 U calf intestinal phosphatase (New England Biolabs, catalog M0290), in the final reaction volume of 50 \u03bcl and incubated at 37\u00b0C for over 5 hr. The mixture was then filtered with ultra-filtration tubes (MW cutoff: 3 KDa, Pall, Port Washington, NY) through centrifuging at 14,000 g for 20 min. The samples were subjected to UHPLC-MRM-MS/MS analysis for detection of m6A and rA. The UHPLC-MRM-MS/MS analysis was performed according to the previous report (Xiao et al., 2016).\n\n### RNA-seq\n\nRNA-seq libraries were directly constructed using the KAPA RNA HyperPrep Kit (KAPA Biosystems) following the manufacturer\u2019s instructions. Sequencing was performed on an MGISEQ-2000 platform with a single end 50 nt read length. Three replicates were used in RNA-seq studies.\n\n### MeRIP-seq\n\nMeRIP was performed according to previously described methods. First, 5 \u03bcg of anti-m6A antibody (Synaptic Systems, 202003) was incubated with 20 \u03bcL Dynabeads Protein A (Invitrogen, 1,001D) in 500 \u03bcL IPP (immunoprecipitation buffer) buffer (150 mM NaCl, 10 mM Tris-HCl, pH 7.4, 0.1% NP-40, 10 U RNase Inhibitor) at 4\u00b0C for 1 hr. Second, ~ 100 ng of fragmented mRNA was added to the antibody-bead mixture and incubated at 4\u00b0C for 4 hr with gentle rotation. After extensive washing with IPP buffer, high-salt wash buffer (500 mM NaCl, 10 mM Tris-HCl, pH 7.4, 0.1% NP-40), and low-salt wash buffer (50 mM NaCl, 10 mM Tris-HCl, pH 7.4, 0.1% NP-40), RNA fragments were eluted from the beads with proteinase K (Roche, 3115836001) digestion at 55\u00b0C for 1 hr and extracted with phenol-chloroform extraction and ethanol precipitation. The recovered RNAs were subjected to library preparation using the KAPA RNA HyperPrep kit (KAPA Biosystems, KK8541). Sequencing was performed on an Illumina HiSeq X-Ten platform with paired end 150 base pair (bp) read length.\n\n### Sequencing data analysis\n\nFor general preprocessing, SOAPnuke (version 1.5.2) and Trim Galore (version 0.6.4) were used to trim off the adapter sequences and low-quality bases for all samples. The remaining reads were aligned to the human genome (version hg19) using Hisat2 (version 2.0.5) (Kim et al., 2015), and only uniquely mapped reads with q \u2265 20 were used in subsequent analysis.\n\nFor MeRIP-seq, two biological replicates were conducted. The replicates of each sample were merged for m6A peak calling using MACS2 (version 2.1.4) (Zhang et al., 2008) with the corresponding input samples as a control. Default parameters were used, except for \u2018-nomodel \u2013keep dup all\u2019, to turn off fragment size estimation and to keep all uniquely mapped reads in MACS2. Finally, each peak was annotated based on Ensembl (release 72) gene annotation information using BETools intersectBed (version 2.28.0) (Quinlan and Hall, 2010). For RNA-seq, the number of reads mapped to each gene (Ensembl 72) was counted using featureCounts (version 1.6.2) (Liao et al., 2014) with the default parameters, except for \u2018-s 2\u2019.\n\n### Statistical analysis of differentially expressed genes and gene ontology analysis\n\nDifferentially expressed genes between ST and OS treatments were identified using DEGseq (Wang et al., 2010). Differentially expressed genes were identified by log2 |fold change| > log2 |1.5| and FDR < 0.05. GO analysis was performed using DAVID (https://david.ncifcrf.gov/), and p < 0.05 were considered significantly enriched.\n\n### Motif identification within m6A peaks and differential m6A peaks\n\nHOMER (version 4.7) (Heinz et al., 2010) was used to identify the motif enriched by the m6A peak, and the motif length was limited to seven nt. Peaks annotated to mRNA were considered target sequences, and background sequences were constructed by randomly perturbing these peaks using shuffleBed of BEDTools (version 2.28.0) (Quinlan and Hall, 2010). Based on the enrichment level, differential m6A peaks were identified as those with log2 |fold change| > log2 |1.5|.\n\n### Statistics\n\nSample sizes were designed with adequate power according to the literature and our previous studies. No sample outliers were excluded. Experiments were not randomized, and the investigators were not blinded to allocation during experiments or outcome assessment. The variance between the groups being statistically compared was similar. Data are presented as mean \u00b1 SEM. Statistical analysis was performed using GraphPad Prism 8. All the data with n \u2265 6 was tested for normality using the Shapiro-Wilk normality test. For normally distributed data, comparisons between two groups were performed using unpaired Student\u2019s t test, and comparisons among three or more groups were performed using one-way or two-way ANOVA followed by Bonferroni\u2019s multiple comparisons correction; For non-normally distributed data and the data with n < 6, Mann-Whitney U test or the Kruskal-Wallis test followed by Dunn\u2019s multiple comparison tests were performed as appropriate. For the immunofluorescence images, quantification was normalized as interest of district per area. Three to five images per aorta and region of interest of each image were used for analysis. In all experiments, p<0.05 was considered statistically significant.\n",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "46023451-a48b-415d-90aa-eac4ddd290c2",
+      "submission_id": "46b0c619-941f-49ae-8016-aba6dbc196eb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward A Fisher, https://ror.org/0190ak572 New York University Grossman School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69906.sa0](https://doi.org/10.7554/eLife.69906.sa0)\n\nMethylation of adenine residues in mRNA has been shown to be a regulator of many factors in heath and disease. In these studies, the authors present data that this modification of the mRNA for EGFR (epidermal growth factor receptor) through down regulation of the methylating enzyme METTL3 by shear stress is a contributor to vascular pathology in a model with some features of accelerated atherosclerosis.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Edward A Fisher, https://ror.org/0190ak572 New York University Grossman School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69906.sa1](https://doi.org/10.7554/eLife.69906.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"RNA N6-methyladenosine modulates endothelial atherogenic responses to disturbed flow\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nYou will see in the reviewers' comments numerous questions and suggestions. After consultation among the reviewers, we have listed the essential items that need to be addressed in a revised manuscript:\n\n1) The evidence that mettl3 is downregulated with shear stress is not convincing. The western blot in Figure1a shows very subtle differences in mettl3 and many would question how the change proposed here modulates physiologic changes in m6A levels. To be convincing the authors should measure m6A levels as noted in Reviewer 2, point #1. This can be done using a commercial kit or preferably mass spec which is widely available from many groups now. Reviewer 3 also was concerned about m6A levels, and noted that the lack of m6A changes in vivo needs to be resolved, since altered m6A levels are the proposed mechanism of action.\n\n2) The wild animals have almost undetectable mettl3 levels so they are practically\n\n\"Knockouts\". Then what is the basis for the huge differences in the plaque burden?\n\n5) What is the justification that the authors have to explain that all of the effects observed in AKT, ERK and VCAM-1 under OS are corrected by EGFR inhibition? The data supporting this conclusion is lacking.\n\n6) The discussion of the Chien et al. PNAS 2021 is very narrow, especially considering the major discrepancies between the studies. The authors only note that the difference in the in vitro studies may be from shorter vs. longer exposure to shear stress, but his cannot be the explanation for the discrepant results in vivo using similar models. Thus, a full comparison needs to be part of the Discussion.\n\n7) Also, there are a number of technical issues, including the lack of controls, the choice of HUVECS vs. more relevant aortic ECs, as well as statistical issues the reviewers have raised that need to be addressed.\n\nReviewer #1:\n\nThere is a lot of interesting information in this manuscript. Most of the studies in vivo have looked at METTL3 deficiency, so I think that the protective role of sustaining its expression in the ligation model should be explored in addition. Also, given the many RNAs found to be modified by METTL3, I find it surprising that it mainly comes down to EGFR in ECs, and that a major player is TSP1. TSP1, for example, has been investigated in atherosclerosis for its effects in two other major cells types in plaques, namely SMC and macrophages. Attributing all of its effects to what it does to ECs may reflect the model they use, which some consider as an \"advanced atherosclerosis\" process (it certainly has disturbed flow), but given that they have apoE-/- mice, a more standard atherosclerosis study could have been performed. Another technical note is that HUVECs are controversial in their direct relevance to arterial ECs. A final note is that there is a competing paper earlier this year in which some of the important results are discrepant, so there is a need for reconciling the findings.\n\nThe authors have provided a lot of detailed and interesting data to support their contention that the methylation of the RNA encoding EGFR is a major regulator of a vascular pathology related to atherosclerosis. There are some issues and gaps, however, in the story, including:\n\n1. A lot of the studies are done in HUVECs. Historically, this cell model has been used for EC studies, but it is well appreciated that the direct relevance to arterial ECs is not clear. Were studies in other cell models of ECs performed, with similar results for key findings replicated?\n\n2. TSP-1 has been studied for its effects on macrophages and SMCs, with reports to support its effects on atherosclerosis working through these cell types. The authors imply that all of the effects in their system is through the EC EGFR pathway. Is this perhaps a reflection of the ligation model they use? It has many notable differences from a standard model of atherosclerosis, so are the effects that seem to be confined to ECs model specific? With having apoE-/- mice available, I am surprised a standard atherosclerosis study was not performed.\n\n3. The overexpression of METTL3 in vitro appeared to be protective against OS. While the authors provide experimental data in vivo with siRNA to further knock it down, I would think that an in vivo protection study would be a valuable addition. Also, with regard to the lentivirus experiment, how was it excluded that effects on other cell types (besides ECs) were not contributory?\n\n4. THP-1 adhesion studies were done in some places, but the early studies referring to EC activation were based on the effects on adhesion molecules (e.g., VCAM). Some functional studies should have been done to show activation had a consequence on monocyte adhesion.\n\n5. What is the basis for the effects of METTL3 changes on EGFR phosphorylation and the other signaling molecules reported on?\n\n6. Going back to the specificity issue, there were many changes in the \"methylome\"- it is surprising that the major impact is exclusive to EGFR.\n\n7. How do the authors explain the differences with the findings in Chien et al. (PNAS 118:e2025070118, 2021)?\n\nReviewer #2:\n\nA notable strength of the current study is leveraging unbiased m6A interrogation approaches to decipher mechanisms of shear stress induced endothelial programming which is of substantial interest. Although others reported on generation of endothelial-specific Mettl3 KO, this is not a trivial endeavor and adds to the significance. It is difficult to ignore however that the most important conclusions of the paper were reported in a highly similar recent manuscript (Chien et al. PNAS. 2021). Notably the study from Shu Chien's group performed a rigorous interrogation of endothelial responses in response to oscillatory flow using eCLIP to map m6A sites, identified the reader protein involved and used a similar in vivo atherogenesis model perturbing Mettl3 to validate their findings. Implicating the EGFR signaling pathways and use of rescue/epistatic studies here is a novel aspect but the overall conceptual advance may be somewhat incremental.\n\n1. The authors claim that mettl3 levels are reduced in response to OS but they provide no evidence that the subtle changes in mettl3 in endothelial cells(see figure 1A) translates in to meaningful changes in m6A levels. Thus, a major limitation of the work is that there are no direct m6A measurements? The authors need to measure global m6A levels preferably by mass spectrometry under different conditions. Measurement of m6A levels should also be done in the mettl3 overexpression studies.\n\n2. Related to point#1, the proposed regulation of mettl3 in endothelial is opposite to previous work which showed that mettl3 is not downregulated and in fact upregulated in response to OS and other pro-atherogenic conditions (PMID: 33579825 and 32755566). The authors claim that these findings may be due to differences in conditions but this not well explored. The authors need to better consolidate their findings with previous work and ideally show experimentally the basis for Mettl3 regulation.\n\n3. There are important details missing for key studies. How many replicates were used for the m6A-seq studies? How are the peaks shown in Figure 3C normalized? Can the authors show additional m6A peaks in the supplement? Can the authors also show a more expanded list of enriched motifs under different conditions and not just the top one?\n\n4. Similar to the question above can the authors provide more details on number of replicates for RNA-seq study?\n\n5. For some panels there appears to be dramatic differences in Mettl3 levels in the in vivo model. For example, in IHC staining shows that Mettl3 is almost completely absent in the LCA model (Figure 2D, and Supp Figure 5A). How do authors explain the big differences in plaque burden in Figure 5 if control animals are practically Mettl3 deficient? Curiously staining for Mettl3 is absent in figure 5.\n\n6. The differences in motifs show in Figure 3B is an interesting finding but the physiologic significance of this finding is unclear since it invokes that the \"interactome\" of methyltransferase complex may be different depending on conditions which is not proven. Suggest minimizing this point in the text since its seems distracting.\n\n7. Ref cited twice p28 line 7 and 10.\n\n8. Please provide legends for abbreviations in figures.\n\nReviewer #3:\n\nIn the present work, Bochuan Li et al. studied the role of endothelial RNA N6-methyladenosine in atherogenesis. Using in vitro and in vivo approaches, Li and collaborators have shown that disturbed flow decreases the expression of methyltransferase METTL3 in endothelial cells. METTL3 is the enzyme responsible for nearly all the N6-methyladenosin (m6A) addition in mRNAs. Using in vitro methods, the authors show that under conditions of shear stress, human umbilical vein endothelial cells (HUVECs) demonstrate reduced m6A modification in the EGFR mRNA, which they associate with reduced EGFR mRNA degradation. Additionally, the authors used partial ligation of the left common carotid artery, which is an animal model of disturbed flow, to show that METTL3 expression is decreased with increased EGFR levels in the endothelium. They also demonstrate that the increase in EGFR expression promotes vascular inflammation and atherosclerosis by upregulating vascular adhesion molecule 1 (VCAM-1). These findings were also observed using a METTL3 endothelial cell specific knockout animal model. Furthermore, both overexpression of METTL3, or pharmacological inhibition of EGFR signaling, reduced VCAM-1 expression. Based on these results, the authors conclude that vascular inflammation in areas with disturbed flow is regulated by mRNA m6A modification, and that METTL3-mediated EGFR mRNA modification participates in the pathogenic mechanism of atherogenesis.\n\nThe major strength of this study is that the authors used a variety of in vitro and in vivo models, combining genetic approaches (METTL3 specific KO and the overexpression of METTL3), and pharmacological approaches, to show that there is a role for METTL3 and EGFR in atherogenesis.\n\nDespite many of the strengths that this work has, there are several key weaknesses that make their conclusions less convincing and will require additional experimentation to resolve. In particular, there are significant differences between the effect of perturbed flow on METLL3 expression observed in vitro and in vivo. While in vivo data showed a dramatic reduction of METTL3, the in vitro data showed a modest reduction in enzyme levels, and there was no difference in m6A modification between cells treated with normal or disturbed flow. The lack of m6A changes is most problematic and needs to be resolved, since altered m6A levels are the proposed mechanism of action. Fundamentally, it is not clear whether the in vitro perturbed flow model recapitulates the key properties of in vivo perturbed flow, or whether the in vivo effect is due to features other than altered flow.\n\nAnother factor that makes it difficult to interpret these data concerns the way that overexpression or silencing by lentiviral vector infection was carried out, including a lack of control studies. There are no data demonstrating that overexpression or silencing only occurs in the endothelium layer (which itself is doubtful). Therefore, it is difficult to interpret these results when it is possible that there are contributions from other cell compartments within the aortic wall, including vascular smooth muscle cells and recruited leukocytes. To more fully understand the results of this study, a more detailed description of the methods is needed, and a greater discussion of the study's findings is necessary. In addition, it is not clear how the quantification of fluorescence was done. Importantly, a proper statistical analysis is critical to evaluate these findings and determine whether certain conclusions are warranted. Another issue that needs to be corrected concerns the small number of animals used in each experiment. With the small number of animals used, it is not certain if the data follows a normal distribution prior to applying a parametric analysis (T-test or ANOVA). It is also not clear whether it is appropriate to to use the standard error of the mean (SEM) rather than standard deviation (SD) in many of these studies. SD seems to be proper analysis based on descriptions in experimental methods.\n\nThe work presented by Li et al. is meaningful and has a potential to be published, but at the present time it is incomplete and will require additional experimentation and clarification.\n\n1. It will be more relevant for the study if the in vitro experiments are performed on aortic endothelial cells rather than HUVECs, especially since the authors are comparing and making correlations between in vivo and in vitro studies. in vivo studies are of course investigating aortic endothelial cells.\n\n2. The lack of effect on m6A modification between cells treated with normal or disturbed flow is disconcerting, since that it is the activity of METTL3 that is proposed to be the mediator of the effects in this study. Consequently, assuming these data are correct, the authors should examine if there is an increase in METTL16 that could account for the fact that with lower METTL3 levels there are no changes in m6A levels. Another possible explanation could be that the remaining METTL3 enzyme is sufficient to carry out methyltransferase activity, or that loss of m6A requires considerably greater amount of time than considered in these studies. In that case, it would be important to add a METTL3 knockdown study as a control. A METTL3 knockdown would help to determine which changes in mRNA expression are due to METTL3 downregulation in OS conditions.\n\n3. In Figure 3F, it is important to show the effect of METTL3 knockdown on EGFR mRNA stability. It is possible that the increase in the EGFR mRNA under OS could be a transcriptional effect. It needs to be determined whether under OS conditions, EGFR mRNA has a slower decay rate.\n\n4. The authors showed that OS increases EGFR expression and signaling in HUVECs. Additionally, they showed that the activation of EGFR under OS increases AKT and ERK phosphorylation and an increase in VCAM-1 expression. Overexpression of METTL3 avoids the effects previously described and silencing of METLL3 recapitulates OS effects, and inhibition of EGFR phosphorylation with AG1478 impaired AKT and ERK phosphorylation and VCAM-1 expression under OS conditions. However, it is not clear why VCAM-1 protein levels increase under OS or with METTL3 silencing, and this needs to be resolved. Is it NF-\u03baB or AP-1 mediated? What is the justification that the authors have to explain that all of the effects observed in AKT, ERK and VCAM-1 under OS are corrected by EGFR inhibition? The data supporting this conclusion is lacking. The authors seem to be suggesting that OS is sensed by HUVECs in an EGFR-mediated manner exclusively? That seems difficult to believe, and needs to be supported by additional evidence. Also, METTL3 overexpression and silencing must be demonstrated by immunoblots in Figure 4.\n\n5. For the experiments with partial ligation of the left common carotid artery in which METTL3 endothelial cell specific knockout animals were used, the authors need to provide representative images of the immunofluorescence in the RCA of KO animals. This should also be quantified and compared statistically.\n\n6. There is considerable background in a number of the images that makes it difficult to distinguish signal from noise, especially for CD31 (Figure 5). Because of this issue, it is difficult to conclude that VCAM-1 colocalizes with CD31 positive cells. Proper unambiguous staining is critical to demonstrate that the increase in VCAM-1 is in the endothelium and it is not also increasing in other cells like vascular smooth muscle cells that under inflammatory conditions express VCAM-1 as well. The best approach is to carry out staining in cross sections like the HandE staining studies. That way it will be clear if VCAM-1 expression is occurring exclusively in the endothelium.\n\n7. For all studies in which overexpression or silencing was carried out, the staining should be shown in cross sections to demonstrate that the silencing or overexpression is limited to the endothelium and not to the intima or the media of the aortic wall. Was the silencing or overexpression homogenous along the whole endothelium?\n\n8. Perturbed flow occurs naturally along the aorta, as the authors mentioned. One of these areas is the aortic root, in which atherosclerotic plaques are formed in pro-atherogenic mouse models (like the animal model the authors used for this study). Thus, it will be very informative to show what happens in Apoe-/-EC-Mettl3KO versus Apoe-/-Mettl3flox/flox, with EGFR, METTL3 and VCAM-1 expression. What is the state of macrophage accumulation (CD68 staining), lipid accumulation (ORO staining), and vascular smooth muscle cell accumulation, and fibrous cap formation (ACTA2 staining) in the aortic root? This experiment will address the variability that is an issue in the partial ligation intervention studies, including local inflammation due to the procedure.\n\n9. To use parametric tests like T-test or ANOVA, the data must follow a normal distribution. If data does not follow a normal distribution, then non-parametric tests should be carried out. Based on the methods section, it does not seem that the authors used any test to first check for data distribution, and therefore they may have applied the wrong statistical analysis. This point needs to be addressed. Also, the authors should justify why they represented their data as SEM instead as SD, especially for the animal experiments. They should explain in the methods section how they acquired the images and carried out quantification, with justification of the statistical analyses used. For the immunofluorescence studies, it will be necessary to normalize the intensity by area or by number of cells. Also, it will be important to describe how many images per aorta were used for analysis and the size of the areas analyzed by microscopy.\n",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "27113926-9d83-4c88-8a85-e1a8bd807813",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C1",
+      "claim": "Atherosclerosis preferentially occurs in atheroprone vasculature where human umbilical vein endothelial cells are exposed to disturbed flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Atherosclerosis preferentially occurs in atheroprone vasculature where human umbilical vein endothelial cells are exposed to disturbed flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that draws from established scientific knowledge about atherosclerosis and disturbed flow.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "6b2d9c4f-e219-401d-8149-c52f14d5dfd7",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C2",
+      "claim": "N6-methyladenosine (m6A) is the most prevalent internal modification of eukaryotic mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "N6-methyladenosine (m6A) is the most prevalent internal modi\ufb01cation of eukaryotic mRNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Roundtree et al., 2017 in the Introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "34b08420-fa9f-44d5-acbe-6a65c613f7ad",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C3",
+      "claim": "Oscillatory stress (OS) reduced the expression of methyltransferase like 3 (METTL3), the primary m6A methyltransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillatory stress (OS) reduced the expression of methyltransferase like 3 (METTL3), the primary m6A methyltransferase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B-E and western blot analysis described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "9fcd6238-c819-463b-8747-c69de3d38b6e",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C4",
+      "claim": "m6A modification of the EGFR 3' untranslated regions (3'UTR) accelerated its mRNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "m6A modification of the EGFR 3' untranslated regions (3'UTR) accelerated its mRNA degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from actinomycin D treatment experiments shown in Figure 3F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "375ded7c-6b5e-4591-be28-2f2addc7bb29",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C5",
+      "claim": "Double mutation of the EGFR 3'UTR abolished METTL3-induced luciferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Double mutation of the EGFR 3'UTR abolished METTL3-induced luciferase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 3I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "d532e7ac-83f8-4f47-aa5b-8808ac61512f",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C6",
+      "claim": "Adenovirus-mediated METTL3 overexpression significantly reduced EGFR activation and endothelial dysfunction in the presence of OS.",
+      "claim_type": "EXPLICIT",
+      "source": "Adenovirus-mediated METTL3 overexpression significantly reduced EGFR activation and endothelial dysfunction in the presence of OS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4A-B and immunofluorescence data in Figure 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "8c240eae-776e-4a90-8b95-c55925d88327",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C7",
+      "claim": "Thrombospondin-1 (TSP-1) was specifically expressed in atheroprone regions without being affected by METTL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, thrombospondin-1 (TSP-1), an EGFR ligand, was specifically expressed in atheroprone regions without being affected by METTL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5A-D and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "bca9c9b0-fd6d-4973-a08f-a071bbf70996",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C8",
+      "claim": "Inhibition of the TSP-1/EGFR axis by using shRNA and AG1478 significantly ameliorated atherogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of the TSP-1/EGFR axis by using shRNA and AG1478 significantly ameliorated atherogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by lesion area quantification data shown in Figure 7A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "26c20c24-c946-4527-9f31-53a2be670524",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C9",
+      "claim": "OS significantly decreased m6A modification in HUVECs.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that OS significantly decreased m6A modification in HUVECs (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by UHPLC-MRM-MS analysis data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "f8f27a45-a0ec-4de3-b881-98a9d272a363",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C10",
+      "claim": "Western blot analysis detected a significantly decrease of METTL3 and Virillizer after OS stimulation, without affecting other m6A modulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis detected a significantly decrease of METTL3 and Virillizer after OS stimulation, without affecting other m6A modulators (Figure 1B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "154cfd07-8f11-4e92-a509-5c329a824e3a",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C11",
+      "claim": "METTL3 and Virilizer were significantly decreased in AA tissue lysates than in TA region, whereas METTL14 and WTAP were not changed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, to analyze the m6A modulators in atheroprone (aortic arch [AA]) and atheroprotective (thoracic aorta [TA]) regions, we performed western blot analysis and found that METTL3 and Virilizer were significantly decreased in AA tissue lysates than in TA region, whereas METTL14 and WTAP were not changed (Figure 1\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "3ee66836-2ef0-4897-b8f8-bd0802995429",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C12",
+      "claim": "In the inner curvature and bifurcation of AA, where blood flow is disturbed, METTL3 was dramatically decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in the inner curvature and bifurcation of AA, where blood flow is disturbed, METTL3 was dramatically decreased (Figure 1F and G; Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence staining data shown in Figure 1F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "f3766095-7710-4d2f-9a27-0904943db05c",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C13",
+      "claim": "METTL3 was weakly expressed in LCA after 1 and 2 weeks compared with RCA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the AA, as compared with right common carotid artery (RCA), METTL3 was weakly expressed in LCA after 1 and 2 weeks (Figure 1\u2014figure supplement 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1\u2014figure supplement 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "6f989cfc-20ed-4048-a740-5cfc781e7b7b",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C14",
+      "claim": "The protein levels of METTL3 were decreased in AA intima tissue lysates compared to TA in Mettl3flox/flox mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein levels of METTL3 were decreased in AA intima tissue lysates compared to TA in Mettl3flox/flox mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "9fc8887b-c0ee-472e-b3e8-3dc7e351d29e",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C15",
+      "claim": "The level of the EC activation marker VCAM-1 was significantly increased in AA intima tissue lysates compared to TA intima lysates in both Mettl3flox/flox mice and EC-Mettl3KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of the EC activation marker VCAM-1 was significantly increased in AA intima tissue lysates compared to TA intima lysates in both Mettl3flox/flox mice and EC-Mettl3KO mice (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "f7440f2c-3d54-48b6-8566-63c1108d4ccf",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C16",
+      "claim": "En face immunofluorescence staining of LCA revealed reduced protein levels of METTL3 and enhanced levels of VCAM-1 in EC-Mettl3KO mice compared to RCA 2 weeks after ligation.",
+      "claim_type": "EXPLICIT",
+      "source": "En face immunofluorescence staining of LCA revealed reduced protein levels of METTL3 and enhanced levels of VCAM-1 in EC-Mettl3KO mice compared to RCA 2 weeks after ligation (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "4fd5d439-a3f6-4afb-91c8-5e7c20513262",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C17",
+      "claim": "Overexpression of METTL3 in ECs by adeno-associated virus (AAV9-METTL3 OE) inhibited VCAM-1 expression induced by partial ligation in LCA endothelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of METTL3 in ECs by adeno-associated virus (AAV9-METTL3 OE) inhibited VCAM-1 expression induced by partial ligation in LCA endothelium (Figure 2F and G; Figure 2\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "38eb9e6b-9b83-444b-8e5d-fcb387da9bcc",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C18",
+      "claim": "10,515 and 10,580 m6A peaks were identified in ST and OS, respectively, all of which were enriched in coding regions, 3' untranslated regions (3'UTRs), and near stop codons.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 10,515 and 10,580 m6A peaks in ST and OS, respectively, all of which were enriched in coding regions, 3' untranslated regions (3'UTRs), and near stop codons (Figure 3A; Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MeRIP-seq data shown in Figure 3A and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "2ce71d72-40f8-4aaa-b025-78939dd15ce6",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C19",
+      "claim": "The m6A motifs identified in OS and ST were significantly enriched in GGACU.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that the m6A motifs identified in OS and ST were significantly enriched in GGACU (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by motif analysis data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "321e5e8f-06ad-488b-9940-9a803e98453e",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C20",
+      "claim": "Genes with downregulated m6A peaks were significantly enriched in transcription regulation- and cell-cell and membrane adhesion-related pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we identified thousands of dysregulated m6A peaks induced by OS (Figure 3\u2014figure supplement 1B; Supplementary file 1), and genes with downregulated m6A peaks were significantly enriched in transcription regulation- and cell-cell and membrane adhesion-related pathways (Figure 3\u2014figure supplement 1C, upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "41c1a7cf-31db-4ebd-9ff0-8a9f3862dba9",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C21",
+      "claim": "547 consistently upregulated genes were identified upon OS.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 547 consistently upregulated genes (Figure 3\u2014figure supplement 1D-F) upon OS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3\u2014figure supplement 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "ab5db35a-cd13-417a-b395-bbc3e5e06c51",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C22",
+      "claim": "EGFR was identified as a potential key regulator participating in OS-enhanced gene ontology (GO) pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the IPA analysis, we identified EGFR as a potential key regulator participating in OS-enhanced gene ontology (GO) pathways (Figure 3\u2014figure supplement 1D; Supplementary file 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by IPA analysis of MeRIP-seq and RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "4eafe8b3-f2b6-42fd-a73a-93273878d3a5",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C23",
+      "claim": "The ratio of EGFR (IP/input) was reduced in OS compared to ST.",
+      "claim_type": "EXPLICIT",
+      "source": "which was further confirmed by the reduced ratio of EGFR (IP/input) in OS compared to ST (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MeRIP-seq data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "fcd60e76-fba0-4845-836c-44e48ff52352",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C24",
+      "claim": "EGFR mRNA levels were significantly increased in OS compared to ST.",
+      "claim_type": "EXPLICIT",
+      "source": "We also validated the significantly increased EGFR mRNA levels (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "37a8e4ca-14f9-479f-ae45-025f2d98dda7",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C25",
+      "claim": "m6A enrichment on EGFR mRNA was decreased in OS compared to ST.",
+      "claim_type": "EXPLICIT",
+      "source": "and decreased m6A enrichment in OS compared to ST by MeRIP-quantitative PCR (qPCR) (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MeRIP-qPCR data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "aa3b87ba-1130-4e31-a384-ad468c00cff1",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C26",
+      "claim": "METTL3 overexpression significantly decreased the remaining EGFR mRNA levels due to accelerated mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the green fluorescent protein (GFP) control, METTL3 overexpression significantly decreased the remaining EGFR mRNA levels due to accelerated mRNA decay in the presence of functional m6A modification by overexpression of METTL3 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by actinomycin D chase assay data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "dfd1d121-2851-475c-a949-d4a54490d235",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C27",
+      "claim": "EGFR mRNA showed a slower decay rate in response to METTL3 knockdown or OS treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, EGFR mRNA showed a slower decay rate in response to METTL3 knockdown or OS treatment (Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by actinomycin D chase assay data shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "0be2145e-34ba-4640-bb36-234bf25d4201",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C28",
+      "claim": "The 3'UTR mutants did not respond to the decrease in luciferase activity caused by overexpression of METTL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the 3'UTR mutants did not respond to the decrease in luciferase activity caused by overexpression of METTL3 (Figure 3I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 3I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "a6a97334-3682-489c-8b0a-3aeac013f071",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C29",
+      "claim": "Overexpression of METTL3 abolished phosphorylation of EGFR (Tyr-1068), AKT, and ERK, as well as total EGFR and VCAM-1 levels in response to OS.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of METTL3 abolished phosphorylation of EGFR (Tyr-1068), AKT, and ERK, as well as total EGFR and VCAM-1 levels in response to OS (Figure 4A and B; Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "5fdfa303-d51c-4916-8bbe-b0beb6fe5c6f",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C30",
+      "claim": "TSP-1 was significantly increased at both the mRNA and protein levels under OS.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, TSP-1 was significantly increased at both the mRNA and protein levels under OS (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot and qPCR data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "41c86020-9649-420b-b626-7cdd763310f9",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C31",
+      "claim": "Supplementation with recombinant human TSP-1 didn't change EGFR protein levels but enhanced EGFR phosphorylation which could be abolished by METTL3 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Supplementation with recombinant human TSP-1 didn't change EGFR protein levels but enhanced EGFR phosphorylation which could be abolished by METTL3 overexpression (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "671d0182-0629-42b6-912e-03f8fc1c1f65",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C32",
+      "claim": "AG1478 blocked both OS and siMETTL3-mediated phosphorylation of EGFR, AKT, and ERK and VCAM-1 levels, had no effect on total EGFR expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, ECs were subjected to OS or METTL3 siRNA in the presence of the EGFR-selective tyrphostin AG1478, which blocked both OS and siMETTL3-mediated phosphorylation of EGFR, AKT, and ERK and VCAM-1 levels, had no effect on total EGFR expression (Figure 4E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "b3408a3e-868c-4db5-b58f-0bf25875001e",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C33",
+      "claim": "The increased number of THP-1 cells adhering to HUVECs by OS or siMETTL3 was relieved in the presence of overexpression of METTL3 or AG1478.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased number of THP-1 (human myeloid leukemia mononuclear) cells adhering to HUVECs by OS or siMETTL3 was relieved in the presence of overexpression of METTL3 or AG1478 (Figure 4F and H; Figure 4\u2014figure supplement 1C-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell adhesion assay data shown in Figure 4F and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "6f9ce175-8dd8-4b1d-8b2d-e351be726c8a",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C34",
+      "claim": "Overexpression of METTL3 inhibited EGFR expression induced by EC Mettl3 deficiency in partially ligated carotid artery but had no effect on TSP-1 levels with partial ligation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of METTL3 inhibited EGFR expression induced by EC Mettl3 deficiency in partially ligated carotid artery but had no effect on TSP-1 levels with partial ligation (Figure 5A\u2013D; Figure 2\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "26e7b68d-142b-4072-847c-7ba6b89485e5",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C35",
+      "claim": "The lesion areas in the ligated carotid artery were more serious in Apoe-/- EC-Mettl3KO mice than in Apoe-/- Mettl3flox/flox mice at both 2 and 4 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "The lesion areas in the ligated carotid artery were more serious in Apoe-/- EC-Mettl3KO mice than in Apoe-/- Mettl3flox/flox mice at both 2 and 4 weeks (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by lesion area quantification data shown in Figure 5E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "6b750dd3-8196-4b89-9a73-3784b64d9d93",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C36",
+      "claim": "The levels of plasma triglyceride and cholesterol and body weight did not change among the groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The levels of plasma triglyceride and cholesterol and body weight did not change among the groups (Figure 5\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by plasma lipid and body weight measurements shown in Figure 5\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "b60cf3af-f7da-47d4-a03a-7592e10d1149",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C37",
+      "claim": "In comparison with Apoe-/- Mettl3flox/flox mice, Mettl3-deficient ECs significantly increased the total and AA atherosclerotic area in aortas.",
+      "claim_type": "EXPLICIT",
+      "source": "Oil Red O staining of aortas revealed that, in comparison with Apoe-/- Mettl3flox/flox mice, Mettl3-deficient ECs significantly increased the total and AA atherosclerotic area in aortas (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Oil Red O staining data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "625e60fa-990f-401e-9730-c2fd7e435e7e",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C38",
+      "claim": "Mettl3 deficiency increased the lesion area, lipid deposition, and macrophage infiltration, as well as EGFR and VCAM-1 expression, but had minimal effects on collagen fiber or vascular smooth muscle cell content.",
+      "claim_type": "EXPLICIT",
+      "source": "Aortic root staining showed that Mettl3 deficiency increased the lesion area, lipid deposition, and macrophage infiltration, as well as EGFR and VCAM-1 expression, but had minimal effects on collagen fiber or vascular smooth muscle cell content (Figure 6C\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological staining and immunofluorescence data shown in Figure 6C-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "1cc6a746-f7c2-4e33-8134-c3e488a41502",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C39",
+      "claim": "The lesion area in Apoe-/- EC-Mettl3KO mice was significantly increased by 2.5-fold compared to that in Apoe-/- Mettl3flox/flox mice two weeks after ligation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two weeks after ligation, the lesion area in Apoe-/- EC-Mettl3KO mice was significantly increased by 2.5-fold compared to that in Apoe-/- Mettl3flox/flox mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by lesion area quantification data shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "839bf1e4-d357-4fe9-9b5c-f211bd209bd2",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C40",
+      "claim": "Thbs1 knockdown successfully reversed the lesion area in both genotypes of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Thbs1 knockdown successfully reversed the lesion area in both genotypes of mice (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by lesion area quantification data shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "d005e436-f135-4a0e-a666-18739dee56e4",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C41",
+      "claim": "AG1478 significantly reduced the phosphorylation of EGFR without affecting the total EGFR levels in both genotypes of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The EGFR-selective tyrphostin AG1478 significantly reduced the phosphorylation of EGFR without affecting the total EGFR levels in both genotypes of mice (Figure 7\u2014figure supplement 1C-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 7\u2014figure supplement 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "a1e0de2f-c1e4-4f93-ad84-8f404af3504b",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C42",
+      "claim": "AG1478 exerted the same anti-atherosclerotic effect as Thbs1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Thbs1 knockdown, AG1478 exerted the same anti-atherosclerotic effect (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by lesion area quantification data shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "bdf80f43-236e-4133-b055-3e35e79db845",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C43",
+      "claim": "Both Thbs1 knockdown and AG1478 inhibited the expression of VCAM-1 induced by EC Mettl3 deficiency in partially ligated carotid artery.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of them inhibited the expression of VCAM-1 induced by EC Mettl3 deficiency in partially ligated carotid artery (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "fe414444-d604-4314-86ad-52a73773079d",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C44",
+      "claim": "m6A modification is reversible and is catalyzed by a multicomponent methyltransferase complex consisting of various methyltransferases including methyltransferase like 3 (METTL3), METTL14, Wilms tumor 1-associated protein (WTAP), and KIAA1429 (Virilizer), and is erased by demethylases such as fat mass and obesity-associated protein or \u03b1-ketoglutarate-dependent dioxygenase alk B homolog 5.",
+      "claim_type": "EXPLICIT",
+      "source": "This modification is reversible and is catalyzed by a multicomponent methyltransferase complex consisting of various methyltransferases including methyltransferase like 3 (METTL3), METTL14, Wilms tumor 1-associated protein (WTAP), and KIAA1429 (Virilizer), and is erased by demethylases such as fat mass and obesity-associated protein or \u03b1-ketoglutarate-dependent dioxygenase alk B homolog 5 (Shi et al., 2019; Huang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Shi et al., 2019 and Huang et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "b7373d4a-5d2c-4667-8d9d-b60a6b579e55",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C45",
+      "claim": "m6A on mRNAs plays an important role in regulating cellular processes, including RNA stability, translation efficiency, RNA secondary structure, subcellular localization, alternative polyadenylation, and splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, m6A on mRNAs plays an important role in regulating cellular processes, including RNA stability, translation ef\ufb01ciency, RNA secondary structure, subcellular localization, alternative polyadenylation, and splicing (Liu et al., 2015; Wang et al., 2015; Zaccara et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Liu et al., 2015; Wang et al., 2015; Zaccara et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "4803b5a7-0fa0-4c64-bca8-6e000d6a1552",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C46",
+      "claim": "METTL14 functions as the target recognition subunit by binding to RNA and then recruits METTL3 to catalyze m6A formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the methyltransferase complex, METTL14 functions as the target recognition subunit by binding to RNA and then recruits METTL3 to catalyze m6A formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about the m6A methyltransferase complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "0f4aaa79-5073-47e2-98a8-0cc2ee1fd691",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C47",
+      "claim": "Wilms tumor 1-associated protein (WTAP) is a regulatory subunit required for the accumulation of METTL3 and METTL14 into nuclear speckles.",
+      "claim_type": "EXPLICIT",
+      "source": "Wilms tumor 1-associated protein (WTAP) is a regulatory subunit required for the accumulation of METTL3 and METTL14 into nuclear speckles (Ping et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Ping et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "a448af6e-3132-4ed2-8f44-4a98a0b71af3",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C48",
+      "claim": "KIAA1429 guides region-selective m6A methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "KIAA1429 guides region-selective m6A methylation (Yue et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Yue et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "8097079b-ec68-478b-8840-fa2c0fde8305",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C49",
+      "claim": "METTL3 has been demonstrated to modulate key physiological processes, including spermatogenesis, cell reprogramming, and embryonic stem cell chromatin modification.",
+      "claim_type": "EXPLICIT",
+      "source": "As the core methyltransferase subunit, METTL3 has been demonstrated to modulate key physiological processes, including spermatogenesis (Xu et al., 2017), cell reprogramming (Chen et al., 2015), and embryonic stem cell chromatin modification (Liu et al., 2021; Xu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Xu et al., 2017; Chen et al., 2015; Liu et al., 2021; Xu et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "85e0eacb-8153-49d8-8e49-1f5559671d12",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C50",
+      "claim": "Atherosclerosis is the leading cause of CVD resulting in high rate of mortality in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Atherosclerosis, resulted from endothelial dysregulation in the arterial wall (Geovanini and Libby, 2018), is the leading cause of CVD resulting in high rate of mortality in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Geovanini and Libby, 2018 and draws from established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "fc83c4b1-fb87-4222-b7f7-e1c319897844",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C51",
+      "claim": "Atherosclerosis preferentially develops at branches and curvatures in the arterial tree where flow is disturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "Atherosclerosis preferentially develops at branches and curvatures in the arterial tree where flow is disturbed (Davies, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Davies, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "7daa6031-67dd-4b70-b437-c9ebe01c0e98",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C52",
+      "claim": "Disturbed flow pattern increases inflammatory response in ECs, including the expression of intercellular adhesion molecule 1 and vascular adhesion molecule 1 (VCAM-1).",
+      "claim_type": "EXPLICIT",
+      "source": "Disturbed flow pattern increases inflammatory response in ECs, including the expression of intercellular adhesion molecule 1 and vascular adhesion molecule 1 (VCAM-1) (Humphrey et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Humphrey et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "46afd88e-78fb-40d8-ba40-87601c208cbe",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C53",
+      "claim": "Oscillatory stress (OS) could modulate atherosclerosis development by inducing the expression of DNA methyltransferases and histone modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have reported that oscillatory stress (OS) could modulate atherosclerosis development by inducing the expression of DNA methyltransferases (Dunn et al., 2014) and histone modifications (Hastings et al., 2007), indicating the involvement of epigenetic mechanisms in the regulation of atherogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Dunn et al., 2014 and Hastings et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "df4c4eee-bbd8-4bc3-bdc7-67323c02c80d",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C54",
+      "claim": "TSP-1 is a shear-sensitive protein important for the regulation of vascular remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have shown that thrombospondin-1 (TSP-1, encoded by THBS1) is a shear-sensitive protein important for the regulation of vascular remodeling (Ni et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Ni et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "24b93d7a-77e7-442c-8712-1e816d4a0128",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C55",
+      "claim": "TSP-1 can induce dysregulated blood flow, impaired vessel dilation, and increased vascular tone followed by arterial stiffening.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, TSP-1 can induce dysregulated blood flow, impaired vessel dilation, and increased vascular tone Cs\u00e1nyi et al., 2012 followed by arterial stiffening (Kim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Cs\u00e1nyi et al., 2012 and Kim et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "8a634d17-3c76-4e84-b074-9b49cd3a2aa5",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C56",
+      "claim": "Thbs1 deficiency prevented lesion formation in Apoe-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Thbs 1 deficiency prevented lesion formation in Apoe-/- mice (Ganguly et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Ganguly et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "16d7af64-fd3d-454a-8e58-9a06aa047f03",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C57",
+      "claim": "EGFR has been reported to be involved in vascular pathophysiology and pathogenesis of atherosclerosis in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "As a receptor of TSP-1, epidermal growth factor receptor (EGFR) has been reported to be involved in vascular pathophysiology and pathogenesis of atherosclerosis in macrophages (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Wang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "62e78815-2d65-445b-b2f2-4568ad0b3b01",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C58",
+      "claim": "EGFR-selective tyrphostin, AG1478, can reverse the phosphorylation of EGFR tyrosine-1068 induced by TSP-1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, EGFR-selective tyrphostin, AG1478, can reverse the phosphorylation of EGFR tyrosine-1068 induced by TSP-1 activation (Liu et al., 2009), indicating the complicated regulation between TSP-1 and EGFR with respect to vascular function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Liu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "d915aa8b-d412-4e3e-afeb-9b22a4cccd0f",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C59",
+      "claim": "Downregulation of METTL3 and hypomethylation mediate OS-induced endothelial dysfunction and atherogenesis both in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data revealed that downregulation of METTL3 and hypomethylation mediate OS-induced endothelial dysfunction and atherogenesis both in vivo and in vitro",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the collective experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "1ba3ce53-d899-497e-b708-5faf3532616e",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C60",
+      "claim": "The THBS1/EGFR axis is a key regulatory target of METTL3-dependent EC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that the THBS1/EGFR axis is a key regulatory target of METTL3-dependent EC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing the relationship between METTL3, EGFR, and TSP-1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "edfd81a1-0cf1-476d-9758-47e3ca874278",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C61",
+      "claim": "METTL3 alleviates endothelial atherogenic progression through m6A-dependent stabilization of EGFR mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our study revealed that METTL3 alleviates endothelial atherogenic progression through m6A-dependent stabilization of EGFR mRNA, highlighting the important role of RNA transcriptomics in atherosclerosis regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the collective experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "93359f3c-e216-4d4b-a710-ab553cb9cd27",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C62",
+      "claim": "m6A modification plays a very important role in regulating RNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported, m6A modification plays a very important role in regulating RNA abundance (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Wang et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "4b10f989-e4cc-40c1-9d6f-21302839ffee",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C63",
+      "claim": "EGFR ligands that specifically activate EGFR include epidermal growth factor (EGF), transforming growth factor \u03b1 (TGF-\u03b1), and TSP-1.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR ligands that specifically activate EGFR include epidermal growth factor (EGF), transforming growth factor \u03b1 (TGF-\u03b1), and TSP-1 (Liu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Liu et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "eb250e40-ad6e-4962-bd5f-f1fdb3019863",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C64",
+      "claim": "TSP-1 is a multidomain protein that contains EGF-like repeats that indirectly activate EGFR and selected downstream signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "TSP-1 is a multidomain protein that contains EGF-like repeats that indirectly activate EGFR and selected downstream signaling pathways (Garg et al., 2011; Liu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Garg et al., 2011 and Liu et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "5948b764-a047-477f-b852-4ac5bc862693",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C65",
+      "claim": "TSP-1 is activated in shear-mediated arterial stiffening.",
+      "claim_type": "EXPLICIT",
+      "source": "TSP-1 is activated in shear-mediated arterial stiffening (Kim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Kim et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "72cf3374-008e-400f-8e73-3e77f9c04b3f",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C66",
+      "claim": "METTL3 has been reported to modulate embryonic development and spermatogenesis, and its deletion in mice causes early embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "As the core methyltransferase subunit, METTL3 has been reported to modulate embryonic development (Aguilo et al., 2015) and spermatogenesis (Xu et al., 2017), and its deletion in mice causes early embryonic lethality (Geula et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Aguilo et al., 2015; Xu et al., 2017; Geula et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "bbe27494-bb6c-4096-9ab6-a19700cf0625",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C67",
+      "claim": "METTL3 plays a central role in osteogenic differentiation and inflammatory response.",
+      "claim_type": "EXPLICIT",
+      "source": "METTL3 also plays a central role in osteogenic differentiation and inflammatory response (Wu et al., 2018; Zhang et al., 2019), which act similarly in ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Wu et al., 2018 and Zhang et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "44cef9ce-263a-4de8-bb6b-aab9653bab8b",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C68",
+      "claim": "METTL3 expression is upregulated during osteoblast differentiation and downregulated after LPS stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "METTL3 expression is upregulated during osteoblast differentiation and downregulated after LPS (lipopolysaccharide) stimulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about METTL3 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "30309b33-e4cd-4e5a-8f43-338af69216fb",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C69",
+      "claim": "METTL3 depletion enhances the expression of Smad genes and proinflammatory cytokine expression in MAPK and NF-\u03baB signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "while its depletion enhances the expression of Smad genes and proinflammatory cytokine expression in MAPK and NF-\u03baB signaling pathways (Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Zhang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "03dd2464-a811-4d1a-8775-4211c381cb5a",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C70",
+      "claim": "The development of hematopoietic stem cells (HSPCs) requires METTL3-mediated m6A modification.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of hematopoietic stem cells (HSPCs) also requires METTL3-mediated m6A modi\ufb01cation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about METTL3 function in HSPCs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "655d87e1-82a6-4c27-9c9f-d163c73f2907",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C71",
+      "claim": "mettl3 deficiency in arterial endothelial cells blocks endothelial-to-hematopoietic transition, followed by suppression of the generation of HSPCs through activation of Notch signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "and mettl3 deficiency in arterial endothelial cells blocks endothelial-to-hematopoietic transition, followed by suppression of the generation of HSPCs through activation of Notch signaling (Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Zhang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "1f70ec7d-d7fb-49ed-aa52-29f82dc183e9",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C72",
+      "claim": "METTL3 plays a similar role in cerebral arteriovenous malformation, and deletion of METTL3 in ECs significantly affects angiogenesis by reducing heterodimeric Notch E3 ubiquitin ligase formed by DTX1 and DTX3L.",
+      "claim_type": "EXPLICIT",
+      "source": "METTL3 plays a similar role in cerebral arteriovenous malformation, and deletion of METTL3 in ECs significantly affects angiogenesis by reducing heterodimeric Notch E3 ubiquitin ligase formed by DTX1 and DTX3L (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Wang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "ff6fe8e9-bcfa-459c-84c8-8a4794932de2",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C73",
+      "claim": "EGFR plays a role in foam cell transformation and accelerates atherosclerotic lesions characterized by accumulation of smooth muscle cells and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that EGFR plays a role in foam cell transformation and accelerates atherosclerotic lesions characterized by accumulation of smooth muscle cells and macrophages (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Wang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "e456ea67-5cd8-4172-a5d7-6ed1151ebd19",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C74",
+      "claim": "Explosive elevation of transcription and phosphorylation of EGFR were detected after OS treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Although EGFR is expressed at low levels in ECs, explosive elevation of transcription and phosphorylation of EGFR were detected after OS treatment (Figure 3D and Figure 4), consistent with a report from Rizvi et al., 2013.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D and Figure 4, and citation to Rizvi et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "6f22ea39-876f-4aa3-92a6-9946d3c86714",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C75",
+      "claim": "METTL3 binds to EGFR mRNA near the stop codon and is responsible for its m6A modification, modulating EGFR mRNA stability in human cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "METTL3 binds to EGFR mRNA near the stop codon and is responsible for its m6A modification, modulating EGFR mRNA stability in human cancer cells (Lin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Lin et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "959f835a-448c-47e4-8ee4-e80cf6a91890",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C76",
+      "claim": "EGFR is activated in response to its EGF-like repeats, such as TSP1, which require matrix metalloprotease activity, and the ligand-binding portion of the EGFR ectodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR is activated in response to its EGF-like repeats, such as TSP1, which require matrix metalloprotease activity, and the ligand-binding portion of the EGFR ectodomain (Liu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Liu et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "9d1549bb-0253-4a3a-9efe-5accee99c62f",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C77",
+      "claim": "The EGFR selective tyrphostin AG1478 inhibited EGFR phosphorylation at tyrosine 1068 without affecting the total levels of EGFR and had an atheroprotective role.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the EGFR selective tyrphostin AG1478 inhibited EGFR phosphorylation at tyrosine 1068 without affecting the total levels of EGFR (Garg et al., 2011; Wang et al., 2017) and had an atheroprotective role (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Garg et al., 2011 and Wang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "ee4ffa90-7834-4cc4-9811-5d280922f5b4",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C78",
+      "claim": "RNA m6A modification plays an important role in regulating endothelial activation and the atherogenesis response to oscillatory flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that RNA m6A modification plays an important role in regulating endothelial activation and the atherogenesis response to oscillatory flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the collective experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "bce01d30-45d6-493f-95a8-700510097f12",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C79",
+      "claim": "m6A modification levels were reduced concomitant with downregulation of METTL3 in atheroprone regions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that m6A modification levels were reduced concomitant with downregulation of METTL3 in atheroprone regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "260b9ca7-5f60-42e7-8477-b34a7359f4bb",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C80",
+      "claim": "Oscillatory flow-derived MeRIP-seq analysis revealed that m6A modification of the EGFR 3'UTR contributes to atherogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, oscillatory flow-derived MeRIP-seq analysis revealed that m6A modification of the EGFR 3'UTR contributes to atherogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MeRIP-seq data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "8b79d9cb-0673-483e-9222-7f6ad9a94b87",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C81",
+      "claim": "Overexpression of METTL3 restored m6A modification and reversed VCAM-1 expression and the monocyte adhesion ability response to OS.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, overexpression of METTL3 restored m6A modification and reversed VCAM-1 expression and the monocyte adhesion ability response to OS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "8b813983-7d86-4a81-a7e2-80331ab7a2af",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C82",
+      "claim": "TSP-1/EGFR inhibition prevented the development of atherosclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, TSP-1/EGFR inhibition prevented the development of atherosclerosis, suggesting a novel therapeutic method for atherosclerosis patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "ec6afc32-1208-4340-a9c5-a3516c08f967",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C83",
+      "claim": "METTL3 and m6A modifications could alleviate endothelial activation and atherogenesis through accelerated degradation of oscillatory flow-induced EGFR mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings demonstrate that METTL3 and m6A modifications could alleviate endothelial activation and atherogenesis through accelerated degradation of oscillatory flow-induced EGFR mRNA expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the collective experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "995c8707-15b9-4c42-9956-3e5c3193fdd5",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C84",
+      "claim": "Atherosclerotic plaques tend to develop in the vasculature locations with increased shear stress and OS.",
+      "claim_type": "EXPLICIT",
+      "source": "Atherosclerotic plaques tend to develop in the vasculature locations with increased shear stress and OS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established scientific knowledge about atherosclerosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "3c1b1231-e8b5-427e-b5a6-8f47aeb7b88f",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C85",
+      "claim": "EC activation in response to oscillatory flow plays important roles in regulating circulatory functions and atherosclerosis development, which is involved in the expression of various genes.",
+      "claim_type": "EXPLICIT",
+      "source": "EC activation in response to oscillatory flow plays important roles in regulating circulatory functions and atherosclerosis development, which is involved in the expression of various genes (Li et al., 2019; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Li et al., 2019 and Zhou et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "512de068-3226-4762-a7bf-373718888e3f",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C86",
+      "claim": "m6A mRNA modification participates in a number of biological functions and in progression of ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, increasing evidence has suggested that m6A mRNA modi\ufb01cation participates in a number of biological functions and in progression of ECs (Shi et al., 2019; Wang et al., 2014; Xiang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Shi et al., 2019; Wang et al., 2014; Xiang et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "dd7c1985-64c0-4088-a3be-ebf790c24b7a",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C87",
+      "claim": "Overexpression of Mettl3 has potential protective effects on endothelial activation in atheroprone regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of Mettl3 has potential protective effects on endothelial activation in atheroprone regions (Figure 2F), indicating the involvement of both m6A modification and METTL3 in atherogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "e496e763-5159-42f2-9167-f19fadb4732a",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C88",
+      "claim": "TSP-1 acts as a specific ligand that activates EGFR after OS treatment.",
+      "claim_type": "IMPLICIT",
+      "source": "However, TSP-1 was not affected by METTL3 intervention, and we presume that TSP-1 acts as a specific ligand that activates EGFR after OS treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing that TSP-1 is not affected by METTL3 but activates EGFR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "32bed983-5da4-465f-b156-26ad12d07c18",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C89",
+      "claim": "METTL3 alleviates endothelial atherogenic progression through m6A-dependent stabilization of EGFR mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we provide both in vitro and in vivo evidence demonstrating that m6A RNA modification regulates progression of EC activation in response to the onset of OS and subsequently, early atherogenesis. It should be noted that METTL3-modi\ufb01ed EGFR mRNA participates in the pathogenic mechanism of atherogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the collective experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "b52c6e7a-40ac-4730-80aa-bae6fe03f244",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "claim_id": "C90",
+      "claim": "The TSP-1/EGFR axis may contribute to m6A-modified atherogenesis, and inhibition of the axis helps to retard atherosclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The TSP-1/EGFR axis may contribute to m6A-modified atherogenesis, and inhibition of the axis helps to retard atherosclerosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data showing that inhibition of TSP-1/EGFR reduces atherosclerosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b999f467-908c-4e66-a88e-2fd931034151",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "METTL3 expression is reduced in atheroprone regions and under oscillatory stress conditions. The authors demonstrate through multiple approaches (UHPLC-MRM-MS, western blot, immunofluorescence) that oscillatory stress decreases m6A modification levels and specifically reduces METTL3 and Virilizer expression in cultured endothelial cells and in atheroprone regions of mouse aortas (aortic arch inner curvature, bifurcations, and ligated carotid arteries).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C9-C13, and C79 provide converging evidence from multiple experimental approaches (mass spectrometry, western blot, immunofluorescence) and models (in vitro OS treatment, in vivo atheroprone regions) consistently showing METTL3 downregulation. The data include appropriate controls (static treatment, atheroprotective regions) and statistical significance is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "8d448f17-b354-4d18-bea4-b413da4b6cf9",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Endothelial-specific METTL3 deficiency promotes endothelial activation and accelerates atherosclerosis. Using EC-Mettl3KO mice, the authors show increased VCAM-1 expression in atheroprone regions and enhanced atherosclerotic lesion formation in both partial carotid ligation and Western diet models. METTL3 overexpression reverses these effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 and C35-C38 demonstrate a clear phenotype in EC-specific knockout mice with appropriate controls (Mettl3flox/flox littermates). The rescue experiments with AAV9-METTL3 overexpression (C17) strengthen causality. Multiple atherosclerosis readouts are provided (lesion area, lipid deposition, macrophage infiltration). Statistical significance is reported with adequate sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "6eb1d11a-7106-4adf-adf3-607af0c4da60",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MeRIP-seq and RNA-seq analysis identifies EGFR as a key target of m6A-mediated regulation under oscillatory stress. The authors identify thousands of m6A peaks enriched in the GGACU motif, with downregulated m6A peaks enriched in cell adhesion pathways. EGFR shows reduced m6A modification (IP/input ratio) and increased mRNA expression under OS, and is identified through IPA analysis as a key regulator of OS-enhanced pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 present comprehensive sequencing data with appropriate bioinformatic analysis. The identification of EGFR is supported by multiple lines of evidence: MeRIP-seq showing reduced m6A, RNA-seq showing increased expression, MeRIP-qPCR validation, and IPA pathway analysis. The motif analysis and pathway enrichment provide mechanistic context. However, the IPA analysis identifying EGFR as a 'key regulator' (C22) involves some inference beyond direct measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "905ee7b1-c50f-4851-99fd-798b24d5f523",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "m6A modification of EGFR 3'UTR regulates its mRNA stability. METTL3 overexpression accelerates EGFR mRNA decay while METTL3 knockdown or OS treatment slows decay. Mutation of two m6A motifs in the EGFR 3'UTR abolishes the effect of METTL3 overexpression on luciferase reporter activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C26-C28 provide direct mechanistic evidence through actinomycin D chase assays and luciferase reporter assays. The mutational analysis (C5, C28) is particularly strong, showing that specific m6A sites are required for METTL3's effect. The experiments include appropriate controls (GFP, wild-type 3'UTR) and show consistent directional effects. Statistical significance is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "98486d6b-7506-49e2-ac8b-03ce12c64acb",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "METTL3 overexpression inhibits EGFR signaling and endothelial dysfunction induced by oscillatory stress. Adenoviral METTL3 overexpression reduces EGFR phosphorylation, downstream AKT/ERK signaling, VCAM-1 expression, and monocyte adhesion in response to OS. The EGFR inhibitor AG1478 phenocopies METTL3 overexpression effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C29-C33, and C81 demonstrate functional consequences of METTL3-mediated EGFR regulation through western blot and cell adhesion assays. The pharmacological inhibition with AG1478 provides orthogonal validation. The experiments include appropriate controls and show consistent effects across multiple readouts. However, the claim that METTL3 overexpression 'significantly reduced endothelial dysfunction' (C6) is somewhat broad given the specific markers measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "8313260f-49bb-4d5a-842c-4ffffeec880a",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TSP-1 expression is increased under oscillatory stress and in atheroprone regions but is not regulated by METTL3. The authors show TSP-1 upregulation at mRNA and protein levels under OS, and that METTL3 overexpression does not affect TSP-1 levels despite inhibiting EGFR expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C30, C34 provide consistent evidence that TSP-1 is not a target of METTL3 regulation, supported by western blot, qPCR, and immunofluorescence data. This is important for establishing the specificity of the METTL3-EGFR axis. However, C88 is explicitly marked as speculation by the authors ('we presume'), indicating this is an inference rather than directly demonstrated mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "c057763d-6420-4951-93e6-9c1b62493763",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inhibition of the TSP-1/EGFR axis ameliorates atherosclerosis in vivo. Both Thbs1 knockdown and EGFR inhibitor AG1478 reduce lesion area and VCAM-1 expression in partially ligated carotid arteries of EC-Mettl3KO mice, reversing the pro-atherogenic effects of METTL3 deficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C39-C43, and C82 provide strong in vivo evidence for the functional importance of the TSP-1/EGFR axis using both genetic (shRNA) and pharmacological (AG1478) approaches. The rescue of the EC-Mettl3KO phenotype is particularly compelling. Appropriate controls and statistical analyses are included. The claim of 'significantly ameliorated' is supported by quantitative lesion measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "daab9fa2-9274-4eef-8bc1-8e065fde334c",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Plasma lipid levels and body weight are unchanged between EC-Mettl3KO and control mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 provides important control data showing that the atherosclerosis phenotype is not due to systemic metabolic changes. This is supported by measurements of triglycerides, cholesterol, and body weight with no significant differences reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "6619b31d-591d-49b1-8023-b20e93d6e820",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Overall conclusion: METTL3-mediated m6A modification alleviates endothelial atherogenic progression through regulation of EGFR mRNA stability, with the TSP-1/EGFR axis as a key regulatory target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61, C78, C83, C89-C90 represent summary conclusions that integrate the experimental findings. These are well-supported by the collective data from in vitro and in vivo experiments demonstrating: (1) METTL3 downregulation in atheroprone regions, (2) m6A-dependent regulation of EGFR mRNA stability, (3) functional consequences for endothelial activation, and (4) effects on atherosclerosis development. The conclusions appropriately reflect the scope of the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    },
+    {
+      "id": "971b87ac-9918-4c6c-8765-7f82422202f9",
+      "content_id": "ff9f202e-b948-4c85-980f-5e138104909a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background and context claims about atherosclerosis, m6A modification, METTL3 function, TSP-1, and EGFR based on prior literature and general knowledge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C2, C44-C77, C84-C87) represent established knowledge from the literature, supported by appropriate citations. They provide necessary context for the study but are not novel findings. The citations appear appropriate and the statements are consistent with current understanding of these biological systems. Some claims (e.g., C87) include preliminary data from the current study to support the rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:02:11.667142Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "34b08420-fa9f-44d5-acbe-6a65c613f7ad",
+      "result_id": "b999f467-908c-4e66-a88e-2fd931034151"
+    },
+    {
+      "claim_id": "26c20c24-c946-4527-9f31-53a2be670524",
+      "result_id": "b999f467-908c-4e66-a88e-2fd931034151"
+    },
+    {
+      "claim_id": "f8f27a45-a0ec-4de3-b881-98a9d272a363",
+      "result_id": "b999f467-908c-4e66-a88e-2fd931034151"
+    },
+    {
+      "claim_id": "154cfd07-8f11-4e92-a509-5c329a824e3a",
+      "result_id": "b999f467-908c-4e66-a88e-2fd931034151"
+    },
+    {
+      "claim_id": "3ee66836-2ef0-4897-b8f8-bd0802995429",
+      "result_id": "b999f467-908c-4e66-a88e-2fd931034151"
+    },
+    {
+      "claim_id": "f3766095-7710-4d2f-9a27-0904943db05c",
+      "result_id": "b999f467-908c-4e66-a88e-2fd931034151"
+    },
+    {
+      "claim_id": "bce01d30-45d6-493f-95a8-700510097f12",
+      "result_id": "b999f467-908c-4e66-a88e-2fd931034151"
+    },
+    {
+      "claim_id": "6f989cfc-20ed-4048-a740-5cfc781e7b7b",
+      "result_id": "8d448f17-b354-4d18-bea4-b413da4b6cf9"
+    },
+    {
+      "claim_id": "9fc8887b-c0ee-472e-b3e8-3dc7e351d29e",
+      "result_id": "8d448f17-b354-4d18-bea4-b413da4b6cf9"
+    },
+    {
+      "claim_id": "f7440f2c-3d54-48b6-8566-63c1108d4ccf",
+      "result_id": "8d448f17-b354-4d18-bea4-b413da4b6cf9"
+    },
+    {
+      "claim_id": "4fd5d439-a3f6-4afb-91c8-5e7c20513262",
+      "result_id": "8d448f17-b354-4d18-bea4-b413da4b6cf9"
+    },
+    {
+      "claim_id": "26e7b68d-142b-4072-847c-7ba6b89485e5",
+      "result_id": "8d448f17-b354-4d18-bea4-b413da4b6cf9"
+    },
+    {
+      "claim_id": "b60cf3af-f7da-47d4-a03a-7592e10d1149",
+      "result_id": "8d448f17-b354-4d18-bea4-b413da4b6cf9"
+    },
+    {
+      "claim_id": "625e60fa-990f-401e-9730-c2fd7e435e7e",
+      "result_id": "8d448f17-b354-4d18-bea4-b413da4b6cf9"
+    },
+    {
+      "claim_id": "38eb9e6b-9b83-444b-8e5d-fcb387da9bcc",
+      "result_id": "6eb1d11a-7106-4adf-adf3-607af0c4da60"
+    },
+    {
+      "claim_id": "2ce71d72-40f8-4aaa-b025-78939dd15ce6",
+      "result_id": "6eb1d11a-7106-4adf-adf3-607af0c4da60"
+    },
+    {
+      "claim_id": "321e5e8f-06ad-488b-9940-9a803e98453e",
+      "result_id": "6eb1d11a-7106-4adf-adf3-607af0c4da60"
+    },
+    {
+      "claim_id": "41c1a7cf-31db-4ebd-9ff0-8a9f3862dba9",
+      "result_id": "6eb1d11a-7106-4adf-adf3-607af0c4da60"
+    },
+    {
+      "claim_id": "ab5db35a-cd13-417a-b395-bbc3e5e06c51",
+      "result_id": "6eb1d11a-7106-4adf-adf3-607af0c4da60"
+    },
+    {
+      "claim_id": "4eafe8b3-f2b6-42fd-a73a-93273878d3a5",
+      "result_id": "6eb1d11a-7106-4adf-adf3-607af0c4da60"
+    },
+    {
+      "claim_id": "fcd60e76-fba0-4845-836c-44e48ff52352",
+      "result_id": "6eb1d11a-7106-4adf-adf3-607af0c4da60"
+    },
+    {
+      "claim_id": "37a8e4ca-14f9-479f-ae45-025f2d98dda7",
+      "result_id": "6eb1d11a-7106-4adf-adf3-607af0c4da60"
+    },
+    {
+      "claim_id": "260b9ca7-5f60-42e7-8477-b34a7359f4bb",
+      "result_id": "6eb1d11a-7106-4adf-adf3-607af0c4da60"
+    },
+    {
+      "claim_id": "9fcd6238-c819-463b-8747-c69de3d38b6e",
+      "result_id": "905ee7b1-c50f-4851-99fd-798b24d5f523"
+    },
+    {
+      "claim_id": "375ded7c-6b5e-4591-be28-2f2addc7bb29",
+      "result_id": "905ee7b1-c50f-4851-99fd-798b24d5f523"
+    },
+    {
+      "claim_id": "aa3b87ba-1130-4e31-a384-ad468c00cff1",
+      "result_id": "905ee7b1-c50f-4851-99fd-798b24d5f523"
+    },
+    {
+      "claim_id": "dfd1d121-2851-475c-a949-d4a54490d235",
+      "result_id": "905ee7b1-c50f-4851-99fd-798b24d5f523"
+    },
+    {
+      "claim_id": "0be2145e-34ba-4640-bb36-234bf25d4201",
+      "result_id": "905ee7b1-c50f-4851-99fd-798b24d5f523"
+    },
+    {
+      "claim_id": "d532e7ac-83f8-4f47-aa5b-8808ac61512f",
+      "result_id": "98486d6b-7506-49e2-ac8b-03ce12c64acb"
+    },
+    {
+      "claim_id": "a6a97334-3682-489c-8b0a-3aeac013f071",
+      "result_id": "98486d6b-7506-49e2-ac8b-03ce12c64acb"
+    },
+    {
+      "claim_id": "5fdfa303-d51c-4916-8bbe-b0beb6fe5c6f",
+      "result_id": "98486d6b-7506-49e2-ac8b-03ce12c64acb"
+    },
+    {
+      "claim_id": "41c86020-9649-420b-b626-7cdd763310f9",
+      "result_id": "98486d6b-7506-49e2-ac8b-03ce12c64acb"
+    },
+    {
+      "claim_id": "671d0182-0629-42b6-912e-03f8fc1c1f65",
+      "result_id": "98486d6b-7506-49e2-ac8b-03ce12c64acb"
+    },
+    {
+      "claim_id": "b3408a3e-868c-4db5-b58f-0bf25875001e",
+      "result_id": "98486d6b-7506-49e2-ac8b-03ce12c64acb"
+    },
+    {
+      "claim_id": "8b79d9cb-0673-483e-9222-7f6ad9a94b87",
+      "result_id": "98486d6b-7506-49e2-ac8b-03ce12c64acb"
+    },
+    {
+      "claim_id": "8c240eae-776e-4a90-8b95-c55925d88327",
+      "result_id": "8313260f-49bb-4d5a-842c-4ffffeec880a"
+    },
+    {
+      "claim_id": "5fdfa303-d51c-4916-8bbe-b0beb6fe5c6f",
+      "result_id": "8313260f-49bb-4d5a-842c-4ffffeec880a"
+    },
+    {
+      "claim_id": "6f9ce175-8dd8-4b1d-8b2d-e351be726c8a",
+      "result_id": "8313260f-49bb-4d5a-842c-4ffffeec880a"
+    },
+    {
+      "claim_id": "e496e763-5159-42f2-9167-f19fadb4732a",
+      "result_id": "8313260f-49bb-4d5a-842c-4ffffeec880a"
+    },
+    {
+      "claim_id": "bca9c9b0-fd6d-4973-a08f-a071bbf70996",
+      "result_id": "c057763d-6420-4951-93e6-9c1b62493763"
+    },
+    {
+      "claim_id": "1cc6a746-f7c2-4e33-8134-c3e488a41502",
+      "result_id": "c057763d-6420-4951-93e6-9c1b62493763"
+    },
+    {
+      "claim_id": "839bf1e4-d357-4fe9-9b5c-f211bd209bd2",
+      "result_id": "c057763d-6420-4951-93e6-9c1b62493763"
+    },
+    {
+      "claim_id": "d005e436-f135-4a0e-a666-18739dee56e4",
+      "result_id": "c057763d-6420-4951-93e6-9c1b62493763"
+    },
+    {
+      "claim_id": "a1e0de2f-c1e4-4f93-ad84-8f404af3504b",
+      "result_id": "c057763d-6420-4951-93e6-9c1b62493763"
+    },
+    {
+      "claim_id": "bdf80f43-236e-4133-b055-3e35e79db845",
+      "result_id": "c057763d-6420-4951-93e6-9c1b62493763"
+    },
+    {
+      "claim_id": "8b813983-7d86-4a81-a7e2-80331ab7a2af",
+      "result_id": "c057763d-6420-4951-93e6-9c1b62493763"
+    },
+    {
+      "claim_id": "6b750dd3-8196-4b89-9a73-3784b64d9d93",
+      "result_id": "daab9fa2-9274-4eef-8bc1-8e065fde334c"
+    },
+    {
+      "claim_id": "d915aa8b-d412-4e3e-afeb-9b22a4cccd0f",
+      "result_id": "6619b31d-591d-49b1-8023-b20e93d6e820"
+    },
+    {
+      "claim_id": "1ba3ce53-d899-497e-b708-5faf3532616e",
+      "result_id": "6619b31d-591d-49b1-8023-b20e93d6e820"
+    },
+    {
+      "claim_id": "edfd81a1-0cf1-476d-9758-47e3ca874278",
+      "result_id": "6619b31d-591d-49b1-8023-b20e93d6e820"
+    },
+    {
+      "claim_id": "ee4ffa90-7834-4cc4-9811-5d280922f5b4",
+      "result_id": "6619b31d-591d-49b1-8023-b20e93d6e820"
+    },
+    {
+      "claim_id": "ec6afc32-1208-4340-a9c5-a3516c08f967",
+      "result_id": "6619b31d-591d-49b1-8023-b20e93d6e820"
+    },
+    {
+      "claim_id": "32bed983-5da4-465f-b156-26ad12d07c18",
+      "result_id": "6619b31d-591d-49b1-8023-b20e93d6e820"
+    },
+    {
+      "claim_id": "b52c6e7a-40ac-4730-80aa-bae6fe03f244",
+      "result_id": "6619b31d-591d-49b1-8023-b20e93d6e820"
+    },
+    {
+      "claim_id": "27113926-9d83-4c88-8a85-e1a8bd807813",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "6b2d9c4f-e219-401d-8149-c52f14d5dfd7",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "fe414444-d604-4314-86ad-52a73773079d",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "b7373d4a-5d2c-4667-8d9d-b60a6b579e55",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "4803b5a7-0fa0-4c64-bca8-6e000d6a1552",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "0f4aaa79-5073-47e2-98a8-0cc2ee1fd691",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "a448af6e-3132-4ed2-8f44-4a98a0b71af3",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "8097079b-ec68-478b-8840-fa2c0fde8305",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "85e0eacb-8153-49d8-8e49-1f5559671d12",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "fc83c4b1-fb87-4222-b7f7-e1c319897844",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "7daa6031-67dd-4b70-b437-c9ebe01c0e98",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "46afd88e-78fb-40d8-ba40-87601c208cbe",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "df4c4eee-bbd8-4bc3-bdc7-67323c02c80d",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "24b93d7a-77e7-442c-8712-1e816d4a0128",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "8a634d17-3c76-4e84-b074-9b49cd3a2aa5",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "16d7af64-fd3d-454a-8e58-9a06aa047f03",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "62e78815-2d65-445b-b2f2-4568ad0b3b01",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "93359f3c-e216-4d4b-a710-ab553cb9cd27",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "4b10f989-e4cc-40c1-9d6f-21302839ffee",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "eb250e40-ad6e-4962-bd5f-f1fdb3019863",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "5948b764-a047-477f-b852-4ac5bc862693",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "72cf3374-008e-400f-8e73-3e77f9c04b3f",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "bbe27494-bb6c-4096-9ab6-a19700cf0625",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "44cef9ce-263a-4de8-bb6b-aab9653bab8b",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "30309b33-e4cd-4e5a-8f43-338af69216fb",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "03dd2464-a811-4d1a-8775-4211c381cb5a",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "655d87e1-82a6-4c27-9c9f-d163c73f2907",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "1f70ec7d-d7fb-49ed-aa52-29f82dc183e9",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "ff6fe8e9-bcfa-459c-84c8-8a4794932de2",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "e456ea67-5cd8-4172-a5d7-6ed1151ebd19",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "6f22ea39-876f-4aa3-92a6-9946d3c86714",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "959f835a-448c-47e4-8ee4-e80cf6a91890",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "9d1549bb-0253-4a3a-9efe-5accee99c62f",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "995c8707-15b9-4c42-9956-3e5c3193fdd5",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "3c1b1231-e8b5-427e-b5a6-8f47aeb7b88f",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "512de068-3226-4762-a7bf-373718888e3f",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    },
+    {
+      "claim_id": "dd7c1985-64c0-4088-a3be-ebf790c24b7a",
+      "result_id": "971b87ac-9918-4c6c-8765-7f82422202f9"
+    }
+  ],
+  "comparisons": []
+}

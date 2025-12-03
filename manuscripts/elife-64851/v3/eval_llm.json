@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C51",
+      "C68",
+      "C95"
+    ],
+    "result": "The authors develop a theoretical framework showing that evolutionary dynamics of antibiotic resistance in two-drug environments can be described by a Price equation, where mean evolutionary trajectories reduce to weighted gradient dynamics on the ancestral drug-response surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C43-C47, C51, C68, and C95 collectively establish the core theoretical contribution. The Price equation formulation (C2, C43-C44) is mathematically sound and appropriately applied. The weighted gradient dynamics interpretation (C3, C68, C95) follows logically from the Taylor expansion approximation (Equation 9) and is validated against full simulations (C67, Figure 4\u2014figure supplement 1). The framework successfully integrates drug interactions and collateral effects through covariance terms (C47, C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C29",
+      "C36",
+      "C38",
+      "C49",
+      "C116",
+      "C117",
+      "C137"
+    ],
+    "result": "The model assumes that drug-resistant mutants exhibit growth rates equivalent to ancestral cells at rescaled effective drug concentrations, characterized by scaling parameters \u03b1 and \u03b2 for each drug.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C29, C36-C38, C49, C116-C117, and C137 describe the fundamental rescaling assumption. This assumption is well-supported by prior empirical work (C31, C33-C35, C93, C138) and provides a mathematically tractable framework. The approach successfully reduces complexity by allowing two-drug response surfaces to be estimated from single-drug dose-response curves (C117), though the authors acknowledge limitations (C139-C140).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C62",
+      "C63"
+    ],
+    "result": "Simulations demonstrate that both drug interactions (shape of response surface) and collateral effects (correlations between resistance to different drugs) jointly determine evolutionary trajectories, with their relative importance depending on the specific drug combination and dosage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57, C59, C62-C63 present simulation results shown in Figures 2-4. The simulations systematically vary collateral effects (rows in Figure 4) and drug interactions (columns in Figure 4) to demonstrate their joint influence. The results are internally consistent and supported by the mathematical framework. However, the simulations rely on specific parameter choices and distributions that may not capture all biological scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Model predictions for resistance evolution and growth adaptation across different drug dosages qualitatively match experimental data for three drug pairs, with no adjustable parameters, though the model systematically underestimates growth in some conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 compare model predictions with experimental data from Dean et al., 2020 (Figure 5 and supplements). The qualitative agreement without adjustable parameters (C75) is notable. However, the systematic underestimation of growth (C76) and the need to subsample scaling parameters from evolved populations (C128-C132) introduce uncertainty. The model captures key trends like the dramatic decrease in CIP resistance with increasing TGC (C73-C74), explained by antagonistic drug interactions (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The framework reveals that drug interactions and collateral effects are not independent but coupled through the local geometry of the two-drug response surface, and specific dosage combinations can shift their relative weighting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C120-C122 articulate a key conceptual insight. This follows logically from the weighted gradient dynamics (Equation 9) where the covariance matrix \u03a3 (encoding collateral effects) weights the gradient of G (encoding drug interactions). The coupling is demonstrated through simulations (Figures 3-4) and experimental comparisons (Figure 5). This represents a genuine theoretical advance in understanding multidrug resistance evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C96"
+    ],
+    "result": "The model can be extended to incorporate de novo mutation through a mutation matrix, with different mutational structures (direct vs. sequential pathways) leading to different evolutionary dynamics and rates of adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C82-C85, and C96 describe the mutation extension (Equations 10-11, Figure 6). The mathematical extension is straightforward and the simulations demonstrate qualitatively different outcomes for different mutational structures. However, the analysis is limited to toy models with four phenotypes, and the biological relevance of specific mutational structures is not empirically validated. The extension demonstrates flexibility of the framework but requires additional empirical input.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The model predicts that sequential treatments with different drug combinations lead to nonlinear changes in resistance and growth that depend on both the relative duration of each treatment and total treatment length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C88-C90 present predictions for sequential therapies (Figure 7). The simulations demonstrate monotonic increases in resistance and growth with increasing time in treatment B (C89), but with nonlinear relationships (C90). These are model predictions without experimental validation, representing a proof-of-principle application rather than validated results. The predictions are internally consistent with the framework but require experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C100"
+    ],
+    "result": "The gradient approximation (Equation 9) accurately describes the full Price equation dynamics across a wide range of conditions and connects to established results in quantitative genetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C100 are supported by Figure 4\u2014figure supplement 1, which shows close agreement between the full Price equation and the gradient approximation. The connection to prior work in quantitative genetics (C100) is appropriately cited. This validates the weak-selection approximation used to derive the gradient dynamics interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Model validation requires sampling scaling parameters from experimentally evolved populations, and while qualitative results are robust to subsampling choices, precise quantitative predictions require accurate estimates of standing variation and evolutionary time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 describe the methodology for model validation and acknowledge limitations. The approach of sampling from evolved populations (C128-C130) is reasonable but introduces uncertainty. Supplementary analyses (Figures 5\u2014figure supplements 3-5) demonstrate robustness to subsampling, initial frequencies, and total time (C132-C133), though the authors appropriately note these are not fundamental limitations but arise from imprecise measures of standing variation (C134).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The model makes several simplifying assumptions, including the rescaling approximation, exponential growth, absence of fitness costs, and exclusion of various biological complexities, though many of these could be incorporated at the expense of analytical tractability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C147 acknowledge model limitations. The rescaling approximation has empirical support (C138) but known exceptions (C139). The authors appropriately discuss neglected features (C141, C143, C147) and note these could be incorporated (C142). The discussion of fitness costs (C143, C145-C146) provides conceptual insight about reversing resistance through multidimensional environmental manipulation rather than binary drug/no-drug conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C91",
+      "C92",
+      "C94",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The framework provides a unified approach to predicting phenotypic adaptation that balances analytical tractability with biological realism, reconciles apparently contradictory experimental observations, and generates testable predictions despite requiring specific empirical inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25, C91-C92, C94, and C148-C152 summarize the overall contribution and philosophy. The framework successfully unifies drug interactions and collateral effects (C91-C92) and reconciles different experimental observations (C92, C60). The authors appropriately acknowledge that predictions depend on empirical inputs (C149-C151) and that general conclusions are difficult (C151), while arguing the framework is valuable for generating testable predictions in complex scenarios (C152).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C28",
+      "C60",
+      "C64",
+      "C93",
+      "C99",
+      "C103",
+      "C104",
+      "C111",
+      "C113",
+      "C118",
+      "C119"
+    ],
+    "result": "The study is motivated by and builds upon extensive prior work on antibiotic resistance evolution, drug interactions, collateral effects, and evolutionary theory, with appropriate citations to established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C28, C60, C64, C93, C99, C103-C104, C111, C113, C118-C119 provide background and context. These are well-supported by appropriate citations to prior work. The authors accurately represent the state of the field and position their contribution within existing literature. The citations appear appropriate and the characterizations of prior work are consistent with the cited sources.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "AFE events are the predominant type of alternative splicing following LPS activation in macrophages, comprising approximately 50% of splicing changes in both human and mouse, with 11 conserved AFE events identified between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from multiple datasets (primary human and mouse macrophages, reanalysis of published Listeria/Salmonella data) using consistent computational methods (JuncBASE, DRIMSeq) with appropriate statistical thresholds. The conservation analysis (C4) strengthens the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "AFE changes in Ncoa7, Rcan1, and Ampd3 were validated by RT-PCR in primary human and mouse macrophages following inflammatory stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 demonstrate experimental validation of computational predictions using RT-PCR in primary cells from both species. The validation includes both previously characterized genes (Ncoa7, Rcan1) and a novel finding (Ampd3), providing confidence in the computational pipeline.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Long-read native RNA-sequencing with an average depth of 1 million reads identified 95 novel AFE events following inflammation, with 45% of novel TSSs validated by overlap with CAGE-seq peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 describe the generation and validation of a de novo transcriptome. The 45% overlap with CAGE-seq provides partial validation, though the authors acknowledge the CAGE data lacks inflammatory conditions. The relatively low sequencing depth (1M reads) is noted as a limitation that may result in missed isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Approximately 50% of genes with AFE usage were not differentially expressed at the gene level following inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by differential expression analysis shown in Figure 1E,F. This finding highlights an important biological insight that isoform-level changes can occur without gene-level expression changes, emphasizing the importance of isoform-specific analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Denr, Arhgef7, and Aim2 are among the most statistically significant novel AFE events and were validated by RT-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by both computational identification from long-read sequencing and experimental validation by RT-qPCR. The data in Figure 1G-I and supplementary figures provide clear evidence for these novel AFE events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Aim2 has an unannotated upstream promoter that drives expression of a novel inflammatory-regulated isoform, which becomes the predominant form (81% of reads) following LPS stimulation, while the canonical annotated isoform is not LPS-inducible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 provide multiple lines of evidence: ChIP-seq for PU.1 (C13), FLAIR isoform assembly (C14), native RNA-seq quantification (C15-C16), and RT-qPCR validation (C17-C18). The convergence of these independent methods strongly supports the identification and characterization of this novel Aim2 isoform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C29",
+      "C30"
+    ],
+    "result": "Chromatin remodeling and transcription factor binding by p65 and IRF3 account for 50% of AFE regulation, with the novel Aim2 promoter driven by inflammatory-specific TFs rather than chromatin accessibility changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 integrate ATAC-seq and ChIP-seq data to determine regulatory mechanisms. The finding that Aim2 promoters remain constitutively accessible (C22-C23) but are regulated by inflammatory TFs (C24, C29) is well-supported by multiple datasets. However, the mechanisms for the remaining 50% of AFE events remain unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "HOMER motif analysis identified 304 potential transcription factors binding AFE promoters, with the majority associated with metabolism and immune function, and 44 motifs unique to the unannotated Aim2 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe computational motif enrichment analysis. While the predictions are bioinformatically sound, these remain computational predictions without experimental validation of TF binding. The analysis provides hypotheses for future investigation but does not demonstrate functional TF binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The novel Aim2 isoform has a longer 5'UTR (767 bp vs 489 bp), but globally there are no differences in AFE size between control and LPS conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by sequence analysis. The specific measurements for Aim2 are clear, and the global analysis shown in supplementary figures demonstrates this is not a general feature of inflammatory AFE events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The unannotated Aim2 5'UTR contains a functional iron-responsive element (IRE) that reduces translational efficiency, as demonstrated by GFP reporter assays showing reduced expression that is rescued by IRE deletion (~20% increase) or iron supplementation (~50% increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 provide strong experimental evidence for IRE function using multiple approaches: computational prediction (C34), GFP reporter assays (C33), site-directed mutagenesis (C37), and iron supplementation (C38). The experiments are well-controlled with mCherry controls and show consistent directional effects. However, experiments were performed in 293T cells rather than macrophages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Polysome profiling demonstrates that the annotated Aim2 isoform is enriched in high polysome fractions while the novel isoform is enriched in low polysome fractions, indicating differential translational efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 use polysome profiling with appropriate positive (Gapdh) and negative (Neat1) controls to demonstrate differential translational efficiency of Aim2 isoforms in primary BMDMs. This provides direct evidence for the functional consequence of the IRE in the endogenous context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Aim2 protein decreases at 48 hours post-LPS stimulation in primary BMDMs, and this decrease is prevented by iron supplementation, while IRP1/2 are not transcriptionally regulated by inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide western blot evidence for iron-dependent regulation of Aim2 protein levels during inflammation. The time-course experiment with and without FAC treatment supports the IRE-mediated mechanism. However, the claim about IRP regulation (C43) only addresses transcriptional regulation, not post-translational regulation or binding affinity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CRISPR/Cas9 deletion of the IRE in immortalized BMDMs prevents the decrease in Aim2 protein at 48 hours post-LPS, confirming endogenous IRE-mediated regulation without affecting transcriptional levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide genetic validation of the IRE mechanism using CRISPR/Cas9 knockout. The comparison between WT and IRE KO cells at the 48-hour timepoint (C49) directly demonstrates the functional importance of the IRE. The finding that transcriptional levels are unchanged (C48) confirms post-transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Background claims establishing that macrophages initiate inflammatory responses through PAMP detection by PRRs, leading to TF activation and eventual resolution, with dysregulation causing chronic disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 represent well-established background knowledge supported by appropriate citations. These provide context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Background claims establishing that alternative splicing is a regulated, cell-type-specific process that affects immune responses, with examples of functionally important splice variants in immune signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 represent established knowledge about alternative splicing in immunity, supported by multiple citations. These provide important context but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Long-read RNA-sequencing has not previously been used to generate de novo transcriptomes for primary murine macrophages, and such approaches are necessary because transcriptome annotations are incomplete and cell-type specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 establish the novelty and rationale for the study approach. The claim about lack of prior long-read sequencing in this system (C62) is based on literature review and multiple citations, though such negative claims are inherently difficult to prove definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study demonstrates that the unannotated AFE isoform of Aim2 is the predominant form during inflammation and contains an IRE enabling iron-dependent translational control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 summarize the major findings of the study. These are well-supported by the collective evidence from long-read sequencing, RT-qPCR, GFP reporter assays, polysome profiling, and CRISPR/Cas9 experiments described in other claim groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Background claims establishing that Aim2 is an interferon-stimulated, cytosolic dsDNA sensor that forms inflammasomes and releases IL1\u03b2 and IL18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 represent established knowledge about Aim2 function, supported by appropriate citations. This provides important context for understanding the significance of the novel isoform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Concluding claims that alternative isoform usage plays a crucial role in inflammatory responses and may contribute to autoimmune/inflammatory diseases, with potential therapeutic implications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 represent broad conclusions and speculations about the implications of the findings. While C70 is reasonably supported by the data presented, C71 and C72 are speculative statements about disease relevance and therapeutic potential that extend beyond the experimental evidence provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Literature-based claims connecting ROS to Aim2 inflammasome activation, IRP2 degradation, and pancreatic tumorigenesis in the context of iron overload.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 cite published studies connecting the authors' findings to broader biological contexts. These appropriately reference prior work to support the mechanistic plausibility of their findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "AIM2 expression correlates with SLE severity, iron is dysregulated in SLE, and it is speculated that dysregulated iron may prevent macrophage homeostasis in SLE patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 cite published correlations, but C79 is speculative, connecting the authors' findings to SLE pathology without experimental evidence. This represents a reasonable hypothesis for future investigation but is not demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Better understanding of inflammatory gene regulation mechanisms could provide therapeutic targets for autoimmune and inflammatory diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is a speculative statement about potential therapeutic applications. While reasonable, this extends beyond the experimental evidence and represents a future direction rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

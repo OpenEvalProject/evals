@@ -1,0 +1,2577 @@
+{
+  "submission": {
+    "id": "f8c8c289-71d3-4e13-941a-bf7eeb1c7bb3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:30:19.859614Z",
+    "updated_at": "2025-12-03T03:30:19.859614Z"
+  },
+  "content": [
+    {
+      "id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "submission_id": "f8c8c289-71d3-4e13-941a-bf7eeb1c7bb3",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM structure of the yeast TREX complex and coordination with the SR-like protein Gbp2\n\n## Authors\n\n- Yihu Xie<sup>1</sup> \u2020\n- Bradley P Clarke<sup>1</sup> ([ORCID: 0000-0002-9413-9905](https://orcid.org/0000-0002-9413-9905))\n- Yong Joon Kim<sup>2</sup>\n- Austin L Ivey<sup>1</sup>\n- Pate S Hill<sup>1</sup> ([ORCID: 0000-0001-9550-2713](https://orcid.org/0000-0001-9550-2713))\n- Yi Shi<sup>2</sup> ([ORCID: 0000-0002-2761-8324](https://orcid.org/0000-0002-2761-8324))\n- Yi Ren<sup>1</sup> ([ORCID: 0000-0003-4531-0910](https://orcid.org/0000-0003-4531-0910)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, Vanderbilt University School of Medicine Nashville United States\n2. Department of Cell Biology, University of Pittsburgh Pittsburgh United States\n3. Medical Scientist Training Program, University of Pittsburgh and Carnegie Mellon University Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe evolutionarily conserved TRanscript-EXport (TREX) complex plays central roles during mRNP (messenger ribonucleoprotein) maturation and export from the nucleus to the cytoplasm. In yeast, TREX is composed of the THO sub-complex (Tho2, Hpr1, Tex1, Mft1, and Thp2), the DEAD box ATPase Sub2, and Yra1. Here we present a 3.7 \u00c5 cryo-EM structure of the yeast THO\u2022Sub2 complex. The structure reveals the intimate assembly of THO revolving around its largest subunit Tho2. THO stabilizes a semi-open conformation of the Sub2 ATPase via interactions with Tho2. We show that THO interacts with the serine\u2013arginine (SR)-like protein Gbp2 through both the RS domain and RRM domains of Gbp2. Cross-linking mass spectrometry analysis supports the extensive interactions between THO and Gbp2, further revealing that RRM domains of Gbp2 are in close proximity to the C-terminal domain of Tho2. We propose that THO serves as a landing pad to configure Gbp2 to facilitate its loading onto mRNP.\n\n## Introduction\n\nEukaryotic RNA transcription is carried out in the nucleus by the RNA polymerases. During an early stage of mRNA transcription, a 5\u2019 cap is added to the newly synthesized mRNA, which is followed by splicing, 3\u2019-end processing, and polyadenylation. Nuclear mRNA biogenesis culminates in their export through the nuclear pore complex to the cytoplasm. Many protein factors including serine-arginine (SR) proteins associate with mRNAs to form mature messenger ribonucleoproteins\u00a0(mRNPs) for export (Metkar et al., 2018; Singh et al., 2012). The evolutionarily conserved TRanscript-EXport (TREX) complex plays key roles in the highly coordinated mRNP assembly and export (Carmody and Wente, 2009; Ch\u00e1vez et al., 2000; Luo et al., 2001; Str\u00e4sser and Hurt, 2001; Str\u00e4sser et al., 2002; Viphakone et al., 2019; Xie and Ren, 2019; Zhou et al., 2000). TREX is recruited to actively transcribed genes (Cheng et al., 2006; Masuda et al., 2005; Str\u00e4sser et al., 2002) and impacts transcription especially during elongation (Dom\u00ednguez-S\u00e1nchez et al., 2011; Zhang et al., 2016).\n\nThe C-terminal domain of the largest subunit of RNA Pol II is highly phosphorylated on the heptapeptide repeats (YSPTSPS) at the Serine 2 position during the elongation phase of the transcription cycle (Hsin and Manley, 2012). Serine 2 phosphorylation coordinates loading of co-transcriptional 3\u2019-end processing factors to the transcription machinery (Ahn et al., 2004). In yeast, the primary RNA Pol II CTD Ser2 kinase is the CTDK-1 complex (Cho et al., 2001; Sterner et al., 1995; Wood and Shilatifard, 2006). Growing evidence links the function of TREX and transcriptional CDKs. The yeast TREX component Mft1 interacts genetically with CTDK-1 (Hurt et al., 2004). In addition to their roles during transcription elongation, TREX and CTDK-1 both influence mRNA 3\u2019-end processing and polyadenylation (Ahn et al., 2004; Rougemaille et al., 2008; Saguez et al., 2008). In humans, the transcriptional kinases are more divergent, at least CDK9, CDK11, CDK12, and CDK13 are shown to phosphorylate Ser2 on Pol II CTD, among which CDK12 and CDK13 are orthologs of yeast CTDK-1. These human CDKs are recognized as potential targets for cancer therapy (Cao et al., 2014; Parua and Fisher, 2020). TREX and CDK11 have been shown to interact in human cells and play roles in regulating HIV mRNA 3'-end processing (Pak et al., 2015).\n\nThe coordination of TREX and CTDK-1 is largely unknown. Several lines of evidence suggest that a group of shuttling SR proteins could serve as the link for THO and CTDK-1. SR proteins are well recognized as splicing factors, but they also play important roles in coordinating transcription and mRNA export (Reed and Cheng, 2005). In yeast, there are three shuttling SR-like proteins, Gbp2, Hrb1, and Npl3, which play roles in mRNA export by interacting with the mRNA export receptor Mex67\u2022Mtr2 (Hackmann et al., 2014). In humans, three SR proteins, SRSF1, SRSF3, and\u00a0SRSF7, also shuttle between the nucleus and the cytoplasm to facilitate mRNA export by serving as adaptors for the human ortholog of Mex67\u2022Mtr2, the NXF1\u2022NXT1 complex (Huang et al., 2003; Huang and Steitz, 2005; M\u00fcller-McNicoll et al., 2016).\n\nIn yeast cells, TAP-tagged Gbp2 and Hrb1 were shown to associate with the CTDK-1 complex (Hurt et al., 2004). Consistent with this observation, using purified recombinant proteins, we recently showed that Gbp2 RRM domains are sufficient to interact with CTDK-1, involving the N-terminal RS domain in its Ctk1 kinase subunit (Xie et al., 2021). We also found that there is a synthetic growth defect when both CTK1 and GBP2 are knocked out in yeast. The physical and functional interactions between Gbp2 and CTDK-1 provide a link between Gbp2 function and the transcription machinery. Interestingly, in humans, CDK11 interacts with SRSF7 (Hu et al., 2003), and together with TREX, all are implicated in HIV-1 mRNA 3'-end processing (Pak et al., 2015; Valente et al., 2009). Among the three yeast shuttling SR-like proteins, Gbp2 and Hrb1, but not Npl3 have been shown to rely on the THO components Hpr1 and Mft1 to load onto mRNPs (H\u00e4cker and Krebber, 2004). The different requirements could stem from an interaction between THO and Gbp2 and Hrb1, but not Npl3 (Hurt et al., 2004; Mart\u00ednez-Lumbreras et al., 2016).\n\nDespite extensive studies, how TREX, SR proteins, and CTDK-1 coordinately function during mRNA biogenesis is still not clear. To elucidate the molecular mechanisms, we conducted biochemical and structural studies on the yeast TREX complex and Gbp2. Yeast TREX is a ~470 kDa protein complex comprised of the pentameric THO sub-complex (Tho2, Hpr1, Tex1, Mft1, and Thp2), the DEAD box ATPase Sub2, and Yra1. Thus far structural understanding of the TREX complex has been limited to low resolution structures (Pe\u00f1a et al., 2012; Ren et al., 2017). Here we present a 3.7 \u00c5 cryo-EM structure of the yeast THO\u2022Sub2 complex to reveal the molecular details of the THO complex assembly and the THO\u2013Sub2 interactions. We demonstrate direct binding between THO and Gbp2 using recombinant proteins and dissect their mode of interaction using in vitro binding studies and cross-linking mass spectrometry (XL-MS) analysis of the THO\u2013Gbp2 complex. Together, we propose that TREX serves as a landing pad to configure the multi-domain Gbp2 and facilitate its loading onto the mRNP.\n\n## Results and discussion\n\n### THO directly interacts with the SR-like protein Gbp2\n\nWe began by testing the interaction between the THO complex and Gbp2 using purified recombinant proteins. The ~400 kDa THO complex consisting of full-length Tho2, Hpr1, Tex1, Mft1, and Thp2 subunits (denoted by THO\u2013FL, Figure 1A) was expressed in insect cells. Full-length Gbp2 was expressed in insect cells with an N-terminal GST-tag. Using GST pull down assays, we show that Gbp2 directly interacts with THO\u2013FL (Figure 1B). We next tested the binding of Gbp2 to a THO core complex (denoted by THO*, Figure 1A) that contains the ordered regions of all THO\u2019s five subunits. We found that THO* is capable of binding to Gbp2, but with reduced interaction compared to THO\u2013FL (Figure 1B). These results suggest that multiple regions in THO are involved in Gbp2 recognition, including both the THO core and the potentially flexible regions that are truncated in THO*.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain organization of the THO complex, Sub2, and Gbp2. Within THO, the protein regions that are included in the core THO* complex are colored (Tho2 in blue, Hpr1 in green, Tex1 in cyan, Mft1 in light blue, and Thp2 in yellow). Sub2 is colored in pink (Sub2-N) and purple (Sub2-C). Gbp2 contains an N-terminal RS domain followed by three RRM domains. (B) THO directly interacts with Gbp2. In vitro GST-pull down assays with purified recombinant proteins show that both THO\u2013FL and THO* bind to Gbp2 with the former exhibiting stronger interaction. (C) THO binding to Gpb2 requires the N-terminal RS domain of Gbp2.\n\nWe next attempted to dissect the domains in Gbp2 that are involved in THO interaction. Gbp2 contains an N-terminal RS domain followed by three tandem RRM domains, RRM1, RRM2, and RRM3 (Figure 1A). RRM1 and RRM2 domains are capable of binding to RNA. RRM3 was shown to recognize THO (Mart\u00ednez-Lumbreras et al., 2016). Interestingly, we found that Gbp2 without RRM3 still binds to THO (Figure 1C). On the other hand, deletion of the N-terminal RS domain of Gbp2 substantially reduced THO interaction, suggesting that the Gbp2 RS domain is required for stable binding to THO.\n\nTogether, our binding studies indicate that THO\u2013Gbp2 interaction involves multiple domains from both THO and Gbp2. To provide insights into the underlying molecular mechanisms of the THO\u2013Gbp2 recognition, we take an integrative approach combining cryo-EM structure determination of the THO* core complex and XL-MS analysis of the THO\u2013FL interaction with Gbp2.\n\n### Cryo-EM structure of the THO*\u2022Sub2 complex at 3.7 \u00c5 resolution\n\nThe THO complex is an integrated structural and functional unit that regulates the activity of Sub2. We previously determined a THO\u2022Sub2 crystal structure at 6.0 \u00c5 resolution (Ren et al., 2017). Here, we carried out single particle cryo-EM studies on THO*\u2022Sub2. For cryo-EM sample preparation, the THO*\u2022Sub2 complex was subjected to cross-linking with glutaraldehyde to obtain a more homogeneous sample. Full length THO complex isolated from yeast cells was shown to form a dimeric assembly by negative stain EM (Pe\u00f1a et al., 2012). We observed a higher ordered assembly composed of four THO*\u2022Sub2 protomers (Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, and Supplementary file 1). This THO*\u2022Sub2 tetramer can be dissected as two dimers related by twofold symmetry, Dimer 1 (protomer 1A and 1B) and Dimer 2 (protomer 2A and 2B). Within each dimer, a coiled-coil region (corresponding to Mft1 and Thp2) from each protomer interact via a \u2018head on\u2019 mode. The interaction between the two dimers is mediated by the same coiled-coil region via a \u2018side to side\u2019 mode involving protomer 1A and 2A. It is interesting to note that the recent structure of human THO in association with UAP56, the human ortholog of Sub2, also exhibits a tetrameric assembly (P\u00fchringer et al., 2020). The \u2018head on\u2019 mode interaction is conserved between yeast THO\u2022Sub2 and human THO\u2022UAP56 (Figure 2\u2014figure supplement 2A and B). However, tetramerization of human THO\u2022UAP56 is mediated by the Thoc6 subunit and a Thoc5 domain that do not exist in yeast. Our XL-MS analysis of the full length THO in association with Gbp2 (details in later section) identified multiple cross-links between a \u2018bulge\u2019 (Mft1 a.a. 142\u2013196) and Tho2 C-terminal region (Figure 2\u2014figure supplement 2C and Supplementary file 2) that can only be explained by the interface between two protomers within a dimer, whereas no cross-links support the \u2018side to side\u2019 interface of the tetramer. Of note, the THO* core contains\u00a0~600 residues less than the full length THO complex. Given that both full length THO isolated from yeast cells (Pe\u00f1a et al., 2012) and the full length THO in association with Sub2 purified from recombinant proteins (Schuller et al., 2020) exhibit a dimer, we speculate that the THO*\u2022Sub2 tetramer was formed due to the truncations in THO*. Therefore, we focus on the THO*\u2022Sub2 dimer in this study.\n\nEach THO*\u2022Sub2 dimer contains a rigid protomer (1A or 2A) and a mobile protomer (1B or 2B) (Figure 2\u2014figure supplement 2C). This dimer observed by cryo-EM is consistent with our previously determined crystal structure which contains one THO*\u2022Sub2 and a second THO*\u2022Sub2 that is only partially resolved (Figure 2\u2014figure supplement 2D;\u00a0Ren et al., 2017). Comparison of the THO*\u2022Sub2 dimer in our work and the recently reported structures of yeast THO\u2022Sub2 and human THO\u2022UAP56 reveals that the relative orientation between the protomers is flexible (Figure 2\u2014figure supplement 2E;\u00a0P\u00fchringer et al., 2020; Schuller et al., 2020). For obtaining the best quality map for model building, the THO*\u2022Sub2 protomer was extracted from the two rigid copies (1A and 2A) within the tetramer and refined to an overall resolution at 3.7 \u00c5 (Figure 2\u2014figure supplement 1 and Supplementary file 1). The electron density map allows us to build an atomic model of the THO complex de novo (Figure 2A and Figure 2\u2014figure supplement 3). The THO model contains 2000 residues with 90% assigned residue register. Sub2 was modeled using our previously determined crystal structure (Ren et al., 2017). By having the resolution to build an atomic model, we now reveal the molecular details of the structural core of THO and its interaction with Sub2.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig2-v2.jpg)\n\n**Figure 2.:** (A) Overall architecture of the THO*\u2022Sub2 complex in front and back views. (B) Dissected view of the THO*\u2022Sub2 complex subunits. The largest THO subunit, Tho2, contains a \u2018head\u2019, a \u2018neck\u2019, and an \u03b1-solenoid \u2018trunk\u2019. Hpr1 contains lobe A, lobe B, followed by an extended \u2018belt\u2019.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Cryo-EM data processing workflow. (B) Fourier shell correlation (FSC) curves between the two half maps of the THO*\u2022Sub2 protomer.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) THO*\u2022Sub2 particle exhibits an assembly of four THO*\u2022Sub2 protomers. It can be dissected as two dimers related by twofold symmetry. Within each dimer, a coiled-coil region from each protomer interacts via a \u2018head on\u2019 mode. The two dimers interact via a \u2018side to side\u2019 mode with the same coiled-coil region. (B) The human THO\u2022UAP56 complex tetramer (PDB ID 7APK). The \u2018head on\u2019 mode is conserved from yeast to human in forming the THO dimer. Tetramerization of human THO\u2022UAP56 is mediated by the Thoc6 subunit and a Thoc5 region, both of which do not exist in yeast THO complex. (C) Features of the THO*\u2022Sub2 dimer interface. In addition to the \u2018head on\u2019 interaction, XL-MS analysis in this study identified multiple cross-links between a \u2018bulge\u2019 formed by Mft1 and the C-terminal region of Tho2. Furthermore, a \u2018bridge\u2019 is observed connecting the two THO*\u2022Sub2 protomers. (D) The THO\u2022Sub2 crystal structure (PDB ID 5SUQ) from our previous work corresponds to a rigid THO\u2022Sub2 protomer and partial structure of a mobile protomer. (E) Surface representation of the recently reported yeast THO\u2022Sub2 (PDB ID 7AQO) and human THO\u2022UAP56 (PDB ID 7APK) structures.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Local resolution of the final reconstruction calculated by Relion. Electron density maps at the Tho2 \u2018neck\u2019 (B), the Tho2\u2013Tex1 interface (C), and the Tho2\u2013Sub2 interface (D).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Tho2 sequences from S. cerevisiae, D. melanogaster, D. rerio, M. musculus, and H. sapiens were aligned with ClustalW. Shading indicates the degree of conservation across homologues. Tho2 secondary structural features from our cryo-EM structure are shown above the sequence alignment with \u03b1-helices represented as blue bars and \u03b2-sheets represented as blue arrows. The model of Tho2 contains 10 poly-Ala helices at its C-terminus represented by gray line. Three poly-Ala helices at the N-terminus of Tho2 are represented by gray bars. Sequences that are not present in the model (loops and highly flexible regions) are represented by dotted lines. The regions of Tho2 that form interaction interfaces with each of the other THO complex subunits were identified using PISA, and these interaction regions are shown below the sequence alignment. The coloration for the interaction regions is consistent with the color scheme throughout the manuscript with Hpr1 in green, Tex1 in cyan, Mft1 in light blue, Thp2 in yellow, Sub2-N in pink, and Sub2-C in purple.\n\nThe structure of the THO complex reveals intimate folding of the five subunits (Figure 2B and Figure 2\u2014figure supplement 3). Tho2, the largest subunit spanning the entire length of the elongated THO, plays a critical role in THO assembly. Tho2 can be dissected as \u2018head\u2019, \u2018neck\u2019, and \u2018trunk\u2019 sections. The Tho2 \u2018head\u2019 contains an N-terminal helical bundle that clusters with the N-termini of Hpr1, Mft1, and Thp2. Tho2 \u2018neck\u2019 is comprised of a helix followed by a loop. The \u2018neck\u2019 is embraced by a bi-lobed Hpr1 (lobe A and lobe B). Tho2 \u2018trunk\u2019 folds into an alpha solenoid structure, which binds the Tex1 \u03b2-propeller at its center and stabilizes a semi-open Sub2 ATPase at its C-terminal end. An extended region at Hpr1 C-terminal region forms a \u2018belt\u2019 lining the Tho2 \u2018trunk\u2019.\n\n### Assembly of the THO\u2022Sub2 complex\n\nTho2 is the main scaffold upon which other THO constituents assemble (Figure 2\u2014figure supplement 4). Tho2 features a total contact area of\u00a0~9000 \u00c52 with the other four THO subunits. Tho2 \u2018head\u2019 domain binds to a four helix bundle, formed by two pairs of anti-parallel helices contributed by Mft1 and Thp2, respectively (Figure 3A). Tho2 \u2018head\u2019 and the helix in its \u2018neck\u2019 sandwich the very N-terminal helix of Mft1 (residues 6\u201317). The opposite side of the Mft1/Thp2 four helix bundle runs in parallel with Hpr1 lobe A (residues 1\u2013230). The Tho2 \u2018neck\u2019, particularly the loop (residues 167\u2013179), is embraced by the Hpr1 lobe A and lobe B (residues 250\u2013490) (Figure 3B). Although the \u2018neck\u2019 is largely buried, it contains multiple hydrophilic residues including K171, N173, and E177. Tho2 and Hpr1 residues at this interface are highly conserved from yeast to human (Figure 2\u2014figure supplement 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig3-v2.jpg)\n\n**Figure 3.:** (A) A highly intimate interface involving the Tho2 \u2018head\u2019. (B) The Tho2 \u2018neck\u2019 is embraced by the two lobes of Hpr1. (C) The Hpr1 exhibits an extended \u2018belt\u2019 lining the Tho2 \u2018trunk\u2019. (D) The Tex1 beta propeller sits at the center of the Tho2 \u2018trunk\u2019. (E) The interface between Tho2 and Sub2-C.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cryo-EM structure is colored in blue (Tho2), pink (Sub2-N), and purple (Sub2-C). Crystal structure is colored in light blue (Tho2) and gray (Sub2-N and Sub-C).\n\nThe \u2018trunk\u2019 of Tho2 (residues 180\u20131200) forms an alpha-solenoid. Hpr1 \u2018belt\u2019 contains residue assignment from residues 491 to 535 (Figure 3C). It starts from the beginning of the Tho2 \u2018trunk\u2019, featuring aromatic residues at the interface including F511, F515, F518, and W532, and likely extends further to the C-terminus of Tho2 \u2018trunk\u2019 as evidenced by our XL-MS studies discussed later. The seven-bladed Tex1 \u03b2-propeller sits at the center of the Tho2 \u2018trunk\u2019 via blades 4 and 5 (Figure 3D). The loops connecting blades 4/5 (4D5A) and 5/6 (5D6A), as well as the 5BC loop within blade five contact a pair of Tho2 helices (residues 626\u2013666), whose opposite side binds to the C-terminal RecA domain of Sub2 (Sub2-C). This Tho2\u2013Tex1 interaction is conserved from yeast to human based on the sequence homology (Figure 2\u2014figure supplement 4). In addition, a prominent extension from Tho2 is projected outward perpendicular to the Tho2 \u2018trunk\u2019. The C-terminal part of this extension (residues 464\u2013485) forms a hairpin that winds through the bottom face of the Tex1 \u03b2-propeller. This additional Tho2\u2013Tex1 binding mode is likely a yeast-specific mechanism as human and other metazoan THOs lack this extension (Figure 2\u2014figure supplement 4).\n\nRegulation of the enzymatic activity of the DEAD-box ATPase is vital to the stepwise remodeling reactions mediated by the TREX complex (Xie and Ren, 2019). We previously showed that THO stimulates the ATPase activity of Sub2 in vitro (Ren et al., 2017). The cryo-EM structure provides new insights into the molecular details of their interaction. Overall, THO stabilizes a semi-open conformation of Sub2 by interacting with both RecA domains (Sub2-N and Sub2-C). Comparison of the cryo-EM structure and our previous THO\u2022Sub2 crystal structure shows that these two structures are in excellent agreement (Figure 3\u2014figure supplement 1). The cryo-EM structure reveals the atomic details of the THO\u2013Sub2 interactions at the Sub2-C interface (Figure 3E). Sub2-C makes contacts with two pairs of Tho2 helices (residues 625\u2013695). The Sub2 loop consisting of residues 304\u2013308 is situated at the center of the interface featuring electrostatic interactions via E305 and N307. In addition, another Sub2 loop consisting of residues 355\u2013358 makes critical contacts via F355 and R358. The importance of this loop is evidenced by our previous mutagenesis studies that show the ATPase activity of Sub2 mutant E356A/K357A/R358A cannot be activated by THO (Ren et al., 2017). Sub2 assumes a closed conformation in its enzymatic active state, in which Sub2-N and Sub2-C clamp onto its RNA substrate. As we previously illustrated (Ren et al., 2017), the semi-open Sub2 is more similar to its active state than free Sub2 in which Sub2-N and Sub2-C are likely separated. In vitro, the observed stimulation of Sub2 activity may reflect change in dynamics of switching between different conformational states as a result of THO binding. In cells, Sub2 is recruited to the transcription machinery via THO and the semi-open Sub2 may represent a \u2018primed\u2019 state that enables efficient transition to the active state when a physiological RNA substrate is encountered. This Sub2 activation mechanism is a conserved mechanism shared by several other DEAD-box proteins including Dbp5 which functions at the terminal step of nuclear mRNA export at the cytoplasmic side of the nuclear pore complex (Folkmann et al., 2011; Mathys et al., 2014; Montpetit et al., 2011; Sch\u00fctz et al., 2008).\n\n### XL-MS analysis of the THO\u2022Gbp2 complex\n\nThe THO complex contains a significant amount of potentially flexible regions including\u00a0~400 residues at the Tho2 C-terminal end and\u00a0~150 residues at the Hpr1 C-terminal end. These flexible regions are presumably not suitable for structural studies. Our binding studies show that these flexible regions are involved in Gbp2 recognition (Figure 1B). To gain further insights into the THO complex arrangement and the THO\u2013Gbp2 interaction, we took a XL-MS approach (Chait et al., 2016; Leitner et al., 2016; Yu and Huang, 2018) to analyze the complex between THO\u2013FL and Gbp2. We used both EDC and DSS, a carboxyl and amine-reactive cross-linker and an amine-specific cross-linker that cross-link residues with C\u03b1-C\u03b1 distance less than 17 \u00c5 and 30 \u00c5, respectively (Kim et al., 2018; Shi et al., 2014). We obtained a total of 200 unique EDC cross-links, of which 69 were interprotein cross-links including nine cross-links between Tho2 and Gbp2. We also obtained a total of 133 unique DSS cross-links to complement the EDC cross-link data, with 53 of these cross-links being interprotein cross-links (Figure 4A, Figure 4\u2014figure supplement 1A, and Supplementary file 2). The cross-linking data is highly consistent with the THO structure (Figure 4\u2014figure supplement 1B and C). 91% and 100% of the EDC and DSS cross-links that can be mapped to the structure fall within the expected distance restraint.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig4-v2.jpg)\n\n**Figure 4.:** (A) Circular plot showing the cross-linking sites with EDC cross-linker. Each THO\u2022Gbp2 complex subunit is represented as a colored segment with the amino acid residues indicated. Intermolecular cross-links are mapped inside the circle and the intramolecular cross-links are mapped outside the circle. The cross-links between Tho2 and Gbp2 are colored in orange. (B) Schematics of the arrangement of the Tho2\u2013CTD, which contains a \u2018bridge\u2019 connecting two THO molecules, followed by a structured segment and a flexible tail (residues ~1400\u20131597). The EDC cross-links between the structured Tho2\u2013CTD fragment and Hpr1 (E297, D434, and K462) as well as Mft1 (D129) are indicated by yellow lines. The DSS cross-link between Tho2\u2013CTD and Hpr1\u2013K467 is indicated by a purple line. (C) Schematics of the THO\u2013Gbp2 interactions (left) and the identified cross-linking sites between Tho2\u2013CTD and Gbp2 RRM domains. (D) In vitro GST-pull downs show that Gbp2 binds to the THO\u2022Sub2 complex.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Circular plot showing the cross-linking sites with DSS cross-linker. (B) Distance distribution of the cross-links. We mapped the C\u03b1\u2013C\u03b1 distances between cross-linked residues onto the dimeric THO structure (PDB ID 7AQO). 91% of the EDC cross-links and 100% of the DSS cross-links that can be mapped to the structure fall within the expected threshold of 17 \u00c5 and 30 \u00c5. (C) EDC (yellow) and DSS (purple) cross-links are mapped on the THO structure (PDB ID 7APX).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The C-terminal tail of Tex1 (residues 367\u2013422) is localized near Hpr1 lobe B. The cross-linking sites are indicated by yellow lines. (B) The Hpr1-CTD binds to the C-terminus of the Tho2 \u2018trunk\u2019 and is localized close to the neighboring THO molecule. (C) Structural alignment of the dimeric THO assembly between our cryo-EM structure (colored as in B) and the recently reported THO\u2013Sub2 structure (colored in gray, PDB ID 7AQO). Sub2 is omitted for clarity. The structures are aligned using one THO molecule, revealing significant flexibility in the relative orientation between the two THO molecules.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** In vitro GST-pull down with excessive amount of Sub2 shows that Gbp2 does not make direct contact with Sub2 and Gbp2 still binds to THO\u2022Sub2 under this condition.\n\nAs previously mentioned, our XL-MS data provide experimental evidence to support the \u2018head on\u2019 THO\u2013THO dimer (Figure 2\u2014figure supplement 2C). In particular, we identified multiple cross-links involving the Mft1 \u2018bulge\u2019 and the C-terminal region of Tho2 (Mft1-K182/Tho2-K1103, Mft1-K165/Tho2-K967, Mft1-K170/Tho2-K967, and Mft1-K174/Tho2-K967) (Supplementary file 2). These cross-links unambiguously point to the THO\u2013THO interface within the \u2018head on\u2019 dimer. Furthermore, cross-links between THO subunits provide insights into the C-terminal domain of THO (Tho2\u2013CTD, residues 1200\u20131597) downstream of the \u2018trunk\u2019 domain and the role it plays on the arrangement of the THO\u2013THO dimer. The Tho2\u2013CTD contains a \u2018bridge\u2019 that connects THO to the neighboring THO molecule as indicated by our cryo-EM density map (Figure 4B, Figure 2\u2014figure supplement 2C). Comparison with the recently published THO\u2013Sub2 structure reveals that the bridge starts at Tho2 residue 1200 (Schuller et al., 2020). The \u2018bridge\u2019 is followed by a structured segment, as suggested by the clustered cross-linking between Tho2 (residues 1260\u20131369) and the Hpr1 lobe B (E297, D434, K462, and K467) as well as Mft1 D129 (Figure 4B). In line with our observation, Tho2 (residues 1279\u20131405) was shown to form a rigid core through proteolysis and it folds into a helical structure as indicated by CD spectra (Pe\u00f1a et al., 2012). Importantly, cross-linking involving the structured segment indicates that the Tho2\u2013CTD crosses over to the neighboring THO near its Hpr1 lobe B. The structured segment is followed by a highly flexible tail (residues\u00a0~1400\u20131597), as this region cross-links to spatially separated residues. For example, Tho2 K1576 cross-links to both Hpr1 lobe B (E297 and D434) and Tex1 (D341). In support of the flexibility of the Tho2 tail, a previous study showed that Tho2 (1411\u20131530) was highly sensitive to trypsin digestion (Pe\u00f1a et al., 2012). Both our THO\u2022Sub2 structure and that recently published by others (Schuller et al., 2020) capture an asymmetric dimer exhibiting significant flexibility in the relative orientation of two THO\u2022Sub2 molecules (Figure 4\u2014figure supplement 2). The \u2018bridge\u2019 is only observed at the proximal side of the THO dimer. It is conceivable that the Tho2\u2013CTD will exhibit more significant flexibility at the distal side of the THO dimer. Our data also provide insights into the arrangement of the Tex1 C-terminal tail (residues 367\u2013422) and Hpr1\u2013CTD (residues 600\u2013752) (Figure 4\u2014figure supplement 2). The extensive cross-links observed between Tho2\u2013CTD and Hpr1\u2013CTD suggests that they are spatially close to each other and are likely localized in between two THO molecules. Together, XL-MS results provide critical insights into the regions in THO that are not visible in the cryo-EM structures.\n\nCross-linking between Tho2 and Gbp2 indicates that Tho2\u2013CTD is in close proximity to all three Gbp2 RRM domains (Figure 4A and C). Each of the three RRM domains cross-links to the structured segment in Tho2\u2013CTD: RRM1-K190 to Tho2-K1349, RRM2-E241 to Tho2-K1250, and RRM3-D367 to Tho2-K1335. These results suggest that Gbp2 is localized in between two THO molecules near Hpr1 lobe B, as these involved Tho2 residues (K1250 and K1335) are cross-linked to Hpr1 lobe B (Figure 4B). Our data also show that each RRM domain cross-links to the highly flexible tail in Tho2\u2013CTD. It is possible that, in the presence of Gbp2, the Tho2 tail may assume a more specific conformation.\n\nOur XL-MS results (Figure 4C), together with the in vitro binding studies (Figure 1B and C), demonstrate that Tho2\u2013CTD contributes to Gbp2 interaction. The C-terminal domain of Tho2 also binds to RNA/DNA (Pe\u00f1a et al., 2012). The function of Tho2\u2013CTD in vivo was supported by the growth defect of tho2-\u0394CTD yeast strains (Pe\u00f1a et al., 2012). Importantly, the synthetic growth defect of tho2-\u0394CTD and \u0394gbp2 strains highlights their functional links (Mart\u00ednez-Lumbreras et al., 2016).\n\nAs both Gbp2 and Sub2 bind to the C-terminal region of Tho2, we next asked whether Gbp2 and Sub2 can associate with the THO complex together. GST\u2013Gbp2 was used to pull down THO in the presence of Sub2. We found that GST\u2013Gbp2 is able to pull down both THO and Sub2, and THO and Sub2 appear to be in a stoichiometric amount relative to each other (Figure 4D). In addition, GST\u2013Gbp2 alone does not make direct contact with Sub2 (Figure 4\u2014figure supplement 3). Our results suggest that THO, Sub2, and Gbp2 can form a THO\u2022Sub2\u2022Gbp2 complex, and therefore Gbp2 could function together with the TREX complex during nuclear mRNP maturation.\n\n### Working model for coordinated function of TREX and Gbp2\n\nTogether with our recent characterization of Gbp2 interaction with the RNA Pol II Ser2 kinase CTDK-1 complex, we propose a working model for the coordinated function between TREX, Gbp2, and CTDK-1 (Figure 5). Gbp2 interaction with CTDK-1 provides a means to associate with the transcription machinery (Hurt et al., 2004; Xie et al., 2021). We envision that TREX and Gbp2 function coordinately during nuclear mRNP maturation and surveillance. During transcription, faulty assembly of mRNPs is a threat to genomic stability. If the defective mRNPs persist, they need to be sensed by a surveillance system and degraded. In yeast, Gbp2 and Hrb1 were shown to play key roles in mRNP surveillance (Hackmann et al., 2014). Interactions between Gbp2 and Mex67 for export and between Gbp2 and Mtr4 for degradation through the RNA exosome complex are mutually exclusive. TREX travels with the transcription machinery (Meinel et al., 2013) and its function in mRNP assembly is well documented. In THO/Sub2 mutant yeast cells, mRNP assembly is defective and faulty mRNPs cannot be degraded efficiently, which leads to the formation of heavy chromatin (Rougemaille et al., 2008; Saguez et al., 2008). In humans, depletion of TREX complex components leads to R-loop accumulation, transcriptional elongation defects, and trapped mRNP in nuclear speckles (Dias et al., 2010; Dom\u00ednguez-S\u00e1nchez et al., 2011; P\u00e9rez-Calero et al., 2020; Wang et al., 2018). The extensive interactions between THO and Gbp2 suggest that THO could serve as a landing pad for Gbp2 loading onto mRNPs to function as a key surveillance factor during mRNP maturation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig5-v2.jpg)\n\n**Figure 5.:** During transcription, the yeast CTDK-1 complex phosphorylates Ser2 of the RNA Pol II CTD. The N-terminal extension in CTDK-1\u2019s kinase subunit Ctk1 recognizes the RRM domains of Gbp2, connecting Gbp2 to the transcription machinery. TREX travels along with the transcription machinery and recognizes multiple domains of Gbp2, possibly facilitating its loading onto the maturing mRNP. Both TREX and Gbp2 are involved in subsequent loading of the export receptor Mex67\u2022Mtr2 to generate export competent mRNPs.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65699/elife-65699-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** THO from our cryo-EM structure is represented as ribbon. Sub2 in a closed conformation in association with RNA (PDB ID 5SUP) is aligned to Sub2-C in THO*\u2022Sub2 and represented as a surface model. One copy of Sub2 is shown bound to the C-terminal region of Yra1 (Yra1C) (PDB ID 5SUP). The other copy of Sub2 is shown bound to the N-terminal region of Yra1 (Yra1N), which is thought to interact with Sub2 in the same manner as Yra1C. This model depicts a hypothetical model in which one Yra1 molecule is engaged with two copies of THO\u2022Sub2.\n\nBoth Gbp2 and the TREX complex component Yra1 serve as adaptors for the export receptor Mex67\u2022Mtr2 to facilitate its loading onto mRNPs (Hackmann et al., 2014; Stutz et al., 2000). In humans, evidence suggests that the human THO complex also makes direct contact with the export receptor (Viphakone et al., 2012). We previously determined the structure of Sub2 in association with RNA and the C-terminal region of Yra1 (Ren et al., 2017). Interestingly, Yra1 contains a second Sub2 binding site at its N-terminus (Str\u00e4sser and Hurt, 2001; Zenklusen et al., 2001). It is plausible to speculate that one Yra1 can engage with two Sub2 ATPase molecules in the THO\u2022Sub2 complex (Figure 5\u2014figure supplement 1). In humans, SR proteins and Alyref, the ortholog of Yra1, bind to overlapping sites on the export receptor (Huang et al., 2003), suggesting that Gbp2 and Yra1 may not act together to load Mex67\u2022Mtr2. Intriguingly, the multimeric THO complex in principle can provide a platform to engage with both Gbp2 and Yra1, with each of them recruiting one Mex67\u2022Mtr2 molecule. Alternatively, THO may engage with Gbp2 and Yra1 during different stages of mRNP maturation. Overall, our work supports a view that THO functions as a general platform to recruit multiple export factors, but further investigations are needed to pinpoint how THO spatially and temporally coordinates the actions of different export factors to prepare mRNPs for export.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (S. frugiperda)</td>\n      <td>Sf9</td>\n      <td>Thermo Fisher Scientific</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (T. ni)</td>\n      <td>High Five</td>\n      <td>Thermo Fisher Scientific</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (E. coli)</td>\n      <td>DH10Bac</td>\n      <td>Thermo Fisher Scientific</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (E. coli)</td>\n      <td>Rosetta</td>\n      <td>Novagen</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>Hpr1</td>\n      <td>Uniprot</td>\n      <td>P17629</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>Tho2</td>\n      <td>Uniprot</td>\n      <td>P53552</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>Mft1</td>\n      <td>Uniprot</td>\n      <td>P33441</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>Thp2</td>\n      <td>Uniprot</td>\n      <td>O13539</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>Tex1</td>\n      <td>Uniprot</td>\n      <td>P53851</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. bayanas)</td>\n      <td>Tex1</td>\n      <td>GenBank</td>\n      <td>AACA01000 273.1</td>\n      <td>Bases 2762\u20134030</td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>Sub2</td>\n      <td>Uniprot</td>\n      <td>Q07478</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>Gbp2</td>\n      <td>Uniprot</td>\n      <td>P25555</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n      <td>COOT 0.8.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chimera</td>\n      <td>https://www.cgl.ucsf.edu/chimera/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>Molecular Graphics System, Schrodinger, LLC</td>\n      <td>PyMOL 2.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>https://www.phenix-online.org</td>\n      <td>Phenix 1.11</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Relion</td>\n      <td>https://www3.mrc-lmb.cam.ac.uk/relion/</td>\n      <td>Relion 3.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pLink2</td>\n      <td>http://pfind.ict.ac.cn/software/pLink/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CX-Circos</td>\n      <td>http://cx-circos.net</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Xlink Analyzer</td>\n      <td>https://www.embl-hamburg.de/XlinkAnalyzer/XlinkAnalyzer.html</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmids and proteins\n\nBoth THO\u2013FL and the THO* core complex were expressed in High-Five insect cells by coinfection of recombinant baculoviruses. THO\u2013FL contains full length S. cerevisiae Tho2 (residues 1\u20131597), Hpr1 (residues 1\u2013752), Tex1 (residues 1\u2013422), Mft1 (residues 1\u2013392), and Thp2 (residues 1\u2013261) subunits and the former four subunits each contains a TEV cleavable N-terminal His tag. The THO* complex contains S. cerevisiae Tho2 (residues 1\u20131257), Hpr1 (residues 1\u2013603), Mft1 (residues 1\u2013256), full length Thp2, and S. bayanas Tex1 (residues 1\u2013380) with Tho2 and Hpr1 each containing a TEV cleavable N-terminal His tag. High-Five cells were harvested 48 hr after infection. The cells were sonicated in a lysis buffer containing 50 mM Tris pH 8.0, 300 mM NaCl, 10 mM imidazole, 1 mM PMSF, 5 mg/L aprotinin, 1 mg/L pepstatin, 1 mg/L leupeptin, and 0.5 mM TCEP. THO complexes were purified by Ni affinity chromatography, followed by TEV digestion to remove His tags. The proteins were then purified on a mono Q column (GE Healthcare) and subjected to further size exclusion purification with a Superose 6 column (GE Healthcare) in 10 mM Tris pH 8.0, 150 mM NaCl, and 0.5 mM TCEP.\n\nGST tagged Gbp2 (residues 1\u2013427) and Gbp2\u2206RRM3 (residues 1\u2013316) were expressed in High-Five cells. Cells were lysed in the same condition as the THO complexes. The GST tagged Gbp2 proteins were purified using glutathione sepharose 4B resin (GE Healthcare) followed by size exclusion chromatography using a Superdex 200 column (GE Healthcare) in 10 mM Tris pH 8.0, 300 mM NaCl, and 0.5 mM TCEP.\n\nSub2 and Gbp2\u2206RS (residues 107\u2013427) were expressed in Rosetta E. coli cells (Stratagene) with an N-terminal TEV cleavable GST tag. Protein expression was induced at an OD600 of 1.0 with 0.5 mM IPTG at 20\u00b0C for 16 hr. Cells were lysed in the same lysis buffer as mentioned above. Proteins were first purified using glutathione sepharose 4B resin. For Sub2, the GST tag was removed by TEV, and the protein was purified on a mono Q column. Untagged Sub2 and GST\u2013Gbp2\u2206N were further purified on a Superdex 200 column in 10 mM Tris pH 8.0, 150 mM NaCl, and 0.5 mM TCEP.\n\nAll purified proteins were concentrated, flash frozen in liquid nitrogen, and stored at \u221280\u00b0C.\n\n### Cryo-EM sample preparation and data collection\n\nPurified THO* and Sub2 were first buffer exchanged to 10 mM HEPES pH 7.0, 100 mM potassium acetate, and 0.5 mM TCEP. THO* was incubated with threefold molar excess of Sub2 in the presence of 0.05% glutaraldehyde for 30 min at room temperature. Cross-linking was quenched with 0.1 M Tris pH 8.0 and the sample was concentrated to 0.5 mg/mL. 1.5 \u00b5L of THO*\u2022Sub2 was applied to a glow-discharged UltrAuFoil R 1.2/1.3 grids (Quantifoil). Grids were blotted for 3 s with a blotting force of 3 and 100% humidity at 22\u00b0C and plunged into liquid ethane using an FEI Vitrobot Mark IV (Thermo Fisher).\n\nElectron micrographs were acquired with a Titan Krios electron microscope (Thermo Fisher) equipped with a Falcon 3EC detector (Thermo Fisher). Movies were collected with EPU with a calibrated pixel size of 0.681 \u00c5/pixel. A total of 4907 movies were collected with a defocus range from 0.8 \u03bcm to 2.0 \u03bcm. Description of the cryo-EM data collection parameters can be found in Supplementary file 1.\n\n### Cryo-EM data processing\n\nMotion correction was performed using MotionCor2 (Zheng et al., 2017). The parameters of the contrast transfer function (CTF) were estimated using Gctf (Zhang, 2016). We initially selected 396 K particles from 4907 micrographs with automatic particle picking in RELION-3 (Zivanov et al., 2018). The picked particles were binned by two and subjected to reference-free 2D classification. 205 K particles were selected for 3D classification with C2 symmetry using an initial model generated by EMAN2 (Tang et al., 2007). Each particle contains four copies of the THO\u2022Sub2 complex with two copies significantly more flexible than the others. 15 K particles were selected for 3D refinement using a mask covering the two ordered THO\u2022Sub2 molecules with C2 symmetry. The particles were then re-extracted at the original pixel size of 0.681 \u00c5/pixel and subjected to Bayesian polishing, CTF refinement, and 3D refinement. Refinement of the entire four copies of THO\u2022Sub2 molecules generated a map at 4.80 \u00c5 resolution. We extracted 30 K THO\u2022Sub2 protomers from the ordered two copies and refinement using a mask covering one THO\u2022Sub2 molecule yielded a map of THO\u2022Sub2 at 3.70 \u00c5 resolution with a sharpening B factor of 86 \u00c52 as assessed by an FSC threshold of 0.143.\n\n### Model building\n\nThe 3.70 \u00c5 THO\u2022Sub2 map was used for model building in COOT (Emsley et al., 2010). The five subunit THO complex was built de novo. Individual RecA domains of Sub2 were placed using our previously determined atomic resolution structure (PDB ID 5SUP). The THO\u2022Sub2 model was subjected to real-space refinement in Phenix (Adams et al., 2010). The final THO\u2022Sub2 model contains Tho2 (residues 37\u2013913, followed by 10 poly-Ala helices at the C-terminus), Hpr1 (residues 4\u2013535), Tex1 (residues 68\u2013366), Mft1 (residues 5\u2013227), Thp2 (residues 8\u2013227), and Sub2. Figures were prepared using Chimera (Pettersen et al., 2004) or PyMOL (Molecular Graphics System, Schrodinger, LLC).\n\n### GST pull-down assays\n\n1 \u03bcM of GST or GST-tagged Gbp2 variants was incubated with 1 \u03bcM of THO variants or with 1 \u03bcM of THO and Sub2 (2 \u03bcM for Figures 4D, 8 \u03bcM for Figure 4\u2014figure supplement 3) as indicated in the binding buffer (20 mM HEPES pH 7.0, 80 mM NaCl, and 0.5 mM TCEP) at room temperature for 10 min. The reaction mixtures were then added to\u00a0~15 \u03bcL glutathione resin in an Eppendorf tube and binding was allowed to proceed at room temperature for 30 min with gentle tapping to mix every 3\u20135 min. Beads were washed twice with 500 \u03bcL washing buffer containing 20 mM HEPES pH 7.0, 80 mM NaCl (for Figure 1B) or 50 mM NaCl (for Figure 1C, Figure 4D,\u00a0and Figure 4\u2014figure supplement 3), and 0.5 mM TCEP. Bound proteins were eluted with washing buffer supplemented with 20 mM glutathione and analyzed using Coomassie-stained SDS-PAGE gels. The experiments were repeated three times independently.\n\n### Cross-linking mass spectrometry analysis\n\nFor EDC cross-linking, 1 \u03bcM of THO\u2013FL and 1 \u03bcM of GST\u2013Gbp2 were incubated in 10 mM HEPES pH 7.0, 105 mM NaCl, 0.5 mM TCEP in the presence of 20 mM EDC and 0.5 mM sulfo-DHS at room temperature for 40 min. The reaction was quenched at room temperature for 20 min by adding Tris pH 8.0 and \u03b2-mercaptoethanol to a final concentration of 50 mM and 20 mM, respectively. DSS cross-linking was performed in the same conditions except that 0.5 mM DSS was used and only Tris pH 8.0 was used for quenching the reaction.\n\nThe DSS and EDC cross-linked samples were directly processed for in-solution Trypsin and Lys-C digestion. The samples were reduced with 5 mM DTT and 5 mM TCEP in 8\u00a0M urea buffer (50 mM ammonium bicarbonate) and were then incubated with 30 mM iodoacetamide at room temperature for 30 min in the dark. 30\u201345 \u03bcg of the purified complex was digested with Trypsin and Lys-C using a 1:100 ratio for each protease upon diluting the sample to 1 M urea. The proteolysis reaction occurred overnight (12\u201316 hr) at 37\u00b0C. After overnight digestion with trypsin, the complex was digested with an additional 1:100 ratio of trypsin at 37\u00b0C for 2 hr. The resulting mixture was acidified\u00a0and desalted by using a C18 cartridge (Sep-Pak, Waters).\n\n1\u20132 \u03bcg of the trypsin digested cross-linked complex was analyzed with a nano-LC 1200 that is coupled online with a Q Exactive HF-X Hybrid Quadrupole Orbitrap mass spectrometer (Thermo Fisher) (Xiang et al., 2020a; Xiang et al., 2020b). Briefly, desalted peptides were loaded onto a Picochip column (C18, 1.9 \u00b5m particle size, 200 \u00c5 pore size, 50 \u03bcm \u00d7\u00a025 cm; New Objective) and eluted using a 60 min liquid chromatography gradient (5% B\u20138% B, 0\u20132 min; 8% B\u201340% B, 2\u201350 min; 40%B\u2013100% B, 50\u201360 min; mobile phase A consisted of 0.1% formic acid (FA), and mobile phase B consisted of 0.1% FA in 80% acetonitrile). The flow rate was\u00a0~350 nL/min. The QE HF-X instrument was operated in the data-dependent mode, where the top six most abundant ions (mass range 350\u20132000, charge state\u20094\u20138) were fragmented by high-energy collisional dissociation (HCD). The target resolution was 120,000 for MS and 15,000 for tandem MS (MS/MS) analyses. The quadrupole isolation window was 1.6\u2009Th, and the maximum injection time for MS/MS was set at 300 ms.\n\nAfter the MS analysis, the data was searched by pLink2 for the identification of cross-linked peptides (Chen et al., 2019). The mass accuracy was specified as 10 and 20 p.p.m. for MS and MS/MS, respectively. Other search parameters included cysteine carbamidomethylation as a fixed modification and methionine oxidation as a variable modification. A maximum of three trypsin missed-cleavage sites were allowed. The cross-link spectra were then manually checked to remove potential false-positive identifications as previously described (Xiang et al., 2020b). The cross-linking data was analyzed by CX-Circos (http://cx-circos.net). The distance distribution of the cross-links onto the THO structure was performed with Xlink Analyzer (Kosinski et al., 2015).\n",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "c705bfe5-f613-42af-89d3-28fcdf06509f",
+      "submission_id": "f8c8c289-71d3-4e13-941a-bf7eeb1c7bb3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karsten Weis, ETH Zurich Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65699.sa1](https://doi.org/10.7554/eLife.65699.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis manuscript describes the structure of the yeast THO:Sub2 complex and how it interacts with the SR like protein Gbp2. The paper extends two recently published Tho:Sub2 complex structures by the Conti and Plaschka groups in two ways. Firstly, it shows how Gbp2 interacts with the THO complex. Secondly, it reveals a substantially different orientation between THO:Sub2 protomers compared with the earlier structure, so provides more information on the flexibility and range of movements that the two protomers might make with respect to each other.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cryo-EM structure of the yeast TREX complex and coordination with the SR-like protein Gbp2\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Cynthia Wolberger as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\nThe two reviewers make several constructive suggestions to improve the presentation of the manuscript. The requested edits are clearly explained in the reviews that are attached below and it should be straightforward to implement all those suggestions.\n\nReviewer #1 (Public Review):\n\n1. I found the initial description of the overall structure confusing. At first the authors say the complex is a tetramer, which is not what was seen by the Conti lab and then follow that with a confusing discussion leading to the conclusion that the dimer with a rigid subunit and a flexible one is the functional unit. It rather feels like they arrive at this conclusion because that's what Conti's lab saw, rather than any other reason. Since the human complex is a tetramer, perhaps the tetrameric complex observed here is one possible form and that possibility should be considered more carefully. Please state whether there is any similarity in the arrangements between the human tetramer and the tetramer observed here. I found the figure 2 supp 1C was not easy to follow. Coloring each of the four protomers differently would make things clearer.\n\n2. The authors previously determined the structure of yra1C domain bound to sub2 and several labs have shown this interaction activates Sub2 atpase activity. Are those interaction observed previously between Yra1 and Sub2 compatible with this new structure? If so, perhaps the authors could provide a model showing how Yra1 fits into this larger complex. Also, could Yra1 C domain and Gbp2 bind simultaneously to a single THO-Sub2 protomer or would one protomer bind Yra1 and perhaps another bind Gbp2? This is worth considering because this would strengthen the concept that TREX acts as a general platform engaging with multiple export factors to drive recruitment of multiple Mex67 molecules and eventual export of the Mex67:mRNP complex. In the human system, the SR proteins and Alyref have an overlapping binding site on Nxf1, suggesting they may not act together to recruit a single Nxf1, but rather they recruit different Nxf1 molecules perhaps to the same mRNP via a single multimeric THO platform.\n\nReviewer #2 (Public Review):\n\nOverall this is a solid and technically sound manuscript, and I have only two relatively minor suggestions for improvement.\n\n1. Tetramer versus dimer\n\nThe particles that were analyzed by cryoEM were composed of four THO-Sub2 protomers, yet the authors argue that a dimer is the functional unit. Why? The tetramer versus dimer organization needs to be better discussed, also in light of the observation that the human complex can also form a tetramer.\n\n2. Sub2 activation mechanism\n\nThe authors should more carefully discuss how THO 'activates' Sub2 (and how the 'semi-open state' leads to activation) and indicate the RNA binding surface of Sub2 in their model.\n",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "57103fbc-5060-4e62-8442-5fa9da247390",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C1",
+      "claim": "The evolutionarily conserved TRanscript-EXport (TREX) complex plays central roles during mRNP (messenger ribonucleoprotein) maturation and export from the nucleus to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionarily conserved TRanscript-EXport (TREX) complex plays central roles during mRNP (messenger ribonucleoprotein) maturation and export from the nucleus to the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "c0d780d7-70d9-4804-9aca-64bac2003307",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C2",
+      "claim": "In yeast, TREX is composed of the THO sub-complex (Tho2, Hpr1, Tex1, Mft1, and Thp2), the DEAD box ATPase Sub2, and Yra1.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, TREX is composed of the THO sub-complex (Tho2, Hpr1, Tex1, Mft1, and Thp2), the DEAD box ATPase Sub2, and Yra1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the composition of the yeast TREX complex and is supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "0c749b84-a558-4c6c-9e9a-e29220be70de",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C3",
+      "claim": "A 3.7 \u00c5 cryo-EM structure of the yeast THO\u2022Sub2 complex was determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present a 3.7 \u00c5 cryo-EM structure of the yeast THO\u2022Sub2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cryo-EM data collection and processing described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "0f83b3f9-c6ca-4251-8062-93f5c383da9e",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C4",
+      "claim": "The structure reveals the intimate assembly of THO revolving around its largest subunit Tho2.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure reveals the intimate assembly of THO revolving around its largest subunit Tho2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the structural analysis of the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "6a3e1f86-65e7-41d6-aa03-9b0071db97d6",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C5",
+      "claim": "THO stabilizes a semi-open conformation of the Sub2 ATPase via interactions with Tho2.",
+      "claim_type": "EXPLICIT",
+      "source": "THO stabilizes a semi-open conformation of the Sub2 ATPase via interactions with Tho2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis of the THO\u2022Sub2 complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "ba7b487e-7001-4a7a-bdbf-104e90db1345",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C6",
+      "claim": "THO interacts with the serine\u2013arginine (SR)-like protein Gbp2 through both the RS domain and RRM domains of Gbp2.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that THO interacts with the serine\u2013arginine (SR)-like protein Gbp2 through both the RS domain and RRM domains of Gbp2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vitro binding studies and cross-linking mass spectrometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "0792e93c-3097-419b-896a-b34b01c6c55e",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C7",
+      "claim": "Cross-linking mass spectrometry analysis supports the extensive interactions between THO and Gbp2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-linking mass spectrometry analysis supports the extensive interactions between THO and Gbp2, further revealing that RRM domains of Gbp2 are in close proximity to the C-terminal domain of Tho2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by XL-MS experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "84d71a10-9206-4c8e-83af-b9c3c4421695",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C8",
+      "claim": "RRM domains of Gbp2 are in close proximity to the C-terminal domain of Tho2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-linking mass spectrometry analysis supports the extensive interactions between THO and Gbp2, further revealing that RRM domains of Gbp2 are in close proximity to the C-terminal domain of Tho2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by XL-MS data showing cross-links between Gbp2 RRM domains and Tho2 C-terminal domain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "43e926ce-cc5d-4934-a31d-f0cf09b0d97f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C9",
+      "claim": "THO serves as a landing pad to configure Gbp2 to facilitate its loading onto mRNP.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that THO serves as a landing pad to configure Gbp2 to facilitate its loading onto mRNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the structural and biochemical data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "c79cdf38-4eab-451f-a4c0-a3a8c387f8a1",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C10",
+      "claim": "TREX is recruited to actively transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "TREX is recruited to actively transcribed genes (Cheng et al., 2006; Masuda et al., 2005; Str\u00e4sser et al., 2002) and impacts transcription especially during elongation (Dom\u00ednguez-S\u00e1nchez et al., 2011; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "c5aba5e6-f0ff-4dfa-901a-6bf5605c5858",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C11",
+      "claim": "TREX impacts transcription especially during elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "TREX is recruited to actively transcribed genes (Cheng et al., 2006; Masuda et al., 2005; Str\u00e4sser et al., 2002) and impacts transcription especially during elongation (Dom\u00ednguez-S\u00e1nchez et al., 2011; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "dee00f75-8672-43c1-9f5e-356d95a5d183",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C12",
+      "claim": "The C-terminal domain of the largest subunit of RNA Pol II is highly phosphorylated on the heptapeptide repeats (YSPTSPS) at the Serine 2 position during the elongation phase of the transcription cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal domain of the largest subunit of RNA Pol II is highly phosphorylated on the heptapeptide repeats (YSPTSPS) at the Serine 2 position during the elongation phase of the transcription cycle (Hsin and Manley, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "a6e5ed21-6b64-4c3b-9f8a-db69eec1e938",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C13",
+      "claim": "Serine 2 phosphorylation coordinates loading of co-transcriptional 3'-end processing factors to the transcription machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Serine 2 phosphorylation coordinates loading of co-transcriptional 3'-end processing factors to the transcription machinery (Ahn et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "011597e0-e30e-4e24-95d8-b85463144f0b",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C14",
+      "claim": "In yeast, the primary RNA Pol II CTD Ser2 kinase is the CTDK-1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, the primary RNA Pol II CTD Ser2 kinase is the CTDK-1 complex (Cho et al., 2001; Sterner et al., 1995; Wood and Shilatifard, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "1e94a8e1-f661-401f-8dd4-87b3d60628dc",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C15",
+      "claim": "The yeast TREX component Mft1 interacts genetically with CTDK-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast TREX component Mft1 interacts genetically with CTDK-1 (Hurt et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "8686c012-a779-47da-9c08-edbc18e9e5fb",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C16",
+      "claim": "TREX and CTDK-1 both influence mRNA 3'-end processing and polyadenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their roles during transcription elongation, TREX and CTDK-1 both influence mRNA 3'-end processing and polyadenylation (Ahn et al., 2004; Rougemaille et al., 2008; Saguez et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "8fa81b6a-21ea-4fb9-b911-3eded59dae3f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C17",
+      "claim": "In humans, at least CDK9, CDK11, CDK12, and CDK13 are shown to phosphorylate Ser2 on Pol II CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, the transcriptional kinases are more divergent, at least CDK9, CDK11, CDK12, and CDK13 are shown to phosphorylate Ser2 on Pol II CTD, among which CDK12 and CDK13 are orthologs of yeast CTDK-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "148c8bd5-2c1b-45e7-b34e-dbf23f97c9d2",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C18",
+      "claim": "CDK12 and CDK13 are orthologs of yeast CTDK-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, the transcriptional kinases are more divergent, at least CDK9, CDK11, CDK12, and CDK13 are shown to phosphorylate Ser2 on Pol II CTD, among which CDK12 and CDK13 are orthologs of yeast CTDK-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "c8337e41-ec27-418f-83a3-3159f915a8b5",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C19",
+      "claim": "Human CDKs are recognized as potential targets for cancer therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "These human CDKs are recognized as potential targets for cancer therapy (Cao et al., 2014; Parua and Fisher, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "4896f2c5-7a2d-4e54-b09c-acb0467e422e",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C20",
+      "claim": "TREX and CDK11 have been shown to interact in human cells and play roles in regulating HIV mRNA 3'-end processing.",
+      "claim_type": "EXPLICIT",
+      "source": "TREX and CDK11 have been shown to interact in human cells and play roles in regulating HIV mRNA 3'-end processing (Pak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "98122506-5104-4fa3-8199-37474a898879",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C21",
+      "claim": "In yeast, there are three shuttling SR-like proteins, Gbp2, Hrb1, and Npl3, which play roles in mRNA export by interacting with the mRNA export receptor Mex67\u2022Mtr2.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, there are three shuttling SR-like proteins, Gbp2, Hrb1, and Npl3, which play roles in mRNA export by interacting with the mRNA export receptor Mex67\u2022Mtr2 (Hackmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "98b10594-c35b-4824-9238-3d57ff44f1fb",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C22",
+      "claim": "In humans, three SR proteins, SRSF1, SRSF3, and SRSF7, shuttle between the nucleus and the cytoplasm to facilitate mRNA export by serving as adaptors for the human ortholog of Mex67\u2022Mtr2, the NXF1\u2022NXT1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, three SR proteins, SRSF1, SRSF3, and SRSF7, also shuttle between the nucleus and the cytoplasm to facilitate mRNA export by serving as adaptors for the human ortholog of Mex67\u2022Mtr2, the NXF1\u2022NXT1 complex (Huang et al., 2003; Huang and Steitz, 2005; M\u00fcller-McNicoll et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "9e4b3acb-2c3c-4d40-ade6-651a3af80608",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C23",
+      "claim": "TAP-tagged Gbp2 and Hrb1 were shown to associate with the CTDK-1 complex in yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast cells, TAP-tagged Gbp2 and Hrb1 were shown to associate with the CTDK-1 complex (Hurt et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "f2e7f26c-d3a2-4eb9-9059-42bed71b97a9",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C24",
+      "claim": "Gbp2 RRM domains are sufficient to interact with CTDK-1, involving the N-terminal RS domain in its Ctk1 kinase subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, using purified recombinant proteins, we recently showed that Gbp2 RRM domains are sufficient to interact with CTDK-1, involving the N-terminal RS domain in its Ctk1 kinase subunit (Xie et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "ebef25c8-392e-46db-a66a-2c85ab863bbd",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C25",
+      "claim": "There is a synthetic growth defect when both CTK1 and GBP2 are knocked out in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that there is a synthetic growth defect when both CTK1 and GBP2 are knocked out in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "afdeebfb-3853-4e6c-b591-505f9fb6ab89",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C26",
+      "claim": "In humans, CDK11 interacts with SRSF7.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in humans, CDK11 interacts with SRSF7 (Hu et al., 2003), and together with TREX, all are implicated in HIV-1 mRNA 3'-end processing (Pak et al., 2015; Valente et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "470f98c2-a346-47f6-bfa0-8854d13adb96",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C27",
+      "claim": "CDK11, SRSF7, and TREX are implicated in HIV-1 mRNA 3'-end processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in humans, CDK11 interacts with SRSF7 (Hu et al., 2003), and together with TREX, all are implicated in HIV-1 mRNA 3'-end processing (Pak et al., 2015; Valente et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "0428f174-cff4-4f08-9d48-efcf2f87ae40",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C28",
+      "claim": "Gbp2 and Hrb1, but not Npl3 have been shown to rely on the THO components Hpr1 and Mft1 to load onto mRNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the three yeast shuttling SR-like proteins, Gbp2 and Hrb1, but not Npl3 have been shown to rely on the THO components Hpr1 and Mft1 to load onto mRNPs (H\u00e4cker and Krebber, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "d494c083-bc7e-4fe4-ac33-3c81c2ed5e21",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C29",
+      "claim": "There is an interaction between THO and Gbp2 and Hrb1, but not Npl3.",
+      "claim_type": "EXPLICIT",
+      "source": "The different requirements could stem from an interaction between THO and Gbp2 and Hrb1, but not Npl3 (Hurt et al., 2004; Mart\u00ednez-Lumbreras et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "4296f09f-45d1-4a7d-a02b-4e5ac833562d",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C30",
+      "claim": "THO directly interacts with Gbp2 using purified recombinant proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Using GST pull down assays, we show that Gbp2 directly interacts with THO\u2013FL (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GST pull-down assay data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "54d618ca-04ef-45ee-9e3b-5cc52b94b998",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C31",
+      "claim": "THO* is capable of binding to Gbp2, but with reduced interaction compared to THO\u2013FL.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that THO* is capable of binding to Gbp2, but with reduced interaction compared to THO\u2013FL (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GST pull-down assay data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "494b0671-50d3-40ec-86a6-a56b35a46a98",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C32",
+      "claim": "Multiple regions in THO are involved in Gbp2 recognition, including both the THO core and the potentially flexible regions that are truncated in THO*.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that multiple regions in THO are involved in Gbp2 recognition, including both the THO core and the potentially flexible regions that are truncated in THO*.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the binding data comparing THO-FL and THO*.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "2f040320-fc7a-4f4c-a1b7-297e847f671f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C33",
+      "claim": "Gbp2 without RRM3 still binds to THO.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that Gbp2 without RRM3 still binds to THO (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GST pull-down assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "f833209c-30db-451c-b597-debb785441e7",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C34",
+      "claim": "Deletion of the N-terminal RS domain of Gbp2 substantially reduced THO interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, deletion of the N-terminal RS domain of Gbp2 substantially reduced THO interaction, suggesting that the Gbp2 RS domain is required for stable binding to THO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GST pull-down assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "4a79f4a5-b79e-45de-947e-47c41605a9ac",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C35",
+      "claim": "The Gbp2 RS domain is required for stable binding to THO.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, deletion of the N-terminal RS domain of Gbp2 substantially reduced THO interaction, suggesting that the Gbp2 RS domain is required for stable binding to THO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the binding data showing reduced interaction when the RS domain is deleted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "ab98f8b3-1a63-419f-8530-4f0be8e7a33d",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C36",
+      "claim": "THO\u2013Gbp2 interaction involves multiple domains from both THO and Gbp2.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our binding studies indicate that THO\u2013Gbp2 interaction involves multiple domains from both THO and Gbp2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the binding studies presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "ca40f3c3-6429-43e0-835f-9e3afefc75ca",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C37",
+      "claim": "The THO complex is an integrated structural and functional unit that regulates the activity of Sub2.",
+      "claim_type": "EXPLICIT",
+      "source": "The THO complex is an integrated structural and functional unit that regulates the activity of Sub2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by prior work and the structural data presented.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "b275283a-7ac9-4e1a-8205-b4556a2def06",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C38",
+      "claim": "A THO\u2022Sub2 crystal structure at 6.0 \u00c5 resolution was previously determined.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously determined a THO\u2022Sub2 crystal structure at 6.0 \u00c5 resolution (Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "f5364023-221c-43cc-b4df-484ad9a067a6",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C39",
+      "claim": "The THO*\u2022Sub2 complex was subjected to cross-linking with glutaraldehyde to obtain a more homogeneous sample for cryo-EM sample preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "For cryo-EM sample preparation, the THO*\u2022Sub2 complex was subjected to cross-linking with glutaraldehyde to obtain a more homogeneous sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a methodological step in the cryo-EM sample preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "ce8ae342-98c6-4ced-94e5-867cdc563147",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C40",
+      "claim": "Full length THO complex isolated from yeast cells was shown to form a dimeric assembly by negative stain EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Full length THO complex isolated from yeast cells was shown to form a dimeric assembly by negative stain EM (Pe\u00f1a et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "b39d4bf8-d190-4db5-97bc-4fed83c72e93",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C41",
+      "claim": "A higher ordered assembly composed of four THO*\u2022Sub2 protomers was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a higher ordered assembly composed of four THO*\u2022Sub2 protomers (Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cryo-EM data shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "55f4352c-e439-4a37-b84d-1774101ce709",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C42",
+      "claim": "The THO*\u2022Sub2 tetramer can be dissected as two dimers related by twofold symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "This THO*\u2022Sub2 tetramer can be dissected as two dimers related by twofold symmetry, Dimer 1 (protomer 1A and 1B) and Dimer 2 (protomer 2A and 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "de75547e-4336-4095-a02d-96e6b3e3feeb",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C43",
+      "claim": "Within each dimer, a coiled-coil region (corresponding to Mft1 and Thp2) from each protomer interact via a 'head on' mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each dimer, a coiled-coil region (corresponding to Mft1 and Thp2) from each protomer interact via a 'head on' mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "fb463644-546b-4f57-b54f-2272c4972f2d",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C44",
+      "claim": "The interaction between the two dimers is mediated by the same coiled-coil region via a 'side to side' mode involving protomer 1A and 2A.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between the two dimers is mediated by the same coiled-coil region via a 'side to side' mode involving protomer 1A and 2A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "f059ef4d-c9c5-4ea2-ba75-c3e50d8fa4cf",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C45",
+      "claim": "The recent structure of human THO in association with UAP56 also exhibits a tetrameric assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the recent structure of human THO in association with UAP56, the human ortholog of Sub2, also exhibits a tetrameric assembly (P\u00fchringer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5e3d6ec7-add9-4fc5-8cfb-efe21fbb1dbf",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C46",
+      "claim": "The 'head on' mode interaction is conserved between yeast THO\u2022Sub2 and human THO\u2022UAP56.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'head on' mode interaction is conserved between yeast THO\u2022Sub2 and human THO\u2022UAP56 (Figure 2\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison of the yeast and human structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "1a1dc2cc-4788-4b93-b500-5cbdf798353f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C47",
+      "claim": "Tetramerization of human THO\u2022UAP56 is mediated by the Thoc6 subunit and a Thoc5 domain that do not exist in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, tetramerization of human THO\u2022UAP56 is mediated by the Thoc6 subunit and a Thoc5 domain that do not exist in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of the yeast and human structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "0d45fc70-6019-4141-947b-dc4cdeae8b28",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C48",
+      "claim": "XL-MS analysis of the full length THO in association with Gbp2 identified multiple cross-links between a 'bulge' (Mft1 a.a. 142\u2013196) and Tho2 C-terminal region.",
+      "claim_type": "EXPLICIT",
+      "source": "Our XL-MS analysis of the full length THO in association with Gbp2 (details in later section) identified multiple cross-links between a 'bulge' (Mft1 a.a. 142\u2013196) and Tho2 C-terminal region (Figure 2\u2014figure supplement 2C and Supplementary file 2) that can only be explained by the interface between two protomers within a dimer, whereas no cross-links support the 'side to side' interface of the tetramer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "ce2f1377-81a8-48de-9e2c-44a0a081ca15",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C49",
+      "claim": "No cross-links support the 'side to side' interface of the tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our XL-MS analysis of the full length THO in association with Gbp2 (details in later section) identified multiple cross-links between a 'bulge' (Mft1 a.a. 142\u2013196) and Tho2 C-terminal region (Figure 2\u2014figure supplement 2C and Supplementary file 2) that can only be explained by the interface between two protomers within a dimer, whereas no cross-links support the 'side to side' interface of the tetramer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "4904f0b0-36b9-4a4e-97fd-ff2743cc2ab8",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C50",
+      "claim": "The THO* core contains ~600 residues less than the full length THO complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the THO* core contains ~600 residues less than the full length THO complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the design of the THO* construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "54f4c987-d7a2-41d9-a694-88f0ffceae3a",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C51",
+      "claim": "Both full length THO isolated from yeast cells and the full length THO in association with Sub2 purified from recombinant proteins exhibit a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that both full length THO isolated from yeast cells (Pe\u00f1a et al., 2012) and the full length THO in association with Sub2 purified from recombinant proteins (Schuller et al., 2020) exhibit a dimer, we speculate that the THO*\u2022Sub2 tetramer was formed due to the truncations in THO*.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "7bb81be8-9e23-462a-9490-da6a8e27be4b",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C52",
+      "claim": "The THO*\u2022Sub2 tetramer was formed due to the truncations in THO*.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that both full length THO isolated from yeast cells (Pe\u00f1a et al., 2012) and the full length THO in association with Sub2 purified from recombinant proteins (Schuller et al., 2020) exhibit a dimer, we speculate that the THO*\u2022Sub2 tetramer was formed due to the truncations in THO*.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on comparison with full-length THO structures.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "89a8b4a1-de29-4e35-a74a-2d2d58fa837c",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C53",
+      "claim": "Each THO*\u2022Sub2 dimer contains a rigid protomer (1A or 2A) and a mobile protomer (1B or 2B).",
+      "claim_type": "EXPLICIT",
+      "source": "Each THO*\u2022Sub2 dimer contains a rigid protomer (1A or 2A) and a mobile protomer (1B or 2B) (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on structural analysis of the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5318d92a-ee3d-4792-a982-f3c3cfa14fb8",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C54",
+      "claim": "The dimer observed by cryo-EM is consistent with the previously determined crystal structure which contains one THO*\u2022Sub2 and a second THO*\u2022Sub2 that is only partially resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "This dimer observed by cryo-EM is consistent with our previously determined crystal structure which contains one THO*\u2022Sub2 and a second THO*\u2022Sub2 that is only partially resolved (Figure 2\u2014figure supplement 2D; Ren et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison with prior structural work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "fe7af693-5339-4e05-bece-495497194f32",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C55",
+      "claim": "The relative orientation between the protomers is flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the THO*\u2022Sub2 dimer in our work and the recently reported structures of yeast THO\u2022Sub2 and human THO\u2022UAP56 reveals that the relative orientation between the protomers is flexible (Figure 2\u2014figure supplement 2E; P\u00fchringer et al., 2020; Schuller et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison of multiple structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "2f0a7c1d-1c47-48bd-9d18-d14ac38fc831",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C56",
+      "claim": "The THO*\u2022Sub2 protomer was refined to an overall resolution at 3.7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "For obtaining the best quality map for model building, the THO*\u2022Sub2 protomer was extracted from the two rigid copies (1A and 2A) within the tetramer and refined to an overall resolution at 3.7 \u00c5 (Figure 2\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the cryo-EM data processing workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "4a0b76ce-bfa5-44bd-bd80-de8626f4dda2",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C57",
+      "claim": "The electron density map allows building an atomic model of the THO complex de novo.",
+      "claim_type": "EXPLICIT",
+      "source": "The electron density map allows us to build an atomic model of the THO complex de novo (Figure 2A and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the quality of the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "0186e14b-16a5-4630-92dd-3f1e8482acd6",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C58",
+      "claim": "Sub2 was modeled using the previously determined crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Sub2 was modeled using our previously determined crystal structure (Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the modeling approach for Sub2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "d091685c-cfce-4daf-9375-f2e87a0dfbd2",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C59",
+      "claim": "The THO model contains 2000 residues with 90% assigned residue register.",
+      "claim_type": "EXPLICIT",
+      "source": "The THO model contains 2000 residues with 90% assigned residue register.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the completeness of the atomic model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "a41e096d-1d61-4abf-b38f-8c23e469c534",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C60",
+      "claim": "Tho2, the largest subunit spanning the entire length of the elongated THO, plays a critical role in THO assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Tho2, the largest subunit spanning the entire length of the elongated THO, plays a critical role in THO assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "f799be3b-af38-497f-bba3-1c82fdef508f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C61",
+      "claim": "Tho2 can be dissected as 'head', 'neck', and 'trunk' sections.",
+      "claim_type": "EXPLICIT",
+      "source": "Tho2 can be dissected as 'head', 'neck', and 'trunk' sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of Tho2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "7ec7aaee-026f-4898-b2b0-5a823c9bc8ce",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C62",
+      "claim": "The Tho2 'head' contains an N-terminal helical bundle that clusters with the N-termini of Hpr1, Mft1, and Thp2.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tho2 'head' contains an N-terminal helical bundle that clusters with the N-termini of Hpr1, Mft1, and Thp2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5e93560d-8d90-46dd-9d66-145f0da1659d",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C63",
+      "claim": "Tho2 'neck' is comprised of a helix followed by a loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Tho2 'neck' is comprised of a helix followed by a loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of Tho2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "9ec078ad-a688-4a22-a6a0-1afe87cc79ca",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C64",
+      "claim": "The 'neck' is embraced by a bi-lobed Hpr1 (lobe A and lobe B).",
+      "claim_type": "EXPLICIT",
+      "source": "The 'neck' is embraced by a bi-lobed Hpr1 (lobe A and lobe B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "0ffc70a2-aa4a-497e-9b34-11025bb8894f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C65",
+      "claim": "Tho2 'trunk' folds into an alpha solenoid structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Tho2 'trunk' folds into an alpha solenoid structure, which binds the Tex1 \u03b2-propeller at its center and stabilizes a semi-open Sub2 ATPase at its C-terminal end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of Tho2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "aeae3a72-f039-4805-bfac-f627dec0d026",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C66",
+      "claim": "Tho2 'trunk' binds the Tex1 \u03b2-propeller at its center.",
+      "claim_type": "EXPLICIT",
+      "source": "Tho2 'trunk' folds into an alpha solenoid structure, which binds the Tex1 \u03b2-propeller at its center and stabilizes a semi-open Sub2 ATPase at its C-terminal end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "dd4ceeda-d156-4db0-b031-779b0e985587",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C67",
+      "claim": "Tho2 'trunk' stabilizes a semi-open Sub2 ATPase at its C-terminal end.",
+      "claim_type": "EXPLICIT",
+      "source": "Tho2 'trunk' folds into an alpha solenoid structure, which binds the Tex1 \u03b2-propeller at its center and stabilizes a semi-open Sub2 ATPase at its C-terminal end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO\u2022Sub2 complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "924f4f6d-1b2b-4a54-9e92-ada2b353d02f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C68",
+      "claim": "An extended region at Hpr1 C-terminal region forms a 'belt' lining the Tho2 'trunk'.",
+      "claim_type": "EXPLICIT",
+      "source": "An extended region at Hpr1 C-terminal region forms a 'belt' lining the Tho2 'trunk'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "802de6e3-0854-4826-9a6c-e33cdf2cfdcb",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C69",
+      "claim": "Tho2 features a total contact area of ~9000 \u00c52 with the other four THO subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Tho2 features a total contact area of ~9000 \u00c52 with the other four THO subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "6a17fbc6-7919-4f72-8c66-ace013ee2073",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C70",
+      "claim": "Tho2 'head' domain binds to a four helix bundle, formed by two pairs of anti-parallel helices contributed by Mft1 and Thp2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Tho2 'head' domain binds to a four helix bundle, formed by two pairs of anti-parallel helices contributed by Mft1 and Thp2, respectively (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "0da4a694-d19e-460d-9933-179ebe84f01e",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C71",
+      "claim": "Tho2 'head' and the helix in its 'neck' sandwich the very N-terminal helix of Mft1 (residues 6\u201317).",
+      "claim_type": "EXPLICIT",
+      "source": "Tho2 'head' and the helix in its 'neck' sandwich the very N-terminal helix of Mft1 (residues 6\u201317).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "27aa87e5-ae2a-4aa5-a576-0c724c01b66c",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C72",
+      "claim": "The opposite side of the Mft1/Thp2 four helix bundle runs in parallel with Hpr1 lobe A (residues 1\u2013230).",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite side of the Mft1/Thp2 four helix bundle runs in parallel with Hpr1 lobe A (residues 1\u2013230).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5e8a9da6-51ca-4927-a340-3fff4dbe166b",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C73",
+      "claim": "The Tho2 'neck', particularly the loop (residues 167\u2013179), is embraced by the Hpr1 lobe A and lobe B (residues 250\u2013490).",
+      "claim_type": "EXPLICIT",
+      "source": "The Tho2 'neck', particularly the loop (residues 167\u2013179), is embraced by the Hpr1 lobe A and lobe B (residues 250\u2013490) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "98d78ae1-c7c4-4275-90f3-b52cced3ec19",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C74",
+      "claim": "The 'neck' contains multiple hydrophilic residues including K171, N173, and E177.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the 'neck' is largely buried, it contains multiple hydrophilic residues including K171, N173, and E177.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the Tho2 'neck'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "514a4c10-4d08-42a1-b35b-d87eff613b14",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C75",
+      "claim": "Tho2 and Hpr1 residues at the 'neck' interface are highly conserved from yeast to human.",
+      "claim_type": "EXPLICIT",
+      "source": "Tho2 and Hpr1 residues at this interface are highly conserved from yeast to human (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "7afbaf52-9c0b-4323-9283-25e00d3658ce",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C76",
+      "claim": "The 'trunk' of Tho2 (residues 180\u20131200) forms an alpha-solenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'trunk' of Tho2 (residues 180\u20131200) forms an alpha-solenoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of Tho2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "b987c29d-91e7-47c6-8e47-938b5fc1b8f4",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C77",
+      "claim": "Hpr1 'belt' contains residue assignment from residues 491 to 535.",
+      "claim_type": "EXPLICIT",
+      "source": "Hpr1 'belt' contains residue assignment from residues 491 to 535 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the atomic model built from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "83e9f86f-93d7-43a3-9009-7be59664af42",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C78",
+      "claim": "Hpr1 'belt' starts from the beginning of the Tho2 'trunk', featuring aromatic residues at the interface including F511, F515, F518, and W532.",
+      "claim_type": "EXPLICIT",
+      "source": "It starts from the beginning of the Tho2 'trunk', featuring aromatic residues at the interface including F511, F515, F518, and W532, and likely extends further to the C-terminus of Tho2 'trunk' as evidenced by our XL-MS studies discussed later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis and XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "1172559d-78c1-460e-88ad-a9787377b9c3",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C79",
+      "claim": "Hpr1 'belt' likely extends further to the C-terminus of Tho2 'trunk' as evidenced by XL-MS studies.",
+      "claim_type": "EXPLICIT",
+      "source": "It starts from the beginning of the Tho2 'trunk', featuring aromatic residues at the interface including F511, F515, F518, and W532, and likely extends further to the C-terminus of Tho2 'trunk' as evidenced by our XL-MS studies discussed later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on XL-MS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "acd9bb07-43fa-41b6-b0d5-52292ac55588",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C80",
+      "claim": "The seven-bladed Tex1 \u03b2-propeller sits at the center of the Tho2 'trunk' via blades 4 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "The seven-bladed Tex1 \u03b2-propeller sits at the center of the Tho2 'trunk' via blades 4 and 5 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "c5eed06b-cdb8-48d2-a892-5d6849df6b3d",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C81",
+      "claim": "The loops connecting blades 4/5 (4D5A) and 5/6 (5D6A), as well as the 5BC loop within blade five contact a pair of Tho2 helices (residues 626\u2013666).",
+      "claim_type": "EXPLICIT",
+      "source": "The loops connecting blades 4/5 (4D5A) and 5/6 (5D6A), as well as the 5BC loop within blade five contact a pair of Tho2 helices (residues 626\u2013666), whose opposite side binds to the C-terminal RecA domain of Sub2 (Sub2-C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO\u2022Sub2 complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "f69fa941-3ad2-4bab-a800-aba2bfb755f0",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C82",
+      "claim": "The Tho2\u2013Tex1 interaction is conserved from yeast to human based on the sequence homology.",
+      "claim_type": "EXPLICIT",
+      "source": "This Tho2\u2013Tex1 interaction is conserved from yeast to human based on the sequence homology (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "3f233d2e-9b1e-4bc8-9ac4-999148621bd3",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C83",
+      "claim": "A prominent extension from Tho2 is projected outward perpendicular to the Tho2 'trunk'.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a prominent extension from Tho2 is projected outward perpendicular to the Tho2 'trunk'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of Tho2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "7cf834e9-305d-42bc-80e5-a3533052494c",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C84",
+      "claim": "The C-terminal part of the Tho2 extension (residues 464\u2013485) forms a hairpin that winds through the bottom face of the Tex1 \u03b2-propeller.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal part of this extension (residues 464\u2013485) forms a hairpin that winds through the bottom face of the Tex1 \u03b2-propeller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "0cd6e47f-946a-4fbf-b143-e5d860d93549",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C85",
+      "claim": "This additional Tho2\u2013Tex1 binding mode is likely a yeast-specific mechanism as human and other metazoan THOs lack this extension.",
+      "claim_type": "EXPLICIT",
+      "source": "This additional Tho2\u2013Tex1 binding mode is likely a yeast-specific mechanism as human and other metazoan THOs lack this extension (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on sequence alignment analysis showing the extension is absent in metazoans.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "2a193585-23b4-4932-8550-2c27f1650f86",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C86",
+      "claim": "THO stimulates the ATPase activity of Sub2 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that THO stimulates the ATPase activity of Sub2 in vitro (Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5911d5b5-a77f-4901-adec-d2e1eda38039",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C87",
+      "claim": "THO stabilizes a semi-open conformation of Sub2 by interacting with both RecA domains (Sub2-N and Sub2-C).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, THO stabilizes a semi-open conformation of Sub2 by interacting with both RecA domains (Sub2-N and Sub2-C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO\u2022Sub2 complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5b3783ce-6292-45af-8284-55754b368f3c",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C88",
+      "claim": "The cryo-EM structure and the previous THO\u2022Sub2 crystal structure are in excellent agreement.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the cryo-EM structure and our previous THO\u2022Sub2 crystal structure shows that these two structures are in excellent agreement (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison of the two structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "de4999df-6d2e-4a36-bad4-0c355d9f03b1",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C89",
+      "claim": "Sub2-C makes contacts with two pairs of Tho2 helices (residues 625\u2013695).",
+      "claim_type": "EXPLICIT",
+      "source": "Sub2-C makes contacts with two pairs of Tho2 helices (residues 625\u2013695).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO\u2022Sub2 interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "4ab05e34-3015-4633-9de0-9d1e47158039",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C90",
+      "claim": "The Sub2 loop consisting of residues 304\u2013308 is situated at the center of the interface featuring electrostatic interactions via E305 and N307.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sub2 loop consisting of residues 304\u2013308 is situated at the center of the interface featuring electrostatic interactions via E305 and N307.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO\u2022Sub2 interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "70fafd41-e172-474e-846b-fcb0d283af6c",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C91",
+      "claim": "Another Sub2 loop consisting of residues 355\u2013358 makes critical contacts via F355 and R358.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, another Sub2 loop consisting of residues 355\u2013358 makes critical contacts via F355 and R358.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO\u2022Sub2 interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "a74469a3-0036-469c-bb37-e8b9261d6dfa",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C92",
+      "claim": "The ATPase activity of Sub2 mutant E356A/K357A/R358A cannot be activated by THO.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of this loop is evidenced by our previous mutagenesis studies that show the ATPase activity of Sub2 mutant E356A/K357A/R358A cannot be activated by THO (Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "aa4bab3c-b037-4304-8eec-c3c861575df5",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C93",
+      "claim": "Sub2 assumes a closed conformation in its enzymatic active state, in which Sub2-N and Sub2-C clamp onto its RNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Sub2 assumes a closed conformation in its enzymatic active state, in which Sub2-N and Sub2-C clamp onto its RNA substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of DEAD-box ATPase mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "decf5768-3891-43fc-9761-ed2e08b91ee3",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C94",
+      "claim": "The semi-open Sub2 is more similar to its active state than free Sub2 in which Sub2-N and Sub2-C are likely separated.",
+      "claim_type": "EXPLICIT",
+      "source": "As we previously illustrated (Ren et al., 2017), the semi-open Sub2 is more similar to its active state than free Sub2 in which Sub2-N and Sub2-C are likely separated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural comparison and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5d35b5ae-376d-4352-8486-520f5dfa1985",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C95",
+      "claim": "In vitro, the observed stimulation of Sub2 activity may reflect change in dynamics of switching between different conformational states as a result of THO binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, the observed stimulation of Sub2 activity may reflect change in dynamics of switching between different conformational states as a result of THO binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the in vitro data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "d549658a-2852-42a0-b9b2-2ee7a0b0610b",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C96",
+      "claim": "In cells, Sub2 is recruited to the transcription machinery via THO.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, Sub2 is recruited to the transcription machinery via THO and the semi-open Sub2 may represent a 'primed' state that enables efficient transition to the active state when a physiological RNA substrate is encountered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of TREX function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5c54e43b-78d3-4c26-815e-1d2285208c5f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C97",
+      "claim": "The semi-open Sub2 may represent a 'primed' state that enables efficient transition to the active state when a physiological RNA substrate is encountered.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, Sub2 is recruited to the transcription machinery via THO and the semi-open Sub2 may represent a 'primed' state that enables efficient transition to the active state when a physiological RNA substrate is encountered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "0e554df6-c20f-4cc6-9d38-d7c9dd01b3e7",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C98",
+      "claim": "This Sub2 activation mechanism is a conserved mechanism shared by several other DEAD-box proteins including Dbp5.",
+      "claim_type": "EXPLICIT",
+      "source": "This Sub2 activation mechanism is a conserved mechanism shared by several other DEAD-box proteins including Dbp5 which functions at the terminal step of nuclear mRNA export at the cytoplasmic side of the nuclear pore complex (Folkmann et al., 2011; Mathys et al., 2014; Montpetit et al., 2011; Sch\u00fctz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "9f420d6e-4dbe-4fa2-868b-5ec3bc58b41f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C99",
+      "claim": "Dbp5 functions at the terminal step of nuclear mRNA export at the cytoplasmic side of the nuclear pore complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This Sub2 activation mechanism is a conserved mechanism shared by several other DEAD-box proteins including Dbp5 which functions at the terminal step of nuclear mRNA export at the cytoplasmic side of the nuclear pore complex (Folkmann et al., 2011; Mathys et al., 2014; Montpetit et al., 2011; Sch\u00fctz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "6ff3e68e-7960-40eb-a5b8-0c256f3d951f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C100",
+      "claim": "The THO complex contains a significant amount of potentially flexible regions including ~400 residues at the Tho2 C-terminal end and ~150 residues at the Hpr1 C-terminal end.",
+      "claim_type": "EXPLICIT",
+      "source": "The THO complex contains a significant amount of potentially flexible regions including ~400 residues at the Tho2 C-terminal end and ~150 residues at the Hpr1 C-terminal end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the structural analysis showing these regions are not resolved in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "c78d2870-8168-4771-83e0-b1f1a463f7b7",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C101",
+      "claim": "These flexible regions are presumably not suitable for structural studies.",
+      "claim_type": "EXPLICIT",
+      "source": "These flexible regions are presumably not suitable for structural studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the fact that these regions are not resolved in the structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "b51e0dc7-a579-4822-85f5-5ecd21608e02",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C102",
+      "claim": "The flexible regions are involved in Gbp2 recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Our binding studies show that these flexible regions are involved in Gbp2 recognition (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the binding data comparing THO-FL and THO*.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "a237041a-2722-47b2-a78c-03a3361626a0",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C103",
+      "claim": "A total of 200 unique EDC cross-links were obtained, of which 69 were interprotein cross-links including nine cross-links between Tho2 and Gbp2.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained a total of 200 unique EDC cross-links, of which 69 were interprotein cross-links including nine cross-links between Tho2 and Gbp2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "30ead96f-bb4f-4fc7-8e99-9a7e9f90a94a",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C104",
+      "claim": "A total of 133 unique DSS cross-links were obtained, with 53 of these cross-links being interprotein cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "We also obtained a total of 133 unique DSS cross-links to complement the EDC cross-link data, with 53 of these cross-links being interprotein cross-links (Figure 4A, Figure 4\u2014figure supplement 1A, and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "4556747d-f6ae-4a7a-817b-b6be8f4e4135",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C105",
+      "claim": "The cross-linking data is highly consistent with the THO structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-linking data is highly consistent with the THO structure (Figure 4\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of the cross-link distances mapped onto the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "ebcc9fea-9c35-4abe-8757-770e36ecde74",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C106",
+      "claim": "91% of the EDC cross-links that can be mapped to the structure fall within the expected distance restraint.",
+      "claim_type": "EXPLICIT",
+      "source": "91% and 100% of the EDC and DSS cross-links that can be mapped to the structure fall within the expected distance restraint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of the cross-link distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "dbf523ff-1b11-4aba-b921-f95acf18c847",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C107",
+      "claim": "100% of the DSS cross-links that can be mapped to the structure fall within the expected distance restraint.",
+      "claim_type": "EXPLICIT",
+      "source": "91% and 100% of the EDC and DSS cross-links that can be mapped to the structure fall within the expected distance restraint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of the cross-link distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5523ccd1-5562-4d49-8fb2-28e1de704c76",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C108",
+      "claim": "XL-MS data provide experimental evidence to support the 'head on' THO\u2013THO dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously mentioned, our XL-MS data provide experimental evidence to support the 'head on' THO\u2013THO dimer (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the XL-MS data showing cross-links consistent with the dimer interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "dbe5c839-e5c1-410a-961d-458dbfa85f27",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C109",
+      "claim": "Multiple cross-links involving the Mft1 'bulge' and the C-terminal region of Tho2 unambiguously point to the THO\u2013THO interface within the 'head on' dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we identified multiple cross-links involving the Mft1 'bulge' and the C-terminal region of Tho2 (Mft1-K182/Tho2-K1103, Mft1-K165/Tho2-K967, Mft1-K170/Tho2-K967, and Mft1-K174/Tho2-K967) (Supplementary file 2). These cross-links unambiguously point to the THO\u2013THO interface within the 'head on' dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "7d4a7fb4-1304-42da-b41f-88629f6710b7",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C110",
+      "claim": "The Tho2\u2013CTD contains a 'bridge' that connects THO to the neighboring THO molecule as indicated by the cryo-EM density map.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tho2\u2013CTD contains a 'bridge' that connects THO to the neighboring THO molecule as indicated by our cryo-EM density map (Figure 4B, Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the cryo-EM density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "e76f26d8-e639-4ae2-97e8-0c792907af17",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C111",
+      "claim": "The bridge starts at Tho2 residue 1200.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with the recently published THO\u2013Sub2 structure reveals that the bridge starts at Tho2 residue 1200 (Schuller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison with another structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "e497bf72-c784-4e11-a339-bcabc069348f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C112",
+      "claim": "The 'bridge' is followed by a structured segment, as suggested by the clustered cross-linking between Tho2 (residues 1260\u20131369) and the Hpr1 lobe B (E297, D434, K462, and K467) as well as Mft1 D129.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'bridge' is followed by a structured segment, as suggested by the clustered cross-linking between Tho2 (residues 1260\u20131369) and the Hpr1 lobe B (E297, D434, K462, and K467) as well as Mft1 D129 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the XL-MS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "84d494dc-c748-48ae-a544-a77ae8c52c18",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C113",
+      "claim": "Tho2 (residues 1279\u20131405) was shown to form a rigid core through proteolysis and it folds into a helical structure as indicated by CD spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our observation, Tho2 (residues 1279\u20131405) was shown to form a rigid core through proteolysis and it folds into a helical structure as indicated by CD spectra (Pe\u00f1a et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "47e69122-4cd9-45eb-a915-5625bd19fb6f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C114",
+      "claim": "Cross-linking involving the structured segment indicates that the Tho2\u2013CTD crosses over to the neighboring THO near its Hpr1 lobe B.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, cross-linking involving the structured segment indicates that the Tho2\u2013CTD crosses over to the neighboring THO near its Hpr1 lobe B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the XL-MS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "88db107a-ee82-485b-a2b2-46f6250aab7e",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C115",
+      "claim": "The structured segment is followed by a highly flexible tail (residues ~1400\u20131597), as this region cross-links to spatially separated residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The structured segment is followed by a highly flexible tail (residues ~1400\u20131597), as this region cross-links to spatially separated residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the XL-MS data showing cross-links to distant residues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "ce01e870-2f6f-4a9d-923f-5707045b5f25",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C116",
+      "claim": "Tho2 K1576 cross-links to both Hpr1 lobe B (E297 and D434) and Tex1 (D341).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Tho2 K1576 cross-links to both Hpr1 lobe B (E297 and D434) and Tex1 (D341).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "2f8f4226-7cee-4ab8-ac80-00468dc1aef1",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C117",
+      "claim": "Tho2 (1411\u20131530) was highly sensitive to trypsin digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the flexibility of the Tho2 tail, a previous study showed that Tho2 (1411\u20131530) was highly sensitive to trypsin digestion (Pe\u00f1a et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "02f7cd76-09e1-42c9-b13e-2a01438b2684",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C118",
+      "claim": "Both the THO\u2022Sub2 structure and that recently published by others capture an asymmetric dimer exhibiting significant flexibility in the relative orientation of two THO\u2022Sub2 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Both our THO\u2022Sub2 structure and that recently published by others (Schuller et al., 2020) capture an asymmetric dimer exhibiting significant flexibility in the relative orientation of two THO\u2022Sub2 molecules (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison of multiple structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "7366a80e-a191-4caa-a3da-755ade0c8df2",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C119",
+      "claim": "The 'bridge' is only observed at the proximal side of the THO dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'bridge' is only observed at the proximal side of the THO dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of the THO dimer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "bd5021f9-968c-4d80-b7bf-38c1a82a53a2",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C120",
+      "claim": "The Tho2\u2013CTD will exhibit more significant flexibility at the distal side of the THO dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that the Tho2\u2013CTD will exhibit more significant flexibility at the distal side of the THO dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "19f9bde3-e045-421b-aa54-101a213a5429",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C121",
+      "claim": "The extensive cross-links observed between Tho2\u2013CTD and Hpr1\u2013CTD suggests that they are spatially close to each other and are likely localized in between two THO molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The extensive cross-links observed between Tho2\u2013CTD and Hpr1\u2013CTD suggests that they are spatially close to each other and are likely localized in between two THO molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the XL-MS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "55f44ff5-a503-4541-b199-ffc2603c6bb9",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C122",
+      "claim": "Cross-linking between Tho2 and Gbp2 indicates that Tho2\u2013CTD is in close proximity to all three Gbp2 RRM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-linking between Tho2 and Gbp2 indicates that Tho2\u2013CTD is in close proximity to all three Gbp2 RRM domains (Figure 4A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "72f4a579-4132-4543-a068-90576e1af5f1",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C123",
+      "claim": "Each of the three RRM domains cross-links to the structured segment in Tho2\u2013CTD: RRM1-K190 to Tho2-K1349, RRM2-E241 to Tho2-K1250, and RRM3-D367 to Tho2-K1335.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the three RRM domains cross-links to the structured segment in Tho2\u2013CTD: RRM1-K190 to Tho2-K1349, RRM2-E241 to Tho2-K1250, and RRM3-D367 to Tho2-K1335.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "ccedc6a0-df76-49da-8ac3-9e570f26aa55",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C124",
+      "claim": "Gbp2 is localized in between two THO molecules near Hpr1 lobe B.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Gbp2 is localized in between two THO molecules near Hpr1 lobe B, as these involved Tho2 residues (K1250 and K1335) are cross-linked to Hpr1 lobe B (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the XL-MS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "b2ed94bc-81de-4f78-bc8c-adbec8aed2d2",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C125",
+      "claim": "Each RRM domain cross-links to the highly flexible tail in Tho2\u2013CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also show that each RRM domain cross-links to the highly flexible tail in Tho2\u2013CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the XL-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "8a6d2cad-bcd3-4475-af4a-f92a632d2b0d",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C126",
+      "claim": "In the presence of Gbp2, the Tho2 tail may assume a more specific conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that, in the presence of Gbp2, the Tho2 tail may assume a more specific conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the XL-MS data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5bf89363-ea48-47d2-951f-3b27fc5cb8b4",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C127",
+      "claim": "Tho2\u2013CTD contributes to Gbp2 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our XL-MS results (Figure 4C), together with the in vitro binding studies (Figure 1B and C), demonstrate that Tho2\u2013CTD contributes to Gbp2 interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by both XL-MS and binding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "2d4df2a7-0788-4ed1-ab36-209724ca5682",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C128",
+      "claim": "The C-terminal domain of Tho2 also binds to RNA/DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal domain of Tho2 also binds to RNA/DNA (Pe\u00f1a et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "63ab3044-4577-42aa-bf80-6d4373c88357",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C129",
+      "claim": "The function of Tho2\u2013CTD in vivo was supported by the growth defect of tho2-\u0394CTD yeast strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of Tho2\u2013CTD in vivo was supported by the growth defect of tho2-\u0394CTD yeast strains (Pe\u00f1a et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "523ce08b-df97-4f95-9bf8-aa28166a293a",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C130",
+      "claim": "The synthetic growth defect of tho2-\u0394CTD and \u0394gbp2 strains highlights their functional links.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the synthetic growth defect of tho2-\u0394CTD and \u0394gbp2 strains highlights their functional links (Mart\u00ednez-Lumbreras et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "6ed0bff3-ca21-4b93-b6c2-321e41e602e1",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C131",
+      "claim": "GST\u2013Gbp2 is able to pull down both THO and Sub2, and THO and Sub2 appear to be in a stoichiometric amount relative to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that GST\u2013Gbp2 is able to pull down both THO and Sub2, and THO and Sub2 appear to be in a stoichiometric amount relative to each other (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GST pull-down assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "48a5d8ee-b9be-4a8c-9b57-26f3165aca23",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C132",
+      "claim": "GST\u2013Gbp2 alone does not make direct contact with Sub2.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, GST\u2013Gbp2 alone does not make direct contact with Sub2 (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GST pull-down assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "10412c55-e1bd-4187-84bb-6d14fc635c01",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C133",
+      "claim": "THO, Sub2, and Gbp2 can form a THO\u2022Sub2\u2022Gbp2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that THO, Sub2, and Gbp2 can form a THO\u2022Sub2\u2022Gbp2 complex, and therefore Gbp2 could function together with the TREX complex during nuclear mRNP maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "09a36520-dc8e-4b63-9cea-c173e132e06e",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C134",
+      "claim": "Gbp2 could function together with the TREX complex during nuclear mRNP maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that THO, Sub2, and Gbp2 can form a THO\u2022Sub2\u2022Gbp2 complex, and therefore Gbp2 could function together with the TREX complex during nuclear mRNP maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the binding data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "75e4596e-0ccd-4e70-9f2e-0ff6ffee4bd6",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C135",
+      "claim": "Gbp2 interaction with CTDK-1 provides a means to associate with the transcription machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Gbp2 interaction with CTDK-1 provides a means to associate with the transcription machinery (Hurt et al., 2004; Xie et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "451ad573-166a-44fa-9042-e560f454b43a",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C136",
+      "claim": "TREX and Gbp2 function coordinately during nuclear mRNP maturation and surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that TREX and Gbp2 function coordinately during nuclear mRNP maturation and surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the data presented.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "b38ed5a9-b932-42b0-a80c-6e08974def10",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C137",
+      "claim": "Gbp2 and Hrb1 were shown to play key roles in mRNP surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, Gbp2 and Hrb1 were shown to play key roles in mRNP surveillance (Hackmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "b34f5fb1-344b-4339-8b88-e5d1bf5a80a9",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C138",
+      "claim": "Interactions between Gbp2 and Mex67 for export and between Gbp2 and Mtr4 for degradation through the RNA exosome complex are mutually exclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between Gbp2 and Mex67 for export and between Gbp2 and Mtr4 for degradation through the RNA exosome complex are mutually exclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "ec81ba63-8cad-421a-9c52-d4735ef2929f",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C139",
+      "claim": "TREX travels with the transcription machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "TREX travels with the transcription machinery (Meinel et al., 2013) and its function in mRNP assembly is well documented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "a957aa24-ada4-46c4-bda8-7fa8143335d1",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C140",
+      "claim": "In THO/Sub2 mutant yeast cells, mRNP assembly is defective and faulty mRNPs cannot be degraded efficiently, which leads to the formation of heavy chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "In THO/Sub2 mutant yeast cells, mRNP assembly is defective and faulty mRNPs cannot be degraded efficiently, which leads to the formation of heavy chromatin (Rougemaille et al., 2008; Saguez et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "8b74c248-8742-4af1-ba83-1c67a70c4b93",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C141",
+      "claim": "In humans, depletion of TREX complex components leads to R-loop accumulation, transcriptional elongation defects, and trapped mRNP in nuclear speckles.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, depletion of TREX complex components leads to R-loop accumulation, transcriptional elongation defects, and trapped mRNP in nuclear speckles (Dias et al., 2010; Dom\u00ednguez-S\u00e1nchez et al., 2011; P\u00e9rez-Calero et al., 2020; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "f966ad5e-92e0-4151-8c51-ecc39206055e",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C142",
+      "claim": "THO could serve as a landing pad for Gbp2 loading onto mRNPs to function as a key surveillance factor during mRNP maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The extensive interactions between THO and Gbp2 suggest that THO could serve as a landing pad for Gbp2 loading onto mRNPs to function as a key surveillance factor during mRNP maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the data presented.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "252e56be-e4db-4d4c-af17-7fbc85021917",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C143",
+      "claim": "Both Gbp2 and the TREX complex component Yra1 serve as adaptors for the export receptor Mex67\u2022Mtr2 to facilitate its loading onto mRNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Gbp2 and the TREX complex component Yra1 serve as adaptors for the export receptor Mex67\u2022Mtr2 to facilitate its loading onto mRNPs (Hackmann et al., 2014; Stutz et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "76cafef1-e450-46f6-925c-97f219e9d672",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C144",
+      "claim": "Evidence suggests that the human THO complex also makes direct contact with the export receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, evidence suggests that the human THO complex also makes direct contact with the export receptor (Viphakone et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "2b8cca4d-edec-4abd-ada5-b643f392ce88",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C145",
+      "claim": "Yra1 contains a second Sub2 binding site at its N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Yra1 contains a second Sub2 binding site at its N-terminus (Str\u00e4sser and Hurt, 2001; Zenklusen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "6d17639d-89e5-43e9-a31a-a61dfc8af2d2",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C146",
+      "claim": "One Yra1 can engage with two Sub2 ATPase molecules in the THO\u2022Sub2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It is plausible to speculate that one Yra1 can engage with two Sub2 ATPase molecules in the THO\u2022Sub2 complex (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative claim based on the structural data and prior knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "59287338-aeaf-4541-bb45-4694838f5a16",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C147",
+      "claim": "In humans, SR proteins and Alyref bind to overlapping sites on the export receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, SR proteins and Alyref, the ortholog of Yra1, bind to overlapping sites on the export receptor (Huang et al., 2003), suggesting that Gbp2 and Yra1 may not act together to load Mex67\u2022Mtr2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "8ee62203-ed79-41e1-99e9-545e5f10829a",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C148",
+      "claim": "Gbp2 and Yra1 may not act together to load Mex67\u2022Mtr2.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, SR proteins and Alyref, the ortholog of Yra1, bind to overlapping sites on the export receptor (Huang et al., 2003), suggesting that Gbp2 and Yra1 may not act together to load Mex67\u2022Mtr2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the human data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "f6ee3556-916a-4f49-9057-e5ce927bcc92",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C149",
+      "claim": "The multimeric THO complex can provide a platform to engage with both Gbp2 and Yra1, with each of them recruiting one Mex67\u2022Mtr2 molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the multimeric THO complex in principle can provide a platform to engage with both Gbp2 and Yra1, with each of them recruiting one Mex67\u2022Mtr2 molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "3f8d6f7f-4441-4221-a659-1bee229dcb42",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C150",
+      "claim": "THO may engage with Gbp2 and Yra1 during different stages of mRNP maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, THO may engage with Gbp2 and Yra1 during different stages of mRNP maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "483928f9-f87a-4f7e-957d-fe6994e1c0e3",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "claim_id": "C151",
+      "claim": "THO functions as a general platform to recruit multiple export factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our work supports a view that THO functions as a general platform to recruit multiple export factors, but further investigations are needed to pinpoint how THO spatially and temporally coordinates the actions of different export factors to prepare mRNPs for export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the data presented.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A 3.7 \u00c5 cryo-EM structure of the yeast THO\u2022Sub2 complex reveals the intimate assembly of THO revolving around its largest subunit Tho2, which can be dissected into 'head', 'neck', and 'trunk' sections. The structure shows detailed molecular interactions between THO subunits, with Tho2 featuring ~9000 \u00c5\u00b2 contact area with other subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cryo-EM structure determination at 3.7 \u00c5 resolution (C3, C56) is well-documented with appropriate data processing workflows. The structural claims about THO assembly (C4, C60-C85) are directly supported by the electron density map quality and the de novo model building with 90% residue register assignment (C57, C59). The detailed molecular interactions described are consistent with the resolution achieved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "5fa46e47-dddd-43c8-ab9d-af7bfc96b5a3",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "THO stabilizes a semi-open conformation of Sub2 ATPase through interactions with both RecA domains, particularly via two pairs of Tho2 helices (residues 625-695) contacting Sub2-C. Critical Sub2 loops (residues 304-308 and 355-358) mediate these interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural analysis of THO-Sub2 interactions (C87-C91) is supported by the 3.7 \u00c5 cryo-EM structure and shows excellent agreement with prior crystal structure data (C88). The functional importance is validated by prior mutagenesis studies showing that Sub2 mutant E356A/K357A/R358A cannot be activated by THO (C92).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "fa0b4e69-29ef-4b3c-a7f6-7e58dac38856",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "THO directly interacts with Gbp2 through multiple domains from both proteins. Full-length THO (THO-FL) binds Gbp2 more strongly than the THO* core, and the N-terminal RS domain of Gbp2 is required for stable binding, while RRM3 is dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The direct interaction is demonstrated by GST pull-down assays with purified recombinant proteins (C30-C34). The differential binding of THO-FL versus THO* (C31) and domain deletion studies (C33-C34) provide converging evidence for multi-domain interactions. The experiments appear to be replicated (stated as repeated three times independently).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "608e3558-4b57-462b-b482-5116daed6651",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cross-linking mass spectrometry analysis identified 200 unique EDC and 133 unique DSS cross-links, revealing that Tho2-CTD is in close proximity to all three Gbp2 RRM domains. Each RRM domain cross-links to the structured segment in Tho2-CTD, suggesting Gbp2 localizes between two THO molecules near Hpr1 lobe B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The XL-MS data (C103-C104) is highly consistent with the THO structure, with 91% of EDC and 100% of DSS cross-links falling within expected distance restraints (C106-C107). The specific cross-links between Gbp2 RRM domains and Tho2-CTD (C122-C123) provide spatial constraints that support the proposed localization (C124). This is further corroborated by in vitro binding studies (C127).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The THO*\u2022Sub2 complex forms a tetrameric assembly composed of four protomers that can be dissected as two dimers. The 'head on' dimer interaction is conserved between yeast and human, but the tetramer formation in THO* is likely an artifact of truncations, as full-length THO forms dimers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The tetrameric assembly is observed in cryo-EM data (C41-C44), and XL-MS data supports the 'head on' dimer interface (C48-C49) but not the 'side to side' tetramer interface. The interpretation that tetramerization is due to truncations (C52) is reasonable given that full-length THO from multiple sources forms dimers (C40, C51). The conservation of 'head on' mode with human THO\u2022UAP56 (C46) strengthens the biological relevance of the dimer.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Tho2 C-terminal domain contains a 'bridge' starting at residue 1200, followed by a structured segment (residues 1260-1369) that crosses over to the neighboring THO near Hpr1 lobe B, and a highly flexible tail (residues ~1400-1597). XL-MS data suggests Tho2-CTD and Hpr1-CTD are spatially close and localized between two THO molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The 'bridge' is observed in cryo-EM density (C110), and its starting position is confirmed by comparison with other structures (C111). The structured segment is supported by clustered cross-links to Hpr1 lobe B and Mft1 (C112), consistent with prior proteolysis and CD data (C113). The flexible tail is inferred from cross-links to spatially separated residues (C115-C116) and supported by prior trypsin sensitivity data (C117). The asymmetric dimer flexibility is observed in multiple structures (C118).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "e4bec5d4-3d32-4fbc-9b00-86e40b780313",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GST-Gbp2 can pull down both THO and Sub2 in stoichiometric amounts, and Gbp2 does not directly contact Sub2, suggesting THO, Sub2, and Gbp2 can form a ternary complex where Gbp2 could function together with TREX during nuclear mRNP maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The GST pull-down data clearly shows co-precipitation of THO and Sub2 with Gbp2 (C131), and the lack of direct Gbp2-Sub2 interaction is demonstrated by control experiments (C132). The formation of a ternary complex (C133) is a reasonable inference from the data, though the functional speculation (C134) requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "a9e754df-32b8-474a-acc1-0cbe9227b77c",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that THO serves as a landing pad to configure Gbp2 and facilitate its loading onto mRNP, with TREX and Gbp2 functioning coordinately during nuclear mRNP maturation and surveillance. THO is proposed to function as a general platform to recruit multiple export factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are proposed models (C9, C136, C142, C151) based on the structural and biochemical data presented. While the extensive THO-Gbp2 interactions are well-documented, the functional claims about Gbp2 loading and coordinated function during mRNP maturation are speculative and require additional in vivo validation. The model is plausible but not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "e62455a7-74f7-435f-9b92-46811f9b7ed4",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The semi-open Sub2 conformation stabilized by THO may represent a 'primed' state for efficient transition to the active state. This activation mechanism is proposed to be conserved among DEAD-box proteins including Dbp5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural observation of semi-open Sub2 (C87, C94) is well-supported by the cryo-EM data. Prior work demonstrates THO stimulates Sub2 ATPase activity in vitro (C86). The interpretation of the semi-open state as 'primed' (C97) is speculative but reasonable. The conservation claim (C98) is supported by citations to prior work on Dbp5 and other DEAD-box proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    },
+    {
+      "id": "afe3bb5d-bc8c-4cc0-9803-b6c311d7f45e",
+      "content_id": "4c7527a3-8565-4a35-8130-d70fd8968786",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate about potential mechanisms for THO engagement with both Gbp2 and Yra1, including possibilities that one Yra1 can engage two Sub2 molecules, that the multimeric THO can provide a platform for both Gbp2 and Yra1 with separate Mex67\u2022Mtr2 molecules, or that THO engages them at different stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are highly speculative models (C146, C148-C150) based on structural possibilities and prior knowledge about overlapping binding sites in humans (C147). No direct experimental evidence is provided to support these specific mechanisms. These represent hypotheses for future investigation rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:30:19.859614Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0c749b84-a558-4c6c-9e9a-e29220be70de",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "0f83b3f9-c6ca-4251-8062-93f5c383da9e",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "6a3e1f86-65e7-41d6-aa03-9b0071db97d6",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "2f0a7c1d-1c47-48bd-9d18-d14ac38fc831",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "4a0b76ce-bfa5-44bd-bd80-de8626f4dda2",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "d091685c-cfce-4daf-9375-f2e87a0dfbd2",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "a41e096d-1d61-4abf-b38f-8c23e469c534",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "f799be3b-af38-497f-bba3-1c82fdef508f",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "7ec7aaee-026f-4898-b2b0-5a823c9bc8ce",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "5e93560d-8d90-46dd-9d66-145f0da1659d",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "9ec078ad-a688-4a22-a6a0-1afe87cc79ca",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "0ffc70a2-aa4a-497e-9b34-11025bb8894f",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "aeae3a72-f039-4805-bfac-f627dec0d026",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "dd4ceeda-d156-4db0-b031-779b0e985587",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "924f4f6d-1b2b-4a54-9e92-ada2b353d02f",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "802de6e3-0854-4826-9a6c-e33cdf2cfdcb",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "6a17fbc6-7919-4f72-8c66-ace013ee2073",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "0da4a694-d19e-460d-9933-179ebe84f01e",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "27aa87e5-ae2a-4aa5-a576-0c724c01b66c",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "5e8a9da6-51ca-4927-a340-3fff4dbe166b",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "98d78ae1-c7c4-4275-90f3-b52cced3ec19",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "514a4c10-4d08-42a1-b35b-d87eff613b14",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "7afbaf52-9c0b-4323-9283-25e00d3658ce",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "b987c29d-91e7-47c6-8e47-938b5fc1b8f4",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "83e9f86f-93d7-43a3-9009-7be59664af42",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "acd9bb07-43fa-41b6-b0d5-52292ac55588",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "c5eed06b-cdb8-48d2-a892-5d6849df6b3d",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "f69fa941-3ad2-4bab-a800-aba2bfb755f0",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "3f233d2e-9b1e-4bc8-9ac4-999148621bd3",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "7cf834e9-305d-42bc-80e5-a3533052494c",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "0cd6e47f-946a-4fbf-b143-e5d860d93549",
+      "result_id": "6f476c98-8fee-4c27-93a6-8c9fa91c58c1"
+    },
+    {
+      "claim_id": "6a3e1f86-65e7-41d6-aa03-9b0071db97d6",
+      "result_id": "5fa46e47-dddd-43c8-ab9d-af7bfc96b5a3"
+    },
+    {
+      "claim_id": "dd4ceeda-d156-4db0-b031-779b0e985587",
+      "result_id": "5fa46e47-dddd-43c8-ab9d-af7bfc96b5a3"
+    },
+    {
+      "claim_id": "5911d5b5-a77f-4901-adec-d2e1eda38039",
+      "result_id": "5fa46e47-dddd-43c8-ab9d-af7bfc96b5a3"
+    },
+    {
+      "claim_id": "5b3783ce-6292-45af-8284-55754b368f3c",
+      "result_id": "5fa46e47-dddd-43c8-ab9d-af7bfc96b5a3"
+    },
+    {
+      "claim_id": "de4999df-6d2e-4a36-bad4-0c355d9f03b1",
+      "result_id": "5fa46e47-dddd-43c8-ab9d-af7bfc96b5a3"
+    },
+    {
+      "claim_id": "4ab05e34-3015-4633-9de0-9d1e47158039",
+      "result_id": "5fa46e47-dddd-43c8-ab9d-af7bfc96b5a3"
+    },
+    {
+      "claim_id": "70fafd41-e172-474e-846b-fcb0d283af6c",
+      "result_id": "5fa46e47-dddd-43c8-ab9d-af7bfc96b5a3"
+    },
+    {
+      "claim_id": "a74469a3-0036-469c-bb37-e8b9261d6dfa",
+      "result_id": "5fa46e47-dddd-43c8-ab9d-af7bfc96b5a3"
+    },
+    {
+      "claim_id": "4296f09f-45d1-4a7d-a02b-4e5ac833562d",
+      "result_id": "fa0b4e69-29ef-4b3c-a7f6-7e58dac38856"
+    },
+    {
+      "claim_id": "54d618ca-04ef-45ee-9e3b-5cc52b94b998",
+      "result_id": "fa0b4e69-29ef-4b3c-a7f6-7e58dac38856"
+    },
+    {
+      "claim_id": "494b0671-50d3-40ec-86a6-a56b35a46a98",
+      "result_id": "fa0b4e69-29ef-4b3c-a7f6-7e58dac38856"
+    },
+    {
+      "claim_id": "2f040320-fc7a-4f4c-a1b7-297e847f671f",
+      "result_id": "fa0b4e69-29ef-4b3c-a7f6-7e58dac38856"
+    },
+    {
+      "claim_id": "f833209c-30db-451c-b597-debb785441e7",
+      "result_id": "fa0b4e69-29ef-4b3c-a7f6-7e58dac38856"
+    },
+    {
+      "claim_id": "4a79f4a5-b79e-45de-947e-47c41605a9ac",
+      "result_id": "fa0b4e69-29ef-4b3c-a7f6-7e58dac38856"
+    },
+    {
+      "claim_id": "ab98f8b3-1a63-419f-8530-4f0be8e7a33d",
+      "result_id": "fa0b4e69-29ef-4b3c-a7f6-7e58dac38856"
+    },
+    {
+      "claim_id": "a237041a-2722-47b2-a78c-03a3361626a0",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "30ead96f-bb4f-4fc7-8e99-9a7e9f90a94a",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "4556747d-f6ae-4a7a-817b-b6be8f4e4135",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "ebcc9fea-9c35-4abe-8757-770e36ecde74",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "dbf523ff-1b11-4aba-b921-f95acf18c847",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "5523ccd1-5562-4d49-8fb2-28e1de704c76",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "dbe5c839-e5c1-410a-961d-458dbfa85f27",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "55f44ff5-a503-4541-b199-ffc2603c6bb9",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "72f4a579-4132-4543-a068-90576e1af5f1",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "ccedc6a0-df76-49da-8ac3-9e570f26aa55",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "b2ed94bc-81de-4f78-bc8c-adbec8aed2d2",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "5bf89363-ea48-47d2-951f-3b27fc5cb8b4",
+      "result_id": "608e3558-4b57-462b-b482-5116daed6651"
+    },
+    {
+      "claim_id": "b39d4bf8-d190-4db5-97bc-4fed83c72e93",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "55f4352c-e439-4a37-b84d-1774101ce709",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "de75547e-4336-4095-a02d-96e6b3e3feeb",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "fb463644-546b-4f57-b54f-2272c4972f2d",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "f059ef4d-c9c5-4ea2-ba75-c3e50d8fa4cf",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "5e3d6ec7-add9-4fc5-8cfb-efe21fbb1dbf",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "1a1dc2cc-4788-4b93-b500-5cbdf798353f",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "0d45fc70-6019-4141-947b-dc4cdeae8b28",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "ce2f1377-81a8-48de-9e2c-44a0a081ca15",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "4904f0b0-36b9-4a4e-97fd-ff2743cc2ab8",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "54f4c987-d7a2-41d9-a694-88f0ffceae3a",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "7bb81be8-9e23-462a-9490-da6a8e27be4b",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "89a8b4a1-de29-4e35-a74a-2d2d58fa837c",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "5318d92a-ee3d-4792-a982-f3c3cfa14fb8",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "fe7af693-5339-4e05-bece-495497194f32",
+      "result_id": "b5d21560-85ed-4b1d-b6b2-217b03ca602c"
+    },
+    {
+      "claim_id": "7d4a7fb4-1304-42da-b41f-88629f6710b7",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "e76f26d8-e639-4ae2-97e8-0c792907af17",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "e497bf72-c784-4e11-a339-bcabc069348f",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "84d494dc-c748-48ae-a544-a77ae8c52c18",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "47e69122-4cd9-45eb-a915-5625bd19fb6f",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "88db107a-ee82-485b-a2b2-46f6250aab7e",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "ce01e870-2f6f-4a9d-923f-5707045b5f25",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "2f8f4226-7cee-4ab8-ac80-00468dc1aef1",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "02f7cd76-09e1-42c9-b13e-2a01438b2684",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "7366a80e-a191-4caa-a3da-755ade0c8df2",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "bd5021f9-968c-4d80-b7bf-38c1a82a53a2",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "19f9bde3-e045-421b-aa54-101a213a5429",
+      "result_id": "f6da71ca-4409-4b53-bc90-ca87c8dd1804"
+    },
+    {
+      "claim_id": "6ed0bff3-ca21-4b93-b6c2-321e41e602e1",
+      "result_id": "e4bec5d4-3d32-4fbc-9b00-86e40b780313"
+    },
+    {
+      "claim_id": "48a5d8ee-b9be-4a8c-9b57-26f3165aca23",
+      "result_id": "e4bec5d4-3d32-4fbc-9b00-86e40b780313"
+    },
+    {
+      "claim_id": "10412c55-e1bd-4187-84bb-6d14fc635c01",
+      "result_id": "e4bec5d4-3d32-4fbc-9b00-86e40b780313"
+    },
+    {
+      "claim_id": "09a36520-dc8e-4b63-9cea-c173e132e06e",
+      "result_id": "e4bec5d4-3d32-4fbc-9b00-86e40b780313"
+    },
+    {
+      "claim_id": "43e926ce-cc5d-4934-a31d-f0cf09b0d97f",
+      "result_id": "a9e754df-32b8-474a-acc1-0cbe9227b77c"
+    },
+    {
+      "claim_id": "451ad573-166a-44fa-9042-e560f454b43a",
+      "result_id": "a9e754df-32b8-474a-acc1-0cbe9227b77c"
+    },
+    {
+      "claim_id": "f966ad5e-92e0-4151-8c51-ecc39206055e",
+      "result_id": "a9e754df-32b8-474a-acc1-0cbe9227b77c"
+    },
+    {
+      "claim_id": "483928f9-f87a-4f7e-957d-fe6994e1c0e3",
+      "result_id": "a9e754df-32b8-474a-acc1-0cbe9227b77c"
+    },
+    {
+      "claim_id": "2a193585-23b4-4932-8550-2c27f1650f86",
+      "result_id": "e62455a7-74f7-435f-9b92-46811f9b7ed4"
+    },
+    {
+      "claim_id": "aa4bab3c-b037-4304-8eec-c3c861575df5",
+      "result_id": "e62455a7-74f7-435f-9b92-46811f9b7ed4"
+    },
+    {
+      "claim_id": "decf5768-3891-43fc-9761-ed2e08b91ee3",
+      "result_id": "e62455a7-74f7-435f-9b92-46811f9b7ed4"
+    },
+    {
+      "claim_id": "5d35b5ae-376d-4352-8486-520f5dfa1985",
+      "result_id": "e62455a7-74f7-435f-9b92-46811f9b7ed4"
+    },
+    {
+      "claim_id": "d549658a-2852-42a0-b9b2-2ee7a0b0610b",
+      "result_id": "e62455a7-74f7-435f-9b92-46811f9b7ed4"
+    },
+    {
+      "claim_id": "5c54e43b-78d3-4c26-815e-1d2285208c5f",
+      "result_id": "e62455a7-74f7-435f-9b92-46811f9b7ed4"
+    },
+    {
+      "claim_id": "0e554df6-c20f-4cc6-9d38-d7c9dd01b3e7",
+      "result_id": "e62455a7-74f7-435f-9b92-46811f9b7ed4"
+    },
+    {
+      "claim_id": "9f420d6e-4dbe-4fa2-868b-5ec3bc58b41f",
+      "result_id": "e62455a7-74f7-435f-9b92-46811f9b7ed4"
+    },
+    {
+      "claim_id": "6d17639d-89e5-43e9-a31a-a61dfc8af2d2",
+      "result_id": "afe3bb5d-bc8c-4cc0-9803-b6c311d7f45e"
+    },
+    {
+      "claim_id": "59287338-aeaf-4541-bb45-4694838f5a16",
+      "result_id": "afe3bb5d-bc8c-4cc0-9803-b6c311d7f45e"
+    },
+    {
+      "claim_id": "8ee62203-ed79-41e1-99e9-545e5f10829a",
+      "result_id": "afe3bb5d-bc8c-4cc0-9803-b6c311d7f45e"
+    },
+    {
+      "claim_id": "f6ee3556-916a-4f49-9057-e5ce927bcc92",
+      "result_id": "afe3bb5d-bc8c-4cc0-9803-b6c311d7f45e"
+    },
+    {
+      "claim_id": "3f8d6f7f-4441-4221-a659-1bee229dcb42",
+      "result_id": "afe3bb5d-bc8c-4cc0-9803-b6c311d7f45e"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C99"
+    ],
+    "result": "Telocytes, a previously unidentified cell type in the PDL, were identified using CD34+/CD31- markers, characteristic morphology (telopodes with podoms and podomers), neural crest lineage tracing, and scRNA-seq analysis. These cells are located near blood vessels and are distinct from pericytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support telocyte identification: scRNA-seq showing CD34+/CD31- expression (C39), in vitro morphology (C40, C43), lineage tracing with Wnt1Cre mice (C41, C45), in vivo immunostaining (C42, C46), and distinction from pericytes via lack of Cd146/Ng2 expression (C47). The combination of molecular markers, morphology, and lineage data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50"
+    ],
+    "result": "Telocytes are quiescent in homeostasis, as demonstrated by lineage tracing showing no significant increase in CD34+/CD31- cell numbers over 1 day to 1 year.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Lineage tracing using Cd34creERT2/+;Rosa26tdTomato/+ mice with chase periods from 1 day to 1 year (C49, Figure 2) directly demonstrates lack of proliferation in homeostasis. This provides strong temporal evidence for quiescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Telocytes proliferate and increase in number during periodontitis, as shown by increased CD34+/CD31- cells at 2 hours post-ligature, lineage tracing at 7 days, and Ki67 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple time points and methods converge: immunostaining at 2 hours (C55), lineage tracing at 7 days (C56), and Ki67 proliferation marker expression (C57). The combination of early response, sustained increase, and proliferation marker provides strong evidence for telocyte activation in disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Telocytes are the major source of HGF in periodontitis, expressing Hgf in scRNA-seq and HGF protein by immunostaining, while endothelial cells do not express HGF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ScRNA-seq shows Hgf expression in telocytes (C63), immunostaining confirms HGF protein in CD34+/CD31- telocytes but not CD34+/CD31+ endothelial cells (C68, C69, Figure 4d), and the authors conclude telocytes are the only HGF-producing cells based on scRNA-seq (C70). The molecular and protein-level data align well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C66",
+      "C67",
+      "C71",
+      "C80",
+      "C84",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C98",
+      "C105",
+      "C110"
+    ],
+    "result": "Telocytes regulate macrophages via HGF/Met signaling, inducing macrophages to express both M1 (Nos2/iNOS) and M2 (Arg1) markers, representing an M1/M2 state. Macrophages express Met receptor in periodontitis but not homeostasis, and are located in close proximity to telocyte telopodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell-cell communication analysis identifies macrophages as HGF targets (C66, C67), scRNA-seq shows Met+ macrophages co-express Nos2 and Arg1 (C80), immunostaining confirms Met expression in periodontitis but not homeostasis (C88, C89), and spatial proximity between telocytes and Met+ macrophages is demonstrated (C90, C91, Figure 5d). The convergence of computational prediction, gene expression, and spatial data strongly supports this signaling axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C111"
+    ],
+    "result": "HGF/Met signaling is required for macrophage polarization to M1/M2 state, as demonstrated by tivantinib (Met inhibitor) reducing Arg1+ cells in vivo and blocking the Arg1 increase/Inos decrease in telocyte-macrophage co-cultures in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In vivo tivantinib treatment significantly reduced Arg1+ cells (C94, Figure 6a-b), and in vitro co-culture experiments showed telocytes increase Arg1 and decrease Inos in macrophages, which is blocked by tivantinib (C96, C97, Figure 6c). The convergence of in vivo and in vitro inhibitor experiments with consistent outcomes provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the ligature-induced periodontitis model, bone loss peaked at days 4-7 for all molars. First and third molars (without ligature) showed recovery at later timepoints, indicating self-recovery ability from milder periodontitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Micro-CT measurements of ABC-CEJ distance show temporal bone loss patterns (C51, Figure 3b). The observation that non-ligated molars recover while the ligated second molar does not (C52, C53) is clearly demonstrated in the data and supports the inference about self-recovery (C54).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Gene enrichment analysis identified angiogenesis, leukocyte migration, and inflammatory responses as top pathways in telocytes. Cell-cell communication analysis identified CHEMERIN, HGF, IFN-I, IL16, LIFR, and APELIN pathways as active in periodontitis but not homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Gene enrichment analysis results are shown in Figure 3g (C61), and cell-cell communication analysis results in Figure 4a (C62). These computational analyses are appropriately applied to the scRNA-seq data and the results are clearly presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C93"
+    ],
+    "result": "Four macrophage clusters were identified with distinct marker expression. Re-clustering analysis separated periodontitis from homeostasis macrophages, with periodontitis cells in three linked clusters (0, 3, 6). RNA velocity analysis suggests Arg1+/Nos2+ macrophages (cluster 0) are linked to Ccr2hi/Aif1lo and Ccr2lo/Aif1hi populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "DEG analysis clearly identifies marker genes for each cluster (C73-C76, Figure 5a), re-clustering shows separation of disease and homeostasis (C77, C78, Figure 5b,e,f), and RNA velocity analysis provides trajectory information (C93, Figure 5e,f). The computational analyses are standard and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The lack of obvious telocyte increase in scRNA-seq data is explained by the relative decrease in stromal cells due to increased immune cell infiltration in periodontitis, which indicates successful disease induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a post-hoc explanation (C100) for why scRNA-seq doesn't show increased telocyte proportions despite immunostaining evidence of increased numbers. While the explanation is plausible and the observation of increased immune cells is valid (C101), this represents a limitation in the scRNA-seq data that required alternative validation methods. The explanation is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Telocytes' ability to shift M1 to M2 macrophages suggests HGF should be beneficial in reducing bone loss. However, only non-ligated molars showed bone loss recovery, indicating telocytes' bone-protective ability is limited by constant physical stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The inference that HGF should reduce bone loss (C116) is logical based on M1/M2 effects, but the observation that ligated molars don't recover (C117, C118) suggests limitations. The interpretation that constant stimuli limit telocyte function (C119) is reasonable but not directly tested. This represents an important limitation that would require additional experiments (e.g., ligature removal studies) to fully resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C125"
+    ],
+    "result": "Telocytes may have a role in angiogenesis based on gene enrichment analysis, and more CD31+ cells were observed in periodontitis. The role of telocytes may extend beyond macrophage regulation to include angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Gene enrichment shows angiogenesis pathways (C122, Figure 3g) and increased CD31+ cells are observed (C123, Figure 3d), but these are correlative observations. The conclusion about telocyte involvement in angiogenesis (C125) is speculative and would require functional studies (e.g., angiogenesis assays, VEGF measurements, telocyte depletion studies) to support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C128"
+    ],
+    "result": "The M1 to M2 macrophage transition provides a possible therapeutic strategy for periodontitis treatment through HGF/Met pathway activation or exogenous telocyte use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative therapeutic proposals (C34, C128) based on the mechanistic findings. While the underlying biology is supported, no therapeutic efficacy studies were performed. Translation to therapy would require extensive additional work including dose-response studies, delivery methods, safety assessment, and efficacy testing in appropriate models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "CD34+/CD31- is the best available marker for telocytes, though other markers (Kit, Vim, Pdgfr\u03b1) showed low or ubiquitous expression in scRNA-seq. The authors acknowledge that other undetermined cells may share this profile and that FAC-sorted cells are heterogeneous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors transparently acknowledge marker limitations: alternative markers are not suitable in their data (C132), CD34+/CD31- is the best available but not perfectly specific (C134, C135), and sorted cells are heterogeneous (C136). This honest assessment of technical limitations strengthens rather than weakens the overall conclusions, as multiple orthogonal approaches were used for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The proposed mechanism involves HGF/Met signaling activating PI3K or CaMKK\u03b2-AMPK pathways in macrophages to induce Arg1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly stated as a proposal (C113) based on literature (C112) rather than direct experimental evidence. The authors did not measure PI3K or AMPK activation, perform pathway inhibitor studies beyond tivantinib, or directly demonstrate this mechanism. This represents a reasonable hypothesis for future work but is not demonstrated in this study.",
+    "result_type": "MINOR"
+  }
+]

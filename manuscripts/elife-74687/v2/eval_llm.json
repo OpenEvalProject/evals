@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "CTNIPs are a novel family of stress-induced signaling peptides in Arabidopsis. The authors identified five CTNIP family members (CTNIP1-5) based on bioinformatic analysis of stress-induced transcripts encoding small proteins with signal peptides. CTNIP1-4 induce calcium influx and MAPK phosphorylation, hallmarks of peptide signaling, while CTNIP5 is inactive. The C-terminal 23 amino acids of CTNIP4 containing two conserved cysteines are sufficient for activity and required for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C35 collectively demonstrate the identification and characterization of CTNIPs as signaling peptides. The bioinformatic identification (C24-C26), functional validation through calcium and MAPK assays (C27-C28), structure-function analysis (C31-C34), and comparative analysis across family members (C30, C35) provide converging evidence. The data are internally consistent and use appropriate methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "HSL3 is the receptor for CTNIPs. The authors identified HSL3 through proteomics showing enrichment in BAK1 complexes upon CTNIP4 treatment (C40, C41). Direct binding was demonstrated by ITC with Kd ~4 \u00b5M for HSL3-CTNIP4 and 0.392 \u00b5M for the HSL3-CTNIP4-BAK1 ternary complex (C42, C43). The conserved cysteines are required for binding (C44). HSL3 does not bind IDA, the ligand for related receptors HAE/HSL2, and lacks IDA-binding motifs (C45, C47), indicating distinct ligand specificity despite phylogenetic relatedness (C48-C50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9, C40-C50 provide strong biochemical evidence for HSL3 as the CTNIP receptor through multiple complementary approaches: unbiased proteomics identification, co-immunoprecipitation, direct binding measurements with quantitative affinity constants, structure-function analysis of conserved residues, and specificity testing with related ligands. The convergence of evidence from different experimental approaches strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CTNIP signaling requires the co-receptor BAK1/SERK. The authors hypothesized CTNIPs are perceived by LRR-receptors that depend on SERK co-receptors (C36, C37). CTNIP4-induced ROS production is significantly impaired in bak1-5 mutants (C38), consistent with BAK1 functioning as a co-receptor that heterodimerizes with the receptor upon ligand binding (C39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C36-C39 demonstrate BAK1's role as co-receptor through genetic evidence (impaired responses in bak1-5) and biochemical evidence (ligand-induced complex formation). The hypothesis (C36) is well-grounded in prior knowledge (C37, C39) and experimentally validated (C38). This is consistent with the ITC data showing BAK1 recruitment to the HSL3-CTNIP4 complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "HSL3 is genetically required for CTNIP responses. HSL3 is strictly required for CTNIP-induced MAPK phosphorylation (C51) and transcriptional reprogramming (C52-C54). Transient expression of HSL3 in N. benthamiana is sufficient to confer CTNIP responsiveness (C55). HSL3 overexpression causes hypersensitivity to CTNIP4 (C56-C57), demonstrating HSL3 is both necessary and sufficient for CTNIP perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 provide strong genetic evidence through loss-of-function (hsl3 mutants show complete loss of responses), gain-of-function (HSL3 expression confers responsiveness in heterologous system), and overexpression (enhanced sensitivity) experiments. The RNA-seq data showing 1074 differentially expressed genes in wild-type but zero in hsl3-1 (C53-C54) is particularly compelling evidence for strict genetic requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The HSL3-CTNIP signaling module modulates root development and stress responses. CTNIPs induce canonical signaling outputs including calcium influx, MAPK phosphorylation, and ROS production (C58), leading to HSL3-dependent transcriptional reprogramming enriched for defense and stress pathways (C59-C61). Constitutive HSL3 activation causes root curling in a SERK-dependent manner (C62-C63). CTNIP4 treatment or overexpression inhibits root growth and induces root skewing in an HSL3-dependent manner (C64-C66), suggesting the module modulates root development (C67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 demonstrate physiological outputs of HSL3-CTNIP signaling through multiple approaches: signaling assays, transcriptomics, and phenotypic analysis. The root phenotypes are consistently observed across different experimental approaches (chimeric receptor, peptide treatment, peptide overexpression) and show genetic dependence on HSL3. The connection to stress responses is supported by GO enrichment analysis and correlation with other elicitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The role of CTNIPs in immunity remains unclear. No difference in susceptibility to P. syringae was observed in hsl3 and ctnip mutants (C68), despite CTNIPs being identified based on stress-induced expression. The authors speculate CTNIPs may regulate plant growth during plant-microbe interactions rather than direct immunity (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 acknowledge negative results and appropriately note the need for additional testing. While C68 provides data from one pathogen/infection method, the authors correctly identify this as insufficient to rule out immune functions (C69 is explicitly speculative). The lack of immune phenotype contrasts with the stress-induced expression pattern, creating uncertainty about physiological function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The HSL3-CTNIP signaling module is evolutionarily conserved across angiosperms with lineage-specific variations. HSL3 and CTNIPs are conserved in Amborella, eudicots, and monocots excluding Poaceae (C70-C71). Species-specific ligand-receptor pairs show co-evolution, as MtHSL3 responds only to MtCTNIP but not AtCTNIP4 (C72-C73). Poaceae lack clear CTNIPs but show HSL3 paralog expansion (C74-C75), suggesting potential divergence of this signaling module in grasses (C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C70-C76 demonstrate evolutionary conservation through phylogenetic analysis across multiple species and functional validation of orthologous pairs. The species-specificity experiment (C73) provides direct evidence for co-evolution. The Poaceae exception (C74-C75) is well-documented, though the interpretation of divergence (C76) is appropriately presented as speculation based on phylogenetic patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Many CTNIPs, particularly in monocots, were previously unannotated in genome databases. Over 40% of identified CTNIPs were unannotated, including all monocot CTNIPs (C77-C78), highlighting challenges in genome annotation for small signaling peptides (C79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are directly supported by the bioinformatic analysis presented. The observation that many CTNIPs were not in existing annotations is well-documented in the data. This represents a methodological contribution demonstrating the value of targeted searches for small peptides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C29"
+    ],
+    "result": "Background context on plant signaling peptides and receptors. Plant genomes encode hundreds of secreted peptides (C1, C12), but few are characterized and receptors are mostly unknown (C2, C13). Signaling peptides play roles in growth, development, and stress (C11, C17, C23). Most are recognized by LRR-RKs that recruit co-receptors (C14-C15). LRR-RK subfamily XI contains well-characterized peptide receptors (C16-C17), but HSL3's ligand remained unknown (C21-C22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C23, C29 provide literature-based context supported by appropriate citations. These establish the rationale for the study by documenting the gap in knowledge (orphan receptor HSL3) and the biological importance of peptide signaling. All statements are consistent with cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Integration with prior and concurrent work on HSL3. IDA is the ligand for related receptors HAE/HSL2 (C46). HSL3 was independently identified as the CTNIP receptor in concurrent work (C80). The signaling module has been conserved for >180 million years (C81) but requires further physiological characterization (C82). HSL3 has been implicated in drought and disease resistance (C83-C84). Identifying HSL3's ligand enables studies of receptor-ligand co-evolution (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C80-C85 appropriately contextualize the findings within the broader literature. Citations support statements about related receptors (C46), concurrent discoveries (C80), evolutionary timescales (C81), and prior HSL3 functions (C83). The forward-looking statements (C82, C85) appropriately acknowledge limitations and future directions.",
+    "result_type": "MINOR"
+  }
+]

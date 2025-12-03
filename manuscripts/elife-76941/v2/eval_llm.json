@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C80",
+      "C91"
+    ],
+    "result": "All 20 canonical tRNA isoacceptor classes can be converted to functional quadruplet tRNAs (qtRNAs) capable of decoding four-base codons with four or fewer mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33, C80, and C91 collectively demonstrate that every tRNA scaffold tested supports quadruplet codon translation. This is supported by comprehensive experimental data across Figures 2, 3, and 6A showing functional qtRNAs from all 20 isoacceptor classes, with each requiring four or fewer mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C29",
+      "C92",
+      "C93"
+    ],
+    "result": "Single point insertions in the anticodon are sufficient to generate functional qtRNAs for approximately one-third (7/20) of isoacceptor classes, particularly those with XYZZ codon patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, C29, C92, and C93 are directly supported by luciferase assay data in Figure 2B showing that 7/20 XYZZ-decoding qtRNAs and 2/20 XYYZ-decoding qtRNAs are functional with only single base insertions. The data clearly demonstrate that minimal mutations can produce functional qtRNAs in specific cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C34",
+      "C40",
+      "C41",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C98"
+    ],
+    "result": "Efficient quadruplet codon translation often requires additional mutations at positions 32, 37, and 38 of the anticodon loop, which can substantially improve translation efficiency but represent an evolutionary barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19, C34, C40-C41, and C44-C49 are strongly supported by directed evolution experiments in Figure 4. NGS data show that 12/41 libraries strongly enrich single variants at positions 32, 37, and 38, and luciferase assays confirm these mutations substantially increase translation efficiency. This represents both a mechanistic finding and an evolutionary constraint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C60",
+      "C61",
+      "C62",
+      "C94",
+      "C99"
+    ],
+    "result": "Only 9 of 20 aminoacyl-tRNA synthetases (AARSs) tolerate quadruplet anticodons and selectively charge qtRNAs with the cognate amino acid, while 12/20 are selectively charged overall when including altered amino acid incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C18, C60-C62, C94, and C99 are supported by mass spectrometry data in Figure 5. Eight qtRNAs are selectively charged with cognate amino acids, and one additional AARS (ArgRS) selectively charges qtRNAs but with arginine. The data clearly show that 11/20 AARSs are intolerant, inefficient, or promiscuous, representing a major constraint on quadruplet code evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C77",
+      "C96"
+    ],
+    "result": "Many qtRNAs selectively incorporate a single amino acid in response to specified four-base codons, demonstrating that amino acid-selective quadruplet codon translation can arise during evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C77, and C96 are supported by mass spectrometry data in Figure 5 and Supplementary file 3, showing that 12/20 qtRNAs are selectively charged with a single amino acid. This demonstrates the feasibility of selective quadruplet codon translation, though the claim about evolutionary arising is an inference from the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C81",
+      "C82",
+      "C83",
+      "C113"
+    ],
+    "result": "ArgRS exhibits promiscuous charging of qtRNAs containing the C35 identity element, charging multiple non-cognate qtRNAs with arginine regardless of other identity elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 and C81-C83 are supported by mass spectrometry data in Figure 5 showing that four qtRNAs (Asp, Ile, Trp, Val) are charged with arginine instead of their cognate amino acids, and 18/20 arginine-like qtRNAs are functional. The data clearly demonstrate ArgRS promiscuity based on the C35 identity element, which is both a mechanistic finding and an evolutionary consideration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C95"
+    ],
+    "result": "A set of 10 qtRNAs demonstrates high orthogonality with minimal crosstalk, enabling codon-selective translation in a miniature all-quadruplet genetic code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C95 are supported by crosstalk data in Figure 6B showing that each of 10 selected qtRNAs is specific for its own four-base codon with minimal off-target activity. This demonstrates the practical feasibility of using multiple qtRNAs simultaneously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C106"
+    ],
+    "result": "The triplet codon code was selected because it is simpler and sufficient rather than because quadruplet codes are unachievable, with multiple evolutionary barriers including fitness defects, requirement for multiple mutations, and limited AARS tolerance preventing natural quadruplet code evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C97-C102, C105-C106 represent the main evolutionary conclusion of the paper. This inference is well-supported by the compiled experimental data showing: (1) fitness defects in Figure 2C, (2) requirement for additional mutations in Figure 4, and (3) limited AARS tolerance in Figure 5. However, claims C100, C102 about evolutionary trends are speculative extrapolations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C27",
+      "C28"
+    ],
+    "result": "qtRNAs exhibit a range of fitness effects from no growth defect (qtRNAGlyGGGG) to severe growth defects that halt bacterial growth (qtRNAAlaGCCC), with effects depending on more than just AARS interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C27, and C28 are directly supported by growth defect measurements in Figure 2C. The data show clear variation in fitness effects across different qtRNAs, providing important context for understanding evolutionary constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Most tRNA scaffolds support quadruplet codon translation through whole anticodon replacement, with selected qtRNAs matching the target codon at all four or the first three positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by phage selection data in Figure 3, showing successful identification of functional qtRNAs through anticodon replacement across multiple scaffolds. Sequencing data in Figure 3E confirms codon matching patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Directed evolution of qtRNAs shows a prominent preference for A37, a base associated with reading frame maintenance, and frequent occurrence of C32-A37-T38 and T32-A37-G38 combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by NGS data in Figure 4F-G showing enrichment patterns at positions 32, 37, and 38. The preference for A37 is clearly demonstrated, and the citation to Agris 2004 supports the connection to reading frame maintenance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "E. coli GlnRS, GlyRS, and ProRS recognize the first three bases of quadruplet anticodons and charge qtRNAs despite increased size; GluRS and PheRS correctly charge qtRNAs with dissimilar anticodons when other identity elements are preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by mass spectrometry data in Figure 5 showing selective charging of qtRNAGln, qtRNAGly, qtRNAPro, qtRNAGlu, and qtRNAPhe. The inference about identity elements outweighing anticodon recognition (C71) is reasonable given the data and cited literature on identity elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Certain isoacceptor classes show strong resistance to quadruplet conversion: 9/10 qtRNAAsn variants are nonfunctional, suggesting AsnRS does not tolerate expanded anticodons; qtRNAIle and qtRNAMet only tolerate arginine-like anticodons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by data in Figure 6A and Figure 3\u2014figure supplement 1 showing the nonfunctionality of most qtRNAAsn variants and the charging data in Figure 5 showing Ile and Met qtRNAs only incorporate arginine. These represent clear examples of AARS intolerance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Six qtRNAs (Asn, Cys, His, Leu, Lys, Thr) could not be characterized for charging due to low protein yield, suggesting they would be unlikely to be selected naturally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by the experimental limitations described in the text and Supplementary file 2. The inference about natural selection (C59) is reasonable given that low protein yield would prevent effective frameshift suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C116",
+      "C118"
+    ],
+    "result": "The results provide a blueprint for engineering an all-quadruplet genetic code, identifying nine selectively charged qtRNAs as starting components and suggesting strategies including AARS re-engineering, ArgRS refactoring, and ribosome engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108, C110-C112, C114, C116, and C118 represent practical recommendations based on the experimental findings. The identification of nine selectively charged qtRNAs (C111) is directly supported by Figure 5 data. The engineering strategies (C112, C114, C116, C118) are reasonable inferences supported by citations to relevant prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C25",
+      "C26",
+      "C50",
+      "C51"
+    ],
+    "result": "The translation efficiency and growth defects of qtRNAs depend on factors beyond AARS interaction, and optimal anticodon loop side sequences are determined by both scaffold and codon in combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C25-C26, and C50-C51 are supported by comparing qtRNAs from AlaRS, LeuRS, and SerRS scaffolds (which don't interact with anticodons) showing variable behaviors in Figure 2, and by the diversity of optimal sequences in Figure 4 showing scaffold-codon dependence. However, C22 is speculative about wobble base pairing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C78",
+      "C79"
+    ],
+    "result": "The study characterized 116 different qtRNAs based on 20 scaffolds decoding 57 of 256 possible quadruplet codons, with 60 of 109 tested qtRNAs being functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C78, and C79 are straightforward descriptions of the experimental scope directly supported by the compiled data in Figure 6A and statements in the text. These provide important context for the comprehensiveness of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C55",
+      "C56",
+      "C57",
+      "C89",
+      "C109"
+    ],
+    "result": "Mutations at anticodon loop sides may improve qtRNA function through effects on tRNA modification by modifying enzymes, which is essential for tRNA function, though the exact mechanism requires further study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39, C55-C57, C89, and C109 are largely speculative (C38, C57, C89, C109) or based on cited literature (C39, C55-C56) rather than direct experimental evidence in this study. While the speculation is reasonable given the observed effects of mutations at positions 32, 37, and 38, the mechanism by which these mutations improve function is not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "qtRNASerTCGG and qtRNASerGCAT are nonfunctional despite SerRS not interacting with the anticodon, suggesting function may be governed by other factors like modification enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by data in Figure 6A showing these qtRNAs are nonfunctional, combined with established knowledge about SerRS. However, the speculation about modification enzymes (C89) lacks direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "All 14 charged qtRNAs might be selected naturally to rescue frameshift mutations, while the 12 selectively charged qtRNAs might be selected as components of an all-quadruplet genetic code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are reasonable inferences from the charging data in Figure 5. The distinction between frameshift suppression (requiring any charging) and genetic code expansion (requiring selective charging) is logical, though these are evolutionary predictions rather than demonstrated outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Competition with canonical triplet tRNAs is a primary limitation of quadruplet codon translation, resulting in toxicity and low translation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is a reasonable inference from the toxicity data in Figure 2C and low translation efficiency data throughout the manuscript. While not directly demonstrated through competition experiments, this interpretation is consistent with the observed phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C26",
+      "C36",
+      "C37",
+      "C42",
+      "C43",
+      "C53",
+      "C66",
+      "C70",
+      "C72",
+      "C73",
+      "C103",
+      "C104"
+    ],
+    "result": "Background knowledge claims about the genetic code, tRNA function, AARS recognition, frameshift suppression, and related phenomena from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C16, C26, C36-C37, C42-C43, C53, C66, C70, C72-C73, C103-C104 represent established knowledge or prior work supported by appropriate citations. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C102",
+      "C107",
+      "C119",
+      "C120"
+    ],
+    "result": "Speculative claims about evolutionary trends in AARS specificity, selection pressures on translation fidelity, frequency of natural quadruplet codes, and feasibility of future engineering efforts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100, C102, C107, C119-C120 are speculative extrapolations about evolutionary history and future engineering feasibility. While these speculations are reasonable given the experimental data, they lack direct experimental support and represent hypotheses rather than demonstrated findings.",
+    "result_type": "MINOR"
+  }
+]

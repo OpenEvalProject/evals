@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript contextualizes the development of FlyBrainLab by noting the recent availability of extensive Drosophila connectome/synaptome datasets and the lack of computational tools to effectively analyze them, drawing an analogy to how automation tools accelerated genomics in the early 2000s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, and C6 establish the scientific context and motivation for the work. C1 is supported by multiple dataset citations throughout the manuscript. C5 accurately describes a gap in the field supported by citations. C6 provides a historical analogy that is general knowledge in computational biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "FlyBrainLab is an open-source platform designed with three main capabilities: 3D exploration and visualization of fly brain data, creation of executable circuits from explored data, and interactive exploration of circuit functional logic, uniquely positioning it to accelerate discovery of Drosophila brain function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7, C57, C58, and C60 describe the core design and purpose of FlyBrainLab. These claims are well-supported by the detailed architectural descriptions, figures (especially Figures 1 and 2), and the six use cases demonstrating these capabilities in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "FlyBrainLab integrates multiple components: the NeuroArch Database storing diverse datasets, the Neurokernel Execution Engine for GPU-based circuit execution, and the NeuroMynerva user interface with NeuroNLP and NeuroGFX windows that support natural language queries, 3D visualization, interactive circuit diagrams, and Jupyter notebook integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 through C19 describe the technical architecture and components of FlyBrainLab. These are well-supported by Figure 2, the Materials and methods section detailing the architecture, citations to underlying technologies (NeuroArch, Neurokernel), and demonstrations in the use cases. The integration claims are substantiated by the working examples provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Using the Medulla 7 Column dataset and FlyBrainLab's natural language interface, the authors visualized lateral feedback pathways in the motion detection circuit, focusing on T4a neurons and their presynaptic partners including Dm and Pm cells, addressing a gap in research that has largely ignored feedback pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 describe Use Case 1 demonstrating circuit building with English queries. The claims are supported by Figure 3(a1-a2), citations to relevant literature, and detailed query sequences in Materials and methods. The visualization and connectivity matrix provide evidence for the constructed circuit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors used FlyBrainLab to visualize pathways connecting the mushroom body (MB) and fan-shaped body (FB), building on recent findings that Kenyon cells in the MB receive visual inputs and that the MB and FB are interconnected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe another example from Use Case 1. These claims are supported by appropriate citations to the literature (Modi et al., 2020; Liu et al., 2006; Li et al., 2020a,b) and Figure 3(b1-b2) showing the visualized circuit and connectivity matrix.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Application of the Louvain algorithm to the Hemibrain dataset identified eight densely connected neuron groups, six of which were assigned to known brain regions including the antennal lobe, mushroom body, lateral horn, central complex, anterior ventrolateral protocerebrum, and superior protocerebrum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 describe Use Case 2 analysis. The claims are supported by Figure 4(a-c) showing the clustering results and visualization, and the Materials and methods section describing the methodology. The assignment to known brain regions was done by visual inspection, which is a reasonable approach given the quality of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors implemented and compared three published models (A, B, C) of the central complex PB-EB circuit exhibiting ring attractor dynamics. All models showed single-bump tracking of a moving bar, but differed in their response to multiple bars and stimulus removal. Model comparison revealed that global inhibitory neurons are critical for ring attractor dynamics, but model C required only three of five core neuron types to achieve persistent bump activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 describe Use Case 4 comparing CX circuit models. The claims are well-supported by Figure 6 showing morphology, circuit diagrams, and simulation results, Video 1 demonstrating interactive capabilities, detailed model descriptions in Materials and methods, and citations to the original publications. The comparative analysis is rigorous and the conclusions about circuit requirements are supported by the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Comparison of antennal lobe circuit models based on FlyCircuit and Hemibrain datasets revealed that the Hemibrain dataset provides additional connectivity details between OSNs, PNs, and LNs. The FlyCircuit-based model predicted PN activity proportional to odorant-receptor affinity, while the Hemibrain connectivity suggests the adult antennal lobe encodes additional odorant representation features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe Use Case 5 comparing adult antennal lobe models. The claims are supported by Figure 7 showing morphology, circuit diagrams, and response data, and detailed model descriptions in Materials and methods. However, C41 is somewhat speculative ('suggests') and would benefit from additional experimental validation, though this is acknowledged as future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Comparison of early olfactory system models between adult and larval Drosophila revealed stark contrasts in odorant representation at all circuit layers, with the larval model including fewer OSNs, PNs, and LNs, raising questions about how downstream circuits process differently represented odorant identities across development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 describe Use Case 6 comparing developmental stages. The claims are supported by Figure 8 showing morphology, circuit diagrams, and response comparisons, Table 1 detailing neuron numbers, and Materials and methods describing the models. The observation of stark contrasts is evident in the data, though the mechanistic question raised is appropriately left as future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "FlyBrainLab provides Utility Libraries to analyze graph structure from connectome data and Circuit Libraries for exploring central complex circuits and early olfactory system models, including molecular transduction models that transcend connectome limitations and enable biological validation of executable circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C62-C67 describe the library components of FlyBrainLab. These are supported by references to Appendices 2 and 3, citations to transduction models (Lazar et al., 2015a,b; Lazar and Yeh, 2020), and demonstrations throughout the use cases showing these libraries in action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The manuscript reviews existing computational neuroscience tools (simulation engines, network creation tools, model standards, visualization platforms) and identifies key limitations: substantial manual effort required to build executable circuits from data, difficulty meeting demands of expanding datasets, rare model comparisons in the literature, and the challenge of linking circuit structure to function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C56 provide a comprehensive literature review establishing the need for FlyBrainLab. These claims are well-supported by extensive citations to existing tools and platforms. The identified limitations are reasonable assessments of the field, though some (like C49 about rare model comparisons) are somewhat subjective. The citation to Allen Brain Observatory (C56) appropriately supports the claim about the difficulty of creating circuit simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C68"
+    ],
+    "result": "FlyBrainLab's current data integration focuses on connectomics/synaptomics datasets that inform executable circuit construction, and its modular architecture provides flexibility and scalability, with the capability to reduce exploratory development cycles by speeding up creation of interactive circuit diagrams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61, and C68 describe current capabilities and design features. These are supported by the demonstrated use cases focusing on connectome-based models, the architectural descriptions in the manuscript, and the modular design evident in Figure 2 and Appendix 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The authors envision that as more data becomes available, the entire fruit fly central nervous system can be explored with FlyBrainLab, and the platform's core software and workflow can be adapted to other model organisms including zebrafish and bee.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69 and C70 are speculative statements about future capabilities. While the modular architecture and demonstrated capabilities suggest these extensions are plausible, no evidence is provided that these have been tested or implemented. These are reasonable projections but remain unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The manuscript details the loading of multiple public datasets into the NeuroArch Database, including FlyCircuit (22,828 neurons, 4,538,280 inferred connections), Hemibrain v1.0.1 (24,770 neurons, 3,604,708 connections, 14,318,675 synapses), Larva L1EM (1,051 neurons, 30,350 connections, 121,112 synapses), and Medulla 7 Column (2,365 neurons, 42,279 connections, 130,203 synapses).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 provide factual descriptions of data loading procedures. These are well-documented in the Materials and methods section with specific numbers, citations to original datasets, and descriptions of processing steps. The procedures are transparent and reproducible.",
+    "result_type": "MINOR"
+  }
+]

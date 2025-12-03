@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors identified six major CD4+ T cell states (Th1 effector, Tfh effector, Tcmp, Th1 memory, Tfh memory, Tcm) and three minor states (Treg, IFNI-stimulated, Eomes-HI) in virus-specific CD4+ T cells during acute and chronic LCMV infections. These states were characterized by distinct gene expression profiles, with Th1 cells expressing Prdm1 and Gzmb, Tfh cells expressing Bcl6 and Il21, and Tcmp/Tcm cells expressing Ccr7, Il7r, and S1pr1 along with promiscuous expression of both Th1 and Tfh markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C37-C52 collectively describe the identification and characterization of CD4+ T cell states based on scRNA-seq data from over 35,000 cells. The clustering analysis, gene expression patterns, and validation with external signatures (C36, C43) provide strong converging evidence. The characterization is supported by both transcriptomic data and flow cytometry validation (C32-C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "During acute LCMV infection, CD4+ T cells undergo a dramatic transition from effector to memory states between day 7 and day 21 post-infection, with subtype-specific kinetics. Th1 and Tfh cells show dampening of effector molecules (Gzmb, Il21) and acquisition of Il7r, with continued transcriptional remodeling extending beyond the contraction phase. Tcmp cells more rapidly upregulate memory-associated genes (Ccr7, Il7r, Bcl2, Klf6), suggesting they represent a population with increased fitness for long-lived memory development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 describe temporal dynamics of CD4+ T cell differentiation during acute infection, supported by gene expression analysis at multiple timepoints (C53, C56-C60). The observation of continued remodeling (C58-C59) and differential kinetics between subtypes is well-documented. However, C61 is speculative about Tcmp fitness, though it is reasonably supported by the gene expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In chronic LCMV infection, CD4+ T cells fail to transition to memory states and maintain effector phenotypes at day 21. Late chronic infection is characterized by upregulation of Nr4a family members, Tox, and inhibitory receptors (PD-1, Lag3) across all subtypes, with downregulation of cytotoxic genes in Th1 cells but maintenance of Il21 and Maf in Tfh cells. Tcmp cells are reduced in frequency but maintain expression of Il7r, Ccr7, and S1pr1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C74 describe adaptation to chronic infection, supported by scRNA-seq data comparing acute and chronic conditions at multiple timepoints (C62-C67). Gene expression changes (C68-C74) are documented with appropriate figures and consistent with prior literature on T cell exhaustion. The temporal analysis (C67) strengthens the interpretation that changes are due to chronicity rather than viral variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Two minor CD4+ T cell states are specifically associated with chronic infection: an IFNI-stimulated state and an Eomes-HI state. The Eomes-HI state appears at late chronic stages, is characterized by co-expression of Eomes, Lag3, Xcl1, Crtam, and Gzmk, and shows reduced ThPOK protein expression specifically in EOMES+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 describe chronic infection-specific states supported by both scRNA-seq data (C75-C77, C79) and flow cytometry validation (C76, C78). The observation of reduced ThPOK in EOMES+ cells (C78) is directly demonstrated by flow cytometry. The characterization is consistent with previous literature (C76, C77, C79) and provides mechanistic insight into CD4+ T cell dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "TCR repertoire analysis reveals that virus-specific CD4+ T cell responses are largely private across individuals (<3% clonotype overlap), and most clonotypes differentiate into multiple CD4+ T cell states with minimal functional bias. However, a minority of clonotypes (9% in acute, 13% in chronic infection) show significant bias toward specific subtypes, with bias patterns differing between acute (Tcmp/Th1) and chronic (Th1/Tfh) infections. Previously reported CDR3 motifs were not predictive of clonotype bias in this dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C91 describe TCR repertoire analysis with appropriate statistical methods including clonotype bias metrics and permutation testing. The finding of private repertoires (C81-C82) is well-quantified. The clonotype bias analysis (C83-C88) uses appropriate controls and shows clear differences between acute and chronic infections. The failure to replicate CDR3 motif predictions (C89) is appropriately documented and suggests context-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C98",
+      "C99",
+      "C102",
+      "C103"
+    ],
+    "result": "The CD4+ T cell reference map accurately projects external datasets, correctly classifying cells by timepoint and validating known effects of genetic and therapeutic perturbations. Projection of Bcl6-deficient cells shows exclusive Th1 differentiation while Blimp1-deficient cells are dominated by Tfh/Tcmp states. Anti-PD-L1 treatment increases Th1 effector proportions and upregulates Th1-associated genes (Klrd1, Plac8, Ctla2a, Ly6c2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C103 demonstrate the utility of the reference map through multiple validation experiments. The projection accuracy is validated with independent datasets (C92-C94) showing appropriate temporal and phenotypic classification. Genetic perturbation experiments (C98-C99) recapitulate known biology, and therapeutic intervention analysis (C102-C103) confirms published findings, demonstrating the map's utility for interpreting experimental perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "CD4+ T cell subtype-defining transcriptional programs are preserved across tissues, enabling accurate classification by reference projection. Tissue-specific adaptation involves shared gene modules: lung-resident cells (influenza infection) upregulate genes including Crem, Tnfrsf4, H3f3b, Fth1, and this same module is upregulated in liver-resident LCMV-specific CD4+ T cells, suggesting common tissue residency programs across different subtypes and infection models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 demonstrate cross-tissue applicability of the reference map using external datasets from influenza (lung/LN) and LCMV (liver/spleen) infections. The identification of shared tissue-specific gene modules (C106, C108) across different infection models and subtypes is well-documented. The inference that subtype programs are preserved across tissues (C109-C110) is supported by successful projection and consistent gene expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Tumor-specific CD4+ T cells show both similarities and differences compared to virus-specific cells. While tumor-draining LN cells resemble viral Tfh states, tumor-infiltrating lymphocytes include substantial Treg populations (~30%) and a distinct Th1-like population that expresses Th2-associated genes (Igfbp7, Ccl1, Ccr8, Il13) while downregulating Th1 genes (Ccl5, Ly6c2), suggesting CD4+ T cells acquire distinct effector programs in cancer versus infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C119 describe tumor-specific CD4+ T cells using the reference map projection approach. The identification of differences between tumor and viral contexts is supported by multiple analyses: projection (C111-C113), gene expression comparison (C114-C115), re-clustering analysis (C116), and differential expression (C117-C118). The conclusion that CD4+ T cells acquire distinct programs in cancer (C119) is a reasonable inference from the documented differences, though additional functional validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The CD4+ T cell reference map can accurately interpret cell states in external single-cell datasets across tissues and disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is a summary statement supported by multiple validation experiments described in other result groups (projection of external datasets C92-C103, cross-tissue analysis C104-C110, and tumor analysis C111-C119). The claim is well-supported by the comprehensive validation across multiple independent datasets, tissues, and disease contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Spectral flow cytometry and scRNA-seq reveal that virus-specific CD4+ T cells are highly heterogeneous, with partial similarities between acute and chronic infections at early timepoints but minimal overlap at late timepoints. CD4+ T cells in chronic settings change less drastically over time compared to the sharp transition in acute infection. The scRNA-seq analysis generated over 35,000 high-quality transcriptomes with successful data integration across biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe the experimental approach and initial observations. The heterogeneity (C32) and temporal dynamics (C33-C34) are documented by flow cytometry with appropriate visualization. The scRNA-seq data quality (C35) and integration success (C36) are well-documented with appropriate quality control metrics and visualization of biological replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The introduction establishes the biological context for CD4+ T cells in immune responses, including their functional diversity, transcriptional regulation, memory formation, and the influence of TCR-antigen interactions on differentiation. These claims summarize established knowledge and identify gaps in understanding CD4+ T cell transcriptional states and their evolution during infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 are primarily background knowledge supported by appropriate citations to previous literature. These claims establish the scientific context and rationale for the study. While C3-C4 and C25 involve some interpretation about gaps in knowledge, they are reasonable assessments of the field supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Major functional and phenotypic changes in CD4+ T cells occur during and after the contraction phase 12-20 days following infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a statement of established knowledge supported by citations (Marshall et al., 2011; Pepper and Jenkins, 2011) and is used to contextualize the observed timing of changes in the current study. This is appropriately cited background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C100",
+      "C101"
+    ],
+    "result": "Tfh cells are more susceptible to NICD than other CD4+ T cell subtypes, and NICD-blockade can enhance Tfh persistence. Bcl6 drives Tfh and memory differentiation while Blimp1 promotes Th1 functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 and C100-C101 are interpretations of projected data in the context of established knowledge, appropriately supported by citations to previous literature (K\u00fcnzli et al., 2020; Crotty, 2011). These claims serve to validate the reference map's utility by showing consistency with known biology.",
+    "result_type": "MINOR"
+  }
+]

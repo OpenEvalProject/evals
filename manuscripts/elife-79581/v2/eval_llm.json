@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C68",
+      "C69"
+    ],
+    "result": "Time-frequency representations of individual participants capture high-frequency dynamics that are lost when averaging across participants. Individual time series show significantly greater amplitude at higher frequencies compared to group mean time series, because stimulus-evoked facial responses are asynchronously aligned across participants and cancel when superimposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C68 provide converging evidence that the time-frequency approach preserves high-frequency information lost in group averaging. The statistical comparison (C3) and visual evidence from Figure 1 support this finding. The explanation for phase misalignment (C4) is mechanistically sound, and generalization across action units (C69) strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "An HMM applied to time-frequency representations of facial action units identifies distinct spatiotemporal states that occur sequentially with high between-subject consistency (reaching 93% during specific events). States are frequency-localized, correspond to intuitive emotion categories, and transition preferentially within valence categories rather than across emotions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C70-C75 collectively demonstrate that the HMM successfully identifies meaningful affective states. The high between-subject consistency (C6) with statistical validation against null distribution, correspondence with stimulus valence (C72), and intuitive action unit combinations (C73-C74) provide strong converging evidence. The transition probability analysis (C7, C75) reveals interpretable structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "A three-way ANOVA reveals significant interaction between clinical group, stimulus, and facial valence (p=0.003). During stand-up comedy, participants with melancholia showed reduced activation of positive-valence action units (AU12, p<0.0001) and increased activation of negative-valence action units (AU4, p<0.0001), with their responses to comedy resembling controls' responses to sad stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 report statistically significant findings from a properly designed three-way ANOVA with post-hoc testing. The p-values are highly significant, and the pattern of results (C13) showing melancholia responses to comedy resembling control responses to sadness is clinically meaningful. The operational definitions of happiness and sadness (C81-C82) follow established EMFACS conventions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Time-frequency analysis reveals that participants with melancholia exhibit a complex pattern of reduced facial activity across a broad range of frequencies, with the most prominent differences in positive-valence action units during positive stimuli. High-frequency differences occur during specific events like jokes, with sporadic increases in negative-valence action units during sad stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C85-C88 describe time-frequency group differences validated against a permutation-based null distribution (C86, n=1000). The statistical approach is appropriate for controlling for multiple comparisons across time-frequency space. The pattern of findings is consistent with clinical expectations and provides more nuanced information than simple time-averaged measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C59",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234"
+    ],
+    "result": "Classification of melancholia versus controls using time-frequency features achieves 71% accuracy, significantly better than 63% accuracy using mean action unit activations (p<0.001). Control models using temporal blocks with more features still achieve only 63-64% accuracy, demonstrating that improved performance is not simply due to increased feature count.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 report classification results with appropriate cross-validation (C229-C230) and statistical comparison between models (C234). The control analysis (C19, C233) effectively rules out the alternative explanation that improved accuracy is merely due to having more features. The 8% improvement is modest but statistically significant and clinically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "HMM analysis of the melancholia dataset reveals reduced between-subject consistency during funny videos and significant differences in fractional occupancy: melancholia participants spent less time in positive-valence states (states 1 and 2, pFDR=0.03 and 0.004) and more time in negative-valence state 8 (pFDR=0.03). Some individuals with melancholia showed highly anomalous state sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 and C89-C91 report HMM state occupancy findings with appropriate FDR correction for multiple comparisons. The statistical tests are properly specified (C236), and the pattern of results is clinically interpretable. The observation of individual variability (C91) adds important nuance, though the lack of quantification of 'highly anomalous' is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C92",
+      "C148",
+      "C149"
+    ],
+    "result": "Participants with melancholia show altered state transition probabilities: they are significantly less likely to transition from low-frequency positive states (smiling) to high-frequency positive states (giggling), but more likely to transition to other emotional states. From high-frequency positive states, they more readily transition to the 'ennui' state (all pFDR<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C92 report state transition differences with appropriate statistical testing and FDR correction. The selective testing of transitions that could explain occupancy differences (C237) is methodologically sound. The findings provide mechanistic insight into how melancholia affects affective dynamics, though the interpretation of 'ennui' state is somewhat subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The first principal component of action units closely follows joke punchlines during stand-up comedy in controls, but this responsivity to movie events is substantially diminished in the melancholia cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 describe a principal component analysis showing temporal correspondence with stimulus events and group differences. While 'substantially diminished' is qualitative, the visual evidence in Figure 4b supports this characterization. This provides an interpretable summary of multi-dimensional facial responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Participants with melancholia exhibited broad reductions in facial activity and specific reductions in high-frequency activity in response to joke punchlines, reflecting impaired affective reactivity to positive events. Unlike previous reports, no significant group differences were found for negative expression reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 summarize the main findings with appropriate citation to clinical literature. The null finding for negative reactivity (C144) is appropriately reported and contrasted with previous work (C143). The interpretation aligns with the data presented, though the discrepancy with prior work could reflect differences in stimuli, populations, or methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Decreased between-subject consistency in melancholia suggests facial activity is less driven by external stimuli. Similar ambiguous facial responses occur in schizophrenia, suggesting a possible common underlying mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C145 provides a reasonable interpretation of the consistency findings, but the inference is not directly tested. The parallel to schizophrenia (C146) is appropriately cited, but the speculation about common mechanisms (C147) is acknowledged as speculative and lacks supporting evidence from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The findings reflect clinical impressions that positive mood states are fleeting in melancholia while negative states persist, consistent with theoretical models of attractor dynamics in depression and neurobiological models of dysfunctional cortical-basal ganglia circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151 appropriately relate empirical findings to clinical observations. The connections to theoretical models (C152-C155) are properly cited and represent reasonable interpretations of the data within existing frameworks, though these remain correlational observations rather than mechanistic tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "OpenFace software was used to extract action unit intensities from facial videos. OpenFace uses CE-CLM architecture and was trained on multiple datasets, achieving average concordance correlation of +0.73 with human coding on DISFA out-of-sample data, though performance varies across action units (AU12: +0.85, AU15: +0.39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 and C186-C190 describe the action unit extraction method with appropriate citations. The validation metrics (C189-C190) are properly reported, including the important caveat about variable performance across action units. This transparency about method limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "Action unit time series were transformed into time-frequency representations using the continuous wavelet transform with specific parameters (analytic Morse wavelet, symmetry parameter 3, time-bandwidth product 60, 12 voices per octave). Statistical comparison used two-sided t-tests (p=0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C198 provide detailed methodological specifications for the wavelet analysis. The parameters are clearly stated, enabling reproducibility. The statistical approach is appropriate for the comparison being made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "HMM implementation used the HMM-MAR toolbox with multivariate Gaussian observation models. Input was 110 frequency bins (0-5 Hz) for 14 action units, standardized and reduced to top 10 principal components. An 8-state model was chosen based on visual inspection showing trivial splitting beyond this value, though free energy continued decreasing beyond 30 states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C212 provide comprehensive methodological details for HMM analysis. The choice of 8 states (C210-C211) is justified by visual inspection and consistency with prior work, though the lack of a clear minimum in free energy (C208) indicates some arbitrariness. The robustness to state number variations (C212) partially addresses this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Cross-domain generalizability in facial affect detection is known to be limited, but the spectral transform method depends on sensitivity to AU intensity changes rather than occurrence accuracy. OpenFace's landmark detection has been validated on out-of-sample data (300-VW dataset), providing confidence in intensity sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C160 acknowledge an important limitation and provide reasoning for why it may be less problematic for this approach. However, the speculation that cross-domain generalizability is better for intensity than occurrence (C158) lacks direct empirical support. The validation of landmark detection (C160) provides some reassurance but doesn't fully address the concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Participants with constant zero activation in action units were excluded because this produces an ill-defined spectral transform. Five participants were excluded (1 control, 4 melancholia), who may have had the greatest impairments in facial affect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C162 describe a necessary exclusion criterion with clear technical justification. The acknowledgment (C163) that excluded participants may have had the most severe impairments is appropriate, though speculative. This exclusion could bias results toward underestimating group differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Time-frequency maps were standardized before HMM inference to ensure sequential state occurrence across time, though this reduces group differences in state sequences. Without standardization, states are biased toward group differences rather than temporal differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C166 describe a preprocessing decision with clear rationale and acknowledgment of trade-offs. The supplementary analysis (C166) demonstrating the effect of omitting standardization strengthens confidence in the methodological choice, though it highlights that results depend on this preprocessing decision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Generalizability of clinical results is limited by sample size and would benefit from replication. Modest inter-rater reliability of psychiatric diagnoses raises questions about diagnostic 'ground truth', though previous work demonstrated neurobiological differences in this cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C169 appropriately acknowledge important limitations. The sample size concern (C167) is valid for a clinical study. The diagnostic reliability issue (C168) is a general problem in psychiatry, partially addressed by citing previous neurobiological findings in the same cohort (C169).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C76",
+      "C77",
+      "C78",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Two datasets were used: DISFA (27 participants viewing 4-minute emotive video clips) and a melancholia dataset (30 participants with melancholic depression and 38 matched controls viewing three video clips). Participants met specific diagnostic criteria and exclusion criteria, with appropriate informed consent and video recording specifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C9, C76-C78, and C179-C185 provide comprehensive description of datasets, participants, diagnostic criteria, and recording procedures. The information is clearly stated with appropriate citations and sufficient detail for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The pipeline focused on oscillatory magnitudes and discarded phase information. Future work could incorporate phase information to quantify stimulus synchronization, and utility could be improved by multimodal fusion of facial, head pose, vocal, and body language behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C172 appropriately acknowledge current limitations (C170) and suggest reasonable directions for future work (C171-C172). These are presented as speculative suggestions rather than tested hypotheses, which is appropriate for a discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The work demonstrates that dynamic affective responses can be understood within a quantitative framework. The tools are cheap, automatable, and could be used in smartphone systems for clinical assessment, with potential applications in screening, monitoring, and differential diagnosis of conditions with reduced expressivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C174 appropriately summarizes the contribution. However, claims C175-C177 about clinical applications are speculative and not empirically tested in this study. The acknowledgment (C178) that clinical translation requires evaluation of acceptability and utility is appropriate but highlights that these applications remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Facial expression dynamics can be captured by a small number of spatiotemporal states that co-activate facial muscle groups with distinct spectral fingerprints and transition dynamically with emotional context. State distributions are influenced by stimulus properties, with DISFA showing disgust states during disgusting clips and melancholia dataset over-representing happiness/sadness states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 and C133-C139 summarize key findings about the relationship between HMM states and stimulus properties. The observations about state distributions across datasets (C134-C137) are appropriately interpreted as reflecting stimulus content differences. The broader interpretation about affect-environment dynamics (C138-C139) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The method builds on EMFACS but provides richer action unit mappings. While EMFACS defines happiness with just two action units, such sparse activations are rare during intense displays. Laughing during comedy activated eyebrow-related action units traditionally associated with sadness, while negative stimuli dampened movements with relative sparing of sadness-associated action units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C122 appropriately position the work relative to EMFACS and demonstrate that the HMM approach captures richer patterns. The specific findings about action unit co-activation (C121-C122) challenge traditional sparse mappings and are supported by the data, though the interpretation of what constitutes 'traditional' associations could be more precisely specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Unlike previous HMM approaches that model individual action units or emotions with separate HMMs, this method uses a single HMM without prior emotion categories to capture dynamic co-occurrence of facial actions. Taking spectral activity as input uniquely captures spatiotemporal texture, enabling disambiguation of smiles from giggles, which is important for understanding melancholia where smile states more readily transition to ennui.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C132 clearly differentiate the current approach from previous HMM methods with appropriate citations. The advantages of the spectral approach (C128-C129) are well-articulated, and the specific example from melancholia (C130) demonstrates practical utility. The comparison to neuroimaging methods (C131) and discussion of alternatives (C132) provide appropriate context.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors developed a high-diversity lentiviral barcode library (LG2.2) with 18,026 barcodes and used it to label HSPCs ex vivo. After 16 hr exposure to EPO (1000 ng/ml) or PBS, approximately 2600 cells (10% barcoded) were transplanted into irradiated mice. At day 30, barcoded cells were sorted from spleen and analyzed, with no difference in chimerism between EPO and control groups and similar numbers of engrafting cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C26-C33 describe the experimental design and basic outcomes. The methodology is clearly described with appropriate controls, sample sizes are reported, and the lack of difference in chimerism and engraftment between groups is supported by data in Figures 1b-d. The barcode library generation and validation are adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C86"
+    ],
+    "result": "Ex vivo EPO exposure induced transient high-output myeloid-erythroid-megakaryocyte (MEK)-biased and myeloid-B-cell-dendritic cell (MBDC)-biased HSPC clones after transplantation. In the EPO group, ME-biased HSPCs produced the majority of erythroid cells (57\u00b110%), MB-biased HSPCs produced the majority of B-cells (58\u00b136%), and together these biased clones contributed 65\u00b125% of myeloid cells. The number of erythroid-restricted cells remained stable, indicating EPO modified output balance rather than the number of lineage-restricted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C34-C40, C86 present the core barcoding findings showing EPO-induced lineage biases. The data are supported by triangle plots (Figure 1e,g), quantitative measurements with error bars, statistical testing via permutation tests (Table 1, p<0.05), and replication across multiple experiments (Figures 1, 2, supplementary data). The conclusion that EPO modifies output balance is well-supported by the stable number of erythroid-restricted cells (C34) combined with increased contributions from biased clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Lower EPO concentration (160 ng/ml) and additional EPO injection during transplantation gave similar results to 1000 ng/ml EPO exposure. Results were also similar at 6 weeks post-transplantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 demonstrate robustness of the main findings across different EPO doses and timepoints. Data are shown in Figures 2, Figure 1\u2014figure supplement 4, and Table 1 with statistical support. This strengthens the primary conclusions by showing dose-response consistency and temporal stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Analysis of dendritic cell (DC) and megakaryocyte progenitor (MkP) lineages showed that MB-biased HSPCs significantly increased their contribution to DCs in the EPO group (86\u00b143% vs 22\u00b111% control), while ME-biased HSPCs produced few DCs. The majority of MkP production came from ME-biased HSPCs in both groups (58\u00b121% control, 55\u00b114% EPO). No changes in myeloid subset proportions were detected after EPO exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 extend the lineage bias analysis to additional cell types. The DC and MkP data are supported by Figures 3a-d with statistical testing (Table 1, p<0.05 for DC contributions). The lack of changes in myeloid subsets (C49) is supported by Figure 3\u2014figure supplement 1. These findings are consistent with the ME and MB bias patterns observed in the primary lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Analysis of barcodes in HSPCs at 4 weeks showed that most barcodes overlapped between HSPCs and mature cells in both groups. However, the contribution of barcodes detected in HSPCs to mature cells was significantly lower in EPO groups compared to control. The pattern of contributions from different biased HSPC subsets to HSPC reads was unchanged in EPO groups, implying unchanged short-term self-renewal. This suggests the increased contribution of biased HSPC classes to mature lineages was caused by cells differentiating more than self-renewing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 address the self-renewal vs differentiation question. The data are supported by Figure 4b-d with statistical testing (Table 1). The logic connecting unchanged HSPC barcode patterns (C54) with decreased mature cell contribution from HSPC-detected barcodes (C56) to infer increased differentiation over self-renewal (C57) is sound. This is a key mechanistic insight distinguishing MPP from HSC behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Single-cell RNA sequencing of 1706 control and 1595 EPO-exposed HSPCs revealed 1176 differentially expressed genes (p=0.01 by permutation testing). EPO-exposed HSPCs showed upregulation of erythroid-associated genes (Hbb-bs, Erdr1, Wtap, Kmt2d, Nfia), GATA1 targets (Abhd2, Cbx3, Kdelr2, Pfas), cell cycle genes (Tubb5, Hist1h2ap), and previously reported EPO-responsive genes (Bmp2k, Ifitm1). Stem cell maintenance genes (Serpina3g, Mecom, Txnip, Meis1, Pdzk1ip1, Sqstm1, Smad7, Aes) were downregulated. Neither ex vivo culture nor EPO treatment dramatically affected the global identity of sorted HSPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 present the scRNAseq differential expression analysis. The data are supported by Figure 5a with volcano plot, appropriate statistical testing (permutation test, p=0.01), and reference map projection (Figure 5\u2014figure supplement 1e,f). The gene expression changes are consistent with erythroid priming and reduced stem cell maintenance, supporting the functional barcoding data. Quality control metrics are provided (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "UMAP visualization revealed that a subgroup of EPO-exposed cells was transcriptomically distinct, with the majority of transcriptomic differences driven by this small subgroup. Cells in the 90th percentile of EPO response signature expression were defined as EPO responders. EPOR and alternative EPO receptor genes were equally expressed across groups. No subgroup with upregulated lymphoid genes was detected, suggesting MBDC bias is an indirect effect of EPO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 identify EPO responder cells within the scRNAseq data. The approach is supported by UMAP visualization (Figure 5b,c), robustness analysis (Figure 5\u2014figure supplement 1c), and unsupervised clustering (Figure 5\u2014figure supplement 2). The 90th percentile threshold is reasonable for defining responders. The equal EPOR expression (C71) is important for ruling out receptor expression as the determinant of response. The inference about MBDC bias being indirect (C72) is logical given the absence of lymphoid gene upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "EPO responders had reduced expression of HSC gene signatures and increased expression of MPP1 and MPP2 signatures compared to control and nonresponders. Annotation of the reference map showed low overlap of EPO responders with quiescent HSC subsets. The scRNAseq analysis indicated that HSPCs directly reacting to EPO are most likely MPP1 and MPP2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 identify the HSPC subset responding to EPO. The data are supported by signature expression analysis (Figure 6a,b) with statistical testing (Kruskal-Wallis, Dunn's post-hoc), reference map annotation (Figure 6c,d), and unsupervised clustering (Figure 5\u2014figure supplement 2c,d). The conclusion that MPP1/2 respond to EPO (C75) is well-supported by converging evidence from multiple analytical approaches and is consistent with the functional barcoding data showing transient effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Transplantation of barcoded EPO-exposed MPP2 (mixed with unbarcoded CD48- HSPCs) confirmed enrichment in ME-biased clones. Engraftment was equivalent to whole HSPC compartment with no difference between EPO and control. ME-biased MPP2 contributed more to M and E lineages after EPO exposure, while the proportion of differently biased MPP2 was similar between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C76-C79 provide functional validation that MPP2 are enriched in EPO-responding cells. The experimental design is appropriate (mixing barcoded MPP2 with unbarcoded support cells), and data are shown in Figure 7a-e with statistical support (Table 1). This directly confirms the scRNAseq prediction that MPP2 respond to EPO and strengthens the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "At 4 months post-transplantation, chimerism was higher and barcode numbers lower than at 1 month. While ME-biased HSPCs still showed significantly higher contribution to M and E lineages, the majority of cells in all lineages were produced by balanced HSPCs. This confirms the effect of EPO exposure is transient and likely caused by MPP cells with short reconstitution capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 demonstrate the transient nature of EPO effects. Data are shown in Figure 8a-e with statistical support (Table 1). The shift from biased to balanced HSPC dominance over time is consistent with MPP (short-term) rather than HSC (long-term) responding to EPO. This temporal analysis strengthens the conclusion that MPP1/2, not LT-HSC, are the primary EPO responders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C84",
+      "C85",
+      "C90"
+    ],
+    "result": "The increased contribution of biased HSPC clones to mature lineages did not match their frequency in HSPCs, indicating they differentiated more than self-renewed. The transient effect corroborates action on MPP1/2 rather than LT-HSCs. EPO has a direct effect on HSPCs (not solely via niche) and directly remodels clonal composition by inducing fate-biased MPPs and reducing HSC output. Direct cytokine stimulation leads to clonal remodeling with transient increase in fate-biased MPP contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C84-C85, C90 present the major conclusions of the study. These are well-supported by the convergence of barcoding data (showing biased clones differentiate more than self-renew), scRNAseq data (identifying MPP1/2 as responders), MPP2 transplantation (confirming MPP2 response), and temporal analysis (showing transient effects). The ex vivo EPO exposure design effectively isolates direct effects from niche effects. The conclusions are logically derived from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The findings are compared to previous studies: occurrence of myeloid, megakaryocytic, and erythroid gene expression in MPP1 after bleeding is consistent with current findings. However, long-term EPO exposure in Tg6 mice did not change MPP2 differentiation in vitro, and the current study did not detect fate deviation toward erythroid at expense of myeloid as seen in previous in vivo EPO-exposed HSPC transplantation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 contextualize findings relative to prior work. C87 shows consistency with Yang et al. 2017. C88-C89 note differences from Singh et al. 2018 and Grover et al. 2014, which the authors appropriately attribute to differences in EPO exposure duration, route, and indirect effects. This critical comparison strengthens the manuscript by acknowledging discrepancies and providing plausible explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The work is placed in context of models where transplantation favors long-term HSC output while steady-state hematopoiesis is maintained more by MPPs. The findings support a model where MPPs are highly malleable and can rapidly respond to changing demands. The direct effect of EPO on MPPs could underlie adverse side effects during long-term EPO use and associations with leukemias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 appropriately contextualize findings within existing models (supported by citations). However, C93 is speculative about clinical implications. While the speculation is reasonable given the data, it requires additional work to establish clinical relevance. The authors appropriately frame this as a possibility ('could be') rather than a definitive conclusion, but the clinical translation remains uncertain without further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The introduction establishes background on erythropoiesis, EPO function, HSPC heterogeneity, and conflicting prior results on whether EPO acts on HSCs or MPPs. It motivates the need for single-cell in vivo lineage tracing to assess EPO's influence on HSPC fate decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide background context supported by appropriate citations. These establish the scientific rationale for the study by reviewing prior work on EPO effects on HSPCs, HSPC heterogeneity, and limitations of previous approaches. The logic for requiring single-cell lineage tracing (C18) follows from the established heterogeneity and conflicting prior results.",
+    "result_type": "MINOR"
+  }
+]

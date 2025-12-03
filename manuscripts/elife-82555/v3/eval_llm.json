@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "INAD, aNAD, and PARK14 are caused by recessive variants in PLA2G6 and are collectively termed PLA2G6-associated neurodegeneration (PLAN). These diseases exhibit characteristic clinical features including early onset ataxia, cerebellar atrophy, iron accumulation in the basal ganglia, and neuropathological hallmarks such as spheroid structures containing \u03b1-synuclein and ubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 are well-supported by multiple citations to established literature (Khateeb et al., 2006; Morgan et al., 2006; Paisan-Ruiz et al., 2009; Gregory et al., 2008; and others). These claims represent established knowledge about the genetic basis, clinical presentation, and pathological features of PLAN diseases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Two mouse models of INAD have been characterized: Pla2g6KO/KO mice exhibit normal lifespan with slowly progressive motor defects starting around 1 year, while Pla2g6G373R/G373R mice show severe early-onset phenotypes and die within 100 days. Both models recapitulate key INAD features including axonal degeneration, cerebellar atrophy, TVS, and \u03b1-synuclein-containing spheroids, though neither shows brain iron accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C27 are supported by citations to established mouse model characterizations (Malik et al., 2008; Shinzawa et al., 2008; Zhao et al., 2011; Wada et al., 2009; Beck et al., 2011). The phenotypic differences between null and point mutation models are well-documented, though the lack of iron accumulation represents a limitation of these models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Drosophila lacking iPLA2-VIA (INAD flies) display progressive neurodegeneration including bang-sensitivity, motor impairments, and vision defects. TEM reveals swelling of synaptic terminals, TVSs, disrupted mitochondrial inner membranes, and lysosome accumulation. Expression of human PLA2G6 fully rescues these defects, demonstrating functional conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are supported by citation to Lin et al., 2018 and represent prior work establishing the fly model. The functional rescue by human PLA2G6 (C33-C34) provides strong evidence for evolutionary conservation and validates the use of this model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "iPLA2-VIA binds to retromer subunits Vps26 and Vps35, and its loss reduces their levels and impairs retromer function. This leads to increased lysosomal trafficking, lysosomal expansion, and elevated ceramide levels, which increase membrane stiffness and may further impair retromer function in a feed-forward loop. Pharmacological or genetic manipulations targeting ceramide or retromer suppress neurodegenerative phenotypes, and enzymatic-dead iPLA2-VIA can fully rescue defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C46 are supported by citation to Lin et al., 2018 and represent the mechanistic model from prior work. The rescue by enzymatic-dead iPLA2-VIA (C45) is particularly strong evidence that the protein's structural/scaffolding role in retromer regulation is critical. Claims C40-C41 about membrane stiffness are more speculative but are appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The sc-376563 antibody specifically recognizes endogenous PLA2G6, which is highly expressed in iPSCs and NPCs but not in fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by antibody validation experiments shown in Figure 1 and Figure 1\u2014figure supplement 1. The antibody recognizes the correct molecular weight band that disappears with shRNA knockdown or in patient cells lacking PLA2G6, demonstrating specificity. Western blot data clearly show differential expression across cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "INAD patient-derived NPCs and DA neurons lacking PLA2G6 exhibit impaired retromer function, lysosomal expansion, increased ceramides (including 2-3 fold elevation of GlcCer and HexCer), and disrupted mitochondrial morphology. These phenotypes are reversed in genetically corrected isogenic cells, indicating a causative relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 and C172-C177 are supported by experimental data shown in Figure 1 including Western blots, immunofluorescence, lipidomics, and ATP measurements. The use of isogenic corrected cells (29-2) as controls is a strength, providing strong evidence for causality. Quantifications show statistically significant differences (p<0.05 to p<0.001) for most phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "INAD mouse models (Pla2g6KO/G373R and Pla2g6G373R/G373R) exhibit ceramide accumulation (particularly GlcCer in Purkinje and DA neurons), lysosomal expansion, mitochondrial defects, increased multivesicular bodies, and TVSs. These defects are consistent across flies, patient cells, and mice, suggesting evolutionary conservation and a critical role in INAD/PARK14 pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C89 and C168-C184 are supported by data in Figure 2 and Figure 2\u2014figure supplement 1, including immunofluorescence, TEM, and behavioral assays. The Pla2g6KO/G373R transheterozygous model shows intermediate phenotypes between null and homozygous G373R mice. The conservation of phenotypes across three species (flies, mice, humans) strengthens the conclusion about pathogenic mechanisms, though lipidomic analysis in mice (C173-C174) did not show significant changes in total ceramides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Cerebellar atrophy is an early feature in INAD patients, and loss of Purkinje neurons in cerebellum and/or DA neurons in substantia nigra are features shared by patients and Pla2g6 mutant mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by citations to clinical studies (Farina et al., 1999) and mouse model characterizations (Zhao et al., 2011; Chiu et al., 2019). These claims establish the relevance of studying Purkinje and DA neurons in mouse models as they recapitulate patient pathology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "PLA2G6 functions as a regulator of ferroptosis in cancer cells and trophoblasts, where loss promotes lipid peroxidation and ferroptosis. However, in INAD flies and mice, ceramide accumulation and lysosomal expansion precede ferroptosis, suggesting that impaired retromer function and lysosomal defects may activate ferroptosis downstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C109 integrate recent literature on PLA2G6 and ferroptosis with the authors' observations. The temporal sequence argument (C103-C106) is supported by data showing ceramide/lysosome defects in 15-day-old flies without elevated iron/ROS. Claims C108-C109 represent a mechanistic model that is appropriately qualified as speculative. The integration with ferroptosis literature (Hou et al., 2016; Torii et al., 2016) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Four drugs (Ambroxol, Desipramine, Azoramide, and Genistein) alleviate neurodegenerative phenotypes in INAD flies and patient-derived NPCs. These drugs reduce LAMP2 levels, restore ATP levels, improve ERG defects, and reduce photoreceptor loss in flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C126 are supported by drug screening data shown in Figure 3 and Figure 3\u2014figure supplement 1. The bang-sensitivity assay in flies provides a rapid primary screen, and validation in patient NPCs strengthens the findings. Statistical significance is shown for most phenotypes (p<0.05 to p<0.001). The consistency of effects across multiple readouts (LAMP2, ATP, ERG, photoreceptors) supports the therapeutic potential of these drugs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The four therapeutic drugs (Ambroxol, Azoramide, Desipramine, Genistein) do not restore Vps35 levels in patient NPCs, suggesting they function downstream of the retromer. Their mechanisms include promoting GCase activity (Ambroxol), protein folding (Azoramide), blocking ceramide salvage (Desipramine), and enhancing lysosome biogenesis (Genistein).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 are supported by data in Figure 5A-B showing no effect on Vps35 punctae, and by citations describing drug mechanisms (Magalhaes et al., 2018; Fu et al., 2015; Jenkins et al., 2011; Moskot et al., 2014). This mechanistic positioning is logical and helps explain why these drugs are effective despite not correcting the primary retromer defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Whole-body expression of human PLA2G6 fully rescues neurodegenerative phenotypes and lifespan in INAD flies, while neuronal-only expression suppresses phenotypes but does not prolong lifespan, suggesting PLA2G6 is required in non-neuronal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by citation to Lin et al., 2018 (prior work). The differential rescue by tissue-specific expression provides strong evidence that PLA2G6 function is required beyond neurons, which has important implications for therapeutic strategy design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "AAV-EF1a-EGFP is broadly expressed in many tissues when delivered via ICV and IV. AAV-EF1a-PLA2G6 (AAV-PHP.eB or AAV9) expresses very low levels of human PLA2G6 in NPCs (~10% of endogenous), but even these low levels reduce LAMP2 by 10-20%, restore mitochondrial morphology and ATP levels, and partially alleviate lysosomal expansion and mitochondrial defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C139 are supported by data in Figure 4 and Figure 4\u2014figure supplement 1. The EGFP tracking demonstrates broad tissue distribution. Western blots and immunofluorescence show low but functional PLA2G6 expression. The observation that very high expression (Lenti-CMV) is less effective (C136) suggests an optimal expression range. ATP measurements confirm functional rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C140",
+      "C147",
+      "C148"
+    ],
+    "result": "Vps35 punctae are reduced in INAD patient-derived NPCs compared to genetically corrected cells. Expression of human PLA2G6 (but not the four drugs) restores Vps35 levels, consistent with PLA2G6 binding to Vps35 and Vps26 to maintain retromer complex levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140, C147-C148 are supported by immunofluorescence data in Figure 5. The differential effect of PLA2G6 expression versus drugs on Vps35 levels provides strong evidence for the proposed mechanism where PLA2G6 directly stabilizes the retromer complex. This is consistent with prior binding data (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Pre-symptomatic (P40) ICV+IV injection of AAV-PHP.eB-PLA2G6 in Pla2g6KO/G373R mice delays rotarod defects by 50-60 days, stabilizes body weight, and prolongs lifespan by at least 65 days. ICV+IV injection is more effective than ICV alone, and the treatment is safe in wild-type mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C156 are supported by behavioral and survival data in Figure 6. The rotarod data show statistically significant delays (p<0.05 to p<0.001) at multiple timepoints. The survival analysis shows clear benefit. The comparison of ICV+IV versus ICV alone (C150, C156) supports the strategy of broad tissue delivery. Sample sizes are modest (n=5-10) but adequate for this proof-of-concept study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "In P300 injected Pla2g6KO/G373R mice (150 days after uninjected mice died), GlcCer and LAMP2 levels are reduced in Purkinje cells, and Vps35 levels are not only restored but enhanced to ~2-fold of wild-type, demonstrating long-term beneficial effects of gene therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C161 are supported by immunofluorescence data in Figure 7. The analysis of long-surviving mice (P300) provides strong evidence for sustained therapeutic benefit. The super-restoration of Vps35 (C161) is an interesting observation, though the mechanism and functional significance are unclear. Sample size is limited (n=2 for injected mice) but these are the only long-survivors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C166",
+      "C167"
+    ],
+    "result": "Accumulation of ceramides, expansion of lysosomes, and disruption of mitochondria are key conserved phenotypes associated with loss of PLA2G6 across flies, mice, and human cells, particularly in DA neurons and Purkinje cells. These defects represent root causes of INAD/PARK14 pathogenesis, and combining drug and gene therapy approaches may significantly improve patient quality of life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C163 and C166 are well-supported by the comprehensive data across three species presented throughout the manuscript. The conservation of phenotypes provides compelling evidence for shared pathogenic mechanisms. Claim C167 about combined therapy is appropriately framed as a proposal based on the experimental results, though clinical validation would be required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C178"
+    ],
+    "result": "A compensatory pathway may be activated upon complete loss of Pla2g6 during development, explaining why null models have less severe phenotypes than point mutation models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C178 is a speculative hypothesis proposed to explain the phenotypic differences between mouse models. While the observation that null models are less severe than point mutation models is well-documented, there is no direct experimental evidence for a compensatory pathway. This remains an interesting hypothesis that would require additional investigation to validate.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C33",
+      "C66"
+    ],
+    "result": "The majority (74%) of myokines show no differential expression between males and females in skeletal muscle. This finding is based on differential expression analysis of 3666 secreted proteins from 210 male and 100 female individuals, where only 26% showed sex-specific expression patterns at a nominal p-value threshold of 0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13, C33, and C66 consistently report that most myokines are not differentially expressed between sexes, supported by differential expression analysis (Figure 1C). The 74% figure is explicitly stated and visualized. The statistical approach using DESeq2 is appropriate for RNA-seq data, though the authors acknowledge using a liberal p-value threshold (0.05 unadjusted) which could include false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C46",
+      "C67"
+    ],
+    "result": "Cross-tissue signaling between muscle myokines and metabolic organs operates in a sex-specific manner despite similar myokine expression levels between sexes. Nearly all highly significant correlations between myokines and target organ genes showed sex-specific patterns, with sex dominating coregulated signaling processes across organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C35-C37, C39, C46, and C67 describe sex-specific cross-tissue correlations supported by analyses in Figure 2A-H. However, the statistical approach relies on correlation-based inference rather than experimental validation (acknowledged in C74-C75). The threshold of 2SD above mean for significance is empirically derived but may be susceptible to spurious correlations. The authors appropriately note these are 'putative' interactions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C34",
+      "C38",
+      "C40",
+      "C41",
+      "C65",
+      "C68",
+      "C70"
+    ],
+    "result": "Estrogen receptor alpha (ESR1) is a key regulator of myokine expression and cross-tissue signaling, showing stronger enrichment than androgen receptor (AR) across metabolic tissues. ESR1 correlations with myokines were observed regardless of sex-specific expression patterns, with male ESR1 showing threefold more cross-tissue correlations than females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C34, C38, C40-C41, C65, C68, and C70 are supported by correlation analyses (Figure 1E, 2I-J) and integration with MERKO mouse data. The hormone receptor expression levels themselves showed no sex differences (C19, Figure 1\u2014supplement 1), strengthening the interpretation that receptor-myokine correlations are meaningful. The MERKO validation provides experimental support, though limited to n=3 mice per group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C69"
+    ],
+    "result": "Myostatin (MSTN) regulation shows sex-specific interactions with ESR1, with higher expression and stronger ESR1 correlations in males. Ablation of Esr1 in MERKO mice reduced myostatin uniquely in males at the RNA level, though protein-level changes showed reduction in both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C24, C26-C28, and C69 describe myostatin regulation supported by human correlations (Figure 1H) and mouse MERKO data (Figure 1H-I). However, there are inconsistencies between RNA and protein data (C28 notes female MERKO showed reduction 'dissimilar to mouse sequencing data'), and the protein quantification shows trends rather than statistical significance (Figure 1I shows p=0.14 and p=0.008 for different comparisons). Small sample size (n=3-4 per group) limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Myostatin shows sex-specific pathway enrichments, with male myostatin correlating with glycolytic metabolism pathways and female myostatin correlating with oxidative phosphorylation pathways. This is consistent with prior literature showing myostatin-dependent muscle mass increases in males but not females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29-C32 are supported by pathway enrichment analyses (Figure 1J-K) and citations to prior literature (McMahon et al., 2003; Reisz-Porszasz et al., 2003). The pathway analysis methodology using top correlated genes is appropriate, and the findings align with established sex differences in muscle metabolism and myostatin function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Muscle-derived TNF\u03b1 shows sex-specific target tissue engagement, with stronger inflammatory signaling in adipose tissue in females versus liver and hypothalamus in males. The putative target tissues and functional pathways differ markedly between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C43-C45 are supported by cross-tissue correlation and pathway analyses (Figure 2L). However, these are correlational inferences without experimental validation. The tissue-specific enrichment patterns are interesting but require functional validation to confirm TNF\u03b1 is causally mediating these sex-specific inflammatory patterns. The authors acknowledge this limitation (C74-C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61"
+    ],
+    "result": "GPX3 is identified as a male-specific mediator linking glycolytic fiber abundance to hepatic inflammation pathways. Mediation analysis shows that adjusting for GPX3 reduces the significance of correlations between glycolytic fiber and liver inflammatory pathways in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C54-C58, and C61 describe GPX3 as a mediator based on adjusted regression analysis (Figure 3F-G). While the mediation analysis is appropriate statistically, this remains correlational inference. The proposed mechanism (C58) that muscle fiber abundance buffers free radical generation in liver is speculative. The contrast with female CES4A (C59-C60, C62) where mediation was not observed strengthens the specificity of the male GPX3 finding, but experimental validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C63",
+      "C71"
+    ],
+    "result": "Skeletal muscle cell composition is conserved between sexes, with only modest differences in glycolytic fiber (higher in males) and oxidative fiber (higher in females). Within-muscle correlations between cell types also showed no sex differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C63, and C71 are supported by cell deconvolution analysis (Figure 3B, Figure 3\u2014supplement 2). The proportionsInAdmixture method was validated against other approaches (C89, Figure 3\u2014supplement 1). However, the authors appropriately note limitations (C80-C83) that gene expression-based deconvolution may miss morphological differences and that histological methods would be more accurate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C64",
+      "C72"
+    ],
+    "result": "Cross-tissue signaling consequences of muscle cell composition differ entirely between sexes. Male muscle cell abundance associates with liver and visceral adipose pathways, while female muscle cell abundance associates with pancreatic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50, C64, and C72 describe sex-specific cross-tissue enrichments for cell types (Figure 3C). Like the myokine cross-tissue analyses, these are correlational inferences susceptible to spurious relationships (acknowledged in C74). The tissue-specific patterns are interesting but require experimental validation. The contrast between conserved cell composition but divergent signaling is a key finding but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Muscle cell proportions show stronger correlations with androgen receptor (AR) compared to ESR1 across both sexes, with the most abundant cell types significantly enriched for both steroid hormone receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by hormone receptor correlation analysis (Figure 3D). This contrasts with myokine enrichments where ESR1 dominated (C40), suggesting differential hormonal regulation of cell composition versus secreted proteins. The statistical significance is clearly marked in the figure, and the pattern is consistent across both sexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Myokines correlating with individual muscle cell types are markedly different between males and females, with APOD in slow-twitch fibers being the only exception showing similarity across sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by myokine-cell type correlation analysis (Figure 3E). The visualization clearly shows different myokines enriched for each cell type by sex, with APOD being the notable exception. This finding reinforces the theme that despite similar expression levels and cell composition, the functional relationships differ by sex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Pathway enrichment analysis of sex-specific myokines reveals that female and non-sex-specific pathways overlap and involve epigenetics and RNA processing, while male-specific pathways are distinct and enriched for metabolic processes like NADH metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by pathway enrichment analysis (Figure 1D) using the top 1000 correlated genes. The methodology using ClusterProfiler for GO:BP enrichment is appropriate. The finding that female pathways overlap with non-sex-specific while male pathways are distinct is interesting, though the biological interpretation requires caution given the correlational nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Myokines can be categorized into those driven by ESR1 that signal across sexes versus those showing sex-specific signaling independent of ESR1, with these two categories representing the majority of myokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by the categorization analysis (Figure 2K) integrating ESR1 regulation and sex-specific cross-tissue signaling. This provides a useful framework for understanding myokine regulation, though it remains descriptive and correlational. The visualization clearly shows the relative proportions of each category across tissues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "Female glycolytic fibers are enriched for pancreatic protein synthesis pathways, but this association is independent of the top-ranked myokine CES4A, as mediation analysis showed no change in regression significance when adjusting for CES4A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C62 are supported by pathway enrichment and mediation analysis (Figure 3F-G). The negative result (no mediation by CES4A) is appropriately reported and contrasts with the positive GPX3 mediation in males, suggesting the analytical approach can distinguish mediated from non-mediated relationships. However, this remains correlational.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Sex- and hormone-specific effects on myokine signaling are consistent across seven key metabolic tissues: liver, pancreas, hypothalamus, intestine, heart, visceral adipose, and subcutaneous adipose tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by comprehensive cross-tissue analyses (Figure 2A-H) covering all seven tissues. The consistency of sex-specific patterns across multiple tissues strengthens the overall conclusion, though each tissue analysis shares the same correlational limitations. The breadth of tissue coverage is a strength of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors acknowledge that inter-tissue regression analyses can be subject to spurious or latent relationships, that definitive validation requires experimental settings, and that gene expression analyses may miss key functional aspects of proteins regulated post-transcriptionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 represent appropriate acknowledgment of methodological limitations. The authors cite prior work using similar approaches (C73) while noting potential for spurious correlations (C74), need for experimental validation (C75), and limitations of RNA-based inference (C76-C77). The myostatin protein data (Figure 1I) demonstrates this limitation empirically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study has several acknowledged limitations including potentially underestimated ESR1 effects due to incomplete ortholog annotation, reliance on gene expression-based cell composition estimates rather than direct quantification, and potential to miss morphological sex differences not apparent in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 represent appropriate discussion of study limitations. The authors acknowledge incomplete gene annotation (C79), limitations of deconvolution methods (C80-C81), and potential missed morphological differences (C82-C83). These are valid concerns that appropriately temper interpretation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study utilized GTEx V8 data from 310 individuals with 1.8e7 gene-tissue combinations, single-cell data from Rubenstein et al. 2020, 3666 secreted proteins from UniProt, and MERKO mice with muscle-specific Esr1 deletion. The proportionsInAdmixture deconvolution method outperformed alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 describe data sources and methodological choices. These are factual statements about study design supported by appropriate citations and method comparisons (C89, Figure 3\u2014supplement 1). The sample sizes and data dimensions are clearly stated. Ethical approval for animal studies is documented (C90).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establish that skeletal muscle coordinates homeostasis through myokines, that myokines play critical roles in various physiological processes, and that sex differences in metabolic traits arise from hormonal, genetic, or gene-by-sex interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C12 represent background knowledge supported by multiple literature citations. These establish the rationale for the study and are appropriately referenced. They represent established knowledge in the field rather than novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25",
+      "C31"
+    ],
+    "result": "Prior literature establishes that myostatin regulation involves post-transcriptional mechanisms and that myostatin-dependent muscle mass increases occur in males but not females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C31 cite prior literature (McMahon et al., 2003; Reisz-Porszasz et al., 2003) to support context for the current findings. These are appropriately used to frame the myostatin results and show consistency with established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The study concludes that sex and sex steroid hormones make key contributions to mediating myokine functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 represents the overall summary conclusion, which is supported by the collective evidence from differential expression, cross-tissue correlations, hormone receptor analyses, and MERKO validation. While individual findings have limitations, the preponderance of evidence supports this general conclusion about the importance of sex and hormones in myokine biology.",
+    "result_type": "MAJOR"
+  }
+]

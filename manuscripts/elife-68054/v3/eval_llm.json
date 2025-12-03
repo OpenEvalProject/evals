@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "miRNome sequencing revealed distinct clustering of SMA patient and control samples across muscle biopsies, myoblasts, and myotubes, with 99, 20, and 19 miRs differentially expressed respectively (\u03b1 \u2264 0.05), while global miR production was preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 provide specific quantitative results from miRNome analysis with clear statistical thresholds. Claims C38-C40 describe the clustering patterns and overall preservation of miR production. The data are internally consistent and supported by Figure 1, providing converging evidence for differential miR expression in SMA muscle samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Five upregulated myomiRs (hsa-miR-1, -133a, -133b, -204-5p, -208b) were shared across all three sample types (biopsies, myoblasts, myotubes), with additional miRs showing overlap between specific sample pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C41-C44 describe the overlap patterns of differentially expressed miRs across sample types, supported by Figure 1D. The identification of shared myomiRs and their classification is well-documented, though C44 notes opposite expression trends for some miRs between sample types, which is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C6",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Three miRs (miR-181a-5p, miR-324-5p, miR-451a) were significantly upregulated in serum of SMA patients compared to controls (p=4.3\u00d710\u207b\u2074, 0.02, 0.004 respectively), while most other miRs were undetectable, suggesting active secretion and sarcolemma integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 provide specific statistical results from Mann-Whitney U tests with significant p-values. Claims C85-C87 interpret the pattern of miR detectability. The statistical evidence is strong, though the inference about active secretion (C87) is reasonable but not directly proven. The comparison to Duchenne muscular dystrophy (C86) provides supporting context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "ROC curve analysis showed that combined SMA-miRs achieved 80% sensitivity and 75% specificity in distinguishing SMA patients from controls, superior to individual miR-181a-5p (75% sensitivity, 61% specificity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 present ROC curve analysis results with specific sensitivity/specificity values and cutoffs. The data demonstrate improved diagnostic performance when combining the three miRs versus using miR-181a-5p alone. Statistical significance (p<10\u207b\u2074) supports the findings, though the modest improvement suggests limited clinical utility without further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "miR-324-5p levels were significantly decreased in SMA type I compared to types II and III (p=0.03, 0.04), and miR-181a-5p levels were significantly higher in females versus males among patients (p=0.024).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 report statistically significant associations with disease severity and sex. The p-values are marginally significant (0.02-0.04 range), and no multiple testing correction is mentioned despite testing multiple associations. The biological significance of these modest differences is unclear, and the sex difference requires replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "miR-181a-5p and miR-451a levels were correlated in both patients and controls, while miR-324-5p levels were independent from the other two miRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 describe correlation patterns among the three SMA-miRs, supported by Figure 3\u2014figure supplement 1. This analysis addresses potential confounding by RNA quality/quantity. The independence of miR-324-5p from the other two miRs supports their biological distinctness, though specific correlation coefficients and p-values are not provided in the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C52"
+    ],
+    "result": "Transfection of SH-SY5Y cells with SMA-miR mimics at 50-100 nM increased miR levels dramatically (60-200 mol/ng) but did not affect SMN1/SMN2 transcripts, except for a 50% reduction in SMNdel7 with miR-324-5p treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C52 describe in vitro transfection experiments with clear quantitative results. The lack of effect on most SMN transcripts is well-documented, with the exception of SMNdel7 reduction by miR-324-5p. However, the biological significance of this specific effect is unclear, and the use of neuroblastoma cells rather than muscle cells limits direct relevance to the muscle-focused study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C105"
+    ],
+    "result": "Anti-miR-181a-5p treatment did not significantly improve overall survival in SMN\u03947 mice (p>0.05, n=36 treated vs 71 untreated vs 31 scramble), though some changes in Kaplan-Meier curves were observed in a subset of animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C105 report negative results from in vivo mouse experiments with adequate sample sizes. The lack of significant survival improvement is clearly stated (p>0.05), though the mention of \"some changes\" in a subset suggests potential heterogeneity. The negative result is important for understanding the therapeutic potential of targeting these miRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Anti-miR-324-5p treatment led to a significant transient increase in body weight in SMN\u03947 mice between P7 and P10 (p=0.002) but did not affect survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 reports a statistically significant but transient effect on body weight. The effect is time-limited (P7-P10) and did not translate to survival benefit. While statistically significant, the biological and clinical relevance of this transient weight gain is unclear, and the mechanism is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C37"
+    ],
+    "result": "No sequence variants were identified in genes encoding the SMA-miRs in 38 patient samples, and none of the patients had the rs121909192 or rs1454173648 SMN2 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C37 report negative findings from sequencing analyses. The sample size (n=38) is reasonable for detecting common variants but may miss rare variants. The absence of known SMN2 modifier variants in the cohort is noted, which is relevant for interpreting the SMA-score results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C124"
+    ],
+    "result": "The SMA-score, incorporating SMN2 copy number, SMN2-fl levels, SMA-miRs, and age, improved phenotype prediction accuracy from 52% (SMN2 copy number alone) to 75% overall and 72% in patients <6 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C124 present a progression of model improvements with specific R\u00b2 values and p-values. The incremental improvement from ~52% to ~75% is statistically significant and represents a meaningful advance. However, the cross-sectional design (C126) and lack of external validation (C56) limit the strength of conclusions about clinical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C35",
+      "C33"
+    ],
+    "result": "The SMA-score showed strong correlation with clinical decimal classification (r=0.87, R\u00b2=75.77%, p<10\u207b\u2075 for whole group; r=0.87, R\u00b2=77.14%, p<10\u207b\u2075 for patients <6 years), with high agreement between two scoring equations (r=0.90, R\u00b2=80.31%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34-C35, and C33 demonstrate strong statistical correlations between the SMA-score and clinical assessments. The correlation coefficients (0.87-0.90) and highly significant p-values support the validity of the scoring system. However, correlation does not establish causation or clinical utility, and the blind evaluation process (mentioned in methods) strengthens confidence in these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "In patients with three SMN2 copies, the SMA-score was significantly related to decimal classification (R\u00b2=30.04, p=0.008, n=21), though with lower predictive power than the overall cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 addresses a clinically important subgroup (3 SMN2 copies) where phenotype prediction is most challenging. The significant relationship (p=0.008) is encouraging, but the low R\u00b2 (30%) indicates substantial unexplained variance. The small sample size (n=21) and wide phenotypic range (type I to III, C119) limit the clinical utility of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C135",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The miRNome data suggest primary involvement of skeletal muscle in SMA pathogenesis, with alterations found in both in vivo samples and cultured cells pointing to a primary defect related to SMN deficiency rather than secondary denervation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C135, and C150-C152 present an interpretation of the miRNome findings regarding muscle involvement in SMA. The logic is sound: alterations in cultured cells (which lack innervation) support a primary muscle defect. However, this remains an inference based on expression patterns rather than direct mechanistic evidence. The interpretation is reasonable but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The upregulation of myomiRs (miR-1, -133a, -133b, -208b) suggests delayed muscle differentiation in SMA, consistent with historical morphological studies and recent findings linking these miRs to myogenic differentiation and mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C139 integrate the current findings with prior literature (supported by multiple citations) to propose a mechanism involving delayed muscle maturation. The interpretation is well-supported by cited literature (C136-C138), though the causal relationship between miR upregulation and differentiation delay is inferred rather than directly demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Previously reported SMA-associated miRs (miR-132, -183, -431, -9, -19a-3p, -146a, -23a-3p, -206) were not confirmed as differentially expressed in this study, likely due to differences in technical approaches (absolute vs. relative qPCR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 address discrepancies with prior literature and provide a methodological explanation. The technical explanation (absolute vs. relative qPCR) is plausible and supported by citation (C114). However, this raises questions about which findings are more reliable and highlights the need for standardized methods in biomarker studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study enrolled 51 SMA patients and 37 controls, homogeneous for sex and age, with muscle biopsies from 7 patients and 7 controls, and muscle cell cultures from 5 patients and 4 controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 describe the study cohorts with specific numbers and demographic matching. The sample sizes are adequate for discovery but modest for biomarker validation. The homogeneity for age and sex (C47-C48, p>0.05) is appropriate, though the age ranges are wide (mean 17.3\u00b119.2 and 11.9\u00b112.4 years), which could introduce variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The study has limitations including its cross-sectional design, lack of longitudinal data on SMA-miR stability, treatment of most patients with SMN-modifying compounds, and unknown effects of treatments on SMA-miRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 acknowledge important study limitations. The cross-sectional design (C126) limits causal inference, and the lack of longitudinal data (C128) prevents assessment of biomarker stability over time. The treatment of most patients (C129) is a practical constraint but limits the ability to study natural disease progression. These are honest and important limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C88",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors hypothesize that SMA-miRs are actively released into blood and may function as part of a retrograde signaling system from muscle that could accelerate motor neuron loss, suggesting potential therapeutic targets for combinatorial treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55 and C88 present hypotheses about SMA-miR function that are speculative (C54, C88 explicitly use \"likely\" and \"may\"). Claims C104, C106-C107 extend these hypotheses to therapeutic implications. While the hypotheses are reasonable given the data and cited literature (C101-C103), they lack direct experimental support in this study. The negative mouse survival data (C25) actually argues against the therapeutic hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C132"
+    ],
+    "result": "The authors state that the SMA-score requires validation in replicative studies before it can be used for routine prognostic assessment in clinical practice, including for presymptomatic patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C132 appropriately acknowledge the need for external validation before clinical implementation. This is a responsible statement about future work requirements. The conditional nature (\"if confirmed\") is appropriate given the cross-sectional design and single-center nature of the study. However, this acknowledgment means the clinical utility claim is currently unsupported.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Classical Euclidean-gradient descent learning rules exhibit parametrization dependence, leading to inconsistencies when synaptic weights are represented differently (e.g., somatic vs. dendritic PSP amplitudes). This dependence causes different learning trajectories depending on the chosen parametrization and would imply sub-optimal convergence across diverse neuron morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C7-C9 collectively establish the problem of parametrization dependence in classical learning rules. The theoretical analysis (C8) and Figure 1 demonstrate that weight trajectories differ based on parametrization choice. The logical argument (C9) about evolutionary implications is sound, and the problem statement is well-supported by both theoretical reasoning and visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C11",
+      "C28",
+      "C47"
+    ],
+    "result": "Natural-gradient descent, formulated in the framework of Riemannian geometry, solves the parametrization dependence problem by following the steepest descent with respect to changes in the input-output distribution rather than synaptic weights, making it parametrization-invariant by construction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C11, C28, and C47 establish the theoretical solution. The mathematical framework is grounded in established theory (Riemannian geometry, Fisher information metric), and the parametrization invariance is demonstrated both theoretically (Materials and Methods sections) and visually (Figure 8). The construction ensures invariance as a fundamental property.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C41",
+      "C101"
+    ],
+    "result": "The derived natural-gradient learning rule for spiking neurons incorporates multiple biologically relevant features including input-dependent learning rate adjustment, dendritic position compensation, and both homosynaptic and heterosynaptic plasticity components, all implementable with locally available information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C16-C19, C41, and C101 describe the derived learning rule's properties. The mathematical derivation is detailed in the Materials and Methods, the local implementability is demonstrated through approximations (Equations 15, 112-114), and empirical analysis (Figure 11) validates that global terms can be approximated by local quantities. The biological implementability claim is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C100"
+    ],
+    "result": "Natural-gradient plasticity enables faster convergence compared to Euclidean-gradient descent in supervised learning tasks with non-isotropic cost functions, as demonstrated in simulations with heterogeneous input conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C100 are directly supported by simulation results in Figure 3. The experimental setup is clearly described, learning rates were optimized separately for fair comparison, and results are averaged over 1,000 trials. The faster convergence is demonstrated both qualitatively (weight paths) and quantitatively (learning curves), making this a robust finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C105"
+    ],
+    "result": "The natural-gradient learning rule predicts 'democratic plasticity' where synaptic changes in distal dendrites are scaled up to compensate for attenuation, making the effect on neuronal output independent of synapse location. This relates to the experimentally observed phenomenon of 'dendritic democracy'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C54-C55, and C105 describe democratic plasticity and its relationship to dendritic democracy. The prediction follows directly from the parametrization-invariant property of the learning rule (Equation 17), is demonstrated in simulations (Figure 4), and is connected to experimental observations (Magee and Cook, 2000). The distinction between democratic plasticity (learning) and dendritic democracy (end result) is clearly articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C96"
+    ],
+    "result": "The natural-gradient learning rule scales synaptic updates inversely with the variance (reliability) of presynaptic inputs, providing a link to Bayesian frameworks where information is weighted by source reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C96 describe input reliability scaling. This is directly derived from the mathematical formulation (Equation 19), demonstrated in simulations (Figure 5) where USP variance was systematically varied, and connected to Bayesian reasoning. The inverse relationship with input variance is both theoretically predicted and empirically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C72",
+      "C97"
+    ],
+    "result": "Natural-gradient learning predicts heterosynaptic plasticity through two additional components: a uniform term that opposes homosynaptic changes (acting homeostatic) and a weight-dependent term. These components affect both active and inactive synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C72, and C97 describe heterosynaptic plasticity components. These emerge directly from the mathematical derivation (Equations 20-21), are visualized in Figure 6, and are connected to experimental observations of heterosynaptic plasticity in multiple brain regions. The functional interpretation as homeostatic mechanism is supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C98"
+    ],
+    "result": "The weight-dependent heterosynaptic term causes plasticity proportional to current synaptic strength, corresponding to experimental observations of spine-size-dependent plasticity and providing robustness against noise from weak, uninformative synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76-C78, and C98 describe the weight-dependent heterosynaptic component. The mathematical form (\u03b3w f(w)) is derived, the proportionality to spine size matches experimental data (Loewenstein et al., 2011), and the functional interpretation as noise robustness is logically sound. The connection between theory and experiment is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C90",
+      "C91",
+      "C108",
+      "C109"
+    ],
+    "result": "Simulations reveal three plasticity regimes for natural-gradient learning: two where heterosynaptic and homosynaptic plasticity oppose each other (O1, O2), and one where they align causing depression (S). These regimes reproduce various experimental observations of opposing and aligned plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C82-C86, C88, C90-C91, C108-C109 describe plasticity regimes supported by detailed simulations in Figure 7. The three regimes are clearly delineated, the transitions between them are explained by error sign changes, and the patterns match multiple experimental observations (Lynch et al., 1977; Royer and Par\u00e9, 2003; others). The simulation setup is well-described and results are systematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Euclidean-gradient learning rules, while related to classical perceptron learning and having proposed biological implementations, suffer from multiple limitations including inability to account for weight reparametrization, lack of heterosynaptic plasticity, and slow convergence in non-isotropic cost landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 establish limitations of Euclidean-gradient descent. The relationship to classical learning rules is well-established (C22-C23), and the limitations (C24-C27) follow from theoretical analysis and are supported by citations. These claims provide important context for understanding the advantages of the natural-gradient approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Natural-gradient methods have historical roots in information geometry (Amari, 1987) and have been applied to machine learning, though most applications focus on rate-based networks. The stochastic nature of neuronal firing provides a natural setting for information geometry-based plasticity rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 provide historical and contextual background. The citations are appropriate and the claims about prior work are verifiable. The observation about stochastic neuronal firing (C15) providing a natural setting is well-reasoned and supported by citation (Softky and Koch, 1993).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C39"
+    ],
+    "result": "The natural-gradient learning rule contains a homosynaptic component directly evoked by afferent spikes, a uniform heterosynaptic bias determined by overall neuronal input, and weight-dependent scaling where stronger connections undergo larger changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C37, and C39 describe structural components of the learning rule that follow directly from the mathematical derivation (Equation 13). These are descriptive claims about the rule's form that are clearly supported by the mathematical formulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C99"
+    ],
+    "result": "The natural-gradient plasticity paradigm includes a global scaling factor that adapts learning rate to the voltage-to-spike transfer function and output statistics, and correctly accounts for somato-dendritic reparametrization of synaptic strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C99 describe features of the learning rule that are directly derived from the mathematical formulation. The global scaling factor \u03b3s (Equation 18) and the reparametrization correction (f'(w)^-1 term) are explicit components of the derived rule with clear mathematical justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The natural-gradient learning rule inherits invariance under sufficient statistics from the Fisher information metric, which is particularly relevant for biological neurons that communicate information samples through stochastic firing rather than explicit distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe a mathematical property inherited from the Fisher metric. This is a well-established property of the Fisher information (Cencov, 1972), and the biological relevance argument (C103) is logically sound. The claim about distinguishing this approach from other second-order methods (C104) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C56",
+      "C57",
+      "C106",
+      "C107"
+    ],
+    "result": "Experimental observations of diverse PSP amplitudes and distance-dependent plasticity (Froemke et al., 2005; Letzkus et al., 2006; Sj\u00f6str\u00f6m and H\u00e4usser, 2006) are consistent with natural-gradient learning predictions when considering initial functional equivalence and potential attenuation of backpropagating action potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C56-C57, C106-C107 reconcile experimental observations with theoretical predictions. The arguments are logically sound: Froemke et al.'s findings are explained by non-equivalent initial conditions (C56), and the sign switch observations are explained by output signal attenuation (C107). The reasoning is careful and acknowledges the complexity of biological systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Pairing Hebbian terms with heterosynaptic and homeostatic plasticity is crucial for stability in both supervised and unsupervised learning scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by citation (Zenke and Gerstner, 2017) and provides context for understanding the functional role of heterosynaptic plasticity in the natural-gradient rule. This is a claim about prior work that is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "The combination of features in the natural-gradient learning rule enables faster convergence during supervised learning, in line with results from machine learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by both simulation results (Figure 3) and citations to machine learning literature. This serves as a summary claim connecting the specific results to broader findings in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "In supervised learning, the alignment of heterosynaptic and homosynaptic plasticity for large weights helps speed up convergence by keeping weights in the operating range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 provides a functional interpretation of the plasticity regime behavior observed in simulations (Figure 7). This is a reasonable inference from the observed dynamics and is consistent with the overall framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Evolution might have discovered its own version of natural-gradient descent, as physics-inspired arguments from symmetry and invariance can help uncover abstract principles that evolution may have implemented. Parametrization invariance translates biologically to the ability of neurons to deal with diversity in morphology and input-output characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C92-C94 are speculative about evolutionary optimization. While the theoretical framework is sound and the biological phenomena are well-documented, the claim that evolution specifically 'discovered' natural-gradient descent is inherently speculative (C6 is explicitly marked as speculation). The philosophical framing (C92) is reasonable but not empirically testable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "An invariant learning rule could improve learning and increase fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C10 is a theoretical prediction about evolutionary fitness that, while logically reasonable, is not directly tested in this work. The claim is supported by the demonstrated faster convergence in simulations, but the connection to biological fitness is inferential rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The natural-gradient learning rule makes several testable experimental predictions: stochastic stimulation protocols should be used for quantitative testing, increased presynaptic variance should reduce LTP, plasticity should depend on neuronal response functions and output statistics, and flatter response functions should correlate with faster learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 propose future experiments and testable predictions. These follow logically from the theoretical framework and are clearly stated. While not yet tested, they represent well-formulated hypotheses that could validate or refute aspects of the theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C118"
+    ],
+    "result": "The natural-gradient learning rule can be incorporated into spike-based error backpropagation frameworks, and for spiking networks, a unit-wise natural-gradient approach would reduce global natural-gradient descent to the local single-neuron rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115 and C118 propose extensions to network-level learning. While the single-neuron rule is well-established, the network-level application is speculative (C115 explicitly states 'in principle'). The unit-wise approximation (C118) is mentioned but not developed or validated in this work.",
+    "result_type": "MINOR"
+  }
+]

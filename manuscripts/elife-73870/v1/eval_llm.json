@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C14"
+    ],
+    "result": "Current ecological models (gLV) have limitations in capturing higher-order interactions and do not scale well with complexity or multiple functions. Composite gLV models are limited to single function predictions at single time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C12, and C14 establish the limitations of existing ecological models based on established knowledge and mathematical structure. These claims provide the motivation for developing the LSTM approach and are well-supported by citations and theoretical understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C109"
+    ],
+    "result": "The LSTM model outperforms the gLV model in silico, particularly for systems with higher-order interactions, while requiring substantially less training time. However, LSTM requires high-richness training examples to accurately predict high-richness communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C35, C36, C37, C38, and C109 are supported by in silico experiments shown in Figure 1. The comparison demonstrates LSTM superiority for moderate third-order interactions (R\u00b2=0.79 vs 0.52) and computational efficiency (minutes vs 5-6 hours). The need for high-richness training data is demonstrated empirically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C126",
+      "C127"
+    ],
+    "result": "The LSTM model accurately predicts temporal changes in species abundance for a 12-species experimental community with external perturbations, requiring substantially less training data than previous RNN approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C126, and C127 are supported by experimental validation on the 12-species system (Figure 2) with R\u00b2 values of 0.69-0.74 across time points. The model successfully handles passaging perturbations and demonstrates good generalization from low-order to higher-order communities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The LSTM model captures major drivers of metabolite production and correlations between metabolites. Simulated communities show bimodal distribution based on presence/absence of butyrate producer AC, with narrow total carbon distribution reflecting stoichiometric constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, C45, C46, and C47 are supported by LSTM predictions on 26+ million communities (Figure 3b). The bimodality is consistent with prior findings (C43), and the narrow carbon distribution (mean 316\u00b120 mM) demonstrates the model learned fundamental metabolic constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The LSTM model substantially outperforms composite gLV models for metabolite prediction (59% of variables), with similar accuracy for both distributed and corner communities. LSTM can capture metabolite-species feedbacks that composite models cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, C50, C51, C52, and C53 are supported by experimental validation (Figure 3\u2014supplement 3). The LSTM's architectural advantage in capturing bidirectional feedbacks is well-justified, and performance is consistent across different community types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "LIME analysis reveals that Actinobacteria, Firmicutes, and Proteobacteria drive metabolite production, while Bacteroides shape community dynamics. The microbe-metabolite network shows AC has the largest effect on butyrate, with network complexity correlating with number of producer species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C57-C62, and C111-C113 are supported by LIME analysis (Figure 3d,e). The findings are consistent with prior work (C57, C92) and biological understanding. The distinction between metabolite producers and community structure modulators is well-supported by the network analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "LIME explanations are robust to training data variations and show statistically significant correlation with gLV interaction parameters (80% sign consistency for substantial interactions). LSTM captures both broad trends and context-specific behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by robustness analysis (Figure 3\u2014supplements 5-7). The correlation with gLV parameters validates the LIME approach, while the exception for RI is explained by known growth variability. The distinction between average and context-specific explanations is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Model prediction accuracy is limited by variance in training data. Lactate and butyrate production are driven by single species, while acetate and succinate are sensitive to pairwise interactions. Specific Bacteroides-butyrate producer pairs affect acetate transformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 are supported by sensitivity analysis (Figure 4). The differential sensitivity to pairwise interactions (0.72% for lactate/butyrate vs 6.68% for acetate) is consistent with the LIME network structure. The analysis successfully identifies informative experiments for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Time-resolved measurements reveal six distinct clusters of metabolite trajectories. Corner communities identified by endpoint LSTM predictions show qualitatively distinct temporal behaviors unlikely to be discovered by random sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 are supported by clustering analysis of 95 communities (Figure 5). The LSTM-guided experimental design successfully identified rare corner cases with distinct dynamics. The separation of similar endpoint communities (Clusters 2 and 3) into different temporal patterns validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Large clusters are separated by simple rules (AC+/AC-), while smaller clusters require complex 3-7 species rules involving AC, DP, and DL. This is consistent with species-rich communities tending toward similar behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by decision tree analysis (Figure 5\u2014supplement 1d). The role of DP and DL is corroborated by prior work (C92) and LIME analysis (C93). The pattern of simple vs complex rules aligns with ecological theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "LSTM model M3 shows good metabolite prediction performance but lower species abundance accuracy. Gradient analysis reveals time-varying species contributions, with AC showing strong sensitivity to butyrate/acetate/lactate and some species (PC, BA) peaking at intermediate time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 are supported by experimental validation (Figure 5i,j). The lower species prediction accuracy is reasonably attributed to limited training observations. The gradient analysis successfully identifies context-specific behaviors beyond general design rules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The LSTM outperforms a discretized gLV model trained with the same algorithm, demonstrating superior capability for predicting temporal changes in microbiome composition and metabolite concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by direct comparison (Figure 5\u2014supplement 3) showing LSTM achieves R\u00b2=0.72 for species vs R\u00b2=0.63 for discretized gLV, and substantially better metabolite predictions. This validates the LSTM's architectural advantages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C110"
+    ],
+    "result": "The LSTM-guided two-stage experimental planning procedure substantially reduced the number of experiments compared to random sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31 and C110 assert experimental efficiency but provide no quantitative comparison or statistical analysis of the reduction in experiments. While the approach is logical, the claim of 'substantial reduction' lacks supporting data or calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The LSTM model accurately classifies communities for butyrate/lactate but has poorer separation when including acetate/succinate. Misclassification rate correlates with Euclidean distance between classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by classification analysis (Figure 3\u2014supplement 3f,g). The poorer performance for 4-metabolite classification is reasonably attributed to stoichiometric constraints limiting variation. The distance-misclassification relationship is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C41",
+      "C133",
+      "C134"
+    ],
+    "result": "Background claims about microbial community dynamics, gLV models, neural networks, and prior applications of LSTMs and RNNs to biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6-C30, C41, C133-C134) establish the scientific context through citations to prior work and established knowledge. They are appropriately supported by references and provide necessary background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C139"
+    ],
+    "result": "Summary claims that the LSTM framework accurately predicts multiple health-relevant functions and enables design of communities with target metabolite profiles and optimal interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 and C139 are high-level summaries supported by the collective experimental evidence throughout the manuscript. These conclusions are well-justified by the demonstrated prediction accuracy and design capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C124"
+    ],
+    "result": "Communities tend toward typical dynamic behavior (Clusters 4 and 5), but corner cases show distinct trajectories. Time-resolved measurements were required to reveal differences between communities with similar endpoints (Clusters 2 and 3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121, C123-C124 are supported by clustering and temporal analysis (Figure 5). The lactate dynamics difference between Clusters 2 and 3 is explained by presence of lactate producers BU and DL, demonstrating the value of temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C122",
+      "C125",
+      "C135",
+      "C136",
+      "C137",
+      "C140",
+      "C142",
+      "C143"
+    ],
+    "result": "Speculative claims about future applications including in vivo behavior, additional metabolites, optimal sampling times, environmental contexts, genomic integration, transient states, and autonomous design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C129, C122, C125, C135-C137, C140, C142-C143 are speculations about future work and potential applications. While reasonable, they lack experimental support and represent hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The current LSTM implementation lacks uncertainty quantification. Bayesian LSTMs could provide this but are more difficult to implement and train.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 accurately describe a limitation of the current approach and cite relevant work on Bayesian LSTMs. The practical challenges of Bayesian methods are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C138"
+    ],
+    "result": "The microbe-metabolite network could identify key species for manipulation, and the LSTM approach advances beyond previous machine learning methods by predicting temporal trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is a reasonable inference from the demonstrated network analysis, though not directly tested. Claim C138 is supported by citations and accurately positions the work relative to prior approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141"
+    ],
+    "result": "In treating gut microbiome dysbiosis, it is important to ensure transient states are not harmful to the host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C141 is a general principle supported by citation and represents established knowledge about microbiome interventions. It provides context for the importance of temporal predictions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,424 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study included 18 subjects (19 initially, with one excluded) who were right-handed, neurologically healthy adults with normal or corrected-to-normal vision, and the experiment received ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide complete information about participant demographics, inclusion/exclusion criteria, and ethical approval. The sample size (n=18 after exclusion), demographic characteristics, and ethical procedures are clearly documented and appropriate for an MEG study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The experimental design consisted of three conditions (Ambiguous, Unambiguous, Discontinuous) using two ambiguous images (Necker cube and Rubin face-vase), with specific trial structures, timing parameters, and response mapping procedures adapted from prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C22 comprehensively describe the experimental design with specific timing parameters, stimulus properties, and procedural details. The design is well-documented and builds on established paradigms (C6), though the change in response mapping procedure between the first 9 and last 10 subjects (C21-C22) introduces a potential confound that is not addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "MEG data were recorded using a 275-channel whole-head system with specific acquisition parameters, and eye-tracking was used for monitoring fixation and wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 provide detailed information about data acquisition methods, including equipment specifications, sampling parameters, and quality control procedures. The methods are standard for MEG research and adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "MEG data preprocessing included standard steps (detrending, filtering, artifact removal via ICA) and extraction of three neural features: SCP (<5 Hz), alpha amplitude (8-13 Hz), and beta amplitude (13-30 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 describe standard preprocessing procedures for MEG data with appropriate filter specifications and artifact removal methods. The extraction of three distinct frequency bands is methodologically sound and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Behavioral results from the Ambiguous and Unambiguous conditions confirmed successful task performance, with subjects experiencing both percepts >25% of the time in the Ambiguous condition and achieving >80% valid trials in the Unambiguous condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 demonstrate that the experimental manipulations were successful. The behavioral data show appropriate perceptual switching in the Ambiguous condition and successful disambiguation in the Unambiguous condition, validating the task design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "In the Discontinuous condition, perception remained stable across blank periods for the Necker cube (p=0.031) but not for the Rubin face-vase image (p=0.736).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 report statistical tests with specific p-values showing differential effects for the two images. The finding is adequately supported by statistical evidence, though the inconsistency between images raises questions about the generalizability of perceptual memory effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In the Ambiguous condition, perceptual content was successfully decoded from SCP activity but not from alpha or beta amplitude, with significant temporal generalization indicating stable neural representations across percept duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 describe multivariate decoding results with appropriate cross-validation and multiple comparison correction (C44-C45). The finding that SCP encodes perceptual content is supported by significant decoding accuracy (C47-C48) and temporal generalization (C51), consistent with prior work (C50). The methodology is rigorous and the conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In the Unambiguous condition, perceptual content was decoded from SCP activity with highest accuracy immediately after image onset, showing temporal generalization and confirming that SCP encodes perceptual content regardless of stimulus ambiguity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 extend the decoding findings to the Unambiguous condition, demonstrating generalizability across stimulus types. The temporal dynamics (C55) and explanations for differences between conditions (C56) are reasonable, though somewhat speculative. The overall conclusion (C59) is well-supported by converging evidence from both conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "A state-space analysis method was developed to simultaneously extract neural subspaces relevant to multiple behavioral metrics (perceptual content, duration, switching dynamics, and memory) by fitting multilinear regression models to MEG data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C72 describe a novel analytical approach adapted from prior work. The method is clearly documented with specific definitions of behavioral axes (C61-C69) and regression procedures (C70-C72). The approach is methodologically sound and addresses limitations of standard decoding methods (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "State-space analysis of the 'Type' axis (perceptual content) showed that SCP activity allowed robust prediction for the face-vase image but not the cube, while alpha and beta amplitudes could not significantly predict perceptual content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 report state-space analysis results that are consistent with the decoding findings. The lack of significance for the cube image (C74) is acknowledged with a speculative explanation. The results reinforce the conclusion that perceptual content is encoded in SCP activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "For the 'Duration' axis, alpha and beta amplitudes showed consistent group-level patterns across images (cosine similarity 0.82-0.83, p=0.02) with stronger oscillations associated with longer percepts, while SCP showed significant prediction but lacked consistency across subjects and images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 present compelling evidence that perceptual stability is primarily encoded in alpha/beta amplitudes. The statistical evidence includes significant correlations (C77), cross-image consistency (C82-C83), and lack of consistency for SCP (C79-C81). The conclusion (C84-C85) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "For the 'Switch' and 'Direction' axes, all three neural features (SCP, alpha, beta) were significantly predictive, with topographic patterns suggesting motor-related contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 report findings for switching-related axes with appropriate acknowledgment of potential motor confounds (C88-C89). The results are adequately supported but are appropriately de-emphasized given the motor contribution concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "During blank periods in the Discontinuous condition, neural activity weakly encoded perceptual content from before/after the blank but strongly encoded elapsed time across all frequency bands, consistent with temporal anticipation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 describe findings about timing mechanisms during blank periods. The weak encoding of perceptual content (C91-C92) and strong timing signals (C93-C94) are well-documented, with topographic patterns (C95-C96) consistent with prior literature on temporal anticipation (C97).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Perceptual memory (Memory axis) was encoded in alpha and beta amplitudes with transient dynamics (beta at 0.5-1.5s, alpha at 1.5-3s), showing strong correlation with timing mechanisms and suggesting activity-silent maintenance after initial encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 present evidence for perceptual memory encoding in alpha/beta bands with detailed temporal dynamics (C103). The correlation with timing mechanisms (C100-C101) is statistically significant. The speculation about activity-silent states (C105) is appropriately labeled as such and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Perceptual memory and perceptual stability mechanisms localize to the same frequency bands (alpha/beta) but differ in circuit-level implementation, with perceptual memory recruiting more anterior (higher-order) brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 synthesize findings across conditions to draw conclusions about neural mechanisms. The topographic differences (C107) are supported by the data and consistent with prior fMRI work (C107-C108), though the interpretation involves some inference beyond the direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study demonstrates frequency-band separation of neural mechanisms: perceptual content is encoded in SCP (<5 Hz) regardless of stimulus ambiguity, while perceptual stability and memory are primarily influenced by alpha and beta oscillation amplitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 summarize the main findings of the study. The conclusions are well-supported by converging evidence from multiple analyses (decoding and state-space) across different conditions (Ambiguous, Unambiguous, Discontinuous). This represents the core contribution of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The novel state-space analysis method enables simultaneous extraction of neural activity relevant to multiple behavioral metrics and can reveal relationships between different aspects of behavior, offering advantages over standard decoding and dimensionality reduction approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 discuss the methodological contribution of the state-space approach. The advantages over alternative methods (C121-C122) are clearly articulated, and the ability to reveal relationships between behavioral metrics (C118-C120) is demonstrated in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The findings on SCP encoding of perceptual content are consistent with prior work on conscious perception and bistable perception, provide generalizable electrophysiological correlates using symmetric ambiguous figures, and complement recent intracranial studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 appropriately contextualize the findings within existing literature. The citations are relevant and the comparisons are fair. The acknowledgment of limitations regarding gamma-band activity (C129) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The relationship between alpha/beta amplitudes and perceptual stability is interpreted as reflecting top-down modulatory influences rather than lateral inhibition, based on evidence from pharmacological studies and the role of these oscillations in carrying feedback signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C136 present an interpretation of the mechanisms underlying the alpha/beta effects. While the argument against lateral inhibition (C134) and for top-down modulation (C135-C136) is reasonable and supported by citations, this remains an inference that cannot be definitively established from the current data. The interpretation is plausible but requires additional evidence for full support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Alpha and beta amplitudes associated with perceptual memory reflect top-down modulatory influences, with more anterior sensor locations suggesting higher-order brain circuits as the source of modulation targeting posterior sensory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C139 extend the top-down interpretation to perceptual memory. While the topographic differences (C139) are observed and consistent with prior fMRI work (C138), the interpretation of source-target relationships is speculative given the limited spatial resolution of MEG sensor-level analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The current findings on alpha/beta amplitudes and perceptual memory are consistent with a recent EEG study (Zhu et al., 2022) when accounting for differences in blank duration, with both studies converging on the role of these oscillations in perceptual stability and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 reconcile apparent discrepancies with prior work by examining temporal dynamics in detail. The reconciliation is convincing and demonstrates careful consideration of methodological differences between studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "Perceptual memory differs from working memory based on differences in beta power dynamics and the overlap between perceptual memory and timing mechanisms, supporting an automatic rather than deliberate process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 distinguish perceptual memory from working memory based on neural signatures and behavioral characteristics. The argument is supported by appropriate citations and the overlap with timing mechanisms (C145) provides additional evidence for the automatic nature of perceptual memory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The findings reveal distinct neural mechanisms supporting perceptual content versus stability across multiple conditions, providing insights into stable visual perception in natural environments and informing models of bistable perception and perceptual disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 provide appropriate concluding statements about the significance of the work. The broader implications (C148-C149) are reasonable extensions of the findings, though they represent future directions rather than direct conclusions from the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The study was motivated by prior work showing that perceptual content decoding is most successful using low-frequency activity (SCP), while alpha/beta oscillations modulate cortical excitability and carry top-down feedback that may resolve perceptual ambiguity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C158 provide appropriate background and rationale for the study hypotheses. The citations are relevant and the logic connecting prior findings to the current hypotheses is sound.",
+    "result_type": "MINOR"
+  }
+]

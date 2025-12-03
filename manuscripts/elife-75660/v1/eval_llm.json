@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C50"
+    ],
+    "result": "A de novo computational design strategy was developed for generating programmed membrane proteins (proMPs) with defined oligomeric states. Initial designs were biased toward leucine and prone to misfolding, but incorporation of a sequence diversification step that matched natural TMD amino acid composition resolved these issues, enabling convergence to intended structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19-C20, and C23-C26 describe the computational methodology and its iterative refinement. The sequence diversification approach (C25-C26) successfully addressed the leucine bias (C23) and misfolding tendency (C24) identified in initial designs. Claims C27-C28 and C50 provide mechanistic interpretation supported by the computational results. The methodology is well-documented with appropriate computational validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Designed proMPs exhibited strong self-association in bacterial membrane assays and as recombinant peptides. Most proMPs showed high survival in TOXCAT assays exceeding the HER2 TMD control, with deep mutational scanning confirming assembly through designed interfaces. SDS-PAGE analysis revealed that while six proMPs formed dimers as intended, two formed higher-order oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 present converging experimental evidence from multiple orthogonal assays (TOXCAT, deep mutational scanning, SDS-PAGE) demonstrating successful design of self-associating TMDs. The observation that some designs formed unexpected oligomeric states (C34) is honestly reported and led to methodological improvements. The data support the overall success while acknowledging limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Crystal structure determination of proMP 1.2 at 2.55 \u00c5 resolution revealed it formed a trimer instead of the intended dimer, but computational structure prediction in C3 symmetry accurately recapitulated the experimental structure (RMSD 2.3 \u00c5), demonstrating that the outcome could have been predicted with appropriate symmetry considerations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 present high-resolution structural validation showing both a design failure (wrong oligomeric state) and computational success (accurate prediction when correct symmetry was used). The concordance between SDS-PAGE and crystallography (C37) and the successful retrospective prediction (C38) provide strong support. This result directly motivated the improved design strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "An improved design campaign incorporating ab initio structure prediction in multiple symmetries (C2, C3, C4) yielded crystallographically validated proMPs with correct oligomeric states: a dimer (proMP C2.1) with glycine-based packing and a trimer (proMP C3.1) with a novel alanine-rich interface. The proMP C3.1 crystal structure showed one antiparallel helix due to crystal packing constraints, but the designed parallel arrangement is expected in biological membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 describe the refined methodology and its successful application. Crystal structures at 2.7 \u00c5 (C2.1) and 3.5 \u00c5 (C3.1) resolution confirm target oligomeric states (C42). The detailed structural analysis of proMP C3.1 (C45-C49) demonstrates sophisticated understanding of crystal packing artifacts versus biological relevance. The glycine and alanine packing motifs (C43-C44) are well-characterized structurally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Chimeric antigen receptors (proCARs) incorporating designed proMP TMDs (monomeric, dimeric, and trimeric) were successfully expressed in murine T cells at similar surface levels to CD28 TMD controls. All proCARs mediated antigen-dependent signaling and tumor cell killing in vitro, with only modest differences in killing potency among constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 demonstrate successful implementation of proMPs in functional CAR constructs. Multiple lines of evidence (flow cytometry C62, immunoblot C63, signaling assays C64, killing assays C65-C66) show that proMPs function as TMDs in engineered receptors. The mutation of the disulfide-forming cysteine (C61) ensures TMD-determined oligomerization. The similar expression levels (C62) and functional competence (C64-C65) validate the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C6",
+      "C21"
+    ],
+    "result": "All proCARs stimulated significantly lower cytokine production (2- to 10-fold reduction) compared to CD28 TMD-containing CARs in vitro. This reduction was not due to loss of the hinge disulfide bond, as demonstrated by the No Cys control construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C6, and C21 present consistent findings across multiple experiments showing reduced cytokine release from proCAR T cells. The No Cys control (C68) appropriately addresses a potential confounding variable. Statistical significance is reported (C67) and the effect is substantial and reproducible. This is a key functional difference between proCARs and natural TMD-containing CARs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C7",
+      "C102"
+    ],
+    "result": "The CD28 TMD contains a conserved YxxxxT motif that mediates association with endogenous CD28 in T cells, elevating CAR-mediated cytokine release. Mutation of this motif to FALLVV eliminated CD28 co-clustering and reduced cytokine secretion to levels similar to proCARs, while maintaining killing function. This demonstrates that proCARs are insulated from unintended interactions with endogenous signaling proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C82, C7, and C102 present a mechanistic explanation for differential cytokine release. The approach combines structural modeling (C73), targeted mutagenesis (C74-C76), functional assays (C75-C76), and direct visualization of protein co-clustering (C78-C79). The mutant CAR provides strong evidence for the proposed mechanism (C80-C81). The conclusion that proMPs are insulated from endogenous interactions (C82) is well-supported by the co-clustering data (C78-C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C5"
+    ],
+    "result": "In vivo tumor control experiments in NSG mice demonstrated that proCAR T cell antitumor potency scaled linearly with receptor oligomeric state (monomer < dimer < trimer), with proCAR-3 approaching CD28TM CAR efficacy. The CD28TM mutant tracked with proCAR-2 and proCAR-3, confirming that the YSxxxT motif mutation recapitulates the proCAR functional profile in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 and C5 present in vivo validation of the oligomeric state-function relationship. The experimental design is appropriate (C83), with proper controls (empty vector, CD28TM, CD28TM mutant). Statistical analysis at day 14 shows significant differences (C84, C88), and the linear correlation (C88, R\u00b2=0.9947, p=0.0027) is robust. The CD28TM mutant data (C86-C87) provide important mechanistic confirmation. This is the first demonstration of this relationship (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C107",
+      "C4",
+      "C126"
+    ],
+    "result": "A tetrameric proCAR-4 was designed and demonstrated in vivo tumor control equivalent to CD28TM CAR while maintaining 40-60% lower cytokine release in vitro. Across all proCARs, cytokine production scaled linearly with oligomeric state when normalized to CD28TM reference, consistent with sensitivity to the number of signaling domains engaged per antigen-binding event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C101, C103-C104, C107, C4, and C126 extend the oligomeric state-function relationship to tetramers. The proCAR-4 design (C90-C91) is validated by SDS-PAGE and functional assays (C93-C94). In vivo equivalence to CD28TM (C97-C98) while maintaining lower cytokine release (C99) demonstrates optimal balance. The linear correlations for all cytokines (C101, strong R\u00b2 values) across the full oligomeric series (C107) provide compelling quantitative support. The mechanistic interpretation (C104) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Cytokine production in response to antigen-negative tumor cells was very low for all CAR constructs, demonstrating that pre-assembled higher-order oligomers do not cause spontaneous antigen-independent activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 address an important control showing that oligomerization alone does not cause tonic signaling. The data demonstrate antigen-dependence of CAR activation across all oligomeric states. This is critical for establishing that the observed effects are due to antigen-triggered signaling rather than constitutive activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Initial design attempts revealed systematic problems with misfolding and unexpected oligomerization. A refined strategy incorporating negative design principles generated highly expressed, atomically accurate oligomers with SDS-resistant complexes matching target oligomeric states, indicating that designed interfaces dominate over unintended interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 summarize the overall design methodology development. The progression from problems (C108-C109) to solutions (C110) is well-documented in earlier claims. The interpretation of SDS-PAGE data (C111-C112) is reasonable given the concordance with crystal structures, though the caveat about potential weak interactions (C112) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Natural TMDs can encode unexpected functions that confound predictability. In CD28 TMD-containing CARs, costimulation is amplified through recruitment of endogenous CD28, potentially contributing up to four additional costimulatory sequences per dimeric CAR. This additional signaling likely explains the enhanced potency and higher toxicity of CD28 TMD-containing CARs compared to other TMDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 present mechanistic insights into natural TMD function in engineered receptors. The stoichiometric calculation (C115) is logical given the demonstrated CD28 recruitment. The interpretation linking this to enhanced potency and toxicity (C116) is supported by the experimental data and cited literature. This represents an important mechanistic discovery about widely used CAR designs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Systematic interrogation of the oligomeric state-function relationship was previously impossible due to limited availability of well-characterized TMDs. The de novo-designed proMPs enabled this discovery. The observed linear relationship suggests that other structural features (TMD geometry, conformational changes) play minor roles in determining receptor activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 contextualize the significance of the work. The limitation of prior approaches (C117) is well-supported by citations. The enabling role of proMPs (C118) is demonstrated throughout the manuscript. The inference about minor roles of other structural features (C119-C120) is reasonable given the strong linear correlations, though appropriately qualified as a suggestion rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C122",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "De novo-designed TMDs provide precise control over engineered receptor functions and offer opportunities to balance safety and efficacy in CAR T cell therapies. The modularity of TMDs enables easy implementation in existing receptor designs and facilitates screening for optimal constructs, though further testing in more clinically relevant models is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, C122, C128-C132 present the translational implications and future directions. The demonstrated control over oligomeric state and function (throughout the manuscript) supports the precision claim (C1). The potential for balancing safety/efficacy (C122, C128) is supported by the proCAR-4 data. The modularity argument (C130-C132) is logical. The acknowledgment of need for further testing (C129) is appropriate and honest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C27",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Background context on TMD function in receptors, CAR T cell therapy, challenges in CAR design, and limitations of prior design approaches. These claims establish the motivation and significance of the work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C10-C18, C27, C52-C56, C123-C125 provide literature context and background knowledge. All claims are appropriately supported by citations to relevant literature. These establish the scientific rationale for the study and contextualize the challenges addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C51",
+      "C121",
+      "C127",
+      "C133"
+    ],
+    "result": "Speculative claims about future applications and implications, including potential clinical benefits, design of hetero-oligomeric TMDs, testing TMD geometry effects, and applications beyond CAR T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22, C51, C121, C127, C133 are explicitly speculative about future work and applications. While reasonable extrapolations from the current work, they represent hypotheses rather than demonstrated results. The speculation is appropriately qualified in the text.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The Ya Tsie trial was a pair-matched community randomized trial conducted from 2013 to 2018 in 30 rural and peri-urban communities in Botswana, representing 7.6% of the national population with an estimated baseline HIV prevalence of 25.7%. Communities were matched into 15 pairs and randomized to intervention (expanded HIV testing, early ART, strengthened linkage-to-care) or control arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide consistent descriptive information about the trial design, population, and intervention. The trial design is clearly specified with appropriate matching criteria (C6) and well-defined intervention components (C7). The population estimates (C2, C3, C5) are internally consistent and the trial period is explicitly stated (C1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Botswana is a sparsely populated landlocked country roughly the size of France (581,730 km\u00b2) with about 2.3 million people, where the Kalahari Desert occupies approximately 70% of the country. It is a high middle-income country with a Gini index of 53.3 and had the third-highest HIV prevalence in the world in 2019 (one in five adults aged 15-49 years living with HIV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 provide contextual geographic and epidemiological information about Botswana, all citing appropriate external sources (World Bank, UNAIDS, GISGeography). These are background facts that establish the study setting and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "5,114 trial participants consented to viral genotyping and were successfully deep-sequenced, representing the largest phylogenetics study in Botswana. Most participants (86%) were on antiretroviral treatment and virally suppressed, requiring deep-sequencing primarily on proviral DNA (81%). 3,832 participants met criteria for phylogenetic analysis, representing an overall genotyping density of 14%, with intervention communities sampled more densely (16%) than control communities (12%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C31-C35 provide consistent data on sample sizes, sequencing methods, and sampling density. The numbers are internally consistent (5,114 sequenced, 3,832 meeting inclusion criteria, 86% virally suppressed requiring proviral DNA sequencing). The differential sampling by trial arm (C35) is clearly documented and will be important for adjusted analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The mean pairwise genetic distance between HIV-1 viral whole-genome consensus sequences was 12.5 \u00b1 3.0%. 236 genetic similarity clusters were identified comprising 14% (525/3,832) of participants, with 97% of clusters comprising two or three members, and 52% of clusters entirely within a single community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 present consistent genetic clustering results. The large mean genetic distance (12.5%) is consistent with sparse sampling and/or sampling late in infection as the authors note. The predominance of small clusters (C38) and geographic concentration (C39) are consistent with the 14% sampling fraction and provide important context for transmission inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "153 highly supported probable source-recipient pairs were identified, including 82 male-female pairs. The estimated false discovery rate for inferring direct transmission between males and females was 36%, calibrated using the probability of inferring male-male pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C42 describe transmission pair identification and FDR estimation. While the FDR calibration method (C42) is reasonable, the 36% FDR is quite high and represents an upper bound. The authors acknowledge this limitation but the high FDR introduces substantial uncertainty into downstream analyses of the 82 male-female pairs. The method assumes equal probability of missing intermediates in male-male vs male-female pairs, which may not hold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C54",
+      "C55"
+    ],
+    "result": "Males were on average 3.5 \u00b1 9.6 years older than females in probable transmission pairs (reduced to 1.3 \u00b1 10.4 years after adjusting for sampling variability). 55% of male-female transmission events originated from men. After adjustment for variable sampling by age and gender, men and women contributed similarly to viral transmission, with little genetic evidence that older men were a substantial source of infection to younger women in Botswana.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C54-C55 present consistent findings on age and gender patterns in transmission. The adjustment for sampling variability (C43) appropriately accounts for undersampling of younger males. The finding of similar contributions by gender (C54) and lack of strong age-disparate transmission (C55) contrasts with prior work in South Africa (C30) and is supported by the data, though the high FDR (C42) introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "Most inferred HIV transmissions occurred within the same trial community (69%, 57/82) or between neighboring communities. The median driving distance between communities for transmission pairs was 161 km. After adjusting for differential sampling, an estimated 24% of transmissions to trial community residents originated from another trial community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C45-C46, C48 present consistent evidence for geographic clustering of transmission. The permutation test (mentioned in methods) supports preferential mixing by proximity. The adjusted estimate (C48) appropriately accounts for differential sampling. These findings are internally consistent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The estimated proportion of HIV transmissions within the South-East region (50%) was higher compared to the Central-East (23%) and North-East regions (18%) after adjusting for differential sampling by geographic region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 presents adjusted regional transmission estimates with confidence intervals. The higher transmission in the South-East region is noted to include Gaborone, the capital city, providing a plausible explanation. The adjustment method is appropriate and the finding is clearly stated with uncertainty quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C64"
+    ],
+    "result": "Post-baseline, transmissions into intervention communities from control communities (30%) were more common than the reverse (3%), compared to baseline (7% vs 5%). After adjusting for differential sampling, the estimated proportion of HIV transmissions within control communities (51%) was about twice that in intervention communities (29%), and transmissions flowing into intervention communities from control communities (15%) was about three times higher than the reverse (5%). This pattern is compatible with a benefit from treatment-as-prevention and potentially reduced the observed trial effect-size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18-C20, C50-C53, C64 present the key finding regarding intervention effects. However, several limitations create uncertainty: (1) transmission dates were not identified, only sampling dates (acknowledged in C18, C20), making temporal inference problematic; (2) the high FDR (36%, C42) affects these estimates; (3) the baseline vs post-baseline comparison relies on recipient sampling time, not transmission time; (4) the wide confidence intervals (C18, C52-C53) reflect substantial uncertainty; (5) differential sampling by trial arm (C35) was adjusted for but may not fully account for selection bias. While the pattern is suggestive, the evidence is not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Global HIV-1 infections have declined since 1997, yet incidence remains high in East and Southern Africa, especially among young women. Despite four decades of effort, there is no successful HIV vaccine or cure. Four large universal test-and-treat trials in East and Southern Africa showed variable outcomes (modest to no reduction in new infections), despite evidence that early ART reduces transmission and mathematical models predicting substantial impact. UNAIDS' target of fewer than 500,000 new infections by 2020 was unmet. Previous work in South Africa identified age-disparate partnerships as a primary contributor to transmission to younger women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 provide appropriate background context, all citing relevant sources (UNAIDS reports, trial publications, modeling studies). These establish the scientific rationale for the study and are appropriately referenced. The citation of prior work on age-disparate transmission (C30) provides important context for the contrasting findings in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The finding of limited age-disparate transmission is consistent with the VOICE trial in South Africa, which found no association between age-disparate relationships and HIV risk in young women. Participants aggregated in small-sized clusters (two or three persons), consistent with phylogenetic studies in generalized epidemics in Southern Africa. Most participants reported not engaging in transactional sex in the last 12 months, suggesting limited contribution of sex workers to identified transmission patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 appropriately contextualize the findings with other studies and provide supporting behavioral data. The consistency with the VOICE trial (C56) strengthens the age-disparate transmission findings. The small cluster sizes (C57-C58) are consistent with the sampling fraction and generalized epidemic context. The behavioral data (C59-C60) provide supporting evidence, though self-reported sexual behavior may be subject to social desirability bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The study had a 14% sampling fraction of HIV viral genomes in the trial population, which is modest compared to typical African phylogenetic studies (<10%). Most participants were virally suppressed, which might have biased results toward transmission patterns among people with suppressed virus. Nevertheless, the study was based on a relatively representative sample of adults with HIV in rural and peri-urban villages across Eastern Botswana.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 appropriately acknowledge study limitations. The 14% sampling fraction (C61) is honestly characterized as modest despite being better than typical studies. The potential bias from viral suppression (C62) is appropriately noted as speculative. The characterization of representativeness (C63) is reasonable given the sampling design, though underrepresentation of men and younger individuals is noted elsewhere.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Population mobility patterns are fundamental to HIV transmission dynamics and to the impact of HIV control strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 represents the main conclusion of the study. This is well-supported by the findings of substantial between-community transmission (C48), geographic clustering (C45-C46), and differential transmission flows between trial arms (C52-C53). The evidence collectively supports that mobility and geographic mixing are important factors in HIV transmission and intervention effectiveness, though the magnitude of effects has uncertainty.",
+    "result_type": "MAJOR"
+  }
+]

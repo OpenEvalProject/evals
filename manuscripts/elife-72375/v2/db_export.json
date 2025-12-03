@@ -1,0 +1,1273 @@
+{
+  "submission": {
+    "id": "a8b50298-8a1a-4b32-b397-24601eb97c31",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:54:54.805555Z",
+    "updated_at": "2025-12-03T07:54:54.805555Z"
+  },
+  "content": [
+    {
+      "id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "submission_id": "a8b50298-8a1a-4b32-b397-24601eb97c31",
+      "content_type": "manuscript",
+      "content_text": "# Principles of mRNA targeting via the Arabidopsis m6A-binding protein ECT2\n\n## Authors\n\n- Laura Arribas-Hern\u00e1ndez<sup>1</sup> ([ORCID: 0000-0003-0605-0407](https://orcid.org/0000-0003-0605-0407)) \u2020\n- Sarah Rennie<sup>2</sup>\n- Tino K\u00f6ster<sup>3</sup>\n- Carlotta Porcelli<sup>1</sup> ([ORCID: 0000-0003-4675-4898](https://orcid.org/0000-0003-4675-4898))\n- Martin Lewinski<sup>3</sup>\n- Dorothee Staiger<sup>3</sup> ([ORCID: 0000-0002-1341-1381](https://orcid.org/0000-0002-1341-1381)) \u2020\n- Robin Andersson<sup>2</sup> ([ORCID: 0000-0003-1516-879X](https://orcid.org/0000-0003-1516-879X)) \u2020\n- Peter Brodersen<sup>1</sup> ([ORCID: 0000-0003-1083-1150](https://orcid.org/0000-0003-1083-1150)) \u2020\n\n### Affiliations\n\n1. University of Copenhagen, Copenhagen Plant Science Center Copenhagen N Denmark\n2. Department of Biology, University of Copenhagen Copenhagen Denmark\n3. University of Bielefeld, Faculty of Biology, RNA Biology and Molecular Physiology Bielefeld Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpecific recognition of N6-methyladenosine (m6A) in mRNA by RNA-binding proteins containing a YT521-B homology (YTH) domain is important in eukaryotic gene regulation. The Arabidopsis YTH domain protein ECT2 is thought to bind to mRNA at URU(m6A)Y sites, yet RR(m6A)CH is the canonical m6A consensus site in all eukaryotes and ECT2 functions require m6A-binding activity. Here, we apply iCLIP (individual nucleotide resolution crosslinking and immunoprecipitation) and HyperTRIBE (targets of RNA-binding proteins identified by editing) to define high-quality target sets of ECT2 and analyze the patterns of enriched sequence motifs around ECT2 crosslink sites. Our analyses show that ECT2 does in fact bind to RR(m6A)CH. Pyrimidine-rich motifs are enriched around, but not at m6A sites, reflecting a preference for N6-adenosine methylation of RRACH/GGAU islands in pyrimidine-rich regions. Such motifs, particularly oligo-U and UNUNU upstream of m6A sites, are also implicated in ECT2 binding via its intrinsically disordered region (IDR). Finally, URUAY-type motifs are enriched at ECT2 crosslink sites, but their distinct properties suggest function as sites of competition between binding of ECT2 and as yet unidentified RNA-binding proteins. Our study provides coherence between genetic and molecular studies of m6A-YTH function in plants and reveals new insight into the mode of RNA recognition by YTH domain-containing proteins.\n\n## Introduction\n\nN6-methyladenosine (m6A) is the most abundant modified nucleotide in eukaryotic mRNA bodies. It is required for embryonic development and stem cell differentiation in several animals and plants (Zhong et al., 2008; Batista et al., 2014; Ping et al., 2014; Geula et al., 2015; Zhang et al., 2017) and for the control of the meiotic program in yeast (Shah and Clancy, 1992; Clancy et al., 2002; Agarwala et al., 2012). Most N6-adenosine methylation of mRNA is catalyzed in the nucleus (Salditt-Georgieff et al., 1976; Ke et al., 2017; Huang et al., 2019) by a highly conserved, multimeric methylase (the m6A \u2018writer\u2019; Balacco and Soller, 2019) whose catalytic core consists of the heterodimer METTL3/METTL14 (MTA/MTB in plants; Bokar et al., 1997; Zhong et al., 2008; Liu et al., 2014). In addition, a number of highly conserved proteins is required for N6-methylation in vivo (Balacco and Soller, 2019). The strong conservation of these core factors suggests that the biochemical basis of N6-adenosine methylation is common in eukaryotes, and indeed, m6A occurs in the consensus site RR(m6A)CH (R = G/A, H = A/C/U), primarily in 3\u2032-UTRs in vertebrates, plants, and fungi that possess the canonical METTL3/METTL14 methyltransferase (Bodi et al., 2012; Dominissini et al., 2012; Meyer et al., 2012; Schwartz et al., 2013; Luo et al., 2014a; Zhao et al., 2017; Miao et al., 2020; Parker et al., 2020). Conversely, the characteristic motif and gene body location is not detected in organisms that lack METTL3/METTL14 homologs, such as the nematode Caenorhabditis elegans (Sendinc et al., 2020) and bacteria (Deng et al., 2015).\n\nm6A may impact mRNA function by different mechanisms, including the creation of binding sites for reader proteins that specifically recognize m6A in mRNA (Dominissini et al., 2012; Fu et al., 2014; Meyer and Jaffrey, 2014). The best understood class of readers contains a so-called YT521-B homology (YTH) domain (Stoilov et al., 2002) of which two phylogenetic groups, YTHDF and YTHDC, have been defined (Patil et al., 2018; Balacco and Soller, 2019). The YTH domain harbors a hydrophobic methyl-binding pocket that increases the affinity of m6A-containing RNA by more than 10-fold compared to unmethylated RNA (Li et al., 2014b; Luo and Tong, 2014b; Theler et al., 2014; Xu et al., 2014; Zhu et al., 2014). Apart from interactions with the methylated adenosine and the purine at the \u20131 position, YTH domain-RNA interactions mostly involve the sugar-phosphate backbone of the RNA (Luo and Tong, 2014b; Theler et al., 2014; Xu et al., 2014). That is consistent with only mild reductions in the binding affinity of the YTH domain of human YTHDC1 upon substitution of nucleotides \u22122, +1, and +3 that abrogate the canonical RR(m6A)CH motif (Xu et al., 2014), and poor sequence specificity of RNA binding by isolated YTH domains of human YTHDF1, YTHDF2, and YTHDC1 (Arguello et al., 2019). Thus, the methyltransferase complex gives the sequence specificity, while YTH domain proteins may bind to m6A-containing RNA regardless of the identity of the immediately adjacent nucleotides.\n\nYTHDF proteins are typically cytoplasmic and consist of a long N-terminal intrinsically disordered region (IDR) followed by the globular YTH domain (Patil et al., 2018). Because the affinity of isolated YTH domains for m6A-containing RNA is modest, typically with dissociation constants on the order of 0.1\u20131 \u03bcM (Li et al., 2014b; Luo and Tong, 2014b; Theler et al., 2014; Xu et al., 2014; Zhu et al., 2014), it has been suggested that the IDR may participate in RNA binding (Patil et al., 2018). Nonetheless, the clearest evidence for functions of the IDRs in YTHDF proteins reported thus far includes direct interactions with effectors such as the CCR4-NOT complex in mammalian cells (Du et al., 2016), and the ability to cause liquid-liquid phase transition when sufficiently high local concentrations are reached (Arribas-Hern\u00e1ndez et al., 2018; Gao et al., 2019; Ries et al., 2019; Fu and Zhuang, 2020; Wang et al., 2020).\n\nThe YTHDF family comprises 11 proteins in Arabidopsis that are referred to as EVOLUTIONARILY CONSERVED C-TERMINAL REGION1-11 (ECT1-11) (Li et al., 2014c; Scutenaire et al., 2018). ECT2, ECT3, and ECT4 are expressed in rapidly dividing cells of root, leaf, and flower primordia, and genetic analyses have revealed their general importance in organogenesis (Arribas-Hern\u00e1ndez et al., 2018; Arribas-Hern\u00e1ndez et al., 2020). Importantly, the biological functions of ECT2/ECT3/ECT4 described thus far are shared with those of m6A writer components and, where tested, have been shown to depend on intact m6A-binding pockets, strongly suggesting that the basis for the observed phenotypes in ect2/ect3/ect4 mutants is defective regulation of m6A-modified mRNA targets (Bodi et al., 2012; Shen et al., 2016; Ru\u017ei\u010dka et al., 2017; Arribas-Hern\u00e1ndez et al., 2018; Scutenaire et al., 2018; Wei et al., 2018; Arribas-Hern\u00e1ndez et al., 2020). Despite the progress in identifying biological functions of plant m6A-YTHDF axes, a number of fundamental questions regarding their molecular basis remains unanswered. For example, it is unclear whether sequence determinants in addition to m6A are important for mRNA target association of ECT proteins in vivo, the mRNA targets of ECT2/ECT3/ECT4 responsible for the developmental delay of ect2/ect3/(ect4) mutants have not been identified, and it is not clear what the effects of ECT2/ECT3/ECT4 binding to them may be (Arribas-Hern\u00e1ndez and Brodersen, 2020). Clearly, robust identification of the mRNA targets directly bound by ECT proteins is key to obtain satisfactory answers to all of these questions. Towards that goal, formaldehyde crosslinking and immunoprecipitation (FA-CLIP) was used to identify mRNA targets of ECT2 (Wei et al., 2018). Nonetheless, because formaldehyde, in contrast to UV illumination, generates both protein-protein and protein-RNA crosslinks, it is not an ideal choice for identification of mRNAs bound directly by a protein of interest (see Arribas-Hern\u00e1ndez and Brodersen, 2020 for a discussion). In particular, this problem concerns the unexpected conclusion that ECT2 binds to the \u2018plant-specific consensus motif\u2019 URU(m6A)Y (Y = U/C), not RR(m6A)CH (Wei et al., 2018). Thus, the field of gene regulation via m6A-YTHDF modules in plants is in a state of confusion: on the one hand, m6A mapping (Luo et al., 2014a; Wan et al., 2015; Shen et al., 2016; Duan et al., 2017; Anderson et al., 2018; Miao et al., 2020; Parker et al., 2020) and phenotypes of mutants defective in m6A writing (Bodi et al., 2012; Shen et al., 2016; Ru\u017ei\u010dka et al., 2017) or m6A binding of ECT2/ECT3/ECT4 (Arribas-Hern\u00e1ndez et al., 2018; Arribas-Hern\u00e1ndez et al., 2020) suggest that these YTHDF proteins should act via recognition of m6A in the RRACH context. On the other hand, the only attempt at a mechanistic understanding of ECT2 function via mRNA target identification concluded that ECT2 binds to a sequence element different from RRACH (Wei et al., 2018). To complicate matters further, a number of motifs including not only URUAY, but also UGUAMM (M = A/C), UGWAMH (W = A/U), UGUAWA, and GGAU have been reported to be enriched around m6A sites in Arabidopsis and other plant species (Li et al., 2014a; Anderson et al., 2018; Miao et al., 2020; Zhang et al., 2019; Zhou et al., 2019), but it remains unclear whether the adenosines in such motifs are methylated in vivo. Alternatively, these sequence contexts may play a role in guiding m6A deposition or ECT recognition nearby, either directly by ECT interaction or indirectly via additional RNA-binding proteins assisting or competing with ECT binding.\n\nTo clarify principles underlying mRNA recognition by ECT2, we undertook rigorous analysis of its mRNA-binding sites using two orthogonal methods, the proximity-labeling method HyperTRIBE (targets of RNA-binding proteins identified by editing) (McMahon Aoife et al., 2016; Xu et al., 2018) and iCLIP (individual nucleotide resolution crosslinking and immunoprecipitation) (K\u00f6nig et al., 2010). This resulted in identification of high-quality target sets as judged by mutual overlaps and by overlaps with previously reported m6A maps from plants at a similar developmental stage (Shen et al., 2016; Parker et al., 2020). Relying on this high-quality target set, we used the position information inherent to iCLIP and a single-nucleotide resolution m6A dataset (Parker et al., 2020) to establish six properties of m6A-containing mRNA and mRNA targeting by ECT2. (1) RRACH and its variant DRACH (D = R/U) are unequivocally the most highly enriched motifs at m6A sites in Arabidopsis. (2) ECT2 binds to m6A sites in the canonical RRACH context as ECT2 crosslinking sites are preferentially found immediately 5\u2032 to m6A sites, and RRACH is enriched immediately 3\u2032 to ECT2 crosslinking sites. (3) GGAU is a minor m6A consensus site in plants. (4) U- and U/C-rich motifs are enriched around, but not at, m6A sites, and, together with RRACH and GGAU, constitute core elements that distinguish m6A-containing 3\u2032-UTRs from non-m6A-containing 3\u2032-UTRs in plants. (5) The IDR of ECT2 participates in RNA binding as it crosslinks to target mRNAs at U-rich elements highly abundant upstream of m6A sites. (6) Although URUAY, URURU, and similar motifs may crosslink to ECT2, their presence in m6A-containing mRNA disfavors ECT2 binding, consistent with those motifs acting predominantly as sites of interaction for RNA-binding proteins that may compete with ECT2.\n\n## Results\n\n### ADARcd fusions to ECT2 are functional in vivo\n\nHyperTRIBE uses fusion of RNA-binding proteins to the hyperactive E488Q mutant of the catalytic domain of the Drosophila melanogaster adenosine deaminase acting on RNA (DmADARE488Qcd) (Kuttan and Bass, 2012) to achieve proximity labeling in vivo (McMahon Aoife et al., 2016; Xu et al., 2018). Targets are identified as those mRNAs that contain adenosine-inosine sites significantly more highly edited than background controls, measured as A-G changes upon reverse transcription and sequencing. To develop material suitable for ECT2 HyperTRIBE, we expressed AtECT2pro:AtECT2-FLAG-DmADARE488Qcd-AtECT2ter (henceforth \u2018ECT2-FLAG-ADAR\u2019) in the single ect2-1 and triple ect2-1/ect3-1/ect4-2 (te234) knockout backgrounds (Arribas-Hern\u00e1ndez et al., 2018; Arribas-Hern\u00e1ndez et al., 2020). We identified lines exhibiting nearly complete rescue of te234 mutant seedling phenotypes, indicating that the fusion protein was functional (Figure 1A). We then used the expression level in complementing lines as a criterion to select lines in the ect2-1 single mutant background, for which no easily scorable phenotype has been described (Figure 1\u2014figure supplement 1A). Lines expressing free DmADARE488Qcd under the control of the endogenous ECT2 promoter (AtECT2pro:FLAG-DmADARE488Qcd-AtECT2ter; henceforth FLAG-ADAR) at levels similar to or higher than those of the fusion lines (Figure 1\u2014figure supplement 1A,B) were used to control for background editing after verification that FLAG-ADAR expression did not result in phenotypic abnormalities in Col-0 WT plants (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig1-v2.jpg)\n\n**Figure 1.:** (A) Phenotypes of wild type, ect2-1 and te234 mutants with (lower panels) or without (upper panels) ECT2-FLAG-ADAR or FLAG-ADAR transgenes, at 9 or 24 days after germination (DAG). (B) Experimental design for ECT2-HyperTRIBE (ECT2-HT) target identification and hyperTRIBER pipeline (Rennie et al., 2021). Nucleotide base counts quantified from mapped RNA-seq libraries were passed into the hyperTRIBER pipeline to call significant editing sites, which were further filtered and annotated. The number of sites in either aerial (A, dissected apices) or root (R, root tips) tissues considered at each stage of the analysis is indicated. GLM, generalized linear model; E.P., editing proportion. (C) Scatterplot of the editing proportions of potential and significant editing sites (E.S.) in aerial tissues of ect2-1/ECT2-FLAG-ADAR lines compared to the FLAG-ADAR controls. Significant sites are highlighted in vivid green. N.S., not significant. (D) Density of editing proportions for significant editing sites in aerial tissues and roots of ect2-1/ECT2-FLAG-ADAR lines. (E) Consensus motif identified at significant editing sites in aerial tissues of ect2-1/ECT2-FLAG-ADAR lines. (F) Principal component analysis of editing proportions at significant editing sites in samples with aerial tissues. (G) Distribution of the correlations between editing proportions and ADAR expression (TPM) for significant editing sites in aerial tissues of either ect2-1/ECT2-FLAG-ADAR or FLAG-ADAR lines. Background correlations (gray) are based on randomly shuffling ADAR expression for each site. (H) Boxplots showing the mean editing proportions as a function of the proportion of cells co-expressing ECT2, calculated based on single cell RNA-seq in roots (Denyer et al., 2019). For panels C, E, F, and G, comparable analyses in both aerial and root tissues are shown in the Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Protein expression levels of ECT2pro:ECT2-FLAG-DmADARE488Qcd-ECT2ter (ECT2-FLAG-ADAR) or ECT2pro:FLAG-DmADARE488Qcd-ECT2ter (FLAG-ADAR) transgenes in 10-day-old seedlings of five independent transgenic lines (L1\u2013L5) of each of the genotypes shown in Figure 1A and their background controls. Amido black staining is used as loading control. (B) mRNA expression levels (TPM) of ECT2-FLAG-ADAR or FLAG-ADAR in dissected apices (aerial tissues) or root tips of the lines used for ECT2-HyperTRIBE (ECT2-HT). (C) Scatterplot of the editing proportions, defined as G/(A + G), of potential and significant editing sites (E.S.) in aerial and root tissues of ect2-1/ECT2-FLAG-ADAR lines compared to the FLAG-ADAR controls. Significant sites are highlighted in vivid colors. N.S., not significant. (D) Number of significant hits in root samples by mismatch type, after filtering but before removing non-A-G or non-T-C sites. (E, F) Consensus motif identified at significant editing sites in roots of ect2-1/ECT2-FLAG-ADAR lines, split in groups by editing proportions (E.P.) in (F). (G) Principal component analysis of editing proportions for significant editing sites. (H) Distribution of the correlations between editing proportions and ADAR expression (TPM) for significant editing sites. Background correlations (gray) are based on randomly shuffling ADAR expression for each site.\n\n### The ECT2-ADARcd fusion imparts adenosine-to-inosine editing of target mRNAs in planta\n\nTo identify ECT2 HyperTRIBE targets (HT-targets), we sequenced mRNA from dissected root tips and shoot apices of 10-day-old seedlings of ect2-1/ECT2-FLAG-ADAR and FLAG-ADAR transgenic lines using five independent lines of each type as biological replicates to prevent line-specific artifacts. Next, we generated nucleotide base counts for all positions with at least one mismatch across the full set of samples of mapped reads (Figure 1B), resulting in a raw list of potential editing positions. This revealed that the amount of editing was clearly higher in the lines expressing the ECT2-FLAG-ADAR fusion protein than in the negative control lines (Figure 1C, Figure 1\u2014figure supplement 1C). To identify positions with significantly higher editing rates in ECT2-FLAG-ADAR lines compared to controls, we developed a new approach to detect differential editing (Figure 1B) described in detail by Rennie et al., 2021. Briefly, the hyperTRIBER method of detecting differential editing exploits the powerful statistical capabilities of a method originally designed to detect differential exon usage (Anders et al., 2012). It efficiently takes replicates and possible differences in expression into account, resulting in high power to detect sites despite the generally low editing proportions that we found in our data (Figure 1D). As expected, the tendency towards higher editing proportions in fusion lines compared to controls was even more pronounced after filtering nonsignificantly edited sites (Figure 1C, Figure 1\u2014figure supplement 1C). Three additional properties of the resulting editing sites indicate that they are the result of ADARcd activity guided by its fusion to ECT2. First, the vast majority of significant hits corresponded to A-to-G transitions (Figure 1\u2014figure supplement 1D). Second, the consensus motif at the edited sites matched the sequence preference of DmADARE488Qcd (5\u2032 and 3\u2032 nearest-neighbor preference of U>A>C>G and G>C>A~U, respectively [Xu et al., 2018; Figure 1E, Figure 1\u2014figure supplement 1E]), with highly edited sites more closely matching the optimal sequence context than lowly edited ones (Figure 1\u2014figure supplement 1F). Third, principal component analysis of editing proportions at significant sites over the different lines clearly separated the ECT2-FLAG-ADAR fusion lines from the control lines (Figure 1F, Figure 1\u2014figure supplement 1G). Application of subsequent filtering steps, including removal of non-(A-to-G) mismatches and of potential line-specific single-nucleotide variants (see Materials and methods), resulted in a final list of 16,176 edited sites for aerial tissues and 19,242 for roots, corresponding to 4864 and 5052 genes (ECT2 HT-targets), respectively (Figure 1B, Supplementary file 1). In both cases, this represents 27% of all expressed genes. We note that the editing proportions were generally low (Figure 1D) compared to previous work in Drosophila (Xu et al., 2018), perhaps in part due to the limited number of cells that express ECT2 (Arribas-Hern\u00e1ndez et al., 2018; Arribas-Hern\u00e1ndez et al., 2020). Indeed, the ADAR expression level (TPMs) correlated strongly with editing proportions among ECT2-FLAG-ADAR lines (Figure 1G, Figure 1\u2014figure supplement 1H), and editing proportions were higher for target mRNAs that are coexpressed with ECT2 in a large percentage of cells according to single-cell RNA-seq (Denyer et al., 2019; Figure 1H), lending further support to the conclusion that the observed editing is ADAR-specific and driven to target mRNAs by ECT2. Hence, HyperTRIBE can be used to identify targets of RNA-binding proteins in planta.\n\n### HyperTRIBE is highly sensitive and identifies primarily m6A-containing transcripts as ECT2 targets\n\nTo evaluate the properties of ECT2 HT-targets, we first noted that most of them were common between root and aerial tissues (Figure 2A), as expected given the recurrent function of ECT2 in stimulating cell division in all organ primordia (Arribas-Hern\u00e1ndez et al., 2020). In agreement with this result, most of the targets specific to root or aerial tissues were simply preferentially expressed in either tissue (Figure 2B). Moreover, the significant editing sites in roots and aerial tissues had a considerable overlap (Figure 2A), and their editing proportions were similar in the two tissues (Figure 2C). Of most importance, we observed a large overlap between the ECT2 HT-targets and m6A-containing transcripts mapped by different methods in seedlings (Shen et al., 2016; Parker et al., 2020) as more than 76% of ECT2 HT-targets had m6A support by either study (Figure 2D). These results validate our HyperTRIBE experimental setup and data analysis, and confirm that ECT2 binds predominantly to m6A-containing transcripts in vivo.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig2-v2.jpg)\n\n**Figure 2.:** (A) Overlap between ECT2-HT targets (genes and editing sites) in roots and aerial tissues, based on genes commonly expressed in both tissues. (B) Scatterplot showing the expression levels in roots and aerial tissues (mean log2(TPM+1) over the five ECT2-HT control samples) of the genes identified as aerial or root-specific targets. (C) Scatterplot of the editing proportions (E.P.) of significant editing sites in ECT2-HT for aerial vs root tissues. (D) Overlap between ECT2-HT targets and m6A-containing genes. *Parker et al., 2020; ** Shen et al., 2016.\n\n### ECT2-mCherry can be specifically UV-crosslinked to target RNA in vivo\n\nWe next moved on to independent target and binding site identification via iCLIP (Figure 3A). We used transgenic lines expressing functional ECT2-mCherry under the control of the endogenous ECT2 promoter in the ect2-1 knockout background (Arribas-Hern\u00e1ndez et al., 2018; Arribas-Hern\u00e1ndez et al., 2020) to co-purify mRNAs crosslinked to ECT2 for iCLIP. Lines expressing the ECT2W464A-mCherry variant were used as negative controls because this Trp-to-Ala mutation in the hydrophobic methyl-binding pocket of the YTH domain abrogates the increased affinity for m6A-RNA (Li et al., 2014b; Xu et al., 2014; Zhu et al., 2014). Accordingly, the point mutant behaves like a null allele in plants despite its wild-type-like expression pattern and level (Arribas-Hern\u00e1ndez et al., 2018; Arribas-Hern\u00e1ndez et al., 2020).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig3-v2.jpg)\n\n**Figure 3.:** (A) iCLIP experimental design. (B) Upper panels: autoradiogram (top) and \u03b1-mCherry protein blot (below) of RFP-trap immuno-purifications. Samples are cell extracts from 12-day-old seedlings expressing ECT2-mCherry or ECT2W464A-mCherry in the ect2-1 mutant background after in vivo UV-crosslinking as indicated, and subjected to DNase digestion, partial RNase digestion, and 5\u2019-32P labeling of RNA. Non-transgenic, Col-0 wild type. Lower panels: \u03b1-mCherry protein blot of the same extracts before immunoprecipitation (input) and Coomassie staining of the membrane. Sizes corresponding to full length ECT2-mCherry (~125 kDa) and the most apparent RNA bands are indicated with arrows. A repeat of the experiment with independently grown and crosslinked tissue is shown in the Figure 3\u2014figure supplement 1A. (C) Schematic representation of ECT2-mCherry and HA-ECT2 fusion proteins with their apparent size (electrophoretic mobility). The molecular weight of each region is indicated. Notice that IDRs tend to show higher apparent sizes (lower electrophoretic mobility) than globular domains. (D) Equivalent to B with lines expressing 3xHA-ECT2 variants in the ect2-1 background, \u03b1-HA immuno-purifications and \u03b1-HA detection by western blot. (E) Cartoon illustrating the nature of the bands of labelled RNA co-purifying with ECT2-mCherry. Yellow stars indicate possible crosslinking sites. (F) Number of called peaks and genes detected from the four iCLIP libraries sequenced for this study (Figure 3\u2014figure supplement 3). (G) Upset plot showing single and pairwise combinations of genes for the four sequenced iCLIP libraries. Additional intersections can be found in the Figure 3\u2014figure supplement 4. (H) Metagene profiles depicting the enrichment along the gene body (5\u2019UTR, CDS or 3\u2019UTR) of the called iCLIP peaks detailed in F.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Independent repeat of the CLIP experiment in Figure 3B. Sizes corresponding to full-length ECT2-mCherry (~125-kDa) (Figure 3C) and the most apparent RNA bands are indicated. (B) Same as (A) using a gradient of increasing concentrations of RNase I. Dilutions refer to the 100 U/\u03bcL stock, from which 5 \u03bcL were added to 100 \u03bcL reactions (e.g., 1:5000 corresponds to the final concentration of 1 U/mL used in all other CLIP experiments and for construction of iCLIP libraries). Note that the background in the IP-western blot is presumably due to lack of cooling during the 3-hr-long SDS-PAGE in this first experiment. (C) \u03b1-mCherry protein blot of lysates (input) or immunopurifications (RFP-trap) incubated for 1 hr at 4\u00b0C in either standard (STD) IP buffer (50 mM Tris-HCl, pH 7.5, 150 mM NaCl, 5 mM MgCl2, 10% glycerol, 4 mM DTT, 0.1% Nonidet P-40) or iCLIP buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 4 mM MgCl2, 5 mM DTT, 1% SDS, 0.25% sodium deoxycholate, 0.25% Igepal), both supplemented only with Roche EDTA-free Protease Inhibitor Cocktail (1 tablet/10 mL). All IP or input lanes have been developed identically on the same membrane. Dashed lines indicate cropping of lanes containing samples irrelevant for this work. Part of the input/non-transgenic/STD buffer sample lane was accidentally left out when the membrane was developed (the thin line indicates the border of the photograph), but the remaining half lane suggests absence of signal. (D) \u03b1-mCherry protein blot of cell extracts incubated for increasing amounts of time (at 4\u00b0C) in iCLIP buffer supplemented with 4 mM PMSF, 1 tablet/10 mL of Complete Protease Inhibitor Cocktail (Roche), and with or without Sigma Protease Inhibitor Optimized for Plant Extracts (1/30 vol). The progressive, protease inhibitor-sensitive appearance of <125kDa ECT2-mCherry species is evidence of their generation by proteolysis in the lysate. (E) \u03b1-mCherry protein blot of lysates (input) or immunopurifications (RFP-trap) from plants expressing ECT2-mCherry using different preclearing (PC) and immunoprecipitation (IP) times at 4\u00b0C, either in iCLIP buffer (iC) or in a milder (M) variant with \u00bd amount of detergents, both supplemented with 1 mM PMSF and 1 tablet/10 mL of Complete Protease Inhibitor Cocktail (Roche). Again, the progressive appearance of <125kDa ECT2-mCherry species with increasing incubation time is seen.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Interpretation of the pattern of labeled RNA in CLIP experiments due to the spontaneous proteolysis of the ECT2 intrinsically disordered region (IDR) in the lysate, and the different labeling efficiency of bound RNA: RNA co-migrating with the most abundant ECT2-mCherry fragment (full-length, ~125kDa) is barely labeled while the strongest signal appears at ~55kDa (the size of the YTH domain fused to mCherry), where protein abundance is below the western blot detection limit (Figure 3B and C). This observation suggests limited accessibility of 5\u2032-ends of full length ECT2-bound RNA to polynucleotide kinase (PNK), likely due to binding to the IDR. Supporting this idea, the samples containing full-length protein (\u2019110kDa band\u2019) required fewer PCR cycles to obtain similar amounts of library DNA and generated more unique reads than their \u201855kDa band\u2019 counterparts (Figure 3\u2014figure supplements 3 and 4), indicating that most of the RNA co-purifies with full-length ECT2-mCherry, and the stronger intensity of the \u201855kDa band\u2019 (Figure 3B) is indeed due to differences in labeling efficiency.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Autoradiograms showing labeled RNA co-purified with ECT2-mCherry and ECT2W464A-mCherry in the replicates used to generate iCLIP libraries. Handwritten dashed lines on the films were used as guides to excise the corresponding membrane pieces (\u2018110 \u2019Da\u2019 and \u201855kDa\u2019 bands) with a scalpel. The apparently comparable amount of labeled RNA in the two panels, generated from two different membranes and gels run and blotted identically, but separately is a product of different exposure times, which were adjusted in each case for optimal visualization of the RNA. (B) Left panel: \u03b1-mCherry protein blot from cell extracts of the 3 + 3 independent lines used for iCLIP. Middle and right panels: \u03b1-mCherry protein blot and autoradiogram of the cell extracts (input) and the RFP-trap IPs used to prepare the iCLIP libraries. Because samples for ECT2-mCherry and ECT2W464A-mCherry samples were run in separate gels to prevent cross-contamination, pooled aliquots were saved to compare the extent of ECT2 degradation and RNA-binding between them. (C) PCR reactions (number of cycles is indicated) used to prepare iCLIP libraries. For each one of the four different libraries, the three corresponding PCRs (low, medium, and high molecular weight) were combined according to their relative concentrations to compensate for inequalities. Notice that the size of the cDNA-insert to be mapped to the genome is expected to be the size of the PCR product minus the length of the P3/P5 Solexa primers and the barcode (128 nt in total) (Huppertz et al., 2014). Therefore, the low molecular weight bands cut at [70\u201385]-nt on the cDNA gel, with [20\u201335]-nt-cDNA + 52-nt-primer, generate [145\u2013155]-nt PCR fragments. The low amount of PCR product from the higher molecular weight bands is to be expected, and the non-matching PCR product sizes of the ECT2W464A-mCherry control samples are likely a product of the low amount of RNA co-purified with the m6A-binding-deficient ECT2 mutant.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Number of valid reads (trimmed reads mapped to the Arabidopsis genome [TAIR10] discarding PCR duplicates), called peaks ( = crosslink sites) (Krakau et al., 2017), collapsed crosslink sites (CCS) (peaks with the highest PureCLIP-score within clusters and extended by 4 nt in both directions forming 9 nt wide regions), and target genes, obtained from ECT2-mCherry iCLIP libraries. (B) Overlaps between gene sets identified for the four ECT2-mCherry iCLIP libraries generated in this study. (C) Upset plot displaying gene counts according to different sets defined from the four iCLIP libraries.\n\nTo test the feasibility of iCLIP, we first assessed the specificity of RNA co-purified with ECT2-mCherry after UV illumination of whole seedlings by 5\u2032-radiolabeling of the immunoprecipitated RNP complexes followed by SDS-PAGE. These tests showed that substantially more RNA co-purifies with wild-type ECT2 than with ECT2W464A upon UV-crosslinking, and that no RNA is detected without UV irradiation or from irradiated plants of non-transgenic backgrounds (Figure 3B, Figure 3\u2014figure supplement 1A). RNAse and DNAse treatments also established that the co-purified nucleic acid is RNA (Figure 3\u2014figure supplement 1B). Thus, UV crosslinking of intact Arabidopsis seedlings followed by immunopurification successfully captures ECT2-RNA complexes that exist in vivo. Curiously, although the pattern of ECT2-RNA complexes with bands migrating at ~110 and 55kDa is highly reproducible, it does not correspond to the majority of the purified ECT2-mCherry protein, which runs at ~125kDa in SDS-PAGE (Figure 3B and C). A variety of control experiments (Figure 3\u2014figure supplement 1C-E), most importantly the disappearance of additional bands with use of an N-terminal rather than a C-terminal tag (Figure 3C and D), indicate that the band pattern arises as a consequence of proteolytic cleavage of the N-terminal IDR in the lysis buffer, such that fragments purified using the C-terminal mCherry tag include the YTH domain with portions of the IDR of variable lengths (Figure 3\u2014figure supplement 2). Comparative analysis of RNA in 55-kDa and 110\u2013125-kDa complexes may, therefore, provide insight into the possible role of the N-terminal IDR of ECT2 in mRNA binding (Figure 3E), an idea consistent with the comparatively low polynucleotide kinase labeling efficiency of full-length ECT2-mCherry-mRNA complexes (~125kDa) (Figure 3B, Figure 3\u2014figure supplement 2). Thus, we prepared separate iCLIP libraries from RNA crosslinked to ECT2-mCherry/ECT2W464A-mCherry that migrates at ~110\u2013280kDa (\u2018110-kDa band\u2019) and at ~55\u201375kDa (\u201955-kDa band\u2019) (Figure 3\u2014figure supplement 3) to investigate the possible existence of IDR-dependent crosslink sites, and thereby gain deeper insights into the mode of YTHDF binding to mRNA in vivo.\n\n### ECT2-mCherry iCLIP peaks are enriched in the 3\u2032-UTR of mRNAs\n\nWe identified a total of 15,960 iCLIP \u2018peaks\u2019 or crosslink sites (i.e., single-nucleotide positions called by PureCLIP from mapped iCLIP reads [Krakau et al., 2017]) in 2281 genes from the 110-kDa band of wild-type ECT2-mCherry (henceforth referred to as ECT2 iCLIP peaks and targets, respectively). In the corresponding 55-kDa band, 4549 crosslink sites in 1127 genes were called, 93% of them contained in the 110-kDa target set (Figure 3F and G, Figure 3\u2014figure supplement 4, Supplementary file 2). We note that these numbers perfectly agree with the idea of the 55-kDa band containing only YTH domain crosslink sites, while the full length may also include IDR crosslink sites. Importantly, for both libraries, the majority of crosslink sites mapped to the 3\u2032-UTRs of mRNAs (Figure 3H, see Figure 4A, and Figure 4\u2014figure supplement 1 for more examples), coincident with the main location of m6A (Figure 4B; Parker et al., 2020). Accordingly, the 3\u2032-UTR specificity was largely lost in RNA isolated from 55-kDa ECT2W464A (Figure 3H), for which neither YTH domain nor IDR binding to RNA can be expected. Finally, iCLIP targets in full-length (110-kDa band) ECT2 WT and ECT2W464A overlapped only marginally (Figure 3G), providing molecular proof of the dependence of m6A-binding activity for ECT2 function. Nonetheless, the bias towards occurrence in the 3\u2032-UTR was only reduced, not abolished, for crosslinks to the full-length ECT2W464A protein, providing another indication that the IDR itself is able to associate with RNA-elements in 3\u2032-UTRs (Figure 3H). We elaborate further on this important point by analysis of IDR-specific crosslinks to wild-type ECT2 after in-depth validation of sets of ECT2 target mRNAs and determination of the sequence motifs enriched around m6A and ECT2 crosslink sites.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example of an ECT2 target (AGO1) showing the distribution of m6A sites*, **, ECT2-iCLIP reads and peaks, ECT2-HT edited sites, and FA-CLIP peaks*** along the transcript. CP, called peaks. See more examples in the Figure 4\u2014figure supplement 1. (B) Metagene profiles comparing the distributions along the gene body of ECT2-mCherry iCLIP peaks (wild type, 110-kDa band), ECT2-HT editing sites (in roots and aerial tissues) and m6A sites*. (C) Proportion of ECT2 iCLIP peaks within a given distance from the nearest ECT2-HT edited site. Numbers indicated on the y-axis show the proportion of ECT2 iCLIP peaks less than or equal to 200 nt from the nearest ECT2-HT edited site. (D) Overlap between genes supported as containing m6A or ECT2 targets by the different techniques indicated. The ECT2-HT target set includes the sum of targets identified in root and aerial tissues. Additional overlaps are shown in the Figure 4\u2014figure supplement 2. (E) Proportions of genes in each expression bin either containing m6A or supported as ECT2 targets by the indicated techniques. (F) Proportion of ECT2-HT targets with or without support from m6A data (Nanopore*, miCLIP* or m6A-Seq**) in each expression bin. * Parker et al., 2020; ** Shen et al., 2016; *** Wei et al., 2018.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Representative examples of ECT2 targets showing the distribution of m6A sites*, **, ECT2-iCLIP reads and peaks, ECT2-HT edited sites, and FA-CLIP peaks*** along the transcript. CP, called peaks ( = crosslink sites); CCS, collapsed crosslink sites. * Parker et al., 2020; ** Shen et al., 2016; *** Wei et al., 2018.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Overlap between genes supported as containing m6A or ECT2 targets by the different techniques indicated. The ECT2-HT target set includes the sum of targets identified in root and aerial tissues. * Parker et al., 2020; ** Shen et al., 2016; *** Wei et al., 2018.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013C) Number of significant editing sites (A), maximum or average editing proportions (B), and significance of editing sites according to either minimum or average -log10(adjusted p-value) per gene (C) in ECT2-HT targets split according to their expression levels (calculated as in Figure 2B), in both aerial and root tissues. The number of detected editing sites increases with the expression level of the targets (A) while, unexpectedly, the editing proportion decreases (B). This may be caused by dilution as the ECT2 promoter is active only in highly dividing cells (Arribas-Hern\u00e1ndez et al., 2020) while some abundant target mRNAs may be ubiquitously expressed. Nevertheless, the average statistical significance over all edited sites per target mRNA did not change with the expression level (C, right panels), indicating that our HyperTRIBE experimental setup and data analysis identifies targets across a wide range of expression levels including lowly expressed transcripts. This suggests that the significance of differential editing versus a negative control, rather than raw editing proportion or number of editing sites, is the preferred parameter for definition and ranking of targets.\n\n### iCLIP sites tend to be in the vicinity of HyperTRIBE editing sites\n\nTo evaluate the congruence of the results obtained by iCLIP and HyperTRIBE, we investigated the cumulative number of iCLIP sites as a function of distance to the nearest editing site determined by HyperTRIBE. This analysis showed a clear tendency for iCLIP peaks called with ECT2WT-mCherry, but not for ECT2W464A-mCherry, to be in the vicinity of editing sites (Figure 4C), indicating that the majority of called iCLIP peaks identify genuine ECT2-binding sites on mRNAs. Similar tendencies of proximity between iCLIP peaks and HyperTRIBE editing sites were previously observed for a Drosophila hnRNP protein (Xu et al., 2018). Although manual inspection of individual target genes confirmed these tendencies, it also revealed that ADAR-edited sites are too dispersed around iCLIP peaks to give precise information on the actual ECT2-binding sites (Figure 4A, Figure 4\u2014figure supplement 1). Therefore, we used both HyperTRIBE and iCLIP for gene target identification, but relied on iCLIP peaks for motif analyses.\n\n### ECT2 targets identified by iCLIP and HyperTRIBE overlap m6A-containing transcripts\n\nTo examine the quality of our target identification in further detail, we analyzed the overlap between ECT2 targets identified by iCLIP and HyperTRIBE. This analysis also included m6A mapping data obtained with either m6A-seq (Shen et al., 2016) or the single-nucleotide resolution methods miCLIP and Nanopore sequencing (Parker et al., 2020) as young seedlings were used in all cases. ECT2 targets identified by iCLIP and HyperTRIBE showed clear overlaps, both with each other and with m6A-containing transcripts, further supporting the robustness of ECT2 target identification via combined iCLIP and HyperTRIBE approaches (Figure 4D, upper panel, Figure 4\u2014figure supplement 2). Importantly, although some m6A targets are expected not to be bound by ECT2 because of the presence of MTA in cells that do not express ECT2 (Arribas-Hern\u00e1ndez et al., 2020), only 18% of the high-confident set of m6A-containing genes (with support from miCLIP and Nanopore) did not overlap with either ECT2 iCLIP or HT target sets (Figure 4\u2014figure supplement 2, arrow). We also observed that HyperTRIBE identifies approximately three times more ECT2 targets than iCLIP, possibly because of the bias towards high abundance inherent to purification-based methods like iCLIP (Wheeler et al., 2018). To test this idea, we compared the distribution of target mRNAs identified by the different techniques across nine expression bins. As expected, a bias towards highly abundant transcripts was evident for iCLIP-identified targets compared to HyperTRIBE (Figure 4E). We also observed a similar bias for m6A-containing transcripts detected by miCLIP, another purification-based method, and in the Nanopore dataset (Figure 4E), probably explained by its relatively low sequencing depth (Parker et al., 2020). These observations also suggest that the higher sensitivity of HyperTRIBE (analyzed in detail in Figure 4\u2014figure supplement 3) explains the lack of m6A support (by Nanopore or miCLIP) for 28% of ECT2 HT-targets (1689) compared to only 4% (83) of ECT2 iCLIP targets (Figure 4D, Figure 4\u2014figure supplement 2, upper row) since HT-targets may simply include genes that escape detection by m6A mapping methods due to low expression. Indeed, ECT2-HT targets without any m6A support were distributed in lower-expression bins compared to those with m6A support (Figure 4F). Intriguingly, ECT2 FA-CLIP targets (Wei et al., 2018) did not show a bias towards highly expressed genes as their distribution over expression bins largely reflected that of the total number of genes (Figure 4E), and as many as 37% of FA-CLIP targets did not have m6A support (Figure 4D, Figure 4\u2014figure supplement 2, upper row). In summary, these analyses show that ECT2 iCLIP and HT target sets are in excellent agreement with each other and with independently generated m6A maps, and that HyperTRIBE identifies targets below the detection limit of other techniques.\n\n### ECT2 crosslink sites coincide with m6A miCLIP sites and are immediately upstream of Nanopore m6A sites\n\nTo characterize the sequence composition and exact positions of ECT2-binding sites relative to m6A, we first used the high resolution of iCLIP data to examine the position of ECT2 crosslink sites relative to m6A sites, determined at single-nucleotide resolution (Parker et al., 2020). This analysis showed that ECT2 crosslinks in the immediate vicinity, but preferentially upstream (~11 nt) of Nanopore-determined m6A sites, with a mild depletion at the exact m6A site (Figure 5A, upper panel). Furthermore, while m6A-miCLIP sites corresponded to m6A-Nanopore sites overall, a subset of m6A-miCLIP sites were located upstream of m6A-Nanopore sites and coincided well with ECT2-iCLIP peaks (Figure 5A). This pattern is probably explained by the fact that the UV illumination used in both iCLIP and miCLIP preferentially generates RNA-protein crosslinks involving uridine (Hafner et al., 2021), also detectable in the datasets analyzed here (Figure 5B and C). Thus, the depletion of ECT2-iCLIP sites at Nanopore-, but enrichment at miCLIP-determined m6A sites (Figure 5A), might be explained by the absence of uridine within the RRAC core of the m6A consensus motif, and perhaps also to some extent by reduced photoreactivity of the m6A base stacking with indole side chains of the YTH domain. Furthermore, the fact that nucleotides at \u22122, +1, and +2 positions are only expected to contribute sugar-phosphate backbone interactions with the YTH domain (Luo and Tong, 2014b; Theler et al., 2014; Xu et al., 2014) may also contribute to the absence of direct crosslinks at the m6A site relative to the adjacent bases.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig5-v2.jpg)\n\n**Figure 5.:** (A) Normalized density of sites at and up to +/-100 nt of either m6A-Nanopore*, m6A-miCLIP* or ECT2-iCLIP sites. (B) Proportion of m6A and ECT2-iCLIP sites at each nucleotide by the different methods. (C) View from IGV browser illustrating the presence of RRACH, GGAU and U-rich motifs in the vicinity of m6A and ECT2 sites in the 3\u2019-UTR of AT1G23490 (ARF1). CS, crosslink sites; CSS, collapsed crosslink sites. (D) Key motifs analyzed in this study. From top to bottom: (1) motif logos for derived position weight matrices (PWMs); (2) normalized enrichment of motif locations across gene body; (3-4) total number of the relevant motif found at m6A-Nanopore* (3) or ECT2-iCLIP (4) sites according to gene body location. Gray lines indicate numbers found in a gene-body location-matched background set of sites of equivalent number; (5-6) distribution of the relevant motif relative to m6A-Nanopore* (5) or ECT2\u2013iCLIP (6) sites. Gray lines represent the distribution for the same gene-body location-matched set as derived in the panels above. * Parker et al., 2020; ** Shen et al., 2016; *** Wei et al., 2018.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Relative nucleotide frequencies for motifs of interest with potential sequence redundancies were estimated from windows around ECT2-iCLIP collapsed crosslink sites (CCS) and converted into PWMs that were subsequently used in FIMO to scan for motif matches genome wide. Plot illustrates score distribution for the motif derived from Wei et al., 2018, and vertical dotted line indicates chosen score cutoff. (B) Subset of motifs according to source. Left: examples of motifs inspired by Homer searches (left logo) and subsequent PWM used in the analysis (right logo). Right: examples of further motifs derived from other sources. Logo from the relevant paper is shown if the motif derives from literature, and representative examples of IGV-browser screenshots are shown otherwise (motifs are outlined; arrows mark As within DRACH/GGAU contexts; Np, Nanopore [Parker et al., 2020]). Subsequent PWMs are also indicated (right logos).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Motif logos represent all of the 48 derived motif position weight matrices considered in the current analysis (see Materials and methods and Figure 5\u2014figure supplement 1 for selection details). UPAC-IUB codes to define multiple nucleotide possibilities in one position are detailed below.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** From top to bottom: (1) motif logos for derived position weight matrices (PWMs); (2) normalized enrichment of motif locations across gene body; (3\u20135) total number of the relevant motif found at m6A-Nanopore* (3), m6A-miCLIP*, (4) or ECT2-iCLIP (5) sites according to gene body location. Gray lines indicate numbers found in a gene body location-matched background set of sites of equivalent number; (6 and 7) distribution of the relevant motif relative to m6A-Nanopore* (6) or ECT2\u2013iCLIP (7) sites. Gray lines represent the distribution for the same gene body location-matched set as derived in the panels above. RRACH shows a slightly higher enrichment over RRAC around m6A-Nanopore* sites, which is further increased in the more lenient version DRACH. Accordingly, there is also clear enrichment of URAC. On the contrary, there is no global enrichment of DRACG in m6A-Nanopore* datasets along the gene body, and only very modest around m6A-Nanopore* sites, highlighting the importance of the final H in DRACH. R = A/G, H = A/C/U, D = A/G/U. * Parker et al., 2020.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Enrichment of DRACH-like motifs containing additive amounts of U(/Y)s at the flanks until there is only U/Ys. Through the upstream U-additions, transition forms like URURU/UGUAY/YUGUM are included. GGAU with addition of one U upstream is also shown on the right side of the figure. From top panel to bottom: (1) motif logos for derived position weight matrices (PWMs); (2-4) distribution of the relevant motif relative to m6A-Nanopore (Parker et al., 2020) (2, 3) or ECT2\u2013iCLIP crosslink sites (CS) (4). Gray lines represent the distribution for gene body location-matched background set of sites of equivalent number; (5) total number of the relevant motif found at ECT2-iCLIP sites according to gene body location. Gray lines indicate numbers found in the same gene body location-matched background set.\n\n### DRACH, GGAU, and U/Y-rich motifs are the most enriched around m6A/ECT2 sites\n\nThe 5\u2032 shift observed for iCLIP and miCLIP sites relative to Nanopore sites might be explained by a higher occurrence of uridines upstream of m6A sites, a particularly interesting possibility given the numerous reports of U-rich motifs enriched around m6A sites in plants (Li et al., 2014a; Anderson et al., 2018; Miao et al., 2020; Zhang et al., 2019; Zhou et al., 2019; Luo et al., 2020) and animals (Patil et al., 2016). To investigate the sequence composition around m6A and ECT2 sites, we first performed exhaustive unbiased de novo motif searches using Homer (Heinz et al., 2010; Figure 5\u2014figure supplement 1) and extracted all candidate motifs, including the m6A consensus motif RRACH, as well as GGAU (Anderson et al., 2018), URUAY (Wei et al., 2018), and several other U-rich sequences. Combined with manually derived candidate motifs (Figure 5\u2014figure supplement 1B), we then calculated position weight matrices (PWMs) for a final set of 48 motifs and scanned for their occurrences genome-wide using FIMO (Grant et al., 2011; Figure 5\u2014figure supplements 1 and 2). This allowed us to determine three key properties. First, the global enrichment of the motifs at locations across the gene body. Second, the total count of occurrences of each motif at m6A sites and ECT2-iCLIP crosslink sites compared to a set of sites in non-target mRNAs matching the location within gene bodies of m6A/ECT2-iCLIP sites (expected background). Third, the distribution of the motifs relative to m6A and ECT2 iCLIP sites. The results of this systematic analysis (Supplementary file 3) were used to select those motifs with a more prominent enrichment at or around m6A and ECT2 sites (Figure 5D). This approach defined two major categories of motifs of outstanding interest, RRACH-like and GGAU on the one side, and a variety of U/Y-rich motifs on the other. Figure 5D shows a minimal selection of such motifs, while a more comprehensive compilation is displayed in Figure 5\u2014figure supplements 3 and 4. Not surprisingly, RRACH-like motifs were the most highly enriched at m6A sites and showed a clear enrichment immediately downstream of ECT2 crosslink sites in our analyses, with the degenerate variant DRACH being the most frequently observed (Figure 5D, Figure 5\u2014figure supplement 3). Motifs containing GGAU behaved similarly to DRACH, with a sharp enrichment exactly at m6A sites and mild enrichment downstream of ECT2 peaks (Figure 5D), supporting a previous suggestion of GGAU as an alternative methylation site (Anderson et al., 2018). The possible roles of the U/Y-rich motifs in m6A deposition and ECT2 binding are analyzed in the following sections.\n\n### Neighboring U/Ys result in enriched RRACH- and GGAU-derived motifs\n\nWe first noticed that several motifs retrieved around ECT2 crosslink sites by Homer constituted extended versions of DRACH/GGAU with Us upstream (e.g., UGAAC/UGGAU) or remnants of DRACH with U/Cs (Ys) downstream (e.g., ACUCU). To test whether these motifs are indeed located adjacent to m6A, we examined their distribution and enrichment around ECT2 and m6A sites. The distributions showed a clear enrichment at m6A positions with a shift in the direction of the U/Y-extension (see Figure 5D for ACUCU and Figure 5\u2014figure supplement 4 for others). An enrichment over location-matched background sites close to ECT2-iCLIP sites was also apparent (see Figure 5D for ACUCU and Figure 5\u2014figure supplement 4 for others), further supporting that ECT2 preferentially crosslinks to uridines located in the immediate vicinity of DRACH (/GGAU). Thus, several enriched motifs around ECT2 crosslink sites are DRACH/GGAU-derived, and their detection in unbiased searches simply reflects a tendency of methylated DRACH/GGAU sites to be flanked by U/Ys.\n\n### Nature of U/Y-rich motifs more distant from m6A sites\n\nU/R-rich motifs without traces of adjacent DRACH (e.g., YUGUM, URUAY, URURU) showed a characteristic enrichment around, but depletion at, m6A sites. For some motifs, the enrichment was more pronounced 5\u2032 than 3\u2032 to m6A sites (see Figure 5D for URUAY and Figure 5\u2014figure supplement 4 for others). The distance between the site of maximal motif occurrence and the m6A site roughly coincided with the shift observed in ECT2 crosslink sites relative to m6A (Figure 5A, upper panel). Accordingly, these motifs were enriched exactly at ECT2 crosslink sites (see Figure 5D for URUAY and Figure 5\u2014figure supplement 4 for others), suggesting that they may constitute additional m6A-independent sites of interaction with ECT2. We also observed that the 3\u2032 enrichment of YYYYY was asymmetric and closer to m6A than that of UUUUU/URURU/URUAY (Figure 5\u2014figure supplement 4, second row from the top), indicating a preference for hetero-oligopyrimidine tracts immediately downstream the m6A site, as suggested by the 3\u2032-enrichment of DRACUCU-type motifs as described above.\n\nTaken together, these results suggest that N6-adenosine methylation preferentially occurs in DRACH/GGAU sequences surrounded by stretches of pyrimidines, with a preference for YYYYY (e.g., CUCU) immediately downstream, URURU (including URUAY) immediately upstream, and UUUUU/UNUNU slightly further away in both directions. The enrichment of ECT2 crosslink sites at these motifs, and the fact that the m6A-binding-deficient mutant of ECT2 (W464A) crosslinks preferentially to 3\u2032-UTRs through its N-terminal IDR, indicates IDR-mediated binding to U/R- and Y-rich motifs around m6A.\n\n### DRACH/GGAU motifs are determinants of m6A deposition at the site, while flanking U(/Y)-rich motifs are indicative of m6A presence and ECT2 binding\n\nSince our analysis thus far uncovered several motifs of potential importance for m6A deposition and ECT2 binding, we employed machine learning to distinguish m6A and ECT2 iCLIP sites from random location-matched background sites using motif-based features. Importantly, the underlying classification model includes all motif features within the same model, allowing an evaluation of the importance of the motifs relative to each other. We used as features the number of matches to each of the 48 motifs (Figure 5\u2014figure supplement 2) in three distinct regions relative to the methylated site according to Nanopore sequencing (Parker et al., 2020), defined as position 0: \u2018at\u2019 [\u201310 nt; +10 nt], \u2018down\u2019 [\u201350 nt; \u201310 nt], or \u2018up\u2019 [+ 10 nt; +50 nt] (Figure 6A). The model involving all motifs could successfully distinguish the methylated sites from the background as indicated by an area under the receiver operating characteristic (ROC) curve (true positive rate versus false positive rate, area under the curve [AUC]) of 0.93, and even a reduced model incorporating only the top 10 features from the full model classified sites largely correctly (AUC = 0.86; Figure 6\u2014figure supplement 1). The top 16 features ordered by importance from the full model confirmed that RRAC/DRACH or GGAU at the site was indicative of the presence of m6A (Figure 6B). Interestingly, U/Y-rich sequences (UNUNU and YYYYY in particular) flanking the site were also strongly indicative (Figure 6B). Some motifs showed a skew in their feature importance score, with UNUNU and YUGUM showing a preference to be upstream, and YYYYY downstream (Figure 6B), thus corroborating our previous observations (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig6-v2.jpg)\n\n**Figure 6.:** (A) Diagram representing the strategy for machine learning model trained to distinguish m6A-Nanopore* sites from their respective gene-body location matched background sets. (B) Bar plots showing top 16 motif feature importance scores from the m6A model, ordered from left to right by importance. The dotted rectangle highlights motifs with outstanding importance compared to the rest. (C) Cartoon representing the most important motifs found at and around m6A sites. UPAC-IUB codes to define multiple nucleotide possibilites in one position are indicated. (D) Machine learning model trained to distinguish between m6A sites with and without ECT2 crosslink sites, and the resulting bar plot showing top 16 motif feature importance scores. Nucleotide distances for intervals, order and dotted box are as in A/B. * Parker et al., 2020.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** ROC curves showing model performance of random forest (gradient boosting) trained models, for distinguishing either m6A-Nanopore* sites from their respective random location-matched background sites (left), or m6A-Nanopore* sites with and without ECT2-iCLIP crosslink sites (right), with overall performance represented by area under the curve (AUC) values. \u2018All motifs\u2019 refers to the full set of 48 motifs (at, upstream, or downstream), \u2018Top 10\u2019 to the top 10 most important features from the full model, and \u2018UNUNU + DRACH\u2019 includes features derived only from UNUNU or DRACH motifs. *Parker et al., 2020.\n\nWe used a similar modeling approach to identify non-m6A determinants of ECT2 binding, in this case comparing m6A sites within 10 nt distance of ECT2-iCLIP sites to m6A sites without ECT2-iCLIP sites nearby (AUC = 0.94, and AUC = 0.84 using only the top 10 features, Figure 6\u2014figure supplement 1). In agreement with previous observations, this model showed flanking U/Y-rich sequences as the main determinants for ECT2 crosslinking (Figure 6D).\n\n### The U(-R) paradox: URURU-like sequences around m6A sites repel ECT2 binding, while U-rich sequences upstream enhance its crosslinking\n\nTo investigate the idea of URURU-like motifs as additional sites of ECT2 binding upstream of the m6A-YTH interaction site, we split Nanopore-m6A sites according to two criteria: (1) whether they occur in ECT2-target transcripts (both permissive and stringent sets analyzed separately), and (2) for ECT2 targets, whether there is an ECT2 crosslink site within 25 nt of the m6A site (\u2018near\u2019) or not (\u2018far\u2019). Although there was no obvious differences between these categories for most of the motifs (Supplementary file 3, page 2), some U-rich sequences displayed distinctive features (Figure 7A, Figure 7\u2014figure supplement 1) that can be summarized as follows. If a transcript has m6A and ECT2 sites in close proximity, it is (1) more likely to have UNUNU/UUUUU/YYYYY sequences upstream of the m6A site than targets with distantly located ECT2-binding sites or than non-ECT2 targets; (2) less likely to have UUUUU/URURU sequences downstream of the m6A site, possibly because ECT2 prefers CUCU-like sequences downstream; and (3) less likely to have URURU/URUAY-like motifs upstream of the m6A site. The latter observation is striking because for the specific subset of ECT2-bound m6A sites with URURU/URUAY upstream of m6A, these sequences tend to crosslink to ECT2, as seen by the enrichment spike at ECT2 crosslink sites (Figure 5D, Figure 7\u2014figure supplement 1, bottom panels). Although these two results seem contradictory at first glance, they may be reconciled by a model in which a URURU/URUAY-binding protein would compete with ECT2 for binding adjacent to m6A. If that protein is absent, ECT2 may bind to the site, potentially via its IDR, to stabilize the low-affinity YTH-m6A interaction and crosslink efficiently due to the U-content. Conversely, if occupied by the alternative interacting protein, the site might repel ECT2 (see Discussion and Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig7-v2.jpg)\n\n**Figure 7.:** (A) Top panels: Distance-based enrichment of motifs at and around m6A-Nanopore (Np, Parker et al., 2020) sites, plotted as motif counts per 1000 m6A sites (purple lines). Gray lines indicate the enrichment in a location-matched background set as in Figure 5D. Middle and bottom panels: sites are split according to whether they sit on ECT2 targets (middle), or to distance from the nearest ECT2 crosslink site (for ECT2-iCLIP targets only) (bottom). Additional motifs are shown in the Figure 7\u2014figure supplement 1. (B) Cartoon illustrating the ECT2 IDR RNA-binding and competition hypotheses. (C) Normalized density of ECT2 iCLIP crosslink sites identified in the libraries corresponding to the 110- and 55-kDa bands (Figure 3B) at and up to +/-200 nt of m6A-Nanopore sites. (D) Motifs per 1000 ECT2-iCLIP crosslink sites (CS) split according to whether they are found in libraries from both 110-kDa and 55-kDa bands (IDR-independent\u2019), or exclusively (distance > 10 nt) in the 110-kDa band (\u2019IDR-dependent\u2019). Gray lines indicate the enrichment in a location-matched background set as in Figure 5D. Additional motifs are shown in Figure 7\u2014figure supplement 2 and Supplementary file 3.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** From top to bottom: (1) motif logos for derived position weight matrices (PWMs); (2) distance-based enrichment of motifs at and around m6A-Nanopore* sites, plotted as motif counts per 1000 m6A sites (purple lines). Gray lines indicate the enrichment in a location-matched background set as in Figure 5D; (3) same as in (2) with sites split according to whether they sit on ECT2 targets; (4) same as in (2) with sites split according to the distance from the nearest ECT2 crosslink site (for ECT2-iCLIP targets only); (5) motif counts per 1000 iCLIP-binding sites, as a function of distance from the iCLIP position, showing all sites against matched background sites (gray lines). Motifs are ordered according to the different relative enrichment upstream or downstream m6A sites according to ECT2 binding (see text below panels 3 and 4). * Parker et al., 2020.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72375/elife-72375-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Proportion of ECT2-iCLIP sites at each nucleotide for the 110kDa and 55kDa bands. (B) From top to bottom: (1) motif logos for derived position weight matrices (PWMs); (2) distribution of motifs per 1000 ECT2-iCLIP crosslink sites (red) or matched-locations background (gray), \u00b175 nt of the site; (3) motifs per 1000 ECT2-iCLIP crosslink sites, split according to whether they are found in libraries from both 110kDa and 55kDa bands (\u2019IDR-independent\u2019) or exclusively (distance >10 nt) in the 110kDa band (\u2019IDR-dependent\u2019).\n\n### The N-terminal IDR of ECT2 is involved in preferential crosslinking at U-rich sequences and in URURU-repulsion immediately upstream m6A sites\n\nWe reasoned that insights into contacts between ECT2 and mRNA may be gained by analysis of the iCLIP libraries prepared with the \u2018YTH-mCherry\u2019 truncation devoid of the N-terminal IDR (\u201855-kDa band\u2019) compared to the full-length ECT2-mCherry (\u2018110-kDa band\u2019) (Figure 3, Figure 3\u2014figure supplements 2\u20134). Initial inspection of the distribution of ECT2 peaks relative to Nanopore-m6A sites showed that the 5\u2032\u20133\u2032 asymmetry observed with full-length ECT2 was largely reduced with the truncated protein (Figure 7C), as was the bias towards uridines (Figure 7\u2014figure supplement 2A). These observations suggest that the IDR indeed is implicated in binding to U-rich regions upstream of m6A. We next split the full-length ECT2 iCLIP peaks according to whether they are present in libraries from both full-length and truncated forms (\u2018IDR-independent\u2019) or exclusively in the full-length (\u2018IDR-dependent\u2019) (distance >10 nt) and plotted the enrichment of the studied motifs relative to the crosslink site (Figure 7D, Figure 7\u2014figure supplement 2B; Supplementary file 3, page 2). UUUUUU/UNUNU-like motifs were more enriched at and immediately upstream of IDR-dependent crosslink sites relative to the IDR-independent ones, supporting preferential crosslinking of the IDR to Us in this region. Remarkably, the exact opposite was true for URURU/URUAY motifs that showed modest depletion 5\u2032 to IDR-dependent crosslink sites relative to their IDR-independent counterparts (Figure 7D). These observations are consistent with a model of an RNA-binding protein competing with the ECT2 IDR for interaction with upstream URURU/URUAY motifs (Figure 7B).\n\n## Discussion\n\n### Methodology for mapping protein-RNA interactions in plants\n\nOur work establishes experimental and computational approaches to implement HyperTRIBE for unbiased and sensitive mapping of direct targets of RNA-binding proteins in plants. Two points are particularly relevant in this regard. First, the examples studied here show that stable transgenic expression of DmADARcd does not lead to detrimental phenotypes, perhaps because of the generally low editing proportions obtained in vivo. Second, the rigorous statistical approach developed to call editing sites makes HyperTRIBE powerful, despite the low editing proportions observed. We also note that ECT2 is well suited to verify that HyperTRIBE mostly recovers directly bound target RNAs because of the possibility to cross-reference the data with independently obtained m6A maps (Parker et al., 2020). The combination of iCLIP and HyperTRIBE for unbiased mapping of targets proved particularly attractive for at least two reasons. First, the convergence on overlapping target sets by orthogonal methods strengthens the confidence that the identified targets are biologically meaningful. Second, HyperTRIBE, especially with the novel computational approach for calling of editing sites (Rennie et al., 2021), offers higher sensitivity than iCLIP, while iCLIP is unmatched in providing information on binding sites within target RNAs. It is possible that better positional information on binding sites may be obtained from HyperTRIBE data using maximal editing proportions rather than statistical significance as the parameter to call editing sites. Indeed, recent work on the use of HyperTRIBE to identify targets of the RNA-binding protein MUSASHI-2 (MSI-2) in leukemic stem cells recovered the known MSI-2-binding site as enriched around editing sites in targets (Nguyen et al., 2020). Nonetheless, our data shows that highly edited sites match the ADAR substrate consensus site better than lowly edited sites, suggesting that site proximity to ADAR is not the only determinant of editing proportions. Finally, our work also clearly indicates that FA-CLIP, now used in at least two studies involving YTH domain proteins (Wei et al., 2018; Song et al., 2021), is not a recommendable technique as it recovers many false positives and fails to include many genuine targets. Thus, with the possible exception of cases in which evidence for indirect association is specifically in demand, such as the recent study in human cells of mixed tailing of viral RNA by the cellular terminal nucleotidyl transferase TENT4 (Kim et al., 2020), FA-CLIP should not be used for identification of RNAs associating with a particular RNA-binding protein of interest.\n\n### Core elements in m6A writing: DRACH, GGAU, and U/Y-rich motifs\n\nOur analyses of motif enrichments around m6A and ECT2 crosslink sites clarify roles of previously reported motifs and uncover new motifs of importance in m6A writing and ECT2 binding. Since m6A is a prerequisite for ECT2 binding, any analysis of determinants of ECT2 binding must consider determinants of N6-adenosine methylation separately. Three conclusions stand out from our analysis in this regard. First, the major N6-adenosine methylation site is DRACH, consistent with conclusions from multiple other studies. Second, GGAU is a minor N6-adenosine methylation site, as seen by its enrichment directly at m6A sites. Third, m6A occurs in DRACH/GGAU islands embedded in U-rich regions. Such U-rich regions around m6A sites emerged from sorting of methylated from non-methylated transcripts by machine learning as being of similar importance for recognition of m6A-containing transcripts from sequence features as DRACH and GGAU at m6A sites, suggesting their implication in MTA/MTB-catalyzed adenosine methylation (Figure 6C). This, in turn, may also explain the pronounced 3\u2032-UTR bias of m6A occurrence as extensive poly-U and poly-pyrimidine tracts are rare in coding regions (Figure 5D, second row on the right-most column; Supplementary file 3, page 1). As a special case in this context, our analyses suggest a simple explanation for the tendency of m6A to occur at stop codons. UAA and UGA correspond to DRA, increasing the frequency of occurrence of DRACH directly at stop codons (Figure 5D, second row on the left-most column), many of which have adjacent U-rich elements in the 3\u2032-UTRs. We note that the observed pattern is in agreement with a role of the poly(U)-interacting proteins RBM15A/B associated with the mammalian methyltransferase complex in guiding methylation (Patil et al., 2016). Whether a similar mechanism operates in plants, potentially via the distant RBM15A/B homologue FPA (Arribas-Hern\u00e1ndez and Brodersen, 2020), remains to be investigated.\n\n### Reading of DR(m6A)CH in 3\u2032-UTRs of target mRNAs by ECT2\n\nIt is a major conclusion of the present work that ECT2 binds to m6A predominantly in the DR(m6A)CH sequence context in vivo, consistent with reading of m6A written by the conserved nuclear MTA/MTB methyltransferase. This key conclusion refutes the claim by Wei et al., 2018 that ECT2 binds to the supposedly plant-specific m6A-containing sequence motif URU(m6A)Y, and it thereby reconciles knowledge on m6A-YTHDF axes in plants specifically and in eukaryotes more broadly. The phenotypic similarity of plants defective in MTA/MTB writer and ECT2/ECT3/ECT4 reader function is now coherent with the locations of MTA/MTB-written m6A and ECT2-binding sites transcriptome-wide, and it is now clear that plants do not constitute an exception to the general biochemical framework for eukaryotic m6A-YTHDF function in which YTHDF proteins read the m6A signal written by the MTA/MTB methyltransferase.\n\n### The role of U-rich motifs 5\u2032 to m6A sites in ECT2 binding: direct interaction of the IDR of ECT2 with mRNA\n\nThe pronounced protease sensitivity of IDRs, leading to limited proteolysis of ECT2 upon cell lysis after in vivo crosslinking, allowed us to extract information on the mode of ECT2-RNA binding from different observations, all converging on the conclusion that the IDR of ECT2 participates in RNA binding. First, RNA complexes with YTH-mCherry were 5\u2032-labeled by polynucleotide kinase much more efficiently than RNA complexes with full-length ECT2-mCherry, indicating that the IDR limits accessibility to the 5\u2032 of bound mRNAs. Second, in contrast to the m6A-binding-deficient YTHW464A-mCherry truncation, the full-length ECT2W464A-mCherry mutant retained an enrichment of crosslink sites in 3\u2032-UTRs. Third, crosslinks specific to the IDR (i.e., observed only with full-length ECT2-mCherry-RNA complexes, but not with YTH-Cherry-RNA complexes), could be assigned and have two notable properties. They are mainly 5\u2032 to m6A sites, and thereby cause a conspicuously asymmetric distribution of ECT2 crosslink sites around m6A sites, not seen with crosslinks to the YTH-mCherry fragment. In addition, the IDR-specific crosslinks are specifically enriched in U-rich elements of the type UUUUUU and UNUNU immediately upstream. Taken together, these observations suggest that the IDR of ECT2 participates in locating ECT2 to 3\u2032-UTRs by association with U-rich elements. Thus, ECT2, and perhaps YTHDF proteins more generally given their highly similar YTH domains, appears to bind RNA through multivalent interactions among which the YTH domain is responsible for m6A binding, and the IDR is responsible for interaction with adjacent elements. We note that the notion of RNA interaction by IDRs has precedent (Corley et al., 2020), is consistent with the modest affinity of isolated YTHDF domains for m6A-containing oligonucleotides (Patil et al., 2018), and is reminiscent of the recent demonstration that transcription factors use their globular DNA-binding domains to recognize core sequence elements of promoters, and their IDRs to provide additional DNA contacts, contributing to specificity (Brodsky et al., 2020). Similarly, it is possible that diverging IDRs among YTHDF paralogs could confer target specificity via binding to distinct motifs in the vicinity of m6A sites, such that specific YTHDF-target mRNA repertoires could exist even for YTHDF proteins coexpressed in the same cells. Finally, we stress that although our data point to an important role of the IDR in RNA binding, it does not in any way suggest that this is the only function of the IDR, and protein-protein interactions involving the IDR are likely to be key to understanding YTHDF function molecularly.\n\n### URUAY as sites of competitive interaction between ECT2 and other RNA-binding proteins\n\nDespite the conclusions that URUAY does not contain m6A in Arabidopsis, and that ECT2 binds to DR(m6A)CH, our detailed analysis of sequence motifs enriched around m6A and ECT2 iCLIP crosslink sites shows that additional motifs, including URUAY, are likely to be implicated in m6A reading by ECT2, even if not directly. In contrast to other m6A-proximal, pyrimidine-rich sequences (e.g., UNUNU, YYYYY) that may be of importance for both m6A writing and ECT2 binding, URUAY appears to have ties more specifically to ECT2 binding thanks to three properties. (1) When present 5\u2032 to m6A sites, it crosslinks to ECT2, suggesting that some part of the protein can be in contact with URUAY. (2) URUAY is more enriched close to m6A sites for which there is no evidence of ECT2 binding, suggesting that it weakens ECT2 binding. This latter point is also consistent with the distinction of ECT2-bound from non-ECT2-bound m6A sites by machine learning that did not find URUAY to be of importance for ECT2-bound sites. (3) The URUAY enrichment 5\u2032 to ECT2 crosslink sites is observed only when crosslinks to both full-length protein and the YTH-mCherry fragment are considered (IDR-independent), but disappears when crosslinks specific to the full-length protein (IDR-dependent) are analyzed. Although these observations may be explained by multiple scenarios, we find a simple, yet at present speculative, model attractive: URUAY may be a site of competition between the IDR of ECT2 and another, as yet unknown, RNA-binding protein. Such a competing factor could in theory be another YTHDF protein using higher-affinity IDR-URUAY contacts than ECT2 to achieve competitive binding. Many other possibilities exist, however. For example, it is intriguing that URUAY resembles part of a Pumilio-binding site (Hafner et al., 2010; Huh et al., 2013) as it raises the tantalizing possibility of functional interaction between YTHDF and Pumilio proteins. In any event, the functional dissection of the URUAY element in m6A reading now constitutes a subject of major importance, emphasized by the broad conservation of its enrichment around m6A sites across multiple plant species, including rice (Li et al., 2014a; Zhang et al., 2019), maize (Luo et al., 2020; Miao et al., 2020), tomato (Zhou et al., 2019), and Arabidopsis (Miao et al., 2020).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source orreference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td>ECT2</td>\n      <td>TAIR10</td>\n      <td>AT3G13460</td>\n      <td>EVOLUTIONARILY CONSERVED C-TERMINAL REGION 2</td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td>ECT3</td>\n      <td>TAIR10</td>\n      <td>AT5G61020</td>\n      <td>EVOLUTIONARILY CONSERVED C-TERMINAL REGION 3</td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td>ECT4</td>\n      <td>TAIR10</td>\n      <td>AT1G55500</td>\n      <td>EVOLUTIONARILY CONSERVED C-TERMINAL REGION 4</td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>ADAR Isoform N</td>\n      <td>Genebank, FlyBase, NCBI</td>\n      <td>CG12598 NM_001297862</td>\n      <td>Adenosine deaminase acting on RNA</td>\n    </tr>\n    <tr>\n      <td>Strain (Escherichia coli)</td>\n      <td>DH5\u03b1</td>\n      <td>NEB</td>\n      <td>Cat. # 18258012</td>\n      <td>MAX Efficiency DH5\u03b1 Competent Cells</td>\n    </tr>\n    <tr>\n      <td>Strain (Agrobacterium tumefaciens)</td>\n      <td>GV3101</td>\n      <td>Koncz and Schell, 1986</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>SALK_002225 C (ect2-1)</td>\n      <td>NASC</td>\n      <td>N657472 N2110120</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>te234 (ect2-1/ect3-1/ect4-2)</td>\n      <td>Arribas-Hern\u00e1ndez et al., 2018</td>\n      <td>N2110132</td>\n      <td>Donated to NASC and ABRC</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>ECT2pro:FLAG-DmADARE488Qcd-ECT2ter</td>\n      <td>This paper (see Methods)</td>\n      <td></td>\n      <td>Seed requests to pbrodersen@bio.ku.dk</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>ect2-1/ECT2pro:ECT2-FLAG-DmADARE488Qcd-ECT2ter</td>\n      <td>This paper (see Methods)</td>\n      <td></td>\n      <td>Seed requests to pbrodersen@bio.ku.dk</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>te234/ECT2pro:ECT2-FLAG-DmADARE488Qcd-ECT2ter</td>\n      <td>This paper (see Methods)</td>\n      <td></td>\n      <td>Seed requests to pbrodersen@bio.ku.dk</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>ect2-1/ECT2pro:ECT2-mCherry-ECT2ter</td>\n      <td>Arribas-Hern\u00e1ndez et al., 2018; Arribas-Hern\u00e1ndez et al., 2020</td>\n      <td>N2110839 N2110840</td>\n      <td>Donated to NASC and ABRC</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>ect2-1/ECT2pro:ECT2W464A-mCherry-ECT2ter</td>\n      <td>Arribas-Hern\u00e1ndez et al., 2018; Arribas-Hern\u00e1ndez et al., 2020</td>\n      <td>N2110841 N2110842</td>\n      <td>Donated to NASC and ABRC</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>ect2\u22121/ ECT2pro:3xHA-ECT2-ECT2ter</td>\n      <td>This paper (see Methods)</td>\n      <td></td>\n      <td>Seed requests to pbrodersen@bio.ku.dk</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. thaliana)</td>\n      <td>ect2\u22121/ ECT2pro:3xHA-ECT2W464A-ECT2ter</td>\n      <td>This paper (see Methods)</td>\n      <td></td>\n      <td>Seed requests to pbrodersen@bio.ku.dk</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Canton-S</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC:64,349</td>\n      <td>Used to extract RNA and produce cDNA for cloning</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-FLAG (mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>A8592</td>\n      <td>Used for WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mCherry (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab183628</td>\n      <td>Used for WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-HA (mouse monoclonal)</td>\n      <td>Abnova</td>\n      <td>12CA5</td>\n      <td>Used for WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>RFP-Trap RFP Nanobody/VHH coupled to agarose (recombinant, monoclonal)</td>\n      <td>ChromoTek</td>\n      <td>Cat. # rta-20</td>\n      <td>Used for IP (20 \u03bcL of beads for 4 g of tissue in 6 mL of buffer)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA Affinity Matrix from IgG1 3 F10 (rat, monoclonal)</td>\n      <td>Roche</td>\n      <td>Cat. # 11815016001</td>\n      <td>Used for IP (10 \u03bcL of beads for 500 mg of tissue in 750 \u03bcL of buffer)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAMBIA3300U (plasmid)</td>\n      <td>Nour-Eldin et al., 2006</td>\n      <td></td>\n      <td>Used for cloning</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>pGEM -T Easy (plasmid and cloning kit)</td>\n      <td>Promega</td>\n      <td>Cat. # A1360</td>\n      <td>Used for cloning</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KAPAHiFi HotStart Uracil + Kit</td>\n      <td>Roche</td>\n      <td>Cat. # 7959079001</td>\n      <td>Used for cloning</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>AccuPrime Supermix I</td>\n      <td>Invitrogen</td>\n      <td>Cat. # 12342\u2013010</td>\n      <td>Used for iCLIP library preparation</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Uracil-DNA Glycosylase (USER enzyme)</td>\n      <td>NEB</td>\n      <td>Cat. # M5505L</td>\n      <td>Used for cloning</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Turbo DNase</td>\n      <td>Ambion</td>\n      <td>Cat. # AM2238</td>\n      <td>Used for CLIP</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RNase I</td>\n      <td>Ambion</td>\n      <td>Cat. # AM2294</td>\n      <td>Used for CLIP</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>T4 Polynucleotide Kinase (PNK)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat. # EK0031</td>\n      <td>Used for iCLIP library preparation</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>T4 RNA Ligase I, High Concentration</td>\n      <td>NEB</td>\n      <td>Cat. # M0437M</td>\n      <td>Used for iCLIP library preparation</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Proteinase K</td>\n      <td>Roche</td>\n      <td>Cat. # 3115887001</td>\n      <td>Used for iCLIP library preparation</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Superscript III Reverse Transcriptase</td>\n      <td>Invitrogen</td>\n      <td>Cat. # 18080\u2013093</td>\n      <td>Used for iCLIP library preparation</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CircLigase II ssDNA Ligase</td>\n      <td>Epicentre</td>\n      <td>Lucigen Cat. # CL9021K</td>\n      <td>Used for iCLIP library preparation</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>BamHI (Fast Digest)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat. # FD0054</td>\n      <td>Used for iCLIP library preparation</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>cOmplete protease inhibitor cocktail</td>\n      <td>Roche</td>\n      <td>Cat. # 11697498001</td>\n      <td>Used for CLIP</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Protease inhibitor cocktail for plant cell extracts</td>\n      <td>Sigma</td>\n      <td>Cat. # P9599</td>\n      <td>Used for CLIP</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glufosinate-ammonium (PESTANAL)</td>\n      <td>Sigma</td>\n      <td>Cat. # 45520 77182-82-2</td>\n      <td>Used for selection of transgenic lines</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Pre-adenylated adapter for iCLIP (3\u2019-RNA linker)</td>\n      <td>Huppertz et al., 2014</td>\n      <td>L3-App</td>\n      <td>rAppAGATCGGAAGAGCGGTTCAG/ddC/</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>iCLIP RT-primers (Two-part cleavable DNA adapters complementary to the 3\u2019 RNA linker)</td>\n      <td>Huppertz et al., 2014</td>\n      <td>Rt1clip-Rt12clip</td>\n      <td>Used for iCLIP library preparation (seq: )</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>USER and site-directed mutagenesis primers</td>\n      <td>This paper (Appendix)</td>\n      <td></td>\n      <td>Used for cloning. Sequences are in the Appendix</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Primers for detection of point mutations</td>\n      <td>This paper (Appendix)</td>\n      <td></td>\n      <td>Used for cloning. Sequences are in the Appendix</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R</td>\n      <td>https://www.R-project.org/</td>\n      <td></td>\n      <td>Used for data analyses</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>hyperTRIBER</td>\n      <td>Rennie et al., 2021; https://github.com/sarah-ku/hyperTRIBER; https://github.com/sarah-ku/targets_arabidopsis</td>\n      <td></td>\n      <td>Used for calling significant ADAR-edited sites. Contact: sarah@binf.ku.dk</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>trimmomatic</td>\n      <td>Bolger et al., 2014</td>\n      <td></td>\n      <td>Used for trimming RNAseq-reads</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR</td>\n      <td>Dobin et al., 2013</td>\n      <td></td>\n      <td>Used for mapping RNAseq-reads</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Salmon</td>\n      <td>Patro et al., 2017</td>\n      <td></td>\n      <td>Used for transcript quantification</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SAMtools mpileup</td>\n      <td>Li et al., 2009</td>\n      <td></td>\n      <td>Used to count nt-mismatches</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>rtracklayer</td>\n      <td>Lawrence et al., 2009</td>\n      <td></td>\n      <td>Used to retrieve sequences</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ggseqlogo</td>\n      <td>Wagih, 2017</td>\n      <td></td>\n      <td>Used to generate motif logos</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Hmisc</td>\n      <td>https://github.com/harrelfe/Hmisc/</td>\n      <td></td>\n      <td>Used for expression-based binning</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>fastqc</td>\n      <td>https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>\n      <td></td>\n      <td>Used for quality control</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cutadapt</td>\n      <td>Martin, 2011</td>\n      <td></td>\n      <td>Used for trimming of iCLIP reads</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>flexbar</td>\n      <td>Roehr et al., 2017</td>\n      <td></td>\n      <td>Used for demultiplexing iCLIP reads</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PureCLIP</td>\n      <td>Krakau et al., 2017</td>\n      <td></td>\n      <td>Used for calling iCLIP peaks</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GenomicRanges</td>\n      <td>Lawrence et al., 2013</td>\n      <td></td>\n      <td>Used to retrieve short sequences</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>\u2018Distributions of motifs per 1,000 sites over distance\u2019</td>\n      <td>This paper https://github.com/sarah-ku/targets_arabidopsis</td>\n      <td></td>\n      <td>Used to calculate motif distributions around m6A/iCLIP. Contact: sarah@binf.ku.dk</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ggplot2</td>\n      <td>https://ggplot2.tidyverse.org</td>\n      <td></td>\n      <td>Used to generate plots</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>bedtools</td>\n      <td>Dale et al., 2011; Quinlan and Hall, 2010</td>\n      <td></td>\n      <td>Used to filter and clean iCLIP data</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Homer</td>\n      <td>Heinz et al., 2010</td>\n      <td></td>\n      <td>Used for de novo motif discovery</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIMO</td>\n      <td>Grant et al., 2011</td>\n      <td></td>\n      <td>Used to detect motif occurrences</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>gbm</td>\n      <td>https://github.com/gbm-developers/gbm</td>\n      <td></td>\n      <td>Used for random forest analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pROC</td>\n      <td>Robin et al., 2011</td>\n      <td></td>\n      <td>Used to estimate predictive score of RF</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IGV (Integrative Genomics Viewer)</td>\n      <td>Robinson et al., 2011</td>\n      <td></td>\n      <td>Used to show genomic data</td>\n    </tr>\n  </tbody>\n</table>\n\nAll data analyses were carried out using TAIR 10 as the reference genome and Araport11 as the reference transcriptome. Unless otherwise stated, data analyses were performed in R (https://www.R-project.org/) and plots generated using either base R, IGV (for genomic data) (Robinson et al., 2011), or ggplot2 (https://ggplot2.tidyverse.org).\n\n### Definitions of experiment, biological replicates, and technical replicates\n\nWe use the term \u2018biological replicate\u2019 in the following way: plants were grown at the same time, under the same conditions, but in separate plates. Each sample replicate contains pools of seedlings prepared in such a way that no two replicates contain seedlings grown on the same plates. This sampling ensures that plate-to-plate variation in growth conditions, if any, will have an effect on measurements of gene expression within a single genotype, and hence minimize the risk that any differences due to such variation are called as significant in comparisons between genotypes. \u2018Technical replicates\u2019 are understood to be independently conducted measurements using the same technique on the same biological material (e.g., on one biological replicate as defined above). Technical replicates were not carried out in this study, and the term \u2018replicate\u2019 refers to biological replicate as defined above. In our definition, an \u2018experiment\u2019 results in generation and comparison of measurements arising from multiple biological replicates of different biological entities, in the present case often Arabidopsis seedlings differing in genotype with respect to the genes ECT2, ECT3, and ECT4. Thus, repetition of an experiment in our definition entails generation and analysis of the required biological replicates at different points in time.\n\n### Plant material\n\nAll lines used in this study are in the Arabidopsis thaliana Col-0 ecotype. The mutant alleles or their combinations \u2013 ect2-1 (SALK_002225) (Arribas-Hern\u00e1ndez et al., 2018; Scutenaire et al., 2018; Wei et al., 2018), ect3-1 (SALKseq_63401), ect4-2 (GK_241H02), and ect2-1/ect3-1/ect4-2 (te234) (Arribas-Hern\u00e1ndez et al., 2018) \u2013 have been previously described. The transgenic lines expressing ECT2pro:ECT2-mCherry-ECT2ter, ECT2pro:ECT2W464A-mCherry-ECT2ter, ECT2pro:3xHA-ECT2-ECT2ter, or ECT2pro:3xHA-ECT2W464A-ECT2ter in the ect2-1 background have also been described or generated by floral dip in additional mutant backgrounds using the same plasmids and methodology (Arribas-Hern\u00e1ndez et al., 2018; Arribas-Hern\u00e1ndez et al., 2020).\n\n### Growth conditions\n\nSeeds were surface-sterilized by 2 min incubation in 70% EtOH plus 10 min in sterilizing solution (1.5% NaOCl, 0.05% Tween-20) and 2 H2O washes. After 2\u20135 days of stratification at 4\u00b0C in darkness, seeds were germinated and grown on plates containing Murashige and Skoog (MS)-agar medium (4.4 g/L MS, 10 g/L sucrose, 10 g/L agar) pH 5.7 at 20\u00b0C, receiving ~70 \u03bcmol m\u20132 s\u20131 of light in a 16 hr light/8 hr dark cycle as default. For HyperTRIBE and iCLIP experiments, the plates were placed vertically to facilitate root harvesting. MS-agar media for HyperTRIBE T2 seedlings was supplemented with 7.5 mg/L of glufosinate ammonium (Sigma) to select plants expressing the ADAR-containing transgenes. To assess phenotypes of adult plants, ~8-day-old seedlings were transferred from horizontal MS plates (4.4 g/L MS, 10 g/L sucrose, 8 g/L agar; pH 5.7) to soil and maintained in Percival incubators under 16 hr light/8 hr dark cycles, 21\u00b0C day/18\u00b0C night temperature, and ~100 \u03bcmol m\u20132 s\u20131 light intensity. We used Philips fluorescent tubes TL-D 90 De Luxe 36 W as light source.\n\n### Generation of transgenic lines for HyperTRIBE\n\nWe employed USER cloning (Bitinaite and Nichols, 2009) to generate ECT2pro:ECT2-FLAG- DmADARE488Qcd-ECT2ter and ECT2pro:FLAG-DmADARE488Qcd-ECT2ter constructs in pCAMBIA3300U (pCAMBIA3300 with a double PacI USER cassette inserted between the PstI-XmaI sites at the multiple cloning site; Nour-Eldin et al., 2006). Fragments containing ECT2 gDNA sequences were amplified by PCR (KAPA HiFi Hotstart Uracil + ReadyMix, Roche) from plasmids previously generated in our lab (Arribas-Hern\u00e1ndez et al., 2018). The FLAG-DmADARE488Qcd fragment was produced in the same way using a pGEM-T Easy (Promega) plasmid containing FLAG-DmADARE488Qcd as template, previously subcloned to introduce the E488Q hyperactive mutation by site-directed mutagenesis (QuickChange, Agilent Technologies) with primers LA729-LA730 (Phusion HF DNA Polymerase, NEB). The E488Q mutation was detected by NlaIII (ThermoFisher) digestion of the PCR reaction (DreamTaq, ThermoFisher) obtained with primers LA660-LA735. Of note, the FLAG and DmADARcd sequences had been previously glued together by USER cloning to produce AGO1pro:FLAG-DmADARcd-AGO1ter in pCAMBIA3300U for unrelated purposes (unpublished work), and subsequently amplified by PCR with primers LA696-615 for introduction into pGEM-T Easy. To build AGO1pro:FLAG-DmADARcd-AGO1ter in the first place, the catalytic domain of the ADAR deaminase isoform N (Y268-E669) was amplified from cDNA of D. melanogaster Canton-S wild-type flies and larvae with USER primers MVUSER12-22. The rest of the fragments were amplified from pCAMBIA3300U AGO1pro:FLAG-AGO1-AGO1ter (Arribas-Hern\u00e1ndez et al., 2016) with primers MVUSER1-11 and MVUSER23-6.\n\nUSER primers to amplify all fragments were designed to create overhangs compatible with either the PacI USER cassette present in the pCAMBIA3300U plasmid or the flanking sequences of the neighboring fragments. All primer sequences, their combinations to produce PCR fragments, and the arrangement of the fragments for USER cloning can be found in Appendix 1.\n\nKanamycin-resistant colonies of Escherichia coli DH5\u03b1 (NEB) transformed with the constructs were analyzed by restriction digestion and sequencing prior introduction of the plasmids in Agrobacterium tumefaciens GV3101 (Koncz and Schell, 1986) for plant transformation.\n\nArabidopsis stable transgenic lines were generated by floral dip transformation (Clough and Bent, 1998) of Col-0 WT, ect2-1, or te234, and selection of primary transformants (T1) was done on MS-agar plates supplemented with glufosinate-ammonium (Sigma) (10 mg/L). We selected five independent lines of each type based on segregation studies (to isolate single T-DNA insertions), phenotypic complementation (in the te234 background), and transgene expression levels assessed by FLAG western blot.\n\n### Western blotting\n\nProtein extraction from 10-day-old seedlings and western blotting with FLAG, HA, and mCherry antibodies were done as previously described (Arribas-Hern\u00e1ndez et al., 2018). Loading was documented by amido black, Coomassie, or Ponceau staining of the total protein on the membrane.\n\n### RNA extraction and library preparation for HyperTRIBE\n\nWe extracted total RNA from manually dissected root tips and apices (removing cotyledons) of five independent lines (10-day-old T2 seedlings) of each of the lines used for ECT2-HT to use as biological replicates. The tissue was flash-frozen in liquid nitrogen and ground into a fine powder using liquid nitrogen-cooled adaptors in a tissue homogenizer. For RNA extraction, we added 1 mL of TRI Reagent (Sigma) to the frozen tissue (<100 mg), mixed quickly by vortexing, added 0.2 mL of chloroform, and separated the two resulting phases by vigorous shaking and 10 min centrifugation at 4\u00b0C. The RNA was then precipitated from the aqueous phase for 30 min at room temperature with 1 volume of isopropanol. RNA pellets were solubilized in 300 \u03bcL of H2O to remove polysaccharides through a mild precipitation by addition of 1/10 vol. 99% EtOH and 1/30 vol. of 3 M NaOAc (pH 5.2) and incubation on ice for 30 min. After 15 min of full-speed centrifugation at 4\u00b0C to pellet polysaccharides, we re-precipitated the RNA from the supernatant with 2,5\u00d7 vol. 99% EtOH and 1/10 vol. of 3 M NaOAc (pH 5.2), washed the pellet two times with 70% EtOH, and resuspended in 20\u201340 \u03bcL of H2O. This highly pure total RNA was then used to produce mRNA libraries through enrichment of mRNA with oligo(dT) beads (18-mers), random fragmentation, cDNA synthesis with random hexamers, custom second-strand synthesis (Illumina), terminal repair, A-ligation and sequencing adaptor ligation, size selection (250\u2013300 bp insert), and PCR enrichment. The libraries were prepared and sequenced (Illumina PE150, Q30 \u2265 80%) as a service from Novogene.\n\nThe entire HyperTRIBE experiment was done once.\n\n### HyperTRIBE data analysis\n\nSignificant differentially edited sites between ECT2-FLAG-ADAR (fusion) and FLAG-ADAR (control) samples for ECT2 HyperTRIBE (ECT2-HT) were called according to the hyperTRIBER pipeline (Rennie et al., 2021). First, reads were trimmed using trimmomatic (Bolger et al., 2014) and mapped to the Arabidopsis genome (TAIR10) using STAR (Dobin et al., 2013), according to parameters suggested in a previous HyperTRIBE analysis (Xu et al., 2018). All HyperTRIBE samples were also quantified using Salmon (Patro et al., 2017), with appropriate settings for pair-end sequencing and non-stranded library setup and based on the transcriptome for Araport11 (Cheng et al., 2017) with manual addition of the FLAG-ADAR sequence. A custom Perl script based on SAMtools mpileup (Li et al., 2009) returned base counts for all positions where there is a mismatch from the reference in at least one sample. For running the hyperTRIBER analysis pipeline, we specified that any tested position must have a putative edit in at least four of the five replicates in the ECT2-FLAG-ADAR samples (three of four in the case of roots since one of these samples, \u2018L3,\u2019 was deemed as low quality and subsequently removed from the significance calling pipeline). Significant hits (adjusted p-value<0.01 and log2FC > 1) were further filtered as follows: (1) hits that did not correspond to an A-to-G change (or a T-to-C change for the negative strand), (2) hits that were likely SNPs arising specifically in either the ECT2-FLAG-ADAR or FLAG-ADAR line manifesting in an editing proportion at or close to 1, and (3) hits where the coverage of tags at the edit base over the ECT2-FLAG-ADAR were fewer than 10 reads. Specific scripts for the analysis of ECT2-HT data can be found at https://github.com/sarah-ku/targets_arabidopsis.\n\nEditing proportions were calculated as G/(A + G) (alternatively C/(U + C) for the negative strand) for all significant sites, averaged over all samples, separately for the ECT2-FLAG-ADAR and FLAG-ADAR samples. Significant sites were annotated to genes from Araport11, prioritizing the gene with the highest expression (annotated TPMs are based on Salmon quantifications of FLAG-ADAR control samples only) in the given tissue in the case of multiple possibilities. Possible transcripts were subsequently ordered by expression, along with gene body location along the transcript (5\u2032-UTR, CDS, 3\u2032-UTR).\n\nPrincipal component analysis was carried out on the raw editing proportions per sample for all sites with significant evidence of editing.\n\nFor the comparison of sites between aerial tissues and roots, genes defined as commonly expressed in both types of tissues were considered in all gene-based comparisons. For significant editing site-based comparison, we directly compared sites that were common and significant to both.\n\nTo calculate correlations between editing proportions and FLAG-ADAR expression levels among lines, transcripts per million (TPM) mapping to FLAG-ADAR were extracted from quantifications from Salmon (Patro et al., 2017) and correlated with the raw editing proportions per sample, separately for the fusion and control samples. Background correlation estimates were calculated by first scrambling the order of the FLAG-ADAR TPM vector.\n\nFor motif identification at significant ECT2-HT sites, all sequences for bases at and -/+ 2 nt of the significant editing positions were derived from TAIR10 using the R package rtracklayer (Lawrence et al., 2009) in either aerial tissues or roots. A matrix of nt frequencies (A, C, G, or U) was generated, and the R package ggseqlogo (Wagih, 2017) was used to generate the final motif.\n\nFor the calculation of editing proportions as a function of the proportion of cells coexpressing ECT2, we first downloaded the expression matrix based on a total of 4727 individual cells from scRNA-seq in roots from Denyer et al., 2019. To estimate the relationship between coexpression of target genes with ECT2 and their average editing proportions, the expression matrix was used to calculate coexpression for each target gene as follows: (# cells expressing ECT2 AND target gene) / (# cells expressing target gene).\n\nThese proportions were then split into groups and plotted against the maximum editing proportions from HyperTRIBE in the containing genes.\n\n### Comparative analysis of target sets and their expression bias\n\nFor expression binning, log2(TPM +1) values for all expressed genes in either aerial tissues, roots, or combined were split into nine bins of increasing expression, using the cut() function from the R package Hmisc version 4.5-0 (https://github.com/harrelfe/Hmisc/). For the proportion of target genes in every expression bin, we calculated the proportion of genes in each set (ECT2 HT/iCLIP-targets or nontargets, ECT2 FA-CLIP; Wei et al., 2018) or m6A sets (Parker et al., 2020) falling into each expression bin out of the total number of genes in that bin. To demonstrate expression biases in unsupported ECT2-HT target genes, the genes were further split according to whether or not they had support from m6A (Nanopore, miCLIP [Parker et al., 2020] and m6A-seq [Shen et al., 2016]).\n\n### CLIP experiments and iCLIP library preparation\n\nIn vivo UV crosslinking of 12-day-old seedlings and construction of iCLIP libraries were optimized for ECT2-mCherry from the method previously employed for Arabidopsis GRP7-GFP (Meyer et al., 2017; K\u00f6ster and Staiger, 2020) as follows. Crosslinked plant tissues (see details below) were finely ground in liquid nitrogen with mortar and pestle, homogenized in iCLIP buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 4 mM MgCl2, 5 mM DTT, 1% SDS, 0.25% sodium deoxycholate, 0.25% Igepal) supplemented with protease inhibitors (4 mM PMSF, 1 tablet/10 mL of Complete Protease Inhibitor Cocktail [Roche], and 1/30 vol. of Protease Inhibitor Optimized for Plant Extracts [Sigma P9599]), and cleared by centrifugation and filtration (0.45 \u03bcm pore) of the supernatant. RNP-complexes were then immunopurified with beads coupled to anti-RFP nanobodies (ChromoTek RFP-Trap in our case) for 1 hr at 4\u00b0C under constant rotation. In particular, we used 20 \u03bcL of beads for 4 g of tissue in 6 mL of iCLIP buffer for every replicate. After thorough washes with RIP-Wash Buffer (2 M urea, 50 mM Tris-HCl pH 7.5, 500 mM NaCl, 4 mM MgCl2, 2 mM DTT, 1% SDS, 0.5% sodium deoxycholate, 0.5% Igepal), RNP-complexes attached to the beads were subjected to treatment with DNase (Turbo DNase [Ambion], 4 U/100 \u03bcL) and RNase I (Ambion, 1 U/mL) at 37\u00b0C for 10 min, dephosphorylation of RNA 3\u2032 ends (PNK [ThermoFisher] in pH 6.5 buffer), and 3\u2032 RNA linker ligation (L3-App linker [Huppertz et al., 2014] and NEB HC RNA Ligase) at 16\u00b0C overnight. RNA was radioactively labeled at the 5\u2032 end by PNK-mediated phosphorylation using \u03b3-32P-ATP (20 min at 37\u00b0C). The labeled RNP complexes were subjected to SDS-PAGE and blotting on a nitrocellulose membrane (Protran BA-85). Pieces of membrane containing a size range of RNA species bound to the protein (a smear above the expected molecular weight localized by autoradiography) were excised and subjected to proteolysis (200 \u03bcg of Proteinase K [Roche] in 200 \u03bcL of PK buffer [100 mM Tris-HCl pH 7.4, 50 mM NaCl, 10 mM EDTA] for 20 min at 37\u00b0C) to release RNA bound to small peptides. The RNA was then purified with TRI-Reagent (Sigma) and used to prepare sequencing libraries through the following steps: reverse transcription (Superscript III, Invitrogen) using a two-part cleavable DNA adapter complementary to the 3\u2032 RNA linker as primer, gel purification and size selection of cDNA (high, 120\u2013200 nt; medium, 85\u2013120 nt; low, 70\u201385 nt), circularization (CircLigase II Epicentre), relinearization (BamHI), and PCR amplification (AccuPrime Supermix I, Invitrogen). All steps were performed as described by Huppertz et al., 2014, and the amount of cycles in the final PCR was optimized to the amount of cDNA in each sample.\n\nNotice that we introduced a few modifications in the original protocol (K\u00f6ster and Staiger, 2020) to account for (1) low abundance of ECT2 compared to AtGRP7. To obtain enough RNA, we increased the crosslinking energy and irradiated 12-day-old seedlings with 2000 mJ/cm2 of 254 nm UV light, harvesting roots and shoots (4 g of tissue per replicate) to maximize the amount of purified ECT2-mCherry. (2) ECT2 sensitivity to proteolysis. We did not pre-clear the lysates to reduce the incubation time, and we used high amounts of protease inhibitors during immunoprecipitation. (3) High molecular weight of ECT2-mCherry. Due to the size of the protein, we required longer electrophoresis time and cooling (3 hr at 180 V with the tank on ice). (4) Different RNA-binding capacity of ECT2. Based on trials, we decided to adjust the RNase I treatment to 1 U/mL, incubating for 10 min at 37\u00b0C (5 \u03bcL of RNase I [Ambion, 100 U/\u03bcL pre-diluted 1:5000] in 100 \u03bcL).\n\nOf note, the conditions indicated here were specifically used for library preparation. Although we used the same conditions as default for CLIP experiments to assess ECT2 RNA-binding capacity, ECT2 sensitivity to proteolysis and ECT2-bound RNA sensitivity to RNase treatment, variations in buffer composition, incubation time, concentration of protease inhibitors, and/or RNase I are specified in the corresponding figure legends where necessary.\n\nThe entire iCLIP-seq experiment including three replicates of each group was done once.\n\n### iCLIP data analysis and peak calling\n\nSequenced reads from all samples were investigated after each processing step with fastqc 0.11.5 (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). Adapters at the 3\u2032 end were trimmed using cutadapt version 1.16 (Martin, 2011). The demultiplexing of the samples was performed using flexbar 3.4.0 with the -bk parameter to conserve the barcode information for further steps (Roehr et al., 2017). Reads with a length below 24 nucleotides were discarded. Barcodes were trimmed and saved to the read_id field. Processed reads were mapped to the TAIR10 genome with STAR version 2.6.0a allowing a maximum of two mismatches and soft clipping only at 3\u2032 end (Dobin et al., 2013). PCR duplicates were removed by grouping the reads by their mapping start position. Reads with the identical start position and random barcode were removed from the samples (Python3 and pybedtools). The peak calling of uniquely mapped reads was done using PureCLIP 1.0.4, choosing the second peak-shape option to allow more broader peaks to be called (Krakau et al., 2017).\n\nFor consistency with the ECT2-HT datasets, the ECT2-iCLIP datasets were annotated using the hyperTRIBER annotation (Rennie et al., 2021), using quantifications based on the average of roots and aerial tissues from FLAG-ADAR samples in ECT2-HT (to reflect that the ECT2-iCLIP data is based on whole seedlings).\n\nTo calculate the proportion of sites falling at each nucleotide, nucleotide sequences from the reference genome were first obtained from site coordinates for ECT2 iCLIP/m6A-Nanopore/ m6A-miCLIP using the R packages GenomicRanges (Lawrence et al., 2013) and rtracklayer (Lawrence et al., 2009). Nucleotide proportions were plotted using ggplot2 (https://ggplot2.tidyverse.org).\n\n### Analysis of publicly available data\n\nSingle-cell expression data and marker genes associated with 15 clusters annotated to cell types in roots were downloaded from Denyer et al., 2019. Single-nucleotide resolution locations of m6A sites (defined according to Nanopore or miCLIP) were downloaded from Parker et al., 2020. Intervals defining m6A locations based on m6A-seq were downloaded from Shen et al., 2016, and intervals defining locations of ECT2-bound sites as determined by FA-CLIP were downloaded from Wei et al., 2018. For consistency with HyperTRIBE and ECT2-iCLIP, all sets of m6A or ECT2-bound sites were gene annotated using the hyperTRIBER pipeline, based on genes and transcripts from Araport11.\n\n### Motif discovery\n\nTo remove redundancy after ECT2-iCLIP peak calling, directly adjacent peaks (crosslink sites) were grouped together and only the peak with the highest pureCLIP score (dominant) was kept. The called peak position (1 nt resolution) was extended by 4 nt up- and downstream to define a \u2018collapsed crosslink site\u2019 (CSS) with length 9 nt. The center position marks the dominant called peak. The extension of the peak positions was computed using bedtools version 2.27.1 (Quinlan and Hall, 2010; Dale et al., 2011). The collapsed ECT2-iCLIP crosslink sites and m6A-Nanopore sites (Parker et al., 2020) were used to find motifs significantly enriched by Homer (Heinz et al., 2010) using a variety of window sizes, settings, and backgrounds. Motifs resulting from Homer searches were collated manually, and a range of variants of the consensus motif RRACH (e.g., RACH, DRAY, DRACH, URACH, DRACG) were also added to the list, as well as various combinations of U-rich sequences (e.g., UUUUU, UNUNU, etc.), specific motifs found to be of interest in scientific literature (e.g., URUAY [Wei et al., 2018], GGAU [Anderson et al., 2018]), and extra motifs that appeared of potential interest from manually browsing with IGV (Robinson et al., 2011) the sequence in the vicinity of iCLIP peaks (e.g., YYYYY, DRACUCU). This resulted in a final list of 48 motifs for further analysis.\n\n### Motif analysis\n\nFor each of the 48 motifs compiled from multiple sources, a custom PWM was generated based on local sequence frequencies around ECT2-iCLIP peaks and used as input to FIMO 5.1.1 (Grant et al., 2011) to detect genome-wide occurrences. To generate PWMs, we used the formula PWMb,j = log2 [p(b,j)/p(b)], where p(b) is the background frequency of each nucleotide (see further down), and p(b,i) is the frequency of the nucleotides in each position j. We also included an extra small frequency count in the calculation to account for potential uncertainty in redundancies. In order to account for location-specific sequence contexts (typically 3\u2032-UTR), each site from iCLIP or m6A (Parker et al., 2020) sets was assigned a random \u2018matched background\u2019 site, in a non-target gene, at the same relative location along the annotated genomic feature of the site (5\u2032-UTR, CDS or 3\u2032-UTR), according to a resolution of 10 bins per feature. Logos for all motifs were generated using the R packages ggplot2 (https://ggplot2.tidyverse.org) and ggseqlogo (Wagih, 2017). To run the calculated PWMs through FIMO, we specified background letter frequencies (A: 0.273, C: 0.165, G: 0.173, U: 0.389), a threshold of 0.05, and scanning across the full TAIR10 Arabidopsis genome. Sites were further filtered downstream to have a score of at least 4 \u2013 in the vast majority of cases corresponding to an exact match the (short) motif.\n\nDistributions of motifs per 1000 sites over distance, centering on ECT2-iCLIP or m6A sites and the respective matched backgrounds, were generated using a custom R-script (https://github.com/sarah-ku/targets_arabidopsis) based on overlaps using GenomicRanges (Lawrence et al., 2013). At any given shift from the peak set, the raw number of overlaps of the motif (at any point) was calculated and normalized to give a motif count per 1000 peaks. To adjust for the potential for downstream regions overshooting the end of the 3\u2032-UTR, at each given distance only sites that continue to overlap an annotated gene (Araport11) are counted. For some analyses, peak sets were further split according to IDR-dependency or target status as indicated.\n\nTo calculate motif enrichment over the gene body, motifs were first annotated a value according to their relative position within the gene body regions: 5\u2032-UTR, CDS or 3\u2032-UTR. In order to account for over-representation of counts within the CDS, due to greater sequence coverage within transcript annotations, a random background set of 10 million positions were generated from the transcript annotation file and annotated in the same way as the motif locations to obtain an expected distribution of all positions over the gene body regions. This Expected distribution was used to normalize the Observed distribution of each motif, and O/E values were plotted as a metagene plot over the gene. An enrichment of 1 suggests that the motif is neither over- or under-represented at that location.\n\n### Random forest analysis (machine learning)\n\nCalled positions from either Nanopore m6A data (Parker et al., 2020) or ECT2 iCLIP were first reduced to remove redundant regions of multiple peaks within the same window, then paired with matched background sets (described above). Windows representing \u2018at\u2019 (\u00b110 nt) the motif together with adjacent upstream \u2018up\u2019 and downstream \u2018down\u2019 windows of length 50 nt (resulting in total window sizes of 120 nt) around each position were annotated according to the number of each of the motifs overlapping (truncated at 10), and the final data set normalized. To create a held-out set, 1/5th of the peaks were removed from the set, and the other 4/5th were used to build a random forest model using gradient boosting (R package gbm version 2.1.8; https://github.com/gbm-developers/gbm), with settings specifying a shrinkage of 0.05, an interaction.depth of 6, cv.folds = 5, and n.trees = 2000. For each model (m6A Nanopore-based or ECT2 iCLIP-based), importance scores were extracted from the model and the top features were selected. The held-out data was further used to estimate the predictive score of the model by calculating the AUC (R package pROC; Robin et al., 2011). Two further models were run \u2013 one involving the top 10 features from the full feature model, and (only for the m6A-Nanopore set-up) one involving features from only DRACH and UNUNU (equating to six features in total), and AUC values were calculated and compared to that of the full feature model.\n",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "83bfd6a8-2aee-4851-b865-5a0fdada10ea",
+      "submission_id": "a8b50298-8a1a-4b32-b397-24601eb97c31",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pablo A Manavella, Universidad Nacional del Litoral-CONICET Argentina\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72375.sa1](https://doi.org/10.7554/eLife.72375.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nWe found your work of general interest to the readers of eLife. It represents an important contribution to the fields of RNA biology and plant molecular biology. Your work help explaining how proteins recognize, bind and regulate methylated RNA in plants. This work also provides valuable datasets to the community. Congratulations on this outstanding work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Principles of mRNA targeting via the Arabidopsis m6A-binding protein ECT2\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Pablo A Manavella as Reviewing Editor and Reviewer #1, and the evaluation has been overseen J\u00fcrgen Kleine-Vehn as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Rupert Fray (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nBoth reviewers agreed that the manuscript is well written and present valuable data. No major concerns or additional experimental requests have arisen. We provide here a series of recommendations to further discuss in the manuscript.\n\n1. The authors could perhaps cite Bodi et al., \"Adenosine methylation in Arabidopsis mRNA is associated with the 3 ' end, and reduced levels cause developmental defects\" at line 53. This paper precedes the other references (albeit by a few weeks) in showing that m6A is associated with mRNA 3' ends (although by a direct biochemical rather than sequencing approach).\n\n2. Line 331 \u2013 do the authors think that this could also be that Nanopore is not yet sufficiently robust to call all m6A sites?\n\n3. It could be helpful for the reader to include a paragraph discussing how extensive their finding could be to other YTH proteins and whether other family members can target the URUAY motif.\n\n4. Please also refer to the recommendations made to the companion manuscript for related comments.\n",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "31c5ee0c-3254-40fb-8b9d-959ce73ae142",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C1",
+      "claim": "N6-methyladenosine (m6A) is the most abundant modified nucleotide in eukaryotic mRNA bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "N6-methyladenosine (m6A) is the most abundant modified nucleotide in eukaryotic mRNA bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "f2689eee-30a4-476f-ad47-f5bbb7360df3",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C2",
+      "claim": "m6A is required for embryonic development and stem cell differentiation in several animals and plants.",
+      "claim_type": "EXPLICIT",
+      "source": "It is required for embryonic development and stem cell differentiation in several animals and plants (Zhong et al., 2008; Batista et al., 2014; Ping et al., 2014; Geula et al., 2015; Zhang et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations support this claim about the biological importance of m6A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "939189bf-e76c-461a-863d-06bea0fc2b64",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C3",
+      "claim": "m6A is required for control of the meiotic program in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "and for the control of the meiotic program in yeast (Shah and Clancy, 1992; Clancy et al., 2002; Agarwala et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the role of m6A in yeast meiosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "55563bb1-a1d5-4795-b69e-2c0e57a9a34c",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C4",
+      "claim": "Most N6-adenosine methylation of mRNA is catalyzed in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Most N6-adenosine methylation of mRNA is catalyzed in the nucleus (Salditt-Georgieff et al., 1976; Ke et al., 2017; Huang et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations provide evidence for nuclear localization of m6A methylation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "17b8e42f-a2c9-4d14-911c-dfa50c37496b",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C5",
+      "claim": "The catalytic core of the m6A writer consists of the heterodimer METTL3/METTL14 (MTA/MTB in plants).",
+      "claim_type": "EXPLICIT",
+      "source": "by a highly conserved, multimeric methylase (the m6A 'writer'; Balacco and Soller, 2019) whose catalytic core consists of the heterodimer METTL3/METTL14 (MTA/MTB in plants; Bokar et al., 1997; Zhong et al., 2008; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the identity of the catalytic core of the m6A methyltransferase.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "a8884956-ce83-4d7d-8299-fe20a36959df",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C6",
+      "claim": "m6A occurs in the consensus site RR(m6A)CH (R = G/A, H = A/C/U), primarily in 3\u2032-UTRs in vertebrates, plants, and fungi that possess the canonical METTL3/METTL14 methyltransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "m6A occurs in the consensus site RR(m6A)CH (R = G/A, H = A/C/U), primarily in 3\u2032-UTRs in vertebrates, plants, and fungi that possess the canonical METTL3/METTL14 methyltransferase (Bodi et al., 2012; Dominissini et al., 2012; Meyer et al., 2012; Schwartz et al., 2013; Luo et al., 2014a; Zhao et al., 2017; Miao et al., 2020; Parker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations support the consensus sequence and location of m6A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "5da1bf48-cc82-4c75-81cf-2bbd777916fa",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C7",
+      "claim": "The characteristic m6A motif and gene body location is not detected in organisms that lack METTL3/METTL14 homologs, such as C. elegans and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the characteristic motif and gene body location is not detected in organisms that lack METTL3/METTL14 homologs, such as the nematode Caenorhabditis elegans (Sendinc et al., 2020) and bacteria (Deng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the absence of the canonical m6A pattern in organisms lacking METTL3/METTL14.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "ed2aaee5-f54e-466a-87bb-a0709c6b6f0c",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C8",
+      "claim": "The YTH domain harbors a hydrophobic methyl-binding pocket that increases the affinity of m6A-containing RNA by more than 10-fold compared to unmethylated RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The YTH domain harbors a hydrophobic methyl-binding pocket that increases the affinity of m6A-containing RNA by more than 10-fold compared to unmethylated RNA (Li et al., 2014b; Luo and Tong, 2014b; Theler et al., 2014; Xu et al., 2014; Zhu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the structural and functional properties of the YTH domain.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "0308a166-ce80-4314-8d2d-fcd4fcead86b",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C9",
+      "claim": "YTH domain-RNA interactions mostly involve the sugar-phosphate backbone of the RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from interactions with the methylated adenosine and the purine at the \u20131 position, YTH domain-RNA interactions mostly involve the sugar-phosphate backbone of the RNA (Luo and Tong, 2014b; Theler et al., 2014; Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the mode of YTH domain-RNA interaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "b14173bb-f5d5-454a-93ec-f428db95d09e",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C10",
+      "claim": "The affinity of isolated YTH domains for m6A-containing RNA is modest, typically with dissociation constants on the order of 0.1\u20131 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the affinity of isolated YTH domains for m6A-containing RNA is modest, typically with dissociation constants on the order of 0.1\u20131 \u03bcM (Li et al., 2014b; Luo and Tong, 2014b; Theler et al., 2014; Xu et al., 2014; Zhu et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations provide quantitative data on YTH domain binding affinity.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "9c7547cc-38cb-4efc-857f-0c551030f683",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C11",
+      "claim": "The YTHDF family comprises 11 proteins in Arabidopsis referred to as ECT1-11.",
+      "claim_type": "EXPLICIT",
+      "source": "The YTHDF family comprises 11 proteins in Arabidopsis that are referred to as EVOLUTIONARILY CONSERVED C-TERMINAL REGION1-11 (ECT1-11) (Li et al., 2014c; Scutenaire et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the nomenclature and number of YTHDF proteins in Arabidopsis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "cb5b30f9-39aa-4791-97aa-c59a360c9e25",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C12",
+      "claim": "ECT2, ECT3, and ECT4 are expressed in rapidly dividing cells of root, leaf, and flower primordia.",
+      "claim_type": "EXPLICIT",
+      "source": "ECT2, ECT3, and ECT4 are expressed in rapidly dividing cells of root, leaf, and flower primordia, and genetic analyses have revealed their general importance in organogenesis (Arribas-Hern\u00e1ndez et al., 2018; Arribas-Hern\u00e1ndez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the expression pattern and biological function of ECT2/3/4.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "f6d1db5b-a4df-4957-b8bb-2404807b2eb9",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C13",
+      "claim": "The biological functions of ECT2/ECT3/ECT4 depend on intact m6A-binding pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the biological functions of ECT2/ECT3/ECT4 described thus far are shared with those of m6A writer components and, where tested, have been shown to depend on intact m6A-binding pockets, strongly suggesting that the basis for the observed phenotypes in ect2/ect3/ect4 mutants is defective regulation of m6A-modified mRNA targets (Bodi et al., 2012; Shen et al., 2016; Ru\u017ei\u010dka et al., 2017; Arribas-Hern\u00e1ndez et al., 2018; Scutenaire et al., 2018; Wei et al., 2018; Arribas-Hern\u00e1ndez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the m6A-dependence of ECT2/3/4 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "44daa5e8-9421-4ba9-bac0-761e5cca4e89",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C14",
+      "claim": "Wei et al., 2018 concluded that ECT2 binds to the 'plant-specific consensus motif' URU(m6A)Y.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, this problem concerns the unexpected conclusion that ECT2 binds to the 'plant-specific consensus motif' URU(m6A)Y (Y = U/C), not RR(m6A)CH (Wei et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation indicates a previous claim about ECT2 binding specificity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "f3e6d53a-c0ff-4005-88e4-c966c98fd0fd",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C15",
+      "claim": "Several motifs including URUAY, UGUAMM, UGWAMH, UGUAWA, and GGAU have been reported to be enriched around m6A sites in Arabidopsis and other plant species.",
+      "claim_type": "EXPLICIT",
+      "source": "To complicate matters further, a number of motifs including not only URUAY, but also UGUAMM (M = A/C), UGWAMH (W = A/U), UGUAWA, and GGAU have been reported to be enriched around m6A sites in Arabidopsis and other plant species (Li et al., 2014a; Anderson et al., 2018; Miao et al., 2020; Zhang et al., 2019; Zhou et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the reported enrichment of various motifs around m6A sites.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "066c7c9f-8618-4c1b-a8e5-a5534205987a",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C16",
+      "claim": "ADARcd fusions to ECT2 are functional in vivo as demonstrated by rescue of te234 mutant seedling phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified lines exhibiting nearly complete rescue of te234 mutant seedling phenotypes, indicating that the fusion protein was functional (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Phenotypic rescue demonstrates functionality of the fusion protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "b30849b3-786a-4665-aa68-e9eea068ee6f",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C17",
+      "claim": "The ECT2-FLAG-ADAR fusion imparts adenosine-to-inosine editing of target mRNAs in planta.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that the amount of editing was clearly higher in the lines expressing the ECT2-FLAG-ADAR fusion protein than in the negative control lines (Figure 1C, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data shows differential editing between fusion and control lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "0f3629bf-80cf-4af9-9df7-a7491f48406f",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C18",
+      "claim": "HyperTRIBE identified 16,176 edited sites in aerial tissues and 19,242 in roots, corresponding to 4864 and 5052 genes (ECT2 HT-targets), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of subsequent filtering steps, including removal of non-(A-to-G) mismatches and of potential line-specific single-nucleotide variants (see Materials and methods), resulted in a final list of 16,176 edited sites for aerial tissues and 19,242 for roots, corresponding to 4864 and 5052 genes (ECT2 HT-targets), respectively (Figure 1B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data analysis pipeline yielded specific numbers of edited sites and target genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "c9522b61-adfc-498c-aa76-a99bb98b1e14",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C19",
+      "claim": "More than 76% of ECT2 HT-targets had m6A support by either Shen et al., 2016 or Parker et al., 2020 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Of most importance, we observed a large overlap between the ECT2 HT-targets and m6A-containing transcripts mapped by different methods in seedlings (Shen et al., 2016; Parker et al., 2020) as more than 76% of ECT2 HT-targets had m6A support by either study (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Overlap analysis with independent m6A datasets validates HyperTRIBE results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "a0433b00-605d-460f-9754-8601591b1edb",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C20",
+      "claim": "ECT2-mCherry can be specifically UV-crosslinked to target RNA in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These tests showed that substantially more RNA co-purifies with wild-type ECT2 than with ECT2W464A upon UV-crosslinking, and that no RNA is detected without UV irradiation or from irradiated plants of non-transgenic backgrounds (Figure 3B, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data demonstrates specific UV-crosslinking of ECT2 to RNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "0593ccc0-fbaa-44af-a3b8-cb09e560f35f",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C21",
+      "claim": "A total of 15,960 iCLIP peaks or crosslink sites in 2281 genes were identified from the 110-kDa band of wild-type ECT2-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a total of 15,960 iCLIP 'peaks' or crosslink sites (i.e., single-nucleotide positions called by PureCLIP from mapped iCLIP reads [Krakau et al., 2017]) in 2281 genes from the 110-kDa band of wild-type ECT2-mCherry (henceforth referred to as ECT2 iCLIP peaks and targets, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data analysis of iCLIP sequencing yielded specific numbers of peaks and target genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "67bad9e4-f14f-40fd-8ed8-11d59d73fafc",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C22",
+      "claim": "The majority of ECT2 iCLIP crosslink sites mapped to the 3\u2032-UTRs of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, for both libraries, the majority of crosslink sites mapped to the 3\u2032-UTRs of mRNAs (Figure 3H, see Figure 4A, and Figure 4\u2014figure supplement 1 for more examples), coincident with the main location of m6A (Figure 4B; Parker et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data shows enrichment of crosslink sites in 3'-UTRs, consistent with m6A location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "3af01045-0d87-4743-93ca-dc895c6853e7",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C23",
+      "claim": "ECT2 iCLIP targets and HyperTRIBE targets showed clear overlaps with each other and with m6A-containing transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "ECT2 targets identified by iCLIP and HyperTRIBE showed clear overlaps, both with each other and with m6A-containing transcripts, further supporting the robustness of ECT2 target identification via combined iCLIP and HyperTRIBE approaches (Figure 4D, upper panel, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Overlap analysis demonstrates consistency between orthogonal methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "3ebbb912-49c8-478f-8ba9-08862f03962e",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C24",
+      "claim": "HyperTRIBE identifies approximately three times more ECT2 targets than iCLIP.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that HyperTRIBE identifies approximately three times more ECT2 targets than iCLIP, possibly because of the bias towards high abundance inherent to purification-based methods like iCLIP (Wheeler et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of target numbers between methods reveals differential sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "46d14597-5066-4bc1-aec5-f3979a805819",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C25",
+      "claim": "ECT2 crosslinks in the immediate vicinity, but preferentially upstream (~11 nt) of Nanopore-determined m6A sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that ECT2 crosslinks in the immediate vicinity, but preferentially upstream (~11 nt) of Nanopore-determined m6A sites, with a mild depletion at the exact m6A site (Figure 5A, upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Positional analysis of iCLIP data relative to m6A sites reveals spatial relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "b7191277-85f6-4960-8d85-89d069c4ebfd",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C26",
+      "claim": "UV illumination used in both iCLIP and miCLIP preferentially generates RNA-protein crosslinks involving uridine.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is probably explained by the fact that the UV illumination used in both iCLIP and miCLIP preferentially generates RNA-protein crosslinks involving uridine (Hafner et al., 2021), also detectable in the datasets analyzed here (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Citation and data analysis support UV crosslinking bias towards uridine.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "a82213a0-f8d3-4b3f-af3a-bb2181780bbd",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C27",
+      "claim": "RRACH-like motifs and GGAU were the most highly enriched at m6A sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, RRACH-like motifs were the most highly enriched at m6A sites and showed a clear enrichment immediately downstream of ECT2 crosslink sites in our analyses, with the degenerate variant DRACH being the most frequently observed (Figure 5D, Figure 5\u2014figure supplement 3). Motifs containing GGAU behaved similarly to DRACH, with a sharp enrichment exactly at m6A sites and mild enrichment downstream of ECT2 peaks (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Motif enrichment analysis identifies RRACH/DRACH and GGAU as most enriched at m6A sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "7bdcabc1-fd93-456c-b886-7de5bc51f112",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C28",
+      "claim": "U/Y-rich motifs showed a characteristic enrichment around, but depletion at, m6A sites.",
+      "claim_type": "EXPLICIT",
+      "source": "U/R-rich motifs without traces of adjacent DRACH (e.g., YUGUM, URUAY, URURU) showed a characteristic enrichment around, but depletion at, m6A sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Motif distribution analysis reveals distinct pattern for U/Y-rich motifs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "3b19abbd-2798-47de-85e9-94dd47b5e49a",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C29",
+      "claim": "DRACH/GGAU motifs at the site and flanking U/Y-rich sequences are the main determinants for distinguishing m6A sites from background.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 16 features ordered by importance from the full model confirmed that RRAC/DRACH or GGAU at the site was indicative of the presence of m6A (Figure 6B). Interestingly, U/Y-rich sequences (UNUNU and YYYYY in particular) flanking the site were also strongly indicative (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Machine learning analysis identifies key sequence features distinguishing m6A sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "37071b65-8797-40cc-b625-9df97751f932",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C30",
+      "claim": "Flanking U/Y-rich sequences are the main determinants for ECT2 crosslinking at m6A sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous observations, this model showed flanking U/Y-rich sequences as the main determinants for ECT2 crosslinking (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Machine learning analysis identifies U/Y-rich sequences as key for ECT2 binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "c32f58a7-3b3a-4c25-bd02-3ecb3ddbf0dd",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C31",
+      "claim": "If a transcript has m6A and ECT2 sites in close proximity, it is more likely to have UNUNU/UUUUU/YYYYY sequences upstream of the m6A site.",
+      "claim_type": "EXPLICIT",
+      "source": "If a transcript has m6A and ECT2 sites in close proximity, it is (1) more likely to have UNUNU/UUUUU/YYYYY sequences upstream of the m6A site than targets with distantly located ECT2-binding sites or than non-ECT2 targets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative analysis of motif distributions reveals association between specific U-rich motifs and ECT2 binding proximity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "d1825a39-c26e-40e0-b0cd-65c8927064f0",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C32",
+      "claim": "Transcripts with m6A and ECT2 sites in close proximity are less likely to have URURU/URUAY-like motifs upstream of the m6A site.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) less likely to have URURU/URUAY-like motifs upstream of the m6A site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative analysis reveals negative association between URURU/URUAY motifs and ECT2 binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "785e33cb-a66f-41ac-92ec-aef5c921ebea",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C33",
+      "claim": "The 5\u2032\u20133\u2032 asymmetry of ECT2 peaks relative to m6A sites observed with full-length ECT2 was largely reduced with the truncated protein lacking the IDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial inspection of the distribution of ECT2 peaks relative to Nanopore-m6A sites showed that the 5\u2032\u20133\u2032 asymmetry observed with full-length ECT2 was largely reduced with the truncated protein (Figure 7C), as was the bias towards uridines (Figure 7\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of full-length and truncated ECT2 iCLIP data reveals role of IDR in binding pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "29a07d1a-e6aa-4c6f-9360-de55a3dba000",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C34",
+      "claim": "UUUUUU/UNUNU-like motifs were more enriched at and immediately upstream of IDR-dependent crosslink sites relative to IDR-independent ones.",
+      "claim_type": "EXPLICIT",
+      "source": "UUUUUU/UNUNU-like motifs were more enriched at and immediately upstream of IDR-dependent crosslink sites relative to the IDR-independent ones, supporting preferential crosslinking of the IDR to Us in this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of IDR-dependent vs. IDR-independent crosslink sites reveals IDR binding preferences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "bedcbbb3-b9e1-4c4a-8410-850ab9f54053",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C35",
+      "claim": "URURU/URUAY motifs showed modest depletion 5\u2032 to IDR-dependent crosslink sites relative to their IDR-independent counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the exact opposite was true for URURU/URUAY motifs that showed modest depletion 5\u2032 to IDR-dependent crosslink sites relative to their IDR-independent counterparts (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis reveals distinct behavior of URURU/URUAY motifs relative to IDR-dependent binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "37b58e70-a968-4a2c-98fc-ff984ea1a23b",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C36",
+      "claim": "ECT2 binds to m6A predominantly in the DR(m6A)CH sequence context in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a major conclusion of the present work that ECT2 binds to m6A predominantly in the DR(m6A)CH sequence context in vivo, consistent with reading of m6A written by the conserved nuclear MTA/MTB methyltransferase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple lines of evidence from iCLIP and motif analysis support this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "afdf9ea1-ba3f-42bf-b912-bc6f2a85e041",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C37",
+      "claim": "The IDR of ECT2 participates in RNA binding by association with U-rich elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations suggest that the IDR of ECT2 participates in locating ECT2 to 3\u2032-UTRs by association with U-rich elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple observations from iCLIP experiments with full-length and truncated ECT2 support IDR involvement in RNA binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "7cc2fb0c-5e7a-4a89-b704-b0d1742e773f",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C38",
+      "claim": "URUAY may be a site of competition between the IDR of ECT2 and another, as yet unknown, RNA-binding protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these observations may be explained by multiple scenarios, we find a simple, yet at present speculative, model attractive: URUAY may be a site of competition between the IDR of ECT2 and another, as yet unknown, RNA-binding protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed to explain the observed data patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "f0fb2776-b4f2-4f5a-8cd5-a48727f74dec",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C39",
+      "claim": "FA-CLIP is not a recommendable technique for identification of RNAs associating with RNA-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our work also clearly indicates that FA-CLIP, now used in at least two studies involving YTH domain proteins (Wei et al., 2018; Song et al., 2021), is not a recommendable technique as it recovers many false positives and fails to include many genuine targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of FA-CLIP results with iCLIP and HyperTRIBE data reveals limitations of FA-CLIP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "2691c054-772f-4ee3-9b32-b33769808b93",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C40",
+      "claim": "DRACH is the major N6-adenosine methylation site.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the major N6-adenosine methylation site is DRACH, consistent with conclusions from multiple other studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Motif enrichment analysis and consistency with literature support this conclusion.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "c551c444-16e3-4dba-a552-99e6ca2df196",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C41",
+      "claim": "GGAU is a minor N6-adenosine methylation site.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, GGAU is a minor N6-adenosine methylation site, as seen by its enrichment directly at m6A sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Motif enrichment analysis at m6A sites supports this conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "2f25d1af-c415-43fe-a877-d9c2fb0d0077",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C42",
+      "claim": "m6A occurs in DRACH/GGAU islands embedded in U-rich regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, m6A occurs in DRACH/GGAU islands embedded in U-rich regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Motif distribution analysis reveals this pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "87357742-ce9c-48d2-88bb-d6831499ce41",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C43",
+      "claim": "U-rich regions around m6A sites are of similar importance for recognition of m6A-containing transcripts as DRACH and GGAU at m6A sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Such U-rich regions around m6A sites emerged from sorting of methylated from non-methylated transcripts by machine learning as being of similar importance for recognition of m6A-containing transcripts from sequence features as DRACH and GGAU at m6A sites, suggesting their implication in MTA/MTB-catalyzed adenosine methylation (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Machine learning analysis reveals importance of U-rich regions for m6A site identification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "f2686fce-fd9c-4541-983f-137b3cc19e62",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C44",
+      "claim": "The pronounced 3\u2032-UTR bias of m6A occurrence may be explained by the rarity of extensive poly-U and poly-pyrimidine tracts in coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, may also explain the pronounced 3\u2032-UTR bias of m6A occurrence as extensive poly-U and poly-pyrimidine tracts are rare in coding regions (Figure 5D, second row on the right-most column; Supplementary file 3, page 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of motif distribution across gene regions supports this inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "4d254d02-7150-4c23-937c-f47768bab68a",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C45",
+      "claim": "The tendency of m6A to occur at stop codons can be explained by UAA and UGA stop codons corresponding to DRA, increasing the frequency of DRACH directly at stop codons.",
+      "claim_type": "EXPLICIT",
+      "source": "As a special case in this context, our analyses suggest a simple explanation for the tendency of m6A to occur at stop codons. UAA and UGA correspond to DRA, increasing the frequency of occurrence of DRACH directly at stop codons (Figure 5D, second row on the left-most column), many of which have adjacent U-rich elements in the 3\u2032-UTRs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence analysis and motif enrichment at stop codons support this explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "bb5f895f-6a9c-44a4-8831-ed6b81060a94",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C46",
+      "claim": "This work refutes the claim by Wei et al., 2018 that ECT2 binds to the supposedly plant-specific m6A-containing sequence motif URU(m6A)Y.",
+      "claim_type": "EXPLICIT",
+      "source": "This key conclusion refutes the claim by Wei et al., 2018 that ECT2 binds to the supposedly plant-specific m6A-containing sequence motif URU(m6A)Y, and it thereby reconciles knowledge on m6A-YTHDF axes in plants specifically and in eukaryotes more broadly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The comprehensive data from iCLIP and HyperTRIBE contradicts the previous FA-CLIP-based conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "3c36b36d-5817-4f5a-9e88-1fe7d5a92663",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C47",
+      "claim": "The IDR of ECT2 limits accessibility of 5\u2032 ends of bound mRNAs to polynucleotide kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "First, RNA complexes with YTH-mCherry were 5\u2032-labeled by polynucleotide kinase much more efficiently than RNA complexes with full-length ECT2-mCherry, indicating that the IDR limits accessibility to the 5\u2032 of bound mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Differential labeling efficiency between full-length and truncated ECT2 supports this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "38b9983e-6ecf-4468-8d04-f1e4d620abef",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C48",
+      "claim": "The full-length ECT2W464A-mCherry mutant retained an enrichment of crosslink sites in 3\u2032-UTRs, in contrast to the m6A-binding-deficient YTHW464A-mCherry truncation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, in contrast to the m6A-binding-deficient YTHW464A-mCherry truncation, the full-length ECT2W464A-mCherry mutant retained an enrichment of crosslink sites in 3\u2032-UTRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of crosslink site distributions between different ECT2 variants supports IDR-mediated 3'-UTR binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "20999c46-21fa-47b5-a267-79916d5e7ef1",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C49",
+      "claim": "Crosslinks specific to the IDR are mainly 5\u2032 to m6A sites and cause an asymmetric distribution of ECT2 crosslink sites around m6A sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, crosslinks specific to the IDR (i.e., observed only with full-length ECT2-mCherry-RNA complexes, but not with YTH-Cherry-RNA complexes), could be assigned and have two notable properties. They are mainly 5\u2032 to m6A sites, and thereby cause a conspicuously asymmetric distribution of ECT2 crosslink sites around m6A sites, not seen with crosslinks to the YTH-mCherry fragment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of crosslink distributions between full-length and truncated ECT2 reveals IDR-specific binding pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "4caff89b-e1ff-49f5-a5b2-f45b6024019f",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C50",
+      "claim": "IDR-specific crosslinks are specifically enriched in U-rich elements of the type UUUUUU and UNUNU immediately upstream of m6A sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the IDR-specific crosslinks are specifically enriched in U-rich elements of the type UUUUUU and UNUNU immediately upstream.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Motif enrichment analysis of IDR-specific crosslink sites reveals this pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "1f1470dc-e5f4-43c4-83bc-cf40ab0bc2c5",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C51",
+      "claim": "Diverging IDRs among YTHDF paralogs could confer target specificity via binding to distinct motifs in the vicinity of m6A sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, it is possible that diverging IDRs among YTHDF paralogs could confer target specificity via binding to distinct motifs in the vicinity of m6A sites, such that specific YTHDF-target mRNA repertoires could exist even for YTHDF proteins coexpressed in the same cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extension of the findings about ECT2 IDR function.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "c5598664-28b3-4e17-b490-4bbe4ef692df",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C52",
+      "claim": "URUAY has three properties suggesting ties to ECT2 binding: it crosslinks to ECT2 when present 5\u2032 to m6A sites, it is more enriched close to m6A sites without ECT2 binding, and its enrichment 5\u2032 to ECT2 crosslink sites is observed only for IDR-independent crosslinks.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to other m6A-proximal, pyrimidine-rich sequences (e.g., UNUNU, YYYYY) that may be of importance for both m6A writing and ECT2 binding, URUAY appears to have ties more specifically to ECT2 binding thanks to three properties. (1) When present 5\u2032 to m6A sites, it crosslinks to ECT2, suggesting that some part of the protein can be in contact with URUAY. (2) URUAY is more enriched close to m6A sites for which there is no evidence of ECT2 binding, suggesting that it weakens ECT2 binding. This latter point is also consistent with the distinction of ECT2-bound from non-ECT2-bound m6A sites by machine learning that did not find URUAY to be of importance for ECT2-bound sites. (3) The URUAY enrichment 5\u2032 to ECT2 crosslink sites is observed only when crosslinks to both full-length protein and the YTH-mCherry fragment are considered (IDR-independent), but disappears when crosslinks specific to the full-length protein (IDR-dependent) are analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple analyses of URUAY motif distribution and association with ECT2 binding support these properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "302a3061-3822-468f-a2ef-38331e01d331",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "claim_id": "C53",
+      "claim": "The functional dissection of the URUAY element in m6A reading constitutes a subject of major importance, emphasized by the broad conservation of its enrichment around m6A sites across multiple plant species.",
+      "claim_type": "EXPLICIT",
+      "source": "In any event, the functional dissection of the URUAY element in m6A reading now constitutes a subject of major importance, emphasized by the broad conservation of its enrichment around m6A sites across multiple plant species, including rice (Li et al., 2014a; Zhang et al., 2019), maize (Luo et al., 2020; Miao et al., 2020), tomato (Zhou et al., 2019), and Arabidopsis (Miao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations support the conservation of URUAY enrichment across plant species.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "46ea0f3b-b676-45ad-9bef-0c27c20e254a",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the conserved nature of m6A modification in eukaryotes, including its consensus sequence RR(m6A)CH, nuclear localization of methylation, and the catalytic core METTL3/METTL14 (MTA/MTB in plants). The characteristic m6A motif and location are absent in organisms lacking these methyltransferases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are well-established facts in the field supported by multiple citations from prior literature. These claims provide essential background context and are not contested by the current work. The consistency across multiple independent studies supports these foundational claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "422a5184-942b-4677-9289-7b5cf175efb9",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The YTH domain contains a hydrophobic methyl-binding pocket that increases affinity for m6A-containing RNA by >10-fold, with modest dissociation constants (0.1-1 \u03bcM). YTH domain-RNA interactions primarily involve the sugar-phosphate backbone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 describe well-characterized structural and biochemical properties of YTH domains, supported by multiple citations. These provide important context for understanding ECT2 function and are consistent with the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "e6765a89-28fb-4792-afb3-65b5f60cd24a",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The YTHDF family in Arabidopsis comprises 11 proteins (ECT1-11), with ECT2/3/4 expressed in rapidly dividing cells and important for organogenesis. Their biological functions depend on intact m6A-binding pockets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 are supported by citations to prior work, including the authors' own previous studies. These claims establish the biological context for studying ECT2 and are consistent with the current manuscript's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "01957c30-3a31-402b-8618-46ee87186a07",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior work by Wei et al., 2018 concluded that ECT2 binds to URU(m6A)Y, and various U-rich motifs have been reported around m6A sites in plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 accurately describe prior literature claims that the current manuscript aims to address. These are factual statements about what has been reported, not endorsements of those conclusions. The current work will challenge C14.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "7139fac4-de94-4e90-b90e-8147cdaf061a",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ECT2-FLAG-ADAR fusion protein is functional in vivo, imparts adenosine-to-inosine editing of target mRNAs, and HyperTRIBE identified 16,176 edited sites in aerial tissues and 19,242 in roots (4864 and 5052 genes, respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are supported by phenotypic rescue data (Figure 1A), differential editing between fusion and control lines (Figure 1C), and rigorous statistical analysis using the hyperTRIBER pipeline. The functional validation and quantitative results provide strong evidence for successful implementation of HyperTRIBE in plants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "c76522a5-8572-475a-a9a7-da9d8904ef49",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "More than 76% of ECT2 HyperTRIBE targets had m6A support from independent studies (Shen et al., 2016 or Parker et al., 2020).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is supported by overlap analysis shown in Figure 2D. The high degree of overlap with independently generated m6A maps validates the HyperTRIBE approach and confirms that ECT2 predominantly binds m6A-containing transcripts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "8aeab340-5b6c-4418-ad4c-5baddc186551",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ECT2-mCherry can be specifically UV-crosslinked to target RNA in vivo, yielding 15,960 iCLIP peaks in 2281 genes from the 110-kDa band, with the majority of crosslink sites mapping to 3'-UTRs of mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 are supported by experimental data showing UV-dependent, m6A-binding-dependent RNA co-purification (Figure 3B), quantitative iCLIP analysis, and metagene profiles (Figure 3H). The 3'-UTR enrichment is consistent with m6A location, providing strong validation of the iCLIP approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "b527832f-eb8f-4b8f-a257-24c4b4f19bb1",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ECT2 targets identified by iCLIP and HyperTRIBE show clear overlaps with each other and with m6A-containing transcripts. HyperTRIBE identifies approximately three times more ECT2 targets than iCLIP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 are supported by overlap analysis (Figure 4D) and expression bias analysis (Figure 4E). The differential sensitivity is explained by methodological differences, with HyperTRIBE detecting lower-abundance targets. The convergence of orthogonal methods strengthens confidence in target identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "b0f31e9a-fdb2-462f-abb1-dbfae7e7956b",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ECT2 crosslinks preferentially upstream (~11 nt) of Nanopore-determined m6A sites, with mild depletion at the exact m6A site. This pattern is explained by UV crosslinking bias towards uridine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by positional analysis (Figure 5A) and nucleotide composition analysis (Figure 5B-C). The explanation invoking UV crosslinking bias is supported by citation (Hafner et al., 2021) and is consistent with the observed data patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "ad7c005f-cb89-4475-9325-4d34fc83de0e",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RRACH-like motifs and GGAU are most highly enriched at m6A sites, while U/Y-rich motifs show characteristic enrichment around, but depletion at, m6A sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by comprehensive motif enrichment analysis (Figure 5D, Figure 5\u2014figure supplements 3-4). The distinct distribution patterns of different motif classes provide important insights into m6A deposition and ECT2 binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "39b455d5-9194-47bd-b796-a363c35ffed5",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Machine learning analysis identifies DRACH/GGAU motifs at the site and flanking U/Y-rich sequences as main determinants for distinguishing m6A sites from background. Flanking U/Y-rich sequences are the main determinants for ECT2 crosslinking at m6A sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by random forest analysis with high AUC values (0.93 for m6A, 0.94 for ECT2 binding) and feature importance scores (Figure 6B, 6D). The machine learning approach provides quantitative assessment of relative motif importance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "9324d8bd-92b9-4596-a39d-e74cf33b0538",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Transcripts with m6A and ECT2 sites in close proximity are more likely to have UNUNU/UUUUU/YYYYY sequences upstream and less likely to have URURU/URUAY-like motifs upstream of the m6A site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by comparative motif distribution analysis splitting m6A sites by ECT2 binding proximity (Figure 7A, Figure 7\u2014figure supplement 1). The distinct patterns suggest different roles for these motif classes in ECT2 binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "ebcba29b-6c8e-4638-8818-687f4f665ac7",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The 5'-3' asymmetry of ECT2 peaks relative to m6A sites observed with full-length ECT2 is largely reduced with the truncated protein lacking the IDR. UUUUUU/UNUNU-like motifs are more enriched at IDR-dependent crosslink sites, while URURU/URUAY motifs show modest depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by comparison of full-length and truncated ECT2 iCLIP data (Figure 7C-D, Figure 7\u2014figure supplement 2). The differential motif enrichment patterns between IDR-dependent and IDR-independent crosslinks provide strong evidence for IDR involvement in RNA binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "611ea62d-e389-49c7-82ee-a44aa4f02260",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ECT2 binds to m6A predominantly in the DR(m6A)CH sequence context in vivo, consistent with reading of m6A written by the conserved nuclear MTA/MTB methyltransferase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by multiple lines of evidence including motif enrichment analysis (Figure 5D), positional analysis of ECT2 crosslinks relative to m6A sites (Figure 5A), and machine learning analysis (Figure 6). This is a major conclusion that reconciles plant m6A biology with the broader eukaryotic framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "c5e06579-ddad-428f-b538-256e291f5348",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The IDR of ECT2 participates in RNA binding by association with U-rich elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by multiple observations from iCLIP experiments comparing full-length and truncated ECT2 (C47-C50), including differential labeling efficiency, 3'-UTR enrichment patterns, and IDR-specific crosslink site analysis. The convergence of multiple lines of evidence strongly supports IDR involvement in RNA binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "20b36413-1343-4e25-8cb4-f40a28bb9b4c",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "URUAY may be a site of competition between the IDR of ECT2 and another unknown RNA-binding protein. Diverging IDRs among YTHDF paralogs could confer target specificity via binding to distinct motifs near m6A sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38 and C51 are explicitly stated as speculative models. While the data patterns (C52) support the possibility of competition at URUAY sites, no direct evidence for a competing RNA-binding protein is provided. These are reasonable hypotheses for future investigation but remain unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "f9bb7245-2724-497a-b213-a60418e0c270",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "FA-CLIP is not a recommendable technique for identification of RNAs associating with RNA-binding proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by comparison of FA-CLIP results with iCLIP and HyperTRIBE data showing poor overlap (Figure 4D, Figure 4\u2014figure supplement 2) and lack of expression bias expected for purification-based methods (Figure 4E). The data clearly demonstrate limitations of FA-CLIP for direct target identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "c669697d-075b-4e13-8514-9841db55640f",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "DRACH is the major N6-adenosine methylation site, GGAU is a minor methylation site, and m6A occurs in DRACH/GGAU islands embedded in U-rich regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by comprehensive motif enrichment analysis (Figure 5D, Figure 5\u2014figure supplements 3-4) showing distinct enrichment patterns at m6A sites. The conclusions are consistent with multiple independent m6A mapping studies cited in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "43b2578c-b03f-4501-9041-dced920b9d25",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "U-rich regions around m6A sites are of similar importance for m6A site recognition as DRACH/GGAU at the site. The 3'-UTR bias of m6A may be explained by rarity of poly-U/poly-pyrimidine tracts in coding regions. The tendency of m6A at stop codons is explained by UAA/UGA stop codons corresponding to DRA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by machine learning analysis (Figure 6B-C) and motif distribution analysis across gene regions (Figure 5D). The explanations for 3'-UTR bias and stop codon enrichment are logical inferences from the data, though they remain somewhat speculative without direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "79721e27-9542-4c5f-986c-ef714f919aef",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "This work refutes the claim by Wei et al., 2018 that ECT2 binds to the plant-specific m6A-containing sequence motif URU(m6A)Y.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by comprehensive data from iCLIP and HyperTRIBE showing ECT2 binds to DR(m6A)CH (C36), not URU(m6A)Y. The poor performance of FA-CLIP (C39) explains the discrepancy with Wei et al., 2018. This is a major conclusion that resolves confusion in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "4917cd0e-a6ab-4a1a-9c5b-fc4ffa785557",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The IDR of ECT2 limits accessibility of 5' ends of bound mRNAs to polynucleotide kinase, the full-length ECT2W464A mutant retains 3'-UTR enrichment, IDR-specific crosslinks are mainly 5' to m6A sites, and are enriched in UUUUUU/UNUNU elements immediately upstream.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are supported by multiple experimental observations comparing full-length and truncated ECT2 variants (Figure 3, Figure 7). The convergence of differential labeling efficiency, crosslink site distributions, and motif enrichment patterns provides strong evidence for IDR-mediated RNA binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "937f0137-2cb8-40fe-abc5-3f279aef4a32",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "URUAY has three properties suggesting ties to ECT2 binding: it crosslinks to ECT2 when present 5' to m6A sites, it is more enriched close to m6A sites without ECT2 binding, and its enrichment 5' to ECT2 crosslink sites is observed only for IDR-independent crosslinks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by multiple analyses of URUAY motif distribution and association with ECT2 binding (Figure 7A, Figure 7D, Figure 7\u2014figure supplement 1). The three distinct properties are clearly demonstrated in the data and support the competition hypothesis (C38), though the identity of the competing factor remains unknown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    },
+    {
+      "id": "b37de694-51ce-4aa7-ba15-9bc5cbd0bc55",
+      "content_id": "6da57f77-2a12-4e5a-9cd7-1ff57ad8e166",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The functional dissection of the URUAY element in m6A reading constitutes a subject of major importance, emphasized by broad conservation of its enrichment around m6A sites across multiple plant species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by citations showing conservation of URUAY enrichment across rice, maize, tomato, and Arabidopsis. This claim appropriately identifies an important direction for future research based on the current findings, though it does not present new experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:54:54.805555Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "31c5ee0c-3254-40fb-8b9d-959ce73ae142",
+      "result_id": "46ea0f3b-b676-45ad-9bef-0c27c20e254a"
+    },
+    {
+      "claim_id": "f2689eee-30a4-476f-ad47-f5bbb7360df3",
+      "result_id": "46ea0f3b-b676-45ad-9bef-0c27c20e254a"
+    },
+    {
+      "claim_id": "939189bf-e76c-461a-863d-06bea0fc2b64",
+      "result_id": "46ea0f3b-b676-45ad-9bef-0c27c20e254a"
+    },
+    {
+      "claim_id": "55563bb1-a1d5-4795-b69e-2c0e57a9a34c",
+      "result_id": "46ea0f3b-b676-45ad-9bef-0c27c20e254a"
+    },
+    {
+      "claim_id": "17b8e42f-a2c9-4d14-911c-dfa50c37496b",
+      "result_id": "46ea0f3b-b676-45ad-9bef-0c27c20e254a"
+    },
+    {
+      "claim_id": "a8884956-ce83-4d7d-8299-fe20a36959df",
+      "result_id": "46ea0f3b-b676-45ad-9bef-0c27c20e254a"
+    },
+    {
+      "claim_id": "5da1bf48-cc82-4c75-81cf-2bbd777916fa",
+      "result_id": "46ea0f3b-b676-45ad-9bef-0c27c20e254a"
+    },
+    {
+      "claim_id": "ed2aaee5-f54e-466a-87bb-a0709c6b6f0c",
+      "result_id": "422a5184-942b-4677-9289-7b5cf175efb9"
+    },
+    {
+      "claim_id": "0308a166-ce80-4314-8d2d-fcd4fcead86b",
+      "result_id": "422a5184-942b-4677-9289-7b5cf175efb9"
+    },
+    {
+      "claim_id": "b14173bb-f5d5-454a-93ec-f428db95d09e",
+      "result_id": "422a5184-942b-4677-9289-7b5cf175efb9"
+    },
+    {
+      "claim_id": "9c7547cc-38cb-4efc-857f-0c551030f683",
+      "result_id": "e6765a89-28fb-4792-afb3-65b5f60cd24a"
+    },
+    {
+      "claim_id": "cb5b30f9-39aa-4791-97aa-c59a360c9e25",
+      "result_id": "e6765a89-28fb-4792-afb3-65b5f60cd24a"
+    },
+    {
+      "claim_id": "f6d1db5b-a4df-4957-b8bb-2404807b2eb9",
+      "result_id": "e6765a89-28fb-4792-afb3-65b5f60cd24a"
+    },
+    {
+      "claim_id": "44daa5e8-9421-4ba9-bac0-761e5cca4e89",
+      "result_id": "01957c30-3a31-402b-8618-46ee87186a07"
+    },
+    {
+      "claim_id": "f3e6d53a-c0ff-4005-88e4-c966c98fd0fd",
+      "result_id": "01957c30-3a31-402b-8618-46ee87186a07"
+    },
+    {
+      "claim_id": "066c7c9f-8618-4c1b-a8e5-a5534205987a",
+      "result_id": "7139fac4-de94-4e90-b90e-8147cdaf061a"
+    },
+    {
+      "claim_id": "b30849b3-786a-4665-aa68-e9eea068ee6f",
+      "result_id": "7139fac4-de94-4e90-b90e-8147cdaf061a"
+    },
+    {
+      "claim_id": "0f3629bf-80cf-4af9-9df7-a7491f48406f",
+      "result_id": "7139fac4-de94-4e90-b90e-8147cdaf061a"
+    },
+    {
+      "claim_id": "c9522b61-adfc-498c-aa76-a99bb98b1e14",
+      "result_id": "c76522a5-8572-475a-a9a7-da9d8904ef49"
+    },
+    {
+      "claim_id": "a0433b00-605d-460f-9754-8601591b1edb",
+      "result_id": "8aeab340-5b6c-4418-ad4c-5baddc186551"
+    },
+    {
+      "claim_id": "0593ccc0-fbaa-44af-a3b8-cb09e560f35f",
+      "result_id": "8aeab340-5b6c-4418-ad4c-5baddc186551"
+    },
+    {
+      "claim_id": "67bad9e4-f14f-40fd-8ed8-11d59d73fafc",
+      "result_id": "8aeab340-5b6c-4418-ad4c-5baddc186551"
+    },
+    {
+      "claim_id": "3af01045-0d87-4743-93ca-dc895c6853e7",
+      "result_id": "b527832f-eb8f-4b8f-a257-24c4b4f19bb1"
+    },
+    {
+      "claim_id": "3ebbb912-49c8-478f-8ba9-08862f03962e",
+      "result_id": "b527832f-eb8f-4b8f-a257-24c4b4f19bb1"
+    },
+    {
+      "claim_id": "46d14597-5066-4bc1-aec5-f3979a805819",
+      "result_id": "b0f31e9a-fdb2-462f-abb1-dbfae7e7956b"
+    },
+    {
+      "claim_id": "b7191277-85f6-4960-8d85-89d069c4ebfd",
+      "result_id": "b0f31e9a-fdb2-462f-abb1-dbfae7e7956b"
+    },
+    {
+      "claim_id": "a82213a0-f8d3-4b3f-af3a-bb2181780bbd",
+      "result_id": "ad7c005f-cb89-4475-9325-4d34fc83de0e"
+    },
+    {
+      "claim_id": "7bdcabc1-fd93-456c-b886-7de5bc51f112",
+      "result_id": "ad7c005f-cb89-4475-9325-4d34fc83de0e"
+    },
+    {
+      "claim_id": "3b19abbd-2798-47de-85e9-94dd47b5e49a",
+      "result_id": "39b455d5-9194-47bd-b796-a363c35ffed5"
+    },
+    {
+      "claim_id": "37071b65-8797-40cc-b625-9df97751f932",
+      "result_id": "39b455d5-9194-47bd-b796-a363c35ffed5"
+    },
+    {
+      "claim_id": "c32f58a7-3b3a-4c25-bd02-3ecb3ddbf0dd",
+      "result_id": "9324d8bd-92b9-4596-a39d-e74cf33b0538"
+    },
+    {
+      "claim_id": "d1825a39-c26e-40e0-b0cd-65c8927064f0",
+      "result_id": "9324d8bd-92b9-4596-a39d-e74cf33b0538"
+    },
+    {
+      "claim_id": "785e33cb-a66f-41ac-92ec-aef5c921ebea",
+      "result_id": "ebcba29b-6c8e-4638-8818-687f4f665ac7"
+    },
+    {
+      "claim_id": "29a07d1a-e6aa-4c6f-9360-de55a3dba000",
+      "result_id": "ebcba29b-6c8e-4638-8818-687f4f665ac7"
+    },
+    {
+      "claim_id": "bedcbbb3-b9e1-4c4a-8410-850ab9f54053",
+      "result_id": "ebcba29b-6c8e-4638-8818-687f4f665ac7"
+    },
+    {
+      "claim_id": "37b58e70-a968-4a2c-98fc-ff984ea1a23b",
+      "result_id": "611ea62d-e389-49c7-82ee-a44aa4f02260"
+    },
+    {
+      "claim_id": "afdf9ea1-ba3f-42bf-b912-bc6f2a85e041",
+      "result_id": "c5e06579-ddad-428f-b538-256e291f5348"
+    },
+    {
+      "claim_id": "7cc2fb0c-5e7a-4a89-b704-b0d1742e773f",
+      "result_id": "20b36413-1343-4e25-8cb4-f40a28bb9b4c"
+    },
+    {
+      "claim_id": "1f1470dc-e5f4-43c4-83bc-cf40ab0bc2c5",
+      "result_id": "20b36413-1343-4e25-8cb4-f40a28bb9b4c"
+    },
+    {
+      "claim_id": "f0fb2776-b4f2-4f5a-8cd5-a48727f74dec",
+      "result_id": "f9bb7245-2724-497a-b213-a60418e0c270"
+    },
+    {
+      "claim_id": "2691c054-772f-4ee3-9b32-b33769808b93",
+      "result_id": "c669697d-075b-4e13-8514-9841db55640f"
+    },
+    {
+      "claim_id": "c551c444-16e3-4dba-a552-99e6ca2df196",
+      "result_id": "c669697d-075b-4e13-8514-9841db55640f"
+    },
+    {
+      "claim_id": "2f25d1af-c415-43fe-a877-d9c2fb0d0077",
+      "result_id": "c669697d-075b-4e13-8514-9841db55640f"
+    },
+    {
+      "claim_id": "87357742-ce9c-48d2-88bb-d6831499ce41",
+      "result_id": "43b2578c-b03f-4501-9041-dced920b9d25"
+    },
+    {
+      "claim_id": "f2686fce-fd9c-4541-983f-137b3cc19e62",
+      "result_id": "43b2578c-b03f-4501-9041-dced920b9d25"
+    },
+    {
+      "claim_id": "4d254d02-7150-4c23-937c-f47768bab68a",
+      "result_id": "43b2578c-b03f-4501-9041-dced920b9d25"
+    },
+    {
+      "claim_id": "bb5f895f-6a9c-44a4-8831-ed6b81060a94",
+      "result_id": "79721e27-9542-4c5f-986c-ef714f919aef"
+    },
+    {
+      "claim_id": "3c36b36d-5817-4f5a-9e88-1fe7d5a92663",
+      "result_id": "4917cd0e-a6ab-4a1a-9c5b-fc4ffa785557"
+    },
+    {
+      "claim_id": "38b9983e-6ecf-4468-8d04-f1e4d620abef",
+      "result_id": "4917cd0e-a6ab-4a1a-9c5b-fc4ffa785557"
+    },
+    {
+      "claim_id": "20999c46-21fa-47b5-a267-79916d5e7ef1",
+      "result_id": "4917cd0e-a6ab-4a1a-9c5b-fc4ffa785557"
+    },
+    {
+      "claim_id": "4caff89b-e1ff-49f5-a5b2-f45b6024019f",
+      "result_id": "4917cd0e-a6ab-4a1a-9c5b-fc4ffa785557"
+    },
+    {
+      "claim_id": "c5598664-28b3-4e17-b490-4bbe4ef692df",
+      "result_id": "937f0137-2cb8-40fe-abc5-3f279aef4a32"
+    },
+    {
+      "claim_id": "302a3061-3822-468f-a2ef-38331e01d331",
+      "result_id": "b37de694-51ce-4aa7-ba15-9bc5cbd0bc55"
+    }
+  ],
+  "comparisons": []
+}

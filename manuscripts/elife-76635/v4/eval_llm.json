@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Traditional psychophysical methods, while powerful due to their combination of controlled experiments and signal detection theory analysis, suffer from practical limitations including the requirement for many tedious trials, highly trained participants, and low engagement levels in untrained subjects that contaminate measurements with additional variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 collectively describe well-established characteristics of traditional psychophysics supported by citations and general knowledge in the field. The limitations described (C3, C15-C17) are documented in cited literature and represent consensus understanding of traditional psychophysical methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C44"
+    ],
+    "result": "Continuous psychophysics represents a methodological innovation that abandons the rigid trial structure of traditional methods, replacing binary responses with continuous behavioral adjustments to dynamic stimuli, requiring orders of magnitude less time and being more natural and suitable for untrained subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18-C20, and C44 describe the continuous psychophysics approach as established in cited literature (primarily Bonnen et al., 2015). The characterization of the method and its advantages are supported by citations, though claim C20 about suitability for children and infants is noted as inference rather than demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C21",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Current analysis methods for continuous psychophysics, specifically the Kalman filter approach proposed by Bonnen et al. (2015), only model the perceptual side of the tracking task and systematically overestimate perceptual thresholds compared to equivalent traditional psychophysical experiments, despite being highly correlated with classical measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C21-C25 accurately describe the limitations of the Kalman filter approach as documented in Bonnen et al. (2015). The systematic overestimation (C6, C25) and high correlation (C24) are both cited findings that motivate the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Tracking tasks involve motor control components that introduce additional sources of variability and bias beyond perception, including movement variability from neural sources, subjective cost trade-offs, and mistaken assumptions about task statistics, which cause perception-only models to overestimate perceptual uncertainty by lumping these factors into perceptual parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 present a well-reasoned theoretical argument supported by multiple citations (Faisal et al., 2008; Jones et al., 2002; Churchland et al., 2006; di Prampero, 1981; Shenhav et al., 2017; Petzschner and Glasauer, 2011; Beck et al., 2012). The prediction in C31 is subsequently validated through simulations (C37), providing empirical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The linear quadratic Gaussian (LQG) framework, a special case of partially observable Markov decision processes, provides a general framework for modeling sequential perception and action under uncertainty that generalizes Bayesian decision theory to sequential tasks and can flexibly incorporate behavioral costs, with the separation principle allowing independent computation of optimal estimation and control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 and C45-C47 describe well-established mathematical frameworks supported by appropriate citations (\u00c5str\u00f6m, 1965; Kaelbling et al., 1998; Anderson and Moore, 2007; Davis and Vinter, 1985). These are foundational theoretical results that are correctly characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "Four computational models of increasing complexity are proposed: the Kalman filter (ideal observer with one parameter), the optimal actor (adding action representation), the bounded actor (adding behavioral costs), and the subjective actor (adding subjective beliefs about stimulus dynamics that may differ from the true generative model).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 describe the four models presented in the study. These model descriptions are clearly defined and illustrated in Figure 2. The hierarchical structure where each model generalizes the previous one is logically sound and well-documented in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Simulation results demonstrate that with only 2 minutes of tracking data, the method achieves 95% posterior credible intervals of [0.8, 1.3] relative to true parameter values, suggesting a temporal efficiency gain of at least 10-fold compared to classical psychophysics requiring 800 trials (~20 minutes) to achieve comparable precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 present simulation results from the manuscript (Figure 3B) and compare them to cited literature (Sch\u00fctt et al., 2015). The efficiency gain calculation (C57) is a reasonable inference based on comparing the credible interval widths and time requirements, though it involves some assumptions about comparability between methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Simulations demonstrate that models not accounting for behavioral costs and action variability (Kalman filter and optimal actor) systematically overestimate perceptual uncertainty when applied to data containing these factors, while bounded and subjective actor models accurately recover true parameter values, with Bayesian model comparison confirming the data-generating model has highest predictive accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C60 describe simulation results shown in Figure 3C and Figure 3\u2014figure supplement 1. The simulations provide clear empirical validation of the theoretical prediction in C31, demonstrating that perception-only models misattribute motor and cognitive variability to perceptual uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Analysis of empirical data from Bonnen et al. (2015) shows that both Kalman filter and subjective actor models yield perceptual uncertainty estimates highly correlated with classical 2IFC measurements (r > 0.88), but the subjective actor produces smaller estimates (average factor 2.39 vs. 3.46 for KF) that are closer to the 2IFC task by accounting for action variability and control effort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 present empirical results from reanalysis of published data shown in Figure 4A. The high correlations and systematic differences between models are clearly documented. The interpretation that accounting for motor factors leads to more accurate perceptual estimates is well-supported by the data and consistent with simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The subjective actor model better captures the autocorrelation structure of tracking data (correlation 0.86 vs. 0.61 for Kalman filter) and receives overwhelming support from Bayesian model comparison with Akaike weights > 0.98 in all three subjects from the Bonnen et al. (2015) dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 present quantitative model comparison results from Figure 4D-E. The cross-correlogram analysis provides qualitative validation of model fit, while WAIC-based model comparison provides strong statistical evidence. The overwhelming evidence claim is justified by the extremely high Akaike weights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C77"
+    ],
+    "result": "Application to additional datasets (Bonnen et al., 2017 finger tracking and Kn\u00f6ll et al., 2018 gaze tracking) shows that model selection using WAIC favored the subjective actor in most cases across human and non-human primate subjects, with one exception where the bounded actor performed best.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 and C77 describe model comparison results across multiple datasets shown in Figure 5B and Appendix 5\u2014figure 2. The consistency of results across different experimental paradigms and species strengthens the evidence for the approach, though the single exception noted suggests some variability in which model best describes behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C38",
+      "C73",
+      "C78"
+    ],
+    "result": "The Bayesian inverse optimal control framework successfully recovers perceptual thresholds from continuous psychophysics data and additionally estimates action variability, internal behavioral costs, and subjective beliefs about stimulus dynamics, with overwhelming evidence from model comparison that it explains data better than perception-only models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C38, C73, and C78 summarize the main findings of the study. These claims are well-supported by the simulation results (C54-C60), empirical analyses (C61-C70), and cross-dataset validation (C71-C72, C77). The framework's ability to recover multiple parameters is demonstrated through posterior distributions shown in Figures 4B-C and Figure 5\u2014figure supplement 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "At the lowest contrast conditions, all models show large systematic deviations from 2IFC measurements, pointing toward additional mechanisms such as computational costs or uncertainty not captured by current models, possibly related to longer temporal integration at low contrasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C76 identify a limitation in the current models observed in Figure 4A. While C74 accurately describes the observed discrepancy and C76 cites relevant literature about temporal integration, C75 is explicitly speculative. The authors acknowledge this as an open question requiring further research, making the underlying mechanisms uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Perceptual uncertainty estimates often differ between classical psychophysical tasks due to factors like attention, memory, intrinsic costs, and subjective beliefs that are typically not modeled by signal detection theory, and the current framework allows modeling and inferring some of these cognitive factors, underscoring that psychophysical methods always imply a generative model of behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 present a conceptual discussion supported by citations (Yeshurun et al., 2008; J\u00e4kel and Wichmann, 2006; Green and Swets, 1966; Swets, 1986; Wixted, 2020). The argument that additional cognitive factors influence psychophysical measurements is well-established, and the claim that the current framework can model some of these factors is demonstrated by the empirical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The analysis framework opens prospects for wider adoption of continuous psychophysics by recovering perceptual uncertainties closer to classical paradigms than previous methods while extracting meaningful psychological quantities, providing evidence for the importance of modeling behavioral goals and subjective costs even in experiments seemingly only investigating perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 present the main conclusions of the study. These are well-supported by the empirical results showing improved agreement with classical methods (C61-C66, C73), successful parameter recovery (C54-C55, C58), and consistent model selection results (C70-C72, C77-C78). The broader implications are reasonable inferences from the demonstrated results.",
+    "result_type": "MAJOR"
+  }
+]

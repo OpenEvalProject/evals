@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The granular retrosplenial cortex (RSG) is critical for both spatial and non-spatial behaviors and is among the most densely connected brain regions, serving as part of the default mode network. RSG activity correlates with spatial navigation, learning, memory, fear conditioning, imagination, and planning for the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C6-C13 establish the functional importance and connectivity of RSG based on extensive citations to prior literature. These are well-established background claims that provide context for the current study and are appropriately supported by multiple prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C24",
+      "C30",
+      "C35",
+      "C61"
+    ],
+    "result": "While anatomical connections of RSG are well-documented, few studies have examined their functional nature and cell-type specificity. Specifically, subtype-specific responses to anterior thalamic inputs, functional targets of claustral and cingulate inputs to superficial RSG, and cellular targets of ACC inputs to RSG have not been sufficiently explored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C24, C30, C35, and C61 establish gaps in prior knowledge that motivate the current study. These claims are appropriately supported by citations and literature review, clearly identifying what was previously unknown and justifying the need for the present investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The superficial layers of RSG contain two distinct subtypes of principal excitatory pyramidal neurons: low-rheobase (LR) neurons and regular-spiking (RS) neurons, which have strikingly distinct physiology, morphology, and computational capabilities. LR neurons are distinguished by low rheobase, high input resistance, lack of adaptation, and narrow spike width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are well-supported by experimental data shown in Figure 1 and supplementary materials, with appropriate statistical comparisons (Wilcoxon rank sum tests) demonstrating significant differences in intrinsic properties between LR and RS neurons. These findings are consistent with prior studies (Brennan et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The anterior thalamus strongly and selectively recruits LR pyramidal cells in RSG. Virus injections into anterodorsal and anteroventral thalamic nuclei resulted in ChR2-eYFP expression predominantly in layer 1a and layer 3. LR neurons were strongly driven past spike threshold by thalamic inputs, showing significant increases in spiking (p=0.002), while RS neurons exhibited far smaller EPSPs with no significant spiking increase (p=0.19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C39-C43 are strongly supported by optogenetic circuit mapping data in Figures 1D-H with appropriate statistical tests (Wilcoxon rank sum). The experimental design includes proper controls (picrotoxin to block feedforward inhibition) and demonstrates clear cell-type-specific differences in responses to thalamic input.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "LR apical dendrites are most densely localized to L1a with basal dendrites in L3, while RS apical dendrites exist in deeper L1 subdivisions (L1b/c) with basal dendrites in upper L5. ADAV axons and terminals are localized in L1a and weakly in L3, co-localizing with LR but not RS dendrites. This anatomical colocalization coupled with functional connectivity indicates the anterior thalamic-retrosplenial circuit at least partially obeys Peters' rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are well-supported by morphological reconstruction data and projection density analysis shown in Figure 2C-D. The anatomical data directly correlate with functional responses, providing strong evidence for Peters' rule in this circuit. The methodology for morphological analysis is clearly described and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "LR neurons had significantly larger EPSP amplitudes in response to L1a LED stimulation compared to RS cells (p=0.0185) and L5 RS neurons. High-resolution optogenetic stimulation revealed that LR neurons have the largest EPSP amplitude when targeting layer 1a, with significantly larger responses at L1a (p=0.00001) and cell body (p=0.0006) compared to L1/2. RS neurons showed no significant lamination of functional responses. This demonstrates LR neurons are uniquely anatomically adapted to respond to anterior thalamic inputs due to precise overlap of their apical dendrites with thalamic axons in L1a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C58 are strongly supported by experimental data in Figure 2E-G using both high LED power and minimum LED power protocols with appropriate statistical analyses (Wilcoxon rank sum and paired t-tests). The high-resolution optogenetic stimulation protocol (20-30 \u00b5m intervals) provides detailed laminar mapping that directly correlates anatomical and functional organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Regular-spiking (RS) cells are preferentially controlled by claustral inputs. ChR2 injections into CLA resulted in expression in layers 1c, 2, and 5, distinct from thalamic expression. RS apical dendrites anatomically overlap with CLA arbors in superficial layers 1c and 2 and upper layer 5. RS neurons have significantly larger responses to CLA input compared to LR neurons when stimulated at layer 1/2 (p=0.0000035), with significantly larger responses at L1/2 (p=0.00725) and L5sup (p=0.0301) compared to L1a. LR neurons showed no significant lamination of functional responses to ClaC inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C62-C71 are well-supported by optogenetic circuit mapping data in Figures 3A-G with appropriate statistical analyses. The experimental design parallels that used for thalamic inputs, allowing direct comparison. The anatomical and functional data converge to demonstrate selective targeting of RS cells by claustral inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Corticocortical inputs from the anterior cingulate target L1b/c and, to a lesser extent, L5, overlapping precisely with RS but not LR dendrites. RS cells had significantly larger EPSP amplitudes compared to LR cells when stimulating ACC arbors at L1/2 (p=0.0019), with significantly larger responses at L1/2 (p=0.000037) and cell body (p=0.000525) compared to L1a. Both claustrocortical and corticocortical inputs to RSG target RS apical dendrites at lower divisions of L1, whereas thalamocortical inputs preferentially target LR cell apical dendrites in upper L1. This parallel processing is enabled by precise sublaminar organization of afferent axons and layer 3 principal cell apical dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are strongly supported by experimental data in Figures 4A-G with appropriate statistical analyses. The findings demonstrate a clear double dissociation: thalamic inputs target LR cells in L1a, while claustral and ACC inputs target RS cells in lower L1 subdivisions. This is a key result establishing parallel processing circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Dorsal subiculum, which transmits allocentric spatial information, precisely targets layer 2/3 principal neurons in RSG. DS afferents to layer 3 precisely overlap with LR basal and proximal apical dendrites but not RS basal dendrites. LR neurons responded with significantly larger EPSPs compared to RS neurons when DS inputs were stimulated at the cell body (p=0.004), with significantly larger responses at layers 1/2 (p=0.0132) and 3 (p=0.0135) compared to L1a. RS cells showed no significant laminal differences. Thus, inputs from both dorsal subiculum and anterior thalamus target LR cells, while claustrum and anterior cingulate target RS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 are well-supported by experimental data in Figures 5A-G with appropriate statistical analyses. The findings demonstrate that DS inputs, like thalamic inputs, selectively target LR cells, reinforcing the parallel circuit organization. The convergence of spatial information from both ADAV and DS onto LR cells is a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Precise sublaminar axonal and dendritic arborization within RSG layer 1 permits parallel processing. LR dendrites are strongly positively correlated with ADAV (r=0.88, p<0.001) and DS (r=0.69, p=1.41e-254) axons but negatively correlated with CLA (r=-0.49, p=1.16e-110) and ACC (r=-0.15, p=1.00e-10) axons. RS dendrites are positively correlated with CLA (r=0.29, p=4.82e-36) and ACC (r=0.43, p=5.73e-82) axons but negatively correlated with ADAV (r=-0.55, p=2.47e-145) and DS (r=-0.44, p=7.74e-85) axons. ADAV and DS inputs were positively correlated with each other (r=0.55, p=2.93e-143), as were CLA and ACC inputs (r=0.23, p=2.3e-23), but these two streams were negatively correlated. LR and RS dendrite-dendrite correlations were strongly anti-correlated (r=-0.65, p=3.00e-215). This precise organization creates a parallel circuit in which LR neurons are selectively optimized to integrate incoming spatial information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C86-C94 are strongly supported by comprehensive correlation analyses of morphological data shown in Figure 6B-C with highly significant p-values. The correlation matrix provides quantitative evidence for the parallel circuit organization, demonstrating that the anatomical segregation is statistically robust across multiple input-dendrite comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Contralateral RSG inputs to RSG showed lamination and cell-type-specific targeting resembling that of projections from CLA and ACC. Specifically, cRSG inputs targeted L1c, L2, and L5, resulting in strong activation of RS cells with almost no responses in LR cells. This suggests inputs from CLA, ACC, and cRSG follow a structured pattern by which these inputs preferentially control RS cells, while ADAV and DS projections target LR cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by experimental data in Figure 6\u2014figure supplement 1. This supplemental finding extends the parallel circuit organization to include contralateral RSG inputs, further supporting the general principle that RS cells receive non-spatial inputs while LR cells receive spatial inputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Laminar dichotomies similar to those seen in RSG also exist between TC and ClaC/corticocortical projections to other cortical regions such as the medial prefrontal cortex. The findings may highlight a more universal framework by which other cortical regions integrate and process thalamic versus claustral and cortical inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 are based on examination of Allen Brain Institute data (Figure 6\u2014figure supplement 2) and citation to prior work (Cruikshank et al., 2012). While the comparison to PFC is interesting, the claim of a 'more universal framework' (C99) is speculative and would require systematic examination across multiple cortical regions. The evidence is suggestive but insufficient to definitively establish universality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "10 Hz anterior thalamic inputs from ADAV to RSG LR neurons were uniquely and significantly depressing (p=1.02e-5), in contrast to previously documented thalamocortical matrix inputs. 10 Hz DS inputs to LR neurons were not depressing and exhibited weak facilitation. Both CLA and ACC inputs to RS cells were weakly facilitating. The synaptic depression of anterior thalamic inputs to LR neurons is unique among the inputs examined and distinct from anterior thalamic inputs to superficial principal neurons in PFC and ACC. ADAV inputs to LR cells do not show synaptic depression at 0.1 Hz, but 40 Hz inputs resulted in stronger depression than 10 Hz (p=0.0022).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 are well-supported by experimental data in Figures 7A-D and Figure 7\u2014figure supplement 1 with appropriate statistical analyses. The short-term dynamics experiments are properly controlled and demonstrate a unique property of ADAV-LR synapses. The frequency-dependence of depression (0.1 Hz vs 10 Hz vs 40 Hz) is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Thalamocortical synaptic dynamics enable computational models of LR neurons to compute the speed of head rotation despite receiving head direction inputs that do not explicitly encode speed. The firing rate of the postsynaptic LR cell receiving HD input via depressing synapses was strongly correlated with angular head speed, while identical HD inputs via non-depressing synapses resulted in LR firing rates uncorrelated with angular head speed. In the model, firing rates of input HD cells were not explicitly modulated by angular head velocity; therefore, the observed speed tuning resulted strictly from the depressing synaptic dynamics. LR cell firing rate was optimally correlated with head speed 24 ms in the past. Synaptic depression of HD ensemble inputs introduces an angular head speed signal into the LR population, producing neurons that are more responsive during faster head turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C106-C110 are supported by computational modeling results shown in Figures 8B-F. The model is based on experimentally observed synaptic depression parameters (fitted to data in Figure 7) and uses in vivo head tracking data. The key finding that depression alone can generate speed tuning is clearly demonstrated by comparison with non-depressing synapses. However, this is a computational prediction that requires in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Anterior thalamic HD cells display anticipatory firing, with mean anticipatory time interval (ATI) reported as 25-50 ms. Increasing ATI from 0 ms to higher values improved the lag between LR firing rate and angular head speed, with larger ATIs resulting in shorter latency. Larger ATIs also improved the angular head speed tuning of LR neurons independent of lag. Anticipatory firing of HD cells may constitute a powerful coding principle in the thalamo-retrosplenial circuit, helping LR cells to encode current head speed with minimal lag and better encode head speed independent of lag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by computational modeling results shown in Figure 9B-C. The ATI values used are based on prior experimental data (Taube, 2010). The modeling demonstrates that anticipatory firing improves both the temporal precision and quality of speed coding. However, this is a computational prediction that requires in vivo validation to confirm the proposed coding principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Analytical analysis showed that LR activity should encode head speed with depressing synapses from simplified HD cells. Anticipatory firing compensates for the lag introduced by integration time, leading to a theoretical parameter regime for which postsynaptic speed coding can be essentially perfect. Postsynaptic activity, at least at lower rotational speeds, is proportional to the square of head speed, explaining the concave-up, parabolic shape of the speed-firing rate curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by analytical mathematical derivations presented in the Appendix and computational modeling results shown in Figure 8C and Figure 8\u2014figure supplement 2. The analytical work provides theoretical understanding of the mechanisms underlying speed coding and the quadratic relationship at low speeds. The mathematical analysis is rigorous and consistent with simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Single cell activity in the LR population could encode both head direction and head speed, but there was a clear tradeoff between the two types of information. The tradeoff between directional versus speed encoding was explained by the level of heterogeneity in the presynaptic preferred direction distribution. Non-uniform HD inputs via depressing thalamocortical synapses represent a simple mechanism by which LR cells can conjunctively encode both head direction and head speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by computational modeling results shown in Figure 10. The model demonstrates that varying the uniformity of HD input distributions produces a continuum of cells with different balances of directional versus speed encoding. This is an important prediction about population-level coding that requires in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "LR neurons do not synapse onto neighboring excitatory neurons within layers 2/3 or layer 5 RS cells (0/9 pairs tested), and thus likely do not provide substantial input to other LR cells or RS cells in layers 2-5 of ipsilateral RSG. Instead, LR neurons send their axons into the corpus callosum and may likely target homotopic regions of contralateral RSG. Retrograde injections into one RSG hemisphere have been shown to predominantly label small contralateral L2/3 cells, most likely corresponding to LR cells that constitute the majority of cells in L2/3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 are supported by experimental data (0/9 connected pairs) and citations to prior anatomical studies. The lack of local connectivity is an important finding that constrains models of LR cell function. However, the claim that LR cells 'may likely target' contralateral RSG (C124) is somewhat speculative, though supported by prior anatomical evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The small, excitable LR cells are unique among pyramidal cells in RSG, and there is no evidence for such cells in any other cortical regions. The 'granular' in granular retrosplenial cortex refers to the appearance of dense small cell bodies in superficial RSG, making LR cells the defining morphological feature of RSG. The low rheobase and lack of spike frequency adaptation are their defining computational features. Many other neurons in superficial RSG are also late spiking, including L2/3 fast-spiking interneurons and some RS neurons, so late-spiking is neither a distinctive feature of LR neurons nor excitatory neurons in RSG. The name 'late-spiking (LS) neuron' is already the accepted nomenclature for neurogliaform cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 are supported by citations to prior studies and provide important context for nomenclature and cell type identification. The discussion of why 'low-rheobase' is preferred over 'late-spiking' is well-reasoned and addresses potential confusion with neurogliaform cells. These claims establish the unique nature of LR cells and justify the nomenclature used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Previous work has reported TC-evoked responses in layer 5 RS neurons at their apical dendrites, with some variation in magnitude across cells. Layer 5 is not homogenous, often divided into sublayers 5A and 5B, and contains various pyramidal cell types. The results suggest LR cells are the predominant spatial information-encoding subtype within RSG. The distinct morphology and intrinsic properties of LR neurons make them ideally suited to integrate head direction input from the thalamus and spatial inputs from the hippocampal formation via the dorsal subiculum. Integration of various types of directional and distance information is often stated as the key computational function of the retrosplenial cortex as a whole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 are supported by citations to prior studies and inference from the current experimental data. The discussion acknowledges heterogeneity in layer 5 and appropriately notes that further work is needed to characterize layer 5 subtypes. The conclusion that LR cells are the predominant spatial information-encoding subtype (C136) is well-supported by the data showing significantly larger TC responses in LR cells compared to both L3 and L5 RS cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Matrix TC inputs evoke feedforward inhibition to regulate cortical signaling through both disinhibition and disynaptic inhibition of pyramidal neurons. ClaC inputs invoke feedforward inhibition in several cortical regions, particularly through recruitment of neuropeptide Y (NPY) and FS cells. Long-range inhibitory signals from CA1 of the hippocampus target apical dendrites in retrosplenial layer 1a, converging with excitatory anterior thalamic inputs, to precisely regulate these TC inputs and establish a hippocampo-thalamo-retrosplenial network. The fine-grained laminar overlap of inhibitory signals from CA1 with TC inputs strongly suggests these inhibitory signals may regulate responses to matrix TC input more strongly for LR than layer 5 RS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 are supported by citations to prior studies establishing the role of feedforward inhibition in these circuits. Claim C142 is a reasonable inference based on the anatomical overlap of CA1 inhibitory inputs with LR dendrites in L1a, but is appropriately presented as speculation requiring further investigation. The discussion appropriately identifies this as an important area for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Selective ablation of putative retrosplenial RS cells located near the boundary and within upper layer 5 resulted in contextual fear amnesia, indicating these cells are involved in fear-related functions of the retrosplenial cortex. Both the CLA and ACC have been heavily implicated in fear-associated behaviors, suggesting that CLA and ACC inputs to L3 RS cells help to support the role of these neurons in contextual fear conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 are supported by citations to prior studies. The inference that CLA and ACC inputs to RS cells support fear conditioning (C145) is reasonable given the involvement of all three regions in fear behaviors and the demonstrated anatomical connectivity. However, this is a speculative inference that requires causal testing (e.g., selective inactivation of CLA or ACC terminals in RSG during fear conditioning).",
+    "result_type": "MINOR"
+  }
+]

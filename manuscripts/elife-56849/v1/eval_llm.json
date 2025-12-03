@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors demonstrate optogenetic control of bacterial gene expression in the C. elegans gut using the CcaSR system. E. coli strain LH01 expressing sfGFP under CcaSR control shows rapid, reversible light-dependent gene expression changes in the worm gut, with fluorescence increasing within 2 hours of green light exposure and decreasing exponentially upon red light exposure. The response requires the PCB chromophore and is confirmed by both microscopy and flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C45 provide strong converging evidence from multiple experimental approaches (microscopy and flow cytometry) with appropriate controls (\u0394PCB mutant). The temporal dynamics are well-characterized, and controls demonstrate that responses are due to bacteria within the gut rather than external contamination. The mechanistic basis (CcaSR photoswitching) is established from prior work and validated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors engineered E. coli strain MVK29 to produce colanic acid (CA) under optogenetic control by placing rcsA expression under CcaSR regulation. Green light induces high CA secretion while red light results in undetectable CA levels. The response is abolished by removing the PCB operon or mutating key residues in CcaS or CcaR. CA production increases sigmoidally with green light intensity, enabling dose-dependent control of bacterial metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C58 demonstrate successful optogenetic control of CA biosynthesis with appropriate genetic controls (\u0394PCB, CcaS H534A, CcaR D51N mutations) that establish specificity. The dose-response relationship (C55-C56) is consistent with known CcaSR properties. The CA quantification assay is adapted from established methods and validated against mutant controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Light-induced CA production from MVK29 in the C. elegans gut increases mitochondrial fragmentation in intestinal cells, recapitulating the effect of the constitutive CA-overproducing \u0394lon mutant. Green light increases fragmentation in MVK29-fed worms but not in worms fed the \u0394PCB control strain, demonstrating that the effect requires light-inducible CA production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 show that optogenetically-induced CA production phenocopies the \u0394lon mutant effect on mitochondrial morphology. The \u0394PCB control (C63) establishes that the effect requires functional optogenetic control. The comparison to prior work on \u0394lon and purified CA (C61) provides validation. However, the mitochondrial fragmentation assay relies on subjective morphological classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CA produced in the C. elegans gut protects intestinal mitochondria from levamisole-induced stress. Six hours of levamisole treatment causes mitochondrial hyper-fragmentation in both intestinal and muscle cells. Green light-induced CA production from MVK29 suppresses this fragmentation in intestinal cells but not in muscle cells, revealing a local protective effect of CA. The protective effect requires functional CcaSR and CA production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 demonstrate tissue-specific protection by CA using levamisole-induced stress as a model. Multiple genetic controls (\u0394PCB, CcaS H534A, CcaR D51N, \u0394rcsA) establish specificity (C70). The differential effect in intestine versus muscle (C72-C73) supports local action. However, the mechanism linking levamisole to mitochondrial fragmentation is speculative (C66), and the use of levamisole as a paralytic agent may confound interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Optogenetic control of CA production extends C. elegans lifespan in a dose-dependent manner. Green light exposure extends lifespan of worms bearing MVK29 compared to red light, with 1.7-fold greater extension at high versus low green light intensity. The lifespan extension is comparable to that caused by the constitutive CA-overproducing \u0394lon mutant and is independent of light in control strains (\u0394lon, \u0394rcsA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C87 demonstrate dose-dependent lifespan extension with appropriate controls. The comparison to \u0394lon (C81-C83) validates the approach, and the dose-response (C79-C80) demonstrates quantitative control not achievable with genetic mutants. However, the manuscript does not report sample sizes, statistical tests, or p-values for the lifespan experiments in the main text (only referenced in Supplementary file 1c). The use of the temperature-sensitive sqt-3 mutant background may affect generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The dynamic range of the CcaSR optogenetic system varies across different genetic backgrounds and reporter constructs. In vitro, CcaSR v2.0 shows 77-fold dynamic range in the reference strain, 84.2-fold in \u0394rcsA, and 38.3-fold with the mCherry cassette. In worms, the fold-change decreases to 5.52\u00b12.4 for pLH401 and 8.63\u00b13.6 for pLH405.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 provide systematic characterization of system performance across conditions. The data show substantial reduction in dynamic range in vivo compared to in vitro, which is important for interpreting results. However, the reasons for reduced performance in worms are not fully explained, and the high variability (large error bars) in worm measurements raises questions about reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Bacteria outside the worm gut do not contribute to the observed light responses. Control experiments show that bacteria in M9Ce+Lev media (the experimental buffer) do not respond to light, while bacteria in M9Ec media with intact PCB operon do respond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 address an important potential confound. The control experiments (Figure 1\u2014figure supplement 4) demonstrate that external bacteria or bacteria that escape during experiments do not contribute to measured responses. This validates that observed effects are due to bacteria within the gut.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors establish the rationale for their approach by reviewing prior work on gut microbiome-longevity associations and limitations of existing methods. They note that establishing causal links requires direct manipulation of microbial metabolism in situ, which is challenging with chemical inducers due to potential side effects and poor spatiotemporal control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide appropriate context from prior literature. The limitations of chemical inducers (C17-C18) are stated as general concerns rather than demonstrated experimentally, but are reasonable based on known properties of these compounds. The rationale for using C. elegans as a model system is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors review prior work on optogenetics and the E. coli-C. elegans model system. Optogenetic tools have been used to achieve precise quantitative, temporal, and spatial control of bacterial gene expression in vitro. The E. coli-C. elegans system is optically transparent with known mechanistic links between bacterial metabolism (specifically colanic acid production) and host longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C28 accurately summarize prior work with appropriate citations. The characterization of the E. coli-C. elegans system (C26) and CA's role in longevity (C27-C28) are based on established literature, particularly Han et al. 2017, which is cited throughout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C59",
+      "C60",
+      "C61",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors provide methodological details and background information about bacterial operons, the cps operon structure, CA-overproducing mutants, levamisole effects, E. coli strain differences, CA quantification methods, and the sqt-3 temperature-sensitive mutant used for lifespan assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C59-C61, C113-C116 provide necessary methodological context supported by appropriate citations. The CA quantification method (C115) is adapted from established protocols. The use of sqt-3 mutant (C116) is justified for longitudinal studies. These are primarily methodological details rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors discuss future applications and extensions of their approach, including studying other E. coli genes affecting longevity, using the method in B. subtilis, multiplexing with other optogenetic systems, extending to other host organisms, and addressing limitations of the current E. coli-C. elegans system. They propose that optogenetics will improve understanding of microbe-host interactions and diet-microbe-host interplays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C103 are primarily speculative statements about future applications (C98, C99, C100) or general discussion points. While the suggestions are reasonable based on the demonstrated proof-of-concept, they represent proposed future work rather than results from the current study. The limitations discussed (C94-C97) are acknowledged but not experimentally addressed. These claims do not constitute results that can be evaluated as supported or unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C32"
+    ],
+    "result": "The authors demonstrate an optogenetic method to control bacterial gene expression and metabolite production in the host gut, specifically engineering E. coli to secrete colanic acid under light control. This approach reveals local protective effects on intestinal mitochondria and enables dose-dependent lifespan extension, demonstrating quantitative and temporal control of gut bacterial metabolism to study effects on host health and aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 and C32 represent the main conclusions of the work, which are well-supported by the experimental results detailed in other claim groups. These high-level summary claims integrate findings from gene expression control (C3), CA production (C4), mitochondrial protection (C5), dose-dependent lifespan extension (C6), and overall conclusions about the method's capabilities (C7, C32). The evidence from Figures 1-4 collectively supports these conclusions.",
+    "result_type": "MAJOR"
+  }
+]

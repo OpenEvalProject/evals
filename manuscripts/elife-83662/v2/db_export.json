@@ -1,0 +1,1786 @@
+{
+  "submission": {
+    "id": "4c76d069-12d9-4d24-ace6-274413580940",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:18:34.605137Z",
+    "updated_at": "2025-12-03T19:18:34.605137Z"
+  },
+  "content": [
+    {
+      "id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "submission_id": "4c76d069-12d9-4d24-ace6-274413580940",
+      "content_type": "manuscript",
+      "content_text": "# Development and evaluation of a live birth prediction model for evaluating human blastocysts from a retrospective study\n\n## Authors\n\n- Hang Liu<sup>1</sup> ([ORCID: 0000-0001-7948-4236](https://orcid.org/0000-0001-7948-4236))\n- Zhuoran Zhang<sup>2</sup>\n- Yifan Gu<sup>3</sup>\n- Changsheng Dai<sup>1</sup>\n- Guanqiao Shan<sup>1</sup> ([ORCID: 0000-0002-2570-769X](https://orcid.org/0000-0002-2570-769X))\n- Haocong Song<sup>1</sup>\n- Daniel Li<sup>5</sup>\n- Wenyuan Chen<sup>1</sup>\n- Ge Lin<sup>3</sup> \u2020\n- Yu Sun<sup>1</sup> ([ORCID: 0000-0001-7895-0741](https://orcid.org/0000-0001-7895-0741)) \u2020\n\n### Affiliations\n\n1. Department of Mechanical Engineering, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n2. School of Science and Engineering, The Chinese University of Hong Kong-Shenzhen Shenzhen China ([ROR:00t33hh48](https://ror.org/00t33hh48))\n3. Institute of Reproductive and Stem Cell Engineering, School of Basic Medical Science, Central South University Changsha China ([ROR:00f1zfq44](https://ror.org/00f1zfq44))\n4. Reproductive and Genetic Hospital of CITIC-Xiangya Changsha China ([ROR:01ar3e651](https://ror.org/01ar3e651))\n5. Department of Electrical and Computer Engineering Toronto Canada\n6. Key Laboratory of Reproductive and Stem Cell Engineering, National Health and Family Planning Commission Changsha China ([ROR:052eegr76](https://ror.org/052eegr76))\n7. National Engineering Research Center of Human Stem Cells Changsha China ([ROR:02khfyc93](https://ror.org/02khfyc93))\n8. Institute of Biomedical Engineering, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n9. Department of Computer Science, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:In infertility treatment, blastocyst morphological grading is commonly used in clinical practice for blastocyst evaluation and selection, but has shown limited predictive power on live birth outcomes of blastocysts. To improve live birth prediction, a number of artificial intelligence (AI) models have been established. Most existing AI models for blastocyst evaluation only used images for live birth prediction, and the area under the receiver operating characteristic (ROC) curve (AUC) achieved by these models has plateaued at ~0.65.Methods:This study proposed a multimodal blastocyst evaluation method using both blastocyst images and patient couple\u2019s clinical features (e.g., maternal age, hormone profiles, endometrium thickness, and semen quality) to predict live birth outcomes of human blastocysts. To utilize the multimodal data, we developed a new AI model consisting of a convolutional neural network (CNN) to process blastocyst images and a multilayer perceptron to process patient couple\u2019s clinical features. The data set used in this study consists of 17,580 blastocysts with known live birth outcomes, blastocyst images, and patient couple\u2019s clinical features.Results:This study achieved an AUC of 0.77 for live birth prediction, which significantly outperforms related works in the literature. Sixteen out of 103 clinical features were identified to be predictors of live birth outcomes and helped improve live birth prediction. Among these features, maternal age, the day of blastocyst transfer, antral follicle count, retrieved oocyte number, and endometrium thickness measured before transfer are the top five features contributing to live birth prediction. Heatmaps showed that the CNN in the AI model mainly focuses on image regions of inner cell mass and trophectoderm (TE) for live birth prediction, and the contribution of TE-related features was greater in the CNN trained with the inclusion of patient couple's clinical features compared with the CNN trained with blastocyst images alone.Conclusions:The results suggest that the inclusion of patient couple\u2019s clinical features along with blastocyst images increases live birth prediction accuracy.Funding:Natural Sciences and Engineering Research Council of Canada and the Canada Research Chairs Program.\n\n## Introduction\n\nInfertility is a global health issue, affecting more than 50 million couples worldwide (Mascarenhas et al., 2012). Since the birth of the first in vitro fertilization (IVF) child in 1978, over 8 million children were born with IVF treatment (Adamson et al., 2018). Among the various factors contributing to IVF outcomes, the quality of the blastocyst (day 5 embryo) selected for transfer is critical for the success of IVF treatment. Manual grading of blastocyst development stage, inner cell mass (ICM), and trophectoderm (TE) remains the most common method for blastocyst evaluation. While the blastocyst morphological grading is widely used in clinical practice, morphological grades of the development stage, ICM, and TE have shown limited predictive power on clinical outcomes (Seli et al., 2011; Reignier et al., 2019; Bartolacci et al., 2021; Ueno et al., 2021; Xiong et al., 2022). It is desired to identify features for accurate prediction of clinical outcomes of blastocysts.\n\nTo achieve this goal, the convolutional neural network (CNN) is expected to play a critical role. CNN is able to automatically detect discriminative features from images and has been the state-of-the-art method in various fields in medical imaging, such as lung cancer prediction (Ardila et al., 2019), breast cancer prediction (McKinney et al., 2020), and diabetic retinopathy screening (Bora et al., 2021). To apply CNN to predict the clinical outcome of a blastocyst, images of blastocysts with a known clinical outcome (e.g., pregnancy and live birth) are collected for the CNN model development. The area under the receiver operating characteristic (ROC) curve (AUC) is the most commonly used metric to evaluate and compare machine learning models on predicting clinical outcomes of blastocysts (Kragh and Karstoft, 2021a). The AUCs reported in the literature using CNN to predict clinical outcomes from blastocyst images range from 0.64 to 0.71 for pregnancy prediction (VerMilyea et al., 2020; Kragh et al., 2021b; Berntsen et al., 2022; Enatsu et al., 2022; Loewke et al., 2022), and are around 0.65 for live birth prediction (Miyagi et al., 2019; Nagaya and Ukita, 2021).\n\nBesides using blastocyst images, attempts have also been made to use time-lapse videos for live birth prediction. These videos contain the entire development process from days 0 to 5\u20137. However, results in the literature show that CNN using static images achieved similar or slightly better accuracies in predicting clinical outcomes than using time-lapse videos, for instance, AUC=0.68\u20130.71 (VerMilyea et al., 2020; Enatsu et al., 2022; Loewke et al., 2022) versus 0.64\u20130.67 (Kragh et al., 2021b; Berntsen et al., 2022) for pregnancy prediction, and 0.66 (Miyagi et al., 2019) versus 0.65 (Nagaya and Ukita, 2021) for live birth prediction. A potential reason is that the redundant frames of images in time-lapse videos may work as noise causing the model to overfit and thus leading to a lower prediction accuracy (Zhu et al., 2018; Wu et al., 2021; Tao et al., 2022). Therefore, we opted to use static blastocyst images in this study.\n\nDifferent from using blastocyst images alone to predict clinical outcomes, Miyagi et al., 2020 proposed to use blastocyst images together with maternal clinical features including maternal age, AMH, and BMI and reported an AUC of 0.74, the highest accuracy in literature (Miyagi et al., 2020). However, two questions remain elusive. First, the contribution of blastocyst images and the additional contribution of maternal clinical features to live birth prediction are unknown. Second, endometrium status-related features, such as endometrium thickness and pattern, are also critical factors impacting live birth outcomes (Ng et al., 2007; Bu et al., 2016; Mahutte et al., 2022), but were not considered.\n\nIn this study, we quantified the effect of blastocyst images and the combined effect of both blastocyst images and patient couple\u2019s clinical features on live birth prediction. The live birth prediction model using only blastocyst images achieved an AUC of 0.67, which was significantly outperformed by the AUC of 0.77 achieved by the model using both blastocyst images and patient couple\u2019s clinical features (p value<0.0001). Additionally, when endometrium status-related features (e.g., endometrium thickness and pattern) were excluded, the AUC of the model using both blastocyst images and patient couple\u2019s clinical features significantly decreased to 0.74 (p value<0.0001), indicating that the inclusion of endometrium status-related clinical features helps improve live birth prediction accuracy. Sixteen patient couple\u2019s clinical features were identified to be most related to live birth outcomes of blastocysts, among which maternal age, the day of blastocyst transfer, antral follicle count (AFC), retrieved oocyte number, and endometrium thickness measured before transfer are the top five features contributing to live birth prediction. Additionally, the CNN heatmaps showed that the CNN mainly focused on ICM and TE for live birth prediction, and the contribution of TE-related features was greater in the CNN trained with the inclusion of patient couple\u2019s clinical features compared with the CNN trained with blastocyst images alone.\n\n## Methods\n\n### Data set collection\n\nWe used retrospectively collected data to develop the live birth prediction model. Transferred blastocysts with known live birth outcomes for patients who underwent frozen embryo transfer cycles from 2016 to 2020, at the Reproductive and Genetic Hospital of CITIC-Xiangya, were reviewed for inclusion in the data set. Informed consent was not necessary because this study used retrospective and fully de-identified data, no medical intervention was performed on the subject, and no biological samples from the patient were collected. This study was approved by the Ethics Committee of the Reproductive and Genetic Hospital of CITIC-Xiangya (approval number: LL-SC-2021-008).\n\nBlastocyst images were captured before transfer using a standard optical light microscope mounted with a camera. Two grayscale images were captured for each blastocyst, one focusing on ICM and the other focusing on TE. Blastocysts were cropped from the original images which have a resolution of 1024\u00d7768 and were consistently padded to 500\u00d7500 to facilitate model training. Patient couple\u2019s clinical features consist of 103 features including maternal age and BMI, the day of blastocyst transfer, infertility diagnosis and treatment history of patient couples, ovarian stimulation protocols, maternal hormone profiles, and ultrasound results measured during the ovarian stimulation process and before transfer, and paternal semen diagnosis results (see Supplementary file 1 for a complete list). Based on p value analysis and logistic regression (LR)-based sequential forward feature selection (Solorio-Fern\u00e1ndez et al., 2020; Raschka, 2018), 16 clinical features that are most relevant to live birth prediction were identified and used for training the machine learning model (see Figure 3). Feature selection reduces the input feature dimensions by removing redundant features and features with limited predictive power, thus improving the model generalization capability (see Figure 3\u2014figure supplement 1). The LR-based feature selection was used due to its computing efficiency, we also presented the result of multilayer perceptron (MLP)-based feature selection in Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2.\n\nA total of 28,118 blastocysts with known live birth outcomes were reviewed, among which 17,580 blastocysts with two blastocyst images and all the 16 clinical features available were included in the data set.\n\n### Model architecture\n\nFigure 1 shows the architecture of the live birth prediction model based on multimodal blastocyst evaluation. It consists of a CNN to process blastocyst images and an MLP to process patient couple\u2019s clinical features. Features from the CNN and the MLP are fused; thus, the model can be trained to simultaneously take into account both blastocyst images and patient couple\u2019s clinical features for live birth prediction. The last fully connected layer in the CNN and the last fully connected layer in the MLP each output a decision-level feature, which has two variables used to classify the blastocyst into the positive or negative live birth outcome category. The adding operation fuses decision-level features from the CNN and the MLP, and the result of addition is taken as the final output of the overall live birth prediction model.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig1-v2.jpg)\n\n**Figure 1.:** CNN, convolutional neural network; FC, fully connected layer; MLP, multilayer perceptron.\n\n### Model implementation and training\n\nThe proposed live birth prediction model used EfficientNetV2-S as the backbone CNN. EfficientNetV2-S is the baseline model in the EfficientNetV2 family, which is a new family of CNN models that provide higher accuracy and training speed than conventional models (Tan and Le, 2021). In our work, the output dimension of the final fully connected layer in EfficientNetV2-S was set to be two, representing the positive and negative live birth outcome of a blastocyst, respectively. The model was implemented using PyTorch 1.10.1 (Paszke et al., 2019).\n\nEach of the 17,580 blastocysts had two images taken at different focal planes, one focused more on TE cells and the other on ICM. Furthermore, for each blastocyst, live birth outcomes and all the 16 patient couple\u2019s clinical features were available. The blastocysts were randomly split into 80%:10%:10% to construct the training, validation, and testing data sets. The stratified random sampling approach was used to ensure that all split data sets have the same distribution of minority and majority classes. Since the ratio of blastocysts with a positive live birth outcome in the data set is 0.368, to mitigate the model\u2019s prediction bias toward the majority category (i.e., the negative live birth outcome), the weighted sampling approach, which can help rebalance the class distributions when sampling from an imbalanced data set (Feng et al., 2021), was employed for training the model. In the weighted sampling approach, the probability of each item to be selected is determined by its weight, and the weight of each item is assigned by inverse class frequencies. In this way, the weighted sampling approach rebalances the class distributions by oversampling the minority class and under-sampling the majority class. We also verified the approach of using weighted cross-entropy loss, which assigns greater weights to the loss caused by the prediction error of minority classes. Both approaches helped mitigate the prediction bias toward the majority class, and the results showed that the weighted sampling approach outperformed the weighted cross-entropy loss method.\n\nModel performance is subject to training hyperparameters (e.g., optimizer, learning rate, batch size, and number of layers). Hence, an automatic hyperparameter-tuning tool is used, Facebook Ax (version 0.2.2, https://github.com/facebook/Ax), to search for the optimal hyperparameters for model training. The selected hyperparameters for training the model include a batch size of 16, an SGD optimizer with a learning rate of 0.008, and a momentum of 0.39, and three hidden layers in the MLP. A dropout layer follows each hidden layer in the MLP to prevent overfitting. The number of nodes in each hidden layer is 6836, 5657, and 468, respectively. The dropout rate in each dropout layer is 0.01, 0.07, and 0.67, respectively. The model was trained with four RTX A6000 GPUs. It took about 30 hr to search for the optimal hyperparameters and about an hour to train the model using the optimal hyperparameters.\n\n### Statistical analysis\n\nStatistical tests were calculated to compare clinical features between blastocysts with the positive live birth outcome and blastocysts with the negative live birth outcome. Chi-squared test was used for categorical features, t test was used for numerical features. Chi-squared test and t test were performed using Python (version 3.6). ROC curves were compared by the DeLong test implemented in MedCalc software (version 20). All statistical tests were two-tailed and considered significant if p value\u22640.05.\n\n## Results\n\n### The inclusion of patient couple\u2019s clinical features increased AUC for live birth prediction\n\nTo quantify the individual effect of blastocyst images and the combined effect of patient couple\u2019s clinical features, we built and compared models that (1) used only blastocyst images for live birth prediction, and (2) used both blastocyst images and patient couple\u2019s clinical features for prediction. In addition, to quantify the specific effect of endometrium status-related features (i.e., endometrium thickness before transfer, endometrium thickness on HCG day, and endometrium pattern B (yes/no) on HCG day) on live birth prediction, a third model trained using blastocyst images and patient couple\u2019s clinical features where endometrium status-related features were excluded, was also built and compared.\n\nFigure 2 shows the ROC curves and AUCs of the three models for predicting live birth outcomes of 1758 blastocysts (i.e., 10% of 17,580) in the test data set. Using only blastocyst images for live birth prediction gave an AUC of 0.67, with a 95% confidence interval (CI) of 0.65\u20130.70. Using blastocyst images and patient couple\u2019s clinical features (endometrium status-related features excluded) significantly increased the AUC to 0.74 (95% CI: 0.72\u20130.76, p value<0.0001). Using both blastocyst images and patient couple\u2019s clinical features (endometrium status-related features included) achieved a prediction AUC of 0.77 (95% CI: 0.75\u20130.79), which is significantly higher than using only blastocyst images for prediction (p value<0.0001) and than using blastocyst images and patient couple\u2019s clinical features where endometrium status-related features were excluded (p value=0.007).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig2-v2.jpg)\n\n**Figure 2.:** ROC curves of the model using only blastocyst images, the model using blastocyst images and patient couple\u2019s clinical features where EM-status related features were excluded, and the model using blastocyst images and patient couple\u2019s clinical features where EM-status related features were included to predict live birth outcomes of 1758 blastocysts in the test data set. AUC, area under the ROC curve; EM, endometrium; EM status-related features, endometrium thickness before transfer, endometrium thickness on HCG day, endometrium pattern B (yes/no) on HCG day.\n\n### Ranking the predictive power of patient couple\u2019s clinical features\n\nWe then investigated the predictive power of each patient couple\u2019s clinical feature in predicting live birth outcome. Figure 3 shows the 16 features that were identified to be most related to the live birth outcomes of the blastocysts. These features were ranked according to their AUCs for individually predicting the live birth outcomes of blastocysts using univariable LR. The AUC for each feature was reported as the mean AUC over a tenfold cross-validation process.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig3-v2.jpg)\n\n**Figure 3.:** The 16 patient couple\u2019s clinical features that were identified to be most related to the live birth outcomes of the blastocysts ranked by the AUC for individually predicting live birth outcome. AUC, area under the curve.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The AUC of the model using all clinical features showing statistical significance and blastocyst images is 0.75, lower than the AUC (0.77) achieved by the model using LR-selected clinical features and blastocyst images, and the AUC (0.76) achieved by the model using MLP-selected clinical features and blastocyst images. The AUC (0.77) achieved by the model using LR-selected clinical features and blastocyst images and the AUC (0.76) achieved by the model using MLP-selected clinical features and blastocyst images show no significant difference (p value=0.95>0.05). AUC, area under the curve; LR, logistic regression; MLP, multilayer perceptron; ROC, receiver operating characteristic.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The MLP-based feature selection method selected 14 clinical features. Compared with the 16 clinical features selected by LR, 12 of the 16 clinical features were selected by both MLP and LR, and the top nine features are the same. The two clinical features selected by MLP but not by LR include fresh semen (yes/no) and follicle-stimulating hormone (FSH) on day 3 after period. The four clinical features selected by LR but not MLP include number of ovarian stimulation cycles, progesterone (P) on HCG day, maternal body mass index, and free thyroxine (FT4) on day 3 after period. LR: logistic regression.\n\n### CNN heatmaps\n\nIn blastocyst images, what does CNN focus on to predict the live birth outcome of a blastocyst? Is there a difference in what the CNN focuses on between the model trained without and with the inclusion of patient couple\u2019s clinical features? To answer these questions, we used the class activation mapping method to generate heatmaps. Figure 4 shows blastocyst images, corresponding heatmaps of the CNN trained without including patient couple\u2019s clinical features, and corresponding heatmaps of the CNN trained with including patient couple\u2019s clinical features.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig4-v2.jpg)\n\n**Figure 4.:** Heatmaps of the CNN trained without and with patient couple\u2019s clinical features. Column (A): original blastocyst images. Column (B): corresponding heatmaps of the CNN trained without including patient couple\u2019s clinical features. Column (C): corresponding heatmaps of the CNN trained with the inclusion of patient couple\u2019s clinical features. CNN, convolutional neural network.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** ICM, inner cell mass; TE, trophectoderm.\n\nThe blastocyst images were cropped and padded to a consistent size to facilitate model training. The padding value was calculated as the mean pixel value of blastocyst images in the data set. Heatmaps were generated by XGradCAM (Fu et al., 2020). Note that the CNN takes two-channel blastocyst images as the input, one focusing on ICM and the other focusing on TE. The blastocyst images shown in Figure 4 are those focused on ICM, and Figure 4\u2014figure supplement 1 shows the two-channel blastocyst images. As can be seen in Figure 4, when trained using only blastocyst images, the CNN mainly focuses on ICM and TE for predicting live birth outcomes. When training with both blastocyst images and patient couple\u2019s clinical features, TE-related features contributed more to live birth prediction compared with training with blastocyst images only.\n\n## Discussion\n\nIn this study, the individual effect of blastocyst images and the combined effect of patient couple\u2019s clinical features for live birth prediction were quantified by comparing the AUC values of the model using only blastocyst images and the model using both blastocyst images and patient couple\u2019s clinical features. An AUC of 0.67 was achieved with blastocyst images only while using both blastocyst images and patient couple\u2019s clinical features led to a significantly higher AUC of 0.77 in live birth prediction. When endometrium status-related features were excluded from patient couple\u2019s clinical features, the AUC of the live birth prediction model significantly decreased (p value=0.007) from 0.77 to 0.74, indicating the strong relevance of endometrium status-related features in live birth prediction. Sixteen patient couple\u2019s clinical features were identified to be most related to live birth outcomes of blastocysts, among which maternal age, the day of blastocyst transfer, AFC, retrieved oocyte number, and endometrium thickness before transfer are the top five features contributing to live birth prediction.\n\nThis study was based on a comprehensive multimodal data set collected for blastocyst evaluation. The data set includes 17,580 blastocysts with known live birth outcomes, blastocyst images, and 16 patient couple\u2019s clinical features. As shown in Figure 3, 16 patient couple\u2019s clinical features comprehensively include maternal basal characteristics (age and BMI); hormone profiles measured after period (LH and FT4), on HCG day (PE2, P, and LH), and before transfer (E2); endometrium status-related features (endometrium thickness on HCG day and before transfer, endometrium pattern on HCG day); features related to oocytes (AFC, retrieved oocyte number); the day of blastocyst transfer; number of ovarian stimulation cycles; and paternal features (the ratio of grade A sperm after semen processing). For comparison, the data set studied by Miyagi et al., 2020 did not contain endometrium status-related features and key hormone profiles (e.g., P, E2, and LH). There are numerous IVF data sets containing over 100,000 records of clinical features and live birth outcomes (Nelson and Lawlor, 2011; McLernon et al., 2016; La Marca et al., 2021); however, there are no blastocyst images in these data sets, and thus, these data sets cannot be used for building models to evaluate blastocysts from their images.\n\nTo handle the multimodal data set, our proposed model was designed to integrate two modules including a CNN and an MLP to enable the model to simultaneously consider images and numerical clinical features for blastocyst evaluation. The large and comprehensive multimodal data set and the proposed CNN+MLP model resulted in the highest AUC value of 0.77 ever reported thus far for predicting live birth outcomes of blastocysts. They also enabled us to quantify the predictive power of each feature in predicting the live birth outcomes of blastocysts.\n\nThe blastocyst grading system introduced in 1999 (Gardner and Schoolcraft, 1999; Gardner, 1999) remains the most common method used by embryologists to evaluate blastocyst quality although the morphological grades of blastocyst development stage, ICM and TE have limited predictive power on live birth outcomes (e.g., AUC=0.58\u20130.61 for live birth prediction reported by Reignier et al., 2019; Bartolacci et al., 2021; Xiong et al., 2022). Since CNN became a state-of-the-art method for image-based classification, many attempts have been made to apply the CNN to blastocyst evaluation for predicting clinical outcomes (e.g., VerMilyea et al., 2020; Kragh et al., 2021b; Berntsen et al., 2022; Enatsu et al., 2022; Loewke et al., 2022; Miyagi et al., 2019; Nagaya and Ukita, 2021). Among these, the AUC values reported in the literature using blastocyst images only were around 0.65 for live birth prediction (Miyagi et al., 2019; Nagaya and Ukita, 2021). Similarly, we achieved an AUC of 0.67 (see Figure 2). Compared with the AUC of 0.58\u20130.61 reported in the literature using Gardner grades for live birth prediction, these results confirmed that CNN can achieve a higher prediction accuracy. As shown in Figure 4, the CNN mainly focuses on ICM and TE. Different from the Gardner-defined TE grade on the number of TE cells and the cohesiveness of TE cells as a whole, the CNN tends to focus on specific TE clusters. Understanding the heatmaps further requires more investigations.\n\nMiyagi et al., 2020 used both blastocyst images and maternal clinical features (age, AMH, and BMI) to predict live birth outcomes and achieved an AUC of 0.74 (Miyagi et al., 2020). The additional contribution from the three maternal clinical features was not clear since no AUC was reported by using blastocyst images alone. Furthermore, despite their importance in pregnancy and live birth, endometrium status-related features were not considered in their work. Therefore, our study used a comprehensive data set and quantitatively compared the AUC values of live birth prediction using only blastocyst images versus using both blastocyst images and patient couple\u2019s clinical features. We also quantified the usefulness of endometrium status-related features in working with blastocyst images to improve live birth prediction. Furthermore, we revealed that hormone profiles such as E2, LH, P, and FT4, features related to oocyte retrieval such as AFC and number of oocytes retrieved, and the ratio of grade A sperm after processing representing semen quality are able to work with blastocyst images to further improve the live birth prediction accuracy. Note that in this study, only the total testosterone (T) was analyzed, and free T or bioavailable T was not available for clinical feature analysis (see Supplementary file 1). This may cause potential bias in determining the significance of testosterone as a predictor of live birth.\n\nAnother finding of this study, by comparing the heatmaps of the CNN trained without and with the inclusion of patient couple\u2019s clinical features, is that the weights of TE-related features increased (see Figure 4). A potential reason may be that TE and the endometrium status-related features (e.g., endometrium thickness and pattern) play critical roles when a blastocyst initiates implantation, and a positive live birth outcome is not possible without the success of this implantation process (Ahlstr\u00f6m et al., 2011; Hill et al., 2013; Chen et al., 2014; Bakkensen et al., 2019).\n\nIn conclusion, in this retrospective study involving 17,580 blastocysts with known live birth outcomes, blastocyst images and 16 patient couple\u2019s clinical features, we built a live birth prediction model based on multimodal blastocyst evaluation using both blastocyst images and patient couple\u2019s clinical features. We quantified the individual effect of blastocyst images and the combined effect of patient couple\u2019s clinical features on live birth prediction. Results demonstrated that using both blastocyst images and patient couple\u2019s clinical features can significantly improve live birth prediction than using blastocyst images alone.\n\nThe proposed live birth prediction model improves the evaluation of a blastocyst in terms of its live birth potential for best blastocyst selection from multiple blastocysts of a patient. The next step is to validate the model\u2019s prediction accuracy using prospectively collected data and verify its effectiveness in blastocyst selection via a randomized controlled trial (RCT). Patients enrolled in the RCT will be split into the study group and the control group (1:1 ratio). In the study group, the model selects a top blastocyst having the highest probability of live birth for transfer, and in the control group, embryologists select a top blastocyst based on their routine morphological grading for transfer. Live birth outcomes of both groups will be tracked and compared.\n",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "532409b1-df0a-4a4d-baab-47778ead7f72",
+      "submission_id": "4c76d069-12d9-4d24-ace6-274413580940",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Larisa V Suturina, https://ror.org/027n02r78 Scientific Center for Family Health and Human Reproduction Russian Federation\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83662.sa0](https://doi.org/10.7554/eLife.83662.sa0)\n\nThis article provides important findings that have practical implications for reproductive medicine and would be of interest to IVF specialists. Based on the compelling strength of evidence, the study demonstrates significant results in improving the predictive value of the live birth model based on blastocyst evaluation and clinical features.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Larisa V Suturina, https://ror.org/027n02r78 Scientific Center for Family Health and Human Reproduction Russian Federation\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83662.sa1](https://doi.org/10.7554/eLife.83662.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Development and evaluation of a live birth prediction model for evaluating human blastocysts: a retrospective study\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ricardo Azziz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please, expand the section \"Model architecture\" and clarify the details regarding \"decision-level features\".\n\n2) Provide the details of how parameter optimization was accomplished as well as the architectural details, i.e., the number of layers and nodes. What was the computational overhead for training these models?\n\n3) Consider presenting the data for all significant predictors to justify the choice for inclusion in the model and verify if the important or top features MLP (using explanation methods) uses for prediction are the same as those inferred by the logistic regression.\n\n4) Please, consider presenting in detail a weighted sampling approach used to tackle the imbalance issue.\n\n5) The code is available only for generating figures 2, 4 reported in the paper. For figure 3, only data is available. Consider presenting this code for reproducibility purposes.\n\n6) Please, improve the discussion of the potential applications of the proposed model in clinical settings and mention the method of testosterone assessment as a study limitation.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors could mention the method of testosterone assessment as a study limitation that may cause a potential bias regarding the estimation of significance of testosterone as a predictor of live birth.\n\nThe authors could consider presenting the data for all significant predictors (of example, in the supplemental Figure 3 data) and justify the choice for inclusion in the model. It will better demonstrate the correctness of the selection of predictors\n\nReviewer #2 (Recommendations for the authors):\n\nI quite enjoyed reading the article. Overall, the motivation and concepts are well defined; however, the manuscript lacks the necessary methodological details, which hindered my ability to fully understand and appreciate the work.\n\nThe link between CNN and MLP architecture in the final integrated model is unclear. The section \"Model architecture\" needs to be expanded. It is not clear what \"decision-level features\" are from CNN or MLP. Are these features from the CNN's fully connected layer? In MLP, are they before the final layer? And how do authors concatenate these features? These details are important to understand final architecture.\n\nHow was parameter optimization accomplished? Architectural details, i.e., the number of layers and nodes, are missing. What was the computational overhead for training these models?\n\nIt is difficult to understand the discrepancy of features between CNN with clinical features and CNN without clinical features. Maybe it is because model architecture is not well defined. For the moment, it seems like CNN was trained independently, even in the concatenated version of the model. How can you explain the discrepancy between the activation maps of these two models?\n\nImportant features were identified using logistic regression. I do not observe the link presenting these features as important features when the model was built using MLP instead. Could you verify that the important or top features MLP (using explanation methods) uses for prediction are the same as those inferred by the logistic regression?\n\nThe imbalance issue was tackled using a weighted sampling approach. This approach needs to be detailed in the main text. And how were train, val, and test partitions built in view of the distribution of minority and majority classes? Did the author verify other approaches that can help resolve this issue?\n\nThe code to reproduce the model is missing.\n\nDiscussion regarding implementation in a clinical setting would be informative. How feasible is the model's deployment in a clinic? Maybe you can further elaborate on prospective clinical trial which was mentioned in line # 363.\n\nReviewer #3 (Recommendations for the authors):\n\nThe study is well designed as the Materials and methods were convincing. Results are supporting the Aims. Further studies will be important for establishing the Criteria.\n\nThe challenging issue is to keep reporting the effectiveness of this predictive procedure and publish it with LBR.\n",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7b5f2c0-9da5-4b34-ac80-257e4bea0326",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C1",
+      "claim": "Infertility affects more than 50 million couples worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Infertility is a global health issue, affecting more than 50 million couples worldwide (Mascarenhas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mascarenhas et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "18ca1222-6216-488c-a790-601d3a9a12e8",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C2",
+      "claim": "Over 8 million children were born with IVF treatment since 1978.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the birth of the first in vitro fertilization (IVF) child in 1978, over 8 million children were born with IVF treatment (Adamson et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Adamson et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "af15fe56-cc8a-4de9-967c-654cec8310d4",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C3",
+      "claim": "The quality of the blastocyst selected for transfer is critical for the success of IVF treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the various factors contributing to IVF outcomes, the quality of the blastocyst (day 5 embryo) selected for transfer is critical for the success of IVF treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding in reproductive medicine",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "81ceddd1-761e-4360-b9c6-91af5189d608",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C4",
+      "claim": "Morphological grades of blastocyst development stage, ICM, and TE have shown limited predictive power on clinical outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the blastocyst morphological grading is widely used in clinical practice, morphological grades of the development stage, ICM, and TE have shown limited predictive power on clinical outcomes (Seli et al., 2011; Reignier et al., 2019; Bartolacci et al., 2021; Ueno et al., 2021; Xiong et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Seli et al., 2011; Reignier et al., 2019; Bartolacci et al., 2021; Ueno et al., 2021; Xiong et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "9d49f579-7880-4a5e-91f1-c08d25595bf1",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C5",
+      "claim": "CNN is able to automatically detect discriminative features from images.",
+      "claim_type": "EXPLICIT",
+      "source": "CNN is able to automatically detect discriminative features from images and has been the state-of-the-art method in various fields in medical imaging, such as lung cancer prediction (Ardila et al., 2019), breast cancer prediction (McKinney et al., 2020), and diabetic retinopathy screening (Bora et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to applications in lung cancer (Ardila et al., 2019), breast cancer (McKinney et al., 2020), and diabetic retinopathy (Bora et al., 2021)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "3d45da7f-c866-4da0-a77d-1fb9c0c7208f",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C6",
+      "claim": "AUCs reported in the literature using CNN to predict clinical outcomes from blastocyst images range from 0.64 to 0.71 for pregnancy prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUCs reported in the literature using CNN to predict clinical outcomes from blastocyst images range from 0.64 to 0.71 for pregnancy prediction (VerMilyea et al., 2020; Kragh et al., 2021b; Berntsen et al., 2022; Enatsu et al., 2022; Loewke et al., 2022), and are around 0.65 for live birth prediction (Miyagi et al., 2019; Nagaya and Ukita, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to VerMilyea et al., 2020; Kragh et al., 2021b; Berntsen et al., 2022; Enatsu et al., 2022; Loewke et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "ebd6ef60-eb21-46af-9f88-300365b966f6",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C7",
+      "claim": "AUCs reported in the literature using CNN are around 0.65 for live birth prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUCs reported in the literature using CNN to predict clinical outcomes from blastocyst images range from 0.64 to 0.71 for pregnancy prediction (VerMilyea et al., 2020; Kragh et al., 2021b; Berntsen et al., 2022; Enatsu et al., 2022; Loewke et al., 2022), and are around 0.65 for live birth prediction (Miyagi et al., 2019; Nagaya and Ukita, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Miyagi et al., 2019; Nagaya and Ukita, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "242d09aa-effa-4baf-be1b-5e3d3a376b71",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C8",
+      "claim": "CNN using static images achieved similar or slightly better accuracies in predicting clinical outcomes than using time-lapse videos.",
+      "claim_type": "EXPLICIT",
+      "source": "However, results in the literature show that CNN using static images achieved similar or slightly better accuracies in predicting clinical outcomes than using time-lapse videos, for instance, AUC=0.68\u20130.71 (VerMilyea et al., 2020; Enatsu et al., 2022; Loewke et al., 2022) versus 0.64\u20130.67 (Kragh et al., 2021b; Berntsen et al., 2022) for pregnancy prediction, and 0.66 (Miyagi et al., 2019) versus 0.65 (Nagaya and Ukita, 2021) for live birth prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations comparing static images (VerMilyea et al., 2020; Enatsu et al., 2022; Loewke et al., 2022; Miyagi et al., 2019) versus time-lapse videos (Kragh et al., 2021b; Berntsen et al., 2022; Nagaya and Ukita, 2021)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "c3cd8b33-ff5b-4742-90ff-e8a287870009",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C9",
+      "claim": "Redundant frames of images in time-lapse videos may work as noise causing the model to overfit and thus leading to a lower prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "A potential reason is that the redundant frames of images in time-lapse videos may work as noise causing the model to overfit and thus leading to a lower prediction accuracy (Zhu et al., 2018; Wu et al., 2021; Tao et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhu et al., 2018; Wu et al., 2021; Tao et al., 2022",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "00d4d119-f25e-491d-a629-68637bc71188",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C10",
+      "claim": "Miyagi et al., 2020 reported an AUC of 0.74 using blastocyst images together with maternal clinical features including maternal age, AMH, and BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from using blastocyst images alone to predict clinical outcomes, Miyagi et al., 2020 proposed to use blastocyst images together with maternal clinical features including maternal age, AMH, and BMI and reported an AUC of 0.74, the highest accuracy in literature (Miyagi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Miyagi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "f57ee85a-cb95-43fd-992e-fd5531757e17",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C11",
+      "claim": "Endometrium status-related features are critical factors impacting live birth outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, endometrium status-related features, such as endometrium thickness and pattern, are also critical factors impacting live birth outcomes (Ng et al., 2007; Bu et al., 2016; Mahutte et al., 2022), but were not considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ng et al., 2007; Bu et al., 2016; Mahutte et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "5c225450-7755-48d7-a047-e1ca33711168",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C12",
+      "claim": "The live birth prediction model using only blastocyst images achieved an AUC of 0.67.",
+      "claim_type": "EXPLICIT",
+      "source": "The live birth prediction model using only blastocyst images achieved an AUC of 0.67, which was significantly outperformed by the AUC of 0.77 achieved by the model using both blastocyst images and patient couple's clinical features (p value<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from the study; also shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "bcdcc8b8-b328-43b6-81b9-310948b98044",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C13",
+      "claim": "The model using both blastocyst images and patient couple's clinical features achieved an AUC of 0.77.",
+      "claim_type": "EXPLICIT",
+      "source": "The live birth prediction model using only blastocyst images achieved an AUC of 0.67, which was significantly outperformed by the AUC of 0.77 achieved by the model using both blastocyst images and patient couple's clinical features (p value<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from the study; also shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "2d7763d2-89ef-43db-90fc-8289bca76b41",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C14",
+      "claim": "The AUC of 0.77 achieved by the model using both blastocyst images and patient couple's clinical features significantly outperformed the AUC of 0.67 achieved by the model using only blastocyst images (p value<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The live birth prediction model using only blastocyst images achieved an AUC of 0.67, which was significantly outperformed by the AUC of 0.77 achieved by the model using both blastocyst images and patient couple's clinical features (p value<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical comparison (p value<0.0001) of experimental data; also shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "e16bcf4b-b1eb-490c-abed-0f1f232f9831",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C15",
+      "claim": "When endometrium status-related features were excluded, the AUC of the model using both blastocyst images and patient couple's clinical features significantly decreased to 0.74 (p value<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, when endometrium status-related features (e.g., endometrium thickness and pattern) were excluded, the AUC of the model using both blastocyst images and patient couple's clinical features significantly decreased to 0.74 (p value<0.0001), indicating that the inclusion of endometrium status-related clinical features helps improve live birth prediction accuracy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from the study; also shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "ea76198c-8e7b-49f1-a895-8accaf9836fe",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C16",
+      "claim": "The inclusion of endometrium status-related clinical features helps improve live birth prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, when endometrium status-related features (e.g., endometrium thickness and pattern) were excluded, the AUC of the model using both blastocyst images and patient couple's clinical features significantly decreased to 0.74 (p value<0.0001), indicating that the inclusion of endometrium status-related clinical features helps improve live birth prediction accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the significant decrease in AUC when endometrium features are excluded",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "8a759eba-f525-4796-88f2-1e6cc23e2ecb",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C17",
+      "claim": "Sixteen patient couple's clinical features were identified to be most related to live birth outcomes of blastocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixteen patient couple's clinical features were identified to be most related to live birth outcomes of blastocysts, among which maternal age, the day of blastocyst transfer, antral follicle count (AFC), retrieved oocyte number, and endometrium thickness measured before transfer are the top five features contributing to live birth prediction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by feature selection analysis; shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "2d3d61b2-4b58-41b8-8d3b-66beb2168188",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C18",
+      "claim": "Maternal age, the day of blastocyst transfer, antral follicle count, retrieved oocyte number, and endometrium thickness measured before transfer are the top five features contributing to live birth prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixteen patient couple's clinical features were identified to be most related to live birth outcomes of blastocysts, among which maternal age, the day of blastocyst transfer, antral follicle count (AFC), retrieved oocyte number, and endometrium thickness measured before transfer are the top five features contributing to live birth prediction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by feature ranking analysis; shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "37720577-2d50-4d30-855b-f6f77da1d37e",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C19",
+      "claim": "The CNN mainly focuses on image regions of inner cell mass and trophectoderm for live birth prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Heatmaps showed that the CNN in the AI model mainly focuses on image regions of inner cell mass and trophectoderm (TE) for live birth prediction, and the contribution of TE-related features was greater in the CNN trained with the inclusion of patient couple's clinical features compared with the CNN trained with blastocyst images alone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by heatmap analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "423b6d3d-7aff-4019-acca-fa460ff014b9",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C20",
+      "claim": "The contribution of TE-related features was greater in the CNN trained with the inclusion of patient couple's clinical features compared with the CNN trained with blastocyst images alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Heatmaps showed that the CNN in the AI model mainly focuses on image regions of inner cell mass and trophectoderm (TE) for live birth prediction, and the contribution of TE-related features was greater in the CNN trained with the inclusion of patient couple's clinical features compared with the CNN trained with blastocyst images alone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of heatmaps shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "f5267b7f-25c6-4041-b32e-802eb574b98b",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C21",
+      "claim": "The inclusion of patient couple's clinical features along with blastocyst images increases live birth prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that the inclusion of patient couple's clinical features along with blastocyst images increases live birth prediction accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of AUC values (0.67 vs 0.77)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "f14b661d-66bb-490f-babb-c9926d8ef5be",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C22",
+      "claim": "The data set used in this study consists of 17,580 blastocysts with known live birth outcomes, blastocyst images, and patient couple's clinical features.",
+      "claim_type": "EXPLICIT",
+      "source": "The data set used in this study consists of 17,580 blastocysts with known live birth outcomes, blastocyst images, and patient couple's clinical features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the study's data set",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "d0c75db2-6491-4159-aaa3-40c69f01d995",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C23",
+      "claim": "This study achieved an AUC of 0.77 for live birth prediction, which significantly outperforms related works in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "This study achieved an AUC of 0.77 for live birth prediction, which significantly outperforms related works in the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with literature values (around 0.65-0.74) and experimental data from this study",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "53819f71-87a3-4303-8133-fc71b43da010",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C24",
+      "claim": "Patient couple's clinical features consist of 103 features including maternal age and BMI, the day of blastocyst transfer, infertility diagnosis and treatment history of patient couples, ovarian stimulation protocols, maternal hormone profiles, and ultrasound results measured during the ovarian stimulation process and before transfer, and paternal semen diagnosis results.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient couple's clinical features consist of 103 features including maternal age and BMI, the day of blastocyst transfer, infertility diagnosis and treatment history of patient couples, ovarian stimulation protocols, maternal hormone profiles, and ultrasound results measured during the ovarian stimulation process and before transfer, and paternal semen diagnosis results (see Supplementary file 1 for a complete list).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the clinical features collected",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "2cde82c1-22ed-473c-afcc-f403a3727092",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C25",
+      "claim": "Based on p value analysis and logistic regression-based sequential forward feature selection, 16 clinical features that are most relevant to live birth prediction were identified and used for training the machine learning model.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on p value analysis and logistic regression (LR)-based sequential forward feature selection (Solorio-Fern\u00e1ndez et al., 2020; Raschka, 2018), 16 clinical features that are most relevant to live birth prediction were identified and used for training the machine learning model (see Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by feature selection methodology and citations to Solorio-Fern\u00e1ndez et al., 2020; Raschka, 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "c348f45f-0f83-4373-9049-0e6b808da188",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C26",
+      "claim": "Feature selection reduces the input feature dimensions by removing redundant features and features with limited predictive power, thus improving the model generalization capability.",
+      "claim_type": "EXPLICIT",
+      "source": "Feature selection reduces the input feature dimensions by removing redundant features and features with limited predictive power, thus improving the model generalization capability (see Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established machine learning principles",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "7d0fba9a-4324-4f30-8382-788c54f2f2b8",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C27",
+      "claim": "A total of 28,118 blastocysts with known live birth outcomes were reviewed.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 28,118 blastocysts with known live birth outcomes were reviewed, among which 17,580 blastocysts with two blastocyst images and all the 16 clinical features available were included in the data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the data collection process",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "22187593-f8f0-48bb-863b-b4ff4717835e",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C28",
+      "claim": "17,580 blastocysts with two blastocyst images and all the 16 clinical features available were included in the data set.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 28,118 blastocysts with known live birth outcomes were reviewed, among which 17,580 blastocysts with two blastocyst images and all the 16 clinical features available were included in the data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the final data set",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "3e2f17af-0288-4bd2-a944-eb41bfa99c3c",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C29",
+      "claim": "The proposed live birth prediction model consists of a CNN to process blastocyst images and an MLP to process patient couple's clinical features.",
+      "claim_type": "EXPLICIT",
+      "source": "It consists of a CNN to process blastocyst images and an MLP to process patient couple's clinical features.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct description of model architecture; shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "b133d119-9d07-41f0-a07b-373864d9b127",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C30",
+      "claim": "Features from the CNN and the MLP are fused so the model can be trained to simultaneously take into account both blastocyst images and patient couple's clinical features for live birth prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Features from the CNN and the MLP are fused; thus, the model can be trained to simultaneously take into account both blastocyst images and patient couple's clinical features for live birth prediction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct description of model architecture; shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "7902566e-d4b0-46fa-bdd4-1a65c8034ae8",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C31",
+      "claim": "The proposed live birth prediction model used EfficientNetV2-S as the backbone CNN.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed live birth prediction model used EfficientNetV2-S as the backbone CNN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of model implementation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "23695fe9-547a-4500-98d5-9e421b0ced8d",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C32",
+      "claim": "EfficientNetV2-S is the baseline model in the EfficientNetV2 family, which provides higher accuracy and training speed than conventional models.",
+      "claim_type": "EXPLICIT",
+      "source": "EfficientNetV2-S is the baseline model in the EfficientNetV2 family, which is a new family of CNN models that provide higher accuracy and training speed than conventional models (Tan and Le, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tan and Le, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "c372f6e7-1af4-428b-b64f-01be7aaf937e",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C33",
+      "claim": "The blastocysts were randomly split into 80%:10%:10% to construct the training, validation, and testing data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The blastocysts were randomly split into 80%:10%:10% to construct the training, validation, and testing data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of data splitting methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "845fe341-0912-4525-89cb-40b37a8bab6e",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C34",
+      "claim": "The stratified random sampling approach was used to ensure that all split data sets have the same distribution of minority and majority classes.",
+      "claim_type": "EXPLICIT",
+      "source": "The stratified random sampling approach was used to ensure that all split data sets have the same distribution of minority and majority classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of sampling methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "8e97f716-b51f-476e-8b6f-24943610fdfa",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C35",
+      "claim": "The ratio of blastocysts with a positive live birth outcome in the data set is 0.368.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the ratio of blastocysts with a positive live birth outcome in the data set is 0.368, to mitigate the model's prediction bias toward the majority category (i.e., the negative live birth outcome), the weighted sampling approach, which can help rebalance the class distributions when sampling from an imbalanced data set (Feng et al., 2021), was employed for training the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of data set characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "ee385b59-6a24-44fc-a556-8951f65bb063",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C36",
+      "claim": "The weighted sampling approach can help rebalance the class distributions when sampling from an imbalanced data set.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the ratio of blastocysts with a positive live birth outcome in the data set is 0.368, to mitigate the model's prediction bias toward the majority category (i.e., the negative live birth outcome), the weighted sampling approach, which can help rebalance the class distributions when sampling from an imbalanced data set (Feng et al., 2021), was employed for training the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Feng et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "2d5ecdec-aded-4ba7-b80a-95b9bc43045b",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C37",
+      "claim": "The weighted sampling approach rebalances the class distributions by oversampling the minority class and under-sampling the majority class.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, the weighted sampling approach rebalances the class distributions by oversampling the minority class and under-sampling the majority class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the weighted sampling methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "fe206e96-a0d7-40c0-b0bb-5a51ddc42335",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C38",
+      "claim": "The weighted sampling approach outperformed the weighted cross-entropy loss method.",
+      "claim_type": "EXPLICIT",
+      "source": "Both approaches helped mitigate the prediction bias toward the majority class, and the results showed that the weighted sampling approach outperformed the weighted cross-entropy loss method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental comparison in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "5f99fe12-0495-4907-aa6c-8262612bdfba",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C39",
+      "claim": "Using only blastocyst images for live birth prediction gave an AUC of 0.67, with a 95% confidence interval of 0.65\u20130.70.",
+      "claim_type": "EXPLICIT",
+      "source": "Using only blastocyst images for live birth prediction gave an AUC of 0.67, with a 95% confidence interval (CI) of 0.65\u20130.70.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from the study; shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "8fa365db-d245-4760-9eb2-15a75c827166",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C40",
+      "claim": "Using blastocyst images and patient couple's clinical features (endometrium status-related features excluded) significantly increased the AUC to 0.74 (95% CI: 0.72\u20130.76, p value<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Using blastocyst images and patient couple's clinical features (endometrium status-related features excluded) significantly increased the AUC to 0.74 (95% CI: 0.72\u20130.76, p value<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from the study; shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "07ff7606-080f-4c2a-90ac-9e4ffe4ca398",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C41",
+      "claim": "Using both blastocyst images and patient couple's clinical features (endometrium status-related features included) achieved a prediction AUC of 0.77 (95% CI: 0.75\u20130.79).",
+      "claim_type": "EXPLICIT",
+      "source": "Using both blastocyst images and patient couple's clinical features (endometrium status-related features included) achieved a prediction AUC of 0.77 (95% CI: 0.75\u20130.79), which is significantly higher than using only blastocyst images for prediction (p value<0.0001) and than using blastocyst images and patient couple's clinical features where endometrium status-related features were excluded (p value=0.007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from the study; shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "394f7471-c890-4e58-8fda-6d9113960f33",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C42",
+      "claim": "The AUC of 0.77 achieved using both blastocyst images and patient couple's clinical features (endometrium status-related features included) is significantly higher than using only blastocyst images for prediction (p value<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Using both blastocyst images and patient couple's clinical features (endometrium status-related features included) achieved a prediction AUC of 0.77 (95% CI: 0.75\u20130.79), which is significantly higher than using only blastocyst images for prediction (p value<0.0001) and than using blastocyst images and patient couple's clinical features where endometrium status-related features were excluded (p value=0.007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical comparison of experimental data; shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "91caedc0-ba6d-4814-83d9-ac7abf482aed",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C43",
+      "claim": "The AUC of 0.77 achieved using both blastocyst images and patient couple's clinical features (endometrium status-related features included) is significantly higher than using blastocyst images and patient couple's clinical features where endometrium status-related features were excluded (p value=0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "Using both blastocyst images and patient couple's clinical features (endometrium status-related features included) achieved a prediction AUC of 0.77 (95% CI: 0.75\u20130.79), which is significantly higher than using only blastocyst images for prediction (p value<0.0001) and than using blastocyst images and patient couple's clinical features where endometrium status-related features were excluded (p value=0.007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical comparison of experimental data; shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "52f140df-68b3-4198-8174-215a0882ebde",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C44",
+      "claim": "When trained using only blastocyst images, the CNN mainly focuses on ICM and TE for predicting live birth outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Figure 4, when trained using only blastocyst images, the CNN mainly focuses on ICM and TE for predicting live birth outcomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by heatmap analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "ca73bdba-6c1a-4be8-850c-77854d5eae01",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C45",
+      "claim": "When training with both blastocyst images and patient couple's clinical features, TE-related features contributed more to live birth prediction compared with training with blastocyst images only.",
+      "claim_type": "EXPLICIT",
+      "source": "When training with both blastocyst images and patient couple's clinical features, TE-related features contributed more to live birth prediction compared with training with blastocyst images only.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of heatmaps shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "c0ea6406-ddb7-48e0-acf0-1cf9cc2ad26d",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C46",
+      "claim": "TE and the endometrium status-related features play critical roles when a blastocyst initiates implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "A potential reason may be that TE and the endometrium status-related features (e.g., endometrium thickness and pattern) play critical roles when a blastocyst initiates implantation, and a positive live birth outcome is not possible without the success of this implantation process (Ahlstr\u00f6m et al., 2011; Hill et al., 2013; Chen et al., 2014; Bakkensen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ahlstr\u00f6m et al., 2011; Hill et al., 2013; Chen et al., 2014; Bakkensen et al., 2019",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "ff088c70-21d0-4d5f-a88a-3da7bee42acd",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C47",
+      "claim": "A positive live birth outcome is not possible without the success of the implantation process.",
+      "claim_type": "EXPLICIT",
+      "source": "A potential reason may be that TE and the endometrium status-related features (e.g., endometrium thickness and pattern) play critical roles when a blastocyst initiates implantation, and a positive live birth outcome is not possible without the success of this implantation process (Ahlstr\u00f6m et al., 2011; Hill et al., 2013; Chen et al., 2014; Bakkensen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ahlstr\u00f6m et al., 2011; Hill et al., 2013; Chen et al., 2014; Bakkensen et al., 2019",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "e32da797-7e53-4472-aa88-e2096abb6786",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C48",
+      "claim": "The morphological grades of blastocyst development stage, ICM, and TE have an AUC of 0.58\u20130.61 for live birth prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "The blastocyst grading system introduced in 1999 (Gardner and Schoolcraft, 1999; Gardner, 1999) remains the most common method used by embryologists to evaluate blastocyst quality although the morphological grades of blastocyst development stage, ICM and TE have limited predictive power on live birth outcomes (e.g., AUC=0.58\u20130.61 for live birth prediction reported by Reignier et al., 2019; Bartolacci et al., 2021; Xiong et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Reignier et al., 2019; Bartolacci et al., 2021; Xiong et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "0d76ed9e-a1e5-4140-b168-aac69be61ba0",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C49",
+      "claim": "CNN can achieve a higher prediction accuracy than Gardner grades for live birth prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the AUC of 0.58\u20130.61 reported in the literature using Gardner grades for live birth prediction, these results confirmed that CNN can achieve a higher prediction accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of AUC values (0.67 for CNN vs 0.58-0.61 for Gardner grades)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "76e08d9e-96a7-402d-87d0-46e08709a9a0",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C50",
+      "claim": "The CNN tends to focus on specific TE clusters rather than the number of TE cells and the cohesiveness of TE cells as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from the Gardner-defined TE grade on the number of TE cells and the cohesiveness of TE cells as a whole, the CNN tends to focus on specific TE clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from heatmap analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "80300ff1-7b79-461e-bd36-889a00ff0b3f",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C51",
+      "claim": "Miyagi et al., 2020 did not report an AUC using blastocyst images alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The additional contribution from the three maternal clinical features was not clear since no AUC was reported by using blastocyst images alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of Miyagi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "e085e75b-1cc0-4d86-9c71-64e73eb5f50c",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C52",
+      "claim": "Endometrium status-related features were not considered in the work by Miyagi et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, despite their importance in pregnancy and live birth, endometrium status-related features were not considered in their work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of Miyagi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "07c0e384-256a-4be0-89a8-f51773c660d3",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C53",
+      "claim": "Hormone profiles such as E2, LH, P, and FT4, features related to oocyte retrieval such as AFC and number of oocytes retrieved, and the ratio of grade A sperm after processing representing semen quality are able to work with blastocyst images to further improve the live birth prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we revealed that hormone profiles such as E2, LH, P, and FT4, features related to oocyte retrieval such as AFC and number of oocytes retrieved, and the ratio of grade A sperm after processing representing semen quality are able to work with blastocyst images to further improve the live birth prediction accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by feature selection and model performance analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "419d1538-2ee1-4090-9515-9d923cc51d5c",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C54",
+      "claim": "Only the total testosterone (T) was analyzed, and free T or bioavailable T was not available for clinical feature analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that in this study, only the total testosterone (T) was analyzed, and free T or bioavailable T was not available for clinical feature analysis (see Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of data limitations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "b141ac4e-a339-4dc7-9c16-5bd3a295c0d6",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C55",
+      "claim": "The unavailability of free T or bioavailable T may cause potential bias in determining the significance of testosterone as a predictor of live birth.",
+      "claim_type": "EXPLICIT",
+      "source": "This may cause potential bias in determining the significance of testosterone as a predictor of live birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential limitation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "172dd72e-93d2-484f-89c3-a2d76a2c427c",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C56",
+      "claim": "The proposed live birth prediction model improves the evaluation of a blastocyst in terms of its live birth potential for best blastocyst selection from multiple blastocysts of a patient.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed live birth prediction model improves the evaluation of a blastocyst in terms of its live birth potential for best blastocyst selection from multiple blastocysts of a patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the improved AUC performance",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "ade893e5-868e-42d1-8aa4-f48e51765888",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C57",
+      "claim": "The next step is to validate the model's prediction accuracy using prospectively collected data and verify its effectiveness in blastocyst selection via a randomized controlled trial.",
+      "claim_type": "EXPLICIT",
+      "source": "The next step is to validate the model's prediction accuracy using prospectively collected data and verify its effectiveness in blastocyst selection via a randomized controlled trial (RCT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of future research plans",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "7f41cbd4-9ca6-43de-86e1-b8b48721392c",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C58",
+      "claim": "Blastocyst images were captured before transfer using a standard optical light microscope mounted with a camera.",
+      "claim_type": "EXPLICIT",
+      "source": "Blastocyst images were captured before transfer using a standard optical light microscope mounted with a camera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of data collection methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "6ee83a70-c7e2-4978-82d0-47f8d5e1bf5c",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C59",
+      "claim": "Two grayscale images were captured for each blastocyst, one focusing on ICM and the other focusing on TE.",
+      "claim_type": "EXPLICIT",
+      "source": "Two grayscale images were captured for each blastocyst, one focusing on ICM and the other focusing on TE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of data collection methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "c48347f8-eb05-4f90-b825-f55588d1974a",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C60",
+      "claim": "Blastocysts were cropped from the original images which have a resolution of 1024\u00d7768 and were consistently padded to 500\u00d7500 to facilitate model training.",
+      "claim_type": "EXPLICIT",
+      "source": "Blastocysts were cropped from the original images which have a resolution of 1024\u00d7768 and were consistently padded to 500\u00d7500 to facilitate model training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of image preprocessing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "e19965b6-2cee-4db0-a026-3ed1818e12c3",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C61",
+      "claim": "This study was approved by the Ethics Committee of the Reproductive and Genetic Hospital of CITIC-Xiangya (approval number: LL-SC-2021-008).",
+      "claim_type": "EXPLICIT",
+      "source": "This study was approved by the Ethics Committee of the Reproductive and Genetic Hospital of CITIC-Xiangya (approval number: LL-SC-2021-008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "59e35634-fc66-4fc4-a5ca-2fdd5feddff8",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C62",
+      "claim": "Informed consent was not necessary because this study used retrospective and fully de-identified data, no medical intervention was performed on the subject, and no biological samples from the patient were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "Informed consent was not necessary because this study used retrospective and fully de-identified data, no medical intervention was performed on the subject, and no biological samples from the patient were collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of ethical considerations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "7b78f29f-9354-48ee-953d-2c88c9964c7a",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C63",
+      "claim": "The model was implemented using PyTorch 1.10.1.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was implemented using PyTorch 1.10.1 (Paszke et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of implementation details with citation to Paszke et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "7cdfeb5e-0585-4a43-b280-600a53436945",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C64",
+      "claim": "Facebook Ax (version 0.2.2) was used as an automatic hyperparameter-tuning tool to search for the optimal hyperparameters for model training.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, an automatic hyperparameter-tuning tool is used, Facebook Ax (version 0.2.2, https://github.com/facebook/Ax), to search for the optimal hyperparameters for model training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of hyperparameter tuning methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "a88bd299-ed96-40a0-8e6a-faaeb93f1b37",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C65",
+      "claim": "The selected hyperparameters for training the model include a batch size of 16, an SGD optimizer with a learning rate of 0.008, and a momentum of 0.39, and three hidden layers in the MLP.",
+      "claim_type": "EXPLICIT",
+      "source": "The selected hyperparameters for training the model include a batch size of 16, an SGD optimizer with a learning rate of 0.008, and a momentum of 0.39, and three hidden layers in the MLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of model hyperparameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "6060cf93-edc6-41e4-87b4-535790a3d353",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C66",
+      "claim": "The model was trained with four RTX A6000 GPUs.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was trained with four RTX A6000 GPUs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of computational resources",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "655ee4c7-2ec2-4ec9-b4d0-3fed4bc0d85a",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C67",
+      "claim": "It took about 30 hr to search for the optimal hyperparameters and about an hour to train the model using the optimal hyperparameters.",
+      "claim_type": "EXPLICIT",
+      "source": "It took about 30 hr to search for the optimal hyperparameters and about an hour to train the model using the optimal hyperparameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of computational time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "66582515-78ef-4b06-aa35-23d734151d3e",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C68",
+      "claim": "Chi-squared test was used for categorical features.",
+      "claim_type": "EXPLICIT",
+      "source": "Chi-squared test was used for categorical features, t test was used for numerical features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "e122a217-c58c-4a80-a5a4-420985b8b77e",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C69",
+      "claim": "T test was used for numerical features.",
+      "claim_type": "EXPLICIT",
+      "source": "Chi-squared test was used for categorical features, t test was used for numerical features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "af061521-4831-4bb3-beae-9d32e88b9d0d",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C70",
+      "claim": "ROC curves were compared by the DeLong test implemented in MedCalc software (version 20).",
+      "claim_type": "EXPLICIT",
+      "source": "ROC curves were compared by the DeLong test implemented in MedCalc software (version 20).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "78c79987-fab3-4700-a948-bb05a13db01d",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C71",
+      "claim": "All statistical tests were two-tailed and considered significant if p value\u22640.05.",
+      "claim_type": "EXPLICIT",
+      "source": "All statistical tests were two-tailed and considered significant if p value\u22640.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "8c4f44df-5f82-4cc1-9d6d-9f0a8245a26f",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C72",
+      "claim": "Heatmaps were generated by XGradCAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Heatmaps were generated by XGradCAM (Fu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of visualization methodology with citation to Fu et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "82d6d63c-2e53-478a-b37b-668dd3b14c08",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C73",
+      "claim": "The CNN takes two-channel blastocyst images as the input, one focusing on ICM and the other focusing on TE.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the CNN takes two-channel blastocyst images as the input, one focusing on ICM and the other focusing on TE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of model input",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "cdbb2adf-4ce2-4426-b181-27d1dc424fcc",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C74",
+      "claim": "The AUC of the model using all clinical features showing statistical significance and blastocyst images is 0.75.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC of the model using all clinical features showing statistical significance and blastocyst images is 0.75, lower than the AUC (0.77) achieved by the model using LR-selected clinical features and blastocyst images, and the AUC (0.76) achieved by the model using MLP-selected clinical features and blastocyst images.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data; shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "48accdc9-2b2c-457c-9e9c-5fd5b7e73d6f",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C75",
+      "claim": "The AUC (0.77) achieved by the model using LR-selected clinical features and blastocyst images and the AUC (0.76) achieved by the model using MLP-selected clinical features and blastocyst images show no significant difference (p value=0.95>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC (0.77) achieved by the model using LR-selected clinical features and blastocyst images and the AUC (0.76) achieved by the model using MLP-selected clinical features and blastocyst images show no significant difference (p value=0.95>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical comparison; shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "1e7a54ef-74f7-4ae6-ad83-e269b8d1fa04",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C76",
+      "claim": "The MLP-based feature selection method selected 14 clinical features.",
+      "claim_type": "EXPLICIT",
+      "source": "The MLP-based feature selection method selected 14 clinical features.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by feature selection analysis; shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "01901578-68a6-4154-aa34-cef2da27f643",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C77",
+      "claim": "Compared with the 16 clinical features selected by LR, 12 of the 16 clinical features were selected by both MLP and LR, and the top nine features are the same.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the 16 clinical features selected by LR, 12 of the 16 clinical features were selected by both MLP and LR, and the top nine features are the same.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of feature selection results; shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "e4659f2c-95cb-4323-b1b5-6b7856ea7ac1",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C78",
+      "claim": "The two clinical features selected by MLP but not by LR include fresh semen (yes/no) and follicle-stimulating hormone (FSH) on day 3 after period.",
+      "claim_type": "EXPLICIT",
+      "source": "The two clinical features selected by MLP but not by LR include fresh semen (yes/no) and follicle-stimulating hormone (FSH) on day 3 after period.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of feature selection results; shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "28e8e669-4f9e-465f-bdc1-b6462b525bcb",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C79",
+      "claim": "The four clinical features selected by LR but not MLP include number of ovarian stimulation cycles, progesterone (P) on HCG day, maternal body mass index, and free thyroxine (FT4) on day 3 after period.",
+      "claim_type": "EXPLICIT",
+      "source": "The four clinical features selected by LR but not MLP include number of ovarian stimulation cycles, progesterone (P) on HCG day, maternal body mass index, and free thyroxine (FT4) on day 3 after period.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of feature selection results; shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "22291e58-1104-4362-84b0-e4d1c0300f44",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C80",
+      "claim": "The blastocyst grading system was introduced in 1999.",
+      "claim_type": "EXPLICIT",
+      "source": "The blastocyst grading system introduced in 1999 (Gardner and Schoolcraft, 1999; Gardner, 1999) remains the most common method used by embryologists to evaluate blastocyst quality although the morphological grades of blastocyst development stage, ICM and TE have limited predictive power on live birth outcomes (e.g., AUC=0.58\u20130.61 for live birth prediction reported by Reignier et al., 2019; Bartolacci et al., 2021; Xiong et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gardner and Schoolcraft, 1999; Gardner, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "816bc77d-067a-4f95-870d-2b7428211ec9",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C81",
+      "claim": "The blastocyst grading system remains the most common method used by embryologists to evaluate blastocyst quality.",
+      "claim_type": "EXPLICIT",
+      "source": "The blastocyst grading system introduced in 1999 (Gardner and Schoolcraft, 1999; Gardner, 1999) remains the most common method used by embryologists to evaluate blastocyst quality although the morphological grades of blastocyst development stage, ICM and TE have limited predictive power on live birth outcomes (e.g., AUC=0.58\u20130.61 for live birth prediction reported by Reignier et al., 2019; Bartolacci et al., 2021; Xiong et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established clinical practice and citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "728a3317-b749-47a7-b5c7-59b9af3961ba",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C82",
+      "claim": "The first in vitro fertilization child was born in 1978.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the birth of the first in vitro fertilization (IVF) child in 1978, over 8 million children were born with IVF treatment (Adamson et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on historical fact cited in Adamson et al., 2018",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "1fe2865d-5d50-4488-9f84-24376ccd28c9",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C83",
+      "claim": "The data set includes transferred blastocysts with known live birth outcomes for patients who underwent frozen embryo transfer cycles from 2016 to 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Transferred blastocysts with known live birth outcomes for patients who underwent frozen embryo transfer cycles from 2016 to 2020, at the Reproductive and Genetic Hospital of CITIC-Xiangya, were reviewed for inclusion in the data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of data collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "003279e0-69f7-4c1a-b8d6-358167a2f461",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "claim_id": "C84",
+      "claim": "The data was collected at the Reproductive and Genetic Hospital of CITIC-Xiangya.",
+      "claim_type": "EXPLICIT",
+      "source": "Transferred blastocysts with known live birth outcomes for patients who underwent frozen embryo transfer cycles from 2016 to 2020, at the Reproductive and Genetic Hospital of CITIC-Xiangya, were reviewed for inclusion in the data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of data source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3da31a8b-32d1-4a1d-9bd6-68c4e3a98850",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study demonstrates that combining blastocyst images with patient couple's clinical features significantly improves live birth prediction accuracy compared to using images alone. The model using only images achieved AUC=0.67 (95% CI: 0.65-0.70), while the model using both images and clinical features achieved AUC=0.77 (95% CI: 0.75-0.79), a statistically significant improvement (p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 and C39-C43 provide consistent, statistically significant evidence with appropriate confidence intervals and p-values. The DeLong test was properly applied to compare ROC curves, and the results are visualized in Figure 2. The improvement from AUC 0.67 to 0.77 represents a meaningful clinical advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "0ceb2c57-7c77-4139-af5f-d55b42619d3e",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Endometrium status-related features contribute significantly to live birth prediction accuracy. When these features were excluded from the model, AUC decreased from 0.77 to 0.74 (p=0.007), demonstrating their independent predictive value.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 and C43 demonstrate through ablation analysis that endometrium features add significant predictive value. The statistical significance (p=0.007) and the magnitude of effect (AUC decrease of 0.03) support this conclusion. This addresses a gap identified in prior work (C11, C52).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "baa6138f-d542-4128-a5a4-df234af7ff4c",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sixteen clinical features were identified as most predictive of live birth outcomes through logistic regression-based sequential forward feature selection. The top five features are maternal age, day of blastocyst transfer, antral follicle count, retrieved oocyte number, and endometrium thickness before transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C25, and C53 describe a systematic feature selection process with clear methodology (LR-based sequential forward selection). Figure 3 provides quantitative ranking of features by individual AUC values. The approach is methodologically sound and addresses the multimodal nature of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "86ec6cfd-e877-489d-98b0-e93444722a36",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CNN heatmap analysis reveals that the model focuses on inner cell mass (ICM) and trophectoderm (TE) regions for prediction, with TE-related features contributing more when clinical features are included in training compared to image-only training.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C44-C45 are supported by XGradCAM heatmap visualizations shown in Figure 4. The qualitative observation of increased TE focus when clinical features are included is visually apparent. However, the analysis is primarily qualitative; quantitative metrics of regional contribution would strengthen this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "6f15cc7c-8084-4fd8-b681-011883ec37f6",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The proposed model achieves AUC=0.77 for live birth prediction, significantly outperforming both traditional Gardner grading (AUC=0.58-0.61) and prior CNN-based approaches using images alone (AUC~0.65-0.67).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C49 are supported by comparison with literature values (C6-C7, C48) and the study's own results (C12-C13). The improvement over Gardner grading is substantial and clinically meaningful. However, direct head-to-head comparison on the same dataset would be more rigorous than literature comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "96c44779-a0ce-4a2a-ab0f-a52f4a545a77",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study utilized a dataset of 17,580 blastocysts with known live birth outcomes, images, and clinical features, collected from frozen embryo transfer cycles at a single institution between 2016-2020. This represents 62.5% of the 28,118 blastocysts initially reviewed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C27-C28, C83-C84 provide clear documentation of data collection. The dataset size is substantial for this domain. However, the exclusion of 37.5% of cases due to missing data (incomplete images or clinical features) could introduce selection bias, which is not discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "41c06d27-ed1c-4de0-91a3-ab6c887c6ba4",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model architecture consists of an EfficientNetV2-S CNN processing two-channel blastocyst images (one focused on ICM, one on TE) and a multilayer perceptron (MLP) processing clinical features, with decision-level feature fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 and C73 describe the model architecture clearly, supported by Figure 1. The choice of EfficientNetV2-S is justified by citation (C32). The two-channel input design is appropriate for the dual-focus imaging protocol. The architecture is well-documented and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "ade295bd-e152-4bae-967a-538b69106019",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study employed stratified random sampling for 80:10:10 train/validation/test split and used weighted sampling to address class imbalance (36.8% positive outcomes), which outperformed weighted cross-entropy loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 describe appropriate methodology for handling imbalanced data. Stratified sampling ensures consistent class distribution across splits. The comparison of weighted sampling vs. weighted cross-entropy (C38) demonstrates methodological rigor, though quantitative results of this comparison are not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "eda1d844-f9bb-4a85-b69c-5f68dc60f0c4",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hyperparameter optimization was performed using Facebook Ax, requiring ~30 hours of search time, with final model training taking ~1 hour on four RTX A6000 GPUs. Selected hyperparameters include batch size 16, SGD optimizer with learning rate 0.008 and momentum 0.39.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 provide detailed computational methodology. The use of automated hyperparameter tuning (Ax) is appropriate and enhances reproducibility. However, the search space and optimization objective are not specified, and no random seed is mentioned, which could affect reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "3f9b26fa-7aa7-4d9e-9542-4365827b6296",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Statistical analysis employed chi-squared tests for categorical features, t-tests for numerical features, and DeLong test for ROC curve comparison, with two-tailed tests and significance threshold of p\u22640.05.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 describe standard and appropriate statistical methodology. The DeLong test is the correct method for comparing correlated ROC curves. The specification of two-tailed tests and significance threshold demonstrates statistical rigor. Multiple testing correction is not mentioned, which could be relevant given 103 initial features.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "b73fb0d1-7a2f-4433-9f90-eb9dc0b95ef0",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Feature selection comparison shows that LR-based selection (16 features, AUC=0.77) and MLP-based selection (14 features, AUC=0.76) perform similarly (p=0.95) and both outperform using all statistically significant features (AUC=0.75), with 12 features selected by both methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 demonstrate that feature selection improves model performance over using all significant features, supporting the principle stated in C26. The comparison of two selection methods (LR vs MLP) adds robustness. The high overlap (12/16 features) between methods suggests stable feature importance. Results are shown in supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "e1502562-1f71-4c2d-8a88-af478b62549e",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The biological interpretation suggests that TE and endometrium status-related features play critical roles in blastocyst implantation, which is necessary for positive live birth outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 provide biological context supported by multiple citations. This interpretation is consistent with the computational findings (C20, C45) showing increased TE focus when endometrium features are included. However, this remains correlative; the study does not establish causal mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "5e4815f6-7a8c-4ba5-9831-3cff22aa39b1",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CNN analysis differs from Gardner grading by focusing on specific TE clusters rather than overall TE cell number and cohesiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C50 is based on qualitative interpretation of heatmaps (Figure 4) without quantitative validation. While the observation is plausible, the heatmap resolution and interpretation methodology are not sufficient to definitively establish what specific features the CNN uses. This would require more detailed analysis such as feature attribution or controlled perturbation studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "cd7bae70-8548-4c28-b11e-9ac66f0e87a2",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study acknowledges a limitation that only total testosterone was analyzed, not free or bioavailable testosterone, which may cause bias in determining testosterone's significance as a predictor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 appropriately acknowledge a data limitation. This is a minor limitation as testosterone was not identified among the top predictive features (C18). The acknowledgment demonstrates scientific transparency, though the actual impact on results is likely minimal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "27b0e79b-bd38-45f0-b7a0-60d142daa979",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose that the model improves blastocyst evaluation for selection and plan to validate it prospectively through a randomized controlled trial comparing AI-selected vs. embryologist-selected blastocysts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is an inference about clinical utility that is not directly demonstrated in this retrospective study. Claim C57 describes future work. While the improved AUC suggests potential clinical benefit, actual impact on patient outcomes requires prospective validation. The proposed RCT design is appropriate but represents future work, not current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "bea0fa98-f951-49a6-a419-225e6eb16e6e",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Blastocyst images were captured using standard optical microscopy with two grayscale images per blastocyst (one focused on ICM, one on TE), cropped from 1024\u00d7768 resolution and padded to 500\u00d7500 pixels. Heatmaps were generated using XGradCAM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 and C72 provide clear documentation of imaging methodology and preprocessing. The dual-focus imaging protocol is appropriate for capturing both ICM and TE features. XGradCAM is a standard visualization method. However, details about image acquisition parameters (magnification, lighting conditions) and inter-operator variability are not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "4a2ffcb7-8a2d-4b4b-8a92-2c42e85d4dd5",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study received ethics approval (LL-SC-2021-008) and informed consent was waived due to use of retrospective, de-identified data without intervention or sample collection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 document appropriate ethical oversight. The justification for waiving informed consent is reasonable for retrospective analysis of de-identified data. This meets standard ethical requirements for this type of study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The introduction establishes context that infertility affects >50 million couples worldwide, >8 million IVF births have occurred since 1978, traditional morphological grading has limited predictive power (AUC=0.58-0.61), and prior CNN approaches achieved AUC~0.65-0.74.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 provide background context supported by appropriate citations. These establish the clinical problem, limitations of current methods, and prior work. The citations appear accurate based on the stated values. This contextualizes the study's contribution but represents prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "017c1941-4fcf-4e9d-93b5-14ac4e7f51ab",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study collected 103 clinical features encompassing maternal characteristics, hormone profiles, ultrasound results, and paternal semen parameters. Feature selection reduces dimensionality and improves model generalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 documents comprehensive clinical data collection with reference to supplementary materials. Claim C26 states a general machine learning principle that is well-established and demonstrated in this study (C74-C75). The breadth of features collected is a strength of the dataset.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "94ec7ecd-3349-4725-8fa2-0968f1f41c16",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The model was implemented using PyTorch 1.10.1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 provides implementation details with appropriate citation. This aids reproducibility. However, additional details such as Python version, other dependencies, and code availability would further enhance reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "898fbe93-26f0-4e8c-b083-35a861e01c49",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background information establishes that the Gardner blastocyst grading system was introduced in 1999 and remains the most common evaluation method, and that the first IVF child was born in 1978.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 provide accurate historical context supported by appropriate citations. These are well-established facts in reproductive medicine that contextualize the study but do not represent new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    },
+    {
+      "id": "1a4ee27e-caf2-4721-9517-2f1ca659ea8b",
+      "content_id": "a844ae16-bae8-4461-8edf-5311bfa112c6",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The study identifies limitations in prior work by Miyagi et al. 2020, noting they did not report AUC for images alone and did not include endometrium status-related features despite their importance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C51-C52 accurately characterize limitations of prior work based on the cited study. This motivates the current study's design to address these gaps. The criticism is fair and constructive, identifying specific methodological improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:18:34.605137Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5c225450-7755-48d7-a047-e1ca33711168",
+      "result_id": "3da31a8b-32d1-4a1d-9bd6-68c4e3a98850"
+    },
+    {
+      "claim_id": "bcdcc8b8-b328-43b6-81b9-310948b98044",
+      "result_id": "3da31a8b-32d1-4a1d-9bd6-68c4e3a98850"
+    },
+    {
+      "claim_id": "2d7763d2-89ef-43db-90fc-8289bca76b41",
+      "result_id": "3da31a8b-32d1-4a1d-9bd6-68c4e3a98850"
+    },
+    {
+      "claim_id": "5f99fe12-0495-4907-aa6c-8262612bdfba",
+      "result_id": "3da31a8b-32d1-4a1d-9bd6-68c4e3a98850"
+    },
+    {
+      "claim_id": "8fa365db-d245-4760-9eb2-15a75c827166",
+      "result_id": "3da31a8b-32d1-4a1d-9bd6-68c4e3a98850"
+    },
+    {
+      "claim_id": "07ff7606-080f-4c2a-90ac-9e4ffe4ca398",
+      "result_id": "3da31a8b-32d1-4a1d-9bd6-68c4e3a98850"
+    },
+    {
+      "claim_id": "394f7471-c890-4e58-8fda-6d9113960f33",
+      "result_id": "3da31a8b-32d1-4a1d-9bd6-68c4e3a98850"
+    },
+    {
+      "claim_id": "91caedc0-ba6d-4814-83d9-ac7abf482aed",
+      "result_id": "3da31a8b-32d1-4a1d-9bd6-68c4e3a98850"
+    },
+    {
+      "claim_id": "e16bcf4b-b1eb-490c-abed-0f1f232f9831",
+      "result_id": "0ceb2c57-7c77-4139-af5f-d55b42619d3e"
+    },
+    {
+      "claim_id": "ea76198c-8e7b-49f1-a895-8accaf9836fe",
+      "result_id": "0ceb2c57-7c77-4139-af5f-d55b42619d3e"
+    },
+    {
+      "claim_id": "91caedc0-ba6d-4814-83d9-ac7abf482aed",
+      "result_id": "0ceb2c57-7c77-4139-af5f-d55b42619d3e"
+    },
+    {
+      "claim_id": "8a759eba-f525-4796-88f2-1e6cc23e2ecb",
+      "result_id": "baa6138f-d542-4128-a5a4-df234af7ff4c"
+    },
+    {
+      "claim_id": "2d3d61b2-4b58-41b8-8d3b-66beb2168188",
+      "result_id": "baa6138f-d542-4128-a5a4-df234af7ff4c"
+    },
+    {
+      "claim_id": "2cde82c1-22ed-473c-afcc-f403a3727092",
+      "result_id": "baa6138f-d542-4128-a5a4-df234af7ff4c"
+    },
+    {
+      "claim_id": "07c0e384-256a-4be0-89a8-f51773c660d3",
+      "result_id": "baa6138f-d542-4128-a5a4-df234af7ff4c"
+    },
+    {
+      "claim_id": "37720577-2d50-4d30-855b-f6f77da1d37e",
+      "result_id": "86ec6cfd-e877-489d-98b0-e93444722a36"
+    },
+    {
+      "claim_id": "423b6d3d-7aff-4019-acca-fa460ff014b9",
+      "result_id": "86ec6cfd-e877-489d-98b0-e93444722a36"
+    },
+    {
+      "claim_id": "52f140df-68b3-4198-8174-215a0882ebde",
+      "result_id": "86ec6cfd-e877-489d-98b0-e93444722a36"
+    },
+    {
+      "claim_id": "ca73bdba-6c1a-4be8-850c-77854d5eae01",
+      "result_id": "86ec6cfd-e877-489d-98b0-e93444722a36"
+    },
+    {
+      "claim_id": "d0c75db2-6491-4159-aaa3-40c69f01d995",
+      "result_id": "6f15cc7c-8084-4fd8-b681-011883ec37f6"
+    },
+    {
+      "claim_id": "0d76ed9e-a1e5-4140-b168-aac69be61ba0",
+      "result_id": "6f15cc7c-8084-4fd8-b681-011883ec37f6"
+    },
+    {
+      "claim_id": "f14b661d-66bb-490f-babb-c9926d8ef5be",
+      "result_id": "96c44779-a0ce-4a2a-ab0f-a52f4a545a77"
+    },
+    {
+      "claim_id": "7d0fba9a-4324-4f30-8382-788c54f2f2b8",
+      "result_id": "96c44779-a0ce-4a2a-ab0f-a52f4a545a77"
+    },
+    {
+      "claim_id": "22187593-f8f0-48bb-863b-b4ff4717835e",
+      "result_id": "96c44779-a0ce-4a2a-ab0f-a52f4a545a77"
+    },
+    {
+      "claim_id": "1fe2865d-5d50-4488-9f84-24376ccd28c9",
+      "result_id": "96c44779-a0ce-4a2a-ab0f-a52f4a545a77"
+    },
+    {
+      "claim_id": "003279e0-69f7-4c1a-b8d6-358167a2f461",
+      "result_id": "96c44779-a0ce-4a2a-ab0f-a52f4a545a77"
+    },
+    {
+      "claim_id": "3e2f17af-0288-4bd2-a944-eb41bfa99c3c",
+      "result_id": "41c06d27-ed1c-4de0-91a3-ab6c887c6ba4"
+    },
+    {
+      "claim_id": "b133d119-9d07-41f0-a07b-373864d9b127",
+      "result_id": "41c06d27-ed1c-4de0-91a3-ab6c887c6ba4"
+    },
+    {
+      "claim_id": "7902566e-d4b0-46fa-bdd4-1a65c8034ae8",
+      "result_id": "41c06d27-ed1c-4de0-91a3-ab6c887c6ba4"
+    },
+    {
+      "claim_id": "23695fe9-547a-4500-98d5-9e421b0ced8d",
+      "result_id": "41c06d27-ed1c-4de0-91a3-ab6c887c6ba4"
+    },
+    {
+      "claim_id": "82d6d63c-2e53-478a-b37b-668dd3b14c08",
+      "result_id": "41c06d27-ed1c-4de0-91a3-ab6c887c6ba4"
+    },
+    {
+      "claim_id": "c372f6e7-1af4-428b-b64f-01be7aaf937e",
+      "result_id": "ade295bd-e152-4bae-967a-538b69106019"
+    },
+    {
+      "claim_id": "845fe341-0912-4525-89cb-40b37a8bab6e",
+      "result_id": "ade295bd-e152-4bae-967a-538b69106019"
+    },
+    {
+      "claim_id": "8e97f716-b51f-476e-8b6f-24943610fdfa",
+      "result_id": "ade295bd-e152-4bae-967a-538b69106019"
+    },
+    {
+      "claim_id": "ee385b59-6a24-44fc-a556-8951f65bb063",
+      "result_id": "ade295bd-e152-4bae-967a-538b69106019"
+    },
+    {
+      "claim_id": "2d5ecdec-aded-4ba7-b80a-95b9bc43045b",
+      "result_id": "ade295bd-e152-4bae-967a-538b69106019"
+    },
+    {
+      "claim_id": "fe206e96-a0d7-40c0-b0bb-5a51ddc42335",
+      "result_id": "ade295bd-e152-4bae-967a-538b69106019"
+    },
+    {
+      "claim_id": "7cdfeb5e-0585-4a43-b280-600a53436945",
+      "result_id": "eda1d844-f9bb-4a85-b69c-5f68dc60f0c4"
+    },
+    {
+      "claim_id": "a88bd299-ed96-40a0-8e6a-faaeb93f1b37",
+      "result_id": "eda1d844-f9bb-4a85-b69c-5f68dc60f0c4"
+    },
+    {
+      "claim_id": "6060cf93-edc6-41e4-87b4-535790a3d353",
+      "result_id": "eda1d844-f9bb-4a85-b69c-5f68dc60f0c4"
+    },
+    {
+      "claim_id": "655ee4c7-2ec2-4ec9-b4d0-3fed4bc0d85a",
+      "result_id": "eda1d844-f9bb-4a85-b69c-5f68dc60f0c4"
+    },
+    {
+      "claim_id": "66582515-78ef-4b06-aa35-23d734151d3e",
+      "result_id": "3f9b26fa-7aa7-4d9e-9542-4365827b6296"
+    },
+    {
+      "claim_id": "e122a217-c58c-4a80-a5a4-420985b8b77e",
+      "result_id": "3f9b26fa-7aa7-4d9e-9542-4365827b6296"
+    },
+    {
+      "claim_id": "af061521-4831-4bb3-beae-9d32e88b9d0d",
+      "result_id": "3f9b26fa-7aa7-4d9e-9542-4365827b6296"
+    },
+    {
+      "claim_id": "78c79987-fab3-4700-a948-bb05a13db01d",
+      "result_id": "3f9b26fa-7aa7-4d9e-9542-4365827b6296"
+    },
+    {
+      "claim_id": "cdbb2adf-4ce2-4426-b181-27d1dc424fcc",
+      "result_id": "b73fb0d1-7a2f-4433-9f90-eb9dc0b95ef0"
+    },
+    {
+      "claim_id": "48accdc9-2b2c-457c-9e9c-5fd5b7e73d6f",
+      "result_id": "b73fb0d1-7a2f-4433-9f90-eb9dc0b95ef0"
+    },
+    {
+      "claim_id": "1e7a54ef-74f7-4ae6-ad83-e269b8d1fa04",
+      "result_id": "b73fb0d1-7a2f-4433-9f90-eb9dc0b95ef0"
+    },
+    {
+      "claim_id": "01901578-68a6-4154-aa34-cef2da27f643",
+      "result_id": "b73fb0d1-7a2f-4433-9f90-eb9dc0b95ef0"
+    },
+    {
+      "claim_id": "e4659f2c-95cb-4323-b1b5-6b7856ea7ac1",
+      "result_id": "b73fb0d1-7a2f-4433-9f90-eb9dc0b95ef0"
+    },
+    {
+      "claim_id": "28e8e669-4f9e-465f-bdc1-b6462b525bcb",
+      "result_id": "b73fb0d1-7a2f-4433-9f90-eb9dc0b95ef0"
+    },
+    {
+      "claim_id": "c0ea6406-ddb7-48e0-acf0-1cf9cc2ad26d",
+      "result_id": "e1502562-1f71-4c2d-8a88-af478b62549e"
+    },
+    {
+      "claim_id": "ff088c70-21d0-4d5f-a88a-3da7bee42acd",
+      "result_id": "e1502562-1f71-4c2d-8a88-af478b62549e"
+    },
+    {
+      "claim_id": "76e08d9e-96a7-402d-87d0-46e08709a9a0",
+      "result_id": "5e4815f6-7a8c-4ba5-9831-3cff22aa39b1"
+    },
+    {
+      "claim_id": "419d1538-2ee1-4090-9515-9d923cc51d5c",
+      "result_id": "cd7bae70-8548-4c28-b11e-9ac66f0e87a2"
+    },
+    {
+      "claim_id": "b141ac4e-a339-4dc7-9c16-5bd3a295c0d6",
+      "result_id": "cd7bae70-8548-4c28-b11e-9ac66f0e87a2"
+    },
+    {
+      "claim_id": "172dd72e-93d2-484f-89c3-a2d76a2c427c",
+      "result_id": "27b0e79b-bd38-45f0-b7a0-60d142daa979"
+    },
+    {
+      "claim_id": "ade893e5-868e-42d1-8aa4-f48e51765888",
+      "result_id": "27b0e79b-bd38-45f0-b7a0-60d142daa979"
+    },
+    {
+      "claim_id": "7f41cbd4-9ca6-43de-86e1-b8b48721392c",
+      "result_id": "bea0fa98-f951-49a6-a419-225e6eb16e6e"
+    },
+    {
+      "claim_id": "6ee83a70-c7e2-4978-82d0-47f8d5e1bf5c",
+      "result_id": "bea0fa98-f951-49a6-a419-225e6eb16e6e"
+    },
+    {
+      "claim_id": "c48347f8-eb05-4f90-b825-f55588d1974a",
+      "result_id": "bea0fa98-f951-49a6-a419-225e6eb16e6e"
+    },
+    {
+      "claim_id": "8c4f44df-5f82-4cc1-9d6d-9f0a8245a26f",
+      "result_id": "bea0fa98-f951-49a6-a419-225e6eb16e6e"
+    },
+    {
+      "claim_id": "e19965b6-2cee-4db0-a026-3ed1818e12c3",
+      "result_id": "4a2ffcb7-8a2d-4b4b-8a92-2c42e85d4dd5"
+    },
+    {
+      "claim_id": "59e35634-fc66-4fc4-a5ca-2fdd5feddff8",
+      "result_id": "4a2ffcb7-8a2d-4b4b-8a92-2c42e85d4dd5"
+    },
+    {
+      "claim_id": "c7b5f2c0-9da5-4b34-ac80-257e4bea0326",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "18ca1222-6216-488c-a790-601d3a9a12e8",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "af15fe56-cc8a-4de9-967c-654cec8310d4",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "81ceddd1-761e-4360-b9c6-91af5189d608",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "9d49f579-7880-4a5e-91f1-c08d25595bf1",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "3d45da7f-c866-4da0-a77d-1fb9c0c7208f",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "ebd6ef60-eb21-46af-9f88-300365b966f6",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "242d09aa-effa-4baf-be1b-5e3d3a376b71",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "c3cd8b33-ff5b-4742-90ff-e8a287870009",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "00d4d119-f25e-491d-a629-68637bc71188",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "f57ee85a-cb95-43fd-992e-fd5531757e17",
+      "result_id": "dda9a18c-4ab6-4de6-8028-6efb35e2babc"
+    },
+    {
+      "claim_id": "53819f71-87a3-4303-8133-fc71b43da010",
+      "result_id": "017c1941-4fcf-4e9d-93b5-14ac4e7f51ab"
+    },
+    {
+      "claim_id": "c348f45f-0f83-4373-9049-0e6b808da188",
+      "result_id": "017c1941-4fcf-4e9d-93b5-14ac4e7f51ab"
+    },
+    {
+      "claim_id": "7b78f29f-9354-48ee-953d-2c88c9964c7a",
+      "result_id": "94ec7ecd-3349-4725-8fa2-0968f1f41c16"
+    },
+    {
+      "claim_id": "22291e58-1104-4362-84b0-e4d1c0300f44",
+      "result_id": "898fbe93-26f0-4e8c-b083-35a861e01c49"
+    },
+    {
+      "claim_id": "816bc77d-067a-4f95-870d-2b7428211ec9",
+      "result_id": "898fbe93-26f0-4e8c-b083-35a861e01c49"
+    },
+    {
+      "claim_id": "728a3317-b749-47a7-b5c7-59b9af3961ba",
+      "result_id": "898fbe93-26f0-4e8c-b083-35a861e01c49"
+    },
+    {
+      "claim_id": "e32da797-7e53-4472-aa88-e2096abb6786",
+      "result_id": "1a4ee27e-caf2-4721-9517-2f1ca659ea8b"
+    },
+    {
+      "claim_id": "80300ff1-7b79-461e-bd36-889a00ff0b3f",
+      "result_id": "1a4ee27e-caf2-4721-9517-2f1ca659ea8b"
+    },
+    {
+      "claim_id": "e085e75b-1cc0-4d86-9c71-64e73eb5f50c",
+      "result_id": "1a4ee27e-caf2-4721-9517-2f1ca659ea8b"
+    }
+  ],
+  "comparisons": []
+}

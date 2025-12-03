@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Transcriptomic profiling revealed 906 differentially expressed genes between i-OCLs and t-OCLs (C1), with the most differentially expressed genes related to innate immunity and immune defense responses (C3), confirming that i-OCLs and t-OCLs differ in their immune capacity (C4). While genes involved in OCL resorbing activity and the Rank-Rank-L differentiation pathway showed no significant differences except for Nfatc1 (C5), major differences were found in genes associated with the Ig-like receptor-dependent costimulatory OCL differentiation pathway (C6), which are linked to immune responses and pattern recognition receptors, notably C-type lectin receptors (C7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C5, C6, and C7 are directly supported by RNAseq data analysis with appropriate statistical thresholds (log2FC \u22651; p<0.05) and computational pathway analysis (EnrichR/Kegg). Claim C4 is supported by both current data and previous publications. The transcriptomic approach with n=5 biological replicates per group provides adequate statistical power, and the findings are internally consistent across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "miRNA profiling identified differentially expressed miRNAs between i-OCLs and t-OCLs, with Mir151, Mir342, Mir146b, and Mir155 significantly upregulated in i-OCLs (C8), and Mir185, Mir674, Mir26b, and Mir29a upregulated in t-OCLs (C9), as validated by RT-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by initial miRNA profiling with appropriate statistical thresholds (FC \u22652, p<0.05, CT values <32) and validated by RT-qPCR (Figure 1h). The validation step strengthens the findings, though the manuscript does not provide detailed statistical analysis for the RT-qPCR validation data shown in Figure 1h.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C64",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Pattern recognition receptors Tlr2, Dectin-1, and Mincle, which are involved in fungal recognition (C64), are major regulators of inflammatory osteoclasts (C10). These receptors are expressed at much higher proportions in CD11c+ BM-derived DCs than in BM CD11b+ MNs (C68), with Dectin-2 showing lower expression in i-OCL progenitors (C69). In OCLs from OVX mice, higher proportions of Dectin-1+ and Tlr2+ OCLs were found compared to SHAM mice (C70), while Mincle+ OCL proportions were not significantly altered (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are directly supported by FACS analysis data shown in Figures 1l and 2a. Claims C10 and C64 are supported by both the current experimental data (transcriptomic profiling, FACS analysis, functional assays) and citations to previous publications. The convergence of multiple experimental approaches (RNAseq, FACS, functional assays) provides strong support for the role of these PRRs in i-OCL regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Administration of Saccharomyces boulardii CNCM I-745 (Sb) in vivo reduced bone loss in ovariectomized but not sham mice (C11). Sb-treated OVX mice displayed reduced trabecular bone loss with significantly higher BV/TV and trabecular number (C12), reduced TRAcP+ OCL surface per bone surface (C13), and significantly reduced serum CTX levels (C14). However, Sb treatment did not affect cortical parameters (C15), the number of osteoblasts and osteocytes in vivo (C16), or the mineralization capacity of osteoblasts in vitro (C17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are well-supported by microCT analysis, histological analysis, and ELISA measurements with appropriate statistical comparisons. Claims C15-C17 demonstrate specificity of the Sb effect on trabecular bone and OCLs without affecting other bone parameters. The lack of effect on cortical parameters (C15) is acknowledged with speculation about possible reasons, which is appropriately cautious. Sample sizes appear adequate (n\u22655 per group for most measurements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24"
+    ],
+    "result": "Sb treatment improved gut barrier function in OVX mice, reducing serum dextran concentration to SHAM levels (C18). Serum propionate, butyrate, and lactate were reduced in OVX mice (C19), and Sb treatment reversed this decrease, though not reaching statistical significance for lactate and butyrate (C20). Sb-treated OVX mice showed decreased proportions of BM CD4+ Tnf-\u03b1-producing T cells (C21) and significantly reduced proportions of Cx3cr1+ i-OCLs compared to non-treated OVX mice (C23), while there was no alteration of Cx3cr1+ OCLs in SHAM mice (C24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C21, C23, and C24 are supported by appropriate assays (FITC-dextran permeability, FACS analysis) with adequate sample sizes. Claim C20 is partially supported, as the authors acknowledge that statistical significance was not reached for lactate and butyrate, which appropriately tempers the conclusion. The convergence of multiple inflammatory and metabolic parameters supports the overall conclusion about Sb's systemic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "PRR agonists specifically inhibit i-OCL differentiation without affecting t-OCLs. Curdlan, zymosan, and GlcC14C18 did not affect t-OCL formation from BM CD11b+ cells (C25) but dramatically inhibited i-OCL differentiation from BM-derived DCs (C26), an effect not due to increased apoptosis (C27). Anti-Dectin-1 and anti-Mincle antibodies reversed the inhibitory effects of curdlan and GlcC14C18, respectively (C28, C29), while Tlr2 siRNA abrogated curdlan-induced but not zymosan-induced inhibition (C30). These agonists also reduced i-OCL capacity to degrade mineralized matrix (C31) without affecting t-OCL activity (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 are well-supported by in vitro differentiation assays, resorption assays, and mechanistic studies using blocking antibodies and siRNA. The use of multiple complementary approaches (agonists, blocking antibodies, siRNA) strengthens the conclusions about receptor involvement. The specificity for i-OCLs over t-OCLs is consistently demonstrated across multiple experimental conditions. The siRNA validation (Figure 4\u2014figure supplement 1e) confirms knockdown efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In OCLs derived from BM cells of OVX and SHAM mice, curdlan and zymosan strongly reduced OCL differentiation from OVX mice (C33) but had no significant effect on OCLs from SHAM mice (C34). However, GlcC14C18 reduced OCL differentiation from both OVX and SHAM mice (C35), consistent with equivalent Mincle expression levels in these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by in vitro differentiation assays (Figure 4h) and are consistent with the receptor expression data (Figure 2a). The differential effects of Dectin-1/Tlr2 agonists versus Mincle agonist between OVX and SHAM-derived cells provide additional evidence for the specificity of PRR-mediated regulation. The consistency with receptor expression patterns strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Clec4e KO mice have increased bone mass compared to controls (C36), as confirmed by microCT analysis. However, BM cells, BM-DCs, and BM-MNs from Clec4e\u2212/\u2212 mice differentiate into OCLs at least as efficiently as cells from controls (C37), contrasting with previous literature. Inhibition of i-OCL differentiation by GlcC14C18 was decreased in cells from Clec4e\u2212/\u2212 compared to Clec4e+/+ mice (C38), confirming Mincle involvement in this inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C36 is supported by microCT data and consistent with previous findings (Andreev et al., 2020). Claim C38 is supported by in vitro data. However, claim C37 contradicts previous literature, and the authors speculate this may be due to different protocols. The discrepancy between increased bone mass in vivo (C36) and normal OCL differentiation in vitro (C37) is not fully resolved, suggesting complex indirect effects of Mincle on bone homeostasis that require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Syk expression by DCs is required for i-OCL formation, as BM-derived DCs from CD11c\u0394Syk mice failed to differentiate into OCLs (C39, C40). Curdlan addition to OCL differentiation medium rapidly induced Syk phosphorylation (C41), followed by increased proportions of MHC-II+ and CD80+CD86+ DCs indicating DC maturation (C42). Simultaneously, curdlan treatment reduced the proportion of RANK+ cells expressing Csf1r and FcgRII/III (C43) and downregulated expression of Syk, Nfatc1, and Ctsk (C44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by multiple complementary approaches including genetic deletion (CD11c\u0394Syk mice), FACS analysis of phosphorylation and surface markers, and RT-qPCR. The temporal sequence of events (rapid Syk phosphorylation followed by DC maturation and reduced OCL differentiation markers) provides mechanistic insight. The use of genetically modified mice (C39) provides strong evidence for Syk requirement, though the claim about requirement (C40) is inferred rather than directly tested with rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Sb-conditioned medium (Sb-CM) completely blocked i-OCL progenitor differentiation (C45) without affecting t-OCL formation except at very high concentrations (C46), and this effect was not associated with increased apoptosis (C47). Sb-CM also reduced OCL resorption capacity in vitro (C48). Anti-Dectin-1 and anti-Mincle blocking antibodies completely abrogated the inhibitory effect of Sb-CM on i-OCL differentiation (C49), while Tlr2-siRNA had no effect (C50). Sb-CM strongly stimulated BM-DC maturation (C51) while dramatically decreasing the proportion of Rank+ Csf1r+ and FcgRII/III+ OCL progenitor cells (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are well-supported by in vitro differentiation assays, resorption assays, viability assays, and FACS analysis. The use of blocking antibodies (C49) and siRNA (C50) provides mechanistic evidence for Dectin-1 and Mincle involvement. The specificity for i-OCLs over t-OCLs (C45, C46) is consistent with previous findings. The demonstration that Sb-CM recapitulates the effects of purified PRR agonists strengthens the translational relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background claims establishing OCL heterogeneity: Cx3cr1 was previously identified as a marker of i-OCLs (C2). OCLs derived from steady-state BM cells or BM CD11b+ monocytic cells promote tolerance by inducing regulatory T cells (t-OCLs) (C53), while in the context of IBD or when derived from dendritic cells, OCLs induce Tnf-\u03b1-producing CD4+ T cells (i-OCLs) (C54). OCLs associated with inflammation can be identified by Cx3cr1 expression (C55), and the proportion of Cx3cr1+ OCLs increases in osteoporosis, IBD, and after Rank-L treatment (C56). However, Cx3cr1 is only expressed in approximately 20% of i-OCLs (C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims (C2, C53-C57) are supported by citations to previous publications (Ib\u00e1\u00f1ez et al., 2016; Madel et al., 2020; Kiesel et al., 2009). These claims establish the scientific context and rationale for the current study. The limitation noted in C57 (Cx3cr1 expression in only ~20% of i-OCLs) provides justification for identifying additional markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Background claims on current therapies and probiotics: Current anti-resorptive therapies result in poor bone remodeling which may increase the risk of atypical fractures (C58). i-OCLs arise under the control of persistent high levels of Rank-L, IL-17, and TNF\u03b1 mainly produced by CD4+ T cells (C59), which play a major role in pathological osteoclastogenesis in osteoporosis and IBD (C60). The emergence of osteoclastogenic CD4+ T cells is associated with gut dysbiosis and increased intestinal permeability (C61). Bacterial probiotics such as Lactobacillus and Bifidobacteria have been shown to effectively reduce osteoporotic bone loss (C62), but their specific effect on i-OCLs remains unknown (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by citations to previous publications. Claim C63 explicitly identifies a knowledge gap that the current study addresses. These claims establish the rationale for investigating probiotic effects on i-OCLs specifically and provide context for the therapeutic relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C72",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background claims on Saccharomyces boulardii and gut-bone axis: Sb is used in the treatment of gastrointestinal disorders for its anti-inflammatory properties and capacity to restore gut microbiota (C65). Dectin-1, Tlr2, and Mincle share the capacity to sense fungi and control responses to pathogenic or commensal gut mycobiome (C72). Sb favors regeneration of epithelial barrier integrity in colitis (C76) and restores gut microbiota by increasing SCFA-producing bacteria (C77). The diversity of intestinal microbiota is lower in OVX mice than in SHAM mice (C80). LAB and SCFA-producing bacteria have a beneficial effect on bone (C81). Gut dysbiosis and increased intestinal permeability in osteoporosis induce activation of osteoclastogenic CD4+ T cells over-producing Rank-L and Tnf-\u03b1 (C82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by citations to previous publications. These claims establish the mechanistic rationale for how Sb might affect bone through both direct effects on PRR-expressing cells and indirect effects through gut barrier function and microbiota modulation. The claims provide important context for interpreting the in vivo effects of Sb observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C22",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background claims on mechanisms linking gut and bone: CD4+ Tnf-\u03b1-producing T cells have been reported to be responsible for increased osteoclastogenesis in OVX mice (C22) and are major inducers of i-OCLs (C84). Sb has been described to increase production of anti-inflammatory cytokines IL-10 and IL-4 (C85), which are potent inhibitors of OCL formation (C86). \u03b2-glucans from yeast cell wall cross the gut barrier and translocate to blood and organs (C87) and can directly modulate monocytic cells through CLR stimulation (C88). Sensing of necrotic cells through Mincle by OCL progenitors stimulates OCL formation (C89). Mincle is not expressed by osteoblasts (C90), but myeloid cells are well-known regulators of bone cell differentiation and activity (C91). Mincle KO mice display reduced CD4+IL-17+ T cells (C92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by citations to previous publications. These claims provide mechanistic context for understanding both direct and indirect effects of Sb on bone. The claims about \u03b2-glucan translocation (C87, C88) are particularly important for understanding how oral Sb administration could directly affect bone marrow cells. The claims about Mincle (C89-C92) help explain the complex effects observed with Mincle agonists and in Clec4e KO mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Discussion claims on Mincle complexity and signaling mechanisms: Depending on whether Mincle is stimulated by exogenous microbial signals or endogenous necrotic signals, this receptor has divergent effects on osteoclastogenesis (C93). Mincle has complex effects on osteoclastogenesis, as already reported for other monocytic cells (C94). Syk plays a major role in Dectin-1 and Mincle signaling pathways (C95) and is required for efficient OCL differentiation (C96). In DCs stimulated with curdlan in osteoclastogenic medium, Syk expression decreases with time together with Nfatc1 and Ctsk (C97). High doses of curdlan lead to Syk degradation in DCs (C98). The interaction between Tlr2 and Dectin-1 in DCs is involved in NF-\u03baB stimulation and inflammatory cytokine production (C99), which strongly induces DC activation and phagocytic/anti-microbial responses (C100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C96, C98, C99, and C100 are supported by citations to previous publications. Claim C97 is supported by RT-qPCR data (Figure 5e). Claims C93 and C94 are interpretive conclusions that reconcile the current findings with previous literature, which is appropriate given the apparent contradictions. The mechanistic framework provided by these claims helps explain the dual effects of PRR stimulation on DC maturation and OCL differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Control measurements for OVX model: OVX mice showed atrophy of the uterus (C73) and increased body weight (C74) compared to SHAM control mice, which was not affected by treatment with Sb (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by measurements shown in Figure 2\u2014figure supplement 1a-b. These are standard control measurements to validate the OVX model. The lack of effect of Sb on these parameters (C75) indicates that Sb's effects on bone are not mediated through systemic hormonal changes, which strengthens the specificity of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C83"
+    ],
+    "result": "Mechanistic interpretation of Sb effects on gut-bone axis: Sb improves gut barrier function in the context of OVX-induced osteoporosis (C78) and normalizes the concentration of SCFAs and lactate in OVX mice (C79). The reduction in BM Tnf-\u03b1-producing CD4+ T cells observed after Sb treatment in OVX mice is likely due to its beneficial effect on the gut (C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 are directly supported by experimental data (FITC-dextran assay, chromatography measurements). Claim C83 is an inference that connects the observed reduction in Tnf-\u03b1-producing T cells with Sb's known effects on gut health, supported by citation to previous work (Li et al., 2016). The inference is reasonable given the established gut-bone axis, though direct causality is not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Dual effects of PRR stimulation on DCs: Treatment with curdlan or Sb-CM induces DC maturation while decreasing the proportion of Rank+ cells expressing Csf1r and FcgrII/III (C101). Stimulation of DCs with PRR agonists has a dual effect, increasing their maturation and simultaneously reducing their ability to give rise to i-OCLs (C102).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is directly supported by FACS analysis data (Figures 5c-d, 6f-g). Claim C102 is an interpretive summary that integrates multiple observations about DC maturation markers and OCL differentiation capacity. The dual effect is well-documented across multiple experiments and provides a mechanistic explanation for how PRR stimulation inhibits i-OCL formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Summary conclusions: i-OCLs differ from t-OCLs in the control of their differentiation and in their capacity to sense their environment and respond to stimuli through CLR and TLR activation (C103). Sb has a beneficial effect on bone loss in osteoporotic mice by restoring gut barrier integrity and reducing osteoclastogenic CD4+ T cells thereby reducing indirectly i-OCLs (C104), and also directly targets i-OCL progenitors to interfere with their differentiation (C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are summary conclusions supported by the totality of experimental evidence presented in the manuscript. C103 is supported by transcriptomic profiling, receptor expression analysis, and functional assays. C104 is supported by in vivo experiments showing effects on gut barrier, metabolites, T cells, and bone parameters. C105 is supported by in vitro experiments with Sb-CM. These conclusions appropriately integrate the multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Therapeutic implications: The Ig-like receptor costimulatory pathway and the associated PRR pathway could represent efficient therapeutic targets to specifically impact on inflammatory osteoclastogenesis while maintaining physiological OCL resorption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is a speculative conclusion about therapeutic potential based on the study's findings about differential pathway usage by i-OCLs and t-OCLs. While the data support that PRR stimulation specifically inhibits i-OCLs without affecting t-OCLs in vitro, and that Sb reduces bone loss in OVX mice, the claim about therapeutic targeting requires additional validation including long-term safety studies, dose-response optimization, and demonstration of maintained physiological bone remodeling. The claim is appropriately presented as a perspective for future work rather than a demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Translational considerations: The dose of Sb used in mice is much higher than that recommended for humans (C107). However, studies evaluating probiotic lactobacillus strains in osteoporosis have shown protective effects at much lower doses in humans than in mice (C108).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is stated as a limitation. Claim C108 is supported by citations to previous publications (Britton et al., 2014; Nilsson et al., 2018; Jansson et al., 2019) and provides context suggesting that the high mouse dose may not preclude human translation. This is an appropriate acknowledgment of a limitation while providing evidence that it may not be prohibitive.",
+    "result_type": "MINOR"
+  }
+]

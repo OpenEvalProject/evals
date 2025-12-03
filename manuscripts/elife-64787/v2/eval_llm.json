@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors successfully expressed, purified, and reconstituted frog Pannexin 1 (fPanx1) into proteoliposomes. The purified fPanx1-eGFP was incorporated into proteoliposomes with a mean diameter of 97.3 \u00b1 22 nm, and the reconstituted channels could be cleaved at expected sites by recombinant Caspase-3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 provide converging evidence for successful proteoliposome reconstitution. The co-floatation assay (C17), electron microscopy measurements (C18), and Western blot verification of caspase cleavage (C19) collectively demonstrate that fPanx1 was properly incorporated into proteoliposomes and remained functional. The experimental approach is well-documented with appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The functional properties of fPanx1 in mammalian cells are essentially identical to human PANX1 (hPANX1). fPanx1 is basally silent, can be activated by caspase-3 to generate outwardly-rectifying whole cell currents that are blocked by CBX, and displays a unitary conductance of 91.4 \u00b1 13.5 pS in inside-out patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 provide comprehensive electrophysiological characterization demonstrating functional equivalence between fPanx1 and hPANX1. The data include whole-cell recordings, pharmacological inhibition, and single-channel measurements with appropriate controls. The comparison validates the use of fPanx1 as a model system for studying Panx1 channel properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Purified fPanx1 channels reconstituted in lipid bilayers are silent at physiological potentials until activated by caspase cleavage, after which they display two distinct conductance levels (~100 pS and ~189 pS) with approximately ohmic I-V relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 demonstrate successful functional reconstitution of fPanx1 in artificial lipid bilayers. The observation of caspase-dependent activation and discrete conductance states provides strong evidence for channel activity. However, the ohmic I-V relationship differs from the outwardly-rectifying behavior in cells, which the authors appropriately attribute to differences in lipid composition and symmetrical recording conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Caspase-cleaved fPanx1 channels in proteoliposomes form a dye-permeable pore capable of SR-B uptake. Flow cytometry analysis showed that 83.6% of caspase-treated proteoliposomes contained SR-B at ~10-fold higher levels compared to untreated controls (20.4%), with concomitant reduction in GFP signal indicating C-terminal cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide the first direct demonstration of large molecule permeation through purified Panx1 channels. The ImageStream flow cytometry data with multiple controls (no caspase, no Panx1, CBX inhibition) convincingly show that dye uptake requires both fPanx1 and caspase activation. The correlation between GFP loss and SR-B uptake supports the mechanistic link to C-terminal cleavage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "TIRF microscopy analysis of dye efflux from proteoliposomes revealed that the rate of dye release is positively correlated with the extent of fPanx1 cleavage. Despite being smaller, the cationic dye RhB (479 Da) exhibited significantly slower efflux than the anionic dye SR-B (559 Da), demonstrating charge selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 establish charge-dependent permeation through caspase-activated Panx1 using single-particle TIRF microscopy. The positive correlation between cleavage and efflux rate (C37) provides quantitative support for the mechanism. The slower efflux of the smaller cationic dye (C38) directly demonstrates anion preference, which is a key finding for understanding Panx1 selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Size-dependent permeation analysis revealed that larger anionic dyes (Alexa 594, 880 Da; Alexa 555, 980 Da) permeate more slowly than SR-B but at rates comparable to the smaller cationic RhB. ATTO550 (1363 Da) and Dextran 3000 (3000 Da) could not permeate, establishing an upper size limit of ~1 kDa for Panx1 permeants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 systematically define the size and charge selectivity of caspase-activated Panx1. The comparison of multiple dyes with different sizes and charges provides strong evidence for both anion preference and a size cutoff around 1 kDa. The finding that larger anionic dyes permeate at rates similar to smaller cationic dyes (C40) reinforces the importance of charge over size within the permeable range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Radiolabeled metabolite uptake assays demonstrated that caspase-activated fPanx1 is sufficient to conduct ATP, glutamate (anionic), and spermidine (cationic). Both ATP and spermidine can flux through the channel simultaneously when present together, albeit at slightly reduced levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 provide direct evidence that physiologically relevant metabolites permeate through purified Panx1 channels. The filtration-based assays with appropriate controls (no Panx1, no caspase) demonstrate that the channel itself is sufficient for metabolite flux without requiring cellular machinery. The concurrent flux experiment (C45) is particularly important for physiological relevance, showing that multiple metabolites can traverse the channel simultaneously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study validates that caspase-activated Panx1 serves as a direct conduit for molecules up to ~1 kDa, with marked preference for anionic over cationic molecules. This establishes Panx1 as the molecular pathway for ATP and other signaling molecule release during caspase-dependent cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 represent the main conclusions integrating all experimental findings. The data from proteoliposome reconstitution, dye permeation, and metabolite flux experiments collectively support these conclusions. This work definitively resolves the long-standing question of whether large molecules permeate directly through Panx1 channels, addressing the gap identified in C2 and C14.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Previous studies have reported variable conductance levels for Panx1 channels (up to ~500 pS) in different cell systems and activation conditions. Constitutive Panx1 activity (~70-80 pS) does not support ATP release, and recent bilayer recordings of hPANX1 showed both small (~30 pS) and very large (750 pS - 1.8 nS) conductance states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 accurately summarize prior literature on Panx1 conductance heterogeneity. These are appropriately cited background claims that contextualize the current findings. The authors correctly note the discrepancies in the field regarding conductance levels and their relationship to large molecule permeation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Previous ion substitution experiments showed shifts in reversal potential with different anions but not cations, leading to the inference that Panx1 is exclusively anion-selective and impermeable to cations. These shifts were affected by mutations in R75, a positively charged residue near the W74 pore constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 accurately represent prior electrophysiological studies on Panx1 ion selectivity. The authors appropriately cite this work to establish the prevailing view that Panx1 is anion-selective. Importantly, the current study challenges the conclusion of absolute cation impermeability (C54) by demonstrating cationic dye and metabolite permeation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Previous studies predicted maximum Panx1 permeant size of 1270-1500 Da. The current study confirms that Alexa555 (980 Da) can permeate while ATTO550 (1363 Da) cannot, establishing that the pore accommodates molecules up to ~1 kDa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 appropriately contextualize the size selectivity findings within prior literature. The experimental determination of the size cutoff between 980 Da and 1363 Da (C56) provides more precise boundaries than previous estimates. This refinement is important for understanding which physiological molecules can permeate Panx1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Recent cryoEM structures show that the transmembrane pore architecture is similar in full-length and C-terminal cleaved Panx1, with the narrowest constriction formed by W74 residues (~8-10 \u00c5 diameter). This constriction appears too small for large molecules, though molecular shape and flexibility may influence permeation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 accurately summarize structural findings from multiple cryoEM studies. The apparent discrepancy between the narrow pore diameter and observed large molecule permeation is appropriately noted as speculative (C60). This sets up the important question of how structural and functional data can be reconciled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors propose that caspase-activated Panx1 transitions between open and closed states, and that available structures may capture a state open for ions but closed for large molecules. Multiple open conformations or separate permeation pathways have been proposed, and caspase cleavage may permit conformations allowing large molecule permeation by removing a physical block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C64 are largely speculative mechanistic proposals to reconcile structural and functional data. While C61 is supported by prior electrophysiology, C62-C64 are hypotheses without direct experimental validation in this study. The authors appropriately present these as possibilities rather than established facts, but they remain unproven mechanisms requiring future structural studies of the open state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establishing that Panx1 is implicated in physiological processes through ATP release, has a four-transmembrane structure, is similar to other large-pore channels, and that previous studies in intact cells did not demonstrate direct permeation through the channel itself. Recent structures show a narrow pore (~9 \u00c5) that appears incompatible with large molecule permeation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 (excluding C3-C5 which are results) represent well-established background knowledge appropriately cited from the literature. These claims accurately frame the scientific context and identify the key gap (C2, C14) that the current study addresses. The structural information (C15) correctly represents the apparent paradox motivating this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study demonstrates that caspase-activated Panx1 forms a dye-permeable pore favoring anionic large-molecule permeants up to ~1 kDa, though large cationic molecules can also permeate at lower rates. Panx1 provides a molecular pathway for flux of ATP, glutamate, and spermidine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the core findings stated in the abstract. These are strongly supported by the comprehensive experimental evidence from proteoliposome reconstitution, bilayer recordings, flow cytometry, TIRF microscopy, and radiolabeled metabolite uptake assays. The multiple independent approaches converge on the same conclusions, providing robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Cleavage at the C-terminal caspase site is necessary and sufficient for Panx1 channel activation, though the channel can be cleaved at multiple sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is well-supported by citations to previous studies that systematically examined caspase cleavage sites. This established finding is important for interpreting the current results, as it justifies focusing on C-terminal cleavage as the activation mechanism. The Western blot in C19 confirms cleavage at expected sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "A proposed alternative permeation pathway visible as a side tunnel in hPANX1 structure could support ion flux through unstimulated channels without large molecule permeation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 represents a hypothesis from cited work (Ruan et al., 2020) that the authors note requires further exploration. This is appropriately presented as speculative and is not directly tested in the current study. The proposal of separate pathways for ions versus large molecules remains an interesting but unproven hypothesis.",
+    "result_type": "MINOR"
+  }
+]

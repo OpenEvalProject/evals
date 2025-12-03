@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C44",
+      "C45",
+      "C46",
+      "C60",
+      "C61"
+    ],
+    "result": "The 52-2 polymerase ribozyme, obtained after 52 rounds of directed evolution, demonstrates improved catalytic activity compared to its predecessor (38-6), being 3-fold more efficient at synthesizing the hammerhead ribozyme and 23-fold more efficient at synthesizing the class I ligase. This improvement is associated with structural rearrangement of the catalytic core involving 11 substitutions, 2 insertions, and 2 deletions, resulting in formation of a novel pseudoknot structure near the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide quantitative activity data supported by Figure 1A-B, while C44-C46 describe the structural changes. The combination of improved activity measurements and documented mutations provides strong evidence for the result. The structural rearrangement is further validated by mutagenesis and probing experiments in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The class I ligase synthesized by the 52-2 polymerase is catalytically active with a ligation rate of 0.31 \u00b1 0.02 hr\u207b\u00b9 (1500-fold rate acceleration over uncatalyzed), but this is substantially lower than T7-synthesized ligase (6.3 \u00b1 0.6 min\u207b\u00b9). The reduced activity is explained by an average of 12 mutations per ligase copy due to the polymerase's 84.1% fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 provide kinetic measurements with error bars (Figure 1C), while C70-C72 provide fidelity data from deep sequencing that mechanistically explains the reduced activity. The causal link between mutation frequency and reduced activity is well-supported by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The 52-2 polymerase exhibits Mg\u00b2\u207a-dependent fidelity: 91.7% per nucleotide for hammerhead synthesis at 200 mM Mg\u00b2\u207a, improving to 94.4% at 50 mM Mg\u00b2\u207a, but only 84.1% for class I ligase synthesis at 200 mM Mg\u00b2\u207a. G\u2022U wobble pairing is the most common error type, with all mutation types less frequent at lower Mg\u00b2\u207a concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 and C183-C185 provide specific fidelity measurements from deep sequencing analysis (Supplementary file 2). The Mg\u00b2\u207a concentration dependence is clearly documented, and the mutation spectrum analysis identifies G\u2022U wobble pairing as the predominant error mode. The data are internally consistent across different substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The 52-2 polymerase differs from wild-type by 26 mutations (14% of sequence), with 15 mutations in the catalytic core. Two key mutations (A15C and U85G) suggest formation of a Watson-Crick pair, requiring structural rearrangement. Analysis of mutation patterns across the evolutionary lineage (7 changes in 24-3, 6 more in 38-6, 2 more in 52-2) suggests evolution of a new P8 stem from J1/3 and P7 regions, forming a pseudoknot structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C84 describe sequence analysis supported by Figure 2 and Figure 2\u2014figure supplement 1. The inference of the P8 stem (C81-C82) is based on compensatory mutation patterns and is subsequently validated by mutagenesis experiments. The structural hypothesis is logical given the mutation data, though it remains an inference until experimentally validated in later claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Site-directed mutagenesis of all six proposed P8 stem base pairs demonstrates that single mutations reduce activity by \u226550-fold, while compensatory double mutations restore activity for most pairs (especially C12-G88, A13-U87, C14-G86). The distal A16-U84 pair shows incomplete restoration, possibly due to A16's base-specific contact with the template-primer duplex (as in the ligase), though sequence covariation supports pairing in other variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C95 describe systematic mutagenesis experiments with quantitative activity measurements (Figure 3A). The pattern of disruption by single mutations and restoration by compensatory double mutations strongly supports Watson-Crick pairing in the P8 stem. The exception for A16 (C92) is explained by structural constraints from the ligase crystal structure (C93), making the overall result well-supported despite this complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Mutagenesis experiments targeting the P7 stem show that mutations expected to disrupt U87-A82 or G88-C81 pairing have no deleterious effect, and mutations to extend C89-G80 pairing provide no benefit. This indicates the distal portion of the P7 stem-loop no longer forms, with those nucleotides instead contributing to the P8 stem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 present negative results from mutagenesis (Figure 3\u2014figure supplement 1) that are as informative as positive results. The lack of effect from disrupting P7 pairs, combined with the positive effects of P8 mutations, provides strong evidence for the structural rearrangement described in C98. The logic is sound and the data support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Kinetic analysis reveals the 52-2 polymerase exhibits biphasic kinetics with a burst phase (18% amplitude, 3.1 min\u207b\u00b9 average NTP addition rate in first 30s\u2014fastest for any polymerase ribozyme) and slower steady-state phase (kobs = 0.031 min\u207b\u00b9). Single mutations in P8 (C12G, G88C) severely reduce both phases, while the compensatory double mutant (C12G/G88C) restores kinetics to near wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 provide detailed kinetic measurements (Figure 3B-C) with appropriate controls. The burst-phase kinetics are well-characterized, and the claim about fastest rate (C102) is appropriately qualified. The restoration of activity by compensatory mutations provides additional strong evidence for the P8 stem structure. All kinetic parameters include appropriate replicates and error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "On longer templates with 5 or 10 repeats of a favorable sequence (5'-UGCGAAGCGUG-3'), the 52-2 polymerase maintains ~20% burst amplitude with detectable full-length products after 5 or 10 minutes respectively, achieving 12.9% and 2.3% yields by 20 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 describe processivity experiments on extended templates (Figure 3\u2014figure supplement 2). The data demonstrate that the burst phase persists over longer synthesis reactions, with quantitative yield measurements. The citation to prior work (C106) appropriately acknowledges the template design. The results are clearly presented with specific time points and yields.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A chimeric polymerase containing the P8 pseudoknot transplanted onto the wild-type background exhibits comparable activity to 52-2, including burst-phase kinetics not seen in wild-type. Both chimera and 52-2 show primer extension beyond the templating region into the oligoadenylate spacer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 describe a critical control experiment (Figure 2\u2014figure supplement 2) demonstrating that the pseudoknot structure is sufficient for improved activity. This transplantation experiment provides strong evidence that the P8 stem is the key structural innovation, independent of other mutations. The observation of extended synthesis (C111) is a notable phenotype associated with the new structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "In-line probing reveals that 52-2 shows reduced cleavage at positions 11-14 (one P8 strand) compared to wild-type, while positions 86-88 (other P8 strand) are protected in both. Positions 79-81 show increased cleavage in 52-2 (no longer in P7), while the retained P7 stem (73-78, 91-96) remains protected. A two-nucleotide insertion at 89-90 shows strong cleavage at unpaired A90, consistent with pseudoknot formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 present in-line probing data (Figure 4A) that directly probe RNA structure. The pattern of protection and cleavage is entirely consistent with the proposed pseudoknot structure, providing independent validation of the mutagenesis results. The insertion at 89-90 (C116-C117) and its cleavage pattern further support the structural model. This is strong structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "In-line probing of intermediate polymerases (24-3, 38-6) shows progressive structural changes: reduced cleavage at 11-14 and enhanced cleavage at 79-81 (both more pronounced in 38-6 than 24-3), with the two-nucleotide insertion first appearing in 38-6. The retained P7 stem (73-78, 91-96) remains protected throughout the lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 demonstrate gradual structural evolution through the lineage (Figure 4\u2014figure supplement 1). The progressive nature of the changes supports the claim of gradual remodeling rather than sudden structural shift. The consistent protection of the retained P7 stem across all variants provides an internal control. This temporal analysis strengthens the evolutionary narrative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Deep sequencing analysis across 19 time points identified 105 clusters representing ~95% of reads, with 18 highly represented clusters differing in P8 stem sequence. The wild-type dominated early rounds but became extinct after round 14, along with other early clusters lacking P8 complementarity. Subsequently arising clusters predominantly contained five Watson-Crick pairs in the P8 region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C130 describe comprehensive population analysis (Figure 5, Supplementary file 3) with appropriate computational methods. The extinction of wild-type after round 14 (C128) and emergence of P8-containing variants (C130) provides strong evidence for selection favoring the new structure. The clustering analysis is well-described and the ~95% coverage (C126) indicates thorough sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The 24-3, 38-6, and 52-2 sequences first appeared at rounds 11, 31, and 46 respectively, and were dominant when isolated (rounds 24, 38, 52). P8 stems varied in length (4-6 bp, mostly 5), with all variability at the distal end while proximal nucleotides G11-C14 were universally conserved (due to fixed primer binding site). Paired variants of 5' and 3' P8 strands showed high correlation, indicating co-evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 provide detailed population dynamics analysis. The timing of variant emergence (C131-C132) is clearly documented. The conservation pattern (C134-C135) is logically explained by experimental constraints. The correlation analysis (C137) provides evidence for co-evolution of complementary strands, supporting the pairing hypothesis. The data are internally consistent and well-interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The 52-2 P8 stem sequence emerged at round 46 and rapidly dominated, constituting 98% of the population by round 49, while the 38-6 form went extinct during this interval. The 52-2 polymerase consolidates the pseudoknot structure, providing robust activity for synthesizing complex RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 document rapid selective sweep with specific quantitative data. The 98% frequency by round 49 (C138) and concurrent extinction of 38-6 (C139) demonstrate strong positive selection. Claim C140 is a reasonable summary statement supported by the activity data from earlier claims. The rapid fixation is consistent with significant fitness advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C17",
+      "C19",
+      "C47",
+      "C159"
+    ],
+    "result": "The evolutionary trajectory involved progressive stabilization of the novel pseudoknot structure through gradual remodeling via multiple mutational pathways that converged on a common structural solution. This was not a sudden 'hopeful monster' but rather stepwise structural innovation over 52 rounds under progressively demanding selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize findings from structural probing (C2, C47), deep sequencing (C3, C4, C19), and population analysis (C159). The evidence from intermediate structures (24-3, 38-6) and multiple evolutionary paths (18 clusters) strongly supports gradual rather than saltational evolution. The combination of structural, kinetic, and population genetic data provides compelling evidence for this evolutionary narrative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C156",
+      "C158",
+      "C189"
+    ],
+    "result": "The spontaneous emergence of the pseudoknot structure demonstrates that the ligase core can access alternative structures under stringent selection pressure, escaping the previously proposed local fitness peak. This structural innovation occurred within the catalytic core without significantly perturbing global architecture, and alternative evolutionary solutions exist (as shown by the Cojocaru/Unrau variant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153 and C189 address the key conceptual finding about evolvability. The comparison to the alternative Cojocaru/Unrau solution (C157-C158) demonstrates multiple evolutionary paths to improved function. The compact nature of pseudoknots (C155-C156) explains how core remodeling was possible. This result challenges prior assumptions about fitness landscape topology and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Structural stasis was broken only under very challenging selection (accurate copying of 10-30 nucleotides from structured templates), which could not be achieved by subtle modifications. The fixed primer binding site (14 nucleotides at 5' end) constrained evolution, with the last four nucleotides becoming part of P8, necessitating specific compensatory mutations (C87U, C insertion at 89). Future evolution should allow variation in these constrained regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C163 provide context for why structural change occurred, while C164-C165 document experimental constraints and their consequences. The analysis is logical and well-supported by sequence data (Figure 2). Claims C166-C167 are reasonable suggestions for future work based on observed sequence flexibility. The discussion appropriately distinguishes between demonstrated facts and speculation about future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The pseudoknot remodels tertiary structure by repositioning P7-derived nucleotides from away from the active site (in ligase crystal structure) back toward it. The J1/3 region, which contacts the primer-template minor groove and coordinates catalytic Mg\u00b2\u207a in the ligase, has been modified with one A-minor interaction adenosine deleted while retaining Mg\u00b2\u207a-coordinating residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C175 integrate the current findings with prior structural knowledge from the ligase crystal structure (Shechner et al., 2009). The reorientation of P7-derived nucleotides (C171-C172) is a logical consequence of the pseudoknot formation. The specific changes in J1/3 (C173-C175) are documented by sequence comparison and interpreted in light of known structural roles. The integration of new and prior structural data is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "In-line probing reveals subtle structural changes beyond P7/P8, notably in P3 and P6 stems that coaxially stack with P7. Peripheral changes may represent secondary adaptations to core remodeling. The burst-phase kinetics suggest multiple folded states, some highly active, that might be stabilized by further evolution of core and peripheral mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C176 presents data (Figure 4\u2014figure supplement 1) showing structural changes beyond the core, but C177-C178 are largely speculative. While the burst kinetics (C178) do suggest conformational heterogeneity, the claim that peripheral changes are 'secondary adaptations' (C177) and that multiple states exist (C178) are reasonable hypotheses but not definitively proven. More direct structural or kinetic evidence would be needed to fully support these interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C186"
+    ],
+    "result": "Further improvement in processivity and fidelity is required for a general RNA replicase. Fidelity is a major obstacle for synthesizing products as long as the polymerase itself. There is a trade-off between synthesis time and fidelity (more time allows mismatch extension). The evolutionary path to improved fidelity likely requires both enhanced catalytic activity and ability to operate under conditions less conducive to mismatches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C180 state research needs and current limitations. Claim C181 cites prior work documenting the length-fidelity tradeoff. Claim C182 provides a mechanistic explanation for this tradeoff. Claim C186 is a reasonable speculation about future evolutionary directions based on the established tradeoff. While C186 is speculative, the overall result accurately describes current limitations and their mechanistic basis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C18"
+    ],
+    "result": "While tertiary structural remodeling of RNA is known from phylogenetic analysis of natural RNAs, this type of structural innovation had not previously been observed experimentally. The structural change observed is similar to changes inferred from phylogenetic analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 establish the novelty of the experimental observation, with C5 supported by citations to phylogenetic studies. Claim C18 draws the parallel to natural evolution. The claim of novelty (C6) is a knowledge claim that could be challenged if prior experimental examples exist, but given the authors' expertise and the review process, this is likely accurate. The comparison to phylogenetically inferred changes (C18) is appropriate and well-cited.",
+    "result_type": "MAJOR"
+  }
+]

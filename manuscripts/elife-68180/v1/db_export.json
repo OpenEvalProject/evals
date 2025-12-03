@@ -1,0 +1,2098 @@
+{
+  "submission": {
+    "id": "342ac996-0ff2-4856-96bb-8aebf9b4eba3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:08:39.074489Z",
+    "updated_at": "2025-12-03T18:08:39.074489Z"
+  },
+  "content": [
+    {
+      "id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "submission_id": "342ac996-0ff2-4856-96bb-8aebf9b4eba3",
+      "content_type": "manuscript",
+      "content_text": "# Heterogeneous levels of delta-like 4 within a multinucleated niche cell maintains muscle stem cell diversity\n\n## Authors\n\n- Susan Eliazer<sup>1</sup>\n- Xuefeng Sun<sup>1</sup>\n- Emilie Barruet<sup>1</sup> ([ORCID: 0000-0002-4593-024X](https://orcid.org/0000-0002-4593-024X))\n- Andrew S Brack<sup>1</sup> ([ORCID: 0000-0002-8798-7084](https://orcid.org/0000-0002-8798-7084)) \u2020\n\n### Affiliations\n\n1. The Eli and Edythe Broad Center for Regenerative Medicine and Stem Cell Research, Department of Orthopedic Surgery, University of California San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. Department of Biomedical Sciences, University of North Dakota School of Medicine and Health Sciences Grand Forks United States ([ROR:04a5szx83](https://ror.org/04a5szx83))\n3. Departments of Surgery and Orofacial Sciences, Program in Craniofacial Biology, University of California San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe quiescent muscle stem cell (QSC) pool is heterogeneous and generally characterized by the presence and levels of intrinsic myogenic transcription factors. Whether extrinsic factors maintain the diversity of states across the QSC pool remains unknown. The muscle fiber is a multinucleated syncytium that serves as a niche to QSCs, raising the possibility that the muscle fiber regulates the diversity of states across the QSC pool. Here, we show that the muscle fiber maintains a continuum of quiescent states, through a gradient of Notch ligand, Dll4, produced by the fiber and captured by QSCs. The abundance of Dll4 captured by the QSC correlates with the protein levels of the stem cell (SC) identity marker, Pax7. Niche-specific loss of Dll4 decreases QSC diversity and shifts the continuum to cell states that are biased toward more proliferative and committed fates. We reveal that fiber-derived Mindbomb1 (Mib1), an E3 ubiquitin ligase activates Dll4 and controls the heterogeneous levels of Dll4. In response to injury, with a Dll4-replenished niche, the normal continuum and diversity of the SC pool is restored, demonstrating bidirectionality within the SC continuum. Our data show that a post-translational mechanism controls heterogeneity of Notch ligands in a multinucleated niche cell to maintain a continuum of metastable states within the SC pool during tissue homeostasis.\n\n## Introduction\n\nAdult muscle stem cells (SCs) are essential for muscle tissue repair. Subsets of the SC pool are endowed with self-renewal potential and others are restricted to differentiation (Rocheteau et al., 2012; Chakkalakal et al., 2014; Kuang et al., 2007; Scaramozza et al., 2019; Zammit et al., 2004; Olguin and Olwin, 2004). This is consistent with a unidirectional and hierarchical relationship between SCs. Intrinsic and extrinsic cues regulate cell fate decisions of activated SCs to self-renew or differentiate (Dumont et al., 2015; Kuang et al., 2008). Due to low muscle tissue turnover, SCs exist predominantly in a quiescent state for the majority of adult life. Through single-cell RNA-sequencing (scRNA-seq) and transgenic reporter mice it is appreciated that the quiescent muscle stem cell (QSC) pool is molecularly and phenotypically heterogeneous (Dell\u2019Orso et al., 2019, De Micheli et al., 2020; Chakkalakal et al., 2014; Rocheteau et al., 2012; Kuang et al., 2007; Kimmel et al., 2020). These different cell states enable SCs to exhibit functional heterogeneity in response to activation and injury cues. It is not known how these diverse states are maintained across the QSC pool. SC quiescence is actively maintained by paracrine-acting cues from the muscle fiber, serving as a niche cell (Bischoff, 1990; Goel et al., 2017; Eliazer et al., 2019). In contrast to niche cells across many SC compartments, each muscle fiber is a multinucleated syncytium, that exhibits transcriptional diversity across the myonuclei to provide spatial control for specialized functions (Kim et al., 2020; Petrany et al., 2020). Does the multinucleated niche cell regulate the diversity of states across the QSC pool?\n\n## Results\n\n### Adult QSCs exist in a continuum of molecular cell states\n\nWe first asked whether the QSC pool is composed of a continuum of cell states during tissue homeostasis. We stained freshly isolated single muscle fibers from adult mice, with the SC identify marker, Pax7 (Sambasivan et al., 2011; von Maltzahn et al., 2013; Lepper et al., 2011) and Ddx6 (p54/RCK), an RNA helicase found enriched in P-bodies and stress granules (Buchan and Parker, 2009). Pax7 and Ddx6 are expressed in QSCs and decrease during activation and commitment (Crist et al., 2012; Zammit et al., 2006). A density map of Pax7 and Ddx6 expression shows a broad range of expression levels across the QSC pool (Figure 1A\u2013C). A bivariate plot shows a positive correlation between Pax7 and Ddx6 (Figure 1D). Therefore, based on the expression profile of two different markers, the QSC pool is composed of a continuum of molecular states at tissue homeostasis. This supports models inferred from scRNA-seq analysis on QSCs (De Micheli et al., 2020; Dell\u2019Orso et al., 2019, Kimmel et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig1-v1.jpg)\n\n**Figure 1.:** (A) Representative images of a high and low Pax7+ stem cell (SC) on a freshly isolated muscle fiber that has corresponding high and low levels of Ddx6 protein. (B) A density map of Pax7 intensity in QSCs (n = 3). (C) A density map of Ddx6 intensity in QSCs (n = 3). (D) A bivariate plot between Pax7 and Ddx6 intensity in QSCs (n = 2). (E) A bivariate plot between Pax7 and Notch reporter intensity in QSCs (n = 3). (F) Image of SC with high Pax7 expression that expresses high Notch activity and an SC with low Pax7 intensity displaying low Notch activity. Scale bars, 5 \u03bcm in (A) and (F).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) Fluorescence-assisted cell sorting (FACS) strategy of obtaining GFP+ stem cells (SCs) from a Pax7-nGFP transgenic reporter line (in A) and isolation of green fluorescent protein (GFP) low, medium, and high expressing SCs (in B). (C\u2013E) The three sorted populations were fixed immediately and stained for GFP (in C), cultured in vitro in growth media containing EdU for 60 hr and percentage of EdU-positive SCs were quantified (in D), cultured in vitro in low serum for 3 days and stained for Myogenin protein (in E) (n = 3). Error bars, mean \u00b1 standard error of the mean (SEM); ns, non significant, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\nTo determine the fate bias of cells along the continuum, we isolated Pax7high-, Pax7medium-, and Pax7low -expressing populations of SCs from Pax7-nGFP reporter mice (Rocheteau et al., 2012; Figure 1\u2014figure supplement 1A\u2013C), and analyzed cell cycle entry and differentiation. As expected, the Pax7low population entered cell cycle and differentiated faster than the Pax7high expressers, suggesting that Pax7high SCs are in a more dormant state and the Pax7low SCs exist in a primed state (Rocheteau et al., 2012). We find that the Pax7medium population is in an intermediate molecular and phenotypic state between the Pax7high and Pax7low QSCs (Figure 1\u2014figure supplement 1D, E). Therefore, the QSC pool exists in a continuum of cell states that gives rise to a continuum of fates.\n\n### Heterogeneous expression of Dll4 in a multinucleated niche cell is coupled to QSC diversity\n\nThe multinucleated muscle fiber functions as a niche cell for the SC, regulating the depth of quiescence and rate of activation in response to injury (Eliazer et al., 2019). The Delta-Notch signaling pathway is an evolutionarily conserved intercellular signaling pathway for cell fate specification (Kopan and Ilagan, 2009). Adult muscle QSCs display active notch signaling (Bjornson et al., 2012; Mourikis et al., 2012; Fukada et al., 2011; Low et al., 2018; Verma et al., 2018). Overexpression of NICD1 increases Pax7 expression (Wen et al., 2012) and Rbpj, a transcriptional coactivator of the notch signaling pathway, maintains the SC pool by repressing differentiation (Bjornson et al., 2012; Mourikis et al., 2012). A transgenic notch reporter mouse line where green fluorescent protein (GFP) is under the control of C promoter-binding factor 1 (CBF1) (Duncan et al., 2005) exhibits variable levels of notch activity in QSCs (Bjornson et al., 2012). Using the same reporter, we find that notch activity levels exist on a continuum across the SC pool and positively correlates with Pax7 expression levels (Figure 1E, F), raising the possibility that Notch ligands maintain the continuum of diverse cell states across the QSC pool.\n\nTo identify notch ligands specifically expressed in adult myofibers, we first examined Notch ligands on isolated single muscle fibers from postnatal day 3 (p3), postnatal day 7 (p7), and adult through microarray analysis. Dll4 transcripts in the fiber showed the most enrichment as the SC transitioned from proliferating myogenic progenitors (postnatal) to becoming quiescent (adult) (Figure 2\u2014figure supplement 1A). RT-qPCR(Real Time-quantiative PCR) on isolated adult single muscle fibers show the expression of Dll4 transcripts, which was confirmed by RNAscope and immunofluorescence (Figure 2\u2014figure supplement 1B, C and Figure 2A; Kann and Krauss, 2019). Dll4 transcripts are expressed in less than 1% of QSCs (Kimmel et al., 2020; De Micheli et al., 2020), suggesting that the muscle fiber is a source of SC-bound Dll4. Since the QSC pool is distributed as a continuum of cell states, we hypothesized that Dll4 expression across the multinucleated niche cell is heterogeneous. Single muscle fibers stained with anti-Dll4 show that Dll4 protein formed clusters along the muscle fiber and were enriched around the QSCs. Further analysis revealed that heterogeneous spatial expression of Dll4 protein along the muscle fiber correlated with the amount of Dll4 captured by the SCs (Figure 2A, Figure 2\u2014figure supplement 2). We observed a positive correlation between the amount of Dll4 foci on the fibers and the intensity of Dll4 present on the adjacent QSC (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative images of regions of muscle fiber expressing heterogeneous levels of Dll4 protein, which corresponds to the amount of Dll4 captured by the adjacent SC and the expression of Pax7. (B) A bivariate plot between the number of Dll4 foci on fiber adjacent to an SC and the intensity of Dll4 captured by the SC (n > 3 mice). (C) An XY plot on isolated wildtype quiescent muscle stem cells (QSCs) shows positive correlation between intensity of Dll4 captured by SC and its Pax7 intensity (n = 3 mice). (D) Freshly isolated green fluorescent protein (GFP) low, medium, and high expressing SCs from transgenic Pax7-nGFP reporter mice were stained for Dll4 (n = 3). (E) An XY plot shows positive correlation between intensity of Dll4 captured by SC and its GFP (Pax7) intensity (n = 3 mice). Error bars, mean \u00b1 standard error of the mean (SEM); ****p < 0.0001. Scale bars, 10 \u03bcm in (A).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Heatmap of Notch ligands from microarray of muscle fibers isolated from postnatal day 3 (p3), day 7 (p7), and adult Extensor Digitorum Longus (EDL) muscle (n = 2), The expression values are log2 transformed and range from 5.5 (low, blue) to 9.3 (high, red). (B) qRT-PCR of Notch ligands in isolated adult muscle fibers. The notch ligand transcripts are normalized to GAPDH (n = 4); ND, not detected. (C, D) Representative images of RNAscope of Dll4 transcripts on single adult muscle fibers (in C) and bivariate plot showing the relationship between the number of Dll4 transcripts on muscle fiber adjacent to the stem cell (SC) and the Pax7 intensity in SC (n = 3). Error bars, mean \u00b1 standard error of the mean (SEM); scale bars, 10 \u03bcm in (C).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Low magnification Spinning Disk images of WT fibers showing heterogeneous Dll4 expression and the adjacent stem cell (SC) expressing variable Pax7 expression. (B\u2013U) Each graph represents the intensity of Dll4 expression along a single muscle fiber with reference to the location of neuromuscular junction (NMJ). Along the same fiber, the Dll4 intensity captured by the SC and Pax7 expression of the SC is also quantified. The distribution of Dll4 intensity along a muscle fiber is bell shaped (in B\u2013E), a bimodal curve (in F\u2013I), a multimodal curve (in J\u2013O), an Inverted bell curve (in P\u2013Q), and a straight line (in R\u2013U). Scale bars, 20 \u03bcm in (A).\n\nTo directly link Dll4 localization with SC diversity, we isolated and stained SCs for Dll4 and Pax7. A bivariate plot of Pax7 and Dll4 expression within SCs reveals a positive correlation between the Dll4 captured by the SC and Pax7 intensity (Figure 2C). Comparison between Dll4 protein and Pax7 levels using a Pax7-nGFP reporter, confirmed the positive correlation between Pax7 and Dll4 protein expression (Figure 2D, E). In contrast, the localization of Dll4 transcript on the muscle fiber did not correlate with Pax7 expression in the adjacent SC (Figure 2\u2014figure supplement 1C and D).\n\nWe next asked about the distribution of Dll4 protein along muscle fibers. Quantification of Dll4 expression levels on single Extensor Digitorum Longus (EDL) muscle fibers showed that Dll4 expression is variable along the fiber, and not linked to the neuromuscular junction based on \u03b1-bungarotoxin expression or the myotendinous junction based on location (Figure 2\u2014figure supplement 2). We find no consistent pattern of Dll4 protein along the fibers. Therefore, Dll4 spatial distribution does not map to these known anatomically defined regions of freshly isolated single muscle fibers. In addition, fewer than 10% of fibers are exclusively Dll4High or Dll4low, suggesting SC diversity is coordinated in a fiber-autonomous manner. Dll4 expression was also variable in regions devoid of SCs, suggesting the presence of an SC does not dictate Dll4 levels along muscle fibers. Instead, the intensity of Dll4 captured by SCs and the Pax7 expression correlated with the level of Dll4 expression along the muscle fiber (Figure 2\u2014figure supplement 2). Therefore, spatial heterogeneity and levels of niche-derived Dll4 are coupled with a continuum of diverse molecular SC states that are biased to different phenotypic fates.\n\n### Niche-derived Dll4 maintains SC diversity\n\nTo determine if Dll4 from the muscle fiber controlled SC diversity, we deleted Dll4 (Hozumi et al., 2008) specifically in the adult muscle fibers using a tamoxifen (tmx)-inducible human ACTA-CreMer mouse line (McCarthy et al., 2012) (transgenic mice are herein called as MF-Dll4fl/fl) (Figure 3A). The abundance of Dll4 in the muscle fiber and captured by SCs decreased in MF-Dll4fl/fl compared to control, suggesting that the muscle fiber is the major source of SC-bound Dll4 in uninjured muscle (Figure 3B\u2013D). It is possible that cell sources other than the muscle fiber could provide Dll4 to SCs in other contexts (Verma et al., 2018). We observed that Pax7 and Ddx6 expression in SCs from MF-Dll4fl/fl fibers decreased compared to controls (Figure 3E, G). Density maps reveal a shift in the distribution of expression levels of Pax7 and Ddx6. We calculated the variance of the expression levels to gauge the spread of the distribution. The decrease in variance in MF-Dll4fl/fl compared to controls, indicates reduced diversity across the QSC pool, effectively reducing the range of states across the continuum (Figure 3F, H). We observed a 50% decrease in the total number of Pax7+ SCs in MF-Dll4fl/fl fibers compared to controls (Figure 3\u2014figure supplement 1A, B), suggesting a SC loss phenotype.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic representation of the experimental design. (B\u2013F) Representative images of Dll4 and Pax7 expression in Control and MF-Dll4fl/fl fibers and stem cells (SCs) (in B), quantification of Dll4 intensity in fibers (in C), intensity of Dll4 captured by SCs (in D), Pax7 intensity in SCs (in E), and a density map of Pax7 intensity in SCs (in F) (n = 3 mice). (G, H) Ddx6 intensity in SCs (in G) and density map of Ddx6 intensity in SCs (in H) on Control and MF-Dll4fl/fl fibers (n = 3 mice). (I) Notch reporter intensity levels in Control and MF-Dll4fl/fl SCs (n = 3). Error bars, mean \u00b1 standard error of the mean (SEM); ****p < 0.0001; scale bars, 10 \u03bcm in (B).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative images of Pax7+ SCs in tissue cross sections of Control and MF-Dll4fl/fl tibialis anterior (TA). (B) Quantification of the number of Pax7+ SCs in Control and MF-Dll4fl/fl fibers (n = 4 mice). Error bars, mean \u00b1 standard error of the mean (SEM); ***p < 0.001; scale bars, 100 \u03bcm in (A).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Schematic representation of the experimental design. (B) Quantification of the number of Pax7+ stem cells (SCs) in tibialis anterior (TA) muscle cross-sections of Control and SC-Dll4fl/fl fibers (n = 3 mice). Error bars, mean \u00b1 standard error of the mean (SEM); ns, nonsignificant.\n\nDeletion of Rbpj from SCs reduced SC population by over 95% (Bjornson et al., 2012; Mourikis et al., 2012). We wondered whether the partial SC ablation after Dll4 deletion was due to a more modest effect on notch signaling. To determine the contribution of niche-derived Dll4 to notch activity in SCs, we crossed mice harboring the notch reporter CBF1-GFP (Duncan et al., 2005) with MF-Dll4fl/fl. We observed a 95% decrease in notch reporter activity after Dll4 deletion from the niche (Figure 3I), suggesting that Dll4 from the fibers nonautonomously regulates Notch activity in the QSCs and that Dll4 from the muscle fiber is the dominant source of notch ligand. This argues against differential notch activity to explain the differences in SC loss phenotypes.\n\nA decrease in SC diversity, number and Pax7 levels can be explained by a loss of Pax7high SCs (due to apoptosis or fusion), or a shift in the continuum toward a more committed fusion-competent state, followed by fusion of SCs expressing the lowest levels of Pax7. qRT-PCR on QSCs from control and MF-Dll4fl/fl revealed a decrease in Pax7 (SC marker) and an increase in Myod (activation marker) and Myog (differentiation marker) transcripts (Figure 5B). The simultaneous loss of Pax7 and induction of Myog a gene not normally expressed in QSCs suggests a shift in the QSC continuum. While a loss of Pax7high cells alone would not increase Myog expression, we cannot exclude a loss of Pax7high SCs in addition to the shift in continuum.\n\nTo resolve these possibilities, rather than deleting, we reduced Dll4 levels in the muscle fiber by injecting control and MF-Dll4fl/fl mice submaximal doses of tmx (75 mg/kg/day for seven consecutive days). Reducing Dll4 in fibers redistributed the SC population along the continuum toward lower Pax7 levels without decreasing their numbers (Figure 4). This suggests that heterogeneous levels of Dll4 in muscle fibers maintain a distribution of metastable states across the QSC pool during tissue homeostasis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C) Quantification of the number of Pax7+ stem cells (SCs) (in A), Dll4 intensity in muscle fibers (in B), Pax7 intensity in SCs (in C) of Control mice compared to MF-Dll4fl/fl mice that were given low dose (75 mg/kg/day) or regular dose (150 mg/kg/day) of tmx to reduce or completely ablate the expression of Dll4, respectively. (D) Density plot of the Pax7 intensity in SCs of Control mice compared to MF-Dll4fl/fl mice that were given the two different doses of tmx (n = 3 mice). Error bars, mean \u00b1 standard error of the mean (SEM); ns, nonsignificant, ***p < 0.001, ****p < 0.0001.\n\nDeletion of Dll4 in Pax7+ SCs using a Pax7-CreER transgenic mouse line (Nishijo et al., 2009) (referred to as SC-Dll4fl/fl) did not change Pax7+ SC number, compared to controls (Figure 3\u2014figure supplement 2), suggesting that Dll4 does not have an autocrine role in QSCs. Together, these results suggest that Dll4 from the muscle fiber is required to maintain the continuum of diverse cellular states across the QSC pool.\n\n### Dll4 from the muscle fiber constrains the proliferative and commitment potential across the QSC pool\n\nTo analyze the phenotypic fates of the QSCs that remained in a Dll4-depleted niche, we cultured isolated single muscle fibers from control and MF-Dll4fl/fl mice and analyzed them at 0, 30, and 48 hr (Figure 5A). Quantification of SC numbers per fiber reveal that the differences observed between control and MF-Dll4fl/fl becomes narrow over time in culture (Figure 5C, Figure 5\u2014figure supplement 1A). This observation is consistent with the result that SCs on a Dll4-depleted niche entered cell cycle faster than controls (Figure 5D, Figure 5\u2014figure supplement 1B). The absolute number of Myogenin+ cells per fiber at 48 hr was increased, suggesting that a fraction of the remaining SCs on a Dll4-depleted niche rapidly entered the differentiation program when exposed to mitogen (Figure 5E). These data are consistent with a redistribution of the QSC pool along the continuum toward lower levels of Pax7 (Figure 1\u2014figure supplement 1). Induction of Myogenin is consistent with the antidifferentiative role of Rbpj (Bjornson et al., 2012; Mourikis et al., 2012). Based on prior work, we would not have predicted an increase in SC proliferation in mitogen after niche depletion of Dll4 (Bjornson et al., 2012; Mourikis et al., 2012). This likely reflects the relative fraction of SCs that remain after Rbpj deletion in SCs versus Dll4 deletion from the niche.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic representation of the experimental design. (B) qRT-PCR for Pax7, MyoD, and Myogenin transcripts in freshly isolated stem cells (SCs) from Control and MF-Dll4fl/fl fibers (n = 2). (C) Number of Pax7+ SCs at t0, t30, and t48 in cultured Control and MF-Dll4fl/fl fibers (n = 3). (D) Control and Dll4 deleted fibers were cultured in plating media containing EdU for 30 hr and the percent of EdU+ SCs per fiber were quantified (n = 3). (E) Control and MF-Dll4fl/fl fibers were cultured in vitro for 48 hr and the MyoG+ cells per fiber were quantified (n = 3). (F, G) Representative images (in F) and quantification (in G) of mean cross-sectional area of Control and MF-Dll4fl/fl tibialis anterior (TA) fibers, injured and regenerated for 14 days (n \u2265 4). (H, I) Density map of Pax7 intensity in SCs from Ctrl and MF-Dll4fl/fl contralateral TA (in H) and injured TA (in I), 14-day postinjury (n = 3). (J) Number of Pax7+ SCs in regenerated TA muscle, 14 days after injury (n \u2265 5). Error bars, mean \u00b1 standard error of the mean (SEM); ns, nonsignificant, **p < 0.01, ***p < 0.001, ****p < 0.0001; scale bars, 100 \u03bcm in (F).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Number of Pax7+ SCs at t0, t30, and t48 in cultured Control and MF-Dll4fl/fl fibers, depicted as a dot plot (each dot represents a single fiber) (n = 3 mice). (B) Control and Dll4 deleted fibers were cultured in plating media containing EdU for 30 hr and the absolute number of EdU+ SCs per fiber was quantified (n = 3). Error bars, mean \u00b1 standard error of the mean (SEM); ns, nonsignificant, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Schematic representation of the experimental design. (B) Mean cross-sectional area of Control and MF-Dll4fl/fl tibialis anterior (TA) fibers, injured and regenerated for 40 days (n = 3). Error bars, mean \u00b1 standard error of the mean (SEM); *p <0.05.\n\nWe next examined the effect of a Dll4-depleted niche on fate potential of the remaining SCs in response to muscle injury. Using the tmx-inducible MF-CreMer/+ genetic model, the niche is genetically modified, but the SCs are genetically wildtype. The wildtype SCs reform the adult muscle fibers during regeneration (Eliazer et al., 2019). Therefore, any regenerative phenotype observed is directly due to the loss of Dll4 in the niche prior to injury. Fourteen days after injury, muscle fiber size in MF-Dll4fl/fl TA muscle was significantly smaller than controls (Figure 5F, G), consistent with the rapid entrance of some SCs into the differentiation program, as reported after deletion of Rbpj in SCs (Bjornson et al., 2012; Mourikis et al., 2012). The impaired differentiation phenotype in MF-Dll4fl/fl TA muscle is also seen 40 days after injury (Figure 5\u2014figure supplement 2). The inability to repair muscle fibers after a loss in SC diversity suggests a reduced pool of fusion-competent progenitors.\n\nWe next asked whether the remaining population of Pax7+ SCs in a Dll4-depleted niche could reestablish the normal continuum of Pax7+ states in the injury model. In contrast to the contralateral uninjured muscle, the average Pax7 levels and the variance across the SC population was not different in a Dll4-replenished niche and control niche (Figure 5H, I). In addition, the number of Pax7+ cells was similar to control regenerated muscle (Figure 5J). This was unanticipated due to the decrease in Pax7 levels and a shift along the continuum toward a more committed state in the QSC pool (Rocheteau et al., 2012; Kuang et al., 2007). Therefore, SCs expressing modest levels of Pax7 have the potential to produce SCs with higher levels of Pax7, revealing an unappreciated level of plasticity and bidirectionality along the SC continuum during muscle regeneration.\n\n### Mib1 directs spatial patterning and activation of Dll4\n\nSingle nucleus RNA sequencing has uncovered substantial transcriptional diversity across muscle fibers (Kim et al., 2020; Petrany et al., 2020). However, Dll4 activity is regulated post-translationally. Mindbomb1 (Mib1), is an E3 ubiquitin ligase that activates all Notch ligands in the signal sending cell by adding mono-ubiquitin groups onto the ligands (Koo et al., 2005; Koo, 2007). Mib1 in the retinal pigment epithelium (RPE) activates Notch signaling in the adjacent retinal progenitor cell (RPC) by localizing active Notch ligands in the RPE\u2013RPC contacts (Ha et al., 2017). The hypothalamus\u2013pituitary\u2013gonadal axis has been shown to induce Mib1 in muscle fibers during development, thus activating notch signaling in juvenile SCs (Kim et al., 2016). To determine if the heterogeneous pattern of Dll4 on the adult muscle fiber is directed by Mib1, we analyzed the spatial expression of Mib1 on adult muscle fibers. We stained isolated single muscle fibers with Mib1 antibody and found heterogeneous expression pattern of Mib1 on individual muscle fibers. Similar to Dll4 expression, we observed a positive correlation between the intensity of Mib1 expression on muscle fibers and Pax7 intensity within the adjacent SC (Figure 6A, B). Formation of Dll4 clusters is a marker of the activated form of the ligand (Le Borgne and Schweisguth, 2003). To test whether Mib1 played a role in clustering and activating Dll4 on the muscle fibers, Mib1 floxed mice (Koo, 2007) were crossed with tamoxifen-inducible human ACTA1-CreMer mice (transgenic: hereafter called as MF-Mib1fl/fl). After a 30-day chase, the expression of Mib1 transcripts was decreased in the Mib1-depleted myofibers compared to controls (Figure 7A, B). Analysis of Dll4 expression in control and MF-Mib1fl/fl isolated single muscle fibers, revealed a loss of Dll4 clusters and a reduction in the intensity of Dll4 expression in Mib1-depleted niche (Figure 6C\u2013E). Therefore, Mib1 directs the activation and heterogeneous patterning of Dll4 within a multinucleated niche cell.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig6-v1.jpg)\n\n**Figure 6.:** (A) Representative images of WT fibers showing regions of high and low Mib1 protein expression and the adjacent Pax7+ stem cell (SC). (B) A bivariate plot showing Mib1 intensity in the fiber and Pax7 intensity in the adjacent SC. (C\u2013G) Representative images of Dll4 expression in fibers and Pax7 expression in adjacent SCs present on Control and MF-Mib1fl/fl fibers (in C), quantification of Dll4 intensity in fibers (in D), intensity of Dll4 captured by SCs (in E), Pax7 intensity in SCs (in F), and a density map of Pax7 intensity in SCs (in G) on Control and MF-Mib1fl/fl fibers (n = 3 mice). Error bars, mean \u00b1 standard error of the mean (SEM); ****p < 0.0001; scale bars, 5 \u03bcm in (A) and (C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig7-v1.jpg)\n\n**Figure 7.:** (A) Schematic representation of the experimental design. (B) qRT-PCR for mib1 transcripts in fibers of Control and MF-Mib1fl/fl normalized to GAPDH (n = 3). (C) Number of Pax7+ stem cells (SCs) in tibialis anterior (TA) muscle sections of Control and MF-Mib1fl/fl (n = 6). (D) qRT-PCR for Pax7, MyoD, and Myogenin transcripts in freshly isolated SCs from Control and MF-Mib1fl/fl fibers, normalized to GAPDH (n = 3). (E\u2013G) Representative images of Sdc4 and MyoG expression in SCs from Control and Mib1-deleted fibers, cultured in vitro in plating media for 48 hr (in E), the number of Pax7+ SCs (in F), and the absolute number of MyoG+ cells (in G) per fiber were quantified (n = 3). (H, I) Representative images (in H) and quantification (in I) of mean cross-sectional area of Control and MF-Mib1fl/fl TA muscle fibers, injured and regenerated for 14 days (n \u2265 3). (J) Number of Pax7+ SCs in regenerated TA muscle, 14 days after injury (n = 5). Error bars, mean \u00b1 standard error of the mean (SEM); ns, nonsignificant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; scale bars, 10 \u03bcm in (E) and 100 \u03bcm in (H).\n\n### Niche-derived Mib1 maintains a continuum of states across the QSC pool\n\nBased on the loss of SC-bound Dll4 after Mib1 deletion in the niche, we analyzed the levels and diversity of Pax7 across the QSC pool on a Mib1-depleted niche. Compared to controls, Pax7 levels decreased, the variance across the QSC pool was reduced and SC number was less in a Mib1-depleted niche (Figure 6C, F, G). RT-qPCR of myogenic markers shows that Pax7 and Myod transcript levels did not change. However, Myog was upregulated in the SCs remaining on a Mib1-depleted niche (Figure 7D). In response to activation cues, SCs on a Mib1-depleted niche proliferate faster and upregulate Myogenin compared to the SCs on control muscle fibers, indicating that the remaining SCs are primed for proliferation and differentiation (Figure 7E\u2013G). In response to muscle injury, the size of regenerating muscle fibers was smaller than the control muscle fibers, although the number of Pax7+ SCs is the same as control in the regenerated muscle (Figure 7H\u2013J). Therefore, the effect of Mib1 deletion from the niche mimics that of Dll4 deletion. In conclusion, niche-derived Mib1 expressed in a heterogeneous pattern along the muscle fiber maintains the normal continuum of diverse QSC states during tissue homeostasis.\n\n## Discussion\n\nThe composition and location of niche cells are critical for SC regulation. The multinucleated muscle fiber acts as a niche cell to maintain the QSC pool in a continuum of diverse states through the heterogeneous patterning of the E3 ligase, Mib1 and activation of Dll4, in a fiber-autonomous manner. Therefore, niche-derived Dll4 acts as a rheostat, placing a cell along a continuum of states that are fate biased (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/68180/elife-68180-fig8-v1.jpg)\n\n**Figure 8.:** (A) Top: During tissue homeostasis, Notch ligand Dll4 is present in a heterogeneous manner along the length of the muscle fibers that maintains the size of the SC pool and a continuum of quiescent metastable cell states. Middle: A reduction in Dll4/Mib1 levels does not change the number of SCs, but causes a shift in metastable states toward activation and commitment. Bottom: Complete ablation of Dll4/Mib1 in the muscle fibers results in a more dramatic shift in the metastable states away from quiescent self-renewing fates toward more proliferative and committed fates, and SC loss likely by fusion into muscle fibers. (B) Top: In the event of an injury, the SC metastable states are reformed on newly regenerated muscle fibers. Bottom: After injury to a Dll4/Mib1-depleted niche, wildtype SCs reform the niche, restoring the normal distribution of metastable SC states.\n\nOur results provide the first direct demonstration of a Notch ligand from a specific cell type that is critical to maintain a continuum of metastable states within the QSC pool. This diversity and plasticity are important in the event of an injury, so that all the SCs are not equally lost to activation or differentiation. This continuum is actively maintained in uninjured muscle by the heterogeneous pattern (and levels) of Dll4 and Mib1 on the muscle fibers. Depletion of Dll4 and Mib1 in muscle fibers causes a contraction of the SC continuum toward more homogeneous committed states.\n\nThe spatial localization of the different factors in the cytoplasm of a single multinucleated cell governs the cell state of the SC pool. Expression of Wnt4 along the fiber is ubiquitous, thereby inhibiting proliferation of all SCs (Eliazer et al., 2019). The heterogeneous expression of Dll4 within the muscle fiber allows the maintenance of a continuum of differentiated states, with SCs in a region of low Dll4 expression are primed to proliferate and differentiate when subjected to injury in vivo or exposed to mitogen in vitro.\n\nAlthough snRNA sequencing shows transcriptional heterogeneity within the myonuclei of single muscle fibers (Kim et al., 2020; Petrany et al., 2020), we show that the transcripts of Dll4 are uniformly expressed along the muscle fiber and the protein expression is heterogeneous. This highlights the importance of protein heterogeneity within single muscle fibers. The varied expression of Dll4 is established by the E3 ligase, Mib1 that adds ubiquitin groups to Dll4 and activates them by a process of endocytosis (Koo et al., 2005; Koo, 2007). The formation of endosomes might play a role in clustering the Dll4 ligand to present them to the adjacent receptors on the QSCs.\n\nPrevious work has shown that Mib1 is essential in postnatal developing muscle to convert proliferating SCs into a quiescent state. Sex hormones activate Notch signaling pathway during puberty, thereby driving SCs into quiescence (Kim et al., 2016). Here, we show a different function of Mib1 in adult muscle under homeostatic conditions. In adult muscle fibers, Mib1 regulates the spatial expression and levels of Dll4, and is required to maintain a gradient of commitment states within the QSC pool.\n\nThe deletion of Mib1 or Dll4 within the fiber resulted in a 50% diminution of the SC pool, whereas, deletion of Rbpj in adult SCs displayed a more robust depletion (>95%) (Bjornson et al., 2012; Mourikis et al., 2012). This suggests that Rbpj might have targets other than the Notch signaling pathway. Deletion of Rbpj in SCs also caused the SC pool to precociously differentiate. We propose that SCs sit along a continuum dictated by the levels of fiber-derived Dll4. Disruption of Dll4 and Mib1 levels in the muscle fiber repositions the SCs along the continuum, biasing cell fate outcomes of the whole population.\n\nNotch ligands added to SCs in vitro promoted quiescence of myoblasts at the expense of differentiation, but did not restore stemness (Sakai et al., 2017). Therefore, quiescence is not equivalent to stemness; consistent with the observations that only subsets of QSCs possess self-renewal potential in transplantation assay (Rocheteau et al., 2012; Chakkalakal et al., 2012; Sacco et al., 2008). These data also raise the possibility that Notch signaling directly regulates differentiation potential of a QSC rather than direct regulation of the quiescent state.\n\nscRNA-seq on cells from regenerating muscle suggests that Dll1 is expressed in a subset of differentiating, Myogenin+ cells and is important for self-renewal (Yartseva et al., 2020). Dll1 expressed in activated and differentiated myogenic cells regulates the self-renewal of neighboring myogenic cells through a process of lateral inhibition (Zhang et al., 2021). In vitro experiments using co-culture of primary myoblasts with 3T3 cells overexpressing Dll4 (Low et al., 2018), or with endothelial cells (Verma et al., 2018) suggests the importance of the Notch ligand Dll4 in self-renewal at the expense of differentiation. We posit that in the presence of extrinsic cues that drive cell cycle exit (quiescence or differentiation) cells will be fated to quiescence (self-renewal) or differentiation based on location along a continuum. Notch signaling maintains cells in metastable states competent for a return to quiescence.\n\nUsing a low-dose tamoxifen strategy, we were able to demonstrate that decreasing Dll4 shifted the continuum toward commitment, without any change in SC number in the absence of injury. Therefore, QSC pool exists in a series of metastable states that is under the control of niche-derived Dll4. Prior work demonstrated that SCs with low levels of Pax7 are less competent for self-renewal in vivo (Rocheteau et al., 2012). Based on the decrease in Pax7 levels after Dll4 depletion from the niche, we predicted a diminution of the SC pool in response to injury. Instead, the number of SCs and Pax7 levels was increased after injury; restoring them back to control levels (Figure 5H, I). This demonstrates a level of plasticity and bidirectional flow of SCs along the continuum to allow the reequilibrium of metastable states after tissue repair is complete. This interpretation is only possible because we developed an approach that allows for the transient loss of Dll4 in the niche prior to injury.\n\nIn the future, it will be interesting to investigate how distinct niche factors that control quiescence versus commitment are coordinated. Our findings provide proof-of-principle for niche-based strategies to modify the fate potential of SCs while residing in a quiescent state.\n\n## Materials and methods\n\n### Animals\n\nMice were housed and maintained in accordance with the guidelines of the Laboratory Animal Research Center (LARC) of University of California, San Francisco. C57BL/6 were obtained from Jackson Laboratory. Previously published Pax7-nGFP (Rocheteau et al., 2012), human ACTA1-CreMer (McCarthy et al., 2012), Dll4flox/flox (Hozumi et al., 2008), Mib1flox/flox (Koo, 2007), Pax7-CreER (Nishijo et al., 2009), and Notch reporter CBF1-GFP (Duncan et al., 2005) were used in this study. All mice used for experiments were adults, between 12 and 16 weeks of age. The control and experimental mice used are littermates in all experiments. Approximately equal numbers of male and female mice were used in all experiments. Animals were genotyped by PCR using tail DNA. Primer sequences are available upon request.\n\n### Animal procedures\n\nTamoxifen (tmx, Sigma) was dissolved in corn oil at a concentration of 20 mg/ml. Both control and experimental mice were administered tamoxifen at a concentration of 150 mg/kg/day for seven continuous days by intraperitoneal injection. The mice were left to chase for 30 days before analysis. To reduce (not ablate completely) the levels of Dll4 in the muscle fibers, tmx was IP injected at a concentration of 75 mg/kg/day for seven consecutive days.\n\n### Muscle injury\n\nControl and experimental mice were anesthetized by isofluorane inhalation and 50 \u00b5l of 1.2% BaCl2 was injected into and along the length of the tibialis anterior (TA) muscle. After 14 and 40 days of regeneration, mice were euthanized, the contralateral uninjured TA and injured TA muscle were fixed immediately in 4% PFA(Paraformaldehyde) and frozen in 20% sucrose/OCT medium. 8-\u00b5m cross-sections of the muscle were made and stained for anti-laminin. \u00d710 images were collected at three regions in the mid-belly of each muscle. Only mice that had more than 80% injury in their TA were analyzed. All the regenerating fibers in the entire TA section were analyzed for fiber size. The average cross-sectional area of the fibers was determined using ImageJ software.\n\n### Isolation of single muscle fibers\n\nSingle muscle fibers were isolated from the EDL muscle of the adult mouse as described previously (Eliazer et al., 2019). The single fibers were fixed immediately in 4% PFA for 10 min or cultured in plating media (DMEM(Delbecco's Modified Eagle Medium) with 10% horse serum).\n\nFor in vitro cell cycle entry assays, single muscle fibers from control and Myofiber-Dll4fl/fl mice were harvested and cultured in plating media containing EdU (10 \u00b5m; Carbosynth) for 30 hr. For in vitro differentiation assay, the single muscle fibers from control, Myofiber-Dll4fl/fl and Myofiber-Mib1fl/fl were cultured in plating media for 48 hr. The fibers were then fixed and stained for different antibodies. EdU staining was done using the Click-iT Plus EdU Alexa Fluor 594 Imaging Kit (Invitrogen) followed by staining with anti-Pax7 antibody.\n\n### Isolation of SCs and fluorescence-assisted cell sorting\n\nSatellite cells were isolated from hindlimb and forelimb muscles as previously described (Eliazer et al., 2019). The mononuclear muscle cells were stained for PE-Cy7 anti-mouse CD31 (clone 390; BD Biosciences), PE-Cy7 anti-mouse CD45 (clone 30-F11; BD Biosciences), APC-Cy7 anti-mouse Sca1 (clone D7; BD Biosciences), PE anti-mouse CD106/VCAM-1 (Invitrogen), and APC anti-\u03b17 integrin (clone R2F2; AbLab). Fluorescence-assisted cell sorting (FACS) was performed using FACS Aria II (BD Biosciences) by gating for CD31\u2212/CD45\u2212/Sca1\u2212/\u03b17 integrin+/VCAM1+ to isolate SCs. SCs from Pax7-nGFP mouse were sorted for GFP fluorescence. The GFP+ gate was divided into top 15% (GFPhigh fraction), middle 45% (Pax7medium fraction), and bottom 15% (Pax7low fraction). The isolated SCs were fixed immediately at t0 or cultured in growth media (Ham\u2019s F10 media, 20% fetal bovine serum, 5 ng/ml FGF2) containing 10 \u03bcm EdU for 60 hr (cell cycle entry assay) or cultured in plating media (DMEM with 10% horse serum) for 3 days (differentiation assay).\n\n### Immunostaining\n\nFixed myofibers were permeabilized with 0.2% Triton X-100/phosphate-buffered saline (PBS) and blocked with 10% goat serum/0.2% Triton X/PBS. Primary antibodies used in this study were: mouse anti-Pax7 (DSHB), rabbit anti-Laminin (Abcam), rabbit anti-Dll4 (Thermo Fisher Scientific), rabbit anti-Mib1 (Sigma), rabbit anti-Syndecan4 (Abcam), rabbit anti-DDX6 (Bethyl Laboratories Inc), rabbit anti-Myogenin (Santa Cruz Biotechnology), and DAPI(4\u2032,6-diamidino-2-phenylindole) (Life Technologies). Primary antibodies were visualized with fluorochrome conjugated secondary antibodies (Invitrogen). The stained fibers were mounted in Fluoromount-G mounting medium (SouthernBiotech). For most of the staining, the images were taken using a \u00d720 Plan Fluor objective of the Nikon Eclipse Ti microscope. Anti-Pax7 and anti-Ddx6 stained images were obtained with a \u00d740 Plan Fluor objective of the same microscope. Dll4 and Mib1 stained images were taken with \u00d740 oil objective of Leica DMi8 Confocal Microscope. 15 \u03bcm z-stacks around the Pax7+ SC were taken and the sum projection of the images was obtained. The filter settings, gain and exposure values were kept constant between experiments. The intensity of expression is determined by manually drawing a region of Interest (ROI) on a Pax7-positive SC. This will give the mean pixel intensity of the ROI in all the channels. The ROI is copied onto another region where there is no Pax7-positive cell to calculate the background intensity. The background intensity is subtracted and the mean intensity is plotted with GraphPad Prism 7. To determine the intensity of Dll4 captured by SC, a ROI is drawn around the Pax7+ SC. To determine the intensity of Dll4 in the muscle fibers adjacent to the SCs, a ROI is drawn in an area of 100 \u03bcm2 surrounding the SC. Representative images for antibody staining were taken using Leica DMi8 Confocal Microscope.\n\n### RNAscope\n\nRNAscope for Dll4 was performed on fixed myofibers as previously described (Kann and Krauss, 2019). Briefly the single muscle fibers are isolated, fixed with 4% PFA and dehydrated with 100% methanol. The fibers are then rehydrated with a series of decreasing concentrations of methanol and PBS with 0.1% Tween 20 followed by protease digestion, hybridization of the RNA probe, amplification of signal and conjugation with fluorophore.\n\n### Quantitative PCR\n\nTotal RNA was isolated from single muscle fibers (from EDL muscle), or SCs using Trizol (Invitrogen) according to the manufacturer\u2019s protocol. The RNA was DNAse treated using Turbo DNA free kit (Life Technologies). cDNA was synthesized from RNA using the Superscript First Strand Synthesis System (Invitrogen). Quantitative PCR (qPCR) was performed in triplicates from 5 ng of RNA per reaction using Platinum SYBR Green qPCR Super Mix-UDG w/ROX (Invitrogen) on a ViiA7 qPCR detection system (Life Technologies). All reactions for RT-qPCR were performed using the following conditions: 50\u00b0C for 2 min, 95\u00b0C for 2 min, 40 cycles of a two-step reaction of denaturation at 95\u00b0C for 15 min, and annealing at 60\u00b0C for 30 s. The mean Ct values from triplicates were used in the comparative 2\u2212\u0394\u0394Ct method. To analyze the expression of Notch ligands on the adult muscle fiber, 2\u2212\u0394Ct method was used. The results were normalized to GAPDH mRNA controls. The primers used in this study are listed in Supplementary file 2.\n\n### Microarray\n\nTotal RNA was isolated from single muscle fibers of the EDL muscle from postnatal day 3 (p3), postnatal day 7 (p7), and adult mouse hindlimb using TRIzol reagent (Invitrogen). The processing of RNA, hybridization, and analysis is previously described (Eliazer et al., 2019). The expression values for Notch ligands are log2 transformed and listed in Supplementary file 1.\n\n### Quantification and statistical analysis\n\nThe density maps for Pax7 and Ddx6 intensity were drawn using R. The variance of Pax7 and Ddx6 intensity levels across the SC pool is calculated as the square of standard deviation. The statistical details of experiments can be found in the figure legends. No statistical methods were used to predetermine sample size. The investigators were not blinded to allocation during experiments and outcome assessment. No animal was excluded from analysis. All data are represented as mean \u00b1 standard error of the mean. Significance was calculated using the two-tailed unpaired Student\u2019s t-tests (GraphPad Prism 7). The number of replicates (n) for each experiment is indicated in the figure legends. Differences were considered statistically different at p < 0.05.\n",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "2b693168-d57b-47e1-b0fa-9794adb1384f",
+      "submission_id": "342ac996-0ff2-4856-96bb-8aebf9b4eba3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christopher L-H Huang, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68180.sa0](https://doi.org/10.7554/eLife.68180.sa0)\n\nThis is a strategic paper of relevance to both muscle and stem cell biologists. It bears on the generation of muscle stem cell diversity, and the factors bearing on this. Specifically, this paper identifies a particular, Notch ligand Dll4, as a myofiber-derived regulator of muscle stem cells.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Christopher L-H Huang, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68180.sa1](https://doi.org/10.7554/eLife.68180.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Spatial heterogeneity of Dll4 within a multinucleated niche cell maintains muscle stem cell diversity\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Mone Zaidi as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Robert S. Krauss (Reviewer #1); Bradley B Olwin (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEliazer et al. report that the Notch ligand Dll4 produced by myobers regulates the fate of muscle stem cells. Identification of such stem cell niche factors is important, and the results are interesting and beneficial to the field. The conclusion that heterogeneous distribution of Dll4 on myofibers maintains a continuum of muscle stem cell fates is, however, not sufficiently supported by the data and therefore premature. While some additional experimentation is asked for, this and most other comments by the reviewers can be addressed by alterations to the text.\n\nEssential revisions:\n\n1) Changes to the text are necessary to temper the conclusion that Dll4 signals to maintain a continuum of SC fates and raise alternative interpretations to the data. Additionally, prior work demonstrating that Pax7 protein levels are variable and that the level of Pax7 affects satellite cell fate has been published and specific early papers should be cited (Zammit, JCB 2004; and Olguin, Dev Bio 2004). The title should also be reworded to reflect these changes. Please see the individual reviews for more specific comments on how to address this issue.\n\n2) Mib1 regulates multiple Notch ligands. Could Mib1 deletion affect Notch ligands other than Dll4 that are also expressed by myofibers? This can be addressed by IF of single myofibers for additional Notch ligands reported in Figure S2B.\n\n3) Expression of Notch pathway target genes should be examined in satellite cells from control and MF-Dll4 mice by qRT-PCR. This will presumably validate Dll4's expected role in maintaining quiescence-promoting Notch signaling and help address the observation that the MF-Dll4 phenotype is less pronounced than the satellite cell-specific RBP-J knockout phenotype.\n\n4) Additional changes to the text are requested in the comments from individual reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Given the known role of Dll4 as a Notch ligand, it is highly likely that the non-autonomous SC phenotypes are a consequence of reduced Notch pathway activity in these cells. It is important to show that reduced Notch pathway activity has actually occurred. I suggest that the authors FACS sort SCs from control and MF-Dll4 mice and measure the levels of Notch target genes by qRT-PCR. This technique was used in the paper, and a number of validated Notch target genes in SCs have been published.\n\n2. The conclusions that the amount of Dll4 surrounding individual SCs correlates with Pax7 levels, and that the distribution of Pax7 levels is left-shifted in the absence of Dll4 in fibers, are convincing. High Pax7 levels, as measured with a Pax7-nGFP transgene, have been reported to correlate with greater SC dormancy (Rocheteau et al.). However, the various cells measured in this paper were tested in vitro and not in vivo for true stem cell activity, including self-renewal. Therefore, the conclusion about Dll4 controlling \"a continuum of quiescent cell states ranging from deep quiescent, non-committed states to more committed states\" (lines 238-239 in the Discussion) seems too strong. Simply tempering the conclusion would suffice.\n\n3. Figure S1 and Materials and methods: Figure S1D shows that Pax7-nGFP(High) cells incorporate EdU less efficiently than the (Medium) or (Low) cells. A very small percentage of cells overall incorporated EdU. The legend say the cells were in plating medium (10% horse serum) but the Methods section says they were in growth medium (20% FBS plus FGF2). Which is correct? The low percentage of EdU+ cells is more consistent with the former. If so, have the authors tried the latter?\n\n4. Figure 4 and lines 155-163: Numbers of SCs on single fibers from control and MF-Dll4 mice are similar after culture for 48 hr in 10% serum-containing medium (Figure 4E). Based on the Methods section, I assume this is 10% horse serum (which is mitogen poor), rather than growth medium. The authors conclude that there was compensatory cell proliferation of remaining MF-Dll4 SCs, as there are fewer of these at 30 hr. However, the SC numbers at 48 hr average 5-6 per EDL fiber, which is a typical number found associated with freshly isolated EDL fibers. After 30 hr, the numbers are similar (there are slightly fewer SCs on MF-Dll4 fibers but the difference is small \u2013 about one SC per fiber less, on average). It seems to me that there may be very little cell proliferation occurring at all on these fibers, consistent with use of horse serum (if that is indeed the case). It would also be consistent with the published in vivo phenotype of mice lacking RBP-J in SCs. RBP-J-null SCs often incorporate EdU but withdraw from the cell cycle prior to dividing, express myogenin, and precociously differentiate. This phenotype seems more consistent with the data on MF-Dll4 SCs in Figures 4B-F, and would further link the similarity between loss of fiber Dll4 and loss of Notch signaling in SCs.\n\n5. Figure 5: The area of high Mib1 protein seems wide relative to the intensity of Dll4 around SCs but still correlates with Pax7 levels in \"adjacent\" SCs. What area defines \"adjacent\"?\n\n6. The textbook view of Mib1 is that it monoubiquitylates Notch ligands in complex with Notch, leading to ligand endocytosis and Notch receptor activation. In this case, it also seems to play a major role in overall Dll4 localization. It would be worth citing another example of this, as it is not always the case (see for example, Cell Reports 19, 351-363, 2017).\n\n7. Lines 264-265: Because the MF-Dll4 phenotype is less pronounced than the SC RBP-J knockout phenotype, the authors suggest that RBP-J may have targets other than the Notch pathway. Doesn't it seem more likely that Dll4 is not the only relevant Notch ligand produced by the fiber? Figure S2B shows similar levels of mRNA for additional Notch ligands ae expressed by fibers. The experiment requested in comment 1 will help here too. If reduction of Notch target gene expression is incomplete in MF-Dll4 SCs (relative to that reported with RBP-J removal from SCs), it would be consistent with additional ligands playing a role. If reduction of Notch target gene expression was similar between the two, it would be more consistent with an additional role for RBP-J.\n\nReviewer #2 (Recommendations for the authors):\n\n1. A conclusive demonstration demonstration that spatial distribution of Dll4 and Mib1 in myofibers regulate diversity of MuSC state is lacking. While the authors show that such diverse spatial distribution of the two of factors exist in myofibers, that data that they are responsible for determining MuSC heterogeneity are correlative. While genetic deletion of Dll4 or Mib1 in myofibers resulted in a loss of MuSC diversity and premature activation, this approach complete deletes expression of the proteins, it does not modulate the diversity of Dll4 protein distribution on the myofiber. The resulting effect is that MuSC are prematurely activated due to loss of Dll4-mediated Notch signaling, but it is unclear if this is due to loss of spatial distribution of the proteins as suggested by the authors.\n\n2. Mib regulates multiple Notch ligands. Does Mib1 deletion affects other Notch ligands, beyond Dll4, in myofibers?\n\n3. The authors state \"Dll4 expression was also variable in regions devoid of SCs, suggesting the presence of a SC does not dictate Dll4 levels along muscle fibers\". What is the frequency of Dll4 diversity independent of MuSC? Is it a rare event or is as frequent as the one correlated to the presence of MuSC on the myofiber?\n\n4. While the authors found no correlation with the distance from the NMJ, this does not necessarily mean that there is no correlation with anatomically defined regions of the myofiber. in vivo, different regions of the myofiber are exposed to different local microenvironments, thus it cannot be rule out the possibility that such a correlation exists with other anatomical locations, that are lost upon myofiber isolation from the tissue.\n\n5. Distinction between Dll4 on myofiber and Dll4 captured by MuSC: it would be useful if the authors would include in the methods how they distinguish Dll4 on myofiber from the Dll4 captured by MuSC.\n\n6. In Figures 3I, 4K and S5J, it would be useful to include representative image of tissue sections, to support the quantification shown.\n\nReviewer #3 (Recommendations for the authors):\n\nIf the authors widen their potential interpretations and do not argue that Dll4 regulates the relative levels of Pax7, I would be open to publishing without additional experiments. The primary observations are highly interesting and I feel the data are over interpreted.\n",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "94cd29d7-f90f-4ba1-af51-747b63929ac5",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C1",
+      "claim": "The quiescent muscle stem cell (QSC) pool is heterogeneous and generally characterized by the presence and levels of intrinsic myogenic transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The quiescent muscle stem cell (QSC) pool is heterogeneous and generally characterized by the presence and levels of intrinsic myogenic transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature establishing QSC heterogeneity based on transcription factor expression.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "4c72e4de-1c39-44a0-9544-e918363ff203",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C2",
+      "claim": "The muscle fiber is a multinucleated syncytium that serves as a niche to QSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The muscle fiber is a multinucleated syncytium that serves as a niche to QSCs, raising the possibility that the muscle fiber regulates the diversity of states across the QSC pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about muscle fiber structure and its relationship to stem cells.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "dd43bcd0-77aa-4cbd-a924-c5483b4194ce",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C3",
+      "claim": "The muscle fiber maintains a continuum of quiescent states through a gradient of Notch ligand, Dll4, produced by the fiber and captured by QSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the muscle fiber maintains a continuum of quiescent states, through a gradient of Notch ligand, Dll4, produced by the fiber and captured by QSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "1b2c725b-f85e-4596-b2e1-328ccf1b1140",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C4",
+      "claim": "The abundance of Dll4 captured by the QSC correlates with the protein levels of the stem cell identity marker, Pax7.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of Dll4 captured by the QSC correlates with the protein levels of the stem cell (SC) identity marker, Pax7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This correlation is demonstrated through quantitative analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "8b0c8dbb-beb4-4d23-95fe-6cb554d3c23a",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C5",
+      "claim": "Niche-specific loss of Dll4 decreases QSC diversity and shifts the continuum to cell states that are biased toward more proliferative and committed fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Niche-specific loss of Dll4 decreases QSC diversity and shifts the continuum to cell states that are biased toward more proliferative and committed fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by genetic deletion experiments and phenotypic analysis shown in Figures 3-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "ec537d8f-c784-45e7-a317-d81e2f5860e7",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C6",
+      "claim": "Fiber-derived Mindbomb1 (Mib1), an E3 ubiquitin ligase, activates Dll4 and controls the heterogeneous levels of Dll4.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal that fiber-derived Mindbomb1 (Mib1), an E3 ubiquitin ligase activates Dll4 and controls the heterogeneous levels of Dll4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through Mib1 deletion experiments and analysis of Dll4 expression patterns shown in Figures 6-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "0a45bb0d-ef5c-43c2-adf4-d39c53791020",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C7",
+      "claim": "In response to injury, with a Dll4-replenished niche, the normal continuum and diversity of the SC pool is restored.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to injury, with a Dll4-replenished niche, the normal continuum and diversity of the SC pool is restored, demonstrating bidirectionality within the SC continuum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through injury experiments where wildtype SCs reform the niche, as demonstrated in Figure 5H-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "0b2d517f-9002-4fb7-a816-2864fbc510b0",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C8",
+      "claim": "A post-translational mechanism controls heterogeneity of Notch ligands in a multinucleated niche cell to maintain a continuum of metastable states within the SC pool during tissue homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that a post-translational mechanism controls heterogeneity of Notch ligands in a multinucleated niche cell to maintain a continuum of metastable states within the SC pool during tissue homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the combined findings about Mib1-mediated Dll4 activation and its effects on SC diversity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "0890a1d8-f43b-40ce-8761-0994454b0314",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C9",
+      "claim": "Pax7 and Ddx6 are expressed in QSCs and decrease during activation and commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Pax7 and Ddx6 are expressed in QSCs and decrease during activation and commitment (Crist et al., 2012; Zammit et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "8677e146-3256-4268-b043-c8d5323b03a4",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C10",
+      "claim": "A density map of Pax7 and Ddx6 expression shows a broad range of expression levels across the QSC pool.",
+      "claim_type": "EXPLICIT",
+      "source": "A density map of Pax7 and Ddx6 expression shows a broad range of expression levels across the QSC pool (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through density map analysis shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "c0eb133a-cd30-4ff9-bd5d-ef9ef8c1e67e",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C11",
+      "claim": "A bivariate plot shows a positive correlation between Pax7 and Ddx6.",
+      "claim_type": "EXPLICIT",
+      "source": "A bivariate plot shows a positive correlation between Pax7 and Ddx6 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is shown in Figure 1D with R\u00b2 = 0.4046.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "79a846eb-368e-46b5-88ed-78e557f8c714",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C12",
+      "claim": "Based on the expression profile of two different markers, the QSC pool is composed of a continuum of molecular states at tissue homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, based on the expression profile of two different markers, the QSC pool is composed of a continuum of molecular states at tissue homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the Pax7 and Ddx6 expression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "b5e4ac3a-b34b-4699-99d9-bbeb3ad437d3",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C13",
+      "claim": "The Pax7low population entered cell cycle and differentiated faster than the Pax7high expressers.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the Pax7low population entered cell cycle and differentiated faster than the Pax7high expressers, suggesting that Pax7high SCs are in a more dormant state and the Pax7low SCs exist in a primed state (Rocheteau et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through EdU incorporation and Myogenin expression assays shown in Figure 1\u2014figure supplement 1D-E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "c3928d8f-50a2-4950-9d1d-ad38ae6f3663",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C14",
+      "claim": "The Pax7medium population is in an intermediate molecular and phenotypic state between the Pax7high and Pax7low QSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the Pax7medium population is in an intermediate molecular and phenotypic state between the Pax7high and Pax7low QSCs (Figure 1\u2014figure supplement 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through functional assays in Figure 1\u2014figure supplement 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "2c01ce18-43fd-417f-bdcb-83edb4778ea5",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C15",
+      "claim": "The QSC pool exists in a continuum of cell states that gives rise to a continuum of fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the QSC pool exists in a continuum of cell states that gives rise to a continuum of fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the functional analysis of Pax7high, medium, and low populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "7bf31d44-3722-4f7b-a8c2-09a1cfa8b2e9",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C16",
+      "claim": "The multinucleated muscle fiber functions as a niche cell for the SC, regulating the depth of quiescence and rate of activation in response to injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The multinucleated muscle fiber functions as a niche cell for the SC, regulating the depth of quiescence and rate of activation in response to injury (Eliazer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "8922c99a-8c31-4d30-9840-ee1c590f7c56",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C17",
+      "claim": "Adult muscle QSCs display active notch signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult muscle QSCs display active notch signaling (Bjornson et al., 2012; Mourikis et al., 2012; Fukada et al., 2011; Low et al., 2018; Verma et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "a1cf5f93-6d38-437d-85a3-054c37d5111c",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C18",
+      "claim": "Overexpression of NICD1 increases Pax7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of NICD1 increases Pax7 expression (Wen et al., 2012) and Rbpj, a transcriptional coactivator of the notch signaling pathway, maintains the SC pool by repressing differentiation (Bjornson et al., 2012; Mourikis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "abc43979-3cca-4046-8f55-10a475063913",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C19",
+      "claim": "Rbpj maintains the SC pool by repressing differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of NICD1 increases Pax7 expression (Wen et al., 2012) and Rbpj, a transcriptional coactivator of the notch signaling pathway, maintains the SC pool by repressing differentiation (Bjornson et al., 2012; Mourikis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "34bda61b-db55-400b-9551-a97f4a727bef",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C20",
+      "claim": "A transgenic notch reporter mouse line exhibits variable levels of notch activity in QSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "A transgenic notch reporter mouse line where green fluorescent protein (GFP) is under the control of C promoter-binding factor 1 (CBF1) (Duncan et al., 2005) exhibits variable levels of notch activity in QSCs (Bjornson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work using the CBF1-GFP reporter.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "2c702224-a73c-4237-ba91-9d3eb17cb5b1",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C21",
+      "claim": "Notch activity levels exist on a continuum across the SC pool and positively correlate with Pax7 expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same reporter, we find that notch activity levels exist on a continuum across the SC pool and positively correlates with Pax7 expression levels (Figure 1E, F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through analysis of the CBF1-GFP reporter shown in Figure 1E-F with R\u00b2 = 0.5095.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "7b9194f6-8289-4ee4-9453-a5f6dc195bea",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C22",
+      "claim": "Dll4 transcripts in the fiber showed the most enrichment as the SC transitioned from proliferating myogenic progenitors (postnatal) to becoming quiescent (adult).",
+      "claim_type": "EXPLICIT",
+      "source": "Dll4 transcripts in the fiber showed the most enrichment as the SC transitioned from proliferating myogenic progenitors (postnatal) to becoming quiescent (adult) (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through microarray analysis of fibers from p3, p7, and adult mice in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "40d9c642-6ae9-4f19-91ca-b4cd5dac1049",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C24",
+      "claim": "Dll4 transcripts are expressed in less than 1% of QSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Dll4 transcripts are expressed in less than 1% of QSCs (Kimmel et al., 2020; De Micheli et al., 2020), suggesting that the muscle fiber is a source of SC-bound Dll4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scRNA-seq studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "3b5619e8-0966-45a8-affb-909d0ee25b6c",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C25",
+      "claim": "Dll4 protein formed clusters along the muscle fiber and were enriched around the QSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Single muscle fibers stained with anti-Dll4 show that Dll4 protein formed clusters along the muscle fiber and were enriched around the QSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown through immunofluorescence imaging of Dll4 on muscle fibers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "368d39e5-ae4f-4071-9473-ea7f3c8dd7c7",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C26",
+      "claim": "Heterogeneous spatial expression of Dll4 protein along the muscle fiber correlated with the amount of Dll4 captured by the SCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis revealed that heterogeneous spatial expression of Dll4 protein along the muscle fiber correlated with the amount of Dll4 captured by the SCs (Figure 2A, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through quantitative analysis shown in Figure 2A and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "bdf15f47-e14d-42cd-b32a-24f442493149",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C27",
+      "claim": "There is a positive correlation between the number of Dll4 foci on fiber adjacent to an SC and the intensity of Dll4 captured by the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a positive correlation between the amount of Dll4 foci on the fibers and the intensity of Dll4 present on the adjacent QSC (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is shown in Figure 2B with R\u00b2 = 0.6271.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "7e8ccf09-eef3-462b-a338-295b77b11e64",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C28",
+      "claim": "A bivariate plot of Pax7 and Dll4 expression within SCs reveals a positive correlation between the Dll4 captured by the SC and Pax7 intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "A bivariate plot of Pax7 and Dll4 expression within SCs reveals a positive correlation between the Dll4 captured by the SC and Pax7 intensity (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is shown in Figure 2C with R\u00b2 = 0.5887.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "7d1409b6-fb96-42b6-baab-5809255b75f5",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C29",
+      "claim": "Comparison between Dll4 protein and Pax7 levels using a Pax7-nGFP reporter confirmed the positive correlation between Pax7 and Dll4 protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison between Dll4 protein and Pax7 levels using a Pax7-nGFP reporter, confirmed the positive correlation between Pax7 and Dll4 protein expression (Figure 2D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through analysis of sorted Pax7-nGFP populations in Figure 2D-E with R\u00b2 = 0.5232.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "193c205a-26b8-4670-a17e-9faabbf61830",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C30",
+      "claim": "The localization of Dll4 transcript on the muscle fiber did not correlate with Pax7 expression in the adjacent SC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the localization of Dll4 transcript on the muscle fiber did not correlate with Pax7 expression in the adjacent SC (Figure 2\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through RNAscope analysis in Figure 2\u2014figure supplement 1C-D with R\u00b2 = 0.0304.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "017385e5-9760-4bca-80e4-615ee101b11e",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C31",
+      "claim": "Dll4 expression is variable along the fiber, and not linked to the neuromuscular junction or the myotendinous junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of Dll4 expression levels on single Extensor Digitorum Longus (EDL) muscle fibers showed that Dll4 expression is variable along the fiber, and not linked to the neuromuscular junction based on \u03b1-bungarotoxin expression or the myotendinous junction based on location (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through quantitative analysis of Dll4 distribution along single fibers shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "0c039474-665b-4df8-b4fe-7fbecf69a103",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C32",
+      "claim": "Fewer than 10% of fibers are exclusively Dll4High or Dll4low.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, fewer than 10% of fibers are exclusively Dll4High or Dll4low, suggesting SC diversity is coordinated in a fiber-autonomous manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of Dll4 expression patterns across fibers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "a61f0599-402e-4b85-9eb1-c887f425b35c",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C33",
+      "claim": "Dll4 expression was also variable in regions devoid of SCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Dll4 expression was also variable in regions devoid of SCs, suggesting the presence of an SC does not dictate Dll4 levels along muscle fibers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on analysis of Dll4 distribution along fibers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "37cfb8cc-b9c6-4d09-8e6d-4d70fddbaa4a",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C34",
+      "claim": "The intensity of Dll4 captured by SCs and the Pax7 expression correlated with the level of Dll4 expression along the muscle fiber.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the intensity of Dll4 captured by SCs and the Pax7 expression correlated with the level of Dll4 expression along the muscle fiber (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through analysis of individual fibers in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "d1350c65-0f3f-4cb3-9b38-d9d5ed57d7c5",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C35",
+      "claim": "Spatial heterogeneity and levels of niche-derived Dll4 are coupled with a continuum of diverse molecular SC states that are biased to different phenotypic fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, spatial heterogeneity and levels of niche-derived Dll4 are coupled with a continuum of diverse molecular SC states that are biased to different phenotypic fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the combined analysis of Dll4 distribution and SC marker expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "1770c9a7-a8f2-4e28-960f-79c9026e0d9a",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C36",
+      "claim": "The abundance of Dll4 in the muscle fiber and captured by SCs decreased in MF-Dll4fl/fl compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of Dll4 in the muscle fiber and captured by SCs decreased in MF-Dll4fl/fl compared to control, suggesting that the muscle fiber is the major source of SC-bound Dll4 in uninjured muscle (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through quantification of Dll4 intensity in Figure 3B-D after genetic deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "7f2c44c2-af54-4272-82b3-3d2ccb51517e",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C37",
+      "claim": "Pax7 and Ddx6 expression in SCs from MF-Dll4fl/fl fibers decreased compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Pax7 and Ddx6 expression in SCs from MF-Dll4fl/fl fibers decreased compared to controls (Figure 3E, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through quantification in Figure 3E and 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "3ef0190e-5607-43a4-aca5-584055289195",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C38",
+      "claim": "The decrease in variance in MF-Dll4fl/fl compared to controls indicates reduced diversity across the QSC pool.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in variance in MF-Dll4fl/fl compared to controls, indicates reduced diversity across the QSC pool, effectively reducing the range of states across the continuum (Figure 3F, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through density map analysis showing reduced variance in Figure 3F and 3H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "0bd60ed1-cee5-496d-99ef-3cf05350b365",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C39",
+      "claim": "There was a 50% decrease in the total number of Pax7+ SCs in MF-Dll4fl/fl fibers compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a 50% decrease in the total number of Pax7+ SCs in MF-Dll4fl/fl fibers compared to controls (Figure 3\u2014figure supplement 1A, B), suggesting a SC loss phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through quantification in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "af69363f-d113-434a-8260-f83064deeec3",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C40",
+      "claim": "There was a 95% decrease in notch reporter activity after Dll4 deletion from the niche.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a 95% decrease in notch reporter activity after Dll4 deletion from the niche (Figure 3I), suggesting that Dll4 from the fibers nonautonomously regulates Notch activity in the QSCs and that Dll4 from the muscle fiber is the dominant source of notch ligand.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through analysis of CBF1-GFP reporter in Figure 3I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "1679cb79-a39b-4153-b4e0-9f5acc99c6db",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C41",
+      "claim": "qRT-PCR on QSCs from control and MF-Dll4fl/fl revealed a decrease in Pax7 and an increase in Myod and Myog transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR on QSCs from control and MF-Dll4fl/fl revealed a decrease in Pax7 (SC marker) and an increase in Myod (activation marker) and Myog (differentiation marker) transcripts (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through qRT-PCR analysis in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "f0bf0c17-80d0-49a4-b0fd-41aa55880201",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C42",
+      "claim": "Reducing Dll4 in fibers redistributed the SC population along the continuum toward lower Pax7 levels without decreasing their numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing Dll4 in fibers redistributed the SC population along the continuum toward lower Pax7 levels without decreasing their numbers (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through low-dose tamoxifen experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "1284b89b-b743-4191-86c3-870d41f89852",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C43",
+      "claim": "Heterogeneous levels of Dll4 in muscle fibers maintain a distribution of metastable states across the QSC pool during tissue homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that heterogeneous levels of Dll4 in muscle fibers maintain a distribution of metastable states across the QSC pool during tissue homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the dose-dependent effects of Dll4 reduction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "86e818e9-bcea-47a4-bb4e-5aed456f1e90",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C44",
+      "claim": "Deletion of Dll4 in Pax7+ SCs did not change Pax7+ SC number, compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of Dll4 in Pax7+ SCs using a Pax7-CreER transgenic mouse line (Nishijo et al., 2009) (referred to as SC-Dll4fl/fl) did not change Pax7+ SC number, compared to controls (Figure 3\u2014figure supplement 2), suggesting that Dll4 does not have an autocrine role in QSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through quantification in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "61431a66-1963-46b9-ac73-edf423acfa72",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C45",
+      "claim": "Dll4 from the muscle fiber is required to maintain the continuum of diverse cellular states across the QSC pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that Dll4 from the muscle fiber is required to maintain the continuum of diverse cellular states across the QSC pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the combined genetic deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "737947e2-8268-4d23-a75a-ed64e909f390",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C46",
+      "claim": "SCs on a Dll4-depleted niche entered cell cycle faster than controls.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with the result that SCs on a Dll4-depleted niche entered cell cycle faster than controls (Figure 5D, Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through EdU incorporation assays in Figure 5D and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "d422f5bc-8cfa-4545-824a-bf2901410cf4",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C47",
+      "claim": "The absolute number of Myogenin+ cells per fiber at 48 hr was increased in Dll4-depleted niche.",
+      "claim_type": "EXPLICIT",
+      "source": "The absolute number of Myogenin+ cells per fiber at 48 hr was increased, suggesting that a fraction of the remaining SCs on a Dll4-depleted niche rapidly entered the differentiation program when exposed to mitogen (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through quantification of Myogenin+ cells in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "2f273b81-414d-4462-89ff-122ae9b67f00",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C48",
+      "claim": "Fourteen days after injury, muscle fiber size in MF-Dll4fl/fl TA muscle was significantly smaller than controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourteen days after injury, muscle fiber size in MF-Dll4fl/fl TA muscle was significantly smaller than controls (Figure 5F, G), consistent with the rapid entrance of some SCs into the differentiation program, as reported after deletion of Rbpj in SCs (Bjornson et al., 2012; Mourikis et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through cross-sectional area measurements in Figure 5F-G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "e7342384-f341-4f6b-a795-ca813ef20072",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C49",
+      "claim": "The impaired differentiation phenotype in MF-Dll4fl/fl TA muscle is also seen 40 days after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The impaired differentiation phenotype in MF-Dll4fl/fl TA muscle is also seen 40 days after injury (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through cross-sectional area measurements in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "bf7f9f57-164b-481b-8859-c780402e96f1",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C50",
+      "claim": "In contrast to the contralateral uninjured muscle, the average Pax7 levels and the variance across the SC population was not different in a Dll4-replenished niche and control niche after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the contralateral uninjured muscle, the average Pax7 levels and the variance across the SC population was not different in a Dll4-replenished niche and control niche (Figure 5H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through density map analysis in Figure 5H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "0be1be18-44a3-44f7-a756-58326da95e4b",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C51",
+      "claim": "The number of Pax7+ cells was similar to control regenerated muscle after injury in Dll4-depleted niche.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the number of Pax7+ cells was similar to control regenerated muscle (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through quantification in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "8e07a792-4ac0-404f-a0ec-52418ce82a80",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C52",
+      "claim": "SCs expressing modest levels of Pax7 have the potential to produce SCs with higher levels of Pax7, revealing an unappreciated level of plasticity and bidirectionality along the SC continuum during muscle regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, SCs expressing modest levels of Pax7 have the potential to produce SCs with higher levels of Pax7, revealing an unappreciated level of plasticity and bidirectionality along the SC continuum during muscle regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the restoration of Pax7 levels after injury.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "cc024ecd-a428-43af-ad58-18d8c16573b7",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C53",
+      "claim": "Mib1 is an E3 ubiquitin ligase that activates all Notch ligands in the signal sending cell by adding mono-ubiquitin groups onto the ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Mindbomb1 (Mib1), is an E3 ubiquitin ligase that activates all Notch ligands in the signal sending cell by adding mono-ubiquitin groups onto the ligands (Koo et al., 2005; Koo, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on Mib1 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "7e37340d-619d-446b-a2b5-6b13e69934f4",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C54",
+      "claim": "Mib1 in the retinal pigment epithelium activates Notch signaling in the adjacent retinal progenitor cell by localizing active Notch ligands in the RPE\u2013RPC contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Mib1 in the retinal pigment epithelium (RPE) activates Notch signaling in the adjacent retinal progenitor cell (RPC) by localizing active Notch ligands in the RPE\u2013RPC contacts (Ha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "0070506b-58f2-4c31-a513-1e0560e3d541",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C55",
+      "claim": "The hypothalamus\u2013pituitary\u2013gonadal axis has been shown to induce Mib1 in muscle fibers during development, thus activating notch signaling in juvenile SCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothalamus\u2013pituitary\u2013gonadal axis has been shown to induce Mib1 in muscle fibers during development, thus activating notch signaling in juvenile SCs (Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "8077fa12-50fa-48f9-81f7-a2e8700e634d",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C56",
+      "claim": "There is a positive correlation between the intensity of Mib1 expression on muscle fibers and Pax7 intensity within the adjacent SC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Dll4 expression, we observed a positive correlation between the intensity of Mib1 expression on muscle fibers and Pax7 intensity within the adjacent SC (Figure 6A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is shown in Figure 6B with R\u00b2 = 0.5761.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "b55d6170-f8c2-417b-94ee-2bec9a0ba148",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C57",
+      "claim": "Formation of Dll4 clusters is a marker of the activated form of the ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of Dll4 clusters is a marker of the activated form of the ligand (Le Borgne and Schweisguth, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "d33ea035-675e-42aa-a8e6-a2b53437fec6",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C58",
+      "claim": "The expression of Mib1 transcripts was decreased in the Mib1-depleted myofibers compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "After a 30-day chase, the expression of Mib1 transcripts was decreased in the Mib1-depleted myofibers compared to controls (Figure 7A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through qRT-PCR analysis in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "8d10f0bb-fe29-4db9-904a-6ced562cd387",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C59",
+      "claim": "Analysis of Dll4 expression in control and MF-Mib1fl/fl isolated single muscle fibers revealed a loss of Dll4 clusters and a reduction in the intensity of Dll4 expression in Mib1-depleted niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Dll4 expression in control and MF-Mib1fl/fl isolated single muscle fibers, revealed a loss of Dll4 clusters and a reduction in the intensity of Dll4 expression in Mib1-depleted niche (Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through immunofluorescence and quantification in Figure 6C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "362dba63-1a12-4dd5-afb6-f06aded2c47f",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C60",
+      "claim": "Mib1 directs the activation and heterogeneous patterning of Dll4 within a multinucleated niche cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Mib1 directs the activation and heterogeneous patterning of Dll4 within a multinucleated niche cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the effects of Mib1 deletion on Dll4 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "62e6dd86-be2b-489c-b2d4-36807c14f212",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C61",
+      "claim": "Compared to controls, Pax7 levels decreased, the variance across the QSC pool was reduced and SC number was less in a Mib1-depleted niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controls, Pax7 levels decreased, the variance across the QSC pool was reduced and SC number was less in a Mib1-depleted niche (Figure 6C, F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through quantification and density map analysis in Figure 6F-G and Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "4acc2bc0-c878-48af-9521-2979c4d66376",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C62",
+      "claim": "RT-qPCR of myogenic markers shows that Pax7 and Myod transcript levels did not change but Myog was upregulated in the SCs remaining on a Mib1-depleted niche.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR of myogenic markers shows that Pax7 and Myod transcript levels did not change. However, Myog was upregulated in the SCs remaining on a Mib1-depleted niche (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through qRT-PCR analysis in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "4c560c92-4b4d-432e-a1c6-55601578fc92",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C63",
+      "claim": "In response to activation cues, SCs on a Mib1-depleted niche proliferate faster and upregulate Myogenin compared to the SCs on control muscle fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to activation cues, SCs on a Mib1-depleted niche proliferate faster and upregulate Myogenin compared to the SCs on control muscle fibers, indicating that the remaining SCs are primed for proliferation and differentiation (Figure 7E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through in vitro culture assays in Figure 7E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "3d0042bf-a4fb-44b1-9f97-7c98563b6dd0",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C64",
+      "claim": "In response to muscle injury, the size of regenerating muscle fibers was smaller than the control muscle fibers in Mib1-depleted niche.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to muscle injury, the size of regenerating muscle fibers was smaller than the control muscle fibers, although the number of Pax7+ SCs is the same as control in the regenerated muscle (Figure 7H\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through cross-sectional area measurements in Figure 7H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "d6e279a5-ee84-4044-a45f-22a22cfab4ca",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C65",
+      "claim": "The number of Pax7+ SCs is the same as control in the regenerated muscle after Mib1 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to muscle injury, the size of regenerating muscle fibers was smaller than the control muscle fibers, although the number of Pax7+ SCs is the same as control in the regenerated muscle (Figure 7H\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through quantification in Figure 7J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "dbce2c00-b9cf-404a-bf01-0acf75e6255e",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C66",
+      "claim": "The effect of Mib1 deletion from the niche mimics that of Dll4 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the effect of Mib1 deletion from the niche mimics that of Dll4 deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from comparing the phenotypes of Mib1 and Dll4 deletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "c838ba4b-1474-4928-b715-f672d136334c",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C67",
+      "claim": "Niche-derived Mib1 expressed in a heterogeneous pattern along the muscle fiber maintains the normal continuum of diverse QSC states during tissue homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, niche-derived Mib1 expressed in a heterogeneous pattern along the muscle fiber maintains the normal continuum of diverse QSC states during tissue homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the overall conclusion drawn from the Mib1 experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "6b71dd74-f43e-4549-b547-8b8dcbe2a6cf",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C68",
+      "claim": "The multinucleated muscle fiber acts as a niche cell to maintain the QSC pool in a continuum of diverse states through the heterogeneous patterning of the E3 ligase, Mib1 and activation of Dll4, in a fiber-autonomous manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The multinucleated muscle fiber acts as a niche cell to maintain the QSC pool in a continuum of diverse states through the heterogeneous patterning of the E3 ligase, Mib1 and activation of Dll4, in a fiber-autonomous manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "8c30f2c1-672c-46bf-bc6c-89a118ea3ce2",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C69",
+      "claim": "Niche-derived Dll4 acts as a rheostat, placing a cell along a continuum of states that are fate biased.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, niche-derived Dll4 acts as a rheostat, placing a cell along a continuum of states that are fate biased (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conceptual model summarizing the findings, illustrated in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "d976347a-adcb-4747-bafc-5e8532d0f063",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C70",
+      "claim": "Deletion of Rbpj from SCs reduced SC population by over 95%.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of Rbpj from SCs reduced SC population by over 95% (Bjornson et al., 2012; Mourikis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "dbdf66ef-c433-488f-b8cb-dc477d8c213f",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C71",
+      "claim": "The deletion of Mib1 or Dll4 within the fiber resulted in a 50% diminution of the SC pool, whereas deletion of Rbpj in adult SCs displayed a more robust depletion (>95%).",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of Mib1 or Dll4 within the fiber resulted in a 50% diminution of the SC pool, whereas, deletion of Rbpj in adult SCs displayed a more robust depletion (>95%) (Bjornson et al., 2012; Mourikis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is made between the current findings and prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "0a5a3c55-b4c3-43af-8c4d-606526f3295c",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C72",
+      "claim": "Rbpj might have targets other than the Notch signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Rbpj might have targets other than the Notch signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the difference in phenotype severity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "cf7fa026-2cf5-4674-a9f8-9dce89f7496d",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C73",
+      "claim": "Notch ligands added to SCs in vitro promoted quiescence of myoblasts at the expense of differentiation, but did not restore stemness.",
+      "claim_type": "EXPLICIT",
+      "source": "Notch ligands added to SCs in vitro promoted quiescence of myoblasts at the expense of differentiation, but did not restore stemness (Sakai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "0ea33841-bbfc-46c0-844c-47df722bcb66",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C74",
+      "claim": "Quiescence is not equivalent to stemness.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, quiescence is not equivalent to stemness; consistent with the observations that only subsets of QSCs possess self-renewal potential in transplantation assay (Rocheteau et al., 2012; Chakkalakal et al., 2012; Sacco et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from prior literature and the current findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "658d9875-b63f-4502-b43b-e231fb9edd5d",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C75",
+      "claim": "scRNA-seq on cells from regenerating muscle suggests that Dll1 is expressed in a subset of differentiating, Myogenin+ cells and is important for self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "scRNA-seq on cells from regenerating muscle suggests that Dll1 is expressed in a subset of differentiating, Myogenin+ cells and is important for self-renewal (Yartseva et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "ffc2a7b6-ad3c-4828-95d1-091337eff2db",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C76",
+      "claim": "Dll1 expressed in activated and differentiated myogenic cells regulates the self-renewal of neighboring myogenic cells through a process of lateral inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Dll1 expressed in activated and differentiated myogenic cells regulates the self-renewal of neighboring myogenic cells through a process of lateral inhibition (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "83b69003-5d64-47f8-ae8f-d12959652ccf",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C77",
+      "claim": "In vitro experiments using co-culture of primary myoblasts with 3T3 cells overexpressing Dll4, or with endothelial cells suggests the importance of the Notch ligand Dll4 in self-renewal at the expense of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro experiments using co-culture of primary myoblasts with 3T3 cells overexpressing Dll4 (Low et al., 2018), or with endothelial cells (Verma et al., 2018) suggests the importance of the Notch ligand Dll4 in self-renewal at the expense of differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "80b76061-71c5-47e8-8570-c290075e87b1",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C78",
+      "claim": "Using a low-dose tamoxifen strategy, decreasing Dll4 shifted the continuum toward commitment, without any change in SC number in the absence of injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a low-dose tamoxifen strategy, we were able to demonstrate that decreasing Dll4 shifted the continuum toward commitment, without any change in SC number in the absence of injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the low-dose tamoxifen experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "f01e37ff-e17f-4c35-9c17-eb7dcf709633",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C79",
+      "claim": "QSC pool exists in a series of metastable states that is under the control of niche-derived Dll4.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, QSC pool exists in a series of metastable states that is under the control of niche-derived Dll4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the dose-dependent effects of Dll4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "4b4e976d-297f-4dd7-b192-88cad8c73128",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C80",
+      "claim": "SCs with low levels of Pax7 are less competent for self-renewal in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work demonstrated that SCs with low levels of Pax7 are less competent for self-renewal in vivo (Rocheteau et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "58026e76-18d2-44ec-bb1e-6e1b6727e2a1",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C81",
+      "claim": "The number of SCs and Pax7 levels was increased after injury, restoring them back to control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the number of SCs and Pax7 levels was increased after injury; restoring them back to control levels (Figure 5H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through analysis of regenerated muscle in Figure 5H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "4b891972-2d97-410c-a26b-c9f69830f870",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C82",
+      "claim": "This demonstrates a level of plasticity and bidirectional flow of SCs along the continuum to allow the reequilibrium of metastable states after tissue repair is complete.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates a level of plasticity and bidirectional flow of SCs along the continuum to allow the reequilibrium of metastable states after tissue repair is complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the restoration of SC states after injury.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "c796e82e-5461-4b2a-8cb5-8e4e1bc69e9e",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C83",
+      "claim": "The QSC pool is molecularly and phenotypically heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Through single-cell RNA-sequencing (scRNA-seq) and transgenic reporter mice it is appreciated that the quiescent muscle stem cell (QSC) pool is molecularly and phenotypically heterogeneous (Dell'Orso et al., 2019, De Micheli et al., 2020; Chakkalakal et al., 2014; Rocheteau et al., 2012; Kuang et al., 2007; Kimmel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "c0a6605a-4efc-4946-953e-e0212c51336c",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C84",
+      "claim": "These different cell states enable SCs to exhibit functional heterogeneity in response to activation and injury cues.",
+      "claim_type": "EXPLICIT",
+      "source": "These different cell states enable SCs to exhibit functional heterogeneity in response to activation and injury cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known heterogeneity of QSCs.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "fe3d1267-bb10-48a6-8466-b98b657c10ff",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C85",
+      "claim": "SC quiescence is actively maintained by paracrine-acting cues from the muscle fiber, serving as a niche cell.",
+      "claim_type": "EXPLICIT",
+      "source": "SC quiescence is actively maintained by paracrine-acting cues from the muscle fiber, serving as a niche cell (Bischoff, 1990; Goel et al., 2017; Eliazer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "09a8c2ce-0036-4883-859f-3ce89f04a6a4",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C86",
+      "claim": "Each muscle fiber is a multinucleated syncytium that exhibits transcriptional diversity across the myonuclei to provide spatial control for specialized functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to niche cells across many SC compartments, each muscle fiber is a multinucleated syncytium, that exhibits transcriptional diversity across the myonuclei to provide spatial control for specialized functions (Kim et al., 2020; Petrany et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent snRNA-seq studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "be441307-0bbc-44ad-9e03-10b0522e582c",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C87",
+      "claim": "Pax7 is a SC identity marker.",
+      "claim_type": "EXPLICIT",
+      "source": "We stained freshly isolated single muscle fibers from adult mice, with the SC identify marker, Pax7 (Sambasivan et al., 2011; von Maltzahn et al., 2013; Lepper et al., 2011) and Ddx6 (p54/RCK), an RNA helicase found enriched in P-bodies and stress granules (Buchan and Parker, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "fb03ff95-1527-4ebb-83f5-33428e427ec1",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C88",
+      "claim": "Ddx6 is an RNA helicase found enriched in P-bodies and stress granules.",
+      "claim_type": "EXPLICIT",
+      "source": "We stained freshly isolated single muscle fibers from adult mice, with the SC identify marker, Pax7 (Sambasivan et al., 2011; von Maltzahn et al., 2013; Lepper et al., 2011) and Ddx6 (p54/RCK), an RNA helicase found enriched in P-bodies and stress granules (Buchan and Parker, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "a0ed161f-02ab-4975-923e-9f84ded22da9",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C89",
+      "claim": "Subsets of the SC pool are endowed with self-renewal potential and others are restricted to differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsets of the SC pool are endowed with self-renewal potential and others are restricted to differentiation (Rocheteau et al., 2012; Chakkalakal et al., 2014; Kuang et al., 2007; Scaramozza et al., 2019; Zammit et al., 2004; Olguin and Olwin, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "028f3a95-491b-4924-92da-b5c0562cae79",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C90",
+      "claim": "This is consistent with a unidirectional and hierarchical relationship between SCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a unidirectional and hierarchical relationship between SCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "cd96e767-f69a-4673-b8a6-387c4a5f1ec8",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C91",
+      "claim": "Intrinsic and extrinsic cues regulate cell fate decisions of activated SCs to self-renew or differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsic and extrinsic cues regulate cell fate decisions of activated SCs to self-renew or differentiate (Dumont et al., 2015; Kuang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "11e02958-17f0-4fab-8afd-5c1943e91d93",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C92",
+      "claim": "Due to low muscle tissue turnover, SCs exist predominantly in a quiescent state for the majority of adult life.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to low muscle tissue turnover, SCs exist predominantly in a quiescent state for the majority of adult life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about muscle stem cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "a149aae8-5fc2-4fe8-bb29-b6886c48495f",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C93",
+      "claim": "snRNA sequencing has uncovered substantial transcriptional diversity across muscle fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Single nucleus RNA sequencing has uncovered substantial transcriptional diversity across muscle fibers (Kim et al., 2020; Petrany et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "d37aa70e-9211-45d2-acf5-a1c15fab0e1b",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C94",
+      "claim": "Dll4 activity is regulated post-translationally.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Dll4 activity is regulated post-translationally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discussion of Mib1's role in activating Dll4.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "515d73b2-1f5f-4237-bbe7-db7b9b2b5101",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C95",
+      "claim": "The transcripts of Dll4 are uniformly expressed along the muscle fiber and the protein expression is heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Although snRNA sequencing shows transcriptional heterogeneity within the myonuclei of single muscle fibers (Kim et al., 2020; Petrany et al., 2020), we show that the transcripts of Dll4 are uniformly expressed along the muscle fiber and the protein expression is heterogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through comparison of RNAscope and immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "891fd29e-32fd-4012-b78f-8609fe29b47f",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C96",
+      "claim": "The varied expression of Dll4 is established by the E3 ligase, Mib1 that adds ubiquitin groups to Dll4 and activates them by a process of endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The varied expression of Dll4 is established by the E3 ligase, Mib1 that adds ubiquitin groups to Dll4 and activates them by a process of endocytosis (Koo et al., 2005; Koo, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature and the current findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "93ba1faf-793c-4036-9e6f-7a15a29ed60a",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C97",
+      "claim": "Mib1 is essential in postnatal developing muscle to convert proliferating SCs into a quiescent state.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that Mib1 is essential in postnatal developing muscle to convert proliferating SCs into a quiescent state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "8d72a56e-e1d3-4200-8ede-e6c83a891e85",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C98",
+      "claim": "Sex hormones activate Notch signaling pathway during puberty, thereby driving SCs into quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Sex hormones activate Notch signaling pathway during puberty, thereby driving SCs into quiescence (Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "2ddc7183-8e4e-409b-82d8-a08b89f3221e",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C99",
+      "claim": "In adult muscle fibers, Mib1 regulates the spatial expression and levels of Dll4, and is required to maintain a gradient of commitment states within the QSC pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show a different function of Mib1 in adult muscle under homeostatic conditions. In adult muscle fibers, Mib1 regulates the spatial expression and levels of Dll4, and is required to maintain a gradient of commitment states within the QSC pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "6984aae3-33f6-427e-b14c-a4514769d09d",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C101",
+      "claim": "Disruption of Dll4 and Mib1 levels in the muscle fiber repositions the SCs along the continuum, biasing cell fate outcomes of the whole population.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that SCs sit along a continuum dictated by the levels of fiber-derived Dll4. Disruption of Dll4 and Mib1 levels in the muscle fiber repositions the SCs along the continuum, biasing cell fate outcomes of the whole population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual model based on the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "ffc0bafc-4785-4c36-8829-937d1db3921e",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C102",
+      "claim": "Notch signaling directly regulates differentiation potential of a QSC rather than direct regulation of the quiescent state.",
+      "claim_type": "EXPLICIT",
+      "source": "These data also raise the possibility that Notch signaling directly regulates differentiation potential of a QSC rather than direct regulation of the quiescent state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings and prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "b2338b35-530b-4419-b213-2a85661e0284",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C103",
+      "claim": "In the presence of extrinsic cues that drive cell cycle exit (quiescence or differentiation) cells will be fated to quiescence (self-renewal) or differentiation based on location along a continuum.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that in the presence of extrinsic cues that drive cell cycle exit (quiescence or differentiation) cells will be fated to quiescence (self-renewal) or differentiation based on location along a continuum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual model proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "0e7801e9-afae-43a0-89f7-13958bf6996f",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "claim_id": "C104",
+      "claim": "Notch signaling maintains cells in metastable states competent for a return to quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Notch signaling maintains cells in metastable states competent for a return to quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual conclusion based on the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acf0c336-b6ee-4306-b29d-19d036b5127e",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The QSC pool exists as a continuum of molecular states at tissue homeostasis, characterized by broad ranges of Pax7 and Ddx6 expression that positively correlate with each other and predict functional fate bias toward proliferation and differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 collectively demonstrate through density maps, correlation analysis (R\u00b2=0.4046), and functional assays that QSCs exist in a continuum of states. The data show Pax7high cells are more dormant while Pax7low cells are primed for activation, with Pax7medium cells showing intermediate phenotypes, providing strong converging evidence for the continuum model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "23c6974d-52c7-40e5-892e-292f6d5b6933",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Notch activity levels exist on a continuum across the SC pool and positively correlate with Pax7 expression levels, suggesting Notch signaling may regulate the diversity of QSC states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 establish that Notch signaling is active in QSCs (prior literature) and demonstrate through CBF1-GFP reporter analysis a positive correlation (R\u00b2=0.5095) between Notch activity and Pax7 levels. This provides strong evidence linking Notch signaling to the QSC continuum, though the mechanistic connection requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Dll4 protein is heterogeneously expressed along muscle fibers in a spatially variable pattern that correlates with the amount of Dll4 captured by adjacent SCs and their Pax7 expression levels, while Dll4 transcript distribution does not correlate with SC marker expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C35 provide comprehensive evidence through microarray, immunofluorescence, RNAscope, and quantitative analysis showing: (1) Dll4 protein forms heterogeneous clusters along fibers (R\u00b2=0.6271 correlation with SC-bound Dll4), (2) SC-bound Dll4 correlates with Pax7 (R\u00b2=0.5887), (3) Dll4 transcript distribution does not correlate with Pax7 (R\u00b2=0.0304), and (4) Dll4 distribution is fiber-autonomous and not linked to anatomical landmarks. This demonstrates post-translational regulation of Dll4 heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "4dbd8741-eb46-45d5-94c7-9b1dcb4cd694",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Niche-specific deletion of Dll4 from muscle fibers decreases Dll4 abundance, reduces Pax7 and Ddx6 expression in SCs, decreases QSC diversity (reduced variance), causes 50% SC loss, and reduces Notch reporter activity by 95%, while SC-specific Dll4 deletion has no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C45 demonstrate through genetic deletion experiments (MF-Dll4fl/fl vs SC-Dll4fl/fl) that fiber-derived Dll4 is the major source of SC-bound Dll4 and is required to maintain QSC diversity. The data show decreased Pax7/Ddx6 levels, reduced variance in density maps, 50% SC loss, and 95% reduction in Notch activity, while SC-specific deletion has no effect. This provides strong evidence for the niche-specific role of Dll4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "eaca3acc-17f3-4ce6-9d6a-3ce15f6c3bf3",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dose-dependent reduction of Dll4 in muscle fibers shifts the QSC continuum toward lower Pax7 levels and more committed states without changing SC numbers, demonstrating that heterogeneous Dll4 levels maintain a distribution of metastable states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 and C78-C79 demonstrate through low-dose tamoxifen experiments that partial Dll4 reduction redistributes SCs along the continuum toward commitment (decreased Pax7, increased Myod/Myog) without SC loss, while complete deletion causes both redistribution and SC loss. This dose-dependent effect provides strong evidence that Dll4 levels control metastable state distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "b08cd001-7523-481b-9088-fd9d32132bab",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SCs on Dll4-depleted niches enter cell cycle faster and show increased Myogenin expression, indicating a shift toward more proliferative and differentiation-primed states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 and C41 show through EdU incorporation and Myogenin staining that SCs on Dll4-depleted fibers enter cell cycle faster and have increased Myogenin+ cells at 48hr, consistent with qRT-PCR showing increased Myod and Myog transcripts. This provides converging evidence for functional consequences of the continuum shift.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "4d2f3e40-3e6b-4920-9f69-53e39a0f8aa1",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fourteen and forty days after injury, muscle fiber size in MF-Dll4fl/fl muscle is significantly smaller than controls, indicating impaired differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 demonstrate through cross-sectional area measurements that Dll4 depletion from the niche causes persistent regeneration defects at both 14 and 40 days post-injury. The data show significantly smaller fiber sizes, consistent with the proposed shift toward premature differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "913c1c66-19ac-45be-87d1-bb88d43086ec",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "After injury in Dll4-depleted niches, wildtype SCs restore normal Pax7 levels, variance, and SC numbers, demonstrating bidirectional plasticity along the SC continuum during regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52, C7, C81-C82 show through density map analysis and quantification that after injury, SCs in Dll4-depleted niches (which had low Pax7 levels) restore normal Pax7 distribution and SC numbers. This demonstrates unexpected plasticity and bidirectionality, as SCs with low Pax7 can produce SCs with high Pax7 when the niche is reformed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "14ee8c1d-285e-4e75-a507-32adb298b6cf",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mib1 is an E3 ubiquitin ligase that activates Notch ligands, and Mib1 expression on muscle fibers positively correlates with Pax7 intensity in adjacent SCs (R\u00b2=0.5761).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 establish through prior literature that Mib1 activates Notch ligands by ubiquitination and demonstrate through immunofluorescence a positive correlation between fiber Mib1 and SC Pax7 levels. This provides evidence linking Mib1 to the regulation of SC diversity, though the mechanism requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "5627f712-3e45-432a-b022-0999e97ec797",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mib1 deletion from muscle fibers reduces Mib1 transcripts, causes loss of Dll4 clusters, and reduces Dll4 intensity, demonstrating that Mib1 directs the activation and heterogeneous patterning of Dll4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 and C6 show through qRT-PCR and immunofluorescence that Mib1 deletion reduces Mib1 expression and causes loss of Dll4 clusters with reduced Dll4 intensity. This provides strong evidence that Mib1 controls Dll4 activation and spatial patterning, establishing the post-translational mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "61c50f0f-177b-48f3-8cf0-d139b8dd5305",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mib1 deletion from the niche decreases Pax7 levels, reduces QSC diversity, decreases SC numbers, upregulates Myog, and causes SCs to proliferate faster and differentiate more rapidly in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 demonstrate through quantification, density maps, qRT-PCR, and in vitro assays that Mib1 deletion phenocopies Dll4 deletion effects: decreased Pax7, reduced variance, SC loss, increased Myog, and faster proliferation/differentiation. This provides strong evidence that Mib1 acts through Dll4 to maintain QSC diversity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "49024575-0661-4d82-a4be-86d02d91eeb9",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mib1 deletion causes smaller regenerating muscle fibers but normal SC numbers after injury, mimicking Dll4 deletion phenotype and demonstrating that niche-derived Mib1 maintains the continuum of QSC states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 show through cross-sectional area measurements and SC quantification that Mib1 deletion causes regeneration defects similar to Dll4 deletion (smaller fibers, normal SC numbers post-injury). This provides strong evidence that Mib1 and Dll4 function in the same pathway to maintain QSC diversity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "1c309926-2bfb-4c03-b3bb-92dcd6de548b",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The multinucleated muscle fiber maintains a continuum of metastable QSC states through heterogeneous patterning of Mib1 and activation of Dll4, with Dll4 acting as a rheostat that places cells along a fate-biased continuum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C8, C69, C3, C101, and C104 represent the main conclusions synthesizing all findings. The evidence from Dll4 and Mib1 deletion experiments, correlation analyses, dose-response studies, and regeneration experiments collectively support this model. The post-translational mechanism (Mib1\u2192Dll4) controlling ligand heterogeneity to maintain SC diversity is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "b85a1aa0-5afe-4c09-9355-a3863f749d86",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Deletion of Mib1 or Dll4 from fibers causes 50% SC loss, while Rbpj deletion from SCs causes >95% loss, suggesting Rbpj may have targets beyond Notch signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C72 compare the current findings to prior literature, noting a quantitative difference in SC loss between niche-specific Dll4/Mib1 deletion (50%) and SC-specific Rbpj deletion (>95%). The speculation that Rbpj has non-Notch targets (C72) is reasonable but lacks direct evidence. Alternative explanations (e.g., redundant ligands, incomplete deletion, timing differences) are not fully explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "05d685d9-b587-4654-9647-e708b2f4cd5d",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Notch signaling may directly regulate differentiation potential rather than quiescence per se, with cells fated to quiescence or differentiation based on their position along the continuum in the presence of cell cycle exit cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74 and C102-C103 propose a conceptual model based on prior literature and current findings. While the data showing increased Myog expression and faster differentiation after Dll4/Mib1 loss support this model, the distinction between regulating 'differentiation potential' versus 'quiescence' is not directly tested. This represents an interesting hypothesis requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "bd132273-3773-420b-8738-f1b282258be7",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work suggests Dll1 from differentiating cells and Dll4 from other sources (endothelial cells, 3T3 cells) can regulate SC self-renewal through lateral inhibition or co-culture systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 accurately summarize prior literature on Dll1 and Dll4 roles in SC regulation. These are well-supported by the cited references and provide important context for the current findings, though they represent prior work rather than new results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "621c8bff-c08b-4a26-89c2-5c9e5752eb1d",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Dll4 transcripts are uniformly expressed along muscle fibers while protein expression is heterogeneous, with the varied protein expression established by Mib1-mediated ubiquitination and endocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 and C94 demonstrate through RNAscope and immunofluorescence that Dll4 shows uniform transcript but heterogeneous protein distribution, establishing post-translational regulation. The mechanism (Mib1-mediated ubiquitination/endocytosis) is supported by prior literature and the current Mib1 deletion experiments showing loss of Dll4 clusters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "8d23faed-9276-4d45-9f18-b8c9cb4b6f3a",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In adult muscle, Mib1 regulates spatial expression and levels of Dll4 to maintain a gradient of commitment states, representing a different function from its developmental role in converting proliferating SCs to quiescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99, C97-C98 distinguish the adult homeostatic function of Mib1 (maintaining QSC diversity) from its developmental function (inducing quiescence). This is supported by the current data showing Mib1 controls Dll4 heterogeneity in adults, though the developmental context is from prior literature. The distinction is conceptually important and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "a3feb543-c1e1-448f-ae42-db011bbf928b",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The QSC pool is heterogeneous, characterized by transcription factor expression, and exhibits functional heterogeneity in response to activation cues, with the multinucleated muscle fiber serving as a niche cell that maintains quiescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C83-C86, and C2 establish the background context through prior literature. These are well-supported by multiple citations and represent established knowledge in the field. They provide essential context for understanding the significance of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "61016efb-0d95-48cc-8173-0286b107a2f7",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Subsets of SCs have different self-renewal and differentiation potentials, consistent with a hierarchical relationship, with intrinsic and extrinsic cues regulating fate decisions while SCs remain predominantly quiescent during adult life.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 summarize established knowledge from prior literature about SC heterogeneity and fate regulation. These are well-supported by citations and provide important background, though they represent prior work rather than new findings. The current study challenges the strictly hierarchical model by demonstrating bidirectionality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "3fd57596-b2e2-4dd0-9c70-98c27226357b",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Pax7 is a SC identity marker and Ddx6 is an RNA helicase enriched in P-bodies and stress granules, both expressed in QSCs and decreasing during activation and commitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 and C9 establish the molecular markers used in the study through prior literature. These are well-supported by citations and represent established knowledge about these proteins. The choice of these markers for analyzing the QSC continuum is well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "255986e8-79b1-4af6-ba25-c618b45ab843",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Single nucleus RNA sequencing has uncovered substantial transcriptional diversity across muscle fibers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 accurately summarizes recent snRNA-seq findings from cited literature. This provides important context for understanding that muscle fibers are transcriptionally heterogeneous, which makes the finding of uniform Dll4 transcript but heterogeneous protein distribution particularly significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    },
+    {
+      "id": "352168cd-de59-4a0b-99a8-59d1f44a62da",
+      "content_id": "cd1c5e72-12e2-4658-a067-f24ca9cb5eff",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Prior work demonstrated that SCs with low levels of Pax7 are less competent for self-renewal in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 accurately cites prior literature establishing that Pax7 levels correlate with self-renewal capacity. This provides important context for interpreting the unexpected finding that low Pax7 SCs can restore high Pax7 levels after injury, demonstrating greater plasticity than previously appreciated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:08:39.074489Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8677e146-3256-4268-b043-c8d5323b03a4",
+      "result_id": "acf0c336-b6ee-4306-b29d-19d036b5127e"
+    },
+    {
+      "claim_id": "c0eb133a-cd30-4ff9-bd5d-ef9ef8c1e67e",
+      "result_id": "acf0c336-b6ee-4306-b29d-19d036b5127e"
+    },
+    {
+      "claim_id": "79a846eb-368e-46b5-88ed-78e557f8c714",
+      "result_id": "acf0c336-b6ee-4306-b29d-19d036b5127e"
+    },
+    {
+      "claim_id": "b5e4ac3a-b34b-4699-99d9-bbeb3ad437d3",
+      "result_id": "acf0c336-b6ee-4306-b29d-19d036b5127e"
+    },
+    {
+      "claim_id": "c3928d8f-50a2-4950-9d1d-ad38ae6f3663",
+      "result_id": "acf0c336-b6ee-4306-b29d-19d036b5127e"
+    },
+    {
+      "claim_id": "2c01ce18-43fd-417f-bdcb-83edb4778ea5",
+      "result_id": "acf0c336-b6ee-4306-b29d-19d036b5127e"
+    },
+    {
+      "claim_id": "2c702224-a73c-4237-ba91-9d3eb17cb5b1",
+      "result_id": "23c6974d-52c7-40e5-892e-292f6d5b6933"
+    },
+    {
+      "claim_id": "8922c99a-8c31-4d30-9840-ee1c590f7c56",
+      "result_id": "23c6974d-52c7-40e5-892e-292f6d5b6933"
+    },
+    {
+      "claim_id": "a1cf5f93-6d38-437d-85a3-054c37d5111c",
+      "result_id": "23c6974d-52c7-40e5-892e-292f6d5b6933"
+    },
+    {
+      "claim_id": "abc43979-3cca-4046-8f55-10a475063913",
+      "result_id": "23c6974d-52c7-40e5-892e-292f6d5b6933"
+    },
+    {
+      "claim_id": "34bda61b-db55-400b-9551-a97f4a727bef",
+      "result_id": "23c6974d-52c7-40e5-892e-292f6d5b6933"
+    },
+    {
+      "claim_id": "7b9194f6-8289-4ee4-9453-a5f6dc195bea",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "40d9c642-6ae9-4f19-91ca-b4cd5dac1049",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "3b5619e8-0966-45a8-affb-909d0ee25b6c",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "368d39e5-ae4f-4071-9473-ea7f3c8dd7c7",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "bdf15f47-e14d-42cd-b32a-24f442493149",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "7e8ccf09-eef3-462b-a338-295b77b11e64",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "7d1409b6-fb96-42b6-baab-5809255b75f5",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "193c205a-26b8-4670-a17e-9faabbf61830",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "017385e5-9760-4bca-80e4-615ee101b11e",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "0c039474-665b-4df8-b4fe-7fbecf69a103",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "a61f0599-402e-4b85-9eb1-c887f425b35c",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "37cfb8cc-b9c6-4d09-8e6d-4d70fddbaa4a",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "d1350c65-0f3f-4cb3-9b38-d9d5ed57d7c5",
+      "result_id": "7e2da43f-2349-4e8f-8811-c7e69f4809d1"
+    },
+    {
+      "claim_id": "1770c9a7-a8f2-4e28-960f-79c9026e0d9a",
+      "result_id": "4dbd8741-eb46-45d5-94c7-9b1dcb4cd694"
+    },
+    {
+      "claim_id": "7f2c44c2-af54-4272-82b3-3d2ccb51517e",
+      "result_id": "4dbd8741-eb46-45d5-94c7-9b1dcb4cd694"
+    },
+    {
+      "claim_id": "3ef0190e-5607-43a4-aca5-584055289195",
+      "result_id": "4dbd8741-eb46-45d5-94c7-9b1dcb4cd694"
+    },
+    {
+      "claim_id": "0bd60ed1-cee5-496d-99ef-3cf05350b365",
+      "result_id": "4dbd8741-eb46-45d5-94c7-9b1dcb4cd694"
+    },
+    {
+      "claim_id": "af69363f-d113-434a-8260-f83064deeec3",
+      "result_id": "4dbd8741-eb46-45d5-94c7-9b1dcb4cd694"
+    },
+    {
+      "claim_id": "86e818e9-bcea-47a4-bb4e-5aed456f1e90",
+      "result_id": "4dbd8741-eb46-45d5-94c7-9b1dcb4cd694"
+    },
+    {
+      "claim_id": "61431a66-1963-46b9-ac73-edf423acfa72",
+      "result_id": "4dbd8741-eb46-45d5-94c7-9b1dcb4cd694"
+    },
+    {
+      "claim_id": "1679cb79-a39b-4153-b4e0-9f5acc99c6db",
+      "result_id": "eaca3acc-17f3-4ce6-9d6a-3ce15f6c3bf3"
+    },
+    {
+      "claim_id": "f0bf0c17-80d0-49a4-b0fd-41aa55880201",
+      "result_id": "eaca3acc-17f3-4ce6-9d6a-3ce15f6c3bf3"
+    },
+    {
+      "claim_id": "1284b89b-b743-4191-86c3-870d41f89852",
+      "result_id": "eaca3acc-17f3-4ce6-9d6a-3ce15f6c3bf3"
+    },
+    {
+      "claim_id": "80b76061-71c5-47e8-8570-c290075e87b1",
+      "result_id": "eaca3acc-17f3-4ce6-9d6a-3ce15f6c3bf3"
+    },
+    {
+      "claim_id": "f01e37ff-e17f-4c35-9c17-eb7dcf709633",
+      "result_id": "eaca3acc-17f3-4ce6-9d6a-3ce15f6c3bf3"
+    },
+    {
+      "claim_id": "737947e2-8268-4d23-a75a-ed64e909f390",
+      "result_id": "b08cd001-7523-481b-9088-fd9d32132bab"
+    },
+    {
+      "claim_id": "d422f5bc-8cfa-4545-824a-bf2901410cf4",
+      "result_id": "b08cd001-7523-481b-9088-fd9d32132bab"
+    },
+    {
+      "claim_id": "1679cb79-a39b-4153-b4e0-9f5acc99c6db",
+      "result_id": "b08cd001-7523-481b-9088-fd9d32132bab"
+    },
+    {
+      "claim_id": "2f273b81-414d-4462-89ff-122ae9b67f00",
+      "result_id": "4d2f3e40-3e6b-4920-9f69-53e39a0f8aa1"
+    },
+    {
+      "claim_id": "e7342384-f341-4f6b-a795-ca813ef20072",
+      "result_id": "4d2f3e40-3e6b-4920-9f69-53e39a0f8aa1"
+    },
+    {
+      "claim_id": "bf7f9f57-164b-481b-8859-c780402e96f1",
+      "result_id": "913c1c66-19ac-45be-87d1-bb88d43086ec"
+    },
+    {
+      "claim_id": "0be1be18-44a3-44f7-a756-58326da95e4b",
+      "result_id": "913c1c66-19ac-45be-87d1-bb88d43086ec"
+    },
+    {
+      "claim_id": "8e07a792-4ac0-404f-a0ec-52418ce82a80",
+      "result_id": "913c1c66-19ac-45be-87d1-bb88d43086ec"
+    },
+    {
+      "claim_id": "0a45bb0d-ef5c-43c2-adf4-d39c53791020",
+      "result_id": "913c1c66-19ac-45be-87d1-bb88d43086ec"
+    },
+    {
+      "claim_id": "58026e76-18d2-44ec-bb1e-6e1b6727e2a1",
+      "result_id": "913c1c66-19ac-45be-87d1-bb88d43086ec"
+    },
+    {
+      "claim_id": "4b891972-2d97-410c-a26b-c9f69830f870",
+      "result_id": "913c1c66-19ac-45be-87d1-bb88d43086ec"
+    },
+    {
+      "claim_id": "cc024ecd-a428-43af-ad58-18d8c16573b7",
+      "result_id": "14ee8c1d-285e-4e75-a507-32adb298b6cf"
+    },
+    {
+      "claim_id": "7e37340d-619d-446b-a2b5-6b13e69934f4",
+      "result_id": "14ee8c1d-285e-4e75-a507-32adb298b6cf"
+    },
+    {
+      "claim_id": "0070506b-58f2-4c31-a513-1e0560e3d541",
+      "result_id": "14ee8c1d-285e-4e75-a507-32adb298b6cf"
+    },
+    {
+      "claim_id": "8077fa12-50fa-48f9-81f7-a2e8700e634d",
+      "result_id": "14ee8c1d-285e-4e75-a507-32adb298b6cf"
+    },
+    {
+      "claim_id": "b55d6170-f8c2-417b-94ee-2bec9a0ba148",
+      "result_id": "14ee8c1d-285e-4e75-a507-32adb298b6cf"
+    },
+    {
+      "claim_id": "d33ea035-675e-42aa-a8e6-a2b53437fec6",
+      "result_id": "5627f712-3e45-432a-b022-0999e97ec797"
+    },
+    {
+      "claim_id": "8d10f0bb-fe29-4db9-904a-6ced562cd387",
+      "result_id": "5627f712-3e45-432a-b022-0999e97ec797"
+    },
+    {
+      "claim_id": "362dba63-1a12-4dd5-afb6-f06aded2c47f",
+      "result_id": "5627f712-3e45-432a-b022-0999e97ec797"
+    },
+    {
+      "claim_id": "ec537d8f-c784-45e7-a317-d81e2f5860e7",
+      "result_id": "5627f712-3e45-432a-b022-0999e97ec797"
+    },
+    {
+      "claim_id": "62e6dd86-be2b-489c-b2d4-36807c14f212",
+      "result_id": "61c50f0f-177b-48f3-8cf0-d139b8dd5305"
+    },
+    {
+      "claim_id": "4acc2bc0-c878-48af-9521-2979c4d66376",
+      "result_id": "61c50f0f-177b-48f3-8cf0-d139b8dd5305"
+    },
+    {
+      "claim_id": "4c560c92-4b4d-432e-a1c6-55601578fc92",
+      "result_id": "61c50f0f-177b-48f3-8cf0-d139b8dd5305"
+    },
+    {
+      "claim_id": "3d0042bf-a4fb-44b1-9f97-7c98563b6dd0",
+      "result_id": "49024575-0661-4d82-a4be-86d02d91eeb9"
+    },
+    {
+      "claim_id": "d6e279a5-ee84-4044-a45f-22a22cfab4ca",
+      "result_id": "49024575-0661-4d82-a4be-86d02d91eeb9"
+    },
+    {
+      "claim_id": "dbce2c00-b9cf-404a-bf01-0acf75e6255e",
+      "result_id": "49024575-0661-4d82-a4be-86d02d91eeb9"
+    },
+    {
+      "claim_id": "c838ba4b-1474-4928-b715-f672d136334c",
+      "result_id": "49024575-0661-4d82-a4be-86d02d91eeb9"
+    },
+    {
+      "claim_id": "6b71dd74-f43e-4549-b547-8b8dcbe2a6cf",
+      "result_id": "1c309926-2bfb-4c03-b3bb-92dcd6de548b"
+    },
+    {
+      "claim_id": "0b2d517f-9002-4fb7-a816-2864fbc510b0",
+      "result_id": "1c309926-2bfb-4c03-b3bb-92dcd6de548b"
+    },
+    {
+      "claim_id": "8c30f2c1-672c-46bf-bc6c-89a118ea3ce2",
+      "result_id": "1c309926-2bfb-4c03-b3bb-92dcd6de548b"
+    },
+    {
+      "claim_id": "dd43bcd0-77aa-4cbd-a924-c5483b4194ce",
+      "result_id": "1c309926-2bfb-4c03-b3bb-92dcd6de548b"
+    },
+    {
+      "claim_id": "6984aae3-33f6-427e-b14c-a4514769d09d",
+      "result_id": "1c309926-2bfb-4c03-b3bb-92dcd6de548b"
+    },
+    {
+      "claim_id": "0e7801e9-afae-43a0-89f7-13958bf6996f",
+      "result_id": "1c309926-2bfb-4c03-b3bb-92dcd6de548b"
+    },
+    {
+      "claim_id": "d976347a-adcb-4747-bafc-5e8532d0f063",
+      "result_id": "b85a1aa0-5afe-4c09-9355-a3863f749d86"
+    },
+    {
+      "claim_id": "dbdf66ef-c433-488f-b8cb-dc477d8c213f",
+      "result_id": "b85a1aa0-5afe-4c09-9355-a3863f749d86"
+    },
+    {
+      "claim_id": "0a5a3c55-b4c3-43af-8c4d-606526f3295c",
+      "result_id": "b85a1aa0-5afe-4c09-9355-a3863f749d86"
+    },
+    {
+      "claim_id": "cf7fa026-2cf5-4674-a9f8-9dce89f7496d",
+      "result_id": "05d685d9-b587-4654-9647-e708b2f4cd5d"
+    },
+    {
+      "claim_id": "0ea33841-bbfc-46c0-844c-47df722bcb66",
+      "result_id": "05d685d9-b587-4654-9647-e708b2f4cd5d"
+    },
+    {
+      "claim_id": "ffc0bafc-4785-4c36-8829-937d1db3921e",
+      "result_id": "05d685d9-b587-4654-9647-e708b2f4cd5d"
+    },
+    {
+      "claim_id": "b2338b35-530b-4419-b213-2a85661e0284",
+      "result_id": "05d685d9-b587-4654-9647-e708b2f4cd5d"
+    },
+    {
+      "claim_id": "658d9875-b63f-4502-b43b-e231fb9edd5d",
+      "result_id": "bd132273-3773-420b-8738-f1b282258be7"
+    },
+    {
+      "claim_id": "ffc2a7b6-ad3c-4828-95d1-091337eff2db",
+      "result_id": "bd132273-3773-420b-8738-f1b282258be7"
+    },
+    {
+      "claim_id": "83b69003-5d64-47f8-ae8f-d12959652ccf",
+      "result_id": "bd132273-3773-420b-8738-f1b282258be7"
+    },
+    {
+      "claim_id": "515d73b2-1f5f-4237-bbe7-db7b9b2b5101",
+      "result_id": "621c8bff-c08b-4a26-89c2-5c9e5752eb1d"
+    },
+    {
+      "claim_id": "891fd29e-32fd-4012-b78f-8609fe29b47f",
+      "result_id": "621c8bff-c08b-4a26-89c2-5c9e5752eb1d"
+    },
+    {
+      "claim_id": "d37aa70e-9211-45d2-acf5-a1c15fab0e1b",
+      "result_id": "621c8bff-c08b-4a26-89c2-5c9e5752eb1d"
+    },
+    {
+      "claim_id": "2ddc7183-8e4e-409b-82d8-a08b89f3221e",
+      "result_id": "8d23faed-9276-4d45-9f18-b8c9cb4b6f3a"
+    },
+    {
+      "claim_id": "93ba1faf-793c-4036-9e6f-7a15a29ed60a",
+      "result_id": "8d23faed-9276-4d45-9f18-b8c9cb4b6f3a"
+    },
+    {
+      "claim_id": "8d72a56e-e1d3-4200-8ede-e6c83a891e85",
+      "result_id": "8d23faed-9276-4d45-9f18-b8c9cb4b6f3a"
+    },
+    {
+      "claim_id": "94cd29d7-f90f-4ba1-af51-747b63929ac5",
+      "result_id": "a3feb543-c1e1-448f-ae42-db011bbf928b"
+    },
+    {
+      "claim_id": "c796e82e-5461-4b2a-8cb5-8e4e1bc69e9e",
+      "result_id": "a3feb543-c1e1-448f-ae42-db011bbf928b"
+    },
+    {
+      "claim_id": "c0a6605a-4efc-4946-953e-e0212c51336c",
+      "result_id": "a3feb543-c1e1-448f-ae42-db011bbf928b"
+    },
+    {
+      "claim_id": "fe3d1267-bb10-48a6-8466-b98b657c10ff",
+      "result_id": "a3feb543-c1e1-448f-ae42-db011bbf928b"
+    },
+    {
+      "claim_id": "09a8c2ce-0036-4883-859f-3ce89f04a6a4",
+      "result_id": "a3feb543-c1e1-448f-ae42-db011bbf928b"
+    },
+    {
+      "claim_id": "4c72e4de-1c39-44a0-9544-e918363ff203",
+      "result_id": "a3feb543-c1e1-448f-ae42-db011bbf928b"
+    },
+    {
+      "claim_id": "a0ed161f-02ab-4975-923e-9f84ded22da9",
+      "result_id": "61016efb-0d95-48cc-8173-0286b107a2f7"
+    },
+    {
+      "claim_id": "028f3a95-491b-4924-92da-b5c0562cae79",
+      "result_id": "61016efb-0d95-48cc-8173-0286b107a2f7"
+    },
+    {
+      "claim_id": "cd96e767-f69a-4673-b8a6-387c4a5f1ec8",
+      "result_id": "61016efb-0d95-48cc-8173-0286b107a2f7"
+    },
+    {
+      "claim_id": "11e02958-17f0-4fab-8afd-5c1943e91d93",
+      "result_id": "61016efb-0d95-48cc-8173-0286b107a2f7"
+    },
+    {
+      "claim_id": "be441307-0bbc-44ad-9e03-10b0522e582c",
+      "result_id": "3fd57596-b2e2-4dd0-9c70-98c27226357b"
+    },
+    {
+      "claim_id": "fb03ff95-1527-4ebb-83f5-33428e427ec1",
+      "result_id": "3fd57596-b2e2-4dd0-9c70-98c27226357b"
+    },
+    {
+      "claim_id": "0890a1d8-f43b-40ce-8761-0994454b0314",
+      "result_id": "3fd57596-b2e2-4dd0-9c70-98c27226357b"
+    },
+    {
+      "claim_id": "a149aae8-5fc2-4fe8-bb29-b6886c48495f",
+      "result_id": "255986e8-79b1-4af6-ba25-c618b45ab843"
+    },
+    {
+      "claim_id": "4b4e976d-297f-4dd7-b192-88cad8c73128",
+      "result_id": "352168cd-de59-4a0b-99a8-59d1f44a62da"
+    }
+  ],
+  "comparisons": []
+}

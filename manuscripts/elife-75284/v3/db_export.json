@@ -1,0 +1,1650 @@
+{
+  "submission": {
+    "id": "c2b6c90e-2c6f-47cb-b03b-24dc133d2a74",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:48:48.238981Z",
+    "updated_at": "2025-12-03T12:48:48.238981Z"
+  },
+  "content": [
+    {
+      "id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "submission_id": "c2b6c90e-2c6f-47cb-b03b-24dc133d2a74",
+      "content_type": "manuscript",
+      "content_text": "# Synchronization in renal microcirculation unveiled with high-resolution blood flow imaging\n\n## Authors\n\n- Dmitry Postnov<sup>1</sup> ([ORCID: 0000-0002-9708-8453](https://orcid.org/0000-0002-9708-8453)) \u2020\n- Donald J Marsh<sup>3</sup>\n- Will A Cupples<sup>4</sup>\n- Niels-Henrik Holstein-Rathlou<sup>2</sup>\n- Olga Sosnovtseva<sup>2</sup>\n\n### Affiliations\n\n1. Department of Clinical Medicine, Faculty of Health, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))\n2. Department of Biomedical Sciences, Faculty of Health and Medical Sciences, Copenhagen University Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n3. Division of Biology and Medicine, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))\n4. Department of Biomedical Physiology and Kinesiology, Simon Fraser University Burnaby Canada ([ROR:0213rcc28](https://ror.org/0213rcc28))\n\n\u2020 Corresponding author\n\n## Abstract\n\nInternephron interaction is fundamental for kidney function. Earlier studies have shown that nephrons signal to each other, synchronize over short distances, and potentially form large synchronized clusters. Such clusters would play an important role in renal autoregulation, but due to the technological limitations, their presence is yet to be confirmed. In the present study, we introduce an approach for high-resolution laser speckle imaging of renal blood flow and apply it to estimate the frequency and phase differences in rat kidney microcirculation under different conditions. The analysis unveiled the spatial and temporal evolution of synchronized blood flow clusters of various sizes, including the formation of large (>90 vessels) and long-lived clusters (>10 periods) locked at the frequency of the tubular glomerular feedback mechanism. Administration of vasoactive agents caused significant changes in the synchronization patterns and, thus, in nephrons\u2019 co-operative dynamics. Specifically, infusion of vasoconstrictor angiotensin II promoted stronger synchronization, while acetylcholine caused complete desynchronization. The results confirm the presence of the local synchronization in the renal microcirculatory blood flow and that it changes depending on the condition of the vascular network and the blood pressure, which will have further implications for the role of such synchronization in pathologies development.\n\n## Introduction\n\nThe kidney represents a unique demand-driven, interconnected resource distribution network that is responsible for body homeostasis maintenance over a broad range of conditions, including variations in blood pressure and fluid intake and loss. With blood serving as the resource, single-nephron autoregulation mechanisms provide and regulate the demand. Based on measurements of tubule pressure responses to step changes in arterial pressure (Young and Marsh, 1981), vascular transfer functions (Chon et al., 1993; Chon et al., 2005; Cupples and Loutzenhiser, 1998; Marmarelis et al., 1999; Sakai et al., 1986; Shi et al., 2006), and renal blood flow response to arterial pressure forcing (Holstein-Rathlou et al., 1991), two critical mechanisms in renal pressure autoregulation, the myogenic mechanism and tubuloglomerular feedback (TGF), have emerged as the critical components. Their actions combine to regulate blood flow, serving to maintain the delivery of water and solutes to various regions of the nephron at levels appropriate to their dynamic ranges. The two mechanisms operate at different time scales, generating spontaneous blood flow and pressure oscillations at different frequencies: 5\u201310 s (0.1\u20130.2 Hz) for the myogenic response and 30\u201350 s (0.02\u20130.033 Hz) for the TGF (Holstein-Rathlou and Marsh, 1989; Yip et al., 1993; Cupples and Loutzenhiser, 1998; Sosnovtseva et al., 2002; Just, 2007).\n\nNephrons, however, do not operate as stand-alone units. Within a single kidney, all nephrons are linked via the renal vascular tree, which provides connections of different proximities - from few hundred microns for neighboring nephrons separated only by their respective afferent arterioles to nephrons only connected at the level of the renal artery, which plays a role of a single-supply source for all the nephrons. Nephrons nested in such a network are bound to communicate and affect each other to some degree. In addition to interaction through the blood flow and pressure, nephrons were found to communicate via electrical signaling (Marsh et al., 2019; Marsh et al., 2009). Such interactions are proven to play a critical role in kidney function and can lead to complex co-operative dynamics and synchronization between nephrons. Adaptive synchronization across the renal microvascular network would increase the efficiency and dynamic range of autoregulation by engaging more preglomerular resistance (Marsh et al., 2019; Zehra et al., 2021), preventing transmission of high systemic pressure to the glomeruli, which could lead to progressive glomerular and vascular injury. In addition, long-distance synchronization would argue strongly that renal autoregulation is a distributed process that can ensure an optimized oxygenation-perfusion matching and adjust to various internal or environmental conditions (Sosnovtseva et al., 2007; Mitrou et al., 2015). On the other hand, large-scale in-phase synchronization might become a mechanism leading to glomerular injury as it would substantially increase local pressure variation (Postnov et al., 2012).\n\nMicropuncture experiments (Holstein-Rathlou, 1987; K\u00e4llskog and Marsh, 1990; Yip et al., 1992; Sosnovtseva et al., 2007) showed that neighboring nephrons (originating from a common artery) adjust their TGF-mediated tubular pressure oscillations to attain a synchronized regime. Although these experiments confirmed the existence of synchronization, only pairs or triplets of nephrons could be sampled at any one time. Assessment of co-operative efforts of a larger number of nephrons required a different approach and was made possible with laser speckle contrast imaging (LSCI) technology (Holstein-Rathlou et al., 2011; Mitrou et al., 2015; Scully et al., 2013). In LSCI, media with moving light scattering particles, e.g., red blood cells, are illuminated with a near-infrared laser. The backscattered light, recorded by a camera, forms an interference pattern, which appears more or less blurred depending on the speed of the particles. This pattern is then analysed to obtain qualitative maps of particle velocity and thus a blood flow estimate (Boas and Dunn, 2010; Briers et al., 2013). First applied by Holstein-Rathlou et al. to map TGF oscillations over a large field of view, this method was later used to explore periodic activity in the myogenic frequency band (Scully et al., 2013; Mitrou et al., 2015), analyse spatial correlations in the renal blood flow (Brazhe et al., 2014), and study intrarenal drug distribution (Postnov et al., 2015a, Postnov et al., 2017). Although these results encouraged the large-scale synchronization hypothesis, the method lacked resolution, both spatial and temporal, as well as signal-to-noise ratio, to confirm it convincingly.\n\nIn this paper, we further advance renal blood flow imaging methodology and confirm the presence of synchronized clusters spanning multiple nephrons for the first time at the level of individual arterioles and venules. Our LSCI setup and data processing approach allow imaging renal microcirculation at 0.8 \u03bcm per pixel spatial resolution and imaging frequency to 160 Hz for 1024 \u00d7 1024 pixels. We apply it to study the formation of synchronous blood flow clusters in rat kidney microcirculation under normal conditions and during the administration of vasoactive agents.\n\n## Results\n\n### Synchronization patterns\n\nAn example of a high-resolution blood flow map with segmented microcirculatory vessels is shown in Figure 1A. Figure 1B shows relative blood flow (RBF) dynamics of four vessels outlined in (A) with corresponding colors (red, green, orange, and black). From the corresponding dominant frequency and phase (Figure 1C and F), it can be seen that these vessels form two frequency-locked clusters (red-green and black-orange) that are synchronous most of the time. Moreover, there are long periods when these clusters synchronize, forming a larger cluster, interrupted with an asynchronous interval (from \u2248850 to \u22481050 s).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75284/elife-75284-fig1-v3.jpg)\n\n**Figure 1.:** (A) Normalized flow map with microcirculatory vessels. Yellow and blue colors correspond to high and low blood flow, respectively. (B) Relative blood flow (RBF) dynamics in four vessels, which are outlined in (A) with corresponding colors. (C) Dominant frequency in the tubuloglomerular feedback (TGF) band of the blood flow oscillations is shown in (B). (D) Phase value at the dominant frequency. One can see that there are two vessel pairs in which blood flow is synchronized for more than 90% of the time. Synchronization between the pairs is also well observed but breaks down when TGF activity change its frequency at 850\u20131050 s.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75284/elife-75284-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) and (B) mean blood flow index (BFI) maps obtained using the respective systems. The area of the white square shown in (A) corresponds to the entire field of view shown in (B). Resolutions of the respective images are 400 \u00b5m2/px (A) and 2.25 \u00b5m2/px (B). (C) BFI dynamics recorded from a single pixel (gray line), marked in red in (A), and averaged over 15 \u00d7 15 pixels neighborhood (orange line) as was done in previous study (Holstein-Rathlou et al., 2011). (D) BFI dynamics recorded with the new system from an area equivalent to the one used in (C) for respective traces. As can be seen, the improved spatial and temporal resolution allows recording BFI with less noise and better spatial localization, e.g., identifying blood flow belonging to a single microcirculatory vessel. For more details on the benefits of high-resolution imaging for identifying vessel-specific oscillations frequency and phase, see our recent study (Lee et al., 2022).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75284/elife-75284-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) BFI traces averaged across all segmented vessels for each animal in control during angiotensin II (AngII) and acetylcholine (ACh) infusions. Different shades of gray correspond to different animals. (B) BFI values averaged across time and animals: 2.4\u00b10.5e+04 in control, 2.0\u00b10.42e+0.4 during AngII infusion, and 3.0\u00b10.5e+0.4 during ACh infusion. (C) Relative BFI normalized by the respective control BFI. Respective values for AngII and ACh infusions are 0.827\u00b10.023 and 1.28\u00b10.13. N = 5 animals were used to create these graphs.\n\nWe generalized this approach to the full-field blood flow imaging of the kidney surface. To simplify the visualisation of frequencies and phases, we generate maps where colored circles represent the segmented vessels (outlined in magenta in Figure 1A), with the circle center located in the center of the mass of the vessel. The circle\u2019s color represents the peak TGF frequency observed in the corresponding vessel, while the size of the circles is identical and does not hold any information. Figure 2 shows examples of high (A), moderate (B), and low (C) instantaneous synchronization degree (see Methods, Eq. 1), with S = 0.97, 0.65, and 0.23, respectively. In the first case, flow in almost all of the identified vessels oscillates at the same TGF frequency, forming a cluster of >100 vessels within the field of view. This cluster is likely to be even larger since it can spread outside the view field and in-depth in the kidney cortex. In the case of moderate synchronization degree, several frequency clusters with \u2248 10\u201360 vessels can be identified, while for the low S, there are multiple groups of two to three vessels displaying the same frequency but no distinct pattern over the field of view. All three regimes were observed in the same animal during control, vasoconstricted (angiotensin II [AngII] infusion), and vasodilated (acetylcholine [ACh] infusion) conditions, respectively. Averaged over the whole observation period and all animals (N = 5, 20 min per condition), synchronization degree has moderate to high ($S\u00af=0.54\\pm0.09$) values during AngII infusion, low to moderate ($S\u00af=0.36\\pm0.1$) during ACh, and low to high in control ($S\u00af=0.45\\pm0.22$). The average TGF frequencies were measured to be $0.0271\\pm0.0059$ Hz in control, $0.0270\\pm0.0042$ during the AngII infusion, and $0.0256\\pm0.0079$ during the ACh infusion.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75284/elife-75284-fig2-v3.jpg)\n\n**Figure 2.:** Each circle location corresponds to a segmented vessel with color-coded frequency. Bottom panels show normalized blood flow in each segmented vessel over 5 min centered around the time corresponding to the frequency pattern snapshot. (A) High synchronization degree $S=0.97$ - large cluster covers the whole field of view. (B) Moderate synchronization degree $S=0.65$ - most of the vessels are split between two clusters. (C) Low synchronization degree $S=0.23$ - no clear clustering pattern, some vessels do not have pronounced tubuloglomerular feedback activity (frequency color-coded as black). All data were captured in the same animal but under different conditions: control (A), angiotensin II infusion (B), and acetylcholine infusion (C). Black-colored circles represent vessels where TGF activity was considered too weak (less than 10% prominence of the activity peak).\n\nTo visualize clustering tendencies, we calculate the probability of a randomly chosen vessel at any given moment of time to have the same dominant frequency as X% of the vessels in the field of view. From Figure 3, it can be seen that during AngII infusion, vessels are significantly more likely to be synchronized with 20\u201350% of the field of view than in control or during ACh infusion. In the latter condition, probability of a vessel being synchronized with less than 15% is significantly higher than during AngII infusion (p<0.05). Such behavior is observed both with no restriction on minimum synchronization duration (A) and when only frequency-locking for three TGF periods and longer is taken into account.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75284/elife-75284-fig3-v3.jpg)\n\n**Figure 3.:** (A) Any duration of frequency matching is considered, and (B) dominant frequency should match for at least three TGF periods. It can be seen that infusion of angiotensin II significantly (p<0.05) increases the prevalence of clusters covering 20\u201350% of the vessels - chances that a randomly chosen vessel belongs to such a cluster at any given moment are \u224850%, while for control and acetylcholine infusion they are \u224820%. N = 5 animals were used to create these graphs. Paired t-test was used to produce p-values. p-values smaller than 0.05 are considered to be significant and marked with \u2018*\u2019.\n\n### Phase waves and spatial localization\n\nAnother distinct feature that we have observed is that the phase of oscillations within a cluster is space-dependent - it is mostly the same for the closely positioned vessels and gradually changes with distance. Figure 4 illustrates how phase within clusters evolves in space and time, forming the phase waves. Note that both (A) and (B) panels are from the same animal as was shown in Figure 3 in control and vasoconstricted conditions, respectively, and that only vessels belonging to the largest cluster are shown.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75284/elife-75284-fig4-v3.jpg)\n\n**Figure 4.:** (A) and (B) show the spatio-temporal evolution of tubuloglomerular feedback activity phase in vessels that belong to the largest cluster observed during control and angiotensin II infusion. Both observations are from the same animal as shown in Figure 2A, B. Arrows indicate the wave direction.\n\nChange of the wave direction by \u224890\u00b0 in the same animal with constant vascular structure suggests different synchronization centers, where phase waves originate. Propagation speed is $\u22480.37$ and 0.30 mm/s for (A) and (B), respectively, and spatial period of the phase waves is \u2248 8.85 and 3.95 mm (respective phase difference $|\\delta|\u2248$ 0.71 and 1.59 rad was observed over 1 mm distance). The possibility of such phase waves was previously hinted at in our earlier LSCI study, where spatial correlations in renal blood flow were analyzed (Brazhe et al., 2014). See Figure 4\u2014videos 1\u20133 for more examples of phase waves dynamics.\n\nPhase difference distribution (Figure 5A), calculated over all of the frequency matching vessels in all animals, shows the prevalence of in-phase synchronization ($|\u0394|\\leq\\frac{\\pi}{12}$, rad). This result is in good agreement with experimental micropuncture observations, where it is explained by the presence of fast electrical coupling acting over short distances. In all conditions, the larger phase differences are less prevalent, with the anti-phase synchronization ($|\u0394|\\geq\\frac{11\u2062\\pi}{12}$, rad) observed over just 1% of the time in control and during ACh infusion. However, AngII infusion increases this number to 5%, showing a statistically significant difference with other conditions. Phase difference grows with distance, as can be seen from Figure 5B, reflecting the presence of phase waves. While change is relatively small in the control and vasodilated conditions (\u22480.3 and 0.25 rad/mm), it is strongly enhanced in the vasoconstricted condition, reaching, on average, \u22481 rad over 1 mm distance. As we showed with mathematical modeling (Postnov et al., 2012), such difference can be explained by strengthened hemodynamic coupling, which the increased vascular tone should cause.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75284/elife-75284-fig5-v3.jpg)\n\n**Figure 5.:** (A) Phase differences prevalence for synchronized vessels. (B) Phase differences distribution over the distance between vessels. (C) Synchronization duration normalized by the total observation time for different distances between vessels. N = 5 animals were used to create these graphs. Paired t-test was used to produce p-values. p-values smaller than 0.05 are considered to be significant and marked with \u2018*.\u2019 Values between 0.05 and 0.1 are shown as p<0.1, where relevant, to highlight a trend in the data.\n\nSince synchronization in renal blood flow is extended far beyond a pair of nephrons and is unlike synchronization in relatively homogeneous media, one would expect some space localization due to the topological features of the vascular network. Figure 5C illustrates how average synchronization duration changes with distance. It is clear that synchronization is stronger in the vasoconstricted condition, with average duration reaching \u224840\u00b113% of the observation time for neighboring vessels and gradually reducing to 24\u00b16% for vessels located at more than 1 mm distance. In control, synchronization duration varies greatly, but on average, it also reduces with distance, although at a slower rate than during AngII infusion\u2014from \u224830% to \u224821%. During the ACh infusion the synchronization duration is \u224815-13%, with only 2% reduction over 1mm of distance. Higher synchronization duration in control and during AngII infusion compared with ACh infusion suggests a long-distance nephron-to-nephron communication or a common driving force.\n\n## Discussion\n\nIn this study, we have designed a methodology for high-resolution blood flow imaging in renal microcirculation and applied it to study the synchronization of TGF oscillations in control, vasoconstricted (AngII infusion), and vasodilated (ACh infusion) conditions. Our data confirm that blood flow in renal microcirculation tends to demonstrate clustered, frequency-locked activity, with the clustering size and tendencies changing depending on the animal condition. Synchronization tends to be stronger, and cluster size is larger during AngII infusion, with synchronization degree $S\u00af=0.54\\pm0.09$ and average synchronization duration ranging from \u224840 \u00b1 13 to $24\\pm6%$ of the observed time depending on the distance between vessels. During the ACh infusion, on the contrary, synchronization seems to be disrupted, with ($S\u00af=0.36\\pm0.1$) and average synchronization duration $\u224815\\pm7-13\\pm7%$ of the observed time. Finally, in the normotensive condition, we observed mixed behavior with highly variable synchronization degree $S\u00af=0.45\\pm0.22$ and duration ranging from \u224830 \u00b1 27 to $21\\pm21%$. A possible explanation for the stronger synchronization during the AngII infusion will be a stronger hemodynamic coupling due to increased vascular resistance. It is also supported by the increased number of vessels synchronized in anti-phase during the infusion, which, as we predicted using mathematical modeling (Postnov et al., 2012), is a natural consequence of stronger hemodynamic coupling.\n\nWe also observed phase waves that travel over the TGF-frequency clustered vessels (Figures 4 and 5B). Interestingly, the direction of the phase waves appears to be not predetermined by the vascular structure - depending on the flow dynamics and other, yet unknown factors, it can change even within the same animal (an example is shown in Figure 4). Such behavior might be related to diffusive interaction between nephrons or the formation of synchronization centers (pacemakers) at different locations. The presence of phase waves supports the deterministic nature of synchronization rather than random entrainment at the same dominant TGF frequency. Similar effects are well studied in excitable media with diffusion interaction mechanisms such as brain (Dahlem et al., 2010; Shibata and Bures, 1972) and heart (Alonso et al., 2016) tissues. Such similarity might suggest the presence of a diffusive mechanism in the inter-nephron interaction or a long-distance fast electrical signaling, e.g., via conducted vasoreactivity. However, a detailed exploration of the topic would require additional experiments combining multi-scale blood flow and structural imaging methods.\n\nIn our experiments, we imaged 1.5 \u00d7 1.5 mm2 field of view in five animals with $94.8\\pm15.66$ individual segmented vessels on average, each of which is 1o\u201330 \u00b5m in diameter. While it provides an estimate of synchronization in the nephrons activity, direct translation from individual segmented vessels to nephrons is challenging and requires further exploration. Factors that are critical to consider are: (i) penetration depth of LSCI when applied to renal imaging, (ii) type of the vessels in the field of view, and (iii) topology of the nephro-vascular network. While in theory, LSCI can collect the blood flow signal from as deep as 300\u2013400 \u03bcm, in practice, visually resolvable signal typically comes from top 50 to 150 \u03bcm of the vascular structure (Davis et al., 2014; Zheng et al., 2021). Considering high vascular density close to the renal surface, it would mean that LSCI is likely limited to imaging vessels originating from \u224810000 nephrons in outer 30% of rat renal cortex (Letts et al., 2017), which would result in \u224840 nephrons in the 1.5 \u00d7 1.5 \u00b5m field of view. The larger number of segmented vessels can be explained by their mixed type - afferent and efferent arterioles as well as venules are likely to be segmented. Distinguishing vessel types in LSCI images will require further exploration and registration with high-resolution structural imaging. It, however, does not mean that the observed clusters were limited to, at the most, 40 nephrons. When considering renal vascular topology, it is to be expected that within the 1.5 \u00d7 1.5 \u00b5m field of view, we observe arterioles that arise from different non-terminal arteries (Marsh et al., 2017). Depending on the branching order, each of such arteries can branch into 10 to several hundreds of nephrons, but only a small number of these nephrons will have arterioles reaching close enough to the surface to be segmented from LSCI images. Thus, when a synchronous cluster is observed with LSCI, it is likely to extend several branching orders in depth and reach the size of hundreds and even thousands of nephrons.\n\nWhile the exact role of inter-nephron communication, co-operative dynamics, and synchronization in kidney-related pathology development is still unclear and requires further exploration, it is evidently altered by the blood pressure and vascular tone. Strong local coupling and in-phase synchronization, while being not evident at the renal artery level (Postnov et al., 2015a), are likely to increase pressure variation at the level of afferent arterioles (Postnov et al., 2012; Postnov et al., 2016a), thus increasing chances of local damage and aggravating pathological condition.\n\n## Materials and methods\n\n### Animal preparation\n\nAll experimental protocols were approved by the Danish National Animal Experiments Inspectorate (License 2015-15-0201-00463) and were conducted according to the American Physiological Society guidelines. Male Sprague Dawley rats (Taconic, Denmark) with average weight \u2248290 g (n = 5) were used. Before starting surgical procedures, animals were anesthetized in a chamber with 8% sevoflurane. During the surgery, sevoflurane concentration was reduced to a final concentration of \u22482%. Two catheters were inserted in the right jugular vein to allow continuous systemic infusion of drugs and saline. Another catheter was inserted in the carotid artery to measure mean arterial pressure with a pressure transducer (Statham P23-dB, Gould, Oxnard, CA). Then tracheotomy was performed, after which the rat was placed on a servo-controlled heating table maintaining body temperature at 37\u00b0C and connected to a mechanical animal ventilator (60 breaths/min; 8 ml/kg bodyweight). To avoid secondary heartbeat and breathing artifacts, Nimbex (muscle relaxant, Sigma) was administered in a concentration of 0.85 mg/ml, first as a bolus injection of 0.5 ml, followed by a continuous intravenous infusion at a rate of 20 \u03bcl/min. The left kidney was then exposed, and the left ureter was catheterized to ensure free urine flow. To reduce motion artifacts and avoid drying the kidney surface during the experiment, we placed the kidney in a plastic fixation holder, covered it with warm agarose solution (1% Agarose, Sigma, 99% saline), and put a thin (0.1 mm) cover glass on top of the kidney. Metal thread (40 \u00b5m in diameter) was bent in a \u2018U\u2019 shape and positioned on top of the cover glass at the flattest location of the kidney surface, marking the region of interest for imaging procedures. Following the surgical procedures, the animal was left to stabilize for 20 min. Experiments were continued only if the mean arterial pressure remained within 100\u2013120 mm Hg during the control period. At the end of the experiment, animals were euthanized by overdose of sevoflurane, followed by cervical dislocation.\n\n### LSCI data acquisition\n\nSchematics of the imaging setup are shown in Figure 6A, B. To assess microcirculation in the kidney cortex, we built a high resolution LSCI setup. A single-mode fiber-coupled laser diode (785 nm, LP785-SF100, Thorlabs, USA) controlled with a laser driver and temperature controller (CLD1011LP, Thorlabs, USA) was used to deliver coherent light onto kidney surface with a power density of approximately 10 mW/cm2, providing an optimal signal-to-noise ratio (Postnov et al., 2015b). Backscattered light was collected by a zoom imaging lens (VZM 1000i, Edmund Optics) at \u00d75 magnification and recorded with a CMOS camera (Basler acA2000-165umNIR, 2048 \u00d7 1088 pixels, 5.5 \u03bcm pixel size). Exposure time was set to 5 ms, which provides optimal sensitivity to slow flows, such as in capillary perfused tissue (Yuan et al., 2005). A subset of 1024 \u00d7 1024 pixels was used for recording, from a 1.5 \u00d7 1.5 mm region of the renal surface. In addition, a linear polarizing filter was placed in front of the objective to reduce artifacts from reflected light. While the imaging setup in this configuration allows imaging resolution 1 of \u22480.8 \u00d7 0.8 \u00b5m2/px at the frame-rate of 160 frames per second (fps), in our experiments, we found it optimal, in terms of the field-of-view and data storage, to acquire images at 50 fps and resolution of \u22481.5 \u00d7 1.5 \u00b5m2/px. The system provides an image resolution of 2.25 \u00b5m2/px compared with previously published studies on renal synchronization, which used the system with the image resolution of 45\u2013400 \u00b5m2/px (Holstein-Rathlou et al., 2011; Scully et al., 2013; Mitrou et al., 2015). Similarly, the system has a higher temporal resolution (50 fps instead of 25) and utilizes a better light source (Postnov et al., 2015b). Combined and considering noise reduction achieved by spatial and temporal averaging, these factors improve the expected signal-to-noise ratio per area unit by at least 30 times. The examples of data collected with the previously used system and the system presented in this study can be seen in Figure 1\u2014figure supplement 1. Further information on the role of high-resolution imaging for identifying vessel-specific oscillations frequency and phase can be found in our recent study (Lee et al., 2022).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75284/elife-75284-fig6-v3.jpg)\n\n**Figure 6.:** (A) and (B) - top and side views respectively.\n\nImaging was performed in a non-stimulated state (control) and following administration of AngII and ACh, respectively. After collecting 20 min (2400 frames) of the baseline data, we initiated continuous administration of AngII at a concentration of 4 ng/ml and an infusion rate of 20 \u03bcl/min to cause systemic vasoconstriction. The infusion lasted for 30 min, out of which the first 10 min were allocated for blood flow to stabilize, and the following 20 min were recorded. 15 min after completion of the AngII infusion, we infused ACh at a concentration of 0.0375 mg/ml and a rate of 20 \u03bcl/min, first permitting 10 min for blood flow to stabilize, and then recorded subsequent 20 min. Across all experiments, average arterial pressure was 112 \u00b1 2, 127 \u00b1 6, and 100 \u00b1 4 during the control, vasoconstrited (AngII), and vasodilated (ACh) conditions, respectively. Averaged across all vessels blood flow index has decreased by 17.3\u00b12.3% in the vasoconstricted condition and increased by 27.7\u00b113.3% in the vasodilated condition. For the details on blood flow index measurements across the conditions see Figure 1\u2014figure supplement 1.\n\n### Data analysis\n\n#### Image registration\n\nTo allow high-resolution LSCI of the renal microcirculation, we needed to reduce motion artifacts, as any lateral motion larger than 5\u201310 \u00b5m will prevent accurate estimation of the blood flow and further segmentation of microcirculatory vessels. Unlike brain imaging, when working with the kidney, there is no bone tissue that can be fixed to reduce respiratory motion, and applying even slight pressure on the kidney might result in abnormal blood flow due to the occlusion of the small vessels on its surface. At the same time, raw laser speckle images, or contrast images without temporal averaging, are not suitable for automated registration due to the absence of clear intensity landmarks (Postnov et al., 2016b). To resolve this issue, we placed a \u2018U\u2019 shaped metal marker on the cover glass, which moves along with the kidney, as described above. As the first step of analyzing the data, the marker is segmented in all frames via thresholding and then used to estimate the translation type geometrical transformation required to register images. Estimated geometrical transformation is then applied to the raw laser speckle images prior to performing the contrast analysis.\n\n#### Contrast analysis\n\nRegistered laser speckle images were processed to calculate temporal contrast $K=\\frac{\\sigma(I)}{<I>}$, where $\\sigma\u2062(I)$ and $<I>$ are SD and mean of pixel intensity over 25 frames (Postnov et al., 2016b). Contrast values were then converted to the blood flow index as $B\u2062F\u2062I=1/K^{2}$, which are then used in the ensuing analysis.\n\n#### Vessels segmentation\n\nTo segment individual microcirculatory vessels, we calculated averaged in time blood flow index (BFI) images and applied adaptive thresholding (MATLAB) to them. Automated segmentation was followed by manual clean-up, where we removed artifacts and occasional large surface vessels. We then calculated blood flow dynamics for each segmented individual microcirculatory vessel by averaging BFI values in pixels belonging to this vessel.\n\n#### Synchronization analysis\n\nTo study synchronization patterns between microcirculatory vessels and, thus, obtain insight into inter-nephron communication, we apply continuous wavelet transform analysis (Morse wavelet, MATLAB) to segmented vessels\u2019 BFI. We identified the frequency and phase of dominant periodic activity in the 0.015\u20130.05 Hz frequency band associated with the TGF mechanism. Vessels with less than 10% prominence of the activity peak were discarded and not used for synchronization analysis. In this study, we consider blood flow in different segmented vessels to be synchronized whenever their dominant frequencies match. To quantify blood flow synchronization over the field of view, we analyzed phase differences between synchronized vessels, average synchronization duration, and its dependency on the distance between vessels, and the probability of the vessel\u2019s blood flow to be synchronized with N% of the vessels in the field of view. To provide a \u2018single-value\u2019 characterization of the synchronization at a given moment of time, we also introduced the synchronization degree parameter $S$:\n\n$$\nS(t)=\\sqrt{L(t)/(N\u2217(N\u22121))},\n$$\n\nwhere $L$ is a number of frequency matching pairs of vessels, $N$ is a total number of observed segmented vessels, and $t$ is the time. $S$ represents the relation of the observed number of frequency matching pairs to their maximum possible number. Thus $S=1$ corresponds to all segmented blood vessels having the same dominant frequency, while $S=0$ to all segmented blood vessels having a different dominant frequencies. However, it is important to notice that $S=0$ is impossible to reach due to the discrete nature of the measured data and the analysis. In our case, the 0.015\u20130.05 Hz range is split into 18 fixed values, so that if there were more than 18 vessels, it became unavoidable for some of them to have an identical dominant frequencies. In practice, for 100 vessels with randomly chosen dominant frequencies, the minimum observed $S$ would be \u22480.25\u00b10.06, which can be confirmed with a simple computational experiment.\n\n#### Statistical analysis\n\nPaired t-test was applied to compare results between control, AngII infusion, and ACh infusion. p-values greater than 0.05 are reported as not significant. Results were expressed as mean \u00b1\u2002SD unless indicated otherwise.\n",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "76c3fed0-f996-4e53-a8e3-34705f04d49b",
+      "submission_id": "c2b6c90e-2c6f-47cb-b03b-24dc133d2a74",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Martin R Pollak, https://ror.org/03vek6s52 Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75284.sa0](https://doi.org/10.7554/eLife.75284.sa0)\n\nThe new technical advance reported here, high-resolution laser speckle contrast imaging of many microvessels simultaneously and application to the entire rat kidney surface should be of great interest to readers interested in general vascular physiology and especially renal hemodynamics research. The observed large vessel cluster synchronization and phase wave formation phenomena will help further the understanding of renal blood flow regulation in health and disease.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Martin R Pollak, https://ror.org/03vek6s52 Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75284.sa1](https://doi.org/10.7554/eLife.75284.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your work entitled \"Synchronization in renal microcirculation unveiled with high-resolution blood flow imaging\" for further consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and overseen by Martin Pollak as Senior Editor. The reviewers have opted to remain anonymous.\n\nThere are some issues that need to be addressed. In particular, we would like to see some evidence regarding how this method compares with previous methodologies (see Reviewer 1). We would also like to see the other specific points raised by the reviewers addressed to our satisfaction.\n\nReviewer #1 (Recommendations for the authors):\n\nThe key observations of the study are the synchronization of oscillations in nephron blood flow oscillation frequency at frequencies previously demonstrated to be governed by tubuloglomerular feedback (TGF). Using laser speckle microscopy, the authors observe similar frequency of blood flow oscillation across many nephrons, spanning an area over 1 mm2. The authors then characterize this synchronization of oscillation frequency in response to systemic administration of angiotensin II and acetylcholine to induce systemic vasoconstriction and vasodilation and observe that angiotensin II increases differences in phase, while acetylcholine decreases the duration of synchronization. The authors claim that this manuscript presents a novel laser speckle microscopy system to enable characterization of blood flow across a larger area of the kidney, yet the system is not characterized for resolution or field of analysis nor is it quantitatively compared to previous systems. Therefore, the merits of the manuscript rest on the characterization of nephron synchronization, which is largely correlative and lacking in data presentation and controls.\n\n\u2013 In the abstract, the authors claim that this manuscript introduces \"an approach for high-resolution laser speckle imaging.\" As motivation for this work, in the introduction, the authors state, \"The methods lacked resolution, both spatial and temporal, as well as signal-to-noise ratio, to confirm it convincingly. In this paper we further advance renal blood flow imaging methodology\u2026\" However, the authors do not characterize their new system, in terms of resolution (spatial and temporal) and signal-to-noise ratio. Therefore, the advances claimed cannot be evaluated against previous methods.\n\n\u2013 In Figure 2, the length scale of subpanels A-C is not indicated. It's mentioned in the discussion to be 1.5 x 1.5 mm, but it is not indicated on the figure or in the caption. How are the size of the dots determined? Also, given the thresholding and image processing required to generate this data set, it is difficult to understand how the dots presented in the figure relate back to the structure of the kidney. Raw data and images with the nephrons indicated (as in Figure 1) should be provided.\n\n\u2013 Similarly, it is difficult to understand how representative the data provided are. While the analysis has been performed on multiple rats (as indicated in the data of Figure 3), there is no information on the variation from measurement to measurement vs. animal to animal, regarding segmentation, synchronization, or effects of administered compound.\n\n\u2013 In all conditions, the authors administer the vasoconstriction agent followed by vasodilation. Does this ordering affect the synchronization?\n\n\u2013 In the discussion, the authors claim that TGF-frequency clustered waves propagate in a manner where \"the direction of the phase is not predetermined by the vascular structure \u2013 depending on the flow dynamics and other, yet unknown factors\u2026\" What data justify the claim regarding structure and flow dynamics?\n\nReviewer #2 (Recommendations for the authors):\n\nIn this study, Postnov et al., are reporting the application of a new technical advance, further improvement of their recently developed imaging technology using LSCI. In the present work, they performed high-resolution LSCI imaging measurement and analysis of renal blood flow dynamics in multiple individual small renal vessels simultaneously in the entire surface of intact rat kidneys. They found synchronized clusters of blood vessels spanning multiple (>40) nephrons, increased or decreased level of synchronization in response to AngII or Ach, respectively, and the development of space-dependent phase waves. From these results the authors concluded that strengthened hemodynamic coupling due to increased vascular tone, alternating synchronization (pacemaker) centers likely played important roles in the observed phenomena.\n\nStrengths:\n\nThe paper is well-written, and the study appears to be well performed. The results are clearly presented and support the conclusions. The presently applied imaging technical advance will be helpful to better understand the detailed, nephron-to-nephron level functional features and role of renal hemodynamics in physiological and disease conditions. However, there are a few points that could be more clarified.\n\nWeaknesses:\n\n1. It would be more convincing if vasoconstricted (Ang II infusion) and vasodilated conditions (Ach infusion) would be validated experimentally by quantitative vessel diameter measurements rather than simply assumed based on the expected vasoactivity of the applied drugs. This is especially important due to the rather low doses applied.\n\n2. Since the LSCI signal strength depends on healthy blood flow rates, vasoconstrictor states may limit the sensitivity of this technique to detect the detailed, single vessel hemodynamic oscillations and the large cluster synchronization features described here. It would be interesting to know the level of total renal blood flow alterations in the presently applied vasoactive treatment conditions.\n\n3. As it is understandable for a technical advance type of report, the study is rather descriptive, and the study design is lacking mechanistic examination of the observed synchronization and phase waves phenomena. Although the presence of fast electric or diffusive coupling that generates long-distance nephron-to-nephron communication was discussed. The applied vasoactive compounds, AngII and Ach have numerous extra-renal effects, for example on nerve activity which may be involved in cluster synchronization. It would be interesting to examine how the large cluster synchronization and phase waves are altered in kidneys one week after denervation. Since a vasoconstrictor state was associated with strengthened synchronization, one is wondering if stronger synchronization could be a sign of increased sympathetic nerve activity.\n\n4. The physiological significance of nephron cluster synchronizations should be clearly stated.\n\nIn addition to the many strengths detailed above, I have a few suggestions for further improvement.\n\n1. Vasoconstricted (Ang II infusion) and vasodilated conditions (Ach infusion) need to be validated experimentally by quantitative vessel diameter measurements. Vessel dimensions could be measured using the LSCI images or other higher resolution imaging modalities that could be simultaneously applied.\n\n2. It would be important to show if in the AngII condition the reduced blood flow and reduced sensitivity of the technique could contribute, at least in part, to the observed large clustering. Perhaps including an original, continuous tracing of RBF oscillations before and after AngII treatment would alleviate this concern.\n\n3. Renal denervation could address mechanistic details of the observed large clustering and phase wave phenomena.\n\n4. One or two additional sentences in the introduction should state the physiological significance of nephron synchronization.\n",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "39b3bd01-7119-47e2-b54d-3f9023ed6413",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C1",
+      "claim": "Earlier studies have shown that nephrons signal to each other, synchronize over short distances, and potentially form large synchronized clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies have shown that nephrons signal to each other, synchronize over short distances, and potentially form large synchronized clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior research in the field, as indicated by the statement about 'earlier studies'.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "45d65a5d-3232-4a59-9a73-fc87fe5aa23e",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C2",
+      "claim": "Large synchronized clusters would play an important role in renal autoregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such clusters would play an important role in renal autoregulation, but due to the technological limitations, their presence is yet to be confirmed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical assertion based on understanding of renal physiology, presented as speculation about the functional role of synchronized clusters.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "25824d1f-6a26-44fa-9314-154d1588a327",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C3",
+      "claim": "Due to technological limitations, the presence of large synchronized clusters is yet to be confirmed.",
+      "claim_type": "EXPLICIT",
+      "source": "Such clusters would play an important role in renal autoregulation, but due to the technological limitations, their presence is yet to be confirmed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement acknowledges a gap in empirical evidence due to methodological constraints.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "7d4e36a1-0044-468b-8170-4ebca67f4aa8",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C4",
+      "claim": "The study introduces an approach for high-resolution laser speckle imaging of renal blood flow.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we introduce an approach for high-resolution laser speckle imaging of renal blood flow and apply it to estimate the frequency and phase differences in rat kidney microcirculation under different conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "66185a3e-eeef-4f5f-9343-ddcb60c1d1e3",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C5",
+      "claim": "The analysis unveiled the spatial and temporal evolution of synchronized blood flow clusters of various sizes, including the formation of large (>90 vessels) and long-lived clusters (>10 periods) locked at the frequency of the tubular glomerular feedback mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis unveiled the spatial and temporal evolution of synchronized blood flow clusters of various sizes, including the formation of large (>90 vessels) and long-lived clusters (>10 periods) locked at the frequency of the tubular glomerular feedback mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports specific quantitative findings from the data analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "31fd99e4-388b-4281-abb8-72809333a570",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C6",
+      "claim": "Infusion of vasoconstrictor angiotensin II promoted stronger synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, infusion of vasoconstrictor angiotensin II promoted stronger synchronization, while acetylcholine caused complete desynchronization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from experimental manipulation with angiotensin II.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "d0e8b9da-a134-49af-9544-48301e658ab6",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C7",
+      "claim": "Acetylcholine caused complete desynchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, infusion of vasoconstrictor angiotensin II promoted stronger synchronization, while acetylcholine caused complete desynchronization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from experimental manipulation with acetylcholine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "21d7f5ad-9739-48d8-b61e-4b474262ccd5",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C8",
+      "claim": "The results confirm the presence of local synchronization in the renal microcirculatory blood flow.",
+      "claim_type": "EXPLICIT",
+      "source": "The results confirm the presence of the local synchronization in the renal microcirculatory blood flow and that it changes depending on the condition of the vascular network and the blood pressure, which will have further implications for the role of such synchronization in pathologies development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "c85648ad-ad2b-42ae-9b19-5426b8fd6a31",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C9",
+      "claim": "Synchronization changes depending on the condition of the vascular network and the blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The results confirm the presence of the local synchronization in the renal microcirculatory blood flow and that it changes depending on the condition of the vascular network and the blood pressure, which will have further implications for the role of such synchronization in pathologies development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental observations under different conditions (control, AngII, ACh).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "519bcb2c-91d1-445d-91a9-71139dc227ec",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C10",
+      "claim": "Two critical mechanisms in renal pressure autoregulation are the myogenic mechanism and tubuloglomerular feedback (TGF).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on measurements of tubule pressure responses to step changes in arterial pressure (Young and Marsh, 1981), vascular transfer functions (Chon et al., 1993; Chon et al., 2005; Cupples and Loutzenhiser, 1998; Marmarelis et al., 1999; Sakai et al., 1986; Shi et al., 2006), and renal blood flow response to arterial pressure forcing (Holstein-Rathlou et al., 1991), two critical mechanisms in renal pressure autoregulation, the myogenic mechanism and tubuloglomerular feedback (TGF), have emerged as the critical components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research establishing these mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "38896e8f-c3b0-48ee-b4d2-1ee1e981cd63",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C11",
+      "claim": "The myogenic mechanism operates at 5\u201310 s (0.1\u20130.2 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The two mechanisms operate at different time scales, generating spontaneous blood flow and pressure oscillations at different frequencies: 5\u201310 s (0.1\u20130.2 Hz) for the myogenic response and 30\u201350 s (0.02\u20130.033 Hz) for the TGF (Holstein-Rathlou and Marsh, 1989; Yip et al., 1993; Cupples and Loutzenhiser, 1998; Sosnovtseva et al., 2002; Just, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations documenting the temporal characteristics of the myogenic mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "0575e85d-b2cd-4e91-a70a-88099cb16641",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C12",
+      "claim": "The TGF mechanism operates at 30\u201350 s (0.02\u20130.033 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The two mechanisms operate at different time scales, generating spontaneous blood flow and pressure oscillations at different frequencies: 5\u201310 s (0.1\u20130.2 Hz) for the myogenic response and 30\u201350 s (0.02\u20130.033 Hz) for the TGF (Holstein-Rathlou and Marsh, 1989; Yip et al., 1993; Cupples and Loutzenhiser, 1998; Sosnovtseva et al., 2002; Just, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations documenting the temporal characteristics of TGF.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "fb0619f2-0b39-414b-bb28-7083f1325c9b",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C13",
+      "claim": "Nephrons are linked via the renal vascular tree, which provides connections of different proximities.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a single kidney, all nephrons are linked via the renal vascular tree, which provides connections of different proximities - from few hundred microns for neighboring nephrons separated only by their respective afferent arterioles to nephrons only connected at the level of the renal artery, which plays a role of a single-supply source for all the nephrons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the anatomical structure of the kidney based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "56167f0e-522a-4798-9f44-75d94e89884a",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C14",
+      "claim": "Nephrons communicate via electrical signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to interaction through the blood flow and pressure, nephrons were found to communicate via electrical signaling (Marsh et al., 2019; Marsh et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies demonstrating electrical communication between nephrons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "3c744a72-d8ad-424c-8f1f-601f44106c6e",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C15",
+      "claim": "Adaptive synchronization across the renal microvascular network would increase the efficiency and dynamic range of autoregulation by engaging more preglomerular resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive synchronization across the renal microvascular network would increase the efficiency and dynamic range of autoregulation by engaging more preglomerular resistance (Marsh et al., 2019; Zehra et al., 2021), preventing transmission of high systemic pressure to the glomeruli, which could lead to progressive glomerular and vascular injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and represents a theoretical understanding of the functional consequences of synchronization.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "7bc3bf7f-966e-4933-b897-fe2dc77e946c",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C16",
+      "claim": "Long-distance synchronization would argue strongly that renal autoregulation is a distributed process.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, long-distance synchronization would argue strongly that renal autoregulation is a distributed process that can ensure an optimized oxygenation-perfusion matching and adjust to various internal or environmental conditions (Sosnovtseva et al., 2007; Mitrou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the implications of long-distance synchronization, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "f9ce641e-50e0-4c2c-b837-fc56dfcce563",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C17",
+      "claim": "Large-scale in-phase synchronization might become a mechanism leading to glomerular injury as it would substantially increase local pressure variation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, large-scale in-phase synchronization might become a mechanism leading to glomerular injury as it would substantially increase local pressure variation (Postnov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to modeling work and represents a theoretical prediction.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "c15afbfe-0da8-4838-bbbd-8f7cb9a93637",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C18",
+      "claim": "Micropuncture experiments showed that neighboring nephrons adjust their TGF-mediated tubular pressure oscillations to attain a synchronized regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Micropuncture experiments (Holstein-Rathlou, 1987; K\u00e4llskog and Marsh, 1990; Yip et al., 1992; Sosnovtseva et al., 2007) showed that neighboring nephrons (originating from a common artery) adjust their TGF-mediated tubular pressure oscillations to attain a synchronized regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to micropuncture studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "1f59da68-50b0-40b8-84fa-c08bacf0970e",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C19",
+      "claim": "Micropuncture experiments could only sample pairs or triplets of nephrons at any one time.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these experiments confirmed the existence of synchronization, only pairs or triplets of nephrons could be sampled at any one time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of micropuncture methodology based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "889f73f5-5b51-4a77-a930-4f2d7d064fa5",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C20",
+      "claim": "Laser speckle contrast imaging (LSCI) technology made assessment of co-operative efforts of a larger number of nephrons possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessment of co-operative efforts of a larger number of nephrons required a different approach and was made possible with laser speckle contrast imaging (LSCI) technology (Holstein-Rathlou et al., 2011; Mitrou et al., 2015; Scully et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies using LSCI for renal imaging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "4503c217-96eb-4220-aa7d-e44800c586ab",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C21",
+      "claim": "In LSCI, media with moving light scattering particles are illuminated with a near-infrared laser, and the backscattered light forms an interference pattern that appears more or less blurred depending on the speed of the particles.",
+      "claim_type": "EXPLICIT",
+      "source": "In LSCI, media with moving light scattering particles, e.g., red blood cells, are illuminated with a near-infrared laser. The backscattered light, recorded by a camera, forms an interference pattern, which appears more or less blurred depending on the speed of the particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the physical principles underlying LSCI technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "a489f736-75f3-405a-89f7-3b518542aa8c",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C22",
+      "claim": "The LSCI pattern is analyzed to obtain qualitative maps of particle velocity and thus a blood flow estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is then analysed to obtain qualitative maps of particle velocity and thus a blood flow estimate (Boas and Dunn, 2010; Briers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations describing LSCI analysis methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "c6df3d4a-ab29-4677-a647-43f9fc9ceca6",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C23",
+      "claim": "Holstein-Rathlou et al. first applied LSCI to map TGF oscillations over a large field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "First applied by Holstein-Rathlou et al. to map TGF oscillations over a large field of view, this method was later used to explore periodic activity in the myogenic frequency band (Scully et al., 2013; Mitrou et al., 2015), analyse spatial correlations in the renal blood flow (Brazhe et al., 2014), and study intrarenal drug distribution (Postnov et al., 2015a, Postnov et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical claim about the first application of LSCI to renal TGF mapping, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "9ce1c979-4f23-4973-a9d5-2d0453772977",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C24",
+      "claim": "Previous LSCI methods lacked resolution, both spatial and temporal, as well as signal-to-noise ratio, to convincingly confirm large-scale synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these results encouraged the large-scale synchronization hypothesis, the method lacked resolution, both spatial and temporal, as well as signal-to-noise ratio, to confirm it convincingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the limitations of previous LSCI methods based on the authors' knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "c7e4db8d-7c25-4878-86d8-ae9355a8beed",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C25",
+      "claim": "The LSCI setup and data processing approach allow imaging renal microcirculation at 0.8 \u03bcm per pixel spatial resolution and imaging frequency to 160 Hz for 1024 \u00d7 1024 pixels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our LSCI setup and data processing approach allow imaging renal microcirculation at 0.8 \u03bcm per pixel spatial resolution and imaging frequency to 160 Hz for 1024 \u00d7 1024 pixels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the technical capabilities of the imaging system developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "bb118413-3560-422d-b55c-08ac80fc87ce",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C26",
+      "claim": "Four vessels form two frequency-locked clusters (red-green and black-orange) that are synchronous most of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "From the corresponding dominant frequency and phase (Figure 1C and F), it can be seen that these vessels form two frequency-locked clusters (red-green and black-orange) that are synchronous most of the time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis of data shown in Figure 1, representing specific observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "21cc75a1-3042-4015-9cac-d7ff2274c3f1",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C27",
+      "claim": "There are long periods when the two clusters synchronize, forming a larger cluster, interrupted with an asynchronous interval (from \u2248850 to \u22481050 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there are long periods when these clusters synchronize, forming a larger cluster, interrupted with an asynchronous interval (from \u2248850 to \u22481050 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the time series data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "83177272-1fc1-460a-a4ea-81f2544a5dab",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C28",
+      "claim": "The improved spatial and temporal resolution allows recording BFI with less noise and better spatial localization.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, the improved spatial and temporal resolution allows recording BFI with less noise and better spatial localization, e.g., identifying blood flow belonging to a single microcirculatory vessel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of data quality between old and new systems, as shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "68e4d4bb-f449-486b-8890-fcaf6df18284",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C29",
+      "claim": "Averaged across all vessels blood flow index decreased by 17.3\u00b12.3% in the vasoconstricted condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged across all vessels blood flow index has decreased by 17.3\u00b12.3% in the vasoconstricted condition and increased by 27.7\u00b113.3% in the vasodilated condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "45ba8bf3-633f-4cbe-a3bf-97d353de345f",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C30",
+      "claim": "Averaged across all vessels blood flow index increased by 27.7\u00b113.3% in the vasodilated condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged across all vessels blood flow index has decreased by 17.3\u00b12.3% in the vasoconstricted condition and increased by 27.7\u00b113.3% in the vasodilated condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "1da6d81a-ee6a-4642-83ae-9dff95980f68",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C37",
+      "claim": "During AngII infusion, vessels are significantly more likely to be synchronized with 20\u201350% of the field of view than in control or during ACh infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "From Figure 3, it can be seen that during AngII infusion, vessels are significantly more likely to be synchronized with 20\u201350% of the field of view than in control or during ACh infusion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on statistical analysis of the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "cc2cc54c-89d9-4e4a-80c0-3493749f91b7",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C38",
+      "claim": "During ACh infusion, probability of a vessel being synchronized with less than 15% is significantly higher than during AngII infusion (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter condition, probability of a vessel being synchronized with less than 15% is significantly higher than during AngII infusion (p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the data analysis with reported p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "815114d6-c007-4769-8c8d-1787f899e451",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C39",
+      "claim": "The phase of oscillations within a cluster is space-dependent - it is mostly the same for the closely positioned vessels and gradually changes with distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Another distinct feature that we have observed is that the phase of oscillations within a cluster is space-dependent - it is mostly the same for the closely positioned vessels and gradually changes with distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the spatial analysis of phase data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "7c6fce98-eac4-4343-bfaf-62e6703a458c",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C46",
+      "claim": "The possibility of phase waves was previously hinted at in an earlier LSCI study where spatial correlations in renal blood flow were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility of such phase waves was previously hinted at in our earlier LSCI study, where spatial correlations in renal blood flow were analyzed (Brazhe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior work that suggested the existence of phase waves.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "71c26a5e-7712-4f29-8c3b-7c85ab05b7f2",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C48",
+      "claim": "This result is in good agreement with experimental micropuncture observations, where it is explained by the presence of fast electrical coupling acting over short distances.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is in good agreement with experimental micropuncture observations, where it is explained by the presence of fast electrical coupling acting over short distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the current findings with prior micropuncture studies and their interpretation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "f9859261-d32b-4486-98d5-8dae5868dcec",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C50",
+      "claim": "AngII infusion increases anti-phase synchronization to 5%, showing a statistically significant difference with other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, AngII infusion increases this number to 5%, showing a statistically significant difference with other conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding with statistical significance from the phase difference analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "6eefeeac-bbd6-4399-8f58-9c82b86f204e",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C51",
+      "claim": "Phase difference grows with distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase difference grows with distance, as can be seen from Figure 5B, reflecting the presence of phase waves.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the spatial analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "0e3448a5-2ad4-48f2-ab7f-0999f38246ab",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C52",
+      "claim": "In control and vasodilated conditions, phase change is relatively small (\u22480.3 and 0.25 rad/mm).",
+      "claim_type": "EXPLICIT",
+      "source": "While change is relatively small in the control and vasodilated conditions (\u22480.3 and 0.25 rad/mm), it is strongly enhanced in the vasoconstricted condition, reaching, on average, \u22481 rad over 1 mm distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the spatial phase analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "af997975-6147-4271-b8a3-6a37760dc959",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C53",
+      "claim": "In the vasoconstricted condition, phase change is strongly enhanced, reaching on average \u22481 rad over 1 mm distance.",
+      "claim_type": "EXPLICIT",
+      "source": "While change is relatively small in the control and vasodilated conditions (\u22480.3 and 0.25 rad/mm), it is strongly enhanced in the vasoconstricted condition, reaching, on average, \u22481 rad over 1 mm distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the spatial phase analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "e1d158ee-7a76-4a75-8ae2-6fa5f44e6f2d",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C54",
+      "claim": "Mathematical modeling showed that such phase difference can be explained by strengthened hemodynamic coupling, which increased vascular tone should cause.",
+      "claim_type": "EXPLICIT",
+      "source": "As we showed with mathematical modeling (Postnov et al., 2012), such difference can be explained by strengthened hemodynamic coupling, which the increased vascular tone should cause.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior modeling work to explain the observed phase differences.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "41bf5d01-46a4-4314-b770-6cf0087c9ad2",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C55",
+      "claim": "In the vasoconstricted condition, average synchronization duration reaches \u224840\u00b113% of the observation time for neighboring vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that synchronization is stronger in the vasoconstricted condition, with average duration reaching \u224840\u00b113% of the observation time for neighboring vessels and gradually reducing to 24\u00b16% for vessels located at more than 1 mm distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the synchronization duration analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "c6575bb6-84d7-4a2d-a561-2ef9f4158d6b",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C56",
+      "claim": "In the vasoconstricted condition, average synchronization duration gradually reduces to 24\u00b16% for vessels located at more than 1 mm distance.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that synchronization is stronger in the vasoconstricted condition, with average duration reaching \u224840\u00b113% of the observation time for neighboring vessels and gradually reducing to 24\u00b16% for vessels located at more than 1 mm distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the synchronization duration analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "fa1a7f79-75f6-4a19-83f0-ed51d2baa973",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C57",
+      "claim": "In control, synchronization duration varies greatly but on average reduces with distance from \u224830% to \u224821%.",
+      "claim_type": "EXPLICIT",
+      "source": "In control, synchronization duration varies greatly, but on average, it also reduces with distance, although at a slower rate than during AngII infusion\u2014from \u224830% to \u224821%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the synchronization duration analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "904554e2-5015-47a8-b6d8-7762141d956b",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C58",
+      "claim": "During ACh infusion, synchronization duration is \u224815-13%, with only 2% reduction over 1mm of distance.",
+      "claim_type": "EXPLICIT",
+      "source": "During the ACh infusion the synchronization duration is \u224815-13%, with only 2% reduction over 1mm of distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the synchronization duration analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "4777b8d8-f68e-40b6-86c1-2195246cc95f",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C59",
+      "claim": "Higher synchronization duration in control and during AngII infusion compared with ACh infusion suggests a long-distance nephron-to-nephron communication or a common driving force.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher synchronization duration in control and during AngII infusion compared with ACh infusion suggests a long-distance nephron-to-nephron communication or a common driving force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of synchronization durations across conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "a460138a-9891-46cb-8bc7-4e64fdccb963",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C60",
+      "claim": "The data confirm that blood flow in renal microcirculation tends to demonstrate clustered, frequency-locked activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data confirm that blood flow in renal microcirculation tends to demonstrate clustered, frequency-locked activity, with the clustering size and tendencies changing depending on the animal condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "2b5912e8-124c-4252-95c2-9593ddfe5a99",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C61",
+      "claim": "Clustering size and tendencies change depending on the animal condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data confirm that blood flow in renal microcirculation tends to demonstrate clustered, frequency-locked activity, with the clustering size and tendencies changing depending on the animal condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from comparing results across different experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "7be58d90-632e-4e8e-ae74-c07c6db93e68",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C62",
+      "claim": "A possible explanation for the stronger synchronization during the AngII infusion is stronger hemodynamic coupling due to increased vascular resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible explanation for the stronger synchronization during the AngII infusion will be a stronger hemodynamic coupling due to increased vascular resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed phenomenon based on physiological reasoning.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "87b49966-e418-4c23-a6ec-b6014ab66c1a",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C63",
+      "claim": "Increased number of vessels synchronized in anti-phase during AngII infusion is supported by the increased vascular resistance, as predicted using mathematical modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also supported by the increased number of vessels synchronized in anti-phase during the infusion, which, as we predicted using mathematical modeling (Postnov et al., 2012), is a natural consequence of stronger hemodynamic coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the experimental observation with prior modeling predictions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "68a527ca-5b32-48f2-8467-dd8125e75b9b",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C64",
+      "claim": "The direction of phase waves appears to be not predetermined by the vascular structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the direction of the phase waves appears to be not predetermined by the vascular structure - depending on the flow dynamics and other, yet unknown factors, it can change even within the same animal (an example is shown in Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the phase wave analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "1631fbb6-97a9-4409-8f49-fdfe3b620b9c",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C65",
+      "claim": "Phase wave behavior might be related to diffusive interaction between nephrons or the formation of synchronization centers (pacemakers) at different locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such behavior might be related to diffusive interaction between nephrons or the formation of synchronization centers (pacemakers) at different locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed phase wave behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "7f95473b-6593-46bd-9398-d6f45db72a75",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C66",
+      "claim": "The presence of phase waves supports the deterministic nature of synchronization rather than random entrainment at the same dominant TGF frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of phase waves supports the deterministic nature of synchronization rather than random entrainment at the same dominant TGF frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism of synchronization based on the observation of phase waves.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "582e8f55-6eb9-434a-9180-9e7ae8287c79",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C67",
+      "claim": "Similar phase wave effects are well studied in excitable media with diffusion interaction mechanisms such as brain and heart tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar effects are well studied in excitable media with diffusion interaction mechanisms such as brain (Dahlem et al., 2010; Shibata and Bures, 1972) and heart (Alonso et al., 2016) tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws on established knowledge from other biological systems, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "a1b4910b-e028-42f0-9aab-e62bf703ae8c",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C68",
+      "claim": "Such similarity might suggest the presence of a diffusive mechanism in the inter-nephron interaction or a long-distance fast electrical signaling, e.g., via conducted vasoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such similarity might suggest the presence of a diffusive mechanism in the inter-nephron interaction or a long-distance fast electrical signaling, e.g., via conducted vasoreactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on comparison with other biological systems.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "7f20fa62-bd39-475a-939a-275894b3bf79",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C71",
+      "claim": "Direct translation from individual segmented vessels to nephrons is challenging and requires further exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "While it provides an estimate of synchronization in the nephrons activity, direct translation from individual segmented vessels to nephrons is challenging and requires further exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in interpreting the data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "14b2279b-6427-41d5-94a6-da780b4b52ec",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C72",
+      "claim": "LSCI can collect blood flow signal from as deep as 300\u2013400 \u03bcm in theory.",
+      "claim_type": "EXPLICIT",
+      "source": "While in theory, LSCI can collect the blood flow signal from as deep as 300\u2013400 \u03bcm, in practice, visually resolvable signal typically comes from top 50 to 150 \u03bcm of the vascular structure (Davis et al., 2014; Zheng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical understanding of LSCI technology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "e2094100-72c0-4605-81a0-993c98f08c76",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C73",
+      "claim": "In practice, visually resolvable LSCI signal typically comes from top 50 to 150 \u03bcm of the vascular structure.",
+      "claim_type": "EXPLICIT",
+      "source": "While in theory, LSCI can collect the blood flow signal from as deep as 300\u2013400 \u03bcm, in practice, visually resolvable signal typically comes from top 50 to 150 \u03bcm of the vascular structure (Davis et al., 2014; Zheng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies characterizing LSCI penetration depth.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "b4b3cc04-f080-465c-ab21-5ca6473dfb8e",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C74",
+      "claim": "LSCI is likely limited to imaging vessels originating from \u224810000 nephrons in outer 30% of rat renal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering high vascular density close to the renal surface, it would mean that LSCI is likely limited to imaging vessels originating from \u224810000 nephrons in outer 30% of rat renal cortex (Letts et al., 2017), which would result in \u224840 nephrons in the 1.5 \u00d7 1.5 \u00b5m field of view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on anatomical knowledge and cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "42cc9e1d-f839-4a66-ade7-9280bf9caebd",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C75",
+      "claim": "This would result in \u224840 nephrons in the 1.5 \u00d7 1.5 \u00b5m field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering high vascular density close to the renal surface, it would mean that LSCI is likely limited to imaging vessels originating from \u224810000 nephrons in outer 30% of rat renal cortex (Letts et al., 2017), which would result in \u224840 nephrons in the 1.5 \u00d7 1.5 \u00b5m field of view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on anatomical estimates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "f3184e5a-52d8-4448-ad76-c4f09dd8025c",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C76",
+      "claim": "The larger number of segmented vessels can be explained by their mixed type - afferent and efferent arterioles as well as venules are likely to be segmented.",
+      "claim_type": "EXPLICIT",
+      "source": "The larger number of segmented vessels can be explained by their mixed type - afferent and efferent arterioles as well as venules are likely to be segmented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the discrepancy between vessel count and nephron count based on vascular anatomy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "4aa09bab-8117-41eb-a07a-2525bf56b102",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C77",
+      "claim": "Within the 1.5 \u00d7 1.5 \u00b5m field of view, we observe arterioles that arise from different non-terminal arteries.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering renal vascular topology, it is to be expected that within the 1.5 \u00d7 1.5 \u00b5m field of view, we observe arterioles that arise from different non-terminal arteries (Marsh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of renal vascular anatomy, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "221a534f-a24c-4bbf-8744-c967483844e6",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C78",
+      "claim": "When a synchronous cluster is observed with LSCI, it is likely to extend several branching orders in depth and reach the size of hundreds and even thousands of nephrons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when a synchronous cluster is observed with LSCI, it is likely to extend several branching orders in depth and reach the size of hundreds and even thousands of nephrons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the actual size of synchronous clusters based on vascular topology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "4643d3a1-1179-4147-a161-f99a035ef9a1",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C79",
+      "claim": "The exact role of inter-nephron communication, co-operative dynamics, and synchronization in kidney-related pathology development is still unclear and requires further exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "While the exact role of inter-nephron communication, co-operative dynamics, and synchronization in kidney-related pathology development is still unclear and requires further exploration, it is evidently altered by the blood pressure and vascular tone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "5c47c82d-cd95-4aae-9c2b-9c48202f8d1f",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C80",
+      "claim": "Inter-nephron communication is evidently altered by blood pressure and vascular tone.",
+      "claim_type": "EXPLICIT",
+      "source": "While the exact role of inter-nephron communication, co-operative dynamics, and synchronization in kidney-related pathology development is still unclear and requires further exploration, it is evidently altered by the blood pressure and vascular tone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations showing different synchronization patterns under different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "5f457d8b-8bac-4209-928b-84bfbbdfdb9f",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C81",
+      "claim": "Strong local coupling and in-phase synchronization are likely to increase pressure variation at the level of afferent arterioles.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong local coupling and in-phase synchronization, while being not evident at the renal artery level (Postnov et al., 2015a), are likely to increase pressure variation at the level of afferent arterioles (Postnov et al., 2012; Postnov et al., 2016a), thus increasing chances of local damage and aggravating pathological condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to modeling studies and represents an inference about pathological consequences.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "690523e6-b810-4f7e-b57d-03ef94bbd3ca",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C82",
+      "claim": "Increased pressure variation at the level of afferent arterioles increases chances of local damage and aggravates pathological condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong local coupling and in-phase synchronization, while being not evident at the renal artery level (Postnov et al., 2015a), are likely to increase pressure variation at the level of afferent arterioles (Postnov et al., 2012; Postnov et al., 2016a), thus increasing chances of local damage and aggravating pathological condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about pathological consequences based on the physiological effects of pressure variation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "c64d6200-a55b-4cd1-beb4-9de1edccd49c",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C83",
+      "claim": "All experimental protocols were approved by the Danish National Animal Experiments Inspectorate (License 2015-15-0201-00463).",
+      "claim_type": "EXPLICIT",
+      "source": "All experimental protocols were approved by the Danish National Animal Experiments Inspectorate (License 2015-15-0201-00463) and were conducted according to the American Physiological Society guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "61032c80-2903-4bbd-b48f-835730a6c043",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C84",
+      "claim": "Male Sprague Dawley rats with average weight \u2248290 g (n = 5) were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Male Sprague Dawley rats (Taconic, Denmark) with average weight \u2248290 g (n = 5) were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "ccd715d9-bcb9-4ba4-b69a-964d8fe56919",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C85",
+      "claim": "Across all experiments, average arterial pressure was 112 \u00b1 2 during control.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all experiments, average arterial pressure was 112 \u00b1 2, 127 \u00b1 6, and 100 \u00b1 4 during the control, vasoconstrited (AngII), and vasodilated (ACh) conditions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of arterial pressure during the control condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "e8c9fcdf-2fb1-4bc6-8004-502ce3f0eb7b",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C86",
+      "claim": "Across all experiments, average arterial pressure was 127 \u00b1 6 during vasoconstricted (AngII) condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all experiments, average arterial pressure was 112 \u00b1 2, 127 \u00b1 6, and 100 \u00b1 4 during the control, vasoconstrited (AngII), and vasodilated (ACh) conditions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of arterial pressure during AngII infusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "1f3cccb2-ec62-4af6-9c73-57feba480fc6",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C87",
+      "claim": "Across all experiments, average arterial pressure was 100 \u00b1 4 during vasodilated (ACh) condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all experiments, average arterial pressure was 112 \u00b1 2, 127 \u00b1 6, and 100 \u00b1 4 during the control, vasoconstrited (AngII), and vasodilated (ACh) conditions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of arterial pressure during ACh infusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "15a772d2-301f-47f5-ba94-af66455e08d0",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C88",
+      "claim": "A single-mode fiber-coupled laser diode (785 nm) was used to deliver coherent light onto kidney surface with a power density of approximately 10 mW/cm\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "A single-mode fiber-coupled laser diode (785 nm, LP785-SF100, Thorlabs, USA) controlled with a laser driver and temperature controller (CLD1011LP, Thorlabs, USA) was used to deliver coherent light onto kidney surface with a power density of approximately 10 mW/cm2, providing an optimal signal-to-noise ratio (Postnov et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the imaging system specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "e57ecfef-0842-4114-8b9f-19783447c712",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C89",
+      "claim": "Exposure time was set to 5 ms, which provides optimal sensitivity to slow flows, such as in capillary perfused tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure time was set to 5 ms, which provides optimal sensitivity to slow flows, such as in capillary perfused tissue (Yuan et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice supported by citation to prior work on LSCI optimization.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "747b96e1-56fa-464e-b119-dc87a0d22a59",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C90",
+      "claim": "The system provides an image resolution of 2.25 \u00b5m\u00b2/px compared with previously published studies on renal synchronization, which used the system with the image resolution of 45\u2013400 \u00b5m\u00b2/px.",
+      "claim_type": "EXPLICIT",
+      "source": "The system provides an image resolution of 2.25 \u00b5m2/px compared with previously published studies on renal synchronization, which used the system with the image resolution of 45\u2013400 \u00b5m2/px (Holstein-Rathlou et al., 2011; Scully et al., 2013; Mitrou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current system's capabilities with prior systems, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "2c11c379-4464-4928-8b15-375a54ec40c8",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C91",
+      "claim": "The system has a higher temporal resolution (50 fps instead of 25) compared to previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the system has a higher temporal resolution (50 fps instead of 25) and utilizes a better light source (Postnov et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of temporal resolution with prior systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "0e65a213-4d59-4bbe-a561-91f64f916504",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C92",
+      "claim": "These factors improve the expected signal-to-noise ratio per area unit by at least 30 times.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined and considering noise reduction achieved by spatial and temporal averaging, these factors improve the expected signal-to-noise ratio per area unit by at least 30 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation of the improvement in signal-to-noise ratio based on the system specifications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "d921d178-7143-4fd6-8512-6dd5751a6917",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C95",
+      "claim": "Continuous wavelet transform analysis (Morse wavelet) was applied to segmented vessels' BFI to identify the frequency and phase of dominant periodic activity in the 0.015\u20130.05 Hz frequency band associated with the TGF mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "To study synchronization patterns between microcirculatory vessels and, thus, obtain insight into inter-nephron communication, we apply continuous wavelet transform analysis (Morse wavelet, MATLAB) to segmented vessels' BFI. We identified the frequency and phase of dominant periodic activity in the 0.015\u20130.05 Hz frequency band associated with the TGF mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis method used to study synchronization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "773cc672-3e11-4d97-88e8-a74928f7f6fb",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C96",
+      "claim": "Blood flow in different segmented vessels is considered to be synchronized whenever their dominant frequencies match.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we consider blood flow in different segmented vessels to be synchronized whenever their dominant frequencies match.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the synchronization criterion used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "933f8ce2-4f65-40cf-8ad6-fb298f0db67a",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C102",
+      "claim": "Paired t-test was applied to compare results between control, AngII infusion, and ACh infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Paired t-test was applied to compare results between control, AngII infusion, and ACh infusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "d057f8a1-09c4-412a-9715-af0a657cd268",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "claim_id": "C103",
+      "claim": "p-values greater than 0.05 are reported as not significant.",
+      "claim_type": "EXPLICIT",
+      "source": "p-values greater than 0.05 are reported as not significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the statistical significance threshold used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "64cbe5e4-6940-4945-bfb4-361646e62d62",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a high-resolution LSCI system with 0.8 \u03bcm/pixel spatial resolution and up to 160 Hz temporal resolution, representing a ~30-fold improvement in signal-to-noise ratio compared to previous systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25, C88-C92 provide detailed technical specifications of the imaging system. The comparison with prior systems (C90-C91) and the calculated improvement (C92) are well-documented. The improved data quality is demonstrated in Figure 1\u2014figure supplement 1 (C28), providing visual confirmation of the methodological advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "70094b90-7c7b-4ede-8a34-7c1efacd3554",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Large synchronized blood flow clusters (>90 vessels) lasting >10 TGF periods were observed in renal microcirculation, with cluster size and synchronization patterns varying significantly across experimental conditions (control, AngII, ACh).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C26-C27 describe specific observations of large clusters with quantitative metrics. Claims C37-C38 provide statistical support (p<0.05) for condition-dependent differences. The synchronization degree measurements (C60-C61) across conditions provide converging evidence. However, the translation from vessels to nephrons remains uncertain (C71, C74-C78).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "bcae7233-ffe4-4da3-94fb-bb9f1fa8e7cc",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AngII infusion increased blood pressure to 127\u00b16 mmHg, decreased blood flow by 17.3\u00b12.3%, and significantly enhanced synchronization with vessels synchronized 20-50% of the time and increased anti-phase synchronization to 5%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C29, C86 provide physiological measurements. Claims C37, C50, C55-C56 quantify synchronization changes with statistical support. The convergence of hemodynamic changes (blood pressure, flow) with synchronization metrics provides strong evidence for AngII's effect on promoting synchronization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "03296a29-4bfd-4a7f-a357-06b1b94a86dc",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ACh infusion decreased blood pressure to 100\u00b14 mmHg, increased blood flow by 27.7\u00b113.3%, and caused near-complete desynchronization with only 13-15% synchronization duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C30, C87 document physiological changes. Claims C38, C58 quantify the dramatic reduction in synchronization with statistical support (p<0.05). The large standard deviation in blood flow change (\u00b113.3%) suggests high variability, but the overall pattern of desynchronization is consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "8c1ab321-25e1-4643-97f1-f95f861129af",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Phase waves were observed propagating across synchronized clusters, with phase gradients of ~0.3 rad/mm in control/ACh conditions and ~1 rad/mm during AngII infusion. Wave direction was not predetermined by vascular structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C51-C53 provide quantitative measurements of phase gradients across conditions. Claim C64 with Figure 4 demonstrates direction changes within the same animal. The spatial phase analysis (Figure 5B) provides visual confirmation. However, the mechanism remains speculative (C65, C68).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "66c064ab-d154-40c5-b391-40fb89c1d03e",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The enhanced synchronization and increased anti-phase coupling during AngII infusion is consistent with strengthened hemodynamic coupling due to increased vascular resistance, as predicted by prior mathematical modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C62-C63 connect experimental observations with prior modeling predictions (Postnov et al., 2012). Claim C48 links findings to micropuncture studies. The convergence of experimental data with theoretical predictions strengthens the mechanistic interpretation, though the explanation remains partially inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "0fd2ca2a-5e38-4dbd-a3e1-67a8c21d81b4",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Synchronization duration decreased with distance between vessels in all conditions, with the strongest distance-dependence during AngII infusion (40\u00b113% to 24\u00b16% over 1mm) and weakest during ACh infusion (15\u00b17% to 13\u00b17%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 provide quantitative measurements of synchronization duration as a function of distance. Claim C59 interprets this as evidence for long-distance communication. The data are clearly presented in Figure 5C with appropriate statistical analysis, though the large standard deviations indicate substantial variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "af333267-adc3-47b0-ad6a-2b3d8a3cab24",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The presence of phase waves supports deterministic synchronization mechanisms rather than random entrainment, potentially involving diffusive interactions or long-distance electrical signaling similar to brain and heart tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 makes an inference about mechanism based on phase wave observations. Claims C67-C68 draw analogies to other biological systems but remain speculative. While the observation of phase waves is well-supported, the mechanistic interpretation requires additional experimental validation beyond the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "bb6e93e4-6752-4eec-887b-40b61d6ad556",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The imaging depth limitation (50-150 \u03bcm) and vascular topology suggest that observed clusters of ~95 vessels likely represent hundreds to thousands of nephrons extending through multiple branching orders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C78 provide estimates based on anatomical knowledge and cited literature. However, these are calculations and inferences rather than direct measurements. Claim C71 explicitly acknowledges this limitation. The extrapolation from surface vessels to total nephron count involves multiple assumptions about vascular topology and depth distribution that are not directly validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "0a507fae-7ec5-4f8d-9656-8b82668a2a71",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Local synchronization in renal microcirculatory blood flow is confirmed and is altered by blood pressure and vascular tone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C80 summarize the main conclusions. These are well-supported by the experimental observations across multiple conditions (C6-C7, C37-C38, C55-C58) with appropriate statistical analysis. The convergence of multiple lines of evidence (frequency matching, phase analysis, duration measurements) strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "5d8e5af6-55eb-40c5-87ba-15b9460376e3",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Strong local coupling and in-phase synchronization may increase pressure variation at afferent arterioles, potentially increasing risk of local damage and pathological conditions, though the exact role in pathology remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C82 are based on citations to modeling studies rather than direct experimental evidence in this manuscript. Claim C79 explicitly acknowledges uncertainty about the pathological role. While the physiological reasoning is sound and supported by prior modeling, this manuscript does not provide direct evidence of pathological consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "d6b560e8-27d8-46d2-918a-3fe5f9b8f2ae",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior studies demonstrated nephron synchronization over short distances using micropuncture (limited to pairs/triplets) and LSCI, but previous LSCI methods lacked sufficient resolution to confirm large-scale synchronization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C18-C20, C23-C24 accurately summarize prior work with appropriate citations. The assessment of prior LSCI limitations (C24) is supported by the technical comparison in C90-C91. This provides appropriate context for the current study's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "f9f9c5e7-7233-4816-95b2-4f723845b099",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Renal autoregulation involves myogenic (0.1-0.2 Hz) and TGF (0.02-0.033 Hz) mechanisms, with nephrons linked through vascular and electrical connections. Synchronization could enhance autoregulation efficiency but might also contribute to glomerular injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 describe established mechanisms with extensive citations. Claims C13-C17 summarize current understanding of nephron interactions and their potential functional consequences, all supported by appropriate citations. This provides accurate background knowledge for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "a9fcc17e-3219-4217-935d-e15369e533c0",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Experiments used 5 male Sprague Dawley rats (~290g) with appropriate ethical approval, measuring arterial pressure under three conditions (control: 112\u00b12, AngII: 127\u00b16, ACh: 100\u00b14 mmHg) and analyzing data with paired t-tests (p<0.05 threshold).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87, C102-C103 provide methodological details. The sample size (n=5) is modest but reasonable for this type of physiological imaging study. Statistical methods are appropriate for paired comparisons. Ethical approval is documented. However, no power analysis or justification for sample size is provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "1c43f8fa-84f9-4752-a0a4-b84b1446ffa1",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Synchronization was defined as frequency matching in the TGF band (0.015-0.05 Hz) using continuous wavelet transform analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 clearly define the analytical approach and synchronization criterion. This is a reasonable operational definition, though it focuses only on frequency matching and does not require phase coherence for the basic synchronization classification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    },
+    {
+      "id": "ff3ba558-1ec9-4e0d-a30f-131d9fd42cf8",
+      "content_id": "27aa9941-9984-4430-9da5-525eb27dcf9b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The possibility of phase waves was previously hinted at in an earlier LSCI study of spatial correlations in renal blood flow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 appropriately cites prior work (Brazhe et al., 2014) that suggested phase waves. This provides proper attribution and context for the current more definitive observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:48:48.238981Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7d4e36a1-0044-468b-8170-4ebca67f4aa8",
+      "result_id": "64cbe5e4-6940-4945-bfb4-361646e62d62"
+    },
+    {
+      "claim_id": "c7e4db8d-7c25-4878-86d8-ae9355a8beed",
+      "result_id": "64cbe5e4-6940-4945-bfb4-361646e62d62"
+    },
+    {
+      "claim_id": "83177272-1fc1-460a-a4ea-81f2544a5dab",
+      "result_id": "64cbe5e4-6940-4945-bfb4-361646e62d62"
+    },
+    {
+      "claim_id": "15a772d2-301f-47f5-ba94-af66455e08d0",
+      "result_id": "64cbe5e4-6940-4945-bfb4-361646e62d62"
+    },
+    {
+      "claim_id": "e57ecfef-0842-4114-8b9f-19783447c712",
+      "result_id": "64cbe5e4-6940-4945-bfb4-361646e62d62"
+    },
+    {
+      "claim_id": "747b96e1-56fa-464e-b119-dc87a0d22a59",
+      "result_id": "64cbe5e4-6940-4945-bfb4-361646e62d62"
+    },
+    {
+      "claim_id": "2c11c379-4464-4928-8b15-375a54ec40c8",
+      "result_id": "64cbe5e4-6940-4945-bfb4-361646e62d62"
+    },
+    {
+      "claim_id": "0e65a213-4d59-4bbe-a561-91f64f916504",
+      "result_id": "64cbe5e4-6940-4945-bfb4-361646e62d62"
+    },
+    {
+      "claim_id": "66185a3e-eeef-4f5f-9343-ddcb60c1d1e3",
+      "result_id": "70094b90-7c7b-4ede-8a34-7c1efacd3554"
+    },
+    {
+      "claim_id": "bb118413-3560-422d-b55c-08ac80fc87ce",
+      "result_id": "70094b90-7c7b-4ede-8a34-7c1efacd3554"
+    },
+    {
+      "claim_id": "21cc75a1-3042-4015-9cac-d7ff2274c3f1",
+      "result_id": "70094b90-7c7b-4ede-8a34-7c1efacd3554"
+    },
+    {
+      "claim_id": "1da6d81a-ee6a-4642-83ae-9dff95980f68",
+      "result_id": "70094b90-7c7b-4ede-8a34-7c1efacd3554"
+    },
+    {
+      "claim_id": "cc2cc54c-89d9-4e4a-80c0-3493749f91b7",
+      "result_id": "70094b90-7c7b-4ede-8a34-7c1efacd3554"
+    },
+    {
+      "claim_id": "a460138a-9891-46cb-8bc7-4e64fdccb963",
+      "result_id": "70094b90-7c7b-4ede-8a34-7c1efacd3554"
+    },
+    {
+      "claim_id": "2b5912e8-124c-4252-95c2-9593ddfe5a99",
+      "result_id": "70094b90-7c7b-4ede-8a34-7c1efacd3554"
+    },
+    {
+      "claim_id": "31fd99e4-388b-4281-abb8-72809333a570",
+      "result_id": "bcae7233-ffe4-4da3-94fb-bb9f1fa8e7cc"
+    },
+    {
+      "claim_id": "68e4d4bb-f449-486b-8890-fcaf6df18284",
+      "result_id": "bcae7233-ffe4-4da3-94fb-bb9f1fa8e7cc"
+    },
+    {
+      "claim_id": "1da6d81a-ee6a-4642-83ae-9dff95980f68",
+      "result_id": "bcae7233-ffe4-4da3-94fb-bb9f1fa8e7cc"
+    },
+    {
+      "claim_id": "f9859261-d32b-4486-98d5-8dae5868dcec",
+      "result_id": "bcae7233-ffe4-4da3-94fb-bb9f1fa8e7cc"
+    },
+    {
+      "claim_id": "41bf5d01-46a4-4314-b770-6cf0087c9ad2",
+      "result_id": "bcae7233-ffe4-4da3-94fb-bb9f1fa8e7cc"
+    },
+    {
+      "claim_id": "c6575bb6-84d7-4a2d-a561-2ef9f4158d6b",
+      "result_id": "bcae7233-ffe4-4da3-94fb-bb9f1fa8e7cc"
+    },
+    {
+      "claim_id": "e8c9fcdf-2fb1-4bc6-8004-502ce3f0eb7b",
+      "result_id": "bcae7233-ffe4-4da3-94fb-bb9f1fa8e7cc"
+    },
+    {
+      "claim_id": "d0e8b9da-a134-49af-9544-48301e658ab6",
+      "result_id": "03296a29-4bfd-4a7f-a357-06b1b94a86dc"
+    },
+    {
+      "claim_id": "45ba8bf3-633f-4cbe-a3bf-97d353de345f",
+      "result_id": "03296a29-4bfd-4a7f-a357-06b1b94a86dc"
+    },
+    {
+      "claim_id": "cc2cc54c-89d9-4e4a-80c0-3493749f91b7",
+      "result_id": "03296a29-4bfd-4a7f-a357-06b1b94a86dc"
+    },
+    {
+      "claim_id": "904554e2-5015-47a8-b6d8-7762141d956b",
+      "result_id": "03296a29-4bfd-4a7f-a357-06b1b94a86dc"
+    },
+    {
+      "claim_id": "1f3cccb2-ec62-4af6-9c73-57feba480fc6",
+      "result_id": "03296a29-4bfd-4a7f-a357-06b1b94a86dc"
+    },
+    {
+      "claim_id": "815114d6-c007-4769-8c8d-1787f899e451",
+      "result_id": "8c1ab321-25e1-4643-97f1-f95f861129af"
+    },
+    {
+      "claim_id": "6eefeeac-bbd6-4399-8f58-9c82b86f204e",
+      "result_id": "8c1ab321-25e1-4643-97f1-f95f861129af"
+    },
+    {
+      "claim_id": "0e3448a5-2ad4-48f2-ab7f-0999f38246ab",
+      "result_id": "8c1ab321-25e1-4643-97f1-f95f861129af"
+    },
+    {
+      "claim_id": "af997975-6147-4271-b8a3-6a37760dc959",
+      "result_id": "8c1ab321-25e1-4643-97f1-f95f861129af"
+    },
+    {
+      "claim_id": "68a527ca-5b32-48f2-8467-dd8125e75b9b",
+      "result_id": "8c1ab321-25e1-4643-97f1-f95f861129af"
+    },
+    {
+      "claim_id": "71c26a5e-7712-4f29-8c3b-7c85ab05b7f2",
+      "result_id": "66c064ab-d154-40c5-b391-40fb89c1d03e"
+    },
+    {
+      "claim_id": "e1d158ee-7a76-4a75-8ae2-6fa5f44e6f2d",
+      "result_id": "66c064ab-d154-40c5-b391-40fb89c1d03e"
+    },
+    {
+      "claim_id": "7be58d90-632e-4e8e-ae74-c07c6db93e68",
+      "result_id": "66c064ab-d154-40c5-b391-40fb89c1d03e"
+    },
+    {
+      "claim_id": "87b49966-e418-4c23-a6ec-b6014ab66c1a",
+      "result_id": "66c064ab-d154-40c5-b391-40fb89c1d03e"
+    },
+    {
+      "claim_id": "4777b8d8-f68e-40b6-86c1-2195246cc95f",
+      "result_id": "0fd2ca2a-5e38-4dbd-a3e1-67a8c21d81b4"
+    },
+    {
+      "claim_id": "41bf5d01-46a4-4314-b770-6cf0087c9ad2",
+      "result_id": "0fd2ca2a-5e38-4dbd-a3e1-67a8c21d81b4"
+    },
+    {
+      "claim_id": "c6575bb6-84d7-4a2d-a561-2ef9f4158d6b",
+      "result_id": "0fd2ca2a-5e38-4dbd-a3e1-67a8c21d81b4"
+    },
+    {
+      "claim_id": "fa1a7f79-75f6-4a19-83f0-ed51d2baa973",
+      "result_id": "0fd2ca2a-5e38-4dbd-a3e1-67a8c21d81b4"
+    },
+    {
+      "claim_id": "904554e2-5015-47a8-b6d8-7762141d956b",
+      "result_id": "0fd2ca2a-5e38-4dbd-a3e1-67a8c21d81b4"
+    },
+    {
+      "claim_id": "7f95473b-6593-46bd-9398-d6f45db72a75",
+      "result_id": "af333267-adc3-47b0-ad6a-2b3d8a3cab24"
+    },
+    {
+      "claim_id": "582e8f55-6eb9-434a-9180-9e7ae8287c79",
+      "result_id": "af333267-adc3-47b0-ad6a-2b3d8a3cab24"
+    },
+    {
+      "claim_id": "a1b4910b-e028-42f0-9aab-e62bf703ae8c",
+      "result_id": "af333267-adc3-47b0-ad6a-2b3d8a3cab24"
+    },
+    {
+      "claim_id": "7f20fa62-bd39-475a-939a-275894b3bf79",
+      "result_id": "bb6e93e4-6752-4eec-887b-40b61d6ad556"
+    },
+    {
+      "claim_id": "14b2279b-6427-41d5-94a6-da780b4b52ec",
+      "result_id": "bb6e93e4-6752-4eec-887b-40b61d6ad556"
+    },
+    {
+      "claim_id": "e2094100-72c0-4605-81a0-993c98f08c76",
+      "result_id": "bb6e93e4-6752-4eec-887b-40b61d6ad556"
+    },
+    {
+      "claim_id": "b4b3cc04-f080-465c-ab21-5ca6473dfb8e",
+      "result_id": "bb6e93e4-6752-4eec-887b-40b61d6ad556"
+    },
+    {
+      "claim_id": "42cc9e1d-f839-4a66-ade7-9280bf9caebd",
+      "result_id": "bb6e93e4-6752-4eec-887b-40b61d6ad556"
+    },
+    {
+      "claim_id": "f3184e5a-52d8-4448-ad76-c4f09dd8025c",
+      "result_id": "bb6e93e4-6752-4eec-887b-40b61d6ad556"
+    },
+    {
+      "claim_id": "4aa09bab-8117-41eb-a07a-2525bf56b102",
+      "result_id": "bb6e93e4-6752-4eec-887b-40b61d6ad556"
+    },
+    {
+      "claim_id": "221a534f-a24c-4bbf-8744-c967483844e6",
+      "result_id": "bb6e93e4-6752-4eec-887b-40b61d6ad556"
+    },
+    {
+      "claim_id": "21d7f5ad-9739-48d8-b61e-4b474262ccd5",
+      "result_id": "0a507fae-7ec5-4f8d-9656-8b82668a2a71"
+    },
+    {
+      "claim_id": "c85648ad-ad2b-42ae-9b19-5426b8fd6a31",
+      "result_id": "0a507fae-7ec5-4f8d-9656-8b82668a2a71"
+    },
+    {
+      "claim_id": "5c47c82d-cd95-4aae-9c2b-9c48202f8d1f",
+      "result_id": "0a507fae-7ec5-4f8d-9656-8b82668a2a71"
+    },
+    {
+      "claim_id": "4643d3a1-1179-4147-a161-f99a035ef9a1",
+      "result_id": "5d8e5af6-55eb-40c5-87ba-15b9460376e3"
+    },
+    {
+      "claim_id": "5f457d8b-8bac-4209-928b-84bfbbdfdb9f",
+      "result_id": "5d8e5af6-55eb-40c5-87ba-15b9460376e3"
+    },
+    {
+      "claim_id": "690523e6-b810-4f7e-b57d-03ef94bbd3ca",
+      "result_id": "5d8e5af6-55eb-40c5-87ba-15b9460376e3"
+    },
+    {
+      "claim_id": "39b3bd01-7119-47e2-b54d-3f9023ed6413",
+      "result_id": "d6b560e8-27d8-46d2-918a-3fe5f9b8f2ae"
+    },
+    {
+      "claim_id": "45d65a5d-3232-4a59-9a73-fc87fe5aa23e",
+      "result_id": "d6b560e8-27d8-46d2-918a-3fe5f9b8f2ae"
+    },
+    {
+      "claim_id": "25824d1f-6a26-44fa-9314-154d1588a327",
+      "result_id": "d6b560e8-27d8-46d2-918a-3fe5f9b8f2ae"
+    },
+    {
+      "claim_id": "c15afbfe-0da8-4838-bbbd-8f7cb9a93637",
+      "result_id": "d6b560e8-27d8-46d2-918a-3fe5f9b8f2ae"
+    },
+    {
+      "claim_id": "1f59da68-50b0-40b8-84fa-c08bacf0970e",
+      "result_id": "d6b560e8-27d8-46d2-918a-3fe5f9b8f2ae"
+    },
+    {
+      "claim_id": "889f73f5-5b51-4a77-a930-4f2d7d064fa5",
+      "result_id": "d6b560e8-27d8-46d2-918a-3fe5f9b8f2ae"
+    },
+    {
+      "claim_id": "c6df3d4a-ab29-4677-a647-43f9fc9ceca6",
+      "result_id": "d6b560e8-27d8-46d2-918a-3fe5f9b8f2ae"
+    },
+    {
+      "claim_id": "9ce1c979-4f23-4973-a9d5-2d0453772977",
+      "result_id": "d6b560e8-27d8-46d2-918a-3fe5f9b8f2ae"
+    },
+    {
+      "claim_id": "519bcb2c-91d1-445d-91a9-71139dc227ec",
+      "result_id": "f9f9c5e7-7233-4816-95b2-4f723845b099"
+    },
+    {
+      "claim_id": "38896e8f-c3b0-48ee-b4d2-1ee1e981cd63",
+      "result_id": "f9f9c5e7-7233-4816-95b2-4f723845b099"
+    },
+    {
+      "claim_id": "0575e85d-b2cd-4e91-a70a-88099cb16641",
+      "result_id": "f9f9c5e7-7233-4816-95b2-4f723845b099"
+    },
+    {
+      "claim_id": "fb0619f2-0b39-414b-bb28-7083f1325c9b",
+      "result_id": "f9f9c5e7-7233-4816-95b2-4f723845b099"
+    },
+    {
+      "claim_id": "56167f0e-522a-4798-9f44-75d94e89884a",
+      "result_id": "f9f9c5e7-7233-4816-95b2-4f723845b099"
+    },
+    {
+      "claim_id": "3c744a72-d8ad-424c-8f1f-601f44106c6e",
+      "result_id": "f9f9c5e7-7233-4816-95b2-4f723845b099"
+    },
+    {
+      "claim_id": "7bc3bf7f-966e-4933-b897-fe2dc77e946c",
+      "result_id": "f9f9c5e7-7233-4816-95b2-4f723845b099"
+    },
+    {
+      "claim_id": "f9ce641e-50e0-4c2c-b837-fc56dfcce563",
+      "result_id": "f9f9c5e7-7233-4816-95b2-4f723845b099"
+    },
+    {
+      "claim_id": "c64d6200-a55b-4cd1-beb4-9de1edccd49c",
+      "result_id": "a9fcc17e-3219-4217-935d-e15369e533c0"
+    },
+    {
+      "claim_id": "61032c80-2903-4bbd-b48f-835730a6c043",
+      "result_id": "a9fcc17e-3219-4217-935d-e15369e533c0"
+    },
+    {
+      "claim_id": "ccd715d9-bcb9-4ba4-b69a-964d8fe56919",
+      "result_id": "a9fcc17e-3219-4217-935d-e15369e533c0"
+    },
+    {
+      "claim_id": "e8c9fcdf-2fb1-4bc6-8004-502ce3f0eb7b",
+      "result_id": "a9fcc17e-3219-4217-935d-e15369e533c0"
+    },
+    {
+      "claim_id": "1f3cccb2-ec62-4af6-9c73-57feba480fc6",
+      "result_id": "a9fcc17e-3219-4217-935d-e15369e533c0"
+    },
+    {
+      "claim_id": "933f8ce2-4f65-40cf-8ad6-fb298f0db67a",
+      "result_id": "a9fcc17e-3219-4217-935d-e15369e533c0"
+    },
+    {
+      "claim_id": "d057f8a1-09c4-412a-9715-af0a657cd268",
+      "result_id": "a9fcc17e-3219-4217-935d-e15369e533c0"
+    },
+    {
+      "claim_id": "d921d178-7143-4fd6-8512-6dd5751a6917",
+      "result_id": "1c43f8fa-84f9-4752-a0a4-b84b1446ffa1"
+    },
+    {
+      "claim_id": "773cc672-3e11-4d97-88e8-a74928f7f6fb",
+      "result_id": "1c43f8fa-84f9-4752-a0a4-b84b1446ffa1"
+    },
+    {
+      "claim_id": "7c6fce98-eac4-4343-bfaf-62e6703a458c",
+      "result_id": "ff3ba558-1ec9-4e0d-a30f-131d9fd42cf8"
+    }
+  ],
+  "comparisons": []
+}

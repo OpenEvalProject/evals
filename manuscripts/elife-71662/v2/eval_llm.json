@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C83",
+      "C84"
+    ],
+    "result": "The Pik NLR pair consists of sensor Pik-1 and helper Pik-2, which are genetically linked on rice chromosome 11 and have coevolved over tens of millions of years. The pair exists as allelic variants (Pikp and Pikm) in different rice cultivars, with differential recognition specificities for AVR-Pik effector variants from the blast fungus Magnaporthe oryzae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the background context for the study and are supported by multiple citations to prior work (C1-C5, C49-C56, C71-C76, C83-C84). The evolutionary history and functional characterization of the Pik system are well-documented in the literature, providing a solid foundation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C51"
+    ],
+    "result": "Pikm-2 is required for full Pikm-mediated cell death responses to AVR-Pik effectors in N. benthamiana, as demonstrated by reduced cell death when Pikm-1 is paired with Pikp-2 instead of Pikm-2, despite similar protein accumulation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by experimental data in Figure 1 showing differential cell death responses and western blot analysis (C7). The hierarchical response pattern (C51) is supported by prior work. The data demonstrate helper NLR specialization, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "A single amino acid polymorphism at position 230 in Pik-2 (Asp in Pikp-2 vs Glu in Pikm-2) is a major determinant of differential cell death responses to AVR-Pik effectors, with the Asp230Glu mutation in Pikp-2 increasing responses and the reciprocal Glu230Asp mutation in Pikm-2 reducing them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are strongly supported by systematic mutagenesis experiments shown in Figure 2 and supplements. The reciprocal mutations produce opposite effects on cell death responses, providing compelling evidence for the functional importance of this single residue. Statistical analysis confirms significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C46"
+    ],
+    "result": "Mismatched Pik NLR pairs display constitutive cell death in N. benthamiana, with Pikp-1/Pikm-2 triggering autoimmune responses in the absence of effector, while the reciprocal mismatch Pikm-1/Pikp-2 does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C46 are supported by cell death assay data in Figure 3. The asymmetric autoimmunity pattern (only one mismatch is autoactive) is clearly demonstrated. This represents a key finding showing functional incompatibility between diverged NLR pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Mutations in conserved P-loop (Lys217Arg) and MHD (Asp559Val) motifs of Pikm-2 abolish both effector-triggered and constitutive cell death responses, confirming that autoimmunity is linked to immune signaling and requires an intact MHD motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 are supported by cell death assays in Figure 4 and prior work (C15, C18). The data demonstrate that both effector-triggered and autoimmune cell death require functional NLR motifs, establishing a mechanistic link between autoimmunity and immune activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The position 230 polymorphism determines both effector response specialization and autoimmunity, with Asp230Glu in Pikp-2 conferring strong constitutive activation with Pikp-1, while Glu230Asp in Pikm-2 abrogates autoimmunity. This autoactivation is dependent on P-loop and MHD motifs but shows reduced dependence on the sensor Pik-1 P-loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are supported by extensive mutagenesis data in Figure 5 and supplements. The same residue controls both effector response intensity and autoimmunity, linking specialization with immune homeostasis. The partial dependence on Pik-1 P-loop (C24) adds complexity to the activation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Phylogenetic analysis reveals that Gly is the ancestral state at position 230, with a Gly\u2192Asp transition occurring before the split of O. sativa and O. punctata, followed by an Asp\u2192Glu mutation in the Pikm clade. Reverting Pikm-2 Glu230 to ancestral Gly abolishes autoimmunity while maintaining effector responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by phylogenetic analysis in Figure 6A and functional validation in Figure 6B. The evolutionary reconstruction is based on maximum likelihood methods with appropriate outgroups. The functional validation of the ancestral state (C28) provides strong support for the evolutionary trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Pik-1 and Pik-2 proteins show increased accumulation when co-expressed together compared to expression with empty vector, consistent with formation of stabilizing sensor/helper heterocomplexes. The autoimmune pair Pikp-1/Pikm-2 shows consistently higher Pik-2 accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by western blot data in Figure 7A. The increased protein stability upon co-expression is consistent with complex formation (C30), though this is inferred rather than directly demonstrated. The elevated Pik-2 levels in autoimmune pairs (C31) suggest altered stoichiometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Both matched and mismatched Pik NLR pairs form heterocomplexes detectable by co-immunoprecipitation, and none of the Pik-2 mutations (including position 230 variants) measurably affect sensor/helper association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by co-IP data in Figure 7B and supplements. The data show that all combinations associate, indicating that autoimmunity is not due to loss of association. However, the assays may not detect subtle changes in binding affinity or complex dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Mutations in P-loop and MHD motifs of Pikm-2 do not prevent association with Pik-1, and Pik-1 P-loop mutants retain association with Pik-2, indicating that pre-activation complex formation is independent of nucleotide binding and does not require functional NLRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by co-IP data in Figure 8 and supplement. The data clearly show that non-functional NLR mutants still associate with their partners. The inference that association is independent of nucleotide binding (C36) is reasonable but not directly tested with nucleotide competition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Coevolved Pik NLRs display preferential association, as demonstrated by competition assays where increasing concentrations of Pikp-2 suppress Pikp-1/Pikm-2 autoimmune cell death by outcompeting Pikm-2 from heterocomplex formation with Pikp-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by competition assays (Figure 9A-B) and co-IP data (Figure 9C). The dose-dependent suppression of autoimmunity and corresponding reduction in Pikm-2 association provide strong evidence for preferential binding. However, the authors acknowledge challenges in interpreting protein levels due to differential stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The Glu230 polymorphism affects preferential association between sensor and helper NLRs, as wild-type Pikp-2 can suppress autoimmune cell death triggered by Pikp-1/Pikp-2 Asp230Glu, indicating the polymorphism influences both effector response and partner preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by competition assay data in Figure 10. The ability of wild-type Pikp-2 to suppress the autoactive mutant demonstrates that position 230 affects association dynamics. This links the same residue to three phenotypes: effector response, autoimmunity, and partner preference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "P-loop and MHD motifs are required for preferential sensor/helper association, as Pikp-2 mutants in these motifs cannot suppress autoimmune cell death in competition assays, suggesting these motifs are important for transitions from resting to activated complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by competition assay data in Figure 11. The inability of P-loop and MHD mutants to compete effectively, despite their ability to form pre-activation complexes (C34), suggests these motifs are required for dynamic changes during activation. The inference about resting-to-activated transitions (C45) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "A single amino acid polymorphism at position 230 in helper NLR Pik-2 underpins both allelic specialization and immune homeostasis, demonstrating that NLR pairs can undergo co-adaptation and functional specialization while maintaining tight regulation of immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 represent the main conclusions of the study and are well-supported by the collective experimental evidence from mutagenesis, phylogenetic analysis, and functional assays. The work provides a comprehensive molecular framework linking a single residue to multiple aspects of NLR pair evolution and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C77",
+      "C78",
+      "C85"
+    ],
+    "result": "Background claims about NLR biology, including their function as nucleotide-operated switches that oligomerize upon activation, their prevalence as paired receptors in plant genomes, and the phenomenon of hybrid necrosis when mismatched NLRs are combined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C57-C70, C77-C78, C85) provide essential background context and are supported by extensive citations to prior literature. They establish the conceptual framework for understanding the significance of the current findings but do not represent novel results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C86"
+    ],
+    "result": "Speculative mechanistic models propose that Pik activation may involve oligomerization of multiple Pik-2 receptors (based on MADA motif similarity to ZAR1), that pre-activation complexes undergo subtle changes in association and stoichiometry, and that ADP/ATP exchange may induce conformational changes to trigger signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79, C80, C82, and C86 are explicitly speculative, using language like \"may\" and \"might.\" While these models are reasonable based on the data and knowledge of other NLR systems, they lack direct experimental validation in this study. C81 is supported by co-IP data, but the mechanistic details remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Analogies to other NLR systems suggest that phosphorylation may play a role in activation (as in mammalian NLRP3) and that P-loop mutants can retain association but fail to form higher-order assemblies (as in Arabidopsis RPP7/HR4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by citations to studies on NLRP3 and RPP7. These comparisons provide context for interpreting the Pik results but do not constitute novel findings. The relevance of phosphorylation to Pik-2 Asp230 remains speculative.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The transcriptomes of vegetative cell nuclei (VN) and sperm nuclei (SN) in mature pollen are highly distinct from each other and from sporophytic tissues. VN transcriptome correlates strongly with whole pollen but poorly with sperm, while microspore gene expression is more similar to diploid sporophytic tissues than to differentiated pollen cell types, indicating major transcriptional reprogramming after microspore division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are well-supported by RNA-seq data and principal component analysis (Figure 1B, Figure 1\u2014figure supplement 2C-D). The correlation analyses and PCA provide strong quantitative evidence for distinct transcriptional states and developmental transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ATAC-seq profiling identified 20,634 accessible chromatin regions (ACRs) across pollen development, with high technical quality indicated by replicate correlation, promoter enrichment, and correlation with gene expression. The majority (77.5%) of ACRs are common across microspores, differentiated pollen cell types, and seedlings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 are supported by comprehensive ATAC-seq quality control metrics and peak calling analysis (Figure 1C-E, Figure 1\u2014figure supplement 3-4). The technical validations and quantitative overlap analyses provide strong evidence for the reliability and biological significance of the identified ACRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Common ACRs across pollen development and sporophytic tissues are associated with housekeeping genes, while sporophyte-specific ACRs (6.7%) are associated with photosynthesis and energy metabolism genes that are lost during gametophyte development. No de novo gains in chromatin accessibility were observed in germ cells compared to microspores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by gene ontology enrichment analysis and ATAC-seq heatmaps (Figure 1C, Figure 1\u2014figure supplement 4C). The functional interpretation regarding dispensability of photosynthesis genes (C41) is a reasonable inference based on the biological relationship between gametophyte and sporophyte.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "Differential chromatin accessibility increases gradually across pollen development, with 6.8% SN-specific and 9.1% VN-specific ACRs at the mature pollen stage. VN-specific ACRs are associated with pollen-specific functions, while SN-specific ACRs include DUO1 target genes. Promoter accessibility correlates positively (R=0.61) with differential gene expression between cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are well-supported by differential ATAC-seq analysis, gene ontology enrichment, and correlation analysis (Figure 1F-G, Figure 1\u2014figure supplement 4C-D). The correlation coefficient of 0.61 provides quantitative support for the relationship between chromatin accessibility and transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cell type-specific ACRs are enriched in distal intergenic regions compared to common ACRs, with genes proximal to these regions showing cell type-specific differential expression. VN-specific ACRs are also highly enriched at transcriptional termination sites (TTSs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by genomic distribution analysis and expression analysis (Figure 1H, Figure 1\u2014figure supplement 4B, 4E). The enrichment at TTSs in VN is a novel observation that suggests potential regulatory mechanisms specific to vegetative cell function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "VN-specific ACRs show increased density in pericentromeric regions compared to SN, are enriched for H3K9me2 marks in somatic tissues (36.5%), overlap significantly with transposable elements (particularly DNA/MuDR and LINE/L1), and are associated with pollen-activated TEs and siRNA-producing regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 are well-supported by chromosomal distribution analysis, ChIP-seq enrichment analysis, and overlap enrichment tests (Figure 2A-G, Figure 2\u2014figure supplement 1A-B). The quantitative data on H3K9me2 enrichment and TE overlap provide strong evidence for the relationship between heterochromatin loss and VN-specific chromatin accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Just over half (52.3%) of VN-specific ACRs contain DME-dependent hypermethylated cytosines, while 12.8% of common ACRs are also DME-targeted. DME mediates demethylation in all cytosine contexts in VN, which is mirrored by higher chromatin accessibility in VN than SN. Chromatin accessibility likely precedes DME activity rather than being induced by it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by differential methylation analysis and ATAC-seq metaplots (Figure 3A-D, Figure 3\u2014figure supplement 1). The inference that chromatin accessibility precedes DME activity (C66) is well-reasoned and supported by citation to previous work on H1 depletion requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Two-thirds (72%) of VN-expressed transcription factors have enriched motifs within DME-targeted ACRs, including MYB101. Half (56%) of these TFs are methylation-sensitive based on DAP-seq analysis. Predicted binding sites for methylation-sensitive TFs are substantially hypomethylated in WT VN but hypermethylated in dme-2/+ mutants, suggesting DME facilitates TF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are well-supported by motif enrichment analysis, DAP-seq data integration, and DNA methylation analysis at predicted TF binding sites (Figure 3E-J, Figure 3\u2014figure supplement 2). The integration of multiple data types provides strong evidence for the functional role of DME-mediated demethylation in enabling TF binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "DME-targeted ACRs (n=3034) cluster into two groups based on heterochromatin marks and target the genome uniformly across pericentromeric regions and chromosome arms. These ACRs are enriched for TEs and siRNA-producing regions, with 78.2% located near protein-coding genes that are significantly over-represented among VN-expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by clustering analysis, chromosomal distribution analysis, and overlap enrichment tests (Figure 2\u2014figure supplement 1C-D, Figure 4A-B). The quantitative data on genomic distribution and gene association provide strong evidence for the regulatory role of DME-targeted ACRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "A small but highly significant overlap exists between genes with DME-targeted ACRs and genes differentially expressed in dme-2/+ mutant pollen, confirming DME directly modulates gene expression. The 27 affected genes include protein kinases, cysteine-rich peptides, and transcription factors involved in pollen tube growth, with RFK2 being the most significantly downregulated gene embedded in H3K9me2-marked heterochromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 are well-supported by overlap enrichment analysis, differential expression analysis, and ChIP-seq data (Figure 4C-E, Figure 2\u2014figure supplement 1E). The integration of ATAC-seq, DNA methylation, and gene expression data provides strong evidence for direct DME-mediated regulation of pollen development genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "DME-targeted ACRs are significantly associated with 352 genes upregulated during pollen tube growth, including well-characterized pollen-specific signaling proteins. Around a quarter of these genes have little to no expression in dry pollen, suggesting DME demethylation poises cis-regulatory regions for gene expression during pollen tube growth after pollination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by overlap enrichment analysis and expression analysis (Figure 4B, Figure 2\u2014figure supplement 1C, 1F). The inference that DME poises genes for later expression (C92) is well-reasoned based on the timing of expression and the presence of DME-targeted ACRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Sperm chromatin undergoes global H3K27me3 loss accompanied by selective H3K4me3 priming. H3K4me3-primed genes show increased promoter accessibility and enrichment for SN-specific ACRs. SN-specific ACRs are depleted for active marks but highly enriched for H3K27me3 in sporophytic tissues, with 44.8% overlapping sporophytic H3K27me3 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are well-supported by ChIP-seq data, ATAC-seq analysis, and overlap enrichment tests (Figure 5A-D, Figure 2\u2014figure supplement 1B). The integration of histone modification data with chromatin accessibility provides strong evidence for H3K27me3 reprogramming in sperm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "The majority (74.6%) of SN-specific ACRs are associated with protein-coding genes, with one-third significantly over-represented for sperm-expressed genes including DUO1 targets. Genes neighboring H3K27me3-marked ACRs are significantly downregulated when H3K27me3 is retained in mutant sperm, revealing how H3K27me3 reprogramming exposes cis-regulatory elements during sperm specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 are supported by genomic distribution analysis, overlap enrichment, and differential expression analysis in H3K27me3 demethylase mutants (Figure 5E-H). The functional link between H3K27me3 loss and gene expression is well-established through mutant analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "One quarter (27%) of H3K27me3-repressed ACRs are associated with genes expressed during early embryogenesis, including master embryonic regulators (BBM, LEC1, WOX2, FLC) that show high chromatin accessibility in sperm. Genes with enriched expression during early and middle embryogenesis have higher promoter accessibility than late embryo genes, indicating sperm chromatin is poised for the sporophytic transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are well-supported by overlap enrichment analysis and ATAC-seq enrichment analysis over embryo-expressed genes (Figure 5F, 5I-J). The observation that sperm chromatin is accessible at embryonic genes provides strong evidence for epigenetic priming of the next generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The diploid-to-haploid transition is governed by loss of H3K9me2 and DNA demethylation in the vegetative cell, facilitating expression of genes required for haploid development. In contrast, H3K27me3 loss in sperm exposes cis-regulatory regions at developmental genes required for the transition back to diploid life. These distinct epigenetic reprogramming events rewire transcription through major reorganization of the regulatory epigenome during alternation of generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C110-C112 represent the main conclusions synthesized from all experimental data. These are well-supported by the comprehensive ATAC-seq, ChIP-seq, DNA methylation, and RNA-seq analyses presented throughout the manuscript. The integration of multiple epigenomic datasets provides strong evidence for the distinct mechanisms governing life form transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Thousands of differential ACRs distinguish sperm nuclei and vegetative cell nuclei despite being separated by a single cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is directly supported by the differential ATAC-seq analysis showing 1400 SN-specific and 1877 VN-specific ACRs (Figure 1C-E). This is a quantitative result from the peak calling and differential analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The epigenetic reprogramming events underlying the male haploid transition likely trace back to ancient mechanisms in early land plants. H3K27me3 reprogramming at the haploid-to-diploid transition might be a remnant of an ancestral role in the first haplo-diplo phasic life cycles, while the DNA-H3K9 methylation feedback loop might have been co-opted to control diploid-to-haploid transitions during early land plant evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C121 are speculative evolutionary hypotheses supported by citations to previous research but not directly tested in this study. While the evolutionary framework is plausible and well-reasoned, these claims represent interpretations and proposals rather than experimentally demonstrated results. The manuscript appropriately presents these as speculative ('likely', 'might be', 'propose').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "H3K9 methylation is implicated in transcriptional repression of not only transposons but also lineage specification in flowering plants. The reprogramming and demethylation of pericentromeric heterochromatin are primarily required for vegetative cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by the data showing H3K9me2-marked regions gaining accessibility in VN and the association with VN-specific gene expression. The inference about lineage specification is well-supported by the functional data and comparisons to previous work in other systems (citations provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C132",
+      "C133"
+    ],
+    "result": "DME-dependent demethylation preferentially targets short AT-rich TEs, suggesting gametophytic development is partly specified through de-repression of TE-associated cis-regulatory sequences. TE integrations may have imposed repression on the gametophytic programme during diploid life, facilitating the evolution of haploid-diploid life cycles in land plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 is supported by citation to previous work. Claims C128, C132, and C133 are speculative evolutionary hypotheses that are plausible based on the findings but not directly tested. The manuscript appropriately presents C132 as speculation ('We speculate whether'). While the TE-regulatory element hypothesis is well-reasoned, it requires additional evolutionary and functional studies for full support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background and context claims establishing the biological framework for plant life cycles, epigenetic reprogramming in mammals and plants, pollen development, and previous findings on heterochromatin decondensation and DME-mediated demethylation in the vegetative cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C26 are background claims supported by citations to established literature and previous research. These provide the necessary context for the current study and are appropriately referenced. These are not novel findings from this manuscript but rather established knowledge that frames the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47",
+      "C69",
+      "C84",
+      "C113",
+      "C114",
+      "C124",
+      "C125",
+      "C126",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Additional background claims about transcription factors, chromatin accessibility in other systems, DME function, transcriptional mechanisms, and the role of transposons in evolution and development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C69, C84, C113-C114, C124-C126, C129-C131 are background claims supported by citations to previous research. These provide context for interpreting the findings but are not novel results from this study. Claim C126 is presented as a speculative alternative explanation, which is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The remaining 55.2% of SN-specific ACRs lack H3K27me3 in the sporophyte, suggesting sporophytic repression by an unknown pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is a quantitative observation from overlap analysis (Figure 5D) that is well-supported, but the suggestion of 'sporophytic repression by an unknown pathway' is speculative. The manuscript appropriately qualifies this as 'suggesting', but the mechanism remains uncharacterized and requires further investigation.",
+    "result_type": "MINOR"
+  }
+]

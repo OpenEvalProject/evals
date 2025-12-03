@@ -1,0 +1,898 @@
+{
+  "submission": {
+    "id": "c2295188-4133-4612-9fd7-de1046d38990",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:50:54.564600Z",
+    "updated_at": "2025-12-03T11:50:54.564600Z"
+  },
+  "content": [
+    {
+      "id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "submission_id": "c2295188-4133-4612-9fd7-de1046d38990",
+      "content_type": "manuscript",
+      "content_text": "# Modular, robust, and extendible multicellular circuit design in yeast\n\n## Authors\n\n- Alberto Carignano<sup>1</sup> ([ORCID: 0000-0003-3306-9365](https://orcid.org/0000-0003-3306-9365))\n- Dai Hua Chen<sup>1</sup>\n- Cannon Mallory<sup>1</sup>\n- R Clay Wright<sup>2</sup>\n- Georg Seelig<sup>1</sup> ([ORCID: 0000-0002-3163-8782](https://orcid.org/0000-0002-3163-8782)) \u2020\n- Eric Klavins<sup>1</sup> ([ORCID: 0000-0002-3805-5117](https://orcid.org/0000-0002-3805-5117)) \u2020\n\n### Affiliations\n\n1. Department of Electrical and Computer Engineering, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n2. Department of Biological Systems Engineering, Virginia Tech Blacksburg United States ([ROR:02smfhw86](https://ror.org/02smfhw86))\n3. Paul G Allen School of Computer Science and Engineering, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDivision of labor between cells is ubiquitous in biology but the use of multicellular consortia for engineering applications is only beginning to be explored. A significant advantage of multicellular circuits is their potential to be modular with respect to composition but this claim has not yet been extensively tested using experiments and quantitative modeling. Here, we construct a library of 24 yeast strains capable of sending, receiving or responding to three molecular signals, characterize them experimentally and build quantitative models of their input-output relationships. We then compose these strains into two- and three-strain cascades as well as a four-strain bistable switch and show that experimentally measured consortia dynamics can be predicted from the models of the constituent parts. To further explore the achievable range of behaviors, we perform a fully automated computational search over all two-, three-, and four-strain consortia to identify combinations that realize target behaviors including logic gates, band-pass filters, and time pulses. Strain combinations that are predicted to map onto a target behavior are further computationally optimized and then experimentally tested. Experiments closely track computational predictions. The high reliability of these model descriptions further strengthens the feasibility and highlights the potential for distributed computing in synthetic biology.\n\n## Introduction\n\nThe leading paradigm for genetic circuit design is to combine biological parts in a delicate balance within the same cell (Ellis et al., 2009; Kosuri et al., 2013; Ottoz et al., 2014). This approach has resulted in increasingly large genetic circuits that realize functions such as logic gates and circuits (Moon et al., 2012; Bonnet et al., 2013; Nielsen et al., 2016; Gander et al., 2017), time pulses (Gao et al., 2018; Guo and Murray, 2019), incoherent feed-forward loops (Entus et al., 2007; Ellis et al., 2009), bistable switches (Chen et al., 2012; Huang et al., 2012; Yang et al., 2019; Barbier et al., 2020; Grant et al., 2020), or oscillators (Elowitz and Leibler, 2000; Tigges et al., 2009; Tigges et al., 2010). Albeit very successful, single cell circuit engineering has limited scalability and robustness because parts cannot be reused, the genetic burden on the cell grows with circuit size (Nikolados et al., 2019), and retroactivity (Del Vecchio et al., 2008) and component crosstalk (Del Vecchio, 2015) interferes with expected behavior. Furthermore, competition over shared gene expression resources makes unrelated circuits unintentionally coupled (Zhang et al., 2021).\n\nAn alternative approach is to generate complex behaviors using consortia of cells wherein different cell types perform distinct functions and communicate with each other through chemical signals to realize more complex behaviors. Such division of labor is common in nature and interest has recently emerged in engineering multi-cellular synthetic systems (Brenner et al., 2008). Although developed later, synthetic consortia have caught up with single-cell circuits in terms of the complexity of functions that have been realized, generating behaviors such as multicellular time pulses (Basu et al., 2004), oscillations (Chen et al., 2015; Danino et al., 2010), and logic gates (Regot et al., 2011; Tamsir et al., 2011), bioproduction (Egbert et al., 2016), or circuits that use quorum sensing to define social interactions (Kong et al., 2018; Balagadd\u00e9 et al., 2008; Weber et al., 2007). Furthermore, the emergence of novel orthogonal cross-species signaling molecules (Billerbeck et al., 2018; Du et al., 2020) and genetic channel-selector devices to multiplex individual signals (Sexton and Tabor, 2020) has opened the path for engineering more complex and precise multicellular behaviors.\n\nTo date, synthetic multicellular systems were largely designed with specific target behaviors in mind, rather than optimizing modularity of components to make them usable in a large number of contexts. Still, mathematical modeling has demonstrated that multi-cellular computation should easily access a larger space of behaviors: for instance, just three different cell populations can, in theory, generate up to 100 different logic functions (Regot et al., 2011) and even bimodality and cell-synchronization (Thurley et al., 2018). Furthermore, the intuitive modular nature of cell-to-cell communication should provide a useful tool to rationally design synthetic circuits with predetermined performance. Rational design significantly speeds up circuit assembly (Chen et al., 2012; Chen et al., 2020) and allows design of global functions from local behaviors (Salis et al., 2009; Carothers et al., 2011). As a matter of fact, mathematical models have been successful to bridge the gap between individual processes and collective behaviors when applied to ecological interactions between distinct populations of communicating cells (Shou et al., 2007; Momeni et al., 2013, Egbert et al., 2016). However, an example of a model-driven strain selection for multicellular circuit design is currently missing.\n\nHere, we propose a large vocabulary of yeast strains that use chemical signals for cell-to-cell communication and that can be modularly combined to realize a large number of functions (Figure 1A). Each strain senses one or two inputs and produces a single output. The transfer function relating inputs and outputs can be either activating or repressing. The output is a fluorescent protein which can be used to read out circuit behavior, another signaling molecule which can be used to connect strains or an enzyme that sequesters or degrades a signal thus disrupting communication. We experimentally characterize each strain, model their dynamics using differential equations and then use these models to predict the behavior of strain combinations (Figure 1B). Using a library of 24 strains, we rationally design complex multicellular behaviors, such as bandpass filters, negative and positive feedbacks, time pulses, logic gates, and bistable switches. These behaviors are common in nature and they underlie cell decisions on metabolism (for instance, responding to environmental signals, [Lee et al., 2002], utilization of carbon sources, [Brandman et al., 2005]) or cell differentiation (Kueh et al., 2016; Duddu et al., 2020), and have been repeatedly connected to multicellular organization (signal gradients in development) and signaling (auxin pulses in plants). The modularity of composition achieved by our multicellular circuits allow us to design these non-trivial behaviors based on model simulations alone. This qualitative and quantitative precision demonstrated in both time and steady-state experiments further extend circuit design automation (Nielsen et al., 2016; Chen et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig1-v3.jpg)\n\n**Figure 1.:** (A) Three input signals, two transfer functions and five outputs are used to assemble 24 distinct strains. (B) Differential equations are used to model and predict behavior of all strains and strain combinations in the paper. In this example, a model (Model 1) and symbolic representation for a fluorescent reporter repressed by high auxin concentration are shown. (C) Left: Time course fluorescence data for different auxin concentrations for the sensor strain shown in (B). Full lines are model simulations. Right: End point fluorescence data is shown as a function of auxin concentration color-matching the time series on the left. The steady-state simulation is shown in orange. (D) Symbolic representation, steady state data and model fit for all other single input reporter strains. (E) Modeling framework (Model 2) and fluorescence kinetics data for two different two-input reporter strains. Error bars represents the s.d. of three biological replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** We integrated the auxin-pump PGP1 from A. thaliana into our yeast strains. Yeast strains expressing PGP1 have been shown to increase auxin efflux up to seven times Geisler et al., 2005. We observe a statistically ($p=0.012$, Welch t-test) significant IAA-efflux increase in our sender/receiver co-culture, where the sender is constitutively synthesizing IAA from the IAM intermediate (labeled \u2019I\u2019 in the left panel). No improvements were detected with multiple integration of PGP1 (data not shown). Error bars represents the standard deviation of three biological replicates.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) GH3 mediates binding of IAA to aspartic acid (Asp), making it not viable to bind to the F-box, which prevents auxin-induced degradation. (B) Using mass-spectrometry (Figure 1\u2014figure supplement 1), we tested the effectiveness of GH3.3 and GH3.6 proteins of the GH3 family to bind IAA to Asp. Peak areas for IAA-Asp and IAA were detected with mass spectrometry and ratio is here reported for WT strain and strains expressing constitutively GH3.3 and GH3.6. The concentration of IAA-Asp is about 10 times higher than IAA for GH3-expressing strains. (C) We tested for fluorescence response in strains that sense IAA and repress GFP for IAA-Asp, and we could detect a statistically significant (p-value = 0.012, T-test) but minor difference with respect to control. The bars are normalized so that Control is equal to 1. Error bars represents the standard deviation of three biological replicates.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** We detected IAA and IAA-Asp peaks for WT strains and strains expressing GH3.3, GH3.6 and both proteins. Strains were exposed to 1 \u00b5M IAA from low dilution till saturation (approximately 20 hr). Then cells were harvested, spun down and the supernatant was removed. After adding 250 \u00b5L of methanol and boiled at 95\u00b0C for 15 minutes (vortexed twice during incubation) (Lee et al., 2013). After spinning the cells down, we took the supernatant to perform IAA extraction through phase separation. We used the protocol outlined in Kriechbaumer, 2016 using ethyl acetate phase separation. We expected a peak between 6-7 for IAA-Asp and between 8-9 for IAA. The label on the left-hand side shows the strain used, while the label on the right side shows the measured compound (IAA-22 or IAA-Asp). The number coming off the peak represent the area measurements used to generate plot (B) of Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) The signaling molecule \u03b1-factor binds to the surface protein STE2, which activates a phosphorylation cascade that ends up activating the transcription factor STE12. Active STE12 then binds to the pFUS1 promoter, here rewired to synthesize gRNA (labeled $w\u20628$ as in Gander et al., 2017). The gRNA binds to dCas9 fused with the Mxi1 repressing domain (RD) and a Nuclear Localization Signal. dCas9 is under a strongly constitutive promoter GPD. The gRNA-dCas9 complex binds to the pGRR-$w\u20628$ promoter to stop transcription of the output gene. (B) The signaling molecule \u03b2-estr penetrates the cell wall and binds to the chimeric protein Z4EV, constituted of a zinc-finger4 DNA-binding domain, a VP16 activation domain and binding pocket for \u03b2-estradiole. Upon \u03b2-estradiole binding, Z4EV induce transcription of the $w\u20628$-gRNA gene under the pGALZ4 promoter. The rest of the pathway is identical to (A).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) The repressing circuit driving GFP proposed in Khakhar et al., 2016 has low sensitivity and ON/OFF fold change (purple line in the steady-state plot). Hence, we optimized the pathway for higher sensitivity and fold change (blue line in the steady-state plot). A similar study was conducted for the IAA-activating pathway. (B) To optimize the response, we minimized a metric defined as the L2-norm of the inverse of the fold-change. The fold change was computed by simulating the mechanistic model proposed in Pierre-Jerome et al., 2014, with constrained parameters $K_{i}>0$, .$i=1.9$. (C) We order the parameters according to their effect on the metric using sensitivity analysis. We then tested the effect of some of these perturbations in vivo and measured the fold-change between ON and OFF state (blue histogram to the right). Since the results agree with our predictions, we constructed a strain with three copies of TIR1DM (f-box mutated for higher sensitivity), high affinity gRNA-promoter pair ($w\u20628$ gRNA and pGRR-$w\u20628$/pCYC1-$w\u20628$ promoter, RD/AD) from Gander et al., 2017, and IAA17/IAA15 (RD/AD) auxin degron for higher auxin sensitivity.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) The four strains repressing expression of BAR1 or GH3 that are not positive feedbacks did not respond to their inputs significantly enough for us to include them in this study. They either do not affect the signaling molecule (the sensor response is identical to treatment whether the repressing strain is present of not), or they do not display a significant response range (no difference between the two orange bars). (B) Top: these two negative feedback topologies do not significantly differ from the sensor alone in response to \u03b1-factor and IAA induction. Bottom: these strains present a significant functional range for negative feedback. Since, no circuits was built using these strains, they are not presented in the main manuscript. Error bars represents the standard deviation of three biological replicates.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig1-figsupp7-v3.jpg)\n\n**Figure 1\u2014figure supplement 7.:** To test the effect of crosstalk between the three signaling molecules, we measured the ON and OFF steady states (8 hours) of the three repressive sensors (IAA, \u03b1-factor, and \u03b2-estradiole) with and without the alternative signaling molecules (induction here is always at the saturation level). The data suggests that the signaling pathways are fairly orthogonal for the \u03b2-estradiole and (A) and \u03b1-factor (B) pathways. We tested the IAA pathway for different concentrations of auxin and with or without 1 \u00b5M of \u03b1-factor (C), detecting variation always contained within. 5% A maximum increase of 24% above the baseline is observed for the IAA-sensor in a regime where both alpha factor and auxin are at or above saturating concentrations (D). This apparent cross-talk could also be the result of toxicity of signal added at very high concentrations. However, this combination is not used in any circuit experiment. Data were collected with two different BD Accuri C6 flow cytometers with different voltage setting. Hence, fluorescence values for (A), (B) and (D) have absolute values about twice as high than presented in the rest of this study. Error bars represents the standard deviation of three biological replicates.\n\n## Results\n\n### Engineering yeast strains for signal sensing, synthesis and depletion\n\nAs a first step toward the construction of a vocabulary of modular yeast strains, we selected a set of signals to enable cell-to-cell communication and then optimized chassis strains for signal sensing, synthesis, and depletion. We selected the plant hormone auxin (we will also refer to it as IAA, indole-3-acetic acid) and the yeast hormone \u03b1-factor as signaling molecules and additionally used the mammalian hormone \u03b2-estradiol as an inducer.\n\nThe \u03b1-factor pathway has been subject of extensive studies and mechanisms for sensing through the surface receptor STE2, synthesis by the MF\u03b11 gene and degradation through the BAR1 protease are well understood and have been engineered to generate a wide range of behaviors (Youk and Lim, 2014; Groves et al., 2016; Shaw et al., 2019). To have a baseline strain that does not interfere with signaling, we knocked out the native BAR1 gene as in Youk and Lim, 2014 to prevent \u03b1-factor degradation. Moreover, to account for growth-arrest induced by \u03b1-factor, which affects gene expression on a large scale, we knocked out FAR1 a protein that contributes to arresting the cell cycle at G1Chang and Chang and Herskowitz, 1990, and constitutively expressed POG1, a protein that promotes growth-arrest recovery (Leza and Elion, 1999). Unexpectedly, we detected no \u03b1-factor output from strains that both sense and secrete \u03b1-factor. We suspected that this was caused by the surface receptor STE2 internally binding to \u03b1-factor. It has been shown that, upon binding to \u03b1-factor, STE2 undergoes endocytosis and then shares the secretory pathway of \u03b1-factor itself (Schandel and Jenness, 1994). We solved this problem by overexpressing STE2 on a pGPD promoter Sun et al., 2012 in these strains, aiming to have some protein copies escaping this interaction.\n\nNext, we turned to the optimization of components for Auxin sensing, synthesis, and elimination. In prior work from our group, we (Khakhar et al., 2016; Pierre-Jerome et al., 2014) developed an auxin-responsive transcription factor using a chimeric dCas9-Aux/IAA protein regulation. In the presence of Auxin, the Aux/IAA degron part of the protein binds to the auxin signaling F-box protein (a modified TIR1 for this study) and acts as part of an E3 ubiquitin ligase to catalyze ubiquitination and degradation of the Aux/IAA-degron-containing protein. Similarly, we constructed a synthetic auxin synthesis pathway in yeast (Khakhar et al., 2016). We demonstrated conversion of the precursor molecule IAM (indole-3-acetamide) into IAA through expression of the IaaH gene in yeast. Here, we amplified Auxin secretion and thus effectively the strength of the signal produced, through integration of the auxin-efflux pump ABCB1/PGP1 from A. thaliana into our yeast strains, as previously reported in Geisler et al., 2005. We measured a significant increase in the auxin-synthesis yield as measured by a neighboring IAA-detecting cell when PGP1 was integrated (Figure 1\u2014figure supplement 1).\n\nUnlike for \u03b1-factor, a depletion mechanism for Auxin had not yet been reported in yeast. To create an IAA depletion mechanism, we thus selected the plant protein GH3.3 that has been shown to conjugate IAA to aspartic acid, forming the signaling-inactive IAA-Asp. GH3.3 is part of a family of proteins that encode IAA-amino synthetases, which have been reported to control auxin homeostasis (Staswick et al., 2005). To test whether GH3.3 or related proteins could be used to inactivate Auxin in yeast, we first expressed codon-optimized versions of GH3.3 and GH3.6 from A. thaliana and C. papaya from a highly expressed pGPD promoter. We then tested the IAA to IAA-Asp conversion rate using mass spectrometry and found that GH3.3 from A. thaliana had the higher efficiency (Figure 1\u2014figure supplement 1). Finally, we tested that IAA-Asp does not activate the IAA-mediated degradation pathway in yeast, by adding 10 \u00b5M of IAA-Asp in an auxin-sensor yeast culture and detecting no variation in fluorescence (Figure 1\u2014figure supplement 1).\n\n### Establishing a vocabulary of parts for cell to cell communication\n\nHaving established conditions for efficient signal sensing, synthesis and inhibition, we combined signals with activating and repressive transfer functions to create a vocabulary of strains. Transfer functions that use \u03b1-factor as input are mediated by the transcription factor (STE2) that either directly induces expression of the gene of interest (activation) or induces expression of a repressor that inhibits the output (repression). Similarly, \u03b2-estradiol binds and activates a transcription factor (ZEV4, McIsaac et al., 2013) that either directly activates gene expression (activation) or induces expression of a repressor and inhibits output synthesis (repression). For both signaling molecules, we chose dCas9 fused with the repressor domain Mxi1 (Gander et al., 2017) as repressor (Figure 1\u2014figure supplement 1 for the full pathways).\n\nTo induce activation or repression with auxin, we build on the same auxin-mediated degradation pathway used for auxin sensing above. Specifically, activation results from degradation of a repressor, while repression results from degradation of an activator. We chose a dCas9-Mxi1-auxin degron (Khakhar et al., 2016) fusion as a repressor and used a dCas9-VP64-auxin degron fusion as the activator (Figure 1\u2014figure supplement 1).\n\nWe conducted extensive pathway optimization to increase the separation between high and low expression levels and IAA sensitivity, using a mechanistic model to explore the parameter space and guide the genetic engineering (Figure 1\u2014figure supplement 1). We adopted the model proposed in Pierre-Jerome et al., 2014, where each parameter easily translates to a biological function, and performed parameter sensitivity analysis with respect to fold change between the baseline and the Aux/IAA-induced fully repressed state. We then selected the top six highest scoring parameter perturbations, designed circuit variants that reflected those changes, and tested them resulting in a good agreement with our predictions (Figure 1\u2014figure supplement 1). Guided by the model, we combined five of the tested circuit variants to increase the fold change from 1.3-fold (sensor from Khakhar et al., 2016) to 3.1-fold: we used this final circuit for all the repressive strains, swapping the fluorescent reporter gene with the output gene for non-sensor strains. For the auxin activating strains, we used a similar model-driven approach to rationally design the activating pathway novel to this paper, obtaining a threefold-change activation.\n\nCombining the three different input signals, the activation/repression circuits and output secretion, we built and tested all the possible combinatorial designs presented in Figure 1A. The strains that sense \u03b2-estradiol and repress expression of BAR1 and GH3.3, the strain that senses \u03b1-factor and represses expression of GH3.3, and the strain that senses IAA and represses BAR1 expression are shown in Figure 1\u2014figure supplement 1 and not used below, since their response was too slow to produce meaningful results. Of the remaining 24 strains, 6 sensor strains express GFP in response to the three input signals (three activators and three repressors), 12 strains (six activators and six repressors) synthesize a signaling molecule, and 6 strains act as signal attenuators (expressing BAR1 or GH3.3). Four of these 24 strains sense and secrete the same signaling molecule (\u03b1-factor or IAA, \u2018positive\u2019 or \u2018negative\u2019 feedback strains). Finally, two strains express repressors of their own input (\u03b1-factor expressing BAR1 and IAA expressing GH3), also describing a negative feedback topology (Figure 1\u2014figure supplement 1).\n\n### Sensor strain characterization\n\nFor sensor strain characterization, we collected time series data for eight different input concentrations. Input concentrations were selected to fully cover the sensor dynamic range for model fitting. We normalized fluorescence data by cell size and took the mean of the histogram as in Groves et al., 2016 and then subtracted background fluorescence. Each measurement in the figure is an average of three experimental repeats (error bars representing the standard deviation).\n\nWith a scalable and modular system in mind, we fitted a set of three ordinary differential equations (ODEs) with eight parameters for each strain to describe input sensing (x1), signal processing (x2) and fluorescence output synthesis (x3) (Figure 1B, Model 1). Signal processing (activation or repression) is modeled with a simple Hill function (Model 1b), which naturally incorporates signal saturation. Input sensing and output synthesis are modeled as linear ODEs (Model 1 a and c). A constant term in the last ODE accounts for background promoter activity. For instance, for the auxin sensor in Figure 1B, x represents the TIR1-auxin complex concentration, x2, the dCas9-VP64-auxin degron population, and x3, GFP concentration. These simple models capture the system dynamics, with the benefit of being easy to fit and analytically approachable. Parameters were fitted independently for each experimental repeat to obtain a mean and a standard deviation for the Hill coefficient. We also separately fitted a Hill curve to an average of the three experimental repeats and the resulting Hill coefficient ($n$) is reported in the figures and used for simulations (Figure 1B). The sensor strains range in sensitivity depending on the input. The \u03b2-estradiol sensors respond to inputs concentration ranging from 0.1 to 100 nM with an $E\u2062C\u206250$ of 0.5 \u00b1 0.0 nM for repression and 12.6 \u00b1 0.9 nM for activation. \u03b1-factor sensors are sensitive to input concentrations ranging from 1 to 500 nM range with an $E\u2062C\u206250\u223c6.0\\pm0.4$ nM for activation and 89.0 \u00b1 6.6 nM for repression. Finally the IAA sensor is least sensitive and responds to inputs ranging from 5 nM-10 uM withe an $E\u2062C\u206250\u223c964.8\\pm93.8$ nM for activation and 276.5 \u00b1 8.8 nM for repression. The Hill coefficients for these sensors vary between 0.8 (3-repeat interval: 0.8 \u00b1 0.0, \u03b1-factor repression) and 1.0 (1.2 \u00b1 0.02, \u03b1-factor activation), 2.2 (2.1 \u00b1 0.3, \u03b2-estradiol repression) and 1.3 (1.25 \u00b1 0.0, \u03b2-estradiol activation), 1.0 (1.0 \u00b1 0.4, auxin repression) and 0.8 ($0.8\\pm0.0$, auxin activation) consistent with previously reported values for \u03b2-estradiol repression (dCas9-Mxi1 confers stronger and more consistent repression than dCas9 alone, leading to ultrasensitivity, Gander et al., 2017) and \u03b1-factor activation (Groves et al., 2016). Finally, the sensors achieve an ON/OFF fold-change that ranges between a minimum of 3 (IAA activating GFP) and a maximum of 42 (\u03b2-estradiol activating GFP). We tested signal orthogonality by adding pairwise combinations of inducers at saturation concentration to single-input repressive sensors (Figure 1\u2014figure supplement 1). Variations across the treatments are contained within 11% of the nominal value for signal concentrations within the range used for circuit experiments.\n\nIn addition to single-input sensors, we constructed two sensor strains that respond to both \u03b1-factor and IAA. In the first strain, \u03b1-factor induces fluorescence expression and IAA represses it, while in the second strain, IAA induces fluorescence expression and \u03b1-factor represses it (Figure 1E).\n\nWe collected data points for eight different input combinations taken at five time points up to saturation. The output signal is monotonic with respect to each input and the input functional range is similar to the one measured for the correspondent strains that respond to only one of the two inputs.\n\nTo model these strains, we used a simple extension of our previously introduced models with five ODEs (Figure 1E, Model 2): two ODEs model input sensing (a), two model input processing (b), and one ODE (c) combines the signals according to their activating or repressing nature and defines output synthesis. These models fit the experimental data even when the output is non-monotonic over time.\n\n### Assembling modular, tunable and easily-extendable circuits using cell-to-cell communication\n\nTo determine the potential to build biological circuits using cell-to-cell communication, we experimentally tested if communication occurs between strains that secrete an output and their corresponding sensor strains. For example, a strain that produces auxin in response to \u03b1-factor sensing was grown in co-culture with a sensor that switches off GFP expression in response to auxin (Figure 1B). The two strain populations were added at the same concentration and the fluorescent output was measured at steady state (10 hours after induction). The experimental data is consistent with a negative \u03b1-factor sensor as expected (the more \u03b1-factor, the lower the fluorescent signal, as seen in Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig2-v3.jpg)\n\n**Figure 2.:** (A) Symbolic representation of a two-strain cascade that uses \u03b1-factor as the input and auxin as an intermediate signal. To model multi-strain cascades, models for individual strains are concatenated and only the last differential equation of the first model is fit: the GFP output (dashed yellow semi-circle) is substituted with IAA (solid blue semi-circle). End-point fluorescence data and fit are shown for the example cascade. (B) By varying the concentration of the upstream strain, the strength of the signal seen by the downstream strain can be predictably controlled. This change in signal is modeled with a single parameter K. Right: data and model predictions for three experiments with the same strains but varying concentrations of the upstream strain. (C) Symbolic representation, model and data for a two strain cascade wherein the upstream strain removes a signal rather than secreting it. (D) Symbolic representation, model and data for all two strain cascades where the upstream input is activating the production of the intermediate signal. (E) Symbolic representation, model and data for all two strain cascades where the upstream input is repressing the production of the intermediate signal. (F) Symbolic representation, model and data for three-layer signaling cascades. Error bars represents the s.d. of three biological replicates.\n\nSince the core genetic circuit of this sender strain is identical to the \u03b1-factor repressing sensor, we tested if the mathematical model previously fit to the sensor data preserves its predictive power. We re-fit only the 3 output parameters to account for the fact that the output is now auxin rather than GFP. The output of the sender cell model was used directly as input of the sensor cell model. To test the hypothesis that strains that have common input/processing parts share parameters and model structure, we collected two datasets on two different experiments composed of four data points each: we used one for fitting (yellow dots, first experiment), and the other for validation (orange dots, second experiment, Figure 2A). A time-series at EC50 input concentration was also used for fitting (not present in the figure).\n\nIntuitively, we expected that higher initial sender cell concentration would result in an overall higher concentration of their output signal over the same time scale. Most importantly, we wanted to know if this output \u2018gain\u2019 can be predicted by our models so that we could use it to tune circuit behavior. We modeled this effect with a factor $K$ multiplied by the output signal, where $K$ is the fold-change with respect to the standard initial concentration: we represented this gain using the same iconography used in electronic circuits (Figure 2B). Our predictions matched closely with data collected using 5 X and 10 X the original concentration of sender cells (green and blue lines) using the same strain co-culture as in the previous panel (orange line). Notice that the fold-change, as we just defined it above, is not equivalent to the ratio between the strains. Hence, difference in growth rates are not relevant for model predictions provided that there is no dilution or competition for resources, which is minimal in these experiments (the strains are kept in log-phase throughout the experiments and their concentrations are kept below saturation).\n\nWe further tested if we could modulate the concentration of signaling molecules by removing it from the system through BAR1 and GH3.3-expressing strains (Figure 2C). We modeled signal degradation as a first-order Hill repressing function, where the output of the sender cell acts as a negative regulator. As before, only the three output parameters of the sender strain were fitted using receiver cell fluorescence data. Finally, we tested all the sender-receiver pairs in our vocabulary with the exception of those generating positive or negative feedback. All activating strains function within the sensor range of their receiver strains (Figure 2D), and the models correctly fit or predict the data. On the other hand, the output of repressing strains (Figure 2E) did not fully cover the input range of their receiver strains, as seen in the limited fold-change of the fluorescent signal. Models suggested that increasing the sender strain population to 10-fold its original value would produce a more noticeable response, which we successfully verified experimentally (purple dots and lines, Figure 2D and E).\n\nAfter the two-strain combinations, we also verified the predictive power of our model on two 3-strain chains with different topologies and different strain stoichiometries (Figure 2F). Here too, the simple model strategy we outlined earlier captured the overall dynamics even when different strain concentrations were used. These results support the hypothesis that multicellular circuits behave like a sum of their individual parts (modularity), are easy to modulate (whether through altering initial strain concentrations or signal degradation) and can be extended to longer chains.\n\n### Increasing nonlinear response using external positive feedback\n\nThus far, we explored ways to simulate and design multicellular circuits with tunable gains to obtain monotonic, quasi-linear dynamic systems with a single equilibrium point. To extend the range of observable behaviors and generate non-linear responses to the inputs, we used positive feedback strains that sense and secrete the same signaling molecule (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig3-v3.jpg)\n\n**Figure 3.:** (A) Symbolic representation, model and data for two self-activating positive feedback circuits using alpha factor (left) and auxin (right) as the activating signal. (B) Symbolic representation, model and data for two positive feedback circuits that act through double repression. (C) Architecture and model for a bistable switch assembled from four separate strains. (D) Area of bistability as a function of strain concentrations, where the dark blue color represents one stable equilibrium and color shades report predicted fold-change between ON and OFF states. The coordinates of the red diamond are the concentrations chosen for experimental testing. (E) For the chosen solution, the nullclines show the IAA and alpha-factor concentration for the three equilibria (\u00d7 = stable, \u03bf = unstable) (F) Experimental data for the bistable switch. Full line is Model 3 simulation, and exogenous auxin and alpha-factor concentrations are reported as a function of dilution over time,depicted in the figure as jagged blue and red lines (the peaks are normalized to simplify their graphical representation). Error bars represents the s.d. of three biological replicates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) We tested a naive realization of a potential bistable network using two strains that mutually repress each other\u2019s inputs: a strain that senses \u03b1-factor and represses auxin synthesis, and a strain that senses auxin and represses \u03b1-factor synthesis. (B) We computed the optimal concentration of each of these strains using model simulation, but no combination generated two stable equilibria of \u03b1-factor and IAA concentrations. We experimentally tested the combination of these two strains with an auxin repression sensor strain to detect auxin concentration. Samples were taken every 2 hr along with dilution to restore the original cell concentration. After five hours, we inoculated 10\u00b5M IAA and diluted the samples of one third every 40 min, so that the IAA concentration became negligible after 5 hr (150 nM). The experimental data confirm that, while a lower value is reached when IAA is exogenously added, no stable equilibrium is reached and the system returns to the original equilibrium (low IAA concentration) after dilution. The diamonds are data, while the smooth line is the simulation; the transparent blue bar represents IAA inoculation starting at 5 hr, being reduced to below detection at hour 10. Error bars represents the standard deviation of three biological replicates.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The experimental data for the bistable switch constructed as in Figure 3C appear to exit its stable orbit after 25 hr, as one can see from the steady decrease in fluorescence. One potential explanation is that the ratio between the strains is no longer maintained due to small difference in strain growth rate that we did not detect over 10 or 12 hr in this study. To test this hypothesis, we simulated the system and allowed the strain that synthesis BAR1 to slightly increase in concentration over time (reaching 0.8 at time 25 hr from a starting concentration of 0.7). With this minor correction, the simulation predicts loss of stability as observed in the data, with the three equilibria becoming a single stable equilibrium with high IAA and low \u03b1-factor concentration. (B) Another possible explanation is that the loss of stability is caused by the effect of metabolic load on the strain growth. According to this explanation, active strains grow more slowly affecting the strain ratio that is necessary for bistability to arise. We simulated the effect of increasing metabolic load (represented by variation of the parameter \u03c1 from 0 to 1) using the model described in Appendix 1. We observe a loss of stability for high metabolic weight, although at a later time (36 hrs) than what measured in the experiments (25 hrs). Error bars represents the standard deviation of three biological replicates.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Data collected with a plate reader over the course of 12 hr, 3 experimental repeats for each of the five strains in the bistable switch topology. Data were collected as,$O\u2062D\u2062600$ sampling every 15 min at,30\u00b0C starting from an initial concentration of 30 events/\u03bcl. Growth rate was estimated fitting an exponential curve and the value here reported is average and standard deviation over fitting each of the three replicates. To account for the lower sensitivity threshold of the plate reader, each time series was set to be the minimum detectable till a 25% increase was detected. The ANOVA Table shows that one cannot reject the hypothesis that the five growth parameters are different with 90% confidence. Pairwise t-tests show that the only the IAA sensor growth is different from the other parameters with 95% confidence (p-value = 0.0466), while there is no statistical difference between any other pair.\n\nTo highlight the increase of nonlinear response, on top of fitting models to the positive feedback strains (as in Figure 2A), we also re-fitted the sensor strains to estimate a new Hill coefficient (much as in Shaw et al., 2019). We then plotted these fitted curves, the data points and the two Hill coefficients for both the feedback system and the nominal response (in this case, the sensor alone). In both cases, the positive feedback increased the nonlinearity of the response (from 0.8 \u00b1 0.0 to 1.5 \u00b1 0.1 and from 1.0 \u00b1 0.4 to 1.2 \u00b1 0.3 for the \u03b1-factor and the auxin case respectively). We also considered positive feedback circuits that operate through double repression (Figure 3B). In this case, we tested topologies where either \u03b1-factor represses BAR1 synthesis, or auxin represses GH3.3 synthesis. Ideally, at low signaling molecule concentration, signal degradation through BAR1 or GH3.3 is predominant so there is no fluorescence response in the receiver cells. But at high input concentration, the degradation pathway is switched off and the input is free to reach the receiver cells. As in Figure 3A, we measured the Hill coefficients of these circuits and reported an increase in nonlinear response (from 0.8 \u00b1 0.0 to 1.0 \u00b1 0.0 and from 1.0 \u00b1 0.4 to 1.4 \u00b1 0.6 for \u03b1-factor and auxin circuits respectively).\n\n### Constructing a multicellular bistable switch\n\nWe next turned to the construction of a bistable switch circuit. We opted to use a mutual-repression topology to generate bistability (Gardner et al., 2000; Oyarz\u00fan and Chaves, 2015). For a first design, we combined the strain that senses \u03b1-factor and represses auxin synthesis with the strain that senses auxin and represses \u03b1-factor synthesis. Here, the main state variables are signaling molecule concentration in the media rather than the internal state of the cells (specifically, high auxin/low \u03b1-factor and low auxin/high \u03b1-factor). However, both model simulation and experimental data showed that this circuit can generate only a single equilibrium, independently of the strain stoichiometry (Figure 3\u2014figure supplement 3). This result is not unexpected given the low Hill coefficients of the two repressive circuits (0.8 and 1, respectively). Rather than re-designing the gene regulatory circuits internal to these strains to be more suitable for a bistable switch, we decided to take advantage of the composable nature of the system and incorporate more strains to the architecture.\n\nAs shown in Figure 3B, combining strains that work cooperatively increases the Hill coefficients. Hence, to boost non-linearity, we added two strains to the mix that induce signal degradation: a strain that senses \u03b1-factor and synthesizes GH3 and one that senses auxin and synthesizes BAR1 (Figure 3C). The resulting system can still be seen as two modules that repress each other\u2019s activity: \u03b1-factor lowers auxin concentration (through pathway repression and GH3 expression) and auxin reduces \u03b1-factor concentration (through pathway repression and BAR1 expression). We studied this new system with a steady-state model for auxin and \u03b1-factor concentrations (Figure 3C, Model 3 and Appendix 1 for model derivation). The model suggests that one of the two Hill coefficients (n1) is higher than 2, a necessary condition for the existence of more than one equilibrium.\n\nWe investigated the existence and properties of the equilibria while varying the individual concentrations of the four strains in the circuit: these variations are captured by the four $K$ parameters in the model, representing the gains of the four strains in the circuit as explained earlier. Using the model, we identified a range of concentrations predicted to result in multiple equilibria (for the analysis, see Appendix 1). For further investigation, we picked a set of concentrations that maximize the distance between equilibria such that the equilibria are robust to small variations in strain concentrations (red diamond, Figure 3D). This solution generates two nullclines that intersect three times, resulting in 2 stable (red crosses) and 1 unstable (black empty circle) equilibrium as expected (Figure 3E).\n\nWe tested this model-guided design experimentally (Figure 3F). Strains were mixed according to the chosen concentrations and an auxin negative sensor strain was added. Upon reaching log phase (Time 0 in Figure 3F), samples were diluted at regular time intervals to prevent the cells from saturating (see the Materials and methods section). To alternate between the states, we exogenously added first auxin (at 3 hr) and then \u03b1-factor (at 15 hr) and let dilution reduce their concentration to below detectable levels for our sensor (at 12 and 24 hr, respectively).\n\nModel 3 simulation and data largely agree, although there is a lag between the two. We hypothesize that the lag is due to a signaling delay between the strains that was not fully captured by the models in this five-strain circuit (four strains for bistability plus one auxin sensor). More importantly, the \u2018high\u2019 equilibrium is stable in the first 3 hr of the experiment, but seems to become unstable after 25 hr, as shown by a negative trend in the data toward the \u2018low\u2019 equilibrium. Modeling suggests that a small increase in the K4 gain (strain: IAA expressing BAR1) would lead the system to a single \u2018low\u2019 equilibrium (Figure 3\u2014figure supplement 3). This could occur if the corresponding strain grows slightly faster than the other strains (although, in practice, we could not detect any growth difference between the single-input/single-output strains using an ANOVA test, Figure 3\u2014figure supplement 3). An alternative explanation is that metabolic load affects the growth rates depending on strain circuit activity (Sadeghpour et al., 2017; Zhang et al., 2020). Accordingly, active strains grow more slowly than inactive ones, affecting their intended concentrations over time, which could result in leaving the bistability region. To test this hypothesis, we introduced metabolic load to our models (Appendix 1). Following Sadeghpour et al., 2017, we assumed metabolic load to be linearly proportional to (normalized) gene expression This dependency is captured by a parameter $0\\leq\u03c1\\leq1$, where $\u03c1=0$ represents no impact and $\u03c1=1$ represents a high impact on growth rate (no growth at maximum gene expression). Simulations show that a behavior qualitatively similar to the loss of stability after 25 hours is possible for high metabolic load ($\u03c1\\geq0.5$), although at a later time than the experimental data (\u223c36 hrs, Figure 3\u2014figure supplement 3) according to this model representation. Moreover, since growth rates are statistically identical for active and inactive strains (Figure 3\u2014figure supplement 3), we concluded that metabolic load is unlikely to significantly affect our bistable circuit. This result is consistent with previous work supporting robustness of the repressive circuit topology to growth feedback (Zhang et al., 2020).\n\n### Automated design of strain circuits to generate logic gates\n\nIn order to expand our target behaviors, we developed an automated approach to select circuits using the twenty-four strains introduced above. Specifically, we simulated all possible strain combinations for networks of size 2, 3, and 4 strains using Models 1 and 2. For each network, we simulated the system response over 12 hours to all possible combinations of \u03b1-factor (in the discretized range of $[0\u00a0>1\u00a0>5\u00a0>10\u00a0>50\u00a0>200\u00a0>1000]$ nM), auxin ($[0\u00a0>100\u00a0>500\u00a0>1000\u00a0>5000]$ nM), and \u03b2-estr ($[0\u00a0>1\u00a0>5\u00a0>10\u00a0>100]$ nM). The ranges were chosen to properly sample the operational range of the strains (see Figure 1C, D and E).\n\nNext, we screened our simulation space for steady-state behaviors whose profiles resemble AND, OR, NAND, or NOR logic gates. For each strain combination, we restricted the steady-state behavior space to simulations obtained using combinations of the highest input concentrations (\u03b1-factor = 1000 uM, auxin = 5000 \u00b5M, \u03b2-estr = 100 nM) or no input to match the $[01]$ logic table input entries. This selection resulted in 120 combinations from the 2-node networks, 560 from the 3-node networks, and 1,820 from the 4-node networks. After normalization to allow for comparison between different sensors (Appendix 2), each of these combinations was scored according to how well they match one of the logic gate truth tables. If the predicted output for one of the expected OFF states was higher than the output for one of the expected ON states then the metric would return a value below 1 labeling that strain combination to be a poor logic gate realization. On the other hand, values above 1.0 imply a match between the output vector and the target truth table: the higher the value, the better the separation between the ON and OFF state.\n\nWe first applied this method to identify circuit topologies that generate AND gate profiles (Figure 4A). Each network topology is represented as a diamond, color-coded according to the network size (blue for 2-node, red for 3-node and yellow for 4-node networks), and divided in 4 groups according to the sensor strain reporter. Each network was scored, and its value reported on the x-axis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig4-v3.jpg)\n\n**Figure 4.:** (A) We used an automated search algorithm to screen all possible strain combinations up to size four (and including exactly one sensor strain) for their ability to realize a set of logic functions. In the example, each strain combination is scored according to how close the combination is to realizing an ideal Boolean AND gate. Each colored diamond corresponds to one strain combination. Circuits consisting of two strains (+ a sensor) are shown in blue, three-strain gates are shown in red, and four-strain gates in yellow. All strains in these simulations are at equal stoichiometry. Higher scores indicate more AND-like behavior. The top-performing strains (score >1, teal box) are selected for further computational optimization of strain stoichiometry. Optimized strain combinations have higher AND scores. Optimized circuits consisting of two strains are shown in light blue, three-strain gates are shown in green, and four-strain gates in purple. Simulations are separated according to which sensor strain is used. A specific high-scoring four-strain combination was chosen for experimental testing (red box). The experimental data (blue bars) show good quantitative agreement with the predictions (orange bars). (B) Similar optimization procedures to the ones shown in (A) were used to identify strain combinations that realize NOR, NAND, and OR logic functions. Example implementations, model predictions and experimental data are shown for all three logic functions. Error bars represents the s.d. of three biological replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Error bars represents the standard deviation of three biological replicates.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Optimal circuits, simulation, and experimental realization of the OR gate for 2, 3, and 4-node topologies. Error bars represents the standard deviation of three biological replicates.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Optimal circuits, simulation, and experimental realization of the NAND gate for 2, 3, and 4-node topologies. Error bars represents the standard deviation of three biological replicates.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Optimal circuits, simulation, and experimental realization of the NOR gate for 2, 3, and 4-node topologies. Error bars represents the standard deviation of three biological replicates.\n\nNext, we selected all the network topologies that scored higher than 1.0 and performed an optimization step. Optimization aimed to maximize the target metric using strain concentration (gains) as optimization parameters (Figure 4A, left panel). Finally, we picked the highest scoring topology for experimental testing. The best AND gate was a 4-node network topology that used \u03b1-factor and \u03b2-estradiol as inputs and a negative auxin sensor to determine the output.\n\nThis strain combination included two strains repressing auxin output in the presence of \u03b1-factor and \u03b2-estradiol respectively. These strains by themselves should ideally generate an AND gate in concert with the negative auxin sensor. The other two strains improve performance of the AND gate, likely by reducing the effect of leaky auxin synthesis from the \u03b1-factor-sensing/auxin-repressing strain. The experimental realization of this circuit shows separation between the ON and OFF states. In fact, the data (blue bars) seem to slightly outperform the predictions (Figure 4A, right panel).\n\nWe repeated this same procedure for NOR, NAND, and OR gates (Figure 4B). The optimal NOR gate is also a four-node network, while the optimal NAND gate is a three-node network, and both use the same auxin sensor as the optimal AND gate. The bar separating ON and OFF states as defined for the AND gate holds for all the gates sharing the same sensor. The optimal OR gate is the naive realization with two strains synthesizing auxin from different inputs and an activating an auxin sensor. All the gate profiles are close to their predicted values from simulation, showing the high degree of modularity of our vocabulary of strains, even for complex systems with internal feedback as the NOR gate architecture. For each gate, we also tested the optimal realization of the strain combinations for the two remaining network sizes with similarly positive results (Figure 4\u2014figure supplement 4).\n\n### Identification of circuit designs for time pulses and band pass filters\n\nWe next extended our automated design strategy to circuits that either generate time pulses or that acts as band pass filters on the input signal concentrations. Starting from the simulation dataset of all possible strain combinations, we selected all those that displayed non-monotonic behaviors (having at least one local maximum/minimum) as a function of time or as a function of the steady state input concentration. We defined a non-monotonicity metric as the distance between the local maximum/minimum and the maximum/minimum between the initial value and the final value of the series. Higher values of the metric hint to more pronounced non-monotonic behaviors, while 0 implies that no local minimum/maximum is present (Figure 5A). We then selected the top six candidates (one for each sensor type in Figure 1B, D and E, excluding the \u03b2-estradiol ones), and performed optimization to maximize the metric using cell concentrations and input concentration as parameters. Finally, we experimentally tested the top two topologies overall for both time pulses and steady-state band-pass filters. It is worth noticing that only 0.52% of all possible topologies across network sizes generated non-monotonic behaviors in time (of about 106 in total, Figure 5A) and only 0.32% at steady state (of about 105 in total, Figure 5B). Hence, a \u2018brute force\u2019 experimental approach to test all possible strain combinations would be evidently out of reach.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/74540/elife-74540-fig5-v3.jpg)\n\n**Figure 5.:** (A) An automated search algorithm was used to screen all possible strain combinations up to size four (plus one sensor strain) for non-monotonic behaviors. Specifically, we set up the search to find combinations that result in a pulse as a function of time or as a function of concentration (B). Top row: We define a non-monotonicity metric and rank all combinations according to that score. Bar graphs show the total number of possible strain combinations (blue) and the percentage that show non-linear behaviors. Results are organized by size of the strain combination and the type of target behavior. (C) Strain stoichiometries are optimized for the most promising strains to obtain more extreme maxima or minima. Left: a diagram of the highest scoring circuit for time pulses selected for testing. Center: behavior prediction after circuit stoichiometry optimization. Right: Experimental data for the time pulse circuits is shown. (D) Strain combination, model prediction, and experimental data for a system that results in a dip in fluorescence as a function of time rather than a peak. (E) Strain combination, model prediction and experimental data for a system that generates a peak at intermediate auxin concentration thus realizing a band-pass filter. (F) Strain combination, model prediction and experimental data for a system that generates a dip at intermediate alpha-factor concentrations. This system realizes a \u2018band-stop\u2019 filter, which is a combination of a low and a high-pass filter. Error bars represents the s.d. of three biological replicates.\n\nThe highest performing time pulse topology (Figure 5C) is induced by \u03b1-factor that activates both fluorescence expression and auxin synthesis. In turn, auxin induces BAR1 production, which degrades the exogenous \u03b1-factor signal: unsurprisingly, this is an incoherent feed-forward loop, type 1 (as in Mangan and Alon, 2003). The optimal \u2018reversed\u2019 time pulse, that is, a dip in the output at intermediate times (Figure 5D), responds to \u03b1-factor induction and implements a modified incoherent feed-forward loop type 3, where \u03b1-factor both represses and activates fluorescences. Model predictions suggested that three different \u03b1-factor concentrations would generate this behavior at different capacities (0.1 nM, 1 nM and 5 nM \u03b1-factor).\n\nAccording to the models, both these nonmonotonic behaviors are a consequence of delay between an activator and an inhibitor pathway.\n\nThe low-pass concentration filter (Figure 5E) uses very similar components but the sensor with opposite topology. In this case, \u03b1-factor activates fluorescence expression but also auxin synthesis, which then activates its own expression in a positive feedback. This topology is also an incoherent feed-forward loop (type 1) and results in a band-pass filter output. Finally, the band-stop filter (Figure 5F) uses both \u03b2-estr and \u03b1-factor as inputs, and the circuit topology presents a combination of negative feedback and an incoherent feed-forward loop (type 3). The circuit operates as a \u2018reversed\u2019 band-pass filter over \u03b1-factor concentration, while \u03b2-estr is kept constant and only adds a baseline of \u03b1-factor and auxin through the two top strains in the circuit.\n\nThe experimental data qualitatively agreed with the predictions, although we notice a time delay for the first two circuits and a shift in baseline for the latter two. The time delay is caused by underestimation of sensor strain activation due to difficulty in isolating the sensor strain from the other strains through gating of the fluorescence data (Figure 5C) and possibly by an under-modeled delay of auxin synthesis (Figure 5D). The baseline shift is consistent with a higher concentration of auxin in the system in both cases. As a matter of fact, these two experiments (Figure 5E F) ended at a higher cell concentration than usual (running time of 12 and 14 hr, respectively), and it is known that yeast natively synthesizes auxin at saturation (Rao et al., 2010).\n\n## Discussion\n\nHere, we demonstrated the potential of synthetic multicellular circuits to generate a wide range of behaviors starting from simple activating or repressing individual strains. Instead of implementing complex circuits in isogenic populations, we designed simple monotonic circuits in different strains and allowed them to communicate using just two signaling molecules (\u03b1-factor and auxin) or to affect their environment by attenuating those signals (through BAR1 and GH3.3). These simple constructs alone were capable of recapitulating many behaviors previously realized with synthetic gene circuits such as bistability, band-pass filters, pulses, and logic gates. While these behaviors were previously realized with fewer strains, it is important to point out that none of the strains in this study were designed with specific behaviors in mind other than monotonic activation/repression. Strain composition here plays the role of genetic fine-tuning, with a significantly lower experimental cost while maintaining high predictability. Strains with higher nonlinear response would simplify the topologies presented in this study but would not demonstrate the property of composition as much. Moreover, our last results on automated identification of circuit topologies that realize a target behavior (Figure 5) hint that the space of possible functional circuit architectures is larger than we explored.\n\nWe demonstrated through an extensive use of mathematical models, that these synthetic multicellular circuits are modular, easy-to-tune and extendable. Modularity is achieved through cell-cell communication that avoids cross-talk, and is demonstrated by combining input and output of our simple models. Multi-cellular circuits are tuned using different cell concentrations or positive-feedback architectures. Finally, we realized that we could tune the circuit behavior by extending or shortening the length of the signaling chain by adding or removing intermediate strains. We exploited this property to build the two time-pulses (Figure 5, A and B): a slower repression or activation dynamic allows for the opposite signal to operate first, generating the non-monotonic behaviors we observed. We imagine this property will gain more practical applications when the number of signaling molecules increases, which is the current major limitation in our system.\n\nWe reported that our most complex circuits display some discrepancies between simulations and experimental data, whose explanation is not always clear. It is possible that the delay between sending and receiving is not adequately modeled, or that factors that were not modeled, such as the effect of metabolic load on cellular population distribution (Blanchard et al., 2018), are affecting those circuits. Future work should account for these factors at the modeling steps, for instance using distributions to describe input-output relationships Thurley et al., 2018 or more complex models.\n\nFinally, we leveraged the mathematical description to define an automated method to design behaviors according to performance specifications. Computationally, the method simulates all the possible strain combinations given a fixed number of nodes, and then scores them according to how well they reproduce the behavior of interest. As it is defined, the method is not easily scalable because the number of total simulations increases exponentially with the number of strains and does not account for differences in the initial strain concentrations (also defined as \u2019gains\u2019 in this study). However, we found no catastrophic failures in the experimental validations, such as a qualitatively different behavior, owing to the modularity of our system. Future efforts should be directed towards more efficient ways to simulate the networks, for instance by training a neural network on the current simulation sets to predict the output of interactions.\n\n## Materials and methods\n\n### Construction of yeast strains\n\nYeast transformations were carried out using a standard lithium acetate protocol used by Gander et al., 2017. Yeast cells were made competent by growing 50 ml cultures in rich media to log growth phase, then spinning down the cells and washing with sterile deionized water. Next, linearized DNA, salmon sperm donor DNA, 50% polyethylene glycol and 1 M LiOAc were combined with cell pellet and the mixture was heat shocked at 42\u00b0 for 15 min. The cells were then spun down, supernatant was removed and they were resuspended in sterile deionized water and then plated on selective agar media. Transformations were done into Saccharomyces cerevisiae strain MATa W303 - 1A.\n\n### Cytometry\n\nFluorescence intensity was measured with a BD Accuri C6 flow cytometer equipped with a CSampler plate adapter at room temperature using excitation wavelengths of 488 and 640 nm and an emission detection filter at 533 nm (FL1 channel). A total of 10,000 (20,000 for the bistable switch samples) events above a 400,000 FSC-H threshold (to exclude debris) were recorded for each sample using the Accuri C6 CFlow Sampler software at fast flow rate (66 \u00b5L/min, 22 \u03bc core). Cytometry data were exported as FCS 3.0 files and processed using a custom Python script to obtain the mean FL1-A value for each data point.\n\n### Data collection for sensor strains\n\nSynthetic complete growth medium was used to grow the cells overnight from glycerol stock, while 300 \u00b5M IAM (Indole-3-acetamide) was added in all the experimental medium (also synthetic complete). All yeast cultures in all experiments of this study were grown in a 30\u00b0 shaker incubator at 250 rpm in 14 ml Corning Falcon polypropylene round-bottom tubes (cat #: 352059) unless otherwise stated. Experiments involving time course data were taken during log phase via the following preparation: 16 hr of overnight growth in the synthetic complete medium in a shaker incubator followed by dilution to 30 events/\u03bcL into fresh, room-temperature medium. After 10 hr of growth at 30\u00b0, we performed a new dilution to 30 events/\u03bcL in 3 ml of medium, added the inducers from dilution aliquots of 100 \u00b5M stocks, and started collecting 100 \u00b5L samples without replacement for measurements periodically until the completion of the experiment.Ten thousand events were collected for each condition. Experimental replicates are intended as biological replicates of the same overnight sample (replicates conducted on the same day) or the same glycerol stock (replicates conducted on different days). Fluorescence data was labeled as outlier and discarded if the negative control differed with previous measurements to an evident amount.\n\n### Data collection for co-culture experiments\n\nSample preparation was conducted as described above with each strain in a separate test tube. At the start of the experiment, each strain concentration was first measured and then strains were combined at the concentration specified by the experiment. We considered the concentration of 30 events/\u03bcL as the baseline concentration for all the experiments and all concentrations are expressed as multiples of this reference concentration. Once the samples were added together at the desired concentrations, inducers were added and measurements were taken periodically until the completion of the experiment as described for experiments with sensor strains. For the duration of the experiment, the samples were kept in a 30\u00b0 shaker at 250 rpm. Experimental replicates are intended as biological replicates of the same overnight sample (replicates conducted on the same day) or the same glycerol stock (replicates conducted on different days). Fluorescence data was labeled as outlier and discarded if the negative control differed with previous measurements to an evident amount.\n\n### Data collection for bistable switch data\n\nThe sample preparation was conducted as described above, each strain in individual test tubes. Then, each of the five strains in the bistable switch were combined together at the concentration as outlined in the main text in a 3 ml test tube kept in a 30\u00b0C shaker at 250 rpm for the duration of the experiment. Every 40 min, we performed a $\\frac{1}{3}$ dilution with fresh media with 300 \u00b5M concentration of IAM, through manual pipetting. Samples of 120 \u00b5L were collected from the sample without replacement. Alternatively, samples were collected from the dilution discard when available for the duration of the experiment approximately every 3 hr. Experimental replicates are intended as biological replicates of the same overnight sample.\n\n### Model fitting procedure and simulations\n\nModel parameters were estimated using Matlab fminsearch function to minimize the L2-norm of the difference between observations and simulations. For sensor strains in Figure 1, each parameter was estimated three times on three different experimental repeats to identify mean and standard deviation. Then, the parameters used for all the simulations in this study were estimated by fitting the average of the three measurements. Model parameters for the non-sensor strains were estimated by minimizing the L2-norm of the difference between the simulations and the average of three experimental repeats as data points. Models were simulated using the Matlab code 15s function. All models parameter values are contained in Appendix 3.\n\n### Codes and data availability\n\nCodes and data are available at https://github.com/Alby86/MulticellularYeast, (Carignano, 2021 copy archived at swh:1:rev:7dc5d2f016054123df8a2bdbdd9543a06e9be63d).\n",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "ef642d4c-80c0-4729-8587-9f7eb1763cfe",
+      "submission_id": "c2295188-4133-4612-9fd7-de1046d38990",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Xiaojun Tian, https://ror.org/03efmqc40 Arizona State University, School of Biological and Health Systems Engineering United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74540.sa0](https://doi.org/10.7554/eLife.74540.sa0)\n\nThis paper used multiple strains to build gene circuits and demonstrate the modular composition of strain circuits with an automated design strategy to achieve a target behavior from a large space of possible functional circuit architectures. This paper provides synthetic biologists with an alternative solution for the problems of scalability, robustness, and modularity.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Xiaojun Tian, https://ror.org/03efmqc40 Arizona State University, School of Biological and Health Systems Engineering United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74540.sa1](https://doi.org/10.7554/eLife.74540.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Modular, robust and extendible multicellular circuit design in yeast\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. One of the major concerns is that I am not sure if and how the authors consider the cell growth and growth feedback into their design and modeling? The growth rates could heavily depend on the burden caused by the circuits, and host cell growth could dilute the gene expression. Will a small difference in growth rates lead to the imbalanced ratio of the strain or even loss of one of the strains in the long term? Especially in the experiment with the concentration of the upstream strain increased to10-fold. If appliable, the authors could discuss the relevance of growth rate and growth feedback in the design of multistrain circuits when they talk about the discrepancies between the simulations and experimental data. Here are some relevant publications (PMID: 29414718, 32251409)\n\n2. The multicellular circuits in the currents look much more complicated than the original design. For example, the original toggle switch only needs two genes. In contrast, now four strains are needed in the authors' multistrain toggle switch. Similar to the logic gates. So it will add complexity and limits the scalability and robustness. What we really need is the simplicity and modularity of the circuit design is still maintained for the multistrain circuit. An in-depth discussion is expected in the revised manuscript.\n\n3. Looks like the increased nonlinearity with external positive feedback was not used at all for the multistrain circuit designs. If so, what is the purpose of this section? Would that be used for the bistable switch? Maybe two strains instead of four is enough to make a multistrain bistable switch.\n\n4. In the introduction, I suggest the author discuss the potential loss of modularity in the single-strain circuit but which can be solved with multiple strains. Some relevant publications (PMID: 33558556).\n\n5. While the modeling framework can generally be applicable to all the strains, it would be better for the audience to understand if the authors specify what x1 and \u03c72 represent in the circuits.\n\n6. What is the potential mechanism of ultrasensitivity in the strain in Figure 1D 2nd panel where n=2.2 was found? Would using the 1st-order Hill repressing function add or decrease some of the nonlinearity if you compare activation cases where a linear function is used?\n\nAll the reference of figures needs 'Figure ' or 'Figure' before figure number/panel\n\nFigure 2A, what is the yellow semicircle? Should it be removed?\n\nWhat is the reason why there are only 3 data points in Figure 2D-panel 4?\n\nHow did the author decide which data points are used for fitting while the rest for validation?\n\n7. The area of bistability in Figure 3D needs to be defined.\n\nPage 9, typo, the toggle switch circuit should be four-strain, not five-strain.\n\nAdd unit for the growth rate in Figure S10.\n\n8. Orthogonality or no cross-talk between signaling molecules should be supported by either references or the first-hand data in this work. Please add this information when combing signals was mentioned at the first time in line 130. This data could further support the claim in line 406 that modularity is achieved through cell-cell communication that avoids cross-talk.\n\n9. Line 309, based on the estimated growth rates in SI Figure 10, growth rates are actually statistically different by using t-test. Why did the authors say \"we could not detect any growth difference\u2026\" here?\n\n10. Line 389, what do the authors mean by \"cytometrically isolating the sensor strain from other strains\"? Do you mean data gating or cell sorting? The cytometer Accuri C6 cannot do cell sorting.\n\n11. Line 418, it is unclear what individual cell difference that the authors refer to? Please be explicit about the difference.\n\n12. Line 426, similarly, it is unclear what differences are in the initial strain populations? Please be explicit about the difference.\n\n13. Consider changing the chemical formula H2O (lines 435 and 438) to sterile deionized water if applicable.\n\n14. Line 439, please specify as yeast Saccharomyces cerevisiae strain MATa W303-1A.\n\n15. Line 441, when using CSampler plate adapter, what is the temperature of the plate exposed to during the measurement?\n\n16. For others to reproduce the results, please provide the details.\n\n17. Line 444, what is the flow rate of cytometer?\n\n18. Line 451, in 16 hrs of overnight growth, what is the rpm setting of the shaker? Are the shaker settings the same across all the experiments? What is the vessel, a tube or a plate, and what catalog number from which company?\n\n19. Line 452, in 10 hrs of growth, what is the vessel? Is it the same rpm setting? After dilution to 3 mL medium, what is the vessel, a tube or a plate?\n\n20. Line 453, what is the stock concentration of the inducers? 1000x stock?\n\n21. Line454, when taking 100 uL samples periodically, do the author replenish 100 uL fresh medium after each sampling?\n\n22. Line478, did the authors replenish fresh medium after sampling 120 uL every 3 hours?\n\n23. Line 33. This sentence \"Albeit very successful, this approach shows its limitations when it comes to scalability and robustness.\" is redundant.\n\nAll the numbering of the figures in the main text did not start with \"Figure.\" Please add it.\n\n24. Line 123, A. thaliana and C. papaya should be italic.\n\n25. Line 155, please indicate where readers could find the data of the auxin activating strains which have a 3 fold-change activation.\n\n26. The labeling of figure panels which use uppercase A,B,C\u2026 is not consistent with the labeling in the caption which use lowercase a, b, c\u2026.\n\n27. SI Figure 8 and SI Figure 11 are better re-named as SI Note 1 and SI Note 2 because they are not figures.\n\n28. Line 292, should \"a set concentrations\" be written as \"a set of concentrations\"?\n\n29. Line 296, should Figure 3E be Figure 3F?\n\n30. It is much clear to draw the bistable switch and the fifth reporter strain in Figure 3F.\n",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7ad0ecce-d7ae-4acf-8f50-a4a35fc5e644",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C1",
+      "claim": "A library of 24 yeast strains was constructed that are capable of sending, receiving or responding to three molecular signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we construct a library of 24 yeast strains capable of sending, receiving or responding to three molecular signals, characterize them experimentally and build quantitative models of their input-output relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the construction of 24 yeast strains with specific capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "9d21f8bd-6a45-4af0-a575-6b7bdffa9446",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C2",
+      "claim": "Experimentally measured consortia dynamics can be predicted from models of constituent parts.",
+      "claim_type": "EXPLICIT",
+      "source": "We then compose these strains into two- and three-strain cascades as well as a four-strain bistable switch and show that experimentally measured consortia dynamics can be predicted from the models of the constituent parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that experimental measurements match model predictions for multi-strain systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "2d52b14a-6d72-46d4-8e9c-84266c3a8b90",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C3",
+      "claim": "Computational search can identify strain combinations that realize target behaviors including logic gates, band-pass filters, and time pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore the achievable range of behaviors, we perform a fully automated computational search over all two-, three-, and four-strain consortia to identify combinations that realize target behaviors including logic gates, band-pass filters, and time pulses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes a computational approach that successfully identifies functional strain combinations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "996f1e59-8b58-42bf-ace6-2df9ad4c780f",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C4",
+      "claim": "Experiments closely track computational predictions for optimized strain combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain combinations that are predicted to map onto a target behavior are further computationally optimized and then experimentally tested. Experiments closely track computational predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states agreement between experimental results and computational predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "a1a1a064-57db-45f9-a9ef-2982feae0272",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C5",
+      "claim": "Single cell circuit engineering has limited scalability because parts cannot be reused.",
+      "claim_type": "EXPLICIT",
+      "source": "Albeit very successful, single cell circuit engineering has limited scalability and robustness because parts cannot be reused, the genetic burden on the cell grows with circuit size (Nikolados et al., 2019), and retroactivity (Del Vecchio et al., 2008) and component crosstalk (Del Vecchio, 2015) interferes with expected behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites literature to support limitations of single-cell approaches.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "533a934d-8fdc-4627-a078-9bd788936c5b",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C6",
+      "claim": "Genetic burden on cells grows with circuit size in single-cell circuit engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "Albeit very successful, single cell circuit engineering has limited scalability and robustness because parts cannot be reused, the genetic burden on the cell grows with circuit size (Nikolados et al., 2019), and retroactivity (Del Vecchio et al., 2008) and component crosstalk (Del Vecchio, 2015) interferes with expected behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citation to Nikolados et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "0ebba6d1-7892-4a6b-aa8d-2c61d7c40cbe",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C7",
+      "claim": "Retroactivity interferes with expected behavior in single-cell circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Albeit very successful, single cell circuit engineering has limited scalability and robustness because parts cannot be reused, the genetic burden on the cell grows with circuit size (Nikolados et al., 2019), and retroactivity (Del Vecchio et al., 2008) and component crosstalk (Del Vecchio, 2015) interferes with expected behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Del Vecchio et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "7f44f681-10f5-460a-95be-f75e35463693",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C8",
+      "claim": "Component crosstalk interferes with expected behavior in single-cell circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Albeit very successful, single cell circuit engineering has limited scalability and robustness because parts cannot be reused, the genetic burden on the cell grows with circuit size (Nikolados et al., 2019), and retroactivity (Del Vecchio et al., 2008) and component crosstalk (Del Vecchio, 2015) interferes with expected behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Del Vecchio, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "0b68aac8-e04e-42ee-a01f-bb9121840763",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C9",
+      "claim": "Competition over shared gene expression resources makes unrelated circuits unintentionally coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, competition over shared gene expression resources makes unrelated circuits unintentionally coupled (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zhang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "bf000346-8a1e-4546-a41e-55e624847084",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C10",
+      "claim": "Division of labor is common in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Such division of labor is common in nature and interest has recently emerged in engineering multi-cellular synthetic systems (Brenner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "7bcafc42-9f7b-4890-8727-181c69c84d8b",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C11",
+      "claim": "Three different cell populations can, in theory, generate up to 100 different logic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, mathematical modeling has demonstrated that multi-cellular computation should easily access a larger space of behaviors: for instance, just three different cell populations can, in theory, generate up to 100 different logic functions (Regot et al., 2011) and even bimodality and cell-synchronization (Thurley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Regot et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "1945feb5-1c17-45fa-b48a-a8dd54d971a5",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C12",
+      "claim": "The native BAR1 gene was knocked out to prevent \u03b1-factor degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "To have a baseline strain that does not interfere with signaling, we knocked out the native BAR1 gene as in Youk and Lim, 2014 to prevent \u03b1-factor degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes this genetic modification with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "9c3cfffa-ae0c-4e23-9083-6d369c642cda",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C13",
+      "claim": "FAR1 was knocked out to prevent growth arrest induced by \u03b1-factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, to account for growth-arrest induced by \u03b1-factor, which affects gene expression on a large scale, we knocked out FAR1 a protein that contributes to arresting the cell cycle at G1Chang and Chang and Herskowitz, 1990, and constitutively expressed POG1, a protein that promotes growth-arrest recovery (Leza and Elion, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes this genetic modification with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "848beb60-7810-402f-a7ba-f3fc4ec5c428",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C14",
+      "claim": "POG1 was constitutively expressed to promote growth-arrest recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, to account for growth-arrest induced by \u03b1-factor, which affects gene expression on a large scale, we knocked out FAR1 a protein that contributes to arresting the cell cycle at G1Chang and Chang and Herskowitz, 1990, and constitutively expressed POG1, a protein that promotes growth-arrest recovery (Leza and Elion, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes this genetic modification with citation to Leza and Elion, 1999.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "40268a0a-3e0d-4e7e-8d91-006b1c04dc2d",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C15",
+      "claim": "Overexpression of STE2 solved the problem of no \u03b1-factor output from strains that both sense and secrete \u03b1-factor.",
+      "claim_type": "EXPLICIT",
+      "source": "We solved this problem by overexpressing STE2 on a pGPD promoter Sun et al., 2012 in these strains, aiming to have some protein copies escaping this interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes this solution with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "38dc9e6c-3faf-4abf-982b-d6a95904619b",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C16",
+      "claim": "Integration of the auxin-efflux pump ABCB1/PGP1 from A. thaliana amplified auxin secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we amplified Auxin secretion and thus effectively the strength of the signal produced, through integration of the auxin-efflux pump ABCB1/PGP1 from A. thaliana into our yeast strains, as previously reported in Geisler et al., 2005.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes this modification with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "81554434-e97b-4869-8691-5d60d912dfa5",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C17",
+      "claim": "A significant increase in auxin-synthesis yield was measured when PGP1 was integrated.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured a significant increase in the auxin-synthesis yield as measured by a neighboring IAA-detecting cell when PGP1 was integrated (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section reports experimental data shown in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "25a8b404-ad0d-4745-8027-61a10d44b91f",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C18",
+      "claim": "GH3.3 from A. thaliana had higher efficiency than GH3.6 in converting IAA to IAA-Asp.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested the IAA to IAA-Asp conversion rate using mass spectrometry and found that GH3.3 from A. thaliana had the higher efficiency (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section reports experimental data from mass spectrometry shown in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "fad28d9b-7dbd-4ed1-a723-037a008b28ba",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C19",
+      "claim": "IAA-Asp does not activate the IAA-mediated degradation pathway in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested that IAA-Asp does not activate the IAA-mediated degradation pathway in yeast, by adding 10 \u00b5M of IAA-Asp in an auxin-sensor yeast culture and detecting no variation in fluorescence (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section reports experimental data shown in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "1f6f3f36-5cc9-482a-ac13-024b16b28cbc",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C29",
+      "claim": "The sensors achieve an ON/OFF fold-change that ranges between a minimum of 3 and a maximum of 42.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the sensors achieve an ON/OFF fold-change that ranges between a minimum of 3 (IAA activating GFP) and a maximum of 42 (\u03b2-estradiol activating GFP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section reports experimental characterization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "99d949df-79ec-4d62-bfe4-27400b8f50fe",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C30",
+      "claim": "Variations across treatments with pairwise combinations of inducers are contained within 11% of the nominal value for signal concentrations within the range used for circuit experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Variations across the treatments are contained within 11% of the nominal value for signal concentrations within the range used for circuit experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section reports experimental data on signal orthogonality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "0e186843-880f-4c4c-9409-e6e51e4feed2",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C31",
+      "claim": "Positive feedback increased the nonlinearity of the \u03b1-factor response from 0.8 \u00b1 0.0 to 1.5 \u00b1 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the positive feedback increased the nonlinearity of the response (from 0.8 \u00b1 0.0 to 1.5 \u00b1 0.1 and from 1.0 \u00b1 0.4 to 1.2 \u00b1 0.3 for the \u03b1-factor and the auxin case respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section reports experimental data on Hill coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "62dfebb3-df23-4076-b57d-882a033eab81",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C32",
+      "claim": "Positive feedback increased the nonlinearity of the auxin response from 1.0 \u00b1 0.4 to 1.2 \u00b1 0.3.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the positive feedback increased the nonlinearity of the response (from 0.8 \u00b1 0.0 to 1.5 \u00b1 0.1 and from 1.0 \u00b1 0.4 to 1.2 \u00b1 0.3 for the \u03b1-factor and the auxin case respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section reports experimental data on Hill coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "d1d1bf5c-1f2a-4ea7-a946-1c2485d82a26",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C33",
+      "claim": "A mutual-repression topology was used to generate bistability.",
+      "claim_type": "EXPLICIT",
+      "source": "We opted to use a mutual-repression topology to generate bistability (Gardner et al., 2000; Oyarz\u00fan and Chaves, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes the design choice with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "61726cc6-33ae-4702-b9df-abf7585c923f",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C34",
+      "claim": "The initial two-strain mutual repression circuit generated only a single equilibrium, independently of strain stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both model simulation and experimental data showed that this circuit can generate only a single equilibrium, independently of the strain stoichiometry (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section reports both modeling and experimental results shown in a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "7fe68212-b3fc-4529-a729-b3f45e621f28",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C35",
+      "claim": "Only 0.52% of all possible topologies across network sizes generated non-monotonic behaviors in time.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noticing that only 0.52% of all possible topologies across network sizes generated non-monotonic behaviors in time (of about 106 in total, Figure 5A) and only 0.32% at steady state (of about 105 in total, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section reports computational analysis results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "a992fc58-b6c6-41b6-a133-ac2a28048f9e",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C36",
+      "claim": "Only 0.32% of all possible topologies generated non-monotonic behaviors at steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noticing that only 0.52% of all possible topologies across network sizes generated non-monotonic behaviors in time (of about 106 in total, Figure 5A) and only 0.32% at steady state (of about 105 in total, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section reports computational analysis results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "c8d89937-5831-42f8-9400-a9beca6a9632",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C37",
+      "claim": "The highest performing time pulse topology is an incoherent feed-forward loop, type 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest performing time pulse topology (Figure 5C) is induced by \u03b1-factor that activates both fluorescence expression and auxin synthesis. In turn, auxin induces BAR1 production, which degrades the exogenous \u03b1-factor signal: unsurprisingly, this is an incoherent feed-forward loop, type 1 (as in Mangan and Alon, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section identifies the circuit topology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "3216af95-eb06-43cd-9e44-a8056cfe4681",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C38",
+      "claim": "Yeast natively synthesizes auxin at saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a matter of fact, these two experiments (Figure 5E F) ended at a higher cell concentration than usual (running time of 12 and 14 hr, respectively), and it is known that yeast natively synthesizes auxin at saturation (Rao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites literature to explain experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "189e5f29-839a-474c-8771-937bbfc1eda2",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C39",
+      "claim": "Synthetic multicellular circuits are modular, easy-to-tune and extendable.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated through an extensive use of mathematical models, that these synthetic multicellular circuits are modular, easy-to-tune and extendable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion summarizes the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "3c270c9a-56bc-41e5-8717-63e7bfd294ec",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C40",
+      "claim": "Modularity is achieved through cell-cell communication that avoids cross-talk.",
+      "claim_type": "EXPLICIT",
+      "source": "Modularity is achieved through cell-cell communication that avoids cross-talk, and is demonstrated by combining input and output of our simple models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion explains the mechanism underlying modularity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "a523b403-cc0c-48f4-9b61-8b91fade0e86",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C41",
+      "claim": "The current major limitation in the system is the number of signaling molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "We imagine this property will gain more practical applications when the number of signaling molecules increases, which is the current major limitation in our system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion identifies a limitation of the current system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "08885b0e-1779-4421-aeaf-96808761892f",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C42",
+      "claim": "Yeast transformations were carried out using a standard lithium acetate protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast transformations were carried out using a standard lithium acetate protocol used by Gander et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the experimental protocol with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "68cae0af-f96f-43f2-972a-57aa23f757ac",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C43",
+      "claim": "Transformations were done into Saccharomyces cerevisiae strain MATa W303 - 1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Transformations were done into Saccharomyces cerevisiae strain MATa W303 - 1A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section specifies the yeast strain used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "9d322cfe-e2d2-4f9a-9e3a-ea15ef08137a",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C44",
+      "claim": "Fluorescence intensity was measured with a BD Accuri C6 flow cytometer.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence intensity was measured with a BD Accuri C6 flow cytometer equipped with a CSampler plate adapter at room temperature using excitation wavelengths of 488 and 640 nm and an emission detection filter at 533 nm (FL1 channel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the measurement equipment and settings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "c56bf757-dce9-4a8a-913c-e52e7b8e3007",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C45",
+      "claim": "A total of 10,000 events above a 400,000 FSC-H threshold were recorded for each sample.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 10,000 (20,000 for the bistable switch samples) events above a 400,000 FSC-H threshold (to exclude debris) were recorded for each sample using the Accuri C6 CFlow Sampler software at fast flow rate (66 \u00b5L/min, 22 \u03bc core).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the data collection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "28514a84-d204-462c-8d0f-15709f6d4d82",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C46",
+      "claim": "Synthetic complete growth medium was used to grow cells overnight from glycerol stock.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic complete growth medium was used to grow the cells overnight from glycerol stock, while 300 \u00b5M IAM (Indole-3-acetamide) was added in all the experimental medium (also synthetic complete).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the growth conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "f6f270b1-02db-46f2-a1d8-7164e1cd1474",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C47",
+      "claim": "300 \u00b5M IAM was added in all experimental medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic complete growth medium was used to grow the cells overnight from glycerol stock, while 300 \u00b5M IAM (Indole-3-acetamide) was added in all the experimental medium (also synthetic complete).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "0717f8ab-39bb-4825-93df-174025267368",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C48",
+      "claim": "Model parameters were estimated using Matlab fminsearch function to minimize the L2-norm of the difference between observations and simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Model parameters were estimated using Matlab fminsearch function to minimize the L2-norm of the difference between observations and simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the parameter fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "61b628d3-f483-488b-864a-2a5adcebbd90",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "claim_id": "C49",
+      "claim": "Models were simulated using the Matlab code 15s function.",
+      "claim_type": "EXPLICIT",
+      "source": "Models were simulated using the Matlab code 15s function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the simulation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5fc04038-9d82-42dc-a735-8071a0d4b72e",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors constructed a library of 24 yeast strains with engineered capabilities for sending, receiving, and responding to three molecular signals (\u03b1-factor, auxin, and \u03b2-estradiol). This involved multiple genetic modifications including BAR1 and FAR1 knockouts, POG1 overexpression, STE2 overexpression, integration of auxin efflux pump PGP1, and implementation of GH3.3 for auxin inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C12-C19 collectively describe the construction and optimization of the strain library with detailed experimental validation. The genetic modifications are well-documented with appropriate citations and experimental data (mass spectrometry, fluorescence measurements) supporting the functional improvements achieved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "c58e47fe-4b7c-43e8-8aa9-6137a8f5d6c8",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The sensor strains achieve ON/OFF fold-changes ranging from 3-fold to 42-fold, with signal orthogonality demonstrated by variations within 11% when testing pairwise combinations of inducers at concentrations used in circuit experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C30 report quantitative characterization of sensor performance. The fold-change values are explicitly stated with specific examples, and orthogonality testing provides evidence that the three signaling pathways do not significantly interfere with each other within the operational range.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "46c77313-3092-4213-b467-0c35ccfef765",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrate that multicellular consortia dynamics can be predicted from mathematical models of constituent parts, showing modularity achieved through cell-cell communication that avoids crosstalk. Experimental measurements closely track computational predictions across multiple circuit designs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C4, C39, and C40 are supported by extensive experimental validation across two-strain, three-strain, and four-strain circuits shown in Figures 2-5. The models successfully predict behavior when strains are combined, and the agreement between predictions and experiments is demonstrated quantitatively throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "da118dd0-1fc3-4326-aa27-fc007cdb1235",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Computational search over all two-, three-, and four-strain consortia identified strain combinations that realize target behaviors including logic gates, band-pass filters, and time pulses. Only 0.52% of topologies generated non-monotonic behaviors in time and 0.32% at steady state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C35, and C36 describe the computational screening approach with specific quantitative results. The rarity of non-monotonic behaviors (0.52% and 0.32%) emphasizes the value of computational screening. Experimental validation of selected circuits (Figures 4-5) confirms the predictive power of this approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "c669c0ed-b8ed-403f-8992-90035dced3b4",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Positive feedback circuits increased the nonlinearity (Hill coefficient) of responses: from 0.8\u00b10.0 to 1.5\u00b10.1 for \u03b1-factor and from 1.0\u00b10.4 to 1.2\u00b10.3 for auxin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 report specific quantitative measurements with error estimates from experimental replicates. The increases in Hill coefficients are consistent with expected behavior of positive feedback circuits and are supported by dose-response data shown in Figure 3A.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "32bfa25a-cec8-4781-b5af-a14731204119",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A mutual-repression topology was initially attempted for bistability, but both modeling and experiments showed it generated only a single equilibrium regardless of strain stoichiometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C34 describe a negative result that motivated the four-strain bistable switch design. Both computational predictions and experimental data (Figure 3\u2014figure supplement 3) confirm the absence of bistability in the two-strain mutual repression circuit, demonstrating appropriate use of models to guide design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "238d4377-09d6-426b-8dfd-623b94ccb5d4",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The highest performing time pulse topology is an incoherent feed-forward loop type 1, where \u03b1-factor activates both fluorescence and auxin synthesis, and auxin induces BAR1 production to degrade \u03b1-factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 correctly identifies the circuit topology with appropriate citation to Mangan and Alon, 2003. The experimental data in Figure 5C validates the time pulse behavior, though there is some time delay between model and experiment that the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "b0fdb40f-be39-4226-b11e-2d246342e83a",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Yeast natively synthesizes auxin at saturation, which explains baseline shifts observed in band-pass filter experiments that ran longer than usual (12-14 hours).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is supported by citation to Rao et al., 2010 and provides a reasonable explanation for the observed baseline shift in experiments shown in Figure 5E-F. This demonstrates appropriate interpretation of experimental artifacts using literature knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "67ef3321-6e34-4c5c-a65a-b2cfb2b53e50",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The current major limitation of the system is the number of available signaling molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 represents a reasonable assessment of system limitations. With only three signaling molecules (\u03b1-factor, auxin, \u03b2-estradiol), the complexity of achievable circuits is inherently constrained. This is a valid limitation acknowledged by the authors in the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "afbaa0d0-a63b-4d0e-ba7d-43d600b49f1b",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors used standard experimental methods including lithium acetate transformation into S. cerevisiae MATa W303-1A, flow cytometry with BD Accuri C6, synthetic complete medium with 300 \u00b5M IAM, and Matlab-based parameter fitting and simulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 describe standard, well-established methods with appropriate citations and sufficient detail for reproducibility. The methods are appropriate for the experimental goals and consistent with practices in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "cd9e8771-35eb-4633-b0a0-b8319d4b9c9a",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Single-cell circuit engineering has limitations including inability to reuse parts, genetic burden that grows with circuit size, retroactivity, component crosstalk, and unintentional coupling through competition for shared gene expression resources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 summarize established knowledge about limitations of single-cell synthetic biology, supported by appropriate citations to peer-reviewed literature (Nikolados et al., 2019; Del Vecchio et al., 2008; Del Vecchio, 2015; Zhang et al., 2021). These claims provide context for the multicellular approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    },
+    {
+      "id": "ea6ae06e-4d69-4233-b5d3-ddcbcc56768d",
+      "content_id": "7c211085-a853-43e7-9ec1-112c07facb2d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Division of labor is common in nature, and mathematical modeling has shown that three cell populations can theoretically generate up to 100 different logic functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C11 cite established knowledge (C10) and prior modeling work by Regot et al., 2011 (C11) to motivate the multicellular approach. These are appropriately cited background claims that establish the theoretical potential of multicellular systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:50:54.564600Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7ad0ecce-d7ae-4acf-8f50-a4a35fc5e644",
+      "result_id": "5fc04038-9d82-42dc-a735-8071a0d4b72e"
+    },
+    {
+      "claim_id": "1945feb5-1c17-45fa-b48a-a8dd54d971a5",
+      "result_id": "5fc04038-9d82-42dc-a735-8071a0d4b72e"
+    },
+    {
+      "claim_id": "9c3cfffa-ae0c-4e23-9083-6d369c642cda",
+      "result_id": "5fc04038-9d82-42dc-a735-8071a0d4b72e"
+    },
+    {
+      "claim_id": "848beb60-7810-402f-a7ba-f3fc4ec5c428",
+      "result_id": "5fc04038-9d82-42dc-a735-8071a0d4b72e"
+    },
+    {
+      "claim_id": "40268a0a-3e0d-4e7e-8d91-006b1c04dc2d",
+      "result_id": "5fc04038-9d82-42dc-a735-8071a0d4b72e"
+    },
+    {
+      "claim_id": "38dc9e6c-3faf-4abf-982b-d6a95904619b",
+      "result_id": "5fc04038-9d82-42dc-a735-8071a0d4b72e"
+    },
+    {
+      "claim_id": "81554434-e97b-4869-8691-5d60d912dfa5",
+      "result_id": "5fc04038-9d82-42dc-a735-8071a0d4b72e"
+    },
+    {
+      "claim_id": "25a8b404-ad0d-4745-8027-61a10d44b91f",
+      "result_id": "5fc04038-9d82-42dc-a735-8071a0d4b72e"
+    },
+    {
+      "claim_id": "fad28d9b-7dbd-4ed1-a723-037a008b28ba",
+      "result_id": "5fc04038-9d82-42dc-a735-8071a0d4b72e"
+    },
+    {
+      "claim_id": "1f6f3f36-5cc9-482a-ac13-024b16b28cbc",
+      "result_id": "c58e47fe-4b7c-43e8-8aa9-6137a8f5d6c8"
+    },
+    {
+      "claim_id": "99d949df-79ec-4d62-bfe4-27400b8f50fe",
+      "result_id": "c58e47fe-4b7c-43e8-8aa9-6137a8f5d6c8"
+    },
+    {
+      "claim_id": "9d21f8bd-6a45-4af0-a575-6b7bdffa9446",
+      "result_id": "46c77313-3092-4213-b467-0c35ccfef765"
+    },
+    {
+      "claim_id": "996f1e59-8b58-42bf-ace6-2df9ad4c780f",
+      "result_id": "46c77313-3092-4213-b467-0c35ccfef765"
+    },
+    {
+      "claim_id": "189e5f29-839a-474c-8771-937bbfc1eda2",
+      "result_id": "46c77313-3092-4213-b467-0c35ccfef765"
+    },
+    {
+      "claim_id": "3c270c9a-56bc-41e5-8717-63e7bfd294ec",
+      "result_id": "46c77313-3092-4213-b467-0c35ccfef765"
+    },
+    {
+      "claim_id": "2d52b14a-6d72-46d4-8e9c-84266c3a8b90",
+      "result_id": "da118dd0-1fc3-4326-aa27-fc007cdb1235"
+    },
+    {
+      "claim_id": "7fe68212-b3fc-4529-a729-b3f45e621f28",
+      "result_id": "da118dd0-1fc3-4326-aa27-fc007cdb1235"
+    },
+    {
+      "claim_id": "a992fc58-b6c6-41b6-a133-ac2a28048f9e",
+      "result_id": "da118dd0-1fc3-4326-aa27-fc007cdb1235"
+    },
+    {
+      "claim_id": "0e186843-880f-4c4c-9409-e6e51e4feed2",
+      "result_id": "c669c0ed-b8ed-403f-8992-90035dced3b4"
+    },
+    {
+      "claim_id": "62dfebb3-df23-4076-b57d-882a033eab81",
+      "result_id": "c669c0ed-b8ed-403f-8992-90035dced3b4"
+    },
+    {
+      "claim_id": "d1d1bf5c-1f2a-4ea7-a946-1c2485d82a26",
+      "result_id": "32bfa25a-cec8-4781-b5af-a14731204119"
+    },
+    {
+      "claim_id": "61726cc6-33ae-4702-b9df-abf7585c923f",
+      "result_id": "32bfa25a-cec8-4781-b5af-a14731204119"
+    },
+    {
+      "claim_id": "c8d89937-5831-42f8-9400-a9beca6a9632",
+      "result_id": "238d4377-09d6-426b-8dfd-623b94ccb5d4"
+    },
+    {
+      "claim_id": "3216af95-eb06-43cd-9e44-a8056cfe4681",
+      "result_id": "b0fdb40f-be39-4226-b11e-2d246342e83a"
+    },
+    {
+      "claim_id": "a523b403-cc0c-48f4-9b61-8b91fade0e86",
+      "result_id": "67ef3321-6e34-4c5c-a65a-b2cfb2b53e50"
+    },
+    {
+      "claim_id": "08885b0e-1779-4421-aeaf-96808761892f",
+      "result_id": "afbaa0d0-a63b-4d0e-ba7d-43d600b49f1b"
+    },
+    {
+      "claim_id": "68cae0af-f96f-43f2-972a-57aa23f757ac",
+      "result_id": "afbaa0d0-a63b-4d0e-ba7d-43d600b49f1b"
+    },
+    {
+      "claim_id": "9d322cfe-e2d2-4f9a-9e3a-ea15ef08137a",
+      "result_id": "afbaa0d0-a63b-4d0e-ba7d-43d600b49f1b"
+    },
+    {
+      "claim_id": "c56bf757-dce9-4a8a-913c-e52e7b8e3007",
+      "result_id": "afbaa0d0-a63b-4d0e-ba7d-43d600b49f1b"
+    },
+    {
+      "claim_id": "28514a84-d204-462c-8d0f-15709f6d4d82",
+      "result_id": "afbaa0d0-a63b-4d0e-ba7d-43d600b49f1b"
+    },
+    {
+      "claim_id": "f6f270b1-02db-46f2-a1d8-7164e1cd1474",
+      "result_id": "afbaa0d0-a63b-4d0e-ba7d-43d600b49f1b"
+    },
+    {
+      "claim_id": "0717f8ab-39bb-4825-93df-174025267368",
+      "result_id": "afbaa0d0-a63b-4d0e-ba7d-43d600b49f1b"
+    },
+    {
+      "claim_id": "61b628d3-f483-488b-864a-2a5adcebbd90",
+      "result_id": "afbaa0d0-a63b-4d0e-ba7d-43d600b49f1b"
+    },
+    {
+      "claim_id": "a1a1a064-57db-45f9-a9ef-2982feae0272",
+      "result_id": "cd9e8771-35eb-4633-b0a0-b8319d4b9c9a"
+    },
+    {
+      "claim_id": "533a934d-8fdc-4627-a078-9bd788936c5b",
+      "result_id": "cd9e8771-35eb-4633-b0a0-b8319d4b9c9a"
+    },
+    {
+      "claim_id": "0ebba6d1-7892-4a6b-aa8d-2c61d7c40cbe",
+      "result_id": "cd9e8771-35eb-4633-b0a0-b8319d4b9c9a"
+    },
+    {
+      "claim_id": "7f44f681-10f5-460a-95be-f75e35463693",
+      "result_id": "cd9e8771-35eb-4633-b0a0-b8319d4b9c9a"
+    },
+    {
+      "claim_id": "0b68aac8-e04e-42ee-a01f-bb9121840763",
+      "result_id": "cd9e8771-35eb-4633-b0a0-b8319d4b9c9a"
+    },
+    {
+      "claim_id": "bf000346-8a1e-4546-a41e-55e624847084",
+      "result_id": "ea6ae06e-4d69-4233-b5d3-ddcbcc56768d"
+    },
+    {
+      "claim_id": "7bcafc42-9f7b-4890-8727-181c69c84d8b",
+      "result_id": "ea6ae06e-4d69-4233-b5d3-ddcbcc56768d"
+    }
+  ],
+  "comparisons": []
+}

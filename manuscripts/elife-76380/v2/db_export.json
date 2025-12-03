@@ -1,0 +1,695 @@
+{
+  "submission": {
+    "id": "a61ee284-382c-4390-891e-4d9bdf1ea474",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:24:46.094287Z",
+    "updated_at": "2025-12-03T13:24:46.094287Z"
+  },
+  "content": [
+    {
+      "id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "submission_id": "a61ee284-382c-4390-891e-4d9bdf1ea474",
+      "content_type": "manuscript",
+      "content_text": "# A biophysical threshold for biofilm formation\n\n## Authors\n\n- Jenna A Moore-Ott<sup>1</sup> ([ORCID: 0000-0001-6832-0658](https://orcid.org/0000-0001-6832-0658))\n- Selena Chiu<sup>1</sup>\n- Daniel B Amchin<sup>1</sup>\n- Tapomoy Bhattacharjee<sup>2</sup>\n- Sujit S Datta<sup>1</sup> ([ORCID: 0000-0003-2400-1561](https://orcid.org/0000-0003-2400-1561)) \u2020\n\n### Affiliations\n\n1. Department of Chemical and Biological Engineering, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n2. Andlinger Center for Energy and the Environment, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacteria are ubiquitous in our daily lives, either as motile planktonic cells or as immobilized surface-attached biofilms. These different phenotypic states play key roles in agriculture, environment, industry, and medicine; hence, it is critically important to be able to predict the conditions under which bacteria transition from one state to the other. Unfortunately, these transitions depend on a dizzyingly complex array of factors that are determined by the intrinsic properties of the individual cells as well as those of their surrounding environments, and are thus challenging to describe. To address this issue, here, we develop a generally-applicable biophysical model of the interplay between motility-mediated dispersal and biofilm formation under positive quorum sensing control. Using this model, we establish a universal rule predicting how the onset and extent of biofilm formation depend collectively on cell concentration and motility, nutrient diffusion and consumption, chemotactic sensing, and autoinducer production. Our work thus provides a key step toward quantitatively predicting and controlling biofilm formation in diverse and complex settings.\n\n## Introduction\n\nDating back to their discovery by van Leeuwenhoek over three centuries ago, it has been known that bacteria typically exist in one of two phenotypic states: either as motile, planktonic cells that self-propel using e.g., flagella or pili (\u201canimalcules \u2026 moving among one another\u201d; Van Leewenhoeck, 1677), or as immobilized, surface-attached biofilms (\u201clittle white matter \u2026 in the scurf of the teeth\u201d; Leewenhoeck, 1684). These different states have critical functional implications for processes in agriculture, environment, industry, and medicine. For example, motility-mediated dispersal of planktonic cells enables populations to escape from harmful conditions and colonize new terrain (Adler, 1966a; Adler, 1966b; Saragosti et al., 2011; Fu et al., 2018; Cremer et al., 2019; Bhattacharjee et al., 2021)\u2014underlying infection progression, drug delivery to hard-to-reach spots in the body, food spoilage, interactions with plant roots in agriculture, and bioremediation of environmental contaminants (Balzan et al., 2007; Chaban et al., 2015; Datta et al., 2016; Harman et al., 2012; Ribet and Cossart, 2015; Siitonen and Nurminen, 1992; Lux et al., 2001; O\u2019Neil and Marquis, 2006; Gill and Penney, 1977; Shirai et al., 2017; Thornlow et al., 2015; Toley and Forbes, 2012; Dechesne et al., 2010; Souza et al., 2015; Turnbull et al., 2001; Watt et al., 2006; Babalola, 2010; Adadevoh et al., 2016; Adadevoh et al., 2018; Ford and Harvey, 2007; Wang et al., 2008; Reddy and Ford, 1996; Mart\u00ednez-Calvo et al., 2021). In addition, the formation of immobilized biofilms can initiate antibiotic-resistant infections, foul biomedical devices and industrial equipment, or conversely, help sequester and remove contaminants in dirty water (Davey and O\u2019toole, 2000; Hall-Stoodley et al., 2004; Mah et al., 2003; O\u2019Toole and Stewart, 2005; Fux et al., 2005; Nicolella et al., 2000; Donlan and Costerton, 2002; Davies et al., 1998). Hence, extensive research has focused on understanding bacterial behavior in either the planktonic or biofilm state.\n\nFor example, studies of planktonic cells have provided important insights into bacterial motility\u2014which can be either undirected (Berg, 2018; Berg, 2004; Bhattacharjee and Datta, 2019a; Bhattacharjee and Datta, 2019b) or directed in response to e.g., a chemical gradient via chemotaxis (Adler, 1966b; Adler, 1966a; Saragosti et al., 2011; Fu et al., 2018; Cremer et al., 2019; Bhattacharjee et al., 2021; Keller and Segel, 1971; Odell and Keller, 1976; Keller and Odell, 1975; Lauffenburger, 1991; Seyrich et al., 2019; Croze et al., 2011; Amchin et al., 2022). These processes are now known to be regulated not just by intrinsic cellular properties, such as swimming kinematics and the amplitude and frequency of cell body reorientations, but also by the properties of their environment, such as cellular concentration, chemical/nutrient conditions, and confinement by surrounding obstacles (Berg, 2018; Berg, 2004; Bhattacharjee and Datta, 2019a; Bhattacharjee and Datta, 2019b; Adler, 1966b; Adler, 1966a; Saragosti et al., 2011; Fu et al., 2018; Cremer et al., 2019; Bhattacharjee et al., 2021; Keller and Segel, 1971; Odell and Keller, 1976; Keller and Odell, 1975; Lauffenburger, 1991; Seyrich et al., 2019; Croze et al., 2011; Amchin et al., 2022). Thus, the manner in which planktonic bacteria disperse can strongly vary between different species and environmental conditions.\n\nSimilarly, studies of biofilms under defined laboratory conditions have also provided key insights\u2014such as by revealing the pivotal role of intercellular chemical signaling in biofilm formation (Nadell et al., 2008; Bassler and Losick, 2006; Davey and O\u2019toole, 2000; Hall-Stoodley et al., 2004). In this process, termed quorum sensing, individual cells produce, secrete, and sense freely diffusible autoinducer molecules, thereby enabling different bacteria to coordinate their behavior (Davies et al., 1998; Sakuragi and Kolter, 2007; Bassler and Losick, 2006; Miller and Bassler, 2001; Herzberg et al., 2006; Laganenka et al., 2018; McLean et al., 1997; Paul et al., 2009). For example, in many cases, quorum sensing positively controls biofilm formation (Herzberg et al., 2006; Laganenka et al., 2018; Davies et al., 1998; Sakuragi and Kolter, 2007; McLean et al., 1997; Gonza\u0301lez Barrios et al., 2006; Yarwood et al., 2004; Koutsoudis et al., 2006; Waters and Bassler, 2005; Parsek and Greenberg, 2005; Jayaraman and Wood, 2008; Hentzer et al., 2003; Kirisits and Parsek, 2006): autoinducer accumulation above a threshold concentration upregulates the expression of genes involved in biofilm formation, ultimately driving a transition from the planktonic to the biofilm state (Nadell et al., 2008). Again, however, the cellular factors that control this transition, such as the autoinducer production rate, diffusivity, and threshold concentration, can strongly vary between different species and environmental conditions.\n\nBecause planktonic dispersal and biofilm formation both depend on a dizzyingly complex array of factors, these distinct processes are typically studied in isolation. Thus, while each is well understood on its own, quantitative prediction of the conditions under which a population of planktonic bacteria transitions to the biofilm state\u2014or instead, continues to disperse away and remains in the planktonic state\u2014remains challenging. Here, we address this challenge by developing a mathematical model that describes essential features of motility-mediated dispersal of planktonic cells and autoinducer-mediated biofilm formation together. Using numerical simulations of this model, we systematically examine the influence of cellular concentration, motility, and chemotactic sensing; nutrient availability, diffusion, and consumption; and autoinducer production, diffusion, and accumulation on biofilm formation. Guided by these results, we establish a potentially-universal biophysical threshold that unifies the influence of all these factors in predicting the onset and extent of biofilm formation across different species and environmental conditions. Our work therefore provides a theoretical foundation for the prediction and control of biofilm formation in diverse and complex settings, and yields new quantitative predictions to guide future experiments.\n\n## Results\n\n### Development of the governing equations\n\nAs an illustrative example, and to connect our model to recent experiments of bacterial dispersal (Bhattacharjee et al., 2021), we consider a rectilinear geometry with a starting inoculum of planktonic cells at a maximal concentration $b_{1,0}$ and of width $x_{0}$. In general, the continuum variable $b\u2062(x,t)$ describes the number concentration of bacteria, where $x$ is the position coordinate and $t$ is time, and the subscripts ${1,2}$ represent planktonic or biofilm-associated cells, respectively. Following previous work (Lauffenburger, 1991; Keller and Segel, 1971; Adler, 1966a; Croze et al., 2011; Fu et al., 2018; Bhattacharjee et al., 2021), we consider a sole diffusible nutrient that also acts as the chemoattractant, with a number concentration represented by the continuum variable $c\u2062(x,t)$ with diffusivity $D_{c}$. Initially, nutrient is replete throughout the system at a constant concentration $c_{0}$. The bacteria then consume the nutrient at a rate $b_{1}\u2062\u03ba_{1}\u2062g\u2062(c)$, where $\u03ba_{1}$ is the maximum consumption rate per cell and the Michaelis-Menten function $g(c)\u2261\\frac{c}{c+c_{char}}$ quantifies the nutrient dependence of consumption relative to the characteristic concentration $c_{char}$ (Croze et al., 2011; Monod, 1949; Cremer et al., 2019; Woodward et al., 1995; Shehata and Marr, 1971; Schellenberg and Furlong, 1977; Cremer et al., 2016).\n\nAs time progresses, the bacteria thereby establish a local nutrient gradient that they respond to via chemotaxis (Figure 1A). In particular, planktonic cells disperse through two processes: undirected active diffusion with a constant diffusivity $D_{1}$ (Berg, 2018), and directed chemotaxis with a drift velocity $v\u2192_{c}\u2261\u03c7_{1}\u2062\\nabla\u2061log\u2061(\\frac{1+c/c_{-}}{1+c/c_{+}})$ that quantifies the ability of the bacteria to sense and respond to the local nutrient gradient (Keller and Segel, 1970; Keller and Segel, 1971; Odell and Keller, 1976; Keller and Odell, 1975) with characteristic bounds $c_{\u2212}\u00a0and\u00a0c_{+}$ (Cremer et al., 2019; Sourjik and Wingreen, 2012; Shimizu et al., 2010; Tu et al., 2008; Kalinin et al., 2009; Shoval et al., 2010; Lazova et al., 2011; Celani et al., 2011; Fu et al., 2018; Dufour et al., 2014; Yang et al., 2015; Cai et al., 2016; Chen and Jin, 2011) and a chemotactic coefficient $\u03c7_{1}$. The planktonic cells also proliferate at a rate $b\u2062\\gamma_{1}\u2062g\u2062(c)$, where $\\gamma_{1}$ is the maximal proliferation rate per cell. Finally, as the planktonic bacteria consume nutrients, they produce and secrete a diffusible autoinducer, with a number concentration represented by $a\u2062(x,t)$ and with diffusivity $D_{a}$, at a maximal rate $k_{1}$ per cell. Motivated by some previous work (Hense et al., 2012; Hense and Schuster, 2015; Kirisits et al., 2007; Bollinger et al., 2001; Duan and Surette, 2007; Mellbye and Schuster, 2014; De Kievit et al., 2001; P\u00e9rez-Osorio et al., 2010), we take this process (hereafter referred to as \u2018production\u2019 for brevity) to also be nutrient-dependent via the same Michaelis-Menten function $g\u2062(c)$ for the results presented in the main text, but we also consider the alternate case of \u2018protected\u2019 nutrient-independent production in the supplementary materials. Following previous work (Koerber et al., 2002; Ward et al., 2001; Ward et al., 2003), we also model natural degradation of autoinducer as a first-order process with a rate constant \u03bb.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76380/elife-76380-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of chemotactic dispersal: planktonic bacteria (green) consume nutrient (purple) and establish a local gradient that they, in turn, direct their motion in response to. (B) Schematic of positive quorum sensing-controlled biofilm formation: accumulation of produced autoinducer (red) above a threshold concentration causes cells to transition to the biofilm state (blue). (C) Results of an example simulation of Equations 1\u20134 showing the dynamics of the nutrient, planktonic cells, autoinducer, and biofilm cells from top to bottom, quantified by the normalized concentrations $c/c_{0}$, $b_{1}/b_{1,0}$, $a/a^{*}$, $b_{2}/b_{1,0}$, respectively; $c_{0}$, $b_{1,0}$, and $a^{*}$ represent the initial nutrient concentration, initial bacterial concentration, and autoinducer threshold for biofilm formation, respectively. The position coordinate is represented by the normalized position $x/x_{0}$, where $x_{0}$ is the width of the initial cellular inoculum. Different shades indicate different time points as listed. The inoculum initially centered about the origin consumes nutrient (purple), establishing a gradient that drives outward dispersal by chemotaxis (outward moving green curves); the cells also produce autoinducer (red) concomitantly. At $t\u224813\u00a0h$, sufficient autoinducer has been produced to trigger biofilm formation at the origin; at even longer times ($t\u227316\u00a0h$), nutrient depletion limits autoinducer production at this position. However, accumulation of autoinducer by the dispersing planktonic cells triggers partial biofilm formation at $x/x_{0}\u22486$ as well. This competition between dispersal and biofilm formation leads to a final biofilm fraction of $f=21%$ at the final time of $t=20\u00a0h$. An animated form of this figure is shown in Video 1. The values of the simulation parameters are given in Supplementary file 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76380/elife-76380-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Results of the same simulation as in Figure 1C, but with both motility parameters $D_{1}$ and $\u03c7_{1}$ smoothly transitioning to zero in time for cells that are transitioning to the biofilm state\u2014instead of these parameters transitioning step-wise to zero as in the simulations presented in the main text. To implement this change, we monitor the amount of time $\\tau^{\u2032}$ elapsed after planktonic cells are exposed to sufficient autoinducer to drive the transition to the biofilm state (i.e., after the moment when $a=a^{*}$), and decrease the motility parameters linearly to reach zero after a total time $\\tau$ has elapsed: the diffusivity and chemotactic coefficients are given by $D_{1}\\times(1-\\tau^{\u2032}/\\tau)$ and $\u03c7_{1}\\times(1-\u0394\u2062\\tau^{\u2032}/\\tau)$, respectively. When,$\\tau^{\u2032}\\geq\\tau$ both motility parameters are zero. The results, shown above, are visually identical to those in Figure 1C.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76380/elife-76380-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Results of the same simulation as in Figure 1C, but with the shape of the initial inoculum changed from a Gaussian profile to a step function with the same maximum cellular concentration and width. The results, shown above, are visually nearly identical to those in Figure 1C.\n\nAs autoinducer is produced, it binds to receptors on the surfaces of the planktonic cells with a second-order rate constant $\\alpha$, as established previously (Koerber et al., 2002; Ward et al., 2001; Ward et al., 2003). Motivated by experiments on diverse bacteria, including the prominent and well-studied species Escherichia coli, Pseudomonas putida, and Pseudomonas aeruginosa (Davies et al., 1998; Sakuragi and Kolter, 2007; Bassler and Losick, 2006; Miller and Bassler, 2001; Herzberg et al., 2006; Laganenka et al., 2018; McLean et al., 1997; Paul et al., 2009; Gonza\u0301lez Barrios et al., 2006; Yarwood et al., 2004; Koutsoudis et al., 2006; Waters and Bassler, 2005; Parsek and Greenberg, 2005; Jayaraman and Wood, 2008; Hentzer et al., 2003; Kirisits and Parsek, 2006), we assume that planktonic cells transition to the biofilm state at a rate $\\tau^{\u22121}$ when the local autoinducer concentration exceeds a threshold value $a^{*}$ (Figure 1B). Because our focus is on this transition, we assume that it is irreversible, and that cells in the biofilm lose motility. However, they still continue to consume nutrient, proliferate, and produce autoinducer with maximal rates $\u03ba_{2}$, $\\gamma_{2}$, and $k_{2}$ per cell, respectively; additional behaviors such as subsequent production of extracellular polymeric substances or transitioning back to the planktonic state can be incorporated as future extensions to this model.\n\nHence, while planktonic cells can disperse via active diffusion and chemotaxis, their dispersal is hindered\u2014and biofilm formation is instead promoted\u2014when autoinducer accumulates sufficiently, as schematized in Figure 1A\u2013B. The central goal of this paper is to examine the processes underlying this competition between dispersal and biofilm formation. Our model is thus summarized as:\n\n$$\nPlanktonic:\u00a0\\frac{\u2202b_{1}}{\u2202t}=D_{1}\u2207^{2}b_{1}\u2212\u2207\u22c5(b_{1}v\u2192_{c})\u23dfMotility+b_{1}\\gamma_{1}g(c)\u23dfProliferation\u2212\u00a0b_{1}\\tau^{\u22121}H(a\u2212a^{\u2217})\u23dfBiofilm\u00a0formation\n$$\n\n\n\n$$\nBiofilm:\u00a0\\frac{\u2202b_{2}}{\u2202t}=b_{2}\\gamma_{2}g(c)\u23dfProliferation+b_{1}\\tau^{\u22121}H(a\u2212a^{\u2217})\u23dfBiofilm\u00a0formation\n$$\n\n\n\n$$\nNutrient:\u00a0\\frac{\u2202c}{\u2202t}=D_{c}\u2207^{2}c\u23dfDiffusion\u2212(b_{1}\u03ba_{1}+b_{2}\u03ba_{2})g(c)\u23dfConsumption\n$$\n\n\n\n$$\nAutoinducer:\u00a0\\frac{\u2202a}{\u2202t}=D_{a}\u2207^{2}a\u23dfDiffusion+(b_{1}k_{1}+b_{2}k_{2})g(c)\u23dfProduction\u2212a(\\lambda+\\alphab_{1})\u23dfLoss\n$$\n\nwhere $\u210b$ is the Heaviside step function describing the transition from the planktonic to biofilm state. To explore the competition between motility-mediated dispersal and autoinducer-mediated biofilm formation, we then numerically solve this system of coupled equations using values of all parameters\u2014which are either intrinsic descriptors of cellular physiology or are solely/additionally influenced by the local environment\u2014that are derived from experiments (Supplementary file 1). Further details are provided in the Materials and methods. Additional simulations indicate that the results obtained are not appreciably influenced by variations in the exact nature of how our model treats the arrest in planktonic cell motility while transitioning to the biofilm state (Figure 1\u2014figure supplement 1) or the initial inoculum shape (Figure 1\u2014figure supplement 2).\n\n### Representative numerical simulations\n\nThe results of a prototypical example are shown in Figure 1C and Video 1. Consumption by the planktonic cells (green curves) rapidly establishes a steep nutrient gradient (purple) at the leading edge of the inoculum. This gradient forces the planktonic cells to then move outward via chemotaxis. In particular, they self-organize into a coherent front that expands from the initial inoculum and continually propagates, sustained by continued consumption of the surrounding nutrient\u2014consistent with the findings of previous studies of planktonic bacteria (Bhattacharjee et al., 2021). In this case, however, the cells also concomitantly produce autoinducer that accumulates into a growing plume (red). In some locations, the autoinducer eventually exceeds the threshold $a^{*}$, thus driving the formation of an immobilized biofilm (blue). Hence, at long times, $f=21%$ of the overall population is biofilm-associated, while the remaining $1-f=79%$ continues to disperse in the planktonic state.\n\n![Video 1.](https://cdn.elifesciences.org/articles/76380/elife-76380-video1.mp4.jpg)\n\n**Video 1.:** Animated form of Figure 1C: Results of an example simulation of Equations 1\u20134 showing the dynamics of the nutrient, planktonic cells, autoinducer, and biofilm cells from top to bottom, quantified by the normalized concentrations $c/c_{0}$, $b_{1}/b_{1,0}$, $a/a^{*}$, and $b_{2}/b_{1,0}$, respectively; $c_{0}$, $b_{1,0}$, and $a^{*}$ represent the initial nutrient concentration, initial bacterial concentration, and autoinducer threshold for biofilm formation, respectively.The position coordinate is represented by the normalized position $x/x_{0}$, where $x_{0}$ is the width of the initial cellular inoculum. The inoculum initially centered about the origin consumes nutrient (purple), establishing a gradient that drives outward dispersal by chemotaxis (outward moving green curves); the cells also produce autoinducer (red) concomitantly. At $t\u224813\u00a0h$, sufficient autoinducer has been produced to trigger biofilm formation at the origin; at even longer times ($t\u227316\u00a0h$), nutrient depletion limits autoinducer production at this position. However, accumulation of autoinducer by the dispersing planktonic cells triggers partial biofilm formation at $x/x_{0}\u22484$ as well. This competition between dispersal and biofilm formation leads to a final biofilm fraction of $f=21%$ at the final time of $t=20\u00a0h$. The values of the simulation parameters are given in Supplementary file 2. The video displays the profiles every $30\u00a0min$, to retain a manageable file size; however, the temporal step size in the actual simulations is $0.1\u00a0s$.\n\nBecause the processes underlying motility-mediated dispersal and autoinducer-mediated biofilm formation are highly species- and environment-dependent, the values of the parameters in Equations 1\u20134 can span broad ranges\u2014giving rise to different emergent behaviors under different conditions. Our simulations provide a way to examine how these behaviors depend on cellular concentration and motility, quantified by ${b_{1,0},D_{1},\u03c7_{1},c_{-},c_{+}}$, nutrient availability and consumption, quantified by ${D_{c},c_{0},\u03ba_{1},\u03ba_{2},c_{char}}$, cellular proliferation, quantified by ${\\gamma_{1},\\gamma_{2}}$, and autoinducer production, availability, and sensing, quantified by ${D_{a},k_{1},k_{2},\\lambda,\\alpha,\\tau,a^{*}}$. For example, implementing the same simulation as in Figure 1C, but for cells with faster nutrient consumption, yields a population that completely disperses in the planktonic state (the fraction of the population in the biofilm state at the final time of $t=20\u00a0h$ is $f=0%$, as shown in Figure 2 and Video 2). Conversely, when cells consume nutrient slower, a larger fraction of the population forms an immobilized biofilm ($f=52%$, Figure 2\u2014figure supplement 1 and Video 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76380/elife-76380-fig2-v2.jpg)\n\n**Figure 2.:** Retion as in Figure 1C, but for planktonic cells with faster nutrient consumption (larger $\u03ba_{1}$). Panels and colors show the same quantities as in Figure 1C. The inoculum initially centered about the origin consumes nutrient (purple), establishing a gradient that drives outward dispersal by chemotaxis (outward moving green curves); the cells also produce autoinducer (red) concomitantly. However, nutrient is depleted at this position more rapidly, limiting autoinducer production; as a result, the population continues to disperse in the planktonic state and the final biofilm fraction is $f=0%$. An animated form of this figure is shown in Video 2. The values of the simulation parameters are given in Supplementary file 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76380/elife-76380-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Results of the same simulation as in Figure 1C, but for planktonic cells with slower nutrient consumption (smaller $\u03ba_{1}$). Panels and colors show the same quantities as in Figure 1C. The inoculum initially centered about the origin slowly consumes nutrient (purple), establishing a slight gradient that allows partial planktonic dispersal (green curves moving outward); the cells also produce autoinducer (red) concomitantly. Because nutrient is consumed slowly, autoinducer production is not limited, resulting in partial biofilm formation (blue). Autoinducer has sufficiently accumulated above the threshold after $t\u224814\u00a0h$, which causes a population of biofilm cells to form at the origin ($x/x_{0}\u22480$). After $20\u00a0h$, the biofilm population continues to grow, and additionally, autoinducer concentration exceeds the threshold concentration at $x/x_{0}\u224810$. Thus, we see a second population of biofilm cells form, centered at.$x/x_{0}\u224810$. The slower nutrient consumption results in a greater final biofilm fraction than in Figure 1C\u2014here,.$f=52%$. An animated form of this figure is shown in Video 3. The values of the simulation parameters are given in Supplementary file 2.\n\n![Video 2.](https://cdn.elifesciences.org/articles/76380/elife-76380-video2.mp4.jpg)\n\n**Video 2.:** Animated form of Figure 2: Results of the same simulation as in Video 1, but for planktonic cells with faster nutrient consumption (larger $\u03ba_{1}$).Panels and colors show the same quantities as in Video 1. The inoculum initially centered about the origin consumes nutrient (purple), establishing a gradient that drives outward dispersal by chemotaxis (outward moving green curves); the cells also produce autoinducer (red) concomitantly. However, nutrient is depleted at this position more rapidly, limiting autoinducer production; as a result, the population continues to disperse in the planktonic state and the final biofilm fraction is $f=0%$. The values of the simulation parameters are given in Supplementary file 2. The video displays the profiles every $30\u00a0min$, to retain a manageable file size; however, the temporal step size in the actual simulations is $0.1\u00a0s$.\n\n![Video 3.](https://cdn.elifesciences.org/articles/76380/elife-76380-video3.mp4.jpg)\n\n**Video 3.:** Animated form of Figure 2\u2014figure supplement 1: Results of the same simulation as in Video 1, but for planktonic cells with slower nutrient consumption (smaller $\u03ba_{1}$).Panels and colors show the same quantities as in Video 1. The inoculum initially centered about the origin slowly consumes nutrient (purple), establishing a slight gradient that allows partial planktonic dispersal (green curves moving outward); the cells also produce autoinducer (red) concomitantly. Because nutrient is consumed slowly, autoinducer production is not limited, resulting in partial biofilm formation (blue). Autoinducer has sufficiently accumulated above the threshold after $t\u224814\u00a0h$, which causes a population of biofilm cells to form at the origin ($x/x_{0}\u22480$). After $20\u00a0h$, the biofilm population continues to grow, and additionally, autoinducer concentration exceeds the threshold concentration at $x/x_{0}\u224810$. Thus, we see a second population of biofilm cells form, centered at $x/x_{0}\u224810$. The slower nutrient consumption results in a greater final biofilm fraction than in Video 1\u2014here, $f=52%$. The values of the simulation parameters are given in Supplementary file 2. The video displays the profiles every $30\u00a0min$, to retain a manageable file size; however, the temporal step size in the actual simulations is $0.1\u00a0s$.\n\nGiven that the competition between motility-mediated dispersal and autoinducer-mediated biofilm formation depends sensitively on such a bewildering array of cellular and environmental factors, we ask whether these dependencies can be captured by simple, generalizable, biophysical rules. Nondimensionalization of Equations 1\u20134 yields characteristic quantities and dimensionless groups that can parameterize these dependencies, as detailed in Appendix 1; however, given the large number of such groups, we seek an even simpler representation of the underlying processes that could unify the influence of all these different factors. To do so, we examine the fundamental processes underlying biofilm formation in our model.\n\n### Availability of nutrient for autoinducer production\n\nWhen autoinducer production is nutrient-dependent, we expect that a necessary condition for biofilm formation is that enough nutrient is available for sufficient autoinducer to be produced to eventually exceed the threshold $a^{*}$. To quantify this condition, we estimate two time scales: $\\tau_{d}$, the time taken by the population of planktonic cells to deplete all the available nutrient locally, and $\\tau_{a}$, the time at which produced autoinducer reaches the threshold for biofilm formation. While $\\tau_{d}$ and $\\tau_{a}$ can be directly obtained in each simulation, we seek a more generally-applicable analytical expression for both, solely using parameters that act as inputs to the model. In particular, for simplicity, we consider nutrient consumption and autoinducer production, both occurring at their maximal rates $\u03ba_{1}$ and $k_{1}$, respectively, by an exponentially-growing population of planktonic cells that are uniformly distributed in a well-mixed and fixed domain. Integrating Equations 3 and 4 then yields (Appendix 2)\n\n$$\n\\tau_{d}=\\gamma_{1}^{-1}\u2062ln\u2061(1+\\beta~_{1,0})\n$$\n\n\n\n$$\n\\tau_{a}=\\gamma_{1}^{-1}\u2062ln\u2061[1-\u03b6~_{1,0}^{-1}\u2062ln\u2061(1-\u03b7~)].\n$$\n\nThree key dimensionless quantities, denoted by the tilde $(~)$ notation, emerge from this calculation. The first, $\\beta~_{1,0}\u2261\\gamma_{1}/(b_{1,0}\u03ba_{1}/c_{0})$, describes the yield of new cells produced as the population consumes nutrient\u2014quantified by the rates of cellular proliferation and nutrient consumption, $\\gamma_{1}$ and $b_{1,0}\u2062\u03ba_{1}/c_{0}$, respectively (Amchin et al., 2022). The second, $\u03b7~\u2261\\alphaa^{\u2217}/k_{1}$, describes the competition between autoinducer loss and production, quantified by their respective rates $\\alpha\u2062a^{*}$ and $k_{1}$, at the single-cell scale. The third, $\u03b6~_{1,0}\u2261\\alphab_{0}/\\gamma_{1}$, describes the loss of autoinducer due to cell-surface binding as the population continues to grow, quantified by the population-scale rates of autoinducer loss and cellular proliferation, $\\alpha\u2062b_{0}$ and $\\gamma_{1}$, respectively; for simplicity, this quantity neglects natural degradation of autoinducer, given that the degradation rate is relatively small, with $\\lambda\u226a\\alpha\u2062b_{0}$.\n\nThe ratio between Equations 5 and 6 then defines a nutrient availability parameter, $D~\u2261\\tau_{d}/\\tau_{a}$. When $D~$ is large, produced autoinducer rapidly reaches the threshold for biofilm formation before the available nutrient is depleted; by contrast, when $D~$ is small, nutrient depletion limits autoinducer production. Hence, we hypothesize that $D~\u2273D~^{\u2217}$ specifies a necessary condition for biofilm formation, where $D~^{\u2217}$ is a threshold value of order unity. The simulations shown in Figures 1C and 2 and Figure 2\u2014figure supplement 1 enable us to directly test this hypothesis. Consistent with our expectation, the simulation in Figure 1C is characterized by $D~=0.33$, near the expected threshold for biofilm formation; as a result, $f=21%$. When consumption is faster as in Figure 2 ($D~=0.033$), the available nutrient is rapidly depleted; thus, cells disperse away before sufficient autoinducer is produced to initiate biofilm formation, and $f=0%$. Conversely, when nutrient consumption is slow as in Figure 2\u2014figure supplement 1 ($D~=3.1$), nutrient continues to be available for autoinducer production, eventually driving biofilm formation, with a larger fraction $f=52%$.\n\nTaken together, these results support our hypothesis that $D~\u2273D~^{\u2217}\u223c1$ is a necessary condition for biofilm formation. It is not, however, a sufficient condition: repeating the simulation of Figure 1C but for faster-moving cells yields a population that rapidly disperses without forming a biofilm at all ($f=0%$, Figure 3A and Video 4)\u2014despite having the same value of $D~=0.33$. Thus, our mathematical description of the conditions that determine biofilm formation is, as yet, incomplete.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76380/elife-76380-fig3-v2.jpg)\n\n**Figure 3.:** (A) Results of the same simulation as in Figure 1C, but for faster-moving planktonic cells (larger $D_{1}$ and $\u03c7_{1}$). Panels and colors show the same quantities as in Figure 1C. The inoculum initially centered about the origin consumes nutrient (purple), establishing a gradient that drives outward dispersal by chemotaxis (outward moving green curves); the cells also produce autoinducer (red) concomitantly. More rapid dispersal enables the planktonic cells to \u2018outrun\u2019 the growing autoinducer plume, as shown by the extended and magnified view in (B). As a result, the population continues to disperse in the planktonic state and the final biofilm fraction is $f=0%$. An animated form of this figure is shown in Video 4. The values of the simulation parameters are given in Supplementary file 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76380/elife-76380-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Results of the same simulation as in Figure 1C, but for slower-moving planktonic cells (smaller $D_{1}$ and $\u03c7_{1}$). Panels and colors show the same quantities as in Figure 1C. The inoculum initially centered about the origin consumes nutrient (purple), establishing a slight gradient\u2014however, because the motility parameters are diminished, the planktonic population (green) remains around the origin. The planktonic cells produce autoinducer (red) concomitantly, and after $1\u00a0h$, the autoinducer concentration exceeds the threshold concentration. Thus, some of the planktonic cells transition to biofilm cells, centered at the origin. Both the biofilm cells and planktonic cells continue to grow, produce autoinducer, and consume nutrient; the planktonic cells do not disperse due to their diminished motility, resulting in a larger fraction of biofilm cells ($f=82%$) than in Figure 1C. An animated form of this figure is shown in Video 5. The values of the simulation parameters are given in .\n\n![Video 4.](https://cdn.elifesciences.org/articles/76380/elife-76380-video4.mp4.jpg)\n\n**Video 4.:** Animated form of Figure 3: Results of the same simulation as in Video 1, but for faster-moving planktonic cells (larger $D_{1}$ and $\u03c7_{1}$).Panels and colors show the same quantities as in Video 1. The inoculum initially centered about the origin consumes nutrient (purple), establishing a gradient that drives outward dispersal by chemotaxis (outward moving green curves); the cells also produce autoinducer (red) concomitantly. More rapid dispersal enables the planktonic cells to \u2018outrun\u2019 the growing autoinducer plume, as shown by the extended and magnified view in (B). As a result, the population continues to disperse in the planktonic state and the final biofilm fraction is $f=0%$. The values of the simulation parameters are given in Supplementary file 2. The video displays the profiles every $30\u00a0min$, to retain a manageable file size; however, the temporal step size in the actual simulations is $0.1\u00a0s$.\n\n### Competition between motility-mediated dispersal and autoinducer accumulation\n\nThe results shown in Figure 3 indicate that the ability of planktonic bacteria to move, which is not incorporated in the nutrient consumption parameter $D~$, also plays a key role in regulating whether a biofilm forms. Indeed, close inspection of Figure 3A hints at another necessary condition for biofilm formation: as shown by the magnified view in Figure 3B (e.g., at $t=4\u00a0h$), the leading edge of the dispersing planktonic cells extends beyond the plume of produced autoinducer. Therefore, we expect that even when sufficient nutrient is available for autoinducer production ($D~\u2273D~^{\u2217}\u223c1$), autoinducer production must be rapid enough to reach the threshold for biofilm formation before cells have dispersed away. To quantify this condition, we estimate the the time $\\tau_{c}$ at which the motile planktonic cells begin to \u2018outrun\u2019 the growing autoinducer plume. Specifically, we quantify the dynamics of the leading edge positions of the chemotactic front of planktonic cells and the autoinducer plume, $x_{1,edge}\u2062(t)$ and $x_{a,edge}\u2062(t)$, respectively. The front position $x_{1,edge}\u2062(t)$ is known to depend on cellular motility, nutrient diffusion, and nutrient consumption in a non-trivial manner (Berg, 2004; Cremer et al., 2019; Fu et al., 2018; Amchin et al., 2022), and we are not aware of a way to compute this quantity a priori from input parameters; instead, we extract this sole quantity from each simulation by identifying the largest value of $x$ at which $b_{1}\\geq10^{-4}\u2062b_{1,0}$. While the plume position $x_{a,edge}\u2062(t)$ can also be directly obtained in each simulation, we again develop a more generally applicable analytical expression by assuming that the autoinducer continually diffuses from the initial inoculum: $x_{a,edge}\u2062(t)=x_{0}+\\sqrt{2\u2062D_{a}\u2062t}$. Then, $\\tau_{c}$ can be directly determined as the time at which $x_{1,edge}\u2062(t)$ begins to exceed $x_{a,edge}\u2062(t)$.\n\nThe ratio between $\\tau_{c}$ thereby determined and $\\tau_{a}$, the time required for produced autoinducer to reach the threshold for biofilm formation (Equation 6), then defines a cellular dispersal parameter, $J~\u2261\\tau_{c}/\\tau_{a}$. When $J~$ is large, autoinducer accumulation is sufficiently rapid to drive biofilm formation; by contrast, when $J~$ is small, the planktonic cells rapidly disperse without forming a biofilm. Hence, we hypothesize that $J~\u2273J~^{\u2217}$ specifies another necessary condition for biofilm formation, where $J~^{\u2217}$ is, again, a threshold value of order unity. The simulations shown in Figures 1C and 3A enable us to directly test this hypothesis. Consistent with our expectation, the simulations in Figure 1C and Figure 2\u2014figure supplement 1 are characterized by $J~=1.6$, near the expected threshold for biofilm formation; as a result, $f>0$ in both cases. Furthermore, implementing the same simulation as Figure 1C (with the same $D~=0.33$) but for slower-moving cells, characterized by a larger $J~=120$, yields a population that forms an even larger biofilm fraction $f=82%$ (Figure 3\u2014figure supplement 1 and Video 5). Conversely, when cellular dispersal is faster as in Figure 3, characterized by a smaller $J~=0.1$, the cells disperse away before sufficient autoinducer is produced to initiate biofilm formation, and $f=0%$. Taken together, these results support our hypothesis that $J~\u2273J~^{\u2217}\u223c1$ is another necessary condition for biofilm formation.\n\n![Video 5.](https://cdn.elifesciences.org/articles/76380/elife-76380-video5.mp4.jpg)\n\n**Video 5.:** Animated form of Figure 3\u2014figure supplement 1: Results of the same simulation as in Video 1, but for slower-moving planktonic cells (smaller $D_{1}$ and $\u03c7_{1}$).Panels and colors show the same quantities as in Video 1. The inoculum initially centered about the origin consumes nutrient (purple), establishing a slight gradient\u2014however, because the motility parameters are diminished, the planktonic population (green) remains around the origin. The planktonic cells produce autoinducer (red) concomitantly, and after $1\u00a0h$, the autoinducer concentration exceeds the threshold concentration. Thus, some of the planktonic cells transition to biofilm cells, centered at the origin. Both the biofilm cells and planktonic cells continue to grow, produce autoinducer, and consume nutrient; the planktonic cells do not disperse due to their diminished motility, resulting in a larger fraction of biofilm cells ($f=82%$) than in Video 1. The values of the simulation parameters are given in . The video displays the profiles every $30\u00a0min$, to retain a manageable file size; however, the temporal step size in the actual simulations is $0.1\u00a0s$.\n\n### A universal biophysical threshold for biofilm formation\n\nThus far, we have shown that the two conditions $D~\u2273D~^{\u2217}$ and $J~\u2273J~^{\u2217}$ are both necessary for biofilm formation. Is the combination of both sufficient to fully specify the conditions required for biofilm formation? To test this possibility, we implement 10,983 numerical simulations of Equations 1\u20134 exploring the full physiological ranges of the input parameters that describe cellular, nutrient, and autoinducer properties for diverse bacterial species/strains and environmental conditions (Supplementary file 1). For each simulation, we compute $D~$, $J~$, and $f$. Remarkably, despite the extensive variability in the values of the underlying parameters, all the results cluster between two states parameterized by $D~$ and $J~$, as shown in Figure 4A: motility-mediated dispersal without biofilm formation ($f=0%$, green points) when either $D~<D~^{\u2217}$ or $J~<J~^{\u2217}$, and biofilm formation without dispersal ($f=100%$, blue points) when both $D~>D~^{\u2217}$ and $J~>J~^{\u2217}$. Many different combinations of the input parameters yield the same $(D~$, $J~)$; yet, no matter the input values of these parameters, which vary over broad ranges for different cells and environmental conditions, $(D~$, $J~)$ uniquely specify the resulting biofilm fraction $f$ for all points, as shown in Figure 4B\u2013C\u2014indicating that these two dimensionless parameters reasonably encompass all the factors determining biofilm formation within our model. We observe some exceptions at the boundary between these two states, likely because the simplifying assumptions underlying the derivation of the $D~$ and $J~$ parameters begin to break down. Nevertheless, the boundary between both states, summarized by the relation $D~^{\u2217}/D~+J~^{\u2217}/J~\u223c1$ with $D~^{\u2217}$ and $J~^{\u2217}$ both $\u223c1$ (black curve), thus specifies a universal biophysical threshold for biofilm formation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76380/elife-76380-fig4-v2.jpg)\n\n**Figure 4.:** (A) State diagram showing the fraction of biofilm formed, $f$, at the final time ($t=20\u00a0h$) for different values of the nutrient availability and cellular dispersal parameters, $D~$ and $J~$, respectively. The state diagram summarizes the results of 10,983 simulations of Equations 1\u20134 exploring the full range of parameter values describing different bacterial species/strains and different environmental conditions (Supplementary file 1). Each point represents the mean value of $f$ obtained from multiple simulations with different parameter values, but with similar $D~$ and $J~$ (identical within each bin defined by the spacing between points). (B) represents the same data, but each point represents the standard deviation of the values of $f$ obtained from the same simulations. Despite the vastly differing conditions explored in each simulation, they cluster into the two states of planktonic dispersal (green) and biofilm formation (blue) when parameterized by $D~$ and $J~$. The boundary between the two states can be described by the relation $D~^{\u2217}/D~+J~^{\u2217}/J~\u223c1$, as shown by the black line; this relation combines the transition between the two states that occurs at both $D~^{\u2217}\u223c1$ and $J~^{\u2217}\u223c1$. Away from this boundary, all simulations for the same $D~$ and $J~$ collapse to have the same biofilm fraction $f$, as shown by the points in (B) and examples (i)\u2013(iii) and (v) in (C)\u2014confirming the universality of our parameterization. Near the boundary, we observe some slight differences between simulations, as shown in (B) and examples (iv) and (vi) in (C). The values of the simulation parameters for the examples in (C) are given in Source Data file 1. The data in (A\u2013C) correspond to a fixed value of the third dimensionless parameter $S~=50$, which describes the case of biofilm cells that produce autoinducer rapidly; repeating these simulations for the opposite case of slow autoinducer production by biofilm cells ($S~=1/50$) yields the state diagram shown in (D), but for 14,351 simulation runs; again, (E) shows the standard deviation of the corresponding values of $f$. As shown by (D\u2013E), while the transition between the two states (black line) is unaffected by the change in $S~$, the transition to complete biofilm formation is more gradual. Together, the three parameters $D~$, $J~$, and $S~$ provide a full description of the onset and extent of biofilm formation across vastly different conditions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76380/elife-76380-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** In the case of \u2018protected\u2019 nutrient-independent autoinducer production, the transition from planktonic to biofilm states occurs at, $J~\u223c1$ independent of $D~$.The model described in the main text considers autoinducer secretion to be nutrient-dependent; here, we consider the alternate case of \u2018protected\u2019 nutrient-independent production at the maximal rate $k_{1}$ per cell. In this case, we do not expect the transition from the planktonic to biofilm state to depend on nutrient availability, as quantified by $D~$. Instead, the analysis presented in the main text suggests that the dispersal parameter, $J~$, alone should be sufficient to capture this transition. To test this expectation, we perform the same numerical simulations as presented in the main text, but without the Michaelis-Menten function $g\u2062(c)$ multiplying the autoinducer production term in Equation 4. The resulting state diagrams showing the final ($t=20\u00a0h$) fraction of biofilm formed, $f$, and the standard deviation of the $f$ values, as a function of $D~$ and $J~$ are shown in (A\u2013B). These diagrams summarize 8709 separate simulations. The results confirm our expectation: in contrast to the results shown in Figure 4, the transition does not appreciably depend on $D~$, but instead occurs near $J~\u223c1$ (black line). Thus, the theoretical framework developed in this work is more general and can be applied to bacteria with nutrient-dependent or nutrient-independent autoinducer production.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76380/elife-76380-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** To assess the sensitivity of our results to numerical discretization, we repeat two representative simulations with (A) $(D~,J~)=(0.033,1.6)$, corresponding to, $f=0%$ and (B) $(D~,J~)=(1.00,4.86)$, corresponding to, $f=93%$ with varying spatial and temporal step sizes, $d\u2062x$ and, $d\u2062t$, respectively. The spatial step size is changed by a factor $n$ and the corresponding temporal step size is changed by a factor, $n^{2}$ accordingly, as indicated by the lower and upper horizontal axes, respectively. As shown in the figure, the final biofilm fraction $f$ obtained from the simulations is not strongly sensitive to the choice of numerical discretization for spatial and temporal steps smaller than those used for the simulations presented in the main text (indicated by the red stars). Thus, our choice of discretization is sufficiently finely resolved such that the results in the numerical simulations are not appreciably influenced by discretization.\n\n## Discussion\n\nThe transition from the planktonic to biofilm state is known to depend on a large array of factors that describe cellular concentration, motility, and proliferation; nutrient availability and consumption; and autoinducer production, availability, and sensing\u2014all of which can vary considerably for different strains/species of bacteria and environmental conditions. Therefore, quantitative prediction of the onset of biofilm formation is challenging. The biophysical model presented here provides a key step toward addressing this challenge. In particular, for the illustrative case we consider\u2014in which cells can either disperse through active motility, retaining them in the planktonic state, or form an immobilized biofilm when exposed to sufficient autoinducer\u2014we have shown that the onset of biofilm formation is uniquely specified by a biophysical threshold set by the two dimensionless parameters $D~$ (quantifying nutrient availability) and $J~$ (quantifying bacterial dispersal). Importantly, within the formulation of our model, this threshold is universal: many different combinations of cellular and environmental factors are described by the same $(D~,J~)$, and thus, yield the same onset of biofilm formation. Therefore, given a bacterial strain and set of environmental conditions, extensions of our model could help provide a way to predict whether a biofilm will form a priori. Indeed, because the factors that define $D~$ and $J~$ can be directly measured, our work now provides quantitative principles and predictions (as summarized in Figure 4) to guide future experiments.\n\nFor generality, our model also incorporates proliferation, nutrient consumption, and autoinducer production by cells after they have transitioned to the biofilm state. Hence, within our model, biofilm-produced autoinducer could also drive surrounding planktonic cells to transition to the biofilm state. In this case, we expect that the long-time fraction of the population in the biofilm state, $f$, will also depend on nutrient depletion and autoinducer production by the growing biofilm. Indeed, performing a similar calculation as that underlying the nutrient availability parameter, $D~$, yields a third dimensionless parameter, $S~\u2261\\tau_{d,2}/\\tau_{a,2}$; here, $\\tau_{d,2}$ and $\\tau_{a,2}$ describe the times at which biofilm cells have depleted all the available nutrient and produced enough autoinducer to reach the threshold for biofilm formation, respectively (Appendix 2). Thus, we hypothesize that, while the onset of biofilm formation is specified by $(D~,J~)$, the final extent of biofilm that has formed will also be described by $S~$. The results shown in Figures 1\u20144 have a fixed $S~=50$, which describes the case of a biofilm that produces autoinducer rapidly; repeating these simulations for the opposite case of slow autoinducer production by biofilm cells, with $S~=1/50$, yields the state diagram shown in Figure 4D. In agreement with our hypothesis, while the transition to the biofilm state (black line) is not appreciably altered by the change in $S~$, the transition to complete biofilm formation ($f=1$) is more gradual in this case (compare Figure 4A,B,D,E). Moreover, we note that our analysis thus far has focused on the case in which autoinducer production is nutrient-dependent; however, this process may sometimes be nutrient-independent (Narla et al., 2021). In this case, we expect that our overall analysis still applies, but with the onset of biofilm formation specified by only the dispersal parameter $J~$\u2014as confirmed in Figure 4\u2014figure supplement 1.\n\n### Possible extensions of our work\n\nThe transition from the planktonic to biofilm state is highly complex and, in many cases, has features that are unique to different species of bacteria. Nevertheless, our model provides a minimal description that can capture many of the essential features of biofilm formation more generally\u2014thereby providing a foundation for future extensions of our work, some of which are described below.\n\n## Materials and methods\n\nTo numerically solve the continuum model described by Equations 1\u20134, we follow the experimentally validated approach used in our previous work (Bhattacharjee et al., 2021; Amchin et al., 2022). Specifically, we use an Adams-Bashforth-Moulton predictor-corrector method in which the order of the predictor and corrector are 3 and 2, respectively. Because the predictor-corrector method requires past time points to inform future steps, the starting time points must be found with another method; we choose the Shanks starter of order 6 as described previously (Rodabaugh and Wesson, 1965; Shanks, 1966). For the first and second derivatives in space, we use finite difference equations with central difference forms in rectilinear coordinates. The temporal and spatial resolution of the simulations are $\\deltat=0.1\u00a0s$ and $\\deltax=20\u00a0\\mum$, respectively; furthermore, we constrain our analysis to simulations for which the peak of the overall bacteria population moves slower than $\\delta\u2062x/\\delta\u2062t$. Repeating representative simulations with different spatial and temporal resolution indicates that even finer discretization does not appreciably alter the results (Figure 4\u2014figure supplement 2). Thus, our choice of discretization is sufficiently finely-resolved such that the results in the numerical simulations are not appreciably influenced by discretization. Furthermore, performing the same representative simulation shown in Figure 1C, but with the shape of the initial inoculum changed from a Gaussian profile to a step function with the same maximum cellular concentration and width, shows nearly identical results (Figure 1\u2014figure supplement 2)\u2014suggesting that our results are robust to variations in this initial condition chosen. Further probing the mathematical structure of our biophysical model to examine additional influences of initial conditions and explore the possibility of oscillatory solutions, closed orbits, or singularities would be a fascinating direction for future work.\n\nTo connect the simulations to our previous experiments (Bhattacharjee et al., 2021), we choose a total extent of $1.75\\times10^{4}\u00a0\\mum$ for the size of the entire simulated system, with no-flux conditions for the field variables $b_{1}$, $b_{2}$, $c$, and $a$ applied to both boundaries at $x=0$ and $1.75\\times10^{4}\u00a0\\mum$. As in the experiments, we initialize each simulation with a starting inoculum of planktonic cells with a Gaussian profile defined by the maximum concentration $b_{1,0}$ at $x=0\u00b5\u2062m$ and a full width at half maximum of $100\u00a0\\mum$. Nutrient is initially uniform at a fixed concentration $c_{0}$, and the autoinducer and biofilm concentrations are initially zero, throughout. Furthermore, following previous work (Amchin et al., 2022; Dell\u2019Arciprete et al., 2018; Volfson et al., 2008; Farrell et al., 2013; Klapper and Dockery, 2002; Head, 2013), we also incorporate jammed growth expansion of the population in which growing cells push outward on their neighbors when the total concentration of bacteria is large enough. In particular, whenever the total concentration of bacteria (planktonic and biofilm) exceeds the jamming limit of $0.95\u00a0cells\u00a0\\mum^{\u22123}$ at a location $x_{i}$, the excess cell concentration is removed from $x_{i}$ and added to the neighboring location, $x_{i}+\\delta\u2062x$, where $\\delta\u2062x$ represents the spatial resolution of the simulation, retaining the same ratio of planktonic to biofilm cells in the new location. We repeat this process for every location in the simulated space for each time step.\n\nWe run each simulation for a total simulated duration of $t_{sim}=20\u00a0h$. At this final time, we use the simulation data to directly compute $f\u2261\\frac{\\intb_{2}dx}{\\intb_{2}dx+\\intb_{1}dx}$, the total fraction of the population in the biofilm state. We also compute the values of the dimensionless parameters $D~$, $J~$, and $S~$ using the equations presented in the main text. We note that the autoinducer production time $\\tau_{a}$ (Equation 6) is only finite for $\u03b7~\u2261\\alphaa^{\u2217}/k_{1}<1$; when $\u03b7~\\geq1$, the rate of autoinducer loss exceeds that of autoinducer production, and thus the time required to reach the threshold for biofilm formation diverges. Because both $D~$ and $J~$ are defined as $\\tau_{d}/\\tau_{a}$ and $\\tau_{c}/\\tau_{a}$, respectively, for simulations with $\u03b7~\\geq1$, we represent them on the state diagrams in Figure 4 and Figure 4\u2014figure supplement 1 at $(D,J)=(10^{\u22122},10^{\u22123})$, the smallest values shown on the diagrams. All of these simulations have $f=0$, as expected. Furthermore, to ensure that $t_{sim}$ is sufficiently long, we (i) only perform simulations with $\\tau_{a}$ and $\\tau_{a,2}$ smaller than $t_{sim}$, and (ii) do not include simulations with $f=0$ but $\\tau_{c}=\\tau_{sim}$, for which sufficient time has not elapsed for planktonic cells to chemotactically disperse.\n",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "34a2d679-48c1-472e-a86f-0415e2feee71",
+      "submission_id": "a61ee284-382c-4390-891e-4d9bdf1ea474",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76380.sa0](https://doi.org/10.7554/eLife.76380.sa0)\n\nIn this work, the authors develop a continuum description of biofilm formation from initially planktonic cells. The coupled partial differential equations that encode the dynamics of the cell populations, nutrients and autoinducers contain many parameters, but it is shown that only two dimensionless combinations of them are needed to understand the threshold for biofilm formation. This work should be of broad interest to a wide range of researchers in biophysics and cell biology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76380.sa1](https://doi.org/10.7554/eLife.76380.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A biophysical threshold for biofilm formation\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous. We regret the lengthy delay in furnishing this report.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Given that the continuum equations are by definition evolution dynamics for the mean values of the various quantities, are there situations in which a more probabilistic approach (e.g. by a Fokker-Planck equation) ought to be considered?\n\n2) The problem studied here is simplified to one spatial dimension. How might the conclusions change if there were variations orthogonal to the main front propagation direction? Could this lead to qualitatively different conclusions?\n\n3) Please clarify the use of a single effective diffusivity parameter for a system that is slowly being arrested. That is, is the diffusion coefficient a constant in equation 1? The effective diffusivity of cells changes dramatically from the planktonic to the immobilized state. How is this issue resolved in the model?\n\n4) Biofilms are usually formed by different types of micro-organisms, and I am struggling to see whether this single species model is general enough to capture that reality. We do not mean to ask for the authors to perform more simulations, but we would like to hear know their thoughts on this issue.\n\n5) While we believe that the results are compelling and quite useful, the work can be strengthened. For example, biofilms are usually heterogeneous (i.e., different microbial populations) and many of the parameters in the model are homogeneous. It would be interesting to understand how even a second cell species would alter (or not) the results, in particular the claim that onset of biofilm formation can be uniquely defined by the parameters D and J.\n\n6) Are these results sensitive to the chosen initial condition? That is, it would be good to explore the dynamics of the biophysical model (perhaps that has been done already, but we did not see it in the manuscript). For example, are there oscillatory solutions or closed orbits, or even singularities that arise from the solution of the equations?Reviewer #1 (Recommendations for the authors):\n\nThe problem of biofilm formation is considered here in the context of a well-defined geometry (rectilinear) in which there are spatio-temporally evolving populations of planktonic and surface-bound cells in the biofilm, consuming nutrients, dividing and responding to secreted autoinducers. While there are many individual parameters that describe the various processes involved, including diffusion constants, motilities, growth, consumption, and transitions rates, the main result of the paper is that only two dimensionless combinations of parameters determine the threshold for biofilm formation. These are a ratio of timescales for nutrient depletion by planktonic cells and that for autoinducer to reach threshold defines one parameter, while the second is a ratio of times associated with the moving front of transitioning cells and the autoinducer timescale. Investigating a very wide range of the individual parameters in the problem shows that these two composite ones serve as a reliable predictor of biofilm formation.\n\nThis is an excellent paper that provides real insight into a notoriously difficult problem in biology. While the individual assumptions of the model can certainly be tweaked or generalised, the overall framework, and in particular the simplified geometry, should have a great impact on the field.Reviewer #2 (Recommendations for the authors):\n\nThe authors investigate the onset of biofilm formation (from a planktonic cell state) using a set of coupled, nonlinear differential equations. The equations model the two main cell states, planktonic and biofilm; two auxiliary equations for nutrient consumption and autoinducer production are introduced to model the transition from planktonic to biofilm state. Analysis of the biophysical model shows that there are two main dimensionless parameters that govern the onset of biofilm formation (in the model), namely a nutrient (D) and an autoinducer (J) availability parameters. An important result is that the biophysical threshold for biofilm formation seems quite robust across many different sets of model parameters suggesting, perhaps, a universal threshold. A strength of the formulation is that these dimensionless parameters can be experimentally measured, and therefore the presented biophysical model can be tested in the laboratory. Overall, the results from the model support the authors' claims.\n",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "85d09228-e082-4561-a062-05cc6542f638",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C1",
+      "claim": "Bacteria exist in one of two phenotypic states: either as motile, planktonic cells that self-propel using e.g., flagella or pili, or as immobilized, surface-attached biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "Dating back to their discovery by van Leeuwenhoek over three centuries ago, it has been known that bacteria typically exist in one of two phenotypic states: either as motile, planktonic cells that self-propel using e.g., flagella or pili (\"animalcules \u2026 moving among one another\"; Van Leewenhoeck, 1677), or as immobilized, surface-attached biofilms (\"little white matter \u2026 in the scurf of the teeth\"; Leewenhoeck, 1684).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by historical citations to van Leeuwenhoek's observations from 1677 and 1684",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "9c035f33-c1f5-4c11-adbb-d34eb927360a",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C2",
+      "claim": "Motility-mediated dispersal of planktonic cells enables populations to escape from harmful conditions and colonize new terrain.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, motility-mediated dispersal of planktonic cells enables populations to escape from harmful conditions and colonize new terrain (Adler, 1966a; Adler, 1966b; Saragosti et al., 2011; Fu et al., 2018; Cremer et al., 2019; Bhattacharjee et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "ecd12b35-0542-4d01-8195-b82e0f20c922",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C3",
+      "claim": "Motility-mediated dispersal underlies infection progression, drug delivery to hard-to-reach spots in the body, food spoilage, interactions with plant roots in agriculture, and bioremediation of environmental contaminants.",
+      "claim_type": "EXPLICIT",
+      "source": "underlying infection progression, drug delivery to hard-to-reach spots in the body, food spoilage, interactions with plant roots in agriculture, and bioremediation of environmental contaminants (Balzan et al., 2007; Chaban et al., 2015; Datta et al., 2016; Harman et al., 2012; Ribet and Cossart, 2015; Siitonen and Nurminen, 1992; Lux et al., 2001; O'Neil and Marquis, 2006; Gill and Penney, 1977; Shirai et al., 2017; Thornlow et al., 2015; Toley and Forbes, 2012; Dechesne et al., 2010; Souza et al., 2015; Turnbull et al., 2001; Watt et al., 2006; Babalola, 2010; Adadevoh et al., 2016; Adadevoh et al., 2018; Ford and Harvey, 2007; Wang et al., 2008; Reddy and Ford, 1996; Mart\u00ednez-Calvo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by extensive citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "92b8196c-cd1d-4691-a4b8-dcbda4b39c55",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C4",
+      "claim": "The formation of immobilized biofilms can initiate antibiotic-resistant infections and foul biomedical devices and industrial equipment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the formation of immobilized biofilms can initiate antibiotic-resistant infections, foul biomedical devices and industrial equipment, or conversely, help sequester and remove contaminants in dirty water (Davey and O'toole, 2000; Hall-Stoodley et al., 2004; Mah et al., 2003; O'Toole and Stewart, 2005; Fux et al., 2005; Nicolella et al., 2000; Donlan and Costerton, 2002; Davies et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "1dee5836-d311-49e5-bb3f-69a17e632243",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C5",
+      "claim": "Biofilms can help sequester and remove contaminants in dirty water.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the formation of immobilized biofilms can initiate antibiotic-resistant infections, foul biomedical devices and industrial equipment, or conversely, help sequester and remove contaminants in dirty water (Davey and O'toole, 2000; Hall-Stoodley et al., 2004; Mah et al., 2003; O'Toole and Stewart, 2005; Fux et al., 2005; Nicolella et al., 2000; Donlan and Costerton, 2002; Davies et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "71953c98-faa7-4e0b-a7a3-97f99d13d517",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C6",
+      "claim": "Bacterial motility can be either undirected or directed in response to e.g., a chemical gradient via chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, studies of planktonic cells have provided important insights into bacterial motility\u2014which can be either undirected (Berg, 2018; Berg, 2004; Bhattacharjee and Datta, 2019a; Bhattacharjee and Datta, 2019b) or directed in response to e.g., a chemical gradient via chemotaxis (Adler, 1966b; Adler, 1966a; Saragosti et al., 2011; Fu et al., 2018; Cremer et al., 2019; Bhattacharjee et al., 2021; Keller and Segel, 1971; Odell and Keller, 1976; Keller and Odell, 1975; Lauffenburger, 1991; Seyrich et al., 2019; Croze et al., 2011; Amchin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "2a7ba378-4f1a-49a7-bcd0-2f0db14ab5fb",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C7",
+      "claim": "Bacterial motility is regulated by intrinsic cellular properties such as swimming kinematics and the amplitude and frequency of cell body reorientations.",
+      "claim_type": "EXPLICIT",
+      "source": "These processes are now known to be regulated not just by intrinsic cellular properties, such as swimming kinematics and the amplitude and frequency of cell body reorientations, but also by the properties of their environment, such as cellular concentration, chemical/nutrient conditions, and confinement by surrounding obstacles (Berg, 2018; Berg, 2004; Bhattacharjee and Datta, 2019a; Bhattacharjee and Datta, 2019b; Adler, 1966b; Adler, 1966a; Saragosti et al., 2011; Fu et al., 2018; Cremer et al., 2019; Bhattacharjee et al., 2021; Keller and Segel, 1971; Odell and Keller, 1976; Keller and Odell, 1975; Lauffenburger, 1991; Seyrich et al., 2019; Croze et al., 2011; Amchin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "218136fb-f1a5-40bc-b936-3b494b6656bf",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C8",
+      "claim": "Bacterial motility is regulated by environmental properties such as cellular concentration, chemical/nutrient conditions, and confinement by surrounding obstacles.",
+      "claim_type": "EXPLICIT",
+      "source": "These processes are now known to be regulated not just by intrinsic cellular properties, such as swimming kinematics and the amplitude and frequency of cell body reorientations, but also by the properties of their environment, such as cellular concentration, chemical/nutrient conditions, and confinement by surrounding obstacles (Berg, 2018; Berg, 2004; Bhattacharjee and Datta, 2019a; Bhattacharjee and Datta, 2019b; Adler, 1966b; Adler, 1966a; Saragosti et al., 2011; Fu et al., 2018; Cremer et al., 2019; Bhattacharjee et al., 2021; Keller and Segel, 1971; Odell and Keller, 1976; Keller and Odell, 1975; Lauffenburger, 1991; Seyrich et al., 2019; Croze et al., 2011; Amchin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "e3df4c58-3c2f-4648-88ba-92424551d198",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C9",
+      "claim": "Intercellular chemical signaling plays a pivotal role in biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, studies of biofilms under defined laboratory conditions have also provided key insights\u2014such as by revealing the pivotal role of intercellular chemical signaling in biofilm formation (Nadell et al., 2008; Bassler and Losick, 2006; Davey and O'toole, 2000; Hall-Stoodley et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "2898fe4a-69b1-4bef-897f-517a4072f28c",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C10",
+      "claim": "In quorum sensing, individual cells produce, secrete, and sense freely diffusible autoinducer molecules, thereby enabling different bacteria to coordinate their behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In this process, termed quorum sensing, individual cells produce, secrete, and sense freely diffusible autoinducer molecules, thereby enabling different bacteria to coordinate their behavior (Davies et al., 1998; Sakuragi and Kolter, 2007; Bassler and Losick, 2006; Miller and Bassler, 2001; Herzberg et al., 2006; Laganenka et al., 2018; McLean et al., 1997; Paul et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "965203e0-1656-4fb8-90c7-d9292b443939",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C11",
+      "claim": "In many cases, quorum sensing positively controls biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in many cases, quorum sensing positively controls biofilm formation (Herzberg et al., 2006; Laganenka et al., 2018; Davies et al., 1998; Sakuragi and Kolter, 2007; McLean et al., 1997; Gonz\u00e1lez Barrios et al., 2006; Yarwood et al., 2004; Koutsoudis et al., 2006; Waters and Bassler, 2005; Parsek and Greenberg, 2005; Jayaraman and Wood, 2008; Hentzer et al., 2003; Kirisits and Parsek, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "af07382a-35eb-4f1e-92ed-c1312714c599",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C12",
+      "claim": "Autoinducer accumulation above a threshold concentration upregulates the expression of genes involved in biofilm formation, ultimately driving a transition from the planktonic to the biofilm state.",
+      "claim_type": "EXPLICIT",
+      "source": "autoinducer accumulation above a threshold concentration upregulates the expression of genes involved in biofilm formation, ultimately driving a transition from the planktonic to the biofilm state (Nadell et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "405848bb-98ab-4bbf-8b2a-081c4482a60e",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C22",
+      "claim": "Natural degradation of autoinducer is modeled as a first-order process with a rate constant \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "Following previous work (Koerber et al., 2002; Ward et al., 2001; Ward et al., 2003), we also model natural degradation of autoinducer as a first-order process with a rate constant \u03bb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model formulation supported by citations to previous work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "a68b5aa9-1dcb-4996-943a-188c90ece699",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C25",
+      "claim": "The transition from planktonic to biofilm state is assumed to be irreversible in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Because our focus is on this transition, we assume that it is irreversible, and that cells in the biofilm lose motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "340de6ab-10ce-46bd-a1a6-2276544eef47",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C26",
+      "claim": "Cells in the biofilm lose motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Because our focus is on this transition, we assume that it is irreversible, and that cells in the biofilm lose motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "c79da6bf-9553-4e97-90f5-9cb76097e355",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C28",
+      "claim": "In the example simulation shown in Figure 1C, consumption by the planktonic cells rapidly establishes a steep nutrient gradient at the leading edge of the inoculum.",
+      "claim_type": "EXPLICIT",
+      "source": "Consumption by the planktonic cells (green curves) rapidly establishes a steep nutrient gradient (purple) at the leading edge of the inoculum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the numerical simulation shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "816fcfcf-705b-44f5-b6c8-aefa6eaad295",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C29",
+      "claim": "In the example simulation shown in Figure 1C, the nutrient gradient forces the planktonic cells to move outward via chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "This gradient forces the planktonic cells to then move outward via chemotaxis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the numerical simulation shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "0ce2e8f5-e95b-471e-96f0-b0e52d30924b",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C30",
+      "claim": "In the example simulation shown in Figure 1C, planktonic cells self-organize into a coherent front that expands from the initial inoculum and continually propagates, sustained by continued consumption of the surrounding nutrient.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, they self-organize into a coherent front that expands from the initial inoculum and continually propagates, sustained by continued consumption of the surrounding nutrient\u2014consistent with the findings of previous studies of planktonic bacteria (Bhattacharjee et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the numerical simulation shown in Figure 1C, consistent with previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "8a1f260a-e776-49f8-8053-2371201f09c2",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C31",
+      "claim": "In the example simulation shown in Figure 1C, the cells concomitantly produce autoinducer that accumulates into a growing plume.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, however, the cells also concomitantly produce autoinducer that accumulates into a growing plume (red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the numerical simulation shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "4e6596a7-9a4c-4016-a2e4-3863dc60bf91",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C58",
+      "claim": "10,983 numerical simulations of Equations 1\u20134 were implemented exploring the full physiological ranges of the input parameters that describe cellular, nutrient, and autoinducer properties for diverse bacterial species/strains and environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this possibility, we implement 10,983 numerical simulations of Equations 1\u20134 exploring the full physiological ranges of the input parameters that describe cellular, nutrient, and autoinducer properties for diverse bacterial species/strains and environmental conditions (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational experiments performed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "e01d7b20-5699-470e-8f9a-6032f1147cf6",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C61",
+      "claim": "The two dimensionless parameters D\u0303 and J\u0303 reasonably encompass all the factors determining biofilm formation within the model.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that these two dimensionless parameters reasonably encompass all the factors determining biofilm formation within our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the results from the 10,983 numerical simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "73eed05d-cae4-49f8-a985-9bd8620dc614",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C64",
+      "claim": "The biophysical model provides a key step toward quantitatively predicting and controlling biofilm formation in diverse and complex settings.",
+      "claim_type": "EXPLICIT",
+      "source": "The biophysical model presented here provides a key step toward addressing this challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the significance of the work",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "dd291acb-3259-48e8-9a9b-d23acdfef331",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C67",
+      "claim": "Extensions of the model could help provide a way to predict whether a biofilm will form a priori, given a bacterial strain and set of environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, given a bacterial strain and set of environmental conditions, extensions of our model could help provide a way to predict whether a biofilm will form a priori.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the potential application of the work",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "9f2ab5c0-24b9-42ac-9591-0a356690bbd5",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C70",
+      "claim": "The model incorporates proliferation, nutrient consumption, and autoinducer production by cells after they have transitioned to the biofilm state.",
+      "claim_type": "EXPLICIT",
+      "source": "For generality, our model also incorporates proliferation, nutrient consumption, and autoinducer production by cells after they have transitioned to the biofilm state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model formulation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "d4daf108-9544-479c-8e2d-92ce14f32e7f",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C71",
+      "claim": "Within the model, biofilm-produced autoinducer could also drive surrounding planktonic cells to transition to the biofilm state.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, within our model, biofilm-produced autoinducer could also drive surrounding planktonic cells to transition to the biofilm state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication of the model formulation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "4fe617bc-8f26-417a-afcd-c3ebcc1577c8",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C79",
+      "claim": "The model provides a minimal description that can capture many of the essential features of biofilm formation more generally.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our model provides a minimal description that can capture many of the essential features of biofilm formation more generally\u2014thereby providing a foundation for future extensions of our work, some of which are described below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the generality of the model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "f5a257a0-e4b0-47cb-a6a0-113ba35bf11a",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C80",
+      "claim": "The numerical simulations use an Adams-Bashforth-Moulton predictor-corrector method in which the order of the predictor and corrector are 3 and 2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "To numerically solve the continuum model described by Equations 1\u20134, we follow the experimentally validated approach used in our previous work (Bhattacharjee et al., 2021; Amchin et al., 2022). Specifically, we use an Adams-Bashforth-Moulton predictor-corrector method in which the order of the predictor and corrector are 3 and 2, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the numerical method used",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "8d46fb4b-003d-4a0d-912c-b75dbb82dc56",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C81",
+      "claim": "The Shanks starter of order 6 is used to find the starting time points for the predictor-corrector method.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the predictor-corrector method requires past time points to inform future steps, the starting time points must be found with another method; we choose the Shanks starter of order 6 as described previously (Rodabaugh and Wesson, 1965; Shanks, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the numerical method used, supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "8654f818-183e-44dd-9d68-958f8240f171",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C83",
+      "claim": "Repeating representative simulations with different spatial and temporal resolution indicates that even finer discretization does not appreciably alter the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeating representative simulations with different spatial and temporal resolution indicates that even finer discretization does not appreciably alter the results (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from additional numerical simulations shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "9ecafcee-1eb5-48c3-9ce1-a098174624cd",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C84",
+      "claim": "The choice of discretization is sufficiently finely-resolved such that the results in the numerical simulations are not appreciably influenced by discretization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our choice of discretization is sufficiently finely-resolved such that the results in the numerical simulations are not appreciably influenced by discretization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the results from Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "3394639b-b13d-4a82-9d04-79fb806c0173",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C85",
+      "claim": "Performing the same representative simulation shown in Figure 1C, but with the shape of the initial inoculum changed from a Gaussian profile to a step function with the same maximum cellular concentration and width, shows nearly identical results.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, performing the same representative simulation shown in Figure 1C, but with the shape of the initial inoculum changed from a Gaussian profile to a step function with the same maximum cellular concentration and width, shows nearly identical results (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from an additional numerical simulation shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "fa8d27c2-fc6d-498f-9cc8-0b1310266164",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C86",
+      "claim": "The results are robust to variations in the initial condition chosen.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that our results are robust to variations in this initial condition chosen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the results from Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "cf570071-11b3-4178-a8e2-f33c50de8ec9",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "claim_id": "C91",
+      "claim": "The model incorporates jammed growth expansion of the population in which growing cells push outward on their neighbors when the total concentration of bacteria is large enough.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, following previous work (Amchin et al., 2022; Dell'Arciprete et al., 2018; Volfson et al., 2008; Farrell et al., 2013; Klapper and Dockery, 2002; Head, 2013), we also incorporate jammed growth expansion of the population in which growing cells push outward on their neighbors when the total concentration of bacteria is large enough.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model formulation, supported by citations to previous work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d344a3df-f618-4df8-98d9-7e403f11ca50",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about bacterial phenotypic states (planktonic vs. biofilm), motility mechanisms, and quorum sensing control of biofilm formation. These claims establish the biological context and prior knowledge that motivates the modeling work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 are all well-supported by extensive citations to prior literature. These are background claims establishing known biological phenomena rather than novel findings from this work. The citations appropriately reference historical observations (van Leeuwenhoek) and contemporary research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "02338c2d-8ea4-45ac-a42c-64902dd61a3e",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors develop a mathematical model incorporating bacterial motility, chemotaxis, nutrient consumption, autoinducer production, and quorum sensing-controlled biofilm formation. The model includes specific assumptions about irreversibility of the planktonic-to-biofilm transition, loss of motility in biofilms, and jammed growth expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C25, C26, C70, C71, C79, and C91 describe the model formulation with appropriate citations to prior work for established modeling approaches. The assumptions are clearly stated and justified. The model provides a minimal but generalizable framework as claimed in C79.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "ec6508d8-b61b-4019-814f-2601087de8d8",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Representative numerical simulations demonstrate that planktonic cells consume nutrients to establish gradients, disperse via chemotaxis forming coherent fronts, and produce autoinducer that accumulates into plumes. This leads to partial biofilm formation (f=21%) in the example case.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 describe results from Figure 1C simulations that are clearly shown in the figure and consistent with prior work (C30 cites Bhattacharjee et al., 2021). The simulation demonstrates the model's ability to capture the competition between dispersal and biofilm formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "e7257394-5935-4c31-8204-dd81df4581a3",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Through 10,983 numerical simulations exploring physiological parameter ranges, the authors demonstrate that two dimensionless parameters (D\u0303 and J\u0303) encompass all factors determining biofilm formation within the model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 describes the computational experiments performed, and C61 concludes that D\u0303 and J\u0303 capture the essential factors. This is supported by Figure 4 showing that diverse parameter combinations with the same (D\u0303, J\u0303) yield the same biofilm fraction f, demonstrating the universality of this parameterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "d906f690-e790-42e9-90d0-a377a23b09f0",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The numerical methods are validated through convergence testing and robustness checks. The Adams-Bashforth-Moulton predictor-corrector method with specified discretization is shown to be sufficiently resolved, and results are robust to variations in initial conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 describe the numerical implementation and validation. C83 and C84 are supported by Figure 4\u2014figure supplement 2 showing convergence with finer discretization. C85 and C86 are supported by Figure 1\u2014figure supplement 2 showing robustness to initial condition shape. These are appropriate validation checks for computational work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    },
+    {
+      "id": "47bfc56d-3f8e-4054-a254-81bd6c25297f",
+      "content_id": "684d6a27-f522-48a8-b914-efb97b9dccda",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors claim their biophysical model provides a key step toward quantitatively predicting and controlling biofilm formation, with extensions potentially enabling a priori prediction of biofilm formation given bacterial strain and environmental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 asserts significance while C67 discusses potential applications. While the model demonstrates predictive capability within its framework (as shown by the universal threshold), the claims about practical prediction and control are aspirational. The model requires experimental validation and measurement of all input parameters, which is not demonstrated. These are reasonable future directions but not yet established capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:24:46.094287Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "85d09228-e082-4561-a062-05cc6542f638",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "9c035f33-c1f5-4c11-adbb-d34eb927360a",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "ecd12b35-0542-4d01-8195-b82e0f20c922",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "92b8196c-cd1d-4691-a4b8-dcbda4b39c55",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "1dee5836-d311-49e5-bb3f-69a17e632243",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "71953c98-faa7-4e0b-a7a3-97f99d13d517",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "2a7ba378-4f1a-49a7-bcd0-2f0db14ab5fb",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "218136fb-f1a5-40bc-b936-3b494b6656bf",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "e3df4c58-3c2f-4648-88ba-92424551d198",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "2898fe4a-69b1-4bef-897f-517a4072f28c",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "965203e0-1656-4fb8-90c7-d9292b443939",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "af07382a-35eb-4f1e-92ed-c1312714c599",
+      "result_id": "d344a3df-f618-4df8-98d9-7e403f11ca50"
+    },
+    {
+      "claim_id": "405848bb-98ab-4bbf-8b2a-081c4482a60e",
+      "result_id": "02338c2d-8ea4-45ac-a42c-64902dd61a3e"
+    },
+    {
+      "claim_id": "a68b5aa9-1dcb-4996-943a-188c90ece699",
+      "result_id": "02338c2d-8ea4-45ac-a42c-64902dd61a3e"
+    },
+    {
+      "claim_id": "340de6ab-10ce-46bd-a1a6-2276544eef47",
+      "result_id": "02338c2d-8ea4-45ac-a42c-64902dd61a3e"
+    },
+    {
+      "claim_id": "9f2ab5c0-24b9-42ac-9591-0a356690bbd5",
+      "result_id": "02338c2d-8ea4-45ac-a42c-64902dd61a3e"
+    },
+    {
+      "claim_id": "d4daf108-9544-479c-8e2d-92ce14f32e7f",
+      "result_id": "02338c2d-8ea4-45ac-a42c-64902dd61a3e"
+    },
+    {
+      "claim_id": "4fe617bc-8f26-417a-afcd-c3ebcc1577c8",
+      "result_id": "02338c2d-8ea4-45ac-a42c-64902dd61a3e"
+    },
+    {
+      "claim_id": "cf570071-11b3-4178-a8e2-f33c50de8ec9",
+      "result_id": "02338c2d-8ea4-45ac-a42c-64902dd61a3e"
+    },
+    {
+      "claim_id": "c79da6bf-9553-4e97-90f5-9cb76097e355",
+      "result_id": "ec6508d8-b61b-4019-814f-2601087de8d8"
+    },
+    {
+      "claim_id": "816fcfcf-705b-44f5-b6c8-aefa6eaad295",
+      "result_id": "ec6508d8-b61b-4019-814f-2601087de8d8"
+    },
+    {
+      "claim_id": "0ce2e8f5-e95b-471e-96f0-b0e52d30924b",
+      "result_id": "ec6508d8-b61b-4019-814f-2601087de8d8"
+    },
+    {
+      "claim_id": "8a1f260a-e776-49f8-8053-2371201f09c2",
+      "result_id": "ec6508d8-b61b-4019-814f-2601087de8d8"
+    },
+    {
+      "claim_id": "4e6596a7-9a4c-4016-a2e4-3863dc60bf91",
+      "result_id": "e7257394-5935-4c31-8204-dd81df4581a3"
+    },
+    {
+      "claim_id": "e01d7b20-5699-470e-8f9a-6032f1147cf6",
+      "result_id": "e7257394-5935-4c31-8204-dd81df4581a3"
+    },
+    {
+      "claim_id": "f5a257a0-e4b0-47cb-a6a0-113ba35bf11a",
+      "result_id": "d906f690-e790-42e9-90d0-a377a23b09f0"
+    },
+    {
+      "claim_id": "8d46fb4b-003d-4a0d-912c-b75dbb82dc56",
+      "result_id": "d906f690-e790-42e9-90d0-a377a23b09f0"
+    },
+    {
+      "claim_id": "8654f818-183e-44dd-9d68-958f8240f171",
+      "result_id": "d906f690-e790-42e9-90d0-a377a23b09f0"
+    },
+    {
+      "claim_id": "9ecafcee-1eb5-48c3-9ce1-a098174624cd",
+      "result_id": "d906f690-e790-42e9-90d0-a377a23b09f0"
+    },
+    {
+      "claim_id": "3394639b-b13d-4a82-9d04-79fb806c0173",
+      "result_id": "d906f690-e790-42e9-90d0-a377a23b09f0"
+    },
+    {
+      "claim_id": "fa8d27c2-fc6d-498f-9cc8-0b1310266164",
+      "result_id": "d906f690-e790-42e9-90d0-a377a23b09f0"
+    },
+    {
+      "claim_id": "73eed05d-cae4-49f8-a985-9bd8620dc614",
+      "result_id": "47bfc56d-3f8e-4054-a254-81bd6c25297f"
+    },
+    {
+      "claim_id": "dd291acb-3259-48e8-9a9b-d23acdfef331",
+      "result_id": "47bfc56d-3f8e-4054-a254-81bd6c25297f"
+    }
+  ],
+  "comparisons": []
+}

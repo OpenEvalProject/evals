@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "ALDP transports very-long-chain fatty acid-CoAs (VLCFA-CoAs) from cytosol into peroxisomes, and dysfunction of ALDP causes X-linked adrenoleukodystrophy (ALD), characterized by progressive demyelination and neuroinflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C11 represent well-established background knowledge about ALDP function and ALD pathogenesis, supported by multiple citations to prior literature. These claims provide the scientific context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C38"
+    ],
+    "result": "Over 900 ALD-causing mutations have been identified on ALDP affecting 232 residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12, and C38 consistently report the number of known ALD mutations with citation to mutation databases. This represents established knowledge that motivates the structural analysis but is not a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C82",
+      "C83"
+    ],
+    "result": "ALDP (ABCD1) belongs to the ATP-binding cassette sub-family D with three other members (ABCD2-4), which have distinct subcellular localizations and substrate specificities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20, C82-C83 describe the classification and properties of ABCD family members, supported by citations and structural comparisons including AlphaFold predictions. This represents established knowledge providing context for ALDP characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "ALDP exhibits robust ATP hydrolysis in the presence of C22:0-CoA with Vmax of ~193 \u00b1 8.2 mol Pi min\u207b\u00b9 mol\u207b\u00b9 protein and Km of ~0.17 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 report biochemical characterization of purified ALDP with specific kinetic parameters shown in Figure 1B-C. The data appear technically sound with error bars (n=3), providing quantitative functional validation of the purified protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The cryo-EM structure of human ALDP was determined at 3.4 \u00c5 resolution, revealing a cytosolic-facing conformation with two identical subunits in a domain-swapped arrangement, each containing six transmembrane helices, a peroxisomal extracellular helix (EH), and C-terminal helix (CH) densities at ~4.0 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C23-C27, C29, and C65-C73 describe the cryo-EM structure determination with detailed methodology and resolution metrics. The structure is well-documented with appropriate data processing steps, FSC curves, and particle numbers. The ~4.0 \u00c5 resolution for CH is appropriately noted as insufficient for atomic modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Two unknown densities were observed at the TMD crevice in the ligand-free structure that partially overlap with substrates in bound structures, suggesting probable extrusion during substrate loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C32 describe unknown densities and their interpretation. While the observation is corroborated by Chen et al. 2022 (C30), the interpretation of 'probable extrusion' (C32) is speculative. The identity of these densities remains unclear, and alternative explanations are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Structural comparison across ligand-free, substrate-bound, and ATP-bound states reveals dramatic conformational changes, including closure of TM4-TM6 distance from 23.6 \u00c5 to 5.7 \u00c5, NBD rearrangement, and bending of TM4-6 and TM1-2 to open the peroxisomal exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 describe conformational changes based on comparison with structures from other groups (cited as Chen et al., Wang et al.). The distance measurements and structural interpretations are supported by Figure 2. However, these comparisons rely on structures from concurrent publications rather than being independently determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Among 232 residues with ALD mutations, 88 'hotspot' residues (with \u22652 mutation types) were classified into three groups: 10 residues lining the substrate-binding cavity, 35 in TMD regions undergoing conformational changes, and 43 on NBDs potentially affecting ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe a systematic classification of ALD mutations based on structural mapping (Figure 3B). The classification scheme is logical and supported by structural data, though the functional interpretations (C42, C44) are somewhat speculative ('likely play a role', 'may have influence').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Six disease-derived mutants (W339R, S342P, G343V, A396T, Q544R, T693M) all showed decreased VLCFA-CoA transport, with five showing abrogated ATP hydrolysis (except S342P), while all properly localized to peroxisomes and maintained thermal stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 and C74-C78 describe comprehensive functional characterization of disease mutants with transport assays, ATPase assays, localization studies, and thermal stability measurements. The data (Figure 3D, supplements) include appropriate controls and replicates (n=3), ruling out mislocalization or instability as causes of dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "AlphaFold modeling suggests T693M mutation may affect ATP hydrolysis by disrupting interactions near W664 (3.4 \u00c5 distance), as the larger Met side chain could affect neighboring residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C51 rely on AlphaFold predictions to interpret the T693M mutation since the CH region has insufficient resolution in the cryo-EM structure. While the authors acknowledge this limitation, the interpretation remains speculative ('may affect') and the AlphaFold model reliability for this region is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Alanine substitution of S164/Y310 and E291/R518 had negligible effect on ATP hydrolysis but decreased lipid transport, suggesting these residues are important for conformational changes during substrate translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe rationally designed mutations to probe dimeric interfaces. The experimental data (Figure 3D) support the differential effects on ATPase vs. transport activity. However, the mechanistic interpretation about 'conformational changes' (C53) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C64"
+    ],
+    "result": "Deletion of EH (\u0394364-374) and CH (\u0394683-745) both impaired lipid transport, with EH deletion potentially generating structural constraints between TM5-TM6 and CH deletion affecting protomer conformational changes and slightly decreasing ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C64 describe functional effects of deleting structural elements. The experimental data (Figure 3D) support the transport and ATPase phenotypes. The mechanistic interpretations are supported by citations to concurrent work (C54) and structural analysis, though some aspects remain speculative ('may generate').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ALDP has two substrate-binding pockets (~1695 \u00c5\u00b3 each) expanding perpendicularly to the membrane, larger than ABCB4's single PC-binding pocket (~1236 \u00c5\u00b3), potentially accommodating the longer C22:0-CoA (~55 \u00c5) compared to PC (~40 \u00c5) and stabilizing the single hydrophobic tail of VLCFAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C56-C63 compare ALDP and ABCB4 substrate-binding architectures with quantitative pocket volume calculations using ProteinPlus. The structural comparison (Figure 3\u2014supplement 5) is well-documented. However, the functional interpretation about stabilizing flexible VLCFA tails (C63) is speculative ('may help').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Thermal stability of ALDP mutants was assessed using intrinsic tryptophan fluorescence with a Prometheus NT.48 device, with proteins purified in LMNG/CHS at 0.5 mg/ml.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 describe the thermal stability assay methodology with appropriate technical details and citation support. The method is standard and appropriately applied to rule out protein instability as a cause of mutant dysfunction (C48).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "A95D is a disease-causing mutation that does not colocalize with peroxisomes and reduces C24:0 \u03b2-oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 describes a control mutation (A95D) used for comparison in localization studies, supported by citation to Morita et al. 2013. This represents appropriate use of a positive control for mislocalization.",
+    "result_type": "MINOR"
+  }
+]

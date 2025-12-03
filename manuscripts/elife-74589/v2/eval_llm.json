@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C102"
+    ],
+    "result": "Phylogenetic analysis of 2,292 SLC11 protein sequences reveals distinct clades with different substrate preferences, including animal Fe2+ transporters, prokaryotic Mn2+ transporters, plant NRAMPs, NRATs (Al3+ transporters), and NRMTs (proposed Mg2+ transporters). The ion binding site signature (DxxN-AxxM) is conserved in classical NRAMPs but replaced by DxxN-AxxT in NRATs and DxxG-TxxA/T in NRMTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis is well-documented with appropriate sample sizes (C102) and the resulting tree structure (C34) is clearly presented in Figure 1. The binding site motif differences (C38, C39) are supported by sequence alignment data shown in Figure 1\u2014figure supplement 1. The functional assignments for different clades (C35, C36, C37) are appropriately supported by citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Mutation of the conserved methionine (M235A) in the classical NRAMP transporter EcoDMT converts Ca2+ into a transported substrate while maintaining Mn2+ transport with a threefold increase in Km. However, neither M235A nor the triple mutant M235A/N54G/A232T (which converts the binding site to NRMT residues) enables Mg2+ transport, demonstrating that structural features beyond the immediate binding site are required for Mg2+ transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional characterization is rigorous with appropriate controls (protein-free liposomes in Figure 2\u2014figure supplement 1) and multiple independent reconstitutions. The Km values are well-determined from concentration-dependent transport assays (C94-C98) with Michaelis-Menten fits. The key finding that binding site mutations are insufficient for Mg2+ transport (C45, C46, C48) is clearly demonstrated by the absence of Mg2+ transport in Figure 2D, I, K, supporting the conclusion that additional structural features are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C93"
+    ],
+    "result": "EleNRMT from Eggerthella lenta was identified through screening of 82 NRMT homologues and shows robust Mn2+ transport with Km ~120 \u03bcM and Mg2+ binding with Kd ~400 \u03bcM. Consensus mutagenesis (EleNRMTts) improved thermal stability without affecting functional properties. Mg2+ competitively inhibits Mn2+ transport, demonstrating that both ions compete for the same binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification and characterization of EleNRMT is well-supported by biochemical data including SEC profiles (C50), thermal stability measurements (C51), concentration-dependent transport assays (C52, C93), and ITC measurements (C54, C55). The competitive inhibition by Mg2+ (C53) provides strong evidence for shared binding site occupancy. Multiple independent experiments with appropriate replicates support the reported Km and Kd values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C6"
+    ],
+    "result": "EleNRMT transports Mg2+ (detected by Magnesium Green fluorescence) and Mn2+ but not Ca2+, and this transport is not coupled to H+ as demonstrated by the absence of pH changes in ACMA assays, distinguishing NRMTs from classical H+-coupled NRAMPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The substrate specificity is clearly demonstrated using appropriate fluorescent reporters for each ion (C57, C58) with proper controls (Figure 2\u2014figure supplement 1C). The absence of H+ coupling (C59, C6) is convincingly shown by comparing EleNRMT to the H+-coupled EcoDMT control in Figure 4F-H. The lack of Ca2+ transport (C58) is consistent across multiple assays (Figure 4D, E), supporting the distinct selectivity profile of NRMTs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C100",
+      "C101"
+    ],
+    "result": "Structures of EleNRMT were determined by cryo-EM at 3.5 \u00c5 (without Mg2+) and 4.1 \u00c5 (with 10 mM Mg2+) and by X-ray crystallography at 4.1 \u00c5 (with 50 mM Mg2+) using a complex with two nanobodies (Nb1 and Nb2). Anomalous diffraction localized Mn2+ to a single binding site equivalent to the position in ScaDMT, with residual density suggesting Mg2+ occupies the same site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural determination is well-documented with appropriate resolution statistics (Tables 1 and 2) and validation metrics. The nanobody strategy to increase particle size for cryo-EM is well-justified and executed (C100, C101). The use of anomalous diffraction to unambiguously localize Mn2+ (C63) is a strength, and the inference that Mg2+ occupies the same site (C64) is reasonable based on the residual density observed in cryo-EM maps (Figure 5\u2014figure supplement 5D, E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C99"
+    ],
+    "result": "EleNRMT adopts an inward-facing conformation with 11 membrane-spanning segments organized as two structurally related repeats, showing overall structural similarity to classical NRAMPs (RMSD 2.0-2.2 \u00c5 with ScaDMT and DraNRAMP). The structure contains a large water-filled cavity extending from the cytoplasm to the ion binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overall architecture is clearly demonstrated by the cryo-EM structures (Figure 6) with appropriate structural comparisons to known NRAMP structures (C66, C99). The RMSD values indicate significant structural similarity while allowing for the functional differences. The water-filled cavity (C67) is well-visualized in Figure 6C and is consistent with the proposed mechanism of ion transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C84"
+    ],
+    "result": "The ion binding site of EleNRMT is expanded compared to ScaDMT due to ~1.5 \u00c5 backbone shifts and reduced side chain volumes (glycine replacing asparagine, alanine replacing methionine). The replacement of alanine with threonine (T224) introduces an additional hydroxyl ligand. This expanded cavity allows Mg2+ to bind in a partly solvated state retaining much of its hydration shell, representing a combination of local chemical changes and global structural expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural basis for altered selectivity is convincingly demonstrated through detailed structural comparisons in Figure 7A-C. The specific residue changes (C69, C71) are clearly identified and their effects on binding site volume (C68, C84) are well-documented. The inference that Mg2+ retains its hydration shell (C72) is reasonable given the expanded cavity volume, though the limited resolution (3.5-4.1 \u00c5) prevents direct visualization of water molecules. The conclusion about combined local and global changes (C73) is well-supported by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C88"
+    ],
+    "result": "The absence of H+ coupling in EleNRMT is reflected in the substitution of ionizable residues conserved in classical NRAMPs: the two histidines on \u03b1-helix 6b are replaced by tryptophan and asparagine, and polar pathway residues on \u03b1-helices 3 and 9 are replaced by hydrophobic residues, leaving only the binding site aspartate (Asp55) and glutamate on \u03b1-helix 3 (Glu133).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural basis for the absence of H+ coupling is well-documented through comparison with classical NRAMPs (Figure 7D-E). The specific residue substitutions (C75, C76) are clearly identified and their functional significance is supported by the ACMA assay data (Figure 4F-H) showing no H+ transport. The retention of only two ionizable residues (C75) is consistent with the observed lack of proton coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mutagenesis of EleNRMT binding site residues shows that Asp55 and Gln379 mutations strongly compromise transport, while T224A has a moderate effect on Mn2+ transport (\u22652-fold increase in Km) but abolishes Mg2+ transport. The double mutant T224A/G58N shows detectable Ca2+ transport, demonstrating that these mutations introduce structural determinants that facilitate Ca2+ interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis study is well-designed with appropriate controls and multiple independent reconstitutions. The differential effects on Mn2+ versus Mg2+ transport (C79, C80) are clearly demonstrated in Figure 8D-G, supporting the conclusion that T224 is particularly important for Mg2+ selectivity. The gain of Ca2+ transport function in the double mutant (C81) provides strong evidence that the binding site can be remodeled to alter selectivity, though the compromised Mn2+ transport suggests these changes come at a cost.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Modeling suggests that Mg2+ binds to EleNRMT as an octahedral hydrated complex with only one water molecule substituted by direct protein interaction (backbone oxygen of T224), while other interactions are mediated by coordinating waters. This mechanism is similar to other Mg2+ transporters (MgtE, CorA) but contrasts with CorC where Mg2+ is fully dehydrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The modeling of the Mg2+-water complex (C85) is reasonable but limited by the resolution of the structures (3.5-4.1 \u00c5), which does not permit direct visualization of water molecules. The inference that Mg2+ retains its hydration shell (C86, C87) is consistent with the expanded binding site volume and comparisons to other Mg2+ transporters (C104, C105), but remains speculative without higher-resolution structures or additional experimental validation such as molecular dynamics simulations or spectroscopic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C90"
+    ],
+    "result": "The structural and energetic requirements for Mn2+ transport are lower than for alkaline earth metals, as evidenced by the promiscuity of transition metal ion transport contrasting with the tight requirements for Ca2+ and Mg2+, which rely on distinct protein features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the combined functional data showing that EcoDMT mutants retain Mn2+ transport capability (C43, C46) while failing to gain Mg2+ transport (C45, C46), and that EleNRMT transports Mg2+ but not Ca2+ (C83). The differential requirements for different ions (C90) are clearly demonstrated across multiple experiments, supporting the conclusion about promiscuity of transition metal transport versus specificity for alkaline earth metals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "The absence of H+ coupling in NRMTs may not be required for efficient Mg2+ uptake given high extracellular Mg2+ concentrations and negative membrane potential. The failure of a previous NRMT to support growth on Mn2+-limitation may reflect lower affinity, competition with Mg2+, and absence of energy coupling. Human SLC11A1 is unlikely to transport Mg2+ based on structural requirements identified in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C89, C91, C92) are explicitly speculative as indicated by the language used ('may not be required', 'could be a consequence', 'appears unlikely'). While the speculation is reasonable and based on the experimental findings, these statements lack direct experimental support. The physiological relevance of uncoupled transport (C89) would require measurements in native bacterial membranes. The interpretation of prior work (C91) and the prediction about SLC11A1 (C92) are plausible but would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background information on SLC11/NRAMP family function, ion chemistry, and prior structural/functional studies establishes the context for investigating NRMTs, including the role of the conserved methionine in conferring selectivity against alkaline earth metals and the energetic challenges of Mg2+ transport due to its strong hydration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background information that is well-supported by appropriate citations to prior literature (C3, C12, C13, C15, C21-C33). The chemical principles regarding ion coordination (C15-C17) and the challenges of Mg2+ transport (C32, C33) are established knowledge. This background appropriately frames the significance of the current study and is accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "NRMTs were previously proposed to function as Mg2+ transporters based on prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim accurately represents prior work (C31) and is appropriately cited. The current study provides experimental validation of this proposal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The NRMT protein characterized in this study (EleNRMT) transports Mg2+ and Mn2+ but not Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a primary finding well-supported by multiple lines of evidence including transport assays with different fluorophores (Figures 3, 4), ITC measurements (Figure 3G-H), and competitive inhibition experiments. This claim is redundant with the more detailed result covering C57-C59 but represents a key summary finding.",
+    "result_type": "MAJOR"
+  }
+]

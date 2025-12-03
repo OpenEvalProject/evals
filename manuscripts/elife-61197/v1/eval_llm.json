@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Human observers rapidly learned to recognize macaque monkey facial expressions, achieving perfect recognition of four prototypical expressions with maximally four stimulus repetitions during familiarization, despite monkey expressions being quite different from human expressions and naive observers being unable to interpret them spontaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16, C53, C54 provide converging evidence from the experimental procedure showing rapid learning (C3, C53), quantified as perfect recognition within four repetitions (C16), despite initial inability to interpret monkey expressions (C54). Claim C55 offers a plausible mechanistic explanation supported by citation. The data directly support the rapid learning finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C13",
+      "C24",
+      "C25",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The perceptual categorization of dynamic facial expressions was largely independent of facial shape (human vs. monkey avatar) and stimulus view (0 vs. 30 degrees rotation), showing substantial invariance against changes in two-dimensional image features, with no better representation of species-specific expressions when avatar species matched the expression species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C12, C13, C24, C56, C58, C59 present the core finding with multiple lines of evidence from experimental data. Claims C25 and C57 provide valid inferences about 2D image feature invariance. The statistical analyses (ratio of different vs. shared variance: q=2.75%, only 12% of responses significantly different) and model comparisons strongly support independence of shape and dynamics encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C31",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Human observers showed narrower tuning for human-specific compared to monkey-specific dynamic expressions across all tested conditions (except human avatar at 30 degrees rotation), demonstrating a robust own-species advantage that persisted even when species-specific features were eliminated or stimuli were equilibrated for low-level information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C31, C60, C61 present consistent findings from multiple experimental conditions supported by ANOVA analyses showing significant effects (F(1,66)=188.82, p<0.001 for most conditions). Claim C62 demonstrates robustness across control experiments. The exception for the 30-degree human condition is appropriately noted and does not undermine the general finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C39",
+      "C40",
+      "C41",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The main findings of shape-independent expression encoding and narrower tuning for human expressions were robust against substantial variations in stimulus features, including occlusion of monkey-specific ear motion and equilibration of low-level motion information (reducing motion flow standard deviation by 79-83% across conditions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C39, C40, C44, C45, C49, C50 demonstrate robustness through multiple control experiments with quantitative measures. The equilibration procedure effectively controlled for low-level features (C39, C40, C46, C51) while preserving main effects. Claim C52 appropriately concludes that effects are not artifacts of low-level feature differences. The convergence across multiple control conditions strongly supports robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C20"
+    ],
+    "result": "A multinomial logistic regression model with expression (e) and species (s) as independent predictors provided the best fit for classification data, with no significant improvement from including their interaction term (e\u00b7s) except minimally for rotated views, and simple motion features like optic flow did not trivially explain the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C20 present findings from systematic model comparison using prediction accuracy and BIC. The lack of interaction between e and s supports the independence of expression and species encoding. The exclusion of optic flow as a trivial explanation is appropriately tested and reported. The statistical approach is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Differences in classification responses between avatar types and view conditions tended to be larger for intermediate values of style space coordinates (e and s), corresponding to stimuli with high perceptual ambiguity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 describes a pattern in the data with reference to Figure 3B. This observation is consistent with expected behavior for perceptually ambiguous stimuli and adds nuance to the main independence finding. The claim is appropriately qualified as a tendency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Many subjects recognized human facial expressions on the monkey avatar face without familiarization, consistent with common experience that humans can recognize dynamic facial expressions from non-human comic figures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 reports a direct observation from the experimental procedure. Claim C27 provides supporting context from common knowledge. While C27 is not experimentally tested in this study, C26 is a valid empirical observation that supports the broader independence finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The findings support that perception can exploit the similarity of dynamic expression structure across primate species for fast learning, consistent with co-evolution of visual processing of dynamic facial expressions with their motor control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C64 present interpretive conclusions well-supported by the convergence of experimental findings (rapid learning, shape independence, own-species advantage). These conclusions appropriately synthesize the major results and connect them to evolutionary theory, though they remain interpretations rather than direct experimental tests of evolutionary mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The experimental findings challenge popular recurrent neural network models that represent facial expressions as sequences of learned key shapes, as the observed spontaneous generalization across primate species with vastly different facial shapes is difficult to reconcile with such models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C70, C72 present a logical inference about implications for existing models, with C71 providing the key premise about shape differences. The argument is sound: if models rely on key shapes and shape differences between species exceed those within expressions, cross-species generalization becomes difficult to explain. This is a valid theoretical implication of the empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The observed independence of expression dynamics from facial shape may extend beyond primate faces to non-primate species and even fictional characters, though this requires confirmation through extended experiments with a broader spectrum of facial shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65 and C68 explicitly acknowledge the need for future research. Claims C66 and C67 offer speculation based on common observation about comic characters. While the speculation is reasonable given the current findings, it extends beyond the experimental evidence. The authors appropriately frame this as requiring further confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The observed independence of basic facial shape and expression encoding aligns with functional imaging studies suggesting modular representation of changeable and non-changeable aspects of faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 appropriately connects the current behavioral findings to prior neuroimaging literature through citations. This is a reasonable inference that places the results in the context of existing neuroscientific knowledge about face processing modularity. The claim is appropriately qualified as 'seems in-line with' rather than claiming direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Concrete neural circuits for shape-independent expression encoding remain to be discovered, with possible mechanisms including optic-flow analysis or norm-referenced vectorized encoding; the developed avatar technology enables future electrophysiological studies to clarify these mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74 and C75 present speculative mechanisms with appropriate citations. Claims C76, C77, C79 cite prior work. Claim C78 discusses future applications. While C73 correctly states current knowledge gaps and C74-C75 offer plausible mechanisms, these remain untested hypotheses. The speculation is reasonable but the mechanisms are not demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C89"
+    ],
+    "result": "The study employed 78 human participants (42 females, age 21-53 years, mean 26.2) with no prior macaque experience, using avatar models derived from MRI scans and motion capture with 43 facial markers, with the monkey face modeled by an elastic mesh structure imitating major facial muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 and C89 provide methodological details about participants and stimulus generation. These are straightforward descriptions of the experimental setup supported by the methods section. The sample size appears adequate for the repeated-measures design, though no formal power analysis is reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90"
+    ],
+    "result": "The dynamic monkey avatar has been validated in prior work as inducing behavioral reactions in macaque monkeys similar to real movies, reaching the 'good side' of the uncanny valley, and animations generated with the Bayesian algorithm were indistinguishable from original motion capture data in a Turing test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C86, C87, C88 cite prior validation work appropriately. Claim C90 reports a control experiment from the current study. These claims establish the validity and realism of the stimuli, which is important for interpreting the main results. The citations to prior work and the Turing test provide appropriate validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior research establishes that dynamic facial expressions are crucial for primate communication, the neuromuscular control of faces evolved more slowly than facial shape, expression recognition across species has been studied mainly with static images, and functional imaging suggests partial separation of structures processing changeable versus non-changeable face aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C6, C7, C9, C11 appropriately cite prior literature to establish background knowledge. Claims C2, C8, C10 state established knowledge about primate evolution and anatomy. These claims provide appropriate context and motivation for the study, with proper attribution to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "The main experimental results were highly robust against substantial variations in expressive stimulus features across multiple control conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is a summary statement supported by the detailed robustness findings in other claim groups (particularly C32, C39-C52). This high-level conclusion is well-supported by the multiple control experiments demonstrating consistency across varied stimulus manipulations.",
+    "result_type": "MAJOR"
+  }
+]

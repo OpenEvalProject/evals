@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Overexpression of DinB2, but not DinB3, causes growth defects, loss of viability, and DNA damage response induction in M. smegmatis. The toxic effect of DinB2 is dependent on its polymerase activity, as demonstrated by the catalytically inactive D107A mutant which does not cause these phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 and C56-C58 provide consistent experimental evidence from multiple assays (growth curves, viability, Western blots) showing DinB2-specific toxicity. The D107A mutant experiments (C56-C58) provide strong mechanistic evidence that polymerase activity is required. The inference in C59 is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "DinB2-dependent lethality is not primarily due to genomic 8-oxoguanine incorporation, as deletion of mutT and mutY/mutM systems does not significantly impact the growth defect or loss of viability caused by DinB2 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 present experimental data showing no significant effect of 8-oxoguanine repair system deletions on DinB2 toxicity. The inference in C65 is logically sound based on this negative result, ruling out a specific mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "DinB2 and DinB3 overexpression increases rifampicin resistance frequency sixfold through their polymerase activity, independent of RecA-mediated DNA damage response or DnaE2 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 provide direct experimental evidence of increased rifR frequency. C71 is supported by the D107A mutant control. C72-C73 demonstrate independence from RecA and DnaE2 through deletion strain experiments, strengthening the conclusion that the effect is direct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "DinB2 and DinB3 exhibit distinct mutagenic profiles in conferring rifampicin resistance. DinB3 shows a narrow spectrum focused on A>G/T>C mutations at His442, while DinB2 drives a broader spectrum including A>C/T>G, G>T/C>A mutations, and a novel trinucleotide mutation, distributed across multiple RRDR positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C86 provide detailed sequencing data of rifR mutations showing clear differences in mutation spectra between DinB2 and DinB3. The inferences in C87-C89 comparing the polymerases are well-supported by the quantitative data on mutation types and locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "DinB2 exhibits backward slippage activity on homopolymeric A and T runs in vitro, generating extension products longer than expected from error-free synthesis. This slippage is exacerbated in longer tracts (6-8 nucleotides) and persists even when the next templated nucleotide is available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C100 present consistent in vitro biochemical data showing slippage products on various template lengths. The use of ddNTPs as controls (C95-C97) strengthens the evidence. The inferences in C101-C102 are well-supported by the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "DinB2 overexpression increases -1 frameshift mutations in a 4T homopolymeric run by >100-fold in vivo, dependent on its polymerase activity. DinB3 has no effect on this mutation type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 provide quantitative in vivo mutation frequency data with sequencing confirmation. The D107A mutant control (C108) demonstrates polymerase activity dependence. The inference in C109 is well-supported by the genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The spontaneous -1 frameshift mutation frequency in mycobacteria is strongly dependent on homopolymeric run length, with 7T runs showing ~600-fold higher frequency than 4T runs. DinB2 overexpression further enhances -1 FS frequency in 7T runs by 19-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 provide clear quantitative data comparing mutation frequencies between different run lengths. The inference in C112 about run size impact is well-supported. C113 shows DinB2 can further increase an already high background frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "DinB2 overexpression increases +1 frameshift mutations in 5T and 5A homopolymeric runs by 100-fold, dependent on polymerase activity. Increasing run length from 5 to 8 adenines enhances spontaneous +1 FS frequency by 1000-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 provide quantitative mutation frequency data for +1 frameshifts. C119 demonstrates polymerase activity dependence through the D107A mutant. C120 shows dramatic run-length effects on spontaneous mutation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "DinB2 overexpression with an 8T reporter increases kanR frequency eightfold through -2 frameshift mutations in the 8T run, revealing DinB2 can catalyze -2 frameshifts in addition to \u00b11 frameshifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 present experimental data showing a specific mutation pattern with the 8T reporter. The inference in C123 about -2 FS capability is supported by sequencing data showing this mutation type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "DinB2 exhibits enhanced slippage on G and C homopolymeric runs compared to A and T runs in vitro, with G4 templates showing more slippage than A4 or T4 templates. This suggests DinB2 has sequence-specific slippage properties not explained by base-pairing thermodynamics alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 provide comparative in vitro data showing differential slippage on different nucleotide runs. The inference in C133 comparing G vs A/T slippage is well-supported. The speculation in C134 about sequence-specific properties is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "DinB2 overexpression enhances -1 frameshift frequency in 4G runs by 100-fold in vivo, while DinB3 has no significant effect on frameshifts in G runs. A non-significant increase in +1 FS was observed in 5G runs with DinB2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 provide quantitative in vivo mutation data for G runs. C141 appropriately notes the lack of statistical significance for the 5G +1 FS result. The data support DinB2-specific effects on G runs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Using sacB reporters, DinB2 overexpression increases frameshift mutations in 6C runs but does not incorporate the long slippage products (>10 nucleotides) observed in vitro. Spontaneous frameshift frequency in 9C runs is very high (>1%), with DinB2 enhancing the proportion of +1 frameshifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C151 provide mutation frequency and sequencing data from sacB reporters. The inference in C152 about lack of long slippage products in vivo is supported by the sequencing data. C153's inference about high spontaneous FS frequency is well-supported by the 9C reporter data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The mutagenic phenotypes of DinB2 overexpression (growth defects, DNA damage response, substitution and frameshift mutations) are not due to ribonucleotide utilization, as the steric gate mutant DinB2L14F (which restores dNTP selectivity) shows similar or enhanced phenotypes compared to wild-type DinB2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C160 provide comparative data between DinB2 and DinB2L14F showing similar mutagenic effects. The inference in C161 is well-supported by this comparison. The speculation in C162 about direct FS incorporation is reasonable but appropriately marked as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "DinB2 is much less prone to slippage when utilizing ribonucleotides (rNTPs) compared to deoxyribonucleotides (dNTPs) in vitro, showing predominantly error-free synthesis on homopolymeric templates with rNTPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C167 provide in vitro biochemical data comparing DinB2 activity with rNTPs vs dNTPs. The inference in C168 is well-supported by the comparative data showing reduced slippage with rNTPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "DinB2 exhibits a manganese-dependent switch in slippage behavior in vitro, transitioning from a no-slip state with magnesium alone to extensive slippage with manganese. Low ratios of Mn2+:Mg2+ (1:10 to 1:5) are sufficient to induce this switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C177 provide detailed in vitro data showing metal-dependent slippage with titration experiments. The speculation in C178 about metal-binding site occupancy is reasonable given the observed low Mn2+:Mg2+ ratios needed for the switch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Manganese enhances the growth inhibitory effects of DinB2 overexpression in vivo but does not alter frameshift mutagenesis frequencies in homopolymeric runs, suggesting manganese affects other DinB2 activities beyond the slippage observed in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C182 show manganese-enhanced toxicity dependent on DinB2 polymerase activity. C183-C185 demonstrate no effect on frameshift frequencies. The speculation in C186 about other Mn-dependent activities is reasonable given the disconnect between in vitro and in vivo effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C193"
+    ],
+    "result": "DinB2 has a distinct mutagenic spectrum from DinB3 and DinB1, inducing diverse mutation types including A>C/T>G and G>T/C>A mutations characteristic of 8-oxoguanine utilization. This implicates DinB2 in utilizing 8-oxoguanine in vivo under oxidative stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C189 present mutation spectrum data showing DinB2's distinct profile. C190 confirms polymerase activity dependence. C191 establishes the 8-oxoguanine signature. The speculation in C193 is reasonable given the mutation spectrum and prior biochemical characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "DinB2 induces specific RpoB mutations (H442P and L449P) that are rare in clinical M. tuberculosis isolates (0.1-1.2% of rifR mutations), suggesting a division of labor between TLS polymerases in generating rifampicin resistance in clinical strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C194-C197 provide mutation data and clinical frequencies. However, the speculation in C198 about division of labor is not strongly supported\u2014the low clinical frequencies could indicate DinB2 is rarely active in vivo rather than supporting a division of labor model. Additional evidence would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "Homopolymeric run length strongly impacts frameshift mutation frequency in mycobacteria, with spontaneous FS frequencies ranging from 10^-7 to 10^-6 per CFU in short runs (4-5 nt) and 10^-5 to 10^-2 per CFU in long runs (7-9 nt). This complements prior in silico analyses showing elevated frameshift rates in mycobacterial genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C213 provide systematic experimental data on run-length effects. C214-C215 cite supporting in silico analyses. The inference in C211 is well-supported by the quantitative data across multiple reporters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C224",
+      "C225"
+    ],
+    "result": "Reversible gene silencing through frameshifting in long homopolymeric runs is proposed to be a prevalent phenomenon in mycobacteria, with DinB1 and DinB2 potentially contributing to these indels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is primarily speculation (C224-C225) based on the observed high frameshift frequencies. While the mutation frequency data support high FS rates, direct evidence that DinB2 contributes to reversible gene silencing in vivo under physiological conditions is lacking, as DinB2 is normally repressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C233",
+      "C234",
+      "C236"
+    ],
+    "result": "A proposed model suggests division of labor between mycobacterial DinBs, with DinB1 mediating TLS at the replication fork and DinB2/DinB3 involved in TLS behind the fork or gap filling during DNA repair. DinB2 may play a role in quiescent cells when dNTPs are limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative models (C233-C234, C236) based on indirect evidence (lack of \u03b2-clamp binding, ribonucleotide utilization capability). While the speculation is reasonable, direct experimental evidence for these specific roles is not provided in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "DinB2 and DinB3 protein levels are similar at 4 and 24 hours after ATc induction and are increased 5-15-fold compared to untreated conditions, depending on ATc concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by Western blot data showing protein expression levels. This is straightforward experimental characterization of the overexpression system.",
+    "result_type": "MINOR"
+  }
+]

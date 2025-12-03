@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "EVE is a low-cost, open-source morbidostat that costs $115-200 to construct and supports multiple independently controlled culture units with precise control over medium exchange, cell density measurement, and drug addition. The system uses a Raspberry Pi microcomputer interfacing with a PCB, can be constructed with either PCB or breadboard, and includes web-based software for remote monitoring and control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C40 collectively describe EVE's design, cost, and capabilities with specific technical details. The hardware architecture (C34), cost estimates (C23, C51-53), functional capabilities (C22, C28-32), and software features (C38-40) are clearly documented with supporting figures. The design choices are well-justified and the system appears feasible based on the described components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "EVE's software is written in Python and hosted on Raspberry Pi, making it accessible to users without programming experience for basic operations while allowing customization for advanced users. EVE differs from other bioreactors like eVOLVER and Flexostat in its use of modern serial connections and broadly open licensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 describe EVE's software architecture and compare it to alternatives. The use of Python and Raspberry Pi (C41-43) is well-documented, and the accessibility claims (C45-46) are reasonable given the web interface described. Comparisons to eVOLVER and Flexostat (C44, C47-49) are supported by citations, though specific technical details about the serial connection advantages (C47-48) could be more thoroughly validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "EVE was designed to be cost-effective, with total construction costs of $115-200 for a system performing experiments in triplicate with a negative control. Costs can be further reduced by using room temperature incubation and pressure cookers for sterilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 provide specific cost data for EVE construction. The cost range (C51) and component costs (C53) are clearly stated, and exclusions (C52) are documented. Cost-reduction strategies (C54) are reasonable suggestions, though their effectiveness is not empirically validated in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C112"
+    ],
+    "result": "EVE was validated by measuring voltage variability across seven culture units, achieving 8.0% average variability (mean \u00b1 sd = 2.93\u00b10.23), comparable to the 7.5% reported by Toprak et al., 2012. Voltage measurements are used to estimate optical density, and variability arises from subtle differences in 3D-printed vial holder positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 and C112 describe the first validation method with specific quantitative data. The 8.0% variability (C59) is comparable to the published benchmark of 7.5% (C60), demonstrating acceptable performance. The explanation of variability sources (C58) is reasonable, and Figure 3 supports the claim that culture units behave similarly (C112). However, no statistical test is provided to formally compare EVE's variability to Toprak et al.'s benchmark.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "EVE was validated by experimentally evolving E. coli ATCC 25922 populations under chloramphenicol selection. Three replicate populations evolved from an initial IC50 of 4 \u00b5g/mL to 9.3-13.9 \u00b5g/mL, comparable to Toprak et al., 2012, where resistance increased to approximately 15 \u00b5g/mL over the same time period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 describe the second validation experiment with detailed methodology (C62-C67) and quantitative results (C68-C70). The experimental design is sound with three biological replicates, and the IC50 measurements follow established methods (C67). The results (9.3-13.9 \u00b5g/mL) are reasonably comparable to the benchmark (~15 \u00b5g/mL), though slightly lower. Figure 2 supports these findings, showing the temporal evolution of resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Calibration of EVE showed R\u00b2 values of 0.97, 0.99, and 0.99 for linear, quadratic, and cubic fits respectively between optical density and voltage. A linear model was used to translate voltage to optical density in experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 provide specific calibration data shown in Figure 3. The high R\u00b2 values indicate good fits, though the choice of a linear model (C111) despite slightly better quadratic/cubic fits (R\u00b2=0.99 vs 0.97) is not explicitly justified. The linear model is reasonable for simplicity and the R\u00b2=0.97 indicates acceptable performance, but the manuscript does not discuss whether the linear approximation introduces systematic errors at high or low densities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "EVE was successfully used in a high school classroom setting where students assembled the device, calibrated it, and evolved E. coli populations under chloramphenicol selection. Students observed population dynamics (expansion, decline, rebound) and learned microbiology techniques, growth models, and Beer's law while adapting protocols to classroom limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C86 describe the educational implementation with specific details about student activities (C78-C82) and learning outcomes (C83). The successful assembly and operation by high school students (C78-C80) demonstrates accessibility. Student adaptations to resource limitations (C84-C86) show problem-solving skills. Figures 3-4 provide visual documentation of student work. However, no formal assessment of learning outcomes is provided beyond the authors' observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C108",
+      "C109"
+    ],
+    "result": "EVE is an accessible, low-cost morbidostat suitable for educational settings with limited resources and minimal engineering/programming experience, as demonstrated by high school students successfully building and using it to study bacterial growth and antibiotic resistance evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C25-C26, and C108-C109 represent the manuscript's central thesis about EVE's educational accessibility. The demonstration with high school students (C5, C25, C109) provides strong evidence for accessibility claims. The low cost (C4, C23) and successful classroom implementation (C71-C86) support the conclusion that EVE is suitable for resource-limited settings (C26, C108). However, the sample size is limited (one school, small number of students), and broader validation across diverse educational settings would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Morbidostats are bioreactors that maintain steady death rates by dynamically adjusting antibiotic concentrations based on population growth measurements, making them well-suited for studying antibiotic resistance evolution. The chemostat, built over 70 years ago, was the first bioreactor and maintains fixed growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide background on bioreactors and morbidostats, supported by appropriate citations (C6, C8, C13, C14). The definitions and mechanisms (C1, C7, C9-C12) are consistent with established knowledge. The historical context (C6) and applications (C13-C14) are well-documented in the cited literature. These are standard background claims that accurately represent the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Morbidostats in classrooms enable inquiry-based learning where students combine hypothesis generation with real-time observation of microbial adaptation, improving understanding of evolution and natural selection compared to passive lecture-based instruction. This approach complements existing AP Biology curricula and teaches engineering and programming skills.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 and C73-C75 describe educational benefits of morbidostats, supported by citations to education research (C17, C18). The contrast between passive and active learning (C15-C16) is well-established in education literature. The alignment with AP Biology objectives (C73-C74) is documented. However, the manuscript does not provide empirical data comparing learning outcomes with and without EVE, relying instead on cited literature and logical inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C33"
+    ],
+    "result": "EVE is functionally similar to other small automated bioreactors but differs in its hardware, software, and production costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C33 make general comparative statements supported by citations (C27) and elaborated in subsequent claims about specific differences. The functional similarity (C27) is reasonable given the shared morbidostat principles, while the differences (C33) are detailed in claims C34-C53. These are appropriate framing statements for the comparisons that follow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "EVE has been implemented in diverse contexts including college classrooms, research labs at University of Exeter, a French biotech company, and the iGEM competition. It could be used in other educational contexts and clubs to teach interdisciplinary skills.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 describe actual implementations (C92-C95) and potential applications (C89-C90). The documented uses (C92-C95) demonstrate EVE's versatility beyond high school settings. The potential applications (C89-C90) are reasonable extrapolations. However, details about these implementations are limited, and no data on outcomes from these other contexts are provided. The iGEM manual reference (C95) provides some external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "EVE can address research questions about evolutionary repeatability and correlated drug responses. Current limitations include single-drug capability, but multi-drug PCBs are being designed. Hardware modifications for fluorescence detection could enable competition experiments without sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C101 describe potential research applications and future developments. The research applications (C96-C97) are supported by relevant citations but remain speculative as no data are presented. The current limitation (C98) is clearly stated, and planned improvements (C99) are mentioned but not demonstrated. The fluorescence modification (C100-C101) is a reasonable suggestion but entirely speculative. These represent future directions rather than validated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "EVE has limitations including the need for 3D printing (which may restrict use in some classrooms) and more setup than commercial bioreactors (e.g., pump calibration). Future implementations will address these limitations with alternative construction methods and automated solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 honestly acknowledge EVE's limitations. The 3D printing requirement (C102) is a valid accessibility concern, though mitigated by commercial printing services. The setup requirements (C104-C105) are realistic, and the educational value of troubleshooting (C106) is a reasonable perspective. Planned improvements (C103, C107) show awareness of limitations, though no timeline or specific solutions are provided. This transparent discussion of limitations strengthens the manuscript's credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Morbidostats are often too expensive to be used in educational settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C3 states that morbidostats are often too expensive for education, motivating EVE's development. However, no specific cost data for existing morbidostats are provided, making it difficult to evaluate this claim. While the eVOLVER and other systems may be more expensive, quantitative cost comparisons would strengthen this motivating claim. The statement may be accurate but lacks supporting evidence in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

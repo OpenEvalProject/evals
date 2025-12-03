@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C26",
+      "C27",
+      "C82",
+      "C83",
+      "C84",
+      "C90"
+    ],
+    "result": "Background claims establish the known mechanisms of transcriptional regulation in metazoans, including Pol2 pausing, P-TEFb-mediated pause release, the role of histone acetylation, and the composition and function of the super-elongation complex (SEC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C15, C26-C27, and C82-C84, C90 are all supported by citations to established literature and represent accepted knowledge in the field. These provide necessary context for the study's novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior work by the authors showed that CBP/p300 acetylation of H3K18/27 has promoter-specific effects on adenovirus early gene transcription, with E4 showing reduced transcription but maintained PIC assembly when H3K18/27ac is lost, suggesting regulation at the elongation step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by citation to the authors' prior work (Hsu et al., 2018). The inference in C20 that E4 is regulated at elongation is reasonable given that PIC assembly was unaffected while transcription decreased.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "GRO-seq analysis revealed that loss of promoter H3K18/27ac (via DM-E1A expression) caused a 2.5-fold increase in pausing index at the E4 promoter but not at E2early or E3, indicating that H3K18/27ac specifically regulates pause release at E4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by GRO-seq data shown in Figure 1b with three biological replicates. The statistical significance is reported for E4 (p<0.05), and the differential effects across promoters are clearly demonstrated. The inference in C24-C25 logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "ChIP-seq analysis of Pol2 CTD phosphorylation states, CDK9, and NELF at adenovirus early genes showed expected patterns consistent with promoter-proximal pausing, with peaks of Ser5-P, Ser2-P, CDK9, and NELF at pause sites ~40 bp downstream of TSSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by ChIP-seq data in Figure 2a and citations to prior literature establishing expected patterns. The observations are consistent with known mechanisms of Pol2 pausing and elongation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Reduced H3K18/27ac in DM-E1A-expressing cells correlated with decreased association of SEC subunits (CDK9, AF9, ENL) at viral early promoters, while BRD4 association was less affected. This effect was specific to viral promoters, not genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by ChIP-seq data in Figures 2b-c. The specificity to viral promoters (C35) is demonstrated by showing no change in AF9/ENL at human TSSs. The inference in C39 that E1A-CBP/p300 interaction is required for SEC recruitment is reasonable given the correlative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Treatment with the CBP/p300 inhibitor A-485 decreased H3K18/27ac at viral promoters and reduced E2early and E4 pre-mRNA levels but not E3, confirming differential dependence on H3K18/27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by western blot (Figure 3a), ChIP-seq (Figure 3b), and qRT-PCR data (Figure 3c) with appropriate statistical testing. The specificity of A-485 is established by citation (C40), and the differential effects across promoters are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A-485 treatment increased the pausing index at E4 (from 0.79 to 1.13) but not at E2early or E3, and decreased AF9, ENL, and BRD4 association at viral early promoters, demonstrating that CBP/p300 HAT activity is required for SEC recruitment and efficient pause release at E4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by GRO-seq (Figure 4b) and ChIP-seq data (Figure 4a). The pausing index changes are quantified, and the correlation between reduced acetylation, decreased SEC recruitment, and increased pausing is clearly demonstrated. The inference in C50 is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A-485 treatment caused differential effects on H3K18/27ac at promoters versus enhancers: enhancers (especially super-enhancers) showed decreased acetylation, while average promoter acetylation unexpectedly increased, suggesting a homeostatic mechanism maintains promoter H3K18/27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by western blot (Figure 3a) and ChIP-seq data (Figures 5a, 5-supplement 2). The unexpected increase in average promoter acetylation (C54) is clearly shown. The inference of homeostatic mechanisms (C56) is reasonable but speculative; however, the data supporting differential effects at promoters vs enhancers is solid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Genome-wide analysis identified 686 genes (6.8%) with defective pause release (2XPI) and 885 genes (8.8%) with reduced initiation (2XIn) after A-485 treatment. These genes are enriched for developmental functions, associated with super-enhancers, and more dependent on H3K18/27ac than average genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by genome-wide GRO-seq analysis with clear quantitative criteria (>2-fold PI increase, <50% promoter counts). Gene ontology analysis (Figure 5-supplement 3) and distance analysis to super-enhancers (Figure 5c) with statistical testing support the characterization of these gene sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "At 2XPI and 2XIn genes, H3K18/27ac decreased with A-485 treatment (unlike the genome-wide average increase at promoters). H3K9ac remained stable at 2XPI genes but decreased at 2XIn genes, suggesting H3K9ac may be sufficient for initiation but not elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by ChIP-seq data in Figure 6a showing differential effects of A-485 on histone acetylation at these gene subsets. The inference in C65 about H3K9ac sufficiency is reasonable given the differential patterns, though it remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "2XPI and 2XIn genes showed high enrichment of SEC subunits AF9 and ENL that was selectively lost after A-485 treatment, while BRD4 showed less dramatic changes. This indicates these genes have high SEC association that is sensitive to H3K18/27ac levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by ChIP-seq data in Figures 6b-c and Figure 6-supplement 1. The metagene plots clearly show enrichment of AF9/ENL at 2XPI genes that falls to average levels after A-485, while BRD4 changes are more modest. The inference in C68 is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of BRD4 enhancer peaks revealed that 56% are distal (>2.5 kb from TSS), with 84% overlapping H3K27ac. Clustering into A-485-sensitive (7554) and -resistant (6324) peaks showed that H3K9ac decreased only at sensitive peaks, indicating H3K9ac is sufficient for BRD4 association at enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by ChIP-seq data analysis shown in Figure 7a. The clustering approach is reasonable, and the differential behavior of H3K9ac at resistant vs sensitive peaks provides strong correlative evidence for the conclusion in C76, though causality is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C86"
+    ],
+    "result": "Genes near A-485-sensitive BRD4 enhancer peaks showed significantly increased pausing index compared to all active genes, revealing a correlation between BRD4 enhancer association and efficient pause release at nearby promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C86 are supported by analysis shown in Figure 7c and correlative analysis of GRO-seq and ChIP-seq data. The correlation is clearly demonstrated, though the mechanism remains to be established (addressed in speculative claims C87-C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The study establishes that histone H3 N-terminal tail acetylation in the promoter-proximal region regulates Pol2 pause release at approximately 4.3% of active cellular promoters through SEC recruitment, as demonstrated at the HAdV-5 E4 promoter and genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 represent the main conclusions of the study, supported by the combined GRO-seq and ChIP-seq data from both viral and cellular genes (Figures 1-7). The percentage (4.3%) is calculated from the 2XPI genes (686/10,062 active genes minus overlap). The mechanism is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose that the differential sensitivity of promoters vs enhancers to A-485 is due to faster H3K18/27 acetylation rates at promoters, potentially resulting from increased local CBP/p300 concentration via enhancer-promoter interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 are speculative mechanistic explanations for the observed differential effects. While the speculation is reasonable and consistent with enhancer-promoter looping models, no direct evidence for acetylation rates or local CBP/p300 concentration is provided. Alternative explanations (e.g., differential deacetylase activity) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "H3K9ac is sufficient for BRD4 recruitment at enhancers in the absence of H3K18/27ac, based on clustering of A-485-resistant BRD4 peaks that maintain H3K9ac but lose H3K18/27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by ChIP-seq data in Figure 7a showing that A-485-resistant BRD4 peaks maintain H3K9ac while losing H3K18/27ac. However, this is correlative evidence; direct functional demonstration (e.g., with H3K9ac-specific mutations) would strengthen the conclusion of sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose two possible mechanisms for how BRD4 enhancer association affects pause release: direct promoter-enhancer interactions via chromatin looping, or enhancer RNA transcription promoting NELF release at nearby promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 are speculative mechanisms supported by citations to prior literature but not directly tested in this study. Both are plausible explanations for the observed correlation between BRD4 enhancer association and pause release, but distinguishing between them would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "2XPI and 2XIn genes are enriched for TATA boxes in their promoters, consistent with their enrichment for tightly regulated developmental genes that depend on dynamic enhancer H3K18/27ac for transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C91-C92 are supported by motif analysis (Figure 5-supplement 1) and gene ontology data. The correlation between TATA boxes, developmental regulation, and dependence on H3K18/27ac is logical and supported by citation to prior literature (C90) establishing TATA box prevalence in regulated genes.",
+    "result_type": "MINOR"
+  }
+]

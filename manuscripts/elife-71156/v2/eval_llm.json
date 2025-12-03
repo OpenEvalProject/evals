@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Immunopeptidomic analysis of CT26 tumor cells identified 8834 unique peptides, with 5434 peptides (65%) being 7-13mers from 2218 source proteins. The peptides showed typical MHC-I characteristics: 9mers were most abundant (21%), 81% of 9mers bound H2Kd or H2Dd alleles (62% preferring H2Kd), and Gibbs clustering revealed two distinct motif groups matching known H2Kd and H2Dd motifs. These results were comparable to published datasets, confirming high-quality ligandome identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide comprehensive characterization of the immunopeptidomic dataset with multiple orthogonal validation approaches (length distribution, binding prediction, motif analysis, comparison to published data). The convergence of these independent analyses strongly supports the quality and reliability of the identified MHC-I ligandome. Statistical thresholds (5% FDR, rank <2%) and computational tools (NetMHC4.0, Gibbs clustering) are appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C26",
+      "C27"
+    ],
+    "result": "CT26 was selected as the tumor model because it expresses high surface levels of MHC-I (confirmed by flow cytometry), is a widely used immunogenic colon carcinoma model, and is an undifferentiated colon carcinoma induced by the carcinogen NMU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C26, and C27 provide appropriate justification for model selection with experimental validation (C8) and literature support (C26, C27). The rationale is sound for testing the immunopeptidomic pipeline in an established immunogenic model with sufficient MHC-I expression for peptide isolation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Gene Ontology enrichment analysis of MHC-I source proteins showed enrichment in expected biological processes (chromosome organization, DNA repair, ribosome biogenesis, RNA splicing, cytoskeleton organization) and overrepresentation of epigenetic regulators (histones, DNMT1). Cellular component and molecular function analyses confirmed enrichment in nucleosome and chaperone proteins, consistent with known MHC-I ligand sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 demonstrate that the identified peptides derive from expected cellular compartments and protein classes for MHC-I ligands. The GO enrichment analysis is appropriately applied and results align with established knowledge (C9) and prior literature (C11), providing orthogonal validation of the ligandome dataset quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C64"
+    ],
+    "result": "From 26 candidate peptides selected through RNAseq and HEX software analysis, functional characterization by IFN-\u03b3 ELISpot identified six peptides that induced T-cell-specific responses above threshold (\u2265100 spots, 10-fold change vs. controls) in pre-immunized mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C64 describe a clear experimental workflow with defined selection criteria (10-fold threshold, \u2265100 spots). The ELISpot assay is an appropriate functional validation method. However, the manuscript lacks details on sample size (n=3 per group mentioned elsewhere), statistical analysis of ELISpot data, and reproducibility, which would strengthen confidence in the selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Surface plasmon resonance analysis showed that all six selected peptides (polyK-modified) interacted with VALO-mD901 oncolytic adenovirus at equilibrium. At dissociation, peptides 1, 2, 6, and 7 retained the highest number of peptides per viral particle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 present SPR data demonstrating peptide-virus binding interactions. The methodology is appropriate for characterizing binding affinity and retention. Quantitative data on peptides per viral particle is provided (Figure 6C), supporting the selection of peptides for in vivo testing. The dissociation data provides rationale for prioritizing certain peptides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C36",
+      "C61"
+    ],
+    "result": "PeptiCRAd1 and PeptiCRAd2 controlled tumor growth in injected lesions comparably to VALO-mD901 alone. Notably, PeptiCRAd1 showed improved tumor growth control in untreated distant lesions compared to all other groups, demonstrating systemic antitumor immune response and abscopal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C36, and C61 present the primary therapeutic efficacy data. Statistical analysis (two-way ANOVA) supports differences in tumor growth. The abscopal effect in untreated tumors (C17) is the key finding distinguishing PeptiCRAd1 from virus alone. Individual tumor growth curves (Figure 7\u2014figure supplement 1) provide transparency. However, the effect is described as a 'clear trend' (C17) suggesting statistical significance may be marginal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "PeptiCRAd1 treatment increased CD8+/CD4+ T-cell ratio in treated tumors and enhanced CD8+ T-cell infiltration in both treated and untreated lesions. This correlated with upregulation of migratory marker CXCR4 in CD8+ T cells (both tumors) and effector marker CXCR3 in CD8+ T cells (treated tumors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide mechanistic support for the therapeutic efficacy through flow cytometry analysis of tumor-infiltrating lymphocytes. The data show consistent immunological changes correlating with tumor control. Statistical analysis (one-way ANOVA with Tukey's correction) is appropriate. The correlation between immune markers and tumor control strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "PeptiCRAd1 treatment showed a tendency toward increased PD1 expression in CD8+ T cells (suggesting antigen-experienced response), decreased exhausted CD8+ T cells (PD1+TIM3+) in untreated lesions, and modest downregulation of CD4+ T cells in both treated and untreated tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22-C24 describe additional immunological changes but use language indicating weaker effects ('tendency,' 'modest'). The manuscript notes these are trends without statistical significance compared to controls. While these observations may be biologically relevant, they lack the statistical support to be considered definitive findings. The interpretation of PD1 upregulation as 'antigen-experienced' (C22) is reasonable but inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SCA-1 expression in CD44low CD62L+ CD8+ T cells showed a tendency to be upregulated in spleens from PeptiCRAd1-treated mice, suggesting possible generation of T stem cell memory (Tscm) cells, which are desirable for vaccination due to their self-renewal capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C25 describes a trend in SCA-1 expression without statistical significance. Claims C40-C42 provide appropriate background on Tscm cells from literature. However, the data only show a 'tendency' and lack statistical validation. The interpretation is speculative ('suggesting the possible generation'), and no functional characterization of these cells is provided. This remains a hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C65",
+      "C66"
+    ],
+    "result": "VALO-mD901 is a conditionally replicating adenovirus serotype 5 with Ad3 fiber knob modification, 24-bp E1A deletion, and E3 region replaced with CMV promoter driving murine CD40L and OX40L expression. CD40L stimulates innate immunity and OX40L stimulates adaptive immunity, explaining local antitumor activity in injected tumors but lack of efficacy in distant lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C65, and C66 provide detailed characterization of the viral vector with appropriate citation (Yl\u00f6sm\u00e4ki et al., 2021). Claim C35 offers a mechanistic interpretation of the observed local vs. systemic effects based on known functions of CD40L and OX40L. This interpretation is reasonable and supported by the experimental results showing VALO-mD901 alone lacks abscopal effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "AH1 (gp70423-431) is an immunodominant CT26 peptide that elicits variable responses due to suboptimal T-cell activation. The heteroclitic variant AH1-5 (val to ala at position 5) was reported to protect against CT26 challenge in prophylactic settings, but was ineffective against established tumors in this therapeutic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 appropriately benchmark the pipeline against a known positive control. The distinction between prophylactic (Jordan et al., 2010) and therapeutic settings is important and well-articulated. The negative result with AH1-5 (C39) in the therapeutic setting is supported by the experimental data and highlights the challenge of treating established tumors versus prevention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C62"
+    ],
+    "result": "The described pipeline covers all stages of personalized therapeutic cancer vaccine development for the first time, from MHC-I peptide isolation to in silico/in vivo analysis to oncolytic vaccine generation. The results confirmed the feasibility of this pipeline for peptide candidate selection and therapeutic vaccine generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C62 present the overarching conclusion about the pipeline's novelty and feasibility. The experimental results from peptide identification through therapeutic efficacy support this conclusion. However, the claim of being 'first time' (C58) is strong and would benefit from more explicit comparison to prior integrated approaches. The feasibility is demonstrated in one preclinical model, so translation to other contexts requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C69",
+      "C70"
+    ],
+    "result": "The pipeline can be translated to personalized cancer treatment as the OAd can be easily coated with patient-specific tumor peptides. Integration of ligandome and transcriptome analysis with HEX software enables fast peptide selection, capitalizing on preexisting cross-reactive T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59, C69, and C70 propose future clinical applications but are speculative. The 'easy coating' claim (C59) is supported by the PeptiCRAd platform characteristics, but clinical translation faces additional challenges not addressed (manufacturing, regulatory, patient heterogeneity). The benefit of HEX software (C69) and cross-reactive T cells (C70) are reasonable hypotheses supported by citations, but remain unproven in this study since naive mice were used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C57",
+      "C63"
+    ],
+    "result": "TCR degeneracy enables cross-reactivity, allowing single TCRs to recognize multiple antigens. This property allows antiviral memory CD8+ T cells to recognize unrelated viruses. MHC-I peptides homologous to viral peptides are strongly immunogenic. HEX software identifies tumor antigens similar to pathogen antigens to exploit molecular mimicry and cross-reactive T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C57, and C63 establish the conceptual foundation for the HEX software approach with appropriate literature support. The biological principle of TCR cross-reactivity is well-established (C29, C30). The application to cancer vaccines through pathogen mimicry (C57, C63) is supported by recent data. This provides sound rationale for the peptide selection strategy, though experimental validation of cross-reactivity in this study is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ICI therapy unleashes antitumor T-cell responses and activates preexisting immunity in 'hot' tumors with immune infiltration, but response rates vary (40-70% to 10-25%) due to lack of infiltration or immunosuppressive TME in 'cold' tumors. There is urgent need to convert cold to hot tumors. Peptide-based cancer vaccines face challenges in peptide selection criteria and adjuvant use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 establish the clinical context and unmet need motivating this work. The response rate statistics (C45) and characterization of hot/cold tumors (C44) are appropriately cited. The identification of challenges in peptide vaccine development (C47) provides clear rationale for the pipeline. These claims effectively frame the significance of the work within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The ligandome comprises MHC-I/II-bound peptides on cell surfaces, serving as contact points for CD8+ T cells recognizing 8-10 amino acid peptides. Vaccine efficacy relies on peptide choice, which should be immunogenic, tumor-specific, and personalized, though few antigens meet these criteria. Direct MHC-I elution is the most reliable approach, while computational prediction faces challenges due to lack of validated datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 provide comprehensive background on ligandome biology, vaccine design principles, and methodological considerations. These are well-supported by appropriate citations and represent established knowledge in the field. The rationale for choosing direct elution (C54) over computational prediction (C55, C56) is sound and well-justified. This background effectively motivates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "T-VEC (herpes virus encoding GM-CSF) received FDA approval for melanoma treatment. Oncolytic viruses infect and replicate in cancer cells, inducing innate and adaptive immune responses. However, antigen spread following viral burst often generates mainly antiviral rather than specific antitumor T-cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 provide relevant background on oncolytic viruses with appropriate citations. The FDA approval of T-VEC (C31) establishes clinical precedent. The limitation that OVs alone generate primarily antiviral responses (C33) provides clear rationale for combining OVs with tumor peptides in the PeptiCRAd platform. This background effectively motivates the vaccine design strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "PeptiCRAd is a vaccine platform combining an immunogenic oncolytic adenovirus coated with tumor antigen peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 describes the PeptiCRAd platform used throughout the study. This is supported by the experimental data showing peptide coating via electrostatic interactions and references to prior publications. The platform is central to the therapeutic approach and is adequately characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Mass spectrometry proteomics data were deposited to ProteomeXchange/PRIDE (PXD026463). Animal experiments were approved by the University of Helsinki Experimental Animal Committee and Provincial Government of Southern Finland (ESAVI/11895/2019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 document data availability and ethical approvals. Data deposition (C67) supports reproducibility and transparency. Ethical approval (C68) confirms appropriate oversight of animal studies. These are standard requirements appropriately fulfilled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Syngeneic mTECs express most known genes and are the site of T-cell selection to induce central tolerance to MHC peptides coded by their vast transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 provides biological rationale for using mTECs as a reference tissue in the RNAseq analysis. This represents established knowledge about thymic selection and central tolerance. The use of mTECs to identify peptides that might break tolerance is conceptually sound.",
+    "result_type": "MINOR"
+  }
+]

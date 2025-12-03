@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study analyzed DNA methylation (Illumina 450K array) and gene expression (Affymetrix HTA 2.0 array) data from 823 European ancestry children aged 6-11 years from six cohorts in the HELIX project. Blood cell type proportions were estimated using the Houseman algorithm. The analysis paired 13.6M CpG-Gene pairs within a 1 Mb window centered at the transcription start site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16-C20 provide comprehensive methodological details about the study population, molecular assays, and analytical approach. The sample size, data types, quality control procedures, and pairing strategy are clearly documented and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The study identified 39,749 statistically significant autosomal cis eQTMs in children's blood, comprising 21,966 unique CpGs (5.7% of total) and 8,886 unique genes (15.3% of total). Of these, 58.8% showed inverse associations between methylation and expression, with each eGene associated with a median of 2 eCpGs and each eCpG associated with a median of 1 eGene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C25 present the primary findings with specific quantitative results. The multiple testing correction procedure using permutation tests and beta distributions is described in detail in the Methods. The statistics are internally consistent and supported by supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "eCpGs showed higher methylation variability, higher intraclass correlation coefficients (indicating lower technical error), and 60.4% had ICC > 0.4 (reliable measurements). eGenes had higher call rates compared to non-eGenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 characterize the quality metrics of identified eQTMs. These findings are supported by multiple supplementary figures and reference to published reliability metrics (Sugden et al., 2020). The quality assessment strengthens confidence in the primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "87.9% of eQTMs had eCpGs located <250 kb from the eGene's TSS, with a median distance of 1.1 kb. eCpGs were closer to the TSS in inverse eQTMs than positive eQTMs. The median effect size was 0.12 log2 fold change per 0.1 increase in methylation, with 96.3% of eQTMs having effect size <0.5. There was an inverse linear association between eCpG-eGene TSS distance and effect size (p=7.75e-9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 describe the spatial and quantitative characteristics of eQTMs. The findings are supported by Figure 2 and are consistent with prior eQTL studies cited by the authors. The statistical tests are appropriate for the data types analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C4"
+    ],
+    "result": "Mono inverse eCpGs were the most abundant type (36.8%). CpG-Gene pairs annotated to the same Gene Symbol were more likely to be eQTMs (OR=11.90, p<2e-16). However, only 52.8% of eCpGs with comparable annotation were associated with genes matching their Illumina annotation, meaning only around half of eQTM eGenes could be captured through annotation to the closest gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C4 demonstrate that standard annotation approaches (assigning CpGs to the nearest gene) miss approximately half of the true regulatory relationships. This is a key finding supported by detailed analysis of 14,797 comparable eCpGs and has important implications for EWAS interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "eCpGs were enriched for 5'UTRs and gene body positions, while depleted for proximal promoters and 3'UTRs. Inverse eCpGs were specifically enriched for distal promoters (TSS1500) and 5'UTRs, while positive eCpGs were enriched for gene bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 describe the genomic location patterns of eCpGs. These findings are supported by Figure 2\u2014figure supplement 1 and are consistent with known biology of DNA methylation regulation. The differential enrichment patterns between inverse and positive eCpGs provide mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "eCpGs were depleted for CpG islands but enriched for CpG island shores, shelves, and open sea. They were enriched for active chromatin states (enhancers, active transcription regions) and bivalent regulatory states. Only inverse eCpGs were enriched for proximal promoter states, while only positive eCpGs were enriched for repressed Polycomb regions and quiescent regions. eCpGs were enriched for medium methylation levels (0.3-0.7) and depleted for low or high methylation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C51 describe enrichment patterns for regulatory elements. However, the authors acknowledge that these enrichments are substantially affected by CpG probe reliability (ICC). When restricting to reliable probes (Figure 3\u2014figure supplement 1), enrichment patterns change dramatically, particularly for CpG island positions and methylation levels. This suggests some findings may be artifacts of measurement error rather than true biological patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Gene ontology analysis of 5,503 eGenes identified 52 enriched biological process terms (q<0.001), with 50% related to immune responses, followed by cellular (N=16) and metabolic (N=10) processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 present gene set enrichment results that are appropriate for blood tissue. The analysis used standard methods (topGO) with appropriate background correction. The predominance of immune-related terms is expected given the tissue analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "eCpGs were enriched for CpGs previously associated with phenotypic traits and environmental exposures in the EWAS Atlas and EWAS Catalog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 reports enrichment for EWAS-associated CpGs. However, Figure 3\u2014figure supplement 2 shows that this enrichment is substantially reduced when restricting to reliable CpG probes (ICC>0.4), suggesting the enrichment may be partially driven by measurement error bias rather than true biological signal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "eCpGs had higher total additive heritability (median difference 0.31, p<2e-16) and SNP heritability (median difference 0.11, p<2e-16) than non-eCpGs. Both heritability measures increased with the number of eGenes associated with each eCpG (0.025 and 0.026 points per eGene, p<2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 demonstrate genetic influence on eQTMs using published heritability estimates from van Dongen et al. 2016. The findings are supported by Figure 4A-B and remain significant even after restricting to reliable probes, though with reduced effect sizes for total additive heritability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "27.8% of eCpGs had at least one meQTL, with eCpGs enriched for genetic variants (OR=11.06, p<2e-6). Among CpGs with meQTLs, eCpGs were associated with more meQTLs (median 74) than non-eCpGs (median 32). The study identified 1,368,613 SNP-CpG-Gene trios with consistent direction of effect, comprising 40.4% of eQTMs, 38.7% of eCpGs, and 46.1% of eGenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 demonstrate substantial genetic regulation of eQTMs through meQTL and eQTL analyses. The analysis used appropriate statistical methods (MatrixEQTL) with stringent p-value thresholds (p<1e-7) and validated findings from the ARIES dataset in HELIX. The identification of SNP-CpG-Gene trios provides evidence for coordinated genetic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Environmental factors may be more relevant for immune pathways, while genetic factors might be more determinant in regulating metabolic processes in blood cells, based on differential GO-BP enrichment patterns between all eGenes and genetically-controlled eGenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is an interpretation based on comparing GO-BP terms between all eGenes and genetically-controlled eGenes. While the observation is stated, the inference about environmental vs. genetic control is speculative and not directly tested. Alternative explanations (e.g., power differences, tissue-specific effects) are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "eCpGs were enriched for CpGs whose methylation changes from birth to childhood/adolescence in the MeDALL and Epidelta projects. Positive and inverse eCpGs showed stronger enrichment for CpGs with increased and decreased methylation over age, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 demonstrate that eQTMs are enriched for age-variable CpGs using two independent datasets. The directional concordance (positive eCpGs with increasing methylation, inverse eCpGs with decreasing methylation) provides biological plausibility. However, enrichments are reduced when restricting to reliable probes (Figure 5\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C6"
+    ],
+    "result": "57.9% of GTP and 35.3% of MESA adult eQTMs (p<1e-5) were replicated in HELIX children. However, only 13.8% of HELIX child eQTMs were reported in adult cohorts (GTP or MESA) at p<1e-5. Over 90% of age-shared eQTMs showed consistent direction across age groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 and C6 demonstrate limited overlap between child and adult eQTMs. The asymmetric replication rates (higher from adult to child than child to adult) are clearly documented in Figure 5B-C. The authors appropriately discuss multiple potential explanations including methodological differences, statistical power, and true age-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Age-shared eQTMs (4,364 eCpGs, 1,689 eGenes) had higher reliability (ICC), were closer to the TSS, and showed stronger enrichment for meQTLs (OR=20.7) compared to child-specific eQTMs (19,584 eCpGs, 8,429 eGenes; meQTL OR=10.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 characterize differences between age-shared and child-specific eQTMs. The findings are supported by multiple supplementary figures and suggest that age-shared eQTMs represent either persistent regulatory relationships or more easily detected effects due to stronger signals and genetic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The small overlap between adult and child eQTMs has multiple explanations including methodological issues, statistical power, cohort-specific exposures, and cellular composition. DNA methylation and gene expression are known to change with age. Age-shared eCpGs may represent persistent eQTMs or those easier to detect due to stronger effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide interpretation of the age comparison results. The authors appropriately acknowledge multiple potential explanations and cite relevant literature (C81). The alternative interpretations for age-shared eCpGs (C82) are reasonable given the data, though cannot be definitively distinguished.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CpG probes have different measurement error and reliability. CpGs measured with less error are more likely to be found associated with traits in EWAS catalogues. CpG probe reliability depends on DNA methylation level and variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 discuss the impact of measurement error on findings. This is supported by citation to Sugden et al. 2020 and demonstrated throughout the manuscript by comparing results with all probes vs. reliable probes (ICC>0.4). This is an important consideration that affects interpretation of multiple results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C86"
+    ],
+    "result": "The complete eQTM catalogue is publicly available at https://helixomics.isglobal.org/ and Dryad, reporting all 13.6M CpG-gene pairs tested (not just significant associations), which differs from previous blood eQTM catalogues that only reported pairs passing p-value thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C86 describe data availability and a key strength of the study. Reporting all tested pairs enables replication, meta-analysis, and reduces publication bias. The URLs and DOI are provided for data access.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The causal relationship between DNA methylation and gene expression cannot be definitively inferred from this study. Evidence suggests DNA methylation could be a consequence rather than a cause of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 appropriately acknowledge a fundamental limitation of the observational study design. The authors correctly note that the directionality of causation cannot be determined from correlation analyses and cite relevant literature suggesting reverse causation is possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The catalogue has limitations: limited array resolution covering only a fraction of CpG-Gene pairs; exclusion of sex chromosomes; testing only cis effects due to power limitations; potential over-adjustment for blood cell composition; and limited detection of cell-type-specific eQTMs in bulk data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 enumerate study limitations that are appropriately acknowledged by the authors. These are inherent constraints of the study design and available technologies. The authors provide reasonable justifications for their choices while acknowledging the trade-offs.",
+    "result_type": "MINOR"
+  }
+]

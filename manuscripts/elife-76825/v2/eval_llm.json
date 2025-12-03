@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C18",
+      "C19",
+      "C20",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors theoretically demonstrate that EGFR signaling dynamics undergoes a sub-critical pitchfork bifurcation (PB) that generates polarized states, and that organization at criticality near a saddle-node bifurcation (SN_PB) gives rise to dynamically metastable 'ghost' states enabling transient memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14, C18-C20, C93-C94 collectively establish the theoretical framework through dynamical systems theory, weakly nonlinear stability analysis, and bifurcation analysis (Figure 1\u2014figure supplement 1C). The mathematical derivations in the Methods section provide rigorous proof of the bifurcation conditions, and the theoretical predictions are consistent with established dynamical systems principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Numerical simulations demonstrate that cells organized at criticality exhibit rapid EGFR polarization in response to gradients, maintain polarization transiently after signal removal through state-space trapping in a 'ghost' state, and can adapt to subsequent signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 are supported by simulation results shown in Figures 1D-H. The simulations demonstrate the predicted behavior including transient memory (~40 min), state-space trapping with two characteristic time-scales, and adaptive responses to sequential gradients. The simulation framework appropriately implements the theoretical model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C37",
+      "C39"
+    ],
+    "result": "Experimental live-cell imaging of MCF7 cells shows that EGFR phosphorylation polarization persists approximately 40 min after gradient removal, with state-space trajectory analysis revealing transient trapping consistent with a 'ghost' state mechanism rather than slow dephosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C37, C39 are supported by experimental data in Figure 2. The ~40 min memory duration matches theoretical predictions, state-space reconstruction using Takens's delay embedding shows trajectory trapping (Figure 2F), and Lapatinib experiments (Figure 2G, Figure 2\u2014figure supplement 2) demonstrate that memory cannot be explained by dephosphorylation alone. The experimental design is appropriate with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Memory in polarized EGFR phosphorylation is directly linked to memory in polarized cell shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by comparing EGFR phosphorylation memory duration (~40 min, Figure 2E) with cell morphology memory duration (~40 min, Figure 2H). The temporal correspondence between receptor signaling and morphological changes, along with the loss of both under Lapatinib treatment (Figure 2I), establishes the direct link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Cell migration experiments demonstrate that MCF10A cells maintain directional migration for approximately 50 min after gradient removal, with significantly higher directionality during and after gradient stimulation compared to uniform or no stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by quantitative migration tracking data in Figure 3A-C. Statistical analysis shows significantly higher directionality during gradient (p\u22640.001), maintained directionality after gradient removal, and KDE analysis demonstrates distributions approach baseline only ~50 min after removal. Sample sizes are adequate (n=23-297 cells) with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Migration patterns can be modeled as random walk (RW) without stimulus, persistent random walk (PRW) with uniform stimulus, and persistent biased random walk (PBRW) with gradient, with extended bias duration (PB(t)RW) necessary to reproduce transient persistent motion after gradient removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by fitting experimental migration data to modified Ornstein-Uhlenbeck processes (Figure 3D-F). The modeling appropriately extracts parameters (\u03c4, D, b) from MSD and VACF analysis with good fits (R\u00b2>0.97), and synthetic trajectories reproduce experimental observations. The necessity of extended bias duration is demonstrated by comparison of different models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Lapatinib treatment reduces memory in directional migration to approximately 25 min compared to approximately 90 min without treatment, with the difference attributed to cytoskeletal memory, yielding approximately 50 min memory from EGFR phosphorylation alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by single-cell migration analysis with and without Lapatinib (Figure 3\u2014figure supplement 3). The quantification from single-cell cos\u03b8 profiles shows clear differences in memory duration. The calculation accounting for cytoskeletal contribution is reasonable and consistent with EGFR phosphorylation memory measured directly (~40-50 min, Figure 2E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Simulations predict that cells organized at criticality can integrate sequential signals when disruptions are shorter than memory duration, maintain robust migration during disruptions, and rapidly adapt to signals from opposite directions, while organization in stable polarized states hinders adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C64-C65 are supported by simulation results in Figure 4B and Figure 4\u2014figure supplements 1-2. The simulations systematically test different signal sequences and system organizations, demonstrating the predicted behaviors. The comparison between critical and stable polarized organizations clearly shows the importance of criticality for adaptive navigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Experimental validation with sequential gradients shows MCF10A cells maintain directional migration during signal disruptions, adapt to new signals from the same or opposite directions, and establish transient memory of each signal, demonstrating molecular working memory for navigation in changing gradient fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by experimental data in Figure 4C-E. KDE analysis shows statistical similarity between migration during gradients and disruption intervals, rapid adaptation to reversed gradients (~10 min), and transient memory of the final signal (~20 min). The experimental results quantitatively match simulation predictions, validating the working memory mechanism. Sample size (n=12, N=5) is adequate with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Simulations with simultaneous gradients from opposite sides show that cells organized at criticality can resolve competing signals by polarizing toward the higher amplitude gradient and maintain transient memory, while stable polarized organization hinders signal resolution and migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by simulation results in Figure 4\u2014figure supplement 2. The simulations demonstrate differential responses based on system organization, with critical organization enabling signal integration and stable organization preventing effective migration. This supports the general conclusion about the importance of critical organization for complex cellular behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Single cells utilize a molecular mechanism akin to working memory, realized through dynamically metastable 'ghost' states at a unique dynamical transition, enabling both persistent directional migration when signals are disrupted and rapid adaptation to signal localization changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C7-C9 represent the main findings synthesized from the theoretical framework (C7-C9) and experimental validation (C1-C3). These claims are supported by the convergence of theoretical predictions, simulations, and experimental data across Figures 1-4. The mechanism is demonstrated at multiple levels: molecular (EGFR phosphorylation), cellular (morphology), and behavioral (migration).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Simulations show that organization in stable polarized states leads to permanent memory preventing adaptation, while organization in homogeneous symmetric states renders cells insensitive to signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by simulation results in Figure 1\u2014figure supplement 1F-H. These simulations demonstrate the limitations of non-critical organizations, providing important controls that highlight the unique properties of critical organization. The results are consistent with the theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Receptor concentration at the plasma membrane regulates organization at criticality, with optimal receptor amounts balancing robust response and adaptation, and cell-to-cell variability in receptor concentration likely explaining variability in memory duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C84-C86 are supported by previous work (C15, citations to Stanoev et al. 2018, 2020) and theoretical analysis in this study. The bifurcation diagram (Figure 1\u2014figure supplement 1C) shows how receptor concentration determines system organization. The interpretation of experimental variability (Figure 2E, range 4-159 min) as resulting from receptor concentration variability is reasonable and consistent with the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The molecular working memory mechanism, realized through prolonged polarized EGFR phosphorylation and dynamically metastable 'ghost' states emerging at criticality, provides a crucial bridge between rapid receptor events and long-range migration, representing an emergent feature of receptor networks with broad biological relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C80-C83, C89-C91 synthesize the main conclusions in the Discussion. These claims are well-supported by the combined theoretical and experimental evidence presented throughout the manuscript. The ~40-50 min time-scale (C83) is consistently observed across multiple experimental approaches. The broader implications (C89-C90) are reasonable extrapolations supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Previous work has shown that diverse cell types maintain orientation when signals are disrupted and can adapt to competing signals, but existing models cannot account for both behaviors simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 accurately summarize prior work with appropriate citations. The critical assessment of existing models (C6) is supported by the authors' theoretical analysis and comparison with their own model. This provides important context for the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Previous models of memory in directed migration relied on bistable dynamics with finely tuned thresholds or steady-state descriptions, failing to identify molecular memory elements or account for rapid adaptation to signal changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 provide critical assessment of prior models with appropriate citations (Skoge et al. 2014; Levine et al. 2002; Mori et al. 2008; etc.). The critique is substantiated by the authors' theoretical analysis showing the limitations of steady-state descriptions and the advantages of their dynamical approach. This establishes the novelty and significance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Higher receptor numbers at the plasma membrane counterintuitively lead to permanent memory of initially encountered signals, limiting cellular responsiveness to subsequent signal changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by simulations showing that higher EGFR concentrations shift the system to stable polarized states (Figure 1\u2014figure supplement 1C, F), resulting in permanent memory and inability to adapt to new signals. This counterintuitive prediction is well-supported by the theoretical framework and simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Polarized EGFR signaling leads to reorganization of cortical actomyosin cytoskeleton by regulating Rho GTPase family members, inducing cell shape changes and migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by established knowledge with appropriate citations (Chiasson-MacKenzie and McClatchey, 2018; Ridley and Hall, 1992). This provides the mechanistic link between EGFR signaling and cell morphology/migration that is central to the study. The claim is consistent with the experimental observations of coordinated changes in EGFR phosphorylation and cell shape.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Dynamic memory enabling temporal maintenance of previous signal information while retaining responsiveness to upcoming signals is described as working memory in neuronal networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 accurately defines working memory with appropriate citation (Atkinson and Shiffrin, 1968). This provides the conceptual framework for interpreting the cellular memory mechanism as analogous to neuronal working memory, which is a key conceptual contribution of the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "MCF7 and MCF10A cells were cultured under standard conditions, authenticated by STR analysis, and regularly tested for mycoplasma contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 describe standard cell culture methods with appropriate quality controls. Cell line authentication and mycoplasma testing are important quality control measures that support the reliability of the experimental results. The methods are clearly described and appropriate.",
+    "result_type": "MINOR"
+  }
+]

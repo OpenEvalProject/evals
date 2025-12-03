@@ -1,0 +1,2083 @@
+{
+  "submission": {
+    "id": "98e38d86-1ca2-445d-b6c5-44fe976f394c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:31:57.905148Z",
+    "updated_at": "2025-12-03T19:31:57.905148Z"
+  },
+  "content": [
+    {
+      "id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "submission_id": "98e38d86-1ca2-445d-b6c5-44fe976f394c",
+      "content_type": "manuscript",
+      "content_text": "# Hepatic lipid overload triggers biliary epithelial cell activation via E2Fs\n\n## Authors\n\n- Ece Yildiz<sup>1</sup>\n- Gaby El Alam<sup>2</sup>\n- Alessia Perino<sup>1</sup> ([ORCID: 0000-0002-5434-3266](https://orcid.org/0000-0002-5434-3266))\n- Antoine Jalil<sup>1</sup>\n- Pierre-Damien Denechaud<sup>3</sup> ([ORCID: 0000-0003-3502-4814](https://orcid.org/0000-0003-3502-4814))\n- Katharina Huber<sup>3</sup>\n- Lluis Fajas<sup>3</sup> ([ORCID: 0000-0002-1283-9503](https://orcid.org/0000-0002-1283-9503))\n- Johan Auwerx<sup>2</sup>\n- Giovanni Sorrentino<sup>1</sup>\n- Kristina Schoonjans<sup>1</sup> ([ORCID: 0000-0003-1247-4265](https://orcid.org/0000-0003-1247-4265)) \u2020\n\n### Affiliations\n\n1. Laboratory of Metabolic Signaling, Institute of Bioengineering, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))\n2. Laboratory of Integrative Systems Physiology, Institute of Bioengineering, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))\n3. Center for Integrative Genomics, Universit\u00e9 de Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))\n4. INSERM, Occitanie Montpellier France ([ROR:03fkrcm40](https://ror.org/03fkrcm40))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring severe or chronic hepatic injury, biliary epithelial cells (BECs) undergo rapid activation into proliferating progenitors, a crucial step required to establish a regenerative process known as ductular reaction (DR). While DR is a hallmark of chronic liver diseases, including advanced stages of non-alcoholic fatty liver disease (NAFLD), the early events underlying BEC activation are largely unknown. Here, we demonstrate that BECs readily accumulate lipids during high-fat diet feeding in mice and upon fatty acid treatment in BEC-derived organoids. Lipid overload induces metabolic rewiring to support the conversion of adult cholangiocytes into reactive BECs. Mechanistically, we found that lipid overload activates the E2F transcription factors in BECs, which drive cell cycle progression while promoting glycolytic metabolism. These findings demonstrate that fat overload is sufficient to reprogram BECs into progenitor cells in the early stages of NAFLD and provide new insights into the mechanistic basis of this process, revealing unexpected connections between lipid metabolism, stemness, and regeneration.\n\n## Introduction\n\nUnder physiological conditions, the hepatic epithelium, composed of hepatocytes and BECs (or cholangiocytes), is non-proliferative. Yet upon injury, these two cell types are capable of rapidly changing their phenotype from quiescent to proliferative, contributing to the prompt restoration of damaged tissue (Gadd et al., 2020; Michalopoulos, 2014; Miyajima et al., 2014; Yanger and Stanger, 2011). However, in chronic liver injury, characterized by impaired hepatocyte replication, BECs weigh-in and serve as the cell source for regenerative cellular expansion through the DR process (Choi et al., 2014; Deng et al., 2018; Espa\u00f1ol-Su\u00f1er et al., 2012; Huch et al., 2013; Lu et al., 2015; Raven et al., 2017; Rodrigo-Torres et al., 2014; Russell et al., 2019).\n\nThe molecular basis by which BECs expand during the DR has been extensively studied in models of chemical biliary damage and portal fibrosis using the chemical 3,5-diethoxycarbonyl-1,4-dihydrocollidine (DDC). Several signaling pathways involving YAP (Meyer et al., 2020; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019), mTORC1 (Planas-Paz et al., 2019), TET1-mediated hydroxymethylation (Aloia et al., 2019) and NCAM1 (Tsuchiya et al., 2014) have been reported to drive this process. Importantly, DR has also been observed in late-stage NAFLD patients with fibrosis and portal inflammation (Gadd et al., 2014; Sato et al., 2019; Sorrentino et al., 2005). NAFLD, one of the most common chronic diseases, initiates with increased lipid accumulation, a stage called steatosis (Paschos and Paletas, 2009). This pathology progresses into inflammation and fibrosis that can cause cirrhosis and hepatocellular carcinoma, which are the most frequent liver transplantation indications (Byrne and Targher, 2015). YAP has been found to be activated in BECs in fibrotic livers but not in steatosis (Machado et al., 2015), suggesting that YAP activation is necessary to support DR in the late fibrotic NAFLD stages, and thus, leaving the early molecular mechanisms of BEC activation, which precede the onset of the DR, unexplored.\n\nBEC-derived organoids (BEC-organoids) can be established from intrahepatic bile duct progenitors and can proliferate, representing a promising in vitro approach to study regenerative mechanisms and therapies (Huch et al., 2015; Huch et al., 2013; Li et al., 2017; Okabe et al., 2009; Shin et al., 2011; Sorrentino et al., 2020). These self-renewing bi-potent organoids express biliary progenitor markers and are capable of differentiating into functional cholangiocyte- and hepatocyte-like lineages in specific differentiation media, which can engraft and repair bile ducts (Hallett et al., 2022; Sampaziotis et al., 2021) and improve liver function when transplanted into a mouse with liver disease (Huch et al., 2015; Huch et al., 2013; Li et al., 2017).\n\nHere, we used BEC-organoids and BECs isolated from chow diet (CD)- or high-fat diet (HFD)-fed mice and reported that they are affected by acute and chronic lipid overload, one of the initial steps of NAFLD. Lipid accumulation turns BECs from quiescent to proliferative cells, the earliest step of a DR, and promotes their expansion through the E2F transcription factors and the concomitant induction of glycolysis. These observations hence attribute a pivotal role to E2Fs, regulators of cell cycle and metabolism, in priming BEC activation during the early stages of NAFLD.\n\n## Results\n\n### BECs and BEC-organoids efficiently accumulate lipids in vivo and in vitro\n\nTo gain insight into how chronic lipid exposure, which induces liver steatosis, affects biliary progenitor function in vitro, we incubated single BECs with a mixture of oleic acid (OA) and palmitic acid (PA) (the fatty acid (FA) mix) \u2013 the two most abundant FAs found in livers of NAFLD patients (Araya et al., 2004), for 7 days and allowed BEC-organoid formation (Figure 1A). Surprisingly, we observed that BEC-organoids efficiently accumulated lipid droplets in a dose-dependent manner (Figure 1B), and this process did not affect organoid viability (Figure 1C\u2013D). To investigate how cells adapt their metabolism to lipid overload, we monitored the expression of several genes involved in lipid metabolism, including Scd1 (de novo lipogenesis) (Figure 1E), Hmgcs2 (ketogenesis), Pdk4 (inhibition of pyruvate oxidation), and Aldh1a1 (prevention against lipid peroxidation products) (Figure 1F) and found it to be affected by FA addition. These results suggest that BEC organoids actively reprogram their metabolism to cope with aberrant lipid overload.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81926/elife-81926-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic depicting fatty acid (FA) treatment of BEC-organoids in vitro. (B) Representative bright field and immunofluorescence (IF) images of lipids (BODIPY) in control (BSA) and FA-treated organoids. Close-up IF images were digitally zoomed in four times. n=3. (C) Cell-titer Glo and Caspase 3/7 activity measurement for viability and apoptosis detection relative to panel A. n=3. (D) Representative Nucgreen Dead 488 staining as composite images from bright field and fluorescent microscopy. n=3. (E\u2013F) Quantification of Scd1 (E) and Hmgcs2, Pdk4, and Aldh1a1 (F) mRNA in control (BSA) and FA-treated organoids. n=3. (G) Schematic depicting chow diet (CD) and high-fat diet (HFD) feeding in vivo. (H) Representative images for co-staining of BODIPY and PANCK, relative to panel G. Close-up IF images were digitally zoomed in four times. n=3. (I) Representative quantitative plots of the percentage (left) and quantification (right) of BODIPY staining in EPCAM+ BECs isolated from the liver of C57BL/6 J mice fed CD or HFD for 15 weeks. n=5. Data are shown as mean \u00b1 SEM. Absence of stars or ns, not significant (p>0.05); *p<0.05; **p<0.01, ****p<0.0001; one-way ANOVA with Dunnett\u2019s test (C), Fisher\u2019s LSD test (E, F), and unpaired, two-tailed Student\u2019s t-test (I) were used. PV, portal vein. Scale bars, 200 \u03bcm (B - bright field), 100 \u03bcm (B - IF, D), and 10 \u03bcm (H).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81926/elife-81926-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Scheme depicting bovine serum albumin (BSA) or fatty acid (FA) mix treatment for already grown BEC-organoids for 4 days. (B) Representative bright field and immunofluorescence (IF) images of lipids (BODIPY) and ACTIN co-staining, relative to panel A. n=4. (C) Measurement of triglyceride concentration upon FA mix treatment relative to panel A, normalized by protein amount. n=4. (D) Cell-titer Glo measurement for viability detection relative to panel A. n=4. (E) Representative hematoxylin and eosin (H&E) (top) and picrosirius red (bottom) staining of liver sections from C57BL/6 J mice fed chow diet (CD) or high-fat diet (HFD) for 15 weeks. The bar graph represents the body weight of the mice at the end of the experiment. n=10. (F) Representative Oil Red O staining, relative to panel E. n=8. (G\u2013H) Representative cleaved caspase three staining (G) and quantification of apoptotic cells in bile ducts (H), relative to panel E. n=3. (I) Representative PANCK staining (left) and magnification (right), relative to panel E. n=5. (L) Flow cytometry gating strategy for analysis of BECs: individual cells were sequentially gated based on cell size (FSC-A versus SSC-A) and singlets. BECs were then selected based on EPCAM positivity after excluding leukocytes (CD45+), myeloid cells (CD11b+), and endothelial cells (CD31+), yielding a population of single CD45-/CD11b-/ CD31-/EPCAM+ BECs. Data are shown as mean \u00b1 SEM. Absence of stars or ns, not significant (p>0.05); *p<0.05; ***p<0.001; one-way ANOVA with Dunnet\u2019s test (C, D) or unpaired, two-tailed Student\u2019s t-test (E) were used. PV, portal vein. Arrowheads mark bile ducts. Scale bars, 100 \u03bcm (B, E, I - zoom out), 50 \u03bcm (G - IF), and 20 \u03bcm (F, G - bright field, I - zoom in).\n\nTo determine whether the observed phenotype was preserved in fully formed organoids, we treated already established BEC-organoids with the FA mix for 4 days (Figure 1\u2014figure supplement 1A). In line with our previous observations, BODIPY staining (Figure 1\u2014figure supplement 1B), and triglyceride (TG) quantification (Figure 1\u2014figure supplement 1C) showed a pronounced increase in lipid accumulation after 4 days, without affecting cell viability (Figure 1\u2014figure supplement 1D).\n\nTo assess whether chronic lipid exposure affects BECs in vivo, we fed C57BL/6 J mice for 15 weeks with CD or HFD (Figure 1G) and analyzed their bile ducts. As expected, HFD-fed mice gained weight and developed liver steatosis, but no apparent fibrosis (Figure 1\u2014figure supplement 1E). Of note, HFD-feeding led to an accumulation of lipid droplets in the periportal zone (Figure 1\u2014figure supplement 1F) and within bile ducts, as reflected by the localization of BODIPY signal in PANCK (BEC marker) positive cells (Figure 1H), without inducing epithelial damage (Figure 1\u2014figure supplement 1G\u2013I). Moreover, flow cytometry analysis of BECs stained with EPCAM, a pan-BEC marker (Aloia et al., 2019; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019) and BODIPY confirmed that these cells are able to store lipids upon HFD feeding (Figure 1I and Figure 1\u2014figure supplement 1L). Together, these in vitro and in vivo results demonstrate that BECs accumulate lipids upon chronic FA exposure, raising the question of the functional consequences of this previously unrecognized event on BEC behavior.\n\n### HFD feeding promotes BEC activation and increases organoid formation capacity\n\nTo characterize in vivo the impact of chronic lipid overload on BECs at the molecular level, we isolated EPCAM+ BECs from livers of CD/HFD-fed mice by fluorescence-activated cell sorting (FACS) (Figure 2A and Figure 2\u2014figure supplement 1A) and performed RNA sequencing (RNA-seq). Analysis of these data revealed a diet-dependent clustering in Principal Component Analysis (Figure 2\u2014figure supplement 1B), indicating that HFD feeding induces considerable transcriptional changes in BECs in vivo. Differential expression analysis further revealed a total of 495 significantly changed genes, 121 upregulated and 374 downregulated (Figure 2\u2014figure supplement 1C and Supplementary file 1). At the same time, HFD promoted the upregulation of Ncam1 (Figure 2\u2014figure supplement 1D), a well-established mediator of BEC activation. Consistent with the absence of fibrosis and biliary epithelial damage, canonical makers of the DR (Manco et al., 2019; Sato et al., 2019; Tsuchiya et al., 2014) were not changed in EPCAM+ BECs isolated from livers of HFD-fed mice (Figure 2\u2014figure supplement 1E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81926/elife-81926-fig2-v2.jpg)\n\n**Figure 2.:** (A) Scheme depicting the isolation of EPCAM+ BECs from CD- and HFD-fed mice by fluorescence-activated cell sorting (FACS). (B) Gene set enrichment analysis (GSEA) of Gene Ontology (GO) terms. Top 15 upregulated biological processes (BP), ordered by normalized enrichment score (NES). q-value: false discovery rate adjusted p-values. (C\u2013F) Representative co-staining images (C, E) and quantification (D, F) of BECs stained for OPN and Ki67 (C\u2013D), or OPN and EdU (E\u2013F) in livers of CD/HFD-fed mice. n=10 for Ki67 and n=5 for EdU. (G) Representative quantitative plots of the percentage (left) and quantification (right) of EdU+ EPCAM+ BECs, relative to panel A. n=5. (H) Schematic depicting BEC-organoid formation in vitro from CD/HFD-fed mouse livers. (I) Images of organoid colonies formed 6 days after seeding and quantification of organoids per well. n=5. Violin graphs depict the distribution of data points i.e the width of the shaded area represents the proportion of data located there. Other data are shown as mean \u00b1 SEM. **p<0.01; ****p<0.0001; unpaired, two-tailed Student\u2019s t-test was used. PV, portal vein. Arrowheads mark bile ducts. Scale bars, 20 \u03bcm (C, E), 200 \u03bcm (I).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81926/elife-81926-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Fluorescence-activated cell sorting (FACS) gating strategy for isolation of CD45\u2212/CD11b\u2212/CD31\u2212/EPCAM+ BECs: individual cells were sequentially gated based on cell size (FSC-A versus SSC-A) and singlets. BECs were then selected based on EPCAM positivity after excluding leukocytes (CD45+), myeloid cells (CD11b+), and endothelial cells (CD31+), yielding a population of single CD45-/CD11b-/ CD31-/EPCAM+ BECs. (B) Principal component analysis (PCA) of mRNAs measured in EPCAM+ BECs from livers of mice fed chow diet (CD) or high-fat diet (HFD) by RNA-seq. n=5 for CD, n=7 for HFD. (C) Volcano plot of HFD vs. CD differential analysis. Top 20 differentially expressed genes were labeled. Blue dots represent downregulated genes (log2(FC) < \u20131 & adj. p-value <0.05). Red dots represent upregulated genes (log2(FC) >1 & adj. p-value <0.05). Gray dots represent genes not changing significantly. (D\u2013E) Box plots representing the differential gene expression of Ncam1 (D) and well-established markers of the DR signature (E). n=5 for CD, n=7 for HFD. The Y-axis depicts log2(cpm +1) values. (F) Gene set enrichment analysis (GSEA) of KEGG terms. Top 15 enriched pathways (sorted by q-value). q-value: false discovery rate adjusted p-values. NES: normalized enrichment score. Data are summarized in boxplots. Absence of stars or ns, not significant (p>0.05); **p<0.01; unpaired, two-tailed Student\u2019s t-test (D, E) was used.\n\nTo further explore the transcriptional changes, we performed gene set enrichment analysis (GSEA) on Gene Ontology (GO) terms (Figure 2B) and KEGG (Figure 2\u2014figure supplement 1F) pathways and identified cell proliferation, the most prevalent early feature of BEC activation (Sato et al., 2019) as the major process induced in these cells upon HFD feeding. Expansion of the reactive BECs requires detachment from their niche and invasion of the parenchyma toward the damaged hepatic area. This process is made possible by reorganizing the extracellular matrix (ECM) and reducing focal adhesion, effectively downregulated in EPCAM+ BECs upon HFD (Figure 2B and Figure 2\u2014figure supplement 1F).\n\nTo validate the RNA-seq data, we monitored the activation of BECs in vivo by measuring the number of proliferating BECs in the portal region of the livers of mice fed either CD or HFD (Figure 2C\u2013D). Of note, we found that HFD feeding was sufficient to induce a marked increase in the number of active BECs (i.e. Ki67+/OPN+ cells- Figure 2C\u2013D). Similar results were observed in two independent cohorts of mice challenged with HFD and injected with EdU either to track proliferating cells by immunofluorescence (Figure 2E\u2013F) or to quantify by flow cytometry the amount of EPCAM+/EdU+ BECs in the liver (Figure 2G), confirming that chronic lipid exposure stimulates the appearance of reactive BECs within the bile ducts.\n\nThe efficiency of BECs to generate organoids in vitro has been shown to mirror their activation status (Aloia et al., 2019). To functionally assess the impact of lipid overload on this process, we measured the organoid-forming capacity of isolated BECs, as a read-out of their regenerative potential. To this aim, we quantified the organoid formation efficiency of BECs isolated from CD- and HFD-fed mouse livers (Figure 2H). Strikingly, we observed that HFD-derived BECs were significantly more efficient in generating organoids than their CD counterparts (Figure 2I). Altogether, these results demonstrate that HFD feeding is sufficient to induce, in vivo, the exit of BECs from a quiescent state and the acquisition of both proliferative and pro-regenerative features.\n\n### HFD feeding initiates BEC activation via E2Fs\n\nTo understand whether the mechanisms underlying BEC activation upon HFD in vivo involve canonical processes by which BECs expand during the DR in chronically damaged livers, we compared the transcriptional profile of BECs upon HFD with those of DDC-activated BECs (Pepe-Mooney et al., 2019; GSE125688). We identified the most pronounced changes shared between HFD and DDC samples by overlapping separate over-representation enrichment analyses (Supplementary file 2). Cell division, mitosis, and chromosome segregation were the shared enriched pathways for upregulated genes in HFD and DDC samples (Figure 3A), while ECM organization was the shared enriched pathway for the downregulated genes in HFD and DDC conditions (Figure 3\u2014figure supplement 1A). We concluded that the mechanisms of BEC activation induced by lipid overload partially overlap with those by which BECs expand during the DR with biliary epithelial damage.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81926/elife-81926-fig3-v2.jpg)\n\n**Figure 3.:** (A) Over-representation analysis results. Top 13 enriched biological processes (BP) upon HFD (own data) and DDC (GSE125688) treatment. q-value: false discovery rate adjusted p-values, counts: number of found genes within a given gene set. (B\u2013C) Enriched transcription factors (TFs) of upregulated genes identified by over-representation analysis in HFD (own data) and DDC (GSE125688) treatment (B), and during the process of organoid formation from single BECs (Organoids vs. T0) (GSE123133) (C). Asterisk (*) marks TFs of the \u2018TF_ZHAO\u2019 gene set. (D) Schematic depicting in vivo E2F1 analysis. (E\u2013F) Representative images of PANCK/Ki67 co-staining in livers of E2f1+/+ and E2f1-/- mice fed with chow diet (CD) or HFD (E) and quantification of proliferative BECs in the livers of the indicated mice (F). For CD, n=5 for E2f1+/+ and E2f1-/-. For HFD, n=7 for E2f1+/+, and n=8 for E2f1-/-. Violin graphs depict the distribution of data points i.e., the width of the shaded area represents the proportion of data located there. ns, not significant; **p<0.01; two-way ANOVA with Tukey\u2019s test was used. PV, portal vein. Arrowheads mark bile ducts. Scale bars, 20 \u03bcm (E).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81926/elife-81926-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Over-representation analysis results. Top 15 enriched biological processes (BP) upon HFD (own data) and DDC (GSE125688) treatment in BECs. q-value: false discovery rate adjusted p-values, counts: number of found genes within a given gene set. (B) Heatmap of E2F1-4 target genes from transcription factor (TF) gene sets. Genes with absolute fold change lower than 0.5 were not shown. FC = fold change. (C) GO over-representation analysis of upregulated biological processes (BP) during the process of organoid formation from single BECs (Organoids vs. T0) (GSE123133). (D) Quantification of E2f1 mRNA in EPCAM+ BECs from livers of C57BL/6 J HFD-fed mice. BECs were isolated and treated with a pool of siRNAs specific for E2f1 or with Scrambled siRNA (control). n=3. (E) Proliferation kinetics over 6 days (expressed as FC over day 0), relative to D. n=15 for Scrambled, n=12 for E2f1. Data are shown as mean \u00b1 SEM. *p<0.05; unpaired, two-tailed Student\u2019s t-test (D), and mixed-effect analysis with Sidak\u2019s (E), and were used.\n\nOf note, a more detailed analysis of DDC- and HFD-derived BECs, revealed the concomitant enrichment of four overlapping transcription factor (TF) gene sets, E2F1-4 (Figure 3B), and their target genes (Figure 3\u2014figure supplement 1B), which have not been linked to BEC activation or DR previously. Moreover, we identified an enrichment of E2Fs (Figure 3C and Supplementary file 2) and cell division pathway (Figure 3\u2014figure supplement 1C) as the most upregulated genes in proliferating BEC-organoids, further corroborating the role of E2Fs in these two in vitro (Aloia et al., 2019) and in vivo (Pepe-Mooney et al., 2019) DR models.\n\nE2Fs are a large family of TFs with complex functions in cell cycle progression, DNA replication, repair, and G2/M checkpoints (Dimova and Dyson, 2005; Dyson, 1998; Dyson, 2016; Ren et al., 2002). Therefore, we hypothesized that the activation of E2Fs might represent an early event in the process of BEC activation, which is necessary for exiting the quiescent state and promoting BEC expansion. To test this hypothesis, we focused on E2F1, as it was the most enriched TF in our analysis, and assessed its role in BECs by feeding E2f1+/+ and E2f1-/- mice with HFD (Figure 3D). Remarkably, E2f1-/- mice were refractory to BEC activation induced by lipid overload upon HFD, as opposed to E2f1+/+ mice (Figure 3E\u2013F). In addition, silencing of E2F1 in EPCAM+ BECs from livers of C57BL/6 J HFD-fed mice (Figure 3\u2014figure supplement 1D) reduced the capacity to form organoids in vitro (Figure 3\u2014figure supplement 1E). These results demonstrate a previously unrecognized role of E2F1 in controlling BEC activation during HFD-induced hepatic steatosis in vivo and support a pivotal role of this transcription factor in controlling BEC expansion.\n\n### E2Fs promote BEC expansion by upregulating glycolysis\n\nThe exit of terminally-differentiated cells from their quiescent state requires both energy and building block availability to support cell proliferation. Proliferative cells, therefore, reprogram their glucose metabolism to meet their increased need for biomass and energy (Vander Heiden et al., 2009). Supporting this notion, our interrogation of in vitro BEC-organoid formation dataset (Aloia et al., 2019) revealed the enrichment of purine and pyrimidine metabolism, as well as the pentose-phosphate pathway, which is tightly connected to glycolysis (Figure 4\u2014figure supplement 1A). In line with these findings, a substrate oxidation test in BEC-organoids revealed a preference for glucose, as reflected by the decrease in maximal respiration, when UK5099, a mitochondrial pyruvate carrier inhibitor, was used (Figure 4A\u2013B), while no changes were observed with inhibitors of glutamine (BPTES) and FA (Etomoxir) metabolism (Figure 4\u2014figure supplement 1B\u2013C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81926/elife-81926-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Seahorse Substrate Oxidation Assay using UK5099, a mitochondrial pyruvate carrier inhibitor (A), and assessment of the glucose dependency (B) in CD-derived BEC-organoids. n=7 for control (Ctrl), n=8 for UK5099. (C) Scheme depicting the treatment of chow diet (CD)/high-fat diet (HFD)-derived BEC-organoids with fatty acid (FA) mix. (D\u2013E) Proton efflux rate (PER) (D), and basal and compensatory (Compens.) glycolysis (E) were measured using Seahorse XF Glycolytic Rate Assay. Relative to panel C. n=14. (F) Scheme depicting the treatment of CD-derived BEC-organoids with E2F inhibitor, HLM006474. (G) RT-qPCR of selected cell cycle and glycolytic genes, relative to panel F. n=4. (H\u2013I) PER during the Seahorse XF Glycolytic Rate Assay (H), and basal and compensatory (Compens.) glycolysis (I), relative to panel F. n=10 for control (Ctrl), n=11 for HLM006474. (J\u2013K) PER during the Seahorse XF Glycolytic Rate Assay (J), and basal and compensatory glycolysis (K), relative to panel C and treatment with HLM006474. n=12 for CD-FA and HFD-FA, n=11 for HLM006474. Data are shown as mean \u00b1 SEM. Absence of stars or ns, not significant (p>0.05); *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; unpaired, two-tailed Student\u2019s t-test (G), and two-way ANOVA with Sidak\u2019s test (B, E, I, K) were used.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81926/elife-81926-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Over-representation analysis results. Top 22 enriched KEGG and EHMN pathways during the process of organoid formation from single biliary epithelial cells (BECs) (Organoids vs. T0) (GSE123133). q-value: false discovery rate adjusted p-values, counts: number of found genes within a given gene set. (B\u2013C) Seahorse Substrate Oxidation Assay using BPTES, n=8 (B), or Etomoxir (C) in CD-derived BEC-organoids. n=7 for control (Ctrl) and n=8 for inhibitor conditions (D\u2013E) Scheme depicting Seahorse Glycolytic Rate Assay (D), and Mito Stress Test (E). (F\u2013G) Oxygen consumption rate (OCR) (F), and basal and maximal respiration (G) were measured using Seahorse XF Mito Stress Test. Relative to Figure 4C. n=14. Data are shown as mean \u00b1 SEM. Absence of stars or ns, non-significant (p-value >0.05); ****p<0.0001; two-way ANOVA with Sidak\u2019s test (B, C, G) was used.\n\nTo investigate the metabolic changes in BEC-organoids upon HFD, we treated CD/HFD BEC-organoids with FA mix to mimic steatotic conditions in vitro (Figure 4C). We hypothesized that the presence of glucose and FA in culture media would reveal a metabolic shift of BEC-organoids. Consistent with our hypothesis, HFD-FA BEC-organoids demonstrated increased compensatory glycolytic rates (Figure 4D\u2013E and Figure 4\u2014figure supplement 1D). Of note, there was a reduction in oxidative phosphorylation in HFD-FA BEC-organoids, as evidenced by the decrease in maximal respiration (Figure 4\u2014figure supplement 1E\u2013G), which might reflect their preference for the glycolytic pathway to generate biomass.\n\nBesides their prominent role in cell cycle progression, E2Fs coordinate several aspects of cellular metabolism (Denechaud et al., 2017; Nicolay and Dyson, 2013), and promote glycolysis in different contexts (Blanchet et al., 2011; Denechaud et al., 2016; Huber et al., 2021). These findings prompted us to postulate that E2F might control glycolysis and, thus, the glucose preference observed in BEC-organoids. To investigate this hypothesis, we treated BEC organoids with an E2F inhibitor, HLM006474 (Figure 4F). As expected, HLM006474 treatment reduced the transcriptional levels of several genes involved in cell cycle progression and glycolytic metabolism (Figure 4G) and decreased the glycolytic flux, as evidenced by the blunted proton efflux rate (PER) (Figure 4H\u2013I). Moreover, E2F inhibition was able to reverse the metabolic phenotype only in HFD-FA BEC-organoids (Figure 4J\u2013K).\n\nIn conclusion, these results demonstrate that HFD-induced E2F activation controls the conversion of BECs from quiescent to active progenitors by promoting the expression of cell cycle genes while simultaneously driving a shift toward glycolysis.\n\n## Discussion\n\nThrough DR activation, BECs represent an essential reservoir of progenitors that are crucial for coordinating hepatic epithelial regeneration in the context of chronic liver diseases (Choi et al., 2014; Deng et al., 2018; Espa\u00f1ol-Su\u00f1er et al., 2012; Huch et al., 2013; Lu et al., 2015; Raven et al., 2017; Rodrigo-Torres et al., 2014; Russell et al., 2019). BEC functions are tightly controlled by YAP metabolic pathways (Meyer et al., 2020; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019), and recent studies from different tissues have provided evidence that specific metabolic states play instructive roles in controlling cell fate and tissue regeneration (Beyaz et al., 2016; Capolupo et al., 2022; Miao et al., 2020; Zhang et al., 2016). Aberrant lipid accumulation is a hallmark of early NAFLD, and imbalances in lipid metabolism are known to affect hepatocyte homeostasis, including induction of lipo-toxicity and cell death (Wang et al., 2016b; Sano et al., 2021; De Gottardi et al., 2007; Wobser et al., 2009; Ipsen et al., 2018). However, the role of lipid dysregulation in BECs and whether it has an impact on BEC activation remains unexplored in the setting of NAFLD.\n\nHere, using HFD- fed mouse models, we studied BEC metabolism in steatosis, the first stage of NAFLD, and demonstrated lipid accumulation in BECs during chronic HFD in vivo and their resistance to lipid-induced toxicity. By using BEC-organoids, we observed that FAs directly target BECs, without any involvement of hepatocytes and that BECs functionally respond to lipid overload. Importantly, BEC-organoids derived from CD- and HFD-fed mouse livers were shown to shift their cellular metabolism toward more glycolysis in the presence of lipids. Furthermore, we found that the HFD-induced metabolic shift was sufficient to reprogram BEC identity in vivo, allowing their exit from a quiescent state and the simultaneous acquisition of progenitor functions, such as proliferation and organoid-initiating capacity. These results highlight the metabolic plasticity of BECs and shed light on an unpredicted mechanism of BEC activation in HFD-induced hepatic steatosis. Importantly, we observed that lipid overload is sufficient to induce BEC activation in steatotic livers and that this process precedes parenchymal damage. While the functional contribution of lipid-activated BECs in liver regeneration during the late stages of NAFLD will require further studies, our data clearly point out the role of BECs as sensors and possibly effectors of early liver diseases such as steatosis.\n\nTo fully understand the underlying basis of the observed phenotype, we characterized the transcriptome of primary BECs derived from steatotic livers of HFD-fed mice and demonstrated that long-term feeding of a lipid-enriched diet strongly promotes BEC proliferation, suggesting a strong link between metabolic adaptation and progenitor function. By combining our transcriptomic analysis with data mining of publicly available DR datasets (Aloia et al., 2019; Pepe-Mooney et al., 2019), we identified the E2F transcription factors as master regulators of BEC activation in the context of NAFLD. Moreover, the expression of Pdk4, an E2F1 target (Hsieh et al., 2008; Wang et al., 2016a), was upregulated in FA-treated BEC-organoids and upon HFD. PDK4 limits the utilization of pyruvate for oxidative metabolism while enhancing glycolysis, which reinforces our data demonstrating that E2Fs rewire BEC metabolism toward glycolysis to fuel progenitor proliferation. These observations feature E2Fs as the molecular rheostat integrating the metabolic cell state with the cell cycle machinery to coordinate BEC activation. However, how E2Fs are regulated upon HFD and whether they are interconnected with the already known YAP, mTORC1, and TET1 pathways remain unknown and will require further investigation.\n\nWhile our data are derived from obese mice, a recent report showed increased numbers of cholangiocytes in steatotic human livers (Hallett et al., 2022), and E2F1 has been found to be upregulated in the livers of obese patients (Denechaud et al., 2016). Moreover, human subjects with elevated visceral fat demonstrated increased glucose metabolism (Broadfield et al., 2021). These observations, while correlative, set the ground for future research in understanding the role and the therapeutic potential of lipid metabolism and E2Fs in controlling BEC activation and, thus, hepatic regeneration in humans.\n\n## Materials and methods\n\n### Mouse studies and ethical approval\n\nAll the animal experiments were authorized by the Veterinary Office of the Canton of Vaud, Switzerland, under license authorizations VD3721 and VD2627.b. C57BL/6JRj (in the text referred to as C57BL/6 J) mice were obtained from Janvier Labs and E2f1+/+ and E2f1\u2013/\u2013 (B6;129S4-E2f1tm1 Meg/J) mice were purchased from The Jackson Laboratory. 8-week-old C57BL/6 J male mice were fed with Chow Diet (CD - SAFE Diets, SAFE 150) or High Fat Diet (HFD - Research Diets Inc, D12492i) for 15 weeks. 7-week-old E2f1+/+ and E2f1\u2013/\u2013 male mice were fed with Chow Diet (CD \u2013 Kliba Nafag 3336) or High Fat Diet (HFD - Envigo, TD93075) for 29 weeks. The well-being of the animals was monitored daily, and body weight was monitored once per week until the end of the experiment. All mice had unrestricted access to water and food, and liver tissues were harvested at the end of the experiment.\n\n### Data reporting\n\nMice were randomized into different groups according to their genotype. A previous HFD experiment was used to calculate the sample size for C57BL/6 J mouse experiments. Mice showing any sign of severity, predefined by the Veterinary Office of the Canton of Vaud, Switzerland, were sacrificed and excluded from the data analyses. In vitro experiments were repeated with at least three biological replicates (BEC-organoids from different mice) or were repeated at least twice by pooling four mice per condition (for Seahorse analysis).\n\n### Proliferation assay\n\nCell proliferation was assessed by EdU assay (Click-iT EdU Alexa Fluor 647, ThermoFisher, C10340) following the manufacturer\u2019s instructions. For in vivo studies, EdU was resuspended in phosphate-buffered saline (PBS- ThermoFisher, 10010002), and 200 \u03bcl of the solution was injected intraperitoneally (50 \u03bcg per g of mouse weight) 16 hr before the sacrifice.\n\n### EPCAM+ BEC isolation, FACS, and flow cytometry analysis\n\n23-week-old CD/HFD-fed C57BL/6 J male mice were used for this experiment and sacrificed in the fed state. To isolate the BECs, mouse livers were harvested and digested enzymatically, as previously reported (Broutier et al., 2016). Briefly, livers were minced and incubated at 37 \u00b0C for up to 2 hr in a digestion solution (1% fetal bovine serum [FBS; Merck/Sigma, F7524] in DMEM/Glutamax [ThermoFisher, 31966\u2013021] supplemented with HEPES [ThermoFisher, 15630\u2013056] and Penicillin/Streptomycin [ThermoFisher, 15140\u2013122] containing 0.0125% [mg/ml] collagenase [Merck/Sigma, C9407], 0.0125% [mg/ml] dispase II [ThermoFisher, 17105\u2013041] and 0.1 mg/ml of DNAase [Merck/Sigma, DN25]). Digested livers were then dissociated into single cells with TrypLE [GIBCO, 12605028] and washed with washing buffer (1% FBS [Merck/Sigma, F7524] in Advanced DMEM/F-12 [GIBCO, 12634010] supplemented with Glutamax [ThermoFisher, 35050061], HEPES [ThermoFisher, 15630\u2013056] and Penicillin/Streptomycin [ThermoFisher, 15140\u2013122]).\n\nFor FACS analysis, single cells were filtered with a 40 \u00b5m cell strainer (Falcon, 352340) and incubated with fluorophore-conjugated antibodies CD45\u2013PE/Cy7 (BD Biosciences, 552848), CD11b\u2013PE/Cy7 (BD Biosciences, 552850), CD31\u2013PE/Cy7 (Abcam, ab46733), CD31-PE/Cy7 (BD Biosciences, 561410) and EPCAM\u2013APC (eBioscience, 17-5791-82) for 30 min on ice. BECs were sorted using FACSAria Fusion (BD Biosciences) as previously described (Aloia et al., 2019). Briefly, individual cells were sequentially gated based on cell size (forward scatter (FSC) versus side scatter (SSC)) and singlets. BECs were then selected based on EPCAM positivity after excluding leukocytes (CD45+), myeloid cells (CD11b+), and endothelial cells (CD31+), yielding a population of single CD45-/CD11b-/ CD31-/EPCAM+ cells.\n\nFor flow cytometry analysis, livers were dissociated as described above, and single cells were stained for 20 min with BODIPY 558/568 (Invitrogen, D38D35) on ice, followed by incubation with fluorophore-conjugated antibodies CD45\u2013PE/Cy7 (BD Biosciences, 552848), CD11b\u2013PE/Cy7 (BD Biosciences, 552850), CD31\u2013PE/Cy7 (BD Biosciences, 561410), EPCAM\u2013VioBlue (Miltenyi Biotec, 130-123-871), and EdU Alexa Fluor 488 (ThermoFisher, C10425) for 30 min on ice. After washing with 1% BSA in PBS, the Click-IT EdU reaction (ThermoFisher, C10425) was performed according to the manufacturer\u2019s instructions. Finally, BEC suspension was resuspended in 1% BSA in PBS, and analyzed using BD LSRFortessa (BD Biosciences). All flow cytometry data were analyzed with FlowJo v10.8 software (BD Life Sciences).\n\n### Silencing of E2F1 in EPCAM+ BECs and organoid formation\n\nTo silence E2F1, 2\u2009\u00d7\u2009104 EPCAM+ BECs isolated from the livers of HFD-fed mice were transfected with a pool of four ON-TARGETplus siRNAs for E2f1 (Horizon, L-044993-00-0005) or with scrambled siRNAs (Horizon, D-001810-10-05), using TransIT-X2 (Mirus, MIR6000) according to the manufacturer\u2019s instructions. Briefly, the cells and the TransIT-X2 mix were centrifuged at 600 g for 45 \u2009min at 32 \u2009\u00b0C and then incubated for 4 \u2009hr at 37 \u2009\u00b0C. The cell suspension was harvested and seeded in Matrigel in the isolation medium. Growth of BEC-organoids was followed with a luminescent MT Cell Viability Assay (Promega, G9711).\n\n### RNA preparation from EPCAM+ BECs and bulk RNA-seq data analysis\n\nRNA was isolated from sorted BECs using the RNeasy micro kit (QIAGEN, 74104), and the amount and quality of RNA were measured with the Agilent Tapestation 4200 (Agilent Technologies, 5067\u20131511). As a result, RNA-seq of five CD and seven HFD samples was performed by BGI with the BGISEQ-500 platform. FastQC was used to verify the quality of the reads (Andrews, 2010). No low-quality reads were present, and no trimming was needed. Alignment was performed against the mouse genome (GRCm38) following the STAR (version 2.6.0 a) manual guidelines (Dobin et al., 2013). The obtained STAR gene counts for each alignment were analyzed for differentially expressed genes using the R package DESeq2 (version 1.34.0) (Love et al., 2014). A threshold of 1 log2 fold change and adjusted p-value smaller than 0.05 were considered when identifying the differentially expressed genes. A principal component analysis (PCA) (L\u00ea et al., 2008) was used to explore the variability between the different samples.\n\n### Gene set enrichment analysis (GSEA)\n\nWe used the clusterProfiler R package (Yu et al., 2012) to conduct GSEA analysis on various gene sets. Gene sets were retrieved from http://ge-lab.org/gskb/ for M. musculus. We ordered the differentially expressed gene list by log2 (Fold-changes) for the analysis with default parameters.\n\n### Over-representation enrichment analysis\n\nAll significantly changing genes (adjusted p-value <0.05 and an absolute fold change >1) were split into 2 groups based on the direction of the fold change (genes significantly up- & down-regulated). An over-representation analysis using the clusterProfiler R package was performed on each of the two groups to identify biologically overrepresented terms.\n\n### Figure generation with R\n\nThe R packages ggplot2 (Wickham, 2016) retrieved from https://ggplot2.tidyverse.org and ggpubr were used to generate figures.\n\n### Culture of mouse liver BEC-organoids from single bile duct cells of digested livers\n\nBEC-organoids were established from bile ducts of C57BL/6 J male mice as previously described (Broutier et al., 2016; Sorrentino et al., 2020). Thus, the liver was digested as detailed above (EPCAM+ BEC isolation), and bile ducts were isolated and were pelleted by centrifugation at 200 rpm for 5 min at 4 \u00b0C and washed with PBS twice. The digested liver solution, including single bile duct cells, was then dissociated into single cells with TrypLE (GIBCO, 12605028). Isolated cells were resuspended in Matrigel (Corning, 356231) and cast in 10 \u00b5l droplets in 48-well plates. When gels were formed, 250 \u00b5l of isolation medium (IM- Advanced DMEM/F-12- Gibco,12634010) supplemented with Glutamax (ThermoFisher, 35050061), HEPES (ThermoFisher, 15630\u2013056), Penicillin/Streptomycin (ThermoFisher, 15140\u2013122), 1 X B27 (Gibco, 17504044), 1 mM N-acetylcysteine (Sigma-Aldrich, A9165), 10 \u2009nM gastrin (Sigma-Aldrich, G9145), 50 \u2009ng/ml EGF (Peprotech, AF-100\u201315), 1 \u2009\u00b5g/ml Rspo1 (produced in-house), 100 \u2009ng/ml FGF10 (Peprotech, 100\u201326), 10 \u2009mM nicotinamide (Sigma-Aldrich, N0636), 50 \u2009ng/ml HGF (Peprotech, 100\u201339), Noggin (100 \u2009ng/ml produced in-house), 1 \u00b5g/ml Wnt3a (Peprotech, 315\u201320), and 10 \u03bcM Y-27632 (Sigma, Y0503) was added to each well. Plasmids for Rspo1 and Noggin production were a kind gift from Joerg Huelsken. After the first 4 days, IM was replaced with the expansion medium (EM), which was the IM without Noggin, Wnt3a, and Y-27632. For passaging, organoids were removed from Matrigel for a maximum of one week after seeding and dissociated into single cells using TrypLE Express (Gibco, 12604013). Single cells were then transferred to fresh Matrigel. Passaging was performed in a 1:3 split ratio.\n\nFor the FA treatment of BEC-organoids, palmitic acid (Sigma, P0500) and oleic acid (Sigma, O1008) were dissolved in 100% ethanol into 500 and 800 \u03bcM stock solutions, respectively, and kept at \u201320 \u2009\u00b0C. For each experiment, palmitic acid and oleic acid were conjugated to 1% fatty acid-free bovine serum albumin (BSA) (Sigma, A7030) in EM through 1:2000 dilution each (Malhi et al., 2006). The concentration of vehicle, ethanol, was 0.1% ethanol in final incubations, and 1% fatty acid-free BSA in EM was used as the control for FA treatment.\n\n### Liver immunohistochemistry (IHC) and immunofluorescence (IF)\n\nFor paraffin histology, livers were washed in PBS (Gibco, 10010023), diced with a razor blade, and fixed overnight in 10% formalin (ThermoFisher, 9990244) while shaking at 4 \u00b0C. The next day fixed livers were washed twice with PBS, dehydrated in ascending ethanol steps, followed by xylene, and embedded in paraffin blocks. 4 \u03bcm thick sections were cut from paraffin blocks, dewaxed, rehydrated, and quenched with 3% H2O2 for 10 min to block the endogenous peroxidase activity (for IHC). Antigen retrieval was performed by incubating the sections in 10 mM citrate buffer (pH\u20096.0) for 20 \u2009min at 95 \u2009\u00b0C. After the sections were cooled to room temperature, they were washed and blocked with blocking buffer (1% BSA (Sigma, A7906) and 0.5% Triton X-100 (Sigma, X100) in PBS) for 1 \u2009hr at room temperature. The primary antibodies anti-Ki67 (ThermoFisher, MA5-14520), anti-PANCK (Novusbio, NBP600-579), anti-OPN (R&D Systems, AF808), anti-Cleaved caspase-3 (Cell Signaling, 9661) were diluted in a 1:100 dilution of the blocking buffer and incubated overnight at 4 \u2009\u00b0C. For IHC, ImmpRESS HRP conjugated secondary (VectorLabs MP-74-01-15 and MP-74-02-15) were incubated for 30 min, and detection was performed by using a 3.3\u2019-diaminobenzidine (DAB) reaction. Sections were counterstained with Harris and mounted. For IF, sections were washed and incubated for 1 hr with Alexa Fluor conjugated secondary antibodies (1:1000 in blocking solution; Invitrogen). Following extensive washing, sections were counterstained with DAPI (ThermoFisher, 62248) and mounted in ProLong Gold Antifade Mountant (Thermo Fischer, P36930).\n\nFor IF of liver cryosections, the livers were frozen in O.C.T. compound (VWR chemicals) on dry ice filled with isopentane. 10 \u03bcm liver sections were cut from O.C.T embedded samples, hydrated, and washed twice in PBS. The sections were blocked in a blocking buffer for 1 hr at room temperature and incubated with BODIPY for 20 min. After fixation with 4% paraformaldehyde (PFA) solution (Sigma, 1004960700) for 15 min, sections were washed with PBS. Then, sections were permeabilized using 5% BSA in TBS-T and stained with primary antibody anti-PANCK diluted in blocking buffer for 16 \u2009hr at 4 \u2009\u00b0C. The next day, the sections were washed three times with PBS, and the appropriate Alexa Fluor secondary antibodies were diluted in blocking buffer (1:1000) and incubated with the sections for 1 \u2009hr at room temperature. The sections were washed in PBS and incubated with DAPI diluted 1:1000 in PBS for 1 \u2009hr at room temperature. Finally, the sections were mounted in ProLong Gold Antifade Mountant.\n\nStained sections were imaged by a virtual slide microscope (VS120, Olympus) and a confocal microscope (SP8, Leica). The image analysis was performed using QuPath (Bankhead et al., 2017) and Fiji software.\n\n### BEC-organoid whole-mount immunofluorescence\n\nBEC-organoids were incubated with BODIPY 558/568 for 20 min and then washed with PBS and extracted from Matrigel using Cell Recovery Solution (Corning, 354253). After fixing with 4% PFA in PBS (30 min, on ice), they were pelleted by gravity to remove the PFA and were washed with PBS and ultra-pure water. BEC-organoids were then spread on glass slides and allowed to attach by drying. The attached BEC-organoids were rehydrated with PBS and permeabilized with 0.5% Triton X-100 in PBS (1 hr, room temperature) and blocked for 1 hr in a blocking buffer. After washing with PBS, samples were incubated for 1 hr at room temperature with Alexa Fluor Phalloidin 488 (Invitrogen, A12379). Following extensive washing, samples were counterstained with DAPI and were imaged by a confocal microscope (LSM 710, Zeiss). Signal intensity was adjusted on each channel using Fiji software (Schindelin et al., 2012).\n\n### Quantitative real-time qPCR for mRNA quantification\n\nBEC-organoids were extracted from Matrigel using Cell Recovery Solution (Corning, 354253). RNA was extracted from organoid pellets using the RNAqueous total RNA isolation kit (Invitrogen, AM1931) and the RNeasy Micro Kit (Qiagen, 74004) following the manufacturer\u2019s instructions. RNA was transcribed to complementary DNA using QuantiTect Reverse Transcription Kit (Qiagen, 205314) following the manufacturer\u2019s instructions. PCR reactions were run on the LightCycler 480 System (Roche) using SYBR Green (Roche, 4887352001) chemistry. Real-time quantitative polymerase chain reaction (RT-qPCR) results were presented relative to the mean of 36b4 (comparative \u0394Ct method). Primers for RT-qPCR are listed in Supplementary file 3.\n\n### E2F inhibition\n\nFor the E2F inhibition experiment, single BECs were grown for 7 days and allowed to form organoids. For the Seahorse experiment, BEC-organoids were treated with E2F inhibitor, HLM006474 (10 \u03bcM, Merck, 324461), overnight before the metabolic assay. For RT-qPCR analysis, BEC-organoids were treated with HLM006474 chronically for 4 days.\n\n### Bioenergetics with Seahorse extracellular flux analyzer\n\nThe oxygen consumption rate (OCR), extracellular acidification rate (ECAR), and proton-efflux rate (PER) of the BEC-organoids were analyzed by an XFe96 extracellular flux analyzer (Agilent) following the manufacturer\u2019s instructions according to assay type.\n\nFor Mito Stress Test on CD/HFD-derived BEC-organoids, the organoids were grown with FA mix for 7 days. On day 7, 10 \u03bcM HLM006474 or DMSO as vehicle were added overnight. The next morning, BEC-organoids were dissociated, and 20,000 cells were seeded with Seahorse Assay Medium in XFe96 Cell Culture Microplates (Agilent, 101085\u2013004), which were previously coated with 10% Matrigel in Advanced DMEM/F-12. Seahorse Assay Medium was unbuffered, serum-free pH 7.4 DMEM supplemented with 10 mM glucose (Agilent, 103577\u2013100), 10 mM pyruvate (Gibco, 11360070), and 2 mM glutamine (Agilent, 103579\u2013100), and 10 \u03bcM HLM006474 or DMSO (vehicle) were added when indicated. After 2 hr incubation for cell attachment, plates were transferred to a non-CO2 incubator at 37 \u00b0C for 45 min. Mitochondrial OCR was measured in a time course before and after the injection of 1.5 \u03bcM Oligomycin (Millipore, 495455), 2.5 \u03bcM FCCP (Sigma, C2920), and 1 \u03bcM Rotenone (Sigma, R8875)/Antimycin A (Sigma, A8674).\n\nFor Glycolytic Rate Assay, CD BEC-organoids were grown without FA mix, and CD/HFD- derived BEC-organoids were grown with FA mix for 7 days. The Seahorse assay preparations, including the E2F inhibitor were the same as mentioned above. GlycoPER was measured in a time course before and after the injection of 1 \u03bcM Rotenone/Antimycin A and 50 mM 2-DG (Sigma, D8375).\n\nFor the Substrate Oxidation Assay, CD BEC-organoids were grown without FA mix for 7 days. On day 8, they were dissociated and prepared for Seahorse assay without E2F inhibitor. Mitochondrial OCR was measured in a time course before and after the injection of Oligomycin (1.5 \u03bcM), FCCP (2.5 \u03bcM), and Rotenone/Antimycin A (1 \u03bcM) with or without UK5099 (Sigma, PZ0160), Etomoxir (Sigma, E1905) and BPTES (Sigma, SML0601), inhibitors of glucose oxidation, fatty acid oxidation and glutamine oxidation, respectively, in separate experiments.\n\nAll Seahorse experiments were normalized by cell number through injection of 10 \u03bcM of Hoechst (ThermoFisher, 62249) in the last Seahorse injection. Hoechst signal (361/486 nm) was quantified by SpectraMax iD3 microplate reader (Molecular Devices).\n\n### BEC-organoid growth assay\n\nBEC-organoid formation efficiency was quantified by counting the total number of cystic/single layer (lumen-containing) CD/HFD-derived BEC-organoids 6 days after seeding and normalizing it to the total number of cells seeded initially (15,000 cells). Organoids were imaged by DM IL LED inverted microscope (Leica), selected as regions of interest (ROI) using widefield 4 x magnification, and counted manually.\n\n### BEC-organoid functional analysis\n\nGrown BEC-organoids were treated with the FA mix for 4 days, and triglyceride levels were measured with a Triglyceride kit (Abcam, ab65336) following the manufacturer\u2019s instructions. Cell-titer Glo (Promega, G7570) was used to investigate cell viability. For functional assays involving single BECs, grown organoids were dissociated into single cells. 10,000 BECs were seeded, and organoid formation was allowed for 7 days. Cell viability, apoptosis, and cell death were investigated using Cell-titer Glo, Caspase 3/7 activity (Promega, G8091), and Nucgreen Dead 488 staining (Invitrogen, R37109), respectively, according to the protocol of manufacturers. For cell death staining, organoids were imaged using ECLIPSE Ts2 inverted microscope (Nikon).\n\n### Quantification and statistical analysis\n\nData were presented as mean \u00b1 standard error of the mean (mean \u00b1 SEM). n refers to biological replicates and is represented by the number of dots in the plot or stated in the figure legends. For the Seahorse experiments, n refers to technical replicates pooled from 4 biological replicates and is represented by the number of dots in the plot or stated in the figure legends. The statistical analysis of the data from bench experiments was performed using Prism (Prism 9, GraphPad). The differences with p<0.05 were considered statistically significant. No samples (except outliers) or animals were excluded from the analysis. Data are expected to have a normal distribution.\n\nFor two groups comparison, data significance was analyzed using a two-tailed, unpaired Student\u2019s t-test. In case of comparisons between more than two groups, one- or two-way ANOVA was used. Dunnet\u2019s, Tukey\u2019s, or Sidak\u2019s tests were used to correct for multiple comparisons. Statistical details of each experiment can be found in the respective figure legends.\n",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "86db48a7-8113-4c0f-89b6-304cb3ee605c",
+      "submission_id": "98e38d86-1ca2-445d-b6c5-44fe976f394c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Tontonoz, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81926.sa0](https://doi.org/10.7554/eLife.81926.sa0)\n\nThis important study reports that a high-fat diet induces biliary epithelial cell proliferation and suggests this may account for the so-called ductular reaction in advanced fatty liver disease. Convincing data support the finding that E2f1 is required for BEC proliferation in mice fed with HFD, and organoid models indicate that lipid abundance promotes glycolysis in an E2F-dependent manner.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Peter Tontonoz, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81926.sa1](https://doi.org/10.7554/eLife.81926.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Hepatic lipid overload potentiates biliary epithelial cell activation via E2Fs\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Carlos Isales as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Epcam+ cells can differentiate into different parts of the biliary tree, it should therefore be clarified which biliary identity the investigated organoids adopt during the differentiation to relate it to the in vivo data.\n\n2. Gene expression profiling, instead of 4 transcripts in Figure 1E-F, of BEC-organoids after FA treatment may uncover broader transcriptional programs. One would expect E2F-driven transcriptional programs to be increased. One would also expect more cholangiocyte-specific markers as opposed to hepatocyte-specific markers for this BEC-organoid model.\n\n3. The authors relate the presented transcriptional and metabolic changes to the initial and early stage of BEC activation associated with NAFLD, however, do not provide a detailed characterization of whether the results shown correspond to the early or late stage of DR. Related to this, while Ncam1 is known to be upregulated in activated BECs, is the level of upregulation similar to in vivo and generally the authors should provide a more complete molecular characterization of the DR signature to support this point.\n\n4. Figure 1H would be strengthened with a quantitative method to assess lipid accumulation within liver-derived BECs, such as performing Epcam+ BEC FACS isolation from HFD-fed mice followed by BODIPY staining and analysis by flow cytometry.\n\n5. The authors state that lipid overload is sufficient to initiate DR without epithelial damage. While indeed no cell death is observed, the authors do not provide any analysis of the consequences of high fatty acid treatment on the biliary epithelium. In Figure 1, the nuclear pattern of FA-treated organoids differs from those in controls. Likewise, the PANCK immunostaining of livers from mice after 15 weeks of HFD seems to indicate that the bile ducts have at least partially lost their epithelial organization. Please clarify possible changes to the epithelium and how this relates to the stage of DR.\n\n6. In Figure 3D-F, similar to in Figure 2C-D, the majority of bile ducts have 0 proliferating cells. A quantitative method as mentioned above would strengthen these findings. Performing EDU staining as done in Figure 2E would also be more convincing.\n\n7. Given that a full knock-out is used to test the E2F1 requirement, it should be addressed whether a non-autonomous role for hepatocytes in BEC activation can be excluded. Moreover, the authors could use this experimental condition to assess the role of the other three E2Fs, which they identified in the transcriptome analysis. Are they upregulated in the HFD condition, if so, what can be concluded about their function?\n\n8. For the experiments shown in Figure 4C, it should be clarified why organoids from HFD BECs are dissociated with the aim to again form organoids in the presence of an FA mix. Would the results be different, or why can the HFD BEC organoids not be treated directly with the FA mix? Also, does this condition alter the organoid forming potential compared to Fig2H?\n",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cbcd909b-5e39-4898-8cb2-b5fa46e18671",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C1",
+      "claim": "BECs undergo rapid activation into proliferating progenitors during severe or chronic hepatic injury, which is a crucial step required to establish a regenerative process known as ductular reaction (DR).",
+      "claim_type": "EXPLICIT",
+      "source": "During severe or chronic hepatic injury, biliary epithelial cells (BECs) undergo rapid activation into proliferating progenitors, a crucial step required to establish a regenerative process known as ductular reaction (DR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data from this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "92732ba1-3963-4f64-9cbf-b01e3431c8c5",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C2",
+      "claim": "DR is a hallmark of chronic liver diseases, including advanced stages of non-alcoholic fatty liver disease (NAFLD).",
+      "claim_type": "EXPLICIT",
+      "source": "While DR is a hallmark of chronic liver diseases, including advanced stages of non-alcoholic fatty liver disease (NAFLD), the early events underlying BEC activation are largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "ae2df6ac-8f12-45cf-96e1-7cff1a13b7a4",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C3",
+      "claim": "BECs readily accumulate lipids during high-fat diet feeding in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that BECs readily accumulate lipids during high-fat diet feeding in mice and upon fatty acid treatment in BEC-derived organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H-I and related text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "a39d4979-b11d-417b-bb54-579b7bf67a74",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C4",
+      "claim": "BECs readily accumulate lipids upon fatty acid treatment in BEC-derived organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that BECs readily accumulate lipids during high-fat diet feeding in mice and upon fatty acid treatment in BEC-derived organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and related text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "3ce773d0-ec41-4ccc-91c8-949888208f88",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C5",
+      "claim": "Lipid overload induces metabolic rewiring to support the conversion of adult cholangiocytes into reactive BECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid overload induces metabolic rewiring to support the conversion of adult cholangiocytes into reactive BECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data including gene expression changes (Figure 1E-F) and metabolic assays (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "f58ba05a-e8d3-496f-be69-b6828c4f59f7",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C6",
+      "claim": "Lipid overload activates the E2F transcription factors in BECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we found that lipid overload activates the E2F transcription factors in BECs, which drive cell cycle progression while promoting glycolytic metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transcriptomic analysis (Figure 3B-C) and functional studies (Figure 3E-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "90a0608c-d535-466a-9582-d014100648db",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C7",
+      "claim": "E2F transcription factors drive cell cycle progression in BECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we found that lipid overload activates the E2F transcription factors in BECs, which drive cell cycle progression while promoting glycolytic metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing E2F inhibition reduces proliferation (Figure 3\u2014figure supplement 1E) and E2f1 knockout prevents BEC activation (Figure 3E-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "2757eb2d-f312-44fb-9019-644f701893f2",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C8",
+      "claim": "E2F transcription factors promote glycolytic metabolism in BECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we found that lipid overload activates the E2F transcription factors in BECs, which drive cell cycle progression while promoting glycolytic metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing E2F inhibition reduces glycolysis (Figure 4H-K) and gene expression changes (Figure 4G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "8fbb7267-caab-411f-865d-934592d9ed06",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C9",
+      "claim": "Fat overload is sufficient to reprogram BECs into progenitor cells in the early stages of NAFLD.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that fat overload is sufficient to reprogram BECs into progenitor cells in the early stages of NAFLD and provide new insights into the mechanistic basis of this process, revealing unexpected connections between lipid metabolism, stemness, and regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing increased proliferation (Figure 2C-G) and organoid formation capacity (Figure 2I) in HFD-fed mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "d29edf9a-dd4c-4119-bb60-7da6eab558c1",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C10",
+      "claim": "Under physiological conditions, the hepatic epithelium, composed of hepatocytes and BECs (or cholangiocytes), is non-proliferative.",
+      "claim_type": "EXPLICIT",
+      "source": "Under physiological conditions, the hepatic epithelium, composed of hepatocytes and BECs (or cholangiocytes), is non-proliferative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "3663f541-e9b3-40de-ab6b-53c6669e1fce",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C11",
+      "claim": "Upon injury, hepatocytes and BECs are capable of rapidly changing their phenotype from quiescent to proliferative, contributing to the prompt restoration of damaged tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet upon injury, these two cell types are capable of rapidly changing their phenotype from quiescent to proliferative, contributing to the prompt restoration of damaged tissue (Gadd et al., 2020; Michalopoulos, 2014; Miyajima et al., 2014; Yanger and Stanger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "79f31566-0240-4697-8e86-14bea1911d42",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C12",
+      "claim": "In chronic liver injury, characterized by impaired hepatocyte replication, BECs serve as the cell source for regenerative cellular expansion through the DR process.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in chronic liver injury, characterized by impaired hepatocyte replication, BECs weigh-in and serve as the cell source for regenerative cellular expansion through the DR process (Choi et al., 2014; Deng et al., 2018; Espa\u00f1ol-Su\u00f1er et al., 2012; Huch et al., 2013; Lu et al., 2015; Raven et al., 2017; Rodrigo-Torres et al., 2014; Russell et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "018e09c3-c818-4b4d-8baf-98a850fbb524",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C13",
+      "claim": "Several signaling pathways involving YAP have been reported to drive the DR process in models of chemical biliary damage and portal fibrosis using DDC.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular basis by which BECs expand during the DR has been extensively studied in models of chemical biliary damage and portal fibrosis using the chemical 3,5-diethoxycarbonyl-1,4-dihydrocollidine (DDC). Several signaling pathways involving YAP (Meyer et al., 2020; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019), mTORC1 (Planas-Paz et al., 2019), TET1-mediated hydroxymethylation (Aloia et al., 2019) and NCAM1 (Tsuchiya et al., 2014) have been reported to drive this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "466a3680-91d7-4bd0-a54b-375c9c243073",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C14",
+      "claim": "Several signaling pathways involving mTORC1 have been reported to drive the DR process in models of chemical biliary damage and portal fibrosis using DDC.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular basis by which BECs expand during the DR has been extensively studied in models of chemical biliary damage and portal fibrosis using the chemical 3,5-diethoxycarbonyl-1,4-dihydrocollidine (DDC). Several signaling pathways involving YAP (Meyer et al., 2020; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019), mTORC1 (Planas-Paz et al., 2019), TET1-mediated hydroxymethylation (Aloia et al., 2019) and NCAM1 (Tsuchiya et al., 2014) have been reported to drive this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "820d4e85-6a20-4d2a-abe3-4865cb49bc81",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C15",
+      "claim": "Several signaling pathways involving TET1-mediated hydroxymethylation have been reported to drive the DR process in models of chemical biliary damage and portal fibrosis using DDC.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular basis by which BECs expand during the DR has been extensively studied in models of chemical biliary damage and portal fibrosis using the chemical 3,5-diethoxycarbonyl-1,4-dihydrocollidine (DDC). Several signaling pathways involving YAP (Meyer et al., 2020; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019), mTORC1 (Planas-Paz et al., 2019), TET1-mediated hydroxymethylation (Aloia et al., 2019) and NCAM1 (Tsuchiya et al., 2014) have been reported to drive this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "a81c1cff-8029-4137-b31c-e9194886cab5",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C16",
+      "claim": "Several signaling pathways involving NCAM1 have been reported to drive the DR process in models of chemical biliary damage and portal fibrosis using DDC.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular basis by which BECs expand during the DR has been extensively studied in models of chemical biliary damage and portal fibrosis using the chemical 3,5-diethoxycarbonyl-1,4-dihydrocollidine (DDC). Several signaling pathways involving YAP (Meyer et al., 2020; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019), mTORC1 (Planas-Paz et al., 2019), TET1-mediated hydroxymethylation (Aloia et al., 2019) and NCAM1 (Tsuchiya et al., 2014) have been reported to drive this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "84bd3b1e-7f8a-4bbf-a318-49d615ef901e",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C17",
+      "claim": "DR has been observed in late-stage NAFLD patients with fibrosis and portal inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, DR has also been observed in late-stage NAFLD patients with fibrosis and portal inflammation (Gadd et al., 2014; Sato et al., 2019; Sorrentino et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "d6ced474-0299-48d2-acbe-f7b50aab5080",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C18",
+      "claim": "NAFLD is one of the most common chronic diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "NAFLD, one of the most common chronic diseases, initiates with increased lipid accumulation, a stage called steatosis (Paschos and Paletas, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "beb3fbc9-9d3d-4103-a58e-4ee04b0fbe33",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C19",
+      "claim": "NAFLD initiates with increased lipid accumulation, a stage called steatosis.",
+      "claim_type": "EXPLICIT",
+      "source": "NAFLD, one of the most common chronic diseases, initiates with increased lipid accumulation, a stage called steatosis (Paschos and Paletas, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "d6077f49-106d-41e8-a2d6-83233ba8af65",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C20",
+      "claim": "NAFLD progresses into inflammation and fibrosis that can cause cirrhosis and hepatocellular carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathology progresses into inflammation and fibrosis that can cause cirrhosis and hepatocellular carcinoma, which are the most frequent liver transplantation indications (Byrne and Targher, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "cad2732a-b2bb-43f2-aa55-b9d5965b9d82",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C21",
+      "claim": "Cirrhosis and hepatocellular carcinoma are the most frequent liver transplantation indications.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathology progresses into inflammation and fibrosis that can cause cirrhosis and hepatocellular carcinoma, which are the most frequent liver transplantation indications (Byrne and Targher, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "4273e3de-50fd-4cd9-9150-dfca8d7be316",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C22",
+      "claim": "YAP has been found to be activated in BECs in fibrotic livers but not in steatosis.",
+      "claim_type": "EXPLICIT",
+      "source": "YAP has been found to be activated in BECs in fibrotic livers but not in steatosis (Machado et al., 2015), suggesting that YAP activation is necessary to support DR in the late fibrotic NAFLD stages, and thus, leaving the early molecular mechanisms of BEC activation, which precede the onset of the DR, unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "eb6b4cb8-6c6e-44d7-9429-1509354f9c89",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C23",
+      "claim": "YAP activation is necessary to support DR in the late fibrotic NAFLD stages.",
+      "claim_type": "EXPLICIT",
+      "source": "YAP has been found to be activated in BECs in fibrotic livers but not in steatosis (Machado et al., 2015), suggesting that YAP activation is necessary to support DR in the late fibrotic NAFLD stages, and thus, leaving the early molecular mechanisms of BEC activation, which precede the onset of the DR, unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as an inference from the cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "03cc7a58-7b9d-4396-90c5-af9187606e89",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C24",
+      "claim": "BEC-derived organoids can be established from intrahepatic bile duct progenitors and can proliferate.",
+      "claim_type": "EXPLICIT",
+      "source": "BEC-derived organoids (BEC-organoids) can be established from intrahepatic bile duct progenitors and can proliferate, representing a promising in vitro approach to study regenerative mechanisms and therapies (Huch et al., 2015; Huch et al., 2013; Li et al., 2017; Okabe et al., 2009; Shin et al., 2011; Sorrentino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "3346e91f-815d-4d55-aa25-a9ec8f6404a0",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C25",
+      "claim": "BEC-organoids represent a promising in vitro approach to study regenerative mechanisms and therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "BEC-derived organoids (BEC-organoids) can be established from intrahepatic bile duct progenitors and can proliferate, representing a promising in vitro approach to study regenerative mechanisms and therapies (Huch et al., 2015; Huch et al., 2013; Li et al., 2017; Okabe et al., 2009; Shin et al., 2011; Sorrentino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "a2b3dc2b-c841-4ffe-84d7-b6ffe0b34a26",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C26",
+      "claim": "BEC-organoids are self-renewing bi-potent organoids that express biliary progenitor markers.",
+      "claim_type": "EXPLICIT",
+      "source": "These self-renewing bi-potent organoids express biliary progenitor markers and are capable of differentiating into functional cholangiocyte- and hepatocyte-like lineages in specific differentiation media, which can engraft and repair bile ducts (Hallett et al., 2022; Sampaziotis et al., 2021) and improve liver function when transplanted into a mouse with liver disease (Huch et al., 2015; Huch et al., 2013; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "c561b89a-4a61-4d77-84cb-ca591d28923e",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C27",
+      "claim": "BEC-organoids are capable of differentiating into functional cholangiocyte- and hepatocyte-like lineages in specific differentiation media.",
+      "claim_type": "EXPLICIT",
+      "source": "These self-renewing bi-potent organoids express biliary progenitor markers and are capable of differentiating into functional cholangiocyte- and hepatocyte-like lineages in specific differentiation media, which can engraft and repair bile ducts (Hallett et al., 2022; Sampaziotis et al., 2021) and improve liver function when transplanted into a mouse with liver disease (Huch et al., 2015; Huch et al., 2013; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "46bb17de-8178-46e3-a2c4-eded7b475c14",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C28",
+      "claim": "BEC-organoids can engraft and repair bile ducts.",
+      "claim_type": "EXPLICIT",
+      "source": "These self-renewing bi-potent organoids express biliary progenitor markers and are capable of differentiating into functional cholangiocyte- and hepatocyte-like lineages in specific differentiation media, which can engraft and repair bile ducts (Hallett et al., 2022; Sampaziotis et al., 2021) and improve liver function when transplanted into a mouse with liver disease (Huch et al., 2015; Huch et al., 2013; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "a9114fd0-57be-4b49-befb-d7aa0e832656",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C29",
+      "claim": "BEC-organoids improve liver function when transplanted into a mouse with liver disease.",
+      "claim_type": "EXPLICIT",
+      "source": "These self-renewing bi-potent organoids express biliary progenitor markers and are capable of differentiating into functional cholangiocyte- and hepatocyte-like lineages in specific differentiation media, which can engraft and repair bile ducts (Hallett et al., 2022; Sampaziotis et al., 2021) and improve liver function when transplanted into a mouse with liver disease (Huch et al., 2015; Huch et al., 2013; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "b6a6dbb6-4fc9-4215-9500-340deef133a1",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C30",
+      "claim": "BEC-organoids efficiently accumulated lipid droplets in a dose-dependent manner when treated with a mixture of oleic acid and palmitic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed that BEC-organoids efficiently accumulated lipid droplets in a dose-dependent manner (Figure 1B), and this process did not affect organoid viability (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "7734c916-821b-48f4-b617-eccf800f157d",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C31",
+      "claim": "Lipid accumulation in BEC-organoids did not affect organoid viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed that BEC-organoids efficiently accumulated lipid droplets in a dose-dependent manner (Figure 1B), and this process did not affect organoid viability (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "384e0a30-d1f9-4686-84e6-b3d0429c73d6",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C32",
+      "claim": "Oleic acid and palmitic acid are the two most abundant FAs found in livers of NAFLD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into how chronic lipid exposure, which induces liver steatosis, affects biliary progenitor function in vitro, we incubated single BECs with a mixture of oleic acid (OA) and palmitic acid (PA) (the fatty acid (FA) mix) \u2013 the two most abundant FAs found in livers of NAFLD patients (Araya et al., 2004), for 7 days and allowed BEC-organoid formation (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "f75032bd-f10d-44dd-aa02-5b969501cbf0",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C33",
+      "claim": "FA addition affected the expression of Scd1 in BEC-organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate how cells adapt their metabolism to lipid overload, we monitored the expression of several genes involved in lipid metabolism, including Scd1 (de novo lipogenesis) (Figure 1E), Hmgcs2 (ketogenesis), Pdk4 (inhibition of pyruvate oxidation), and Aldh1a1 (prevention against lipid peroxidation products) (Figure 1F) and found it to be affected by FA addition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "2c28eae2-3e6b-419b-a341-3b23fc08070c",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C34",
+      "claim": "FA addition affected the expression of Hmgcs2 in BEC-organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate how cells adapt their metabolism to lipid overload, we monitored the expression of several genes involved in lipid metabolism, including Scd1 (de novo lipogenesis) (Figure 1E), Hmgcs2 (ketogenesis), Pdk4 (inhibition of pyruvate oxidation), and Aldh1a1 (prevention against lipid peroxidation products) (Figure 1F) and found it to be affected by FA addition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "d3b9985e-da40-4f1b-a0d5-f8b06522b61f",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C35",
+      "claim": "FA addition affected the expression of Pdk4 in BEC-organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate how cells adapt their metabolism to lipid overload, we monitored the expression of several genes involved in lipid metabolism, including Scd1 (de novo lipogenesis) (Figure 1E), Hmgcs2 (ketogenesis), Pdk4 (inhibition of pyruvate oxidation), and Aldh1a1 (prevention against lipid peroxidation products) (Figure 1F) and found it to be affected by FA addition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "10ea231c-c2d9-4849-804d-97db2d5816fa",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C36",
+      "claim": "FA addition affected the expression of Aldh1a1 in BEC-organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate how cells adapt their metabolism to lipid overload, we monitored the expression of several genes involved in lipid metabolism, including Scd1 (de novo lipogenesis) (Figure 1E), Hmgcs2 (ketogenesis), Pdk4 (inhibition of pyruvate oxidation), and Aldh1a1 (prevention against lipid peroxidation products) (Figure 1F) and found it to be affected by FA addition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "deda81a5-7133-4362-8faa-da454810baae",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C37",
+      "claim": "BEC organoids actively reprogram their metabolism to cope with aberrant lipid overload.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that BEC organoids actively reprogram their metabolism to cope with aberrant lipid overload.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the gene expression changes observed in Figure 1E-F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "f2d8a4f8-09e6-4bcd-964e-d1d7685bff89",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C38",
+      "claim": "HFD-fed mice gained weight and developed liver steatosis, but no apparent fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, HFD-fed mice gained weight and developed liver steatosis, but no apparent fibrosis (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "fbff76a5-b387-42fa-bb4b-010544e0be14",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C39",
+      "claim": "HFD-feeding led to an accumulation of lipid droplets in the periportal zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, HFD-feeding led to an accumulation of lipid droplets in the periportal zone (Figure 1\u2014figure supplement 1F) and within bile ducts, as reflected by the localization of BODIPY signal in PANCK (BEC marker) positive cells (Figure 1H), without inducing epithelial damage (Figure 1\u2014figure supplement 1G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "5fe23feb-46a3-41f4-b4c0-0c429d13ce41",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C40",
+      "claim": "HFD-feeding led to an accumulation of lipid droplets within bile ducts.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, HFD-feeding led to an accumulation of lipid droplets in the periportal zone (Figure 1\u2014figure supplement 1F) and within bile ducts, as reflected by the localization of BODIPY signal in PANCK (BEC marker) positive cells (Figure 1H), without inducing epithelial damage (Figure 1\u2014figure supplement 1G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "a2b09e0c-4885-46bd-99a2-d3ce4451414a",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C41",
+      "claim": "HFD-feeding did not induce epithelial damage in bile ducts.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, HFD-feeding led to an accumulation of lipid droplets in the periportal zone (Figure 1\u2014figure supplement 1F) and within bile ducts, as reflected by the localization of BODIPY signal in PANCK (BEC marker) positive cells (Figure 1H), without inducing epithelial damage (Figure 1\u2014figure supplement 1G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "a31da246-00cd-4b6d-bea6-8257b4a1d0c5",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C42",
+      "claim": "Flow cytometry analysis of BECs stained with EPCAM and BODIPY confirmed that BECs are able to store lipids upon HFD feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, flow cytometry analysis of BECs stained with EPCAM, a pan-BEC marker (Aloia et al., 2019; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019) and BODIPY confirmed that these cells are able to store lipids upon HFD feeding (Figure 1I and Figure 1\u2014figure supplement 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1I and Figure 1\u2014figure supplement 1L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "578397c7-38ee-46e6-8312-48142137fee0",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C43",
+      "claim": "EPCAM is a pan-BEC marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, flow cytometry analysis of BECs stained with EPCAM, a pan-BEC marker (Aloia et al., 2019; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019) and BODIPY confirmed that these cells are able to store lipids upon HFD feeding (Figure 1I and Figure 1\u2014figure supplement 1L).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "97820150-aab6-4ac1-8c54-5798802a962f",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C44",
+      "claim": "HFD feeding induces considerable transcriptional changes in BECs in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of these data revealed a diet-dependent clustering in Principal Component Analysis (Figure 2\u2014figure supplement 1B), indicating that HFD feeding induces considerable transcriptional changes in BECs in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "4a081a34-c820-4dc3-b7e8-f89154c5ccd4",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C45",
+      "claim": "Differential expression analysis revealed a total of 495 significantly changed genes in BECs upon HFD feeding, with 121 upregulated and 374 downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis further revealed a total of 495 significantly changed genes, 121 upregulated and 374 downregulated (Figure 2\u2014figure supplement 1C and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "c3b39835-02de-440d-9e64-c6441eb68a0e",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C46",
+      "claim": "HFD promoted the upregulation of Ncam1 in BECs.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, HFD promoted the upregulation of Ncam1 (Figure 2\u2014figure supplement 1D), a well-established mediator of BEC activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "b67899b3-6c57-4d19-b326-326558d34fbf",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C47",
+      "claim": "Ncam1 is a well-established mediator of BEC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, HFD promoted the upregulation of Ncam1 (Figure 2\u2014figure supplement 1D), a well-established mediator of BEC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "dc93bbfe-0369-4bfb-9fc2-98ab9ff76e72",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C48",
+      "claim": "Canonical markers of the DR were not changed in EPCAM+ BECs isolated from livers of HFD-fed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the absence of fibrosis and biliary epithelial damage, canonical makers of the DR (Manco et al., 2019; Sato et al., 2019; Tsuchiya et al., 2014) were not changed in EPCAM+ BECs isolated from livers of HFD-fed mice (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "cbe9ddb2-efae-4786-bf5a-ebb85bdd3ef0",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C49",
+      "claim": "Cell proliferation is the major process induced in BECs upon HFD feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore the transcriptional changes, we performed gene set enrichment analysis (GSEA) on Gene Ontology (GO) terms (Figure 2B) and KEGG (Figure 2\u2014figure supplement 1F) pathways and identified cell proliferation, the most prevalent early feature of BEC activation (Sato et al., 2019) as the major process induced in these cells upon HFD feeding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GSEA analysis shown in Figure 2B and Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "6506ea6d-dc41-4911-b77f-693ad2f7148e",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C50",
+      "claim": "Cell proliferation is the most prevalent early feature of BEC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore the transcriptional changes, we performed gene set enrichment analysis (GSEA) on Gene Ontology (GO) terms (Figure 2B) and KEGG (Figure 2\u2014figure supplement 1F) pathways and identified cell proliferation, the most prevalent early feature of BEC activation (Sato et al., 2019) as the major process induced in these cells upon HFD feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "a4926ced-e1b0-4d8c-a220-ae0fa2ccbac6",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C51",
+      "claim": "Expansion of reactive BECs requires detachment from their niche and invasion of the parenchyma toward the damaged hepatic area.",
+      "claim_type": "EXPLICIT",
+      "source": "Expansion of the reactive BECs requires detachment from their niche and invasion of the parenchyma toward the damaged hepatic area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "72d19aad-4a90-433a-ad98-95e71470bbb5",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C52",
+      "claim": "Reorganizing the extracellular matrix (ECM) and reducing focal adhesion are processes that make possible the expansion of reactive BECs.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is made possible by reorganizing the extracellular matrix (ECM) and reducing focal adhesion, effectively downregulated in EPCAM+ BECs upon HFD (Figure 2B and Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GSEA analysis shown in Figure 2B and Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "8e4e4936-c772-4931-872f-198e06f78092",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C53",
+      "claim": "ECM organization and focal adhesion pathways are effectively downregulated in EPCAM+ BECs upon HFD.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is made possible by reorganizing the extracellular matrix (ECM) and reducing focal adhesion, effectively downregulated in EPCAM+ BECs upon HFD (Figure 2B and Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GSEA analysis shown in Figure 2B and Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "110bb8fa-4172-431d-ba32-6fb32b5e9467",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C54",
+      "claim": "HFD feeding was sufficient to induce a marked increase in the number of active BECs (Ki67+/OPN+ cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we found that HFD feeding was sufficient to induce a marked increase in the number of active BECs (i.e. Ki67+/OPN+ cells- Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "e428f0bd-e234-4895-80df-83df0bd69768",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C55",
+      "claim": "Chronic lipid exposure stimulates the appearance of reactive BECs within the bile ducts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were observed in two independent cohorts of mice challenged with HFD and injected with EdU either to track proliferating cells by immunofluorescence (Figure 2E\u2013F) or to quantify by flow cytometry the amount of EPCAM+/EdU+ BECs in the liver (Figure 2G), confirming that chronic lipid exposure stimulates the appearance of reactive BECs within the bile ducts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "ea003f2d-90a2-4621-ae2c-3b9b27d0b81d",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C56",
+      "claim": "The efficiency of BECs to generate organoids in vitro mirrors their activation status.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of BECs to generate organoids in vitro has been shown to mirror their activation status (Aloia et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "155905b8-e44a-448c-8a93-0b5f94074eb7",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C57",
+      "claim": "HFD-derived BECs were significantly more efficient in generating organoids than their CD counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed that HFD-derived BECs were significantly more efficient in generating organoids than their CD counterparts (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "4bc2e8b6-b4b0-4285-8892-d9c65fcd67c4",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C58",
+      "claim": "HFD feeding is sufficient to induce, in vivo, the exit of BECs from a quiescent state and the acquisition of both proliferative and pro-regenerative features.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results demonstrate that HFD feeding is sufficient to induce, in vivo, the exit of BECs from a quiescent state and the acquisition of both proliferative and pro-regenerative features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the experimental findings shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "2731d1cc-865e-4d52-aa5f-0d5d280d0da4",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C59",
+      "claim": "Cell division, mitosis, and chromosome segregation were the shared enriched pathways for upregulated genes in HFD and DDC samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the most pronounced changes shared between HFD and DDC samples by overlapping separate over-representation enrichment analyses (Supplementary file 2). Cell division, mitosis, and chromosome segregation were the shared enriched pathways for upregulated genes in HFD and DDC samples (Figure 3A), while ECM organization was the shared enriched pathway for the downregulated genes in HFD and DDC conditions (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by over-representation analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "9192009a-017d-4930-82a5-af2836c903cd",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C60",
+      "claim": "ECM organization was the shared enriched pathway for the downregulated genes in HFD and DDC conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the most pronounced changes shared between HFD and DDC samples by overlapping separate over-representation enrichment analyses (Supplementary file 2). Cell division, mitosis, and chromosome segregation were the shared enriched pathways for upregulated genes in HFD and DDC samples (Figure 3A), while ECM organization was the shared enriched pathway for the downregulated genes in HFD and DDC conditions (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by over-representation analysis shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "3db6988c-5d40-4495-9523-8084ba2a1a9a",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C61",
+      "claim": "The mechanisms of BEC activation induced by lipid overload partially overlap with those by which BECs expand during the DR with biliary epithelial damage.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that the mechanisms of BEC activation induced by lipid overload partially overlap with those by which BECs expand during the DR with biliary epithelial damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the comparison of HFD and DDC transcriptional profiles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "4bed20c0-e40e-411e-99b0-410c8e46fe5b",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C62",
+      "claim": "A more detailed analysis of DDC- and HFD-derived BECs revealed the concomitant enrichment of four overlapping transcription factor (TF) gene sets, E2F1-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a more detailed analysis of DDC- and HFD-derived BECs, revealed the concomitant enrichment of four overlapping transcription factor (TF) gene sets, E2F1-4 (Figure 3B), and their target genes (Figure 3\u2014figure supplement 1B), which have not been linked to BEC activation or DR previously.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transcription factor enrichment analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "1f23ea7e-c402-485a-a892-10acabd34894",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C63",
+      "claim": "E2F1-4 have not been linked to BEC activation or DR previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a more detailed analysis of DDC- and HFD-derived BECs, revealed the concomitant enrichment of four overlapping transcription factor (TF) gene sets, E2F1-4 (Figure 3B), and their target genes (Figure 3\u2014figure supplement 1B), which have not been linked to BEC activation or DR previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "bf761f6f-cad7-4615-a69c-7346e07790e7",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C64",
+      "claim": "E2Fs and cell division pathway are the most upregulated genes in proliferating BEC-organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we identified an enrichment of E2Fs (Figure 3C and Supplementary file 2) and cell division pathway (Figure 3\u2014figure supplement 1C) as the most upregulated genes in proliferating BEC-organoids, further corroborating the role of E2Fs in these two in vitro (Aloia et al., 2019) and in vivo (Pepe-Mooney et al., 2019) DR models.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of published data shown in Figure 3C and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "3889a57f-edf2-4e1a-b5b7-5215bbe21910",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C65",
+      "claim": "E2Fs are a large family of TFs with complex functions in cell cycle progression, DNA replication, repair, and G2/M checkpoints.",
+      "claim_type": "EXPLICIT",
+      "source": "E2Fs are a large family of TFs with complex functions in cell cycle progression, DNA replication, repair, and G2/M checkpoints (Dimova and Dyson, 2005; Dyson, 1998; Dyson, 2016; Ren et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "f1ef1224-2b1d-4640-a7fc-f1c475b1cfa7",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C66",
+      "claim": "The activation of E2Fs represents an early event in the process of BEC activation, which is necessary for exiting the quiescent state and promoting BEC expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we hypothesized that the activation of E2Fs might represent an early event in the process of BEC activation, which is necessary for exiting the quiescent state and promoting BEC expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis based on the data and knowledge of E2F function.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "2cfd4847-adfc-422c-843d-201920ea48da",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C67",
+      "claim": "E2f1-/- mice were refractory to BEC activation induced by lipid overload upon HFD, as opposed to E2f1+/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, E2f1-/- mice were refractory to BEC activation induced by lipid overload upon HFD, as opposed to E2f1+/+ mice (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "ee0069ee-8504-48ac-be14-30f09a602f2b",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C68",
+      "claim": "Silencing of E2F1 in EPCAM+ BECs from livers of C57BL/6 J HFD-fed mice reduced the capacity to form organoids in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, silencing of E2F1 in EPCAM+ BECs from livers of C57BL/6 J HFD-fed mice (Figure 3\u2014figure supplement 1D) reduced the capacity to form organoids in vitro (Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "382346c1-b3d1-499d-9b87-a6b77c7d89bd",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C69",
+      "claim": "E2F1 plays a previously unrecognized role in controlling BEC activation during HFD-induced hepatic steatosis in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate a previously unrecognized role of E2F1 in controlling BEC activation during HFD-induced hepatic steatosis in vivo and support a pivotal role of this transcription factor in controlling BEC expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the experimental findings shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "a0472172-2ab8-4e1c-9ae2-710cf7318166",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C70",
+      "claim": "E2F1 plays a pivotal role in controlling BEC expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate a previously unrecognized role of E2F1 in controlling BEC activation during HFD-induced hepatic steatosis in vivo and support a pivotal role of this transcription factor in controlling BEC expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the experimental findings shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "4a606a57-72b2-40d8-a2d1-17d7b761b94c",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C71",
+      "claim": "The exit of terminally-differentiated cells from their quiescent state requires both energy and building block availability to support cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "The exit of terminally-differentiated cells from their quiescent state requires both energy and building block availability to support cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "8c4ebb9f-ca8e-4ccc-8d92-023d096a6502",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C72",
+      "claim": "Proliferative cells reprogram their glucose metabolism to meet their increased need for biomass and energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferative cells, therefore, reprogram their glucose metabolism to meet their increased need for biomass and energy (Vander Heiden et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "39ee1d2d-92a5-41ad-af2f-fe2702f61979",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C73",
+      "claim": "Purine and pyrimidine metabolism, as well as the pentose-phosphate pathway, are enriched during in vitro BEC-organoid formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this notion, our interrogation of in vitro BEC-organoid formation dataset (Aloia et al., 2019) revealed the enrichment of purine and pyrimidine metabolism, as well as the pentose-phosphate pathway, which is tightly connected to glycolysis (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of published data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "56623203-77a9-4a53-8b05-12834cae2e06",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C74",
+      "claim": "The pentose-phosphate pathway is tightly connected to glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this notion, our interrogation of in vitro BEC-organoid formation dataset (Aloia et al., 2019) revealed the enrichment of purine and pyrimidine metabolism, as well as the pentose-phosphate pathway, which is tightly connected to glycolysis (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "9b0bb048-bf28-4ad9-86ee-113aaa8cda30",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C75",
+      "claim": "A substrate oxidation test in BEC-organoids revealed a preference for glucose, as reflected by the decrease in maximal respiration when UK5099, a mitochondrial pyruvate carrier inhibitor, was used.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these findings, a substrate oxidation test in BEC-organoids revealed a preference for glucose, as reflected by the decrease in maximal respiration, when UK5099, a mitochondrial pyruvate carrier inhibitor, was used (Figure 4A\u2013B), while no changes were observed with inhibitors of glutamine (BPTES) and FA (Etomoxir) metabolism (Figure 4\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "a5427a1e-9969-4c71-bcbc-29ca2fd89f75",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C76",
+      "claim": "No changes in maximal respiration were observed with inhibitors of glutamine (BPTES) and FA (Etomoxir) metabolism in BEC-organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these findings, a substrate oxidation test in BEC-organoids revealed a preference for glucose, as reflected by the decrease in maximal respiration, when UK5099, a mitochondrial pyruvate carrier inhibitor, was used (Figure 4A\u2013B), while no changes were observed with inhibitors of glutamine (BPTES) and FA (Etomoxir) metabolism (Figure 4\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "1aff8997-2004-4833-af65-5497ab97f7f4",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C77",
+      "claim": "HFD-FA BEC-organoids demonstrated increased compensatory glycolytic rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, HFD-FA BEC-organoids demonstrated increased compensatory glycolytic rates (Figure 4D\u2013E and Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "c8038a12-bb62-4351-8920-5b5daf0d262b",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C78",
+      "claim": "There was a reduction in oxidative phosphorylation in HFD-FA BEC-organoids, as evidenced by the decrease in maximal respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, there was a reduction in oxidative phosphorylation in HFD-FA BEC-organoids, as evidenced by the decrease in maximal respiration (Figure 4\u2014figure supplement 1E\u2013G), which might reflect their preference for the glycolytic pathway to generate biomass.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "6755610a-0d41-4a81-b407-ea679ca2f6ea",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C79",
+      "claim": "The decrease in maximal respiration in HFD-FA BEC-organoids might reflect their preference for the glycolytic pathway to generate biomass.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, there was a reduction in oxidative phosphorylation in HFD-FA BEC-organoids, as evidenced by the decrease in maximal respiration (Figure 4\u2014figure supplement 1E\u2013G), which might reflect their preference for the glycolytic pathway to generate biomass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative interpretation of the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "e3b26e1c-0783-417a-a4f8-12c743abb04a",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C80",
+      "claim": "E2Fs coordinate several aspects of cellular metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides their prominent role in cell cycle progression, E2Fs coordinate several aspects of cellular metabolism (Denechaud et al., 2017; Nicolay and Dyson, 2013), and promote glycolysis in different contexts (Blanchet et al., 2011; Denechaud et al., 2016; Huber et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "b04b84c5-970b-48c9-8d17-46dd8171d585",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C81",
+      "claim": "E2Fs promote glycolysis in different contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides their prominent role in cell cycle progression, E2Fs coordinate several aspects of cellular metabolism (Denechaud et al., 2017; Nicolay and Dyson, 2013), and promote glycolysis in different contexts (Blanchet et al., 2011; Denechaud et al., 2016; Huber et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "e9a71251-2e85-46ec-9a6c-e6cc7a59d45f",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C82",
+      "claim": "HLM006474 treatment reduced the transcriptional levels of several genes involved in cell cycle progression and glycolytic metabolism in BEC-organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, HLM006474 treatment reduced the transcriptional levels of several genes involved in cell cycle progression and glycolytic metabolism (Figure 4G) and decreased the glycolytic flux, as evidenced by the blunted proton efflux rate (PER) (Figure 4H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "0ab7c87b-8a67-49cb-8163-27fa852704a7",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C83",
+      "claim": "HLM006474 treatment decreased the glycolytic flux in BEC-organoids, as evidenced by the blunted proton efflux rate (PER).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, HLM006474 treatment reduced the transcriptional levels of several genes involved in cell cycle progression and glycolytic metabolism (Figure 4G) and decreased the glycolytic flux, as evidenced by the blunted proton efflux rate (PER) (Figure 4H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "8d01fcb4-78f3-430e-bd95-f0a63a8b5014",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C84",
+      "claim": "E2F inhibition was able to reverse the metabolic phenotype only in HFD-FA BEC-organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, E2F inhibition was able to reverse the metabolic phenotype only in HFD-FA BEC-organoids (Figure 4J\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4J-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "76dcf369-44b0-4b59-9cc4-b3bf226a877b",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C85",
+      "claim": "HFD-induced E2F activation controls the conversion of BECs from quiescent to active progenitors by promoting the expression of cell cycle genes while simultaneously driving a shift toward glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, these results demonstrate that HFD-induced E2F activation controls the conversion of BECs from quiescent to active progenitors by promoting the expression of cell cycle genes while simultaneously driving a shift toward glycolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the experimental findings shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "a4446fe7-bdb3-4560-b2de-ab7fc4cb7b07",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C86",
+      "claim": "Through DR activation, BECs represent an essential reservoir of progenitors that are crucial for coordinating hepatic epithelial regeneration in the context of chronic liver diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Through DR activation, BECs represent an essential reservoir of progenitors that are crucial for coordinating hepatic epithelial regeneration in the context of chronic liver diseases (Choi et al., 2014; Deng et al., 2018; Espa\u00f1ol-Su\u00f1er et al., 2012; Huch et al., 2013; Lu et al., 2015; Raven et al., 2017; Rodrigo-Torres et al., 2014; Russell et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "0b04097b-0abc-4e9e-95ca-a669ee5ca8cc",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C87",
+      "claim": "BEC functions are tightly controlled by YAP metabolic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "BEC functions are tightly controlled by YAP metabolic pathways (Meyer et al., 2020; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019), and recent studies from different tissues have provided evidence that specific metabolic states play instructive roles in controlling cell fate and tissue regeneration (Beyaz et al., 2016; Capolupo et al., 2022; Miao et al., 2020; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "51f0e66b-57e1-4a67-80ba-93057036da4a",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C88",
+      "claim": "Specific metabolic states play instructive roles in controlling cell fate and tissue regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "BEC functions are tightly controlled by YAP metabolic pathways (Meyer et al., 2020; Pepe-Mooney et al., 2019; Planas-Paz et al., 2019), and recent studies from different tissues have provided evidence that specific metabolic states play instructive roles in controlling cell fate and tissue regeneration (Beyaz et al., 2016; Capolupo et al., 2022; Miao et al., 2020; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "2b7b44b6-249c-44a2-8964-ce422e0063ee",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C89",
+      "claim": "Aberrant lipid accumulation is a hallmark of early NAFLD.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant lipid accumulation is a hallmark of early NAFLD, and imbalances in lipid metabolism are known to affect hepatocyte homeostasis, including induction of lipo-toxicity and cell death (Wang et al., 2016b; Sano et al., 2021; De Gottardi et al., 2007; Wobser et al., 2009; Ipsen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "35c39069-128a-454b-bf43-3fff38a81e91",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C90",
+      "claim": "Imbalances in lipid metabolism are known to affect hepatocyte homeostasis, including induction of lipo-toxicity and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant lipid accumulation is a hallmark of early NAFLD, and imbalances in lipid metabolism are known to affect hepatocyte homeostasis, including induction of lipo-toxicity and cell death (Wang et al., 2016b; Sano et al., 2021; De Gottardi et al., 2007; Wobser et al., 2009; Ipsen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "1c398b04-920b-4673-993d-e408a55f480b",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C91",
+      "claim": "BECs are resistant to lipid-induced toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using HFD- fed mouse models, we studied BEC metabolism in steatosis, the first stage of NAFLD, and demonstrated lipid accumulation in BECs during chronic HFD in vivo and their resistance to lipid-induced toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing no effect on viability (Figure 1C-D) and no epithelial damage (Figure 1\u2014figure supplement 1G-I).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "efe65dd9-749c-4e94-9414-9812f34370fc",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C92",
+      "claim": "FAs directly target BECs, without any involvement of hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "By using BEC-organoids, we observed that FAs directly target BECs, without any involvement of hepatocytes and that BECs functionally respond to lipid overload.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the use of isolated BEC-organoids which do not contain hepatocytes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "ce7b81ff-eba4-4864-b06b-98df7ee6e9dd",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C93",
+      "claim": "BECs functionally respond to lipid overload.",
+      "claim_type": "EXPLICIT",
+      "source": "By using BEC-organoids, we observed that FAs directly target BECs, without any involvement of hepatocytes and that BECs functionally respond to lipid overload.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing metabolic changes (Figure 1E-F, Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "16dfe29d-127b-4cc8-9d79-5efa1ea04fdb",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C94",
+      "claim": "BEC-organoids derived from CD- and HFD-fed mouse livers shift their cellular metabolism toward more glycolysis in the presence of lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, BEC-organoids derived from CD- and HFD-fed mouse livers were shown to shift their cellular metabolism toward more glycolysis in the presence of lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "959af6c2-c316-4ee2-96c7-18048a2f6422",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C95",
+      "claim": "The HFD-induced metabolic shift was sufficient to reprogram BEC identity in vivo, allowing their exit from a quiescent state and the simultaneous acquisition of progenitor functions, such as proliferation and organoid-initiating capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the HFD-induced metabolic shift was sufficient to reprogram BEC identity in vivo, allowing their exit from a quiescent state and the simultaneous acquisition of progenitor functions, such as proliferation and organoid-initiating capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "c883a0b8-ba38-45d1-9a2a-ad70d28485c9",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C96",
+      "claim": "Lipid overload is sufficient to induce BEC activation in steatotic livers and this process precedes parenchymal damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed that lipid overload is sufficient to induce BEC activation in steatotic livers and that this process precedes parenchymal damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing BEC activation without fibrosis or epithelial damage (Figure 1\u2014figure supplement 1E, G-I, Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "08a0ef91-ec88-4150-8879-e0d4531ea9e6",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C97",
+      "claim": "Long-term feeding of a lipid-enriched diet strongly promotes BEC proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "To fully understand the underlying basis of the observed phenotype, we characterized the transcriptome of primary BECs derived from steatotic livers of HFD-fed mice and demonstrated that long-term feeding of a lipid-enriched diet strongly promotes BEC proliferation, suggesting a strong link between metabolic adaptation and progenitor function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "7762c897-2256-4fca-9a75-32137759e092",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C98",
+      "claim": "There is a strong link between metabolic adaptation and progenitor function in BECs.",
+      "claim_type": "EXPLICIT",
+      "source": "To fully understand the underlying basis of the observed phenotype, we characterized the transcriptome of primary BECs derived from steatotic livers of HFD-fed mice and demonstrated that long-term feeding of a lipid-enriched diet strongly promotes BEC proliferation, suggesting a strong link between metabolic adaptation and progenitor function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "65a75c50-4093-4714-9c36-a139f7d61759",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C99",
+      "claim": "E2F transcription factors are master regulators of BEC activation in the context of NAFLD.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining our transcriptomic analysis with data mining of publicly available DR datasets (Aloia et al., 2019; Pepe-Mooney et al., 2019), we identified the E2F transcription factors as master regulators of BEC activation in the context of NAFLD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transcriptomic analysis (Figure 3) and functional studies (Figure 3E-F, Figure 3\u2014figure supplement 1D-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "8c5a76d8-3b26-42c9-a74e-d32e372a78c7",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C100",
+      "claim": "The expression of Pdk4, an E2F1 target, was upregulated in FA-treated BEC-organoids and upon HFD.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the expression of Pdk4, an E2F1 target (Hsieh et al., 2008; Wang et al., 2016a), was upregulated in FA-treated BEC-organoids and upon HFD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "5ca27809-9fd5-4612-b5f6-dbddddfd7570",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C101",
+      "claim": "Pdk4 is an E2F1 target.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the expression of Pdk4, an E2F1 target (Hsieh et al., 2008; Wang et al., 2016a), was upregulated in FA-treated BEC-organoids and upon HFD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "121932af-e880-4b5e-8e12-d0043711fa94",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C102",
+      "claim": "PDK4 limits the utilization of pyruvate for oxidative metabolism while enhancing glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "PDK4 limits the utilization of pyruvate for oxidative metabolism while enhancing glycolysis, which reinforces our data demonstrating that E2Fs rewire BEC metabolism toward glycolysis to fuel progenitor proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "5e55f6b7-65c8-4fe0-a1e8-d5fb3b8a51ac",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C103",
+      "claim": "E2Fs rewire BEC metabolism toward glycolysis to fuel progenitor proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "PDK4 limits the utilization of pyruvate for oxidative metabolism while enhancing glycolysis, which reinforces our data demonstrating that E2Fs rewire BEC metabolism toward glycolysis to fuel progenitor proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "1c6d35bd-b8eb-4bae-be3d-121867511a6e",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C104",
+      "claim": "E2Fs are the molecular rheostat integrating the metabolic cell state with the cell cycle machinery to coordinate BEC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations feature E2Fs as the molecular rheostat integrating the metabolic cell state with the cell cycle machinery to coordinate BEC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "e795d8b6-7fc1-4923-b45c-84a8f382efae",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C105",
+      "claim": "A recent report showed increased numbers of cholangiocytes in steatotic human livers.",
+      "claim_type": "EXPLICIT",
+      "source": "While our data are derived from obese mice, a recent report showed increased numbers of cholangiocytes in steatotic human livers (Hallett et al., 2022), and E2F1 has been found to be upregulated in the livers of obese patients (Denechaud et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "94745ccd-02be-46d5-a1cd-455bce78566b",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C106",
+      "claim": "E2F1 has been found to be upregulated in the livers of obese patients.",
+      "claim_type": "EXPLICIT",
+      "source": "While our data are derived from obese mice, a recent report showed increased numbers of cholangiocytes in steatotic human livers (Hallett et al., 2022), and E2F1 has been found to be upregulated in the livers of obese patients (Denechaud et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "c4caad42-69db-4c3b-ada4-ec28f46b838b",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "claim_id": "C107",
+      "claim": "Human subjects with elevated visceral fat demonstrated increased glucose metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, human subjects with elevated visceral fat demonstrated increased glucose metabolism (Broadfield et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d3170c9e-d610-4e52-ac98-8d63b42c1eb9",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BECs accumulate lipids both in vitro (in organoids treated with fatty acids) and in vivo (in HFD-fed mice), without loss of viability or induction of epithelial damage. This lipid accumulation is dose-dependent in organoids and occurs specifically in bile ducts marked by PANCK/EPCAM positivity in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C30, C31, C40, and C42 are directly supported by experimental data in Figures 1B-D, 1H-I, and supplementary figures showing BODIPY staining, viability assays, and flow cytometry. Claim C32 appropriately cites prior literature. The convergence of in vitro and in vivo evidence strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "502549b6-0c95-4f60-98ca-266c280772e6",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Fatty acid treatment induces metabolic gene expression changes in BEC-organoids, including alterations in Scd1, Hmgcs2, Pdk4, and Aldh1a1, suggesting active metabolic reprogramming in response to lipid overload.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are supported by RT-qPCR data in Figures 1E-F showing statistically significant changes in metabolic gene expression. Claim C37 is a reasonable inference from these data, though the term 'actively reprogram' implies causality that is not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "9cbcbee9-b45a-4602-87b6-75e9e4033e86",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "HFD feeding for 15 weeks induces weight gain, liver steatosis, and lipid accumulation in the periportal zone without causing fibrosis or epithelial damage in bile ducts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C39, and C41 are well-supported by histological data in Figure 1\u2014figure supplement 1E-I, including H&E, picrosirius red, Oil Red O, cleaved caspase-3, and PANCK staining. The absence of fibrosis and epithelial damage is appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "e4cbd5c9-0e00-4edd-94ac-aa3bdd462131",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RNA-seq analysis of EPCAM+ BECs from HFD-fed mice reveals substantial transcriptional changes (495 differentially expressed genes) including upregulation of Ncam1, but without changes in canonical DR markers, consistent with early BEC activation preceding full DR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 and C48 are supported by RNA-seq data shown in Figure 2\u2014figure supplement 1B-E. The PCA clustering, differential expression analysis, and specific gene expression patterns are appropriately documented. The interpretation that this represents early activation is reasonable given the absence of fibrosis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "4749ceaf-520a-47f8-930d-bb647353a34a",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "HFD feeding induces BEC proliferation (increased Ki67+/OPN+ and EdU+ cells) and enhanced organoid-forming capacity, with transcriptomic enrichment of cell proliferation pathways and downregulation of ECM organization/focal adhesion pathways, demonstrating that lipid overload is sufficient to activate BECs and promote progenitor features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C53-C55, C57-C58 are strongly supported by converging evidence from GSEA (Figure 2B), immunofluorescence (Figures 2C-F), flow cytometry (Figure 2G), and organoid formation assays (Figure 2I). Multiple independent experimental approaches validate the proliferative phenotype. Statistical significance is appropriately demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "30ac1ec4-a139-49c7-9db8-2f9fd7eeb67a",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Comparative transcriptomic analysis reveals that HFD-induced BEC activation shares key features with DDC-induced DR, including enrichment of cell division/mitosis pathways and downregulation of ECM organization. Notably, E2F1-4 transcription factors are enriched in both HFD and DDC conditions, as well as in proliferating organoids, representing a novel finding not previously linked to BEC activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 are supported by over-representation analysis (Figure 3A, 3\u2014figure supplement 1A) and TF enrichment analysis (Figures 3B-C). The comparison with published DDC data (GSE125688) and organoid data (GSE123133) is methodologically sound. Claim C63 regarding novelty is appropriately stated as the authors' assessment of the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "4a8199a1-3973-4a4c-8083-aa26d6ab989e",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "E2F1 is functionally required for HFD-induced BEC activation, as demonstrated by the absence of proliferative response in E2f1-/- mice and reduced organoid formation upon E2F1 silencing in isolated BECs from HFD-fed mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 are strongly supported by genetic loss-of-function experiments (Figure 3E-F) and siRNA knockdown studies (Figure 3\u2014figure supplement 1D-E). The E2f1-/- mice show no increase in Ki67+/PANCK+ cells upon HFD, providing compelling evidence for E2F1's necessity. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "309ceade-45f3-4248-b180-cd3ff147beba",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "BEC-organoids preferentially utilize glucose for metabolism, as shown by substrate oxidation tests, and shift toward increased glycolysis with reduced oxidative phosphorylation when exposed to fatty acids, particularly in organoids derived from HFD-fed mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73, C75-C78, and C94 are supported by Seahorse metabolic flux analyses (Figures 4A-B, 4D-E, 4\u2014figure supplement 1A-G). The use of specific metabolic inhibitors (UK5099, BPTES, Etomoxir) appropriately demonstrates substrate preference. The glycolytic shift in HFD-FA organoids is statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "71275bf4-f2f5-4e3f-aa9b-e057a20bb139",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "E2F inhibition with HLM006474 reduces expression of cell cycle and glycolytic genes, decreases glycolytic flux, and reverses the metabolic phenotype specifically in HFD-FA organoids, demonstrating that E2F activation controls both proliferation and metabolic reprogramming toward glycolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 are supported by RT-qPCR (Figure 4G) and Seahorse glycolytic rate assays (Figures 4H-K) showing that E2F inhibition reduces both gene expression and glycolytic flux. The specificity of the effect in HFD-FA organoids (C84) strengthens the mechanistic link. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "07be0cc8-5712-471d-a4c4-bcfdadaf14a3",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "BECs are resistant to lipid-induced toxicity and respond functionally to lipid overload through direct fatty acid targeting (demonstrated in isolated organoids), with lipid overload being sufficient to induce BEC activation in steatotic livers prior to parenchymal damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 and C96 are supported by viability assays (Figures 1C-D), absence of epithelial damage (Figure 1\u2014figure supplement 1G-I), metabolic changes in isolated organoids (Figures 1E-F, 4), and proliferation data in the absence of fibrosis (Figures 1\u2014figure supplement 1E, 2). The use of organoids appropriately demonstrates direct effects independent of hepatocytes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "4d7acdd8-b9b4-4521-9464-bcbc3edf0c18",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The HFD-induced metabolic shift reprograms BEC identity, promoting exit from quiescence and acquisition of progenitor functions, with E2F transcription factors identified as master regulators that integrate metabolic state with cell cycle machinery to coordinate BEC activation through glycolytic rewiring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95, C97-C99, C103-C104 represent integrative conclusions supported by the combined evidence from transcriptomics (Figures 2-3), functional studies (Figures 3E-F), and metabolic analyses (Figure 4). While these are interpretive claims, they are well-supported by the convergence of multiple experimental approaches. The mechanistic link between E2Fs, metabolism, and proliferation is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "7d71d5a0-7f92-403a-8166-b161febd3a26",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Pdk4, an E2F1 target gene that limits pyruvate oxidation while enhancing glycolysis, is upregulated in FA-treated organoids and upon HFD, providing a mechanistic link between E2F activation and metabolic reprogramming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C100 is supported by RT-qPCR data (Figure 1F) showing Pdk4 upregulation. Claim C101 is appropriately cited from prior literature. Claim C102 represents established knowledge about PDK4 function. Together, these claims provide a plausible mechanistic connection, though direct demonstration that E2F1 regulates Pdk4 in this system would strengthen the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "8159de16-d166-4828-b9e5-8dd0b5d7da39",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing that BECs undergo activation during liver injury through the ductular reaction (DR) process, that DR is observed in chronic liver diseases including late-stage NAFLD, and that various signaling pathways (YAP, mTORC1, TET1, NCAM1) have been implicated in DR, with YAP activation occurring in fibrotic but not steatotic livers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C23 represent background knowledge appropriately cited from prior literature. These establish the context for the current study. Claim C23 is presented as an inference from cited literature, which is appropriate. These claims provide necessary background but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "6ea638df-29f3-4ad1-b00c-d025be9605d3",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims about BEC-organoid properties, including their establishment from bile duct progenitors, bipotency, differentiation capacity, therapeutic potential, and use of EPCAM as a BEC marker, as well as the relationship between organoid-forming efficiency and BEC activation status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29, C43, C47, C50, and C56 represent established knowledge appropriately cited from prior literature. These provide methodological context and justify the use of organoid formation efficiency as a readout of BEC activation. These are not novel findings but appropriate background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "13066a29-e715-41b0-9153-ece121d5e7eb",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about E2F functions in cell cycle and metabolism, metabolic requirements for cell proliferation, the role of BECs in liver regeneration, and the effects of lipid dysregulation in NAFLD and hepatocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65, C71-C72, C74, C80-C81, C86-C90, and C102 represent established knowledge appropriately cited from prior literature. These provide necessary biological context for interpreting the experimental findings. These are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "e539b8a3-457b-491e-a323-c8099373c2f1",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Correlative evidence from human studies showing increased cholangiocyte numbers in steatotic livers, E2F1 upregulation in obese patients, and increased glucose metabolism in subjects with elevated visceral fat, suggesting potential translational relevance of the mouse findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C105-C107 are appropriately cited from prior literature and presented as correlative observations in the Discussion. However, these are not direct validations of the current findings in human samples. The authors appropriately acknowledge these are correlative and suggest they 'set the ground for future research.' Direct human validation would be needed to confirm the mechanism operates similarly in humans.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    },
+    {
+      "id": "fcec4d49-2a7a-4404-9358-91b8473e793b",
+      "content_id": "77cfd7ba-8742-4b4b-b3da-4eb09ee0a1d6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Speculative claims that E2F activation represents an early event necessary for BEC activation and that decreased maximal respiration reflects preference for glycolytic biomass generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66 and C79 are explicitly presented as hypotheses or speculative interpretations ('we hypothesized,' 'might reflect'). While C66 is subsequently tested and supported by experimental data, C79 remains speculative. These interpretive claims are appropriately qualified by the authors but represent inferences rather than directly demonstrated facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:57.905148Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ae2df6ac-8f12-45cf-96e1-7cff1a13b7a4",
+      "result_id": "d3170c9e-d610-4e52-ac98-8d63b42c1eb9"
+    },
+    {
+      "claim_id": "a39d4979-b11d-417b-bb54-579b7bf67a74",
+      "result_id": "d3170c9e-d610-4e52-ac98-8d63b42c1eb9"
+    },
+    {
+      "claim_id": "b6a6dbb6-4fc9-4215-9500-340deef133a1",
+      "result_id": "d3170c9e-d610-4e52-ac98-8d63b42c1eb9"
+    },
+    {
+      "claim_id": "7734c916-821b-48f4-b617-eccf800f157d",
+      "result_id": "d3170c9e-d610-4e52-ac98-8d63b42c1eb9"
+    },
+    {
+      "claim_id": "384e0a30-d1f9-4686-84e6-b3d0429c73d6",
+      "result_id": "d3170c9e-d610-4e52-ac98-8d63b42c1eb9"
+    },
+    {
+      "claim_id": "5fe23feb-46a3-41f4-b4c0-0c429d13ce41",
+      "result_id": "d3170c9e-d610-4e52-ac98-8d63b42c1eb9"
+    },
+    {
+      "claim_id": "a31da246-00cd-4b6d-bea6-8257b4a1d0c5",
+      "result_id": "d3170c9e-d610-4e52-ac98-8d63b42c1eb9"
+    },
+    {
+      "claim_id": "f75032bd-f10d-44dd-aa02-5b969501cbf0",
+      "result_id": "502549b6-0c95-4f60-98ca-266c280772e6"
+    },
+    {
+      "claim_id": "2c28eae2-3e6b-419b-a341-3b23fc08070c",
+      "result_id": "502549b6-0c95-4f60-98ca-266c280772e6"
+    },
+    {
+      "claim_id": "d3b9985e-da40-4f1b-a0d5-f8b06522b61f",
+      "result_id": "502549b6-0c95-4f60-98ca-266c280772e6"
+    },
+    {
+      "claim_id": "10ea231c-c2d9-4849-804d-97db2d5816fa",
+      "result_id": "502549b6-0c95-4f60-98ca-266c280772e6"
+    },
+    {
+      "claim_id": "deda81a5-7133-4362-8faa-da454810baae",
+      "result_id": "502549b6-0c95-4f60-98ca-266c280772e6"
+    },
+    {
+      "claim_id": "f2d8a4f8-09e6-4bcd-964e-d1d7685bff89",
+      "result_id": "9cbcbee9-b45a-4602-87b6-75e9e4033e86"
+    },
+    {
+      "claim_id": "fbff76a5-b387-42fa-bb4b-010544e0be14",
+      "result_id": "9cbcbee9-b45a-4602-87b6-75e9e4033e86"
+    },
+    {
+      "claim_id": "a2b09e0c-4885-46bd-99a2-d3ce4451414a",
+      "result_id": "9cbcbee9-b45a-4602-87b6-75e9e4033e86"
+    },
+    {
+      "claim_id": "97820150-aab6-4ac1-8c54-5798802a962f",
+      "result_id": "e4cbd5c9-0e00-4edd-94ac-aa3bdd462131"
+    },
+    {
+      "claim_id": "4a081a34-c820-4dc3-b7e8-f89154c5ccd4",
+      "result_id": "e4cbd5c9-0e00-4edd-94ac-aa3bdd462131"
+    },
+    {
+      "claim_id": "c3b39835-02de-440d-9e64-c6441eb68a0e",
+      "result_id": "e4cbd5c9-0e00-4edd-94ac-aa3bdd462131"
+    },
+    {
+      "claim_id": "dc93bbfe-0369-4bfb-9fc2-98ab9ff76e72",
+      "result_id": "e4cbd5c9-0e00-4edd-94ac-aa3bdd462131"
+    },
+    {
+      "claim_id": "cbe9ddb2-efae-4786-bf5a-ebb85bdd3ef0",
+      "result_id": "4749ceaf-520a-47f8-930d-bb647353a34a"
+    },
+    {
+      "claim_id": "8e4e4936-c772-4931-872f-198e06f78092",
+      "result_id": "4749ceaf-520a-47f8-930d-bb647353a34a"
+    },
+    {
+      "claim_id": "110bb8fa-4172-431d-ba32-6fb32b5e9467",
+      "result_id": "4749ceaf-520a-47f8-930d-bb647353a34a"
+    },
+    {
+      "claim_id": "e428f0bd-e234-4895-80df-83df0bd69768",
+      "result_id": "4749ceaf-520a-47f8-930d-bb647353a34a"
+    },
+    {
+      "claim_id": "155905b8-e44a-448c-8a93-0b5f94074eb7",
+      "result_id": "4749ceaf-520a-47f8-930d-bb647353a34a"
+    },
+    {
+      "claim_id": "4bc2e8b6-b4b0-4285-8892-d9c65fcd67c4",
+      "result_id": "4749ceaf-520a-47f8-930d-bb647353a34a"
+    },
+    {
+      "claim_id": "2731d1cc-865e-4d52-aa5f-0d5d280d0da4",
+      "result_id": "30ac1ec4-a139-49c7-9db8-2f9fd7eeb67a"
+    },
+    {
+      "claim_id": "9192009a-017d-4930-82a5-af2836c903cd",
+      "result_id": "30ac1ec4-a139-49c7-9db8-2f9fd7eeb67a"
+    },
+    {
+      "claim_id": "3db6988c-5d40-4495-9523-8084ba2a1a9a",
+      "result_id": "30ac1ec4-a139-49c7-9db8-2f9fd7eeb67a"
+    },
+    {
+      "claim_id": "4bed20c0-e40e-411e-99b0-410c8e46fe5b",
+      "result_id": "30ac1ec4-a139-49c7-9db8-2f9fd7eeb67a"
+    },
+    {
+      "claim_id": "1f23ea7e-c402-485a-a892-10acabd34894",
+      "result_id": "30ac1ec4-a139-49c7-9db8-2f9fd7eeb67a"
+    },
+    {
+      "claim_id": "bf761f6f-cad7-4615-a69c-7346e07790e7",
+      "result_id": "30ac1ec4-a139-49c7-9db8-2f9fd7eeb67a"
+    },
+    {
+      "claim_id": "2cfd4847-adfc-422c-843d-201920ea48da",
+      "result_id": "4a8199a1-3973-4a4c-8083-aa26d6ab989e"
+    },
+    {
+      "claim_id": "ee0069ee-8504-48ac-be14-30f09a602f2b",
+      "result_id": "4a8199a1-3973-4a4c-8083-aa26d6ab989e"
+    },
+    {
+      "claim_id": "382346c1-b3d1-499d-9b87-a6b77c7d89bd",
+      "result_id": "4a8199a1-3973-4a4c-8083-aa26d6ab989e"
+    },
+    {
+      "claim_id": "a0472172-2ab8-4e1c-9ae2-710cf7318166",
+      "result_id": "4a8199a1-3973-4a4c-8083-aa26d6ab989e"
+    },
+    {
+      "claim_id": "39ee1d2d-92a5-41ad-af2f-fe2702f61979",
+      "result_id": "309ceade-45f3-4248-b180-cd3ff147beba"
+    },
+    {
+      "claim_id": "9b0bb048-bf28-4ad9-86ee-113aaa8cda30",
+      "result_id": "309ceade-45f3-4248-b180-cd3ff147beba"
+    },
+    {
+      "claim_id": "a5427a1e-9969-4c71-bcbc-29ca2fd89f75",
+      "result_id": "309ceade-45f3-4248-b180-cd3ff147beba"
+    },
+    {
+      "claim_id": "1aff8997-2004-4833-af65-5497ab97f7f4",
+      "result_id": "309ceade-45f3-4248-b180-cd3ff147beba"
+    },
+    {
+      "claim_id": "c8038a12-bb62-4351-8920-5b5daf0d262b",
+      "result_id": "309ceade-45f3-4248-b180-cd3ff147beba"
+    },
+    {
+      "claim_id": "16dfe29d-127b-4cc8-9d79-5efa1ea04fdb",
+      "result_id": "309ceade-45f3-4248-b180-cd3ff147beba"
+    },
+    {
+      "claim_id": "e9a71251-2e85-46ec-9a6c-e6cc7a59d45f",
+      "result_id": "71275bf4-f2f5-4e3f-aa9b-e057a20bb139"
+    },
+    {
+      "claim_id": "0ab7c87b-8a67-49cb-8163-27fa852704a7",
+      "result_id": "71275bf4-f2f5-4e3f-aa9b-e057a20bb139"
+    },
+    {
+      "claim_id": "8d01fcb4-78f3-430e-bd95-f0a63a8b5014",
+      "result_id": "71275bf4-f2f5-4e3f-aa9b-e057a20bb139"
+    },
+    {
+      "claim_id": "76dcf369-44b0-4b59-9cc4-b3bf226a877b",
+      "result_id": "71275bf4-f2f5-4e3f-aa9b-e057a20bb139"
+    },
+    {
+      "claim_id": "1c398b04-920b-4673-993d-e408a55f480b",
+      "result_id": "07be0cc8-5712-471d-a4c4-bcfdadaf14a3"
+    },
+    {
+      "claim_id": "efe65dd9-749c-4e94-9414-9812f34370fc",
+      "result_id": "07be0cc8-5712-471d-a4c4-bcfdadaf14a3"
+    },
+    {
+      "claim_id": "ce7b81ff-eba4-4864-b06b-98df7ee6e9dd",
+      "result_id": "07be0cc8-5712-471d-a4c4-bcfdadaf14a3"
+    },
+    {
+      "claim_id": "c883a0b8-ba38-45d1-9a2a-ad70d28485c9",
+      "result_id": "07be0cc8-5712-471d-a4c4-bcfdadaf14a3"
+    },
+    {
+      "claim_id": "959af6c2-c316-4ee2-96c7-18048a2f6422",
+      "result_id": "4d7acdd8-b9b4-4521-9464-bcbc3edf0c18"
+    },
+    {
+      "claim_id": "08a0ef91-ec88-4150-8879-e0d4531ea9e6",
+      "result_id": "4d7acdd8-b9b4-4521-9464-bcbc3edf0c18"
+    },
+    {
+      "claim_id": "7762c897-2256-4fca-9a75-32137759e092",
+      "result_id": "4d7acdd8-b9b4-4521-9464-bcbc3edf0c18"
+    },
+    {
+      "claim_id": "65a75c50-4093-4714-9c36-a139f7d61759",
+      "result_id": "4d7acdd8-b9b4-4521-9464-bcbc3edf0c18"
+    },
+    {
+      "claim_id": "5e55f6b7-65c8-4fe0-a1e8-d5fb3b8a51ac",
+      "result_id": "4d7acdd8-b9b4-4521-9464-bcbc3edf0c18"
+    },
+    {
+      "claim_id": "1c6d35bd-b8eb-4bae-be3d-121867511a6e",
+      "result_id": "4d7acdd8-b9b4-4521-9464-bcbc3edf0c18"
+    },
+    {
+      "claim_id": "8c5a76d8-3b26-42c9-a74e-d32e372a78c7",
+      "result_id": "7d71d5a0-7f92-403a-8166-b161febd3a26"
+    },
+    {
+      "claim_id": "5ca27809-9fd5-4612-b5f6-dbddddfd7570",
+      "result_id": "7d71d5a0-7f92-403a-8166-b161febd3a26"
+    },
+    {
+      "claim_id": "121932af-e880-4b5e-8e12-d0043711fa94",
+      "result_id": "7d71d5a0-7f92-403a-8166-b161febd3a26"
+    },
+    {
+      "claim_id": "cbcd909b-5e39-4898-8cb2-b5fa46e18671",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "92732ba1-3963-4f64-9cbf-b01e3431c8c5",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "d29edf9a-dd4c-4119-bb60-7da6eab558c1",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "3663f541-e9b3-40de-ab6b-53c6669e1fce",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "79f31566-0240-4697-8e86-14bea1911d42",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "018e09c3-c818-4b4d-8baf-98a850fbb524",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "466a3680-91d7-4bd0-a54b-375c9c243073",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "820d4e85-6a20-4d2a-abe3-4865cb49bc81",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "a81c1cff-8029-4137-b31c-e9194886cab5",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "84bd3b1e-7f8a-4bbf-a318-49d615ef901e",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "d6ced474-0299-48d2-acbe-f7b50aab5080",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "beb3fbc9-9d3d-4103-a58e-4ee04b0fbe33",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "d6077f49-106d-41e8-a2d6-83233ba8af65",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "cad2732a-b2bb-43f2-aa55-b9d5965b9d82",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "4273e3de-50fd-4cd9-9150-dfca8d7be316",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "eb6b4cb8-6c6e-44d7-9429-1509354f9c89",
+      "result_id": "8159de16-d166-4828-b9e5-8dd0b5d7da39"
+    },
+    {
+      "claim_id": "03cc7a58-7b9d-4396-90c5-af9187606e89",
+      "result_id": "6ea638df-29f3-4ad1-b00c-d025be9605d3"
+    },
+    {
+      "claim_id": "3346e91f-815d-4d55-aa25-a9ec8f6404a0",
+      "result_id": "6ea638df-29f3-4ad1-b00c-d025be9605d3"
+    },
+    {
+      "claim_id": "a2b3dc2b-c841-4ffe-84d7-b6ffe0b34a26",
+      "result_id": "6ea638df-29f3-4ad1-b00c-d025be9605d3"
+    },
+    {
+      "claim_id": "c561b89a-4a61-4d77-84cb-ca591d28923e",
+      "result_id": "6ea638df-29f3-4ad1-b00c-d025be9605d3"
+    },
+    {
+      "claim_id": "46bb17de-8178-46e3-a2c4-eded7b475c14",
+      "result_id": "6ea638df-29f3-4ad1-b00c-d025be9605d3"
+    },
+    {
+      "claim_id": "a9114fd0-57be-4b49-befb-d7aa0e832656",
+      "result_id": "6ea638df-29f3-4ad1-b00c-d025be9605d3"
+    },
+    {
+      "claim_id": "578397c7-38ee-46e6-8312-48142137fee0",
+      "result_id": "6ea638df-29f3-4ad1-b00c-d025be9605d3"
+    },
+    {
+      "claim_id": "b67899b3-6c57-4d19-b326-326558d34fbf",
+      "result_id": "6ea638df-29f3-4ad1-b00c-d025be9605d3"
+    },
+    {
+      "claim_id": "6506ea6d-dc41-4911-b77f-693ad2f7148e",
+      "result_id": "6ea638df-29f3-4ad1-b00c-d025be9605d3"
+    },
+    {
+      "claim_id": "ea003f2d-90a2-4621-ae2c-3b9b27d0b81d",
+      "result_id": "6ea638df-29f3-4ad1-b00c-d025be9605d3"
+    },
+    {
+      "claim_id": "3889a57f-edf2-4e1a-b5b7-5215bbe21910",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "4a606a57-72b2-40d8-a2d1-17d7b761b94c",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "8c4ebb9f-ca8e-4ccc-8d92-023d096a6502",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "56623203-77a9-4a53-8b05-12834cae2e06",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "e3b26e1c-0783-417a-a4f8-12c743abb04a",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "b04b84c5-970b-48c9-8d17-46dd8171d585",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "a4446fe7-bdb3-4560-b2de-ab7fc4cb7b07",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "0b04097b-0abc-4e9e-95ca-a669ee5ca8cc",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "51f0e66b-57e1-4a67-80ba-93057036da4a",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "2b7b44b6-249c-44a2-8964-ce422e0063ee",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "35c39069-128a-454b-bf43-3fff38a81e91",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "121932af-e880-4b5e-8e12-d0043711fa94",
+      "result_id": "13066a29-e715-41b0-9153-ece121d5e7eb"
+    },
+    {
+      "claim_id": "e795d8b6-7fc1-4923-b45c-84a8f382efae",
+      "result_id": "e539b8a3-457b-491e-a323-c8099373c2f1"
+    },
+    {
+      "claim_id": "94745ccd-02be-46d5-a1cd-455bce78566b",
+      "result_id": "e539b8a3-457b-491e-a323-c8099373c2f1"
+    },
+    {
+      "claim_id": "c4caad42-69db-4c3b-ada4-ec28f46b838b",
+      "result_id": "e539b8a3-457b-491e-a323-c8099373c2f1"
+    },
+    {
+      "claim_id": "f1ef1224-2b1d-4640-a7fc-f1c475b1cfa7",
+      "result_id": "fcec4d49-2a7a-4404-9358-91b8473e793b"
+    },
+    {
+      "claim_id": "6755610a-0d41-4a81-b407-ea679ca2f6ea",
+      "result_id": "fcec4d49-2a7a-4404-9358-91b8473e793b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The CRISPR base editor BE3 was successfully adapted for use in yeast, with 95% of edits being C-to-T transitions, 89% occurring in a 5-nucleotide window 13-17 bp upstream of the PAM, and editing efficiency ranging from 4-64% across eight gRNAs. By 24 hours after induction, a majority of cells with targeted GFP had lost the GFP signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 collectively demonstrate successful implementation of base editing in yeast. The characterization data (C2-C4) from amplicon sequencing of eight gRNAs and the functional validation with GFP loss (C5) provide strong experimental evidence. The results are consistent with the original BE3 system in human cells (C1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "In a canavanine resistance screen, gRNAs introducing premature stop codons in CAN1 were strongly enriched (p<2.2e-16), while gRNAs introducing synonymous mutations were depleted (p<2.2e-16). Missense mutations with strong effects were enriched at highly conserved residues (7 of 11 with PROVEAN score <-5, p=0.007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 demonstrate that the base editor screen can identify functionally important mutations through positive selection. The statistical significance is strong, and the correlation between conservation scores and functional effects (C8) provides biological validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "In a fitness screen with essential genes, 59% of gRNAs introducing stop codons showed significant depletion (log2FC <-0.5, FDR<0.05). A lasso regression model with sequence features explained 37% of variance in gRNA depletion (R\u00b2=0.37, p<2.2e-16), revealing that the base preceding the target C strongly affects editing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 demonstrate successful negative selection screening and identify sequence context effects on editing efficiency. The modeling approach (C10) provides mechanistic insights consistent with findings in human cells (C11), strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The protein abundance screen identified 1020 gRNAs with significant effects on at least one of eleven proteins (FDR<0.05). The screen showed good reproducibility with replicate correlation R\u00b2=0.37 (p<2.2e-16), and gRNA pairs targeting the same mutation showed correlated effects (R\u00b2=0.43 for 78 pairs, R\u00b2=0.81 for 20 pairs where both were significant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 establish the scale and reproducibility of the protein abundance screen. The correlation between replicates (C13) and between independent gRNAs targeting the same mutation (C14-C15) demonstrates technical validity, though the moderate R\u00b2 values suggest some false negatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Effects of genetic perturbations on protein abundances correlate well with effects on mRNA abundances from a previous study (Kemmeren et al., 2014) when considering only significant effects in both studies (R\u00b2=0.62, p<5.3e-15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 validates the protein abundance screen against an independent mRNA-level study. The strong correlation for significant effects supports the biological relevance of the findings, though the restriction to mutually significant effects may introduce selection bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Genetic perturbation of 710 genes significantly affected at least one of eleven proteins (FDR<0.05). On average, each protein was affected by 156 gene perturbations, with 34% being specific (affecting 1-2 proteins) and 66% nonspecific (affecting 3+ proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 characterize the overall regulatory network structure revealed by the screen. The gene-level aggregation approach is reasonable given the 98% concordance in direction of effect for multiple gRNAs targeting the same gene (C78), supporting the validity of these network-level conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Protein abundance decreases more frequently than increases in response to gene perturbations (106 vs 50, p=8.6e-6), with this trend dependent on protein function and gene essentiality. Core cellular function proteins mostly decrease (p=2.9e-12) while stress proteins show no bias (p=0.8). Essential gene perturbations decrease abundance in 80% of cases vs 49% for nonessential genes, and are more likely to significantly alter protein abundance (p<2.2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 reveal systematic patterns in how genetic perturbations affect protein abundance. The statistical support is strong, and the biological interpretation (essential genes affecting core processes) is reasonable. However, the screen design may bias toward detecting decreases rather than increases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "For nonessential genes, premature stop codons are more likely to alter protein abundance than missense mutations (p=1.2e-9) and have larger average effect sizes (p=0.0028). Mutations toward the end of genes tend to have fewer and smaller effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 characterize how mutation type and position affect outcomes. The findings are statistically significant and biologically plausible (stop codons being more disruptive, C-terminal mutations being less impactful). Claim C26 is consistent with previous observations (Sadhu et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The screen identified known regulatory relationships including: Gcr1 perturbation reducing Eno2 (glycolysis transcription factor), perturbation of Hir3/Spt10/Spt21 reducing Htb2 (histone regulators), and perturbation of ribosomal genes and TOR signaling components reducing Rpl9A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 demonstrate that the screen successfully recovers known regulatory relationships, validating the approach. Each claim is supported by experimental data and consistent with cited literature on the known functions of these regulators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The screen identified a novel regulatory relationship between the SPS amino acid sensor and Yhb1. Perturbation of all three SPS subunits and downstream effector Stp1 reduced Yhb1 abundance, confirmed by LC-MS proteomics of SSY5 G638Q mutant. SPS perturbation also reduced mitochondrial proteins (FDR=4.5e-4) and induced amino acid biosynthesis proteins (FDR=6.6e-9). The authors propose SPS senses external amino acids and activates Stp1 to induce Yhb1, increasing stress resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 present a novel regulatory mechanism with strong experimental support. The screen findings (C32) are independently validated by LC-MS (C33), and the broader proteomic effects (C34-C35) are consistent with known SPS functions. The connection to C. albicans (C36) supports evolutionary conservation. The proposed model (C37) is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Perturbation of Cdk8 kinase module subunits (Ssn3, Srb8) and mediator hook structure subunits (Nut2, Rox3) caused large effects on Htb2, Tdh1, and Tdh2, with perturbations increasing protein abundance consistent with the repressor role of the Cdk8 module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 identify mediator complex components as regulators and support recent structural findings about the hook domain (Tsai et al., 2013, 2014). The observation that perturbations increase abundance (C40) is consistent with the known repressor function, providing biological validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Ssa1 and Yhb1 are significantly induced upon perturbation of genes involved in proteasomal degradation, demonstrating post-transcriptional regulation of protein abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by experimental data from the screen and demonstrates that classical post-transcriptional regulators contribute to protein abundance control. This finding is biologically plausible as proteasome perturbation would be expected to affect protein stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Among 29 genes with broad effects (affecting 8+ proteins), 21 (72%) function in protein translation (ribosome biogenesis and tRNA metabolism, FDR<8.0e-4). In contrast, perturbations affecting 1-2 proteins are enriched in transcriptional functions (FDR<1.3e-5), suggesting post-transcriptional regulators appear as hubs while transcriptional regulators show fewer connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 reveal a fundamental organizing principle of the protein regulatory network. The GO enrichment analyses (C43-C44) are statistically significant, and the inference about network topology (C45) follows logically from the data. This represents an important conceptual insight into regulatory architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "POP1, an essential gene involved in rRNA and tRNA maturation, is one of the broadest regulators. LC-MS proteomics of the POP1 H642Y mutant confirmed reduced abundance of most target proteins and revealed reduced nucleolar proteins (FDR=0.013) and induced amino acid biosynthesis proteins (FDR=1.4e-13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 characterize POP1 as a key broad regulator. The screen findings are independently validated by LC-MS (C47), and the proteomic effects (C48-C49) are consistent with POP1's known role in ribosome biogenesis. The induction of amino acid biosynthesis may represent a compensatory response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Among 29 broad-effect gene perturbations, all but three decreased protein abundance. One exception is SIT4 (PP2A-like phosphatase), whose perturbation increased abundance similarly to perturbation of its required cofactor SAP155. LC-MS of SIT4 Q184* mutant revealed induction of proteins involved in cellular respiration, carbohydrate metabolism, and oxidative stress (FDR<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 identify SIT4 as an unusual broad regulator that increases rather than decreases protein abundance. The concordance between SIT4 and SAP155 effects (C52) validates the finding, and LC-MS confirmation (C53) reveals the metabolic nature of the response. The known functional relationship between SIT4 and SAP155 strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Gene perturbations with broader effects on protein abundance were more likely to impair cellular fitness (R\u00b2=0.18, p<2.2e-16) and to be in essential genes. This is consistent with essential genes maintaining general cellular physiology and being more interconnected in protein-protein interaction networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 connect the protein abundance effects to fitness and gene essentiality. The correlation with fitness (C54) is statistically significant though modest (R\u00b2=0.18), and the enrichment for essential genes (C55) is clear. The interpretation (C56-C57) is supported by prior literature on network topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The base editor screen identified candidate causal genes for 24 eQTL and pQTL hotspots. POP1 is one such candidate, overlapping a chromosome 14 protein regulatory hotspot and harboring several coding variants in divergent yeast strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 demonstrate the utility of the screen for identifying causal genes underlying natural variation hotspots. The approach is sound (identifying genes with broad effects that harbor natural variants), and POP1 serves as a concrete example with supporting genetic variant data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The three GAPDH isoenzymes (Tdh1/2/3) have distinct genetic requirements and environmental responses. Tdh3 is the main enzyme and most highly expressed. Either TDH2 or TDH3 is required for viability, but TDH1 is dispensable. The isoenzymes selectively change abundance in response to carbon sources and environmental perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 establish the biological context for the GAPDH isoenzymes based on prior literature. These are well-supported by multiple citations and provide the foundation for interpreting the screen results on differential regulation of these isoenzymes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Perturbation of Mediator Cdk8 module members (Ssn3, Srb8) affects Tdh1 and Tdh2 but not Tdh3. These genes are implicated in carbon catabolite repression, suggesting Tdh1 and Tdh2 may be repressed when glucose is available and play roles in its absence, consistent with Tdh1 induction without glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 identify differential regulation of GAPDH isoenzymes by carbon catabolite repression machinery. The experimental observation (C63) is supported by screen data, and the interpretation (C65) is reasonable given Tdh3's role in high-glucose conditions. The hypothesis is consistent with prior observations of Tdh1 induction without glucose (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The Ras/cAMP/PKA pathway differentially regulates GAPDH isoenzymes. Perturbations of activating components (Gpr1, Ras2, Cyr1, Cdc25, Erg20) increase Tdh1 but decrease Tdh2/Tdh3, while perturbations of inhibiting components (Ira1/2, Bcy1, Mck1) have opposite effects. LC-MS confirmed effects of IRA2 and RAS2 mutations, and the connection is supported by negative genetic interactions between TDH1/TDH2 and RAS2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 establish a novel regulatory link between the Ras/PKA pathway and GAPDH isoenzymes. The screen findings show consistent patterns for multiple pathway components (C67, C70), the Erg20 effect is explained by its role in Ras2 farnesylation (C68-C69), LC-MS provides independent validation (C71), and genetic interaction data support functional connections (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Two RAS2 mutations had opposite effects: Q272* (loss-of-function) increased Tdh1 and decreased Tdh2, while S46L decreased Tdh1 and increased Tdh2 similarly to IRA2 loss-of-function, indicating S46L is a gain-of-function mutation. This is consistent with saturation mutagenesis of human K-Ras showing the homologous S39L/V mutation increases activity, and mutations at this residue are found in cervical cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 identify a gain-of-function RAS2 mutation through discordant gRNA effects. The opposite effects of Q272* and S46L (C73-C74), similarity to IRA2 loss-of-function (C75), consistency with human K-Ras mutagenesis data (C76), and cancer relevance (C77) provide strong convergent evidence. This demonstrates the screen can identify both loss- and gain-of-function mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "When multiple gRNAs introducing different mutations into the same gene had significant effects on protein expression, their direction of effect was concordant in 98% of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 demonstrates high concordance in effect direction for multiple gRNAs targeting the same gene, supporting the validity of aggregating gRNA effects to gene-level effects. This high concordance rate strengthens confidence in the screen results and the gene-level analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The correspondence between mRNA abundance and protein abundance is less strong than is usually implicitly assumed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by citations to Buccitelli and Selbach, 2020 and Liu et al., 2016a. This provides the rationale for studying protein abundance directly rather than using mRNA as a proxy, motivating the entire study.",
+    "result_type": "MINOR"
+  }
+]
